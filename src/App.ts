@@ -1,4 +1,4 @@
-import { clearPath, saveFile } from './utils/FileManager.js';
+import { clearPath, saveFile } from './utils/file-manager.js';
 
 export default class Xscraper {
 	async run() {}

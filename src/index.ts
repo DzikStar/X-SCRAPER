@@ -1,3 +1,3 @@
-import Xscraper from './App.js';
+import Xscraper from './app.js';
 
 new Xscraper().run();

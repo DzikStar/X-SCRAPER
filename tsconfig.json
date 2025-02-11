@@ -2,14 +2,22 @@
   "compilerOptions": {
     // Language & Version settings
     "target": "ESNext",
-    "module": "ESNext",
-    "moduleResolution": "node",
+    "module": "NodeNext",
+    "moduleResolution": "nodenext",
 
     // Directory settings
     "outDir": "dist",
     "rootDir": "src",
 
     // Type-checking settings
-    "strict": true
+    "strict": true,
+
+    // Module resolution settings
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "baseUrl": "./",
+    "paths": {
+      "*": ["src/*"]
+    }
   }
 }
