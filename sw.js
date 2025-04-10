@@ -398,11 +398,11 @@ self.ASSETS = [
     "https://abs.twimg.com/responsive-web/client-web/bundle.SettingsProfessionalProfileCommunitiesSpotlight-3575831d.6acde48a.js",
     "https://abs.twimg.com/responsive-web/client-web/shared~bundle.AccountAnalytics~ondemand.Insights-8eba0336.778e707a.js",
     "https://abs.twimg.com/responsive-web/client-web/bundle.JobSearch-a2dee9c7.91ff0e3a.js",
+    "https://abs.twimg.com/responsive-web/client-web/bundle.TwitterBlue-9f4db315.911c610a.js",
     "https://abs.twimg.com/responsive-web/client-web/bundle.AccountAnalytics-bf4f610d.895ee9ca.js",
     "https://abs.twimg.com/responsive-web/client-web/bundle.TV-b085b550.9ca3826a.js",
     "https://abs.twimg.com/responsive-web/client-web/bundle.Articles-b308cbaf.8abc64fa.js",
     "https://abs.twimg.com/responsive-web/client-web/loader.Typeahead-b085b550.647c644a.js",
-    "https://abs.twimg.com/responsive-web/client-web/bundle.TwitterBlue-9f4db315.14f42b9a.js",
     "https://abs.twimg.com/responsive-web/client-web/vendor-c22f700c.f2a689ca.js",
     "https://abs.twimg.com/responsive-web/client-web/shared~bundle.Conversation~bundle.ImmersiveMediaViewer.e3fde65a.js",
     "https://abs.twimg.com/responsive-web/client-web/bundle.Communities-bc6ccf4c.fd511d3a.js",
@@ -574,6 +574,6 @@ self.ASSETS = [
     "https://abs.twimg.com/responsive-web/client-web/loaders.video.PlayerHls1.5-dcf6fa52.55b4b94a.js",
     "https://abs.twimg.com/responsive-web/client-web/node_modules_x-clients_features_messages_en_json.3be5345a.js",
 ];
-self.__META_DATA__ = { env: "prod", isCanary: false, sha: "f3a13ce10a6b3d49e6eb0ec74748e19fd82371b5", isTwoffice: false };
+self.__META_DATA__ = { env: "prod", isCanary: false, sha: "e8c8234e3b28f7561acb6d1c9cbf77555d5b1896", isTwoffice: false };
 self.__INITIAL_STATE__ = {};
 importScripts("https://abs.twimg.com/responsive-web/client-serviceworker/serviceworker.e8ae00ca.js");
