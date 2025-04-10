@@ -573,6 +573,6 @@ self.ASSETS = [
     "https://abs.twimg.com/responsive-web/client-web/loaders.video.PlayerHls1.5-dcf6fa52.55b4b94a.js",
     "https://abs.twimg.com/responsive-web/client-web/node_modules_x-clients_features_messages_en_json.3be5345a.js",
 ];
-self.__META_DATA__ = { env: "prod", isCanary: false, sha: "454863ff2f5537656de0170be40827a6b2538850", isTwoffice: false };
+self.__META_DATA__ = { env: "prod", isCanary: true, sha: "454863ff2f5537656de0170be40827a6b2538850", isTwoffice: false, tags: { environment: "serviceworker", isLoggedIn: false, lang: "en" }, userHash: "SW_NO_HASH" };
 self.__INITIAL_STATE__ = {};
-importScripts("https://abs.twimg.com/responsive-web/client-serviceworker/serviceworker.e8ae00ca.js");
+importScripts("https://abs.twimg.com/responsive-web/client-serviceworker/serviceworker.e8ae00ca.js", "https://abs.twimg.com/responsive-web/client-sentry/sentry.2744870a.js");
