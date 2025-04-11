@@ -7811,7 +7811,7 @@
             };
             var gt,
                 yt = !1,
-                mt = ["/1.1/account/update_profile_image.json", "/1.1/dm/new2.json", "/1.1/dm/search/query.json", "/1.1/guest/activate.json", "/1.1/jot/error_log.json", "/1.1/live_pipeline/update_subscriptions", "/1.1/mobile/settings/get.json", "/1.1/mutes/keywords/create.json", "/1.1/mutes/keywords/destroy.json", "/1.1/mutes/keywords/update.json", "/1.1/statuses/update.json", "/1.1/account/password_strength.json", "/1.1/account/settings.json", "/1.1/onboarding/task.json", "/1.1/onboarding/bounce.json", "/2/timeline/home.json", "/account/multi/add", "/compose/", "/dataSaver/dataSaver", "/graphql", "/sessions", "upload.x.com/i/media/upload.json", "upload.x.com/i/media/upload2.json", "https://sentry.io"],
+                mt = ["/1.1/account/update_profile_image.json", "/1.1/dm/new2.json", "/1.1/dm/search/query.json", "/1.1/guest/activate.json", "/1.1/jot/error_log.json", "/1.1/live_pipeline/update_subscriptions", "/1.1/mobile/settings/get.json", "/1.1/mutes/keywords/create.json", "/1.1/mutes/keywords/destroy.json", "/1.1/mutes/keywords/update.json", "/1.1/statuses/update.json", "/1.1/account/password_strength.json", "/1.1/account/settings.json", "/1.1/onboarding/task.json", "/1.1/onboarding/bounce.json", "/2/timeline/home.json", "/account/multi/add", "/compose/", "/dataSaver/dataSaver", "/graphql", "/sessions", "upload.x.com/i/media/upload.json", "upload.x.com/i/media/upload2.json", "https://sentry.io", "/2/grok/add_response.json"],
                 wt = [/\/1.1\/dm\/conversation\/[0-9-]+\/(typing|accept)/i],
                 bt = function () {
                     return gt || (gt = new tt("sync", "queue", 1, dt)), gt;
@@ -8478,4 +8478,4 @@
                 });
         })();
 })();
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-serviceworker/serviceworker.e8ae00ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-serviceworker/serviceworker.840d6a1a.js.map
