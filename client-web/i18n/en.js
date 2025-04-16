@@ -2274,6 +2274,7 @@
                 a("j8e134e5", function (e) {
                     return e.trustedFriendsTweetOwner + "’s";
                 }),
+                a("c14cdb18", "Promote"),
                 a("f11264ac", "Add payment method"),
                 a("j619ec94", "Promote post"),
                 a("h1fcb36c", "Promote your post"),
@@ -2286,7 +2287,6 @@
                 a("i976aff4", "Update daily budget info to match your billing currency."),
                 a("e1e912f2", "Your post was posted, but we were unable to run the Boost on it. You will not be charged."),
                 a("fe26420a", "Add keywords"),
-                a("c14cdb18", "Promote"),
                 a("aacfbe55", function (e) {
                     return "You’re posting for @" + e.screenName + ".";
                 }),
@@ -5434,7 +5434,7 @@
                 a("a4ec7004", "Here’s what happens now:"),
                 a("c4093274", "About Community Notes after submission"),
                 a("bc8746a6", "Please rate at least one note before writing a new note."),
-                a("d6078a7e", "Community Notes depends on you ratings to keep quality high."),
+                a("ce3c80b8", "Community Notes depends on your ratings to keep quality high."),
                 a("fa6a075a", "Notes suggesting context to be shown with the post"),
                 a("acb7ecae", "Notes explaining why added context isn’t needed"),
                 a("d9a5fc06", "Rate post"),
@@ -7436,16 +7436,7 @@
                 a("fc6cbba2", "Nothing to see here - yet"),
                 a("b80a53c8", "Once more data is collected, you’ll see that information here."),
                 a("d25dccb6", "Analytics aren’t available for Circle posts."),
-                a("d948b978", "You may only promote your own posts."),
-                a("cfcdb4a2", "Something went wrong. Make sure you’ve disabled any ad blockers."),
-                a("j7a2af7a", "Don’t want to promote this post?"),
-                a("a78bce8e", "If you leave now this post won’t be promoted."),
-                a("g8844150", "Don’t promote"),
-                a("e7eb3684", "Daily budget"),
-                a("d9f6e3ce", "Daily budget slider"),
-                a("b3954eca", "Duration in days slider"),
-                a("ce665a60", "Estimated reach is approximate. Actual reach can’t be guaranteed."),
-                a("i0c3b95c", "The next round is on us!"),
+                a("g61ac32a", "We automatically target users most likely to engage with your content."),
                 a("e8702feb", function (e) {
                     return "Get " + e.couponAmount + " on us!";
                 }),
@@ -7494,6 +7485,19 @@
                 a("c3fca124", "Boost engagement"),
                 a("d4f57cce", "Grow your followers"),
                 a("c6daa762", "Get more link clicks"),
+                a("cc642518", "Search Locations"),
+                a("i0e8c3c6", "Location results"),
+                a("f69ad048", "Choose a location"),
+                a("d948b978", "You may only promote your own posts."),
+                a("cfcdb4a2", "Something went wrong. Make sure you’ve disabled any ad blockers."),
+                a("j7a2af7a", "Don’t want to promote this post?"),
+                a("a78bce8e", "If you leave now this post won’t be promoted."),
+                a("g8844150", "Don’t promote"),
+                a("e7eb3684", "Daily budget"),
+                a("d9f6e3ce", "Daily budget slider"),
+                a("b3954eca", "Duration in days slider"),
+                a("ce665a60", "Estimated reach is approximate. Actual reach can’t be guaranteed."),
+                a("i0c3b95c", "The next round is on us!"),
                 a("h8b6e32a", "You promoted your post!"),
                 a("ee8014a6", "Check out post analytics at any time to measure your ad performance."),
                 a("db841200", "Boost engagement, reach more people, and spread the word about your page."),
@@ -7535,9 +7539,6 @@
                 a("j2c03e12", "55+"),
                 a("d4e01892", "Housing, Lending, and Employment Opportunities Ads policy"),
                 a("df8d4fa0", "Select a Gender"),
-                a("cc642518", "Search Locations"),
-                a("i0e8c3c6", "Location results"),
-                a("f69ad048", "Choose a location"),
                 a("i982d424", "How much do you want to invest?"),
                 a("b9ff6cb0", "No payment method selected"),
                 a("i8b90688", "Terms and Advertising Guidelines"),
@@ -7850,8 +7851,7 @@
                 a("hd7d278c", "No thanks"),
                 a("jf8a0dea", "Great! Your new free ad credit will appear in your account on your next billing cycle."),
                 a("ebbb3154", "Close and return to X"),
-                a("j1f68dda", "Final step: Are you sure you want to cancel?"),
-                a("c9c3464c", "Subscription cancellation in progress");
+                a("j1f68dda", "Final step: Are you sure you want to cancel?");
             function i(e, t) {
                 for (var o = 0; o < t.length; o++) {
                     var a = t[o];
@@ -7890,7 +7890,8 @@
                     r(e, t)
                 );
             }
-            a("dd3a293c", "Your Verified Organization subscription has ended."),
+            a("c9c3464c", "Subscription cancellation in progress"),
+                a("dd3a293c", "Your Verified Organization subscription has ended."),
                 a("faa0f956", "Something went wrong while cancelling your subscription."),
                 a("b28289ea", "Thanks"),
                 a("b36f74ae", "You will no longer have access to the portal unless you sign up and activate again."),
@@ -8928,13 +8929,13 @@
                 }),
                 a("db9ed19f", function (e) {
                     return e.formattedCount + " day" + n(e.count, "", "s") + " left";
-                }),
-                a("e1ebcecb", function (e) {
-                    return e.formattedDays + " day" + n(e.days, "", "s") + " " + e.formattedHours + " hour" + n(e.hours, "", "s") + " left";
                 });
-            a("cc1da1fd", function (e) {
-                return e.formattedHours + " hour" + n(e.hours, "", "s") + " " + e.formattedMins + " minute" + n(e.mins, "", "s") + " left";
+            a("e1ebcecb", function (e) {
+                return e.formattedDays + " day" + n(e.days, "", "s") + " " + e.formattedHours + " hour" + n(e.hours, "", "s") + " left";
             }),
+                a("cc1da1fd", function (e) {
+                    return e.formattedHours + " hour" + n(e.hours, "", "s") + " " + e.formattedMins + " minute" + n(e.mins, "", "s") + " left";
+                }),
                 a("f89a5d60", "Host"),
                 a("ce2cfb36", "Subscribers only"),
                 a("df06241c", "Community"),
@@ -13196,4 +13197,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en.90ee55ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en.2152556a.js.map
