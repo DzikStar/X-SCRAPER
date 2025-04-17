@@ -4819,6 +4819,7 @@
                 a("g2b06cc6", "Gender data may be inferred"),
                 a("b66b3baa", "hours"),
                 a("baf120a6", "Least engaged"),
+                a("f2382014", "LIVE"),
                 a("ie45edda", "Livestream overview"),
                 a("bd37f68e", "Media activity"),
                 a("ic2bebee", "Monetized"),
@@ -4906,9 +4907,9 @@
                 a("db28b535", function (e) {
                     return "Delete ’" + e.name + "’";
                 }),
-                a("bcf89b8a", "Edit your query"),
-                a("f0002e72", "Explore results");
-            a("b0924d7a", "Failed to create query. Please try again."),
+                a("bcf89b8a", "Edit your query");
+            a("f0002e72", "Explore results"),
+                a("b0924d7a", "Failed to create query. Please try again."),
                 a("cfd731ee", "Failed to delete query. Please try again."),
                 a("g08bff82", "Failed to disable alert. Please try again."),
                 a("fa1fd798", "Failed to enable alert. Please try again."),
@@ -5874,9 +5875,9 @@
                 a("c170a564", "The term you entered did not bring up any results. Try a different search term."),
                 a("cbd1aef8", "Search for Communities and Posts"),
                 a("fbf01e52", "Search Communities"),
-                a("c8a6499c", "Community Posts Search Results"),
-                a("af05a978", "Search results will appear here as you type.");
-            a("eb4d2cd0", "No posts found."),
+                a("c8a6499c", "Community Posts Search Results");
+            a("af05a978", "Search results will appear here as you type."),
+                a("eb4d2cd0", "No posts found."),
                 a("a8ecdb4c", "Community Latest Posts Search Results"),
                 a("dc6ce7b4", "Members"),
                 a("ga2aa43c", "Moderators"),
@@ -6578,7 +6579,6 @@
                 a("e8166cee", function (e) {
                     return "" + e.formattedPrice;
                 }),
-                a("f2382014", "LIVE"),
                 a("g66c8348", "REPLAY"),
                 a("j1d352d8", "Reminder set"),
                 a("d18909d4", "Set reminder"),
@@ -13197,4 +13197,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en.2152556a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en.989fa8ca.js.map
