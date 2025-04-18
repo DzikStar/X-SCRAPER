@@ -612,6 +612,8 @@
                 }),
                 a("c0b786ee", "Search and explore"),
                 a("bb967f9e", "Videos"),
+                a("h5e38204", "Chat"),
+                a("h7d5d9fa", "Beta"),
                 a("e04033be", "New posts are available. Push the period key to go to the them."),
                 a("hec711c0", "See new posts"),
                 a("j0a8da6e", "Add an existing account"),
@@ -690,7 +692,6 @@
                 a("fd5208c6", "Go to settings"),
                 a("c0d13570", "Affiliates"),
                 a("ba96929e", "Hiring"),
-                a("h7d5d9fa", "Beta"),
                 a("gf62c116", "Support"),
                 a("a4cf866e", "Advertising"),
                 a("g2fd3206", "People"),
@@ -900,9 +901,9 @@
                 a("b0abbb17", "Learn more"),
                 a("e7e0d88b", "Learn more"),
                 a("i560665f", "Learn more"),
-                a("f6e774d9", "Learn more"),
-                a("h486f755", "Learn more");
-            a("bab41dab", "Learn more"),
+                a("f6e774d9", "Learn more");
+            a("h486f755", "Learn more"),
+                a("bab41dab", "Learn more"),
                 a("e0ebdb29", "Learn more"),
                 a("f8493831", "Learn more"),
                 a("icb5913f", "Learn more"),
@@ -1908,9 +1909,9 @@
                 a("b6510e68", "Copy your Article’s URL so you can share it."),
                 a("e4a6e006", "Something went wrong. Please try again."),
                 a("eff483e0", "After you publish, get a link to share the Article."),
-                a("ca15dd4e", "Draft"),
-                a("bb40bf66", "Published");
-            a("h107935c", "Last saved just now"),
+                a("ca15dd4e", "Draft");
+            a("bb40bf66", "Published"),
+                a("h107935c", "Last saved just now"),
                 a("a753a870", "Apply"),
                 a("afccc67e", "Copy link to Article"),
                 a("beb24e9e", "URL copied to the clipboard"),
@@ -2960,9 +2961,9 @@
                 a("c6f58084", "Developers"),
                 a("d83f18d2", "Directory"),
                 a("fbf83158", "Warning: Payment failed"),
-                a("jadeb4da", "Please urgently update your payment method before you lose your subscription benefits."),
-                a("bce3726a", "Update Billing");
-            a("fce9ecce", "Suggested Videos"),
+                a("jadeb4da", "Please urgently update your payment method before you lose your subscription benefits.");
+            a("bce3726a", "Update Billing"),
+                a("fce9ecce", "Suggested Videos"),
                 a("efe6ef9e", "View post"),
                 a("b3d183ce", "Post with replies"),
                 a("c299a6c0", "Thread"),
@@ -3878,13 +3879,13 @@
                 a("c2376960", "Requests to Speak"),
                 a("aba7dcdd", function (e) {
                     return "Invite " + e.name;
-                }),
-                a("f5c7aaa7", function (e) {
-                    return "host" + n(e.count, "", "s");
                 });
-            a("fc56c8b1", function (e) {
-                return "co-host" + n(e.count, "", "s");
+            a("f5c7aaa7", function (e) {
+                return "host" + n(e.count, "", "s");
             }),
+                a("fc56c8b1", function (e) {
+                    return "co-host" + n(e.count, "", "s");
+                }),
                 a("iba0f45d", function (e) {
                     return "speaker" + n(e.count, "", "s");
                 }),
@@ -4376,7 +4377,6 @@
                 a("f1f683c2", "Get up-to-date info on the latest news and trending topics, exclusively from X."),
                 a("h73b9cc0", "Your message was not sent because you are not currently connected to the chat"),
                 a("b6c73662", "Send a message"),
-                a("h5e38204", "Chat"),
                 a("h6070fdc", "Chat Settings"),
                 a("d49326ba", "Hide Avatars"),
                 a("h79f3532", "Show Avatars"),
@@ -4690,6 +4690,14 @@
                 a("b7caffb7", function (e) {
                     return "" + e.name;
                 }),
+                a("ea8c425f", function (e) {
+                    return "@" + e.viewerScreenName + ", you aren’t verified yet";
+                }),
+                a("b2d0c0f4", "Get verified like "),
+                a("f464d54d", function (e) {
+                    return "@" + e.profileScreenName;
+                }),
+                a("g47cdc0e", " to stand out and get boosted reply reach."),
                 a("d834ab9c", "Yes, view profile"),
                 a("cb339f26", "Caution: This account has been behaving in an unusual manner"),
                 a("hf06085e", "You’re seeing this warning because there has been some unusual activity from this account. Do you still want to view it?"),
@@ -4784,7 +4792,7 @@
                 a("g1dfa7d0", "Avg"),
                 a("h7d28188", "Back to content"),
                 a("ea928ae4", "Back to spaces"),
-                a("e5f04bac", "Concurrent Viewers"),
+                a("j3cb12ea", "Concurrent Listeners"),
                 a("b93931ee", "The number of times your content was posted."),
                 a("a1814798", "The number of times you replied to a post."),
                 a("addd5575", function (e) {
@@ -4832,7 +4840,7 @@
                 a("b2438638", "of total"),
                 a("ic0399e0", "Organic Views"),
                 a("ja5c444a", "Pay period"),
-                a("cea3720c", "Peak Concurrent Viewers"),
+                a("f04e025e", "Peak Concurrent Listeners"),
                 a("d147bea2", "Please check back again later"),
                 a("f0336d68", "Post Analytics"),
                 a("g85fbd2e", "Post id"),
@@ -4899,16 +4907,16 @@
                 a("ae852cd0", "Receive a notification every Monday summarizing changes in this trend."),
                 a("d1d8633e", "Radar Alerts"),
                 a("g096d0cc", "All queries"),
-                a("e77035aa", "Clear search"),
-                a("a895ec64", "Are you sure you want to delete this query?"),
+                a("e77035aa", "Clear search");
+            a("a895ec64", "Are you sure you want to delete this query?"),
                 a("a4f5e431", function (e) {
                     return "Deleted ’" + e.name + "’";
                 }),
                 a("db28b535", function (e) {
                     return "Delete ’" + e.name + "’";
                 }),
-                a("bcf89b8a", "Edit your query");
-            a("f0002e72", "Explore results"),
+                a("bcf89b8a", "Edit your query"),
+                a("f0002e72", "Explore results"),
                 a("b0924d7a", "Failed to create query. Please try again."),
                 a("cfd731ee", "Failed to delete query. Please try again."),
                 a("g08bff82", "Failed to disable alert. Please try again."),
@@ -5871,12 +5879,12 @@
                     return e.memberRequests + " request" + n(e.memberRequests, "", "s");
                 }),
                 a("a2118086", "Sort posts"),
-                a("hb01fe46", "When you do, you’ll see them here."),
-                a("c170a564", "The term you entered did not bring up any results. Try a different search term."),
+                a("hb01fe46", "When you do, you’ll see them here.");
+            a("c170a564", "The term you entered did not bring up any results. Try a different search term."),
                 a("cbd1aef8", "Search for Communities and Posts"),
                 a("fbf01e52", "Search Communities"),
-                a("c8a6499c", "Community Posts Search Results");
-            a("af05a978", "Search results will appear here as you type."),
+                a("c8a6499c", "Community Posts Search Results"),
+                a("af05a978", "Search results will appear here as you type."),
                 a("eb4d2cd0", "No posts found."),
                 a("a8ecdb4c", "Community Latest Posts Search Results"),
                 a("dc6ce7b4", "Members"),
@@ -6863,12 +6871,12 @@
                 a("bd17076c", "See approximately half the ads in the For You and Following timelines."),
                 a("cef2cac8", "Enjoy an ad-free experience, with occasional branded content in less common areas."),
                 a("c97920c0", "Offline videos"),
-                a("i4379b18", "Save any video for offline playback"),
-                a("f94c6bae", "Verified checkmark"),
+                a("i4379b18", "Save any video for offline playback");
+            a("f94c6bae", "Verified checkmark"),
                 a("d72055d6", "Build credibility with the verified checkmark "),
                 a("f54af178", "Write Articles"),
-                a("c5cd5d42", "Share long-form content and establish thought leadership");
-            a("jbdb08cc", "Analyze your account metrics to understand how your account is performing"),
+                a("c5cd5d42", "Share long-form content and establish thought leadership"),
+                a("jbdb08cc", "Analyze your account metrics to understand how your account is performing"),
                 a("deaf7e0a", "Media Studio"),
                 a("fd1a47b4", "Manage and upload your media"),
                 a("id067c96", "Radar Search"),
@@ -7847,11 +7855,7 @@
                 }),
                 a("i032a231", function (e) {
                     return "I’ll stay and claim the " + e.totalAmount + " ad credit";
-                }),
-                a("hd7d278c", "No thanks"),
-                a("jf8a0dea", "Great! Your new free ad credit will appear in your account on your next billing cycle."),
-                a("ebbb3154", "Close and return to X"),
-                a("j1f68dda", "Final step: Are you sure you want to cancel?");
+                });
             function i(e, t) {
                 for (var o = 0; o < t.length; o++) {
                     var a = t[o];
@@ -7890,7 +7894,11 @@
                     r(e, t)
                 );
             }
-            a("c9c3464c", "Subscription cancellation in progress"),
+            a("hd7d278c", "No thanks"),
+                a("jf8a0dea", "Great! Your new free ad credit will appear in your account on your next billing cycle."),
+                a("ebbb3154", "Close and return to X"),
+                a("j1f68dda", "Final step: Are you sure you want to cancel?"),
+                a("c9c3464c", "Subscription cancellation in progress"),
                 a("dd3a293c", "Your Verified Organization subscription has ended."),
                 a("faa0f956", "Something went wrong while cancelling your subscription."),
                 a("b28289ea", "Thanks"),
@@ -8917,10 +8925,10 @@
                 }),
                 a("ebe41367", function (e) {
                     return "Time " + e.time;
-                }),
-                a("efce3d9b", function (e) {
-                    return e.hours + " " + e.minutes + " " + e.seconds;
-                }),
+                });
+            a("efce3d9b", function (e) {
+                return e.hours + " " + e.minutes + " " + e.seconds;
+            }),
                 a("d925a4f9", function (e) {
                     return e.formattedCount + " minute" + n(e.count, "", "s") + " left";
                 }),
@@ -8929,10 +8937,10 @@
                 }),
                 a("db9ed19f", function (e) {
                     return e.formattedCount + " day" + n(e.count, "", "s") + " left";
-                });
-            a("e1ebcecb", function (e) {
-                return e.formattedDays + " day" + n(e.days, "", "s") + " " + e.formattedHours + " hour" + n(e.hours, "", "s") + " left";
-            }),
+                }),
+                a("e1ebcecb", function (e) {
+                    return e.formattedDays + " day" + n(e.days, "", "s") + " " + e.formattedHours + " hour" + n(e.hours, "", "s") + " left";
+                }),
                 a("cc1da1fd", function (e) {
                     return e.formattedHours + " hour" + n(e.hours, "", "s") + " " + e.formattedMins + " minute" + n(e.mins, "", "s") + " left";
                 }),
@@ -13197,4 +13205,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en.989fa8ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en.eea269ba.js.map
