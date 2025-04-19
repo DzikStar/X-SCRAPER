@@ -603,6 +603,8 @@
                 a("a5a30af0", "Articles"),
                 a("d13d697c", "New"),
                 a("j0e2cfa8", "Business"),
+                a("h5e38204", "Chat"),
+                a("h7d5d9fa", "Beta"),
                 a("ga169e1b", function (e) {
                     return "Direct Messages (" + e.count + " unread conversation" + n(e.count, "", "s") + ")";
                 }),
@@ -612,8 +614,6 @@
                 }),
                 a("c0b786ee", "Search and explore"),
                 a("bb967f9e", "Videos"),
-                a("h5e38204", "Chat"),
-                a("h7d5d9fa", "Beta"),
                 a("e04033be", "New posts are available. Push the period key to go to the them."),
                 a("hec711c0", "See new posts"),
                 a("j0a8da6e", "Add an existing account"),
@@ -2960,9 +2960,11 @@
                 a("he258678", "X for Business"),
                 a("c6f58084", "Developers"),
                 a("d83f18d2", "Directory"),
-                a("fbf83158", "Warning: Payment failed"),
-                a("jadeb4da", "Please urgently update your payment method before you lose your subscription benefits.");
-            a("bce3726a", "Update Billing"),
+                a("hc5aa17c", "Get the X app"),
+                a("j0693948", "Get the Grok app");
+            a("fbf83158", "Warning: Payment failed"),
+                a("jadeb4da", "Please urgently update your payment method before you lose your subscription benefits."),
+                a("bce3726a", "Update Billing"),
                 a("fce9ecce", "Suggested Videos"),
                 a("efe6ef9e", "View post"),
                 a("b3d183ce", "Post with replies"),
@@ -3649,9 +3651,10 @@
                 a("dc62d3c6", "No."),
                 a("a67dbd0a", "Parody, commentary and fan account"),
                 a("a3db727e", "Manage your parody, commentary and fan account"),
+                a("eacf1990", "Add your date of birth to your profile."),
+                a("a3bf1262", "Change your date of birth on your profile."),
                 a("h530db16", "Protected posts"),
                 a("d6d80990", "This information applies to your browser or device while you’re logged out. It may be different when you’re logged in."),
-                a("e159eeee", "profile"),
                 a("i0d81ddb", "your personalization and data settings"),
                 a("g2a9bd3e", "Automated Account Labels"),
                 a("dd9b3aae", "What’s an automated account?"),
@@ -3690,11 +3693,11 @@
                 a("a148acba", "Disable"),
                 a("aa023546", "Personalize based on the places you’ve been"),
                 a("ced77194", "Allow use of where you see X content across the web"),
-                a("ie40dc4a", "Not right? You can add your date of birth to your profile without sharing it publicly."),
                 a("fe1fc83e", "These are the age ranges associated with you."),
                 a("bf9c74d0", "Do not use these age ranges for personalization."),
                 a("cf0daa24", "It may take a while to gather this information. Try again later."),
                 a("ea522535", "Learn more"),
+                a("hf5ca8f8", "profile"),
                 a("d9cbe351", function (e) {
                     return e.count + " login event" + n(e.count, "", "s");
                 }),
@@ -3874,15 +3877,15 @@
                 a("d7357e7e", "Remove from Co-hosts"),
                 a("bf307fc0", "Block and Remove"),
                 a("ccf2f24e", "Report"),
-                a("i22835de", "Approve"),
-                a("cb59a0fe", "Deny"),
+                a("i22835de", "Approve");
+            a("cb59a0fe", "Deny"),
                 a("c2376960", "Requests to Speak"),
                 a("aba7dcdd", function (e) {
                     return "Invite " + e.name;
-                });
-            a("f5c7aaa7", function (e) {
-                return "host" + n(e.count, "", "s");
-            }),
+                }),
+                a("f5c7aaa7", function (e) {
+                    return "host" + n(e.count, "", "s");
+                }),
                 a("fc56c8b1", function (e) {
                     return "co-host" + n(e.count, "", "s");
                 }),
@@ -4904,11 +4907,11 @@
                 a("e2634592", "@grok"),
                 a("i88ba038", "Alert Disabled"),
                 a("j2cb0214", "Alert Enabled"),
-                a("ae852cd0", "Receive a notification every Monday summarizing changes in this trend."),
-                a("d1d8633e", "Radar Alerts"),
+                a("ae852cd0", "Receive a notification every Monday summarizing changes in this trend.");
+            a("d1d8633e", "Radar Alerts"),
                 a("g096d0cc", "All queries"),
-                a("e77035aa", "Clear search");
-            a("a895ec64", "Are you sure you want to delete this query?"),
+                a("e77035aa", "Clear search"),
+                a("a895ec64", "Are you sure you want to delete this query?"),
                 a("a4f5e431", function (e) {
                     return "Deleted ’" + e.name + "’";
                 }),
@@ -5874,13 +5877,13 @@
                 }),
                 a("ha4bb8a9", function (e) {
                     return e.reportedTweets + " report" + n(e.reportedTweets, "", "s");
-                }),
-                a("caf003b3", function (e) {
-                    return e.memberRequests + " request" + n(e.memberRequests, "", "s");
-                }),
+                });
+            a("caf003b3", function (e) {
+                return e.memberRequests + " request" + n(e.memberRequests, "", "s");
+            }),
                 a("a2118086", "Sort posts"),
-                a("hb01fe46", "When you do, you’ll see them here.");
-            a("c170a564", "The term you entered did not bring up any results. Try a different search term."),
+                a("hb01fe46", "When you do, you’ll see them here."),
+                a("c170a564", "The term you entered did not bring up any results. Try a different search term."),
                 a("cbd1aef8", "Search for Communities and Posts"),
                 a("fbf01e52", "Search Communities"),
                 a("c8a6499c", "Community Posts Search Results"),
@@ -6868,11 +6871,11 @@
                 a("j659fa0c", "The best of Grok 3"),
                 a("ibff5694", "Unlock the highest usage limits, DeepSearch & Think, plus early access to new features"),
                 a("i824f4da", "Fewer ads"),
-                a("bd17076c", "See approximately half the ads in the For You and Following timelines."),
-                a("cef2cac8", "Enjoy an ad-free experience, with occasional branded content in less common areas."),
+                a("bd17076c", "See approximately half the ads in the For You and Following timelines.");
+            a("cef2cac8", "Enjoy an ad-free experience, with occasional branded content in less common areas."),
                 a("c97920c0", "Offline videos"),
-                a("i4379b18", "Save any video for offline playback");
-            a("f94c6bae", "Verified checkmark"),
+                a("i4379b18", "Save any video for offline playback"),
+                a("f94c6bae", "Verified checkmark"),
                 a("d72055d6", "Build credibility with the verified checkmark "),
                 a("f54af178", "Write Articles"),
                 a("c5cd5d42", "Share long-form content and establish thought leadership"),
@@ -7227,10 +7230,15 @@
                 a("cf39fca2", "Hear what people are talking about."),
                 a("j86184fe", "Join the conversation."),
                 a("ac2035f2", "Join today."),
+                a("h0af9418", "Create an account"),
                 a("eba1b198", "Happening now"),
                 a("fa811c30", "Already have an account?"),
+                a("b4bdfb3e", "Get the Grok App"),
+                a("f991cfaa", "Get Grok"),
+                a("aa95ddc0", "Sign up with phone or email"),
                 a("a4298bc0", "X. It’s what’s happening"),
                 a("j3f49ff6", "From breaking news and entertainment to sports and politics, get the full story with all the live commentary."),
+                a("d65555c2", "OR"),
                 a("e75df5c9", function (e) {
                     return e.query + " - Search";
                 }),
@@ -7843,19 +7851,7 @@
                 a("id720215", "Hiring"),
                 a("dd59f146", "Job promotion ad account"),
                 a("e7e36818", "Ad accounts are eligible for job promotion when they are fully set up with a funding source."),
-                a("c28566e0", "Ad Account"),
-                a("c80160d3", "Advertising"),
-                a("ff0edac0", "Are you sure you want to cancel your subscription?"),
-                a("h2ac0348", "No, take me back"),
-                a("dbf9667e", "I’m sure"),
-                a("j7592572", "U-turn"),
-                a("ee778942", "Traffic lights"),
-                a("fdd57981", function (e) {
-                    return "We’d like to offer you a free one-time " + e.totalAmount + " USD ad credit.";
-                }),
-                a("i032a231", function (e) {
-                    return "I’ll stay and claim the " + e.totalAmount + " ad credit";
-                });
+                a("c28566e0", "Ad Account");
             function i(e, t) {
                 for (var o = 0; o < t.length; o++) {
                     var a = t[o];
@@ -7894,7 +7890,19 @@
                     r(e, t)
                 );
             }
-            a("hd7d278c", "No thanks"),
+            a("c80160d3", "Advertising"),
+                a("ff0edac0", "Are you sure you want to cancel your subscription?"),
+                a("h2ac0348", "No, take me back"),
+                a("dbf9667e", "I’m sure"),
+                a("j7592572", "U-turn"),
+                a("ee778942", "Traffic lights"),
+                a("fdd57981", function (e) {
+                    return "We’d like to offer you a free one-time " + e.totalAmount + " USD ad credit.";
+                }),
+                a("i032a231", function (e) {
+                    return "I’ll stay and claim the " + e.totalAmount + " ad credit";
+                }),
+                a("hd7d278c", "No thanks"),
                 a("jf8a0dea", "Great! Your new free ad credit will appear in your account on your next billing cycle."),
                 a("ebbb3154", "Close and return to X"),
                 a("j1f68dda", "Final step: Are you sure you want to cancel?"),
@@ -8903,8 +8911,8 @@
                 }),
                 a("d6f2056f", function (e) {
                     return e.count + " tuned in";
-                }),
-                a("jbc5f47a", "Spaces dock"),
+                });
+            a("jbc5f47a", "Spaces dock"),
                 a("gfe2830f", function (e) {
                     return e.count + " other" + n(e.count, "", "s");
                 }),
@@ -8925,10 +8933,10 @@
                 }),
                 a("ebe41367", function (e) {
                     return "Time " + e.time;
-                });
-            a("efce3d9b", function (e) {
-                return e.hours + " " + e.minutes + " " + e.seconds;
-            }),
+                }),
+                a("efce3d9b", function (e) {
+                    return e.hours + " " + e.minutes + " " + e.seconds;
+                }),
                 a("d925a4f9", function (e) {
                     return e.formattedCount + " minute" + n(e.count, "", "s") + " left";
                 }),
@@ -10689,12 +10697,6 @@
                             },
                         },
                         {
-                            key: "f1a3d63d",
-                            get: function () {
-                                return ["Add your date of birth to your ", "."];
-                            },
-                        },
-                        {
                             key: "ce6f73c7",
                             get: function () {
                                 return ["Control how X customizes your experience in "];
@@ -10728,6 +10730,12 @@
                             key: "i1e24825",
                             get: function () {
                                 return ["If you haven’t provided a date of birth, we’ve provided an age range based on your X profile and activity. Age information is used to personalize your experience. "];
+                            },
+                        },
+                        {
+                            key: "a200fc71",
+                            get: function () {
+                                return ["Not right? You can add your date of birth to your ", " without sharing it publicly."];
                             },
                         },
                         {
@@ -13205,4 +13213,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en.eea269ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en.8afa4caa.js.map
