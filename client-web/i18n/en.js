@@ -363,6 +363,7 @@
                 a("jaaa8984", "Location"),
                 a("f345dcda", "Edit History"),
                 a("hea3f8ac", "Related posts"),
+                a("c8ee31da", "News"),
                 a("d35c9eec", "Account Analytics"),
                 a("b5b7fb94", "Group"),
                 a("g755fcde", "You"),
@@ -798,7 +799,6 @@
                 a("e404203c", "Gaming"),
                 a("d2042392", "Government"),
                 a("c365dcc6", "Other"),
-                a("c8ee31da", "News"),
                 a("d27beb9e", "Sports"),
                 a("cc4b66b6", "Select a category"),
                 a("b37461a4", "Select an account type"),
@@ -13213,4 +13213,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en.8afa4caa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en.2c9a5e9a.js.map
