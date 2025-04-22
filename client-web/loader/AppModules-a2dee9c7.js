@@ -1,0 +1,1116 @@
+(self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
+    ["loader.AppModules-a2dee9c7"],
+    {
+        593588: (e) => {
+            e.exports = { queryId: "TYpVV9QioZfViHqEqRZxJA", operationName: "BrowseSpaceTopics", operationType: "query", metadata: { featureSwitches: [], fieldToggles: [] } };
+        },
+        474804: (e) => {
+            e.exports = { queryId: "BqIHKmwZKtiUBPi07jKctg", operationName: "EnableLoggedOutWebNotifications", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
+        },
+        584550: (e) => {
+            e.exports = { queryId: "lWVG1NYl6Z8-6qTDNP9jrg", operationName: "ListProductSubscriptions", operationType: "query", metadata: { featureSwitches: ["subscriptions_management_fetch_next_billing_time"], fieldToggles: [] } };
+        },
+        322766: (e) => {
+            e.exports = { queryId: "RM4x9h3tF8bCn69VV3-gRg", operationName: "NotABotCheckoutUrlWithEligibility", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
+        },
+        443127: (e) => {
+            e.exports = { queryId: "Sxn4YOlaAwEKjnjWV0h7Mw", operationName: "SubscribeToScheduledSpace", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
+        },
+        263378: (e) => {
+            e.exports = { queryId: "-kH-xt82ZhKnAMTXv1Fuzg", operationName: "SubscriptionCheckoutUrlWithEligibility", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
+        },
+        322060: (e) => {
+            e.exports = { queryId: "yIGOH-WMQSU-AdbfVRZm9A", operationName: "SubscriptionProductDetails", operationType: "query", metadata: { featureSwitches: ["subscriptions_marketing_page_fetch_promotions"], fieldToggles: [] } };
+        },
+        601377: (e) => {
+            e.exports = { queryId: "NEMw3cw4v0-Oo-nTMI8reQ", operationName: "SwitchTier", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
+        },
+        587541: (e) => {
+            e.exports = { queryId: "Zevhh76Msw574ZSs2NQHGQ", operationName: "UnsubscribeFromScheduledSpace", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
+        },
+        326439: (e, t, n) => {
+            "use strict";
+            n.d(t, { Z: () => c });
+            var s,
+                o,
+                i,
+                a,
+                r,
+                l = {
+                    fragment: { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "SensitiveMediaSettingsQuery", selections: [{ alias: "viewer", args: (s = [{ kind: "Literal", name: "s", value: "cd25" }]), concreteType: "Viewer", kind: "LinkedField", name: "viewer_v2", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [(o = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }), { kind: "InlineFragment", selections: [(i = { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }), { alias: null, args: null, concreteType: "UserSensitiveMediaSettingsInfo", kind: "LinkedField", name: "sensitive_media_settings", plural: !1, selections: [{ args: null, kind: "FragmentSpread", name: "SensitiveMediaOptions_userSensitiveMediaSettingsInfo" }, (a = { alias: null, args: null, kind: "ScalarField", name: "can_user_allow_sensitive_content", storageKey: null })], storageKey: null }], type: "User", abstractKey: null }], storageKey: null }], storageKey: null }], storageKey: 'viewer_v2(s:"cd25")' }], type: "Query", abstractKey: null },
+                    kind: "Request",
+                    operation: {
+                        argumentDefinitions: [],
+                        kind: "Operation",
+                        name: "SensitiveMediaSettingsQuery",
+                        selections: [
+                            {
+                                alias: "viewer",
+                                args: s,
+                                concreteType: "Viewer",
+                                kind: "LinkedField",
+                                name: "viewer_v2",
+                                plural: !1,
+                                selections: [
+                                    {
+                                        alias: null,
+                                        args: null,
+                                        concreteType: "UserResults",
+                                        kind: "LinkedField",
+                                        name: "user_results",
+                                        plural: !1,
+                                        selections: [
+                                            {
+                                                alias: null,
+                                                args: null,
+                                                concreteType: null,
+                                                kind: "LinkedField",
+                                                name: "result",
+                                                plural: !1,
+                                                selections: [
+                                                    o,
+                                                    {
+                                                        kind: "InlineFragment",
+                                                        selections: [
+                                                            i,
+                                                            {
+                                                                alias: null,
+                                                                args: null,
+                                                                concreteType: "UserSensitiveMediaSettingsInfo",
+                                                                kind: "LinkedField",
+                                                                name: "sensitive_media_settings",
+                                                                plural: !1,
+                                                                selections: [
+                                                                    {
+                                                                        alias: null,
+                                                                        args: null,
+                                                                        concreteType: "SensitiveMediaSettings",
+                                                                        kind: "LinkedField",
+                                                                        name: "sensitive_media_settings",
+                                                                        plural: !1,
+                                                                        selections: [
+                                                                            { alias: null, args: null, kind: "ScalarField", name: "view_adult_content", storageKey: null },
+                                                                            { alias: null, args: null, kind: "ScalarField", name: "view_violent_content", storageKey: null },
+                                                                            { alias: null, args: null, kind: "ScalarField", name: "view_other_content", storageKey: null },
+                                                                            { kind: "ClientExtension", selections: [{ alias: null, args: null, kind: "ScalarField", name: "__id", storageKey: null }] },
+                                                                        ],
+                                                                        storageKey: null,
+                                                                    },
+                                                                    a,
+                                                                ],
+                                                                storageKey: null,
+                                                            },
+                                                            (r = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }),
+                                                        ],
+                                                        type: "User",
+                                                        abstractKey: null,
+                                                    },
+                                                ],
+                                                storageKey: null,
+                                            },
+                                            r,
+                                        ],
+                                        storageKey: null,
+                                    },
+                                ],
+                                storageKey: 'viewer_v2(s:"cd25")',
+                            },
+                        ],
+                    },
+                    params: { id: "ft92vAsha0RhDxwgq_ojWQ", metadata: {}, name: "SensitiveMediaSettingsQuery", operationKind: "query", text: null },
+                };
+            l.hash = "47444c8ec7640b723fc59a35b0544d70";
+            const c = l;
+        },
+        498510: (e, t, n) => {
+            "use strict";
+            n.d(t, { Z: () => c });
+            var s,
+                o,
+                i,
+                a,
+                r,
+                l = {
+                    fragment: {
+                        argumentDefinitions: [],
+                        kind: "Fragment",
+                        metadata: null,
+                        name: "fetchDownloadSettingAllowedQuery",
+                        selections: [
+                            { kind: "RequiredField", field: (s = { alias: null, args: null, concreteType: "UserPreferences", kind: "LinkedField", name: "user_preferences", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "allow_video_downloads", storageKey: null }], storageKey: null }), action: "THROW", path: "user_preferences" },
+                            {
+                                alias: "viewer",
+                                args: (o = [{ kind: "Literal", name: "s", value: "4721" }]),
+                                concreteType: "Viewer",
+                                kind: "LinkedField",
+                                name: "viewer_v2",
+                                plural: !1,
+                                selections: [
+                                    {
+                                        alias: null,
+                                        args: null,
+                                        concreteType: "UserResults",
+                                        kind: "LinkedField",
+                                        name: "user_results",
+                                        plural: !1,
+                                        selections: [
+                                            {
+                                                alias: null,
+                                                args: null,
+                                                concreteType: null,
+                                                kind: "LinkedField",
+                                                name: "result",
+                                                plural: !1,
+                                                selections: [
+                                                    (i = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }),
+                                                    {
+                                                        kind: "InlineFragment",
+                                                        selections: [
+                                                            (a = {
+                                                                alias: null,
+                                                                args: null,
+                                                                concreteType: "LegacyExtendedUserProfile",
+                                                                kind: "LinkedField",
+                                                                name: "legacy_extended_profile",
+                                                                plural: !1,
+                                                                selections: [
+                                                                    {
+                                                                        alias: null,
+                                                                        args: null,
+                                                                        concreteType: "LegacyExtendedBirthDate",
+                                                                        kind: "LinkedField",
+                                                                        name: "birthdate",
+                                                                        plural: !1,
+                                                                        selections: [
+                                                                            { alias: null, args: null, kind: "ScalarField", name: "month", storageKey: null },
+                                                                            { alias: null, args: null, kind: "ScalarField", name: "day", storageKey: null },
+                                                                            { alias: null, args: null, kind: "ScalarField", name: "year", storageKey: null },
+                                                                        ],
+                                                                        storageKey: null,
+                                                                    },
+                                                                ],
+                                                                storageKey: null,
+                                                            }),
+                                                        ],
+                                                        type: "User",
+                                                        abstractKey: null,
+                                                    },
+                                                ],
+                                                storageKey: null,
+                                            },
+                                        ],
+                                        storageKey: null,
+                                    },
+                                ],
+                                storageKey: 'viewer_v2(s:"4721")',
+                            },
+                        ],
+                        type: "Query",
+                        abstractKey: null,
+                    },
+                    kind: "Request",
+                    operation: { argumentDefinitions: [], kind: "Operation", name: "fetchDownloadSettingAllowedQuery", selections: [s, { alias: "viewer", args: o, concreteType: "Viewer", kind: "LinkedField", name: "viewer_v2", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [i, { kind: "InlineFragment", selections: [a, (r = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null })], type: "User", abstractKey: null }], storageKey: null }, r], storageKey: null }], storageKey: 'viewer_v2(s:"4721")' }] },
+                    params: { id: "P4Y9VY-Vn1cJuBnjOVZ4xA", metadata: {}, name: "fetchDownloadSettingAllowedQuery", operationKind: "query", text: null },
+                };
+            l.hash = "8a9c6728758bc2d477246d6d2dbf9e46";
+            const c = l;
+        },
+        882127: (e, t, n) => {
+            "use strict";
+            n.d(t, { Z: () => o });
+            var s = {
+                argumentDefinitions: [],
+                kind: "Fragment",
+                metadata: null,
+                name: "fetchDownloadSettingAllowed_viewer",
+                selections: [
+                    {
+                        alias: null,
+                        args: null,
+                        concreteType: "UserResults",
+                        kind: "LinkedField",
+                        name: "user_results",
+                        plural: !1,
+                        selections: [
+                            {
+                                alias: null,
+                                args: null,
+                                concreteType: null,
+                                kind: "LinkedField",
+                                name: "result",
+                                plural: !1,
+                                selections: [
+                                    { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null },
+                                    {
+                                        kind: "InlineFragment",
+                                        selections: [
+                                            {
+                                                alias: null,
+                                                args: null,
+                                                concreteType: "LegacyExtendedUserProfile",
+                                                kind: "LinkedField",
+                                                name: "legacy_extended_profile",
+                                                plural: !1,
+                                                selections: [
+                                                    {
+                                                        alias: null,
+                                                        args: null,
+                                                        concreteType: "LegacyExtendedBirthDate",
+                                                        kind: "LinkedField",
+                                                        name: "birthdate",
+                                                        plural: !1,
+                                                        selections: [
+                                                            { alias: null, args: null, kind: "ScalarField", name: "month", storageKey: null },
+                                                            { alias: null, args: null, kind: "ScalarField", name: "day", storageKey: null },
+                                                            { alias: null, args: null, kind: "ScalarField", name: "year", storageKey: null },
+                                                        ],
+                                                        storageKey: null,
+                                                    },
+                                                ],
+                                                storageKey: null,
+                                            },
+                                        ],
+                                        type: "User",
+                                        abstractKey: null,
+                                    },
+                                ],
+                                storageKey: null,
+                            },
+                        ],
+                        storageKey: null,
+                    },
+                ],
+                type: "Viewer",
+                abstractKey: null,
+                hash: "7c8218ed97677fa6b6cff281b5c2fef5",
+            };
+            const o = s;
+        },
+        446914: (e, t, n) => {
+            "use strict";
+            n.d(t, { Z: () => s });
+            const s = ({ apiClient: e, featureSwitches: t }) => ({
+                updateSubscriptions(t, n) {
+                    const { sessionId: s, toSubscribe: o, toUnsubscribe: i } = t,
+                        a = { sub_topics: o.join(","), unsub_topics: i.join(",") },
+                        r = { ...n, "LivePipeline-Session": s };
+                    return e.post("live_pipeline/update_subscriptions", a, {}, r, "");
+                },
+            });
+        },
+        6613: (e, t, n) => {
+            "use strict";
+            n.d(t, { Z: () => c });
+            var s = n(163889),
+                o = n(414742),
+                i = n(474804),
+                a = n.n(i),
+                r = n(503768);
+            const l = (e, t) => {
+                    const n = t?.enable_logged_out_web_notifications;
+                    return n || (0, s.ZP)("GQL LoggedOutNotifications: Failed to execute EnableLoggedOutWebNotifications", { extra: (0, r.dL)(e) }), (0, o.jB)(e);
+                },
+                c = ({ apiClient: e, featureSwitches: t }) => ({ enableLoggedOutWebNotifications: (t) => e.graphQL(a(), t, l) });
+        },
+        904940: (e, t, n) => {
+            "use strict";
+            n.d(t, { Z: () => s });
+            const s = ({ apiClient: e, featureSwitches: t }) => ({ metadataCreate: (t, n) => e.post("media/metadata/create", t, {}, { ...n, "content-type": "application/json" }), attachSubtitles: (t, n) => e.post("media/subtitles/create", { media_id: t.videoMediaUploadId, media_category: t.videoMediaCategory, subtitle_info: { subtitles: [{ media_id: t.subtitlesMediaUploadId, language_code: t.subtitlesLang, display_name: t.subtitlesDisplayName }] } }, {}, { ...n, "content-type": "application/json" }) });
+        },
+        372551: (e, t, n) => {
+            "use strict";
+            n.d(t, { Z: () => m });
+            var s = n(584550),
+                o = n.n(s),
+                i = n(322766),
+                a = n.n(i),
+                r = n(263378),
+                l = n.n(r),
+                c = n(322060),
+                u = n.n(c),
+                d = n(601377),
+                p = n.n(d);
+            const m = ({ apiClient: e, featureSwitches: t }) => ({ fetchSubscriptionProductDetails: (t) => e.graphQL(u(), t).then((e) => e.web_subscription_product_details), fetchSubscriptionProductCheckoutUrl: (t) => e.graphQL(l(), t).then((e) => e.subscriptioncheckoutsession_create_for_blue?.session_url), fetchNotABotCheckoutUrl: (t) => e.graphQL(a(), t).then((e) => e.subscriptioncheckoutsession_create_for_not_a_bot?.session_url), fetchProductSubscriptions: (t) => e.graphQL(o(), t).then((e) => e.viewer_v2?.list_product_subscriptions), switchTier: (t) => e.graphQL(p(), t).then((e) => e) });
+        },
+        708482: (e, t, n) => {
+            "use strict";
+            n.d(t, { s: () => i });
+            var s = n(10622),
+                o = n.n(s);
+            function i(e, t, n, s) {
+                return o()(e, t, n, s ? { networkCacheConfig: { metadata: { isFatalError: s } } } : void 0).toPromise();
+            }
+        },
+        32399: (e, t, n) => {
+            "use strict";
+            n.d(t, { Z: () => g });
+            var s = n(202784),
+                o = n(323265),
+                i = n(170542),
+                a = n(500002),
+                r = n(443781),
+                l = n(369241),
+                c = n(668214);
+            const u = (e, t) => t.location.pathname.includes("/intent/"),
+                d = (e, t) => t.location.pathname.includes("/login"),
+                p = (e, t) => t.location.pathname.includes("/ocf_arkose_challenge"),
+                m = (0, c.Z)()
+                    .propsFromState(() => ({ isIntentRoute: u, isLoginRoute: d, isArkoseRoute: p }))
+                    .adjustStateProps(({ isArkoseRoute: e, isIntentRoute: t, isLoginRoute: n }) => ({ hideAppPrompt: t || n || e }));
+            class h extends s.Component {
+                constructor(...e) {
+                    super(...e),
+                        (this._isStandaloneApp = i.Z.isStandaloneApp()),
+                        (this._isWebView = !!o.ZP.getTwitterAppVersion()),
+                        (this.state = { showPrompt: !this.props.hideAppPrompt && !this.context.loggedInUserId && !this._isStandaloneApp && this.context.featureSwitches.isTrue("responsive_web_use_app_prompt_enabled") && !this.context.featureSwitches.isTrue("responsive_web_open_in_app_prompt_enabled") && !this._isWebView }),
+                        (this._handleClose = () => {
+                            this.setState({ showPrompt: !1 });
+                        });
+                }
+                render() {
+                    const e = this.props.location.pathname.includes("/i/flow/signup") || this.props.location.pathname.includes("i/flow/login");
+                    if (this.state.showPrompt) {
+                        return !(e && this.context.featureSwitches.isTrue("responsive_web_suppress_app_button_banner_suppressed")) && s.createElement(l.ZP, { onClose: this._handleClose, onlyShowOnce: !0, useBottomBanner: !0 });
+                    }
+                    return null;
+                }
+            }
+            h.contextType = r.rC;
+            const g = (0, a.ZP)(m(h));
+        },
+        105019: (e, t, n) => {
+            "use strict";
+            n.d(t, { Z: () => u });
+            var s = n(202784),
+                o = n(107267),
+                i = n(31667),
+                a = n(952793),
+                r = n(964814),
+                l = n(885824);
+            function c(e) {
+                return !["/i/flow/login"].includes(e);
+            }
+            const u = (0, r.Z)(function (e = { hideCookieBannerPicker: !1 }) {
+                const t = (function () {
+                        const e = (0, o.useLocation)(),
+                            [t, n] = s.useState(() => c(e.pathname));
+                        return (
+                            s.useEffect(() => {
+                                n(c(e.pathname));
+                            }, [n, e]),
+                            t
+                        );
+                    })(),
+                    n = (0, a.hC)("rweb_conf_only_enabled");
+                return e.hideCookieBannerPicker || !t || n ? null : s.createElement(i.Z, null, s.createElement(l.Z, null));
+            });
+        },
+        885824: (e, t, n) => {
+            "use strict";
+            n.d(t, { Z: () => E });
+            var s = n(202784),
+                o = n(666305),
+                i = n(2138),
+                a = n(443781),
+                r = n(325686),
+                l = n(688715),
+                c = n(731708),
+                u = n(67369),
+                d = n(154003),
+                p = n(392237),
+                m = n(674132),
+                h = n.n(m),
+                g = n(725516),
+                _ = n(421023),
+                b = n(6116);
+            const f = h().d8817e36,
+                w = h().b9288ee6,
+                y = h().i1390ec2,
+                S = (0, l.ju)("https://help.x.com/rules-and-policies/twitter-cookies");
+            function k() {
+                const e = s.createElement(h().I18NFormatMessage, { $i18n: "e4af7661" }, s.createElement(c.ZP, { color: "buttonWhite", link: S, withUnderline: !0 }, h().ga3121d5));
+                return s.createElement(P, { body: e, title: y });
+            }
+            function v(e) {
+                const t = s.createElement(h().I18NFormatMessage, { $i18n: "a268632b" }, s.createElement(c.ZP, { color: "buttonWhite", onClick: e.onExpand, role: "button", withUnderline: !0 }, h().g482c949));
+                return s.createElement(P, { body: t, title: y });
+            }
+            function P(e) {
+                return s.createElement(r.Z, { style: x.cookieComplianceMessageWrap }, s.createElement(c.ZP, { color: "buttonWhite", size: "headline2", weight: "medium" }, e.title), s.createElement(c.ZP, { color: "buttonWhite", size: "subtext2", style: x.cookieComplianceExpandedDetails }, e.body));
+            }
+            const A = s.forwardRef(function (e, t) {
+                    const n = (0, g.z)(),
+                        { expand: o, isExpanded: i } = (function () {
+                            const [e, t] = s.useState(!1),
+                                n = (0, g.z)();
+                            return {
+                                isExpanded: e,
+                                expand: () => {
+                                    n.scribe({ ..._.A, action: "click", element: "expand_message" }), t(!0);
+                                },
+                            };
+                        })(),
+                        { acceptAllCookies: a, isBannerOpen: l, refuseNonEssentialCookies: c } = (0, b.O)();
+                    s.useEffect(() => {
+                        l && n.scribe({ ..._.A, action: "impression" });
+                    }, [n, l]);
+                    const m = (0, u.pj)();
+                    return l ? s.createElement(r.Z, { ref: t, style: [x.root, m && x.rootNarrow] }, i ? s.createElement(k, null) : s.createElement(v, { onExpand: o }), s.createElement(r.Z, { style: [x.buttonContainer, m && x.buttonContainerNarrow] }, s.createElement(d.ZP, { dominantColor: "alwaysBaseGray1100", onPress: a, size: "medium", style: [x.ctaButton, m && x.ctaButtonNarrow], type: p.default.isDarkMode() ? "onMediaDominantColorFilled" : "onMediaWhiteFilled" }, f), s.createElement(d.ZP, { dominantColor: "alwaysBaseGray1100", onPress: c, size: "medium", style: [x.ctaButton, m && x.ctaButtonNarrow], type: p.default.isDarkMode() ? "onMediaDominantColorFilled" : "onMediaWhiteFilled" }, w))) : null;
+                }),
+                x = p.default.create((e) => ({ root: { alignItems: "center", boxShadow: e.boxShadows.xSmall, flexDirection: "row", width: "100%", justifyContent: "space-evenly", paddingVertical: e.componentDimensions.gutterVertical, paddingHorizontal: e.componentDimensions.gutterHorizontal, backgroundColor: e.colors.buttonBlack }, rootNarrow: { flexDirection: "column", paddingVertical: e.componentDimensions.gutterVertical, paddingTop: e.spaces.space20, backgroundColor: e.colors.buttonBlack }, buttonContainer: { flexDirection: "column", marginVertical: e.spaces.space16, marginStart: e.spaces.space20 }, buttonContainerNarrow: { width: "100%", maxWidth: 550, marginStart: 0, flexDirection: "column", flexWrap: "wrap" }, ctaButton: { height: e.spaces.space40, marginBottom: e.spaces.space8, width: 420, flexGrow: 0, flexShrink: 0 }, ctaButtonNarrow: { marginStart: 0, width: "100%" }, cookieComplianceMessageWrap: { flex: 1, maxWidth: 640 }, cookieComplianceExpandedDetails: { marginTop: e.spaces.space8, marginBottom: e.spaces.space8 }, background: { backgroundColor: e.colors.buttonBlack } }));
+            function T(e, t = 100) {
+                return (function (e, t = 100) {
+                    const n = s.useMemo(
+                        () =>
+                            (0, i.Z)((t) => {
+                                if (!e) return;
+                                if (!t) return void e(null);
+                                const n = t.getBoundingClientRect();
+                                n && e(n);
+                            }, t),
+                        [e, t],
+                    );
+                    return s.useCallback(
+                        (t) => {
+                            const s = t;
+                            if ("function" != typeof e) return;
+                            const i = n.bind(null, s);
+                            return (
+                                i(),
+                                window.addEventListener("resize", i),
+                                s && o.Z.observe(s, i),
+                                () => {
+                                    window.removeEventListener("resize", i), o.Z.unobserveAll(s), n.cancel();
+                                }
+                            );
+                        },
+                        [e, n],
+                    );
+                })(
+                    s.useMemo(
+                        () =>
+                            "function" == typeof e
+                                ? (t) => {
+                                      e(t ? t.height : null);
+                                  }
+                                : void 0,
+                        [e],
+                    ),
+                );
+            }
+            function E(e) {
+                const { featureSwitches: t } = s.useContext(a.rC),
+                    n = T(e.onHeightChange);
+                return t.isTrue("responsive_web_cookie_compliance_banner_enabled") ? s.createElement(A, { ref: n }) : null;
+            }
+        },
+        664918: (e, t, n) => {
+            "use strict";
+            n.d(t, { D0: () => l, c$: () => u, fD: () => r, iB: () => m, jk: () => c });
+            var s = n(366097),
+                o = n(163889);
+            const i = 2,
+                a = 1e3,
+                r = Object.freeze({ AcceptAllCookies: "acceptAllCookies", RefuseNonEssentialCookies: "refuseNonEssentialCookies", Invalid: "invalid", NotSet: "notSet" });
+            function l(e) {
+                const t = (0, s.bL)(e);
+                return t ? (d(t) ? (p(t) ? (t[1] ? r.AcceptAllCookies : t[2] ? r.RefuseNonEssentialCookies : ((0, o.ZP)("Invalid consent signal state"), r.Invalid)) : r.NotSet) : r.Invalid) : r.NotSet;
+            }
+            function c(e) {
+                (0, s.kA)({ consent_version: i, text_version: a, 1: !0 }, e);
+            }
+            function u(e) {
+                (0, s.kA)({ consent_version: i, text_version: a, 2: !0 }, e);
+            }
+            function d(e) {
+                return !(e[1] && e[2]);
+            }
+            function p(e) {
+                return e[1] || e[2];
+            }
+            function m(e) {
+                const t = (0, s.bL)(e);
+                return !t || !d(t) || !p(t) || t.consent_version < i || t.text_version < a;
+            }
+        },
+        421023: (e, t, n) => {
+            "use strict";
+            n.d(t, { A: () => s });
+            const s = { page: "cookie_compliance_banner" };
+        },
+        6116: (e, t, n) => {
+            "use strict";
+            n.d(t, { O: () => c });
+            var s = n(202784),
+                o = n(323265),
+                i = n(725516),
+                a = n(443781),
+                r = n(664918),
+                l = n(421023);
+            function c() {
+                const e = (0, i.z)(),
+                    { featureSwitches: t } = s.useContext(a.rC),
+                    n = !!o.ZP.getTwitterAppVersion(),
+                    [c, u] = s.useState(() => r.iB(t) && !n);
+                return {
+                    isBannerOpen: c,
+                    acceptAllCookies() {
+                        e.scribe({ ...l.A, action: "click", element: "accept_all" }), r.jk(t), u(!1);
+                    },
+                    refuseNonEssentialCookies() {
+                        e.scribe({ ...l.A, action: "click", element: "refuse_non_essential" }), r.c$(t), u(!1);
+                    },
+                };
+            }
+        },
+        223543: (e, t, n) => {
+            "use strict";
+            n.d(t, { Z: () => f });
+            n(543673), n(240753), n(128399);
+            var s = n(202784),
+                o = n(154003),
+                i = n(108362),
+                a = n(731708),
+                r = n(392237),
+                l = n(31667),
+                c = n(782826),
+                u = n(668214),
+                d = n(289405);
+            const p = (0, u.Z)()
+                    .propsFromState(() => ({ dtabBarInfo: d.U6 }))
+                    .adjustStateProps(({ dtabBarInfo: e }) => ({ dtabAll: e && e.dtabAll, dtabRweb: e && e.dtabRweb, hide: e && e.hide, ttsToken: e && e.ttsToken }))
+                    .propsFromActions(() => ({ setDtabBarInfo: d.wn })),
+                m = "dTabClear",
+                h = "dTabHide",
+                g = "dTabInfo";
+            class _ extends s.PureComponent {
+                constructor(e, t) {
+                    super(e, t),
+                        (this._renderButtons = () => s.createElement(s.Fragment, null, s.createElement(o.ZP, { onClick: this._handleInfo, size: "xSmall", style: b.dtabBarButton, testID: g, type: "onMediaWhiteFilled" }, "ⓘ Info"), s.createElement(o.ZP, { onClick: this._handleClose, size: "xSmall", style: b.dtabBarButton, testID: h, type: "onMediaWhiteFilled" }, "↓ Hide"), s.createElement(o.ZP, { onClick: this._handleClear, size: "xSmall", style: b.dtabBarButton, testID: m, type: "destructiveFilled" }, "↺ Clear"))),
+                        (this._handleInfo = () => {
+                            const e = this._getOverrides();
+                            window.prompt(e.join("\n"), window.encodeURIComponent(e.join(";")));
+                        }),
+                        (this._getOverrides = () => {
+                            const { dtabAll: e, ttsToken: t } = this.props;
+                            let n = [];
+                            return e && !t ? (n = e) : t && (n = [`tts_token=${t}`]), n.filter((e) => !!e);
+                        }),
+                        (this._handleClear = () => {
+                            const e = `OK to clear overrides?\n${this._getOverrides().join("\n")}`;
+                            if (window.confirm(e)) {
+                                const e = new URL(c.ZP.get());
+                                e.searchParams.set("dtab_local", ""), e.searchParams.set("tts_token", ""), c.ZP.navigateTo(e.toString());
+                            }
+                        }),
+                        (this._handleClose = () => {
+                            const { dtabAll: e, dtabRweb: t, setDtabBarInfo: n, ttsToken: s } = this.props;
+                            this.setState({ show: !1 }), n({ dtabAll: e, dtabRweb: t, ttsToken: s, hide: !0 });
+                        }),
+                        (this._shouldShow = () => {
+                            const { dtabAll: e, hide: t, ttsToken: n } = this.props;
+                            return !(t || (!e && !n));
+                        }),
+                        (this.state = { show: this._shouldShow() });
+                }
+                render() {
+                    const { dtabAll: e, ttsToken: t } = this.props,
+                        n = t || e ? s.createElement(l.Z, { style: b.root }, s.createElement(i.Z, { isLarge: !0, style: b.container, withGutter: !0 }, s.createElement(a.ZP, { color: "whiteOnColor", numberOfLines: 1, size: "subtext2", style: b.text }, "Staging override is active"), this._renderButtons())) : null;
+                    return this.state.show ? n : null;
+                }
+            }
+            _.defaultProps = { hide: !1 };
+            const b = r.default.create((e) => ({ root: { backgroundColor: e.colors.primary }, container: { alignItems: "center", flexDirection: "row", height: e.spaces.space40, justifyContent: "space-between" }, dtabBarButton: { margin: e.spaces.space8 }, text: { width: "100%" } })),
+                f = p(_);
+        },
+        80309: (e, t, n) => {
+            "use strict";
+            n.d(t, { ZP: () => Z, UJ: () => T });
+            var s = n(807896),
+                o = (n(136728), n(202784)),
+                i = n(251067),
+                a = n(325686),
+                r = n(392237),
+                l = n(731708),
+                c = n(674132),
+                u = n.n(c),
+                d = n(752624),
+                p = n(516951),
+                m = n(874627),
+                h = n(994775),
+                g = n(536387),
+                _ = n(163390),
+                b = n(113840),
+                f = n(500002),
+                w = n(443781),
+                y = n(668214),
+                S = n(919022);
+            const k = (0, y.Z)()
+                .propsFromState(() => ({ viewerUser: S.ZP.selectViewerUser }))
+                .adjustStateProps(({ viewerUser: e }) => ({ viewerUserScreenName: e ? e.screen_name : void 0 }));
+            const v = [...n(122758).M],
+                P = u().b47e760e,
+                A = u().fd2c7b44,
+                x = new d.Z(),
+                T = (e) => x.subscribe(e).unsubscribe;
+            class E extends o.Component {
+                constructor(...e) {
+                    super(...e),
+                        (this._bindKeyboardShortcuts = () => {
+                            const { history: e, jotaiStore: t, viewerUserScreenName: n } = this.props,
+                                s = (t, n = {}) => e.push({ pathname: t, state: { ...n, source: "keyboard_shortcut" } }),
+                                o = (e) => (t) => {
+                                    t.preventDefault(), x.getListeners().length ? x.notify(e) : s("/explore", { searchFocused: !0, searchPrefill: e });
+                                },
+                                a = { [_.uq.labs.openCommandCenter]: p.Z, [_.uq.search]: o(), [_.uq.goToUser]: o("@"), [_.uq.openKeyboardShortcuts]: () => s("/i/keyboard_shortcuts"), [_.uq.goExplore]: () => s("/explore"), [_.uq.goSettings]: () => s("/settings") },
+                                r = (e) => ({ [_.uq.goProfile]: () => s(`/${e}`), [_.uq.goLikes]: () => s(`/${e}/likes`), [_.uq.goLists]: () => s(`/${e}/lists`) }),
+                                l = this.context.userClaims.isTrueAndEnabled("subscriptions_feature_1007"),
+                                c = n && l ? { ...r(n), [_.uq.goTopArticles]: () => s("/i/articles") } : n ? r(n) : {},
+                                u = { ...a, ...c, [_.uq.toggleCommandCenter]: (0, i.fH)(i.vw.prod) ? p.Z : () => t.set(m._K), [_.uq.goHome]: () => s("/home"), [_.uq.goDisplay]: () => s("/i/display"), [_.uq.goNotifications]: () => s("/notifications"), [_.uq.goMentions]: () => s("/notifications/mentions"), [_.uq.goMessages]: () => s("/messages"), [_.uq.goGrok]: () => s("/i/grok"), [_.uq.newMessage]: () => s("/messages/compose"), [_.uq.newTweet]: () => s("/compose/post"), [_.uq.goBookmarks]: () => s("/i/bookmarks"), [_.uq.goToDrafts]: () => s("/compose/post/unsent/drafts"), [_.uq.goToScheduled]: () => s("/compose/post/unsent/scheduled") },
+                                d = this.props.viewerUserScreenName ? u : a;
+                            this._unbindKeyboardShortcuts = (0, h.Z)(d);
+                        });
+                }
+                componentDidMount() {
+                    this._bindKeyboardShortcuts();
+                }
+                componentWillUnmount() {
+                    this._unbindKeyboardShortcuts && this._unbindKeyboardShortcuts();
+                }
+                render() {
+                    return this.props.viewerUserScreenName ? o.createElement(a.Z, { "aria-level": 2, role: "heading", style: r.default.visuallyHidden }, o.createElement(m.lk, null), o.createElement(l.ZP, null, P), o.createElement(l.ZP, { focusable: !1, link: "/i/keyboard_shortcuts" }, A)) : null;
+                }
+            }
+            E.contextType = w.rC;
+            const C = k(function (e) {
+                    const t = (0, g.xO)();
+                    return e.disabled ? null : o.createElement(E, (0, s.Z)({}, e, { jotaiStore: t }));
+                }),
+                Z = (0, b.g)((0, f.ZP)(C), v);
+        },
+        642028: (e, t, n) => {
+            "use strict";
+            n.d(t, { Z: () => g });
+            var s = n(202784),
+                o = n(523561),
+                i = n(125363),
+                a = n(257166),
+                r = n(390387),
+                l = n(365265),
+                c = n(312771),
+                u = n(443781),
+                d = n(736063);
+            const p = { context: "intercom_stater" };
+            function m() {
+                const { featureSwitches: e, userClaims: t } = (0, u.QZ)(),
+                    n = (0, i.v9)(r.Qb),
+                    o = (0, i.v9)(a.selectFirstEmail),
+                    m = (0, i.v9)(r.Lz),
+                    g = (0, i.I0)(),
+                    _ = (0, i.v9)(l.VR) === c.ZP.LOADED,
+                    b = (0, i.v9)(a.selectFetchStatus) === c.ZP.LOADED,
+                    f = e.isTrue("responsive_web_verified_organizations_intercom_enabled") && t.isVerifiedOrg(),
+                    w = e.isTrue("responsive_web_intercom_support_capture_premium_enabled") && t.isAnyPremiumSubscriber(),
+                    y = !f && w,
+                    S = !m && !b,
+                    k = f || w,
+                    v = !S && (!y || _);
+                return (
+                    s.useEffect(() => {
+                        n && k && (S && g((0, a.fetchDevicesIfNeeded)()), y && g((0, l.v1)()));
+                    }, [g, k, n, y, S]),
+                    k && v ? s.createElement(d.H, { errorConfig: p, suspenseFallback: null }, s.createElement(h, { email: o })) : null
+                );
+            }
+            const h = (0, o.Z)({ loader: () => n.e("ondemand.Intercom").then(n.bind(n, 653934)) }),
+                g = s.memo(m);
+        },
+        634518: (e, t, n) => {
+            "use strict";
+            n.d(t, { Z: () => u });
+            var s = n(202784),
+                o = n(108362),
+                i = n(731708),
+                a = n(154003),
+                r = n(392237),
+                l = n(31667),
+                c = n(355335);
+            const u = (e) => {
+                    const [t, n] = s.useState(!1),
+                        { disableDev: r, isDev: u } = (0, c.Z)();
+                    if (
+                        (s.useEffect(() => {
+                            n(u);
+                        }, [u]),
+                        t)
+                    )
+                        return s.createElement(l.Z, { style: d.root }, s.createElement(o.Z, { isLarge: !0, style: d.container, withGutter: !0 }, s.createElement(i.ZP, { "aria-label": "jetfuel dev bar", color: "whiteOnColor", numberOfLines: 1, size: "subtext2", style: d.text, withoutTwemojiAndHashflags: !0 }, s.createElement("span", { "aria-label": "rocket", role: "img" }, "🚀🚀🚀"), " Jetfuel Local Dev Mode"), s.createElement(a.ZP, { onClick: () => n(!1), size: "xSmall", style: d.dtabBarButton, type: "onMediaWhiteFilled" }, "↓ Hide"), s.createElement(a.ZP, { onClick: r, size: "xSmall", style: d.dtabBarButton, type: "destructiveFilled" }, "↺ Clear")));
+                },
+                d = r.default.create((e) => ({ root: { backgroundColor: e.colors.primary }, container: { alignItems: "center", flexDirection: "row", height: e.spaces.space40, justifyContent: "space-between" }, dtabBarButton: { margin: e.spaces.space8 }, text: { width: "100%" } }));
+        },
+        316391: (e, t, n) => {
+            "use strict";
+            n.d(t, { Z: () => r });
+            var s = n(202784),
+                o = n(323265),
+                i = n(668214),
+                a = n(24546);
+            const r = (0, i.Z)()
+                .propsFromState(() => ({ previews: a.W }))
+                .adjustStateProps(({ previews: e }) => ({ userHasUnsentTweets: Object.keys(e).length > 0 }))
+                .propsFromActions(() => ({ sendAllPreviews: a.MH }))(
+                ({ sendAllPreviews: e, userHasUnsentTweets: t }) => (
+                    s.useEffect(() => {
+                        const n = o.ZP.isMobileOS() ? "visibilitychange" : "beforeunload",
+                            s = o.ZP.isMobileOS() ? document : window;
+                        t ? s.addEventListener(n, e) : s.removeEventListener(n, e);
+                    }, [e, t]),
+                    null
+                ),
+            );
+        },
+        551415: (e, t, n) => {
+            "use strict";
+            n.d(t, { Z: () => I });
+            var s = n(202784),
+                o = n(107267),
+                i = n(952793),
+                a = n(529356),
+                r = n(674132),
+                l = n.n(r),
+                c = n(684869),
+                u = n(516951),
+                d = n(725516),
+                p = n(668214),
+                m = n(922481);
+            const h = (0, p.Z)()
+                    .propsFromState(() => ({ promptAllowed: m.selectIsEligibleForPushPrompt }))
+                    .propsFromActions(() => ({ updatePromptStatus: m.updatePromptStatus, pushSubscribeLoggedOut: m.pushSubscribeLoggedOut }))
+                    .withAnalytics({ component: "lo_notifications", element: "in_app_prompt" }),
+                g = l().e5d26f84,
+                _ = l().e71e09ec,
+                b = _,
+                f = _,
+                w = l().hd50e064,
+                y = (e) => {
+                    const { promptAllowed: t, pushSubscribeLoggedOut: n, updatePromptStatus: o } = e,
+                        [i, r] = s.useState(t),
+                        l = (0, d.z)(),
+                        u = s.useCallback(
+                            (e) => {
+                                l.scribeAction(e);
+                            },
+                            [l],
+                        ),
+                        p = s.useCallback(() => {
+                            u("primary_cta"), o("inAppPrompt", "approved"), r(!1), n();
+                        }, [n, u, o]),
+                        m = s.useCallback(() => {
+                            const { onDismiss: t } = e;
+                            o("inAppPrompt", "dismissed"), r(!1), u("dismiss"), t();
+                        }, [e, u, o]);
+                    return (
+                        s.useEffect(() => {
+                            t && (u("impression"), r(!0), o("inAppPrompt", "seen"));
+                        }, [o, t, u]),
+                        t || i ? s.createElement(a.Z, { actionLabel: f, graphic: c.default, headline: b, onAction: p, onClose: m, onTertiaryAction: m, subtext: g, tertiaryActionLabel: w }) : null
+                    );
+                };
+            y.defaultProps = { message: g, onDismiss: u.Z };
+            const S = h(s.memo(y));
+            n(543673), n(240753), n(128399);
+            var k = n(138099),
+                v = n(711535),
+                P = n(71620),
+                A = n(601576);
+            const x = (0, p.Z)()
+                    .propsFromState(() => ({ browserPromptStatus: m.selectBrowserPromptStatus, arkosePromptStatus: m.selectArkosePromptStatus }))
+                    .adjustStateProps(({ arkosePromptStatus: e, browserPromptStatus: t }) => ({ shouldShowPrompt: t === m.PromptStatus.APPROVED && e === m.PromptStatus.NOT_SEEN }))
+                    .propsFromActions(() => ({ verifyArkoseTokenAndSavePushToken: m.verifyArkoseTokenAndSavePushToken, addToast: A.fz, updatePromptStatus: m.updatePromptStatus, createLocalApiErrorHandler: (0, P.zr)("arkose_challenge_logged_out_notifications") }))
+                    .withAnalytics({ component: "lo_notifications", element: "arkose" }),
+                T = l().g4850f44,
+                E = (e) => {
+                    const { addToast: t, analytics: n, createLocalApiErrorHandler: o, shouldShowPrompt: i, updatePromptStatus: a, verifyArkoseTokenAndSavePushToken: r } = e,
+                        [l, c] = s.useState(i);
+                    s.useEffect(() => {
+                        i && (c(!0), a("arkosePrompt", m.PromptStatus.SEEN), n.scribeAction("show"));
+                    }, [i, a, n]);
+                    const u = s.useCallback(
+                            (e) => {
+                                n.scribeAction("complete"),
+                                    r(e)
+                                        .then(() => {
+                                            a("arkosePrompt", m.PromptStatus.APPROVED), t({ text: T });
+                                        })
+                                        .catch(() => {
+                                            o({});
+                                        })
+                                        .finally(() => {
+                                            c(!1);
+                                        });
+                            },
+                            [t, o, a, n, r],
+                        ),
+                        d = s.useCallback(() => {
+                            n.scribeAction("fail"), a("arkosePrompt", m.PromptStatus.DISMISSED), c(!1);
+                        }, [a, n]);
+                    if (!i && !l) return null;
+                    const p = new URLSearchParams(window.location.search).get("data") || void 0;
+                    return s.createElement(k.Z, { enableMaskForDismiss: !1, type: "full", withMask: !0 }, s.createElement(v.default, { data: p, mobileKey: "arkose_challenge_lo_web_notification_mobile_prod", onChallengeCompleted: u, onChallengeFailed: d, webKey: "arkose_challenge_lo_web_notification_prod" }));
+                },
+                C = x(s.memo(E));
+            var Z = n(997174),
+                F = n(312771);
+            const L = ["profile", "guide", "tweet", "topic_landing", "spheres_list", "live_event_timeline", "search"],
+                B = (e) => {
+                    const t = (0, Z.wZ)(e);
+                    return !!t && ((e) => -1 !== L.indexOf(e))(t);
+                },
+                N = (e) => (0, m.selectFetchStatus)(e) === F.ZP.LOADED,
+                D = (e) => {
+                    const { isPersistedDataLoaded: t, isSupportedNavPath: n } = e,
+                        a = (0, o.useLocation)(),
+                        r = (0, i.D2)("responsive_web_logged_out_notifications_enabled"),
+                        l = s.useMemo(
+                            () =>
+                                ((e) => {
+                                    const { pathname: t, query: n } = e;
+                                    return ((e) => "/" === e)(t) || ((e) => !!e?.logout)(n) || ((e) => e.includes("/i/flow"))(t);
+                                })(a),
+                            [a],
+                        );
+                    if (!t || !n || l) return null;
+                    return r.isTrue() && s.createElement(s.Fragment, null, s.createElement(S, null), s.createElement(C, null));
+                },
+                I = (0, p.Z)()
+                    .propsFromState(() => ({ isSupportedNavPath: B, isPersistedDataLoaded: N }))
+                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, P.zr)("LOGGED_OUT_NOTIFICATIONS") }))(s.memo(D));
+        },
+        233391: (e, t, n) => {
+            "use strict";
+            n.d(t, { BH: () => q, Qj: () => j, Wc: () => H, sI: () => R });
+            var s = n(202784),
+                o = n(731708),
+                i = n(392237),
+                a = n(674132),
+                r = n.n(a),
+                l = n(911373),
+                c = n(761744),
+                u = n(98440),
+                d = n(720600),
+                p = n(125966),
+                m = n(544367),
+                h = n(452693),
+                g = n(971657),
+                _ = n(956272),
+                b = n(520913);
+            const f = r().a17a75da,
+                w = r().e7342ed4,
+                y = r().b6a43e78,
+                S = r().b469e406,
+                k = r().b8505290,
+                v = ({ userFullName: e }) => (e ? s.createElement(r().I18NFormatMessage, { $i18n: "e1a49407" }, s.createElement(o.ZP, null, e)) : void 0),
+                P = r().ae8b0564,
+                A = ({ userFullName: e }) => (e ? s.createElement(r().I18NFormatMessage, { $i18n: "be54ed41" }, s.createElement(o.ZP, null, e)) : void 0),
+                x = r().f2adab0e,
+                T = ({ userFullName: e }) => (e ? s.createElement(r().I18NFormatMessage, { $i18n: "jb19eb17" }, s.createElement(o.ZP, null, e)) : void 0),
+                E = ({ userFullName: e }) => (e ? s.createElement(r().I18NFormatMessage, { $i18n: "bbfee611" }, s.createElement(o.ZP, null, e)) : void 0),
+                C = r().b7821a74,
+                Z = ({ userFullName: e }) => (e ? s.createElement(r().I18NFormatMessage, { $i18n: "af104f2b" }, s.createElement(o.ZP, null, e)) : void 0),
+                F = ({ customText: e }) => (e ? s.createElement(r().I18NFormatMessage, { $i18n: "ccc1f303" }, s.createElement(o.ZP, null, e)) : void 0),
+                L = ({ userFullName: e }) => (e ? s.createElement(r().I18NFormatMessage, { $i18n: "ce02fabf" }, s.createElement(o.ZP, null, e)) : void 0),
+                B = r().e6d43d06,
+                N = ({ customText: e }) => (e ? s.createElement(r().I18NFormatMessage, { $i18n: "a85608a7" }, s.createElement(o.ZP, null, e)) : void 0),
+                D = r().ic848090,
+                I = r().f9ebe066,
+                M = ({ userFullName: e }) => (e ? s.createElement(r().I18NFormatMessage, { $i18n: "c76865b7" }, s.createElement(o.ZP, null, e)) : void 0),
+                O = r().je3d93e2,
+                K = r().ea88ce2e,
+                U = r().je3d93e2,
+                q = Object.freeze({ follow: "follow", like: "like", reply: "reply", retweet: "retweet", generic: "generic", dmshare: "dmshare", postvideo: "postvideo", subscribe: "subscribe", topic: "topic", community: "community", bookmark: "bookmark", search: "search" }),
+                H = (e, t) => {
+                    switch (t) {
+                        case q.follow:
+                            return { icon: l.default, text: E, subtext: C, iconStyle: V.iconOther };
+                        case q.like:
+                            return { icon: c.default, text: x, subtext: T, iconStyle: V.iconLike };
+                        case q.reply:
+                            return { icon: u.default, text: k, subtext: v, iconStyle: V.iconOther };
+                        case q.retweet:
+                            return { icon: d.default, text: P, subtext: A, iconStyle: V.iconRetweet };
+                        case q.dmshare:
+                            return { icon: p.default, text: Z, iconStyle: V.iconOther };
+                        case q.subscribe:
+                            return { icon: m.default, text: F, subtext: L, iconStyle: V.iconOther };
+                        case q.topic:
+                            return { icon: h.default, text: B, subtext: N, iconStyle: V.iconTopics };
+                        case q.community:
+                            return { icon: g.default, text: D, subtext: I, iconStyle: V.iconOther };
+                        case q.search:
+                            return { icon: _.default, text: M, subtext: O, iconStyle: V.iconOther };
+                        default:
+                            return { icon: b.default, text: K, subtext: U, iconStyle: V.iconTwitter };
+                    }
+                },
+                R = (e) => (e.hasValue("responsive_web_use_app_prompt_copy_variant", "prompt_better") ? f : y),
+                j = (e) => (e.hasValue("responsive_web_use_app_prompt_copy_variant", "prompt_better") ? w : S),
+                V = i.default.create((e) => ({ iconOther: { color: e.colors.blue500 }, iconLike: { color: e.colors.magenta500 }, iconTwitter: { color: e.colors.brandColor }, iconRetweet: { color: e.colors.green500 }, iconTopics: { color: e.colors.blue500 } }));
+        },
+        369241: (e, t, n) => {
+            "use strict";
+            n.d(t, { BH: () => T.BH, ZP: () => D });
+            n(875640);
+            var s = n(202784),
+                o = n(529356),
+                i = n(674132),
+                a = n.n(i),
+                r = n(323265),
+                l = n(170542),
+                c = n(951790),
+                u = n(804027),
+                d = n(443781),
+                p = n(325686),
+                m = n(292627),
+                h = n(731708),
+                g = n(154003),
+                _ = n(392237);
+            class b extends s.PureComponent {
+                render() {
+                    const { onPrimaryButtonClick: e, onSecondaryButtonClick: t, primaryButtonLabel: n, primaryText: o, secondaryButtonLabel: i, secondaryText: a } = this.props;
+                    return s.createElement(m.Z.HalfSheet, null, s.createElement(p.Z, { style: f.sheetContent }, s.createElement(p.Z, { style: f.content }, s.createElement(p.Z, { style: f.header }, s.createElement(h.ZP, { color: "white", size: "headline1", weight: "bold" }, o)), s.createElement(h.ZP, { color: "white", style: f.secondaryText }, a)), s.createElement(p.Z, { style: f.footer }, s.createElement(g.ZP, { onPress: t, size: "medium", style: f.button, type: "onMediaOutlined" }, s.createElement(h.ZP, { numberOfLines: 1 }, i)), s.createElement(g.ZP, { onPress: e, size: "medium", style: f.button, type: "onMediaWhiteFilled" }, s.createElement(h.ZP, { numberOfLines: 1 }, n)))));
+                }
+            }
+            const f = _.default.create((e) => ({ content: { padding: e.spaces.space20 }, footer: { flexDirection: "row", justifyContent: "space-between", paddingBottom: e.spaces.space12, paddingHorizontal: e.spaces.space20, flexWrap: "wrap" }, button: { marginBottom: e.spaces.space4 }, header: { flexDirection: "row" }, secondaryText: { paddingTop: e.spaces.space12 }, sheetContent: { paddingBottom: _.default.iPhoneOffsetBottom, backgroundColor: e.colors.primary } })),
+                w = b;
+            var y = n(668214),
+                S = n(558369),
+                k = n(118823),
+                v = n(390387),
+                P = n(38562),
+                A = n(936572);
+            const x = (0, y.Z)()
+                .propsFromState(() => ({ featureSwitchImpressions: S.ur, loginPromptShown: P.fj, loginPromptLastShown: A.ne, startLocation: k.Lg }))
+                .propsFromActions(() => ({ setLoginPromptShown: P.Af, setLoginReturnPath: v.Jm, updateSettings: P.VP }))
+                .withAnalytics();
+            var T = n(233391);
+            n(920099), n(856642), n(782826), n(903019);
+            const E = Object.freeze({ BannerSwitchToApp: "banner_switch_to_app", InterstitialSwitchToApp: "interstitial_switch_to_app", NuxAppDownload: "NUX-app-download", SwitchToAppFooter: "switch-to-app-footer", UseApp: "use-app", UseAppExtended: "use-app-extended", SwitchToAppHigh7: "switch_to_app_high_7", SwitchToAppHigh1: "switch_to_app_high_1", SwitchToAppHigh2: "switch_to_app_high_2", SwitchToAppHigh3: "switch_to_app_high_3", SwitchToAppHigh5: "switch_to_app_high_5", SwitchToAppLow7: "switch_to_app_low_7", SwitchToAppLow1: "switch_to_app_low_1", SwitchToAppLow3: "switch_to_app_low_3", SwitchToAppLow5: "switch_to_app_low_5", SwitchToAppLow9: "switch_to_app_low_9" }),
+                C = a().j607bf02,
+                Z = a().j49fd4e8,
+                F = a().hd50e064,
+                L = a().a565833e,
+                B = a().e919c3bc;
+            class N extends s.Component {
+                constructor(e, t) {
+                    super(e, t),
+                        (this._getFullSheetDisplayElements = T.Wc.bind(null, this.context.featureSwitches)),
+                        (this._getHalfSheetPrimaryText = T.sI.bind(null, this.context.featureSwitches)),
+                        (this._getHalfSheetSecondaryText = T.Qj.bind(null, this.context.featureSwitches)),
+                        (this._isStandaloneApp = l.Z.isStandaloneApp()),
+                        (this._shouldRenderPrompt = () => {
+                            const { loginPromptLastShown: e, loginPromptShown: t, onlyShowOnce: n, useBottomBanner: s } = this.props,
+                                { displayInterval: o } = this.state;
+                            if (s && !this._hasMobileAppStore()) return !1;
+                            if (n) {
+                                if (t) return !1;
+                                if (o && Date.now() - e < o) return !1;
+                            }
+                            return !0;
+                        }),
+                        (this._handleClose = () => {
+                            this._scribeAction("dismiss"), this.props.onClose();
+                        }),
+                        (this._handleNotNow = () => {
+                            this._scribeAction("not_now"), this.props.onClose();
+                        }),
+                        (this._handleSubmit = (e) => {
+                            const { onClose: t, postLoginPath: n, setLoginReturnPath: s } = this.props;
+                            this._scribeAction("login"), n && s(n), t();
+                        }),
+                        (this._handleSignupButtonClick = (e) => {
+                            this._scribeAction("signup"), this.props.onClose();
+                        }),
+                        (this._handleAppInstallButtonClick = (e) => {
+                            e.preventDefault(), this._scribeAction("download"), c.Z.goToAppStore("loggedoutprompt");
+                        }),
+                        (this._getSignupState = () => {
+                            const { displayMode: e, tweetId: t, userId: n } = this.props;
+                            switch (e) {
+                                case T.BH.follow:
+                                    return { gatedAction: { action: u.qJ.Follow, user_id: n } };
+                                case T.BH.like:
+                                    return { gatedAction: { action: u.qJ.Favorite, tweet_id: t, user_id: n } };
+                                case T.BH.reply:
+                                    return { gatedAction: { action: u.qJ.Reply, tweet_id: t, user_id: n } };
+                                case T.BH.retweet:
+                                    return { gatedAction: { action: u.qJ.Retweet, tweet_id: t, user_id: n } };
+                                default:
+                                    return;
+                            }
+                        }),
+                        (this._getLoginState = () => {
+                            const { postLoginPath: e } = this.props;
+                            if (e) return { input: { requested_variant: btoa(JSON.stringify({ redirect_after_login: e })) } };
+                        }),
+                        (this._hasMobileAppStore = () => r.ZP.isIOS() || r.ZP.isAndroid());
+                    const { useBottomBanner: n } = this.props;
+                    this._showTertiaryCTA = this._hasMobileAppStore() && !this._isStandaloneApp && this.context.featureSwitches.isTrue("responsive_web_login_signup_sheet_app_install_cta_enabled");
+                    const s = this.context.featureSwitches.getNumberValue("rweb_update_fatigue_switch_to_app_day_timeout"),
+                        o = this.context.featureSwitches.getStringValue("rweb_update_fatigue_switch_to_app_link");
+                    this.state = { displayInterval: n ? 864e5 * s : 0, switchToAppLink: E[o] };
+                }
+                componentDidMount() {
+                    this._shouldRenderPrompt() && this._scribeAction("impression");
+                }
+                componentWillUnmount() {
+                    const { loginPromptShown: e, onlyShowOnce: t, setLoginPromptShown: n, updateSettings: s } = this.props;
+                    !e && t && (n(!0), s({ loginPromptLastShown: Date.now() }));
+                }
+                render() {
+                    const { allowBackNavigation: e, customText: t, displayMode: n, hideSignUp: i, isFullHeightOnMobile: a, loginLabel: r, useBottomBanner: l, userFullName: c } = this.props;
+                    if (!this._shouldRenderPrompt()) return null;
+                    const { icon: u, iconStyle: d, subtext: p, text: m } = this._getFullSheetDisplayElements(n),
+                        h = "function" == typeof m ? m({ customText: t, userFullName: c }) : m,
+                        g = "function" == typeof p ? p({ customText: t, userFullName: c }) : p,
+                        _ = i ? "" : this.props.signupLabel,
+                        b = { pathname: "/i/flow/login", state: this._getLoginState() },
+                        f = { pathname: "/i/flow/signup", state: this._getSignupState() };
+                    return l ? s.createElement(w, { onPrimaryButtonClick: this._handleAppInstallButtonClick, onSecondaryButtonClick: this._handleNotNow, primaryButtonLabel: Z, primaryText: this._getHalfSheetPrimaryText(), secondaryButtonLabel: F, secondaryText: this._getHalfSheetSecondaryText() }) : s.createElement(o.Z, { actionLabel: r, actionLink: b, allowBackNavigation: e, graphic: u, graphicStyle: d, headline: h || "", isFullHeightOnMobile: a, onAction: this._handleSubmit, onClose: this._handleClose, onSecondaryAction: this._handleSignupButtonClick, onTertiaryAction: this._showTertiaryCTA ? this._handleAppInstallButtonClick : void 0, secondaryActionLabel: _, secondaryActionLink: f, subtext: g || "", tertiaryActionLabel: this._showTertiaryCTA ? C : void 0, useBrandedActionButtons: !0 });
+                }
+                _scribeAction(e) {
+                    const { analytics: t, displayMode: n, useBottomBanner: s } = this.props,
+                        o = s ? "half_sheet" : n;
+                    t.scribe({ component: "login_signup_sheet", element: o, action: e });
+                }
+            }
+            (N.defaultProps = { displayMode: T.BH.generic, hideSignUp: !1, isFullHeightOnMobile: !0, useBottomBanner: !1, loginLabel: B, signupLabel: L, onlyShowOnce: !1 }), (N.displayMode = T.BH), (N.contextType = d.rC);
+            const D = x(N);
+        },
+        331879: (e, t, n) => {
+            "use strict";
+            n.d(t, { Z: () => h });
+            var s = n(202784),
+                o = n(292627),
+                i = n(557707),
+                a = n(392237),
+                r = n(774654),
+                l = n(292484),
+                c = n(668214),
+                u = n(601576);
+            const d = (0, c.Z)()
+                    .propsFromState(() => ({ toast: u.Sb }))
+                    .propsFromActions(() => ({ onClose: u.RS })),
+                p = "toast",
+                m = a.default.create((e) => ({ toastStaysAboveSafeArea: { top: `calc(${a.default.iPhoneOffsetBottom} - ${r.ZM.getAppBarHeight()})` } })),
+                h = d(({ onClose: e, toast: t }) => {
+                    const n = (0, l.$h)(),
+                        a = r.ZM.useCollapsibleNavBars(),
+                        c = [...r.Ah({ elementPosition: "bottom" }), a && m.toastStaysAboveSafeArea];
+                    if (!t) return null;
+                    const u = n ? o.Z.ModalToasts : o.Z.Toasts;
+                    return s.createElement(i.ZP, { LayerComponent: u, action: t.action, ariaOnly: t.ariaOnly, autoDismissDelay: t.autoDismissDelay, key: t.id, onClose: e, style: c, testID: p, text: t.text, variant: t.variant, withAutoDismiss: t.withAutoDismiss, withClearButton: t.withClearButton });
+                });
+        },
+    },
+]);
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.AppModules-a2dee9c7.afd6be0a.js.map

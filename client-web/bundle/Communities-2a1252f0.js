@@ -1,0 +1,571 @@
+"use strict";
+(self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
+    ["bundle.Communities-2a1252f0"],
+    {
+        752389: (l, e, n) => {
+            n.d(e, { Z: () => i });
+            var a = {
+                argumentDefinitions: [],
+                kind: "Fragment",
+                metadata: null,
+                name: "TrendingHashtagsCarousel_community",
+                selections: [
+                    {
+                        alias: null,
+                        args: null,
+                        concreteType: "CommunityHashtagSlice",
+                        kind: "LinkedField",
+                        name: "trending_hashtags_slice",
+                        plural: !1,
+                        selections: [
+                            { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null },
+                            { alias: null, args: null, concreteType: "CommunityHashtag", kind: "LinkedField", name: "items", plural: !0, selections: [{ alias: null, args: null, kind: "ScalarField", name: "hashtag", storageKey: null }], storageKey: null },
+                        ],
+                        storageKey: null,
+                    },
+                ],
+                type: "Community",
+                abstractKey: null,
+                hash: "ed2ab4dc31fd159cf54cd49ca3ae6ba5",
+            };
+            const i = a;
+        },
+        482242: (l, e, n) => {
+            n.d(e, { Z: () => p });
+            var a,
+                i,
+                s,
+                r,
+                u,
+                t,
+                d,
+                o,
+                c,
+                g,
+                m,
+                y,
+                k = {
+                    fragment: {
+                        argumentDefinitions: (a = [
+                            { defaultValue: null, kind: "LocalArgument", name: "communityId" },
+                            { defaultValue: null, kind: "LocalArgument", name: "userId" },
+                        ]),
+                        kind: "Fragment",
+                        metadata: null,
+                        name: "actions_approveMemberRequest_Mutation",
+                        selections: [
+                            {
+                                alias: null,
+                                args: (i = [
+                                    { kind: "Variable", name: "community_id", variableName: "communityId" },
+                                    { kind: "Literal", name: "s", value: "1452" },
+                                    { kind: "Variable", name: "user_id", variableName: "userId" },
+                                ]),
+                                concreteType: null,
+                                kind: "LinkedField",
+                                name: "community_join_request_approve",
+                                plural: !1,
+                                selections: [(s = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }), { kind: "InlineFragment", selections: [(r = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }), (u = { alias: null, args: null, kind: "ScalarField", name: "responded_at", storageKey: null }), { args: null, kind: "FragmentSpread", name: "cell_CommunityJoinRequest" }, { alias: null, args: null, concreteType: "UserCommunityRelationship", kind: "LinkedField", name: "user_relationship", plural: !1, selections: [{ alias: null, args: null, concreteType: "CommunityResults", kind: "LinkedField", name: "community_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [s, { kind: "InlineFragment", selections: [{ args: null, kind: "FragmentSpread", name: "useCommunityPendingJoinRequests_community" }], type: "Community", abstractKey: null }], storageKey: null }], storageKey: null }], storageKey: null }], type: "CommunityJoinRequest", abstractKey: null }, (d = { kind: "InlineFragment", selections: [{ alias: "errorReason", args: null, kind: "ScalarField", name: "reason", storageKey: null }, (t = { alias: null, args: null, kind: "ScalarField", name: "message", storageKey: null })], type: "CommunityJoinRequestApproveError", abstractKey: null }), (o = { kind: "InlineFragment", selections: [{ alias: "unavailableReason", args: null, kind: "ScalarField", name: "reason", storageKey: null }, t], type: "CommunityJoinRequestApproveActionUnavailable", abstractKey: null })],
+                                storageKey: null,
+                            },
+                        ],
+                        type: "Mutation",
+                        abstractKey: null,
+                    },
+                    kind: "Request",
+                    operation: {
+                        argumentDefinitions: a,
+                        kind: "Operation",
+                        name: "actions_approveMemberRequest_Mutation",
+                        selections: [
+                            {
+                                alias: null,
+                                args: i,
+                                concreteType: null,
+                                kind: "LinkedField",
+                                name: "community_join_request_approve",
+                                plural: !1,
+                                selections: [
+                                    s,
+                                    {
+                                        kind: "InlineFragment",
+                                        selections: [
+                                            r,
+                                            u,
+                                            { alias: null, args: null, kind: "ScalarField", name: "answer", storageKey: null },
+                                            { alias: null, args: null, kind: "ScalarField", name: "created_at", storageKey: null },
+                                            { alias: null, args: null, kind: "ScalarField", name: "state", storageKey: null },
+                                            {
+                                                alias: null,
+                                                args: null,
+                                                concreteType: "UserCommunityRelationship",
+                                                kind: "LinkedField",
+                                                name: "user_relationship",
+                                                plural: !1,
+                                                selections: [
+                                                    {
+                                                        alias: null,
+                                                        args: null,
+                                                        concreteType: "UserResults",
+                                                        kind: "LinkedField",
+                                                        name: "user_results",
+                                                        plural: !1,
+                                                        selections: [
+                                                            {
+                                                                alias: null,
+                                                                args: null,
+                                                                concreteType: null,
+                                                                kind: "LinkedField",
+                                                                name: "result",
+                                                                plural: !1,
+                                                                selections: [
+                                                                    s,
+                                                                    {
+                                                                        kind: "InlineFragment",
+                                                                        selections: [
+                                                                            (c = { alias: "id_str", args: null, kind: "ScalarField", name: "rest_id", storageKey: null }),
+                                                                            { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "blocking", storageKey: null }, (g = { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null }), { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "following", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "muting", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "id_str", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "verified_type", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }], storageKey: null },
+                                                                            { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" },
+                                                                            { alias: null, args: null, kind: "ScalarField", name: "is_blue_verified", storageKey: null },
+                                                                            {
+                                                                                alias: null,
+                                                                                args: null,
+                                                                                concreteType: "HighlightedUserLabelResponse",
+                                                                                kind: "LinkedField",
+                                                                                name: "identity_profile_labels_highlighted_label",
+                                                                                plural: !1,
+                                                                                selections: [
+                                                                                    {
+                                                                                        alias: null,
+                                                                                        args: null,
+                                                                                        concreteType: "HighlightedUserLabel",
+                                                                                        kind: "LinkedField",
+                                                                                        name: "label",
+                                                                                        plural: !1,
+                                                                                        selections: [
+                                                                                            {
+                                                                                                alias: null,
+                                                                                                args: null,
+                                                                                                concreteType: "TimelineUrl",
+                                                                                                kind: "LinkedField",
+                                                                                                name: "url",
+                                                                                                plural: !1,
+                                                                                                selections: [
+                                                                                                    (m = { alias: null, args: null, kind: "ScalarField", name: "url", storageKey: null }),
+                                                                                                    { alias: "urlType", args: null, kind: "ScalarField", name: "url_type", storageKey: null },
+                                                                                                    {
+                                                                                                        alias: "urtEndpointOptions",
+                                                                                                        args: null,
+                                                                                                        concreteType: "TimelineUrtEndpointOptions",
+                                                                                                        kind: "LinkedField",
+                                                                                                        name: "urt_endpoint_options",
+                                                                                                        plural: !1,
+                                                                                                        selections: [
+                                                                                                            { alias: "cacheId", args: null, kind: "ScalarField", name: "cache_id", storageKey: null },
+                                                                                                            { alias: null, args: null, kind: "ScalarField", name: "subtitle", storageKey: null },
+                                                                                                            { alias: null, args: null, kind: "ScalarField", name: "title", storageKey: null },
+                                                                                                            {
+                                                                                                                alias: "requestParams",
+                                                                                                                args: null,
+                                                                                                                concreteType: "RequestParamsEntry",
+                                                                                                                kind: "LinkedField",
+                                                                                                                name: "request_params",
+                                                                                                                plural: !0,
+                                                                                                                selections: [
+                                                                                                                    { alias: null, args: null, kind: "ScalarField", name: "key", storageKey: null },
+                                                                                                                    { alias: null, args: null, kind: "ScalarField", name: "value", storageKey: null },
+                                                                                                                ],
+                                                                                                                storageKey: null,
+                                                                                                            },
+                                                                                                            { alias: null, args: null, concreteType: "Timeline", kind: "LinkedField", name: "timeline", plural: !1, selections: [r], storageKey: null },
+                                                                                                        ],
+                                                                                                        storageKey: null,
+                                                                                                    },
+                                                                                                ],
+                                                                                                storageKey: null,
+                                                                                            },
+                                                                                            { alias: null, args: null, concreteType: "BadgeInfo", kind: "LinkedField", name: "badge", plural: !1, selections: [m], storageKey: null },
+                                                                                            g,
+                                                                                            { alias: "userLabelType", args: null, kind: "ScalarField", name: "user_label_type", storageKey: null },
+                                                                                            { alias: "userLabelDisplayType", args: null, kind: "ScalarField", name: "user_label_display_type", storageKey: null },
+                                                                                        ],
+                                                                                        storageKey: null,
+                                                                                    },
+                                                                                ],
+                                                                                storageKey: null,
+                                                                            },
+                                                                            r,
+                                                                        ],
+                                                                        type: "User",
+                                                                        abstractKey: null,
+                                                                    },
+                                                                ],
+                                                                storageKey: null,
+                                                            },
+                                                            r,
+                                                        ],
+                                                        storageKey: null,
+                                                    },
+                                                    { alias: null, args: null, concreteType: "CommunityResults", kind: "LinkedField", name: "community_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [s, { kind: "InlineFragment", selections: [c, r, { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "join_requests_result", plural: !1, selections: [s, { kind: "InlineFragment", selections: [r, { alias: null, args: null, kind: "ScalarField", name: "pending_join_request_count", storageKey: null }], type: "CommunityJoinRequests", abstractKey: null }], storageKey: null }], type: "Community", abstractKey: null }], storageKey: null }, r], storageKey: null },
+                                                    r,
+                                                ],
+                                                storageKey: null,
+                                            },
+                                            { alias: null, args: null, concreteType: "CommunityJoinRequestActions", kind: "LinkedField", name: "actions", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "join_request_approve_action_result", plural: !1, selections: (y = [s]), storageKey: null }, { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "join_request_deny_action_result", plural: !1, selections: y, storageKey: null }, r], storageKey: null },
+                                        ],
+                                        type: "CommunityJoinRequest",
+                                        abstractKey: null,
+                                    },
+                                    d,
+                                    o,
+                                ],
+                                storageKey: null,
+                            },
+                        ],
+                    },
+                    params: { id: "_PBREIG4eiYswckqDN9J6g", metadata: { features: ["responsive_web_graphql_timeline_navigation_enabled"] }, name: "actions_approveMemberRequest_Mutation", operationKind: "mutation", text: null },
+                };
+            k.hash = "837321523640b6059305653e812c2d65";
+            const p = k;
+        },
+        226245: (l, e, n) => {
+            n.d(e, { Z: () => p });
+            var a,
+                i,
+                s,
+                r,
+                u,
+                t,
+                d,
+                o,
+                c,
+                g,
+                m,
+                y,
+                k = {
+                    fragment: {
+                        argumentDefinitions: (a = [
+                            { defaultValue: null, kind: "LocalArgument", name: "communityId" },
+                            { defaultValue: null, kind: "LocalArgument", name: "userId" },
+                        ]),
+                        kind: "Fragment",
+                        metadata: null,
+                        name: "actions_denyMemberRequest_Mutation",
+                        selections: [
+                            {
+                                alias: null,
+                                args: (i = [
+                                    { kind: "Variable", name: "community_id", variableName: "communityId" },
+                                    { kind: "Literal", name: "s", value: "1452" },
+                                    { kind: "Variable", name: "user_id", variableName: "userId" },
+                                ]),
+                                concreteType: null,
+                                kind: "LinkedField",
+                                name: "community_join_request_deny",
+                                plural: !1,
+                                selections: [(s = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }), { kind: "InlineFragment", selections: [(r = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }), (u = { alias: null, args: null, kind: "ScalarField", name: "responded_at", storageKey: null }), { args: null, kind: "FragmentSpread", name: "cell_CommunityJoinRequest" }, { alias: null, args: null, concreteType: "UserCommunityRelationship", kind: "LinkedField", name: "user_relationship", plural: !1, selections: [{ alias: null, args: null, concreteType: "CommunityResults", kind: "LinkedField", name: "community_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [s, { kind: "InlineFragment", selections: [{ args: null, kind: "FragmentSpread", name: "useCommunityPendingJoinRequests_community" }], type: "Community", abstractKey: null }], storageKey: null }], storageKey: null }], storageKey: null }], type: "CommunityJoinRequest", abstractKey: null }, (d = { kind: "InlineFragment", selections: [{ alias: "errorReason", args: null, kind: "ScalarField", name: "reason", storageKey: null }, (t = { alias: null, args: null, kind: "ScalarField", name: "message", storageKey: null })], type: "CommunityJoinRequestDenyError", abstractKey: null }), (o = { kind: "InlineFragment", selections: [{ alias: "unavailableReason", args: null, kind: "ScalarField", name: "reason", storageKey: null }, t], type: "CommunityJoinRequestDenyActionUnavailable", abstractKey: null })],
+                                storageKey: null,
+                            },
+                        ],
+                        type: "Mutation",
+                        abstractKey: null,
+                    },
+                    kind: "Request",
+                    operation: {
+                        argumentDefinitions: a,
+                        kind: "Operation",
+                        name: "actions_denyMemberRequest_Mutation",
+                        selections: [
+                            {
+                                alias: null,
+                                args: i,
+                                concreteType: null,
+                                kind: "LinkedField",
+                                name: "community_join_request_deny",
+                                plural: !1,
+                                selections: [
+                                    s,
+                                    {
+                                        kind: "InlineFragment",
+                                        selections: [
+                                            r,
+                                            u,
+                                            { alias: null, args: null, kind: "ScalarField", name: "answer", storageKey: null },
+                                            { alias: null, args: null, kind: "ScalarField", name: "created_at", storageKey: null },
+                                            { alias: null, args: null, kind: "ScalarField", name: "state", storageKey: null },
+                                            {
+                                                alias: null,
+                                                args: null,
+                                                concreteType: "UserCommunityRelationship",
+                                                kind: "LinkedField",
+                                                name: "user_relationship",
+                                                plural: !1,
+                                                selections: [
+                                                    {
+                                                        alias: null,
+                                                        args: null,
+                                                        concreteType: "UserResults",
+                                                        kind: "LinkedField",
+                                                        name: "user_results",
+                                                        plural: !1,
+                                                        selections: [
+                                                            {
+                                                                alias: null,
+                                                                args: null,
+                                                                concreteType: null,
+                                                                kind: "LinkedField",
+                                                                name: "result",
+                                                                plural: !1,
+                                                                selections: [
+                                                                    s,
+                                                                    {
+                                                                        kind: "InlineFragment",
+                                                                        selections: [
+                                                                            (c = { alias: "id_str", args: null, kind: "ScalarField", name: "rest_id", storageKey: null }),
+                                                                            { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "blocking", storageKey: null }, (g = { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null }), { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "following", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "muting", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "id_str", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "verified_type", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }], storageKey: null },
+                                                                            { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" },
+                                                                            { alias: null, args: null, kind: "ScalarField", name: "is_blue_verified", storageKey: null },
+                                                                            {
+                                                                                alias: null,
+                                                                                args: null,
+                                                                                concreteType: "HighlightedUserLabelResponse",
+                                                                                kind: "LinkedField",
+                                                                                name: "identity_profile_labels_highlighted_label",
+                                                                                plural: !1,
+                                                                                selections: [
+                                                                                    {
+                                                                                        alias: null,
+                                                                                        args: null,
+                                                                                        concreteType: "HighlightedUserLabel",
+                                                                                        kind: "LinkedField",
+                                                                                        name: "label",
+                                                                                        plural: !1,
+                                                                                        selections: [
+                                                                                            {
+                                                                                                alias: null,
+                                                                                                args: null,
+                                                                                                concreteType: "TimelineUrl",
+                                                                                                kind: "LinkedField",
+                                                                                                name: "url",
+                                                                                                plural: !1,
+                                                                                                selections: [
+                                                                                                    (m = { alias: null, args: null, kind: "ScalarField", name: "url", storageKey: null }),
+                                                                                                    { alias: "urlType", args: null, kind: "ScalarField", name: "url_type", storageKey: null },
+                                                                                                    {
+                                                                                                        alias: "urtEndpointOptions",
+                                                                                                        args: null,
+                                                                                                        concreteType: "TimelineUrtEndpointOptions",
+                                                                                                        kind: "LinkedField",
+                                                                                                        name: "urt_endpoint_options",
+                                                                                                        plural: !1,
+                                                                                                        selections: [
+                                                                                                            { alias: "cacheId", args: null, kind: "ScalarField", name: "cache_id", storageKey: null },
+                                                                                                            { alias: null, args: null, kind: "ScalarField", name: "subtitle", storageKey: null },
+                                                                                                            { alias: null, args: null, kind: "ScalarField", name: "title", storageKey: null },
+                                                                                                            {
+                                                                                                                alias: "requestParams",
+                                                                                                                args: null,
+                                                                                                                concreteType: "RequestParamsEntry",
+                                                                                                                kind: "LinkedField",
+                                                                                                                name: "request_params",
+                                                                                                                plural: !0,
+                                                                                                                selections: [
+                                                                                                                    { alias: null, args: null, kind: "ScalarField", name: "key", storageKey: null },
+                                                                                                                    { alias: null, args: null, kind: "ScalarField", name: "value", storageKey: null },
+                                                                                                                ],
+                                                                                                                storageKey: null,
+                                                                                                            },
+                                                                                                            { alias: null, args: null, concreteType: "Timeline", kind: "LinkedField", name: "timeline", plural: !1, selections: [r], storageKey: null },
+                                                                                                        ],
+                                                                                                        storageKey: null,
+                                                                                                    },
+                                                                                                ],
+                                                                                                storageKey: null,
+                                                                                            },
+                                                                                            { alias: null, args: null, concreteType: "BadgeInfo", kind: "LinkedField", name: "badge", plural: !1, selections: [m], storageKey: null },
+                                                                                            g,
+                                                                                            { alias: "userLabelType", args: null, kind: "ScalarField", name: "user_label_type", storageKey: null },
+                                                                                            { alias: "userLabelDisplayType", args: null, kind: "ScalarField", name: "user_label_display_type", storageKey: null },
+                                                                                        ],
+                                                                                        storageKey: null,
+                                                                                    },
+                                                                                ],
+                                                                                storageKey: null,
+                                                                            },
+                                                                            r,
+                                                                        ],
+                                                                        type: "User",
+                                                                        abstractKey: null,
+                                                                    },
+                                                                ],
+                                                                storageKey: null,
+                                                            },
+                                                            r,
+                                                        ],
+                                                        storageKey: null,
+                                                    },
+                                                    { alias: null, args: null, concreteType: "CommunityResults", kind: "LinkedField", name: "community_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [s, { kind: "InlineFragment", selections: [c, r, { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "join_requests_result", plural: !1, selections: [s, { kind: "InlineFragment", selections: [r, { alias: null, args: null, kind: "ScalarField", name: "pending_join_request_count", storageKey: null }], type: "CommunityJoinRequests", abstractKey: null }], storageKey: null }], type: "Community", abstractKey: null }], storageKey: null }, r], storageKey: null },
+                                                    r,
+                                                ],
+                                                storageKey: null,
+                                            },
+                                            { alias: null, args: null, concreteType: "CommunityJoinRequestActions", kind: "LinkedField", name: "actions", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "join_request_approve_action_result", plural: !1, selections: (y = [s]), storageKey: null }, { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "join_request_deny_action_result", plural: !1, selections: y, storageKey: null }, r], storageKey: null },
+                                        ],
+                                        type: "CommunityJoinRequest",
+                                        abstractKey: null,
+                                    },
+                                    d,
+                                    o,
+                                ],
+                                storageKey: null,
+                            },
+                        ],
+                    },
+                    params: { id: "eYx4sejYzyw6scuHcM93yw", metadata: { features: ["responsive_web_graphql_timeline_navigation_enabled"] }, name: "actions_denyMemberRequest_Mutation", operationKind: "mutation", text: null },
+                };
+            k.hash = "27d0351755ed90e1df91cb973d803ecc";
+            const p = k;
+        },
+        21958: (l, e, n) => {
+            n.d(e, { Z: () => r });
+            var a,
+                i,
+                s = {
+                    argumentDefinitions: [],
+                    kind: "Fragment",
+                    metadata: null,
+                    name: "cell_CommunityJoinRequest",
+                    selections: [
+                        { alias: null, args: null, kind: "ScalarField", name: "answer", storageKey: null },
+                        { alias: null, args: null, kind: "ScalarField", name: "created_at", storageKey: null },
+                        { alias: null, args: null, kind: "ScalarField", name: "state", storageKey: null },
+                        {
+                            alias: null,
+                            args: null,
+                            concreteType: "UserCommunityRelationship",
+                            kind: "LinkedField",
+                            name: "user_relationship",
+                            plural: !1,
+                            selections: [
+                                {
+                                    alias: null,
+                                    args: null,
+                                    concreteType: "UserResults",
+                                    kind: "LinkedField",
+                                    name: "user_results",
+                                    plural: !1,
+                                    selections: [
+                                        {
+                                            alias: null,
+                                            args: null,
+                                            concreteType: null,
+                                            kind: "LinkedField",
+                                            name: "result",
+                                            plural: !1,
+                                            selections: [
+                                                (a = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }),
+                                                {
+                                                    kind: "InlineFragment",
+                                                    selections: [
+                                                        (i = { alias: "id_str", args: null, kind: "ScalarField", name: "rest_id", storageKey: null }),
+                                                        {
+                                                            alias: null,
+                                                            args: null,
+                                                            concreteType: "ApiUser",
+                                                            kind: "LinkedField",
+                                                            name: "legacy",
+                                                            plural: !1,
+                                                            selections: [
+                                                                { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "blocking", storageKey: null }, action: "THROW", path: "user_relationship.user_results.result.legacy.blocking" },
+                                                                { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null },
+                                                                { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null }, action: "THROW", path: "user_relationship.user_results.result.legacy.followed_by" },
+                                                                { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "following", storageKey: null }, action: "THROW", path: "user_relationship.user_results.result.legacy.following" },
+                                                                { alias: null, args: null, kind: "ScalarField", name: "muting", storageKey: null },
+                                                                { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
+                                                            ],
+                                                            storageKey: null,
+                                                        },
+                                                        { args: null, kind: "FragmentSpread", name: "UserCell_user" },
+                                                    ],
+                                                    type: "User",
+                                                    abstractKey: null,
+                                                },
+                                            ],
+                                            storageKey: null,
+                                        },
+                                    ],
+                                    storageKey: null,
+                                },
+                                { alias: null, args: null, concreteType: "CommunityResults", kind: "LinkedField", name: "community_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [a, { kind: "InlineFragment", selections: [i], type: "Community", abstractKey: null }], storageKey: null }], storageKey: null },
+                            ],
+                            storageKey: null,
+                        },
+                        { alias: null, args: null, concreteType: "CommunityJoinRequestActions", kind: "LinkedField", name: "actions", plural: !1, selections: [{ args: null, kind: "FragmentSpread", name: "controls_CommunityJoinRequestActions" }], storageKey: null },
+                    ],
+                    type: "CommunityJoinRequest",
+                    abstractKey: null,
+                };
+            s.hash = "f55b13bad7160c270ce51a19774a3c15";
+            const r = s;
+        },
+        645188: (l, e, n) => {
+            n.d(e, { Z: () => r });
+            var a,
+                i,
+                s = {
+                    argumentDefinitions: [],
+                    kind: "Fragment",
+                    metadata: null,
+                    name: "cell_CommunityModerationLog",
+                    selections: [
+                        { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null },
+                        { alias: null, args: null, kind: "ScalarField", name: "action_timestamp", storageKey: null },
+                        {
+                            alias: null,
+                            args: null,
+                            concreteType: "UserResults",
+                            kind: "LinkedField",
+                            name: "moderator_ref_results",
+                            plural: !1,
+                            selections: (i = [
+                                {
+                                    alias: null,
+                                    args: null,
+                                    concreteType: null,
+                                    kind: "LinkedField",
+                                    name: "result",
+                                    plural: !1,
+                                    selections: [
+                                        { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null },
+                                        {
+                                            kind: "InlineFragment",
+                                            selections: [
+                                                { alias: "id_str", args: null, kind: "ScalarField", name: "rest_id", storageKey: null },
+                                                { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null }, (a = { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null }), { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }], storageKey: null },
+                                                { args: null, kind: "FragmentSpread", name: "UserCell_user" },
+                                            ],
+                                            type: "User",
+                                            abstractKey: null,
+                                        },
+                                    ],
+                                    storageKey: null,
+                                },
+                            ]),
+                            storageKey: null,
+                        },
+                        { alias: null, args: null, kind: "ScalarField", name: "moderator_log_type", storageKey: null },
+                        { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_ref_results", plural: !1, selections: i, storageKey: null },
+                        { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "reverted_moderator_ref_results", plural: !1, selections: i, storageKey: null },
+                        { alias: null, args: null, kind: "ScalarField", name: "is_revert_log", storageKey: null },
+                        { alias: null, args: null, concreteType: "CommunityRule", kind: "LinkedField", name: "rule_ref", plural: !1, selections: [a], storageKey: null },
+                        { alias: null, args: null, kind: "ScalarField", name: "member_req_answer", storageKey: null },
+                    ],
+                    type: "CommunityModerationLog",
+                    abstractKey: null,
+                };
+            s.hash = "164becfd3f4f64c157ce8cfb8b537e6a";
+            const r = s;
+        },
+    },
+]);
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Communities-2a1252f0.acc0042a.js.map
