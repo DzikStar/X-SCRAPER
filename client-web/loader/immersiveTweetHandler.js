@@ -451,17 +451,15 @@
                 loader: () =>
                     Promise.all([
                         a.e("icons.5"),
-                        a.e("icons.6"),
-                        a.e("icons.9"),
-                        a.e("icons.15"),
                         a.e("icons.20"),
-                        a.e("icons.7"),
-                        a.e("icons.11"),
-                        a.e("icons.12"),
-                        a.e("icons.13"),
+                        a.e("icons.22"),
+                        a.e("icons.25"),
+                        a.e("icons.6"),
                         a.e("icons.10"),
+                        a.e("icons.24"),
+                        a.e("icons.4"),
                         a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                        a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2f4a3d25"),
+                        a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-34cda585"),
                         a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                         a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                         a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -627,4 +625,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.immersiveTweetHandler.8a617dba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.immersiveTweetHandler.48c8b58a.js.map

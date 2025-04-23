@@ -2,128 +2,155 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["bundle.TwitterBlue-6107ac1a"],
     {
-        280278: (e, t, n) => {
-            n.d(t, { ZP: () => b });
-            var i = n(202784),
-                o = n(325686),
-                a = n(827515),
-                r = n(461756),
-                l = n(731708),
-                s = n(392237);
-            const c = "up",
-                d = "down",
-                p = (e, t, n) => {
-                    n((n) => {
-                        const i = (0, a.Z)(e) ? (e > (n.count || 0) ? c : d) : c;
-                        return { ...n, count: e, oldText: n.text, pendingCount: null, pendingText: null, text: t, transitionDirection: i };
-                    });
-                },
-                u = {};
-            [c, d].forEach((e) => {
-                const t = "0.3s";
-                u[e] = { active: { transitionProperty: "transform", transitionDuration: t, transform: "translate3d(0, 0, 0)" }, pre: { transform: `translate3d(0, ${e === c ? "100%" : "-100%"}, 0)` }, post: { transform: `translate3d(0, ${e === c ? "-100%" : "100%"}, 0)`, transitionProperty: "transform", transitionDuration: t } };
-            });
-            const g = { position: "absolute" },
-                m = s.default.create({ root: { overflow: "hidden" } }),
-                b = (e) => {
-                    const { children: t, containerStyle: n, count: s, ...d } = e,
-                        [b, h] = i.useState({ animating: !1, count: e.count, pendingCount: null, text: e.children, oldText: null, pendingText: null, transitionDirection: c }),
-                        f = i.useRef(!1);
-                    return (
-                        i.useEffect(
-                            () => (
-                                (f.current = !0),
-                                function () {
-                                    f.current = !1;
-                                }
-                            ),
-                            [],
-                        ),
-                        i.useEffect(() => {
-                            if (f.current)
-                                if (r.Z.reducedMotionEnabled) h((n) => ({ ...n, oldText: null, text: t, pendingText: null, pendingCount: null, count: e.count }));
-                                else if (t !== b.pendingText) {
-                                    t === b.text || ((0, a.Z)(e.count) && b.count === e.count) ? h((e) => ({ ...e, pendingCount: null, pendingText: null })) : (h((n) => ({ ...n, pendingCount: e.count, pendingText: t })), b.animating || p(e.count, t, h));
-                                }
-                        }, [t]),
-                        i.useEffect(() => {
-                            f.current &&
-                                !1 === b.animating &&
-                                (b.oldText
-                                    ? window.requestAnimationFrame(() =>
-                                          window.requestAnimationFrame(() => {
-                                              f.current && h((e) => ({ ...e, animating: !0 }));
-                                          }),
-                                      )
-                                    : b.pendingText && p(b.pendingCount, b.pendingText, h));
-                        }, [b.animating, b.oldText]),
-                        i.useMemo(() => {
-                            const e = u[b.transitionDirection],
-                                t = b.oldText && !r.Z.reducedMotionEnabled,
-                                a = !b.animating && b.oldText && !r.Z.reducedMotionEnabled,
-                                s = { ...g, ...(b.animating ? e.post : e.active) },
-                                c = { ...(a ? e.pre : e.active) };
-                            return i.createElement(
-                                o.Z,
-                                { style: [m.root, n] },
-                                t ? i.createElement("span", { style: s }, i.createElement(l.ZP, d, b.oldText)) : null,
-                                i.createElement(
-                                    "span",
-                                    {
-                                        "data-testid": "app-text-transition-container",
-                                        onTransitionEnd: () =>
-                                            ((e, t) => {
-                                                e && t((e) => ({ ...e, animating: !1, oldText: null }));
-                                            })(f.current, h),
-                                        style: c,
-                                    },
-                                    i.createElement(l.ZP, d, b.text),
-                                ),
-                            );
-                        }, [n, d, b, f, h])
-                    );
+        427369: (e, l, a) => {
+            a.d(l, { Z: () => w });
+            var n,
+                t,
+                i,
+                r,
+                s,
+                o,
+                c,
+                u,
+                d,
+                g,
+                p,
+                m,
+                k,
+                y,
+                b,
+                h,
+                f,
+                F = {
+                    fragment: {
+                        argumentDefinitions: (n = [{ defaultValue: null, kind: "LocalArgument", name: "referringPage" }]),
+                        kind: "Fragment",
+                        metadata: null,
+                        name: "PremiumContentQuery",
+                        selections: [
+                            {
+                                alias: null,
+                                args: (t = [
+                                    { kind: "Literal", name: "s", value: "4721" },
+                                    { fields: [{ kind: "Variable", name: "referring_page", variableName: "referringPage" }], kind: "ObjectValue", name: "view" },
+                                ]),
+                                concreteType: "TwitterBlueMarketingPageConfig",
+                                kind: "LinkedField",
+                                name: "blue_marketing_page_config",
+                                plural: !1,
+                                selections: [
+                                    { alias: null, args: null, concreteType: "TwitterBlueMarketingPageProduct", kind: "LinkedField", name: "products", plural: !0, selections: [(i = { alias: null, args: null, kind: "ScalarField", name: "product_category", storageKey: null }), (r = { alias: null, args: null, kind: "ScalarField", name: "title", storageKey: null }), (m = { alias: null, args: null, concreteType: "TwitterBlueMarketingPageFeatureBuckets", kind: "LinkedField", name: "feature_buckets", plural: !1, selections: [r, { alias: null, args: null, concreteType: "TwitterBlueMarketingPageFeatureBucket", kind: "LinkedField", name: "buckets", plural: !0, selections: [(s = { alias: null, args: null, kind: "ScalarField", name: "badge", storageKey: null }), (o = { alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }), r, (c = { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null }), (u = { alias: null, args: null, kind: "ScalarField", name: "learn_more_text", storageKey: null }), (d = { alias: null, args: null, kind: "ScalarField", name: "learn_more_title", storageKey: null }), (g = { alias: null, args: null, kind: "ScalarField", name: "learn_more_description", storageKey: null }), { alias: null, args: null, concreteType: "TwitterBlueMarketingPageFeature", kind: "LinkedField", name: "features", plural: !0, selections: [(p = { alias: null, args: null, kind: "ScalarField", name: "icon", storageKey: null }), r, c, { alias: null, args: null, kind: "ScalarField", name: "variant", storageKey: null }], storageKey: null }], storageKey: null }], storageKey: null }), { args: null, kind: "FragmentSpread", name: "PremiumContentQuery_product" }], storageKey: null },
+                                    { alias: null, args: null, concreteType: "TwitterBlueMarketingPageHeader", kind: "LinkedField", name: "header", plural: !1, selections: [r, c, (k = { alias: null, args: null, kind: "ScalarField", name: "image", storageKey: null }), { args: null, kind: "FragmentSpread", name: "PremiumContentQuery_header" }], storageKey: null },
+                                    (y = { alias: null, args: null, concreteType: "TwitterBlueMarketingPageCard", kind: "LinkedField", name: "card", plural: !1, selections: [r, c, o, { alias: null, args: null, concreteType: "TwitterBlueMarketingPageCardItemBadge", kind: "LinkedField", name: "badge", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "text", storageKey: null }], storageKey: null }], storageKey: null }),
+                                    (b = { alias: null, args: null, concreteType: "TwitterBlueMarketingPageFeatureBuckets", kind: "LinkedField", name: "feature_buckets", plural: !1, selections: [r, { alias: null, args: null, concreteType: "TwitterBlueMarketingPageFeatureBucket", kind: "LinkedField", name: "buckets", plural: !0, selections: [s, o, r, c, u, d, g, { alias: null, args: null, concreteType: "TwitterBlueMarketingPageFeature", kind: "LinkedField", name: "features", plural: !0, selections: [p, r, c], storageKey: null }], storageKey: null }], storageKey: null }),
+                                    (h = { alias: null, args: null, concreteType: "TwitterBlueMarketingPageCarousel", kind: "LinkedField", name: "carousel", plural: !1, selections: [{ alias: null, args: null, concreteType: "TwitterBlueMarketingPageCarouselItem", kind: "LinkedField", name: "items", plural: !0, selections: [o, { alias: null, args: null, kind: "ScalarField", name: "headline", storageKey: null }, r, c], storageKey: null }], storageKey: null }),
+                                    { alias: null, args: null, concreteType: "TwitterBlueMarketingPageSubscribeButton", kind: "LinkedField", name: "subscribe_button", plural: !1, selections: [{ args: null, kind: "FragmentSpread", name: "PremiumContentQuery_disclaimer" }, (f = { alias: null, args: null, kind: "ScalarField", name: "disabled_explanation_text", storageKey: null })], storageKey: null },
+                                ],
+                                storageKey: null,
+                            },
+                        ],
+                        type: "Query",
+                        abstractKey: null,
+                    },
+                    kind: "Request",
+                    operation: { argumentDefinitions: n, kind: "Operation", name: "PremiumContentQuery", selections: [{ alias: null, args: t, concreteType: "TwitterBlueMarketingPageConfig", kind: "LinkedField", name: "blue_marketing_page_config", plural: !1, selections: [{ alias: null, args: null, concreteType: "TwitterBlueMarketingPageProduct", kind: "LinkedField", name: "products", plural: !0, selections: [i, r, m, o, c, { alias: null, args: null, concreteType: "TwitterBlueMarketingPageFeatureBucket", kind: "LinkedField", name: "summary_bucket", plural: !1, selections: [c, { alias: null, args: null, concreteType: "TwitterBlueMarketingPageFeature", kind: "LinkedField", name: "features", plural: !0, selections: [r, c, p], storageKey: null }], storageKey: null }], storageKey: null }, { alias: null, args: null, concreteType: "TwitterBlueMarketingPageHeader", kind: "LinkedField", name: "header", plural: !1, selections: [r, c, k], storageKey: null }, y, b, h, { alias: null, args: null, concreteType: "TwitterBlueMarketingPageSubscribeButton", kind: "LinkedField", name: "subscribe_button", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "detail_text", storageKey: null }, f, { alias: null, args: null, kind: "ScalarField", name: "disclaimer_text", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "disclaimer_url", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "disclaimer_url_text", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "disclaimer_cancel_url", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "disclaimer_cancel_url_text", storageKey: null }], storageKey: null }], storageKey: null }] },
+                    params: { id: "XiSXQPFu8S8e_TwAC0AOTw", metadata: {}, name: "PremiumContentQuery", operationKind: "query", text: null },
                 };
+            F.hash = "6e8667466f84f7f3a126460c56847b74";
+            const w = F;
         },
-        403556: (e, t, n) => {
-            n.d(t, { Z: () => T });
-            var i = n(807896),
-                o = n(202784),
-                a = n(194504),
-                r = n(235902),
-                l = n(392237),
-                s = n(325686),
-                c = n(674132),
-                d = n.n(c),
-                p = n(912021),
-                u = n(516951),
-                g = n(731708),
-                m = n(310088),
-                b = n(175993),
-                h = n(58881),
-                f = n(530732);
-            const y = d().d2414d31,
-                x = () => d().ce4e85ae,
-                C = d().fb9f6f39;
-            class w extends o.Component {
+        391416: (e, l, a) => {
+            a.d(l, { Z: () => t });
+            var n = {
+                argumentDefinitions: [],
+                kind: "Fragment",
+                metadata: null,
+                name: "PremiumContentQuery_disclaimer",
+                selections: [
+                    { alias: null, args: null, kind: "ScalarField", name: "detail_text", storageKey: null },
+                    { alias: null, args: null, kind: "ScalarField", name: "disabled_explanation_text", storageKey: null },
+                    { alias: null, args: null, kind: "ScalarField", name: "disclaimer_text", storageKey: null },
+                    { alias: null, args: null, kind: "ScalarField", name: "disclaimer_url", storageKey: null },
+                    { alias: null, args: null, kind: "ScalarField", name: "disclaimer_url_text", storageKey: null },
+                    { alias: null, args: null, kind: "ScalarField", name: "disclaimer_cancel_url", storageKey: null },
+                    { alias: null, args: null, kind: "ScalarField", name: "disclaimer_cancel_url_text", storageKey: null },
+                ],
+                type: "TwitterBlueMarketingPageSubscribeButton",
+                abstractKey: null,
+                hash: "92bde70cde3c2bc74e3a06d1ad582ad3",
+            };
+            const t = n;
+        },
+        461904: (e, l, a) => {
+            a.d(l, { Z: () => t });
+            var n = {
+                argumentDefinitions: [],
+                kind: "Fragment",
+                metadata: null,
+                name: "PremiumContentQuery_header",
+                selections: [
+                    { alias: null, args: null, kind: "ScalarField", name: "title", storageKey: null },
+                    { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null },
+                ],
+                type: "TwitterBlueMarketingPageHeader",
+                abstractKey: null,
+                hash: "f469778f3ae5649dffcafbaae5f8c124",
+            };
+            const t = n;
+        },
+        553659: (e, l, a) => {
+            a.d(l, { Z: () => s });
+            var n,
+                t,
+                i,
+                r = { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "PremiumContentQuery_product", selections: [{ alias: null, args: null, kind: "ScalarField", name: "product_category", storageKey: null }, (n = { alias: null, args: null, kind: "ScalarField", name: "title", storageKey: null }), { alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }, (t = { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null }), { alias: null, args: null, concreteType: "TwitterBlueMarketingPageFeatureBucket", kind: "LinkedField", name: "summary_bucket", plural: !1, selections: [t, { alias: null, args: null, concreteType: "TwitterBlueMarketingPageFeature", kind: "LinkedField", name: "features", plural: !0, selections: [n, t, (i = { alias: null, args: null, kind: "ScalarField", name: "icon", storageKey: null })], storageKey: null }], storageKey: null }, { alias: null, args: null, concreteType: "TwitterBlueMarketingPageFeatureBuckets", kind: "LinkedField", name: "feature_buckets", plural: !1, selections: [{ alias: null, args: null, concreteType: "TwitterBlueMarketingPageFeatureBucket", kind: "LinkedField", name: "buckets", plural: !0, selections: [n, { alias: null, args: null, kind: "ScalarField", name: "learn_more_text", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "learn_more_description", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "learn_more_title", storageKey: null }, { alias: null, args: null, concreteType: "TwitterBlueMarketingPageFeature", kind: "LinkedField", name: "features", plural: !0, selections: [n, t, i, { alias: null, args: null, kind: "ScalarField", name: "variant", storageKey: null }], storageKey: null }], storageKey: null }], storageKey: null }], type: "TwitterBlueMarketingPageProduct", abstractKey: null };
+            r.hash = "03d9bfe21a2a9a527aeb7d6ca79c64bb";
+            const s = r;
+        },
+        310456: (e, l, a) => {
+            a.d(l, { p: () => n });
+            const n = Object.freeze({ Advertising: "Advertising", BlueVerified: "BlueVerified", BlueVerifiedPlus: "BlueVerifiedPlus", Chirps: "Chirps", Coins: "Coins", OneDollar: "OneDollar", OneDollarSubscription: "OneDollarSubscription", PremiumBasic: "PremiumBasic", PremiumGift: "PremiumGift", PremiumPlusGift: "PremiumPlusGift", QuickFreeTrial: "QuickFreeTrial", QuickPromoteBudget: "QuickPromoteBudget", Seeds: "Seeds", Spaces: "Spaces", Subscriptions: "Subscriptions", SuperFollows: "SuperFollows", SuperLikes: "SuperLikes", VerifiedOrganizations: "VerifiedOrganizations", VerifiedOrganizationsBasic: "VerifiedOrganizationsBasic" });
+        },
+        403556: (e, l, a) => {
+            a.d(l, { Z: () => P });
+            var n = a(807896),
+                t = a(202784),
+                i = a(194504),
+                r = a(235902),
+                s = a(392237),
+                o = a(325686),
+                c = a(674132),
+                u = a.n(c),
+                d = a(912021),
+                g = a(516951),
+                p = a(731708),
+                m = a(310088),
+                k = a(175993),
+                y = a(58881),
+                b = a(530732);
+            const h = u().d2414d31,
+                f = () => u().ce4e85ae,
+                F = u().fb9f6f39;
+            class w extends t.Component {
                 constructor(...e) {
                     super(...e),
-                        (this._getMemoizedLink = (0, p.Z)((e, t) => {
-                            const { pathname: n, query: i, state: o } = "string" == typeof e ? { pathname: e, state: {}, query: {} } : e;
-                            return { pathname: n, query: i, method: "push", state: { ...o, lockScroll: t } };
+                        (this._getMemoizedLink = (0, d.Z)((e, l) => {
+                            const { pathname: a, query: n, state: t } = "string" == typeof e ? { pathname: e, state: {}, query: {} } : e;
+                            return { pathname: a, query: n, method: "push", state: { ...t, lockScroll: l } };
                         })),
-                        (this._unlisten = u.Z),
+                        (this._unlisten = g.Z),
                         (this.state = { location: this.context.location }),
-                        (this._getTextColor = (e, t, n, i) => {
-                            const o = l.default.theme.colors.text,
-                                a = l.default.theme.colors.gray700;
-                            return n || i ? (e || t ? o : a) : e ? o : a;
+                        (this._getTextColor = (e, l, a, n) => {
+                            const t = s.default.theme.colors.text,
+                                i = s.default.theme.colors.gray700;
+                            return a || n ? (e || l ? t : i) : e ? t : i;
                         }),
                         (this._setRef = (e) => {
                             this._ref = e;
                         }),
                         (this._handleClick = (e) => {
-                            const { onClick: t } = this.props;
-                            t && t(e);
+                            const { onClick: l } = this.props;
+                            l && l(e);
                         }),
                         (this.focus = (e) => {
                             this._ref && this._ref.focus(e);
@@ -139,17 +166,17 @@
                     this._unlisten && this._unlisten();
                 }
                 render() {
-                    const { Icon: e, "aria-label": t, badgeCount: n, badgePip: i, children: a, color: r, isActive: c, isCompact: d, isPillLink: p, isRoundedRect: u, isWebRedesign: b, retainScrollPosition: w, style: E, to: Z } = this.props,
-                        { location: T } = this.state,
-                        v = Z ? this._getMemoizedLink(Z, w) : void 0,
-                        R = c ? c(Z) : T?.pathname === v?.pathname,
-                        P = h.Z.generate({ backgroundColor: "transparent", color: l.default.theme.colors.text, insetFocusRing: !0 }),
-                        S = b ? "medium" : R ? "bold" : "medium";
-                    return o.createElement(f.Z, { "aria-label": t, "aria-selected": R, focusable: !!R, interactiveStyles: P, link: v, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [p ? k.pill : k.link, p && R ? k.active : null, d ? (p ? k.compactPill : k.compactLink) : null, u ? k.roundedRect : null, E], withoutInteractiveStyles: b || p }, ({ isFocused: t, isHovered: c }) => o.createElement(s.Z, { style: p && k.flexGrow }, o.createElement(g.ZP, { size: b ? "headline2" : void 0, style: [k.text, { color: this._getTextColor(R, c, b, p) }, d && k.compactText, b && t && k.focusedText], weight: S }, e && o.createElement(e, { style: k.icon }), a, b || p ? null : o.createElement(s.Z, { style: R && [k.border, { backgroundColor: l.default.theme.colors[r] }] })), n ? o.createElement(m.Z, { count: n, standalone: !0, style: [k.badge, n >= 10 && k.multiDigitBadge, n >= 20 && k.truncatedCountBadge], truncatedCountFormatter: C, unreadCountLabel: y, withBorder: !1 }) : i ? o.createElement(m.Z, { pip: !0, standalone: !0, style: k.badgePip, textColor: "red500", unreadCountLabel: x, withBorder: !1 }) : null));
+                    const { Icon: e, "aria-label": l, badgeCount: a, badgePip: n, children: i, color: r, isActive: c, isCompact: u, isPillLink: d, isRoundedRect: g, isWebRedesign: k, retainScrollPosition: w, style: S, to: _ } = this.props,
+                        { location: P } = this.state,
+                        T = _ ? this._getMemoizedLink(_, w) : void 0,
+                        x = c ? c(_) : P?.pathname === T?.pathname,
+                        B = y.Z.generate({ backgroundColor: "transparent", color: s.default.theme.colors.text, insetFocusRing: !0 }),
+                        K = k ? "medium" : x ? "bold" : "medium";
+                    return t.createElement(b.Z, { "aria-label": l, "aria-selected": x, focusable: !!x, interactiveStyles: B, link: T, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [d ? C.pill : C.link, d && x ? C.active : null, u ? (d ? C.compactPill : C.compactLink) : null, g ? C.roundedRect : null, S], withoutInteractiveStyles: k || d }, ({ isFocused: l, isHovered: c }) => t.createElement(o.Z, { style: d && C.flexGrow }, t.createElement(p.ZP, { size: k ? "headline2" : void 0, style: [C.text, { color: this._getTextColor(x, c, k, d) }, u && C.compactText, k && l && C.focusedText], weight: K }, e && t.createElement(e, { style: C.icon }), i, k || d ? null : t.createElement(o.Z, { style: x && [C.border, { backgroundColor: s.default.theme.colors[r] }] })), a ? t.createElement(m.Z, { count: a, standalone: !0, style: [C.badge, a >= 10 && C.multiDigitBadge, a >= 20 && C.truncatedCountBadge], truncatedCountFormatter: F, unreadCountLabel: h, withBorder: !1 }) : n ? t.createElement(m.Z, { pip: !0, standalone: !0, style: C.badgePip, textColor: "red500", unreadCountLabel: f, withBorder: !1 }) : null));
                 }
             }
-            (w.contextType = b.Z), (w.defaultProps = { children: [], color: "primary", retainScrollPosition: !0 });
-            const k = l.default.create((e) => ({
+            (w.contextType = k.Z), (w.defaultProps = { children: [], color: "primary", retainScrollPosition: !0 });
+            const C = s.default.create((e) => ({
                     link: { alignItems: "center", display: "flex", flexDirection: "column", flexGrow: 1, height: e.componentDimensions.appBarHeight, justifyContent: "center", outlineStyle: "none", paddingHorizontal: e.spaces.space16, minWidth: "56px" },
                     compactLink: { height: 0.75 * e.componentDimensions.appBarHeightPx },
                     badge: { position: "absolute", height: e.spaces.space12, minWidth: e.spaces.space12, top: `calc(${e.spaces.space12} + ${e.spaces.space2})`, end: `calc(-1 * ${e.spaces.space16})`, fontSize: `calc(${e.spaces.space8} + ${e.spaces.space1})` },
@@ -167,94 +194,81 @@
                     icon: { marginEnd: e.spaces.space8 },
                     roundedRect: { borderRadius: e.borderRadii.large },
                 })),
-                E = w,
-                Z = l.default.create((e) => ({ segmentedControl: { borderBottomWidth: e.borderWidths.small, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor }, leftAligned: { alignContent: "start", justifyContent: "start" }, flexGrow: { flexGrow: 1 }, gap: { gap: e.spaces.space8 }, linkRedesign: { paddingHorizontal: e.spaces.space12, alignItems: "start", minWidth: e.spaces.space24 }, firstLinkRedesign: { paddingStart: e.spaces.space16 }, withNoPaddingStart: { paddingStart: 0 } })),
-                T = ({ alignFirstItem: e, "aria-label": t, isCompact: n, isPillLink: l, isRoundedRect: s, links: c, style: d, visibleItemIndex: p }) => {
-                    const u = c
+                S = w,
+                _ = s.default.create((e) => ({ segmentedControl: { borderBottomWidth: e.borderWidths.small, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor }, leftAligned: { alignContent: "start", justifyContent: "start" }, flexGrow: { flexGrow: 1 }, gap: { gap: e.spaces.space8 }, linkRedesign: { paddingHorizontal: e.spaces.space12, alignItems: "start", minWidth: e.spaces.space24 }, firstLinkRedesign: { paddingStart: e.spaces.space16 }, withNoPaddingStart: { paddingStart: 0 } })),
+                P = ({ alignFirstItem: e, "aria-label": l, isCompact: a, isPillLink: s, isRoundedRect: o, links: c, style: u, visibleItemIndex: d }) => {
+                    const g = c
                             .filter(Boolean)
                             .map((e) => e.key)
                             .join("-"),
-                        { isWebRedesign: g } = r.ZP.useProps(),
-                        m = g() && !l,
-                        b = o.useMemo(
+                        { isWebRedesign: p } = r.ZP.useProps(),
+                        m = p() && !s,
+                        k = t.useMemo(
                             () =>
-                                c.filter(Boolean).map(({ label: t, viewType: a, ...r }, c) => {
-                                    const d = m ? [Z.linkRedesign, 0 === c && Z.firstLinkRedesign, e && 0 === c && Z.withNoPaddingStart] : void 0;
-                                    return o.createElement(E, (0, i.Z)({ viewType: a }, r, { isCompact: n, isPillLink: l, isRoundedRect: s, isWebRedesign: m, style: d }), t);
+                                c.filter(Boolean).map(({ label: l, viewType: i, ...r }, c) => {
+                                    const u = m ? [_.linkRedesign, 0 === c && _.firstLinkRedesign, e && 0 === c && _.withNoPaddingStart] : void 0;
+                                    return t.createElement(S, (0, n.Z)({ viewType: i }, r, { isCompact: a, isPillLink: s, isRoundedRect: o, isWebRedesign: m, style: u }), l);
                                 }),
-                            [e, n, l, s, m, c],
+                            [e, a, s, o, m, c],
                         );
-                    return o.createElement(a.Z, { "aria-label": t, buttonsContainerStyle: l && Z.gap, childrenStyle: !m && Z.flexGrow, key: u, style: [l ? null : Z.segmentedControl, m && Z.leftAligned, d], visibleItemIndex: p }, b);
+                    return t.createElement(i.Z, { "aria-label": l, buttonsContainerStyle: s && _.gap, childrenStyle: !m && _.flexGrow, key: g, style: [s ? null : _.segmentedControl, m && _.leftAligned, u], visibleItemIndex: d }, k);
                 };
         },
-        782947: (e, t, n) => {
-            n.d(t, { Z: () => f });
-            var i = n(807896),
-                o = n(202784),
-                a = n(896632),
-                r = n(325686),
-                l = n(711223),
-                s = n(516951),
-                c = n(731708),
-                d = n(868634),
-                p = n(952428),
-                u = n(352924),
-                g = n(392237);
-            const m = g.default.create((e) => ({ backgroundGrey: { backgroundColor: e.colors.gray100 }, backgroundDefault: { backgroundColor: e.colors.cellBackground }, root: { overflow: "hidden", flexDirection: "row", justifyContent: "space-between", gap: e.spaces.space16, flexGrow: 1, borderColor: e.colors.transparent, borderWidth: e.borderWidths.medium }, alignCenter: { alignItems: "center" }, padding16: { padding: e.spaces.space16 }, padding8: { paddingHorizontal: e.spaces.space8, paddingVertical: e.spaces.space4 }, boxShadow: { boxShadow: e.boxShadows.medium }, withMarginTop: { marginTop: e.spaces.space20 }, borderRadiusLarge: { borderRadius: e.borderRadii.large }, borderRadiusInfinite: { borderRadius: e.borderRadii.infinite }, checked: { borderColor: e.colors.primary }, interactive: { cursor: "pointer" }, withMarginEnd: { marginEnd: e.spaces.space20 }, grow: { flexGrow: 1 }, iconContainer: { alignSelf: "flex-start", flexDirection: "column", justifyContent: "center", width: e.spaces.space40, height: e.spaces.space40 }, labelContainer: { flexDirection: "column", justifyContent: "center", flex: 1 }, inlineCalloutContainer: { marginTop: e.spaces.space8 }, description: { marginTop: e.spaces.space4 }, descriptionWithPill: { marginTop: e.spaces.space2 }, endContentContainer: { justifyContent: "center", flexDirection: "column" }, row: { flexDirection: "row", alignItems: "center" }, marginTop4: { marginTop: e.spaces.space4 }, marginBottom8: { marginBottom: e.spaces.space8 }, info: { flexDirection: "row", justifyContent: "space-between", marginBottom: e.spaces.space8 }, infoIcon: { fontSize: ".74em", color: e.colors.gray700 }, backgroundTransparent: { backgroundColor: e.colors.transparent }, pill: { marginBottom: e.spaces.space4 }, inlinePill: { marginStart: e.spaces.space4 } })),
-                b = { ...g.default.absoluteFillObject, cursor: "inherit", height: "100%", margin: 0, opacity: 0, padding: 0, width: "100%" },
-                h = ({ "aria-label": e, "aria-posinset": t, "aria-setsize": n, checked: i, dedicatedPillRow: a, description: g, disabled: h, disabledInlineCallout: f, endContent: y, horizontal: x, illustration: C, infoLabel: w, infoLabelType: k, inlineCallout: E, label: Z, name: T, onChange: v, pillText: R, pillType: P, reverseLabels: S, secondaryContent: D, secondaryDescription: I, switchStyle: B, testID: _ }) => {
-                    const z = (0, u.b)(),
-                        W = (0, u.b)(),
-                        L = (0, u.b)(),
-                        M = o.createElement(c.ZP, { color: "text", id: z, role: "label", size: B ? "body" : "headline2", testID: "headline-label", weight: B ? "medium" : "bold" }, Z),
-                        $ = !!g && o.createElement(c.ZP, { color: "gray700", id: W, size: "subtext1", style: R ? m.descriptionWithPill : m.description, testID: "description-label" }, g),
-                        j = o.createElement(c.ZP, { color: "gray700", role: "label", size: "subtext2", style: m.description }, I),
-                        G = R ? o.createElement(d.ZP, { style: a ? m.pill : m.inlinePill, type: P }, R) : null,
-                        F = o.createElement(o.Fragment, null, a ? G : null, o.createElement(r.Z, { style: [m.row, w && m.marginBottom8] }, S ? $ : M, a ? null : G), o.createElement(r.Z, { style: [m.row, S && m.marginTop4] }, S ? M : $), D || (I ? j : void 0)),
-                        H = B ? "unset" : (n ? 100 / n : 100) + "%",
-                        A = B ? [m.padding8, m.borderRadiusInfinite, i ? m.backgroundDefault : m.backgroundTransparent] : [m.padding16, m.boxShadow, m.borderRadiusLarge, i ? m.checked : null, m.backgroundDefault];
-                    return o.createElement(o.Fragment, null, o.createElement(p.Z, { disabled: h, style: [m.root, ...A, x ? { maxWidth: H, ...m.grow } : null, 1 === t || x ? null : m.withMarginTop, t !== n && x && !B && m.withMarginEnd, !h && m.interactive], testID: _, withInteractiveStyling: !B }, !!C && o.createElement(r.Z, { style: m.iconContainer, testID: "illustration" }, C), o.createElement(r.Z, { style: [m.labelContainer, B && m.alignCenter] }, !!w && o.createElement(r.Z, { style: m.info }, o.createElement(d.ZP, { background: "green" === k ? "green500" : "red" === k ? "magenta500" : "yellow" === k ? "orange50" : "gray500" }, o.createElement(c.ZP, { color: "yellow" === k ? "orange900" : "whiteOnColor", size: "subtext3", weight: "bold" }, w)), "red" !== k && "yellow" !== k && o.createElement(l.default, { style: m.infoIcon, testID: "infoIcon" })), F, i && !!E && o.createElement(r.Z, { style: m.inlineCalloutContainer, testID: "inlineCallout" }, E)), !!y && o.createElement(r.Z, { style: m.endContentContainer, testID: "endContent" }, o.createElement(c.ZP, { id: L, size: "subtext1", weight: "bold" }, y)), o.createElement("input", { "aria-describedby": `${W} ${L}`, "aria-label": e, "aria-labelledby": z, "aria-posinset": t, "aria-setsize": n, checked: i, disabled: h, name: T, onChange: i ? s.Z : v, style: b, type: "radio" })), h && f ? f : null);
+        782947: (e, l, a) => {
+            a.d(l, { Z: () => b });
+            var n = a(807896),
+                t = a(202784),
+                i = a(896632),
+                r = a(325686),
+                s = a(711223),
+                o = a(516951),
+                c = a(731708),
+                u = a(868634),
+                d = a(952428),
+                g = a(352924),
+                p = a(392237);
+            const m = p.default.create((e) => ({ backgroundGrey: { backgroundColor: e.colors.gray100 }, backgroundDefault: { backgroundColor: e.colors.cellBackground }, root: { overflow: "hidden", flexDirection: "row", justifyContent: "space-between", gap: e.spaces.space16, flexGrow: 1, borderColor: e.colors.transparent, borderWidth: e.borderWidths.medium }, alignCenter: { alignItems: "center" }, padding16: { padding: e.spaces.space16 }, padding8: { paddingHorizontal: e.spaces.space8, paddingVertical: e.spaces.space4 }, boxShadow: { boxShadow: e.boxShadows.medium }, withMarginTop: { marginTop: e.spaces.space20 }, borderRadiusLarge: { borderRadius: e.borderRadii.large }, borderRadiusInfinite: { borderRadius: e.borderRadii.infinite }, checked: { borderColor: e.colors.primary }, interactive: { cursor: "pointer" }, withMarginEnd: { marginEnd: e.spaces.space20 }, grow: { flexGrow: 1 }, iconContainer: { alignSelf: "flex-start", flexDirection: "column", justifyContent: "center", width: e.spaces.space40, height: e.spaces.space40 }, labelContainer: { flexDirection: "column", justifyContent: "center", flex: 1 }, inlineCalloutContainer: { marginTop: e.spaces.space8 }, description: { marginTop: e.spaces.space4 }, descriptionWithPill: { marginTop: e.spaces.space2 }, endContentContainer: { justifyContent: "center", flexDirection: "column" }, row: { flexDirection: "row", alignItems: "center" }, marginTop4: { marginTop: e.spaces.space4 }, marginBottom8: { marginBottom: e.spaces.space8 }, info: { flexDirection: "row", justifyContent: "space-between", marginBottom: e.spaces.space8 }, infoIcon: { fontSize: ".74em", color: e.colors.gray700 }, backgroundTransparent: { backgroundColor: e.colors.transparent }, pill: { marginBottom: e.spaces.space4 }, inlinePill: { marginStart: e.spaces.space4 } })),
+                k = { ...p.default.absoluteFillObject, cursor: "inherit", height: "100%", margin: 0, opacity: 0, padding: 0, width: "100%" },
+                y = ({ "aria-label": e, "aria-posinset": l, "aria-setsize": a, checked: n, dedicatedPillRow: i, description: p, disabled: y, disabledInlineCallout: b, endContent: h, horizontal: f, illustration: F, infoLabel: w, infoLabelType: C, inlineCallout: S, label: _, name: P, onChange: T, pillText: x, pillType: B, reverseLabels: K, secondaryContent: L, secondaryDescription: v, switchStyle: Z, testID: M }) => {
+                    const R = (0, g.b)(),
+                        D = (0, g.b)(),
+                        E = (0, g.b)(),
+                        I = t.createElement(c.ZP, { color: "text", id: R, role: "label", size: Z ? "body" : "headline2", testID: "headline-label", weight: Z ? "medium" : "bold" }, _),
+                        z = !!p && t.createElement(c.ZP, { color: "gray700", id: D, size: "subtext1", style: x ? m.descriptionWithPill : m.description, testID: "description-label" }, p),
+                        W = t.createElement(c.ZP, { color: "gray700", role: "label", size: "subtext2", style: m.description }, v),
+                        G = x ? t.createElement(u.ZP, { style: i ? m.pill : m.inlinePill, type: B }, x) : null,
+                        Q = t.createElement(t.Fragment, null, i ? G : null, t.createElement(r.Z, { style: [m.row, w && m.marginBottom8] }, K ? z : I, i ? null : G), t.createElement(r.Z, { style: [m.row, K && m.marginTop4] }, K ? I : z), L || (v ? W : void 0)),
+                        O = Z ? "unset" : (a ? 100 / a : 100) + "%",
+                        j = Z ? [m.padding8, m.borderRadiusInfinite, n ? m.backgroundDefault : m.backgroundTransparent] : [m.padding16, m.boxShadow, m.borderRadiusLarge, n ? m.checked : null, m.backgroundDefault];
+                    return t.createElement(t.Fragment, null, t.createElement(d.Z, { disabled: y, style: [m.root, ...j, f ? { maxWidth: O, ...m.grow } : null, 1 === l || f ? null : m.withMarginTop, l !== a && f && !Z && m.withMarginEnd, !y && m.interactive], testID: M, withInteractiveStyling: !Z }, !!F && t.createElement(r.Z, { style: m.iconContainer, testID: "illustration" }, F), t.createElement(r.Z, { style: [m.labelContainer, Z && m.alignCenter] }, !!w && t.createElement(r.Z, { style: m.info }, t.createElement(u.ZP, { background: "green" === C ? "green500" : "red" === C ? "magenta500" : "yellow" === C ? "orange50" : "gray500" }, t.createElement(c.ZP, { color: "yellow" === C ? "orange900" : "whiteOnColor", size: "subtext3", weight: "bold" }, w)), "red" !== C && "yellow" !== C && t.createElement(s.default, { style: m.infoIcon, testID: "infoIcon" })), Q, n && !!S && t.createElement(r.Z, { style: m.inlineCalloutContainer, testID: "inlineCallout" }, S)), !!h && t.createElement(r.Z, { style: m.endContentContainer, testID: "endContent" }, t.createElement(c.ZP, { id: E, size: "subtext1", weight: "bold" }, h)), t.createElement("input", { "aria-describedby": `${D} ${E}`, "aria-label": e, "aria-labelledby": R, "aria-posinset": l, "aria-setsize": a, checked: n, disabled: y, name: P, onChange: n ? o.Z : T, style: k, type: "radio" })), y && b ? b : null);
                 },
-                f = (e) => {
-                    const t = o.useCallback(({ value: e, ...t }) => o.createElement(h, (0, i.Z)({}, t, { key: e })), []);
-                    return o.createElement(a.Z, (0, i.Z)({}, e, { renderSelector: t }));
+                b = (e) => {
+                    const l = t.useCallback(({ value: e, ...l }) => t.createElement(y, (0, n.Z)({}, l, { key: e })), []);
+                    return t.createElement(i.Z, (0, n.Z)({}, e, { renderSelector: l }));
                 };
         },
-        711223: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => s });
-            var i = n(202784),
-                o = n(890601),
-                a = n(783427),
-                r = n(347101);
-            const l = (e = {}) => {
-                const { direction: t } = (0, a.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M13.5 8.5c0 .83-.67 1.5-1.5 1.5s-1.5-.67-1.5-1.5S11.17 7 12 7s1.5.67 1.5 1.5zM13 17v-5h-2v5h2zm-1 5.25c5.66 0 10.25-4.59 10.25-10.25S17.66 1.75 12 1.75 1.75 6.34 1.75 12 6.34 22.25 12 22.25zM20.25 12c0 4.56-3.69 8.25-8.25 8.25S3.75 16.56 3.75 12 7.44 3.75 12 3.75s8.25 3.69 8.25 8.25z" })) }, { writingDirection: t });
-            };
-            l.metadata = { width: 24, height: 24 };
-            const s = l;
-        },
-        74882: (e, t, n) => {
-            var i = n(23103),
-                o = n(21178),
-                a = n(910905),
-                r = n(609736),
-                l = Array;
-            i(
+        74882: (e, l, a) => {
+            var n = a(23103),
+                t = a(21178),
+                i = a(910905),
+                r = a(609736),
+                s = Array;
+            n(
                 { target: "Array", proto: !0 },
                 {
                     toReversed: function () {
-                        return o(a(this), l);
+                        return t(i(this), s);
                     },
                 },
             ),
                 r("toReversed");
         },
-        196670: (e, t, n) => {
-            e.exports = n.p + "X_logo_black.00ba8bfa.png";
+        196670: (e, l, a) => {
+            e.exports = a.p + "X_logo_black.00ba8bfa.png";
         },
-        885216: (e, t, n) => {
-            e.exports = n.p + "X_logo_white.22c1baea.png";
+        885216: (e, l, a) => {
+            e.exports = a.p + "X_logo_white.22c1baea.png";
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterBlue-6107ac1a.0a54960a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterBlue-6107ac1a.e5b28e6a.js.map

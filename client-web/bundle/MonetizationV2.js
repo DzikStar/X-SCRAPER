@@ -195,8 +195,8 @@
                 k = i(157130),
                 E = i(779610),
                 w = i(323265);
-            const Z = i.p + "monetization-image-premium-tools.0265296a.png",
-                C = i.p + "monetization-image-reach.9f36135a.png",
+            const C = i.p + "monetization-image-premium-tools.0265296a.png",
+                Z = i.p + "monetization-image-reach.9f36135a.png",
                 S = i.p + "monetization-image-rev-share.2d15ac6a.png",
                 x = i.p + "monetization-image-subscribers.c992566a.png";
             var R = i(857378),
@@ -221,8 +221,8 @@
                 L = s().cd3a6f9a,
                 W = s().c35e6144,
                 G = s().b9dbeb34,
-                M = s().b2d41138,
-                K = s().defa7f12,
+                K = s().b2d41138,
+                M = s().defa7f12,
                 N = () => {
                     const e = (0, P.Z)();
                     r.useEffect(() => {
@@ -258,7 +258,7 @@
                                         { style: p },
                                         r.createElement(b.Z, { style: O.header }, r.createElement(f.ZP, { align: t ? "left" : "center", size: t ? "title2" : "title1", weight: t ? "bold" : "medium" }, q), r.createElement(y.Z, { size: "space8" }), r.createElement(f.ZP, { align: t ? "left" : "center", color: "gray700", size: t ? "headline2" : "headline1" }, T), t ? null : r.createElement(r.Fragment, null, r.createElement(y.Z, { size: "space36" }), r.createElement(b.Z, { style: O.upsellButtonContainer }, u))),
                                         r.createElement(y.Z, { size: t ? "space40" : "space80" }),
-                                        r.createElement(b.Z, { style: O.upsellBlocks }, r.createElement(A, { description: V, title: j }, r.createElement(b.Z, { style: O.imageContainer }, r.createElement(_.Z, { "aria-label": j, aspectMode: v.Z.exact(2), image: S })), r.createElement(k.Z, { renderContent: () => r.createElement(I.Z, { failedRequirements: c }), wrapperStyle: O.popoverContent }, r.createElement(E.Z, { label: B, onPress: m, paddingHorizontal: "space0", styleOverride: O.pivot }))), r.createElement(A, { description: H, title: U }, r.createElement(b.Z, { style: O.imageContainer }, r.createElement(_.Z, { "aria-label": U, aspectMode: v.Z.exact(2), image: x })), r.createElement(k.Z, { renderContent: () => r.createElement($.Z, { failedRequirements: d }), wrapperStyle: O.popoverContent }, r.createElement(E.Z, { label: L, onPress: g, styleOverride: O.pivot }))), r.createElement(A, { description: G, title: W }, r.createElement(b.Z, { style: O.imageContainer }, r.createElement(_.Z, { "aria-label": W, aspectMode: v.Z.exact(2), image: Z }))), r.createElement(A, { description: K, title: M }, r.createElement(b.Z, { style: O.imageContainer }, r.createElement(_.Z, { "aria-label": M, aspectMode: v.Z.exact(2), image: C })))),
+                                        r.createElement(b.Z, { style: O.upsellBlocks }, r.createElement(A, { description: V, title: j }, r.createElement(b.Z, { style: O.imageContainer }, r.createElement(_.Z, { "aria-label": j, aspectMode: v.Z.exact(2), image: S })), r.createElement(k.Z, { renderContent: () => r.createElement(I.Z, { failedRequirements: c }), wrapperStyle: O.popoverContent }, r.createElement(E.Z, { label: B, onPress: m, paddingHorizontal: "space0", styleOverride: O.pivot }))), r.createElement(A, { description: H, title: U }, r.createElement(b.Z, { style: O.imageContainer }, r.createElement(_.Z, { "aria-label": U, aspectMode: v.Z.exact(2), image: x })), r.createElement(k.Z, { renderContent: () => r.createElement($.Z, { failedRequirements: d }), wrapperStyle: O.popoverContent }, r.createElement(E.Z, { label: L, onPress: g, styleOverride: O.pivot }))), r.createElement(A, { description: G, title: W }, r.createElement(b.Z, { style: O.imageContainer }, r.createElement(_.Z, { "aria-label": W, aspectMode: v.Z.exact(2), image: C }))), r.createElement(A, { description: M, title: K }, r.createElement(b.Z, { style: O.imageContainer }, r.createElement(_.Z, { "aria-label": K, aspectMode: v.Z.exact(2), image: Z })))),
                                         r.createElement(f.ZP, { color: "gray700", style: O.disclaimer }, r.createElement(s().I18NFormatMessage, { $i18n: "gbef9649" }, r.createElement(f.ZP, { link: "https://help.x.com/using-x/x-premium-faq#item2" }, s().i3e4955d))),
                                     ),
                                 ),
@@ -285,7 +285,7 @@
                 Y = a.default.create((e) => ({ helpCenterButton: { border: "none" } }));
         },
         698579: (e, t, i) => {
-            i.d(t, { F9: () => $, Fx: () => C, XS: () => p, Xb: () => F, j0: () => k });
+            i.d(t, { F9: () => $, Fx: () => Z, XS: () => p, Xb: () => F, j0: () => k });
             var r = i(688715),
                 n = i(674132),
                 a = i.n(n),
@@ -307,10 +307,10 @@
                 k = { pathname: d.NW.stripeSetup, state: { cameFromEarningsDashboard: !0 } },
                 E = { Icon: l.default, iconBGColor: "green600", heading: "Video Ads", description: "You are on track for payouts", id: p.preRollAds, pill: { label: "NEW", color: "gray1000" }, link: "/settings/ad_rev_share_dashboard", scribeComponent: "pre-roll-ads-dashboard" },
                 w = { Icon: s.default, iconBGColor: "blue600", heading: a().d7b51c68, description: "", id: p.subscriptions, link: "/settings/monetization/subscriptions/dashboard", scribeComponent: "creator-subscription-dashboard" },
-                Z = (e) => ({ Icon: o.default, iconBGColor: "orange600", heading: e ? a().be955554 : a().b03a3d62, description: a().cbbe29c2, id: p.adRev, link: "/settings/ad_rev_share_dashboard", scribeComponent: "ad-revenue-sharing-dashboard" }),
-                C = { Icon: c.default, iconBGColor: "purple600", heading: a().g97a2d6c, description: a().f30774ea, id: "learn_more", link: (0, r.ju)("https://help.x.com/using-x/creator-dashboard"), scribeComponent: "learn-more" };
+                C = (e) => ({ Icon: o.default, iconBGColor: "orange600", heading: e ? a().be955554 : a().b03a3d62, description: a().cbbe29c2, id: p.adRev, link: "/settings/ad_rev_share_dashboard", scribeComponent: "ad-revenue-sharing-dashboard" }),
+                Z = { Icon: c.default, iconBGColor: "purple600", heading: a().g97a2d6c, description: a().f30774ea, id: "learn_more", link: (0, r.ju)("https://help.x.com/using-x/creator-dashboard"), scribeComponent: "learn-more" };
             function S(e, t) {
-                return "ad_revenue_sharing" === e ? Z(t) : "creator_subs" === e ? w : E;
+                return "ad_revenue_sharing" === e ? C(t) : "creator_subs" === e ? w : E;
             }
             function x(e) {
                 return e === p.adRev ? "/settings/ad_rev_share_eligibility" : e === p.subscriptions ? "/settings/superfollows/application/eligibility" : e === p.preRollAds ? "/" : void 0;
@@ -444,28 +444,15 @@
                 c = i(392237);
             const d = (e) => {
                     const { decoration: t, description: i, disabled: d = !1, isActive: u = !1, label: m, link: g, onPress: b, paddingHorizontal: h, renderRightContent: f, role: y = "tab", styleOverride: _, testID: v = "pivot", thumbnail: k, thumbnailSize: E, withoutArrow: w = !1 } = e,
-                        Z = [p.thumbnailContainer, "medium" === E && p.thumbnailContainerMedium],
-                        C = "string" == typeof m ? r.createElement(s.ZP, null, m) : m,
+                        C = [p.thumbnailContainer, "medium" === E && p.thumbnailContainerMedium],
+                        Z = "string" == typeof m ? r.createElement(s.ZP, null, m) : m,
                         S = "object" == typeof g && g.external && !g.openInSameFrame,
                         x = i ? ("string" == typeof i ? r.createElement(s.ZP, { color: "gray700", size: "subtext2", testID: `${v}-description` }, i) : i) : null,
                         R = r.useMemo(() => ("space0" === h ? { paddingHorizontal: 0 } : { paddingHorizontal: h ? c.default.theme.spaces[h] : c.default.theme.componentDimensions.gutterHorizontal }), [h]);
-                    return r.createElement(o.Z, { "aria-selected": "tab" === y ? u : null, disabled: d, link: d ? void 0 : g, onPress: b, role: y, style: [p.root, R, d && p.disabled, _], testID: v, withInteractiveStyling: !!g || !!b }, r.createElement(n.Z, { style: p.contentContainer }, k ? r.createElement(n.Z, { style: Z }, k) : null, r.createElement(n.Z, { style: p.content }, C, x), f ? f() : null, (!g && !b) || d || w ? null : S ? r.createElement(a.default, { style: p.icon }) : r.createElement(l.default, { style: p.icon })), t);
+                    return r.createElement(o.Z, { "aria-selected": "tab" === y ? u : null, disabled: d, link: d ? void 0 : g, onPress: b, role: y, style: [p.root, R, d && p.disabled, _], testID: v, withInteractiveStyling: !!g || !!b }, r.createElement(n.Z, { style: p.contentContainer }, k ? r.createElement(n.Z, { style: C }, k) : null, r.createElement(n.Z, { style: p.content }, Z, x), f ? f() : null, (!g && !b) || d || w ? null : S ? r.createElement(a.default, { style: p.icon }) : r.createElement(l.default, { style: p.icon })), t);
                 },
                 p = c.default.create((e) => ({ root: { justifyContent: "space-between", minHeight: `calc(${c.default.theme.lineHeights.headline1} + 2 * ${e.componentDimensions.gutterVertical})`, paddingVertical: e.componentDimensions.gutterVertical }, disabled: { opacity: 0.5 }, contentContainer: { alignItems: "center", flexDirection: "row", flexGrow: 1 }, content: { flexGrow: 1, flexShrink: 1 }, icon: { color: e.colors.gray700, paddingStart: e.spaces.space12, flexShrink: 0 }, thumbnailContainer: { alignItems: "center", justifyContent: "center", height: e.spaces.space48, width: e.spaces.space48, marginEnd: e.spaces.space16 }, thumbnailContainerMedium: { height: e.spaces.space32, width: e.spaces.space32 } }));
         },
-        711223: (e, t, i) => {
-            i.r(t), i.d(t, { default: () => o });
-            var r = i(202784),
-                n = i(890601),
-                a = i(783427),
-                l = i(347101);
-            const s = (e = {}) => {
-                const { direction: t } = (0, a.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M13.5 8.5c0 .83-.67 1.5-1.5 1.5s-1.5-.67-1.5-1.5S11.17 7 12 7s1.5.67 1.5 1.5zM13 17v-5h-2v5h2zm-1 5.25c5.66 0 10.25-4.59 10.25-10.25S17.66 1.75 12 1.75 1.75 6.34 1.75 12 6.34 22.25 12 22.25zM20.25 12c0 4.56-3.69 8.25-8.25 8.25S3.75 16.56 3.75 12 7.44 3.75 12 3.75s8.25 3.69 8.25 8.25z" })) }, { writingDirection: t });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const o = s;
-        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.MonetizationV2.1f82078a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.MonetizationV2.bce82a5a.js.map
