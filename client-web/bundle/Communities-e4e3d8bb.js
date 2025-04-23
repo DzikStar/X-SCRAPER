@@ -8,15 +8,16 @@
             const r = (0, n(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        n.e("icons.23"),
-                        n.e("icons.2"),
-                        n.e("icons.16"),
-                        n.e("icons.10"),
-                        n.e("icons.19"),
-                        n.e("icons.24"),
-                        n.e("icons.17"),
-                        n.e("icons.21"),
-                        n.e("icons.18"),
+                        n.e("icons.5"),
+                        n.e("icons.6"),
+                        n.e("icons.22"),
+                        n.e("icons.25"),
+                        n.e("icons.9"),
+                        n.e("icons.4"),
+                        n.e("icons.15"),
+                        n.e("icons.20"),
+                        n.e("icons.0"),
+                        n.e("icons.26"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -74,7 +75,7 @@
         753291: (e, t, n) => {
             n.d(t, { Z: () => r });
             n(202784);
-            const r = (0, n(523561).Z)({ loader: () => Promise.all([n.e("shared~bundle.AccountVerification~bundle.SettingsProfile~bundle.UserLists~loader.MediaPickerWithPreview~bundl"), n.e("loader.MediaPickerWithPreview")]).then(n.bind(n, 199127)) });
+            const r = (0, n(523561).Z)({ loader: () => Promise.all([n.e("shared~bundle.AccountVerification~bundle.SettingsProfile~loader.MediaPickerWithPreview~bundle.RichTextCompose"), n.e("loader.MediaPickerWithPreview")]).then(n.bind(n, 199127)) });
         },
         854594: (e, t, n) => {
             n.d(t, { l: () => o, v: () => a });
@@ -269,13 +270,13 @@
                 R = () => r.createElement(f.Z, { entryConfiguration: g.Z, module: M, refreshControl: null, title: "" }),
                 O = { context: "TopicExplorerCarousel" },
                 N = { context: "TopicExplorerTimeline" };
-            function U() {
+            function H() {
                 const { featureSwitches: e } = r.useContext(b.rC),
                     t = e.isTrue("communities_topic_carousel_enabled"),
                     [n, o] = r.useState(null);
                 return r.createElement(m.Z, null, r.createElement(h.Z, { text: v }), r.createElement(E.H, { errorConfig: O }, t ? r.createElement(D.Z, { setTopic: o, topic: n }) : null, r.createElement(E.H, { errorConfig: N }, n && t ? r.createElement(k, { topicId: n }) : r.createElement(R, null))));
             }
-            const H = l().d7d9be8a,
+            const U = l().d7d9be8a,
                 L = l().h02a6fe6,
                 B = l().i66136aa,
                 F = l().d601fc20,
@@ -293,8 +294,8 @@
                             [l.pathname, l.search],
                         ),
                         b = r.useMemo(() => new URLSearchParams(l.search).get("q") ?? void 0, [l.search]),
-                        E = r.useMemo(() => (b ? (t && n ? r.createElement(o.Z, null, r.createElement(c.Z, { links: h }), "/i/communities/top" === l.pathname ? r.createElement(p.mI, { query: b }) : "/i/communities/latest" === l.pathname ? r.createElement(p.FP, { query: b }) : r.createElement(p.gH, { query: b })) : r.createElement(p.gH, { query: b })) : r.createElement(U, null)), [h, b, l.pathname, t, n]);
-                    return r.createElement(m.Z, null, r.createElement(d.Z, { backLocation: "/", customSearchBox: r.createElement(p.DO, { initialValue: b }), history: i, primaryContent: E, sidebarContent: r.createElement(s.Z, { withSearchBox: !1 }), title: H, withSearchBox: !0 }));
+                        E = r.useMemo(() => (b ? (t && n ? r.createElement(o.Z, null, r.createElement(c.Z, { links: h }), "/i/communities/top" === l.pathname ? r.createElement(p.mI, { query: b }) : "/i/communities/latest" === l.pathname ? r.createElement(p.FP, { query: b }) : r.createElement(p.gH, { query: b })) : r.createElement(p.gH, { query: b })) : r.createElement(H, null)), [h, b, l.pathname, t, n]);
+                    return r.createElement(m.Z, null, r.createElement(d.Z, { backLocation: "/", customSearchBox: r.createElement(p.DO, { initialValue: b }), history: i, primaryContent: E, sidebarContent: r.createElement(s.Z, { withSearchBox: !1 }), title: U, withSearchBox: !0 }));
                 },
                 V = r.memo($);
         },
@@ -389,11 +390,11 @@
             var R = n(810641),
                 O = n(644829),
                 N = n(750085),
-                U = n(218951);
-            const H = l().af05a978,
+                H = n(218951);
+            const U = l().af05a978,
                 L = l().eb4d2cd0;
             const B = function ({ noQuery: e }) {
-                return o.createElement(a.Z, { message: e ? H : L });
+                return o.createElement(a.Z, { message: e ? U : L });
             };
             var F = n(71620),
                 $ = n(668214),
@@ -406,7 +407,7 @@
                     const r = o.useMemo(
                         () =>
                             (function (e) {
-                                return (0, U.Z)({ timelineId: "global-communities-post-search-timeline", context: "FETCH_GLOBAL_COMMUNITIES_POST_SEARCH_TIMELINE", formatResponse: N.Z, network: { getEndpointParams: ({ count: t, cursor: n }) => ({ count: t, cursor: "string" == typeof n ? n : void 0, rawQuery: e }), getEndpoint: (e) => e.withEndpoint(O.Z).fetchGlobalCommunitiesPostSearch }, perfKey: "global-communities-post-search" });
+                                return (0, H.Z)({ timelineId: "global-communities-post-search-timeline", context: "FETCH_GLOBAL_COMMUNITIES_POST_SEARCH_TIMELINE", formatResponse: N.Z, network: { getEndpointParams: ({ count: t, cursor: n }) => ({ count: t, cursor: "string" == typeof n ? n : void 0, rawQuery: e }), getEndpoint: (e) => e.withEndpoint(O.Z).fetchGlobalCommunitiesPostSearch }, perfKey: "global-communities-post-search" });
                             })(n),
                         [n],
                     );
@@ -423,7 +424,7 @@
                     const r = o.useMemo(
                         () =>
                             (function (e) {
-                                return (0, U.Z)({ timelineId: "global-communities-latest-post-search-timeline", context: "FETCH_GLOBAL_COMMUNITIES_LATEST_POST_SEARCH_TIMELINE", formatResponse: N.Z, network: { getEndpointParams: ({ count: t, cursor: n }) => ({ count: t, cursor: "string" == typeof n ? n : void 0, rawQuery: e }), getEndpoint: (e) => e.withEndpoint(O.Z).fetchGlobalCommunitiesLatestPostSearch }, perfKey: "global-communities-latest-post-search" });
+                                return (0, H.Z)({ timelineId: "global-communities-latest-post-search-timeline", context: "FETCH_GLOBAL_COMMUNITIES_LATEST_POST_SEARCH_TIMELINE", formatResponse: N.Z, network: { getEndpointParams: ({ count: t, cursor: n }) => ({ count: t, cursor: "string" == typeof n ? n : void 0, rawQuery: e }), getEndpoint: (e) => e.withEndpoint(O.Z).fetchGlobalCommunitiesLatestPostSearch }, perfKey: "global-communities-latest-post-search" });
                             })(n),
                         [n],
                     );
@@ -558,8 +559,8 @@
                         n = t.viewer?.create_community_action_result;
                     return n ? r.createElement(v, { createActionResult: n }) : null;
                 },
-                U = (e) => r.createElement(_.H, { errorConfig: R }, r.createElement(N, null)),
-                H = r.memo(U);
+                H = (e) => r.createElement(_.H, { errorConfig: R }, r.createElement(N, null)),
+                U = r.memo(H);
             n(136728);
             var L = n(457311),
                 B = n(108362),
@@ -626,8 +627,8 @@
             var Re = n(36862),
                 Oe = n(530525),
                 Ne = n(439592),
-                Ue = n(910805),
-                He = n(508585),
+                He = n(910805),
+                Ue = n(508585),
                 Le = n(966886),
                 Be = n(310088),
                 Fe = n(470397),
@@ -641,7 +642,7 @@
                 We = s().caf003b3,
                 Qe = () => s().d9ef2842,
                 je = ({ community: e }) => {
-                    const t = I()(He.Z, e),
+                    const t = I()(Ue.Z, e),
                         n = (0, $e.B)(t),
                         a = (0, Ve.b)(t),
                         { lastActiveTime: i, newTweets: l } = t,
@@ -659,7 +660,7 @@
                 Je = i.default.create((e) => ({ stats: { marginTop: e.spaces.space4, flexDirection: "row" }, firstMessage: { flexGrow: 1, flexShrink: 0 }, secondMessage: { flexGrow: 0, flexShrink: 1 }, indicator: { alignSelf: "center", marginEnd: e.spaces.space4 } })),
                 et = ({ community: e }) => {
                     const t = I()(Re.Z, e),
-                        { crop: n, image: a } = (0, Ue.L)(t),
+                        { crop: n, image: a } = (0, He.L)(t),
                         { id_str: l, name: s } = t,
                         d = `/i/communities/${l}`;
                     return r.createElement(Ie.Z, { link: d, style: nt.root }, r.createElement(o.Z, { style: nt.container }, r.createElement(o.Z, { style: nt.thumbnailContainer }, r.createElement(Oe.Z, { "aria-label": "", aspectMode: Ne.Z.SQUARE, backgroundColor: i.default.theme.colors.gray300, cropCandidates: n, image: a, testID: qe })), r.createElement(o.Z, { style: nt.description }, r.createElement(o.Z, { style: nt.name }, r.createElement(Ae.ZP, { numberOfLines: 1, weight: "bold" }, s)), r.createElement(Xe, { community: t }))));
@@ -816,13 +817,13 @@
                 Rt = n(125363),
                 Ot = n(709318),
                 Nt = n(24949);
-            const Ut = (e, t) => {
+            const Ht = (e, t) => {
                     const { user: n } = t;
                     return n ? n.id_str : void 0;
                 },
-                Ht = () => (0, Nt.P1)(Ut, (e) => (e ? ((e) => (0, ee.Z)({ timelineId: `communityMemberships-${e}`, network: { getEndpoint: (e) => e.withEndpoint(X.Z).fetchCommunityMemberships, getEndpointParams: ({ cursor: t }) => ({ cursor: "string" == typeof t ? t : void 0, userId: e }) }, context: "FETCH_COMMUNITY_MEMBERSHIPS_TIMELINE", perfKey: "communityMemberships", formatResponse: J.Z }))(e) : void 0)),
+                Ut = () => (0, Nt.P1)(Ht, (e) => (e ? ((e) => (0, ee.Z)({ timelineId: `communityMemberships-${e}`, network: { getEndpoint: (e) => e.withEndpoint(X.Z).fetchCommunityMemberships, getEndpointParams: ({ cursor: t }) => ({ cursor: "string" == typeof t ? t : void 0, userId: e }) }, context: "FETCH_COMMUNITY_MEMBERSHIPS_TIMELINE", perfKey: "communityMemberships", formatResponse: J.Z }))(e) : void 0)),
                 Lt = (0, E.Z)()
-                    .propsFromState(() => ({ urtModule: Ht() }))
+                    .propsFromState(() => ({ urtModule: Ut() }))
                     .withAnalytics({ page: "communities", section: "memberships" }),
                 Bt = s().c63602d4,
                 Ft = s().d7346632,
@@ -845,7 +846,7 @@
             class Yt extends r.Component {
                 constructor(...e) {
                     super(...e),
-                        (this._renderRightControl = () => r.createElement(o.Z, { style: Wt.rightControl }, r.createElement(Kt.l1, null), r.createElement(H, null))),
+                        (this._renderRightControl = () => r.createElement(o.Z, { style: Wt.rightControl }, r.createElement(Kt.l1, null), r.createElement(U, null))),
                         (this._renderPrimaryContent = () => {
                             const { hasCommunityMemberships: e, user: t } = this.props,
                                 { viewerUserId: n } = this.context,
@@ -884,4 +885,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Communities-e4e3d8bb.6f5a678a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Communities-e4e3d8bb.f72426aa.js.map

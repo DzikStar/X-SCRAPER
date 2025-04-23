@@ -345,7 +345,7 @@
                 C = n(674132),
                 k = n.n(C),
                 x = n(443781),
-                I = n(379873),
+                I = n(358869),
                 S = n(736063),
                 W = n(125363),
                 R = n(38562),
@@ -449,4 +449,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Communities-97a39920.5e96968a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Communities-97a39920.707b523a.js.map

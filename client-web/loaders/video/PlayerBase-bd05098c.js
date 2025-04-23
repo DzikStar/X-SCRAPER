@@ -550,11 +550,10 @@
                     return new Promise((e) => {
                         if (this.videoTag && (this.videoTag.readyState >= 3 || this.isEnded)) e();
                         else {
-                            const t = (0, c.G6)() ? setTimeout(e, 5e3) : void 0,
-                                i = () => {
-                                    this.videoTag && this.videoTag.readyState >= 3 && (e(), clearTimeout(t), this.videoTag.removeEventListener("canplay", i));
-                                };
-                            this.videoTag.addEventListener("canplay", i);
+                            const t = () => {
+                                e(), this.videoTag.removeEventListener("loadedmetadata", t);
+                            };
+                            this.videoTag.addEventListener("loadedmetadata", t);
                         }
                     }).then(() => (this.checkInitialSeek(), this.videoTag.play() || Promise.resolve()));
                 }
@@ -1144,4 +1143,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loaders.video.PlayerBase-bd05098c.d15fb0da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loaders.video.PlayerBase-bd05098c.e2697eea.js.map

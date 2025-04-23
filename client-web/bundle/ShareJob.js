@@ -10,18 +10,18 @@
                 i = l(392237),
                 s = l(731708),
                 o = l(264171),
-                c = l(190636),
-                u = l(457458),
+                u = l(190636),
+                c = l(457458),
                 d = l(725516),
                 m = l(272590);
             const g = i.default.create((e) => ({ card: { paddingVertical: e.spaces.space12, paddingHorizontal: e.spaces.space20, height: "100%" }, cardLayout: { display: "flex", flexDirection: "column", gap: e.spaces.space8, height: "100%" }, cardMeta: { display: "flex", flexDirection: "column", gap: 8 }, cardSubtext: { display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center", gap: 12 }, withIcon: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space4 }, contentBackground: { backgroundColor: e.colors.cellBackground }, darkModeContentBackground: { backgroundColor: e.colors.gray0 } })),
-                y = ({ formattedSalary: e, id: a, isVerifiedOrg: l, isViewerFollowsUser: y, jobIndex: p, location: b, profileId: k, redirectUrl: f, salaryInterval: h, timestamp: _, title: F }) => {
-                    const v = (0, d.z)(),
-                        E = n.useCallback(() => {
-                            v.scribe({ ...(0, m.yt)("jobs_module", "click", "job"), data: { profile_id: k, items: [{ position: p, id: a, is_viewer_follows_user: y }] } });
-                        }, [v, a, y, p, k]),
+                y = ({ formattedSalary: e, id: a, isVerifiedOrg: l, isViewerFollowsUser: y, jobIndex: p, location: b, profileId: k, redirectUrl: f, salaryInterval: _, timestamp: h, title: F }) => {
+                    const E = (0, d.z)(),
+                        v = n.useCallback(() => {
+                            E.scribe({ ...(0, m.yt)("jobs_module", "click", "job"), data: { profile_id: k, items: [{ position: p, id: a, is_viewer_follows_user: y }] } });
+                        }, [E, a, y, p, k]),
                         w = n.useMemo(() => `/i/jobs/${a}`, [a]);
-                    return n.createElement(r.Z, { link: l ? { pathname: w, external: !0 } : f || "", onClick: E, role: "link", style: [g.card, i.default.isDarkMode() ? g.darkModeContentBackground : g.contentBackground] }, n.createElement(t.Z, { style: g.cardLayout }, n.createElement(s.ZP, { hoverLabel: { label: F, withDelay: !0 }, numberOfLines: 1, size: "subtext2", weight: "bold" }, F), n.createElement(t.Z, { style: g.cardMeta }, n.createElement(t.Z, { style: g.withIcon }, n.createElement(s.ZP, { color: "gray700", size: "subtext3" }, n.createElement(o.default, null)), n.createElement(s.ZP, { color: "gray700", hoverLabel: { label: b, withDelay: !0 }, numberOfLines: 1, size: "subtext3", weight: "normal" }, b)), e || _ ? n.createElement(t.Z, { style: g.cardSubtext }, e ? n.createElement(t.Z, { style: g.withIcon }, n.createElement(s.ZP, { color: "gray700", size: "subtext3" }, n.createElement(c.default, null)), n.createElement(s.ZP, { color: "gray700", hoverLabel: { label: b, withDelay: !0 }, numberOfLines: 1, size: "subtext3", style: g.withIcon, weight: "normal" }, (0, u.M)(e, h))) : null, _ ? n.createElement(s.ZP, { color: "gray700", size: "subtext2", weight: "normal" }, _) : null) : null)));
+                    return n.createElement(r.Z, { link: l ? { pathname: w, external: !0 } : f || "", onClick: v, role: "link", style: [g.card, i.default.isDarkMode() ? g.darkModeContentBackground : g.contentBackground] }, n.createElement(t.Z, { style: g.cardLayout }, n.createElement(s.ZP, { hoverLabel: { label: F, withDelay: !0 }, numberOfLines: 1, size: "subtext2", weight: "bold" }, F), n.createElement(t.Z, { style: g.cardMeta }, n.createElement(t.Z, { style: g.withIcon }, n.createElement(s.ZP, { color: "gray700", size: "subtext3" }, n.createElement(o.default, null)), n.createElement(s.ZP, { color: "gray700", hoverLabel: { label: b, withDelay: !0 }, numberOfLines: 1, size: "subtext3", weight: "normal" }, b)), e || h ? n.createElement(t.Z, { style: g.cardSubtext }, e ? n.createElement(t.Z, { style: g.withIcon }, n.createElement(s.ZP, { color: "gray700", size: "subtext3" }, n.createElement(u.default, null)), n.createElement(s.ZP, { color: "gray700", hoverLabel: { label: b, withDelay: !0 }, numberOfLines: 1, size: "subtext3", style: g.withIcon, weight: "normal" }, (0, c.M)(e, _))) : null, h ? n.createElement(s.ZP, { color: "gray700", size: "subtext2", weight: "normal" }, h) : null) : null)));
                 };
         },
         272590: (e, a, l) => {
@@ -76,11 +76,11 @@
             i.hash = "439dfdcba4832cc106164180b8ada679";
             const s = i;
             var o = l(202784),
-                c = (l(585488), l(351743)),
-                u = l.n(c);
+                u = (l(585488), l(351743)),
+                c = l.n(u);
             const d = s,
                 m = () => {
-                    const [e, a] = u()(d);
+                    const [e, a] = c()(d);
                     return [
                         o.useCallback(
                             (a) => {
@@ -93,14 +93,14 @@
                 };
         },
         638679: (e, a, l) => {
-            l.r(a), l.d(a, { default: () => ve });
+            l.r(a), l.d(a, { default: () => Ee });
             var n,
                 t,
                 r,
                 i,
                 s,
                 o,
-                c = {
+                u = {
                     fragment: {
                         argumentDefinitions: [],
                         kind: "Fragment",
@@ -121,8 +121,8 @@
                     operation: { argumentDefinitions: [], kind: "Operation", name: "ShareJobQuery", selections: [{ alias: "viewer", args: n, concreteType: "Viewer", kind: "LinkedField", name: "viewer_v2", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [(o = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }), { kind: "InlineFragment", selections: [t, r, { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" }, { alias: null, args: null, concreteType: "ApiRecruitingOrganizationResults", kind: "LinkedField", name: "recruiting_organization_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [o, s], storageKey: null }, i], storageKey: null }, i], type: "User", abstractKey: null }], storageKey: null }, i], storageKey: null }], storageKey: 'viewer_v2(s:"4721")' }] },
                     params: { id: "WJzdyXabqnLlXPJFh_IfNw", metadata: {}, name: "ShareJobQuery", operationKind: "query", text: null },
                 };
-            c.hash = "531d2873f9e79301a2eadecd409a4051";
-            const u = c;
+            u.hash = "531d2873f9e79301a2eadecd409a4051";
+            const c = u;
             var d = l(202784),
                 m = l(325686),
                 g = (l(585488), l(167630)),
@@ -157,8 +157,8 @@
                     return { fragment: { argumentDefinitions: e, kind: "Fragment", metadata: null, name: "AddJobMutation", selections: a, type: "Mutation", abstractKey: null }, kind: "Request", operation: { argumentDefinitions: e, kind: "Operation", name: "AddJobMutation", selections: a }, params: { id: "Jpo1B2QEin48EYWnH55r1w", metadata: {}, name: "AddJobMutation", operationKind: "mutation", text: null } };
                 })();
             f.hash = "5536f9946dcfe5afd51e8f6ffecde72c";
-            const h = f;
-            var _ = (function () {
+            const _ = f;
+            var h = (function () {
                 var e = [{ defaultValue: null, kind: "LocalArgument", name: "jobId" }],
                     a = [
                         { kind: "Variable", name: "rest_id", variableName: "jobId" },
@@ -223,15 +223,15 @@
                     params: { id: "k6yQNpBSEO93ZgAM113Qgw", metadata: {}, name: "AddJobQuery", operationKind: "query", text: null },
                 };
             })();
-            _.hash = "d1623fcb8bdbdb0fa14bb939cf0849a7";
-            const F = _;
-            var v = l(351743),
-                E = l.n(v),
+            h.hash = "d1623fcb8bdbdb0fa14bb939cf0849a7";
+            const F = h;
+            var E = l(351743),
+                v = l.n(E),
                 w = l(107267),
-                x = l(731708),
-                K = l(154003),
-                S = l(674132),
-                Z = l.n(S),
+                K = l(731708),
+                S = l(154003),
+                x = l(674132),
+                Z = l.n(x),
                 C = l(9577),
                 I = l(2430),
                 L = l(454104);
@@ -241,14 +241,14 @@
                 P = Z().h05e4a7a,
                 R = Z().b518daae,
                 J = Z().cfd2f35e,
-                M = Z().fc2a5c92,
-                T = Z().d338f53e,
-                D = ({ onClose: e }) => {
+                T = Z().fc2a5c92,
+                M = Z().d338f53e,
+                V = ({ onClose: e }) => {
                     const { isVerifiedOrg: a } = (0, L.Z)();
-                    return d.createElement(d.Fragment, null, d.createElement(x.ZP, { color: "text", size: "headline1", weight: "bold" }, a ? j : z), d.createElement(x.ZP, { color: "gray700", size: "subtext1", style: V.root }, a ? P : O), d.createElement(K.ZP, { link: { pathname: a ? "/i/verified/jobs" : "/i/premium/hiring", method: "replace" }, type: "brandFilled" }, R), d.createElement(K.ZP, { onClick: e, type: "primaryOutlined" }, J));
+                    return d.createElement(d.Fragment, null, d.createElement(K.ZP, { color: "text", size: "headline1", weight: "bold" }, a ? j : z), d.createElement(K.ZP, { color: "gray700", size: "subtext1", style: A.root }, a ? P : O), d.createElement(S.ZP, { link: { pathname: a ? "/i/verified/jobs" : "/i/premium/hiring", method: "replace" }, type: "brandFilled" }, R), d.createElement(S.ZP, { onClick: e, type: "primaryOutlined" }, J));
                 },
-                V = y.default.create((e) => ({ root: { maxWidth: "400px" } })),
-                A = ({ errorMsg: e, onClose: a, retry: l, title: n = M }) => ("too many active job share items" === e ? d.createElement(D, { onClose: a }) : d.createElement(d.Fragment, null, d.createElement(x.ZP, { color: "text", size: "headline1", weight: "bold" }, n), d.createElement(x.ZP, { color: "gray700", size: "subtext1" }, e), d.createElement(K.ZP, { onClick: l, type: "brandFilled" }, T), d.createElement(K.ZP, { onClick: a, type: "primaryOutlined" }, J))),
+                A = y.default.create((e) => ({ root: { maxWidth: "400px" } })),
+                D = ({ errorMsg: e, onClose: a, retry: l, title: n = T }) => ("too many active job share items" === e ? d.createElement(V, { onClose: a }) : d.createElement(d.Fragment, null, d.createElement(K.ZP, { color: "text", size: "headline1", weight: "bold" }, n), d.createElement(K.ZP, { color: "gray700", size: "subtext1" }, e), d.createElement(S.ZP, { onClick: l, type: "brandFilled" }, M), d.createElement(S.ZP, { onClick: a, type: "primaryOutlined" }, J))),
                 N = Z().f48e9c52,
                 Q = Z().f6757978,
                 B = Z().i329c5a6,
@@ -257,7 +257,7 @@
                 U = y.default.create((e) => ({ root: { maxWidth: "400px" } })),
                 W = ({ onClose: e, screenName: a }) => {
                     const { isVerifiedOrg: l } = (0, L.Z)();
-                    return d.createElement(d.Fragment, null, d.createElement(x.ZP, { color: "text", size: "headline1", weight: "bold" }, N), d.createElement(x.ZP, { color: "gray700", size: "subtext1", style: U.root }, Q), d.createElement(K.ZP, { link: { pathname: l ? "/i/verified/jobs" : "/i/premium/hiring", method: "replace" }, type: "primaryFilled" }, B), d.createElement(K.ZP, { link: { pathname: `/${a}`, method: "replace" }, type: "primaryFilled" }, q), d.createElement(K.ZP, { onClick: e, type: "primaryOutlined" }, H));
+                    return d.createElement(d.Fragment, null, d.createElement(K.ZP, { color: "text", size: "headline1", weight: "bold" }, N), d.createElement(K.ZP, { color: "gray700", size: "subtext1", style: U.root }, Q), d.createElement(S.ZP, { link: { pathname: l ? "/i/verified/jobs" : "/i/premium/hiring", method: "replace" }, type: "primaryFilled" }, B), d.createElement(S.ZP, { link: { pathname: `/${a}`, method: "replace" }, type: "primaryFilled" }, q), d.createElement(S.ZP, { onClick: e, type: "primaryOutlined" }, H));
                 },
                 $ = Z().bae2f5f0,
                 X = Z().cbcaaa1a,
@@ -265,13 +265,13 @@
                 Y = Z().cfd2f35e,
                 ee = Z().j4ae9960,
                 ae = F,
-                le = h,
+                le = _,
                 ne = "SUCCESS",
                 te = ({ job: e, jobId: a, screenName: l, userId: n }) => {
                     const t = (0, w.useHistory)(),
                         [r, i] = d.useState(null),
-                        [s, o] = E()(le),
-                        c = d.useCallback(() => {
+                        [s, o] = v()(le),
+                        u = d.useCallback(() => {
                             s({
                                 variables: { jobId: a, userId: n },
                                 onCompleted: (e) => {
@@ -282,10 +282,10 @@
                                 },
                             });
                         }, [s, a, n]),
-                        u = d.useCallback(() => {
+                        c = d.useCallback(() => {
                             t.goBack();
                         }, [t]);
-                    return r === ne ? d.createElement(W, { onClose: u, screenName: l }) : r ? d.createElement(A, { errorMsg: r, onClose: u, retry: c, screenName: l }) : d.createElement(d.Fragment, null, d.createElement(x.ZP, { color: "text", size: "headline1", weight: "bold" }, $), d.createElement(x.ZP, { color: "gray700", size: "subtext1" }, X), d.createElement(m.Z, { style: re.spotlightCard }, d.createElement(C.Z, { formattedSalary: e.formatted_salary, id: a, jobIndex: 0, location: e.location, maxSalary: e.salary_max, minSalary: e.salary_min, redirectUrl: "", salaryInterval: e.salary_interval, title: e.title || "" })), d.createElement(K.ZP, { disabled: o, onClick: c, type: "brandFilled" }, G), d.createElement(K.ZP, { disabled: o, onClick: u, type: "primaryOutlined" }, Y));
+                    return r === ne ? d.createElement(W, { onClose: c, screenName: l }) : r ? d.createElement(D, { errorMsg: r, onClose: c, retry: u, screenName: l }) : d.createElement(d.Fragment, null, d.createElement(K.ZP, { color: "text", size: "headline1", weight: "bold" }, $), d.createElement(K.ZP, { color: "gray700", size: "subtext1" }, X), d.createElement(m.Z, { style: re.spotlightCard }, d.createElement(C.Z, { formattedSalary: e.formatted_salary, id: a, jobIndex: 0, location: e.location, maxSalary: e.salary_max, minSalary: e.salary_min, redirectUrl: "", salaryInterval: e.salary_interval, title: e.title || "" })), d.createElement(S.ZP, { disabled: o, onClick: u, type: "brandFilled" }, G), d.createElement(S.ZP, { disabled: o, onClick: c, type: "primaryOutlined" }, Y));
                 },
                 re = y.default.create((e) => ({ spotlightCard: { borderRadius: e.borderRadii.large, boxShadow: e.boxShadows.xSmall, marginVertical: e.spaces.space16, marginHorizontal: `calc(${e.spaces.space4} + ${e.spaces.space2})`, overflow: "hidden", flexGrow: 1 } })),
                 ie = ({ jobId: e, screenName: a, userId: l }) => {
@@ -299,8 +299,8 @@
                     return t ? d.createElement(ie, { jobId: t, screenName: e, userId: a }) : (l.goBack(), null);
                 };
             var oe = l(614983),
-                ce = l.n(oe),
-                ue = l(992942),
+                ue = l.n(oe),
+                ce = l(992942),
                 de = l(664727),
                 me = l(62668);
             const ge = Z().h39a5448,
@@ -316,16 +316,16 @@
                                     updater: (a, l) => {
                                         if (!e || !l?.configure_organization?.success) return;
                                         const n = a.get(e);
-                                        ce()(n, "orgRecord must be specified");
+                                        ue()(n, "orgRecord must be specified");
                                         const t = n.getOrCreateLinkedRecord("core", "RecruitingOrganizationCore");
                                         n.setLinkedRecord(t, "core");
                                     },
                                 });
                         }, [e, l, a]);
-                    return d.createElement(d.Fragment, null, d.createElement(x.ZP, { color: "text", size: "headline1", weight: "bold" }, ge), d.createElement(x.ZP, { color: "gray700", size: "subtext1" }, ye), d.createElement(m.Z, { style: be.imageContainer }, d.createElement(ue.Z, { "aria-label": "Jobs preview", resizeMode: "contain", source: me, style: be.image })), d.createElement(K.ZP, { disabled: n, onClick: t, type: "brandFilled" }, pe));
+                    return d.createElement(d.Fragment, null, d.createElement(K.ZP, { color: "text", size: "headline1", weight: "bold" }, ge), d.createElement(K.ZP, { color: "gray700", size: "subtext1" }, ye), d.createElement(m.Z, { style: be.imageContainer }, d.createElement(ce.Z, { "aria-label": "Jobs preview", resizeMode: "contain", source: me, style: be.image })), d.createElement(S.ZP, { disabled: n, onClick: t, type: "brandFilled" }, pe));
                 },
-                fe = u,
-                he = () => {
+                fe = c,
+                _e = () => {
                     const {
                             viewer: {
                                 user_results: { result: e },
@@ -338,9 +338,9 @@
                         r = d.useCallback(() => (e ? (a && n && t ? d.createElement(se, { screenName: t, userId: n }) : d.createElement(ke, { orgQueryId: l, userId: n })) : d.createElement(g.Z, null)), [a, l, e, t, n]);
                     return d.createElement(d.Fragment, null, r());
                 },
-                _e = { context: "ShareJob" },
+                he = { context: "ShareJob" },
                 Fe = y.default.create((e) => ({ modalStyles: { padding: e.spaces.space16, gap: e.spaces.space16 } })),
-                ve = ({ history: e }) => d.createElement(b.H, { errorConfig: _e }, d.createElement(p.ZP, { clickMaskToClose: !0, history: e, modalSize: "fitChildren", withBackground: !0 }, d.createElement(m.Z, { style: Fe.modalStyles }, d.createElement(he, null))));
+                Ee = ({ history: e }) => d.createElement(b.H, { errorConfig: he }, d.createElement(p.ZP, { clickMaskToClose: !0, history: e, modalSize: "fitChildren", withBackground: !0 }, d.createElement(m.Z, { style: Fe.modalStyles }, d.createElement(_e, null))));
         },
         454104: (e, a, l) => {
             l.d(a, { Z: () => t });
@@ -352,21 +352,21 @@
             };
         },
         89217: (e, a, l) => {
-            l.d(a, { Ju: () => m, Qw: () => g, eo: () => c });
+            l.d(a, { Ju: () => m, Qw: () => g, eo: () => u });
             var n = l(674132),
                 t = l.n(n);
             const r = t().c69eb656,
                 i = t().g46ae43c,
                 s = t().jf7d4cc6,
                 o = t().b2214572,
-                c = Object.freeze({ full_time: r, full_time_contract: i, part_time: s, contract_to_hire: o }),
-                u = t().f8337bd6,
+                u = Object.freeze({ full_time: r, full_time_contract: i, part_time: s, contract_to_hire: o }),
+                c = t().f8337bd6,
                 d = t().i935bf88,
-                m = Object.freeze({ 1: u, 2: d }),
-                g = Object.freeze({ annually: { label: u, value: 1 }, hourly: { label: d, value: 2 } });
+                m = Object.freeze({ 1: c, 2: d }),
+                g = Object.freeze({ annually: { label: c, value: 1 }, hourly: { label: d, value: 2 } });
         },
         457458: (e, a, l) => {
-            l.d(a, { G: () => c, M: () => o });
+            l.d(a, { G: () => u, M: () => o });
             l(571372);
             var n = l(301503),
                 t = l(674132),
@@ -377,7 +377,7 @@
                     const l = a ?? 1;
                     return i.Ju[l.toString()] ? s({ salary: e, interval: i.Ju[l.toString()] }) : e;
                 },
-                c = (e) => {
+                u = (e) => {
                     if (e)
                         try {
                             const a = JSON.parse(e);
@@ -387,22 +387,9 @@
                         } catch (e) {}
                 };
         },
-        264171: (e, a, l) => {
-            l.r(a), l.d(a, { default: () => o });
-            var n = l(202784),
-                t = l(890601),
-                r = l(783427),
-                i = l(347101);
-            const s = (e = {}) => {
-                const { direction: a } = (0, r.Z)();
-                return (0, t.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M12 2c-4.687 0-8.5 3.813-8.5 8.5 0 5.967 7.621 11.116 7.945 11.332l.555.37.555-.37c.324-.216 7.945-5.365 7.945-11.332C20.5 5.813 16.687 2 12 2zm0 11.5c-1.65 0-3-1.34-3-3s1.35-3 3-3c1.66 0 3 1.34 3 3s-1.34 3-3 3z" })) }, { writingDirection: a });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const o = s;
-        },
         62668: (e, a, l) => {
             e.exports = l.p + "splash-preview.9856fd5a.png";
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ShareJob.76b3980a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ShareJob.bdbb01fa.js.map

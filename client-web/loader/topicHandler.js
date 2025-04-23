@@ -6,8 +6,8 @@
             o.d(t, { Z: () => k });
             var r = o(202784),
                 n = o(325686),
-                i = o(952428),
-                c = o(731708),
+                c = o(952428),
+                i = o(731708),
                 a = o(909377),
                 s = o(392237),
                 l = o(674132),
@@ -45,7 +45,7 @@
                     const { educateOnFollow: e, isInSidebar: t, nameWeight: o, notInterestedOnClick: a, topic: s } = this.props,
                         { description: l, name: d } = s,
                         { loggedInUserId: p } = this.context;
-                    return r.createElement(i.Z, { "aria-labelledby": [this._topicDomId, this._nameDomId, this._descriptionDomId, this._followButtonDomId, this._notInterestedButtonDomId].join(" "), interactiveStyles: this._topicLink ? void 0 : null, link: this._topicLink, onClick: this._topicLink ? this._handleOnClick : void 0, style: [S.root, S.flexStart], withDarkerInteractiveBackground: t }, r.createElement(n.Z, { style: S.topic }, r.createElement(n.Z, { "aria-label": v, id: this._topicDomId }), this._renderIcon(), r.createElement(n.Z, { style: S.text }, r.createElement(c.ZP, { id: this._nameDomId, weight: o, withInteractiveStyling: !!this._topicLink }, d), l ? r.createElement(c.ZP, { color: "gray700", id: this._descriptionDomId, numberOfLines: 2 }, l) : null)), r.createElement(n.Z, { style: S.buttons }, r.createElement(h.ZP, { educateOnFollow: e, id: this._followButtonDomId, topic: s }), p && a ? r.createElement(u.Z, { id: this._notInterestedButtonDomId, onPress: a, style: S.marginStart, topicId: s.id }) : null));
+                    return r.createElement(c.Z, { "aria-labelledby": [this._topicDomId, this._nameDomId, this._descriptionDomId, this._followButtonDomId, this._notInterestedButtonDomId].join(" "), interactiveStyles: this._topicLink ? void 0 : null, link: this._topicLink, onClick: this._topicLink ? this._handleOnClick : void 0, style: [S.root, S.flexStart], withDarkerInteractiveBackground: t }, r.createElement(n.Z, { style: S.topic }, r.createElement(n.Z, { "aria-label": v, id: this._topicDomId }), this._renderIcon(), r.createElement(n.Z, { style: S.text }, r.createElement(i.ZP, { id: this._nameDomId, weight: o, withInteractiveStyling: !!this._topicLink }, d), l ? r.createElement(i.ZP, { color: "gray700", id: this._descriptionDomId, numberOfLines: 2 }, l) : null)), r.createElement(n.Z, { style: S.buttons }, r.createElement(h.ZP, { educateOnFollow: e, id: this._followButtonDomId, topic: s }), p && a ? r.createElement(u.Z, { id: this._notInterestedButtonDomId, onPress: a, style: S.marginStart, topicId: s.id }) : null));
                 }
                 _renderIcon() {
                     const { withIcon: e } = this.props;
@@ -64,8 +64,8 @@
             o.r(t), o.d(t, { default: () => y });
             var r = o(459643),
                 n = o(351322),
-                i = o(202784),
-                c = o(812736),
+                c = o(202784),
+                i = o(812736),
                 a = o(638090),
                 s = o(725516),
                 l = o(373867),
@@ -83,7 +83,7 @@
                             topic: p,
                         } = e;
                     if (
-                        (i.useEffect(() => {
+                        (c.useEffect(() => {
                             p && t.scribeAction("impression");
                         }, [t, p]),
                         !p)
@@ -91,30 +91,30 @@
                         return null;
                     const m = (0, l.z)({ feedbackItems: r, topic: p, topicItemContent: o }),
                         h = o.topicDisplayType === a.M6.Basic;
-                    return i.createElement(c.Z, { notInterestedOnClick: m, saveAsRecentSearch: n, shouldStoreTypeaheadItem: d, topic: p, withIcon: h });
+                    return c.createElement(i.Z, { notInterestedOnClick: m, saveAsRecentSearch: n, shouldStoreTypeaheadItem: d, topic: p, withIcon: h });
                 },
                 f = (0, d.Z)()
                     .propsFromState(() => ({ topic: h }))
-                    .propsFromActions(() => ({ saveAsRecentSearch: p.DI }))(i.memo(u)),
+                    .propsFromActions(() => ({ saveAsRecentSearch: p.DI }))(c.memo(u)),
                 y = (e) => n.iH({ component: f, isFocusable: (0, r.Z)(!0), getScribeDataItem: l.H, shouldDisplayBorder: (0, r.Z)(!1) }).getHandler(() => ({ ...e }));
         },
         373867: (e, t, o) => {
-            o.d(t, { H: () => c, z: () => i });
+            o.d(t, { H: () => i, z: () => c });
             var r = o(942893),
                 n = o(638090);
-            const i = ({ feedbackItems: e, topic: t, topicItemContent: o }) => {
+            const c = ({ feedbackItems: e, topic: t, topicItemContent: o }) => {
                     const r = o.topicFunctionalityType === n.xV.Recommendation,
-                        i = 1 === e?.length ? e[0].onClick : void 0;
-                    return !t?.not_interested && !t?.following && r ? i : void 0;
+                        c = 1 === e?.length ? e[0].onClick : void 0;
+                    return !t?.not_interested && !t?.following && r ? c : void 0;
                 },
-                c = (e) => r.Z.forTopic(e.content.topicId, e.itemMetadata.clientEventInfo);
+                i = (e) => r.Z.forTopic(e.content.topicId, e.itemMetadata.clientEventInfo);
         },
         117004: (e, t, o) => {
-            o.r(t), o.d(t, { default: () => L });
+            o.r(t), o.d(t, { default: () => B });
             var r = o(459643),
                 n = o(351322),
-                i = o(202784),
-                c = o(325686),
+                c = o(202784),
+                i = o(325686),
                 a = o(247609),
                 s = o(392237),
                 l = o(638090),
@@ -138,12 +138,12 @@
                 E = u().i77347d1,
                 x = u().e839db3a,
                 Z = (e) => {
-                    const { loggedInUserId: t } = i.useContext(y.rC),
+                    const { loggedInUserId: t } = c.useContext(y.rC),
                         { analytics: o, createLocalApiErrorHandler: r, follow: n, notInterestedOnClick: a, topic: s, unfollow: l, withActionIcon: d } = e,
                         { following: h, id: u, name: v, not_interested: w } = s,
-                        I = i.useRef(!1),
-                        [S, Z] = i.useState(0),
-                        D = i.useCallback(
+                        I = c.useRef(!1),
+                        [S, Z] = c.useState(0),
+                        D = c.useCallback(
                             (e) => {
                                 if (0 === S) {
                                     const {
@@ -172,10 +172,10 @@
                                 .then(e && e(u)),
                                 o.scribeAction("unfollow");
                         },
-                        O = (e, o, r) => {
+                        z = (e, o, r) => {
                             if (t && a) return { mode: p.D.Remove, onSecondaryClick: a, "aria-label": E({ topicName: v }), hoverLabel: x, disabled: h || w };
                         };
-                    return i.createElement(g.Z, { customText: v, displayMode: b.BH.topic }, (e) => i.createElement(f.m.Consumer, null, ({ onFollow: t, onInitialize: o, onUnfollow: r }) => (o && !I.current && (o(u, h), (I.current = !0)), i.createElement(c.Z, { onLayout: D, style: [_.root, { minWidth: S }] }, i.createElement(m.Z, { "aria-label": h ? C({ topicName: v }) : k({ topicName: v }), disabled: w, key: u, mode: A(), onClick: P(e, t, r), secondaryAction: O(), selected: h, style: _.pill, text: v })))));
+                    return c.createElement(g.Z, { customText: v, displayMode: b.BH.topic }, (e) => c.createElement(f.m.Consumer, null, ({ onFollow: t, onInitialize: o, onUnfollow: r }) => (o && !I.current && (o(u, h), (I.current = !0)), c.createElement(i.Z, { onLayout: D, style: [_.root, { minWidth: S }] }, c.createElement(m.Z, { "aria-label": h ? C({ topicName: v }) : k({ topicName: v }), disabled: w, key: u, mode: A(), onClick: P(e, t, r), secondaryAction: z(), selected: h, style: _.pill, text: v })))));
                 };
             Z.defaultProps = { withActionIcon: !0 };
             const _ = s.default.create((e) => ({ root: { marginHorizontal: e.spaces.space4, marginVertical: e.spaces.space4 }, pill: { textOverflow: "ellipsis" }, roundIcon: { borderRadius: e.borderRadii.infinite, height: "100%", width: "100%" } })),
@@ -191,29 +191,29 @@
                             topic: n,
                         } = e,
                         { topicDisplayType: s, topicFunctionalityType: p } = o,
-                        m = i.useCallback(() => {
+                        m = c.useCallback(() => {
                             t.scribeAction("click");
                         }, [t]);
                     if (!n) return null;
                     const h = (0, A.z)({ feedbackItems: r, topic: n, topicItemContent: o }),
                         u = p !== l.xV.Pivot && s !== l.M6.PillWithoutActionIcon;
-                    return p === l.xV.Pivot ? i.createElement(c.Z, { style: O.root }, i.createElement(a.Z, { link: `/i/topics/${n.id}`, onClick: m, text: n.name })) : i.createElement(D, { notInterestedOnClick: h, topic: n, withActionIcon: u });
+                    return p === l.xV.Pivot ? c.createElement(i.Z, { style: z.root }, c.createElement(a.Z, { link: `/i/topics/${n.id}`, onClick: m, text: n.name })) : c.createElement(D, { notInterestedOnClick: h, topic: n, withActionIcon: u });
                 },
-                O = s.default.create((e) => ({ root: { margin: e.spaces.space4 } })),
-                B = H(i.memo(R)),
-                L = ({ shouldDisplayBorder: e = !1 }) => n.iH({ component: B, isFocusable: (0, r.Z)(!0), getScribeDataItem: A.H, shouldDisplayBorder: (0, r.Z)(e) }).getHandler();
+                z = s.default.create((e) => ({ root: { margin: e.spaces.space4 } })),
+                O = H(c.memo(R)),
+                B = ({ shouldDisplayBorder: e = !1 }) => n.iH({ component: O, isFocusable: (0, r.Z)(!0), getScribeDataItem: A.H, shouldDisplayBorder: (0, r.Z)(e) }).getHandler();
         },
         204744: (e, t, o) => {
             o.d(t, { DI: () => w, H$: () => m, OB: () => I, Ww: () => d, YB: () => p, hj: () => y, qF: () => g });
             o(901951);
             var r = o(499627),
                 n = o(390387);
-            const i = "recentSearches",
-                c = "rweb.recentSearches",
+            const c = "recentSearches",
+                i = "rweb.recentSearches",
                 a =
                     (e) =>
                     (t, o, { userPersistence: r }) =>
-                        r.set(c, { recentSearches: e }).catch(() => {
+                        r.set(i, { recentSearches: e }).catch(() => {
                             Promise.resolve();
                         }),
                 s = (e, t) => {
@@ -237,9 +237,9 @@
                     return o;
                 },
                 l = { fetched: !1, recentSearches: [] };
-            const d = (e) => e[i].recentSearches,
+            const d = (e) => e[c].recentSearches,
                 p = (e) => d(e)[0] || null,
-                m = (e) => e[i].fetched,
+                m = (e) => e[c].fetched,
                 h = "rweb/recentSearches/INIT_FROM_CACHE",
                 u = (e) => ({ type: h, payload: e }),
                 f = "rweb/recentSearches/REMOVE_QUERY",
@@ -247,9 +247,9 @@
                     (e) =>
                     (t, o, { userPersistence: r }) => {
                         t({ payload: e, type: f });
-                        const i = o(),
-                            c = d(i);
-                        return (0, n.Qb)(i) ? t(a(c)) : Promise.resolve();
+                        const c = o(),
+                            i = d(c);
+                        return (0, n.Qb)(c) ? t(a(i)) : Promise.resolve();
                     },
                 b = "rweb/recentSearches/CLEAR_ALL",
                 g =
@@ -257,17 +257,17 @@
                     (e, t, { userPersistence: o }) => {
                         e({ type: b });
                         const r = t(),
-                            i = d(r);
-                        return (0, n.Qb)(r) ? e(a(i)) : Promise.resolve();
+                            c = d(r);
+                        return (0, n.Qb)(r) ? e(a(c)) : Promise.resolve();
                     },
                 v = "rweb/recentSearches/ADD_QUERY",
                 w =
                     (e) =>
                     (t, o, { userPersistence: r }) => {
                         t({ payload: e, type: v });
-                        const i = o(),
-                            c = d(i);
-                        return (0, n.Qb)(i) ? t(a(c)) : Promise.resolve();
+                        const c = o(),
+                            i = d(c);
+                        return (0, n.Qb)(c) ? t(a(i)) : Promise.resolve();
                     },
                 I =
                     () =>
@@ -279,7 +279,7 @@
                                   const r = t();
                                   return (0, n.Qb)(r)
                                       ? o
-                                            .get(c)
+                                            .get(i)
                                             .then((t) => {
                                                 e(u(t));
                                             })
@@ -290,7 +290,7 @@
                               });
                     };
             r.Z.register({
-                [i]: function (e = l, t) {
+                [c]: function (e = l, t) {
                     if (!t) return e;
                     switch (t.type) {
                         case v: {
@@ -321,8 +321,8 @@
             o.d(t, { Z: () => p });
             var r = o(202784),
                 n = o(58399),
-                i = o(731708),
-                c = o(58881),
+                c = o(731708),
+                i = o(58881),
                 a = o(530732),
                 s = o(392237);
             const l = () => {
@@ -333,16 +333,16 @@
                 p = (e) => {
                     const { link: t, onClick: o, text: n } = e,
                         p = l(),
-                        m = c.Z.generate({ backgroundColor: "transparent", color: s.default.theme.colors.text });
-                    return r.createElement(a.Z, { interactiveStyles: m, link: t, onPress: o, style: [d.root, d.border, d.content] }, r.createElement(i.ZP, { numberOfLines: 1, selectable: !1, style: d.text, weight: "medium" }, n), p);
+                        m = i.Z.generate({ backgroundColor: "transparent", color: s.default.theme.colors.text });
+                    return r.createElement(a.Z, { interactiveStyles: m, link: t, onPress: o, style: [d.root, d.border, d.content] }, r.createElement(c.ZP, { numberOfLines: 1, selectable: !1, style: d.text, weight: "medium" }, n), p);
                 };
         },
         973014: (e, t, o) => {
             o.d(t, { Z: () => g });
             var r = o(202784),
                 n = o(325686),
-                i = o(674132),
-                c = o.n(i),
+                c = o(674132),
+                i = o.n(c),
                 a = o(837020),
                 s = o(379327),
                 l = o(913973),
@@ -351,7 +351,7 @@
                 m = o(530732),
                 h = o(392237),
                 u = o(599190);
-            const f = { active: c().e557ad8e, expand: c().e3a58c28, remove: c().h517e8d8 };
+            const f = { active: i().e557ad8e, expand: i().e3a58c28, remove: i().h517e8d8 };
             class y extends r.PureComponent {
                 constructor(...e) {
                     super(...e),
@@ -361,23 +361,23 @@
                         });
                 }
                 render() {
-                    const { "aria-label": e, avatar: t, compact: o, disabled: i, link: c, mode: a, onClick: s, secondaryAction: l, selected: u, style: y, testID: g, text: v } = this.props,
+                    const { "aria-label": e, avatar: t, compact: o, disabled: c, link: i, mode: a, onClick: s, secondaryAction: l, selected: u, style: y, testID: g, text: v } = this.props,
                         w = this._renderIcon(!0, a),
                         I = l && this._renderIcon(!1, l.mode),
-                        S = [b.root, o && b.compact, i && b.disabled, u && b.selected, y],
+                        S = [b.root, o && b.compact, c && b.disabled, u && b.selected, y],
                         k = [b.content, !!w && b.withIcon, !!t && ((o && b.withAvatarImageCompact) || b.withAvatarImage)],
                         C = p.Z.generate({ backgroundColor: u ? h.default.theme.colors.primary : "transparent", color: u ? h.default.theme.colors.white : h.default.theme.colors.primary });
-                    return r.createElement(n.Z, { style: S, testID: g }, r.createElement(m.Z, { "aria-label": e || (a ? f[a] : ""), disabled: i, interactiveStyles: C, link: c, onPress: s, style: k }, this._renderAvatar(), r.createElement(d.ZP, { color: u ? "whiteOnColor" : "text", numberOfLines: 1, selectable: !1, style: b.text, weight: "bold" }, v), w), l ? r.createElement(m.Z, { "aria-label": l["aria-label"] || (l.mode ? f[l.mode] : ""), disabled: i || l.disabled, hoverLabel: { label: l.hoverLabel || (l.mode ? f[l.mode] : "") }, interactiveStyles: C, onPress: this._handleSecondaryClick, style: b.secondaryControl }, r.createElement(n.Z, { style: b.secondaryBorder }, I)) : null);
+                    return r.createElement(n.Z, { style: S, testID: g }, r.createElement(m.Z, { "aria-label": e || (a ? f[a] : ""), disabled: c, interactiveStyles: C, link: i, onPress: s, style: k }, this._renderAvatar(), r.createElement(d.ZP, { color: u ? "whiteOnColor" : "text", numberOfLines: 1, selectable: !1, style: b.text, weight: "bold" }, v), w), l ? r.createElement(m.Z, { "aria-label": l["aria-label"] || (l.mode ? f[l.mode] : ""), disabled: c || l.disabled, hoverLabel: { label: l.hoverLabel || (l.mode ? f[l.mode] : "") }, interactiveStyles: C, onPress: this._handleSecondaryClick, style: b.secondaryControl }, r.createElement(n.Z, { style: b.secondaryBorder }, I)) : null);
                 }
                 _renderIcon(e = !0, t) {
                     const { selected: o } = this.props,
                         n = [b.icon, o && b.iconSelected],
-                        i = [b.icon];
+                        c = [b.icon];
                     switch (t) {
                         case u.D.Remove:
                             return r.createElement(a.default, { style: [b.dismissIcon, e && n] });
                         case u.D.Expand:
-                            return r.createElement(s.default, { style: e ? n : i });
+                            return r.createElement(s.default, { style: e ? n : c });
                         case u.D.Active:
                             return r.createElement(l.default, { style: n });
                         default:
@@ -401,28 +401,28 @@
             o.r(t), o.d(t, { default: () => s });
             var r = o(202784),
                 n = o(890601),
-                i = o(783427),
-                c = o(347101);
+                c = o(783427),
+                i = o(347101);
             const a = (e = {}) => {
-                const { direction: t } = (0, i.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [c.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M14 6c0 2.21-1.791 4-4 4S6 8.21 6 6s1.791-4 4-4 4 1.79 4 4zm-4 5c-2.352 0-4.373.85-5.863 2.44-1.477 1.58-2.366 3.8-2.632 6.46l-.11 1.1h17.21l-.11-1.1c-.266-2.66-1.155-4.88-2.632-6.46C14.373 11.85 12.352 11 10 11zm12.223-5.89l-2.969 4.46L17.3 8.1l-1.2 1.6 3.646 2.73 4.141-6.21-1.664-1.11z" })) }, { writingDirection: t });
+                const { direction: t } = (0, c.Z)();
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M14 6c0 2.21-1.791 4-4 4S6 8.21 6 6s1.791-4 4-4 4 1.79 4 4zm-4 5c-2.352 0-4.373.85-5.863 2.44-1.477 1.58-2.366 3.8-2.632 6.46l-.11 1.1h17.21l-.11-1.1c-.266-2.66-1.155-4.88-2.632-6.46C14.373 11.85 12.352 11 10 11zm12.223-5.89l-2.969 4.46L17.3 8.1l-1.2 1.6 3.646 2.73 4.141-6.21-1.664-1.11z" })) }, { writingDirection: t });
             };
             a.metadata = { width: 24, height: 24 };
             const s = a;
         },
-        379327: (e, t, o) => {
+        452693: (e, t, o) => {
             o.r(t), o.d(t, { default: () => s });
             var r = o(202784),
                 n = o(890601),
-                i = o(783427),
-                c = o(347101);
+                c = o(783427),
+                i = o(347101);
             const a = (e = {}) => {
-                const { direction: t } = (0, i.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [c.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M11 11V4h2v7h7v2h-7v7h-2v-7H4v-2h7z" })) }, { writingDirection: t });
+                const { direction: t } = (0, c.Z)();
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M12 1.75c-5.11 0-9.25 4.14-9.25 9.25 0 4.77 3.61 8.7 8.25 9.2v2.96l1.15-.17c1.88-.29 4.11-1.56 5.87-3.5 1.79-1.96 3.17-4.69 3.23-7.97.09-5.54-4.14-9.77-9.25-9.77zM13 14H9v-2h4v2zm2-4H9V8h6v2z" })) }, { writingDirection: t });
             };
             a.metadata = { width: 24, height: 24 };
             const s = a;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.topicHandler.3fc404aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.topicHandler.1a66e0aa.js.map

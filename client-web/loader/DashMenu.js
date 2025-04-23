@@ -46,7 +46,7 @@
                 w = s.default.create((e) => ({ dashMenuItem: { alignItems: "center", flexDirection: "row" }, icon: { color: e.colors.text, flexShrink: 0, marginEnd: e.spaces.space12 }, iconWithDashRedesign: { alignSelf: "center", marginEnd: e.spaces.space24, height: e.spaces.space24, width: e.spaces.space24 }, item: { paddingVertical: e.spaces.space16, paddingHorizontal: e.spaces.space16, flexDirection: "row", flexGrow: 1, alignItems: "center" }, itemAccessory: { flexShrink: 1, marginStart: e.spaces.space20, minWidth: e.spaces.space24, alignItems: "center" }, itemLabel: { flexGrow: 1 }, leftMargin: { marginStart: e.spaces.space16 }, link: { flexGrow: 1, maxWidth: "100%" } }));
         },
         120735: (e, r, n) => {
-            n.d(r, { Z: () => v });
+            n.d(r, { Z: () => y });
             var t = n(202784),
                 a = n(325686),
                 o = n(661810),
@@ -89,14 +89,14 @@
                         t.createElement(
                             t.Fragment,
                             null,
-                            t.createElement(a.Z, { style: y.redesignDivider }, t.createElement(o.Z, { space: "space12", style: y.divider })),
-                            w.map((e, r) => t.createElement(l.Z, { key: r, link: e.link, onClick: e.onClick, style: y.countrySpecificItem }, t.createElement(i.ZP, { weight: "bold" }, e.label))),
+                            t.createElement(a.Z, { style: v.redesignDivider }, t.createElement(o.Z, { space: "space12", style: v.divider })),
+                            w.map((e, r) => t.createElement(l.Z, { key: r, link: e.link, onClick: e.onClick, style: v.countrySpecificItem }, t.createElement(i.ZP, { weight: "bold" }, e.label))),
                         )),
                     );
                     var w;
                 },
-                v = (0, c.ZP)(D(t.memo(A))),
-                y = s.default.create((e) => ({ redesignDivider: { width: "89%", alignSelf: "center" }, countrySpecificItem: { flexGrow: 1, padding: e.spaces.space16, flexDirection: "row", justifyContent: "space-between" }, divider: { width: "89%", margin: "auto" } }));
+                y = (0, c.ZP)(D(t.memo(A))),
+                v = s.default.create((e) => ({ redesignDivider: { width: "89%", alignSelf: "center" }, countrySpecificItem: { flexGrow: 1, padding: e.spaces.space16, flexDirection: "row", justifyContent: "space-between" }, divider: { width: "89%", margin: "auto" } }));
         },
         569591: (e, r, n) => {
             n.r(r), n.d(r, { DashMenu: () => K, default: () => Y });
@@ -119,18 +119,18 @@
                 g = n(149170),
                 S = n(380155),
                 A = n(725516),
-                v = n(125363),
-                y = n(390387),
-                M = n(919022),
+                y = n(125363),
+                v = n(390387),
+                E = n(919022),
                 k = n(110512),
-                E = n(105131),
-                C = n(206962),
+                C = n(105131),
+                M = n(206962),
                 _ = n(71620),
                 Z = n(668214),
                 P = n(454319),
                 I = n(956817);
             const x = (0, Z.Z)()
-                    .propsFromState(() => ({ multiAccountUsers: P.$4, showMultiAccountOverflowPip: P.Zt, delegateUser: y.sy }))
+                    .propsFromState(() => ({ multiAccountUsers: P.$4, showMultiAccountOverflowPip: P.Zt, delegateUser: v.sy }))
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, _.zr)("DASH_MENU_ACCOUNT_SWITCH"), switchAccount: I.y })),
                 B = d().da4691aa,
                 U = d().c7e55ccf,
@@ -139,12 +139,12 @@
                 N = { page: "dash" },
                 L = ({ createLocalApiErrorHandler: e, delegateUser: r, multiAccountUsers: n, onClose: o, showMultiAccountOverflowPip: l, switchAccount: i }) => {
                     const s = (0, A.z)(),
-                        d = (0, v.v9)(M.ZP.selectLoggedInUser),
+                        d = (0, y.v9)(E.ZP.selectLoggedInUser),
                         c = (0, k.V7)(),
-                        u = (0, v.I0)(),
+                        u = (0, y.I0)(),
                         m = r || c.length || n.length > 0,
                         p = (e) => (e ? t.createElement(h.Z, { count: e, truncatedCountFormatter: T, unreadCountLabel: F }) : null),
-                        E = t.useCallback(
+                        C = t.useCallback(
                             (r, n, t) => () => {
                                 s.scribe({ ...N, section: t ? "switch_to_protected_account" : "switch_account", element: n ? "account_bubble_badged" : "account_bubble", action: "click" }), i({ user_id: r }).catch(e(S.y));
                             },
@@ -163,24 +163,24 @@
                                 return [n, ...e.slice(0, 2)]
                                     .filter(({ userId: e }) => e !== (r?.userId ?? n.userId))
                                     .slice(0, 2)
-                                    .map((e) => t.createElement(b.Z, { "aria-label": U({ screenname: e.screenName }), key: e.userId, onPress: () => (e.userId === d.id_str ? u((0, y.YJ)()) : u((0, y.vU)({ userId: e.userId }))), role: "button", style: W.link }, t.createElement(w.default, { decoration: p(e.badgeCount), size: "large", uri: e.avatarImageUrl })));
+                                    .map((e) => t.createElement(b.Z, { "aria-label": U({ screenname: e.screenName }), key: e.userId, onPress: () => (e.userId === d.id_str ? u((0, v.YJ)()) : u((0, v.vU)({ userId: e.userId }))), role: "button", style: W.link }, t.createElement(w.default, { decoration: p(e.badgeCount), size: "large", uri: e.avatarImageUrl })));
                             }
-                            return n.map((e) => t.createElement(b.Z, { "aria-label": U({ screenname: e.screen_name }), key: e.user_id, onPress: E(e.user_id, !!e.badgeCount, e.is_protected), role: "button", style: W.link }, t.createElement(w.default, { decoration: p(e.badgeCount), size: "large", uri: e.avatar_image_url })));
+                            return n.map((e) => t.createElement(b.Z, { "aria-label": U({ screenname: e.screen_name }), key: e.user_id, onPress: C(e.user_id, !!e.badgeCount, e.is_protected), role: "button", style: W.link }, t.createElement(w.default, { decoration: p(e.badgeCount), size: "large", uri: e.avatar_image_url })));
                         })(),
                         (() => {
-                            const e = m ? t.createElement(g.default, { testID: C.Z.iconMore }) : t.createElement(D.default, { testID: C.Z.iconPlus });
-                            return t.createElement(a.Z, null, t.createElement(f.ZP, { "aria-label": B, icon: e, link: "/account/switch", onPress: _, size: "small", testID: C.Z.switcher, type: "primaryOutlined" }), l ? t.createElement(h.Z, { pip: !0, truncatedCountFormatter: T, unreadCountLabel: F }) : null);
+                            const e = m ? t.createElement(g.default, { testID: M.Z.iconMore }) : t.createElement(D.default, { testID: M.Z.iconPlus });
+                            return t.createElement(a.Z, null, t.createElement(f.ZP, { "aria-label": B, icon: e, link: "/account/switch", onPress: _, size: "small", testID: M.Z.switcher, type: "primaryOutlined" }), l ? t.createElement(h.Z, { pip: !0, truncatedCountFormatter: T, unreadCountLabel: F }) : null);
                         })(),
                     );
                 },
                 W = i.default.create((e) => ({ root: { alignSelf: "flex-start", flexDirection: "row" }, link: { borderRadius: e.borderRadii.infinite, marginEnd: e.spaces.space4 } })),
-                V = (0, E.P3)(x(t.memo(L)));
-            var z = n(659773);
-            const O = (0, Z.Z)()
-                .propsFromState(() => ({ viewerUser: M.ZP.selectViewerUser }))
-                .propsFromActions(() => ({ fetchDataUsageSettingsIfNeeded: z.MJ }))
+                V = (0, C.P3)(x(t.memo(L)));
+            var O = n(659773);
+            const H = (0, Z.Z)()
+                .propsFromState(() => ({ viewerUser: E.ZP.selectViewerUser }))
+                .propsFromActions(() => ({ fetchDataUsageSettingsIfNeeded: O.MJ }))
                 .withAnalytics({ page: "dash" });
-            var H = n(120735);
+            var z = n(120735);
             const G = d().i5f7b6b8,
                 $ = (e) => ({ avatar: !0, badges: !0, description: !1, followButton: !1, followIndicator: !1, followersYouKnow: !1, fullName: !0, label: !1, stats: !0, subscriptionsCount: e }),
                 R = t.createElement(p.B, null, t.createElement(V, null)),
@@ -198,12 +198,12 @@
                     var f;
                     const D = (e) => {
                         if (!p) return null;
-                        const { creator_subscriptions_count: r, followers_count: n, friends_count: l, highlightedLabel: i, is_blue_verified: c, name: u, profile_image_url_https: f, protected: D, screen_name: g, translator_type: S, verified: A, verified_type: v } = p;
-                        return (0, m.ZP)() ? t.createElement(a.Z, { style: j.dropdownMinWidth }, d ? d() : t.createElement(H.Z, { onClose: s, withMoreSideNavOverflow: h })) : t.createElement(a.Z, { style: [e && j.scrollableContentPadding, (0, m.ZP)() && j.menuContentWidth] }, t.createElement(a.Z, { "aria-label": G, style: j.header }, t.createElement(o.Z, { decoration: R, isAllowedToViewOptions: $(b), isLoggedIn: !0, isUserBlueVerified: c, isUserProtected: D, isUserStatsWithLink: !0, isUserVerified: A, onAvatarClick: w, onScreenNameClick: w, subscriptionsCount: r, userAvatarSize: "xLarge", userAvatarUri: f, userFollowersCount: n, userFriendsCount: l, userHighlightedLabel: i, userName: u, userScreenName: g, userTranslatorType: S, userVerifiedType: v, withNameWrap: !0 })), d ? d() : t.createElement(H.Z, { onClose: s }));
+                        const { creator_subscriptions_count: r, followers_count: n, friends_count: l, highlightedLabel: i, is_blue_verified: c, name: u, profile_image_url_https: f, protected: D, screen_name: g, translator_type: S, verified: A, verified_type: y } = p;
+                        return (0, m.ZP)() ? t.createElement(a.Z, { style: j.dropdownMinWidth }, d ? d() : t.createElement(z.Z, { onClose: s, withMoreSideNavOverflow: h })) : t.createElement(a.Z, { style: [e && j.scrollableContentPadding, (0, m.ZP)() && j.menuContentWidth] }, t.createElement(a.Z, { "aria-label": G, style: j.header }, t.createElement(o.Z, { decoration: R, isAllowedToViewOptions: $(b), isLoggedIn: !0, isUserBlueVerified: c, isUserProtected: D, isUserStatsWithLink: !0, isUserVerified: A, onAvatarClick: w, onScreenNameClick: w, subscriptionsCount: r, userAvatarSize: "xLarge", userAvatarUri: f, userFollowersCount: n, userFriendsCount: l, userHighlightedLabel: i, userName: u, userScreenName: g, userTranslatorType: S, userVerifiedType: y, withNameWrap: !0 })), d ? d() : t.createElement(z.Z, { onClose: s }));
                     };
                     return (0, m.ZP)() ? t.createElement(u.Z, { animateInDuration: "long", isFixed: !0, onDismiss: s, preferredHorizontalOrientation: "right", preferredVerticalOrientation: "up" }, D(!1)) : t.createElement(l.Z, { align: r, onDismissed: s, style: j.drawer, withTopBar: !1 }, D(!0));
                 },
-                Y = O(K),
+                Y = H(K),
                 j = i.default.create((e) => ({ backgroundArea: { backgroundColor: e.colors.activeBlack }, drawer: { maxWidth: "70%" }, dropdownMinWidth: { minWidth: "318px" }, wrapper: { alignSelf: "flex-start", backgroundColor: e.colors.navigationBackground, boxShadow: e.boxShadows.medium, overflowY: "auto", overscrollBehavior: "contain", WebkitOverflowScrolling: "touch" }, scrollableItems: { overflow: "auto", overscrollBehavior: "contain", WebkitOverflowScrolling: "touch", flexGrow: 1, flexShrink: 1 }, scrollableContentPadding: { paddingBottom: "44px" }, header: { flexGrow: 0, flexShrink: 0 }, avatarWrapper: { flexGrow: 1 }, userNames: { display: "flex", flexDirection: "column", paddingVertical: e.spaces.space12 }, menuContentWidth: { width: `calc(${e.spaces.space64} * 4.25)` } }));
         },
         839090: (e, r, n) => {
@@ -212,22 +212,26 @@
             const t = (0, n(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        n.e("icons.8"),
-                        n.e("icons.13"),
+                        n.e("icons.5"),
+                        n.e("icons.6"),
+                        n.e("icons.22"),
+                        n.e("icons.25"),
+                        n.e("icons.9"),
+                        n.e("icons.4"),
+                        n.e("icons.15"),
                         n.e("icons.20"),
-                        n.e("icons.14"),
-                        n.e("icons.1"),
-                        n.e("icons.3"),
-                        n.e("icons.24"),
-                        n.e("icons.11"),
+                        n.e("icons.7"),
+                        n.e("icons.0"),
                         n.e("modules.common-e907d115"),
                         n.e("modules.common-e019dbda"),
-                        n.e("icons.28"),
-                        n.e("icons.10"),
+                        n.e("icons.11"),
+                        n.e("icons.27"),
                         n.e("icons.17"),
-                        n.e("icons.4"),
                         n.e("icons.12"),
-                        n.e("icons.22"),
+                        n.e("icons.3"),
+                        n.e("icons.13"),
+                        n.e("icons.24"),
+                        n.e("icons.26"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -235,7 +239,6 @@
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-64ffe41f"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-5517db7c"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-58d4ab8e"),
@@ -260,7 +263,7 @@
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                         n.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
                         n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-7af5e2f7"),
+                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2f4a3d25"),
                         n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                         n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                         n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -299,8 +302,8 @@
                         n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-af3d50e9"),
                         n.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Articles~bundle.AudioSpacePeek~bundle.Birdwatch~bundle.Brande"),
                         n.e("shared~loader.Typeahead~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSpacePeek~bundle.Bir"),
-                        n.e("shared~bundle.JobSearch~bundle.UserJobs~loader.WideLayout"),
-                        n.e("loader.WideLayout"),
+                        n.e("loader.WideLayout-6107ac1a"),
+                        n.e("loader.WideLayout-9f4db315"),
                     ]).then(n.bind(n, 616753)),
             });
         },
@@ -315,7 +318,7 @@
             const i = o.default.create((e) => ({ divider: { backgroundColor: e.colors.borderColor, height: e.borderWidths.small } }));
         },
         525271: (e, r, n) => {
-            n.d(r, { Z: () => v });
+            n.d(r, { Z: () => y });
             var t = n(202784),
                 a = n(325686),
                 o = n(674132),
@@ -364,14 +367,14 @@
                 }
                 render() {
                     const { additionalControl: e, align: r, buttonType: n, children: o, style: l, subtitle: i, title: c, topBarStyle: w, withBackgroundBlur: f, withTopBar: D, withTransparentMask: g } = this.props,
-                        { isVisible: v } = this.state;
+                        { isVisible: y } = this.state;
                     return t.createElement(b.ZP.Consumer, null, ({ direction: b }) => {
-                        const y = "rtl" === b,
-                            M = v ? A.visibleDrawer : ("left" === r) === y ? A.offscreenRightDrawer : A.offscreenLeftDrawer,
-                            k = v && !g ? A.maskWithBg : A.maskTransparent,
-                            E = v ? A.animateOpen : A.animateClose,
-                            C = s.Z.reducedMotionEnabled ? null : E;
-                        return t.createElement(h.Z.Modal, null, t.createElement(p.Z, null, t.createElement(m.Z, null, t.createElement(a.Z, { onClick: this._handleMaskClick, onKeyUp: this._handleEsc, style: [A.mask, k, C, f ? A.backgroundBlur : null, "left" === r ? A.alignLeft : A.alignRight] }, (0, u.Z)("div", { role: "dialog", onTransitionEnd: this._handleTransitionEnd, ref: this._setAnimationNode, onClick: S, style: [A.root, f ? A.backgroundRootBlur : null, M, C, l], children: t.createElement(t.Fragment, null, D ? t.createElement(d.Z, { leftControl: "left" === r ? e : "right" === r ? this._renderCloseButton(n) : null, rightControl: "left" === r ? this._renderCloseButton(n) : "right" === r ? e : null, style: w, subtitle: i, title: c }) : null, t.createElement(a.Z, { style: A.contentContainer }, o)) })))));
+                        const v = "rtl" === b,
+                            E = y ? A.visibleDrawer : ("left" === r) === v ? A.offscreenRightDrawer : A.offscreenLeftDrawer,
+                            k = y && !g ? A.maskWithBg : A.maskTransparent,
+                            C = y ? A.animateOpen : A.animateClose,
+                            M = s.Z.reducedMotionEnabled ? null : C;
+                        return t.createElement(h.Z.Modal, null, t.createElement(p.Z, null, t.createElement(m.Z, null, t.createElement(a.Z, { onClick: this._handleMaskClick, onKeyUp: this._handleEsc, style: [A.mask, k, M, f ? A.backgroundBlur : null, "left" === r ? A.alignLeft : A.alignRight] }, (0, u.Z)("div", { role: "dialog", onTransitionEnd: this._handleTransitionEnd, ref: this._setAnimationNode, onClick: S, style: [A.root, f ? A.backgroundRootBlur : null, E, M, l], children: t.createElement(t.Fragment, null, D ? t.createElement(d.Z, { leftControl: "left" === r ? e : "right" === r ? this._renderCloseButton(n) : null, rightControl: "left" === r ? this._renderCloseButton(n) : "right" === r ? e : null, style: w, subtitle: i, title: c }) : null, t.createElement(a.Z, { style: A.contentContainer }, o)) })))));
                     });
                 }
                 _renderCloseButton(e) {
@@ -383,7 +386,7 @@
                     e.stopPropagation();
                 },
                 A = w.default.create((e) => ({ backgroundBlur: { backdropFilter: "blur(2px)" }, backgroundRootBlur: { boxShadow: "light" === e.paletteName ? e.boxShadows.small : "0 0 5px rgba(80,80,80,0.2), 0 1px 4px 1px rgba(80,80,80,0.25)" }, mask: { ...w.default.absoluteFillObject, position: "fixed", transitionProperty: "background-color", transitionTimingFunction: "ease" }, maskWithBg: { backgroundColor: e.colors.maskColor }, maskTransparent: { backgroundColor: e.colors.transparent }, root: { display: "flex", flexDirection: "column", backgroundColor: e.colors.navigationBackground, boxShadow: e.boxShadows.small, minWidth: 280, maxWidth: "100%", flexGrow: 1, flexShrink: 1, minHeight: 0, height: "100vh", transitionProperty: "transform", transitionTimingFunction: "ease" }, visibleDrawer: { transform: [{ translateX: "0%" }] }, offscreenLeftDrawer: { transform: [{ translateX: "-100%" }] }, offscreenRightDrawer: { transform: [{ translateX: "100%" }] }, alignLeft: { alignItems: "flex-start" }, alignRight: { alignItems: "flex-end" }, animateOpen: { transitionDuration: "250ms" }, animateClose: { transitionDuration: "200ms" }, contentContainer: { flexGrow: 1, flexShrink: 1, minHeight: 0, overflowY: "auto", overscrollBehavior: "contain" } })),
-                v = g;
+                y = g;
         },
         529509: (e, r, n) => {
             n.d(r, { Z: () => b });
@@ -676,7 +679,7 @@
             i.metadata = { width: 24, height: 24 };
             const s = i;
         },
-        279849: (e, r, n) => {
+        487552: (e, r, n) => {
             n.r(r), n.d(r, { default: () => s });
             var t = n(202784),
                 a = n(890601),
@@ -684,7 +687,7 @@
                 l = n(347101);
             const i = (e = {}) => {
                 const { direction: r } = (0, o.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: t.createElement("g", null, t.createElement("path", { d: "M18.037 13.084c-.918 1.685-2.719 3.479-5.694 5.212l-.342.204-.343-.204c-2.976-1.733-4.777-3.527-5.696-5.212-.924-1.699-.958-3.303-.349-4.533.603-1.216 1.799-1.978 3.127-2.046 1.122-.061 2.289.381 3.261 1.366.971-.985 2.138-1.427 3.259-1.366 1.328.068 2.524.829 3.127 2.046.609 1.23.575 2.834-.349 4.533zM19.42 3.16l1.42 1.42-1.77 1.76-1.41-1.41 1.76-1.77zM13 .5h-2V3h2V.5zM.5 13H3v-2H.5v2zm2.66 6.42l1.42 1.42 1.76-1.77-1.41-1.41-1.77 1.76zM21 11v2h2.5v-2H21zM11 23.5h2V21h-2v2.5zm6.66-4.43l1.76 1.77 1.42-1.42-1.77-1.76-1.41 1.41zM6.34 4.93L4.58 3.16 3.16 4.58l1.77 1.76 1.41-1.41z" })) }, { writingDirection: r });
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: t.createElement("g", null, t.createElement("path", { d: "M3.543 8.96l1.414-1.42L12 14.59l7.043-7.05 1.414 1.42L12 17.41 3.543 8.96z" })) }, { writingDirection: r });
             };
             i.metadata = { width: 24, height: 24 };
             const s = i;
@@ -715,4 +718,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.DashMenu.f7b45aca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.DashMenu.c4ead66a.js.map
