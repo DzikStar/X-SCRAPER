@@ -326,7 +326,7 @@
         },
         451275: (e, d, a) => {
             "use strict";
-            a.r(d), a.d(d, { NOTIFICATIONS_CONTEXT: () => A, NOTIFICATIONS_PERFKEY: () => w, default: () => B, fetchAllGraphqlNotificationsTimeline: () => _, fetchAllNotificationsTimeline: () => g, notificationsModule: () => M, updateLastSeenCursor: () => f });
+            a.r(d), a.d(d, { NOTIFICATIONS_CONTEXT: () => A, NOTIFICATIONS_PERFKEY: () => w, default: () => _, fetchAllNotificationsTimeline: () => g, notificationsModule: () => M, updateLastSeenCursor: () => f });
             var n = a(516951),
                 o = a(414742),
                 r = a(715551),
@@ -358,25 +358,9 @@
                     [S.l.Verified, "Verified"],
                     [S.l.Subscribers, "SuperFollowers"],
                 ]),
-                M = (e = S.l.All, d = void 0, a = !1) => {
-                    if (!a)
-                        return (0, D.Z)({
-                            timelineId: `notifications-${e}-${d ?? ""}`,
-                            network: {
-                                getEndpoint: (e) => e.withEndpoint(u.Z).fetchNotifications,
-                                getEndpointParams: (d) => {
-                                    const { polling: a, ...n } = d;
-                                    return { type: e, ...n };
-                                },
-                            },
-                            context: "FETCH_NOTIFICATIONS_TIMELINE",
-                            perfKey: "notifications",
-                            postFetchAction: m.Z,
-                            staleIntervalMs: 5e3,
-                            actAsUserId: d,
-                        });
-                    const n = y.get(e) || "All";
-                    return (0, D.Z)({ timelineId: `notifications-${e}-${d ?? ""}`, network: { getEndpoint: (e) => e.withEndpoint(s).fetchNotifications, getEndpointParams: ({ count: e, cursor: a, polling: o }) => ({ count: e, cursor: "string" == typeof a ? a : void 0, timelineType: n, userId: d }) }, formatResponse: c.Z, postFetchAction: m.Z, context: "FETCH_NOTIFICATIONS_TIMELINE", perfKey: "notifications", staleIntervalMs: 5e3, actAsUserId: d });
+                M = (e = S.l.All, d = void 0) => {
+                    const a = y.get(e) || "All";
+                    return (0, D.Z)({ timelineId: `notifications-${e}-${d ?? ""}`, network: { getEndpoint: (e) => e.withEndpoint(s).fetchNotifications, getEndpointParams: ({ count: e, cursor: n, polling: o }) => ({ count: e, cursor: "string" == typeof n ? n : void 0, timelineType: a, userId: d }) }, formatResponse: c.Z, postFetchAction: m.Z, context: "FETCH_NOTIFICATIONS_TIMELINE", perfKey: "notifications", staleIntervalMs: 5e3, actAsUserId: d });
                 },
                 f =
                     (e = S.l.All, d = void 0) =>
@@ -390,35 +374,28 @@
                         }
                     },
                 g = M(S.l.All).fetchInitialOrTop,
-                _ = M(S.l.All, void 0, !0).fetchInitialOrTop,
-                B = M(S.l.All);
+                _ = M(S.l.All);
         },
         853292: (e, d, a) => {
             "use strict";
-            a.r(d), a.d(d, { default: () => i });
+            a.r(d), a.d(d, { default: () => l });
             var n = a(202784),
-                o = a(443781),
-                r = a(525202),
-                l = a(934712);
-            const i = (e) => {
-                const { featureSwitches: d } = n.useContext(o.rC),
-                    a = d.isTrue("rweb_graphql_notifications_tab_enabled"),
-                    i = n.useMemo(() => (0, l.p)(r.l.All, a), [a]);
-                return n.createElement(i, e);
+                o = a(525202),
+                r = a(934712);
+            const l = (e) => {
+                const d = n.useMemo(() => (0, r.p)(o.l.All), []);
+                return n.createElement(d, e);
             };
         },
         400115: (e, d, a) => {
             "use strict";
-            a.r(d), a.d(d, { default: () => i });
+            a.r(d), a.d(d, { default: () => l });
             var n = a(202784),
-                o = a(443781),
-                r = a(525202),
-                l = a(934712);
-            const i = (e) => {
-                const { featureSwitches: d } = n.useContext(o.rC),
-                    a = d.isTrue("rweb_graphql_notifications_tab_enabled"),
-                    i = n.useMemo(() => (0, l.p)(r.l.Mentions, a), [a]);
-                return n.createElement(i, e);
+                o = a(525202),
+                r = a(934712);
+            const l = (e) => {
+                const d = n.useMemo(() => (0, r.p)(o.l.Mentions), []);
+                return n.createElement(d, e);
             };
         },
         80550: (e, d, a) => {
@@ -456,24 +433,27 @@
                 I = i().a98ba778,
                 T = n.createElement(t.Z, { pullRight: !0, to: "/settings/notifications" }),
                 E = i().eb75875e,
-                R = (0, S.Z)(
+                Z = (0, S.Z)(
                     (0, w.p)(
                         () =>
                             Promise.all([
-                                a.e("icons.5"),
-                                a.e("icons.12"),
-                                a.e("icons.20"),
-                                a.e("icons.0"),
+                                a.e("icons.10"),
                                 a.e("icons.21"),
-                                a.e("icons.28"),
-                                a.e("icons.17"),
+                                a.e("icons.16"),
+                                a.e("icons.1"),
+                                a.e("icons.19"),
+                                a.e("icons.0"),
+                                a.e("icons.8"),
+                                a.e("icons.23"),
+                                a.e("icons.2"),
                                 a.e("modules.common-e907d115"),
                                 a.e("modules.common-e019dbda"),
-                                a.e("icons.22"),
                                 a.e("icons.9"),
-                                a.e("icons.25"),
-                                a.e("icons.6"),
-                                a.e("icons.10"),
+                                a.e("icons.7"),
+                                a.e("icons.24"),
+                                a.e("icons.15"),
+                                a.e("icons.3"),
+                                a.e("icons.28"),
                                 a.e("modules.audio-6107ac1a"),
                                 a.e("modules.audio-b953418a"),
                                 a.e("modules.audio-7c51e6a7"),
@@ -484,15 +464,13 @@
                                 a.e("modules.audio-e019dbda"),
                                 a.e("modules.audio-262c94d4"),
                                 a.e("modules.audio-c6fe4ea4"),
-                                a.e("icons.24"),
-                                a.e("icons.23"),
-                                a.e("icons.14"),
-                                a.e("icons.3"),
+                                a.e("icons.26"),
                                 a.e("icons.4"),
                                 a.e("icons.13"),
-                                a.e("icons.1"),
                                 a.e("icons.18"),
-                                a.e("icons.8"),
+                                a.e("icons.25"),
+                                a.e("icons.29"),
+                                a.e("icons.27"),
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -524,7 +502,7 @@
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                                 a.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-34cda585"),
+                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-ee359ff7"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -575,7 +553,6 @@
                                 a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-b93f71f2"),
                                 a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-743779ef"),
                                 a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e851f17f"),
-                                a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-2b309ab6"),
                                 a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-29ff9b73"),
                                 a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d622e6ad"),
                                 a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d425713a"),
@@ -584,24 +561,27 @@
                         { shouldMigrateToX: !1 },
                     ),
                 ),
-                Z = (0, S.Z)(
+                R = (0, S.Z)(
                     (0, w.p)(
                         () =>
                             Promise.all([
-                                a.e("icons.5"),
-                                a.e("icons.12"),
-                                a.e("icons.20"),
-                                a.e("icons.0"),
+                                a.e("icons.10"),
                                 a.e("icons.21"),
-                                a.e("icons.28"),
-                                a.e("icons.17"),
+                                a.e("icons.16"),
+                                a.e("icons.1"),
+                                a.e("icons.19"),
+                                a.e("icons.0"),
+                                a.e("icons.8"),
+                                a.e("icons.23"),
+                                a.e("icons.2"),
                                 a.e("modules.common-e907d115"),
                                 a.e("modules.common-e019dbda"),
-                                a.e("icons.22"),
                                 a.e("icons.9"),
-                                a.e("icons.25"),
-                                a.e("icons.6"),
-                                a.e("icons.10"),
+                                a.e("icons.7"),
+                                a.e("icons.24"),
+                                a.e("icons.15"),
+                                a.e("icons.3"),
+                                a.e("icons.28"),
                                 a.e("modules.audio-6107ac1a"),
                                 a.e("modules.audio-b953418a"),
                                 a.e("modules.audio-7c51e6a7"),
@@ -612,15 +592,13 @@
                                 a.e("modules.audio-e019dbda"),
                                 a.e("modules.audio-262c94d4"),
                                 a.e("modules.audio-c6fe4ea4"),
-                                a.e("icons.24"),
-                                a.e("icons.23"),
-                                a.e("icons.14"),
-                                a.e("icons.3"),
+                                a.e("icons.26"),
                                 a.e("icons.4"),
                                 a.e("icons.13"),
-                                a.e("icons.1"),
                                 a.e("icons.18"),
-                                a.e("icons.8"),
+                                a.e("icons.25"),
+                                a.e("icons.29"),
+                                a.e("icons.27"),
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -652,7 +630,7 @@
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                                 a.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-34cda585"),
+                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-ee359ff7"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -703,7 +681,6 @@
                                 a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-b93f71f2"),
                                 a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-743779ef"),
                                 a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e851f17f"),
-                                a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-2b309ab6"),
                                 a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-29ff9b73"),
                                 a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d622e6ad"),
                                 a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d425713a"),
@@ -716,20 +693,23 @@
                     (0, w.p)(
                         () =>
                             Promise.all([
-                                a.e("icons.5"),
-                                a.e("icons.12"),
-                                a.e("icons.20"),
-                                a.e("icons.0"),
+                                a.e("icons.10"),
                                 a.e("icons.21"),
-                                a.e("icons.28"),
-                                a.e("icons.17"),
+                                a.e("icons.16"),
+                                a.e("icons.1"),
+                                a.e("icons.19"),
+                                a.e("icons.0"),
+                                a.e("icons.8"),
+                                a.e("icons.23"),
+                                a.e("icons.2"),
                                 a.e("modules.common-e907d115"),
                                 a.e("modules.common-e019dbda"),
-                                a.e("icons.22"),
                                 a.e("icons.9"),
-                                a.e("icons.25"),
-                                a.e("icons.6"),
-                                a.e("icons.10"),
+                                a.e("icons.7"),
+                                a.e("icons.24"),
+                                a.e("icons.15"),
+                                a.e("icons.3"),
+                                a.e("icons.28"),
                                 a.e("modules.audio-6107ac1a"),
                                 a.e("modules.audio-b953418a"),
                                 a.e("modules.audio-7c51e6a7"),
@@ -740,15 +720,13 @@
                                 a.e("modules.audio-e019dbda"),
                                 a.e("modules.audio-262c94d4"),
                                 a.e("modules.audio-c6fe4ea4"),
-                                a.e("icons.24"),
-                                a.e("icons.23"),
-                                a.e("icons.14"),
-                                a.e("icons.3"),
+                                a.e("icons.26"),
                                 a.e("icons.4"),
                                 a.e("icons.13"),
-                                a.e("icons.1"),
                                 a.e("icons.18"),
-                                a.e("icons.8"),
+                                a.e("icons.25"),
+                                a.e("icons.29"),
+                                a.e("icons.27"),
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -780,7 +758,7 @@
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                                 a.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-34cda585"),
+                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-ee359ff7"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -831,7 +809,6 @@
                                 a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-b93f71f2"),
                                 a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-743779ef"),
                                 a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e851f17f"),
-                                a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-2b309ab6"),
                                 a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-29ff9b73"),
                                 a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d622e6ad"),
                                 a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d425713a"),
@@ -844,20 +821,23 @@
                     (0, w.p)(
                         () =>
                             Promise.all([
-                                a.e("icons.5"),
-                                a.e("icons.12"),
-                                a.e("icons.20"),
-                                a.e("icons.0"),
+                                a.e("icons.10"),
                                 a.e("icons.21"),
-                                a.e("icons.28"),
-                                a.e("icons.17"),
+                                a.e("icons.16"),
+                                a.e("icons.1"),
+                                a.e("icons.19"),
+                                a.e("icons.0"),
+                                a.e("icons.8"),
+                                a.e("icons.23"),
+                                a.e("icons.2"),
                                 a.e("modules.common-e907d115"),
                                 a.e("modules.common-e019dbda"),
-                                a.e("icons.22"),
                                 a.e("icons.9"),
-                                a.e("icons.25"),
-                                a.e("icons.6"),
-                                a.e("icons.10"),
+                                a.e("icons.7"),
+                                a.e("icons.24"),
+                                a.e("icons.15"),
+                                a.e("icons.3"),
+                                a.e("icons.28"),
                                 a.e("modules.audio-6107ac1a"),
                                 a.e("modules.audio-b953418a"),
                                 a.e("modules.audio-7c51e6a7"),
@@ -868,15 +848,13 @@
                                 a.e("modules.audio-e019dbda"),
                                 a.e("modules.audio-262c94d4"),
                                 a.e("modules.audio-c6fe4ea4"),
-                                a.e("icons.24"),
-                                a.e("icons.23"),
-                                a.e("icons.14"),
-                                a.e("icons.3"),
+                                a.e("icons.26"),
                                 a.e("icons.4"),
                                 a.e("icons.13"),
-                                a.e("icons.1"),
                                 a.e("icons.18"),
-                                a.e("icons.8"),
+                                a.e("icons.25"),
+                                a.e("icons.29"),
+                                a.e("icons.27"),
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -908,7 +886,7 @@
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                                 a.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-34cda585"),
+                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-ee359ff7"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -959,7 +937,6 @@
                                 a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-b93f71f2"),
                                 a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-743779ef"),
                                 a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e851f17f"),
-                                a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-2b309ab6"),
                                 a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-29ff9b73"),
                                 a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d622e6ad"),
                                 a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d425713a"),
@@ -970,8 +947,8 @@
                 ),
                 N = { to: _._N, key: v, label: v, retainScrollPosition: !1 },
                 F = { to: _.JV, key: k, label: k, retainScrollPosition: !1 },
-                H = { to: _.JK, key: P, label: P, retainScrollPosition: !1 },
-                z = { to: _.ag, key: C, label: C, retainScrollPosition: !1 },
+                z = { to: _.JK, key: P, label: P, retainScrollPosition: !1 },
+                H = { to: _.ag, key: C, label: C, retainScrollPosition: !1 },
                 W = () => n.createElement(A.Z, { to: _._N }),
                 O = (e) => {
                     const { featureSwitches: d } = n.useContext(p.rC),
@@ -979,11 +956,11 @@
                         i = d.isTrue("responsive_web_subscribers_ntab_for_creators_enabled"),
                         t = l && i,
                         S = n.useMemo(() => {
-                            const e = [N, H, F];
-                            return t && e.splice(2, 0, z), e;
+                            const e = [N, z, F];
+                            return t && e.splice(2, 0, H), e;
                         }, [t]),
                         A = t ? L : W,
-                        w = n.createElement(o.Switch, null, n.createElement(o.Route, { component: R, exact: !0, path: _._N }), n.createElement(o.Route, { component: Z, exact: !0, path: _.JV }), n.createElement(o.Route, { component: x, exact: !0, path: _.JK }), n.createElement(o.Route, { component: A, exact: !0, path: _.ag }), n.createElement(o.Route, { component: W, exact: !0, path: _.Im })),
+                        w = n.createElement(o.Switch, null, n.createElement(o.Route, { component: Z, exact: !0, path: _._N }), n.createElement(o.Route, { component: R, exact: !0, path: _.JV }), n.createElement(o.Route, { component: x, exact: !0, path: _.JK }), n.createElement(o.Route, { component: A, exact: !0, path: _.ag }), n.createElement(o.Route, { component: W, exact: !0, path: _.Im })),
                         y = n.useMemo(() => n.createElement(b.Z, { alignFirstItem: (0, m.ZP)(), "aria-label": I, links: S }), [S]);
                     return n.createElement(
                         D.Z,
@@ -1100,11 +1077,11 @@
             var I = a(443781),
                 T = a(652904),
                 E = a(810641),
-                R = a(900062);
+                Z = a(900062);
             a(571372);
-            const Z = Object.freeze({ VerificationCheck: "VerificationCheck" }),
+            const R = Object.freeze({ VerificationCheck: "VerificationCheck" }),
                 x = Object.freeze({
-                    [Z.VerificationCheck]: (function (e) {
+                    [R.VerificationCheck]: (function (e) {
                         if (3 !== e.length) throw new Error("url list must be 3 urls for each variant (400x200, 800x400, 1200x600)");
                         const [d, a, n] = e;
                         return [
@@ -1117,17 +1094,17 @@
             var L = a(552378),
                 N = a(525202),
                 F = a(912021),
-                H = a(962741),
-                z = a(668214),
+                z = a(962741),
+                H = a(668214),
                 W = a(806960),
                 O = a(175856),
                 U = a(5849);
-            const V = (0, F.Z)((e, d, a) => d && d.notificationsModule(e, void 0, a));
+            const V = (0, F.Z)((e, d) => d && d.notificationsModule(e, void 0));
             var $ = a(351322),
                 j = a(801184),
                 G = a(335632),
                 q = a(263863);
-            const Q = { ...(0, G.G)({ tweetDismissable: !0, withMuteConversation: !0 }), [H.ZP.Tweet]: $.ov({ selectDisplayType: (e) => e.content.displayType, handlers: { [q.Z.Tweet]: (0, j.Cw)({ withMuteConversation: !0, withUnreadStyles: !0 }), [q.Z.QuotedTweet]: (0, j.$Q)({ isCondensed: !0 }) } }) },
+            const Q = { ...(0, G.G)({ tweetDismissable: !0, withMuteConversation: !0 }), [z.ZP.Tweet]: $.ov({ selectDisplayType: (e) => e.content.displayType, handlers: { [q.Z.Tweet]: (0, j.Cw)({ withMuteConversation: !0, withUnreadStyles: !0 }), [q.Z.QuotedTweet]: (0, j.$Q)({ isCondensed: !0 }) } }) },
                 K = t().eb75875e,
                 X = t().e9f1fbcc,
                 J = t().j887d006,
@@ -1191,69 +1168,60 @@
                 }
             }
             ne.contextType = I.rC;
-            const oe = (e, d) =>
+            const oe = (e) =>
                     (0, L.C)(
-                        ((e, d) => {
-                            const a = (0, F.Z)(V);
-                            return (0, z.Z)()
+                        ((e) => {
+                            const d = (0, F.Z)(V);
+                            return (0, H.Z)()
                                 .propsFromState(() => ({
                                     shouldShowUnmentionEducation: (e) => (0, O.t5)(e, O.QV),
-                                    unreadCount: (n, { history: o, ntabData: r }) => a(e, r, d)?.selectUnreadEntriesCount(n),
-                                    timelineHasTweets: (n, { history: o, ntabData: r }) => {
-                                        const l = a(e, r, d),
-                                            i = l?.selectEntries(n),
-                                            t = i?.some((e) => e.type === H.ZP.Tweet);
-                                        return !!t;
+                                    unreadCount: (a, { history: n, ntabData: o }) => d(e, o)?.selectUnreadEntriesCount(a),
+                                    timelineHasTweets: (a, { history: n, ntabData: o }) => {
+                                        const r = d(e, o),
+                                            l = r?.selectEntries(a),
+                                            i = l?.some((e) => e.type === z.ZP.Tweet);
+                                        return !!i;
                                     },
                                 }))
-                                .propsFromActions(({ history: n, ntabData: o }) => ({
+                                .propsFromActions(({ history: a, ntabData: n }) => ({
                                     setNotificationsPageLoaded: (e) => (d) => {
                                         d((0, W.Wl)(e));
                                     },
                                     addLeaveThisConversationEducationFlag: () => (0, O.pj)(O.QV),
-                                    markAllAsRead: a(e, o, d)?.markAllAsRead,
+                                    markAllAsRead: d(e, n)?.markAllAsRead,
                                     updateLastRead: (e) => (d, a) => {
-                                        const n = o?.updateLastSeenCursor;
-                                        n && d(n(e)), d((0, W.SE)(0));
+                                        const o = n?.updateLastSeenCursor;
+                                        o && d(o(e)), d((0, W.SE)(0));
                                     },
                                     setNotificationsType: U.BZ,
                                 }))
-                                .adjustStateProps(({ shouldShowUnmentionEducation: n, timelineHasTweets: o, unreadCount: r }, { history: l, ntabData: i }) => ({ ntabData: null, notificationsModule: a(e, i, d), notificationsType: e, shouldShowUnmentionEducation: n, timelineHasTweets: o, unreadCount: r }))
+                                .adjustStateProps(({ shouldShowUnmentionEducation: a, timelineHasTweets: n, unreadCount: o }, { history: r, ntabData: l }) => ({ ntabData: null, notificationsModule: d(e, l), notificationsType: e, shouldShowUnmentionEducation: a, timelineHasTweets: n, unreadCount: o }))
                                 .withAnalytics({ page: "ntab", section: e });
-                        })(
-                            e,
-                            d,
-                        )(ne),
-                        { ntabData: R.Z },
+                        })(e)(ne),
+                        { ntabData: Z.Z },
                     ),
-                re = (e, d) => oe(e, d);
+                re = (e) => oe(e);
         },
         100273: (e, d, a) => {
             "use strict";
-            a.r(d), a.d(d, { default: () => i });
+            a.r(d), a.d(d, { default: () => l });
             var n = a(202784),
-                o = a(443781),
-                r = a(525202),
-                l = a(934712);
-            const i = (e) => {
-                const { featureSwitches: d } = n.useContext(o.rC),
-                    a = d.isTrue("rweb_graphql_notifications_tab_enabled"),
-                    i = n.useMemo(() => (0, l.p)(r.l.Subscribers, a), [a]);
-                return n.createElement(i, e);
+                o = a(525202),
+                r = a(934712);
+            const l = (e) => {
+                const d = n.useMemo(() => (0, r.p)(o.l.Subscribers), []);
+                return n.createElement(d, e);
             };
         },
         217999: (e, d, a) => {
             "use strict";
-            a.r(d), a.d(d, { default: () => i });
+            a.r(d), a.d(d, { default: () => l });
             var n = a(202784),
-                o = a(443781),
-                r = a(525202),
-                l = a(934712);
-            const i = (e) => {
-                const { featureSwitches: d } = n.useContext(o.rC),
-                    a = d.isTrue("rweb_graphql_notifications_tab_enabled"),
-                    i = n.useMemo(() => (0, l.p)(r.l.Verified, a), [a]);
-                return n.createElement(i, e);
+                o = a(525202),
+                r = a(934712);
+            const l = (e) => {
+                const d = n.useMemo(() => (0, r.p)(o.l.Verified), []);
+                return n.createElement(d, e);
             };
         },
         392027: (e, d, a) => {
@@ -1429,4 +1397,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Notifications.70a1e65a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Notifications.e3b440fa.js.map

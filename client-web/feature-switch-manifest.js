@@ -1,5 +1,5 @@
 var manifest = {
-    feature_set_token: "2e5303dcbb9fd35339b2fa18553dffb1974ea65d",
+    feature_set_token: "b436ee9ed6b4b63fc316186191651a86dc4e0db4",
     config: {
         "2fa_temporary_password_enabled": { value: !1 },
         Arkose_rweb_hosted_page: { value: !0 },
@@ -708,7 +708,6 @@ var manifest = {
         rweb_conf_only_enabled: { value: !1 },
         rweb_conf_rnnoise_enabled: { value: !0 },
         rweb_enable_logged_out_search_search_bar_enabled: { value: !1 },
-        rweb_graphql_notifications_tab_enabled: { value: !0 },
         rweb_home_compact_timeline_enabled: { value: !1 },
         rweb_home_mixer_enable_social_context_filter_social_contexts: { value: !0 },
         rweb_home_nav_single_direction_scroll_enabled: { value: !1 },
@@ -2370,7 +2369,6 @@ var manifest = {
         rweb_enable_logged_out_search_search_bar_enabled: { name: "rweb_enable_logged_out_search_search_bar_enabled", type: "boolean", defaultValue: !1 },
         rweb_enable_logged_out_search_trending_side_bar_enabled: { name: "rweb_enable_logged_out_search_trending_side_bar_enabled", type: "string" },
         rweb_gif_hashtag_highlight_13196: { name: "rweb_gif_hashtag_highlight_13196", type: "experiment", enumeration_values: [] },
-        rweb_graphql_notifications_tab_enabled: { name: "rweb_graphql_notifications_tab_enabled", type: "boolean", defaultValue: !0 },
         rweb_home_compact_timeline_enabled: { name: "rweb_home_compact_timeline_enabled", type: "boolean", defaultValue: !1 },
         rweb_home_refetch_on_refocus_min_delay_seconds: { name: "rweb_home_refetch_on_refocus_min_delay_seconds", type: "number", defaultValue: 60 },
         rweb_home_uas_enabled: { name: "rweb_home_uas_enabled", type: "boolean", defaultValue: !1 },

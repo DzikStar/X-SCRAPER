@@ -160,8 +160,8 @@
                         N = "Research" === D?.filter_key,
                         L = "Reasoning" === D?.filter_key,
                         O = "ImageEdit" === D?.filter_key,
-                        H = (0, r.yu)(),
-                        W = H && t.ZP.isWebView(),
+                        W = (0, r.yu)(),
+                        H = W && t.ZP.isWebView(),
                         z = T || !!f,
                         F = a.focused,
                         J = (N && !v) || (L && !M);
@@ -169,7 +169,7 @@
                         d.useEffect(() => {
                             g.every((e) => "Hidden" === e[A]) || g.length <= 0 ? B() : y && ("Research" !== y || N ? ("Reasoning" !== y || L ? "ImageEdit" !== y || O || R() : G()) : P(), k(""));
                         }, [g, A, B, O, L, N, y, P, R, G]),
-                        { grokInput: a, selectMode: _, setFocused: I, isResearchEnabled: N, isReasoningEnabled: L, isImageEditEnabled: O, isDefault: x, isInputFocused: F, hasSelectedInputMode: Z, isInputMobileSize: H, isInputMobile: W, isInputCompact: z, grokModeButtons: g, grokModeButtonStatusKey: A, selectedGrokModeButton: D, isFileInputDisabled: J, setAdvancedSettings: E, advancedSettings: n, grokModeButtonOverrides: w, selectDeepsearchMode: P, selectReasoningMode: G, selectImageEditMode: R, clearMode: B, setPendingModeButtonFilterKey: k }
+                        { grokInput: a, selectMode: _, setFocused: I, isResearchEnabled: N, isReasoningEnabled: L, isImageEditEnabled: O, isDefault: x, isInputFocused: F, hasSelectedInputMode: Z, isInputMobileSize: W, isInputMobile: H, isInputCompact: z, grokModeButtons: g, grokModeButtonStatusKey: A, selectedGrokModeButton: D, isFileInputDisabled: J, setAdvancedSettings: E, advancedSettings: n, grokModeButtonOverrides: w, selectDeepsearchMode: P, selectReasoningMode: G, selectImageEditMode: R, clearMode: B, setPendingModeButtonFilterKey: k }
                     );
                 };
         },
@@ -235,8 +235,8 @@
             }
             const O = w.default.create((e) => ({ titleTextRoot: { paddingStart: e.spaces.space2, flexGrow: 1, flexShrink: 1 }, animation: { opacity: 1, animationDuration: "2s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }] } }));
             n(136728);
-            var H = n(154003),
-                W = n(530243),
+            var W = n(154003),
+                H = n(530243),
                 z = n(52735),
                 F = n(487552),
                 J = n(899667),
@@ -252,7 +252,7 @@
                         e && (l.push(e), a());
                     }, [a, e, l]),
                     { canClearConversation: s, handleClearConversationClickWithoutNav: c } = (0, X.Z)();
-                return o.createElement(r.Z, { style: Q.rightControls }, n && e && o.createElement(H.ZP, { "aria-label": U, hoverLabel: { label: U }, icon: o.createElement(W.default, { style: { height: 19, width: 19, marginBottom: 2 } }), onPress: i, type: "primaryText" }), n && s && o.createElement(H.ZP, { "aria-label": K, disabled: !s, hoverLabel: V, icon: o.createElement(z.default, { style: Q.composeIcon }), onPress: c, type: "primaryText" }), n && o.createElement(H.ZP, { "aria-label": $, hoverLabel: { label: $ }, icon: o.createElement(F.default, null), onPress: a, type: "primaryText" }), !n && o.createElement(H.ZP, { "aria-label": j, hoverLabel: { label: j }, icon: o.createElement(J.default, null), onPress: a, type: "primaryText" }));
+                return o.createElement(r.Z, { style: Q.rightControls }, n && e && o.createElement(W.ZP, { "aria-label": U, hoverLabel: { label: U }, icon: o.createElement(H.default, { style: { height: 19, width: 19, marginBottom: 2 } }), onPress: i, type: "primaryText" }), n && s && o.createElement(W.ZP, { "aria-label": K, disabled: !s, hoverLabel: V, icon: o.createElement(z.default, { style: Q.composeIcon }), onPress: c, type: "primaryText" }), n && o.createElement(W.ZP, { "aria-label": $, hoverLabel: { label: $ }, icon: o.createElement(F.default, null), onPress: a, type: "primaryText" }), !n && o.createElement(W.ZP, { "aria-label": j, hoverLabel: { label: j }, icon: o.createElement(J.default, null), onPress: a, type: "primaryText" }));
             }
             const Q = w.default.create((e) => ({ rightControls: { flexDirection: "row", alignItems: "center" }, composeIcon: { fill: "none" } }));
             function q({ conversationUrl: e }) {
@@ -290,20 +290,23 @@
             const ne = (0, l.Z)({
                 loader: () =>
                     Promise.all([
-                        n.e("icons.5"),
-                        n.e("icons.12"),
-                        n.e("icons.20"),
-                        n.e("icons.0"),
+                        n.e("icons.10"),
                         n.e("icons.21"),
-                        n.e("icons.28"),
-                        n.e("icons.17"),
+                        n.e("icons.16"),
+                        n.e("icons.1"),
+                        n.e("icons.19"),
+                        n.e("icons.0"),
+                        n.e("icons.8"),
+                        n.e("icons.23"),
+                        n.e("icons.2"),
                         n.e("modules.common-e907d115"),
                         n.e("modules.common-e019dbda"),
-                        n.e("icons.22"),
                         n.e("icons.9"),
-                        n.e("icons.25"),
-                        n.e("icons.6"),
-                        n.e("icons.10"),
+                        n.e("icons.7"),
+                        n.e("icons.24"),
+                        n.e("icons.15"),
+                        n.e("icons.3"),
+                        n.e("icons.28"),
                         n.e("modules.audio-6107ac1a"),
                         n.e("modules.audio-b953418a"),
                         n.e("modules.audio-7c51e6a7"),
@@ -314,15 +317,13 @@
                         n.e("modules.audio-e019dbda"),
                         n.e("modules.audio-262c94d4"),
                         n.e("modules.audio-c6fe4ea4"),
-                        n.e("icons.24"),
-                        n.e("icons.23"),
-                        n.e("icons.14"),
-                        n.e("icons.3"),
+                        n.e("icons.26"),
                         n.e("icons.4"),
                         n.e("icons.13"),
-                        n.e("icons.1"),
                         n.e("icons.18"),
-                        n.e("icons.8"),
+                        n.e("icons.25"),
+                        n.e("icons.29"),
+                        n.e("icons.27"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -354,7 +355,7 @@
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                         n.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
                         n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-34cda585"),
+                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-ee359ff7"),
                         n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                         n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                         n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -413,7 +414,6 @@
                         n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-b93f71f2"),
                         n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-743779ef"),
                         n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e851f17f"),
-                        n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-2b309ab6"),
                         n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-29ff9b73"),
                         n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d622e6ad"),
                         n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d425713a"),
@@ -447,8 +447,7 @@
                         n.e("bundle.Grok-b16f5c14"),
                         n.e("bundle.Grok-9f4db315"),
                         n.e("bundle.Grok-e4e3d8bb"),
-                        n.e("bundle.Grok-966b2597"),
-                        n.e("bundle.Grok-ee7108b9"),
+                        n.e("bundle.Grok-63cb1cc4"),
                         n.e("bundle.Grok-c69e90f3"),
                         n.e("bundle.Grok-ea2f266f"),
                         n.e("bundle.Grok-16d5f187"),
@@ -506,7 +505,7 @@
                 return (function () {
                     const e = (0, t.useHistory)(),
                         a = e.getLastNonModalLocationPathname() ?? e.location.pathname;
-                    return o.useMemo(() => (0, b.z)(a) || a.startsWith("/i/communitynotes") || a.startsWith("/messages") || a.startsWith("/i/radar") || a.startsWith("/i/money") || a.startsWith("/i/verified") || a.startsWith("/i/broadcasts/") || a.startsWith("/compose/articles") || a.startsWith("/i/account_analytics") || a.startsWith("/i/conferences-room") || a.startsWith("/i/premium/hiring") || a.startsWith("/i/grok") || a.endsWith("/live"), [a]);
+                    return o.useMemo(() => (0, b.z)(a) || a.startsWith("/i/chat") || a.startsWith("/i/communitynotes") || a.startsWith("/messages") || a.startsWith("/i/radar") || a.startsWith("/i/money") || a.startsWith("/i/verified") || a.startsWith("/i/broadcasts/") || a.startsWith("/compose/articles") || a.startsWith("/i/account_analytics") || a.startsWith("/i/conferences-room") || a.startsWith("/i/premium/hiring") || a.startsWith("/i/grok") || a.endsWith("/live"), [a]);
                 })() ||
                     k ||
                     !a
@@ -774,4 +773,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.GrokDrawer-6ac0f1a5.93335d3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.GrokDrawer-6ac0f1a5.2b2380ea.js.map

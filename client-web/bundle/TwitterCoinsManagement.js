@@ -28,13 +28,13 @@
                         });
                 }
                 _renderContent() {
-                    const { backButtonType: e, centerTitle: a, centeredLogo: t, fixed: r, hideBackButton: l, isFullWidth: i, isLarge: s, leftControl: d, middleControl: p, position: m, rightControl: g, secondaryBar: b, style: y, subtitle: h, title: f, titleDomId: k, titleIconCell: _, titleIconCellSize: C, withBackground: v, withWideContainer: w } = this.props,
+                    const { backButtonType: e, centerTitle: a, centeredLogo: t, fixed: r, hideBackButton: l, isFullWidth: i, isLarge: s, leftControl: d, middleControl: p, position: m, rightControl: g, secondaryBar: b, style: y, subtitle: f, title: h, titleDomId: k, titleIconCell: _, titleIconCellSize: C, withBackground: v, withWideContainer: w } = this.props,
                         { isModal: E } = this.context,
                         T = l ? d : n.createElement(o.Z, { backButtonType: e, onClick: this._handleBackClick }),
                         P = (function (e, a, t) {
                             return e && !(a && t);
                         })(!!v, E, !!b);
-                    return n.createElement(n.Fragment, null, n.createElement(c.Z, { centerTitle: a, centeredLogo: t, isFullWidth: i, isLarge: s, leftControl: T, middleControl: p, position: u(m, E, r), rightControl: g, style: y, subtitle: h, title: f, titleDomId: k, titleIconCell: _, titleIconCellSize: C, withBackground: P, withWideContainer: w }), b || null);
+                    return n.createElement(n.Fragment, null, n.createElement(c.Z, { centerTitle: a, centeredLogo: t, isFullWidth: i, isLarge: s, leftControl: T, middleControl: p, position: u(m, E, r), rightControl: g, style: y, subtitle: f, title: h, titleDomId: k, titleIconCell: _, titleIconCellSize: C, withBackground: P, withWideContainer: w }), b || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
@@ -61,9 +61,9 @@
                 constructor(...e) {
                     super(...e),
                         (this._renderChildViewAppBar = () => {
-                            const { appBarRef: e, appBarStyle: a, backButtonType: t, backLocation: l, centerTitle: i, hideBackButton: o, history: c, isFullWidth: u, isLarge: p, middleControl: m, onBackClick: b, rightControl: y, secondaryBar: h, subtitle: f, title: k } = this.props,
+                            const { appBarRef: e, appBarStyle: a, backButtonType: t, backLocation: l, centerTitle: i, hideBackButton: o, history: c, isFullWidth: u, isLarge: p, middleControl: m, onBackClick: b, rightControl: y, secondaryBar: f, subtitle: h, title: k } = this.props,
                                 { isModal: _ } = this.context;
-                            return n.createElement(r.Z, { style: _ ? [g.childViewAppBarRoot, g.appBarZindex] : g.appBarZindex }, n.createElement(d.ZP, { backButtonType: t || (_ ? "close" : "back"), backLocation: l, centerTitle: i, fixed: !_, hideBackButton: o, history: c, isFullWidth: u, isLarge: p, middleControl: m, onBackClick: b, ref: e, rightControl: y, secondaryBar: h, style: [_ && g.appBarModal, a], subtitle: f, title: k, titleDomId: s.Q_ }));
+                            return n.createElement(r.Z, { style: _ ? [g.childViewAppBarRoot, g.appBarZindex] : g.appBarZindex }, n.createElement(d.ZP, { backButtonType: t || (_ ? "close" : "back"), backLocation: l, centerTitle: i, fixed: !_, hideBackButton: o, history: c, isFullWidth: u, isLarge: p, middleControl: m, onBackClick: b, ref: e, rightControl: y, secondaryBar: f, style: [_ && g.appBarModal, a], subtitle: h, title: k, titleDomId: s.Q_ }));
                         }),
                         (this._handleLayout = (e) => {
                             const { onLayout: a } = this.props,
@@ -73,9 +73,9 @@
                 }
                 render() {
                     const { "aria-hidden": e, bottomBar: a, children: t, containerStyle: i, documentTitle: o, isFullWidth: s, isLarge: d, renderHeader: m, title: b, withoutBottomBarMobile: y } = this.props,
-                        { isModal: h } = this.context,
-                        f = m ? m(this._renderChildViewAppBar()) : this._renderChildViewAppBar();
-                    return n.createElement(c.Z, null, n.createElement(u.Z.Configure, { documentTitle: o, headerless: !0, title: b }), n.createElement(r.Z, { "aria-hidden": e, onLayout: this._handleLayout, style: [g.root, h && g.rootModal] }, !h && f, n.createElement(l.Z, { isFullWidth: s, isLarge: d, style: [g.container, h && g.containerModal, i] }, h ? n.createElement(p.Z, { style: g.viewport }, f, t) : t), a ? n.createElement(r.Z, { style: [g.bottomBarModal, !h && !y && g.bottomBarMobile] }, n.createElement(l.Z, { isFullWidth: s, isLarge: d }, a)) : null));
+                        { isModal: f } = this.context,
+                        h = m ? m(this._renderChildViewAppBar()) : this._renderChildViewAppBar();
+                    return n.createElement(c.Z, null, n.createElement(u.Z.Configure, { documentTitle: o, headerless: !0, title: b }), n.createElement(r.Z, { "aria-hidden": e, onLayout: this._handleLayout, style: [g.root, f && g.rootModal] }, !f && h, n.createElement(l.Z, { isFullWidth: s, isLarge: d, style: [g.container, f && g.containerModal, i] }, f ? n.createElement(p.Z, { style: g.viewport }, h, t) : t), a ? n.createElement(r.Z, { style: [g.bottomBarModal, !f && !y && g.bottomBarMobile] }, n.createElement(l.Z, { isFullWidth: s, isLarge: d }, a)) : null));
                 }
             }
             (m.defaultProps = { isFullWidth: !1, isLarge: !1 }), (m.contextType = i.Z);
@@ -136,7 +136,7 @@
             const d = (0, r.ZP)(c(s));
         },
         301410: (e, a, t) => {
-            t.d(a, { i: () => g.ZP, z: () => f });
+            t.d(a, { i: () => g.ZP, z: () => h });
             var n = t(202784),
                 r = t(928123),
                 l = t.n(r),
@@ -165,11 +165,11 @@
                     return this.props.children(this.state.error, this.props.retry);
                 }
             }
-            const h = ({ query: e, queryRef: a, render: t }) => {
+            const f = ({ query: e, queryRef: a, render: t }) => {
                     const n = l()(e, a);
                     return t({ fetchStatus: g.ZP.LOADED, data: n, error: null, retry: d.Z });
                 },
-                f = (e, a) =>
+                h = (e, a) =>
                     function ({ fetchPolicy: t = "store-or-network", render: r, variables: l }) {
                         const [i, c] = o()(e),
                             d = (0, p.n7)(a.errorConfig.context),
@@ -185,7 +185,7 @@
                                 ? n.createElement(
                                       n.Suspense,
                                       { fallback: n.createElement(b, { render: r }) },
-                                      n.createElement(y, { errorHandler: d(a.errorConfig.options || {}), key: i.fetchKey, retry: m }, (a, t) => (a ? r({ fetchStatus: g.ZP.FAILED, error: a, data: null, retry: t }) : n.createElement(h, { query: e, queryRef: i, render: r }))),
+                                      n.createElement(y, { errorHandler: d(a.errorConfig.options || {}), key: i.fetchKey, retry: m }, (a, t) => (a ? r({ fetchStatus: g.ZP.FAILED, error: a, data: null, retry: t }) : n.createElement(f, { query: e, queryRef: i, render: r }))),
                                   )
                                 : null
                         );
@@ -207,7 +207,7 @@
                 };
         },
         264226: (e, a, t) => {
-            t.d(a, { XB: () => y, ZP: () => f });
+            t.d(a, { XB: () => y, ZP: () => h });
             var n,
                 r,
                 l,
@@ -272,8 +272,8 @@
                 g = t(856151);
             const b = s,
                 y = (0, t(301410).z)(b, { errorConfig: { context: "TWITTER_COINS_MANAGEMENT_COIN_BALANCE_CONTEXT" } }),
-                h = m.default.create((e) => ({ leftSpace: { marginStart: e.spaces.space4 }, balance: { borderRadius: e.borderRadii.xLarge, paddingHorizontal: e.spaces.space12, paddingVertical: e.spaces.space12 } })),
-                f = ({ coinBalance: e }) => d.createElement(u.ZP, { background: "gray50", style: h.balance }, d.createElement(g.default, null), d.createElement(p.ZP, { color: "gray1100", style: h.leftSpace }, e));
+                f = m.default.create((e) => ({ leftSpace: { marginStart: e.spaces.space4 }, balance: { borderRadius: e.borderRadii.xLarge, paddingHorizontal: e.spaces.space12, paddingVertical: e.spaces.space12 } })),
+                h = ({ coinBalance: e }) => d.createElement(u.ZP, { background: "gray50", style: f.balance }, d.createElement(g.default, null), d.createElement(p.ZP, { color: "gray1100", style: f.leftSpace }, e));
         },
         310248: (e, a, t) => {
             t.r(a), t.d(a, { default: () => b });
@@ -311,8 +311,8 @@
                 g = t(293115),
                 b = t(312771),
                 y = t(264226);
-            const h = { page: "coin_purchase_success" },
-                f = m().a893d602,
+            const f = { page: "coin_purchase_success" },
+                h = m().a893d602,
                 k = m().fe93ed4a,
                 _ = m().bcb90375,
                 C = ({ history: e }) => {
@@ -324,7 +324,7 @@
                             }
                             return n.createElement(c.Z, null);
                         }, []);
-                    return n.createElement(g.nO, { namespace: h }, n.createElement(s.Z, { allowBackNavigation: !0, enableMaskForDismiss: !0, onMaskClick: a, style: v.root, type: "center" }, n.createElement(i.Z, null, n.createElement(o.ZP, { size: "title4", style: v.marginBottom, weight: "bold" }, k), n.createElement(y.XB, { render: t, variables: l() })), n.createElement(d.ZP, { onPress: a, style: v.button, type: "primaryFilled" }, f)));
+                    return n.createElement(g.nO, { namespace: f }, n.createElement(s.Z, { allowBackNavigation: !0, enableMaskForDismiss: !0, onMaskClick: a, style: v.root, type: "center" }, n.createElement(i.Z, null, n.createElement(o.ZP, { size: "title4", style: v.marginBottom, weight: "bold" }, k), n.createElement(y.XB, { render: t, variables: l() })), n.createElement(d.ZP, { onPress: a, style: v.button, type: "primaryFilled" }, h)));
                 },
                 v = u.default.create((e) => ({ root: { padding: e.spaces.space32, display: "flex", flexDirection: "column", justifyContent: "space-between" }, marginBottom: { marginBottom: e.spaces.space8 }, spacingRight: { marginEnd: e.spaces.space8 }, button: { marginTop: e.spaces.space24, width: "100%" } }));
         },
@@ -465,8 +465,8 @@
                 g = t(360917),
                 b = t.n(g),
                 y = t(325686),
-                h = (t(585488), t(731708)),
-                f = t(154003),
+                f = (t(585488), t(731708)),
+                h = t(154003),
                 k = t(167630),
                 _ = t(750410),
                 C = t(992942),
@@ -475,8 +475,8 @@
                 E = t(392237),
                 T = t(674132),
                 P = t.n(T);
-            const Z = Object.freeze({ Beta: "Beta", Live: "Live", Sandbox: "Sandbox", Test: "Test" });
-            var B = t(980407),
+            const B = Object.freeze({ Beta: "Beta", Live: "Live", Sandbox: "Sandbox", Test: "Test" });
+            var Z = t(980407),
                 x = t(879101),
                 S = t(443781),
                 L = t(301410),
@@ -490,7 +490,7 @@
                 N = t(390387);
             const W = (0, A.Z)().propsFromState(() => ({ currentCountry: N.GG }));
             var O = t(264226),
-                z =
+                Q =
                     (t(571372),
                     (function () {
                         var e = [
@@ -521,13 +521,13 @@
                             ];
                         return { fragment: { argumentDefinitions: e, kind: "Fragment", metadata: null, name: "useCoinPurchaseSessionUrlMutation", selections: a, type: "Mutation", abstractKey: null }, kind: "Request", operation: { argumentDefinitions: e, kind: "Operation", name: "useCoinPurchaseSessionUrlMutation", selections: a }, params: { id: "QP5WVTrpvWikhlKybPX5jQ", metadata: {}, name: "useCoinPurchaseSessionUrlMutation", operationKind: "mutation", text: null } };
                     })());
-            z.hash = "7daebd17bb1245b0e462caffc307fe76";
-            const H = z;
-            var V = t(351743),
-                Q = t.n(V);
-            const q = H,
+            Q.hash = "7daebd17bb1245b0e462caffc307fe76";
+            const q = Q;
+            var H = t(351743),
+                V = t.n(H);
+            const z = q,
                 U = ({ cancelUrl: e, successUrl: a }) => {
-                    const [t, n] = Q()(q);
+                    const [t, n] = V()(z);
                     return [
                         m.useCallback(
                             (n) =>
@@ -567,13 +567,13 @@
                         [o, c] = m.useState(!1),
                         { origin: s } = F.ZP.get(),
                         d = a.isTrue("tweet_awards_web_coin_purchase_sandbox_enabled"),
-                        u = m.useMemo(() => ({ environment: d ? Z.Sandbox : Z.Live, countryCode: t || "US" }), [d, t]),
+                        u = m.useMemo(() => ({ environment: d ? B.Sandbox : B.Live, countryCode: t || "US" }), [d, t]),
                         p = (0, R.p)(),
                         [g, E] = U({ successUrl: `${s}/i/coins/success`, cancelUrl: `${s}/i/coins/failure` }),
                         T = m.useCallback(() => {
                             r.scribe({ element: "twitter_coins", component: "dismiss_button", action: "click" }), n.goBack();
                         }, [r, n]),
-                        P = m.useCallback((e) => m.createElement(y.Z, { style: oe.header }, m.createElement(h.ZP, { size: "title4", weight: "bold" }, j), m.createElement(O.ZP, { coinBalance: e })), []),
+                        P = m.useCallback((e) => m.createElement(y.Z, { style: oe.header }, m.createElement(f.ZP, { size: "title4", weight: "bold" }, j), m.createElement(O.ZP, { coinBalance: e })), []),
                         L = m.useCallback(() => {
                             c(!0),
                                 g(l)
@@ -586,7 +586,7 @@
                             (e) => {
                                 const a = o || E,
                                     t = !l || e || a;
-                                return m.createElement(y.Z, { style: oe.footer }, m.createElement(x.Z, { style: oe.disclaimer }), m.createElement(f.ZP, { disabled: t, onPress: L, type: "primaryFilled" }, a ? m.createElement(k.Z, null) : te));
+                                return m.createElement(y.Z, { style: oe.footer }, m.createElement(x.Z, { style: oe.disclaimer }), m.createElement(h.ZP, { disabled: t, onPress: L, type: "primaryFilled" }, a ? m.createElement(k.Z, null) : te));
                             },
                             [l, L, E, o],
                         ),
@@ -597,7 +597,7 @@
                             [i],
                         ),
                         W = m.useCallback((e) => ({ uri: e }), []),
-                        z = m.useCallback(
+                        Q = m.useCallback(
                             ({ data: e, fetchStatus: a, retry: t }) => {
                                 if (a === M.ZP.FAILED) return m.createElement(_.Z, { onRequestRetry: t, retryMessage: Y });
                                 const n = (e?.viewer_v2?.in_app_purchase_products_slice.items || []).map(({ external_identifier: e, external_product: a, metadata: { bonus_coin_value: t, coin_value: n, label_keys: r, thumbnail_url: l } }) => {
@@ -611,25 +611,25 @@
                             },
                             [W, l, N],
                         ),
-                        H = m.useCallback(
+                        q = m.useCallback(
                             ({ data: e, fetchStatus: a, retry: t }) => {
                                 if (a === M.ZP.FAILED) return m.createElement(_.Z, { onRequestRetry: t, retryMessage: Y });
                                 if (a === M.ZP.LOADED) {
                                     const a = e?.viewer_v2?.account_balance.amount || 0,
                                         t = !!e?.viewer_v2?.account_balance.at_limit;
-                                    return m.createElement(B.Z, { backButtonType: "close", bottomBar: A(t), history: n, onBackClick: T, secondaryBar: P(a) }, m.createElement(y.Z, { style: oe.root }, m.createElement(h.ZP, { color: "gray700", size: "body", style: oe.subtext }, X), t ? m.createElement(w.Z.Attention, { text: ee, withIcon: !0 }) : m.createElement(le, { render: z, variables: u })));
+                                    return m.createElement(Z.Z, { backButtonType: "close", bottomBar: A(t), history: n, onBackClick: T, secondaryBar: P(a) }, m.createElement(y.Z, { style: oe.root }, m.createElement(f.ZP, { color: "gray700", size: "body", style: oe.subtext }, X), t ? m.createElement(w.Z.Attention, { text: ee, withIcon: !0 }) : m.createElement(le, { render: Q, variables: u })));
                                 }
                                 return null;
                             },
-                            [A, u, P, z, T, n],
+                            [A, u, P, Q, T, n],
                         );
-                    return m.createElement(K.nO, { namespace: ne }, m.createElement(O.XB, { render: H, variables: b() }));
+                    return m.createElement(K.nO, { namespace: ne }, m.createElement(O.XB, { render: q, variables: b() }));
                 },
                 oe = E.default.create((e) => ({ root: { marginHorizontal: e.spaces.space32, marginVertical: e.spaces.space8 }, header: { flexDirection: "row", justifyContent: "space-between", marginHorizontal: e.spaces.space32, marginTop: e.spaces.space16, marginBottom: e.spaces.space8 }, subtext: { marginBottom: e.spaces.space16 }, footer: { marginHorizontal: e.spaces.space32, marginVertical: e.spaces.space16 }, disclaimer: { marginBottom: e.spaces.space8, marginHorizontal: "auto", maxWidth: "500px", textAlign: "center" }, image: { height: e.spaces.space40, width: e.spaces.space40 }, iconTwitter: { color: e.colors.primary } })),
                 ce = W(ie);
         },
         782947: (e, a, t) => {
-            t.d(a, { Z: () => h });
+            t.d(a, { Z: () => f });
             var n = t(807896),
                 r = t(202784),
                 l = t(896632),
@@ -643,36 +643,23 @@
                 m = t(392237);
             const g = m.default.create((e) => ({ backgroundGrey: { backgroundColor: e.colors.gray100 }, backgroundDefault: { backgroundColor: e.colors.cellBackground }, root: { overflow: "hidden", flexDirection: "row", justifyContent: "space-between", gap: e.spaces.space16, flexGrow: 1, borderColor: e.colors.transparent, borderWidth: e.borderWidths.medium }, alignCenter: { alignItems: "center" }, padding16: { padding: e.spaces.space16 }, padding8: { paddingHorizontal: e.spaces.space8, paddingVertical: e.spaces.space4 }, boxShadow: { boxShadow: e.boxShadows.medium }, withMarginTop: { marginTop: e.spaces.space20 }, borderRadiusLarge: { borderRadius: e.borderRadii.large }, borderRadiusInfinite: { borderRadius: e.borderRadii.infinite }, checked: { borderColor: e.colors.primary }, interactive: { cursor: "pointer" }, withMarginEnd: { marginEnd: e.spaces.space20 }, grow: { flexGrow: 1 }, iconContainer: { alignSelf: "flex-start", flexDirection: "column", justifyContent: "center", width: e.spaces.space40, height: e.spaces.space40 }, labelContainer: { flexDirection: "column", justifyContent: "center", flex: 1 }, inlineCalloutContainer: { marginTop: e.spaces.space8 }, description: { marginTop: e.spaces.space4 }, descriptionWithPill: { marginTop: e.spaces.space2 }, endContentContainer: { justifyContent: "center", flexDirection: "column" }, row: { flexDirection: "row", alignItems: "center" }, marginTop4: { marginTop: e.spaces.space4 }, marginBottom8: { marginBottom: e.spaces.space8 }, info: { flexDirection: "row", justifyContent: "space-between", marginBottom: e.spaces.space8 }, infoIcon: { fontSize: ".74em", color: e.colors.gray700 }, backgroundTransparent: { backgroundColor: e.colors.transparent }, pill: { marginBottom: e.spaces.space4 }, inlinePill: { marginStart: e.spaces.space4 } })),
                 b = { ...m.default.absoluteFillObject, cursor: "inherit", height: "100%", margin: 0, opacity: 0, padding: 0, width: "100%" },
-                y = ({ "aria-label": e, "aria-posinset": a, "aria-setsize": t, checked: n, dedicatedPillRow: l, description: m, disabled: y, disabledInlineCallout: h, endContent: f, horizontal: k, illustration: _, infoLabel: C, infoLabelType: v, inlineCallout: w, label: E, name: T, onChange: P, pillText: Z, pillType: B, reverseLabels: x, secondaryContent: S, secondaryDescription: L, switchStyle: R, testID: D }) => {
+                y = ({ "aria-label": e, "aria-posinset": a, "aria-setsize": t, checked: n, dedicatedPillRow: l, description: m, disabled: y, disabledInlineCallout: f, endContent: h, horizontal: k, illustration: _, infoLabel: C, infoLabelType: v, inlineCallout: w, label: E, name: T, onChange: P, pillText: B, pillType: Z, reverseLabels: x, secondaryContent: S, secondaryDescription: L, switchStyle: R, testID: D }) => {
                     const F = (0, p.b)(),
                         K = (0, p.b)(),
                         I = (0, p.b)(),
                         M = r.createElement(s.ZP, { color: "text", id: F, role: "label", size: R ? "body" : "headline2", testID: "headline-label", weight: R ? "medium" : "bold" }, E),
-                        A = !!m && r.createElement(s.ZP, { color: "gray700", id: K, size: "subtext1", style: Z ? g.descriptionWithPill : g.description, testID: "description-label" }, m),
+                        A = !!m && r.createElement(s.ZP, { color: "gray700", id: K, size: "subtext1", style: B ? g.descriptionWithPill : g.description, testID: "description-label" }, m),
                         N = r.createElement(s.ZP, { color: "gray700", role: "label", size: "subtext2", style: g.description }, L),
-                        W = Z ? r.createElement(d.ZP, { style: l ? g.pill : g.inlinePill, type: B }, Z) : null,
+                        W = B ? r.createElement(d.ZP, { style: l ? g.pill : g.inlinePill, type: Z }, B) : null,
                         O = r.createElement(r.Fragment, null, l ? W : null, r.createElement(i.Z, { style: [g.row, C && g.marginBottom8] }, x ? A : M, l ? null : W), r.createElement(i.Z, { style: [g.row, x && g.marginTop4] }, x ? M : A), S || (L ? N : void 0)),
-                        z = R ? "unset" : (t ? 100 / t : 100) + "%",
-                        H = R ? [g.padding8, g.borderRadiusInfinite, n ? g.backgroundDefault : g.backgroundTransparent] : [g.padding16, g.boxShadow, g.borderRadiusLarge, n ? g.checked : null, g.backgroundDefault];
-                    return r.createElement(r.Fragment, null, r.createElement(u.Z, { disabled: y, style: [g.root, ...H, k ? { maxWidth: z, ...g.grow } : null, 1 === a || k ? null : g.withMarginTop, a !== t && k && !R && g.withMarginEnd, !y && g.interactive], testID: D, withInteractiveStyling: !R }, !!_ && r.createElement(i.Z, { style: g.iconContainer, testID: "illustration" }, _), r.createElement(i.Z, { style: [g.labelContainer, R && g.alignCenter] }, !!C && r.createElement(i.Z, { style: g.info }, r.createElement(d.ZP, { background: "green" === v ? "green500" : "red" === v ? "magenta500" : "yellow" === v ? "orange50" : "gray500" }, r.createElement(s.ZP, { color: "yellow" === v ? "orange900" : "whiteOnColor", size: "subtext3", weight: "bold" }, C)), "red" !== v && "yellow" !== v && r.createElement(o.default, { style: g.infoIcon, testID: "infoIcon" })), O, n && !!w && r.createElement(i.Z, { style: g.inlineCalloutContainer, testID: "inlineCallout" }, w)), !!f && r.createElement(i.Z, { style: g.endContentContainer, testID: "endContent" }, r.createElement(s.ZP, { id: I, size: "subtext1", weight: "bold" }, f)), r.createElement("input", { "aria-describedby": `${K} ${I}`, "aria-label": e, "aria-labelledby": F, "aria-posinset": a, "aria-setsize": t, checked: n, disabled: y, name: T, onChange: n ? c.Z : P, style: b, type: "radio" })), y && h ? h : null);
+                        Q = R ? "unset" : (t ? 100 / t : 100) + "%",
+                        q = R ? [g.padding8, g.borderRadiusInfinite, n ? g.backgroundDefault : g.backgroundTransparent] : [g.padding16, g.boxShadow, g.borderRadiusLarge, n ? g.checked : null, g.backgroundDefault];
+                    return r.createElement(r.Fragment, null, r.createElement(u.Z, { disabled: y, style: [g.root, ...q, k ? { maxWidth: Q, ...g.grow } : null, 1 === a || k ? null : g.withMarginTop, a !== t && k && !R && g.withMarginEnd, !y && g.interactive], testID: D, withInteractiveStyling: !R }, !!_ && r.createElement(i.Z, { style: g.iconContainer, testID: "illustration" }, _), r.createElement(i.Z, { style: [g.labelContainer, R && g.alignCenter] }, !!C && r.createElement(i.Z, { style: g.info }, r.createElement(d.ZP, { background: "green" === v ? "green500" : "red" === v ? "magenta500" : "yellow" === v ? "orange50" : "gray500" }, r.createElement(s.ZP, { color: "yellow" === v ? "orange900" : "whiteOnColor", size: "subtext3", weight: "bold" }, C)), "red" !== v && "yellow" !== v && r.createElement(o.default, { style: g.infoIcon, testID: "infoIcon" })), O, n && !!w && r.createElement(i.Z, { style: g.inlineCalloutContainer, testID: "inlineCallout" }, w)), !!h && r.createElement(i.Z, { style: g.endContentContainer, testID: "endContent" }, r.createElement(s.ZP, { id: I, size: "subtext1", weight: "bold" }, h)), r.createElement("input", { "aria-describedby": `${K} ${I}`, "aria-label": e, "aria-labelledby": F, "aria-posinset": a, "aria-setsize": t, checked: n, disabled: y, name: T, onChange: n ? c.Z : P, style: b, type: "radio" })), y && f ? f : null);
                 },
-                h = (e) => {
+                f = (e) => {
                     const a = r.useCallback(({ value: e, ...a }) => r.createElement(y, (0, n.Z)({}, a, { key: e })), []);
                     return r.createElement(l.Z, (0, n.Z)({}, e, { renderSelector: a }));
                 };
-        },
-        748138: (e, a, t) => {
-            t.r(a), t.d(a, { default: () => c });
-            var n = t(202784),
-                r = t(890601),
-                l = t(783427),
-                i = t(347101);
-            const o = (e = {}) => {
-                const { direction: a } = (0, l.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: a });
-            };
-            o.metadata = { width: 24, height: 24 };
-            const c = o;
         },
         928123: (e, a, t) => {
             var n = t(606161).useTrackLoadQueryInRender,
@@ -693,22 +680,22 @@
                     g = a.source,
                     b = a.variables,
                     y = a.networkCacheConfig,
-                    h = l(e, b, y);
+                    f = l(e, b, y);
                 if ("PreloadedQuery_DEPRECATED" === a.kind)
-                    h.request.node.params.name !== a.name && o(!1),
+                    f.request.node.params.name !== a.name && o(!1),
                         (c = {
                             componentDisplayName: "usePreloadedQuery()",
                             fetchKey: p,
-                            fetchObservable: s(u, h.request.identifier, function () {
-                                return u === a.environment && null != g ? u.executeWithSource({ operation: h, source: g }) : u.execute({ operation: h });
+                            fetchObservable: s(u, f.request.identifier, function () {
+                                return u === a.environment && null != g ? u.executeWithSource({ operation: f, source: g }) : u.execute({ operation: f });
                             }),
                             fetchPolicy: m,
-                            query: h,
+                            query: f,
                             renderPolicy: null == t ? void 0 : t.UNSTABLE_renderPolicy,
                         });
                 else {
-                    var f = d(u, h);
-                    c = { componentDisplayName: "usePreloadedQuery()", fetchObservable: null != g && u === a.environment ? g.ifEmpty(f) : (a.environment, f), fetchKey: p, fetchPolicy: m, query: h, renderPolicy: null == t ? void 0 : t.UNSTABLE_renderPolicy };
+                    var h = d(u, f);
+                    c = { componentDisplayName: "usePreloadedQuery()", fetchObservable: null != g && u === a.environment ? g.ifEmpty(h) : (a.environment, h), fetchKey: p, fetchPolicy: m, query: f, renderPolicy: null == t ? void 0 : t.UNSTABLE_renderPolicy };
                 }
                 return r(c);
             };
@@ -736,11 +723,11 @@
                 i();
                 var s = o(),
                     g = p(new Set([t])),
-                    h = m(function () {
+                    f = m(function () {
                         return t;
                     }),
-                    f = h[0],
-                    k = h[1],
+                    h = f[0],
+                    k = f[1],
                     _ = m(function () {
                         return t;
                     }),
@@ -773,7 +760,7 @@
                     }, []),
                     u(
                         function () {
-                            if (!0 === T.current) return (T.current = !1), void ("NullQueryReference" !== f.kind && E(f.variables, { fetchPolicy: f.fetchPolicy, networkCacheConfig: f.networkCacheConfig }));
+                            if (!0 === T.current) return (T.current = !1), void ("NullQueryReference" !== h.kind && E(h.variables, { fetchPolicy: h.fetchPolicy, networkCacheConfig: h.networkCacheConfig }));
                             var a = g.current;
                             if (s.current) {
                                 var t,
@@ -781,7 +768,7 @@
                                 try {
                                     for (r.s(); !(t = r.n()).done; ) {
                                         var l = t.value;
-                                        if (l === f) break;
+                                        if (l === h) break;
                                         a.delete(l), "NullQueryReference" !== l.kind && (y(e) ? l.dispose && l.dispose() : l.releaseQuery && l.releaseQuery());
                                     }
                                 } catch (e) {
@@ -791,7 +778,7 @@
                                 }
                             }
                         },
-                        [f, s, E, e],
+                        [h, s, E, e],
                     ),
                     u(
                         function () {
@@ -812,10 +799,10 @@
                         },
                         [e],
                     ),
-                    ["NullQueryReference" === f.kind ? null : f, E, w]
+                    ["NullQueryReference" === h.kind ? null : h, E, w]
                 );
             };
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterCoinsManagement.07bc9a5a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterCoinsManagement.11e4da6a.js.map

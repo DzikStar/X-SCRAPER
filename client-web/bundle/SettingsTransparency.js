@@ -31,10 +31,10 @@
                     const { backButtonType: e, centerTitle: t, centeredLogo: n, fixed: a, hideBackButton: s, isFullWidth: o, isLarge: l, leftControl: d, middleControl: p, position: m, rightControl: u, secondaryBar: g, style: f, subtitle: _, title: E, titleDomId: Z, titleIconCell: y, titleIconCellSize: b, withBackground: S, withWideContainer: C } = this.props,
                         { isModal: w } = this.context,
                         x = s ? d : r.createElement(i.Z, { backButtonType: e, onClick: this._handleBackClick }),
-                        D = (function (e, t, n) {
+                        A = (function (e, t, n) {
                             return e && !(t && n);
                         })(!!S, w, !!g);
-                    return r.createElement(r.Fragment, null, r.createElement(c.Z, { centerTitle: t, centeredLogo: n, isFullWidth: o, isLarge: l, leftControl: x, middleControl: p, position: h(m, w, a), rightControl: u, style: f, subtitle: _, title: E, titleDomId: Z, titleIconCell: y, titleIconCellSize: b, withBackground: D, withWideContainer: C }), g || null);
+                    return r.createElement(r.Fragment, null, r.createElement(c.Z, { centerTitle: t, centeredLogo: n, isFullWidth: o, isLarge: l, leftControl: x, middleControl: p, position: h(m, w, a), rightControl: u, style: f, subtitle: _, title: E, titleDomId: Z, titleIconCell: y, titleIconCellSize: b, withBackground: A, withWideContainer: C }), g || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
@@ -272,8 +272,8 @@
                 C = l().bf96fda4,
                 w = r.createElement(l().I18NFormatMessage, { $i18n: "i1e24825" }, r.createElement(s.ZP, { link: "https://help.x.com/safety-and-security/birthday-visibility-settings" }, l().ea522535)),
                 x = r.createElement(l().I18NFormatMessage, { $i18n: "a200fc71" }, r.createElement(s.ZP, { link: "/settings/profile" }, l().hf5ca8f8)),
-                D = l().fe1fc83e,
-                A = l().bf9c74d0,
+                A = l().fe1fc83e,
+                D = l().bf9c74d0,
                 P = l().e9f1fbcc,
                 k = l().cf0daa24;
             class I extends r.Component {
@@ -296,7 +296,7 @@
                         (this._renderUseAge = () => {
                             const { personalizationPreferences: e } = this.props,
                                 t = e && e.age_preferences && e.age_preferences.use_age_for_personalization;
-                            return r.createElement(i.Z, { checked: !t, key: "use_age_for_personalization", label: A, name: "use_age_for_personalization", onChange: this._handleBooleanChanged });
+                            return r.createElement(i.Z, { checked: !t, key: "use_age_for_personalization", label: D, name: "use_age_for_personalization", onChange: this._handleBooleanChanged });
                         }),
                         (this._handleBooleanChanged = (e, t) => {
                             const { createLocalApiErrorHandler: n, updateSettings: r } = this.props;
@@ -308,7 +308,7 @@
                 }
                 render() {
                     const { fetchStatus: e, location: t } = this.props;
-                    return r.createElement(h.Z, null, r.createElement(u.Z, { location: t, title: C }, r.createElement(p.Z, null, r.createElement(a.Z, { style: [f.Z.infoItem, f.Z.bottomBorder] }, r.createElement(s.ZP, { color: "gray700" }, this.isLoggedIn ? w : D)), r.createElement(m.Z, { fetch: this._combinedFetches, fetchStatus: e, render: () => this._render() }))));
+                    return r.createElement(h.Z, null, r.createElement(u.Z, { location: t, title: C }, r.createElement(p.Z, null, r.createElement(a.Z, { style: [f.Z.infoItem, f.Z.bottomBorder] }, r.createElement(s.ZP, { color: "gray700" }, this.isLoggedIn ? w : A)), r.createElement(m.Z, { fetch: this._combinedFetches, fetchStatus: e, render: () => this._render() }))));
                 }
             }
             I.contextType = d.rC;
@@ -342,8 +342,8 @@
                     .withAnalytics({ page: "settings", section: "your_twitter_data", component: "devices" }),
                 w = "linkedBrowsersView",
                 x = "linkedMobileDevicesView",
-                D = "linkedEmailAddressesView",
-                A = "helpText",
+                A = "linkedEmailAddressesView",
+                D = "helpText",
                 P = d().hc36dbba,
                 k = d().j4fa776e,
                 I = d().i7acdb36,
@@ -412,8 +412,8 @@
                                             C
                                                 ? (() => {
                                                       const e = { offTwitterActivitySettingLink: r.createElement(o.ZP, { link: z }) },
-                                                          t = r.createElement(o.ZP, { color: "gray700", style: [_.Z.helpText, _.Z.helpTextExtraPadded] }, $.isTrue("ucpd_enabled") ? r.createElement(d().I18NFormatMessage, { $i18n: "b78e30fd", testID: A }, r.cloneElement(e.offTwitterActivitySettingLink, null, d().f0f72665)) : r.createElement(d().I18NFormatMessage, { $i18n: "bb593021", testID: A }, r.cloneElement(e.offTwitterActivitySettingLink, null, d().d33b4e5b)));
-                                                      return r.createElement(a.Z, null, s.associated_devices ? r.createElement(a.Z, { style: [_.Z.infoItem, _.Z.bottomBorder], testID: w }, r.createElement(o.ZP, { weight: "bold" }, B), r.createElement(o.ZP, { color: "gray700", style: _.Z.helpText }, L({ count: s.associated_devices.num_browsers })), t) : null, s.associated_devices ? r.createElement(a.Z, { style: [_.Z.infoItem, _.Z.bottomBorder], testID: x }, r.createElement(o.ZP, { weight: "bold" }, R), r.createElement(o.ZP, { color: "gray700", style: _.Z.helpText }, F({ count: s.associated_devices.num_devices })), t) : null, r.createElement(a.Z, { style: _.Z.infoItem, testID: D }, r.createElement(o.ZP, { weight: "bold" }, H), r.createElement(o.ZP, { color: "gray700", style: [_.Z.helpText, _.Z.helpTextExtraPadded] }, r.createElement(d().I18NFormatMessage, { $i18n: "h60f45ef", testID: A }, r.cloneElement(e.offTwitterActivitySettingLink, null, d().c4668d4f)))));
+                                                          t = r.createElement(o.ZP, { color: "gray700", style: [_.Z.helpText, _.Z.helpTextExtraPadded] }, $.isTrue("ucpd_enabled") ? r.createElement(d().I18NFormatMessage, { $i18n: "b78e30fd", testID: D }, r.cloneElement(e.offTwitterActivitySettingLink, null, d().f0f72665)) : r.createElement(d().I18NFormatMessage, { $i18n: "bb593021", testID: D }, r.cloneElement(e.offTwitterActivitySettingLink, null, d().d33b4e5b)));
+                                                      return r.createElement(a.Z, null, s.associated_devices ? r.createElement(a.Z, { style: [_.Z.infoItem, _.Z.bottomBorder], testID: w }, r.createElement(o.ZP, { weight: "bold" }, B), r.createElement(o.ZP, { color: "gray700", style: _.Z.helpText }, L({ count: s.associated_devices.num_browsers })), t) : null, s.associated_devices ? r.createElement(a.Z, { style: [_.Z.infoItem, _.Z.bottomBorder], testID: x }, r.createElement(o.ZP, { weight: "bold" }, R), r.createElement(o.ZP, { color: "gray700", style: _.Z.helpText }, F({ count: s.associated_devices.num_devices })), t) : null, r.createElement(a.Z, { style: _.Z.infoItem, testID: A }, r.createElement(o.ZP, { weight: "bold" }, H), r.createElement(o.ZP, { color: "gray700", style: [_.Z.helpText, _.Z.helpTextExtraPadded] }, r.createElement(d().I18NFormatMessage, { $i18n: "h60f45ef", testID: D }, r.cloneElement(e.offTwitterActivitySettingLink, null, d().c4668d4f)))));
                                                   })()
                                                 : r.createElement(a.Z, { style: _.Z.featureDisabledCallout }, r.createElement(o.ZP, { align: "center", size: "headline1", style: _.Z.featureDisabledTitle }, N), r.createElement(o.ZP, { align: "center", color: "gray700", style: _.Z.helpText }, $.isTrue("ucpd_enabled") ? r.createElement(d().I18NFormatMessage, { $i18n: "h0085c59" }, r.createElement(o.ZP, { link: z }, d().adaafb3f)) : r.createElement(d().I18NFormatMessage, { $i18n: "f27cc8af" }, r.createElement(o.ZP, { link: z }, d().c0f6f911)))),
                                         );
@@ -453,8 +453,8 @@
                     .propsFromState(() => ({ fetchStatus: w, gender: S.VU, personalizationPreferences: S.LP }))
                     .propsFromActions(() => ({ addToast: C.fz, createLocalApiErrorHandler: (0, y.zr)("SETTINGS_TRANSPARENCY_DASHBOARD_GENDER_SCREEN"), fetchData: S.nJ, fetchPreferences: S.CP, updateGender: S.Bm, updateSettings: S.VP }))
                     .withAnalytics({ page: "settings", section: "your_twitter_data", component: "gender" }),
-                D = h().a8d0108e,
-                A = "custom",
+                A = h().a8d0108e,
+                D = "custom",
                 P = h().a8d0108e,
                 k = h().fbf0e61e,
                 I = h().de323650,
@@ -465,7 +465,7 @@
                 R = [
                     { label: I, value: "female" },
                     { label: T, value: "male" },
-                    { label: v, value: A },
+                    { label: v, value: D },
                 ],
                 F = h().c5abae66,
                 N = h().cdb0d3e6,
@@ -481,7 +481,7 @@
                         (this._render = () => a.createElement("div", null, a.createElement(s.Z, { style: [Z.Z.infoItem, Z.Z.bottomBorder] }, a.createElement(o.ZP, { color: "gray700" }, this.isLoggedIn ? k : F)), this.isLoggedIn ? this._renderGenderSelector() : this._renderLoggedOut())),
                         (this._renderMessage = (e, t) => a.createElement(s.Z, { style: E.Z.calloutTextBlock }, a.createElement(o.ZP, { align: "center", size: "headline1" }, e), t ? a.createElement(o.ZP, { align: "center", color: "gray700", style: Z.Z.helpText }, t) : null)),
                         (this._handleItemChanged = (e, t) => {
-                            const n = t === A;
+                            const n = t === D;
                             this.setState({ self_identify: n, gender: n ? null : t });
                         }),
                         (this._handleCustomGenderUpdate = (e) => {
@@ -490,7 +490,7 @@
                         }),
                         (this._handleSaveGender = () => {
                             const { addToast: e, createLocalApiErrorHandler: t, updateGender: n } = this.props,
-                                r = this.state.self_identify ? A : this.state.gender || A;
+                                r = this.state.self_identify ? D : this.state.gender || D;
                             this._scribeAction(),
                                 n({ type: r, value: this.state.gender || "" })
                                     .then(() => e({ text: B }), t({ showToast: !0 }))
@@ -508,7 +508,7 @@
                             const { analytics: e } = this.props;
                             e.scribe({ action: "edit" });
                         }),
-                        (this.state = { self_identify: this.props.gender.type === A, gender: this.props.gender.value });
+                        (this.state = { self_identify: this.props.gender.type === D, gender: this.props.gender.value });
                 }
                 UNSAFE_componentWillMount() {
                     (this.isLoggedIn = !!this.context.viewerUserId), this.props.fetchPreferences();
@@ -520,7 +520,7 @@
                 }
                 _renderGenderSelector() {
                     const { gender: e } = this.props;
-                    return a.createElement(s.Z, null, a.createElement(i.Z, { name: "gender", onChange: this._handleItemChanged, options: R, value: this.selectedGender }), this.selectedGender === A ? a.createElement(c.Z, { defaultValue: e.value && e.type === A ? e.value : "", label: D, maxLength: 30, name: "genderOther", onChange: this._handleCustomGenderUpdate, type: "text" }) : null);
+                    return a.createElement(s.Z, null, a.createElement(i.Z, { name: "gender", onChange: this._handleItemChanged, options: R, value: this.selectedGender }), this.selectedGender === D ? a.createElement(c.Z, { defaultValue: e.value && e.type === D ? e.value : "", label: A, maxLength: 30, name: "genderOther", onChange: this._handleCustomGenderUpdate, type: "text" }) : null);
                 }
                 _renderLoggedOut() {
                     const { personalizationPreferences: e } = this.props,
@@ -529,7 +529,7 @@
                 }
                 get selectedGender() {
                     const { gender: e } = this.props;
-                    return this.state.self_identify ? A : this.state.gender ? this.state.gender : e && e.type;
+                    return this.state.self_identify ? D : this.state.gender ? this.state.gender : e && e.type;
                 }
                 get isGenderValid() {
                     const { gender: e } = this.props;
@@ -540,7 +540,7 @@
             const G = x(M);
         },
         349154: (e, t, n) => {
-            n.r(t), n.d(t, { TransparencyDashboardLanguageScreen: () => x, default: () => D });
+            n.r(t), n.d(t, { TransparencyDashboardLanguageScreen: () => x, default: () => A });
             var r = n(202784),
                 a = n(325686),
                 s = n(731708),
@@ -609,7 +609,7 @@
                     return r.createElement(l.Z, null, r.createElement(p.Z, { location: t, title: y }, r.createElement(d.Z, null, r.createElement(h.Z, { fetch: this._combinedFetches, fetchStatus: e, render: () => this._render() }))));
                 }
             }
-            const D = Z(x);
+            const A = Z(x);
         },
         821853: (e, t, n) => {
             n.r(t), n.d(t, { TransparencyDashboardLocationsScreen: () => k, default: () => I });
@@ -639,8 +639,8 @@
                 C = c().e68b09b4,
                 w = { headline: c().ddefdd1c, text: c().hea740ac, confirmButtonLabel: c().e68b09b4 },
                 x = c().a26e0d52,
-                D = c().ae415fd2,
-                A = r.createElement(c().I18NFormatMessage, { $i18n: "a1fdeb45" }, r.createElement(s.ZP, { link: "/settings/location_information" }, c().b9d98dec)),
+                A = c().ae415fd2,
+                D = r.createElement(c().I18NFormatMessage, { $i18n: "a1fdeb45" }, r.createElement(s.ZP, { link: "/settings/location_information" }, c().b9d98dec)),
                 P = c().he447966;
             class k extends r.Component {
                 constructor(...e) {
@@ -652,7 +652,7 @@
                         (this._render = () => {
                             const { settings: e } = this.props,
                                 t = e.allowLocationHistoryUse;
-                            return r.createElement(h.Z, null, r.createElement("div", null, r.createElement(a.Z, { style: [g.Z.infoItem, g.Z.bottomBorder] }, r.createElement(s.ZP, { color: "gray700" }, S)), t ? this._renderLocations() : this._renderMessage(D, A)));
+                            return r.createElement(h.Z, null, r.createElement("div", null, r.createElement(a.Z, { style: [g.Z.infoItem, g.Z.bottomBorder] }, r.createElement(s.ZP, { color: "gray700" }, S)), t ? this._renderLocations() : this._renderMessage(A, D)));
                         }),
                         (this._renderLocations = () => {
                             const { personalizationData: e } = this.props,
@@ -714,7 +714,7 @@
             const w = _(C);
         },
         515321: (e, t, n) => {
-            n.r(t), n.d(t, { TransparencyDashboardPartnerInterestsScreen: () => A, default: () => P });
+            n.r(t), n.d(t, { TransparencyDashboardPartnerInterestsScreen: () => D, default: () => P });
             var r = n(202784),
                 a = n(325686),
                 s = n(688715),
@@ -741,8 +741,8 @@
                 C = l().gc8f2e14,
                 w = l().e9f1fbcc,
                 x = l().cf0daa24,
-                D = (0, s.ju)("https://support.x.com/articles/20175258");
-            class A extends r.Component {
+                A = (0, s.ju)("https://support.x.com/articles/20175258");
+            class D extends r.Component {
                 constructor(...e) {
                     super(...e),
                         (this._render = () => {
@@ -754,7 +754,7 @@
                             return r.createElement(
                                 "div",
                                 null,
-                                r.createElement(a.Z, { style: [g.Z.infoItem, g.Z.bottomBorder] }, r.createElement(o.ZP, { color: "gray700" }, r.createElement(l().I18NFormatMessage, { $i18n: "adc26d49" }, r.createElement(o.ZP, { link: D }, l().e6dbe66b)))),
+                                r.createElement(a.Z, { style: [g.Z.infoItem, g.Z.bottomBorder] }, r.createElement(o.ZP, { color: "gray700" }, r.createElement(l().I18NFormatMessage, { $i18n: "adc26d49" }, r.createElement(o.ZP, { link: A }, l().e6dbe66b)))),
                                 e.map((e) => r.createElement(i.Z, { checked: -1 === n.indexOf(e.id), key: e.id, label: e.display_name, name: e.id.toString(), onChange: this._handleUpdateInterest })),
                                 0 === e.length ? this._renderMessage(w, x) : r.createElement(a.Z, { style: u.Z.calloutTextBlock }, r.createElement(o.ZP, { color: "gray700", style: g.Z.helpText }, C)),
                             );
@@ -777,10 +777,10 @@
                     return r.createElement(h.Z, null, r.createElement(m.Z, { location: t, title: S }, r.createElement(p.Z, null, r.createElement(d.Z, { fetchStatus: e, onRequestRetry: this._handleFetchData, render: this._render }))));
                 }
             }
-            const P = b(A);
+            const P = b(D);
         },
         546703: (e, t, n) => {
-            n.r(t), n.d(t, { TransparencyDashboardRequestDataScreen: () => A, default: () => P });
+            n.r(t), n.d(t, { TransparencyDashboardRequestDataScreen: () => D, default: () => P });
             var r = n(202784),
                 a = n(325686),
                 s = n(731708),
@@ -807,8 +807,8 @@
                 C = c().abedd45c,
                 w = c().abedd45c,
                 x = c().g49741e8,
-                D = c().dc370a0c;
-            class A extends r.Component {
+                A = c().dc370a0c;
+            class D extends r.Component {
                 constructor(...e) {
                     super(...e),
                         (this._render = () => {
@@ -817,7 +817,7 @@
                         }),
                         (this._handleRequestDataClick = () => {
                             const { addToast: e, createDataDownload: t, primaryEmail: n } = this.props;
-                            n ? (this._scribeAction("email"), t().then(() => e({ text: D }))) : (this._scribeAction("download"), window.open((0, o.ju)("https://x.com/account/personalization/download_your_data.pdf"), "_blank"));
+                            n ? (this._scribeAction("email"), t().then(() => e({ text: A }))) : (this._scribeAction("download"), window.open((0, o.ju)("https://x.com/account/personalization/download_your_data.pdf"), "_blank"));
                         }),
                         (this._handleFetchDevices = () => {
                             const { fetchDevices: e } = this.props;
@@ -836,8 +836,8 @@
                     return r.createElement(h.Z, null, r.createElement(m.Z, { location: t, title: C }, r.createElement(p.Z, null, this.isLoggedIn ? r.createElement(l.Z, { fetchStatus: e, onRequestRetry: this._handleFetchDevices, render: this._render }) : this._render())));
                 }
             }
-            A.contextType = d.rC;
-            const P = y(A);
+            D.contextType = d.rC;
+            const P = y(D);
         },
         876634: (e, t, n) => {
             n.r(t), n.d(t, { TransparencyDashboardTailoredAudiencesScreen: () => B, default: () => L });
@@ -869,11 +869,11 @@
                         r = (0, _.Z)(n) ? w.ZP.LOADED : y.selectFetchStatus(e);
                     return (0, w.h1)(b.qu(e), b.I3(e), r);
                 },
-                D = (0, Z.Z)()
+                A = (0, Z.Z)()
                     .propsFromState(() => ({ data: b.yA, fetchStatus: x, preferences: b.LP, primaryEmail: y.selectFirstEmail }))
                     .propsFromActions(() => ({ addToast: S.fz, createAudienceDownload: b.Rh, createLocalApiErrorHandler: (0, E.zr)("SETTINGS_TRANSPARENCY_DASHBOARD_TAILORED_AUDIENCES_SCREEN"), fetchData: b.nJ, fetchDevices: y.fetchDevices, fetchPreferences: b.CP }))
                     .withAnalytics({ page: "settings", section: "your_twitter_data", component: "tailored_audiences" }),
-                A = { headline: d().hf9c2caa, text: d().c29b7971, confirmButtonLabel: d().b9e1cf02 },
+                D = { headline: d().hf9c2caa, text: d().c29b7971, confirmButtonLabel: d().b9e1cf02 },
                 P = d().da202f9a,
                 k = d().a8276fac,
                 I = d().g7912a84,
@@ -893,7 +893,7 @@
                                     primaryEmail: t,
                                 } = this.props,
                                 n = 0 !== e.num_advertisers && 0 !== e.num_audiences;
-                            return r.createElement("div", null, r.createElement(a.Z, { style: [f.Z.infoItem, f.Z.bottomBorder] }, r.createElement(o.ZP, { color: "gray700" }, r.createElement(d().I18NFormatMessage, { $i18n: "a97ef88f" }, r.createElement(o.ZP, { link: v }, d().ed8c03f5)))), r.createElement(a.Z, { style: [f.Z.infoItem, f.Z.bottomBorder] }, r.createElement(o.ZP, null, r.createElement(d().I18NFormatMessage, { $i18n: "f451c521" }, r.createElement("strong", null, d().e1a4daac({ num_audiences: e.num_audiences })), r.createElement("strong", null, d().acb25e32({ num_advertisers: e.num_advertisers }))))), r.createElement(a.Z, { style: [f.Z.infoItem, n && f.Z.bottomBorder] }, r.createElement(o.ZP, { color: "gray700" }, T)), n ? r.createElement(i.Z, { color: "primary", label: k, onPress: this._handleRequestDataClick }) : null, this.state.showEmailConfirmation && r.createElement(c.Z, { confirmButtonLabel: A.confirmButtonLabel, headline: A.headline, onCancel: this._handleCancelEmail, onConfirm: this._handleConfirmEmail, text: A.text({ primaryEmail: t }) }));
+                            return r.createElement("div", null, r.createElement(a.Z, { style: [f.Z.infoItem, f.Z.bottomBorder] }, r.createElement(o.ZP, { color: "gray700" }, r.createElement(d().I18NFormatMessage, { $i18n: "a97ef88f" }, r.createElement(o.ZP, { link: v }, d().ed8c03f5)))), r.createElement(a.Z, { style: [f.Z.infoItem, f.Z.bottomBorder] }, r.createElement(o.ZP, null, r.createElement(d().I18NFormatMessage, { $i18n: "f451c521" }, r.createElement("strong", null, d().e1a4daac({ num_audiences: e.num_audiences })), r.createElement("strong", null, d().acb25e32({ num_advertisers: e.num_advertisers }))))), r.createElement(a.Z, { style: [f.Z.infoItem, n && f.Z.bottomBorder] }, r.createElement(o.ZP, { color: "gray700" }, T)), n ? r.createElement(i.Z, { color: "primary", label: k, onPress: this._handleRequestDataClick }) : null, this.state.showEmailConfirmation && r.createElement(c.Z, { confirmButtonLabel: D.confirmButtonLabel, headline: D.headline, onCancel: this._handleCancelEmail, onConfirm: this._handleConfirmEmail, text: D.text({ primaryEmail: t }) }));
                         }),
                         (this._requestUserData = () => {
                             const { addToast: e, createAudienceDownload: t, primaryEmail: n } = this.props;
@@ -922,7 +922,7 @@
                 }
             }
             B.contextType = h.rC;
-            const L = D(B);
+            const L = A(B);
         },
         380052: (e, t, n) => {
             n.r(t), n.d(t, { TransparencyDashboardTwitterInterestsScreen: () => L, default: () => R });
@@ -952,8 +952,8 @@
                     .propsFromState(() => ({ fetchStatus: w, interests: S.fO, preferences: S.LP }))
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, y.zr)("SETTINGS_TRANSPARENCY_DASHBOARD_TWITTER_INTERESTS_SCREEN"), fetchInterests: S.lo, fetchPreferences: S.CP, updateInterest: S.q_ }))
                     .withAnalytics({ page: "settings", section: "your_twitter_data", component: "twitter_interests" }),
-                D = l().h1f01a24,
-                A = l().c07b4316,
+                A = l().h1f01a24,
+                D = l().c07b4316,
                 P = l().e97196fe,
                 k = l().ja0f971c,
                 I = l().gd1ce494,
@@ -967,9 +967,9 @@
                             if (!this._hasKnownInterests()) return null;
                             const e = [
                                 { to: "/settings/your_twitter_data/twitter_interests", key: P, label: P },
-                                { to: B, key: A, label: A },
+                                { to: B, key: D, label: D },
                             ];
-                            return r.createElement(p.Z, { "aria-label": D, links: e });
+                            return r.createElement(p.Z, { "aria-label": A, links: e });
                         }),
                         (this._render = () => {
                             const {
@@ -1030,7 +1030,7 @@
                 }
                 render() {
                     const { fetchStatus: e, location: t } = this.props;
-                    return r.createElement(u.Z, null, r.createElement(_.Z, { location: t, secondaryBar: this._renderTabs(), title: D }, r.createElement(g.Z, null, r.createElement(i.Z, null, r.createElement(h.Z, { fetchStatus: e, onRequestRetry: this._handleFetchData, render: this._render })))));
+                    return r.createElement(u.Z, null, r.createElement(_.Z, { location: t, secondaryBar: this._renderTabs(), title: A }, r.createElement(g.Z, null, r.createElement(i.Z, null, r.createElement(h.Z, { fetchStatus: e, onRequestRetry: this._handleFetchData, render: this._render })))));
                 }
             }
             L.contextType = m.rC;
@@ -1203,11 +1203,11 @@
                 render() {
                     const { Icon: e, "aria-label": t, badgeCount: n, badgePip: r, children: s, color: o, isActive: l, isCompact: d, isPillLink: h, isRoundedRect: p, isWebRedesign: g, retainScrollPosition: b, style: C, to: w } = this.props,
                         { location: x } = this.state,
-                        D = w ? this._getMemoizedLink(w, b) : void 0,
-                        A = l ? l(w) : x?.pathname === D?.pathname,
+                        A = w ? this._getMemoizedLink(w, b) : void 0,
+                        D = l ? l(w) : x?.pathname === A?.pathname,
                         P = f.Z.generate({ backgroundColor: "transparent", color: i.default.theme.colors.text, insetFocusRing: !0 }),
-                        k = g ? "medium" : A ? "bold" : "medium";
-                    return a.createElement(_.Z, { "aria-label": t, "aria-selected": A, focusable: !!A, interactiveStyles: P, link: D, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [h ? S.pill : S.link, h && A ? S.active : null, d ? (h ? S.compactPill : S.compactLink) : null, p ? S.roundedRect : null, C], withoutInteractiveStyles: g || h }, ({ isFocused: t, isHovered: l }) => a.createElement(c.Z, { style: h && S.flexGrow }, a.createElement(m.ZP, { size: g ? "headline2" : void 0, style: [S.text, { color: this._getTextColor(A, l, g, h) }, d && S.compactText, g && t && S.focusedText], weight: k }, e && a.createElement(e, { style: S.icon }), s, g || h ? null : a.createElement(c.Z, { style: A && [S.border, { backgroundColor: i.default.theme.colors[o] }] })), n ? a.createElement(u.Z, { count: n, standalone: !0, style: [S.badge, n >= 10 && S.multiDigitBadge, n >= 20 && S.truncatedCountBadge], truncatedCountFormatter: y, unreadCountLabel: E, withBorder: !1 }) : r ? a.createElement(u.Z, { pip: !0, standalone: !0, style: S.badgePip, textColor: "red500", unreadCountLabel: Z, withBorder: !1 }) : null));
+                        k = g ? "medium" : D ? "bold" : "medium";
+                    return a.createElement(_.Z, { "aria-label": t, "aria-selected": D, focusable: !!D, interactiveStyles: P, link: A, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [h ? S.pill : S.link, h && D ? S.active : null, d ? (h ? S.compactPill : S.compactLink) : null, p ? S.roundedRect : null, C], withoutInteractiveStyles: g || h }, ({ isFocused: t, isHovered: l }) => a.createElement(c.Z, { style: h && S.flexGrow }, a.createElement(m.ZP, { size: g ? "headline2" : void 0, style: [S.text, { color: this._getTextColor(D, l, g, h) }, d && S.compactText, g && t && S.focusedText], weight: k }, e && a.createElement(e, { style: S.icon }), s, g || h ? null : a.createElement(c.Z, { style: D && [S.border, { backgroundColor: i.default.theme.colors[o] }] })), n ? a.createElement(u.Z, { count: n, standalone: !0, style: [S.badge, n >= 10 && S.multiDigitBadge, n >= 20 && S.truncatedCountBadge], truncatedCountFormatter: y, unreadCountLabel: E, withBorder: !1 }) : r ? a.createElement(u.Z, { pip: !0, standalone: !0, style: S.badgePip, textColor: "red500", unreadCountLabel: Z, withBorder: !1 }) : null));
                 }
             }
             (b.contextType = g.Z), (b.defaultProps = { children: [], color: "primary", retainScrollPosition: !0 });
@@ -1249,19 +1249,6 @@
                     return a.createElement(s.Z, { "aria-label": t, buttonsContainerStyle: i && w.gap, childrenStyle: !u && w.flexGrow, key: p, style: [i ? null : w.segmentedControl, u && w.leftAligned, d], visibleItemIndex: h }, g);
                 };
         },
-        988227: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => c });
-            var r = n(202784),
-                a = n(890601),
-                s = n(783427),
-                o = n(347101);
-            const i = (e = {}) => {
-                const { direction: t } = (0, s.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M12 21c-7.605 0-10.804-8.296-10.937-8.648L.932 12l.131-.352C1.196 11.295 4.394 3 12 3s10.804 8.296 10.937 8.648l.131.352-.131.352C22.804 12.705 19.606 21 12 21zm-8.915-9c.658 1.467 3.5 7 8.915 7s8.257-5.533 8.915-7c-.658-1.467-3.5-7-8.915-7s-8.257 5.533-8.915 7zM12 16c-2.206 0-4-1.794-4-4s1.794-4 4-4 4 1.794 4 4-1.794 4-4 4zm0-6c-1.103 0-2 .897-2 2s.897 2 2 2 2-.897 2-2-.897-2-2-2z" })) }, { writingDirection: t });
-            };
-            i.metadata = { width: 24, height: 24 };
-            const c = i;
-        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsTransparency.31870fca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsTransparency.17e1665a.js.map

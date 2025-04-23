@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.Compose", "shared~bundle.AccountVerification~bundle.SettingsProfile~bundle.UserLists~loader.MediaPickerWithPreview~bundl"],
+    ["bundle.Compose", "shared~bundle.AccountVerification~bundle.SettingsProfile~loader.MediaPickerWithPreview~bundle.RichTextCompose"],
     {
         625661: (e, t, a) => {
             a.d(t, { ZP: () => h });
@@ -206,12 +206,13 @@
             const Z = (0, R.Z)({
                     loader: () =>
                         Promise.all([
-                            a.e("icons.5"),
-                            a.e("icons.28"),
-                            a.e("icons.17"),
+                            a.e("icons.10"),
+                            a.e("icons.21"),
+                            a.e("icons.16"),
                             a.e("modules.common-e907d115"),
                             a.e("modules.common-e019dbda"),
-                            a.e("icons.25"),
+                            a.e("icons.24"),
+                            a.e("icons.28"),
                             a.e("modules.audio-6107ac1a"),
                             a.e("modules.audio-b953418a"),
                             a.e("modules.audio-7c51e6a7"),
@@ -223,10 +224,8 @@
                             a.e("modules.audio-262c94d4"),
                             a.e("modules.audio-c6fe4ea4"),
                             a.e("icons.4"),
-                            a.e("icons.13"),
-                            a.e("icons.1"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-34cda585"),
+                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-ee359ff7"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -271,8 +270,8 @@
                     renderPlaceholder: (e, t) => i.createElement(P.Z, { hasError: e, onRetry: t }),
                 }),
                 I = h().gd80afba,
-                L = h().j322caee,
-                k = h().abd845fe,
+                k = h().j322caee,
+                L = h().abd845fe,
                 x = h().df1b0708,
                 M = h().cd959e5c,
                 F = h().e68b09b4,
@@ -330,7 +329,7 @@
                         Z = !!a.mediaFile?.isVideo;
                     return i.createElement(n.ZP, null, ({ windowWidth: t }) => {
                         const a = void 0 !== D ? D : !y.Z.isTwoColumnLayout(t);
-                        return i.createElement(r.Z, { "aria-label": e || U, onLayout: this._handleMediaPreviewLayout, role: h, style: [g, O.cursor, R && O.gifPlayButton, A] }, this._renderPreview(), R && !T && i.createElement(o.Z, { "aria-label": x, onPress: this._handleGifClick, size: "small" }), P ? i.createElement(B.ZP, { type: B.AM }) : null, _ && !Z ? i.createElement(s.Z, { align: "left", altLabel: e }) : null, i.createElement(r.Z, { style: O.editMedia }, C ? i.createElement(d.ZP, { "aria-label": V, hoverLabel: { label: V }, icon: i.createElement(p.default, null), size: "small", type: "onMediaDominantColorFilled" }) : null, E && v ? i.createElement(d.ZP, { "aria-label": L, icon: i.createElement(b.default, { style: O.editSensitiveWarningIcon }), onPress: c, size: "small", type: "onMediaDominantColorFilled" }) : null, E ? i.createElement(d.ZP, { "aria-label": I, icon: a ? i.createElement(m.default, null) : void 0, onPress: l, size: a ? "xSmall" : "small", type: "onMediaDominantColorFilled" }, a ? void 0 : k) : null), w ? i.createElement(d.ZP, { "aria-label": M, hoverLabel: { label: F }, icon: i.createElement(S.default, null), onPress: u, size: "small", style: O.buttonRight, type: "onMediaDominantColorFilled" }) : null);
+                        return i.createElement(r.Z, { "aria-label": e || U, onLayout: this._handleMediaPreviewLayout, role: h, style: [g, O.cursor, R && O.gifPlayButton, A] }, this._renderPreview(), R && !T && i.createElement(o.Z, { "aria-label": x, onPress: this._handleGifClick, size: "small" }), P ? i.createElement(B.ZP, { type: B.AM }) : null, _ && !Z ? i.createElement(s.Z, { align: "left", altLabel: e }) : null, i.createElement(r.Z, { style: O.editMedia }, C ? i.createElement(d.ZP, { "aria-label": V, hoverLabel: { label: V }, icon: i.createElement(p.default, null), size: "small", type: "onMediaDominantColorFilled" }) : null, E && v ? i.createElement(d.ZP, { "aria-label": k, icon: i.createElement(b.default, { style: O.editSensitiveWarningIcon }), onPress: c, size: "small", type: "onMediaDominantColorFilled" }) : null, E ? i.createElement(d.ZP, { "aria-label": I, icon: a ? i.createElement(m.default, null) : void 0, onPress: l, size: a ? "xSmall" : "small", type: "onMediaDominantColorFilled" }, a ? void 0 : L) : null), w ? i.createElement(d.ZP, { "aria-label": M, hoverLabel: { label: F }, icon: i.createElement(S.default, null), onPress: u, size: "small", style: O.buttonRight, type: "onMediaDominantColorFilled" }) : null);
                     });
                 }
                 _renderPreview() {
@@ -401,27 +400,7 @@
             a.d(t, { Z: () => i });
             a(202784);
             const i = (0, a(523561).Z)({
-                loader: () =>
-                    Promise.all([
-                        a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be"),
-                        a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-7a04a44b"),
-                        a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-db6b2e3a"),
-                        a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-4974a044"),
-                        a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-2a74f407"),
-                        a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-012d0d8f"),
-                        a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-757f3ab2"),
-                        a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-81ee9ca9"),
-                        a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-f3039e62"),
-                        a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e75d887d"),
-                        a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-b93f71f2"),
-                        a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-743779ef"),
-                        a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e851f17f"),
-                        a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-2b309ab6"),
-                        a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-29ff9b73"),
-                        a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d622e6ad"),
-                        a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d425713a"),
-                        a.e("ondemand.IntentPrompt"),
-                    ]).then(a.bind(a, 958679)),
+                loader: () => Promise.all([a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be"), a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-7a04a44b"), a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-db6b2e3a"), a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-4974a044"), a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-2a74f407"), a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-012d0d8f"), a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-757f3ab2"), a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-81ee9ca9"), a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-f3039e62"), a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e75d887d"), a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-b93f71f2"), a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-743779ef"), a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e851f17f"), a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-29ff9b73"), a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d622e6ad"), a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-d425713a"), a.e("ondemand.IntentPrompt")]).then(a.bind(a, 958679)),
             });
         },
         652904: (e, t, a) => {
@@ -664,8 +643,8 @@
             }
             const Z = new P(p().b01ed2db, p().i83e29e1, 5280),
                 I = new P(p().d4b7cff7, p().b211849f, 1e3),
-                L = ["lr", "mm", "uk", "us"],
-                k = p().b772cd66,
+                k = ["lr", "mm", "uk", "us"],
+                L = p().b772cd66,
                 x = p().e7c766ee,
                 M = p().ab68727a,
                 F = p().ae4057a2,
@@ -765,7 +744,7 @@
                                         o.ZP,
                                         null,
                                         ((e, t = "us") => {
-                                            if (L.find((e) => e === t.toLowerCase())) return Z.format(e);
+                                            if (k.find((e) => e === t.toLowerCase())) return Z.format(e);
                                             {
                                                 const t = 1.609344 * e;
                                                 return I.format(t);
@@ -789,7 +768,7 @@
                                 a = this._selectResults();
                             return i.createElement(r.Z, null, this._renderPlaces(a), t ? i.createElement(s.Z, { actionText: z({ query: e }), onClick: this._handleSubmit, textColor: "primary" }) : null, this._renderAttributionIfNeeded());
                         }),
-                        (this._renderRightControl = () => i.createElement(r.Z, { style: Q.actionButtonContainer }, i.createElement(d.ZP, { onPress: this._handleRemove, size: "small", style: Q.actionButton, type: "primaryText" }, O), i.createElement(d.ZP, { onPress: this._handleDone, size: "small", style: Q.actionButton, type: "primaryFilled" }, k))),
+                        (this._renderRightControl = () => i.createElement(r.Z, { style: Q.actionButtonContainer }, i.createElement(d.ZP, { onPress: this._handleRemove, size: "small", style: Q.actionButton, type: "primaryText" }, O), i.createElement(d.ZP, { onPress: this._handleDone, size: "small", style: Q.actionButton, type: "primaryFilled" }, L))),
                         (this._renderGeoPicker = () => {
                             const { history: e, initialFetchStatus: t, lastSearchFetchStatus: a } = this.props,
                                 { activeResultSet: r } = this.state,
@@ -818,7 +797,7 @@
                 j = R(q);
         },
         122421: (e, t, a) => {
-            a.r(t), a.d(t, { Recipients: () => L, default: () => k });
+            a.r(t), a.d(t, { Recipients: () => k, default: () => L });
             var i = a(202784),
                 r = a(325686),
                 n = a(420412),
@@ -857,7 +836,7 @@
                 P = u().caca3102,
                 Z = u().c6a6dc2f,
                 I = { page: "compose", section: "recipients" },
-                L = ({ history: e, inReplyToStatus: t, initialExcludedRecipients: a, recipientIds: c, updateExcludedRecipientsV2: u }) => {
+                k = ({ history: e, inReplyToStatus: t, initialExcludedRecipients: a, recipientIds: c, updateExcludedRecipientsV2: u }) => {
                     const [y, _] = i.useState(a);
                     if (!t) return i.createElement(g.Z, { to: "/compose/post" });
                     const { user: w } = t.retweeted_status || t,
@@ -883,7 +862,7 @@
                         };
                     return i.createElement(f.nO, { namespace: I }, i.createElement(p.Z, { backLocation: "/compose/post", history: e, onBackClick: D, rightControl: i.createElement(l.ZP, { onPress: D, size: "xSmall", type: "brandFilled" }, R), title: T }, B(w.id_str), c.length ? i.createElement(r.Z, null, i.createElement(n.Z, null), i.createElement(o.Z, { rightControl: v(), text: P }), i.createElement(m.Z, { renderUserCell: B, userIds: c })) : null));
                 },
-                k = B(L);
+                L = B(k);
         },
         379069: (e, t, a) => {
             a.r(t), a.d(t, { Compose: () => Ne, default: () => Ge });
@@ -940,8 +919,8 @@
                 P = a(704279),
                 Z = a(346789),
                 I = a(24949),
-                L = a(370751),
-                k = a(71620),
+                k = a(370751),
+                L = a(71620),
                 x = a(646522),
                 M = a(668214),
                 F = a(492057),
@@ -1029,7 +1008,7 @@
                         broadcastCommunityTweet: K,
                         composerData: (0, I.P1)(j, ne, se, N.gz, ie, (e, t, a, i, r) =>
                             e.map((e, n) => {
-                                const o = (0, L.Z)(e.mediaIds || []),
+                                const o = (0, k.Z)(e.mediaIds || []),
                                     s = i.filter((e) => o.has(e.id));
                                 return { ...de(e), media: s, quotedStatus: 0 === n ? a : void 0, text: 0 === n && t && !r ? t : e.text };
                             }),
@@ -1054,7 +1033,7 @@
                         shouldShowCommunityAudienceEducation: _e,
                         title: he,
                     }))
-                    .propsFromActions(() => ({ createDraftTweetApiErrorHandler: (0, k.zr)(U.CA), createScheduledTweetApiErrorHandler: (0, k.zr)(H.Hf), fetchScheduledTweets: H.FP, fetchDraftTweets: U.Le, addCommunityAudienceEducationFlag: () => (0, V.pj)(V.xH), updateAudienceControlsValue: z.sU, setActiveParentKey: z.jr }));
+                    .propsFromActions(() => ({ createDraftTweetApiErrorHandler: (0, L.zr)(U.CA), createScheduledTweetApiErrorHandler: (0, L.zr)(H.Hf), fetchScheduledTweets: H.FP, fetchDraftTweets: U.Le, addCommunityAudienceEducationFlag: () => (0, V.pj)(V.xH), updateAudienceControlsValue: z.sU, setActiveParentKey: z.jr }));
             var Ce = a(837880);
             const Ee = m().e6042757,
                 De = m().a4e39717,
@@ -1070,8 +1049,8 @@
                 Pe = m().a609edbe,
                 Ze = m().d4ebc798,
                 Ie = m().j24c37b2,
-                Le = m().dc295bb0,
-                ke = m().e536de22,
+                ke = m().dc295bb0,
+                Le = m().e536de22,
                 xe = m().cb817dae,
                 Me = "compose",
                 Fe = { page: Me },
@@ -1181,7 +1160,7 @@
                         i.createElement(c.ZP, null, ({ containerWidth: o }) => {
                             const c = A.Z.shouldRenderAsModal(o),
                                 m = (p && c) || this.showCommunityNonMemberPrompt;
-                            return i.createElement(i.Fragment, null, this.showCommunityNonMemberPrompt ? i.createElement(u.Z, { actionLabel: Ie, graphicDisplayMode: "none", headline: Le, onAction: this._handleCloseModal, subtext: ke }) : null, p && i.createElement(E.Z, { history: r, location: s }), m ? null : i.createElement(C.Z, { appBarRef: this._setAppBarRef, documentTitle: Pe, hideBackButton: !1, history: r, onBackClick: this._handleBackClick, renderHeader: this._renderHeaderWithProgressBar, rightControl: this._renderAppBarRightControl(), subtitle: l, title: n ? xe : h }, i.createElement(D.Z, { activeUser: e, composeHeader: t, composeSemanticCoreId: a, containerWidth: o, history: r, isModal: b, location: s, onCloseComposer: this._handleCloseComposer, onHandleAppBarHeight: this._handleAppBarHeight, onRef: this._handleComposeContainerRef, quotedStatus: d, setValidity: this._setValidity })));
+                            return i.createElement(i.Fragment, null, this.showCommunityNonMemberPrompt ? i.createElement(u.Z, { actionLabel: Ie, graphicDisplayMode: "none", headline: ke, onAction: this._handleCloseModal, subtext: Le }) : null, p && i.createElement(E.Z, { history: r, location: s }), m ? null : i.createElement(C.Z, { appBarRef: this._setAppBarRef, documentTitle: Pe, hideBackButton: !1, history: r, onBackClick: this._handleBackClick, renderHeader: this._renderHeaderWithProgressBar, rightControl: this._renderAppBarRightControl(), subtitle: l, title: n ? xe : h }, i.createElement(D.Z, { activeUser: e, composeHeader: t, composeSemanticCoreId: a, containerWidth: o, history: r, isModal: b, location: s, onCloseComposer: this._handleCloseComposer, onHandleAppBarHeight: this._handleAppBarHeight, onRef: this._handleComposeContainerRef, quotedStatus: d, setValidity: this._setValidity })));
                         }),
                     );
                 }
@@ -1327,4 +1306,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Compose.5779566a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Compose.4b22eb5a.js.map

@@ -450,16 +450,15 @@
             const n = (0, a(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        a.e("icons.5"),
-                        a.e("icons.20"),
-                        a.e("icons.22"),
-                        a.e("icons.25"),
-                        a.e("icons.6"),
                         a.e("icons.10"),
-                        a.e("icons.24"),
-                        a.e("icons.4"),
+                        a.e("icons.19"),
+                        a.e("icons.9"),
+                        a.e("icons.7"),
+                        a.e("icons.28"),
+                        a.e("icons.26"),
+                        a.e("icons.29"),
                         a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                        a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-34cda585"),
+                        a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-ee359ff7"),
                         a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                         a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                         a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -625,4 +624,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.immersiveTweetHandler.48c8b58a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.immersiveTweetHandler.2bb9462a.js.map

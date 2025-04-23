@@ -28,13 +28,13 @@
                         });
                 }
                 _renderContent() {
-                    const { backButtonType: e, centerTitle: t, centeredLogo: o, fixed: a, hideBackButton: n, isFullWidth: i, isLarge: c, leftControl: d, middleControl: p, position: m, rightControl: h, secondaryBar: g, style: b, subtitle: f, title: y, titleDomId: k, titleIconCell: C, titleIconCellSize: w, withBackground: v, withWideContainer: Z } = this.props,
+                    const { backButtonType: e, centerTitle: t, centeredLogo: o, fixed: a, hideBackButton: n, isFullWidth: i, isLarge: c, leftControl: d, middleControl: p, position: m, rightControl: h, secondaryBar: g, style: b, subtitle: f, title: y, titleDomId: k, titleIconCell: C, titleIconCellSize: v, withBackground: w, withWideContainer: Z } = this.props,
                         { isModal: E } = this.context,
                         x = n ? d : r.createElement(l.Z, { backButtonType: e, onClick: this._handleBackClick }),
                         T = (function (e, t, o) {
                             return e && !(t && o);
-                        })(!!v, E, !!g);
-                    return r.createElement(r.Fragment, null, r.createElement(s.Z, { centerTitle: t, centeredLogo: o, isFullWidth: i, isLarge: c, leftControl: x, middleControl: p, position: u(m, E, a), rightControl: h, style: b, subtitle: f, title: y, titleDomId: k, titleIconCell: C, titleIconCellSize: w, withBackground: T, withWideContainer: Z }), g || null);
+                        })(!!w, E, !!g);
+                    return r.createElement(r.Fragment, null, r.createElement(s.Z, { centerTitle: t, centeredLogo: o, isFullWidth: i, isLarge: c, leftControl: x, middleControl: p, position: u(m, E, a), rightControl: h, style: b, subtitle: f, title: y, titleDomId: k, titleIconCell: C, titleIconCellSize: v, withBackground: T, withWideContainer: Z }), g || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
@@ -71,12 +71,12 @@
                     const k = () => {
                             m.scribe({ component: f, action: "click", element: "card" });
                         },
-                        { backgroundcolor: C, buttonSize: w, cardWidth: v, marginbottom: Z, textcolor: E } = u ?? {},
+                        { backgroundcolor: C, buttonSize: v, cardWidth: w, marginbottom: Z, textcolor: E } = u ?? {},
                         x = C ? n.default.theme.colors[C] : n.default.theme.colors.gray0,
                         T = E ? n.default.theme.colors[E] : n.default.theme.colors.gray900,
                         B = Z ? n.default.theme.spaces[Z] : n.default.theme.spaces.space16,
-                        M = { [b.MarchMadness]: { header: g.header, description: g.description, legalDisclaimer: g.legalDisclaimer, buttonText: g.buttonText, image: g.image } }[o];
-                    return p ? r.createElement(i.Z, { interactiveStyles: null, link: t, onPress: k, style: y.bannerContainer }, r.createElement(l.Z, { resizeMode: "contain", source: { uri: "light" === n.default.theme.paletteName ? M.image.lightMode : M.image.darkMode }, style: { height: 85 } })) : r.createElement(a.Z, { style: [y.card, { backgroundColor: x }, { maxWidth: v }, { marginBottom: B }], testID: "popupCard" }, r.createElement(a.Z, { style: e ? y.horizontalContent : y.verticalContent }, r.createElement(a.Z, { style: e ? y.textContainer : null }, r.createElement(s.ZP, { size: "headline2", style: [y.popupTitle, { alignSelf: "flex-start" }], weight: "bold" }, M.header), r.createElement(s.ZP, { size: "subtext1", style: [y.popupDescription, { color: T }] }, M.description, " ", e ? null : M.legalDisclaimer)), r.createElement(a.Z, { style: y.buttonContainer }, r.createElement(c.ZP, { backgroundColor: "light" === n.default.theme.paletteName ? "orange300" : "orange600", borderColor: "transparent", link: t, onClick: k, size: "medium", style: [y.popupButton, { width: w }] }, M.buttonText), e && r.createElement(s.ZP, { size: "subtext3", style: [y.legalDisclaimer, { color: T }] }, M.legalDisclaimer))));
+                        S = { [b.MarchMadness]: { header: g.header, description: g.description, legalDisclaimer: g.legalDisclaimer, buttonText: g.buttonText, image: g.image } }[o];
+                    return p ? r.createElement(i.Z, { interactiveStyles: null, link: t, onPress: k, style: y.bannerContainer }, r.createElement(l.Z, { resizeMode: "contain", source: { uri: "light" === n.default.theme.paletteName ? S.image.lightMode : S.image.darkMode }, style: { height: 85 } })) : r.createElement(a.Z, { style: [y.card, { backgroundColor: x }, { maxWidth: w }, { marginBottom: B }], testID: "popupCard" }, r.createElement(a.Z, { style: e ? y.horizontalContent : y.verticalContent }, r.createElement(a.Z, { style: e ? y.textContainer : null }, r.createElement(s.ZP, { size: "headline2", style: [y.popupTitle, { alignSelf: "flex-start" }], weight: "bold" }, S.header), r.createElement(s.ZP, { size: "subtext1", style: [y.popupDescription, { color: T }] }, S.description, " ", e ? null : S.legalDisclaimer)), r.createElement(a.Z, { style: y.buttonContainer }, r.createElement(c.ZP, { backgroundColor: "light" === n.default.theme.paletteName ? "orange300" : "orange600", borderColor: "transparent", link: t, onClick: k, size: "medium", style: [y.popupButton, { width: v }] }, S.buttonText), e && r.createElement(s.ZP, { size: "subtext3", style: [y.legalDisclaimer, { color: T }] }, S.legalDisclaimer))));
                 },
                 y = n.default.create((e) => ({ card: { backgroundColor: e.colors.gray0, borderRadius: e.spaces.space16, padding: e.spaces.space16, alignItems: "center", maxWidth: 350, width: "100%" }, transparent: { backgroundColor: "transparent" }, popupTitle: { marginBottom: e.spaces.space8, textAlign: "start" }, popupDescription: { textAlign: "start", marginEnd: e.spaces.space12 }, legalDisclaimer: { position: "absolute", top: "60px", end: "50%", transform: "translateX(50%)", textAlign: "center", minWidth: 100, opacity: 0.7 }, popupButton: { width: "100%", borderRadius: e.spaces.space24, marginTop: e.spaces.space12, height: e.spaces.space40 }, buttonContainer: { position: "relative" }, horizontalContent: { flexDirection: "row", justifyContent: "space-between", alignItems: "center", width: "100%", paddingBottom: e.spaces.space8 }, verticalContent: { width: "100%" }, textContainer: { flex: 1 }, bannerContainer: { marginBottom: e.spaces.space16 } }));
         },
@@ -176,7 +176,7 @@
             const d = (0, a.ZP)(s(c));
         },
         388185: (e, t, o) => {
-            o.d(t, { Z: () => M });
+            o.d(t, { Z: () => S });
             var r = o(202784),
                 a = o(325686),
                 n = o(157396),
@@ -198,14 +198,14 @@
                 y = f.length - 1,
                 k = d().d8680056,
                 C = d().eed02406,
-                w = d().j59f0b94,
-                v = d().b81aaad8,
+                v = d().j59f0b94,
+                w = d().b81aaad8,
                 Z = d().c7044880,
-                E = { [b.xSmall]: k, [b.small]: C, [b.normal]: w, [b.large]: v, [b.xLarge]: Z },
-                x = [k, C, w, v, Z],
+                E = { [b.xSmall]: k, [b.small]: C, [b.normal]: v, [b.large]: w, [b.xLarge]: Z },
+                x = [k, C, v, w, Z],
                 T = d().e46dffa0,
                 B = i.default.create((e) => ({ sliderContainer: { alignItems: "center", flexDirection: "row", padding: e.spaces.space16 }, slider: { flexGrow: 1, marginHorizontal: e.spaces.space20 } })),
-                M = g((e) => {
+                S = g((e) => {
                     const { analytics: t, onSliderChanged: o, updateSettings: n } = e,
                         c = r.useCallback(
                             (e) => {
@@ -350,7 +350,7 @@
                 f = p(g);
         },
         376293: (e, t, o) => {
-            o.d(t, { $f: () => E, KV: () => f, LI: () => _, SC: () => Z, Vt: () => C, ed: () => S, op: () => x });
+            o.d(t, { $f: () => E, KV: () => f, LI: () => _, SC: () => Z, Vt: () => C, ed: () => M, op: () => x });
             var r = o(202784),
                 a = o(190286),
                 n = o(674132),
@@ -369,8 +369,8 @@
                 y = i().j546fb79,
                 k = i().c9623eeb,
                 C = i().e133be4e,
-                w = i().he43bca4,
-                v = i().f5f01af6,
+                v = i().he43bca4,
+                w = i().f5f01af6,
                 Z = Object.freeze({ TWEET_CARET: "tweet_caret", PROFILE: "user_profile", LIST_DETAIL: "list_detail", RICH_FEEDBACK: "rich_feedback", TWEET: "tweet", FOLLOWERS_LIST: "followers_list" }),
                 E = (e, t) => ({ confirmButtonType: "destructiveFilled", headline: p({ screenName: e }), label: h, text: t ? b({ screenName: e }) : g({ screenName: e }) }),
                 x = ({ blockAction: e, blockSubtext: t, isSoftBlockEnabled: o, source: r, testID: a, unblockAction: n, unblockSubtext: i, user: l }) => {
@@ -393,13 +393,13 @@
                                     l.blocking ? n(p) : e(p);
                                 });
                     }
-                    return { confirmation: p, onClick: u, testID: a, shortcutKey: s, Icon: T(l.blocking), text: M(l), subText: B({ user: l, blockSubtext: t, unblockSubtext: i }) };
+                    return { confirmation: p, onClick: u, testID: a, shortcutKey: s, Icon: T(l.blocking), text: S(l), subText: B({ user: l, blockSubtext: t, unblockSubtext: i }) };
                 },
                 T = (e) => (e ? s.default : l.default),
                 B = ({ blockSubtext: e, unblockSubtext: t, user: o }) => (!o.blocking && e ? e(o.screen_name) : o.blocking ? t : void 0),
-                M = (e) => (e.blocking ? k({ screenName: e.screen_name }) : m({ screenName: e.screen_name })),
-                _ = (e, t) => (e.blocking ? ((e, t) => ({ confirmButtonType: "primary", headline: y({ screenName: e }), label: C, text: t ? v : w }))(e.screen_name, t) : E(e.screen_name, t)),
-                S = ({ confirmation: e, handleConfirm: t, onClose: o }) => {
+                S = (e) => (e.blocking ? k({ screenName: e.screen_name }) : m({ screenName: e.screen_name })),
+                _ = (e, t) => (e.blocking ? ((e, t) => ({ confirmButtonType: "primary", headline: y({ screenName: e }), label: C, text: t ? w : v }))(e.screen_name, t) : E(e.screen_name, t)),
+                M = ({ confirmation: e, handleConfirm: t, onClose: o }) => {
                     const { confirmButtonType: n, headline: i, label: l, text: s } = e;
                     return r.createElement(a.Z, { cancelButtonLabel: u, confirmButtonLabel: l, confirmButtonType: n, headline: i, onCancel: o, onConfirm: t, text: s });
                 };
@@ -518,15 +518,15 @@
                 y = d().b772cd66,
                 k = d().ec5880e6,
                 C = d().babfa32c,
-                w = d().a2a2f98e,
-                v = d().b4a361c0,
+                v = d().a2a2f98e,
+                w = d().b4a361c0,
                 Z = d().ce494bb4,
                 E = d().c783d45e,
                 x = d().h306a358;
             class T extends r.Component {
                 constructor(e, t) {
                     super(e, t),
-                        (this._renderModalHeader = (e) => (this.context.isModal ? r.createElement(a.Z, { style: M.header }, r.createElement(n.ZP, { align: "center", size: "title4", weight: "heavy" }, this._isWelcomeFlow ? C : f)) : e)),
+                        (this._renderModalHeader = (e) => (this.context.isModal ? r.createElement(a.Z, { style: S.header }, r.createElement(n.ZP, { align: "center", size: "title4", weight: "heavy" }, this._isWelcomeFlow ? C : f)) : e)),
                         (this._handleBackClick = () => {
                             const { history: e } = this.props;
                             e.goBack();
@@ -536,12 +536,12 @@
                 render() {
                     const { isModal: e } = this.context,
                         { history: t } = this.props;
-                    return r.createElement(u.Z, { history: t, renderHeader: this._renderModalHeader, title: this._isWelcomeFlow ? C : f }, r.createElement(a.Z, { style: M.root }, r.createElement(n.ZP, { align: "center", color: "gray700", style: [M.description, !e && M.descriptionMarginTop] }, this._isWelcomeFlow ? v : k), r.createElement(a.Z, { style: [M.tweetExample, e && M.tweetExampleMarginHorizontal] }, r.createElement(g.Z, { withTweetBorder: !0 })), r.createElement(n.ZP, { color: "gray700", style: M.componentTitle, weight: "bold" }, Z), r.createElement(a.Z, { style: M.component }, r.createElement(p.Z, null)), r.createElement(n.ZP, { color: "gray700", style: M.componentTitle, weight: "bold" }, E), r.createElement(a.Z, { style: [M.component, M.colorPicker] }, r.createElement(h.Z, null)), r.createElement(n.ZP, { color: "gray700", style: M.componentTitle, weight: "bold" }, x), r.createElement(a.Z, { style: [M.component, M.backgroundPicker] }, r.createElement(m.Z, null)), r.createElement(a.Z, { style: M.buttonContainer }, r.createElement(i.ZP, { onPress: this._handleBackClick, type: "brandFilled" }, this._isWelcomeFlow ? w : y))));
+                    return r.createElement(u.Z, { history: t, renderHeader: this._renderModalHeader, title: this._isWelcomeFlow ? C : f }, r.createElement(a.Z, { style: S.root }, r.createElement(n.ZP, { align: "center", color: "gray700", style: [S.description, !e && S.descriptionMarginTop] }, this._isWelcomeFlow ? w : k), r.createElement(a.Z, { style: [S.tweetExample, e && S.tweetExampleMarginHorizontal] }, r.createElement(g.Z, { withTweetBorder: !0 })), r.createElement(n.ZP, { color: "gray700", style: S.componentTitle, weight: "bold" }, Z), r.createElement(a.Z, { style: S.component }, r.createElement(p.Z, null)), r.createElement(n.ZP, { color: "gray700", style: S.componentTitle, weight: "bold" }, E), r.createElement(a.Z, { style: [S.component, S.colorPicker] }, r.createElement(h.Z, null)), r.createElement(n.ZP, { color: "gray700", style: S.componentTitle, weight: "bold" }, x), r.createElement(a.Z, { style: [S.component, S.backgroundPicker] }, r.createElement(m.Z, null)), r.createElement(a.Z, { style: S.buttonContainer }, r.createElement(i.ZP, { onPress: this._handleBackClick, type: "brandFilled" }, this._isWelcomeFlow ? v : y))));
                 }
             }
             T.contextType = l.Z;
             const B = (0, b.Z)(T, { page: "display" }),
-                M = s.default.create((e) => ({ root: { paddingBottom: e.spaces.space32, paddingHorizontal: e.spaces.space32 }, header: { marginBottom: e.spaces.space12, marginTop: e.spaces.space32 }, description: { marginBottom: e.spaces.space20 }, descriptionMarginTop: { marginTop: e.spaces.space20 }, componentTitle: { fontSize: e.fontSizes.subtext2, marginBottom: e.spaces.space4 }, component: { backgroundColor: e.colors.gray0, borderRadius: e.borderRadii.xLarge, marginBottom: e.spaces.space12 }, buttonContainer: { alignItems: "center", marginTop: e.spaces.space16 }, tweetExample: { marginBottom: e.spaces.space16 }, tweetExampleMarginHorizontal: { marginHorizontal: e.spaces.space32 }, backgroundPicker: { paddingHorizontal: e.spaces.space12, paddingVertical: e.spaces.space4 }, colorPicker: { paddingVertical: e.spaces.space4 } }));
+                S = s.default.create((e) => ({ root: { paddingBottom: e.spaces.space32, paddingHorizontal: e.spaces.space32 }, header: { marginBottom: e.spaces.space12, marginTop: e.spaces.space32 }, description: { marginBottom: e.spaces.space20 }, descriptionMarginTop: { marginTop: e.spaces.space20 }, componentTitle: { fontSize: e.fontSizes.subtext2, marginBottom: e.spaces.space4 }, component: { backgroundColor: e.colors.gray0, borderRadius: e.borderRadii.xLarge, marginBottom: e.spaces.space12 }, buttonContainer: { alignItems: "center", marginTop: e.spaces.space16 }, tweetExample: { marginBottom: e.spaces.space16 }, tweetExampleMarginHorizontal: { marginHorizontal: e.spaces.space32 }, backgroundPicker: { paddingHorizontal: e.spaces.space12, paddingVertical: e.spaces.space4 }, colorPicker: { paddingVertical: e.spaces.space4 } }));
         },
         661810: (e, t, o) => {
             o.d(t, { Z: () => i });
@@ -637,11 +637,11 @@
                         C = r.useMemo(() => {
                             d.Z.generate({ backgroundColor: n.default.theme.colors.transparent, color: n.default.theme.colors.gray700, withFocusWithinFocusRing: !0 });
                         }, []),
-                        w = r.useMemo(() => (o === p.CV.dark ? l.Vi : o === p.CV.darker ? l.SR : l.vh), [o]),
-                        v = r.useMemo(() => ({ backgroundColor: w.cellBackground, borderColor: h ? n.default.theme.colors.primary : n.default.theme.colors.gray200, borderWidth: h ? "2px" : "1px" }), [h, w.cellBackground]),
-                        Z = r.useMemo(() => ({ backgroundColor: h ? n.default.theme.colors.primary : n.default.theme.colors.transparent, borderColor: h ? n.default.theme.colors.primary : w.gray300 }), [h, w.gray300]),
+                        v = r.useMemo(() => (o === p.CV.dark ? l.Vi : o === p.CV.darker ? l.SR : l.vh), [o]),
+                        w = r.useMemo(() => ({ backgroundColor: v.cellBackground, borderColor: h ? n.default.theme.colors.primary : n.default.theme.colors.gray200, borderWidth: h ? "2px" : "1px" }), [h, v.cellBackground]),
+                        Z = r.useMemo(() => ({ backgroundColor: h ? n.default.theme.colors.primary : n.default.theme.colors.transparent, borderColor: h ? n.default.theme.colors.primary : v.gray300 }), [h, v.gray300]),
                         E = r.useMemo(() => (h ? k : C), [h, k, C]),
-                        x = r.useMemo(() => ({ color: w.text }), [w.text]);
+                        x = r.useMemo(() => ({ color: v.text }), [v.text]);
                     function T(e) {
                         f && !h && f(o);
                     }
@@ -649,7 +649,7 @@
                         r.useEffect(() => {
                             t && y.current && y.current.focus();
                         }, [t, y]),
-                        r.createElement(u.Z, { focusable: !1, interactiveStyles: null, style: [m.root, v] }, (t) => r.createElement(r.Fragment, null, r.createElement(u.Z, { focusable: !1, interactiveStyles: E, interactivityState: t, role: "radio", style: m.radioOuterCircle }, r.createElement(a.Z, { style: [m.radioInnerCircle, Z] }, h ? r.createElement(i.default, { style: m.checkMark }) : null)), r.createElement(a.Z, { "aria-hidden": !0, style: m.text }, r.createElement(s.ZP, { numberOfLines: 1, style: x, weight: "bold" }, g)), (0, c.Z)("input", { "aria-label": e || g, checked: h, name: b, style: m.nativeControl, type: "radio", onChange: T, ref: y })))
+                        r.createElement(u.Z, { focusable: !1, interactiveStyles: null, style: [m.root, w] }, (t) => r.createElement(r.Fragment, null, r.createElement(u.Z, { focusable: !1, interactiveStyles: E, interactivityState: t, role: "radio", style: m.radioOuterCircle }, r.createElement(a.Z, { style: [m.radioInnerCircle, Z] }, h ? r.createElement(i.default, { style: m.checkMark }) : null)), r.createElement(a.Z, { "aria-hidden": !0, style: m.text }, r.createElement(s.ZP, { numberOfLines: 1, style: x, weight: "bold" }, g)), (0, c.Z)("input", { "aria-label": e || g, checked: h, name: b, style: m.nativeControl, type: "radio", onChange: T, ref: y })))
                     );
                 };
             function g({ "aria-label": e, autoFocus: t, layout: o, onChange: n, options: i, value: l }) {
@@ -729,7 +729,7 @@
             const b = n.default.create((e) => ({ root: { flexDirection: "row", justifyContent: "space-around" }, flexWrap: { flexWrap: "wrap" } })),
                 f = g;
         },
-        394123: (e, t, o) => {
+        818088: (e, t, o) => {
             o.r(t), o.d(t, { default: () => s });
             var r = o(202784),
                 a = o(890601),
@@ -737,12 +737,12 @@
                 i = o(347101);
             const l = (e = {}) => {
                 const { direction: t } = (0, n.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M15.636 11.671c2.079-.583 3.093-2.18 3.093-3.929 0-2.307-1.471-4.741-5.983-4.741H5.623V21h7.579c4.411 0 6.008-2.484 6.008-4.994 0-2.383-1.343-3.955-3.574-4.335zm-3.295-6.287c2.535 0 3.27 1.319 3.27 2.662 0 1.242-.583 2.611-3.27 2.611H8.69V5.384h3.651zM8.69 18.617v-5.628h4.208c2.231 0 3.194 1.166 3.194 2.738 0 1.547-.887 2.89-3.397 2.89H8.69z" })) }, { writingDirection: t });
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M17 3V0h2v3h3v2h-3v3h-2V5h-3V3h3zM6.5 4c-.276 0-.5.22-.5.5v14.56l6-4.29 6 4.29V11h2v11.94l-8-5.71-8 5.71V4.5C4 3.12 5.119 2 6.5 2h4.502v2H6.5z" })) }, { writingDirection: t });
             };
             l.metadata = { width: 24, height: 24 };
             const s = l;
         },
-        738398: (e, t, o) => {
+        518532: (e, t, o) => {
             o.r(t), o.d(t, { default: () => s });
             var r = o(202784),
                 a = o(890601),
@@ -750,12 +750,25 @@
                 i = o(347101);
             const l = (e = {}) => {
                 const { direction: t } = (0, n.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M16.586 4l-2.043-2.04L15.957.54 18 2.59 20.043.54l1.414 1.42L19.414 4l2.043 2.04-1.414 1.42L18 5.41l-2.043 2.05-1.414-1.42L16.586 4zM6.5 4c-.276 0-.5.22-.5.5v14.56l6-4.29 6 4.29V11h2v11.94l-8-5.71-8 5.71V4.5C4 3.12 5.119 2 6.5 2h4.502v2H6.5z" })) }, { writingDirection: t });
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 74 24", children: r.createElement("g", null, r.createElement("path", { d: "M9.827 17.667c-4.82 0-8.873-3.927-8.873-8.747S5.007.173 9.827.173c2.667 0 4.567 1.047 5.993 2.413l-1.687 1.687c-1.027-.96-2.413-1.707-4.307-1.707-3.52 0-6.273 2.84-6.273 6.36s2.753 6.36 6.273 6.36c2.28 0 3.587-.92 4.413-1.747.68-.68 1.132-1.668 1.3-3.008H10v-2.4h7.873c.087.428.127.935.127 1.495 0 1.793-.493 4.013-2.067 5.587-1.54 1.6-3.5 2.453-6.106 2.453zm20.806-5.627c0 3.24-2.533 5.633-5.633 5.633-3.107 0-5.633-2.387-5.633-5.633 0-3.267 2.527-5.633 5.633-5.633 3.1.006 5.633 2.373 5.633 5.633zm-2.466 0c0-2.027-1.467-3.413-3.167-3.413-1.7 0-3.167 1.387-3.167 3.413 0 2.007 1.467 3.413 3.167 3.413 1.7 0 3.167-1.406 3.167-3.413zm15.133-.007c0 3.24-2.527 5.633-5.633 5.633s-5.633-2.387-5.633-5.633c0-3.267 2.527-5.633 5.633-5.633S43.3 8.773 43.3 12.033zm-2.467 0c0-2.027-1.467-3.413-3.167-3.413S34.5 10.007 34.5 12.033c0 2.007 1.467 3.413 3.167 3.413s3.166-1.406 3.166-3.413zm14.5-5.286V16.86c0 4.16-2.453 5.867-5.353 5.867-2.733 0-4.373-1.833-4.993-3.327l2.153-.893c.387.92 1.32 2.007 2.84 2.007 1.853 0 3.007-1.153 3.007-3.307v-.813H52.9c-.553.68-1.62 1.28-2.967 1.28-2.813 0-5.267-2.453-5.267-5.613 0-3.18 2.453-5.652 5.267-5.652 1.347 0 2.413.6 2.967 1.26h.087v-.92h2.346zm-2.173 5.306c0-1.987-1.32-3.433-3.007-3.433-1.707 0-3.007 1.453-3.007 3.433 0 1.96 1.3 3.393 3.007 3.393 1.68 0 3.007-1.426 3.007-3.393zM59.807.78v16.553h-2.473V.78h2.473zm9.886 13.113l1.92 1.28c-.62.92-2.113 2.493-4.693 2.493-3.2 0-5.587-2.473-5.587-5.633 0-3.347 2.413-5.633 5.313-5.633 2.92 0 4.353 2.327 4.82 3.587l.253.64-7.534 3.113c.573 1.133 1.473 1.707 2.733 1.707s2.133-.62 2.773-1.554zm-5.906-2.026l5.033-2.093c-.28-.707-1.107-1.193-2.093-1.193-1.254 0-3.007 1.107-2.94 3.287z" })) }, { writingDirection: t });
+            };
+            l.metadata = { width: 74, height: 24 };
+            const s = l;
+        },
+        648539: (e, t, o) => {
+            o.r(t), o.d(t, { default: () => s });
+            var r = o(202784),
+                a = o(890601),
+                n = o(783427),
+                i = o(347101);
+            const l = (e = {}) => {
+                const { direction: t } = (0, n.Z)();
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M19 14h2v3h-2v-3zM3 14H1v3h2v-3zm.5 7c-.276 0-.5-.225-.5-.5V19H1v1.5C1 21.879 2.122 23 3.5 23H5v-2H3.5zM10 5V3H7v2h3zm-7 .5c0-.275.224-.5.5-.5H5V3H3.5C2.122 3 1 4.121 1 5.5V7h2V5.5zM12 21v2h3v-2h-3zm-5 0v2h3v-2H7zm12-.5c0 .275-.224.5-.5.5H17v2h1.5c1.378 0 2.5-1.121 2.5-2.5V19h-2v1.5zM3 9H1v3h2V9zm3 9h5v-2H6v2zM18-.1c3.364 0 6.1 2.736 6.1 6.1s-2.736 6.1-6.1 6.1-6.1-2.736-6.1-6.1S14.636-.1 18-.1zm0 2c-2.261 0-4.1 1.839-4.1 4.1s1.839 4.1 4.1 4.1 4.1-1.839 4.1-4.1-1.839-4.1-4.1-4.1zm.5 3.1H15v2h6V5h-2.5zM6 10h4V8H6v2zm0 4h7v-2H6v2z" })) }, { writingDirection: t });
             };
             l.metadata = { width: 24, height: 24 };
             const s = l;
         },
-        266151: (e, t, o) => {
+        89085: (e, t, o) => {
             o.r(t), o.d(t, { default: () => s });
             var r = o(202784),
                 a = o(890601),
@@ -763,12 +776,12 @@
                 i = o(347101);
             const l = (e = {}) => {
                 const { direction: t } = (0, n.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M10 5H2V3h8v2zM7 7H2v2h5V7zm12.94 4.946C19.48 15.918 16.1 19 12 19H8.19c-.12.988-.19 1.993-.19 3H6c0-4.669 1.29-9.39 3.95-12.97C12.62 5.421 16.38 2.9 23 3c.17 3.359-.21 7.147-3.06 8.946zM21 5.033c-4.16.276-7.29 2.275-9.45 5.187-1.43 1.929-2.43 4.268-3 6.78H12c2.68 0 4.95-1.76 5.72-4.188-.52.108-1.09.172-1.72.188h-1.5v-2H16c3.9 0 4.95-2.921 5-5.967z" })) }, { writingDirection: t });
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M3.905 6.516h-.423V4.354h.263c.564-.015 1.018-.126 1.361-.332s.61-.529.8-.972h2.093v7.949H5.471v-4.94c-.351.305-.873.457-1.567.457zm2.194 10.88c.403-.273.69-.542.861-.81.171-.265.257-.566.257-.9 0-.304-.087-.542-.262-.713-.175-.172-.426-.257-.753-.257-.35 0-.623.096-.821.285-.198.19-.297.457-.297.799 0 .145.016.296.046.457l-2.577-.228c-.023-.175-.034-.342-.034-.502 0-.547.16-1.018.479-1.413s.764-.699 1.334-.913c.57-.213 1.224-.319 1.961-.319 1.125 0 2.009.221 2.651.662.643.441.964 1.079.964 1.916 0 .532-.112.998-.336 1.397-.224.399-.584.766-1.078 1.1-.562.381-1.372.768-2.428 1.164H10v1.881H2.542v-1.687c1.642-.806 2.828-1.445 3.558-1.917zM22 6H12v2h10V6zm0 10H12v2h10v-2z" })) }, { writingDirection: t });
             };
             l.metadata = { width: 24, height: 24 };
             const s = l;
         },
-        856661: (e, t, o) => {
+        226597: (e, t, o) => {
             o.r(t), o.d(t, { default: () => s });
             var r = o(202784),
                 a = o(890601),
@@ -776,12 +789,12 @@
                 i = o(347101);
             const l = (e = {}) => {
                 const { direction: t } = (0, n.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M9 6h3.731L9.184 18H5v2h10v-2h-3.731l3.547-12H19V4H9v2z" })) }, { writingDirection: t });
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M3.707 21.707l18-18-1.414-1.414-2.088 2.088C17.688 4.137 17.11 4 16.5 4H11v2h5.5c.028 0 .056 0 .084.002l-10.88 10.88c-.131-.266-.204-.565-.204-.882V7.551l2.068 1.93 1.365-1.462L4.5 3.882.068 8.019l1.365 1.462 2.068-1.93V16c0 .871.278 1.677.751 2.334l-1.959 1.959 1.414 1.414zM18.5 9h2v7.449l2.068-1.93 1.365 1.462-4.433 4.137-4.432-4.137 1.365-1.462 2.067 1.93V9zm-8.964 9l-2 2H13v-2H9.536z" })) }, { writingDirection: t });
             };
             l.metadata = { width: 24, height: 24 };
             const s = l;
         },
-        748138: (e, t, o) => {
+        258292: (e, t, o) => {
             o.r(t), o.d(t, { default: () => s });
             var r = o(202784),
                 a = o(890601),
@@ -789,72 +802,7 @@
                 i = o(347101);
             const l = (e = {}) => {
                 const { direction: t } = (0, n.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
-            };
-            l.metadata = { width: 24, height: 24 };
-            const s = l;
-        },
-        314948: (e, t, o) => {
-            o.r(t), o.d(t, { default: () => s });
-            var r = o(202784),
-                a = o(890601),
-                n = o(783427),
-                i = o(347101);
-            const l = (e = {}) => {
-                const { direction: t } = (0, n.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M12 3.75c-4.55 0-8.25 3.69-8.25 8.25 0 1.92.66 3.68 1.75 5.08l2.8-2.79 1.41 1.42-2.79 2.79c1.4 1.1 3.16 1.75 5.08 1.75 4.56 0 8.25-3.69 8.25-8.25 0-1.92-.65-3.68-1.75-5.08l-2.79 2.79-1.41-1.42 2.79-2.79C15.68 4.4 13.92 3.75 12 3.75zM1.75 12C1.75 6.34 6.34 1.75 12 1.75S22.25 6.34 22.25 12 17.66 22.25 12 22.25 1.75 17.66 1.75 12z" })) }, { writingDirection: t });
-            };
-            l.metadata = { width: 24, height: 24 };
-            const s = l;
-        },
-        74514: (e, t, o) => {
-            o.r(t), o.d(t, { default: () => s });
-            var r = o(202784),
-                a = o(890601),
-                n = o(783427),
-                i = o(347101);
-            const l = (e = {}) => {
-                const { direction: t } = (0, n.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M12 2C7.93 2 4.51 5.02 4 9.05L2.87 18H7.1c.46 2.28 2.48 4 4.9 4s4.44-1.72 4.9-4h4.24l-.64-5h-2.02l.38 3H5.13l.85-6.7C6.36 6.27 8.94 4 12 4V2zm0 18c-1.31 0-2.42-.83-2.83-2h5.66c-.41 1.17-1.52 2-2.83 2zm.3-12.29l1.41-1.42 1.76 1.76 4.29-4.72 1.48 1.34-5.7 6.28-3.24-3.24z" })) }, { writingDirection: t });
-            };
-            l.metadata = { width: 24, height: 24 };
-            const s = l;
-        },
-        474761: (e, t, o) => {
-            o.r(t), o.d(t, { default: () => s });
-            var r = o(202784),
-                a = o(890601),
-                n = o(783427),
-                i = o(347101);
-            const l = (e = {}) => {
-                const { direction: t } = (0, n.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M10.883 4H2v8.5h2.255c-.643 1.14-1.66 1.83-2.735 2.51l3.224 5.06c3.139-2 5.335-4.63 6.084-8.37.444-2.21.405-4.55.154-6.81L10.883 4zM4 10.5V6h5.081c.151 1.84.121 3.64-.213 5.31-.466 2.32-1.519 4.39-3.537 5.96l-1.083-1.7c1.43-1.18 2.662-3.14 2.662-5.07H4zM21.876 4h-8.882v8.5h2.255c-.644 1.14-1.66 1.83-2.735 2.51l3.224 5.06c3.138-2 5.334-4.63 6.083-8.37.444-2.21.406-4.55.154-6.81L21.876 4zm-6.883 6.5V6h5.082c.151 1.84.121 3.64-.214 5.31-.466 2.32-1.519 4.39-3.537 5.96l-1.083-1.7c1.43-1.18 2.663-3.14 2.663-5.07h-2.911z" })) }, { writingDirection: t });
-            };
-            l.metadata = { width: 24, height: 24 };
-            const s = l;
-        },
-        368761: (e, t, o) => {
-            o.r(t), o.d(t, { default: () => s });
-            var r = o(202784),
-                a = o(890601),
-                n = o(783427),
-                i = o(347101);
-            const l = (e = {}) => {
-                const { direction: t } = (0, n.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M12.312 23.736c-.123 0-.246-.03-.358-.091-.241-.132-.392-.385-.392-.659v-.871c0-.414.336-.75.75-.75.256 0 .482.128.617.324 1.905-1.247 4.823-3.192 5.908-4.11 2.256-1.908 3.604-4.732 3.608-7.554 0-.414.336-.749.75-.749s.75.337.749.751c-.004 3.256-1.552 6.507-4.14 8.697-1.326 1.121-5.009 3.546-7.086 4.892-.124.08-.266.12-.408.12zm-2.557-1.897c1.697-1.082 6.672-4.317 8.048-5.48 1.902-1.609 3.04-3.976 3.043-6.329-.006-4.366-3.433-7.787-7.8-7.787l-4.149-.01c-4.375-.001-7.801 3.426-7.801 7.801 0 4.104 3.14 7.204 7.465 7.37.002 1.79.008 2.88.058 3.544-.041.101-.061.21-.055.322.009.178.081.344.198.471.111.241.283.241.552.241.163 0 .316-.053.441-.144zm3.289-18.097c3.529 0 6.298 2.763 6.302 6.287-.003 1.917-.941 3.855-2.512 5.184-1.03.871-4.478 3.16-6.771 4.645l-.002-3.175c0-.403-.319-.734-.722-.749l-.721-.027c-3.49-.135-6.022-2.604-6.022-5.872 0-3.534 2.768-6.302 6.299-6.302l4.149.01z" })) }, { writingDirection: t });
-            };
-            l.metadata = { width: 24, height: 24 };
-            const s = l;
-        },
-        155353: (e, t, o) => {
-            o.r(t), o.d(t, { default: () => s });
-            var r = o(202784),
-                a = o(890601),
-                n = o(783427),
-                i = o(347101);
-            const l = (e = {}) => {
-                const { direction: t } = (0, n.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z" })) }, { writingDirection: t });
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M12.013 1l3.527 7.15 7.886 1.14-5.707 5.56 1.347 7.86L12.013 19 4.96 22.71l1.347-7.86L.6 9.29l7.886-1.14L12.013 1z" })) }, { writingDirection: t });
             };
             l.metadata = { width: 24, height: 24 };
             const s = l;
@@ -891,4 +839,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Display.68e2cdba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Display.b77a6bda.js.map
