@@ -2,7 +2,7 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["bundle.Chat"],
     {
-        533242: (e, t, a) => {
+        200189: (e, t, a) => {
             a.r(t), a.d(t, { ChatScreen: () => _, default: () => I });
             var r = a(202784),
                 n = a(325686),
@@ -12,8 +12,8 @@
                 l = a(674132),
                 i = a.n(l),
                 d = a(737691),
-                h = a(367848),
-                m = a(197718),
+                h = a(382285),
+                m = a(181142),
                 u = a(668214),
                 f = a(689642),
                 p = a(919022);
@@ -49,4 +49,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Chat.954ccf0a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Chat.d5fd1d8a.js.map

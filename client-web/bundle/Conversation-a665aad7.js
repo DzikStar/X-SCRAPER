@@ -251,8 +251,8 @@
                 return o.createElement(y, { onBack: d }, o.createElement(r.ZP, null, o.createElement(T, u)));
             });
         },
-        322828: (e, t, n) => {
-            n.r(t), n.d(t, { QuickPromoteScreen: () => Rn, default: () => Un });
+        919086: (e, t, n) => {
+            n.r(t), n.d(t, { QuickPromoteScreen: () => Hn, default: () => zn });
             n(571372);
             var o = n(202784),
                 r = n(325686),
@@ -324,19 +324,23 @@
                     .propsFromState(() => ({ selectedObjective: K, tweet: V }))
                     .propsFromActions(() => ({ setObjective: v.mS }))
                     .withAnalytics(I.EP);
-            var $ = n(772750),
-                Y = n(835152);
-            const X = p().fcc839b6,
-                J = (p().b679a538, p().cb19a2f0),
-                ee = p().a2d37164,
-                te = p().cefad302,
-                ne = p().b614fad0,
-                oe = u.default.create((e) => ({ titleContainer: { paddingBottom: e.spaces.space28 }, qpContainer: { flex: 1, overflowY: "auto" } })),
-                [re, ae] = [
-                    { label: (0, G.WF)(C.CH.Engagements), value: C.CH.Engagements, description: J, illustration: o.createElement($.i, null), testID: W.Z.getObjective(C.CH.Engagements) },
-                    { label: (0, G.WF)(C.CH.WebsiteClicks), value: C.CH.WebsiteClicks, description: ee, illustration: o.createElement(Y.T, null), testID: W.Z.getObjective(C.CH.WebsiteClicks) },
+            var $ = n(992942);
+            const Y = n.p + "engagements_icon.14baf75a.png";
+            function X() {
+                return o.createElement($.Z, { "aria-label": "", source: Y, style: u.default.absoluteFill });
+            }
+            var J = n(835152);
+            const ee = p().fcc839b6,
+                te = (p().b679a538, p().cb19a2f0),
+                ne = p().a2d37164,
+                oe = p().cefad302,
+                re = p().b614fad0,
+                ae = u.default.create((e) => ({ titleContainer: { paddingBottom: e.spaces.space28 }, qpContainer: { flex: 1, overflowY: "auto" } })),
+                [se, ce] = [
+                    { label: (0, G.WF)(C.CH.Engagements), value: C.CH.Engagements, description: te, illustration: o.createElement(X, null), testID: W.Z.getObjective(C.CH.Engagements) },
+                    { label: (0, G.WF)(C.CH.WebsiteClicks), value: C.CH.WebsiteClicks, description: ne, illustration: o.createElement(J.T, null), testID: W.Z.getObjective(C.CH.WebsiteClicks) },
                 ];
-            const se = Q((e) => {
+            const ie = Q((e) => {
                     const { analytics: t, selectedObjective: n, setObjective: a, tweet: c } = e,
                         i = c ? s.Z.getOriginalTweet(c) : c,
                         l = null != i?.entities?.media?.length && i?.entities?.media?.length > 0,
@@ -347,7 +351,7 @@
                     const u = o.useMemo(
                             () =>
                                 (function ({ selectedObjective: e, tweetContainsLinks: t, tweetHasMedia: n }) {
-                                    const r = [re, { ...ae, disabled: !t, disabledInlineCallout: t ? void 0 : o.createElement(H.Z.Danger, { headline: ne, text: te, withIcon: !0 }) }];
+                                    const r = [se, { ...ce, disabled: !t, disabledInlineCallout: t ? void 0 : o.createElement(H.Z.Danger, { headline: re, text: oe, withIcon: !0 }) }];
                                     return r;
                                 })({ tweetHasMedia: l, tweetContainsLinks: d, selectedObjective: n }),
                             [l, d, n],
@@ -358,47 +362,46 @@
                             },
                             [t, a],
                         );
-                    return o.createElement(r.Z, { style: oe.qpContainer, testID: W.Z.objectiveScreen }, o.createElement(z.O, { screenType: I.MN.Objective }), o.createElement(j.ZP, null, o.createElement(U.Y, { style: oe.titleContainer, title: X }), o.createElement(R.Z, { name: "objective-picker", onChange: m, options: u, value: n })));
+                    return o.createElement(r.Z, { style: ae.qpContainer, testID: W.Z.objectiveScreen }, o.createElement(z.O, { screenType: I.MN.Objective }), o.createElement(j.ZP, null, o.createElement(U.Y, { style: ae.titleContainer, title: ee }), o.createElement(R.Z, { name: "objective-picker", onChange: m, options: u, value: n })));
                 }),
-                ce = se;
-            var ie = n(653970);
-            const le = n.p + "followers_icon.80e5851a.png";
-            var de = n(6885);
-            function ue(e) {
+                le = ie,
+                de = n.p + "followers_icon.80e5851a.png";
+            var ue = n(6885);
+            function me(e) {
                 new Image().src = e;
             }
-            function me() {
-                return ue(ie), ue(le), ue(de), o.createElement(o.Fragment, null);
+            function pe() {
+                return me(Y), me(de), me(ue), o.createElement(o.Fragment, null);
             }
             n(136728), n(543673), n(240753), n(128399);
-            var pe = n(614983),
-                ge = n.n(pe),
-                he = n(362075),
-                ye = n(163889),
-                Ee = n(942893),
-                Pe = n(704279),
-                be = n(813604);
-            const fe = (e, t) => t.match.params.statusId,
-                Ce = (e, t) => T.Z.selectHydrated(e, fe(0, t)),
-                Ze = (e, t) => T.Z.selectFetchStatus(e, fe(0, t)),
-                _e = (e, t) => e.quickPromote.account.adsAccount,
-                ke = (e, t) => e.quickPromote.account.selectedFundingInstrument,
-                we = (0, S.Z)()
-                    .propsFromState(() => ({ fetchStatus: Ze, tweet: Ce, adsAccount: _e, fundingInstrument: ke, selectedPaymentMethod: v.DY }))
-                    .propsFromActions((e) => ({ createLocalApiErrorHandler: (0, w.zr)("QUICK_PROMOTE_PAYMENT_SCREEN"), fetchTweetIfNeeded: T.Z.fetchOneIfNeeded, scribeAction: Pe.n, savePlatformRedirectBackState: () => (0, be.oE)(e.match.params.quickPromotePlatform), fetchAdsAccountDataIfNeeded: be.Ek }))
+            var ge = n(614983),
+                he = n.n(ge),
+                ye = n(362075),
+                Ee = n(163889),
+                Pe = n(942893),
+                be = n(704279),
+                fe = n(813604);
+            const Ce = (e, t) => t.match.params.statusId,
+                Ze = (e, t) => T.Z.selectHydrated(e, Ce(0, t)),
+                _e = (e, t) => T.Z.selectFetchStatus(e, Ce(0, t)),
+                ke = (e, t) => e.quickPromote.account.adsAccount,
+                we = (e, t) => e.quickPromote.account.selectedFundingInstrument,
+                Se = (0, S.Z)()
+                    .propsFromState(() => ({ fetchStatus: _e, tweet: Ze, adsAccount: ke, fundingInstrument: we, selectedPaymentMethod: v.DY }))
+                    .propsFromActions((e) => ({ createLocalApiErrorHandler: (0, w.zr)("QUICK_PROMOTE_PAYMENT_SCREEN"), fetchTweetIfNeeded: T.Z.fetchOneIfNeeded, scribeAction: be.n, savePlatformRedirectBackState: () => (0, fe.oE)(e.match.params.quickPromotePlatform), fetchAdsAccountDataIfNeeded: fe.Ek }))
                     .withAnalytics(I.EP);
-            class Se extends o.PureComponent {
+            class ve extends o.PureComponent {
                 componentDidMount() {
                     const { adsAccount: e, analytics: t, fundingInstrument: n, match: o, savePlatformRedirectBackState: r } = this.props,
                         { quickPromotePlatform: a, statusId: s } = o.params;
                     r();
-                    const c = ve(this.props),
+                    const c = Te(this.props),
                         i = (0, I.lg)(a, e, s, n, c, this.context.featureSwitches);
                     c && (0, I.hq)(t)(I.Ur.paymentPageLoadAddingCard()), (0, I.hq)(t)(I.Ur.paymentPageLoad(i.url)), i.isSameHost || window.location.assign(i.url);
                 }
                 render() {
                     const { adsAccount: e, fundingInstrument: t, match: n } = this.props,
-                        r = ve(this.props),
+                        r = Te(this.props),
                         { quickPromotePlatform: a, statusId: c } = n.params,
                         i = (0, I.lg)(a, e, c, t, r, this.context.featureSwitches);
                     return i.isSameHost
@@ -406,18 +409,18 @@
                               o.Fragment,
                               null,
                               o.createElement(z.O, { screenType: I.MN.Payment }),
-                              o.createElement(he.Z, {
+                              o.createElement(ye.Z, {
                                   dangerouslyDisableSandbox: !0,
                                   onMessage:
                                       ((l = this.props),
                                       (d = this.context),
                                       (e) => {
                                           const { analytics: t, tweet: n } = l,
-                                              o = ve(l);
+                                              o = Te(l);
                                           if (e && "quick_promote" === e.name)
                                               if ("scribe" === e.type) {
                                                   const o = (n && s.Z.getOriginalTweet(n)) || void 0,
-                                                      r = o ? [Ee.Z.getTweetItem(o)] : [],
+                                                      r = o ? [Pe.Z.getTweetItem(o)] : [],
                                                       a = e.scribeData || {},
                                                       c = "string" == typeof a.component ? a.component : "quick_promote",
                                                       i = "string" == typeof a.uiEvent ? a.uiEvent : "";
@@ -425,12 +428,12 @@
                                               } else if ("navigation" === e.type || "cardAdded" === e.type) {
                                                   const { createLocalApiErrorHandler: e, fetchAdsAccountDataIfNeeded: n, history: r, match: a } = l,
                                                       { quickPromotePlatform: s, screenName: c, statusId: i } = a.params;
-                                                  ge()(!!d.viewerUserId, "viewerUserId must be defined"), n(d.viewerUserId, t, !0).catch(e()), r.push(`/${c}/status/${i}/${s}/${o ? I.MN.PaymentSelect : I.MN.BudgetSelect}`);
+                                                  he()(!!d.viewerUserId, "viewerUserId must be defined"), n(d.viewerUserId, t, !0).catch(e()), r.push(`/${c}/status/${i}/${s}/${o ? I.MN.PaymentSelect : I.MN.BudgetSelect}`);
                                               }
                                       }),
-                                  reportError: ye.ZP,
+                                  reportError: Ee.ZP,
                                   src: i.url,
-                                  style: Te.iframe,
+                                  style: Ie.iframe,
                                   title: "Payment Form",
                               }),
                           )
@@ -438,7 +441,7 @@
                     var l, d;
                 }
             }
-            function ve(e) {
+            function Te(e) {
                 const t = (function (e, t) {
                     const {
                         location: { search: n },
@@ -447,69 +450,69 @@
                 })(e, "isAddingPayment");
                 return !!t && "true" === t;
             }
-            Se.contextType = E.rC;
-            const Te = u.default.create((e) => ({ iframe: { flexGrow: 1, paddingTop: 0 } })),
-                Ie = we(Se);
-            var xe = n(896449),
-                De = n(834324),
-                Ae = n(224162),
-                qe = n(779610),
-                Le = n(731708),
-                Me = n(696591),
-                Be = n(847016),
-                Ne = n(390387);
-            const Fe = (e) => e.quickPromote.objective,
-                Oe = (e, t) => e.quickPromote.targeting.targetedLocations,
-                Re = (e, t) => e.quickPromote.targeting.ageBucket,
-                He = (e, t) => e.quickPromote.targeting.gender,
-                Ue = (e, t) => e.quickPromote.targeting.keywords,
-                ze = (e, t) => e.quickPromote.budget.dailyBudget,
-                je = (e, t) => e.quickPromote.budget.durationDays,
-                Ge = (e) => e.quickPromote.budget.currency || "USD",
-                We = (e) => e.quickPromote.account.selectedFundingInstrument,
-                Ke = (e) => e.quickPromote.account.adsAccount,
-                Ve = (e) => e.quickPromote.promoteStatus,
-                Qe = (e) => e.quickPromote.promoteErrorCode,
-                $e = (e) => e.quickPromote.coupons,
-                Ye = (e) => e.quickPromote.enrollCouponErrorCode,
-                Xe =
+            ve.contextType = E.rC;
+            const Ie = u.default.create((e) => ({ iframe: { flexGrow: 1, paddingTop: 0 } })),
+                xe = Se(ve);
+            var De = n(896449),
+                Ae = n(834324),
+                qe = n(224162),
+                Le = n(779610),
+                Me = n(731708),
+                Be = n(696591),
+                Ne = n(847016),
+                Fe = n(390387);
+            const Oe = (e) => e.quickPromote.objective,
+                Re = (e, t) => e.quickPromote.targeting.targetedLocations,
+                He = (e, t) => e.quickPromote.targeting.ageBucket,
+                Ue = (e, t) => e.quickPromote.targeting.gender,
+                ze = (e, t) => e.quickPromote.targeting.keywords,
+                je = (e, t) => e.quickPromote.budget.dailyBudget,
+                Ge = (e, t) => e.quickPromote.budget.durationDays,
+                We = (e) => e.quickPromote.budget.currency || "USD",
+                Ke = (e) => e.quickPromote.account.selectedFundingInstrument,
+                Ve = (e) => e.quickPromote.account.adsAccount,
+                Qe = (e) => e.quickPromote.promoteStatus,
+                $e = (e) => e.quickPromote.promoteErrorCode,
+                Ye = (e) => e.quickPromote.coupons,
+                Xe = (e) => e.quickPromote.enrollCouponErrorCode,
+                Je =
                     ({ history: e, match: t }) =>
                     (n) => {
                         const { quickPromotePlatform: o, screenName: r, statusId: a } = t.params,
                             s = (0, I.WS)(r, a, o, I.MN.Done);
                         return (0, v.kb)({ history: e, statusId: a, nextPath: s, analytics: n });
                     },
-                Je = (0, S.Z)()
-                    .propsFromState(() => ({ objective: Fe, targetedLocations: Oe, ageBucket: Re, gender: He, keywords: Ue, dailyBudget: ze, durationDays: je, lang: Ne.VT, country: v.QE, currency: Ge, fundingInstrument: We, adsAccount: Ke, promoteStatus: Ve, promoteErrorCode: Qe, coupons: $e, enrollCouponErrorCode: Ye, selectedPaymentMethod: v.DY }))
-                    .propsFromActions((e) => ({ createLocalApiErrorHandler: (0, w.zr)("QUICK_PROMOTE_REVIEW_SCREEN"), clearPersistedRedirectBackState: () => (0, v.oE)(), createPromotion: Xe(e), enrollCoupon: v.br }))
+                et = (0, S.Z)()
+                    .propsFromState(() => ({ objective: Oe, targetedLocations: Re, ageBucket: He, gender: Ue, keywords: ze, dailyBudget: je, durationDays: Ge, lang: Fe.VT, country: v.QE, currency: We, fundingInstrument: Ke, adsAccount: Ve, promoteStatus: Qe, promoteErrorCode: $e, coupons: Ye, enrollCouponErrorCode: Xe, selectedPaymentMethod: v.DY }))
+                    .propsFromActions((e) => ({ createLocalApiErrorHandler: (0, w.zr)("QUICK_PROMOTE_REVIEW_SCREEN"), clearPersistedRedirectBackState: () => (0, v.oE)(), createPromotion: Je(e), enrollCoupon: v.br }))
                     .withAnalytics(I.EP),
-                et = p().db443ae2,
-                tt = p().a96f811e,
-                nt = p().b069d89c,
-                ot = p().fbd44e96,
-                rt = p().e36bce64,
-                at = p().c602f5b8,
-                st = p().ia83756c,
-                ct = p().cc217a04,
-                it = p().c602f5b8,
-                lt = p().g4f2b588,
-                dt = p().i41612da,
-                ut = p().cdae1af0,
-                mt = p().ed8bb5a0,
-                pt = p().fc640c20,
-                gt = p().be2dc078,
-                ht = p().iaefd4de,
-                yt = p().e5e42640,
-                Et = p().e85dfd66,
-                Pt = p().ef4602ec,
-                bt = p().a4db098c,
-                ft = p().ef7e3916;
-            class Ct extends o.PureComponent {
+                tt = p().db443ae2,
+                nt = p().a96f811e,
+                ot = p().b069d89c,
+                rt = p().fbd44e96,
+                at = p().e36bce64,
+                st = p().c602f5b8,
+                ct = p().ia83756c,
+                it = p().cc217a04,
+                lt = p().c602f5b8,
+                dt = p().g4f2b588,
+                ut = p().i41612da,
+                mt = p().cdae1af0,
+                pt = p().ed8bb5a0,
+                gt = p().fc640c20,
+                ht = p().be2dc078,
+                yt = p().iaefd4de,
+                Et = p().e5e42640,
+                Pt = p().e85dfd66,
+                bt = p().ef4602ec,
+                ft = p().a4db098c,
+                Ct = p().ef7e3916;
+            class Zt extends o.PureComponent {
                 constructor(...e) {
                     super(...e),
                         (this._getPaymentDescription = (e, t) => {
                             const { adsAccount: n } = this.props;
-                            return n && n.timezone && n.country_code ? (e ? ut : t ? pt : mt) : t ? ht : gt;
+                            return n && n.timezone && n.country_code ? (e ? mt : t ? gt : pt) : t ? yt : ht;
                         }),
                         (this._handlePromote = () => {
                             const { analytics: e, createPromotion: t } = this.props;
@@ -522,21 +525,21 @@
                         }),
                         (this._getPromoteErrorMessage = () => {
                             const { promoteErrorCode: e, promoteStatus: t } = this.props;
-                            if (!e) return t === Z.ZP.LOADED ? Et : null;
+                            if (!e) return t === Z.ZP.LOADED ? Pt : null;
                             switch (e) {
                                 case "MissingFundingInstrument":
                                 case "InvalidPaymentMethod":
-                                    return ft;
+                                    return Ct;
                                 case "CampaignCreationFailed":
                                 case "PromotionIneligible":
-                                    return bt;
+                                    return ft;
                                 default:
-                                    return Pt;
+                                    return bt;
                             }
                         }),
                         (this._getCouponErrorMessage = () => {
                             const { enrollCouponErrorCode: e } = this.props;
-                            return e ? yt : null;
+                            return e ? Et : null;
                         }),
                         (this._getCouponVariables = ({ coupons: e, currency: t, lang: n }) => {
                             const o = e?.existing_balance.length ? e.existing_balance.find((e) => e.currency_code === t) : null,
@@ -583,84 +586,84 @@
                         o.createElement(z.O, { screenType: I.MN.Review }),
                         o.createElement(
                             r.Z,
-                            { style: Zt.qpContainer, testID: W.Z.reviewScreen },
+                            { style: _t.qpContainer, testID: W.Z.reviewScreen },
                             o.createElement(
                                 j.ZP,
                                 null,
-                                O && o.createElement(r.Z, { style: Zt.gutter }, o.createElement(De.Z, { text: O, type: "danger" })),
-                                S && o.createElement(r.Z, { style: Zt.gutter }, o.createElement(De.Z, { text: S, type: "warning" })),
-                                o.createElement(U.Y, { title: et }),
-                                o.createElement(Be.t, { description: k, descriptionTestID: W.Z.reviewObjectiveDescription, label: tt, withBottomBorder: !1 }),
-                                o.createElement(Be.t, { description: w, descriptionTestID: W.Z.reviewTargetingDescription, label: nt, withBottomBorder: !1 }),
-                                o.createElement(Ae.RD.Consumer, null, ({ direction: e }) => o.createElement(Be.t, { children: K && o.createElement(De.Z, { style: Zt.couponCallout, text: H }), description: L, descriptionDir: e, descriptionTestID: W.Z.reviewBudgetAndDurationDescription, label: ot, withBottomBorder: !1 })),
+                                O && o.createElement(r.Z, { style: _t.gutter }, o.createElement(Ae.Z, { text: O, type: "danger" })),
+                                S && o.createElement(r.Z, { style: _t.gutter }, o.createElement(Ae.Z, { text: S, type: "warning" })),
+                                o.createElement(U.Y, { title: tt }),
+                                o.createElement(Ne.t, { description: k, descriptionTestID: W.Z.reviewObjectiveDescription, label: nt, withBottomBorder: !1 }),
+                                o.createElement(Ne.t, { description: w, descriptionTestID: W.Z.reviewTargetingDescription, label: ot, withBottomBorder: !1 }),
+                                o.createElement(qe.RD.Consumer, null, ({ direction: e }) => o.createElement(Ne.t, { children: K && o.createElement(Ae.Z, { style: _t.couponCallout, text: H }), description: L, descriptionDir: e, descriptionTestID: W.Z.reviewBudgetAndDurationDescription, label: rt, withBottomBorder: !1 })),
                             ),
-                            (0, j.FR)((e) => o.createElement(qe.Z, { description: Z && "CREDIT_CARD" === l?.type && P && !f ? o.createElement(xe.XL, { id: P.id, imgSrcUrl: P.imgSrcUrl, lastFourDigits: P.lastFourDigits, paymentDescriptionStyle: Zt.paymentDescription, status: P.cardStatus }) : l && !f ? l.description : o.createElement(Le.ZP, { color: "primary", size: "subtext2" }, this._getPaymentDescription(R, A)), label: o.createElement(Le.ZP, { weight: "bold" }, rt), link: Z ? (!l || f ? (0, I.WS)(N, F, B, I.MN.Payment) : "CREDIT_CARD" === l?.type ? (0, I.WS)(N, F, B, I.MN.PaymentSelect) : void 0) : void 0, paddingHorizontal: e, testID: W.Z.reviewPaymentPivot })),
+                            (0, j.FR)((e) => o.createElement(Le.Z, { description: Z && "CREDIT_CARD" === l?.type && P && !f ? o.createElement(De.XL, { id: P.id, imgSrcUrl: P.imgSrcUrl, lastFourDigits: P.lastFourDigits, paymentDescriptionStyle: _t.paymentDescription, status: P.cardStatus }) : l && !f ? l.description : o.createElement(Me.ZP, { color: "primary", size: "subtext2" }, this._getPaymentDescription(R, A)), label: o.createElement(Me.ZP, { weight: "bold" }, at), link: Z ? (!l || f ? (0, I.WS)(N, F, B, I.MN.Payment) : "CREDIT_CARD" === l?.type ? (0, I.WS)(N, F, B, I.MN.PaymentSelect) : void 0) : void 0, paddingHorizontal: e, testID: W.Z.reviewPaymentPivot })),
                         ),
                         o.createElement(
                             r.Z,
-                            { style: Zt.bottomElements },
+                            { style: _t.bottomElements },
                             o.createElement(
                                 j.ZP,
                                 null,
                                 o.createElement(
-                                    Be.t,
-                                    { description: M, descriptionTestID: W.Z.reviewPromotionTotalDescription, label: at, withBottomBorder: !1 },
+                                    Ne.t,
+                                    { description: M, descriptionTestID: W.Z.reviewPromotionTotalDescription, label: st, withBottomBorder: !1 },
                                     D
                                         ? (function ({ balance: e, currency: t, lang: n, subtotal: a }) {
                                               const s = (0, G.Sy)({ amount: a, currency: t, lang: n }),
                                                   c = (0, G.Sy)({ amount: Math.min(a, e), currency: t, lang: n }),
                                                   i = (0, G.Sy)({ amount: Math.max(0, a - e), currency: t, lang: n }),
                                                   l = e > a ? (0, G.Sy)({ amount: e - a, currency: t, lang: n }) : null;
-                                              return o.createElement(o.Fragment, null, o.createElement(r.Z, { style: Zt.promotionTotalRow }, o.createElement(Le.ZP, { color: "gray700", size: "subtext2" }, st), o.createElement(Le.ZP, { color: "gray700", size: "subtext2" }, s)), o.createElement(r.Z, { style: Zt.promotionTotalRow }, o.createElement(Le.ZP, { color: "blue500", size: "subtext2" }, ct), o.createElement(Le.ZP, { color: "blue500", size: "subtext2" }, "-", c)), o.createElement(r.Z, { style: Zt.promotionTotalRow }, o.createElement(Le.ZP, { color: "gray700", size: "subtext2", weight: "bold" }, it), o.createElement(Le.ZP, { color: "gray700", size: "subtext2", testID: W.Z.reviewPromotionTotalDescription, weight: "bold" }, i)), l && o.createElement(r.Z, { style: Zt.promotionTotalRow }, o.createElement(Le.ZP, { color: "gray700", size: "subtext2" }, lt), o.createElement(Le.ZP, { color: "gray700", size: "subtext2" }, l)));
+                                              return o.createElement(o.Fragment, null, o.createElement(r.Z, { style: _t.promotionTotalRow }, o.createElement(Me.ZP, { color: "gray700", size: "subtext2" }, ct), o.createElement(Me.ZP, { color: "gray700", size: "subtext2" }, s)), o.createElement(r.Z, { style: _t.promotionTotalRow }, o.createElement(Me.ZP, { color: "blue500", size: "subtext2" }, it), o.createElement(Me.ZP, { color: "blue500", size: "subtext2" }, "-", c)), o.createElement(r.Z, { style: _t.promotionTotalRow }, o.createElement(Me.ZP, { color: "gray700", size: "subtext2", weight: "bold" }, lt), o.createElement(Me.ZP, { color: "gray700", size: "subtext2", testID: W.Z.reviewPromotionTotalDescription, weight: "bold" }, i)), l && o.createElement(r.Z, { style: _t.promotionTotalRow }, o.createElement(Me.ZP, { color: "gray700", size: "subtext2" }, dt), o.createElement(Me.ZP, { color: "gray700", size: "subtext2" }, l)));
                                           })({ subtotal: c * i, balance: x?.total_amount || 0, currency: s, lang: g })
                                         : null,
                                 ),
                                 o.createElement(
-                                    Me.Z,
-                                    { align: "left", style: Zt.terms },
+                                    Be.Z,
+                                    { align: "left", style: _t.terms },
                                     (function (e, t, n, r) {
-                                        return n ? o.createElement(p().I18NFormatMessage, { $i18n: "fc2dfb3f" }, o.createElement(Le.ZP, { link: (0, I.s0)(e) }, p().c1134966), o.createElement(Le.ZP, { link: (0, I.bx)(t, r) }, p().he45cc43)) : o.createElement(p().I18NFormatMessage, { $i18n: "fcf4b2a5" }, o.createElement(Le.ZP, { link: (0, I.s0)(e) }, p().c9439a82));
+                                        return n ? o.createElement(p().I18NFormatMessage, { $i18n: "fc2dfb3f" }, o.createElement(Me.ZP, { link: (0, I.s0)(e) }, p().c1134966), o.createElement(Me.ZP, { link: (0, I.bx)(t, r) }, p().he45cc43)) : o.createElement(p().I18NFormatMessage, { $i18n: "fcf4b2a5" }, o.createElement(Me.ZP, { link: (0, I.s0)(e) }, p().c9439a82));
                                     })(n, g, q, T),
                                 ),
-                                o.createElement(d.ZP, { disabled: !l || f || v.LK.includes(E), onPress: this._handlePromote, size: "xLarge", testID: W.Z.reviewButton, type: "primaryFilled" }, dt),
+                                o.createElement(d.ZP, { disabled: !l || f || v.LK.includes(E), onPress: this._handlePromote, size: "xLarge", testID: W.Z.reviewButton, type: "primaryFilled" }, ut),
                             ),
                         ),
                     );
                 }
             }
-            Ct.contextType = E.rC;
-            const Zt = u.default.create((e) => ({ qpContainer: { flex: 1, overflow: "auto" }, bottomElements: { marginTop: e.spaces.space12, marginBottom: e.spaces.space20 }, couponCallout: { marginTop: e.spaces.space12 }, childContainer: { paddingHorizontal: 0 }, terms: { textAlign: "start", color: e.colors.gray700, fontSize: e.fontSizes.subtext3, paddingBottom: e.spaces.space24 }, gutter: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, promotionTotalRow: { marginTop: e.spaces.space2, justifyContent: "space-between", flexDirection: "row" }, paymentDescription: { flexDirection: "row", marginStart: void 0, marginVertical: void 0, backgroundColor: void 0 } })),
-                _t = Je(Ct);
-            var kt = n(976145),
-                wt = n(84679),
-                St = n(933277),
-                vt = n(161821),
-                Tt = n(908478);
-            const It = (e, t) => e.quickPromote.account.adsAccount?.isHousingAndUrbanDevelopmentLimitations ?? !1,
-                xt = (e, t) => e.quickPromote.targeting.targetedLocations,
-                Dt = (e, t) => e.quickPromote.targeting.gender,
-                At = (e, t) => e.quickPromote.targeting.ageBucket,
-                qt = (e, t) => e.quickPromote.targeting.keywords,
-                Lt = (e, t) => e.quickPromote.objective,
-                Mt = (e, t) => T.Z.selectHydrated(e, ((e, t) => t.match.params.statusId)(0, t)),
-                Bt = (0, S.Z)()
-                    .propsFromState(() => ({ lang: Ne.VT, isHousingAndUrbanDevelopmentLimitations: It, targetedLocations: xt, selectedGender: Dt, selectedAgeBucket: At, selectedKeywords: qt, objective: Lt, tweet: Mt }))
+            Zt.contextType = E.rC;
+            const _t = u.default.create((e) => ({ qpContainer: { flex: 1, overflow: "auto" }, bottomElements: { marginTop: e.spaces.space12, marginBottom: e.spaces.space20 }, couponCallout: { marginTop: e.spaces.space12 }, childContainer: { paddingHorizontal: 0 }, terms: { textAlign: "start", color: e.colors.gray700, fontSize: e.fontSizes.subtext3, paddingBottom: e.spaces.space24 }, gutter: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, promotionTotalRow: { marginTop: e.spaces.space2, justifyContent: "space-between", flexDirection: "row" }, paymentDescription: { flexDirection: "row", marginStart: void 0, marginVertical: void 0, backgroundColor: void 0 } })),
+                kt = et(Zt);
+            var wt = n(976145),
+                St = n(84679),
+                vt = n(933277),
+                Tt = n(161821),
+                It = n(908478);
+            const xt = (e, t) => e.quickPromote.account.adsAccount?.isHousingAndUrbanDevelopmentLimitations ?? !1,
+                Dt = (e, t) => e.quickPromote.targeting.targetedLocations,
+                At = (e, t) => e.quickPromote.targeting.gender,
+                qt = (e, t) => e.quickPromote.targeting.ageBucket,
+                Lt = (e, t) => e.quickPromote.targeting.keywords,
+                Mt = (e, t) => e.quickPromote.objective,
+                Bt = (e, t) => T.Z.selectHydrated(e, ((e, t) => t.match.params.statusId)(0, t)),
+                Nt = (0, S.Z)()
+                    .propsFromState(() => ({ lang: Fe.VT, isHousingAndUrbanDevelopmentLimitations: xt, targetedLocations: Dt, selectedGender: At, selectedAgeBucket: qt, selectedKeywords: Lt, objective: Mt, tweet: Bt }))
                     .propsFromActions(() => ({ setObjective: v.mS, setTargetedAgeBucket: v.l$ }))
                     .withAnalytics(I.EP),
-                Nt = p().c672105a,
-                Ft = p().e1efbeae,
-                Ot = p().c6ff7c10,
-                Rt = p().b555fb46,
-                Ht = p().a8d0108e,
-                Ut = p().j2c03e12,
-                zt = ["18", "21", "25", "35", "50"],
-                jt = [void 0, void 0, "24", "34", "49", "54"],
-                Gt = (0, St.Z)((0, vt.Z)(C.gT), (e) => e.maxAge || "over"),
-                Wt = jt.length;
-            function Kt(e, t) {
+                Ft = p().c672105a,
+                Ot = p().e1efbeae,
+                Rt = p().c6ff7c10,
+                Ht = p().b555fb46,
+                Ut = p().a8d0108e,
+                zt = p().j2c03e12,
+                jt = ["18", "21", "25", "35", "50"],
+                Gt = [void 0, void 0, "24", "34", "49", "54"],
+                Wt = (0, vt.Z)((0, Tt.Z)(C.gT), (e) => e.maxAge || "over"),
+                Kt = Gt.length;
+            function Vt(e, t) {
                 if (e && t) return C.E4[e]?.[t];
             }
-            class Vt extends o.PureComponent {
+            class Qt extends o.PureComponent {
                 componentDidMount() {
                     const { analytics: e, setObjective: t, tweet: n } = this.props;
                     (0, I.hq)(e)(I.Ur.targetingPageLoad());
@@ -674,107 +677,107 @@
                         { quickPromotePlatform: m, screenName: p, statusId: g } = n.params,
                         h = (0, G.Un)({ numLocations: l.length }),
                         { maxAge: y, minAge: E } = C.gT[s],
-                        P = Qt(s),
-                        b = y || Ut;
+                        P = $t(s),
+                        b = y || zt;
                     return o.createElement(
                         r.Z,
-                        { style: Xt.qpContainer, testID: W.Z.targetingScreen },
+                        { style: Jt.qpContainer, testID: W.Z.targetingScreen },
                         o.createElement(z.O, { screenType: I.MN.Targeting }),
-                        o.createElement(j.ZP, null, o.createElement(U.Y, { callout: e ? o.createElement(Yt, { lang: t }) : void 0, style: Xt.titleContainer, title: Nt })),
+                        o.createElement(j.ZP, null, o.createElement(U.Y, { callout: e ? o.createElement(Xt, { lang: t }) : void 0, style: Jt.titleContainer, title: Ft })),
                         (0, j.FR)((t) => {
                             return o.createElement(
                                 r.Z,
-                                { style: Xt.targetingContainer },
-                                o.createElement(qe.Z, { description: (0, kt.Z)(l.map(({ localized_name: e }) => e)), label: o.createElement(Le.ZP, { weight: "bold" }, h), link: (0, I.WS)(p, g, m, I.MN.TargetingLocation), paddingHorizontal: t, testID: W.Z.targetingLocationPivot }),
+                                { style: Jt.targetingContainer },
+                                o.createElement(Le.Z, { description: (0, wt.Z)(l.map(({ localized_name: e }) => e)), label: o.createElement(Me.ZP, { weight: "bold" }, h), link: (0, I.WS)(p, g, m, I.MN.TargetingLocation), paddingHorizontal: t, testID: W.Z.targetingLocationPivot }),
                                 o.createElement(
                                     j.ZP,
                                     null,
                                     o.createElement(
-                                        Be.t,
-                                        { label: Ft, withBottomBorder: !1, withDisabledText: e, withPaddingHorizontal: !1 },
-                                        o.createElement(wt.Z, {
+                                        Ne.t,
+                                        { label: Ot, withBottomBorder: !1, withDisabledText: e, withPaddingHorizontal: !1 },
+                                        o.createElement(St.Z, {
                                             disabled: e,
-                                            endThumbAccessibilityLabel: Rt,
+                                            endThumbAccessibilityLabel: Ht,
                                             endThumbAccessibilityLabelValueText: `"${b}"`,
                                             endThumbLabel: b,
-                                            max: Wt,
+                                            max: Kt,
                                             min: 0,
                                             onChange:
                                                 ((n = this.props),
                                                 ([e, t], o) => {
                                                     const { analytics: r, selectedAgeBucket: a, setTargetedAgeBucket: s } = n,
-                                                        c = Qt(a);
-                                                    if (!(0, Tt.Z)(c, [e, t]))
+                                                        c = $t(a);
+                                                    if (!(0, It.Z)(c, [e, t]))
                                                         if (o) {
-                                                            const o = zt[e];
+                                                            const o = jt[e];
                                                             if (!o) return;
-                                                            const a = t === Wt ? "over" : jt[t],
-                                                                c = Kt(o, a);
+                                                            const a = t === Kt ? "over" : Gt[t],
+                                                                c = Vt(o, a);
                                                             if (c) (0, I.hq)(r)(I.Ur.setTargetingAgeBucket(c)), s(c);
                                                             else {
                                                                 const e = Object.keys(C.E4[o])[0];
-                                                                $t({ minAge: o, maxAge: e, props: n });
+                                                                Yt({ minAge: o, maxAge: e, props: n });
                                                             }
                                                         } else {
-                                                            const o = t === Wt ? "over" : jt[t];
+                                                            const o = t === Kt ? "over" : Gt[t];
                                                             if (!o) return;
-                                                            const a = zt[e],
-                                                                c = Kt(a, o);
+                                                            const a = jt[e],
+                                                                c = Vt(a, o);
                                                             if (c) (0, I.hq)(r)(I.Ur.setTargetingAgeBucket(c)), s(c);
                                                             else {
-                                                                const { minAge: e } = Gt[o].slice(-1)[0];
-                                                                $t({ minAge: e, maxAge: o, props: n });
+                                                                const { minAge: e } = Wt[o].slice(-1)[0];
+                                                                Yt({ minAge: e, maxAge: o, props: n });
                                                             }
                                                         }
                                                 }),
-                                            startThumbAccessibilityLabel: Ot,
+                                            startThumbAccessibilityLabel: Rt,
                                             startThumbAccessibilityLabelValueText: `"${E}"`,
                                             startThumbLabel: E,
                                             value: P,
                                         }),
                                     ),
                                 ),
-                                o.createElement(qe.Z, { description: (0, G.nW)(c), disabled: e, label: o.createElement(Le.ZP, { weight: "bold" }, Ht), link: (0, I.WS)(p, g, m, I.MN.TargetingGender), paddingHorizontal: t, testID: W.Z.targetingGenderPivot }),
-                                u && o.createElement(qe.Z, { description: (0, kt.Z)(i), label: o.createElement(Le.ZP, { weight: "bold" }, "Keywords"), link: (0, I.WS)(p, g, m, I.MN.TargetingKeywords), paddingHorizontal: t, testID: W.Z.targetingKeywordsPivot }),
+                                o.createElement(Le.Z, { description: (0, G.nW)(c), disabled: e, label: o.createElement(Me.ZP, { weight: "bold" }, Ut), link: (0, I.WS)(p, g, m, I.MN.TargetingGender), paddingHorizontal: t, testID: W.Z.targetingGenderPivot }),
+                                u && o.createElement(Le.Z, { description: (0, wt.Z)(i), label: o.createElement(Me.ZP, { weight: "bold" }, "Keywords"), link: (0, I.WS)(p, g, m, I.MN.TargetingKeywords), paddingHorizontal: t, testID: W.Z.targetingKeywordsPivot }),
                             );
                             var n;
                         }),
                     );
                 }
             }
-            function Qt(e) {
+            function $t(e) {
                 const { maxAge: t, minAge: n } = C.gT[e];
-                return [zt.indexOf(n), t ? jt.indexOf(t) : Wt];
+                return [jt.indexOf(n), t ? Gt.indexOf(t) : Kt];
             }
-            function $t({ maxAge: e, minAge: t, props: n }) {
+            function Yt({ maxAge: e, minAge: t, props: n }) {
                 const { analytics: o, setTargetedAgeBucket: r } = n,
                     a = C.E4[t][e || "over"];
                 if (!a) throw new Error(`Age bucket not found for minAge: "${t}", maxAge: "${e || "<empty>"}"`);
                 (0, I.hq)(o)(I.Ur.setTargetingAgeBucket(a)), r(a);
             }
-            function Yt({ lang: e }) {
+            function Xt({ lang: e }) {
                 const t = (0, I.C0)(e),
-                    n = o.useMemo(() => ({ termsLink: o.createElement(Le.ZP, { link: t }) }), [t]);
-                return o.createElement(De.Z, { text: o.createElement(p().I18NFormatMessage, { $i18n: "f54ad505" }, o.cloneElement(n.termsLink, null, p().d4e01892)) });
+                    n = o.useMemo(() => ({ termsLink: o.createElement(Me.ZP, { link: t }) }), [t]);
+                return o.createElement(Ae.Z, { text: o.createElement(p().I18NFormatMessage, { $i18n: "f54ad505" }, o.cloneElement(n.termsLink, null, p().d4e01892)) });
             }
-            Vt.contextType = E.rC;
-            const Xt = u.default.create((e) => ({ qpContainer: { flex: 1, overflowY: "visible" }, titleContainer: { paddingBottom: e.spaces.space16 }, targetingContainer: { flexDirection: "column", gap: e.spaces.space16 } })),
-                Jt = Bt(Vt);
-            var en = n(449479);
-            const tn = (e, t) => e.quickPromote.targeting.gender,
-                nn = (e, t) => e.quickPromote.account.campaigns,
-                on = (0, S.Z)()
-                    .propsFromState(() => ({ selectedGender: tn, campaigns: nn }))
+            Qt.contextType = E.rC;
+            const Jt = u.default.create((e) => ({ qpContainer: { flex: 1, overflowY: "visible" }, titleContainer: { paddingBottom: e.spaces.space16 }, targetingContainer: { flexDirection: "column", gap: e.spaces.space16 } })),
+                en = Nt(Qt);
+            var tn = n(449479);
+            const nn = (e, t) => e.quickPromote.targeting.gender,
+                on = (e, t) => e.quickPromote.account.campaigns,
+                rn = (0, S.Z)()
+                    .propsFromState(() => ({ selectedGender: nn, campaigns: on }))
                     .propsFromActions(() => ({ setTargetedGender: v.A_ }))
                     .withAnalytics(I.EP),
-                rn = [C.Y0.Any, C.Y0.Female, C.Y0.Male].map((e) => ({ label: (0, G.nW)(e), value: e, testID: W.Z.getTargetingGender(e) })),
-                an = p().df8d4fa0,
-                sn = ({ children: e, onBack: t }) => {
+                an = [C.Y0.Any, C.Y0.Female, C.Y0.Male].map((e) => ({ label: (0, G.nW)(e), value: e, testID: W.Z.getTargetingGender(e) })),
+                sn = p().df8d4fa0,
+                cn = ({ children: e, onBack: t }) => {
                     const n = o.useMemo(() => o.createElement(l.Z, { onClick: t }), [t]);
-                    return o.createElement(r.Z, { style: cn.qpContainer, testID: W.Z.targetingGenderScreen }, o.createElement(i.Z, { leftControl: n, style: cn.appBar, title: an }), e);
+                    return o.createElement(r.Z, { style: ln.qpContainer, testID: W.Z.targetingGenderScreen }, o.createElement(i.Z, { leftControl: n, style: ln.appBar, title: sn }), e);
                 },
-                cn = u.default.create((e) => ({ qpContainer: { flex: 1 }, appBar: { borderBottomWidth: 1, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor, paddingStart: e.spaces.space8 }, selectionGroupContainer: { paddingTop: e.spaces.space16 } })),
-                ln = on(({ analytics: e, selectedGender: t, setTargetedGender: n, ...a }) => {
+                ln = u.default.create((e) => ({ qpContainer: { flex: 1 }, appBar: { borderBottomWidth: 1, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor, paddingStart: e.spaces.space8 }, selectionGroupContainer: { paddingTop: e.spaces.space16 } })),
+                dn = rn(({ analytics: e, selectedGender: t, setTargetedGender: n, ...a }) => {
                     const s = o.useCallback(() => {
                             const { history: e, location: t, match: n } = a,
                                 { quickPromotePlatform: o, quickPromoteScreenName: r, screenName: s, statusId: c } = n.params;
@@ -786,46 +789,46 @@
                             },
                             [e, n, s],
                         );
-                    return (0, z.d)(I.MN.TargetingGender), o.createElement(sn, { onBack: s }, o.createElement(j.ZP, null, o.createElement(r.Z, { style: cn.selectionGroupContainer }, o.createElement(en.Z, { name: "gender", onChange: c, options: rn, value: t }))));
+                    return (0, z.d)(I.MN.TargetingGender), o.createElement(cn, { onBack: s }, o.createElement(j.ZP, null, o.createElement(r.Z, { style: ln.selectionGroupContainer }, o.createElement(tn.Z, { name: "gender", onChange: c, options: an, value: t }))));
                 }),
-                dn = ln;
-            var un = n(430996),
-                mn = n(879113),
-                pn = n(954110),
-                gn = n(67369),
-                hn = n(371344),
-                yn = n(956272),
-                En = n(370751),
-                Pn = n(326399);
-            const bn = (e, t) => {
-                    const n = Cn(e, t);
+                un = dn;
+            var mn = n(430996),
+                pn = n(879113),
+                gn = n(954110),
+                hn = n(67369),
+                yn = n(371344),
+                En = n(956272),
+                Pn = n(370751),
+                bn = n(326399);
+            const fn = (e, t) => {
+                    const n = Zn(e, t);
                     return e.ads.typeahead.targetingLocation[n];
                 },
-                fn = (e, t) => {
-                    const n = Cn(e, t);
+                Cn = (e, t) => {
+                    const n = Zn(e, t);
                     return e.ads.typeahead.targetingLocation[n]?.fetchStatus;
                 },
-                Cn = (e, t) => e.quickPromote.targeting.locationQuery,
-                Zn = (e, t) => e.quickPromote.targeting.targetedLocations,
-                _n = (e, t) => e.quickPromote.account.campaigns,
-                kn = (e, t) => e.quickPromote.account.adsAccount?.isHousingAndUrbanDevelopmentLimitations ?? !1,
-                wn = (0, S.Z)()
-                    .propsFromState(() => ({ targetingLocationQuery: Cn, targetingLocations: bn, targetedLocations: Zn, fetchStatus: fn, userCountry: Ne.GG, campaigns: _n, isHousingAndUrbanDevelopmentLimitations: kn }))
+                Zn = (e, t) => e.quickPromote.targeting.locationQuery,
+                _n = (e, t) => e.quickPromote.targeting.targetedLocations,
+                kn = (e, t) => e.quickPromote.account.campaigns,
+                wn = (e, t) => e.quickPromote.account.adsAccount?.isHousingAndUrbanDevelopmentLimitations ?? !1,
+                Sn = (0, S.Z)()
+                    .propsFromState(() => ({ targetingLocationQuery: Zn, targetingLocations: fn, targetedLocations: _n, fetchStatus: Cn, userCountry: Fe.GG, campaigns: kn, isHousingAndUrbanDevelopmentLimitations: wn }))
                     .propsFromActions(() => ({ setTargetedLocations: v.hI, setAndFetchTargetingLocationQuery: v.sN, setTargetingLocationQuery: v.zu, createLocalApiErrorHandler: (0, w.zr)("QUICK_PROMOTE_TARGETING_LOCATION_SCREEN") }))
                     .withAnalytics(I.EP),
-                Sn = p().cc642518,
-                vn = p().i0e8c3c6,
-                Tn = p().deaf5b16,
-                In = p().f69ad048,
-                xn = Object.freeze({ COUNTRIES: 0, REGIONS: 1, METROS: 2, CITIES: 3, POSTAL_CODES: 4 }),
-                Dn = Object.freeze({ [I.cU.CurrentCountryMatch]: 0, [I.cU.Match]: 1, [I.cU.NoMatch]: 2 });
-            class An extends o.PureComponent {
+                vn = p().cc642518,
+                Tn = p().i0e8c3c6,
+                In = p().deaf5b16,
+                xn = p().f69ad048,
+                Dn = Object.freeze({ COUNTRIES: 0, REGIONS: 1, METROS: 2, CITIES: 3, POSTAL_CODES: 4 }),
+                An = Object.freeze({ [I.cU.CurrentCountryMatch]: 0, [I.cU.Match]: 1, [I.cU.NoMatch]: 2 });
+            class qn extends o.PureComponent {
                 constructor(...e) {
                     super(...e),
                         (this.state = { errorMessage: null }),
                         (this._renderSearch = () => {
                             const { fetchStatus: e, targetingLocationQuery: t } = this.props;
-                            return o.createElement(qn, { onBack: this._handleGoBack, onChange: this._handleTargetingLocationChange, onClear: this._handleClear, targetingLocationQuery: t }, o.createElement(r.Z, { style: Ln.border }, o.createElement(j.ZP, null, o.createElement(Le.ZP, { style: Ln.headingText, weight: "heavy" }, vn))), o.createElement(mn.Z, { fetchStatus: e, render: this._renderSearchList, retryMessage: Tn }));
+                            return o.createElement(Ln, { onBack: this._handleGoBack, onChange: this._handleTargetingLocationChange, onClear: this._handleClear, targetingLocationQuery: t }, o.createElement(r.Z, { style: Mn.border }, o.createElement(j.ZP, null, o.createElement(Me.ZP, { style: Mn.headingText, weight: "heavy" }, Tn))), o.createElement(pn.Z, { fetchStatus: e, render: this._renderSearchList, retryMessage: In }));
                         }),
                         (this._handleClear = () => {
                             const { setTargetingLocationQuery: e } = this.props;
@@ -833,15 +836,15 @@
                         }),
                         (this._renderSearchList = () => {
                             const { targetedLocations: e } = this.props,
-                                t = (0, En.Z)(e.map(({ targeting_value: e }) => e)),
+                                t = (0, Pn.Z)(e.map(({ targeting_value: e }) => e)),
                                 n = this._getTargetingLocationOptions();
                             return o.createElement(
                                 r.Z,
-                                { style: Ln.overflow },
+                                { style: Mn.overflow },
                                 o.createElement(
                                     j.ZP,
                                     null,
-                                    n.map(({ localized_name: e, location_type: n, targeting_value: r }) => o.createElement(pn.Z, { checked: t.has(r), helpText: (0, G.sA)(n), key: r, label: e, name: r, onChange: this._handleSearchSelect, testID: W.Z.targetingLocationItem, withPaddingHorizontal: !1 })),
+                                    n.map(({ localized_name: e, location_type: n, targeting_value: r }) => o.createElement(gn.Z, { checked: t.has(r), helpText: (0, G.sA)(n), key: r, label: e, name: r, onChange: this._handleSearchSelect, testID: W.Z.targetingLocationItem, withPaddingHorizontal: !1 })),
                                 ),
                             );
                         }),
@@ -853,19 +856,19 @@
                                     if (e && "POSTAL_CODES" === r) return !1;
                                     return a(o, n, t) !== I.cU.NoMatch;
                                 });
-                            return (0, Pn.Z)(
+                            return (0, bn.Z)(
                                 s,
                                 [
                                     ({ country_code: e, localized_name: n }) => {
                                         const o = a(n, e, t);
-                                        return Dn[o];
+                                        return An[o];
                                     },
                                     ({ localized_name: e, location_type: t }) =>
-                                        xn[t] ??
+                                        Dn[t] ??
                                         (((e) => {
-                                            (0, ye.ZP)(`Quick Promote: Unknown location type: ${e}. Expected one of {${Object.keys(xn).join(", ")}}`);
+                                            (0, Ee.ZP)(`Quick Promote: Unknown location type: ${e}. Expected one of {${Object.keys(Dn).join(", ")}}`);
                                         })(t) ||
-                                            Object.keys(xn).length),
+                                            Object.keys(Dn).length),
                                     ({ localized_name: e }) => e,
                                 ],
                                 "asc",
@@ -876,21 +879,21 @@
                             if (t) {
                                 this.setState({ errorMessage: null });
                                 const t = this._getTargetingLocationOptions().find(({ targeting_value: t }) => t === e);
-                                t ? ((0, I.hq)(n)(I.Ur.setTargetingLocation({ id: t.targeting_value, locationType: t.location_type, countryCode: t.country_code })), o([t]), this._handleGoBack()) : (0, ye.ZP)(`Quick Promote: could not find "${e}" in list of targeting options`);
-                            } else (0, I.hq)(n)(I.Ur.targetingLocationInvalid()), this.setState({ errorMessage: In });
+                                t ? ((0, I.hq)(n)(I.Ur.setTargetingLocation({ id: t.targeting_value, locationType: t.location_type, countryCode: t.country_code })), o([t]), this._handleGoBack()) : (0, Ee.ZP)(`Quick Promote: could not find "${e}" in list of targeting options`);
+                            } else (0, I.hq)(n)(I.Ur.targetingLocationInvalid()), this.setState({ errorMessage: xn });
                             r("");
                         }),
                         (this._renderSelected = () => {
                             const { targetedLocations: e, targetingLocationQuery: t } = this.props,
                                 { errorMessage: n } = this.state;
                             return o.createElement(
-                                qn,
+                                Ln,
                                 { onBack: this._handleGoBack, onChange: this._handleTargetingLocationChange, onClear: this._handleClear, targetingLocationQuery: t },
-                                o.createElement(r.Z, null, n && o.createElement(j.ZP, null, o.createElement(r.Z, { style: Ln.gutterVertical }, o.createElement(De.Z, { text: n, type: "danger" }))), o.createElement(r.Z, { style: Ln.border }, o.createElement(j.ZP, null, o.createElement(Le.ZP, { style: Ln.headingText, weight: "heavy" }, (0, G.Un)({ numLocations: e.length }))))),
+                                o.createElement(r.Z, null, n && o.createElement(j.ZP, null, o.createElement(r.Z, { style: Mn.gutterVertical }, o.createElement(Ae.Z, { text: n, type: "danger" }))), o.createElement(r.Z, { style: Mn.border }, o.createElement(j.ZP, null, o.createElement(Me.ZP, { style: Mn.headingText, weight: "heavy" }, (0, G.Un)({ numLocations: e.length }))))),
                                 o.createElement(
                                     j.ZP,
                                     null,
-                                    e.map(({ localized_name: e, location_type: t, targeting_value: n }) => o.createElement(pn.Z, { checked: !0, helpText: (0, G.sA)(t), key: n, label: e, name: n, onChange: this._handleSearchSelect, testID: W.Z.targetingLocationItem, withPaddingHorizontal: !1 })),
+                                    e.map(({ localized_name: e, location_type: t, targeting_value: n }) => o.createElement(gn.Z, { checked: !0, helpText: (0, G.sA)(t), key: n, label: e, name: n, onChange: this._handleSearchSelect, testID: W.Z.targetingLocationItem, withPaddingHorizontal: !1 })),
                                 ),
                             );
                         }),
@@ -917,18 +920,18 @@
                     return o.createElement(o.Fragment, null, o.createElement(z.O, { screenType: I.MN.TargetingLocation }), e ? this._renderSearch() : this._renderSelected());
                 }
             }
-            An.contextType = E.rC;
-            const qn = ({ children: e, onBack: t, onChange: n, onClear: a, targetingLocationQuery: s }) => {
-                    const c = (0, gn.Zz)();
-                    return o.createElement(r.Z, { style: Ln.qpContainer, testID: W.Z.targetingLocationScreen }, o.createElement(i.Z, { leftControl: o.createElement(l.Z, { onClick: t }), middleControl: o.createElement(r.Z, { style: c ? Ln.mobileInputContainer : Ln.inputContainer }, o.createElement(hn.Z, { Icon: yn.default, autoFocus: !0, name: "locationTargetingInput", onChange: n, onClear: a, placeholder: Sn, style: Ln.input, testID: W.Z.targetingLocationSearch, value: s, withClearButton: !0 })) }), e);
+            qn.contextType = E.rC;
+            const Ln = ({ children: e, onBack: t, onChange: n, onClear: a, targetingLocationQuery: s }) => {
+                    const c = (0, hn.Zz)();
+                    return o.createElement(r.Z, { style: Mn.qpContainer, testID: W.Z.targetingLocationScreen }, o.createElement(i.Z, { leftControl: o.createElement(l.Z, { onClick: t }), middleControl: o.createElement(r.Z, { style: c ? Mn.mobileInputContainer : Mn.inputContainer }, o.createElement(yn.Z, { Icon: En.default, autoFocus: !0, name: "locationTargetingInput", onChange: n, onClear: a, placeholder: vn, style: Mn.input, testID: W.Z.targetingLocationSearch, value: s, withClearButton: !0 })) }), e);
                 },
-                Ln = u.default.create((e) => ({ qpContainer: { flex: 1 }, inputContainer: { paddingStart: e.spaces.space8, paddingEnd: e.spaces.space64 }, mobileInputContainer: { paddingEnd: e.spaces.space16 }, input: { marginVertical: e.spaces.space12 }, border: { borderBottomWidth: 1, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor, borderTopWidth: 1, borderTopStyle: "solid", borderTopColor: e.colors.borderColor }, headingText: { fontSize: e.fontSizes.headline1, paddingVertical: e.componentDimensions.gutterVertical }, gutterVertical: { paddingVertical: e.componentDimensions.gutterVertical }, overflow: { flexGrow: 1, flexShrink: 1, flexBasis: "200px", overflowY: "auto" } })),
-                Mn = wn(An),
-                Bn = p().d948b978,
-                Nn = p().cfcdb4a2,
-                Fn = p().h1fcb36c,
-                On = p().c1df579e;
-            class Rn extends o.PureComponent {
+                Mn = u.default.create((e) => ({ qpContainer: { flex: 1 }, inputContainer: { paddingStart: e.spaces.space8, paddingEnd: e.spaces.space64 }, mobileInputContainer: { paddingEnd: e.spaces.space16 }, input: { marginVertical: e.spaces.space12 }, border: { borderBottomWidth: 1, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor, borderTopWidth: 1, borderTopStyle: "solid", borderTopColor: e.colors.borderColor }, headingText: { fontSize: e.fontSizes.headline1, paddingVertical: e.componentDimensions.gutterVertical }, gutterVertical: { paddingVertical: e.componentDimensions.gutterVertical }, overflow: { flexGrow: 1, flexShrink: 1, flexBasis: "200px", overflowY: "auto" } })),
+                Bn = Sn(qn),
+                Nn = p().d948b978,
+                Fn = p().cfcdb4a2,
+                On = p().h1fcb36c,
+                Rn = p().c1df579e;
+            class Hn extends o.PureComponent {
                 constructor(...e) {
                     super(...e),
                         (this.state = { isLoaded: !1 }),
@@ -939,7 +942,7 @@
                         (this._render = () => {
                             const { history: e } = this.props,
                                 t = this._getRetweetOrTweet();
-                            return !t || (t && t.user.id_str !== this.context.viewerUserId) ? o.createElement(y.Z, { history: e, onBackClick: this._handleGoBack, title: Fn }, o.createElement(c.Z, { onRetry: null, title: Bn })) : this._renderPage();
+                            return !t || (t && t.user.id_str !== this.context.viewerUserId) ? o.createElement(y.Z, { history: e, onBackClick: this._handleGoBack, title: On }, o.createElement(c.Z, { onRetry: null, title: Nn })) : this._renderPage();
                         }),
                         (this._renderHeader = g.Z),
                         (this._renderPage = () => {
@@ -981,15 +984,15 @@
                         (this._renderProgressPage = (e, t) => {
                             const { history: n, match: a } = this.props,
                                 { quickPromoteScreenName: s } = a.params;
-                            return o.createElement(y.Z, { documentTitle: Fn, history: n, renderHeader: this._renderHeader }, o.createElement(i.Z, { leftControl: o.createElement(l.Z, { autofocus: !0, backButtonType: "targeting" === s ? "close" : "back", onClick: this._handleGoBack, testID: W.Z.backButton }) }), o.createElement(r.Z, { style: Hn.noScrollView }, this._renderRoutes(), t && o.createElement(j.ZP, null, o.createElement(d.ZP, { link: t, size: "xLarge", style: Hn.nextButton, testID: W.Z.nextButton, type: "primaryFilled" }, On))));
+                            return o.createElement(y.Z, { documentTitle: On, history: n, renderHeader: this._renderHeader }, o.createElement(i.Z, { leftControl: o.createElement(l.Z, { autofocus: !0, backButtonType: "targeting" === s ? "close" : "back", onClick: this._handleGoBack, testID: W.Z.backButton }) }), o.createElement(r.Z, { style: Un.noScrollView }, this._renderRoutes(), t && o.createElement(j.ZP, null, o.createElement(d.ZP, { link: t, size: "xLarge", style: Un.nextButton, testID: W.Z.nextButton, type: "primaryFilled" }, Rn))));
                         }),
                         (this._renderNavigationPage = () => {
                             const { history: e } = this.props;
-                            return o.createElement(y.Z, { documentTitle: Fn, history: e, renderHeader: this._renderHeader }, o.createElement(i.Z, { leftControl: o.createElement(l.Z, { autofocus: !0, onClick: this._handleGoBack, testID: W.Z.backButton }) }), o.createElement(r.Z, { style: Hn.noScrollView }, this._renderRoutes()));
+                            return o.createElement(y.Z, { documentTitle: On, history: e, renderHeader: this._renderHeader }, o.createElement(i.Z, { leftControl: o.createElement(l.Z, { autofocus: !0, onClick: this._handleGoBack, testID: W.Z.backButton }) }), o.createElement(r.Z, { style: Un.noScrollView }, this._renderRoutes()));
                         }),
                         (this._renderPopupPage = () => {
                             const { history: e } = this.props;
-                            return o.createElement(y.Z, { documentTitle: Fn, history: e, renderHeader: this._renderHeader }, this._renderRoutes());
+                            return o.createElement(y.Z, { documentTitle: On, history: e, renderHeader: this._renderHeader }, this._renderRoutes());
                         }),
                         (this._renderSplashPage = () => this._renderRoutes()),
                         (this._renderRoutes = () => {
@@ -999,23 +1002,23 @@
                                 case "intro":
                                     return o.createElement(a.Route, { component: F.Z });
                                 case "objective":
-                                    return o.createElement(a.Route, { component: ce });
+                                    return o.createElement(a.Route, { component: le });
                                 case "targeting":
-                                    return o.createElement(a.Route, { component: Jt });
+                                    return o.createElement(a.Route, { component: en });
                                 case "targeting_location":
-                                    return o.createElement(a.Route, { component: Mn });
+                                    return o.createElement(a.Route, { component: Bn });
                                 case "targeting_gender":
-                                    return o.createElement(a.Route, { component: dn });
+                                    return o.createElement(a.Route, { component: un });
                                 case "targeting_keywords":
-                                    return o.createElement(a.Route, { component: un.Z });
+                                    return o.createElement(a.Route, { component: mn.Z });
                                 case "budget_select":
                                     return o.createElement(a.Route, { component: k.ZP });
                                 case "review":
-                                    return o.createElement(a.Route, { component: _t });
+                                    return o.createElement(a.Route, { component: kt });
                                 case "payment":
-                                    return o.createElement(a.Route, { component: Ie });
+                                    return o.createElement(a.Route, { component: xe });
                                 case "payment_select":
-                                    return o.createElement(a.Route, { component: xe.ZP });
+                                    return o.createElement(a.Route, { component: De.ZP });
                                 case "done":
                                     return o.createElement(a.Route, { component: N.ZP });
                                 default:
@@ -1064,19 +1067,16 @@
                     if (!this.context.viewerUserId) return this._render();
                     const s = (0, Z.h1)(t, this.state.isLoaded ? Z.ZP.LOADED : Z.ZP.LOADING);
                     if (s === Z.ZP.NONE) throw new Error("Quick Promote: should never have none state");
-                    return s !== Z.ZP.LOADED ? o.createElement(y.Z, { documentTitle: Fn, history: n, renderHeader: this._renderHeader }, o.createElement(O.s, null), o.createElement(me, null), o.createElement(h.Z, { fetchStatus: s, onRequestRetry: this._handleRequestRetry, render: this._render, retryMessage: Nn })) : o.createElement(_.Z, { analytics: e, history: n, qpRouteParams: r.params, screensAllowedToNavigate: a }, o.createElement(h.Z, { fetchStatus: s, onRequestRetry: this._handleRequestRetry, render: this._render, retryMessage: Nn }));
+                    return s !== Z.ZP.LOADED ? o.createElement(y.Z, { documentTitle: On, history: n, renderHeader: this._renderHeader }, o.createElement(O.s, null), o.createElement(pe, null), o.createElement(h.Z, { fetchStatus: s, onRequestRetry: this._handleRequestRetry, render: this._render, retryMessage: Fn })) : o.createElement(_.Z, { analytics: e, history: n, qpRouteParams: r.params, screensAllowedToNavigate: a }, o.createElement(h.Z, { fetchStatus: s, onRequestRetry: this._handleRequestRetry, render: this._render, retryMessage: Fn }));
                 }
             }
-            Rn.contextType = E.rC;
-            const Hn = u.default.create((e) => ({ noScrollView: { overflowX: "hidden", flex: 1 }, nextButton: { marginBottom: e.spaces.space48, marginTop: e.spaces.space12 } })),
-                Un = B(Rn);
-        },
-        653970: (e, t, n) => {
-            e.exports = n.p + "engagements_icon.14baf75a.png";
+            Hn.contextType = E.rC;
+            const Un = u.default.create((e) => ({ noScrollView: { overflowX: "hidden", flex: 1 }, nextButton: { marginBottom: e.spaces.space48, marginTop: e.spaces.space12 } })),
+                zn = B(Hn);
         },
         6885: (e, t, n) => {
             e.exports = n.p + "website_clicks_icon.82f641fa.png";
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Conversation-a665aad7.a16951fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Conversation-a665aad7.f2b0470a.js.map

@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.DMRichTextCompose", "ondemand.RichText"],
+    ["bundle.DMRichTextCompose", "ondemand.RichText", "shared~bundle.SettingsExtendedProfile~bundle.WorkHistory~ondemand.Verified~ondemand.RichText~bundle.RichTextC"],
     {
         468032: (e, t, n) => {
             n.d(t, { Z: () => s });
@@ -721,4 +721,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.DMRichTextCompose.019f104a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.DMRichTextCompose.84f6111a.js.map

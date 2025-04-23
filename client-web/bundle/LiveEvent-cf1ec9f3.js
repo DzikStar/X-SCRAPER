@@ -25,13 +25,13 @@
                 I = i(651930),
                 w = i(572067),
                 S = i(252021),
-                y = i(197718),
-                D = i(443781),
-                T = i(293988),
-                x = i(38293),
-                C = i(23134),
-                Z = i(652904),
-                P = i(907552),
+                y = i(443781),
+                D = i(293988),
+                T = i(38293),
+                x = i(23134),
+                C = i(652904),
+                Z = i(907552),
+                P = i(181142),
                 A = i(241304),
                 N = i(78067),
                 B = i(666670),
@@ -42,7 +42,7 @@
                 M = i(479506),
                 W = i(503229),
                 U = i(801501),
-                V = i(367848);
+                V = i(382285);
             const R = ({ broadcastId: e }) => a.createElement(n.Z, { style: z.container }, a.createElement(V.Z, { broadcastId: e })),
                 j = u.default.supports("height: 100dvh") ? "dvh" : "vh",
                 z = u.default.create((e) => ({ container: { borderColor: e.colors.borderColor, borderStyle: "solid", borderRadius: e.borderRadii.xLarge, borderWidth: e.borderWidths.small, marginStart: e.spaces.space8, marginTop: e.spaces.space8, minHeight: "480px", height: `calc(100${j} - 400px)` } }));
@@ -170,7 +170,7 @@
                             const { fetchStatus: e } = this.props;
                             return a.createElement(E.Z, { "aria-label": Se, fetchStatus: e, onRequestRetry: this._handleFetchBroadcast, render: this._render });
                         }),
-                        (this._renderRightControl = () => a.createElement(n.Z, { style: ke.rightControl }, a.createElement(P.Tz, { scribeNamespace: this.props.analytics.contextualScribeNamespace, url: (0, s.ju)(`https://x.com/i/broadcasts/${this.props.broadcastId}`) }), a.createElement(Y, this.props))),
+                        (this._renderRightControl = () => a.createElement(n.Z, { style: ke.rightControl }, a.createElement(Z.Tz, { scribeNamespace: this.props.analytics.contextualScribeNamespace, url: (0, s.ju)(`https://x.com/i/broadcasts/${this.props.broadcastId}`) }), a.createElement(Y, this.props))),
                         (this._render = () => {
                             const e = this._getTitle(),
                                 { viewerUserId: t } = this.context,
@@ -187,7 +187,7 @@
                         (this._renderUserActions = () => {
                             const { featureSwitches: e, viewerUserId: t } = this.context,
                                 { promotedContent: i, twitterBroadcaster: r } = this.props;
-                            return !r || t === r.id_str || r.blocked_by ? null : a.createElement(n.Z, { style: ke.userActionsWrapper }, e.isTrue("rweb_tipjar_consumption_enabled") && a.createElement(A.Z, { userId: r.id_str }), r.following && a.createElement(T.Z, { allowPromptForPush: !0, isFollowing: r.notifications, userId: r.id_str }), a.createElement(C.C, { isSuperFollowSubscriptionEnabled: this.context.featureSwitches.isTrue("super_follow_android_web_subscription_enabled"), promotedContent: i ?? r.promoted_content, userId: r.id_str }));
+                            return !r || t === r.id_str || r.blocked_by ? null : a.createElement(n.Z, { style: ke.userActionsWrapper }, e.isTrue("rweb_tipjar_consumption_enabled") && a.createElement(A.Z, { userId: r.id_str }), r.following && a.createElement(D.Z, { allowPromptForPush: !0, isFollowing: r.notifications, userId: r.id_str }), a.createElement(x.C, { isSuperFollowSubscriptionEnabled: this.context.featureSwitches.isTrue("super_follow_android_web_subscription_enabled"), promotedContent: i ?? r.promoted_content, userId: r.id_str }));
                         }),
                         (this._getScribeData = () => {
                             const { broadcastId: e } = this.props;
@@ -232,7 +232,7 @@
                         n = this.props.broadcast?.chat_option || 0,
                         s = t?.params?.broadcastId || "",
                         o = i.isTrue("responsive_web_chat_enabled") && n > 1;
-                    return a.createElement(F.nO, { data: this._getScribeData() }, a.createElement(Z.Z, null, this._renderMetaTags(r), a.createElement(y.aM, null, a.createElement(S.Z, { backLocation: "/", documentTitle: r, history: e, primaryContent: this._renderPrimaryContent, rightControl: this._renderRightControl(), sidebarContent: o ? a.createElement(R, { broadcastId: s }) : a.createElement(f.Z, null), title: we, withWideSidebar: o })), a.createElement(x.Z, { title: r, withMeta: !1 })));
+                    return a.createElement(F.nO, { data: this._getScribeData() }, a.createElement(C.Z, null, this._renderMetaTags(r), a.createElement(P.aM, null, a.createElement(S.Z, { backLocation: "/", documentTitle: r, history: e, primaryContent: this._renderPrimaryContent, rightControl: this._renderRightControl(), sidebarContent: o ? a.createElement(R, { broadcastId: s }) : a.createElement(f.Z, null), title: we, withWideSidebar: o })), a.createElement(T.Z, { title: r, withMeta: !1 })));
                 }
                 _renderMetaTags(e) {
                     const { broadcast: t, broadcastId: i, timecode: r, twitterBroadcaster: n } = this.props,
@@ -267,7 +267,7 @@
                     return a.createElement(F.nO, { data: { items: [{ id: d, item_type: M.Z.ItemType.TWEET }] } }, a.createElement(n.Z, { style: ke.card }, a.createElement(r.ql, { prioritizeSeoTags: !0 }, a.createElement("meta", { content: o.url, property: "og:image" }), a.createElement("meta", { content: o.width, property: "og:image:width" }), a.createElement("meta", { content: o.height, property: "og:image:height" })), a.createElement(N.Z, { "aria-label": Ie, aspectRatio: be, customVariants: c, displayOptions: fe, includeBroadcastEventAssociation: !0, poster: o, promotedContent: i, source: { variants: [], videoId: b.Z.forBroadcast(t), contentId: l }, timecode: s, videoType: "video" })));
                 }
             }
-            Be.contextType = D.rC;
+            Be.contextType = y.rC;
             const ke = u.default.create((e) => ({ card: { backgroundColor: e.colors.gray0, overflow: "hidden" }, header: { flexDirection: "column", gap: e.spaces.space12, justifyContent: "center", paddingVertical: e.spaces.space20, paddingHorizontal: e.spaces.space12, borderBottomColor: e.colors.borderColor, borderBottomStyle: "solid", borderBottomWidth: e.borderWidths.small }, labelOverlay: { position: "absolute", bottom: e.spaces.space12, start: e.spaces.space12 }, relatedEvent: { flexBasis: "100%" }, rightControl: { display: "flex", flexDirection: "row" }, title: { alignItems: "center", display: "flex", flexDirection: "row", justifyContent: "space-between", gap: e.spaces.space12 }, titleText: { marginEnd: e.spaces.space4 }, userCell: { paddingHorizontal: 0, paddingVertical: 0, width: "100%" }, userNameAndActionsWrapper: { display: "flex", flexDirection: "row", gap: e.spaces.space8 }, userActionsWrapper: { alignItems: "center", display: "flex", flexDirection: "row", gap: e.spaces.space8 }, userNameWrapper: { alignItems: "flex-start", flex: 1, justifyContent: "center" } })),
                 Le = _e((0, W.Z)(Be));
         },
@@ -869,4 +869,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.LiveEvent-cf1ec9f3.94cb02da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.LiveEvent-cf1ec9f3.fa43600a.js.map

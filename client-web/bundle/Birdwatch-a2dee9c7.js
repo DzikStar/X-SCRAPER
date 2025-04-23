@@ -59,7 +59,7 @@
             e.exports = { queryId: "0EW8KDGMK0g3EfCF0iAhsg", operationName: "BirdwatchFetchCanTweetBeMediaNote", operationType: "query", metadata: { featureSwitches: ["responsive_web_birdwatch_media_notes_enabled"], fieldToggles: [] } };
         },
         248530: (e) => {
-            e.exports = { queryId: "6pP3Lh7hO-PRqk8SlwkQhg", operationName: "BirdwatchFetchGlobalTimeline", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "responsive_web_graphql_exclude_directive_enabled", "verified_phone_label_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "creator_subscriptions_tweet_preview_api_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
+            e.exports = { queryId: "_teCcpjZs_ctjg5DAU6eng", operationName: "BirdwatchFetchGlobalTimeline", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "responsive_web_graphql_exclude_directive_enabled", "verified_phone_label_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "creator_subscriptions_tweet_preview_api_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
         },
         658054: (e) => {
             e.exports = { queryId: "5d1xLeZG-XIT6PbtF7rh9w", operationName: "BirdwatchFetchNoteTranslation", operationType: "query", metadata: { featureSwitches: ["responsive_web_birdwatch_translation_enabled", "responsive_web_graphql_timeline_navigation_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "responsive_web_graphql_exclude_directive_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
@@ -200,9 +200,9 @@
                 R = i(742576),
                 H = i.n(R),
                 z = i(904289),
-                O = i.n(z),
-                U = i(405398),
-                j = i.n(U),
+                U = i.n(z),
+                O = i(405398),
+                j = i.n(O),
                 G = i(611291),
                 W = i.n(G),
                 K = i(479334),
@@ -239,7 +239,7 @@
                     return !t;
                 }, "GQL URT: Failed to render Birdwatch Global timeline"),
                 Te = (e, t) =>
-                    e.graphQL(O(), {}).then((i) => {
+                    e.graphQL(U(), {}).then((i) => {
                         const { options: a, retry_in_millis: r } = i.authenticated_user_birdwatch_alias_self_select_options || {};
                         return r && t < 5 ? (0, n.Z)(r).then(() => Te(e, t + 1)) : a;
                     }),
@@ -898,13 +898,13 @@
                 R = i(325686),
                 H = i(392237),
                 z = i(950708),
-                O = i(647712);
-            function U(e) {
+                U = i(647712);
+            function O(e) {
                 const {
                         header: { clientEventInfo: t, displayType: i, facepile: n, landingContext: r, topicId: o },
                         onHeaderVisible: s,
                     } = e,
-                    { data: l, namespace: _ } = (0, O.Z)(o, t);
+                    { data: l, namespace: _ } = (0, U.Z)(o, t);
                 return a.createElement(R.Z, { style: j.root }, a.createElement(h.nO, { data: l, namespace: _ }, a.createElement(z.Z, { displayType: i, facepile: n, onFollowHeaderOffscreen: ({ isOffscreen: e }) => s(!e), topicId: o, topicLandingContext: r, withDivider: !0 })));
             }
             const j = H.default.create((e) => ({ root: { borderBottomWidth: e.borderWidths.small, borderBottomColor: e.colors.borderColor, borderBottomStyle: "solid" } }));
@@ -945,7 +945,7 @@
                         } = e,
                         { featureSwitches: c } = a.useContext(te.rC),
                         d = c.isTrue("topic_landing_page_share_enabled"),
-                        { data: p, namespace: u } = (0, O.Z)(t, n),
+                        { data: p, namespace: u } = (0, U.Z)(t, n),
                         b = (0, _.Z)({}, r, u);
                     return o ? a.createElement(h.nO, { data: p, namespace: b }, a.createElement(a.Fragment, null, l ? a.createElement(ee.Z, { canonical: le(t), description: o.description, title: o.name, type: "article" }) : null, s ? a.createElement(J.Z, { deepLink: _e(t) }) : null, a.createElement(R.Z, { style: de.rightControl }, a.createElement(R.Z, { style: de.followButtonContainer }, a.createElement(Y.Z, { animateMount: !0, show: i, type: "fade" }, a.createElement(ie.ZP, { size: "medium", textMode: ae.q.FollowTopic, topic: o }))), d ? a.createElement(ne.ZP, { copyLinkShareLabel: ce, scribeNamespace: b, url: le(t) }) : null))) : null;
                 }),
@@ -954,7 +954,7 @@
                 be = (e) => {
                     const { TabBar: t, backLocation: i, documentTitle: n, entryConfiguration: s, fab: l, getTabLink: c, hasTabNavigation: w, history: g, initialFetchStatus: f, initialPageNamespace: y, logoButton: v, module: C, onBackClick: B, pageConfiguration: T, prerollDisplayLocation: S, renderEmptyState: k, renderUnavailable: E, rightControl: I, selectedTabId: L, sidebarContent: Z, timelinePrefix: N, title: q, withAppLinks: A, withBottomLoginSignupBar: F, withDeferredView: P, withOpenGraphMeta: D, withSearchBox: R, withTweetButton: H } = e,
                         z = (0, r.tj)(),
-                        O = a.useMemo(() => ({ ...s, ...(0, Q.Z)({ isLegacy: !0, isWide: z }) }), [s, z]),
+                        U = a.useMemo(() => ({ ...s, ...(0, Q.Z)({ isLegacy: !0, isWide: z }) }), [s, z]),
                         [j, G] = a.useState(!0),
                         { header: W, navBar: K, subtitle: V, title: $ } = T || {},
                         X = f === b.Z.LOADED ? $ || q : "",
@@ -967,10 +967,10 @@
                                 { entityToken: c, ...d } = l?.scribeConfig || {};
                             return (0, _.Z)({}, i, r, d);
                         })(L, T, y),
-                        J = W ? a.createElement(U, { header: W, onHeaderVisible: G }) : null,
+                        J = W ? a.createElement(O, { header: W, onHeaderVisible: G }) : null,
                         ee = K ? a.createElement(pe, { isHeaderOffscreen: !j, navBar: K, pageNamespace: Y, withAppLinks: A, withOpenGraphMeta: D }) : null,
                         te = P ? d.Z : a.Fragment,
-                        ie = a.createElement(a.Fragment, null, J, a.createElement(te, null, a.createElement(M, { entryConfiguration: O, initialModule: C, prerollDisplayLocation: S, renderEmptyState: k, renderUnavailable: E, selectedTabId: L, timelinePrefix: N, title: q, withoutHeadroom: !0 }))),
+                        ie = a.createElement(a.Fragment, null, J, a.createElement(te, null, a.createElement(M, { entryConfiguration: U, initialModule: C, prerollDisplayLocation: S, renderEmptyState: k, renderUnavailable: E, selectedTabId: L, timelinePrefix: N, title: q, withoutHeadroom: !0 }))),
                         ae = l ? a.createElement(p.Z, { component: o.Z, fab: l }, ie) : ie,
                         ne = c && w ? a.createElement(x, { getTabLink: c, module: C, selectedTabId: L }) : void 0;
                     return a.createElement(h.nO, { namespace: Y }, a.createElement(m.Z, null, a.createElement(u.Z, { TabBar: t, backLocation: i, documentTitle: n, history: g, logoButton: v, onBackClick: B, primaryContent: ae, rightControl: ee || I, secondaryBar: ne, sidebarContent: Z, subtitle: V, title: J && j ? q : X, withBottomLoginSignupBar: F, withSearchBox: R, withTweetButton: H })));
@@ -1037,4 +1037,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Birdwatch-a2dee9c7.e484575a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Birdwatch-a2dee9c7.4ff00caa.js.map

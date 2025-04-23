@@ -3,7 +3,7 @@
     ["bundle.TwitterArticles-cf1ec9f3"],
     {
         384316: (e, a, r) => {
-            r.d(a, { V: () => y, Z: () => g });
+            r.d(a, { V: () => y, Z: () => M });
             var o = r(202784),
                 t = r(457311),
                 d = r(108362),
@@ -18,7 +18,7 @@
             const D = l().dd2c9034,
                 p = l().cada17f8,
                 y = () => o.createElement(t.Z, { header: D, message: p }),
-                g = ({ bookmarkFolderId: e, history: a, title: r, urtModule: t }) => {
+                M = ({ bookmarkFolderId: e, history: a, title: r, urtModule: t }) => {
                     const n = o.createElement(i.Z, { history: a }),
                         l = (0, u.Z)(),
                         D = o.useMemo(() => (0, h.G)({ withRemoveFromBookmarks: !0, bookmarkFolderId: e }), [e]);
@@ -26,7 +26,7 @@
                 };
         },
         564895: (e, a, r) => {
-            r.d(a, { ZP: () => M });
+            r.d(a, { ZP: () => g });
             var o = r(202784),
                 t = r(325686),
                 d = r(731708),
@@ -52,11 +52,11 @@
                     const { category: e, location: a, query: r, shouldAutoPlayGif: l } = this.props,
                         s = r || a?.state?.query,
                         i = e || a?.state?.category?.display_name;
-                    return (0, c.Z)() && (s || i) ? o.createElement(t.Z, { style: g.root }, o.createElement(d.ZP, { color: "gray700" }, p), o.createElement(n.Z, { "aria-label": p, onValueChange: this._handleSwitchChanged, value: l })) : null;
+                    return (0, c.Z)() && (s || i) ? o.createElement(t.Z, { style: M.root }, o.createElement(d.ZP, { color: "gray700" }, p), o.createElement(n.Z, { "aria-label": p, onValueChange: this._handleSwitchChanged, value: l })) : null;
                 }
             }
-            const g = l.default.create((e) => ({ root: { flexDirection: "row", justifyContent: "space-between", margin: e.spaces.space12 } })),
-                M = D(y);
+            const M = l.default.create((e) => ({ root: { flexDirection: "row", justifyContent: "space-between", margin: e.spaces.space12 } })),
+                g = D(y);
         },
         278066: (e, a, r) => {
             r.d(a, { ZP: () => A });
@@ -75,10 +75,10 @@
                 D = r(668214),
                 p = r(317861);
             const { Categories: y } = p,
-                g = (e, a) => y.selectItems(e),
-                M = (e) => y.selectInitialFetchStatus(e),
+                M = (e, a) => y.selectItems(e),
+                g = (e) => y.selectInitialFetchStatus(e),
                 f = (0, D.Z)()
-                    .propsFromState(() => ({ categories: (0, u.P1)(g, (e) => (e ? (0, m.Z)(e.map((e) => (e.display_name ? e : void 0))) : void 0)), initialFetchStatus: M }))
+                    .propsFromState(() => ({ categories: (0, u.P1)(M, (e) => (e ? (0, m.Z)(e.map((e) => (e.display_name ? e : void 0))) : void 0)), initialFetchStatus: g }))
                     .propsFromActions(() => ({ fetchInitialIfNeeded: y.fetchInitialIfNeeded, fetchNextIfNeeded: y.fetchNextIfNeeded })),
                 w = o.memo((e) => {
                     const { category: a, gifSearchKey: r, history: s, index: c, onClick: u, withLeftMargin: m } = e,
@@ -180,8 +180,8 @@
                 D = r(965245),
                 p = r(443781),
                 y = r(511985),
-                g = r(716233),
-                M = r(663194);
+                M = r(716233),
+                g = r(663194);
             r(136728);
             const f = (e, a) => {
                 const r = e.reduce((e, a) => {
@@ -279,7 +279,7 @@
                                         c = n / i.height,
                                         h = d === t.length - 1 ? l - s : Math.round(i.width * c),
                                         { still_image_url: u, url: m } = i;
-                                    return (s += h), o.createElement(L, { altText: a.alt_text || U, animatedMediaUrl: m, backgroundColor: (0, M.d)(a.index), height: n, key: a.index, onClick: r(a), shouldAutoPlayGif: e, stillMediaUrl: u, width: h });
+                                    return (s += h), o.createElement(L, { altText: a.alt_text || U, animatedMediaUrl: m, backgroundColor: (0, g.d)(a.index), height: n, key: a.index, onClick: r(a), shouldAutoPlayGif: e, stillMediaUrl: u, width: h });
                                 }),
                             );
                         })),
@@ -295,11 +295,11 @@
                                     found_media_origin: h,
                                     provider: m,
                                     original_image: { url: D },
-                                    preview_image: { height: p, url: M, width: f },
+                                    preview_image: { height: p, url: g, width: f },
                                     thumbnail_images: [w],
                                     url: b,
                                 } = e,
-                                A = a({ mediaCategory: t === y.AD.Composition || t === y.AD.NoteComposition ? g.xz.TweetGif : g.xz.DMGif, mediaType: "image/gif", previewMediaType: "video/mp4", previewUrl: M, sourceUrl: D, stillMediaUrl: w.still_image_url, width: f, height: p }),
+                                A = a({ mediaCategory: t === y.AD.Composition || t === y.AD.NoteComposition ? M.xz.TweetGif : M.xz.DMGif, mediaType: "image/gif", previewMediaType: "video/mp4", previewUrl: g, sourceUrl: D, stillMediaUrl: w.still_image_url, width: f, height: p }),
                                 _ = A.map((e) => e.id),
                                 S = { found_media_origin: h, provider: m, url: b };
                             if ((c && s(_[0], { defaultAltText: c, gifMetadata: S }), t === y.AD.Composition)) {
@@ -367,8 +367,8 @@
                 D = r(443781),
                 p = r(511985),
                 y = r(293115),
-                g = r(615027),
-                M = r(189244),
+                M = r(615027),
+                g = r(189244),
                 f = r(717988),
                 w = r(466441),
                 b = r(668214),
@@ -383,11 +383,11 @@
                 v = (0, f.p)(
                     () =>
                         Promise.all([
-                            r.e("icons.23"),
-                            r.e("icons.2"),
-                            r.e("icons.16"),
-                            r.e("icons.10"),
-                            r.e("icons.19"),
+                            r.e("icons.8"),
+                            r.e("icons.13"),
+                            r.e("icons.20"),
+                            r.e("icons.14"),
+                            r.e("icons.1"),
                             r.e("modules.common-e907d115"),
                             r.e("modules.common-e019dbda"),
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
@@ -397,6 +397,7 @@
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-64ffe41f"),
+                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-5517db7c"),
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-58d4ab8e"),
@@ -434,11 +435,11 @@
                 Z = (0, f.p)(
                     () =>
                         Promise.all([
-                            r.e("icons.23"),
-                            r.e("icons.2"),
-                            r.e("icons.16"),
-                            r.e("icons.10"),
-                            r.e("icons.19"),
+                            r.e("icons.8"),
+                            r.e("icons.13"),
+                            r.e("icons.20"),
+                            r.e("icons.14"),
+                            r.e("icons.1"),
                             r.e("modules.common-e907d115"),
                             r.e("modules.common-e019dbda"),
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
@@ -448,6 +449,7 @@
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-64ffe41f"),
+                            r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-5517db7c"),
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-58d4ab8e"),
@@ -527,9 +529,9 @@
                     const { history: e, location: a } = this.props,
                         r = this._getShouldAutoPlayGif(),
                         t = this._gifSearchKey;
-                    if (!t) return o.createElement(g.Z, { to: "/" });
+                    if (!t) return o.createElement(M.Z, { to: "/" });
                     const n = { gifSearchKey: t, history: e, location: a, searchBox: this._renderSearchBox(), shouldAutoPlayGif: r };
-                    return o.createElement(y.nO, { namespace: this._getScribeNamespace(t) }, o.createElement(d.Switch, null, o.createElement(d.Route, { exact: !0, path: x.search }, o.createElement(v, n)), o.createElement(d.Route, { exact: !0, path: `${x.category}/${M.kM}` }, o.createElement(Z, n)), o.createElement(d.Route, { component: w.default })));
+                    return o.createElement(y.nO, { namespace: this._getScribeNamespace(t) }, o.createElement(d.Switch, null, o.createElement(d.Route, { exact: !0, path: x.search }, o.createElement(v, n)), o.createElement(d.Route, { exact: !0, path: `${x.category}/${g.kM}` }, o.createElement(Z, n)), o.createElement(d.Route, { component: w.default })));
                 }
                 _getShouldAutoPlayGif() {
                     const { effectiveAutoplayOption: e, isDataSaverEnabled: a, shouldAutoPlayGif: r } = this.props;
@@ -592,10 +594,10 @@
                 D = r(24949),
                 p = r(668214),
                 y = r(919022);
-            const g = (0, p.Z)()
+            const M = (0, p.Z)()
                     .propsFromState(() => ({ viewerUserScreenName: (0, D.P1)(y.ZP.selectViewerUser, (e) => (e ? e.screen_name : void 0)) }))
                     .withAnalytics({ page: "keyboard_shortcuts" }),
-                M = c().ef1649e2,
+                g = c().ef1649e2,
                 f = c().h54e6138,
                 w = c().aefd89c8,
                 b = c().cafdefb2,
@@ -611,13 +613,13 @@
                         D = l(s),
                         p = l(i),
                         y = l(c),
-                        g = [
+                        M = [
                             { headerText: w, shortcuts: D },
                             { headerText: b, shortcuts: p },
                             { headerText: A, shortcuts: y },
                             { headerText: _, shortcuts: [] },
                         ];
-                    return o.createElement(h.Z, { documentTitle: M, history: e, isLarge: !0, title: f }, o.createElement(I, { isModal: n, shortcuts: g }));
+                    return o.createElement(h.Z, { documentTitle: g, history: e, isLarge: !0, title: f }, o.createElement(I, { isModal: n, shortcuts: M }));
                 },
                 I = ({ isModal: e, shortcuts: a }) =>
                     o.createElement(
@@ -654,7 +656,7 @@
                     );
                 },
                 P = s.default.create((e) => ({ root: { padding: e.spaces.space12, paddingBottom: e.spaces.space20 }, row: { flexDirection: "row" }, keyRow: { flexDirection: "row", alignItems: "center" }, section: { flexShrink: 1 }, sectionBottomMargin: { marginBottom: e.spaces.space12 }, divider: { borderStyle: "solid", borderEndWidth: e.borderWidths.small, borderColor: e.colors.gray50, paddingEnd: e.spaces.space12, marginEnd: e.spaces.space12 }, entry: { flexDirection: "row", justifyContent: "space-between", marginHorizontal: e.spaces.space12, marginVertical: e.spaces.space2 }, key: { backgroundColor: e.colors.gray0, borderColor: e.colors.gray50, borderRadius: e.borderRadii.small, borderStyle: "solid", borderWidth: e.borderWidths.small, boxShadow: `inset 0 -1px 0 ${e.colors.gray200}`, fontFamily: "monospace, monospace", minWidth: "1.7em", paddingHorizontal: e.spaces.space4, paddingVertical: e.spaces.space1 }, plus: { marginHorizontal: e.spaces.space2 }, moduleHeader: { paddingStart: e.spaces.space12 } })),
-                E = g(S);
+                E = M(S);
         },
         466441: (e, a, r) => {
             r.r(a), r.d(a, { NotFoundScreen: () => f, default: () => b });
@@ -673,8 +675,8 @@
                 D = r(952793),
                 p = r(163889),
                 y = r(725516);
-            const g = s().ba929da8,
-                M = s().d203e242;
+            const M = s().ba929da8,
+                g = s().d203e242;
             function f(e) {
                 const { splat: a } = e.match.params,
                     { isModal: r } = o.useContext(t.Z),
@@ -683,7 +685,7 @@
                     (0, i.q)(() => {
                         n && a && (0, p.ZP)(new Error(`Page not found: ${a}`));
                     }),
-                    o.createElement(m.Z, null, o.createElement(c.Z.Configure, { backLocation: "/", documentTitle: g, title: M }), o.createElement(d.Z, { style: r && w.modal }, o.createElement(u.Z, null)), o.createElement(h.Z, { title: g, withMeta: !1 }))
+                    o.createElement(m.Z, null, o.createElement(c.Z.Configure, { backLocation: "/", documentTitle: M, title: g }), o.createElement(d.Z, { style: r && w.modal }, o.createElement(u.Z, null)), o.createElement(h.Z, { title: M, withMeta: !1 }))
                 );
             }
             const w = n.default.create((e) => ({ modal: { backgroundColor: e.colors.cellBackground, borderRadius: e.borderRadii.xLarge } })),
@@ -708,13 +710,13 @@
                     .withAnalytics({ page: "article_composer", section: "empty_state" }),
                 p = s().d36447e0,
                 y = s().ca0ed982,
-                g = s().ee9e42aa,
-                M = s().e9a50596,
+                M = s().ee9e42aa,
+                g = s().e9a50596,
                 f = ({ analytics: e, createDraftArticle: a, createLocalApiErrorHandler: r }) => {
                     const n = (0, t.useHistory)();
                     return o.createElement(d.Z, {
                         buttonLink: c.TC,
-                        buttonText: g,
+                        buttonText: M,
                         header: p,
                         message: y,
                         onButtonPress: () => {
@@ -723,7 +725,7 @@
                                     .then((e) => {
                                         e?.result && "string" == typeof e.result && e.entities?.articleEntities[e.result] && n.push((0, c.lU)(e.entities.articleEntities[e.result].rest_id));
                                     })
-                                    .catch(r({ showToast: !0, defaultToast: { text: M } }));
+                                    .catch(r({ showToast: !0, defaultToast: { text: g } }));
                         },
                         style: w.root,
                     });
@@ -748,8 +750,8 @@
                 D = r(507651),
                 p = r(583909),
                 y = r(293115),
-                g = r(794057),
-                M = r(689985),
+                M = r(794057),
+                g = r(689985),
                 f = r(71620),
                 w = r(668214),
                 b = r(143322),
@@ -786,7 +788,7 @@
                                         return h.f.Draft;
                                 }
                             })(),
-                            source: g.C0.LONGFORM_COMPOSER,
+                            source: M.C0.LONGFORM_COMPOSER,
                             userId: r,
                         }),
                     ),
@@ -805,9 +807,9 @@
                             a.current = function () {
                                 e.analytics.scribe({ element: "create_button", action: "click" }),
                                     e
-                                        .createArticleEntity("", g.kd)
+                                        .createArticleEntity("", M.kd)
                                         .then((a) => {
-                                            a?.result && "string" == typeof a.result && a.entities?.articleEntities[a.result] && e.history.push((0, M.lU)(a.entities.articleEntities[a.result].rest_id));
+                                            a?.result && "string" == typeof a.result && a.entities?.articleEntities[a.result] && e.history.push((0, g.lU)(a.entities.articleEntities[a.result].rest_id));
                                         })
                                         .catch(e.createLocalApiErrorHandler({ showToast: !0 }));
                             };
@@ -827,4 +829,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterArticles-cf1ec9f3.9a807d1a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterArticles-cf1ec9f3.a563cbca.js.map

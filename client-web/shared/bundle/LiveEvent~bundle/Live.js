@@ -38,11 +38,11 @@
                 h = a(257166),
                 p = a(919022);
             const b = (e, t) => !(!t.allowPromptForPush || !h.selectShouldPromptBrowserPush(e)),
-                f = (0, u.Z)()
+                D = (0, u.Z)()
                     .propsFromState(() => ({ shouldPromptPush: b }))
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, m.zr)("DEVICE_FOLLOW_BUTTON_CONTAINER"), updateDeviceFollowing: p.ZP.updateDeviceFollowing }))
                     .withAnalytics({ element: "mobile_notifications" }),
-                D = l().bdba3e1a,
+                f = l().bdba3e1a,
                 g = l().c4da7d28,
                 _ = l().j87c21f4,
                 w = l().iebc30ca,
@@ -52,7 +52,7 @@
                     super(e),
                         (this._renderButton = () => {
                             const { isFollowing: e, style: t } = this.props;
-                            return e ? r.createElement(n.ZP, { "aria-label": g, hoverLabel: { label: w }, icon: r.createElement(d.default, null), onPress: this._handleUnfollow, style: t, type: "primaryOutlined" }) : r.createElement(n.ZP, { "aria-label": D, hoverLabel: { label: _ }, icon: r.createElement(s.default, null), onPress: this._handleFollow, style: t, type: "primaryOutlined" });
+                            return e ? r.createElement(n.ZP, { "aria-label": g, hoverLabel: { label: w }, icon: r.createElement(d.default, null), onPress: this._handleUnfollow, style: t, type: "primaryOutlined" }) : r.createElement(n.ZP, { "aria-label": f, hoverLabel: { label: _ }, icon: r.createElement(s.default, null), onPress: this._handleFollow, style: t, type: "primaryOutlined" });
                         }),
                         (this._handleFollow = () => {
                             const { isDeviceFollowWithoutUserFollow: e, shouldPromptPush: t } = this.props;
@@ -81,7 +81,7 @@
                     t.scribeAction(e);
                 }
             }
-            const M = f(E);
+            const M = D(E);
         },
         652904: (e, t, a) => {
             a.d(t, { Z: () => c });
@@ -138,8 +138,8 @@
                 h = a(376180),
                 p = a(502940),
                 b = a(70962),
-                f = a(933340),
-                D = a(321264),
+                D = a(933340),
+                f = a(321264),
                 g = a(208340),
                 _ = a(707305),
                 w = a(748138),
@@ -151,9 +151,9 @@
                 Z = { label: P },
                 T = m().j33d8902,
                 I = { label: T },
-                C = m().a8ab3d08,
-                k = m().d740d2d9,
-                x = { bandcamp_handle: { icon: r.createElement(u.default, null), label: m().a7cf1e98, url: "https://bandcamp.com/" }, bitcoin_handle: { icon: r.createElement(h.default, null), label: m().d876e67e }, cash_app_handle: { icon: r.createElement(p.default, null), label: m().f85f6760, url: "https://cash.app/" }, ethereum_handle: { icon: r.createElement(b.default, null), label: m().a32a7c06 }, gofundme_handle: { icon: r.createElement(f.default, null), label: m().cc1a3bc4, url: "https://gofundme.com/f/" }, patreon_handle: { icon: r.createElement(D.default, null), label: m().d4d74bb4, url: "https://patreon.com/" }, pay_pal_handle: { icon: r.createElement(g.default, null), label: m().h14fbc52, url: "https://paypal.me/" }, venmo_handle: { icon: r.createElement(_.default, null), label: m().h1198dcc, url: "https://venmo.com/" } };
+                k = m().a8ab3d08,
+                C = m().d740d2d9,
+                x = { bandcamp_handle: { icon: r.createElement(u.default, null), label: m().a7cf1e98, url: "https://bandcamp.com/" }, bitcoin_handle: { icon: r.createElement(h.default, null), label: m().d876e67e }, cash_app_handle: { icon: r.createElement(p.default, null), label: m().f85f6760, url: "https://cash.app/" }, ethereum_handle: { icon: r.createElement(b.default, null), label: m().a32a7c06 }, gofundme_handle: { icon: r.createElement(D.default, null), label: m().cc1a3bc4, url: "https://gofundme.com/f/" }, patreon_handle: { icon: r.createElement(f.default, null), label: m().d4d74bb4, url: "https://patreon.com/" }, pay_pal_handle: { icon: r.createElement(g.default, null), label: m().h14fbc52, url: "https://paypal.me/" }, venmo_handle: { icon: r.createElement(_.default, null), label: m().h1198dcc, url: "https://venmo.com/" } };
             function A({ style: e, userId: t }) {
                 const a = (0, E.I0)(),
                     [i, c] = r.useState(!1),
@@ -183,7 +183,7 @@
                               d.Z,
                               { onMaskClick: b, style: S.sheet, type: "bottom", withMask: !0 },
                               r.createElement(l.ZP, { "aria-label": P, hoverLabel: Z, icon: r.createElement(y.default, null), onPress: b, style: S.close, type: "primaryText" }),
-                              r.createElement(o.Z, { style: S.header }, r.createElement(s.ZP, { weight: "bold" }, C), r.createElement(s.ZP, null, `@${m.screen_name}`)),
+                              r.createElement(o.Z, { style: S.header }, r.createElement(s.ZP, { weight: "bold" }, k), r.createElement(s.ZP, null, `@${m.screen_name}`)),
                               Object.entries(p)
                                   .filter(([e, t]) => t)
                                   .map(([e, t]) => {
@@ -192,7 +192,7 @@
                                           const l = o.url
                                                   ? void 0
                                                   : function () {
-                                                        n.Z.setString(String(t)), a((0, M.fz)({ text: k({ service: o.label }) }));
+                                                        n.Z.setString(String(t)), a((0, M.fz)({ text: C({ service: o.label }) }));
                                                     },
                                               d = o.url ? `${o.url}${String(t)}` : void 0;
                                           return r.createElement(s.ZP, { color: "text", key: e, link: d, onPress: l, style: S.service, withInteractiveStyling: !1 }, o.icon, o.label);
@@ -219,6 +219,7 @@
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-64ffe41f"),
+                        a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-5517db7c"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-58d4ab8e"),
@@ -300,7 +301,7 @@
                 i = (e) => r.createElement(n.ql, null, ...((e) => d(e).map(s))(e));
         },
         679180: (e, t, a) => {
-            a.d(t, { H: () => f });
+            a.d(t, { H: () => D });
             var r = a(202784),
                 n = a(325686),
                 o = a(154003),
@@ -314,10 +315,10 @@
                 h = a(741810),
                 p = a(782642);
             const b = { cancel: c().cfd2f35e, defaultTitle: c().jceadc3e, edit: c().abd845fe, save: c().i2209530, toastSuccessMessage: c().d39d46c4, toastErrorMessage: c().ef4602ec };
-            function f(e) {
+            function D(e) {
                 const { broadcastId: t, canEdit: a, remoteTitle: s } = e,
                     [i, c] = r.useState({ currentTitle: s, draftTitle: s, isEditing: !1 }),
-                    f = (0, p.p)();
+                    D = (0, p.p)();
                 r.useEffect(() => {
                     c((e) => ({ ...e, currentTitle: s, draftTitle: s }));
                 }, [s]);
@@ -330,25 +331,25 @@
                     E = r.useCallback(() => {
                         Promise.resolve(h.E.replayBroadcastEdit(t, { replay_edited_title: i.draftTitle }))
                             .then(() => {
-                                c((e) => ({ ...e, currentTitle: i.draftTitle, isEditing: !1 })), f({ text: b.toastSuccessMessage });
+                                c((e) => ({ ...e, currentTitle: i.draftTitle, isEditing: !1 })), D({ text: b.toastSuccessMessage });
                             })
                             .catch(() => {
-                                c((e) => ({ ...e, draftTitle: e.currentTitle })), f({ text: b.toastErrorMessage });
+                                c((e) => ({ ...e, draftTitle: e.currentTitle })), D({ text: b.toastErrorMessage });
                             });
-                    }, [t, i.draftTitle, f]),
+                    }, [t, i.draftTitle, D]),
                     M = r.useCallback(() => {
                         c((e) => ({ ...e, draftTitle: e.currentTitle, isEditing: !1 }));
                     }, []),
-                    v = () => r.createElement(n.Z, { style: D.buttonContainer }, r.createElement(o.ZP, { onPress: M, size: "small", type: "primaryOutlined" }, b.cancel), r.createElement(o.ZP, { disabled: w, onPress: E, size: "small", type: "primaryFilled" }, b.save));
+                    v = () => r.createElement(n.Z, { style: f.buttonContainer }, r.createElement(o.ZP, { onPress: M, size: "small", type: "primaryOutlined" }, b.cancel), r.createElement(o.ZP, { disabled: w, onPress: E, size: "small", type: "primaryFilled" }, b.save));
                 return r.createElement(
                     n.Z,
-                    { style: D.broadcastTitleRow },
+                    { style: f.broadcastTitleRow },
                     i.isEditing
-                        ? r.createElement(l.Z, { appTextSize: "headline1", inputStyle: D.titleInput, maxLength: 256, maxNumberOfLines: 3, multiline: !0, onChange: y, onSubmitEditing: w ? void 0 : E, placeholder: b.defaultTitle, rightContent: r.createElement(v, null), styleType: "selection", value: i.draftTitle })
+                        ? r.createElement(l.Z, { appTextSize: "headline1", inputStyle: f.titleInput, maxLength: 256, maxNumberOfLines: 3, multiline: !0, onChange: y, onSubmitEditing: w ? void 0 : E, placeholder: b.defaultTitle, rightContent: r.createElement(v, null), styleType: "selection", value: i.draftTitle })
                         : r.createElement(
                               n.Z,
-                              { style: D.broadcastTitleRow },
-                              r.createElement(d.Z, { displayTextRange: _, entities: g, linkify: !0, size: "headline1", style: D.broadcastTitleText, text: i.currentTitle, weight: "bold" }),
+                              { style: f.broadcastTitleRow },
+                              r.createElement(d.Z, { displayTextRange: _, entities: g, linkify: !0, size: "headline1", style: f.broadcastTitleText, text: i.currentTitle, weight: "bold" }),
                               a &&
                                   r.createElement(o.ZP, {
                                       "aria-label": b.edit,
@@ -363,7 +364,7 @@
                           ),
                 );
             }
-            const D = s.default.create((e) => ({ buttonContainer: { flexDirection: "row", gap: e.spaces.space8 }, titleInput: { fontWeight: e.fontWeights.heavy, padding: 0 }, broadcastTitleRow: { alignItems: "center", display: "flex", flexDirection: "row", justifyContent: "space-between", width: "100%" }, broadcastTitleText: { flex: 1 } }));
+            const f = s.default.create((e) => ({ buttonContainer: { flexDirection: "row", gap: e.spaces.space8 }, titleInput: { fontWeight: e.fontWeights.heavy, padding: 0 }, broadcastTitleRow: { alignItems: "center", display: "flex", flexDirection: "row", justifyContent: "space-between", width: "100%" }, broadcastTitleText: { flex: 1 } }));
         },
         386592: (e, t, a) => {
             a.d(t, { N8: () => r, rZ: () => n });
@@ -386,21 +387,21 @@
                 h = a(879113),
                 p = a(674132),
                 b = a.n(p),
-                f = a(123751),
-                D = a(615656),
+                D = a(123751),
+                f = a(615656),
                 g = a(545457),
                 _ = a(651930),
                 w = a(572067),
-                y = a(367848),
-                E = a(197718),
-                M = a(443781),
-                v = a(38293),
-                P = a(652904),
+                y = a(443781),
+                E = a(38293),
+                M = a(652904),
+                v = a(382285),
+                P = a(181142),
                 Z = a(78067),
                 T = a(51525),
                 I = a(655352),
-                C = a(293115),
-                k = a(503229),
+                k = a(293115),
+                C = a(503229),
                 x = a(10195),
                 A = a(679180),
                 S = a(386592),
@@ -467,7 +468,7 @@
                 oe = { section: "header", component: "user_actions" },
                 le = b().daca8a2c,
                 de = r.memo(({ broadcast: e, broadcastId: t, broadcaster: a, isLive: n }) => {
-                    const { featureSwitches: d, viewerUserId: s } = (0, M.QZ)(),
+                    const { featureSwitches: d, viewerUserId: s } = (0, y.QZ)(),
                         i = (0, j.useHistory)(),
                         c = (0, X.I0)(),
                         m = (0, W.b9)(te.Tc),
@@ -480,15 +481,15 @@
                                 a = new Date(e);
                             return t.getTime() - a.getTime() > 2592e6 ? ae(a) : H.default.formatTimeSinceDate(a);
                         }, []),
-                        f = r.useMemo(() => {
+                        D = r.useMemo(() => {
                             const t = e?.end_time ?? e?.timedout_time ?? e?.start_time;
                             if (!t) return null;
                             const a = b(t);
                             return r.createElement(u.ZP, { color: "gray700", size: "subtext1" }, n ? re({ timestamp: a }) : ne({ timestamp: a }));
                         }, [e, b, n]),
-                        D = r.useCallback(() => (!a || s === a.id_str || a.blocked_by ? null : r.createElement(o.Z, { style: se.userActionsWrapper }, r.createElement(p, null), d.isTrue("rweb_tipjar_consumption_enabled") && r.createElement(Q.Z, { userId: a.id_str }), a.following && r.createElement(Y.Z, { allowPromptForPush: !0, isFollowing: a.notifications, userId: a.id_str }), r.createElement(G.C, { isSuperFollowSubscriptionEnabled: d.isTrue("super_follow_android_web_subscription_enabled"), promotedContent: a.promoted_content, userId: a.id_str }))), [p, a, d, s]),
-                        g = r.useMemo(() => (a ? r.createElement(o.Z, { style: se.userNameWrapper }, r.createElement($.ZP, { affiliateBadgeInfo: a.highlightedLabel, avatarUri: a.profile_image_url_https, decoration: D(), isBlueVerified: a.is_blue_verified, isProtected: a.protected, isVerified: a.verified, name: a.name, screenName: a.screen_name, style: se.userCell, translatorType: a.translator_type, userId: a.id_str, verifiedType: a.verified_type, withLink: !0 })) : a?.profile_image_url && a?.screen_name ? r.createElement(o.Z, { style: se.userNameWrapper }, r.createElement(V.Z, { name: a.screen_name, profileImageUrl: a.profile_image_url })) : void 0), [D, a]);
-                    return r.createElement(o.Z, { style: se.header }, g, r.createElement(o.Z, { style: se.timeAndShareWrapper }, f, t && r.createElement(K.Tz, { scribeNamespace: oe, url: (0, l.ju)(`https://x.com/i/broadcasts/${t}`) })));
+                        f = r.useCallback(() => (!a || s === a.id_str || a.blocked_by ? null : r.createElement(o.Z, { style: se.userActionsWrapper }, r.createElement(p, null), d.isTrue("rweb_tipjar_consumption_enabled") && r.createElement(Q.Z, { userId: a.id_str }), a.following && r.createElement(Y.Z, { allowPromptForPush: !0, isFollowing: a.notifications, userId: a.id_str }), r.createElement(G.C, { isSuperFollowSubscriptionEnabled: d.isTrue("super_follow_android_web_subscription_enabled"), promotedContent: a.promoted_content, userId: a.id_str }))), [p, a, d, s]),
+                        g = r.useMemo(() => (a ? r.createElement(o.Z, { style: se.userNameWrapper }, r.createElement($.ZP, { affiliateBadgeInfo: a.highlightedLabel, avatarUri: a.profile_image_url_https, decoration: f(), isBlueVerified: a.is_blue_verified, isProtected: a.protected, isVerified: a.verified, name: a.name, screenName: a.screen_name, style: se.userCell, translatorType: a.translator_type, userId: a.id_str, verifiedType: a.verified_type, withLink: !0 })) : a?.profile_image_url && a?.screen_name ? r.createElement(o.Z, { style: se.userNameWrapper }, r.createElement(V.Z, { name: a.screen_name, profileImageUrl: a.profile_image_url })) : void 0), [f, a]);
+                    return r.createElement(o.Z, { style: se.header }, g, r.createElement(o.Z, { style: se.timeAndShareWrapper }, D, t && r.createElement(K.Tz, { scribeNamespace: oe, url: (0, l.ju)(`https://x.com/i/broadcasts/${t}`) })));
                 }),
                 se = m.default.create((e) => ({ header: { flexDirection: "column", gap: e.spaces.space12, justifyContent: "center", paddingVertical: e.spaces.space20, paddingHorizontal: e.spaces.space12, borderBottomColor: e.colors.borderColor, borderBottomStyle: "solid", borderBottomWidth: e.borderWidths.small, marginBottom: e.spaces.space48 }, userCell: { paddingHorizontal: 0, paddingVertical: 0, width: "100%" }, userActionsWrapper: { alignItems: "center", display: "flex", flexDirection: "row", gap: e.spaces.space8 }, userNameWrapper: { alignItems: "flex-start", flex: 1, justifyContent: "center" }, timeAndShareWrapper: { flexDirection: "row", alignItems: "center", justifyContent: "space-between" } }));
             var ie = a(71620),
@@ -498,49 +499,49 @@
                 he = a(919022),
                 pe = a(312771);
             const be = (0, ce.cI)("t"),
-                fe = (e, t) => {
+                De = (e, t) => {
                     const a = t.match.params.screenName;
                     if (a) return a;
                     const r = _e(e, t);
                     return r?.user_results?.result?.legacy?.screen_name || "";
                 },
-                De = (e, t) => {
+                fe = (e, t) => {
                     const a = t.match.params.broadcastId;
                     if (a) return a;
                     const r = ge(e, t);
                     return r?.latest_broadcast?.broadcast_id;
                 },
                 ge = (e, t) => {
-                    const a = fe(e, t);
+                    const a = De(e, t);
                     if (a) return he.ZP.selectByScreenName(e, a);
                     const r = _e(e, t);
                     return r?.user ? he.ZP.select(e, r.user) : void 0;
                 },
                 _e = (e, t) => {
-                    const a = De(e, t);
+                    const a = fe(e, t);
                     return a ? ue.Z.select(e, a) : void 0;
                 },
                 we = (e, t) => he.ZP.selectViewerUser(e),
                 ye = (e, t) => {
-                    const a = fe(e, t);
+                    const a = De(e, t);
                     return ue.Z.selectLatestBroadcastFetched(e, a);
                 },
                 Ee = (e, t) => {
                     const a = _e(e, t),
                         r = ye(e, t),
-                        n = De(e, t);
+                        n = fe(e, t);
                     return a || (!n && r) ? pe.ZP.LOADED : pe.ZP.LOADING;
                 },
                 Me = (0, me.Z)()
-                    .propsFromState(() => ({ broadcast: _e, broadcastId: De, broadcaster: ge, fetchStatus: Ee, latestBroadcastFetched: ye, screenName: fe, timecode: be, viewerUser: we }))
+                    .propsFromState(() => ({ broadcast: _e, broadcastId: fe, broadcaster: ge, fetchStatus: Ee, latestBroadcastFetched: ye, screenName: De, timecode: be, viewerUser: we }))
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, ie.zr)("LIVE_SCREEN"), fetchBroadcast: ue.Z.fetchOneIfNeeded, fetchLatestBroadcast: ue.Z.fetchLatestBroadcast })),
                 ve = 16 / 9,
                 Pe = { objectFitVideo: "contain" },
                 Ze = ({ windowWidth: e }) => e >= 920,
                 Te = (e) => (e ? { url: e.image_url, width: e.width, height: e.height } : null),
                 Ie = b().hd0bc1eb,
-                Ce = b().bea1f26b,
-                ke = b().jceadc3e,
+                ke = b().bea1f26b,
+                Ce = b().jceadc3e,
                 xe = b().ab3ee97f,
                 Ae = b().ac4c73d8,
                 Se = b().i9028824,
@@ -548,8 +549,8 @@
                 Fe = { url: "https://pbs.twimg.com/lex/placeholder_live_nomargin.png", width: 1920, height: 1080 },
                 Le = (e, t) => (0, l.ju)(`https://x.com/i/broadcasts/${e}${t ? `?t=${t}` : ""}`);
             function Be(e) {
-                const { broadcast: t, broadcastId: a, broadcaster: l, createLocalApiErrorHandler: p, fetchBroadcast: k, fetchLatestBroadcast: N, fetchStatus: F, latestBroadcastFetched: B, screenName: U, timecode: O } = e,
-                    R = r.useContext(M.rC),
+                const { broadcast: t, broadcastId: a, broadcaster: l, createLocalApiErrorHandler: p, fetchBroadcast: C, fetchLatestBroadcast: N, fetchStatus: F, latestBroadcastFetched: B, screenName: U, timecode: O } = e,
+                    R = r.useContext(y.rC),
                     { viewerUserId: W } = R,
                     j = l?.id_str === W,
                     z = (0, d.Zx)(Ze),
@@ -560,8 +561,8 @@
                         U && N(U);
                     }, [N, U]);
                 const $ = r.useCallback(() => {
-                    a && k(a).catch(p({ [D.ZP.GenericNotFound]: { customAction: T.vv } }));
-                }, [a, p, k]);
+                    a && C(a).catch(p({ [f.ZP.GenericNotFound]: { customAction: T.vv } }));
+                }, [a, p, C]);
                 r.useEffect(() => {
                     $();
                 }, [$, a]);
@@ -576,13 +577,13 @@
                                         return Ie({ name: r });
                                     case S.N8.Ended:
                                     case S.N8.TimedOut:
-                                        return Ce({ name: r });
+                                        return ke({ name: r });
                                     case S.N8.NotStarted:
                                     default:
-                                        return ke;
+                                        return Ce;
                                 }
                         }
-                        return ke;
+                        return Ce;
                     }, [t, l]),
                     q = b().d980e29f,
                     Y = b().fc209bb7,
@@ -599,15 +600,15 @@
                         const e = t && t.media_key,
                             d = !a && l && B,
                             s = Te(t);
-                        return t && t.state === S.N8.NotStarted ? K() : d ? r.createElement(o.Z, { style: Ue.offlineContainer }, r.createElement(u.ZP, { size: "title2" }, xe({ screenName: U }))) : t && l && a && s && e ? r.createElement(r.Fragment, null, r.createElement(n.ql, { prioritizeSeoTags: !0 }, r.createElement("meta", { content: s.url, property: "og:image" }), r.createElement("meta", { content: s.width, property: "og:image:width" }), r.createElement("meta", { content: s.height, property: "og:image:height" })), r.createElement(Z.Z, { "aria-label": Ae, aspectRatio: ve, displayOptions: Pe, poster: s, source: { variants: [], videoId: f.Z.forBroadcast(a), contentId: e }, videoType: "video" })) : null;
+                        return t && t.state === S.N8.NotStarted ? K() : d ? r.createElement(o.Z, { style: Ue.offlineContainer }, r.createElement(u.ZP, { size: "title2" }, xe({ screenName: U }))) : t && l && a && s && e ? r.createElement(r.Fragment, null, r.createElement(n.ql, { prioritizeSeoTags: !0 }, r.createElement("meta", { content: s.url, property: "og:image" }), r.createElement("meta", { content: s.width, property: "og:image:width" }), r.createElement("meta", { content: s.height, property: "og:image:height" })), r.createElement(Z.Z, { "aria-label": Ae, aspectRatio: ve, displayOptions: Pe, poster: s, source: { variants: [], videoId: D.Z.forBroadcast(a), contentId: e }, videoType: "video" })) : null;
                     }, [t, a, l, B, K, U]),
-                    X = r.useMemo(() => r.createElement(o.Z, { style: Ue.chat }, r.createElement(y.Z, { broadcastId: a ?? "", defaultChatNotice: xe({ screenName: U }) })), [a, U]),
-                    J = r.useCallback(() => r.createElement(E.aM, null, r.createElement(o.Z, { style: [Ue.container, H ? Ue.navBorder : void 0] }, r.createElement(o.Z, { style: Ue.videoContainer }, r.createElement(L, null, Q), a && r.createElement(o.Z, { style: Ue.title }, r.createElement(A.H, { broadcastId: a, canEdit: j, remoteTitle: V })), r.createElement(de, { broadcast: t, broadcastId: a, broadcaster: l, isLive: t?.state === S.N8.Running })), z && X)), [X, Q, t, a, l, j, z, H, V]);
+                    X = r.useMemo(() => r.createElement(o.Z, { style: Ue.chat }, r.createElement(v.Z, { broadcastId: a ?? "", defaultChatNotice: xe({ screenName: U }) })), [a, U]),
+                    J = r.useCallback(() => r.createElement(P.aM, null, r.createElement(o.Z, { style: [Ue.container, H ? Ue.navBorder : void 0] }, r.createElement(o.Z, { style: Ue.videoContainer }, r.createElement(L, null, Q), a && r.createElement(o.Z, { style: Ue.title }, r.createElement(A.H, { broadcastId: a, canEdit: j, remoteTitle: V })), r.createElement(de, { broadcast: t, broadcastId: a, broadcaster: l, isLive: t?.state === S.N8.Running })), z && X)), [X, Q, t, a, l, j, z, H, V]);
                 return r.createElement(
-                    C.nO,
+                    k.nO,
                     { namespace: Ne },
                     r.createElement(
-                        P.Z,
+                        M.Z,
                         null,
                         ((e) => {
                             const n = l?.name,
@@ -616,13 +617,13 @@
                                 s = Le(a || "", O);
                             return l ? r.createElement(r.Fragment, null, r.createElement(w.Z, { canonical: d, description: e, title: n, type: "article" }), r.createElement(_.Z, { deepLink: o }), r.createElement(x.Z, { broadcast: t, broadcaster: l, id: a || "", timecode: O, title: e, url: s })) : null;
                         })(V),
-                        r.createElement(v.Z, { title: V, withMeta: !1 }),
+                        r.createElement(E.Z, { title: V, withMeta: !1 }),
                         r.createElement(h.Z, { "aria-label": Se, fetchStatus: F, onRequestRetry: $, render: J }),
                     ),
                 );
             }
             const Ue = m.default.create((e) => ({ container: { display: "flex", flexDirection: "row", height: "100vh", overflow: "hidden" }, chat: { borderStartWidth: e.borderWidths.small, borderColor: e.colors.borderColor, height: "100vh", width: "340px" }, labelOverlay: { position: "absolute", bottom: e.spaces.space12, start: e.spaces.space12 }, navBorder: { borderStartWidth: e.borderWidths.small, borderColor: e.colors.borderColor }, title: { alignItems: "center", display: "flex", flexDirection: "row", gap: e.spaces.space12, justifyContent: "space-between", paddingHorizontal: e.spaces.space12, paddingTop: e.spaces.space12 }, offlineContainer: { aspectRatio: ve, backgroundColor: e.colors.gray0, flex: 1, justifyContent: "center", alignItems: "center" }, videoContainer: { flex: 1, WebkitOverflowScrolling: "touch", scrollbarWidth: "none", msOverflowStyle: "none", overflow: "auto" } })),
-                Oe = Me((0, k.Z)(Be));
+                Oe = Me((0, C.Z)(Be));
         },
         978053: (e, t, a) => {
             a.d(t, { default: () => b });
@@ -684,4 +685,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.LiveEvent~bundle.Live.9c66038a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.LiveEvent~bundle.Live.3826b24a.js.map

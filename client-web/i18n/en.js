@@ -4267,6 +4267,9 @@
                 a("j1361724", "Halftime"),
                 a("fa0f1262", "Break"),
                 a("c2cac618", "Grok currently supports La Liga, Premier League, Bundesliga, Series A, and Ligue 1 data."),
+                a("acae223d", function (e) {
+                    return 'Results for "' + e.prompt + '"';
+                }),
                 a("bed99fe2", "See less"),
                 a("f7b57ac0", "Stats"),
                 a("i7e3e446", "Matches"),
@@ -4906,9 +4909,9 @@
                 a("a2580f2a", "Completion Rate"),
                 a("ff95a9cc", "Video ID"),
                 a("a97e358e", "Video Link"),
-                a("e10e8b46", "Only showing the videos from the last 100 days."),
-                a("ba37f6da", "Video overview");
-            a("f19846b2", "Video thumbnail"),
+                a("e10e8b46", "Only showing the videos from the last 100 days.");
+            a("ba37f6da", "Video overview"),
+                a("f19846b2", "Video thumbnail"),
                 a("ccd6f4a8", "Video title"),
                 a("c8410542", "The number of times your video was viewed."),
                 a("a532072a", "Viewers"),
@@ -5862,11 +5865,11 @@
                 a("a0ea2fa6", "Name field cannot be empty"),
                 a("eec37eac", "Bookmark Folder with that name already exists"),
                 a("fce0c59e", "Failed to parse the animation JSON. Please check the format of the JSON in your animation file and try again."),
-                a("g0eea6c2", "Failed to read the animation JSON file. Please try to open the file again."),
-                a("ae58026a", "Open a Branded Like .json file to preview");
-            a("hd0bc1eb", function (e) {
-                return e.name + " is live";
-            }),
+                a("g0eea6c2", "Failed to read the animation JSON file. Please try to open the file again.");
+            a("ae58026a", "Open a Branded Like .json file to preview"),
+                a("hd0bc1eb", function (e) {
+                    return e.name + " is live";
+                }),
                 a("bea1f26b", function (e) {
                     return e.name + " was live";
                 }),
@@ -6870,9 +6873,9 @@
                 a("fdd77a34", "Create longer posts"),
                 a("j6d26a7a", "Write as much as you’d like to share"),
                 a("c4fd68da", "Customize your experience"),
-                a("c0195168", "Change your app icon and navigation options"),
-                a("b6b5dc94", "Become verified");
-            a("b06db848", "Stand out from others on the platform"),
+                a("c0195168", "Change your app icon and navigation options");
+            a("b6b5dc94", "Become verified"),
+                a("b06db848", "Stand out from others on the platform"),
                 a("e3e3a97c", "Earn a share of revenue from your posts"),
                 a("f15bc24e", "Increased Grok limits"),
                 a("c4666e1c", "More usage of Grok 3, our latest model"),
@@ -7850,8 +7853,7 @@
                 }),
                 a("ec6e7d9a", "Your account is in read-only mode until the pending tier switch has completed. Please go to Stripe to check your payment to ensure a successful tier switch."),
                 a("b33d1518", "Sync jobs from a supported integration or a custom XML feed"),
-                a("dd2db402", "Step 1: Gather the required information"),
-                a("edb098c2", "Step 2: Contact our support team");
+                a("dd2db402", "Step 1: Gather the required information");
             function i(e, t) {
                 for (var o = 0; o < t.length; o++) {
                     var a = t[o];
@@ -7890,7 +7892,8 @@
                     r(e, t)
                 );
             }
-            a("c4474460", "Step 2: Email our support team"),
+            a("edb098c2", "Step 2: Contact our support team"),
+                a("c4474460", "Step 2: Email our support team"),
                 a("a08da0fa", "What happens next?"),
                 a("c127374e", "Send us a message"),
                 a("b2cb2a0c", "Username of your Verified Org account"),
@@ -8892,9 +8895,9 @@
                 }),
                 a("b1eb72fa", "Sorry, this video is restricted in certain areas, please wait a few seconds as we acquire your location. Make sure to enable location settings in your browser."),
                 a("c057680c", "We cannot play the video in this browser. Please try a different web browser."),
-                a("i5dfae6e", "This video is not available in your location."),
-                a("c2388276", "This video has been deleted.");
-            a("d2c96140", "Guest audio indicator"),
+                a("i5dfae6e", "This video is not available in your location.");
+            a("c2388276", "This video has been deleted."),
+                a("d2c96140", "Guest audio indicator"),
                 a("f6dc9146", "REPLAY"),
                 a("d30c74fe", "Volume"),
                 a("f2d4e6f2", "Watch again"),
@@ -13240,4 +13243,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en.bb5b767a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en.b4f8be0a.js.map

@@ -3,7 +3,7 @@
     ["bundle.DirectMessages-58b91ff1"],
     {
         548625: (e, t, n) => {
-            n.r(t), n.d(t, { POLL_INTERVAL: () => qe, default: () => Je });
+            n.r(t), n.d(t, { POLL_INTERVAL: () => Je, default: () => Ve });
             var r = n(202784),
                 s = n(545457),
                 o = n(147143),
@@ -69,16 +69,16 @@
                 A = n(149290),
                 P = n(325686),
                 B = n(392237),
-                N = n(927075),
-                O = n(253493),
-                F = n(655352),
+                F = n(927075),
+                N = n(253493),
+                O = n(655352),
                 H = n(691108),
                 U = n(844054);
             const Y = f().a2f81050;
             function z(e) {
                 (0, s.ph)();
-                const t = (0, F.ZP)() ? r.createElement(P.Z, { style: W.appBarButtons }, (0, U.I0)("/messages/settings", !1), r.createElement(N.Z, { testID: H.Z.newDM })) : (0, U.I0)("/messages/settings", !0);
-                return r.createElement(O.Z, { rightControl: t, screenType: "root", title: Y }, e.children);
+                const t = (0, O.ZP)() ? r.createElement(P.Z, { style: W.appBarButtons }, (0, U.I0)("/messages/settings", !1), r.createElement(F.Z, { testID: H.Z.newDM })) : (0, U.I0)("/messages/settings", !0);
+                return r.createElement(N.Z, { rightControl: t, screenType: "root", title: Y }, e.children);
             }
             const W = B.default.create((e) => ({ appBarButtons: { flexDirection: "row", alignItems: "center" } }));
             var Q = n(316732),
@@ -90,13 +90,14 @@
                     return n || !s ? null : r.createElement(P.Z, { style: J.container }, r.createElement(Q.Z, { variant: "DmCard" }));
                 },
                 J = B.default.create((e) => ({ container: { marginHorizontal: e.spaces.space8, zIndex: 1, marginBottom: e.spaces.space8 } }));
+            var V = n(763526);
             f().h6beb5fb;
-            class V extends r.Component {
+            class G extends r.Component {
                 constructor(...e) {
                     super(...e),
                         (this._renderPivot = () => {
                             const { allowUntrustedInbox: e, untrustedCounts: t } = this.props;
-                            return r.createElement(A.Z, { allowUntrustedInbox: e, secondaryInboxCounts: t });
+                            return r.createElement(r.Fragment, null, r.createElement(V.J, null), r.createElement(A.Z, { allowUntrustedInbox: e, secondaryInboxCounts: t }));
                         }),
                         (this._renderEmptyDMInbox = () => r.createElement(L.Z, { messageRequestPivot: this._renderPivot() }));
                 }
@@ -112,31 +113,31 @@
                     return r.createElement(z, null, r.createElement(q, null), r.createElement(M.Z, { accessibilityTitle: Y, analytics: e, conversationIds: t, fetchInboxHistory: n, fetchStatus: s, isRefreshing: o, renderEmptyDMInbox: this._renderEmptyDMInbox, renderStickyContent: this._renderPivot, updateLastSeenEventId: a, virtualScrollerCacheKey: "dmInbox", withDmSearch: !0, withPinnedInbox: !0, withTagsFilter: !0 }));
                 }
             }
-            (V.contextType = E.Z), (V.defaultProps = { conversationIds: [], untrustedCounts: C.Y });
-            const G = (0, g.C)(T({ inbox: o._2.PRIMARY })(V), { directMessages: y.Z });
-            var K = n(457311),
-                j = n(949718);
-            function X(e) {
-                return r.createElement(r.Fragment, null, r.createElement(K.Z, { header: e.tombstone ? "" : U.$e, message: j.ZP, style: ee.emptyMessage }), e.tombstone);
+            (G.contextType = E.Z), (G.defaultProps = { conversationIds: [], untrustedCounts: C.Y });
+            const K = (0, g.C)(T({ inbox: o._2.PRIMARY })(G), { directMessages: y.Z });
+            var j = n(457311),
+                X = n(949718);
+            function ee(e) {
+                return r.createElement(r.Fragment, null, r.createElement(j.Z, { header: e.tombstone ? "" : U.$e, message: X.ZP, style: te.emptyMessage }), e.tombstone);
             }
-            const ee = B.default.create((e) => ({ emptyMessage: { borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor, borderBottomWidth: e.borderWidths.small, paddingVertical: e.spaces.space16 } }));
-            var te = n(420412),
-                ne = n(470015),
-                re = n(725516);
-            const se = (0, c.Z)()
+            const te = B.default.create((e) => ({ emptyMessage: { borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor, borderBottomWidth: e.borderWidths.small, paddingVertical: e.spaces.space16 } }));
+            var ne = n(420412),
+                re = n(470015),
+                se = n(725516);
+            const oe = (0, c.Z)()
                     .propsFromState(() => ({ dmNsfwMediaFilter: _.PJ }))
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, I.zr)("DIRECT_MESSAGES_INBOX"), updateDmNsfwMediaFilter: _.Ob }))
                     .withAnalytics({ page: "messages", section: "inbox" }),
-                oe = f().j24c37b2,
-                ae = f().f5dc353c,
-                ce = f().daeda054,
-                le = f().fe1eaa96,
-                ie = se((e) => {
+                ae = f().j24c37b2,
+                ce = f().f5dc353c,
+                le = f().daeda054,
+                ie = f().fe1eaa96,
+                de = oe((e) => {
                     const { createLocalApiErrorHandler: t, dmNsfwMediaFilter: n, updateDmNsfwMediaFilter: s } = e,
                         { featureSwitches: o } = r.useContext($.rC),
                         a = o.isTrue("dm_conversations_nsfw_media_filter_enabled"),
                         [c, l] = r.useState(void 0 === n && a),
-                        i = (0, re.z)(),
+                        i = (0, se.z)(),
                         d = r.useCallback(() => {
                             l(!1), s(!0).catch(t());
                         }, [s, t]);
@@ -151,42 +152,42 @@
                             ? r.createElement(
                                   r.Fragment,
                                   null,
-                                  r.createElement(ne.Z, {
-                                      bodyText: le,
+                                  r.createElement(re.Z, {
+                                      bodyText: ie,
                                       primaryAction: {
                                           onClick: () => {
                                               i.scribe({ component: "dm_nsfw_prompt", element: "primary_action", action: "click" }), d();
                                           },
-                                          text: oe,
+                                          text: ae,
                                       },
                                       secondaryAction: {
                                           link: "/settings/direct_messages",
                                           onClick: () => {
                                               i.scribe({ component: "dm_nsfw_prompt", element: "secondary_action", action: "click" });
                                           },
-                                          text: ce,
+                                          text: le,
                                       },
-                                      titleText: ae,
+                                      titleText: ce,
                                   }),
-                                  r.createElement(te.Z, null),
+                                  r.createElement(ne.Z, null),
                               )
                             : null
                     );
                 });
             n(136728);
-            var de = n(731708),
-                ue = n(190286),
-                me = n(154003),
-                pe = n(607127),
-                he = n(837020),
-                be = n(885724),
-                fe = n(125363),
-                Ee = n(613195);
-            const ye = { headline: f().hc32acba, text: f().f9048f58, confirmButtonLabel: f().d96cf7ce };
-            function ge(e) {
+            var ue = n(731708),
+                me = n(190286),
+                pe = n(154003),
+                he = n(607127),
+                be = n(837020),
+                fe = n(885724),
+                Ee = n(125363),
+                ye = n(613195);
+            const ge = { headline: f().hc32acba, text: f().f9048f58, confirmButtonLabel: f().d96cf7ce };
+            function Ce(e) {
                 const t = (0, p.Ao)(),
                     n = (0, p.eG)(),
-                    s = (0, fe.I0)(),
+                    s = (0, Ee.I0)(),
                     o = (0, a.useHistory)(),
                     [c, l] = r.useState(!1),
                     i = r.useCallback(() => {
@@ -202,50 +203,50 @@
                         l(!1);
                     }, [l]),
                     h = r.useCallback(() => {
-                        s(Ee.S9(t.selectedConversationIds)), n({ type: p.Tj }), o.replace((0, w.k2)(e.inboxType)), l(!1);
+                        s(ye.S9(t.selectedConversationIds)), n({ type: p.Tj }), o.replace((0, w.k2)(e.inboxType)), l(!1);
                     }, [n, t.selectedConversationIds, s, o, e.inboxType]),
                     b = 0 === t.selectedConversationIds.length;
-                return r.createElement(P.Z, { style: Ce.container }, c ? r.createElement(ue.Z, { confirmButtonLabel: ye.confirmButtonLabel, confirmButtonType: "destructiveFilled", headline: ye.headline, onCancel: m, onConfirm: h, text: ye.text }) : null, t.isSelecting ? r.createElement(r.Fragment, null, r.createElement(me.ZP, { "aria-label": ve, disabled: b, hoverLabel: _e, icon: Ie, onClick: u, pullRight: !0, type: "primaryText" }), r.createElement(me.ZP, { "aria-label": Se, hoverLabel: Ze, icon: xe, onClick: d, pullRight: !0, type: "primaryText" })) : r.createElement(me.ZP, { "aria-label": De, hoverLabel: ke, icon: we, onClick: i, pullRight: !0, type: "primaryText" }));
+                return r.createElement(P.Z, { style: Ie.container }, c ? r.createElement(me.Z, { confirmButtonLabel: ge.confirmButtonLabel, confirmButtonType: "destructiveFilled", headline: ge.headline, onCancel: m, onConfirm: h, text: ge.text }) : null, t.isSelecting ? r.createElement(r.Fragment, null, r.createElement(pe.ZP, { "aria-label": _e, disabled: b, hoverLabel: xe, icon: ve, onClick: u, pullRight: !0, type: "primaryText" }), r.createElement(pe.ZP, { "aria-label": Ze, hoverLabel: we, icon: Se, onClick: d, pullRight: !0, type: "primaryText" })) : r.createElement(pe.ZP, { "aria-label": ke, hoverLabel: Te, icon: De, onClick: i, pullRight: !0, type: "primaryText" }));
             }
-            const Ce = B.default.create((e) => ({ container: { flexDirection: "row", alignItems: "center" }, deleteIcon: { color: e.colors.red500 } })),
-                Ie = r.createElement(pe.default, { style: Ce.deleteIcon }),
-                ve = f().d96cf7ce,
-                _e = { label: ve },
-                xe = r.createElement(he.default, null),
-                Se = f().cfd2f35e,
-                Ze = { label: Se },
-                we = r.createElement(be.default, null),
-                De = f().a9d0d7f0,
-                ke = { label: De },
-                Te = f().cf2d1048;
-            function Re(e) {
+            const Ie = B.default.create((e) => ({ container: { flexDirection: "row", alignItems: "center" }, deleteIcon: { color: e.colors.red500 } })),
+                ve = r.createElement(he.default, { style: Ie.deleteIcon }),
+                _e = f().d96cf7ce,
+                xe = { label: _e },
+                Se = r.createElement(be.default, null),
+                Ze = f().cfd2f35e,
+                we = { label: Ze },
+                De = r.createElement(fe.default, null),
+                ke = f().a9d0d7f0,
+                Te = { label: ke },
+                Re = f().cf2d1048;
+            function Me(e) {
                 const t = (0, a.useHistory)(),
                     n = (0, a.useRouteMatch)(),
                     { featureSwitches: s } = r.useContext($.rC),
                     c = s.isTrue("dm_bulk_delete_enabled");
                 return r.createElement(
-                    O.Z,
+                    N.Z,
                     {
                         backLocation: "/messages",
                         onBackClick: () => {
                             t.push((0, U.Jn)(o._2.PRIMARY));
                         },
-                        rightControl: r.createElement(P.Z, { style: Me.rightControlRoot }, (0, U.I0)("/settings/direct_messages", !0), c ? r.createElement(ge, { inboxType: o._2.SECONDARY }) : null),
+                        rightControl: r.createElement(P.Z, { style: Le.rightControlRoot }, (0, U.I0)("/settings/direct_messages", !0), c ? r.createElement(Ce, { inboxType: o._2.SECONDARY }) : null),
                         screenType: "secondaryRoot",
-                        title: r.createElement(de.ZP, { size: "headline2" }, Te),
+                        title: r.createElement(ue.ZP, { size: "headline2" }, Re),
                         withDetailOpen: !n.isExact,
                     },
                     e.children,
                 );
             }
-            const Me = B.default.create((e) => ({ rightControlRoot: { flexDirection: "row", alignItems: "center" } }));
-            var Le = n(530732);
-            const Ae = f().eb7de4aa,
-                Pe = f().a0e81a2e;
-            function Be(e) {
+            const Le = B.default.create((e) => ({ rightControlRoot: { flexDirection: "row", alignItems: "center" } }));
+            var Ae = n(530732);
+            const Pe = f().eb7de4aa,
+                Be = f().a0e81a2e;
+            function Fe(e) {
                 const { isAtEndOfUntrustedInbox: t, untrustedConversationIds: n } = e,
-                    s = (0, re.z)(),
-                    a = (0, fe.v9)(_.Rh);
+                    s = (0, se.z)(),
+                    a = (0, Ee.v9)(_.Rh);
                 r.useEffect(() => {
                     a && t && s.scribe({ element: "low_quality_pivot", action: "impression" });
                 }, [s, t, a]);
@@ -253,10 +254,10 @@
                     ? r.createElement(
                           P.Z,
                           null,
-                          n.length > 0 && r.createElement(te.Z, null),
-                          r.createElement(P.Z, { style: Ne.tombstoneDescription }, r.createElement(de.ZP, { color: "gray700", size: "subtext2" }, Ae)),
+                          n.length > 0 && r.createElement(ne.Z, null),
+                          r.createElement(P.Z, { style: Ne.tombstoneDescription }, r.createElement(ue.ZP, { color: "gray700", size: "subtext2" }, Pe)),
                           r.createElement(
-                              Le.Z,
+                              Ae.Z,
                               {
                                   link: (0, U.Jn)(o._2.TERTIARY),
                                   onPress: () => {
@@ -264,7 +265,7 @@
                                   },
                                   style: Ne.tombstoneContainer,
                               },
-                              r.createElement(de.ZP, { align: "center", color: "primary", size: "body" }, Pe),
+                              r.createElement(ue.ZP, { align: "center", color: "primary", size: "body" }, Be),
                           ),
                       )
                     : null;
@@ -281,36 +282,36 @@
                         }),
                         (this._renderTombstone = () => {
                             const { allowLowQualityUntrustedInbox: e, conversationIds: t, isAtEndOfUntrustedInbox: n } = this.props;
-                            return e ? r.createElement(Be, { isAtEndOfUntrustedInbox: n, untrustedConversationIds: t }) : null;
+                            return e ? r.createElement(Fe, { isAtEndOfUntrustedInbox: n, untrustedConversationIds: t }) : null;
                         }),
                         (this._renderEmptyDMInbox = () => {
                             const e = this._renderTombstone();
-                            return r.createElement(X, { tombstone: e });
+                            return r.createElement(ee, { tombstone: e });
                         });
                 }
                 render() {
                     const { analytics: e, conversationIds: t, fetchInboxHistory: n, fetchStatus: s, isRefreshing: a, updateLastSeenEventId: c } = this.props;
-                    return r.createElement(Re, null, r.createElement(ie, null), r.createElement(M.Z, { accessibilityTitle: Te, analytics: e, conversationIds: t, fetchInboxHistory: n, fetchStatus: s, footer: this._renderTombstone(), inboxType: o._2.SECONDARY, isRefreshing: a, renderEmptyDMInbox: this._renderEmptyDMInbox, renderStickyContent: () => (0, U.LA)(this.props.conversationIds), updateLastSeenEventId: c, virtualScrollerCacheKey: "dmUntrustedInbox" }));
+                    return r.createElement(Me, null, r.createElement(de, null), r.createElement(M.Z, { accessibilityTitle: Re, analytics: e, conversationIds: t, fetchInboxHistory: n, fetchStatus: s, footer: this._renderTombstone(), inboxType: o._2.SECONDARY, isRefreshing: a, renderEmptyDMInbox: this._renderEmptyDMInbox, renderStickyContent: () => (0, U.LA)(this.props.conversationIds), updateLastSeenEventId: c, virtualScrollerCacheKey: "dmUntrustedInbox" }));
                 }
             }
             (Oe.contextType = E.Z), (Oe.defaultProps = { conversationIds: [] });
-            const Fe = (0, g.C)(T({ inbox: o._2.SECONDARY })(Oe), { directMessages: y.Z });
-            function He(e) {
-                return r.createElement(K.Z, { header: U.$e, message: j.ZP });
-            }
+            const He = (0, g.C)(T({ inbox: o._2.SECONDARY })(Oe), { directMessages: y.Z });
             function Ue(e) {
+                return r.createElement(j.Z, { header: U.$e, message: X.ZP });
+            }
+            function Ye(e) {
                 const t = (0, a.useHistory)(),
                     n = (0, a.useRouteMatch)(),
                     { featureSwitches: s } = r.useContext($.rC),
                     c = s.isTrue("dm_bulk_delete_enabled");
                 return r.createElement(
-                    O.Z,
+                    N.Z,
                     {
                         backLocation: (0, U.Jn)(o._2.SECONDARY),
                         onBackClick: () => {
                             t.push((0, U.Jn)(o._2.SECONDARY));
                         },
-                        rightControl: r.createElement(P.Z, { style: Ye.rightControlRoot }, (0, U.I0)("/settings/direct_messages", !0), c ? r.createElement(ge, { inboxType: o._2.TERTIARY }) : null),
+                        rightControl: r.createElement(P.Z, { style: ze.rightControlRoot }, (0, U.I0)("/settings/direct_messages", !0), c ? r.createElement(Ce, { inboxType: o._2.TERTIARY }) : null),
                         screenType: "secondaryRoot",
                         title: U.lW,
                         withDetailOpen: !n.isExact,
@@ -318,10 +319,10 @@
                     e.children,
                 );
             }
-            const Ye = B.default.create((e) => ({ rightControlRoot: { flexDirection: "row", alignItems: "center" } })),
-                ze = f().bece84b4,
-                We = f().ee8c0c8a;
-            class Qe extends r.Component {
+            const ze = B.default.create((e) => ({ rightControlRoot: { flexDirection: "row", alignItems: "center" } })),
+                We = f().bece84b4,
+                Qe = f().ee8c0c8a;
+            class $e extends r.Component {
                 constructor(...e) {
                     super(...e),
                         (this.componentDidMount = () => {
@@ -330,7 +331,7 @@
                         (this.componentWillUnmount = () => {
                             this.context.decrementDmDrawerSuppressorCount();
                         }),
-                        (this._renderEmptyDMInbox = () => r.createElement(K.Z, { header: ze, message: We })),
+                        (this._renderEmptyDMInbox = () => r.createElement(j.Z, { header: We, message: Qe })),
                         (this._handleBackClick = () => {
                             this.props.history.push((0, U.Jn)(o._2.SECONDARY));
                         }),
@@ -341,17 +342,17 @@
                 }
                 render() {
                     const { analytics: e, conversationIds: t, fetchInboxHistory: n, fetchStatus: s, isRefreshing: a, updateLastSeenEventId: c } = this.props;
-                    return r.createElement(Ue, null, r.createElement(M.Z, { accessibilityTitle: U.lW, analytics: e, conversationIds: t, fetchInboxHistory: n, fetchStatus: s, inboxType: o._2.TERTIARY, isRefreshing: a, renderEmptyDMInbox: () => r.createElement(He, null), renderStickyContent: () => (0, U.LA)(this.props.conversationIds), updateLastSeenEventId: c, virtualScrollerCacheKey: "dmLowQualityUntrustedInbox" }));
+                    return r.createElement(Ye, null, r.createElement(M.Z, { accessibilityTitle: U.lW, analytics: e, conversationIds: t, fetchInboxHistory: n, fetchStatus: s, inboxType: o._2.TERTIARY, isRefreshing: a, renderEmptyDMInbox: () => r.createElement(Ue, null), renderStickyContent: () => (0, U.LA)(this.props.conversationIds), updateLastSeenEventId: c, virtualScrollerCacheKey: "dmLowQualityUntrustedInbox" }));
                 }
             }
-            Qe.contextType = E.Z;
-            const $e = (0, g.C)(T({ inbox: o._2.TERTIARY })(Qe), { directMessages: y.Z }),
-                qe = 8e3,
-                Je = m((e) => {
+            $e.contextType = E.Z;
+            const qe = (0, g.C)(T({ inbox: o._2.TERTIARY })($e), { directMessages: y.Z }),
+                Je = 8e3,
+                Ve = m((e) => {
                     const { conversationId: t, inboxType: n, ...a } = e,
                         { location: c } = e;
                     (0, s.ph)();
-                    const l = r.useMemo(() => (n === o._2.TERTIARY || "/messages/requests/additional" === c.pathname ? r.createElement($e, a) : n === o._2.SECONDARY || "/messages/requests" === c.pathname ? r.createElement(Fe, a) : r.createElement(G, a)), [n, c.pathname, a]);
+                    const l = r.useMemo(() => (n === o._2.TERTIARY || "/messages/requests/additional" === c.pathname ? r.createElement(qe, a) : n === o._2.SECONDARY || "/messages/requests" === c.pathname ? r.createElement(He, a) : r.createElement(K, a)), [n, c.pathname, a]);
                     return r.createElement(p.OI, null, r.createElement(h.s, null, l));
                 });
         },
@@ -608,4 +609,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.DirectMessages-58b91ff1.c69028da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.DirectMessages-58b91ff1.252c394a.js.map

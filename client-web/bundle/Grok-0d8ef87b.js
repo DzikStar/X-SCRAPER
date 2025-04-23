@@ -3,7 +3,7 @@
     ["bundle.Grok-0d8ef87b"],
     {
         306191: (e, t, a) => {
-            a.d(t, { Z: () => x });
+            a.d(t, { Z: () => S });
             a(136728);
             var s = a(202784),
                 r = a(392237),
@@ -11,12 +11,13 @@
                 n = a(572929),
                 l = a(339838),
                 i = a(687612),
-                c = a(396184),
-                m = a(17341),
-                p = a(325686),
-                d = a(103714);
-            function u({ fcDetails: e, onSendPrompt: t, style: a }) {
-                const r = c.x8[c.dv.FC],
+                c = a(618123),
+                m = a(396184),
+                p = a(17341),
+                d = a(325686),
+                u = a(103714);
+            function h({ fcDetails: e, onSendPrompt: t, style: a }) {
+                const r = m.x8[m.dv.FC],
                     o = s.useCallback((e) => {
                         const t = e.split(" ");
                         let a = "";
@@ -29,21 +30,21 @@
                             e.map((e) => {
                                 const a = `${o(e.player)} ${e.goalMinutes.join(", ")}`;
                                 return s.createElement(
-                                    d.Z,
+                                    u.Z,
                                     {
                                         key: e.player,
                                         onClick: () => {
                                             t && t(e.player);
                                         },
-                                        style: h.goalEvent,
+                                        style: g.goalEvent,
                                     },
                                     a,
                                 );
                             }),
                         );
-                return s.createElement(p.Z, { style: [h.events, r ? void 0 : h.awayTeamFirstEvents, a] }, s.createElement(p.Z, { style: h.teamEvents }, s.createElement(n, { events: e.homeTeamEvents })), s.createElement(p.Z, { style: [h.teamEvents, h.awayTeamEvents] }, s.createElement(n, { events: e.awayTeamEvents })));
+                return s.createElement(d.Z, { style: [g.events, r ? void 0 : g.awayTeamFirstEvents, a] }, s.createElement(d.Z, { style: g.teamEvents }, s.createElement(n, { events: e.homeTeamEvents })), s.createElement(d.Z, { style: [g.teamEvents, g.awayTeamEvents] }, s.createElement(n, { events: e.awayTeamEvents })));
             }
-            const h = r.default.create((e) => ({ events: { width: "100%", display: "flex", flexDirection: "row", justifyContent: "space-between", alignSelf: "center" }, compactEvents: {}, awayTeamFirstEvents: { flexDirection: "row-reverse" }, teamEvents: { display: "flex", flexDirection: "column", alignItems: "flex-start" }, awayTeamEvents: { alignItems: "flex-end" }, goalEvent: { color: e.colors.gray700, fontSize: e.fontSizes.subtext3 }, awayTeamGoalEvent: { justifyContent: "end", textAlign: "end" } }));
+            const g = r.default.create((e) => ({ events: { width: "100%", display: "flex", flexDirection: "row", justifyContent: "space-between", alignSelf: "center" }, compactEvents: {}, awayTeamFirstEvents: { flexDirection: "row-reverse" }, teamEvents: { display: "flex", flexDirection: "column", alignItems: "flex-start" }, awayTeamEvents: { alignItems: "flex-end" }, goalEvent: { color: e.colors.gray700, fontSize: e.fontSizes.subtext3 }, awayTeamGoalEvent: { justifyContent: "end", textAlign: "end" } }));
             function y(e) {
                 const t = { pts: { playerNames: [], value: Number.NEGATIVE_INFINITY }, reb: { playerNames: [], value: Number.NEGATIVE_INFINITY }, ast: { playerNames: [], value: Number.NEGATIVE_INFINITY }, stl: { playerNames: [], value: Number.NEGATIVE_INFINITY }, blk: { playerNames: [], value: Number.NEGATIVE_INFINITY } },
                     a = [];
@@ -79,32 +80,32 @@
                 });
                 return { name: s.name, stats: r };
             }
-            var g = a(731708),
-                f = a(265687);
-            const b = 0;
-            function T({ awayTeamBio: e, homeTeamBio: t, nbaDetails: a, onSendPrompt: r, style: n }) {
+            var f = a(731708),
+                b = a(265687);
+            const T = 0;
+            function v({ awayTeamBio: e, homeTeamBio: t, nbaDetails: a, onSendPrompt: r, style: n }) {
                 const { isCompactLayout: l } = (0, o.ZP)(),
-                    i = c.x8[c.dv.NBA],
-                    m = s.useMemo(() => a.scoreBreakDownByQuarterTable.headers.map((e, t) => s.createElement(g.ZP, { style: w.scoresHeaderText, weight: "bold" }, e)), [a.scoreBreakDownByQuarterTable.headers]),
-                    d = s.useMemo(() => {
-                        const e = a.scoreBreakDownByQuarterTable.rows.map((e) => e.map((e) => s.createElement(g.ZP, { style: w.scoresRowText }, e)));
+                    i = m.x8[m.dv.NBA],
+                    c = s.useMemo(() => a.scoreBreakDownByQuarterTable.headers.map((e, t) => s.createElement(f.ZP, { style: x.scoresHeaderText, weight: "bold" }, e)), [a.scoreBreakDownByQuarterTable.headers]),
+                    p = s.useMemo(() => {
+                        const e = a.scoreBreakDownByQuarterTable.rows.map((e) => e.map((e) => s.createElement(f.ZP, { style: x.scoresRowText }, e)));
                         return i ? e : e.reverse();
                     }, [a.scoreBreakDownByQuarterTable.rows, i]);
                 return s.createElement(
-                    p.Z,
-                    { style: [w.container, n] },
-                    s.createElement(f.Z, { colStyle: w.scoresTableCol, fixedColIdx: b, headers: m, rowStyle: w.scoresTableRow, rows: d, style: w.scoresTable }),
-                    s.createElement(p.Z, { style: w.divider }),
+                    d.Z,
+                    { style: [x.container, n] },
+                    s.createElement(b.Z, { colStyle: x.scoresTableCol, fixedColIdx: T, headers: c, rowStyle: x.scoresTableRow, rows: p, style: x.scoresTable }),
+                    s.createElement(d.Z, { style: x.divider }),
                     s.createElement(
-                        p.Z,
-                        { style: [w.topPerformersContainer, l ? w.compactTopPerformersContainer : void 0, i ? void 0 : w.awayTeamFirstTopPerformersContainer] },
-                        s.createElement(v, {
+                        d.Z,
+                        { style: [x.topPerformersContainer, l ? x.compactTopPerformersContainer : void 0, i ? void 0 : x.awayTeamFirstTopPerformersContainer] },
+                        s.createElement(w, {
                             onClick: () => {
                                 r && r(a.homeTeamTopPerformingPlayer.name);
                             },
                             topPerformer: a.homeTeamTopPerformingPlayer,
                         }),
-                        s.createElement(v, {
+                        s.createElement(w, {
                             onClick: () => {
                                 r && r(a.awayTeamTopPerformingPlayer.name);
                             },
@@ -113,7 +114,7 @@
                     ),
                 );
             }
-            function v({ onClick: e, topPerformer: t }) {
+            function w({ onClick: e, topPerformer: t }) {
                 const { isCompactLayout: a } = (0, o.ZP)(),
                     r = a ? 2 : 3,
                     n = s.useMemo(() => t.stats.slice(0, r), [r, t.stats]),
@@ -121,35 +122,35 @@
                         const e = t.name.split(" ");
                         return 1 === e.length ? t.name : `${e[0][0]}. ${e[e.length - 1]}`;
                     }, [t.name]),
-                    i = s.useMemo(() => n.map((e) => s.createElement(p.Z, { key: e.type, style: w.statContainer }, s.createElement(g.ZP, { style: w.statValue }, e.value), s.createElement(g.ZP, { style: w.statType }, e.type.toUpperCase()))), [n]),
-                    c = s.useMemo(() => s.createElement(d.Z, { onClick: e, style: w.topPerformerName }, l), [l, e]);
-                return s.createElement(p.Z, { style: w.topPerformerContainer }, a ? s.createElement(p.Z, { style: w.compactTopPerformerNameStatContainer }, c, s.createElement(p.Z, { style: w.compactStatsContainer }, i)) : s.createElement(s.Fragment, null, c, s.createElement(p.Z, { style: w.dot }), i));
+                    i = s.useMemo(() => n.map((e) => s.createElement(d.Z, { key: e.type, style: x.statContainer }, s.createElement(f.ZP, { style: x.statValue }, e.value), s.createElement(f.ZP, { style: x.statType }, e.type.toUpperCase()))), [n]),
+                    c = s.useMemo(() => s.createElement(u.Z, { onClick: e, style: x.topPerformerName }, l), [l, e]);
+                return s.createElement(d.Z, { style: x.topPerformerContainer }, a ? s.createElement(d.Z, { style: x.compactTopPerformerNameStatContainer }, c, s.createElement(d.Z, { style: x.compactStatsContainer }, i)) : s.createElement(s.Fragment, null, c, s.createElement(d.Z, { style: x.dot }), i));
             }
-            const w = r.default.create((e) => ({ container: { backgroundColor: e.colors.gray50, paddingVertical: e.spaces.space12, paddingHorizontal: e.spaces.space12, borderRadius: e.borderRadii.medium, display: "flex", flexDirection: "row", alignItems: "center", fontSize: e.fontSizes.subtext3, width: "100%" }, scoresHeaderText: { fontSize: e.fontSizes.subtext3, lineHeight: e.fontSizes.subtext3 }, scoresRowText: { fontSize: e.fontSizes.subtext3, lineHeight: e.fontSizes.subtext3 }, scoresTable: { flex: 1, marginEnd: e.spaces.space8 }, scoresTableRow: { borderTopWidth: "none", paddingVertical: e.spaces.space8 }, scoresTableCol: { flex: 1 }, divider: { backgroundColor: e.colors.gray200, width: 1, height: "100%", marginHorizontal: e.spaces.space8 }, topPerformersContainer: { display: "flex", flexDirection: "column", alignItems: "start", justifyContent: "center", gap: e.spaces.space16 }, compactTopPerformersContainer: { gap: e.spaces.space8 }, awayTeamFirstTopPerformersContainer: { flexDirection: "column-reverse" }, topPerformerContainer: { display: "flex", flexDirection: "row", alignItems: "center", fontSize: e.fontSizes.subtext3, lineHeight: e.fontSizes.subtext3, gap: e.spaces.space4, flex: 1 }, compactTopPerformerNameStatContainer: { display: "flex", flexDirection: "column", alignItems: "start", gap: e.spaces.space4 }, compactStatsContainer: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space4 }, topPerformerName: { fontSize: "inherit", lineHeight: "inherit" }, dot: { width: 2, height: 2, borderRadius: 2, backgroundColor: e.colors.gray700 }, statContainer: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space4 }, statValue: { fontSize: "inherit", lineHeight: "inherit" }, statType: { fontSize: "inherit", lineHeight: "inherit", color: e.colors.gray700 } }));
-            function x({ cardAttachment: e, isAnimated: t, onSendPrompt: a }) {
+            const x = r.default.create((e) => ({ container: { backgroundColor: e.colors.gray50, paddingVertical: e.spaces.space12, paddingHorizontal: e.spaces.space12, borderRadius: e.borderRadii.medium, display: "flex", flexDirection: "row", alignItems: "center", fontSize: e.fontSizes.subtext3, width: "100%" }, scoresHeaderText: { fontSize: e.fontSizes.subtext3, lineHeight: e.fontSizes.subtext3 }, scoresRowText: { fontSize: e.fontSizes.subtext3, lineHeight: e.fontSizes.subtext3 }, scoresTable: { flex: 1, marginEnd: e.spaces.space8 }, scoresTableRow: { borderTopWidth: "none", paddingVertical: e.spaces.space8 }, scoresTableCol: { flex: 1 }, divider: { backgroundColor: e.colors.gray200, width: 1, height: "100%", marginHorizontal: e.spaces.space8 }, topPerformersContainer: { display: "flex", flexDirection: "column", alignItems: "start", justifyContent: "center", gap: e.spaces.space16 }, compactTopPerformersContainer: { gap: e.spaces.space8 }, awayTeamFirstTopPerformersContainer: { flexDirection: "column-reverse" }, topPerformerContainer: { display: "flex", flexDirection: "row", alignItems: "center", fontSize: e.fontSizes.subtext3, lineHeight: e.fontSizes.subtext3, gap: e.spaces.space4, flex: 1 }, compactTopPerformerNameStatContainer: { display: "flex", flexDirection: "column", alignItems: "start", gap: e.spaces.space4 }, compactStatsContainer: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space4 }, topPerformerName: { fontSize: "inherit", lineHeight: "inherit" }, dot: { width: 2, height: 2, borderRadius: 2, backgroundColor: e.colors.gray700 }, statContainer: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space4 }, statValue: { fontSize: "inherit", lineHeight: "inherit" }, statType: { fontSize: "inherit", lineHeight: "inherit", color: e.colors.gray700 } }));
+            function S({ cardAttachment: e, isAnimated: t, onSendPrompt: a }) {
                 const { isCompactLayout: r } = (0, o.ZP)(),
-                    { boxscore: p } = e.visuals,
-                    d = (0, m.lV)(e.sport, p.homeTeam.name),
-                    h = p.homeTeam.score,
-                    g = p.homeTeam.record,
-                    f = (0, m.lV)(e.sport, p.awayTeam.name),
-                    b = p.awayTeam.score,
-                    v = p.awayTeam.record,
-                    w = s.useMemo(() => {
-                        if (e.sport !== c.dv.FC || !p.events) return null;
+                    { boxscore: d } = e.visuals,
+                    u = (0, p.lV)(e.sport, d.homeTeam.name),
+                    g = d.homeTeam.score,
+                    f = d.homeTeam.record,
+                    b = (0, p.lV)(e.sport, d.awayTeam.name),
+                    T = d.awayTeam.score,
+                    w = d.awayTeam.record,
+                    x = s.useMemo(() => {
+                        if (e.sport !== m.dv.FC || !d.events) return null;
                         const t = [],
                             a = [];
                         return (
-                            p.events.forEach((s) => {
+                            d.events.forEach((s) => {
                                 if ("goal" === s.type || "penalty_goal" === s.type) {
                                     const r = s.minute || "",
                                         o = r && "penalty_goal" === s.type ? `${r} (P)` : r,
                                         n = s.player || "",
-                                        l = (0, m.lV)(e.sport, s.team);
-                                    if (l.name === d.name && s.player && s.minute) {
+                                        l = (0, p.lV)(e.sport, s.team);
+                                    if (l.name === u.name && s.player && s.minute) {
                                         for (const e of t) if (e.player === n) return void e.goalMinutes.push(o);
                                         t.push({ player: n, goalMinutes: [o] });
-                                    } else if (l.name === f.name && s.player && s.minute) {
+                                    } else if (l.name === b.name && s.player && s.minute) {
                                         for (const e of a) if (e.player === n) return void e.goalMinutes.push(o);
                                         a.push({ player: n, goalMinutes: [o] });
                                     }
@@ -157,50 +158,50 @@
                             }),
                             { homeTeamEvents: t, awayTeamEvents: a }
                         );
-                    }, [p.events, e.sport, d.name, f.name]),
-                    x = s.useMemo(() => {
-                        if (e.sport !== c.dv.NBA || !p.summary) return null;
-                        const t = p.homeTeam.playerStats.map((e) => {
-                                const t = (0, m.$c)(e.table),
+                    }, [d.events, e.sport, u.name, b.name]),
+                    S = s.useMemo(() => {
+                        if (e.sport !== m.dv.NBA || !d.summary) return null;
+                        const t = d.homeTeam.playerStats.map((e) => {
+                                const t = (0, p.$c)(e.table),
                                     { headers: a, rows: s } = t;
                                 return { scope: e.scope, headers: a, rows: s };
                             }),
-                            a = p.awayTeam.playerStats.map((e) => {
-                                const t = (0, m.$c)(e.table),
+                            a = d.awayTeam.playerStats.map((e) => {
+                                const t = (0, p.$c)(e.table),
                                     { headers: a, rows: s } = t;
                                 return { scope: e.scope, headers: a, rows: s };
                             }),
                             s = y(t),
                             o = y(a),
-                            n = (0, m.$c)(p.summary || ""),
+                            n = (0, p.$c)(d.summary || ""),
                             l = n.rows.sort((t, a) => {
-                                const s = (0, m.lV)(e.sport, t[0]),
-                                    r = (0, m.lV)(e.sport, a[0]);
-                                return s.name === d.name ? -1 : r.name === d.name ? 1 : 0;
+                                const s = (0, p.lV)(e.sport, t[0]),
+                                    r = (0, p.lV)(e.sport, a[0]);
+                                return s.name === u.name ? -1 : r.name === u.name ? 1 : 0;
                             });
-                        (l[0][0] = r ? d.abbreviation : d.nickname || l[0][0]), (l[1][0] = r ? f.abbreviation : f.nickname || l[0][0]), (n.rows = l);
+                        (l[0][0] = r ? u.abbreviation : u.nickname || l[0][0]), (l[1][0] = r ? b.abbreviation : b.nickname || l[0][0]), (n.rows = l);
                         const i = { Team: "", Total: "T" },
-                            u = [];
+                            c = [];
                         return (
                             n.headers.forEach((e) => {
-                                u.push(void 0 !== i[e] ? i[e] : e);
+                                c.push(void 0 !== i[e] ? i[e] : e);
                             }),
-                            (n.headers = u),
+                            (n.headers = c),
                             { homeTeamTopPerformingPlayer: s, awayTeamTopPerformingPlayer: o, scoreBreakDownByQuarterTable: n }
                         );
-                    }, [p.homeTeam, p.awayTeam, p.summary, e.sport, d, f, r]),
-                    E = s.useMemo(() => {
-                        let e = (0, m.FB)(p.date);
+                    }, [d.homeTeam, d.awayTeam, d.summary, e.sport, u, b, r]),
+                    P = s.useMemo(() => {
+                        let e = (0, p.FB)(d.date);
                         const t = new Date(),
                             a = new Date(t);
                         a.setHours(a.getHours() - 24);
-                        const s = (0, m.FB)((0, m.a1)(t)),
-                            r = (0, m.FB)((0, m.a1)(a));
-                        return e === s ? (e = c.xt) : e === r && (e = c.vq), e;
-                    }, [p.date]);
-                return s.createElement(n.Z, { isAnimated: t }, s.createElement(i.Z, { awayTeamBio: f, awayTeamRecord: v, awayTeamScore: b, dateLabel: E, homeTeamBio: d, homeTeamRecord: g, homeTeamScore: h, isUpcomingMatch: !1, onSendPrompt: a, sport: e.sport }), w && s.createElement(u, { fcDetails: w, onSendPrompt: a, style: [S.fcDetailContainer, r ? S.compactFcDetailContainer : void 0] }), x && s.createElement(T, { awayTeamBio: f, homeTeamBio: d, nbaDetails: x, onSendPrompt: a, style: S.nbaDetailContainer }), s.createElement(l.Z, { style: S.createdAtText, text: e.sport === c.dv.FC ? c.ce : void 0, timestamp: e.created_at }));
+                        const s = (0, p.FB)((0, p.a1)(t)),
+                            r = (0, p.FB)((0, p.a1)(a));
+                        return e === s ? (e = m.xt) : e === r && (e = m.vq), e;
+                    }, [d.date]);
+                return s.createElement(n.Z, { isAnimated: t }, s.createElement(c.Z, { prompt: e.prompt.original }), s.createElement(i.Z, { awayTeamBio: b, awayTeamRecord: w, awayTeamScore: T, dateLabel: P, homeTeamBio: u, homeTeamRecord: f, homeTeamScore: g, isUpcomingMatch: !1, onSendPrompt: a, sport: e.sport }), x && s.createElement(h, { fcDetails: x, onSendPrompt: a, style: [E.fcDetailContainer, r ? E.compactFcDetailContainer : void 0] }), S && s.createElement(v, { awayTeamBio: b, homeTeamBio: u, nbaDetails: S, onSendPrompt: a, style: E.nbaDetailContainer }), s.createElement(l.Z, { style: E.createdAtText, text: e.sport === m.dv.FC ? m.ce : void 0, timestamp: e.created_at }));
             }
-            const S = r.default.create((e) => ({ fcDetailContainer: { width: "45%", marginTop: -10 }, compactFcDetailContainer: { width: "90%", marginTop: 0 }, nbaDetailContainer: { marginTop: e.spaces.space8 }, createdAtText: { marginTop: e.spaces.space16 } }));
+            const E = r.default.create((e) => ({ fcDetailContainer: { width: "45%", marginTop: -10 }, compactFcDetailContainer: { width: "90%", marginTop: 0 }, nbaDetailContainer: { marginTop: e.spaces.space8 }, createdAtText: { marginTop: e.spaces.space16 } }));
         },
         641095: (e, t, a) => {
             a.d(t, { Z: () => T });
@@ -217,8 +218,8 @@
                 d = a(339838),
                 u = a(103714),
                 h = a(396184),
-                y = a(17341);
-            const g = c().f7b57ac0,
+                g = a(17341);
+            const y = c().f7b57ac0,
                 f = {
                     [h.dv.NBA]: [
                         { key: "age", label: "Age" },
@@ -271,7 +272,7 @@
                     c = s.useMemo(() => {
                         for (const e of i.stats)
                             if ("Regular Season" === e.scope) {
-                                const { headers: t, rows: a } = (0, y.$c)(e.table);
+                                const { headers: t, rows: a } = (0, g.$c)(e.table);
                                 return { scope: e.scope, headers: t, rows: a };
                             }
                     }, [i.stats]),
@@ -324,10 +325,10 @@
                     P = s.useMemo(() => {
                         for (let t = 0; t < i.games.length; t++) {
                             const a = i.games[t],
-                                { rows: s } = (0, y.$c)(a.table);
+                                { rows: s } = (0, g.$c)(a.table);
                             if (s.length > 0) {
                                 const t = s[0];
-                                return (0, y.lV)(e.sport, t[1]);
+                                return (0, g.lV)(e.sport, t[1]);
                             }
                         }
                         return null;
@@ -389,7 +390,7 @@
                             s.createElement(
                                 o.Z,
                                 { style: v.playerStatsContainer },
-                                I && s.createElement(o.Z, { style: [v.seasonLabelContainer, l ? v.compactSeasonLabelContainer : void 0] }, s.createElement(n.ZP, { style: v.seasonLabel }, g), s.createElement(o.Z, { style: v.dot }), s.createElement(n.ZP, { style: v.seasonLabel }, `${I} ${c.scope}`)),
+                                I && s.createElement(o.Z, { style: [v.seasonLabelContainer, l ? v.compactSeasonLabelContainer : void 0] }, s.createElement(n.ZP, { style: v.seasonLabel }, y), s.createElement(o.Z, { style: v.dot }), s.createElement(n.ZP, { style: v.seasonLabel }, `${I} ${c.scope}`)),
                                 s.createElement(
                                     o.Z,
                                     { style: v.playerStats },
@@ -438,7 +439,7 @@
             }));
         },
         544687: (e, t, a) => {
-            a.d(t, { Z: () => u });
+            a.d(t, { Z: () => h });
             a(136728);
             var s = a(202784),
                 r = a(325686),
@@ -447,85 +448,87 @@
                 l = a(988290),
                 i = a(572929),
                 c = a(339838),
-                m = a(106646),
-                p = a(396184),
-                d = a(17341);
-            function u({ cardAttachment: e, isAnimated: t, onSendPrompt: a }) {
+                m = a(618123),
+                p = a(106646),
+                d = a(396184),
+                u = a(17341);
+            function h({ cardAttachment: e, isAnimated: t, onSendPrompt: a }) {
                 const { isCompactLayout: n } = (0, l.ZP)(),
-                    { schedule: u } = e.visuals,
+                    { schedule: h } = e.visuals,
                     y = s.useMemo(() => {
-                        if (!u.inProgress) return [];
-                        return u.inProgress.map((t) => {
-                            const a = (0, d.lV)(e.sport, p.Mv[t.homeTeam.name] || t.homeTeam.name),
-                                s = (0, d.lV)(e.sport, p.Mv[t.awayTeam.name] || t.awayTeam.name),
-                                r = (0, d.q$)(t.date);
-                            return { homeTeam: { bio: a, score: t.homeTeam.score }, awayTeam: { bio: s, score: t.awayTeam.score }, dateLabel: r, inProgressGameInfo: { gameStatus: t.status, state: (0, d.uS)(t.status, e.sport) }, networkName: t.network };
+                        if (!h.inProgress) return [];
+                        return h.inProgress.map((t) => {
+                            const a = (0, u.lV)(e.sport, d.Mv[t.homeTeam.name] || t.homeTeam.name),
+                                s = (0, u.lV)(e.sport, d.Mv[t.awayTeam.name] || t.awayTeam.name),
+                                r = (0, u.q$)(t.date);
+                            return { homeTeam: { bio: a, score: t.homeTeam.score }, awayTeam: { bio: s, score: t.awayTeam.score }, dateLabel: r, inProgressGameInfo: { gameStatus: t.status, state: (0, u.uS)(t.status, e.sport) }, networkName: t.network };
                         });
-                    }, [e.sport, u.inProgress]),
-                    g = s.useMemo(() => {
+                    }, [e.sport, h.inProgress]),
+                    f = s.useMemo(() => {
                         const t = [];
-                        if (!u.scheduled) return t;
+                        if (!h.scheduled) return t;
                         const a = new Date();
                         return (
-                            u.scheduled.forEach((s) => {
-                                const r = (0, d.lV)(e.sport, p.Mv[s.homeTeam.name] || s.homeTeam.name),
-                                    o = (0, d.lV)(e.sport, p.Mv[s.awayTeam.name] || s.awayTeam.name),
-                                    n = (0, d.FO)(s.date, s.time);
+                            h.scheduled.forEach((s) => {
+                                const r = (0, u.lV)(e.sport, d.Mv[s.homeTeam.name] || s.homeTeam.name),
+                                    o = (0, u.lV)(e.sport, d.Mv[s.awayTeam.name] || s.awayTeam.name),
+                                    n = (0, u.FO)(s.date, s.time);
                                 if (n.getTime() < a.getTime()) return;
-                                const l = (0, d.e4)(n),
-                                    i = (0, d.mr)(n);
+                                const l = (0, u.e4)(n),
+                                    i = (0, u.mr)(n);
                                 t.push({ homeTeam: { bio: r }, awayTeam: { bio: o }, dateLabel: l, timeLabel: i });
                             }),
-                            t.slice(0, p.MN)
+                            t.slice(0, d.MN)
                         );
-                    }, [e.sport, u.scheduled]),
-                    f = s.useMemo(() => {
-                        if (!u.completed) return [];
-                        return u.completed
+                    }, [e.sport, h.scheduled]),
+                    b = s.useMemo(() => {
+                        if (!h.completed) return [];
+                        return h.completed
                             .sort((e, t) => new Date(t.date).getTime() - new Date(e.date).getTime())
                             .map((t) => {
-                                const a = (0, d.lV)(e.sport, p.Mv[t.homeTeam.name] || t.homeTeam.name),
-                                    s = (0, d.lV)(e.sport, p.Mv[t.awayTeam.name] || t.awayTeam.name),
-                                    r = (0, d.q$)(t.date);
+                                const a = (0, u.lV)(e.sport, d.Mv[t.homeTeam.name] || t.homeTeam.name),
+                                    s = (0, u.lV)(e.sport, d.Mv[t.awayTeam.name] || t.awayTeam.name),
+                                    r = (0, u.q$)(t.date);
                                 return { homeTeam: { bio: a, score: t.homeTeam.score }, awayTeam: { bio: s, score: t.awayTeam.score }, dateLabel: r };
                             })
-                            .slice(0, p.dg);
-                    }, [e.sport, u.completed]);
-                return f.length <= 0 && g.length <= 0 ? null : s.createElement(i.Z, { isAnimated: t }, s.createElement(r.Z, { style: h.allMatchesContainer }, y.length > 0 && s.createElement(r.Z, null, (f.length > 0 || g.length > 0) && s.createElement(o.ZP, { style: [h.matchesHeader, n ? h.compactMatchesHeader : void 0], weight: "bold" }, p.h3), s.createElement(m.Z, { defaultNumMatchesToShow: 3, matches: y, matchesType: "inprogress", onSendPrompt: a, sport: e.sport })), g.length > 0 && s.createElement(r.Z, null, (y.length > 0 || f.length > 0) && s.createElement(o.ZP, { style: [h.matchesHeader, n ? h.compactMatchesHeader : void 0], weight: "bold" }, p.ke), s.createElement(m.Z, { defaultNumMatchesToShow: 3, matches: g, matchesType: "scheduled", onSendPrompt: a, sport: e.sport })), f.length > 0 && s.createElement(r.Z, null, (y.length > 0 || g.length > 0) && s.createElement(o.ZP, { style: [h.matchesHeader, n ? h.compactMatchesHeader : void 0], weight: "bold" }, p.UK), s.createElement(m.Z, { defaultNumMatchesToShow: 1, matches: f, matchesType: "completed", onSendPrompt: a, sport: e.sport }))), s.createElement(c.Z, { style: h.createdAtText, text: e.sport === p.dv.FC ? p.ce : void 0, timestamp: e.created_at }));
+                            .slice(0, d.dg);
+                    }, [e.sport, h.completed]);
+                return b.length <= 0 && f.length <= 0 ? null : s.createElement(i.Z, { isAnimated: t }, s.createElement(m.Z, { prompt: e.prompt.original }), s.createElement(r.Z, { style: g.allMatchesContainer }, y.length > 0 && s.createElement(r.Z, null, (b.length > 0 || f.length > 0) && s.createElement(o.ZP, { style: [g.matchesHeader, n ? g.compactMatchesHeader : void 0], weight: "bold" }, d.h3), s.createElement(p.Z, { defaultNumMatchesToShow: 3, matches: y, matchesType: "inprogress", onSendPrompt: a, sport: e.sport })), f.length > 0 && s.createElement(r.Z, null, (y.length > 0 || b.length > 0) && s.createElement(o.ZP, { style: [g.matchesHeader, n ? g.compactMatchesHeader : void 0], weight: "bold" }, d.ke), s.createElement(p.Z, { defaultNumMatchesToShow: 3, matches: f, matchesType: "scheduled", onSendPrompt: a, sport: e.sport })), b.length > 0 && s.createElement(r.Z, null, (y.length > 0 || f.length > 0) && s.createElement(o.ZP, { style: [g.matchesHeader, n ? g.compactMatchesHeader : void 0], weight: "bold" }, d.UK), s.createElement(p.Z, { defaultNumMatchesToShow: 1, matches: b, matchesType: "completed", onSendPrompt: a, sport: e.sport }))), s.createElement(c.Z, { style: g.createdAtText, text: e.sport === d.dv.FC ? d.ce : void 0, timestamp: e.created_at }));
             }
-            const h = n.default.create((e) => ({ allMatchesContainer: { width: "100%", display: "flex", flexDirection: "column", gap: e.spaces.space16 }, compactAllMatchesConatainer: { gap: e.spaces.space12 }, matchesHeader: { fontSize: e.fontSizes.subtext2, lineHeight: e.fontSizes.subtext2, color: e.colors.gray700, marginBottom: e.spaces.space16 }, compactMatchesHeader: { fontSize: e.fontSizes.subtext3, lineHeight: e.fontSizes.subtext3 }, disclaimer: { marginTop: e.spaces.space12 }, createdAtText: { marginTop: e.spaces.space12 } }));
+            const g = n.default.create((e) => ({ allMatchesContainer: { width: "100%", display: "flex", flexDirection: "column", gap: e.spaces.space16 }, compactAllMatchesConatainer: { gap: e.spaces.space12 }, matchesHeader: { fontSize: e.fontSizes.subtext2, lineHeight: e.fontSizes.subtext2, color: e.colors.gray700, marginBottom: e.spaces.space16 }, compactMatchesHeader: { fontSize: e.fontSizes.subtext3, lineHeight: e.fontSizes.subtext3 }, disclaimer: { marginTop: e.spaces.space12 }, createdAtText: { marginTop: e.spaces.space12 } }));
         },
         488662: (e, t, a) => {
-            a.d(t, { Z: () => u });
+            a.d(t, { Z: () => h });
             var s = a(202784),
                 r = a(392237),
                 o = a(988290),
                 n = a(572929),
                 l = a(339838),
                 i = a(181226),
-                c = a(415079),
-                m = a(534564),
-                p = a(396184),
-                d = a(17341);
-            function u({ cardAttachment: e, isAnimated: t, onSendPrompt: a }) {
+                c = a(618123),
+                m = a(415079),
+                p = a(534564),
+                d = a(396184),
+                u = a(17341);
+            function h({ cardAttachment: e, isAnimated: t, onSendPrompt: a }) {
                 const { isCompactLayout: r } = (0, o.ZP)(),
-                    { standings: u } = e.visuals,
+                    { standings: h } = e.visuals,
                     y = s.useMemo(() => {
                         const t = Object.values(i[e.sport].teams);
                         for (const a of t) if (e.answer.text.includes(a.name)) return a;
                         return null;
                     }, [e.sport, e.answer.text]),
-                    g = s.useMemo(() => {
-                        if (u.length <= 0 || !y) return null;
-                        const t = u.find((e) => e.teams.find((e) => e.abbreviation === y.abbreviation));
-                        return t ? (0, d.qs)(e.sport, t.scope, t.table, r) : null;
-                    }, [u, e.sport, r, y]);
-                return g ? s.createElement(n.Z, { isAnimated: t }, y && s.createElement(m.Z, { leagueName: g.scope, singleLine: !0, standingsWithMetadata: g, style: h.header, teamBio: y }), s.createElement(c.Z, { onSendPrompt: a, sport: e.sport, standingsWithMetadata: g, teamBio: y || void 0 }), s.createElement(l.Z, { style: h.createdAtText, text: e.sport === p.dv.FC ? p.ce : void 0, timestamp: e.created_at })) : null;
+                    f = s.useMemo(() => {
+                        if (h.length <= 0 || !y) return null;
+                        const t = h.find((e) => e.teams.find((e) => e.abbreviation === y.abbreviation));
+                        return t ? (0, u.qs)(e.sport, t.scope, t.table, r) : null;
+                    }, [h, e.sport, r, y]);
+                return f ? s.createElement(n.Z, { isAnimated: t }, s.createElement(c.Z, { prompt: e.prompt.original }), y && s.createElement(p.Z, { leagueName: f.scope, singleLine: !0, standingsWithMetadata: f, style: g.header, teamBio: y }), s.createElement(m.Z, { onSendPrompt: a, sport: e.sport, standingsWithMetadata: f, teamBio: y || void 0 }), s.createElement(l.Z, { style: g.createdAtText, text: e.sport === d.dv.FC ? d.ce : void 0, timestamp: e.created_at })) : null;
             }
-            const h = r.default.create((e) => ({ header: { marginBottom: e.spaces.space12 }, disclaimer: { marginTop: e.spaces.space12 }, createdAtText: { marginTop: e.spaces.space12 } }));
+            const g = r.default.create((e) => ({ header: { marginBottom: e.spaces.space12 }, disclaimer: { marginTop: e.spaces.space12 }, createdAtText: { marginTop: e.spaces.space12 } }));
         },
         267272: (e, t, a) => {
-            a.d(t, { Z: () => g });
+            a.d(t, { Z: () => f });
             var s = a(202784),
                 r = a(731708),
                 o = a(392237),
@@ -534,15 +537,16 @@
                 i = a(572929),
                 c = a(339838),
                 m = a(265687),
-                p = a(396184),
-                d = a(17341);
-            const u = l().d228a9a0,
-                h = l().c174e46e,
+                p = a(618123),
+                d = a(396184),
+                u = a(17341);
+            const h = l().d228a9a0,
+                g = l().c174e46e,
                 y = 3;
-            function g({ cardAttachment: e, isAnimated: t }) {
+            function f({ cardAttachment: e, isAnimated: t }) {
                 const { table: a } = e.visuals,
-                    o = s.useMemo(() => (0, d.$c)(a), [a]),
-                    n = s.useMemo(() => o.headers.map((e, t) => s.createElement(r.ZP, { style: f.headerText, weight: "bold" }, (0, d.vw)(e))), [o.headers]),
+                    o = s.useMemo(() => (0, u.$c)(a), [a]),
+                    n = s.useMemo(() => o.headers.map((e, t) => s.createElement(r.ZP, { style: b.headerText, weight: "bold" }, (0, u.vw)(e))), [o.headers]),
                     l = s.useMemo(() => {
                         const e = o.headers.findIndex((e) => "DATE" === e.toUpperCase()),
                             t = o.headers.findIndex((e) => "SEASON" === e.toUpperCase());
@@ -560,12 +564,12 @@
                                           r = a[t];
                                       return s < r ? 1 : s > r ? -1 : 0;
                                   })),
-                            a.map((e, t) => e.map((e, t) => s.createElement(r.ZP, { numberOfLines: 1, style: f.rowText }, "" === e ? "-" : e)))
+                            a.map((e, t) => e.map((e, t) => s.createElement(r.ZP, { numberOfLines: 1, style: b.rowText }, "" === e ? "-" : e)))
                         );
                     }, [o]);
-                return s.createElement(i.Z, { isAnimated: t }, s.createElement(m.Z, { colStyle: f.tableCol, defaultRowRangeToShow: [0, y], fixedColIdx: 0, headers: n, rowStyle: f.tableRow, rows: l, seeLessLabel: h, seeMoreLabel: u, style: f.table }), s.createElement(c.Z, { style: f.createdAtText, text: e.sport === p.dv.FC ? p.ce : void 0, timestamp: e.created_at }));
+                return s.createElement(i.Z, { isAnimated: t }, s.createElement(p.Z, { prompt: e.prompt.original }), s.createElement(m.Z, { colStyle: b.tableCol, defaultRowRangeToShow: [0, y], fixedColIdx: 0, headers: n, rowStyle: b.tableRow, rows: l, seeLessLabel: g, seeMoreLabel: h, style: b.table }), s.createElement(c.Z, { style: b.createdAtText, text: e.sport === d.dv.FC ? d.ce : void 0, timestamp: e.created_at }));
             }
-            const f = o.default.create((e) => ({ headerText: { fontSize: e.fontSizes.subtext2 }, rowText: { fontSize: e.fontSizes.subtext2 }, table: {}, tableCol: {}, tableRow: { paddingHorizontal: e.spaces.space8 }, disclaimer: { marginTop: e.spaces.space12 }, createdAtText: { marginTop: e.spaces.space12 } }));
+            const b = o.default.create((e) => ({ headerText: { fontSize: e.fontSizes.subtext2 }, rowText: { fontSize: e.fontSizes.subtext2 }, table: {}, tableCol: {}, tableRow: { paddingHorizontal: e.spaces.space8 }, disclaimer: { marginTop: e.spaces.space12 }, createdAtText: { marginTop: e.spaces.space12 } }));
         },
         761434: (e, t, a) => {
             a.d(t, { Z: () => b });
@@ -582,8 +586,8 @@
                 d = a(610948),
                 u = a(534564),
                 h = a(396184),
-                y = a(17341);
-            var g = a(687612);
+                g = a(17341);
+            var y = a(687612);
             function f({ completedMatches: e, inProgressMatches: t, onSendPrompt: a, scheduledMatches: r, sport: o, teamBio: n }) {
                 const l = s.useMemo(() => {
                     if (t.length > 0) return { match: t[0] };
@@ -597,13 +601,13 @@
                     }
                     return a;
                 }, [t, e, r]);
-                return l ? s.createElement(g.Z, { awayTeamBio: l.match.awayTeam.bio, awayTeamScore: l.match.awayTeam.score, dateLabel: l.match.dateLabel, homeTeamBio: l.match.homeTeam.bio, homeTeamScore: l.match.homeTeam.score, inProgressGameInfo: l.match.inProgressGameInfo, isUpcomingMatch: !!l.isUpcomingMatch, onSendPrompt: a, sport: o, timeLabel: l.match.timeLabel || "" }) : null;
+                return l ? s.createElement(y.Z, { awayTeamBio: l.match.awayTeam.bio, awayTeamScore: l.match.awayTeam.score, dateLabel: l.match.dateLabel, homeTeamBio: l.match.homeTeam.bio, homeTeamScore: l.match.homeTeam.score, inProgressGameInfo: l.match.inProgressGameInfo, isUpcomingMatch: !!l.isUpcomingMatch, onSendPrompt: a, sport: o, timeLabel: l.match.timeLabel || "" }) : null;
             }
             function b({ cardAttachment: e, isAnimated: t, onSendPrompt: a }) {
                 const { isCompactLayout: n } = (0, l.ZP)(),
-                    [g, b] = s.useState(h.x1.OVERVIEW.id),
+                    [y, b] = s.useState(h.x1.OVERVIEW.id),
                     { team: v } = e.visuals,
-                    w = (0, y.lV)(e.sport, v.bio.name),
+                    w = (0, g.lV)(e.sport, v.bio.name),
                     {
                         completedMatches: x,
                         inProgressMatches: S,
@@ -616,17 +620,17 @@
                                     return (
                                         a.forEach((a) => {
                                             const [n, l, i, c] = a,
-                                                m = (0, y.lV)(e.sport, h.Mv[i] || i),
-                                                { awayTeamBio: p, homeTeamBio: d } = (0, y.ay)(e.sport, l, t, m),
+                                                m = (0, g.lV)(e.sport, h.Mv[i] || i),
+                                                { awayTeamBio: p, homeTeamBio: d } = (0, g.ay)(e.sport, l, t, m),
                                                 u = t.name === d.name;
                                             if (!s) {
-                                                const { otherTeamScore: e, teamScore: t } = (0, y.a5)(c);
-                                                return o.push({ dateLabel: (0, y.q$)(n), homeTeam: { bio: d, score: u ? t : e }, awayTeam: { bio: p, score: u ? e : t } });
+                                                const { otherTeamScore: e, teamScore: t } = (0, g.a5)(c);
+                                                return o.push({ dateLabel: (0, g.q$)(n), homeTeam: { bio: d, score: u ? t : e }, awayTeam: { bio: p, score: u ? e : t } });
                                             }
                                             {
-                                                const e = (0, y.Ov)(n, c);
+                                                const e = (0, g.Ov)(n, c);
                                                 if (e.getTime() < r.getTime()) return;
-                                                o.push({ dateLabel: (0, y.e4)(e), timeLabel: (0, y.mr)(e), homeTeam: { bio: d }, awayTeam: { bio: p } });
+                                                o.push({ dateLabel: (0, g.e4)(e), timeLabel: (0, g.mr)(e), homeTeam: { bio: d }, awayTeam: { bio: p } });
                                             }
                                         }),
                                         o
@@ -637,7 +641,7 @@
                             r = s.useMemo(
                                 () =>
                                     e.visuals.team.scores.map((e) => {
-                                        const { headers: t, rows: s } = (0, y.$c)(e.table);
+                                        const { headers: t, rows: s } = (0, g.$c)(e.table);
                                         return { scope: e.scope, headers: t, rows: a(s, !1) };
                                     }),
                                 [e.visuals.team.scores, a],
@@ -645,7 +649,7 @@
                         return {
                             completedMatches: s.useMemo(() => r.find((e) => "Regular Season" === e.scope)?.rows.slice(0, h.dg) || [], [r]),
                             scheduledMatches: s.useMemo(() => {
-                                const { rows: t } = (0, y.$c)(e.visuals.team.schedule.table);
+                                const { rows: t } = (0, g.$c)(e.visuals.team.schedule.table);
                                 return a(t, !0).slice(0, h.MN);
                             }, [e.visuals.team.schedule, a]),
                             inProgressMatches: s.useMemo(() => {
@@ -661,8 +665,8 @@
                                         if (!t.homeTeam || !t.awayTeam) return;
                                         const s = t.homeTeam,
                                             o = t.awayTeam,
-                                            n = (0, y.lV)(e.sport, a[s.teamId].name),
-                                            l = (0, y.lV)(e.sport, a[o.teamId].name);
+                                            n = (0, g.lV)(e.sport, a[s.teamId].name),
+                                            l = (0, g.lV)(e.sport, a[o.teamId].name);
                                         r.push({ dateLabel: "", homeTeam: { bio: n, score: s.score }, awayTeam: { bio: l, score: o.score }, inProgressGameInfo: { gameStatus: t.gameStatus, state: t.state }, networkName: t.networkName });
                                     }),
                                     r
@@ -670,15 +674,15 @@
                             }, [e.visuals.team.schedule2, e.sport]),
                         };
                     })(e, w),
-                    P = s.useMemo(() => (0, y.qs)(e.sport, v.standings.scope, v.standings.table, n), [v.standings, e.sport, n]),
+                    P = s.useMemo(() => (0, g.qs)(e.sport, v.standings.scope, v.standings.table, n), [v.standings, e.sport, n]),
                     k = s.useMemo(() => {
                         const e = [];
                         return (x.length || S.length || E.length) && e.push(h.x1.OVERVIEW), (x.length || E.length) && e.push(h.x1.MATCHES), P.rows.length && e.push(h.x1.STANDINGS), e;
                     }, [x, S, E, P]);
-                return s.createElement(i.Z, { isAnimated: t }, s.createElement(r.Z, { style: [T.headerContainer, n ? T.compactHeaderContainer : void 0] }, s.createElement(u.Z, { leagueName: w.league, standingsWithMetadata: P, teamBio: w }), s.createElement(d.Z, { onTabClick: (e) => b(e), selectedTabId: g, sport: e.sport, tabs: k })), g === h.x1.OVERVIEW.id && s.createElement(f, { completedMatches: x, inProgressMatches: S, onSendPrompt: a, scheduledMatches: E, sport: e.sport, teamBio: w }), g === h.x1.MATCHES.id && s.createElement(r.Z, { style: T.allMatchesContainer }, E.length > 0 && s.createElement(r.Z, null, s.createElement(o.ZP, { style: [T.matchesHeader, n ? T.compactMatchesHeader : void 0], weight: "bold" }, h.ke), s.createElement(m.Z, { defaultNumMatchesToShow: 3, matches: E, matchesType: "scheduled", onSendPrompt: a, searchedTeamName: w.name, sport: e.sport })), x.length > 0 && s.createElement(r.Z, null, s.createElement(o.ZP, { style: [T.matchesHeader, n ? T.compactMatchesHeader : void 0], weight: "bold" }, h.UK), s.createElement(m.Z, { defaultNumMatchesToShow: 1, matches: x, matchesType: "completed", onSendPrompt: a, searchedTeamName: w.name, sport: e.sport }))), g === h.x1.STANDINGS.id && s.createElement(p.Z, { onSendPrompt: a, sport: e.sport, standingsWithMetadata: P, teamBio: w }), s.createElement(c.Z, { style: T.createdAtText, text: e.sport === h.dv.FC ? h.ce : void 0, timestamp: e.created_at }));
+                return s.createElement(i.Z, { isAnimated: t }, s.createElement(r.Z, { style: [T.headerContainer, n ? T.compactHeaderContainer : void 0] }, s.createElement(u.Z, { leagueName: w.league, standingsWithMetadata: P, teamBio: w }), s.createElement(d.Z, { onTabClick: (e) => b(e), selectedTabId: y, sport: e.sport, tabs: k })), y === h.x1.OVERVIEW.id && s.createElement(f, { completedMatches: x, inProgressMatches: S, onSendPrompt: a, scheduledMatches: E, sport: e.sport, teamBio: w }), y === h.x1.MATCHES.id && s.createElement(r.Z, { style: T.allMatchesContainer }, E.length > 0 && s.createElement(r.Z, null, s.createElement(o.ZP, { style: [T.matchesHeader, n ? T.compactMatchesHeader : void 0], weight: "bold" }, h.ke), s.createElement(m.Z, { defaultNumMatchesToShow: 3, matches: E, matchesType: "scheduled", onSendPrompt: a, searchedTeamName: w.name, sport: e.sport })), x.length > 0 && s.createElement(r.Z, null, s.createElement(o.ZP, { style: [T.matchesHeader, n ? T.compactMatchesHeader : void 0], weight: "bold" }, h.UK), s.createElement(m.Z, { defaultNumMatchesToShow: 1, matches: x, matchesType: "completed", onSendPrompt: a, searchedTeamName: w.name, sport: e.sport }))), y === h.x1.STANDINGS.id && s.createElement(p.Z, { onSendPrompt: a, sport: e.sport, standingsWithMetadata: P, teamBio: w }), s.createElement(c.Z, { style: T.createdAtText, text: e.sport === h.dv.FC ? h.ce : void 0, timestamp: e.created_at }));
             }
             const T = n.default.create((e) => ({ headerContainer: { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", marginBottom: e.spaces.space16 }, compactHeaderContainer: { alignItems: "start", marginBottom: e.spaces.space12 }, allMatchesContainer: { width: "100%", display: "flex", flexDirection: "column", gap: e.spaces.space16 }, compactAllMatchesConatainer: { gap: e.spaces.space12 }, matchesHeader: { fontSize: e.fontSizes.subtext2, color: e.colors.gray700, marginBottom: e.spaces.space16 }, compactMatchesHeader: { fontSize: e.fontSizes.subtext3 }, createdAtText: { marginTop: e.spaces.space16 } }));
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-0d8ef87b.b7221d0a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-0d8ef87b.597cf06a.js.map

@@ -162,13 +162,13 @@
             const u = d.default.create((e) => ({ header: { flexGrow: 1, padding: e.spaces.space16, flexDirection: "row", justifyContent: "space-between" }, chevronMargin: { marginStart: e.spaces.space12 }, chevronExpanded: { color: e.colors.primary, transform: "rotate(-180deg)" }, chevronAnimation: { transitionDuration: "100ms" }, title: { flexDirection: "row" }, iconBefore: { marginEnd: e.spaces.space8 }, iconAfter: { marginStart: e.spaces.space8 } })),
                 h = ({ accordionItemId: e = "", children: t, headerStyles: r, icon: h, iconColor: p, iconImage: m, iconSide: g, isExpanded: b = !1, onClick: y, onToggle: f, testID: v, title: C, titleColor: _, titleStyles: E }) => {
                     const D = i.Z.generate({ backgroundColor: "transparent", color: d.default.theme.colors.primary, customFocusBackgroundColor: d.default.theme.colors.gray0, customHoverBackgroundColor: d.default.theme.colors.gray0, customPressedBackgroundColor: d.default.theme.colors.gray0, insetFocusRing: !0 }),
-                        x = g || "AfterTitle",
-                        w = () =>
+                        w = g || "AfterTitle",
+                        x = () =>
                             h
                                 ? ((e, t) => {
                                       const r = "BeforeTitle" === t ? u.iconBefore : u.iconAfter;
                                       return a.createElement(e, { style: p ? [r, { color: p }] : [r, { color: d.default.theme.colors.text }], testID: "icon" });
-                                  })(h, x)
+                                  })(h, w)
                                 : m || void 0;
                     return a.createElement(
                         a.Fragment,
@@ -186,7 +186,7 @@
                                 style: r || u.header,
                                 testID: v,
                             },
-                            a.createElement(n.Z, { style: u.title }, "BeforeTitle" === x ? w() : null, a.createElement(s.ZP, { color: _ && _, style: E, testID: "title", weight: "bold" }, C), "AfterTitle" === x ? w() : null),
+                            a.createElement(n.Z, { style: u.title }, "BeforeTitle" === w ? x() : null, a.createElement(s.ZP, { color: _ && _, style: E, testID: "title", weight: "bold" }, C), "AfterTitle" === w ? x() : null),
                             (() => {
                                 const e = [u.chevronMargin, b && u.chevronExpanded, !l.Z.reducedMotionEnabled && u.chevronAnimation];
                                 return _ && !b ? e.push({ color: d.default.theme.colors[_] }) : _ || b || e.push({ color: d.default.theme.colors.text }), a.createElement(o.default, { style: e, testID: "accordion-chevron" });
@@ -263,10 +263,10 @@
                     return a.createElement(n.Z, null, r ? this._renderNativeDateInput() : this._renderSelectors(), e ? a.createElement(c.ZP, { color: "red500", id: this._errorID }, e) : null);
                 }
                 _renderSelectors() {
-                    const { day: e, month: t, year: r, errors: o = {}, label: l, autofocus: s, monthSelectorTestID: i, daySelectorTestID: c, yearSelectorTestID: p, style: g, minSelectableYear: v, maxSelectableYear: C, withCalendar: D, hideDay: x, disabled: w } = this.props,
+                    const { day: e, month: t, year: r, errors: o = {}, label: l, autofocus: s, monthSelectorTestID: i, daySelectorTestID: c, yearSelectorTestID: p, style: g, minSelectableYear: v, maxSelectableYear: C, withCalendar: D, hideDay: w, disabled: x } = this.props,
                         Z = h.DD(t, r),
                         I = h.Zj(v, C, e, t);
-                    return a.createElement(n.Z, { "aria-label": l, role: "group", style: [E.selectorsContainer, g] }, a.createElement(m.ZP, { "aria-describedby": o.month ? this._errorID : void 0, autofocus: s, disabled: w, hasError: o.month, label: y, onChange: this._handleMonthChange, options: this._monthOptions, style: E.monthSelector, testID: i, value: t ? `${t}` : "", withEmptyOption: !0 }), x ? null : a.createElement(m.ZP, { "aria-describedby": o.day ? this._errorID : void 0, disabled: w, hasError: o.day, label: b, onChange: this._handleDayChange, options: Z, style: E.daySelector, testID: c, value: e ? `${e}` : "", withEmptyOption: !0 }), a.createElement(m.ZP, { "aria-describedby": o.year ? this._errorID : void 0, disabled: w, hasError: o.year, label: f, onChange: this._handleYearChange, options: I, style: E.yearSelector, testID: p, value: r ? `${r}` : "", withEmptyOption: !0 }), D && a.createElement(n.Z, { role: "label", style: E.calendarLabel }, a.createElement(d.ZP, { "aria-label": "Calendar", icon: _, onPress: this._showCalendarPicker, size: "xLarge", type: "primaryText" }), (0, u.Z)("input", { max: this._nativeMaxDate, min: this._nativeMinDate, name: l, onChange: this._handleDateChange, style: E.nativeDateInput, type: "date", ref: this._setNativeCalendarRef, value: h.ww(e, t, r) })));
+                    return a.createElement(n.Z, { "aria-label": l, role: "group", style: [E.selectorsContainer, g] }, a.createElement(m.ZP, { "aria-describedby": o.month ? this._errorID : void 0, autofocus: s, disabled: x, hasError: o.month, label: y, onChange: this._handleMonthChange, options: this._monthOptions, style: E.monthSelector, testID: i, value: t ? `${t}` : "", withEmptyOption: !0 }), w ? null : a.createElement(m.ZP, { "aria-describedby": o.day ? this._errorID : void 0, disabled: x, hasError: o.day, label: b, onChange: this._handleDayChange, options: Z, style: E.daySelector, testID: c, value: e ? `${e}` : "", withEmptyOption: !0 }), a.createElement(m.ZP, { "aria-describedby": o.year ? this._errorID : void 0, disabled: x, hasError: o.year, label: f, onChange: this._handleYearChange, options: I, style: E.yearSelector, testID: p, value: r ? `${r}` : "", withEmptyOption: !0 }), D && a.createElement(n.Z, { role: "label", style: E.calendarLabel }, a.createElement(d.ZP, { "aria-label": "Calendar", icon: _, onPress: this._showCalendarPicker, size: "xLarge", type: "primaryText" }), (0, u.Z)("input", { max: this._nativeMaxDate, min: this._nativeMinDate, name: l, onChange: this._handleDateChange, style: E.nativeDateInput, type: "date", ref: this._setNativeCalendarRef, value: h.ww(e, t, r) })));
                 }
                 _renderNativeDateInput() {
                     const { label: e } = this.props;
@@ -277,7 +277,7 @@
                 E = g.default.create((e) => ({ selectorsContainer: { flexDirection: "row", marginVertical: e.spaces.space16 }, monthSelector: { flexGrow: 2, marginEnd: e.spaces.space12 }, daySelector: { flexGrow: 1, marginEnd: e.spaces.space12 }, yearSelector: { flexGrow: 1 }, dateInputRoot: { paddingHorizontal: 0 }, nativeDateInput: { ...g.default.absoluteFillObject, cursor: "inherit", height: "1px", margin: 0, opacity: 0, padding: 0, width: "1px" }, calendarLabel: { justifyContent: "center", marginStart: e.spaces.space12 } }));
         },
         586855: (e, t, r) => {
-            r.d(t, { DD: () => I, ZP: () => S, Zj: () => w, dX: () => x, ww: () => T });
+            r.d(t, { DD: () => I, ZP: () => T, Zj: () => x, dX: () => w, ww: () => S });
             var a = r(674132),
                 n = r.n(a),
                 o = r(822240);
@@ -299,8 +299,8 @@
                 _ = (0, o.Z)(1, 30).map(v),
                 E = (0, o.Z)(1, 31).map(v),
                 D = (0, o.Z)(1, 32).map(v),
-                x = () => Object.keys(f).map((e) => ({ label: f[e].label, value: e })),
-                w = (e = 1, t, r, a) => {
+                w = () => Object.keys(f).map((e) => ({ label: f[e].label, value: e })),
+                x = (e = 1, t, r, a) => {
                     const n = t || new Date(Date.now()).getFullYear();
                     return (0, o.Z)(e, n + 1)
                         .reverse()
@@ -321,14 +321,14 @@
                             return D;
                     }
                 },
-                T = (e, t, r) => {
+                S = (e, t, r) => {
                     if ("number" == typeof e && "number" == typeof t && "number" == typeof r) {
                         return `${r}-${t < 10 ? `0${t}` : `${t}`}-${e < 10 ? `0${e}` : `${e}`}`;
                     }
                     return "";
                 };
-            const S = {
-                getFormattedDateValue: T,
+            const T = {
+                getFormattedDateValue: S,
                 getDayMonthYear: function (e) {
                     if (null == e) return { year: void 0, month: void 0, day: void 0 };
                     const t = e.split("-").map((e) => {
@@ -416,9 +416,9 @@
                         { isFocused: _ } = this.state,
                         E = i.ZP.getLanguage(),
                         D = void 0 === c ? !!r : c,
-                        x = new Set();
-                    r && x.add(this._errorID), e && x.add(e), m && x.add(this._helperID);
-                    const w = x.size ? [...x].join(" ") : void 0;
+                        w = new Set();
+                    r && w.add(this._errorID), e && w.add(e), m && w.add(this._helperID);
+                    const x = w.size ? [...w].join(" ") : void 0;
                     return a.createElement(
                         a.Fragment,
                         null,
@@ -430,7 +430,7 @@
                                 this._renderLabel(),
                                 a.createElement(
                                     h,
-                                    { "aria-describedby": w, "aria-invalid": D, "aria-labelledby": this._labelID, disabled: t, id: this._id, onBlur: this._handleBlur, onChange: this._handleChange, onFocus: this._handleFocus, ref: this._selectRef, style: [b.select, { fontFamily: i }, t && s.Z.disabled], testID: f || "", value: v },
+                                    { "aria-describedby": x, "aria-invalid": D, "aria-labelledby": this._labelID, disabled: t, id: this._id, onBlur: this._handleBlur, onChange: this._handleChange, onFocus: this._handleFocus, ref: this._selectRef, style: [b.select, { fontFamily: i }, t && s.Z.disabled], testID: f || "", value: v },
                                     C ? a.createElement(p, { disabled: !0, style: b.option, value: "" }) : null,
                                     g.map((e) => {
                                         const { disabled: t, label: r, value: n } = e;
@@ -620,7 +620,7 @@
             r.d(t, { Z: () => a });
             const a = r(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
         },
-        487552: (e, t, r) => {
+        988227: (e, t, r) => {
             r.r(t), r.d(t, { default: () => i });
             var a = r(202784),
                 n = r(890601),
@@ -628,7 +628,20 @@
                 l = r(347101);
             const s = (e = {}) => {
                 const { direction: t } = (0, o.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M3.543 8.96l1.414-1.42L12 14.59l7.043-7.05 1.414 1.42L12 17.41 3.543 8.96z" })) }, { writingDirection: t });
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M12 21c-7.605 0-10.804-8.296-10.937-8.648L.932 12l.131-.352C1.196 11.295 4.394 3 12 3s10.804 8.296 10.937 8.648l.131.352-.131.352C22.804 12.705 19.606 21 12 21zm-8.915-9c.658 1.467 3.5 7 8.915 7s8.257-5.533 8.915-7c-.658-1.467-3.5-7-8.915-7s-8.257 5.533-8.915 7zM12 16c-2.206 0-4-1.794-4-4s1.794-4 4-4 4 1.794 4 4-1.794 4-4 4zm0-6c-1.103 0-2 .897-2 2s.897 2 2 2 2-.897 2-2-.897-2-2-2z" })) }, { writingDirection: t });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const i = s;
+        },
+        711223: (e, t, r) => {
+            r.r(t), r.d(t, { default: () => i });
+            var a = r(202784),
+                n = r(890601),
+                o = r(783427),
+                l = r(347101);
+            const s = (e = {}) => {
+                const { direction: t } = (0, o.Z)();
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M13.5 8.5c0 .83-.67 1.5-1.5 1.5s-1.5-.67-1.5-1.5S11.17 7 12 7s1.5.67 1.5 1.5zM13 17v-5h-2v5h2zm-1 5.25c5.66 0 10.25-4.59 10.25-10.25S17.66 1.75 12 1.75 1.75 6.34 1.75 12 6.34 22.25 12 22.25zM20.25 12c0 4.56-3.69 8.25-8.25 8.25S3.75 16.56 3.75 12 7.44 3.75 12 3.75s8.25 3.69 8.25 8.25z" })) }, { writingDirection: t });
             };
             s.metadata = { width: 24, height: 24 };
             const i = s;
@@ -659,4 +672,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AudioSpaceStart.9744865a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AudioSpaceStart.8a811a4a.js.map
