@@ -352,21 +352,29 @@
             }
         },
         306823: (e, t, a) => {
-            a.d(t, { C: () => v });
+            a.d(t, { C: () => k, t: () => w });
             var s = a(552322),
                 l = a(643715),
                 r = a(829233),
                 i = a(701883),
                 n = a(941204),
                 o = a(702024),
-                c = a(202784),
-                d = a(407250),
-                m = a(816778),
-                x = a(430962);
-            const { Bar: u, BarChart: h, CartesianGrid: p, XAxis: f, YAxis: b } = l;
-            function g({ data: e, timeScale: t, maxBarSize: a, intervalTicks: l, color: n, metricLabel: o }) {
-                const c = { value: { color: n, label: o } },
-                    d = (0, s.jsx)(r.dg, {
+                c = a(407250),
+                d = a(816778),
+                m = a(969088),
+                x = a(430962),
+                u = a(840489),
+                h = a(991732),
+                p = a(598705);
+            const { Bar: f, BarChart: b, CartesianGrid: g, XAxis: v, YAxis: j } = l,
+                y = (e) => {
+                    const { x: t, y: a, width: l, height: r, index: i, dataLength: n } = e,
+                        o = n - i <= 3 ? "animate-[pulse_1.5s_ease-in-out_infinite]" : "";
+                    return (0, s.jsx)("rect", { x: t, y: a, width: l, height: r, fill: e.fill, rx: 4, ry: 4, className: o });
+                };
+            function N({ data: e, maxBarSize: t, intervalTicks: a, color: l, metricLabel: n }) {
+                const o = { value: { color: l, label: n } },
+                    c = (0, s.jsx)(r.dg, {
                         hideForKeys: ["incomplete"],
                         className: "text-subtext2",
                         labelClassName: "font-normal text-text",
@@ -376,47 +384,26 @@
                         },
                         valueFormatter: (e) => Intl.NumberFormat("en-US").format(e),
                     });
-                return (0, s.jsx)(r.BO, {
-                    config: c,
-                    className: "h-full w-full pl-0",
-                    children: (0, s.jsxs)(h, {
-                        data: e,
-                        margin: { top: 5, right: 10, left: -5, bottom: 15 },
-                        height: 180,
-                        children: [
-                            (0, s.jsx)(p, { vertical: !1, strokeOpacity: 1, stroke: "hsl(var(--colors-gray-100))" }),
-                            (0, s.jsx)(f, {
-                                dataKey: "timestamp",
-                                tickLine: !1,
-                                axisLine: !1,
-                                tickMargin: 6,
-                                height: 30,
-                                interval: l,
-                                minTickGap: 20,
-                                tickFormatter: (e) => {
-                                    const a = Date.now(),
-                                        s = Math.floor((a - e) / 1e3),
-                                        l = Math.floor(s / 60),
-                                        r = Math.floor(l / 60);
-                                    return "minutely" === t || r < 1 ? (l < 1 ? "now" : `${l}m`) : `${r}h`;
-                                },
-                                angle: 0,
-                                textAnchor: "middle",
-                                tick: { fill: "hsl(var(--colors-gray-500))", fontSize: 11 },
-                            }),
-                            (0, s.jsx)(b, { allowDecimals: !1, tickLine: !1, axisLine: !1, tickMargin: 2, width: 40, tick: { fill: "hsl(var(--colors-gray-600))", fontSize: 10 } }),
-                            (0, s.jsx)(r.h7, { content: d, cursor: (0, s.jsx)(i.d, {}) }),
-                            (0, s.jsx)(u, { dataKey: "value", fill: n, radius: [4, 4, 0, 0], maxBarSize: a }),
-                        ],
-                    }),
-                });
+                return (0, s.jsx)(r.BO, { config: o, className: "h-full w-full pl-0", children: (0, s.jsxs)(b, { data: e, margin: { top: 5, right: 10, left: -5, bottom: 15 }, height: 180, children: [(0, s.jsx)(g, { vertical: !1, strokeOpacity: 1, stroke: "hsl(var(--colors-gray-100))" }), (0, s.jsx)(v, { dataKey: "time", tickLine: !1, axisLine: !1, tickMargin: 6, height: 30, interval: a, minTickGap: 20, angle: 0, textAnchor: "middle", tick: { fill: "hsl(var(--colors-gray-500))", fontSize: 11 } }), (0, s.jsx)(j, { allowDecimals: !1, tickLine: !1, axisLine: !1, tickMargin: 2, width: 40, tickFormatter: (e) => (0, p.uf)(e), tick: { fill: "hsl(var(--colors-gray-600))", fontSize: 10 } }), (0, s.jsx)(r.h7, { content: c, cursor: (0, s.jsx)(i.d, {}) }), (0, s.jsx)(f, { dataKey: "value", fill: l, radius: [4, 4, 0, 0], maxBarSize: t, shape: (t) => (0, s.jsx)(y, { ...t, dataLength: e.length }) })] }) });
             }
-            function v({ className: e, hourlyData: t, minutelyData: a, isLoading: l, metricLabel: r }) {
-                const [i, u] = (0, c.useState)("hourly"),
-                    { analytics: h } = (0, x.M1)(),
-                    p = "hourly" === i ? t : a,
-                    f = !p || 0 === p.length;
-                return (0, s.jsxs)(d.Zb, { className: `w-full ${e || ""}`, children: [(0, s.jsx)(d.Ol, { className: "pb-2 min-[987px]:pt-3 pt-2 h-[56px] min-[987px]:min-h-[56px] min-h-[66px]", children: (0, s.jsxs)("div", { className: "flex items-center justify-between align-top h-full", children: [(0, s.jsxs)("div", { className: "flex items-center gap-2 -mt-1", children: [(0, s.jsx)(n.x, { size: "headline2", className: "font-medium", children: h.realtimeTitle }), (0, s.jsx)("div", { className: "relative mr-1", title: h.liveDataTitle, children: (0, s.jsx)("div", { className: "h-3 w-3 rounded-full bg-red-600 animate-pulse" }) })] }), (0, s.jsx)(m.mQ, { defaultValue: "hourly", className: "w-auto", onValueChange: (e) => u(e), children: (0, s.jsxs)(m.dr, { className: "border-0 bg-transparent p-0 min-[987px]:space-x-3 space-x-2", children: [(0, s.jsx)(m.SP, { value: "hourly", className: "px-2 py-1 data-[state=active]:bg-transparent data-[state=active]:shadow-none data-[state=active]:border-b-2 data-[state=active]:border-blue-500 data-[state=active]:rounded-none rounded-none", children: h.last48Hours }), (0, s.jsx)(m.SP, { value: "minutely", className: "px-2 py-1 data-[state=active]:bg-transparent data-[state=active]:shadow-none data-[state=active]:border-b-2 data-[state=active]:border-blue-500 data-[state=active]:rounded-none rounded-none", children: h.lastHour })] }) })] }) }), (0, s.jsx)(d.aY, { className: "pt-2 pb-2 pl-2 pr-2", children: (0, s.jsx)("div", { className: "w-full h-[180px]", children: l ? (0, s.jsx)("div", { className: "flex items-center justify-center h-full", children: (0, s.jsx)(o.P, {}) }) : f ? (0, s.jsx)("div", { className: "flex items-start justify-start h-full", children: (0, s.jsx)(n.x, { className: "pl-4 text-gray-500 text-center", children: h.noDataAvailable }) }) : (0, s.jsx)(g, { data: p, timeScale: i, maxBarSize: "minutely" === i ? 8 : 12, intervalTicks: "minutely" === i ? 10 : 8, color: "#1DA1F2", metricLabel: r }) }) })] });
+            function w({ className: e, cardTitle: t, liveIndicatorTooltip: a, dataType: l }) {
+                const { overviewSelectedMetric: r } = (0, m.dQ)(),
+                    { realtimeHourlyData: i, realtimeMinutelyData: d, isRealtimeLoading: x } = (0, m.Q9)(),
+                    p = (0, h.T)(),
+                    f = "hourly" === l ? i : d,
+                    b = x,
+                    g = p[r]?.label || r,
+                    v = l;
+                return (0, s.jsxs)(c.Zb, { className: `w-full ${e || ""}`, children: [(0, s.jsx)(c.Ol, { className: "pb-2 min-[987px]:pt-3 pt-2 h-[56px] min-[987px]:min-h-[56px] min-h-[66px]", children: (0, s.jsx)("div", { className: "flex items-center justify-start align-top h-full", children: (0, s.jsxs)("div", { className: "flex items-center gap-2 -mt-1", children: [(0, s.jsx)(n.x, { size: "headline2", className: "font-medium", children: t }), (0, s.jsx)("div", { className: "relative mr-1", title: a, children: (0, s.jsx)("div", { className: "h-3 w-3 rounded-full bg-red-600 animate-pulse" }) })] }) }) }), (0, s.jsx)(c.aY, { className: "pt-2 pb-2 pl-2 pr-2", children: (0, s.jsxs)("div", { className: "w-full h-[180px] relative", children: [f && (0, s.jsx)(N, { data: f, maxBarSize: "minutely" === v ? 8 : 12, intervalTicks: "minutely" === v ? 10 : 8, color: "#1DA1F2", metricLabel: g }), b && (0, s.jsx)("div", { className: (0, u.Z)("absolute inset-0 flex items-center justify-center bg-gray-0/50 pointer-events-none z-10 transition-opacity delay-100 duration-200", { "opacity-0": !b, "opacity-100": b }), children: (0, s.jsx)(o.P, {}) })] }) })] });
+            }
+            function k({ className: e }) {
+                const { overviewSelectedMetric: t } = (0, m.dQ)(),
+                    { realtimeHourlyData: a, realtimeMinutelyData: l, isRealtimeLoading: r, realtimeActiveTab: i, setRealtimeActiveTab: p } = (0, m.Q9)(),
+                    { analytics: f } = (0, x.M1)(),
+                    b = (0, h.T)(),
+                    g = "hourly" === i ? a : l,
+                    v = b[t]?.label || t;
+                return (0, s.jsxs)(c.Zb, { className: `w-full ${e || ""}`, children: [(0, s.jsx)(c.Ol, { className: "pb-2 min-[987px]:pt-3 pt-2 h-[56px] min-[987px]:min-h-[56px] min-h-[66px]", children: (0, s.jsxs)("div", { className: "flex items-center justify-between align-top h-full", children: [(0, s.jsxs)("div", { className: "flex items-center gap-2 -mt-1", children: [(0, s.jsx)(n.x, { size: "headline2", className: "font-medium", children: f.realtimeTitle }), (0, s.jsx)("div", { className: "relative mr-1", title: f.liveDataTitle, children: (0, s.jsx)("div", { className: "h-3 w-3 rounded-full bg-red-600 animate-pulse" }) })] }), (0, s.jsx)(d.mQ, { value: i, className: "w-auto", onValueChange: (e) => p(e), children: (0, s.jsxs)(d.dr, { className: "border-0 bg-transparent p-0 min-[987px]:space-x-3 space-x-2", children: [(0, s.jsx)(d.SP, { value: "hourly", className: "px-2 py-1 data-[state=active]:bg-transparent data-[state=active]:shadow-none data-[state=active]:border-b-2 data-[state=active]:border-blue-500 data-[state=active]:rounded-none rounded-none", children: f.last48Hours }), (0, s.jsx)(d.SP, { value: "minutely", className: "px-2 py-1 data-[state=active]:bg-transparent data-[state=active]:shadow-none data-[state=active]:border-b-2 data-[state=active]:border-blue-500 data-[state=active]:rounded-none rounded-none", children: f.lastHour })] }) })] }) }), (0, s.jsx)(c.aY, { className: "pt-2 pb-2 pl-2 pr-2", children: (0, s.jsxs)("div", { className: "w-full h-[180px] relative", children: [g && (0, s.jsx)(N, { data: g, maxBarSize: "minutely" === i ? 8 : 12, intervalTicks: "minutely" === i ? 10 : 8, color: "#1DA1F2", metricLabel: v }), r && (0, s.jsx)("div", { className: (0, u.Z)("absolute inset-0 flex items-center justify-center bg-gray-0/50 pointer-events-none z-10 transition-opacity delay-100 duration-200 pb-10", { "opacity-0": !r, "opacity-100": r }), children: (0, s.jsx)(o.P, {}) })] }) })] });
             }
         },
         777301: (e, t, a) => {
@@ -462,46 +449,46 @@
                         S = (0, p.useMemo)(() => ((0, f.pw)(k) ? -1 : (0, h.w)(k.to, k.from) + 1), [k]),
                         M = (0, p.useMemo)(() => a.find((e) => e.days === S), [S, a]),
                         [, O] = (0, p.useTransition)(),
-                        [$, I] = (0, p.useState)(!1),
+                        [I, $] = (0, p.useState)(!1),
                         A = (0, c.a)("(max-width: 768px)"),
-                        L = (0, r.$8)();
+                        T = (0, r.$8)();
                     (0, p.useEffect)(() => {
                         if (t) {
                             const e = (0, f.pw)(t) ? -1 : (0, h.w)(t.to, t.from) + 1,
                                 s = !a.some((t) => t.days === e);
-                            I(s), C(t);
+                            $(s), C(t);
                         }
                     }, [t, a]);
-                    const T = (t, a) => {
+                    const L = (t, a) => {
                         let s = t;
                         0 === (0, h.w)(s.from, s.to) && (s = { from: (0, x.b)(s.from), to: (0, m.i)(s.to) }),
                             C(s),
-                            I(a),
+                            $(a),
                             O(() => {
                                 e?.(s, a);
                             });
                     };
-                    function P(e) {
+                    function z(e) {
                         return { from: new Date(e.from.getTime() + 60 * new Date().getTimezoneOffset() * 1e3), to: new Date(e.to.getTime() + 60 * new Date().getTimezoneOffset() * 1e3) };
                     }
-                    const U = (e = "") =>
+                    const P = (e = "") =>
                             (0, s.jsx)(i.f, {
                                 mode: "range",
-                                selected: P(k),
+                                selected: z(k),
                                 onSelect: (e) => {
                                     if (!e?.from) return;
                                     const t = { from: e.from ? new l.eJ(e.from.getFullYear(), e.from.getMonth(), e.from.getDate(), e.from.getHours(), e.from.getMinutes(), e.from.getSeconds()) : k.from, to: e.to ? (0, m.i)(new l.eJ(e.to.getFullYear(), e.to.getMonth(), e.to.getDate(), e.to.getHours(), e.to.getMinutes(), e.to.getSeconds())) : k.to };
-                                    L.scribe({ action: "click", component: "TimeRangeSelector", element: "Calendar", page: "account_analytics", section: "overview" }), T(t, !0);
+                                    T.scribe({ action: "click", component: "TimeRangeSelector", element: "Calendar", page: "account_analytics", section: "overview" }), L(t, !0);
                                 },
                                 className: e,
                                 numberOfMonths: N || A ? 1 : 2,
                                 toDate: v,
                                 fromDate: j,
                             }),
-                        V = (e) => {
-                            L.scribe({ action: "click", component: "TimeRangeSelector", element: e.label, page: "account_analytics", section: "overview" }), T(g(e.days), !1), N && F(!1);
+                        U = (e) => {
+                            T.scribe({ action: "click", component: "TimeRangeSelector", element: e.label, page: "account_analytics", section: "overview" }), L(g(e.days), !1), N && F(!1);
                         };
-                    return N ? (0, s.jsx)("div", { className: "flex items-center", children: (0, s.jsx)(n.J, { alignOffset: 20, align: "end", open: D, onOpenChange: F, trigger: (0, s.jsxs)("div", { onClick: () => F((e) => !e), className: "flex items-center justify-center cursor-pointer rounded-full p-1 h-8 border border-gray-200 " + (M || $ ? "px-2" : "w-8"), children: [(0, s.jsx)(d.Z, { className: "size-5" }), (M || $) && (0, s.jsx)("div", { className: "text-subtext1 flex items-center gap-1 whitespace-nowrap font-bold ml-1", children: $ ? y(k) : M?.label })] }), children: (0, s.jsxs)("div", { className: "flex flex-col border border-gray-200 rounded-lg overflow-hidden", children: [(0, s.jsx)("div", { className: "p-2 flex items-center justify-between bg-background border-b border-gray-200", children: a.map((e) => (0, s.jsx)("div", { onClick: () => !e.disabled && V(e), className: `flex-1 mx-1 h-6 flex items-center justify-center cursor-pointer rounded-full text-sm font-bold ${e !== M || $ ? "border border-nested-border text-text" : "bg-text text-background"} ${e.disabled ? "opacity-50 cursor-not-allowed" : ""}`, children: e.label }, e.label)) }), U("rounded-none")] }) }) }) : (0, s.jsxs)("div", { className: "flex items-center justify-start gap-2", children: [u && (0, s.jsx)(n.J, { alignOffset: 20, align: "start", trigger: (0, s.jsxs)(o.z, { variant: $ ? "primaryFilled" : "primaryOutlined", size: "xSmallCompact", className: "h-8 shrink-0 px-1", children: [(0, s.jsx)(d.Z, { className: "mx-px size-5" }), $ && (0, s.jsx)("div", { className: "text-subtext1 flex items-center gap-1 whitespace-nowrap font-bold", children: y(k) })] }), children: U("rounded-lg border") }), a.map((e) => (0, s.jsx)(w, { option: e, selected: e === M && !$, onClick: () => V(e) }, e.label))] });
+                    return N ? (0, s.jsx)("div", { className: "flex items-center", children: (0, s.jsx)(n.J, { alignOffset: 20, align: "end", open: D, onOpenChange: F, trigger: (0, s.jsxs)("div", { onClick: () => F((e) => !e), className: "flex items-center justify-center cursor-pointer rounded-full p-1 h-8 border border-gray-200 " + (M || I ? "px-2" : "w-8"), children: [(0, s.jsx)(d.Z, { className: "size-5" }), (M || I) && (0, s.jsx)("div", { className: "text-subtext1 flex items-center gap-1 whitespace-nowrap font-bold ml-1", children: I ? y(k) : M?.label })] }), children: (0, s.jsxs)("div", { className: "flex flex-col border border-gray-200 rounded-lg overflow-hidden", children: [(0, s.jsx)("div", { className: "p-2 flex items-center justify-between bg-background border-b border-gray-200", children: a.map((e) => (0, s.jsx)("div", { onClick: () => !e.disabled && U(e), className: `flex-1 mx-1 h-6 flex items-center justify-center cursor-pointer rounded-full text-sm font-bold ${e !== M || I ? "border border-nested-border text-text" : "bg-text text-background"} ${e.disabled ? "opacity-50 cursor-not-allowed" : ""}`, children: e.label }, e.label)) }), P("rounded-none")] }) }) }) : (0, s.jsxs)("div", { className: "flex items-center justify-start gap-2", children: [u && (0, s.jsx)(n.J, { alignOffset: 20, align: "start", trigger: (0, s.jsxs)(o.z, { variant: I ? "primaryFilled" : "primaryOutlined", size: "xSmallCompact", className: "h-8 shrink-0 px-1", children: [(0, s.jsx)(d.Z, { className: "mx-px size-5" }), I && (0, s.jsx)("div", { className: "text-subtext1 flex items-center gap-1 whitespace-nowrap font-bold", children: y(k) })] }), children: P("rounded-lg border") }), a.map((e) => (0, s.jsx)(w, { option: e, selected: e === M && !I, onClick: () => U(e) }, e.label))] });
                 },
                 w = ({ onClick: e, option: t, selected: a }) => (0, s.jsx)(o.z, { variant: a ? "primaryFilled" : "primaryOutlined", size: "small", onClick: e, className: "shrink-0", disabled: t.disabled, children: t.label });
         },
@@ -633,4 +620,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-04134b17.fac8fb7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-04134b17.9808c18a.js.map

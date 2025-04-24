@@ -129,14 +129,6 @@
             var x = h,
                 y = g;
         },
-        890022: (e, t, n) => {
-            n.d(t, { D: () => o });
-            var r = n(202784);
-            function o(e) {
-                const t = r.useRef({ value: e, previous: e });
-                return r.useMemo(() => (t.current.value !== e && ((t.current.previous = t.current.value), (t.current.value = e)), t.current.previous), [e]);
-            }
-        },
         390478: (e, t, n) => {
             n.d(t, { MT: () => d, cW: () => N });
             var r = n(728514),
@@ -627,4 +619,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-d96105ec.f69d37aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-d96105ec.60a0dcfa.js.map

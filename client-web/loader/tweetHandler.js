@@ -536,24 +536,24 @@
                 T = ({ applyFeedbackAction: e, applyReactionInstructions: t, bookmarkFolderId: n, createAdditionalProps: i = (0, o.Z)({}), dismissable: l = !1, displayBlocked: d, entry: b, feedbackItems: C, hideConversationControlsEducationText: I = !1, hideExclusivityInfoEducationTextInReplies: E = !1, hideHighlightedUserLabel: x = !1, hideReplyContextMode: _, hideTrustedFriendsEducationTextInReplies: k = !1, isCompact: Z = !1, isReaderMode: T = !1, isUnread: P, pinnedReplyState: M, saveAsRecentSearch: R, shouldSelfThreadIncludeAvatar: D = !1, shouldStoreTypeaheadItem: F, showWithheldBannerOnMyTweets: H = !1, topic: O, tweetTextSize: A, withActionsDisabled: N = !1, withMuteConversation: B = !1, withRemoveFromBookmarks: L = !1, withSelfThread: z = !1, withUserPresence: V = !1, withUnreadStyles: j = !1 }) => {
                     const Q = (0, f.z)(),
                         {
-                            content: { conversation_annotation: U, displayType: $, forwardPivot: W, hasModeratedReplies: q, highlights: K, id: Y, innerForwardPivot: G, innerNudges: X, innerTombstoneInfo: J, nudges: ee, promotedMetadata: te, replyBadge: ne, ruxContext: oe, socialContext: ie, topicFollowPrompt: re },
-                            conversationPosition: ae,
-                            conversationTreeMetadata: se,
-                            itemMetadata: ce,
-                            referringContext: { contextTweetId: le, contextualClientEventInfo: de, focalTweetId: ue, hideMedia: pe, socialContext: me, topicFollowPrompt: he } = {},
+                            content: { conversation_annotation: U, displayType: $, forwardPivot: W, hasModeratedReplies: q, highlights: K, id: Y, innerForwardPivot: G, innerNudges: X, innerTombstoneInfo: J, nudges: ee, promotedMetadata: te, replyBadge: ne, ruxContext: oe, socialContext: ie, topicFollowPrompt: re, tweetContext: ae },
+                            conversationPosition: se,
+                            conversationTreeMetadata: ce,
+                            itemMetadata: le,
+                            referringContext: { contextTweetId: de, contextualClientEventInfo: ue, focalTweetId: pe, hideMedia: me, socialContext: he, topicFollowPrompt: ve } = {},
                         } = b,
-                        ve = !!ae,
-                        fe = ae && ae.isStart && ae.isEnd,
-                        ge = ae && !ae.isStart;
-                    let we;
-                    T && (we = s.ZP.ReplyContextTypes.None), _ === w.j.CONVERSATION && ve && (we = s.ZP.ReplyContextTypes.None), _ === w.j.TIMELINE && ve && !fe && (we = s.ZP.ReplyContextTypes.None);
-                    const ye = a.useCallback(() => t({ entry: b, triggerName: v.K.ON_LIKE }), [t, b]),
-                        be = a.useMemo(() => (C && !T ? { markNotInterestedTopic: C.find((e) => e.feedbackKey === (0, m.aN)(b.entryId)) } : void 0), [C, b.entryId, T]),
-                        { onTweetDismiss: Ce } = (0, y.$)(Q, e, b, C, l),
-                        Ie = a.useMemo(() => (0, w.P3)(Q.contextualScribeNamespace, de, ae), [Q.contextualScribeNamespace, de, ae]),
-                        Ee = a.useMemo(() => (0, p.Du)({ socialContext: ie, topic: O }), [ie, O]),
-                        xe = a.useMemo(() => i(b, { applyFeedbackAction: e }), [e, b, i]);
-                    return a.createElement(u.nO, { namespace: Ie }, a.createElement(a.Fragment, null, $ === h.Z.EmphasizedPromotedTweet ? a.createElement(c.Z, { text: S }) : null, a.createElement(g.Z9, (0, r.Z)({ bookmarkFolderId: n, contextTweetId: le, contextualClientEventInfo: ce.clientEventInfo, conversationAnnotation: U, conversationPosition: ae, conversationTreeMetadata: se, displayBlocked: d, displayPromotedContent: !0, feedbackItems: C, focalTweetId: ue, forwardPivotInfo: W, hasModeratedReplies: q, hideConversationControlsEducationText: I || ge, hideExclusivityInfoEducationTextInReplies: E, hideHighlightedUserLabel: x, hideTrustedFriendsEducationTextInReplies: k, hitHighlights: K?.textHighlights, injectedFeedbackItem: be, innerForwardPivotInfo: G, innerNudges: X, isCompact: Z, isReaderMode: T, isUnread: j ? P : void 0, nudges: ee, onLike: ye, onTweetDismiss: Ce, pinnedReplyState: M, quotedTweetTombstoneInfo: J, replyBadge: ne, replyContext: we, ruxContext: oe, saveAsRecentSearch: R, shouldSelfThreadIncludeAvatar: D, shouldStoreTypeaheadItem: F, showWithheldBannerOnMyTweets: H, socialContext: Ee || me, topicFollowPrompt: re || he, tweetId: Y, tweetTextSize: A, urtPromotedContent: te, withActions: !0, withActionsDisabled: N, withInlineMedia: !pe || T, withMuteConversation: B, withRemoveFromBookmarks: L, withSelfThread: z, withSocialContext: !0, withUserPresence: V }, xe))));
+                        fe = !!se,
+                        ge = se && se.isStart && se.isEnd,
+                        we = se && !se.isStart;
+                    let ye;
+                    T && (ye = s.ZP.ReplyContextTypes.None), _ === w.j.CONVERSATION && fe && (ye = s.ZP.ReplyContextTypes.None), _ === w.j.TIMELINE && fe && !ge && (ye = s.ZP.ReplyContextTypes.None);
+                    const be = a.useCallback(() => t({ entry: b, triggerName: v.K.ON_LIKE }), [t, b]),
+                        Ce = a.useMemo(() => (C && !T ? { markNotInterestedTopic: C.find((e) => e.feedbackKey === (0, m.aN)(b.entryId)) } : void 0), [C, b.entryId, T]),
+                        { onTweetDismiss: Ie } = (0, y.$)(Q, e, b, C, l),
+                        Ee = a.useMemo(() => (0, w.P3)(Q.contextualScribeNamespace, ue, se), [Q.contextualScribeNamespace, ue, se]),
+                        xe = a.useMemo(() => (0, p.Du)({ socialContext: ie, topic: O }), [ie, O]),
+                        _e = a.useMemo(() => i(b, { applyFeedbackAction: e }), [e, b, i]);
+                    return a.createElement(u.nO, { namespace: Ee }, a.createElement(a.Fragment, null, $ === h.Z.EmphasizedPromotedTweet ? a.createElement(c.Z, { text: S }) : null, a.createElement(g.Z9, (0, r.Z)({ bookmarkFolderId: n, contextTweetId: de, contextualClientEventInfo: le.clientEventInfo, conversationAnnotation: U, conversationPosition: se, conversationTreeMetadata: ce, displayBlocked: d, displayPromotedContent: !0, feedbackItems: C, focalTweetId: pe, forwardPivotInfo: W, hasModeratedReplies: q, hideConversationControlsEducationText: I || we, hideExclusivityInfoEducationTextInReplies: E, hideHighlightedUserLabel: x, hideTrustedFriendsEducationTextInReplies: k, hitHighlights: K?.textHighlights, injectedFeedbackItem: Ce, innerForwardPivotInfo: G, innerNudges: X, isCompact: Z, isReaderMode: T, isUnread: j ? P : void 0, nudges: ee, onLike: be, onTweetDismiss: Ie, pinnedReplyState: M, quotedTweetTombstoneInfo: J, replyBadge: ne, replyContext: ye, ruxContext: oe, saveAsRecentSearch: R, shouldSelfThreadIncludeAvatar: D, shouldStoreTypeaheadItem: F, showWithheldBannerOnMyTweets: H, socialContext: xe || he, topicFollowPrompt: re || ve, tweetContext: ae, tweetId: Y, tweetTextSize: A, urtPromotedContent: te, withActions: !0, withActionsDisabled: N, withInlineMedia: !me || T, withMuteConversation: B, withRemoveFromBookmarks: L, withSelfThread: z, withSocialContext: !0, withUserPresence: V }, _e))));
                 },
                 P = Z(a.memo(T)),
                 M = (e) => i.iH({ component: P, divider: e.divider || {}, defaultScribeNamespace: e.isReaderMode ? w.FE : w.Oj, getScribeDataItem: w.Hx, isFocusable: (0, o.Z)(!0), shouldDisplayBorder: (0, w.QO)(e.isReaderMode) }).getHandler(() => ({ ...e }));
@@ -687,4 +687,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.tweetHandler.4d93eb3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.tweetHandler.e7bfd4ca.js.map

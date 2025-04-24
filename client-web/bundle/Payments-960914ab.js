@@ -533,7 +533,7 @@
         },
         671830: (e, a, n) => {
             n.d(a, { W: () => l });
-            const l = Object.freeze({ CreditCardBack: "CreditCardBack", FollowArrows: "FollowArrows", PeopleStroke: "PeopleStroke" });
+            const l = Object.freeze({ Clock: "Clock", CreditCardBack: "CreditCardBack", FollowArrows: "FollowArrows", PeopleStroke: "PeopleStroke" });
         },
         413722: (e, a, n) => {
             n.d(a, { O: () => l });
@@ -901,4 +901,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-960914ab.f29f431a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-960914ab.606ac4aa.js.map

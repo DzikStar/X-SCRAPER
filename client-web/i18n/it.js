@@ -6987,12 +6987,6 @@
                 o("ed672bfa", "Tutti gli upgdrade di Basic e Premium più:"),
                 o("db63fa1c", "Seleziona un piano premium"),
                 o("b128c6bc", "Ottieni il badge di verifica e tanti altri fantastici vantaggi e benefici"),
-                o("ef43d1f1", function (i) {
-                    return "1 anno di " + i.tierName + " scontato del " + i.percentage + "%";
-                }),
-                o("f87513e7", function (i) {
-                    return i.numberOfMonths + " mesi di " + i.tierName + " scontati del " + i.percentage + "%";
-                }),
                 o("acfaf7a0", "Confronta piani e funzioni"),
                 o("e1606e52", "Modifica l'abbonamento"),
                 o("d2f2b91a", "abbonati qui"),
@@ -7857,7 +7851,9 @@
                 }),
                 o("ec6e7d9a", "Finché il cambiamento in sospeso del piano non sarà completato, il tuo account resterà in sola lettura. Per garantire che il cambiamento del piano avvenga correttamente, controlla il pagamento su Stripe."),
                 o("b33d1518", "Sincronizza le offerte tramite un'integrazione supportata o un feed XML personalizzato"),
-                o("dd2db402", "Step 1: raccogli le informazioni necessarie");
+                o("dd2db402", "Step 1: raccogli le informazioni necessarie"),
+                o("edb098c2", "Step 2: contatta il team di assistenza"),
+                o("c4474460", "Step 2: invia un'email al nostro team di assistenza");
             function r(i, e) {
                 for (var a = 0; a < e.length; a++) {
                     var o = e[a];
@@ -7896,9 +7892,7 @@
                     c(i, e)
                 );
             }
-            o("edb098c2", "Step 2: contatta il team di assistenza"),
-                o("c4474460", "Step 2: invia un'email al nostro team di assistenza"),
-                o("a08da0fa", "E poi?"),
+            o("a08da0fa", "E poi?"),
                 o("c127374e", "Inviaci un messaggio"),
                 o("b2cb2a0c", "Il nome utente per l'account della tua organizzazione verificata"),
                 o("b8e64002", "Il nome del sistema di monitoraggio dei candidati che usi"),
@@ -8899,10 +8893,10 @@
                 }),
                 o("b1eb72fa", "Spiacenti, questo video non è disponibile in determinate zone. Attendi alcuni istanti mentre otteniamo la tua posizione. Assicurati che le impostazioni di localizzazione siano attive nel browser."),
                 o("c057680c", "Il video non può essere riprodotto su questo browser. Prova da un altro browser."),
-                o("i5dfae6e", "Questo video non è disponibile nella tua zona.");
-            o("c2388276", "Questo video è stato eliminato."),
-                o("d2c96140", "Indicatore per l'audio dell'ospite"),
-                o("f6dc9146", "REPLAY"),
+                o("i5dfae6e", "Questo video non è disponibile nella tua zona."),
+                o("c2388276", "Questo video è stato eliminato."),
+                o("d2c96140", "Indicatore per l'audio dell'ospite");
+            o("f6dc9146", "REPLAY"),
                 o("d30c74fe", "Volume"),
                 o("f2d4e6f2", "Guarda di nuovo"),
                 o("e9f1af3a", "Approfondisci"),
@@ -13247,4 +13241,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/it.2401ed3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/it.f6296b5a.js.map

@@ -6992,12 +6992,6 @@
                 i("ed672bfa", "Wszystkie funkcje wersji Basic i Premium oraz..."),
                 i("db63fa1c", "Wybierz plan Premium"),
                 i("b128c6bc", "Uzyskaj odznakę zweryfikowanego konta oraz wiele innych niesamowitych korzyści"),
-                i("ef43d1f1", function (e) {
-                    return e.percentage + "% zniżki za rok subskrypcji " + e.tierName;
-                }),
-                i("f87513e7", function (e) {
-                    return e.percentage + "% zniżki za " + e.numberOfMonths + " mies. subskrypcji " + e.tierName;
-                }),
                 i("acfaf7a0", "Porównaj poziomy i funkcje"),
                 i("e1606e52", "Zmień subskrypcję"),
                 i("d2f2b91a", "zarejestruj się tutaj"),
@@ -7862,7 +7856,9 @@
                 }),
                 i("ec6e7d9a", "Twoje konto będzie dostępne w trybie tylko do odczytu, dopóki nie zostanie wykonana oczekująca zmiana poziomu. Przejdź do usługi Stripe i sprawdź swoją płatność, aby upewnić się, że zmiana poziomu zostanie wykonana pomyślnie."),
                 i("b33d1518", "Synchronizuj oferty pracy z obsługiwanej integracji lub niestandardowego źródła danych XML"),
-                i("dd2db402", "Krok 1: Zbierz wymagane informacje");
+                i("dd2db402", "Krok 1: Zbierz wymagane informacje"),
+                i("edb098c2", "Krok 2: Skontaktuj się z naszym zespołem pomocy technicznej"),
+                i("c4474460", "Krok 2: Wyślij wiadomość e-mail do naszego zespołu pomocy technicznej");
             function t(e, a) {
                 for (var o = 0; o < a.length; o++) {
                     var i = a[o];
@@ -7901,9 +7897,7 @@
                     c(e, a)
                 );
             }
-            i("edb098c2", "Krok 2: Skontaktuj się z naszym zespołem pomocy technicznej"),
-                i("c4474460", "Krok 2: Wyślij wiadomość e-mail do naszego zespołu pomocy technicznej"),
-                i("a08da0fa", "Jakie są kolejne kroki?"),
+            i("a08da0fa", "Jakie są kolejne kroki?"),
                 i("c127374e", "Wyślij nam wiadomość"),
                 i("b2cb2a0c", "Nazwa użytkownika Twojego konta zweryfikowanej organizacji"),
                 i("b8e64002", "Nazwa Twojego systemu śledzenia osób aplikujących"),
@@ -8904,10 +8898,10 @@
                 }),
                 i("b1eb72fa", "Ten film jest zastrzeżony w niektórych regionach. Włącz usługi lokalizacji w Ustawieniach, aby dowiedzieć się, czy możesz go obejrzeć."),
                 i("c057680c", "Nie można wyświetlić filmu w tej przeglądarce. Użyj innej przeglądarki."),
-                i("i5dfae6e", "Ten film jest niedostępny w Twojej lokalizacji.");
-            i("c2388276", "Ten film został usunięty."),
-                i("d2c96140", "Powiadomienie głosowe o gościu dołączającym do transmisji"),
-                i("f6dc9146", "POWTÓRKA TRANSMISJI"),
+                i("i5dfae6e", "Ten film jest niedostępny w Twojej lokalizacji."),
+                i("c2388276", "Ten film został usunięty."),
+                i("d2c96140", "Powiadomienie głosowe o gościu dołączającym do transmisji");
+            i("f6dc9146", "POWTÓRKA TRANSMISJI"),
                 i("d30c74fe", "Głośność"),
                 i("f2d4e6f2", "Obejrzyj ponownie"),
                 i("e9f1af3a", "Dowiedz się więcej"),
@@ -13256,4 +13250,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.d2d1e24a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.e74243ba.js.map

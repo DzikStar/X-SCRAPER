@@ -2,7 +2,7 @@
     ["loader.ProfileClusterFollow"],
     {
         544118: (e) => {
-            e.exports = { queryId: "H3gL5OeBXlQ2AQSUJVaLAg", operationName: "SidebarUserRecommendations", operationType: "query", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "responsive_web_graphql_exclude_directive_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
+            e.exports = { queryId: "RSnevjRHTlp36Y-NIHWu-g", operationName: "SidebarUserRecommendations", operationType: "query", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
         },
         864479: (e, t, r) => {
             "use strict";
@@ -60,11 +60,11 @@
                     const r = L(0, t);
                     return S.UD(e, { displayLocation: T, similarToUserId: r });
                 },
-                Z = (0, x.Z)()
+                R = (0, x.Z)()
                     .propsFromState(() => ({ fetchStatus: P, recommendations: U }))
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, I.zr)("WHO_TO_FOLLOW_CONTAINER"), fetchRecommendationsIfNeeded: S.yY }))
                     .withAnalytics(),
-                R = { component: "suggest_profile_cluster_follow", element: "user", action: "results" },
+                Z = { component: "suggest_profile_cluster_follow", element: "user", action: "results" },
                 v = { component: "suggest_profile_cluster_follow", element: "close_button", action: "click" };
             class F extends o.PureComponent {
                 constructor(...e) {
@@ -72,7 +72,7 @@
                         (this._handleImpression = (e) => {
                             const { analytics: t } = this.props,
                                 r = e && e.slice(0, 3).map((e) => ({ ...C.Z.forUser(e.user_id), suggestion_details: { source_data: e.token } }));
-                            t.scribe({ ...R, data: { items: r } });
+                            t.scribe({ ...Z, data: { items: r } });
                         }),
                         (this._handleCloseButtonImpression = () => {
                             const { analytics: e, onRemoveClusterFollow: t } = this.props;
@@ -101,7 +101,7 @@
                     return e === g.ZP.LOADED && t.length > 0;
                 }
             }
-            const O = Z(F);
+            const O = R(F);
         },
         62857: (e, t, r) => {
             "use strict";
@@ -269,7 +269,7 @@
         },
         994305: (e, t, r) => {
             "use strict";
-            r.d(t, { yY: () => v, UD: () => R, Ic: () => Z });
+            r.d(t, { yY: () => v, UD: () => Z, Ic: () => R });
             var o = r(360917),
                 s = r.n(o),
                 n = r(506899),
@@ -339,19 +339,19 @@
             });
             const U = [],
                 P = [],
-                Z = (e, { displayLocation: t, similarToUserId: r }) => {
+                R = (e, { displayLocation: t, similarToUserId: r }) => {
                     const o = e[C][L({ displayLocation: t, similarToUserId: r })];
                     return o && o.recommendations ? o.recommendations : U;
                 },
-                R = (e, { displayLocation: t, similarToUserId: r }) => {
+                Z = (e, { displayLocation: t, similarToUserId: r }) => {
                     const o = e[C][L({ displayLocation: t, similarToUserId: r })];
                     return o ? o.fetchStatus : w.ZP.NONE;
                 },
                 v = (e) => (t, r, o) => {
                     const n = r(),
                         { displayLocation: a, similarToUserId: l } = e,
-                        i = Z(n, { displayLocation: a, similarToUserId: l }),
-                        c = R(n, { displayLocation: a, similarToUserId: l }) === w.ZP.LOADED;
+                        i = R(n, { displayLocation: a, similarToUserId: l }),
+                        c = Z(n, { displayLocation: a, similarToUserId: l }) === w.ZP.LOADED;
                     return i && c
                         ? Promise.resolve(s())
                         : t(
@@ -435,8 +435,8 @@
                 L = r(392237),
                 U = r(54606);
             const P = n().ae408b76,
-                Z = n().j355f008,
-                R = n().habf9678,
+                R = n().j355f008,
+                Z = n().habf9678,
                 v = n().db0798ed,
                 F = n().dc716ec9,
                 O = ({ text: e }) => {
@@ -454,13 +454,13 @@
                 D = L.default.create((e) => ({ circle: { color: e.colors.primary, width: "0.5em" }, colorDeepGray: { color: e.colors.gray700 }, colorBlue: { color: e.colors.blue500 }, colorGreen: { color: e.colors.green500 }, colorOrange: { color: e.colors.orange500 }, colorPrimary: { color: e.colors.primary }, colorRed: { color: e.colors.magenta500 }, grayscaleImage: { borderRadius: e.borderRadii.infinite, filter: "grayscale(100%)" }, brandColor: { color: e.colors.brandColor } })),
                 k = ({ contextType: e, iconColor: t, iconSize: r, link: s, retweetData: n, text: x, topicData: T, userAvatarUrls: P }) => {
                     const { isSelfRetweet: k, name: Q, screenName: B } = n || {},
-                        M = ((e, t, r, s = []) => {
+                        H = ((e, t, r, s = []) => {
                             const n = A[t],
                                 x = [r ? { color: L.default.theme.colors[r] } : D.colorDeepGray, n],
                                 T = o.createElement(a.default, { style: x }),
                                 P = o.createElement(l.default, { style: x }),
-                                Z = o.createElement(i.default, { style: x }),
-                                R = o.createElement(c.default, { style: x }),
+                                R = o.createElement(i.default, { style: x }),
+                                Z = o.createElement(c.default, { style: x }),
                                 v = o.createElement(d.default, { style: x }),
                                 F = o.createElement(u.default, { style: D.circle }),
                                 O = o.createElement(m.default, { style: x }),
@@ -468,13 +468,13 @@
                                 k = o.createElement(h.default, { style: x }),
                                 Q = o.createElement(f.default, { style: x }),
                                 B = o.createElement(y.default, { style: x }),
-                                M = o.createElement(_.default, { style: x }),
-                                H = o.createElement(E.default, { style: x }),
+                                H = o.createElement(_.default, { style: x }),
+                                M = o.createElement(E.default, { style: x }),
                                 G = o.createElement(w.default, { style: x }),
                                 z = o.createElement(b.default, { style: x }),
                                 W = o.createElement(C.default, { style: x }),
-                                $ = o.createElement(g.default, { style: x }),
-                                j = o.createElement(S.Z, { borderColor: "cellBackground", userAvatarSize: t, userAvatarUrls: s }),
+                                j = o.createElement(g.default, { style: x }),
+                                $ = o.createElement(S.Z, { borderColor: "cellBackground", userAvatarSize: t, userAvatarUrls: s }),
                                 q = o.createElement(I.default, { style: x });
                             switch (e) {
                                 case U.Q.Pin:
@@ -483,9 +483,9 @@
                                 case U.Q.Retweet:
                                     return P;
                                 case U.Q.Like:
-                                    return Z;
-                                case U.Q.Follow:
                                     return R;
+                                case U.Q.Follow:
+                                    return Z;
                                 case U.Q.Moment:
                                     return v;
                                 case U.Q.NewTweets:
@@ -502,20 +502,20 @@
                                 case U.Q.Location:
                                     return B;
                                 case U.Q.Community:
-                                    return M;
-                                case U.Q.Spaces:
                                     return H;
+                                case U.Q.Spaces:
+                                    return M;
                                 case U.Q.Sparkle:
                                     return G;
                                 case U.Q.SocialProof:
                                 case U.Q.FollowFollowed:
-                                    return $;
+                                    return j;
                                 case U.Q.FollowMutual:
                                     return W;
                                 case U.Q.FollowFollowing:
                                     return z;
                                 case U.Q.Facepile:
-                                    return j;
+                                    return $;
                                 case U.Q.Bird:
                                     return q;
                                 case U.Q.TextOnly:
@@ -525,15 +525,15 @@
                         })(e, r, t, P);
                     switch (e) {
                         case U.Q.Retweet:
-                            return { Icon: M, text: x || N(Q, k), link: B ? `https://twitter.com/${B}` : void 0 };
+                            return { Icon: H, text: x || N(Q, k), link: B ? `https://twitter.com/${B}` : void 0 };
                         case U.Q.Pin:
-                            return { Icon: M, text: x || Z };
+                            return { Icon: H, text: x || R };
                         case U.Q.ReplyPin:
-                            return { Icon: M, text: R };
+                            return { Icon: H, text: Z };
                         case U.Q.Topic:
-                            return { Icon: M, "aria-label": "Recommendation" === T?.functionalityType || "RecWithEducation" === T?.functionalityType ? F({ topicName: x }) : v({ topicName: x }), text: x ? o.createElement(O, { text: x }) : null, link: s };
+                            return { Icon: H, "aria-label": "Recommendation" === T?.functionalityType || "RecWithEducation" === T?.functionalityType ? F({ topicName: x }) : v({ topicName: x }), text: x ? o.createElement(O, { text: x }) : null, link: s };
                         default:
-                            return { Icon: M, text: x ? o.createElement(O, { text: x }) : null, link: s };
+                            return { Icon: H, text: x ? o.createElement(O, { text: x }) : null, link: s };
                     }
                 };
         },
@@ -585,4 +585,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.ProfileClusterFollow.d584105a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.ProfileClusterFollow.927a569a.js.map

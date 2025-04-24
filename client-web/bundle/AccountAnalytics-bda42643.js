@@ -3,7 +3,7 @@
     ["bundle.AccountAnalytics-bda42643"],
     {
         481899: (e, s, t) => {
-            t.d(s, { o: () => T });
+            t.d(s, { o: () => V });
             var a = t(552322),
                 r = t(163637),
                 n = t(26429),
@@ -114,11 +114,11 @@
                     t = s?.posts || [];
                 return (0, a.jsxs)("div", { className: "bg-gray-0 rounded-xl p-4 flex flex-col border border-gray-200", children: [(0, a.jsx)("div", { className: "flex items-center justify-between pb-2.5", children: (0, a.jsxs)("h2", { className: "font-medium text-gray-900 md:text-headline2 md:font-bold", children: [e.postsContentType, " ", (0, a.jsxs)("span", { className: "text-gray-500 text-[14px] font-normal", children: ["(", (0, u.uf)(t.length), ")"] })] }) }), (0, a.jsx)("div", { className: "relative max-md:max-h-[250px] md:h-[250px]", children: 0 === t.length ? (0, a.jsx)("p", { className: "text-gray-600 mt-2", children: e.pleaseCheckBackAgainLater }) : (0, a.jsx)("div", { className: "overflow-y-auto max-md:max-h-[250px] md:h-full space-y-4 relative [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]", children: t.map((e, s) => (0, a.jsx)(C, { post: e, isLast: s === t.length - 1 }, e.id)) }) })] });
             }
-            var M = t(812115),
-                R = t(840489);
+            var R = t(812115),
+                M = t(840489);
             function U({ speaker: e }) {
                 const s = `https://x.com/${e.screenName}`;
-                return (0, a.jsxs)(M.r, { href: s, target: "_blank", className: (0, R.Z)("flex items-center gap-3 p-3 md:rounded-xl md:border md:border-gray-50 cursor-pointer md:hover:bg-gray-50", "focus:outline-none focus-visible:outline-none active:outline-none", "[-webkit-tap-highlight-color:transparent] [tap-highlight-color:transparent]", "[touch-callout:none] [user-select:none]", "border-b border-gray-100 max-md:last:border-b-0"), children: [(0, a.jsx)(n.q, { screenName: e.screenName, size: "xLarge", url: e.profileImageUrl, withLink: "external" }), (0, a.jsxs)("div", { className: "flex flex-col gap-1", children: [(0, a.jsx)(l.R, { badges: e.badges, name: e.name, size: "subtext1", withLink: "external" }), (0, a.jsxs)("div", { className: "text-subtext2 text-gray-700", children: ["@", e.screenName] })] })] });
+                return (0, a.jsxs)(R.r, { href: s, target: "_blank", className: (0, M.Z)("flex items-center gap-3 p-3 md:rounded-xl md:border md:border-gray-50 cursor-pointer md:hover:bg-gray-50", "focus:outline-none focus-visible:outline-none active:outline-none", "[-webkit-tap-highlight-color:transparent] [tap-highlight-color:transparent]", "[touch-callout:none] [user-select:none]", "border-b border-gray-100 max-md:last:border-b-0"), children: [(0, a.jsx)(n.q, { screenName: e.screenName, size: "xLarge", url: e.profileImageUrl, withLink: "external" }), (0, a.jsxs)("div", { className: "flex flex-col gap-1", children: [(0, a.jsx)(l.R, { badges: e.badges, name: e.name, size: "subtext1", withLink: "external" }), (0, a.jsxs)("div", { className: "text-subtext2 text-gray-700", children: ["@", e.screenName] })] })] });
             }
             function z() {
                 const { analytics: e } = (0, o.M1)(),
@@ -129,13 +129,10 @@
             var F = t(436059),
                 O = t(941204),
                 D = t(582440),
-                Z = t(968025),
-                E = t(768246);
-            function V({ spacesOverviewUrl: e = "/analytics/spaces", referrerUrl: s }) {
+                Z = t(968025);
+            function E({ spacesOverviewUrl: e = "/analytics/spaces", referrerUrl: s }) {
                 const t = (0, Z.t)(),
-                    { analytics: r } = (0, o.M1)(),
-                    n = (0, E.l)(),
-                    l = (0, g.useMemo)(() => s || n.get("referrerUrl") || void 0, [s, n]);
+                    { analytics: r } = (0, o.M1)();
                 return (0, a.jsxs)("div", {
                     className: "flex flex-col p-4",
                     children: [
@@ -145,7 +142,7 @@
                                 (0, a.jsx)(F.z, {
                                     icon: (0, a.jsx)(D.Z, {}),
                                     onClick: () => {
-                                        t.push(l || e);
+                                        t.push(s || e);
                                     },
                                     variant: "primaryText",
                                     "aria-label": r.backToSpaces,
@@ -160,8 +157,8 @@
                     ],
                 });
             }
-            function T({ id: e, isMockData: s = !1, spacesOverviewUrl: t = "/analytics/spaces", referrerUrl: n }) {
-                return (0, a.jsx)(r.py, { spaceId: e, isMockData: s, children: (0, a.jsx)(V, { spacesOverviewUrl: t, referrerUrl: n }) });
+            function V({ id: e, isMockData: s = !1, spacesOverviewUrl: t = "/analytics/spaces", referrerUrl: n }) {
+                return (0, a.jsx)(r.py, { spaceId: e, isMockData: s, children: (0, a.jsx)(E, { spacesOverviewUrl: t, referrerUrl: n }) });
             }
         },
         47649: (e, s, t) => {
@@ -291,8 +288,8 @@
                     (0, a.jsxs)("div", { className: "space-y-4", children: [e.map((e) => (0, a.jsx)(C, { ...e, state: e.state, isAvailableForReplay: e.isAvailableForReplay, isSubscriberOnly: 2 === e.audienceType, speakers: e.speakersCount, listeners: e.totalLiveListeners ?? 0, scheduledStart: e.scheduledStart ?? void 0, subscriberCount: e.subscriberCount, date: e.startedAt ? Intl.DateTimeFormat("en-US", { year: "numeric", month: "long", day: "numeric" }).format(e.startedAt) : "", duration: e.duration ? (0, k.LU)(e.duration) : "", onViewSpaceAction: s ? () => s(e.id) : void 0, onViewSpaceAnalyticsAction: t ? () => t(e.id) : void 0 }, e.id)), n && (0, a.jsx)("div", { ref: c, className: "flex justify-center py-4", children: i && (0, a.jsx)(A.P, { size: "small" }) })] })
                 );
             }
-            var M = t(413740);
-            const R = (e) => {
+            var R = t(413740);
+            const M = (e) => {
                 if ("undefined" == typeof window) return;
                 const s = new URL(window.location.href);
                 Object.entries(e).forEach(([e, t]) => {
@@ -323,7 +320,7 @@
                     [u, b] = (0, r.useState)("all"),
                     [g, j] = (0, r.useState)("date"),
                     [v, y] = (0, r.useState)("desc"),
-                    { hasMoreData: N, onLoadMore: w, isLoading: k } = (0, M.BK)();
+                    { hasMoreData: N, onLoadMore: w, isLoading: k } = (0, R.BK)();
                 (0, r.useEffect)(() => {
                     if (!x) {
                         const e = d.get("filter");
@@ -335,7 +332,7 @@
                     }
                 }, [x, d]),
                     (0, r.useEffect)(() => {
-                        x && R({ filter: u, sort: g, dir: v });
+                        x && M({ filter: u, sort: g, dir: v });
                     }, [u, g, v, x]);
                 const A = e.filter((e) => ("live" !== u || "Running" === e.state) && !!("scheduled" !== u || (e.scheduledStart && "Running" !== e.state && "Ended" !== e.state)) && ("ended" !== u || "Ended" === e.state)),
                     C = (0, r.useMemo)(
@@ -389,14 +386,14 @@
                 });
             }
             function F({ isMock: e, getSpaceAnalyticsUrl: s, getSpaceUrl: t }) {
-                return (0, a.jsx)(M.br, { isMockData: e, children: (0, a.jsx)(O, { getSpaceAnalyticsUrl: s, getSpaceUrl: t }) });
+                return (0, a.jsx)(R.br, { isMockData: e, children: (0, a.jsx)(O, { getSpaceAnalyticsUrl: s, getSpaceUrl: t }) });
             }
             function O({ getSpaceAnalyticsUrl: e, getSpaceUrl: s }) {
-                const { spaces: t } = (0, M.BK)(),
+                const { spaces: t } = (0, R.BK)(),
                     { analytics: r } = (0, S.M1)();
                 return (0, a.jsxs)("div", { className: "flex flex-col gap-6 p-4", children: [(0, a.jsx)("span", { className: "text-headline1 whitespace-nowrap font-bold", children: r.spacesOverview }), (0, a.jsx)(z, { spaces: t, getSpaceAnalyticsUrl: e, getSpaceUrl: s })] });
             }
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-bda42643.0c640f2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-bda42643.358f116a.js.map

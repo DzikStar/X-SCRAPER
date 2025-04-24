@@ -18,8 +18,8 @@
                 w = n(767385),
                 h = n(782261);
             const g = s().g5662c95;
-            function C({ conversationTreeMetadata: e, link: t, onBlur: n, onFocus: i, onPress: s, promotedContent: C, quotedTweetTombstoneInfo: b, renderActionMenu: T, renderActionsBar: v, renderCallToAction: y, renderEditCallout: E, renderEducation: k, renderHighlightedUserLabel: _, renderPromotedDetails: S, renderPromotedUserProfileCard: x, renderPromotionStatusBadge: A, renderReplyContext: M, renderRichContent: I, renderSocialContext: P, renderStats: Z, renderText: U, renderTimestamp: L, renderTombstone: B, renderUserAvatar: N, renderUserFollowIndicator: R, renderUserName: F, socialContext: D, staticLinkConfig: H, testID: V, tweet: q, withBottomLine: W, withTopLine: z, withUnreadStyles: O }) {
-                const { LinkConfigProvider: Q, a11yIdList: $, a11yIds: K, props: Y } = (0, p.a)({ conversationTreeMetadata: e, link: t, onBlur: n, onFocus: i, onPress: s, promotedContent: C, quotedTweetTombstoneInfo: b, renderActionMenu: T, renderActionsBar: v, renderCallToAction: y, renderEditCallout: E, renderEducation: k, renderHighlightedUserLabel: _, renderPromotedDetails: S, renderPromotedUserProfileCard: x, renderPromotionStatusBadge: A, renderReplyContext: M, renderRichContent: I, renderSocialContext: P, renderStats: Z, renderText: U, renderTimestamp: L, renderTombstone: B, renderUserAvatar: N, renderUserFollowIndicator: R, renderUserName: F, socialContext: D, staticLinkConfig: H, testID: V, tweet: q, withBottomLine: W, withTopLine: z, withUnreadStyles: O }),
+            function C({ conversationTreeMetadata: e, link: t, onBlur: n, onFocus: i, onPress: s, promotedContent: C, quotedTweetTombstoneInfo: b, renderActionMenu: T, renderActionsBar: v, renderCallToAction: y, renderEditCallout: E, renderEducation: k, renderHighlightedUserLabel: _, renderPromotedDetails: S, renderPromotedUserProfileCard: x, renderPromotionStatusBadge: A, renderReplyContext: M, renderRichContent: I, renderStats: P, renderText: Z, renderTimestamp: U, renderTombstone: L, renderTweetHeader: B, renderUserAvatar: N, renderUserFollowIndicator: R, renderUserName: F, socialContext: H, staticLinkConfig: D, testID: V, tweet: q, withBottomLine: W, withTopLine: z, withUnreadStyles: O }) {
+                const { LinkConfigProvider: Q, a11yIdList: $, a11yIds: K, props: Y } = (0, p.a)({ conversationTreeMetadata: e, link: t, onBlur: n, onFocus: i, onPress: s, promotedContent: C, quotedTweetTombstoneInfo: b, renderActionMenu: T, renderActionsBar: v, renderCallToAction: y, renderEditCallout: E, renderEducation: k, renderHighlightedUserLabel: _, renderPromotedDetails: S, renderPromotedUserProfileCard: x, renderPromotionStatusBadge: A, renderReplyContext: M, renderRichContent: I, renderTweetHeader: B, renderStats: P, renderText: Z, renderTimestamp: U, renderTombstone: L, renderUserAvatar: N, renderUserFollowIndicator: R, renderUserName: F, socialContext: H, staticLinkConfig: D, testID: V, tweet: q, withBottomLine: W, withTopLine: z, withUnreadStyles: O }),
                     j = h.Z.getOriginalTweet(Y.tweet),
                     { permalink: G } = j,
                     J = j.tombstoneInfo || Y.tweet.tombstoneInfo,
@@ -44,7 +44,7 @@
                             actionMenu: Y.renderActionMenu(),
                             avatar: Y.renderUserAvatar(),
                             footer: Y.renderCallToAction(),
-                            header: Y.renderSocialContext({ iconSize: "large", iconStyle: f.socialContextIcon, style: f.socialContext, weight: "bold" }),
+                            header: Y.renderTweetHeader({ iconSize: "large", iconStyle: f.socialContextIcon, style: f.socialContext, weight: "bold" }),
                             indents: se,
                             link: Y.link ? ae.withAnchorless(Y.link) : void 0,
                             onBlur: () => Y.onBlur?.(),
@@ -151,7 +151,7 @@
                     return [t >= 506, e];
                 };
             function F(e) {
-                const { cardCacheLocationKey: t, forwardPivotInfo: n, id: s, inlineCalloutInfo: a, innerForwardPivotInfo: l, innerNudges: c, isMediaMaxHeightEnabled: g, loggedInUserId: f, onCardLinkClick: E, onQuoteTweetClick: k, onQuoteTweetMediaClick: _, onQuotedTweetAvatarClick: S, onQuotedTweetScreenNameClick: x, preventVideoPlayback: A, promotedContent: I, quoteTweetSingleImageMinAspectRatio: P, quoteTweetSocialContextProps: L, quotedTweetTombstoneInfo: B, renderJetfuelFrame: F, renderQuoteTweetTombstone: H, singleImageMaxAspectRatio: O, style: Q, tweet: j, withActionsDisabled: G, withAltTextBadge: J, withCardLinks: X, withCenterCrop: ee, withCondensedQuoteTweet: te, withHalvedMediaSize: ne, withQuoteTweetBirdwatchPivot: re, withQuoteTweetHeaderLinks: oe, withQuoteTweetLink: ie, withQuoteTweetMedia: se, withUserHoverCard: ae } = V(e),
+                const { cardCacheLocationKey: t, forwardPivotInfo: n, id: s, inlineCalloutInfo: a, innerForwardPivotInfo: l, innerNudges: c, isMediaMaxHeightEnabled: g, loggedInUserId: f, onCardLinkClick: E, onQuoteTweetClick: k, onQuoteTweetMediaClick: _, onQuotedTweetAvatarClick: S, onQuotedTweetScreenNameClick: x, preventVideoPlayback: A, promotedContent: I, quoteTweetSingleImageMinAspectRatio: P, quoteTweetSocialContextProps: L, quotedTweetTombstoneInfo: B, renderJetfuelFrame: F, renderQuoteTweetTombstone: D, singleImageMaxAspectRatio: O, style: Q, tweet: j, withActionsDisabled: G, withAltTextBadge: J, withCardLinks: X, withCenterCrop: ee, withCondensedQuoteTweet: te, withHalvedMediaSize: ne, withQuoteTweetBirdwatchPivot: re, withQuoteTweetHeaderLinks: oe, withQuoteTweetLink: ie, withQuoteTweetMedia: se, withUserHoverCard: ae } = V(e),
                     [le, de] = R(),
                     ce = p.ZP.useProps(),
                     ue = ce.withEdgeToEdgeContent(),
@@ -225,20 +225,20 @@
                     })(
                         (() => {
                             const e = fe();
-                            return e && B ? H({ children: e, config: B, id: pe }) : e;
+                            return e && B ? D({ children: e, config: B, id: pe }) : e;
                         })() || ke,
                     );
                 if (!(ve || _e || ye || Te)) return null;
-                return o.createElement(i.Z, { "aria-labelledby": `${pe} ${me}`, id: s, ref: de, style: [D.gap, Q] }, ve || Ee || ye ? o.createElement(i.Z, { style: D.mediaPivotGap }, ve, Ee, ye) : null, z(e) ? null : Te, _e);
+                return o.createElement(i.Z, { "aria-labelledby": `${pe} ${me}`, id: s, ref: de, style: [H.gap, Q] }, ve || Ee || ye ? o.createElement(i.Z, { style: H.mediaPivotGap }, ve, Ee, ye) : null, z(e) ? null : Te, _e);
             }
-            const D = _.default.create((e) => ({ gap: { gap: e.spaces.space4 }, jetfuelCard: { paddingTop: e.spaces.space2 }, mediaPivotGap: { gap: e.spaces.space4 }, explicitlySized: { alignSelf: "flex-start" }, edgeToEdgeSingleVideoWithMaxHeight: { display: "block", start: "50%", translate: `calc(-50% + ${e.spacesPx.space16}px)` }, negativeMargin: { marginHorizontal: -e.spacesPx.space16 }, centerItems: { alignItems: "center" } }));
-            function H({ children: e, config: t, id: n }) {
+            const H = _.default.create((e) => ({ gap: { gap: e.spaces.space4 }, jetfuelCard: { paddingTop: e.spaces.space2 }, mediaPivotGap: { gap: e.spaces.space4 }, explicitlySized: { alignSelf: "flex-start" }, edgeToEdgeSingleVideoWithMaxHeight: { display: "block", start: "50%", translate: `calc(-50% + ${e.spacesPx.space16}px)` }, negativeMargin: { marginHorizontal: -e.spacesPx.space16 }, centerItems: { alignItems: "center" } }));
+            function D({ children: e, config: t, id: n }) {
                 const r = t.richRevealText?.text || t.revealText,
                     s = t.richText ? o.createElement(E.Z, { align: "Center" === t.richText.alignment ? "center" : void 0, dir: t.richText.rtl ? "rtl" : "ltr", entities: t.richText.entities, onEntityClick: t.richText.onEntityClick, text: t.richText.text }) : t.text;
                 return o.createElement(i.Z, { "aria-label": a().bb5c5864, id: n }, r ? o.createElement(x.Z, { label: s, revealLabel: r }, e) : o.createElement(S.Z, null, s));
             }
             function V(e) {
-                const { quoteTweetSingleImageMinAspectRatio: t = B, renderQuoteTweetTombstone: n = H, renderJetfuelFrame: r = () => null, singleImageMaxAspectRatio: o = L, singleImageMinAspectRatio: i = B, withAltTextBadge: s = !0, withCardLinks: a = !1, withCenterCrop: l = !1, withHalvedMediaSize: d = !1, withQuoteTweetMedia: c = !0, withQuoteTweetBirdwatchPivot: u = !1, withTweetMedia: m = !0 } = e;
+                const { quoteTweetSingleImageMinAspectRatio: t = B, renderQuoteTweetTombstone: n = D, renderJetfuelFrame: r = () => null, singleImageMaxAspectRatio: o = L, singleImageMinAspectRatio: i = B, withAltTextBadge: s = !0, withCardLinks: a = !1, withCenterCrop: l = !1, withHalvedMediaSize: d = !1, withQuoteTweetMedia: c = !0, withQuoteTweetBirdwatchPivot: u = !1, withTweetMedia: m = !0 } = e;
                 return { ...e, quoteTweetSingleImageMinAspectRatio: t, renderJetfuelFrame: r, renderQuoteTweetTombstone: n, singleImageMaxAspectRatio: o, singleImageMinAspectRatio: i, withAltTextBadge: s, withCardLinks: a, withCenterCrop: l, withHalvedMediaSize: d, withQuoteTweetMedia: c, withQuoteTweetBirdwatchPivot: u, withTweetMedia: m };
             }
             function q(e) {
@@ -258,14 +258,14 @@
                     const t = e?.extended_entities?.media;
                     return 1 === t?.length && "video" === t[0].type;
                 },
-                Q = (e, t, n) => [{ maxHeight: t, maxWidth: t * e, aspectRatio: e, boxSizing: "content-box" }, n && D.edgeToEdgeSingleVideoWithMaxHeight];
+                Q = (e, t, n) => [{ maxHeight: t, maxWidth: t * e, aspectRatio: e, boxSizing: "content-box" }, n && H.edgeToEdgeSingleVideoWithMaxHeight];
             function $(e) {
                 const t = V(e);
                 return "true" === t.promotedContent?.experiment_values?.pac_in_timeline && !!t.promotedContent?.adMetadataContainer?.dynamicCardContent;
             }
             function K(e) {
                 const { mediaDetails: t, ...n } = e,
-                    { displayMediaMetadata: r, enableKeyboardShortcuts: s, forwardPivotInfo: a, isMediaMaxHeightEnabled: l, loggedInUserId: d, mediaAltTranslations: u, mediaCacheLocationKey: w, nudges: h, onGrokClick: g, onMediaClick: C, onMediaTagsClick: f, onPlaybackStarted: T, preventVideoPlayback: v, promotedContent: y, renderPrerollActionMenu: E, showAltTranslation: _, singleImageMaxAspectRatio: S, singleImageMinAspectRatio: x, withAltTextBadge: L, withCenterCrop: B, withHalvedMediaSize: F, withMediaTagsIcon: H, withRoundMediaCorners: $ } = V(n),
+                    { displayMediaMetadata: r, enableKeyboardShortcuts: s, forwardPivotInfo: a, isMediaMaxHeightEnabled: l, loggedInUserId: d, mediaAltTranslations: u, mediaCacheLocationKey: w, nudges: h, onGrokClick: g, onMediaClick: C, onMediaTagsClick: f, onPlaybackStarted: T, preventVideoPlayback: v, promotedContent: y, renderPrerollActionMenu: E, showAltTranslation: _, singleImageMaxAspectRatio: S, singleImageMinAspectRatio: x, withAltTextBadge: L, withCenterCrop: B, withHalvedMediaSize: F, withMediaTagsIcon: D, withRoundMediaCorners: $ } = V(n),
                     [K, j] = R(),
                     G = p.ZP.useProps(),
                     J = G.withEdgeToEdgeContent(),
@@ -303,14 +303,14 @@
                         if (t) return W(t);
                     })(X);
                 if (I.B(X)) return o.createElement(P.Z, { tweet: X });
-                if (X.card && m.default.isSpaceCard(X.card.name)) return o.createElement(i.Z, { style: D.gap }, o.createElement(k.Z, { audioSpaceId: X.card.binding_values.id?.string_value, clipMetadata: X.card.binding_values.clip_metadata?.string_value }));
+                if (X.card && m.default.isSpaceCard(X.card.name)) return o.createElement(i.Z, { style: H.gap }, o.createElement(k.Z, { audioSpaceId: X.card.binding_values.id?.string_value, clipMetadata: X.card.binding_values.clip_metadata?.string_value }));
                 const le = l && ie > 0 && (ne || te),
                     de = se * (ne || ee ? re : Math.max(1, re));
-                return o.createElement(i.Z, { ref: j, style: le && { maxWidth: de } }, o.createElement(A.Z, { authorId: X.user.id_str, authorScreenName: X.user.screen_name, cacheLocationKey: w || N, customHoverBackgroundColor: oe && J ? ae : void 0, displayMediaAttribution: !0, displayMediaMetadata: r, enableKeyboardShortcuts: s, forwardPivotInfo: a, hasSensitiveMedia: X.possibly_sensitive, loggedInUserId: d, mediaAltTranslations: u, mediaContentStyles: [Y({ withEdgeToEdgeContent: J, withHalvedMediaSize: F, backgroundColor: ae, withMaxHeight: oe }), ee && oe && te && Q(re, se, J)], mediaDetails: t, mediaMaxHeight: oe ? se : void 0, mediaTagsLink: `${X.permalink}/media_tags`, mediaVisibilityResults: X.mediaVisibilityResults || e.tweet.mediaVisibilityResults, nudges: h, onClick: C, onClickMediaTags: f, onGrokClick: g, onPlaybackStarted: T, parentTweetId: e.tweet.id_str, preventPlayback: v, promotedContent: y, renderPrerollActionMenu: E, shouldShowAltLabelAlways: L, showAltTranslation: _, showBorder: !(oe && J), showRoundCorners: $, singleImageMaxAspectRatio: S, singleImageMinAspectRatio: x, style: oe && !J && (!ee || !te) && D.explicitlySized, tweetCreatedAt: X.created_at, tweetId: X.id_str, tweetText: X.text, withCenterCrop: B, withHalvedMediaSize: F, withMediaTagsIcon: H, withPostPlayback: !0 }));
+                return o.createElement(i.Z, { ref: j, style: le && { maxWidth: de } }, o.createElement(A.Z, { authorId: X.user.id_str, authorScreenName: X.user.screen_name, cacheLocationKey: w || N, customHoverBackgroundColor: oe && J ? ae : void 0, displayMediaAttribution: !0, displayMediaMetadata: r, enableKeyboardShortcuts: s, forwardPivotInfo: a, hasSensitiveMedia: X.possibly_sensitive, loggedInUserId: d, mediaAltTranslations: u, mediaContentStyles: [Y({ withEdgeToEdgeContent: J, withHalvedMediaSize: F, backgroundColor: ae, withMaxHeight: oe }), ee && oe && te && Q(re, se, J)], mediaDetails: t, mediaMaxHeight: oe ? se : void 0, mediaTagsLink: `${X.permalink}/media_tags`, mediaVisibilityResults: X.mediaVisibilityResults || e.tweet.mediaVisibilityResults, nudges: h, onClick: C, onClickMediaTags: f, onGrokClick: g, onPlaybackStarted: T, parentTweetId: e.tweet.id_str, preventPlayback: v, promotedContent: y, renderPrerollActionMenu: E, shouldShowAltLabelAlways: L, showAltTranslation: _, showBorder: !(oe && J), showRoundCorners: $, singleImageMaxAspectRatio: S, singleImageMinAspectRatio: x, style: oe && !J && (!ee || !te) && H.explicitlySized, tweetCreatedAt: X.created_at, tweetId: X.id_str, tweetText: X.text, withCenterCrop: B, withHalvedMediaSize: F, withMediaTagsIcon: D, withPostPlayback: !0 }));
             }
             function Y(e) {
                 const { backgroundColor: t, isInQuoteTweet: n = !1, withEdgeToEdgeContent: r, withHalvedMediaSize: o, withMaxHeight: i } = e;
-                return [r && !n && !o && D.negativeMargin, i && r && [D.centerItems, { backgroundColor: t }]];
+                return [r && !n && !o && H.negativeMargin, i && r && [H.centerItems, { backgroundColor: t }]];
             }
         },
         767385: (e, t, n) => {
@@ -447,4 +447,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-db6b2e3a.f52a017a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-db6b2e3a.d6c21e2a.js.map

@@ -71,12 +71,12 @@
                     if (!t) return null;
                     const u = e.metricsKeysToRender ?? ["Impressions", "EngagementRate", "ProfileVisits", "LinkClicks"],
                         C = t.current_organic_metrics,
-                        h = t.past_organic_metrics,
+                        v = t.past_organic_metrics,
                         w = t.advertiser_accounts_by_primary_promotable_user?.items[0].current_promoted_metrics,
                         T = t.advertiser_accounts_by_primary_promotable_user?.items[0].past_promoted_metrics,
                         _ = (e) => {
                             const t = f(e, C, w ?? []),
-                                a = f(e, h, T ?? []);
+                                a = f(e, v, T ?? []);
                             return { current: t.total_value, past: a.total_value, metadata: t.metadata };
                         };
                     function E(e) {
@@ -94,19 +94,19 @@
                         null,
                         r.createElement(
                             n.Z,
-                            { style: d ? v.gridMobile : v.gridDesktop },
-                            u.map((e) => r.createElement(s.Z, { "aria-label": e, key: e, upper: r.createElement(n.Z, { style: v.tile }, E(e)) })),
+                            { style: d ? h.gridMobile : h.gridDesktop },
+                            u.map((e) => r.createElement(s.Z, { "aria-label": e, key: e, upper: r.createElement(n.Z, { style: h.tile }, E(e)) })),
                         ),
                         a && r.createElement(o.ZP, { color: "gray700", size: "subtext3" }, b),
                     );
                 },
-                v = c.default.create((e) => {
+                h = c.default.create((e) => {
                     const t = { display: "grid", gridTemplateRows: "repeat(2, 1fr)", paddingVertical: e.spaces.space8, rowGap: e.spaces.space2 };
                     return { root: { padding: e.spaces.space16 }, gridDesktop: { ...t, gridTemplateColumns: "repeat(4, 1fr)" }, gridMobile: { ...t, gridTemplateColumns: "repeat(2, 1fr)" }, tile: { backgroundColor: e.colors.gray0, flexGrow: 1, justifyContent: "center", paddingStart: e.spaces.space16 } };
                 });
         },
         508469: (e, t, a) => {
-            a.d(t, { D: () => v });
+            a.d(t, { D: () => h });
             var r = a(202784),
                 n = a(325686),
                 o = a(157130),
@@ -192,7 +192,7 @@
                     return `${e.getUTCMonth() + 1}/${t}/${e.getUTCFullYear()}`;
                 },
                 C = ["S", "M", "T", "W", "T", "F", "S"],
-                v = ({ endDate: e, maxDays: t, onChange: a, selected: s, startDate: m }) => {
+                h = ({ endDate: e, maxDays: t, onChange: a, selected: s, startDate: m }) => {
                     const [p, g] = r.useState(e ? new Date(Date.UTC(e.getUTCFullYear(), e.getUTCMonth(), 1)) : new Date(Date.UTC(new Date().getUTCFullYear(), new Date().getUTCMonth(), 1))),
                         y = m && e && s ? `${D(m)} - ${D(e)}` : null,
                         f = (e) => g(new Date(Date.UTC(p.getUTCFullYear(), p.getUTCMonth() + e, 1)));
@@ -203,11 +203,11 @@
                             renderContent: () =>
                                 r.createElement(
                                     n.Z,
-                                    { style: h.root },
-                                    r.createElement(n.Z, { style: h.headerRow }, r.createElement(l.ZP, { icon: r.createElement(c.default, null), onMouseDown: () => f(-1), size: "xSmall", style: { width: "fit-content" } }), r.createElement(i.ZP, { size: "subtext2", weight: "bold" }, p.toLocaleString("default", { month: "long", year: "numeric", timeZone: "UTC" })), r.createElement(l.ZP, { icon: r.createElement(d.default, null), onMouseDown: () => f(1), size: "xSmall", style: { width: "fit-content" } })),
+                                    { style: v.root },
+                                    r.createElement(n.Z, { style: v.headerRow }, r.createElement(l.ZP, { icon: r.createElement(c.default, null), onMouseDown: () => f(-1), size: "xSmall", style: { width: "fit-content" } }), r.createElement(i.ZP, { size: "subtext2", weight: "bold" }, p.toLocaleString("default", { month: "long", year: "numeric", timeZone: "UTC" })), r.createElement(l.ZP, { icon: r.createElement(d.default, null), onMouseDown: () => f(1), size: "xSmall", style: { width: "fit-content" } })),
                                     r.createElement(
                                         n.Z,
-                                        { style: h.dayLabels },
+                                        { style: v.dayLabels },
                                         C.map((e, t) => r.createElement(i.ZP, { color: "gray700", key: t, size: "subtext3", weight: "bold" }, e)),
                                     ),
                                     r.createElement(b, { displayDate: p, endDate: e, maxDays: t, onChange: a, startDate: m }),
@@ -216,7 +216,7 @@
                         r.createElement(l.ZP, { icon: r.createElement(u.default, null), size: "small", type: s ? "primaryFilled" : "primaryOutlined" }, y),
                     );
                 },
-                h = s.default.create((e) => ({ root: { justifyContent: "center", padding: s.default.theme.spaces.space8, gap: s.default.theme.spaces.space8 }, headerRow: { justifyContent: "space-between", flexDirection: "row", alignItems: "center" }, dayLabels: { justifyContent: "space-around", flexDirection: "row" } }));
+                v = s.default.create((e) => ({ root: { justifyContent: "center", padding: s.default.theme.spaces.space8, gap: s.default.theme.spaces.space8 }, headerRow: { justifyContent: "space-between", flexDirection: "row", alignItems: "center" }, dayLabels: { justifyContent: "space-around", flexDirection: "row" } }));
         },
         907357: (e, t, a) => {
             a.d(t, { Z: () => b });
@@ -240,8 +240,8 @@
                 y = (e) => (0, m.Hk)(g)(e),
                 b = ({ defaultTimeFrame: e, defaultTimeRange: t, maxDays: a = 365, onChange: i, preventDefault: b }) => {
                     const D = e || (t ? null : { label: "7D", value: 7 }),
-                        [C, v] = r.useState(D),
-                        [h, w] = r.useState(t || { endDate: g, startDate: y(7), compareStartDate: y(14) }),
+                        [C, h] = r.useState(D),
+                        [v, w] = r.useState(t || { endDate: g, startDate: y(7), compareStartDate: y(14) }),
                         T = (0, o.Mv)(),
                         _ = !(0, c.ZP)() && T,
                         E = s.ZP.isTwitterApp() ? s.ZP.osString() : "web",
@@ -252,15 +252,15 @@
                         { style: f.timeFrameRow },
                         !_ &&
                             r.createElement(u.D, {
-                                endDate: null === C ? h.endDate : null,
+                                endDate: null === C ? v.endDate : null,
                                 maxDays: a,
                                 onChange: ({ endDate: e, startDate: t }) => {
                                     const a = Math.floor((e.getTime() - t.getTime()) / 864e5),
                                         r = { endDate: e, startDate: t, compareStartDate: (0, m.Hk)(t)(a) };
-                                    b || (S.scribe({ page: "account_analytics", section: E, component: "TimeRangePicker", action: "selected", data: { start_date: t.toISOString(), end_date: e.toISOString() } }), v(null), w(r)), i?.(r);
+                                    b || (S.scribe({ page: "account_analytics", section: E, component: "TimeRangePicker", action: "selected", data: { start_date: t.toISOString(), end_date: e.toISOString() } }), h(null), w(r)), i?.(r);
                                 },
                                 selected: null === C,
-                                startDate: null === C ? h.startDate : null,
+                                startDate: null === C ? v.startDate : null,
                             }),
                         k.map((e) =>
                             r.createElement(
@@ -272,7 +272,7 @@
                                             const t = { endDate: g, startDate: y(e.value), compareStartDate: y(2 * e.value) };
                                             if (!b) {
                                                 if ((S.scribe({ page: "account_analytics", section: E, component: "TimeFrameSelector", action: "click", data: { time_frame: e.label } }), C === e)) return;
-                                                v(e), w(t);
+                                                h(e), w(t);
                                             }
                                             i?.(t);
                                         })(e),
@@ -312,14 +312,6 @@
                 return { metric_type: e, organic_value: o, promoted_value: l, total_value: o + l };
             }
         },
-        890022: (e, t, a) => {
-            a.d(t, { D: () => n });
-            var r = a(202784);
-            function n(e) {
-                const t = r.useRef({ value: e, previous: e });
-                return r.useMemo(() => (t.current.value !== e && ((t.current.previous = t.current.value), (t.current.value = e)), t.current.previous), [e]);
-            }
-        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AccountAnalytics~ondemand.Verified-e96e9bea.687cb9aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AccountAnalytics~ondemand.Verified-e96e9bea.2127713a.js.map

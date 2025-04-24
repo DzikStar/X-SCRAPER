@@ -22,7 +22,7 @@
             const i = a;
         },
         464258: (e, l, n) => {
-            n.d(l, { Z: () => _ });
+            n.d(l, { Z: () => y });
             var a,
                 i,
                 r,
@@ -200,10 +200,10 @@
                     params: { id: "yPFs6y3U_um1hEZRtrn-bQ", metadata: { features: ["responsive_web_graphql_timeline_navigation_enabled"] }, name: "TrustedFriendsAddRemoveButtonAddMutation", operationKind: "mutation", text: null },
                 };
             p.hash = "6c4f11ae4896cd3f33370bf4111636f1";
-            const _ = p;
+            const y = p;
         },
         301327: (e, l, n) => {
-            n.d(l, { Z: () => y });
+            n.d(l, { Z: () => _ });
             var a,
                 i,
                 r,
@@ -216,7 +216,7 @@
                 m,
                 g,
                 p,
-                _ = {
+                y = {
                     fragment: {
                         argumentDefinitions: [(a = { defaultValue: null, kind: "LocalArgument", name: "itemID" }), (i = { defaultValue: null, kind: "LocalArgument", name: "slices" }), (r = { defaultValue: null, kind: "LocalArgument", name: "trustedFriendsId" }), (s = { defaultValue: null, kind: "LocalArgument", name: "userId" })],
                         kind: "Fragment",
@@ -422,8 +422,8 @@
                     },
                     params: { id: "s0I1oxh3ngoMpf16vb9R9Q", metadata: { features: ["responsive_web_graphql_timeline_navigation_enabled"] }, name: "TrustedFriendsAddRemoveButtonRemoveMutation", operationKind: "mutation", text: null },
                 };
-            _.hash = "3fbf808c99dc745e905081c08b7f920a";
-            const y = _;
+            y.hash = "3fbf808c99dc745e905081c08b7f920a";
+            const _ = y;
         },
         438532: (e, l, n) => {
             n.d(l, { Z: () => i });
@@ -980,8 +980,8 @@
                 m,
                 g,
                 p,
-                _,
                 y,
+                _,
                 k,
                 b,
                 F = n(897455),
@@ -996,7 +996,7 @@
                             selections: [
                                 {
                                     alias: "user",
-                                    args: (_ = [
+                                    args: (y = [
                                         { kind: "Variable", name: "rest_id", variableName: "userId" },
                                         { kind: "Literal", name: "s", value: "0c09" },
                                     ]),
@@ -1013,7 +1013,7 @@
                                             name: "result",
                                             plural: !1,
                                             selections: [
-                                                (y = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }),
+                                                (_ = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }),
                                                 {
                                                     kind: "InlineFragment",
                                                     selections: [
@@ -1057,8 +1057,8 @@
                             abstractKey: null,
                         },
                         kind: "Request",
-                        operation: { argumentDefinitions: [t, d, a, i, r, u, m, o, p, s, c, g], kind: "Operation", name: "combinedListsPageTimelineQuery", selections: [{ alias: "user", args: _, concreteType: "UserResults", kind: "LinkedField", name: "user_result_by_rest_id", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [y, { kind: "InlineFragment", selections: [{ alias: "timeline", args: null, concreteType: "Timeline", kind: "LinkedField", name: "all_subscribed_lists_timeline", plural: !1, selections: [{ alias: null, args: k, concreteType: "TimelineTimeline", kind: "LinkedField", name: "timeline", plural: !1, selections: [{ args: null, fragment: F.Z, kind: "FragmentSpread" }], storageKey: null }, { alias: null, args: k, filters: null, handle: "timeline", key: "", kind: "LinkedHandle", name: "timeline", handleArgs: [{ kind: "Variable", name: "timelineId", variableName: "timelineId" }] }, b], storageKey: null }, b], type: "User", abstractKey: null }], storageKey: null }, b], storageKey: null }] },
-                        params: { id: "9w7y2AflFW_at7et61LVGQ", metadata: { features: ["articles_preview_enabled", "c9s_tweet_anatomy_moderator_badge_enabled", "communities_web_enable_tweet_community_results_fetch", "creator_subscriptions_quote_tweet_preview_enabled", "creator_subscriptions_tweet_preview_api_enabled", "freedom_of_speech_not_reach_fetch_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "longform_notetweets_consumption_enabled", "longform_notetweets_inline_media_enabled", "longform_notetweets_rich_text_read_enabled", "premium_content_api_read_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "responsive_web_edit_tweet_api_enabled", "responsive_web_enhance_cards_enabled", "responsive_web_graphql_exclude_directive_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_grok_analysis_button_from_backend", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_grok_share_attachment_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_jetfuel_frame", "responsive_web_twitter_article_tweet_consumption_enabled", "rweb_tipjar_consumption_enabled", "rweb_video_screen_enabled", "standardized_nudges_misinfo", "tweet_awards_web_tipping_enabled", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "verified_phone_label_enabled", "view_counts_everywhere_api_enabled"] }, name: "combinedListsPageTimelineQuery", operationKind: "query", text: null },
+                        operation: { argumentDefinitions: [t, d, a, i, r, u, m, o, p, s, c, g], kind: "Operation", name: "combinedListsPageTimelineQuery", selections: [{ alias: "user", args: y, concreteType: "UserResults", kind: "LinkedField", name: "user_result_by_rest_id", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [_, { kind: "InlineFragment", selections: [{ alias: "timeline", args: null, concreteType: "Timeline", kind: "LinkedField", name: "all_subscribed_lists_timeline", plural: !1, selections: [{ alias: null, args: k, concreteType: "TimelineTimeline", kind: "LinkedField", name: "timeline", plural: !1, selections: [{ args: null, fragment: F.Z, kind: "FragmentSpread" }], storageKey: null }, { alias: null, args: k, filters: null, handle: "timeline", key: "", kind: "LinkedHandle", name: "timeline", handleArgs: [{ kind: "Variable", name: "timelineId", variableName: "timelineId" }] }, b], storageKey: null }, b], type: "User", abstractKey: null }], storageKey: null }, b], storageKey: null }] },
+                        params: { id: "VQENyLW7bK6qOUvYdhYIQQ", metadata: { features: ["articles_preview_enabled", "c9s_tweet_anatomy_moderator_badge_enabled", "communities_web_enable_tweet_community_results_fetch", "creator_subscriptions_quote_tweet_preview_enabled", "creator_subscriptions_tweet_preview_api_enabled", "freedom_of_speech_not_reach_fetch_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "longform_notetweets_consumption_enabled", "longform_notetweets_inline_media_enabled", "longform_notetweets_rich_text_read_enabled", "premium_content_api_read_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "responsive_web_edit_tweet_api_enabled", "responsive_web_enhance_cards_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_grok_analysis_button_from_backend", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_grok_share_attachment_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_jetfuel_frame", "responsive_web_twitter_article_tweet_consumption_enabled", "rweb_tipjar_consumption_enabled", "rweb_video_screen_enabled", "standardized_nudges_misinfo", "tweet_awards_web_tipping_enabled", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "verified_phone_label_enabled", "view_counts_everywhere_api_enabled"] }, name: "combinedListsPageTimelineQuery", operationKind: "query", text: null },
                     });
             f.hash = "48ea11d8565f9095001c26f5e505d825";
             const h = f;
@@ -1168,18 +1168,18 @@
                 d = n(952428),
                 u = n(392237);
             const o = (e) => {
-                    const { decoration: l, description: n, disabled: o = !1, isActive: m = !1, label: g, link: p, onPress: _, paddingHorizontal: y, renderRightContent: k, role: b = "tab", styleOverride: F, testID: f = "pivot", thumbnail: h, thumbnailSize: K, withoutArrow: T = !1 } = e,
+                    const { decoration: l, description: n, disabled: o = !1, isActive: m = !1, label: g, link: p, onPress: y, paddingHorizontal: _, renderRightContent: k, role: b = "tab", styleOverride: F, testID: f = "pivot", thumbnail: h, thumbnailSize: K, withoutArrow: T = !1 } = e,
                         L = [c.thumbnailContainer, "medium" === K && c.thumbnailContainerMedium],
                         S = "string" == typeof g ? a.createElement(t.ZP, null, g) : g,
                         v = "object" == typeof p && p.external && !p.openInSameFrame,
                         w = n ? ("string" == typeof n ? a.createElement(t.ZP, { color: "gray700", size: "subtext2", testID: `${f}-description` }, n) : n) : null,
-                        I = a.useMemo(() => ("space0" === y ? { paddingHorizontal: 0 } : { paddingHorizontal: y ? u.default.theme.spaces[y] : u.default.theme.componentDimensions.gutterHorizontal }), [y]);
-                    return a.createElement(d.Z, { "aria-selected": "tab" === b ? m : null, disabled: o, link: o ? void 0 : p, onPress: _, role: b, style: [c.root, I, o && c.disabled, F], testID: f, withInteractiveStyling: !!p || !!_ }, a.createElement(i.Z, { style: c.contentContainer }, h ? a.createElement(i.Z, { style: L }, h) : null, a.createElement(i.Z, { style: c.content }, S, w), k ? k() : null, (!p && !_) || o || T ? null : v ? a.createElement(r.default, { style: c.icon }) : a.createElement(s.default, { style: c.icon })), l);
+                        I = a.useMemo(() => ("space0" === _ ? { paddingHorizontal: 0 } : { paddingHorizontal: _ ? u.default.theme.spaces[_] : u.default.theme.componentDimensions.gutterHorizontal }), [_]);
+                    return a.createElement(d.Z, { "aria-selected": "tab" === b ? m : null, disabled: o, link: o ? void 0 : p, onPress: y, role: b, style: [c.root, I, o && c.disabled, F], testID: f, withInteractiveStyling: !!p || !!y }, a.createElement(i.Z, { style: c.contentContainer }, h ? a.createElement(i.Z, { style: L }, h) : null, a.createElement(i.Z, { style: c.content }, S, w), k ? k() : null, (!p && !y) || o || T ? null : v ? a.createElement(r.default, { style: c.icon }) : a.createElement(s.default, { style: c.icon })), l);
                 },
                 c = u.default.create((e) => ({ root: { justifyContent: "space-between", minHeight: `calc(${u.default.theme.lineHeights.headline1} + 2 * ${e.componentDimensions.gutterVertical})`, paddingVertical: e.componentDimensions.gutterVertical }, disabled: { opacity: 0.5 }, contentContainer: { alignItems: "center", flexDirection: "row", flexGrow: 1 }, content: { flexGrow: 1, flexShrink: 1 }, icon: { color: e.colors.gray700, paddingStart: e.spaces.space12, flexShrink: 0 }, thumbnailContainer: { alignItems: "center", justifyContent: "center", height: e.spaces.space48, width: e.spaces.space48, marginEnd: e.spaces.space16 }, thumbnailContainerMedium: { height: e.spaces.space32, width: e.spaces.space32 } }));
         },
         280278: (e, l, n) => {
-            n.d(l, { ZP: () => _ });
+            n.d(l, { ZP: () => y });
             var a = n(202784),
                 i = n(325686),
                 r = n(827515),
@@ -1201,9 +1201,9 @@
             });
             const g = { position: "absolute" },
                 p = d.default.create({ root: { overflow: "hidden" } }),
-                _ = (e) => {
+                y = (e) => {
                     const { children: l, containerStyle: n, count: d, ...o } = e,
-                        [_, y] = a.useState({ animating: !1, count: e.count, pendingCount: null, text: e.children, oldText: null, pendingText: null, transitionDirection: u }),
+                        [y, _] = a.useState({ animating: !1, count: e.count, pendingCount: null, text: e.children, oldText: null, pendingText: null, transitionDirection: u }),
                         k = a.useRef(!1);
                     return (
                         a.useEffect(
@@ -1217,32 +1217,32 @@
                         ),
                         a.useEffect(() => {
                             if (k.current)
-                                if (s.Z.reducedMotionEnabled) y((n) => ({ ...n, oldText: null, text: l, pendingText: null, pendingCount: null, count: e.count }));
-                                else if (l !== _.pendingText) {
-                                    l === _.text || ((0, r.Z)(e.count) && _.count === e.count) ? y((e) => ({ ...e, pendingCount: null, pendingText: null })) : (y((n) => ({ ...n, pendingCount: e.count, pendingText: l })), _.animating || c(e.count, l, y));
+                                if (s.Z.reducedMotionEnabled) _((n) => ({ ...n, oldText: null, text: l, pendingText: null, pendingCount: null, count: e.count }));
+                                else if (l !== y.pendingText) {
+                                    l === y.text || ((0, r.Z)(e.count) && y.count === e.count) ? _((e) => ({ ...e, pendingCount: null, pendingText: null })) : (_((n) => ({ ...n, pendingCount: e.count, pendingText: l })), y.animating || c(e.count, l, _));
                                 }
                         }, [l]),
                         a.useEffect(() => {
                             k.current &&
-                                !1 === _.animating &&
-                                (_.oldText
+                                !1 === y.animating &&
+                                (y.oldText
                                     ? window.requestAnimationFrame(() =>
                                           window.requestAnimationFrame(() => {
-                                              k.current && y((e) => ({ ...e, animating: !0 }));
+                                              k.current && _((e) => ({ ...e, animating: !0 }));
                                           }),
                                       )
-                                    : _.pendingText && c(_.pendingCount, _.pendingText, y));
-                        }, [_.animating, _.oldText]),
+                                    : y.pendingText && c(y.pendingCount, y.pendingText, _));
+                        }, [y.animating, y.oldText]),
                         a.useMemo(() => {
-                            const e = m[_.transitionDirection],
-                                l = _.oldText && !s.Z.reducedMotionEnabled,
-                                r = !_.animating && _.oldText && !s.Z.reducedMotionEnabled,
-                                d = { ...g, ...(_.animating ? e.post : e.active) },
+                            const e = m[y.transitionDirection],
+                                l = y.oldText && !s.Z.reducedMotionEnabled,
+                                r = !y.animating && y.oldText && !s.Z.reducedMotionEnabled,
+                                d = { ...g, ...(y.animating ? e.post : e.active) },
                                 u = { ...(r ? e.pre : e.active) };
                             return a.createElement(
                                 i.Z,
                                 { style: [p.root, n] },
-                                l ? a.createElement("span", { style: d }, a.createElement(t.ZP, o, _.oldText)) : null,
+                                l ? a.createElement("span", { style: d }, a.createElement(t.ZP, o, y.oldText)) : null,
                                 a.createElement(
                                     "span",
                                     {
@@ -1250,13 +1250,13 @@
                                         onTransitionEnd: () =>
                                             ((e, l) => {
                                                 e && l((e) => ({ ...e, animating: !1, oldText: null }));
-                                            })(k.current, y),
+                                            })(k.current, _),
                                         style: u,
                                     },
-                                    a.createElement(t.ZP, o, _.text),
+                                    a.createElement(t.ZP, o, y.text),
                                 ),
                             );
-                        }, [n, o, _, k, y])
+                        }, [n, o, y, k, _])
                     );
                 };
         },
@@ -1303,4 +1303,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserLists-6107ac1a.f3dc150a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserLists-6107ac1a.13f6ee5a.js.map

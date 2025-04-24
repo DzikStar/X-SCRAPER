@@ -6982,12 +6982,6 @@
                 f("ed672bfa", "基础和 Premium 订阅的所有升级，外加..."),
                 f("db63fa1c", "选择一项 Premium 计划"),
                 f("b128c6bc", "获得认证徽章以及几十种其他超棒的特权和福利"),
-                f("ef43d1f1", function (e) {
-                    return "一年 " + e.tierName + " 可享 " + e.percentage + "% 优惠";
-                }),
-                f("f87513e7", function (e) {
-                    return e.numberOfMonths + " 个月 " + e.tierName + " 可享 " + e.percentage + "% 优惠";
-                }),
                 f("acfaf7a0", "比较级别和功能"),
                 f("e1606e52", "更改你的订阅"),
                 f("d2f2b91a", "此处注册"),
@@ -7852,7 +7846,9 @@
                 }),
                 f("ec6e7d9a", "在完成待处理的级别切换之前，你的账号将处于只读模式。请前往 Stripe 检查你的付款，以确保级别切换成功。"),
                 f("b33d1518", "从支持的集成或自定义 XML Feed 同步工作机会"),
-                f("dd2db402", "第 1 步：收集所需信息");
+                f("dd2db402", "第 1 步：收集所需信息"),
+                f("edb098c2", "第 2 步：联系我们的支持团队"),
+                f("c4474460", "第 2 步：发送电子邮件给我们的支持团队");
             function t(e, c) {
                 for (var a = 0; a < c.length; a++) {
                     var f = c[a];
@@ -7891,9 +7887,7 @@
                     r(e, c)
                 );
             }
-            f("edb098c2", "第 2 步：联系我们的支持团队"),
-                f("c4474460", "第 2 步：发送电子邮件给我们的支持团队"),
-                f("a08da0fa", "接下来会发生什么？"),
+            f("a08da0fa", "接下来会发生什么？"),
                 f("c127374e", "给我们发送私信"),
                 f("b2cb2a0c", "你的认证组织账号的用户名"),
                 f("b8e64002", "你的申请人跟踪系统的名称"),
@@ -8894,10 +8888,10 @@
                 }),
                 f("b1eb72fa", "抱歉，此视频仅限某些地区观看。我们正在获取你的位置信息，请稍后。请确保在你的浏览器中启用位置设置。"),
                 f("c057680c", "我们无法在此浏览器中播放该视频。请尝试使用其他网页浏览器。"),
-                f("i5dfae6e", "此视频不对你的位置开放。");
-            f("c2388276", "该视频已删除。"),
-                f("d2c96140", "客席播主音频指示器"),
-                f("f6dc9146", "重放"),
+                f("i5dfae6e", "此视频不对你的位置开放。"),
+                f("c2388276", "该视频已删除。"),
+                f("d2c96140", "客席播主音频指示器");
+            f("f6dc9146", "重放"),
                 f("d30c74fe", "音量"),
                 f("f2d4e6f2", "再次观看"),
                 f("e9f1af3a", "了解更多"),
@@ -13257,4 +13251,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh.1f12b61a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh.c26a6dda.js.map
