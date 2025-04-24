@@ -6990,12 +6990,6 @@
                 o("ed672bfa", "Sve nadogradnje osnovne i Premium pretplate plus..."),
                 o("db63fa1c", "Odaberite Premium plan"),
                 o("b128c6bc", "Preuzmite značku provjerenog računa i desetke drugih sjajnih povlastica i pogodnosti"),
-                o("ef43d1f1", function (a) {
-                    return a.percentage + " % godišnje na " + a.tierName;
-                }),
-                o("f87513e7", function (a) {
-                    return a.percentage + " % popusta " + a.numberOfMonths + " mj. na " + a.tierName;
-                }),
                 o("acfaf7a0", "Usporedba razina i značajki"),
                 o("e1606e52", "Promijenite pretplatu"),
                 o("d2f2b91a", "prijava se izvršava ovdje"),
@@ -7860,7 +7854,9 @@
                 }),
                 o("ec6e7d9a", "Vaš je Račun u načinu rada samo za čitanje dok se ne izvrši promjena razine koja je na čekanju. Otiđite na Stripe i provjerite svoju uplatu kako biste osigurali uspješnu promjenu razine."),
                 o("b33d1518", "Sinkronizirajte radna mjesta iz podržane integracije ili prilagođenog XML sažetka sadržaja"),
-                o("dd2db402", "1. korak: Prikupite potrebne informacije");
+                o("dd2db402", "1. korak: Prikupite potrebne informacije"),
+                o("edb098c2", "2. korak: obratite se našem timu za podršku"),
+                o("c4474460", "2. korak: Pošaljite poruku e-pošte našem timu za podršku");
             function t(a, e) {
                 for (var i = 0; i < e.length; i++) {
                     var o = e[i];
@@ -7899,9 +7895,7 @@
                     r(a, e)
                 );
             }
-            o("edb098c2", "2. korak: obratite se našem timu za podršku"),
-                o("c4474460", "2. korak: Pošaljite poruku e-pošte našem timu za podršku"),
-                o("a08da0fa", "Što dalje?"),
+            o("a08da0fa", "Što dalje?"),
                 o("c127374e", "Pošaljite nam poruku"),
                 o("b2cb2a0c", "Korisničko ime za vaš račun za Verified Org"),
                 o("b8e64002", "Naziv vašeg sustava za praćenje kandidata"),
@@ -8902,10 +8896,10 @@
                 }),
                 o("b1eb72fa", "Nažalost, taj je videozapis onemogućen za neka područja. Pričekajte nekoliko trenutaka dok ne dohvatimo vašu lokaciju. Omogućite postavke lokacije u pregledniku."),
                 o("c057680c", "Taj videozapis nije moguće reproducirati u tom pregledniku. Pokušajte u nekom drugom web-pregledniku."),
-                o("i5dfae6e", "Taj videozapis nije dostupan za vašu lokaciju.");
-            o("c2388276", "Taj je videozapis izbrisan."),
-                o("d2c96140", "Pokazatelj zvuka gosta"),
-                o("f6dc9146", "REPRODUKCIJA"),
+                o("i5dfae6e", "Taj videozapis nije dostupan za vašu lokaciju."),
+                o("c2388276", "Taj je videozapis izbrisan."),
+                o("d2c96140", "Pokazatelj zvuka gosta");
+            o("f6dc9146", "REPRODUKCIJA"),
                 o("d30c74fe", "Glasnoća"),
                 o("f2d4e6f2", "Pogledajte ponovno"),
                 o("e9f1af3a", "Saznajte više"),
@@ -13264,4 +13258,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hr.0cf47d3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hr.43ea13da.js.map

@@ -6983,12 +6983,6 @@
                 t("ed672bfa", "Alle opgraderinger fra Basis og Premium, plus ..."),
                 t("db63fa1c", "Vælg en premium-plan"),
                 t("b128c6bc", "Få et verificeret badge og masser af andre fantastiske frynsegoder og fordele"),
-                t("ef43d1f1", function (e) {
-                    return e.percentage + " % rabat på " + e.tierName + " i ét år";
-                }),
-                t("f87513e7", function (e) {
-                    return e.percentage + " % rabat på " + e.tierName + " i " + e.numberOfMonths + " måneder";
-                }),
                 t("acfaf7a0", "Sammenlign niveauer og funktioner"),
                 t("e1606e52", "Ændr dit abonnement"),
                 t("d2f2b91a", "tilmeld dig her"),
@@ -7853,7 +7847,9 @@
                 }),
                 t("ec6e7d9a", "Din konto er i skrivebeskyttet tilstand, indtil det afventende niveauskifte er gennemført. Gå til Stripe for at tjekke din betaling for at sikre et vellykket niveauskifte."),
                 t("b33d1518", "Synkroniser stillinger fra en understøttet integration eller et brugerdefineret XML-feed"),
-                t("dd2db402", "Trin 1: Indsaml de nødvendige oplysninger");
+                t("dd2db402", "Trin 1: Indsaml de nødvendige oplysninger"),
+                t("edb098c2", "Trin 2: Kontakt vores supportteam"),
+                t("c4474460", "Trin 2: Send en e-mail til vores supportteam");
             function d(e, r) {
                 for (var n = 0; n < r.length; n++) {
                     var t = r[n];
@@ -7892,9 +7888,7 @@
                     a(e, r)
                 );
             }
-            t("edb098c2", "Trin 2: Kontakt vores supportteam"),
-                t("c4474460", "Trin 2: Send en e-mail til vores supportteam"),
-                t("a08da0fa", "Hvad skal der ske nu?"),
+            t("a08da0fa", "Hvad skal der ske nu?"),
                 t("c127374e", "Send os en besked"),
                 t("b2cb2a0c", "Brugernavn til din Verificerede organisationer-konto"),
                 t("b8e64002", "Navn på dit ansøgersporingssystem"),
@@ -8895,10 +8889,10 @@
                 }),
                 t("b1eb72fa", "Denne video er desværre begrænset i visse områder. Vent et par sekunder, mens vi finder din placering. Sørg for at aktivere placeringsindstillinger i din browser."),
                 t("c057680c", "Vi kan ikke afspille videoen i din browser. Prøv en anden browser."),
-                t("i5dfae6e", "Denne video er ikke tilgængelig i dit område.");
-            t("c2388276", "Denne video er blevet slettet."),
-                t("d2c96140", "Indikator for gæstelyd"),
-                t("f6dc9146", "REPLAY"),
+                t("i5dfae6e", "Denne video er ikke tilgængelig i dit område."),
+                t("c2388276", "Denne video er blevet slettet."),
+                t("d2c96140", "Indikator for gæstelyd");
+            t("f6dc9146", "REPLAY"),
                 t("d30c74fe", "Lydstyrke"),
                 t("f2d4e6f2", "Se igen"),
                 t("e9f1af3a", "Få mere at vide"),
@@ -13245,4 +13239,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/da.2218204a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/da.9963307a.js.map

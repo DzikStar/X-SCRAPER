@@ -225,7 +225,7 @@
                 A = n.memo(x);
         },
         496743: (e, t, a) => {
-            a.r(t), a.d(t, { default: () => H });
+            a.r(t), a.d(t, { default: () => V });
             var n = a(202784),
                 r = a(108362),
                 o = a(252021),
@@ -245,48 +245,49 @@
                 E = a(684008),
                 k = a(488746),
                 P = a(41065),
-                Z = a(671830),
-                C = a(507651),
-                _ = a(803263),
-                v = a(578719),
-                I = a(43429),
-                w = a(412100),
-                S = a(825941);
-            const T = p.Z,
-                x = { [Z.W.CreditCardBack]: E.default, [Z.W.FollowArrows]: k.default, [Z.W.PeopleStroke]: P.default },
-                A = (e) => {
+                Z = a(311687),
+                C = a(671830),
+                _ = a(507651),
+                v = a(803263),
+                I = a(578719),
+                w = a(43429),
+                S = a(412100),
+                T = a(825941);
+            const x = p.Z,
+                A = { [C.W.CreditCardBack]: E.default, [C.W.FollowArrows]: k.default, [C.W.PeopleStroke]: P.default, [C.W.Clock]: Z.default },
+                D = (e) => {
                     const t = (0, u.jh)(),
                         { selectedFilter: a, withHeader: r } = e,
-                        { data: o, fetchNext: c } = (0, S.Z)({ searchFilterId: a }),
+                        { data: o, fetchNext: c } = (0, T.Z)({ searchFilterId: a }),
                         l = o?.get_transactions;
-                    return n.createElement(n.Fragment, null, l ? n.createElement(h.Z, null, r ? n.createElement(h.Z, { style: u.ZP.header }, n.createElement(g.ZP, { size: "headline2", weight: "bold" }, "All transactions")) : null, n.createElement(f.Z, { "aria-label": "Activity", containerStyle: t.tile, stackLayoutUpperStyle: u.ZP.upper, upper: n.createElement(v.Z, { emptyStateDescription: "You have not made any transactions yet.", fetchNext: c, slice: l }), withInteractiveStyling: !1 })) : null);
+                    return n.createElement(n.Fragment, null, l ? n.createElement(h.Z, null, r ? n.createElement(h.Z, { style: u.ZP.header }, n.createElement(g.ZP, { size: "headline2", weight: "bold" }, "All transactions")) : null, n.createElement(f.Z, { "aria-label": "Activity", containerStyle: t.tile, stackLayoutUpperStyle: u.ZP.upper, upper: n.createElement(I.Z, { emptyStateDescription: "You have not made any transactions yet.", fetchNext: c, slice: l }), withInteractiveStyling: !1 })) : null);
                 },
-                D = (e) => {
-                    const { data: t, fetchNext: a, hasPendingTransactions: r } = (0, w.Z)();
-                    return n.createElement(n.Fragment, null, r ? n.createElement(_.Z, { data: t, fetchNext: a, type: "transaction" }) : null, n.createElement(A, (0, m.Z)({}, e, { withHeader: r })));
+                M = (e) => {
+                    const { data: t, fetchNext: a, hasPendingTransactions: r } = (0, S.Z)();
+                    return n.createElement(n.Fragment, null, r ? n.createElement(v.Z, { data: t, fetchNext: a, type: "transaction" }) : null, n.createElement(D, (0, m.Z)({}, e, { withHeader: r })));
                 },
-                M = b.default.create(() => ({ tabStrip: { width: "100%" } })),
-                B = { context: "TRANSACTIONS_LIST" },
-                R = (e) => {
-                    const t = e.location.query?.filter?.toString() || I.$W,
+                B = b.default.create(() => ({ tabStrip: { width: "100%" } })),
+                R = { context: "TRANSACTIONS_LIST" },
+                L = (e) => {
+                    const t = e.location.query?.filter?.toString() || w.$W,
                         [a, r] = n.useState(t),
-                        o = (0, y.useLazyLoadQuery)(T),
-                        l = (o.get_payments_transaction_search_filters?.filter(({ details: e }) => !!e?.title).map(({ details: e, rest_id: t }) => ({ id: t, title: e?.title || "", icon: e?.icon })) || []).map(({ icon: t, id: n, title: o }) => ({ key: n, label: o, Icon: t ? x[t] : void 0, to: { pathname: e.location.pathname, query: { filter: n } }, isActive: () => a === n, onClick: () => r(n) })),
-                        i = a === I.$W;
-                    return n.createElement(n.Fragment, null, l.length && n.createElement(C.Z, { isCompact: !0, isPillLink: !0, isRoundedRect: !0, links: l, style: M.tabStrip }), n.createElement(c.H, { errorConfig: B }, i ? n.createElement(D, (0, m.Z)({}, e, { selectedFilter: a })) : n.createElement(A, (0, m.Z)({}, e, { selectedFilter: a }))));
+                        o = (0, y.useLazyLoadQuery)(x),
+                        l = (o.get_payments_transaction_search_filters?.filter(({ details: e }) => !!e?.title).map(({ details: e, rest_id: t }) => ({ id: t, title: e?.title || "", icon: e?.icon })) || []).map(({ icon: t, id: n, title: o }) => ({ key: n, label: o, Icon: t ? A[t] : void 0, to: { pathname: e.location.pathname, query: { filter: n } }, isActive: () => a === n, onClick: () => r(n) })),
+                        i = a === w.$W;
+                    return n.createElement(n.Fragment, null, l.length && n.createElement(_.Z, { isCompact: !0, isPillLink: !0, isRoundedRect: !0, links: l, style: B.tabStrip }), n.createElement(c.H, { errorConfig: R }, i ? n.createElement(M, (0, m.Z)({}, e, { selectedFilter: a })) : n.createElement(D, (0, m.Z)({}, e, { selectedFilter: a }))));
                 },
-                L = n.memo(R),
-                z = { page: "money", section: "balance" },
-                N = "Money",
-                F = { context: "ACCOUNT_ACTIVITY" },
-                j = (e) => {
+                z = n.memo(L),
+                N = { page: "money", section: "balance" },
+                F = "Money",
+                j = { context: "ACCOUNT_ACTIVITY" },
+                H = (e) => {
                     const { history: t } = e,
                         a = (0, u.jh)(),
-                        m = n.useCallback(() => n.createElement(n.Fragment, null, n.createElement(r.Z, { style: a.root, withWideContainer: !0 }, n.createElement(c.H, { errorConfig: F }, n.createElement(d.Z, null), n.createElement(c.H, { errorConfig: F }, n.createElement(L, e))))), [a.root, e]),
+                        m = n.useCallback(() => n.createElement(n.Fragment, null, n.createElement(r.Z, { style: a.root, withWideContainer: !0 }, n.createElement(c.H, { errorConfig: j }, n.createElement(d.Z, null), n.createElement(c.H, { errorConfig: j }, n.createElement(z, e))))), [a.root, e]),
                         p = n.useCallback(() => t.goBack(), [t]);
-                    return n.createElement(i.nO, { namespace: z }, n.createElement(o.Z, { backLocation: l.gp, documentTitle: N, history: t, isFullWidth: !0, onBackClick: p, primaryContent: m(), rightControl: n.createElement(s.Z, null), sidebarContent: null, title: N }));
+                    return n.createElement(i.nO, { namespace: N }, n.createElement(o.Z, { backLocation: l.gp, documentTitle: F, history: t, isFullWidth: !0, onBackClick: p, primaryContent: m(), rightControl: n.createElement(s.Z, null), sidebarContent: null, title: F }));
                 },
-                H = n.memo(j);
+                V = n.memo(H);
         },
         829376: (e, t, a) => {
             a.r(t), a.d(t, { default: () => i });
@@ -1124,4 +1125,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-63cb1cc4.fb7d7f4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-63cb1cc4.1720a9fa.js.map

@@ -6994,12 +6994,6 @@
                 t("ed672bfa", "Toate upgrade-urile din De bază și Premium, plus..."),
                 t("db63fa1c", "Selectează un plan Premium"),
                 t("b128c6bc", "Primește o insignă de utilizator verificat și zeci de alte avantaje și beneficii incredibile"),
-                t("ef43d1f1", function (e) {
-                    return e.percentage + "% reducere pentru un an de " + e.tierName;
-                }),
-                t("f87513e7", function (e) {
-                    return e.percentage + "% reducere pentru " + e.numberOfMonths + " luni de " + e.tierName;
-                }),
                 t("acfaf7a0", "Compară niveluri și caracteristici"),
                 t("e1606e52", "Modifică-ți abonamentul"),
                 t("d2f2b91a", "înregistrează-te aici"),
@@ -7864,7 +7858,9 @@
                 }),
                 t("ec6e7d9a", "Contul tău este în modul doar citire până la finalizarea schimbării de nivel. Accesează Stripe și verifică plata pentru a te asigura că schimbarea de nivel se efectuează cu succes."),
                 t("b33d1518", "Sincronizează locurile de muncă dintr-o integrare acceptată sau dintr-un flux personalizat XML"),
-                t("dd2db402", "Pasul 1: Colectează informațiile necesare");
+                t("dd2db402", "Pasul 1: Colectează informațiile necesare"),
+                t("edb098c2", "Pasul 2: contactează echipa noastră de asistență"),
+                t("c4474460", "Pasul 2: Trimite un e-mail echipei de asistență");
             function c(e, a) {
                 for (var i = 0; i < a.length; i++) {
                     var t = a[i];
@@ -7903,9 +7899,7 @@
                     u(e, a)
                 );
             }
-            t("edb098c2", "Pasul 2: contactează echipa noastră de asistență"),
-                t("c4474460", "Pasul 2: Trimite un e-mail echipei de asistență"),
-                t("a08da0fa", "Ce se întâmplă în continuare?"),
+            t("a08da0fa", "Ce se întâmplă în continuare?"),
                 t("c127374e", "Trimite-ne un mesaj"),
                 t("b2cb2a0c", "Numele de utilizator al contului tău Organizații verificate"),
                 t("b8e64002", "Numele sistemului de monitorizare a candidaților"),
@@ -8906,10 +8900,10 @@
                 }),
                 t("b1eb72fa", "Ne pare rău, acest videoclip este restricționat în anumite zone; așteaptă câteva secunde în timp ce îți obținem locația. Asigură-te că ai activat setările de locație în browser."),
                 t("c057680c", "Nu putem reda videoclipul în acest browser. Încearcă un alt browser web."),
-                t("i5dfae6e", "Acest videoclip nu este disponibil în locația ta.");
-            t("c2388276", "Acest videoclip a fost șters."),
-                t("d2c96140", "Indicator audio pentru invitați"),
-                t("f6dc9146", "REDĂ DIN NOU"),
+                t("i5dfae6e", "Acest videoclip nu este disponibil în locația ta."),
+                t("c2388276", "Acest videoclip a fost șters."),
+                t("d2c96140", "Indicator audio pentru invitați");
+            t("f6dc9146", "REDĂ DIN NOU"),
                 t("d30c74fe", "Volum"),
                 t("f2d4e6f2", "Urmărește din nou"),
                 t("e9f1af3a", "Află mai multe"),
@@ -13256,4 +13250,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ro.5174b92a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ro.9436bdea.js.map

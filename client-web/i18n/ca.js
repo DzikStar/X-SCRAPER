@@ -6983,12 +6983,6 @@
                 t("ed672bfa", "Totes les actualitzacions des de Basic i Premium més..."),
                 t("db63fa1c", "Selecciona un pla premium"),
                 t("b128c6bc", "Aconsegueix una insígnia verificada i desenes d'altres avantatges i beneficis increïbles"),
-                t("ef43d1f1", function (e) {
-                    return e.percentage + " % de descompte per a un any de " + e.tierName;
-                }),
-                t("f87513e7", function (e) {
-                    return e.percentage + " % de descompte per a " + e.numberOfMonths + " mesos de " + e.tierName;
-                }),
                 t("acfaf7a0", "Compara nivells i característiques"),
                 t("e1606e52", "Canvia la teva subscripció"),
                 t("d2f2b91a", "registre aquí"),
@@ -7853,7 +7847,9 @@
                 }),
                 t("ec6e7d9a", "El compte està en mode només de lectura fins que es completi el canvi de nivell pendent. Ves a Stripe per comprovar el pagament i assegurar-te que el canvi es produeix correctament."),
                 t("b33d1518", "Sincronitza feines des d'una integració admesa o un canal XML personalitzat"),
-                t("dd2db402", "Pas 1: recull la informació necessària");
+                t("dd2db402", "Pas 1: recull la informació necessària"),
+                t("edb098c2", "Pas 2: contacta amb el nostre equip d'assistència"),
+                t("c4474460", "Pas 2: envia un correu electrònic al nostre equip d'assistència");
             function s(e, a) {
                 for (var i = 0; i < a.length; i++) {
                     var t = a[i];
@@ -7892,9 +7888,7 @@
                     n(e, a)
                 );
             }
-            t("edb098c2", "Pas 2: contacta amb el nostre equip d'assistència"),
-                t("c4474460", "Pas 2: envia un correu electrònic al nostre equip d'assistència"),
-                t("a08da0fa", "I ara què passarà?"),
+            t("a08da0fa", "I ara què passarà?"),
                 t("c127374e", "Envia'ns un missatge"),
                 t("b2cb2a0c", "Nom d'usuari del teu compte d'Organització verificada"),
                 t("b8e64002", "Nom del teu sistema de seguiment d'aspirants"),
@@ -8895,10 +8889,10 @@
                 }),
                 t("b1eb72fa", "Aquest vídeo està restringit en algunes zones. Espera't uns quants segons mentre detectem la teva ubicació. Comprova que hagis activat els serveis d'ubicació al navegador."),
                 t("c057680c", "No podem reproduir el vídeo en aquest navegador. Prova-ho amb un altre navegador web."),
-                t("i5dfae6e", "El vídeo no està disponible des de la teva ubicació.");
-            t("c2388276", "S'ha suprimit el vídeo."),
-                t("d2c96140", "Indicador d'àudio del convidat"),
-                t("f6dc9146", "REEMISSIÓ"),
+                t("i5dfae6e", "El vídeo no està disponible des de la teva ubicació."),
+                t("c2388276", "S'ha suprimit el vídeo."),
+                t("d2c96140", "Indicador d'àudio del convidat");
+            t("f6dc9146", "REEMISSIÓ"),
                 t("d30c74fe", "Volum"),
                 t("f2d4e6f2", "Torna'l a mirar"),
                 t("e9f1af3a", "Descobreix-ne més"),
@@ -13243,4 +13237,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ca.3e07aa0a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ca.b9cf650a.js.map

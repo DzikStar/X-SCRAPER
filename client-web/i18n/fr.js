@@ -6987,12 +6987,6 @@
                 n("ed672bfa", "Toutes les mises à niveau des abonnements Basique et Premium, plus…"),
                 n("db63fa1c", "Choisissez un abonnement Premium"),
                 n("b128c6bc", "Obtenez un badge Certifié et des dizaines d'autres avantages et bénéfices exceptionnels."),
-                n("ef43d1f1", function (e) {
-                    return e.percentage + " % de remise sur une année de " + e.tierName;
-                }),
-                n("f87513e7", function (e) {
-                    return e.percentage + " % de remise sur " + e.numberOfMonths + " mois de " + e.tierName;
-                }),
                 n("acfaf7a0", "Comparer les abonnements et fonctionnalités"),
                 n("e1606e52", "Modifier l'abonnement"),
                 n("d2f2b91a", "inscrivez‑vous ici"),
@@ -7857,7 +7851,9 @@
                 }),
                 n("ec6e7d9a", "Votre compte est en mode lecture seule jusqu'à ce que votre changement d'abonnement soit effectif. Veuillez accéder à Stripe pour vérifier votre paiement afin de garantir la prise en compte de votre nouvel abonnement."),
                 n("b33d1518", "Synchroniser les offres d'emploi depuis une intégration prise en charge ou un flux XML personnalisé"),
-                n("dd2db402", "Étape 1 : rassembler les informations requises");
+                n("dd2db402", "Étape 1 : rassembler les informations requises"),
+                n("edb098c2", "Étape 2 : contactez notre équipe d'assistance"),
+                n("c4474460", "Étape 2 : envoyer un email à notre équipe d'assistance");
             function a(e, t) {
                 for (var s = 0; s < t.length; s++) {
                     var n = t[s];
@@ -7896,9 +7892,7 @@
                     i(e, t)
                 );
             }
-            n("edb098c2", "Étape 2 : contactez notre équipe d'assistance"),
-                n("c4474460", "Étape 2 : envoyer un email à notre équipe d'assistance"),
-                n("a08da0fa", "Que se passe‑t‑il ensuite ?"),
+            n("a08da0fa", "Que se passe‑t‑il ensuite ?"),
                 n("c127374e", "Nous envoyer un message"),
                 n("b2cb2a0c", "Nom d'utilisateur de votre compte Organisations certifiées"),
                 n("b8e64002", "Nom de votre système de suivi des candidatures"),
@@ -8899,10 +8893,10 @@
                 }),
                 n("b1eb72fa", "Désolé, l'accès à cette vidéo est restreint dans certaines régions. Veuillez attendre quelques secondes pendant que nous déterminons votre localisation. Assurez-vous d'activer les paramètres de localisation dans votre navigateur."),
                 n("c057680c", "Nous ne pouvons pas lire la vidéo dans ce navigateur. Veuillez essayer un autre navigateur Web."),
-                n("i5dfae6e", "Cette vidéo n'est pas disponible dans votre région.");
-            n("c2388276", "Cette vidéo a été supprimée."),
-                n("d2c96140", "Indicateur audio invité"),
-                n("f6dc9146", "REDIFFUSION"),
+                n("i5dfae6e", "Cette vidéo n'est pas disponible dans votre région."),
+                n("c2388276", "Cette vidéo a été supprimée."),
+                n("d2c96140", "Indicateur audio invité");
+            n("f6dc9146", "REDIFFUSION"),
                 n("d30c74fe", "Volume"),
                 n("f2d4e6f2", "Revoir"),
                 n("e9f1af3a", "En savoir plus"),
@@ -13246,4 +13240,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.6171fc1a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.aff399da.js.map

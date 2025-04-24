@@ -275,7 +275,7 @@
                     const W = (0, h.b)(),
                         L = (0, h.b)(),
                         z = (0, h.b)(),
-                        M = o.createElement(c.ZP, { color: "text", id: W, role: "label", size: T ? "body" : "headline2", testID: "headline-label", weight: T ? "medium" : "bold" }, E),
+                        M = o.createElement(c.ZP, { color: "text", id: W, role: "label", size: T ? "body" : "headline2", testID: "headline-label", weight: T ? "normal" : "bold" }, E),
                         j = !!u && o.createElement(c.ZP, { color: "gray700", id: L, size: "subtext1", style: Z ? m.descriptionWithPill : m.description, testID: "description-label" }, u),
                         F = o.createElement(c.ZP, { color: "gray700", role: "label", size: "subtext2", style: m.description }, S),
                         A = Z ? o.createElement(d.ZP, { style: a ? m.pill : m.inlinePill, type: I }, Z) : null,
@@ -418,4 +418,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-e907d115.c270f67a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-e907d115.67912fda.js.map

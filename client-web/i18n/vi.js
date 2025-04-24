@@ -6982,12 +6982,6 @@
                 t("ed672bfa", "Tất cả được nâng cấp từ gói Cơ bản và Premium, cộng với..."),
                 t("db63fa1c", "Chọn gói Premium"),
                 t("b128c6bc", "Nhận huy hiệu đã xác nhận và hàng chục đặc quyền cũng như lợi ích tuyệt vời khác"),
-                t("ef43d1f1", function (n) {
-                    return "Giảm " + n.percentage + "% cho một năm sử dụng " + n.tierName;
-                }),
-                t("f87513e7", function (n) {
-                    return "Giảm " + n.percentage + "% cho " + n.numberOfMonths + " tháng sử dụng " + n.tierName;
-                }),
                 t("acfaf7a0", "So cách các loại gói và tính năng"),
                 t("e1606e52", "Thay đổi gói thuê bao của bạn"),
                 t("d2f2b91a", "đăng ký tại đây"),
@@ -7852,7 +7846,9 @@
                 }),
                 t("ec6e7d9a", "Tài khoản của bạn sẽ ở chế độ chỉ đọc cho đến khi quá trình xử lý việc chuyển cấp hoàn tất. Hãy truy cập vào Stripe để kiểm tra quá trình thanh toán nhằm đảm bảo chuyển cấp thành công."),
                 t("b33d1518", "Đồng bộ hóa việc làm từ các phần tích hợp được hỗ trợ hoặc nguồn cấp dữ liệu XML tùy chỉnh"),
-                t("dd2db402", "Bước 1: Thu thập thông tin cần thiết");
+                t("dd2db402", "Bước 1: Thu thập thông tin cần thiết"),
+                t("edb098c2", "Bước 2: Liên hệ nhóm hỗ trợ của chúng tôi"),
+                t("c4474460", "Bước 2: Gửi email cho nhóm hỗ trợ của chúng tôi");
             function g(n, h) {
                 for (var c = 0; c < h.length; c++) {
                     var t = h[c];
@@ -7891,9 +7887,7 @@
                     a(n, h)
                 );
             }
-            t("edb098c2", "Bước 2: Liên hệ nhóm hỗ trợ của chúng tôi"),
-                t("c4474460", "Bước 2: Gửi email cho nhóm hỗ trợ của chúng tôi"),
-                t("a08da0fa", "Điều gì xảy ra tiếp theo?"),
+            t("a08da0fa", "Điều gì xảy ra tiếp theo?"),
                 t("c127374e", "Gửi tin nhắn cho chúng tôi"),
                 t("b2cb2a0c", "Tên người dùng của tài khoản Tổ chức đã xác nhận của bạn"),
                 t("b8e64002", "Tên hệ thống theo dõi ứng viên của bạn"),
@@ -8894,10 +8888,10 @@
                 }),
                 t("b1eb72fa", "Rất tiếc, video này bị hạn chế ở những khu vực nhất định, vui lòng chờ một vài giây để chúng tôi lấy được vị trí của bạn. Hãy chắc chắn bật cài đặt vị trí trong trình duyệt của mình."),
                 t("c057680c", "Chúng tôi không thể phát video trong trình duyệt này. Vui lòng thử một trình duyệt web khác."),
-                t("i5dfae6e", "Video này không khả dụng tại vị trí của bạn.");
-            t("c2388276", "Video này đã bị xóa."),
-                t("d2c96140", "Chỉ báo âm thanh của khách"),
-                t("f6dc9146", "PHÁT LẠI"),
+                t("i5dfae6e", "Video này không khả dụng tại vị trí của bạn."),
+                t("c2388276", "Video này đã bị xóa."),
+                t("d2c96140", "Chỉ báo âm thanh của khách");
+            t("f6dc9146", "PHÁT LẠI"),
                 t("d30c74fe", "Âm lượng"),
                 t("f2d4e6f2", "Xem lại"),
                 t("e9f1af3a", "Tìm hiểu thêm"),
@@ -13241,4 +13235,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.e21436ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.9f893aba.js.map

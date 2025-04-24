@@ -233,7 +233,7 @@
                     const R = (0, g.b)(),
                         D = (0, g.b)(),
                         E = (0, g.b)(),
-                        I = t.createElement(c.ZP, { color: "text", id: R, role: "label", size: Z ? "body" : "headline2", testID: "headline-label", weight: Z ? "medium" : "bold" }, _),
+                        I = t.createElement(c.ZP, { color: "text", id: R, role: "label", size: Z ? "body" : "headline2", testID: "headline-label", weight: Z ? "normal" : "bold" }, _),
                         z = !!p && t.createElement(c.ZP, { color: "gray700", id: D, size: "subtext1", style: x ? m.descriptionWithPill : m.description, testID: "description-label" }, p),
                         W = t.createElement(c.ZP, { color: "gray700", role: "label", size: "subtext2", style: m.description }, v),
                         G = x ? t.createElement(u.ZP, { style: i ? m.pill : m.inlinePill, type: B }, x) : null,
@@ -271,4 +271,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterBlue-6107ac1a.e5b28e6a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterBlue-6107ac1a.91f8e38a.js.map

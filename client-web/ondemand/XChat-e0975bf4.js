@@ -2,62 +2,86 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["ondemand.XChat-e0975bf4"],
     {
-        691063: (e, t, n) => {
-            n.d(t, { P: () => N });
+        547334: (e, t, n) => {
+            n.d(t, { P: () => P });
             var s = n(552322),
                 i = n(425522),
                 a = n(941204),
                 o = n(335944),
-                r = n(202784);
-            function l({ src: e, type: t }) {
-                const [n, i] = (0, r.useState)(!1),
-                    a = [{ type: "Gif" === t.name ? "animated_gif" : "image", src: e, previewImage: e }];
+                r = n(702024),
+                l = n(202784),
+                c = n(94595),
+                d = n(390278);
+            function m({ src: e, type: t, dimensions: n }) {
+                const { width: i, height: a } = h(n),
+                    [r, c] = (0, l.useState)(!1),
+                    m = [{ type: "Video" === t.name ? "video" : "Gif" === t.name ? "animated_gif" : "image", src: e, previewImage: e }];
                 return (0, s.jsxs)(s.Fragment, {
                     children: [
-                        (0, s.jsx)("img", { src: e, loading: "lazy", alt: "attachment", className: "max-w-[300px] max-h-[400px] w-full h-full cursor-pointer", onClick: () => i(!0) }),
+                        "Video" === t.name ? (0, s.jsx)("div", { className: "max-w-[300px] max-h-[400px]", children: (0, s.jsx)(d.q, { src: e, poster: e, type: "video/mp4", autoPlay: !0, muted: !0, loop: !0, playsInline: !0, style: { width: `${i}px`, height: `${a}px` } }) }) : (0, s.jsx)("img", { src: e, loading: "lazy", alt: "attachment", className: "max-w-[300px] max-h-[400px] cursor-pointer bg-gray-50", style: { width: `${i}px`, height: `${a}px` }, onClick: () => c(!0) }),
                         (0, s.jsx)(o.e, {
-                            mediaItems: a,
+                            mediaItems: m,
                             initialIndex: 0,
-                            isOpen: n,
+                            isOpen: r,
                             onClose: () => {
-                                i(!1);
+                                c(!1);
                             },
                         }),
                     ],
                 });
             }
-            var c = n(702024),
-                d = n(26429),
-                m = n(412035),
-                x = n(559274),
-                u = n(862399),
-                h = n(812115),
-                p = n(615069),
-                v = n(796309);
-            const f = i.com.x.models.dm.PostLoadingState,
-                g = i.com.x.dms.chat.DmEvent;
-            function j({ post: e, onEvent: t, className: n }) {
-                if (e.postState instanceof f.NeedsResolution) return t(new g.ResolvePost(e.id)), (0, s.jsxs)("div", { className: "flex-col gap-2 w-52 h-32 bg-gray-200 flex items-center justify-center", children: [(0, s.jsx)(c.P, {}), (0, s.jsx)("div", { className: "text-sm text-gray-500", children: "x.com" })] });
-                if (e.postState instanceof f.ResolvedPost) {
+            function x({ dimensions: e }) {
+                const { width: t, height: n } = h(e);
+                return (0, s.jsx)("div", { className: "bg-gray-50 flex items-center justify-center", style: { width: `${t}px`, height: `${n}px` }, children: (0, s.jsx)(r.P, {}) });
+            }
+            function u({ dimensions: e }) {
+                const { width: t, height: n } = h(e);
+                return (0, s.jsxs)("div", { className: "bg-gray-50 flex flex-col gap-1.5 items-center justify-center text-gray-700", style: { width: `${t}px`, height: `${n}px` }, children: [(0, s.jsx)(c.Z, {}), (0, s.jsx)(a.x, { color: "gray700", children: "Failed to load" })] });
+            }
+            function h(e) {
+                const t = e ? e.width / e.height : 1;
+                let n = Math.min(300, e?.width || 200),
+                    s = n / t;
+                return s > 400 && ((s = 400), (n = s * t)), { width: n, height: s };
+            }
+            var p = n(26429),
+                v = n(412035),
+                f = n(559274),
+                g = n(862399),
+                j = n(812115),
+                w = n(615069),
+                y = n(796309);
+            const C = i.com.x.models.dm.PostLoadingState,
+                b = i.com.x.dms.chat.DmEvent;
+            function N({ post: e, onEvent: t, className: n }) {
+                if (e.postState instanceof C.NeedsResolution) return t(new b.ResolvePost(e.id)), (0, s.jsxs)("div", { className: "flex-col gap-2 w-52 h-32 bg-gray-200 flex items-center justify-center", children: [(0, s.jsx)(r.P, {}), (0, s.jsx)("div", { className: "text-sm text-gray-500", children: "x.com" })] });
+                if (e.postState instanceof C.ResolvedPost) {
                     const t = e.postState.post;
                     return (0, s.jsxs)("div", {
-                        className: (0, v.cn)("flex flex-col gap-2 h-full w-full border border-gray-200 py-2 px-4 cursor-pointer hover:bg-gray-50/50 transition-colors duration-100", n),
+                        className: (0, y.cn)("flex flex-col gap-2 h-full w-full border border-gray-200 py-2 px-4 cursor-pointer hover:bg-gray-50/50 transition-colors duration-100", n),
                         onClick: () => {
                             window.open(e.url, "_blank");
                         },
-                        children: [(0, s.jsxs)("div", { className: "flex gap-2 items-center", children: [(0, s.jsx)(d.q, { screenName: t.author.screenName, size: "small", url: t.author.profileImageUrl, withLink: "external", shape: t.author.profileImageShape, className: "size-5 shrink-0" }), (0, s.jsxs)("div", { className: "flex items-center gap-1 w-full", children: [(0, s.jsx)(m.R, { badges: t.author.badges, name: t.author.name, size: "subtext1", withLink: "external", screenNameColor: "gray800", screenName: t.author.screenName, isStacked: !1 }), (0, s.jsx)("div", { className: "shrink-0 size-0.5 bg-text/40 rounded-full" }), (0, s.jsx)("div", { className: "shrink-0", children: (0, s.jsx)(x.E, { timestamp: t.createdAt, size: "subtext1", color: "gray800" }) })] })] }), (0, s.jsx)(u.W, { text: t.text, displayTextRange: t.displayTextRange, entities: t.entities })],
+                        children: [(0, s.jsxs)("div", { className: "flex gap-2 items-center", children: [(0, s.jsx)(p.q, { screenName: t.author.screenName, size: "small", url: t.author.profileImageUrl, withLink: "external", shape: t.author.profileImageShape, className: "size-5 shrink-0" }), (0, s.jsxs)("div", { className: "flex items-center gap-1 w-full", children: [(0, s.jsx)(v.R, { badges: t.author.badges, name: t.author.name, size: "subtext1", withLink: "external", screenNameColor: "gray800", screenName: t.author.screenName, isStacked: !1 }), (0, s.jsx)("div", { className: "shrink-0 size-0.5 bg-text/40 rounded-full" }), (0, s.jsx)("div", { className: "shrink-0", children: (0, s.jsx)(f.E, { timestamp: t.createdAt, size: "subtext1", color: "gray800" }) })] })] }), (0, s.jsx)(g.W, { text: t.text, displayTextRange: t.displayTextRange, entities: t.entities })],
                     });
                 }
-                return (0, s.jsxs)(h.r, { href: e.url, target: "_blank", className: "gap-2 w-52 p-4 bg-gray-200 flex items-center justify-between", children: [(0, s.jsx)(a.x, { children: "x.com" }), (0, s.jsx)("div", { className: "text-headline1", children: (0, s.jsx)(p.Z, {}) })] });
+                return (0, s.jsxs)(j.r, { href: e.url, target: "_blank", className: "gap-2 w-52 p-4 bg-gray-200 flex items-center justify-between", children: [(0, s.jsx)(a.x, { children: "x.com" }), (0, s.jsx)("div", { className: "text-headline1", children: (0, s.jsx)(w.Z, {}) })] });
             }
-            function w({ isReceived: e, urlCard: t }) {
+            function k({ isReceived: e, urlCard: t }) {
                 return (0, s.jsx)("div", { className: "flex py-2 px-4 " + (e ? "bg-gray-200" : "bg-blue-500"), children: (0, s.jsx)(a.x, { as: "a", color: e ? "text" : "white", style: { overflowWrap: "anywhere" }, href: t.urlToOpen, children: t.displayTitle || t.urlToOpen }) });
             }
-            const C = i.com.x.dms.model.MessageItemAttachment,
-                y = i.com.x.dms.chat.DmEvent,
-                b = i.com.x.dms.model.MediaUriState;
-            function N({ attachment: e, isReceived: t, onEvent: n, className: i }) {
-                return e instanceof C.Post ? (0, s.jsx)(j, { isReceived: t, post: e, onEvent: n, className: i }) : e instanceof C.UrlCard ? (0, s.jsx)(w, { isReceived: t, urlCard: e }) : e instanceof C.Media && e instanceof C.Media.FromServer && (e.uriState instanceof b.AttachmentNeedsResolving && n(new y.ResolveAttachment(e.uriState)), e.uriState instanceof b.ResolvedMedia) ? (0, s.jsx)(l, { src: e.uriState.uri, type: e.type }) : (0, s.jsx)(a.x, { color: t ? "text" : "white", children: "Attachment" });
+            const S = i.com.x.dms.model.MessageItemAttachment,
+                E = i.com.x.dms.chat.DmEvent,
+                I = i.com.x.dms.model.MediaUriState;
+            function P({ attachment: e, isReceived: t, onEvent: n, className: i }) {
+                if (e instanceof S.Post) return (0, s.jsx)(N, { isReceived: t, post: e, onEvent: n, className: i });
+                if (e instanceof S.UrlCard) return (0, s.jsx)(k, { isReceived: t, urlCard: e });
+                if (e instanceof S.Media && e instanceof S.Media.FromServer) {
+                    if ((e.uriState instanceof I.AttachmentNeedsResolving && n(new E.ResolveAttachment(e.uriState)), e.uriState instanceof I.ResolvedMedia)) return (0, s.jsx)(m, { src: e.uriState.uri, type: e.type, dimensions: e.dimensions });
+                    if (e.uriState instanceof I.Resolving) return (0, s.jsx)(x, { dimensions: e.dimensions });
+                    if (e.uriState === I.FailedToLoad) return (0, s.jsx)(u, { dimensions: e.dimensions });
+                }
+                return (0, s.jsx)(a.x, { color: t ? "text" : "white", children: "Attachment" });
             }
         },
         264531: (e, t, n) => {
@@ -135,16 +159,14 @@
                 o = ({ url: e, size: t, resolution: n = "200x200" }) => (0, s.jsx)(i.q, { url: e || a, size: t, resolution: n });
         },
         611463: (e, t, n) => {
-            n.d(t, { U: () => P, n: () => E });
+            n.d(t, { U: () => E, n: () => k });
             var s = n(552322),
                 i = n(425522),
                 a = n(202784),
                 o = n(781441),
-                r = n(439261),
-                l = n(84504),
-                c = n(173399),
-                d = n(664147);
-            class m {
+                r = n(84504),
+                l = n(664147);
+            class c {
                 url;
                 options;
                 constructor(e, t) {
@@ -154,73 +176,69 @@
                     return new Worker(this.url, this.options);
                 }
             }
-            var x = n(8974),
-                u = n(303676),
-                h = n(928220),
-                p = n(879922),
-                v = n(196594);
-            const f = i.com.x.dms.util;
-            class g extends i.com.x.dms.util.EntityParser {
+            var d = n(8974),
+                m = n(303676),
+                x = n(928220),
+                u = n(879922),
+                h = n(196594);
+            const p = i.com.x.dms.util;
+            class v extends i.com.x.dms.util.EntityParser {
                 doParse(e) {
-                    return i.kotlin.collections.KtList.fromJsArray([...(0, x.Z)(e).map(({ indices: e }) => new f.ParsedEntity.Email(...e)), ...(0, u.Z)(e).map(({ indices: e }) => new f.ParsedEntity.Hashtag(...e)), ...(0, h.Z)(e).map(({ indices: e }) => new f.ParsedEntity.Cashtag(...e)), ...(0, p.Z)(e).map(({ indices: e }) => new f.ParsedEntity.Mention(...e)), ...(0, v.Z)(e).map(({ indices: e }) => new f.ParsedEntity.Url(...e))]);
+                    return i.kotlin.collections.KtList.fromJsArray([...(0, d.Z)(e).map(({ indices: e }) => new p.ParsedEntity.Email(...e)), ...(0, m.Z)(e).map(({ indices: e }) => new p.ParsedEntity.Hashtag(...e)), ...(0, x.Z)(e).map(({ indices: e }) => new p.ParsedEntity.Cashtag(...e)), ...(0, u.Z)(e).map(({ indices: e }) => new p.ParsedEntity.Mention(...e)), ...(0, h.Z)(e).map(({ indices: e }) => new p.ParsedEntity.Url(...e))]);
                 }
             }
-            var j = n(842898),
-                w = n(889906),
-                C = n(446368);
-            const y = i.com.x.dms.EmojiPickerBottomSheetModel,
-                b = i.kotlin.collections.KtList,
-                N = (0, a.createContext)(void 0),
-                k = "undefined" == typeof window;
-            let S;
-            function E() {
-                const e = (0, a.useContext)(N);
+            var f = n(842898),
+                g = n(889906),
+                j = n(446368);
+            const w = i.com.x.dms.EmojiPickerBottomSheetModel,
+                y = i.kotlin.collections.KtList,
+                C = (0, a.createContext)(void 0),
+                b = "undefined" == typeof window;
+            let N;
+            function k() {
+                const e = (0, a.useContext)(C);
                 if (!e) throw new Error("useGraph must be used within an GraphProvider");
                 return e;
             }
-            function I(e, t) {
-                const s = "true" === localStorage.getItem(d.e) || !1,
-                    a = (0, r.R)(),
-                    x = (0, l.n5)();
-                const u = (function () {
-                    const e = new m(new URL(n.p + n.u("node_modules_x-clients_features_dist_dms_sqlite_worker_js"), n.b), { type: void 0 }).createWorker();
+            function S(e, t) {
+                const s = "true" === localStorage.getItem(l.e) || !1,
+                    a = (0, r.n5)();
+                const d = (function () {
+                    const e = new c(new URL(n.p + n.u("node_modules_x-clients_features_dist_dms_sqlite_worker_js"), n.b), { type: void 0 }).createWorker();
                     return (e.onerror = (e) => {}), e;
                 })();
-                u.postMessage({ action: "init_db", dbName: `${(0, l.n5)()}_chat`, clear: a, id: "init_1" }),
-                    window.addEventListener("beforelogout", () => {
-                        u.postMessage({ action: "before_logout" }), (0, c.Y)(x);
-                    });
+                d.postMessage({ action: "init_db", dbName: `${(0, r.n5)()}_chat`, id: "init_1" });
                 return new i.com.x.dms.WebDmObjectGraph(
-                    i.com.x.models.UserIdentifier.ofString(x),
-                    u,
+                    i.com.x.models.UserIdentifier.ofString(a),
+                    d,
                     o._,
                     (t, n) => {
-                        (0, j.S)(t.value.toString(), e).then((e) => {
+                        (0, f.S)(t.value.toString(), e).then((e) => {
                             if (!e) return void n(new i.com.x.dms.LoadPostResult.OtherFailure());
                             const t = new i.com.x.dms.LoadPostResult.Success(e);
                             n(t);
                         });
                     },
                     async function () {
-                        return new y(b.fromJsArray([]));
+                        return new w(y.fromJsArray([]));
                     },
                     (e, n, s, i, a) => {
                         t.scribe({ client: "m5", page: e ?? void 0, section: n ?? void 0, component: s ?? void 0, element: i ?? void 0, action: a ?? void 0 });
                     },
                     new i.com.x.dms.WebOptions(!1, !0),
                     s,
-                    new g(),
+                    new v(),
                 );
             }
-            function P({ children: e }) {
-                if (k) return;
-                const t = (0, w.useRelayEnvironment)(),
-                    n = (0, C.z$)();
-                return S || (S = I(t, n)), (0, s.jsx)(N.Provider, { value: S, children: e });
+            function E({ children: e }) {
+                if (b) return;
+                const t = (0, g.useRelayEnvironment)(),
+                    n = (0, j.z$)();
+                return N || (N = S(t, n)), (0, s.jsx)(C.Provider, { value: N, children: e });
             }
         },
         200012: (e, t, n) => {
-            n.d(t, { p: () => Ze });
+            n.d(t, { p: () => Oe });
             var s = n(552322),
                 i = n(469745),
                 a = n(727071),
@@ -246,7 +264,7 @@
                 g = n(803049),
                 j = n(537335),
                 w = n(336984);
-            const C = ({ previewWithMetadata: e }) => {
+            const y = ({ previewWithMetadata: e }) => {
                     if (!e.preview) return null;
                     const t = e.preview.latestMessagePreview,
                         n = e.metadata.usersByIdAllTime.asJsReadonlyMapView(),
@@ -288,15 +306,15 @@
                     }
                     return l;
                 },
-                y = o.com.x.dms.ReadByOthersIndicator,
+                C = o.com.x.dms.ReadByOthersIndicator,
                 b = ({ onEvent: e, previewWithMetadata: t, isSelected: n }) => {
                     const i = t.preview?.timestampValue,
                         a = t.metadata.title instanceof o.com.x.dms.model.DmTitleState.OneToOne;
-                    return (0, s.jsxs)("div", { className: "flex flex-row", children: [(0, s.jsxs)("div", { className: `flex items-start grow p-2 mr-2 gap-5 rounded-lg hover:bg-gray-100 ${n && "bg-gray-0"} transition-colors cursor-pointer`, children: [(0, s.jsx)(h, { avatarSize: "xxLarge", titleState: t.metadata.title, onCustomAvatarNeedsResolving: (n) => e(new o.com.x.dms.convlist.ConversationListEvent.CustomAvatarNeedsResolving(t.conversationId, n)), isInlineFacepile: !0 }), (0, s.jsxs)("div", { className: "flex-1 gap-5", children: [(0, s.jsx)(d.R, { name: t.metadata.title.title, badges: a ? (0, w.r)(t.metadata.title.otherUser) : void 0 }), (0, s.jsx)(r.x, { color: "gray700", weight: t.isUnreadByMe ? "bold" : "normal", numberOfLines: 1, className: "break-all", children: (0, s.jsx)(C, { previewWithMetadata: t }) })] }), (0, s.jsxs)("div", { className: "flex flex-col items-end", children: [(0, s.jsxs)("div", { className: "flex flex-row gap-1 items-center h-5", children: [(0, s.jsx)(r.x, { size: "subtext3", children: i && (0, s.jsx)(j.Q, { timestamp: i }) }), t.isMuted && (0, s.jsx)(p.Z, { width: "14", height: "14", className: "text-gray-700" })] }), (0, s.jsxs)("div", { className: "flex flex-row gap-1 items-center h-5", children: [t.showReadByOthersIndicator === y.Read && (0, s.jsx)(v.Z, { width: "14", height: "14", className: "text-gray-700" }), t.showReadByOthersIndicator === y.Unread && (0, s.jsx)(f.Z, { width: "14", height: "14", className: "text-gray-700" }), t.isUnreadByMe && (0, s.jsx)(g.Z, { width: "14", height: "14", className: "text-blue-500" })] })] })] }), (0, s.jsx)("div", { className: `w-1 ${n ? "bg-text" : "bg-background"} justify-self-end rounded-lg` })] });
+                    return (0, s.jsxs)("div", { className: "flex flex-row", children: [(0, s.jsxs)("div", { className: `flex items-start grow p-2 mr-2 gap-5 rounded-lg hover:bg-gray-100 ${n && "bg-gray-0"} transition-colors cursor-pointer`, children: [(0, s.jsx)(h, { avatarSize: "xxLarge", titleState: t.metadata.title, onCustomAvatarNeedsResolving: (n) => e(new o.com.x.dms.convlist.ConversationListEvent.CustomAvatarNeedsResolving(t.conversationId, n)), isInlineFacepile: !0 }), (0, s.jsxs)("div", { className: "flex-1 gap-5", children: [(0, s.jsx)(d.R, { name: t.metadata.title.title, badges: a ? (0, w.r)(t.metadata.title.otherUser) : void 0 }), (0, s.jsx)(r.x, { color: "gray700", weight: t.isUnreadByMe ? "bold" : "normal", numberOfLines: 1, className: "break-all", children: (0, s.jsx)(y, { previewWithMetadata: t }) })] }), (0, s.jsxs)("div", { className: "flex flex-col items-end", children: [(0, s.jsxs)("div", { className: "flex flex-row gap-1 items-center h-5", children: [(0, s.jsx)(r.x, { size: "subtext3", children: i && (0, s.jsx)(j.Q, { timestamp: i }) }), t.isMuted && (0, s.jsx)(p.Z, { width: "14", height: "14", className: "text-gray-700" })] }), (0, s.jsxs)("div", { className: "flex flex-row gap-1 items-center h-5", children: [t.showReadByOthersIndicator === C.Read && (0, s.jsx)(v.Z, { width: "14", height: "14", className: "text-gray-700" }), t.showReadByOthersIndicator === C.Unread && (0, s.jsx)(f.Z, { width: "14", height: "14", className: "text-gray-700" }), t.isUnreadByMe && (0, s.jsx)(g.Z, { width: "14", height: "14", className: "text-blue-500" })] })] })] }), (0, s.jsx)("div", { className: `w-1 ${n ? "bg-text" : "bg-background"} justify-self-end rounded-lg` })] });
                 };
             var N = n(202784),
                 k = n(110241),
-                S = n(989558);
+                S = n(921879);
             const E = ({ component: e, conversations: t }) => {
                 const n = (0, k.a)(),
                     i = (0, N.useRef)(null),
@@ -422,12 +440,12 @@
                 });
             }
             var G = n(91695),
-                O = n(339847),
-                V = n(611463),
-                Z = n(369962),
-                F = n(582440),
-                J = n(154666);
-            const $ = o.com.x.dms.chat.DmEvent.ResolveCustomGroupAvatar,
+                V = n(339847),
+                Z = n(611463),
+                O = n(369962),
+                $ = n(582440),
+                F = n(154666);
+            const J = o.com.x.dms.chat.DmEvent.ResolveCustomGroupAvatar,
                 W = o.com.x.dms.model.DmTitleState,
                 X = ({ component: e }) => {
                     const t = (0, I._)(e.state),
@@ -441,20 +459,20 @@
                         children: [
                             n
                                 ? (0, s.jsx)(c.z, {
-                                      icon: (0, s.jsx)(F.Z, {}),
+                                      icon: (0, s.jsx)($.Z, {}),
                                       onClick: (t) => {
                                           t.stopPropagation(), e.onEvent(o.com.x.dms.chat.DmEvent.BackButtonClicked);
                                       },
                                       variant: "primaryText",
                                   })
                                 : null,
-                            (0, s.jsx)(h, { avatarSize: "large", titleState: t.toolbarState, onCustomAvatarNeedsResolving: (t) => e.onEvent(new $(t)), isInlineFacepile: !1 }),
+                            (0, s.jsx)(h, { avatarSize: "large", titleState: t.toolbarState, onCustomAvatarNeedsResolving: (t) => e.onEvent(new J(t)), isInlineFacepile: !1 }),
                             (0, s.jsxs)("div", { className: "flex flex-col max-w-[60%]", children: [(0, s.jsx)(d.R, { name: t.toolbarState.title, badges: a ? (0, w.r)(t.toolbarState.otherUser) : void 0 }), (0, s.jsx)(q, { toolbarState: t.toolbarState })] }),
                         ],
                     });
                 },
                 q = ({ toolbarState: e }) => ((e instanceof W.Group || e instanceof W.OneToOne) && e.ttl ? (0, s.jsx)(K, { ttl: e.ttl }) : e instanceof W.Group ? (0, s.jsxs)(r.x, { size: "subtext2", color: "gray700", children: [e.numParticipants, " people"] }) : null),
-                K = ({ ttl: e }) => (0, s.jsxs)("div", { className: "flex flex-row gap-1", children: [(0, s.jsx)(J.Z, { className: "text-gray-700" }), (0, s.jsx)(r.x, { size: "subtext2", color: "gray700", children: (0, Z.L)(e.inWholeMilliseconds) })] });
+                K = ({ ttl: e }) => (0, s.jsxs)("div", { className: "flex flex-row gap-1", children: [(0, s.jsx)(F.Z, { className: "text-gray-700" }), (0, s.jsx)(r.x, { size: "subtext2", color: "gray700", children: (0, O.L)(e.inWholeMilliseconds) })] });
             var Q = n(617588),
                 H = n(628047),
                 Y = n(853582),
@@ -494,7 +512,7 @@
                       })
                     : null;
             }
-            const me = ({ onEvent: e, ttl: t }) => (0, s.jsx)(ae, { icon: (0, s.jsx)(J.Z, {}), title: "Vanishing Mode", showChevron: !0, value: t ? (0, Z.L)(t) : "Off", onClick: e });
+            const me = ({ onEvent: e, ttl: t }) => (0, s.jsx)(ae, { icon: (0, s.jsx)(F.Z, {}), title: "Vanishing Mode", showChevron: !0, value: t ? (0, O.L)(t) : "Off", onClick: e });
             var xe = n(844098),
                 ue = n(130629),
                 he = n(816828),
@@ -503,7 +521,7 @@
                 fe = n(517652);
             const ge = ({ conversationId: e, onVisibilityChange: t }) => {
                     const [n, i] = (0, N.useState)(null),
-                        a = (0, V.n)();
+                        a = (0, Z.n)();
                     return (
                         (0, N.useEffect)(() => {
                             const n = new o.com.x.export.CancellationSignal(),
@@ -538,7 +556,7 @@
                                 title: "Add people",
                                 leftContent: (0, s.jsx)(c.z, {
                                     variant: "primaryText",
-                                    icon: (0, s.jsx)(F.Z, {}),
+                                    icon: (0, s.jsx)($.Z, {}),
                                     onClick: () => {
                                         e.handleEvent(o.com.x.dms.addparticipants.AddGroupParticipantsEvent.BackButtonClicked);
                                     },
@@ -581,9 +599,9 @@
                         ],
                     });
                 },
-                we = ({ title: e, onBackClicked: t }) => (0, s.jsxs)("div", { className: "flex flex-shrink-0 items-center h-16 border-b border-border w-full relative", children: [(0, s.jsx)("div", { className: "absolute left-2", children: (0, s.jsx)(c.z, { icon: (0, s.jsx)(F.Z, {}), onClick: t, variant: "primaryText" }) }), (0, s.jsx)(r.x, { size: "headline1", weight: "bold", className: "flex-1 text-center", children: e })] });
-            var Ce = n(776604),
-                ye = n(578132),
+                we = ({ title: e, onBackClicked: t }) => (0, s.jsxs)("div", { className: "flex flex-shrink-0 items-center h-16 border-b border-border w-full relative", children: [(0, s.jsx)("div", { className: "absolute left-2", children: (0, s.jsx)(c.z, { icon: (0, s.jsx)($.Z, {}), onClick: t, variant: "primaryText" }) }), (0, s.jsx)(r.x, { size: "headline1", weight: "bold", className: "flex-1 text-center", children: e })] });
+            var ye = n(776604),
+                Ce = n(578132),
                 be = n(427724),
                 Ne = n(705187);
             const ke = ({ handleParticipantClicked: e, handleParticipantMenuButtonClicked: t, menuItems: n, participant: i }) => {
@@ -596,7 +614,7 @@
                                 };
                                 switch (e) {
                                     case o.com.x.dms.ParticipantMenuItem.AddAsAdmin:
-                                        return { text: "Add as admin", icon: (0, s.jsx)(ye.Z, {}), onClick: i };
+                                        return { text: "Add as admin", icon: (0, s.jsx)(Ce.Z, {}), onClick: i };
                                     case o.com.x.dms.ParticipantMenuItem.RemoveAsAdmin:
                                         return { text: "Remove as admin", icon: (0, s.jsx)(re.Z, {}), destructive: !0, onClick: i };
                                     case o.com.x.dms.ParticipantMenuItem.RemoveFromGroup:
@@ -606,7 +624,7 @@
                             })(e, i, t),
                         )
                         .filter((e) => !!e);
-                    return (0, s.jsx)(Ce.P, { items: a, trigger: (0, s.jsx)(c.z, { className: "justify-self-end", icon: (0, s.jsx)(Ne.Z, { className: "text-gray-700" }), variant: "primaryText", color: "gray700", backgroundColor: "gray700", onClick: () => e(i.user) }) });
+                    return (0, s.jsx)(ye.P, { items: a, trigger: (0, s.jsx)(c.z, { className: "justify-self-end", icon: (0, s.jsx)(Ne.Z, { className: "text-gray-700" }), variant: "primaryText", color: "gray700", backgroundColor: "gray700", onClick: () => e(i.user) }) });
                 },
                 Se = ({ handleParticipantClicked: e, handleParticipantMenuButtonClicked: t, participants: n, menuItemsMap: i }) =>
                     (0, s.jsx)(s.Fragment, {
@@ -619,7 +637,7 @@
             const Ie = o.com.x.dms.convinfo;
             function Pe({ id: e }) {
                 const [t, n] = (0, N.useState)(null),
-                    i = (0, V.n)(),
+                    i = (0, Z.n)(),
                     a = (0, se.s)(),
                     [r, c] = (0, N.useState)(!1);
                 return (
@@ -747,7 +765,7 @@
                 De = ({ id: e }) => {
                     const { t } = (0, Ee.$G)(),
                         [n, i] = (0, N.useState)(null),
-                        a = (0, V.n)(),
+                        a = (0, Z.n)(),
                         r = (0, se.s)();
                     return (
                         (0, N.useEffect)(() => {
@@ -786,7 +804,7 @@
                     return (0, s.jsxs)("div", {
                         className: "flex flex-col items-center w-full px-4 overflow-y-auto gap-6 py-6",
                         children: [
-                            (0, s.jsxs)("div", { className: "flex gap-3 justify-start", children: [(0, s.jsx)(J.Z, { className: "flex-shrink-0", width: 24, height: 24 }), (0, s.jsx)(r.x, { children: t("After messages in this chat get read, they will vanish after the selected time below.") })] }),
+                            (0, s.jsxs)("div", { className: "flex gap-3 justify-start", children: [(0, s.jsx)(F.Z, { className: "flex-shrink-0", width: 24, height: 24 }), (0, s.jsx)(r.x, { children: t("After messages in this chat get read, they will vanish after the selected time below.") })] }),
                             (0, s.jsx)("div", {
                                 className: "w-full bg-gray-0 rounded-xl",
                                 children: n.times.asJsReadonlyArrayView().map((i, a) => {
@@ -812,7 +830,7 @@
                 Ue = ({ id: e }) => {
                     const { t } = (0, Ee.$G)(),
                         [n, i] = (0, N.useState)(null),
-                        a = (0, V.n)(),
+                        a = (0, Z.n)(),
                         r = (0, se.s)();
                     return (
                         (0, N.useEffect)(() => {
@@ -878,7 +896,7 @@
                       : "" !== e && n
                         ? (0, s.jsx)(De, { id: e })
                         : "" !== e
-                          ? (0, s.jsx)(Oe, { id: e })
+                          ? (0, s.jsx)(Ve, { id: e })
                           : (0, s.jsxs)("div", {
                                 className: "flex flex-col h-screen w-full justify-center items-center flex-grow gap-4",
                                 children: [
@@ -896,9 +914,9 @@
                                 ],
                             });
             }
-            function Oe({ id: e }) {
+            function Ve({ id: e }) {
                 const [t, n] = (0, N.useState)(null),
-                    i = (0, V.n)(),
+                    i = (0, Z.n)(),
                     a = (0, se.s)();
                 return (
                     (0, N.useEffect)(() => {
@@ -925,13 +943,13 @@
                             }
                         );
                     }, [i, e, a]),
-                    t ? (0, s.jsxs)("div", { className: "flex flex-col h-screen flex-grow", children: [(0, s.jsx)(X, { component: t }), (0, s.jsx)("div", { className: "flex-1 overflow-hidden", children: (0, s.jsx)(Re.Bu, { children: (0, s.jsx)(O.r, { component: t }) }) }), (0, s.jsx)(G.R, { component: t })] }) : (0, s.jsx)("div", { children: "Loading..." })
+                    t ? (0, s.jsxs)("div", { className: "flex flex-col h-screen flex-grow", children: [(0, s.jsx)(X, { component: t }), (0, s.jsx)("div", { className: "flex-1 overflow-hidden", children: (0, s.jsx)(Re.Bu, { children: (0, s.jsx)(V.r, { component: t }) }) }), (0, s.jsx)(G.R, { component: t })] }) : (0, s.jsx)("div", { children: "Loading..." })
                 );
             }
-            var Ve = n(607499);
-            const Ze = () => {
+            var Ze = n(607499);
+            const Oe = () => {
                     const [e, t] = (0, N.useState)(null),
-                        n = (0, V.n)(),
+                        n = (0, Z.n)(),
                         i = (0, se.s)(),
                         [a, r] = (0, N.useState)(!1);
                     return (
@@ -963,10 +981,10 @@
                                 }
                             );
                         }, [n, i]),
-                        null === e ? (0, s.jsx)("div", { className: "flex flex-col justify-center h-screen w-full", children: (0, s.jsx)(l.P, {}) }) : (0, s.jsx)(Ve.S, { children: (0, s.jsx)(Fe, { component: e, setShowNewDM: r, showNewDM: a }) })
+                        null === e ? (0, s.jsx)("div", { className: "flex flex-col justify-center h-screen w-full", children: (0, s.jsx)(l.P, {}) }) : (0, s.jsx)(Ze.S, { children: (0, s.jsx)($e, { component: e, setShowNewDM: r, showNewDM: a }) })
                     );
                 },
-                Fe = ({ component: e, setShowNewDM: t, showNewDM: n }) => {
+                $e = ({ component: e, setShowNewDM: t, showNewDM: n }) => {
                     const o = (0, i.a)("(max-width: 768px)"),
                         r = (0, a.U)().id,
                         c = void 0 === r || "" === r;
@@ -975,4 +993,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-e0975bf4.2d917cea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-e0975bf4.9f1ffdea.js.map

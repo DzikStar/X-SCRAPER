@@ -94,23 +94,23 @@
                 let a = null,
                     i = null,
                     l = null;
-                async function c(e = "xchat.sqlite3", r = !1) {
-                    const t = await o({ print: console.log, printErr: console.error }),
-                        s = function e(r) {
+                async function c(e = "xchat.sqlite3") {
+                    const r = await o({ print: console.log, printErr: console.error }),
+                        t = function e(t) {
                             if (e.vfsName) return !1;
-                            const s = t.capi.sqlite3_vfs_find(r);
+                            const s = r.capi.sqlite3_vfs_find(t);
                             if (s) {
-                                const o = t.capi.sqlite3_vfs_register(s, 1);
-                                o && t.SQLite3Error.toss(o, "While trying to register", r, "vfs."), (e.vfsName = r);
+                                const o = r.capi.sqlite3_vfs_register(s, 1);
+                                o && r.SQLite3Error.toss(o, "While trying to register", t, "vfs."), (e.vfsName = t);
                             }
                             return !!s;
                         };
-                    if (((s.vfsName = void 0), t.installOpfsSAHPoolVfs)) {
-                        function i() {
-                            return t
-                                .installOpfsSAHPoolVfs({ clearOnInit: r, initialCapacity: 15, name: e })
+                    if (((t.vfsName = void 0), r.installOpfsSAHPoolVfs)) {
+                        function s() {
+                            return r
+                                .installOpfsSAHPoolVfs({ clearOnInit: !1, initialCapacity: 15, name: e })
                                 .then((e) => {
-                                    s(e.vfsName),
+                                    t(e.vfsName),
                                         (a = new e.OpfsSAHPoolDb(`/${n}`)),
                                         (l = new BroadcastChannel(n)),
                                         (l.onmessage = ({ data: r }) => {
@@ -129,7 +129,7 @@
                                             } else if ("before_logout" === r?.action) {
                                                 const r = e.getFileNames();
                                                 for (const t of r) e.unlink(t);
-                                                g.clear(), l.close();
+                                                g.clear(), l.postMessage({ action: "before_logout_done" }), l.close();
                                             }
                                         });
                                     const r = e.getFileNames();
@@ -140,7 +140,7 @@
                         return new Promise((e, r) => {
                             navigator.locks.request(n, { ifAvailable: !0 }, async (r) =>
                                 r
-                                    ? (e(i()), new Promise(() => {}))
+                                    ? (e(s()), new Promise(() => {}))
                                     : ((a = (function (e) {
                                           function r(r) {
                                               return new Promise((t, s) => {
@@ -155,11 +155,11 @@
                                           return { exec: r };
                                       })(n)),
                                       e(),
-                                      void navigator.locks.request(n, async (e) => (i(), new Promise(() => {})))),
+                                      void navigator.locks.request(n, async (e) => (s(), new Promise(() => {})))),
                             );
                         });
                     }
-                    a = new t.oo1.DB(e, "c");
+                    a = new r.oo1.DB(e, "c");
                 }
                 async function d() {
                     const e = this.data;
@@ -173,10 +173,6 @@
                             return postMessage({ id: e.id, results: await a.exec("END TRANSACTION;") });
                         case "rollback_transaction":
                             return postMessage({ id: e.id, results: await a.exec("ROLLBACK TRANSACTION;") });
-                        case "before_logout": {
-                            const r = new BroadcastChannel(n);
-                            return r.postMessage({ action: "before_logout" }), r.close(), postMessage({ id: e.id, results: { success: !0 } });
-                        }
                         default:
                             throw new Error(`Unsupported action: ${e?.action}`);
                     }
@@ -184,7 +180,7 @@
                 function u(e) {
                     return postMessage({ id: this.data.id, error: e });
                 }
-                "function" == typeof importScripts && (self.onmessage = (e) => ("init_db" === e.data.action && (i = c(e.data.dbName, e.data.clear)), i || (i = c()), i.then(d.bind(e)).catch(u.bind(e))));
+                "function" == typeof importScripts && (self.onmessage = (e) => ("init_db" === e.data.action && (i = c(e.data.dbName)), i || (i = c()), i.then(d.bind(e)).catch(u.bind(e))));
                 const f = Math.random().toString(36).substring(2);
                 const g = new Map();
             },
@@ -246,4 +242,4 @@
         (o.x = () => Promise.all([o.e("shared~~-5a94f17d"), o.e("shared~~-ab3eb430")]).then(r));
     o.x();
 })();
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/node_modules_x-clients_features_dist_dms_sqlite_worker_js.276667fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/node_modules_x-clients_features_dist_dms_sqlite_worker_js.e64f633a.js.map
