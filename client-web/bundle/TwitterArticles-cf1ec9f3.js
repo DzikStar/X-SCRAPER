@@ -383,15 +383,13 @@
                 v = (0, f.p)(
                     () =>
                         Promise.all([
-                            r.e("icons.10"),
-                            r.e("icons.21"),
-                            r.e("icons.16"),
-                            r.e("icons.1"),
-                            r.e("icons.19"),
-                            r.e("icons.0"),
-                            r.e("icons.8"),
-                            r.e("icons.23"),
-                            r.e("icons.2"),
+                            r.e("icons.5"),
+                            r.e("icons.6"),
+                            r.e("icons.22"),
+                            r.e("icons.25"),
+                            r.e("icons.9"),
+                            r.e("icons.4"),
+                            r.e("icons.15"),
                             r.e("modules.common-e907d115"),
                             r.e("modules.common-e019dbda"),
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
@@ -438,15 +436,13 @@
                 Z = (0, f.p)(
                     () =>
                         Promise.all([
-                            r.e("icons.10"),
-                            r.e("icons.21"),
-                            r.e("icons.16"),
-                            r.e("icons.1"),
-                            r.e("icons.19"),
-                            r.e("icons.0"),
-                            r.e("icons.8"),
-                            r.e("icons.23"),
-                            r.e("icons.2"),
+                            r.e("icons.5"),
+                            r.e("icons.6"),
+                            r.e("icons.22"),
+                            r.e("icons.25"),
+                            r.e("icons.9"),
+                            r.e("icons.4"),
+                            r.e("icons.15"),
                             r.e("modules.common-e907d115"),
                             r.e("modules.common-e019dbda"),
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
@@ -835,4 +831,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterArticles-cf1ec9f3.250f6f7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterArticles-cf1ec9f3.6cac8efa.js.map

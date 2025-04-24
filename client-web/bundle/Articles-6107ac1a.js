@@ -7,8 +7,8 @@
             var a,
                 l,
                 i,
-                r,
                 s,
+                r,
                 o,
                 c = {
                     fragment: {
@@ -48,7 +48,7 @@
                                                         plural: !1,
                                                         selections: [
                                                             { alias: null, args: null, concreteType: "TweetResults", kind: "LinkedField", name: "tweet_results", plural: !1, selections: [(i = { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null })], storageKey: null },
-                                                            { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "author_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ kind: "InlineFragment", selections: [(r = { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }], storageKey: null })], type: "User", abstractKey: null }], storageKey: null }], storageKey: null },
+                                                            { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "author_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ kind: "InlineFragment", selections: [(s = { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }], storageKey: null })], type: "User", abstractKey: null }], storageKey: null }], storageKey: null },
                                                         ],
                                                         storageKey: null,
                                                     },
@@ -88,7 +88,7 @@
                                         name: "result",
                                         plural: !1,
                                         selections: [
-                                            (s = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }),
+                                            (r = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }),
                                             {
                                                 kind: "InlineFragment",
                                                 selections: [
@@ -101,7 +101,7 @@
                                                         plural: !1,
                                                         selections: [
                                                             { alias: null, args: null, concreteType: "TweetResults", kind: "LinkedField", name: "tweet_results", plural: !1, selections: [i, (o = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null })], storageKey: null },
-                                                            { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "author_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [s, { kind: "InlineFragment", selections: [r, { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" }, o], type: "User", abstractKey: null }], storageKey: null }, o], storageKey: null },
+                                                            { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "author_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [r, { kind: "InlineFragment", selections: [s, { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" }, o], type: "User", abstractKey: null }], storageKey: null }, o], storageKey: null },
                                                         ],
                                                         storageKey: null,
                                                     },
@@ -129,8 +129,8 @@
             var a,
                 l,
                 i = n(311405),
-                r = n(794357),
-                s = {
+                s = n(794357),
+                r = {
                     kind: "SplitOperation",
                     metadata: {},
                     name: "TimelineRelay$normalization",
@@ -162,7 +162,7 @@
                                             plural: !0,
                                             selections: [
                                                 { alias: "entryId", args: null, kind: "ScalarField", name: "entry_id", storageKey: null },
-                                                { alias: null, args: null, concreteType: "TimelineTimelineItem", kind: "LinkedField", name: "item", plural: !1, selections: [{ args: null, fragment: r.Z, kind: "FragmentSpread" }], storageKey: null },
+                                                { alias: null, args: null, concreteType: "TimelineTimelineItem", kind: "LinkedField", name: "item", plural: !1, selections: [{ args: null, fragment: s.Z, kind: "FragmentSpread" }], storageKey: null },
                                             ],
                                             storageKey: null,
                                         },
@@ -175,16 +175,16 @@
                         },
                     ],
                 };
-            s.hash = "7d0f17590e1c09ad3ae57e9a9d7fabd6";
-            const o = s;
+            r.hash = "7d0f17590e1c09ad3ae57e9a9d7fabd6";
+            const o = r;
         },
         66351: (e, t, n) => {
             n.d(t, { Z: () => b });
             var a,
                 l,
                 i,
-                r,
                 s,
+                r,
                 o,
                 c,
                 d,
@@ -196,7 +196,7 @@
                 y = n(897455),
                 h = {
                     fragment: {
-                        argumentDefinitions: [(a = { defaultValue: null, kind: "LocalArgument", name: "count" }), (l = { defaultValue: null, kind: "LocalArgument", name: "cursor" }), (i = { defaultValue: !1, kind: "LocalArgument", name: "includePromotedContent" }), (r = { defaultValue: null, kind: "LocalArgument", name: "isListMemberTargetUserId" }), (s = { defaultValue: null, kind: "LocalArgument", name: "timelineId" }), (o = { defaultValue: !1, kind: "LocalArgument", name: "withBirdwatchNotes" }), (c = { defaultValue: !1, kind: "LocalArgument", name: "withClientEventToken" }), (d = { defaultValue: !1, kind: "LocalArgument", name: "withCommunity" }), (u = { defaultValue: !1, kind: "LocalArgument", name: "withDmMuting" }), (m = { defaultValue: !1, kind: "LocalArgument", name: "withQuickPromoteEligibilityTweetFields" }), (p = { defaultValue: !1, kind: "LocalArgument", name: "withVoice" })],
+                        argumentDefinitions: [(a = { defaultValue: null, kind: "LocalArgument", name: "count" }), (l = { defaultValue: null, kind: "LocalArgument", name: "cursor" }), (i = { defaultValue: !1, kind: "LocalArgument", name: "includePromotedContent" }), (s = { defaultValue: null, kind: "LocalArgument", name: "isListMemberTargetUserId" }), (r = { defaultValue: null, kind: "LocalArgument", name: "timelineId" }), (o = { defaultValue: !1, kind: "LocalArgument", name: "withBirdwatchNotes" }), (c = { defaultValue: !1, kind: "LocalArgument", name: "withClientEventToken" }), (d = { defaultValue: !1, kind: "LocalArgument", name: "withCommunity" }), (u = { defaultValue: !1, kind: "LocalArgument", name: "withDmMuting" }), (m = { defaultValue: !1, kind: "LocalArgument", name: "withQuickPromoteEligibilityTweetFields" }), (p = { defaultValue: !1, kind: "LocalArgument", name: "withVoice" })],
                         kind: "Fragment",
                         metadata: null,
                         name: "managementListsPageTimelineQuery",
@@ -243,7 +243,7 @@
                     },
                     kind: "Request",
                     operation: {
-                        argumentDefinitions: [a, l, i, s, o, u, c, p, r, d, m],
+                        argumentDefinitions: [a, l, i, r, o, u, c, p, s, d, m],
                         kind: "Operation",
                         name: "managementListsPageTimelineQuery",
                         selections: [
@@ -284,8 +284,8 @@
             var a = n(202784),
                 l = n(325686),
                 i = n(494394),
-                r = n(530525),
-                s = n(731708),
+                s = n(530525),
+                r = n(731708),
                 o = n(439592),
                 c = n(154003),
                 d = n(769281),
@@ -293,22 +293,22 @@
                 m = n(138099),
                 p = n(392237);
             const g = p.default.create((e) => ({ root: { paddingVertical: e.spacesPx.space32 }, rootWithImage: { paddingTop: 0 }, graphic: { marginBottom: e.spacesPx.space20 }, icon: { alignSelf: "center", height: e.spacesPx.space64, width: e.spacesPx.space64 }, container: { paddingHorizontal: e.spacesPx.space32 }, description: { marginTop: e.spacesPx.space8, marginBottom: e.spacesPx.space4 }, actionButton: { marginTop: e.spacesPx.space16 } })),
-                _ = ({ actionPrimary: e, actionSecondary: t, children: n, headline: _, icon: y, iconColor: h, image: b, onDismiss: k, shouldDisplay: f, text: v, withMask: w = !0 }) => {
+                _ = ({ actionPrimary: e, actionSecondary: t, children: n, headline: _, icon: y, iconColor: h, image: b, onDismiss: k, shouldDisplay: f, text: w, withMask: v = !0 }) => {
                     const [T, x] = a.useState(!1),
-                        F = (e) => a.createElement(u.Z, { onDismiss: R, renderContent: () => L(R), switchOnlyOnXSmallBreakpoint: !0, visibilityBehavior: i.J.forceVisible, withArrow: !0, withFixedPosition: !0, withMask: w }, e),
-                        C = () => a.createElement(m.Z, { onMaskClick: () => R(), type: "center", withMask: !0 }, L(R)),
-                        L = (n) => a.createElement(l.Z, { style: [g.root, b && g.rootWithImage] }, S(), a.createElement(l.Z, { style: g.container }, Z(), K(), E({ action: e, dismiss: n, type: t && "primaryFilled" }), E({ action: t, dismiss: n }))),
+                        F = (e) => a.createElement(u.Z, { onDismiss: R, renderContent: () => C(R), switchOnlyOnXSmallBreakpoint: !0, visibilityBehavior: i.J.forceVisible, withArrow: !0, withFixedPosition: !0, withMask: v }, e),
+                        L = () => a.createElement(m.Z, { onMaskClick: () => R(), type: "center", withMask: !0 }, C(R)),
+                        C = (n) => a.createElement(l.Z, { style: [g.root, b && g.rootWithImage] }, S(), a.createElement(l.Z, { style: g.container }, K(), Z(), E({ action: e, dismiss: n, type: t && "primaryFilled" }), E({ action: t, dismiss: n }))),
                         S = () => {
                             let e = y && a.createElement(y, { style: h ? [g.icon, { color: p.default.theme.colors[h] }] : g.icon });
-                            return b && !d.Z.isEnabled && (e = a.createElement(r.Z, { "aria-label": "", aspectMode: o.Z.exact(2), image: b })), e && a.createElement(l.Z, { style: g.graphic }, e);
+                            return b && !d.Z.isEnabled && (e = a.createElement(s.Z, { "aria-label": "", aspectMode: o.Z.exact(2), image: b })), e && a.createElement(l.Z, { style: g.graphic }, e);
                         },
-                        Z = () => a.createElement(s.ZP, { size: "title3", weight: "heavy" }, _),
-                        K = () => a.createElement(s.ZP, { color: "gray700", style: g.description }, v),
+                        K = () => a.createElement(r.ZP, { size: "title3", weight: "heavy" }, _),
+                        Z = () => a.createElement(r.ZP, { color: "gray700", style: g.description }, w),
                         E = ({ action: e, dismiss: t, type: n }) => e && a.createElement(c.ZP, { link: e.link && e.link, onPress: e.onClick ? e.onClick : t, size: "large", style: g.actionButton, type: n }, e.text),
                         R = () => {
                             k && k(), x(!0);
                         };
-                    return f && !T ? (n ? F(n) : C()) : n || null;
+                    return f && !T ? (n ? F(n) : L()) : n || null;
                 };
         },
         664064: (e, t, n) => {
@@ -316,8 +316,8 @@
             var a = n(807896),
                 l = n(202784),
                 i = n(523561);
-            const r = l.forwardRef(s);
-            function s(e, t) {
+            const s = l.forwardRef(r);
+            function r(e, t) {
                 return l.createElement(o, (0, a.Z)({}, e, { ref: t }));
             }
             const o = (0, i.Z)({
@@ -326,25 +326,25 @@
                             .then(n.bind(n, 620151))
                             .then((e) => ({ default: e.Confetti })),
                 }),
-                c = r;
+                c = s;
         },
         661810: (e, t, n) => {
-            n.d(t, { Z: () => r });
+            n.d(t, { Z: () => s });
             var a = n(202784),
                 l = n(325686),
                 i = n(392237);
-            function r({ spacing: e, style: t }) {
-                return a.createElement(l.Z, { role: "separator", style: [s.divider, { marginVertical: null != e ? i.default.theme.spaces[e] : void 0 }, t] });
+            function s({ spacing: e, style: t }) {
+                return a.createElement(l.Z, { role: "separator", style: [r.divider, { marginVertical: null != e ? i.default.theme.spaces[e] : void 0 }, t] });
             }
-            const s = i.default.create((e) => ({ divider: { backgroundColor: e.colors.borderColor, height: e.borderWidths.small } }));
+            const r = i.default.create((e) => ({ divider: { backgroundColor: e.colors.borderColor, height: e.borderWidths.small } }));
         },
         879113: (e, t, n) => {
             n.d(t, { Z: () => p });
             var a = n(202784),
                 l = n(476984),
                 i = n.n(l),
-                r = n(143778),
-                s = n(750410),
+                s = n(143778),
+                r = n(750410),
                 o = n(682830);
             const c = "failed",
                 d = "loaded",
@@ -357,12 +357,12 @@
                     return !(!t && !n) || !i()(e, this.props);
                 }
                 render() {
-                    const { "aria-label": e, color: t, failureMessage: n, fetchStatus: l, icon: i, loadingMessage: r, onRequestRetry: d, render: p, renderFailure: g, retryMessage: _, retryable: y } = this.props;
+                    const { "aria-label": e, color: t, failureMessage: n, fetchStatus: l, icon: i, loadingMessage: s, onRequestRetry: d, render: p, renderFailure: g, retryMessage: _, retryable: y } = this.props;
                     switch (l) {
                         case c:
-                            return y ? a.createElement(s.Z, { icon: i, onRequestRetry: d, retryMessage: _ }) : n ? a.createElement(o.m, { failureMessage: n }) : g();
+                            return y ? a.createElement(r.Z, { icon: i, onRequestRetry: d, retryMessage: _ }) : n ? a.createElement(o.m, { failureMessage: n }) : g();
                         case u:
-                            return a.createElement(o.J, { "aria-label": e, color: t, loadingMessage: r });
+                            return a.createElement(o.J, { "aria-label": e, color: t, loadingMessage: s });
                         case m:
                             return null;
                         default:
@@ -370,15 +370,15 @@
                     }
                 }
             }
-            p.defaultProps = { renderFailure: r.Z, retryable: !0 };
+            p.defaultProps = { renderFailure: s.Z, retryable: !0 };
         },
         403556: (e, t, n) => {
             n.d(t, { Z: () => F });
             var a = n(807896),
                 l = n(202784),
                 i = n(194504),
-                r = n(235902),
-                s = n(392237),
+                s = n(235902),
+                r = n(392237),
                 o = n(325686),
                 c = n(674132),
                 d = n.n(c),
@@ -392,7 +392,7 @@
             const b = d().d2414d31,
                 k = () => d().ce4e85ae,
                 f = d().fb9f6f39;
-            class v extends l.Component {
+            class w extends l.Component {
                 constructor(...e) {
                     super(...e),
                         (this._getMemoizedLink = (0, u.Z)((e, t) => {
@@ -402,8 +402,8 @@
                         (this._unlisten = m.Z),
                         (this.state = { location: this.context.location }),
                         (this._getTextColor = (e, t, n, a) => {
-                            const l = s.default.theme.colors.text,
-                                i = s.default.theme.colors.gray700;
+                            const l = r.default.theme.colors.text,
+                                i = r.default.theme.colors.gray700;
                             return n || a ? (e || t ? l : i) : e ? l : i;
                         }),
                         (this._setRef = (e) => {
@@ -427,17 +427,17 @@
                     this._unlisten && this._unlisten();
                 }
                 render() {
-                    const { Icon: e, "aria-label": t, badgeCount: n, badgePip: a, children: i, color: r, isActive: c, isCompact: d, isPillLink: u, isRoundedRect: m, isWebRedesign: _, retainScrollPosition: v, style: T, to: x } = this.props,
+                    const { Icon: e, "aria-label": t, badgeCount: n, badgePip: a, children: i, color: s, isActive: c, isCompact: d, isPillLink: u, isRoundedRect: m, isWebRedesign: _, retainScrollPosition: w, style: T, to: x } = this.props,
                         { location: F } = this.state,
-                        C = x ? this._getMemoizedLink(x, v) : void 0,
-                        L = c ? c(x) : F?.pathname === C?.pathname,
-                        S = y.Z.generate({ backgroundColor: "transparent", color: s.default.theme.colors.text, insetFocusRing: !0 }),
-                        Z = _ ? "medium" : L ? "bold" : "medium";
-                    return l.createElement(h.Z, { "aria-label": t, "aria-selected": L, focusable: !!L, interactiveStyles: S, link: C, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [u ? w.pill : w.link, u && L ? w.active : null, d ? (u ? w.compactPill : w.compactLink) : null, m ? w.roundedRect : null, T], withoutInteractiveStyles: _ || u }, ({ isFocused: t, isHovered: c }) => l.createElement(o.Z, { style: u && w.flexGrow }, l.createElement(p.ZP, { size: _ ? "headline2" : void 0, style: [w.text, { color: this._getTextColor(L, c, _, u) }, d && w.compactText, _ && t && w.focusedText], weight: Z }, e && l.createElement(e, { style: w.icon }), i, _ || u ? null : l.createElement(o.Z, { style: L && [w.border, { backgroundColor: s.default.theme.colors[r] }] })), n ? l.createElement(g.Z, { count: n, standalone: !0, style: [w.badge, n >= 10 && w.multiDigitBadge, n >= 20 && w.truncatedCountBadge], truncatedCountFormatter: f, unreadCountLabel: b, withBorder: !1 }) : a ? l.createElement(g.Z, { pip: !0, standalone: !0, style: w.badgePip, textColor: "red500", unreadCountLabel: k, withBorder: !1 }) : null));
+                        L = x ? this._getMemoizedLink(x, w) : void 0,
+                        C = c ? c(x) : F?.pathname === L?.pathname,
+                        S = y.Z.generate({ backgroundColor: "transparent", color: r.default.theme.colors.text, insetFocusRing: !0 }),
+                        K = _ ? "medium" : C ? "bold" : "medium";
+                    return l.createElement(h.Z, { "aria-label": t, "aria-selected": C, focusable: !!C, interactiveStyles: S, link: L, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [u ? v.pill : v.link, u && C ? v.active : null, d ? (u ? v.compactPill : v.compactLink) : null, m ? v.roundedRect : null, T], withoutInteractiveStyles: _ || u }, ({ isFocused: t, isHovered: c }) => l.createElement(o.Z, { style: u && v.flexGrow }, l.createElement(p.ZP, { size: _ ? "headline2" : void 0, style: [v.text, { color: this._getTextColor(C, c, _, u) }, d && v.compactText, _ && t && v.focusedText], weight: K }, e && l.createElement(e, { style: v.icon }), i, _ || u ? null : l.createElement(o.Z, { style: C && [v.border, { backgroundColor: r.default.theme.colors[s] }] })), n ? l.createElement(g.Z, { count: n, standalone: !0, style: [v.badge, n >= 10 && v.multiDigitBadge, n >= 20 && v.truncatedCountBadge], truncatedCountFormatter: f, unreadCountLabel: b, withBorder: !1 }) : a ? l.createElement(g.Z, { pip: !0, standalone: !0, style: v.badgePip, textColor: "red500", unreadCountLabel: k, withBorder: !1 }) : null));
                 }
             }
-            (v.contextType = _.Z), (v.defaultProps = { children: [], color: "primary", retainScrollPosition: !0 });
-            const w = s.default.create((e) => ({
+            (w.contextType = _.Z), (w.defaultProps = { children: [], color: "primary", retainScrollPosition: !0 });
+            const v = r.default.create((e) => ({
                     link: { alignItems: "center", display: "flex", flexDirection: "column", flexGrow: 1, height: e.componentDimensions.appBarHeight, justifyContent: "center", outlineStyle: "none", paddingHorizontal: e.spaces.space16, minWidth: "56px" },
                     compactLink: { height: 0.75 * e.componentDimensions.appBarHeightPx },
                     badge: { position: "absolute", height: e.spaces.space12, minWidth: e.spaces.space12, top: `calc(${e.spaces.space12} + ${e.spaces.space2})`, end: `calc(-1 * ${e.spaces.space16})`, fontSize: `calc(${e.spaces.space8} + ${e.spaces.space1})` },
@@ -455,24 +455,24 @@
                     icon: { marginEnd: e.spaces.space8 },
                     roundedRect: { borderRadius: e.borderRadii.large },
                 })),
-                T = v,
-                x = s.default.create((e) => ({ segmentedControl: { borderBottomWidth: e.borderWidths.small, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor }, leftAligned: { alignContent: "start", justifyContent: "start" }, flexGrow: { flexGrow: 1 }, gap: { gap: e.spaces.space8 }, linkRedesign: { paddingHorizontal: e.spaces.space12, alignItems: "start", minWidth: e.spaces.space24 }, firstLinkRedesign: { paddingStart: e.spaces.space16 }, withNoPaddingStart: { paddingStart: 0 } })),
-                F = ({ alignFirstItem: e, "aria-label": t, isCompact: n, isPillLink: s, isRoundedRect: o, links: c, style: d, visibleItemIndex: u }) => {
+                T = w,
+                x = r.default.create((e) => ({ segmentedControl: { borderBottomWidth: e.borderWidths.small, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor }, leftAligned: { alignContent: "start", justifyContent: "start" }, flexGrow: { flexGrow: 1 }, gap: { gap: e.spaces.space8 }, linkRedesign: { paddingHorizontal: e.spaces.space12, alignItems: "start", minWidth: e.spaces.space24 }, firstLinkRedesign: { paddingStart: e.spaces.space16 }, withNoPaddingStart: { paddingStart: 0 } })),
+                F = ({ alignFirstItem: e, "aria-label": t, isCompact: n, isPillLink: r, isRoundedRect: o, links: c, style: d, visibleItemIndex: u }) => {
                     const m = c
                             .filter(Boolean)
                             .map((e) => e.key)
                             .join("-"),
-                        { isWebRedesign: p } = r.ZP.useProps(),
-                        g = p() && !s,
+                        { isWebRedesign: p } = s.ZP.useProps(),
+                        g = p() && !r,
                         _ = l.useMemo(
                             () =>
-                                c.filter(Boolean).map(({ label: t, viewType: i, ...r }, c) => {
+                                c.filter(Boolean).map(({ label: t, viewType: i, ...s }, c) => {
                                     const d = g ? [x.linkRedesign, 0 === c && x.firstLinkRedesign, e && 0 === c && x.withNoPaddingStart] : void 0;
-                                    return l.createElement(T, (0, a.Z)({ viewType: i }, r, { isCompact: n, isPillLink: s, isRoundedRect: o, isWebRedesign: g, style: d }), t);
+                                    return l.createElement(T, (0, a.Z)({ viewType: i }, s, { isCompact: n, isPillLink: r, isRoundedRect: o, isWebRedesign: g, style: d }), t);
                                 }),
-                            [e, n, s, o, g, c],
+                            [e, n, r, o, g, c],
                         );
-                    return l.createElement(i.Z, { "aria-label": t, buttonsContainerStyle: s && x.gap, childrenStyle: !g && x.flexGrow, key: m, style: [s ? null : x.segmentedControl, g && x.leftAligned, d], visibleItemIndex: u }, _);
+                    return l.createElement(i.Z, { "aria-label": t, buttonsContainerStyle: r && x.gap, childrenStyle: !g && x.flexGrow, key: m, style: [r ? null : x.segmentedControl, g && x.leftAligned, d], visibleItemIndex: u }, _);
                 };
         },
         620522: (e, t, n) => {
@@ -484,26 +484,13 @@
             var a = n(202784),
                 l = n(890601),
                 i = n(783427),
-                r = n(347101);
-            const s = (e = {}) => {
+                s = n(347101);
+            const r = (e = {}) => {
                 const { direction: t } = (0, i.Z)();
-                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M14 6V3h2v8h-2V8H3V6h11zm7 2h-3.5V6H21v2zM8 16v-3h2v8H8v-3H3v-2h5zm13 2h-9.5v-2H21v2z" })) }, { writingDirection: t });
+                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M14 6V3h2v8h-2V8H3V6h11zm7 2h-3.5V6H21v2zM8 16v-3h2v8H8v-3H3v-2h5zm13 2h-9.5v-2H21v2z" })) }, { writingDirection: t });
             };
-            s.metadata = { width: 24, height: 24 };
-            const o = s;
-        },
-        648539: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => o });
-            var a = n(202784),
-                l = n(890601),
-                i = n(783427),
-                r = n(347101);
-            const s = (e = {}) => {
-                const { direction: t } = (0, i.Z)();
-                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M19 14h2v3h-2v-3zM3 14H1v3h2v-3zm.5 7c-.276 0-.5-.225-.5-.5V19H1v1.5C1 21.879 2.122 23 3.5 23H5v-2H3.5zM10 5V3H7v2h3zm-7 .5c0-.275.224-.5.5-.5H5V3H3.5C2.122 3 1 4.121 1 5.5V7h2V5.5zM12 21v2h3v-2h-3zm-5 0v2h3v-2H7zm12-.5c0 .275-.224.5-.5.5H17v2h1.5c1.378 0 2.5-1.121 2.5-2.5V19h-2v1.5zM3 9H1v3h2V9zm3 9h5v-2H6v2zM18-.1c3.364 0 6.1 2.736 6.1 6.1s-2.736 6.1-6.1 6.1-6.1-2.736-6.1-6.1S14.636-.1 18-.1zm0 2c-2.261 0-4.1 1.839-4.1 4.1s1.839 4.1 4.1 4.1 4.1-1.839 4.1-4.1-1.839-4.1-4.1-4.1zm.5 3.1H15v2h6V5h-2.5zM6 10h4V8H6v2zm0 4h7v-2H6v2z" })) }, { writingDirection: t });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const o = s;
+            r.metadata = { width: 24, height: 24 };
+            const o = r;
         },
         490359: (e, t, n) => {
             n.d(t, { Z: () => a });
@@ -511,4 +498,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Articles-6107ac1a.0e8e3d0a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Articles-6107ac1a.48e6997a.js.map

@@ -32,13 +32,13 @@
                         });
                 }
                 _renderContent() {
-                    const { backButtonType: e, centerTitle: a, centeredLogo: t, fixed: n, hideBackButton: i, isFullWidth: l, isLarge: c, leftControl: d, middleControl: p, position: m, rightControl: g, secondaryBar: h, style: f, subtitle: b, title: _, titleDomId: y, titleIconCell: k, titleIconCellSize: B, withBackground: v, withWideContainer: P } = this.props,
+                    const { backButtonType: e, centerTitle: a, centeredLogo: t, fixed: n, hideBackButton: i, isFullWidth: l, isLarge: c, leftControl: d, middleControl: p, position: m, rightControl: g, secondaryBar: h, style: f, subtitle: b, title: _, titleDomId: y, titleIconCell: k, titleIconCellSize: v, withBackground: B, withWideContainer: P } = this.props,
                         { isModal: S } = this.context,
                         F = i ? d : r.createElement(s.Z, { backButtonType: e, onClick: this._handleBackClick }),
                         C = (function (e, a, t) {
                             return e && !(a && t);
-                        })(!!v, S, !!h);
-                    return r.createElement(r.Fragment, null, r.createElement(o.Z, { centerTitle: a, centeredLogo: t, isFullWidth: l, isLarge: c, leftControl: F, middleControl: p, position: u(m, S, n), rightControl: g, style: f, subtitle: b, title: _, titleDomId: y, titleIconCell: k, titleIconCellSize: B, withBackground: C, withWideContainer: P }), h || null);
+                        })(!!B, S, !!h);
+                    return r.createElement(r.Fragment, null, r.createElement(o.Z, { centerTitle: a, centeredLogo: t, isFullWidth: l, isLarge: c, leftControl: F, middleControl: p, position: u(m, S, n), rightControl: g, style: f, subtitle: b, title: _, titleDomId: y, titleIconCell: k, titleIconCellSize: v, withBackground: C, withWideContainer: P }), h || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
@@ -467,20 +467,20 @@
                 _ = t(708852),
                 y = t(154003),
                 k = t(167630),
-                B = t(731708),
-                v = t(466818),
+                v = t(731708),
+                B = t(466818),
                 P = t(392237),
                 S = t(674132),
                 F = t.n(S),
                 C = t(310456),
-                T = t(615656),
-                Z = t(980407),
+                Z = t(615656),
+                T = t(980407),
                 E = t(736063),
                 x = t(952793),
                 L = t(782642),
-                K = t(97882),
+                w = t(97882),
                 D = t(782826),
-                w = t(337394),
+                K = t(337394),
                 I = (function () {
                     var e = [{ defaultValue: null, kind: "LocalArgument", name: "stripeId" }],
                         a = [
@@ -560,7 +560,7 @@
                 z = t(847579);
             const G = (0, H.ju)("https://legal.x.com/purchaser-terms"),
                 $ = (0, H.ju)("https://help.x.com/using-x/x-premium/gifting"),
-                Q = () => m.createElement(z.Z, { withoutBorder: !0 }, m.createElement(F().I18NFormatMessage, { $i18n: "h7f3e309" }, m.createElement(B.ZP, { link: G }, F().f3fddc98), m.createElement(B.ZP, { link: $ }, F().cff9c889)));
+                Q = () => m.createElement(z.Z, { withoutBorder: !0 }, m.createElement(F().I18NFormatMessage, { $i18n: "h7f3e309" }, m.createElement(v.ZP, { link: G }, F().f3fddc98), m.createElement(v.ZP, { link: $ }, F().cff9c889)));
             t(571372);
             var j = (function () {
                 var e = { defaultValue: null, kind: "LocalArgument", name: "cancel_url" },
@@ -616,7 +616,7 @@
                         r,
                     ];
                 },
-                ae = () => ((0, x.hC)("subscriptions_stripe_testing") ? w.Qo : w.eq),
+                ae = () => ((0, x.hC)("subscriptions_stripe_testing") ? K.Qo : K.eq),
                 te = F().haad225c,
                 re = F().b84f6df1,
                 ne = F().cfcac293,
@@ -642,7 +642,7 @@
                         I = m.useMemo(() => E?.prices?.find((e) => "OneTime" === e.price_type), [E?.prices]),
                         R = (0, x.hC)("subscriptions_marketing_page_include_tax_enabled"),
                         A = (0, x.hC)("subscriptions_gifting_premium_intro_copy_enabled"),
-                        H = I ? (0, K.x)({ amount: (0, V.aU)(I, R), currencyCode: I.currency_code.toUpperCase(), removeTrailingZeros: !0 }) : null,
+                        H = I ? (0, w.x)({ amount: (0, V.aU)(I, R), currencyCode: I.currency_code.toUpperCase(), removeTrailingZeros: !0 }) : null,
                         z = m.useCallback(() => {
                             r.scribe({ component: "dismiss_button", action: "click" }), n.goBack();
                         }, [r, n]),
@@ -657,7 +657,7 @@
                                     .then((e) => D.ZP.navigateTo(e))
                                     .catch((e) => {
                                         const a = e?.errors?.[0]?.code,
-                                            t = a === T.ZP.GenericAccessDenied ? oe : se;
+                                            t = a === Z.ZP.GenericAccessDenied ? oe : se;
                                         p({ text: t, withClearButton: !0, withAutoDismiss: !0 }), c(!1);
                                     }));
                         }, [p, h, $, S, r]),
@@ -669,8 +669,8 @@
                         }, [H, j, P, o, q, l]),
                         J = m.useCallback((e) => s(C.p[e]), [s]),
                         X = d?.blue_marketing_page_config?.products?.map(({ product_category: e, title: a }) => (e && a && "PremiumBasic" !== e ? { label: a, value: e } : null)).filter(Boolean),
-                        le = w.St[l];
-                    return X && a && G && H && G?.premium_gifting_eligible ? m.createElement(Z.Z, { backButtonType: "close", bottomBar: Y, history: n, onBackClick: z }, m.createElement(g.Z, { style: [me.root, q] }, m.createElement(g.Z, { style: me.content }, m.createElement(B.ZP, { align: "center", size: "title2", weight: "heavy" }, A ? re({ percentage: 40 }) : te), "User" === G.__typename ? m.createElement(g.Z, { style: me.alignCenter }, m.createElement(O.Z, { size: "custom", style: me.userAvatar, user: G, withLink: !1 }), m.createElement(U.Z, { style: me.alignCenter, user: G, withLink: !1, withStackedLayout: !0 })) : null, m.createElement(v.ZP, { label: ie, onChange: J, options: X, testID: "tier", value: l }), m.createElement(B.ZP, null, m.createElement(F().I18NFormatMessage, { $i18n: "ccd45e5f", tier: le, screenName: a, price: H }))))) : m.createElement(W.Z, { to: "/home" });
+                        le = K.St[l];
+                    return X && a && G && H && G?.premium_gifting_eligible ? m.createElement(T.Z, { backButtonType: "close", bottomBar: Y, history: n, onBackClick: z }, m.createElement(g.Z, { style: [me.root, q] }, m.createElement(g.Z, { style: me.content }, m.createElement(v.ZP, { align: "center", size: "title2", weight: "heavy" }, A ? re({ percentage: 40 }) : te), "User" === G.__typename ? m.createElement(g.Z, { style: me.alignCenter }, m.createElement(O.Z, { size: "custom", style: me.userAvatar, user: G, withLink: !1 }), m.createElement(U.Z, { style: me.alignCenter, user: G, withLink: !1, withStackedLayout: !0 })) : null, m.createElement(B.ZP, { label: ie, onChange: J, options: X, testID: "tier", value: l }), m.createElement(v.ZP, null, m.createElement(F().I18NFormatMessage, { $i18n: "ccd45e5f", tier: le, screenName: a, price: H }))))) : m.createElement(W.Z, { to: "/home" });
                 },
                 ue = { context: "PremiumGifting" },
                 pe = (e) => m.createElement(A.nO, { namespace: le }, m.createElement(E.H, { errorConfig: ue }, m.createElement(de, e))),
@@ -749,8 +749,8 @@
                 }
                 render() {
                     const { "aria-describedby": e, disabled: a, errorText: t, hasError: c, helperText: g, options: h, style: b, testID: _, value: y, withEmptyOption: k } = this.props,
-                        { isFocused: B } = this.state,
-                        v = o.ZP.getLanguage(),
+                        { isFocused: v } = this.state,
+                        B = o.ZP.getLanguage(),
                         P = void 0 === c ? !!t : c,
                         S = new Set();
                     t && S.add(this._errorID), e && S.add(e), g && S.add(this._helperID);
@@ -759,10 +759,10 @@
                         r.Fragment,
                         null,
                         r.createElement(d.ZP.Consumer, null, ({ direction: e }) => {
-                            const o = "ja" === v ? u.default.theme.fontFamilies.japan : "rtl" === e || l.Z.isLocaleRTL(v) ? u.default.theme.fontFamilies.rtl : u.default.theme.fontFamilies.normal;
+                            const o = "ja" === B ? u.default.theme.fontFamilies.japan : "rtl" === e || l.Z.isLocaleRTL(B) ? u.default.theme.fontFamilies.rtl : u.default.theme.fontFamilies.normal;
                             return r.createElement(
                                 n.Z,
-                                { style: [s.Z.border, f.container, a && s.Z.disabled, B && s.Z.focusedBorderValid, P && s.Z.invalidBorderColor, B && P && s.Z.focusedBorderInvalid, b] },
+                                { style: [s.Z.border, f.container, a && s.Z.disabled, v && s.Z.focusedBorderValid, P && s.Z.invalidBorderColor, v && P && s.Z.focusedBorderInvalid, b] },
                                 this._renderLabel(),
                                 r.createElement(
                                     p,
@@ -773,7 +773,7 @@
                                         return r.createElement(m, { disabled: a, key: `${t}-${n}`, style: f.option, value: n }, t);
                                     }),
                                 ),
-                                r.createElement(i.default, { style: [f.dropdownCaret, B && s.Z.validColor, !(!c && !t) && s.Z.invalidColor] }),
+                                r.createElement(i.default, { style: [f.dropdownCaret, v && s.Z.validColor, !(!c && !t) && s.Z.invalidColor] }),
                             );
                         }),
                         g ? this._renderHelperText() : null,
@@ -800,6 +800,19 @@
             t.d(a, { Z: () => r });
             const r = t(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
         },
+        487552: (e, a, t) => {
+            t.r(a), t.d(a, { default: () => o });
+            var r = t(202784),
+                n = t(890601),
+                i = t(783427),
+                l = t(347101);
+            const s = (e = {}) => {
+                const { direction: a } = (0, i.Z)();
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M3.543 8.96l1.414-1.42L12 14.59l7.043-7.05 1.414 1.42L12 17.41 3.543 8.96z" })) }, { writingDirection: a });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const o = s;
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.PremiumGifting.62c49eea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.PremiumGifting.d2ec1eea.js.map

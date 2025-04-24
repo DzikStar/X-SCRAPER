@@ -155,8 +155,8 @@
                 I = o(801501),
                 T = o(214647),
                 x = o(725516),
-                P = o(500002),
-                B = o(886404),
+                B = o(500002),
+                P = o(886404),
                 E = o(443781),
                 Z = o(194661),
                 R = o(355883);
@@ -172,17 +172,18 @@
             const q = (0, W.Z)({
                 loader: () =>
                     Promise.all([
-                        o.e("icons.10"),
-                        o.e("icons.1"),
-                        o.e("icons.19"),
+                        o.e("icons.5"),
+                        o.e("icons.6"),
+                        o.e("icons.25"),
+                        o.e("icons.15"),
+                        o.e("icons.20"),
                         o.e("icons.0"),
-                        o.e("icons.8"),
-                        o.e("icons.23"),
                         o.e("modules.common-e907d115"),
                         o.e("modules.common-e019dbda"),
-                        o.e("icons.9"),
-                        o.e("icons.7"),
-                        o.e("icons.15"),
+                        o.e("icons.11"),
+                        o.e("icons.27"),
+                        o.e("icons.17"),
+                        o.e("icons.12"),
                         o.e("modules.audio-6107ac1a"),
                         o.e("modules.audio-b953418a"),
                         o.e("modules.audio-7c51e6a7"),
@@ -193,8 +194,7 @@
                         o.e("modules.audio-e019dbda"),
                         o.e("modules.audio-262c94d4"),
                         o.e("modules.audio-c6fe4ea4"),
-                        o.e("icons.26"),
-                        o.e("icons.27"),
+                        o.e("icons.24"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -225,7 +225,7 @@
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                         o.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                        o.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-ee359ff7"),
+                        o.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2f4a3d25"),
                         o.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                         o.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                         o.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -380,15 +380,15 @@
             const Ie = u().de21174c,
                 Te = u().haebcf52,
                 xe = u().i859a9d4,
-                Pe = (0, fe.ju)("https://help.x.com/using-twitter/mentions-and-replies#mention-control"),
-                Be = Me.default.create((e) => ({ callout: { marginVertical: e.spaces.space8, marginHorizontal: e.spaces.space16 } })),
+                Be = (0, fe.ju)("https://help.x.com/using-twitter/mentions-and-replies#mention-control"),
+                Pe = Me.default.create((e) => ({ callout: { marginVertical: e.spaces.space8, marginHorizontal: e.spaces.space16 } })),
                 Ee = () => {
                     const e = (0, x.z)();
                     return (
                         (0, ke.q)(() => {
                             e.scribe({ element: "left_conversation_banner", action: "impression" });
                         }),
-                        a.createElement(i.Z, { style: Be.callout }, a.createElement(ye.Z, { Icon: ve.default, action: { label: xe, link: Pe }, headline: Ie, text: Te, type: "primary" }))
+                        a.createElement(i.Z, { style: Pe.callout }, a.createElement(ye.Z, { Icon: ve.default, action: { label: xe, link: Be }, headline: Ie, text: Te, type: "primary" }))
                     );
                 },
                 Ze = u().f277e94a,
@@ -690,12 +690,12 @@
                     if (n && t.location.pathname.indexOf("/intent/") > -1) return a.createElement(F.Z, { forwardPivotInfo: e, history: t, location: t.location, nudges: o, tweetId: n.id_str });
                 }
                 _renderTweetComponent() {
-                    const { analytics: e, contextTweet: t, feedbackItems: o, forwardPivotInfo: i, hasModeratedReplies: d, history: l, innerForwardPivotInfo: s, innerNudges: c, isActiveCreator: u, isNsfwUser: h, isPinned: b, location: p, nudges: m, onTweetDismiss: D, promotedContent: C, promotedContentAdvertiser: A, quoteTweetSocialContextProps: S, quotedTweetTombstoneInfo: g, readerModeAvailable: f, replyBadge: M, replyContext: v, rootTweetAuthorId: k, showReplyFilterInlineCallout: I, socialContext: T, socialContextColor: x, topic: P, topicFollowPrompt: B, tweet: E, userCountry: Z, userLanguage: R, viewerUser: L, withActions: U, withCommunityModerationAuthority: N, withHideReply: H, withInlineMedia: F, withSocialContext: O } = this.props;
+                    const { analytics: e, contextTweet: t, feedbackItems: o, forwardPivotInfo: i, hasModeratedReplies: d, history: l, innerForwardPivotInfo: s, innerNudges: c, isActiveCreator: u, isNsfwUser: h, isPinned: b, location: p, nudges: m, onTweetDismiss: D, promotedContent: C, promotedContentAdvertiser: A, quoteTweetSocialContextProps: S, quotedTweetTombstoneInfo: g, readerModeAvailable: f, replyBadge: M, replyContext: v, rootTweetAuthorId: k, showReplyFilterInlineCallout: I, socialContext: T, socialContextColor: x, topic: B, topicFollowPrompt: P, tweet: E, userCountry: Z, userLanguage: R, viewerUser: L, withActions: U, withCommunityModerationAuthority: N, withHideReply: H, withInlineMedia: F, withSocialContext: O } = this.props;
                     if (!E) return null;
                     const { viewerUserId: z } = this.context,
                         { enableKeyboardShortcuts: W } = this.state,
                         V = r.Z.getOriginalTweet(E),
-                        q = { contextTweet: t, enableKeyboardShortcuts: W, forwardPivotInfo: i, hasModeratedReplies: d, handleReplyFilterInlineCalloutImpression: this._handleReplyFilterInlineCalloutImpression, showReplyFilterInlineCallout: I, innerForwardPivotInfo: s, viewerUser: L, promotedContent: C, promotedContentAdvertiser: A, quotedTweetTombstoneInfo: g, quoteTweetSocialContextProps: S, readerModeAvailable: f, socialContext: T, socialContextColor: x, topic: P, topicFollowPrompt: B, tweet: E, replyBadge: M, replyContext: v, rootTweetAuthorId: k, withActions: U, withAltTextBadge: !0, withInlineMedia: F, withSocialContext: O, nudges: m, innerNudges: c },
+                        q = { contextTweet: t, enableKeyboardShortcuts: W, forwardPivotInfo: i, hasModeratedReplies: d, handleReplyFilterInlineCalloutImpression: this._handleReplyFilterInlineCalloutImpression, showReplyFilterInlineCallout: I, innerForwardPivotInfo: s, viewerUser: L, promotedContent: C, promotedContentAdvertiser: A, quotedTweetTombstoneInfo: g, quoteTweetSocialContextProps: S, readerModeAvailable: f, socialContext: T, socialContextColor: x, topic: B, topicFollowPrompt: P, tweet: E, replyBadge: M, replyContext: v, rootTweetAuthorId: k, withActions: U, withAltTextBadge: !0, withInlineMedia: F, withSocialContext: O, nudges: m, innerNudges: c },
                         K = V.user.id_str === z,
                         $ = !V.in_reply_to_status_id_str && K && !V.community_id_str,
                         Q = this._renderConversationControlsTooltip();
@@ -761,7 +761,7 @@
                         { replyPressToggle: i } = this.state,
                         { viewerUserId: r } = this.context;
                     if (!o) return null;
-                    return r && !this._shouldDisable(o, z.d.Reply) ? a.createElement(B.c_, null, (0, S.ZP)() ? a.createElement(q, { history: e, location: t, parentTweetId: n, replyPressToggle: i }) : a.createElement(m.Z, { container: s.Z, fab: this._fabReply(e), withoutBottomPadding: !0 })) : null;
+                    return r && !this._shouldDisable(o, z.d.Reply) ? a.createElement(P.c_, null, (0, S.ZP)() ? a.createElement(q, { history: e, location: t, parentTweetId: n, replyPressToggle: i }) : a.createElement(m.Z, { container: s.Z, fab: this._fabReply(e), withoutBottomPadding: !0 })) : null;
                 }
                 _renderWithheldTweet() {
                     const { tweet: e } = this.props;
@@ -784,7 +784,7 @@
                 }
             }
             Le.contextType = E.rC;
-            const Ue = (0, P.ZP)(ge(Le)),
+            const Ue = (0, B.ZP)(ge(Le)),
                 Ne = (0, x.Z)(Ue),
                 He = (0, x.Z)(Ue, { component: "tweet" });
         },
@@ -833,7 +833,7 @@
             const d = i.default.create((e) => ({ root: { borderWidth: 0, height: e.spaces.space48, boxShadow: e.boxShadows.small }, iconOnly: { height: e.spaces.space56, width: e.spaces.space56 } })),
                 l = r;
         },
-        818088: (e, t, o) => {
+        394123: (e, t, o) => {
             o.r(t), o.d(t, { default: () => l });
             var n = o(202784),
                 a = o(890601),
@@ -841,12 +841,12 @@
                 r = o(347101);
             const d = (e = {}) => {
                 const { direction: t } = (0, i.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M17 3V0h2v3h3v2h-3v3h-2V5h-3V3h3zM6.5 4c-.276 0-.5.22-.5.5v14.56l6-4.29 6 4.29V11h2v11.94l-8-5.71-8 5.71V4.5C4 3.12 5.119 2 6.5 2h4.502v2H6.5z" })) }, { writingDirection: t });
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M15.636 11.671c2.079-.583 3.093-2.18 3.093-3.929 0-2.307-1.471-4.741-5.983-4.741H5.623V21h7.579c4.411 0 6.008-2.484 6.008-4.994 0-2.383-1.343-3.955-3.574-4.335zm-3.295-6.287c2.535 0 3.27 1.319 3.27 2.662 0 1.242-.583 2.611-3.27 2.611H8.69V5.384h3.651zM8.69 18.617v-5.628h4.208c2.231 0 3.194 1.166 3.194 2.738 0 1.547-.887 2.89-3.397 2.89H8.69z" })) }, { writingDirection: t });
             };
             d.metadata = { width: 24, height: 24 };
             const l = d;
         },
-        518532: (e, t, o) => {
+        194417: (e, t, o) => {
             o.r(t), o.d(t, { default: () => l });
             var n = o(202784),
                 a = o(890601),
@@ -854,25 +854,12 @@
                 r = o(347101);
             const d = (e = {}) => {
                 const { direction: t } = (0, i.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 74 24", children: n.createElement("g", null, n.createElement("path", { d: "M9.827 17.667c-4.82 0-8.873-3.927-8.873-8.747S5.007.173 9.827.173c2.667 0 4.567 1.047 5.993 2.413l-1.687 1.687c-1.027-.96-2.413-1.707-4.307-1.707-3.52 0-6.273 2.84-6.273 6.36s2.753 6.36 6.273 6.36c2.28 0 3.587-.92 4.413-1.747.68-.68 1.132-1.668 1.3-3.008H10v-2.4h7.873c.087.428.127.935.127 1.495 0 1.793-.493 4.013-2.067 5.587-1.54 1.6-3.5 2.453-6.106 2.453zm20.806-5.627c0 3.24-2.533 5.633-5.633 5.633-3.107 0-5.633-2.387-5.633-5.633 0-3.267 2.527-5.633 5.633-5.633 3.1.006 5.633 2.373 5.633 5.633zm-2.466 0c0-2.027-1.467-3.413-3.167-3.413-1.7 0-3.167 1.387-3.167 3.413 0 2.007 1.467 3.413 3.167 3.413 1.7 0 3.167-1.406 3.167-3.413zm15.133-.007c0 3.24-2.527 5.633-5.633 5.633s-5.633-2.387-5.633-5.633c0-3.267 2.527-5.633 5.633-5.633S43.3 8.773 43.3 12.033zm-2.467 0c0-2.027-1.467-3.413-3.167-3.413S34.5 10.007 34.5 12.033c0 2.007 1.467 3.413 3.167 3.413s3.166-1.406 3.166-3.413zm14.5-5.286V16.86c0 4.16-2.453 5.867-5.353 5.867-2.733 0-4.373-1.833-4.993-3.327l2.153-.893c.387.92 1.32 2.007 2.84 2.007 1.853 0 3.007-1.153 3.007-3.307v-.813H52.9c-.553.68-1.62 1.28-2.967 1.28-2.813 0-5.267-2.453-5.267-5.613 0-3.18 2.453-5.652 5.267-5.652 1.347 0 2.413.6 2.967 1.26h.087v-.92h2.346zm-2.173 5.306c0-1.987-1.32-3.433-3.007-3.433-1.707 0-3.007 1.453-3.007 3.433 0 1.96 1.3 3.393 3.007 3.393 1.68 0 3.007-1.426 3.007-3.393zM59.807.78v16.553h-2.473V.78h2.473zm9.886 13.113l1.92 1.28c-.62.92-2.113 2.493-4.693 2.493-3.2 0-5.587-2.473-5.587-5.633 0-3.347 2.413-5.633 5.313-5.633 2.92 0 4.353 2.327 4.82 3.587l.253.64-7.534 3.113c.573 1.133 1.473 1.707 2.733 1.707s2.133-.62 2.773-1.554zm-5.906-2.026l5.033-2.093c-.28-.707-1.107-1.193-2.093-1.193-1.254 0-3.007 1.107-2.94 3.287z" })) }, { writingDirection: t });
-            };
-            d.metadata = { width: 74, height: 24 };
-            const l = d;
-        },
-        89085: (e, t, o) => {
-            o.r(t), o.d(t, { default: () => l });
-            var n = o(202784),
-                a = o(890601),
-                i = o(783427),
-                r = o(347101);
-            const d = (e = {}) => {
-                const { direction: t } = (0, i.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M3.905 6.516h-.423V4.354h.263c.564-.015 1.018-.126 1.361-.332s.61-.529.8-.972h2.093v7.949H5.471v-4.94c-.351.305-.873.457-1.567.457zm2.194 10.88c.403-.273.69-.542.861-.81.171-.265.257-.566.257-.9 0-.304-.087-.542-.262-.713-.175-.172-.426-.257-.753-.257-.35 0-.623.096-.821.285-.198.19-.297.457-.297.799 0 .145.016.296.046.457l-2.577-.228c-.023-.175-.034-.342-.034-.502 0-.547.16-1.018.479-1.413s.764-.699 1.334-.913c.57-.213 1.224-.319 1.961-.319 1.125 0 2.009.221 2.651.662.643.441.964 1.079.964 1.916 0 .532-.112.998-.336 1.397-.224.399-.584.766-1.078 1.1-.562.381-1.372.768-2.428 1.164H10v1.881H2.542v-1.687c1.642-.806 2.828-1.445 3.558-1.917zM22 6H12v2h10V6zm0 10H12v2h10v-2z" })) }, { writingDirection: t });
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M16 3v8h-3V8.5H3v-3h10V3h3zm5 12.5h-9v3h9v-3zM10 21v-8H7v2.5H3v3h4V21h3zm8-12.5h3v-3h-3v3z" })) }, { writingDirection: t });
             };
             d.metadata = { width: 24, height: 24 };
             const l = d;
         },
-        226597: (e, t, o) => {
+        993752: (e, t, o) => {
             o.r(t), o.d(t, { default: () => l });
             var n = o(202784),
                 a = o(890601),
@@ -880,12 +867,42 @@
                 r = o(347101);
             const d = (e = {}) => {
                 const { direction: t } = (0, i.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M3.707 21.707l18-18-1.414-1.414-2.088 2.088C17.688 4.137 17.11 4 16.5 4H11v2h5.5c.028 0 .056 0 .084.002l-10.88 10.88c-.131-.266-.204-.565-.204-.882V7.551l2.068 1.93 1.365-1.462L4.5 3.882.068 8.019l1.365 1.462 2.068-1.93V16c0 .871.278 1.677.751 2.334l-1.959 1.959 1.414 1.414zM18.5 9h2v7.449l2.068-1.93 1.365 1.462-4.433 4.137-4.432-4.137 1.365-1.462 2.067 1.93V9zm-8.964 9l-2 2H13v-2H9.536z" })) }, { writingDirection: t });
+                return (0, a.Z)(
+                    "svg",
+                    {
+                        ...e,
+                        role: e["aria-label"] ? e.role || "img" : void 0,
+                        "aria-hidden": void 0 === e["aria-label"],
+                        style: [r.Z.root, e.style],
+                        viewBox: "0 0 90 24",
+                        children: n.createElement(
+                            "g",
+                            null,
+                            n.createElement("path", {
+                                d: "M6.57 2.094c-.289.16-.718.469-.937.668l-.414.36V1.983h-2.7v14.258h2.7v-5.055l.828.598c.758.524.937.574 2.195.574 1.567 0 2.434-.359 3.387-1.386 1.078-1.137 1.402-2.04 1.422-3.844 0-1.281-.074-1.805-.38-2.457-.433-.938-1.421-2-2.284-2.453-.828-.434-3.114-.504-3.817-.125zM9.38 4.78c.52.469 1.062 1.66 1.062 2.348 0 .758-.613 1.984-1.152 2.344-.27.18-.812.363-1.242.398-2.684.305-3.996-2.96-2-4.96.594-.598.648-.618 1.781-.544.813.055 1.262.18 1.55.414zm7.793-2.543c-1.117.524-2.125 1.66-2.52 2.867-.468 1.391-.289 3.555.395 4.801 1.277 2.383 4.195 3.211 6.39 1.86l.883-.559v1.063h2.52V1.984h-2.52v1.137l-.414-.379c-1.082-1.012-3.168-1.246-4.734-.504zm3.996 2.434c1.117.687 1.531 2.746.793 3.953-1.441 2.363-4.879 1.3-4.86-1.496.016-1.066.45-1.95 1.188-2.438.7-.468 2.121-.488 2.879-.02zm9.793-2.668c-.234.105-.703.379-1.027.629l-.594.453V1.984h-2.52v14.258h2.7v-5.09l.539.47c2.015 1.694 5.472.687 6.77-2.005.413-.847.503-1.246.503-2.472 0-2.344-.953-4.004-2.863-4.907-.973-.468-2.664-.578-3.508-.234zm2.465 2.687c.863.524 1.187 1.282 1.097 2.653-.07 1.027-.144 1.21-.718 1.804-.559.559-.813.668-1.621.743-.793.05-1.063 0-1.582-.364-1.586-1.062-1.696-3.445-.2-4.71.739-.614 2.125-.684 3.024-.126zm8.37-2.671c-.937.328-2.269 1.644-2.753 2.707-.633 1.445-.594 3.484.07 4.875.29.574.848 1.316 1.262 1.675 1.602 1.371 4.102 1.536 5.508.364.664-.579.738-.563.738.09v.539h2.52V1.984h-2.52v1.082l-.828-.593c-.723-.504-.973-.578-2.105-.614-.723-.02-1.567.055-1.891.16zm3.763 2.796c2.554 2.149.16 6.247-2.829 4.82-1.78-.847-1.886-3.917-.195-4.945.899-.558 2.285-.488 3.024.125zm8.08-2.775c-1.028.324-2.395 1.84-2.774 3.086-.629 2.004-.09 4.438 1.278 5.738 1.585 1.496 4.32 1.625 5.796.27l.434-.395-.09.953c-.219 2.204-2.574 3.016-5.258 1.79l-.933-.434-.489 1.062-.468 1.067.578.344c.324.199 1.168.488 1.906.648 3.527.793 6.445-.559 7.219-3.32.11-.38.18-2.852.18-5.774v-5.09H58.5v.543c0 .614-.2.684-.559.235-.703-.832-2.808-1.192-4.3-.723zm3.78 2.652c1.438 1.028 1.403 3.63-.073 4.532-.883.539-2.27.468-3.004-.145-1.082-.922-1.317-2.113-.688-3.45.688-1.405 2.485-1.858 3.766-.937zm8.587-2.632c-1.656.593-2.953 1.964-3.387 3.625-.27.976-.105 2.726.324 3.718.45.993 1.457 2.004 2.559 2.528 1.203.593 3.527.593 4.785.015 2-.918 3.043-2.597 3.043-4.906 0-1.047-.11-1.555-.414-2.203-.938-1.95-2.754-3.031-5.023-3.031-.665.02-1.512.125-1.887.254zm3.273 2.523c1.008.543 1.586 2.004 1.262 3.27-.648 2.433-3.852 2.832-4.969.628-.738-1.425-.394-2.921.828-3.734.72-.488 2.106-.559 2.88-.164zm0 0",
+                            }),
+                        ),
+                    },
+                    { writingDirection: t },
+                );
+            };
+            d.metadata = { width: 90, height: 24 };
+            const l = d;
+        },
+        474761: (e, t, o) => {
+            o.r(t), o.d(t, { default: () => l });
+            var n = o(202784),
+                a = o(890601),
+                i = o(783427),
+                r = o(347101);
+            const d = (e = {}) => {
+                const { direction: t } = (0, i.Z)();
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M10.883 4H2v8.5h2.255c-.643 1.14-1.66 1.83-2.735 2.51l3.224 5.06c3.139-2 5.335-4.63 6.084-8.37.444-2.21.405-4.55.154-6.81L10.883 4zM4 10.5V6h5.081c.151 1.84.121 3.64-.213 5.31-.466 2.32-1.519 4.39-3.537 5.96l-1.083-1.7c1.43-1.18 2.662-3.14 2.662-5.07H4zM21.876 4h-8.882v8.5h2.255c-.644 1.14-1.66 1.83-2.735 2.51l3.224 5.06c3.138-2 5.334-4.63 6.083-8.37.444-2.21.406-4.55.154-6.81L21.876 4zm-6.883 6.5V6h5.082c.151 1.84.121 3.64-.214 5.31-.466 2.32-1.519 4.39-3.537 5.96l-1.083-1.7c1.43-1.18 2.663-3.14 2.663-5.07h-2.911z" })) }, { writingDirection: t });
             };
             d.metadata = { width: 24, height: 24 };
             const l = d;
         },
-        258292: (e, t, o) => {
+        69893: (e, t, o) => {
             o.r(t), o.d(t, { default: () => l });
             var n = o(202784),
                 a = o(890601),
@@ -893,10 +910,25 @@
                 r = o(347101);
             const d = (e = {}) => {
                 const { direction: t } = (0, i.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M12.013 1l3.527 7.15 7.886 1.14-5.707 5.56 1.347 7.86L12.013 19 4.96 22.71l1.347-7.86L.6 9.29l7.886-1.14L12.013 1z" })) }, { writingDirection: t });
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M17.879 15c.079.323.121.658.121 1 0 2.757-2.691 5-6 5s-6-2.243-6-5h2c0 1.654 1.794 3 4 3s4-1.346 4-3c0-.352-.096-.686-.246-1h2.125zM12 11c-2.206 0-4-1.346-4-3s1.794-3 4-3 4 1.346 4 3h2c0-2.757-2.691-5-6-5S6 5.243 6 8c0 1.126.455 2.163 1.211 3H3v2h18v-2h-9z" })) }, { writingDirection: t });
             };
             d.metadata = { width: 24, height: 24 };
             const l = d;
+        },
+        500201: (e, t, o) => {
+            o.r(t), o.d(t, { default: () => s });
+            var n = o(202784),
+                a = o(890601),
+                i = o(783427),
+                r = o(717683),
+                d = o(347101);
+            const l = (e = {}) => {
+                const t = n.useContext(r.Z),
+                    { direction: o } = (0, i.Z)();
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [d.Z.root, e.style, t && d.Z.iconRTL], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M21.15 6.232c.97.977.97 2.559 0 3.536L9.91 21H3v-6.914L14.23 2.854c.98-.977 2.56-.977 3.54 0l3.38 3.378zM14.75 19l-2 2H21v-2h-6.25z" })) }, { writingDirection: o });
+            };
+            l.metadata = { width: 24, height: 24 };
+            const s = l;
         },
         662678: (e, t, o) => {
             o.d(t, { G: () => a, Z: () => n });
@@ -930,4 +962,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.inlineTombstoneHandler~loader.tweetHandler.1e67c23a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.inlineTombstoneHandler~loader.tweetHandler.ef2b858a.js.map

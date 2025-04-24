@@ -2,358 +2,358 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["ondemand.SettingsMonetization-8ed0fac5"],
     {
-        566220: (e, t, a) => {
-            a.d(t, { R: () => l });
-            var r = a(202784);
+        566220: (e, t, r) => {
+            r.d(t, { R: () => c });
+            var a = r(202784);
             const n = () => new Date(),
-                s = r.createContext(n),
-                l = () => r.useContext(s);
+                s = a.createContext(n),
+                c = () => a.useContext(s);
         },
-        317897: (e, t, a) => {
-            a.r(t), a.d(t, { default: () => nr });
-            var r = a(807896),
-                n = a(202784),
-                s = a(107267),
-                l = a(725516),
-                c = a(300497),
-                o = a(615027),
-                i = a(674132),
-                u = a.n(i),
-                m = a(507651),
-                p = a(652904),
-                E = a(264922),
-                _ = a(518180),
-                d = a(717626),
-                Z = a(325686),
-                h = (a(585488), a(844685)),
-                b = a(731708),
-                f = a(154003),
-                g = a(392237),
-                w = a(309043),
-                y = a(831984),
-                v = a(875586),
-                x = a(468869),
-                S = a(188356),
-                T = a(199213),
-                k = a(736063),
-                R = a(535338);
+        317897: (e, t, r) => {
+            r.r(t), r.d(t, { default: () => na });
+            var a = r(807896),
+                n = r(202784),
+                s = r(107267),
+                c = r(725516),
+                l = r(300497),
+                o = r(615027),
+                i = r(674132),
+                u = r.n(i),
+                m = r(507651),
+                p = r(652904),
+                E = r(264922),
+                d = r(518180),
+                _ = r(717626),
+                b = r(325686),
+                h = (r(585488), r(844685)),
+                Z = r(731708),
+                g = r(154003),
+                w = r(392237),
+                f = r(309043),
+                y = r(831984),
+                v = r(875586),
+                S = r(468869),
+                x = r(603e3),
+                T = r(199213),
+                k = r(736063),
+                R = r(535338);
             const O = u().bc43a32e,
                 N = u().i4c3b046,
                 P = u().ca516a66,
-                C = d.Z,
+                C = _.Z,
                 I = ({ slice: e }) => {
-                    const { recentItems: t } = (0, x.h9)(e);
+                    const { recentItems: t } = (0, S.h9)(e);
                     return n.createElement(
                         n.Fragment,
                         null,
                         n.createElement(h.Z, { text: O }),
                         t.length > 0
                             ? n.createElement(
-                                  Z.Z,
+                                  b.Z,
                                   { role: "list" },
                                   t.map((e) => n.createElement(y.Z, { item: e, key: e.transaction_id })),
                               )
-                            : n.createElement(b.ZP, { color: "gray700", style: V.emptyState }, N),
-                        n.createElement(f.ZP, { link: _.OB.transactions.root, style: V.button }, P),
+                            : n.createElement(Z.ZP, { color: "gray700", style: V.emptyState }, N),
+                        n.createElement(g.ZP, { link: d.OB.transactions.root, style: V.button }, P),
                     );
                 },
                 A = () => {
                     const e = (0, R.p)(C, { recent_awards_limit: 3 }).viewer.user_results.result,
                         { awards_granted_slice: t } = e;
-                    return n.createElement(n.Fragment, null, n.createElement(v.Z, { revenueType: S.AU.awards_revenue, showEarnedRevenueSinceLastPayout: !0, user: e }), n.createElement(w.Z, { user: e }), n.createElement(T.Z, { revenueType: S.AU.awards_revenue, showHelperText: !0, showProgress: !0, stripeStatus: e.stripe_account_status, user: e }), t && n.createElement(I, { slice: t }));
+                    return n.createElement(n.Fragment, null, n.createElement(v.Z, { revenueType: x.AU.awards_revenue, showEarnedRevenueSinceLastPayout: !0, user: e }), n.createElement(f.Z, { user: e }), n.createElement(T.Z, { revenueType: x.AU.awards_revenue, showHelperText: !0, showProgress: !0, stripeStatus: e.stripe_account_status, user: e }), t && n.createElement(I, { slice: t }));
                 },
                 L = { context: "MONETIZATION_AWARDS_REVENUE" },
-                V = g.default.create((e) => ({ button: { marginTop: e.spaces.space16, marginBottom: e.spaces.space32, marginHorizontal: e.spaces.space16 }, emptyState: { marginVertical: e.spaces.space12, textAlign: "center" } })),
-                U = (0, l.Z)(() => n.createElement(k.H, { errorConfig: L }, n.createElement(A, null)), { component: "awards_revenue" });
-            var B = a(470206),
-                D = (a(136728), a(688715)),
-                H = a(420412),
-                F = a(190286),
-                z = a(782642),
-                M = a(977126),
-                W = a(428606),
-                j = a(97141),
-                G = a(614983),
-                J = a.n(G),
-                $ = a(277660),
-                Y = a.n($),
-                q = a(351743),
-                K = a.n(q);
-            const Q = j.Z,
-                X = W.Z,
+                V = w.default.create((e) => ({ button: { marginTop: e.spaces.space16, marginBottom: e.spaces.space32, marginHorizontal: e.spaces.space16 }, emptyState: { marginVertical: e.spaces.space12, textAlign: "center" } })),
+                U = (0, c.Z)(() => n.createElement(k.H, { errorConfig: L }, n.createElement(A, null)), { component: "awards_revenue" });
+            var B = r(470206),
+                D = (r(136728), r(688715)),
+                $ = r(420412),
+                H = r(190286),
+                F = r(782642),
+                z = r(977126),
+                M = r(428606),
+                W = r(97141),
+                j = r(614983),
+                G = r.n(j),
+                J = r(277660),
+                Y = r.n(J),
+                q = r(351743),
+                K = r.n(q);
+            const Q = W.Z,
+                X = M.Z,
                 ee = (e) => {
                     const t = Y()(Q, e),
-                        [a, r] = K()(X);
+                        [r, a] = K()(X);
                     return [
                         n.useCallback(
                             () =>
-                                new Promise((e, r) => {
-                                    a({
+                                new Promise((e, a) => {
+                                    r({
                                         variables: {},
-                                        onCompleted: (t, a) => e(),
-                                        onError: r,
-                                        updater: (e, a) => {
-                                            const r = t.__id;
-                                            J()(r, "userId must be specified");
-                                            const n = e.get(r);
-                                            J()(n, "userRecord must be specified"), n.invalidateRecord();
+                                        onCompleted: (t, r) => e(),
+                                        onError: a,
+                                        updater: (e, r) => {
+                                            const a = t.__id;
+                                            G()(a, "userId must be specified");
+                                            const n = e.get(a);
+                                            G()(n, "userRecord must be specified"), n.invalidateRecord();
                                         },
                                     });
                                 }),
-                            [a, t.__id],
+                            [r, t.__id],
                         ),
-                        r,
+                        a,
                     ];
                 },
                 te = u().f3ce76c0,
-                ae = u().i8982e7e,
-                re = u().fbbfe8aa,
+                re = u().i8982e7e,
+                ae = u().fbbfe8aa,
                 ne = u().e4f29140,
                 se = u().f66d24be,
-                le = u().g5925628,
-                ce = u().e58e85d2,
+                ce = u().g5925628,
+                le = u().e58e85d2,
                 oe = u().be8e87b4,
                 ie = u().cfd2f35e,
                 ue = u().bee26fa8,
                 me = u().f0145c9a,
                 pe = u().ef4602ec,
                 Ee = { helpCenter: (0, D.ju)("https://help.x.com/using-twitter/coins"), contactUs: (0, D.ju)("https://help.x.com/forms/paid-features/general") },
-                _e = g.default.create((e) => ({ other: { gap: e.spaces.space24, marginTop: e.spaces.space12 }, buttons: { flexDirection: "row", flexWrap: "wrap", gap: e.spaces.space8 }, button: { flexBasis: `${e.breakpoints.micro}px`, flexGrow: 1, flexShrink: 1 } })),
-                de = (0, l.Z)(
+                de = w.default.create((e) => ({ other: { gap: e.spaces.space24, marginTop: e.spaces.space12 }, buttons: { flexDirection: "row", flexWrap: "wrap", gap: e.spaces.space8 }, button: { flexBasis: `${e.breakpoints.micro}px`, flexGrow: 1, flexShrink: 1 } })),
+                _e = (0, c.Z)(
                     ({ backLocation: e, user: t }) => {
-                        const a = (0, s.useHistory)(),
-                            r = (0, z.p)(),
-                            [l, c] = ee(t),
+                        const r = (0, s.useHistory)(),
+                            a = (0, F.p)(),
+                            [c, l] = ee(t),
                             [o, i] = n.useState(!1),
                             u = n.useCallback(() => {
                                 i(!0);
                             }, []),
                             m = n.useCallback(() => {
-                                l()
+                                c()
                                     .then(() => {
-                                        i(!1), r({ text: me }), a.push(e);
+                                        i(!1), a({ text: me }), r.push(e);
                                     })
                                     .catch(() => {
-                                        r({ text: pe });
+                                        a({ text: pe });
                                     });
-                            }, [r, l, a, e]),
+                            }, [a, c, r, e]),
                             p = n.useCallback(() => {
                                 i(!1);
                             }, []);
-                        return n.createElement(n.Fragment, null, n.createElement(M.Z, { childrenStyle: _e.other, headline: te, illustration: M.j.LifeSaver }, n.createElement(b.ZP, { color: "gray700" }, ae), n.createElement(Z.Z, { style: _e.buttons }, n.createElement(f.ZP, { link: Ee.helpCenter, style: _e.button, type: "primaryOutlined" }, se), n.createElement(f.ZP, { link: Ee.contactUs, style: _e.button, type: "primaryOutlined" }, le))), n.createElement(H.Z, null), n.createElement(M.Z, { childrenStyle: _e.other, headline: re, illustration: M.j.Cone }, n.createElement(b.ZP, { color: "gray700" }, ne), n.createElement(Z.Z, { style: _e.buttons }, n.createElement(f.ZP, { disabled: c, onPress: u, style: _e.button, type: "destructiveOutlined" }, ce), o && n.createElement(F.Z, { cancelButtonLabel: ie, confirmButtonLabel: ue, confirmButtonType: "destructiveFilled", headline: oe, onCancel: p, onConfirm: m, text: ne }))));
+                        return n.createElement(n.Fragment, null, n.createElement(z.Z, { childrenStyle: de.other, headline: te, illustration: z.j.LifeSaver }, n.createElement(Z.ZP, { color: "gray700" }, re), n.createElement(b.Z, { style: de.buttons }, n.createElement(g.ZP, { link: Ee.helpCenter, style: de.button, type: "primaryOutlined" }, se), n.createElement(g.ZP, { link: Ee.contactUs, style: de.button, type: "primaryOutlined" }, ce))), n.createElement($.Z, null), n.createElement(z.Z, { childrenStyle: de.other, headline: ae, illustration: z.j.Cone }, n.createElement(Z.ZP, { color: "gray700" }, ne), n.createElement(b.Z, { style: de.buttons }, n.createElement(g.ZP, { disabled: l, onPress: u, style: de.button, type: "destructiveOutlined" }, le), o && n.createElement(H.Z, { cancelButtonLabel: ie, confirmButtonLabel: ue, confirmButtonType: "destructiveFilled", headline: oe, onCancel: p, onConfirm: m, text: ne }))));
                     },
                     { component: "awards_management_summary" },
                 ),
-                Ze = B.Z,
+                be = B.Z,
                 he = () => {
-                    const e = (0, R.p)(Ze, {}).viewer.user_results.result;
-                    return "User" === e.__typename && e.award_eligible ? n.createElement(de, { backLocation: _.Jz, user: e }) : null;
+                    const e = (0, R.p)(be, {}).viewer.user_results.result;
+                    return "User" === e.__typename && e.award_eligible ? n.createElement(_e, { backLocation: d.Jz, user: e }) : null;
                 },
-                be = { context: "MONETIZATION_AWARDS_SETTINGS" },
-                fe = (0, l.Z)(() => n.createElement(k.H, { errorConfig: be }, n.createElement(he, null)), { component: "awards_settings" }),
-                ge = u().j087774e,
-                we = _.OB.dashboard.revenue,
-                ye = _.OB.dashboard.manage,
+                Ze = { context: "MONETIZATION_AWARDS_SETTINGS" },
+                ge = (0, c.Z)(() => n.createElement(k.H, { errorConfig: Ze }, n.createElement(he, null)), { component: "awards_settings" }),
+                we = u().j087774e,
+                fe = d.OB.dashboard.revenue,
+                ye = d.OB.dashboard.manage,
                 ve = u().ja73ebac,
-                xe = u().h16eeb42,
-                Se = (0, l.Z)(
+                Se = u().h16eeb42,
+                xe = (0, c.Z)(
                     () => {
                         const e = (0, s.useLocation)(),
                             t = [
-                                { key: "revenue", label: ve, to: { pathname: we }, isActive: () => e.pathname === we },
-                                { key: "manage", label: xe, to: { pathname: ye }, isActive: () => e.pathname === ye },
+                                { key: "revenue", label: ve, to: { pathname: fe }, isActive: () => e.pathname === fe },
+                                { key: "manage", label: Se, to: { pathname: ye }, isActive: () => e.pathname === ye },
                             ];
-                        return n.createElement(p.Z, null, n.createElement(E.Z, { location: e, screenType: "secondaryDetail", title: ge }, n.createElement(m.Z, { links: t }), n.createElement(s.Switch, null, n.createElement(s.Route, { exact: !0, path: we }, n.createElement(U, null)), n.createElement(s.Route, { exact: !0, path: ye }, n.createElement(fe, null)), n.createElement(s.Route, null, n.createElement(o.Z, { to: we })))));
+                        return n.createElement(p.Z, null, n.createElement(E.Z, { location: e, screenType: "secondaryDetail", title: we }, n.createElement(m.Z, { links: t }), n.createElement(s.Switch, null, n.createElement(s.Route, { exact: !0, path: fe }, n.createElement(U, null)), n.createElement(s.Route, { exact: !0, path: ye }, n.createElement(ge, null)), n.createElement(s.Route, null, n.createElement(o.Z, { to: fe })))));
                     },
                     { component: "awards_dashboard" },
                 );
-            var Te = a(967670),
-                ke = a(315984),
-                Re = a(127218);
+            var Te = r(967670),
+                ke = r(315984),
+                Re = r(127218);
             const Oe = u().a22f6808,
                 Ne = Te.Z,
                 Pe = () => {
                     const e = (0, s.useLocation)(),
-                        { data: t, fetchNext: a } = (0, Re.C)(Ne, { limit: 25 }),
-                        r = t.viewer.user_results.result;
-                    if ("User" !== r.__typename) return null;
-                    const l = r.awards_granted_slice;
-                    return l ? n.createElement(p.Z, null, n.createElement(E.Z, { location: e, screenType: "secondaryDetail", title: Oe }, n.createElement(v.Z, { revenueType: S.AU.awards_revenue, showEarnedRevenueSinceLastPayout: !0, user: r }), n.createElement(ke.Z, { fetchNext: a, slice: l }))) : null;
+                        { data: t, fetchNext: r } = (0, Re.C)(Ne, { limit: 25 }),
+                        a = t.viewer.user_results.result;
+                    if ("User" !== a.__typename) return null;
+                    const c = a.awards_granted_slice;
+                    return c ? n.createElement(p.Z, null, n.createElement(E.Z, { location: e, screenType: "secondaryDetail", title: Oe }, n.createElement(v.Z, { revenueType: x.AU.awards_revenue, showEarnedRevenueSinceLastPayout: !0, user: a }), n.createElement(ke.Z, { fetchNext: r, slice: c }))) : null;
                 },
                 Ce = { context: "MONETIZATION_AWARDS_TRANSACTIONS" },
-                Ie = (0, l.Z)(() => n.createElement(k.H, { errorConfig: Ce }, n.createElement(Pe, null)), { component: "awards_transactions" });
-            var Ae = a(676812),
-                Le = a(462770),
-                Ve = a(469149),
-                Ue = a(443781);
+                Ie = (0, c.Z)(() => n.createElement(k.H, { errorConfig: Ce }, n.createElement(Pe, null)), { component: "awards_transactions" });
+            var Ae = r(676812),
+                Le = r(860747),
+                Ve = r(253518),
+                Ue = r(443781);
             const Be = u().ff9ed474,
                 De = u().d59dbf8a,
-                He = u().c76972f0,
-                Fe = Ae.Z,
-                ze = () => {
+                $e = u().c76972f0,
+                He = Ae.Z,
+                Fe = () => {
                     const e = (0, s.useLocation)(),
                         { featureSwitches: t } = n.useContext(Ue.rC),
-                        a = t.isTrue("creator_monetization_web_tips_dashboard_enabled"),
-                        { viewer: r } = (0, R.p)(Fe, { awardsEnabled: a }),
-                        l = !!r.is_active_creator,
-                        c = r.user_results.result;
-                    return n.createElement(p.Z, null, n.createElement(E.Z, { location: e, screenType: "secondaryDetail", title: Be }, n.createElement(v.Z, { revenueType: S.AU.total_revenue, showEarnedRevenueSinceLastPayout: !0, user: c }), n.createElement(T.Z, { showHelperText: !0, stripeStatus: c.stripe_account_status, type: "payoutHistory", user: c }), n.createElement(h.Z, { subtext: He, text: De }), n.createElement(Ve.Z, { isActiveCreator: l, user: c }), n.createElement(Le.Z, { user: c })));
+                        r = t.isTrue("creator_monetization_web_tips_dashboard_enabled"),
+                        { viewer: a } = (0, R.p)(He, { awardsEnabled: r }),
+                        c = !!a.is_active_creator,
+                        l = a.user_results.result;
+                    return n.createElement(p.Z, null, n.createElement(E.Z, { location: e, screenType: "secondaryDetail", title: Be }, n.createElement(v.Z, { revenueType: x.AU.total_revenue, showEarnedRevenueSinceLastPayout: !0, user: l }), n.createElement(T.Z, { showHelperText: !0, stripeStatus: l.stripe_account_status, type: "payoutHistory", user: l }), n.createElement(h.Z, { subtext: $e, text: De }), n.createElement(Ve.Z, { isActiveCreator: c, user: l }), n.createElement(Le.Z, { user: l })));
                 },
-                Me = { context: "MONETIZATION_EARNINGS" },
-                We = (0, l.Z)(() => n.createElement(k.H, { errorConfig: Me }, n.createElement(ze, null)), { component: "earnings" });
-            var je = a(668214),
-                Ge = a(390387);
-            const Je = (0, je.Z)().propsFromState(() => ({ isActiveCreator: Ge.WM }))((e) => (!!e.isActiveCreator ? e.children : null));
-            var $e = a(175270),
-                Ye = a(933317);
+                ze = { context: "MONETIZATION_EARNINGS" },
+                Me = (0, c.Z)(() => n.createElement(k.H, { errorConfig: ze }, n.createElement(Fe, null)), { component: "earnings" });
+            var We = r(668214),
+                je = r(390387);
+            const Ge = (0, We.Z)().propsFromState(() => ({ isActiveCreator: je.WM }))((e) => (!!e.isActiveCreator ? e.children : null));
+            var Je = r(175270),
+                Ye = r(933317);
             const qe = u().ee0510c2,
                 Ke = u().g652fc4c,
-                Qe = $e.Z,
+                Qe = Je.Z,
                 Xe = () => {
                     const e = (0, s.useLocation)(),
-                        { data: t, fetchNext: a } = (0, Re.C)(Qe, { limit: 25 }),
-                        r = t.viewer.user_results.result;
-                    if ("User" !== r.__typename) return null;
-                    const l = r.creator_payouts_slice;
-                    return l ? n.createElement(p.Z, null, n.createElement(E.Z, { location: e, screenType: "secondaryDetail", title: qe }, n.createElement(v.Z, { revenueType: S.AU.total_revenue, user: r }), n.createElement(Ye.Z, { emptyStateDescription: Ke, fetchNext: a, slice: l }))) : null;
+                        { data: t, fetchNext: r } = (0, Re.C)(Qe, { limit: 25 }),
+                        a = t.viewer.user_results.result;
+                    if ("User" !== a.__typename) return null;
+                    const c = a.creator_payouts_slice;
+                    return c ? n.createElement(p.Z, null, n.createElement(E.Z, { location: e, screenType: "secondaryDetail", title: qe }, n.createElement(v.Z, { revenueType: x.AU.total_revenue, user: a }), n.createElement(Ye.Z, { emptyStateDescription: Ke, fetchNext: r, slice: c }))) : null;
                 },
                 et = { context: "MONETIZATION_PAYOUT_HISTORY" },
-                tt = (0, l.Z)(() => n.createElement(k.H, { errorConfig: et }, n.createElement(Xe, null)), { component: "payout_history" });
-            var at = a(181089),
-                rt = a(656166),
-                nt = a(822441),
-                st = a(952793);
-            const lt = u().d978f43e,
-                ct = u().d113fc10,
+                tt = (0, c.Z)(() => n.createElement(k.H, { errorConfig: et }, n.createElement(Xe, null)), { component: "payout_history" });
+            var rt = r(181089),
+                at = r(656166),
+                nt = r(822441),
+                st = r(952793);
+            const ct = u().d978f43e,
+                lt = u().d113fc10,
                 ot = u().h7a41c02,
                 it = u().eedf2eaa,
                 ut = u().d93308d8,
-                mt = at.Z,
-                pt = ({ emptyStateDescription: e, heading: t, slice: a, type: r }) => {
-                    const { recentItems: s } = (0, x._5)(a),
-                        l = ((e) => n.useCallback((t) => n.createElement(nt.Z, { item: t, key: t.__id, type: e }), [e]))(r);
-                    return n.createElement(n.Fragment, null, n.createElement(h.Z, { text: t }), s.length > 0 ? n.createElement(Z.Z, { role: "list" }, s.map(l)) : n.createElement(b.ZP, { color: "gray700", style: Zt.emptyState }, e));
+                mt = rt.Z,
+                pt = ({ emptyStateDescription: e, heading: t, slice: r, type: a }) => {
+                    const { recentItems: s } = (0, S._5)(r),
+                        c = ((e) => n.useCallback((t) => n.createElement(nt.Z, { item: t, key: t.__id, type: e }), [e]))(a);
+                    return n.createElement(n.Fragment, null, n.createElement(h.Z, { text: t }), s.length > 0 ? n.createElement(b.Z, { role: "list" }, s.map(c)) : n.createElement(Z.ZP, { color: "gray700", style: bt.emptyState }, e));
                 },
                 Et = () => {
                     const e = (0, R.p)(mt, { new_subscribers_limit: 3, renewals_limit: 3 }).viewer.user_results.result,
-                        { superfollows_new_subscribers_slice: t, superfollows_renewals_slice: a } = e,
-                        r = (0, st.hC)("creator_monetization_web_tips_dashboard_enabled") && e.award_eligible;
-                    return n.createElement(n.Fragment, null, n.createElement(v.Z, { showEarnedRevenueSinceLastPayout: !0, user: e }), n.createElement(T.Z, { showHelperText: !0, showProgress: !0, stripeStatus: e.stripe_account_status, type: r ? void 0 : "payoutHistory", user: e }), t && n.createElement(n.Fragment, null, n.createElement(pt, { emptyStateDescription: ct, heading: lt, slice: t, type: rt.x.InitialSale }), n.createElement(f.ZP, { link: _.Vt.transactions.newSubscriptions, style: Zt.button }, ut)), a && n.createElement(n.Fragment, null, n.createElement(pt, { emptyStateDescription: it, heading: ot, slice: a, type: rt.x.Renewal }), n.createElement(f.ZP, { link: _.Vt.transactions.renewals, style: Zt.button }, ut)));
+                        { superfollows_new_subscribers_slice: t, superfollows_renewals_slice: r } = e,
+                        a = (0, st.hC)("creator_monetization_web_tips_dashboard_enabled") && e.award_eligible;
+                    return n.createElement(n.Fragment, null, n.createElement(v.Z, { showEarnedRevenueSinceLastPayout: !0, user: e }), n.createElement(T.Z, { showHelperText: !0, showProgress: !0, stripeStatus: e.stripe_account_status, type: a ? void 0 : "payoutHistory", user: e }), t && n.createElement(n.Fragment, null, n.createElement(pt, { emptyStateDescription: lt, heading: ct, slice: t, type: at.x.InitialSale }), n.createElement(g.ZP, { link: d.Vt.transactions.newSubscriptions, style: bt.button }, ut)), r && n.createElement(n.Fragment, null, n.createElement(pt, { emptyStateDescription: it, heading: ot, slice: r, type: at.x.Renewal }), n.createElement(g.ZP, { link: d.Vt.transactions.renewals, style: bt.button }, ut)));
                 },
-                _t = { context: "MONETIZATION_SUPER_FOLLOWS_REVENUE" },
-                dt = (0, l.Z)(() => n.createElement(k.H, { errorConfig: _t }, n.createElement(Et, null)), { component: "super_follows_revenue" }),
-                Zt = g.default.create((e) => ({ button: { marginTop: e.spaces.space16, marginBottom: e.spaces.space32, marginHorizontal: e.spaces.space16 }, emptyState: { marginVertical: e.spaces.space12, textAlign: "center" } }));
-            var ht = a(747208),
-                bt = a(893903);
-            const ft = ht.Z,
-                gt = () => {
-                    const { subscriptions_price_offerings: e, super_follows_price_offerings: t, viewer: a } = (0, R.p)(ft, {}),
-                        r = a.user_results.result;
-                    return "User" !== r.__typename ? null : n.createElement(bt.Z, { backLocation: _.Jz, perksConfirmLocation: _.Vt.perks.confirm, perksDescriptionLocation: _.Vt.perks.description, perksIntroLocation: _.Vt.perks.intro, perksPricingLocation: _.Vt.perks.pricing, priceOfferings: t, subscriptionsPriceOfferings: e, user: r, viewer: a });
+                dt = { context: "MONETIZATION_SUPER_FOLLOWS_REVENUE" },
+                _t = (0, c.Z)(() => n.createElement(k.H, { errorConfig: dt }, n.createElement(Et, null)), { component: "super_follows_revenue" }),
+                bt = w.default.create((e) => ({ button: { marginTop: e.spaces.space16, marginBottom: e.spaces.space32, marginHorizontal: e.spaces.space16 }, emptyState: { marginVertical: e.spaces.space12, textAlign: "center" } }));
+            var ht = r(747208),
+                Zt = r(893903);
+            const gt = ht.Z,
+                wt = () => {
+                    const { subscriptions_price_offerings: e, super_follows_price_offerings: t, viewer: r } = (0, R.p)(gt, {}),
+                        a = r.user_results.result;
+                    return "User" !== a.__typename ? null : n.createElement(Zt.Z, { backLocation: d.Jz, perksConfirmLocation: d.Vt.perks.confirm, perksDescriptionLocation: d.Vt.perks.description, perksIntroLocation: d.Vt.perks.intro, perksPricingLocation: d.Vt.perks.pricing, priceOfferings: t, subscriptionsPriceOfferings: e, user: a, viewer: r });
                 },
-                wt = { context: "MONETIZATION_SUPER_FOLLOWS_SETTINGS" },
-                yt = (0, l.Z)(() => n.createElement(k.H, { errorConfig: wt }, n.createElement(gt, null)), { component: "super_follows_settings" }),
+                ft = { context: "MONETIZATION_SUPER_FOLLOWS_SETTINGS" },
+                yt = (0, c.Z)(() => n.createElement(k.H, { errorConfig: ft }, n.createElement(wt, null)), { component: "super_follows_settings" }),
                 vt = u().d7b51c68,
-                xt = u().ja73ebac,
-                St = u().h16eeb42,
-                Tt = _.Vt.dashboard.revenue,
-                kt = _.Vt.dashboard.manage,
-                Rt = (0, l.Z)(
+                St = u().ja73ebac,
+                xt = u().h16eeb42,
+                Tt = d.Vt.dashboard.revenue,
+                kt = d.Vt.dashboard.manage,
+                Rt = (0, c.Z)(
                     () => {
                         const e = (0, s.useLocation)(),
                             t = [
-                                { key: "revenue", label: xt, to: { pathname: Tt }, isActive: () => e.pathname === Tt },
-                                { key: "manage", label: St, to: { pathname: kt }, isActive: () => e.pathname === kt },
+                                { key: "revenue", label: St, to: { pathname: Tt }, isActive: () => e.pathname === Tt },
+                                { key: "manage", label: xt, to: { pathname: kt }, isActive: () => e.pathname === kt },
                             ];
-                        return n.createElement(p.Z, null, n.createElement(E.Z, { location: e, screenType: "secondaryDetail", title: vt }, n.createElement(m.Z, { links: t }), n.createElement(s.Switch, null, n.createElement(s.Route, { exact: !0, path: Tt }, n.createElement(dt, null)), n.createElement(s.Route, { path: kt }, n.createElement(yt, null)), n.createElement(s.Route, null, n.createElement(o.Z, { to: Tt })))));
+                        return n.createElement(p.Z, null, n.createElement(E.Z, { location: e, screenType: "secondaryDetail", title: vt }, n.createElement(m.Z, { links: t }), n.createElement(s.Switch, null, n.createElement(s.Route, { exact: !0, path: Tt }, n.createElement(_t, null)), n.createElement(s.Route, { path: kt }, n.createElement(yt, null)), n.createElement(s.Route, null, n.createElement(o.Z, { to: Tt })))));
                     },
                     { component: "super_follows_dashboard" },
                 );
-            var Ot = a(19533),
-                Nt = a(320848),
-                Pt = a(62151),
-                Ct = a(949985),
-                It = a(50998),
-                At = a(642097),
-                Lt = a(43512),
-                Vt = a(220693),
-                Ut = a(102614),
-                Bt = a(371758),
-                Dt = a(399384),
-                Ht = a(466818),
-                Ft = a(513120),
-                zt = a(357770),
-                Mt = a(541659),
-                Wt = a(973316),
-                jt = a(467874),
-                Gt = a(870242),
-                Jt = a(376755);
-            const $t = Gt.Z,
-                Yt = jt.Z,
+            var Ot = r(19533),
+                Nt = r(320848),
+                Pt = r(62151),
+                Ct = r(949985),
+                It = r(50998),
+                At = r(642097),
+                Lt = r(43512),
+                Vt = r(220693),
+                Ut = r(102614),
+                Bt = r(371758),
+                Dt = r(399384),
+                $t = r(466818),
+                Ht = r(513120),
+                Ft = r(357770),
+                zt = r(541659),
+                Mt = r(973316),
+                Wt = r(467874),
+                jt = r(870242),
+                Gt = r(376755);
+            const Jt = jt.Z,
+                Yt = Wt.Z,
                 qt = (e, { price: t }) => {
-                    const a = Y()($t, e),
-                        r = (0, Jt.Ex)(a),
-                        s = t || r || "",
-                        [l, c] = K()(Yt);
+                    const r = Y()(Jt, e),
+                        a = (0, Gt.Ex)(r),
+                        s = t || a || "",
+                        [c, l] = K()(Yt);
                     return [
                         n.useCallback(
                             () =>
-                                new Promise((t, a) => {
-                                    l({
+                                new Promise((t, r) => {
+                                    c({
                                         variables: { new_price: s },
-                                        onCompleted: (e, a) => t(),
-                                        onError: a,
+                                        onCompleted: (e, r) => t(),
+                                        onError: r,
                                         updater: (t) => {
-                                            const a = t.get(e.__id);
-                                            a && a.setLinkedRecord(t.create(`client:${e.__id}:super_follow_pending_price_change`, "SuperFollowPendingPriceChange").setValue(s, "new_price"), "super_follow_pending_price_change");
+                                            const r = t.get(e.__id);
+                                            r && r.setLinkedRecord(t.create(`client:${e.__id}:super_follow_pending_price_change`, "SuperFollowPendingPriceChange").setValue(s, "new_price"), "super_follow_pending_price_change");
                                         },
                                     });
                                 }),
-                            [s, l, e],
+                            [s, c, e],
                         ),
-                        c,
+                        l,
                     ];
                 };
-            var Kt = a(274257),
-                Qt = a(176544);
+            var Kt = r(274257),
+                Qt = r(176544);
             const Xt = u().hadd463a,
-                ea = u().fce14f56,
-                ta = u().b0c58272,
-                aa = n.createElement(u().I18NFormatMessage, { $i18n: "ede65a59" }, n.createElement(b.ZP, { link: Qt._t }, u().edc014fb)),
-                ra = u().d5737f0e,
-                na = Dt.Z,
-                sa = Bt.Z,
-                la = Ut.Z,
-                ca = g.default.create((e) => ({ interstitial: { marginTop: e.spaces.space32 }, prices: { marginBottom: e.spaces.space32, marginTop: e.spaces.space28 }, bottomBar: { gap: e.spaces.space24, marginBottom: e.spaces.space32, marginTop: e.spaces.space16 }, input: { borderRadius: e.borderRadii.small, marginBottom: e.spaces.space20, paddingStart: 0, paddingEnd: 0 }, subtext: { marginTop: e.spaces.space8 }, selector: { marginTop: e.spaces.space12 } })),
-                oa = (0, l.Z)(
-                    ({ backLocation: e, subscriptionsPriceOfferings: t, user: a, viewer: r }) => {
-                        const s = Y()(na, a),
-                            l = Y()(sa, r),
-                            c = Y()(la, t).offers.map((e) => ({ label: e.price, value: e.key })),
-                            o = (0, Jt.Ex)(s),
-                            i = (0, Kt.qO)(l),
+                er = u().fce14f56,
+                tr = u().b0c58272,
+                rr = n.createElement(u().I18NFormatMessage, { $i18n: "ede65a59" }, n.createElement(Z.ZP, { link: Qt._t }, u().edc014fb)),
+                ar = u().d5737f0e,
+                nr = Dt.Z,
+                sr = Bt.Z,
+                cr = Ut.Z,
+                lr = w.default.create((e) => ({ interstitial: { marginTop: e.spaces.space32 }, prices: { marginBottom: e.spaces.space32, marginTop: e.spaces.space28 }, bottomBar: { gap: e.spaces.space24, marginBottom: e.spaces.space32, marginTop: e.spaces.space16 }, input: { borderRadius: e.borderRadii.small, marginBottom: e.spaces.space20, paddingStart: 0, paddingEnd: 0 }, subtext: { marginTop: e.spaces.space8 }, selector: { marginTop: e.spaces.space12 } })),
+                or = (0, c.Z)(
+                    ({ backLocation: e, subscriptionsPriceOfferings: t, user: r, viewer: a }) => {
+                        const s = Y()(nr, r),
+                            c = Y()(sr, a),
+                            l = Y()(cr, t).offers.map((e) => ({ label: e.price, value: e.key })),
+                            o = (0, Gt.Ex)(s),
+                            i = (0, Kt.qO)(c),
                             u = i && i !== o,
-                            m = (0, Kt.NP)(l, "selected_price"),
+                            m = (0, Kt.NP)(c, "selected_price"),
                             [p, E] = qt(s, { price: i || "" }),
-                            _ = n.useMemo(() => n.createElement(Ft.Z, { style: ca.bottomBar }, n.createElement(Wt.Z, { disabled: !u || E, label: "Save", onPress: p, path: e, size: "xLarge", type: "primaryFilled" })), [u, E, p, e]);
+                            d = n.useMemo(() => n.createElement(Ht.Z, { style: lr.bottomBar }, n.createElement(Mt.Z, { disabled: !u || E, label: "Save", onPress: p, path: e, size: "xLarge", type: "primaryFilled" })), [u, E, p, e]);
                         return n.createElement(
-                            Mt.Z,
-                            { bottomBar: _, withInfoButton: !0 },
-                            n.createElement(Ft.Z, { style: ca.interstitial }, n.createElement(zt.Z, { headline: Xt })),
+                            zt.Z,
+                            { bottomBar: d, withInfoButton: !0 },
+                            n.createElement(Ht.Z, { style: lr.interstitial }, n.createElement(Ft.Z, { headline: Xt })),
                             n.createElement(
-                                Ft.Z,
-                                { style: ca.prices },
-                                n.createElement(b.ZP, { "aria-level": 4, role: "heading", size: "title4", weight: "heavy" }, ea),
-                                n.createElement(b.ZP, { color: "gray700", style: ca.subtext }, ta),
-                                n.createElement(b.ZP, { color: "gray700", style: ca.subtext }, aa),
-                                n.createElement(Ht.ZP, {
+                                Ht.Z,
+                                { style: lr.prices },
+                                n.createElement(Z.ZP, { "aria-level": 4, role: "heading", size: "title4", weight: "heavy" }, er),
+                                n.createElement(Z.ZP, { color: "gray700", style: lr.subtext }, tr),
+                                n.createElement(Z.ZP, { color: "gray700", style: lr.subtext }, rr),
+                                n.createElement($t.ZP, {
                                     autofocus: !0,
-                                    label: ra,
+                                    label: ar,
                                     onChange: (e) => {
                                         m(e);
                                     },
-                                    options: c,
-                                    style: ca.selector,
+                                    options: l,
+                                    style: lr.selector,
                                     value: i || o || "",
                                     withEmptyOption: !0,
                                 }),
@@ -362,112 +362,121 @@
                     },
                     { component: "management_perks_intro" },
                 );
-            var ia = a(945338);
-            const ua = Ct.Z,
-                ma = Pt.Z,
-                pa = Nt.Z,
-                Ea = ({ subscriptionsPriceOfferings: e, user: t, viewer: a }) => {
-                    const r = Y()(ua, t),
-                        l = Y()(ma, a),
-                        c = Y()(pa, e),
-                        o = (0, Jt.IU)(r),
-                        i = (0, Jt.IH)(r),
-                        u = (0, Jt.Ex)(r),
-                        { discardChanges: m, shouldBlockNavigation: p } = (0, ia.Z)({ rootPath: _.Vt.dashboard.manage, user: r, viewer: l });
-                    return (0, Kt.zG)(l, { creator_intro: o, description: i, selected_price: u }), n.createElement(n.Fragment, null, n.createElement(It.Z, { onNavigation: m, shouldBlockNavigation: p }), n.createElement(s.Switch, null, n.createElement(s.Route, { exact: !0, path: _.Vt.perks.intro }, n.createElement(Vt.Z, { backLocation: _.Vt.dashboard.manage, user: r, viewer: l })), n.createElement(s.Route, { exact: !0, path: _.Vt.perks.description }, n.createElement(Lt.Z, { backLocation: _.Vt.dashboard.manage, user: r, viewer: l })), n.createElement(s.Route, { exact: !0, path: _.Vt.perks.confirm }, n.createElement(At.Z, { user: r, viewer: l })), n.createElement(s.Route, { exact: !0, path: _.Vt.perks.pricing }, n.createElement(oa, { backLocation: _.Vt.dashboard.manage, subscriptionsPriceOfferings: c, user: r, viewer: l }))));
+            var ir = r(945338);
+            const ur = Ct.Z,
+                mr = Pt.Z,
+                pr = Nt.Z,
+                Er = ({ subscriptionsPriceOfferings: e, user: t, viewer: r }) => {
+                    const a = Y()(ur, t),
+                        c = Y()(mr, r),
+                        l = Y()(pr, e),
+                        o = (0, Gt.IU)(a),
+                        i = (0, Gt.IH)(a),
+                        u = (0, Gt.Ex)(a),
+                        { discardChanges: m, shouldBlockNavigation: p } = (0, ir.Z)({ rootPath: d.Vt.dashboard.manage, user: a, viewer: c });
+                    return (0, Kt.zG)(c, { creator_intro: o, description: i, selected_price: u }), n.createElement(n.Fragment, null, n.createElement(It.Z, { onNavigation: m, shouldBlockNavigation: p }), n.createElement(s.Switch, null, n.createElement(s.Route, { exact: !0, path: d.Vt.perks.intro }, n.createElement(Vt.Z, { backLocation: d.Vt.dashboard.manage, user: a, viewer: c })), n.createElement(s.Route, { exact: !0, path: d.Vt.perks.description }, n.createElement(Lt.Z, { backLocation: d.Vt.dashboard.manage, user: a, viewer: c })), n.createElement(s.Route, { exact: !0, path: d.Vt.perks.confirm }, n.createElement(At.Z, { user: a, viewer: c })), n.createElement(s.Route, { exact: !0, path: d.Vt.perks.pricing }, n.createElement(or, { backLocation: d.Vt.dashboard.manage, subscriptionsPriceOfferings: l, user: a, viewer: c }))));
                 },
-                _a = Ot.Z,
-                da = (0, l.Z)(
+                dr = Ot.Z,
+                _r = (0, c.Z)(
                     () => {
-                        const e = (0, R.p)(_a, {}),
+                        const e = (0, R.p)(dr, {}),
                             t = e.viewer.user_results.result,
-                            a = e.viewer,
-                            r = e?.subscriptions_price_offerings;
-                        return "User" !== t.__typename || null == r ? null : n.createElement(Ea, { subscriptionsPriceOfferings: r, user: t, viewer: a });
+                            r = e.viewer,
+                            a = e?.subscriptions_price_offerings;
+                        return "User" !== t.__typename || null == a ? null : n.createElement(Er, { subscriptionsPriceOfferings: a, user: t, viewer: r });
                     },
                     { component: "super_follows_perks" },
                 );
-            var Za = a(246489),
-                ha = a(322121),
-                ba = a(470199),
-                fa = a(371445),
-                ga = a(856522),
-                wa = a(97882),
-                ya = a(114084);
-            const va = u().h810143c,
-                xa = u().ga57b610,
-                Sa = u().h3b68828,
-                Ta = u().d7b51c68,
-                ka = u().cc2aa67a,
-                Ra = u().b313bb24,
-                Oa = u().e5188502,
-                Na = u().ba2e82a1,
-                Pa = { [ba.x.PlayStore]: u().i8385a2c, [ba.x.AppStore]: u().h201c4c2, [ba.x.Stripe]: u().g33f3050, [ba.x.Web]: u().g33f3050 },
-                Ca = Za.Z,
-                Ia = ({ transactionType: e }) => {
+            var br = r(246489),
+                hr = r(322121),
+                Zr = r(470199),
+                gr = r(371445),
+                wr = r(856522),
+                fr = r(97882),
+                yr = r(114084);
+            const vr = u().h810143c,
+                Sr = u().ga57b610,
+                xr = u().h3b68828,
+                Tr = u().d7b51c68,
+                kr = u().cc2aa67a,
+                Rr = u().b313bb24,
+                Or = u().e5188502,
+                Nr = u().ba2e82a1,
+                Pr = { [Zr.x.PlayStore]: u().i8385a2c, [Zr.x.AppStore]: u().h201c4c2, [Zr.x.Stripe]: u().g33f3050, [Zr.x.Web]: u().g33f3050 },
+                Cr = br.Z,
+                Ir = ({ transactionType: e }) => {
                     const t = (0, s.useLocation)(),
-                        { transactionId: a } = (0, s.useParams)(),
-                        r = (0, R.p)(Ca, { rest_id: a ?? "0", subscription_event_type: e }).superfollows_subscription_by_rest_id,
-                        l = r.consumer_results.result,
-                        c = "User" === l.__typename,
-                        o = r.payment_platform,
-                        i = Na(new Date(r.created_at_msec)),
-                        u = r.price_in_hundred,
-                        m = u ? (0, wa.x)({ amount: u, formatter: 100 }) : n.createElement(ha.default, { testID: "icon-minus" }),
-                        _ = n.useMemo(() => n.createElement(ga.Z, { user: l }), [l]);
-                    return n.createElement(p.Z, null, n.createElement(E.Z, { location: t, screenType: "secondaryDetail", title: va }, c ? n.createElement(ya.Z, { avatarSize: "jumbo", decoration: _, user: l, withUsernameCenterAligned: !0 }) : null, n.createElement(Z.Z, { style: La.root }, n.createElement(fa.Z, { header: xa, text: i }), n.createElement(fa.Z, { header: Sa, text: Ta }), o && n.createElement(fa.Z, { header: ka, text: Pa[o] }), n.createElement(fa.Z, { header: Ra, text: m }), n.createElement(b.ZP, { color: "gray700", size: "subtext2", style: La.disclaimer }, Oa))));
+                        { transactionId: r } = (0, s.useParams)(),
+                        a = (0, R.p)(Cr, { rest_id: r ?? "0", subscription_event_type: e }).superfollows_subscription_by_rest_id,
+                        c = a.consumer_results.result,
+                        l = "User" === c.__typename,
+                        o = a.payment_platform,
+                        i = Nr(new Date(a.created_at_msec)),
+                        u = a.price_in_hundred,
+                        m = u ? (0, fr.x)({ amount: u, formatter: 100 }) : n.createElement(hr.default, { testID: "icon-minus" }),
+                        d = n.useMemo(() => n.createElement(wr.Z, { user: c }), [c]);
+                    return n.createElement(p.Z, null, n.createElement(E.Z, { location: t, screenType: "secondaryDetail", title: vr }, l ? n.createElement(yr.Z, { avatarSize: "jumbo", decoration: d, user: c, withUsernameCenterAligned: !0 }) : null, n.createElement(b.Z, { style: Lr.root }, n.createElement(gr.Z, { header: Sr, text: i }), n.createElement(gr.Z, { header: xr, text: Tr }), o && n.createElement(gr.Z, { header: kr, text: Pr[o] }), n.createElement(gr.Z, { header: Rr, text: m }), n.createElement(Z.ZP, { color: "gray700", size: "subtext2", style: Lr.disclaimer }, Or))));
                 },
-                Aa = { context: "MONETIZATION_SUPER_FOLLOWS_TRANSACTION_DETAILS" },
-                La = g.default.create((e) => ({ root: { paddingHorizontal: e.spaces.space16 }, userProfile: { alignItems: "center" }, userAvatar: { height: "76px", width: "76px", marginBottom: e.spaces.space12 }, disclaimer: { marginTop: e.spaces.space4 } })),
-                Va = (0, l.Z)((e) => n.createElement(k.H, { errorConfig: Aa }, n.createElement(Ia, e)), { component: "super_follows_transaction_details" });
-            var Ua = a(240312),
-                Ba = a(839681);
-            const Da = u().ed3efef0,
-                Ha = Ua.Z,
-                Fa = () => {
-                    const { data: e, fetchNext: t } = (0, Re.C)(Ha, { limit: 25 }),
-                        a = e.viewer.user_results.result;
-                    if ("User" !== a.__typename) return null;
-                    const r = a.superfollows_new_subscribers_slice;
-                    return r ? n.createElement(n.Fragment, null, n.createElement(v.Z, { showEarnedRevenueSinceLastPayout: !0, user: a }), n.createElement(Ba.Z, { emptyStateDescription: Da, fetchNext: t, slice: r, type: rt.x.InitialSale })) : null;
+                Ar = { context: "MONETIZATION_SUPER_FOLLOWS_TRANSACTION_DETAILS" },
+                Lr = w.default.create((e) => ({ root: { paddingHorizontal: e.spaces.space16 }, userProfile: { alignItems: "center" }, userAvatar: { height: "76px", width: "76px", marginBottom: e.spaces.space12 }, disclaimer: { marginTop: e.spaces.space4 } })),
+                Vr = (0, c.Z)((e) => n.createElement(k.H, { errorConfig: Ar }, n.createElement(Ir, e)), { component: "super_follows_transaction_details" });
+            var Ur = r(240312),
+                Br = r(839681);
+            const Dr = u().ed3efef0,
+                $r = Ur.Z,
+                Hr = () => {
+                    const { data: e, fetchNext: t } = (0, Re.C)($r, { limit: 25 }),
+                        r = e.viewer.user_results.result;
+                    if ("User" !== r.__typename) return null;
+                    const a = r.superfollows_new_subscribers_slice;
+                    return a ? n.createElement(n.Fragment, null, n.createElement(v.Z, { showEarnedRevenueSinceLastPayout: !0, user: r }), n.createElement(Br.Z, { emptyStateDescription: Dr, fetchNext: t, slice: a, type: at.x.InitialSale })) : null;
                 },
-                za = { context: "MONETIZATION_SUPER_FOLLOWS_NEW_SUBSCRIPTIONS" },
-                Ma = (0, l.Z)(() => n.createElement(k.H, { errorConfig: za }, n.createElement(Fa, null)), { component: "super_follows_new_subscriptions" });
-            var Wa = a(862828);
-            const ja = u().b5f9ec14,
-                Ga = Wa.Z,
-                Ja = () => {
-                    const { data: e, fetchNext: t } = (0, Re.C)(Ga, { limit: 25 }),
-                        a = e.viewer.user_results.result;
-                    if ("User" !== a.__typename) return null;
-                    const r = a.superfollows_renewals_slice;
-                    return r ? n.createElement(n.Fragment, null, n.createElement(v.Z, { showEarnedRevenueSinceLastPayout: !0, user: a }), n.createElement(Ba.Z, { emptyStateDescription: ja, fetchNext: t, slice: r, type: rt.x.Renewal })) : null;
+                Fr = { context: "MONETIZATION_SUPER_FOLLOWS_NEW_SUBSCRIPTIONS" },
+                zr = (0, c.Z)(() => n.createElement(k.H, { errorConfig: Fr }, n.createElement(Hr, null)), { component: "super_follows_new_subscriptions" });
+            var Mr = r(862828);
+            const Wr = u().b5f9ec14,
+                jr = Mr.Z,
+                Gr = () => {
+                    const { data: e, fetchNext: t } = (0, Re.C)(jr, { limit: 25 }),
+                        r = e.viewer.user_results.result;
+                    if ("User" !== r.__typename) return null;
+                    const a = r.superfollows_renewals_slice;
+                    return a ? n.createElement(n.Fragment, null, n.createElement(v.Z, { showEarnedRevenueSinceLastPayout: !0, user: r }), n.createElement(Br.Z, { emptyStateDescription: Wr, fetchNext: t, slice: a, type: at.x.Renewal })) : null;
                 },
-                $a = { context: "MONETIZATION_SUPER_FOLLOWS_NEW_SUBSCRIPTIONS" },
-                Ya = (0, l.Z)(() => n.createElement(k.H, { errorConfig: $a }, n.createElement(Ja, null)), { component: "super_follows_renewals" }),
-                qa = u().bf364d62,
-                Ka = u().d978f43e,
-                Qa = u().h7a41c02,
-                Xa = _.Vt.transactions.newSubscriptions,
-                er = _.Vt.transactions.renewals,
-                tr = (0, l.Z)(
+                Jr = { context: "MONETIZATION_SUPER_FOLLOWS_NEW_SUBSCRIPTIONS" },
+                Yr = (0, c.Z)(() => n.createElement(k.H, { errorConfig: Jr }, n.createElement(Gr, null)), { component: "super_follows_renewals" }),
+                qr = u().bf364d62,
+                Kr = u().d978f43e,
+                Qr = u().h7a41c02,
+                Xr = d.Vt.transactions.newSubscriptions,
+                ea = d.Vt.transactions.renewals,
+                ta = (0, c.Z)(
                     () => {
                         const e = (0, s.useLocation)(),
                             t = n.useMemo(
                                 () => [
-                                    { key: "newSubscriptions", label: Ka, to: { pathname: Xa }, isActive: () => e.pathname === Xa },
-                                    { key: "renewals", label: Qa, to: { pathname: er }, isActive: () => e.pathname === er },
+                                    { key: "newSubscriptions", label: Kr, to: { pathname: Xr }, isActive: () => e.pathname === Xr },
+                                    { key: "renewals", label: Qr, to: { pathname: ea }, isActive: () => e.pathname === ea },
                                 ],
                                 [e.pathname],
                             );
-                        return n.createElement(p.Z, null, n.createElement(E.Z, { location: e, screenType: "secondaryDetail", title: qa }, n.createElement(m.Z, { links: t }), n.createElement(s.Switch, null, n.createElement(s.Route, { exact: !0, path: Xa }, n.createElement(Ma, null)), n.createElement(s.Route, { exact: !0, path: er }, n.createElement(Ya, null)), n.createElement(s.Route, null, n.createElement(o.Z, { to: Xa })))));
+                        return n.createElement(p.Z, null, n.createElement(E.Z, { location: e, screenType: "secondaryDetail", title: qr }, n.createElement(m.Z, { links: t }), n.createElement(s.Switch, null, n.createElement(s.Route, { exact: !0, path: Xr }, n.createElement(zr, null)), n.createElement(s.Route, { exact: !0, path: ea }, n.createElement(Yr, null)), n.createElement(s.Route, null, n.createElement(o.Z, { to: Xr })))));
                     },
                     { component: "super_follows_transactions" },
                 ),
-                ar = (e) => n.createElement(c.Z, (0, r.Z)({}, e, { component: Se, featureSwitchName: "creator_monetization_web_tips_dashboard_enabled" })),
-                rr = (e) => n.createElement(c.Z, (0, r.Z)({}, e, { component: Ie, featureSwitchName: "creator_monetization_web_tips_dashboard_enabled" })),
-                nr = n.memo((0, l.Z)(() => n.createElement(s.Switch, null, n.createElement(s.Route, { exact: !0, path: _.vl }, n.createElement(Je, null, n.createElement(We, null))), n.createElement(s.Route, { exact: !0, path: _.BJ }, n.createElement(Je, null, n.createElement(tt, null))), n.createElement(s.Route, { path: _.Vt.dashboard.root }, n.createElement(Je, null, n.createElement(Rt, null))), n.createElement(s.Route, { component: ar, path: _.OB.dashboard.root }), n.createElement(s.Route, { component: rr, path: _.OB.transactions.root }), n.createElement(s.Route, { path: _.Vt.perks.root }, n.createElement(da, null)), n.createElement(s.Route, { exact: !0, path: _.Vt.transactions.newSubscriptionDetails }, n.createElement(Va, { transactionType: "InitialSale" })), n.createElement(s.Route, { exact: !0, path: _.Vt.transactions.renewalDetails }, n.createElement(Va, { transactionType: "Renewal" })), n.createElement(s.Route, { path: _.Vt.transactions.root }, n.createElement(tr, null)), n.createElement(s.Route, null, n.createElement(o.Z, { to: _.vl }))), { page: "settings", section: "monetization_earnings" }));
+                ra = (e) => n.createElement(l.Z, (0, a.Z)({}, e, { component: xe, featureSwitchName: "creator_monetization_web_tips_dashboard_enabled" })),
+                aa = (e) => n.createElement(l.Z, (0, a.Z)({}, e, { component: Ie, featureSwitchName: "creator_monetization_web_tips_dashboard_enabled" })),
+                na = n.memo((0, c.Z)(() => n.createElement(s.Switch, null, n.createElement(s.Route, { exact: !0, path: d.vl }, n.createElement(Ge, null, n.createElement(Me, null))), n.createElement(s.Route, { exact: !0, path: d.BJ }, n.createElement(Ge, null, n.createElement(tt, null))), n.createElement(s.Route, { path: d.Vt.dashboard.root }, n.createElement(Ge, null, n.createElement(Rt, null))), n.createElement(s.Route, { component: ra, path: d.OB.dashboard.root }), n.createElement(s.Route, { component: aa, path: d.OB.transactions.root }), n.createElement(s.Route, { path: d.Vt.perks.root }, n.createElement(_r, null)), n.createElement(s.Route, { exact: !0, path: d.Vt.transactions.newSubscriptionDetails }, n.createElement(Vr, { transactionType: "InitialSale" })), n.createElement(s.Route, { exact: !0, path: d.Vt.transactions.renewalDetails }, n.createElement(Vr, { transactionType: "Renewal" })), n.createElement(s.Route, { path: d.Vt.transactions.root }, n.createElement(ta, null)), n.createElement(s.Route, null, n.createElement(o.Z, { to: d.vl }))), { page: "settings", section: "monetization_earnings" }));
+        },
+        518180: (e, t, r) => {
+            r.d(t, { BJ: () => c, Jz: () => n, OB: () => o, Vt: () => l, vl: () => s });
+            var a = r(189244);
+            const n = "/settings/monetization",
+                s = `${n}/earnings`,
+                c = `${n}/payout_history`,
+                l = { dashboard: { root: `${n}/subscriptions/dashboard`, revenue: `${n}/subscriptions/dashboard/revenue`, manage: `${n}/subscriptions/dashboard/manage` }, perks: { root: `${n}/subscriptions/perks`, intro: `${n}/subscriptions/perks/intro`, description: `${n}/subscriptions/perks/description`, pricing: `${n}/subscriptions/perks/pricing`, confirm: `${n}/subscriptions/perks/confirm` }, transactions: { root: `${n}/subscriptions/transactions`, newSubscriptions: `${n}/subscriptions/transactions/new_subscriptions`, newSubscriptionDetails: `${n}/subscriptions/transactions/new_subscriptions/${a.Hr}`, renewals: `${n}/subscriptions/transactions/renewals`, renewalDetails: `${n}/subscriptions/transactions/renewals/${a.Hr}` } },
+                o = { dashboard: { root: `${n}/awards/dashboard`, revenue: `${n}/awards/dashboard/revenue`, manage: `${n}/awards/dashboard/manage` }, transactions: { root: `${n}/awards/transactions` } };
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsMonetization-8ed0fac5.103b994a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsMonetization-8ed0fac5.a37d535a.js.map

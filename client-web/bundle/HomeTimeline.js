@@ -548,17 +548,18 @@
                     loader: () =>
                         (Le.H1.preload() || Promise.resolve()).then(() =>
                             Promise.all([
-                                t.e("icons.10"),
-                                t.e("icons.1"),
-                                t.e("icons.19"),
+                                t.e("icons.5"),
+                                t.e("icons.6"),
+                                t.e("icons.25"),
+                                t.e("icons.15"),
+                                t.e("icons.20"),
                                 t.e("icons.0"),
-                                t.e("icons.8"),
-                                t.e("icons.23"),
                                 t.e("modules.common-e907d115"),
                                 t.e("modules.common-e019dbda"),
-                                t.e("icons.9"),
-                                t.e("icons.7"),
-                                t.e("icons.15"),
+                                t.e("icons.11"),
+                                t.e("icons.27"),
+                                t.e("icons.17"),
+                                t.e("icons.12"),
                                 t.e("modules.audio-6107ac1a"),
                                 t.e("modules.audio-b953418a"),
                                 t.e("modules.audio-7c51e6a7"),
@@ -569,8 +570,7 @@
                                 t.e("modules.audio-e019dbda"),
                                 t.e("modules.audio-262c94d4"),
                                 t.e("modules.audio-c6fe4ea4"),
-                                t.e("icons.26"),
-                                t.e("icons.27"),
+                                t.e("icons.24"),
                                 t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                                 t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                                 t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -601,7 +601,7 @@
                                 t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
                                 t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                                 t.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                                t.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-ee359ff7"),
+                                t.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2f4a3d25"),
                                 t.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                                 t.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                                 t.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -1060,4 +1060,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.HomeTimeline.4d73163a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.HomeTimeline.08b4907a.js.map
