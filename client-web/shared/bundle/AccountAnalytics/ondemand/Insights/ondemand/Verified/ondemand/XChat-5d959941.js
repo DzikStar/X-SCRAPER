@@ -342,7 +342,7 @@
             var n = r(552322),
                 a = r(256958);
             function l({ ...e }) {
-                return (0, n.jsx)(a.x7, { className: "toaster group w-[600px] flex flex-row justify-center right-1/2 translate-x-1/2", visibleToasts: 1, toastOptions: { classNames: { actionButton: "group-[.toast]:bg-primary group-[.toast]:text-primary-foreground", cancelButton: "group-[.toast]:bg-gray-50 group-[.toast]:text-gray-700", description: "group-[.toast]:text-gray-700", toast: "group toast group-[.toaster]:bg-primary group-[.toaster]:text-white group-[.toaster]:text-body group-[.toaster]:rounded-md w-auto" } }, ...e });
+                return (0, n.jsx)(a.x7, { className: "toaster group", toastOptions: { classNames: { actionButton: "group-[.toast]:bg-primary group-[.toast]:text-primary-foreground", cancelButton: "group-[.toast]:bg-gray-50 group-[.toast]:text-gray-700", description: "group-[.toast]:text-gray-700", toast: "group toast group-[.toaster]:bg-background group-[.toaster]:text-text group-[.toaster]:border-nested-border group-[.toaster]:shadow-lg" } }, ...e });
             }
         },
         898100: (e, t, r) => {
@@ -367,9 +367,9 @@
             }
             var c = r(941204),
                 m = r(898100);
-            function x({ badges: e, color: t = "text", isStacked: r, name: l, screenName: i, size: o = "body", withLink: s, screenNameColor: u = "gray700", screenNameSize: g }) {
-                const x = i && s;
-                return (0, n.jsxs)("div", { className: (0, a.Z)("overflow-hidden", r ? "flex-col items-start gap-0" : "flex items-center gap-1"), children: [(0, n.jsxs)("div", { className: "flex items-center gap-0.5 shrink-0 max-w-full", children: [(0, n.jsx)(c.x, { color: t, numberOfLines: 1, size: o, breakText: "all", weight: "bold", ...(x && { as: "a", href: `https://x.com/${i}`, target: "external" === s ? "_blank" : void 0 }), children: l }), e && Object.keys(e).length && (0, n.jsx)("div", { className: "shrink-0", children: (0, n.jsx)(c.x, { size: o, children: (0, n.jsx)(d, { ...e }) }) })] }), i && (0, n.jsx)(m.Q, { screenName: i, size: g || o, withLink: s, color: u })] });
+            function x({ badges: e, color: t = "text", isStacked: r, name: l, screenName: i, size: o = "body", withLink: s, screenNameColor: u = "gray700" }) {
+                const g = i && s;
+                return (0, n.jsxs)("div", { className: (0, a.Z)("overflow-hidden", r ? "flex-col items-start gap-0" : "flex items-center gap-1"), children: [(0, n.jsxs)("div", { className: "flex items-center gap-0.5 shrink-0 max-w-full", children: [(0, n.jsx)(c.x, { color: t, numberOfLines: 1, size: o, breakText: "all", weight: "bold", ...(g && { as: "a", href: `https://x.com/${i}`, target: "external" === s ? "_blank" : void 0 }), children: l }), e && Object.keys(e).length && (0, n.jsx)("div", { className: "shrink-0", children: (0, n.jsx)(c.x, { size: o, children: (0, n.jsx)(d, { ...e }) }) })] }), i && (0, n.jsx)(m.Q, { screenName: i, size: o, withLink: s, color: u })] });
             }
         },
         469745: (e, t, r) => {
@@ -781,4 +781,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AccountAnalytics~ondemand.Insights~ondemand.Verified~ondemand.XChat-5d959941.31a10e2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AccountAnalytics~ondemand.Insights~ondemand.Verified~ondemand.XChat-5d959941.7f7d7dba.js.map

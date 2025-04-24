@@ -6992,6 +6992,12 @@
                 n("ed672bfa", "Všetky výhody z predplatných Základ a Premium a navyše…"),
                 n("db63fa1c", "Vyberte si premium tarifu"),
                 n("b128c6bc", "Získajte odznak overenia a mnoho ďalších výhod"),
+                n("ef43d1f1", function (e) {
+                    return "Zľava " + e.percentage + " % z ročného predplatného " + e.tierName;
+                }),
+                n("f87513e7", function (e) {
+                    return "Zľava " + e.percentage + " % na " + e.numberOfMonths + " mes. z predplatného " + e.tierName;
+                }),
                 n("acfaf7a0", "Porovnanie úrovní a funkcií"),
                 n("e1606e52", "Zmena vášho predplatného"),
                 n("d2f2b91a", "zaregistrujte sa tu"),
@@ -7856,9 +7862,7 @@
                 }),
                 n("ec6e7d9a", "Váš účet je v režime len na čítanie, kým sa nedokončí prebiehajúca zmena úrovne. Prejdite do služby Stripe a skontrolujte platbu, aby bolo možné úspešne zmeniť úroveň."),
                 n("b33d1518", "Synchronizujte pracovné miesta z podporovanej integrácie alebo vlastného informačného kanála vo formáte XML"),
-                n("dd2db402", "1. krok: zhromaždite požadované informácie"),
-                n("edb098c2", "2. krok: kontaktujte náš tím podpory"),
-                n("c4474460", "2. krok: pošlite e-mail nášmu tímu podpory");
+                n("dd2db402", "1. krok: zhromaždite požadované informácie");
             function i(e, a) {
                 for (var o = 0; o < a.length; o++) {
                     var n = a[o];
@@ -7897,7 +7901,9 @@
                     r(e, a)
                 );
             }
-            n("a08da0fa", "Čo bude nasledovať?"),
+            n("edb098c2", "2. krok: kontaktujte náš tím podpory"),
+                n("c4474460", "2. krok: pošlite e-mail nášmu tímu podpory"),
+                n("a08da0fa", "Čo bude nasledovať?"),
                 n("c127374e", "Pošlite nám správu"),
                 n("b2cb2a0c", "Používateľské meno overeného účtu vašej organizácie"),
                 n("b8e64002", "Názov vášho systému sledovania uchádzačov"),
@@ -8898,10 +8904,10 @@
                 }),
                 n("b1eb72fa", "Ľutujeme, toto video je v niektorých oblastiach obmedzené. Počkajte niekoľko sekúnd, kým zistíme vašu polohu. Nezabudnite povoliť nastavenia polohy v prehliadači."),
                 n("c057680c", "V tomto prehliadači nemôžeme prehrať video. Skúste použiť iný prehliadač."),
-                n("i5dfae6e", "Toto video nie je vo vašej oblasti dostupné."),
-                n("c2388276", "Toto video bolo odstránené."),
-                n("d2c96140", "Indikátor zvuku hosťa");
-            n("f6dc9146", "PREHRAŤ"),
+                n("i5dfae6e", "Toto video nie je vo vašej oblasti dostupné.");
+            n("c2388276", "Toto video bolo odstránené."),
+                n("d2c96140", "Indikátor zvuku hosťa"),
+                n("f6dc9146", "PREHRAŤ"),
                 n("d30c74fe", "Hlasitosť"),
                 n("f2d4e6f2", "Pozerať ešte raz"),
                 n("e9f1af3a", "Zistiť viac"),
@@ -13252,4 +13258,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sk.ab0edb3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sk.690c648a.js.map

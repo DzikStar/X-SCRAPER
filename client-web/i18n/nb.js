@@ -6982,6 +6982,12 @@
                 t("ed672bfa", "Alle oppgraderinger fra Basic og Premium, pluss ..."),
                 t("db63fa1c", "Velg et premiumabonnement"),
                 t("b128c6bc", "Få et verifisert merke og dusinvis av andre flotte fordeler"),
+                t("ef43d1f1", function (e) {
+                    return e.percentage + " % rabatt på et år med " + e.tierName;
+                }),
+                t("f87513e7", function (e) {
+                    return e.percentage + " % rabatt på " + e.numberOfMonths + " måneder med " + e.tierName;
+                }),
                 t("acfaf7a0", "Sammenlign nivåer og funksjoner"),
                 t("e1606e52", "Endre abonnementet"),
                 t("d2f2b91a", "registrere seg her"),
@@ -7846,9 +7852,7 @@
                 }),
                 t("ec6e7d9a", "Kontoen din er i skrivebeskyttet modus frem til det ventende nivåbyttet er gjennomført. Gå til Stripe og sjekk betalingen din for å sikre at nivåbyttet lykkes."),
                 t("b33d1518", "Synkroniser jobber fra en støttet integrasjon eller en egendefinert XML-strøm"),
-                t("dd2db402", "Trinn 1: Samle den nødvendige informasjonen"),
-                t("edb098c2", "Trinn 2: Kontakt brukerstøtten vår"),
-                t("c4474460", "Trinn 2: Send en e-post til støtteteamet vårt");
+                t("dd2db402", "Trinn 1: Samle den nødvendige informasjonen");
             function a(e, n) {
                 for (var r = 0; r < n.length; r++) {
                     var t = n[r];
@@ -7887,7 +7891,9 @@
                     d(e, n)
                 );
             }
-            t("a08da0fa", "Hva skjer nå?"),
+            t("edb098c2", "Trinn 2: Kontakt brukerstøtten vår"),
+                t("c4474460", "Trinn 2: Send en e-post til støtteteamet vårt"),
+                t("a08da0fa", "Hva skjer nå?"),
                 t("c127374e", "Send oss en melding"),
                 t("b2cb2a0c", "Kontobrukernavnet for den verifiserte organisasjonen"),
                 t("b8e64002", "Navnet på kandidatsystemet du bruker"),
@@ -8888,10 +8894,10 @@
                 }),
                 t("b1eb72fa", "Denne videoen er underlagt begrensninger i visse geografiske områder. Vent litt mens vi fastsetter posisjonen din. Sjekk at posisjonsinnstillingene er aktivert i nettleseren."),
                 t("c057680c", "Vi kan ikke spille av videoen i denne nettleseren. Prøv en annen nettleser."),
-                t("i5dfae6e", "Denne videoen er ikke tilgjengelig der du befinner deg."),
-                t("c2388276", "Denne videoen er slettet."),
-                t("d2c96140", "Lydindikator for gjest");
-            t("f6dc9146", "REPRISE"),
+                t("i5dfae6e", "Denne videoen er ikke tilgjengelig der du befinner deg.");
+            t("c2388276", "Denne videoen er slettet."),
+                t("d2c96140", "Lydindikator for gjest"),
+                t("f6dc9146", "REPRISE"),
                 t("d30c74fe", "Volum"),
                 t("f2d4e6f2", "Se på nytt"),
                 t("e9f1af3a", "Finn ut mer"),
@@ -13235,4 +13241,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nb.f7662e1a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nb.2a2b12fa.js.map

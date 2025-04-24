@@ -356,7 +356,7 @@
                     const B = (0, u.b)(),
                         F = (0, u.b)(),
                         M = (0, u.b)(),
-                        H = n.createElement(c.ZP, { color: "text", id: B, role: "label", size: _ ? "body" : "headline2", testID: "headline-label", weight: _ ? "normal" : "bold" }, x),
+                        H = n.createElement(c.ZP, { color: "text", id: B, role: "label", size: _ ? "body" : "headline2", testID: "headline-label", weight: _ ? "medium" : "bold" }, x),
                         $ = !!m && n.createElement(c.ZP, { color: "gray700", id: F, size: "subtext1", style: I ? h.descriptionWithPill : h.description, testID: "description-label" }, m),
                         A = n.createElement(c.ZP, { color: "gray700", role: "label", size: "subtext2", style: h.description }, z),
                         G = I ? n.createElement(d.ZP, { style: a ? h.pill : h.inlinePill, type: S }, I) : null,
@@ -372,4 +372,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Verified-e907d115.cb032a7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Verified-e907d115.5a30eb7a.js.map

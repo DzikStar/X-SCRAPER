@@ -16,7 +16,7 @@
                     selections: [
                         {
                             alias: null,
-                            args: (t = [{ kind: "Literal", name: "safety_level", value: "UserSelfViewOnly" }]),
+                            args: (s = [{ kind: "Literal", name: "safety_level", value: "UserSelfViewOnly" }]),
                             concreteType: "Viewer",
                             kind: "LinkedField",
                             name: "viewer_v2",
@@ -38,7 +38,7 @@
                                             name: "result",
                                             plural: !1,
                                             selections: [
-                                                (s = {
+                                                (r = {
                                                     kind: "InlineFragment",
                                                     selections: [
                                                         {
@@ -94,7 +94,7 @@
                                                                             ],
                                                                             storageKey: null,
                                                                         },
-                                                                        (r = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }),
+                                                                        (t = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }),
                                                                     ],
                                                                     storageKey: null,
                                                                 },
@@ -102,7 +102,7 @@
                                                             ],
                                                             storageKey: null,
                                                         },
-                                                        r,
+                                                        t,
                                                     ],
                                                     type: "User",
                                                     abstractKey: null,
@@ -110,7 +110,7 @@
                                             ],
                                             storageKey: null,
                                         },
-                                        r,
+                                        t,
                                     ],
                                     storageKey: null,
                                 },
@@ -122,10 +122,10 @@
                     abstractKey: null,
                 },
                 kind: "Request",
-                operation: { argumentDefinitions: i, kind: "Operation", name: "LiveOverviewProviderQuery", selections: [{ alias: null, args: t, concreteType: "Viewer", kind: "LinkedField", name: "viewer_v2", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }, s], storageKey: null }, r], storageKey: null }], storageKey: 'viewer_v2(safety_level:"UserSelfViewOnly")' }] },
+                operation: { argumentDefinitions: i, kind: "Operation", name: "LiveOverviewProviderQuery", selections: [{ alias: null, args: s, concreteType: "Viewer", kind: "LinkedField", name: "viewer_v2", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }, r], storageKey: null }, t], storageKey: null }], storageKey: 'viewer_v2(safety_level:"UserSelfViewOnly")' }] },
                 params: { id: "8M610ROGccfLDUBZT3THVg", metadata: {}, name: "LiveOverviewProviderQuery", operationKind: "query", text: null },
             };
-            var i, t, r, s;
+            var i, s, t, r;
             n.hash = "8d50400f1f7e607af69076f008cabb87";
             const u = n;
         },
@@ -133,7 +133,7 @@
             a.r(l), a.d(l, { default: () => F });
             const n = {
                 fragment: {
-                    argumentDefinitions: [(i = { defaultValue: null, kind: "LocalArgument", name: "dimensions" }), (t = { defaultValue: null, kind: "LocalArgument", name: "from_time_incl" }), (r = { defaultValue: null, kind: "LocalArgument", name: "rest_id" }), (s = { defaultValue: null, kind: "LocalArgument", name: "to_time_excl" })],
+                    argumentDefinitions: [(i = { defaultValue: null, kind: "LocalArgument", name: "dimensions" }), (s = { defaultValue: null, kind: "LocalArgument", name: "from_time_incl" }), (t = { defaultValue: null, kind: "LocalArgument", name: "rest_id" }), (r = { defaultValue: null, kind: "LocalArgument", name: "to_time_excl" })],
                     kind: "Fragment",
                     metadata: null,
                     name: "PostDetailsProviderAudienceQuery",
@@ -149,7 +149,7 @@
                             name: "tweet_result_by_rest_id",
                             plural: !1,
                             selections: [
-                                (p = {
+                                (_ = {
                                     alias: null,
                                     args: null,
                                     concreteType: null,
@@ -158,7 +158,7 @@
                                     plural: !1,
                                     selections: [
                                         { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null },
-                                        { kind: "InlineFragment", selections: [{ alias: null, args: [{ kind: "Variable", name: "dimensions", variableName: "dimensions" }, (d = { kind: "Variable", name: "from_time_incl", variableName: "from_time_incl" }), (o = { kind: "Literal", name: "granularity", value: "Total" }), (m = { kind: "Literal", name: "metrics", value: "Count" }), (c = { kind: "Variable", name: "to_time_excl", variableName: "to_time_excl" })], concreteType: "UecMetricsTimeSeriesValue", kind: "LinkedField", name: "uec_metrics_daily_time_series_count", plural: !0, selections: [{ alias: null, args: null, kind: "ScalarField", name: "age", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "gender", storageKey: null }, (g = { alias: null, args: null, kind: "ScalarField", name: "engagement_type", storageKey: null }), (y = { alias: null, args: null, kind: "ScalarField", name: "count", storageKey: null }), (k = { alias: null, args: null, kind: "ScalarField", name: "timestamp", storageKey: null }), { alias: null, args: null, kind: "ScalarField", name: "is_in_network", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "client_app_id", storageKey: null }], storageKey: null }, { alias: null, args: [{ kind: "Literal", name: "dimensions", value: ["Country", "EngagementType"] }, d, o, m, c], concreteType: "UecMetricsTimeSeriesValue", kind: "LinkedField", name: "uec_country_metrics_daily_time_series_count", plural: !0, selections: [{ alias: null, args: null, kind: "ScalarField", name: "country", storageKey: null }, y, g, k], storageKey: null }, (_ = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }), { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }], type: "Tweet", abstractKey: null },
+                                        { kind: "InlineFragment", selections: [{ alias: null, args: [{ kind: "Variable", name: "dimensions", variableName: "dimensions" }, (d = { kind: "Variable", name: "from_time_incl", variableName: "from_time_incl" }), (o = { kind: "Literal", name: "granularity", value: "Total" }), (c = { kind: "Literal", name: "metrics", value: "Count" }), (m = { kind: "Variable", name: "to_time_excl", variableName: "to_time_excl" })], concreteType: "UecMetricsTimeSeriesValue", kind: "LinkedField", name: "uec_metrics_daily_time_series_count", plural: !0, selections: [{ alias: null, args: null, kind: "ScalarField", name: "age", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "gender", storageKey: null }, (g = { alias: null, args: null, kind: "ScalarField", name: "engagement_type", storageKey: null }), (y = { alias: null, args: null, kind: "ScalarField", name: "count", storageKey: null }), (k = { alias: null, args: null, kind: "ScalarField", name: "timestamp", storageKey: null }), { alias: null, args: null, kind: "ScalarField", name: "is_in_network", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "client_app_id", storageKey: null }], storageKey: null }, { alias: null, args: [{ kind: "Literal", name: "dimensions", value: ["Country", "EngagementType"] }, d, o, c, m], concreteType: "UecMetricsTimeSeriesValue", kind: "LinkedField", name: "uec_country_metrics_daily_time_series_count", plural: !0, selections: [{ alias: null, args: null, kind: "ScalarField", name: "country", storageKey: null }, y, g, k], storageKey: null }, (p = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }), { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }], type: "Tweet", abstractKey: null },
                                     ],
                                     storageKey: null,
                                 }),
@@ -170,18 +170,18 @@
                     abstractKey: null,
                 },
                 kind: "Request",
-                operation: { argumentDefinitions: [r, t, s, i], kind: "Operation", name: "PostDetailsProviderAudienceQuery", selections: [{ alias: null, args: u, concreteType: "TweetResults", kind: "LinkedField", name: "tweet_result_by_rest_id", plural: !1, selections: [p, _], storageKey: null }] },
+                operation: { argumentDefinitions: [t, s, r, i], kind: "Operation", name: "PostDetailsProviderAudienceQuery", selections: [{ alias: null, args: u, concreteType: "TweetResults", kind: "LinkedField", name: "tweet_result_by_rest_id", plural: !1, selections: [_, p], storageKey: null }] },
                 params: { id: "Vq7rpcVS4EwY8Cz_S_KAyQ", metadata: {}, name: "PostDetailsProviderAudienceQuery", operationKind: "query", text: null },
             };
-            var i, t, r, s, u, d, o, m, c, g, y, k, _, p;
+            var i, s, t, r, u, d, o, c, m, g, y, k, p, _;
             n.hash = "65de382f4f1663b24be96e4078862e56";
             const F = n;
         },
         36534: (e, l, a) => {
-            a.r(l), a.d(l, { default: () => c });
+            a.r(l), a.d(l, { default: () => m });
             const n = {
                 fragment: {
-                    argumentDefinitions: [(i = { defaultValue: null, kind: "LocalArgument", name: "from_time" }), (t = { defaultValue: null, kind: "LocalArgument", name: "granularity" }), (r = { defaultValue: null, kind: "LocalArgument", name: "requested_metrics" }), (s = { defaultValue: null, kind: "LocalArgument", name: "rest_id" }), (u = { defaultValue: null, kind: "LocalArgument", name: "to_time" })],
+                    argumentDefinitions: [(i = { defaultValue: null, kind: "LocalArgument", name: "from_time" }), (s = { defaultValue: null, kind: "LocalArgument", name: "granularity" }), (t = { defaultValue: null, kind: "LocalArgument", name: "requested_metrics" }), (r = { defaultValue: null, kind: "LocalArgument", name: "rest_id" }), (u = { defaultValue: null, kind: "LocalArgument", name: "to_time" })],
                     kind: "Fragment",
                     metadata: null,
                     name: "PostDetailsProviderFirst48HoursDataQuery",
@@ -197,7 +197,7 @@
                             name: "tweet_result_by_rest_id",
                             plural: !1,
                             selections: [
-                                (m = {
+                                (c = {
                                     alias: null,
                                     args: null,
                                     concreteType: null,
@@ -256,104 +256,18 @@
                     abstractKey: null,
                 },
                 kind: "Request",
-                operation: { argumentDefinitions: [s, r, u, i, t], kind: "Operation", name: "PostDetailsProviderFirst48HoursDataQuery", selections: [{ alias: null, args: d, concreteType: "TweetResults", kind: "LinkedField", name: "tweet_result_by_rest_id", plural: !1, selections: [m, o], storageKey: null }] },
+                operation: { argumentDefinitions: [r, t, u, i, s], kind: "Operation", name: "PostDetailsProviderFirst48HoursDataQuery", selections: [{ alias: null, args: d, concreteType: "TweetResults", kind: "LinkedField", name: "tweet_result_by_rest_id", plural: !1, selections: [c, o], storageKey: null }] },
                 params: { id: "-h2rBNSpdLAFEA4VY9iSig", metadata: {}, name: "PostDetailsProviderFirst48HoursDataQuery", operationKind: "query", text: null },
             };
-            var i, t, r, s, u, d, o, m;
+            var i, s, t, r, u, d, o, c;
             n.hash = "c4cde9eca0196eab588acf9dbd886e15";
-            const c = n;
+            const m = n;
         },
-        650615: (e, l, a) => {
+        477082: (e, l, a) => {
             a.r(l), a.d(l, { default: () => c });
             const n = {
                 fragment: {
-                    argumentDefinitions: [(i = { defaultValue: null, kind: "LocalArgument", name: "from_time" }), (t = { defaultValue: null, kind: "LocalArgument", name: "granularity" }), (r = { defaultValue: null, kind: "LocalArgument", name: "requested_metrics" }), (s = { defaultValue: null, kind: "LocalArgument", name: "rest_id" }), (u = { defaultValue: null, kind: "LocalArgument", name: "to_time" })],
-                    kind: "Fragment",
-                    metadata: null,
-                    name: "PostDetailsProviderLast48HoursOrganicDataQuery",
-                    selections: [
-                        {
-                            alias: null,
-                            args: (d = [
-                                { kind: "Variable", name: "rest_id", variableName: "rest_id" },
-                                { kind: "Literal", name: "safety_level", value: "ForDevelopmentOnly" },
-                            ]),
-                            concreteType: "TweetResults",
-                            kind: "LinkedField",
-                            name: "tweet_result_by_rest_id",
-                            plural: !1,
-                            selections: [
-                                (m = {
-                                    alias: null,
-                                    args: null,
-                                    concreteType: null,
-                                    kind: "LinkedField",
-                                    name: "result",
-                                    plural: !1,
-                                    selections: [
-                                        { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null },
-                                        {
-                                            kind: "InlineFragment",
-                                            selections: [
-                                                {
-                                                    alias: null,
-                                                    args: [
-                                                        { fields: [{ kind: "Variable", name: "iso8601_time", variableName: "from_time" }], kind: "ObjectValue", name: "from_time" },
-                                                        { kind: "Variable", name: "granularity", variableName: "granularity" },
-                                                        { kind: "Variable", name: "requested_metrics", variableName: "requested_metrics" },
-                                                        { fields: [{ kind: "Variable", name: "iso8601_time", variableName: "to_time" }], kind: "ObjectValue", name: "to_time" },
-                                                    ],
-                                                    concreteType: "AnalyticsMetricsTimeSeriesValue",
-                                                    kind: "LinkedField",
-                                                    name: "organic_metrics_time_series",
-                                                    plural: !0,
-                                                    selections: [
-                                                        {
-                                                            alias: null,
-                                                            args: null,
-                                                            concreteType: "AnayticsMetricsTotalValue",
-                                                            kind: "LinkedField",
-                                                            name: "metric_values",
-                                                            plural: !0,
-                                                            selections: [
-                                                                { alias: null, args: null, kind: "ScalarField", name: "metric_value", storageKey: null },
-                                                                { alias: null, args: null, kind: "ScalarField", name: "metric_type", storageKey: null },
-                                                            ],
-                                                            storageKey: null,
-                                                        },
-                                                        { alias: null, args: null, concreteType: "AnalyticsTimestamp", kind: "LinkedField", name: "timestamp", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "iso8601_time", storageKey: null }], storageKey: null },
-                                                    ],
-                                                    storageKey: null,
-                                                },
-                                                (o = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }),
-                                                { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null },
-                                            ],
-                                            type: "Tweet",
-                                            abstractKey: null,
-                                        },
-                                    ],
-                                    storageKey: null,
-                                }),
-                            ],
-                            storageKey: null,
-                        },
-                    ],
-                    type: "Query",
-                    abstractKey: null,
-                },
-                kind: "Request",
-                operation: { argumentDefinitions: [s, r, u, i, t], kind: "Operation", name: "PostDetailsProviderLast48HoursOrganicDataQuery", selections: [{ alias: null, args: d, concreteType: "TweetResults", kind: "LinkedField", name: "tweet_result_by_rest_id", plural: !1, selections: [m, o], storageKey: null }] },
-                params: { id: "nQhZbg0tBqBC3FSqca3tdg", metadata: {}, name: "PostDetailsProviderLast48HoursOrganicDataQuery", operationKind: "query", text: null },
-            };
-            var i, t, r, s, u, d, o, m;
-            n.hash = "a4d295daf312e753a4b24591ba4480dd";
-            const c = n;
-        },
-        477082: (e, l, a) => {
-            a.r(l), a.d(l, { default: () => m });
-            const n = {
-                fragment: {
-                    argumentDefinitions: [(i = { defaultValue: null, kind: "LocalArgument", name: "from_time" }), (t = { defaultValue: null, kind: "LocalArgument", name: "requested_metrics" }), (r = { defaultValue: null, kind: "LocalArgument", name: "rest_id" }), (s = { defaultValue: null, kind: "LocalArgument", name: "to_time" })],
+                    argumentDefinitions: [(i = { defaultValue: null, kind: "LocalArgument", name: "from_time" }), (s = { defaultValue: null, kind: "LocalArgument", name: "requested_metrics" }), (t = { defaultValue: null, kind: "LocalArgument", name: "rest_id" }), (r = { defaultValue: null, kind: "LocalArgument", name: "to_time" })],
                     kind: "Fragment",
                     metadata: null,
                     name: "PostDetailsProviderMetricsTotalQuery",
@@ -415,12 +329,12 @@
                     abstractKey: null,
                 },
                 kind: "Request",
-                operation: { argumentDefinitions: [r, t, i, s], kind: "Operation", name: "PostDetailsProviderMetricsTotalQuery", selections: [{ alias: null, args: u, concreteType: "TweetResults", kind: "LinkedField", name: "tweet_result_by_rest_id", plural: !1, selections: [o, d], storageKey: null }] },
+                operation: { argumentDefinitions: [t, s, i, r], kind: "Operation", name: "PostDetailsProviderMetricsTotalQuery", selections: [{ alias: null, args: u, concreteType: "TweetResults", kind: "LinkedField", name: "tweet_result_by_rest_id", plural: !1, selections: [o, d], storageKey: null }] },
                 params: { id: "Wh3io6RCI71-GSsRKiz-oA", metadata: {}, name: "PostDetailsProviderMetricsTotalQuery", operationKind: "query", text: null },
             };
-            var i, t, r, s, u, d, o;
+            var i, s, t, r, u, d, o;
             n.hash = "187d0079b4de49f19d27de67e0f85e90";
-            const m = n;
+            const c = n;
         },
         882157: (e, l, a) => {
             a.r(l), a.d(l, { default: () => S });
@@ -433,7 +347,7 @@
                     selections: [
                         {
                             alias: null,
-                            args: (t = [
+                            args: (s = [
                                 { kind: "Variable", name: "rest_id", variableName: "rest_id" },
                                 { kind: "Literal", name: "safety_level", value: "ForDevelopmentOnly" },
                             ]),
@@ -450,7 +364,7 @@
                                     name: "result",
                                     plural: !1,
                                     selections: [
-                                        (r = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }),
+                                        (t = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }),
                                         {
                                             kind: "InlineFragment",
                                             selections: [
@@ -462,12 +376,12 @@
                                                     name: "legacy",
                                                     plural: !1,
                                                     selections: [
-                                                        (s = { alias: null, args: null, kind: "ScalarField", name: "display_text_range", storageKey: null }),
+                                                        (r = { alias: null, args: null, kind: "ScalarField", name: "display_text_range", storageKey: null }),
                                                         (u = { alias: null, args: null, kind: "ScalarField", name: "full_text", storageKey: null }),
                                                         (d = { alias: null, args: null, kind: "ScalarField", name: "created_at", storageKey: null }),
                                                         (o = { alias: null, args: null, kind: "ScalarField", name: "bookmark_count", storageKey: null }),
-                                                        (m = { alias: null, args: null, kind: "ScalarField", name: "favorite_count", storageKey: null }),
-                                                        (c = { alias: null, args: null, kind: "ScalarField", name: "reply_count", storageKey: null }),
+                                                        (c = { alias: null, args: null, kind: "ScalarField", name: "favorite_count", storageKey: null }),
+                                                        (m = { alias: null, args: null, kind: "ScalarField", name: "reply_count", storageKey: null }),
                                                         (g = { alias: null, args: null, kind: "ScalarField", name: "retweet_count", storageKey: null }),
                                                         { alias: null, args: null, kind: "ScalarField", name: "in_reply_to_status_id_str", storageKey: null },
                                                         { alias: null, args: null, kind: "ScalarField", name: "in_reply_to_user_id_str", storageKey: null },
@@ -515,8 +429,8 @@
                                                     ],
                                                     storageKey: null,
                                                 }),
-                                                (_ = { alias: null, args: null, concreteType: "ViewCountInfo", kind: "LinkedField", name: "views", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "count", storageKey: null }], storageKey: null }),
-                                                (p = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }),
+                                                (p = { alias: null, args: null, concreteType: "ViewCountInfo", kind: "LinkedField", name: "views", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "count", storageKey: null }], storageKey: null }),
+                                                (_ = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }),
                                                 (F = { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }),
                                                 {
                                                     alias: null,
@@ -534,14 +448,14 @@
                                                             name: "result",
                                                             plural: !1,
                                                             selections: [
-                                                                r,
+                                                                t,
                                                                 {
                                                                     kind: "InlineFragment",
                                                                     selections: [
-                                                                        (K = { alias: null, args: null, concreteType: "LegacyTweet", kind: "LinkedField", name: "legacy", plural: !1, selections: [s, u, d, o, m, c, g], storageKey: null }),
-                                                                        _,
+                                                                        (K = { alias: null, args: null, concreteType: "LegacyTweet", kind: "LinkedField", name: "legacy", plural: !1, selections: [r, u, d, o, c, m, g], storageKey: null }),
+                                                                        p,
                                                                         F,
-                                                                        (L = {
+                                                                        (T = {
                                                                             alias: null,
                                                                             args: null,
                                                                             concreteType: "TweetCore",
@@ -569,7 +483,7 @@
                                                                                                     kind: "InlineFragment",
                                                                                                     selections: [
                                                                                                         F,
-                                                                                                        (b = {
+                                                                                                        (f = {
                                                                                                             alias: null,
                                                                                                             args: null,
                                                                                                             concreteType: "ApiUser",
@@ -584,7 +498,7 @@
                                                                                                             ],
                                                                                                             storageKey: null,
                                                                                                         }),
-                                                                                                        (f = { alias: null, args: null, kind: "ScalarField", name: "is_blue_verified", storageKey: null }),
+                                                                                                        (b = { alias: null, args: null, kind: "ScalarField", name: "is_blue_verified", storageKey: null }),
                                                                                                         (v = {
                                                                                                             alias: null,
                                                                                                             args: null,
@@ -634,7 +548,7 @@
                                                     ],
                                                     storageKey: null,
                                                 },
-                                                L,
+                                                T,
                                             ],
                                             type: "Tweet",
                                             abstractKey: null,
@@ -650,18 +564,18 @@
                     abstractKey: null,
                 },
                 kind: "Request",
-                operation: { argumentDefinitions: i, kind: "Operation", name: "PostDetailsProviderQuery", selections: [{ alias: null, args: t, concreteType: "TweetResults", kind: "LinkedField", name: "tweet_result_by_rest_id", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [r, { kind: "InlineFragment", selections: [k, _, p, F, { alias: null, args: null, concreteType: "TweetResults", kind: "LinkedField", name: "reply_to_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [r, { kind: "InlineFragment", selections: [K, _, F, (T = { alias: null, args: null, concreteType: "TweetCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [r, { kind: "InlineFragment", selections: [F, b, f, v, p], type: "User", abstractKey: null }], storageKey: null }, p], storageKey: null }], storageKey: null }), p], type: "Tweet", abstractKey: null }], storageKey: null }, p], storageKey: null }, T], type: "Tweet", abstractKey: null }], storageKey: null }, p], storageKey: null }] },
+                operation: { argumentDefinitions: i, kind: "Operation", name: "PostDetailsProviderQuery", selections: [{ alias: null, args: s, concreteType: "TweetResults", kind: "LinkedField", name: "tweet_result_by_rest_id", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [t, { kind: "InlineFragment", selections: [k, p, _, F, { alias: null, args: null, concreteType: "TweetResults", kind: "LinkedField", name: "reply_to_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [t, { kind: "InlineFragment", selections: [K, p, F, (L = { alias: null, args: null, concreteType: "TweetCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [t, { kind: "InlineFragment", selections: [F, f, b, v, _], type: "User", abstractKey: null }], storageKey: null }, _], storageKey: null }], storageKey: null }), _], type: "Tweet", abstractKey: null }], storageKey: null }, _], storageKey: null }, L], type: "Tweet", abstractKey: null }], storageKey: null }, _], storageKey: null }] },
                 params: { id: "7_5sxzswrD0qxa_1SmZgcQ", metadata: {}, name: "PostDetailsProviderQuery", operationKind: "query", text: null },
             };
-            var i, t, r, s, u, d, o, m, c, g, y, k, _, p, F, K, b, f, v, L, T;
+            var i, s, t, r, u, d, o, c, m, g, y, k, p, _, F, K, f, b, v, T, L;
             n.hash = "46fbdfa18297187632b2e7197a806cbf";
             const S = n;
         },
         549092: (e, l, a) => {
-            a.r(l), a.d(l, { default: () => m });
+            a.r(l), a.d(l, { default: () => c });
             const n = {
                 fragment: {
-                    argumentDefinitions: [(i = { defaultValue: null, kind: "LocalArgument", name: "fromTimestamp" }), (t = { defaultValue: null, kind: "LocalArgument", name: "granularity" }), (r = { defaultValue: null, kind: "LocalArgument", name: "restId" }), (s = { defaultValue: null, kind: "LocalArgument", name: "toTimestamp" })],
+                    argumentDefinitions: [(i = { defaultValue: null, kind: "LocalArgument", name: "fromTimestamp" }), (s = { defaultValue: null, kind: "LocalArgument", name: "granularity" }), (t = { defaultValue: null, kind: "LocalArgument", name: "restId" }), (r = { defaultValue: null, kind: "LocalArgument", name: "toTimestamp" })],
                     kind: "Fragment",
                     metadata: null,
                     name: "PostDetailsProviderRealtimeDataQuery",
@@ -736,7 +650,7 @@
                 },
                 kind: "Request",
                 operation: {
-                    argumentDefinitions: [r, i, s, t],
+                    argumentDefinitions: [t, i, r, s],
                     kind: "Operation",
                     name: "PostDetailsProviderRealtimeDataQuery",
                     selections: [
@@ -769,10 +683,10 @@
                 },
                 params: { id: "nR3nHSFiMx7ZgHq2isAX0w", metadata: {}, name: "PostDetailsProviderRealtimeDataQuery", operationKind: "query", text: null },
             };
-            var i, t, r, s, u, d, o;
+            var i, s, t, r, u, d, o;
             n.hash = "ab010ca08cad98b44f812437ebd352f4";
-            const m = n;
+            const c = n;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-29ca9031.0e3d46ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-29ca9031.d4762b6a.js.map

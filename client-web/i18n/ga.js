@@ -6998,6 +6998,12 @@
                 n("ed672bfa", "All upgrades from Basic and Premium, plus ..."),
                 n("db63fa1c", "Select a premium plan"),
                 n("b128c6bc", "Get a verified badge and dozens of other awesome perks and benefits"),
+                n("ef43d1f1", function (e) {
+                    return e.percentage + "% off a year of " + e.tierName;
+                }),
+                n("f87513e7", function (e) {
+                    return e.percentage + "% off " + e.numberOfMonths + " months of " + e.tierName;
+                }),
                 n("acfaf7a0", "Compare tiers & features"),
                 n("e1606e52", "Change your subscription"),
                 n("d2f2b91a", "sign up here"),
@@ -7862,9 +7868,7 @@
                 }),
                 n("ec6e7d9a", "Your account is in read-only mode until the pending tier switch has completed. Please go to Stripe to check your payment to ensure a successful tier switch."),
                 n("b33d1518", "Sync jobs from a supported integration or a custom XML feed"),
-                n("dd2db402", "Step 1: Gather the required information"),
-                n("edb098c2", "Step 2: Contact our support team"),
-                n("c4474460", "Step 2: Email our support team");
+                n("dd2db402", "Step 1: Gather the required information");
             function r(e, a) {
                 for (var t = 0; t < a.length; t++) {
                     var n = a[t];
@@ -7903,7 +7907,9 @@
                     c(e, a)
                 );
             }
-            n("a08da0fa", "What happens next?"),
+            n("edb098c2", "Step 2: Contact our support team"),
+                n("c4474460", "Step 2: Email our support team"),
+                n("a08da0fa", "What happens next?"),
                 n("c127374e", "Send us a message"),
                 n("b2cb2a0c", "Username of your Verified Org account"),
                 n("b8e64002", "Name of your applicant tracking system"),
@@ -8904,10 +8910,10 @@
                 }),
                 n("b1eb72fa", "Tá brón orainn, tá srian ar an bhfíseán seo in áiteanna áirithe, fan nóiméad agus muid ag fáil do shuíomh. Cinntigh go bhfuil socruithe suímh cumasaithe i do bhrabhsálaí."),
                 n("c057680c", "Ní féidir linn an físeán a sheinm sa bhrabhsálaí seo. Bain triail as brabhsálaí eile."),
-                n("i5dfae6e", "Níl an físeán seo ar fáil áit a bhfuil tú."),
-                n("c2388276", "Scriosadh an físeán seo."),
-                n("d2c96140", "Táscaire fuaime aoi");
-            n("f6dc9146", "ATHSHEINN"),
+                n("i5dfae6e", "Níl an físeán seo ar fáil áit a bhfuil tú.");
+            n("c2388276", "Scriosadh an físeán seo."),
+                n("d2c96140", "Táscaire fuaime aoi"),
+                n("f6dc9146", "ATHSHEINN"),
                 n("d30c74fe", "Fuaim"),
                 n("f2d4e6f2", "Féach air arís"),
                 n("e9f1af3a", "Faigh níos mó eolais"),
@@ -13253,4 +13259,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ga.dbe84bea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ga.1e17cd4a.js.map

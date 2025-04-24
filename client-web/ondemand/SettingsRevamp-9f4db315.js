@@ -8,7 +8,7 @@
             e.exports = { queryId: "kaH0vdJmbuocpRAeWpRC7A", operationName: "DeleteGrokMessage", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
         423923: (e) => {
-            e.exports = { queryId: "z3zpnbOt9PzBF8qk2mPuCA", operationName: "GrokConversationItemsByRestId", operationType: "query", metadata: { featureSwitches: ["creator_subscriptions_tweet_preview_api_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls", "withAuxiliaryUserLabels"] } };
+            e.exports = { queryId: "y1Lkc52sobXGzJ8ADjNEIw", operationName: "GrokConversationItemsByRestId", operationType: "query", metadata: { featureSwitches: ["creator_subscriptions_tweet_preview_api_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "responsive_web_graphql_exclude_directive_enabled", "verified_phone_label_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls", "withAuxiliaryUserLabels"] } };
         },
         685850: (e) => {
             e.exports = { queryId: "9Hyh5D4-WXLnExZkONSkZg", operationName: "GrokHistory", operationType: "query", metadata: { featureSwitches: [], fieldToggles: [] } };
@@ -29,7 +29,7 @@
             e.exports = { queryId: "Sr2QEitvnemma5D2NJlA2Q", operationName: "SearchGrokConversations", operationType: "query", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
         628207: (e) => {
-            e.exports = { queryId: "Qp1qIFvysQgzCSaCFtcP_w", operationName: "GrokShare", operationType: "query", metadata: { featureSwitches: ["creator_subscriptions_tweet_preview_api_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls", "withAuxiliaryUserLabels"] } };
+            e.exports = { queryId: "PqOtPKjinNkPqgp11OKaxA", operationName: "GrokShare", operationType: "query", metadata: { featureSwitches: ["creator_subscriptions_tweet_preview_api_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "responsive_web_graphql_exclude_directive_enabled", "verified_phone_label_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls", "withAuxiliaryUserLabels"] } };
         },
         204114: (e) => {
             e.exports = { queryId: "-5e798p4EVbuhGGFFuw3Tg", operationName: "GrokUnpinConversation", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
@@ -48,8 +48,8 @@
                 o = n(163889),
                 i = n(954694),
                 s = n.n(i),
-                l = n(538374),
-                _ = n.n(l),
+                _ = n(538374),
+                l = n.n(_),
                 c = n(423923),
                 d = n.n(c),
                 p = n(685850),
@@ -66,8 +66,8 @@
                 x = n.n(v),
                 C = n(628207),
                 Z = n.n(C),
-                P = n(204114),
-                E = n.n(P),
+                E = n(204114),
+                P = n.n(E),
                 I = n(790427),
                 T = n.n(I),
                 q = n(220843),
@@ -83,10 +83,10 @@
                     fetchPinnedConversations: ({ cursor: t }) => e.graphQL(k(), { cursor: t }).then((e) => e),
                     fetchMediaHistory: ({ cursor: t }) => e.graphQL(h(), { cursor: t }).then((e) => e),
                     searchConversations: ({ keyword: t }) => e.graphQL(x(), { keyword: t }).then((e) => (e.grok_conversation_search_timeline?.items ?? []).map((e) => ({ chatItemId: e.chat_item_id, conversation: { id: e.grokConversation?.rest_id }, message: e.chat_item?.message, createdAt: e.chat_item?.created_at_ms, title: e.conversation_title })).filter((e) => e.chatItemId && e.conversation.id)),
-                    deleteMessage: ({ chat_item_id: t, conversation_id: n }) => e.graphQL(_(), { conversation_id: n, chat_item_id: t }).then((e) => e),
+                    deleteMessage: ({ chat_item_id: t, conversation_id: n }) => e.graphQL(l(), { conversation_id: n, chat_item_id: t }).then((e) => e),
                     logUserEventGrok: ({ action_type: t, group_id: n, object_id: r }) => e.graphQL(T(), { group_id: n, object_id: r, action_type: t }).then((e) => e),
                     grokPinConversation: ({ conversationId: t }) => e.graphQL(w(), { conversationId: t }).then((e) => e),
-                    grokUnpinConversation: ({ conversationId: t }) => e.graphQL(E(), { conversationId: t }).then((e) => e),
+                    grokUnpinConversation: ({ conversationId: t }) => e.graphQL(P(), { conversationId: t }).then((e) => e),
                     uploadFile: ({ abortController: t, file: n }) => {
                         const r = new FormData();
                         return r.append("image", n), e.postForm("grok/attachment", r, {}, { "x-xai-request-id": a().v4() }, void 0, t.signal).then((e) => e.map((e) => ({ ...e, url: e.url ?? (void 0 !== e.mediaId ? `https://api.x.com/2/grok/attachment.json?mediaId=${e.mediaId}` : void 0) })));
@@ -107,8 +107,8 @@
                 o = n(731708),
                 i = n(868634),
                 s = n(909377),
-                l = n(757483),
-                _ = n(392237),
+                _ = n(757483),
+                l = n(392237),
                 c = n(779610),
                 d = n(725405);
             const p = ({ disabled: e = !1, formattedPayoutAmount: t, scribeComponent: n, styleOverride: p, ...u }) => {
@@ -116,14 +116,14 @@
                         { Icon: b, description: h, heading: f, iconBGColor: w, id: y, link: k, pill: v } = u,
                         x = r.useMemo(() => r.createElement(a.Z, { style: m.description }, r.createElement(o.ZP, { color: "gray700", size: "subtext2" }, h), t && r.createElement(o.ZP, { size: "subtext2", style: m.amount, weight: "bold" }, t)), [h, t]),
                         C = r.useMemo(() => r.createElement(a.Z, { style: m.heading }, v && r.createElement(i.ZP, { background: v.color }, r.createElement(o.ZP, { size: "subtext3", weight: "medium" }, v.label)), r.createElement(o.ZP, { weight: "bold" }, f)), [f, v]),
-                        Z = r.useMemo(() => r.createElement(s.Z, { Icon: b, shape: "square", style: { backgroundColor: l.Z.hexToCss(_.default.theme.colors[w], 0.8) } }), [b, w]),
-                        P = r.useCallback(() => {
+                        Z = r.useMemo(() => r.createElement(s.Z, { Icon: b, shape: "square", style: { backgroundColor: _.Z.hexToCss(l.default.theme.colors[w], 0.8) } }), [b, w]),
+                        E = r.useCallback(() => {
                             g.scribe({ component: n, action: "click" });
                         }, [g, n]);
-                    return r.createElement(c.Z, { description: x, disabled: e, label: C, link: k, onPress: k ? P : void 0, paddingHorizontal: "space8", styleOverride: p, testID: y, thumbnail: Z });
+                    return r.createElement(c.Z, { description: x, disabled: e, label: C, link: k, onPress: k ? E : void 0, paddingHorizontal: "space8", styleOverride: p, testID: y, thumbnail: Z });
                 },
                 u = r.memo(p),
-                m = _.default.create((e) => ({ heading: { flexDirection: "column", gap: e.spaces.space2 }, description: { alignItems: "center", flexDirection: "row", justifyContent: "space-between", color: e.colors.gray700 }, amount: { flexBasis: "auto", flexGrow: 0, flexShrink: 0 } }));
+                m = l.default.create((e) => ({ heading: { flexDirection: "column", gap: e.spaces.space2 }, description: { alignItems: "center", flexDirection: "row", justifyContent: "space-between", color: e.colors.gray700 }, amount: { flexBasis: "auto", flexGrow: 0, flexShrink: 0 } }));
         },
         873372: (e, t, n) => {
             "use strict";
@@ -133,8 +133,8 @@
                 o = n(202784),
                 i = (n(585488), n(712696)),
                 s = n.n(i),
-                l = n(351743),
-                _ = n.n(l),
+                _ = n(351743),
+                l = n.n(_),
                 c = n(954110),
                 d = n(420412),
                 p = n(844685),
@@ -150,7 +150,7 @@
                 v = r.Z;
             function x() {
                 const e = s()(k, {}),
-                    [t] = _()(v),
+                    [t] = l()(v),
                     n = !!e.user_preferences?.allow_gambling_ads,
                     r = o.useCallback(() => {
                         function r(t) {
@@ -172,17 +172,17 @@
         },
         664918: (e, t, n) => {
             "use strict";
-            n.d(t, { D0: () => l, c$: () => c, fD: () => s, iB: () => u, jk: () => _ });
+            n.d(t, { D0: () => _, c$: () => c, fD: () => s, iB: () => u, jk: () => l });
             var r = n(366097),
                 a = n(163889);
             const o = 2,
                 i = 1e3,
                 s = Object.freeze({ AcceptAllCookies: "acceptAllCookies", RefuseNonEssentialCookies: "refuseNonEssentialCookies", Invalid: "invalid", NotSet: "notSet" });
-            function l(e) {
+            function _(e) {
                 const t = (0, r.bL)(e);
                 return t ? (d(t) ? (p(t) ? (t[1] ? s.AcceptAllCookies : t[2] ? s.RefuseNonEssentialCookies : ((0, a.ZP)("Invalid consent signal state"), s.Invalid)) : s.NotSet) : s.Invalid) : s.NotSet;
             }
-            function _(e) {
+            function l(e) {
                 (0, r.kA)({ consent_version: o, text_version: i, 1: !0 }, e);
             }
             function c(e) {
@@ -207,8 +207,8 @@
                 o = n(202784),
                 i = (n(585488), n(351743)),
                 s = n.n(i),
-                l = n(277660),
-                _ = n.n(l),
+                _ = n(277660),
+                l = n.n(_),
                 c = n(688715),
                 d = n(954110),
                 p = n(420412),
@@ -221,7 +221,7 @@
                 w = a.Z,
                 y = r.Z;
             function k({ userPreferences: e }) {
-                const { __id: t, hide_subscriptions_on_profile: n } = _()(w, e),
+                const { __id: t, hide_subscriptions_on_profile: n } = l()(w, e),
                     [r] = s()(y),
                     a = !!n,
                     i = o.useCallback(() => {
@@ -248,8 +248,8 @@
                 o = n(202784),
                 i = (n(585488), n(712696)),
                 s = n.n(i),
-                l = n(351743),
-                _ = n.n(l),
+                _ = n(351743),
+                l = n.n(_),
                 c = n(954110),
                 d = n(674132),
                 p = n.n(d),
@@ -272,7 +272,7 @@
                 y = r.Z;
             function k({ preferences: e }) {
                 const t = s()(y, {}),
-                    [n] = _()(w),
+                    [n] = l()(w),
                     { featureSwitches: r } = (0, b.QZ)(),
                     a = (0, m.v9)(g.ZP.selectViewerUser);
                 function i(e, r) {
@@ -309,14 +309,14 @@
         },
         310116: (e, t, n) => {
             "use strict";
-            n.d(t, { Z: () => P });
+            n.d(t, { Z: () => E });
             var r = n(5974),
                 a = n(903423),
                 o = n(202784),
                 i = (n(585488), n(351743)),
                 s = n.n(i),
-                l = n(277660),
-                _ = n.n(l),
+                _ = n(277660),
+                l = n.n(_),
                 c = n(688715),
                 d = n(954110),
                 p = n(674132),
@@ -337,9 +337,9 @@
                     r = (0, m.JY)("grok_settings_restriction_age", 18),
                     a = t?.birthdate,
                     i = new Date(),
-                    l = { year: i.getFullYear(), month: i.getMonth(), day: i.getDay() },
-                    c = !!n && !(0, f.T)(r, a || l),
-                    { __id: p, allow_xai_data_sharing: u } = _()(v, e),
+                    _ = { year: i.getFullYear(), month: i.getMonth(), day: i.getDay() },
+                    c = !!n && !(0, f.T)(r, a || _),
+                    { __id: p, allow_xai_data_sharing: u } = l()(v, e),
                     [h] = s()(x),
                     C = !!u,
                     Z = o.useCallback(() => {
@@ -354,7 +354,7 @@
                 return o.createElement(o.Fragment, null, o.createElement(d.Z, { checked: C, disabled: c, helpText: y, label: w, learnMoreLink: k, name: "allowXaiDataSharingCustomization", onChange: Z }));
             }
             const Z = { context: "allow_xai_data_sharing_container" };
-            function P({ userPreferences: e }) {
+            function E({ userPreferences: e }) {
                 return o.createElement(h.H, { errorConfig: Z }, o.createElement(C, { userPreferences: e }));
             }
         },
@@ -366,8 +366,8 @@
                 o = n(202784),
                 i = (n(585488), n(351743)),
                 s = n.n(i),
-                l = n(277660),
-                _ = n.n(l),
+                _ = n(277660),
+                l = n.n(_),
                 c = n(954110),
                 d = n(674132),
                 p = n.n(d),
@@ -386,10 +386,10 @@
                     r = (0, u.JY)("grok_settings_restriction_age", 18),
                     a = (0, u.wW)("grok_settings_memory_visibility", "hide"),
                     i = t?.birthdate,
-                    l = new Date(),
-                    d = { year: l.getFullYear(), month: l.getMonth(), day: l.getDay() },
+                    _ = new Date(),
+                    d = { year: _.getFullYear(), month: _.getMonth(), day: _.getDay() },
                     p = !!n && !(0, h.T)(r, i || d),
-                    { __id: b, allow_grok_memory: v } = _()(y, e),
+                    { __id: b, allow_grok_memory: v } = l()(y, e),
                     [x] = s()(k),
                     C = !!v,
                     Z = o.useCallback(() => {
@@ -410,14 +410,14 @@
         },
         987317: (e, t, n) => {
             "use strict";
-            n.d(t, { Z: () => P });
+            n.d(t, { Z: () => E });
             var r = n(599999),
                 a = n(87095),
                 o = n(202784),
                 i = (n(585488), n(351743)),
                 s = n.n(i),
-                l = n(277660),
-                _ = n.n(l),
+                _ = n(277660),
+                l = n.n(_),
                 c = n(688715),
                 d = n(954110),
                 p = n(674132),
@@ -442,9 +442,9 @@
                     r = (0, m.JY)("grok_settings_restriction_age", 18),
                     a = t?.birthdate,
                     i = new Date(),
-                    l = { year: i.getFullYear(), month: i.getMonth(), day: i.getDay() },
-                    c = !!n && !f(r, a || l),
-                    { __id: p, allow_xai_personalization: u } = _()(v, e),
+                    _ = { year: i.getFullYear(), month: i.getMonth(), day: i.getDay() },
+                    c = !!n && !f(r, a || _),
+                    { __id: p, allow_xai_personalization: u } = l()(v, e),
                     [h] = s()(x),
                     C = !!u,
                     Z = o.useCallback(() => {
@@ -459,10 +459,10 @@
                 return o.createElement(o.Fragment, null, o.createElement(d.Z, { checked: C, disabled: c, helpText: y, label: w, learnMoreLink: k, name: "allowXaiPersonalizationCustomization", onChange: Z }));
             }
             const Z = { context: "allow_xai_personalization_container" };
-            function P({ userPreferences: e }) {
+            function E({ userPreferences: e }) {
                 return o.createElement(h.H, { errorConfig: Z }, o.createElement(C, { userPreferences: e }));
             }
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsRevamp-9f4db315.35dc41da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsRevamp-9f4db315.ddc78a0a.js.map

@@ -6983,6 +6983,12 @@
                 a("ed672bfa", "Alle upgrades van het Basis- en Premium-abonnement, plus ..."),
                 a("db63fa1c", "Premium-abonnement selecteren"),
                 a("b128c6bc", "Krijg een verificatiebadge en tientallen andere geweldige extra's en voordelen"),
+                a("ef43d1f1", function (e) {
+                    return e.percentage + "% korting op een jaar " + e.tierName;
+                }),
+                a("f87513e7", function (e) {
+                    return e.percentage + "% korting op " + e.numberOfMonths + " maanden " + e.tierName;
+                }),
                 a("acfaf7a0", "Vergelijk niveaus en functies"),
                 a("e1606e52", "Je abonnement wijzigen"),
                 a("d2f2b91a", "hier registreren"),
@@ -7847,9 +7853,7 @@
                 }),
                 a("ec6e7d9a", "Je account staat in de Alleen-lezen-modus totdat de niveauwijziging is voltooid. Ga naar Stripe om je betaling te controleren voor een succesvolle niveauwijziging."),
                 a("b33d1518", "Vacatures synchroniseren vanuit een ondersteunde integratie of een aangepaste XML-feed"),
-                a("dd2db402", "Stap 1: verzamel de vereiste informatie"),
-                a("edb098c2", "Stap 2: neem contact op met ons ondersteuningsteam"),
-                a("c4474460", "Stap 2: mail ons ondersteuningsteam.");
+                a("dd2db402", "Stap 1: verzamel de vereiste informatie");
             function i(e, n) {
                 for (var t = 0; t < n.length; t++) {
                     var a = n[t];
@@ -7888,7 +7892,9 @@
                     o(e, n)
                 );
             }
-            a("a08da0fa", "Wat gaat er nu gebeuren?"),
+            a("edb098c2", "Stap 2: neem contact op met ons ondersteuningsteam"),
+                a("c4474460", "Stap 2: mail ons ondersteuningsteam."),
+                a("a08da0fa", "Wat gaat er nu gebeuren?"),
                 a("c127374e", "Stuur ons een bericht"),
                 a("b2cb2a0c", "Gebruikersnaam van je Geverifieerde Organisatie-account"),
                 a("b8e64002", "Naam van je sollicitantenvolgsysteem"),
@@ -8889,10 +8895,10 @@
                 }),
                 a("b1eb72fa", "Deze video mag niet overal vertoond worden. We checken even je locatie. Zorg dat je locatie aanstaat in de instellingen van je browser."),
                 a("c057680c", "We kunnen deze video niet afspelen in deze browser. Gebruik een andere browser."),
-                a("i5dfae6e", "Deze video is niet beschikbaar op jouw locatie."),
-                a("c2388276", "Deze video is verwijderd."),
-                a("d2c96140", "Indicator gastgeluid");
-            a("f6dc9146", "OPNIEUW AFSPELEN"),
+                a("i5dfae6e", "Deze video is niet beschikbaar op jouw locatie.");
+            a("c2388276", "Deze video is verwijderd."),
+                a("d2c96140", "Indicator gastgeluid"),
+                a("f6dc9146", "OPNIEUW AFSPELEN"),
                 a("d30c74fe", "Volume"),
                 a("f2d4e6f2", "Opnieuw bekijken"),
                 a("e9f1af3a", "Meer informatie"),
@@ -13250,4 +13256,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.6ce349da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.87c932da.js.map

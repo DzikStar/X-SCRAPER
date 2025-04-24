@@ -6982,6 +6982,12 @@
                 n("ed672bfa", "基本和 Premium 方案中的所有升級，加上…"),
                 n("db63fa1c", "選取一個 Premium 方案"),
                 n("b128c6bc", "獲得已認證徽章以及數十種其他超棒的福利和權益"),
+                n("ef43d1f1", function (e) {
+                    return "取得一年份 " + e.tierName + " 可享 " + e.percentage + "% 折扣";
+                }),
+                n("f87513e7", function (e) {
+                    return "取得 " + e.numberOfMonths + " 個月的 " + e.tierName + " 可享 " + e.percentage + "% 折扣";
+                }),
                 n("acfaf7a0", "比較等級和功能"),
                 n("e1606e52", "變更你的訂閱"),
                 n("d2f2b91a", "在這裡註冊"),
@@ -7846,9 +7852,7 @@
                 }),
                 n("ec6e7d9a", "在待處理的等級切換完成之前，你的帳戶將處於唯讀模式。請前往 Stripe 檢查你的付款，確保等級切換成功。"),
                 n("b33d1518", "從受支援的整合或自訂的 XML 摘要中同步工作"),
-                n("dd2db402", "步驟 1：收集必要的資訊"),
-                n("edb098c2", "步驟 2：聯絡我們的支援團隊"),
-                n("c4474460", "步驟 2：發送電子郵件給我們的支援團隊");
+                n("dd2db402", "步驟 1：收集必要的資訊");
             function t(e, c) {
                 for (var a = 0; a < c.length; a++) {
                     var n = c[a];
@@ -7887,7 +7891,9 @@
                     r(e, c)
                 );
             }
-            n("a08da0fa", "後續的處理流程為何？"),
+            n("edb098c2", "步驟 2：聯絡我們的支援團隊"),
+                n("c4474460", "步驟 2：發送電子郵件給我們的支援團隊"),
+                n("a08da0fa", "後續的處理流程為何？"),
                 n("c127374e", "發送訊息給我們"),
                 n("b2cb2a0c", "你的已認證組織帳戶的使用者名稱"),
                 n("b8e64002", "你的應徵者追蹤系統的名稱"),
@@ -8888,10 +8894,10 @@
                 }),
                 n("b1eb72fa", "抱歉，此影片在某些地區受到限制，在我們取得你的位置前，請稍候片刻。請務必在瀏覽器中啟用位置設定。"),
                 n("c057680c", "我們無法在此瀏覽器中播放影片。請嘗試使用其他網頁瀏覽器。"),
-                n("i5dfae6e", "你所在的位置無法觀看此影片。"),
-                n("c2388276", "此影片已刪除。"),
-                n("d2c96140", "來賓音訊指示器");
-            n("f6dc9146", "重播"),
+                n("i5dfae6e", "你所在的位置無法觀看此影片。");
+            n("c2388276", "此影片已刪除。"),
+                n("d2c96140", "來賓音訊指示器"),
+                n("f6dc9146", "重播"),
                 n("d30c74fe", "音量"),
                 n("f2d4e6f2", "再次觀看"),
                 n("e9f1af3a", "了解更多"),
@@ -13245,4 +13251,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh-Hant.c391507a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh-Hant.43a945ea.js.map

@@ -177,7 +177,7 @@
                     const z = (0, u.b)(),
                         M = (0, u.b)(),
                         W = (0, u.b)(),
-                        B = o.createElement(c.ZP, { color: "text", id: z, role: "label", size: T ? "body" : "headline2", testID: "headline-label", weight: T ? "normal" : "bold" }, Z),
+                        B = o.createElement(c.ZP, { color: "text", id: z, role: "label", size: T ? "body" : "headline2", testID: "headline-label", weight: T ? "medium" : "bold" }, Z),
                         j = !!h && o.createElement(c.ZP, { color: "gray700", id: M, size: "subtext1", style: D ? g.descriptionWithPill : g.description, testID: "description-label" }, h),
                         F = o.createElement(c.ZP, { color: "gray700", role: "label", size: "subtext2", style: g.description }, P),
                         L = D ? o.createElement(d.ZP, { style: n ? g.pill : g.inlinePill, type: R }, D) : null,
@@ -197,4 +197,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Conversation-e907d115.30cb5e9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Conversation-e907d115.245ead5a.js.map

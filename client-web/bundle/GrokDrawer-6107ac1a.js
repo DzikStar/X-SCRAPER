@@ -8,7 +8,7 @@
             e.exports = { queryId: "kaH0vdJmbuocpRAeWpRC7A", operationName: "DeleteGrokMessage", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
         423923: (e) => {
-            e.exports = { queryId: "z3zpnbOt9PzBF8qk2mPuCA", operationName: "GrokConversationItemsByRestId", operationType: "query", metadata: { featureSwitches: ["creator_subscriptions_tweet_preview_api_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls", "withAuxiliaryUserLabels"] } };
+            e.exports = { queryId: "y1Lkc52sobXGzJ8ADjNEIw", operationName: "GrokConversationItemsByRestId", operationType: "query", metadata: { featureSwitches: ["creator_subscriptions_tweet_preview_api_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "responsive_web_graphql_exclude_directive_enabled", "verified_phone_label_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls", "withAuxiliaryUserLabels"] } };
         },
         685850: (e) => {
             e.exports = { queryId: "9Hyh5D4-WXLnExZkONSkZg", operationName: "GrokHistory", operationType: "query", metadata: { featureSwitches: [], fieldToggles: [] } };
@@ -29,7 +29,7 @@
             e.exports = { queryId: "Sr2QEitvnemma5D2NJlA2Q", operationName: "SearchGrokConversations", operationType: "query", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
         628207: (e) => {
-            e.exports = { queryId: "Qp1qIFvysQgzCSaCFtcP_w", operationName: "GrokShare", operationType: "query", metadata: { featureSwitches: ["creator_subscriptions_tweet_preview_api_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls", "withAuxiliaryUserLabels"] } };
+            e.exports = { queryId: "PqOtPKjinNkPqgp11OKaxA", operationName: "GrokShare", operationType: "query", metadata: { featureSwitches: ["creator_subscriptions_tweet_preview_api_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "responsive_web_graphql_exclude_directive_enabled", "verified_phone_label_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls", "withAuxiliaryUserLabels"] } };
         },
         204114: (e) => {
             e.exports = { queryId: "-5e798p4EVbuhGGFFuw3Tg", operationName: "GrokUnpinConversation", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
@@ -42,7 +42,7 @@
         },
         6157: (e, t, n) => {
             "use strict";
-            n.d(t, { Z: () => z });
+            n.d(t, { Z: () => P });
             var a = n(468811),
                 r = n.n(a),
                 o = n(163889),
@@ -61,18 +61,18 @@
                 w = n(880471),
                 f = n.n(w),
                 y = n(61505),
-                C = n.n(y),
-                v = n(255804),
-                k = n.n(v),
+                v = n.n(y),
+                C = n(255804),
+                k = n.n(C),
                 x = n(628207),
                 I = n.n(x),
                 T = n(204114),
                 S = n.n(T),
                 E = n(790427),
-                Z = n.n(E),
-                q = n(220843),
-                L = n.n(q);
-            function z({ apiClient: e }) {
+                q = n.n(E),
+                Z = n(220843),
+                L = n.n(Z);
+            function P({ apiClient: e }) {
                 return {
                     clearConversations: (t, n) => e.graphQL(s(), {}).then((e) => (e.clear_grok_conversations?.grok_deletion_error?.error_code && (0, o.ZP)("GraphQL clear grok conversations failed."), e)),
                     setPreferences: ({ grokMode: t, grokModelOptionId: n }) => e.graphQL(L(), { grokMode: t, grokModelOptionId: n }).then((e) => (e.set_grok_preferences?.preference_update_error?.error_code && (0, o.ZP)("GraphQL set grok preferences failed."), e)),
@@ -80,11 +80,11 @@
                     fetchGrokShareGraphQL: ({ grok_share_id: t }) => e.graphQL(I(), { grok_share_id: t }).then((e) => e),
                     fetchGrokHome: () => e.graphQL(h(), {}).then((e) => e),
                     fetchHistory: ({ cursor: t }) => e.graphQL(m(), { cursor: t }).then((e) => e),
-                    fetchPinnedConversations: ({ cursor: t }) => e.graphQL(C(), { cursor: t }).then((e) => e),
+                    fetchPinnedConversations: ({ cursor: t }) => e.graphQL(v(), { cursor: t }).then((e) => e),
                     fetchMediaHistory: ({ cursor: t }) => e.graphQL(g(), { cursor: t }).then((e) => e),
                     searchConversations: ({ keyword: t }) => e.graphQL(k(), { keyword: t }).then((e) => (e.grok_conversation_search_timeline?.items ?? []).map((e) => ({ chatItemId: e.chat_item_id, conversation: { id: e.grokConversation?.rest_id }, message: e.chat_item?.message, createdAt: e.chat_item?.created_at_ms, title: e.conversation_title })).filter((e) => e.chatItemId && e.conversation.id)),
                     deleteMessage: ({ chat_item_id: t, conversation_id: n }) => e.graphQL(d(), { conversation_id: n, chat_item_id: t }).then((e) => e),
-                    logUserEventGrok: ({ action_type: t, group_id: n, object_id: a }) => e.graphQL(Z(), { group_id: n, object_id: a, action_type: t }).then((e) => e),
+                    logUserEventGrok: ({ action_type: t, group_id: n, object_id: a }) => e.graphQL(q(), { group_id: n, object_id: a, action_type: t }).then((e) => e),
                     grokPinConversation: ({ conversationId: t }) => e.graphQL(f(), { conversationId: t }).then((e) => e),
                     grokUnpinConversation: ({ conversationId: t }) => e.graphQL(S(), { conversationId: t }).then((e) => e),
                     uploadFile: ({ abortController: t, file: n }) => {
@@ -167,18 +167,18 @@
                 m = n(392237);
             const u = m.default.create((e) => ({ backgroundGrey: { backgroundColor: e.colors.gray100 }, backgroundDefault: { backgroundColor: e.colors.cellBackground }, root: { overflow: "hidden", flexDirection: "row", justifyContent: "space-between", gap: e.spaces.space16, flexGrow: 1, borderColor: e.colors.transparent, borderWidth: e.borderWidths.medium }, alignCenter: { alignItems: "center" }, padding16: { padding: e.spaces.space16 }, padding8: { paddingHorizontal: e.spaces.space8, paddingVertical: e.spaces.space4 }, boxShadow: { boxShadow: e.boxShadows.medium }, withMarginTop: { marginTop: e.spaces.space20 }, borderRadiusLarge: { borderRadius: e.borderRadii.large }, borderRadiusInfinite: { borderRadius: e.borderRadii.infinite }, checked: { borderColor: e.colors.primary }, interactive: { cursor: "pointer" }, withMarginEnd: { marginEnd: e.spaces.space20 }, grow: { flexGrow: 1 }, iconContainer: { alignSelf: "flex-start", flexDirection: "column", justifyContent: "center", width: e.spaces.space40, height: e.spaces.space40 }, labelContainer: { flexDirection: "column", justifyContent: "center", flex: 1 }, inlineCalloutContainer: { marginTop: e.spaces.space8 }, description: { marginTop: e.spaces.space4 }, descriptionWithPill: { marginTop: e.spaces.space2 }, endContentContainer: { justifyContent: "center", flexDirection: "column" }, row: { flexDirection: "row", alignItems: "center" }, marginTop4: { marginTop: e.spaces.space4 }, marginBottom8: { marginBottom: e.spaces.space8 }, info: { flexDirection: "row", justifyContent: "space-between", marginBottom: e.spaces.space8 }, infoIcon: { fontSize: ".74em", color: e.colors.gray700 }, backgroundTransparent: { backgroundColor: e.colors.transparent }, pill: { marginBottom: e.spaces.space4 }, inlinePill: { marginStart: e.spaces.space4 } })),
                 h = { ...m.default.absoluteFillObject, cursor: "inherit", height: "100%", margin: 0, opacity: 0, padding: 0, width: "100%" },
-                b = ({ "aria-label": e, "aria-posinset": t, "aria-setsize": n, checked: a, dedicatedPillRow: o, description: m, disabled: b, disabledInlineCallout: g, endContent: w, horizontal: f, illustration: y, infoLabel: C, infoLabelType: v, inlineCallout: k, label: x, name: I, onChange: T, pillText: S, pillType: E, reverseLabels: Z, secondaryContent: q, secondaryDescription: L, switchStyle: z, testID: P }) => {
-                    const B = (0, p.b)(),
-                        D = (0, p.b)(),
+                b = ({ "aria-label": e, "aria-posinset": t, "aria-setsize": n, checked: a, dedicatedPillRow: o, description: m, disabled: b, disabledInlineCallout: g, endContent: w, horizontal: f, illustration: y, infoLabel: v, infoLabelType: C, inlineCallout: k, label: x, name: I, onChange: T, pillText: S, pillType: E, reverseLabels: q, secondaryContent: Z, secondaryDescription: L, switchStyle: P, testID: B }) => {
+                    const D = (0, p.b)(),
+                        z = (0, p.b)(),
                         G = (0, p.b)(),
-                        Q = r.createElement(d.ZP, { color: "text", id: B, role: "label", size: z ? "body" : "headline2", testID: "headline-label", weight: z ? "normal" : "bold" }, x),
-                        A = !!m && r.createElement(d.ZP, { color: "gray700", id: D, size: "subtext1", style: S ? u.descriptionWithPill : u.description, testID: "description-label" }, m),
-                        R = r.createElement(d.ZP, { color: "gray700", role: "label", size: "subtext2", style: u.description }, L),
+                        A = r.createElement(d.ZP, { color: "text", id: D, role: "label", size: P ? "body" : "headline2", testID: "headline-label", weight: P ? "medium" : "bold" }, x),
+                        R = !!m && r.createElement(d.ZP, { color: "gray700", id: z, size: "subtext1", style: S ? u.descriptionWithPill : u.description, testID: "description-label" }, m),
+                        Q = r.createElement(d.ZP, { color: "gray700", role: "label", size: "subtext2", style: u.description }, L),
                         j = S ? r.createElement(c.ZP, { style: o ? u.pill : u.inlinePill, type: E }, S) : null,
-                        M = r.createElement(r.Fragment, null, o ? j : null, r.createElement(i.Z, { style: [u.row, C && u.marginBottom8] }, Z ? A : Q, o ? null : j), r.createElement(i.Z, { style: [u.row, Z && u.marginTop4] }, Z ? Q : A), q || (L ? R : void 0)),
-                        N = z ? "unset" : (n ? 100 / n : 100) + "%",
-                        F = z ? [u.padding8, u.borderRadiusInfinite, a ? u.backgroundDefault : u.backgroundTransparent] : [u.padding16, u.boxShadow, u.borderRadiusLarge, a ? u.checked : null, u.backgroundDefault];
-                    return r.createElement(r.Fragment, null, r.createElement(_.Z, { disabled: b, style: [u.root, ...F, f ? { maxWidth: N, ...u.grow } : null, 1 === t || f ? null : u.withMarginTop, t !== n && f && !z && u.withMarginEnd, !b && u.interactive], testID: P, withInteractiveStyling: !z }, !!y && r.createElement(i.Z, { style: u.iconContainer, testID: "illustration" }, y), r.createElement(i.Z, { style: [u.labelContainer, z && u.alignCenter] }, !!C && r.createElement(i.Z, { style: u.info }, r.createElement(c.ZP, { background: "green" === v ? "green500" : "red" === v ? "magenta500" : "yellow" === v ? "orange50" : "gray500" }, r.createElement(d.ZP, { color: "yellow" === v ? "orange900" : "whiteOnColor", size: "subtext3", weight: "bold" }, C)), "red" !== v && "yellow" !== v && r.createElement(s.default, { style: u.infoIcon, testID: "infoIcon" })), M, a && !!k && r.createElement(i.Z, { style: u.inlineCalloutContainer, testID: "inlineCallout" }, k)), !!w && r.createElement(i.Z, { style: u.endContentContainer, testID: "endContent" }, r.createElement(d.ZP, { id: G, size: "subtext1", weight: "bold" }, w)), r.createElement("input", { "aria-describedby": `${D} ${G}`, "aria-label": e, "aria-labelledby": B, "aria-posinset": t, "aria-setsize": n, checked: a, disabled: b, name: I, onChange: a ? l.Z : T, style: h, type: "radio" })), b && g ? g : null);
+                        N = r.createElement(r.Fragment, null, o ? j : null, r.createElement(i.Z, { style: [u.row, v && u.marginBottom8] }, q ? R : A, o ? null : j), r.createElement(i.Z, { style: [u.row, q && u.marginTop4] }, q ? A : R), Z || (L ? Q : void 0)),
+                        M = P ? "unset" : (n ? 100 / n : 100) + "%",
+                        F = P ? [u.padding8, u.borderRadiusInfinite, a ? u.backgroundDefault : u.backgroundTransparent] : [u.padding16, u.boxShadow, u.borderRadiusLarge, a ? u.checked : null, u.backgroundDefault];
+                    return r.createElement(r.Fragment, null, r.createElement(_.Z, { disabled: b, style: [u.root, ...F, f ? { maxWidth: M, ...u.grow } : null, 1 === t || f ? null : u.withMarginTop, t !== n && f && !P && u.withMarginEnd, !b && u.interactive], testID: B, withInteractiveStyling: !P }, !!y && r.createElement(i.Z, { style: u.iconContainer, testID: "illustration" }, y), r.createElement(i.Z, { style: [u.labelContainer, P && u.alignCenter] }, !!v && r.createElement(i.Z, { style: u.info }, r.createElement(c.ZP, { background: "green" === C ? "green500" : "red" === C ? "magenta500" : "yellow" === C ? "orange50" : "gray500" }, r.createElement(d.ZP, { color: "yellow" === C ? "orange900" : "whiteOnColor", size: "subtext3", weight: "bold" }, v)), "red" !== C && "yellow" !== C && r.createElement(s.default, { style: u.infoIcon, testID: "infoIcon" })), N, a && !!k && r.createElement(i.Z, { style: u.inlineCalloutContainer, testID: "inlineCallout" }, k)), !!w && r.createElement(i.Z, { style: u.endContentContainer, testID: "endContent" }, r.createElement(d.ZP, { id: G, size: "subtext1", weight: "bold" }, w)), r.createElement("input", { "aria-describedby": `${z} ${G}`, "aria-label": e, "aria-labelledby": D, "aria-posinset": t, "aria-setsize": n, checked: a, disabled: b, name: I, onChange: a ? l.Z : T, style: h, type: "radio" })), b && g ? g : null);
                 },
                 g = (e) => {
                     const t = r.useCallback(({ value: e, ...t }) => r.createElement(b, (0, a.Z)({}, t, { key: e })), []);
@@ -205,7 +205,7 @@
                                 e
                             );
                         })(),
-                        C = (e) => () => {
+                        v = (e) => () => {
                             m(p, e);
                         };
                     return a.createElement(
@@ -215,7 +215,7 @@
                         a.createElement(
                             r.Z,
                             { style: [c && l.row, w && l.switchVariant, n] },
-                            u.map((e, t) => b({ "aria-posinset": t + 1, "aria-setsize": u.length, checked: e.value === f, disabled: d, name: p, switchStyle: w, horizontal: c, renderBorderWhenSelected: h, selectorBackgroundStyles: g, onChange: C(e.value), ...e })),
+                            u.map((e, t) => b({ "aria-posinset": t + 1, "aria-setsize": u.length, checked: e.value === f, disabled: d, name: p, switchStyle: w, horizontal: c, renderBorderWhenSelected: h, selectorBackgroundStyles: g, onChange: v(e.value), ...e })),
                         ),
                     );
                 };
@@ -236,4 +236,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.GrokDrawer-6107ac1a.4646047a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.GrokDrawer-6107ac1a.3e020e7a.js.map

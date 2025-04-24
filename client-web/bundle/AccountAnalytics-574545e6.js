@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~bundle.AccountAnalytics~ondemand.XChat-574545e6"],
+    ["bundle.AccountAnalytics-574545e6"],
     {
         369818: (t, e, s) => {
             function i(t) {
@@ -12899,4 +12899,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AccountAnalytics~ondemand.XChat-574545e6.8c4d46da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-574545e6.469db22a.js.map

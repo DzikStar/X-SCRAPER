@@ -647,7 +647,7 @@
                     const F = (0, p.b)(),
                         K = (0, p.b)(),
                         I = (0, p.b)(),
-                        M = r.createElement(s.ZP, { color: "text", id: F, role: "label", size: R ? "body" : "headline2", testID: "headline-label", weight: R ? "normal" : "bold" }, E),
+                        M = r.createElement(s.ZP, { color: "text", id: F, role: "label", size: R ? "body" : "headline2", testID: "headline-label", weight: R ? "medium" : "bold" }, E),
                         A = !!m && r.createElement(s.ZP, { color: "gray700", id: K, size: "subtext1", style: B ? g.descriptionWithPill : g.description, testID: "description-label" }, m),
                         N = r.createElement(s.ZP, { color: "gray700", role: "label", size: "subtext2", style: g.description }, L),
                         W = B ? r.createElement(d.ZP, { style: l ? g.pill : g.inlinePill, type: Z }, B) : null,
@@ -805,4 +805,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterCoinsManagement.94039a6a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterCoinsManagement.11e4da6a.js.map

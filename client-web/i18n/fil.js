@@ -6983,6 +6983,12 @@
                 i("ed672bfa", "Lahat ng upgrade mula Basic at Premium, kasama ang ..."),
                 i("db63fa1c", "Pumili ng premium plan"),
                 i("b128c6bc", "Makakuha ng badge na na-verify at iba pang pambihirang perks at benepisyo"),
+                i("ef43d1f1", function (a) {
+                    return a.percentage + "% diskuwento kada taon ng " + a.tierName;
+                }),
+                i("f87513e7", function (a) {
+                    return a.percentage + "% diskuwento sa " + a.numberOfMonths + " (na) buwan ng " + a.tierName;
+                }),
                 i("acfaf7a0", "Maghambing ng mga tier at feature"),
                 i("e1606e52", "Palitan ang subscription"),
                 i("d2f2b91a", "mag-sign up dito "),
@@ -7847,9 +7853,7 @@
                 }),
                 i("ec6e7d9a", "Naka-read-only mode ang account mo hanggang sa makumpleto ang nakabinbing tier switch. Pumunta sa Stripe para i-check ang pagbabayad mo para siguraduhing naisagawa ang tier switch."),
                 i("b33d1518", "I-sync ang mga trabaho mula sa isang sinusuportahang integrarion o isang custom na XML feed"),
-                i("dd2db402", "Hakbang 1: Ipunin ang kinakailangang impormasyon"),
-                i("edb098c2", "Hakbang 2: Makipag-ugnayan sa amng support team"),
-                i("c4474460", "Hakbang 2: I-email ang aming support team");
+                i("dd2db402", "Hakbang 1: Ipunin ang kinakailangang impormasyon");
             function t(a, n) {
                 for (var g = 0; g < n.length; g++) {
                     var i = n[g];
@@ -7888,7 +7892,9 @@
                     o(a, n)
                 );
             }
-            i("a08da0fa", "Ano'ng susunod na mangyayari?"),
+            i("edb098c2", "Hakbang 2: Makipag-ugnayan sa amng support team"),
+                i("c4474460", "Hakbang 2: I-email ang aming support team"),
+                i("a08da0fa", "Ano'ng susunod na mangyayari?"),
                 i("c127374e", "Magpadala sa amin ng mensahe"),
                 i("b2cb2a0c", "Username ng account ng Beripikadong Org mo"),
                 i("b8e64002", "Pangalan ng applicant tracking system mo"),
@@ -8889,10 +8895,10 @@
                 }),
                 i("b1eb72fa", "Paumanhin, pinaghihigpitan ang video na ito sa ilang partikular na lugar, mangyaring maghintay nang ilang segundo habang kinukuha namin ang lokasyon mo. Tiyaking naka-enable ang mga setting ng lokasyon sa iyong browser."),
                 i("c057680c", "Hindi namin mape-play ang video sa browser na ito. Mangyaring sumubok ng ibang web browser."),
-                i("i5dfae6e", "Hindi available ang video na ito sa iyong lokasyon."),
-                i("c2388276", "Na-delete na ang video na ito."),
-                i("d2c96140", "Indicator ng audio ng bisita");
-            i("f6dc9146", "REPLAY"),
+                i("i5dfae6e", "Hindi available ang video na ito sa iyong lokasyon.");
+            i("c2388276", "Na-delete na ang video na ito."),
+                i("d2c96140", "Indicator ng audio ng bisita"),
+                i("f6dc9146", "REPLAY"),
                 i("d30c74fe", "Volume"),
                 i("f2d4e6f2", "Panooring muli"),
                 i("e9f1af3a", "Alamin ang higit pa"),
@@ -13249,4 +13255,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fil.c95d020a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fil.233da1ba.js.map

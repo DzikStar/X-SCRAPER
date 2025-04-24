@@ -6983,6 +6983,12 @@
                 t("ed672bfa", "Alle Upgrades aus Basis und Premium, plus ..."),
                 t("db63fa1c", "Premium-Plan auswählen"),
                 t("b128c6bc", "Hol dir ein Verifizierungsabzeichen und Dutzende anderer toller Vorteile"),
+                t("ef43d1f1", function (e) {
+                    return e.percentage + " % Rabatt pro Jahr bei " + e.tierName;
+                }),
+                t("f87513e7", function (e) {
+                    return e.percentage + " % Rabatt für " + e.numberOfMonths + " Monate bei " + e.tierName;
+                }),
                 t("acfaf7a0", "Stufen und Funktionen vergleichen"),
                 t("e1606e52", "Abonnement ändern"),
                 t("d2f2b91a", "hier registrieren"),
@@ -7847,9 +7853,7 @@
                 }),
                 t("ec6e7d9a", "Dein Account ist im Nur-Lese-Modus, bis der anstehende Stufenwechsel abgeschlossen ist. Bitte gehe zu Stripe und überprüfe deine Zahlung, damit der Wechsel mit Sicherheit erfolgen kann."),
                 t("b33d1518", "Jobs aus einer unterstützten Integration oder einem angepassten XML-Feed synchronisieren"),
-                t("dd2db402", "Schritt 1: Sammle die erforderlichen Informationen"),
-                t("edb098c2", "Schritt 2: Kontaktiere unser Supportteam"),
-                t("c4474460", "Schritt 2: Sende eine E-Mail an unser Supportteam");
+                t("dd2db402", "Schritt 1: Sammle die erforderlichen Informationen");
             function a(e, n) {
                 for (var i = 0; i < n.length; i++) {
                     var t = n[i];
@@ -7888,7 +7892,9 @@
                     d(e, n)
                 );
             }
-            t("a08da0fa", "Was geschieht als Nächstes?"),
+            t("edb098c2", "Schritt 2: Kontaktiere unser Supportteam"),
+                t("c4474460", "Schritt 2: Sende eine E-Mail an unser Supportteam"),
+                t("a08da0fa", "Was geschieht als Nächstes?"),
                 t("c127374e", "Nachricht an uns senden"),
                 t("b2cb2a0c", "Nutzername deines Accounts bei Verifizierte Organisationen"),
                 t("b8e64002", "Name deines Bewerbermanagementsystems"),
@@ -8889,10 +8895,10 @@
                 }),
                 t("b1eb72fa", "Dieses Video kann in bestimmten Regionen leider nicht aufgerufen werden, bitte warte ein paar Sekunden, während dein Standort ermittelt wird. Dazu müssen die Standorteinstellungen in deinem Browser aktiviert sein."),
                 t("c057680c", "Das Video kann nicht in diesem Browser abgespielt werden. Bitte versuche es mit einem anderen Browser."),
-                t("i5dfae6e", "Dieses Video ist an deinem Standort nicht verfügbar."),
-                t("c2388276", "Dieses Video wurde gelöscht."),
-                t("d2c96140", "Audioanzeige für Gast");
-            t("f6dc9146", "AUFZEICHNUNG"),
+                t("i5dfae6e", "Dieses Video ist an deinem Standort nicht verfügbar.");
+            t("c2388276", "Dieses Video wurde gelöscht."),
+                t("d2c96140", "Audioanzeige für Gast"),
+                t("f6dc9146", "AUFZEICHNUNG"),
                 t("d30c74fe", "Lautstärke"),
                 t("f2d4e6f2", "Erneut ansehen"),
                 t("e9f1af3a", "Mehr erfahren"),
@@ -13250,4 +13256,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/de.4c2910da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/de.4dc4db9a.js.map

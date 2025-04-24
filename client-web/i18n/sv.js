@@ -6983,6 +6983,12 @@
                 t("ed672bfa", "Alla uppgraderingar från grundnivån och Premium samt …"),
                 t("db63fa1c", "Välj en premiumplan"),
                 t("b128c6bc", "Få ett verifieringsmärke och dussintals andra makalösa förmåner"),
+                t("ef43d1f1", function (e) {
+                    return e.percentage + " % rabatt på ett år med " + e.tierName;
+                }),
+                t("f87513e7", function (e) {
+                    return e.percentage + " % rabatt på " + e.numberOfMonths + " månader med " + e.tierName;
+                }),
                 t("acfaf7a0", "Jämför nivåer och funktioner"),
                 t("e1606e52", "Ändra prenumeration"),
                 t("d2f2b91a", "registrera sig här"),
@@ -7847,9 +7853,7 @@
                 }),
                 t("ec6e7d9a", "Ditt konto är skrivskyddat tills den kommande nivåändringen har genomförts. Besök Stripe för att kontrollera betalningen och se till att nivåändringen går igenom."),
                 t("b33d1518", "Synka jobb från en integration som stöds eller ett anpassat XML-flöde"),
-                t("dd2db402", "Steg 1: Samla in den nödvändiga informationen"),
-                t("edb098c2", "Steg 2: Kontakta vårt supportteam"),
-                t("c4474460", "Steg 2: Mejla vårt supportteam");
+                t("dd2db402", "Steg 1: Samla in den nödvändiga informationen");
             function i(e, a) {
                 for (var n = 0; n < a.length; n++) {
                     var t = a[n];
@@ -7888,7 +7892,9 @@
                     d(e, a)
                 );
             }
-            t("a08da0fa", "Vad händer härnäst?"),
+            t("edb098c2", "Steg 2: Kontakta vårt supportteam"),
+                t("c4474460", "Steg 2: Mejla vårt supportteam"),
+                t("a08da0fa", "Vad händer härnäst?"),
                 t("c127374e", "Skicka ett meddelande"),
                 t("b2cb2a0c", "Användarnamn på kontot för din verifierade organisation"),
                 t("b8e64002", "Namn på ditt system för att hålla reda på sökande"),
@@ -8889,10 +8895,10 @@
                 }),
                 t("b1eb72fa", "Tyvärr är den här videon begränsad i vissa områden. Vänta ett par sekunder medan vi tar reda på var du befinner dig. Slå på platsinställningarna i din webbläsare."),
                 t("c057680c", "Vi kan inte spela upp videon i den här webbläsaren. Testa en annan."),
-                t("i5dfae6e", "Denna video är inte tillgänglig på din plats."),
-                t("c2388276", "Denna video har raderats."),
-                t("d2c96140", "Gästljudindikator");
-            t("f6dc9146", "REPRIS"),
+                t("i5dfae6e", "Denna video är inte tillgänglig på din plats.");
+            t("c2388276", "Denna video har raderats."),
+                t("d2c96140", "Gästljudindikator"),
+                t("f6dc9146", "REPRIS"),
                 t("d30c74fe", "Volym"),
                 t("f2d4e6f2", "Titta igen"),
                 t("e9f1af3a", "Ta reda på mer"),
@@ -13237,4 +13243,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sv.ec5e065a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sv.c8a209da.js.map

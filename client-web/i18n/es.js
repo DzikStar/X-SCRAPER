@@ -6982,6 +6982,12 @@
                 o("ed672bfa", "Todas las actualizaciones de los planes Básico y Premium, más..."),
                 o("db63fa1c", "Selecciona un plan premium"),
                 o("b128c6bc", "Obtén una insignia de verificación y decenas de increíbles ventajas y beneficios adicionales."),
+                o("ef43d1f1", function (e) {
+                    return e.percentage + " % de descuento por un año de " + e.tierName;
+                }),
+                o("f87513e7", function (e) {
+                    return e.percentage + " % de descuento por " + e.numberOfMonths + " meses de " + e.tierName;
+                }),
                 o("acfaf7a0", "Comparar niveles y funciones"),
                 o("e1606e52", "Cambia tu suscripción"),
                 o("d2f2b91a", "registrarse aquí"),
@@ -7846,9 +7852,7 @@
                 }),
                 o("ec6e7d9a", "Tu cuenta está en modo de solo lectura hasta que se complete el cambio de nivel pendiente. Ve a Stripe y consulta tu pago para asegurarte de que el cambio de nivel se haga correctamente."),
                 o("b33d1518", "Sincronizar empleos desde una integración compatible o un feed XML personalizado"),
-                o("dd2db402", "Paso 1: Recopila la información necesaria"),
-                o("edb098c2", "Paso 2: comunícate con nuestro equipo de soporte"),
-                o("c4474460", "Paso 2: Envía un correo electrónico a nuestro equipo de soporte");
+                o("dd2db402", "Paso 1: Recopila la información necesaria");
             function s(e, a) {
                 for (var n = 0; n < a.length; n++) {
                     var o = a[n];
@@ -7887,7 +7891,9 @@
                     i(e, a)
                 );
             }
-            o("a08da0fa", "¿Qué sucede a continuación?"),
+            o("edb098c2", "Paso 2: comunícate con nuestro equipo de soporte"),
+                o("c4474460", "Paso 2: Envía un correo electrónico a nuestro equipo de soporte"),
+                o("a08da0fa", "¿Qué sucede a continuación?"),
                 o("c127374e", "Envíanos un mensaje"),
                 o("b2cb2a0c", "Nombre de usuario de tu cuenta de organización verificada"),
                 o("b8e64002", "Nombre de tu sistema de seguimiento de candidatos"),
@@ -8888,10 +8894,10 @@
                 }),
                 o("b1eb72fa", "Este video está restringido en algunas áreas. Espera un momento mientras obtenemos tu ubicación. Asegúrate de activar la configuración de ubicación en tu navegador."),
                 o("c057680c", "No podemos reproducir el video en este navegador. Prueba con otro navegador web."),
-                o("i5dfae6e", "Este video no está disponible en tu ubicación."),
-                o("c2388276", "Este video se eliminó."),
-                o("d2c96140", "Indicador del audio del invitado");
-            o("f6dc9146", "REPETICIÓN"),
+                o("i5dfae6e", "Este video no está disponible en tu ubicación.");
+            o("c2388276", "Este video se eliminó."),
+                o("d2c96140", "Indicador del audio del invitado"),
+                o("f6dc9146", "REPETICIÓN"),
                 o("d30c74fe", "Volumen"),
                 o("f2d4e6f2", "Ver de nuevo"),
                 o("e9f1af3a", "Obtener más información"),
@@ -13248,4 +13254,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/es.d6793efa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/es.63255f9a.js.map

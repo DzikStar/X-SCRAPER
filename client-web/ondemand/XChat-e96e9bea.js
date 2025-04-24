@@ -176,8 +176,8 @@
                 L = /[a-z0-9!?\*'@\(\);:&=\+\$\/%#\[\]\-_\.,~|]/i,
                 N = /[a-z0-9\-_&=#\/]/i,
                 A = (0, t.Z)("((#{validUrlPrecedingChars})((https?:\\/\\/)?(#{validDomain})(?::(#{validPortNumber}))?(\\/#{validUrlPath}*)?(\\?#{validUrlQueryChars}*#{validUrlQueryEndingChars})?))", { validUrlPrecedingChars: Z, validDomain: x, validPortNumber: w, validUrlPath: z, validUrlQueryChars: L, validUrlQueryEndingChars: N }, "gi"),
-                M = /[-_.\/]$/,
-                P = (0, t.Z)(/^https?:\/\/t\.co\/([a-z0-9]+)(?:\?#{validUrlQueryChars}*#{validUrlQueryEndingChars})?/, { validUrlQueryChars: L, validUrlQueryEndingChars: N }, "i"),
+                P = /[-_.\/]$/,
+                M = (0, t.Z)(/^https?:\/\/t\.co\/([a-z0-9]+)(?:\?#{validUrlQueryChars}*#{validUrlQueryEndingChars})?/, { validUrlQueryChars: L, validUrlQueryEndingChars: N }, "i"),
                 F = { extractUrlsWithoutProtocol: !0 },
                 E = (u, e, a) => {
                     let d = u.length;
@@ -197,14 +197,14 @@
                         const i = r - d.length;
                         if (E(d, t || "https://", c))
                             if (t) {
-                                if (d.match(P)) {
+                                if (d.match(M)) {
                                     const u = RegExp.$1;
                                     if (u && u.length > 40) continue;
                                     (d = RegExp.lastMatch), (r = i + d.length);
                                 }
                                 a.push({ url: d, indices: [i, r] });
                             } else {
-                                if (!e.extractUrlsWithoutProtocol || u.match(M)) continue;
+                                if (!e.extractUrlsWithoutProtocol || u.match(P)) continue;
                                 let t = null,
                                     l = 0;
                                 if (
@@ -409,12 +409,6 @@
             var d = a(552322);
             const t = (u) => (0, d.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...u, children: (0, d.jsx)("path", { d: "M15 6v3h3v2h-3v3h-2v-3h-3V9h3V6h2zm4.5-4C20.88 2 22 3.12 22 4.5v11c0 1.38-1.12 2.5-2.5 2.5h-11C7.12 18 6 16.88 6 15.5v-11C6 3.12 7.12 2 8.5 2h11zM8 15.5c0 .28.22.5.5.5h11c.28 0 .5-.22.5-.5v-11c0-.28-.22-.5-.5-.5h-11c-.28 0-.5.22-.5.5v11zm-4 4V8h-.5C2.67 8 2 8.67 2 9.5v10C2 20.88 3.12 22 4.5 22h10c.83 0 1.5-.67 1.5-1.5V20H4.5c-.28 0-.5-.22-.5-.5z" }) });
         },
-        94595: (u, e, a) => {
-            "use strict";
-            a.d(e, { Z: () => t });
-            var d = a(552322);
-            const t = (u) => (0, d.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...u, children: (0, d.jsx)("path", { d: "M12 1.75C6.34 1.75 1.75 6.34 1.75 12S6.34 22.25 12 22.25 22.25 17.66 22.25 12 17.66 1.75 12 1.75zM13.25 7L13 12.7s-.5-.2-1-.2-1 .2-1 .2L10.75 7h2.5zM12 17c-.83 0-1.5-.67-1.5-1.5S11.17 14 12 14s1.5.67 1.5 1.5S12.83 17 12 17z" }) });
-        },
         427724: (u, e, a) => {
             "use strict";
             a.d(e, { Z: () => t });
@@ -537,4 +531,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-e96e9bea.7635b69a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-e96e9bea.c9e5dcfa.js.map

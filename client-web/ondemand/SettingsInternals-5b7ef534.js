@@ -2,13 +2,13 @@
     ["ondemand.SettingsInternals-5b7ef534"],
     {
         2012: (e) => {
-            e.exports = { queryId: "uz5Gnkc26LgKUoCT5sFFLA", operationName: "DmAllSearchSlice", operationType: "query", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
+            e.exports = { queryId: "8Wk14t85SdE2PUGkMOW6vg", operationName: "DmAllSearchSlice", operationType: "query", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "responsive_web_graphql_exclude_directive_enabled", "verified_phone_label_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
         },
         305341: (e) => {
             e.exports = { queryId: "5zpY1dCR-8NyxQJS_CFJoQ", operationName: "DmGroupSearchSlice", operationType: "query", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
         802680: (e) => {
-            e.exports = { queryId: "scMvgnT4495w3cNAzHPi0Q", operationName: "DmMutedTimeline", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
+            e.exports = { queryId: "DJH3CSk2ZtfQ0e6zKOiORA", operationName: "DmMutedTimeline", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "responsive_web_graphql_exclude_directive_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
         },
         23110: (e) => {
             e.exports = { queryId: "xYSm8m5kJnzm_gFCn5GH-w", operationName: "DmPeopleSearchSlice", operationType: "query", metadata: { featureSwitches: [], fieldToggles: [] } };
@@ -249,21 +249,21 @@
                             const m = n?.conversation?.rest_id,
                                 g = n?.event_detail?.dm,
                                 h = n?.created_at_millis,
-                                { card: f, media: b, tweet_results: y, urls_entity: v } = g?.attachments?.[0] || {};
+                                { card: f, media: b, tweet_results: v, urls_entity: y } = g?.attachments?.[0] || {};
                             if (
                                 (f?.legacy && (d = { card: f }),
-                                v?.length &&
+                                y?.length &&
                                     g.text &&
-                                    v.forEach((e) => {
+                                    y.forEach((e) => {
                                         e?.indices[0] && (u = g.text.slice(0, e?.indices[0]).concat(g.text.slice(e.indices[1])));
                                     }),
-                                "Tweet" === y?.result?.__typename)
+                                "Tweet" === v?.result?.__typename)
                             ) {
-                                const e = y?.result?.legacy?.entities;
+                                const e = v?.result?.legacy?.entities;
                                 let t;
                                 e?.media?.length ? (t = e?.media[0]) : e?.urls?.length && (t = e?.urls[0]);
                                 const { display_url: i, expanded_url: n, id_str: s, indices: r, url: a } = t || {},
-                                    { extended_entities: o } = y?.result?.legacy || {},
+                                    { extended_entities: o } = v?.result?.legacy || {},
                                     l = o?.media?.map((e) => {
                                         if (e?.video_info) {
                                             const t = e?.video_info?.variants;
@@ -271,8 +271,8 @@
                                         }
                                         return e;
                                     }),
-                                    _ = { ...y?.result?.legacy?.extended_entities, media: l };
-                                d = { tweet: { status: { ...y?.result, legacy: { ...y?.result?.legacy, extended_entities: _ } }, display_url: i, expanded_url: n, indices: r, url: a, id: s } };
+                                    _ = { ...v?.result?.legacy?.extended_entities, media: l };
+                                d = { tweet: { status: { ...v?.result, legacy: { ...v?.result?.legacy, extended_entities: _ } }, display_url: i, expanded_url: n, indices: r, url: a, id: s } };
                             }
                             const w = b ? (0, s.m)(b) : null;
                             w && w.type && ("photo" === w.type ? (d = { photo: w }) : "video" === w.type ? (d = { video: w }) : "animated_gif" === w.type && (d = { animated_gif: w }));
@@ -315,4 +315,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsInternals-5b7ef534.e1cde6aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsInternals-5b7ef534.474cbcaa.js.map

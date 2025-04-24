@@ -11,7 +11,7 @@
             e.exports = { queryId: "kaH0vdJmbuocpRAeWpRC7A", operationName: "DeleteGrokMessage", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
         423923: (e) => {
-            e.exports = { queryId: "z3zpnbOt9PzBF8qk2mPuCA", operationName: "GrokConversationItemsByRestId", operationType: "query", metadata: { featureSwitches: ["creator_subscriptions_tweet_preview_api_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls", "withAuxiliaryUserLabels"] } };
+            e.exports = { queryId: "y1Lkc52sobXGzJ8ADjNEIw", operationName: "GrokConversationItemsByRestId", operationType: "query", metadata: { featureSwitches: ["creator_subscriptions_tweet_preview_api_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "responsive_web_graphql_exclude_directive_enabled", "verified_phone_label_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls", "withAuxiliaryUserLabels"] } };
         },
         685850: (e) => {
             e.exports = { queryId: "9Hyh5D4-WXLnExZkONSkZg", operationName: "GrokHistory", operationType: "query", metadata: { featureSwitches: [], fieldToggles: [] } };
@@ -32,7 +32,7 @@
             e.exports = { queryId: "Sr2QEitvnemma5D2NJlA2Q", operationName: "SearchGrokConversations", operationType: "query", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
         628207: (e) => {
-            e.exports = { queryId: "Qp1qIFvysQgzCSaCFtcP_w", operationName: "GrokShare", operationType: "query", metadata: { featureSwitches: ["creator_subscriptions_tweet_preview_api_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls", "withAuxiliaryUserLabels"] } };
+            e.exports = { queryId: "PqOtPKjinNkPqgp11OKaxA", operationName: "GrokShare", operationType: "query", metadata: { featureSwitches: ["creator_subscriptions_tweet_preview_api_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "responsive_web_graphql_exclude_directive_enabled", "verified_phone_label_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls", "withAuxiliaryUserLabels"] } };
         },
         204114: (e) => {
             e.exports = { queryId: "-5e798p4EVbuhGGFFuw3Tg", operationName: "GrokUnpinConversation", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
@@ -60,17 +60,17 @@
                 u = o(369111),
                 m = o.n(u),
                 g = o(551632),
-                f = o.n(g),
-                b = o(880471),
-                y = o.n(b),
+                b = o.n(g),
+                f = o(880471),
+                y = o.n(f),
                 w = o(61505),
                 v = o.n(w),
                 C = o(255804),
                 Z = o.n(C),
                 k = o(628207),
                 x = o.n(k),
-                S = o(204114),
-                T = o.n(S),
+                T = o(204114),
+                S = o.n(T),
                 I = o(790427),
                 D = o.n(I),
                 P = o(220843),
@@ -84,12 +84,12 @@
                     fetchGrokHome: () => e.graphQL(m(), {}).then((e) => e),
                     fetchHistory: ({ cursor: t }) => e.graphQL(p(), { cursor: t }).then((e) => e),
                     fetchPinnedConversations: ({ cursor: t }) => e.graphQL(v(), { cursor: t }).then((e) => e),
-                    fetchMediaHistory: ({ cursor: t }) => e.graphQL(f(), { cursor: t }).then((e) => e),
+                    fetchMediaHistory: ({ cursor: t }) => e.graphQL(b(), { cursor: t }).then((e) => e),
                     searchConversations: ({ keyword: t }) => e.graphQL(Z(), { keyword: t }).then((e) => (e.grok_conversation_search_timeline?.items ?? []).map((e) => ({ chatItemId: e.chat_item_id, conversation: { id: e.grokConversation?.rest_id }, message: e.chat_item?.message, createdAt: e.chat_item?.created_at_ms, title: e.conversation_title })).filter((e) => e.chatItemId && e.conversation.id)),
                     deleteMessage: ({ chat_item_id: t, conversation_id: o }) => e.graphQL(d(), { conversation_id: o, chat_item_id: t }).then((e) => e),
                     logUserEventGrok: ({ action_type: t, group_id: o, object_id: n }) => e.graphQL(D(), { group_id: o, object_id: n, action_type: t }).then((e) => e),
                     grokPinConversation: ({ conversationId: t }) => e.graphQL(y(), { conversationId: t }).then((e) => e),
-                    grokUnpinConversation: ({ conversationId: t }) => e.graphQL(T(), { conversationId: t }).then((e) => e),
+                    grokUnpinConversation: ({ conversationId: t }) => e.graphQL(S(), { conversationId: t }).then((e) => e),
                     uploadFile: ({ abortController: t, file: o }) => {
                         const n = new FormData();
                         return n.append("image", o), e.postForm("grok/attachment", n, {}, { "x-xai-request-id": i().v4() }, void 0, t.signal).then((e) => e.map((e) => ({ ...e, url: e.url ?? (void 0 !== e.mediaId ? `https://api.x.com/2/grok/attachment.json?mediaId=${e.mediaId}` : void 0) })));
@@ -133,8 +133,8 @@
             var u = o(807896),
                 m = o(386802),
                 g = o(420740),
-                f = o(674132),
-                b = o.n(f),
+                b = o(674132),
+                f = o.n(b),
                 y = o(952793),
                 w = o(965728);
             const v = { startX: 0, startY: 0 };
@@ -176,11 +176,11 @@
             const Z = C;
             var k = o(992942),
                 x = o(7022),
-                S = o(309854),
-                T = o(351686),
+                T = o(309854),
+                S = o(351686),
                 I = o(822399);
-            const D = b().b327c12a,
-                P = b().gff1f69e;
+            const D = f().b327c12a,
+                P = f().gff1f69e;
             class E extends n.PureComponent {
                 constructor(...e) {
                     super(...e), (this.state = { loadingVariant: null, imageLoading: !1 }), (this._handleLoadStart = () => this.setState({ imageLoading: !0 })), (this._handleLoadEnd = () => this.setState({ imageLoading: !1 }));
@@ -200,20 +200,20 @@
                     return n.createElement(i.Z, { style: h }, this.state.imageLoading ? L : null, _ ? n.createElement(x.Z, { onTap: a, onZoomed: r, resetZoom: d }, u) : u);
                 }
                 static _selectCachedVariant(e) {
-                    const t = S.Z.getOriginalImage(e);
-                    return t ? T.Z.selectLargestCachedVariant(t) : Promise.resolve();
+                    const t = T.Z.getOriginalImage(e);
+                    return t ? S.Z.selectLargestCachedVariant(t) : Promise.resolve();
                 }
                 static _selectSource(e) {
-                    const t = S.Z.getOriginalImage(e);
-                    return t && T.Z.selectLargestUrl(t);
+                    const t = T.Z.getOriginalImage(e);
+                    return t && S.Z.selectLargestUrl(t);
                 }
             }
             E.defaultProps = { zoomable: !1 };
             const z = l.default.create((e) => ({ img: { ...l.default.absoluteFillObject, height: "auto", margin: "auto", maxHeight: "100%", maxWidth: "100%", width: "auto" }, progressBar: { position: "absolute", top: 0, zIndex: 1 } })),
                 L = n.createElement(I.Z, { ariaValueText: P, indeterminate: !0, style: z.progressBar }),
                 M = E;
-            var B = o(78067);
-            class q extends n.PureComponent {
+            var q = o(78067);
+            class B extends n.PureComponent {
                 constructor(...e) {
                     super(...e),
                         (this._handlePlaybackStarted = () => {
@@ -233,21 +233,21 @@
                 }
                 _renderVideo() {
                     const { isVerticalVideoNoBlackBars: e, promotedContent: t, video: o, videoId: i } = this.props;
-                    return n.createElement(B.Z, (0, u.Z)({}, s.Z.extractVideoProps(i, o, void 0, void 0, !1, e), { onPlaybackStarted: this._handlePlaybackStarted, playbackCoordination: null, promotedContent: t, setPlayer: this._setPlayer, withPostPlayback: !0 }));
+                    return n.createElement(q.Z, (0, u.Z)({}, s.Z.extractVideoProps(i, o, void 0, void 0, !1, e), { onPlaybackStarted: this._handlePlaybackStarted, playbackCoordination: null, promotedContent: t, setPlayer: this._setPlayer, withPostPlayback: !0 }));
                 }
             }
             const G = l.default.create({ root: { flexBasis: 0, flexGrow: 1, flexShrink: 1, justifyContent: "center" } }),
-                A = q,
-                V = b().ac85c6b2,
-                N = (e) => {
+                A = B,
+                N = f().ac85c6b2,
+                V = (e) => {
                     const { businessAvatar: t = !1, isAvatar: o, isCurrentlyDisplayed: a, mediaDetail: r, onDismiss: l, onTap: d, promotedContent: h, videoId: _, ...c } = e,
-                        [p, f] = n.useState(null),
-                        [b, v] = n.useState({ width: 0, height: 0 }),
+                        [p, b] = n.useState(null),
+                        [f, v] = n.useState({ width: 0, height: 0 }),
                         { isModal: C } = n.useContext(m.Z),
                         { height: k, width: x } = r.original_info || {},
-                        { height: S, width: T } = b,
+                        { height: T, width: S } = f,
                         I = (0, y.hC)("rweb_video_vertical_aspect_ratio_enabled"),
-                        D = I || C || o ? (0, w.I5)({ mediaWidth: x, mediaHeight: k, containerWidth: T, containerHeight: S }, o) : Y.mediaItem;
+                        D = I || C || o ? (0, w.I5)({ mediaWidth: x, mediaHeight: k, containerWidth: S, containerHeight: T }, o) : Y.mediaItem;
                     return n.createElement(
                         Z,
                         {
@@ -260,7 +260,7 @@
                                                   layout: { height: t, width: o },
                                               },
                                           } = e;
-                                          (o === b.width && t === b.height) || v({ width: o, height: t });
+                                          (o === f.width && t === f.height) || v({ width: o, height: t });
                                       }
                                     : void 0,
                             style: Y.root,
@@ -268,10 +268,10 @@
                         p
                             ? n.createElement(g.Z, {
                                   onRetry: () => {
-                                      f(null);
+                                      b(null);
                                   },
                                   style: Y.errorDetail,
-                                  title: V,
+                                  title: N,
                                   withLightOnDarkColorScheme: !0,
                               })
                             : null,
@@ -291,10 +291,10 @@
                                             (0, u.Z)({}, c, {
                                                 imageStyle: o && !t && Y.avatarImage,
                                                 onError: (e) => {
-                                                    f(e.nativeEvent.error);
+                                                    b(e.nativeEvent.error);
                                                 },
                                                 onLoad: () => {
-                                                    f(null);
+                                                    b(null);
                                                 },
                                                 onTap: d,
                                                 photo: r,
@@ -309,7 +309,7 @@
                     );
                 },
                 Y = l.default.create((e) => ({ root: { flexGrow: 1, justifyContent: "center", alignItems: "center", flexShrink: 1 }, mediaItem: { flexGrow: 1, width: "100%", height: "100%" }, container: { height: "100%", position: "absolute", width: "100%" }, errorDetail: { alignItems: "center", alignSelf: "center", justifyContent: "center", position: "absolute", height: "100%", maxWidth: 400 }, avatarImage: { borderRadius: e.borderRadii.infinite, margin: e.spaces.space16 } })),
-                R = n.memo(N, (e, t) => (0, d.Z)(e, t));
+                R = n.memo(V, (e, t) => (0, d.Z)(e, t));
             class W extends n.Component {
                 constructor(e, t) {
                     super(e, t),
@@ -378,7 +378,7 @@
         },
         827094: (e, t, o) => {
             "use strict";
-            o.d(t, { Z: () => b });
+            o.d(t, { Z: () => f });
             var n = o(202784),
                 i = o(325686),
                 s = o(108362),
@@ -393,8 +393,8 @@
                 u = o(965728),
                 m = o(979512);
             const g = _().ia5e7488,
-                f = _().ic76bdf0;
-            class b extends n.Component {
+                b = _().ic76bdf0;
+            class f extends n.Component {
                 constructor(...e) {
                     super(...e),
                         (this._openGrok = async () => {}),
@@ -410,20 +410,20 @@
                         });
                 }
                 render() {
-                    const { backgroundColor: e, children: t, footerButtons: o, forceDominantButtonColor: l, forceModalStyle: d, hideButtons: h, mediaItem: _, mediaUrl: m, overlayFooter: b, topRightButton: v } = this.props,
+                    const { backgroundColor: e, children: t, footerButtons: o, forceDominantButtonColor: l, forceModalStyle: d, hideButtons: h, mediaItem: _, mediaUrl: m, overlayFooter: f, topRightButton: v } = this.props,
                         { isModal: C } = this.context,
                         Z = { backgroundColor: e.rgba, ...u.nk },
                         k = { backgroundColor: e.rgb, ...u.nk },
                         x = [y.root, C ? Z : k, { position: C || d ? "relative" : "fixed" }],
-                        S = _,
-                        T = S?.media_results?.result?.grok_image_annotation;
+                        T = _,
+                        S = T?.media_results?.result?.grok_image_annotation;
                     return n.createElement(
                         n.Fragment,
                         null,
-                        n.createElement(i.Z, { onClick: this._handleBackgroundPress, style: x }, t, o ? n.createElement(i.Z, { pointerEvents: h ? "none" : void 0, style: [y.footerButtons, b && Z, b && y.footerButtonsAbsolute, h && y.fadeOut] }, n.createElement(s.Z, { withGutter: !0 }, o)) : null),
+                        n.createElement(i.Z, { onClick: this._handleBackgroundPress, style: x }, t, o ? n.createElement(i.Z, { pointerEvents: h ? "none" : void 0, style: [y.footerButtons, f && Z, f && y.footerButtonsAbsolute, h && y.fadeOut] }, n.createElement(s.Z, { withGutter: !0 }, o)) : null),
                         n.createElement(a.Z, { interactiveStyles: null, onClick: this._handleCloseButtonPress, pointerEvents: h ? "none" : void 0, role: "none", style: [y.buttonWrapper, y.buttonWrapperLeft, u.nk, h && y.fadeOut] }, (t) => n.createElement(r.ZP, { "aria-label": g, dominantColor: e.rgb, hoverLabel: { label: g }, icon: n.createElement(c.default, null), interactivityState: t, onClick: this._handleCloseButtonPress, type: _ || m || l ? "onMediaDominantColorFilled" : "onMediaWhiteFilled" })),
                         v ? n.createElement(i.Z, { pointerEvents: h ? "none" : void 0, style: [y.buttonWrapper, y.buttonWrapperRight, u.nk, h && y.fadeOut] }, v) : null,
-                        T
+                        S
                             ? n.createElement(
                                   i.Z,
                                   { style: [y.buttonWrapperBottomCenter, u.nk, h && y.fadeOut] },
@@ -432,12 +432,12 @@
                                       {
                                           icon: n.createElement(p.default, null),
                                           onClick: () => {
-                                              this._openGrok({ text: T.prompt, autoSubmit: !0, source: "post_image_annotation" });
+                                              this._openGrok({ text: S.prompt, autoSubmit: !0, source: "post_image_annotation" });
                                           },
                                           size: "small",
                                           type: "brandFilled",
                                       },
-                                      f,
+                                      b,
                                   ),
                                   n.createElement(w, {
                                       onOpenGrokUpdate: (e) => {
@@ -449,7 +449,7 @@
                     );
                 }
             }
-            (b.contextType = l.Z), (b.defaultProps = { hideButtons: !1 });
+            (f.contextType = l.Z), (f.defaultProps = { hideButtons: !1 });
             const y = d.default.create((e) => ({ root: { overflowX: "hidden", overflowY: "hidden", height: "100%", width: "100%" }, buttonWrapper: { position: "absolute", top: 0, padding: e.spaces.space12, alignItems: "center", justifyContent: "center", cursor: "pointer" }, buttonWrapperLeft: { start: 0 }, buttonWrapperRight: { end: 0 }, buttonWrapperBottomCenter: { width: "100%", position: "absolute", bottom: 60, alignItems: "center", justifyContent: "center", cursor: "pointer" }, fadeOut: { opacity: 0 }, footerButtons: { width: "100%", alignSelf: "center" }, footerButtonsAbsolute: { position: "absolute", bottom: 0, paddingBottom: d.default.iPhoneOffsetBottom, zIndex: 1 } })),
                 w = ({ onOpenGrokUpdate: e }) => {
                     const { openGrok: t } = (0, m.Z)();
@@ -498,7 +498,7 @@
         },
         7022: (e, t, o) => {
             "use strict";
-            o.d(t, { Z: () => b });
+            o.d(t, { Z: () => f });
             var n = o(202784),
                 i = o(196001),
                 s = o(325686),
@@ -548,8 +548,8 @@
                         a = { zoom: this._isTouching ? e : (0, i.ST)(e), zoomCenterX: this._isTouching ? t.x : (0, i.ST)(t.x), zoomCenterY: this._isTouching ? t.y : (0, i.ST)(t.y) };
                     return n.createElement(
                         s.Z,
-                        { onTouchEnd: this._handleTouchEnd, onTouchStart: this._handleTouchStart, ref: this._setTouchableNode, style: f.fill },
-                        n.createElement(i.y_, { style: a }, ({ zoom: e, zoomCenterX: i, zoomCenterY: a }) => n.createElement(s.Z, { ref: this._ref, style: [f.fill, { transform: [{ scale: e }], transformOrigin: `${o ? i : t.x}px ${o ? a : t.y}px` }] }, this.props.children)),
+                        { onTouchEnd: this._handleTouchEnd, onTouchStart: this._handleTouchStart, ref: this._setTouchableNode, style: b.fill },
+                        n.createElement(i.y_, { style: a }, ({ zoom: e, zoomCenterX: i, zoomCenterY: a }) => n.createElement(s.Z, { ref: this._ref, style: [b.fill, { transform: [{ scale: e }], transformOrigin: `${o ? i : t.x}px ${o ? a : t.y}px` }] }, this.props.children)),
                     );
                 }
                 componentDidMount() {
@@ -591,13 +591,13 @@
                     const _ = u(t[0], t[1]),
                         c = this._lastDistance ? _ / this._lastDistance : 1,
                         g = p(d - h, r + l, i * c),
-                        f = m(t[0], t[1]),
-                        b = (() => {
+                        b = m(t[0], t[1]),
+                        f = (() => {
                             if (!this._windowDimensions || !o) return s;
                             const { height: e, width: t } = this._windowDimensions;
-                            return { x: (0, a.Z)(s.x - (f.x - o), 0, t), y: (0, a.Z)(s.y - (f.y - n), 0, e) };
+                            return { x: (0, a.Z)(s.x - (b.x - o), 0, t), y: (0, a.Z)(s.y - (b.y - n), 0, e) };
                         })();
-                    (this._lastDistance = _), this.setState({ lastX: f.x, lastY: f.y, zoom: g, zoomCenter: b });
+                    (this._lastDistance = _), this.setState({ lastX: b.x, lastY: b.y, zoom: g, zoomCenter: f });
                 }
                 _handleTapStart(e) {
                     const { touches: t } = e;
@@ -617,8 +617,8 @@
                 }
             }
             g.defaultProps = { maxZoom: 2.5, maxZoomBounce: 0.15, minZoom: 1, minZoomBounce: 0.15, onTap: r.Z, onZoomed: r.Z, resetZoom: !1 };
-            const f = d.default.create((e) => ({ fill: { flex: 1 } })),
-                b = g;
+            const b = d.default.create((e) => ({ fill: { flex: 1 } })),
+                f = g;
         },
         730895: (e, t, o) => {
             "use strict";
@@ -664,4 +664,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserAvatar-6107ac1a.b57e5dda.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserAvatar-6107ac1a.653f754a.js.map

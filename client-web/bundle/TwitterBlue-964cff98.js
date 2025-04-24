@@ -3,7 +3,7 @@
     ["bundle.TwitterBlue-964cff98"],
     {
         248186: (e, t, r) => {
-            r.d(t, { Z: () => x });
+            r.d(t, { Z: () => k });
             var a = r(807896),
                 o = r(202784),
                 n = r(325686),
@@ -25,31 +25,32 @@
                 Z = r(701273),
                 P = r(512923),
                 C = r(534813);
-            const v = m().i4fb96c7,
-                I = m().d8661dd4,
-                _ = ({ activeSubscription: e, content: t, isMobile: r, isTierSwitching: a, premiumPriceConfig: l, selectedInterval: d, selectedProduct: u, setSelectedInterval: p, setSelectedProduct: m, shouldRemoveExtraStep: C }) => {
-                    const _ = l.featuredPromotionDetails,
-                        S = !!_?.promotion,
-                        x = (0, f.Z)();
+            const v = m().ef43d1f1,
+                I = m().f87513e7,
+                _ = m().d8661dd4,
+                S = ({ activeSubscription: e, content: t, isMobile: r, isTierSwitching: a, premiumPriceConfig: l, selectedInterval: d, selectedProduct: u, setSelectedInterval: p, setSelectedProduct: m, shouldRemoveExtraStep: C }) => {
+                    const S = l.featuredPromotionDetails,
+                        x = !!S?.promotion,
+                        k = (0, f.Z)();
                     o.useEffect(() => {
-                        S && x.scribe({ component: "paywall_with_offer", element: _?.promotion.program_id, action: "impression" });
-                    }, [S, _, x]);
-                    const z = i()(P.lO, t.apiContent?.header),
-                        T = (0, c.useHistory)(),
-                        M = t.apiContent?.products?.find((e) => e.product_category === u),
-                        B = parseInt(_?.promotion.ends_at_msec || 0, 10),
-                        [, F] = (0, y.Z)(B),
-                        O = { title: v({ percentage: _?.promotion.metadata.percent_off, premiumTierName: _?.localizedTierName }), subtitle: I, cardTitle: v, cardSubtitle: null, wideImageUrl: "https://abs.twimg.com/images/anniversary-wide-header-v2.png", narrowImageUrl: "https://abs.twimg.com/images/anniversary-mobile-header-v2.png" },
-                        D = !a && F > 0 && S;
-                    return o.createElement(n.Z, { style: k.root }, o.createElement(n.Z, { style: k.shadow }), o.createElement(g.Z.Configure, { TabBar: () => null, headerless: !0, rightControl: null, sideNav: null, withAppBar: !1, withBottomTabBar: !1 }), o.createElement(s.Z, { backButtonType: "close", onClick: () => T.goBack(), style: k.backButton }), z ? o.createElement(b.Z, { content: t, header: z, isMobile: r, isTierSwitching: a, offerContent: O, offerEndsAtMsec: B, renderOfferContent: D }) : null, o.createElement(n.Z, { style: k.container }, o.createElement(Z.Z, { isMobile: r, selectedInterval: d, setSelectedInterval: p }), t.apiContent?.products ? o.createElement(o.Fragment, null, o.createElement(E.Z, { activeSubscription: e, disclaimerRef: t.apiContent.subscribe_button, isTierSwitching: a, premiumPriceConfig: l, products: t.apiContent.products, selectedInterval: d, selectedProduct: u, setSelectedProduct: m, shouldRemoveExtraStep: C }), o.createElement(h.Z, { products: t.apiContent.products })) : null), C ? o.createElement(w.Z, { activeSubscription: e, disclaimerRef: t.apiContent?.subscribe_button, isTierSwitching: a, premiumPriceConfig: l, productName: M?.title, selectedInterval: d, selectedProduct: u }) : null);
+                        x && k.scribe({ component: "paywall_with_offer", element: S?.promotion.program_id, action: "impression" });
+                    }, [x, S, k]);
+                    const T = i()(P.lO, t.apiContent?.header),
+                        M = (0, c.useHistory)(),
+                        B = t.apiContent?.products?.find((e) => e.product_category === u),
+                        F = parseInt(S?.promotion.ends_at_msec || 0, 10),
+                        [, O] = (0, y.Z)(F),
+                        D = { title: "Year" === S?.chargeInterval ? v({ percentage: S.promotion.metadata.percent_off, tierName: S.localizedTierName }) : I({ percentage: S?.promotion.metadata.percent_off, tierName: S?.localizedTierName, numberOfMonths: S?.promotion.metadata.duration_in_interval }), subtitle: _, cardTitle: v, cardSubtitle: null, wideImageUrl: "https://abs.twimg.com/images/anniversary-wide-header-v2.png", narrowImageUrl: "https://abs.twimg.com/images/anniversary-mobile-header-v2.png" },
+                        R = !a && O > 0 && x;
+                    return o.createElement(n.Z, { style: z.root }, o.createElement(n.Z, { style: z.shadow }), o.createElement(g.Z.Configure, { TabBar: () => null, headerless: !0, rightControl: null, sideNav: null, withAppBar: !1, withBottomTabBar: !1 }), o.createElement(s.Z, { backButtonType: "close", onClick: () => M.goBack(), style: z.backButton }), T ? o.createElement(b.Z, { content: t, header: T, isMobile: r, isTierSwitching: a, offerContent: D, offerEndsAtMsec: F, renderOfferContent: R }) : null, o.createElement(n.Z, { style: z.container }, o.createElement(Z.Z, { isMobile: r, selectedInterval: d, setSelectedInterval: p }), t.apiContent?.products ? o.createElement(o.Fragment, null, o.createElement(E.Z, { activeSubscription: e, disclaimerRef: t.apiContent.subscribe_button, isTierSwitching: a, premiumPriceConfig: l, products: t.apiContent.products, selectedInterval: d, selectedProduct: u, setSelectedProduct: m, shouldRemoveExtraStep: C }), o.createElement(h.Z, { products: t.apiContent.products })) : null), C ? o.createElement(w.Z, { activeSubscription: e, disclaimerRef: t.apiContent?.subscribe_button, isTierSwitching: a, premiumPriceConfig: l, productName: B?.title, selectedInterval: d, selectedProduct: u }) : null);
                 },
-                S = (e) => {
+                x = (e) => {
                     const t = (e.content.apiContent?.products || []).map((e) => e.product_category),
                         r = (0, C.Z)(t, { moment: "PremiumSignupPageVisit" });
-                    return !Object.values(r).find((e) => null !== e) ? o.createElement(d.Z, null) : o.createElement(_, (0, a.Z)({}, e, { premiumPriceConfig: r }));
+                    return !Object.values(r).find((e) => null !== e) ? o.createElement(d.Z, null) : o.createElement(S, (0, a.Z)({}, e, { premiumPriceConfig: r }));
                 },
-                x = o.memo(S),
-                k = u.default.create((e) => {
+                k = o.memo(x),
+                z = u.default.create((e) => {
                     const t = "light" === e.paletteName ? "radial-gradient(56.1514% 56.1514% at 49.972% 38.959%, rgb(52 147 239 / 30%) 0%, rgb(255, 255, 255) 100%)" : "dark" === e.paletteName ? "radial-gradient(56.1514% 56.1514% at 49.972% 38.959%, rgba(52, 147, 239, 0.3) 0%, rgb(21 32 44) 100%)" : "radial-gradient(56.15141888052253% 56.15141888052254% at 49.97201160183933% 38.95898881943194%,#273649 0%,rgba(0,0,0,1) 100%)";
                     return { root: { height: "100vh", width: "100%", backgroundColor: e.colors.cellBackground, overflow: "auto" }, shadow: { position: "absolute", top: -300 * e.scaleMultiplier, minHeight: 650 * e.scaleMultiplier, width: "100%", backgroundImage: t }, container: { alignItems: "center", flex: 1, width: "100%", maxWidth: "1280px", marginHorizontal: "auto", paddingHorizontal: e.spaces.space16, marginTop: e.spaces.space24 }, backButton: { position: "absolute", marginStart: "none", top: e.spaces.space16, start: e.spaces.space16, zIndex: 1 } };
                 });
@@ -410,9 +411,9 @@
                         [R, A] = o.useState(!1);
                     r.localContent = E.N3;
                     const W = T ? o.createElement(y.Z, { catalogItemsForProduct: t, content: r, label: D, selectedProduct: _ }) : z ? o.createElement(o.Fragment, null, o.createElement(b.Z, { catalogItems: t, selectedInterval: M, setSelectedInterval: B, variant: "horizontal_green" }), o.createElement(w.Z, { disclaimerRef: r.apiContent?.subscribe_button, price: F, variant: "special" })) : o.createElement(f.Z, { catalogItems: e, catalogItemsForProduct: t, content: r }),
-                        H = !!v && p.k.some((e) => v.includes(e)),
-                        N = T ? (H ? 1e3 * c.default.theme.scaleMultiplier : 950 * c.default.theme.scaleMultiplier) : z ? (H ? 1300 * c.default.theme.scaleMultiplier : 1200 * c.default.theme.scaleMultiplier) : H ? 1200 * c.default.theme.scaleMultiplier : 1100 * c.default.theme.scaleMultiplier;
-                    return o.createElement(n.Z, { testID: "webview_paywall_v2_layout" }, R ? o.createElement(l.Z, { animateMount: !0, duration: "normal", show: R, type: "slide" }, o.createElement(i.Z, { enableMaskForDismiss: !0, onMaskClick: () => A(!1), style: I.sheetOuter, type: "bottom", withMask: !0, withNativeMaskColor: !0, withSlideAnimation: !0 }, o.createElement(n.Z, { style: I.sheet }, o.createElement(m.Z, { catalogItems: e, content: r, selectedProduct: _, setShowAllFeaturesPage: A })))) : null, o.createElement(n.Z, { style: [I.root, I.shadow, { minHeight: N }] }, o.createElement(n.Z, { style: I.containerMargin }, o.createElement(g.Z, { show: "fullPage" !== k.paywallDisplayType, style: I.dismissButton, variant: "darkMode" }), o.createElement(n.Z, { style: I.dynamicHeaderContainer }, o.createElement(p.Z, { content: r, referringPage: v, withoutDescription: !0 })), o.createElement(n.Z, { style: d }, r.apiContent?.products ? o.createElement(u.Z, { content: r, prices: e, productListLayout: "V2", products: r.apiContent.products, referringPage: v, selectedInterval: "Year", selectedProduct: _, selectedProductIndex: S, setSelectedProduct: x, setShowAllFeaturesPage: A, setShowExtraFeatures: () => {}, showExtraFeatures: !1, withExtraFeatures: !1, withOfferCard: !0, withUpsellTier: !1 }) : null))), !R && o.createElement(h.Z, (0, a.Z)({ footerRef: s }, T || z ? {} : { variant: "condensed" }), o.createElement(n.Z, { style: I.footerContainer }, W)));
+                        N = !!v && p.k.some((e) => v.includes(e)),
+                        H = T ? (N ? 1e3 * c.default.theme.scaleMultiplier : 950 * c.default.theme.scaleMultiplier) : z ? (N ? 1300 * c.default.theme.scaleMultiplier : 1200 * c.default.theme.scaleMultiplier) : N ? 1200 * c.default.theme.scaleMultiplier : 1100 * c.default.theme.scaleMultiplier;
+                    return o.createElement(n.Z, { testID: "webview_paywall_v2_layout" }, R ? o.createElement(l.Z, { animateMount: !0, duration: "normal", show: R, type: "slide" }, o.createElement(i.Z, { enableMaskForDismiss: !0, onMaskClick: () => A(!1), style: I.sheetOuter, type: "bottom", withMask: !0, withNativeMaskColor: !0, withSlideAnimation: !0 }, o.createElement(n.Z, { style: I.sheet }, o.createElement(m.Z, { catalogItems: e, content: r, selectedProduct: _, setShowAllFeaturesPage: A })))) : null, o.createElement(n.Z, { style: [I.root, I.shadow, { minHeight: H }] }, o.createElement(n.Z, { style: I.containerMargin }, o.createElement(g.Z, { show: "fullPage" !== k.paywallDisplayType, style: I.dismissButton, variant: "darkMode" }), o.createElement(n.Z, { style: I.dynamicHeaderContainer }, o.createElement(p.Z, { content: r, referringPage: v, withoutDescription: !0 })), o.createElement(n.Z, { style: d }, r.apiContent?.products ? o.createElement(u.Z, { content: r, prices: e, productListLayout: "V2", products: r.apiContent.products, referringPage: v, selectedInterval: "Year", selectedProduct: _, selectedProductIndex: S, setSelectedProduct: x, setShowAllFeaturesPage: A, setShowExtraFeatures: () => {}, showExtraFeatures: !1, withExtraFeatures: !1, withOfferCard: !0, withUpsellTier: !1 }) : null))), !R && o.createElement(h.Z, (0, a.Z)({ footerRef: s }, T || z ? {} : { variant: "condensed" }), o.createElement(n.Z, { style: I.footerContainer }, W)));
                 },
                 v = o.memo(C),
                 I = c.default.create((e) => ({ root: { overflow: "auto" }, shadow: { position: "absolute", width: "100%", height: "100%", backgroundImage: "light" === e.paletteName ? "radial-gradient(70% 36% at 50% 18%, rgb(108 161 150 / 30%) 15%, rgb(255 255 255) 90%)" : "dark" === e.paletteName ? "radial-gradient(50% 35% at 50% 20%, rgba(108,161,150,0.3) 0%, rgb(21,32,44) 100%)" : "radial-gradient(50% 35% at 50% 20%, rgba(108,161,150,0.3) 0%, rgb(0,0,0) 100%)" }, containerMargin: { marginTop: e.spaces.space56 }, pageTitle: { textAlign: "center", marginBottom: e.spaces.space4 }, dismissButton: { position: "absolute", start: e.spaces.space8, width: "fit-content", zIndex: 10 }, header: { alignItems: "center", justifyContent: "center", position: "fixed", zIndex: 1, height: e.spaces.space2, width: e.spaces.space2 }, dynamicHeaderContainer: { alignSelf: "center", maxWidth: "70%" }, offerCard: { marginHorizontal: e.spaces.space16 }, footerContainer: { paddingBottom: e.spaces.space8 }, sheetOuter: { backgroundColor: e.colors.gray0 }, sheet: { paddingTop: e.spaces.space4, paddingBottom: e.spaces.space8 }, pill: { backgroundColor: e.colors.green500, borderRadius: e.borderRadii.xLarge, paddingHorizontal: e.spaces.space8, paddingVertical: e.spaces.space4, position: "absolute", top: "50%", end: "3%", transform: [{ translateY: "-50%" }], zIndex: 1 }, pillText: { color: e.colors.whiteOnColor, fontSize: e.fontSizes.subtext3, fontWeight: "normal" } }));
@@ -750,4 +751,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterBlue-964cff98.ae5636ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterBlue-964cff98.b61db27a.js.map

@@ -6987,6 +6987,12 @@
                 o("ed672bfa", "All upgrades from Basic and Premium, plus ..."),
                 o("db63fa1c", "Select a premium plan"),
                 o("b128c6bc", "Get a verified badge and dozens of other awesome perks and benefits"),
+                o("ef43d1f1", function (e) {
+                    return e.percentage + "% off a year of " + e.tierName;
+                }),
+                o("f87513e7", function (e) {
+                    return e.percentage + "% off " + e.numberOfMonths + " months of " + e.tierName;
+                }),
                 o("acfaf7a0", "Compare tiers & features"),
                 o("e1606e52", "Change your subscription"),
                 o("d2f2b91a", "sign up here"),
@@ -7851,9 +7857,7 @@
                 }),
                 o("ec6e7d9a", "Your account is in read-only mode until the pending tier switch has completed. Please go to Stripe to check your payment to ensure a successful tier switch."),
                 o("b33d1518", "Sync jobs from a supported integration or a custom XML feed"),
-                o("dd2db402", "Step 1: Gather the required information"),
-                o("edb098c2", "Step 2: Contact our support team"),
-                o("c4474460", "Step 2: Email our support team");
+                o("dd2db402", "Step 1: Gather the required information");
             function i(e, t) {
                 for (var a = 0; a < t.length; a++) {
                     var o = t[a];
@@ -7892,7 +7896,9 @@
                     c(e, t)
                 );
             }
-            o("a08da0fa", "What happens next?"),
+            o("edb098c2", "Step 2: Contact our support team"),
+                o("c4474460", "Step 2: Email our support team"),
+                o("a08da0fa", "What happens next?"),
                 o("c127374e", "Send us a message"),
                 o("b2cb2a0c", "Username of your Verified Org account"),
                 o("b8e64002", "Name of your applicant tracking system"),
@@ -8893,10 +8899,10 @@
                 }),
                 o("b1eb72fa", "معذرت، یہ ویڈیو کچھ علاقوں میں محدود ہے، براہ کرم چند سیکنڈ انتظار کریں تاکہ ہم آپ کا مقام حاصل کر سکیں۔ اپنے براؤزر میں مقام کی سیٹنگز فعال کرنا یقینی بنائیں۔"),
                 o("c057680c", "ہم اس براؤزر میں ویڈیو نہیں چلا سکتے۔ براہ کرم کوئی مختلف ویب براؤزر آزمائیں۔"),
-                o("i5dfae6e", "یہ ویڈیو آپ کے مقام پر دستیاب نہیں ہے۔"),
-                o("c2388276", "یہ ویڈیو حذف کر دی گئی ہے۔"),
-                o("d2c96140", "مہمان آڈیو اشارہ");
-            o("f6dc9146", "دوبارہ چلائیں"),
+                o("i5dfae6e", "یہ ویڈیو آپ کے مقام پر دستیاب نہیں ہے۔");
+            o("c2388276", "یہ ویڈیو حذف کر دی گئی ہے۔"),
+                o("d2c96140", "مہمان آڈیو اشارہ"),
+                o("f6dc9146", "دوبارہ چلائیں"),
                 o("d30c74fe", "والیوم"),
                 o("f2d4e6f2", "دوبارہ دیکھیں"),
                 o("e9f1af3a", "مزید جانیں"),
@@ -13245,4 +13251,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ur.2f2ad01a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ur.ac202b2a.js.map

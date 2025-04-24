@@ -6983,6 +6983,12 @@
                 e("ed672bfa", "Kaikki Basicin ja Premiumin päivitykset sekä..."),
                 e("db63fa1c", "Valitse premium-tílaus"),
                 e("b128c6bc", "Hanki varmennetun tilin merkintä ja tusinoittain muita etuja"),
+                e("ef43d1f1", function (a) {
+                    return a.percentage + "% pois " + a.tierName + "-vuositilauksesta";
+                }),
+                e("f87513e7", function (a) {
+                    return a.percentage + "% pois " + a.tierName + "-tilauksesta " + a.numberOfMonths + " kuukaudeksi";
+                }),
                 e("acfaf7a0", "Vertaile tasoja ja ominaisuuksia"),
                 e("e1606e52", "Muuta tilaustasi"),
                 e("d2f2b91a", "rekisteröityä täällä"),
@@ -7847,9 +7853,7 @@
                 }),
                 e("ec6e7d9a", "Tilisi on vain luku -tilassa, kunnes odottava tason vaihto on tehty. Varmista tason vaihdon onnistuminen tarkistamalla Stripe-maksusi."),
                 e("b33d1518", "Synkronoi työpaikat tuetusta integraatiosta tai XML-syötteestä"),
-                e("dd2db402", "Vaihe 1: Kerää vaaditut tiedot"),
-                e("edb098c2", "Vaihe 2: Ota yhteys tukeen"),
-                e("c4474460", "Vaihe 2: Lähetä sähköposti tukitiimillemme");
+                e("dd2db402", "Vaihe 1: Kerää vaaditut tiedot");
             function s(a, t) {
                 for (var i = 0; i < t.length; i++) {
                     var e = t[i];
@@ -7888,7 +7892,9 @@
                     u(a, t)
                 );
             }
-            e("a08da0fa", "Mitä tapahtuu seuraavaksi?"),
+            e("edb098c2", "Vaihe 2: Ota yhteys tukeen"),
+                e("c4474460", "Vaihe 2: Lähetä sähköposti tukitiimillemme"),
+                e("a08da0fa", "Mitä tapahtuu seuraavaksi?"),
                 e("c127374e", "Lähetä meille viesti"),
                 e("b2cb2a0c", "Varmennetut organisaatiot -tilisi käyttäjätunnus"),
                 e("b8e64002", "Työnhakijoiden seurantajärjestelmäsi nimi"),
@@ -8889,10 +8895,10 @@
                 }),
                 e("b1eb72fa", "Valitettavasti tätä videota on estetty näkymästä tietyissä maissa. Odota hetki, niin selvitämme sijaintisi. Varmista, että sijaintiasetukset ovat käytössä selaimessasi."),
                 e("c057680c", "Videon toistaminen ei onnistu tässä selaimessa. Kokeile toista selainta."),
-                e("i5dfae6e", "Tämä video ei ole saatavilla sijainnissasi."),
-                e("c2388276", "Tämä video on poistettu."),
-                e("d2c96140", "Vieraslähettäjän äänen merkki");
-            e("f6dc9146", "UUSINTA"),
+                e("i5dfae6e", "Tämä video ei ole saatavilla sijainnissasi.");
+            e("c2388276", "Tämä video on poistettu."),
+                e("d2c96140", "Vieraslähettäjän äänen merkki"),
+                e("f6dc9146", "UUSINTA"),
                 e("d30c74fe", "Äänenvoimakkuus"),
                 e("f2d4e6f2", "Katso uudelleen"),
                 e("e9f1af3a", "Lue lisää"),
@@ -13250,4 +13256,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.c0aacafa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.03a429da.js.map

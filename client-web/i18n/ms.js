@@ -6982,6 +6982,12 @@
                 i("ed672bfa", "Semua naik taraf daripada Asas dan Premium, serta ..."),
                 i("db63fa1c", "Pilih pelan premium"),
                 i("b128c6bc", "Dapatkan lencana disahkan dan banyak lagi faedah dan manfaat"),
+                i("ef43d1f1", function (a) {
+                    return "Diskaun " + a.percentage + "% untuk setahun " + a.tierName;
+                }),
+                i("f87513e7", function (a) {
+                    return "Diskaun " + a.percentage + "% untuk " + a.numberOfMonths + " bulan " + a.tierName;
+                }),
                 i("acfaf7a0", "Bandingkan peringkat & ciri"),
                 i("e1606e52", "Ubah langganan anda"),
                 i("d2f2b91a", "daftar di sini"),
@@ -7846,9 +7852,7 @@
                 }),
                 i("ec6e7d9a", "Akaun anda berada dalam mod baca sahaja sehingga penukaran tahap yang belum selesai telah selesai. Sila pergi ke Stripe untuk menyemak bayaran anda bagi memastikan penukaran tahap yang berjaya."),
                 i("b33d1518", "Segerakkan pekerjaan daripada penyepaduan yang disokong atau suapan XML tersuai"),
-                i("dd2db402", "Langkah 1: Kumpulkan maklumat yang diperlukan"),
-                i("edb098c2", "Langkah 2: Hubungi pasukan sokongan kami"),
-                i("c4474460", "Langkah 2: Hantar e-mel kepada pasukan sokongan kami");
+                i("dd2db402", "Langkah 1: Kumpulkan maklumat yang diperlukan");
             function u(a, n) {
                 for (var e = 0; e < n.length; e++) {
                     var i = n[e];
@@ -7887,7 +7891,9 @@
                     d(a, n)
                 );
             }
-            i("a08da0fa", "Apakah yang berlaku seterusnya?"),
+            i("edb098c2", "Langkah 2: Hubungi pasukan sokongan kami"),
+                i("c4474460", "Langkah 2: Hantar e-mel kepada pasukan sokongan kami"),
+                i("a08da0fa", "Apakah yang berlaku seterusnya?"),
                 i("c127374e", "Hantar mesej kepada kami"),
                 i("b2cb2a0c", "Nama pengguna akaun Organisasi Disahkan anda"),
                 i("b8e64002", "Nama sistem penjejakan pemohon anda"),
@@ -8888,10 +8894,10 @@
                 }),
                 i("b1eb72fa", "Maaf, video ini disekat di kawasan tertentu, sila tunggu selama beberapa saat sambil kami mendapatkan lokasi anda. Pastikan anda mendayakan tetapan lokasi dalam pelayar anda."),
                 i("c057680c", "Kami tidak dapat memainkan video tersebut dalam pelayar ini. Sila cuba pelayar web yang lain."),
-                i("i5dfae6e", "Video ini tidak tersedia di lokasi anda."),
-                i("c2388276", "Video ini telah dipadamkan."),
-                i("d2c96140", "Penunjuk audio tetamu");
-            i("f6dc9146", "ULANG TAYANG"),
+                i("i5dfae6e", "Video ini tidak tersedia di lokasi anda.");
+            i("c2388276", "Video ini telah dipadamkan."),
+                i("d2c96140", "Penunjuk audio tetamu"),
+                i("f6dc9146", "ULANG TAYANG"),
                 i("d30c74fe", "Kelantangan"),
                 i("f2d4e6f2", "Tonton semula"),
                 i("e9f1af3a", "Ketahui lebih lanjut"),
@@ -13235,4 +13241,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.28ebb9da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.0ddb06ea.js.map

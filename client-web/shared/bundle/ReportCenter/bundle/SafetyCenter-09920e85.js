@@ -18,8 +18,8 @@
                 w = r(767385),
                 h = r(782261);
             const C = i().g5662c95;
-            function f({ conversationTreeMetadata: e, link: t, onBlur: r, onFocus: s, onPress: i, promotedContent: f, quotedTweetTombstoneInfo: E, renderActionMenu: T, renderActionsBar: b, renderCallToAction: v, renderEditCallout: U, renderEducation: S, renderHighlightedUserLabel: y, renderPromotedDetails: _, renderPromotedUserProfileCard: k, renderPromotionStatusBadge: A, renderReplyContext: P, renderRichContent: B, renderStats: L, renderText: Z, renderTimestamp: N, renderTombstone: F, renderTweetHeader: x, renderUserAvatar: I, renderUserFollowIndicator: D, renderUserName: M, socialContext: V, staticLinkConfig: q, testID: H, tweet: W, withBottomLine: R, withTopLine: O, withUnreadStyles: z }) {
-                const { LinkConfigProvider: $, a11yIdList: Y, a11yIds: K, props: j } = (0, p.a)({ conversationTreeMetadata: e, link: t, onBlur: r, onFocus: s, onPress: i, promotedContent: f, quotedTweetTombstoneInfo: E, renderActionMenu: T, renderActionsBar: b, renderCallToAction: v, renderEditCallout: U, renderEducation: S, renderHighlightedUserLabel: y, renderPromotedDetails: _, renderPromotedUserProfileCard: k, renderPromotionStatusBadge: A, renderReplyContext: P, renderRichContent: B, renderTweetHeader: x, renderStats: L, renderText: Z, renderTimestamp: N, renderTombstone: F, renderUserAvatar: I, renderUserFollowIndicator: D, renderUserName: M, socialContext: V, staticLinkConfig: q, testID: H, tweet: W, withBottomLine: R, withTopLine: O, withUnreadStyles: z }),
+            function f({ conversationTreeMetadata: e, link: t, onBlur: r, onFocus: s, onPress: i, promotedContent: f, quotedTweetTombstoneInfo: E, renderActionMenu: b, renderActionsBar: T, renderCallToAction: v, renderEditCallout: U, renderEducation: S, renderHighlightedUserLabel: y, renderPromotedDetails: _, renderPromotedUserProfileCard: k, renderPromotionStatusBadge: A, renderReplyContext: P, renderRichContent: B, renderSocialContext: L, renderStats: Z, renderText: N, renderTimestamp: x, renderTombstone: F, renderUserAvatar: I, renderUserFollowIndicator: D, renderUserName: M, socialContext: V, staticLinkConfig: q, testID: W, tweet: H, withBottomLine: R, withTopLine: O, withUnreadStyles: z }) {
+                const { LinkConfigProvider: $, a11yIdList: Y, a11yIds: K, props: j } = (0, p.a)({ conversationTreeMetadata: e, link: t, onBlur: r, onFocus: s, onPress: i, promotedContent: f, quotedTweetTombstoneInfo: E, renderActionMenu: b, renderActionsBar: T, renderCallToAction: v, renderEditCallout: U, renderEducation: S, renderHighlightedUserLabel: y, renderPromotedDetails: _, renderPromotedUserProfileCard: k, renderPromotionStatusBadge: A, renderReplyContext: P, renderRichContent: B, renderSocialContext: L, renderStats: Z, renderText: N, renderTimestamp: x, renderTombstone: F, renderUserAvatar: I, renderUserFollowIndicator: D, renderUserName: M, socialContext: V, staticLinkConfig: q, testID: W, tweet: H, withBottomLine: R, withTopLine: O, withUnreadStyles: z }),
                     G = h.Z.getOriginalTweet(j.tweet),
                     { permalink: J } = G,
                     Q = G.tombstoneInfo || j.tweet.tombstoneInfo,
@@ -44,7 +44,7 @@
                             actionMenu: j.renderActionMenu(),
                             avatar: j.renderUserAvatar(),
                             footer: j.renderCallToAction(),
-                            header: j.renderTweetHeader({ iconSize: "large", iconStyle: g.socialContextIcon, style: g.socialContext, weight: "bold" }),
+                            header: j.renderSocialContext({ iconSize: "large", iconStyle: g.socialContextIcon, style: g.socialContext, weight: "bold" }),
                             indents: ie,
                             link: j.link ? ae.withAnchorless(j.link) : void 0,
                             onBlur: () => j.onBlur?.(),
@@ -84,7 +84,7 @@
             const g = m.default.create((e) => ({ actionsBar: { marginTop: e.spaces.space12 }, edgeToEdgeTextSpacer: { marginTop: e.spaces.space4 }, replyContext: { marginBottom: e.spaces.space2 }, richContent: { marginTop: e.spaces.space12 }, socialContext: { marginBottom: e.spaces.space4 }, socialContextIcon: { marginBottom: e.spaces.space4 }, promotedDetails: { marginTop: e.spaces.space12 }, promotedDetailsBelowHeader: { marginBottom: e.spaces.space8 }, promotedUserCard: { marginTop: e.spaces.space8 }, tombstone: { marginVertical: e.spaces.space4 }, tweetEditCallout: { marginTop: e.spaces.space8 } }));
         },
         266704: (e, t, r) => {
-            r.d(t, { Z: () => T });
+            r.d(t, { Z: () => b });
             var o = r(202784),
                 n = r(325686),
                 s = r(731708),
@@ -169,17 +169,17 @@
             var f = r(807896);
             var g = r(674132);
             const E = r.n(g)().ef633578;
-            class T extends o.PureComponent {
+            class b extends o.PureComponent {
                 render() {
                     return o.createElement(h, this.props);
                 }
             }
-            (T.Promoted = (e) => {
+            (b.Promoted = (e) => {
                 const { followButton: t, isUserProtected: r, isUserVerified: n, knownFollowers: s, onAvatarClick: i, onScreenNameClick: a, promotedContent: l, userDescription: d, userId: c, userName: u, userScreenName: m, ...p } = e,
                     w = { protected: !1, isUserStatsWithLink: !1, verified: !1, profile_image_url_https: "", entities: {}, followers_count: 0, friends_count: 0, id_str: "", followed_by: !1 };
                 return o.createElement(h, (0, f.Z)({}, p, { followButton: t, isAllowedToViewOptions: { avatar: !1, badges: !0, description: !0, followButton: !0, followIndicator: !0, followersYouKnow: !0, fullName: !0, label: !0, stats: !1, subscriptionsCount: !1 }, isLoggedIn: !0, isUserProtected: r, isUserStatsWithLink: w.isUserStatsWithLink, isUserVerified: n, knownFollowers: s, onAvatarClick: i, onScreenNameClick: a, promotedContent: l, userAvatarUri: w.profile_image_url_https, userDescription: d, userEntities: w.entities, userFollowersCount: w.followers_count, userFriendsCount: w.friends_count, userId: c, userName: u, userScreenName: m, userWithFollowsYou: w.followed_by, userWithheldDescription: void 0, userWithheldEntities: void 0, withUserAvatar: !1 }));
             }),
-                (T.Suspended = function ({ onAvatarClick: e, onScreenNameClick: t, userScreenName: r }) {
+                (b.Suspended = function ({ onAvatarClick: e, onScreenNameClick: t, userScreenName: r }) {
                     const n = { protected: !1, isUserStatsWithLink: !1, verified: !1, profile_image_url_https: "", description: "", entities: {}, followers_count: 0, friends_count: 0, id_str: "", followed_by: !1 };
                     return o.createElement(h, { errorMessage: E, isAllowedToViewOptions: { avatar: !1, badges: !0, description: !1, followButton: !1, followIndicator: !0, followersYouKnow: !1, fullName: !1, label: !1, stats: !1, subscriptionsCount: !1 }, isLoggedIn: !1, isUserProtected: n.protected, isUserStatsWithLink: n.isUserStatsWithLink, isUserVerified: n.verified, knownFollowers: { avatarUrls: [], names: [] }, onAvatarClick: e, onScreenNameClick: t, userAvatarUri: n.profile_image_url_https, userDescription: n.description, userEntities: n.entities, userFollowersCount: n.followers_count, userFriendsCount: n.friends_count, userId: n.id_str, userName: r, userScreenName: r, userWithFollowsYou: n.followed_by, userWithheldDescription: void 0, userWithheldEntities: void 0 });
                 });
@@ -202,4 +202,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReportCenter~bundle.SafetyCenter-09920e85.69b0bcca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReportCenter~bundle.SafetyCenter-09920e85.82eb2d3a.js.map

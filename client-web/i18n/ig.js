@@ -6986,6 +6986,12 @@
                 t("ed672bfa", "All upgrades from Basic and Premium, plus ..."),
                 t("db63fa1c", "Select a premium plan"),
                 t("b128c6bc", "Get a verified badge and dozens of other awesome perks and benefits"),
+                t("ef43d1f1", function (e) {
+                    return e.percentage + "% off a year of " + e.tierName;
+                }),
+                t("f87513e7", function (e) {
+                    return e.percentage + "% off " + e.numberOfMonths + " months of " + e.tierName;
+                }),
                 t("acfaf7a0", "Compare tiers & features"),
                 t("e1606e52", "Change your subscription"),
                 t("d2f2b91a", "sign up here"),
@@ -7850,9 +7856,7 @@
                 }),
                 t("ec6e7d9a", "Your account is in read-only mode until the pending tier switch has completed. Please go to Stripe to check your payment to ensure a successful tier switch."),
                 t("b33d1518", "Sync jobs from a supported integration or a custom XML feed"),
-                t("dd2db402", "Step 1: Gather the required information"),
-                t("edb098c2", "Step 2: Contact our support team"),
-                t("c4474460", "Step 2: Email our support team");
+                t("dd2db402", "Step 1: Gather the required information");
             function r(e, a) {
                 for (var n = 0; n < a.length; n++) {
                     var t = a[n];
@@ -7891,7 +7895,9 @@
                     c(e, a)
                 );
             }
-            t("a08da0fa", "What happens next?"),
+            t("edb098c2", "Step 2: Contact our support team"),
+                t("c4474460", "Step 2: Email our support team"),
+                t("a08da0fa", "What happens next?"),
                 t("c127374e", "Send us a message"),
                 t("b2cb2a0c", "Username of your Verified Org account"),
                 t("b8e64002", "Name of your applicant tracking system"),
@@ -8892,10 +8898,10 @@
                 }),
                 t("b1eb72fa", "Sorry, this video is restricted in certain areas, please wait a few seconds as we acquire your location. Make sure to enable location settings in your browser."),
                 t("c057680c", "We cannot play the video in this browser. Please try a different web browser."),
-                t("i5dfae6e", "This video is not available in your location."),
-                t("c2388276", "This video has been deleted."),
-                t("d2c96140", "Guest audio indicator");
-            t("f6dc9146", "TINYEGHARỊA"),
+                t("i5dfae6e", "This video is not available in your location.");
+            t("c2388276", "This video has been deleted."),
+                t("d2c96140", "Guest audio indicator"),
+                t("f6dc9146", "TINYEGHARỊA"),
                 t("d30c74fe", "Volume"),
                 t("f2d4e6f2", "Watch again"),
                 t("e9f1af3a", "Chọpụtakwuo"),
@@ -13252,4 +13258,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ig.c60055ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ig.90db6d7a.js.map

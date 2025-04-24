@@ -6986,6 +6986,12 @@
                 o("ed672bfa", "All upgrades from Basic and Premium, plus ..."),
                 o("db63fa1c", "Select a premium plan"),
                 o("b128c6bc", "Get a verified badge and dozens of other awesome perks and benefits"),
+                o("ef43d1f1", function (e) {
+                    return e.percentage + "% off a year of " + e.tierName;
+                }),
+                o("f87513e7", function (e) {
+                    return e.percentage + "% off " + e.numberOfMonths + " months of " + e.tierName;
+                }),
                 o("acfaf7a0", "Compare tiers & features"),
                 o("e1606e52", "Change your subscription"),
                 o("d2f2b91a", "sign up here"),
@@ -7850,9 +7856,7 @@
                 }),
                 o("ec6e7d9a", "Your account is in read-only mode until the pending tier switch has completed. Please go to Stripe to check your payment to ensure a successful tier switch."),
                 o("b33d1518", "Sync jobs from a supported integration or a custom XML feed"),
-                o("dd2db402", "Step 1: Gather the required information"),
-                o("edb098c2", "Step 2: Contact our support team"),
-                o("c4474460", "Step 2: Email our support team");
+                o("dd2db402", "Step 1: Gather the required information");
             function n(e, a) {
                 for (var t = 0; t < a.length; t++) {
                     var o = a[t];
@@ -7891,7 +7895,9 @@
                     u(e, a)
                 );
             }
-            o("a08da0fa", "What happens next?"),
+            o("edb098c2", "Step 2: Contact our support team"),
+                o("c4474460", "Step 2: Email our support team"),
+                o("a08da0fa", "What happens next?"),
                 o("c127374e", "Send us a message"),
                 o("b2cb2a0c", "Username of your Verified Org account"),
                 o("b8e64002", "Name of your applicant tracking system"),
@@ -8892,10 +8898,10 @@
                 }),
                 o("b1eb72fa", "Bideoa mugatuta dago eremu batzuetan. Itxaron segundo pare bat zure kokapena lortzen dugun bitartean. Ziurtatu arakatzailearen kokapen ezarpenak gaituta daudela"),
                 o("c057680c", "Ezin dugu arakatzaile honetan erreproduzitu bideoa. Saiatu beste web arakatzaile batekin."),
-                o("i5dfae6e", "Bideo hau ez dago eskuragarri zure kokapenean."),
-                o("c2388276", "Bideo hau ezabatu da."),
-                o("d2c96140", "Gonbidatuen audioaren adierazlea");
-            o("f6dc9146", "ERREPIKATU"),
+                o("i5dfae6e", "Bideo hau ez dago eskuragarri zure kokapenean.");
+            o("c2388276", "Bideo hau ezabatu da."),
+                o("d2c96140", "Gonbidatuen audioaren adierazlea"),
+                o("f6dc9146", "ERREPIKATU"),
                 o("d30c74fe", "Bolumena"),
                 o("f2d4e6f2", "Ikusi berriro"),
                 o("e9f1af3a", "Lortu informazio gehiago"),
@@ -13243,4 +13249,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/eu.801f40aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/eu.891d3cea.js.map

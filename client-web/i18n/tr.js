@@ -6982,6 +6982,12 @@
                 n("ed672bfa", "Basic ve Premium planından yapılan tüm yükseltmelere ek olarak..."),
                 n("db63fa1c", "Bir Premium planı seç"),
                 n("b128c6bc", "Onaylı hesap rozeti ve düzinelerce başka harika avantaj ve fayda elde et"),
+                n("ef43d1f1", function (e) {
+                    return e.tierName + " kademesinde yıllık %" + e.percentage + " indirim";
+                }),
+                n("f87513e7", function (e) {
+                    return e.tierName + " kademesinde " + e.numberOfMonths + " ay için %" + e.percentage + " indirim";
+                }),
                 n("acfaf7a0", "Katmanları ve özellikleri karşılaştır"),
                 n("e1606e52", "Aboneliğini değiştir"),
                 n("d2f2b91a", "buradan kaydolabilir"),
@@ -7846,9 +7852,7 @@
                 }),
                 n("ec6e7d9a", "Hesabın, beklemedeki kademe geçişi tamamlanana kadar salt okunur modda olacak. Başarılı bir kademe geçişi için lütfen Stripe'a giderek ödemelerinizi kontrol edin."),
                 n("b33d1518", "İş ilanlarını desteklenen bir entegrasyondan veya özel XML akışından senkronize et"),
-                n("dd2db402", "1. adım: Gerekli bilgileri topla"),
-                n("edb098c2", "2. adım: Destek ekibimizle iletişime geç"),
-                n("c4474460", "2. adım: Ekibimize e-posta gönder");
+                n("dd2db402", "1. adım: Gerekli bilgileri topla");
             function l(e, a) {
                 for (var i = 0; i < a.length; i++) {
                     var n = a[i];
@@ -7887,7 +7891,9 @@
                     t(e, a)
                 );
             }
-            n("a08da0fa", "Bundan sonra ne olacak?"),
+            n("edb098c2", "2. adım: Destek ekibimizle iletişime geç"),
+                n("c4474460", "2. adım: Ekibimize e-posta gönder"),
+                n("a08da0fa", "Bundan sonra ne olacak?"),
                 n("c127374e", "Bize mesaj gönder"),
                 n("b2cb2a0c", "Onaylı Kuruluşlar hesabının kullanıcı adı"),
                 n("b8e64002", "Başvuru takip sisteminin adı"),
@@ -8888,10 +8894,10 @@
                 }),
                 n("b1eb72fa", "Üzgünüz, bu video yalnızca belirli bölgelerde oynatılabilir, konum bilgilerini alana kadar lütfen birkaç saniye bekle. Tarayıcında konum ayarlarını etkinleştirdiğinden emin ol."),
                 n("c057680c", "Videoyu bu tarayıcıda oynatamıyoruz. Lütfen farklı bir web tarayıcı dene."),
-                n("i5dfae6e", "Bu video bulunduğun konumda izlenemiyor."),
-                n("c2388276", "Bu video silinmiş."),
-                n("d2c96140", "Misafir sesi göstergesi");
-            n("f6dc9146", "YENİDEN OYNAT"),
+                n("i5dfae6e", "Bu video bulunduğun konumda izlenemiyor.");
+            n("c2388276", "Bu video silinmiş."),
+                n("d2c96140", "Misafir sesi göstergesi"),
+                n("f6dc9146", "YENİDEN OYNAT"),
                 n("d30c74fe", "Ses"),
                 n("f2d4e6f2", "Tekrar izle"),
                 n("e9f1af3a", "Daha fazlasını keşfet"),
@@ -13245,4 +13251,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/tr.3b51685a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/tr.975a0bba.js.map

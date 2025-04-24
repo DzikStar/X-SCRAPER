@@ -6982,6 +6982,12 @@
                 s("ed672bfa", "Az Alap és Premium csomag összes frissítése, plusz..."),
                 s("db63fa1c", "Válassz Premium csomagot!"),
                 s("b128c6bc", "Ellenőrzött jelvényt kaphatsz tucatnyi elképesztő előnnyel"),
+                s("ef43d1f1", function (e) {
+                    return e.percentage + "% kedvezmény a(z) " + e.tierName + " csomag árából egy évre";
+                }),
+                s("f87513e7", function (e) {
+                    return e.percentage + "% kedvezmény " + e.numberOfMonths + " hónapra a(z) " + e.tierName + " csomag árából";
+                }),
                 s("acfaf7a0", "Csomagok és szolgáltatások összehasonlítása"),
                 s("e1606e52", "Az előfizetésed módosítása"),
                 s("d2f2b91a", "itt regisztrálhatnak"),
@@ -7846,9 +7852,7 @@
                 }),
                 s("ec6e7d9a", "A fiókod csak olvasás módban van mindaddig, amíg a függőben lévő csomagmódosítás érvénybe nem lép. A sikeres csomagmódosítás érdekében ellenőrizd a fizetésedet a Stripe-on."),
                 s("b33d1518", "Szinkronizáld az állásajánlatokat egy támogatott integrációból vagy egy egyedi XML-feedből"),
-                s("dd2db402", "1. lépés: Gyűjtsd össze a szükséges információkat"),
-                s("edb098c2", "2. lépés: Vedd fel a kapcsolatot támogatási csapatunkkal"),
-                s("c4474460", "2. lépés: Küldj e-mailt a támogatási csapatunknak");
+                s("dd2db402", "1. lépés: Gyűjtsd össze a szükséges információkat");
             function n(e, t) {
                 for (var a = 0; a < t.length; a++) {
                     var s = t[a];
@@ -7887,7 +7891,9 @@
                     z(e, t)
                 );
             }
-            s("a08da0fa", "Mi a következő lépés?"),
+            s("edb098c2", "2. lépés: Vedd fel a kapcsolatot támogatási csapatunkkal"),
+                s("c4474460", "2. lépés: Küldj e-mailt a támogatási csapatunknak"),
+                s("a08da0fa", "Mi a következő lépés?"),
                 s("c127374e", "Küldj nekünk egy üzenetet"),
                 s("b2cb2a0c", "Az Ellenőrzött szervezeti fiókod felhasználóneve"),
                 s("b8e64002", "A pályázói nyomkövetési rendszered neve"),
@@ -8888,10 +8894,10 @@
                 }),
                 s("b1eb72fa", "Sajnáljuk, ez a videó korlátozott egyes területeken. Kérünk, várj pár másodpercet, amíg lekérjük a tartózkodási helyed. Engedélyezd a helyszolgáltatásokat a böngésződben!"),
                 s("c057680c", "A videó nem játszható le ebben a böngészőben. Próbálkozz másik böngészővel!"),
-                s("i5dfae6e", "Ez a videó nem érhető el a tartózkodási helyeden."),
-                s("c2388276", "Ez a videó törlésre került."),
-                s("d2c96140", "Vendég hangjelzője");
-            s("f6dc9146", "VISSZAJÁTSZÁS"),
+                s("i5dfae6e", "Ez a videó nem érhető el a tartózkodási helyeden.");
+            s("c2388276", "Ez a videó törlésre került."),
+                s("d2c96140", "Vendég hangjelzője"),
+                s("f6dc9146", "VISSZAJÁTSZÁS"),
                 s("d30c74fe", "Hangerő"),
                 s("f2d4e6f2", "Megtekintés újra"),
                 s("e9f1af3a", "Tudj meg többet!"),
@@ -13245,4 +13251,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hu.532111fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hu.8685a12a.js.map

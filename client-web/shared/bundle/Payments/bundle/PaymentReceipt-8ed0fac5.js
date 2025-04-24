@@ -302,7 +302,7 @@
                 u = s;
         },
         727384: (e, t, n) => {
-            n.d(t, { BC: () => ge, BR: () => pe, Bj: () => rt, Bl: () => be, DK: () => ye, DO: () => He, Dc: () => q, EQ: () => De, FW: () => Xe, Fs: () => Ve, GU: () => J, Gl: () => Pe, Gs: () => $e, H_: () => je, Ix: () => at, J$: () => ze, M9: () => ue, MO: () => Ge, Oc: () => Oe, Ou: () => ve, Q1: () => se, QE: () => Se, Qu: () => et, Se: () => Ee, So: () => qe, T3: () => he, Tp: () => me, UM: () => fe, UV: () => Je, XT: () => we, _T: () => xe, aY: () => Ke, ab: () => Be, bI: () => We, dN: () => L, gh: () => Qe, gx: () => Fe, i7: () => oe, iv: () => Me, jm: () => Le, lD: () => Y, lw: () => G, nV: () => M, p2: () => $, pQ: () => B, qK: () => F, qQ: () => _e, qU: () => Te, qc: () => nt, uG: () => Ye, uN: () => Ne, ve: () => Ie, vw: () => K, wu: () => tt, zK: () => Ae, zx: () => H });
+            n.d(t, { BC: () => ge, BR: () => pe, Bj: () => at, Bl: () => we, DK: () => ye, DO: () => Ge, Dc: () => q, EQ: () => Te, FW: () => He, Fs: () => We, GU: () => J, Gl: () => xe, Gs: () => Ve, H_: () => Ee, Ix: () => nt, J$: () => je, M9: () => ue, MO: () => Fe, Oc: () => ze, Ou: () => Re, Q1: () => se, QE: () => Ze, Qu: () => Je, Se: () => Ue, So: () => Ke, T3: () => he, Tp: () => me, UM: () => fe, UV: () => Ye, _T: () => be, aY: () => $e, ab: () => Me, bI: () => Oe, dN: () => L, gh: () => Xe, gx: () => Be, i7: () => oe, iv: () => Le, jm: () => qe, lD: () => Y, lw: () => G, nV: () => M, p2: () => $, pQ: () => B, qK: () => F, qQ: () => Ie, qU: () => ve, qc: () => tt, uG: () => Qe, uN: () => Se, ve: () => Ne, vw: () => K, wu: () => et, zK: () => De, zx: () => H });
             n(543673), n(240753), n(128399);
             var a = n(617374),
                 r = n.n(a),
@@ -495,155 +495,152 @@
             function ye(e) {
                 return fe(e) || pe(e) || ge({ status: e.status });
             }
-            function we(e) {
-                return ye(e) || he(e) || me(e);
-            }
-            function be({ status: e }) {
+            function we({ status: e }) {
                 return [C.g.Cancelled, C.g.Failed, C.g.Expired, C.g.RejectedByRecipient, C.g.RequestRejected].includes(e);
             }
-            function xe({ status: e }) {
+            function be({ status: e }) {
                 return [C.g.Settled, C.g.SoftSettled, C.g.AuthorizationClosed].includes(e);
             }
-            function Pe({ status: e }) {
-                return be({ status: e });
+            function xe({ status: e }) {
+                return we({ status: e });
             }
-            const Ce = (e) => (e ? `data:image/png;base64,${e}` : ""),
-                Re = Object.freeze({ [g.U.AmericanExpress]: "https://abs.twimg.com/responsive-web/client-web/payment-method-amex.b2cd046a.svg", [g.U.Mastercard]: "https://abs.twimg.com/responsive-web/client-web/payment-method-mastercard.f126316a.svg", [g.U.Visa]: "https://abs.twimg.com/responsive-web/client-web/payment-method-visa.c768170a.svg" }),
-                ve = (e) => {
+            const Pe = (e) => (e ? `data:image/png;base64,${e}` : ""),
+                Ce = Object.freeze({ [g.U.AmericanExpress]: "https://abs.twimg.com/responsive-web/client-web/payment-method-amex.b2cd046a.svg", [g.U.Mastercard]: "https://abs.twimg.com/responsive-web/client-web/payment-method-mastercard.f126316a.svg", [g.U.Visa]: "https://abs.twimg.com/responsive-web/client-web/payment-method-visa.c768170a.svg" }),
+                Re = (e) => {
                     if (!e) return null;
                     const { core: t, rest_id: n } = e,
                         a = t?.details ?? {},
                         { account_number_mask: r, bank_account_type: i, bank_name: s, card_brand: c, card_number_mask: o, card_type: d, issued_card_type: l, logo: u, status: p } = a,
                         m = c ? ae[c] : "",
-                        g = c ? Re[c] : "";
-                    return i && r ? { accountName: { name: `${ee[i]} (...${r})` }, avatar: { shape: "square", uri: Ce(u) }, id: n, accountType: s, type: U.dX.bank, label: ie({ status: p }) } : d && o ? { accountName: { name: `${ne[d]} (...${o})` }, avatar: { shape: "square", uri: g }, id: n, accountType: s ?? m, type: U.dX.card, label: ie({ status: p }), issuedCardAccountName: !l || (l !== w.W.IssuedCardTypePhysical && l !== w.W.IssuedCardTypeVirtual) ? void 0 : `${te[l]} (...${o})` } : null;
+                        g = c ? Ce[c] : "";
+                    return i && r ? { accountName: { name: `${ee[i]} (...${r})` }, avatar: { shape: "square", uri: Pe(u) }, id: n, accountType: s, type: U.dX.bank, label: ie({ status: p }) } : d && o ? { accountName: { name: `${ne[d]} (...${o})` }, avatar: { shape: "square", uri: g }, id: n, accountType: s ?? m, type: U.dX.card, label: ie({ status: p }), issuedCardAccountName: !l || (l !== w.W.IssuedCardTypePhysical && l !== w.W.IssuedCardTypeVirtual) ? void 0 : `${te[l]} (...${o})` } : null;
                 },
-                Te = ({ productCode: e, transactionType: t }) => e === P.O.Issuing && (t === R.x.Payment || t === R.x.Refund || t === R.x.AtmWithdrawal),
-                De = ({ productCode: e, transactionType: t }) => e === P.O.Banking && (t === R.x.Deposit || t === R.x.Withdraw),
-                Ae = ({ amountType: e, merchantDetails: t, productCode: n, transactionType: a }) => {
+                ve = ({ productCode: e, transactionType: t }) => e === P.O.Issuing && (t === R.x.Payment || t === R.x.Refund || t === R.x.AtmWithdrawal),
+                Te = ({ productCode: e, transactionType: t }) => e === P.O.Banking && (t === R.x.Deposit || t === R.x.Withdraw),
+                De = ({ amountType: e, merchantDetails: t, productCode: n, transactionType: a }) => {
                     const r = a === R.x.AtmWithdrawal,
-                        i = Te({ productCode: n, transactionType: a });
-                    return (De({ productCode: n, transactionType: a }) || i) && t ? { ...t, type: r ? U.wC.atm : i ? U.wC.card : e === U.NU.credit ? U.wC.bankDeposit : U.wC.bankWithdraw } : void 0;
+                        i = ve({ productCode: n, transactionType: a });
+                    return (Te({ productCode: n, transactionType: a }) || i) && t ? { ...t, type: r ? U.wC.atm : i ? U.wC.card : e === U.NU.credit ? U.wC.bankDeposit : U.wC.bankWithdraw } : void 0;
                 },
-                ke = ({ handleEmptyList: e, key: t, store: n }) => {
+                Ae = ({ handleEmptyList: e, key: t, store: n }) => {
                     const a = n.getRoot(),
                         r = t ? a.getLinkedRecords(t) : null;
                     r && r.length > 0 ? r.forEach((e) => e?.invalidateRecord?.()) : e && a.invalidateRecord();
                 },
-                Ze = (e, t) => {
+                ke = (e, t) => {
                     const n = e.getRoot(),
                         a = t && n.getLinkedRecord(t);
                     a && a.invalidateRecord();
                 },
-                Se = (e) => {
+                Ze = (e) => {
                     const t = (0, c.getStorageKey)(k.Z.fragment.selections[0], { filter: b.U.PaymentMethodFilterFunding, withIssuedSpend: !1 });
-                    ke({ store: e, key: t, handleEmptyList: !0 });
+                    Ae({ store: e, key: t, handleEmptyList: !0 });
                 },
-                Ne = (e) => {
+                Se = (e) => {
                     s()(e, (e) => {
                         ((e) => {
                             const t = (0, c.getStorageKey)(k.Z.fragment.selections[0], { filter: b.U.PaymentMethodFilterSpending, withIssuedSpend: !0 });
-                            ke({ store: e, key: t, handleEmptyList: !0 });
+                            Ae({ store: e, key: t, handleEmptyList: !0 });
                         })(e);
                     });
                 },
-                Ie = (e) => {
+                Ne = (e) => {
                     s()(e, (e) => {
-                        Se(e);
+                        Ze(e);
                     });
                 },
-                _e = (e) => {
+                Ie = (e) => {
                     const t = (0, c.getStorageKey)(S.Z.fragment.selections[0], { search_filter_id: U.$W });
-                    Ze(e, t);
+                    ke(e, t);
                     const n = (0, c.getStorageKey)(v.Z.fragment.selections[0], {});
-                    ke({ store: e, key: n });
+                    Ae({ store: e, key: n });
                     const a = (0, c.getStorageKey)(T.Z.fragment.selections[0], {});
-                    Ze(e, a);
+                    ke(e, a);
                 },
-                Ue = (e) => {
+                _e = (e) => {
                     const t = (0, c.getStorageKey)(A.Z.fragment.selections[0], {});
-                    ke({ store: e, key: t });
+                    Ae({ store: e, key: t });
                 },
-                Ee = (e, t) => {
+                Ue = (e, t) => {
                     s()(e, (e) => {
                         t &&
                             ((e, t) => {
                                 const n = e.get(t);
                                 n && n.invalidateRecord();
                             })(e, t),
-                            _e(e),
-                            Ue(e);
+                            Ie(e),
+                            _e(e);
                     });
                 },
-                je = (e, { reasonCode: t, recordId: n, status: a }) => {
-                    if ((oe({ status: a }) || (_e(e), Ue(e)), n && a)) {
+                Ee = (e, { reasonCode: t, recordId: n, status: a }) => {
+                    if ((oe({ status: a }) || (Ie(e), _e(e)), n && a)) {
                         const r = e.get(n);
                         r && (r.setValue(a, "transaction_status"), r.setValue(t, "reason_code"));
                     }
                 },
-                ze = (e) => {
+                je = (e) => {
                     s()(e, (e) => {
                         ((e) => {
                             const t = (0, c.getStorageKey)(D.Z.fragment.selections[0], {});
-                            Ze(e, t);
+                            ke(e, t);
                         })(e),
-                            _e(e),
-                            Ue(e);
+                            Ie(e),
+                            _e(e);
                     });
                 },
-                Oe = (e) => {
+                ze = (e) => {
                     const t = (0, c.getStorageKey)(Z.Z.fragment.selections[0], {});
-                    Ze(e, t);
+                    ke(e, t);
                 },
-                We = () => p.ZP.isMobileOS(),
-                Ve = ({ permission: e, permissions: t }) => !!t?.includes(e),
-                $e = (e) => Ve({ permissions: e, permission: h.d.VerifyIdentity }),
-                Ke = (e) => Ve({ permissions: e, permission: h.d.UpdateCustomerPreferences }),
-                qe = ({ roles: e }) => !!e?.includes(y.N.Ineligible),
-                Le = ({ roles: e }) => !!e?.includes(y.N.PendingBalanceAutoClaim),
-                Me = ({ roles: e }) => !!e?.includes(y.N.RestrictedGeolocationUsState) || !!e?.includes(y.N.RestrictedOnboardingUsState),
-                Be = ({ roles: e }) => !!e?.includes(y.N.KycFailed) || !!e?.includes(y.N.PendingReview),
-                Fe = ({ roles: e }) => !!e?.includes(y.N.PendingKycUnverifiedLimitExceeded),
-                Ge = ({ permissions: e }) => Ve({ permissions: e, permission: h.d.RequestTransfer }),
-                He = ({ actionPermission: e, permissions: t, roles: n }) => ($e(t) && !Ve({ permissions: t, permission: e }) ? Xe({ roles: n }) : null),
-                Xe = ({ roles: e }) => {
+                Oe = () => p.ZP.isMobileOS(),
+                We = ({ permission: e, permissions: t }) => !!t?.includes(e),
+                Ve = (e) => We({ permissions: e, permission: h.d.VerifyIdentity }),
+                $e = (e) => We({ permissions: e, permission: h.d.UpdateCustomerPreferences }),
+                Ke = ({ roles: e }) => !!e?.includes(y.N.Ineligible),
+                qe = ({ roles: e }) => !!e?.includes(y.N.PendingBalanceAutoClaim),
+                Le = ({ roles: e }) => !!e?.includes(y.N.RestrictedGeolocationUsState) || !!e?.includes(y.N.RestrictedOnboardingUsState),
+                Me = ({ roles: e }) => !!e?.includes(y.N.KycFailed) || !!e?.includes(y.N.PendingReview),
+                Be = ({ roles: e }) => !!e?.includes(y.N.PendingKycUnverifiedLimitExceeded),
+                Fe = ({ permissions: e }) => We({ permissions: e, permission: h.d.RequestTransfer }),
+                Ge = ({ actionPermission: e, permissions: t, roles: n }) => (Ve(t) && !We({ permissions: t, permission: e }) ? He({ roles: n }) : null),
+                He = ({ roles: e }) => {
                     const t = e?.includes(y.N.PendingSelfieVerification) || e?.includes(y.N.KycDocumentsVerified),
                         n = e?.includes(y.N.KycPendingDocumentUpload) || e?.includes(y.N.KycVerified);
                     return t ? I.AU.selfie.verifyIdentityPath : n ? I.AU.tier3.verifyIdentityPath : I.AU.tier2.verifyIdentityPath;
                 },
-                Qe = () => {
+                Xe = () => {
                     if (p.ZP.isTwitterApp()) return window?.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
                     return { [o.default.ThemePaletteNames.light]: "light", [o.default.ThemePaletteNames.dark]: "dim", [o.default.ThemePaletteNames.darker]: "dark", [o.default.ThemePaletteNames.business]: "dark" }[d.default.theme.paletteName] || "light";
                 },
-                Ye = ({ basePath: e, moreSearchParams: t, paymentsOrigin: n, providerToken: a, theme: r, xPaymentsSession: i }) => {
+                Qe = ({ basePath: e, moreSearchParams: t, paymentsOrigin: n, providerToken: a, theme: r, xPaymentsSession: i }) => {
                     if (!n || !i || !a) return null;
                     const s = new URL(`${n}${e}`);
                     if ((s.searchParams.set("sessionId", i), s.searchParams.set("providerToken", a), s.searchParams.set("theme", r), t)) for (const [e, n] of t) s.searchParams.set(e, n);
                     return s.href;
                 },
-                Je = ({ amount: e, balanceAmountMicro: t }) => {
+                Ye = ({ amount: e, balanceAmountMicro: t }) => {
                     const n = parseFloat(t);
                     return parseFloat(e) <= L({ amount: n });
                 },
-                et = (e) => new Date(e.year, e.month - 1, e.day),
-                tt = ({ challengeId: e, status: t }) => (oe({ status: t }) && e ? I.vw : null),
-                nt = ({ challengeInitiator: e, closePath: t, environment: n, history: a }) => {
-                    switch ((ze(n), e)) {
+                Je = (e) => new Date(e.year, e.month - 1, e.day),
+                et = ({ challengeId: e, status: t }) => (oe({ status: t }) && e ? I.vw : null),
+                tt = ({ challengeInitiator: e, closePath: t, environment: n, history: a }) => {
+                    switch ((je(n), e)) {
                         case I.kW.auth:
                             _.Z.closeChallenge();
                             break;
                         case I.kW.preference:
                             ((e) => {
                                 s()(e, (e) => {
-                                    Oe(e);
+                                    ze(e);
                                 });
                             })(n);
                     }
                     t ? a.replace(t) : a.goBack();
                 },
-                at = ({ challengeInitiator: e }) => (e === I.kW.forgotPin ? I.jR : I.vw),
-                rt = ({ apy: e }) => `${parseInt(e, 10) / 100}% APY`;
+                nt = ({ challengeInitiator: e }) => (e === I.kW.forgotPin ? I.jR : I.vw),
+                at = ({ apy: e }) => `${parseInt(e, 10) / 100}% APY`;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Payments~bundle.PaymentReceipt-8ed0fac5.de57c22a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Payments~bundle.PaymentReceipt-8ed0fac5.b5cf2c3a.js.map
