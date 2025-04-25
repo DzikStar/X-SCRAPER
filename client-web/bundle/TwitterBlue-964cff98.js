@@ -3,7 +3,7 @@
     ["bundle.TwitterBlue-964cff98"],
     {
         248186: (e, t, r) => {
-            r.d(t, { Z: () => x });
+            r.d(t, { Z: () => k });
             var a = r(807896),
                 o = r(202784),
                 n = r(325686),
@@ -24,32 +24,35 @@
                 E = r(778e3),
                 Z = r(701273),
                 P = r(512923),
-                C = r(534813);
-            const v = m().i4fb96c7,
-                I = m().d8661dd4,
-                _ = ({ activeSubscription: e, content: t, isMobile: r, isTierSwitching: a, premiumPriceConfig: l, selectedInterval: d, selectedProduct: u, setSelectedInterval: p, setSelectedProduct: m, shouldRemoveExtraStep: C }) => {
-                    const _ = l.featuredPromotionDetails,
-                        S = !!_?.promotion,
-                        x = (0, f.Z)();
+                C = r(367664),
+                v = r(534813);
+            const I = m().i4fb96c7,
+                _ = m().d8661dd4,
+                S = ({ activeSubscription: e, content: t, isMobile: r, isTierSwitching: a, premiumPriceConfig: l, selectedProduct: d, setSelectedProduct: u, shouldRemoveExtraStep: p }) => {
+                    const m = l.featuredPromotionDetails,
+                        v = !!m?.promotion,
+                        S = (0, f.Z)(),
+                        x = (0, C.Z)(m),
+                        [k, T] = o.useState(x);
                     o.useEffect(() => {
-                        S && x.scribe({ component: "paywall_with_offer", element: _?.promotion.program_id, action: "impression" });
-                    }, [S, _, x]);
-                    const z = i()(P.lO, t.apiContent?.header),
-                        T = (0, c.useHistory)(),
-                        M = t.apiContent?.products?.find((e) => e.product_category === u),
-                        B = parseInt(_?.promotion.ends_at_msec || 0, 10),
-                        [, F] = (0, y.Z)(B),
-                        O = { title: v({ percentage: _?.promotion.metadata.percent_off, premiumTierName: _?.localizedTierName }), subtitle: I, cardTitle: v, cardSubtitle: null, wideImageUrl: "https://abs.twimg.com/images/anniversary-wide-header-v2.png", narrowImageUrl: "https://abs.twimg.com/images/anniversary-mobile-header-v2.png" },
-                        D = !a && F > 0 && S;
-                    return o.createElement(n.Z, { style: k.root }, o.createElement(n.Z, { style: k.shadow }), o.createElement(g.Z.Configure, { TabBar: () => null, headerless: !0, rightControl: null, sideNav: null, withAppBar: !1, withBottomTabBar: !1 }), o.createElement(s.Z, { backButtonType: "close", onClick: () => T.goBack(), style: k.backButton }), z ? o.createElement(b.Z, { content: t, header: z, isMobile: r, isTierSwitching: a, offerContent: O, offerEndsAtMsec: B, renderOfferContent: D }) : null, o.createElement(n.Z, { style: k.container }, o.createElement(Z.Z, { isMobile: r, selectedInterval: d, setSelectedInterval: p }), t.apiContent?.products ? o.createElement(o.Fragment, null, o.createElement(E.Z, { activeSubscription: e, disclaimerRef: t.apiContent.subscribe_button, isTierSwitching: a, premiumPriceConfig: l, products: t.apiContent.products, selectedInterval: d, selectedProduct: u, setSelectedProduct: m, shouldRemoveExtraStep: C }), o.createElement(h.Z, { products: t.apiContent.products })) : null), C ? o.createElement(w.Z, { activeSubscription: e, disclaimerRef: t.apiContent?.subscribe_button, isTierSwitching: a, premiumPriceConfig: l, productName: M?.title, selectedInterval: d, selectedProduct: u }) : null);
+                        v && S.scribe({ component: "paywall_with_offer", element: m?.promotion.program_id, action: "impression" });
+                    }, [v, m, S]);
+                    const M = i()(P.lO, t.apiContent?.header),
+                        B = (0, c.useHistory)(),
+                        F = t.apiContent?.products?.find((e) => e.product_category === d),
+                        O = parseInt(m?.promotion.ends_at_msec || 0, 10),
+                        [, D] = (0, y.Z)(O),
+                        R = { title: I({ percentage: m?.promotion.metadata.percent_off, premiumTierName: m?.localizedTierName }), subtitle: _, cardTitle: I, cardSubtitle: null, wideImageUrl: "https://abs.twimg.com/images/anniversary-wide-header-v2.png", narrowImageUrl: "https://abs.twimg.com/images/anniversary-mobile-header-v2.png" },
+                        A = !a && D > 0 && v;
+                    return o.createElement(n.Z, { style: z.root }, o.createElement(n.Z, { style: z.shadow }), o.createElement(g.Z.Configure, { TabBar: () => null, headerless: !0, rightControl: null, sideNav: null, withAppBar: !1, withBottomTabBar: !1 }), o.createElement(s.Z, { backButtonType: "close", onClick: () => B.goBack(), style: z.backButton }), M ? o.createElement(b.Z, { content: t, header: M, isMobile: r, isTierSwitching: a, offerContent: R, offerEndsAtMsec: O, renderOfferContent: A }) : null, o.createElement(n.Z, { style: z.container }, o.createElement(Z.Z, { isMobile: r, selectedInterval: k, setSelectedInterval: T }), t.apiContent?.products ? o.createElement(o.Fragment, null, o.createElement(E.Z, { activeSubscription: e, disclaimerRef: t.apiContent.subscribe_button, isTierSwitching: a, premiumPriceConfig: l, products: t.apiContent.products, selectedInterval: k, selectedProduct: d, setSelectedProduct: u, shouldRemoveExtraStep: p }), o.createElement(h.Z, { products: t.apiContent.products })) : null), p ? o.createElement(w.Z, { activeSubscription: e, disclaimerRef: t.apiContent?.subscribe_button, isTierSwitching: a, premiumPriceConfig: l, productName: F?.title, selectedInterval: k, selectedProduct: d }) : null);
                 },
-                S = (e) => {
+                x = (e) => {
                     const t = (e.content.apiContent?.products || []).map((e) => e.product_category),
-                        r = (0, C.Z)(t, { moment: "PremiumSignupPageVisit" });
-                    return !Object.values(r).find((e) => null !== e) ? o.createElement(d.Z, null) : o.createElement(_, (0, a.Z)({}, e, { premiumPriceConfig: r }));
+                        r = (0, v.Z)(t, { moment: "PremiumSignupPageVisit" });
+                    return !Object.values(r).find((e) => null !== e) ? o.createElement(d.Z, null) : o.createElement(S, (0, a.Z)({}, e, { premiumPriceConfig: r }));
                 },
-                x = o.memo(S),
-                k = u.default.create((e) => {
+                k = o.memo(x),
+                z = u.default.create((e) => {
                     const t = "light" === e.paletteName ? "radial-gradient(56.1514% 56.1514% at 49.972% 38.959%, rgb(52 147 239 / 30%) 0%, rgb(255, 255, 255) 100%)" : "dark" === e.paletteName ? "radial-gradient(56.1514% 56.1514% at 49.972% 38.959%, rgba(52, 147, 239, 0.3) 0%, rgb(21 32 44) 100%)" : "radial-gradient(56.15141888052253% 56.15141888052254% at 49.97201160183933% 38.95898881943194%,#273649 0%,rgba(0,0,0,1) 100%)";
                     return { root: { height: "100vh", width: "100%", backgroundColor: e.colors.cellBackground, overflow: "auto" }, shadow: { position: "absolute", top: -300 * e.scaleMultiplier, minHeight: 650 * e.scaleMultiplier, width: "100%", backgroundImage: t }, container: { alignItems: "center", flex: 1, width: "100%", maxWidth: "1280px", marginHorizontal: "auto", paddingHorizontal: e.spaces.space16, marginTop: e.spaces.space24 }, backButton: { position: "absolute", marginStart: "none", top: e.spaces.space16, start: e.spaces.space16, zIndex: 1 } };
                 });
@@ -701,7 +704,7 @@
             var a = r(202784),
                 o = r(290402),
                 n = r(883229),
-                l = r(113054),
+                l = r(573540),
                 i = r(668214),
                 c = r(365265);
             const s = (0, i.Z)()
@@ -750,4 +753,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterBlue-964cff98.aa9c865a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterBlue-964cff98.b6bc34da.js.map

@@ -9,7 +9,7 @@
                 i,
                 s,
                 r = {
-                    fragment: { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "AwardsSettingsQuery", selections: [{ kind: "RequiredField", field: { alias: "viewer", args: (l = [{ kind: "Literal", name: "s", value: "4721" }]), concreteType: "Viewer", kind: "LinkedField", name: "viewer_v2", plural: !1, selections: [{ kind: "RequiredField", field: { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ kind: "RequiredField", field: { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ kind: "InlineFragment", selections: [{ args: null, kind: "FragmentSpread", name: "useAwardsActivate_user" }, (n = { alias: null, args: null, kind: "ScalarField", name: "award_eligible", storageKey: null }), (i = { alias: null, args: null, kind: "ScalarField", name: "awards_eligibility", storageKey: null })], type: "User", abstractKey: null }], storageKey: null }, action: "THROW", path: "viewer.user_results.result" }], storageKey: null }, action: "THROW", path: "viewer.user_results" }], storageKey: 'viewer_v2(s:"4721")' }, action: "THROW", path: "viewer" }], type: "Query", abstractKey: null },
+                    fragment: { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "AwardsSettingsQuery", selections: [{ kind: "RequiredField", field: { alias: "viewer", args: (l = [{ kind: "Literal", name: "s", value: "4721" }]), concreteType: "Viewer", kind: "LinkedField", name: "viewer_v2", plural: !1, selections: [{ kind: "RequiredField", field: { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ kind: "RequiredField", field: { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ kind: "InlineFragment", selections: [{ args: null, kind: "FragmentSpread", name: "useAwardsActivate_user" }, (n = { alias: null, args: null, kind: "ScalarField", name: "award_eligible", storageKey: null }), (i = { alias: null, args: null, kind: "ScalarField", name: "awards_eligibility", storageKey: null })], type: "User", abstractKey: null }], storageKey: null }, action: "THROW" }], storageKey: null }, action: "THROW" }], storageKey: 'viewer_v2(s:"4721")' }, action: "THROW" }], type: "Query", abstractKey: null },
                     kind: "Request",
                     operation: {
                         argumentDefinitions: [],
@@ -65,8 +65,8 @@
                 p = a(725516),
                 g = a(535338),
                 y = a(615027),
-                w = (a(136728), a(325686)),
-                k = a(688715),
+                k = (a(136728), a(325686)),
+                w = a(688715),
                 b = a(731708),
                 _ = a(154003),
                 f = a(167630),
@@ -87,9 +87,9 @@
                 ],
                 C = () =>
                     c.createElement(
-                        w.Z,
+                        k.Z,
                         { role: "list", style: S.list },
-                        x.map((e) => c.createElement(w.Z, { key: e.title, role: "listitem", style: S.listItem }, e.illustration, c.createElement(w.Z, { style: S.listItemContent }, c.createElement(b.ZP, { style: S.listItemTitle, weight: "heavy" }, e.title), c.createElement(b.ZP, { color: "gray700" }, e.description)))),
+                        x.map((e) => c.createElement(k.Z, { key: e.title, role: "listitem", style: S.listItem }, e.illustration, c.createElement(k.Z, { style: S.listItemContent }, c.createElement(b.ZP, { style: S.listItemTitle, weight: "heavy" }, e.title), c.createElement(b.ZP, { color: "gray700" }, e.description)))),
                     ),
                 I = "/settings/monetization";
             var q = (function () {
@@ -137,7 +137,7 @@
                 G = E().j087774e,
                 X = E().db3f0bbe,
                 Y = E().a1f40cf8,
-                $ = (0, k.ju)("https://legal.x.com/creator-terms"),
+                $ = (0, w.ju)("https://legal.x.com/creator-terms"),
                 J = h.default.create((e) => ({ root: { paddingHorizontal: e.spaces.space64, paddingTop: e.spaces.space8, paddingBottom: "120px" }, iconTwitter: { color: e.colors.primary }, headline: { marginVertical: e.spaces.space16 }, spacing: { marginBottom: e.spaces.space8 }, footer: { marginHorizontal: e.spaces.space64, marginVertical: e.spaces.space16 } })),
                 ee = c.memo(
                     (0, p.Z)(
@@ -158,8 +158,8 @@
                                         });
                                 }, [l, n, t]),
                                 r = c.useMemo(() => ({ link: c.createElement(b.ZP, { link: $, weight: "bold" }) }), []),
-                                o = c.useMemo(() => c.createElement(w.Z, { style: J.footer }, c.createElement(b.ZP, { align: "center", color: "gray700", style: J.spacing }, c.createElement(E().I18NFormatMessage, { $i18n: "d4b0b963" }, c.cloneElement(r.link, null, E().d604fb32))), c.createElement(_.ZP, { disabled: i, onPress: s, type: "primaryFilled" }, i ? c.createElement(f.Z, null) : Y)), [i, s, r]);
-                            return c.createElement(F.Z, { backButtonType: "close", bottomBar: o, documentTitle: G, history: t, onBackClick: a }, c.createElement(w.Z, { style: J.root }, c.createElement(b.ZP, { "aria-level": 1, role: "heading", size: "title1", weight: "heavy" }, G), c.createElement(b.ZP, { size: "headline1", style: J.headline, weight: "medium" }, X), c.createElement(Z.Z, { style: J.spacing, type: Z.j.DiscoGlobe }), c.createElement(C, null)));
+                                o = c.useMemo(() => c.createElement(k.Z, { style: J.footer }, c.createElement(b.ZP, { align: "center", color: "gray700", style: J.spacing }, c.createElement(E().I18NFormatMessage, { $i18n: "d4b0b963" }, c.cloneElement(r.link, null, E().d604fb32))), c.createElement(_.ZP, { disabled: i, onPress: s, type: "primaryFilled" }, i ? c.createElement(f.Z, null) : Y)), [i, s, r]);
+                            return c.createElement(F.Z, { backButtonType: "close", bottomBar: o, documentTitle: G, history: t, onBackClick: a }, c.createElement(k.Z, { style: J.root }, c.createElement(b.ZP, { "aria-level": 1, role: "heading", size: "title1", weight: "heavy" }, G), c.createElement(b.ZP, { size: "headline1", style: J.headline, weight: "medium" }, X), c.createElement(Z.Z, { style: J.spacing, type: Z.j.DiscoGlobe }), c.createElement(C, null)));
                         },
                         { page: "onboarding", section: "Coins" },
                     ),
@@ -181,4 +181,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsAwards.728ade6a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsAwards.b4bce60a.js.map

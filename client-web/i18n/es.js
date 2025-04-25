@@ -4847,6 +4847,7 @@
                 o("ie45edda", "Descripción general de la transmisión en directo"),
                 o("e30fc268", "Live Viewers"),
                 o("bd37f68e", "Actividad de contenido multimedia"),
+                o("fe074210", "min"),
                 o("jd03a1b8", "Minutes Watched"),
                 o("a20e91e8", "minutes watched"),
                 o("ic2bebee", "Monetizado"),
@@ -4907,9 +4908,9 @@
                 o("a7b48b36", "El porcentaje de reproducciones de video completadas."),
                 o("a2580f2a", "Tasa de finalización"),
                 o("ff95a9cc", "ID del video"),
-                o("a97e358e", "Enlace del video"),
-                o("e10e8b46", "Mostrando solo los videos de los últimos 100 días.");
-            o("ba37f6da", "Información general del video"),
+                o("a97e358e", "Enlace del video");
+            o("e10e8b46", "Mostrando solo los videos de los últimos 100 días."),
+                o("ba37f6da", "Información general del video"),
                 o("f19846b2", "Miniatura del video"),
                 o("ccd6f4a8", "Título del video"),
                 o("c8410542", "El número de veces que se vio tu video."),
@@ -5072,7 +5073,6 @@
                 o("fb3e127a", "Oferta de año nuevo por tiempo limitado"),
                 o("a5fee980", "Solicita el 30 % de descuento en los planes anuales y hasta USD 12 000 de crédito de anuncios gratuitos si te suscribes antes del"),
                 o("c9051cac", "días"),
-                o("fe074210", "min"),
                 o("ie035790", "s"),
                 o("cbd3dfaa", "Probar versión beta"),
                 o("h260121e", "Muestra a tu audiencia tus roles más importantes."),
@@ -13248,4 +13248,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/es.d6793efa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/es.bc21bb9a.js.map

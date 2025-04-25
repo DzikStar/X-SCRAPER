@@ -409,11 +409,11 @@
                         name: "legacy",
                         plural: !1,
                         selections: [
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "blocking", storageKey: null }, action: "THROW", path: "legacy.blocking" },
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "blocked_by", storageKey: null }, action: "THROW", path: "legacy.blocked_by" },
+                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "blocking", storageKey: null }, action: "THROW" },
+                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "blocked_by", storageKey: null }, action: "THROW" },
                             { alias: null, args: null, kind: "ScalarField", name: "withheld_scope", storageKey: null },
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }, action: "THROW", path: "legacy.protected" },
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "following", storageKey: null }, action: "THROW", path: "legacy.following" },
+                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }, action: "THROW" },
+                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "following", storageKey: null }, action: "THROW" },
                         ],
                         storageKey: null,
                     },
@@ -455,7 +455,7 @@
                         plural: !1,
                         selections: [
                             { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "following", storageKey: null }, action: "THROW", path: "legacy.following" },
+                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "following", storageKey: null }, action: "THROW" },
                         ],
                         storageKey: null,
                     },
@@ -745,8 +745,8 @@
                         name: "legacy",
                         plural: !1,
                         selections: [
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null }, action: "THROW", path: "legacy.followed_by" },
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "following", storageKey: null }, action: "THROW", path: "legacy.following" },
+                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null }, action: "THROW" },
+                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "following", storageKey: null }, action: "THROW" },
                             { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
                             { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
                         ],
@@ -1214,4 +1214,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.SettingsProfessionalProfileProfileSpotlight~bundle.UserProfile.b44e430a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.SettingsProfessionalProfileProfileSpotlight~bundle.UserProfile.b0cd319a.js.map

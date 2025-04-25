@@ -4,70 +4,98 @@
     {
         588386: (e, n, r) => {
             var t = r(982317),
-                o = r(437429),
+                i = r(437429),
                 a = r(202784),
-                i = r(202784),
-                l = i.useContext,
-                u = i.useEffect;
+                o = r(202784),
+                l = o.useContext,
+                u = o.useEffect;
             r(826590);
             e.exports = function (e) {
                 var n = e.entryPointReference,
                     r = e.props,
-                    i = n.getComponent,
-                    c = n.queries,
-                    f = n.entryPoints,
+                    o = n.getComponent,
+                    f = n.queries,
+                    c = n.entryPoints,
                     s = n.extraProps,
                     d = n.rootModuleID,
-                    v = i(),
+                    v = o(),
                     p = l(t),
-                    m = o();
+                    g = i();
                 return (
                     u(
                         function () {
-                            m.__log({ name: "entrypoint.root.consume", profilerContext: p, rootModuleID: d });
+                            g.__log({ name: "entrypoint.root.consume", profilerContext: p, rootModuleID: d });
                         },
-                        [m, p, d],
+                        [g, p, d],
                     ),
-                    a.createElement(v, { entryPoints: f, extraProps: s, props: r, queries: c })
+                    a.createElement(v, { entryPoints: c, extraProps: s, props: r, queries: f })
                 );
+            };
+        },
+        548934: (e, n, r) => {
+            var t = r(647677),
+                i = r(703383),
+                a = i.ConnectionInterface,
+                o = i.getValueAtPath;
+            e.exports = function (e, n, r, i) {
+                var l,
+                    u,
+                    f = a.get(),
+                    c = f.EDGES,
+                    s = f.PAGE_INFO,
+                    d = f.HAS_NEXT_PAGE,
+                    v = f.HAS_PREV_PAGE,
+                    p = f.END_CURSOR,
+                    g = f.START_CURSOR,
+                    m = o(r, i);
+                if (null == m) return { cursor: null, hasMore: !1 };
+                "object" != typeof m && t(!1);
+                var h = m[c],
+                    y = m[s];
+                if (null == h || null == y) return { cursor: null, hasMore: !1 };
+                Array.isArray(h) || t(!1), "object" != typeof y && t(!1);
+                var P = "forward" === e ? (null !== (l = y[p]) && void 0 !== l ? l : null) : null !== (u = y[g]) && void 0 !== u ? u : null;
+                return null !== P && "string" != typeof P && t(!1), { cursor: P, hasMore: "forward" === e ? null != P && !0 === y[d] : null != P && !0 === y[v] };
             };
         },
         151210: (e, n, r) => {
             var t = r(606161).loadQuery;
-            e.exports = function e(n, r, o) {
+            e.exports = function e(n, r, i) {
                 var a = null;
                 null == r.root.getModuleIfRequired() && (a = r.root.load());
-                var i = r.getPreloadProps(o),
-                    l = i.queries,
-                    u = i.entryPoints,
-                    c = i.extraProps,
-                    f = {},
+                var o = r.getPreloadProps(i),
+                    l = o.queries,
+                    u = o.entryPoints,
+                    f = o.extraProps,
+                    c = {},
                     s = {};
                 null != l &&
                     Object.keys(l).forEach(function (e) {
-                        var r = l[e],
-                            o = r.environmentProviderOptions,
-                            a = r.options,
-                            i = r.parameters,
-                            u = r.variables,
-                            c = n.getEnvironment(o);
-                        f[e] = t(c, i, u, { fetchPolicy: null == a ? void 0 : a.fetchPolicy, networkCacheConfig: null == a ? void 0 : a.networkCacheConfig, __nameForWarning: "loadEntryPoint" }, o);
+                        var r = l[e];
+                        if (null != r) {
+                            var i = r.environmentProviderOptions,
+                                a = r.options,
+                                o = r.parameters,
+                                u = r.variables,
+                                f = n.getEnvironment(i);
+                            c[e] = t(f, o, u, { fetchPolicy: null == a ? void 0 : a.fetchPolicy, networkCacheConfig: null == a ? void 0 : a.networkCacheConfig, __nameForWarning: "loadEntryPoint" }, i);
+                        }
                     }),
                     null != u &&
                         Object.keys(u).forEach(function (r) {
                             var t = u[r];
                             if (null != t) {
-                                var o = t.entryPoint,
+                                var i = t.entryPoint,
                                     a = t.entryPointParams;
-                                s[r] = e(n, o, a);
+                                s[r] = e(n, i, a);
                             }
                         });
                 var d = !1;
                 return {
                     dispose: function () {
                         d ||
-                            (null != f &&
-                                Object.values(f).forEach(function (e) {
+                            (null != c &&
+                                Object.values(c).forEach(function (e) {
                                     (0, e.dispose)();
                                 }),
                             null != s &&
@@ -77,7 +105,7 @@
                             (d = !0));
                     },
                     entryPoints: s,
-                    extraProps: null != c ? c : null,
+                    extraProps: null != f ? f : null,
                     getComponent: function () {
                         var e,
                             n = r.root.getModuleIfRequired();
@@ -87,40 +115,40 @@
                     get isDisposed() {
                         return d;
                     },
-                    queries: f,
+                    queries: c,
                     rootModuleID: r.root.getModuleId(),
                 };
             };
         },
         589978: (e, n, r) => {
-            var t = r(171600).default,
-                o = t(r(900814)),
-                a = t(r(638636)),
-                i = r(993801).getQueryResourceForEnvironment,
+            var t = r(902091).default,
+                i = t(r(463928)),
+                a = t(r(22395)),
+                o = r(993801).getQueryResourceForEnvironment,
                 l = r(647677),
                 u = r(703383),
-                c = u.__internal.fetchQuery,
-                f = u.RelayFeatureFlags,
+                f = u.__internal.fetchQuery,
+                c = u.RelayFeatureFlags,
                 s = u.createOperationDescriptor,
                 d = u.getPendingOperationsForFragment,
                 v = u.getSelector,
                 p = u.getVariablesFromFragment,
-                m = u.handlePotentialSnapshotErrors;
+                g = u.handlePotentialSnapshotErrors;
             r(826590);
-            function y(e, n, r, t, a) {
+            function m(e, n, r, t, a) {
                 var l = p(n, r),
-                    u = (0, o.default)((0, o.default)({}, l), {}, { id: t.clientEdgeDestinationID }),
-                    f = s(t.request, u, null == a ? void 0 : a.networkCacheConfig);
-                return i(e).prepare(f, c(e, f), null == a ? void 0 : a.fetchPolicy);
+                    u = (0, i.default)((0, i.default)({}, l), {}, { id: t.clientEdgeDestinationID }),
+                    c = s(t.request, u, null == a ? void 0 : a.networkCacheConfig);
+                return o(e).prepare(c, f(e, c), null == a ? void 0 : a.fetchPolicy);
             }
-            e.exports = function (e, n, r, t, o, i) {
+            e.exports = function (e, n, r, t, i, o) {
                 var u,
-                    c,
+                    f,
                     s = v(n, r),
                     p = !0 === (null == n || null === (u = n.metadata) || void 0 === u ? void 0 : u.plural);
                 p ? null == r || Array.isArray(r) || l(!1) : Array.isArray(r) && l(!1), null == r || (p && Array.isArray(r) && 0 === r.length) || null != s || l(!1);
-                var g,
-                    h = (function (e, n) {
+                var h,
+                    y = (function (e, n) {
                         return null == n
                             ? { kind: "bailout" }
                             : "PluralReaderSelector" === n.kind
@@ -136,49 +164,49 @@
                               : { kind: "singular", snapshot: e.lookup(n), epoch: e.getStore().getEpoch() };
                     })(e, s),
                     P = null;
-                if (!0 === (null === (c = n.metadata) || void 0 === c ? void 0 : c.hasClientEdges)) {
-                    var R = (function (e) {
+                if (!0 === (null === (f = n.metadata) || void 0 === f ? void 0 : f.hasClientEdges)) {
+                    var b = (function (e) {
                         if ("bailout" === e.kind) return null;
                         var n;
                         if ("singular" === e.kind) return null !== (n = e.snapshot.missingClientEdges) && void 0 !== n ? n : null;
                         var r,
                             t = null,
-                            o = (0, a.default)(e.snapshots);
+                            i = (0, a.default)(e.snapshots);
                         try {
-                            for (o.s(); !(r = o.n()).done; ) {
-                                var i = r.value;
-                                if (i.missingClientEdges) {
+                            for (i.s(); !(r = i.n()).done; ) {
+                                var o = r.value;
+                                if (o.missingClientEdges) {
                                     var l;
                                     t = null !== (l = t) && void 0 !== l ? l : [];
                                     var u,
-                                        c = (0, a.default)(i.missingClientEdges);
+                                        f = (0, a.default)(o.missingClientEdges);
                                     try {
-                                        for (c.s(); !(u = c.n()).done; ) {
-                                            var f = u.value;
-                                            t.push(f);
+                                        for (f.s(); !(u = f.n()).done; ) {
+                                            var c = u.value;
+                                            t.push(c);
                                         }
                                     } catch (e) {
-                                        c.e(e);
+                                        f.e(e);
                                     } finally {
-                                        c.f();
+                                        f.f();
                                     }
                                 }
                             }
                         } catch (e) {
-                            o.e(e);
+                            i.e(e);
                         } finally {
-                            o.f();
+                            i.f();
                         }
                         return t;
-                    })(h);
-                    if (null != R && R.length) {
+                    })(y);
+                    if (null != b && b.length) {
                         P = [];
-                        var b,
-                            E = (0, a.default)(R);
+                        var R,
+                            E = (0, a.default)(b);
                         try {
-                            for (E.s(); !(b = E.n()).done; ) {
-                                var k = b.value;
-                                P.push(y(e, n, r, k, o));
+                            for (E.s(); !(R = E.n()).done; ) {
+                                var k = R.value;
+                                P.push(m(e, n, r, k, i));
                             }
                         } catch (e) {
                             E.e(e);
@@ -197,117 +225,115 @@
                                       return e.isMissingData;
                                   }))
                         );
-                    })(h)
+                    })(y)
                 ) {
                     null == s && l(!1);
                     var _ = "PluralReaderSelector" === s.kind ? s.selectors[0].owner : s.owner,
-                        C = d(e, n, _);
-                    if (C) throw C.promise;
+                        F = d(e, n, _);
+                    if (F) throw F.promise;
                     !(function (e, n) {
-                        var r, t;
-                        if ("singular" === n.kind) m(e, n.snapshot.missingRequiredFields, n.snapshot.relayResolverErrors, n.snapshot.errorResponseFields, null !== (r = null === (t = n.snapshot.selector.node.metadata) || void 0 === t ? void 0 : t.throwOnFieldError) && void 0 !== r && r);
+                        if ("singular" === n.kind) g(e, n.snapshot.errorResponseFields);
                         else if ("plural" === n.kind) {
-                            var o,
-                                i = (0, a.default)(n.snapshots);
+                            var r,
+                                t = (0, a.default)(n.snapshots);
                             try {
-                                for (i.s(); !(o = i.n()).done; ) {
-                                    var l,
-                                        u,
-                                        c = o.value;
-                                    m(e, c.missingRequiredFields, c.relayResolverErrors, c.errorResponseFields, null !== (l = null === (u = c.selector.node.metadata) || void 0 === u ? void 0 : u.throwOnFieldError) && void 0 !== l && l);
+                                for (t.s(); !(r = t.n()).done; ) {
+                                    var i = r.value;
+                                    g(e, i.errorResponseFields);
                                 }
                             } catch (e) {
-                                i.e(e);
+                                t.e(e);
                             } finally {
-                                i.f();
+                                t.f();
                             }
                         }
-                    })(e, h);
+                    })(e, y);
                 }
                 return (
-                    (g =
-                        "bailout" === h.kind
+                    (h =
+                        "bailout" === y.kind
                             ? p
                                 ? []
                                 : null
-                            : "singular" === h.kind
-                              ? h.snapshot.data
-                              : h.snapshots.map(function (e) {
+                            : "singular" === y.kind
+                              ? y.snapshot.data
+                              : y.snapshots.map(function (e) {
                                     return e.data;
                                 })),
-                    f.LOG_MISSING_RECORDS_IN_PROD &&
+                    c.LOG_MISSING_RECORDS_IN_PROD &&
                         null != r &&
-                        (void 0 === g ||
-                            (Array.isArray(g) &&
-                                g.length > 0 &&
-                                g.every(function (e) {
+                        (void 0 === h ||
+                            (Array.isArray(h) &&
+                                h.length > 0 &&
+                                h.every(function (e) {
                                     return void 0 === e;
                                 }))),
-                    { data: g, clientEdgeQueries: P }
+                    { data: h, clientEdgeQueries: P }
                 );
             };
         },
         265933: (e, n, r) => {
-            var t = (0, r(171600).default)(r(638636)),
-                o = r(151210),
-                a = r(606161).useTrackLoadQueryInRender,
-                i = r(995402),
-                l = r(202784),
-                u = l.useCallback,
-                c = l.useEffect,
-                f = l.useRef,
-                s = l.useState,
-                d = { kind: "NullEntryPointReference" };
+            var t = (0, r(902091).default)(r(22395)),
+                i = r(151210),
+                a = r(995402),
+                o = r(202784),
+                l = o.useCallback,
+                u = o.useEffect,
+                f = o.useRef,
+                c = o.useState,
+                s = { kind: "NullEntryPointReference" };
             e.exports = function (e, n, r) {
-                var l, v, p, m;
-                a();
-                var y = null !== (l = null == r || null === (v = r.TEST_ONLY__initialEntryPointData) || void 0 === v ? void 0 : v.entryPointReference) && void 0 !== l ? l : d,
-                    g = null !== (p = null == r || null === (m = r.TEST_ONLY__initialEntryPointData) || void 0 === m ? void 0 : m.entryPointParams) && void 0 !== p ? p : null,
-                    h = i(),
-                    P = f(new Set([y])),
-                    R = s(y),
-                    b = R[0],
-                    E = R[1],
-                    k = s(g),
-                    _ = k[0],
-                    C = k[1],
-                    F = u(
+                var o,
+                    d,
+                    v,
+                    p,
+                    g = null !== (o = null == r || null === (d = r.TEST_ONLY__initialEntryPointData) || void 0 === d ? void 0 : d.entryPointReference) && void 0 !== o ? o : s,
+                    m = null !== (v = null == r || null === (p = r.TEST_ONLY__initialEntryPointData) || void 0 === p ? void 0 : p.entryPointParams) && void 0 !== v ? v : null,
+                    h = a(),
+                    y = f(new Set([g])),
+                    P = c(g),
+                    b = P[0],
+                    R = P[1],
+                    E = c(m),
+                    k = E[0],
+                    _ = E[1],
+                    F = l(
                         function () {
                             if (h.current) {
                                 var e = { kind: "NullEntryPointReference" };
-                                P.current.add(e), E(e);
+                                y.current.add(e), R(e);
                             }
                         },
-                        [E, h],
+                        [R, h],
                     ),
-                    S = u(
+                    I = l(
                         function (r) {
                             if (h.current) {
-                                var t = o(e, n, r);
-                                P.current.add(t), E(t), C(r);
+                                var t = i(e, n, r);
+                                y.current.add(t), R(t), _(r);
                             }
                         },
-                        [e, n, E, h],
+                        [e, n, R, h],
                     ),
-                    D = f(!1);
+                    S = f(!1);
                 return (
-                    c(function () {
+                    u(function () {
                         return function () {
-                            D.current = !0;
+                            S.current = !0;
                         };
                     }, []),
-                    c(
+                    u(
                         function () {
-                            if (!0 === D.current) return (D.current = !1), void ("NullEntryPointReference" !== b.kind && null != _ && S(_));
-                            var e = P.current;
+                            if (!0 === S.current) return (S.current = !1), void ("NullEntryPointReference" !== b.kind && null != k && I(k));
+                            var e = y.current;
                             if (h.current) {
                                 var n,
                                     r = (0, t.default)(e);
                                 try {
                                     for (r.s(); !(n = r.n()).done; ) {
-                                        var o = n.value;
-                                        if (o === b) break;
-                                        e.delete(o), "NullEntryPointReference" !== o.kind && o.dispose();
+                                        var i = n.value;
+                                        if (i === b) break;
+                                        e.delete(i), "NullEntryPointReference" !== i.kind && i.dispose();
                                     }
                                 } catch (e) {
                                     r.e(e);
@@ -316,12 +342,12 @@
                                 }
                             }
                         },
-                        [b, _, S, h],
+                        [b, k, I, h],
                     ),
-                    c(function () {
+                    u(function () {
                         return function () {
                             var e,
-                                n = (0, t.default)(P.current);
+                                n = (0, t.default)(y.current);
                             try {
                                 for (n.s(); !(e = n.n()).done; ) {
                                     var r = e.value;
@@ -334,34 +360,34 @@
                             }
                         };
                     }, []),
-                    ["NullEntryPointReference" === b.kind ? null : b, S, F]
+                    ["NullEntryPointReference" === b.kind ? null : b, I, F]
                 );
             };
         },
         101163: (e, n, r) => {
             var t = r(437429),
-                o = r(647677),
+                i = r(647677),
                 a = r(202784),
-                i = r(703383),
-                l = i.__internal.getObservableForActiveRequest,
-                u = i.getSelector,
-                c = a.useEffect,
-                f = a.useState,
+                o = r(703383),
+                l = o.__internal.getObservableForActiveRequest,
+                u = o.getSelector,
+                f = a.useEffect,
+                c = a.useState,
                 s = a.useMemo;
             e.exports = function (e, n) {
                 var r = t(),
                     a = s(
                         function () {
                             var t = u(e, n);
-                            return null == t ? null : ("SingularReaderSelector" !== t.kind && o(!1), l(r, t.owner));
+                            return null == t ? null : ("SingularReaderSelector" !== t.kind && i(!1), l(r, t.owner));
                         },
                         [r, e, n],
                     ),
-                    i = f(null != a),
-                    d = i[0],
-                    v = i[1];
+                    o = c(null != a),
+                    d = o[0],
+                    v = o[1];
                 return (
-                    c(
+                    f(
                         function () {
                             var e;
                             if ((v(null != a), null != a)) {
@@ -381,147 +407,223 @@
             };
         },
         528246: (e, n, r) => {
-            var t = (0, r(171600).default)(r(900814)),
-                o = r(61383),
+            var t = (0, r(902091).default)(r(463928)),
+                i = r(548934),
+                a = r(61383),
+                o = r(995402),
+                l = r(101163),
+                u = r(669033),
+                f = r(437429),
+                c = r(647677),
+                s = r(202784),
+                d = s.useCallback,
+                v = s.useEffect,
+                p = s.useState,
+                g = r(703383),
+                m = g.__internal.fetchQuery,
+                h = g.RelayFeatureFlags,
+                y = g.createOperationDescriptor,
+                P = g.getPaginationVariables,
+                b = g.getRefetchMetadata,
+                R = g.getSelector;
+            r(826590);
+            e.exports = function (e) {
+                return h.ENABLE_ACTIVITY_COMPATIBILITY
+                    ? u(e)
+                    : (function (e) {
+                          var n = e.direction,
+                              r = e.fragmentNode,
+                              u = e.fragmentRef,
+                              s = e.fragmentIdentifier,
+                              g = e.fragmentData,
+                              h = e.connectionPathInFragmentData,
+                              E = e.paginationRequest,
+                              k = e.paginationMetadata,
+                              _ = e.componentDisplayName,
+                              F = e.observer,
+                              I = e.onReset,
+                              S = f(),
+                              C = a(),
+                              D = C.isFetchingRef,
+                              N = C.startFetch,
+                              w = C.disposeFetch,
+                              A = C.completeFetch,
+                              x = b(r, _).identifierInfo,
+                              M = null != (null == x ? void 0 : x.identifierField) && null != g && "object" == typeof g ? g[x.identifierField] : null,
+                              O = o(),
+                              Q = p(S),
+                              q = Q[0],
+                              V = Q[1],
+                              T = p(s),
+                              j = T[0],
+                              L = T[1],
+                              G = l(r, u);
+                          (S === q && s === j) || (w(), I(), V(S), L(s));
+                          var U = i(n, r, g, h),
+                              B = U.cursor,
+                              Y = U.hasMore;
+                          return (
+                              v(
+                                  function () {
+                                      return function () {
+                                          w();
+                                      };
+                                  },
+                                  [w],
+                              ),
+                              [
+                                  d(
+                                      function (e, i) {
+                                          var a = null == i ? void 0 : i.onComplete;
+                                          if (!0 !== O.current) return { dispose: function () {} };
+                                          var o = R(r, u);
+                                          if (!0 === D.current || null == g || G) return a && a(null), { dispose: function () {} };
+                                          (null == o || "PluralReaderSelector" === o.kind) && c(!1);
+                                          var l = o.owner.variables,
+                                              f = o.variables,
+                                              s = null == i ? void 0 : i.UNSTABLE_extraVariables,
+                                              d = (0, t.default)((0, t.default)({}, l), f),
+                                              v = P(n, e, B, d, (0, t.default)({}, s), k);
+                                          null != x && (v[x.identifierQueryVariableName] = M);
+                                          var p = y(E, v, { force: !0 });
+                                          return (
+                                              m(S, p).subscribe(
+                                                  (0, t.default)(
+                                                      (0, t.default)({}, F),
+                                                      {},
+                                                      {
+                                                          start: function (e) {
+                                                              N(e), F.start && F.start(e);
+                                                          },
+                                                          complete: function () {
+                                                              A(), F.complete && F.complete(), a && a(null);
+                                                          },
+                                                          error: function (e) {
+                                                              A(), F.error && F.error(e), a && a(e);
+                                                          },
+                                                      },
+                                                  ),
+                                              ),
+                                              { dispose: w }
+                                          );
+                                      },
+                                      [S, M, n, B, N, w, A, D, G, g, r.name, u, _],
+                                  ),
+                                  Y,
+                                  w,
+                              ]
+                          );
+                      })(e);
+            };
+        },
+        669033: (e, n, r) => {
+            var t = (0, r(902091).default)(r(463928)),
+                i = r(548934),
                 a = r(995402),
-                i = r(101163),
+                o = r(101163),
                 l = r(437429),
                 u = r(647677),
-                c = r(202784),
-                f = c.useCallback,
-                s = c.useEffect,
-                d = c.useState,
+                f = r(202784),
+                c = f.useCallback,
+                s = f.useRef,
+                d = f.useState,
                 v = r(703383),
                 p = v.__internal.fetchQuery,
-                m = v.ConnectionInterface,
-                y = v.createOperationDescriptor,
-                g = v.getPaginationVariables,
+                g = v.createOperationDescriptor,
+                m = v.getPaginationVariables,
                 h = v.getRefetchMetadata,
-                P = v.getSelector,
-                R = v.getValueAtPath;
+                y = v.getSelector;
             r(826590);
             e.exports = function (e) {
                 var n = e.direction,
                     r = e.fragmentNode,
-                    c = e.fragmentRef,
+                    f = e.fragmentRef,
                     v = e.fragmentIdentifier,
-                    b = e.fragmentData,
-                    E = e.connectionPathInFragmentData,
-                    k = e.paginationRequest,
-                    _ = e.paginationMetadata,
-                    C = e.componentDisplayName,
-                    F = e.observer,
-                    S = e.onReset,
-                    D = l(),
-                    N = o(),
-                    w = N.isFetchingRef,
-                    I = N.startFetch,
-                    Q = N.disposeFetch,
-                    x = N.completeFetch,
-                    A = h(r, C).identifierInfo,
-                    O = null != (null == A ? void 0 : A.identifierField) && null != b && "object" == typeof b ? b[A.identifierField] : null,
-                    q = a(),
-                    M = d(D),
-                    T = M[0],
-                    V = M[1],
-                    L = d(v),
-                    j = L[0],
-                    U = L[1],
-                    G = i(r, c);
-                (D !== T || v !== j) && (Q(), S(), V(D), U(v));
-                var W = (function (e, n, r, t) {
-                        var o,
-                            a,
-                            i = m.get(),
-                            l = i.EDGES,
-                            c = i.PAGE_INFO,
-                            f = i.HAS_NEXT_PAGE,
-                            s = i.HAS_PREV_PAGE,
-                            d = i.END_CURSOR,
-                            v = i.START_CURSOR,
-                            p = R(r, t);
-                        if (null == p) return { cursor: null, hasMore: !1 };
-                        "object" != typeof p && u(!1);
-                        var y = p[l],
-                            g = p[c];
-                        if (null == y || null == g) return { cursor: null, hasMore: !1 };
-                        Array.isArray(y) || u(!1), "object" != typeof g && u(!1);
-                        var h,
-                            P = "forward" === e ? (null !== (o = g[d]) && void 0 !== o ? o : null) : null !== (a = g[v]) && void 0 !== a ? a : null;
-                        null !== P && "string" != typeof P && u(!1), (h = "forward" === e ? null != P && !0 === g[f] : null != P && !0 === g[s]);
-                        return { cursor: P, hasMore: h };
-                    })(n, 0, b, E),
-                    B = W.cursor,
-                    K = W.hasMore;
-                return (
-                    s(
-                        function () {
-                            return function () {
-                                Q();
-                            };
-                        },
-                        [Q],
-                    ),
-                    [
-                        f(
-                            function (e, o) {
-                                var a = null == o ? void 0 : o.onComplete;
-                                if (!0 !== q.current) return { dispose: function () {} };
-                                var i = P(r, c);
-                                if (!0 === w.current || null == b || G) return a && a(null), { dispose: function () {} };
-                                (null == i || "PluralReaderSelector" === i.kind) && u(!1);
-                                var l = i.owner.variables,
-                                    f = i.variables,
-                                    s = null == o ? void 0 : o.UNSTABLE_extraVariables,
-                                    d = (0, t.default)((0, t.default)({}, l), f),
-                                    v = g(n, e, B, d, (0, t.default)({}, s), _);
-                                null != A && (v[A.identifierQueryVariableName] = O);
-                                var m = y(k, v, { force: !0 });
-                                return (
-                                    p(D, m).subscribe(
-                                        (0, t.default)(
-                                            (0, t.default)({}, F),
-                                            {},
-                                            {
-                                                start: function (e) {
-                                                    I(e), F.start && F.start(e);
-                                                },
-                                                complete: function () {
-                                                    x(), F.complete && F.complete(), a && a(null);
-                                                },
-                                                error: function (e) {
-                                                    x(), F.error && F.error(e), a && a(e);
-                                                },
+                    P = e.fragmentData,
+                    b = e.connectionPathInFragmentData,
+                    R = e.paginationRequest,
+                    E = e.paginationMetadata,
+                    k = e.componentDisplayName,
+                    _ = e.observer,
+                    F = e.onReset,
+                    I = l(),
+                    S = h(r, k).identifierInfo,
+                    C = null != (null == S ? void 0 : S.identifierField) && null != P && "object" == typeof P ? P[S.identifierField] : null,
+                    D = s({ kind: "none" }),
+                    N = d(I),
+                    w = N[0],
+                    A = N[1],
+                    x = d(v),
+                    M = x[0],
+                    O = x[1],
+                    Q = o(r, f),
+                    q = c(function () {
+                        "fetching" === D.current.kind && D.current.subscription.unsubscribe(), (D.current = { kind: "none" });
+                    }, []);
+                (I !== w || v !== M) && (q(), F(), A(I), O(v));
+                var V = i(n, r, P, b),
+                    T = V.cursor,
+                    j = V.hasMore,
+                    L = a();
+                return [
+                    c(
+                        function (e, i) {
+                            var a = null == i ? void 0 : i.onComplete;
+                            if (!0 !== L.current) return { dispose: function () {} };
+                            var o = y(r, f);
+                            if ("fetching" === D.current.kind || null == P || Q) return a && a(null), { dispose: function () {} };
+                            (null == o || "PluralReaderSelector" === o.kind) && u(!1);
+                            var l = o.owner.variables,
+                                c = o.variables,
+                                s = null == i ? void 0 : i.UNSTABLE_extraVariables,
+                                d = (0, t.default)((0, t.default)({}, l), c),
+                                v = m(n, e, T, d, (0, t.default)({}, s), E);
+                            null != S && (v[S.identifierQueryVariableName] = C);
+                            var h = g(R, v, { force: !0 });
+                            return (
+                                p(I, h).subscribe(
+                                    (0, t.default)(
+                                        (0, t.default)({}, _),
+                                        {},
+                                        {
+                                            start: function (e) {
+                                                (D.current = { kind: "fetching", subscription: e }), _.start && _.start(e);
                                             },
-                                        ),
+                                            complete: function () {
+                                                (D.current = { kind: "none" }), _.complete && _.complete(), a && a(null);
+                                            },
+                                            error: function (e) {
+                                                (D.current = { kind: "none" }), _.complete && _.complete(), a && a(e);
+                                            },
+                                        },
                                     ),
-                                    { dispose: Q }
-                                );
-                            },
-                            [D, O, n, B, I, Q, x, w, G, b, r.name, c, C],
-                        ),
-                        K,
-                        Q,
-                    ]
-                );
+                                ),
+                                { dispose: function () {} }
+                            );
+                        },
+                        [I, C, n, T, Q, P, r.name, f, k],
+                    ),
+                    j,
+                    q,
+                ];
             };
         },
         598: (e, n, r) => {
-            var t = (0, r(171600).default)(r(900814)),
-                o = r(528246),
+            var t = (0, r(902091).default)(r(463928)),
+                i = r(528246),
                 a = r(302408),
-                i = r(437429),
+                o = r(437429),
                 l = r(400023),
                 u = r(202784),
-                c = u.useCallback,
-                f = (u.useDebugValue, u.useState),
+                f = u.useCallback,
+                c = (u.useDebugValue, u.useState),
                 s = r(703383),
                 d = s.getFragment,
                 v = s.getFragmentIdentifier,
                 p = s.getPaginationMetadata;
-            function m(e) {
-                var n = i(),
-                    r = f(!1),
+            function g(e) {
+                var n = o(),
+                    r = c(!1),
                     a = r[0],
                     l = r[1],
                     u = function (e) {
@@ -533,7 +635,7 @@
                               })
                             : l(e);
                     },
-                    c = {
+                    f = {
                         start: function () {
                             return u(!0);
                         },
@@ -544,12 +646,12 @@
                             return u(!1);
                         },
                     },
-                    s = o(
+                    s = i(
                         (0, t.default)(
                             (0, t.default)({}, e),
                             {},
                             {
-                                observer: c,
+                                observer: f,
                                 onReset: function () {
                                     return u(!1);
                                 },
@@ -561,217 +663,75 @@
             e.exports = function (e, n) {
                 var r = d(e);
                 l(r, "first argument of usePaginationFragment()");
-                var o = "usePaginationFragment()",
-                    i = p(r, o),
-                    u = i.connectionPathInFragmentData,
-                    f = i.paginationRequest,
-                    s = i.paginationMetadata,
-                    y = a(r, n, o),
-                    g = y.fragmentData,
-                    h = y.fragmentRef,
-                    P = y.refetch,
-                    R = v(r, h),
-                    b = m({ componentDisplayName: o, connectionPathInFragmentData: u, direction: "backward", fragmentData: g, fragmentIdentifier: R, fragmentNode: r, fragmentRef: h, paginationMetadata: s, paginationRequest: f }),
-                    E = b[0],
-                    k = b[1],
-                    _ = b[2],
-                    C = b[3],
-                    F = m({ componentDisplayName: o, connectionPathInFragmentData: u, direction: "forward", fragmentData: g, fragmentIdentifier: R, fragmentNode: r, fragmentRef: h, paginationMetadata: s, paginationRequest: f }),
-                    S = F[0],
-                    D = F[1],
-                    N = F[2],
-                    w = F[3];
+                var i = "usePaginationFragment()",
+                    o = p(r, i),
+                    u = o.connectionPathInFragmentData,
+                    c = o.paginationRequest,
+                    s = o.paginationMetadata,
+                    m = a(r, n, i),
+                    h = m.fragmentData,
+                    y = m.fragmentRef,
+                    P = m.refetch,
+                    b = v(r, y),
+                    R = g({ componentDisplayName: i, connectionPathInFragmentData: u, direction: "backward", fragmentData: h, fragmentIdentifier: b, fragmentNode: r, fragmentRef: y, paginationMetadata: s, paginationRequest: c }),
+                    E = R[0],
+                    k = R[1],
+                    _ = R[2],
+                    F = R[3],
+                    I = g({ componentDisplayName: i, connectionPathInFragmentData: u, direction: "forward", fragmentData: h, fragmentIdentifier: b, fragmentNode: r, fragmentRef: y, paginationMetadata: s, paginationRequest: c }),
+                    S = I[0],
+                    C = I[1],
+                    D = I[2],
+                    N = I[3];
                 return {
-                    data: g,
+                    data: h,
                     loadNext: S,
                     loadPrevious: E,
-                    hasNext: D,
+                    hasNext: C,
                     hasPrevious: k,
-                    isLoadingNext: N,
+                    isLoadingNext: D,
                     isLoadingPrevious: _,
-                    refetch: c(
+                    refetch: f(
                         function (e, n) {
-                            return w(), C(), P(e, (0, t.default)((0, t.default)({}, n), {}, { __environment: void 0 }));
+                            return N(), F(), P(e, (0, t.default)((0, t.default)({}, n), {}, { __environment: void 0 }));
                         },
-                        [w, C, P],
+                        [N, F, P],
                     ),
                 };
             };
         },
-        928123: (e, n, r) => {
-            var t = r(606161).useTrackLoadQueryInRender,
-                o = r(138239),
-                a = r(303566),
-                i = r(437429),
-                l = r(647677),
-                u = (r(202784).useDebugValue, r(703383).__internal),
-                c = u.fetchQueryDeduped,
-                f = u.fetchQuery;
-            r(826590);
-            e.exports = function (e, n, r) {
-                t();
-                var u,
-                    s = i(),
-                    d = n.fetchKey,
-                    v = n.fetchPolicy,
-                    p = n.source,
-                    m = n.variables,
-                    y = n.networkCacheConfig,
-                    g = a(e, m, y);
-                if ("PreloadedQuery_DEPRECATED" === n.kind)
-                    g.request.node.params.name !== n.name && l(!1),
-                        (u = {
-                            componentDisplayName: "usePreloadedQuery()",
-                            fetchKey: d,
-                            fetchObservable: c(s, g.request.identifier, function () {
-                                return s === n.environment && null != p ? s.executeWithSource({ operation: g, source: p }) : s.execute({ operation: g });
-                            }),
-                            fetchPolicy: v,
-                            query: g,
-                            renderPolicy: null == r ? void 0 : r.UNSTABLE_renderPolicy,
-                        });
-                else {
-                    var h = f(s, g);
-                    u = { componentDisplayName: "usePreloadedQuery()", fetchObservable: null != p && s === n.environment ? p.ifEmpty(h) : (n.environment, h), fetchKey: d, fetchPolicy: v, query: g, renderPolicy: null == r ? void 0 : r.UNSTABLE_renderPolicy };
-                }
-                return o(u);
-            };
-        },
-        72845: (e, n, r) => {
-            var t = (0, r(171600).default)(r(638636)),
-                o = r(606161),
-                a = o.loadQuery,
-                i = o.useTrackLoadQueryInRender,
-                l = r(995402),
-                u = r(437429),
-                c = r(202784),
-                f = c.useCallback,
-                s = c.useEffect,
-                d = c.useRef,
-                v = c.useState,
-                p = r(703383).getRequest,
-                m = { kind: "NullQueryReference" };
-            function y(e) {
-                return "PreloadableConcreteRequest" === e.kind ? void 0 !== e.params.metadata.live : void 0 !== p(e).params.metadata.live;
-            }
-            e.exports = function (e, n) {
-                var r = null != n ? n : m,
-                    o = u();
-                i();
-                var c = l(),
-                    p = d(new Set([r])),
-                    g = v(function () {
-                        return r;
-                    }),
-                    h = g[0],
-                    P = g[1],
-                    R = v(function () {
-                        return r;
-                    }),
-                    b = R[0],
-                    E = R[1];
-                r !== b && (p.current.add(r), E(r), P(r));
-                var k = f(
-                        function () {
-                            c.current && (p.current.add(m), P(m));
-                        },
-                        [c],
-                    ),
-                    _ = f(
-                        function (n, r) {
-                            var t = null != r && r.hasOwnProperty("__environment") ? { fetchPolicy: r.fetchPolicy, networkCacheConfig: r.networkCacheConfig, __nameForWarning: r.__nameForWarning } : r;
-                            if (c.current) {
-                                var i,
-                                    l = a(null !== (i = null == r ? void 0 : r.__environment) && void 0 !== i ? i : o, e, n, t);
-                                p.current.add(l), P(l);
-                            }
-                        },
-                        [o, e, P, c],
-                    ),
-                    C = d(!1);
-                return (
-                    s(function () {
-                        return function () {
-                            C.current = !0;
-                        };
-                    }, []),
-                    s(
-                        function () {
-                            if (!0 === C.current) return (C.current = !1), void ("NullQueryReference" !== h.kind && _(h.variables, { fetchPolicy: h.fetchPolicy, networkCacheConfig: h.networkCacheConfig }));
-                            var n = p.current;
-                            if (c.current) {
-                                var r,
-                                    o = (0, t.default)(n);
-                                try {
-                                    for (o.s(); !(r = o.n()).done; ) {
-                                        var a = r.value;
-                                        if (a === h) break;
-                                        n.delete(a), "NullQueryReference" !== a.kind && (y(e) ? a.dispose && a.dispose() : a.releaseQuery && a.releaseQuery());
-                                    }
-                                } catch (e) {
-                                    o.e(e);
-                                } finally {
-                                    o.f();
-                                }
-                            }
-                        },
-                        [h, c, _, e],
-                    ),
-                    s(
-                        function () {
-                            return function () {
-                                var n,
-                                    r = (0, t.default)(p.current);
-                                try {
-                                    for (r.s(); !(n = r.n()).done; ) {
-                                        var o = n.value;
-                                        "NullQueryReference" !== o.kind && (y(e) ? o.dispose && o.dispose() : o.releaseQuery && o.releaseQuery());
-                                    }
-                                } catch (e) {
-                                    r.e(e);
-                                } finally {
-                                    r.f();
-                                }
-                            };
-                        },
-                        [e],
-                    ),
-                    ["NullQueryReference" === h.kind ? null : h, _, k]
-                );
-            };
-        },
         463836: (e, n, r) => {
             var t = r(302408),
-                o = r(400023),
+                i = r(400023),
                 a = (r(202784).useDebugValue, r(703383).getFragment);
             e.exports = function (e, n) {
                 var r = a(e);
-                o(r, "first argument of useRefetchableFragment()");
-                var i = t(r, n, "useRefetchableFragment()");
-                return [i.fragmentData, i.refetch];
+                i(r, "first argument of useRefetchableFragment()");
+                var o = t(r, n, "useRefetchableFragment()");
+                return [o.fragmentData, o.refetch];
             };
         },
         302408: (e, n, r) => {
-            var t = (0, r(171600).default)(r(900814)),
-                o = r(982317),
+            var t = (0, r(902091).default)(r(463928)),
+                i = r(982317),
                 a = r(993801).getQueryResourceForEnvironment,
-                i = r(589978),
+                o = r(589978),
                 l = r(799384),
                 u = r(995402),
-                c = r(72845),
-                f = r(437429),
+                f = r(72845),
+                c = r(437429),
                 s = r(647677),
                 d = r(202784),
                 v = d.useCallback,
                 p = d.useContext,
-                m = d.useReducer,
-                y = r(703383),
-                g = y.__internal.fetchQuery,
-                h = y.createOperationDescriptor,
-                P = y.getFragmentIdentifier,
-                R = y.getRefetchMetadata,
-                b = y.getSelector,
-                E = y.getValueAtPath;
+                g = d.useReducer,
+                m = r(703383),
+                h = m.__internal.fetchQuery,
+                y = m.createOperationDescriptor,
+                P = m.getFragmentIdentifier,
+                b = m.getRefetchMetadata,
+                R = m.getSelector,
+                E = m.getValueAtPath;
             r(826590);
             function k(e, n) {
                 switch (n.type) {
@@ -785,106 +745,106 @@
                 }
             }
             e.exports = function (e, n, r) {
-                var d = f(),
-                    y = R(e, r),
-                    _ = y.refetchableRequest,
-                    C = y.fragmentRefPathInResponse,
-                    F = y.identifierInfo,
+                var d = c(),
+                    m = b(e, r),
+                    _ = m.refetchableRequest,
+                    F = m.fragmentRefPathInResponse,
+                    I = m.identifierInfo,
                     S = P(e, n),
-                    D = m(k, { fetchPolicy: void 0, mirroredEnvironment: d, mirroredFragmentIdentifier: S, onComplete: void 0, refetchEnvironment: null, refetchQuery: null, renderPolicy: void 0 }),
-                    N = D[0],
-                    w = D[1],
-                    I = N.fetchPolicy,
-                    Q = N.mirroredEnvironment,
-                    x = N.mirroredFragmentIdentifier,
-                    A = N.onComplete,
-                    O = N.refetchEnvironment,
-                    q = N.refetchQuery,
-                    M = N.renderPolicy,
-                    T = null != O ? O : d,
-                    V = a(T),
-                    L = p(o),
-                    j = T !== Q || S !== x,
-                    U = c(_),
-                    G = U[0],
-                    W = U[1],
-                    B = U[2],
-                    K = n;
-                if (j) w({ type: "reset", environment: T, fragmentIdentifier: S }), B();
-                else if (null != q && null != G) {
+                    C = g(k, { fetchPolicy: void 0, mirroredEnvironment: d, mirroredFragmentIdentifier: S, onComplete: void 0, refetchEnvironment: null, refetchQuery: null, renderPolicy: void 0 }),
+                    D = C[0],
+                    N = C[1],
+                    w = D.fetchPolicy,
+                    A = D.mirroredEnvironment,
+                    x = D.mirroredFragmentIdentifier,
+                    M = D.onComplete,
+                    O = D.refetchEnvironment,
+                    Q = D.refetchQuery,
+                    q = D.renderPolicy,
+                    V = null != O ? O : d,
+                    T = a(V),
+                    j = p(i),
+                    L = V !== A || S !== x,
+                    G = f(_),
+                    U = G[0],
+                    B = G[1],
+                    Y = G[2],
+                    H = n;
+                if (L) N({ type: "reset", environment: V, fragmentIdentifier: S }), Y();
+                else if (null != Q && null != U) {
                     0;
-                    var H = function (e) {
-                            A && A(null != e ? e : null);
+                    var W = function (e) {
+                            M && M(null != e ? e : null);
                         },
-                        X = null != G.source ? G.source : g(T, q),
-                        Y = L.wrapPrepareQueryResource(function () {
-                            return V.prepare(
-                                q,
+                        X = null != U.source ? U.source : h(V, Q),
+                        K = j.wrapPrepareQueryResource(function () {
+                            return T.prepare(
+                                Q,
                                 X,
-                                I,
-                                M,
+                                w,
+                                q,
                                 {
-                                    error: H,
+                                    error: W,
                                     complete: function () {
-                                        H();
+                                        W();
                                     },
                                 },
-                                G.fetchKey,
-                                L,
+                                U.fetchKey,
+                                j,
                             );
                         }),
-                        z = i(T, Y.fragmentNode, Y.fragmentRef, r).data;
-                    null == z && s(!1), (K = E(z, C));
+                        z = o(V, K.fragmentNode, K.fragmentRef, r).data;
+                    null == z && s(!1), (H = E(z, F));
                 }
-                var J = l(e, K, r),
-                    Z = (function (e, n, r, o, a, i, l, c, f, s, d) {
+                var J = l(e, H, r),
+                    Z = (function (e, n, r, i, a, o, l, f, c, s, d) {
                         var p = u(),
-                            m = null != (null == c ? void 0 : c.identifierField) && null != o && "object" == typeof o ? o[c.identifierField] : null;
+                            g = null != (null == f ? void 0 : f.identifierField) && null != i && "object" == typeof i ? i[f.identifierField] : null;
                         return v(
-                            function (e, o) {
+                            function (e, i) {
                                 if (!0 !== p.current) return { dispose: function () {} };
                                 var a,
                                     l,
-                                    u = null == o ? void 0 : o.__environment,
-                                    v = null == o ? void 0 : o.fetchPolicy,
-                                    y = null == o ? void 0 : o.UNSTABLE_renderPolicy,
-                                    g = null == o ? void 0 : o.onComplete,
-                                    P = b(i, s);
+                                    u = null == i ? void 0 : i.__environment,
+                                    v = null == i ? void 0 : i.fetchPolicy,
+                                    m = null == i ? void 0 : i.UNSTABLE_renderPolicy,
+                                    h = null == i ? void 0 : i.onComplete,
+                                    P = R(o, s);
                                 if (null == P) (a = {}), (l = {});
                                 else if ("PluralReaderSelector" === P.kind) {
-                                    var R, E, k, _;
-                                    (a = null !== (R = null === (E = P.selectors[0]) || void 0 === E ? void 0 : E.owner.variables) && void 0 !== R ? R : {}), (l = null !== (k = null === (_ = P.selectors[0]) || void 0 === _ ? void 0 : _.variables) && void 0 !== k ? k : {});
+                                    var b, E, k, _;
+                                    (a = null !== (b = null === (E = P.selectors[0]) || void 0 === E ? void 0 : E.owner.variables) && void 0 !== b ? b : {}), (l = null !== (k = null === (_ = P.selectors[0]) || void 0 === _ ? void 0 : _.variables) && void 0 !== k ? k : {});
                                 } else (a = P.owner.variables), (l = P.variables);
-                                var C = (0, t.default)((0, t.default)((0, t.default)({}, a), l), e);
-                                null == c || e.hasOwnProperty(c.identifierQueryVariableName) || (C[c.identifierQueryVariableName] = m);
-                                var F = h(d, C, { force: !0 });
-                                return f(F.request.variables, { fetchPolicy: v, __environment: u, __nameForWarning: "refetch" }), n({ type: "refetch", fetchPolicy: v, onComplete: g, refetchEnvironment: u, refetchQuery: F, renderPolicy: y }), { dispose: r };
+                                var F = (0, t.default)((0, t.default)((0, t.default)({}, a), l), e);
+                                null == f || e.hasOwnProperty(f.identifierQueryVariableName) || (F[f.identifierQueryVariableName] = g);
+                                var I = y(d, F, { force: !0 });
+                                return c(I.request.variables, { fetchPolicy: v, __environment: u, __nameForWarning: "refetch" }), n({ type: "refetch", fetchPolicy: v, onComplete: h, refetchEnvironment: u, refetchQuery: I, renderPolicy: m }), { dispose: r };
                             },
-                            [a, n, r, m, f],
+                            [a, n, r, g, c],
                         );
-                    })(0, w, B, J, S, e, 0, F, W, n, _);
-                return { fragmentData: J, fragmentRef: K, refetch: Z };
+                    })(0, N, Y, J, S, e, 0, I, B, n, _);
+                return { fragmentData: J, fragmentRef: H, refetch: Z };
             };
         },
         353391: (e, n, r) => {
             var t = r(437429),
-                o = r(202784),
-                a = o.useEffect,
-                i = o.useRef;
+                i = r(202784),
+                a = i.useEffect,
+                o = i.useRef;
             e.exports = function (e, n) {
                 var r = t(),
-                    o = i(null),
+                    i = o(null),
                     l = Array.from(e).sort().join("");
                 return (
                     a(
                         function () {
                             var t = r.getStore(),
                                 a = t.lookupInvalidationState(e),
-                                i = t.subscribeToInvalidationState(a, n);
+                                o = t.subscribeToInvalidationState(a, n);
                             return (
-                                (o.current = i),
+                                (i.current = o),
                                 function () {
-                                    return i.dispose();
+                                    return o.dispose();
                                 }
                             );
                         },
@@ -892,7 +852,7 @@
                     ),
                     {
                         dispose: function () {
-                            null != o.current && o.current.dispose();
+                            null != i.current && i.current.dispose();
                         },
                     }
                 );
@@ -900,19 +860,19 @@
         },
         19663: (e, n, r) => {
             var t = r(437429),
-                o = r(202784).useEffect,
+                i = r(202784).useEffect,
                 a = r(703383).requestSubscription;
             e.exports = function (e, n) {
                 var r = null != n ? n : a,
-                    i = t();
-                o(
+                    o = t();
+                i(
                     function () {
-                        return r(i, e).dispose;
+                        return r(o, e).dispose;
                     },
-                    [i, e, r],
+                    [o, e, r],
                 );
             };
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AccountAnalytics~bundle.Payments~ondemand.Insights~ondemand.Verified~ondemand.XChat.488656ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AccountAnalytics~bundle.Payments~ondemand.Insights~ondemand.Verified~ondemand.XChat.6782d40a.js.map

@@ -37,7 +37,7 @@
                                 (u = { alias: null, args: null, kind: "ScalarField", name: "scheduled_start_time", storageKey: null }),
                                 (m = { alias: null, args: null, kind: "ScalarField", name: "source", storageKey: null }),
                                 (x = { alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }),
-                                (g = { alias: null, args: null, kind: "ScalarField", name: "private_chat", storageKey: null }),
+                                (h = { alias: null, args: null, kind: "ScalarField", name: "private_chat", storageKey: null }),
                                 (y = {
                                     alias: null,
                                     args: null,
@@ -53,15 +53,15 @@
                                             kind: "LinkedField",
                                             name: "total_counts",
                                             plural: !1,
-                                            selections: (h = [
+                                            selections: (g = [
                                                 { alias: null, args: null, kind: "ScalarField", name: "views", storageKey: null },
                                                 { alias: null, args: null, kind: "ScalarField", name: "minutes_watched", storageKey: null },
                                                 { alias: null, args: null, kind: "ScalarField", name: "unique_viewers", storageKey: null },
                                             ]),
                                             storageKey: null,
                                         },
-                                        { alias: null, args: null, concreteType: "BroadcastCounts", kind: "LinkedField", name: "live_counts", plural: !1, selections: h, storageKey: null },
-                                        { alias: null, args: null, concreteType: "BroadcastCounts", kind: "LinkedField", name: "replay_counts", plural: !1, selections: h, storageKey: null },
+                                        { alias: null, args: null, concreteType: "BroadcastCounts", kind: "LinkedField", name: "live_counts", plural: !1, selections: g, storageKey: null },
+                                        { alias: null, args: null, concreteType: "BroadcastCounts", kind: "LinkedField", name: "replay_counts", plural: !1, selections: g, storageKey: null },
                                     ],
                                     storageKey: null,
                                 }),
@@ -110,10 +110,10 @@
                     abstractKey: null,
                 },
                 kind: "Request",
-                operation: { argumentDefinitions: t, kind: "Operation", name: "LiveDetailsQuery", selections: [{ alias: null, args: i, concreteType: "Broadcast", kind: "LinkedField", name: "broadcast_by_rest_id", plural: !1, selections: [r, n, d, c, o, u, m, x, g, y, b, p, { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }], storageKey: null }] },
+                operation: { argumentDefinitions: t, kind: "Operation", name: "LiveDetailsQuery", selections: [{ alias: null, args: i, concreteType: "Broadcast", kind: "LinkedField", name: "broadcast_by_rest_id", plural: !1, selections: [r, n, d, c, o, u, m, x, h, y, b, p, { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }], storageKey: null }] },
                 params: { id: "yR1FW3rqmwFgsdMrJJrL0g", metadata: {}, name: "LiveDetailsQuery", operationKind: "query", text: null },
             };
-            var t, i, r, n, d, c, o, u, m, x, g, h, y, v, b, p;
+            var t, i, r, n, d, c, o, u, m, x, h, g, y, v, b, p;
             s.hash = "b71b5d89d35fc0966593943cfaf41ead";
             const f = s;
         },
@@ -182,18 +182,18 @@
         948138: (e, a, l) => {
             l.d(a, { j: () => W });
             var s = l(552322),
-                t = l(702024),
-                i = l(436059),
-                r = l(941204),
+                t = l(193686),
+                i = l(993165),
+                r = l(332161),
                 n = l(812115),
-                d = l(86781),
-                c = l(582440),
-                o = l(16246),
-                u = l(162994),
-                m = l(880917),
+                d = l(437712),
+                c = l(782879),
+                o = l(74425),
+                u = l(847970),
+                m = l(996762),
                 x = l(739219),
-                g = l(202784),
-                h = l(430962),
+                h = l(202784),
+                g = l(430962),
                 y = l(968025),
                 v = l(777301),
                 b = l(854123),
@@ -201,7 +201,7 @@
                 f = l(881120),
                 j = l(542372);
             function k() {
-                const { analytics: e } = (0, h.M1)(),
+                const { analytics: e } = (0, g.M1)(),
                     { countryData: a } = (0, b.DM)(),
                     l = a.total;
                 if (0 === l.length) return null;
@@ -210,11 +210,11 @@
             }
             var w = l(864897);
             function N() {
-                const { analytics: e } = (0, h.M1)(),
+                const { analytics: e } = (0, g.M1)(),
                     { deviceData: a } = (0, b.DM)();
                 if (!a || 0 === a.length) return null;
-                const l = (0, g.useMemo)(() => ({ iOS: e.deviceIOS || "iOS", Android: e.deviceAndroid || "Android", Web: e.deviceWeb || "Web", Other: e.deviceOther || "Other" }), [e.deviceIOS, e.deviceAndroid, e.deviceWeb, e.deviceOther]),
-                    t = (0, g.useMemo)(
+                const l = (0, h.useMemo)(() => ({ iOS: e.deviceIOS || "iOS", Android: e.deviceAndroid || "Android", Web: e.deviceWeb || "Web", Other: e.deviceOther || "Other" }), [e.deviceIOS, e.deviceAndroid, e.deviceWeb, e.deviceOther]),
+                    t = (0, h.useMemo)(
                         () =>
                             a && 0 !== a.length
                                 ? a.map((e) => {
@@ -227,30 +227,24 @@
                     );
                 return (0, s.jsxs)("div", { className: "bg-gray-0 rounded-xl p-4 border border-gray-200", children: [(0, s.jsx)("h2", { className: "font-medium text-gray-900 mb-4 md:text-headline2 md:font-bold", children: e.deviceTitle || "Devices" }), (0, s.jsx)(w.Z, { data: t })] });
             }
-            var T = l(407250);
+            var T = l(917317);
             function _({ title: e, total: a, live: l, replay: t }) {
-                return (0, s.jsxs)("div", { className: "flex items-center", children: [(0, s.jsx)("div", { className: "w-1/3", children: (0, s.jsx)("span", { className: "text-gray-700", children: e }) }), (0, s.jsxs)("div", { className: "flex flex-1", children: [(0, s.jsx)("div", { className: "flex-1 text-center", children: (0, s.jsx)("div", { className: "font-medium", children: (0, p.dw)(l) }) }), (0, s.jsx)("div", { className: "flex-1 text-center", children: (0, s.jsx)("div", { className: "font-medium", children: (0, p.dw)(t) }) }), (0, s.jsx)("div", { className: "flex-1 text-center", children: (0, s.jsx)("div", { className: "font-bold", children: (0, p.dw)(a) }) })] })] });
+                return (0, s.jsxs)("div", { className: "flex items-center", children: [(0, s.jsx)("div", { className: "w-1/3", children: (0, s.jsx)("span", { className: "text-gray-700", children: e }) }), (0, s.jsxs)("div", { className: "flex flex-1", children: [(0, s.jsx)("div", { className: "flex-1 text-center", children: (0, s.jsx)("div", { className: "font-thin", children: (0, p.dw)(l) }) }), (0, s.jsx)("div", { className: "flex-1 text-center", children: (0, s.jsx)("div", { className: "font-thin", children: (0, p.dw)(t) }) }), (0, s.jsx)("div", { className: "flex-1 text-center", children: (0, s.jsx)("div", { className: "font-bold", children: (0, p.dw)(a) }) })] })] });
             }
             function F() {
-                const { analytics: e } = (0, h.M1)(),
+                const { analytics: e } = (0, g.M1)(),
                     { viewMetrics: a } = (0, b.DM)();
                 return (0, s.jsxs)(T.Zb, { className: "w-full bg-card text-card-foreground border border-border shadow-md h-full", children: [(0, s.jsx)(T.Ol, { className: "pb-2", children: (0, s.jsx)(T.ll, { className: "font-medium", children: e.broadcastMetricsTitle }) }), (0, s.jsxs)(T.aY, { className: "space-y-6 pt-2", children: [(0, s.jsxs)("div", { className: "flex", children: [(0, s.jsx)("div", { className: "w-1/3" }), (0, s.jsxs)("div", { className: "flex flex-1", children: [(0, s.jsx)("div", { className: "flex-1 text-center text-gray-700", children: e.liveColumnHeader }), (0, s.jsx)("div", { className: "flex-1 text-center text-gray-700", children: e.replayColumnHeader }), (0, s.jsx)("div", { className: "flex-1 text-center text-gray-700", children: e.totalColumnHeader })] })] }), (0, s.jsx)(_, { title: e.VideoViewLabel, total: a.views.total, live: a.views.live, replay: a.views.replay }), (0, s.jsx)("div", { className: "h-px bg-gray-200" }), (0, s.jsx)(_, { title: e.uniqueViewersLabel, total: a.uniqueViewers.total, live: a.uniqueViewers.live, replay: a.uniqueViewers.replay }), (0, s.jsx)("div", { className: "h-px bg-gray-200" }), (0, s.jsx)(_, { title: e.minutesWatched, total: a.minutesWatched.total, live: a.minutesWatched.live, replay: a.minutesWatched.replay })] })] });
             }
             var L = l(643715),
-                K = l(829233);
-            const { Area: S, CartesianGrid: D, XAxis: M, YAxis: C, AreaChart: V } = L;
+                K = l(1468);
+            const { Area: S, CartesianGrid: D, XAxis: C, YAxis: M, AreaChart: V } = L;
             function I() {
                 const { liveViewers: e, formattedBroadcast: a } = (0, b.DM)(),
-                    { analytics: l } = (0, h.M1)(),
-                    t = (0, g.useMemo)(() => {
+                    { analytics: l } = (0, g.M1)(),
+                    t = (0, h.useMemo)(() => {
                         const { startTime: l, endTime: s } = a;
-                        if (!l || !s || !e.length) return [];
-                        const t = s - l;
-                        return e.map((a, s) => {
-                            const i = l + s * (t / (e.length - 1)),
-                                r = Math.floor((i - l) / 6e4);
-                            return { timestamp: i, value: a, minutesFromStart: r, streamTimeMs: 60 * r * 1e3 };
-                        });
+                        return l && s && e.length ? e.map((e, a) => ({ value: e, minutesFromStart: a })) : [];
                     }, [e, a]);
                 return 0 === t.length
                     ? (0, s.jsx)("div", { className: "text-muted-foreground", children: l.noViewerData })
@@ -263,8 +257,8 @@
                               children: [
                                   (0, s.jsx)("defs", { children: (0, s.jsxs)("linearGradient", { id: "viewersGradient", x1: "0", y1: "0", x2: "0", y2: "1", children: [(0, s.jsx)("stop", { offset: "5%", stopColor: "hsl(var(--colors-blue-500) / 0.5)", stopOpacity: 0.8 }), (0, s.jsx)("stop", { offset: "95%", stopColor: "hsl(var(--colors-blue-500) / 0)", stopOpacity: 0 })] }) }),
                                   (0, s.jsx)(D, { strokeDasharray: "0", vertical: !1, stroke: "hsl(var(--colors-gray-100))" }),
-                                  (0, s.jsx)(M, { dataKey: "minutesFromStart", tickLine: !1, axisLine: !1, className: "text-subtext3", tickMargin: 8, minTickGap: 40, tickFormatter: (e) => (0, p.LU)(60 * e * 1e3), tick: { fill: "hsl(var(--colors-gray-600))" } }),
-                                  (0, s.jsx)(C, { tickLine: !1, axisLine: !1, className: "text-subtext3", tickFormatter: (e) => (0, p.dw)(e), tick: { fill: "hsl(var(--colors-gray-600))" } }),
+                                  (0, s.jsx)(C, { dataKey: "minutesFromStart", tickLine: !1, axisLine: !1, className: "text-subtext3", tickMargin: 8, minTickGap: 40, tickFormatter: (e) => (0, p.LU)(60 * e * 1e3), tick: { fill: "hsl(var(--colors-gray-600))" } }),
+                                  (0, s.jsx)(M, { tickLine: !1, axisLine: !1, className: "text-subtext3", tickFormatter: (e) => (0, p.dw)(e), tick: { fill: "hsl(var(--colors-gray-600))" } }),
                                   (0, s.jsx)(K.h7, {
                                       content: (0, s.jsx)(K.dg, {
                                           className: "text-subtext2",
@@ -284,16 +278,16 @@
             var O = l(86982),
                 B = l(707326);
             function A() {
-                const { analytics: e } = (0, h.M1)(),
+                const { analytics: e } = (0, g.M1)(),
                     { timeSeriesData: a, timeRange: l } = (0, b.DM)(),
-                    t = (0, g.useMemo)(
+                    t = (0, h.useMemo)(
                         () => [
                             { key: "views", label: e.VideoViewLabel || e.Views, type: "number", info: e.VideoViewsInfo || e.broadcastViewsInfo },
                             { key: "watchTimeMs", label: e.WatchTimeLabel || e.WatchTimeLabel, type: "time", info: e.WatchTimeInfo || e.broadcastWatchTimeInfo },
                         ],
                         [e],
                     ),
-                    i = (0, g.useMemo)(() => {
+                    i = (0, h.useMemo)(() => {
                         let e = 0,
                             l = 0;
                         return (
@@ -303,19 +297,19 @@
                             { views: e, watchTimeMs: l }
                         );
                     }, [a]),
-                    r = (0, g.useMemo)(() => ((0, x.w)(l.to, l.from) + 1 >= 14 ? "daily" : "hourly"), [l]);
+                    r = (0, h.useMemo)(() => ((0, x.w)(l.to, l.from) + 1 >= 14 ? "daily" : "hourly"), [l]);
                 return 0 === Object.keys(a).length ? (0, s.jsx)("div", { className: "relative p-4 bg-gray-0 border border-gray-200 rounded-xl", children: (0, s.jsx)("div", { className: "text-center py-8", children: e.noDataAvailable }) }) : (0, s.jsx)("div", { className: "relative", children: (0, s.jsx)(O.E, { metrics: t, currentTotals: i, timeSeriesData: a, ChartComponent: B.q, hoursLabel: e.hours || "hours", granularity: r }) });
             }
-            var R = l(164695);
+            var R = l(34681);
             function W({ broadcastId: e, isMockData: a = !1, liveOverviewUrl: l = "/analytics/live", referrerUrl: i }) {
-                const [r, n] = (0, g.useState)(() => (0, v.X)(2));
-                return (0, s.jsx)(b.h9, { broadcastId: e, timeRange: r, isMockData: a, children: (0, s.jsx)(g.Suspense, { fallback: (0, s.jsx)(t.P, { size: "large" }), children: (0, s.jsx)(q, { timeRange: r, setTimeRange: n, liveOverviewUrl: l, referrerUrl: i }) }) });
+                const [r, n] = (0, h.useState)(() => (0, v.X)(2));
+                return (0, s.jsx)(b.h9, { broadcastId: e, timeRange: r, isMockData: a, children: (0, s.jsx)(h.Suspense, { fallback: (0, s.jsx)(t.P, { size: "large" }), children: (0, s.jsx)(q, { timeRange: r, setTimeRange: n, liveOverviewUrl: l, referrerUrl: i }) }) });
             }
             function q({ timeRange: e, setTimeRange: a, liveOverviewUrl: l, referrerUrl: t }) {
-                const { analytics: f } = (0, h.M1)(),
+                const { analytics: f } = (0, g.M1)(),
                     { formattedBroadcast: j, liveViewers: w } = (0, b.DM)(),
                     T = (0, y.t)(),
-                    _ = (0, g.useMemo)(() => {
+                    _ = (0, h.useMemo)(() => {
                         const e = j?.startTime,
                             a = e ? (0, x.w)(new Date(), new Date(e)) : Number.POSITIVE_INFINITY;
                         return [
@@ -394,4 +388,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-e8e70de4.0d162cda.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-e8e70de4.bcf7357a.js.map

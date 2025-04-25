@@ -65,8 +65,8 @@
                     return "number" == typeof i && "number" == typeof r && r > 0 ? n.createElement(A.Z, { accessibilityLabelValueText: B({ currentTime: (0, R.mr)(i), durationTime: (0, R.mr)(r) }), "aria-label": e, color: "white", keepLTR: !0, keyboardStep: 5, max: r, min: 0, onActive: this._handleActive, onChange: this._handleChange, step: "any", value: i, withHidingThumb: !0 }) : null;
                 }
             }
-            const F = M,
-                L = a().j25d7cca,
+            const L = M,
+                F = a().j25d7cca,
                 O = a().a858b25c,
                 H = a().hea01798,
                 z = "PreviewControlBar-",
@@ -107,7 +107,7 @@
                                 ? n.createElement(
                                       h.Z,
                                       { style: k.ZP.scrubber },
-                                      n.createElement(o.o, { periodic: !0 }, ({ playerState: t }) => n.createElement(F, { "aria-label": H, currentTime: (0, R.SY)(t), duration: (0, R.zm)(t), getScrubToFraction: this._getScrubToFraction(t), isScrubbing: t.isScrubbing, isSeeking: t.isSeeking, playerApi: e })),
+                                      n.createElement(o.o, { periodic: !0 }, ({ playerState: t }) => n.createElement(L, { "aria-label": H, currentTime: (0, R.SY)(t), duration: (0, R.zm)(t), getScrubToFraction: this._getScrubToFraction(t), isScrubbing: t.isScrubbing, isSeeking: t.isSeeking, playerApi: e })),
                                   )
                                 : null),
                         (this._renderVolume = (e, t) => {
@@ -124,7 +124,7 @@
                                 const { currentBreakpoint: r } = this.state,
                                     { areCaptionsShown: o } = t,
                                     { toggleCaptions: i } = e;
-                                return n.createElement(T.Z, { "aria-label": o ? L : O, hoverLabelWithExtraSpace: this.props.showScrubber, icon: o ? n.createElement(g.default, null) : n.createElement(f.default, null), onPress: i, size: I(r) ? "xSmall" : "medium", testID: "captions" });
+                                return n.createElement(T.Z, { "aria-label": o ? F : O, hoverLabelWithExtraSpace: this.props.showScrubber, icon: o ? n.createElement(g.default, null) : n.createElement(f.default, null), onPress: i, size: I(r) ? "xSmall" : "medium", testID: "captions" });
                             }
                         }),
                         (this._renderTimePlayed = () =>
@@ -537,7 +537,7 @@
             s.metadata = { width: 24, height: 24 };
             const l = s;
         },
-        466445: (e, t, r) => {
+        83515: (e, t, r) => {
             r.r(t), r.d(t, { default: () => l });
             var n = r(202784),
                 o = r(890601),
@@ -545,7 +545,7 @@
                 a = r(347101);
             const s = (e = {}) => {
                 const { direction: t } = (0, i.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M21 12L4 2v20l17-10z" })) }, { writingDirection: t });
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M15 1.06v21.88L6.68 17H3.5C2.12 17 1 15.88 1 14.5v-5C1 8.12 2.12 7 3.5 7h3.18L15 1.06zM6 9H3.5c-.28 0-.5.22-.5.5v5c0 .28.22.5.5.5H6V9zm2 6.49l5 3.57V4.94L8 8.51v6.98zm10.5-6.9l2 2 2-2L23.91 10l-2 2 2 2-1.41 1.41-2-2-2 2L17.09 14l2-2-2-2 1.41-1.41z" })) }, { writingDirection: t });
             };
             s.metadata = { width: 24, height: 24 };
             const l = s;
@@ -688,4 +688,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.MediaPreviewVideoPlayer.0579dbba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.MediaPreviewVideoPlayer.5c381d1a.js.map

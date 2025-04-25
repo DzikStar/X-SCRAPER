@@ -254,8 +254,8 @@
                         name: "legacy",
                         plural: !1,
                         selections: [
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }, action: "THROW", path: "legacy.screen_name" },
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null }, action: "THROW", path: "legacy.profile_image_url_https" },
+                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }, action: "THROW" },
+                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null }, action: "THROW" },
                             { alias: null, args: null, kind: "ScalarField", name: "verified_type", storageKey: null },
                         ],
                         storageKey: null,
@@ -286,13 +286,13 @@
                         plural: !1,
                         selections: [
                             { alias: null, args: null, kind: "ScalarField", name: "id_str", storageKey: null },
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null }, action: "THROW", path: "legacy.profile_image_url_https" },
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null }, action: "THROW", path: "legacy.name" },
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }, action: "THROW", path: "legacy.screen_name" },
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }, action: "THROW", path: "legacy.protected" },
+                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null }, action: "THROW" },
+                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null }, action: "THROW" },
+                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }, action: "THROW" },
+                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }, action: "THROW" },
                             { alias: null, args: null, kind: "ScalarField", name: "verified_type", storageKey: null },
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }, action: "THROW", path: "legacy.verified" },
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null }, action: "THROW", path: "legacy.followed_by" },
+                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }, action: "THROW" },
+                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null }, action: "THROW" },
                         ],
                         storageKey: null,
                     },
@@ -348,11 +348,11 @@
                             name: "legacy",
                             plural: !1,
                             selections: [
-                                { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }, action: "THROW", path: "legacy.protected" },
-                                { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }, action: "THROW", path: "legacy.verified" },
+                                { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }, action: "THROW" },
+                                { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }, action: "THROW" },
                                 { alias: null, args: null, kind: "ScalarField", name: "verified_type", storageKey: null },
-                                { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null }, action: "THROW", path: "legacy.name" },
-                                { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }, action: "THROW", path: "legacy.screen_name" },
+                                { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null }, action: "THROW" },
+                                { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }, action: "THROW" },
                             ],
                             storageKey: null,
                         },
@@ -404,7 +404,7 @@
                         metadata: null,
                         name: "fetchDownloadSettingAllowedQuery",
                         selections: [
-                            { kind: "RequiredField", field: (n = { alias: null, args: null, concreteType: "UserPreferences", kind: "LinkedField", name: "user_preferences", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "allow_video_downloads", storageKey: null }], storageKey: null }), action: "THROW", path: "user_preferences" },
+                            { kind: "RequiredField", field: (n = { alias: null, args: null, concreteType: "UserPreferences", kind: "LinkedField", name: "user_preferences", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "allow_video_downloads", storageKey: null }], storageKey: null }), action: "THROW" },
                             {
                                 alias: "viewer",
                                 args: (i = [{ kind: "Literal", name: "s", value: "4721" }]),
@@ -717,4 +717,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7ec4485e.bdb2f6ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7ec4485e.08ca854a.js.map

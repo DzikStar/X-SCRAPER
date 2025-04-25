@@ -2,9 +2,9 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["shared~bundle.ReportCenter~bundle.SafetyCenter-e96e9bea"],
     {
-        704979: (e, l, t) => {
-            t.d(l, { Z: () => c });
-            var n,
+        704979: (e, l, n) => {
+            n.d(l, { Z: () => c });
+            var t,
                 a,
                 r,
                 i,
@@ -46,11 +46,11 @@
                                                             kind: "InlineDataFragmentSpread",
                                                             name: "formatRichText_timelineReferenceObject",
                                                             selections: [
-                                                                (n = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }),
+                                                                (t = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }),
                                                                 { kind: "InlineFragment", selections: (r = [(a = { alias: null, args: null, kind: "ScalarField", name: "text", storageKey: null })]), type: "TimelineRichTextCashtag", abstractKey: null },
                                                                 { kind: "InlineFragment", selections: [(i = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }), (s = { alias: null, args: null, kind: "ScalarField", name: "url", storageKey: null })], type: "TimelineRichTextList", abstractKey: null },
                                                                 { kind: "InlineFragment", selections: r, type: "TimelineRichTextHashtag", abstractKey: null },
-                                                                { kind: "InlineFragment", selections: [(o = { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [n, { kind: "InlineFragment", selections: [{ alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }], type: "User", abstractKey: null }], storageKey: null }], storageKey: null })], type: "TimelineRichTextUser", abstractKey: null },
+                                                                { kind: "InlineFragment", selections: [(o = { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [t, { kind: "InlineFragment", selections: [{ alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }], type: "User", abstractKey: null }], storageKey: null }], storageKey: null })], type: "TimelineRichTextUser", abstractKey: null },
                                                                 { kind: "InlineFragment", selections: [o, { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }], type: "TimelineRichTextMention", abstractKey: null },
                                                                 {
                                                                     kind: "InlineDataFragmentSpread",
@@ -126,20 +126,20 @@
             u.hash = "e0ccc0e45e3e5e3650f3f763fd746317";
             const c = u;
         },
-        625661: (e, l, t) => {
-            t.d(l, { ZP: () => m });
-            var n = t(202784),
-                a = t(614983),
-                r = t.n(a),
-                i = t(325686),
-                s = t(370006),
-                o = t(786998),
-                u = t(929028),
-                c = t(386802);
-            function d(e, l, t) {
-                return e || (!l && t ? "fixed" : void 0);
+        625661: (e, l, n) => {
+            n.d(l, { ZP: () => m });
+            var t = n(202784),
+                a = n(614983),
+                r = n.n(a),
+                i = n(325686),
+                s = n(370006),
+                o = n(786998),
+                u = n(929028),
+                c = n(386802);
+            function d(e, l, n) {
+                return e || (!l && n ? "fixed" : void 0);
             }
-            class m extends n.Component {
+            class m extends t.Component {
                 constructor(...e) {
                     super(...e),
                         (this._handleBackClick = () => {
@@ -152,26 +152,26 @@
                         });
                 }
                 _renderContent() {
-                    const { backButtonType: e, centerTitle: l, centeredLogo: t, fixed: a, hideBackButton: r, isFullWidth: i, isLarge: u, leftControl: c, middleControl: m, position: g, rightControl: y, secondaryBar: p, style: k, subtitle: _, title: h, titleDomId: F, titleIconCell: f, titleIconCellSize: T, withBackground: K, withWideContainer: b } = this.props,
+                    const { backButtonType: e, centerTitle: l, centeredLogo: n, fixed: a, hideBackButton: r, isFullWidth: i, isLarge: u, leftControl: c, middleControl: m, position: g, rightControl: y, secondaryBar: p, style: _, subtitle: k, title: h, titleDomId: f, titleIconCell: F, titleIconCellSize: T, withBackground: b, withWideContainer: K } = this.props,
                         { isModal: w } = this.context,
-                        R = r ? c : n.createElement(s.Z, { backButtonType: e, onClick: this._handleBackClick }),
-                        S = (function (e, l, t) {
-                            return e && !(l && t);
-                        })(!!K, w, !!p);
-                    return n.createElement(n.Fragment, null, n.createElement(o.Z, { centerTitle: l, centeredLogo: t, isFullWidth: i, isLarge: u, leftControl: R, middleControl: m, position: d(g, w, a), rightControl: y, style: k, subtitle: _, title: h, titleDomId: F, titleIconCell: f, titleIconCellSize: T, withBackground: S, withWideContainer: b }), p || null);
+                        R = r ? c : t.createElement(s.Z, { backButtonType: e, onClick: this._handleBackClick }),
+                        S = (function (e, l, n) {
+                            return e && !(l && n);
+                        })(!!b, w, !!p);
+                    return t.createElement(t.Fragment, null, t.createElement(o.Z, { centerTitle: l, centeredLogo: n, isFullWidth: i, isLarge: u, leftControl: R, middleControl: m, position: d(g, w, a), rightControl: y, style: _, subtitle: k, title: h, titleDomId: f, titleIconCell: F, titleIconCellSize: T, withBackground: S, withWideContainer: K }), p || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
                         { isModal: l } = this.context,
-                        t = u.Z.getBackgroundStyles();
-                    return l ? n.createElement(i.Z, { style: !!e && t }, this._renderContent()) : this._renderContent();
+                        n = u.Z.getBackgroundStyles();
+                    return l ? t.createElement(i.Z, { style: !!e && n }, this._renderContent()) : this._renderContent();
                 }
             }
             (m.contextType = c.Z), (m.defaultProps = { fixed: !0, backLocation: "/", isFullWidth: !1, isLarge: !1, withBackground: !0 });
         },
-        815753: (e, l, t) => {
-            t.d(l, { Z: () => V });
-            var n = {
+        815753: (e, l, n) => {
+            n.d(l, { Z: () => P });
+            var t = {
                 argumentDefinitions: [],
                 kind: "Fragment",
                 metadata: null,
@@ -185,20 +185,15 @@
                 abstractKey: "__isReportEntityResults",
                 hash: "9004c662349dd00b791d95621cc9c9f4",
             };
-            const a = n;
+            const a = t;
             var r,
                 i,
                 s,
-                o,
-                u,
-                c,
-                d,
-                m,
-                g = t(202784),
-                y = (t(585488), t(277660)),
-                p = t.n(y),
-                k = t(807896),
-                _ = {
+                o = n(202784),
+                u = (n(585488), n(277660)),
+                c = n.n(u),
+                d = n(807896),
+                m = {
                     argumentDefinitions: [],
                     kind: "Fragment",
                     metadata: null,
@@ -225,8 +220,64 @@
                                             name: "tweet",
                                             plural: !1,
                                             selections: [
-                                                { alias: null, args: null, concreteType: "TweetCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [(i = { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null }), (s = { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null }), { kind: "RequiredField", field: (o = { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }), action: "THROW", path: "result.tweet.core.user_results.result.legacy.protected" }, (u = { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }), (c = { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null }), { kind: "RequiredField", field: (d = { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }), action: "THROW", path: "result.tweet.core.user_results.result.legacy.verified" }], storageKey: null }], type: "User", abstractKey: null }], storageKey: null }], storageKey: null }], storageKey: null },
-                                                (m = {
+                                                (i = {
+                                                    alias: null,
+                                                    args: null,
+                                                    concreteType: "TweetCore",
+                                                    kind: "LinkedField",
+                                                    name: "core",
+                                                    plural: !1,
+                                                    selections: [
+                                                        {
+                                                            alias: null,
+                                                            args: null,
+                                                            concreteType: "UserResults",
+                                                            kind: "LinkedField",
+                                                            name: "user_results",
+                                                            plural: !1,
+                                                            selections: [
+                                                                {
+                                                                    alias: null,
+                                                                    args: null,
+                                                                    concreteType: null,
+                                                                    kind: "LinkedField",
+                                                                    name: "result",
+                                                                    plural: !1,
+                                                                    selections: [
+                                                                        {
+                                                                            kind: "InlineFragment",
+                                                                            selections: [
+                                                                                {
+                                                                                    alias: null,
+                                                                                    args: null,
+                                                                                    concreteType: "ApiUser",
+                                                                                    kind: "LinkedField",
+                                                                                    name: "legacy",
+                                                                                    plural: !1,
+                                                                                    selections: [
+                                                                                        { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null },
+                                                                                        { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null },
+                                                                                        { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }, action: "THROW" },
+                                                                                        { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
+                                                                                        { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
+                                                                                        { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }, action: "THROW" },
+                                                                                    ],
+                                                                                    storageKey: null,
+                                                                                },
+                                                                            ],
+                                                                            type: "User",
+                                                                            abstractKey: null,
+                                                                        },
+                                                                    ],
+                                                                    storageKey: null,
+                                                                },
+                                                            ],
+                                                            storageKey: null,
+                                                        },
+                                                    ],
+                                                    storageKey: null,
+                                                }),
+                                                (s = {
                                                     alias: null,
                                                     args: null,
                                                     concreteType: "LegacyTweet",
@@ -249,7 +300,7 @@
                                     type: "TweetWithVisibilityResults",
                                     abstractKey: null,
                                 },
-                                { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "TweetCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [i, s, { kind: "RequiredField", field: o, action: "THROW", path: "result.core.user_results.result.legacy.protected" }, u, c, { kind: "RequiredField", field: d, action: "THROW", path: "result.core.user_results.result.legacy.verified" }], storageKey: null }], type: "User", abstractKey: null }], storageKey: null }], storageKey: null }], storageKey: null }, m], type: "Tweet", abstractKey: null },
+                                { kind: "InlineFragment", selections: [i, s], type: "Tweet", abstractKey: null },
                                 { kind: "InlineFragment", selections: [r, { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "tombstone", plural: !1, selections: [{ kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "TimelineRichText", kind: "LinkedField", name: "text", plural: !1, selections: [{ args: null, kind: "FragmentSpread", name: "RichText_timelineRichText" }], storageKey: null }], type: "TextTombstone", abstractKey: null }], storageKey: null }], type: "TweetTombstone", abstractKey: null },
                             ],
                             storageKey: null,
@@ -258,53 +309,53 @@
                     type: "TweetResults",
                     abstractKey: null,
                 };
-            _.hash = "6ca7b30df98086509a3ad250e68ff073";
-            const h = _;
-            var F = t(325686),
-                f = t(386802),
-                T = t(995145),
-                K = t(821966),
-                b = t(54989),
-                w = t(373926),
-                R = t(823161),
-                S = t(392237),
-                x = t(674132),
-                C = t.n(x),
-                E = t(143778),
-                v = t(323265),
-                L = t(443781),
-                Z = t(382779);
-            const I = C().c9853de0,
-                U = { display_text_range: [0, 24], favorite_count: 0, favorited: !1, id: 0, lang: "en", permalink: "", reply_count: 0, retweet_count: 0, retweeted: !1 },
-                B = { created_at: "", default_profile: !1, default_profile_image: !1, fast_followers_count: 0, favourites_count: 0, follow_request_sent: !1, has_custom_timelines: !1, id: 0, listed_count: 0, location: "", media_count: 0, normal_followers_count: 0, notifications: !1, profile_banner_url: "", show_all_inline_media: !1, statuses_count: 0, time_zone: "", url: "", utc_offset: 0, withheld_in_countries: [], entities: {}, followed_by: !1, followers_count: 0, following: !1, friends_count: 0, id_str: "0", is_translator: !1, translator_type: "none", withheld_scope: "" },
-                D = ({ removeTweetContent: e, tweet_results: l }) => {
-                    const t = p()(h, l),
-                        { isModal: n } = g.useContext(f.Z),
-                        { featureSwitches: a } = g.useContext(L.rC),
+            m.hash = "6ca7b30df98086509a3ad250e68ff073";
+            const g = m;
+            var y = n(325686),
+                p = n(386802),
+                _ = n(995145),
+                k = n(821966),
+                h = n(54989),
+                f = n(373926),
+                F = n(823161),
+                T = n(392237),
+                b = n(674132),
+                K = n.n(b),
+                w = n(143778),
+                R = n(323265),
+                S = n(443781),
+                x = n(382779);
+            const C = K().c9853de0,
+                E = { display_text_range: [0, 24], favorite_count: 0, favorited: !1, id: 0, lang: "en", permalink: "", reply_count: 0, retweet_count: 0, retweeted: !1 },
+                v = { created_at: "", default_profile: !1, default_profile_image: !1, fast_followers_count: 0, favourites_count: 0, follow_request_sent: !1, has_custom_timelines: !1, id: 0, listed_count: 0, location: "", media_count: 0, normal_followers_count: 0, notifications: !1, profile_banner_url: "", show_all_inline_media: !1, statuses_count: 0, time_zone: "", url: "", utc_offset: 0, withheld_in_countries: [], entities: {}, followed_by: !1, followers_count: 0, following: !1, friends_count: 0, id_str: "0", is_translator: !1, translator_type: "none", withheld_scope: "" },
+                Z = ({ removeTweetContent: e, tweet_results: l }) => {
+                    const n = c()(g, l),
+                        { isModal: t } = o.useContext(p.Z),
+                        { featureSwitches: a } = o.useContext(S.rC),
                         r = a.isTrue("sc_r4_enabled"),
-                        i = t?.result?.__typename,
-                        s = "TweetWithVisibilityResults" === i ? t.result?.tweet : t.result,
-                        o = s?.legacy?.full_text,
-                        u = v.ZP.isTwitterApp(),
-                        c = g.useCallback((e) => g.createElement(T.Z.UserAvatar, (0, k.Z)({}, e, { withHoverCard: !u, withLink: !u })), [u]),
-                        d = g.useCallback(() => (e ? null : g.createElement(K.Z, { label: I, render: (e) => g.createElement(b.Z, (0, k.Z)({}, e, { style: H.disclosure })) }, o || "")), [o, e]);
+                        i = n?.result?.__typename,
+                        s = "TweetWithVisibilityResults" === i ? n.result?.tweet : n.result,
+                        u = s?.legacy?.full_text,
+                        m = R.ZP.isTwitterApp(),
+                        T = o.useCallback((e) => o.createElement(_.Z.UserAvatar, (0, d.Z)({}, e, { withHoverCard: !m, withLink: !m })), [m]),
+                        b = o.useCallback(() => (e ? null : o.createElement(k.Z, { label: C, render: (e) => o.createElement(h.Z, (0, d.Z)({}, e, { style: I.disclosure })) }, u || "")), [u, e]);
                     if ("TweetTombstone" === i) {
-                        const e = t.result?.tombstone?.text;
-                        if (e) return g.createElement(F.Z, { style: n && H.wideScreen }, g.createElement(w.Z, { withFooterGap: !1, withHeader: !1, withHorizontalPadding: !1 }, g.createElement(Z.H, { timelineRichText: e })));
+                        const e = n.result?.tombstone?.text;
+                        if (e) return o.createElement(y.Z, { style: t && I.wideScreen }, o.createElement(f.Z, { withFooterGap: !1, withHeader: !1, withHorizontalPadding: !1 }, o.createElement(x.H, { timelineRichText: e })));
                     }
                     return ((l) => {
                         if (l?.core?.user_results.result?.legacy && l.legacy) {
-                            const t = l.core.user_results.result.legacy,
+                            const n = l.core.user_results.result.legacy,
                                 a = { richText: { text: "abc", entities: [] }, richRevealText: { rtl: !1, text: "View", entities: [] }, text: "abc" },
-                                i = { tweet: { ...U, id_str: l.legacy.id_str || "", created_at: l.legacy.created_at || "", text: e ? "" : l.legacy.full_text || "", tombstoneInfo: a, user: { ...B, description: t.description || "", profile_image_url_https: t.profile_image_url_https || "", protected: t.protected || !1, screen_name: t.screen_name || "", name: t.name || "", verified: t.verified || !1 } } };
-                            return g.createElement(F.Z, { style: [H.tweet, n && H.wideScreen] }, r ? g.createElement(T.Z, (0, k.Z)({}, i, { renderActionsBar: E.Z, renderTimestamp: E.Z, renderTombstone: d, renderUserAvatar: E.Z, renderUserName: (e) => g.createElement(F.Z, { style: H.avatarContainer }, g.createElement(R.default, { screenName: i.tweet.user.screen_name, size: "small", uri: i.tweet.user.profile_image_url_https }), g.createElement(T.Z.UserName, e)), staticLinkConfig: null })) : g.createElement(T.Z, (0, k.Z)({}, i, { renderActionsBar: E.Z, renderTimestamp: (e) => g.createElement(T.Z.Timestamp, (0, k.Z)({}, e, { link: void 0 })), renderTombstone: d, renderUserAvatar: c, staticLinkConfig: null })));
+                                i = { tweet: { ...E, id_str: l.legacy.id_str || "", created_at: l.legacy.created_at || "", text: e ? "" : l.legacy.full_text || "", tombstoneInfo: a, user: { ...v, description: n.description || "", profile_image_url_https: n.profile_image_url_https || "", protected: n.protected || !1, screen_name: n.screen_name || "", name: n.name || "", verified: n.verified || !1 } } };
+                            return o.createElement(y.Z, { style: [I.tweet, t && I.wideScreen] }, r ? o.createElement(_.Z, (0, d.Z)({}, i, { renderActionsBar: w.Z, renderTimestamp: w.Z, renderTombstone: b, renderUserAvatar: w.Z, renderUserName: (e) => o.createElement(y.Z, { style: I.avatarContainer }, o.createElement(F.default, { screenName: i.tweet.user.screen_name, size: "small", uri: i.tweet.user.profile_image_url_https }), o.createElement(_.Z.UserName, e)), staticLinkConfig: null })) : o.createElement(_.Z, (0, d.Z)({}, i, { renderActionsBar: w.Z, renderTimestamp: (e) => o.createElement(_.Z.Timestamp, (0, d.Z)({}, e, { link: void 0 })), renderTombstone: b, renderUserAvatar: T, staticLinkConfig: null })));
                         }
                         return null;
                     })(s);
                 },
-                W = g.memo(D),
-                H = S.default.create((e) => ({ disclosure: { border: "none", marginVertical: e.spaces.space8 }, tweet: { borderWidth: e.borderWidths.small, borderColor: e.colors.gray100, borderStyle: "solid", borderRadius: e.borderRadii.xLarge }, wideScreen: { marginHorizontal: e.spaces.space32 }, avatarContainer: { flexDirection: "row", display: "flex", alignItems: "center", gap: 8, width: "100%" } }));
-            var A = {
+                L = o.memo(Z),
+                I = T.default.create((e) => ({ disclosure: { border: "none", marginVertical: e.spaces.space8 }, tweet: { borderWidth: e.borderWidths.small, borderColor: e.colors.gray100, borderStyle: "solid", borderRadius: e.borderRadii.xLarge }, wideScreen: { marginHorizontal: e.spaces.space32 }, avatarContainer: { flexDirection: "row", display: "flex", alignItems: "center", gap: 8, width: "100%" } }));
+            var U = {
                 argumentDefinitions: [],
                 kind: "Fragment",
                 metadata: null,
@@ -350,66 +401,66 @@
                 abstractKey: null,
                 hash: "fd6bd3ce65fc643c13eaf27668e8d085",
             };
-            const q = A;
-            var z = t(673510);
-            const O = C().a23e724a,
-                P = [],
-                M = ({ userResults: e }) => {
-                    const { featureSwitches: l } = g.useContext(L.rC),
-                        t = l.isTrue("report_center_mvp_r2_enabled"),
-                        n = p()(q, e),
-                        { isModal: a } = g.useContext(f.Z),
-                        r = n?.result?.legacy,
+            const B = U;
+            var D = n(673510);
+            const W = K().a23e724a,
+                H = [],
+                A = ({ userResults: e }) => {
+                    const { featureSwitches: l } = o.useContext(S.rC),
+                        n = l.isTrue("report_center_mvp_r2_enabled"),
+                        t = c()(B, e),
+                        { isModal: a } = o.useContext(p.Z),
+                        r = t?.result?.legacy,
                         i = r?.idStr || "",
                         s = r?.name || "",
-                        o = r?.profile_image_url_https || "",
-                        u = r?.screen_name || "";
-                    return i ? g.createElement(F.Z, { style: [N.userCellContainer, a && N.wideScreen] }, g.createElement(z.ZP, { avatarUri: o, displayMode: "UserDetailed", entities: {}, name: s, screenName: u, userId: i })) : t ? g.createElement(w.Z, { indents: P }, O) : null;
+                        u = r?.profile_image_url_https || "",
+                        d = r?.screen_name || "";
+                    return i ? o.createElement(y.Z, { style: [z.userCellContainer, a && z.wideScreen] }, o.createElement(D.ZP, { avatarUri: u, displayMode: "UserDetailed", entities: {}, name: s, screenName: d, userId: i })) : n ? o.createElement(f.Z, { indents: H }, W) : null;
                 },
-                N = S.default.create((e) => ({ userCellContainer: { borderWidth: e.borderWidths.small, borderColor: e.colors.gray100, borderStyle: "solid", borderRadius: e.borderRadii.xLarge }, wideScreen: { marginHorizontal: e.spaces.space32 } })),
-                V = ({ removeTweetContent: e, report_entity_results: l }) => {
-                    const t = p()(a, l);
-                    switch (t.__typename) {
+                z = T.default.create((e) => ({ userCellContainer: { borderWidth: e.borderWidths.small, borderColor: e.colors.gray100, borderStyle: "solid", borderRadius: e.borderRadii.xLarge }, wideScreen: { marginHorizontal: e.spaces.space32 } })),
+                P = ({ removeTweetContent: e, report_entity_results: l }) => {
+                    const n = c()(a, l);
+                    switch (n.__typename) {
                         case "TweetResults":
-                            return g.createElement(W, { removeTweetContent: e, tweet_results: t });
+                            return o.createElement(L, { removeTweetContent: e, tweet_results: n });
                         case "UserResults":
-                            return g.createElement(M, { userResults: t });
+                            return o.createElement(A, { userResults: n });
                         default:
                             return null;
                     }
                 };
         },
-        430759: (e, l, t) => {
-            t.d(l, { Z: () => m });
-            var n = { argumentDefinitions: [], kind: "Fragment", metadata: { plural: !0 }, name: "ReportEntityList_reportEntityResults", selections: [{ args: null, kind: "FragmentSpread", name: "UncontrolledReportEntity_reportEntityResults" }], type: "ReportEntityResults", abstractKey: "__isReportEntityResults", hash: "1a7e911003850331afd76cdc59ccccb6" };
-            const a = n;
-            var r = t(202784),
-                i = t(325686),
-                s = (t(585488), t(277660)),
-                o = t.n(s),
-                u = t(174326),
-                c = t(392237),
-                d = t(815753);
+        430759: (e, l, n) => {
+            n.d(l, { Z: () => m });
+            var t = { argumentDefinitions: [], kind: "Fragment", metadata: { plural: !0 }, name: "ReportEntityList_reportEntityResults", selections: [{ args: null, kind: "FragmentSpread", name: "UncontrolledReportEntity_reportEntityResults" }], type: "ReportEntityResults", abstractKey: "__isReportEntityResults", hash: "1a7e911003850331afd76cdc59ccccb6" };
+            const a = t;
+            var r = n(202784),
+                i = n(325686),
+                s = (n(585488), n(277660)),
+                o = n.n(s),
+                u = n(174326),
+                c = n(392237),
+                d = n(815753);
             const m = ({ carousel: e, report: l }) => {
-                    const t = o()(a, l).map((e, l) => r.createElement(d.Z, { key: l, report_entity_results: e }));
-                    return e && 1 !== t.length ? r.createElement(u.Z, { childrenStyle: g.carouselEntity, style: g.root }, t) : r.createElement(i.Z, { style: [g.root, g.simpleList] }, t);
+                    const n = o()(a, l).map((e, l) => r.createElement(d.Z, { key: l, report_entity_results: e }));
+                    return e && 1 !== n.length ? r.createElement(u.Z, { childrenStyle: g.carouselEntity, style: g.root }, n) : r.createElement(i.Z, { style: [g.root, g.simpleList] }, n);
                 },
                 g = c.default.create((e) => ({ root: { marginTop: e.spaces.space20 }, simpleList: { flexDirection: "column", gap: e.spaces.space8 }, carouselEntity: { maxWidth: "320px", width: "85%", marginEnd: e.spaces.space16 } }));
         },
-        900664: (e, l, t) => {
-            t.d(l, { Z: () => a });
-            var n = (e) => {
+        900664: (e, l, n) => {
+            n.d(l, { Z: () => a });
+            var t = (e) => {
                 "vibrate" in window.navigator && window.navigator.vibrate(e);
             };
             const a = {
                 cancel() {
-                    n(0);
+                    t(0);
                 },
                 vibrate(e) {
-                    void 0 === e && (e = 400), n(e);
+                    void 0 === e && (e = 400), t(e);
                 },
             };
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReportCenter~bundle.SafetyCenter-e96e9bea.8fe7487a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReportCenter~bundle.SafetyCenter-e96e9bea.f634438a.js.map

@@ -2,53 +2,53 @@ window.__SCRIPTS_LOADED__.runtime &&
     ((self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
         ["vendor-dfe82965"],
         {
-            705180: (e, t, n) => {
-                var i = n(171600).default,
-                    r = i(n(226290)),
-                    o = i(n(515538)),
-                    s = i(n(247739)),
-                    a = i(n(900814)),
-                    l = n(427225),
-                    u = n(286190),
+            705180: (e, t, i) => {
+                var n = i(183491).default,
+                    r = n(i(845621)),
+                    s = n(i(173771)),
+                    o = n(i(955819)),
+                    a = n(i(479035)),
+                    l = i(427225),
+                    u = i(286190),
                     c = u.generateClientObjectClientID,
-                    d = (u.isClientID, n(798452).isSuspenseSentinel),
-                    h = n(108475),
-                    f = h.ACTOR_IDENTIFIER_KEY,
-                    p = h.ERRORS_KEY,
+                    d = (u.isClientID, i(514840).isSuspenseSentinel),
+                    h = i(108475),
+                    p = h.ACTOR_IDENTIFIER_KEY,
+                    f = h.ERRORS_KEY,
                     _ = h.ID_KEY,
                     v = h.INVALIDATED_AT_KEY,
                     g = h.REF_KEY,
                     S = h.REFS_KEY,
                     m = h.RELAY_RESOLVER_VALUE_KEY,
-                    y = (h.ROOT_ID, h.TYPENAME_KEY),
-                    R = n(193860),
-                    b = n(647677);
-                n(826590);
-                function I(e, t) {
-                    var n = e[t];
-                    return n && "object" == typeof n && (n.hasOwnProperty(g) || n.hasOwnProperty(S)) && b(!1), n;
+                    R = (h.ROOT_ID, h.TYPENAME_KEY),
+                    y = i(193860),
+                    I = i(647677);
+                i(826590);
+                function b(e, t) {
+                    var i = e[t];
+                    return i && "object" == typeof i && (i.hasOwnProperty(g) || i.hasOwnProperty(S)) && I(!1), i;
                 }
-                function D(e, t, n) {
-                    var i = e[p];
-                    if (null != n && n.length > 0) null == i ? (e[p] = (0, r.default)({}, t, n)) : (i[t] = n);
-                    else if (null != i && delete i[t]) {
-                        for (var o in i) if (i.hasOwnProperty(o)) return;
-                        delete e[p];
+                function D(e, t, i) {
+                    var n = e[f];
+                    if (null != i && i.length > 0) null == n ? (e[f] = (0, r.default)({}, t, i)) : (n[t] = i);
+                    else if (null != n && delete n[t]) {
+                        for (var s in n) if (n.hasOwnProperty(s)) return;
+                        delete e[f];
                     }
                 }
-                function O(e, t, n) {
-                    e[t] = n;
+                function O(e, t, i) {
+                    e[t] = i;
                 }
                 e.exports = {
                     clone: function (e) {
                         return (0, a.default)({}, e);
                     },
                     copyFields: function (e, t) {
-                        for (var n in e) e.hasOwnProperty(n) && n !== _ && n !== y && (t[n] = e[n]);
+                        for (var i in e) e.hasOwnProperty(i) && i !== _ && i !== R && (t[i] = e[i]);
                     },
                     create: function (e, t) {
-                        var n = {};
-                        return (n[_] = e), (n[y] = t), n;
+                        var i = {};
+                        return (i[_] = e), (i[R] = t), i;
                     },
                     freeze: function (e) {
                         l(e);
@@ -60,13 +60,13 @@ window.__SCRIPTS_LOADED__.runtime &&
                         return e[_];
                     },
                     getErrors: function (e, t) {
-                        var n;
-                        return null === (n = e[p]) || void 0 === n ? void 0 : n[t];
+                        var i;
+                        return null === (i = e[f]) || void 0 === i ? void 0 : i[t];
                     },
                     getFields: function (e) {
-                        return p in e
+                        return f in e
                             ? Object.keys(e).filter(function (e) {
-                                  return e !== p;
+                                  return e !== f;
                               })
                             : Object.keys(e);
                     },
@@ -76,50 +76,50 @@ window.__SCRIPTS_LOADED__.runtime &&
                         return "number" != typeof t ? null : t;
                     },
                     getLinkedRecordID: function (e, t) {
-                        var n = e[t];
-                        if (null == n) return n;
-                        var i = n;
-                        return ("object" == typeof i && i && "string" == typeof i[g]) || b(!1), i[g];
+                        var i = e[t];
+                        if (null == i) return i;
+                        var n = i;
+                        return ("object" == typeof n && n && "string" == typeof n[g]) || I(!1), n[g];
                     },
                     getLinkedRecordIDs: function (e, t) {
-                        var n = e[t];
-                        return null == n ? n : (("object" == typeof n && Array.isArray(n[S])) || b(!1), n[S]);
+                        var i = e[t];
+                        return null == i ? i : (("object" == typeof i && Array.isArray(i[S])) || I(!1), i[S]);
                     },
                     getType: function (e) {
-                        return e[y];
+                        return e[R];
                     },
-                    getValue: I,
+                    getValue: b,
                     hasValue: function (e, t) {
                         return t in e;
                     },
                     hasLinkedRecordID: function (e, t) {
-                        var n = e[t];
-                        return null != n && "object" == typeof n && n && "string" == typeof n[g];
+                        var i = e[t];
+                        return null != i && "object" == typeof i && i && "string" == typeof i[g];
                     },
                     hasLinkedRecordIDs: function (e, t) {
-                        var n = e[t];
+                        var i = e[t];
                         return (
-                            null != n &&
-                            "object" == typeof n &&
-                            Array.isArray(n[S]) &&
-                            n[S].every(function (e) {
+                            null != i &&
+                            "object" == typeof i &&
+                            Array.isArray(i[S]) &&
+                            i[S].every(function (e) {
                                 return "string" == typeof e;
                             })
                         );
                     },
                     merge: function (e, t) {
-                        if (p in e || p in t) {
-                            var n = e[p],
-                                i = (0, o.default)(e, [p].map(s.default)),
-                                r = t[p],
-                                l = (0, o.default)(t, [p].map(s.default)),
-                                u = (0, a.default)((0, a.default)({}, i), l);
-                            if (null == n && null == r) return u;
+                        if (f in e || f in t) {
+                            var i = e[f],
+                                n = (0, s.default)(e, [f].map(o.default)),
+                                r = t[f],
+                                l = (0, s.default)(t, [f].map(o.default)),
+                                u = (0, a.default)((0, a.default)({}, n), l);
+                            if (null == i && null == r) return u;
                             var c = {};
-                            for (var d in n) l.hasOwnProperty(d) || (c[d] = n[d]);
+                            for (var d in i) l.hasOwnProperty(d) || (c[d] = i[d]);
                             for (var h in r) c[h] = r[h];
-                            for (var f in c) {
-                                u[p] = c;
+                            for (var p in c) {
+                                u[f] = c;
                                 break;
                             }
                             return u;
@@ -128,57 +128,57 @@ window.__SCRIPTS_LOADED__.runtime &&
                     },
                     setErrors: D,
                     setValue: O,
-                    setLinkedRecordID: function (e, t, n) {
-                        var i = {};
-                        (i[g] = n), (e[t] = i);
+                    setLinkedRecordID: function (e, t, i) {
+                        var n = {};
+                        (n[g] = i), (e[t] = n);
                     },
-                    setLinkedRecordIDs: function (e, t, n) {
-                        var i = {};
-                        (i[S] = n), (e[t] = i);
+                    setLinkedRecordIDs: function (e, t, i) {
+                        var n = {};
+                        (n[S] = i), (e[t] = n);
                     },
                     update: function (e, t) {
-                        var n,
-                            i = e[p],
-                            r = t[p],
-                            o = null;
-                        if (null == i && null == r) {
-                            var s;
-                            for (var l in t) (!o && R(e[l], t[l])) || ((o = null !== o ? o : (0, a.default)({}, e))[l] = t[l]);
-                            return null !== (s = o) && void 0 !== s ? s : e;
+                        var i,
+                            n = e[f],
+                            r = t[f],
+                            s = null;
+                        if (null == n && null == r) {
+                            var o;
+                            for (var l in t) (!s && y(e[l], t[l])) || ((s = null !== s ? s : (0, a.default)({}, e))[l] = t[l]);
+                            return null !== (o = s) && void 0 !== o ? o : e;
                         }
                         for (var u in t)
-                            if (u !== p) {
+                            if (u !== f) {
                                 var c = t[u],
                                     d = null == r ? void 0 : r[u];
-                                if (null == o) {
+                                if (null == s) {
                                     var h = e[u],
-                                        f = null == i ? void 0 : i[u];
-                                    if (R(h, c) && R(f, d)) continue;
-                                    (o = (0, a.default)({}, e)), null != i && (o[p] = (0, a.default)({}, i));
+                                        p = null == n ? void 0 : n[u];
+                                    if (y(h, c) && y(p, d)) continue;
+                                    (s = (0, a.default)({}, e)), null != n && (s[f] = (0, a.default)({}, n));
                                 }
-                                O(o, u, c), D(o, u, d);
+                                O(s, u, c), D(s, u, d);
                             }
-                        return null !== (n = o) && void 0 !== n ? n : e;
+                        return null !== (i = s) && void 0 !== i ? i : e;
                     },
                     getActorLinkedRecordID: function (e, t) {
-                        var n = e[t];
-                        return null == n ? n : (("object" != typeof n || "string" != typeof n[g] || null == n[f]) && b(!1), [n[f], n[g]]);
+                        var i = e[t];
+                        return null == i ? i : (("object" != typeof i || "string" != typeof i[g] || null == i[p]) && I(!1), [i[p], i[g]]);
                     },
-                    setActorLinkedRecordID: function (e, t, n, i) {
+                    setActorLinkedRecordID: function (e, t, i, n) {
                         var r = {};
-                        (r[g] = i), (r[f] = n), (e[t] = r);
+                        (r[g] = n), (r[p] = i), (e[t] = r);
                     },
                     getResolverLinkedRecordID: function (e, t) {
-                        var n = I(e, m);
-                        return null == n || d(n) ? null : ("object" == typeof n && (n = n.id), "string" != typeof n && b(!1), c(t, n));
+                        var i = b(e, m);
+                        return null == i || d(i) ? null : ("object" == typeof i && (i = i.id), "string" != typeof i && I(!1), c(t, i));
                     },
                     getResolverLinkedRecordIDs: function (e, t) {
-                        var n = I(e, m);
-                        return null == n || d(n)
+                        var i = b(e, m);
+                        return null == i || d(i)
                             ? null
-                            : (Array.isArray(n) || b(!1),
-                              n.map(function (e) {
-                                  return null == e ? null : ("object" == typeof e && (e = e.id), "string" != typeof e && b(!1), c(t, e));
+                            : (Array.isArray(i) || I(!1),
+                              i.map(function (e) {
+                                  return null == e ? null : ("object" == typeof e && (e = e.id), "string" != typeof e && I(!1), c(t, e));
                               }));
                     },
                     toJSON: function (e) {
@@ -186,43 +186,43 @@ window.__SCRIPTS_LOADED__.runtime &&
                     },
                 };
             },
-            464711: (e, t, n) => {
-                var i = n(700378).getFragmentVariables,
-                    r = n(108475),
-                    o = r.CLIENT_EDGE_TRAVERSAL_PATH,
-                    s = r.FRAGMENT_OWNER_KEY,
+            464711: (e, t, i) => {
+                var n = i(700378).getFragmentVariables,
+                    r = i(108475),
+                    s = r.CLIENT_EDGE_TRAVERSAL_PATH,
+                    o = r.FRAGMENT_OWNER_KEY,
                     a = r.FRAGMENT_POINTER_IS_WITHIN_UNMATCHED_TYPE_REFINEMENT,
                     l = r.FRAGMENTS_KEY,
                     u = r.ID_KEY,
-                    c = n(193860),
-                    d = n(647677);
-                n(826590);
+                    c = i(193860),
+                    d = i(647677);
+                i(826590);
                 function h(e, t) {
                     ("object" != typeof t || null === t || Array.isArray(t)) && d(!1);
-                    var n = t[u],
+                    var i = t[u],
                         r = t[l],
-                        c = t[s],
-                        h = t[o];
-                    if ("string" == typeof n && "object" == typeof r && null !== r && "object" == typeof r[e.name] && null !== r[e.name] && "object" == typeof c && null !== c && (null == h || Array.isArray(h))) {
-                        var f = c,
-                            p = h,
+                        c = t[o],
+                        h = t[s];
+                    if ("string" == typeof i && "object" == typeof r && null !== r && "object" == typeof r[e.name] && null !== r[e.name] && "object" == typeof c && null !== c && (null == h || Array.isArray(h))) {
+                        var p = c,
+                            f = h,
                             _ = r[e.name];
-                        return R(e, n, i(e, f.variables, _), f, !0 === _[a], p);
+                        return y(e, i, n(e, p.variables, _), p, !0 === _[a], f);
                     }
                     return null;
                 }
-                function f(e, t) {
-                    var n = null;
+                function p(e, t) {
+                    var i = null;
                     return (
-                        t.forEach(function (t, i) {
+                        t.forEach(function (t, n) {
                             var r = null != t ? h(e, t) : null;
-                            null != r && (n = n || []).push(r);
+                            null != r && (i = i || []).push(r);
                         }),
-                        null == n ? null : { kind: "PluralReaderSelector", selectors: n }
+                        null == i ? null : { kind: "PluralReaderSelector", selectors: i }
                     );
                 }
-                function p(e, t) {
-                    return null == t ? t : e.metadata && !0 === e.metadata.plural ? (Array.isArray(t) || d(!1), f(e, t)) : (Array.isArray(t) && d(!1), h(e, t));
+                function f(e, t) {
+                    return null == t ? t : e.metadata && !0 === e.metadata.plural ? (Array.isArray(t) || d(!1), p(e, t)) : (Array.isArray(t) && d(!1), h(e, t));
                 }
                 function _(e, t) {
                     return null == t
@@ -230,66 +230,66 @@ window.__SCRIPTS_LOADED__.runtime &&
                         : e.metadata && !0 === e.metadata.plural
                           ? (Array.isArray(t) || d(!1),
                             (function (e, t) {
-                                var n = null;
+                                var i = null;
                                 return (
                                     t.forEach(function (t) {
-                                        var i = null != t ? v(e, t) : null;
-                                        null != i && (n = n || []).push(i);
+                                        var n = null != t ? v(e, t) : null;
+                                        null != n && (i = i || []).push(n);
                                     }),
-                                    n
+                                    i
                                 );
                             })(e, t))
                           : (Array.isArray(t) && d(!1), v(e, t));
                 }
                 function v(e, t) {
                     ("object" != typeof t || null === t || Array.isArray(t)) && d(!1);
-                    var n = t[u];
-                    return "string" == typeof n ? n : null;
+                    var i = t[u];
+                    return "string" == typeof i ? i : null;
                 }
                 function g(e, t) {
-                    var n;
-                    return null == t ? {} : !0 === (null === (n = e.metadata) || void 0 === n ? void 0 : n.plural) ? (Array.isArray(t) || d(!1), m(e, t)) : (Array.isArray(t) && d(!1), S(e, t) || {});
+                    var i;
+                    return null == t ? {} : !0 === (null === (i = e.metadata) || void 0 === i ? void 0 : i.plural) ? (Array.isArray(t) || d(!1), m(e, t)) : (Array.isArray(t) && d(!1), S(e, t) || {});
                 }
                 function S(e, t) {
-                    var n = h(e, t);
-                    return n ? n.variables : null;
+                    var i = h(e, t);
+                    return i ? i.variables : null;
                 }
                 function m(e, t) {
-                    var n = {};
+                    var i = {};
                     return (
-                        t.forEach(function (t, i) {
+                        t.forEach(function (t, n) {
                             if (null != t) {
                                 var r = S(e, t);
-                                null != r && Object.assign(n, r);
+                                null != r && Object.assign(i, r);
                             }
                         }),
-                        n
+                        i
                     );
                 }
-                function y(e, t) {
+                function R(e, t) {
                     return (
                         e.dataID === t.dataID &&
                         e.node === t.node &&
                         c(e.variables, t.variables) &&
-                        ((n = e.owner), (i = t.owner), n === i || (n.identifier === i.identifier && c(n.cacheConfig, i.cacheConfig))) &&
+                        ((i = e.owner), (n = t.owner), i === n || (i.identifier === n.identifier && c(i.cacheConfig, n.cacheConfig))) &&
                         e.isWithinUnmatchedTypeRefinement === t.isWithinUnmatchedTypeRefinement &&
                         (function (e, t) {
                             if (e === t) return !0;
                             if (null == e || null == t || e.length !== t.length) return !1;
-                            var n = e.length;
-                            for (; n--; ) {
-                                var i = e[n],
-                                    r = t[n];
-                                if (i !== r && (null == i || null == r || i.clientEdgeDestinationID !== r.clientEdgeDestinationID || i.readerClientEdge !== r.readerClientEdge)) return !1;
+                            var i = e.length;
+                            for (; i--; ) {
+                                var n = e[i],
+                                    r = t[i];
+                                if (n !== r && (null == n || null == r || n.clientEdgeDestinationID !== r.clientEdgeDestinationID || n.readerClientEdge !== r.readerClientEdge)) return !1;
                             }
                             return !0;
                         })(e.clientEdgeTraversalPath, t.clientEdgeTraversalPath)
                     );
-                    var n, i;
+                    var i, n;
                 }
-                function R(e, t, n, i) {
+                function y(e, t, i, n) {
                     var r = arguments.length > 5 ? arguments[5] : void 0;
-                    return { kind: "SingularReaderSelector", dataID: t, isWithinUnmatchedTypeRefinement: arguments.length > 4 && void 0 !== arguments[4] && arguments[4], clientEdgeTraversalPath: null != r ? r : null, node: e, variables: n, owner: i };
+                    return { kind: "SingularReaderSelector", dataID: t, isWithinUnmatchedTypeRefinement: arguments.length > 4 && void 0 !== arguments[4] && arguments[4], clientEdgeTraversalPath: null != r ? r : null, node: e, variables: i, owner: n };
                 }
                 e.exports = {
                     areEqualSelectors: function (e, t) {
@@ -300,100 +300,104 @@ window.__SCRIPTS_LOADED__.runtime &&
                                 : null == t
                                   ? null == e
                                   : "SingularReaderSelector" === e.kind && "SingularReaderSelector" === t.kind
-                                    ? y(e, t)
+                                    ? R(e, t)
                                     : "PluralReaderSelector" === e.kind &&
                                       "PluralReaderSelector" === t.kind &&
                                       e.selectors.length === t.selectors.length &&
-                                      e.selectors.every(function (e, n) {
-                                          return y(e, t.selectors[n]);
+                                      e.selectors.every(function (e, i) {
+                                          return R(e, t.selectors[i]);
                                       }))
                         );
                     },
-                    createReaderSelector: R,
-                    createNormalizationSelector: function (e, t, n) {
-                        return { dataID: t, node: e, variables: n };
+                    createReaderSelector: y,
+                    createNormalizationSelector: function (e, t, i) {
+                        return { dataID: t, node: e, variables: i };
                     },
                     getDataIDsFromFragment: _,
                     getDataIDsFromObject: function (e, t) {
-                        var n = {};
-                        for (var i in e)
-                            if (e.hasOwnProperty(i)) {
-                                var r = e[i],
-                                    o = t[i];
-                                n[i] = _(r, o);
+                        var i = {};
+                        for (var n in e)
+                            if (e.hasOwnProperty(n)) {
+                                var r = e[n],
+                                    s = t[n];
+                                i[n] = _(r, s);
                             }
-                        return n;
+                        return i;
                     },
                     getSingularSelector: h,
-                    getPluralSelector: f,
-                    getSelector: p,
+                    getPluralSelector: p,
+                    getSelector: f,
                     getSelectorsFromObject: function (e, t) {
-                        var n = {};
-                        for (var i in e)
-                            if (e.hasOwnProperty(i)) {
-                                var r = e[i],
-                                    o = t[i];
-                                n[i] = p(r, o);
+                        var i = {};
+                        for (var n in e)
+                            if (e.hasOwnProperty(n)) {
+                                var r = e[n],
+                                    s = t[n];
+                                i[n] = f(r, s);
                             }
-                        return n;
+                        return i;
                     },
                     getVariablesFromSingularFragment: S,
                     getVariablesFromPluralFragment: m,
                     getVariablesFromFragment: g,
                     getVariablesFromObject: function (e, t) {
-                        var n = {};
-                        for (var i in e)
-                            if (e.hasOwnProperty(i)) {
-                                var r = g(e[i], t[i]);
-                                Object.assign(n, r);
+                        var i = {};
+                        for (var n in e)
+                            if (e.hasOwnProperty(n)) {
+                                var r = g(e[n], t[n]);
+                                Object.assign(i, r);
                             }
-                        return n;
+                        return i;
                     },
                 };
             },
-            527753: (e, t, n) => {
-                var i = n(171600).default,
-                    r = i(n(638636)),
-                    o = i(n(226290)),
-                    s = n(177617),
-                    a = s.INTERNAL_ACTOR_IDENTIFIER_DO_NOT_USE,
-                    l = s.assertInternalActorIdentifier,
-                    u = (n(427225), n(891362)),
-                    c = n(501832),
-                    d = n(781530),
-                    h = n(892030),
-                    f = n(705180),
-                    p = n(290109),
-                    _ = n(458076),
-                    v = n(582426),
-                    g = n(907554),
-                    S = n(108475),
-                    m = n(108475),
-                    y = m.ROOT_ID,
-                    R = m.ROOT_TYPE,
-                    b = n(280587).RecordResolverCache,
-                    I = n(647677),
-                    D = (function () {
+            527753: (e, t, i) => {
+                var n = i(183491).default,
+                    r = n(i(158663)),
+                    s = n(i(845621)),
+                    o = i(177617),
+                    a = o.INTERNAL_ACTOR_IDENTIFIER_DO_NOT_USE,
+                    l = o.assertInternalActorIdentifier,
+                    u = (i(427225), i(501832)),
+                    c = i(781530),
+                    d = i(892030),
+                    h = i(482122),
+                    p = h.LiveResolverCache,
+                    f = h.RELAY_RESOLVER_LIVE_STATE_SUBSCRIPTION_KEY,
+                    _ = h.getUpdatedDataIDs,
+                    v = i(705180),
+                    g = i(290109),
+                    S = i(458076),
+                    m = i(582426),
+                    R = i(907554),
+                    y = i(108475),
+                    I = i(108475),
+                    b = I.ROOT_ID,
+                    D = I.ROOT_TYPE,
+                    O = i(647677),
+                    E = (function () {
                         function e(e, t) {
-                            var n,
-                                i,
+                            var i,
+                                n,
                                 r,
-                                s,
+                                o,
                                 a,
-                                l = this;
-                            (0, o.default)(this, "_gcStep", function () {
-                                l._gcRun && (l._gcRun.next().done ? (l._gcRun = null) : l._gcScheduler(l._gcStep));
+                                l,
+                                c,
+                                h = this;
+                            (0, s.default)(this, "_gcStep", function () {
+                                h._gcRun && (h._gcRun.next().done ? (h._gcRun = null) : h._gcScheduler(h._gcStep));
                             }),
                                 (this._currentWriteEpoch = 0),
                                 (this._gcHoldCounter = 0),
-                                (this._gcReleaseBufferSize = null !== (n = null == t ? void 0 : t.gcReleaseBufferSize) && void 0 !== n ? n : 10),
+                                (this._gcReleaseBufferSize = null !== (i = null == t ? void 0 : t.gcReleaseBufferSize) && void 0 !== i ? i : 10),
                                 (this._gcRun = null),
-                                (this._gcScheduler = null !== (i = null == t ? void 0 : t.gcScheduler) && void 0 !== i ? i : c),
-                                (this._getDataID = null !== (r = null == t ? void 0 : t.getDataID) && void 0 !== r ? r : h),
+                                (this._gcScheduler = null !== (n = null == t ? void 0 : t.gcScheduler) && void 0 !== n ? n : u),
+                                (this._getDataID = null !== (r = null == t ? void 0 : t.getDataID) && void 0 !== r ? r : d),
                                 (this._globalInvalidationEpoch = null),
                                 (this._invalidationSubscriptions = new Set()),
                                 (this._invalidatedRecordIDs = new Set()),
-                                (this.__log = null !== (s = null == t ? void 0 : t.log) && void 0 !== s ? s : null),
+                                (this.__log = null !== (o = null == t ? void 0 : t.log) && void 0 !== o ? o : null),
                                 (this._queryCacheExpirationTime = null == t ? void 0 : t.queryCacheExpirationTime),
                                 (this._operationLoader = null !== (a = null == t ? void 0 : t.operationLoader) && void 0 !== a ? a : null),
                                 (this._optimisticSource = null),
@@ -401,16 +405,19 @@ window.__SCRIPTS_LOADED__.runtime &&
                                 (this._releaseBuffer = []),
                                 (this._roots = new Map()),
                                 (this._shouldScheduleGC = !1),
-                                (this._resolverCache = new b(function () {
-                                    return l._getMutableRecordSource();
-                                })),
-                                (this._storeSubscriptions = new g(null == t ? void 0 : t.log, this._resolverCache)),
+                                (this._resolverCache = new p(function () {
+                                    return h._getMutableRecordSource();
+                                }, this)),
+                                (this._storeSubscriptions = new R(null == t ? void 0 : t.log, this._resolverCache)),
                                 (this._updatedRecordIDs = new Set()),
-                                (this._shouldProcessClientComponents = null == t ? void 0 : t.shouldProcessClientComponents),
+                                (this._shouldProcessClientComponents = null !== (l = null == t ? void 0 : t.shouldProcessClientComponents) && void 0 !== l && l),
+                                (this._resolverContext = null == t ? void 0 : t.resolverContext),
+                                (this._treatMissingFieldsAsNull = null !== (c = null == t ? void 0 : t.treatMissingFieldsAsNull) && void 0 !== c && c),
+                                (this._actorIdentifier = null == t ? void 0 : t.actorIdentifier),
                                 (function (e) {
-                                    if (!e.has(y)) {
-                                        var t = f.create(y, R);
-                                        e.set(y, t);
+                                    if (!e.has(b)) {
+                                        var t = v.create(b, D);
+                                        e.set(b, t);
                                     }
                                 })(this._recordSource);
                         }
@@ -420,25 +427,39 @@ window.__SCRIPTS_LOADED__.runtime &&
                                 var e;
                                 return null !== (e = this._optimisticSource) && void 0 !== e ? e : this._recordSource;
                             }),
+                            (t.getOperationLoader = function () {
+                                return this._operationLoader;
+                            }),
                             (t._getMutableRecordSource = function () {
                                 var e;
                                 return null !== (e = this._optimisticSource) && void 0 !== e ? e : this._recordSource;
                             }),
+                            (t.getLiveResolverPromise = function (e) {
+                                return this._resolverCache.getLiveResolverPromise(e);
+                            }),
+                            (t.batchLiveStateUpdates = function (e) {
+                                null != this.__log && this.__log({ name: "liveresolver.batch.start" });
+                                try {
+                                    this._resolverCache.batchLiveStateUpdates(e);
+                                } finally {
+                                    null != this.__log && this.__log({ name: "liveresolver.batch.end" });
+                                }
+                            }),
                             (t.check = function (e, t) {
-                                var n,
-                                    i,
+                                var i,
+                                    n,
                                     r,
-                                    o,
-                                    s = e.root,
+                                    s,
+                                    o = e.root,
                                     u = this._getMutableRecordSource(),
-                                    c = this._globalInvalidationEpoch,
+                                    d = this._globalInvalidationEpoch,
                                     h = this._roots.get(e.request.identifier),
-                                    f = null != h ? h.epoch : null;
-                                if (null != c && (null == f || f <= c)) return { status: "stale" };
-                                var p = null !== (n = null == t ? void 0 : t.handlers) && void 0 !== n ? n : [],
+                                    p = null != h ? h.epoch : null;
+                                if (null != d && (null == p || p <= d)) return { status: "stale" };
+                                var f = null !== (i = null == t ? void 0 : t.handlers) && void 0 !== i ? i : [],
                                     _ =
-                                        null !== (i = null == t ? void 0 : t.getSourceForActor) && void 0 !== i
-                                            ? i
+                                        null !== (n = null == t ? void 0 : t.getSourceForActor) && void 0 !== n
+                                            ? n
                                             : function (e) {
                                                   return l(e), u;
                                               },
@@ -448,41 +469,41 @@ window.__SCRIPTS_LOADED__.runtime &&
                                             : function (e) {
                                                   return l(e), u;
                                               };
-                                return (function (e, t, n, i) {
+                                return (function (e, t, i, n) {
                                     var r = e.mostRecentlyInvalidatedAt,
-                                        o = e.status;
+                                        s = e.status;
                                     if ("number" == typeof r && (null == t || r > t)) return { status: "stale" };
-                                    if ("missing" === o) return { status: "missing" };
-                                    if (null != n && null != i) {
-                                        if (n <= Date.now() - i) return { status: "stale" };
+                                    if ("missing" === s) return { status: "missing" };
+                                    if (null != i && null != n) {
+                                        if (i <= Date.now() - n) return { status: "stale" };
                                     }
-                                    return { status: "available", fetchTime: null != n ? n : null };
-                                })(d.check(_, v, null !== (o = null == t ? void 0 : t.defaultActorIdentifier) && void 0 !== o ? o : a, s, p, this._operationLoader, this._getDataID, this._shouldProcessClientComponents), f, null == h ? void 0 : h.fetchTime, this._queryCacheExpirationTime);
+                                    return { status: "available", fetchTime: null != i ? i : null };
+                                })(c.check(_, v, null !== (s = null == t ? void 0 : t.defaultActorIdentifier) && void 0 !== s ? s : a, o, f, this._operationLoader, this._getDataID, this._shouldProcessClientComponents, this.__log), p, null == h ? void 0 : h.fetchTime, this._queryCacheExpirationTime);
                             }),
                             (t.retain = function (e) {
                                 var t = this,
-                                    n = e.request.identifier,
-                                    i = !1,
-                                    r = this._roots.get(n);
+                                    i = e.request.identifier,
+                                    n = !1,
+                                    r = this._roots.get(i);
                                 return (
                                     null != r
                                         ? (0 === r.refCount &&
                                               (this._releaseBuffer = this._releaseBuffer.filter(function (e) {
-                                                  return e !== n;
+                                                  return e !== i;
                                               })),
                                           (r.refCount += 1))
-                                        : this._roots.set(n, { operation: e, refCount: 1, epoch: null, fetchTime: null }),
+                                        : this._roots.set(i, { operation: e, refCount: 1, epoch: null, fetchTime: null }),
                                     {
                                         dispose: function () {
-                                            if (!i) {
-                                                i = !0;
-                                                var e = t._roots.get(n);
+                                            if (!n) {
+                                                n = !0;
+                                                var e = t._roots.get(i);
                                                 if (null != e && (e.refCount--, 0 === e.refCount)) {
                                                     var r = t._queryCacheExpirationTime;
-                                                    if (null != e.fetchTime && null != r && e.fetchTime <= Date.now() - r) t._roots.delete(n), t.scheduleGC();
-                                                    else if ((t._releaseBuffer.push(n), t._releaseBuffer.length > t._gcReleaseBufferSize)) {
-                                                        var o = t._releaseBuffer.shift();
-                                                        t._roots.delete(o), t.scheduleGC();
+                                                    if (null != e.fetchTime && null != r && e.fetchTime <= Date.now() - r) t._roots.delete(i), t.scheduleGC();
+                                                    else if ((t._releaseBuffer.push(i), t._releaseBuffer.length > t._gcReleaseBufferSize)) {
+                                                        var s = t._releaseBuffer.shift();
+                                                        t._roots.delete(s), t.scheduleGC();
                                                     }
                                                 }
                                             }
@@ -491,57 +512,57 @@ window.__SCRIPTS_LOADED__.runtime &&
                                 );
                             }),
                             (t.lookup = function (e) {
-                                var t = this.getSource();
-                                return _.read(t, e, this._resolverCache);
+                                var t = this.__log;
+                                null != t && t({ name: "store.lookup.start", selector: e });
+                                var i = this.getSource(),
+                                    n = S.read(i, e, this._resolverCache, this._resolverContext);
+                                return null != t && t({ name: "store.lookup.end", selector: e }), n;
                             }),
                             (t.notify = function (e, t) {
-                                var n = this,
-                                    i = this.__log;
-                                null != i && i({ name: "store.notify.start", sourceOperation: e }), this._currentWriteEpoch++, !0 === t && (this._globalInvalidationEpoch = this._currentWriteEpoch), u.ENABLE_RELAY_RESOLVERS && this._resolverCache.invalidateDataIDs(this._updatedRecordIDs);
+                                var i = this,
+                                    n = this.__log;
+                                null != n && n({ name: "store.notify.start", sourceOperation: e }), this._currentWriteEpoch++, !0 === t && (this._globalInvalidationEpoch = this._currentWriteEpoch), this._resolverCache.invalidateDataIDs(this._updatedRecordIDs);
                                 var r = this.getSource(),
-                                    o = [];
+                                    s = [];
                                 if (
-                                    (this._storeSubscriptions.updateSubscriptions(r, this._updatedRecordIDs, o, e),
+                                    (this._storeSubscriptions.updateSubscriptions(r, this._updatedRecordIDs, s, e),
                                     this._invalidationSubscriptions.forEach(function (e) {
-                                        n._updateInvalidationSubscription(e, !0 === t);
+                                        i._updateInvalidationSubscription(e, !0 === t);
                                     }),
-                                    null != i && i({ name: "store.notify.complete", sourceOperation: e, updatedRecordIDs: this._updatedRecordIDs, invalidatedRecordIDs: this._invalidatedRecordIDs }),
-                                    this._updatedRecordIDs.clear(),
-                                    this._invalidatedRecordIDs.clear(),
                                     null != e)
                                 ) {
-                                    var s = e.request.identifier,
-                                        a = this._roots.get(s);
+                                    var o = e.request.identifier,
+                                        a = this._roots.get(o);
                                     if (null != a) (a.epoch = this._currentWriteEpoch), (a.fetchTime = Date.now());
                                     else if ("query" === e.request.node.params.operationKind && this._gcReleaseBufferSize > 0 && this._releaseBuffer.length < this._gcReleaseBufferSize) {
                                         var l = { operation: e, refCount: 0, epoch: this._currentWriteEpoch, fetchTime: Date.now() };
-                                        this._releaseBuffer.push(s), this._roots.set(s, l);
+                                        this._releaseBuffer.push(o), this._roots.set(o, l);
                                     }
                                 }
-                                return o;
+                                return null != n && n({ name: "store.notify.complete", sourceOperation: e, updatedRecordIDs: this._updatedRecordIDs, invalidatedRecordIDs: this._invalidatedRecordIDs, subscriptionsSize: this._storeSubscriptions.size(), updatedOwners: s }), this._updatedRecordIDs.clear(), this._invalidatedRecordIDs.clear(), s;
                             }),
                             (t.publish = function (e, t) {
-                                var n = this._getMutableRecordSource();
-                                !(function (e, t, n, i, r, o) {
-                                    i &&
-                                        i.forEach(function (i) {
+                                var i = this._getMutableRecordSource();
+                                !(function (e, t, i, n, r, s) {
+                                    n &&
+                                        n.forEach(function (n) {
                                             var r,
-                                                s = e.get(i),
-                                                a = t.get(i);
-                                            null !== a && (r = null != s ? f.clone(s) : null != a ? f.clone(a) : null) && (f.setValue(r, S.INVALIDATED_AT_KEY, n), o.add(i), e.set(i, r));
+                                                o = e.get(n),
+                                                a = t.get(n);
+                                            null !== a && (r = null != o ? v.clone(o) : null != a ? v.clone(a) : null) && (v.setValue(r, y.INVALIDATED_AT_KEY, i), s.add(n), e.set(n, r));
                                         });
-                                    for (var s = t.getRecordIDs(), a = 0; a < s.length; a++) {
-                                        var l = s[a],
+                                    for (var o = t.getRecordIDs(), a = 0; a < o.length; a++) {
+                                        var l = o[a],
                                             u = t.get(l),
                                             c = e.get(l);
                                         if (u && c) {
-                                            var d = f.update(c, u);
+                                            var d = v.update(c, u);
                                             d !== c && (r.add(l), e.set(l, d));
                                         } else null === u ? (e.delete(l), null !== c && r.add(l)) : u && (e.set(l, u), r.add(l));
                                     }
-                                })(n, e, this._currentWriteEpoch + 1, t, this._updatedRecordIDs, this._invalidatedRecordIDs);
-                                var i = this.__log;
-                                null != i && i({ name: "store.publish", source: e, optimistic: n === this._optimisticSource });
+                                })(i, e, this._currentWriteEpoch + 1, t, this._updatedRecordIDs, this._invalidatedRecordIDs);
+                                var n = this.__log;
+                                null != n && n({ name: "store.publish", source: e, optimistic: i === this._optimisticSource });
                             }),
                             (t.subscribe = function (e, t) {
                                 return this._storeSubscriptions.subscribe(e, t);
@@ -566,66 +587,69 @@ window.__SCRIPTS_LOADED__.runtime &&
                             }),
                             (t.lookupInvalidationState = function (e) {
                                 var t = this,
-                                    n = new Map();
+                                    i = new Map();
                                 return (
                                     e.forEach(function (e) {
-                                        var i,
+                                        var n,
                                             r = t.getSource().get(e);
-                                        n.set(e, null !== (i = f.getInvalidationEpoch(r)) && void 0 !== i ? i : null);
+                                        i.set(e, null !== (n = v.getInvalidationEpoch(r)) && void 0 !== n ? n : null);
                                     }),
-                                    n.set("global", this._globalInvalidationEpoch),
-                                    { dataIDs: e, invalidations: n }
+                                    i.set("global", this._globalInvalidationEpoch),
+                                    { dataIDs: e, invalidations: i }
                                 );
                             }),
                             (t.checkInvalidationState = function (e) {
                                 var t = this.lookupInvalidationState(e.dataIDs).invalidations,
-                                    n = e.invalidations;
-                                if (t.get("global") !== n.get("global")) return !0;
-                                var i,
-                                    o = (0, r.default)(e.dataIDs);
+                                    i = e.invalidations;
+                                if (t.get("global") !== i.get("global")) return !0;
+                                var n,
+                                    s = (0, r.default)(e.dataIDs);
                                 try {
-                                    for (o.s(); !(i = o.n()).done; ) {
-                                        var s = i.value;
-                                        if (t.get(s) !== n.get(s)) return !0;
+                                    for (s.s(); !(n = s.n()).done; ) {
+                                        var o = n.value;
+                                        if (t.get(o) !== i.get(o)) return !0;
                                     }
                                 } catch (e) {
-                                    o.e(e);
+                                    s.e(e);
                                 } finally {
-                                    o.f();
+                                    s.f();
                                 }
                                 return !1;
                             }),
                             (t.subscribeToInvalidationState = function (e, t) {
-                                var n = this,
-                                    i = { callback: t, invalidationState: e };
+                                var i = this,
+                                    n = { callback: t, invalidationState: e };
                                 return (
-                                    this._invalidationSubscriptions.add(i),
+                                    this._invalidationSubscriptions.add(n),
                                     {
                                         dispose: function () {
-                                            n._invalidationSubscriptions.delete(i);
+                                            i._invalidationSubscriptions.delete(n);
                                         },
                                     }
                                 );
                             }),
                             (t._updateInvalidationSubscription = function (e, t) {
-                                var n = this,
-                                    i = e.callback,
+                                var i = this,
+                                    n = e.callback,
                                     r = e.invalidationState.dataIDs;
                                 (t ||
                                     r.some(function (e) {
-                                        return n._invalidatedRecordIDs.has(e);
+                                        return i._invalidatedRecordIDs.has(e);
                                     })) &&
-                                    i();
+                                    n();
                             }),
                             (t.snapshot = function () {
-                                null != this._optimisticSource && I(!1);
+                                null != this._optimisticSource && O(!1);
                                 var e = this.__log;
-                                null != e && e({ name: "store.snapshot" }), this._storeSubscriptions.snapshotSubscriptions(this.getSource()), this._gcRun && ((this._gcRun = null), (this._shouldScheduleGC = !0)), (this._optimisticSource = p.create(this.getSource()));
+                                null != e && e({ name: "store.snapshot" }), this._storeSubscriptions.snapshotSubscriptions(this.getSource()), this._gcRun && ((this._gcRun = null), (this._shouldScheduleGC = !0)), (this._optimisticSource = g.create(this.getSource()));
                             }),
                             (t.restore = function () {
-                                null == this._optimisticSource && I(!1);
-                                var e = this.__log;
-                                null != e && e({ name: "store.restore" }), (this._optimisticSource = null), this._shouldScheduleGC && this.scheduleGC(), this._storeSubscriptions.restoreSubscriptions();
+                                var e = this._optimisticSource;
+                                e || O(!1);
+                                var t = this.__log;
+                                null != t && t({ name: "store.restore" });
+                                var i = g.getOptimisticRecordIDs(e);
+                                this._resolverCache.unsubscribeFromLiveResolverRecords(i), (this._optimisticSource = null), this._shouldScheduleGC && this.scheduleGC(), this._storeSubscriptions.restoreSubscriptions(), this._resolverCache.invalidateResolverRecords(i);
                             }),
                             (t.scheduleGC = function () {
                                 this._gcHoldCounter > 0 ? (this._shouldScheduleGC = !0) : this._gcRun || ((this._gcRun = this._collect()), this._gcScheduler(this._gcStep));
@@ -634,40 +658,59 @@ window.__SCRIPTS_LOADED__.runtime &&
                                 if (null == this._optimisticSource) for (var e = this._collect(); !e.next().done; );
                             }),
                             (t._collect = function* () {
+                                var e = this.__log;
                                 e: for (;;) {
-                                    var e,
-                                        t = this._currentWriteEpoch,
+                                    null != e && e({ name: "store.gc.start" });
+                                    var t,
+                                        i = this._currentWriteEpoch,
                                         n = new Set(),
-                                        i = (0, r.default)(this._roots.values());
+                                        s = (0, r.default)(this._roots.values());
                                     try {
-                                        for (i.s(); !(e = i.n()).done; ) {
-                                            var o = e.value.operation.root;
-                                            if ((v.mark(this._recordSource, o, n, this._operationLoader, this._shouldProcessClientComponents), yield, t !== this._currentWriteEpoch)) continue e;
+                                        for (s.s(); !(t = s.n()).done; ) {
+                                            var o = t.value.operation.root;
+                                            if ((m.mark(this._recordSource, o, n, this._operationLoader, this._shouldProcessClientComponents), yield, i !== this._currentWriteEpoch)) {
+                                                null != e && e({ name: "store.gc.interrupted" });
+                                                continue e;
+                                            }
                                         }
                                     } catch (e) {
-                                        i.e(e);
+                                        s.e(e);
                                     } finally {
-                                        i.f();
+                                        s.f();
                                     }
-                                    var s = this.__log;
-                                    if ((null != s && s({ name: "store.gc", references: n }), 0 === n.size)) this._recordSource.clear();
+                                    if (0 === n.size) this._recordSource.clear();
                                     else
                                         for (var a = this._recordSource.getRecordIDs(), l = 0; l < a.length; l++) {
                                             var u = a[l];
-                                            n.has(u) || this._recordSource.remove(u);
+                                            if (!n.has(u)) {
+                                                var c = this._recordSource.get(u);
+                                                if (null != c) {
+                                                    var d = v.getValue(c, f);
+                                                    null != d && d();
+                                                }
+                                                this._recordSource.remove(u);
+                                            }
                                         }
-                                    return;
+                                    return void (null != e && e({ name: "store.gc.end", references: n }));
                                 }
+                            }),
+                            (t.__getNormalizationOptions = function (e) {
+                                return { path: e, getDataID: this._getDataID, treatMissingFieldsAsNull: this._treatMissingFieldsAsNull, shouldProcessClientComponents: this._shouldProcessClientComponents, actorIdentifier: this._actorIdentifier };
+                            }),
+                            (t.__notifyUpdatedSubscribers = function (e) {
+                                var t = _(e),
+                                    i = this._updatedRecordIDs;
+                                (this._updatedRecordIDs = t), this.notify(), (this._updatedRecordIDs = i);
                             }),
                             e
                         );
                     })();
-                e.exports = D;
+                e.exports = E;
             },
-            349192: (e, t, n) => {
-                var i = (0, n(171600).default)(n(638636)),
-                    r = n(647677),
-                    o = (function () {
+            349192: (e, t, i) => {
+                var n = (0, i(183491).default)(i(158663)),
+                    r = i(647677),
+                    s = (function () {
                         function e() {
                             (this._ownersToPendingOperations = new Map()), (this._pendingOperationsToOwners = new Map()), (this._ownersToPendingPromise = new Map());
                         }
@@ -675,25 +718,25 @@ window.__SCRIPTS_LOADED__.runtime &&
                         return (
                             (t.update = function (e, t) {
                                 if (0 !== t.size) {
-                                    var n,
+                                    var i,
                                         r = e.identifier,
-                                        o = new Set(),
-                                        s = (0, i.default)(t);
+                                        s = new Set(),
+                                        o = (0, n.default)(t);
                                     try {
-                                        for (s.s(); !(n = s.n()).done; ) {
-                                            var a = n.value.identifier,
+                                        for (o.s(); !(i = o.n()).done; ) {
+                                            var a = i.value.identifier,
                                                 l = this._ownersToPendingOperations.get(a);
-                                            null != l ? l.has(r) || (l.set(r, e), o.add(a)) : (this._ownersToPendingOperations.set(a, new Map([[r, e]])), o.add(a));
+                                            null != l ? l.has(r) || (l.set(r, e), s.add(a)) : (this._ownersToPendingOperations.set(a, new Map([[r, e]])), s.add(a));
                                         }
                                     } catch (e) {
-                                        s.e(e);
+                                        o.e(e);
                                     } finally {
-                                        s.f();
+                                        o.f();
                                     }
-                                    if (0 !== o.size) {
+                                    if (0 !== s.size) {
                                         var u,
                                             c = this._pendingOperationsToOwners.get(r) || new Set(),
-                                            d = (0, i.default)(o);
+                                            d = (0, n.default)(s);
                                         try {
                                             for (d.s(); !(u = d.n()).done; ) {
                                                 var h = u.value;
@@ -710,17 +753,17 @@ window.__SCRIPTS_LOADED__.runtime &&
                             }),
                             (t.complete = function (e) {
                                 var t = e.identifier,
-                                    n = this._pendingOperationsToOwners.get(t);
-                                if (null != n) {
+                                    i = this._pendingOperationsToOwners.get(t);
+                                if (null != i) {
                                     var r,
-                                        o = new Set(),
                                         s = new Set(),
-                                        a = (0, i.default)(n);
+                                        o = new Set(),
+                                        a = (0, n.default)(i);
                                     try {
                                         for (a.s(); !(r = a.n()).done; ) {
                                             var l = r.value,
                                                 u = this._ownersToPendingOperations.get(l);
-                                            u && (u.delete(t), u.size > 0 ? s.add(l) : o.add(l));
+                                            u && (u.delete(t), u.size > 0 ? o.add(l) : s.add(l));
                                         }
                                     } catch (e) {
                                         a.e(e);
@@ -728,7 +771,7 @@ window.__SCRIPTS_LOADED__.runtime &&
                                         a.f();
                                     }
                                     var c,
-                                        d = (0, i.default)(o);
+                                        d = (0, n.default)(s);
                                     try {
                                         for (d.s(); !(c = d.n()).done; ) {
                                             var h = c.value;
@@ -739,17 +782,17 @@ window.__SCRIPTS_LOADED__.runtime &&
                                     } finally {
                                         d.f();
                                     }
-                                    var f,
-                                        p = (0, i.default)(s);
+                                    var p,
+                                        f = (0, n.default)(o);
                                     try {
-                                        for (p.s(); !(f = p.n()).done; ) {
-                                            var _ = f.value;
+                                        for (f.s(); !(p = f.n()).done; ) {
+                                            var _ = p.value;
                                             this._resolveOwnerResolvers(_);
                                         }
                                     } catch (e) {
-                                        p.e(e);
+                                        f.e(e);
                                     } finally {
-                                        p.f();
+                                        f.f();
                                     }
                                     this._pendingOperationsToOwners.delete(t);
                                 }
@@ -760,32 +803,32 @@ window.__SCRIPTS_LOADED__.runtime &&
                             }),
                             (t.getPendingOperationsAffectingOwner = function (e) {
                                 var t = e.identifier,
-                                    n = this._ownersToPendingOperations.get(t);
-                                if (null == n || 0 === n.size) return null;
-                                var i,
-                                    o = this._ownersToPendingPromise.get(t);
-                                if (null != o) return { promise: o.promise, pendingOperations: o.pendingOperations };
-                                var s = new Promise(function (e) {
-                                    i = e;
+                                    i = this._ownersToPendingOperations.get(t);
+                                if (null == i || 0 === i.size) return null;
+                                var n,
+                                    s = this._ownersToPendingPromise.get(t);
+                                if (null != s) return { promise: s.promise, pendingOperations: s.pendingOperations };
+                                var o = new Promise(function (e) {
+                                    n = e;
                                 });
-                                null == i && r(!1);
-                                var a = Array.from(n.values());
-                                return this._ownersToPendingPromise.set(t, { promise: s, resolve: i, pendingOperations: a }), { promise: s, pendingOperations: a };
+                                null == n && r(!1);
+                                var a = Array.from(i.values());
+                                return this._ownersToPendingPromise.set(t, { promise: o, resolve: n, pendingOperations: a }), { promise: o, pendingOperations: a };
                             }),
                             e
                         );
                     })();
-                e.exports = o;
+                e.exports = s;
             },
-            290109: (e, t, n) => {
-                var i = (0, n(171600).default)(n(900814)),
-                    r = n(705180),
-                    o = n(887428),
-                    s = n(647677),
+            290109: (e, t, i) => {
+                var n = (0, i(183491).default)(i(479035)),
+                    r = i(705180),
+                    s = i(887428),
+                    o = i(647677),
                     a = r.fromObject(Object.freeze({ __UNPUBLISH_RECORD_SENTINEL: !0 })),
                     l = (function () {
                         function e(e) {
-                            (this._base = e), (this._sink = o.create());
+                            (this._base = e), (this._sink = s.create());
                         }
                         var t = e.prototype;
                         return (
@@ -804,7 +847,7 @@ window.__SCRIPTS_LOADED__.runtime &&
                                 return void 0 === t ? "UNKNOWN" : null === t ? "NONEXISTENT" : "EXISTENT";
                             }),
                             (t.clear = function () {
-                                (this._base = o.create()), this._sink.clear();
+                                (this._base = s.create()), this._sink.clear();
                             }),
                             (t.delete = function (e) {
                                 this._sink.delete(e);
@@ -823,11 +866,11 @@ window.__SCRIPTS_LOADED__.runtime &&
                             }),
                             (t.toJSON = function () {
                                 var e = this,
-                                    t = (0, i.default)({}, this._base.toJSON());
+                                    t = (0, n.default)({}, this._base.toJSON());
                                 return (
-                                    this._sink.getRecordIDs().forEach(function (n) {
-                                        var i = e.get(n);
-                                        void 0 === i ? delete t[n] : (t[n] = r.toJSON(i));
+                                    this._sink.getRecordIDs().forEach(function (i) {
+                                        var n = e.get(i);
+                                        void 0 === n ? delete t[i] : (t[i] = r.toJSON(n));
                                     }),
                                     t
                                 );
@@ -843,29 +886,29 @@ window.__SCRIPTS_LOADED__.runtime &&
                         return new l(e);
                     },
                     getOptimisticRecordIDs: function (e) {
-                        return e instanceof l || s(!1), e.getOptimisticRecordIDs();
+                        return e instanceof l || o(!1), e.getOptimisticRecordIDs();
                     },
                 };
             },
-            485520: (e, t, n) => {
-                var i,
+            485520: (e, t, i) => {
+                var n,
                     r,
-                    o = n(957044),
-                    s = n(233343),
-                    a = n(176897),
-                    l = n(458076),
-                    u = n(887428),
-                    c = n(647677),
-                    d = (n(826590), void 0 !== n.g ? n.g : "undefined" != typeof window ? window : void 0),
+                    s = i(957044),
+                    o = i(233343),
+                    a = i(176897),
+                    l = i(458076),
+                    u = i(887428),
+                    c = i(647677),
+                    d = (i(826590), void 0 !== i.g ? i.g : "undefined" != typeof window ? window : void 0),
                     h =
-                        null !== (i = null == d || null === (r = d.ErrorUtils) || void 0 === r ? void 0 : r.applyWithGuard) && void 0 !== i
-                            ? i
-                            : function (e, t, n, i, r) {
-                                  return e.apply(t, n);
+                        null !== (n = null == d || null === (r = d.ErrorUtils) || void 0 === r ? void 0 : r.applyWithGuard) && void 0 !== n
+                            ? n
+                            : function (e, t, i, n, r) {
+                                  return e.apply(t, i);
                               },
-                    f = (function () {
-                        function e(e, t, n, i) {
-                            (this._hasStoreSnapshot = !1), (this._handlerProvider = t || null), (this._pendingBackupRebase = !1), (this._pendingData = new Set()), (this._pendingOptimisticUpdates = new Set()), (this._store = e), (this._appliedOptimisticUpdates = new Set()), (this._gcHold = null), (this._getDataID = n), (this._missingFieldHandlers = i);
+                    p = (function () {
+                        function e(e, t, i, n) {
+                            (this._hasStoreSnapshot = !1), (this._handlerProvider = t || null), (this._pendingBackupRebase = !1), (this._pendingData = new Set()), (this._pendingOptimisticUpdates = new Set()), (this._store = e), (this._appliedOptimisticUpdates = new Set()), (this._gcHold = null), (this._getDataID = i), (this._missingFieldHandlers = n);
                         }
                         var t = e.prototype;
                         return (
@@ -878,8 +921,8 @@ window.__SCRIPTS_LOADED__.runtime &&
                             (t.revertAll = function () {
                                 (this._pendingBackupRebase = !0), this._pendingOptimisticUpdates.clear(), this._appliedOptimisticUpdates.clear();
                             }),
-                            (t.commitPayload = function (e, t, n) {
-                                (this._pendingBackupRebase = !0), this._pendingData.add({ kind: "payload", operation: e, payload: t, updater: n });
+                            (t.commitPayload = function (e, t, i) {
+                                (this._pendingBackupRebase = !0), this._pendingData.add({ kind: "payload", operation: e, payload: t, updater: i });
                             }),
                             (t.commitUpdate = function (e) {
                                 (this._pendingBackupRebase = !0), this._pendingData.add({ kind: "updater", updater: e });
@@ -891,29 +934,29 @@ window.__SCRIPTS_LOADED__.runtime &&
                                 var t = 0 === this._appliedOptimisticUpdates && !!this._gcHold;
                                 if (!this._pendingBackupRebase && 0 === this._pendingOptimisticUpdates.size && !t) return [];
                                 this._pendingBackupRebase && this._hasStoreSnapshot && (this._store.restore(), (this._hasStoreSnapshot = !1));
-                                var n = this._commitData();
-                                return (this._pendingOptimisticUpdates.size || (this._pendingBackupRebase && this._appliedOptimisticUpdates.size)) && (this._hasStoreSnapshot || (this._store.snapshot(), (this._hasStoreSnapshot = !0)), this._applyUpdates()), (this._pendingBackupRebase = !1), this._appliedOptimisticUpdates.size > 0 ? this._gcHold || (this._gcHold = this._store.holdGC()) : this._gcHold && (this._gcHold.dispose(), (this._gcHold = null)), this._store.notify(e, n);
+                                var i = this._commitData();
+                                return (this._pendingOptimisticUpdates.size || (this._pendingBackupRebase && this._appliedOptimisticUpdates.size)) && (this._hasStoreSnapshot || (this._store.snapshot(), (this._hasStoreSnapshot = !0)), this._applyUpdates()), (this._pendingBackupRebase = !1), this._appliedOptimisticUpdates.size > 0 ? this._gcHold || (this._gcHold = this._store.holdGC()) : this._gcHold && (this._gcHold.dispose(), (this._gcHold = null)), this._store.notify(e, i);
                             }),
                             (t._publishSourceFromPayload = function (e) {
                                 var t = this,
-                                    n = e.payload,
-                                    i = e.operation,
+                                    i = e.payload,
+                                    n = e.operation,
                                     r = e.updater,
-                                    l = n.source,
-                                    u = n.fieldPayloads,
-                                    d = new o(this._store.getSource(), l),
-                                    h = new s(d, this._getDataID, this._handlerProvider, this._missingFieldHandlers);
+                                    l = i.source,
+                                    u = i.fieldPayloads,
+                                    d = new s(this._store.getSource(), l),
+                                    h = new o(d, this._getDataID, this._handlerProvider, this._missingFieldHandlers);
                                 if (
                                     (u &&
                                         u.length &&
                                         u.forEach(function (e) {
-                                            var n = t._handlerProvider && t._handlerProvider(e.handle);
-                                            n || c(!1), n.update(h, e);
+                                            var i = t._handlerProvider && t._handlerProvider(e.handle);
+                                            i || c(!1), i.update(h, e);
                                         }),
                                     r)
                                 ) {
-                                    var f = i.fragment;
-                                    null == f && c(!1), r(new a(d, h, f, this._missingFieldHandlers), p(l, f));
+                                    var p = n.fragment;
+                                    null == p && c(!1), r(new a(d, h, p, this._missingFieldHandlers), f(l, p));
                                 }
                                 var _ = h.getIDsMarkedForInvalidation();
                                 return this._store.publish(l, _), h.isStoreMarkedForInvalidation();
@@ -923,21 +966,21 @@ window.__SCRIPTS_LOADED__.runtime &&
                                 if (!this._pendingData.size) return !1;
                                 var t = !1;
                                 return (
-                                    this._pendingData.forEach(function (n) {
-                                        if ("payload" === n.kind) {
-                                            var i = e._publishSourceFromPayload(n);
-                                            t = t || i;
-                                        } else if ("source" === n.kind) {
-                                            var r = n.source;
+                                    this._pendingData.forEach(function (i) {
+                                        if ("payload" === i.kind) {
+                                            var n = e._publishSourceFromPayload(i);
+                                            t = t || n;
+                                        } else if ("source" === i.kind) {
+                                            var r = i.source;
                                             e._store.publish(r);
                                         } else {
-                                            var a = n.updater,
+                                            var a = i.updater,
                                                 l = u.create(),
-                                                c = new o(e._store.getSource(), l),
-                                                d = new s(c, e._getDataID, e._handlerProvider, e._missingFieldHandlers);
+                                                c = new s(e._store.getSource(), l),
+                                                d = new o(c, e._getDataID, e._handlerProvider, e._missingFieldHandlers);
                                             h(a, null, [d], null, "RelayPublishQueue:commitData"), (t = t || d.isStoreMarkedForInvalidation());
-                                            var f = d.getIDsMarkedForInvalidation();
-                                            e._store.publish(l, f);
+                                            var p = d.getIDsMarkedForInvalidation();
+                                            e._store.publish(l, p);
                                         }
                                     }),
                                     this._pendingData.clear(),
@@ -947,23 +990,23 @@ window.__SCRIPTS_LOADED__.runtime &&
                             (t._applyUpdates = function () {
                                 var e = this,
                                     t = u.create(),
-                                    n = new o(this._store.getSource(), t),
-                                    i = new s(n, this._getDataID, this._handlerProvider, this._missingFieldHandlers),
+                                    i = new s(this._store.getSource(), t),
+                                    n = new o(i, this._getDataID, this._handlerProvider, this._missingFieldHandlers),
                                     r = function (t) {
                                         if (t.storeUpdater) {
                                             var r = t.storeUpdater;
-                                            h(r, null, [i], null, "RelayPublishQueue:applyUpdates");
+                                            h(r, null, [n], null, "RelayPublishQueue:applyUpdates");
                                         } else {
-                                            var o = t.operation,
-                                                s = t.payload,
+                                            var s = t.operation,
+                                                o = t.payload,
                                                 l = t.updater,
-                                                u = s.source,
-                                                c = s.fieldPayloads;
-                                            if ((u && i.publishSource(u, c), l)) {
+                                                u = o.source,
+                                                c = o.fieldPayloads;
+                                            if ((u && n.publishSource(u, c), l)) {
                                                 var d;
-                                                u && (d = p(u, o.fragment));
-                                                var f = new a(n, i, o.fragment, e._missingFieldHandlers);
-                                                h(l, null, [f, d], null, "RelayPublishQueue:applyUpdates");
+                                                u && (d = f(u, s.fragment));
+                                                var p = new a(i, n, s.fragment, e._missingFieldHandlers);
+                                                h(l, null, [p, d], null, "RelayPublishQueue:applyUpdates");
                                             }
                                         }
                                     };
@@ -978,12 +1021,12 @@ window.__SCRIPTS_LOADED__.runtime &&
                             e
                         );
                     })();
-                function p(e, t) {
+                function f(e, t) {
                     return l.read(e, t).data;
                 }
-                e.exports = f;
+                e.exports = p;
             },
         },
     ]),
     (window.__SCRIPTS_LOADED__.vendor = !0));
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/vendor-dfe82965.4682ab4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/vendor-dfe82965.8f17b49a.js.map

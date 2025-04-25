@@ -4848,6 +4848,7 @@
                 i("ie45edda", "Overview ng livestream"),
                 i("e30fc268", "Live Viewers"),
                 i("bd37f68e", "Aktibidad ng media"),
+                i("fe074210", "(na) min"),
                 i("jd03a1b8", "Minutes Watched"),
                 i("a20e91e8", "minutes watched"),
                 i("ic2bebee", "Naka-monetize"),
@@ -4908,9 +4909,9 @@
                 i("a7b48b36", "Ang percentage ng mga nakumpletong panonood ng video."),
                 i("a2580f2a", "Rate ng Pagkumpleto"),
                 i("ff95a9cc", "Video ID"),
-                i("a97e358e", "Link ng Video"),
-                i("e10e8b46", "Ipinapakita lang ang mga video mula sa nakaraang 100 araw.");
-            i("ba37f6da", "Overview ng video"),
+                i("a97e358e", "Link ng Video");
+            i("e10e8b46", "Ipinapakita lang ang mga video mula sa nakaraang 100 araw."),
+                i("ba37f6da", "Overview ng video"),
                 i("f19846b2", "Thumbnail ng video"),
                 i("ccd6f4a8", "Title ng Video"),
                 i("c8410542", "Ang dami ng beses na pinanood ang video mo."),
@@ -5073,7 +5074,6 @@
                 i("fb3e127a", "Alok sa Loob ng Limitadong Panahon Ngayong Bagong Taon"),
                 i("a5fee980", "I-claim ang 30% diskuwento sa mga taunang plan at hanggang $12,000 libreng ad credit kapag nag-subscribe ka bago sumapit ang"),
                 i("c9051cac", "(na) araw"),
-                i("fe074210", "(na) min"),
                 i("ie035790", "(na) seg"),
                 i("cbd3dfaa", "Subukan ang beta"),
                 i("h260121e", "Ipakita ang mga nangunguna mong posisyon sa audience mo"),
@@ -13249,4 +13249,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fil.c95d020a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fil.2b43bfaa.js.map

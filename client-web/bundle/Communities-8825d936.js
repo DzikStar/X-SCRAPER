@@ -61,7 +61,7 @@
                         plural: !1,
                         selections: [
                             { alias: null, args: null, kind: "ScalarField", name: "id_str", storageKey: null },
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }, action: "THROW", path: "legacy.screen_name" },
+                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }, action: "THROW" },
                         ],
                         storageKey: null,
                     },
@@ -1217,4 +1217,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Communities-8825d936.840ccc2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Communities-8825d936.ea457aba.js.map

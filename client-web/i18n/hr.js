@@ -4855,6 +4855,7 @@
                 o("ie45edda", "Pregled emitiranja uživo"),
                 o("e30fc268", "Live Viewers"),
                 o("bd37f68e", "Aktivnost u medijima"),
+                o("fe074210", "min"),
                 o("jd03a1b8", "Minutes Watched"),
                 o("a20e91e8", "minutes watched"),
                 o("ic2bebee", "Monetizirano"),
@@ -4915,9 +4916,9 @@
                 o("a7b48b36", "Postotak potpuno odgledanih videozapisa."),
                 o("a2580f2a", "Potpunih pregleda"),
                 o("ff95a9cc", "ID videozapisa"),
-                o("a97e358e", "Veza na videozapis"),
-                o("e10e8b46", "Prikazuju se samo videozapisi od proteklih 100 dana.");
-            o("ba37f6da", "Pregled videozapisa"),
+                o("a97e358e", "Veza na videozapis");
+            o("e10e8b46", "Prikazuju se samo videozapisi od proteklih 100 dana."),
+                o("ba37f6da", "Pregled videozapisa"),
                 o("f19846b2", "Sličica videozapisa"),
                 o("ccd6f4a8", "Naslov videozapisa"),
                 o("c8410542", "Broj pregleda vašeg videozapisa"),
@@ -5080,7 +5081,6 @@
                 o("fb3e127a", "Vremenski ograničena novogodišnja ponuda"),
                 o("a5fee980", "Iskoristite 30 % popusta na godišnje planove i do 12.000 USD besplatnih kredita za oglase ako se pretplatite do"),
                 o("c9051cac", "dana"),
-                o("fe074210", "min"),
                 o("ie035790", "s"),
                 o("cbd3dfaa", "Isprobajte beta verziju"),
                 o("h260121e", "Istaknite svoja najbolja radna mjesta publici."),
@@ -13258,4 +13258,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hr.43ea13da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hr.63eb824a.js.map

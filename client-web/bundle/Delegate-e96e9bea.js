@@ -331,7 +331,7 @@
                 name: "GroupMenu_user",
                 selections: [
                     { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null },
-                    { kind: "RequiredField", field: { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }, action: "THROW", path: "legacy.screen_name" }], storageKey: null }, action: "THROW", path: "legacy" },
+                    { kind: "RequiredField", field: { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }, action: "THROW" }], storageKey: null }, action: "THROW" },
                 ],
                 type: "User",
                 abstractKey: null,
@@ -489,7 +489,7 @@
                     kind: "Fragment",
                     metadata: { plural: !0 },
                     name: "GroupsList_delegationGroups",
-                    selections: [(n = { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }), (i = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }), { kind: "RequiredField", field: { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "handle_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ kind: "InlineFragment", selections: [i, { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }], storageKey: null }, { args: null, kind: "FragmentSpread", name: "GroupCell_delegationHandleResults" }, { args: null, kind: "FragmentSpread", name: "GroupMenu_user" }, { args: null, kind: "FragmentSpread", name: "InviteMenu_user" }], type: "User", abstractKey: null }], storageKey: null }], storageKey: null }, action: "THROW", path: "handle_results" }, { alias: null, args: null, concreteType: "DelegationMembership", kind: "LinkedField", name: "members", plural: !0, selections: [{ alias: null, args: null, kind: "ScalarField", name: "role", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "status", storageKey: null }, n, { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ kind: "InlineFragment", selections: [i], type: "User", abstractKey: null }], storageKey: null }], storageKey: null }, { kind: "ClientExtension", selections: [{ alias: null, args: null, kind: "ScalarField", name: "__id", storageKey: null }] }], storageKey: null }],
+                    selections: [(n = { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }), (i = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }), { kind: "RequiredField", field: { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "handle_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ kind: "InlineFragment", selections: [i, { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }], storageKey: null }, { args: null, kind: "FragmentSpread", name: "GroupCell_delegationHandleResults" }, { args: null, kind: "FragmentSpread", name: "GroupMenu_user" }, { args: null, kind: "FragmentSpread", name: "InviteMenu_user" }], type: "User", abstractKey: null }], storageKey: null }], storageKey: null }, action: "THROW" }, { alias: null, args: null, concreteType: "DelegationMembership", kind: "LinkedField", name: "members", plural: !0, selections: [{ alias: null, args: null, kind: "ScalarField", name: "role", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "status", storageKey: null }, n, { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ kind: "InlineFragment", selections: [i], type: "User", abstractKey: null }], storageKey: null }], storageKey: null }, { kind: "ClientExtension", selections: [{ alias: null, args: null, kind: "ScalarField", name: "__id", storageKey: null }] }], storageKey: null }],
                     type: "DelegationGroup",
                     abstractKey: null,
                 };
@@ -719,7 +719,7 @@
                 name: "InviteMenu_user",
                 selections: [
                     { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null },
-                    { kind: "RequiredField", field: { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }, action: "THROW", path: "legacy.screen_name" }], storageKey: null }, action: "THROW", path: "legacy" },
+                    { kind: "RequiredField", field: { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }, action: "THROW" }], storageKey: null }, action: "THROW" },
                 ],
                 type: "User",
                 abstractKey: null,
@@ -1054,12 +1054,12 @@
                         plural: !1,
                         selections: [
                             { alias: null, args: null, kind: "ScalarField", name: "id_str", storageKey: null },
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null }, action: "THROW", path: "legacy.followed_by" },
+                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null }, action: "THROW" },
                             { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
                             { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null },
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }, action: "THROW", path: "legacy.protected" },
+                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }, action: "THROW" },
                             { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }, action: "THROW", path: "legacy.verified" },
+                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }, action: "THROW" },
                             { alias: null, args: null, kind: "ScalarField", name: "verified_type", storageKey: null },
                         ],
                         storageKey: null,
@@ -1317,4 +1317,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Delegate-e96e9bea.d457e80a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Delegate-e96e9bea.48becc5a.js.map

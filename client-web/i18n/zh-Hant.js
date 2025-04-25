@@ -4847,6 +4847,7 @@
                 n("ie45edda", "直播總覽"),
                 n("e30fc268", "Live Viewers"),
                 n("bd37f68e", "媒體活動"),
+                n("fe074210", "分鐘"),
                 n("jd03a1b8", "Minutes Watched"),
                 n("a20e91e8", "minutes watched"),
                 n("ic2bebee", "已營利"),
@@ -4907,9 +4908,9 @@
                 n("a7b48b36", "完成影片觀看的百分比。"),
                 n("a2580f2a", "完成率"),
                 n("ff95a9cc", "影片 ID"),
-                n("a97e358e", "影片連結"),
-                n("e10e8b46", "僅顯示過去 100 天內的影片。");
-            n("ba37f6da", "影片總覽"),
+                n("a97e358e", "影片連結");
+            n("e10e8b46", "僅顯示過去 100 天內的影片。"),
+                n("ba37f6da", "影片總覽"),
                 n("f19846b2", "影片縮圖"),
                 n("ccd6f4a8", "影片標題"),
                 n("c8410542", "你影片獲得觀看的次數。"),
@@ -5072,7 +5073,6 @@
                 n("fb3e127a", "新年限時優惠"),
                 n("a5fee980", "在以下時間之前訂閱，即可領取年度方案的 30% 折扣以及高達 $12,000 美元的免費廣告抵用金："),
                 n("c9051cac", "天"),
-                n("fe074210", "分鐘"),
                 n("ie035790", "秒"),
                 n("cbd3dfaa", "試用 Beta 版"),
                 n("h260121e", "向受眾展示你的熱門職位。"),
@@ -13245,4 +13245,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh-Hant.c391507a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh-Hant.ccfdf61a.js.map

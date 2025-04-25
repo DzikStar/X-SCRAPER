@@ -132,6 +132,7 @@
                         MediaEngagementsLabel: "Media Engagements",
                         MediaViewsInfo: c().j43b8f52,
                         MediaViewsLabel: c().ca826772,
+                        mins: c().fe074210,
                         minutesWatched: c().jd03a1b8,
                         minutesWatchedSuffix: c().a20e91e8,
                         monetized: c().ic2bebee,
@@ -381,4 +382,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AccountAnalytics~ondemand.Insights~ondemand.Verified~ondemand.XChat-e019dbda.baf88f7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AccountAnalytics~ondemand.Insights~ondemand.Verified~ondemand.XChat-e019dbda.09e2e5ca.js.map

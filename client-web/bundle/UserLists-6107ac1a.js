@@ -22,7 +22,7 @@
             const i = a;
         },
         464258: (e, l, n) => {
-            n.d(l, { Z: () => y });
+            n.d(l, { Z: () => _ });
             var a,
                 i,
                 r,
@@ -34,7 +34,7 @@
                 c,
                 m,
                 g,
-                p = {
+                y = {
                     fragment: {
                         argumentDefinitions: [(a = { defaultValue: null, kind: "LocalArgument", name: "slices" }), (i = { defaultValue: null, kind: "LocalArgument", name: "trustedFriendsId" }), (r = { defaultValue: null, kind: "LocalArgument", name: "userId" })],
                         kind: "Fragment",
@@ -199,11 +199,11 @@
                     },
                     params: { id: "yPFs6y3U_um1hEZRtrn-bQ", metadata: { features: ["responsive_web_graphql_timeline_navigation_enabled"] }, name: "TrustedFriendsAddRemoveButtonAddMutation", operationKind: "mutation", text: null },
                 };
-            p.hash = "6c4f11ae4896cd3f33370bf4111636f1";
-            const y = p;
+            y.hash = "6c4f11ae4896cd3f33370bf4111636f1";
+            const _ = y;
         },
         301327: (e, l, n) => {
-            n.d(l, { Z: () => _ });
+            n.d(l, { Z: () => p });
             var a,
                 i,
                 r,
@@ -215,8 +215,8 @@
                 c,
                 m,
                 g,
-                p,
-                y = {
+                y,
+                _ = {
                     fragment: {
                         argumentDefinitions: [(a = { defaultValue: null, kind: "LocalArgument", name: "itemID" }), (i = { defaultValue: null, kind: "LocalArgument", name: "slices" }), (r = { defaultValue: null, kind: "LocalArgument", name: "trustedFriendsId" }), (s = { defaultValue: null, kind: "LocalArgument", name: "userId" })],
                         kind: "Fragment",
@@ -337,7 +337,7 @@
                                                                                         name: "url",
                                                                                         plural: !1,
                                                                                         selections: [
-                                                                                            (p = { alias: null, args: null, kind: "ScalarField", name: "url", storageKey: null }),
+                                                                                            (y = { alias: null, args: null, kind: "ScalarField", name: "url", storageKey: null }),
                                                                                             { alias: "urlType", args: null, kind: "ScalarField", name: "url_type", storageKey: null },
                                                                                             {
                                                                                                 alias: "urtEndpointOptions",
@@ -370,7 +370,7 @@
                                                                                         ],
                                                                                         storageKey: null,
                                                                                     },
-                                                                                    { alias: null, args: null, concreteType: "BadgeInfo", kind: "LinkedField", name: "badge", plural: !1, selections: [p], storageKey: null },
+                                                                                    { alias: null, args: null, concreteType: "BadgeInfo", kind: "LinkedField", name: "badge", plural: !1, selections: [y], storageKey: null },
                                                                                     { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null },
                                                                                     { alias: "userLabelType", args: null, kind: "ScalarField", name: "user_label_type", storageKey: null },
                                                                                     { alias: "userLabelDisplayType", args: null, kind: "ScalarField", name: "user_label_display_type", storageKey: null },
@@ -422,8 +422,8 @@
                     },
                     params: { id: "s0I1oxh3ngoMpf16vb9R9Q", metadata: { features: ["responsive_web_graphql_timeline_navigation_enabled"] }, name: "TrustedFriendsAddRemoveButtonRemoveMutation", operationKind: "mutation", text: null },
                 };
-            y.hash = "3fbf808c99dc745e905081c08b7f920a";
-            const _ = y;
+            _.hash = "3fbf808c99dc745e905081c08b7f920a";
+            const p = _;
         },
         438532: (e, l, n) => {
             n.d(l, { Z: () => i });
@@ -922,12 +922,12 @@
                         plural: !1,
                         selections: [
                             { alias: null, args: null, kind: "ScalarField", name: "id_str", storageKey: null },
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null }, action: "THROW", path: "legacy.followed_by" },
+                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null }, action: "THROW" },
                             { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
                             { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null },
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }, action: "THROW", path: "legacy.protected" },
+                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }, action: "THROW" },
                             { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }, action: "THROW", path: "legacy.verified" },
+                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }, action: "THROW" },
                             { alias: null, args: null, kind: "ScalarField", name: "verified_type", storageKey: null },
                         ],
                         storageKey: null,
@@ -967,7 +967,7 @@
             const i = a;
         },
         263428: (e, l, n) => {
-            n.d(l, { Z: () => h });
+            n.d(l, { Z: () => f });
             var a,
                 i,
                 r,
@@ -979,24 +979,24 @@
                 c,
                 m,
                 g,
-                p,
                 y,
                 _,
+                p,
                 k,
                 b,
                 F = n(897455),
-                f =
+                K =
                     ((b = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }),
                     {
                         fragment: {
-                            argumentDefinitions: [(a = { defaultValue: null, kind: "LocalArgument", name: "count" }), (i = { defaultValue: null, kind: "LocalArgument", name: "cursor" }), (r = { defaultValue: !1, kind: "LocalArgument", name: "includePromotedContent" }), (s = { defaultValue: null, kind: "LocalArgument", name: "isListMemberTargetUserId" }), (t = { defaultValue: null, kind: "LocalArgument", name: "timelineId" }), (d = { defaultValue: null, kind: "LocalArgument", name: "userId" }), (u = { defaultValue: !1, kind: "LocalArgument", name: "withBirdwatchNotes" }), (o = { defaultValue: !1, kind: "LocalArgument", name: "withClientEventToken" }), (c = { defaultValue: !1, kind: "LocalArgument", name: "withCommunity" }), (m = { defaultValue: !1, kind: "LocalArgument", name: "withDmMuting" }), (g = { defaultValue: !1, kind: "LocalArgument", name: "withQuickPromoteEligibilityTweetFields" }), (p = { defaultValue: !1, kind: "LocalArgument", name: "withVoice" })],
+                            argumentDefinitions: [(a = { defaultValue: null, kind: "LocalArgument", name: "count" }), (i = { defaultValue: null, kind: "LocalArgument", name: "cursor" }), (r = { defaultValue: !1, kind: "LocalArgument", name: "includePromotedContent" }), (s = { defaultValue: null, kind: "LocalArgument", name: "isListMemberTargetUserId" }), (t = { defaultValue: null, kind: "LocalArgument", name: "timelineId" }), (d = { defaultValue: null, kind: "LocalArgument", name: "userId" }), (u = { defaultValue: !1, kind: "LocalArgument", name: "withBirdwatchNotes" }), (o = { defaultValue: !1, kind: "LocalArgument", name: "withClientEventToken" }), (c = { defaultValue: !1, kind: "LocalArgument", name: "withCommunity" }), (m = { defaultValue: !1, kind: "LocalArgument", name: "withDmMuting" }), (g = { defaultValue: !1, kind: "LocalArgument", name: "withQuickPromoteEligibilityTweetFields" }), (y = { defaultValue: !1, kind: "LocalArgument", name: "withVoice" })],
                             kind: "Fragment",
                             metadata: null,
                             name: "combinedListsPageTimelineQuery",
                             selections: [
                                 {
                                     alias: "user",
-                                    args: (y = [
+                                    args: (_ = [
                                         { kind: "Variable", name: "rest_id", variableName: "userId" },
                                         { kind: "Literal", name: "s", value: "0c09" },
                                     ]),
@@ -1013,7 +1013,7 @@
                                             name: "result",
                                             plural: !1,
                                             selections: [
-                                                (_ = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }),
+                                                (p = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }),
                                                 {
                                                     kind: "InlineFragment",
                                                     selections: [
@@ -1057,11 +1057,11 @@
                             abstractKey: null,
                         },
                         kind: "Request",
-                        operation: { argumentDefinitions: [t, d, a, i, r, u, m, o, p, s, c, g], kind: "Operation", name: "combinedListsPageTimelineQuery", selections: [{ alias: "user", args: y, concreteType: "UserResults", kind: "LinkedField", name: "user_result_by_rest_id", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [_, { kind: "InlineFragment", selections: [{ alias: "timeline", args: null, concreteType: "Timeline", kind: "LinkedField", name: "all_subscribed_lists_timeline", plural: !1, selections: [{ alias: null, args: k, concreteType: "TimelineTimeline", kind: "LinkedField", name: "timeline", plural: !1, selections: [{ args: null, fragment: F.Z, kind: "FragmentSpread" }], storageKey: null }, { alias: null, args: k, filters: null, handle: "timeline", key: "", kind: "LinkedHandle", name: "timeline", handleArgs: [{ kind: "Variable", name: "timelineId", variableName: "timelineId" }] }, b], storageKey: null }, b], type: "User", abstractKey: null }], storageKey: null }, b], storageKey: null }] },
+                        operation: { argumentDefinitions: [t, d, a, i, r, u, m, o, y, s, c, g], kind: "Operation", name: "combinedListsPageTimelineQuery", selections: [{ alias: "user", args: _, concreteType: "UserResults", kind: "LinkedField", name: "user_result_by_rest_id", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [p, { kind: "InlineFragment", selections: [{ alias: "timeline", args: null, concreteType: "Timeline", kind: "LinkedField", name: "all_subscribed_lists_timeline", plural: !1, selections: [{ alias: null, args: k, concreteType: "TimelineTimeline", kind: "LinkedField", name: "timeline", plural: !1, selections: [{ args: null, fragment: F.Z, kind: "FragmentSpread" }], storageKey: null }, { alias: null, args: k, filters: null, handle: "timeline", key: "", kind: "LinkedHandle", name: "timeline", handleArgs: [{ kind: "Variable", name: "timelineId", variableName: "timelineId" }] }, b], storageKey: null }, b], type: "User", abstractKey: null }], storageKey: null }, b], storageKey: null }] },
                         params: { id: "VQENyLW7bK6qOUvYdhYIQQ", metadata: { features: ["articles_preview_enabled", "c9s_tweet_anatomy_moderator_badge_enabled", "communities_web_enable_tweet_community_results_fetch", "creator_subscriptions_quote_tweet_preview_enabled", "creator_subscriptions_tweet_preview_api_enabled", "freedom_of_speech_not_reach_fetch_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "longform_notetweets_consumption_enabled", "longform_notetweets_inline_media_enabled", "longform_notetweets_rich_text_read_enabled", "premium_content_api_read_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "responsive_web_edit_tweet_api_enabled", "responsive_web_enhance_cards_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_grok_analysis_button_from_backend", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_grok_share_attachment_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_jetfuel_frame", "responsive_web_twitter_article_tweet_consumption_enabled", "rweb_tipjar_consumption_enabled", "rweb_video_screen_enabled", "standardized_nudges_misinfo", "tweet_awards_web_tipping_enabled", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "verified_phone_label_enabled", "view_counts_everywhere_api_enabled"] }, name: "combinedListsPageTimelineQuery", operationKind: "query", text: null },
                     });
-            f.hash = "48ea11d8565f9095001c26f5e505d825";
-            const h = f;
+            K.hash = "48ea11d8565f9095001c26f5e505d825";
+            const f = K;
         },
         242454: (e, l, n) => {
             n.d(l, { Z: () => c });
@@ -1078,86 +1078,6 @@
                     return i.createElement(r.Z, { style: o.container }, i.createElement(d.Z, (0, a.Z)({}, c, { interactiveStyles: m, style: o.root }), i.createElement(s.ZP, { align: e, color: l }, n)));
                 };
         },
-        15038: (e, l, n) => {
-            n.d(l, { ZP: () => o });
-            var a = n(202784),
-                i = n(325686),
-                r = n(950822),
-                s = n(392237);
-            const t = (e) => (0, r.Z)("div", e);
-            class d extends a.Component {
-                constructor(...e) {
-                    super(...e),
-                        (this._dragEnterCount = 0),
-                        (this.state = { active: !1 }),
-                        (this._handleDragDrop = (e) => {
-                            const { onFilesAdded: l } = this.props;
-                            e.preventDefault();
-                            l(Array.from(e && e.dataTransfer.files)), this._updateDragCount(0);
-                        }),
-                        (this._handleDragEnter = (e) => {
-                            const { onDragEnter: l } = this.props;
-                            e.preventDefault(), l && l(), this._updateDragCount(this._dragEnterCount + 1);
-                        }),
-                        (this._handleDragLeave = (e) => {
-                            e.preventDefault(), this._updateDragCount(this._dragEnterCount - 1);
-                        }),
-                        (this._handleDragOver = (e) => {
-                            e.preventDefault();
-                        });
-                }
-                render() {
-                    const { activeStyle: e, allowDragDrop: l, children: n, style: r } = this.props,
-                        { active: s } = this.state,
-                        d = l ? u.dragBorderValid : u.dragBorderInvalid;
-                    return a.createElement(t, { onDragEnter: this._handleDragEnter, onDragLeave: this._handleDragLeave, onDragOver: this._handleDragOver, onDrop: this._handleDragDrop, style: [u.root, r, s && d, s && e] }, a.createElement(i.Z, { style: u.inner }, "function" == typeof n ? n(s) : n));
-                }
-                _updateDragCount(e) {
-                    (this._dragEnterCount = e), 0 === this._dragEnterCount ? this.setState({ active: !1 }) : this._dragEnterCount > 0 && this.setState({ active: !0 });
-                }
-            }
-            d.defaultProps = { allowDragDrop: !0 };
-            const u = s.default.create((e) => ({ root: { display: "flex", flexDirection: "column" }, dragBorderValid: { borderStyle: "dashed", borderWidth: e.spaces.space2, borderColor: e.colors.primary }, dragBorderInvalid: { borderStyle: "dashed", borderWidth: e.spaces.space2, borderColor: e.colors.magenta500 }, inner: { flexGrow: 1 } })),
-                o = d;
-        },
-        449161: (e, l, n) => {
-            n.d(l, { Z: () => p });
-            var a = n(807896),
-                i = n(202784),
-                r = n(674132),
-                s = n.n(r),
-                t = n(154003),
-                d = n(950822),
-                u = n(392237);
-            const o = s().i5450bec,
-                c = s().f7432494;
-            class m extends i.Component {
-                constructor(...e) {
-                    super(...e),
-                        (this._handlePress = (e) => {
-                            const { onPress: l } = this.props;
-                            l && l(e), this._fileInput && this._fileInput.click();
-                        }),
-                        (this._handleChange = (e) => {
-                            const { onChange: l } = this.props,
-                                n = e.target,
-                                a = n.files;
-                            a.length && l && l(a), (n.value = "");
-                        }),
-                        (this._handleFileInputButtonRef = (e) => {
-                            this._fileInput = e;
-                        });
-                }
-                render() {
-                    const { accept: e, disabled: l, multiple: n, onChange: r, testID: s, ...u } = this.props,
-                        m = !(e?.includes("video") || e?.includes("gif"));
-                    return i.createElement(i.Fragment, null, i.createElement(t.ZP, (0, a.Z)({ hoverLabel: e ? { label: m ? c : o } : void 0 }, u, { disabled: l, onPress: this._handlePress })), (0, d.Z)("input", { accept: e, disabled: l, multiple: n, onChange: this._handleChange, ref: this._handleFileInputButtonRef, style: g.input, tabIndex: -1, testID: s, type: "file" }));
-                }
-            }
-            m.defaultProps = { disabled: !1, multiple: !1 };
-            const g = u.default.create((e) => ({ input: { width: "0.1px", height: "0.1px", opacity: 0, overflow: "hidden", position: "absolute", zIndex: -1 } })),
-                p = m;
-        },
         779610: (e, l, n) => {
             n.d(l, { Z: () => o });
             var a = n(202784),
@@ -1168,18 +1088,18 @@
                 d = n(952428),
                 u = n(392237);
             const o = (e) => {
-                    const { decoration: l, description: n, disabled: o = !1, isActive: m = !1, label: g, link: p, onPress: y, paddingHorizontal: _, renderRightContent: k, role: b = "tab", styleOverride: F, testID: f = "pivot", thumbnail: h, thumbnailSize: K, withoutArrow: T = !1 } = e,
-                        L = [c.thumbnailContainer, "medium" === K && c.thumbnailContainerMedium],
+                    const { decoration: l, description: n, disabled: o = !1, isActive: m = !1, label: g, link: y, onPress: _, paddingHorizontal: p, renderRightContent: k, role: b = "tab", styleOverride: F, testID: K = "pivot", thumbnail: f, thumbnailSize: T, withoutArrow: h = !1 } = e,
+                        L = [c.thumbnailContainer, "medium" === T && c.thumbnailContainerMedium],
                         S = "string" == typeof g ? a.createElement(t.ZP, null, g) : g,
-                        v = "object" == typeof p && p.external && !p.openInSameFrame,
-                        w = n ? ("string" == typeof n ? a.createElement(t.ZP, { color: "gray700", size: "subtext2", testID: `${f}-description` }, n) : n) : null,
-                        I = a.useMemo(() => ("space0" === _ ? { paddingHorizontal: 0 } : { paddingHorizontal: _ ? u.default.theme.spaces[_] : u.default.theme.componentDimensions.gutterHorizontal }), [_]);
-                    return a.createElement(d.Z, { "aria-selected": "tab" === b ? m : null, disabled: o, link: o ? void 0 : p, onPress: y, role: b, style: [c.root, I, o && c.disabled, F], testID: f, withInteractiveStyling: !!p || !!y }, a.createElement(i.Z, { style: c.contentContainer }, h ? a.createElement(i.Z, { style: L }, h) : null, a.createElement(i.Z, { style: c.content }, S, w), k ? k() : null, (!p && !y) || o || T ? null : v ? a.createElement(r.default, { style: c.icon }) : a.createElement(s.default, { style: c.icon })), l);
+                        v = "object" == typeof y && y.external && !y.openInSameFrame,
+                        w = n ? ("string" == typeof n ? a.createElement(t.ZP, { color: "gray700", size: "subtext2", testID: `${K}-description` }, n) : n) : null,
+                        I = a.useMemo(() => ("space0" === p ? { paddingHorizontal: 0 } : { paddingHorizontal: p ? u.default.theme.spaces[p] : u.default.theme.componentDimensions.gutterHorizontal }), [p]);
+                    return a.createElement(d.Z, { "aria-selected": "tab" === b ? m : null, disabled: o, link: o ? void 0 : y, onPress: _, role: b, style: [c.root, I, o && c.disabled, F], testID: K, withInteractiveStyling: !!y || !!_ }, a.createElement(i.Z, { style: c.contentContainer }, f ? a.createElement(i.Z, { style: L }, f) : null, a.createElement(i.Z, { style: c.content }, S, w), k ? k() : null, (!y && !_) || o || h ? null : v ? a.createElement(r.default, { style: c.icon }) : a.createElement(s.default, { style: c.icon })), l);
                 },
                 c = u.default.create((e) => ({ root: { justifyContent: "space-between", minHeight: `calc(${u.default.theme.lineHeights.headline1} + 2 * ${e.componentDimensions.gutterVertical})`, paddingVertical: e.componentDimensions.gutterVertical }, disabled: { opacity: 0.5 }, contentContainer: { alignItems: "center", flexDirection: "row", flexGrow: 1 }, content: { flexGrow: 1, flexShrink: 1 }, icon: { color: e.colors.gray700, paddingStart: e.spaces.space12, flexShrink: 0 }, thumbnailContainer: { alignItems: "center", justifyContent: "center", height: e.spaces.space48, width: e.spaces.space48, marginEnd: e.spaces.space16 }, thumbnailContainerMedium: { height: e.spaces.space32, width: e.spaces.space32 } }));
         },
         280278: (e, l, n) => {
-            n.d(l, { ZP: () => y });
+            n.d(l, { ZP: () => _ });
             var a = n(202784),
                 i = n(325686),
                 r = n(827515),
@@ -1200,10 +1120,10 @@
                 m[e] = { active: { transitionProperty: "transform", transitionDuration: l, transform: "translate3d(0, 0, 0)" }, pre: { transform: `translate3d(0, ${e === u ? "100%" : "-100%"}, 0)` }, post: { transform: `translate3d(0, ${e === u ? "-100%" : "100%"}, 0)`, transitionProperty: "transform", transitionDuration: l } };
             });
             const g = { position: "absolute" },
-                p = d.default.create({ root: { overflow: "hidden" } }),
-                y = (e) => {
+                y = d.default.create({ root: { overflow: "hidden" } }),
+                _ = (e) => {
                     const { children: l, containerStyle: n, count: d, ...o } = e,
-                        [y, _] = a.useState({ animating: !1, count: e.count, pendingCount: null, text: e.children, oldText: null, pendingText: null, transitionDirection: u }),
+                        [_, p] = a.useState({ animating: !1, count: e.count, pendingCount: null, text: e.children, oldText: null, pendingText: null, transitionDirection: u }),
                         k = a.useRef(!1);
                     return (
                         a.useEffect(
@@ -1217,32 +1137,32 @@
                         ),
                         a.useEffect(() => {
                             if (k.current)
-                                if (s.Z.reducedMotionEnabled) _((n) => ({ ...n, oldText: null, text: l, pendingText: null, pendingCount: null, count: e.count }));
-                                else if (l !== y.pendingText) {
-                                    l === y.text || ((0, r.Z)(e.count) && y.count === e.count) ? _((e) => ({ ...e, pendingCount: null, pendingText: null })) : (_((n) => ({ ...n, pendingCount: e.count, pendingText: l })), y.animating || c(e.count, l, _));
+                                if (s.Z.reducedMotionEnabled) p((n) => ({ ...n, oldText: null, text: l, pendingText: null, pendingCount: null, count: e.count }));
+                                else if (l !== _.pendingText) {
+                                    l === _.text || ((0, r.Z)(e.count) && _.count === e.count) ? p((e) => ({ ...e, pendingCount: null, pendingText: null })) : (p((n) => ({ ...n, pendingCount: e.count, pendingText: l })), _.animating || c(e.count, l, p));
                                 }
                         }, [l]),
                         a.useEffect(() => {
                             k.current &&
-                                !1 === y.animating &&
-                                (y.oldText
+                                !1 === _.animating &&
+                                (_.oldText
                                     ? window.requestAnimationFrame(() =>
                                           window.requestAnimationFrame(() => {
-                                              k.current && _((e) => ({ ...e, animating: !0 }));
+                                              k.current && p((e) => ({ ...e, animating: !0 }));
                                           }),
                                       )
-                                    : y.pendingText && c(y.pendingCount, y.pendingText, _));
-                        }, [y.animating, y.oldText]),
+                                    : _.pendingText && c(_.pendingCount, _.pendingText, p));
+                        }, [_.animating, _.oldText]),
                         a.useMemo(() => {
-                            const e = m[y.transitionDirection],
-                                l = y.oldText && !s.Z.reducedMotionEnabled,
-                                r = !y.animating && y.oldText && !s.Z.reducedMotionEnabled,
-                                d = { ...g, ...(y.animating ? e.post : e.active) },
+                            const e = m[_.transitionDirection],
+                                l = _.oldText && !s.Z.reducedMotionEnabled,
+                                r = !_.animating && _.oldText && !s.Z.reducedMotionEnabled,
+                                d = { ...g, ...(_.animating ? e.post : e.active) },
                                 u = { ...(r ? e.pre : e.active) };
                             return a.createElement(
                                 i.Z,
-                                { style: [p.root, n] },
-                                l ? a.createElement("span", { style: d }, a.createElement(t.ZP, o, y.oldText)) : null,
+                                { style: [y.root, n] },
+                                l ? a.createElement("span", { style: d }, a.createElement(t.ZP, o, _.oldText)) : null,
                                 a.createElement(
                                     "span",
                                     {
@@ -1250,13 +1170,13 @@
                                         onTransitionEnd: () =>
                                             ((e, l) => {
                                                 e && l((e) => ({ ...e, animating: !1, oldText: null }));
-                                            })(k.current, _),
+                                            })(k.current, p),
                                         style: u,
                                     },
-                                    a.createElement(t.ZP, o, y.text),
+                                    a.createElement(t.ZP, o, _.text),
                                 ),
                             );
-                        }, [n, o, y, k, _])
+                        }, [n, o, _, k, p])
                     );
                 };
         },
@@ -1303,4 +1223,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserLists-6107ac1a.13f6ee5a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserLists-6107ac1a.7e02487a.js.map

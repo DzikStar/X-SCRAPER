@@ -158,10 +158,10 @@
                                             b = e.size,
                                             h = e.rotation,
                                             v = e.pull,
-                                            _ = (c((n = { "fa-beat": a, "fa-fade": t, "fa-beat-fade": l, "fa-bounce": r, "fa-shake": i, "fa-flash": s, "fa-spin": o, "fa-spin-reverse": d, "fa-spin-pulse": u, "fa-pulse": m, "fa-fw": g, "fa-inverse": p, "fa-border": y, "fa-li": f, "fa-flip": !0 === k, "fa-flip-horizontal": "horizontal" === k || "both" === k, "fa-flip-vertical": "vertical" === k || "both" === k }), "fa-".concat(b), null != b), c(n, "fa-rotate-".concat(h), null != h && 0 !== h), c(n, "fa-pull-".concat(v), null != v), c(n, "fa-swap-opacity", e.swapOpacity), n);
-                                        return Object.keys(_)
+                                            F = (c((n = { "fa-beat": a, "fa-fade": t, "fa-beat-fade": l, "fa-bounce": r, "fa-shake": i, "fa-flash": s, "fa-spin": o, "fa-spin-reverse": d, "fa-spin-pulse": u, "fa-pulse": m, "fa-fw": g, "fa-inverse": p, "fa-border": y, "fa-li": f, "fa-flip": !0 === k, "fa-flip-horizontal": "horizontal" === k || "both" === k, "fa-flip-vertical": "vertical" === k || "both" === k }), "fa-".concat(b), null != b), c(n, "fa-rotate-".concat(h), null != h && 0 !== h), c(n, "fa-pull-".concat(v), null != v), c(n, "fa-swap-opacity", e.swapOpacity), n);
+                                        return Object.keys(F)
                                             .map(function (e) {
-                                                return _[e] ? e : null;
+                                                return F[e] ? e : null;
                                             })
                                             .filter(function (e) {
                                                 return e;
@@ -172,8 +172,8 @@
                             ),
                         ),
                         v = b("transform", "string" == typeof a.transform ? t.Qc.transform(a.transform) : a.transform),
-                        F = b("mask", k(r)),
-                        K = (0, t.qv)(p, o(o(o(o({}, y), v), F), {}, { symbol: i, title: u, titleId: d, maskId: g }));
+                        _ = b("mask", k(r)),
+                        K = (0, t.qv)(p, o(o(o(o({}, y), v), _), {}, { symbol: i, title: u, titleId: d, maskId: g }));
                     if (!K)
                         return (
                             (function () {
@@ -188,11 +188,11 @@
                         Object.keys(a).forEach(function (e) {
                             h.hasOwnProperty(e) || (L[e] = a[e]);
                         }),
-                        _(S[0], L)
+                        F(S[0], L)
                     );
                 });
             (v.displayName = "FontAwesomeIcon"), (v.propTypes = { beat: r().bool, border: r().bool, beatFade: r().bool, bounce: r().bool, className: r().string, fade: r().bool, flash: r().bool, mask: r().oneOfType([r().object, r().array, r().string]), maskId: r().string, fixedWidth: r().bool, inverse: r().bool, flip: r().oneOf([!0, !1, "horizontal", "vertical", "both"]), icon: r().oneOfType([r().object, r().array, r().string]), listItem: r().bool, pull: r().oneOf(["right", "left"]), pulse: r().bool, rotation: r().oneOf([0, 90, 180, 270]), shake: r().bool, size: r().oneOf(["2xs", "xs", "sm", "lg", "xl", "2xl", "1x", "2x", "3x", "4x", "5x", "6x", "7x", "8x", "9x", "10x"]), spin: r().bool, spinPulse: r().bool, spinReverse: r().bool, symbol: r().oneOfType([r().bool, r().string]), title: r().string, titleId: r().string, transform: r().oneOfType([r().string, r().object]), swapOpacity: r().bool });
-            var _ = function e(n, a) {
+            var F = function e(n, a) {
                 var t = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {};
                 if ("string" == typeof a) return a;
                 var l = (a.children || []).map(function (a) {
@@ -585,8 +585,8 @@
                 b,
                 h,
                 v,
-                _,
                 F,
+                _,
                 K,
                 S,
                 L,
@@ -632,8 +632,8 @@
                                                             (i = { alias: null, args: null, kind: "ScalarField", name: "image_id", storageKey: null }),
                                                             (s = { alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }),
                                                             (o = { alias: null, args: null, kind: "ScalarField", name: "original_share_id", storageKey: null }),
-                                                            { alias: null, args: null, concreteType: "TweetResults", kind: "LinkedField", name: "original_post_id_results", plural: !1, selections: [(u = { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }), { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "LegacyTweet", kind: "LinkedField", name: "legacy", plural: !1, selections: [(c = { alias: null, args: null, kind: "ScalarField", name: "full_text", storageKey: null }), { kind: "RequiredField", field: (d = { alias: null, args: null, kind: "ScalarField", name: "favorited", storageKey: null }), action: "THROW", path: "grok_feed.items.item.original_post_id_results.result.legacy.favorited" }], storageKey: null }], type: "Tweet", abstractKey: null }], storageKey: null }], storageKey: null },
-                                                            { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_id_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [(m = { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }), (g = { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null }), { kind: "RequiredField", field: (p = { alias: null, args: null, kind: "ScalarField", name: "following", storageKey: null }), action: "THROW", path: "grok_feed.items.item.user_id_results.result.legacy.following" }, (y = { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null }), { kind: "RequiredField", field: (f = { alias: null, args: null, kind: "ScalarField", name: "followers_count", storageKey: null }), action: "THROW", path: "grok_feed.items.item.user_id_results.result.legacy.followers_count" }, (k = { alias: null, args: null, kind: "ScalarField", name: "default_profile_image", storageKey: null }), { kind: "RequiredField", field: (b = { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null }), action: "THROW", path: "grok_feed.items.item.user_id_results.result.legacy.followed_by" }, { kind: "RequiredField", field: (h = { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }), action: "THROW", path: "grok_feed.items.item.user_id_results.result.legacy.verified" }, (v = { alias: null, args: null, kind: "ScalarField", name: "verified_type", storageKey: null })], storageKey: null }], type: "User", abstractKey: null }], storageKey: null }], storageKey: null },
+                                                            { alias: null, args: null, concreteType: "TweetResults", kind: "LinkedField", name: "original_post_id_results", plural: !1, selections: [(u = { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }), { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "LegacyTweet", kind: "LinkedField", name: "legacy", plural: !1, selections: [(c = { alias: null, args: null, kind: "ScalarField", name: "full_text", storageKey: null }), { kind: "RequiredField", field: (d = { alias: null, args: null, kind: "ScalarField", name: "favorited", storageKey: null }), action: "THROW" }], storageKey: null }], type: "Tweet", abstractKey: null }], storageKey: null }], storageKey: null },
+                                                            { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_id_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [(m = { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }), (g = { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null }), { kind: "RequiredField", field: (p = { alias: null, args: null, kind: "ScalarField", name: "following", storageKey: null }), action: "THROW" }, (y = { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null }), { kind: "RequiredField", field: (f = { alias: null, args: null, kind: "ScalarField", name: "followers_count", storageKey: null }), action: "THROW" }, (k = { alias: null, args: null, kind: "ScalarField", name: "default_profile_image", storageKey: null }), { kind: "RequiredField", field: (b = { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null }), action: "THROW" }, { kind: "RequiredField", field: (h = { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }), action: "THROW" }, (v = { alias: null, args: null, kind: "ScalarField", name: "verified_type", storageKey: null })], storageKey: null }], type: "User", abstractKey: null }], storageKey: null }], storageKey: null },
                                                         ],
                                                         type: "GrokFeedImageItem",
                                                         abstractKey: null,
@@ -641,8 +641,8 @@
                                                 ],
                                                 storageKey: null,
                                             },
-                                            (_ = { alias: null, args: null, concreteType: "GrokFeedItemPrompt", kind: "LinkedField", name: "prompt", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "prompt", storageKey: null }], storageKey: null }),
-                                            (F = { alias: null, args: null, concreteType: "GrokFeedItemStats", kind: "LinkedField", name: "stats", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "likes", storageKey: null }], storageKey: null }),
+                                            (F = { alias: null, args: null, concreteType: "GrokFeedItemPrompt", kind: "LinkedField", name: "prompt", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "prompt", storageKey: null }], storageKey: null }),
+                                            (_ = { alias: null, args: null, concreteType: "GrokFeedItemStats", kind: "LinkedField", name: "stats", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "likes", storageKey: null }], storageKey: null }),
                                         ],
                                         storageKey: null,
                                     },
@@ -655,7 +655,7 @@
                         abstractKey: null,
                     },
                     kind: "Request",
-                    operation: { argumentDefinitions: t, kind: "Operation", name: "grokTokFeedQuery", selections: [{ alias: null, args: l, concreteType: "GrokFeed", kind: "LinkedField", name: "grok_feed", plural: !1, selections: [{ alias: null, args: null, concreteType: "GrokFeedItemWithPrompt", kind: "LinkedField", name: "items", plural: !0, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "item", plural: !1, selections: [r, { kind: "InlineFragment", selections: [i, s, o, { alias: null, args: null, concreteType: "TweetResults", kind: "LinkedField", name: "original_post_id_results", plural: !1, selections: [u, { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [r, { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "LegacyTweet", kind: "LinkedField", name: "legacy", plural: !1, selections: [c, d], storageKey: null }, (S = { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" }), (L = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null })], type: "Tweet", abstractKey: null }], storageKey: null }, L], storageKey: null }, { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_id_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [r, { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [m, g, p, y, f, k, b, h, v], storageKey: null }, S, L], type: "User", abstractKey: null }], storageKey: null }, L], storageKey: null }], type: "GrokFeedImageItem", abstractKey: null }], storageKey: null }, _, F], storageKey: null }, K], storageKey: null }] },
+                    operation: { argumentDefinitions: t, kind: "Operation", name: "grokTokFeedQuery", selections: [{ alias: null, args: l, concreteType: "GrokFeed", kind: "LinkedField", name: "grok_feed", plural: !1, selections: [{ alias: null, args: null, concreteType: "GrokFeedItemWithPrompt", kind: "LinkedField", name: "items", plural: !0, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "item", plural: !1, selections: [r, { kind: "InlineFragment", selections: [i, s, o, { alias: null, args: null, concreteType: "TweetResults", kind: "LinkedField", name: "original_post_id_results", plural: !1, selections: [u, { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [r, { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "LegacyTweet", kind: "LinkedField", name: "legacy", plural: !1, selections: [c, d], storageKey: null }, (S = { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" }), (L = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null })], type: "Tweet", abstractKey: null }], storageKey: null }, L], storageKey: null }, { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_id_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [r, { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [m, g, p, y, f, k, b, h, v], storageKey: null }, S, L], type: "User", abstractKey: null }], storageKey: null }, L], storageKey: null }], type: "GrokFeedImageItem", abstractKey: null }], storageKey: null }, F, _], storageKey: null }, K], storageKey: null }] },
                     params: { id: "Xm45rqEIHhgc6J7MnTMDbw", metadata: {}, name: "grokTokFeedQuery", operationKind: "query", text: null },
                 };
             I.hash = "6b41eecc7b2d1f2219b6774cdc4f80ba";
@@ -943,11 +943,11 @@
                             return document.addEventListener("keyup", e, !1), () => document.removeEventListener("keyup", e, !1);
                         }
                     }, [a, o]);
-                    var d = r.useMemo(() => [_.modal, u ? _.modalTransparent : _.modalOpaque], [u]);
-                    return r.createElement(b.Z, (0, t.Z)({}, c, { "aria-modal": !0, ref: n, role: a ? "dialog" : null, style: d }), r.createElement(b.Z, { style: _.container }, i));
+                    var d = r.useMemo(() => [F.modal, u ? F.modalTransparent : F.modalOpaque], [u]);
+                    return r.createElement(b.Z, (0, t.Z)({}, c, { "aria-modal": !0, ref: n, role: a ? "dialog" : null, style: d }), r.createElement(b.Z, { style: F.container }, i));
                 }),
-                _ = u.Z.create({ modal: { position: "fixed", top: 0, right: 0, bottom: 0, left: 0 }, modalTransparent: { backgroundColor: "transparent" }, modalOpaque: { backgroundColor: "white" }, container: { top: 0, flex: 1 } });
-            const F = v;
+                F = u.Z.create({ modal: { position: "fixed", top: 0, right: 0, bottom: 0, left: 0 }, modalTransparent: { backgroundColor: "transparent" }, modalOpaque: { backgroundColor: "white" }, container: { top: 0, flex: 1 } });
+            const _ = v;
             var K = a(386308),
                 S = () => (0, c.Z)("div", { role: "none", tabIndex: 0, style: T.focusBracket });
             function L(e) {
@@ -1041,13 +1041,13 @@
                     v = r.useCallback(() => {
                         A(y), s && s();
                     }, [y, s]),
-                    _ = r.useCallback(() => {
+                    F = r.useCallback(() => {
                         !(function (e, n) {
                             A(e), C.push(e), (P[e] = n), x();
                         })(y, h),
                             c && c();
                     }, [y, c]);
-                return r.useEffect(() => () => A(y), [y]), r.createElement(o, null, r.createElement(k, { animationType: a, onDismiss: v, onShow: _, visible: g }, r.createElement(O, { active: b }, r.createElement(F, (0, t.Z)({}, p, { active: b, onRequestClose: u, ref: n, transparent: d }), i))));
+                return r.useEffect(() => () => A(y), [y]), r.createElement(o, null, r.createElement(k, { animationType: a, onDismiss: v, onShow: F, visible: g }, r.createElement(O, { active: b }, r.createElement(_, (0, t.Z)({}, p, { active: b, onRequestClose: u, ref: n, transparent: d }), i))));
             });
         },
         706307: (e, n, a) => {
@@ -1074,8 +1074,8 @@
                     b = e.onPress,
                     h = e.onPressIn,
                     v = e.onPressOut,
-                    _ = e.rejectResponderTermination,
-                    F = e.style,
+                    F = e.rejectResponderTermination,
+                    _ = e.style,
                     K = (0, l.Z)(e, d),
                     S = (0, r.useRef)(null),
                     L = (0, i.Z)(n, S),
@@ -1105,7 +1105,7 @@
                     ),
                     A = (0, r.useMemo)(
                         () => ({
-                            cancelable: !_,
+                            cancelable: !F,
                             disabled: y,
                             delayLongPress: p,
                             delayPressStart: o,
@@ -1120,10 +1120,10 @@
                                 x(250), null != v && v(e);
                             },
                         }),
-                        [p, o, m, y, k, b, h, v, _, P, x],
+                        [p, o, m, y, k, b, h, v, F, P, x],
                     ),
                     D = (0, s.Z)(S, A);
-                return r.createElement(u.Z, (0, t.Z)({}, K, D, { accessibilityDisabled: y, focusable: !y && !1 !== f, pointerEvents: y ? "box-none" : void 0, ref: L, style: [g.root, !y && g.actionable, F, null != E && { opacity: E }, { transitionDuration: w }] }));
+                return r.createElement(u.Z, (0, t.Z)({}, K, D, { accessibilityDisabled: y, focusable: !y && !1 !== f, pointerEvents: y ? "box-none" : void 0, ref: L, style: [g.root, !y && g.actionable, _, null != E && { opacity: E }, { transitionDuration: w }] }));
             }
             var g = o.Z.create({ root: { transitionProperty: "opacity", transitionDuration: "0.15s", userSelect: "none" }, actionable: { cursor: "pointer", touchAction: "manipulation" } }),
                 p = r.memo(r.forwardRef(m));
@@ -1313,4 +1313,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-e96e9bea.29c19faa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-e96e9bea.6397247a.js.map

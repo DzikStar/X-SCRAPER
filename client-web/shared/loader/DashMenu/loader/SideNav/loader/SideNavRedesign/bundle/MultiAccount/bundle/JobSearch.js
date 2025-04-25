@@ -6,8 +6,8 @@
             a.d(l, { ZP: () => B, V7: () => W });
             a(136728);
             var n,
-                t,
                 s,
+                t,
                 i,
                 r,
                 u,
@@ -32,7 +32,7 @@
                                 selections: [
                                     {
                                         alias: null,
-                                        args: (t = [{ kind: "Literal", name: "status", value: "Accepted" }]),
+                                        args: (s = [{ kind: "Literal", name: "status", value: "Accepted" }]),
                                         concreteType: "DelegationGroup",
                                         kind: "LinkedField",
                                         name: "list_delegation_groups",
@@ -54,7 +54,7 @@
                                                         name: "result",
                                                         plural: !1,
                                                         selections: [
-                                                            (s = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }),
+                                                            (t = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }),
                                                             {
                                                                 kind: "InlineFragment",
                                                                 selections: [
@@ -69,15 +69,14 @@
                                                                             name: "legacy",
                                                                             plural: !1,
                                                                             selections: [
-                                                                                { kind: "RequiredField", field: (r = { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null }), action: "THROW", path: "viewer_v2.list_delegation_groups.handle.result.legacy.profile_image_url_https" },
-                                                                                { kind: "RequiredField", field: (u = { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null }), action: "THROW", path: "viewer_v2.list_delegation_groups.handle.result.legacy.name" },
-                                                                                { kind: "RequiredField", field: (o = { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }), action: "THROW", path: "viewer_v2.list_delegation_groups.handle.result.legacy.screen_name" },
-                                                                                { kind: "RequiredField", field: (d = { alias: null, args: null, kind: "ScalarField", name: "id_str", storageKey: null }), action: "THROW", path: "viewer_v2.list_delegation_groups.handle.result.legacy.id_str" },
+                                                                                { kind: "RequiredField", field: (r = { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null }), action: "THROW" },
+                                                                                { kind: "RequiredField", field: (u = { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null }), action: "THROW" },
+                                                                                { kind: "RequiredField", field: (o = { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }), action: "THROW" },
+                                                                                { kind: "RequiredField", field: (d = { alias: null, args: null, kind: "ScalarField", name: "id_str", storageKey: null }), action: "THROW" },
                                                                             ],
                                                                             storageKey: null,
                                                                         },
                                                                         action: "THROW",
-                                                                        path: "viewer_v2.list_delegation_groups.handle.result.legacy",
                                                                     },
                                                                     { args: null, kind: "FragmentSpread", name: "UserCell_user" },
                                                                 ],
@@ -116,7 +115,7 @@
                                 selections: [
                                     {
                                         alias: null,
-                                        args: t,
+                                        args: s,
                                         concreteType: "DelegationGroup",
                                         kind: "LinkedField",
                                         name: "list_delegation_groups",
@@ -138,7 +137,7 @@
                                                         name: "result",
                                                         plural: !1,
                                                         selections: [
-                                                            s,
+                                                            t,
                                                             {
                                                                 kind: "InlineFragment",
                                                                 selections: [
@@ -237,18 +236,18 @@
                     params: { id: "R0L__TguknNYVKUvNwmBpA", metadata: { features: ["responsive_web_graphql_timeline_navigation_enabled"] }, name: "DelegatedAccountListQuery", operationKind: "query", text: null },
                 };
             p.hash = "cecac573042932c41c102e120b1fb720";
-            const y = p;
-            var m = a(202784),
+            const m = p;
+            var y = a(202784),
                 _ = a(325686),
                 k = (a(585488), a(712696)),
-                h = a.n(k),
-                v = a(107267),
-                F = a(731708),
-                b = a(661810),
+                F = a.n(k),
+                h = a(107267),
+                b = a(731708),
+                v = a(661810),
                 f = a(642153),
-                w = a(392237),
-                K = a(674132),
-                S = a.n(K),
+                K = a(392237),
+                S = a(674132),
+                w = a.n(S),
                 T = a(899667),
                 U = a(487552),
                 L = a(516951),
@@ -261,18 +260,18 @@
             const H = (0, a(668214).Z)()
                     .propsFromActions(() => ({ setDelegateUser: I.vU }))
                     .withAnalytics({ component: "delegated_account_list" }),
-                Z = y,
-                q = S().daffabde,
-                O = S().eccbfa26,
-                x = S().a1b7a904,
+                Z = m,
+                q = w().daffabde,
+                O = w().eccbfa26,
+                x = w().a1b7a904,
                 M = { context: "DelegateGroups" },
-                P = ({ activeUserId: e, delegateUser: l, isUpdatedManageAccounts: a, onDelegateSwitch: n, renderUserDecoration: t, setDelegateUser: s }) => {
+                P = ({ activeUserId: e, delegateUser: l, isUpdatedManageAccounts: a, onDelegateSwitch: n, renderUserDecoration: s, setDelegateUser: t }) => {
                     const i = (0, A.I0)(),
-                        r = (0, v.useHistory)(),
+                        r = (0, h.useHistory)(),
                         [u] = (0, E.m)(C.s7),
-                        [o, d] = m.useState(!0),
-                        c = h()(Z, {}),
-                        g = m.useMemo(() => {
+                        [o, d] = y.useState(!0),
+                        c = F()(Z, {}),
+                        g = y.useMemo(() => {
                             const l = [];
                             return (
                                 c.viewer_v2?.list_delegation_groups?.forEach((a) => {
@@ -282,40 +281,40 @@
                                 l
                             );
                         }, [e, c.viewer_v2?.list_delegation_groups]),
-                        p = m.useMemo(() => l?.userId && g.some((e) => e?.rest_id && l?.userId === e?.rest_id), [l, g]),
-                        y = m.useCallback(() => {
+                        p = y.useMemo(() => l?.userId && g.some((e) => e?.rest_id && l?.userId === e?.rest_id), [l, g]),
+                        m = y.useCallback(() => {
                             d(!o);
                         }, [o]);
-                    m.useEffect(() => {
+                    y.useEffect(() => {
                         i(I.po(g.length));
                     }, [g, i]);
-                    const k = m.useCallback(
+                    const k = y.useCallback(
                         (e) => () => {
-                            u ? r.push("/i/delegate/switch", { delegateUser: e }) : s && s(e), n();
+                            u ? r.push("/i/delegate/switch", { delegateUser: e }) : t && t(e), n();
                         },
-                        [u, s, n, r],
+                        [u, t, n, r],
                     );
                     return g.length < 1
                         ? null
-                        : m.createElement(
-                              m.Fragment,
+                        : y.createElement(
+                              y.Fragment,
                               null,
-                              a ? m.createElement(_.Z, { style: Q.updatedDelegateAccountsLabel }, m.createElement(F.ZP, { color: "gray700", weight: "bold" }, O)) : m.createElement(_.Z, { onClick: y, style: Q.delegateAccountsLabel }, m.createElement(F.ZP, { color: "gray700", weight: "bold" }, p ? q : O), !p && (o ? m.createElement(T.default, { style: Q.IconChevronUp }) : m.createElement(U.default, { style: Q.IconChevronDown }))),
+                              a ? y.createElement(_.Z, { style: Q.updatedDelegateAccountsLabel }, y.createElement(b.ZP, { color: "gray700", weight: "bold" }, O)) : y.createElement(_.Z, { onClick: m, style: Q.delegateAccountsLabel }, y.createElement(b.ZP, { color: "gray700", weight: "bold" }, p ? q : O), !p && (o ? y.createElement(T.default, { style: Q.IconChevronUp }) : y.createElement(U.default, { style: Q.IconChevronDown }))),
                               a || o || p
                                   ? g.map((e) => {
                                         const { id_str: n } = e.legacy,
-                                            s = n === l?.userId,
-                                            i = t ? t({ withBadges: !1, isActiveUser: s }) : void 0,
+                                            t = n === l?.userId,
+                                            i = s ? s({ withBadges: !1, isActiveUser: t }) : void 0,
                                             r = k({ userId: n });
-                                        return m.createElement(m.Fragment, { key: e.rest_id }, m.createElement(D.Z, { "aria-label": x, badgeContext: "account", decoration: i, displayMode: "UserCompact", onCellClick: s ? L.Z : r, user: e, withInteractiveStyling: !s, withLink: !1 }), a && m.createElement(b.Z, { style: Q.accountDivider }));
+                                        return y.createElement(y.Fragment, { key: e.rest_id }, y.createElement(D.Z, { "aria-label": x, badgeContext: "account", decoration: i, displayMode: "UserCompact", onCellClick: t ? L.Z : r, user: e, withInteractiveStyling: !t, withLink: !1 }), a && y.createElement(v.Z, { style: Q.accountDivider }));
                                     })
-                                  : m.createElement(_.Z, { style: Q.facePileContainer }, m.createElement(f.Z, { userAvatarSize: "large", userAvatarUrls: g.map((e) => (e?.legacy && e?.legacy?.profile_image_url_https) || "") })),
+                                  : y.createElement(_.Z, { style: Q.facePileContainer }, y.createElement(f.Z, { userAvatarSize: "large", userAvatarUrls: g.map((e) => (e?.legacy && e?.legacy?.profile_image_url_https) || "") })),
                           );
                 };
             function W() {
-                const e = h()(Z, {}),
+                const e = F()(Z, {}),
                     l = (0, A.v9)(I.x0);
-                return m.useMemo(() => {
+                return y.useMemo(() => {
                     const a = [];
                     return (
                         e.viewer_v2?.list_delegation_groups?.forEach((e) => {
@@ -326,16 +325,16 @@
                     );
                 }, [e.viewer_v2?.list_delegation_groups, l]);
             }
-            const Q = w.default.create((e) => ({ IconChevronUp: { color: e.colors.primary, marginEnd: e.spaces.space12 }, IconChevronDown: { color: e.colors.gray700, marginEnd: e.spaces.space12 }, delegateAccountsLabel: { padding: e.spaces.space12, alignItems: "center", flexDirection: "row", justifyContent: "space-between", cursor: "pointer" }, updatedDelegateAccountsLabel: { margin: e.spaces.space16, marginBottom: e.spaces.space4 }, accountDivider: { marginHorizontal: e.spaces.space16 }, facePileContainer: { display: "flex", flexDirection: "row", justifyContent: "space-between", paddingStart: e.spaces.space16, paddingEnd: e.spaces.space16 } })),
-                B = H((e) => m.createElement(R.H, { errorConfig: M }, m.createElement(P, e)));
+            const Q = K.default.create((e) => ({ IconChevronUp: { color: e.colors.primary, marginEnd: e.spaces.space12 }, IconChevronDown: { color: e.colors.gray700, marginEnd: e.spaces.space12 }, delegateAccountsLabel: { padding: e.spaces.space12, alignItems: "center", flexDirection: "row", justifyContent: "space-between", cursor: "pointer" }, updatedDelegateAccountsLabel: { margin: e.spaces.space16, marginBottom: e.spaces.space4 }, accountDivider: { marginHorizontal: e.spaces.space16 }, facePileContainer: { display: "flex", flexDirection: "row", justifyContent: "space-between", paddingStart: e.spaces.space16, paddingEnd: e.spaces.space16 } })),
+                B = H((e) => y.createElement(R.H, { errorConfig: M }, y.createElement(P, e)));
         },
         621416: (e, l, a) => {
-            a.d(l, { Z: () => i, m: () => s });
+            a.d(l, { Z: () => i, m: () => t });
             a(890103);
             var n = a(202784),
-                t = a(175698);
-            function s(e) {
-                const l = (0, t.A)();
+                s = a(175698);
+            function t(e) {
+                const l = (0, s.A)();
                 return [
                     !!l && !l.flags[e],
                     n.useCallback(() => {
@@ -343,29 +342,29 @@
                     }, [l, e]),
                 ];
             }
-            const i = s;
+            const i = t;
         },
         380155: (e, l, a) => {
             a.d(l, { y: () => u });
             var n = a(674132),
-                t = a.n(n),
-                s = a(615656),
+                s = a.n(n),
+                t = a(615656),
                 i = a(51525);
-            const r = t().b20a3894,
-                u = { [s.ZP.AppInReadOnlyMode]: { customAction: i.w1 }, [s.ZP.TargetUserNotFound]: { toast: { text: r } }, showToast: !0 };
+            const r = s().b20a3894,
+                u = { [t.ZP.AppInReadOnlyMode]: { customAction: i.w1 }, [t.ZP.TargetUserNotFound]: { toast: { text: r } }, showToast: !0 };
         },
         956817: (e, l, a) => {
             a.d(l, { y: () => u });
             var n = a(734540),
-                t = a(917799),
-                s = a(24546),
+                s = a(917799),
+                t = a(24546),
                 i = a(923488);
             const r = { REQUEST: "rweb/multiAccount/SWITCH_REQUEST", SUCCESS: "rweb/multiAccount/SWITCH_SUCCESS", FAILURE: "rweb/multiAccount/SWITCH_FAILURE" },
                 u =
                     (e) =>
                     (l, a, { api: u }) => {
-                        const o = (0, t._O)(l, { request: u.withEndpoint(n.Z).switch, params: e });
-                        return l((0, s.MH)()).then(() =>
+                        const o = (0, s._O)(l, { request: u.withEndpoint(n.Z).switch, params: e });
+                        return l((0, t.MH)()).then(() =>
                             l((0, i.nB)()).then(() =>
                                 o({ actionTypes: r, context: "SWITCH" }).then(() => {
                                     window.location.assign("/home");
@@ -376,4 +375,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~bundle.MultiAccount~bundle.JobSearch.ca7b4f4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~bundle.MultiAccount~bundle.JobSearch.de5cc66a.js.map

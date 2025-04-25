@@ -4848,6 +4848,7 @@
                 t("ie45edda", "Oversigt over livestream"),
                 t("e30fc268", "Live Viewers"),
                 t("bd37f68e", "Medieaktivitet"),
+                t("fe074210", "minutter"),
                 t("jd03a1b8", "Minutes Watched"),
                 t("a20e91e8", "minutes watched"),
                 t("ic2bebee", "Indtægtsgivende"),
@@ -4908,9 +4909,9 @@
                 t("a7b48b36", "Procentdelen af videovisninger, der blev gennemført."),
                 t("a2580f2a", "Gennemførelsesprocent"),
                 t("ff95a9cc", "Video-id"),
-                t("a97e358e", "Video-link"),
-                t("e10e8b46", "Viser kun videoer fra de sidste 100 dage.");
-            t("ba37f6da", "Videooversigt"),
+                t("a97e358e", "Video-link");
+            t("e10e8b46", "Viser kun videoer fra de sidste 100 dage."),
+                t("ba37f6da", "Videooversigt"),
                 t("f19846b2", "Videominiaturebillede"),
                 t("ccd6f4a8", "Video-titel"),
                 t("c8410542", "Antallet af gange, din video er blevet vist."),
@@ -5073,7 +5074,6 @@
                 t("fb3e127a", "Tidsbegrænset nytårstilbud"),
                 t("a5fee980", "Få 30 % rabat på årsabonnementer og op til $12.000 i gratis annoncekredit, når du abonnerer før"),
                 t("c9051cac", "dage"),
-                t("fe074210", "minutter"),
                 t("ie035790", "sek."),
                 t("cbd3dfaa", "Prøv betaversionen"),
                 t("h260121e", "Vis dine bedste stillinger frem for din målgruppe."),
@@ -13239,4 +13239,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/da.9963307a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/da.7e4b752a.js.map

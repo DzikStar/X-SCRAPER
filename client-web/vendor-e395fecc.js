@@ -29,7 +29,7 @@ window.__SCRIPTS_LOADED__.runtime &&
                 };
             },
             896849: (e, t, r) => {
-                var n = (0, r(171600).default)(r(638636)),
+                var n = (0, r(183491).default)(r(158663)),
                     i = r(262485),
                     o = (r(826590), Object.freeze({ RANGE_ADD: "RANGE_ADD", RANGE_DELETE: "RANGE_DELETE", NODE_DELETE: "NODE_DELETE" })),
                     a = Object.freeze({ APPEND: "append", PREPEND: "prepend" });
@@ -76,30 +76,30 @@ window.__SCRIPTS_LOADED__.runtime &&
                                                     var c = e.getRootField(u);
                                                     if (c) {
                                                         var l,
-                                                            f = c.getLinkedRecord(a),
-                                                            d = (0, n.default)(o);
+                                                            d = c.getLinkedRecord(a),
+                                                            f = (0, n.default)(o);
                                                         try {
-                                                            for (d.s(); !(l = d.n()).done; ) {
-                                                                var _ = l.value;
-                                                                if (f) {
-                                                                    var h = i.getConnection(s, _.key, _.filters);
-                                                                    if (h) {
-                                                                        var p = i.buildConnectionEdge(e, h, f);
-                                                                        if (p)
-                                                                            switch (_.rangeBehavior) {
+                                                            for (f.s(); !(l = f.n()).done; ) {
+                                                                var h = l.value;
+                                                                if (d) {
+                                                                    var p = i.getConnection(s, h.key, h.filters);
+                                                                    if (p) {
+                                                                        var v = i.buildConnectionEdge(e, p, d);
+                                                                        if (v)
+                                                                            switch (h.rangeBehavior) {
                                                                                 case "append":
-                                                                                    i.insertEdgeAfter(h, p);
+                                                                                    i.insertEdgeAfter(p, v);
                                                                                     break;
                                                                                 case "prepend":
-                                                                                    i.insertEdgeBefore(h, p);
+                                                                                    i.insertEdgeBefore(p, v);
                                                                             }
                                                                     }
                                                                 }
                                                             }
                                                         } catch (e) {
-                                                            d.e(e);
+                                                            f.e(e);
                                                         } finally {
-                                                            d.f();
+                                                            f.f();
                                                         }
                                                     }
                                                 }
@@ -121,17 +121,17 @@ window.__SCRIPTS_LOADED__.runtime &&
                                                     var s = [],
                                                         l = t[c];
                                                     if (l && Array.isArray(u)) {
-                                                        var f,
-                                                            d = (0, n.default)(u);
+                                                        var d,
+                                                            f = (0, n.default)(u);
                                                         try {
-                                                            for (d.s(); !(f = d.n()).done; ) {
-                                                                var _ = f.value;
-                                                                l && "object" == typeof l && (l = l[_]);
+                                                            for (f.s(); !(d = f.n()).done; ) {
+                                                                var h = d.value;
+                                                                l && "object" == typeof l && (l = l[h]);
                                                             }
                                                         } catch (e) {
-                                                            d.e(e);
+                                                            f.e(e);
                                                         } finally {
-                                                            d.f();
+                                                            f.f();
                                                         }
                                                         Array.isArray(l)
                                                             ? l.forEach(function (e) {
@@ -155,9 +155,9 @@ window.__SCRIPTS_LOADED__.runtime &&
                                                         for (var u = s, c = 1; c < r.length - 1; c++) u && (u = u.getLinkedRecord(r[c]));
                                                         if (!t || !u) return;
                                                         var l,
-                                                            f = (0, n.default)(t);
+                                                            d = (0, n.default)(t);
                                                         try {
-                                                            var d = function () {
+                                                            var f = function () {
                                                                 var e = l.value,
                                                                     t = i.getConnection(u, e.key, e.filters);
                                                                 t &&
@@ -165,11 +165,11 @@ window.__SCRIPTS_LOADED__.runtime &&
                                                                         i.deleteNode(t, e);
                                                                     });
                                                             };
-                                                            for (f.s(); !(l = f.n()).done; ) d();
+                                                            for (d.s(); !(l = d.n()).done; ) f();
                                                         } catch (e) {
-                                                            f.e(e);
+                                                            d.e(e);
                                                         } finally {
-                                                            f.f();
+                                                            d.f();
                                                         }
                                                     })(r, o, a, e, s);
                                                 }
@@ -218,12 +218,16 @@ window.__SCRIPTS_LOADED__.runtime &&
                                 var r = i(e, t);
                                 return this._mutator.getValue(this._dataID, r);
                             }),
-                            (t.setValue = function (e, t, r) {
-                                return s(e) || o(!1), this.setValue__UNSAFE(e, t, r);
+                            (t.setValue = function (e, t, r, n) {
+                                return s(e) || o(!1), this.setValue__UNSAFE(e, t, r, n);
                             }),
-                            (t.setValue__UNSAFE = function (e, t, r) {
-                                var n = i(t, r);
-                                return this._mutator.setValue(this._dataID, n, e), this;
+                            (t.getErrors = function (e, t) {
+                                var r = i(e, t);
+                                return this._mutator.getErrors(this._dataID, r);
+                            }),
+                            (t.setValue__UNSAFE = function (e, t, r, n) {
+                                var o = i(t, r);
+                                return this._mutator.setValue(this._dataID, o, e), null != n && (0 === n.length ? this._mutator.setErrors(this._dataID, o) : this._mutator.setErrors(this._dataID, o, n)), this;
                             }),
                             (t.getLinkedRecord = function (e, t) {
                                 var r = i(e, t),
@@ -340,6 +344,19 @@ window.__SCRIPTS_LOADED__.runtime &&
                                 var i = this._getSinkRecord(e);
                                 n.setValue(i, t, r);
                             }),
+                            (t.getErrors = function (e, t) {
+                                for (var r = 0; r < this.__sources.length; r++) {
+                                    var i = this.__sources[r].get(e);
+                                    if (i) {
+                                        var o = n.getErrors(i, t);
+                                        if (void 0 !== o) return o;
+                                    } else if (null === i) return null;
+                                }
+                            }),
+                            (t.setErrors = function (e, t, r) {
+                                var i = this._getSinkRecord(e);
+                                n.setErrors(i, t, r);
+                            }),
                             (t.getLinkedRecordID = function (e, t) {
                                 for (var r = 0; r < this.__sources.length; r++) {
                                     var i = this.__sources[r].get(e);
@@ -380,10 +397,10 @@ window.__SCRIPTS_LOADED__.runtime &&
                     u = s.ROOT_ID,
                     c = s.ROOT_TYPE,
                     l = r(368281).readUpdatableFragment,
-                    f = r(289477).readUpdatableQuery,
-                    d = r(277874),
-                    _ = r(647677),
-                    h = (function () {
+                    d = r(289477).readUpdatableQuery,
+                    f = r(277874),
+                    h = r(647677),
+                    p = (function () {
                         function e(e, t, r, n) {
                             (this.__mutator = e), (this._handlerProvider = r || null), (this._proxies = {}), (this._getDataID = t), (this._invalidatedStore = !1), (this._idsMarkedForInvalidation = new Set()), (this._missingFieldHandlers = n);
                         }
@@ -402,27 +419,27 @@ window.__SCRIPTS_LOADED__.runtime &&
                                         t.length &&
                                         t.forEach(function (e) {
                                             var t = r._handlerProvider && r._handlerProvider(e.handle);
-                                            t || _(!1), t.update(r, e);
+                                            t || h(!1), t.update(r, e);
                                         });
                             }),
                             (t.create = function (e, t) {
                                 this.__mutator.create(e, t), delete this._proxies[e];
                                 var r = this.get(e);
-                                return r || _(!1), r;
+                                return r || h(!1), r;
                             }),
                             (t.delete = function (e) {
-                                e === u && _(!1), delete this._proxies[e], this.__mutator.delete(e);
+                                e === u && h(!1), delete this._proxies[e], this.__mutator.delete(e);
                             }),
                             (t.get = function (e) {
                                 if (!this._proxies.hasOwnProperty(e)) {
                                     var t = this.__mutator.getStatus(e);
-                                    this._proxies[e] = t === o ? new d(this, this.__mutator, e) : t === a ? null : void 0;
+                                    this._proxies[e] = t === o ? new f(this, this.__mutator, e) : t === a ? null : void 0;
                                 }
                                 return this._proxies[e];
                             }),
                             (t.getRoot = function () {
                                 var e = this.get(u);
-                                return e || (e = this.create(u, c)), (e && e.getType() === c) || _(!1), e;
+                                return e || (e = this.create(u, c)), (e && e.getType() === c) || h(!1), e;
                             }),
                             (t.invalidateStore = function () {
                                 this._invalidatedStore = !0;
@@ -437,7 +454,7 @@ window.__SCRIPTS_LOADED__.runtime &&
                                 return this._idsMarkedForInvalidation;
                             }),
                             (t.readUpdatableQuery = function (e, t) {
-                                return f(e, t, this, this._missingFieldHandlers);
+                                return d(e, t, this, this._missingFieldHandlers);
                             }),
                             (t.readUpdatableFragment = function (e, t) {
                                 return l(e, t, this, this._missingFieldHandlers);
@@ -445,7 +462,7 @@ window.__SCRIPTS_LOADED__.runtime &&
                             e
                         );
                     })();
-                e.exports = h;
+                e.exports = p;
             },
             176897: (e, t, r) => {
                 var n = r(108475),
@@ -519,9 +536,9 @@ window.__SCRIPTS_LOADED__.runtime &&
                     var u = t.optimisticUpdater,
                         c = t.configs,
                         l = t.optimisticResponse,
-                        f = t.variables,
-                        d = o(r, f);
-                    return c && (u = a.convert(c, r, u).optimisticUpdater), e.applyMutation({ operation: d, response: l, updater: u });
+                        d = t.variables,
+                        f = o(r, d);
+                    return c && (u = a.convert(c, r, u).optimisticUpdater), e.applyMutation({ operation: f, response: l, updater: u });
                 };
             },
             53647: (e) => {
@@ -530,7 +547,7 @@ window.__SCRIPTS_LOADED__.runtime &&
                 };
             },
             921622: (e, t, r) => {
-                var n = (0, r(171600).default)(r(373408)),
+                var n = (0, r(183491).default)(r(434323)),
                     i = r(585488).getRequest,
                     o = r(286190).generateUniqueClientID,
                     a = r(539369),
@@ -544,22 +561,22 @@ window.__SCRIPTS_LOADED__.runtime &&
                     if ("mutation" !== r.params.operationKind) throw new Error("commitMutation: Expected mutation operation");
                     if ("Request" !== r.kind) throw new Error("commitMutation: Expected mutation to be of type request");
                     var l = t.optimisticResponse,
-                        f = t.optimisticUpdater,
-                        d = t.updater,
-                        _ = t.configs,
-                        h = t.cacheConfig,
-                        p = t.onError,
-                        v = t.onUnsubscribe,
+                        d = t.optimisticUpdater,
+                        f = t.updater,
+                        h = t.configs,
+                        p = t.cacheConfig,
+                        v = t.onError,
+                        _ = t.onUnsubscribe,
                         g = t.variables,
-                        E = t.uploadables,
-                        m = s(r, g, h, o());
-                    if (("function" == typeof l && (l = l()), _)) {
-                        var b = u.convert(_, r, f, d);
-                        (f = b.optimisticUpdater), (d = b.updater);
+                        m = t.uploadables,
+                        b = s(r, g, p, o());
+                    if (("function" == typeof l && (l = l()), h)) {
+                        var y = u.convert(h, r, d, f);
+                        (d = y.optimisticUpdater), (f = y.updater);
                     }
                     var R = [];
                     return {
-                        dispose: e.executeMutation({ operation: m, optimisticResponse: l, optimisticUpdater: f, updater: d, uploadables: E }).subscribe({
+                        dispose: e.executeMutation({ operation: b, optimisticResponse: l, optimisticUpdater: d, updater: f, uploadables: m }).subscribe({
                             next: function (e) {
                                 var r;
                                 Array.isArray(e)
@@ -571,59 +588,39 @@ window.__SCRIPTS_LOADED__.runtime &&
                             },
                             complete: function () {
                                 var r = t.onCompleted;
-                                r && r(e.lookup(m.fragment).data, 0 !== R.length ? R : null);
+                                r && r(e.lookup(b.fragment).data, 0 !== R.length ? R : null);
                             },
-                            error: p,
-                            unsubscribe: v,
+                            error: v,
+                            unsubscribe: _,
                         }).unsubscribe,
                     };
                 };
             },
             368306: (e, t, r) => {
-                var n = (0, r(171600).default)(r(638636)),
+                var n = (0, r(183491).default)(r(158663)),
                     i = r(108475).getArgumentValues,
-                    o = r(677783),
-                    a = o.ACTOR_CHANGE,
-                    s = o.ALIASED_FRAGMENT_SPREAD,
-                    u = o.ALIASED_INLINE_FRAGMENT_SPREAD,
-                    c = o.CATCH_FIELD,
-                    l = o.CLIENT_EDGE_TO_CLIENT_OBJECT,
-                    f = o.CLIENT_EDGE_TO_SERVER_OBJECT,
-                    d = o.CLIENT_EXTENSION,
-                    _ = o.CONDITION,
-                    h = o.DEFER,
-                    p = o.FRAGMENT_SPREAD,
-                    v = o.INLINE_DATA_FRAGMENT_SPREAD,
-                    g = o.INLINE_FRAGMENT,
-                    E = o.LINKED_FIELD,
-                    m = o.MODULE_IMPORT,
-                    b = o.RELAY_LIVE_RESOLVER,
-                    R = o.RELAY_RESOLVER,
-                    y = o.REQUIRED_FIELD,
-                    I = o.SCALAR_FIELD,
-                    D = o.STREAM,
-                    k = ["id", "__id", "__typename", "js"];
-                function T(e, t, r, o, x, F) {
-                    var O,
-                        w,
-                        C = (0, n.default)(o);
+                    o = ["id", "__id", "__typename", "js"];
+                function a(e, t, r, d, f, h) {
+                    var p,
+                        v,
+                        _ = (0, n.default)(d);
                     try {
-                        var P = function () {
-                            var o = w.value;
-                            switch (o.kind) {
-                                case E:
-                                    o.plural ? Object.defineProperty(e, null !== (U = o.alias) && void 0 !== U ? U : o.name, { get: S(o, r, t, x, F), set: A(o, r, t, x) }) : Object.defineProperty(e, null !== (M = o.alias) && void 0 !== M ? M : o.name, { get: N(o, r, t, x, F), set: L(o, r, t, x) });
+                        var g = function () {
+                            var d = v.value;
+                            switch (d.kind) {
+                                case "LinkedField":
+                                    d.plural ? Object.defineProperty(e, null !== (m = d.alias) && void 0 !== m ? m : d.name, { get: c(d, r, t, f, h), set: s(d, r, t, f) }) : Object.defineProperty(e, null !== (b = d.alias) && void 0 !== b ? b : d.name, { get: l(d, r, t, f, h), set: u(d, r, t, f) });
                                     break;
-                                case I:
-                                    var C = null !== (O = o.alias) && void 0 !== O ? O : o.name;
-                                    Object.defineProperty(e, C, {
+                                case "ScalarField":
+                                    var _ = null !== (p = d.alias) && void 0 !== p ? p : d.name;
+                                    Object.defineProperty(e, _, {
                                         get: function () {
                                             var e,
-                                                a = i(null !== (e = o.args) && void 0 !== e ? e : [], r),
-                                                s = t.getValue(o.name, a);
+                                                o = i(null !== (e = d.args) && void 0 !== e ? e : [], r),
+                                                a = t.getValue(d.name, o);
                                             return (
-                                                null == s &&
-                                                    (s = (function (e, t, r, i, o) {
+                                                null == a &&
+                                                    (a = (function (e, t, r, i, o) {
                                                         var a,
                                                             s = (0, n.default)(o);
                                                         try {
@@ -639,57 +636,56 @@ window.__SCRIPTS_LOADED__.runtime &&
                                                         } finally {
                                                             s.f();
                                                         }
-                                                    })(o, a, t, x, F)),
-                                                s
+                                                    })(d, o, t, f, h)),
+                                                a
                                             );
                                         },
-                                        set: k.includes(o.name)
+                                        set: o.includes(d.name)
                                             ? void 0
                                             : function (e) {
                                                   var n,
-                                                      a = i(null !== (n = o.args) && void 0 !== n ? n : [], r);
-                                                  t.setValue__UNSAFE(e, o.name, a);
+                                                      o = i(null !== (n = d.args) && void 0 !== n ? n : [], r);
+                                                  t.setValue__UNSAFE(e, d.name, o);
                                               },
                                     });
                                     break;
-                                case g:
-                                    t.getType() === o.type && T(e, t, r, o.selections, x, F);
+                                case "InlineFragment":
+                                    t.getType() === d.type && a(e, t, r, d.selections, f, h);
                                     break;
-                                case d:
-                                    T(e, t, r, o.selections, x, F);
+                                case "ClientExtension":
+                                    a(e, t, r, d.selections, f, h);
                                     break;
-                                case p:
+                                case "FragmentSpread":
                                     break;
-                                case _:
-                                case a:
-                                case s:
-                                case v:
-                                case u:
-                                case l:
-                                case f:
-                                case h:
-                                case m:
-                                case b:
-                                case y:
-                                case c:
-                                case D:
-                                case R:
+                                case "Condition":
+                                case "ActorChange":
+                                case "InlineDataFragmentSpread":
+                                case "AliasedInlineFragmentSpread":
+                                case "ClientEdgeToClientObject":
+                                case "ClientEdgeToServerObject":
+                                case "Defer":
+                                case "ModuleImport":
+                                case "RelayLiveResolver":
+                                case "RequiredField":
+                                case "CatchField":
+                                case "Stream":
+                                case "RelayResolver":
                                     throw new Error("Encountered an unexpected ReaderSelection variant in RelayRecordSourceProxy. This indicates a bug in Relay.");
                                 default:
-                                    throw (o.kind, new Error("Encountered an unexpected ReaderSelection variant in RelayRecordSourceProxy. This indicates a bug in Relay."));
+                                    throw (d.kind, new Error("Encountered an unexpected ReaderSelection variant in RelayRecordSourceProxy. This indicates a bug in Relay."));
                             }
                         };
-                        for (C.s(); !(w = C.n()).done; ) {
-                            var U, M;
-                            P();
+                        for (_.s(); !(v = _.n()).done; ) {
+                            var m, b;
+                            g();
                         }
                     } catch (e) {
-                        C.e(e);
+                        _.e(e);
                     } finally {
-                        C.f();
+                        _.f();
                     }
                 }
-                function A(e, t, r, n) {
+                function s(e, t, r, n) {
                     return function (o) {
                         var a,
                             s = i(null !== (a = e.args) && void 0 !== a ? a : [], t);
@@ -705,7 +701,7 @@ window.__SCRIPTS_LOADED__.runtime &&
                         r.setLinkedRecords(u, e.name, s);
                     };
                 }
-                function L(e, t, r, n) {
+                function u(e, t, r, n) {
                     return function (o) {
                         var a,
                             s = i(null !== (a = e.args) && void 0 !== a ? a : [], t);
@@ -719,14 +715,14 @@ window.__SCRIPTS_LOADED__.runtime &&
                         }
                     };
                 }
-                function S(e, t, r, o, a) {
+                function c(e, t, r, o, s) {
                     return function () {
-                        var s,
-                            u = i(null !== (s = e.args) && void 0 !== s ? s : [], t),
-                            c = r.getLinkedRecords(e.name, u);
+                        var u,
+                            c = i(null !== (u = e.args) && void 0 !== u ? u : [], t),
+                            l = r.getLinkedRecords(e.name, c);
                         return (
-                            void 0 === c &&
-                                (c = (function (e, t, r, i, o) {
+                            void 0 === l &&
+                                (l = (function (e, t, r, i, o) {
                                     var a,
                                         s = (0, n.default)(o);
                                     try {
@@ -745,27 +741,27 @@ window.__SCRIPTS_LOADED__.runtime &&
                                     } finally {
                                         s.f();
                                     }
-                                })(e, u, r, o, a)),
-                            null != c
-                                ? c.map(function (r) {
+                                })(e, c, r, o, s)),
+                            null != l
+                                ? l.map(function (r) {
                                       if (null != r) {
                                           var n = {};
-                                          return T(n, r, t, e.selections, o, a), n;
+                                          return a(n, r, t, e.selections, o, s), n;
                                       }
                                       return r;
                                   })
-                                : c
+                                : l
                         );
                     };
                 }
-                function N(e, t, r, o, a) {
+                function l(e, t, r, o, s) {
                     return function () {
-                        var s,
-                            u = i(null !== (s = e.args) && void 0 !== s ? s : [], t),
-                            c = r.getLinkedRecord(e.name, u);
+                        var u,
+                            c = i(null !== (u = e.args) && void 0 !== u ? u : [], t),
+                            l = r.getLinkedRecord(e.name, c);
                         if (
-                            (void 0 === c &&
-                                (c = (function (e, t, r, i, o) {
+                            (void 0 === l &&
+                                (l = (function (e, t, r, i, o) {
                                     var a,
                                         s = (0, n.default)(o);
                                     try {
@@ -781,19 +777,19 @@ window.__SCRIPTS_LOADED__.runtime &&
                                     } finally {
                                         s.f();
                                     }
-                                })(e, u, r, o, a)),
-                            null != c)
+                                })(e, c, r, o, s)),
+                            null != l)
                         ) {
-                            var l = {};
-                            return T(l, c, t, e.selections, o, a), l;
+                            var d = {};
+                            return a(d, l, t, e.selections, o, s), d;
                         }
-                        return c;
+                        return l;
                     };
                 }
                 e.exports = {
                     createUpdatableProxy: function (e, t, r, n, i) {
                         var o = {};
-                        return T(o, e, t, r, n, i), o;
+                        return a(o, e, t, r, n, i), o;
                     },
                 };
             },
@@ -807,9 +803,9 @@ window.__SCRIPTS_LOADED__.runtime &&
                     readUpdatableFragment: function (e, t, r, u) {
                         var c = n(e),
                             l = i(c, t),
-                            f = t[o],
-                            d = r.get(f);
-                        return null == d && s(!1), { updatableData: a(d, l, c.selections, r, u) };
+                            d = t[o],
+                            f = r.get(d);
+                        return null == f && s(!1), { updatableData: a(f, l, c.selections, r, u) };
                     },
                 };
             },
@@ -824,9 +820,7 @@ window.__SCRIPTS_LOADED__.runtime &&
                 };
             },
             724925: (e, t, r) => {
-                (0, r(171600).default)(r(900814));
-                var n = r(677783);
-                n.ACTOR_CHANGE, n.CLIENT_COMPONENT, n.CLIENT_EDGE_TO_CLIENT_OBJECT, n.CLIENT_EXTENSION, n.CONDITION, n.DEFER, n.FRAGMENT_SPREAD, n.INLINE_FRAGMENT, n.LINKED_FIELD, n.LINKED_HANDLE, n.MODULE_IMPORT, n.RELAY_LIVE_RESOLVER, n.RELAY_RESOLVER, n.SCALAR_FIELD, n.SCALAR_HANDLE, n.STREAM, n.TYPE_DISCRIMINATOR, r(826590), Object.prototype.hasOwnProperty;
+                (0, r(183491).default)(r(479035)), r(826590), Object.prototype.hasOwnProperty;
                 e.exports = function () {};
             },
             70009: (e, t, r) => {
@@ -1183,8 +1177,8 @@ window.__SCRIPTS_LOADED__.runtime &&
                 e.exports = o;
             },
             909259: (e, t, r) => {
-                var n = (0, r(171600).default)(r(900814)),
-                    i = r(795178),
+                var n = (0, r(183491).default)(r(479035)),
+                    i = r(795178).stableCopy,
                     o = r(647677),
                     a = (function () {
                         function e(e) {
@@ -1264,4 +1258,4 @@ window.__SCRIPTS_LOADED__.runtime &&
         },
     ]),
     (window.__SCRIPTS_LOADED__.vendor = !0));
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/vendor-e395fecc.1b97550a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/vendor-e395fecc.40e2e8aa.js.map

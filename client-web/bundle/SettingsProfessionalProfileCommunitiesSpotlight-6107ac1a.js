@@ -7,8 +7,8 @@
             var a,
                 i,
                 t,
-                s,
                 r,
+                s,
                 u = {
                     fragment: {
                         argumentDefinitions: (a = [{ defaultValue: null, kind: "LocalArgument", name: "communityId" }]),
@@ -26,7 +26,7 @@
                                 kind: "LinkedField",
                                 name: "community_results_by_rest_id",
                                 plural: !1,
-                                selections: [{ kind: "RequiredField", field: { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [(t = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }), { kind: "InlineFragment", selections: [{ args: null, kind: "FragmentSpread", name: "CommunitiesSpotlight_community" }], type: "Community", abstractKey: null }], storageKey: null }, action: "THROW", path: "communityResults.result" }],
+                                selections: [{ kind: "RequiredField", field: { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [(t = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }), { kind: "InlineFragment", selections: [{ args: null, kind: "FragmentSpread", name: "CommunitiesSpotlight_community" }], type: "Community", abstractKey: null }], storageKey: null }, action: "THROW" }],
                                 storageKey: null,
                             },
                         ],
@@ -59,7 +59,7 @@
                                             {
                                                 kind: "InlineFragment",
                                                 selections: [
-                                                    { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "members_facepile_results", plural: !0, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [t, { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null }], storageKey: null }, { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" }, (s = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null })], type: "User", abstractKey: null }], storageKey: null }, s], storageKey: null },
+                                                    { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "members_facepile_results", plural: !0, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [t, { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null }], storageKey: null }, { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" }, (r = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null })], type: "User", abstractKey: null }], storageKey: null }, r], storageKey: null },
                                                     { alias: null, args: null, kind: "ScalarField", name: "member_count", storageKey: null },
                                                     {
                                                         alias: null,
@@ -68,7 +68,7 @@
                                                         kind: "LinkedField",
                                                         name: "default_banner_media",
                                                         plural: !1,
-                                                        selections: (r = [
+                                                        selections: (s = [
                                                             {
                                                                 alias: null,
                                                                 args: null,
@@ -143,15 +143,15 @@
                                                                 ],
                                                                 storageKey: null,
                                                             },
-                                                            s,
+                                                            r,
                                                         ]),
                                                         storageKey: null,
                                                     },
-                                                    { alias: null, args: null, concreteType: "ApiMedia", kind: "LinkedField", name: "custom_banner_media", plural: !1, selections: r, storageKey: null },
+                                                    { alias: null, args: null, concreteType: "ApiMedia", kind: "LinkedField", name: "custom_banner_media", plural: !1, selections: s, storageKey: null },
                                                     { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null },
                                                     { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
                                                     { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null },
-                                                    s,
+                                                    r,
                                                 ],
                                                 type: "Community",
                                                 abstractKey: null,
@@ -159,7 +159,7 @@
                                         ],
                                         storageKey: null,
                                     },
-                                    s,
+                                    r,
                                 ],
                                 storageKey: null,
                             },
@@ -242,8 +242,8 @@
             var a,
                 i,
                 t,
-                s,
                 r,
+                s,
                 u,
                 o,
                 d = {
@@ -290,7 +290,7 @@
                                                                 plural: !1,
                                                                 selections: [
                                                                     { args: null, kind: "FragmentSpread", name: "CommunitiesSpotlightSelectionListFragment_spotlightableCommunitySlice" },
-                                                                    (s = {
+                                                                    (r = {
                                                                         alias: null,
                                                                         args: null,
                                                                         concreteType: "SliceInfo",
@@ -359,7 +359,7 @@
                                                         selections: [
                                                             {
                                                                 alias: null,
-                                                                args: (r = [
+                                                                args: (s = [
                                                                     { kind: "Literal", name: "count", value: 10 },
                                                                     { kind: "Variable", name: "cursor", variableName: "cursor" },
                                                                 ]),
@@ -491,11 +491,11 @@
                                                                         ],
                                                                         storageKey: null,
                                                                     },
-                                                                    s,
+                                                                    r,
                                                                 ],
                                                                 storageKey: null,
                                                             },
-                                                            { alias: null, args: r, filters: null, handle: "slice", key: "CommunitiesSpotlightSelectionQuery_communities_slice", kind: "LinkedHandle", name: "communities_eligible_for_profile_spotlight_slice", handleArgs: [{ kind: "Literal", name: "itemsFieldName", value: "items_results" }] },
+                                                            { alias: null, args: s, filters: null, handle: "slice", key: "CommunitiesSpotlightSelectionQuery_communities_slice", kind: "LinkedHandle", name: "communities_eligible_for_profile_spotlight_slice", handleArgs: [{ kind: "Literal", name: "itemsFieldName", value: "items_results" }] },
                                                             u,
                                                         ],
                                                         type: "User",
@@ -841,8 +841,8 @@
             var a = n(202784),
                 i = n(325686),
                 t = n(827515),
-                s = n(461756),
-                r = n(731708),
+                r = n(461756),
+                s = n(731708),
                 u = n(392237);
             const o = "up",
                 d = "down",
@@ -875,7 +875,7 @@
                         ),
                         a.useEffect(() => {
                             if (F.current)
-                                if (s.Z.reducedMotionEnabled) k((n) => ({ ...n, oldText: null, text: l, pendingText: null, pendingCount: null, count: e.count }));
+                                if (r.Z.reducedMotionEnabled) k((n) => ({ ...n, oldText: null, text: l, pendingText: null, pendingCount: null, count: e.count }));
                                 else if (l !== p.pendingText) {
                                     l === p.text || ((0, t.Z)(e.count) && p.count === e.count) ? k((e) => ({ ...e, pendingCount: null, pendingText: null })) : (k((n) => ({ ...n, pendingCount: e.count, pendingText: l })), p.animating || m(e.count, l, k));
                                 }
@@ -893,14 +893,14 @@
                         }, [p.animating, p.oldText]),
                         a.useMemo(() => {
                             const e = c[p.transitionDirection],
-                                l = p.oldText && !s.Z.reducedMotionEnabled,
-                                t = !p.animating && p.oldText && !s.Z.reducedMotionEnabled,
+                                l = p.oldText && !r.Z.reducedMotionEnabled,
+                                t = !p.animating && p.oldText && !r.Z.reducedMotionEnabled,
                                 u = { ...g, ...(p.animating ? e.post : e.active) },
                                 o = { ...(t ? e.pre : e.active) };
                             return a.createElement(
                                 i.Z,
                                 { style: [y.root, n] },
-                                l ? a.createElement("span", { style: u }, a.createElement(r.ZP, d, p.oldText)) : null,
+                                l ? a.createElement("span", { style: u }, a.createElement(s.ZP, d, p.oldText)) : null,
                                 a.createElement(
                                     "span",
                                     {
@@ -911,7 +911,7 @@
                                             })(F.current, k),
                                         style: o,
                                     },
-                                    a.createElement(r.ZP, d, p.text),
+                                    a.createElement(s.ZP, d, p.text),
                                 ),
                             );
                         }, [n, d, p, F, k])
@@ -923,8 +923,8 @@
             var a = n(202784),
                 i = n(325686),
                 t = n(731708),
-                s = n(891198),
-                r = n(280278),
+                r = n(891198),
+                s = n(280278),
                 u = n(392237);
             const o = "subtext1",
                 d = a.createContext({ onMedia: !1 });
@@ -934,7 +934,7 @@
                         (this._getHoverLabel = () => {
                             const { count: e } = this.props;
                             if (!e) return;
-                            return (0, s.Gb)(e) !== (0, s.wl)(e) ? { label: (0, s.Gb)(e) } : void 0;
+                            return (0, r.Gb)(e) !== (0, r.wl)(e) ? { label: (0, r.Gb)(e) } : void 0;
                         });
                 }
                 render() {
@@ -951,7 +951,7 @@
                         .map((e, l, n) => a.createElement(i.Z, { key: l, style: l < n.length - 1 && c.groupItemNonLast }, e)),
                 )),
                 (m.Label = ({ children: e, style: l }) => a.createElement(d.Consumer, null, ({ onMedia: n }) => a.createElement(t.ZP, { children: e, color: n ? "white" : "gray700", size: o, style: l }))),
-                (m.Value = ({ animated: e, children: l, count: n, style: i, weight: s = "bold" }) => a.createElement(d.Consumer, null, ({ onMedia: u }) => (e ? a.createElement(r.ZP, { children: l, count: n, size: o, style: i, weight: s }) : a.createElement(t.ZP, { children: l, color: u ? "white" : "text", size: o, style: i, weight: s }))));
+                (m.Value = ({ animated: e, children: l, count: n, style: i, weight: r = "bold" }) => a.createElement(d.Consumer, null, ({ onMedia: u }) => (e ? a.createElement(s.ZP, { children: l, count: n, size: o, style: i, weight: r }) : a.createElement(t.ZP, { children: l, color: u ? "white" : "text", size: o, style: i, weight: r }))));
             const c = u.default.create((e) => ({ row: { flexDirection: "row", flexWrap: "wrap", flex: 1 }, groupItemNonLast: { marginEnd: e.spaces.space20 } })),
                 g = m;
         },
@@ -974,4 +974,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsProfessionalProfileCommunitiesSpotlight-6107ac1a.124b29aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsProfessionalProfileCommunitiesSpotlight-6107ac1a.3d678cfa.js.map

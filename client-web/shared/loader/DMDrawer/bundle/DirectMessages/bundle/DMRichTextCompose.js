@@ -8,7 +8,7 @@
             const i = () => (0, a.ZP)().then(({ inputDetect: e }) => e);
         },
         225351: (e, t, n) => {
-            n.d(t, { RU: () => C, T5: () => x, eN: () => v });
+            n.d(t, { RU: () => C, T5: () => v, eN: () => x });
             var a = n(674132),
                 i = n.n(a),
                 s = n(516951),
@@ -27,8 +27,8 @@
                 b = i().c4fdbd16,
                 f = i().hf3e7e38,
                 C = { [r.ZP.DirectMessageConversationNotFound]: { customAction: () => !1 } },
-                v = (e) => ({ defaultToast: { text: l }, [r.ZP.DirectMessageSenderIsNotVerifiedRateLimited]: { customAction: e ?? s.Z }, showToast: !0 }),
-                x = (e) => ({ defaultToast: { text: o }, [r.ZP.CurrentUserSuspended]: { toast: { text: p, action: { label: d, link: "https://support.twitter.com/articles/15790" } } }, [r.ZP.DirectMessageCannotDmOtherUser]: { toast: { text: c } }, [r.ZP.DirectMessageDuplicate]: { toast: { text: y } }, [r.ZP.DirectMessageOtherUserNotFollowing]: { toast: { text: h, action: { label: d, link: "https://support.twitter.com/articles/14606" } } }, [r.ZP.DirectMessagesSenderBlocksRecipient]: { toast: { text: b } }, [r.ZP.DirectMessageTooLongError]: { toast: { text: m } }, [r.ZP.DirectMessageTweetNotFound]: { toast: { text: g } }, [r.ZP.GenericBadRequest]: { customAction: s.Z }, [r.ZP.MessageSendError]: { toast: { text: f } }, [r.ZP.OverStatusUpdateLimit]: { toast: { action: { label: d, link: "https://support.twitter.com/articles/15364" }, text: u } }, [r.ZP.TargetUserNotFound]: { toast: { text: _ } }, [r.ZP.DirectMessageSenderIsNotVerifiedRateLimited]: { customAction: e ?? s.Z }, showToast: !0 });
+                x = (e) => ({ defaultToast: { text: l }, [r.ZP.DirectMessageSenderIsNotVerifiedRateLimited]: { customAction: e ?? s.Z }, showToast: !0 }),
+                v = (e) => ({ defaultToast: { text: o }, [r.ZP.CurrentUserSuspended]: { toast: { text: p, action: { label: d, link: "https://support.twitter.com/articles/15790" } } }, [r.ZP.DirectMessageCannotDmOtherUser]: { toast: { text: c } }, [r.ZP.DirectMessageDuplicate]: { toast: { text: y } }, [r.ZP.DirectMessageOtherUserNotFollowing]: { toast: { text: h, action: { label: d, link: "https://support.twitter.com/articles/14606" } } }, [r.ZP.DirectMessagesSenderBlocksRecipient]: { toast: { text: b } }, [r.ZP.DirectMessageTooLongError]: { toast: { text: m } }, [r.ZP.DirectMessageTweetNotFound]: { toast: { text: g } }, [r.ZP.GenericBadRequest]: { customAction: s.Z }, [r.ZP.MessageSendError]: { toast: { text: f } }, [r.ZP.OverStatusUpdateLimit]: { toast: { action: { label: d, link: "https://support.twitter.com/articles/15364" }, text: u } }, [r.ZP.TargetUserNotFound]: { toast: { text: _ } }, [r.ZP.DirectMessageSenderIsNotVerifiedRateLimited]: { customAction: e ?? s.Z }, showToast: !0 });
         },
         111311: (e, t, n) => {
             n.d(t, { Z: () => i });
@@ -86,8 +86,8 @@
                 b = c().i6b19b08,
                 f = c().j7bb1a43,
                 C = c().cdb1a05a,
-                v = c().cfd2f35e,
-                x = o.default.create((e) => ({ roundCorners: { borderRadius: e.borderRadii.xLarge }, flatCorners: { borderRadius: e.borderRadii.none }, cancelButton: { marginHorizontal: e.spaces.space16, marginVertical: e.spaces.space16 } })),
+                x = c().cfd2f35e,
+                v = o.default.create((e) => ({ roundCorners: { borderRadius: e.borderRadii.xLarge }, flatCorners: { borderRadius: e.borderRadii.none }, cancelButton: { marginHorizontal: e.spaces.space16, marginVertical: e.spaces.space16 } })),
                 E = ({ dismiss: e, flatBorders: t = !1, isGroup: n = !1, onBlockClick: o, onDeleteClick: l, onReportClick: c, requestorScreenName: E, showBlock: T = !1, showCancel: k = !1, showDelete: S = !1 }) => {
                     const I = a.useCallback(() => {
                             c && c(), e();
@@ -98,7 +98,7 @@
                         w = a.useCallback(() => {
                             l && l(), e();
                         }, [e, l]);
-                    return a.createElement(i.Z, { role: "dialog", style: t ? x.flatCorners : x.roundCorners }, S ? a.createElement(s.Z, { Icon: d.default, actionSubText: y, actionText: n ? g : _, onClick: w, textColor: "red500" }) : null, T ? a.createElement(s.Z, { Icon: u.default, actionSubText: h, actionText: m({ screenName: E }), onClick: P }) : null, a.createElement(s.Z, { Icon: p.default, actionSubText: C, actionText: n ? b : f({ screenName: E }), onClick: I }), k ? a.createElement(r.ZP, { onPress: e, style: x.cancelButton, type: "primaryOutlined" }, v) : null);
+                    return a.createElement(i.Z, { role: "dialog", style: t ? v.flatCorners : v.roundCorners }, S ? a.createElement(s.Z, { Icon: d.default, actionSubText: y, actionText: n ? g : _, onClick: w, textColor: "red500" }) : null, T ? a.createElement(s.Z, { Icon: u.default, actionSubText: h, actionText: m({ screenName: E }), onClick: P }) : null, a.createElement(s.Z, { Icon: p.default, actionSubText: C, actionText: n ? b : f({ screenName: E }), onClick: I }), k ? a.createElement(r.ZP, { onPress: e, style: v.cancelButton, type: "primaryOutlined" }, x) : null);
                 };
         },
         715913: (e, t, n) => {
@@ -282,8 +282,8 @@
                 b = n(913670),
                 f = n(113392),
                 C = n(373554),
-                v = n(304059),
-                x = n(822399);
+                x = n(304059),
+                v = n(822399);
             const E = [
                 { waitMs: 1e3, progress: 0.1 },
                 { waitMs: 1400, progress: 0.3 },
@@ -304,7 +304,7 @@
                 render() {
                     const { currentStepIndex: e } = this.state,
                         t = e >= 0 && e < E.length ? E[e].progress : 0;
-                    return i.createElement(x.Z, { progress: t });
+                    return i.createElement(v.Z, { progress: t });
                 }
                 _scheduleNextStep(e) {
                     e < E.length &&
@@ -314,7 +314,7 @@
                 }
             }
             function k({ isSending: e, isUploading: t, progress: n }) {
-                return e && !t ? i.createElement(T, null) : i.createElement(x.Z, { progress: e ? Math.max(n, 0.02) : 0 });
+                return e && !t ? i.createElement(T, null) : i.createElement(v.Z, { progress: e ? Math.max(n, 0.02) : 0 });
             }
             const S = i.memo(k);
             var I = n(90511),
@@ -420,8 +420,8 @@
                 be = o.default.create((e) => ({ actionButton: { marginStart: e.spaces.space4 } }));
             var fe = n(109491);
             const Ce = p().e3275464,
-                ve = i.createElement(fe.default, null);
-            function xe(e) {
+                xe = i.createElement(fe.default, null);
+            function ve(e) {
                 const { onDidSend: t, onSend: n, onWillSend: a, showIconInsteadOfLabel: s } = e,
                     r = e.disabledFunc();
                 return i.createElement(
@@ -430,7 +430,7 @@
                         "aria-label": Ce,
                         disabled: r,
                         hoverLabel: { label: Ce },
-                        icon: s ? ve : void 0,
+                        icon: s ? xe : void 0,
                         onPress: (e) => {
                             r ||
                                 (a && a(),
@@ -464,8 +464,8 @@
                     const { disabled: n, editorState: a, isSendDisabledFunc: s, keyboardOrMouseDetectedFunc: r, mediaButtonsCollapsible: o, onBlur: l, onDidHandleReturn: c, onFilesAdded: d, onFocus: u, onReturn: p, onRichTextChange: m, onWillHandleReturn: h, placeholderText: g, renderAttachmentsFunc: _, richTextInputContext: y, value: b } = e,
                         f = g || Ze,
                         C = !!y,
-                        v = y ? { editorState: a, element: y.element } : void 0,
-                        x = (e) => {
+                        x = y ? { editorState: a, element: y.element } : void 0,
+                        v = (e) => {
                             const {
                                 nativeEvent: { ctrlKey: t, key: n, metaKey: a, shiftKey: i },
                             } = e;
@@ -481,7 +481,7 @@
                     return i.createElement(Me.Z, {
                         contentAbove: _(),
                         editable: !n,
-                        handleReturn: C ? x : void 0,
+                        handleReturn: C ? v : void 0,
                         isCompact: !0,
                         leftAligned: !0,
                         maxNumberOfLines: C ? 8 : 4,
@@ -494,11 +494,11 @@
                         onKeyPress: C
                             ? void 0
                             : (e) => {
-                                  x(e);
+                                  v(e);
                               },
                         placeholder: f,
                         ref: t,
-                        richTextInputContext: n ? void 0 : v,
+                        richTextInputContext: n ? void 0 : x,
                         style: De.composeInput,
                         styleType: "selection",
                         testID: _e,
@@ -563,7 +563,7 @@
                                 m = p?.altText,
                                 h = p?.defaultAltText,
                                 g = (0, I.dm)(o);
-                            return i.createElement(i.Fragment, null, u ? i.createElement(r.Z, { style: Ge.attachmentContainer, testID: pe }, i.createElement(l.Z, { ratio: d / c, style: Ge.aspectContainer }, i.createElement(r.Z, { style: Ge.mediaPreviewContainer }, i.createElement(v.Z, { "aria-label": m || h, mediaItem: u, onClick: this._canEditImage ? this._handleClickMediaDetail : void 0, onEdit: this._canEditGif || this._canEditImage || this._canEditVideo ? this._handleClickMediaDetail : void 0, onRemove: this._handleRemoveMedia(u.id), resizeIfNeeded: "width", style: Ge.mediaPreview, withAltTextLabel: !!m, withCloseButton: !s, withEditButton: (this._canEditGif || this._canEditImage || this._canEditVideo) && !s, withEditIcon: !0 }))), e && e.provider && e.gifUrl && i.createElement(r.Z, { style: Ge.gifAttribution }, i.createElement(P.Z, { gifUrl: e.gifUrl, provider: e.provider }))) : g && !a ? i.createElement(I.ZP, { conversationId: t, isCardPreviewTombstoned: n, style: Ge.cardPreviewContainer, urls: g }) : null);
+                            return i.createElement(i.Fragment, null, u ? i.createElement(r.Z, { style: Ge.attachmentContainer, testID: pe }, i.createElement(l.Z, { ratio: d / c, style: Ge.aspectContainer }, i.createElement(r.Z, { style: Ge.mediaPreviewContainer }, i.createElement(x.Z, { "aria-label": m || h, mediaItem: u, onClick: this._canEditImage ? this._handleClickMediaDetail : void 0, onEdit: this._canEditGif || this._canEditImage || this._canEditVideo ? this._handleClickMediaDetail : void 0, onRemove: this._handleRemoveMedia(u.id), resizeIfNeeded: "width", style: Ge.mediaPreview, withAltTextLabel: !!m, withCloseButton: !s, withEditButton: (this._canEditGif || this._canEditImage || this._canEditVideo) && !s, withEditIcon: !0 }))), e && e.provider && e.gifUrl && i.createElement(r.Z, { style: Ge.gifAttribution }, i.createElement(P.Z, { gifUrl: e.gifUrl, provider: e.provider }))) : g && !a ? i.createElement(I.ZP, { conversationId: t, isCardPreviewTombstoned: n, style: Ge.cardPreviewContainer, urls: g }) : null);
                         }),
                         (this._renderPrimaryActionButton = (e) => {
                             const { onDidPerformPrimaryAction: t, quickReplyOptions: n } = this.props,
@@ -580,7 +580,7 @@
                                         t && t(e, { type: "richText" }, n);
                                     },
                                 };
-                                return i.createElement(xe, (0, a.Z)({}, n, { hasAttachment: e, onSend: this._performPrimaryAction }));
+                                return i.createElement(ve, (0, a.Z)({}, n, { hasAttachment: e, onSend: this._performPrimaryAction }));
                             }
                             return i.createElement(c.ZP, { "aria-label": Ue, icon: this.state.isQuickReplyOpen ? i.createElement(m.default, { testID: he }) : i.createElement(h.default, { testID: me }), onPress: this._handleQuickReplyPickerToggle, size: "medium", style: Ge.actionButton, type: "brandText" });
                         }),
@@ -933,19 +933,16 @@
                                                             storageKey: null,
                                                         },
                                                         action: "THROW",
-                                                        path: "viewer.user_results.result",
                                                     },
                                                 ],
                                                 storageKey: null,
                                             },
                                             action: "THROW",
-                                            path: "viewer.user_results",
                                         },
                                     ],
                                     storageKey: 'viewer_v2(s:"84b0")',
                                 },
                                 action: "THROW",
-                                path: "viewer",
                             },
                         ],
                         type: "Query",
@@ -1030,4 +1027,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.DirectMessages~bundle.DMRichTextCompose.f926dc3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.DirectMessages~bundle.DMRichTextCompose.3b2bad2a.js.map

@@ -4852,6 +4852,7 @@
                 n("ie45edda", "Vue d'ensemble du flux en direct"),
                 n("e30fc268", "Live Viewers"),
                 n("bd37f68e", "Activité des médias"),
+                n("fe074210", "min"),
                 n("jd03a1b8", "Minutes Watched"),
                 n("a20e91e8", "minutes watched"),
                 n("ic2bebee", "Monétisé"),
@@ -4912,9 +4913,9 @@
                 n("a7b48b36", "Le pourcentage de vues de vidéos entières."),
                 n("a2580f2a", "Taux de complétion"),
                 n("ff95a9cc", "Identifiant de la vidéo"),
-                n("a97e358e", "Lien de la vidéo"),
-                n("e10e8b46", "Affichage des vidéos des 100 derniers jours uniquement.");
-            n("ba37f6da", "Vue d'ensemble des vidéos"),
+                n("a97e358e", "Lien de la vidéo");
+            n("e10e8b46", "Affichage des vidéos des 100 derniers jours uniquement."),
+                n("ba37f6da", "Vue d'ensemble des vidéos"),
                 n("f19846b2", "Miniature de la vidéo"),
                 n("ccd6f4a8", "Titre de la vidéo"),
                 n("c8410542", "Le nombre de fois que votre vidéo a été vue."),
@@ -5077,7 +5078,6 @@
                 n("fb3e127a", "Offre de nouvelle année limitée dans le temps"),
                 n("a5fee980", "Profitez de 30 % de remise sur les abonnements annuels et de jusqu'à 12 000 USD de crédit publicitaire offert en vous abonnant avant le"),
                 n("c9051cac", "jours"),
-                n("fe074210", "min"),
                 n("ie035790", "s"),
                 n("cbd3dfaa", "Tester la version bêta"),
                 n("h260121e", "Présentez vos meilleurs postes à votre audience."),
@@ -13240,4 +13240,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.aff399da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.fa0a4b1a.js.map

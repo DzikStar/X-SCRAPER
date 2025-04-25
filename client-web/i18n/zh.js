@@ -4847,6 +4847,7 @@
                 f("ie45edda", "现场直播概览"),
                 f("e30fc268", "Live Viewers"),
                 f("bd37f68e", "媒体活动"),
+                f("fe074210", "分钟"),
                 f("jd03a1b8", "Minutes Watched"),
                 f("a20e91e8", "minutes watched"),
                 f("ic2bebee", "盈利"),
@@ -4907,9 +4908,9 @@
                 f("a7b48b36", "完成视频观看的百分比。"),
                 f("a2580f2a", "完成率"),
                 f("ff95a9cc", "视频 ID"),
-                f("a97e358e", "视频链接"),
-                f("e10e8b46", "只显示最近 100 天的视频。");
-            f("ba37f6da", "视频概览"),
+                f("a97e358e", "视频链接");
+            f("e10e8b46", "只显示最近 100 天的视频。"),
+                f("ba37f6da", "视频概览"),
                 f("f19846b2", "视频缩略图"),
                 f("ccd6f4a8", "视频标题"),
                 f("c8410542", "你的视频被观看的次数。"),
@@ -5072,7 +5073,6 @@
                 f("fb3e127a", "新年限时优惠"),
                 f("a5fee980", "在以下日期前订购，即可享受年度计划 30% 优惠以及高达 12,000 美元的免费广告积分："),
                 f("c9051cac", "天"),
-                f("fe074210", "分钟"),
                 f("ie035790", "秒"),
                 f("cbd3dfaa", "体验试用版"),
                 f("h260121e", "向受众展示你的热门职位。"),
@@ -13251,4 +13251,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh.c26a6dda.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh.de2e803a.js.map

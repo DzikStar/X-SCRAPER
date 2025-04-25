@@ -109,7 +109,7 @@
                         metadata: null,
                         name: "fetchDownloadSettingAllowedQuery",
                         selections: [
-                            { kind: "RequiredField", field: (s = { alias: null, args: null, concreteType: "UserPreferences", kind: "LinkedField", name: "user_preferences", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "allow_video_downloads", storageKey: null }], storageKey: null }), action: "THROW", path: "user_preferences" },
+                            { kind: "RequiredField", field: (s = { alias: null, args: null, concreteType: "UserPreferences", kind: "LinkedField", name: "user_preferences", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "allow_video_downloads", storageKey: null }], storageKey: null }), action: "THROW" },
                             {
                                 alias: "viewer",
                                 args: (n = [{ kind: "Literal", name: "s", value: "4721" }]),
@@ -619,7 +619,7 @@
                         });
         },
         653843: (e, t, i) => {
-            i.d(t, { Y7: () => g, ZP: () => T, m2: () => y });
+            i.d(t, { Y7: () => g, ZP: () => T, m2: () => f });
             var s = i(19697),
                 n = i(790187),
                 a = i(549755),
@@ -658,15 +658,15 @@
                     return a > i || s > i || n > t;
                 },
                 _ = (e, t) => t || { top: 0, left: 0, width: e.width, height: e.height },
-                f = (e, t) => {
+                y = (e, t) => {
                     const { height: i, left: s, top: n, width: a } = _(e, t);
                     return !(0 === n && 0 === s && a === e.width && i === e.height);
                 };
-            function y(e, t) {
+            function f(e, t) {
                 const { maxFileSize: i = u, maxDimension: s = h, cropData: n, jpgPixelsPerByteForResize: a } = t || {},
                     r = "image/jpeg" === e.type,
                     l = (e.width * e.height) / e.size;
-                return m(e) || p(e, i, s) || f(e, n) || (r && !!a && l < a);
+                return m(e) || p(e, i, s) || y(e, n) || (r && !!a && l < a);
             }
             const w = (e, t) => {
                     const { height: i, width: s } = e;
@@ -676,7 +676,7 @@
             function T(e, t) {
                 const { maxFileSize: i = u, maxDimension: n = h, targetQuality: l = c, cropData: d } = t || {},
                     m = _(e, d);
-                if (!y(e, t)) return Promise.resolve(e.fileHandle);
+                if (!f(e, t)) return Promise.resolve(e.fileHandle);
                 if (!(0, r.DS)(e)) {
                     const e = new a.Z("The provided file is not a valid image", g.FILE_IS_NOT_AN_IMAGE);
                     return Promise.reject(e);
@@ -738,7 +738,7 @@
                     },
                 };
             }
-            i.d(t, { Z: () => u, d: () => y });
+            i.d(t, { Z: () => u, d: () => f });
             i(543673), i(240753), i(128399);
             function n(e) {
                 const t = new URLSearchParams();
@@ -774,7 +774,7 @@
                         this._notifyProgress(this._uploadProgress());
                 }
                 cancel() {
-                    "function" == typeof this.uploadOptions.error && this.uploadOptions.error({ code: y.CANCELED }), this._clearState();
+                    "function" == typeof this.uploadOptions.error && this.uploadOptions.error({ code: f.CANCELED }), this._clearState();
                 }
                 pollStatusOfExistingMediaId(e, t) {
                     (this.mediaId = e), (this.uploadOptions = t || T), (this.state = S.PENDING), this._getStatus();
@@ -839,7 +839,7 @@
                                 (...e) => this._uploadError(...e),
                                 c,
                             );
-                    } else this._uploadError({ code: y.ZERO_FILE_LENGTH });
+                    } else this._uploadError({ code: f.ZERO_FILE_LENGTH });
                 }
                 _initSuccess(e) {
                     this.state === S.PENDING && ((this.mediaId = e.media_id_string), (this.mediaKey = e.media_key), this._setSessionTimeout(e.expires_after_secs), this._bitrateMonitor ? this._bitrateMonitor.start() : this._startNextAppendSegment());
@@ -848,7 +848,7 @@
                     if ((this.timeoutIdMap.session && (clearTimeout(this.timeoutIdMap.session), delete this.timeoutIdMap.session), e)) {
                         const t = Math.min(h, 1e3 * e);
                         this.timeoutIdMap.session = setTimeout(() => {
-                            this._uploadError({ code: y.TIMEOUT }), this._stats("NONE", "timeout"), this._clearState();
+                            this._uploadError({ code: f.TIMEOUT }), this._stats("NONE", "timeout"), this._clearState();
                         }, t);
                     }
                 }
@@ -922,7 +922,7 @@
                         case "failed": {
                             const e = t.error;
                             let i;
-                            return (i = e?.code ? w[String(e.code)] : y.INTERNAL_ERROR), void this._uploadError({ ...e, code: i });
+                            return (i = e?.code ? w[String(e.code)] : f.INTERNAL_ERROR), void this._uploadError({ ...e, code: i });
                         }
                         default:
                             return void this._uploadError();
@@ -952,8 +952,8 @@
                     const t = e.error?.match(/{ "message": "maxFileSizeExceeded", "maxFileSizeBytes": \d+ }/);
                     if (t) {
                         const e = JSON.parse(t[0]);
-                        this.error = { code: y.FILE_TOO_LARGE, message: e.message, maxSizeBytes: e.maxFileSizeBytes };
-                    } else e && e.code ? (this.error = e) : (this.error = { code: y.INTERNAL_ERROR, message: e?.error });
+                        this.error = { code: f.FILE_TOO_LARGE, message: e.message, maxSizeBytes: e.maxFileSizeBytes };
+                    } else e && e.code ? (this.error = e) : (this.error = { code: f.INTERNAL_ERROR, message: e?.error });
                     (this.state = S.FAILED), this._notifyResult();
                 }
                 _uploadProgress() {
@@ -985,11 +985,11 @@
                                 const a = [h, r].join("-");
                                 this.timeoutIdMap[a] = setTimeout(() => {
                                     this._sendXhr(e, t, i, s, n, r - 1, l, d, u);
-                                }, f);
+                                }, y);
                             } else w(a);
                         },
                         w = (e) => {
-                            this._stats(t, e || "unknown-error", { requestStartTime: m, segmentBytes: u }), "function" == typeof n && n(E(S) || { code: y.INVALID_RES_STATUS });
+                            this._stats(t, e || "unknown-error", { requestStartTime: m, segmentBytes: u }), "function" == typeof n && n(E(S) || { code: f.INVALID_RES_STATUS });
                         },
                         S = new XMLHttpRequest();
                     S.open(e, h, !0),
@@ -1032,9 +1032,9 @@
                 m = (window.location.host.includes("twitter.com") ? "https://upload.twitter.com" : "https://upload.x.com") + "/i/media/upload.json",
                 p = 2,
                 _ = 0.95,
-                f = 1e3,
-                y = Object.freeze({ FILE_TOO_LARGE: 2, INTERNAL_ERROR: 131, INVALID_MEDIA: 1, RATE_LIMIT: 88, TIMEOUT: 67, UNSUPPORTED_MEDIA: 3, ZERO_FILE_LENGTH: 4, CANCELED: 999, INVALID_RES_STATUS: -1 }),
-                w = Object.freeze({ 0: y.INTERNAL_ERROR, 1: y.INVALID_MEDIA, 2: y.FILE_TOO_LARGE, 3: y.UNSUPPORTED_MEDIA, 4: y.TIMEOUT }),
+                y = 1e3,
+                f = Object.freeze({ FILE_TOO_LARGE: 2, INTERNAL_ERROR: 131, INVALID_MEDIA: 1, RATE_LIMIT: 88, TIMEOUT: 67, UNSUPPORTED_MEDIA: 3, ZERO_FILE_LENGTH: 4, CANCELED: 999, INVALID_RES_STATUS: -1 }),
+                w = Object.freeze({ 0: f.INTERNAL_ERROR, 1: f.INVALID_MEDIA, 2: f.FILE_TOO_LARGE, 3: f.UNSUPPORTED_MEDIA, 4: f.TIMEOUT }),
                 S = Object.freeze({ RESET: 0, PENDING: 1, PAUSED: 2, SUCCEEDED: 3, FAILED: 4 }),
                 T = {};
             function E(e) {
@@ -1047,4 +1047,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.directMessagesData-6107ac1a.23a674ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.directMessagesData-6107ac1a.fd1f054a.js.map

@@ -4847,6 +4847,7 @@
                 i("ie45edda", "Ringkasan strim langsung"),
                 i("e30fc268", "Live Viewers"),
                 i("bd37f68e", "Aktiviti media"),
+                i("fe074210", "minit"),
                 i("jd03a1b8", "Minutes Watched"),
                 i("a20e91e8", "minutes watched"),
                 i("ic2bebee", "Diwangkan"),
@@ -4907,9 +4908,9 @@
                 i("a7b48b36", "Peratus tontonan video yang diselesaikan."),
                 i("a2580f2a", "Kadar Selesai"),
                 i("ff95a9cc", "ID Video"),
-                i("a97e358e", "Pautan Video"),
-                i("e10e8b46", "Hanya tunjukkan video daripada 100 hari yang lalu.");
-            i("ba37f6da", "Gambaran keseluruhan video"),
+                i("a97e358e", "Pautan Video");
+            i("e10e8b46", "Hanya tunjukkan video daripada 100 hari yang lalu."),
+                i("ba37f6da", "Gambaran keseluruhan video"),
                 i("f19846b2", "Lakaran kecil video"),
                 i("ccd6f4a8", "Tajuk video"),
                 i("c8410542", "Bilangan kali video anda ditonton."),
@@ -5072,7 +5073,6 @@
                 i("fb3e127a", "Tawaran Tahun Baharu Masa Terhad"),
                 i("a5fee980", "Tuntut diskaun 30% untuk pelan tahunan & kredit iklan percuma bernilai sehingga $12,000 apabila anda melanggan sebelum"),
                 i("c9051cac", "hari"),
-                i("fe074210", "minit"),
                 i("ie035790", "saat"),
                 i("cbd3dfaa", "Cuba versi beta"),
                 i("h260121e", "Tampilkan peranan teratas anda kepada khalayak anda."),
@@ -13235,4 +13235,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.28ebb9da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.3e62989a.js.map

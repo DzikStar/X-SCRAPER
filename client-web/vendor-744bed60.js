@@ -2,531 +2,591 @@ window.__SCRIPTS_LOADED__.runtime &&
     ((self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
         ["vendor-744bed60"],
         {
-            458076: (e, i, s) => {
-                var r = s(171600).default,
-                    t = r(s(226290)),
-                    a = r(s(638636)),
-                    n = r(s(373408)),
-                    l = s(677783),
-                    d = l.ACTOR_CHANGE,
-                    o = l.ALIASED_FRAGMENT_SPREAD,
-                    u = l.ALIASED_INLINE_FRAGMENT_SPREAD,
-                    _ = l.CATCH_FIELD,
-                    h = l.CLIENT_EDGE_TO_CLIENT_OBJECT,
-                    v = l.CLIENT_EDGE_TO_SERVER_OBJECT,
-                    c = l.CLIENT_EXTENSION,
-                    g = l.CONDITION,
-                    f = l.DEFER,
-                    m = l.FRAGMENT_SPREAD,
-                    R = l.INLINE_DATA_FRAGMENT_SPREAD,
-                    E = l.INLINE_FRAGMENT,
-                    p = l.LINKED_FIELD,
-                    F = l.MODULE_IMPORT,
-                    D = l.RELAY_LIVE_RESOLVER,
-                    I = l.RELAY_RESOLVER,
-                    y = l.REQUIRED_FIELD,
-                    A = l.SCALAR_FIELD,
-                    T = l.STREAM,
-                    L = s(891362),
-                    b = s(798452).isSuspenseSentinel,
-                    S = s(700378),
-                    N = s(705180),
-                    k = s(108475),
-                    C = k.CLIENT_EDGE_TRAVERSAL_PATH,
-                    M = k.FRAGMENT_OWNER_KEY,
-                    O = k.FRAGMENT_PROP_NAME_KEY,
-                    w = k.FRAGMENTS_KEY,
-                    P = k.ID_KEY,
-                    q = k.MODULE_COMPONENT_KEY,
-                    V = k.ROOT_ID,
-                    G = k.getArgumentValues,
-                    U = k.getModuleComponentKey,
-                    W = k.getStorageKey,
-                    H = s(280587).NoopResolverCache,
-                    K = s(296932),
-                    Y = K.RESOLVER_FRAGMENT_MISSING_DATA_SENTINEL,
-                    j = K.withResolverContext,
-                    B = s(348073).generateTypeID,
-                    x = s(647677);
-                function z(e, i, s) {
-                    return new J(e, i, null != s ? s : new H()).read();
+            458076: (e, r, i) => {
+                var s = i(183491).default,
+                    t = s(i(479035)),
+                    n = s(i(845621)),
+                    a = s(i(173771)),
+                    l = s(i(158663)),
+                    o = s(i(434323)),
+                    d = ["message"],
+                    h = i(514840).isSuspenseSentinel,
+                    u = i(700378),
+                    _ = i(705180),
+                    c = i(108475),
+                    v = c.CLIENT_EDGE_TRAVERSAL_PATH,
+                    g = c.FRAGMENT_OWNER_KEY,
+                    f = c.FRAGMENT_PROP_NAME_KEY,
+                    p = c.FRAGMENTS_KEY,
+                    m = c.ID_KEY,
+                    R = c.MODULE_COMPONENT_KEY,
+                    F = c.ROOT_ID,
+                    E = c.getArgumentValues,
+                    k = c.getModuleComponentKey,
+                    y = c.getStorageKey,
+                    b = i(280587).NoopResolverCache,
+                    D = i(296932),
+                    C = D.RESOLVER_FRAGMENT_ERRORED_SENTINEL,
+                    T = D.withResolverContext,
+                    w = i(348073).generateTypeID,
+                    P = i(647677);
+                function I(e, r, i, s) {
+                    return new S(e, r, null != i ? i : new b(), s).read();
                 }
-                var J = (function () {
-                    function e(e, i, s) {
-                        var r;
-                        (this._clientEdgeTraversalPath = null !== (r = i.clientEdgeTraversalPath) && void 0 !== r && r.length ? (0, n.default)(i.clientEdgeTraversalPath) : []), (this._missingClientEdges = []), (this._missingLiveResolverFields = []), (this._isMissingData = !1), (this._isWithinUnmatchedTypeRefinement = !1), (this._missingRequiredFields = null), (this._errorResponseFields = null), (this._owner = i.owner), (this._recordSource = e), (this._seenRecords = new Set()), (this._selector = i), (this._variables = i.variables), (this._resolverCache = s), (this._resolverErrors = []), (this._fragmentName = i.node.name), (this._updatedDataIDs = new Set());
+                var S = (function () {
+                    function e(e, r, i, s) {
+                        var t, n;
+                        (this._clientEdgeTraversalPath = null !== (t = r.clientEdgeTraversalPath) && void 0 !== t && t.length ? (0, o.default)(r.clientEdgeTraversalPath) : []), (this._missingClientEdges = []), (this._missingLiveResolverFields = []), (this._isMissingData = !1), (this._isWithinUnmatchedTypeRefinement = !1), (this._errorResponseFields = null), (this._owner = r.owner), (this._useExecTimeResolvers = null !== (n = this._owner.node.operation.use_exec_time_resolvers) && void 0 !== n && n), (this._recordSource = e), (this._seenRecords = new Set()), (this._selector = r), (this._variables = r.variables), (this._resolverCache = i), (this._fragmentName = r.node.name), (this._updatedDataIDs = new Set()), (this._resolverContext = s);
                     }
-                    var i = e.prototype;
+                    var r = e.prototype;
                     return (
-                        (i.read = function () {
-                            var e = this._selector,
-                                i = e.node,
-                                s = e.dataID,
-                                r = e.isWithinUnmatchedTypeRefinement,
-                                t = i.abstractKey,
+                        (r.read = function () {
+                            var e,
+                                r = this._selector,
+                                i = r.node,
+                                s = r.dataID,
+                                t = r.isWithinUnmatchedTypeRefinement,
+                                n = i.abstractKey,
                                 a = this._recordSource.get(s),
-                                n = !r;
-                            n && null == t && null != a && N.getType(a) !== i.type && s !== V && (n = !1);
-                            if (n && null != t && null != a) {
-                                var l = this._implementsInterface(a, t);
-                                !1 === l ? (n = !1) : null == l && (this._isMissingData = !0);
-                            }
-                            this._isWithinUnmatchedTypeRefinement = !n;
-                            var d = this._traverse(i, s, null);
-                            return this._updatedDataIDs.size > 0 && (this._resolverCache.notifyUpdatedSubscribers(this._updatedDataIDs), this._updatedDataIDs.clear()), { data: d, isMissingData: this._isMissingData && n, missingClientEdges: this._missingClientEdges.length ? this._missingClientEdges : null, missingLiveResolverFields: this._missingLiveResolverFields, seenRecords: this._seenRecords, selector: this._selector, missingRequiredFields: this._missingRequiredFields, relayResolverErrors: this._resolverErrors, errorResponseFields: this._errorResponseFields };
+                                l = !t;
+                            (l && null == n && null != a && (this._recordMatchesTypeCondition(a, i.type) || (l = !1)), l && null != n && null != a) && !1 === this._implementsInterface(a, n) && (l = !1);
+                            this._isWithinUnmatchedTypeRefinement = !l;
+                            var o = this._traverse(i, s, null),
+                                d = null === (e = this._selector.node.metadata) || void 0 === e ? void 0 : e.catchTo;
+                            return null != d && (o = this._catchErrors(o, d, null)), this._updatedDataIDs.size > 0 && (this._resolverCache.notifyUpdatedSubscribers(this._updatedDataIDs), this._updatedDataIDs.clear()), { data: o, isMissingData: this._isMissingData && l, missingClientEdges: this._missingClientEdges.length ? this._missingClientEdges : null, missingLiveResolverFields: this._missingLiveResolverFields, seenRecords: this._seenRecords, selector: this._selector, errorResponseFields: this._errorResponseFields };
                         }),
-                        (i._maybeAddErrorResponseFields = function (e, i) {
-                            if (L.ENABLE_FIELD_ERROR_HANDLING) {
-                                var s = N.getErrors(e, i);
-                                if (null != s) {
-                                    var r = this._fragmentName;
-                                    null == this._errorResponseFields && (this._errorResponseFields = []);
-                                    var t,
-                                        n = (0, a.default)(s);
-                                    try {
-                                        for (n.s(); !(t = n.n()).done; ) {
-                                            var l,
-                                                d = t.value;
-                                            this._errorResponseFields.push({ owner: r, path: (null !== (l = d.path) && void 0 !== l ? l : []).join("."), error: d });
-                                        }
-                                    } catch (e) {
-                                        n.e(e);
-                                    } finally {
-                                        n.f();
-                                    }
-                                }
-                            }
-                        }),
-                        (i._markDataAsMissing = function () {
-                            if (((this._isMissingData = !0), this._clientEdgeTraversalPath.length)) {
-                                var e = this._clientEdgeTraversalPath[this._clientEdgeTraversalPath.length - 1];
-                                null !== e && this._missingClientEdges.push({ request: e.readerClientEdge.operation, clientEdgeDestinationID: e.clientEdgeDestinationID });
-                            }
-                        }),
-                        (i._traverse = function (e, i, s) {
-                            var r = this._recordSource.get(i);
-                            if ((this._seenRecords.add(i), null == r)) return void 0 === r && this._markDataAsMissing(), r;
-                            var t = s || {};
-                            return this._traverseSelections(e.selections, r, t) ? t : null;
-                        }),
-                        (i._getVariableValue = function (e) {
-                            return this._variables.hasOwnProperty(e) || x(!1), this._variables[e];
-                        }),
-                        (i._maybeReportUnexpectedNull = function (e, i) {
-                            var s;
-                            if ("THROW" !== (null === (s = this._missingRequiredFields) || void 0 === s ? void 0 : s.action)) {
-                                var r = this._fragmentName;
-                                switch (i) {
-                                    case "THROW":
-                                        return void (this._missingRequiredFields = { action: i, field: { path: e, owner: r } });
-                                    case "LOG":
-                                        return void (null == this._missingRequiredFields ? (this._missingRequiredFields = { action: i, fields: [{ path: e, owner: r }] }) : (this._missingRequiredFields = { action: i, fields: [].concat((0, n.default)(this._missingRequiredFields.fields), [{ path: e, owner: r }]) }));
-                                }
-                            }
-                        }),
-                        (i._handleCatchFieldValue = function (e, i, s, r) {
-                            var t,
-                                a,
-                                n,
-                                l,
-                                d = e.to,
-                                o = null !== (t = null === (a = e.field) || void 0 === a ? void 0 : a.backingField) && void 0 !== t ? t : e.field,
-                                u = null !== (n = null == o ? void 0 : o.alias) && void 0 !== n ? n : null == o ? void 0 : o.name;
-                            if ((null == u && x(!1), null != this._errorResponseFields)) for (var _ = 0; _ < this._errorResponseFields.length; _++) this._errorResponseFields[_].to = d;
-                            if ("THROW" === (null === (l = this._missingRequiredFields) || void 0 === l ? void 0 : l.action)) {
-                                var h;
-                                if (null == (null === (h = this._missingRequiredFields) || void 0 === h ? void 0 : h.field)) return;
-                                null == this._errorResponseFields && (this._errorResponseFields = []);
-                                var v = this._missingRequiredFields.field,
-                                    c = v.owner,
-                                    g = v.path;
-                                return this._errorResponseFields.push({ owner: c, path: g, error: { message: "Relay: Missing @required value at path '".concat(g, "' in '").concat(c, "'.") }, to: d }), void (this._missingRequiredFields = null);
-                            }
-                            if (null == this._errorResponseFields) s[u] = { ok: !0, value: r };
-                            else {
-                                var f = this._errorResponseFields.map(function (e) {
-                                    return e.error;
-                                });
-                                s[u] = { ok: !1, errors: f };
-                            }
-                        }),
-                        (i._handleRequiredFieldValue = function (e, i) {
-                            if (null == i) {
-                                var s = e.action;
-                                return "NONE" !== s && this._maybeReportUnexpectedNull(e.path, s), !1;
-                            }
-                            return !0;
-                        }),
-                        (i._traverseSelections = function (e, i, s) {
-                            for (var r = 0; r < e.length; r++) {
-                                var t = e[r];
-                                switch (t.kind) {
-                                    case y:
-                                        var a = this._readClientSideDirectiveField(t, i, s);
-                                        if (!this._handleRequiredFieldValue(t, a)) return !1;
-                                        break;
-                                    case _:
-                                        var n = this._readClientSideDirectiveField(t, i, s);
-                                        L.ENABLE_FIELD_ERROR_HANDLING_CATCH_DIRECTIVE && "NULL" != t.to && this._handleCatchFieldValue(t, i, s, n);
-                                        break;
-                                    case A:
-                                        this._readScalar(t, i, s);
-                                        break;
-                                    case p:
-                                        t.plural ? this._readPluralLink(t, i, s) : this._readLink(t, i, s);
-                                        break;
-                                    case g:
-                                        if (Boolean(this._getVariableValue(t.condition)) === t.passingValue) if (!this._traverseSelections(t.selections, i, s)) return !1;
-                                        break;
-                                    case E:
-                                        if (!1 === this._readInlineFragment(t, i, s)) return !1;
-                                        break;
-                                    case D:
-                                    case I:
-                                        if (!L.ENABLE_RELAY_RESOLVERS) throw new Error("Relay Resolver fields are not yet supported.");
-                                        this._readResolverField(t, i, s);
-                                        break;
-                                    case m:
-                                        this._createFragmentPointer(t, i, s);
-                                        break;
-                                    case o:
-                                        s[t.name] = this._createAliasedFragmentSpread(t, i);
-                                        break;
-                                    case u:
-                                        var l = this._readInlineFragment(t.fragment, i, {});
-                                        !1 === l && (l = null), (s[t.name] = l);
-                                        break;
-                                    case F:
-                                        this._readModuleImport(t, i, s);
-                                        break;
-                                    case R:
-                                        this._createInlineDataOrResolverFragmentPointer(t, i, s);
-                                        break;
-                                    case f:
-                                    case c:
-                                        var b = this._isMissingData,
-                                            S = this._missingClientEdges.length;
-                                        this._clientEdgeTraversalPath.push(null);
-                                        var N = this._traverseSelections(t.selections, i, s);
-                                        if (((this._isMissingData = b || this._missingClientEdges.length > S || this._missingLiveResolverFields.length > 0), this._clientEdgeTraversalPath.pop(), !N)) return !1;
-                                        break;
-                                    case T:
-                                        if (!this._traverseSelections(t.selections, i, s)) return !1;
-                                        break;
-                                    case d:
-                                        this._readActorChange(t, i, s);
-                                        break;
-                                    case h:
-                                    case v:
-                                        this._readClientEdge(t, i, s);
-                                        break;
-                                    default:
-                                        x(!1);
-                                }
-                            }
-                            return !0;
-                        }),
-                        (i._readClientSideDirectiveField = function (e, i, s) {
-                            switch (e.field.kind) {
-                                case A:
-                                    return this._readScalar(e.field, i, s);
-                                case p:
-                                    return e.field.plural ? this._readPluralLink(e.field, i, s) : this._readLink(e.field, i, s);
-                                case I:
-                                case D:
-                                    if (!L.ENABLE_RELAY_RESOLVERS) throw new Error("Relay Resolver fields are not yet supported.");
-                                    return this._readResolverField(e.field, i, s);
-                                case h:
-                                case v:
-                                    if (!L.ENABLE_RELAY_RESOLVERS) throw new Error("Relay Resolver fields are not yet supported.");
-                                    return this._readClientEdge(e.field, i, s);
-                                default:
-                                    e.field.kind, x(!1);
-                            }
-                        }),
-                        (i._readResolverField = function (e, i, s) {
-                            var r,
-                                t = N.getDataID(i),
-                                a = this._readResolverFieldImpl(e, t);
-                            return (s[null !== (r = e.alias) && void 0 !== r ? r : e.name] = a), a;
-                        }),
-                        (i._readResolverFieldImpl = function (e, i) {
-                            var s,
-                                r = this,
-                                a = e.fragment,
-                                n = function (e) {
-                                    return null != s ? { data: s.data, isMissingData: s.isMissingData } : { data: (s = z(r._recordSource, e, r._resolverCache)).data, isMissingData: s.isMissingData };
-                                },
-                                l = this._resolverCache.readFromCacheOrEvaluate(
-                                    i,
-                                    e,
-                                    this._variables,
-                                    function () {
-                                        if (null != a) {
-                                            var l = { __id: i, __fragmentOwner: r._owner, __fragments: (0, t.default)({}, a.name, a.args ? G(a.args, r._variables) : {}) };
-                                            return j({ getDataForResolverFragment: n }, function () {
-                                                var i = Q(e, r._variables, l),
-                                                    t = i[0],
-                                                    a = i[1];
-                                                return { resolverResult: t, snapshot: s, error: a };
-                                            });
-                                        }
-                                        var d = Q(e, r._variables, null);
-                                        return { resolverResult: d[0], snapshot: void 0, error: d[1] };
-                                    },
-                                    n,
-                                ),
-                                d = l[0],
-                                o = l[1],
-                                u = l[2],
-                                _ = l[3],
-                                h = l[4],
-                                v = l[5];
-                            return this._propogateResolverMetadata(e.path, _, u, o, h, v), d;
-                        }),
-                        (i._propogateResolverMetadata = function (e, i, s, r, t, n) {
+                        (r._maybeAddErrorResponseFields = function (e, r) {
+                            var i = _.getErrors(e, r);
                             if (null != i) {
-                                if ((null != i.missingRequiredFields && this._addMissingRequiredFields(i.missingRequiredFields), null != i.missingClientEdges)) {
-                                    var l,
-                                        d = (0, a.default)(i.missingClientEdges);
-                                    try {
-                                        for (d.s(); !(l = d.n()).done; ) {
-                                            var o = l.value;
-                                            this._missingClientEdges.push(o);
-                                        }
-                                    } catch (e) {
-                                        d.e(e);
-                                    } finally {
-                                        d.f();
-                                    }
-                                }
-                                if (null != i.missingLiveResolverFields) {
-                                    this._isMissingData = this._isMissingData || i.missingLiveResolverFields.length > 0;
-                                    var u,
-                                        _ = (0, a.default)(i.missingLiveResolverFields);
-                                    try {
-                                        for (_.s(); !(u = _.n()).done; ) {
-                                            var h = u.value;
-                                            this._missingLiveResolverFields.push(h);
-                                        }
-                                    } catch (e) {
-                                        _.e(e);
-                                    } finally {
-                                        _.f();
-                                    }
-                                }
-                                var v,
-                                    c = (0, a.default)(i.relayResolverErrors);
+                                var s = this._fragmentName;
+                                null == this._errorResponseFields && (this._errorResponseFields = []);
+                                var t,
+                                    n = (0, l.default)(i);
                                 try {
-                                    for (c.s(); !(v = c.n()).done; ) {
-                                        var g = v.value;
-                                        this._resolverErrors.push(g);
+                                    for (n.s(); !(t = n.n()).done; ) {
+                                        var a,
+                                            o,
+                                            d,
+                                            h = t.value;
+                                        this._errorResponseFields.push({ kind: "relay_field_payload.error", owner: s, fieldPath: (null !== (a = h.path) && void 0 !== a ? a : []).join("."), error: h, shouldThrow: null !== (o = null === (d = this._selector.node.metadata) || void 0 === d ? void 0 : d.throwOnFieldError) && void 0 !== o && o, handled: !1 });
                                     }
                                 } catch (e) {
-                                    c.e(e);
+                                    n.e(e);
                                 } finally {
-                                    c.f();
-                                }
-                                this._isMissingData = this._isMissingData || i.isMissingData;
-                            }
-                            if ((s && this._resolverErrors.push({ field: { path: e, owner: this._fragmentName }, error: s }), null != r && this._seenRecords.add(r), null != t && ((this._isMissingData = !0), this._missingLiveResolverFields.push({ path: "".concat(this._fragmentName, ".").concat(e), liveStateID: t })), null != n)) {
-                                var f,
-                                    m = (0, a.default)(n);
-                                try {
-                                    for (m.s(); !(f = m.n()).done; ) {
-                                        var R = f.value;
-                                        this._updatedDataIDs.add(R);
-                                    }
-                                } catch (e) {
-                                    m.e(e);
-                                } finally {
-                                    m.f();
+                                    n.f();
                                 }
                             }
                         }),
-                        (i._readClientEdge = function (e, i, s) {
-                            var r,
-                                t = this,
-                                a = e.backingField;
-                            "ClientExtension" === a.kind && x(!1);
-                            var n = null !== (r = a.alias) && void 0 !== r ? r : a.name,
-                                l = {};
-                            this._traverseSelections([a], i, l);
-                            var d = l[n];
-                            if (null == d || b(d)) return (s[n] = d), d;
-                            if (e.linkedField.plural) {
-                                var o;
-                                Array.isArray(d) || x(!1),
-                                    e.kind !== h && x(!1),
-                                    (o =
-                                        null == e.backingField.normalizationInfo
-                                            ? d.map(function (i) {
-                                                  var s,
-                                                      r = null !== (s = e.concreteType) && void 0 !== s ? s : i.__typename;
-                                                  "string" != typeof r && x(!1);
-                                                  var a = X(i),
-                                                      n = t._resolverCache.ensureClientRecord(a, r),
-                                                      l = e.modelResolvers;
-                                                  if (null != l) {
-                                                      var d = l[r];
-                                                      return void 0 === d && x(!1), null != t._readResolverFieldImpl(d, n) ? n : null;
-                                                  }
-                                                  return n;
-                                              })
-                                            : d.map(X)),
-                                    this._clientEdgeTraversalPath.push(null);
-                                var u = this._readLinkedIds(e.linkedField, o, i, s);
-                                return this._clientEdgeTraversalPath.pop(), (s[n] = u), u;
+                        (r._markDataAsMissing = function (e) {
+                            var r, i;
+                            if (!this._isWithinUnmatchedTypeRefinement) {
+                                null == this._errorResponseFields && (this._errorResponseFields = []);
+                                var s = this._fragmentName;
+                                if ((this._errorResponseFields.push(null !== (r = null === (i = this._selector.node.metadata) || void 0 === i ? void 0 : i.throwOnFieldError) && void 0 !== r && r ? { kind: "missing_expected_data.throw", owner: s, fieldPath: e, handled: !1 } : { kind: "missing_expected_data.log", owner: s, fieldPath: e }), (this._isMissingData = !0), this._clientEdgeTraversalPath.length)) {
+                                    var t = this._clientEdgeTraversalPath[this._clientEdgeTraversalPath.length - 1];
+                                    null !== t && this._missingClientEdges.push({ request: t.readerClientEdge.operation, clientEdgeDestinationID: t.clientEdgeDestinationID });
+                                }
                             }
-                            var _,
-                                v,
-                                c,
-                                g = X(d),
-                                f = null !== (_ = e.concreteType) && void 0 !== _ ? _ : d.__typename;
-                            e.kind === h ? (null == e.backingField.normalizationInfo ? ("string" != typeof f && x(!1), (v = this._resolverCache.ensureClientRecord(g, f)), (c = null)) : ((v = g), (c = null))) : ((v = g), (c = { readerClientEdge: e, clientEdgeDestinationID: g }));
-                            var m = e.modelResolvers;
-                            if (null != m) {
-                                "string" != typeof f && x(!1);
-                                var R = m[f];
-                                if ((void 0 === R && x(!1), null == this._readResolverFieldImpl(R, v))) return (s[n] = null), null;
+                        }),
+                        (r._traverse = function (e, r, i) {
+                            var s = this._recordSource.get(r);
+                            if ((this._seenRecords.add(r), null == s)) return void 0 === s && this._markDataAsMissing("<record>"), s;
+                            var t = i || {};
+                            return this._traverseSelections(e.selections, s, t) ? t : null;
+                        }),
+                        (r._getVariableValue = function (e) {
+                            return this._variables.hasOwnProperty(e) || P(!1), this._variables[e];
+                        }),
+                        (r._maybeReportUnexpectedNull = function (e) {
+                            if ("NONE" !== e.action) {
+                                var r,
+                                    i,
+                                    s,
+                                    t = this._fragmentName;
+                                if ((null == this._errorResponseFields && (this._errorResponseFields = []), null != e.field.linkedField)) r = null !== (i = e.field.linkedField.alias) && void 0 !== i ? i : e.field.linkedField.name;
+                                else r = null !== (s = e.field.alias) && void 0 !== s ? s : e.field.name;
+                                switch (e.action) {
+                                    case "THROW":
+                                        return void this._errorResponseFields.push({ kind: "missing_required_field.throw", fieldPath: r, owner: t, handled: !1 });
+                                    case "LOG":
+                                        return void this._errorResponseFields.push({ kind: "missing_required_field.log", fieldPath: r, owner: t });
+                                    default:
+                                        e.action;
+                                }
                             }
-                            this._clientEdgeTraversalPath.push(c);
-                            var E = s[n];
-                            null != E && "object" != typeof E && x(!1);
-                            var p = this._traverse(e.linkedField, v, E);
-                            return this._clientEdgeTraversalPath.pop(), (s[n] = p), p;
                         }),
-                        (i._readScalar = function (e, i, s) {
-                            var r,
-                                t = null !== (r = e.alias) && void 0 !== r ? r : e.name,
-                                a = W(e, this._variables),
-                                n = N.getValue(i, a);
-                            return null === n ? this._maybeAddErrorResponseFields(i, a) : void 0 === n && this._markDataAsMissing(), (s[t] = n), n;
+                        (r._handleRequiredFieldValue = function (e, r) {
+                            return null != r || (this._maybeReportUnexpectedNull(e), !1);
                         }),
-                        (i._readLink = function (e, i, s) {
-                            var r,
-                                t = null !== (r = e.alias) && void 0 !== r ? r : e.name,
-                                a = W(e, this._variables),
-                                n = N.getLinkedRecordID(i, a);
-                            if (null == n) return (s[t] = n), null === n ? this._maybeAddErrorResponseFields(i, a) : void 0 === n && this._markDataAsMissing(), n;
-                            var l = s[t];
-                            null != l && "object" != typeof l && x(!1);
-                            var d = this._traverse(e, n, l);
-                            return (s[t] = d), d;
-                        }),
-                        (i._readActorChange = function (e, i, s) {
-                            var r,
-                                t = null !== (r = e.alias) && void 0 !== r ? r : e.name,
-                                a = W(e, this._variables),
-                                n = N.getActorLinkedRecordID(i, a);
-                            if (null == n) return (s[t] = n), void 0 === n ? this._markDataAsMissing() : null === n && this._maybeAddErrorResponseFields(i, a), s[t];
-                            var l = n[0],
-                                d = n[1],
-                                o = {};
-                            return this._createFragmentPointer(e.fragmentSpread, N.fromObject({ __id: d }), o), (s[t] = { __fragmentRef: o, __viewer: l }), s[t];
-                        }),
-                        (i._readPluralLink = function (e, i, s) {
-                            var r = W(e, this._variables),
-                                t = N.getLinkedRecordIDs(i, r);
-                            return null === t && this._maybeAddErrorResponseFields(i, r), this._readLinkedIds(e, t, i, s);
-                        }),
-                        (i._readLinkedIds = function (e, i, s, r) {
-                            var t,
-                                a = this,
-                                n = null !== (t = e.alias) && void 0 !== t ? t : e.name;
-                            if (null == i) return (r[n] = i), void 0 === i && this._markDataAsMissing(), i;
-                            var l = r[n];
-                            null == l || Array.isArray(l) || x(!1);
-                            var d = l || [];
-                            return (
-                                i.forEach(function (i, s) {
-                                    if (null == i) return void 0 === i && a._markDataAsMissing(), void (d[s] = i);
-                                    var r = d[s];
-                                    null != r && "object" != typeof r && x(!1), (d[s] = a._traverse(e, i, r));
-                                }),
-                                (r[n] = d),
-                                d
-                            );
-                        }),
-                        (i._readModuleImport = function (e, i, s) {
-                            var r = U(e.documentName),
-                                t = N.getValue(i, r);
-                            null != t ? (this._createFragmentPointer({ kind: "FragmentSpread", name: e.fragmentName, args: e.args }, i, s), (s[O] = e.fragmentPropName), (s[q] = t)) : void 0 === t && this._markDataAsMissing();
-                        }),
-                        (i._createAliasedFragmentSpread = function (e, i) {
-                            var s = e.abstractKey;
-                            if (null == s) {
-                                var r = N.getType(i);
-                                if (null == r || r !== e.type) return null;
-                            } else {
-                                var t = this._implementsInterface(i, s);
-                                if (!1 === t) return null;
-                                if (null == t) return void this._markDataAsMissing();
+                        (r._catchErrors = function (e, r, i) {
+                            var s = e;
+                            switch (r) {
+                                case "RESULT":
+                                    s = this._asResult(e);
+                                    break;
+                                case "NULL":
+                                    null != this._errorResponseFields && this._errorResponseFields.length > 0 && (s = null);
                             }
-                            var a = {};
-                            return this._createFragmentPointer(e.fragment, i, a), N.fromObject(a);
-                        }),
-                        (i._readInlineFragment = function (e, i, s) {
-                            if (null == e.type) return !1 !== this._traverseSelections(e.selections, i, s) && s;
-                            var r = e.abstractKey;
-                            if (null == r) {
-                                var t = N.getType(i);
-                                if (null == t || t !== e.type) return null;
-                                if (!this._traverseSelections(e.selections, i, s)) return !1;
-                            } else {
-                                var a = this._implementsInterface(i, r),
-                                    n = this._isMissingData,
-                                    l = this._isWithinUnmatchedTypeRefinement;
-                                if (((this._isWithinUnmatchedTypeRefinement = l || !1 === a), this._traverseSelections(e.selections, i, s), (this._isWithinUnmatchedTypeRefinement = l), !1 === a)) return void (this._isMissingData = n);
-                                if (null == a) return this._markDataAsMissing(), null;
+                            var t = this._errorResponseFields;
+                            if (((this._errorResponseFields = i), null != t)) {
+                                null == this._errorResponseFields && (this._errorResponseFields = []);
+                                for (var n = 0; n < t.length; n++) this._errorResponseFields.push(M(t[n]));
                             }
                             return s;
                         }),
-                        (i._createFragmentPointer = function (e, i, s) {
-                            var r = s[w];
-                            null == r && (r = s[w] = {}), ("object" != typeof r || null == r) && x(!1), null == s[P] && (s[P] = N.getDataID(i)), (r[e.name] = G(e.args, this._variables, this._isWithinUnmatchedTypeRefinement)), (s[M] = this._owner), this._clientEdgeTraversalPath.length > 0 && null !== this._clientEdgeTraversalPath[this._clientEdgeTraversalPath.length - 1] && (s[C] = (0, n.default)(this._clientEdgeTraversalPath));
+                        (r._asResult = function (e) {
+                            return null == this._errorResponseFields || 0 === this._errorResponseFields.length
+                                ? { ok: !0, value: e }
+                                : {
+                                      ok: !1,
+                                      errors: this._errorResponseFields
+                                          .map(function (e) {
+                                              switch (e.kind) {
+                                                  case "relay_field_payload.error":
+                                                      var r = e.error;
+                                                      r.message;
+                                                      return (0, a.default)(r, d);
+                                                  case "missing_expected_data.throw":
+                                                  case "missing_expected_data.log":
+                                                      return { path: e.fieldPath.split(".") };
+                                                  case "relay_resolver.error":
+                                                      return { message: "Relay: Error in resolver for field at ".concat(e.fieldPath, " in ").concat(e.owner) };
+                                                  case "missing_required_field.throw":
+                                                      return { message: "Relay: Missing @required value at path '".concat(e.fieldPath, "' in '").concat(e.owner, "'.") };
+                                                  case "missing_required_field.log":
+                                                      return null;
+                                                  default:
+                                                      e.kind, P(!1);
+                                              }
+                                          })
+                                          .filter(Boolean),
+                                  };
                         }),
-                        (i._createInlineDataOrResolverFragmentPointer = function (e, i, s) {
-                            var r = s[w];
-                            null == r && (r = s[w] = {}), ("object" != typeof r || null == r) && x(!1), null == s[P] && (s[P] = N.getDataID(i));
+                        (r._traverseSelections = function (e, r, i) {
+                            for (var s = 0; s < e.length; s++) {
+                                var t = e[s];
+                                switch (t.kind) {
+                                    case "RequiredField":
+                                        var n = this._readClientSideDirectiveField(t, r, i);
+                                        if (!this._handleRequiredFieldValue(t, n)) return !1;
+                                        break;
+                                    case "CatchField":
+                                        var a,
+                                            l,
+                                            o,
+                                            d = this._errorResponseFields;
+                                        this._errorResponseFields = null;
+                                        var h = this._readClientSideDirectiveField(t, r, i),
+                                            u = null !== (a = null === (l = t.field) || void 0 === l ? void 0 : l.backingField) && void 0 !== a ? a : t.field,
+                                            _ = null !== (o = null == u ? void 0 : u.alias) && void 0 !== o ? o : null == u ? void 0 : u.name;
+                                        null == _ && P(!1), (i[_] = this._catchErrors(h, t.to, d));
+                                        break;
+                                    case "ScalarField":
+                                        this._readScalar(t, r, i);
+                                        break;
+                                    case "LinkedField":
+                                        t.plural ? this._readPluralLink(t, r, i) : this._readLink(t, r, i);
+                                        break;
+                                    case "Condition":
+                                        if (Boolean(this._getVariableValue(t.condition)) === t.passingValue) if (!this._traverseSelections(t.selections, r, i)) return !1;
+                                        break;
+                                    case "InlineFragment":
+                                        if (!1 === this._readInlineFragment(t, r, i, !1)) return !1;
+                                        break;
+                                    case "RelayLiveResolver":
+                                    case "RelayResolver":
+                                        this._useExecTimeResolvers ? this._readScalar(t, r, i) : this._readResolverField(t, r, i);
+                                        break;
+                                    case "FragmentSpread":
+                                        this._createFragmentPointer(t, r, i);
+                                        break;
+                                    case "AliasedInlineFragmentSpread":
+                                        this._readAliasedInlineFragment(t, r, i);
+                                        break;
+                                    case "ModuleImport":
+                                        this._readModuleImport(t, r, i);
+                                        break;
+                                    case "InlineDataFragmentSpread":
+                                        this._createInlineDataOrResolverFragmentPointer(t, r, i);
+                                        break;
+                                    case "Defer":
+                                    case "ClientExtension":
+                                        var c = this._isMissingData,
+                                            v = this._missingClientEdges.length;
+                                        this._clientEdgeTraversalPath.push(null);
+                                        var g = this._traverseSelections(t.selections, r, i);
+                                        if (((this._isMissingData = c || this._missingClientEdges.length > v || this._missingLiveResolverFields.length > 0), this._clientEdgeTraversalPath.pop(), !g)) return !1;
+                                        break;
+                                    case "Stream":
+                                        if (!this._traverseSelections(t.selections, r, i)) return !1;
+                                        break;
+                                    case "ActorChange":
+                                        this._readActorChange(t, r, i);
+                                        break;
+                                    case "ClientEdgeToClientObject":
+                                    case "ClientEdgeToServerObject":
+                                        if (!this._useExecTimeResolvers || ("RelayResolver" !== t.backingField.kind && "RelayLiveResolver" !== t.backingField.kind)) this._readClientEdge(t, r, i);
+                                        else {
+                                            var f = t.linkedField;
+                                            f.plural ? this._readPluralLink(f, r, i) : this._readLink(f, r, i);
+                                        }
+                                        break;
+                                    default:
+                                        P(!1);
+                                }
+                            }
+                            return !0;
+                        }),
+                        (r._readClientSideDirectiveField = function (e, r, i) {
+                            switch (e.field.kind) {
+                                case "ScalarField":
+                                    return this._readScalar(e.field, r, i);
+                                case "LinkedField":
+                                    return e.field.plural ? this._readPluralLink(e.field, r, i) : this._readLink(e.field, r, i);
+                                case "RelayResolver":
+                                case "RelayLiveResolver":
+                                    return this._readResolverField(e.field, r, i);
+                                case "ClientEdgeToClientObject":
+                                case "ClientEdgeToServerObject":
+                                    return this._readClientEdge(e.field, r, i);
+                                case "AliasedInlineFragmentSpread":
+                                    return this._readAliasedInlineFragment(e.field, r, i);
+                                default:
+                                    e.field.kind, P(!1);
+                            }
+                        }),
+                        (r._readResolverField = function (e, r, i) {
+                            var s,
+                                t = _.getDataID(r),
+                                n = this._errorResponseFields;
+                            this._errorResponseFields = null;
+                            var a = this._readResolverFieldImpl(e, t),
+                                l = null !== (s = e.alias) && void 0 !== s ? s : e.name;
+                            return this._prependPreviousErrors(n, l), (i[l] = a), a;
+                        }),
+                        (r._readResolverFieldImpl = function (e, r) {
+                            var i,
+                                s = this,
+                                t = e.fragment,
+                                a = function (e) {
+                                    return null != i ? { data: i.data, isMissingData: i.isMissingData, errorResponseFields: i.errorResponseFields } : { data: (i = I(s._recordSource, e, s._resolverCache)).data, isMissingData: i.isMissingData, errorResponseFields: i.errorResponseFields };
+                                },
+                                l = this._resolverCache.readFromCacheOrEvaluate(
+                                    r,
+                                    e,
+                                    this._variables,
+                                    function () {
+                                        if (null != t) {
+                                            var l = { __id: r, __fragmentOwner: s._owner, __fragments: (0, n.default)({}, t.name, t.args ? E(t.args, s._variables) : {}) };
+                                            return T({ getDataForResolverFragment: a }, function () {
+                                                var r = L(e, s._variables, l, s._resolverContext),
+                                                    t = r[0],
+                                                    n = r[1];
+                                                return { resolverResult: t, snapshot: i, error: n };
+                                            });
+                                        }
+                                        var o = L(e, s._variables, null, s._resolverContext);
+                                        return { resolverResult: o[0], snapshot: void 0, error: o[1] };
+                                    },
+                                    a,
+                                ),
+                                o = l[0],
+                                d = l[1],
+                                h = l[2],
+                                u = l[3],
+                                _ = l[4],
+                                c = l[5];
+                            return this._propagateResolverMetadata(e.path, u, h, d, _, c), o;
+                        }),
+                        (r._propagateResolverMetadata = function (e, r, i, s, t, n) {
+                            if (null != r) {
+                                if (null != r.missingClientEdges) {
+                                    var a,
+                                        o = (0, l.default)(r.missingClientEdges);
+                                    try {
+                                        for (o.s(); !(a = o.n()).done; ) {
+                                            var d = a.value;
+                                            this._missingClientEdges.push(d);
+                                        }
+                                    } catch (e) {
+                                        o.e(e);
+                                    } finally {
+                                        o.f();
+                                    }
+                                }
+                                if (null != r.missingLiveResolverFields) {
+                                    this._isMissingData = this._isMissingData || r.missingLiveResolverFields.length > 0;
+                                    var h,
+                                        u = (0, l.default)(r.missingLiveResolverFields);
+                                    try {
+                                        for (u.s(); !(h = u.n()).done; ) {
+                                            var _ = h.value;
+                                            this._missingLiveResolverFields.push(_);
+                                        }
+                                    } catch (e) {
+                                        u.e(e);
+                                    } finally {
+                                        u.f();
+                                    }
+                                }
+                                if (null != r.errorResponseFields) {
+                                    null == this._errorResponseFields && (this._errorResponseFields = []);
+                                    var c,
+                                        v = (0, l.default)(r.errorResponseFields);
+                                    try {
+                                        for (v.s(); !(c = v.n()).done; ) {
+                                            var g,
+                                                f = c.value;
+                                            !0 === (null === (g = this._selector.node.metadata) || void 0 === g ? void 0 : g.throwOnFieldError) ? this._errorResponseFields.push(f) : this._errorResponseFields.push(M(f));
+                                        }
+                                    } catch (e) {
+                                        v.e(e);
+                                    } finally {
+                                        v.f();
+                                    }
+                                }
+                                this._isMissingData = this._isMissingData || r.isMissingData;
+                            }
+                            if (i) {
+                                var p,
+                                    m,
+                                    R = { kind: "relay_resolver.error", fieldPath: e, owner: this._fragmentName, error: i, shouldThrow: null !== (p = null === (m = this._selector.node.metadata) || void 0 === m ? void 0 : m.throwOnFieldError) && void 0 !== p && p, handled: !1 };
+                                null == this._errorResponseFields ? (this._errorResponseFields = [R]) : this._errorResponseFields.push(R);
+                            }
+                            if ((null != s && this._seenRecords.add(s), null != t && ((this._isMissingData = !0), this._missingLiveResolverFields.push(t)), null != n)) {
+                                var F,
+                                    E = (0, l.default)(n);
+                                try {
+                                    for (E.s(); !(F = E.n()).done; ) {
+                                        var k = F.value;
+                                        this._updatedDataIDs.add(k);
+                                    }
+                                } catch (e) {
+                                    E.e(e);
+                                } finally {
+                                    E.f();
+                                }
+                            }
+                        }),
+                        (r._readClientEdge = function (e, r, i) {
+                            var s,
+                                t = this,
+                                n = e.backingField;
+                            "ClientExtension" === n.kind && P(!1);
+                            var a = null !== (s = n.alias) && void 0 !== s ? s : n.name,
+                                l = {};
+                            this._traverseSelections([n], r, l);
+                            var o = l[a];
+                            if (null == o || h(o)) return (i[a] = o), o;
+                            if (e.linkedField.plural) {
+                                var d;
+                                Array.isArray(o) || P(!1),
+                                    "ClientEdgeToClientObject" !== e.kind && P(!1),
+                                    (d =
+                                        null == e.backingField.normalizationInfo
+                                            ? o.map(function (r) {
+                                                  var i,
+                                                      s = null !== (i = e.concreteType) && void 0 !== i ? i : r.__typename;
+                                                  "string" != typeof s && P(!1);
+                                                  var a = A(r, n.path, t._owner.identifier),
+                                                      l = t._resolverCache.ensureClientRecord(a, s),
+                                                      o = e.modelResolvers;
+                                                  if (null != o) {
+                                                      var d = o[s];
+                                                      return void 0 === d && P(!1), null != t._readResolverFieldImpl(d, l) ? l : null;
+                                                  }
+                                                  return l;
+                                              })
+                                            : o.map(function (e) {
+                                                  return A(e, n.path, t._owner.identifier);
+                                              })),
+                                    this._clientEdgeTraversalPath.push(null);
+                                var u = this._readLinkedIds(e.linkedField, d, r, i);
+                                return this._clientEdgeTraversalPath.pop(), (i[a] = u), u;
+                            }
+                            var _,
+                                c,
+                                v,
+                                g = A(o, n.path, this._owner.identifier),
+                                f = null !== (_ = e.concreteType) && void 0 !== _ ? _ : o.__typename;
+                            "ClientEdgeToClientObject" === e.kind ? (null == e.backingField.normalizationInfo ? ("string" != typeof f && P(!1), (c = this._resolverCache.ensureClientRecord(g, f)), (v = null)) : ((c = g), (v = null))) : ((c = g), (v = { readerClientEdge: e, clientEdgeDestinationID: g }));
+                            var p = e.modelResolvers;
+                            if (null != p) {
+                                "string" != typeof f && P(!1);
+                                var m = p[f];
+                                if ((void 0 === m && P(!1), null == this._readResolverFieldImpl(m, c))) return (i[a] = null), null;
+                            }
+                            this._clientEdgeTraversalPath.push(v);
+                            var R = i[a];
+                            null != R && "object" != typeof R && P(!1);
+                            var F = this._errorResponseFields;
+                            this._errorResponseFields = null;
+                            var E = this._traverse(e.linkedField, c, R);
+                            return this._prependPreviousErrors(F, a), this._clientEdgeTraversalPath.pop(), (i[a] = E), E;
+                        }),
+                        (r._readScalar = function (e, r, i) {
+                            var s,
+                                t = null !== (s = e.alias) && void 0 !== s ? s : e.name,
+                                n = y(e, this._variables),
+                                a = _.getValue(r, n);
+                            return null === a ? this._maybeAddErrorResponseFields(r, n) : void 0 === a && this._markDataAsMissing(t), (i[t] = a), a;
+                        }),
+                        (r._readLink = function (e, r, i) {
+                            var s,
+                                t = null !== (s = e.alias) && void 0 !== s ? s : e.name,
+                                n = y(e, this._variables),
+                                a = _.getLinkedRecordID(r, n);
+                            if (null == a) return (i[t] = a), null === a ? this._maybeAddErrorResponseFields(r, n) : void 0 === a && this._markDataAsMissing(t), a;
+                            var l = i[t];
+                            null != l && "object" != typeof l && P(!1);
+                            var o = this._errorResponseFields;
+                            this._errorResponseFields = null;
+                            var d = this._traverse(e, a, l);
+                            return this._prependPreviousErrors(o, t), (i[t] = d), d;
+                        }),
+                        (r._prependPreviousErrors = function (e, r) {
+                            if (null != this._errorResponseFields) {
+                                for (var i = 0; i < this._errorResponseFields.length; i++) {
+                                    var s = this._errorResponseFields[i];
+                                    s.owner !== this._fragmentName || ("missing_expected_data.throw" !== s.kind && "missing_expected_data.log" !== s.kind && "missing_required_field.throw" !== s.kind && "missing_required_field.log" !== s.kind) || (s.fieldPath = "".concat(r, ".").concat(s.fieldPath));
+                                }
+                                if (null != e) {
+                                    for (var t = this._errorResponseFields.length - 1; t >= 0; t--) e.push(this._errorResponseFields[t]);
+                                    this._errorResponseFields = e;
+                                }
+                            } else this._errorResponseFields = e;
+                        }),
+                        (r._readActorChange = function (e, r, i) {
+                            var s,
+                                t = null !== (s = e.alias) && void 0 !== s ? s : e.name,
+                                n = y(e, this._variables),
+                                a = _.getActorLinkedRecordID(r, n);
+                            if (null == a) return (i[t] = a), void 0 === a ? this._markDataAsMissing(t) : null === a && this._maybeAddErrorResponseFields(r, n), i[t];
+                            var l = a[0],
+                                o = a[1],
+                                d = {};
+                            return this._createFragmentPointer(e.fragmentSpread, _.fromObject({ __id: o }), d), (i[t] = { __fragmentRef: d, __viewer: l }), i[t];
+                        }),
+                        (r._readPluralLink = function (e, r, i) {
+                            var s = y(e, this._variables),
+                                t = _.getLinkedRecordIDs(r, s);
+                            return null === t && this._maybeAddErrorResponseFields(r, s), this._readLinkedIds(e, t, r, i);
+                        }),
+                        (r._readLinkedIds = function (e, r, i, s) {
+                            var t,
+                                n = this,
+                                a = null !== (t = e.alias) && void 0 !== t ? t : e.name;
+                            if (null == r) return (s[a] = r), void 0 === r && this._markDataAsMissing(a), r;
+                            var l = s[a];
+                            null == l || Array.isArray(l) || P(!1);
+                            var o = this._errorResponseFields;
+                            this._errorResponseFields = null;
+                            var d = l || [];
+                            return (
+                                r.forEach(function (r, i) {
+                                    if (null == r) return void 0 === r && n._markDataAsMissing(String(i)), void (d[i] = r);
+                                    var s = d[i];
+                                    null != s && "object" != typeof s && P(!1);
+                                    var t = n._errorResponseFields;
+                                    (n._errorResponseFields = null), (d[i] = n._traverse(e, r, s)), n._prependPreviousErrors(t, i);
+                                }),
+                                this._prependPreviousErrors(o, a),
+                                (s[a] = d),
+                                d
+                            );
+                        }),
+                        (r._readModuleImport = function (e, r, i) {
+                            var s,
+                                t = k(e.documentName),
+                                n = null !== (s = e.componentModuleProvider) && void 0 !== s ? s : _.getValue(r, t);
+                            null != n ? (this._createFragmentPointer({ kind: "FragmentSpread", name: e.fragmentName, args: e.args }, r, i), (i[f] = e.fragmentPropName), (i[R] = n)) : void 0 === n && this._markDataAsMissing("<module-import>");
+                        }),
+                        (r._readAliasedInlineFragment = function (e, r, i) {
+                            var s = this._errorResponseFields;
+                            this._errorResponseFields = null;
+                            var t = this._readInlineFragment(e.fragment, r, {}, !0);
+                            this._prependPreviousErrors(s, e.name), !1 === t && (t = null), (i[e.name] = t);
+                        }),
+                        (r._readInlineFragment = function (e, r, i, s) {
+                            if (null == e.type) return !1 !== this._traverseSelections(e.selections, r, i) && i;
+                            var t = e.abstractKey;
+                            if (null == t) {
+                                if (!this._recordMatchesTypeCondition(r, e.type)) return null;
+                                if (!this._traverseSelections(e.selections, r, i)) return !1;
+                            } else {
+                                var n = this._implementsInterface(r, t);
+                                if (!1 === n && s) return null;
+                                var a = this._isMissingData,
+                                    l = this._isWithinUnmatchedTypeRefinement;
+                                this._isWithinUnmatchedTypeRefinement = l || !1 === n;
+                                var o = this._traverseSelections(e.selections, r, i);
+                                if (((this._isWithinUnmatchedTypeRefinement = l), !1 === n)) return (this._isMissingData = a), null;
+                                if (null == n) return;
+                                if (!1 === o) return !1;
+                            }
+                            return i;
+                        }),
+                        (r._recordMatchesTypeCondition = function (e, r) {
+                            var i = _.getType(e);
+                            return (null != i && i === r) || _.getDataID(e) === F;
+                        }),
+                        (r._createFragmentPointer = function (e, r, i) {
+                            var s = i[p];
+                            null == s && (s = i[p] = {}), ("object" != typeof s || null == s) && P(!1), null == i[m] && (i[m] = _.getDataID(r)), (s[e.name] = E(e.args, this._variables, this._isWithinUnmatchedTypeRefinement)), (i[g] = this._owner), this._clientEdgeTraversalPath.length > 0 && null !== this._clientEdgeTraversalPath[this._clientEdgeTraversalPath.length - 1] && (i[v] = (0, o.default)(this._clientEdgeTraversalPath));
+                        }),
+                        (r._createInlineDataOrResolverFragmentPointer = function (e, r, i) {
+                            var s = i[p];
+                            null == s && (s = i[p] = {}), ("object" != typeof s || null == s) && P(!1), null == i[m] && (i[m] = _.getDataID(r));
                             var t = {},
-                                a = this._fragmentName;
+                                n = this._fragmentName;
                             this._fragmentName = e.name;
-                            var n = this._variables,
-                                l = e.args ? G(e.args, this._variables) : {};
-                            (this._variables = S.getFragmentVariables(e, this._owner.variables, l)), this._traverseSelections(e.selections, i, t), (this._variables = n), (this._fragmentName = a), (r[e.name] = t);
+                            var a = this._variables,
+                                l = e.args ? E(e.args, this._variables) : {};
+                            (this._variables = u.getFragmentVariables(e, this._owner.variables, l)), this._traverseSelections(e.selections, r, t), (this._variables = a), (this._fragmentName = n), (s[e.name] = t);
                         }),
-                        (i._addMissingRequiredFields = function (e) {
-                            null != this._missingRequiredFields ? "THROW" !== this._missingRequiredFields.action && ("THROW" !== e.action ? (this._missingRequiredFields = { action: "LOG", fields: [].concat((0, n.default)(this._missingRequiredFields.fields), (0, n.default)(e.fields)) }) : (this._missingRequiredFields = e)) : (this._missingRequiredFields = e);
-                        }),
-                        (i._implementsInterface = function (e, i) {
-                            var s = N.getType(e),
-                                r = this._recordSource.get(B(s));
-                            return null != r ? N.getValue(r, i) : null;
+                        (r._implementsInterface = function (e, r) {
+                            var i = _.getType(e),
+                                s = this._recordSource.get(w(i)),
+                                t = null != s ? _.getValue(s, r) : null;
+                            return null == t && this._markDataAsMissing("<abstract-type-hint>"), t;
                         }),
                         e
                     );
                 })();
-                function Q(e, i, s) {
-                    var r = "function" == typeof e.resolverModule ? e.resolverModule : e.resolverModule.default,
-                        t = null,
+                function M(e) {
+                    switch (e.kind) {
+                        case "missing_expected_data.throw":
+                        case "missing_required_field.throw":
+                        case "relay_field_payload.error":
+                        case "relay_resolver.error":
+                            return (0, t.default)((0, t.default)({}, e), {}, { handled: !0 });
+                        case "missing_expected_data.log":
+                        case "missing_required_field.log":
+                            return e;
+                        default:
+                            e.kind, P(!1);
+                    }
+                }
+                function L(e, r, i, s) {
+                    var t = "function" == typeof e.resolverModule ? e.resolverModule : e.resolverModule.default,
+                        n = null,
                         a = null;
                     try {
-                        var n = [];
-                        null != e.fragment && n.push(s);
-                        var l = e.args ? G(e.args, i) : void 0;
-                        n.push(l), (t = r.apply(null, n));
+                        var l = [];
+                        null != e.fragment && l.push(i);
+                        var o = e.args ? E(e.args, r) : void 0;
+                        l.push(o), l.push(s), (n = t.apply(null, l));
                     } catch (e) {
-                        e === Y ? (t = void 0) : (a = e);
+                        (n = null), e !== C && (a = e);
                     }
-                    return [t, a];
+                    return [n, a];
                 }
-                function X(e) {
-                    return "string" == typeof e ? e : "object" == typeof e && null != e && "string" == typeof e.id ? e.id : void x(!1);
+                function A(e, r, i) {
+                    return "string" == typeof e ? e : "object" == typeof e && null != e && "string" == typeof e.id ? e.id : void P(!1);
                 }
-                e.exports = { read: z };
+                e.exports = { read: I };
             },
         },
     ]),
     (window.__SCRIPTS_LOADED__.vendor = !0));
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/vendor-744bed60.4b2752ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/vendor-744bed60.79286f6a.js.map

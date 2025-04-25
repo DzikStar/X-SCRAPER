@@ -4848,6 +4848,7 @@
                 a("ie45edda", "Overzicht livestreams"),
                 a("e30fc268", "Live Viewers"),
                 a("bd37f68e", "Media-activiteit"),
+                a("fe074210", "min."),
                 a("jd03a1b8", "Minutes Watched"),
                 a("a20e91e8", "minutes watched"),
                 a("ic2bebee", "Geld verdiend"),
@@ -4908,9 +4909,9 @@
                 a("a7b48b36", "Het percentage voltooide videoweergaven."),
                 a("a2580f2a", "Voltooiingsratio"),
                 a("ff95a9cc", "Video-ID"),
-                a("a97e358e", "Videolink"),
-                a("e10e8b46", "Alleen video's van de afgelopen 100 dagen worden getoond.");
-            a("ba37f6da", "Video-overzicht"),
+                a("a97e358e", "Videolink");
+            a("e10e8b46", "Alleen video's van de afgelopen 100 dagen worden getoond."),
+                a("ba37f6da", "Video-overzicht"),
                 a("f19846b2", "Videominiatuur"),
                 a("ccd6f4a8", "Videotitel"),
                 a("c8410542", "Het aantal keer dat je video is bekeken"),
@@ -5073,7 +5074,6 @@
                 a("fb3e127a", "Tijdelijke nieuwjaarsaanbieding"),
                 a("a5fee980", "Claim 30% korting op jaarabonnementen en tot USD 12.000 gratis advertentietegoed als je je abonneert vóór"),
                 a("c9051cac", "dagen"),
-                a("fe074210", "min."),
                 a("ie035790", "sec."),
                 a("cbd3dfaa", "Probeer de bètaversie"),
                 a("h260121e", "Laat je topfuncties zien aan je doelgroep."),
@@ -13250,4 +13250,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.6ce349da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.79ab7faa.js.map

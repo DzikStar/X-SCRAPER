@@ -3,7 +3,7 @@ window.__SCRIPTS_LOADED__.runtime &&
         ["vendor-2bf3abf4"],
         {
             700378: (e, t, r) => {
-                var i = (0, r(171600).default)(r(900814)),
+                var i = (0, r(183491).default)(r(479035)),
                     s = r(108475).getArgumentValues,
                     n = r(647677);
                 e.exports = {
@@ -60,37 +60,26 @@ window.__SCRIPTS_LOADED__.runtime &&
                 };
             },
             507567: (e, t, r) => {
-                var i = r(171600).default,
-                    s = i(r(900814)),
-                    n = i(r(515538)),
-                    o = i(r(638636)),
-                    a = i(r(236531)),
-                    l = i(r(978365)),
-                    u = i(r(373408)),
-                    c = ["path", "locations"],
-                    h = r(891362),
-                    _ = Symbol("$SELF"),
-                    d = (function (e) {
-                        function t(t) {
-                            var r,
-                                i = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [];
-                            return ((r = e.call(this, t) || this).name = "RelayFieldError"), (r.message = t), (r.errors = i), r;
-                        }
-                        return (0, a.default)(t, e), t;
-                    })((0, l.default)(Error));
-                function p(e, t) {
+                var i = r(183491).default,
+                    s = i(r(479035)),
+                    n = i(r(173771)),
+                    o = i(r(158663)),
+                    a = i(r(434323)),
+                    u = ["path", "locations"],
+                    l = Symbol("$SELF");
+                function c(e, t) {
                     var r,
                         i = (0, o.default)(e);
                     try {
                         for (i.s(); !(r = i.n()).done; ) {
                             var n = r.value,
-                                a = n[0],
-                                l = n[1],
-                                c = t.length;
-                            if ((Array.isArray(l) ? t.push.apply(t, (0, u.default)(l)) : p(l, t), a !== _))
-                                for (var h = t.length, d = c; d < h; d++) {
-                                    var f = t[d];
-                                    null == f.path ? (t[d] = (0, s.default)((0, s.default)({}, f), {}, { path: [a] })) : f.path.unshift(a);
+                                u = n[0],
+                                h = n[1],
+                                _ = t.length;
+                            if ((Array.isArray(h) ? t.push.apply(t, (0, a.default)(h)) : c(h, t), u !== l))
+                                for (var d = t.length, p = _; p < d; p++) {
+                                    var f = t[p];
+                                    null == f.path ? (t[p] = (0, s.default)((0, s.default)({}, f), {}, { path: [u] })) : f.path.unshift(u);
                                 }
                         }
                     } catch (e) {
@@ -100,10 +89,9 @@ window.__SCRIPTS_LOADED__.runtime &&
                     }
                 }
                 e.exports = {
-                    SELF: _,
+                    SELF: l,
                     buildErrorTrie: function (e) {
                         if (null == e) return null;
-                        if (!h.ENABLE_FIELD_ERROR_HANDLING) return null;
                         var t,
                             r = new Map(),
                             i = (0, o.default)(e);
@@ -111,22 +99,22 @@ window.__SCRIPTS_LOADED__.runtime &&
                             for (i.s(); !(t = i.n()).done; ) {
                                 var s = t.value,
                                     a = s.path,
-                                    l = (s.locations, (0, n.default)(s, c));
+                                    c = (s.locations, (0, n.default)(s, u));
                                 if (null != a) {
-                                    var u = a.length;
-                                    if (0 !== u) {
-                                        for (var d = u - 1, p = r, f = 0; f < d; f++) {
-                                            var v = a[f],
-                                                g = p.get(v);
-                                            if (g instanceof Map) p = g;
+                                    var h = a.length;
+                                    if (0 !== h) {
+                                        for (var _ = h - 1, d = r, p = 0; p < _; p++) {
+                                            var f = a[p],
+                                                v = d.get(f);
+                                            if (v instanceof Map) d = v;
                                             else {
-                                                var m = new Map();
-                                                Array.isArray(g) && m.set(_, g), p.set(v, m), (p = m);
+                                                var g = new Map();
+                                                Array.isArray(v) && g.set(l, v), d.set(f, g), (d = g);
                                             }
                                         }
-                                        var b = a[d],
-                                            y = p.get(b);
-                                        y instanceof Map && ((y = (p = y).get(b)), (b = _)), Array.isArray(y) ? y.push(l) : p.set(b, [l]);
+                                        var b = a[_],
+                                            m = d.get(b);
+                                        m instanceof Map && ((m = (d = m).get(b)), (b = l)), Array.isArray(m) ? m.push(c) : d.set(b, [c]);
                                     }
                                 }
                             }
@@ -146,19 +134,18 @@ window.__SCRIPTS_LOADED__.runtime &&
                         if (null == r) return null;
                         if (Array.isArray(r)) return r;
                         var i = [];
-                        return p(r, i), i;
+                        return c(r, i), i;
                     },
-                    RelayFieldError: d,
                 };
             },
             278490: (e, t, r) => {
-                var i = (0, r(171600).default)(r(900814)),
+                var i = (0, r(183491).default)(r(479035)),
                     s = r(113725),
                     n = r(177617),
                     o = n.INTERNAL_ACTOR_IDENTIFIER_DO_NOT_USE,
                     a = n.assertInternalActorIdentifier,
-                    l = r(408122),
-                    u = r(510311),
+                    u = r(408122),
+                    l = r(510311),
                     c = r(349192),
                     h = r(570469),
                     _ = r(892030),
@@ -167,7 +154,7 @@ window.__SCRIPTS_LOADED__.runtime &&
                     f = r(719813),
                     v = r(485520),
                     g = r(887428),
-                    m =
+                    b =
                         (r(647677),
                         (function () {
                             function e(e) {
@@ -177,31 +164,31 @@ window.__SCRIPTS_LOADED__.runtime &&
                                     n,
                                     o,
                                     a,
-                                    l,
+                                    u,
                                     f,
                                     g,
-                                    m,
+                                    b,
                                     y = this;
                                 (this.configName = e.configName), (this._treatMissingFieldsAsNull = !0 === e.treatMissingFieldsAsNull);
-                                var R = e.operationLoader;
-                                (this.__log = null !== (t = e.log) && void 0 !== t ? t : b),
+                                var C = e.operationLoader;
+                                (this.__log = null !== (t = e.log) && void 0 !== t ? t : m),
                                     (this.relayFieldLogger = null !== (r = e.relayFieldLogger) && void 0 !== r ? r : d),
                                     (this._defaultRenderPolicy = null !== (i = e.UNSTABLE_defaultRenderPolicy) && void 0 !== i ? i : "partial"),
-                                    (this._operationLoader = R),
+                                    (this._operationLoader = C),
                                     (this._operationExecutions = new Map()),
-                                    (this._network = u(this, e.network)),
+                                    (this._network = l(this, e.network)),
                                     (this._getDataID = null !== (n = e.getDataID) && void 0 !== n ? n : _),
                                     (this._missingFieldHandlers = null !== (o = e.missingFieldHandlers) && void 0 !== o ? o : []),
                                     (this._publishQueue = new v(e.store, null !== (a = e.handlerProvider) && void 0 !== a ? a : s, this._getDataID, this._missingFieldHandlers)),
-                                    (this._scheduler = null !== (l = e.scheduler) && void 0 !== l ? l : null),
+                                    (this._scheduler = null !== (u = e.scheduler) && void 0 !== u ? u : null),
                                     (this._store = e.store),
                                     (this.options = e.options),
                                     (this._isServer = null !== (f = e.isServer) && void 0 !== f && f),
                                     (this._normalizeResponse = null !== (g = e.normalizeResponse) && void 0 !== g ? g : p),
                                     (this.__setNet = function (e) {
-                                        return (y._network = u(y, e));
+                                        return (y._network = l(y, e));
                                     }),
-                                    (this._operationTracker = null !== (m = e.operationTracker) && void 0 !== m ? m : new c()),
+                                    (this._operationTracker = null !== (b = e.operationTracker) && void 0 !== b ? b : new c()),
                                     (this._shouldProcessClientComponents = e.shouldProcessClientComponents),
                                     h(this);
                             }
@@ -255,7 +242,7 @@ window.__SCRIPTS_LOADED__.runtime &&
                                 (t.applyMutation = function (e) {
                                     var t = this._execute({
                                         createSource: function () {
-                                            return l.create(function (e) {});
+                                            return u.create(function (e) {});
                                         },
                                         isClientPayload: !1,
                                         operation: e.operation,
@@ -279,7 +266,7 @@ window.__SCRIPTS_LOADED__.runtime &&
                                 (t.commitPayload = function (e, t) {
                                     this._execute({
                                         createSource: function () {
-                                            return l.from({ data: t });
+                                            return u.from({ data: t });
                                         },
                                         isClientPayload: !0,
                                         operation: e,
@@ -365,12 +352,12 @@ window.__SCRIPTS_LOADED__.runtime &&
                                         n = e.optimisticResponse,
                                         o = e.optimisticUpdater,
                                         a = e.updater,
-                                        l = e.uploadables;
+                                        u = e.uploadables;
                                     return (
                                         (n || o) && (t = { operation: s, response: n, updater: o }),
                                         this._execute({
                                             createSource: function () {
-                                                return r.getNetwork().execute(s.request.node.params, s.request.variables, (0, i.default)((0, i.default)({}, s.request.cacheConfig), {}, { force: !0 }), l);
+                                                return r.getNetwork().execute(s.request.node.params, s.request.variables, (0, i.default)((0, i.default)({}, s.request.cacheConfig), {}, { force: !0 }), u);
                                             },
                                             isClientPayload: !1,
                                             operation: s,
@@ -402,11 +389,11 @@ window.__SCRIPTS_LOADED__.runtime &&
                                         i = e.isClientPayload,
                                         s = e.operation,
                                         n = e.optimisticConfig,
-                                        u = e.updater,
+                                        l = e.updater,
                                         c = this._publishQueue,
                                         h = this._store;
-                                    return l.create(function (e) {
-                                        var l = f.execute({
+                                    return u.create(function (e) {
+                                        var u = f.execute({
                                             actorIdentifier: o,
                                             getDataID: t._getDataID,
                                             isClientPayload: i,
@@ -427,28 +414,28 @@ window.__SCRIPTS_LOADED__.runtime &&
                                                 return a(e), h;
                                             },
                                             treatMissingFieldsAsNull: t._treatMissingFieldsAsNull,
-                                            updater: u,
+                                            updater: l,
                                             normalizeResponse: t._normalizeResponse,
                                         });
                                         return function () {
-                                            return l.cancel();
+                                            return u.cancel();
                                         };
                                     });
                                 }),
                                 e
                             );
                         })());
-                function b() {}
-                (m.prototype["@@RelayModernEnvironment"] = !0), (e.exports = m);
+                function m() {}
+                (b.prototype["@@RelayModernEnvironment"] = !0), (e.exports = b);
             },
             685324: (e, t, r) => {
-                var i = r(171600).default,
-                    s = i(r(900814)),
-                    n = i(r(226290)),
+                var i = r(183491).default,
+                    s = i(r(479035)),
+                    n = i(r(845621)),
                     o = r(219433),
-                    a = r(927421),
-                    l = r(763131),
-                    u = r(555398),
+                    a = r(927421).handlePotentialSnapshotErrors,
+                    u = r(763131),
+                    l = r(555398),
                     c = r(891362),
                     h = r(767408).createRequestDescriptor,
                     _ = r(464711),
@@ -457,7 +444,7 @@ window.__SCRIPTS_LOADED__.runtime &&
                     f = _.getSelectorsFromObject,
                     v = r(193860),
                     g = r(647677),
-                    m =
+                    b =
                         (r(826590),
                         (function () {
                             function e(e, t, r, i, s) {
@@ -478,7 +465,7 @@ window.__SCRIPTS_LOADED__.runtime &&
                             var t = e.prototype;
                             return (
                                 (t.dispose = function () {
-                                    for (var e in this._resolvers) this._resolvers.hasOwnProperty(e) && R(this._resolvers[e]);
+                                    for (var e in this._resolvers) this._resolvers.hasOwnProperty(e) && C(this._resolvers[e]);
                                 }),
                                 (t.resolve = function () {
                                     if (this._stale) {
@@ -493,8 +480,8 @@ window.__SCRIPTS_LOADED__.runtime &&
                                                     (e || o !== n) && ((e = e || (0, s.default)({}, t))[r] = o);
                                                 } else {
                                                     var a = this._props[r],
-                                                        u = void 0 !== a ? a : null;
-                                                    (!e && l(u, n)) || ((e = e || (0, s.default)({}, t))[r] = u);
+                                                        l = void 0 !== a ? a : null;
+                                                    (!e && u(l, n)) || ((e = e || (0, s.default)({}, t))[r] = l);
                                                 }
                                             }
                                         (this._data = e || t), (this._stale = !1);
@@ -511,7 +498,7 @@ window.__SCRIPTS_LOADED__.runtime &&
                                         if (t.hasOwnProperty(r)) {
                                             var i = t[r],
                                                 s = this._resolvers[r];
-                                            null == i ? (null != s && s.dispose(), (s = null)) : "PluralReaderSelector" === i.kind ? (null == s ? (s = new y(this._context.environment, this._rootIsQueryRenderer, i, null != this._callback, this._onChange)) : (s instanceof y || g(!1), s.setSelector(i))) : null == s ? (s = new b(this._context.environment, this._rootIsQueryRenderer, i, null != this._callback, this._onChange)) : (s instanceof b || g(!1), s.setSelector(i)), (this._props[r] = e[r]), (this._resolvers[r] = s);
+                                            null == i ? (null != s && s.dispose(), (s = null)) : "PluralReaderSelector" === i.kind ? (null == s ? (s = new y(this._context.environment, this._rootIsQueryRenderer, i, null != this._callback, this._onChange)) : (s instanceof y || g(!1), s.setSelector(i))) : null == s ? (s = new m(this._context.environment, this._rootIsQueryRenderer, i, null != this._callback, this._onChange)) : (s instanceof m || g(!1), s.setSelector(i)), (this._props[r] = e[r]), (this._resolvers[r] = s);
                                         }
                                     this._stale = !0;
                                 }),
@@ -526,14 +513,14 @@ window.__SCRIPTS_LOADED__.runtime &&
                                 e
                             );
                         })()),
-                    b = (function () {
+                    m = (function () {
                         function e(e, t, r, i, s) {
                             var o = this;
                             (0, n.default)(this, "_onChange", function (e) {
-                                (o._data = e.data), (o._isMissingData = e.isMissingData), (o._missingRequiredFields = e.missingRequiredFields), (o._errorResponseFields = e.errorResponseFields), (o._relayResolverErrors = e.relayResolverErrors), o._callback();
+                                (o._data = e.data), (o._isMissingData = e.isMissingData), (o._errorResponseFields = e.errorResponseFields), o._callback();
                             });
                             var a = e.lookup(r);
-                            (this._callback = s), (this._data = a.data), (this._isMissingData = a.isMissingData), (this._missingRequiredFields = a.missingRequiredFields), (this._errorResponseFields = a.errorResponseFields), (this._relayResolverErrors = a.relayResolverErrors), (this._environment = e), (this._rootIsQueryRenderer = t), (this._selector = r), !0 === c.ENABLE_CONTAINERS_SUBSCRIBE_ON_COMMIT ? i && (this._subscription = e.subscribe(a, this._onChange)) : (this._subscription = e.subscribe(a, this._onChange));
+                            (this._callback = s), (this._data = a.data), (this._isMissingData = a.isMissingData), (this._errorResponseFields = a.errorResponseFields), (this._environment = e), (this._rootIsQueryRenderer = t), (this._selector = r), !0 === c.ENABLE_CONTAINERS_SUBSCRIBE_ON_COMMIT ? i && (this._subscription = e.subscribe(a, this._onChange)) : (this._subscription = e.subscribe(a, this._onChange));
                         }
                         var t = e.prototype;
                         return (
@@ -541,23 +528,22 @@ window.__SCRIPTS_LOADED__.runtime &&
                                 this._subscription && (this._subscription.dispose(), (this._subscription = null));
                             }),
                             (t.resolve = function () {
-                                var e, t;
                                 if (!0 === this._isMissingData) {
-                                    var r = o(this._environment, this._selector.node, this._selector.owner),
-                                        i = null == r ? void 0 : r.promise;
-                                    if (null != i && !this._rootIsQueryRenderer) {
-                                        var s,
-                                            n = null !== (s = null == r ? void 0 : r.pendingOperations) && void 0 !== s ? s : [];
-                                        throw (this._environment.__log({ name: "suspense.fragment", data: this._data, fragment: this._selector.node, isRelayHooks: !1, isMissingData: this._isMissingData, isPromiseCached: !1, pendingOperations: n }), i);
+                                    var e = o(this._environment, this._selector.node, this._selector.owner),
+                                        t = null == e ? void 0 : e.promise;
+                                    if (null != t && !this._rootIsQueryRenderer) {
+                                        var r,
+                                            i = null !== (r = null == e ? void 0 : e.pendingOperations) && void 0 !== r ? r : [];
+                                        throw (this._environment.__log({ name: "suspense.fragment", data: this._data, fragment: this._selector.node, isRelayHooks: !1, isMissingData: this._isMissingData, isPromiseCached: !1, pendingOperations: i }), t);
                                     }
                                 }
-                                return a(this._environment, this._missingRequiredFields, this._relayResolverErrors, this._errorResponseFields, null !== (e = null === (t = this._selector.node.metadata) || void 0 === t ? void 0 : t.throwOnFieldError) && void 0 !== e && e), this._data;
+                                return a(this._environment, this._errorResponseFields), this._data;
                             }),
                             (t.setSelector = function (e) {
                                 if (null == this._subscription || !d(e, this._selector)) {
                                     this.dispose();
                                     var t = this._environment.lookup(e);
-                                    (this._data = u(this._data, t.data)), (this._isMissingData = t.isMissingData), (this._missingRequiredFields = t.missingRequiredFields), (this._errorResponseFields = t.errorResponseFields), (this._relayResolverErrors = t.relayResolverErrors), (this._selector = e), (this._subscription = this._environment.subscribe(t, this._onChange));
+                                    (this._data = l(this._data, t.data)), (this._isMissingData = t.isMissingData), (this._errorResponseFields = t.errorResponseFields), (this._selector = e), (this._subscription = this._environment.subscribe(t, this._onChange));
                                 }
                             }),
                             (t.setVariables = function (e, t) {
@@ -588,7 +574,7 @@ window.__SCRIPTS_LOADED__.runtime &&
                         var t = e.prototype;
                         return (
                             (t.dispose = function () {
-                                this._resolvers.forEach(R);
+                                this._resolvers.forEach(C);
                             }),
                             (t.resolve = function () {
                                 if (this._stale) {
@@ -605,7 +591,7 @@ window.__SCRIPTS_LOADED__.runtime &&
                                 for (var t = e.selectors; this._resolvers.length > t.length; ) {
                                     this._resolvers.pop().dispose();
                                 }
-                                for (var r = 0; r < t.length; r++) r < this._resolvers.length ? this._resolvers[r].setSelector(t[r]) : (this._resolvers[r] = new b(this._environment, this._rootIsQueryRenderer, t[r], this._subscribeOnConstruction, this._onChange));
+                                for (var r = 0; r < t.length; r++) r < this._resolvers.length ? this._resolvers[r].setSelector(t[r]) : (this._resolvers[r] = new m(this._environment, this._rootIsQueryRenderer, t[r], this._subscribeOnConstruction, this._onChange));
                                 this._stale = !0;
                             }),
                             (t.setVariables = function (e, t) {
@@ -617,34 +603,38 @@ window.__SCRIPTS_LOADED__.runtime &&
                             e
                         );
                     })();
-                function R(e) {
+                function C(e) {
                     e && e.dispose();
                 }
-                e.exports = m;
+                e.exports = b;
             },
             767408: (e, t, r) => {
                 r(427225);
                 var i = r(956926),
-                    s = r(700378).getOperationVariables,
-                    n = r(464711),
-                    o = n.createNormalizationSelector,
-                    a = n.createReaderSelector,
-                    l = r(108475).ROOT_ID;
-                function u(e, t, r) {
+                    s = r(891362),
+                    n = r(795178).hasCycle,
+                    o = r(700378).getOperationVariables,
+                    a = r(464711),
+                    u = a.createNormalizationSelector,
+                    l = a.createReaderSelector,
+                    c = r(108475).ROOT_ID,
+                    h = r(647677);
+                function _(e, t, r) {
                     return { identifier: i(e.params, t), node: e, variables: t, cacheConfig: r };
                 }
                 e.exports = {
                     createOperationDescriptor: function (e, t, r) {
-                        var i = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : l,
-                            n = e.operation,
-                            c = s(n, e.params.providedVariables, t),
-                            h = u(e, c, r);
-                        return { fragment: a(e.fragment, i, c, h), request: h, root: o(n, i, c) };
+                        var i = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : c,
+                            a = e.operation,
+                            d = o(a, e.params.providedVariables, t);
+                        s.ENABLE_CYLE_DETECTION_IN_VARIABLES && n(d) && h(!1);
+                        var p = _(e, d, r);
+                        return { fragment: l(e.fragment, i, d, p), request: p, root: u(a, i, d) };
                     },
-                    createRequestDescriptor: u,
+                    createRequestDescriptor: _,
                 };
             },
         },
     ]),
     (window.__SCRIPTS_LOADED__.vendor = !0));
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/vendor-2bf3abf4.c03b35aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/vendor-2bf3abf4.f8393bda.js.map

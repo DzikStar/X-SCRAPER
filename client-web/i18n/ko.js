@@ -4851,6 +4851,7 @@
                 n("ie45edda", "라이브스트림 개요"),
                 n("e30fc268", "Live Viewers"),
                 n("bd37f68e", "미디어 활동"),
+                n("fe074210", "분"),
                 n("jd03a1b8", "Minutes Watched"),
                 n("a20e91e8", "minutes watched"),
                 n("ic2bebee", "수익 창출"),
@@ -4911,9 +4912,9 @@
                 n("a7b48b36", "시청이 완료된 동영상의 비율입니다."),
                 n("a2580f2a", "완료율"),
                 n("ff95a9cc", "동영상 ID"),
-                n("a97e358e", "동영상 링크"),
-                n("e10e8b46", "최근 100일 동안의 동영상만 표시됩니다.");
-            n("ba37f6da", "동영상 개요"),
+                n("a97e358e", "동영상 링크");
+            n("e10e8b46", "최근 100일 동안의 동영상만 표시됩니다."),
+                n("ba37f6da", "동영상 개요"),
                 n("f19846b2", "동영상 미리보기 이미지"),
                 n("ccd6f4a8", "동영상 제목"),
                 n("c8410542", "동영상을 시청한 횟수입니다."),
@@ -5076,7 +5077,6 @@
                 n("fb3e127a", "기간 한정 신년 할인"),
                 n("a5fee980", "연간 구독료 30% 할인 및 최대 $12,000 상당의 무료 광고 크레딧을 받으세요. 다음 날짜까지 구독할 경우 제공:"),
                 n("c9051cac", "일"),
-                n("fe074210", "분"),
                 n("ie035790", "초"),
                 n("cbd3dfaa", "베타 버전을 사용해 보세요"),
                 n("h260121e", "오디언스에게 인기 직무를 소개하세요."),
@@ -13255,4 +13255,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ko.175985da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ko.cd68acda.js.map

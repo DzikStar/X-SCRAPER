@@ -4847,6 +4847,7 @@
                 n("ie45edda", "Canlı yayına genel bakış"),
                 n("e30fc268", "Live Viewers"),
                 n("bd37f68e", "Medya etkinliği"),
+                n("fe074210", "dk"),
                 n("jd03a1b8", "Minutes Watched"),
                 n("a20e91e8", "minutes watched"),
                 n("ic2bebee", "Para kazanma"),
@@ -4907,9 +4908,9 @@
                 n("a7b48b36", "Tamamlanan video görüntülemelerinin oranı."),
                 n("a2580f2a", "Tamamlanma Oranı"),
                 n("ff95a9cc", "Video kimliği"),
-                n("a97e358e", "Video Bağlantısı"),
-                n("e10e8b46", "Yalnızca son 100 günde yayınlanan videolar gösteriliyor.");
-            n("ba37f6da", "Videoya genel bakış"),
+                n("a97e358e", "Video Bağlantısı");
+            n("e10e8b46", "Yalnızca son 100 günde yayınlanan videolar gösteriliyor."),
+                n("ba37f6da", "Videoya genel bakış"),
                 n("f19846b2", "Video küçük resmi"),
                 n("ccd6f4a8", "Video başlığı"),
                 n("c8410542", "Videonun görüntülenme sayısı."),
@@ -5072,7 +5073,6 @@
                 n("fb3e127a", "Sınırlı süreyle geçerli Yeni Yıl Teklifi"),
                 n("a5fee980", "Şu tarihten önce abone olarak yıllık planlarda %30 indirimden ve 12.000 $'a varan değerde ücretsiz reklam kredisinden yararlan"),
                 n("c9051cac", "gün"),
-                n("fe074210", "dk"),
                 n("ie035790", "sn"),
                 n("cbd3dfaa", "Betayı dene"),
                 n("h260121e", "Öne çıkan rollerini hedef kitlene göster."),
@@ -13245,4 +13245,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/tr.3b51685a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/tr.22c059ba.js.map

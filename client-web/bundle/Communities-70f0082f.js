@@ -1269,7 +1269,7 @@
                                                 plural: !1,
                                                 selections: [
                                                     { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
-                                                    { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }, action: "THROW", path: "creator_results.result.legacy.verified" },
+                                                    { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }, action: "THROW" },
                                                 ],
                                                 storageKey: null,
                                             },
@@ -1334,4 +1334,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Communities-70f0082f.92544d0a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Communities-70f0082f.713839aa.js.map

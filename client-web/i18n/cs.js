@@ -4857,6 +4857,7 @@
                 a("ie45edda", "Přehled živého vysílání"),
                 a("e30fc268", "Live Viewers"),
                 a("bd37f68e", "Aktivita média"),
+                a("fe074210", "minutami"),
                 a("jd03a1b8", "Minutes Watched"),
                 a("a20e91e8", "minutes watched"),
                 a("ic2bebee", "Monetizováno"),
@@ -4917,9 +4918,9 @@
                 a("a7b48b36", "Procento zobrazení videí, která byla dokončena."),
                 a("a2580f2a", "Procentuální podíl dokončení"),
                 a("ff95a9cc", "ID videa"),
-                a("a97e358e", "Odkaz na video"),
-                a("e10e8b46", "Zobrazují se pouze videa za posledních 100 dní.");
-            a("ba37f6da", "Souhrn videa"),
+                a("a97e358e", "Odkaz na video");
+            a("e10e8b46", "Zobrazují se pouze videa za posledních 100 dní."),
+                a("ba37f6da", "Souhrn videa"),
                 a("f19846b2", "Miniatura videa"),
                 a("ccd6f4a8", "Název videa"),
                 a("c8410542", "Počet zobrazení vašeho videa."),
@@ -5082,7 +5083,6 @@
                 a("fb3e127a", "Časově omezená novoroční nabídka"),
                 a("a5fee980", "Získejte 30% slevu na roční plány a až 12 000 USD v kreditech na reklamu zdarma, když se přihlásíte k odběru před"),
                 a("c9051cac", "dny"),
-                a("fe074210", "minutami"),
                 a("ie035790", "sekundami"),
                 a("cbd3dfaa", "Vyzkoušejte beta verzi"),
                 a("h260121e", "Předveďte své hlavní role publiku."),
@@ -13248,4 +13248,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/cs.2b8353ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/cs.73eeceaa.js.map

@@ -4847,6 +4847,7 @@
                 f("ie45edda", "ライブストリームの概要"),
                 f("e30fc268", "Live Viewers"),
                 f("bd37f68e", "メディアアクティビティ"),
+                f("fe074210", "分"),
                 f("jd03a1b8", "Minutes Watched"),
                 f("a20e91e8", "minutes watched"),
                 f("ic2bebee", "収益化"),
@@ -4907,9 +4908,9 @@
                 f("a7b48b36", "動画再生が完了した割合です。"),
                 f("a2580f2a", "完了率"),
                 f("ff95a9cc", "動画ID"),
-                f("a97e358e", "動画のリンク"),
-                f("e10e8b46", "過去100日間の動画のみ表示されています。");
-            f("ba37f6da", "動画の概要"),
+                f("a97e358e", "動画のリンク");
+            f("e10e8b46", "過去100日間の動画のみ表示されています。"),
+                f("ba37f6da", "動画の概要"),
                 f("f19846b2", "動画のサムネイル"),
                 f("ccd6f4a8", "動画のタイトル"),
                 f("c8410542", "動画が再生された回数です。"),
@@ -5072,7 +5073,6 @@
                 f("fb3e127a", "期間限定の新年プロモーション"),
                 f("a5fee980", "次の期限までにサブスクライブすると、1年プランが30%オフになり、最大12,000ドルの無料広告クレジットを獲得できます:"),
                 f("c9051cac", "日"),
-                f("fe074210", "分"),
                 f("ie035790", "秒"),
                 f("cbd3dfaa", "ベータ版を試す"),
                 f("h260121e", "特に注目を集めたい職務をオーディエンスに紹介しましょう。"),
@@ -13242,4 +13242,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ja.8f5a8e8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ja.3be9eeea.js.map

@@ -199,8 +199,8 @@
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, T.zr)("ADVANCED_SEARCH"), fetchAvailableLanguagesIfNeeded: D.yt }))
                     .withAnalytics({ page: "search_advanced" });
             a(136728), a(571372);
-            const x = Object.freeze({ AllOfTheseWords: "allOfTheseWords", ThisExactPhrase: "thisExactPhrase", AnyOfTheseWords: "anyOfTheseWords", NoneOfTheseWords: "noneOfTheseWords", Language: "language", TheseHashtags: "theseHashtags", FromTheseAccounts: "fromTheseAccounts", ToTheseAccounts: "toTheseAccounts", MentioningTheseAccounts: "mentioningTheseAccounts", FromThisDate: "fromThisDate", ToThisDate: "toThisDate", MinReplies: "minReplies", MinLikes: "minLikes", MinRetweets: "minRetweets", ReplyFilter: "replyFilter", LinkFilter: "linkFilter" }),
-                S = "any";
+            const S = Object.freeze({ AllOfTheseWords: "allOfTheseWords", ThisExactPhrase: "thisExactPhrase", AnyOfTheseWords: "anyOfTheseWords", NoneOfTheseWords: "noneOfTheseWords", Language: "language", TheseHashtags: "theseHashtags", FromTheseAccounts: "fromTheseAccounts", ToTheseAccounts: "toTheseAccounts", MentioningTheseAccounts: "mentioningTheseAccounts", FromThisDate: "fromThisDate", ToThisDate: "toThisDate", MinReplies: "minReplies", MinLikes: "minLikes", MinRetweets: "minRetweets", ReplyFilter: "replyFilter", LinkFilter: "linkFilter" }),
+                x = "any";
             function I(e) {
                 try {
                     return (function (e) {
@@ -315,22 +315,22 @@
                                 });
                             });
                         const y = {};
-                        p && (y[x.Language] = p);
-                        u && (y[x.FromThisDate] = u);
-                        m && (y[x.ToThisDate] = m);
-                        g && (y[x.LinkFilter] = g);
-                        b && (y[x.ReplyFilter] = b);
-                        c && (y[x.MinReplies] = `${c}`);
-                        d && (y[x.MinLikes] = `${d}`);
-                        h && (y[x.MinRetweets] = `${h}`);
-                        a.length > 0 && (y[x.NoneOfTheseWords] = a.join(" "));
-                        t.length > 0 && (y[x.AllOfTheseWords] = t.join(" "));
-                        r && (y[x.ThisExactPhrase] = r);
-                        n.length > 0 && (y[x.FromTheseAccounts] = n.join(" "));
-                        i.length > 0 && (y[x.ToTheseAccounts] = i.join(" "));
-                        l.length > 0 && (y[x.MentioningTheseAccounts] = l.join(" "));
-                        o.length > 0 && (y[x.AnyOfTheseWords] = o.join(" "));
-                        s.length > 0 && (y[x.TheseHashtags] = s.join(" "));
+                        p && (y[S.Language] = p);
+                        u && (y[S.FromThisDate] = u);
+                        m && (y[S.ToThisDate] = m);
+                        g && (y[S.LinkFilter] = g);
+                        b && (y[S.ReplyFilter] = b);
+                        c && (y[S.MinReplies] = `${c}`);
+                        d && (y[S.MinLikes] = `${d}`);
+                        h && (y[S.MinRetweets] = `${h}`);
+                        a.length > 0 && (y[S.NoneOfTheseWords] = a.join(" "));
+                        t.length > 0 && (y[S.AllOfTheseWords] = t.join(" "));
+                        r && (y[S.ThisExactPhrase] = r);
+                        n.length > 0 && (y[S.FromTheseAccounts] = n.join(" "));
+                        i.length > 0 && (y[S.ToTheseAccounts] = i.join(" "));
+                        l.length > 0 && (y[S.MentioningTheseAccounts] = l.join(" "));
+                        o.length > 0 && (y[S.AnyOfTheseWords] = o.join(" "));
+                        s.length > 0 && (y[S.TheseHashtags] = s.join(" "));
                         return y;
                     })(e);
                 } catch (e) {
@@ -339,25 +339,25 @@
             }
             const R = {
                     wordsFields: [
-                        { label: f().b6215680, name: x.AllOfTheseWords, description: f().cceffa5e },
-                        { label: f().f1c5faee, name: x.ThisExactPhrase, description: f().ad10780e },
-                        { label: f().a555a3f4, name: x.AnyOfTheseWords, description: f().ee8a2b60 },
-                        { label: f().f51fe348, name: x.NoneOfTheseWords, description: f().hb657ad4 },
-                        { label: f().d10da5da, name: x.TheseHashtags, description: f().f0b52b50 },
+                        { label: f().b6215680, name: S.AllOfTheseWords, description: f().cceffa5e },
+                        { label: f().f1c5faee, name: S.ThisExactPhrase, description: f().ad10780e },
+                        { label: f().a555a3f4, name: S.AnyOfTheseWords, description: f().ee8a2b60 },
+                        { label: f().f51fe348, name: S.NoneOfTheseWords, description: f().hb657ad4 },
+                        { label: f().d10da5da, name: S.TheseHashtags, description: f().f0b52b50 },
                     ],
                     peopleFields: [
-                        { label: f().e292598a, name: x.FromTheseAccounts, description: f().hef790d8 },
-                        { label: f().g2c27394, name: x.ToTheseAccounts, description: f().d158d9d0 },
-                        { label: f().a10e3230, name: x.MentioningTheseAccounts, description: f().daaf2c72 },
+                        { label: f().e292598a, name: S.FromTheseAccounts, description: f().hef790d8 },
+                        { label: f().g2c27394, name: S.ToTheseAccounts, description: f().d158d9d0 },
+                        { label: f().a10e3230, name: S.MentioningTheseAccounts, description: f().daaf2c72 },
                     ],
                     engagementFields: [
-                        { label: f().b18366ba, name: x.MinReplies, description: f().f481ba1c },
-                        { label: f().ib3ddbd4, name: x.MinLikes, description: f().ef994dac },
-                        { label: f().a504ca74, name: x.MinRetweets, description: f().jd9bd944 },
+                        { label: f().b18366ba, name: S.MinReplies, description: f().f481ba1c },
+                        { label: f().ib3ddbd4, name: S.MinLikes, description: f().ef994dac },
+                        { label: f().a504ca74, name: S.MinRetweets, description: f().jd9bd944 },
                     ],
                 },
-                L = (e) => e.filter((e) => "" !== e),
-                F = (e) => e.replace(/#+/g, ""),
+                F = (e) => e.filter((e) => "" !== e),
+                L = (e) => e.replace(/#+/g, ""),
                 B = (e) => e.replace(/@+/g, ""),
                 A = (e) => `(${e})`,
                 P = f().eb63de70,
@@ -401,7 +401,7 @@
                             const e = this._getFormattedLanguageList(this.props.languageList);
                             return e.length ? r.createElement(i.ZP, { label: z, onChange: this._handleLanguageChange, options: e, style: te.languageSelector, value: this.state.language }) : null;
                         }),
-                        (this._getFormattedLanguageList = (0, y.Z)((e) => [{ label: G, value: S }, ...e.map((e) => ({ label: e.name, value: e.code }))])),
+                        (this._getFormattedLanguageList = (0, y.Z)((e) => [{ label: G, value: x }, ...e.map((e) => ({ label: e.name, value: e.code }))])),
                         (this._handleOnKeyDown = (e) => {
                             const { key: t } = e;
                             t === C.NW && (e.preventDefault(), this._executeSearch());
@@ -422,48 +422,48 @@
                                             const s = e[o];
                                             if (s)
                                                 switch (o) {
-                                                    case x.ThisExactPhrase:
+                                                    case S.ThisExactPhrase:
                                                         t.push(`"${s}"`);
                                                         break;
-                                                    case x.AnyOfTheseWords:
-                                                        (a = s.split(" ")), (r = L(a)), t.push(A(r.join(" OR ")));
+                                                    case S.AnyOfTheseWords:
+                                                        (a = s.split(" ")), (r = F(a)), t.push(A(r.join(" OR ")));
                                                         break;
-                                                    case x.NoneOfTheseWords:
-                                                        (a = `-${s}`.split(" ")), (r = L(a)), t.push(r.join(" -"));
+                                                    case S.NoneOfTheseWords:
+                                                        (a = `-${s}`.split(" ")), (r = F(a)), t.push(r.join(" -"));
                                                         break;
-                                                    case x.TheseHashtags:
-                                                        (a = `#${F(s)}`.split(" ")), (r = L(a)), t.push(A(r.join(" OR #")));
+                                                    case S.TheseHashtags:
+                                                        (a = `#${L(s)}`.split(" ")), (r = F(a)), t.push(A(r.join(" OR #")));
                                                         break;
-                                                    case x.FromTheseAccounts:
-                                                        (a = `from:${B(s)}`.split(" ")), (r = L(a)), t.push(A(r.join(" OR from:")));
+                                                    case S.FromTheseAccounts:
+                                                        (a = `from:${B(s)}`.split(" ")), (r = F(a)), t.push(A(r.join(" OR from:")));
                                                         break;
-                                                    case x.ToTheseAccounts:
-                                                        (a = `to:${B(s)}`.split(" ")), (r = L(a)), t.push(A(r.join(" OR to:")));
+                                                    case S.ToTheseAccounts:
+                                                        (a = `to:${B(s)}`.split(" ")), (r = F(a)), t.push(A(r.join(" OR to:")));
                                                         break;
-                                                    case x.MentioningTheseAccounts:
-                                                        (a = `@${B(s)}`.split(" ")), (r = L(a)), t.push(A(r.join(" OR @")));
+                                                    case S.MentioningTheseAccounts:
+                                                        (a = `@${B(s)}`.split(" ")), (r = F(a)), t.push(A(r.join(" OR @")));
                                                         break;
-                                                    case x.FromThisDate:
+                                                    case S.FromThisDate:
                                                         t.push(`since:${s}`);
                                                         break;
-                                                    case x.ToThisDate:
+                                                    case S.ToThisDate:
                                                         t.push(`until:${s}`);
                                                         break;
-                                                    case x.Language:
-                                                        s !== S && t.push(`lang:${s}`);
+                                                    case S.Language:
+                                                        s !== x && t.push(`lang:${s}`);
                                                         break;
-                                                    case x.MinReplies:
+                                                    case S.MinReplies:
                                                         t.push(`min_replies:${s}`);
                                                         break;
-                                                    case x.MinLikes:
+                                                    case S.MinLikes:
                                                         t.push(`min_faves:${s}`);
                                                         break;
-                                                    case x.MinRetweets:
+                                                    case S.MinRetweets:
                                                         t.push(`min_retweets:${s}`);
                                                         break;
-                                                    case x.AllOfTheseWords:
-                                                    case x.LinkFilter:
-                                                    case x.ReplyFilter:
+                                                    case S.AllOfTheseWords:
+                                                    case S.LinkFilter:
+                                                    case S.ReplyFilter:
                                                         t.push(s);
                                                 }
                                         }),
@@ -483,10 +483,10 @@
                                 }, {}),
                                 n = l.ZP.getFormattedDateValue(o.day, o.month, o.year),
                                 i = l.ZP.getFormattedDateValue(e.day, e.month, e.year);
-                            return { ...s, language: t, [x.ToThisDate]: n, [x.FromThisDate]: i, [x.LinkFilter]: a, [x.ReplyFilter]: r };
+                            return { ...s, language: t, [S.ToThisDate]: n, [S.FromThisDate]: i, [S.LinkFilter]: a, [S.ReplyFilter]: r };
                         });
                     const a = this.props.location.query.q;
-                    (this._initialState = I("string" == typeof a ? a : "")), (this._formTextInputRefs = {}), (this.state = { language: this._initialState[x.Language] ?? S, linkFilter: this._initialState[x.LinkFilter] ?? "", replyFilter: this._initialState[x.ReplyFilter] ?? "", toDate: l.ZP.getDayMonthYear(this._initialState[x.ToThisDate]) ?? Q, fromDate: l.ZP.getDayMonthYear(this._initialState[x.FromThisDate]) ?? Q });
+                    (this._initialState = I("string" == typeof a ? a : "")), (this._formTextInputRefs = {}), (this.state = { language: this._initialState[S.Language] ?? x, linkFilter: this._initialState[S.LinkFilter] ?? "", replyFilter: this._initialState[S.ReplyFilter] ?? "", toDate: l.ZP.getDayMonthYear(this._initialState[S.ToThisDate]) ?? Q, fromDate: l.ZP.getDayMonthYear(this._initialState[S.FromThisDate]) ?? Q });
                 }
                 componentDidMount() {
                     const { createLocalApiErrorHandler: e, fetchAvailableLanguagesIfNeeded: t } = this.props;
@@ -627,7 +627,7 @@
                 k = g.default.create((e) => ({ selectorsContainer: { flexDirection: "row", marginVertical: e.spaces.space16 }, monthSelector: { flexGrow: 2, marginEnd: e.spaces.space12 }, daySelector: { flexGrow: 1, marginEnd: e.spaces.space12 }, yearSelector: { flexGrow: 1 }, dateInputRoot: { paddingHorizontal: 0 }, nativeDateInput: { ...g.default.absoluteFillObject, cursor: "inherit", height: "1px", margin: 0, opacity: 0, padding: 0, width: "1px" }, calendarLabel: { justifyContent: "center", marginStart: e.spaces.space12 } }));
         },
         586855: (e, t, a) => {
-            a.d(t, { DD: () => w, ZP: () => S, Zj: () => D, dX: () => v, ww: () => x });
+            a.d(t, { DD: () => w, ZP: () => x, Zj: () => D, dX: () => v, ww: () => S });
             var r = a(674132),
                 o = a.n(r),
                 s = a(822240);
@@ -671,14 +671,14 @@
                             return T;
                     }
                 },
-                x = (e, t, a) => {
+                S = (e, t, a) => {
                     if ("number" == typeof e && "number" == typeof t && "number" == typeof a) {
                         return `${a}-${t < 10 ? `0${t}` : `${t}`}-${e < 10 ? `0${e}` : `${e}`}`;
                     }
                     return "";
                 };
-            const S = {
-                getFormattedDateValue: x,
+            const x = {
+                getFormattedDateValue: S,
                 getDayMonthYear: function (e) {
                     if (null == e) return { year: void 0, month: void 0, day: void 0 };
                     const t = e.split("-").map((e) => {
@@ -921,19 +921,6 @@
             a.d(t, { Z: () => r });
             const r = a(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
         },
-        487552: (e, t, a) => {
-            a.r(t), a.d(t, { default: () => l });
-            var r = a(202784),
-                o = a(890601),
-                s = a(783427),
-                n = a(347101);
-            const i = (e = {}) => {
-                const { direction: t } = (0, s.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M3.543 8.96l1.414-1.42L12 14.59l7.043-7.05 1.414 1.42L12 17.41 3.543 8.96z" })) }, { writingDirection: t });
-            };
-            i.metadata = { width: 24, height: 24 };
-            const l = i;
-        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AdvancedSearch.36c8f6fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AdvancedSearch.9d0be87a.js.map

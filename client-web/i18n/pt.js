@@ -3651,8 +3651,8 @@
                 s("dc62d3c6", "Não."),
                 s("a67dbd0a", "Conta de paródia, de comentários e de fãs"),
                 s("a3db727e", "Gerencie sua conta de paródias, comentários e fãs"),
-                s("eacf1990", "Adicione sua data de nascimento ao seu perfil."),
-                s("a3bf1262", "Altere sua data de nascimento no seu perfil."),
+                s("eacf1990", "Adicione sua data de nascimento ao perfil."),
+                s("a3bf1262", "Altere sua data de nascimento no perfil."),
                 s("h530db16", "Posts protegidos"),
                 s("d6d80990", "Essas informações se aplicam ao navegador ou ao dispositivo enquanto você está desconectado. Elas podem ser diferentes quando você está conectado."),
                 s("i0d81ddb", "configurações de dados e personalização"),
@@ -4848,6 +4848,7 @@
                 s("ie45edda", "Visão geral da transmissão ao vivo"),
                 s("e30fc268", "Live Viewers"),
                 s("bd37f68e", "Atividade de mídia"),
+                s("fe074210", "min"),
                 s("jd03a1b8", "Minutes Watched"),
                 s("a20e91e8", "minutes watched"),
                 s("ic2bebee", "Monetizado"),
@@ -4863,7 +4864,7 @@
                 s("b2438638", "do total"),
                 s("ic0399e0", "Visualizações orgânicas"),
                 s("ja5c444a", "Período de pagamento"),
-                s("f04e025e", "Pico de ouvintes simultâneos"),
+                s("f04e025e", "Máximo de ouvintes simultâneos"),
                 s("d6d10662", "Peak Viewers: "),
                 s("d147bea2", "Volte mais tarde"),
                 s("f0336d68", "Estatísticas do post"),
@@ -4908,9 +4909,9 @@
                 s("a7b48b36", "A porcentagem de visualizações de vídeo que foram concluídas."),
                 s("a2580f2a", "Taxa de conclusões"),
                 s("ff95a9cc", "ID do vídeo"),
-                s("a97e358e", "Link do vídeo"),
-                s("e10e8b46", "Exibindo apenas os vídeos dos últimos 100 dias.");
-            s("ba37f6da", "Visão geral do vídeo"),
+                s("a97e358e", "Link do vídeo");
+            s("e10e8b46", "Exibindo apenas os vídeos dos últimos 100 dias."),
+                s("ba37f6da", "Visão geral do vídeo"),
                 s("f19846b2", "Miniatura do vídeo"),
                 s("ccd6f4a8", "Título do vídeo"),
                 s("c8410542", "O número de vezes que seu vídeo foi visualizado."),
@@ -5073,7 +5074,6 @@
                 s("fb3e127a", "Oferta de Ano Novo por tempo limitado"),
                 s("a5fee980", "Ganhe 30% de desconto em planos anuais e até $ 12.000 em crédito de anúncio grátis ao assinar até"),
                 s("c9051cac", "dias"),
-                s("fe074210", "min"),
                 s("ie035790", "s"),
                 s("cbd3dfaa", "Experimente o beta"),
                 s("h260121e", "Exiba suas principais funções para a sua audiência."),
@@ -7260,7 +7260,7 @@
                 s("eba1b198", "Acontecendo agora"),
                 s("fa811c30", "Já tem uma conta?"),
                 s("b4bdfb3e", "Baixar o aplicativo Grok"),
-                s("f991cfaa", "Quero o Grok"),
+                s("f991cfaa", "Baixar o Grok"),
                 s("a4298bc0", "X. O que está acontecendo"),
                 s("j3f49ff6", "De últimas notícias a entretenimento, esportes e política, receba as histórias completas com comentários ao vivo."),
                 s("d65555c2", "OU"),
@@ -10759,7 +10759,7 @@
                         {
                             key: "a200fc71",
                             get: function () {
-                                return ["Não está certo? Você pode adicionar a data de nascimento ao ", " sem compartilhá-la publicamente."];
+                                return ["Não está correto? Você pode adicionar a data de nascimento ao ", " sem compartilhá-la publicamente."];
                             },
                         },
                         {
@@ -13237,4 +13237,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pt.806e33aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pt.b532f80a.js.map

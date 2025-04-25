@@ -21,11 +21,11 @@
                         selections: [
                             { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
                             { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "follow_request_sent", storageKey: null }, action: "THROW", path: "legacy.follow_request_sent" },
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }, action: "THROW", path: "legacy.protected" },
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "following", storageKey: null }, action: "THROW", path: "legacy.following" },
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null }, action: "THROW", path: "legacy.followed_by" },
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "blocking", storageKey: null }, action: "THROW", path: "legacy.blocking" },
+                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "follow_request_sent", storageKey: null }, action: "THROW" },
+                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }, action: "THROW" },
+                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "following", storageKey: null }, action: "THROW" },
+                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null }, action: "THROW" },
+                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "blocking", storageKey: null }, action: "THROW" },
                         ],
                         storageKey: null,
                     },
@@ -749,4 +749,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Communities-1c2d1ef4.aa4c2e4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Communities-1c2d1ef4.540d895a.js.map

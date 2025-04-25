@@ -295,19 +295,16 @@
                                                             storageKey: null,
                                                         },
                                                         action: "THROW",
-                                                        path: "viewer.user_results.result",
                                                     },
                                                 ],
                                                 storageKey: null,
                                             },
                                             action: "THROW",
-                                            path: "viewer.user_results",
                                         },
                                     ],
                                     storageKey: 'viewer_v2(s:"84b0")',
                                 },
                                 action: "THROW",
-                                path: "viewer",
                             },
                         ],
                         type: "Query",
@@ -560,7 +557,6 @@
                             storageKey: null,
                         },
                         action: "THROW",
-                        path: "result",
                     },
                 ],
                 type: "UserResults",
@@ -624,8 +620,8 @@
                 A,
                 T,
                 V,
-                h,
-                R = {
+                R,
+                h = {
                     fragment: {
                         argumentDefinitions: [(n = { defaultValue: null, kind: "LocalArgument", name: "count" }), (i = { defaultValue: null, kind: "LocalArgument", name: "cursor" })],
                         kind: "Fragment",
@@ -704,19 +700,16 @@
                                                             storageKey: null,
                                                         },
                                                         action: "THROW",
-                                                        path: "viewer.user_results.result",
                                                     },
                                                 ],
                                                 storageKey: null,
                                             },
                                             action: "THROW",
-                                            path: "viewer.user_results",
                                         },
                                     ],
                                     storageKey: 'viewer_v2(s:"84b0")',
                                 },
                                 action: "THROW",
-                                path: "viewer",
                             },
                         ],
                         type: "Query",
@@ -837,8 +830,8 @@
                                                                 storageKey: null,
                                                             },
                                                             { alias: null, args: _, filters: ["order_by"], handle: "slice", key: "AffiliatesScreenAffiliatesQuery_business_team_affiliates", kind: "LinkedHandle", name: "business_team_affiliates", handleArgs: [{ kind: "Literal", name: "itemsFieldName", value: "items_results" }] },
-                                                            { alias: null, args: (h = [k, p, g]), concreteType: "VerifiedOrganizationInvitationSlice", kind: "LinkedField", name: "verified_organization_invitations", plural: !1, selections: [{ alias: null, args: null, concreteType: "VerifiedOrganizationInvitation", kind: "LinkedField", name: "items", plural: !0, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "invitee_id_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [s, { kind: "InlineFragment", selections: [t, o, { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [f, F, K, b, S, v], storageKey: null }, y, L, A, V], type: "User", abstractKey: null }], storageKey: null }, o], storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "status", storageKey: null }, m], storageKey: null }, m, c], storageKey: null },
-                                                            { alias: null, args: h, filters: ["invitation_type"], handle: "slice", key: "AffiliatesScreenAffiliatesQuery_verified_organization_invitations", kind: "LinkedHandle", name: "verified_organization_invitations" },
+                                                            { alias: null, args: (R = [k, p, g]), concreteType: "VerifiedOrganizationInvitationSlice", kind: "LinkedField", name: "verified_organization_invitations", plural: !1, selections: [{ alias: null, args: null, concreteType: "VerifiedOrganizationInvitation", kind: "LinkedField", name: "items", plural: !0, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "invitee_id_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [s, { kind: "InlineFragment", selections: [t, o, { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [f, F, K, b, S, v], storageKey: null }, y, L, A, V], type: "User", abstractKey: null }], storageKey: null }, o], storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "status", storageKey: null }, m], storageKey: null }, m, c], storageKey: null },
+                                                            { alias: null, args: R, filters: ["invitation_type"], handle: "slice", key: "AffiliatesScreenAffiliatesQuery_verified_organization_invitations", kind: "LinkedHandle", name: "verified_organization_invitations" },
                                                             m,
                                                             o,
                                                         ],
@@ -859,8 +852,8 @@
                     },
                     params: { id: "W29_ue3uq9pXCbuknUJisg", metadata: { sliceInfoPath: ["viewer", "user_results", "result", "verified_organization_invitations", "slice_info"] }, name: "AffiliatesScreenAffiliatesQuery", operationKind: "query", text: null },
                 };
-            R.hash = "b0bdea2462ff4259ad31f35998b313d4";
-            const w = R;
+            h.hash = "b0bdea2462ff4259ad31f35998b313d4";
+            const w = h;
         },
         24410: (e, l, a) => {
             a.d(l, { Z: () => i });
@@ -995,13 +988,11 @@
                                                         storageKey: null,
                                                     },
                                                     action: "THROW",
-                                                    path: "viewer.user_results.result",
                                                 },
                                             ],
                                             storageKey: null,
                                         },
                                         action: "THROW",
-                                        path: "viewer.user_results",
                                     },
                                 ],
                                 storageKey: 'viewer_v2(s:"84b0")',
@@ -1191,4 +1182,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Verified-960914ab.741bff7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Verified-960914ab.fbe97bca.js.map

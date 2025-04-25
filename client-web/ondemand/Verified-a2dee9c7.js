@@ -64,19 +64,16 @@
                                                             storageKey: null,
                                                         },
                                                         action: "THROW",
-                                                        path: "viewer.user_results.result",
                                                     },
                                                 ],
                                                 storageKey: null,
                                             },
                                             action: "THROW",
-                                            path: "viewer.user_results",
                                         },
                                     ],
                                     storageKey: 'viewer_v2(s:"4721")',
                                 },
                                 action: "THROW",
-                                path: "viewer",
                             },
                         ],
                         type: "Query",
@@ -370,7 +367,7 @@
             const u = s;
         },
         818187: (e, a, l) => {
-            l.d(a, { Z: () => y });
+            l.d(a, { Z: () => p });
             var n,
                 i,
                 t,
@@ -383,7 +380,7 @@
                 m,
                 g,
                 _,
-                p = {
+                y = {
                     fragment: {
                         argumentDefinitions: (n = [{ defaultValue: null, kind: "LocalArgument", name: "count" }]),
                         kind: "Fragment",
@@ -413,20 +410,7 @@
                                                 kind: "LinkedField",
                                                 name: "result",
                                                 plural: !1,
-                                                selections: [
-                                                    (t = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }),
-                                                    {
-                                                        kind: "InlineFragment",
-                                                        selections: [
-                                                            (r = { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }),
-                                                            { alias: null, args: (u = [(s = { kind: "Variable", name: "count", variableName: "count" }), { kind: "Literal", name: "invitation_type", value: "Affiliate" }]), concreteType: "VerifiedOrganizationInvitationSlice", kind: "LinkedField", name: "verified_organization_invitations", plural: !1, selections: [{ alias: null, args: null, concreteType: "VerifiedOrganizationInvitation", kind: "LinkedField", name: "items", plural: !0, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "invitee_id_results", plural: !1, selections: [{ kind: "RequiredField", field: (d = { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [t, { kind: "InlineFragment", selections: [(o = { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "id_str", storageKey: null }], storageKey: null })], type: "User", abstractKey: null }], storageKey: null }), action: "THROW", path: "viewer.user_results.result.verified_organization_invitations.items.invitee_id_results.result" }], storageKey: null }], storageKey: null }], storageKey: null },
-                                                            { alias: null, args: (c = [s]), concreteType: "BusinessTeamAffiliatesSlice", kind: "LinkedField", name: "business_team_affiliates", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "items_results", plural: !0, selections: [(m = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }), { kind: "RequiredField", field: d, action: "THROW", path: "viewer.user_results.result.business_team_affiliates.items_results.result" }], storageKey: null }], storageKey: null },
-                                                            (g = { kind: "ClientExtension", selections: [{ alias: null, args: null, kind: "ScalarField", name: "__id", storageKey: null }] }),
-                                                        ],
-                                                        type: "User",
-                                                        abstractKey: null,
-                                                    },
-                                                ],
+                                                selections: [(t = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }), { kind: "InlineFragment", selections: [(r = { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }), { alias: null, args: (u = [(s = { kind: "Variable", name: "count", variableName: "count" }), { kind: "Literal", name: "invitation_type", value: "Affiliate" }]), concreteType: "VerifiedOrganizationInvitationSlice", kind: "LinkedField", name: "verified_organization_invitations", plural: !1, selections: [{ alias: null, args: null, concreteType: "VerifiedOrganizationInvitation", kind: "LinkedField", name: "items", plural: !0, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "invitee_id_results", plural: !1, selections: [(d = { kind: "RequiredField", field: { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [t, { kind: "InlineFragment", selections: [(o = { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "id_str", storageKey: null }], storageKey: null })], type: "User", abstractKey: null }], storageKey: null }, action: "THROW" })], storageKey: null }], storageKey: null }], storageKey: null }, { alias: null, args: (c = [s]), concreteType: "BusinessTeamAffiliatesSlice", kind: "LinkedField", name: "business_team_affiliates", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "items_results", plural: !0, selections: [(m = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }), d], storageKey: null }], storageKey: null }, (g = { kind: "ClientExtension", selections: [{ alias: null, args: null, kind: "ScalarField", name: "__id", storageKey: null }] })], type: "User", abstractKey: null }],
                                                 storageKey: null,
                                             },
                                         ],
@@ -443,8 +427,8 @@
                     operation: { argumentDefinitions: n, kind: "Operation", name: "useAffiliatesAndInvitesQuery", selections: [{ alias: "viewer", args: i, concreteType: "Viewer", kind: "LinkedField", name: "viewer_v2", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [t, { kind: "InlineFragment", selections: [r, { alias: null, args: u, concreteType: "VerifiedOrganizationInvitationSlice", kind: "LinkedField", name: "verified_organization_invitations", plural: !1, selections: [{ alias: null, args: null, concreteType: "VerifiedOrganizationInvitation", kind: "LinkedField", name: "items", plural: !0, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "invitee_id_results", plural: !1, selections: [(_ = { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [t, { kind: "InlineFragment", selections: [o, { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" }, m], type: "User", abstractKey: null }], storageKey: null }), m], storageKey: null }], storageKey: null }], storageKey: null }, { alias: null, args: c, concreteType: "BusinessTeamAffiliatesSlice", kind: "LinkedField", name: "business_team_affiliates", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "items_results", plural: !0, selections: [m, _], storageKey: null }], storageKey: null }, g, m], type: "User", abstractKey: null }], storageKey: null }, m], storageKey: null }], storageKey: 'viewer_v2(s:"84b0")' }] },
                     params: { id: "bGJ0LYcXZ9M_ARcscpUJiQ", metadata: {}, name: "useAffiliatesAndInvitesQuery", operationKind: "query", text: null },
                 };
-            p.hash = "ed144ab56ff9d59e89563cce723fc5cb";
-            const y = p;
+            y.hash = "ed144ab56ff9d59e89563cce723fc5cb";
+            const p = y;
         },
         533399: (e, a, l) => {
             l.d(a, { Z: () => r });
@@ -661,7 +645,6 @@
                                     storageKey: null,
                                 },
                                 action: "THROW",
-                                path: "invitee_id_results.result",
                             },
                         ],
                         storageKey: null,
@@ -764,7 +747,6 @@
                                     storageKey: null,
                                 },
                                 action: "THROW",
-                                path: "invitee_id_results.result",
                             },
                         ],
                         storageKey: null,
@@ -1017,7 +999,7 @@
             const t = i;
         },
         940260: (e, a, l) => {
-            l.d(a, { Z: () => p });
+            l.d(a, { Z: () => y });
             var n,
                 i,
                 t,
@@ -1062,7 +1044,7 @@
                     params: { id: "8m52lEJVnINB5c0VpZEnfw", metadata: {}, name: "useStripeCheckoutMutation", operationKind: "mutation", text: null },
                 };
             _.hash = "3d1593f69ebe2b65fd228783525f9649";
-            const p = _;
+            const y = _;
         },
         506889: (e, a, l) => {
             l.d(a, { Z: () => r });
@@ -1242,19 +1224,16 @@
                                                             storageKey: null,
                                                         },
                                                         action: "THROW",
-                                                        path: "viewer.user_results.result",
                                                     },
                                                 ],
                                                 storageKey: null,
                                             },
                                             action: "THROW",
-                                            path: "viewer.user_results",
                                         },
                                     ],
                                     storageKey: 'viewer_v2(s:"4721")',
                                 },
                                 action: "THROW",
-                                path: "viewer",
                             },
                         ],
                         type: "Query",
@@ -1353,19 +1332,16 @@
                                                             storageKey: null,
                                                         },
                                                         action: "THROW",
-                                                        path: "viewer.user_results.result",
                                                     },
                                                 ],
                                                 storageKey: null,
                                             },
                                             action: "THROW",
-                                            path: "viewer.user_results",
                                         },
                                     ],
                                     storageKey: 'viewer_v2(s:"4721")',
                                 },
                                 action: "THROW",
-                                path: "viewer",
                             },
                         ],
                         type: "Query",
@@ -1532,4 +1508,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Verified-a2dee9c7.6566631a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Verified-a2dee9c7.44406c0a.js.map

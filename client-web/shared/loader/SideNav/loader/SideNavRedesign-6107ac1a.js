@@ -113,13 +113,13 @@
                         plural: !1,
                         selections: [
                             { alias: null, args: null, kind: "ScalarField", name: "id_str", storageKey: null },
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null }, action: "THROW", path: "legacy.profile_image_url_https" },
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null }, action: "THROW", path: "legacy.name" },
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }, action: "THROW", path: "legacy.screen_name" },
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }, action: "THROW", path: "legacy.protected" },
+                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null }, action: "THROW" },
+                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null }, action: "THROW" },
+                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }, action: "THROW" },
+                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }, action: "THROW" },
                             { alias: null, args: null, kind: "ScalarField", name: "verified_type", storageKey: null },
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }, action: "THROW", path: "legacy.verified" },
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null }, action: "THROW", path: "legacy.followed_by" },
+                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }, action: "THROW" },
+                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null }, action: "THROW" },
                         ],
                         storageKey: null,
                     },
@@ -171,7 +171,7 @@
                         metadata: null,
                         name: "fetchDownloadSettingAllowedQuery",
                         selections: [
-                            { kind: "RequiredField", field: (s = { alias: null, args: null, concreteType: "UserPreferences", kind: "LinkedField", name: "user_preferences", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "allow_video_downloads", storageKey: null }], storageKey: null }), action: "THROW", path: "user_preferences" },
+                            { kind: "RequiredField", field: (s = { alias: null, args: null, concreteType: "UserPreferences", kind: "LinkedField", name: "user_preferences", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "allow_video_downloads", storageKey: null }], storageKey: null }), action: "THROW" },
                             {
                                 alias: "viewer",
                                 args: (a = [{ kind: "Literal", name: "s", value: "4721" }]),
@@ -378,7 +378,7 @@
             class u {
                 constructor(e, t = F) {
                     var i;
-                    (this.timeoutIdMap = {}), (this.mediaId = ""), (this.mediaKey = ""), (this.fileHandle = e), (this.inflightSegments = new Map()), (this.totalBytes = e ? e.size : 0), (this.mediaType = e ? e.type : void 0), (this.initStartTime = new Date()), (this.sruHeaders = t.sruHeaders || {}), (this.uploadUrl = t.uploadUrl || m), (this.retainMediaForever = !!t.retainMediaForever), (this.sruParameterOverrides = t.sruParameterOverrides), (this.minSegmentBytes = this.sruParameterOverrides?.minSegmentBytes || ((i = this.totalBytes), n(Math.ceil(i / d)))), this._clearState();
+                    (this.timeoutIdMap = {}), (this.mediaId = ""), (this.mediaKey = ""), (this.fileHandle = e), (this.inflightSegments = new Map()), (this.totalBytes = e ? e.size : 0), (this.mediaType = e ? e.type : void 0), (this.initStartTime = new Date()), (this.sruHeaders = t.sruHeaders || {}), (this.uploadUrl = t.uploadUrl || h), (this.retainMediaForever = !!t.retainMediaForever), (this.sruParameterOverrides = t.sruParameterOverrides), (this.minSegmentBytes = this.sruParameterOverrides?.minSegmentBytes || ((i = this.totalBytes), n(Math.ceil(i / d)))), this._clearState();
                 }
                 upload(e) {
                     ((this.hasAttemptedFinalize && (this.uploadOptions.trimRanges !== e.trimRanges || this.uploadOptions.extraFinalizeParams !== e.extraFinalizeParams)) || this.uploadOptions.extraInitParams !== e.extraInitParams) && this._clearState(),
@@ -598,7 +598,7 @@
                 _sendXhr(e, t, i, s, a, l, r, d, u = 0) {
                     const c = `${this.uploadUrl}?command=${t}${i}`;
                     let p = !1;
-                    const m = new Date(),
+                    const h = new Date(),
                         g = (n) => {
                             if (l) {
                                 const n = [c, l].join("-");
@@ -608,16 +608,16 @@
                             } else f(n);
                         },
                         f = (e) => {
-                            this._stats(t, e || "unknown-error", { requestStartTime: m, segmentBytes: u }), "function" == typeof a && a(T(k) || { code: S.INVALID_RES_STATUS });
+                            this._stats(t, e || "unknown-error", { requestStartTime: h, segmentBytes: u }), "function" == typeof a && a(T(k) || { code: S.INVALID_RES_STATUS });
                         },
                         k = new XMLHttpRequest();
                     k.open(e, c, !0),
                         (k.withCredentials = !0),
-                        (k.timeout = this.sruParameterOverrides?.clientsideSruUploadTimeoutMs || h),
+                        (k.timeout = this.sruParameterOverrides?.clientsideSruUploadTimeoutMs || m),
                         (k.onload = () => {
                             if (k.status >= 200 && k.status < 400) {
                                 const e = T(k);
-                                204 === k.status || e ? (this._stats(t, "success", { requestStartTime: m, segmentBytes: u }), s(e || {}), !p && d && d()) : g("parsererror");
+                                204 === k.status || e ? (this._stats(t, "success", { requestStartTime: h, segmentBytes: u }), s(e || {}), !p && d && d()) : g("parsererror");
                             } else k.status && 503 !== k.status ? f("invalid-response") : g("503");
                         }),
                         (k.onerror = () => g("error")),
@@ -630,7 +630,7 @@
                         const t = e.loaded,
                             i = ((this.uploadedBytes + t) / this.totalBytes) * 100;
                         if ((this._notifyProgress(i, this.mediaId), t / e.total > y && !p && ((p = !0), r))) {
-                            const e = Math.max(1, new Date().getTime() - m.getTime()),
+                            const e = Math.max(1, new Date().getTime() - h.getTime()),
                                 i = this.minSegmentBytes,
                                 s = this.sruParameterOverrides?.maxSegmentBytes;
                             (this.nextSegmentBytes = (function (e) {
@@ -647,8 +647,8 @@
             }
             const c = 2147483647,
                 p = 1,
-                h = 45e3,
-                m = (window.location.host.includes("twitter.com") ? "https://upload.twitter.com" : "https://upload.x.com") + "/i/media/upload.json",
+                m = 45e3,
+                h = (window.location.host.includes("twitter.com") ? "https://upload.twitter.com" : "https://upload.x.com") + "/i/media/upload.json",
                 g = 2,
                 y = 0.95,
                 _ = 1e3,
@@ -674,4 +674,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.SideNav~loader.SideNavRedesign-6107ac1a.aa5c841a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.SideNav~loader.SideNavRedesign-6107ac1a.b9e5b38a.js.map

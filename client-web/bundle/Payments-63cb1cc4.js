@@ -403,7 +403,7 @@
             const n = "rweb.money.bankCardPolling";
         },
         578453: (e, t, a) => {
-            a.r(t), a.d(t, { default: () => A });
+            a.r(t), a.d(t, { default: () => D });
             a(136728);
             var n = a(202784),
                 r = a(400752),
@@ -416,24 +416,25 @@
                 u = a(420182),
                 m = a(980407),
                 p = a(736063),
-                h = a(514639),
-                y = a(293115),
-                g = a(743080),
-                f = a(224058),
-                b = a(986092),
-                E = (a(585488), a(351743)),
-                k = a.n(E),
-                P = a(234107),
-                Z = a(727384);
-            const C = b.Z,
-                _ = { light: P.M.BankCardLinkingSessionThemeLight, dim: P.M.BankCardLinkingSessionThemeDimmed, dark: P.M.BankCardLinkingSessionThemeDark },
-                v = () => {
-                    const [e] = k()(C),
+                h = a(952793),
+                y = a(514639),
+                g = a(293115),
+                f = a(743080),
+                b = a(224058),
+                E = a(986092),
+                k = (a(585488), a(351743)),
+                P = a.n(k),
+                Z = a(234107),
+                C = a(727384);
+            const _ = E.Z,
+                v = { light: Z.M.BankCardLinkingSessionThemeLight, dim: Z.M.BankCardLinkingSessionThemeDimmed, dark: Z.M.BankCardLinkingSessionThemeDark },
+                I = () => {
+                    const [e] = P()(_),
                         [t, a] = n.useState();
                     return (
                         n.useEffect(() => {
                             e({
-                                variables: { theme: _[(0, Z.gh)()] ?? P.M.BankCardLinkingSessionThemeLight },
+                                variables: { theme: v[(0, C.gh)()] ?? Z.M.BankCardLinkingSessionThemeLight },
                                 onCompleted: (e, t) => {
                                     const n = e?.create_bank_card_linking_session;
                                     a(n);
@@ -443,30 +444,36 @@
                         t
                     );
                 },
-                I = "Add a debit card",
-                w = { page: "money", section: "bank-card" },
-                S = (e) => {
+                w = "Add a debit card",
+                S = { page: "money", section: "bank-card" },
+                T = (e) => {
                     const t = (0, r.Dv)(u.lZ),
-                        a = v(),
+                        a = I(),
                         d = (0, c.useHistory)(),
-                        [p, b] = n.useState(!1),
-                        E = (0, g.jh)(),
-                        k = d.location?.state,
-                        P = k?.redirectPath,
-                        Z = n.useMemo(() => ({ pathname: h.ac, state: k ?? {} }), [k]),
-                        C = n.createElement(o.Z, { style: E.footer }, n.createElement(l.ZP, { align: "center", color: "text", link: Z }, "Use a bank account")),
-                        _ = n.useCallback(() => {
-                            b(!0), a?.id && t.set(f.a, { redirectPath: P, cardLinkId: a.id });
-                        }, [P, a, t]),
-                        S = n.useCallback(() => {
-                            P === h.iE.bankAccounts ? d.push(h.iE.bankAccounts) : d.push(h.gp);
-                        }, [d, P]);
-                    return n.createElement(m.Z, { backButtonType: "close", bottomBar: C, history: d, onBackClick: S, withoutBottomBarMobile: !0 }, n.createElement(y.nO, { namespace: w }, n.createElement(o.Z, { style: E.container }, n.createElement(l.ZP, { align: "center", size: "title2", style: g.ZP.title, weight: "heavy" }, I), !p && n.createElement(i.Z, { style: g.ZP.spinner, testID: "loading-spinner" }), a?.iframe_url ? n.createElement(s.Z, { allowForms: !0, allowTopNavigation: !0, onLoad: _, src: a.iframe_url, style: p ? D.iframe : D.hide, title: I }) : null)));
+                        [p, E] = n.useState(!1),
+                        k = (0, f.jh)(),
+                        P = d.location?.state,
+                        Z = P?.redirectPath,
+                        C = (0, h.JY)("payments_crb_iframe_delay_msecs", 0),
+                        _ = n.useMemo(() => ({ pathname: y.ac, state: P ?? {} }), [P]),
+                        v = n.createElement(o.Z, { style: k.footer }, n.createElement(l.ZP, { align: "center", color: "text", link: _ }, "Use a bank account")),
+                        T = n.useCallback(() => {
+                            C
+                                ? setTimeout(() => {
+                                      E(!0);
+                                  }, C)
+                                : E(!0),
+                                a?.id && t.set(b.a, { redirectPath: Z, cardLinkId: a.id });
+                        }, [C, Z, a, t]),
+                        x = n.useCallback(() => {
+                            Z === y.iE.bankAccounts ? d.push(y.iE.bankAccounts) : d.push(y.gp);
+                        }, [d, Z]);
+                    return n.createElement(m.Z, { backButtonType: "close", bottomBar: v, history: d, onBackClick: x, withoutBottomBarMobile: !0 }, n.createElement(g.nO, { namespace: S }, n.createElement(o.Z, { style: k.container }, n.createElement(l.ZP, { align: "center", size: "title2", style: f.ZP.title, weight: "heavy" }, w), !p && n.createElement(i.Z, { style: f.ZP.spinner, testID: "loading-spinner" }), a?.iframe_url ? n.createElement(s.Z, { allowForms: !0, allowTopNavigation: !0, onLoad: T, src: a.iframe_url, style: p ? M.iframe : M.hide, title: w }) : null)));
                 },
-                T = { context: "BANK_CARD" },
-                x = (e) => n.createElement(p.H, { errorConfig: T }, n.createElement(S, e)),
-                A = n.memo(x),
-                D = d.default.create((e) => ({ iframe: { width: "100%", paddingTop: "0px", flex: 1 }, hide: { display: "none" } }));
+                x = { context: "BANK_CARD" },
+                A = (e) => n.createElement(p.H, { errorConfig: x }, n.createElement(T, e)),
+                D = n.memo(A),
+                M = d.default.create((e) => ({ iframe: { width: "100%", paddingTop: "0px", flex: 1 }, hide: { display: "none" } }));
         },
         246682: (e, t, a) => {
             a.r(t), a.d(t, { default: () => u });
@@ -559,9 +566,9 @@
                 q = a(353391),
                 $ = a.n(q),
                 K = a(482924);
-            const G = O.Z,
-                Y = ({ paymentMethodId: e }) => {
-                    const { data: t, refetch: a, refetchStatus: n } = (0, K.A)(G, { payment_method_id: e }),
+            const Y = O.Z,
+                G = ({ paymentMethodId: e }) => {
+                    const { data: t, refetch: a, refetchStatus: n } = (0, K.A)(Y, { payment_method_id: e }),
                         r = t?.get_payment_method?.__id ?? "get_payment_method";
                     return (
                         $()([r], () => {
@@ -578,7 +585,7 @@
                         s = (0, x.useHistory)(),
                         d = e.rest_id,
                         [u, m] = U(),
-                        { data: p } = Y({ paymentMethodId: e.rest_id });
+                        { data: p } = G({ paymentMethodId: e.rest_id });
                     n.useEffect(() => {
                         a && a.scribe({ page: "money", section: "card-shipping", action: "impression" });
                     }, [a]);
@@ -858,16 +865,16 @@
                         K = n.useCallback(() => {
                             t.scribe({ page: "money", section: F, element: "transfer", action: "click" }), $ ? a.push($, { redirectPath: V, redirectState: H, closePath: c.gp }) : a.push(q);
                         }, [t, a, F, V, q, H, $]),
-                        G = n.useCallback(() => {
+                        Y = n.useCallback(() => {
                             a.push(c.gp);
                         }, [a]),
-                        Y = n.createElement(p.Z, { style: o.footer }, n.createElement(y.ZP, { disabled: j, onPress: K, size: "large", type: "primaryFilled" }, N)),
+                        G = n.createElement(p.Z, { style: o.footer }, n.createElement(y.ZP, { disabled: j, onPress: K, size: "large", type: "primaryFilled" }, N)),
                         X = n.useMemo(() => ({ redirectPath: V }), [V]),
                         J = n.useMemo(() => ({ pathname: c.ac, state: X }), [X]),
                         Q = n.useMemo(() => ({ pathname: c.UA, state: X }), [X]),
                         ee = w?.includes(d.d.CreatePaymentMethod),
                         te = I && ee;
-                    return L ? n.createElement(f.Z, { backButtonType: "close", bottomBar: Y, history: a, onBackClick: G, withoutBottomBarMobile: !0 }, n.createElement(p.Z, { style: o.container }, n.createElement(h.ZP, { align: "center", size: "title2", style: k.ZP.title, weight: "heavy" }, z ? N : "Deposit"), n.createElement(U.Z, { amount: E, balance: D, isValid: _, label: "Enter amount", min: "1", name: "amount", setAmount: Z, setIsValid: v, validateBalance: z }), n.createElement(A, { accountId: L, addAccountLink: J, addBankCardLink: te ? Q : void 0, onSelectAccount: R, transferDirection: e }))) : n.createElement(i.Z, { to: te ? Q : ee ? J : $ ? { pathname: $, state: { redirectPath: V, closePath: c.gp } } : c.gp });
+                    return L ? n.createElement(f.Z, { backButtonType: "close", bottomBar: G, history: a, onBackClick: Y, withoutBottomBarMobile: !0 }, n.createElement(p.Z, { style: o.container }, n.createElement(h.ZP, { align: "center", size: "title2", style: k.ZP.title, weight: "heavy" }, z ? N : "Deposit"), n.createElement(U.Z, { amount: E, balance: D, isValid: _, label: "Enter amount", min: "1", name: "amount", setAmount: Z, setIsValid: v, validateBalance: z }), n.createElement(A, { accountId: L, addAccountLink: J, addBankCardLink: te ? Q : void 0, onSelectAccount: R, transferDirection: e }))) : n.createElement(i.Z, { to: te ? Q : ee ? J : $ ? { pathname: $, state: { redirectPath: V, closePath: c.gp } } : c.gp });
                 },
                 $ = n.memo(q),
                 K = ({ amount: e, requestId: t, transferDirection: a }) => {
@@ -886,8 +893,8 @@
                         C = n.createElement(p.Z, { style: s.footer }, n.createElement(y.ZP, { link: `${c.bR}/${t}`, onPress: E, size: "large", style: k.ZP.button, type: "primaryFilled" }, "Done"));
                     return n.createElement(f.Z, { backButtonType: "close", bottomBar: C, history: i, onBackClick: Z, withoutBottomBarMobile: !0 }, n.createElement(p.Z, { style: s.container }, n.createElement(h.ZP, { size: "title2", style: k.ZP.title, weight: "heavy" }, b), n.createElement(h.ZP, null, "Transfers may take up to 3 business days to complete. \n\nFunds may not be available in your account until the transfer is complete.")));
                 },
-                G = n.memo(K),
-                Y = { context: "PaymentsExternalAccountTransfer" },
+                Y = n.memo(K),
+                G = { context: "PaymentsExternalAccountTransfer" },
                 X = ({ transferDirection: e }) => {
                     const t = (0, l.z)(),
                         a = (0, r.useHistory)(),
@@ -901,13 +908,13 @@
                         n.useEffect(() => {
                             t && t.scribe({ page: "money", section: g, component: m, action: "impression" });
                         }, [t, m, g]),
-                        n.createElement(o.H, { errorConfig: Y }, p && h ? (m === s.ah.reviewPane ? n.createElement(V, { accountId: h, amount: p, transferDirection: e }) : m === s.ah.successPane && y ? n.createElement(G, { amount: p, requestId: y, transferDirection: e }) : n.createElement(i.Z, { to: c.gp })) : n.createElement($, { transferDirection: e }))
+                        n.createElement(o.H, { errorConfig: G }, p && h ? (m === s.ah.reviewPane ? n.createElement(V, { accountId: h, amount: p, transferDirection: e }) : m === s.ah.successPane && y ? n.createElement(Y, { amount: p, requestId: y, transferDirection: e }) : n.createElement(i.Z, { to: c.gp })) : n.createElement($, { transferDirection: e }))
                     );
                 },
                 J = n.memo(X);
         },
         743843: (e, t, a) => {
-            a.r(t), a.d(t, { default: () => G });
+            a.r(t), a.d(t, { default: () => Y });
             var n = a(202784),
                 r = a(107267),
                 o = a(360871),
@@ -1082,8 +1089,8 @@
                         K = n.useCallback((e, t) => {
                             if ("IDENTITY_VERIFICATION_CLOSE_UI" === e) Z(!0);
                         }, []),
-                        G = { token: F, onSuccess: H, onLoad: q, onEvent: K, onExit: O, ...(T ? { receivedRedirectUri: S } : null) },
-                        { open: Y, ready: X } = (0, c.usePlaidLink)(G);
+                        Y = { token: F, onSuccess: H, onLoad: q, onEvent: K, onExit: O, ...(T ? { receivedRedirectUri: S } : null) },
+                        { open: G, ready: X } = (0, c.usePlaidLink)(Y);
                     if (
                         (n.useEffect(() => {
                             T &&
@@ -1095,8 +1102,8 @@
                             T || m.Yh.set(W, F);
                         }, [T, F]),
                         n.useEffect(() => {
-                            F && X && Y();
-                        }, [F, X, Y]),
+                            F && X && G();
+                        }, [F, X, G]),
                         !F)
                     )
                         return T ? n.createElement(l.Z, { style: $.loadingStyle }) : n.createElement(h.Z, { to: "/" });
@@ -1121,8 +1128,8 @@
                     t.location;
                     return o.L.Plaid, n.createElement(q, e);
                 },
-                G = n.memo(K);
+                Y = n.memo(K);
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-63cb1cc4.1720a9fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-63cb1cc4.f59267aa.js.map

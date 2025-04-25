@@ -120,19 +120,16 @@
                                                             storageKey: null,
                                                         },
                                                         action: "THROW",
-                                                        path: "viewer.user_results.result",
                                                     },
                                                 ],
                                                 storageKey: null,
                                             },
                                             action: "THROW",
-                                            path: "viewer.user_results",
                                         },
                                     ],
                                     storageKey: 'viewer_v2(s:"84b0")',
                                 },
                                 action: "THROW",
-                                path: "viewer",
                             },
                         ],
                         type: "Query",
@@ -259,13 +256,11 @@
                                                         storageKey: null,
                                                     },
                                                     action: "THROW",
-                                                    path: "viewer_v2.user_results.result",
                                                 },
                                             ],
                                             storageKey: null,
                                         },
                                         action: "THROW",
-                                        path: "viewer_v2.user_results",
                                     },
                                 ],
                                 storageKey: 'viewer_v2(s:"4721")',
@@ -345,10 +340,10 @@
                 v = a(177210),
                 h = a(693510),
                 E = a(97882),
-                w = a(782826),
-                Z = a(725516),
-                S = a(336678),
-                K = a(854219),
+                Z = a(782826),
+                S = a(725516),
+                K = a(336678),
+                w = a(854219),
                 F = a(481326),
                 C = a(199232),
                 P = a(241989),
@@ -373,7 +368,7 @@
                 W = _().a1d3f1f2,
                 G = _().i859a9d4,
                 X = ({ onClick: e }) => {
-                    const n = r()(S.Z, {}),
+                    const n = r()(K.Z, {}),
                         a = n?.viewer.user_results.result.list_scheduled_promotions?.length ? n.viewer.user_results.result.list_scheduled_promotions : [];
                     let t = 0;
                     const i = a[0]?.promotion.coupon_amount_in_local?.currency_code;
@@ -388,14 +383,14 @@
                     );
                 },
                 Y = () => {
-                    const e = (0, Z.z)(),
+                    const e = (0, S.z)(),
                         { userClaims: n } = l.useContext(I.rC),
                         a = n.hasSubscription("verified_org_basic"),
                         i = (0, k.hC)("responsive_web_verified_organizations_idv_enabled"),
                         { completedByDate: r, enabled: m, status: _ } = (0, P.Z)(),
                         E = i && m && "CanVerifyIdentity" === _,
-                        S = (0, k.hC)("responsive_web_verified_organizations_intercom_enabled"),
-                        { origin: D } = w.ZP.get(),
+                        K = (0, k.hC)("responsive_web_verified_organizations_intercom_enabled"),
+                        { origin: D } = Z.ZP.get(),
                         T = (0, v.Z)({ returnUrl: `${D}/home`, originProduct: "VerifiedOrganizations" }),
                         Y = (0, C.Z)(["VerifiedOrganization"]).hasVerifiedOrgPaymentFailure,
                         { hasApplicationStatus: $, hasVerifiedOrgFeature: ee } = (0, h.ZP)(),
@@ -428,10 +423,10 @@
                                     l.createElement(s.Z, { link: "/i/verified-advertising", onClick: le("manage_ad_credits"), style: J.link }, l.createElement(o.ZP, { weight: "medium" }, L), l.createElement(p.default, { style: J.icon })),
                                     l.createElement(s.Z, { link: "https://ads.x.com", onClick: le("setup_ads_campaign"), style: J.link }, l.createElement(o.ZP, { weight: "medium" }, x), l.createElement(p.default, { style: J.icon })),
                                     l.createElement(s.Z, { link: "/i/verified/jobs", onClick: le("manage_jobs"), style: J.link }, l.createElement(o.ZP, { weight: "medium" }, B), l.createElement(p.default, { style: J.icon })),
-                                    S ? l.createElement(K.Z, { onClick: le("get_support") }, l.createElement(s.Z, { style: J.link }, l.createElement(o.ZP, { weight: "medium" }, z), l.createElement(p.default, { style: J.icon }))) : l.createElement(s.Z, { link: F.A9, onClick: le("get_support"), style: J.link }, l.createElement(o.ZP, { weight: "medium" }, z), l.createElement(p.default, { style: J.icon })),
+                                    K ? l.createElement(w.Z, { onClick: le("get_support") }, l.createElement(s.Z, { style: J.link }, l.createElement(o.ZP, { weight: "medium" }, z), l.createElement(p.default, { style: J.icon }))) : l.createElement(s.Z, { link: F.A9, onClick: le("get_support"), style: J.link }, l.createElement(o.ZP, { weight: "medium" }, z), l.createElement(p.default, { style: J.icon })),
                                     l.createElement(s.Z, { link: "/i/verified", onClick: le("vo_home"), style: J.link }, l.createElement(o.ZP, { color: "blue500", weight: "medium" }, O), l.createElement(p.default, { style: J.icon })),
                                 ),
-                            [a, S, le, Y, te, ie],
+                            [a, K, le, Y, te, ie],
                         ),
                         se = l.useMemo(() => l.createElement(t.Z, { style: [J.callout, E ? J.warningBackground : J.infoBackground] }, l.createElement(t.Z, { style: J.calloutHeader }, l.createElement(g.default, { style: J.linkIcon }), l.createElement(o.ZP, { weight: "bold" }, E ? q : M)), E ? null : l.createElement(o.ZP, { size: "subtext1", weight: "normal" }, N), E ? l.createElement(t.Z, { style: J.idvEntrypoint }, l.createElement(o.ZP, { size: "subtext1", weight: "normal" }, Q({ date: r })), l.createElement(R.Z, { redirectPath: location.pathname }), l.createElement(o.ZP, { color: "gray900", size: "subtext2" }, W, " ", l.createElement(o.ZP, { link: "https://help.x.com/rules-and-policies/verification-policy" }, G))) : null), [E, r]),
                         oe = l.useMemo(() => l.createElement(l.Fragment, null, ae ? se : null, l.createElement(s.Z, { link: "/i/verified/jobs", onClick: le("manage_jobs"), style: J.link }, l.createElement(o.ZP, { weight: "medium" }, B), l.createElement(p.default, { style: J.icon })), l.createElement(s.Z, { link: "/i/verified", onClick: le("vo_home"), style: J.link }, l.createElement(o.ZP, { color: "blue500", weight: "medium" }, O), l.createElement(p.default, { style: J.icon }))), [ae, le, se]);
@@ -496,7 +491,7 @@
             const t = l.Z;
         },
         794271: (e, n, a) => {
-            a.d(n, { Z: () => Z });
+            a.d(n, { Z: () => S });
             var l = a(807896),
                 t = a(202784),
                 i = a(325686),
@@ -536,14 +531,14 @@
                         y = t.useMemo(() => {
                             if ("CanVerifyIdentity" === n) return t.createElement(t.Fragment, null, u ? t.createElement(r.Z.Danger, { text: h }) : null, t.createElement(s.ZP, { disabled: c, onClick: p, testID: "start-idv-button", type: "primaryFilled" }, c ? t.createElement(o.Z, null) : v));
                         }, [n, p, u, c]);
-                    return t.createElement(i.Z, { style: S.container, testID: "identity-verification-entrypoint" }, y);
+                    return t.createElement(i.Z, { style: K.container, testID: "identity-verification-entrypoint" }, y);
                 },
-                w = (e) => {
+                Z = (e) => {
                     const { enabled: n, status: a } = (0, k.Z)();
                     return n && a ? t.createElement(E, (0, l.Z)({}, e, { status: a })) : null;
                 },
-                Z = (e) => ((0, p.hC)("responsive_web_verified_organizations_idv_enabled") ? t.createElement(_.H, { errorConfig: { context: "identity_verification_entrypoint" } }, t.createElement(y.nO, { namespace: { component: "vo_idv_entrypoint" } }, t.createElement(w, e))) : null),
-                S = c.default.create((e) => ({ container: { gap: e.spaces.space12 } }));
+                S = (e) => ((0, p.hC)("responsive_web_verified_organizations_idv_enabled") ? t.createElement(_.H, { errorConfig: { context: "identity_verification_entrypoint" } }, t.createElement(y.nO, { namespace: { component: "vo_idv_entrypoint" } }, t.createElement(Z, e))) : null),
+                K = c.default.create((e) => ({ container: { gap: e.spaces.space12 } }));
         },
         241989: (e, n, a) => {
             a.d(n, { Z: () => r });
@@ -560,4 +555,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.VerifiedOrgSidebarModule.835b172a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.VerifiedOrgSidebarModule.291cbe6a.js.map

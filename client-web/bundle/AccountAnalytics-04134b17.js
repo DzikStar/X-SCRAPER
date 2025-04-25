@@ -6,10 +6,10 @@
             a.d(t, { _: () => f });
             var s = a(552322),
                 l = a(643715),
-                r = a(829233),
-                i = a(701883),
-                n = a(941204),
-                o = a(407250),
+                r = a(1468),
+                i = a(217105),
+                n = a(332161),
+                o = a(917317),
                 c = a(598705);
             const { Bar: d, BarChart: m, CartesianGrid: x, XAxis: u, YAxis: h } = l;
             function p({ data: e, maxBarSize: t, intervalTicks: a, color: l, label: n }) {
@@ -64,7 +64,7 @@
             a.d(t, { T: () => u });
             var s = a(552322),
                 l = a(643715),
-                r = a(829233),
+                r = a(1468),
                 i = a(202784),
                 n = a(598705);
             const { Area: o, AreaChart: c, CartesianGrid: d, XAxis: m, YAxis: x } = l;
@@ -132,8 +132,8 @@
             a.d(t, { f: () => n });
             var s = a(552322),
                 l = a(446368),
-                r = a(436059),
-                i = a(165590);
+                r = a(993165),
+                i = a(66334);
             function n({ getCSVContent: e, filename: t, section: a = "", className: n = "h-8 shrink-0 px-1" }) {
                 const o = (0, l.$8)();
                 return (0, s.jsx)(r.z, {
@@ -156,8 +156,8 @@
         946839: (e, t, a) => {
             a.d(t, { q: () => n });
             var s = a(552322),
-                l = a(323788),
-                r = a(796309),
+                l = a(713990),
+                r = a(31674),
                 i = a(202784);
             const n = ({ colorLabelClassName: e, disabled: t, options: a, placeholder: n, selected: o, setSelected: c }) => {
                 const [d, m] = (0, i.useState)(0);
@@ -177,8 +177,8 @@
         125839: (e, t, a) => {
             a.d(t, { t: () => o });
             var s = a(552322),
-                l = a(422821),
-                r = a(796309),
+                l = a(815225),
+                r = a(31674),
                 i = a(202784),
                 n = a(598705);
             function o({ className: e, label: t, secondaryValue: a, type: o = "number", valueNode: c, ...d }) {
@@ -197,8 +197,8 @@
         85349: (e, t, a) => {
             a.d(t, { g: () => c });
             var s = a(552322),
-                l = a(511974),
-                r = a(796309),
+                l = a(123848),
+                r = a(31674),
                 i = a(430962),
                 n = a(125839),
                 o = a(995961);
@@ -210,17 +210,14 @@
             }
         },
         542372: (e, t, a) => {
-            a.d(t, { Z: () => x });
+            a.d(t, { Z: () => m });
             var s = a(552322),
-                l = a(162994),
+                l = a(847970),
                 r = a(202784),
                 i = a(430962),
                 n = a(598705),
                 o = a(995961);
-            function c({ isOpen: e, onClose: t, items: a, title: l }) {
-                return (0, s.jsx)(o.cu, { open: e, onOpenChange: t, children: (0, s.jsx)(o.hC, { title: l, children: (0, s.jsx)("ul", { className: "overflow-y-auto max-h-[400px] pr-2 space-y-4 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]", "aria-label": "Other items", children: a.map((e) => (0, s.jsx)(d, { item: e }, e.label)) }) }) });
-            }
-            const d = ({ item: e, onClick: t }) =>
+            const c = ({ item: e, onClick: t }) =>
                     (0, s.jsxs)("li", {
                         className: "flex gap-3",
                         onClick: t,
@@ -234,7 +231,7 @@
                             : void 0,
                         children: [e.icon && (0, s.jsx)("div", { className: "flex h-10 w-10 items-center justify-center", children: (0, s.jsx)("img", { src: e.icon, alt: `${e.label} icon`, className: "h-8 w-8" }) }), (0, s.jsxs)("div", { className: "flex-1 flex flex-col", children: [(0, s.jsxs)("div", { className: "text-text mb-1 flex justify-between text-subtext2", children: [(0, s.jsxs)("span", { className: t ? "flex items-center gap-1 hover:text-blue-500 transition-colors text-text" : "text-text", children: [e.label, t && (0, s.jsx)(l.Z, { width: 12, height: 12, className: "opacity-75", "aria-hidden": "true" })] }), (0, s.jsx)("span", { className: "font-bold transition-all duration-700 ease-out text-text", style: { transform: "translateX(0)" }, children: (0, n.rl)(e.percentage || 0) })] }), (0, s.jsx)("div", { className: "h-2 w-full bg-gray-100 overflow-hidden", style: { borderRadius: "5px" }, role: "progressbar", "aria-valuenow": e.percentage || 0, "aria-valuemin": 0, "aria-valuemax": 100, tabIndex: 0, children: (0, s.jsx)("div", { className: "h-full origin-left transform-gpu transition-all duration-700 ease-out " + (t ? "bg-blue-500 hover:bg-blue-600" : "bg-blue-500"), style: { borderRadius: "5px", width: `${e.percentage}%`, transform: "translateZ(0)" } }) })] })],
                     }),
-                m = ({ item: e, onClick: t, showLabels: a = !1 }) =>
+                d = ({ item: e, onClick: t, showLabels: a = !1 }) =>
                     (0, s.jsxs)("li", {
                         className: "flex gap-1",
                         onClick: t,
@@ -248,31 +245,31 @@
                             : void 0,
                         children: [e.icon && (0, s.jsx)("div", { className: "flex h-6 w-6 items-center justify-center self-center", children: (0, s.jsx)("img", { src: e.icon, alt: `${e.label} icon`, className: "h-4 w-4" }) }), a ? (0, s.jsxs)("div", { className: "flex-1 flex items-center gap-2 pr-1", children: [(0, s.jsxs)("span", { className: `\n            ${t ? "flex items-center gap-1 hover:text-blue-500 transition-colors text-gray-900" : ""}\n            min-w-[45px] text-subtext2 text-gray-900\n          `, children: [e.label, t && (0, s.jsx)(l.Z, { width: 12, height: 12, className: "opacity-75", "aria-hidden": "true" })] }), (0, s.jsx)("div", { className: "h-1.5 flex-1 bg-gray-100 overflow-hidden", style: { borderRadius: "4px" }, role: "progressbar", "aria-valuenow": e.percentage || 0, "aria-valuemin": 0, "aria-valuemax": 100, tabIndex: 0, children: (0, s.jsx)("div", { className: "h-full origin-left transform-gpu transition-all duration-700 ease-out " + (t ? "bg-blue-500 hover:bg-blue-600" : "bg-blue-500"), style: { borderRadius: "4px", width: `${e.percentage}%`, transform: "translateZ(0)" } }) })] }) : (0, s.jsx)("div", { className: "flex-1 flex flex-col justify-center", children: (0, s.jsx)("div", { className: "h-1.5 w-full bg-gray-100 overflow-hidden", style: { borderRadius: "4px" }, role: "progressbar", "aria-valuenow": e.percentage || 0, "aria-valuemin": 0, "aria-valuemax": 100, tabIndex: 0, children: (0, s.jsx)("div", { className: "h-full origin-left transform-gpu transition-all duration-700 ease-out " + (t ? "bg-blue-500 hover:bg-blue-600" : "bg-blue-500"), style: { borderRadius: "4px", width: `${e.percentage}%`, transform: "translateZ(0)" } }) }) })],
                     });
-            function x({ data: e, title: t, maxItems: a, sortByValue: l = !0, compactView: n = !1, showLabelsInCompactView: o = !1 }) {
-                const { analytics: x } = (0, i.M1)(),
-                    [u, h] = r.useState(!1),
-                    p = e.reduce((e, t) => e + t.value, 0),
-                    f = 0 === e.length || 0 === p,
-                    { mainItems: b } = r.useMemo(() => {
-                        if (f) return { mainItems: [], otherItems: [] };
-                        const t = e.map((e) => ({ ...e, percentage: 0 === p ? 0 : (e.value / p) * 100 }));
+            function m({ data: e, title: t, maxItems: a, sortByValue: l = !0, compactView: n = !1, showLabelsInCompactView: x = !1, modalSubtitle: u }) {
+                const { analytics: h } = (0, i.M1)(),
+                    [p, f] = r.useState(!1),
+                    b = e.reduce((e, t) => e + t.value, 0),
+                    g = 0 === e.length || 0 === b,
+                    { mainItems: v } = r.useMemo(() => {
+                        if (g) return { mainItems: [], otherItems: [] };
+                        const t = e.map((e) => ({ ...e, percentage: 0 === b ? 0 : (e.value / b) * 100 }));
                         if (a && t.length > a) {
                             const e = [...t].sort((e, t) => (l ? t.value - e.value : 0)),
                                 s = e.slice(0, a),
                                 r = e.slice(a),
                                 i = r.reduce((e, t) => e + t.value, 0),
-                                n = 0 === p ? 0 : (i / p) * 100;
-                            return { mainItems: [...s, { label: x.deviceOther, value: i, percentage: n }], otherItems: r };
+                                n = 0 === b ? 0 : (i / b) * 100;
+                            return { mainItems: [...s, { label: h.deviceOther, value: i, percentage: n }], otherItems: r };
                         }
                         return { mainItems: t, otherItems: [] };
-                    }, [e, f, a, l, p, x.deviceOther]);
-                return (0, s.jsxs)(s.Fragment, { children: [(0, s.jsx)("section", { className: "w-full max-w-2xl " + (n && o ? "pb-1" : ""), "aria-label": t, children: f ? (0, s.jsx)("p", { className: "text-gray-600 mt-2", children: x.noDataAvailable }) : (0, s.jsx)("div", { children: n ? (0, s.jsx)("div", { className: "relative", "aria-label": "Distribution chart", children: (0, s.jsx)("ul", { className: "space-y-1.5", "aria-label": "Distribution chart items", children: b.map((e) => (0, s.jsx)(m, { item: e, showLabels: o, onClick: e.label === x.deviceOther ? () => h(!0) : void 0 }, e.label)) }) }) : (0, s.jsx)("ul", { className: "space-y-4", "aria-label": "Distribution chart items", children: b.map((e) => (0, s.jsx)(d, { item: e, onClick: e.label === x.deviceOther ? () => h(!0) : void 0 }, e.label)) }) }) }), b.length > 0 && (0, s.jsx)(c, { isOpen: u, onClose: () => h(!1), items: e.map((e) => ({ ...e, percentage: 0 === p ? 0 : (e.value / p) * 100 })), title: t })] });
+                    }, [e, g, a, l, b, h.deviceOther]);
+                return (0, s.jsxs)(s.Fragment, { children: [(0, s.jsx)("section", { className: "w-full max-w-2xl " + (n && x ? "pb-1" : ""), "aria-label": t, children: g ? (0, s.jsx)("p", { className: "text-gray-600 mt-2", children: h.noDataAvailable }) : (0, s.jsx)("div", { children: n ? (0, s.jsx)("div", { className: "relative", "aria-label": "Distribution chart", children: (0, s.jsx)("ul", { className: "space-y-1.5", "aria-label": "Distribution chart items", children: v.map((e) => (0, s.jsx)(d, { item: e, showLabels: x, onClick: void 0 }, e.label)) }) }) : (0, s.jsx)("ul", { className: "space-y-4", "aria-label": "Distribution chart items", children: v.map((e) => (0, s.jsx)(c, { item: e, onClick: e.label !== h.deviceOther || n ? void 0 : () => f(!0) }, e.label)) }) }) }), v.some((e) => e.label === h.deviceOther) && (0, s.jsx)(o.cu, { open: p, onOpenChange: f, children: (0, s.jsx)(o.hC, { title: (0, s.jsxs)("div", { className: "text-center", children: [t, u && (0, s.jsxs)("div", { className: "text-subtext2 text-gray-500 font-normal mt-0.5", children: ["(", u, ")"] })] }), children: (0, s.jsx)("div", { className: "overflow-y-auto max-h-[400px] pr-2 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]", children: (0, s.jsx)(m, { data: e, title: t, sortByValue: l, compactView: !1, maxItems: void 0 }) }) }) })] });
             }
         },
         995961: (e, t, a) => {
             a.d(t, { ag: () => i, cu: () => r, hC: () => n });
             var s = a(552322),
-                l = a(164695);
+                l = a(34681);
             function r({ children: e, title: t, description: a, ...r }) {
                 return (0, s.jsx)(l.Vq, { ...r, children: e });
             }
@@ -286,7 +283,7 @@
         86982: (e, t, a) => {
             a.d(t, { E: () => o });
             var s = a(552322),
-                l = a(796309),
+                l = a(31674),
                 r = a(202784),
                 i = a(125839),
                 n = a(85349);
@@ -308,7 +305,7 @@
             a.d(t, { Z: () => p });
             var s = a(552322),
                 l = a(643715),
-                r = a(829233),
+                r = a(1468),
                 i = a(202784),
                 n = a(430962),
                 o = a(598705);
@@ -355,12 +352,12 @@
             a.d(t, { C: () => k, t: () => w });
             var s = a(552322),
                 l = a(643715),
-                r = a(829233),
-                i = a(701883),
-                n = a(941204),
-                o = a(702024),
-                c = a(407250),
-                d = a(816778),
+                r = a(1468),
+                i = a(217105),
+                n = a(332161),
+                o = a(193686),
+                c = a(917317),
+                d = a(476865),
                 m = a(969088),
                 x = a(430962),
                 u = a(840489),
@@ -403,7 +400,7 @@
                     b = (0, h.T)(),
                     g = "hourly" === i ? a : l,
                     v = b[t]?.label || t;
-                return (0, s.jsxs)(c.Zb, { className: `w-full ${e || ""}`, children: [(0, s.jsx)(c.Ol, { className: "pb-2 min-[987px]:pt-3 pt-2 h-[56px] min-[987px]:min-h-[56px] min-h-[66px]", children: (0, s.jsxs)("div", { className: "flex items-center justify-between align-top h-full", children: [(0, s.jsxs)("div", { className: "flex items-center gap-2 -mt-1", children: [(0, s.jsx)(n.x, { size: "headline2", className: "font-medium", children: f.realtimeTitle }), (0, s.jsx)("div", { className: "relative mr-1", title: f.liveDataTitle, children: (0, s.jsx)("div", { className: "h-3 w-3 rounded-full bg-red-600 animate-pulse" }) })] }), (0, s.jsx)(d.mQ, { value: i, className: "w-auto", onValueChange: (e) => p(e), children: (0, s.jsxs)(d.dr, { className: "border-0 bg-transparent p-0 min-[987px]:space-x-3 space-x-2", children: [(0, s.jsx)(d.SP, { value: "hourly", className: "px-2 py-1 data-[state=active]:bg-transparent data-[state=active]:shadow-none data-[state=active]:border-b-2 data-[state=active]:border-blue-500 data-[state=active]:rounded-none rounded-none", children: f.last48Hours }), (0, s.jsx)(d.SP, { value: "minutely", className: "px-2 py-1 data-[state=active]:bg-transparent data-[state=active]:shadow-none data-[state=active]:border-b-2 data-[state=active]:border-blue-500 data-[state=active]:rounded-none rounded-none", children: f.lastHour })] }) })] }) }), (0, s.jsx)(c.aY, { className: "pt-2 pb-2 pl-2 pr-2", children: (0, s.jsxs)("div", { className: "w-full h-[180px] relative", children: [g && (0, s.jsx)(N, { data: g, maxBarSize: "minutely" === i ? 8 : 12, intervalTicks: "minutely" === i ? 10 : 8, color: "#1DA1F2", metricLabel: v }), r && (0, s.jsx)("div", { className: (0, u.Z)("absolute inset-0 flex items-center justify-center bg-gray-0/50 pointer-events-none z-10 transition-opacity delay-100 duration-200 pb-10", { "opacity-0": !r, "opacity-100": r }), children: (0, s.jsx)(o.P, {}) })] }) })] });
+                return (0, s.jsxs)(c.Zb, { className: `w-full ${e || ""}`, children: [(0, s.jsx)(c.Ol, { className: "pb-2 min-[987px]:pt-3 pt-2 h-[56px] min-[987px]:min-h-[56px] min-h-[66px]", children: (0, s.jsxs)("div", { className: "flex items-center justify-between align-top h-full", children: [(0, s.jsxs)("div", { className: "flex items-center gap-2 -mt-1", children: [(0, s.jsx)(n.x, { size: "headline2", className: "font-medium", children: f.realtimeTitle }), (0, s.jsx)("div", { className: "relative mr-1", title: f.liveDataTitle, children: (0, s.jsx)("div", { className: "h-3 w-3 rounded-full bg-red-600 animate-pulse" }) })] }), (0, s.jsx)(d.mQ, { value: i, className: "w-auto", onValueChange: (e) => p(e), children: (0, s.jsxs)(d.dr, { className: "border-0 bg-transparent p-0 min-[987px]:space-x-3 space-x-2", children: [(0, s.jsx)(d.SP, { value: "minutely", className: "px-2 py-1 data-[state=active]:bg-transparent data-[state=active]:shadow-none data-[state=active]:border-b-2 data-[state=active]:border-blue-500 data-[state=active]:rounded-none rounded-none", children: f.lastHour }), (0, s.jsx)(d.SP, { value: "hourly", className: "px-2 py-1 data-[state=active]:bg-transparent data-[state=active]:shadow-none data-[state=active]:border-b-2 data-[state=active]:border-blue-500 data-[state=active]:rounded-none rounded-none", children: f.last48Hours })] }) })] }) }), (0, s.jsx)(c.aY, { className: "pt-2 pb-2 pl-2 pr-2", children: (0, s.jsxs)("div", { className: "w-full h-[180px] relative", children: [g && (0, s.jsx)(N, { data: g, maxBarSize: "minutely" === i ? 8 : 12, intervalTicks: "minutely" === i ? 10 : 8, color: "#1DA1F2", metricLabel: v }), r && (0, s.jsx)("div", { className: (0, u.Z)("absolute inset-0 flex items-center justify-center bg-gray-0/50 pointer-events-none z-10 transition-opacity delay-100 duration-200 pb-10", { "opacity-0": !r, "opacity-100": r }), children: (0, s.jsx)(o.P, {}) })] }) })] });
             }
         },
         777301: (e, t, a) => {
@@ -411,11 +408,11 @@
             var s = a(552322),
                 l = a(970430),
                 r = a(446368),
-                i = a(423026),
-                n = a(86781),
-                o = a(436059),
-                c = a(469745),
-                d = a(841707),
+                i = a(550775),
+                n = a(437712),
+                o = a(993165),
+                c = a(305399),
+                d = a(618349),
                 m = a(364597),
                 x = a(808106),
                 u = a(733936),
@@ -485,10 +482,10 @@
                                 toDate: v,
                                 fromDate: j,
                             }),
-                        U = (e) => {
+                        V = (e) => {
                             T.scribe({ action: "click", component: "TimeRangeSelector", element: e.label, page: "account_analytics", section: "overview" }), L(g(e.days), !1), N && F(!1);
                         };
-                    return N ? (0, s.jsx)("div", { className: "flex items-center", children: (0, s.jsx)(n.J, { alignOffset: 20, align: "end", open: D, onOpenChange: F, trigger: (0, s.jsxs)("div", { onClick: () => F((e) => !e), className: "flex items-center justify-center cursor-pointer rounded-full p-1 h-8 border border-gray-200 " + (M || I ? "px-2" : "w-8"), children: [(0, s.jsx)(d.Z, { className: "size-5" }), (M || I) && (0, s.jsx)("div", { className: "text-subtext1 flex items-center gap-1 whitespace-nowrap font-bold ml-1", children: I ? y(k) : M?.label })] }), children: (0, s.jsxs)("div", { className: "flex flex-col border border-gray-200 rounded-lg overflow-hidden", children: [(0, s.jsx)("div", { className: "p-2 flex items-center justify-between bg-background border-b border-gray-200", children: a.map((e) => (0, s.jsx)("div", { onClick: () => !e.disabled && U(e), className: `flex-1 mx-1 h-6 flex items-center justify-center cursor-pointer rounded-full text-sm font-bold ${e !== M || I ? "border border-nested-border text-text" : "bg-text text-background"} ${e.disabled ? "opacity-50 cursor-not-allowed" : ""}`, children: e.label }, e.label)) }), P("rounded-none")] }) }) }) : (0, s.jsxs)("div", { className: "flex items-center justify-start gap-2", children: [u && (0, s.jsx)(n.J, { alignOffset: 20, align: "start", trigger: (0, s.jsxs)(o.z, { variant: I ? "primaryFilled" : "primaryOutlined", size: "xSmallCompact", className: "h-8 shrink-0 px-1", children: [(0, s.jsx)(d.Z, { className: "mx-px size-5" }), I && (0, s.jsx)("div", { className: "text-subtext1 flex items-center gap-1 whitespace-nowrap font-bold", children: y(k) })] }), children: P("rounded-lg border") }), a.map((e) => (0, s.jsx)(w, { option: e, selected: e === M && !I, onClick: () => U(e) }, e.label))] });
+                    return N ? (0, s.jsx)("div", { className: "flex items-center", children: (0, s.jsx)(n.J, { alignOffset: 20, align: "end", open: D, onOpenChange: F, trigger: (0, s.jsxs)("div", { onClick: () => F((e) => !e), className: "flex items-center justify-center cursor-pointer rounded-full p-1 h-8 border border-gray-200 " + (M || I ? "px-2" : "w-8"), children: [(0, s.jsx)(d.Z, { className: "size-5" }), (M || I) && (0, s.jsx)("div", { className: "text-subtext1 flex items-center gap-1 whitespace-nowrap font-bold ml-1", children: I ? y(k) : M?.label })] }), children: (0, s.jsxs)("div", { className: "flex flex-col border border-gray-200 rounded-lg overflow-hidden", children: [(0, s.jsx)("div", { className: "p-2 flex items-center justify-between bg-background border-b border-gray-200", children: a.map((e) => (0, s.jsx)("div", { onClick: () => !e.disabled && V(e), className: `flex-1 mx-1 h-6 flex items-center justify-center cursor-pointer rounded-full text-sm font-bold ${e !== M || I ? "border border-nested-border text-text" : "bg-text text-background"} ${e.disabled ? "opacity-50 cursor-not-allowed" : ""}`, children: e.label }, e.label)) }), P("rounded-none")] }) }) }) : (0, s.jsxs)("div", { className: "flex items-center justify-start gap-2", children: [u && (0, s.jsx)(n.J, { alignOffset: 20, align: "start", trigger: (0, s.jsxs)(o.z, { variant: I ? "primaryFilled" : "primaryOutlined", size: "xSmallCompact", className: "h-8 shrink-0 px-1", children: [(0, s.jsx)(d.Z, { className: "mx-px size-5" }), I && (0, s.jsx)("div", { className: "text-subtext1 flex items-center gap-1 whitespace-nowrap font-bold", children: y(k) })] }), children: P("rounded-lg border") }), a.map((e) => (0, s.jsx)(w, { option: e, selected: e === M && !I, onClick: () => V(e) }, e.label))] });
                 },
                 w = ({ onClick: e, option: t, selected: a }) => (0, s.jsx)(o.z, { variant: a ? "primaryFilled" : "primaryOutlined", size: "small", onClick: e, className: "shrink-0", disabled: t.disabled, children: t.label });
         },
@@ -496,8 +493,8 @@
             a.d(t, { q: () => h });
             var s = a(552322),
                 l = a(643715),
-                r = a(829233),
-                i = a(701883),
+                r = a(1468),
+                i = a(217105),
                 n = a(202784),
                 o = a(598705);
             const { Bar: c, BarChart: d, CartesianGrid: m, XAxis: x, YAxis: u } = l;
@@ -565,11 +562,11 @@
         179228: (e, t, a) => {
             a.d(t, { y: () => m });
             var s = a(552322),
-                l = a(407250),
-                r = a(511974),
-                i = a(533788),
-                n = a(136048),
-                o = a(779129),
+                l = a(917317),
+                r = a(123848),
+                i = a(817614),
+                n = a(445178),
+                o = a(570306),
                 c = a(202784),
                 d = a(598705);
             function m({ videos: e }) {
@@ -620,4 +617,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-04134b17.9808c18a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-04134b17.df145e5a.js.map

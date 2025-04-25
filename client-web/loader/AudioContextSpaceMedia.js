@@ -111,7 +111,7 @@
                         selections: [
                             { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
                             { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "following", storageKey: null }, action: "THROW", path: "legacy.following" },
+                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "following", storageKey: null }, action: "THROW" },
                         ],
                         storageKey: null,
                     },
@@ -171,4 +171,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.AudioContextSpaceMedia.3a699f1a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.AudioContextSpaceMedia.aa4b1e4a.js.map

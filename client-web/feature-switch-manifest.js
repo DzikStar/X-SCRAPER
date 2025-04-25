@@ -1,5 +1,5 @@
 var manifest = {
-    feature_set_token: "6c868cf35456c1affee961e4c3b0a56c1577f2da",
+    feature_set_token: "5c3cb2d4cafece9e6dce07374491c3c43b584b59",
     config: {
         "2fa_temporary_password_enabled": { value: !1 },
         Arkose_rweb_hosted_page: { value: !0 },
@@ -282,6 +282,7 @@ var manifest = {
         payments_account_details_enabled: { value: !1 },
         payments_card_spend_enabled: { value: !1 },
         payments_cards_as_payment_method_enabled: { value: !1 },
+        payments_crb_iframe_delay_msecs: { value: 1500 },
         payments_enabled: { value: !1 },
         payments_forward_with_enabled: { value: !1 },
         payments_interest_enabled: { value: !1 },
@@ -1818,7 +1819,8 @@ var manifest = {
         payments_forward_with_enabled: { name: "payments_forward_with_enabled", type: "boolean", defaultValue: !1 },
         payments_passkey_onboarding_enabled: { name: "payments_passkey_onboarding_enabled", type: "string" },
         payments_tasks_carousel_enabled: { name: "payments_tasks_carousel_enabled", type: "string" },
-        payments_crb_iframe_delay_msecs: { name: "payments_crb_iframe_delay_msecs", type: "string" },
+        payments_crb_iframe_delay_msecs: { name: "payments_crb_iframe_delay_msecs", type: "number", defaultValue: 1500 },
+        payments_transfer_methods_enabled: { name: "payments_transfer_methods_enabled", type: "string" },
         premium_churn_prevention_offers_web_17199: { name: "premium_churn_prevention_offers_web_17199", type: "experiment", enumeration_values: ["control", "treatment"] },
         premium_content_api_read_enabled: { name: "premium_content_api_read_enabled", type: "boolean", defaultValue: !1 },
         premium_failed_payment_profile_card_17219: { name: "premium_failed_payment_profile_card_17219", type: "experiment", enumeration_values: ["control", "holdback"] },
@@ -3200,6 +3202,7 @@ var manifest = {
         web_video_transcribed_captions_enabled: { name: "web_video_transcribed_captions_enabled", type: "boolean", defaultValue: !0 },
         x_jetfuel_enable_test_cluster: { name: "x_jetfuel_enable_test_cluster", type: "boolean", defaultValue: !1 },
         x_jetfuel_enable_frames_on_posts: { name: "x_jetfuel_enable_frames_on_posts", type: "string" },
+        x_jetfuel_android_enabled: { name: "x_jetfuel_android_enabled", type: "string" },
         xprofile_editing_enabled: { name: "xprofile_editing_enabled", type: "boolean", defaultValue: !0 },
         xprofile_consumption_enabled: { name: "xprofile_consumption_enabled", type: "boolean", defaultValue: !0 },
         xprofile_emojis_enabled: { name: "xprofile_emojis_enabled", type: "boolean", defaultValue: !0 },

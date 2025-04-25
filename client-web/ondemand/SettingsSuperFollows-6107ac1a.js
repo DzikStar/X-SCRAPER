@@ -117,17 +117,15 @@
                                                 kind: "LinkedField",
                                                 name: "user_results",
                                                 plural: !1,
-                                                selections: [{ kind: "RequiredField", field: { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ kind: "InlineFragment", selections: [(r = { alias: null, args: null, concreteType: "StripeConnectAccount", kind: "LinkedField", name: "stripe_connect_account", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "status", storageKey: null }], storageKey: null }), (s = { alias: null, args: (i = [{ kind: "Literal", name: "verified_program_types", value: ["AdRevenueSharing"] }]), concreteType: "VerifiedProgramsApplicationStatus", kind: "LinkedField", name: "verified_program_application_status", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "ad_revenue_sharing_application_status", storageKey: null }], storageKey: 'verified_program_application_status(verified_program_types:["AdRevenueSharing"])' }), (t = { alias: null, args: i, concreteType: "VerifiedProgramsEligibilities", kind: "LinkedField", name: "verified_program_eligibility", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "ad_revenue_sharing_eligibility", storageKey: null }], storageKey: 'verified_program_eligibility(verified_program_types:["AdRevenueSharing"])' }), (o = { alias: null, args: i, concreteType: "VerifiedUserProfile", kind: "LinkedField", name: "verified_user_profiles", plural: !1, selections: [{ alias: null, args: null, concreteType: "AdRevenueSharingUserProfile", kind: "LinkedField", name: "ad_revenue_sharing_user_profile", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "is_active", storageKey: null }], storageKey: null }], storageKey: 'verified_user_profiles(verified_program_types:["AdRevenueSharing"])' })], type: "User", abstractKey: null }], storageKey: null }, action: "THROW", path: "viewer.user_results.result" }],
+                                                selections: [{ kind: "RequiredField", field: { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ kind: "InlineFragment", selections: [(r = { alias: null, args: null, concreteType: "StripeConnectAccount", kind: "LinkedField", name: "stripe_connect_account", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "status", storageKey: null }], storageKey: null }), (s = { alias: null, args: (i = [{ kind: "Literal", name: "verified_program_types", value: ["AdRevenueSharing"] }]), concreteType: "VerifiedProgramsApplicationStatus", kind: "LinkedField", name: "verified_program_application_status", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "ad_revenue_sharing_application_status", storageKey: null }], storageKey: 'verified_program_application_status(verified_program_types:["AdRevenueSharing"])' }), (t = { alias: null, args: i, concreteType: "VerifiedProgramsEligibilities", kind: "LinkedField", name: "verified_program_eligibility", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "ad_revenue_sharing_eligibility", storageKey: null }], storageKey: 'verified_program_eligibility(verified_program_types:["AdRevenueSharing"])' }), (o = { alias: null, args: i, concreteType: "VerifiedUserProfile", kind: "LinkedField", name: "verified_user_profiles", plural: !1, selections: [{ alias: null, args: null, concreteType: "AdRevenueSharingUserProfile", kind: "LinkedField", name: "ad_revenue_sharing_user_profile", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "is_active", storageKey: null }], storageKey: null }], storageKey: 'verified_user_profiles(verified_program_types:["AdRevenueSharing"])' })], type: "User", abstractKey: null }], storageKey: null }, action: "THROW" }],
                                                 storageKey: null,
                                             },
                                             action: "THROW",
-                                            path: "viewer.user_results",
                                         },
                                     ],
                                     storageKey: 'viewer_v2(s:"4721")',
                                 },
                                 action: "THROW",
-                                path: "viewer",
                             },
                         ],
                         type: "Query",
@@ -262,19 +260,16 @@
                                                             storageKey: null,
                                                         },
                                                         action: "THROW",
-                                                        path: "viewer.user_results.result",
                                                     },
                                                 ],
                                                 storageKey: null,
                                             },
                                             action: "THROW",
-                                            path: "viewer.user_results",
                                         },
                                     ],
                                     storageKey: 'viewer_v2(s:"4721")',
                                 },
                                 action: "THROW",
-                                path: "viewer",
                             },
                         ],
                         type: "Query",
@@ -419,14 +414,7 @@
                         kind: "Fragment",
                         metadata: null,
                         name: "PreRollAdsApplicationQuery",
-                        selections: [
-                            {
-                                kind: "RequiredField",
-                                field: { alias: "viewer", args: (l = [{ kind: "Literal", name: "s", value: "4721" }]), concreteType: "Viewer", kind: "LinkedField", name: "viewer_v2", plural: !1, selections: [{ kind: "RequiredField", field: { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ kind: "RequiredField", field: { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ kind: "InlineFragment", selections: [(r = { alias: null, args: null, concreteType: "StripeConnectAccount", kind: "LinkedField", name: "stripe_connect_account", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "status", storageKey: null }], storageKey: null }), (s = { alias: null, args: (i = [{ kind: "Literal", name: "verified_program_types", value: ["AdRevenueSharing"] }]), concreteType: "VerifiedProgramsEligibilities", kind: "LinkedField", name: "verified_program_eligibility", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "ad_revenue_sharing_eligibility", storageKey: null }], storageKey: 'verified_program_eligibility(verified_program_types:["AdRevenueSharing"])' }), (t = { alias: null, args: i, concreteType: "VerifiedUserProfile", kind: "LinkedField", name: "verified_user_profiles", plural: !1, selections: [{ alias: null, args: null, concreteType: "AdRevenueSharingUserProfile", kind: "LinkedField", name: "ad_revenue_sharing_user_profile", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "is_active", storageKey: null }], storageKey: null }], storageKey: 'verified_user_profiles(verified_program_types:["AdRevenueSharing"])' })], type: "User", abstractKey: null }], storageKey: null }, action: "THROW", path: "viewer.user_results.result" }], storageKey: null }, action: "THROW", path: "viewer.user_results" }], storageKey: 'viewer_v2(s:"4721")' },
-                                action: "THROW",
-                                path: "viewer",
-                            },
-                        ],
+                        selections: [{ kind: "RequiredField", field: { alias: "viewer", args: (l = [{ kind: "Literal", name: "s", value: "4721" }]), concreteType: "Viewer", kind: "LinkedField", name: "viewer_v2", plural: !1, selections: [{ kind: "RequiredField", field: { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ kind: "RequiredField", field: { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ kind: "InlineFragment", selections: [(r = { alias: null, args: null, concreteType: "StripeConnectAccount", kind: "LinkedField", name: "stripe_connect_account", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "status", storageKey: null }], storageKey: null }), (s = { alias: null, args: (i = [{ kind: "Literal", name: "verified_program_types", value: ["AdRevenueSharing"] }]), concreteType: "VerifiedProgramsEligibilities", kind: "LinkedField", name: "verified_program_eligibility", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "ad_revenue_sharing_eligibility", storageKey: null }], storageKey: 'verified_program_eligibility(verified_program_types:["AdRevenueSharing"])' }), (t = { alias: null, args: i, concreteType: "VerifiedUserProfile", kind: "LinkedField", name: "verified_user_profiles", plural: !1, selections: [{ alias: null, args: null, concreteType: "AdRevenueSharingUserProfile", kind: "LinkedField", name: "ad_revenue_sharing_user_profile", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "is_active", storageKey: null }], storageKey: null }], storageKey: 'verified_user_profiles(verified_program_types:["AdRevenueSharing"])' })], type: "User", abstractKey: null }], storageKey: null }, action: "THROW" }], storageKey: null }, action: "THROW" }], storageKey: 'viewer_v2(s:"4721")' }, action: "THROW" }],
                         type: "Query",
                         abstractKey: null,
                     },
@@ -485,7 +473,7 @@
                 r,
                 i,
                 s = {
-                    fragment: { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "PreRollAdsEligibilityScreenQuery", selections: [{ kind: "RequiredField", field: { alias: "viewer", args: (l = [{ kind: "Literal", name: "s", value: "4721" }]), concreteType: "Viewer", kind: "LinkedField", name: "viewer_v2", plural: !1, selections: [{ kind: "RequiredField", field: { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ kind: "RequiredField", field: { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ kind: "InlineFragment", selections: [(r = { alias: null, args: [{ kind: "Literal", name: "verified_program_types", value: ["AdRevenueSharing"] }], concreteType: "VerifiedProgramsEligibilities", kind: "LinkedField", name: "verified_program_eligibility", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "ad_revenue_sharing_eligibility", storageKey: null }], storageKey: 'verified_program_eligibility(verified_program_types:["AdRevenueSharing"])' })], type: "User", abstractKey: null }], storageKey: null }, action: "THROW", path: "viewer.user_results.result" }], storageKey: null }, action: "THROW", path: "viewer.user_results" }], storageKey: 'viewer_v2(s:"4721")' }, action: "THROW", path: "viewer" }], type: "Query", abstractKey: null },
+                    fragment: { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "PreRollAdsEligibilityScreenQuery", selections: [{ kind: "RequiredField", field: { alias: "viewer", args: (l = [{ kind: "Literal", name: "s", value: "4721" }]), concreteType: "Viewer", kind: "LinkedField", name: "viewer_v2", plural: !1, selections: [{ kind: "RequiredField", field: { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ kind: "RequiredField", field: { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ kind: "InlineFragment", selections: [(r = { alias: null, args: [{ kind: "Literal", name: "verified_program_types", value: ["AdRevenueSharing"] }], concreteType: "VerifiedProgramsEligibilities", kind: "LinkedField", name: "verified_program_eligibility", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "ad_revenue_sharing_eligibility", storageKey: null }], storageKey: 'verified_program_eligibility(verified_program_types:["AdRevenueSharing"])' })], type: "User", abstractKey: null }], storageKey: null }, action: "THROW" }], storageKey: null }, action: "THROW" }], storageKey: 'viewer_v2(s:"4721")' }, action: "THROW" }], type: "Query", abstractKey: null },
                     kind: "Request",
                     operation: {
                         argumentDefinitions: [],
@@ -1092,8 +1080,8 @@
                         plural: !1,
                         selections: [
                             { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null },
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }, action: "THROW", path: "legacy.protected" },
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }, action: "THROW", path: "legacy.verified" },
+                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }, action: "THROW" },
+                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }, action: "THROW" },
                             { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
                             { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
                         ],
@@ -1478,19 +1466,16 @@
                                                             storageKey: null,
                                                         },
                                                         action: "THROW",
-                                                        path: "viewer.user_results.result",
                                                     },
                                                 ],
                                                 storageKey: null,
                                             },
                                             action: "THROW",
-                                            path: "viewer.user_results",
                                         },
                                     ],
                                     storageKey: 'viewer_v2(s:"4721")',
                                 },
                                 action: "THROW",
-                                path: "viewer",
                             },
                         ],
                         type: "Query",
@@ -1586,14 +1571,14 @@
                                 },
                             }));
                     }, [o, p, e, _, r, s]),
-                    f = (0, g.p)(e, a, n);
-                return l.useMemo(() => (m ? { data: f, refetch: S, refetchStatus: c.ZP.FAILED, refetchError: m } : { data: f, refetch: S, refetchStatus: _ ? c.ZP.LOADING : c.ZP.NONE, refetchError: void 0 }), [f, m, _, S]);
+                    F = (0, g.p)(e, a, n);
+                return l.useMemo(() => (m ? { data: F, refetch: S, refetchStatus: c.ZP.FAILED, refetchError: m } : { data: F, refetch: S, refetchStatus: _ ? c.ZP.LOADING : c.ZP.NONE, refetchError: void 0 }), [F, m, _, S]);
             }
         },
         207070: (e, a, n) => {
             n.d(a, { Z: () => g });
             var l = n(807896),
-                r = { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "UserScreenName_user", selections: [{ alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }, action: "THROW", path: "legacy.screen_name" }], storageKey: null }], type: "User", abstractKey: null, hash: "7f06a4ed2567ecda36b0482367c1b006" };
+                r = { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "UserScreenName_user", selections: [{ alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }, action: "THROW" }], storageKey: null }], type: "User", abstractKey: null, hash: "7f06a4ed2567ecda36b0482367c1b006" };
             const i = r;
             var s = n(202784),
                 t = (n(585488), n(277660)),
@@ -1622,14 +1607,14 @@
                 m = n(392237);
             const k = m.default.create((e) => ({ root: { padding: e.spaces.space4, borderRadius: e.borderRadii.large, overflow: "hidden" }, base: { flexDirection: "row", justifyContent: "space-between", flexGrow: 1 }, backgroundColor: { backgroundColor: e.colors.cellBackground }, border: { borderRadius: e.borderRadii.large, borderWidth: e.borderWidths.medium, borderColor: e.colors.transparent }, borderColor: { borderColor: e.colors.borderColor }, activeBorder: { borderColor: e.colors.blue500 }, containerClicked: { backgroundColor: e.colors.primary }, interactive: { cursor: "pointer" }, radioBackground: { borderRadius: e.borderRadii.infinite, margin: `-${e.spaces.space8}`, padding: e.spaces.space8 }, textContainer: { margin: e.spaces.space12, flexShrink: 1 }, radioContainer: { userSelect: "none", marginEnd: e.spaces.space12, marginTop: e.spaces.space12, position: "absolute", end: "0px" }, helpText: { marginTop: e.spaces.space8 }, tileStyle: { height: "inherit" }, mainContainer: { padding: e.spaces.space4 }, circleDisabled: { borderColor: e.colors.gray200 }, circleCheckedAndDisabled: { backgroundColor: e.colors.gray300, borderColor: e.colors.gray300 }, circle: { alignItems: "center", backgroundColor: e.colors.cellBackground, borderColor: e.colors.gray700, borderStyle: "solid", borderWidth: e.borderWidths.medium, borderRadius: e.spaces.space32, height: e.spaces.space20, justifyContent: "center", width: e.spaces.space20 }, circleActive: { borderColor: e.colors.primary, backgroundColor: e.colors.primary }, checkMark: { width: "18px", height: "18px", color: e.colors.whiteOnColor } })),
                 _ = { ...m.default.absoluteFillObject, cursor: "inherit", height: "100%", margin: 0, opacity: 0, padding: 0, width: "100%" },
-                y = ({ "aria-label": e, "aria-posinset": a, "aria-setsize": n, checked: l, disabled: i, helpText: y, label: S, name: f, onChange: F, renderBorderWhenSelected: b, selectorBackgroundStyles: w }) => {
+                y = ({ "aria-label": e, "aria-posinset": a, "aria-setsize": n, checked: l, disabled: i, helpText: y, label: S, name: F, onChange: f, renderBorderWhenSelected: b, selectorBackgroundStyles: w }) => {
                     const v = c.Z.generate({ backgroundColor: m.default.theme.colors.transparent, color: l ? m.default.theme.colors.primary : m.default.theme.colors.gray700, withFocusWithinFocusRing: !0 }),
                         h = (0, p.b)(),
                         K = (0, p.b)();
-                    return r.createElement(d.Z, { disabled: i }, (d) => r.createElement(s.Z, { style: k.root }, r.createElement(s.Z, { role: "label", style: [k.base, w || k.backgroundColor, k.border, b ? null : k.borderColor, b && l && k.activeBorder, !i && k.interactive] }, r.createElement(s.Z, { style: k.textContainer }, r.createElement(u.ZP, { id: h, weight: "bold" }, S), y && r.createElement(u.ZP, { color: "gray700", id: K, size: "subtext2", style: k.helpText }, y)), r.createElement(s.Z, { style: k.radioContainer }, b ? null : r.createElement(g.Z, { disabled: i, interactiveStyles: v, interactivityState: d, style: k.radioBackground }, r.createElement(s.Z, { style: [k.circle, l && k.circleActive, i && k.circleDisabled, l && i && k.circleCheckedAndDisabled] }, l ? r.createElement(t.default, { style: k.checkMark }) : null)), r.createElement("input", { "aria-describedby": K, "aria-label": e, "aria-labelledby": h, "aria-posinset": a, "aria-setsize": n, checked: l, disabled: i, name: f, onChange: l ? o.Z : F, style: _, type: "radio" })))));
+                    return r.createElement(d.Z, { disabled: i }, (d) => r.createElement(s.Z, { style: k.root }, r.createElement(s.Z, { role: "label", style: [k.base, w || k.backgroundColor, k.border, b ? null : k.borderColor, b && l && k.activeBorder, !i && k.interactive] }, r.createElement(s.Z, { style: k.textContainer }, r.createElement(u.ZP, { id: h, weight: "bold" }, S), y && r.createElement(u.ZP, { color: "gray700", id: K, size: "subtext2", style: k.helpText }, y)), r.createElement(s.Z, { style: k.radioContainer }, b ? null : r.createElement(g.Z, { disabled: i, interactiveStyles: v, interactivityState: d, style: k.radioBackground }, r.createElement(s.Z, { style: [k.circle, l && k.circleActive, i && k.circleDisabled, l && i && k.circleCheckedAndDisabled] }, l ? r.createElement(t.default, { style: k.checkMark }) : null)), r.createElement("input", { "aria-describedby": K, "aria-label": e, "aria-labelledby": h, "aria-posinset": a, "aria-setsize": n, checked: l, disabled: i, name: F, onChange: l ? o.Z : f, style: _, type: "radio" })))));
                 },
                 S = (e) => r.createElement(i.Z, (0, l.Z)({}, e, { renderSelector: (e) => r.createElement(y, (0, l.Z)({}, e, { key: e.value })) }));
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsSuperFollows-6107ac1a.a686871a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsSuperFollows-6107ac1a.1f6c711a.js.map

@@ -65,8 +65,8 @@
             const h = ({ buttonProps: e, destinationLink: a, onDestinationClick: t, renderProperties: { action_label: o } }) => r.createElement(m.ZP, { link: a, onClick: t, type: e?.type }, o);
             var g = t(731708),
                 f = t(392237);
-            const D = ({ destinationLink: e, onDestinationClick: a, renderProperties: { cta: t, primary_label: n, secondary_label: d } }) => r.createElement(o.Z, { style: S.card }, r.createElement(g.ZP, { size: "headline1", weight: "heavy" }, n), d ? r.createElement(g.ZP, null, d) : null, r.createElement(h, { buttonProps: { type: "brandFilled" }, destinationLink: e, onDestinationClick: a, renderProperties: t })),
-                S = f.default.create((e) => ({ card: { gap: e.spaces.space12, alignItems: "flex-start", borderRadius: e.borderRadii.large, backgroundColor: e.colors.cellBackground, borderColor: e.colors.borderColor, borderWidth: e.borderWidths.small, paddingVertical: e.spaces.space12, paddingHorizontal: e.spaces.space16 } })),
+            const S = ({ destinationLink: e, onDestinationClick: a, renderProperties: { cta: t, primary_label: n, secondary_label: d } }) => r.createElement(o.Z, { style: D.card }, r.createElement(g.ZP, { size: "headline1", weight: "heavy" }, n), d ? r.createElement(g.ZP, null, d) : null, r.createElement(h, { buttonProps: { type: "brandFilled" }, destinationLink: e, onDestinationClick: a, renderProperties: t })),
+                D = f.default.create((e) => ({ card: { gap: e.spaces.space12, alignItems: "flex-start", borderRadius: e.borderRadii.large, backgroundColor: e.colors.cellBackground, borderColor: e.colors.borderColor, borderWidth: e.borderWidths.small, paddingVertical: e.spaces.space12, paddingHorizontal: e.spaces.space16 } })),
                 y = ({ destinationLink: e, onDestinationClick: a, renderProperties: t }) => {
                     const n = r.useMemo(() => {
                         const o = { destinationLink: e, onDestinationClick: a };
@@ -74,7 +74,7 @@
                             case "UpsellButtonRenderProperties":
                                 return r.createElement(h, (0, b.Z)({}, o, { renderProperties: t }));
                             case "UpsellCardRenderProperties":
-                                return r.createElement(D, (0, b.Z)({}, o, { renderProperties: t }));
+                                return r.createElement(S, (0, b.Z)({}, o, { renderProperties: t }));
                             default:
                                 return null;
                         }
@@ -133,17 +133,17 @@
             const m = i.default.create((e) => ({ root: { marginHorizontal: "auto", width: "100%" }, rootMedium: { position: "absolute", bottom: 0, start: 0, end: 0 }, rootLarge: { maxWidth: 1e3 }, fabStaysAboveSafeArea: { top: `calc(${i.default.iPhoneOffsetBottom} - ${u.ZM.getAppBarHeight()} - ${e.spaces.space20})` }, fab: { bottom: e.spaces.space20, alignSelf: "flex-end", end: e.spaces.space20 }, fabLarge: { end: e.spaces.space20 }, fabMicro: { bottom: e.spaces.space16, end: e.spaces.space16 }, buttonMicro: { height: e.spaces.space40, width: e.spaces.space40 } })),
                 h = (e) => {
                     const { "aria-label": a, label: t, onPress: h, scribeComponent: g, ...f } = e,
-                        { loggedInUserId: D } = o.useContext(b.rC),
-                        S = (0, p.z)(),
+                        { loggedInUserId: S } = o.useContext(b.rC),
+                        D = (0, p.z)(),
                         y = o.useCallback(
                             (e) => {
-                                S.scribe({ component: g, action: "click" }), h && h(e);
+                                D.scribe({ component: g, action: "click" }), h && h(e);
                             },
-                            [S, h, g],
+                            [D, h, g],
                         ),
                         w = u.ZM.useCollapsibleNavBars(),
                         C = [...u.Ah({ elementPosition: "bottom" }), w && m.fabStaysAboveSafeArea];
-                    return D
+                    return S
                         ? o.createElement(
                               d.Z.FloatingAction,
                               null,
@@ -288,8 +288,8 @@
                 h = t(789831),
                 g = t(143670),
                 f = t(731708),
-                D = t(157130),
-                S = t(661810),
+                S = t(157130),
+                D = t(661810),
                 y = t(154003),
                 w = t(293723),
                 C = t(263272),
@@ -319,7 +319,7 @@
                             (e, n) => {
                                 const l = e === _;
                                 return r.createElement(g.Z, {
-                                    actionText: r.createElement(o.Z, { style: R.focusedModePopoverMenuItem }, r.createElement(f.ZP, null, e), t === l ? r.createElement(w.default, { style: R.focusedModeGreenCheck }) : r.createElement(C.default, null)),
+                                    actionText: r.createElement(o.Z, { style: B.focusedModePopoverMenuItem }, r.createElement(f.ZP, null, e), t === l ? r.createElement(w.default, { style: B.focusedModeGreenCheck }) : r.createElement(C.default, null)),
                                     onClick: () => {
                                         t !== l && "Idle" === a && d(!t), n();
                                     },
@@ -328,7 +328,7 @@
                             [t, a],
                         );
                     return r.createElement(
-                        D.Z,
+                        S.Z,
                         {
                             animationDuration: "normal",
                             onAnimateComplete: () => {
@@ -336,14 +336,14 @@
                             },
                             preferredHorizontalOrientation: "start",
                             preferredVerticalOrientation: "down",
-                            renderContent: (e) => r.createElement(r.Fragment, null, l(T, e), r.createElement(S.Z, { style: R.divider }), l(_, e)),
+                            renderContent: (e) => r.createElement(r.Fragment, null, l(T, e), r.createElement(D.Z, { style: B.divider }), l(_, e)),
                             withMask: !0,
                         },
-                        r.createElement(y.ZP, { icon: r.createElement(M.default, null), style: R.focusedModeButton }, r.createElement(f.ZP, { style: R.focusedModeButtonText }, n ? _ : T), r.createElement(A.default, null)),
+                        r.createElement(y.ZP, { icon: r.createElement(M.default, null), style: B.focusedModeButton }, r.createElement(f.ZP, { style: B.focusedModeButtonText }, n ? _ : T), r.createElement(A.default, null)),
                     );
                 },
-                R = s.default.create((e) => ({ focusedModeButton: { paddingEnd: e.spaces.space12 }, focusedModeButtonText: { marginStart: e.spaces.space4, marginEnd: e.spaces.space8 }, focusedModePopoverMenuItem: { display: "flex", flexDirection: "row", justifyContent: "space-between", padding: e.spaces.space4 }, focusedModeGreenCheck: { color: e.colors.green500 }, divider: { marginHorizontal: e.spaces.space20 } }));
-            var B = t(788994),
+                B = s.default.create((e) => ({ focusedModeButton: { paddingEnd: e.spaces.space12 }, focusedModeButtonText: { marginStart: e.spaces.space4, marginEnd: e.spaces.space8 }, focusedModePopoverMenuItem: { display: "flex", flexDirection: "row", justifyContent: "space-between", padding: e.spaces.space4 }, focusedModeGreenCheck: { color: e.colors.green500 }, divider: { marginHorizontal: e.spaces.space20 } }));
+            var R = t(788994),
                 Z = t(252021),
                 I = t(854239),
                 x = t(316732),
@@ -404,7 +404,7 @@
                     function f() {
                         m(!1);
                     }
-                    function D(a) {
+                    function S(a) {
                         const t = a.id === s.id && a.type === s.type,
                             o = a.type === O.Jz.COMMUNITY && t,
                             n = a.name,
@@ -436,13 +436,13 @@
                         r.useEffect(() => {
                             t().catch(a());
                         }, [a, t]);
-                    const S = [D({ name: ee, type: O.Jz.HOME }), D({ name: ae, type: O.Jz.HOME_LATEST })];
-                    n && S.push(D({ name: te, type: O.Jz.CREATOR_SUBSCRIPTIONS })), l.forEach((e) => S.push(D(e)));
+                    const D = [S({ name: ee, type: O.Jz.HOME }), S({ name: ae, type: O.Jz.HOME_LATEST })];
+                    n && D.push(S({ name: te, type: O.Jz.CREATOR_SUBSCRIPTIONS })), l.forEach((e) => D.push(S(e)));
                     const y = (0, W.hC)("rweb_sourcemap_migration"),
                         w = (0, W.hC)("rweb_sourcemap_migration_focused_mode") && y;
-                    if (S.length < 2) return null;
+                    if (D.length < 2) return null;
                     const C = (0, F.ZP)();
-                    return i ? r.createElement(o.Z, { style: ne.tabsContainer }, r.createElement(N.Z, { alignFirstItem: C, links: S, style: ne.tabs }), r.createElement(o.Z, { style: [ne.rightControlContainer, w && ne.focusedModeRightControlContainer] }, i), b && r.createElement(Q, { onChange: g, onDismiss: f, value: c })) : r.createElement(r.Fragment, null, r.createElement(N.Z, { alignFirstItem: C, links: S }), b && r.createElement(Q, { onChange: g, onDismiss: f, value: c }));
+                    return i ? r.createElement(o.Z, { style: ne.tabsContainer }, r.createElement(N.Z, { alignFirstItem: C, links: D, style: ne.tabs }), r.createElement(o.Z, { style: [ne.rightControlContainer, w && ne.focusedModeRightControlContainer] }, i), b && r.createElement(Q, { onChange: g, onDismiss: f, value: c })) : r.createElement(r.Fragment, null, r.createElement(N.Z, { alignFirstItem: C, links: D }), b && r.createElement(Q, { onChange: g, onDismiss: f, value: c }));
                 });
             var le = t(652904),
                 ie = t(614983),
@@ -455,8 +455,8 @@
                 he = t(810641),
                 ge = t(438965),
                 fe = t(335632);
-            const De = (0, U.Z)().propsFromState(() => ({ selectedTimeline: $.br, sort: $.sI, viewerUserId: j._h }));
-            var Se = t(807896),
+            const Se = (0, U.Z)().propsFromState(() => ({ selectedTimeline: $.br, sort: $.sI, viewerUserId: j._h }));
+            var De = t(807896),
                 ye = t(457311),
                 we = t(725516);
             const Ce = { header: u().a1ab9c80, message: u().b32c4fb0 },
@@ -471,17 +471,17 @@
                         a.scribe({ action: "impression", component: "empty_message" });
                     }, [a]),
                     n = r.useMemo(() => (e === O.Jz.COMMUNITY ? Ce : e === O.Jz.LIST ? Ae : Me), [e]);
-                return r.createElement(ye.Z, (0, Se.Z)({ onButtonPress: t, onImpression: o }, n));
+                return r.createElement(ye.Z, (0, De.Z)({ onButtonPress: t, onImpression: o }, n));
             }
             var ve = t(791632);
             var ke = t(985366),
                 _e = t(383675),
                 Te = t(255117),
                 Pe = t(506653),
-                Re = t(290297);
-            const Be = u().f089620c,
+                Be = t(290297);
+            const Re = u().f089620c,
                 Ze = (0, be.ZP)(
-                    De(({ history: e, location: a, selectedTimeline: t, sort: o, recordTTFT: n = ce.jN, timelineRef: d, viewerUserId: l }) => {
+                    Se(({ history: e, location: a, selectedTimeline: t, sort: o, recordTTFT: n = ce.jN, timelineRef: d, viewerUserId: l }) => {
                         const { featureSwitches: i } = r.useContext(L.rC),
                             s = r.useRef(!0);
                         se()(l, "viewerUserId must be defined");
@@ -503,13 +503,13 @@
                                             l = d || t.type,
                                             i = n || t.id,
                                             s = d ? d === O.Jz.HOME_LATEST : t.type === O.Jz.HOME_LATEST;
-                                        return l === O.Jz.COMMUNITY && i ? (0, ke.Qx)(String(i), { displayLocation: "Home", rankingMode: r }) : l === O.Jz.CREATOR_SUBSCRIPTIONS ? (0, Re.Z)({ userId: o }) : l === O.Jz.GENERIC && i ? (0, _e.R)(String(i)) : l === O.Jz.LIST && i ? (0, Pe.Z)({ listId: String(i) }) : (0, Te.ZP)({ useLatest: s, userId: o });
+                                        return l === O.Jz.COMMUNITY && i ? (0, ke.Qx)(String(i), { displayLocation: "Home", rankingMode: r }) : l === O.Jz.CREATOR_SUBSCRIPTIONS ? (0, Be.Z)({ userId: o }) : l === O.Jz.GENERIC && i ? (0, _e.R)(String(i)) : l === O.Jz.LIST && i ? (0, Pe.Z)({ listId: String(i) }) : (0, Te.ZP)({ useLatest: s, userId: o });
                                     })({ history: e, location: a, selectedTimeline: t, sort: o, viewerUserId: l }),
                                 [e, a, t, o, l],
                             ),
                             m = r.useCallback(() => r.createElement(Ee, { timelineType: t.type }), [t]),
                             h = r.useMemo(() => (0, fe.G)({ hideReplyContextMode: i.isTrue("rweb_tweets_reply_context_hidden") ? ge.j.TIMELINE : void 0, isCompact: p.ZP.isMobileOS() && i.isTrue("rweb_home_compact_timeline_enabled"), withUserPresence: i.isTrue("responsive_web_audio_space_ring_home_timeline") }), [i]);
-                        return r.createElement(he.Z, { entryConfiguration: h, isSingleDirection: c, module: b, onEntriesRendered: u, prerollDisplayLocation: me.Nw.TIMELINE_HOME, renderEmptyState: m, timelineRef: d, title: Be, withNewTweetsPill: !0 });
+                        return r.createElement(he.Z, { entryConfiguration: h, isSingleDirection: c, module: b, onEntriesRendered: u, prerollDisplayLocation: me.Nw.TIMELINE_HOME, renderEmptyState: m, timelineRef: d, title: Re, withNewTweetsPill: !0 });
                     }),
                 );
             var Ie = t(791983),
@@ -548,18 +548,17 @@
                     loader: () =>
                         (Le.H1.preload() || Promise.resolve()).then(() =>
                             Promise.all([
-                                t.e("icons.5"),
-                                t.e("icons.6"),
-                                t.e("icons.25"),
-                                t.e("icons.15"),
-                                t.e("icons.20"),
-                                t.e("icons.0"),
+                                t.e("icons.8"),
+                                t.e("icons.24"),
+                                t.e("icons.9"),
+                                t.e("icons.22"),
+                                t.e("icons.12"),
                                 t.e("modules.common-e907d115"),
                                 t.e("modules.common-e019dbda"),
-                                t.e("icons.11"),
-                                t.e("icons.27"),
-                                t.e("icons.17"),
-                                t.e("icons.12"),
+                                t.e("icons.14"),
+                                t.e("icons.18"),
+                                t.e("icons.21"),
+                                t.e("icons.16"),
                                 t.e("modules.audio-6107ac1a"),
                                 t.e("modules.audio-b953418a"),
                                 t.e("modules.audio-7c51e6a7"),
@@ -570,7 +569,9 @@
                                 t.e("modules.audio-e019dbda"),
                                 t.e("modules.audio-262c94d4"),
                                 t.e("modules.audio-c6fe4ea4"),
-                                t.e("icons.24"),
+                                t.e("icons.1"),
+                                t.e("icons.0"),
+                                t.e("icons.4"),
                                 t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                                 t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                                 t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -601,7 +602,7 @@
                                 t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
                                 t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                                 t.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                                t.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2f4a3d25"),
+                                t.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-00a077b2"),
                                 t.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                                 t.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                                 t.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -614,14 +615,16 @@
                                 t.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-aaf38a28"),
                                 t.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-aeee0c9e"),
                                 t.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-da0e99d8"),
-                                t.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-3931c1f3"),
+                                t.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-4b805c4b"),
                                 t.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-c377d397"),
-                                t.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-e4b9a405"),
-                                t.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-f17e8d44"),
-                                t.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-f39972b2"),
-                                t.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-568e95f0"),
-                                t.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1895c9ee"),
-                                t.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8fe22a9e"),
+                                t.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8c219810"),
+                                t.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-9b4c2397"),
+                                t.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-c2fdd616"),
+                                t.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-70774d80"),
+                                t.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-92c1aea7"),
+                                t.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8767a721"),
+                                t.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-d5c922ba"),
+                                t.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-e9891f16"),
                                 t.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-0a8205ef"),
                                 t.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-5719ea67"),
                                 t.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1b6af858"),
@@ -673,8 +676,8 @@
                                 t.e("shared~loader.DMDrawer~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompose~loader.HWCard~l-a9a3eb61"),
                                 t.e("shared~loader.DMDrawer~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompose~loader.HWCard~l-0657330d"),
                                 t.e("shared~loader.DMDrawer~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompose~loader.HWCard~l-76dc24ae"),
+                                t.e("shared~bundle.AccountVerification~bundle.SettingsProfile~bundle.UserLists~loader.MediaPickerWithPreview~bundl"),
                                 t.e("shared~bundle.Compose~bundle.ConversationWithRelay~bundle.Conversation~bundle.RichTextCompose"),
-                                t.e("shared~bundle.AccountVerification~bundle.SettingsProfile~loader.MediaPickerWithPreview~bundle.RichTextCompose"),
                                 t.e("shared~bundle.TwitterArticles~bundle.Compose~bundle.RichTextCompose"),
                                 t.e("shared~bundle.Compose~bundle.RichTextCompose-bc6ccf4c"),
                                 t.e("shared~bundle.Compose~bundle.RichTextCompose-a2dee9c7"),
@@ -748,26 +751,26 @@
                     );
                 };
             var fa = t(936572);
-            const Da = (0, U.Z)()
+            const Sa = (0, U.Z)()
                     .propsFromState(() => ({ selectedTimeline: $.br, isSideNavExpandedByUser: fa.op }))
                     .withAnalytics({ page: "home" }),
-                Sa = u().ha8209bc,
+                Da = u().ha8209bc,
                 ya = r.createElement(Ie.c, null),
                 wa = r.createElement(b.Z, null);
             function Ca({ analytics: e, history: a, isSideNavExpandedByUser: t, location: s, selectedTimeline: c }) {
                 const { featureSwitches: u, isRestrictedSession: b, userClaims: g } = (0, L.QZ)(),
                     f = r.useRef(performance?.mark?.("home-page-init-start")),
-                    D = r.useRef(null),
-                    S = r.useRef(!1),
+                    S = r.useRef(null),
+                    D = r.useRef(!1),
                     y = r.useRef(1 / 0),
                     w = r.useRef(null),
                     C = c.type === O.FO.COMMUNITY;
                 r.useEffect(
                     () => (
-                        (S.current = !0),
+                        (D.current = !0),
                         f.current && performance?.measure?.("home-page-init", "home-page-init-start"),
                         () => {
-                            S.current = !1;
+                            D.current = !1;
                         }
                     ),
                     [],
@@ -792,11 +795,11 @@
                         if (u.isTrue("responsive_web_framerate_tracking_home_enabled")) {
                             const e = `home${p.ZP.isDesktopOS() ? "" : "_mobile"}`;
                             sa().then((a) => {
-                                S.current && a && (D.current = a({ reportNamespace: e }));
+                                D.current && a && (S.current = a({ reportNamespace: e }));
                             });
                         }
                         return () => {
-                            D.current?.stop();
+                            S.current?.stop();
                         };
                     }, [u]);
                 const M = r.useCallback(() => {
@@ -812,7 +815,7 @@
                     v = { page: "home", section: c.type === O.Jz.GENERIC ? c.scribe : O.yu[c.type] },
                     _ = !(0, F.ZP)(),
                     T = _ ? r.createElement(m.Z, { style: Ma.icon }) : void 0,
-                    R = _ ? null : Sa,
+                    B = _ ? null : Da,
                     z = u.isTrue("rweb_sourcemap_migration"),
                     N = u.isTrue("rweb_sourcemap_migration_focused_mode"),
                     W = g.isAnyPremiumSubscriber(),
@@ -830,10 +833,10 @@
                         return null;
                     }, [_, g, u]),
                     ee = r.useMemo(() => r.createElement(o.Z, { style: [Ma.searchContainer, ia.W.contentOneColumnRedesign, G && Ma.squished, q] }, r.createElement(Le.Rj, { shouldHandleSearchShortcut: !0 })), [G, q]);
-                return r.createElement(ua.nO, { namespace: v }, r.createElement(le.Z, { locationKey: v.page }, $ && j && ee, r.createElement(Z.Z, { centeredLogo: T, disjointHeader: ya, documentTitle: Sa, history: a, onTabRefresh: M, primaryContent: E, primaryContentStyles: $ && q, rightControl: X, secondaryBar: Q, sidebarContent: $ && j ? null : r.createElement(o.Z, { style: $ && Y }, wa), title: R, withAppBar: !V }), $ && j && !G && r.createElement(o.Z, { style: Ma.floatingFooter }, r.createElement(B.Z, { align: "right", itemLayout: "vertical", withOverflow: !0 }))));
+                return r.createElement(ua.nO, { namespace: v }, r.createElement(le.Z, { locationKey: v.page }, $ && j && ee, r.createElement(Z.Z, { centeredLogo: T, disjointHeader: ya, documentTitle: Da, history: a, onTabRefresh: M, primaryContent: E, primaryContentStyles: $ && q, rightControl: X, secondaryBar: Q, sidebarContent: $ && j ? null : r.createElement(o.Z, { style: $ && Y }, wa), title: B, withAppBar: !V }), $ && j && !G && r.createElement(o.Z, { style: Ma.floatingFooter }, r.createElement(R.Z, { align: "right", itemLayout: "vertical", withOverflow: !0 }))));
             }
             const Ma = s.default.create((e) => ({ icon: { flexGrow: 1, height: "1.75rem", color: e.colors.brandColor }, upsellContainer: { maxWidth: "100%" }, searchContainer: { alignItems: "center", backfaceVisibility: "hidden", backgroundColor: e.colors.cellBackground, flexDirection: "row", height: e.componentDimensions.appBarHeight, minHeight: e.spaces.space32, top: 0, zIndex: e.componentZIndices.appBarZIndex, paddingHorizontal: e.spaces.space16, marginTop: e.spaces.space16 }, floatingFooter: { position: "fixed", bottom: e.spaces.space20, end: 0 }, squished: { maxWidth: "100%" } })),
-                Aa = Da(Ca);
+                Aa = Sa(Ca);
         },
         392027: (e, a, t) => {
             t.d(a, { Z: () => i });
@@ -883,7 +886,7 @@
                 s = l;
         },
         449479: (e, a, t) => {
-            t.d(a, { Z: () => D });
+            t.d(a, { Z: () => S });
             var r = t(202784),
                 o = t(325686),
                 n = t(913973),
@@ -909,9 +912,9 @@
                 }
                 render() {
                     const { "aria-posinset": e, "aria-setsize": a, checked: t, disabled: u, helpText: b, label: h, name: g, testID: f } = this.props,
-                        D = s.Z.generate({ backgroundColor: p.default.theme.colors.transparent, color: p.default.theme.colors.primary, withFocusWithinFocusRing: !0 }),
-                        S = s.Z.generate({ backgroundColor: p.default.theme.colors.transparent, color: p.default.theme.colors.gray700, withFocusWithinFocusRing: !0 }),
-                        y = t ? D : S;
+                        S = s.Z.generate({ backgroundColor: p.default.theme.colors.transparent, color: p.default.theme.colors.primary, withFocusWithinFocusRing: !0 }),
+                        D = s.Z.generate({ backgroundColor: p.default.theme.colors.transparent, color: p.default.theme.colors.gray700, withFocusWithinFocusRing: !0 }),
+                        y = t ? S : D;
                     return r.createElement(i.Z, { disabled: u }, (i) => r.createElement(o.Z, { role: "label", style: [m.root, !u && m.interactive], testID: f }, r.createElement(o.Z, { style: m.topContainer }, r.createElement(d.ZP, { id: this.labelId }, h), r.createElement(o.Z, { style: m.radioContainer }, r.createElement(c.Z, { interactiveStyles: y, interactivityState: i, style: m.radioBackground }, r.createElement(o.Z, { style: [m.circle, t && m.circleActive, u && m.circleDisabled, t && u && m.circleCheckedAndDisabled] }, t ? r.createElement(n.default, { style: m.checkMark }) : null)), (0, l.Z)("input", { "aria-posinset": e, "aria-setsize": a, "aria-describedby": this.descriptionId, "aria-labelledby": this.labelId, checked: t, disabled: u, name: g, onChange: this._handleChange, ref: this._setRef, style: [m.nativeControl], type: "radio" }))), b ? r.createElement(d.ZP, { color: "gray700", id: this.descriptionId, size: "subtext2", style: m.helpText }, b) : null));
                 }
                 focus() {
@@ -923,7 +926,7 @@
                 h = b,
                 g = "radioGroup";
             let f = 1;
-            class D extends r.Component {
+            class S extends r.Component {
                 constructor() {
                     super(),
                         (this._radioRefs = {}),
@@ -946,14 +949,14 @@
                     const { "aria-label": e, description: a, disabled: t, label: n, name: l, options: i, value: s } = this.props;
                     return r.createElement(
                         o.Z,
-                        { "aria-label": e, "aria-labelledby": n && !e ? this._labelId : void 0, role: "radiogroup", style: t && S.disabled, testID: `${g}${l}` },
-                        n ? r.createElement(o.Z, { id: this._labelId, role: "label", style: S.header }, r.createElement(d.ZP, { style: S.label, weight: "bold" }, n), a ? r.createElement(d.ZP, { color: "gray700", size: "subtext2" }, a) : null) : null,
+                        { "aria-label": e, "aria-labelledby": n && !e ? this._labelId : void 0, role: "radiogroup", style: t && D.disabled, testID: `${g}${l}` },
+                        n ? r.createElement(o.Z, { id: this._labelId, role: "label", style: D.header }, r.createElement(d.ZP, { style: D.label, weight: "bold" }, n), a ? r.createElement(d.ZP, { color: "gray700", size: "subtext2" }, a) : null) : null,
                         i.map((e, a) => r.createElement(h, { "aria-posinset": a + 1, "aria-setsize": i.length, checked: e.value === s, disabled: t, helpText: e.helpText, key: e.value, label: e.label, name: l, onChange: this._handleItemChanged(e.value), ref: this._setRadioRef(a, e.value === s), testID: e.testID })),
                     );
                 }
             }
-            D.defaultProps = { disabled: !1 };
-            const S = p.default.create((e) => ({ header: { alignItems: "flex-start" }, label: { paddingTop: e.spaces.space12, paddingBottom: e.spaces.space4 }, disabled: { opacity: 0.5 } }));
+            S.defaultProps = { disabled: !1 };
+            const D = p.default.create((e) => ({ header: { alignItems: "flex-start" }, label: { paddingTop: e.spaces.space12, paddingBottom: e.spaces.space4 }, disabled: { opacity: 0.5 } }));
         },
         403556: (e, a, t) => {
             t.d(a, { Z: () => E });
@@ -972,8 +975,8 @@
                 h = t(175993),
                 g = t(58881),
                 f = t(530732);
-            const D = c().d2414d31,
-                S = () => c().ce4e85ae,
+            const S = c().d2414d31,
+                D = () => c().ce4e85ae,
                 y = c().fb9f6f39;
             class w extends o.Component {
                 constructor(...e) {
@@ -1016,7 +1019,7 @@
                         k = s ? s(A) : E?.pathname === v?.pathname,
                         _ = g.Z.generate({ backgroundColor: "transparent", color: l.default.theme.colors.text, insetFocusRing: !0 }),
                         T = h ? "medium" : k ? "bold" : "medium";
-                    return o.createElement(f.Z, { "aria-label": a, "aria-selected": k, focusable: !!k, interactiveStyles: _, link: v, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [u ? C.pill : C.link, u && k ? C.active : null, c ? (u ? C.compactPill : C.compactLink) : null, p ? C.roundedRect : null, M], withoutInteractiveStyles: h || u }, ({ isFocused: a, isHovered: s }) => o.createElement(i.Z, { style: u && C.flexGrow }, o.createElement(b.ZP, { size: h ? "headline2" : void 0, style: [C.text, { color: this._getTextColor(k, s, h, u) }, c && C.compactText, h && a && C.focusedText], weight: T }, e && o.createElement(e, { style: C.icon }), n, h || u ? null : o.createElement(i.Z, { style: k && [C.border, { backgroundColor: l.default.theme.colors[d] }] })), t ? o.createElement(m.Z, { count: t, standalone: !0, style: [C.badge, t >= 10 && C.multiDigitBadge, t >= 20 && C.truncatedCountBadge], truncatedCountFormatter: y, unreadCountLabel: D, withBorder: !1 }) : r ? o.createElement(m.Z, { pip: !0, standalone: !0, style: C.badgePip, textColor: "red500", unreadCountLabel: S, withBorder: !1 }) : null));
+                    return o.createElement(f.Z, { "aria-label": a, "aria-selected": k, focusable: !!k, interactiveStyles: _, link: v, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [u ? C.pill : C.link, u && k ? C.active : null, c ? (u ? C.compactPill : C.compactLink) : null, p ? C.roundedRect : null, M], withoutInteractiveStyles: h || u }, ({ isFocused: a, isHovered: s }) => o.createElement(i.Z, { style: u && C.flexGrow }, o.createElement(b.ZP, { size: h ? "headline2" : void 0, style: [C.text, { color: this._getTextColor(k, s, h, u) }, c && C.compactText, h && a && C.focusedText], weight: T }, e && o.createElement(e, { style: C.icon }), n, h || u ? null : o.createElement(i.Z, { style: k && [C.border, { backgroundColor: l.default.theme.colors[d] }] })), t ? o.createElement(m.Z, { count: t, standalone: !0, style: [C.badge, t >= 10 && C.multiDigitBadge, t >= 20 && C.truncatedCountBadge], truncatedCountFormatter: y, unreadCountLabel: S, withBorder: !1 }) : r ? o.createElement(m.Z, { pip: !0, standalone: !0, style: C.badgePip, textColor: "red500", unreadCountLabel: D, withBorder: !1 }) : null));
                 }
             }
             (w.contextType = h.Z), (w.defaultProps = { children: [], color: "primary", retainScrollPosition: !0 });
@@ -1060,4 +1063,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.HomeTimeline.08b4907a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.HomeTimeline.ae1916ea.js.map

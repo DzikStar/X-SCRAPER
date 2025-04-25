@@ -184,8 +184,8 @@
                 k,
                 p,
                 b,
-                _,
                 F,
+                _,
                 K,
                 f,
                 S,
@@ -297,8 +297,8 @@
                                                                                                     ],
                                                                                                     storageKey: null,
                                                                                                 },
-                                                                                                { alias: null, args: (K = [{ kind: "Variable", name: "filter_params", variableName: "jobFilterParams" }, (_ = { kind: "Variable", name: "page_params", variableName: "pageParams" }), (F = { kind: "Variable", name: "sort_params", variableName: "sortParams" })]), concreteType: "JobListSlice", kind: "LinkedField", name: "admin_jobs", plural: !1, selections: [k, { args: null, kind: "FragmentSpread", name: "JobList_items" }, b], storageKey: null },
-                                                                                                { alias: null, args: (f = [{ kind: "Variable", name: "filter_params", variableName: "jobShareFilterParams" }, _, F]), concreteType: "JobShareListSlice", kind: "LinkedField", name: "admin_job_shares", plural: !1, selections: [k, { args: null, kind: "FragmentSpread", name: "JobList_shares" }, b], storageKey: null },
+                                                                                                { alias: null, args: (K = [{ kind: "Variable", name: "filter_params", variableName: "jobFilterParams" }, (F = { kind: "Variable", name: "page_params", variableName: "pageParams" }), (_ = { kind: "Variable", name: "sort_params", variableName: "sortParams" })]), concreteType: "JobListSlice", kind: "LinkedField", name: "admin_jobs", plural: !1, selections: [k, { args: null, kind: "FragmentSpread", name: "JobList_items" }, b], storageKey: null },
+                                                                                                { alias: null, args: (f = [{ kind: "Variable", name: "filter_params", variableName: "jobShareFilterParams" }, F, _]), concreteType: "JobShareListSlice", kind: "LinkedField", name: "admin_job_shares", plural: !1, selections: [k, { args: null, kind: "FragmentSpread", name: "JobList_shares" }, b], storageKey: null },
                                                                                                 b,
                                                                                             ],
                                                                                             type: "ApiRecruitingOrganization",
@@ -319,19 +319,16 @@
                                                             storageKey: null,
                                                         },
                                                         action: "THROW",
-                                                        path: "viewer.user_results.result",
                                                     },
                                                 ],
                                                 storageKey: null,
                                             },
                                             action: "THROW",
-                                            path: "viewer.user_results",
                                         },
                                     ],
                                     storageKey: 'viewer_v2(s:"4721")',
                                 },
                                 action: "THROW",
-                                path: "viewer",
                             },
                         ],
                         type: "Query",
@@ -808,7 +805,7 @@
             const t = r;
         },
         126582: (e, l, a) => {
-            a.d(l, { Z: () => _ });
+            a.d(l, { Z: () => F });
             var n,
                 i,
                 r,
@@ -905,19 +902,16 @@
                                                             storageKey: null,
                                                         },
                                                         action: "THROW",
-                                                        path: "viewer.user_results.result",
                                                     },
                                                 ],
                                                 storageKey: null,
                                             },
                                             action: "THROW",
-                                            path: "viewer.user_results",
                                         },
                                     ],
                                     storageKey: 'viewer_v2(s:"4721")',
                                 },
                                 action: "THROW",
-                                path: "viewer",
                             },
                         ],
                         type: "Query",
@@ -1080,7 +1074,7 @@
                     params: { id: "oeRzYwdNvarF30P9o93Vbg", metadata: {}, name: "useFetchAdminJobsQuery", operationKind: "query", text: null },
                 };
             b.hash = "15831875002bd659829b7ac19ef93a3b";
-            const _ = b;
+            const F = b;
         },
         396840: (e, l, a) => {
             a.d(l, { Z: () => i });
@@ -1406,13 +1400,11 @@
                                                         storageKey: null,
                                                     },
                                                     action: "THROW",
-                                                    path: "viewer_v2.user_results.result",
                                                 },
                                             ],
                                             storageKey: null,
                                         },
                                         action: "THROW",
-                                        path: "viewer_v2.user_results",
                                     },
                                 ],
                                 storageKey: 'viewer_v2(s:"4721")',
@@ -1589,12 +1581,12 @@
                 k = r().bc78a26c,
                 p = r().ec28738e,
                 b = r().icb06308,
-                _ = r().d0b978ec,
-                F = r().af19cdc2,
+                F = r().d0b978ec,
+                _ = r().af19cdc2,
                 K = r().e4a51fca,
                 f = r().e8ca78ae,
                 S = r().c365dcc6,
-                v = Object.freeze({ software_engineering: o, data_analytics: d, product: c, design: g, marketing: m, sales_am: y, operations: k, people_hr: p, finance_accounting: b, legal_compliance: _, science_engineering: F, medical: K, construction_trades: f, other: S }),
+                v = Object.freeze({ software_engineering: o, data_analytics: d, product: c, design: g, marketing: m, sales_am: y, operations: k, people_hr: p, finance_accounting: b, legal_compliance: F, science_engineering: _, medical: K, construction_trades: f, other: S }),
                 L = Object.entries(v).map(([e, l]) => ({ label: String(l), value: e })),
                 h = r().e25d75e4,
                 A = r().e89b3f04,
@@ -1670,7 +1662,7 @@
                     m = (0, d.po)(),
                     [y, k] = n.useState(null),
                     [p, b] = n.useState(!1),
-                    _ = n.useCallback(() => {
+                    F = n.useCallback(() => {
                         p ||
                             (b(!0),
                             o()(u, e, i, { networkCacheConfig: t?.networkCacheConfig, fetchPolicy: "network-only" }).subscribe({
@@ -1682,8 +1674,8 @@
                                 },
                             }));
                     }, [u, m, e, p, i, t]),
-                    F = (0, g.p)(e, l, a);
-                return n.useMemo(() => (y ? { data: F, refetch: _, refetchStatus: c.ZP.FAILED, refetchError: y } : { data: F, refetch: _, refetchStatus: p ? c.ZP.LOADING : c.ZP.NONE, refetchError: void 0 }), [F, y, p, _]);
+                    _ = (0, g.p)(e, l, a);
+                return n.useMemo(() => (y ? { data: _, refetch: F, refetchStatus: c.ZP.FAILED, refetchError: y } : { data: _, refetch: F, refetchStatus: p ? c.ZP.LOADING : c.ZP.NONE, refetchError: void 0 }), [_, y, p, F]);
             }
         },
         89217: (e, l, a) => {
@@ -1724,4 +1716,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.PremiumJobs~ondemand.Verified-6107ac1a.758f75ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.PremiumJobs~ondemand.Verified-6107ac1a.3368dbca.js.map

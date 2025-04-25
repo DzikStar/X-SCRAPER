@@ -4859,6 +4859,7 @@
                 t("ie45edda", "Vedere generală cu fluxul în direct"),
                 t("e30fc268", "Live Viewers"),
                 t("bd37f68e", "Activitate de conținut media"),
+                t("fe074210", "(de) minute"),
                 t("jd03a1b8", "Minutes Watched"),
                 t("a20e91e8", "minutes watched"),
                 t("ic2bebee", "Monetizat"),
@@ -4919,9 +4920,9 @@
                 t("a7b48b36", "Procentul de vizualizări complete ale videoclipurilor."),
                 t("a2580f2a", "Rata de finalizare"),
                 t("ff95a9cc", "ID videoclip"),
-                t("a97e358e", "Link videoclip"),
-                t("e10e8b46", "Se afișează doar videoclipuri din ultimele 100 de zile.");
-            t("ba37f6da", "Imagine de ansamblu videoclip"),
+                t("a97e358e", "Link videoclip");
+            t("e10e8b46", "Se afișează doar videoclipuri din ultimele 100 de zile."),
+                t("ba37f6da", "Imagine de ansamblu videoclip"),
                 t("f19846b2", "Miniatură videoclip"),
                 t("ccd6f4a8", "Titlu videoclip"),
                 t("c8410542", "De câte ori a fost văzut videoclipul."),
@@ -5084,7 +5085,6 @@
                 t("fb3e127a", "Ofertă de An Nou, pe perioadă limitată"),
                 t("a5fee980", "Revendică reducerea de 30% la planurile anuale și creditul pentru reclame gratuit, în valoare de până la 12.000$, dacă te abonezi înainte de"),
                 t("c9051cac", "(de) zile"),
-                t("fe074210", "(de) minute"),
                 t("ie035790", "(de) secunde"),
                 t("cbd3dfaa", "Încearcă versiunea beta"),
                 t("h260121e", "Prezintă funcțiile de top publicului tău."),
@@ -13250,4 +13250,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ro.9436bdea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ro.db5dba7a.js.map

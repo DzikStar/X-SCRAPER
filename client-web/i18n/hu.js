@@ -4847,6 +4847,7 @@
                 s("ie45edda", "Élő közvetítés áttekintése"),
                 s("e30fc268", "Live Viewers"),
                 s("bd37f68e", "Médiatevékenység"),
+                s("fe074210", "perc"),
                 s("jd03a1b8", "Minutes Watched"),
                 s("a20e91e8", "minutes watched"),
                 s("ic2bebee", "Bevételszerzés"),
@@ -4907,9 +4908,9 @@
                 s("a7b48b36", "A videók végignézésének aránya százalékban."),
                 s("a2580f2a", "Végignézési arány"),
                 s("ff95a9cc", "Videó azonosítója"),
-                s("a97e358e", "Videóhivatkozás"),
-                s("e10e8b46", "Csak a legutóbbi 100 nap videói jelennek meg.");
-            s("ba37f6da", "Videó áttekintése"),
+                s("a97e358e", "Videóhivatkozás");
+            s("e10e8b46", "Csak a legutóbbi 100 nap videói jelennek meg."),
+                s("ba37f6da", "Videó áttekintése"),
                 s("f19846b2", "Videó bélyegképe"),
                 s("ccd6f4a8", "Videó címe"),
                 s("c8410542", "A videód megtekintéseinek száma."),
@@ -5072,7 +5073,6 @@
                 s("fb3e127a", "Korlátozott idejű új évi ajánlat"),
                 s("a5fee980", "Ha a következő dátum előtt fizetsz elő, 30%-os kedvezményt kaphatsz az éves csomagok árából, és akár 12 000 $ értékű ingyenes hirdetési kreditet:"),
                 s("c9051cac", "nap"),
-                s("fe074210", "perc"),
                 s("ie035790", "másodperc"),
                 s("cbd3dfaa", "Próbáld ki a bétaverziót"),
                 s("h260121e", "Emeld ki a legjobb ajánlataidat a célközönséged számára!"),
@@ -13245,4 +13245,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hu.532111fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hu.3f87b1ea.js.map

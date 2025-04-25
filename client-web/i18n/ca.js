@@ -4848,6 +4848,7 @@
                 t("ie45edda", "Informació general sobre la transmissió en directe"),
                 t("e30fc268", "Live Viewers"),
                 t("bd37f68e", "Activitat del contingut"),
+                t("fe074210", "minuts"),
                 t("jd03a1b8", "Minutes Watched"),
                 t("a20e91e8", "minutes watched"),
                 t("ic2bebee", "Monetitzat"),
@@ -4908,9 +4909,9 @@
                 t("a7b48b36", "Percentatge de visualitzacions de vídeo que s'han completat."),
                 t("a2580f2a", "Taxa de compleció"),
                 t("ff95a9cc", "Identificador del vídeo"),
-                t("a97e358e", "Enllaç del vídeo"),
-                t("e10e8b46", "Només es mostren els vídeos dels últims 100 dies.");
-            t("ba37f6da", "Informació general sobre el vídeo"),
+                t("a97e358e", "Enllaç del vídeo");
+            t("e10e8b46", "Només es mostren els vídeos dels últims 100 dies."),
+                t("ba37f6da", "Informació general sobre el vídeo"),
                 t("f19846b2", "Miniatura del vídeo"),
                 t("ccd6f4a8", "Títol del vídeo"),
                 t("c8410542", "Nombre de vegades que s'ha vist el vídeo."),
@@ -5073,7 +5074,6 @@
                 t("fb3e127a", "Oferta d'any nou disponible durant un temps limitat"),
                 t("a5fee980", "Reclama el descompte del 30 % per als plans anuals i fins a 12.000 USD de crèdit per a publicitat si et subscrius abans del"),
                 t("c9051cac", "dies"),
-                t("fe074210", "minuts"),
                 t("ie035790", "segons"),
                 t("cbd3dfaa", "Prova la beta"),
                 t("h260121e", "Mostra les millors ofertes de feina a la teva audiència."),
@@ -13237,4 +13237,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ca.b9cf650a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ca.0e1fc05a.js.map

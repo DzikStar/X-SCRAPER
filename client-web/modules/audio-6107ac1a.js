@@ -118,9 +118,9 @@
                 y = o(81177),
                 g = o.n(y),
                 M = o(477291),
-                A = o.n(M),
-                v = o(593588),
-                T = o.n(v),
+                v = o.n(M),
+                A = o(593588),
+                T = o.n(A),
                 k = o(443127),
                 I = o.n(k),
                 P = o(587541),
@@ -144,24 +144,23 @@
                                             const { code: a } = e;
                                             a === x.ZP.GenericAccessDenied &&
                                                 Promise.all([
-                                                    o.e("icons.5"),
-                                                    o.e("icons.6"),
-                                                    o.e("icons.22"),
-                                                    o.e("icons.25"),
-                                                    o.e("icons.9"),
-                                                    o.e("icons.4"),
-                                                    o.e("icons.20"),
                                                     o.e("icons.7"),
-                                                    o.e("icons.0"),
+                                                    o.e("icons.15"),
+                                                    o.e("icons.8"),
+                                                    o.e("icons.3"),
+                                                    o.e("icons.24"),
+                                                    o.e("icons.9"),
+                                                    o.e("icons.22"),
+                                                    o.e("icons.12"),
                                                     o.e("modules.common-e907d115"),
                                                     o.e("modules.common-e019dbda"),
-                                                    o.e("icons.11"),
-                                                    o.e("icons.27"),
-                                                    o.e("icons.17"),
-                                                    o.e("icons.12"),
-                                                    o.e("icons.3"),
-                                                    o.e("icons.13"),
+                                                    o.e("icons.5"),
+                                                    o.e("icons.6"),
+                                                    o.e("icons.14"),
                                                     o.e("icons.18"),
+                                                    o.e("icons.2"),
+                                                    o.e("icons.21"),
+                                                    o.e("icons.16"),
                                                     o.e("modules.audio-6107ac1a"),
                                                     o.e("modules.audio-b953418a"),
                                                     o.e("modules.audio-7c51e6a7"),
@@ -172,8 +171,10 @@
                                                     o.e("modules.audio-e019dbda"),
                                                     o.e("modules.audio-262c94d4"),
                                                     o.e("modules.audio-c6fe4ea4"),
-                                                    o.e("icons.24"),
-                                                    o.e("icons.10"),
+                                                    o.e("icons.1"),
+                                                    o.e("icons.28"),
+                                                    o.e("icons.27"),
+                                                    o.e("icons.0"),
                                                     o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                                                     o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                                                     o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -245,7 +246,7 @@
                     search(a, o) {
                         const r = "spacesSearch";
                         return e
-                            .graphQL(A(), { query: a, filter: o }, L(r, a))
+                            .graphQL(v(), { query: a, filter: o }, L(r, a))
                             .catch(C(r))
                             .then((e) =>
                                 e?.search_by_raw_query?.audio_spaces_grouped_by_section
@@ -458,6 +459,20 @@
                 return 1 + a.circleMinimumScale + r * (a.circleMaximumScale - a.circleMinimumScale);
             }
         },
+        503195: (e, a, o) => {
+            "use strict";
+            o.r(a), o.d(a, { default: () => d });
+            var r = o(202784),
+                t = o(890601),
+                n = o(783427),
+                i = o(347101);
+            const s = (e = {}) => {
+                const { direction: a } = (0, n.Z)();
+                return (0, t.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M20.998 15.5V1.66l-12 3.6v10.21c-.607-.3-1.3-.47-2-.47-2.031 0-4 1.4-4 3.5s1.969 3.5 4 3.5 4-1.4 4-3.5V6.74l8-2.4v8.13c-.607-.3-1.3-.47-2-.47-2.031 0-4 1.4-4 3.5s1.969 3.5 4 3.5 4-1.4 4-3.5z" })) }, { writingDirection: a });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const d = s;
+        },
         447486: (e, a, o) => {
             "use strict";
             o.d(a, { Z: () => i });
@@ -489,4 +504,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/modules.audio-6107ac1a.bf9e2dfa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/modules.audio-6107ac1a.659b454a.js.map

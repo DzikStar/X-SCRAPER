@@ -15,7 +15,7 @@
                 return c(r), c(o), c(i), n.createElement(n.Fragment, null);
             }
         },
-        210081: (e, t, a) => {
+        767110: (e, t, a) => {
             a.d(t, { ZP: () => q });
             var n = a(202784),
                 r = a(325686),
@@ -41,12 +41,12 @@
                     .propsFromState(() => ({ selectedObjective: P, tweet: S }))
                     .propsFromActions(() => ({ setObjective: E.mS }))
                     .withAnalytics(f.EP);
-            var w = a(992942),
-                k = a(173324);
-            function v() {
-                return n.createElement(w.Z, { "aria-label": "", source: k, style: c.default.absoluteFill });
+            var w = a(263070),
+                k = a(992942),
+                v = a(634171);
+            function I() {
+                return n.createElement(k.Z, { "aria-label": "", source: v, style: c.default.absoluteFill });
             }
-            var I = a(829077);
             const L = d().fcc839b6,
                 x = (d().b679a538, d().cb19a2f0),
                 T = d().a2d37164,
@@ -54,8 +54,8 @@
                 M = d().b614fad0,
                 A = c.default.create((e) => ({ titleContainer: { paddingBottom: e.spaces.space28 }, qpContainer: { flex: 1, overflowY: "auto" } })),
                 [D, B] = [
-                    { label: (0, h.WF)(m.CH.Engagements), value: m.CH.Engagements, description: x, illustration: n.createElement(v, null), testID: y.Z.getObjective(m.CH.Engagements) },
-                    { label: (0, h.WF)(m.CH.WebsiteClicks), value: m.CH.WebsiteClicks, description: T, illustration: n.createElement(I.T, null), testID: y.Z.getObjective(m.CH.WebsiteClicks) },
+                    { label: (0, h.WF)(m.CH.Engagements), value: m.CH.Engagements, description: x, illustration: n.createElement(w.i, null), testID: y.Z.getObjective(m.CH.Engagements) },
+                    { label: (0, h.WF)(m.CH.WebsiteClicks), value: m.CH.WebsiteClicks, description: T, illustration: n.createElement(I, null), testID: y.Z.getObjective(m.CH.WebsiteClicks) },
                 ];
             const q = Z((e) => {
                 const { analytics: t, selectedObjective: a, setObjective: c, tweet: l } = e,
@@ -740,4 +740,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Conversation-c431102c.b72ba0aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Conversation-c431102c.31ab61ba.js.map

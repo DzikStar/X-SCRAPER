@@ -4857,6 +4857,7 @@
                 n("ie45edda", "Prehľad živého prenosu"),
                 n("e30fc268", "Live Viewers"),
                 n("bd37f68e", "Mediálna aktivita"),
+                n("fe074210", "min."),
                 n("jd03a1b8", "Minutes Watched"),
                 n("a20e91e8", "minutes watched"),
                 n("ic2bebee", "Speňažené"),
@@ -4917,9 +4918,9 @@
                 n("a7b48b36", "Percento zobrazení videa, kde došlo k dopozeraniu."),
                 n("a2580f2a", "Miera dopozerania"),
                 n("ff95a9cc", "Video – ID"),
-                n("a97e358e", "Video – odkaz"),
-                n("e10e8b46", "Zobrazujú sa iba videá za posledných 100 dní");
-            n("ba37f6da", "Prehľad pre video"),
+                n("a97e358e", "Video – odkaz");
+            n("e10e8b46", "Zobrazujú sa iba videá za posledných 100 dní"),
+                n("ba37f6da", "Prehľad pre video"),
                 n("f19846b2", "Miniatúra videa"),
                 n("ccd6f4a8", "Video – názov"),
                 n("c8410542", "Počet zobrazení videa."),
@@ -5082,7 +5083,6 @@
                 n("fb3e127a", "Časovo obmedzená novoročná ponuka"),
                 n("a5fee980", "Získajte 30 % zľavu z ročných taríf a bezplatný reklamný kredit v hodnote až 12 000 USD, keď si aktivujete predplatné pred"),
                 n("c9051cac", "d."),
-                n("fe074210", "min."),
                 n("ie035790", "s"),
                 n("cbd3dfaa", "Vyskúšať beta verziu"),
                 n("h260121e", "Ukážte svojmu publiku tie najlepšie pracovné miesta, ktoré ponúkate"),
@@ -13252,4 +13252,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sk.ab0edb3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sk.95b70eaa.js.map

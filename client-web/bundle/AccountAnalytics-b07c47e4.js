@@ -5,7 +5,7 @@
         163637: (e, t, a) => {
             a.d(t, { Wq: () => m, py: () => _, R5: () => p });
             var i = a(552322),
-                r = a(702024),
+                r = a(193686),
                 s = a(202784),
                 o = a(889906),
                 n = a(607499),
@@ -47,7 +47,9 @@
                             scheduledStart: new Date(Date.now() - 828e5).toISOString(),
                             start: new Date(Date.now() - 792e5).toISOString(),
                             endedAt: new Date(Date.now() - 72e6).toISOString(),
+                            duration: 72e5,
                             metrics: { totalParticipated: 306, totalParticipating: 0, totalLiveListeners: 289, totalReplayWatched: 17 },
+                            metadata: { narrow_cast_space_type: 2 },
                             creator: { restId: "123456789", name: "Zach Warunek", screenName: "ZachWarunek", verifiedType: "business", profileImageUrl: "https://picsum.photos/200", isBlueVerified: !0 },
                             participants: {
                                 admins: [{ screenName: "ZachWarunek" }],
@@ -80,6 +82,7 @@
                             peakConcurrentViewers: 130,
                             isAvailableForReplay: !0,
                             subscriberCount: 0,
+                            narrowCastSpaceType: 2,
                         }),
                         [t],
                     ),
@@ -116,6 +119,7 @@
                                 a.push(s);
                             }
                         }
+                        const i = e.metadata.start && e.metadata.ended_at ? e.metadata.ended_at - e.metadata.start : null;
                         r({
                             id: e.id,
                             restId: e.rest_id,
@@ -125,6 +129,7 @@
                             scheduledStart: e.metadata.scheduled_start || null,
                             start: e.metadata.start ? new Date(e.metadata.start).toISOString() : null,
                             endedAt: e.metadata.ended_at ? new Date(e.metadata.ended_at).toISOString() : null,
+                            duration: i,
                             metrics: { totalParticipated: e.metadata.total_participated, totalParticipating: e.metadata.total_participating, totalLiveListeners: e.metadata.total_live_listeners, totalReplayWatched: e.metadata.total_replay_watched },
                             creator: e.metadata.creator_results.result ? { restId: e.metadata.creator_results.result.rest_id, name: e.metadata.creator_results.result.legacy?.name, screenName: e.metadata.creator_results.result.legacy?.screen_name, verifiedType: t(e.metadata.creator_results.result.legacy?.verified_type, e.metadata.creator_results.result.is_blue_verified), profileImageUrl: e.metadata.creator_results.result.legacy?.profile_image_url_https, isBlueVerified: e.metadata.creator_results.result.is_blue_verified, badge: e.metadata.creator_results.result.affiliates_highlighted_label?.label ? { url: e.metadata.creator_results.result.affiliates_highlighted_label.label.badge?.url, description: e.metadata.creator_results.result.affiliates_highlighted_label.label.description, labelDisplayType: e.metadata.creator_results.result.affiliates_highlighted_label.label.user_label_display_type, labelType: e.metadata.creator_results.result.affiliates_highlighted_label.label.user_label_type } : void 0 } : void 0,
                             participants: {
@@ -140,6 +145,7 @@
                             peakConcurrentViewers: e.metadata.view_count_graph?.length ? Math.max(...e.metadata.view_count_graph) : 0,
                             isAvailableForReplay: e.metadata.is_space_available_for_replay || !1,
                             subscriberCount: e.subscriber_count || 0,
+                            narrowCastSpaceType: e.metadata.narrow_cast_space_type || 0,
                         });
                     }
                 }, [n]);
@@ -181,7 +187,7 @@
                     a = (0, r.useMemo)(() => ({ isLoading: !1, spaces: t, hasMoreData: !1, onLoadMore: () => {} }), [t]);
                 return (0, i.jsx)(m.Provider, { value: a, children: e });
             }
-            var l = a(702024),
+            var l = a(193686),
                 u = a(703383);
             const c = a(263078),
                 d = 30,
@@ -249,7 +255,7 @@
         52277: (e, t, a) => {
             a.d(t, { oj: () => M, lT: () => k, Mh: () => T });
             var i = a(552322),
-                r = a(702024),
+                r = a(193686),
                 s = a(202784),
                 o = a(889906),
                 n = a(585053),
@@ -699,4 +705,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-b07c47e4.98732eaa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-b07c47e4.b50cefaa.js.map

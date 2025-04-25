@@ -2,7 +2,7 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["shared~ondemand.Insights~ondemand.XChat"],
     {
-        816828: (e, t, n) => {
+        772669: (e, t, n) => {
             n.d(t, { _: () => c });
             var r = n(552322),
                 a = n(110929),
@@ -36,11 +36,11 @@
                     return (0, r.jsxs)("div", { className: d({ borderRadius: e ?? (o.multiline ? "3xLarge" : "full"), className: (0, a.cx)(t ? "ps-3" : "ps-4", n ? "pe-3" : "pe-4") }), children: [t, (0, r.jsx)(u, { ...o, ref: i }), n] });
                 });
         },
-        461222: (e, t, n) => {
+        42630: (e, t, n) => {
             n.d(t, { A: () => i, S: () => l });
             var r = n(552322),
                 a = n(202784),
-                o = n(941204);
+                o = n(332161);
             function i({ color: e = "gray700", ...t }) {
                 return (0, r.jsx)(o.x, { ...t, "aria-hidden": !0, className: "shrink-0 px-1", color: e, children: "·" });
             }
@@ -55,62 +55,22 @@
                 );
             }
         },
-        559274: (e, t, n) => {
-            n.d(t, { E: () => l });
-            var r = n(552322),
-                a = n(202784),
-                o = n(941204);
-            function i(e, t = "en") {
-                const n = "undefined" != typeof navigator ? navigator.language : t,
-                    r = new Date(e),
-                    a = new Date();
-                if (a.toDateString() === r.toDateString()) {
-                    const e = Math.floor((a.getTime() - r.getTime()) / 1e3);
-                    if (e < 60) return `${e}s`;
-                    const t = Math.floor(e / 60);
-                    if (t < 60) return `${t}m`;
-                    return `${Math.floor(t / 60)}h`;
-                }
-                if (a.getFullYear() === r.getFullYear()) {
-                    const e = { month: "short", day: "numeric" };
-                    return r.toLocaleDateString(n, e);
-                }
-                return r.toLocaleDateString(n, { month: "short", day: "numeric", year: "numeric" });
-            }
-            function l({ color: e = "gray700", lang: t, link: n, timestamp: l, ...s }) {
-                const [u, d] = (0, a.useState)(() => i(l, t));
-                return (
-                    (0, a.useEffect)(() => {
-                        function e() {
-                            "visible" === document.visibilityState && d(i(l, t));
-                        }
-                        return (
-                            document.addEventListener("visibilitychange", e),
-                            () => {
-                                document.removeEventListener("visibilitychange", e);
-                            }
-                        );
-                    }, [t, l]),
-                    (0, r.jsx)(o.x, { ...s, color: e, ...(n && { as: "a", ...("string" == typeof n ? { href: n } : { href: n.href, target: n.target }) }), children: u })
-                );
-            }
-        },
-        595455: (e, t, n) => {
+        80208: (e, t, n) => {
             n.d(t, { Z: () => a });
             var r = n(552322);
             const a = (e) => (0, r.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, r.jsx)("path", { d: "M20.29 2.29l-2.34 2.34C16.47 3.01 14.34 2 12 2 7.93 2 4.51 5.02 4 9.05L2.87 18h1.72l-2.3 2.29 1.42 1.42 18-18-1.42-1.42zM6.59 16H5.13l.85-6.7C6.36 6.27 8.94 4 12 4c1.79 0 3.42.78 4.54 2.05L6.59 16zM12 22c-1.57 0-2.98-.73-3.89-1.86l1.42-1.43c.55.78 1.45 1.29 2.47 1.29 1.31 0 2.42-.83 2.83-2H12v-2h6.86l-.74-5.87 1.76-1.76c.05.22.08.44.11.67L21.14 18H16.9c-.46 2.28-2.48 4-4.9 4z" }) });
         },
-        498284: (e, t, n) => {
+        314300: (e, t, n) => {
             n.d(t, { Z: () => a });
             var r = n(552322);
             const a = (e) => (0, r.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, r.jsx)("path", { d: "M14.23 2.854c.98-.977 2.56-.977 3.54 0l3.38 3.378c.97.977.97 2.559 0 3.536L9.91 21H3v-6.914L14.23 2.854zm2.12 1.414c-.19-.195-.51-.195-.7 0L5 14.914V19h4.09L19.73 8.354c.2-.196.2-.512 0-.708l-3.38-3.378zM14.75 19l-2 2H21v-2h-6.25z" }) });
         },
-        517652: (e, t, n) => {
+        353561: (e, t, n) => {
             n.d(t, { Z: () => a });
             var r = n(552322);
             const a = (e) => (0, r.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, r.jsx)("path", { d: "M10.25 4.25c-3.314 0-6 2.686-6 6s2.686 6 6 6c1.657 0 3.155-.67 4.243-1.757 1.087-1.088 1.757-2.586 1.757-4.243 0-3.314-2.686-6-6-6zm-9 6c0-4.971 4.029-9 9-9s9 4.029 9 9c0 1.943-.617 3.744-1.664 5.215l4.475 4.474-2.122 2.122-4.474-4.475c-1.471 1.047-3.272 1.664-5.215 1.664-4.971 0-9-4.029-9-9z" }) });
         },
-        395828: (e, t, n) => {
+        568366: (e, t, n) => {
             n.d(t, { Z: () => a });
             var r = n(552322);
             const a = (e) => (0, r.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, r.jsx)("path", { d: "M16 6V4.5C16 3.12 14.88 2 13.5 2h-3C9.11 2 8 3.12 8 4.5V6H3v2h1.06l.81 11.21C4.98 20.78 6.28 22 7.86 22h8.27c1.58 0 2.88-1.22 3-2.79L19.93 8H21V6h-5zm-6-1.5c0-.28.22-.5.5-.5h3c.27 0 .5.22.5.5V6h-4V4.5zm7.13 14.57c-.04.52-.47.93-1 .93H7.86c-.53 0-.96-.41-1-.93L6.07 8h11.85l-.79 11.07zM9 17v-6h2v6H9zm4 0v-6h2v6h-2z" }) });
@@ -274,7 +234,7 @@
                 );
             }
             const P = new WeakMap();
-            function S(e, t, n = !1) {
+            function C(e, t, n = !1) {
                 if (!(e && e instanceof HTMLElement)) return;
                 let r = {};
                 Object.entries(t).forEach(([t, n]) => {
@@ -282,7 +242,7 @@
                 }),
                     n || P.set(e, r);
             }
-            const C = (e) => {
+            const S = (e) => {
                 switch (e) {
                     case "top":
                     case "bottom":
@@ -299,9 +259,9 @@
                 const n = window.getComputedStyle(e),
                     r = n.transform || n.webkitTransform || n.mozTransform;
                 let a = r.match(/^matrix3d\((.+)\)$/);
-                return a ? parseFloat(a[1].split(", ")[C(t) ? 13 : 12]) : ((a = r.match(/^matrix\((.+)\)$/)), a ? parseFloat(a[1].split(", ")[C(t) ? 5 : 4]) : null);
+                return a ? parseFloat(a[1].split(", ")[S(t) ? 13 : 12]) : ((a = r.match(/^matrix\((.+)\)$/)), a ? parseFloat(a[1].split(", ")[S(t) ? 5 : 4]) : null);
             }
-            function D(e, t) {
+            function O(e, t) {
                 if (!e) return () => {};
                 const n = e.style.cssText;
                 return (
@@ -311,10 +271,10 @@
                     }
                 );
             }
-            const O = { DURATION: 0.5, EASE: [0.32, 0.72, 0, 1] },
+            const D = { DURATION: 0.5, EASE: [0.32, 0.72, 0, 1] },
                 $ = 16,
-                M = "vaul-dragging";
-            function A(e) {
+                A = "vaul-dragging";
+            function M(e) {
                 const t = a.useRef(e);
                 return (
                     a.useEffect(() => {
@@ -333,7 +293,7 @@
                         const n = a.useState(e),
                             [r] = n,
                             o = a.useRef(r),
-                            i = A(t);
+                            i = M(t);
                         return (
                             a.useEffect(() => {
                                 o.current !== r && (i(r), (o.current = r));
@@ -343,7 +303,7 @@
                     })({ defaultProp: t, onChange: n }),
                     i = void 0 !== e,
                     l = i ? e : r,
-                    s = A(n),
+                    s = M(n),
                     u = a.useCallback(
                         (t) => {
                             if (i) {
@@ -356,17 +316,17 @@
                 return [l, u];
             }
             let N = null;
-            function L({ open: e, onOpenChange: t, children: n, onDrag: i, onRelease: s, snapPoints: d, shouldScaleBackground: c = !1, setBackgroundColorOnScale: f = !0, closeThreshold: m = 0.25, scrollLockTimeout: p = 100, dismissible: h = !0, handleOnly: v = !1, fadeFromIndex: g = d && d.length - 1, activeSnapPoint: w, setActiveSnapPoint: b, fixed: x, modal: E = !0, onClose: D, nested: A, noBodyStyles: L = !1, direction: B = "bottom", defaultOpen: F = !1, disablePreventScroll: I = !0, snapToSequentialPoint: z = !1, preventScrollRestoration: j = !1, repositionInputs: H = !0, onAnimationEnd: W, container: U, autoFocus: q = !1 }) {
+            function B({ open: e, onOpenChange: t, children: n, onDrag: i, onRelease: s, snapPoints: d, shouldScaleBackground: c = !1, setBackgroundColorOnScale: f = !0, closeThreshold: m = 0.25, scrollLockTimeout: p = 100, dismissible: h = !0, handleOnly: v = !1, fadeFromIndex: g = d && d.length - 1, activeSnapPoint: w, setActiveSnapPoint: b, fixed: x, modal: E = !0, onClose: O, nested: M, noBodyStyles: B = !1, direction: L = "bottom", defaultOpen: F = !1, disablePreventScroll: I = !0, snapToSequentialPoint: z = !1, preventScrollRestoration: H = !1, repositionInputs: j = !0, onAnimationEnd: W, container: U, autoFocus: q = !1 }) {
                 var Y, V;
                 const [X = !1, _] = k({
                         defaultProp: F,
                         prop: e,
                         onChange: (e) => {
                             null == t || t(e),
-                                e || A || Se(),
+                                e || M || Ce(),
                                 setTimeout(() => {
                                     null == W || W(e);
-                                }, 1e3 * O.DURATION),
+                                }, 1e3 * D.DURATION),
                                 e &&
                                     !E &&
                                     "undefined" != typeof window &&
@@ -431,7 +391,7 @@
                                             : n.map((t) => {
                                                   const n = "string" == typeof t;
                                                   let r = 0;
-                                                  if ((n && (r = parseInt(t, 10)), C(s))) {
+                                                  if ((n && (r = parseInt(t, 10)), S(s))) {
                                                       const a = n ? r : m ? t * e.height : 0;
                                                       return m ? ("bottom" === s ? e.height - a : -e.height + a) : a;
                                                   }
@@ -446,7 +406,7 @@
                                 (e) => {
                                     var t;
                                     const a = null != (t = null == w ? void 0 : w.findIndex((t) => t === e)) ? t : null;
-                                    l(a), S(r.current, { transition: `transform ${O.DURATION}s cubic-bezier(${O.EASE.join(",")})`, transform: C(s) ? `translate3d(0, ${e}px, 0)` : `translate3d(${e}px, 0, 0)` }), w && a !== w.length - 1 && void 0 !== i && a !== i && a < i ? S(o.current, { transition: `opacity ${O.DURATION}s cubic-bezier(${O.EASE.join(",")})`, opacity: "0" }) : S(o.current, { transition: `opacity ${O.DURATION}s cubic-bezier(${O.EASE.join(",")})`, opacity: "1" }), f(null == n ? void 0 : n[Math.max(a, 0)]);
+                                    l(a), C(r.current, { transition: `transform ${D.DURATION}s cubic-bezier(${D.EASE.join(",")})`, transform: S(s) ? `translate3d(0, ${e}px, 0)` : `translate3d(${e}px, 0, 0)` }), w && a !== w.length - 1 && void 0 !== i && a !== i && a < i ? C(o.current, { transition: `opacity ${D.DURATION}s cubic-bezier(${D.EASE.join(",")})`, opacity: "0" }) : C(o.current, { transition: `opacity ${D.DURATION}s cubic-bezier(${D.EASE.join(",")})`, opacity: "1" }), f(null == n ? void 0 : n[Math.max(a, 0)]);
                                 },
                                 [r.current, n, w, i, o, f],
                             );
@@ -480,10 +440,10 @@
                                     const l = "bottom" === s || "right" === s ? (null != y ? y : 0) - e : (null != y ? y : 0) + e,
                                         u = 0 === v,
                                         c = e > 0;
-                                    if ((v === i - 1 && S(o.current, { transition: `opacity ${O.DURATION}s cubic-bezier(${O.EASE.join(",")})` }), !d && r > 2 && !c)) return void (a ? t() : b(w[0]));
+                                    if ((v === i - 1 && C(o.current, { transition: `opacity ${D.DURATION}s cubic-bezier(${D.EASE.join(",")})` }), !d && r > 2 && !c)) return void (a ? t() : b(w[0]));
                                     if (!d && r > 2 && c && w && n) return void b(w[n.length - 1]);
                                     const f = null == w ? void 0 : w.reduce((e, t) => ("number" != typeof e || "number" != typeof t ? e : Math.abs(t - l) < Math.abs(e - l) ? t : e)),
-                                        m = C(s) ? window.innerHeight : window.innerWidth;
+                                        m = S(s) ? window.innerHeight : window.innerWidth;
                                     if (r > 0.4 && Math.abs(e) < 0.4 * m) {
                                         const e = c ? 1 : -1;
                                         if (e > 0 && h && n) return void b(w[n.length - 1]);
@@ -494,14 +454,14 @@
                                 onDrag: function ({ draggedDistance: e }) {
                                     if (null === y) return;
                                     const t = "bottom" === s || "right" === s ? y - e : y + e;
-                                    (("bottom" === s || "right" === s) && t < w[w.length - 1]) || (("top" === s || "left" === s) && t > w[w.length - 1]) || S(r.current, { transform: C(s) ? `translate3d(0, ${t}px, 0)` : `translate3d(${t}px, 0, 0)` });
+                                    (("bottom" === s || "right" === s) && t < w[w.length - 1]) || (("top" === s || "left" === s) && t > w[w.length - 1]) || C(r.current, { transform: S(s) ? `translate3d(0, ${t}px, 0)` : `translate3d(${t}px, 0, 0)` });
                                 },
                                 snapPointsOffset: w,
                             }
                         );
-                    })({ snapPoints: d, activeSnapPointProp: w, setActiveSnapPointProp: b, drawerRef: fe, fadeFromIndex: g, overlayRef: te, onSnapPointChange: ve, direction: B, container: U, snapToSequentialPoint: z });
-                y({ isDisabled: !X || J || !E || Q || !Z || !H || !I });
-                const { restorePositionSetting: Se } = (function ({ isOpen: e, modal: t, nested: n, hasBeenOpened: r, preventScrollRestoration: o, noBodyStyles: i }) {
+                    })({ snapPoints: d, activeSnapPointProp: w, setActiveSnapPointProp: b, drawerRef: fe, fadeFromIndex: g, overlayRef: te, onSnapPointChange: ve, direction: L, container: U, snapToSequentialPoint: z });
+                y({ isDisabled: !X || J || !E || Q || !Z || !j || !I });
+                const { restorePositionSetting: Ce } = (function ({ isOpen: e, modal: t, nested: n, hasBeenOpened: r, preventScrollRestoration: o, noBodyStyles: i }) {
                     const [s, u] = a.useState(() => ("undefined" != typeof window ? window.location.href : "")),
                         d = a.useRef(0),
                         c = a.useCallback(() => {
@@ -563,21 +523,21 @@
                         }, [e, r, s, t, n, c, f]),
                         { restorePositionSetting: f }
                     );
-                })({ isOpen: X, modal: E, nested: null != A && A, hasBeenOpened: Z, preventScrollRestoration: j, noBodyStyles: L });
-                function Ce() {
+                })({ isOpen: X, modal: E, nested: null != M && M, hasBeenOpened: Z, preventScrollRestoration: H, noBodyStyles: B });
+                function Se() {
                     return (window.innerWidth - 26) / window.innerWidth;
                 }
                 function Te(e, t) {
                     var n;
                     let r = e;
                     const a = null == (n = window.getSelection()) ? void 0 : n.toString(),
-                        o = fe.current ? T(fe.current, B) : null,
+                        o = fe.current ? T(fe.current, L) : null,
                         i = new Date();
                     if ("SELECT" === r.tagName) return !1;
                     if (r.hasAttribute("data-vaul-no-drag") || r.closest("[data-vaul-no-drag]")) return !1;
-                    if ("right" === B || "left" === B) return !0;
+                    if ("right" === L || "left" === L) return !0;
                     if (ne.current && i.getTime() - ne.current.getTime() < 500) return !1;
-                    if (null !== o && ("bottom" === B ? o > 0 : o < 0)) return !0;
+                    if (null !== o && ("bottom" === L ? o > 0 : o < 0)) return !0;
                     if (a && a.length > 0) return !1;
                     if (oe.current && i.getTime() - oe.current.getTime() < p && 0 === o) return (oe.current = i), !1;
                     if (t) return (oe.current = i), !1;
@@ -590,22 +550,22 @@
                     }
                     return !0;
                 }
-                function De(e) {
+                function Oe(e) {
                     !(function () {
                         if (!J || !fe.current) return;
-                        fe.current.classList.remove(M), (ie.current = !1), K(!1), (ae.current = new Date());
+                        fe.current.classList.remove(A), (ie.current = !1), K(!1), (ae.current = new Date());
                     })(),
-                        null == D || D(),
+                        null == O || O(),
                         e || _(!1),
                         setTimeout(() => {
                             d && ye(d[0]);
-                        }, 1e3 * O.DURATION);
+                        }, 1e3 * D.DURATION);
                 }
-                function Oe() {
+                function De() {
                     if (!fe.current) return;
                     const e = document.querySelector("[data-vaul-drawer-wrapper]"),
-                        t = T(fe.current, B);
-                    S(fe.current, { transform: "translate3d(0, 0, 0)", transition: `transform ${O.DURATION}s cubic-bezier(${O.EASE.join(",")})` }), S(te.current, { transition: `opacity ${O.DURATION}s cubic-bezier(${O.EASE.join(",")})`, opacity: "1" }), c && t && t > 0 && X && S(e, { borderRadius: "8px", overflow: "hidden", ...(C(B) ? { transform: `scale(${Ce()}) translate3d(0, calc(env(safe-area-inset-top) + 14px), 0)`, transformOrigin: "top" } : { transform: `scale(${Ce()}) translate3d(calc(env(safe-area-inset-top) + 14px), 0, 0)`, transformOrigin: "left" }), transitionProperty: "transform, border-radius", transitionDuration: `${O.DURATION}s`, transitionTimingFunction: `cubic-bezier(${O.EASE.join(",")})` }, !0);
+                        t = T(fe.current, L);
+                    C(fe.current, { transform: "translate3d(0, 0, 0)", transition: `transform ${D.DURATION}s cubic-bezier(${D.EASE.join(",")})` }), C(te.current, { transition: `opacity ${D.DURATION}s cubic-bezier(${D.EASE.join(",")})`, opacity: "1" }), c && t && t > 0 && X && C(e, { borderRadius: "8px", overflow: "hidden", ...(S(L) ? { transform: `scale(${Se()}) translate3d(0, calc(env(safe-area-inset-top) + 14px), 0)`, transformOrigin: "top" } : { transform: `scale(${Se()}) translate3d(calc(env(safe-area-inset-top) + 14px), 0, 0)`, transformOrigin: "left" }), transitionProperty: "transform, border-radius", transitionDuration: `${D.DURATION}s`, transitionTimingFunction: `cubic-bezier(${D.EASE.join(",")})` }, !0);
                 }
                 return (
                     a.useEffect(() => {
@@ -616,7 +576,7 @@
                     a.useEffect(() => {
                         var e;
                         function t() {
-                            if (!fe.current || !H) return;
+                            if (!fe.current || !j) return;
                             if (R(document.activeElement) || ue.current) {
                                 var e;
                                 const t = (null == (e = window.visualViewport) ? void 0 : e.height) || 0,
@@ -651,7 +611,7 @@
                     }, [we, d, xe]),
                     a.useEffect(
                         () => (
-                            X && (S(document.documentElement, { scrollBehavior: "auto" }), (ne.current = new Date())),
+                            X && (C(document.documentElement, { scrollBehavior: "auto" }), (ne.current = new Date())),
                             () => {
                                 !(function (e, t) {
                                     if (!(e && e instanceof HTMLElement)) return;
@@ -673,7 +633,7 @@
                         {
                             defaultOpen: F,
                             onOpenChange: (e) => {
-                                (h || e) && (e ? G(!0) : De(!0), _(e));
+                                (h || e) && (e ? G(!0) : Oe(!0), _(e));
                             },
                             open: X,
                         },
@@ -689,16 +649,16 @@
                                     onOpenChange: t,
                                     onPress: function (e) {
                                         var t, n;
-                                        (h || d) && ((fe.current && !fe.current.contains(e.target)) || ((me.current = (null == (t = fe.current) ? void 0 : t.getBoundingClientRect().height) || 0), (pe.current = (null == (n = fe.current) ? void 0 : n.getBoundingClientRect().width) || 0), K(!0), (re.current = new Date()), u() && window.addEventListener("touchend", () => (ie.current = !1), { once: !0 }), e.target.setPointerCapture(e.pointerId), (se.current = C(B) ? e.pageY : e.pageX)));
+                                        (h || d) && ((fe.current && !fe.current.contains(e.target)) || ((me.current = (null == (t = fe.current) ? void 0 : t.getBoundingClientRect().height) || 0), (pe.current = (null == (n = fe.current) ? void 0 : n.getBoundingClientRect().width) || 0), K(!0), (re.current = new Date()), u() && window.addEventListener("touchend", () => (ie.current = !1), { once: !0 }), e.target.setPointerCapture(e.pointerId), (se.current = S(L) ? e.pageY : e.pageX)));
                                     },
                                     onRelease: function (e) {
                                         if (!J || !fe.current) return;
-                                        fe.current.classList.remove(M), (ie.current = !1), K(!1), (ae.current = new Date());
-                                        const t = T(fe.current, B);
+                                        fe.current.classList.remove(A), (ie.current = !1), K(!1), (ae.current = new Date());
+                                        const t = T(fe.current, L);
                                         if (!e || !Te(e.target, !1) || !t || Number.isNaN(t)) return;
                                         if (null === re.current) return;
                                         const n = ae.current.getTime() - re.current.getTime(),
-                                            r = se.current - (C(B) ? e.pageY : e.pageX),
+                                            r = se.current - (S(L) ? e.pageY : e.pageX),
                                             a = Math.abs(r) / n;
                                         if (
                                             (a > 0.05 &&
@@ -708,47 +668,47 @@
                                                 }, 200)),
                                             d)
                                         ) {
-                                            return be({ draggedDistance: r * ("bottom" === B || "right" === B ? 1 : -1), closeDrawer: De, velocity: a, dismissible: h }), void (null == s || s(e, !0));
+                                            return be({ draggedDistance: r * ("bottom" === L || "right" === L ? 1 : -1), closeDrawer: Oe, velocity: a, dismissible: h }), void (null == s || s(e, !0));
                                         }
-                                        if ("bottom" === B || "right" === B ? r > 0 : r < 0) return Oe(), void (null == s || s(e, !0));
-                                        if (a > 0.4) return De(), void (null == s || s(e, !1));
+                                        if ("bottom" === L || "right" === L ? r > 0 : r < 0) return De(), void (null == s || s(e, !0));
+                                        if (a > 0.4) return Oe(), void (null == s || s(e, !1));
                                         var o;
                                         const i = Math.min(null != (o = fe.current.getBoundingClientRect().height) ? o : 0, window.innerHeight);
                                         var l;
                                         const u = Math.min(null != (l = fe.current.getBoundingClientRect().width) ? l : 0, window.innerWidth),
-                                            c = "left" === B || "right" === B;
-                                        if (Math.abs(t) >= (c ? u : i) * m) return De(), void (null == s || s(e, !1));
-                                        null == s || s(e, !0), Oe();
+                                            c = "left" === L || "right" === L;
+                                        if (Math.abs(t) >= (c ? u : i) * m) return Oe(), void (null == s || s(e, !1));
+                                        null == s || s(e, !0), De();
                                     },
                                     onDrag: function (e) {
                                         var t;
                                         if (fe.current && J) {
-                                            const n = "bottom" === B || "right" === B ? 1 : -1,
-                                                r = (se.current - (C(B) ? e.pageY : e.pageX)) * n,
+                                            const n = "bottom" === L || "right" === L ? 1 : -1,
+                                                r = (se.current - (S(L) ? e.pageY : e.pageX)) * n,
                                                 a = r > 0,
                                                 o = d && !h && !a;
                                             if (o && 0 === we) return;
                                             const l = Math.abs(r),
                                                 s = document.querySelector("[data-vaul-drawer-wrapper]");
-                                            let u = l / ("bottom" === B || "top" === B ? me.current : pe.current);
+                                            let u = l / ("bottom" === L || "top" === L ? me.current : pe.current);
                                             const f = Pe(l, a);
                                             if ((null !== f && (u = f), o && u >= 1)) return;
                                             if (!ie.current && !Te(e.target, a)) return;
-                                            if ((fe.current.classList.add(M), (ie.current = !0), S(fe.current, { transition: "none" }), S(te.current, { transition: "none" }), d && Re({ draggedDistance: r }), a && !d)) {
+                                            if ((fe.current.classList.add(A), (ie.current = !0), C(fe.current, { transition: "none" }), C(te.current, { transition: "none" }), d && Re({ draggedDistance: r }), a && !d)) {
                                                 const e = ((t = r), 8 * (Math.log(t + 1) - 2)),
                                                     a = Math.min(-1 * e, 0) * n;
-                                                return void S(fe.current, { transform: C(B) ? `translate3d(0, ${a}px, 0)` : `translate3d(${a}px, 0, 0)` });
+                                                return void C(fe.current, { transform: S(L) ? `translate3d(0, ${a}px, 0)` : `translate3d(${a}px, 0, 0)` });
                                             }
                                             const m = 1 - u;
-                                            if (((Ee || (g && we === g - 1)) && (null == i || i(e, u), S(te.current, { opacity: `${m}`, transition: "none" }, !0)), s && te.current && c)) {
-                                                const e = Math.min(Ce() + u * (1 - Ce()), 1),
+                                            if (((Ee || (g && we === g - 1)) && (null == i || i(e, u), C(te.current, { opacity: `${m}`, transition: "none" }, !0)), s && te.current && c)) {
+                                                const e = Math.min(Se() + u * (1 - Se()), 1),
                                                     t = 8 - 8 * u,
                                                     n = Math.max(0, 14 - 14 * u);
-                                                S(s, { borderRadius: `${t}px`, transform: C(B) ? `scale(${e}) translate3d(0, ${n}px, 0)` : `scale(${e}) translate3d(${n}px, 0, 0)`, transition: "none" }, !0);
+                                                C(s, { borderRadius: `${t}px`, transform: S(L) ? `scale(${e}) translate3d(0, ${n}px, 0)` : `scale(${e}) translate3d(${n}px, 0, 0)`, transition: "none" }, !0);
                                             }
                                             if (!d) {
                                                 const e = l * n;
-                                                S(fe.current, { transform: C(B) ? `translate3d(0, ${e}px, 0)` : `translate3d(${e}px, 0, 0)` });
+                                                C(fe.current, { transform: S(L) ? `translate3d(0, ${e}px, 0)` : `translate3d(${e}px, 0, 0)` });
                                             }
                                         }
                                     },
@@ -758,40 +718,40 @@
                                     isOpen: X,
                                     isDragging: J,
                                     shouldFade: Ee,
-                                    closeDrawer: De,
+                                    closeDrawer: Oe,
                                     onNestedDrag: function (e, t) {
                                         if (t < 0) return;
                                         const n = (window.innerWidth - $) / window.innerWidth,
                                             r = n + t * (1 - n),
                                             a = t * $ - 16;
-                                        S(fe.current, { transform: C(B) ? `scale(${r}) translate3d(0, ${a}px, 0)` : `scale(${r}) translate3d(${a}px, 0, 0)`, transition: "none" });
+                                        C(fe.current, { transform: S(L) ? `scale(${r}) translate3d(0, ${a}px, 0)` : `scale(${r}) translate3d(${a}px, 0, 0)`, transition: "none" });
                                     },
                                     onNestedOpenChange: function (e) {
                                         const t = e ? (window.innerWidth - $) / window.innerWidth : 1,
                                             n = e ? -16 : 0;
                                         le.current && window.clearTimeout(le.current),
-                                            S(fe.current, { transition: `transform ${O.DURATION}s cubic-bezier(${O.EASE.join(",")})`, transform: `scale(${t}) translate3d(0, ${n}px, 0)` }),
+                                            C(fe.current, { transition: `transform ${D.DURATION}s cubic-bezier(${D.EASE.join(",")})`, transform: `scale(${t}) translate3d(0, ${n}px, 0)` }),
                                             !e &&
                                                 fe.current &&
                                                 (le.current = setTimeout(() => {
-                                                    const e = T(fe.current, B);
-                                                    S(fe.current, { transition: "none", transform: C(B) ? `translate3d(0, ${e}px, 0)` : `translate3d(${e}px, 0, 0)` });
+                                                    const e = T(fe.current, L);
+                                                    C(fe.current, { transition: "none", transform: S(L) ? `translate3d(0, ${e}px, 0)` : `translate3d(${e}px, 0, 0)` });
                                                 }, 500));
                                     },
                                     onNestedRelease: function (e, t) {
-                                        const n = C(B) ? window.innerHeight : window.innerWidth,
+                                        const n = S(L) ? window.innerHeight : window.innerWidth,
                                             r = t ? (n - $) / n : 1,
                                             a = t ? -16 : 0;
-                                        t && S(fe.current, { transition: `transform ${O.DURATION}s cubic-bezier(${O.EASE.join(",")})`, transform: C(B) ? `scale(${r}) translate3d(0, ${a}px, 0)` : `scale(${r}) translate3d(${a}px, 0, 0)` });
+                                        t && C(fe.current, { transition: `transform ${D.DURATION}s cubic-bezier(${D.EASE.join(",")})`, transform: S(L) ? `scale(${r}) translate3d(0, ${a}px, 0)` : `scale(${r}) translate3d(${a}px, 0, 0)` });
                                     },
                                     keyboardIsOpen: ue,
                                     modal: E,
                                     snapPointsOffset: xe,
                                     activeSnapPointIndex: we,
-                                    direction: B,
+                                    direction: L,
                                     shouldScaleBackground: c,
                                     setBackgroundColorOnScale: f,
-                                    noBodyStyles: L,
+                                    noBodyStyles: B,
                                     container: U,
                                     autoFocus: q,
                                 },
@@ -801,7 +761,7 @@
                     )
                 );
             }
-            const B = a.forwardRef(function ({ ...e }, t) {
+            const L = a.forwardRef(function ({ ...e }, t) {
                 const { overlayRef: n, snapPoints: o, onRelease: l, shouldFade: s, isOpen: u, modal: d, shouldAnimate: c } = i(),
                     f = E(t, n),
                     m = o && o.length > 0;
@@ -809,14 +769,14 @@
                 const p = a.useCallback((e) => l(e), [l]);
                 return a.createElement(r.aV, { onMouseUp: p, ref: f, "data-vaul-overlay": "", "data-vaul-snap-points": u && m ? "true" : "false", "data-vaul-snap-points-overlay": u && s ? "true" : "false", "data-vaul-animate": (null == c ? void 0 : c.current) ? "true" : "false", ...e });
             });
-            B.displayName = "Drawer.Overlay";
+            L.displayName = "Drawer.Overlay";
             const F = a.forwardRef(function ({ onPointerDownOutside: e, style: t, onOpenAutoFocus: n, ...o }, l) {
                 const { drawerRef: s, onPress: u, onRelease: d, onDrag: c, keyboardIsOpen: f, snapPointsOffset: m, activeSnapPointIndex: p, modal: h, isOpen: v, direction: g, snapPoints: w, container: y, handleOnly: b, shouldAnimate: x, autoFocus: R } = i(),
-                    [P, S] = a.useState(!1),
+                    [P, C] = a.useState(!1),
                     T = E(l, s),
                     $ = a.useRef(null),
-                    M = a.useRef(null),
-                    A = a.useRef(!1),
+                    A = a.useRef(null),
+                    M = a.useRef(!1),
                     k = w && w.length > 0;
                 !(function () {
                     const { direction: e, isOpen: t, shouldScaleBackground: n, setBackgroundColorOnScale: r, noBodyStyles: o } = i(),
@@ -830,25 +790,25 @@
                             l.current && clearTimeout(l.current);
                             const t = document.querySelector("[data-vaul-drawer-wrapper]") || document.querySelector("[vaul-drawer-wrapper]");
                             if (!t) return;
-                            r && !o && D(document.body, { background: "black" }), D(t, { transformOrigin: C(e) ? "top" : "left", transitionProperty: "transform, border-radius", transitionDuration: `${O.DURATION}s`, transitionTimingFunction: `cubic-bezier(${O.EASE.join(",")})` });
-                            const n = D(t, { borderRadius: "8px", overflow: "hidden", ...(C(e) ? { transform: `scale(${u()}) translate3d(0, calc(env(safe-area-inset-top) + 14px), 0)` } : { transform: `scale(${u()}) translate3d(calc(env(safe-area-inset-top) + 14px), 0, 0)` }) });
+                            r && !o && O(document.body, { background: "black" }), O(t, { transformOrigin: S(e) ? "top" : "left", transitionProperty: "transform, border-radius", transitionDuration: `${D.DURATION}s`, transitionTimingFunction: `cubic-bezier(${D.EASE.join(",")})` });
+                            const n = O(t, { borderRadius: "8px", overflow: "hidden", ...(S(e) ? { transform: `scale(${u()}) translate3d(0, calc(env(safe-area-inset-top) + 14px), 0)` } : { transform: `scale(${u()}) translate3d(calc(env(safe-area-inset-top) + 14px), 0, 0)` }) });
                             return () => {
                                 n(),
                                     (l.current = window.setTimeout(() => {
                                         s ? (document.body.style.background = s) : document.body.style.removeProperty("background");
-                                    }, 1e3 * O.DURATION));
+                                    }, 1e3 * D.DURATION));
                             };
                         }
                     }, [t, n, s]);
                 })();
                 function N(e) {
-                    ($.current = null), (A.current = !1), d(e);
+                    ($.current = null), (M.current = !1), d(e);
                 }
                 return (
                     a.useEffect(() => {
                         k &&
                             window.requestAnimationFrame(() => {
-                                S(!0);
+                                C(!0);
                             });
                     }, []),
                     a.createElement(r.VY, {
@@ -874,13 +834,13 @@
                             h || e.preventDefault();
                         },
                         onPointerMove: (e) => {
-                            if (((M.current = e), b)) return;
+                            if (((A.current = e), b)) return;
                             if ((null == o.onPointerMove || o.onPointerMove.call(o, e), !$.current)) return;
                             const t = e.pageY - $.current.y,
                                 n = e.pageX - $.current.x,
                                 r = "touch" === e.pointerType ? 10 : 2,
                                 a = ((e, t, n = 0) => {
-                                    if (A.current) return !0;
+                                    if (M.current) return !0;
                                     const r = Math.abs(e.y),
                                         a = Math.abs(e.x),
                                         o = a > r,
@@ -888,18 +848,18 @@
                                     if ("left" === t || "right" === t) {
                                         if (!(e.x * i < 0) && a >= 0 && a <= n) return o;
                                     } else if (!(e.y * i < 0) && r >= 0 && r <= n) return !o;
-                                    return (A.current = !0), !0;
+                                    return (M.current = !0), !0;
                                 })({ x: n, y: t }, g, r);
                             a ? c(e) : (Math.abs(n) > r || Math.abs(t) > r) && ($.current = null);
                         },
                         onPointerUp: (e) => {
-                            null == o.onPointerUp || o.onPointerUp.call(o, e), ($.current = null), (A.current = !1), d(e);
+                            null == o.onPointerUp || o.onPointerUp.call(o, e), ($.current = null), (M.current = !1), d(e);
                         },
                         onPointerOut: (e) => {
-                            null == o.onPointerOut || o.onPointerOut.call(o, e), N(M.current);
+                            null == o.onPointerOut || o.onPointerOut.call(o, e), N(A.current);
                         },
                         onContextMenu: (e) => {
-                            null == o.onContextMenu || o.onContextMenu.call(o, e), M.current && N(M.current);
+                            null == o.onContextMenu || o.onContextMenu.call(o, e), A.current && N(A.current);
                         },
                     })
                 );
@@ -951,11 +911,11 @@
             });
             I.displayName = "Drawer.Handle";
             const z = {
-                Root: L,
+                Root: B,
                 NestedRoot: function ({ onDrag: e, onOpenChange: t, ...n }) {
                     const { onNestedDrag: r, onNestedOpenChange: o, onNestedRelease: l } = i();
                     if (!r) throw new Error("Drawer.NestedRoot must be placed in another drawer");
-                    return a.createElement(L, {
+                    return a.createElement(B, {
                         nested: !0,
                         onClose: () => {
                             o(!1);
@@ -971,7 +931,7 @@
                     });
                 },
                 Content: F,
-                Overlay: B,
+                Overlay: L,
                 Trigger: r.xz,
                 Portal: function (e) {
                     const t = i(),
@@ -986,4 +946,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~ondemand.Insights~ondemand.XChat.c79ec34a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~ondemand.Insights~ondemand.XChat.d94dca9a.js.map

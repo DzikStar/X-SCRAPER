@@ -6,21 +6,21 @@
             s.d(n, { x: () => k });
             var r = s(552322),
                 t = s(202784),
-                o = s(844098),
-                a = s(702024),
-                i = s(941204),
-                c = s(130629),
-                l = s(436059),
-                u = s(816828),
-                d = s(921879),
+                o = s(653748),
+                a = s(193686),
+                i = s(332161),
+                c = s(423011),
+                l = s(993165),
+                u = s(772669),
+                d = s(983706),
                 m = s(425522),
                 x = s(611463),
                 g = s(379342),
                 p = s(533476),
                 h = s(658358),
-                f = s(518840),
-                v = s(582440),
-                w = s(517652),
+                f = s(341333),
+                v = s(782879),
+                w = s(353561),
                 y = s(759746),
                 j = s(466285);
             const C = ({ onClick: e, isSelected: n, suggestion: s }) => (s instanceof m.com.x.dms.NewDmSuggestion.User ? (0, r.jsx)(j.a, { onClick: e, isSelected: n, user: s.user }) : s instanceof m.com.x.dms.NewDmSuggestion.ExistingGroup ? (0, r.jsxs)("div", { className: "flex flex-row w-full gap-2 p-2 items-center hover:bg-gray-50 cursor-pointer", onClick: e, children: [(0, r.jsx)(y.M, { avatarSize: "large", users: s.otherUsers.asJsReadonlyArrayView(), isInlineFacepile: !0 }), (0, r.jsxs)("div", { className: "flex-1 flex-col", children: [(0, r.jsx)(i.x, { children: s.title }), (0, r.jsxs)(i.x, { size: "subtext2", color: "gray700", children: [s.numParticipants, " people"] })] })] }, s.id) : (0, r.jsx)(r.Fragment, {}));
@@ -112,8 +112,8 @@
             var r = s(552322),
                 t = s(425522),
                 o = s(256958),
-                a = s(412035),
-                i = s(338175),
+                a = s(88096),
+                i = s(38375),
                 c = s(350311),
                 l = s(336984);
             const u = ({ onClick: e, isSelected: n, isAlreadyParticipant: s, user: u }) => {
@@ -146,8 +146,8 @@
             s.d(n, { w: () => i });
             var r = s(552322),
                 t = s(350311),
-                o = s(412035),
-                a = s(304183);
+                o = s(88096),
+                a = s(741064);
             const i = ({ name: e, avatarUrl: n, onRemove: s }) => (0, r.jsxs)("div", { className: "flex items-center rounded-full px-2 py-1 gap-1.5 bg-gray-50 hover:bg-mix-text border border-gray-200 max-w-fit cursor-pointer", onClick: s, children: [(0, r.jsx)(t.s, { url: n, size: "small" }), (0, r.jsx)(o.R, { name: e, size: "subtext1" }), (0, r.jsx)(a.Z, { className: "size-4" })] });
         },
         922150: (e, n, s) => {
@@ -156,10 +156,10 @@
                 t = s(425522),
                 o = s(202784),
                 a = s(611463),
-                i = s(702024),
-                c = s(941204),
+                i = s(193686),
+                c = s(332161),
                 l = s(533476),
-                u = s(469745);
+                u = s(305399);
             const d = t.com.x.dms.pin.PinEntryTitle,
                 m = t.com.x.dms.pin.PinEntrySubtitle,
                 x = t.com.x.dms.pin.PinEntryError;
@@ -320,7 +320,7 @@
         549862: (e, n, s) => {
             s.d(n, { J: () => a });
             var r = s(552322),
-                t = s(436059),
+                t = s(993165),
                 o = s(173399);
             const a = () =>
                 (0, r.jsx)(t.z, {
@@ -337,12 +337,12 @@
         334038: (e, n, s) => {
             s.d(n, { Z: () => x });
             var r = s(552322),
-                t = s(436059),
-                o = s(844098),
-                a = s(130629),
-                i = s(941204),
-                c = s(135548),
-                l = s(582440),
+                t = s(993165),
+                o = s(653748),
+                a = s(423011),
+                i = s(332161),
+                c = s(444966),
+                l = s(782879),
                 u = s(202784),
                 d = s(264531),
                 m = s(524098);
@@ -354,4 +354,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-08eb30f7.ac9612ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-08eb30f7.773d04ea.js.map

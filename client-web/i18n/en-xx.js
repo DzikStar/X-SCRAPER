@@ -4848,6 +4848,7 @@
                 s("ie45edda", "[Lïívéêstréêåäm öøvéêrvïíéêw]"),
                 s("e30fc268", "Live Viewers"),
                 s("bd37f68e", "[Méêdïíåä åäctïívïíty]"),
+                s("fe074210", "[mïíns]"),
                 s("jd03a1b8", "Minutes Watched"),
                 s("a20e91e8", "minutes watched"),
                 s("ic2bebee", "[Möønéêtïízéêd]"),
@@ -4908,9 +4909,9 @@
                 s("a7b48b36", "[Théê péêrcéêntåägéê öøf vïídéêöø vïíéêws thåät wéêréê cöømpléêtéêd.]"),
                 s("a2580f2a", "[Cöømpléêtïíöøn Råätéê]"),
                 s("ff95a9cc", "[Vïídéêöø ID]"),
-                s("a97e358e", "[Vïídéêöø Lïínk]"),
-                s("e10e8b46", "[Only shöøwïíng théê vïídéêöøs fröøm théê låäst 100 dåäys.]");
-            s("ba37f6da", "[Vïídéêöø öøvéêrvïíéêw]"),
+                s("a97e358e", "[Vïídéêöø Lïínk]");
+            s("e10e8b46", "[Only shöøwïíng théê vïídéêöøs fröøm théê låäst 100 dåäys.]"),
+                s("ba37f6da", "[Vïídéêöø öøvéêrvïíéêw]"),
                 s("f19846b2", "[Vïídéêöø thümbnåäïíl]"),
                 s("ccd6f4a8", "[Vïídéêöø tïítléê]"),
                 s("c8410542", "[Théê nümbéêr öøf tïíméês yöøür vïídéêöø wåäs vïíéêwéêd.]"),
@@ -5073,7 +5074,6 @@
                 s("fb3e127a", "[Lïímïítéêd-tïíméê Néêw Yéêåär Offéêr]"),
                 s("a5fee980", "[Clåäïím 30% öøff åännüåäl plåäns & üp töø $12,000 fréêéê åäd créêdïít whéên yöøü sübscrïíbéê béêföøréê]"),
                 s("c9051cac", "[dåäys]"),
-                s("fe074210", "[mïíns]"),
                 s("ie035790", "[séêcs]"),
                 s("cbd3dfaa", "[Try théê béêtåä]"),
                 s("h260121e", "[Shöøwcåäséê yöøür töøp röøléês töø yöøür åäüdïíéêncéê.]"),
@@ -13237,4 +13237,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-xx.dbab127a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-xx.bf41ce0a.js.map

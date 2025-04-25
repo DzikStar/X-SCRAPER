@@ -213,9 +213,9 @@
                                                             (r = { alias: null, args: null, kind: "ScalarField", name: "full_text", storageKey: null }),
                                                             (s = { alias: null, args: null, kind: "ScalarField", name: "created_at", storageKey: null }),
                                                             (u = { alias: null, args: null, kind: "ScalarField", name: "bookmark_count", storageKey: null }),
-                                                            { kind: "RequiredField", field: (d = { alias: null, args: null, kind: "ScalarField", name: "favorite_count", storageKey: null }), action: "THROW", path: "tweet.result.legacy.favorite_count" },
-                                                            { kind: "RequiredField", field: (o = { alias: null, args: null, kind: "ScalarField", name: "reply_count", storageKey: null }), action: "THROW", path: "tweet.result.legacy.reply_count" },
-                                                            { kind: "RequiredField", field: (c = { alias: null, args: null, kind: "ScalarField", name: "retweet_count", storageKey: null }), action: "THROW", path: "tweet.result.legacy.retweet_count" },
+                                                            { kind: "RequiredField", field: (d = { alias: null, args: null, kind: "ScalarField", name: "favorite_count", storageKey: null }), action: "THROW" },
+                                                            { kind: "RequiredField", field: (o = { alias: null, args: null, kind: "ScalarField", name: "reply_count", storageKey: null }), action: "THROW" },
+                                                            { kind: "RequiredField", field: (c = { alias: null, args: null, kind: "ScalarField", name: "retweet_count", storageKey: null }), action: "THROW" },
                                                             (m = {
                                                                 alias: null,
                                                                 args: null,
@@ -1054,8 +1054,8 @@
                                                         name: "organic_metrics_time_series",
                                                         plural: !0,
                                                         selections: [
-                                                            { alias: null, args: null, concreteType: "AnayticsMetricsTotalValue", kind: "LinkedField", name: "metric_values", plural: !0, selections: [(o = { alias: null, args: null, kind: "ScalarField", name: "metric_value", storageKey: null }), { kind: "RequiredField", field: (c = { alias: null, args: null, kind: "ScalarField", name: "metric_type", storageKey: null }), action: "THROW", path: "result.result.organic_metrics_time_series.metric_values.metric_type" }], storageKey: null },
-                                                            { alias: null, args: null, concreteType: "AnalyticsTimestamp", kind: "LinkedField", name: "timestamp", plural: !1, selections: [{ kind: "RequiredField", field: (m = { alias: null, args: null, kind: "ScalarField", name: "iso8601_time", storageKey: null }), action: "THROW", path: "result.result.organic_metrics_time_series.timestamp.iso8601_time" }], storageKey: null },
+                                                            { alias: null, args: null, concreteType: "AnayticsMetricsTotalValue", kind: "LinkedField", name: "metric_values", plural: !0, selections: [(o = { alias: null, args: null, kind: "ScalarField", name: "metric_value", storageKey: null }), { kind: "RequiredField", field: (c = { alias: null, args: null, kind: "ScalarField", name: "metric_type", storageKey: null }), action: "THROW" }], storageKey: null },
+                                                            { alias: null, args: null, concreteType: "AnalyticsTimestamp", kind: "LinkedField", name: "timestamp", plural: !1, selections: [{ kind: "RequiredField", field: (m = { alias: null, args: null, kind: "ScalarField", name: "iso8601_time", storageKey: null }), action: "THROW" }], storageKey: null },
                                                         ],
                                                         storageKey: null,
                                                     },
@@ -1186,8 +1186,8 @@
                                                         name: "organic_metrics_time_series",
                                                         plural: !0,
                                                         selections: [
-                                                            { alias: null, args: null, concreteType: "AnayticsMetricsTotalValue", kind: "LinkedField", name: "metric_values", plural: !0, selections: [(o = { alias: null, args: null, kind: "ScalarField", name: "metric_value", storageKey: null }), { kind: "RequiredField", field: (c = { alias: null, args: null, kind: "ScalarField", name: "metric_type", storageKey: null }), action: "THROW", path: "result.result.organic_metrics_time_series.metric_values.metric_type" }], storageKey: null },
-                                                            { alias: null, args: null, concreteType: "AnalyticsTimestamp", kind: "LinkedField", name: "timestamp", plural: !1, selections: [{ kind: "RequiredField", field: (m = { alias: null, args: null, kind: "ScalarField", name: "iso8601_time", storageKey: null }), action: "THROW", path: "result.result.organic_metrics_time_series.timestamp.iso8601_time" }], storageKey: null },
+                                                            { alias: null, args: null, concreteType: "AnayticsMetricsTotalValue", kind: "LinkedField", name: "metric_values", plural: !0, selections: [(o = { alias: null, args: null, kind: "ScalarField", name: "metric_value", storageKey: null }), { kind: "RequiredField", field: (c = { alias: null, args: null, kind: "ScalarField", name: "metric_type", storageKey: null }), action: "THROW" }], storageKey: null },
+                                                            { alias: null, args: null, concreteType: "AnalyticsTimestamp", kind: "LinkedField", name: "timestamp", plural: !1, selections: [{ kind: "RequiredField", field: (m = { alias: null, args: null, kind: "ScalarField", name: "iso8601_time", storageKey: null }), action: "THROW" }], storageKey: null },
                                                         ],
                                                         storageKey: null,
                                                     },
@@ -1314,7 +1314,7 @@
                                                         kind: "LinkedField",
                                                         name: "free_metrics_rollup",
                                                         plural: !0,
-                                                        selections: [(d = { alias: null, args: null, kind: "ScalarField", name: "metric_value", storageKey: null }), { kind: "RequiredField", field: (o = { alias: null, args: null, kind: "ScalarField", name: "metric_type", storageKey: null }), action: "THROW", path: "result.result.free_metrics_rollup.metric_type" }],
+                                                        selections: [(d = { alias: null, args: null, kind: "ScalarField", name: "metric_value", storageKey: null }), { kind: "RequiredField", field: (o = { alias: null, args: null, kind: "ScalarField", name: "metric_type", storageKey: null }), action: "THROW" }],
                                                         storageKey: null,
                                                     },
                                                 ],
@@ -1538,4 +1538,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-a2dee9c7.c0b05e7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-a2dee9c7.5fd4686a.js.map

@@ -4857,6 +4857,7 @@
                 i("ie45edda", "Transmisja strumieniowa na żywo — przegląd"),
                 i("e30fc268", "Live Viewers"),
                 i("bd37f68e", "Aktywność multimedialna"),
+                i("fe074210", "min"),
                 i("jd03a1b8", "Minutes Watched"),
                 i("a20e91e8", "minutes watched"),
                 i("ic2bebee", "Zmonetyzowane"),
@@ -4917,9 +4918,9 @@
                 i("a7b48b36", "Odsetek wyświetleń filmów, podczas których obejrzano cały film."),
                 i("a2580f2a", "Liczba pełnych wyświetleń"),
                 i("ff95a9cc", "Identyfikator filmu"),
-                i("a97e358e", "Link do filmu"),
-                i("e10e8b46", "Pokazywane są tylko filmy z ostatnich 100 dni.");
-            i("ba37f6da", "Przegląd filmu"),
+                i("a97e358e", "Link do filmu");
+            i("e10e8b46", "Pokazywane są tylko filmy z ostatnich 100 dni."),
+                i("ba37f6da", "Przegląd filmu"),
                 i("f19846b2", "Miniatura filmu"),
                 i("ccd6f4a8", "Tytuł filmu"),
                 i("c8410542", "Liczba wyświetleń Twojego filmu."),
@@ -5082,7 +5083,6 @@
                 i("fb3e127a", "Ograniczona czasowo oferta noworoczna"),
                 i("a5fee980", "Otrzymasz 30% zniżki na plany roczne i do 12 000 USD bezpłatnego kredytu reklamowego, jeśli zasubskrybujesz przed"),
                 i("c9051cac", "dni"),
-                i("fe074210", "min"),
                 i("ie035790", "s"),
                 i("cbd3dfaa", "Wypróbuj wersję Beta"),
                 i("h260121e", "Prezentuj najlepsze stanowiska swoim odbiorcom."),
@@ -13250,4 +13250,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.e74243ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.52d2d4ba.js.map

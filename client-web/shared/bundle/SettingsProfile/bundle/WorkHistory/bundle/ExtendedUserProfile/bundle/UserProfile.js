@@ -3,7 +3,7 @@
     ["shared~bundle.SettingsProfile~bundle.WorkHistory~bundle.ExtendedUserProfile~bundle.UserProfile"],
     {
         462166: (l, e, n) => {
-            n.d(e, { nZ: () => B, cH: () => A, wJ: () => I, NG: () => C, C_: () => v, Sp: () => R, Bq: () => x, GL: () => b, lw: () => h });
+            n.d(e, { nZ: () => B, cH: () => x, wJ: () => I, NG: () => C, C_: () => A, Sp: () => R, Bq: () => v, GL: () => b, lw: () => h });
             var a,
                 i,
                 s,
@@ -474,19 +474,16 @@
                                                             storageKey: null,
                                                         },
                                                         action: "THROW",
-                                                        path: "viewer.user_results.result",
                                                     },
                                                 ],
                                                 storageKey: null,
                                             },
                                             action: "THROW",
-                                            path: "viewer.user_results",
                                         },
                                     ],
                                     storageKey: 'viewer_v2(s:"f3d8")',
                                 },
                                 action: "THROW",
-                                path: "viewer",
                             },
                         ],
                         type: "Query",
@@ -1015,13 +1012,13 @@
             const b = T,
                 h = L,
                 I = f,
-                v = K,
-                A = m,
-                x = k,
+                A = K,
+                x = m,
+                v = k,
                 R = g,
                 C = c,
                 B = u;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.SettingsProfile~bundle.WorkHistory~bundle.ExtendedUserProfile~bundle.UserProfile.f7b8c17a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.SettingsProfile~bundle.WorkHistory~bundle.ExtendedUserProfile~bundle.UserProfile.7809a2aa.js.map

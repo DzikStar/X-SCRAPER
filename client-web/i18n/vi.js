@@ -4847,6 +4847,7 @@
                 t("ie45edda", "Tổng quan về buổi phát trực tuyến"),
                 t("e30fc268", "Live Viewers"),
                 t("bd37f68e", "Hoạt động truyền thông"),
+                t("fe074210", "phút"),
                 t("jd03a1b8", "Minutes Watched"),
                 t("a20e91e8", "minutes watched"),
                 t("ic2bebee", "Kiếm tiền"),
@@ -4907,9 +4908,9 @@
                 t("a7b48b36", "Phần trăm lượt xem video đã hoàn tất."),
                 t("a2580f2a", "Tỷ lệ hoàn thành"),
                 t("ff95a9cc", "ID video"),
-                t("a97e358e", "Liên kết đến video"),
-                t("e10e8b46", "Chỉ hiển thị video trong 100 ngày qua.");
-            t("ba37f6da", "Thông tin tổng quan về video"),
+                t("a97e358e", "Liên kết đến video");
+            t("e10e8b46", "Chỉ hiển thị video trong 100 ngày qua."),
+                t("ba37f6da", "Thông tin tổng quan về video"),
                 t("f19846b2", "Hình thu nhỏ video"),
                 t("ccd6f4a8", "Tiêu đề video"),
                 t("c8410542", "Số lượt xem video của bạn."),
@@ -5072,7 +5073,6 @@
                 t("fb3e127a", "Ưu đãi có thời hạn dịp Năm mới"),
                 t("a5fee980", "Nhận giảm giá 30% cho gói theo năm và tối đa 12.000 USD tín dụng quảng cáo miễn phí khi bạn đăng ký trước"),
                 t("c9051cac", "ngày"),
-                t("fe074210", "phút"),
                 t("ie035790", "giây"),
                 t("cbd3dfaa", "Dùng thử bản beta"),
                 t("h260121e", "Quảng bá những vị trí hàng đầu với người xem."),
@@ -13235,4 +13235,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.9f893aba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.f33fc2da.js.map

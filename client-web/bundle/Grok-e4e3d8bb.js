@@ -8,26 +8,23 @@
             const r = (0, d(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        d.e("icons.5"),
-                        d.e("icons.6"),
-                        d.e("icons.22"),
-                        d.e("icons.25"),
-                        d.e("icons.9"),
-                        d.e("icons.4"),
-                        d.e("icons.15"),
-                        d.e("icons.20"),
                         d.e("icons.7"),
-                        d.e("icons.0"),
+                        d.e("icons.15"),
+                        d.e("icons.8"),
+                        d.e("icons.3"),
+                        d.e("icons.24"),
+                        d.e("icons.9"),
+                        d.e("icons.22"),
+                        d.e("icons.12"),
                         d.e("modules.common-e907d115"),
                         d.e("modules.common-e019dbda"),
-                        d.e("icons.11"),
-                        d.e("icons.27"),
-                        d.e("icons.17"),
-                        d.e("icons.12"),
-                        d.e("icons.3"),
-                        d.e("icons.13"),
-                        d.e("icons.24"),
-                        d.e("icons.26"),
+                        d.e("icons.5"),
+                        d.e("icons.6"),
+                        d.e("icons.14"),
+                        d.e("icons.18"),
+                        d.e("icons.2"),
+                        d.e("icons.16"),
+                        d.e("icons.19"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -59,7 +56,7 @@
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                         d.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
                         d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2f4a3d25"),
+                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-00a077b2"),
                         d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                         d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                         d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -72,14 +69,16 @@
                         d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-aaf38a28"),
                         d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-aeee0c9e"),
                         d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-da0e99d8"),
-                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-3931c1f3"),
+                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-4b805c4b"),
                         d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-c377d397"),
-                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-e4b9a405"),
-                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-f17e8d44"),
-                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-f39972b2"),
-                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-568e95f0"),
-                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1895c9ee"),
-                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8fe22a9e"),
+                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8c219810"),
+                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-9b4c2397"),
+                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-c2fdd616"),
+                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-70774d80"),
+                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-92c1aea7"),
+                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8767a721"),
+                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-d5c922ba"),
+                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-e9891f16"),
                         d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-0a8205ef"),
                         d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-5719ea67"),
                         d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1b6af858"),
@@ -98,8 +97,8 @@
                         d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-af3d50e9"),
                         d.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Articles~bundle.AudioSpacePeek~bundle.Birdwatch~bundle.Brande"),
                         d.e("shared~loader.Typeahead~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSpacePeek~bundle.Bir"),
-                        d.e("loader.WideLayout-6107ac1a"),
-                        d.e("loader.WideLayout-9f4db315"),
+                        d.e("shared~bundle.JobSearch~bundle.UserJobs~loader.WideLayout"),
+                        d.e("loader.WideLayout"),
                     ]).then(d.bind(d, 616753)),
             });
         },
@@ -258,11 +257,11 @@
                     const c = { responses: [d], conversationId: this.conversationId || void 0, grokModelOptionId: this.model || "", systemPromptName: "", imageGenerationCount: this.imageGenerationCount, promptMetadata: u, resampleResponseId: this.userChatItemId, toolOverrides: this.toolOverrides || {} };
                     (0, l.pv)(e, { conversationLength: 1, isFileAttached: !1 }), this.updateMessage(""), a && a.onStart && a.onStart();
                     const b = this._store.get(i.f0),
-                        p = !o.ZP.isTwitterApp() && b.isTrue("responsive_web_grok_api_enable_grok_host");
-                    h({ api: r, analytics: e, requestBody: c, atoms: this, eventTag: this.userChatItemId ? "regenerate" : "", enableGrokApiHost: p });
+                        h = !o.ZP.isTwitterApp() && b.isTrue("responsive_web_grok_api_enable_grok_host");
+                    p({ api: r, analytics: e, requestBody: c, atoms: this, eventTag: this.userChatItemId ? "regenerate" : "", enableGrokApiHost: h });
                 }
             }
-            const h = ({ analytics: e, api: a, atoms: d, enableGrokApiHost: r, eventTag: n, requestBody: t }) => {
+            const p = ({ analytics: e, api: a, atoms: d, enableGrokApiHost: r, eventTag: n, requestBody: t }) => {
                 const i = (function () {
                         const e = `grok-${o.ZP.isTwitterApp() ? (o.ZP.isAndroid() ? "android" : "ios") : "web"}:api-handler`,
                             a = u.P_();
@@ -292,14 +291,14 @@
                             const u = setTimeout(() => {
                                     (0, l.eS)(e, !0);
                                 }, 5e3),
-                                h = await r.read();
+                                p = await r.read();
                             return (
                                 clearTimeout(u),
-                                (async function a({ done: u, value: h }) {
+                                (async function a({ done: u, value: p }) {
                                     if (u) c || b ? (d.updateState("complete"), i.record("time-to-last-chunk")) : (d.updateState("error"), (0, l.Uk)(e, `add-response failed to reach the network${s}`), i.record("network-error"));
-                                    else if (h) {
+                                    else if (p) {
                                         i.recordOnce("time-to-first-chunk");
-                                        const s = o.decode(h);
+                                        const s = o.decode(p);
                                         if (((n += s), n.includes("\n"))) {
                                             const a = n.split("\n");
                                             n = a.pop();
@@ -328,7 +327,7 @@
                                             return clearTimeout(d), a(o);
                                         }
                                     }
-                                })(h)
+                                })(p)
                             );
                         })
                         .catch((a) => {
@@ -338,7 +337,7 @@
             };
         },
         965728: (e, a, d) => {
-            d.d(a, { C_: () => S, I5: () => p, K2: () => D, L$: () => l, Rb: () => m, nk: () => h, sI: () => f, xr: () => A });
+            d.d(a, { C_: () => S, I5: () => h, K2: () => D, L$: () => l, Rb: () => m, nk: () => p, sI: () => w, xr: () => A });
             var r = d(202784),
                 o = d(483677),
                 n = d(782578),
@@ -352,15 +351,15 @@
                 u = i.Z.columnWidths.primary,
                 c = (e, a) => Math.min(a, e),
                 b = { rgb: "rgb(0, 0, 0)", rgba: "rgba(0, 0, 0, 0.9)" },
-                h = { transitionProperty: "background-color", transitionDuration: ".5s" },
-                p = (e, a) => {
+                p = { transitionProperty: "background-color", transitionDuration: ".5s" },
+                h = (e, a) => {
                     const { containerHeight: d, containerWidth: r, mediaHeight: o, mediaWidth: t } = e,
                         i = t && o ? t / o : 1,
                         s = i > 1,
                         l = a ? 400 : u,
                         b = s && t <= l ? c(r, l) : r,
-                        h = !s && o <= l ? c(d, l) : d;
-                    return n.Z.getContainDimensions({ width: b, height: h }, i);
+                        p = !s && o <= l ? c(d, l) : d;
+                    return n.Z.getContainDimensions({ width: b, height: p }, i);
                 },
                 m = (e) => {
                     const a = e && e.ext_media_color && e.ext_media_color.palette;
@@ -385,7 +384,7 @@
                             return e;
                     }
                 },
-                f = () => {
+                w = () => {
                     const [e, a] = r.useReducer(g, { isZoomed: !1, showControls: !0 });
                     return {
                         hideButtons: e.isZoomed || !e.showControls,
@@ -419,4 +418,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-e4e3d8bb.e7e455aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-e4e3d8bb.43b7491a.js.map

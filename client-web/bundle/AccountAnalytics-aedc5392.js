@@ -269,18 +269,18 @@
         267240: (e, t, a) => {
             a.d(t, { g1: () => E, mx: () => I, db: () => Q, ks: () => z });
             var l = a(552322),
-                s = a(941204),
+                s = a(332161),
                 n = a(202784),
                 i = a(703383),
                 r = a(446368),
-                c = a(702024),
-                o = a(469745),
+                c = a(193686),
+                o = a(305399),
                 d = a(430962),
                 u = a(777301),
                 m = a(211205),
                 g = a(840489),
                 x = a(995961),
-                y = a(511974),
+                y = a(123848),
                 p = a(991732);
             function h({ compactView: e = !1 }) {
                 const { activeTimesData: t, loadingStates: a, selectedMetric: s } = (0, m.a)(),
@@ -607,10 +607,10 @@
                                             }),
                                     ],
                                 }),
-                                (0, l.jsx)("div", { children: (0, l.jsx)("div", { children: (0, l.jsx)(f.Z, { data: b, title: i.countryTitle, maxItems: 5, compactView: e }) }) }),
+                                (0, l.jsx)("div", { children: (0, l.jsx)("div", { children: (0, l.jsx)(f.Z, { data: b, title: i.countryTitle, maxItems: 5, compactView: e, modalSubtitle: k }) }) }),
                             ],
                         }),
-                        (0, l.jsx)(x.cu, { open: u, onOpenChange: h, children: (0, l.jsx)(x.hC, { title: (0, l.jsxs)("div", { children: [i.countryTitle, (0, l.jsxs)("div", { className: "text-subtext2 text-gray-500 font-normal mt-0.5", children: ["(", k, ")"] })] }), children: (0, l.jsx)("div", { className: "overflow-y-auto max-h-[400px] pr-2 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]", children: (0, l.jsx)(f.Z, { data: b, title: i.countryTitle, compactView: !1 }) }) }) }),
+                        (0, l.jsx)(x.cu, { open: u, onOpenChange: h, children: (0, l.jsx)(x.hC, { title: (0, l.jsxs)("div", { className: "text-center", children: [i.countryTitle, (0, l.jsxs)("div", { className: "text-subtext2 text-gray-500 font-normal mt-0.5", children: ["(", k, ")"] })] }), children: (0, l.jsx)("div", { className: "overflow-y-auto max-h-[400px] pr-2 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]", children: (0, l.jsx)(f.Z, { data: b, title: i.countryTitle, compactView: !1 }) }) }) }),
                         (0, l.jsx)("div", { className: (0, g.W)("bg-gray-0/50 pointer-events-none absolute inset-0 flex items-center justify-center z-10 transition-opacity delay-100 duration-200", { "opacity-0": !r, "opacity-100": r }), children: (0, l.jsx)(c.P, { size: "large" }) }),
                     ],
                 });
@@ -773,7 +773,7 @@
                           ],
                       });
             }
-            var O = a(323788);
+            var O = a(713990);
             const U = [
                 { days: 7, label: "7D" },
                 { days: 28, label: "28D" },
@@ -872,4 +872,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-aedc5392.8879cb5a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-aedc5392.ba685aea.js.map

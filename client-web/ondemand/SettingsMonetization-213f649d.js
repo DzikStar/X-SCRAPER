@@ -36,11 +36,10 @@
                                     kind: "LinkedField",
                                     name: "superfollows_subscription_by_rest_id",
                                     plural: !1,
-                                    selections: [(s = { alias: null, args: null, kind: "ScalarField", name: "created_at_msec", storageKey: null }), (r = { alias: null, args: null, kind: "ScalarField", name: "currency", storageKey: null }), (t = { alias: null, args: null, kind: "ScalarField", name: "payment_platform", storageKey: null }), (u = { alias: null, args: null, kind: "ScalarField", name: "price_in_hundred", storageKey: null }), { kind: "RequiredField", field: { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "consumer_results", plural: !1, selections: [{ kind: "RequiredField", field: { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [(d = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }), { args: null, kind: "FragmentSpread", name: "UserCell_user" }, { args: null, kind: "FragmentSpread", name: "FollowUserButtonRelay_user" }], storageKey: null }, action: "THROW", path: "superfollows_subscription_by_rest_id.consumer_results.result" }], storageKey: null }, action: "THROW", path: "superfollows_subscription_by_rest_id.consumer_results" }],
+                                    selections: [(s = { alias: null, args: null, kind: "ScalarField", name: "created_at_msec", storageKey: null }), (r = { alias: null, args: null, kind: "ScalarField", name: "currency", storageKey: null }), (t = { alias: null, args: null, kind: "ScalarField", name: "payment_platform", storageKey: null }), (u = { alias: null, args: null, kind: "ScalarField", name: "price_in_hundred", storageKey: null }), { kind: "RequiredField", field: { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "consumer_results", plural: !1, selections: [{ kind: "RequiredField", field: { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [(d = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }), { args: null, kind: "FragmentSpread", name: "UserCell_user" }, { args: null, kind: "FragmentSpread", name: "FollowUserButtonRelay_user" }], storageKey: null }, action: "THROW" }], storageKey: null }, action: "THROW" }],
                                     storageKey: null,
                                 },
                                 action: "THROW",
-                                path: "superfollows_subscription_by_rest_id",
                             },
                         ],
                         type: "Query",
@@ -481,9 +480,9 @@
                     metadata: null,
                     name: "useMonetizationPayoutAllTimeRevenueAmount_user",
                     selections: [
-                        { kind: "RequiredField", field: { alias: null, args: null, concreteType: "CreatorDashboardRevenueInfo", kind: "LinkedField", name: "superfollows_revenue", plural: !1, selections: (n = [{ alias: null, args: null, kind: "ScalarField", name: "all_time_revenue_in_cents", storageKey: null }]), storageKey: null }, action: "THROW", path: "superfollows_revenue" },
+                        { kind: "RequiredField", field: { alias: null, args: null, concreteType: "CreatorDashboardRevenueInfo", kind: "LinkedField", name: "superfollows_revenue", plural: !1, selections: (n = [{ alias: null, args: null, kind: "ScalarField", name: "all_time_revenue_in_cents", storageKey: null }]), storageKey: null }, action: "THROW" },
                         { condition: "awardsEnabled", kind: "Condition", passingValue: !0, selections: [{ alias: null, args: null, concreteType: "CreatorDashboardRevenueInfo", kind: "LinkedField", name: "awards_revenue", plural: !1, selections: n, storageKey: null }] },
-                        { kind: "RequiredField", field: { alias: null, args: null, concreteType: "CreatorDashboardRevenueInfo", kind: "LinkedField", name: "total_revenue", plural: !1, selections: n, storageKey: null }, action: "THROW", path: "total_revenue" },
+                        { kind: "RequiredField", field: { alias: null, args: null, concreteType: "CreatorDashboardRevenueInfo", kind: "LinkedField", name: "total_revenue", plural: !1, selections: n, storageKey: null }, action: "THROW" },
                     ],
                     type: "User",
                     abstractKey: null,
@@ -500,9 +499,9 @@
                     metadata: null,
                     name: "useMonetizationPayoutAmount_user",
                     selections: [
-                        { kind: "RequiredField", field: { alias: null, args: null, concreteType: "CreatorDashboardRevenueInfo", kind: "LinkedField", name: "superfollows_revenue", plural: !1, selections: (n = [{ alias: null, args: null, kind: "ScalarField", name: "revenue_since_last_payout_in_cents", storageKey: null }]), storageKey: null }, action: "THROW", path: "superfollows_revenue" },
+                        { kind: "RequiredField", field: { alias: null, args: null, concreteType: "CreatorDashboardRevenueInfo", kind: "LinkedField", name: "superfollows_revenue", plural: !1, selections: (n = [{ alias: null, args: null, kind: "ScalarField", name: "revenue_since_last_payout_in_cents", storageKey: null }]), storageKey: null }, action: "THROW" },
                         { condition: "awardsEnabled", kind: "Condition", passingValue: !0, selections: [{ alias: null, args: null, concreteType: "CreatorDashboardRevenueInfo", kind: "LinkedField", name: "awards_revenue", plural: !1, selections: n, storageKey: null }] },
-                        { kind: "RequiredField", field: { alias: null, args: null, concreteType: "CreatorDashboardRevenueInfo", kind: "LinkedField", name: "total_revenue", plural: !1, selections: n, storageKey: null }, action: "THROW", path: "total_revenue" },
+                        { kind: "RequiredField", field: { alias: null, args: null, concreteType: "CreatorDashboardRevenueInfo", kind: "LinkedField", name: "total_revenue", plural: !1, selections: n, storageKey: null }, action: "THROW" },
                     ],
                     type: "User",
                     abstractKey: null,
@@ -512,7 +511,7 @@
         },
         551652: (e, a, l) => {
             l.d(a, { Z: () => i });
-            var n = { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "useMonetizationPayoutThresholdAmount_user", selections: [{ kind: "RequiredField", field: { alias: null, args: null, concreteType: "CreatorPayoutThresholdInfo", kind: "LinkedField", name: "creator_payout_threshold", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "payout_minimum_threshold_in_usd_cents", storageKey: null }], storageKey: null }, action: "THROW", path: "creator_payout_threshold" }], type: "User", abstractKey: null, hash: "a7feb1fb1419eed9ac574e03fea93d01" };
+            var n = { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "useMonetizationPayoutThresholdAmount_user", selections: [{ kind: "RequiredField", field: { alias: null, args: null, concreteType: "CreatorPayoutThresholdInfo", kind: "LinkedField", name: "creator_payout_threshold", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "payout_minimum_threshold_in_usd_cents", storageKey: null }], storageKey: null }, action: "THROW" }], type: "User", abstractKey: null, hash: "a7feb1fb1419eed9ac574e03fea93d01" };
             const i = n;
         },
         467874: (e, a, l) => {
@@ -566,4 +565,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsMonetization-213f649d.2ee8160a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsMonetization-213f649d.310f8f0a.js.map

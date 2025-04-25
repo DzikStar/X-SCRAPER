@@ -39,11 +39,11 @@
                         selections: [
                             { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
                             { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "follow_request_sent", storageKey: null }, action: "THROW", path: "legacy.follow_request_sent" },
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }, action: "THROW", path: "legacy.protected" },
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "following", storageKey: null }, action: "THROW", path: "legacy.following" },
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null }, action: "THROW", path: "legacy.followed_by" },
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "blocking", storageKey: null }, action: "THROW", path: "legacy.blocking" },
+                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "follow_request_sent", storageKey: null }, action: "THROW" },
+                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }, action: "THROW" },
+                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "following", storageKey: null }, action: "THROW" },
+                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null }, action: "THROW" },
+                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "blocking", storageKey: null }, action: "THROW" },
                         ],
                         storageKey: null,
                     },
@@ -73,7 +73,7 @@
                 g,
                 y,
                 m = {
-                    fragment: { argumentDefinitions: (n = [{ defaultValue: null, kind: "LocalArgument", name: "recent_awards_limit" }]), kind: "Fragment", metadata: null, name: "MonetizationAwardsRevenueQuery", selections: [{ kind: "RequiredField", field: { alias: "viewer", args: (i = [{ kind: "Literal", name: "s", value: "5551" }]), concreteType: "Viewer", kind: "LinkedField", name: "viewer_v2", plural: !1, selections: [{ kind: "RequiredField", field: { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ kind: "RequiredField", field: { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ kind: "InlineFragment", selections: [(s = { alias: null, args: null, kind: "ScalarField", name: "stripe_account_status", storageKey: null }), { args: (r = [{ kind: "Literal", name: "awardsEnabled", value: !0 }]), kind: "FragmentSpread", name: "EstimatedRevenueTile_user" }, { args: r, kind: "FragmentSpread", name: "PayoutThresholdProgress_user" }, { alias: null, args: (t = [{ kind: "Variable", name: "count", variableName: "recent_awards_limit" }]), concreteType: "TweetAwardsHistorySlice", kind: "LinkedField", name: "awards_granted_slice", plural: !1, selections: [{ args: null, kind: "FragmentSpread", name: "useMonetizationHistory_awardsHistorySlice" }], storageKey: null }, { args: null, kind: "FragmentSpread", name: "AwardsDiamonds_user" }], type: "User", abstractKey: null }], storageKey: null }, action: "THROW", path: "viewer.user_results.result" }], storageKey: null }, action: "THROW", path: "viewer.user_results" }], storageKey: 'viewer_v2(s:"5551")' }, action: "THROW", path: "viewer" }], type: "Query", abstractKey: null },
+                    fragment: { argumentDefinitions: (n = [{ defaultValue: null, kind: "LocalArgument", name: "recent_awards_limit" }]), kind: "Fragment", metadata: null, name: "MonetizationAwardsRevenueQuery", selections: [{ kind: "RequiredField", field: { alias: "viewer", args: (i = [{ kind: "Literal", name: "s", value: "5551" }]), concreteType: "Viewer", kind: "LinkedField", name: "viewer_v2", plural: !1, selections: [{ kind: "RequiredField", field: { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ kind: "RequiredField", field: { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ kind: "InlineFragment", selections: [(s = { alias: null, args: null, kind: "ScalarField", name: "stripe_account_status", storageKey: null }), { args: (r = [{ kind: "Literal", name: "awardsEnabled", value: !0 }]), kind: "FragmentSpread", name: "EstimatedRevenueTile_user" }, { args: r, kind: "FragmentSpread", name: "PayoutThresholdProgress_user" }, { alias: null, args: (t = [{ kind: "Variable", name: "count", variableName: "recent_awards_limit" }]), concreteType: "TweetAwardsHistorySlice", kind: "LinkedField", name: "awards_granted_slice", plural: !1, selections: [{ args: null, kind: "FragmentSpread", name: "useMonetizationHistory_awardsHistorySlice" }], storageKey: null }, { args: null, kind: "FragmentSpread", name: "AwardsDiamonds_user" }], type: "User", abstractKey: null }], storageKey: null }, action: "THROW" }], storageKey: null }, action: "THROW" }], storageKey: 'viewer_v2(s:"5551")' }, action: "THROW" }], type: "Query", abstractKey: null },
                     kind: "Request",
                     operation: {
                         argumentDefinitions: n,
@@ -248,7 +248,7 @@
                 s,
                 r,
                 t = {
-                    fragment: { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "MonetizationAwardsSettingsQuery", selections: [{ kind: "RequiredField", field: { alias: "viewer", args: (n = [{ kind: "Literal", name: "s", value: "4721" }]), concreteType: "Viewer", kind: "LinkedField", name: "viewer_v2", plural: !1, selections: [{ kind: "RequiredField", field: { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ kind: "RequiredField", field: { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ kind: "InlineFragment", selections: [(i = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }), (s = { alias: null, args: null, kind: "ScalarField", name: "award_eligible", storageKey: null }), { args: null, kind: "FragmentSpread", name: "useAwardsDeactivate_user" }], type: "User", abstractKey: null }], storageKey: null }, action: "THROW", path: "viewer.user_results.result" }], storageKey: null }, action: "THROW", path: "viewer.user_results" }], storageKey: 'viewer_v2(s:"4721")' }, action: "THROW", path: "viewer" }], type: "Query", abstractKey: null },
+                    fragment: { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "MonetizationAwardsSettingsQuery", selections: [{ kind: "RequiredField", field: { alias: "viewer", args: (n = [{ kind: "Literal", name: "s", value: "4721" }]), concreteType: "Viewer", kind: "LinkedField", name: "viewer_v2", plural: !1, selections: [{ kind: "RequiredField", field: { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ kind: "RequiredField", field: { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ kind: "InlineFragment", selections: [(i = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }), (s = { alias: null, args: null, kind: "ScalarField", name: "award_eligible", storageKey: null }), { args: null, kind: "FragmentSpread", name: "useAwardsDeactivate_user" }], type: "User", abstractKey: null }], storageKey: null }, action: "THROW" }], storageKey: null }, action: "THROW" }], storageKey: 'viewer_v2(s:"4721")' }, action: "THROW" }], type: "Query", abstractKey: null },
                     kind: "Request",
                     operation: { argumentDefinitions: [], kind: "Operation", name: "MonetizationAwardsSettingsQuery", selections: [{ alias: "viewer", args: n, concreteType: "Viewer", kind: "LinkedField", name: "viewer_v2", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [i, { kind: "InlineFragment", selections: [s, (r = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }), { kind: "ClientExtension", selections: [{ alias: null, args: null, kind: "ScalarField", name: "__id", storageKey: null }] }], type: "User", abstractKey: null }], storageKey: null }, r], storageKey: null }], storageKey: 'viewer_v2(s:"4721")' }] },
                     params: { id: "9aX5g4DnUZtOROAY-c4zxg", metadata: {}, name: "MonetizationAwardsSettingsQuery", operationKind: "query", text: null },
@@ -344,19 +344,16 @@
                                                             storageKey: null,
                                                         },
                                                         action: "THROW",
-                                                        path: "viewer.user_results.result",
                                                     },
                                                 ],
                                                 storageKey: null,
                                             },
                                             action: "THROW",
-                                            path: "viewer.user_results",
                                         },
                                     ],
                                     storageKey: 'viewer_v2(s:"5551")',
                                 },
                                 action: "THROW",
-                                path: "viewer",
                             },
                         ],
                         type: "Query",
@@ -546,4 +543,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsMonetization-b9acedcf.366d298a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsMonetization-b9acedcf.8f72eb3a.js.map

@@ -124,7 +124,7 @@
                 w = a(950822),
                 M = a(303186),
                 E = a(954300);
-            class C extends i.Component {
+            class D extends i.Component {
                 constructor(...e) {
                     super(...e),
                         (this._setVideoRef = (e) => {
@@ -138,20 +138,20 @@
                     return (0, w.Z)("video", { ...d, children: [s.map((e) => i.createElement("source", { key: e.src, src: e.src, type: e.type })), e], ref: this._setVideoRef, style: n });
                 }
             }
-            C.defaultProps = { dataSaverMode: !1, variants: [] };
-            var D = a(959587),
+            D.defaultProps = { dataSaverMode: !1, variants: [] };
+            var C = a(959587),
                 I = a(751170),
                 T = a(523561),
                 P = a(195560);
             const x = (0, T.Z)({
                     loader: () =>
                         Promise.all([
-                            a.e("icons.6"),
-                            a.e("icons.22"),
-                            a.e("icons.25"),
-                            a.e("icons.0"),
+                            a.e("icons.9"),
                             a.e("modules.common-e907d115"),
                             a.e("modules.common-e019dbda"),
+                            a.e("icons.5"),
+                            a.e("icons.14"),
+                            a.e("icons.2"),
                             a.e("modules.audio-6107ac1a"),
                             a.e("modules.audio-b953418a"),
                             a.e("modules.audio-7c51e6a7"),
@@ -162,8 +162,10 @@
                             a.e("modules.audio-e019dbda"),
                             a.e("modules.audio-262c94d4"),
                             a.e("modules.audio-c6fe4ea4"),
+                            a.e("icons.27"),
+                            a.e("icons.19"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2f4a3d25"),
+                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-00a077b2"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -176,14 +178,16 @@
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-aaf38a28"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-aeee0c9e"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-da0e99d8"),
-                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-3931c1f3"),
+                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-4b805c4b"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-c377d397"),
-                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-e4b9a405"),
-                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-f17e8d44"),
-                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-f39972b2"),
-                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-568e95f0"),
-                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1895c9ee"),
-                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8fe22a9e"),
+                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8c219810"),
+                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-9b4c2397"),
+                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-c2fdd616"),
+                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-70774d80"),
+                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-92c1aea7"),
+                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8767a721"),
+                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-d5c922ba"),
+                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-e9891f16"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-0a8205ef"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-5719ea67"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1b6af858"),
@@ -261,13 +265,13 @@
                 }
                 render() {
                     const { "aria-label": e, enableGif: t, mediaItem: a, onEdit: o, onEditSensitiveWarning: c, onRemove: u, role: h, style: f, withAltTextLabel: v, withCloseButton: _, withDragAndDropIndicator: A, withEditButton: w, withEditIcon: M, withEditSensitiveWarningButton: E } = this.props,
-                        { mediaContainerSizeStyle: C, playGif: I } = this.state,
+                        { mediaContainerSizeStyle: D, playGif: I } = this.state,
                         T = a.externalMediaDetails && a.externalMediaDetails.mediaType === S.Re,
                         P = T || (t && a.mediaFile && a.mediaFile.isGif),
                         x = !!a.mediaFile?.isVideo;
                     return i.createElement(r.ZP, null, ({ windowWidth: t }) => {
                         const a = void 0 !== M ? M : !y.Z.isTwoColumnLayout(t);
-                        return i.createElement(n.Z, { "aria-label": e || L, onLayout: this._handleMediaPreviewLayout, role: h, style: [f, O.cursor, T && O.gifPlayButton, C] }, this._renderPreview(), T && !I && i.createElement(d.Z, { "aria-label": F, onPress: this._handleGifClick, size: "small" }), P ? i.createElement(D.ZP, { type: D.AM }) : null, v && !x ? i.createElement(s.Z, { align: "left", altLabel: e }) : null, i.createElement(n.Z, { style: O.editMedia }, A ? i.createElement(l.ZP, { "aria-label": W, hoverLabel: { label: W }, icon: i.createElement(p.default, null), size: "small", type: "onMediaDominantColorFilled" }) : null, w && E ? i.createElement(l.ZP, { "aria-label": k, icon: i.createElement(m.default, { style: O.editSensitiveWarningIcon }), onPress: c, size: "small", type: "onMediaDominantColorFilled" }) : null, w ? i.createElement(l.ZP, { "aria-label": Z, icon: a ? i.createElement(b.default, null) : void 0, onPress: o, size: a ? "xSmall" : "small", type: "onMediaDominantColorFilled" }, a ? void 0 : B) : null), _ ? i.createElement(l.ZP, { "aria-label": R, hoverLabel: { label: V }, icon: i.createElement(g.default, null), onPress: u, size: "small", style: O.buttonRight, type: "onMediaDominantColorFilled" }) : null);
+                        return i.createElement(n.Z, { "aria-label": e || L, onLayout: this._handleMediaPreviewLayout, role: h, style: [f, O.cursor, T && O.gifPlayButton, D] }, this._renderPreview(), T && !I && i.createElement(d.Z, { "aria-label": F, onPress: this._handleGifClick, size: "small" }), P ? i.createElement(C.ZP, { type: C.AM }) : null, v && !x ? i.createElement(s.Z, { align: "left", altLabel: e }) : null, i.createElement(n.Z, { style: O.editMedia }, A ? i.createElement(l.ZP, { "aria-label": W, hoverLabel: { label: W }, icon: i.createElement(p.default, null), size: "small", type: "onMediaDominantColorFilled" }) : null, w && E ? i.createElement(l.ZP, { "aria-label": k, icon: i.createElement(m.default, { style: O.editSensitiveWarningIcon }), onPress: c, size: "small", type: "onMediaDominantColorFilled" }) : null, w ? i.createElement(l.ZP, { "aria-label": Z, icon: a ? i.createElement(b.default, null) : void 0, onPress: o, size: a ? "xSmall" : "small", type: "onMediaDominantColorFilled" }, a ? void 0 : B) : null), _ ? i.createElement(l.ZP, { "aria-label": R, hoverLabel: { label: V }, icon: i.createElement(g.default, null), onPress: u, size: "small", style: O.buttonRight, type: "onMediaDominantColorFilled" }) : null);
                     });
                 }
                 _renderPreview() {
@@ -300,7 +304,7 @@
                     }
                     {
                         const a = (0, v.TO)(n.fileHandle) ? [{ content_type: e, url: t }] : [];
-                        return i.createElement(C, { autoPlay: !1, controls: !0, getVideoRef: this._setVideoRef, loop: !0, muted: !0, onPause: this._handleVideoOnPause, onPlay: this._handleVideoOnPlay, playsInline: !0, poster: n instanceof A.ZP ? n.thumbnail : "", style: O.video, variants: a }, d?.upload?.mediaFile instanceof _.ZP ? i.createElement("track", { default: !0, kind: "subtitles", label: d.displayName, src: d.upload.mediaFile.vtt, srcLang: d.lang }) : null);
+                        return i.createElement(D, { autoPlay: !1, controls: !0, getVideoRef: this._setVideoRef, loop: !0, muted: !0, onPause: this._handleVideoOnPause, onPlay: this._handleVideoOnPlay, playsInline: !0, poster: n instanceof A.ZP ? n.thumbnail : "", style: O.video, variants: a }, d?.upload?.mediaFile instanceof _.ZP ? i.createElement("track", { default: !0, kind: "subtitles", label: d.displayName, src: d.upload.mediaFile.vtt, srcLang: d.lang }) : null);
                     }
                 }
             }
@@ -348,7 +352,7 @@
                 h = i.memo(c);
         },
         536210: (e, t, a) => {
-            a.d(t, { Z: () => Ct });
+            a.d(t, { Z: () => Dt });
             var i = a(807896),
                 n = a(202784),
                 r = a(443781),
@@ -372,8 +376,8 @@
                 w = a(293115),
                 M = a(529356),
                 E = a(392237),
-                C = a(175856);
-            const D = "altTextInput",
+                D = a(175856);
+            const C = "altTextInput",
                 I = "endEditingButton",
                 T = "altTextEducationSheetPrimaryAction";
             var P = a(855488),
@@ -404,14 +408,14 @@
                 }
                 render() {
                     const { autofocus: e, maxLength: t, mediaItem: a, orientedImage: i, value: r } = this.props;
-                    return n.createElement(d.Z, { style: V.root }, n.createElement(d.Z, { style: V.attachmentContainer }, n.createElement(R, { mediaItem: a, orientedImage: i }), n.createElement(P.Z, { "aria-label": L, autoFocus: e, helperText: this._renderInputHelperText(), label: W, maxLength: t, maxNumberOfLines: 6, multiline: !0, name: "altTextInput", numberOfLines: 2, onChange: this._handleChange, style: V.formTextInput, testID: D, value: r })));
+                    return n.createElement(d.Z, { style: V.root }, n.createElement(d.Z, { style: V.attachmentContainer }, n.createElement(R, { mediaItem: a, orientedImage: i }), n.createElement(P.Z, { "aria-label": L, autoFocus: e, helperText: this._renderInputHelperText(), label: W, maxLength: t, maxNumberOfLines: 6, multiline: !0, name: "altTextInput", numberOfLines: 2, onChange: this._handleChange, style: V.formTextInput, testID: C, value: r })));
                 }
             }
             var z = a(668214);
-            const U = (e, t) => (0, C.t5)(e, C.Fs),
+            const U = (e, t) => (0, D.t5)(e, D.Fs),
                 N = (0, z.Z)()
                     .propsFromState(() => ({ showEducationOnMount: U }))
-                    .propsFromActions(() => ({ addFlag: C.pj }))
+                    .propsFromActions(() => ({ addFlag: D.pj }))
                     .withAnalytics(),
                 H = c().ffe9ec3a,
                 K = c().j063b262,
@@ -439,7 +443,7 @@
                 }
                 componentDidMount() {
                     const { addFlag: e, analytics: t, showEducationOnMount: a } = this.props;
-                    a && (this.setState({ showAltTextEducationSheet: !0 }), t.scribe({ component: "education", action: "open" }), e(C.Fs));
+                    a && (this.setState({ showAltTextEducationSheet: !0 }), t.scribe({ component: "education", action: "open" }), e(D.Fs));
                 }
                 render() {
                     const { mediaItem: e, onAltTextChange: t, orientedImage: a, value: i } = this.props,
@@ -665,8 +669,8 @@
             }
             const Me = we;
             var Ee = a(815479),
-                Ce = a(926981),
-                De = a(804579),
+                De = a(926981),
+                Ce = a(804579),
                 Ie = a(540387),
                 Te = a(736063);
             var Pe = a(449161),
@@ -735,8 +739,8 @@
                         metadata: null,
                         name: "withAllowVideoDownloadDefaultQuery",
                         selections: [
-                            { kind: "RequiredField", field: (Xe = { alias: null, args: null, concreteType: "UserPreferences", kind: "LinkedField", name: "user_preferences", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "allow_video_downloads", storageKey: null }], storageKey: null }), action: "THROW", path: "user_preferences" },
-                            { kind: "RequiredField", field: { alias: "viewer", args: (Je = [{ kind: "Literal", name: "s", value: "4721" }]), concreteType: "Viewer", kind: "LinkedField", name: "viewer_v2", plural: !1, selections: [{ args: null, kind: "FragmentSpread", name: "fetchDownloadSettingAllowed_viewer" }], storageKey: 'viewer_v2(s:"4721")' }, action: "THROW", path: "viewer" },
+                            { kind: "RequiredField", field: (Xe = { alias: null, args: null, concreteType: "UserPreferences", kind: "LinkedField", name: "user_preferences", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "allow_video_downloads", storageKey: null }], storageKey: null }), action: "THROW" },
+                            { kind: "RequiredField", field: { alias: "viewer", args: (Je = [{ kind: "Literal", name: "s", value: "4721" }]), concreteType: "Viewer", kind: "LinkedField", name: "viewer_v2", plural: !1, selections: [{ args: null, kind: "FragmentSpread", name: "fetchDownloadSettingAllowed_viewer" }], storageKey: 'viewer_v2(s:"4721")' }, action: "THROW" },
                         ],
                         type: "Query",
                         abstractKey: null,
@@ -977,7 +981,7 @@
                     const { isVideoTrimmerEnabled: e, location: t, sensitiveMediaTabEnabled: a } = this.props,
                         i = this._getCurrentMediaItem(),
                         r = [];
-                    return e && i?.originalMediaFile?.isVideo && r.push({ to: { ...t, state: { ...t.state, tab: vt } }, label: n.createElement(Ce.default, null), key: vt, "aria-label": bt, isActive: () => t.state?.tab === vt }), i?.originalMediaFile?.isVideo && r.push({ to: { ...t, state: { ...t.state, tab: yt } }, label: n.createElement(De.default, null), key: yt, "aria-label": ut, isActive: () => t.state?.tab === yt, onClick: this._addTrimDataToState }), a && r.push({ to: { ...t, state: { ...t.state, tab: _t } }, label: n.createElement(m.default, null), key: _t, "aria-label": gt, isActive: () => t.state?.tab === _t, onClick: this._handleClickSensitiveMediaTab }), r;
+                    return e && i?.originalMediaFile?.isVideo && r.push({ to: { ...t, state: { ...t.state, tab: vt } }, label: n.createElement(De.default, null), key: vt, "aria-label": bt, isActive: () => t.state?.tab === vt }), i?.originalMediaFile?.isVideo && r.push({ to: { ...t, state: { ...t.state, tab: yt } }, label: n.createElement(Ce.default, null), key: yt, "aria-label": ut, isActive: () => t.state?.tab === yt, onClick: this._addTrimDataToState }), a && r.push({ to: { ...t, state: { ...t.state, tab: _t } }, label: n.createElement(m.default, null), key: _t, "aria-label": gt, isActive: () => t.state?.tab === _t, onClick: this._handleClickSensitiveMediaTab }), r;
                 }
             }
             const wt = (function (e, t) {
@@ -996,7 +1000,7 @@
             );
             var Mt;
             const Et = wt;
-            const Ct = function (e) {
+            const Dt = function (e) {
                 const { history: t, initialMediaId: a, media: d } = e,
                     { featureSwitches: s } = n.useContext(r.rC),
                     l = d.filter((e) => e.mediaFile?.isImage || e.mediaFile?.isGif || e.externalMediaDetails),
@@ -1055,4 +1059,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.TwitterArticles~bundle.ComposeMedia-a2dee9c7.846b4f8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.TwitterArticles~bundle.ComposeMedia-a2dee9c7.5ffdb5fa.js.map

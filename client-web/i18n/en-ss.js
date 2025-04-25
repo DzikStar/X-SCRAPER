@@ -4848,6 +4848,7 @@
                 a("ie45edda", "[[294277]] Livestream overview"),
                 a("e30fc268", "Live Viewers"),
                 a("bd37f68e", "[[287842]] Media activity"),
+                a("fe074210", "[[292300]] mins"),
                 a("jd03a1b8", "Minutes Watched"),
                 a("a20e91e8", "minutes watched"),
                 a("ic2bebee", "[[293567]] Monetized"),
@@ -4908,9 +4909,9 @@
                 a("a7b48b36", "[[291997]] The percentage of video views that were completed."),
                 a("a2580f2a", "[[291995]] Completion Rate"),
                 a("ff95a9cc", "[[293572]] Video ID"),
-                a("a97e358e", "[[293570]] Video Link"),
-                a("e10e8b46", "[[292160]] Only showing the videos from the last 100 days.");
-            a("ba37f6da", "[[292001]] Video overview"),
+                a("a97e358e", "[[293570]] Video Link");
+            a("e10e8b46", "[[292160]] Only showing the videos from the last 100 days."),
+                a("ba37f6da", "[[292001]] Video overview"),
                 a("f19846b2", "[[293573]] Video thumbnail"),
                 a("ccd6f4a8", "[[293571]] Video title"),
                 a("c8410542", "[[291998]] The number of times your video was viewed."),
@@ -5073,7 +5074,6 @@
                 a("fb3e127a", "[[292226]] Limited-time New Year Offer"),
                 a("a5fee980", "[[292224]] Claim 30% off annual plans & up to $12,000 free ad credit when you subscribe before"),
                 a("c9051cac", "[[292299]] days"),
-                a("fe074210", "[[292300]] mins"),
                 a("ie035790", "[[292301]] secs"),
                 a("cbd3dfaa", "[[289836]] Try the beta"),
                 a("h260121e", "[[291265]] Showcase your top roles to your audience."),
@@ -13237,4 +13237,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-ss.bc1e7dea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-ss.ee9f3a2a.js.map

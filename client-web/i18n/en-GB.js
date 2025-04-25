@@ -4852,6 +4852,7 @@
                 a("ie45edda", "Livestream overview"),
                 a("e30fc268", "Live Viewers"),
                 a("bd37f68e", "Media activity"),
+                a("fe074210", "mins"),
                 a("jd03a1b8", "Minutes Watched"),
                 a("a20e91e8", "minutes watched"),
                 a("ic2bebee", "Monetized"),
@@ -4912,9 +4913,9 @@
                 a("a7b48b36", "The percentage of video views that were completed."),
                 a("a2580f2a", "Completion Rate"),
                 a("ff95a9cc", "Video ID"),
-                a("a97e358e", "Video Link"),
-                a("e10e8b46", "Only showing the videos from the last 100 days.");
-            a("ba37f6da", "Video overview"),
+                a("a97e358e", "Video Link");
+            a("e10e8b46", "Only showing the videos from the last 100 days."),
+                a("ba37f6da", "Video overview"),
                 a("f19846b2", "Video thumbnail"),
                 a("ccd6f4a8", "Video title"),
                 a("c8410542", "The number of times your video was viewed."),
@@ -5077,7 +5078,6 @@
                 a("fb3e127a", "Limited-time New Year Offer"),
                 a("a5fee980", "Claim 30% off annual plans & up to $12,000 free ad credit when you subscribe before"),
                 a("c9051cac", "days"),
-                a("fe074210", "mins"),
                 a("ie035790", "secs"),
                 a("cbd3dfaa", "Try the beta"),
                 a("h260121e", "Showcase your top roles to your audience."),
@@ -13254,4 +13254,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-GB.0c76415a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-GB.5eefce9a.js.map

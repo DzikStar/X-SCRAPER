@@ -4852,6 +4852,7 @@
                 o("ie45edda", "Panoramica della trasmissione in diretta"),
                 o("e30fc268", "Live Viewers"),
                 o("bd37f68e", "Attività contenuto multimediale"),
+                o("fe074210", "min"),
                 o("jd03a1b8", "Minutes Watched"),
                 o("a20e91e8", "minutes watched"),
                 o("ic2bebee", "Monetizzazione"),
@@ -4912,9 +4913,9 @@
                 o("a7b48b36", "La percentuale di visualizzazioni video che sono state completate."),
                 o("a2580f2a", "Tasso di completamento"),
                 o("ff95a9cc", "ID video"),
-                o("a97e358e", "Link video"),
-                o("e10e8b46", "Vengono mostrati solo i video degli ultimi 100 giorni.");
-            o("ba37f6da", "Riepilogo video"),
+                o("a97e358e", "Link video");
+            o("e10e8b46", "Vengono mostrati solo i video degli ultimi 100 giorni."),
+                o("ba37f6da", "Riepilogo video"),
                 o("f19846b2", "Miniatura video"),
                 o("ccd6f4a8", "Titolo video"),
                 o("c8410542", "Il numero di volte in cui il tuo video è stato visualizzato."),
@@ -5077,7 +5078,6 @@
                 o("fb3e127a", "Offerta limitata per il nuovo anno"),
                 o("a5fee980", "Ottieni uno sconto del 30% sui piani annuali e un credito pubblicitario gratis da 12.000 USD se ti abboni prima della seguente data:"),
                 o("c9051cac", "gg"),
-                o("fe074210", "min"),
                 o("ie035790", "sec"),
                 o("cbd3dfaa", "Prova la beta"),
                 o("h260121e", "Fai notare al tuo pubblico i ruoli di spicco."),
@@ -13241,4 +13241,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/it.f6296b5a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/it.6bcf65ea.js.map

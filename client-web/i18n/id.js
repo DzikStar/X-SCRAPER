@@ -4847,6 +4847,7 @@
                 i("ie45edda", "Ikhtisar streaming langsung"),
                 i("e30fc268", "Live Viewers"),
                 i("bd37f68e", "Aktivitas media"),
+                i("fe074210", "menit"),
                 i("jd03a1b8", "Minutes Watched"),
                 i("a20e91e8", "minutes watched"),
                 i("ic2bebee", "Dimonetisasi"),
@@ -4907,9 +4908,9 @@
                 i("a7b48b36", "Persentase penayangan video hingga selesai."),
                 i("a2580f2a", "Tingkat Penyelesaian"),
                 i("ff95a9cc", "ID video"),
-                i("a97e358e", "Tautan Video"),
-                i("e10e8b46", "Hanya menampilkan video dari 100 hari terakhir.");
-            i("ba37f6da", "Ikhtisar video"),
+                i("a97e358e", "Tautan Video");
+            i("e10e8b46", "Hanya menampilkan video dari 100 hari terakhir."),
+                i("ba37f6da", "Ikhtisar video"),
                 i("f19846b2", "Thumbnail video"),
                 i("ccd6f4a8", "Judul video"),
                 i("c8410542", "Berapa kali video Anda dilihat."),
@@ -5072,7 +5073,6 @@
                 i("fb3e127a", "Penawaran Tahun Baru Berbatas Waktu"),
                 i("a5fee980", "Klaim diskon 30% untuk paket tahunan dan kredit iklan gratis senilai hingga 12.000 USD jika Anda berlangganan sebelum"),
                 i("c9051cac", "hari"),
-                i("fe074210", "menit"),
                 i("ie035790", "detik"),
                 i("cbd3dfaa", "Coba versi beta"),
                 i("h260121e", "Tampilkan peran teratas kepada audiens Anda."),
@@ -13235,4 +13235,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/id.b2e4168a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/id.6c3de0aa.js.map

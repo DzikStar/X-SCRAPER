@@ -4848,6 +4848,7 @@
                 t("ie45edda", "Liveströmöversikt"),
                 t("e30fc268", "Live Viewers"),
                 t("bd37f68e", "Medieaktivitet"),
+                t("fe074210", "minuter"),
                 t("jd03a1b8", "Minutes Watched"),
                 t("a20e91e8", "minutes watched"),
                 t("ic2bebee", "Intäktsgenerering"),
@@ -4908,9 +4909,9 @@
                 t("a7b48b36", "Andelen videovisningar som slutfördes."),
                 t("a2580f2a", "Slutförandefrekvens"),
                 t("ff95a9cc", "Video-id"),
-                t("a97e358e", "Videolänk"),
-                t("e10e8b46", "Visa bara videorna från de senaste 100 dagarna.");
-            t("ba37f6da", "Videoöversikt"),
+                t("a97e358e", "Videolänk");
+            t("e10e8b46", "Visa bara videorna från de senaste 100 dagarna."),
+                t("ba37f6da", "Videoöversikt"),
                 t("f19846b2", "Videominiatyr"),
                 t("ccd6f4a8", "Videotitel"),
                 t("c8410542", "Antalet gånger din video har setts."),
@@ -5073,7 +5074,6 @@
                 t("fb3e127a", "Nyårserbjudande under begränsad tid"),
                 t("a5fee980", "Du kan få 30 % rabatt på årsplaner och upp till 12 000 USD i kostnadsfri annonskredit om du prenumererar före"),
                 t("c9051cac", "dagar"),
-                t("fe074210", "minuter"),
                 t("ie035790", "sek"),
                 t("cbd3dfaa", "Testa betan"),
                 t("h260121e", "Visa upp dina främsta roller för din målgrupp."),
@@ -13237,4 +13237,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sv.ec5e065a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sv.7bf0686a.js.map

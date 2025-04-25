@@ -476,10 +476,10 @@
                                                             name: "legacy",
                                                             plural: !1,
                                                             selections: [
-                                                                { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "blocking", storageKey: null }, action: "THROW", path: "user_relationship.user_results.result.legacy.blocking" },
+                                                                { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "blocking", storageKey: null }, action: "THROW" },
                                                                 { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null },
-                                                                { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null }, action: "THROW", path: "user_relationship.user_results.result.legacy.followed_by" },
-                                                                { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "following", storageKey: null }, action: "THROW", path: "user_relationship.user_results.result.legacy.following" },
+                                                                { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null }, action: "THROW" },
+                                                                { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "following", storageKey: null }, action: "THROW" },
                                                                 { alias: null, args: null, kind: "ScalarField", name: "muting", storageKey: null },
                                                                 { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
                                                             ],
@@ -568,4 +568,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Communities-2a1252f0.acc0042a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Communities-2a1252f0.b5098b4a.js.map

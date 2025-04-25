@@ -4848,6 +4848,7 @@
                 e("ie45edda", "Livestriimin yleiskuvaus"),
                 e("e30fc268", "Live Viewers"),
                 e("bd37f68e", "Mediatoiminnat"),
+                e("fe074210", "min"),
                 e("jd03a1b8", "Minutes Watched"),
                 e("a20e91e8", "minutes watched"),
                 e("ic2bebee", "Kaupallisessa käytössä"),
@@ -4908,9 +4909,9 @@
                 e("a7b48b36", "Loppuun saakka katsottujen videonäyttöjen osuus."),
                 e("a2580f2a", "Loppuunkatseluaste"),
                 e("ff95a9cc", "Videon tunnus"),
-                e("a97e358e", "Videon linkki"),
-                e("e10e8b46", "Näytetään videot viimeisten 100 päivän ajalta.");
-            e("ba37f6da", "Yhteenveto videoista"),
+                e("a97e358e", "Videon linkki");
+            e("e10e8b46", "Näytetään videot viimeisten 100 päivän ajalta."),
+                e("ba37f6da", "Yhteenveto videoista"),
                 e("f19846b2", "Videon esikatselukuva"),
                 e("ccd6f4a8", "Videon nimi"),
                 e("c8410542", "Videosi katselumäärä."),
@@ -5073,7 +5074,6 @@
                 e("fb3e127a", "Uudenvuodentarjous rajoitetun ajan"),
                 e("a5fee980", "30 %:n tarjous vuositilauksesta ja jopa 12 000 USD mainossaldoa kaupan päälle, kun tilaat ennen"),
                 e("c9051cac", "päivää"),
-                e("fe074210", "min"),
                 e("ie035790", "s"),
                 e("cbd3dfaa", "Kokeile betaa"),
                 e("h260121e", "Esittele kiinnostavia työtilaisuuksia yleisöllesi."),
@@ -13250,4 +13250,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.c0aacafa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.4ea1a99a.js.map

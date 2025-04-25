@@ -95,6 +95,28 @@
                 return e;
             }
         },
+        262843: (e, t, r) => {
+            r.d(t, { x: () => n });
+            var i = r(202784);
+            function n() {
+                const [e, t] = (0, i.useState)("undefined" == typeof document || "visible" === document.visibilityState);
+                return (
+                    (0, i.useEffect)(() => {
+                        if ("undefined" == typeof document) return;
+                        const e = () => {
+                            t("visible" === document.visibilityState);
+                        };
+                        return (
+                            document.addEventListener("visibilitychange", e),
+                            () => {
+                                document.removeEventListener("visibilitychange", e);
+                            }
+                        );
+                    }, []),
+                    e
+                );
+            }
+        },
         991732: (e, t, r) => {
             r.d(t, { T: () => s });
             var i = r(202784),
@@ -114,9 +136,9 @@
             }
         },
         746659: (e, t, r) => {
-            r.d(t, { BE: () => p, Gx: () => k, r0: () => y });
+            r.d(t, { BE: () => p, Gx: () => b, r0: () => y });
             var i = r(552322),
-                n = r(702024),
+                n = r(193686),
                 o = r(202784),
                 s = r(889906),
                 a = r(607499),
@@ -138,12 +160,12 @@
                         g = m[h] || "Sample post text",
                         p = Math.random() < 0.3,
                         y = d[f(0, d.length - 1)],
-                        _ = { id: `mock_post_${e}`, text: g, createdAt: n, author: { id: "12345", name: "Mock User", screenName: "mockuser", verifiedType: y || "user", profileImageUrl: u, badges: { verifiedType: y || "user", isProtected: Math.random() < 0.2, isSubscriber: Math.random() < 0.1, isTranslator: Math.random() < 0.05 } }, replyToId: o ? `mock_post_${f(0, 999)}` : void 0, communityId: s ? `mock_community_${f(1, 10)}` : void 0, publicMetrics: { impressions: Math.floor(c * f(50, 200) * (0.5 + 0.5 * a)), likes: Math.floor(c * f(1, 10) * (0.5 + 0.5 * a)), replies: Math.floor(c * f(0, 5) * (0.5 + 0.5 * a)), reposts: Math.floor(c * f(0, 8) * (0.5 + 0.5 * a)), quotes: Math.floor(c * f(0, 3) * (0.5 + 0.5 * a)), bookmarks: Math.floor(c * f(0, 4) * (0.5 + 0.5 * a)) } };
+                        v = { id: `mock_post_${e}`, text: g, createdAt: n, author: { id: "12345", name: "Mock User", screenName: "mockuser", verifiedType: y || "user", profileImageUrl: u, badges: { verifiedType: y || "user", isProtected: Math.random() < 0.2, isSubscriber: Math.random() < 0.1, isTranslator: Math.random() < 0.05 } }, replyToId: o ? `mock_post_${f(0, 999)}` : void 0, communityId: s ? `mock_community_${f(1, 10)}` : void 0, publicMetrics: { impressions: Math.floor(c * f(50, 200) * (0.5 + 0.5 * a)), likes: Math.floor(c * f(1, 10) * (0.5 + 0.5 * a)), replies: Math.floor(c * f(0, 5) * (0.5 + 0.5 * a)), reposts: Math.floor(c * f(0, 8) * (0.5 + 0.5 * a)), quotes: Math.floor(c * f(0, 3) * (0.5 + 0.5 * a)), bookmarks: Math.floor(c * f(0, 4) * (0.5 + 0.5 * a)) } };
                     if (p) {
                         const t = Math.random() < 0.5;
-                        _.media = [{ type: t ? "video" : "photo", url: `https://picsum.photos/seed/${e}/400/300`, ...(t ? { duration: f(1e4, 6e4) } : {}) }];
+                        v.media = [{ type: t ? "video" : "photo", url: `https://picsum.photos/seed/${e}/400/300`, ...(t ? { duration: f(1e4, 6e4) } : {}) }];
                     }
-                    return _;
+                    return v;
                 };
             function g({ children: e, timeRange: t }) {
                 const [r, n] = (0, o.useState)([]),
@@ -169,7 +191,7 @@
                 if (null === e) throw new Error("useContent must be used within a ContentProvider");
                 return e;
             }
-            const _ = (e) => {
+            const v = (e) => {
                 if (!e?.viewer_v2?.user_results?.result) return [];
                 const t = e.viewer_v2.user_results.result;
                 if (!t.tweets_results || !Array.isArray(t.tweets_results)) return [];
@@ -203,7 +225,7 @@
                     return { id: e.rest_id, text: e.legacy?.full_text || "", createdAt: a, author: { id: i, name: n, screenName: o, verifiedType: l, profileImageUrl: s, badges: u }, replyToId: e.reply_to_results?.rest_id, communityId: e.community_results?.rest_id, media: r.length > 0 ? r : void 0, publicMetrics: { impressions: t.Impressions || 0, likes: t.Likes || 0, replies: t.Replies || 0, reposts: t.Retweets || 0, quotes: t.CreateQuote || 0, bookmarks: t.Bookmark || 0 }, rawMetrics: t, display_text_range: e.legacy?.display_text_range || void 0 };
                 });
             };
-            function v({ children: e, timeRange: t }) {
+            function _({ children: e, timeRange: t }) {
                 const r = (0, s.useRelayEnvironment)(),
                     n = (0, o.useRef)(t),
                     a = (0, o.useRef)(!0),
@@ -211,13 +233,13 @@
                     [d, m] = (0, o.useState)([]),
                     [f, h] = (0, o.useState)(!1),
                     [g, y] = (0, o.useState)({ from_time: t.from.toISOString(), to_time: t.to.toISOString(), max_results: 1e3, query_page_size: 100, requested_metrics: ["Impressions", "Likes", "Engagements", "Bookmark", "Share", "Follows", "Replies", "Retweets", "ProfileVisits", "DetailExpands", "UrlClicks", "HashtagClicks", "PermalinkClicks"] }),
-                    v = (0, s.useLazyLoadQuery)(c.x, g, { fetchPolicy: "store-or-network" });
+                    _ = (0, s.useLazyLoadQuery)(c.x, g, { fetchPolicy: "store-or-network" });
                 (0, o.useEffect)(() => {
-                    if (v) {
-                        const e = _(v);
+                    if (_) {
+                        const e = v(_);
                         m(e), h(!1), u(!1);
                     }
-                }, [v]),
+                }, [_]),
                     (0, o.useEffect)(() => {
                         if (((n.current = t), a.current)) return void (a.current = !1);
                         u(!0);
@@ -226,7 +248,7 @@
                             .toPromise()
                             .then((t) => {
                                 if (t) {
-                                    const e = _(t);
+                                    const e = v(t);
                                     m(e);
                                 }
                                 y(e), u(!1), h(!1);
@@ -235,14 +257,14 @@
                                 u(!1), h(!1);
                             });
                     }, [r, t]);
-                const k = { isFetching: l, timeRange: t, posts: d, isLoading: f };
-                return (0, i.jsx)(p.Provider, { value: k, children: e });
+                const b = { isFetching: l, timeRange: t, posts: d, isLoading: f };
+                return (0, i.jsx)(p.Provider, { value: b, children: e });
             }
-            function k({ children: e, timeRange: t, isMockData: r = !1 }) {
-                const s = r ? g : v;
+            function b({ children: e, timeRange: t, isMockData: r = !1 }) {
+                const s = r ? g : _;
                 return (0, i.jsx)(a.S, { fallback: (0, i.jsx)("div", { children: "Error loading content analytics" }), children: (0, i.jsx)(o.Suspense, { fallback: (0, i.jsx)("div", { className: "pt-16", children: (0, i.jsx)(n.P, { size: "large" }) }), children: (0, i.jsx)(s, { timeRange: t, children: e }) }) });
             }
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-971a3c48.f682799a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-971a3c48.9e507f6a.js.map
