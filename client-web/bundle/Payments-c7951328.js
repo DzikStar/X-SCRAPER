@@ -321,7 +321,7 @@
                 i = n(731708),
                 l = n(165822),
                 m = n(965245),
-                u = n(554853),
+                u = n(137882),
                 d = n(743080),
                 y = n(882956),
                 p = n(952428),
@@ -571,7 +571,7 @@
                 s = n(774426),
                 o = n(736063),
                 i = n(725516),
-                l = n(554853),
+                l = n(137882),
                 m = n(692165);
             const u = ({ link: e, scribeAction: t, transactionId: n }) => ({
                 text: "Get support",
@@ -1005,4 +1005,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-c7951328.20629cea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-c7951328.82aaedea.js.map

@@ -3203,6 +3203,7 @@ var manifest = {
         x_jetfuel_enable_test_cluster: { name: "x_jetfuel_enable_test_cluster", type: "boolean", defaultValue: !1 },
         x_jetfuel_enable_frames_on_posts: { name: "x_jetfuel_enable_frames_on_posts", type: "string" },
         x_jetfuel_android_enabled: { name: "x_jetfuel_android_enabled", type: "string" },
+        x_jetfuel_enable_v2_sdk: { name: "x_jetfuel_enable_v2_sdk", type: "string" },
         xprofile_editing_enabled: { name: "xprofile_editing_enabled", type: "boolean", defaultValue: !0 },
         xprofile_consumption_enabled: { name: "xprofile_consumption_enabled", type: "boolean", defaultValue: !0 },
         xprofile_emojis_enabled: { name: "xprofile_emojis_enabled", type: "boolean", defaultValue: !0 },

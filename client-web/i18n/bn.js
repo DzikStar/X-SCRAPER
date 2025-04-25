@@ -313,7 +313,7 @@
                 n("da8c5244", "স্মার্ট ডেটা ইনসাইটের সাথে Premium অ্যানালিটিক্স ব্যবহার করে আপনার অনুসরণকারী বাড়ান।"),
                 n("b081baea", "আপনি কিছু কিছু ইনসাইট পাচ্ছেন না!"),
                 n("d5effffc", "ব্যাজ যোগ করুন"),
-                n("f1dd86b0", "আপনার ব্যবসা যাচাই করুন"),
+                n("c3653d44", "আপনার ব্যবসা যাচাই করুন"),
                 n("e8070e70", "Premium ব্যবহার করে দেখুন"),
                 n("ec42820e", "আপনি কী চান আরও বেশি লোকজন আপনার উত্তর দেখুক?"),
                 n("b0a95418", "Premium-এর সাথে উত্তর বুস্ট করার বিকল্প পান"),
@@ -13252,4 +13252,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/bn.d55e13da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/bn.3c65477a.js.map

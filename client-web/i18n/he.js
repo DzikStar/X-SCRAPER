@@ -322,7 +322,7 @@
                 n("da8c5244", "עם Premium Analytics תוכל לגלות תובנות נתונים חכמות שיעזרו לך להגדיל את מספר העוקבים."),
                 n("b081baea", "אתה מפספס תובנות!"),
                 n("d5effffc", "הוספת תג"),
-                n("f1dd86b0", "אימות הארגון שלך"),
+                n("c3653d44", "אמת את הארגון שלך"),
                 n("e8070e70", "כדאי לנסות מינוי Premium"),
                 n("ec42820e", "רוצה שיותר אנשים יראו אל התשובה שלך?"),
                 n("b0a95418", "הגברת מספר התשובות עם מינוי Premium"),
@@ -13250,4 +13250,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/he.58c190da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/he.ccace09a.js.map

@@ -320,7 +320,7 @@
                 n("da8c5244", "Уз Premium аналитику, можеш да откључаш паметне увиде у податке за повећање броја пратилаца."),
                 n("b081baea", "Пропушташ увиде!"),
                 n("d5effffc", "Додај беџ"),
-                n("f1dd86b0", "Потврди налог компаније"),
+                n("c3653d44", "Потврди своје предузеће"),
                 n("e8070e70", "Испробај Premium"),
                 n("ec42820e", "Желиш да више људи види твој одговор?"),
                 n("b0a95418", "Добићеш истицање одговора уз Premium"),
@@ -13251,4 +13251,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sr.e0a7bb6a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sr.7728431a.js.map

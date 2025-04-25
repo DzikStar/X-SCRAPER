@@ -217,7 +217,7 @@
                             const n = !!e.in_reply_to_status_id_str,
                                 o = e.in_reply_to_user_id_str === t,
                                 s = this._random <= i;
-                            return n && !o && s ? r.createElement(Ht, null) : null;
+                            return !!!e.card?.url && n && !o && s ? r.createElement(Ht, null) : null;
                         }),
                         (this._renderGrokAnalysisPivotAndReplySortingButton = () => {
                             const { forwardPivotInfo: e, tweet: t } = this.props,
@@ -890,4 +890,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-757f3ab2.4167be7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-757f3ab2.7e5e1a1a.js.map

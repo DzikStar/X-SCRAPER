@@ -373,7 +373,7 @@
                                 ({ isHovered: e }) => s.createElement(i.Z, { style: [R.conversationTitleContainer, e ? R.hoveredConversationTitleContainer : void 0] }, s.createElement(i.Z, { style: R.conversationTitle }, s.createElement(d.ZP, { numberOfLines: 1, size: "headline2" }, t.conversation_title)), s.createElement(i.Z, { style: R.goToIconContainer }, s.createElement(_.default, { style: R.goToIcon }))),
                             ),
                         ),
-                        s.createElement(p.ZP, { backgroundColor: "gray900", hoverLabel: { label: o ? I : S }, onClick: o ? a : c, type: o ? "destructiveFilled" : "secondaryFilled" }, o ? I : S),
+                        s.createElement(p.ZP, { backgroundColor: "gray50", borderColor: "transparent", fontWeight: "normal", hoverLabel: { label: o ? I : S }, onClick: o ? a : c, type: o ? "destructiveFilled" : void 0 }, o ? I : S),
                     ),
                     !!t.conversation_summary && s.createElement(d.ZP, { size: "body", style: R.summary, weight: "normal" }, s.createElement(Z.GrokMarkdown, { isAnimated: !1, markdownText: t.conversation_summary })),
                 );
@@ -1153,4 +1153,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-7a6ce5c4.7c31bbaa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-7a6ce5c4.4dbfdf7a.js.map

@@ -313,7 +313,7 @@
                 n("da8c5244", "Premium Analytics વડે, તમે તમારા અનુયાયીઓની સંખ્યા વધારવા માટે ડેટાની સ્માર્ટ જાણકારીઓને અનલૉક કરી શકો છો."),
                 n("b081baea", "તમે જાણકારીઓ ચૂકી રહ્યા છો!"),
                 n("d5effffc", "બૅજ ઉમેરો"),
-                n("f1dd86b0", "તમારા વ્યવસાયની ચકાસણી કરો"),
+                n("c3653d44", "તમારા વ્યવસાયની ચકાસણી કરો"),
                 n("e8070e70", "Premium અજમાવો"),
                 n("ec42820e", "તમારો પ્રત્યુત્તર વધુ લોકો જુએ એવું ઇચ્છો છો?"),
                 n("b0a95418", "Premium વડે પ્રત્યુત્તરમાં બૂસ્ટ મેળવો"),
@@ -13252,4 +13252,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/gu.1c920f1a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/gu.b96f989a.js.map

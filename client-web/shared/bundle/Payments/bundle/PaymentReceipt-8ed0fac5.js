@@ -232,7 +232,7 @@
                 r = a(390387);
             const i = ({ senderId: e }) => (0, n.v9)(r._h) === e;
         },
-        554853: (e, t, a) => {
+        137882: (e, t, a) => {
             a.d(t, { b: () => r, v: () => i });
             a(543673), a(240753), a(128399);
             var n = a(412450);
@@ -635,4 +635,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Payments~bundle.PaymentReceipt-8ed0fac5.9c5901da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Payments~bundle.PaymentReceipt-8ed0fac5.673c665a.js.map

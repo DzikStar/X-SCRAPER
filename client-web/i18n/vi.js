@@ -312,7 +312,7 @@
                 t("da8c5244", "Với Số liệu phân tích Premium, bạn có thể mở khóa thông tin chuyên sâu dữ liệu thông minh để tăng số người theo dõi."),
                 t("b081baea", "Bạn đang bỏ lỡ thông tin chuyên sâu!"),
                 t("d5effffc", "Thêm huy hiệu"),
-                t("f1dd86b0", "Xác nhận doanh nghiệp của bạn"),
+                t("c3653d44", "Xác nhận doanh nghiệp của bạn"),
                 t("e8070e70", "Dùng thử Premium"),
                 t("ec42820e", "Bạn muốn nhiều người thấy câu trả lời của mình hơn?"),
                 t("b0a95418", "Nhận tính năng Ưu tiên câu trả lời với gói Premium"),
@@ -13235,4 +13235,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.f33fc2da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.09a7080a.js.map

@@ -317,7 +317,7 @@
                 o("da8c5244", "Con le statistiche di Premium puoi sbloccare gli approfondimenti di dati strategici e aumentare il numero dei tuoi follower."),
                 o("b081baea", "Ti stai perdendo degli approfondimenti!"),
                 o("d5effffc", "Aggiungi badge"),
-                o("f1dd86b0", "Verifica la tua attività"),
+                o("c3653d44", "Verifica la tua attività"),
                 o("e8070e70", "Prova Premium"),
                 o("ec42820e", "Vuoi che la tua risposta venga vista da più persone?"),
                 o("b0a95418", "Ottieni la messa in risalto di risposte con Premium"),
@@ -13241,4 +13241,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/it.6bcf65ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/it.cbf6612a.js.map

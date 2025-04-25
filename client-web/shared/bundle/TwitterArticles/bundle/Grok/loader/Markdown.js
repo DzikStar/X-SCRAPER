@@ -22,17 +22,16 @@
                         n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8d854c2e"),
                         n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-aaf38a28"),
                         n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-aeee0c9e"),
+                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2652b27c"),
                         n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-da0e99d8"),
-                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-4b805c4b"),
+                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-3931c1f3"),
                         n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-c377d397"),
-                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8c219810"),
-                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-9b4c2397"),
-                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-c2fdd616"),
-                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-70774d80"),
-                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-92c1aea7"),
-                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8767a721"),
-                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-d5c922ba"),
-                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-e9891f16"),
+                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-e4b9a405"),
+                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-f17e8d44"),
+                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-f39972b2"),
+                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-568e95f0"),
+                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1895c9ee"),
+                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8fe22a9e"),
                         n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-0a8205ef"),
                         n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-5719ea67"),
                         n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1b6af858"),
@@ -69,11 +68,11 @@
                 o = /[<>"']|&(?!(#\d{1,7}|#[Xx][a-fA-F0-9]{1,6}|\w+);)/,
                 c = new RegExp(o.source, "g"),
                 u = { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" },
-                d = (e) => u[e];
-            function p(e, t) {
+                p = (e) => u[e];
+            function d(e, t) {
                 if (t) {
-                    if (l.test(e)) return e.replace(a, d);
-                } else if (o.test(e)) return e.replace(c, d);
+                    if (l.test(e)) return e.replace(a, p);
+                } else if (o.test(e)) return e.replace(c, p);
                 return e;
             }
             const h = /&(#(?:\d+)|(?:#x[0-9A-Fa-f]+)|(?:\w+));?/gi;
@@ -123,14 +122,14 @@
             }
             function m(e, t, n, s) {
                 const r = t.href,
-                    i = t.title ? p(t.title) : null,
+                    i = t.title ? d(t.title) : null,
                     l = e[1].replace(/\\([\[\]])/g, "$1");
                 if ("!" !== e[0].charAt(0)) {
                     s.state.inLink = !0;
                     const e = { type: "link", raw: n, href: r, title: i, text: l, tokens: s.inlineTokens(l) };
                     return (s.state.inLink = !1), e;
                 }
-                return { type: "image", raw: n, href: r, title: i, text: p(l) };
+                return { type: "image", raw: n, href: r, title: i, text: d(l) };
             }
             class S {
                 options;
@@ -216,7 +215,7 @@
                                 c = e.split("\n", 1)[0],
                                 u = 0;
                             this.options.pedantic ? ((u = 2), (a = s.trimStart())) : ((u = t[2].search(/[^ ]/)), (u = u > 4 ? 1 : u), (a = s.slice(u)), (u += t[1].length));
-                            let d = !1;
+                            let p = !1;
                             if ((!s && /^ *$/.test(c) && ((l += c + "\n"), (e = e.substring(c.length + 1)), (n = !0)), !n)) {
                                 const t = new RegExp(`^ {0,${Math.min(3, u - 1)}}(?:[*+-]|\\d{1,9}[.)])((?:[ \t][^\\n]*)?(?:\\n|$))`),
                                     n = new RegExp(`^ {0,${Math.min(3, u - 1)}}((?:- *){3,}|(?:_ *){3,}|(?:\\* *){3,})(?:\\n+|$)`),
@@ -230,20 +229,20 @@
                                     if (n.test(e)) break;
                                     if (c.search(/[^ ]/) >= u || !c.trim()) a += "\n" + c.slice(u);
                                     else {
-                                        if (d) break;
+                                        if (p) break;
                                         if (s.search(/[^ ]/) >= 4) break;
                                         if (r.test(s)) break;
                                         if (i.test(s)) break;
                                         if (n.test(s)) break;
                                         a += "\n" + c;
                                     }
-                                    d || c.trim() || (d = !0), (l += o + "\n"), (e = e.substring(o.length + 1)), (s = c.slice(u));
+                                    p || c.trim() || (p = !0), (l += o + "\n"), (e = e.substring(o.length + 1)), (s = c.slice(u));
                                 }
                             }
                             r.loose || (o ? (r.loose = !0) : /\n *\n *$/.test(l) && (o = !0));
-                            let p,
+                            let d,
                                 h = null;
-                            this.options.gfm && ((h = /^\[[ xX]\] /.exec(a)), h && ((p = "[ ] " !== h[0]), (a = a.replace(/^\[[ xX]\] +/, "")))), r.items.push({ type: "list_item", raw: l, task: !!h, checked: p, loose: !1, text: a, tokens: [] }), (r.raw += l);
+                            this.options.gfm && ((h = /^\[[ xX]\] /.exec(a)), h && ((d = "[ ] " !== h[0]), (a = a.replace(/^\[[ xX]\] +/, "")))), r.items.push({ type: "list_item", raw: l, task: !!h, checked: d, loose: !1, text: a, tokens: [] }), (r.raw += l);
                         }
                         (r.items[r.items.length - 1].raw = l.trimEnd()), (r.items[r.items.length - 1].text = a.trimEnd()), (r.raw = r.raw.trimEnd());
                         for (let e = 0; e < r.items.length; e++)
@@ -310,7 +309,7 @@
                 }
                 escape(e) {
                     const t = this.rules.inline.escape.exec(e);
-                    if (t) return { type: "escape", raw: t[0], text: p(t[1]) };
+                    if (t) return { type: "escape", raw: t[0], text: d(t[1]) };
                 }
                 tag(e) {
                     const t = this.rules.inline.tag.exec(e);
@@ -399,7 +398,7 @@
                         let e = t[2].replace(/\n/g, " ");
                         const n = /[^ ]/.test(e),
                             s = /^ /.test(e) && / $/.test(e);
-                        return n && s && (e = e.substring(1, e.length - 1)), (e = p(e, !0)), { type: "codespan", raw: t[0], text: e };
+                        return n && s && (e = e.substring(1, e.length - 1)), (e = d(e, !0)), { type: "codespan", raw: t[0], text: e };
                     }
                 }
                 br(e) {
@@ -414,20 +413,20 @@
                     const t = this.rules.inline.autolink.exec(e);
                     if (t) {
                         let e, n;
-                        return "@" === t[2] ? ((e = p(t[1])), (n = "mailto:" + e)) : ((e = p(t[1])), (n = e)), { type: "link", raw: t[0], text: e, href: n, tokens: [{ type: "text", raw: e, text: e }] };
+                        return "@" === t[2] ? ((e = d(t[1])), (n = "mailto:" + e)) : ((e = d(t[1])), (n = e)), { type: "link", raw: t[0], text: e, href: n, tokens: [{ type: "text", raw: e, text: e }] };
                     }
                 }
                 url(e) {
                     let t;
                     if ((t = this.rules.inline.url.exec(e))) {
                         let e, n;
-                        if ("@" === t[2]) (e = p(t[0])), (n = "mailto:" + e);
+                        if ("@" === t[2]) (e = d(t[0])), (n = "mailto:" + e);
                         else {
                             let s;
                             do {
                                 (s = t[0]), (t[0] = this.rules.inline._backpedal.exec(t[0])[0]);
                             } while (s !== t[0]);
-                            (e = p(t[0])), (n = "www." === t[1] ? "http://" + t[0] : t[0]);
+                            (e = d(t[0])), (n = "www." === t[1] ? "http://" + t[0] : t[0]);
                         }
                         return { type: "link", raw: t[0], text: e, href: n, tokens: [{ type: "text", raw: e, text: e }] };
                     }
@@ -436,7 +435,7 @@
                     const t = this.rules.inline.text.exec(e);
                     if (t) {
                         let e;
-                        return (e = this.lexer.state.inRawBlock ? t[0] : p(t[0])), { type: "text", raw: t[0], text: e };
+                        return (e = this.lexer.state.inRawBlock ? t[0] : d(t[0])), { type: "text", raw: t[0], text: e };
                     }
                 }
             }
@@ -628,7 +627,7 @@
                 }
                 code(e, t, n) {
                     const s = (t || "").match(/^\S*/)?.[0];
-                    return (e = e.replace(/\n$/, "") + "\n"), s ? '<pre><code class="language-' + p(s) + '">' + (n ? e : p(e, !0)) + "</code></pre>\n" : "<pre><code>" + (n ? e : p(e, !0)) + "</code></pre>\n";
+                    return (e = e.replace(/\n$/, "") + "\n"), s ? '<pre><code class="language-' + d(s) + '">' + (n ? e : d(e, !0)) + "</code></pre>\n" : "<pre><code>" + (n ? e : d(e, !0)) + "</code></pre>\n";
                 }
                 blockquote(e) {
                     return `<blockquote>\n${e}</blockquote>\n`;
@@ -1086,7 +1085,7 @@
                 #t(e, t) {
                     return (n) => {
                         if (((n.message += "\nPlease report this to https://github.com/markedjs/marked."), e)) {
-                            const e = "<p>An error occurred:</p><pre>" + p(n.message + "", !0) + "</pre>";
+                            const e = "<p>An error occurred:</p><pre>" + d(n.message + "", !0) + "</pre>";
                             return t ? Promise.resolve(e) : e;
                         }
                         if (t) return Promise.reject(n);
@@ -1123,4 +1122,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.TwitterArticles~bundle.Grok~loader.Markdown.bc6a81ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.TwitterArticles~bundle.Grok~loader.Markdown.311bcfda.js.map

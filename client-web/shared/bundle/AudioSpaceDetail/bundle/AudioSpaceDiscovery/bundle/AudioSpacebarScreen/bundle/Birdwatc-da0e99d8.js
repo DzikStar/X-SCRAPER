@@ -5,29 +5,29 @@
         109195: (e, t, r) => {
             r.d(t, { Z: () => f });
             var n = r(552322),
-                s = r(705156),
+                s = r(202784),
                 i = r(122883),
-                a = r(202784),
+                a = r(608222),
                 o = r(907490),
-                u = r(608222);
-            const c = (0, a.createContext)({}),
+                u = r(705156);
+            const c = (0, s.createContext)({}),
                 l = (e, t) => ({ action: e, ...t });
             function f({ el: e }) {
-                const t = (0, u.o)(),
+                const t = (0, a.o)(),
                     r = t?.Analytics;
                 if (!t || !t.Runtime) return (0, n.jsx)("div", { children: "Runtime not found" });
                 const f = t.Runtime,
-                    p = (0, a.useContext)(c) || {},
+                    p = (0, s.useContext)(c) || {},
                     d = f.getComponentOverride(),
-                    b = 24045 === e.type || -22153 === e.type ? (0, s.O)(e) : (d[e.type] ?? (0, s.O)(e)),
-                    [v, h] = (0, a.useState)(0),
-                    [m, y] = (0, a.useState)(!1),
-                    w = (0, a.useRef)(null),
-                    g = (0, a.useMemo)(() => (0, i.tJ)(e, v), [e, v]),
-                    k = (0, a.useCallback)(() => {
+                    b = 24045 === e.type || -22153 === e.type ? (0, u.O)(e) : (d[e.type] ?? (0, u.O)(e)),
+                    [v, h] = (0, s.useState)(0),
+                    [m, y] = (0, s.useState)(!1),
+                    w = (0, s.useRef)(null),
+                    g = (0, s.useMemo)(() => (0, i.tJ)(e, v), [e, v]),
+                    k = (0, s.useCallback)(() => {
                         h((e) => e + 1);
                     }, []);
-                (0, a.useEffect)(() => {
+                (0, s.useEffect)(() => {
                     const e = g.subscribe(k);
                     return () => {
                         "function" == typeof e && e();
@@ -36,7 +36,7 @@
                 const S = (g.strDict ? g.strDict("scribe:context") : null) || {},
                     j = !!g.bool && (g.bool("scribe:appear") ?? g.bool("scribe:visibility") ?? !1),
                     O = !!g.bool && (g.bool("scribe:linger") ?? !1);
-                (0, a.useEffect)(() => {
+                (0, s.useEffect)(() => {
                     if ("undefined" != typeof IntersectionObserver && O && w.current) {
                         let e = -1;
                         const t = new IntersectionObserver(
@@ -795,4 +795,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-da0e99d8.ef72cf4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-da0e99d8.78b38d4a.js.map

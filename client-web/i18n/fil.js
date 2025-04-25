@@ -313,7 +313,7 @@
                 i("da8c5244", "Gamit ang Premium Analytics, puwede mong i-unock ang mahuhusay na data insight para mapalaki ang mga follower mo."),
                 i("b081baea", "May napapalampas kang mga insight!"),
                 i("d5effffc", "Maglagay ng badge"),
-                i("f1dd86b0", "I-verify ang Negosyo Mo"),
+                i("c3653d44", "I-verify ang negosyo mo"),
                 i("e8070e70", "Subukan ang Premium"),
                 i("ec42820e", "Gustong mas maraming tao ang makakita sa reply mo?"),
                 i("b0a95418", "Makakuha ng Pag-boost ng Reply gamit ang Premium"),
@@ -13249,4 +13249,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fil.2b43bfaa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fil.88efdfca.js.map

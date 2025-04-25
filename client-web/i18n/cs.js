@@ -322,7 +322,7 @@
                 a("da8c5244", "S analýzami Premium můžete odemknout chytré přehledy dat, abyste získali více sledujících."),
                 a("b081baea", "Přicházíte o přehledy!"),
                 a("d5effffc", "Přidat odznak"),
-                a("f1dd86b0", "Ověřte svou firmu"),
+                a("c3653d44", "Ověřte svou firmu"),
                 a("e8070e70", "Vyzkoušejte Premium"),
                 a("ec42820e", "Chcete, aby vaši odpověď vidělo více lidí?"),
                 a("b0a95418", "Získejte zvýšení odpovědí s Premium"),
@@ -13248,4 +13248,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/cs.73eeceaa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/cs.092a43ba.js.map

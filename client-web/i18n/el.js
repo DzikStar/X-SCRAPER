@@ -312,7 +312,7 @@
                 n("da8c5244", "Με τα Premium στοιχεία ανάλυσης, μπορείτε να ξεκλειδώσετε έξυπνες πληροφορίες δεδομένων για να αυξήσετε τους ακολούθους σας."),
                 n("b081baea", "Χάνετε ιδέες!"),
                 n("d5effffc", "Προσθήκη σήματος"),
-                n("f1dd86b0", "Επαληθεύστε την επιχείρησή σας"),
+                n("c3653d44", "Επαληθεύστε την επιχείρησή σας"),
                 n("e8070e70", "Δοκιμάστε το Premium"),
                 n("ec42820e", "Θέλετε περισσότεροι άνθρωποι να δουν την απάντησή σας;"),
                 n("b0a95418", "Λάβετε ενίσχυση απάντησης με το Premium"),
@@ -13235,4 +13235,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/el.7014f4ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/el.8e26d88a.js.map

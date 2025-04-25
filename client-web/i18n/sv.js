@@ -313,7 +313,7 @@
                 t("da8c5244", "Med Premiumanalys kan du komma åt smarta datainsikter för att få fler följare."),
                 t("b081baea", "Du missar insikter!"),
                 t("d5effffc", "Lägg till ett märke"),
-                t("f1dd86b0", "Verifiera ditt företag"),
+                t("c3653d44", "Verifiera företaget"),
                 t("e8070e70", "Testa Premium"),
                 t("ec42820e", "Vill du att fler ska se ditt svar?"),
                 t("b0a95418", "Få en svarsboost med Premium"),
@@ -13237,4 +13237,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sv.7bf0686a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sv.75dda76a.js.map

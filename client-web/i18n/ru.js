@@ -322,7 +322,7 @@
                 n("da8c5244", "Аналитика Premium дает доступ к интеллектуальной статистике, которая поможет вам привлекать новых читателей."),
                 n("b081baea", "Вы упускаете важные данные!"),
                 n("d5effffc", "Добавить значок"),
-                n("f1dd86b0", "Подтвердите свою компанию"),
+                n("c3653d44", "Подтвердите свою компанию"),
                 n("e8070e70", "Попробовать Premium"),
                 n("ec42820e", "Хотите, чтобы ваш ответ увидело больше людей?"),
                 n("b0a95418", "Получите доступ к функции поднятия ответов с Premium"),
@@ -13250,4 +13250,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ru.2540829a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ru.51ca624a.js.map

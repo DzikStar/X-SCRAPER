@@ -5,8 +5,8 @@
         595133: (e, n, r) => {
             r.d(n, { h: () => s });
             var t = r(552322),
-                a = r(332161),
-                l = r(31674),
+                a = r(941204),
+                l = r(796309),
                 i = r(430962);
             const s = ({ Icon: e, beta: n = !0, children: r, className: s, title: o }) => {
                 const { business: c } = (0, i.M1)();
@@ -47,17 +47,15 @@
                                             kind: "LinkedField",
                                             name: "trend_embedding_search",
                                             plural: !0,
-                                            selections: [{ kind: "RequiredField", field: { alias: null, args: null, concreteType: "AiTrendResults", kind: "LinkedField", name: "trend_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [(c = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }), { kind: "InlineFragment", selections: [(u = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }), { args: null, kind: "FragmentSpread", name: "AiTrend" }], type: "AiTrend", abstractKey: null }], storageKey: null }], storageKey: null }, action: "THROW", path: "search_by_raw_query.trend_embedding_search.trend_results" }],
+                                            selections: [{ kind: "RequiredField", field: { alias: null, args: null, concreteType: "AiTrendResults", kind: "LinkedField", name: "trend_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [(c = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }), { kind: "InlineFragment", selections: [(u = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }), { args: null, kind: "FragmentSpread", name: "AiTrend" }], type: "AiTrend", abstractKey: null }], storageKey: null }], storageKey: null }, action: "THROW" }],
                                             storageKey: null,
                                         },
                                         action: "THROW",
-                                        path: "search_by_raw_query.trend_embedding_search",
                                     },
                                 ],
                                 storageKey: null,
                             },
                             action: "THROW",
-                            path: "search_by_raw_query",
                         },
                     ],
                     type: "Query",
@@ -151,7 +149,7 @@
         844823: (e, n, r) => {
             r.d(n, { f: () => c });
             var t = r(552322),
-                a = r(332161),
+                a = r(941204),
                 l = r(889906),
                 i = r(430962),
                 s = r(821730);
@@ -213,7 +211,7 @@
                         n
                     );
                 })(l.Component),
-                y = (function (e) {
+                m = (function (e) {
                     function n() {
                         for (var n, r = arguments.length, t = new Array(r), a = 0; a < r; a++) t[a] = arguments[a];
                         return ((n = e.call.apply(e, [this].concat(t)) || this).history = i.createHashHistory(n.props)), n;
@@ -226,7 +224,7 @@
                         n
                     );
                 })(l.Component),
-                m = function (e, n) {
+                y = function (e, n) {
                     return "function" == typeof e ? e(n) : e;
                 },
                 f = function (e, n) {
@@ -261,56 +259,56 @@
                         });
                     return (c.ref = (p !== h && n) || r), l.createElement("a", c);
                 }),
-                _ = h(function (e, n) {
+                v = h(function (e, n) {
                     var r = e.component,
                         t = void 0 === r ? g : r,
                         i = e.replace,
                         c = e.to,
                         d = e.innerRef,
-                        y = u(e, ["component", "replace", "to", "innerRef"]);
+                        m = u(e, ["component", "replace", "to", "innerRef"]);
                     return l.createElement(a.__RouterContext.Consumer, null, function (e) {
                         e || s(!1);
                         var r = e.history,
-                            a = f(m(c, e.location), e.location),
+                            a = f(y(c, e.location), e.location),
                             u = a ? r.createHref(a) : "",
-                            g = o({}, y, {
+                            g = o({}, m, {
                                 href: u,
                                 navigate: function () {
-                                    var n = m(c, e.location);
+                                    var n = y(c, e.location);
                                     (i ? r.replace : r.push)(n);
                                 },
                             });
                         return p !== h ? (g.ref = n || d) : (g.innerRef = d), l.createElement(t, g);
                     });
                 }),
-                v = function (e) {
+                k = function (e) {
                     return e;
                 },
                 b = l.forwardRef;
-            void 0 === b && (b = v);
-            var k = b(function (e, n) {
+            void 0 === b && (b = k);
+            var _ = b(function (e, n) {
                 var r = e["aria-current"],
                     t = void 0 === r ? "page" : r,
                     i = e.activeClassName,
                     c = void 0 === i ? "active" : i,
                     d = e.activeStyle,
-                    y = e.className,
+                    m = e.className,
                     p = e.exact,
                     h = e.isActive,
                     g = e.location,
-                    k = e.sensitive,
-                    w = e.strict,
-                    x = e.style,
+                    _ = e.sensitive,
+                    x = e.strict,
+                    w = e.style,
                     T = e.to,
                     F = e.innerRef,
                     K = u(e, ["aria-current", "activeClassName", "activeStyle", "className", "exact", "isActive", "location", "sensitive", "strict", "style", "to", "innerRef"]);
                 return l.createElement(a.__RouterContext.Consumer, null, function (e) {
                     e || s(!1);
                     var r = g || e.location,
-                        i = f(m(T, r), r),
+                        i = f(y(T, r), r),
                         u = i.pathname,
                         R = u && u.replace(/([.+*?=^!:${}()[\]|/\\])/g, "\\$1"),
-                        j = R ? a.matchPath(r.pathname, { path: R, exact: p, sensitive: k, strict: w }) : null,
+                        j = R ? a.matchPath(r.pathname, { path: R, exact: p, sensitive: _, strict: x }) : null,
                         A = !!(h ? h(j, r) : j),
                         S = A
                             ? (function () {
@@ -320,11 +318,11 @@
                                           return e;
                                       })
                                       .join(" ");
-                              })(y, c)
-                            : y,
-                        L = A ? o({}, x, {}, d) : x,
+                              })(m, c)
+                            : m,
+                        L = A ? o({}, w, {}, d) : w,
                         N = o({ "aria-current": (A && t) || null, className: S, style: L, to: i }, K);
-                    return v !== b ? (N.ref = n || F) : (N.innerRef = F), l.createElement(_, N);
+                    return k !== b ? (N.ref = n || F) : (N.innerRef = F), l.createElement(v, N);
                 });
             });
             Object.defineProperty(n, "UO", {
@@ -361,4 +359,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Insights-536eaa00.b3b0d52a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Insights-536eaa00.173bf85a.js.map

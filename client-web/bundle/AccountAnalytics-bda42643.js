@@ -6,16 +6,16 @@
             t.d(s, { o: () => _ });
             var a = t(552322),
                 r = t(163637),
-                n = t(378364),
-                l = t(88096),
-                i = t(74425),
-                c = t(776082),
-                d = t(480329),
-                o = t(31674),
+                n = t(26429),
+                l = t(412035),
+                i = t(16246),
+                c = t(610922),
+                d = t(470675),
+                o = t(796309),
                 x = t(430962),
                 m = t(598705),
-                h = t(287326),
-                u = t(278882);
+                h = t(669833),
+                u = t(393035);
             function p() {
                 const { spaceDetails: e } = (0, r.R5)(),
                     { analytics: s } = (0, x.M1)(),
@@ -57,7 +57,7 @@
                     ],
                 });
             }
-            var f = t(917317);
+            var f = t(407250);
             function b() {
                 const { spaceDetails: e } = (0, r.R5)(),
                     { analytics: s } = (0, x.M1)(),
@@ -70,7 +70,7 @@
                 return (0, a.jsxs)(f.Zb, { className: "w-full lg:w-[400px] bg-card text-card-foreground", children: [(0, a.jsx)(f.Ol, { className: "space-y-2", children: (0, a.jsx)(f.ll, { className: "text-headline2 font-normal line-clamp-2 max-h-[3em] break-words", children: s.spaceStats }) }), (0, a.jsx)(f.aY, { className: "space-y-4", children: d ? (0, a.jsxs)("div", { className: "flex justify-between items-center", children: [(0, a.jsx)("span", { className: "text-body2 text-muted-foreground", children: s.attendingSpace }), (0, a.jsx)("span", { className: "text-headline2 text-foreground", children: i })] }) : (0, a.jsxs)(a.Fragment, { children: [(0, a.jsxs)("div", { className: "flex justify-between items-center", children: [(0, a.jsx)("span", { className: "text-body2 text-muted-foreground", children: s.totalParticipants }), (0, a.jsx)(h.O, { label: t.toLocaleString(), children: (0, a.jsx)("span", { className: "text-headline2 text-foreground", children: (0, m.uf)(t) }) })] }), (0, a.jsxs)("div", { className: "flex justify-between items-center border-t border-border pt-4", children: [(0, a.jsx)("span", { className: "text-body2 text-muted-foreground", children: s.peakConcurrentViewers }), (0, a.jsx)(h.O, { label: n.toLocaleString(), children: (0, a.jsx)("span", { className: "text-headline2 text-foreground", children: (0, m.uf)(n) }) })] }), c && (0, a.jsxs)("div", { className: "flex justify-between items-center border-t border-border pt-4", children: [(0, a.jsx)("span", { className: "text-body2 text-muted-foreground", children: s.totalReplayWatched }), (0, a.jsx)(h.O, { label: l.toLocaleString(), children: (0, a.jsx)("span", { className: "text-headline2 text-foreground", children: (0, m.uf)(l) }) })] })] }) })] });
             }
             var j = t(643715),
-                g = t(1468),
+                g = t(829233),
                 v = t(202784);
             const { Area: y, CartesianGrid: N, XAxis: w, YAxis: k, AreaChart: S } = j,
                 C = (e) => {
@@ -131,9 +131,9 @@
                     t = s?.participants.speakers || [];
                 return (0, a.jsxs)("div", { className: "bg-gray-0 rounded-xl p-4 flex flex-col border border-gray-200", children: [(0, a.jsx)("div", { className: "flex items-center justify-between pb-2.5", children: (0, a.jsxs)("h2", { className: "font-medium text-gray-900 md:text-headline2 md:font-bold", children: [e.speakers, " ", (0, a.jsxs)("span", { className: "text-gray-500 text-[14px] font-normal", children: ["(", (0, m.uf)(t.length), ")"] })] }) }), (0, a.jsx)("div", { className: "relative max-md:max-h-[250px] md:h-[250px]", children: 0 === t.length ? (0, a.jsx)("p", { className: "text-gray-600 mt-2", children: e.pleaseCheckBackAgainLater }) : (0, a.jsx)("div", { className: "overflow-y-auto max-md:max-h-[250px] md:h-full space-y-4 relative [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]", children: t.map((e) => (0, a.jsx)(D, { speaker: e }, e.id)) }) })] });
             }
-            var O = t(993165),
-                Z = t(332161),
-                E = t(782879),
+            var O = t(436059),
+                Z = t(941204),
+                E = t(582440),
                 T = t(968025);
             function V({ spacesOverviewUrl: e = "/analytics/spaces", referrerUrl: s }) {
                 const t = (0, T.t)(),
@@ -170,28 +170,28 @@
             t.d(s, { l: () => D });
             var a = t(552322),
                 r = t(202784),
-                n = t(917317),
-                l = t(993165),
-                i = t(713990),
-                c = t(618349),
-                d = t(480329),
-                o = t(370724),
-                x = t(37187),
-                m = t(445178),
-                h = t(960384),
+                n = t(407250),
+                l = t(436059),
+                i = t(323788),
+                c = t(841707),
+                d = t(470675),
+                o = t(345343),
+                x = t(933544),
+                m = t(136048),
+                h = t(844096),
                 u = t(968025),
                 p = t(634979),
                 f = t(768246),
-                b = t(278882),
-                j = t(221732),
-                g = t(662375),
-                v = t(24212),
-                y = t(74425),
-                N = t(287326),
-                w = t(31674),
+                b = t(393035),
+                j = t(882040),
+                g = t(682008),
+                v = t(951547),
+                y = t(16246),
+                N = t(669833),
+                w = t(796309),
                 k = t(598705),
                 S = t(430962),
-                C = t(193686);
+                C = t(702024);
             function A({ id: e, title: s, date: t, duration: r, speakers: l, listeners: i, isSubscriberOnly: o = !1, scheduledStart: m, state: h, isAvailableForReplay: u = !1, subscriberCount: p, onViewSpaceAction: f, onViewSpaceAnalyticsAction: k }) {
                 const { analytics: C } = (0, S.M1)();
                 return (0, a.jsx)(
@@ -410,4 +410,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-bda42643.1f923f9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-bda42643.70ee2c5a.js.map

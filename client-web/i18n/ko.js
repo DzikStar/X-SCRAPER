@@ -316,7 +316,7 @@
                 n("da8c5244", "Premium 애널리틱스에서 스마트 데이터 인사이트를 얻고 팔로워를 늘리세요."),
                 n("b081baea", "인사이트를 놓치고 있습니다"),
                 n("d5effffc", "배지 추가"),
-                n("f1dd86b0", "비즈니스 인증"),
+                n("c3653d44", "비즈니스 인증"),
                 n("e8070e70", "Premium 가입"),
                 n("ec42820e", "더 많은 사람에게 답글을 보여주고 싶나요?"),
                 n("b0a95418", "Premium으로 답글 게재 순위를 높이세요"),
@@ -13255,4 +13255,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ko.cd68acda.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ko.9992491a.js.map

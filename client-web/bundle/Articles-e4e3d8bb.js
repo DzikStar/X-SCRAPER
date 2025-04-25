@@ -33,17 +33,16 @@
                         i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8d854c2e"),
                         i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-aaf38a28"),
                         i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-aeee0c9e"),
+                        i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2652b27c"),
                         i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-da0e99d8"),
-                        i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-4b805c4b"),
+                        i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-3931c1f3"),
                         i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-c377d397"),
-                        i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8c219810"),
-                        i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-9b4c2397"),
-                        i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-c2fdd616"),
-                        i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-70774d80"),
-                        i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-92c1aea7"),
-                        i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8767a721"),
-                        i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-d5c922ba"),
-                        i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-e9891f16"),
+                        i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-e4b9a405"),
+                        i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-f17e8d44"),
+                        i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-f39972b2"),
+                        i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-568e95f0"),
+                        i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1895c9ee"),
+                        i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8fe22a9e"),
                         i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-0a8205ef"),
                         i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-5719ea67"),
                         i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1b6af858"),
@@ -67,7 +66,7 @@
             });
         },
         376293: (e, t, i) => {
-            i.d(t, { $f: () => A, KV: () => _, LI: () => L, SC: () => I, Vt: () => y, ed: () => C, op: () => v });
+            i.d(t, { $f: () => A, KV: () => f, LI: () => L, SC: () => I, Vt: () => y, ed: () => C, op: () => v });
             var r = i(202784),
                 n = i(190286),
                 o = i(674132),
@@ -82,8 +81,8 @@
                 b = a().a6450e84,
                 S = a().g353ad73,
                 E = a().ad00a739,
-                _ = a().a9fd20be,
-                f = a().j546fb79,
+                f = a().a9fd20be,
+                _ = a().j546fb79,
                 h = a().c9623eeb,
                 y = a().e133be4e,
                 T = a().he43bca4,
@@ -115,7 +114,7 @@
                 w = (e) => (e ? d.default : s.default),
                 P = ({ blockSubtext: e, unblockSubtext: t, user: i }) => (!i.blocking && e ? e(i.screen_name) : i.blocking ? t : void 0),
                 O = (e) => (e.blocking ? h({ screenName: e.screen_name }) : m({ screenName: e.screen_name })),
-                L = (e, t) => (e.blocking ? ((e, t) => ({ confirmButtonType: "primary", headline: f({ screenName: e }), label: y, text: t ? g : T }))(e.screen_name, t) : A(e.screen_name, t)),
+                L = (e, t) => (e.blocking ? ((e, t) => ({ confirmButtonType: "primary", headline: _({ screenName: e }), label: y, text: t ? g : T }))(e.screen_name, t) : A(e.screen_name, t)),
                 C = ({ confirmation: e, handleConfirm: t, onClose: i }) => {
                     const { confirmButtonType: o, headline: a, label: s, text: d } = e;
                     return r.createElement(n.Z, { cancelButtonLabel: u, confirmButtonLabel: s, confirmButtonType: o, headline: a, onCancel: i, onConfirm: t, text: d });
@@ -345,8 +344,8 @@
                 b = i(615656),
                 S = i(71620),
                 E = i(917799);
-            const _ = "FETCH_PREROLLS",
-                f = (0, E.dg)(d.A7, _),
+            const f = "FETCH_PREROLLS",
+                _ = (0, E.dg)(d.A7, f),
                 h = 10;
             function y(e) {
                 const t = {},
@@ -380,8 +379,8 @@
                                 const o = { eligibleTweets: e, prerollDisplayLocation: n };
                                 t && (o.trigger_preroll = t);
                                 const a = (0, E._O)(i, { request: r.withEndpoint(m.Z).fetch, params: o }),
-                                    s = i((0, S.zr)(_)({ showToast: !1, [b.ZP.AccessDeniedByBouncer]: { customAction: p.Z } }));
-                                return a({ actionTypes: f, context: "FETCH_PREROLLS" }).catch(s);
+                                    s = i((0, S.zr)(f)({ showToast: !1, [b.ZP.AccessDeniedByBouncer]: { customAction: p.Z } }));
+                                return a({ actionTypes: _, context: "FETCH_PREROLLS" }).catch(s);
                             })(e, t, i, r, n),
                         ),
                     ).then((e) => {
@@ -544,8 +543,8 @@
                 b = i(56519),
                 S = i(502909),
                 E = i(600823),
-                _ = i(558369),
-                f = i(497294),
+                f = i(558369),
+                _ = i(497294),
                 h = i(709318),
                 y = i(872788),
                 T = i(390387),
@@ -631,7 +630,7 @@
                         context: "DELETE_LIST",
                         mapResponseToActions: (e, t, i) => (t) => {
                             const r = i(),
-                                n = (0, _.mz)(r).isTrue("responsive_web_timeline_relay_lists_management_enabled"),
+                                n = (0, f.mz)(r).isTrue("responsive_web_timeline_relay_lists_management_enabled"),
                                 o = D.select(r, e),
                                 a = (0, T._h)(r);
                             if (!o || !a) return [];
@@ -666,7 +665,7 @@
                         context: "SUBSCRIBE_TO_LIST",
                         mapResponseToActions: (e, t, i) => (t) => {
                             const r = i(),
-                                n = (0, _.mz)(r).isTrue("responsive_web_timeline_relay_lists_management_enabled"),
+                                n = (0, f.mz)(r).isTrue("responsive_web_timeline_relay_lists_management_enabled"),
                                 o = [],
                                 a = t?.entities?.lists?.[e],
                                 s = (0, T._h)(r);
@@ -697,7 +696,7 @@
                         context: "UNSUBSCRIBE_FROM_LIST",
                         mapResponseToActions: (e, t, i) => (t) => {
                             const r = i(),
-                                n = (0, _.mz)(r).isTrue("responsive_web_timeline_relay_lists_management_enabled"),
+                                n = (0, f.mz)(r).isTrue("responsive_web_timeline_relay_lists_management_enabled"),
                                 o = [],
                                 a = t?.entities?.lists?.[e],
                                 s = (0, T._h)(r);
@@ -736,7 +735,7 @@
                         (r, n, { api: o }) => {
                             const s = e ? (0, d.U$)(e) : void 0;
                             r({ type: L.REQUEST });
-                            const c = f.$i(i, { extraInitParams: s });
+                            const c = _.$i(i, { extraInitParams: s });
                             return r(c).then(
                                 ([e]) => {
                                     const i = e.uploadId;
@@ -797,7 +796,7 @@
                 G = E.Z.register(U);
         },
         206795: (e, t, i) => {
-            i.d(t, { Hi: () => h, NU: () => T, pO: () => y, g$: () => f });
+            i.d(t, { Hi: () => h, NU: () => T, pO: () => y, g$: () => _ });
             var r = i(166852),
                 n = i(483557),
                 o = i(499627),
@@ -812,19 +811,19 @@
                 b = [],
                 S = Object.freeze({}),
                 E = Object.freeze({ data: { lists: [] }, error: null, fetchStatus: { [c.Yj.BOTTOM]: s.ZP.NONE, [c.Yj.TOP]: s.ZP.NONE } });
-            const _ = (e, t) => e[m][t],
-                f = (e, t) => {
-                    const i = _(e, t);
+            const f = (e, t) => e[m][t],
+                _ = (e, t) => {
+                    const i = f(e, t);
                     return i?.data?.lists || b;
                 },
                 h = ({ addTo: e, itemsToAdd: t }) => ({ payload: { key: e, items: t }, type: u }),
                 y = ({ itemToRemove: e, removeFrom: t }) => ({ payload: { key: t, item: e }, type: p }),
                 T = (e, t) => (i, r) => {
                     const o = r(),
-                        u = _(o, e),
+                        u = f(o, e),
                         p = ((e, t) => {
-                            const i = _(e, t),
-                                r = f(e, t);
+                            const i = f(e, t),
+                                r = _(e, t);
                             return i ? (0, s.ke)(i.fetchStatus, !!r.length) : s.ZP.NONE;
                         })(o, e);
                     return !u || (p !== s.ZP.LOADING && p !== s.ZP.LOADED)
@@ -944,7 +943,7 @@
                 p = o.Z.register(u);
         },
         652881: (e, t, i) => {
-            i.d(t, { C2: () => f, Pq: () => l, ZP: () => E, s8: () => _ });
+            i.d(t, { C2: () => _, Pq: () => l, ZP: () => E, s8: () => f });
             i(136728);
             var r = i(66351),
                 n = (i(585488), i(483557)),
@@ -964,23 +963,23 @@
             }
             const S = (e) => (e ? (0, c.Z)({ context: "FETCH_LISTS_MANAGEMENT_PAGE_TIMELINE", formatResponse: a.Z, network: { query: r.Z, variables: ({ count: e, cursor: t }, i) => ({ count: e, cursor: "string" == typeof t ? t : void 0, isListMemberTargetUserId: "0", timelineId: "listsManagementPage", ...(0, o.d)(i.apiClient.featureSwitches) }) }, initialFetchCount: 100, perfKey: "listsManagementPageGraphQL", timelineId: "listsManagementPage" }) : (0, c.Z)({ context: "FETCH_LISTS_MANAGEMENT_PAGE_TIMELINE", formatResponse: a.Z, network: { getEndpoint: (e) => e.withEndpoint(n.ZP).fetchListsManagementPageTimeline, getEndpointParams: ({ count: e, cursor: t }) => ({ count: e, cursor: "string" == typeof t ? t : void 0 }) }, initialFetchCount: 100, perfKey: "listsManagementPageGraphQL", timelineId: "listsManagementPage" })),
                 E = S;
-            function _(e, t, i, r) {
+            function f(e, t, i, r) {
                 const n = [],
                     o = t(),
                     a = S(e),
                     s = a.selectEntries(o),
                     c = i === l.pinnedLists,
                     E = c ? m : b,
-                    _ = s.find(({ entryId: e }) => E(e));
-                if (_) {
-                    const e = u(_.entryId, r),
+                    f = s.find(({ entryId: e }) => E(e));
+                if (f) {
+                    const e = u(f.entryId, r),
                         t = c ? p(r, e, d.P.ListTile, "-1") : p(r, e, d.P.ListWithPin),
                         i = !c;
-                    c && (n.push(a.removeEntry(`${_.entryId}-emptyStateMessage`, !0)), n.push(a.removeEntry(`${_.entryId}-messageprompt-PinnedListsEmptyPrompt`, !0))), n.push(a.injectTimelineModuleEntry(t, _.entryId, { atTop: i }));
+                    c && (n.push(a.removeEntry(`${f.entryId}-emptyStateMessage`, !0)), n.push(a.removeEntry(`${f.entryId}-messageprompt-PinnedListsEmptyPrompt`, !0))), n.push(a.injectTimelineModuleEntry(t, f.entryId, { atTop: i }));
                 }
                 return n;
             }
-            function f(e, t, i, r) {
+            function _(e, t, i, r) {
                 const n = [],
                     o = t(),
                     a = S(e),
@@ -1063,8 +1062,8 @@
                 b = i(890882),
                 S = i(443781),
                 E = i(38293),
-                _ = i(292484),
-                f = i(962741),
+                f = i(292484),
+                _ = i(962741),
                 h = i(175856),
                 y = i(4691),
                 T = i(750085),
@@ -1133,7 +1132,7 @@
                 },
                 oe = ({ addFlag: e, analytics: t, history: i, location: s, match: d, seedType: I, showFriendsOfFriendsNUX: A, timeWindowQuery: v }) => {
                     const { featureSwitches: w } = r.useContext(S.rC),
-                        P = (0, _.Cz)(),
+                        P = (0, f.Cz)(),
                         O = w.isTrue("longform_top_articles_time_window_enabled"),
                         L = w.isTrue("longform_top_articles_friends_of_friends_enabled"),
                         [C, D] = r.useState(A),
@@ -1149,7 +1148,7 @@
                     const F = r.useCallback(
                             (e) => {
                                 const t = d.params.articleId,
-                                    r = (0, u.Z)(e, (e) => e.type === f.ZP.Article && !!e.content && e.content.articleId),
+                                    r = (0, u.Z)(e, (e) => e.type === _.ZP.Article && !!e.content && e.content.articleId),
                                     n = ne(s.pathname);
                                 P && !t && r ? i.replace(`/i/articles/${I}/${r}${R(v)}`) : P || n || i.replace(`/i/articles/${I}${R(v)}`);
                             },
@@ -1195,7 +1194,7 @@
                 ae = $(oe);
         },
         732595: (e, t, i) => {
-            i.r(t), i.d(t, { default: () => T, query: () => f });
+            i.r(t), i.d(t, { default: () => T, query: () => _ });
             var r = i(195382),
                 n = i(202784),
                 o = (i(585488), i(712696)),
@@ -1210,10 +1209,10 @@
                 b = c().h965157c,
                 S = c().cd388852,
                 E = n.createElement(s.Z, { header: b, message: S }),
-                _ = { type: "CustomRetry", content: () => E },
-                f = r.Z,
+                f = { type: "CustomRetry", content: () => E },
+                _ = r.Z,
                 h = ({ articleEntityId: e }) => {
-                    const t = a()(f, { articleEntityId: e }),
+                    const t = a()(_, { articleEntityId: e }),
                         i = t?.article_result_by_rest_id?.result?.metadata,
                         r = i?.author_results?.result?.legacy?.screen_name,
                         o = i?.tweet_results?.rest_id,
@@ -1223,7 +1222,7 @@
                 y = (e) => {
                     const t = e.match.params.articleEntityId ?? "",
                         i = (0, u.hC)("responsive_web_twitter_article_redirect_enabled");
-                    return t && i ? n.createElement(l.N, { errorConfig: m, fallback: _ }, n.createElement(h, { articleEntityId: t })) : E;
+                    return t && i ? n.createElement(l.N, { errorConfig: m, fallback: f }, n.createElement(h, { articleEntityId: t })) : E;
                 },
                 T = n.memo(y);
         },
@@ -1243,10 +1242,10 @@
                 b = i(376843),
                 S = i(810641),
                 E = i(725516),
-                _ = i(4691),
-                f = i(750085),
+                f = i(4691),
+                _ = i(750085),
                 h = i(218951);
-            const y = (e, t) => (0, h.Z)({ timelineId: `articleTweetsTimeline-${e}-${t}`, network: { getEndpoint: (e) => e.withEndpoint(_.ZP).fetchArticleTweetsTimeline, getEndpointParams: ({ count: i, cursor: r }) => ({ articleId: e, articleListSeedType: t, count: i, cursor: "string" == typeof r ? r : void 0 }) }, context: "FETCH_ARTICLE_TWEETS_TIMELINE", perfKey: "articleTweetsTimeline", formatResponse: f.Z });
+            const y = (e, t) => (0, h.Z)({ timelineId: `articleTweetsTimeline-${e}-${t}`, network: { getEndpoint: (e) => e.withEndpoint(f.ZP).fetchArticleTweetsTimeline, getEndpointParams: ({ count: i, cursor: r }) => ({ articleId: e, articleListSeedType: t, count: i, cursor: "string" == typeof r ? r : void 0 }) }, context: "FETCH_ARTICLE_TWEETS_TIMELINE", perfKey: "articleTweetsTimeline", formatResponse: _.Z });
             var T = i(506063),
                 g = i(769471),
                 I = i(801184),
@@ -1295,4 +1294,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Articles-e4e3d8bb.2fa8d58a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Articles-e4e3d8bb.b1f225ca.js.map

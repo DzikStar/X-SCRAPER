@@ -312,7 +312,7 @@
                 n("da8c5244", "Premium பகுப்பாய்வுகள் மூலம், உங்களைப் பின்தொடர்பவர்களை அதிகரிக்க ஸ்மார்ட் தரவு நுண்ணறிவுகளைத் திறக்கலாம்."),
                 n("b081baea", "நுண்ணறிவுகளைத் தவறவிடுகிறீர்கள்!"),
                 n("d5effffc", "பேட்ஜைச் சேர்"),
-                n("f1dd86b0", "உங்கள் வணிகத்தைச் சரிபார்க்கவும்"),
+                n("c3653d44", "உங்கள் வணிகத்தைச் சரிபார்க்கவும்"),
                 n("e8070e70", "Premium -ஐ முயலவும்"),
                 n("ec42820e", "உங்கள் பதிலை அதிக பேர் பார்க்க வேண்டுமா?"),
                 n("b0a95418", "Premium மூலம் பதில் பூஸ்ட்டைப் பெறவும்"),
@@ -13254,4 +13254,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ta.83bfe98a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ta.48e3ea0a.js.map

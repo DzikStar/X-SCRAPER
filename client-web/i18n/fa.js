@@ -313,7 +313,7 @@
                 n("da8c5244", "با اطلاعات تحلیلی Premium، می‌توانید برای افزایش دنبال‌کنندگانتان به اطلاعات آماری هوشمند دسترسی داشته باشید."),
                 n("b081baea", "اطلاعات آماری را دارید ازدست می‌دهید!"),
                 n("d5effffc", "افزودن نشان"),
-                n("f1dd86b0", "کسب‌وکارتان را به‌تأیید برسانید"),
+                n("c3653d44", "تأیید کردن کسب‌وکارتان"),
                 n("e8070e70", "Premium را امتحان کنید"),
                 n("ec42820e", "آیا می‌خواهید افراد بیشتری پاسختان را ببینند؟"),
                 n("b0a95418", "با Premium «بالابری پاسخ» داشته باشید"),
@@ -13243,4 +13243,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fa.0f791f5a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fa.3723f55a.js.map

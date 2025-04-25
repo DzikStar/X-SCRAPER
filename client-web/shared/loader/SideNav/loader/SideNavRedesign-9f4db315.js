@@ -87,15 +87,15 @@
                 w = o().b28d44f7({ limit: 15 }),
                 v = o().i1db7d13,
                 S = o().baac0ed7,
-                I = v({ limit: 512 }),
-                y = o().a22385bb,
+                y = v({ limit: 512 }),
+                I = o().a22385bb,
                 E = o().be0440bf,
-                O = y({ limit: 140 }),
+                O = I({ limit: 140 }),
                 A = o().feeba512,
                 T = o().db123c02,
                 D = o().db6001e7({ limit: 5 }),
-                M = o().eb96d952,
-                x = o().i859a9d4,
+                x = o().eb96d952,
+                M = o().i859a9d4,
                 P = o().b3880588,
                 U = o().ca058b68,
                 L = o().id24379c,
@@ -103,13 +103,13 @@
                 C = (0, a.ju)("https://support.x.com/articles/20156423"),
                 z = (0, a.ju)("https://help.x.com/using-twitter/twitter-videos"),
                 N = (e) => ({ text: e }),
-                B = (e) => ({ text: e, action: { label: x, link: C } }),
-                V = (e) => ({ text: e, action: { label: x, link: z } }),
+                B = (e) => ({ text: e, action: { label: M, link: C } }),
+                V = (e) => ({ text: e, action: { label: M, link: z } }),
                 Z = { [s.Y7.GIF_IS_TOO_LARGE]: N(w), [s.Y7.CANNOT_BE_PROCESSED]: N(m), [s.Y7.FILE_IS_NOT_AN_IMAGE]: N(_) },
                 G = { [d.d.ZERO_FILE_LENGTH]: N(p), [d.d.TIMEOUT]: N(P) },
                 R = { ...G, [d.d.FILE_TOO_LARGE]: N(D), [d.d.UNSUPPORTED_MEDIA]: B(T), [d.d.INVALID_MEDIA]: B(A) },
                 k = { ...G, [d.d.FILE_TOO_LARGE]: N(w), [d.d.UNSUPPORTED_MEDIA]: B(f), [d.d.INVALID_MEDIA]: B(h) },
-                j = { ...G, [d.d.FILE_TOO_LARGE]: N(I), [d.d.UNSUPPORTED_MEDIA]: V(b), [d.d.INVALID_MEDIA]: V(g) },
+                j = { ...G, [d.d.FILE_TOO_LARGE]: N(y), [d.d.UNSUPPORTED_MEDIA]: V(b), [d.d.INVALID_MEDIA]: V(g) },
                 X = Object.freeze({ RESIZE: "resize", UPLOAD: "upload", METADATA: "metadata", MAXDURATION: "maxduration", MAXSIZE: "maxsize" }),
                 $ = 1048576,
                 H = 1073741824,
@@ -119,9 +119,9 @@
                     if (t)
                         switch (a) {
                             case X.MAXSIZE:
-                                return t === u.BW.GIF_IS_TOO_LARGE ? N(w) : t === u.BW.VIDEO_IS_TOO_LARGE && void 0 !== i ? N(i >= H ? S({ limit: Math.round(i / H) }) : v({ limit: Math.round(i / $) })) : N(I);
+                                return t === u.BW.GIF_IS_TOO_LARGE ? N(w) : t === u.BW.VIDEO_IS_TOO_LARGE && void 0 !== i ? N(i >= H ? S({ limit: Math.round(i / H) }) : v({ limit: Math.round(i / $) })) : N(y);
                             case X.MAXDURATION:
-                                return void 0 !== i ? (i > 140 ? N(E({ limit: Math.round(i / 60) })) : { text: y({ limit: Math.round(i) }), action: { label: l.Z.LongerVideoUpload.defaultContent.actionLabel, link: { pathname: `/i/premium_sign_up?referring_page=${l.Z.LongerVideoUpload.referringPage}`, external: !0 } } }) : N(O);
+                                return void 0 !== i ? (i > 140 ? N(E({ limit: Math.round(i / 60) })) : { text: I({ limit: Math.round(i) }), action: { label: l.Z.LongerVideoUpload.defaultContent.actionLabel, link: { pathname: `/i/premium_sign_up?referring_page=${l.Z.LongerVideoUpload.referringPage}`, external: !0 } } }) : N(O);
                             case X.RESIZE:
                                 return Z[t];
                             case X.UPLOAD:
@@ -144,11 +144,11 @@
                 }
             }
             function q(e, t = U) {
-                return e.type === n.gK.type && e.code === n.gK.NO_DIMENSIONS ? N(M) : e.type === c.hb.type && e.code === c.hb.NO_DIMENSIONS ? V(g) : N(t);
+                return e.type === n.gK.type && e.code === n.gK.NO_DIMENSIONS ? N(x) : e.type === c.hb.type && e.code === c.hb.NO_DIMENSIONS ? V(g) : N(t);
             }
         },
         221562: (e, t, i) => {
-            i.d(t, { BX: () => f, Uk: () => c, Xj: () => m, ZP: () => y });
+            i.d(t, { BX: () => f, Uk: () => c, Xj: () => m, ZP: () => I });
             var a = i(468811),
                 r = i.n(a),
                 o = i(595088),
@@ -176,8 +176,8 @@
                 w = Object.freeze({ All: "all", Short: "short", Medium: "medium", Long: "long", XLong: "xlong", L90to140s: "l90to140s", L140to300s: "l140to300s", L300to600s: "l300to600s", L600to1200s: "l600to1200s", L1200to1800s: "l1200to1800s", L1800to2700s: "l1800to2700s", L2700to3600s: "l2700to3600s", L3600to4500s: "l3600to4500s", L4500to5400s: "l4500to5400s", L5400to6300s: "l5400to6300s", L6300to7200s: "l6300to7200s", L7200to10800s: "l7200to10800s", L10800to14400s: "l10800to14400s", LGT14400s: "lgt14400s" }),
                 v = (e, t) => ((0, n.Z)(e) && (0, n.Z)(t) ? Math.round(t - e) : void 0),
                 S = () => (window.performance ? window.performance.now() : Date.now()),
-                I = (e, t) => (e === d.xz.DMGif || e === d.xz.TweetGif ? w.All : (e !== d.xz.DMVideo && e !== d.xz.TweetVideo && e !== d.xz.AmplifyVideo) || void 0 === t ? "" : t < 10 ? w.Short : t < 20 ? w.Medium : t < 45 ? w.Long : t < 90 ? w.XLong : t < 140 ? w.L90to140s : t < 300 ? w.L140to300s : t < 600 ? w.L300to600s : t < 1200 ? w.L600to1200s : t < 1800 ? w.L1200to1800s : t < 2700 ? w.L1800to2700s : t < 3600 ? w.L2700to3600s : t < 4500 ? w.L3600to4500s : t < 5400 ? w.L4500to5400s : t < 6300 ? w.L5400to6300s : t < 7200 ? w.L6300to7200s : t < 10800 ? w.L7200to10800s : t < 14400 ? w.L10800to14400s : w.LGT14400s);
-            class y {
+                y = (e, t) => (e === d.xz.DMGif || e === d.xz.TweetGif ? w.All : (e !== d.xz.DMVideo && e !== d.xz.TweetVideo && e !== d.xz.AmplifyVideo) || void 0 === t ? "" : t < 10 ? w.Short : t < 20 ? w.Medium : t < 45 ? w.Long : t < 90 ? w.XLong : t < 140 ? w.L90to140s : t < 300 ? w.L140to300s : t < 600 ? w.L300to600s : t < 1200 ? w.L600to1200s : t < 1800 ? w.L1200to1800s : t < 2700 ? w.L1800to2700s : t < 3600 ? w.L2700to3600s : t < 4500 ? w.L3600to4500s : t < 5400 ? w.L4500to5400s : t < 6300 ? w.L5400to6300s : t < 7200 ? w.L6300to7200s : t < 10800 ? w.L7200to10800s : t < 14400 ? w.L10800to14400s : w.LGT14400s);
+            class I {
                 constructor(e, t = !1) {
                     (this._pausedDuration = {}),
                         (this._pauseTimes = {}),
@@ -186,7 +186,7 @@
                         (this._impressionId = r().v4()),
                         (this._keyPrefix = ((e) => {
                             const { isExternal: t, mediaCategory: i, videoDuration: a } = e;
-                            return `${t ? u.Remote : u.LocalFile}:${i}:${I(i, a)}`;
+                            return `${t ? u.Remote : u.LocalFile}:${i}:${y(i, a)}`;
                         })(e)),
                         this.setMetadata({ submitted: !1 });
                 }
@@ -249,7 +249,7 @@
             }
         },
         716233: (e, t, i) => {
-            i.d(t, { BW: () => f, SB: () => I, TO: () => E, Tz: () => b, U$: () => S, ff: () => g, vC: () => v, vn: () => y, xz: () => w, y$: () => _ });
+            i.d(t, { BW: () => f, SB: () => y, TO: () => E, Tz: () => b, U$: () => S, ff: () => g, vC: () => v, vn: () => I, xz: () => w, y$: () => _ });
             var a = i(182056),
                 r = i(323265),
                 o = i(540387);
@@ -273,17 +273,17 @@
                         r = Math.round(t / 2);
                     return `&salient_rect=${Math.round(i + a / 2)},${r},1,1`;
                 };
-            function I(e) {
+            function y(e) {
                 const t = e.featureSwitches?.isTrue("blue_longer_video_enabled"),
                     i = (function (e) {
                         return e.userClaims.isTrueAndEnabled("subscriptions_long_video_upload") || e.featureSwitches.isTrue("subscriptions_long_video_upload_override") || !1;
                     })(e);
                 return t || i ? 1 : 0;
             }
-            function y(e, t, i, f, g) {
+            function I(e, t, i, f, g) {
                 const b = f?.location,
-                    w = I({ featureSwitches: e, userClaims: t });
-                let S, y;
+                    w = y({ featureSwitches: e, userClaims: t });
+                let S, I;
                 if (i.isSubtitles) S = 0;
                 else if (i.isGif)
                     switch (b) {
@@ -321,12 +321,12 @@
                             );
                         })(e, b, g);
                     if (1 === w) {
-                        if ("dm" === b) y = e.getNumberValue("media_async_upload_longer_dm_video_max_video_duration", h);
-                        else y = e.getNumberValue("media_async_upload_longer_video_max_video_duration", _.Duration[w]) * d;
+                        if ("dm" === b) I = e.getNumberValue("media_async_upload_longer_dm_video_max_video_duration", h);
+                        else I = e.getNumberValue("media_async_upload_longer_video_max_video_duration", _.Duration[w]) * d;
                         S = e.getNumberValue("media_async_upload_longer_video_max_video_size", _.Size[w]) * n;
-                    } else (y = e.getNumberValue("media_async_upload_max_video_duration", _.Duration[w]) * d), (S = e.getNumberValue("media_async_upload_max_video_size", _.Size[w]) * n);
+                    } else (I = e.getNumberValue("media_async_upload_max_video_duration", _.Duration[w]) * d), (S = e.getNumberValue("media_async_upload_max_video_size", _.Size[w]) * n);
                 }
-                return Promise.resolve({ maxFileSize: S, maxDuration: y });
+                return Promise.resolve({ maxFileSize: S, maxDuration: I });
             }
             function E(e) {
                 return !(r.ZP.isIOS() && e.size > 3e8);
@@ -558,15 +558,15 @@
                 w = i(166677),
                 v = i(221562),
                 S = i(755296),
-                I = i(135698),
-                y = i(946208),
+                y = i(135698),
+                I = i(946208),
                 E = i(540387),
                 O = i(653798),
                 A = i(499627),
                 T = i(917799),
                 D = i(390387),
-                M = i(38562),
-                x = i(601576),
+                x = i(38562),
+                M = i(601576),
                 P = i(111531),
                 U = i(537052);
             const L = l().g40ff2b4,
@@ -634,7 +634,7 @@
                                 }
                                 return Promise.resolve(i);
                             }
-                            return (0, y.h_)(e) ? Promise.resolve(new y.ZP(e)) : new u.ZP(e).withDimensionsAndOrientation();
+                            return (0, I.h_)(e) ? Promise.resolve(new I.ZP(e)) : new u.ZP(e).withDimensionsAndOrientation();
                         }),
                         d = i((e, t, { relayEnvironment: i }) =>
                             n()(i, O.S, {}, { fetchPolicy: "store-or-network" })
@@ -652,7 +652,7 @@
                                     (function (e, t) {
                                         return (i, a, { featureSwitches: r, userClaims: o }) => {
                                             const { uploadIds: s = [], altTexts: n = [] } = t,
-                                                d = (0, M.IX)(a()),
+                                                d = (0, x.IX)(a()),
                                                 l = (Array.isArray(e) ? e : [e]).map((e, l) => {
                                                     const m = r.isTrue("responsive_web_media_upload_metrics_enabled");
                                                     let p;
@@ -694,7 +694,7 @@
                             },
                             (e) => {
                                 const t = (0, w.vK)(e);
-                                return t && i((0, x.fz)(t)), Promise.reject(e);
+                                return t && i((0, M.fz)(t)), Promise.reject(e);
                             },
                         )
                         .then((e) =>
@@ -728,7 +728,7 @@
                         const { abortController: s, cropData: n, id: d, location: l, mediaFile: m, needsProcessing: p, originalMediaFile: _ } = o;
                         if (!_) return Promise.reject(new Error("media item not found"));
                         const h = a.getNumberValue("responsive_web_media_upload_target_jpg_pixels_per_byte"),
-                            f = (0, M.IX)(i()),
+                            f = (0, x.IX)(i()),
                             g = { location: l };
                         return (0, b.vn)(a, r, _, g, f).then((e) => {
                             const r = { cropData: n, jpgPixelsPerByteForResize: h, maxFileSize: e.maxFileSize, maxDimension: e.maxDimension },
@@ -779,7 +779,7 @@
                                         },
                                         (t) => {
                                             const o = (0, w.ZP)(t, L);
-                                            o && i((0, x.fz)(o));
+                                            o && i((0, M.fz)(o));
                                             const { code: s, message: d, name: l, type: u } = t;
                                             a.reporter?.setMetadata({ reason: { name: l, message: d, code: s } });
                                             const m = "maxsize" === u || "maxduration" === u || ("resize" === u && (s === c.Y7.FILE_IS_NOT_AN_IMAGE || s === c.Y7.GIF_IS_TOO_LARGE)) ? v.Uk.Invalid : v.Uk.Failure;
@@ -894,7 +894,7 @@
                                                   return (
                                                       r({ id: u, uploading: !0, uploadFailed: !1, uploadProgress: 0, uploadPromise: p }),
                                                       a.mediaFile?.fileHandle instanceof Blob &&
-                                                          (0, I.c)(a.mediaFile.fileHandle).then((e) => {
+                                                          (0, y.c)(a.mediaFile.fileHandle).then((e) => {
                                                               r({ id: u, muxedMetadata: { hasMoov: e } });
                                                           }),
                                                       p
@@ -916,16 +916,17 @@
                         });
                 };
             function he(e, t, i, a) {
-                const r = e === b.vC.Tweet || e === b.vC.TwitterArticle;
+                const r = e === b.vC.Tweet || e === b.vC.TwitterArticle,
+                    o = e === b.vC.TwitterArticle;
                 if (t.isSubtitles) return b.xz.Subtitles;
                 if (t.isGif && !i) return r ? b.xz.TweetGif : b.xz.DMGif;
                 if (t.isAmplify) return b.xz.AmplifyVideo;
                 if (t.isVideo) {
                     const e = t.duration || 0,
-                        { featureSwitches: i, userClaims: o } = a,
-                        s = (0, b.SB)({ featureSwitches: i, userClaims: o }),
-                        n = i.getNumberValue("media_async_upload_amplify_duration_threshold", b.y$.Duration[s]);
-                    return ("number" == typeof s && 1 === s && e > n) || r ? b.xz.AmplifyVideo : b.xz.DMVideo;
+                        { featureSwitches: i, userClaims: s } = a,
+                        n = (0, b.SB)({ featureSwitches: i, userClaims: s }),
+                        d = i.getNumberValue("media_async_upload_amplify_duration_threshold", b.y$.Duration[n]);
+                    return "number" == typeof n && 1 === n && e > d ? b.xz.AmplifyVideo : o ? b.xz.TweetVideo : r ? b.xz.AmplifyVideo : b.xz.DMVideo;
                 }
                 return r ? b.xz.TweetImage : b.xz.DMImage;
             }
@@ -1001,4 +1002,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.SideNav~loader.SideNavRedesign-9f4db315.e2faecba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.SideNav~loader.SideNavRedesign-9f4db315.feb03c7a.js.map

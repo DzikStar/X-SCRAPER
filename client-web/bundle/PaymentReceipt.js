@@ -29,7 +29,7 @@
                 w = n(749286),
                 x = n(43429),
                 I = n(467734),
-                N = n(554853),
+                N = n(137882),
                 k = n(464978),
                 z = n(743080),
                 A = n(727384);
@@ -100,4 +100,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.PaymentReceipt.4daf9c2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.PaymentReceipt.0fffdeca.js.map

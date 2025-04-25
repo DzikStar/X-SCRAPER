@@ -137,14 +137,14 @@
                 v = i(946208),
                 b = i(540387),
                 A = i(653798),
-                M = i(499627),
-                E = i(917799),
-                x = i(390387),
-                U = i(38562),
-                C = i(601576),
+                x = i(499627),
+                M = i(917799),
+                E = i(390387),
+                C = i(38562),
+                U = i(601576),
                 F = i(111531),
-                O = i(537052);
-            const T = l().g40ff2b4,
+                T = i(537052);
+            const O = l().g40ff2b4,
                 D = "mediaUpload",
                 B = (window.location.host.includes("twitter.com") ? "https://upload.twitter.com" : "https://upload.x.com") + "/i/media/upload2.json",
                 z = `rweb/${D}`,
@@ -227,7 +227,7 @@
                                     (function (e, t) {
                                         return (i, r, { featureSwitches: a, userClaims: o }) => {
                                             const { uploadIds: n = [], altTexts: s = [] } = t,
-                                                d = (0, U.IX)(r()),
+                                                d = (0, C.IX)(r()),
                                                 l = (Array.isArray(e) ? e : [e]).map((e, l) => {
                                                     const c = a.isTrue("responsive_web_media_upload_metrics_enabled");
                                                     let m;
@@ -254,7 +254,7 @@
                                                         (0, w.vn)(a, o, e, t, d).then(({ maxDimension: d, maxFileSize: c }) => {
                                                             const m = e.isImage && e instanceof u.ZP && (0, p.m2)(e, { maxFileSize: c, maxDimension: d, jpgPixelsPerByteForResize: S }),
                                                                 _ = (0, w.SB)({ featureSwitches: a, userClaims: o }),
-                                                                f = { useLongVideoEndpoint: e.isVideo && _ >= 1, actAsUserId: (0, x.dY)(r()) },
+                                                                f = { useLongVideoEndpoint: e.isVideo && _ >= 1, actAsUserId: (0, E.dY)(r()) },
                                                                 y = m ? void 0 : L(e.fileHandle, a, f),
                                                                 I = Y({ originalMediaFile: e, mediaFile: e, mediaFileHash: h ? void 0 : null, needsProcessing: m, location: t.location, uploadId: n[l] ?? "", reporter: g, uploader: y, mediaMetadata: { altText: s[l] }, abortController: h ? new AbortController() : void 0 });
                                                             return h && he(i, r, I.id, e.fileHandle, I.reporter, I.abortController), I;
@@ -269,7 +269,7 @@
                             },
                             (e) => {
                                 const t = (0, S.vK)(e);
-                                return t && i((0, C.fz)(t)), Promise.reject(e);
+                                return t && i((0, U.fz)(t)), Promise.reject(e);
                             },
                         )
                         .then((e) =>
@@ -287,7 +287,7 @@
                 (d, l, { featureSwitches: u }) => {
                     const p = u.isTrue("responsive_web_media_upload_metrics_enabled") && t ? new y.ZP({ isExternal: !0, mediaCategory: t }) : void 0;
                     p?.reportOperationStart(y.BX.Full, !0);
-                    const c = { actAsUserId: (0, x.dY)(l()) },
+                    const c = { actAsUserId: (0, E.dY)(l()) },
                         m = Y({ externalMediaDetails: { mediaCategory: t, mediaType: i, previewUrl: a || o, previewMediaType: r || i, sourceUrl: o, stillMediaUrl: n, width: s, height: e }, reporter: p, uploader: L(null, u, c) });
                     return d(k(m)), p?.toggleOperationPaused(y.BX.Full, !0), [m];
                 };
@@ -303,7 +303,7 @@
                         const { abortController: n, cropData: s, id: d, location: l, mediaFile: c, needsProcessing: m, originalMediaFile: _ } = o;
                         if (!_) return Promise.reject(new Error("media item not found"));
                         const f = r.getNumberValue("responsive_web_media_upload_target_jpg_pixels_per_byte"),
-                            g = (0, U.IX)(i()),
+                            g = (0, C.IX)(i()),
                             h = { location: l };
                         return (0, w.vn)(r, a, _, h, g).then((e) => {
                             const a = { cropData: s, jpgPixelsPerByteForResize: f, maxFileSize: e.maxFileSize, maxDimension: e.maxDimension },
@@ -320,7 +320,7 @@
                                           )
                                           .then((e) => {
                                               _ !== c && c && c.dispose(), o.uploader && o.uploader.cancel && o.uploader.cancel();
-                                              const a = { actAsUserId: (0, x.dY)(i()) },
+                                              const a = { actAsUserId: (0, E.dY)(i()) },
                                                   n = L(e.fileHandle, r, a),
                                                   s = t(re({ id: d, mediaFile: e, needsProcessing: !1, uploadPromise: void 0, uploadProgress: 0, uploading: !1, uploadId: void 0, uploader: n }));
                                               return (o.uploadId || o.uploading) && t(me([d])), s;
@@ -353,8 +353,8 @@
                                             n.push(t), t?.reporter?.reportOperationComplete(y.BX.Processing, y.Uk.Success), t?.reporter?.toggleOperationPaused(y.BX.Full, !0), s(e.slice(1));
                                         },
                                         (t) => {
-                                            const o = (0, S.ZP)(t, T);
-                                            o && i((0, C.fz)(o));
+                                            const o = (0, S.ZP)(t, O);
+                                            o && i((0, U.fz)(o));
                                             const { code: n, message: d, name: l, type: u } = t;
                                             r.reporter?.setMetadata({ reason: { name: l, message: d, code: n } });
                                             const c = "maxsize" === u || "maxduration" === u || ("resize" === u && (n === p.Y7.FILE_IS_NOT_AN_IMAGE || n === p.Y7.GIF_IS_TOO_LARGE)) ? y.Uk.Invalid : y.Uk.Failure;
@@ -396,18 +396,18 @@
                 return (i) => i(re({ id: e, mediaMetadata: t }));
             }
             const ne = "SEND_METADATA",
-                se = E.dg(z, ne);
+                se = M.dg(z, ne);
             function de(e) {
-                return (t, i, { api: r }) => E._O(t, { params: e, request: r.withEndpoint(f.Z).metadataCreate })({ actionTypes: se, context: ne });
+                return (t, i, { api: r }) => M._O(t, { params: e, request: r.withEndpoint(f.Z).metadataCreate })({ actionTypes: se, context: ne });
             }
             const le = "ATTACH_SUBTITLES",
-                ue = E.dg(z, le);
+                ue = M.dg(z, le);
             function pe(e) {
                 return (t, i, r) => {
                     const { subtitlesDisplayName: a, subtitlesLang: o, subtitlesMediaUploadId: n, videoMediaUploadId: s } = e,
                         { api: d, featureSwitches: l, userClaims: u } = r,
                         p = ge(e.mediaItem, !1, { featureSwitches: l, userClaims: u }) || "";
-                    return E._O(t, { params: { videoMediaUploadId: s, videoMediaCategory: p, subtitlesLang: o, subtitlesMediaUploadId: n, subtitlesDisplayName: a }, request: d.withEndpoint(f.Z).attachSubtitles })({ actionTypes: ue, context: le });
+                    return M._O(t, { params: { videoMediaUploadId: s, videoMediaCategory: p, subtitlesLang: o, subtitlesMediaUploadId: n, subtitlesDisplayName: a }, request: d.withEndpoint(f.Z).attachSubtitles })({ actionTypes: ue, context: le });
                 };
             }
             const ce = (e) => {
@@ -440,7 +440,7 @@
                                                                   p?.setMetadata({ mediaId: t }), p?.reportOperationComplete([y.BX.Full, y.BX.UploadSubmitUntilSruFinish], y.Uk.Success), e(a({ id: u, uploadId: t, uploadProgress: 1, uploading: !1 }));
                                                               },
                                                               g = (e, t, i) => {
-                                                                  p?.setMetadata({ mediaId: i }), "uploading" === t ? (a({ id: u, uploadProgress: O.OA("uploading", e) }), 100 === e && p?.reportOperationComplete(y.BX.SruUpload, y.Uk.Success)) : "processing" === t && a({ id: u, uploadProgress: O.OA("processing", e) });
+                                                                  p?.setMetadata({ mediaId: i }), "uploading" === t ? (a({ id: u, uploadProgress: T.OA("uploading", e) }), 100 === e && p?.reportOperationComplete(y.BX.SruUpload, y.Uk.Success)) : "processing" === t && a({ id: u, uploadProgress: T.OA("processing", e) });
                                                               },
                                                               h = () => {
                                                                   p?.toggleOperationPaused(y.BX.Full, !0);
@@ -491,16 +491,17 @@
                         });
                 };
             function fe(e, t, i, r) {
-                const a = e === w.vC.Tweet || e === w.vC.TwitterArticle;
+                const a = e === w.vC.Tweet || e === w.vC.TwitterArticle,
+                    o = e === w.vC.TwitterArticle;
                 if (t.isSubtitles) return w.xz.Subtitles;
                 if (t.isGif && !i) return a ? w.xz.TweetGif : w.xz.DMGif;
                 if (t.isAmplify) return w.xz.AmplifyVideo;
                 if (t.isVideo) {
                     const e = t.duration || 0,
-                        { featureSwitches: i, userClaims: o } = r,
-                        n = (0, w.SB)({ featureSwitches: i, userClaims: o }),
-                        s = i.getNumberValue("media_async_upload_amplify_duration_threshold", w.y$.Duration[n]);
-                    return ("number" == typeof n && 1 === n && e > s) || a ? w.xz.AmplifyVideo : w.xz.DMVideo;
+                        { featureSwitches: i, userClaims: n } = r,
+                        s = (0, w.SB)({ featureSwitches: i, userClaims: n }),
+                        d = i.getNumberValue("media_async_upload_amplify_duration_threshold", w.y$.Duration[s]);
+                    return "number" == typeof s && 1 === s && e > d ? w.xz.AmplifyVideo : o ? w.xz.TweetVideo : a ? w.xz.AmplifyVideo : w.xz.DMVideo;
                 }
                 return a ? w.xz.TweetImage : w.xz.DMImage;
             }
@@ -540,7 +541,7 @@
                             o && e(re({ id: i, mediaFileHash: null, abortController: void 0 })), r.code === c.S.HASHING_ABORTED ? (a?.setMetadata({ hashState: y.Xj.Canceled }), a?.reportOperationComplete(y.BX.Hash, y.Uk.Cancel)) : (a?.setMetadata({ hashState: y.Xj.Failure }), a?.reportOperationComplete(y.BX.Hash, y.Uk.Failure));
                         });
             };
-            M.Z.register({
+            x.Z.register({
                 [D]: function (e = N, t) {
                     if (!t) return e;
                     switch (t.type) {
@@ -576,4 +577,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.directMessagesData-63cb1cc4.99efcb0a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.directMessagesData-63cb1cc4.725be92a.js.map

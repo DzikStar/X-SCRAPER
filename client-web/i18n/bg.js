@@ -312,7 +312,7 @@
                 n("da8c5244", "Със статистиките с Premium можеш да отключиш интелигентни статистики за данни, за да разраснеш последователите си."),
                 n("b081baea", "Изпускаш статистики!"),
                 n("d5effffc", "Добавяне на значка"),
-                n("f1dd86b0", "Потвърди бизнеса си"),
+                n("c3653d44", "Потвърдете своя бизнес"),
                 n("e8070e70", "Пробвай Premium"),
                 n("ec42820e", "Искаш ли повече хора да видят отговора ти?"),
                 n("b0a95418", "Получи приоритизиране на отговор с Premium"),
@@ -13235,4 +13235,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/bg.f627c4ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/bg.e02d0c9a.js.map

@@ -324,7 +324,7 @@
                 t("da8c5244", "Cu Analize Premium, poți avea acces la informații inteligente despre date, care te vor ajuta să-ți crești numărul de urmăritori."),
                 t("b081baea", "Pierzi informații!"),
                 t("d5effffc", "Adaugă insignă"),
-                t("f1dd86b0", "Verifică-ți organizația"),
+                t("c3653d44", "Verifică-ți organizația"),
                 t("e8070e70", "Încearcă Premium"),
                 t("ec42820e", "Vrei ca mai multe persoane să-ți vadă răspunsul?"),
                 t("b0a95418", "Obține prioritizarea răspunsurilor cu Premium"),
@@ -13250,4 +13250,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ro.db5dba7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ro.0650a62a.js.map

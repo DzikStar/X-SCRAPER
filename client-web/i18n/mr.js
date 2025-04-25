@@ -313,7 +313,7 @@
                 n("da8c5244", "Premium विश्लेषणांसह, आपले फॉलोअर्स वाढवण्यासाठी आपण स्मार्ट डेटा इनसाइट्स अनलॉक करू शकता."),
                 n("b081baea", "आपली गमावलेली विश्लेषणे!"),
                 n("d5effffc", "बॅज जोडा"),
-                n("f1dd86b0", "आपला व्यवसाय सत्यापित करा"),
+                n("c3653d44", "आपला व्यवसाय सत्यापित करा"),
                 n("e8070e70", "Premium वापरून पहा"),
                 n("ec42820e", "आपले प्रत्युत्तर अधिक लोकांना दाखवायचे आहे का?"),
                 n("b0a95418", " Premium सह रिप्लाय बूस्ट मिळवा"),
@@ -13243,4 +13243,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/mr.2b358b8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/mr.505d76aa.js.map

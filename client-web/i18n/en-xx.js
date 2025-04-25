@@ -313,7 +313,7 @@
                 s("da8c5244", "[Wïíth Préêmïíüm Anåälytïícs, yöøü cåän ünlöøck småärt dåätåä ïínsïíghts töø gröøw yöøür föøllöøwéêrs.]"),
                 s("b081baea", "[Yöøü’réê mïíssïíng ïínsïíghts!]"),
                 s("d5effffc", "[Add båädgéê]"),
-                s("f1dd86b0", "[Véêrïífy yöøür Büsïínéêss]"),
+                s("c3653d44", "[Véêrïífy yöøür büsïínéêss]"),
                 s("e8070e70", "[Try Préêmïíüm]"),
                 s("ec42820e", "[Wåänt möøréê péêöøpléê töø séêéê yöøür réêply?]"),
                 s("b0a95418", "[Géêt Réêply Böøöøst wïíth Préêmïíüm]"),
@@ -13237,4 +13237,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-xx.bf41ce0a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-xx.d207a8da.js.map

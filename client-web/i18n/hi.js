@@ -317,7 +317,7 @@
                 n("da8c5244", "Premium एनालिटिक्स के साथ, आप अपने फ़ॉलोअर्स की संख्या बढ़ाने के लिए स्मार्ट डेटा इनसाइट्स अनलॉक कर सकते हैं."),
                 n("b081baea", "आप इनसाइट्स मिस कर रहे हैं!"),
                 n("d5effffc", "बैज जोड़ें"),
-                n("f1dd86b0", "अपना व्यवसाय सत्यापित करें"),
+                n("c3653d44", "अपना व्यवसाय सत्यापित करें"),
                 n("e8070e70", "Premium आज़माएं"),
                 n("ec42820e", "क्या आप चाहते हैं कि अधिक लोग आपका जवाब देखें?"),
                 n("b0a95418", "Premium के साथ जवाब बूस्ट पाएं"),
@@ -13244,4 +13244,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hi.2d809c7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hi.0aaa338a.js.map

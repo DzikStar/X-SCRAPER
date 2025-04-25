@@ -317,7 +317,7 @@
                 n("da8c5244", "Grâce aux Statistiques Premium, vous pouvez profiter d'analyses intelligentes pour accroître votre nombre d'abonnés."),
                 n("b081baea", "Vous passez à côté d'analyses !"),
                 n("d5effffc", "Ajouter un badge"),
-                n("f1dd86b0", "Certifiez votre entreprise"),
+                n("c3653d44", "Certifiez votre entreprise"),
                 n("e8070e70", "Tester Premium"),
                 n("ec42820e", "Vous voulez que plus de monde voie votre réponse ?"),
                 n("b0a95418", "Profitez du boostage des réponses avec Premium"),
@@ -13240,4 +13240,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.fa0a4b1a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.d5bd3d2a.js.map

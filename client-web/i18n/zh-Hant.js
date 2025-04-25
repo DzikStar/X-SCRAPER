@@ -312,7 +312,7 @@
                 n("da8c5244", "透過 Premium 分析，你就能解鎖智慧資料洞見來增加你的跟隨者。"),
                 n("b081baea", "你即將錯失洞見！"),
                 n("d5effffc", "加入徽章"),
-                n("f1dd86b0", "認證你的企業"),
+                n("c3653d44", "認證你的企業"),
                 n("e8070e70", "試用 Premium"),
                 n("ec42820e", "想要讓更多人看到你的回覆嗎？"),
                 n("b0a95418", "透過 Premium 獲得回覆提升"),
@@ -13245,4 +13245,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh-Hant.ccfdf61a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh-Hant.0c737caa.js.map

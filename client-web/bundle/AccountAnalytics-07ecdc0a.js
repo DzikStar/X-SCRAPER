@@ -5,31 +5,31 @@
         902958: (e, s, t) => {
             t.d(s, { e: () => Q });
             var a = t(552322),
-                r = t(993165),
-                l = t(332161),
+                r = t(436059),
+                l = t(941204),
                 i = t(202784),
                 n = t(969088),
-                o = t(476865),
-                c = t(713990),
+                o = t(816778),
+                c = t(323788),
                 d = t(33340),
                 x = t(700009),
-                m = t(378364),
+                m = t(26429),
                 h = t(812115),
-                u = t(88096),
-                f = t(983955),
-                p = t(570306),
-                g = t(123848),
-                j = t(731106),
-                v = t(440423),
-                b = t(589992),
-                w = t(24212),
-                N = t(598756),
-                y = t(661012),
+                u = t(412035),
+                f = t(862399),
+                p = t(779129),
+                g = t(511974),
+                j = t(713014),
+                v = t(774534),
+                b = t(97360),
+                w = t(951547),
+                N = t(882506),
+                y = t(864207),
                 k = t(840489),
                 C = t(430962),
                 R = t(598705),
-                Z = t(34681),
-                z = t(702309),
+                Z = t(164695),
+                z = t(390278),
                 I = t(530361);
             function L(e) {
                 return Intl.DateTimeFormat("en-US", { day: "numeric", month: "short", year: "numeric" }).format(e);
@@ -267,7 +267,7 @@
                           }),
                 });
             }
-            var W = t(437712),
+            var W = t(86781),
                 K = t(991732);
             function M({ stats: e }) {
                 const s = (0, K.T)();
@@ -283,13 +283,13 @@
                     }),
                 });
             }
-            var F = t(697250),
-                U = t(183387),
-                D = t(564170),
-                O = t(103779),
-                q = t(370629),
-                A = t(74425),
-                E = t(782879),
+            var F = t(930559),
+                U = t(140213),
+                D = t(251161),
+                O = t(151634),
+                q = t(57301),
+                A = t(16246),
+                E = t(582440),
                 B = t(968025);
             function Q({ restId: e, referrerUrl: s, contentPageUrl: t = "/analytics/content", showFollowersChart: r = !1, showRealtimeChart: l = !1 }) {
                 return (0, a.jsx)(n.R4, { restId: e, showRealtimeChart: l, children: (0, a.jsx)(H, { referrerUrl: s, contentPageUrl: t, showFollowersChart: r }) });
@@ -406,4 +406,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-07ecdc0a.71c39eda.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-07ecdc0a.b8f0012a.js.map

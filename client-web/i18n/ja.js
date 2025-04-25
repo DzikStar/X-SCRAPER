@@ -312,7 +312,7 @@
                 f("da8c5244", "プレミアムアナリティクスでは、スマートなデータインサイトを活用してフォロワーを増やせます。"),
                 f("b081baea", "インサイトを手に入れましょう"),
                 f("d5effffc", "バッジを追加"),
-                f("f1dd86b0", "貴社のビジネスを認証する"),
+                f("c3653d44", "貴社のビジネスを認証する"),
                 f("e8070e70", "プレミアムを試す"),
                 f("ec42820e", "返信を多くのユーザーに見てもらいましょう"),
                 f("b0a95418", "プレミアムで返信をブーストする"),
@@ -10765,7 +10765,7 @@
                         {
                             key: "a200fc71",
                             get: function () {
-                                return ["正しくない場合は生年月日を", "に追加してください。生年月日は公開しなくても追加できます。"];
+                                return ["正しくない場合は生年月日を", "に追加してください。 追加した生年月日は非公開に設定できます。   "];
                             },
                         },
                         {
@@ -13242,4 +13242,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ja.3be9eeea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ja.98d257aa.js.map

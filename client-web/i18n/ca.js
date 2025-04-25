@@ -313,7 +313,7 @@
                 t("da8c5244", "Amb Premium Analytics, pots accedir a estadístiques de dades intel·ligents per fer créixer els seguidors."),
                 t("b081baea", "T'estàs perdent estadístiques!"),
                 t("d5effffc", "Afegeix una insígnia"),
-                t("f1dd86b0", "Verifica la teva empresa"),
+                t("c3653d44", "Verifica la teva empresa"),
                 t("e8070e70", "Prova Premium"),
                 t("ec42820e", "Vols que la teva resposta arribi a més persones?"),
                 t("b0a95418", "Prioritza les respostes amb Premium"),
@@ -13237,4 +13237,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ca.0e1fc05a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ca.5f22edfa.js.map

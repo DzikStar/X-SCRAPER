@@ -312,7 +312,7 @@
                 n("da8c5244", "Premium İstatistikleri sayesinde, akıllı veri istatistiklerinden yararlanarak daha geniş bir takipçi kitlesine ulaşabilirsin."),
                 n("b081baea", "İstatistikleri kaçırıyorsun."),
                 n("d5effffc", "Rozet ekle"),
-                n("f1dd86b0", "İşletmeni Doğrula"),
+                n("c3653d44", "İşletmeni doğrula"),
                 n("e8070e70", "Premium'u dene"),
                 n("ec42820e", "Yanıtını daha fazla kullanıcının görmesini mi istiyorsun?"),
                 n("b0a95418", "Premium ile Yanıt Öne Çıkarmadan Yararlan"),
@@ -13245,4 +13245,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/tr.22c059ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/tr.b5a36a8a.js.map

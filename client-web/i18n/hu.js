@@ -312,7 +312,7 @@
                 s("da8c5244", "A Prémium elemzések használatával intelligens adatokhoz juthatsz a követőid számának növelése érdekében."),
                 s("b081baea", "Lemaradsz a fontos információkról."),
                 s("d5effffc", "Jelvény hozzáadása"),
-                s("f1dd86b0", "Ellenőriztesd a vállalkozásod!"),
+                s("c3653d44", "Ellenőriztesd a vállalkozásod!"),
                 s("e8070e70", "Próbáld ki a Premiumot"),
                 s("ec42820e", "Azt szeretnéd, hogy többen lássák a válaszodat?"),
                 s("b0a95418", "Válaszok fellendítése Premium előfizetéssel"),
@@ -13245,4 +13245,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hu.3f87b1ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hu.beb70cba.js.map

@@ -312,7 +312,7 @@
                 i("da8c5244", "Dengan Analitis Premium, anda boleh mendapatkan wawasan data pintar untuk mengembangkan pengikut anda."),
                 i("b081baea", "Anda tiada wawasan!"),
                 i("d5effffc", "Tambahkan lencana"),
-                i("f1dd86b0", "Sahkan Perniagaan anda"),
+                i("c3653d44", "Sahkan perniagaan anda"),
                 i("e8070e70", "Cuba Premium"),
                 i("ec42820e", "Ingin lebih ramai orang melihat balasan anda?"),
                 i("b0a95418", "Dapatkan Peningkatan Balasan dengan Premium"),
@@ -13235,4 +13235,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.3e62989a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.2f7c486a.js.map

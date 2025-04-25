@@ -322,7 +322,7 @@
                 n("da8c5244", "S prémiovými štatistikami získate prístup k inteligentným prehľadom dát na zvýšenie počtu sledovateľov."),
                 n("b081baea", "Prichádzate o prehľady!"),
                 n("d5effffc", "Pridať odznak"),
-                n("f1dd86b0", "Overte svoju firmu"),
+                n("c3653d44", "Overte svoju firmu"),
                 n("e8070e70", "Vyskúšať Premium"),
                 n("ec42820e", "Chcete, aby vašu odpoveď videlo viac ľudí?"),
                 n("b0a95418", "Získajte podporu odpovedí s predplatným Premium"),
@@ -13252,4 +13252,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sk.95b70eaa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sk.2b76490a.js.map

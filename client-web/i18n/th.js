@@ -312,7 +312,7 @@
                 n("da8c5244", "การวิเคราะห์ Premium ทำคุณสามารถปลดล็อกข้อมูลเชิงลึกอันชาญฉลาดเพื่อเพิ่มจำนวนผู้ติดตามของคุณ"),
                 n("b081baea", "คุณไม่มีข้อมูลเชิงลึก!"),
                 n("d5effffc", "เพิ่มป้ายกำกับ"),
-                n("f1dd86b0", "ยืนยันธุรกิจของคุณ"),
+                n("c3653d44", "ยืนยันธุรกิจของคุณ"),
                 n("e8070e70", "ลองใช้ Premium"),
                 n("ec42820e", "ต้องการให้ผู้คนเห็นการตอบกลับของคุณมากขึ้นหรือไม่"),
                 n("b0a95418", "รับบูสต์การตอบกลับด้วย Premium"),
@@ -13235,4 +13235,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/th.c502644a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/th.a6d61c7a.js.map

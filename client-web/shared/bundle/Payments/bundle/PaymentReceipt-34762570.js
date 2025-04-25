@@ -187,7 +187,7 @@
         },
         357818: (e, l, a) => {
             a.d(l, { x: () => n });
-            const n = Object.freeze({ AtmWithdrawal: "AtmWithdrawal", Deposit: "Deposit", Payment: "Payment", Refund: "Refund", Reverse: "Reverse", Transfer: "Transfer", Unspecified: "Unspecified", Withdraw: "Withdraw" });
+            const n = Object.freeze({ AtmWithdrawal: "AtmWithdrawal", Deposit: "Deposit", DisputeCredit: "DisputeCredit", Payment: "Payment", Refund: "Refund", Reverse: "Reverse", Transfer: "Transfer", Unspecified: "Unspecified", Withdraw: "Withdraw" });
         },
         539660: (e, l, a) => {
             a.d(l, { P: () => n });
@@ -1008,4 +1008,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Payments~bundle.PaymentReceipt-34762570.bd49f43a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Payments~bundle.PaymentReceipt-34762570.4fbb947a.js.map

@@ -313,7 +313,7 @@
                 t("da8c5244", "Mit Premium-Statistiken erhältst du intelligente Dateneinblicke für mehr Follower*innen."),
                 t("b081baea", "Dir entgehen Einblicke!"),
                 t("d5effffc", "Abzeichen hinzufügen"),
-                t("f1dd86b0", "Unternehmen verifizieren"),
+                t("c3653d44", "Unternehmen verifizieren"),
                 t("e8070e70", "Premium probieren"),
                 t("ec42820e", "Sollen mehr Leute deine Antwort sehen?"),
                 t("b0a95418", "Antwort-Boost mit Premium"),
@@ -13250,4 +13250,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/de.1a9861ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/de.0519ca9a.js.map

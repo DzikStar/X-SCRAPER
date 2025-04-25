@@ -380,10 +380,10 @@
                                 entryId: i,
                                 itemMetadata: D,
                                 shouldCountTowardsAdSpacing: h,
-                                sortIndex: b,
+                                sortIndex: M,
                             } = d,
-                            M = [];
-                        return r && M.push((0, s.Z)(i, r, d, b)), 1 === u.length && u[0].type === o.ZP.Message ? M.push({ ...u[0] }) : M.push(l({ entryId: i, itemMetadata: D, items: u, sortIndex: b, displayType: e, shouldCountTowardsAdSpacing: h })), a && M.push((0, n.Z)(i, a, D, b)), M;
+                            b = [];
+                        return r && b.push((0, s.Z)(i, r, d, M)), 1 === u.length && u[0].type === o.ZP.Message ? b.push({ ...u[0] }) : b.push(l({ entryId: i, itemMetadata: D, items: u, sortIndex: M, displayType: e, shouldCountTowardsAdSpacing: h })), a && b.push((0, n.Z)(i, a, D, M)), b;
                     },
                 i = ({ divider: e = { top: !0, bottom: !0 }, ...d }) => r.ub({ splice: u(d), divider: e });
         },
@@ -571,8 +571,8 @@
                 i = a(490196),
                 D = a(360522),
                 h = a(478755),
-                b = a(556449),
-                M = a(877445),
+                M = a(556449),
+                b = a(877445),
                 t = (a(901951), a(136728), a(337637));
             a(163889);
             class c {
@@ -680,8 +680,8 @@
                             let D = !1;
                             i && i.type === r.ZP.Tweet && n.type === r.ZP.Tweet && ((D = S(i, n, d)), D && o.push(R(a, d, i.content.id)));
                             const h = { isStart: u, isEnd: s === e.length - 1, position: "descendant", showReplyContext: u || D },
-                                b = n.type === r.ZP.Tweet ? C({ item: n, conversationPosition: h, conversationTreeMetadata: void 0, isFirst: u, sortIndex: l }) : T({ item: n, conversationPosition: h, sortIndex: l });
-                            o.push(b);
+                                M = n.type === r.ZP.Tweet ? C({ item: n, conversationPosition: h, conversationTreeMetadata: void 0, isFirst: u, sortIndex: l }) : T({ item: n, conversationPosition: h, sortIndex: l });
+                            o.push(M);
                         }),
                         o
                     );
@@ -730,21 +730,21 @@
                                     shouldCountTowardsAdSpacing: D,
                                     sortIndex: h,
                                 } = a,
-                                b = [];
-                            b.push(P({ moduleEntryId: u, itemMetadata: a.itemMetadata, shouldCountTowardsAdSpacing: D, sortIndex: h })), r && b.push((0, N.Z)(u, r, a, h));
-                            const M = e && !d ? 2 : 3,
+                                M = [];
+                            M.push(P({ moduleEntryId: u, itemMetadata: a.itemMetadata, shouldCountTowardsAdSpacing: D, sortIndex: h })), r && M.push((0, N.Z)(u, r, a, h));
+                            const b = e && !d ? 2 : 3,
                                 t = n || s?.initialItemsCount || l.length;
                             let c = "";
                             for (let e = 0; e < t; e++) c += `verticalGridItem-${e}-${u} `;
                             const m = !!s && t < l.length;
-                            b.push(O({ "aria-owns": c, itemMetadata: i, moduleEntryId: u, sortIndex: h }));
-                            for (let d = 0; d < t; d += M) {
-                                const a = d / M,
-                                    o = l.slice(d, Math.min(t, d + M)),
-                                    r = m && d + M >= t;
-                                b.push(x({ entryToFocus: s?.entryToFocus, isLegacy: e, itemMetadata: i, items: o, moduleEntryId: u, numColumns: M, rowIndex: a, shouldDisplayBorder: r, sortIndex: h }));
+                            M.push(O({ "aria-owns": c, itemMetadata: i, moduleEntryId: u, sortIndex: h }));
+                            for (let d = 0; d < t; d += b) {
+                                const a = d / b,
+                                    o = l.slice(d, Math.min(t, d + b)),
+                                    r = m && d + b >= t;
+                                M.push(x({ entryToFocus: s?.entryToFocus, isLegacy: e, itemMetadata: i, items: o, moduleEntryId: u, numColumns: b, rowIndex: a, shouldDisplayBorder: r, sortIndex: h }));
                             }
-                            return s && m && b.push(H(u, s, a, h)), o && b.push((0, Z.Z)(u, o, a.itemMetadata, h)), b;
+                            return s && m && M.push(H(u, s, a, h)), o && M.push((0, Z.Z)(u, o, a.itemMetadata, h)), M;
                         },
                         divider: { top: !0, bottom: !0 },
                     });
@@ -766,7 +766,7 @@
                 }),
                 G = F,
                 _ = ({ isLegacy: e = !1, isWide: d = !1 }) => n.ov({ selectDisplayType: (e) => e.content.displayType, handlers: { [l.u.Carousel]: (0, s.Z)({ moduleDisplayType: o.m.Carousel }), [l.u.CompactCarousel]: (0, s.Z)({ moduleDisplayType: o.m.CompactCarousel }), [l.u.GridCarousel]: (0, s.Z)({ moduleDisplayType: o.m.GridCarousel }), [l.u.PagedCarousel]: (0, s.Z)({ moduleDisplayType: o.m.PagedCarousel }), [l.u.Vertical]: G, [l.u.VerticalConversation]: B, [l.u.VerticalGrid]: L({ isLegacy: e, isWide: d }) } }),
-                U = ({ isInSidebar: e = !1, isLegacy: d = !1, isWide: a = !1 } = Object.freeze({})) => ({ [r.ZP.TimelineModule]: _({ isLegacy: d, isWide: a }), [r.no.ModuleImpressionPlaceholder]: b.Z, [r.no.ModuleHeader]: h.Z, [r.no.ModuleFooter]: (0, D.Z)({ isInSidebar: e }), [r.no.ModuleShowMore]: (0, M.Z)({ isInSidebar: e }), [r.no.ConversationModuleGap]: i.Z, [r.no.ModuleCarouselTimeline]: u.Z, [r.no.ModuleVerticalGridList]: v.Z, [r.no.ModuleVerticalGridTimelineRow]: E.Z });
+                U = ({ isInSidebar: e = !1, isLegacy: d = !1, isWide: a = !1 } = Object.freeze({})) => ({ [r.ZP.TimelineModule]: _({ isLegacy: d, isWide: a }), [r.no.ModuleImpressionPlaceholder]: M.Z, [r.no.ModuleHeader]: h.Z, [r.no.ModuleFooter]: (0, D.Z)({ isInSidebar: e }), [r.no.ModuleShowMore]: (0, b.Z)({ isInSidebar: e }), [r.no.ConversationModuleGap]: i.Z, [r.no.ModuleCarouselTimeline]: u.Z, [r.no.ModuleVerticalGridList]: v.Z, [r.no.ModuleVerticalGridTimelineRow]: E.Z });
         },
         877445: (e, d, a) => {
             a.d(d, { Z: () => n });
@@ -1018,8 +1018,8 @@
             var o = a(263863),
                 r = a(351322),
                 l = a(801184);
-            const n = ({ bookmarkFolderId: e, dismissable: d = !1, displayBlocked: a, hideConversationControlsEducationText: n = !1, hideExclusivityInfoEducationTextInReplies: s = !1, hideHighlightedUserLabel: u = !1, hideReplyContextMode: i, hideTrustedFriendsEducationTextInReplies: D = !1, isCompact: h = !1, shouldSelfThreadIncludeAvatar: b = !1, shouldStoreTypeaheadItem: M, showWithheldBannerOnMyTweets: t = !0, withActionsDisabled: c = !1, withMuteConversation: m = !1, withRemoveFromBookmarks: w = !1, withSelfThread: A = !0, withUserPresence: y = !1 }) =>
-                r.ov({ selectDisplayType: (e) => e.content.displayType, handlers: { [o.Z.Tweet]: (0, l.Cw)({ bookmarkFolderId: e, dismissable: d, displayBlocked: a, hideConversationControlsEducationText: n, hideExclusivityInfoEducationTextInReplies: s, hideReplyContextMode: i, hideTrustedFriendsEducationTextInReplies: D, isCompact: h, shouldSelfThreadIncludeAvatar: b, shouldStoreTypeaheadItem: M, showWithheldBannerOnMyTweets: t, withMuteConversation: m, withRemoveFromBookmarks: w, withSelfThread: A, withUserPresence: y }), [o.Z.EmphasizedPromotedTweet]: (0, l.Cw)({ displayBlocked: a, dismissable: d, divider: { bottom: !1, top: !1 }, hideConversationControlsEducationText: n, hideExclusivityInfoEducationTextInReplies: s, hideTrustedFriendsEducationTextInReplies: D }), [o.Z.MomentTimelineTweet]: (0, l.Cw)({ displayBlocked: a, dismissable: d, hideConversationControlsEducationText: n, hideExclusivityInfoEducationTextInReplies: s, hideTrustedFriendsEducationTextInReplies: D, shouldSelfThreadIncludeAvatar: b, showWithheldBannerOnMyTweets: t, withActionsDisabled: c, withRemoveFromBookmarks: w, withSelfThread: A, divider: { bottom: !1, top: !1 } }), [o.Z.SelfThread]: (0, l.Cw)({ displayBlocked: a, dismissable: d, hideConversationControlsEducationText: n, hideExclusivityInfoEducationTextInReplies: s, hideReplyContextMode: i, hideTrustedFriendsEducationTextInReplies: D, shouldStoreTypeaheadItem: M, shouldSelfThreadIncludeAvatar: b, withMuteConversation: m, withSelfThread: A, withUserPresence: y }), [o.Z.CondensedTweet]: (0, l.Wz)({}), [o.Z.Media]: (0, l.mG)({}), [o.Z.MediaShort]: (0, l.UM)({}), [o.Z.MediaGrid]: (0, l.yZ)() } });
+            const n = ({ bookmarkFolderId: e, dismissable: d = !1, displayBlocked: a, hideConversationControlsEducationText: n = !1, hideExclusivityInfoEducationTextInReplies: s = !1, hideHighlightedUserLabel: u = !1, hideReplyContextMode: i, hideTrustedFriendsEducationTextInReplies: D = !1, isCompact: h = !1, shouldSelfThreadIncludeAvatar: M = !1, shouldStoreTypeaheadItem: b, showWithheldBannerOnMyTweets: t = !0, withActionsDisabled: c = !1, withMuteConversation: m = !1, withRemoveFromBookmarks: w = !1, withSelfThread: A = !0, withUserPresence: y = !1 }) =>
+                r.ov({ selectDisplayType: (e) => e.content.displayType, handlers: { [o.Z.Tweet]: (0, l.Cw)({ bookmarkFolderId: e, dismissable: d, displayBlocked: a, hideConversationControlsEducationText: n, hideExclusivityInfoEducationTextInReplies: s, hideReplyContextMode: i, hideTrustedFriendsEducationTextInReplies: D, isCompact: h, shouldSelfThreadIncludeAvatar: M, shouldStoreTypeaheadItem: b, showWithheldBannerOnMyTweets: t, withMuteConversation: m, withRemoveFromBookmarks: w, withSelfThread: A, withUserPresence: y }), [o.Z.EmphasizedPromotedTweet]: (0, l.Cw)({ displayBlocked: a, dismissable: d, divider: { bottom: !1, top: !1 }, hideConversationControlsEducationText: n, hideExclusivityInfoEducationTextInReplies: s, hideTrustedFriendsEducationTextInReplies: D }), [o.Z.MomentTimelineTweet]: (0, l.Cw)({ displayBlocked: a, dismissable: d, hideConversationControlsEducationText: n, hideExclusivityInfoEducationTextInReplies: s, hideTrustedFriendsEducationTextInReplies: D, shouldSelfThreadIncludeAvatar: M, showWithheldBannerOnMyTweets: t, withActionsDisabled: c, withRemoveFromBookmarks: w, withSelfThread: A, divider: { bottom: !1, top: !1 } }), [o.Z.SelfThread]: (0, l.Cw)({ displayBlocked: a, dismissable: d, hideConversationControlsEducationText: n, hideExclusivityInfoEducationTextInReplies: s, hideReplyContextMode: i, hideTrustedFriendsEducationTextInReplies: D, shouldStoreTypeaheadItem: b, shouldSelfThreadIncludeAvatar: M, withMuteConversation: m, withSelfThread: A, withUserPresence: y }), [o.Z.CondensedTweet]: (0, l.Wz)({}), [o.Z.Media]: (0, l.mG)({}), [o.Z.MediaShort]: (0, l.UM)({}), [o.Z.MediaGrid]: (0, l.yZ)() } });
         },
         801184: (e, d, a) => {
             a.d(d, { $Q: () => h, Cw: () => i, UM: () => n, Wz: () => r, d2: () => u, g6: () => D, mG: () => l, yZ: () => s });
@@ -1972,8 +1972,8 @@
                 i = r.OZ(u);
             var D = a(935114),
                 h = a(37533),
-                b = a(590980),
-                M = a(159440);
+                M = a(590980),
+                b = a(159440);
             const t = (e) => ({
                     loader: () =>
                         Promise.all([
@@ -2048,7 +2048,7 @@
                     loaderKey: "eventSummaryDefaultLoader",
                     strategy: l.Z.OnDemand,
                 }),
-                c = ({ shouldStoreTypeaheadItem: e }) => r.ov({ selectDisplayType: (e) => e.content.displayType, handlers: { [M.Z.Hero]: t({}), [M.Z.Cell]: t({ shouldStoreTypeaheadItem: e }), [M.Z.CellWithProminentSocialContext]: t({}) } }),
+                c = ({ shouldStoreTypeaheadItem: e }) => r.ov({ selectDisplayType: (e) => e.content.displayType, handlers: { [b.Z.Hero]: t({}), [b.Z.Cell]: t({ shouldStoreTypeaheadItem: e }), [b.Z.CellWithProminentSocialContext]: t({}) } }),
                 m = {
                     loader: () =>
                         Promise.all([
@@ -2126,17 +2126,16 @@
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8d854c2e"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-aaf38a28"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-aeee0c9e"),
+                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2652b27c"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-da0e99d8"),
-                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-4b805c4b"),
+                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-3931c1f3"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-c377d397"),
-                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8c219810"),
-                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-9b4c2397"),
-                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-c2fdd616"),
-                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-70774d80"),
-                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-92c1aea7"),
-                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8767a721"),
-                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-d5c922ba"),
-                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-e9891f16"),
+                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-e4b9a405"),
+                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-f17e8d44"),
+                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-f39972b2"),
+                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-568e95f0"),
+                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1895c9ee"),
+                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8fe22a9e"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-0a8205ef"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-5719ea67"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1b6af858"),
@@ -2451,17 +2450,16 @@
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8d854c2e"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-aaf38a28"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-aeee0c9e"),
+                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2652b27c"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-da0e99d8"),
-                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-4b805c4b"),
+                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-3931c1f3"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-c377d397"),
-                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8c219810"),
-                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-9b4c2397"),
-                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-c2fdd616"),
-                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-70774d80"),
-                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-92c1aea7"),
-                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8767a721"),
-                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-d5c922ba"),
-                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-e9891f16"),
+                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-e4b9a405"),
+                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-f17e8d44"),
+                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-f39972b2"),
+                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-568e95f0"),
+                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1895c9ee"),
+                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8fe22a9e"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-0a8205ef"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-5719ea67"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1b6af858"),
@@ -2769,8 +2767,8 @@
                     loaderKey: "scoreCardLoader",
                     strategy: l.Z.OnDemand,
                 },
-                be = r.ov({ selectDisplayType: (e) => (0, F.Z)(e.content.content) || "", handlers: { [se.Y.Standard]: ue, [se.Y.ScoreCard]: he, [se.Y.Broadcast]: ie, [se.Y.CallToAction]: De } }),
-                Me = {
+                Me = r.ov({ selectDisplayType: (e) => (0, F.Z)(e.content.content) || "", handlers: { [se.Y.Standard]: ue, [se.Y.ScoreCard]: he, [se.Y.Broadcast]: ie, [se.Y.CallToAction]: De } }),
+                be = {
                     loader: () =>
                         Promise.all([
                             a.e("icons.7"),
@@ -2857,7 +2855,7 @@
                     loaderKey: "timelineCardDefaultLoader",
                     strategy: l.Z.Critical,
                 },
-                te = r.OZ(Me);
+                te = r.OZ(be);
             var ce = a(929482),
                 me = a(461190),
                 we = a(490196),
@@ -3193,7 +3191,7 @@
                 Ue = a(118101);
             const We = { loader: () => Promise.all([a.e("icons.7"), a.e("icons.15"), a.e("icons.8"), a.e("icons.3"), a.e("icons.24"), a.e("icons.6"), a.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"), a.e("shared~loader.Typeahead~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSpacePeek~bundle.Bir"), a.e("loader.VerticalGridItemHandler")]).then(a.bind(a, 395267)), loaderKey: "topicTileLoader", strategy: l.Z.OnDemand },
                 Ve = r.ov({ selectDisplayType: (e) => (0, F.Z)(e.content.content) || "", handlers: { [Ue.NA.TopicTile]: We } }),
-                $e = ({ bookmarkFolderId: e, displayBlocked: d = !1, errorContext: a = "", hideReplyContextMode: l, isCompact: n = !1, isInSidebar: u = !1, isLegacy: M = !1, shouldSelfThreadIncludeAvatar: t = !1, shouldStoreTypeaheadItem: m, showUnsupportedTombstone: A = !1, showWithheldBannerOnMyTweets: p = !0, tweetDismissable: I = !1, withMessageGaps: f = !0, withMuteConversation: C = !1, withRemoveFromBookmarks: R = !1, withSelfThreadCTA: Z = !1, withThirdPartyCards: H = !0, withTweetActionsDisabled: O = !1, withUserPresence: x = !1 }) => ({
+                $e = ({ bookmarkFolderId: e, displayBlocked: d = !1, errorContext: a = "", hideReplyContextMode: l, isCompact: n = !1, isInSidebar: u = !1, isLegacy: b = !1, shouldSelfThreadIncludeAvatar: t = !1, shouldStoreTypeaheadItem: m, showUnsupportedTombstone: A = !1, showWithheldBannerOnMyTweets: p = !0, tweetDismissable: I = !1, withMessageGaps: f = !0, withMuteConversation: C = !1, withRemoveFromBookmarks: R = !1, withSelfThreadCTA: Z = !1, withThirdPartyCards: H = !0, withTweetActionsDisabled: O = !1, withUserPresence: x = !1 }) => ({
                     [o.ZP.Article]: s,
                     [o.ZP.Card]: te,
                     [o.ZP.Community]: (0, D.Z)({}),
@@ -3217,10 +3215,10 @@
                     [o.ZP.SelfThreadTweetComposer]: ee.Z,
                     [o.ZP.Spelling]: le,
                     [o.ZP.ThreadHeader]: ne.Z,
-                    [o.ZP.Tile]: be,
+                    [o.ZP.Tile]: Me,
                     [o.ZP.TimelineCursor]: (0, h.Z)({}),
                     [o.ZP.TimelineFrame]: w,
-                    [o.ZP.TimelineModule]: (0, ce.I)({ isLegacy: M }),
+                    [o.ZP.TimelineModule]: (0, ce.I)({ isLegacy: b }),
                     [o.ZP.TimelinePivot]: Se,
                     [o.ZP.Tombstone]: ge,
                     [o.ZP.Topic]: Ne({ shouldStoreTypeaheadItem: m }),
@@ -3233,7 +3231,7 @@
                     [o.ZP.VerticalGridItem]: Ve,
                     [o.no.CollectionHeader]: i,
                     [o.no.ConversationModuleGap]: we.Z,
-                    [o.no.Divider]: b.Z,
+                    [o.no.Divider]: M.Z,
                     [o.no.ModuleCarouselTimeline]: me.Z,
                     [o.no.ModuleFooter]: (0, Ae.Z)({ isInSidebar: u }),
                     [o.no.ModuleHeader]: ye.Z,
@@ -3249,4 +3247,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-87641eae.84bb8b8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-87641eae.6dd2f8da.js.map

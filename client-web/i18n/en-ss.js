@@ -313,7 +313,7 @@
                 a("da8c5244", "[[293549]] With Premium Analytics, you can unlock smart data insights to grow your followers."),
                 a("b081baea", "[[293551]] You’re missing insights!"),
                 a("d5effffc", "[[290963]] Add badge"),
-                a("f1dd86b0", "[[292955]] Verify your Business"),
+                a("c3653d44", "[[294270]] Verify your business"),
                 a("e8070e70", "[[291719]] Try Premium"),
                 a("ec42820e", "[[291693]] Want more people to see your reply?"),
                 a("b0a95418", "[[291691]] Get Reply Boost with Premium"),
@@ -13237,4 +13237,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-ss.ee9f3a2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-ss.e947c5fa.js.map

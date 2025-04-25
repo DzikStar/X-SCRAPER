@@ -313,7 +313,7 @@
                 a("da8c5244", "Met Premium-analyses ontgrendel je slimme gegevensinzichten om meer volgers te krijgen."),
                 a("b081baea", "Je mist inzichten!"),
                 a("d5effffc", "Badge toevoegen"),
-                a("f1dd86b0", "Je bedrijf verifiëren"),
+                a("c3653d44", "Je bedrijf verifiëren"),
                 a("e8070e70", "Probeer Premium"),
                 a("ec42820e", "Wil je dat meer mensen je antwoord zien?"),
                 a("b0a95418", "Krijg Antwoordboost met Premium"),
@@ -13250,4 +13250,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.79ab7faa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.08fab3ea.js.map

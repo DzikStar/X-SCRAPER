@@ -312,7 +312,7 @@
                 i("da8c5244", "Dengan Analitik Premium, Anda bisa mengakses wawasan data cerdas untuk mengembangkan pengikut Anda."),
                 i("b081baea", "Sayang sekali jika Anda tidak memanfaatkan wawasan!"),
                 i("d5effffc", "Tambahkan lencana"),
-                i("f1dd86b0", "Verifikasikan Bisnis Anda"),
+                i("c3653d44", "Verifikasikan bisnis Anda"),
                 i("e8070e70", "Coba Premium"),
                 i("ec42820e", "Ingin balasan Anda dilihat lebih banyak orang?"),
                 i("b0a95418", "Dapatkan Pengutamaan Balasan dengan Premium"),
@@ -13235,4 +13235,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/id.6c3de0aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/id.30eecc5a.js.map

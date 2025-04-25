@@ -154,8 +154,8 @@
                 k = o(942893),
                 I = o(801501),
                 T = o(214647),
-                B = o(725516),
-                x = o(500002),
+                x = o(725516),
+                B = o(500002),
                 E = o(886404),
                 P = o(443781),
                 Z = o(194661),
@@ -238,17 +238,16 @@
                         o.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8d854c2e"),
                         o.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-aaf38a28"),
                         o.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-aeee0c9e"),
+                        o.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2652b27c"),
                         o.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-da0e99d8"),
-                        o.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-4b805c4b"),
+                        o.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-3931c1f3"),
                         o.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-c377d397"),
-                        o.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8c219810"),
-                        o.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-9b4c2397"),
-                        o.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-c2fdd616"),
-                        o.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-70774d80"),
-                        o.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-92c1aea7"),
-                        o.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8767a721"),
-                        o.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-d5c922ba"),
-                        o.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-e9891f16"),
+                        o.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-e4b9a405"),
+                        o.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-f17e8d44"),
+                        o.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-f39972b2"),
+                        o.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-568e95f0"),
+                        o.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1895c9ee"),
+                        o.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8fe22a9e"),
                         o.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-0a8205ef"),
                         o.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-5719ea67"),
                         o.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1b6af858"),
@@ -382,16 +381,16 @@
                 ke = o(187669);
             const Ie = u().de21174c,
                 Te = u().haebcf52,
-                Be = u().i859a9d4,
-                xe = (0, ve.ju)("https://help.x.com/using-twitter/mentions-and-replies#mention-control"),
+                xe = u().i859a9d4,
+                Be = (0, ve.ju)("https://help.x.com/using-twitter/mentions-and-replies#mention-control"),
                 Ee = ye.default.create((e) => ({ callout: { marginVertical: e.spaces.space8, marginHorizontal: e.spaces.space16 } })),
                 Pe = () => {
-                    const e = (0, B.z)();
+                    const e = (0, x.z)();
                     return (
                         (0, ke.q)(() => {
                             e.scribe({ element: "left_conversation_banner", action: "impression" });
                         }),
-                        n.createElement(i.Z, { style: Ee.callout }, n.createElement(fe.Z, { Icon: Me.default, action: { label: Be, link: xe }, headline: Ie, text: Te, type: "primary" }))
+                        n.createElement(i.Z, { style: Ee.callout }, n.createElement(fe.Z, { Icon: Me.default, action: { label: xe, link: Be }, headline: Ie, text: Te, type: "primary" }))
                     );
                 },
                 Ze = u().f277e94a,
@@ -693,12 +692,12 @@
                     if (a && t.location.pathname.indexOf("/intent/") > -1) return n.createElement(z.Z, { forwardPivotInfo: e, history: t, location: t.location, nudges: o, tweetId: a.id_str });
                 }
                 _renderTweetComponent() {
-                    const { analytics: e, contextTweet: t, feedbackItems: o, forwardPivotInfo: i, hasModeratedReplies: d, history: l, innerForwardPivotInfo: s, innerNudges: c, isActiveCreator: u, isNsfwUser: h, isPinned: b, location: p, nudges: m, onTweetDismiss: D, promotedContent: C, promotedContentAdvertiser: A, quoteTweetSocialContextProps: g, quotedTweetTombstoneInfo: S, readerModeAvailable: v, replyBadge: y, replyContext: M, rootTweetAuthorId: k, showReplyFilterInlineCallout: I, socialContext: T, socialContextColor: B, topic: x, topicFollowPrompt: E, tweet: P, userCountry: Z, userLanguage: R, viewerUser: L, withActions: U, withCommunityModerationAuthority: H, withHideReply: N, withInlineMedia: z, withSocialContext: F } = this.props;
+                    const { analytics: e, contextTweet: t, feedbackItems: o, forwardPivotInfo: i, hasModeratedReplies: d, history: l, innerForwardPivotInfo: s, innerNudges: c, isActiveCreator: u, isNsfwUser: h, isPinned: b, location: p, nudges: m, onTweetDismiss: D, promotedContent: C, promotedContentAdvertiser: A, quoteTweetSocialContextProps: g, quotedTweetTombstoneInfo: S, readerModeAvailable: v, replyBadge: y, replyContext: M, rootTweetAuthorId: k, showReplyFilterInlineCallout: I, socialContext: T, socialContextColor: x, topic: B, topicFollowPrompt: E, tweet: P, userCountry: Z, userLanguage: R, viewerUser: L, withActions: U, withCommunityModerationAuthority: H, withHideReply: N, withInlineMedia: z, withSocialContext: F } = this.props;
                     if (!P) return null;
                     const { viewerUserId: O } = this.context,
                         { enableKeyboardShortcuts: V } = this.state,
                         W = r.Z.getOriginalTweet(P),
-                        q = { contextTweet: t, enableKeyboardShortcuts: V, forwardPivotInfo: i, hasModeratedReplies: d, handleReplyFilterInlineCalloutImpression: this._handleReplyFilterInlineCalloutImpression, showReplyFilterInlineCallout: I, innerForwardPivotInfo: s, viewerUser: L, promotedContent: C, promotedContentAdvertiser: A, quotedTweetTombstoneInfo: S, quoteTweetSocialContextProps: g, readerModeAvailable: v, socialContext: T, socialContextColor: B, topic: x, topicFollowPrompt: E, tweet: P, replyBadge: y, replyContext: M, rootTweetAuthorId: k, withActions: U, withAltTextBadge: !0, withInlineMedia: z, withSocialContext: F, nudges: m, innerNudges: c },
+                        q = { contextTweet: t, enableKeyboardShortcuts: V, forwardPivotInfo: i, hasModeratedReplies: d, handleReplyFilterInlineCalloutImpression: this._handleReplyFilterInlineCalloutImpression, showReplyFilterInlineCallout: I, innerForwardPivotInfo: s, viewerUser: L, promotedContent: C, promotedContentAdvertiser: A, quotedTweetTombstoneInfo: S, quoteTweetSocialContextProps: g, readerModeAvailable: v, socialContext: T, socialContextColor: x, topic: B, topicFollowPrompt: E, tweet: P, replyBadge: y, replyContext: M, rootTweetAuthorId: k, withActions: U, withAltTextBadge: !0, withInlineMedia: z, withSocialContext: F, nudges: m, innerNudges: c },
                         K = W.user.id_str === O,
                         $ = !W.in_reply_to_status_id_str && K && !W.community_id_str,
                         Q = this._renderConversationControlsTooltip();
@@ -787,9 +786,9 @@
                 }
             }
             Le.contextType = P.rC;
-            const Ue = (0, x.ZP)(Se(Le)),
-                He = (0, B.Z)(Ue),
-                Ne = (0, B.Z)(Ue, { component: "tweet" });
+            const Ue = (0, B.ZP)(Se(Le)),
+                He = (0, x.Z)(Ue),
+                Ne = (0, x.Z)(Ue, { component: "tweet" });
         },
         886404: (e, t, o) => {
             o.d(t, { c_: () => l, lm: () => s, n6: () => d });
@@ -1024,4 +1023,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.inlineTombstoneHandler~loader.tweetHandler.5f009e6a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.inlineTombstoneHandler~loader.tweetHandler.7fbe5caa.js.map

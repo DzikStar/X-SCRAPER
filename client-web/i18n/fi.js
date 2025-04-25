@@ -313,7 +313,7 @@
                 e("da8c5244", "Premium-tilastot antavat käyttöösi älykästä dataa seuraajamääräsi kasvattamista varten."),
                 e("b081baea", "Jäät paitsi älykkäästä datasta!"),
                 e("d5effffc", "Lisää merkki"),
-                e("f1dd86b0", "Varmenna yrityksesi"),
+                e("c3653d44", "Varmenna yrityksesi"),
                 e("e8070e70", "Kokeile Premium"),
                 e("ec42820e", "Haluatko, että useampi näkee vastauksesi?"),
                 e("b0a95418", "Premium-käyttäjänä saat tehostuksen vastauksillesi"),
@@ -13250,4 +13250,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.4ea1a99a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.0268ae7a.js.map

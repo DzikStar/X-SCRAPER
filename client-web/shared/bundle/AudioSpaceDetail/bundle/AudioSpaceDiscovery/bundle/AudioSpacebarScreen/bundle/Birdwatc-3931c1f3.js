@@ -1,9 +1,9 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-4b805c4b"],
+    ["shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-3931c1f3"],
     {
         907490: (r, a, g) => {
-            g.d(a, { r: () => s });
+            g.d(a, { r: () => c });
             var o = g(122883);
             const b = {
                     black: { "": "rgba(0, 0, 0, var(--jbgo))" },
@@ -52,6 +52,7 @@
                     for (let r = 0; r < 105; r += 5) n(`opacity-${r}`, (a) => (a.opacity = "" + r / 100)), n(`bg-opacity-${r}`, (a) => (a["--jbgo"] = "" + r / 100)), n(`border-opacity-${r}`, (a) => (a["--jbo"] = "" + r / 100));
                     for (const r of [
                         ["-none", 0],
+                        ["-xs", 0.5],
                         ["-sm", 1],
                         ["", 2],
                         ["-md", 4],
@@ -246,11 +247,11 @@
                     return r in v ? `${v[r]} {.j${a.toString(36)}${r}{${j(g)}}}` : `.j${a.toString(36)}${r}{${j(g)}}`;
                 },
                 l = new Set(),
-                c = new Set();
-            function s(r, a) {
+                s = new Set();
+            function c(r, a) {
                 const g = a.map((a) => `${r}:${a}`);
                 let o = !1;
-                for (const r of g) c.has(r) || (l.add(r), (o = !0));
+                for (const r of g) s.has(r) || (l.add(r), (o = !0));
                 o &&
                     queueMicrotask(() => {
                         if (!l.size) return;
@@ -262,54 +263,161 @@
                             })
                             .join("")),
                             document.head.appendChild(r),
-                            l.forEach((r) => c.add(r)),
+                            l.forEach((r) => s.add(r)),
                             l.clear();
                     });
             }
             new Set(), new Set();
         },
         705156: (r, a, g) => {
-            g.d(a, { O: () => E });
-            var o = g(960546),
-                b = g(655419),
-                e = g(736938),
-                t = g(110972),
-                n = g(897531),
-                i = g(418041),
-                v = g(754732),
-                j = g(298490),
-                d = g(584363),
-                l = g(514378),
-                c = g(825770),
-                s = g(608594),
-                m = g(96675),
-                f = g(324212),
-                u = g(379265),
-                p = g(447763),
-                h = g(553366),
-                $ = g(257573),
-                Z = g(969517),
-                w = g(547645),
-                x = g(229476),
-                k = g(849957),
-                y = g(128069),
-                S = g(475122),
-                C = g(978476),
-                I = g(139466),
-                F = g(353151),
-                P = g(940877),
-                R = g(88214),
-                T = g(272403),
-                V = g(26296),
-                A = g(472036),
-                O = g(400441),
-                G = g(575581),
-                M = g(696281),
-                z = g(771017),
-                B = g(122883);
-            const _ = { ActionResponder: $.Z, AdaptiveView: $.Z, Button: b.Z, ContextMenu: $.Z, Counter: e.Z, Cover: t.Z, DebugProps: $.Z, Divider: $.Z, Ellipse: $.Z, Feed: n.Z, "Feed.Item": $.Z, FeedPage: $.Z, FocusImage: $.Z, Form: i.Z, "Form.AsYouType": $.Z, "Form.Group": $.Z, "Form.Group.Reset": $.Z, "Form.GroupCounter": $.Z, "Form.Reset": $.Z, "Form.Result": $.Z, "Form.Selection": $.Z, "Form.Submit": $.Z, GlassMorphicView: $.Z, Grid: v.Z, "Grid.Cell": j.Z, "Grid.Row": d.Z, HScroller: l.Z, HStack: c.Z, Icon: s.C, If: m.Z, Image: f.Z, Input: $.Z, "Input.Checkbox": $.Z, "Input.Code": $.Z, "Input.Option": $.Z, "Input.Phone": $.Z, "Input.Reset": $.Z, "Input.Select": $.Z, Label: $.Z, Link: u.Z, List: p.Z, List2: o.Z, Markdown: $.Z, Menu: $.Z, Nav: h.Z, Overlay: $.Z, Page: Z.Z, "Page.Section": $.Z, Pager: w.Z, ParticleChaos: $.Z, Popover: x.Z, Rect: $.Z, Remote: k.Z, RichText: y.Z, ShareLink: S.Z, Sheet: z.Z, SignInWithAppleButton: $.Z, SignupArkoseSecurityChallenge: $.Z, Space: C.Z, Spinner: $.Z, StoryPager: P.Z, "StoryPager.Element": F.Z, "StoryPager.Story": I.Z, Text: R.Z, TiledView: $.Z, Time: T.Z, Timer: $.Z, TournamentBracket: $.Z, VScroller: O.Z, VStack: G.Z, Video: V.Z, View: A.Z, XClipAppStoreOverlay: $.Z, ZStack: M.Z, Zoomable: $.Z, "x.com.Broadcast": $.Z, "x.com.GenericURT": $.Z, "x.com.ImmersiveVideo": $.Z, "x.com.Video": $.Z, "x.com.WebView": $.Z },
-                D = new Map(Object.entries(_).map(([r, a]) => [(0, B.$3)(r), a])),
-                E = (r) => D.get(r.type) ?? $.Z;
+            g.d(a, { O: () => U });
+            var o = g(552322),
+                b = g(960546),
+                e = g(655419),
+                t = g(736938),
+                n = g(110972),
+                i = g(897531),
+                v = g(746066),
+                j = g(173590),
+                d = g(261925),
+                l = g(22588),
+                s = g(166490),
+                c = g(161276),
+                m = g(399762),
+                u = g(723395),
+                f = g(140682),
+                h = g(315111),
+                p = g(971668),
+                x = g(790119),
+                $ = g(550932),
+                w = g(514378),
+                k = g(608594),
+                Z = g(96675),
+                y = g(324212),
+                S = g(379265),
+                C = g(447763),
+                I = g(553366),
+                R = g(969517),
+                F = g(547645),
+                O = g(229476),
+                P = g(849957),
+                T = g(128069),
+                V = g(475122),
+                A = g(771017),
+                z = g(315198),
+                N = g(139466),
+                E = g(353151),
+                G = g(314672),
+                L = g(88214),
+                M = g(272403),
+                B = g(64614),
+                D = g(26296),
+                _ = g(472036),
+                W = g(400441),
+                q = g(696281),
+                H = g(122883);
+            const Y = {
+                    ActionResponder: v.Z,
+                    AdaptiveView: rr,
+                    Button: e.Z,
+                    ContextMenu: rr,
+                    Counter: t.Z,
+                    Cover: n.Z,
+                    DebugProps: rr,
+                    Divider: ar,
+                    Ellipse: ar,
+                    Feed: i.Z,
+                    "Feed.Item": rr,
+                    FeedPage: function ({ el: r }) {
+                        return (0, o.jsx)(X, { el: r, desc: "not for render - sth went wrong" });
+                    },
+                    FocusImage: K,
+                    Form: j.Z,
+                    "Form.AsYouType": K,
+                    "Form.Group": rr,
+                    "Form.Group.Reset": rr,
+                    "Form.GroupCounter": K,
+                    "Form.Reset": rr,
+                    "Form.Result": ar,
+                    "Form.Selection": d.Z,
+                    "Form.Submit": l.Z,
+                    GlassMorphicView: K,
+                    Grid: p.Z,
+                    "Grid.Cell": x.Z,
+                    "Grid.Row": $.Z,
+                    HScroller: w.Z,
+                    HStack: ar,
+                    Icon: k.C,
+                    If: Z.Z,
+                    Image: y.Z,
+                    Input: s.Z,
+                    "Input.Checkbox": c.Z,
+                    "Input.Code": m.Z,
+                    "Input.Option": u.Z,
+                    "Input.Phone": f.Z,
+                    "Input.Reset": rr,
+                    "Input.Select": h.Z,
+                    Label: K,
+                    Link: S.Z,
+                    List: C.Z,
+                    List2: b.Z,
+                    Markdown: K,
+                    Menu: K,
+                    Nav: I.Z,
+                    Overlay: rr,
+                    Page: R.Z,
+                    "Page.Section": R.Z,
+                    Pager: F.Z,
+                    ParticleChaos: K,
+                    Popover: O.Z,
+                    Rect: ar,
+                    Remote: P.Z,
+                    RichText: T.Z,
+                    ShareLink: V.Z,
+                    Sheet: A.Z,
+                    SignInWithAppleButton: K,
+                    SignupArkoseSecurityChallenge: gr,
+                    Space: ar,
+                    Spinner: z.Z,
+                    StoryPager: G.Z,
+                    "StoryPager.Element": E.Z,
+                    "StoryPager.Story": N.Z,
+                    Text: L.Z,
+                    TiledView: K,
+                    Time: M.Z,
+                    Timer: B.Z,
+                    TournamentBracket: K,
+                    VScroller: W.Z,
+                    VStack: ar,
+                    Video: D.Z,
+                    View: _.Z,
+                    XClipAppStoreOverlay: rr,
+                    ZStack: q.Z,
+                    Zoomable: K,
+                    "x.com.Broadcast": K,
+                    "x.com.GenericURT": gr,
+                    "x.com.ImmersiveVideo": K,
+                    "x.com.Video": gr,
+                    "x.com.WebView": K,
+                },
+                J = new Map(Object.entries(Y).map(([r, a]) => [(0, H.$3)(r), a])),
+                Q = new Map(Object.entries(Y).map(([r]) => [(0, H.$3)(r), r])),
+                U = (r) => J.get(r.type) ?? K;
+            function X({ el: r, desc: a = "not found - fix it" }) {
+                return (0, o.jsxs)("h3", { children: ["[", Q.get(r.type) ?? r.type, "]:", a] });
+            }
+            function K({ el: r }) {
+                return (0, o.jsx)(X, { el: r });
+            }
+            function rr({ el: r }) {
+                return (0, o.jsx)(X, { el: r });
+            }
+            function ar({ el: r }) {
+                return (0, o.jsx)(X, { el: r, desc: "deprecated - remove it" });
+            }
+            function gr({ el: r }) {
+                return (0, o.jsx)(X, { el: r, desc: "should be in web - implement it." });
+            }
         },
         869593: (r, a, g) => {
             g.d(a, { QI: () => t, h8: () => e });
@@ -339,6 +447,26 @@
             }
             g.d(a, { e: () => o });
         },
+        113158: (r, a, g) => {
+            function o() {}
+            g.d(a, { Z: () => o });
+        },
+        326762: (r, a, g) => {
+            g.d(a, { Z: () => b });
+            var o = g(202784);
+            function b(r, a) {
+                const g = (0, o.useRef)(r);
+                (0, o.useEffect)(() => {
+                    g.current = r;
+                }, [r]),
+                    (0, o.useEffect)(() => {
+                        const r = setInterval(() => {
+                            g.current();
+                        }, a);
+                        return () => clearInterval(r);
+                    }, [a]);
+            }
+        },
         910352: (r, a, g) => {
             g.d(a, { Z: () => b });
             var o = g(202784);
@@ -347,6 +475,23 @@
                 return (a.current = r), (0, o.useCallback)((...r) => a.current(...r), []);
             };
         },
+        193686: (r, a, g) => {
+            g.d(a, { P: () => e });
+            var o = g(552322),
+                b = g(840489);
+            function e({ animating: r = !0, color: a = "primary", size: g = "small" }) {
+                return (0, o.jsx)("div", { className: "flex w-full items-center justify-center", children: (0, o.jsx)("div", { className: (0, b.Z)("animate-spin", !r && "pause", { "h-3 w-3": "xSmall" === g, "h-5 w-5": "small" === g, "h-9 w-9": "large" === g }), children: (0, o.jsxs)("svg", { height: "100%", viewBox: "0 0 32 32", width: "100%", children: [(0, o.jsx)("circle", { className: (0, b.Z)("opacity-20", { "stroke-background": "background" === a, "stroke-primary": "primary" === a, "stroke-text": "text" === a }), cx: "16", cy: "16", fill: "none", r: "14", strokeWidth: "4" }), (0, o.jsx)("circle", { className: (0, b.Z)({ "stroke-background": "background" === a, "stroke-primary": "primary" === a, "stroke-text": "text" === a }), cx: "16", cy: "16", fill: "none", r: "14", strokeDasharray: "80", strokeDashoffset: 60, strokeWidth: "4" })] }) }) });
+            }
+        },
+        437712: (r, a, g) => {
+            g.d(a, { J: () => t });
+            var o = g(552322),
+                b = g(927382);
+            const e = (0, g(110929).j)("bg-background z-50 overflow-hidden shadow-md outline-none", { variants: { borderRadius: { "2xLarge": "rounded-2xl", "3xLarge": "rounded-3xl", full: "rounded-full", large: "rounded-lg", medium: "rounded-md", none: "rounded-none", small: "rounded-sm", xLarge: "rounded-xl", true: "rounded" } } });
+            function t({ borderRadius: r = "medium", children: a, open: g, onOpenChange: t, trigger: n, withArrow: i, ...v }) {
+                return (0, o.jsxs)(b.fC, { open: g, onOpenChange: t, children: [(0, o.jsx)(b.xz, { asChild: !0, children: n }), (0, o.jsx)(b.h_, { children: (0, o.jsxs)(b.VY, { ...v, className: e({ borderRadius: r }), children: [a, i && (0, o.jsx)(b.Eh, { className: "fill-background" })] }) })] });
+            }
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-4b805c4b.04f3aeaa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-3931c1f3.141292ca.js.map

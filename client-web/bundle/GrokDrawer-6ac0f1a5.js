@@ -3,7 +3,7 @@
     ["bundle.GrokDrawer-6ac0f1a5"],
     {
         448781: (e, a, n) => {
-            n.d(a, { XD: () => S, ZP: () => C, eK: () => y, p9: () => w, pB: () => g, yF: () => A, z_: () => k });
+            n.d(a, { XD: () => S, ZP: () => C, eK: () => y, p9: () => w, pB: () => A, yF: () => g, z_: () => k });
             var d = n(202784),
                 o = n(214997),
                 r = n(325686),
@@ -20,13 +20,13 @@
                 D = u().f388a7ec,
                 f = u().ab1eb384,
                 S = "DeepSearch",
-                A = u().i330e54c,
-                g = "default",
+                g = u().i330e54c,
+                A = "default",
                 w = "DeeperSearch",
                 y = u().ac64b674,
                 k = "deeper",
                 v = [
-                    { label: S, description: A, value: g },
+                    { label: S, description: g, value: A },
                     { label: w, description: y, value: k },
                 ],
                 M = s.default.create((e) => ({ container: { flex: 1 }, scrollView: { flex: 1 }, contentContainerScrollView: { display: "flex", flexDirection: "column", gap: e.spaces.space12, paddingHorizontal: e.spaces.space24 }, compactContentContainerScrollView: { gap: e.spaces.space8, paddingVertical: e.spaces.space16 }, title: { fontSize: e.fontSizes.headline2 }, subtitle: { color: e.colors.gray700 }, section: { marginTop: e.spaces.space8, gap: e.spaces.space12 }, buttonContainer: { display: "flex", width: "100%", flexDirection: "row", justifyContent: "flex-end", padding: e.spaces.space24 }, compactButtonContainer: { justifyContent: "center" }, resetToDefaultButton: {} })),
@@ -37,7 +37,7 @@
                         u = e && !a,
                         S = d.useCallback(
                             (e, a) => {
-                                if ((c.scribe({ action: "change", component: "grok-deepsearch-mode", element: a }), a === g))
+                                if ((c.scribe({ action: "change", component: "grok-deepsearch-mode", element: a }), a === A))
                                     if (n) {
                                         const e = { ...n };
                                         delete e.deepsearchArgs, s(e);
@@ -58,7 +58,7 @@
                                 {
                                     borderColor: "transparent",
                                     color: "gray900",
-                                    disabled: !n?.deepsearchArgs?.mode || n?.deepsearchArgs?.mode === g,
+                                    disabled: !n?.deepsearchArgs?.mode || n?.deepsearchArgs?.mode === A,
                                     onClick: () => {
                                         S("", v[0].value);
                                     },
@@ -92,13 +92,13 @@
                         { advancedSettings: n, selectedGrokModeButton: D } = a,
                         { isGrokDrawer: f } = (0, h.ZP)(),
                         S = (0, c.I0)(),
-                        A = (() => {
+                        g = (() => {
                             const e = (0, c.oR)(),
                                 a = (0, u.F9)(e.getState()),
                                 { layout: n } = (0, b.Z)();
                             return d.useMemo(() => (n && n?.mode_buttons.filter((e) => (e.supported_models || []).includes(a))) || [], [n, a]);
                         })(),
-                        g = (() => {
+                        A = (() => {
                             const { userClaims: e } = (0, i.QZ)(),
                                 a = e.isAnyPremiumSubscriber();
                             let n = "free_status";
@@ -143,17 +143,17 @@
                             _(null);
                         }, [_]),
                         P = d.useCallback(() => {
-                            const e = A.find((e) => "Research" === e.filter_key);
+                            const e = g.find((e) => "Research" === e.filter_key);
                             e && _(e);
-                        }, [A, _]),
+                        }, [g, _]),
                         G = d.useCallback(() => {
-                            const e = A.find((e) => "Reasoning" === e.filter_key);
+                            const e = g.find((e) => "Reasoning" === e.filter_key);
                             e && _(e);
-                        }, [A, _]),
+                        }, [g, _]),
                         R = d.useCallback(() => {
-                            const e = A.find((e) => "ImageEdit" === e.filter_key);
+                            const e = g.find((e) => "ImageEdit" === e.filter_key);
                             e && _(e);
-                        }, [A, _]),
+                        }, [g, _]),
                         T = (0, r.Mv)(),
                         x = null === D,
                         Z = null !== D,
@@ -167,9 +167,9 @@
                         J = (N && !v) || (L && !M);
                     return (
                         d.useEffect(() => {
-                            A.every((e) => "Hidden" === e[g]) || A.length <= 0 ? B() : y && ("Research" !== y || N ? ("Reasoning" !== y || L ? "ImageEdit" !== y || O || R() : G()) : P(), k(""));
-                        }, [A, g, B, O, L, N, y, P, R, G]),
-                        { grokInput: a, selectMode: _, setFocused: I, isResearchEnabled: N, isReasoningEnabled: L, isImageEditEnabled: O, isDefault: x, isInputFocused: F, hasSelectedInputMode: Z, isInputMobileSize: W, isInputMobile: H, isInputCompact: z, grokModeButtons: A, grokModeButtonStatusKey: g, selectedGrokModeButton: D, isFileInputDisabled: J, setAdvancedSettings: E, advancedSettings: n, grokModeButtonOverrides: w, selectDeepsearchMode: P, selectReasoningMode: G, selectImageEditMode: R, clearMode: B, setPendingModeButtonFilterKey: k }
+                            g.every((e) => "Hidden" === e[A]) || g.length <= 0 ? B() : y && ("Research" !== y || N ? ("Reasoning" !== y || L ? "ImageEdit" !== y || O || R() : G()) : P(), k(""));
+                        }, [g, A, B, O, L, N, y, P, R, G]),
+                        { grokInput: a, selectMode: _, setFocused: I, isResearchEnabled: N, isReasoningEnabled: L, isImageEditEnabled: O, isDefault: x, isInputFocused: F, hasSelectedInputMode: Z, isInputMobileSize: W, isInputMobile: H, isInputCompact: z, grokModeButtons: g, grokModeButtonStatusKey: A, selectedGrokModeButton: D, isFileInputDisabled: J, setAdvancedSettings: E, advancedSettings: n, grokModeButtonOverrides: w, selectDeepsearchMode: P, selectReasoningMode: G, selectImageEditMode: R, clearMode: B, setPendingModeButtonFilterKey: k }
                     );
                 };
         },
@@ -203,8 +203,8 @@
                 D = n(551864),
                 f = n(537392),
                 S = n(78882);
-            var A = n(530732),
-                g = n(786998),
+            var g = n(530732),
+                A = n(786998),
                 w = n(392237),
                 y = n(457566),
                 k = n(725405),
@@ -272,9 +272,9 @@
                     r.Z,
                     { ref: a, style: [ee.headerRoot, !d && ee.headerBorderClosed, ee.cursor], testID: C.header },
                     d
-                        ? o.createElement(g.Z, { onMiddleControlClick: l, rightControl: o.createElement(Y, { conversationUrl: e, handleToggleVisibility: l, isExpanded: d, onClose: i }), style: ee.roundedAppBarCorners, title: o.createElement(r.Z, { style: ee.titleContainer }, o.createElement(y.x1, null), o.createElement(L, null)) })
+                        ? o.createElement(A.Z, { onMiddleControlClick: l, rightControl: o.createElement(Y, { conversationUrl: e, handleToggleVisibility: l, isExpanded: d, onClose: i }), style: ee.roundedAppBarCorners, title: o.createElement(r.Z, { style: ee.titleContainer }, o.createElement(y.x1, null), o.createElement(L, null)) })
                         : o.createElement(
-                              A.Z,
+                              g.Z,
                               {
                                   onPress: () => {
                                       s.scribe({ element: "grok-bubble", action: "click" }), l();
@@ -366,17 +366,16 @@
                         n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8d854c2e"),
                         n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-aaf38a28"),
                         n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-aeee0c9e"),
+                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2652b27c"),
                         n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-da0e99d8"),
-                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-4b805c4b"),
+                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-3931c1f3"),
                         n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-c377d397"),
-                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8c219810"),
-                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-9b4c2397"),
-                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-c2fdd616"),
-                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-70774d80"),
-                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-92c1aea7"),
-                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8767a721"),
-                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-d5c922ba"),
-                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-e9891f16"),
+                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-e4b9a405"),
+                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-f17e8d44"),
+                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-f39972b2"),
+                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-568e95f0"),
+                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1895c9ee"),
+                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8fe22a9e"),
                         n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-0a8205ef"),
                         n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-5719ea67"),
                         n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1b6af858"),
@@ -478,13 +477,13 @@
             function de({ width: e }) {
                 const a = (0, u.cm)(),
                     [n, l] = o.useState(0),
-                    A =
-                        ((g = n),
+                    g =
+                        ((A = n),
                         (0, f.Zx)(({ windowHeight: e }) => {
-                            const a = S.I2.find((a) => g <= Math.ceil(e * a));
-                            return a ? e * Math.max(a, 0.5) : Math.min(g, Math.ceil(S.T6 * e));
+                            const a = S.I2.find((a) => A <= Math.ceil(e * a));
+                            return a ? e * Math.max(a, 0.5) : Math.min(A, Math.ceil(S.T6 * e));
                         }));
-                var g;
+                var A;
                 const w = (0, m.v9)((e) => p.kX(e)),
                     y = w === D.j.EXPANDED,
                     k = w === D.j.CLOSED;
@@ -502,7 +501,7 @@
                         },
                         [l],
                     ),
-                    M = o.useMemo(() => [S.ZP.allowPointer, S.ZP.main, y ? { minHeight: A, maxWidth: null } : S.ZP.collapsedSmall], [y, A]);
+                    M = o.useMemo(() => [S.ZP.allowPointer, S.ZP.main, y ? { minHeight: g, maxWidth: null } : S.ZP.collapsedSmall], [y, g]);
                 return (function () {
                     const e = (0, t.useHistory)(),
                         a = e.getLastNonModalLocationPathname() ?? e.location.pathname;
@@ -550,8 +549,8 @@
                     r = (0, s.v9)(a.selectCanClearConversation),
                     { access: t, changeMode: D, mode: f } = (0, h.ZP)(),
                     { clearMode: S } = (0, u.w)(),
-                    A = !1 !== t,
-                    g = (0, i.z)(),
+                    g = !1 !== t,
+                    A = (0, i.z)(),
                     w = (0, o.useLocation)(),
                     y = d.useCallback(() => {
                         const d = new URLSearchParams(w.search),
@@ -567,34 +566,34 @@
                               : n.goBack();
                     }, [r, e, a, n, w.search]),
                     k = d.useCallback(() => {
-                        r && (e(a.clearConversation()), n.push("/i/grok"), (0, b.ZY)(g), S());
-                    }, [g, r, e, a, n, S]),
+                        r && (e(a.clearConversation()), n.push("/i/grok"), (0, b.ZY)(A), S());
+                    }, [A, r, e, a, n, S]),
                     v = d.useCallback(() => {
-                        r && (e(a.clearConversation()), (0, b.ZY)(g), S());
-                    }, [g, r, e, a, S]),
+                        r && (e(a.clearConversation()), (0, b.ZY)(A), S());
+                    }, [A, r, e, a, S]),
                     M = d.useCallback(
                         (e) => {
                             const a = [
                                 {
                                     disabled: f === c.IK.REGULAR,
                                     onClick: function () {
-                                        D(c.IK.REGULAR, g);
+                                        D(c.IK.REGULAR, A);
                                     },
                                     text: p,
                                 },
                                 {
                                     disabled: f === c.IK.FUN,
                                     onClick: function () {
-                                        D(c.IK.FUN, g);
+                                        D(c.IK.FUN, A);
                                     },
                                     text: m,
                                 },
                             ];
                             return d.createElement(l.default, { actionItems: a, onClose: e });
                         },
-                        [g, f, D],
+                        [A, f, D],
                     );
-                return { canClearConversation: r, handleBackClick: y, handleClearConversationClick: k, handleClearConversationClickWithoutNav: v, isEligible: A, renderActionsMenu: M };
+                return { canClearConversation: r, handleBackClick: y, handleClearConversationClick: k, handleClearConversationClickWithoutNav: v, isEligible: g, renderActionsMenu: M };
             }
         },
         654917: (e, a, n) => {
@@ -630,8 +629,8 @@
                     D = (0, s.v9)(n.selectFetchConversationIdError),
                     f = (0, s.v9)(n.selectMode),
                     S = (0, s.v9)(n.selectStatus),
-                    A = (0, s.v9)(c.Pt),
-                    g = (0, s.v9)(n.selectConversationId),
+                    g = (0, s.v9)(c.Pt),
+                    A = (0, s.v9)(n.selectConversationId),
                     w = (0, s.v9)(c.pZ),
                     y = (0, s.v9)(c.uF),
                     k = (0, s.v9)(c.F9),
@@ -652,7 +651,7 @@
                         },
                         [t, f, k],
                     );
-                return { messageIds: o, access: C, status: S, grokSettingsStatus: A, conversationKey: a, conversationId: g, analysisEntityId: v, accessRestrictedReasons: w, fetchConversationIdStatus: p, fetchConversationIdError: D, mode: f, model: k, changeMode: E, changeModel: _, usingExperiment: M };
+                return { messageIds: o, access: C, status: S, grokSettingsStatus: g, conversationKey: a, conversationId: A, analysisEntityId: v, accessRestrictedReasons: w, fetchConversationIdStatus: p, fetchConversationIdError: D, mode: f, model: k, changeMode: E, changeModel: _, usingExperiment: M };
             }
         },
         962379: (e, a, n) => {
@@ -670,7 +669,7 @@
             }
         },
         623494: (e, a, n) => {
-            n.d(a, { DE: () => m, G$: () => l, HO: () => C, HR: () => B, JO: () => f, Jm: () => v, NH: () => P, RC: () => D, S7: () => _, UV: () => R, Uk: () => y, YI: () => c, YW: () => E, ZY: () => p, az: () => i, c3: () => t, dP: () => A, dd: () => h, eS: () => k, eV: () => M, hf: () => S, hq: () => s, kl: () => w, mm: () => b, op: () => g, pv: () => r, qQ: () => x, u1: () => I, y6: () => u, zC: () => G, zX: () => T });
+            n.d(a, { DE: () => m, G$: () => l, HO: () => C, HR: () => B, JO: () => f, Jm: () => v, NH: () => P, RC: () => D, S7: () => _, UV: () => R, Uk: () => y, YI: () => c, YW: () => E, ZY: () => p, az: () => i, c3: () => t, dP: () => g, dd: () => h, eS: () => k, eV: () => M, hf: () => S, hq: () => s, kl: () => w, mm: () => b, op: () => A, pv: () => r, qQ: () => x, u1: () => I, y6: () => u, zC: () => G, zX: () => T });
             var d = n(163889);
             function o() {
                 return `online:${window.navigator.onLine}|effectiveType:${window.navigator.connection?.effectiveType ?? "unknown"}`;
@@ -717,10 +716,10 @@
             function S(e, a) {
                 Z(e)({ element: "tweet-carousel", action: "change", data: { event_info: a.toString() } });
             }
-            function A(e, a) {
+            function g(e, a) {
                 Z(e)({ element: "file-attachment", action: "add", data: { event_info: a } });
             }
-            function g(e, a) {
+            function A(e, a) {
                 Z(e)({ element: "file-attachment", action: "fail", data: { event_info: a } });
             }
             function w(e, a, n) {
@@ -774,4 +773,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.GrokDrawer-6ac0f1a5.4afbe9aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.GrokDrawer-6ac0f1a5.b60afb4a.js.map

@@ -2,217 +2,217 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-aaf38a28"],
     {
-        154462: (e, t, r) => {
-            var o = r(634590);
+        154462: (e, t, a) => {
+            var i = a(634590);
             t.ZP = void 0;
-            var n = r(526);
+            var n = a(526);
             t.S_ = n.updateAudioLevels;
-            var s = r(790978);
-            t.eu = s.updateGuestInfo;
-            var i = o(r(187632));
-            (t.$4 = i.default), (t.mC = i.registerExperience);
-            var a = o(r(427193));
-            (t.Nu = a.resetGuestState), (t.Nt = a.teardownExperience);
-            var l = a.default;
-            t.ZP = l;
+            var r = a(790978);
+            t.eu = r.updateGuestInfo;
+            var o = i(a(187632));
+            (t.$4 = o.default), (t.mC = o.registerExperience);
+            var l = i(a(427193));
+            (t.Nu = l.resetGuestState), (t.Nt = l.teardownExperience);
+            var s = l.default;
+            t.ZP = s;
         },
-        526: (e, t, r) => {
-            r(332501), r(43105), (t.__esModule = !0), (t.default = t.InitialState = t.updateAudioLevels = t.UPDATE_AUDIO_LEVELS = void 0);
-            var o = "UPDATE_AUDIO_LEVELS";
-            t.UPDATE_AUDIO_LEVELS = o;
+        526: (e, t, a) => {
+            a(332501), a(43105), (t.__esModule = !0), (t.default = t.InitialState = t.updateAudioLevels = t.UPDATE_AUDIO_LEVELS = void 0);
+            var i = "UPDATE_AUDIO_LEVELS";
+            t.UPDATE_AUDIO_LEVELS = i;
             t.updateAudioLevels = function (e, t) {
-                return { type: o, audioLevels: t, experienceId: e };
+                return { type: i, audioLevels: t, experienceId: e };
             };
             var n = { guests: {}, host: 0 };
             t.InitialState = n;
             t.default = function (e, t) {
-                if ((void 0 === e && (e = n), t.type === o)) {
-                    for (var r = t.audioLevels, s = r[0], i = r.slice(1), a = {}, l = 0; l < i.length; l++) a[l] = i[l];
-                    return Object.assign({}, e, { guests: a, host: s });
+                if ((void 0 === e && (e = n), t.type === i)) {
+                    for (var a = t.audioLevels, r = a[0], o = a.slice(1), l = {}, s = 0; s < o.length; s++) l[s] = o[s];
+                    return Object.assign({}, e, { guests: l, host: r });
                 }
                 return e;
             };
         },
         790978: (e, t) => {
             (t.__esModule = !0), (t.default = t.updateGuestInfo = t.UPDATE_GUEST_INFO = void 0);
-            var r = "UPDATE_GUEST_INFO";
-            t.UPDATE_GUEST_INFO = r;
+            var a = "UPDATE_GUEST_INFO";
+            t.UPDATE_GUEST_INFO = a;
             t.updateGuestInfo = function (e, t) {
-                return { type: r, guestInfo: t, experienceId: e };
+                return { type: a, guestInfo: t, experienceId: e };
             };
             t.default = function (e, t) {
-                if ((void 0 === e && (e = {}), t.type === r)) {
-                    for (var o = t.guestInfo, n = {}, s = 0; s < o.length; s++) {
-                        var i = o[s],
-                            a = i.ParticipantIndex,
-                            l = i.ProfileUrl,
-                            c = i.SessionId,
-                            u = i.StreamName,
-                            _ = i.UserId,
-                            d = i.UserName;
-                        n[s] = { ParticipantIndex: a, ProfileUrl: l, SessionId: c, StreamName: u, UserId: _, UserName: d };
+                if ((void 0 === e && (e = {}), t.type === a)) {
+                    for (var i = t.guestInfo, n = {}, r = 0; r < i.length; r++) {
+                        var o = i[r],
+                            l = o.ParticipantIndex,
+                            s = o.ProfileUrl,
+                            c = o.SessionId,
+                            d = o.StreamName,
+                            _ = o.UserId,
+                            m = o.UserName;
+                        n[r] = { ParticipantIndex: l, ProfileUrl: s, SessionId: c, StreamName: d, UserId: _, UserName: m };
                     }
                     return n;
                 }
                 return e;
             };
         },
-        187632: (e, t, r) => {
-            var o = r(171600);
-            r(543450), r(271245), r(966466), r(977208), r(334769), (t.__esModule = !0), (t.default = t.registerExperience = t.REGISTER_EXPERIENCE = void 0);
-            var n = o(r(373408)),
-                s = r(427193),
-                i = "REGISTER_EXPERIENCE";
-            t.REGISTER_EXPERIENCE = i;
+        187632: (e, t, a) => {
+            var i = a(171600);
+            a(543450), a(271245), a(966466), a(977208), a(334769), (t.__esModule = !0), (t.default = t.registerExperience = t.REGISTER_EXPERIENCE = void 0);
+            var n = i(a(373408)),
+                r = a(427193),
+                o = "REGISTER_EXPERIENCE";
+            t.REGISTER_EXPERIENCE = o;
             t.registerExperience = function () {
-                return { type: i };
+                return { type: o };
             };
             t.default = function (e) {
                 return function (t) {
-                    return function (r) {
-                        if (r.type === i) {
-                            var o = e.getState(),
-                                a = Object.keys(o.hydraExperiences || {}).map(function (e) {
+                    return function (a) {
+                        if (a.type === o) {
+                            var i = e.getState(),
+                                l = Object.keys(i.hydraExperiences || {}).map(function (e) {
                                     return Number.parseInt(e, 10);
                                 }),
-                                l = Math.max.apply(Math, (0, n.default)(a)) + 1;
-                            return Number.isFinite(l) || (l = 0), e.dispatch((0, s.initializeExperience)(l)), l;
+                                s = Math.max.apply(Math, (0, n.default)(l)) + 1;
+                            return Number.isFinite(s) || (s = 0), e.dispatch((0, r.initializeExperience)(s)), s;
                         }
-                        return t(r);
+                        return t(a);
                     };
                 };
             };
         },
-        427193: (e, t, r) => {
-            var o = r(634590),
-                n = r(171600);
-            r(43105), (t.__esModule = !0), (t.default = t.resetGuestState = t.RESET_GUEST_STATE = t.teardownExperience = t.TEARDOWN_EXPERIENCE = t.initializeExperience = t.INITIALIZE_EXPERIENCE = void 0);
-            var s = r(10674),
-                i = n(r(790978)),
-                a = o(r(526)),
-                l = "INITIALIZE_EXPERIENCE";
-            t.INITIALIZE_EXPERIENCE = l;
+        427193: (e, t, a) => {
+            var i = a(634590),
+                n = a(171600);
+            a(43105), (t.__esModule = !0), (t.default = t.resetGuestState = t.RESET_GUEST_STATE = t.teardownExperience = t.TEARDOWN_EXPERIENCE = t.initializeExperience = t.INITIALIZE_EXPERIENCE = void 0);
+            var r = a(10674),
+                o = n(a(790978)),
+                l = i(a(526)),
+                s = "INITIALIZE_EXPERIENCE";
+            t.INITIALIZE_EXPERIENCE = s;
             t.initializeExperience = function (e) {
-                return { type: l, experienceId: e };
+                return { type: s, experienceId: e };
             };
             var c = "TEARDOWN_EXPERIENCE";
             t.TEARDOWN_EXPERIENCE = c;
             t.teardownExperience = function (e) {
                 return { type: c, experienceId: e };
             };
-            var u = "RESET_GUEST_STATE";
-            t.RESET_GUEST_STATE = u;
+            var d = "RESET_GUEST_STATE";
+            t.RESET_GUEST_STATE = d;
             t.resetGuestState = function (e) {
-                return { type: u, experienceId: e };
+                return { type: d, experienceId: e };
             };
-            var _ = { audioLevels: a.InitialState, guests: {} },
-                d = (0, s.combineReducers)({ audioLevels: a.default, guests: i.default });
-            t.default = function (e, t, r) {
-                var o;
-                if ((void 0 === e && (e = {}), void 0 === r && (r = d), void 0 !== t.experienceId))
+            var _ = { audioLevels: l.InitialState, guests: {} },
+                m = (0, r.combineReducers)({ audioLevels: l.default, guests: o.default });
+            t.default = function (e, t, a) {
+                var i;
+                if ((void 0 === e && (e = {}), void 0 === a && (a = m), void 0 !== t.experienceId))
                     switch (t.type) {
-                        case l:
-                        case u:
-                            return Object.assign({}, e, (((o = {})[t.experienceId] = _), o));
+                        case s:
+                        case d:
+                            return Object.assign({}, e, (((i = {})[t.experienceId] = _), i));
                         case c:
                             var n = Object.assign({}, e);
                             return delete n[t.experienceId], n;
                         default:
-                            var s,
-                                i = r(e[t.experienceId], t);
-                            return Object.assign({}, e, (((s = {})[t.experienceId] = i), s));
+                            var r,
+                                o = a(e[t.experienceId], t);
+                            return Object.assign({}, e, (((r = {})[t.experienceId] = o), r));
                     }
                 return e;
             };
         },
-        10674: (e, t, r) => {
-            r(743108), r(334769), (t.__esModule = !0), (t.combineReducers = void 0);
+        10674: (e, t, a) => {
+            a(743108), a(334769), (t.__esModule = !0), (t.combineReducers = void 0);
             t.combineReducers = function (e) {
-                return function (t, r) {
-                    return Object.keys(e).reduce(function (o, n) {
-                        return (o[n] = e[n](t[n], r)), o;
+                return function (t, a) {
+                    return Object.keys(e).reduce(function (i, n) {
+                        return (i[n] = e[n](t[n], a)), i;
                     }, {});
                 };
             };
         },
-        244448: (e, t, r) => {
-            r.d(t, { GZ: () => n.GZ, mQ: () => o.Z, tJ: () => n.tJ, vz: () => n.vz });
-            var o = r(498348),
-                n = r(122883);
+        244448: (e, t, a) => {
+            a.d(t, { GZ: () => n.GZ, mQ: () => i.Z, tJ: () => n.tJ, vz: () => n.vz });
+            var i = a(498348),
+                n = a(122883);
         },
-        801102: (e, t, r) => {
-            r.d(t, { Z: () => s });
-            var o = r(552322),
-                n = r(109195);
-            function s(e, t) {
-                const r = (function (e) {
+        801102: (e, t, a) => {
+            a.d(t, { Z: () => r });
+            var i = a(552322),
+                n = a(109195);
+            function r(e, t) {
+                const a = (function (e) {
                     return e.children.map((t) => e.dom.el(t));
                 })(e);
-                return r.map((e, r) => (t ? t(e, r) : (0, o.jsx)(n.Z, { el: e }, e.id || `child-${r}`)));
+                return a.map((e, a) => (t ? t(e, a) : (0, i.jsx)(n.Z, { el: e }, e.id || `child-${a}`)));
             }
         },
-        960546: (e, t, r) => {
-            r.d(t, { Z: () => u });
-            var o = r(552322),
-                n = r(202784),
-                s = r(801102),
-                i = r(109195),
-                a = r(244448),
-                l = r(608222),
-                c = r(366665);
-            function u({ el: e, p: t, mods: r }) {
-                const [u, _] = (0, n.useState)(["init"]),
-                    [d, f] = (0, n.useState)(!1),
-                    [m, p] = (0, n.useState)(null),
+        960546: (e, t, a) => {
+            a.d(t, { Z: () => d });
+            var i = a(552322),
+                n = a(202784),
+                r = a(801102),
+                o = a(109195),
+                l = a(244448),
+                s = a(608222),
+                c = a(193686);
+            function d({ el: e, p: t, mods: a }) {
+                const [d, _] = (0, n.useState)(["init"]),
+                    [m, u] = (0, n.useState)(!1),
+                    [p, f] = (0, n.useState)(null),
                     [h, g] = (0, n.useState)(null),
-                    [v, k] = (0, n.useState)({}),
+                    [k, v] = (0, n.useState)({}),
                     b = (0, n.useRef)(null),
                     w = (0, n.useRef)(null),
                     x = (0, n.useRef)(null),
-                    E = t.url("feed") ?? "",
-                    y = t.element("header"),
-                    j = t.element("footer"),
-                    S = t.str("cursor:top"),
-                    N = t.str("cursor:bottom"),
-                    Z = (0, l.o)();
+                    y = t.url("feed") ?? "",
+                    E = t.element("header"),
+                    S = t.element("footer"),
+                    C = t.str("cursor:top"),
+                    j = t.str("cursor:bottom"),
+                    N = (0, s.o)();
                 function I(e, t) {
-                    return (0, o.jsx)("div", { children: (0, o.jsx)(i.Z, { el: e }) }, e.id || `list-item-${t}`);
+                    return (0, i.jsx)("div", { children: (0, i.jsx)(o.Z, { el: e }) }, e.id || `list-item-${t}`);
                 }
                 return (
                     (0, n.useEffect)(() => {
-                        N && p(N), S && g(S);
-                    }, [N, S]),
+                        j && f(j), C && g(C);
+                    }, [j, C]),
                     (0, n.useEffect)(() => {
-                        E &&
-                            Z &&
-                            Z.Runtime &&
-                            (f(!0),
-                            u.forEach(async (e) => {
-                                const t = `${E}${"init" === e ? "" : `&cursor=${e}`}`;
+                        y &&
+                            N &&
+                            N.Runtime &&
+                            (u(!0),
+                            d.forEach(async (e) => {
+                                const t = `${y}${"init" === e ? "" : `&cursor=${e}`}`;
                                 try {
-                                    f(!0);
-                                    const { Runtime: r } = Z;
-                                    if (!r) return;
-                                    const o = (0, a.vz)(r),
-                                        n = o.session(),
-                                        s = await r.net.httpGet(t);
-                                    if ((s.data && n.onChunk(new Uint8Array(s.data)), o.root.value)) {
-                                        const t = (0, a.tJ)(o.root.value).str("cursor:bottom") || "",
-                                            r = (0, a.tJ)(o.root.value).str("cursor:top") || "";
-                                        t && p(t), r && g(r), k((t) => ({ ...t, [e]: o.root.value }));
+                                    u(!0);
+                                    const { Runtime: a } = N;
+                                    if (!a) return;
+                                    const i = (0, l.vz)(a),
+                                        n = i.session(),
+                                        r = await a.net.httpGet(t);
+                                    if ((r.data && n.onChunk(new Uint8Array(r.data)), i.root.value)) {
+                                        const t = (0, l.tJ)(i.root.value).str("cursor:bottom") || "",
+                                            a = (0, l.tJ)(i.root.value).str("cursor:top") || "";
+                                        t && f(t), a && g(a), v((t) => ({ ...t, [e]: i.root.value }));
                                     }
                                 } catch (e) {
                                 } finally {
-                                    f(!1);
+                                    u(!1);
                                 }
                             }));
-                    }, [E, u, Z]),
+                    }, [y, d, N]),
                     (0, n.useEffect)(() => {
                         const e = w.current;
                         if (!e) return;
                         const t = new IntersectionObserver(
                             (e) => {
-                                e[0]?.isIntersecting && !d && m && _((e) => [...e, m]);
+                                e[0]?.isIntersecting && !m && p && _((e) => [...e, p]);
                             },
                             { rootMargin: "200px" },
                         );
@@ -222,7 +222,7 @@
                                 t.disconnect();
                             }
                         );
-                    }, [m, d]),
+                    }, [p, m]),
                     (0, n.useEffect)(() => {
                         const e = x.current;
                         if (!e) return;
@@ -238,112 +238,113 @@
                                 t.disconnect();
                             }
                         );
-                    }, [h, d]),
-                    (0, o.jsxs)("div", {
+                    }, [h, m]),
+                    (0, i.jsxs)("div", {
                         ref: b,
-                        className: `${r}`,
+                        className: `${a}`,
                         children: [
-                            (0, o.jsx)("div", { ref: x, style: { height: "10px", width: "100%" } }),
-                            y && (0, o.jsx)(i.Z, { el: y }),
-                            (0, o.jsx)("div", { className: "list-static-items", children: (0, s.Z)(e, I) }),
-                            !d &&
-                                (0, o.jsx)("div", {
+                            (0, i.jsx)("div", { ref: x, style: { height: "10px", width: "100%" } }),
+                            E && (0, i.jsx)(o.Z, { el: E }),
+                            (0, i.jsx)("div", { className: "list-static-items", children: (0, r.Z)(e, I) }),
+                            !m &&
+                                (0, i.jsx)("div", {
                                     className: "list-feed-items",
-                                    children: u.map((e) => {
-                                        const t = v[e];
-                                        return t ? (0, o.jsx)("div", { className: "feed-page", children: (0, s.Z)(t, I) }, e) : (0, o.jsx)("div", {}, e);
+                                    children: d.map((e) => {
+                                        const t = k[e];
+                                        return t ? (0, i.jsx)("div", { className: "feed-page", children: (0, r.Z)(t, I) }, e) : (0, i.jsx)("div", {}, e);
                                     }),
                                 }),
-                            d && (0, o.jsx)(c.P, {}),
-                            j && (0, o.jsx)(i.Z, { el: j }),
-                            (0, o.jsx)("div", { ref: w, style: { height: "10px", width: "100%" } }),
+                            m && (0, i.jsx)(c.P, {}),
+                            S && (0, i.jsx)(o.Z, { el: S }),
+                            (0, i.jsx)("div", { ref: w, style: { height: "10px", width: "100%" } }),
                         ],
                     })
                 );
             }
         },
-        655419: (e, t, r) => {
-            r.d(t, { Z: () => c });
-            var o = r(552322),
-                n = r(202784),
-                s = r(801102),
-                i = r(608222),
-                a = r(869593);
-            const l = 500;
-            function c({ el: e, p: t, mods: r }) {
+        655419: (e, t, a) => {
+            a.d(t, { Z: () => c });
+            var i = a(552322),
+                n = a(202784),
+                r = a(801102),
+                o = a(608222),
+                l = a(869593);
+            const s = 500;
+            function c({ el: e, p: t, mods: a }) {
                 const c = t.action("on:press"),
-                    u = t.strDict("scribe:press") ?? {},
+                    d = t.strDict("scribe:press") ?? {},
                     _ = t.action("on:longpress"),
-                    d = t.strDict("scribe:longpress") ?? {},
-                    f = t.bool("disabled") ?? !1,
-                    m = (0, a.h8)(),
-                    p = (0, i.o)()?.Analytics,
+                    m = t.strDict("scribe:longpress") ?? {},
+                    u = t.bool("disabled") ?? !1,
+                    p = (0, l.h8)(),
+                    f = (0, o.o)()?.Analytics,
                     h = (0, n.useRef)(null),
                     g = (0, n.useRef)(!1),
-                    v = null != c || null != _,
-                    k = () => {
+                    k = null != c || null != _,
+                    v = () => {
                         if (c) {
                             c();
-                            const e = (0, a.QI)("click", { ...m, ...u });
-                            p?.scribe(e);
+                            const e = (0, l.QI)("click", { ...p, ...d });
+                            f?.scribe(e);
                         }
                     };
-                return (0, o.jsx)("button", {
-                    className: r,
+                return (0, i.jsx)("button", {
+                    className: a,
                     type: "button",
-                    disabled: f,
+                    disabled: u,
                     onPointerDown: (e) => {
-                        v && e.stopPropagation(),
+                        k && e.stopPropagation(),
                             (g.current = !1),
                             clearTimeout(h.current ?? 0),
                             (h.current = window.setTimeout(() => {
                                 (g.current = !0), (h.current = null);
-                            }, l));
+                            }, s));
                     },
                     onPointerUp: (e) => {
-                        v && e.stopPropagation(),
-                            f ||
+                        k && e.stopPropagation(),
+                            u ||
                                 (g.current
                                     ? (() => {
                                           if (_) {
                                               _();
-                                              const e = (0, a.QI)("longpress", { ...m, ...d });
-                                              p?.scribe(e);
+                                              const e = (0, l.QI)("longpress", { ...p, ...m });
+                                              f?.scribe(e);
                                           }
                                       })()
-                                    : k());
+                                    : v());
                     },
                     onKeyDown: (e) => {
-                        v && e.stopPropagation(), f || ("Space" !== e.code && "Enter" !== e.code) || k();
+                        k && e.stopPropagation(), u || ("Space" !== e.code && "Enter" !== e.code) || v();
                     },
-                    children: (0, s.Z)(e),
+                    children: (0, r.Z)(e),
                 });
             }
         },
-        736938: (e, t, r) => {
-            r.d(t, { Z: () => n });
-            var o = r(552322);
+        736938: (e, t, a) => {
+            a.d(t, { Z: () => n });
+            var i = a(552322);
             function n({ p: e, mods: t }) {
-                const r = e.int("count") ?? 0;
-                return (0, o.jsx)("div", { className: t, children: r });
+                const a = e.int("count") ?? 0;
+                return (0, i.jsx)("div", { className: t, children: a });
             }
         },
-        110972: (e, t, r) => {
-            r.d(t, { Z: () => c });
-            var o = r(552322),
-                n = r(801102),
-                s = r(202784),
-                i = r(608222);
-            function a({ showModal: e, setShowModal: t, children: r }) {
-                const n = (0, s.useRef)(null),
-                    [a, l] = (0, s.useState)(!1),
-                    c = (0, i.o)();
-                if (!c) return (0, o.jsx)("div", { children: "Runtime not available" });
-                const { Runtime: u } = c;
-                (0, s.useEffect)(() => {
+        110972: (e, t, a) => {
+            a.d(t, { Z: () => c });
+            var i = a(552322),
+                n = a(202784),
+                r = a(801102),
+                o = a(109195),
+                l = a(608222);
+            function s({ showModal: e, setShowModal: t, children: a }) {
+                const r = (0, n.useRef)(null),
+                    [o, s] = (0, n.useState)(!1),
+                    c = (0, l.o)();
+                if (!c) return (0, i.jsx)("div", { children: "Runtime not available" });
+                const { Runtime: d } = c;
+                (0, n.useEffect)(() => {
                     const e = window.matchMedia("(min-width: 1024px)"),
                         t = (e) => {
-                            l(e.matches);
+                            s(e.matches);
                         };
                     return (
                         t(e),
@@ -353,86 +354,85 @@
                         }
                     );
                 }, []),
-                    (0, s.useEffect)(() => {
-                        e && n.current ? (u.addCover(n.current), n.current.showModal()) : !e && n.current?.open && (n.current.close(), u.removeCover());
-                    }, [e, u.addCover, u.removeCover]);
-                return (0, o.jsx)("dialog", {
-                    ref: n,
+                    (0, n.useEffect)(() => {
+                        e && r.current ? (d.addCover(r.current), r.current.showModal()) : !e && r.current?.open && (r.current.close(), d.removeCover());
+                    }, [e, d.addCover, d.removeCover]);
+                return (0, i.jsx)("dialog", {
+                    ref: r,
                     onClose: () => t(!1),
                     onClick: (e) => {
-                        e.target === n.current && (e.stopPropagation(), n.current?.close(), t(!1));
+                        e.target === r.current && (e.stopPropagation(), r.current?.close(), t(!1));
                     },
-                    style: a ? void 0 : { width: "100%", minWidth: "100vw", minHeight: "100vh", height: "100%" },
+                    style: o ? void 0 : { width: "100%", minWidth: "100vw", minHeight: "100vh", height: "100%" },
                     className: "w-full min-w-screen h-screen w-screen lg:min-w-none rounded-[0.2em] border-none p-0 fixed lg:top-1/2 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 m-0 lg:w-full lg:max-h-full z-[1] bg-transparent backdrop:bg-black/30 motion-safe:animate-fadeIn lg:motion-safe:[&[open]]:animate-zoomIn lg:focus:outline-none lg:max-w-[600px]",
-                    children: (0, o.jsx)("div", { onClick: (e) => e.stopPropagation(), className: "p-4 contents flex-col items-center text-center h-full w-full", children: r }),
+                    children: (0, i.jsx)("div", { onClick: (e) => e.stopPropagation(), className: "p-4 contents flex-col items-center text-center h-full w-full", children: a }),
                 });
             }
-            var l = r(109195);
-            function c({ el: e, p: t, mods: r }) {
-                const [i, c] = (0, s.useState)(!1),
-                    u = t?.element?.("cover");
-                return (0, o.jsxs)(o.Fragment, {
+            function c({ el: e, p: t, mods: a }) {
+                const [l, c] = (0, n.useState)(!1),
+                    d = t.element("cover");
+                return (0, i.jsxs)(i.Fragment, {
                     children: [
-                        (0, o.jsx)("button", {
-                            className: r,
+                        (0, i.jsx)("button", {
+                            className: a,
                             onClick: (e) => {
                                 e.stopPropagation(), c(!0);
                             },
                             type: "button",
-                            children: (0, n.Z)(e),
+                            children: (0, r.Z)(e),
                         }),
-                        u && (0, o.jsx)(a, { showModal: i, setShowModal: c, children: (0, o.jsx)(l.Z, { el: u }) }),
+                        d && (0, i.jsx)(s, { showModal: l, setShowModal: c, children: (0, i.jsx)(o.Z, { el: d }) }),
                     ],
                 });
             }
         },
-        897531: (e, t, r) => {
-            r.d(t, { Z: () => u });
-            var o = r(552322),
-                n = r(202784),
-                s = r(801102),
-                i = r(122883),
-                a = r(608222);
-            const l = () => (0, o.jsx)("div", { children: "Loading..." });
-            function c({ feedSrc: e, onBottomCursor: t, onLoadComplete: r }) {
-                const [c, u] = (0, n.useState)(!0),
-                    [_, d] = (0, n.useState)(null),
-                    [f, m] = (0, n.useState)(null),
-                    p = (0, n.useRef)({}),
-                    h = (0, a.o)();
+        897531: (e, t, a) => {
+            a.d(t, { Z: () => d });
+            var i = a(552322),
+                n = a(202784),
+                r = a(801102),
+                o = a(122883),
+                l = a(608222);
+            const s = () => (0, i.jsx)("div", { children: "Loading..." });
+            function c({ feedSrc: e, onBottomCursor: t, onLoadComplete: a }) {
+                const [c, d] = (0, n.useState)(!0),
+                    [_, m] = (0, n.useState)(null),
+                    [u, p] = (0, n.useState)(null),
+                    f = (0, n.useRef)({}),
+                    h = (0, l.o)();
                 return h && h.Runtime
                     ? ((0, n.useEffect)(() => {
-                          if (p.current[e]) return;
-                          p.current[e] = !0;
-                          const { Runtime: o } = h,
-                              n = (0, i.vz)(o);
+                          if (f.current[e]) return;
+                          f.current[e] = !0;
+                          const { Runtime: i } = h,
+                              n = (0, o.vz)(i);
                           !(async function () {
-                              u(!0);
-                              const s = n.session(),
-                                  a = await o.net.httpGet(e);
-                              if ((a.data && s.onChunk(new Uint8Array(a.data)), m(n.root.value), n.root.value)) {
-                                  const e = (0, i.tJ)(n.root.value).str("cursor:bottom") || "";
+                              d(!0);
+                              const r = n.session(),
+                                  l = await i.net.httpGet(e);
+                              if ((l.data && r.onChunk(new Uint8Array(l.data)), p(n.root.value), n.root.value)) {
+                                  const e = (0, o.tJ)(n.root.value).str("cursor:bottom") || "";
                                   t(e);
                               }
-                              u(!1), r();
+                              d(!1), a();
                           })();
-                      }, [e, t, r, h]),
-                      c ? (0, o.jsx)(l, {}) : _ ? (0, o.jsx)("p", { style: { color: "red" }, children: _.message }) : (0, o.jsx)("div", { className: "contents", children: !f || c || _ ? null : (0, s.Z)(f) }))
-                    : (d(new Error("Runtime not available")), u(!1), void r());
+                      }, [e, t, a, h]),
+                      c ? (0, i.jsx)(s, {}) : _ ? (0, i.jsx)("p", { style: { color: "red" }, children: _.message }) : (0, i.jsx)("div", { className: "contents", children: !u || c || _ ? null : (0, r.Z)(u) }))
+                    : (m(new Error("Runtime not available")), d(!1), void a());
             }
-            function u({ p: e, mods: t }) {
-                const [r, s] = (0, n.useState)(["init"]),
-                    [i, a] = (0, n.useState)(!1),
-                    [l, u] = (0, n.useState)(null),
+            function d({ p: e, mods: t }) {
+                const [a, r] = (0, n.useState)(["init"]),
+                    [o, l] = (0, n.useState)(!1),
+                    [s, d] = (0, n.useState)(null),
                     _ = (0, n.useRef)(null),
-                    d = (0, n.useRef)(null),
-                    f = e?.url?.("src") ?? "";
+                    m = (0, n.useRef)(null),
+                    u = e?.url?.("src") ?? "";
                 (0, n.useEffect)(() => {
-                    const e = d.current;
+                    const e = m.current;
                     if (!e) return;
                     const t = new IntersectionObserver(
                         (e) => {
-                            e[0]?.isIntersecting && !i && l && (a(!0), s((e) => [...e, l]));
+                            e[0]?.isIntersecting && !o && s && (l(!0), r((e) => [...e, s]));
                         },
                         { rootMargin: "200px" },
                     );
@@ -442,183 +442,738 @@
                             t.disconnect();
                         }
                     );
-                }, [l, i]);
-                const m = (e) => {
-                        u(e);
+                }, [s, o]);
+                const p = (e) => {
+                        d(e);
                     },
-                    p = () => {
-                        a(!1);
+                    f = () => {
+                        l(!1);
                     };
-                return (0, o.jsxs)("div", { ref: _, className: `${t}`, children: [r.map((e) => ("" === e ? null : (0, o.jsx)(c, { feedSrc: `${f.startsWith("/") ? "" : "/"}${f}${"init" === e ? "" : `&cursor=${e}`}`, onBottomCursor: m, onLoadComplete: p }, `${e}`))), (0, o.jsx)("div", { ref: d, style: { height: "10px", width: "100%" } })] });
+                return (0, i.jsxs)("div", { ref: _, className: `${t}`, children: [a.map((e) => ("" === e ? null : (0, i.jsx)(c, { feedSrc: `${u.startsWith("/") ? "" : "/"}${u}${"init" === e ? "" : `&cursor=${e}`}`, onBottomCursor: p, onLoadComplete: f }, `${e}`))), (0, i.jsx)("div", { ref: m, style: { height: "10px", width: "100%" } })] });
             }
         },
-        418041: (e, t, r) => {
-            r.d(t, { Z: () => m });
-            var o = r(552322),
-                n = r(202784),
-                s = r(801102),
-                i = r(109195),
-                a = r(122883),
-                l = r(608222),
-                c = r(644109),
-                u = r(916025),
-                _ = r(830030),
-                d = r(910352);
-            const f = (0, n.createContext)({ values: {}, submit: () => {}, setErrors: () => {}, change: (e, t) => {}, errors: {}, setFocus: () => {}, submissionStatus: "pending", submissionResult: void 0, validationStatus: "pending", canSubmit: !1 });
-            (0, n.createContext)({ groupKeys: new Set(), active: new Set(), register: (e) => {} });
-            function m({ el: e, p: t, mods: r }) {
-                const m = (0, l.o)(),
-                    p = t.url("action") ?? "",
+        746066: (e, t, a) => {
+            a.d(t, { Z: () => s });
+            var i = a(202784),
+                n = a(801102),
+                r = a(608222),
+                o = a(910352),
+                l = a(511799);
+            function s({ p: e, el: t }) {
+                const a = (0, r.o)(),
+                    s = e.action("next"),
+                    c = e.strDict("errors"),
+                    { setErrors: d } = (0, i.useContext)(l.q3),
+                    _ = (0, o.Z)((e) => {
+                        s && s(), c && d(c);
+                        const t = (0, n.Z)(e),
+                            i = a?.Runtime?.ui?.toast;
+                        t && t.length > 0 && i && i({ text: t });
+                    });
+                return (
+                    (0, i.useEffect)(() => {
+                        _(t);
+                    }, [t, _]),
+                    null
+                );
+            }
+        },
+        173590: (e, t, a) => {
+            a.d(t, { Z: () => p });
+            var i = a(552322),
+                n = a(202784),
+                r = a(801102),
+                o = a(109195),
+                l = a(122883),
+                s = a(608222),
+                c = a(644109),
+                d = a(916025),
+                _ = a(830030),
+                m = a(910352),
+                u = a(511799);
+            function p({ el: e, p: t, mods: a }) {
+                const p = (0, s.o)(),
+                    f = t.url("action") ?? "",
                     h = t.strDict("errors"),
                     g = t.url("validation"),
-                    v = t.str("submissionStatus") ?? "pending",
-                    [k, b] = (0, n.useState)(() => t.strDict("values") ?? {}),
+                    k = t.str("submissionStatus") ?? "pending",
+                    [v, b] = (0, n.useState)(() => t.strDict("values") ?? {}),
                     [w, x] = (0, n.useState)(),
-                    [E, y] = (0, n.useState)(g ? "ongoing" : "pending"),
-                    j = (0, d.Z)((e) => {
+                    [y, E] = (0, n.useState)(g ? "ongoing" : "pending"),
+                    S = (0, m.Z)((e) => {
                         t.setStrDict("errors", e);
                     }),
-                    S = (0, d.Z)((e) => {
+                    C = (0, m.Z)((e) => {
                         t.setStr("focus", e);
                     }),
-                    N = (0, d.Z)((e) => {
+                    j = (0, m.Z)((e) => {
                         t.setStrDict("values", (0, _.e)(e));
                     }),
-                    Z = (0, d.Z)((e) => {
+                    N = (0, m.Z)((e) => {
                         t.setStr("submissionStatus", e), t.setBool("submitting", "ongoing" === e);
                     }),
                     I = (e) => {
-                        y(e), t.setBool("validating", "ongoing" === e);
+                        E(e), t.setBool("validating", "ongoing" === e);
                     },
-                    R = (0, d.Z)(async () => {
-                        if ("ongoing" !== v && p) {
-                            Z("ongoing");
-                            const e = m?.Runtime;
+                    Z = (0, m.Z)(async () => {
+                        if ("ongoing" !== k && f) {
+                            N("ongoing");
+                            const e = p?.Runtime;
                             if (e)
                                 try {
-                                    const { ok: t, data: r } = await e.net.httpPOST(p, new Map(Object.entries(k)));
-                                    if (t && r) {
-                                        const t = (0, a.KM)(e, new Uint8Array(r));
-                                        x(t.root.value), Z("success");
-                                    } else Z("error");
+                                    const { ok: t, data: a } = await e.net.httpPOST(f, new Map(Object.entries(v)));
+                                    if (t && a) {
+                                        const t = (0, l.KM)(e, new Uint8Array(a));
+                                        x(t.root.value), N("success");
+                                    } else N("error");
                                 } catch (e) {
-                                    Z("error");
+                                    N("error");
                                 }
                         }
                     }),
-                    $ = (0, d.Z)((e, t) => {
-                        b((r) => ({ ...r, [e]: t })), Z("pending"), I("pending"), x(void 0);
+                    R = (0, m.Z)((e, t) => {
+                        b((a) => ({ ...a, [e]: t })), N("pending"), I("pending"), x(void 0);
                     }),
-                    T = (0, n.useRef)(k);
+                    T = (0, n.useRef)(v);
                 (0, n.useLayoutEffect)(() => {
-                    T.current = k;
-                }, [k]);
-                const C = (0, d.Z)((e, t) => {
+                    T.current = v;
+                }, [v]);
+                const A = (0, m.Z)((e, t) => {
                         I("ongoing");
-                        const r = m?.Runtime;
-                        r &&
-                            r.net
-                                .httpPOST(t, new Map(Object.entries(k)))
-                                .then(({ ok: t, data: r }) => {
+                        const a = p?.Runtime;
+                        a &&
+                            a.net
+                                .httpPOST(t, new Map(Object.entries(v)))
+                                .then(({ ok: t, data: a }) => {
                                     if (T.current === e)
-                                        if (t && r) {
-                                            const e = JSON.parse(new TextDecoder().decode(r));
-                                            (0, u.x)(e) ? (j({}), I("success")) : (j(e), I("failure"));
-                                        } else j({}), I("success");
+                                        if (t && a) {
+                                            const e = JSON.parse(new TextDecoder().decode(a));
+                                            (0, d.x)(e) ? (S({}), I("success")) : (S(e), I("failure"));
+                                        } else S({}), I("success");
                                 })
                                 .catch(() => {
                                     I("error");
                                 });
                     }),
-                    P = (0, n.useMemo)(() => (0, c.D)(C, 500), [C]);
+                    P = (0, n.useMemo)(() => (0, c.D)(A, 500), [A]);
                 (0, n.useEffect)(() => {
-                    g && P(k, g);
-                }, [P, k, g]);
-                const A = (0, n.useMemo)(() => (g ? "success" === E : !!p && ("pending" === v || "error" === v)), [v, E, g, p]);
+                    g && P(v, g);
+                }, [P, v, g]);
+                const M = (0, n.useMemo)(() => (g ? "success" === y : !!f && ("pending" === k || "error" === k)), [k, y, g, f]);
                 return (
                     (0, n.useEffect)(() => {
-                        N(k);
-                    }, [k, N]),
-                    (0, o.jsxs)(f.Provider, { value: { values: k, submit: R, change: $, submissionResult: w, submissionStatus: v, validationStatus: E, errors: h, setErrors: j, setFocus: S, canSubmit: A }, children: [(0, o.jsx)("div", { className: r, children: (0, s.Z)(e) }), w && (0, o.jsx)(i.Z, { el: w })] })
+                        j(v);
+                    }, [v, j]),
+                    (0, i.jsxs)(u.q3.Provider, { value: { values: v, submit: Z, change: R, submissionResult: w, submissionStatus: k, validationStatus: y, errors: h, setErrors: S, setFocus: C, canSubmit: M }, children: [(0, i.jsx)("div", { className: a, children: (0, r.Z)(e) }), w && (0, i.jsx)(o.Z, { el: w })] })
                 );
             }
         },
-        754732: (e, t, r) => {
-            r.d(t, { Z: () => a });
-            var o = r(552322),
-                n = r(801102),
-                s = r(202784),
-                i = r(122883);
-            function a({ p: e, el: t, mods: r }) {
-                const a = e.int("gapH") ?? 2,
-                    l = e.int("gapV") ?? 2,
-                    c = (0, n.Z)(t),
-                    u = (0, s.useMemo)(() => {
+        261925: (e, t, a) => {
+            a.d(t, { Z: () => l });
+            var i = a(552322),
+                n = a(202784),
+                r = a(109195),
+                o = a(511799);
+            function l({ mods: e }) {
+                const t = (0, n.useContext)(o.ZB);
+                return t ? (0, i.jsx)("div", { className: e, children: t.active && (0, i.jsx)(r.Z, { el: t.active }) }) : null;
+            }
+        },
+        22588: (e, t, a) => {
+            a.d(t, { Z: () => l });
+            var i = a(552322),
+                n = a(202784),
+                r = a(801102),
+                o = a(511799);
+            function l({ el: e, mods: t }) {
+                const { canSubmit: a, submit: l } = (0, n.useContext)(o.q3),
+                    s = (0, n.useCallback)(
+                        (e) => {
+                            e.stopPropagation(), a && l && l();
+                        },
+                        [a, l],
+                    );
+                return (0, i.jsx)("button", { type: "submit", disabled: !a, onClick: s, className: t, children: (0, r.Z)(e) });
+            }
+        },
+        166490: (e, t, a) => {
+            a.d(t, { Z: () => o });
+            var i = a(552322),
+                n = a(202784),
+                r = a(511799);
+            function o({ p: e, mods: t }) {
+                const a = e.str("name") ?? "",
+                    o = e.str("label") ?? "",
+                    l = e.str("value") ?? "",
+                    s = e.bool("autofocus") ?? !1,
+                    c = e.enum("type") ?? r.n$.text,
+                    { change: d, setFocus: _, values: m } = (0, n.useContext)(r.q3),
+                    u = c === r.n$.growing_text,
+                    p = (0, n.useCallback)(
+                        (e) => {
+                            c === r.n$.date && e.currentTarget.value ? d(a, new Date(e.currentTarget.value).toISOString()) : d(a, e.currentTarget.value);
+                        },
+                        [a, d, c],
+                    );
+                (0, n.useEffect)(() => {
+                    l && d(a, l);
+                }, [a, l, d]);
+                const f = (0, n.useCallback)(() => {
+                        _(a);
+                    }, [a, _]),
+                    h = (0, n.useCallback)(() => {
+                        _("");
+                    }, [_]),
+                    g = (0, r.Jt)(c),
+                    k = m[a] ?? l,
+                    v = (0, r.VD)(c),
+                    b = "date" === v ? new Date(k).toLocaleDateString("en-CA").padStart(10, "0") : k;
+                return u ? (0, i.jsx)("textarea", { autoFocus: s, name: a, onBlur: h, className: `placeholder:text-gray-500 ${t}`, onChange: p, onFocus: f, placeholder: o, value: k }) : (0, i.jsx)("input", { type: v, autoFocus: s, inputMode: g, name: a, onBlur: h, className: `placeholder:text-gray-500 ${t}`, onChange: p, onFocus: f, placeholder: o, value: b });
+            }
+        },
+        161276: (e, t, a) => {
+            a.d(t, { Z: () => s });
+            var i = a(552322),
+                n = a(202784),
+                r = a(801102),
+                o = a(109195),
+                l = a(511799);
+            function s({ p: e, el: t, mods: a }) {
+                const s = e.str("name") ?? "",
+                    c = e.bool("initial") ? "true" : void 0,
+                    d = e.element("selected") ?? null,
+                    _ = e.bool("submit") ?? !1,
+                    { change: m, submit: u, values: p } = (0, n.useContext)(l.q3),
+                    f = "true" === p[s];
+                (0, n.useEffect)(() => {
+                    c && m(s, c);
+                }, [s, c, m]);
+                const h = f ? d && (0, i.jsx)(o.Z, { el: d }) : (0, r.Z)(t);
+                return (0, i.jsx)("button", {
+                    type: "button",
+                    onClick: (e) => {
+                        e.preventDefault(), m(s, f ? void 0 : "true"), _ && u();
+                    },
+                    className: a,
+                    children: h,
+                });
+            }
+        },
+        399762: (e, t, a) => {
+            a.d(t, { Z: () => l });
+            var i = a(552322),
+                n = a(202784),
+                r = a(801102),
+                o = a(511799);
+            function l({ p: e, el: t, mods: a }) {
+                const l = e.str("name") ?? "",
+                    s = e.int("length") ?? 6,
+                    c = e.bool("autofocus") ?? !1,
+                    d = e.bool("autosubmit") ?? !1,
+                    { change: _, submit: m, values: u } = (0, n.useContext)(o.q3),
+                    p = u.code ?? "",
+                    f = (0, n.useCallback)(
+                        (t) => {
+                            _(l, t), e.setStrDict(l, Object(Array.from(t)));
+                        },
+                        [_, l, e],
+                    ),
+                    h = (0, n.useMemo)(() => Array.from({ length: s }).map(() => (0, n.createRef)()), [s]);
+                (0, n.useEffect)(() => {
+                    p.length === s && d ? m() : h[p.length]?.current?.focus();
+                }, [d, p, h, s, m]);
+                const g = (0, n.useCallback)(
+                        (e, t) => {
+                            const a = e.currentTarget.value,
+                                i = p.slice(0, t) + a + p.slice(t + 1);
+                            f(i);
+                        },
+                        [p, f],
+                    ),
+                    k = (e) => {
+                        "Backspace" === e.key && (f(p.slice(0, p.length - 1)), e.preventDefault());
+                    },
+                    [v, b] = (0, n.useState)(0),
+                    [w, x] = (0, n.useState)(10),
+                    [y, E] = (0, n.useState)(10),
+                    [S, C] = (0, n.useState)(0),
+                    j = (0, n.useRef)(null);
+                return (
+                    (0, n.useEffect)(() => {
+                        setTimeout(() => {
+                            const e = j.current,
+                                t = e?.firstElementChild,
+                                a = t?.firstElementChild,
+                                i = a?.nextElementSibling;
+                            if (e && t && a && i) {
+                                const t = e.getBoundingClientRect(),
+                                    n = a.getBoundingClientRect(),
+                                    r = i.getBoundingClientRect().left - n.right;
+                                b(r), x(n.width), E(t.width);
+                                const o = n.left - t.left;
+                                C(o);
+                            }
+                        }, 100);
+                    }, []),
+                    (0, i.jsxs)("div", { className: `relative ${a}`, ref: j, children: [(0, r.Z)(t), (0, i.jsx)("div", { className: "absolute left-0 top-0 right-0 bottom-0 flex flex-row", style: { gap: v, width: y, paddingLeft: S }, children: Array.from({ length: s }).map((e, t) => (0, i.jsx)("input", { maxLength: s, inputMode: "numeric", onChange: (e) => g(e, t), autoFocus: c && 0 === t, onKeyDown: k, ref: h[t], value: p[t] ?? "", className: "min-w-0 outline-none text-center caret-text bg-transparent text-transparent", style: { width: w } }, t)) })] })
+                );
+            }
+        },
+        723395: (e, t, a) => {
+            a.d(t, { Z: () => s });
+            var i = a(552322),
+                n = a(202784),
+                r = a(801102),
+                o = a(109195),
+                l = a(511799);
+            function s({ p: e, el: t, mods: a }) {
+                const s = e.str("value") ?? "",
+                    c = e.element("active"),
+                    d = e.element("selected") ?? null,
+                    _ = (0, n.useContext)(l.ZB),
+                    m = _?.value === s,
+                    u = (0, n.useCallback)(() => {
+                        _ && (m ? _.select(void 0, null) : _.select(s, c));
+                    }, [_, s, c, m]),
+                    p = (0, n.useMemo)(() => (0, r.Z)(t), [t]),
+                    f = (0, n.useMemo)(() => d && (0, i.jsx)(o.Z, { el: d }), [d]);
+                return (0, i.jsx)("button", { onClick: u, type: "button", className: a, children: m ? f : p });
+            }
+        },
+        140682: (e, t, a) => {
+            a.d(t, { Z: () => d });
+            var i = a(552322),
+                n = a(202784),
+                r = a(511799);
+            const o = (e) => e.replace(/\D/g, ""),
+                l = (e, t) => {
+                    const a = o(e);
+                    let i = "",
+                        n = 0;
+                    for (let e = 0; e < t.length && !(n >= a.length); e++) "#" === t[e] ? ((i += a[n]), n++) : (i += t[e]);
+                    return i;
+                },
+                s = { name: "United States", dial_code: "+1", pattern: "### ### ####", limit: 12 },
+                c = [
+                    { name: "Afghanistan", dial_code: "+93", pattern: "### ### ####", limit: 12 },
+                    { name: "Albania", dial_code: "+355", pattern: "### ### ###", limit: 11 },
+                    { name: "Algeria", dial_code: "+213", pattern: "### ## ## ##", limit: 12 },
+                    { name: "Andorra", dial_code: "+376", pattern: "### ###", limit: 7 },
+                    { name: "Angola", dial_code: "+244", pattern: "### ### ###", limit: 11 },
+                    { name: "Antigua and Barbuda", dial_code: "+1", pattern: "### ### ####", limit: 12 },
+                    { name: "Argentina", dial_code: "+54", pattern: "##########", limit: 10 },
+                    { name: "Armenia", dial_code: "+374", pattern: "## ######", limit: 9 },
+                    { name: "Australia", dial_code: "+61", pattern: "#### ### ###", limit: 12 },
+                    { name: "Austria", dial_code: "+43", pattern: "#### ####", limit: 9 },
+                    { name: "Azerbaijan", dial_code: "+994", pattern: "## ### ## ##", limit: 11 },
+                    { name: "Bahamas", dial_code: "+1", pattern: "### ### ####", limit: 12 },
+                    { name: "Bahrain", dial_code: "+973", pattern: "#### ####", limit: 9 },
+                    { name: "Bangladesh", dial_code: "+880", pattern: "####-#######", limit: 12 },
+                    { name: "Barbados", dial_code: "+1", pattern: "### ### ####", limit: 12 },
+                    { name: "Belarus", dial_code: "+375", pattern: "## ###-##-##", limit: 12 },
+                    { name: "Belgium", dial_code: "+32", pattern: "### ## ## ##", limit: 12 },
+                    { name: "Belize", dial_code: "+501", pattern: "#### ####", limit: 9 },
+                    { name: "Benin", dial_code: "+229", pattern: "## ## ## ##", limit: 11 },
+                    { name: "Bhutan", dial_code: "+975", pattern: "##-###-###", limit: 10 },
+                    { name: "Bolivia", dial_code: "+591", pattern: "###-###-###", limit: 12 },
+                    { name: "Bosnia and Herzegovina", dial_code: "+387", pattern: "## ### ###", limit: 10 },
+                    { name: "Botswana", dial_code: "+267", pattern: "### ### ###", limit: 11 },
+                    { name: "Brazil", dial_code: "+55", pattern: "(##) ####-####", limit: 14 },
+                    { name: "Brunei", dial_code: "+673", pattern: "#### ####", limit: 9 },
+                    { name: "Bulgaria", dial_code: "+359", pattern: "### ### ###", limit: 11 },
+                    { name: "Burkina Faso", dial_code: "+226", pattern: "## ## ## ##", limit: 11 },
+                    { name: "Burundi", dial_code: "+257", pattern: "## ## ## ##", limit: 11 },
+                    { name: "Cabo Verde", dial_code: "+238", pattern: "### ### ###", limit: 11 },
+                    { name: "Cambodia", dial_code: "+855", pattern: "##-###-####", limit: 11 },
+                    { name: "Cameroon", dial_code: "+237", pattern: "### ### ###", limit: 11 },
+                    { name: "Canada", dial_code: "+1", pattern: "### ### ####", limit: 12 },
+                    { name: "Central African Republic", dial_code: "+236", pattern: "## ### ###", limit: 10 },
+                    { name: "Chad", dial_code: "+235", pattern: "## ## ## ##", limit: 11 },
+                    { name: "Chile", dial_code: "+56", pattern: "##-####-####", limit: 13 },
+                    { name: "China", dial_code: "+86", pattern: "### #### ####", limit: 12 },
+                    { name: "Colombia", dial_code: "+57", pattern: "### ### ####", limit: 12 },
+                    { name: "Comoros", dial_code: "+269", pattern: "## ## ## ##", limit: 11 },
+                    { name: "Congo (Brazzaville)", dial_code: "+242", pattern: "### ### ###", limit: 11 },
+                    { name: "Costa Rica", dial_code: "+506", pattern: "####-####", limit: 9 },
+                    { name: "Croatia", dial_code: "+385", pattern: "##-####-####", limit: 12 },
+                    { name: "Cuba", dial_code: "+53", pattern: "###-###-####", limit: 12 },
+                    { name: "Cyprus", dial_code: "+357", pattern: "### ### ###", limit: 11 },
+                    { name: "Czechia", dial_code: "+420", pattern: "### ### ###", limit: 11 },
+                    { name: "Democratic Republic of the Congo", dial_code: "+243", pattern: "### ### ###", limit: 11 },
+                    { name: "Denmark", dial_code: "+45", pattern: "## ## ## ##", limit: 9 },
+                    { name: "Djibouti", dial_code: "+253", pattern: "## ## ## ##", limit: 10 },
+                    { name: "Dominica", dial_code: "+1", pattern: "### ### ####", limit: 12 },
+                    { name: "Dominican Republic", dial_code: "+1", pattern: "### ### ####", limit: 12 },
+                    { name: "Ecuador", dial_code: "+593", pattern: "##-###-####", limit: 12 },
+                    { name: "Egypt", dial_code: "+20", pattern: "## ### ####", limit: 11 },
+                    { name: "El Salvador", dial_code: "+503", pattern: "####-####", limit: 9 },
+                    { name: "Equatorial Guinea", dial_code: "+240", pattern: "### ### ###", limit: 11 },
+                    { name: "Eritrea", dial_code: "+291", pattern: "### ### ###", limit: 11 },
+                    { name: "Estonia", dial_code: "+372", pattern: "#### ####", limit: 9 },
+                    { name: "Eswatini", dial_code: "+268", pattern: "### ### ###", limit: 11 },
+                    { name: "Ethiopia", dial_code: "+251", pattern: "###-###-####", limit: 12 },
+                    { name: "Fiji", dial_code: "+679", pattern: "### ###", limit: 9 },
+                    { name: "Finland", dial_code: "+358", pattern: "### ## ###", limit: 10 },
+                    { name: "France", dial_code: "+33", pattern: "## ## ## ##", limit: 9 },
+                    { name: "Gabon", dial_code: "+241", pattern: "## ## ## ##", limit: 10 },
+                    { name: "Gambia", dial_code: "+220", pattern: "### ### ###", limit: 11 },
+                    { name: "Georgia", dial_code: "+995", pattern: "### ## ## ##", limit: 12 },
+                    { name: "Germany", dial_code: "+49", pattern: "#### ########", limit: 14 },
+                    { name: "Ghana", dial_code: "+233", pattern: "### ### ###", limit: 11 },
+                    { name: "Greece", dial_code: "+30", pattern: "### ### ####", limit: 12 },
+                    { name: "Grenada", dial_code: "+1", pattern: "### ### ####", limit: 12 },
+                    { name: "Guatemala", dial_code: "+502", pattern: "####-####", limit: 9 },
+                    { name: "Guinea", dial_code: "+224", pattern: "### ### ###", limit: 11 },
+                    { name: "Guinea-Bissau", dial_code: "+245", pattern: "### ### ###", limit: 11 },
+                    { name: "Guyana", dial_code: "+592", pattern: "###-###-###", limit: 12 },
+                    { name: "Haiti", dial_code: "+509", pattern: "###-###-####", limit: 12 },
+                    { name: "Honduras", dial_code: "+504", pattern: "####-####", limit: 9 },
+                    { name: "Hungary", dial_code: "+36", pattern: "##-###-####", limit: 11 },
+                    { name: "Iceland", dial_code: "+354", pattern: "### ####", limit: 10 },
+                    { name: "India", dial_code: "+91", pattern: "#####-#####", limit: 11 },
+                    { name: "Indonesia", dial_code: "+62", pattern: "###-###-####", limit: 12 },
+                    { name: "Iran", dial_code: "+98", pattern: "#### ### ####", limit: 13 },
+                    { name: "Iraq", dial_code: "+964", pattern: "###-###-####", limit: 12 },
+                    { name: "Ireland", dial_code: "+353", pattern: "### ### ####", limit: 12 },
+                    { name: "Israel", dial_code: "+972", pattern: "##-#####-###", limit: 12 },
+                    { name: "Italy", dial_code: "+39", pattern: "### #### ####", limit: 13 },
+                    { name: "Jamaica", dial_code: "+1", pattern: "### ### ####", limit: 12 },
+                    { name: "Japan", dial_code: "+81", pattern: "##-####-####", limit: 13 },
+                    { name: "Jordan", dial_code: "+962", pattern: "### #######", limit: 11 },
+                    { name: "Kazakhstan", dial_code: "+7", pattern: "### ### ####", limit: 12 },
+                    { name: "Kenya", dial_code: "+254", pattern: "### ### ###", limit: 11 },
+                    { name: "Kiribati", dial_code: "+686", pattern: "### ####", limit: 10 },
+                    { name: "Kuwait", dial_code: "+965", pattern: "#### ####", limit: 9 },
+                    { name: "Kyrgyzstan", dial_code: "+996", pattern: "### ### ###", limit: 11 },
+                    { name: "Laos", dial_code: "+856", pattern: "##-####-####", limit: 13 },
+                    { name: "Latvia", dial_code: "+371", pattern: "##### ###", limit: 9 },
+                    { name: "Lebanon", dial_code: "+961", pattern: "##-###-###", limit: 11 },
+                    { name: "Lesotho", dial_code: "+266", pattern: "### ### ###", limit: 11 },
+                    { name: "Liberia", dial_code: "+231", pattern: "###-###-####", limit: 12 },
+                    { name: "Libya", dial_code: "+218", pattern: "###-###-###", limit: 11 },
+                    { name: "Liechtenstein", dial_code: "+423", pattern: "### ####", limit: 10 },
+                    { name: "Lithuania", dial_code: "+370", pattern: "###-###-###", limit: 11 },
+                    { name: "Luxembourg", dial_code: "+352", pattern: "### ### ###", limit: 11 },
+                    { name: "Madagascar", dial_code: "+261", pattern: "##-###-####", limit: 11 },
+                    { name: "Malawi", dial_code: "+265", pattern: "###-###-###", limit: 11 },
+                    { name: "Malaysia", dial_code: "+60", pattern: "###-#######", limit: 11 },
+                    { name: "Maldives", dial_code: "+960", pattern: "###-###", limit: 9 },
+                    { name: "Mali", dial_code: "+223", pattern: "##-##-##-##", limit: 11 },
+                    { name: "Malta", dial_code: "+356", pattern: "#### ####", limit: 9 },
+                    { name: "Marshall Islands", dial_code: "+692", pattern: "###-####", limit: 10 },
+                    { name: "Mauritania", dial_code: "+222", pattern: "##-##-##-##", limit: 11 },
+                    { name: "Mauritius", dial_code: "+230", pattern: "#### ####", limit: 9 },
+                    { name: "Mexico", dial_code: "+52", pattern: "## #### ####", limit: 12 },
+                    { name: "Micronesia", dial_code: "+691", pattern: "###-####", limit: 10 },
+                    { name: "Moldova", dial_code: "+373", pattern: "##-###-###", limit: 11 },
+                    { name: "Monaco", dial_code: "+377", pattern: "### ### ###", limit: 11 },
+                    { name: "Mongolia", dial_code: "+976", pattern: "###-###-###", limit: 11 },
+                    { name: "Montenegro", dial_code: "+382", pattern: "##-###-###", limit: 11 },
+                    { name: "Morocco", dial_code: "+212", pattern: "##-###-####", limit: 12 },
+                    { name: "Mozambique", dial_code: "+258", pattern: "##-###-###", limit: 11 },
+                    { name: "Myanmar", dial_code: "+95", pattern: "##-###-####", limit: 12 },
+                    { name: "Namibia", dial_code: "+264", pattern: "###-####", limit: 10 },
+                    { name: "Nauru", dial_code: "+674", pattern: "###-###", limit: 9 },
+                    { name: "Nepal", dial_code: "+977", pattern: "##-####-####", limit: 13 },
+                    { name: "Netherlands", dial_code: "+31", pattern: "##-####-####", limit: 12 },
+                    { name: "New Zealand", dial_code: "+64", pattern: "##-###-####", limit: 12 },
+                    { name: "Nicaragua", dial_code: "+505", pattern: "####-####", limit: 9 },
+                    { name: "Niger", dial_code: "+227", pattern: "##-##-##-##", limit: 11 },
+                    { name: "Nigeria", dial_code: "+234", pattern: "###-###-####", limit: 12 },
+                    { name: "North Korea", dial_code: "+850", pattern: "##-####-####", limit: 13 },
+                    { name: "North Macedonia", dial_code: "+389", pattern: "##-###-####", limit: 12 },
+                    { name: "Norway", dial_code: "+47", pattern: "### ## ###", limit: 11 },
+                    { name: "Oman", dial_code: "+968", pattern: "###-####", limit: 10 },
+                    { name: "Pakistan", dial_code: "+92", pattern: "####-#######", limit: 12 },
+                    { name: "Palau", dial_code: "+680", pattern: "###-####", limit: 10 },
+                    { name: "Palestine", dial_code: "+970", pattern: "##-###-####", limit: 12 },
+                    { name: "Panama", dial_code: "+507", pattern: "####-####", limit: 9 },
+                    { name: "Papua New Guinea", dial_code: "+675", pattern: "###-####", limit: 10 },
+                    { name: "Paraguay", dial_code: "+595", pattern: "###-###-###", limit: 12 },
+                    { name: "Peru", dial_code: "+51", pattern: "##-###-####", limit: 12 },
+                    { name: "Philippines", dial_code: "+63", pattern: "###-###-####", limit: 12 },
+                    { name: "Poland", dial_code: "+48", pattern: "###-###-###", limit: 12 },
+                    { name: "Portugal", dial_code: "+351", pattern: "####-####", limit: 9 },
+                    { name: "Qatar", dial_code: "+974", pattern: "#### ####", limit: 9 },
+                    { name: "Romania", dial_code: "+40", pattern: "###-###-###", limit: 11 },
+                    { name: "Russia", dial_code: "+7", pattern: "###-###-##-##", limit: 12 },
+                    { name: "Rwanda", dial_code: "+250", pattern: "###-###-###", limit: 11 },
+                    { name: "Saint Kitts and Nevis", dial_code: "+1", pattern: "### ### ####", limit: 12 },
+                    { name: "Saint Lucia", dial_code: "+1", pattern: "### ### ####", limit: 12 },
+                    { name: "Saint Vincent and the Grenadines", dial_code: "+1", pattern: "### ### ####", limit: 12 },
+                    { name: "Samoa", dial_code: "+685", pattern: "###-####", limit: 10 },
+                    { name: "San Marino", dial_code: "+378", pattern: "###-######", limit: 12 },
+                    { name: "Sao Tome and Principe", dial_code: "+239", pattern: "###-###-###", limit: 11 },
+                    { name: "Saudi Arabia", dial_code: "+966", pattern: "###-####-####", limit: 13 },
+                    { name: "Senegal", dial_code: "+221", pattern: "##-###-####", limit: 12 },
+                    { name: "Serbia", dial_code: "+381", pattern: "##-###-####", limit: 12 },
+                    { name: "Seychelles", dial_code: "+248", pattern: "###-####", limit: 10 },
+                    { name: "Sierra Leone", dial_code: "+232", pattern: "##-###-####", limit: 12 },
+                    { name: "Singapore", dial_code: "+65", pattern: "####-####", limit: 9 },
+                    { name: "Slovakia", dial_code: "+421", pattern: "###-###-###", limit: 11 },
+                    { name: "Slovenia", dial_code: "+386", pattern: "##-###-###", limit: 11 },
+                    { name: "Solomon Islands", dial_code: "+677", pattern: "###-####", limit: 10 },
+                    { name: "Somalia", dial_code: "+252", pattern: "###-###-###", limit: 11 },
+                    { name: "South Africa", dial_code: "+27", pattern: "##-###-####", limit: 12 },
+                    { name: "South Korea", dial_code: "+82", pattern: "##-####-####", limit: 13 },
+                    { name: "South Sudan", dial_code: "+211", pattern: "###-###-###", limit: 11 },
+                    { name: "Spain", dial_code: "+34", pattern: "###-###-###", limit: 12 },
+                    { name: "Sri Lanka", dial_code: "+94", pattern: "##-####-####", limit: 13 },
+                    { name: "Sudan", dial_code: "+249", pattern: "###-###-###", limit: 11 },
+                    { name: "Suriname", dial_code: "+597", pattern: "###-###-###", limit: 12 },
+                    { name: "Sweden", dial_code: "+46", pattern: "###-###-####", limit: 12 },
+                    { name: "Switzerland", dial_code: "+41", pattern: "##-###-##-##", limit: 12 },
+                    { name: "Syria", dial_code: "+963", pattern: "###-###-####", limit: 12 },
+                    { name: "Taiwan", dial_code: "+886", pattern: "###-####-####", limit: 13 },
+                    { name: "Tajikistan", dial_code: "+992", pattern: "##-###-####", limit: 12 },
+                    { name: "Tanzania", dial_code: "+255", pattern: "###-###-###", limit: 11 },
+                    { name: "Thailand", dial_code: "+66", pattern: "##-###-####", limit: 12 },
+                    { name: "Timor-Leste", dial_code: "+670", pattern: "###-####", limit: 10 },
+                    { name: "Togo", dial_code: "+228", pattern: "##-##-##-##", limit: 11 },
+                    { name: "Tonga", dial_code: "+676", pattern: "###-####", limit: 10 },
+                    { name: "Trinidad and Tobago", dial_code: "+1", pattern: "### ### ####", limit: 12 },
+                    { name: "Tunisia", dial_code: "+216", pattern: "##-###-###", limit: 11 },
+                    { name: "Turkey", dial_code: "+90", pattern: "###-###-####", limit: 12 },
+                    { name: "Turkmenistan", dial_code: "+993", pattern: "##-###-####", limit: 12 },
+                    { name: "Tuvalu", dial_code: "+688", pattern: "###-###", limit: 9 },
+                    { name: "Uganda", dial_code: "+256", pattern: "###-###-###", limit: 11 },
+                    { name: "Ukraine", dial_code: "+380", pattern: "##-###-##-##", limit: 12 },
+                    { name: "United Arab Emirates", dial_code: "+971", pattern: "##-###-####", limit: 12 },
+                    { name: "United Kingdom", dial_code: "+44", pattern: "#### ### ####", limit: 13 },
+                    { name: "United States", dial_code: "+1", pattern: "### ### ####", limit: 12 },
+                    { name: "Uruguay", dial_code: "+598", pattern: "###-###-###", limit: 12 },
+                    { name: "Uzbekistan", dial_code: "+998", pattern: "##-###-####", limit: 12 },
+                    { name: "Vanuatu", dial_code: "+678", pattern: "###-####", limit: 10 },
+                    { name: "Vatican City", dial_code: "+379", pattern: "###-###", limit: 9 },
+                    { name: "Venezuela", dial_code: "+58", pattern: "###-###-####", limit: 12 },
+                    { name: "Vietnam", dial_code: "+84", pattern: "###-####-####", limit: 13 },
+                    { name: "Yemen", dial_code: "+967", pattern: "###-###-###", limit: 11 },
+                    { name: "Zambia", dial_code: "+260", pattern: "###-###-###", limit: 11 },
+                    { name: "Zimbabwe", dial_code: "+263", pattern: "###-###-###", limit: 1 },
+                ];
+            function d({ p: e, mods: t }) {
+                const a = e.str("name") ?? "",
+                    d = e.str("placeholder") ?? "",
+                    _ = e.str("countryCode") ?? "+1",
+                    m = e.strList("allowedCountryCodes"),
+                    u = e.bool("countryCodePickerDisabled") ?? !1,
+                    p = e.bool("autofocus") ?? !1,
+                    { change: f, values: h } = (0, n.useContext)(r.q3),
+                    [g, k] = (0, n.useState)(() => (h[a] ? h[a].replace(_, "") : "")),
+                    v = (0, n.useCallback)((e) => {
+                        k(e.target.value);
+                    }, []),
+                    [b, w] = (0, n.useState)(() => c.find((e) => e.dial_code === _) ?? s),
+                    x = (0, n.useMemo)(() => l(g, b.pattern), [b.pattern, g]),
+                    y = (0, n.useMemo)(() => c.filter((e) => m.includes(e.dial_code)), [m]),
+                    E = (0, n.useCallback)(
+                        (e) => {
+                            const t = y.find((t) => t.name === e.currentTarget.value);
+                            t && w(t);
+                        },
+                        [y],
+                    );
+                return (
+                    (0, n.useEffect)(() => {
+                        f(a, b.dial_code + o(g));
+                    }, [f, b, a, g]),
+                    (0, i.jsxs)("div", { className: `flex flex-row items-center gap-1 ${t}`, children: [(0, i.jsxs)("div", { className: "items-end relative", children: [(0, i.jsx)("div", { className: "pe-2 text-blue-500 " + (u ? "text-text" : ""), children: b.dial_code }), (0, i.jsx)("select", { disabled: u, onChange: E, value: b.name, className: "absolute top-0 left-0 w-full h-full opacity-0", children: y.map((e) => (0, i.jsxs)("option", { value: e.name, children: [e.name, "(", e.dial_code, ")"] }, e.name)) })] }), (0, i.jsx)("input", { autoFocus: p, inputMode: "tel", maxLength: b.limit, name: a, onChange: v, placeholder: d || b.pattern, className: "flex-grow", value: x })] })
+                );
+            }
+        },
+        315111: (e, t, a) => {
+            a.d(t, { Z: () => l });
+            var i = a(552322),
+                n = a(202784),
+                r = a(801102),
+                o = a(511799);
+            function l({ p: e, el: t }) {
+                const a = e.str("name") ?? "",
+                    l = e.bool("submit") ?? !1,
+                    [s, c] = (0, n.useState)(null),
+                    { submit: d, values: _, change: m } = (0, n.useContext)(o.q3),
+                    u = _[a],
+                    p = (0, n.useCallback)(
+                        (e, t) => {
+                            m(a, e),
+                                c(t),
+                                l &&
+                                    setTimeout(() => {
+                                        d();
+                                    }, 100);
+                        },
+                        [d, l, m, a],
+                    );
+                return (0, i.jsx)(o.ZB.Provider, { value: { value: u, active: s, select: p }, children: (0, r.Z)(t) });
+            }
+        },
+        511799: (e, t, a) => {
+            a.d(t, { Jt: () => o, VD: () => l, ZB: () => s, n$: () => r, q3: () => n });
+            var i = a(202784);
+            const n = (0, i.createContext)({ values: {}, submit: () => {}, setErrors: () => {}, change: (e, t) => {}, errors: {}, setFocus: () => {}, submissionStatus: "pending", submissionResult: void 0, validationStatus: "pending", canSubmit: !1 }),
+                r = { text: 0, password: 1, email: 2, number: 3, username: 4, tel: 5, url: 6, auth_code: 7, hidden: 8, growing_text: 9, date: 10 },
+                o =
+                    ((0, i.createContext)({ groupKeys: new Set(), active: new Set(), register: (e) => {} }),
+                    (e) => {
+                        switch (e) {
+                            case r.email:
+                                return "email";
+                            case r.number:
+                            case r.auth_code:
+                                return "numeric";
+                            case r.tel:
+                                return "tel";
+                            case r.url:
+                                return "url";
+                            case r.text:
+                            case r.password:
+                            case r.username:
+                            case r.hidden:
+                            case r.growing_text:
+                            case r.date:
+                            default:
+                                return "text";
+                        }
+                    }),
+                l = (e) => {
+                    switch (e) {
+                        case r.password:
+                            return "password";
+                        case r.email:
+                            return "email";
+                        case r.number:
+                            return "number";
+                        case r.tel:
+                            return "tel";
+                        case r.url:
+                            return "url";
+                        case r.hidden:
+                            return "hidden";
+                        case r.date:
+                            return "date";
+                        case r.growing_text:
+                        case r.text:
+                        case r.username:
+                        case r.auth_code:
+                        default:
+                            return "text";
+                    }
+                },
+                s = (0, i.createContext)(null);
+        },
+        971668: (e, t, a) => {
+            a.d(t, { Z: () => l });
+            var i = a(552322),
+                n = a(202784),
+                r = a(801102),
+                o = a(122883);
+            function l({ p: e, el: t, mods: a }) {
+                const l = e.int("gapH") ?? 2,
+                    s = e.int("gapV") ?? 2,
+                    c = (0, r.Z)(t),
+                    d = (0, n.useMemo)(() => {
                         if (!c) return 12;
                         let e = 0;
                         return (
                             c.forEach((t) => {
-                                const r = (0, n.Z)(t.props.el);
-                                let o = 0;
-                                r.forEach((e) => {
-                                    const t = (0, i.tJ)(e.props.el).int("columns") ?? 1;
-                                    o += t;
+                                const a = (0, r.Z)(t.props.el);
+                                let i = 0;
+                                a.forEach((e) => {
+                                    const t = (0, o.tJ)(e.props.el).int("columns") ?? 1;
+                                    i += t;
                                 }),
-                                    (e = Math.max(e, o));
+                                    (e = Math.max(e, i));
                             }),
                             e || 12
                         );
                     }, [c]);
-                return (0, o.jsx)("div", { className: `${r}`, children: (0, o.jsxs)("table", { style: { borderSpacing: `${a}px ${l}px` }, className: "w-full border-separate", children: [(0, o.jsx)("colgroup", { children: [...Array(u)].map((e, t) => (0, o.jsx)("col", { width: 100 / u + "%" }, `grid-col-${t}-${u}`)) }), (0, o.jsx)("tbody", { children: (0, n.Z)(t) })] }) });
+                return (0, i.jsx)("div", { className: `${a}`, children: (0, i.jsxs)("table", { style: { borderSpacing: `${l}px ${s}px` }, className: "w-full border-separate", children: [(0, i.jsx)("colgroup", { children: [...Array(d)].map((e, t) => (0, i.jsx)("col", { width: 100 / d + "%" }, `grid-col-${t}-${d}`)) }), (0, i.jsx)("tbody", { children: (0, r.Z)(t) })] }) });
             }
         },
-        298490: (e, t, r) => {
-            r.d(t, { Z: () => s });
-            var o = r(552322),
-                n = r(801102);
-            function s({ p: e, el: t, mods: r }) {
-                const s = e.int("columns") ?? 1,
-                    i = ["start", "center", "end"][e.enum("align") ?? 0];
-                return (0, o.jsx)("td", { colSpan: s, className: ` ${r}`, style: { textAlign: i }, children: (0, n.Z)(t) });
+        790119: (e, t, a) => {
+            a.d(t, { Z: () => l });
+            var i = a(552322),
+                n = a(202784),
+                r = a(801102),
+                o = a(977391);
+            function l({ p: e, el: t, mods: a }) {
+                const l = e.int("columns") ?? 1,
+                    d = e.enum("align") ?? 0,
+                    { vAlign: _ } = (0, n.useContext)(o.jg);
+                return (0, i.jsx)("td", { colSpan: l, className: `${c(_)} ${s(o.Eu[d])} ${a}`, children: (0, r.Z)(t) });
+            }
+            function s(e) {
+                switch (e) {
+                    case "start":
+                        return "text-start";
+                    case "middle":
+                        return "text-center";
+                    case "end":
+                        return "text-end";
+                    default:
+                        return "";
+                }
+            }
+            function c(e) {
+                switch (e) {
+                    case "top":
+                        return "align-top";
+                    case "center":
+                        return "align-middle";
+                    case "baseline":
+                        return "align-baseline";
+                    case "bottom":
+                        return "align-bottom";
+                    default:
+                        return "";
+                }
             }
         },
-        584363: (e, t, r) => {
-            r.d(t, { Z: () => s });
-            var o = r(552322),
-                n = r(801102);
-            function s({ p: e, el: t, mods: r }) {
-                const s = ["center", "flex-start", "baseline", "flex-end"][e.enum("align") ?? 0];
-                return (0, o.jsx)("tr", { className: `align-${s} ${r}`, children: (0, n.Z)(t) });
+        550932: (e, t, a) => {
+            a.d(t, { Z: () => o });
+            var i = a(552322),
+                n = a(801102),
+                r = a(977391);
+            function o({ p: e, el: t, mods: a }) {
+                const o = e.enum("align") ?? 0;
+                return (0, i.jsx)(r.jg.Provider, { value: { vAlign: r.qx[o] }, children: (0, i.jsx)("tr", { className: `align-${o} ${a}`, children: (0, n.Z)(t) }) });
             }
         },
-        514378: (e, t, r) => {
-            r.d(t, { Z: () => i });
-            var o = r(552322),
-                n = r(109195),
-                s = r(202784);
-            function i({ el: e, p: t, mods: r }) {
-                const i = t.int("gap") ?? 2,
-                    a = t.int("initialPos") ?? 0,
-                    l = (function (e) {
+        977391: (e, t, a) => {
+            a.d(t, { Eu: () => r, jg: () => o, qx: () => n });
+            var i = a(202784);
+            const n = { 0: "center", 1: "top", 2: "baseline", 3: "bottom" },
+                r = { 0: "start", 1: "middle", 2: "end" },
+                o = (0, i.createContext)({ vAlign: "center" });
+        },
+        514378: (e, t, a) => {
+            a.d(t, { Z: () => o });
+            var i = a(552322),
+                n = a(109195),
+                r = a(202784);
+            function o({ el: e, p: t, mods: a }) {
+                const o = t.int("gap") ?? 2,
+                    l = t.int("initialPos") ?? 0,
+                    s = (function (e) {
                         return e.children.map((t) => e.dom.el(t));
                     })(e),
-                    c = (0, s.useRef)(null),
-                    [u, _] = (0, s.useState)(0);
-                (0, s.useEffect)(() => {
-                    if (c.current && a > 0 && a < l.length) {
-                        const e = c.current.children[a];
+                    c = (0, r.useRef)(null),
+                    [d, _] = (0, r.useState)(0);
+                (0, r.useEffect)(() => {
+                    if (c.current && l > 0 && l < s.length) {
+                        const e = c.current.children[l];
                         e && c.current.scrollTo({ left: e.offsetLeft, behavior: "smooth" });
                     }
-                }, [a, l.length]);
-                const d = 0 !== u,
-                    f = c.current && u <= c.current?.scrollWidth - c.current?.clientWidth - 2;
-                return (0, o.jsxs)("div", {
-                    className: `relative ${r}`,
+                }, [l, s.length]);
+                const m = 0 !== d,
+                    u = c.current && d <= c.current?.scrollWidth - c.current?.clientWidth - 2;
+                return (0, i.jsxs)("div", {
+                    className: `relative ${a}`,
                     children: [
-                        d &&
-                            (0, o.jsx)("div", {
+                        m &&
+                            (0, i.jsx)("div", {
                                 className: "absolute z-10 rounded-full overflow-hidden ml-1 mr-1 opacity-0 hover:opacity-100 transition-opacity duration-200",
-                                children: (0, o.jsx)("button", {
+                                children: (0, i.jsx)("button", {
                                     onClick: () => {
                                         c.current && c.current.scrollTo({ left: 0, behavior: "smooth" });
                                     },
@@ -626,19 +1181,19 @@
                                     type: "button",
                                 }),
                             }),
-                        (0, o.jsx)("div", {
+                        (0, i.jsx)("div", {
                             ref: c,
                             className: "flex flex-row flex-nowrap overflow-x-auto overflow-y-hidden w-full [&::-webkit-scrollbar]:hidden [-webkit-overflow-scrolling:touch] [scrollbar-width:none] [-ms-overflow-style:none]",
                             onScroll: () => {
                                 c.current && _(c.current.scrollLeft);
                             },
                             style: { scrollbarWidth: "none" },
-                            children: l.map((e, t) => (0, o.jsx)("div", { className: "flex-auto whitespace-nowrap flex-shrink-0", style: { paddingRight: `${i}px` }, children: (0, o.jsx)(n.Z, { el: e }) }, e.id?.toString() || `hscroller-item-${t}`)),
+                            children: s.map((e, t) => (0, i.jsx)("div", { className: "flex-auto whitespace-nowrap flex-shrink-0", style: { paddingRight: `${o}px` }, children: (0, i.jsx)(n.Z, { el: e }) }, e.id?.toString() || `hscroller-item-${t}`)),
                         }),
-                        f &&
-                            (0, o.jsx)("div", {
+                        u &&
+                            (0, i.jsx)("div", {
                                 className: "absolute z-10 rounded-full overflow-hidden ml-1 mr-1 opacity-0 hover:opacity-100 transition-opacity duration-200 right-0",
-                                children: (0, o.jsx)("button", {
+                                children: (0, i.jsx)("button", {
                                     onClick: () => {
                                         c.current && c.current.scrollTo({ left: c.current?.scrollWidth - c.current?.clientWidth, behavior: "smooth" });
                                     },
@@ -650,19 +1205,12 @@
                 });
             }
         },
-        825770: (e, t, r) => {
-            r.d(t, { Z: () => n });
-            var o = r(552322);
-            function n({ mods: e }) {
-                return (0, o.jsx)("div", { className: `${e}`, children: "Fuck HStacks" });
-            }
-        },
-        608594: (e, t, r) => {
-            r.d(t, { C: () => l });
-            var o = r(552322),
-                n = r(650677),
-                s = r(924799);
-            const i = [
+        608594: (e, t, a) => {
+            a.d(t, { C: () => s });
+            var i = a(552322),
+                n = a(627834),
+                r = a(412935);
+            const o = [
                     "accessibility_alt",
                     "accessibility_circle",
                     "account",
@@ -1224,559 +1772,159 @@
                     "envelope_fill",
                     "grok_logo",
                 ],
-                a = i.reduce((e, t) => {
-                    const r = `Icon${((e) => {
-                        const [t, ...r] = e.split("_");
-                        return t?.toLowerCase() + r.map((e) => e.charAt(0).toUpperCase() + e.slice(1).toLowerCase()).join("");
+                l = o.reduce((e, t) => {
+                    const a = `Icon${((e) => {
+                        const [t, ...a] = e.split("_");
+                        return t?.toLowerCase() + a.map((e) => e.charAt(0).toUpperCase() + e.slice(1).toLowerCase()).join("");
                     })(t).replace(/^(.)/, (e) => e.toUpperCase())}`;
-                    return n[r] && (e[t] = n[r]), e;
+                    return n[a] && (e[t] = n[a]), e;
                 }, {});
-            function l({ p: e, mods: t }) {
-                const r = e.enum("key") ?? -1,
-                    n = (-1 !== r ? i[r] : void 0) ?? "",
-                    l = e.int("size") ?? 24,
-                    c = a[n] ?? s.Z;
-                return (0, o.jsx)(c, { className: t, width: l, height: l });
+            function s({ p: e, mods: t }) {
+                const a = e.enum("key") ?? -1,
+                    n = (-1 !== a ? o[a] : void 0) ?? "",
+                    s = e.int("size") ?? 24,
+                    c = l[n] ?? r.Z;
+                return (0, i.jsx)(c, { className: t, width: s, height: s });
             }
         },
-        96675: (e, t, r) => {
-            r.d(t, { Z: () => i });
-            var o = r(552322),
-                n = r(801102),
-                s = r(109195);
-            function i({ el: e, p: t }) {
-                const r = t.bool("cond") ?? !1,
-                    i = t.element("else") ?? null,
-                    a = i ? (0, o.jsx)(s.Z, { el: i }) : null;
-                return r ? (0, n.Z)(e) : a;
+        96675: (e, t, a) => {
+            a.d(t, { Z: () => o });
+            var i = a(552322),
+                n = a(801102),
+                r = a(109195);
+            function o({ el: e, p: t }) {
+                const a = t.bool("cond") ?? !1,
+                    o = t.element("else") ?? null,
+                    l = o ? (0, i.jsx)(r.Z, { el: o }) : null;
+                return a ? (0, n.Z)(e) : l;
             }
         },
-        324212: (e, t, r) => {
-            r.d(t, { Z: () => n });
-            var o = r(552322);
+        324212: (e, t, a) => {
+            a.d(t, { Z: () => n });
+            var i = a(552322);
             function n({ p: e, mods: t }) {
-                const r = e.str("src") ?? "";
-                return (0, o.jsx)("img", { src: r, alt: "d", className: `${t} block object-cover` });
+                const a = e.str("src") ?? "";
+                return (0, i.jsx)("img", { src: a, alt: "d", className: `block object-cover ${t} ` });
             }
         },
-        379265: (e, t, r) => {
-            r.d(t, { Z: () => i });
-            var o = r(552322),
-                n = r(801102),
-                s = r(608222);
-            function i({ el: e, p: t, mods: r }) {
-                const i = (0, s.o)();
-                if (!i || !i.Runtime) return (0, o.jsx)("div", { className: `${r}`, children: "Can't find runtime" });
-                const { Runtime: a } = i,
-                    l = "https://x.com",
-                    c = t.url("url") ?? "";
-                return (0, o.jsx)("button", {
-                    className: `flex ${r} cursor-pointer`,
+        379265: (e, t, a) => {
+            a.d(t, { Z: () => o });
+            var i = a(552322),
+                n = a(801102),
+                r = a(608222);
+            function o({ el: e, p: t, mods: a }) {
+                const o = (0, r.o)();
+                if (!o || !o.Runtime) return (0, i.jsx)("div", { className: `${a}`, children: "Can't find runtime" });
+                const { Runtime: l } = o,
+                    s = "https://x.com",
+                    c = "https://twitter.com",
+                    d = t.url("url") ?? "";
+                return (0, i.jsx)("button", {
+                    className: `flex ${a} cursor-pointer`,
                     onClick: (e) =>
                         ((e) => {
-                            if ((e.preventDefault(), e.stopPropagation(), c))
-                                if (c.startsWith("twitter://jf/")) {
-                                    const e = c.slice(10);
-                                    a.history.push(`/i/${e}`);
-                                } else if (c.startsWith("https://twitter.com")) {
-                                    const e = c.slice(10);
-                                    a.history.push(e);
-                                } else if (c.startsWith(l)) {
-                                    const e = c.slice(13);
-                                    a.history.push(e);
-                                } else window && (window.location.href = c);
+                            if ((e.preventDefault(), e.stopPropagation(), d))
+                                if (d.startsWith("twitter://jf/")) {
+                                    const e = d.slice(10);
+                                    l.history.push(`/i/${e}`);
+                                } else if (d.startsWith(c)) {
+                                    const e = d.slice(19);
+                                    l.history.push(e);
+                                } else if (d.startsWith(s)) {
+                                    const e = d.slice(13);
+                                    l.history.push(e);
+                                } else window && (window.location.href = d);
                         })(e),
                     type: "button",
                     children: (0, n.Z)(e),
                 });
             }
         },
-        447763: (e, t, r) => {
-            r.d(t, { Z: () => a });
-            var o = r(552322),
-                n = r(801102),
-                s = r(109195);
-            function i(e, t) {
-                return (0, o.jsx)("div", { children: (0, o.jsx)(s.Z, { el: e }) }, e.id || `list-item-${t}`);
+        447763: (e, t, a) => {
+            a.d(t, { Z: () => l });
+            var i = a(552322),
+                n = a(801102),
+                r = a(109195);
+            function o(e, t) {
+                return (0, i.jsx)("div", { children: (0, i.jsx)(r.Z, { el: e }) }, e.id || `list-item-${t}`);
             }
-            function a({ el: e, mods: t }) {
-                return (0, o.jsx)("div", { className: ` ${t}`, children: (0, n.Z)(e, i) });
+            function l({ el: e, mods: t }) {
+                return (0, i.jsx)("div", { className: ` ${t}`, children: (0, n.Z)(e, o) });
             }
         },
-        553366: (e, t, r) => {
-            r.d(t, { Z: () => i });
-            var o = r(552322),
-                n = r(801102),
-                s = r(608222);
-            function i({ el: e, p: t, mods: r }) {
-                const i = (0, s.o)();
-                if (!i || !i.Runtime) return (0, o.jsx)("div", { className: `${r}`, children: "Can't find runtime" });
-                const { Runtime: a } = i,
-                    l = t.str("to") ?? "",
-                    c = l.startsWith("/") ? l.slice(1) : l;
-                return (0, o.jsx)("button", {
+        553366: (e, t, a) => {
+            a.d(t, { Z: () => o });
+            var i = a(552322),
+                n = a(801102),
+                r = a(608222);
+            function o({ el: e, p: t, mods: a }) {
+                const o = (0, r.o)();
+                if (!o || !o.Runtime) return (0, i.jsx)("div", { className: `${a}`, children: "Can't find runtime" });
+                const { Runtime: l } = o,
+                    s = t.str("to") ?? "",
+                    c = s.startsWith("/") ? s.slice(1) : s;
+                return (0, i.jsx)("button", {
                     type: "button",
-                    className: `flex flex-row flex-auto gap-[2px] opacity-100 ${r}`,
+                    className: `flex ${a}`,
                     onClick: (e) =>
                         ((e) => {
-                            e.stopPropagation(), e.preventDefault(), c && (":back" === c ? a.history.goBack() : ":dismiss" === c || a.history.push(`/i/jf/${c}`));
+                            e.stopPropagation(), e.preventDefault(), c && (":back" === c ? l.history.goBack() : ":dismiss" === c || l.history.push(`/i/jf/${c}`));
                         })(e),
-                    children: (0, o.jsx)("div", { className: "w-full", children: (0, n.Z)(e) }),
+                    children: (0, i.jsx)("div", { className: "w-full", children: (0, n.Z)(e) }),
                 });
             }
         },
-        257573: (e, t, r) => {
-            r.d(t, { Z: () => n });
-            var o = r(552322);
-            function n({ el: e }) {
-                return (0, o.jsxs)("h3", { children: ["NotFound ", e.type] });
-            }
-        },
-        969517: (e, t, r) => {
-            r.d(t, { Z: () => a });
-            var o = r(552322),
-                n = r(202784),
-                s = r(801102),
-                i = r(109195);
-            function a({ el: e, p: t, mods: r }) {
-                const a = t.element("header"),
-                    l = t.element("footer"),
-                    c = t.action("on:appear");
-                return (
-                    (0, n.useEffect)(() => {
-                        c && c();
-                    }, []),
-                    (0, o.jsxs)("div", { className: `w-full ${r}`, children: [a && (0, o.jsx)(i.Z, { el: a }), (0, s.Z)(e), l && (0, o.jsx)(i.Z, { el: l })] })
-                );
-            }
-        },
-        547645: (e, t, r) => {
-            r.d(t, { Z: () => s });
-            var o = r(552322),
-                n = r(109195);
-            function s({ p: e, el: t, mods: r }) {
-                const s = e.int("activePage") ?? 0,
-                    i = (function (e) {
-                        return e.children.map((t) => e.dom.el(t));
-                    })(t);
-                return i ? (0, o.jsx)("div", { className: r, children: (0, o.jsx)(n.Z, { el: i[s] }) }) : null;
-            }
-        },
-        229476: (e, t, r) => {
-            r.d(t, { Z: () => a });
-            var o = r(552322),
-                n = r(801102),
-                s = r(109195),
-                i = r(743133);
-            function a({ el: e, p: t, mods: r }) {
-                const a = t.element("popover");
-                return (0, o.jsx)(i.J, {
-                    trigger: (0, o.jsx)("div", {
-                        onClick: (e) => {
-                            e.stopPropagation();
-                        },
-                        className: `flex flex-col ${r} bg-transparent`,
-                        children: (0, n.Z)(e),
-                    }),
-                    children: (0, o.jsx)("div", { className: "bg-transparent", children: a && (0, o.jsx)(s.Z, { el: a }) }),
-                });
-            }
-        },
-        849957: (e, t, r) => {
-            r.d(t, { Z: () => s });
-            var o = r(552322),
-                n = r(373461);
-            function s({ p: e }) {
-                const t = e.str("src") ?? "";
-                return (0, o.jsx)(n.Z, { url: t });
-            }
-        },
-        128069: (e, t, r) => {
-            r.d(t, { Z: () => i });
-            var o = r(552322),
-                n = r(202784),
-                s = r(608222);
-            function i({ p: e, mods: t }) {
-                const r = e.str("t"),
-                    i = e.int("numberOfLines") ?? 2,
-                    a = e.richtext("text") ?? [],
-                    l = e.int("maxLines"),
-                    c = e.bool("showMore"),
-                    u = (0, n.useRef)(null),
-                    [_, d] = (0, n.useState)(!1),
-                    f = "https://x.com",
-                    m = "https://twitter.com",
-                    p = (0, s.o)();
-                if (!p || !p.Runtime) return (0, o.jsx)("div", { className: `${t}`, children: "Can't find runtime" });
-                const { Runtime: h } = p,
-                    g = h.history,
-                    v = (e, t, r, o) => {
-                        e.preventDefault(), e.stopPropagation();
-                        let n = t;
-                        if (!n && r && o)
-                            switch (r) {
-                                case 2:
-                                    n = `${m}/hashtag/${o.replace("#", "")}`;
-                                    break;
-                                case 3:
-                                    n = `${m}/${o.replace("@", "")}`;
-                                    break;
-                                case 4:
-                                    n = `${m}/search?q=${encodeURIComponent(o)}`;
-                            }
-                        if (n)
-                            if (n.startsWith("twitter://jf/")) {
-                                const e = n.slice(10);
-                                g.push(`/i/${e}`);
-                            } else if (n.startsWith(m)) {
-                                const e = n.slice(19);
-                                g.push(e);
-                            } else if (n.startsWith(f)) {
-                                const e = n.slice(13);
-                                g.push(e);
-                            } else "undefined" != typeof window && (window.location.href = n);
-                    },
-                    k = (0, n.useCallback)(() => {
-                        u.current && d(u.current.scrollHeight > u.current.clientHeight);
-                    }, []);
-                if (
-                    ((0, n.useEffect)(
-                        () => (
-                            k(),
-                            window.addEventListener("resize", k),
-                            () => {
-                                window.removeEventListener("resize", k);
-                            }
-                        ),
-                        [k],
-                    ),
-                    a.length > 0)
-                ) {
-                    const e = null != l ? `line-clamp-${l}` : "";
-                    return (0, o.jsxs)("div", { className: `flex flex-col overflow-hidden ${t}`, children: [(0, o.jsx)("div", { ref: u, className: `flex-col overflow-hidden ${e}`, children: a.map((e) => (0 === e[0] ? (0, o.jsx)("span", { children: e[1] }, `${e[0]}-${e[1].substring(0, 20)}`) : 1 === e[0] && e[2] ? (0, o.jsx)("span", { className: "text-sky-500 cursor-pointer hover:underline", onClick: (t) => v(t, e[2] || ""), children: e[1] }, `${e[0]}-${e[1].substring(0, 20)}`) : 2 === e[0] || 3 === e[0] || 4 === e[0] ? (0, o.jsx)("span", { className: "text-blue-500 cursor-pointer hover:underline", onClick: (t) => v(t, "", e[0], e[1]), children: e[1] }, `${e[0]}-${e[1].substring(0, 20)}`) : 255 === e[0] ? (0, o.jsx)("br", {}, `${e[0]}-${e[1].substring(0, 20)}`) : (0, o.jsx)("span", { children: e[1] }, `${e[0]}-${e[1].substring(0, 20)}`))) }), _ && c && (0, o.jsx)("div", { className: "text-[rgb(29,155,240)] hover:underline w-fit", children: "Show More" })] });
-                }
-                return (0, o.jsx)("div", { className: `${t} line-clamp-${i}`, children: r });
-            }
-        },
-        475122: (e, t, r) => {
-            r.d(t, { Z: () => a });
-            var o = r(552322),
-                n = r(801102),
-                s = r(608222);
-            const i = { x: 0, facebook: 1, whatsapp: 2, telegram: 3, linkedin: 4, email: 5, messages: 6, dm: 7, os: 8, copy: 9, facebookMessenger: 10, gmail: 11, signal: 12 };
-            function a({ p: e, el: t, mods: r }) {
-                const a = e.url("url") ?? "",
-                    l = e.enum("target"),
-                    c = (0, s.o)();
-                if (!c || !c.Runtime) return (0, o.jsx)("div", { className: `${r}`, children: "Can't find runtime" });
-                const { Runtime: u } = c;
-                function _(e) {
-                    try {
-                        navigator.share && navigator.share({ url: e });
-                    } catch (e) {}
-                }
-                return (0, o.jsx)("div", {
-                    className: `flex cursor-pointer ${r}`,
-                    onClick: (e) =>
-                        ((e) => {
-                            switch ((e.preventDefault(), e.stopPropagation(), l)) {
-                                case i.x:
-                                    u.history.push({ state: { text: a }, pathname: "/compose/post" });
-                                    break;
-                                case i.dm:
-                                    u.history.push({ state: { text: a }, pathname: "/messages/compose" });
-                                    break;
-                                case i.os:
-                                    _(a);
-                                    break;
-                                case i.copy:
-                                    navigator.clipboard.writeText(a);
-                                    break;
-                                default:
-                                    _(a);
-                            }
-                        })(e),
-                    children: (0, n.Z)(t),
-                });
-            }
-        },
-        771017: (e, t, r) => {
-            r.d(t, { Z: () => c });
-            var o = r(552322),
-                n = r(801102),
-                s = r(202784),
-                i = r(608222);
-            function a({ showModal: e, setShowModal: t, children: r }) {
-                const n = (0, s.useRef)(null),
-                    a = (0, i.o)();
-                if (!a) return (0, o.jsx)("div", { children: "Runtime not available" });
-                const { Runtime: l } = a;
-                (0, s.useEffect)(() => {
-                    e && n.current ? (l.addCover(n.current), n.current.showModal()) : !e && n.current?.open && (n.current.close(), l.removeCover());
-                }, [e, l.addCover, l.removeCover]);
-                return (0, o.jsx)("dialog", {
-                    ref: n,
-                    onClose: () => t(!1),
-                    onClick: (e) => {
-                        e.target === n.current && (e.stopPropagation(), n.current?.close(), t(!1));
-                    },
-                    style: { width: "95%", height: "65%" },
-                    className: " min-w-none rounded-[0.2em] border-none p-0 fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 m-0 w-full max-h-full z-[1] bg-transparent backdrop:bg-black/30 motion-safe:animate-fadeIn motion-safe:[&[open]]:animate-zoomIn focus:outline-none max-w-[600px]",
-                    children: (0, o.jsx)("div", { onClick: (e) => e.stopPropagation(), className: "p-4 contents flex-col items-center text-center h-full w-full", children: r }),
-                });
-            }
-            var l = r(109195);
-            function c({ el: e, p: t, mods: r }) {
-                const [i, c] = (0, s.useState)(!1),
-                    u = t?.element?.("content");
-                return (0, o.jsxs)(o.Fragment, {
-                    children: [
-                        (0, o.jsx)("button", {
-                            className: r,
-                            onClick: (e) => {
-                                e.stopPropagation(), c(!0);
-                            },
-                            type: "button",
-                            children: (0, n.Z)(e),
-                        }),
-                        u && (0, o.jsx)(a, { showModal: i, setShowModal: c, children: (0, o.jsx)(l.Z, { el: u }) }),
-                    ],
-                });
-            }
-        },
-        978476: (e, t, r) => {
-            r.d(t, { Z: () => n });
-            var o = r(552322);
-            function n({ mods: e }) {
-                return (0, o.jsx)("div", { className: `${e}`, children: "Fuck Spacers" });
-            }
-        },
-        139466: (e, t, r) => {
-            r.d(t, { Z: () => i });
-            var o = r(552322),
-                n = r(801102),
-                s = r(608222);
-            function i({ el: e, mods: t, p: r }) {
-                const i = (0, s.o)();
-                if (!i || !i.Runtime) return (0, o.jsx)("div", { className: `${t}`, children: "Can't find runtime" });
-                const { Runtime: a } = i,
-                    l = a.getComponentOverride()[-22153];
-                if (!l) return (0, o.jsx)("div", { className: `${t}`, children: "Can't find Story" });
-                const c = (0, n.Z)(e);
-                return (0, o.jsx)(l, { p: r, children: c });
-            }
-        },
-        353151: (e, t, r) => {
-            r.d(t, { Z: () => s });
-            var o = r(552322),
-                n = r(801102);
-            function s({ el: e, mods: t }) {
-                return (0, o.jsx)("div", { className: `flex w-full h-full ${t}`, children: (0, n.Z)(e) });
-            }
-        },
-        940877: (e, t, r) => {
-            r.d(t, { Z: () => i });
-            var o = r(552322),
-                n = r(801102),
-                s = r(608222);
-            function i({ el: e, mods: t }) {
-                const r = (0, s.o)();
-                if (!r || !r.Runtime) return (0, o.jsx)("div", { className: `${t}`, children: "Can't find runtime" });
-                const { Runtime: i } = r,
-                    a = i.getComponentOverride()[24045];
-                if (!a) return (0, o.jsx)("div", { className: `${t}`, children: "Can't find StoryPager" });
-                const l = (0, n.Z)(e);
-                return (0, o.jsx)(a, { children: l });
-            }
-        },
-        88214: (e, t, r) => {
-            r.d(t, { Z: () => n });
-            var o = r(552322);
-            function n({ p: e, mods: t }) {
-                const r = e.str("t"),
-                    n = e.int("numberOfLines") ?? 2;
-                return (0, o.jsx)("div", { className: `text-text ${t} line-clamp-${n}`, children: r });
-            }
-        },
-        272403: (e, t, r) => {
-            r.d(t, { Z: () => c });
-            var o = r(552322);
-            const n = { RELATIVE: 0, TIME: 1, DATE: 2, PRETTY_DATE: 3 },
-                s = new Intl.DateTimeFormat(void 0, { dateStyle: "medium" }),
-                i = new Intl.DateTimeFormat(void 0, { timeStyle: "short" }),
-                a = new Intl.DateTimeFormat(void 0, { dateStyle: "long" }),
-                l = new Intl.DateTimeFormat(void 0, { month: "short", day: "numeric" });
-            function c({ p: e, mods: t }) {
-                const r = e.date("time") ?? new Date(),
-                    c = e.enum("format") ?? n.DATE,
-                    u = (Date.now() - r.getTime()) / 1e3,
-                    _ = (() => {
-                        switch (c) {
-                            case n.DATE:
-                                return s.format(r);
-                            case n.TIME:
-                                return i.format(r);
-                            case n.PRETTY_DATE:
-                                return a.format(r);
-                            case n.RELATIVE:
-                                return u < 120 ? "1m" : u < 3600 ? `${Math.floor(u / 60)}m` : u < 86400 ? `${Math.floor(u / 3600)}h` : u < 259200 ? `${Math.floor(u / 3600 / 24)}d` : r.getFullYear() === new Date().getFullYear() ? l.format(r) : s.format(r);
-                            default:
-                                return "";
-                        }
-                    })();
-                return (0, o.jsx)("div", { className: t, children: _ });
-            }
-        },
-        26296: (e, t, r) => {
-            r.d(t, { Z: () => s });
-            var o = r(552322),
-                n = r(202784);
-            function s({ p: e, mods: t }) {
-                const r = e.str("src") ?? "",
-                    s = (0, n.useRef)(null);
-                return (
-                    (0, n.useEffect)(() => {
-                        const e = s.current;
-                        if (!e) return;
-                        const t = new IntersectionObserver(
-                            (t) => {
-                                const r = t[0];
-                                r && (r.isIntersecting ? e.play().catch((e) => {}) : e.pause());
-                            },
-                            { threshold: 0.5 },
-                        );
-                        return (
-                            t.observe(e),
-                            () => {
-                                t.disconnect();
-                            }
-                        );
-                    }, []),
-                    (0, o.jsx)("video", { ref: s, src: r, muted: !0, loop: !0, className: `${t} block w-full` })
-                );
-            }
-        },
-        472036: (e, t, r) => {
-            r.d(t, { Z: () => s });
-            var o = r(552322),
-                n = r(801102);
-            function s({ el: e, mods: t }) {
-                return (0, o.jsx)("div", { className: `flex ${t}`, children: (0, n.Z)(e) });
-            }
-        },
-        400441: (e, t, r) => {
-            r.d(t, { Z: () => s });
-            var o = r(552322),
-                n = r(801102);
-            function s({ el: e, mods: t }) {
-                return (0, o.jsx)("div", { className: `flex flex-col ${t}`, children: (0, n.Z)(e) });
-            }
-        },
-        575581: (e, t, r) => {
-            r.d(t, { Z: () => n });
-            var o = r(552322);
-            function n({ mods: e }) {
-                return (0, o.jsx)("div", { className: `${e}`, children: "Fuck VStacks" });
-            }
-        },
-        696281: (e, t, r) => {
-            r.d(t, { Z: () => a });
-            var o = r(552322),
-                n = r(801102),
-                s = r(109195);
-            function i(e, t) {
-                return (0, o.jsx)("div", { className: "" + (t ? "absolute top-0 left-0 right-0 bottom-0" : "static h-full"), children: (0, o.jsx)(s.Z, { el: e }) });
-            }
-            function a({ el: e, mods: t }) {
-                return (0, o.jsx)("div", { className: `relative ${t}`, children: (0, n.Z)(e, i) });
-            }
-        },
-        373461: (e, t, r) => {
-            r.d(t, { Z: () => c });
-            var o = r(552322),
-                n = r(122883),
-                s = r(608222),
-                i = r(202784),
-                a = r(366665),
-                l = r(109195);
-            function c({ url: e }) {
-                const t = (0, s.o)(),
-                    [r, c] = (0, i.useState)(!0),
-                    [u, _] = (0, i.useState)(null),
-                    [d, f] = (0, i.useState)(null);
-                if (!t) return (0, o.jsx)("div", { children: "Runtime context not available" });
-                const { Runtime: m } = t;
-                if (!m) return (0, o.jsx)("div", { children: "Runtime not available" });
-                const p = (0, n.vz)(m);
-                return (
-                    (0, i.useEffect)(() => {
-                        e &&
-                            (async () => {
-                                c(!0);
-                                try {
-                                    const t = p.session(),
-                                        r = await m.net.httpGet(e);
-                                    r.data && t.onChunk(new Uint8Array(r.data)), f(p.root.value), c(!1);
-                                } catch (e) {
-                                    c(!1), _(e instanceof Error ? e : new Error(String(e)));
-                                }
-                            })();
-                    }, [e]),
-                    r ? (0, o.jsx)(a.P, {}) : u ? (0, o.jsxs)("div", { children: ["Error: ", u.message] }) : (0, o.jsx)(l.Z, { el: d })
-                );
-            }
-        },
-        287359: (e, t, r) => {
-            r.d(t, { q: () => a });
-            var o = r(202784);
+        287359: (e, t, a) => {
+            a.d(t, { q: () => l });
+            var i = a(202784);
             function n(e, t) {
                 return "function" == typeof e ? e(t) : e && (e.current = t), e;
             }
-            var s = "undefined" != typeof window ? o.useLayoutEffect : o.useEffect,
-                i = new WeakMap();
-            function a(e, t) {
-                var r,
-                    a,
+            var r = "undefined" != typeof window ? i.useLayoutEffect : i.useEffect,
+                o = new WeakMap();
+            function l(e, t) {
+                var a,
                     l,
+                    s,
                     c =
-                        ((r = t || null),
-                        (a = function (t) {
+                        ((a = t || null),
+                        (l = function (t) {
                             return e.forEach(function (e) {
                                 return n(e, t);
                             });
                         }),
-                        ((l = (0, o.useState)(function () {
+                        ((s = (0, i.useState)(function () {
                             return {
-                                value: r,
-                                callback: a,
+                                value: a,
+                                callback: l,
                                 facade: {
                                     get current() {
-                                        return l.value;
+                                        return s.value;
                                     },
                                     set current(e) {
-                                        var t = l.value;
-                                        t !== e && ((l.value = e), l.callback(e, t));
+                                        var t = s.value;
+                                        t !== e && ((s.value = e), s.callback(e, t));
                                     },
                                 },
                             };
-                        })[0]).callback = a),
-                        l.facade);
+                        })[0]).callback = l),
+                        s.facade);
                 return (
-                    s(
+                    r(
                         function () {
-                            var t = i.get(c);
+                            var t = o.get(c);
                             if (t) {
-                                var r = new Set(t),
-                                    o = new Set(e),
-                                    s = c.current;
-                                r.forEach(function (e) {
-                                    o.has(e) || n(e, null);
+                                var a = new Set(t),
+                                    i = new Set(e),
+                                    r = c.current;
+                                a.forEach(function (e) {
+                                    i.has(e) || n(e, null);
                                 }),
-                                    o.forEach(function (e) {
-                                        r.has(e) || n(e, s);
+                                    i.forEach(function (e) {
+                                        a.has(e) || n(e, r);
                                     });
                             }
-                            i.set(c, e);
+                            o.set(c, e);
                         },
                         [e],
                     ),
@@ -1784,95 +1932,95 @@
                 );
             }
         },
-        757758: (e, t, r) => {
-            r.d(t, { L: () => i });
-            var o = r(305163),
-                n = r(202784),
-                s = function (e) {
+        757758: (e, t, a) => {
+            a.d(t, { L: () => o });
+            var i = a(305163),
+                n = a(202784),
+                r = function (e) {
                     var t = e.sideCar,
-                        r = (0, o._T)(e, ["sideCar"]);
+                        a = (0, i._T)(e, ["sideCar"]);
                     if (!t) throw new Error("Sidecar: please provide `sideCar` property to import the right car");
-                    var s = t.read();
-                    if (!s) throw new Error("Sidecar medium not found");
-                    return n.createElement(s, (0, o.pi)({}, r));
+                    var r = t.read();
+                    if (!r) throw new Error("Sidecar medium not found");
+                    return n.createElement(r, (0, i.pi)({}, a));
                 };
-            function i(e, t) {
-                return e.useMedium(t), s;
+            function o(e, t) {
+                return e.useMedium(t), r;
             }
-            s.isSideCarExport = !0;
+            r.isSideCarExport = !0;
         },
-        964597: (e, t, r) => {
-            r.d(t, { _: () => i });
-            var o = r(305163);
+        964597: (e, t, a) => {
+            a.d(t, { _: () => o });
+            var i = a(305163);
             function n(e) {
                 return e;
             }
-            function s(e, t) {
+            function r(e, t) {
                 void 0 === t && (t = n);
-                var r = [],
-                    o = !1;
+                var a = [],
+                    i = !1;
                 return {
                     read: function () {
-                        if (o) throw new Error("Sidecar: could not `read` from an `assigned` medium. `read` could be used only with `useMedium`.");
-                        return r.length ? r[r.length - 1] : e;
+                        if (i) throw new Error("Sidecar: could not `read` from an `assigned` medium. `read` could be used only with `useMedium`.");
+                        return a.length ? a[a.length - 1] : e;
                     },
                     useMedium: function (e) {
-                        var n = t(e, o);
+                        var n = t(e, i);
                         return (
-                            r.push(n),
+                            a.push(n),
                             function () {
-                                r = r.filter(function (e) {
+                                a = a.filter(function (e) {
                                     return e !== n;
                                 });
                             }
                         );
                     },
                     assignSyncMedium: function (e) {
-                        for (o = !0; r.length; ) {
-                            var t = r;
-                            (r = []), t.forEach(e);
+                        for (i = !0; a.length; ) {
+                            var t = a;
+                            (a = []), t.forEach(e);
                         }
-                        r = {
+                        a = {
                             push: function (t) {
                                 return e(t);
                             },
                             filter: function () {
-                                return r;
+                                return a;
                             },
                         };
                     },
                     assignMedium: function (e) {
-                        o = !0;
+                        i = !0;
                         var t = [];
-                        if (r.length) {
-                            var n = r;
-                            (r = []), n.forEach(e), (t = r);
+                        if (a.length) {
+                            var n = a;
+                            (a = []), n.forEach(e), (t = a);
                         }
-                        var s = function () {
-                                var r = t;
-                                (t = []), r.forEach(e);
+                        var r = function () {
+                                var a = t;
+                                (t = []), a.forEach(e);
                             },
-                            i = function () {
-                                return Promise.resolve().then(s);
+                            o = function () {
+                                return Promise.resolve().then(r);
                             };
-                        i(),
-                            (r = {
+                        o(),
+                            (a = {
                                 push: function (e) {
-                                    t.push(e), i();
+                                    t.push(e), o();
                                 },
                                 filter: function (e) {
-                                    return (t = t.filter(e)), r;
+                                    return (t = t.filter(e)), a;
                                 },
                             });
                     },
                 };
             }
-            function i(e) {
+            function o(e) {
                 void 0 === e && (e = {});
-                var t = s(null);
-                return (t.options = (0, o.pi)({ async: !0, ssr: !1 }, e)), t;
+                var t = r(null);
+                return (t.options = (0, i.pi)({ async: !0, ssr: !1 }, e)), t;
             }
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-aaf38a28.3eb626ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-aaf38a28.9dbf7caa.js.map

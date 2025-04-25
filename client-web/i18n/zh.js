@@ -312,7 +312,7 @@
                 f("da8c5244", "借助 Premium 分析，你可以利用智能数据见解来吸引更多关注者。"),
                 f("b081baea", "你错过了一些真知灼见！"),
                 f("d5effffc", "添加徽章"),
-                f("f1dd86b0", "认证你的企业"),
+                f("c3653d44", "认证你的企业"),
                 f("e8070e70", "试用 Premium"),
                 f("ec42820e", "想让更多人看到你的回复？"),
                 f("b0a95418", "通过 Premium 进行回复推广"),
@@ -13251,4 +13251,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh.de2e803a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh.59394bda.js.map

@@ -313,7 +313,7 @@
                 s("da8c5244", "Com as Estatísticas do Premium, você desbloqueia insights de dados inteligentes e ganha seguidores."),
                 s("b081baea", "Você está perdendo insights!"),
                 s("d5effffc", "Adicionar emblema"),
-                s("f1dd86b0", "Verificar sua empresa"),
+                s("c3653d44", "Verificar sua empresa"),
                 s("e8070e70", "Experimente o Premium"),
                 s("ec42820e", "Quer que mais pessoas vejam sua resposta?"),
                 s("b0a95418", "Obtenha a Priorização de Respostas com o Premium"),
@@ -13237,4 +13237,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pt.b532f80a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pt.6fceba4a.js.map

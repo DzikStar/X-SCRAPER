@@ -322,7 +322,7 @@
                 i("da8c5244", "Dzięki funkcji Analizy Premium możesz odblokować inteligentne analizy danych, które pomogą Ci zwiększyć liczbę obserwujących."),
                 i("b081baea", "Tracisz wyniki analiz!"),
                 i("d5effffc", "Dodaj odznakę"),
-                i("f1dd86b0", "Zweryfikuj swoją firmę"),
+                i("c3653d44", "Zweryfikuj swoją firmę"),
                 i("e8070e70", "Wypróbuj subskrypcję Premium"),
                 i("ec42820e", "Chcesz, aby więcej osób zobaczyło Twoją odpowiedź?"),
                 i("b0a95418", "Korzystaj z dostępnej w ramach subskrypcji Premium funkcji Wzmocnienie odpowiedzi"),
@@ -13250,4 +13250,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.52d2d4ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.87f4907a.js.map

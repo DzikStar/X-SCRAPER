@@ -6,21 +6,21 @@
             a.d(t, { V: () => M });
             var s = a(552322),
                 i = a(202784),
-                n = a(993165),
-                l = a(193686),
-                r = a(253511),
-                c = a(793279),
-                o = a(917317),
-                d = a(199705),
-                m = a(713990),
-                u = a(618349),
-                x = a(480329),
-                h = a(933852),
-                p = a(370724),
-                v = a(616048),
-                g = a(445178),
-                f = a(960384),
-                j = a(31674),
+                n = a(436059),
+                l = a(702024),
+                r = a(559274),
+                c = a(358595),
+                o = a(407250),
+                d = a(236379),
+                m = a(323788),
+                u = a(841707),
+                x = a(470675),
+                h = a(529582),
+                p = a(345343),
+                v = a(732837),
+                g = a(136048),
+                f = a(844096),
+                j = a(796309),
                 b = a(430962),
                 y = a(598705),
                 w = a(976389),
@@ -160,7 +160,7 @@
                             className: "flex flex-col gap-4 min-[988px]:hidden w-full px-2",
                             children: e.map((e) => {
                                 const t = e.startTime || e.scheduledStartTime;
-                                return (0, s.jsxs)("div", { className: "flex gap-4 cursor-pointer", onClick: () => o(e.broadcastId), children: [(0, s.jsxs)("div", { className: "relative shrink-0 aspect-video w-2/5 block overflow-hidden rounded-lg", children: [(0, s.jsx)("img", { src: e.imageUrl ?? "", alt: e.title ?? a.broadcastAltText, style: { objectFit: "cover", width: "100%" } }), "Ended" === e.state && e.duration ? (0, s.jsx)("div", { className: "absolute bottom-2 right-2 px-1.5 py-0.5 rounded-md bg-black/75 text-background text-subtext2 font-semibold", children: (0, y.LU)(e.duration) }) : (0, s.jsx)(c.C, { variant: "outline", className: (0, j.cn)("uppercase font-semibold text-background bg-gray-600 border-none absolute bottom-2 right-2 text-[11px]", { "bg-red-600": "Running" === e.state, "bg-yellow-600": "NotStarted" === e.state }), children: e.state && _(a)[e.state] })] }), (0, s.jsxs)("div", { className: "flex flex-col gap-1 justify-start flex-1", children: [(0, s.jsx)("span", { className: "text-subtext1 font-medium line-clamp-1", children: e.title || a.untitledVideo }), (0, s.jsxs)("div", { className: "flex items-center gap-0.5 text-subtext2 text-gray-700", children: [(0, s.jsxs)("span", { children: [D(e.totalViews, a), " ", a.views] }), t && (0, s.jsxs)(s.Fragment, { children: [(0, s.jsx)("span", { className: "mx-1", children: "·" }), (0, s.jsx)(r.E, { timestamp: t, className: "text-subtext2 text-gray-600" })] })] }), (0, s.jsxs)("div", { className: "flex items-center gap-3 text-subtext2 text-gray-600", children: [(0, s.jsxs)("div", { className: "flex items-center gap-1", children: [(0, s.jsx)(p.Z, { className: "size-4" }), (0, s.jsx)("span", { children: D(e.totalViewers, a) })] }), (0, s.jsxs)("div", { className: "flex items-center gap-1", children: [(0, s.jsx)(x.Z, { className: "size-4" }), (0, s.jsxs)("span", { children: [D(e.totalMinsWatched, a), " ", a.mins] })] })] })] })] }, e.broadcastId);
+                                return (0, s.jsxs)("div", { className: "flex gap-4 cursor-pointer", onClick: () => o(e.broadcastId), children: [(0, s.jsxs)("div", { className: "relative shrink-0 aspect-video w-2/5 block overflow-hidden rounded-lg", children: [(0, s.jsx)("img", { src: e.imageUrl ?? "", alt: e.title ?? a.broadcastAltText, style: { objectFit: "cover", width: "100%" } }), "Ended" === e.state && e.duration ? (0, s.jsx)("div", { className: "absolute bottom-2 right-2 px-1.5 py-0.5 rounded-md bg-black/75 text-white text-subtext2", children: (0, y.LU)(e.duration) }) : (0, s.jsx)(c.C, { variant: "outline", className: (0, j.cn)("uppercase font-semibold text-background bg-gray-600 border-none absolute bottom-2 right-2 text-[11px]", { "bg-red-600": "Running" === e.state, "bg-yellow-600": "NotStarted" === e.state }), children: e.state && _(a)[e.state] })] }), (0, s.jsxs)("div", { className: "flex flex-col gap-1 justify-start flex-1", children: [(0, s.jsx)("span", { className: "text-subtext1 font-medium line-clamp-1", children: e.title || a.untitledVideo }), (0, s.jsxs)("div", { className: "flex items-center gap-0.5 text-subtext2 text-gray-700", children: [(0, s.jsxs)("span", { children: [D(e.totalViews, a), " ", a.views] }), t && (0, s.jsxs)(s.Fragment, { children: [(0, s.jsx)("span", { className: "mx-1", children: "·" }), (0, s.jsx)(r.E, { timestamp: t, className: "text-subtext2 text-gray-600" })] })] }), (0, s.jsxs)("div", { className: "flex items-center gap-3 text-subtext2 text-gray-600", children: [(0, s.jsxs)("div", { className: "flex items-center gap-1", children: [(0, s.jsx)(p.Z, { className: "size-4" }), (0, s.jsx)("span", { children: D(e.totalViewers, a) })] }), (0, s.jsxs)("div", { className: "flex items-center gap-1", children: [(0, s.jsx)(x.Z, { className: "size-4" }), (0, s.jsxs)("span", { children: [D(e.totalMinsWatched, a), " ", a.mins] })] })] })] })] }, e.broadcastId);
                             }),
                         }),
                         (0, s.jsxs)(d.iA, {
@@ -204,8 +204,8 @@
             a.d(t, { y: () => h });
             var s = a(552322),
                 i = a(643715),
-                n = a(1468),
-                l = a(217105),
+                n = a(829233),
+                l = a(701883),
                 r = a(202784);
             const { Bar: c, BarChart: o, CartesianGrid: d, XAxis: m, YAxis: u } = i,
                 x = "Views";
@@ -360,10 +360,10 @@
                 p = a(945402),
                 v = a(712667),
                 g = a(598705),
-                f = a(815225),
+                f = a(422821),
                 j = a(86982),
                 b = a(707326),
-                y = a(583429);
+                y = a(385059);
             const w = ({ estimatedRevenueByDay: e = !1 }) => {
                 const { currentMetricData: t, currentTotals: a, prevTotals: i } = (0, x.C)(),
                     { analytics: n } = (0, c.M1)(),
@@ -379,7 +379,7 @@
                     );
                 return (0, s.jsx)(j.E, { metrics: d, currentTotals: a, prevTotals: i, timeSeriesData: t, defaultMetric: "VideoView", ChartComponent: b.q, hoursLabel: n.hours, calculateChanges: g.Q3 });
             };
-            var N = a(193686),
+            var N = a(702024),
                 k = a(524145),
                 S = a(808106),
                 D = a(596017),
@@ -439,9 +439,9 @@
                 return (0, s.jsxs)("div", { className: "bg-gray-0 flex flex-shrink-0 flex-grow flex-col rounded-2xl pr-2 border border-gray-200", children: [(0, s.jsx)("div", { className: "text-subtext1 md:text-body py-4 pl-4 font-medium text-gray-900 md:font-bold", children: t.videoCompletion }), (0, s.jsx)(E.y, { data: a })] });
             }
             var B = a(812115),
-                A = a(199705),
-                P = a(24212),
-                z = a(31674);
+                A = a(236379),
+                P = a(951547),
+                z = a(796309);
             function I({ hasMoreData: e = !1, showNewVideoDetails: t = !1, showEstimatedRevenue: a = !1, videoList: i, onLoadMore: n, newVideoList: r = !1, isLoading: o = !1, videoDetailsPath: d }) {
                 const { analytics: m } = (0, c.M1)(),
                     [u, x] = (0, l.useState)("createdAt"),
@@ -602,4 +602,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-e0d0963f.1c88dc8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-e0d0963f.d96461da.js.map

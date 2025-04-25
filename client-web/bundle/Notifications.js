@@ -14,10 +14,10 @@
                 i = a.n(l),
                 t = a(698891);
             const u = "settingsAppBar",
-                c = i().bb081ea2,
-                s = n.memo(({ onPress: e, pullRight: d, to: a }) => n.createElement(o.ZP, { "aria-label": c, hoverLabel: { label: c }, icon: n.createElement(t.default, null), link: a, onPress: e, pullRight: d, style: b.button, testID: u, type: "primaryText" })),
+                s = i().bb081ea2,
+                c = n.memo(({ onPress: e, pullRight: d, to: a }) => n.createElement(o.ZP, { "aria-label": s, hoverLabel: { label: s }, icon: n.createElement(t.default, null), link: a, onPress: e, pullRight: d, style: b.button, testID: u, type: "primaryText" })),
                 b = r.default.create((e) => ({ button: { marginVertical: `calc(-${e.spaces.space12})` } })),
-                p = s;
+                p = c;
         },
         789831: (e, d, a) => {
             "use strict";
@@ -28,10 +28,10 @@
                 l = a(392237),
                 i = a(655352);
             const t = l.default.create((e) => ({ root: { paddingBottom: `calc(${e.spaces.space64} + ${e.spaces.space20} * 2)` } })),
-                u = ({ children: e, component: d, fab: a, shouldRenderFab: l = !0, style: u, withoutBottomPadding: c, ...s }) => {
+                u = ({ children: e, component: d, fab: a, shouldRenderFab: l = !0, style: u, withoutBottomPadding: s, ...c }) => {
                     const b = d || r.Z,
                         p = l && !(0, i.ZP)();
-                    return o.createElement(b, (0, n.Z)({}, s, { style: [p && !c && t.root, u] }), e, p ? a : null);
+                    return o.createElement(b, (0, n.Z)({}, c, { style: [p && !s && t.root, u] }), e, p ? a : null);
                 };
         },
         817682: (e, d, a) => {
@@ -44,24 +44,24 @@
                 i = a(529356),
                 t = a(392237),
                 u = a(674132),
-                c = a.n(u),
-                s = a(890899),
+                s = a.n(u),
+                c = a(890899),
                 b = a(616894),
                 p = a(165243),
                 h = a(725516);
-            const D = c().aed79c54,
-                m = c().h12044a4,
-                S = c().f100e566,
-                A = c().a0d68f4e,
-                w = c().b00255b6,
-                y = c().geea29ee,
-                M = c().c54678e8,
-                f = c().ga4fa180,
-                g = c().h8dde772,
-                B = c().i859a9d4,
-                _ = (0, r.ju)("https://help.x.com/using-twitter/mentions-and-replies#mention-control"),
-                v = () => n.createElement(n.Fragment, null, n.createElement(l.ZP, null, m), n.createElement(o.Z, { style: C.details }, n.createElement(s.default, { style: C.icon }), n.createElement(o.Z, null, n.createElement(l.ZP, { style: C.title }, S), n.createElement(l.ZP, null, A)), n.createElement(b.default, { style: C.icon }), n.createElement(o.Z, null, n.createElement(l.ZP, { style: C.title }, w), n.createElement(l.ZP, null, y)), n.createElement(p.default, { style: C.icon }), n.createElement(o.Z, null, n.createElement(l.ZP, { style: C.title }, M), n.createElement(l.ZP, null, f)))),
-                k = () => n.createElement(o.Z, { style: C.footerContainer }, n.createElement(l.ZP, { align: "center" }, g, " ", n.createElement(l.ZP, { color: "text", link: _, style: C.footerLearnMoreLink, withUnderline: !0 }, B))),
+            const D = s().aed79c54,
+                m = s().h12044a4,
+                S = s().f100e566,
+                A = s().a0d68f4e,
+                w = s().b00255b6,
+                y = s().geea29ee,
+                M = s().c54678e8,
+                f = s().ga4fa180,
+                g = s().h8dde772,
+                _ = s().i859a9d4,
+                B = (0, r.ju)("https://help.x.com/using-twitter/mentions-and-replies#mention-control"),
+                v = () => n.createElement(n.Fragment, null, n.createElement(l.ZP, null, m), n.createElement(o.Z, { style: C.details }, n.createElement(c.default, { style: C.icon }), n.createElement(o.Z, null, n.createElement(l.ZP, { style: C.title }, S), n.createElement(l.ZP, null, A)), n.createElement(b.default, { style: C.icon }), n.createElement(o.Z, null, n.createElement(l.ZP, { style: C.title }, w), n.createElement(l.ZP, null, y)), n.createElement(p.default, { style: C.icon }), n.createElement(o.Z, null, n.createElement(l.ZP, { style: C.title }, M), n.createElement(l.ZP, null, f)))),
+                k = () => n.createElement(o.Z, { style: C.footerContainer }, n.createElement(l.ZP, { align: "center" }, g, " ", n.createElement(l.ZP, { color: "text", link: B, style: C.footerLearnMoreLink, withUnderline: !0 }, _))),
                 P = () => n.createElement(l.ZP, { style: C.headline }, D),
                 C = t.default.create((e) => ({ details: { display: "grid", gridTemplateColumns: "auto auto", gridColumnGap: e.spaces.space24, gridRowGap: e.spaces.space24, paddingTop: e.spaces.space32 }, footerContainer: { display: "flex", alignItems: "center" }, footerLearnMoreLink: { whiteSpace: "nowrap" }, headline: { fontSize: e.fontSizes.title2 }, icon: { color: e.colors.text, width: e.spaces.space24, height: e.spacesPx.space24 }, image: { width: "100%" }, title: { color: e.colors.text, fontSize: e.fontSizes.headline2, fontWeight: e.fontWeights.medium, paddingBottom: e.spaces.space4 } })),
                 I = (e) => {
@@ -75,7 +75,7 @@
                                   t.scribeAction("secondary_cta"), r?.(e);
                               }
                             : void 0,
-                        c = o
+                        s = o
                             ? () => {
                                   t.scribeAction("close"), o();
                               }
@@ -89,7 +89,7 @@
                         onAction: (e) => {
                             t.scribeAction("primary_cta"), a(e);
                         },
-                        onClose: c,
+                        onClose: s,
                         onSecondaryAction: u,
                         secondaryActionLabel: l,
                         subtext: n.createElement(v, null),
@@ -121,11 +121,11 @@
                 i = a(537392),
                 t = a(392237),
                 u = a(365023),
-                c = a(392027),
-                s = a(774654),
+                s = a(392027),
+                c = a(774654),
                 b = a(725516),
                 p = a(443781);
-            const h = t.default.create((e) => ({ root: { marginHorizontal: "auto", width: "100%" }, rootMedium: { position: "absolute", bottom: 0, start: 0, end: 0 }, rootLarge: { maxWidth: 1e3 }, fabStaysAboveSafeArea: { top: `calc(${t.default.iPhoneOffsetBottom} - ${s.ZM.getAppBarHeight()} - ${e.spaces.space20})` }, fab: { bottom: e.spaces.space20, alignSelf: "flex-end", end: e.spaces.space20 }, fabLarge: { end: e.spaces.space20 }, fabMicro: { bottom: e.spaces.space16, end: e.spaces.space16 }, buttonMicro: { height: e.spaces.space40, width: e.spaces.space40 } })),
+            const h = t.default.create((e) => ({ root: { marginHorizontal: "auto", width: "100%" }, rootMedium: { position: "absolute", bottom: 0, start: 0, end: 0 }, rootLarge: { maxWidth: 1e3 }, fabStaysAboveSafeArea: { top: `calc(${t.default.iPhoneOffsetBottom} - ${c.ZM.getAppBarHeight()} - ${e.spaces.space20})` }, fab: { bottom: e.spaces.space20, alignSelf: "flex-end", end: e.spaces.space20 }, fabLarge: { end: e.spaces.space20 }, fabMicro: { bottom: e.spaces.space16, end: e.spaces.space16 }, buttonMicro: { height: e.spaces.space40, width: e.spaces.space40 } })),
                 D = (e) => {
                     const { "aria-label": d, label: a, onPress: D, scribeComponent: m, ...S } = e,
                         { loggedInUserId: A } = o.useContext(p.rC),
@@ -136,8 +136,8 @@
                             },
                             [w, D, m],
                         ),
-                        M = s.ZM.useCollapsibleNavBars(),
-                        f = [...s.Ah({ elementPosition: "bottom" }), M && h.fabStaysAboveSafeArea];
+                        M = c.ZM.useCollapsibleNavBars(),
+                        f = [...c.Ah({ elementPosition: "bottom" }), M && h.fabStaysAboveSafeArea];
                     return A
                         ? o.createElement(
                               l.Z.FloatingAction,
@@ -145,13 +145,13 @@
                               o.createElement(i.ZP, null, ({ windowWidth: e }) => {
                                   const l = e > t.default.theme.breakpoints.large,
                                       i = e > t.default.theme.breakpoints.medium,
-                                      s = e < t.default.theme.breakpoints.micro,
+                                      c = e < t.default.theme.breakpoints.micro,
                                       b = [h.root, i && h.rootMedium, l && h.rootLarge],
-                                      p = [h.fab, l && h.fabLarge, s && h.fabMicro, f];
+                                      p = [h.fab, l && h.fabLarge, c && h.fabMicro, f];
                                   return o.createElement(
                                       r.Z,
                                       { "aria-label": d, pointerEvents: "box-none", role: "complementary", style: b },
-                                      o.createElement(u.Z, { id: "FloatingActionButtonBase" }, (e, i) => o.createElement(r.Z, (0, n.Z)({ ref: e() }, i({ style: p })), o.createElement(c.Z, (0, n.Z)({}, S, { "aria-label": d, label: l ? a : void 0, onPress: y, style: s && h.buttonMicro })))),
+                                      o.createElement(u.Z, { id: "FloatingActionButtonBase" }, (e, i) => o.createElement(r.Z, (0, n.Z)({ ref: e() }, i({ style: p })), o.createElement(s.Z, (0, n.Z)({}, S, { "aria-label": d, label: l ? a : void 0, onPress: y, style: c && h.buttonMicro })))),
                                   );
                               }),
                           )
@@ -185,7 +185,7 @@
         },
         32677: (e, d, a) => {
             "use strict";
-            a.d(d, { Z: () => s });
+            a.d(d, { Z: () => c });
             var n = a(202784),
                 o = a(674132),
                 r = a.n(o),
@@ -193,8 +193,8 @@
                 i = a(355883);
             const t = r().j0179e90,
                 u = r().ee69d769({ verb: "" }),
-                c = n.createElement(l.default, null),
-                s = ({ getLocationState: e, history: d }) => n.createElement(i.Z, { "aria-label": t, getLocationState: e, history: d, icon: c, label: u, scribeComponent: "floating_compose_button" });
+                s = n.createElement(l.default, null),
+                c = ({ getLocationState: e, history: d }) => n.createElement(i.Z, { "aria-label": t, getLocationState: e, history: d, icon: s, label: u, scribeComponent: "floating_compose_button" });
         },
         635510: (e, d, a) => {
             "use strict";
@@ -203,7 +203,7 @@
         },
         652904: (e, d, a) => {
             "use strict";
-            a.d(d, { Z: () => c });
+            a.d(d, { Z: () => s });
             var n = a(202784),
                 o = a(500002),
                 r = a(668214),
@@ -240,11 +240,11 @@
                 }
             }
             u.defaultProps = { children: null };
-            const c = (0, o.ZP)(t(u));
+            const s = (0, o.ZP)(t(u));
         },
         927389: (e, d, a) => {
             "use strict";
-            a.d(d, { Z: () => c });
+            a.d(d, { Z: () => s });
             var n = a(202784),
                 o = a(247056),
                 r = a(392237);
@@ -252,11 +252,11 @@
             var i = a(725516),
                 t = a(851623);
             const u = r.default.create((e) => ({ curationControl: { marginStart: e.spaces.space20 } })),
-                c = (0, i.Z)((e) => {
+                s = (0, i.Z)((e) => {
                     const { analytics: d, feedbackItems: a, isDisplayedOnMedia: r } = e,
                         i = n.useCallback((e) => (a ? n.createElement(l, { actionItems: a, onClose: e }) : null), [a]),
-                        c = n.useCallback(() => d.scribe({ element: "caret", action: "click" }), [d]);
-                    return a && a.length > 0 ? n.createElement(o.Z, { onClick: c, renderActionMenu: i, style: u.curationControl, testID: t.Z.caret, withDarkBackground: r }) : null;
+                        s = n.useCallback(() => d.scribe({ element: "caret", action: "click" }), [d]);
+                    return a && a.length > 0 ? n.createElement(o.Z, { onClick: s, renderActionMenu: i, style: u.curationControl, testID: t.Z.caret, withDarkBackground: r }) : null;
                 });
         },
         337455: (e, d, a) => {
@@ -326,7 +326,7 @@
         },
         451275: (e, d, a) => {
             "use strict";
-            a.r(d), a.d(d, { NOTIFICATIONS_CONTEXT: () => A, NOTIFICATIONS_PERFKEY: () => w, default: () => B, fetchAllNotificationsTimeline: () => g, notificationsModule: () => M, updateLastSeenCursor: () => f });
+            a.r(d), a.d(d, { NOTIFICATIONS_CONTEXT: () => A, NOTIFICATIONS_PERFKEY: () => w, default: () => _, fetchAllNotificationsTimeline: () => g, notificationsModule: () => M, updateLastSeenCursor: () => f });
             var n = a(516951),
                 o = a(414742),
                 r = a(715551),
@@ -342,8 +342,8 @@
                         });
                     },
                 });
-            var c = a(644829),
-                s = a(750085),
+            var s = a(644829),
+                c = a(750085),
                 b = a(615656),
                 p = a(71620),
                 h = a(192337),
@@ -360,7 +360,7 @@
                 ]),
                 M = (e = S.l.All, d = void 0) => {
                     const a = y.get(e) || "All";
-                    return (0, D.Z)({ timelineId: `notifications-${e}-${d ?? ""}`, network: { getEndpoint: (e) => e.withEndpoint(u).fetchNotifications, getEndpointParams: ({ count: e, cursor: n, polling: o }) => ({ count: e, cursor: "string" == typeof n ? n : void 0, timelineType: a, userId: d }) }, formatResponse: s.Z, postFetchAction: m.Z, context: "FETCH_NOTIFICATIONS_TIMELINE", perfKey: "notifications", staleIntervalMs: 5e3, actAsUserId: d });
+                    return (0, D.Z)({ timelineId: `notifications-${e}-${d ?? ""}`, network: { getEndpoint: (e) => e.withEndpoint(u).fetchNotifications, getEndpointParams: ({ count: e, cursor: n, polling: o }) => ({ count: e, cursor: "string" == typeof n ? n : void 0, timelineType: a, userId: d }) }, formatResponse: c.Z, postFetchAction: m.Z, context: "FETCH_NOTIFICATIONS_TIMELINE", perfKey: "notifications", staleIntervalMs: 5e3, actAsUserId: d });
                 },
                 f =
                     (e = S.l.All, d = void 0) =>
@@ -370,11 +370,11 @@
                         if (i) {
                             const d = { cursor: h.NA(i), type: e },
                                 o = a((0, p.zr)("APP_UPDATE_NOTIFICATION_LAST_READ")({ [b.ZP.AppInReadOnlyMode]: { customAction: n.Z } }));
-                            r.withEndpoint(c.Z).updateNotificationsLastSeenCursor(d).catch(o);
+                            r.withEndpoint(s.Z).updateNotificationsLastSeenCursor(d).catch(o);
                         }
                     },
                 g = M(S.l.All).fetchInitialOrTop,
-                B = M(S.l.All);
+                _ = M(S.l.All);
         },
         853292: (e, d, a) => {
             "use strict";
@@ -408,8 +408,8 @@
                 i = a.n(l),
                 t = a(233935),
                 u = a(718e3),
-                c = a(789831),
-                s = a(252021),
+                s = a(789831),
+                c = a(252021),
                 b = a(507651),
                 p = a(443781),
                 h = a(32677),
@@ -424,8 +424,8 @@
             const g = (0, y.Z)()
                 .propsFromState(() => ({ allNotificationsUnreadCount: M.pm, isLoggedInUserActiveCreator: f.WM }))
                 .withAnalytics({ page: "ntab" });
-            var B = a(198368);
-            const _ = i().eb75875e,
+            var _ = a(198368);
+            const B = i().eb75875e,
                 v = i().f8321d82,
                 k = i().cdb53d7a,
                 P = i().h3290872,
@@ -513,17 +513,16 @@
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8d854c2e"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-aaf38a28"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-aeee0c9e"),
+                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2652b27c"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-da0e99d8"),
-                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-4b805c4b"),
+                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-3931c1f3"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-c377d397"),
-                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8c219810"),
-                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-9b4c2397"),
-                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-c2fdd616"),
-                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-70774d80"),
-                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-92c1aea7"),
-                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8767a721"),
-                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-d5c922ba"),
-                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-e9891f16"),
+                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-e4b9a405"),
+                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-f17e8d44"),
+                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-f39972b2"),
+                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-568e95f0"),
+                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1895c9ee"),
+                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8fe22a9e"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-0a8205ef"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-5719ea67"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1b6af858"),
@@ -642,17 +641,16 @@
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8d854c2e"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-aaf38a28"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-aeee0c9e"),
+                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2652b27c"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-da0e99d8"),
-                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-4b805c4b"),
+                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-3931c1f3"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-c377d397"),
-                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8c219810"),
-                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-9b4c2397"),
-                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-c2fdd616"),
-                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-70774d80"),
-                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-92c1aea7"),
-                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8767a721"),
-                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-d5c922ba"),
-                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-e9891f16"),
+                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-e4b9a405"),
+                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-f17e8d44"),
+                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-f39972b2"),
+                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-568e95f0"),
+                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1895c9ee"),
+                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8fe22a9e"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-0a8205ef"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-5719ea67"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1b6af858"),
@@ -771,17 +769,16 @@
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8d854c2e"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-aaf38a28"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-aeee0c9e"),
+                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2652b27c"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-da0e99d8"),
-                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-4b805c4b"),
+                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-3931c1f3"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-c377d397"),
-                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8c219810"),
-                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-9b4c2397"),
-                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-c2fdd616"),
-                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-70774d80"),
-                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-92c1aea7"),
-                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8767a721"),
-                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-d5c922ba"),
-                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-e9891f16"),
+                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-e4b9a405"),
+                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-f17e8d44"),
+                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-f39972b2"),
+                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-568e95f0"),
+                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1895c9ee"),
+                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8fe22a9e"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-0a8205ef"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-5719ea67"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1b6af858"),
@@ -900,17 +897,16 @@
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8d854c2e"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-aaf38a28"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-aeee0c9e"),
+                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2652b27c"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-da0e99d8"),
-                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-4b805c4b"),
+                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-3931c1f3"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-c377d397"),
-                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8c219810"),
-                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-9b4c2397"),
-                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-c2fdd616"),
-                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-70774d80"),
-                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-92c1aea7"),
-                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8767a721"),
-                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-d5c922ba"),
-                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-e9891f16"),
+                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-e4b9a405"),
+                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-f17e8d44"),
+                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-f39972b2"),
+                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-568e95f0"),
+                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1895c9ee"),
+                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8fe22a9e"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-0a8205ef"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-5719ea67"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1b6af858"),
@@ -949,11 +945,11 @@
                         { shouldMigrateToX: !1 },
                     ),
                 ),
-                N = { to: B._N, key: v, label: v, retainScrollPosition: !1 },
-                F = { to: B.JV, key: k, label: k, retainScrollPosition: !1 },
-                z = { to: B.JK, key: P, label: P, retainScrollPosition: !1 },
-                W = { to: B.ag, key: C, label: C, retainScrollPosition: !1 },
-                H = () => n.createElement(A.Z, { to: B._N }),
+                N = { to: _._N, key: v, label: v, retainScrollPosition: !1 },
+                F = { to: _.JV, key: k, label: k, retainScrollPosition: !1 },
+                z = { to: _.JK, key: P, label: P, retainScrollPosition: !1 },
+                W = { to: _.ag, key: C, label: C, retainScrollPosition: !1 },
+                H = () => n.createElement(A.Z, { to: _._N }),
                 O = (e) => {
                     const { featureSwitches: d } = n.useContext(p.rC),
                         { history: a, isLoggedInUserActiveCreator: l } = e,
@@ -964,17 +960,17 @@
                             return t && e.splice(2, 0, W), e;
                         }, [t]),
                         A = t ? L : H,
-                        w = n.createElement(o.Switch, null, n.createElement(o.Route, { component: R, exact: !0, path: B._N }), n.createElement(o.Route, { component: Z, exact: !0, path: B.JV }), n.createElement(o.Route, { component: x, exact: !0, path: B.JK }), n.createElement(o.Route, { component: A, exact: !0, path: B.ag }), n.createElement(o.Route, { component: H, exact: !0, path: B.Im })),
+                        w = n.createElement(o.Switch, null, n.createElement(o.Route, { component: R, exact: !0, path: _._N }), n.createElement(o.Route, { component: Z, exact: !0, path: _.JV }), n.createElement(o.Route, { component: x, exact: !0, path: _.JK }), n.createElement(o.Route, { component: A, exact: !0, path: _.ag }), n.createElement(o.Route, { component: H, exact: !0, path: _.Im })),
                         y = n.useMemo(() => n.createElement(b.Z, { alignFirstItem: (0, m.ZP)(), "aria-label": I, links: S }), [S]);
                     return n.createElement(
                         D.Z,
                         null,
-                        n.createElement(s.Z, {
-                            documentTitle: _,
+                        n.createElement(c.Z, {
+                            documentTitle: B,
                             history: a,
                             primaryContent: (() => {
                                 const e = n.createElement(h.Z, { history: a });
-                                return n.createElement(c.Z, { component: r.Z, fab: e }, w);
+                                return n.createElement(s.Z, { component: r.Z, fab: e }, w);
                             })(),
                             rightControl: T,
                             secondaryBar: y,
@@ -995,8 +991,8 @@
                 i = a(674132),
                 t = a.n(i),
                 u = a(325686),
-                c = a(913309),
-                s = a(392237),
+                s = a(913309),
+                c = a(392237),
                 b = a(927389),
                 p = a(293115),
                 h = a(725516);
@@ -1016,11 +1012,11 @@
             const M = "leave_this_conversation_inline_education",
                 f = t().j24c37b2,
                 g = t().e839db3a,
-                B = t().eba8b1c8,
-                _ = t().i859a9d4,
+                _ = t().eba8b1c8,
+                B = t().i859a9d4,
                 v = t().j745b8a6,
                 k = ({ onClose: e }) => n.createElement(p.nO, { namespace: { element: "leave_this_conversation_education_sheet" } }, n.createElement(y.Z, { actionLabel: f, onAction: e, onClose: e })),
-                P = s.default.create((e) => ({ footerLearnMoreLink: { whiteSpace: "nowrap" }, wrapper: { borderBottomColor: e.colors.borderColor, borderBottomWidth: e.borderWidths.small } })),
+                P = c.default.create((e) => ({ footerLearnMoreLink: { whiteSpace: "nowrap" }, wrapper: { borderBottomColor: e.colors.borderColor, borderBottomWidth: e.borderWidths.small } })),
                 C = (e) => {
                     const { onDismiss: d } = e,
                         [a, r] = n.useState(!1),
@@ -1048,8 +1044,8 @@
                         n.createElement(
                             u.Z,
                             { style: P.wrapper },
-                            n.createElement(c.Z, {
-                                headline: B,
+                            n.createElement(s.Z, {
+                                headline: _,
                                 image: w.image,
                                 imageVariants: w.customVariants,
                                 rightControl: n.createElement(b.Z, { feedbackItems: i, isDisplayedOnMedia: !0 }),
@@ -1071,7 +1067,7 @@
                                             withInteractiveStyling: !0,
                                             withUnderline: !0,
                                         },
-                                        _,
+                                        B,
                                     ),
                                 ),
                             }),
@@ -1236,9 +1232,9 @@
                 r = a(392237);
             class l extends n.PureComponent {
                 render() {
-                    const { "aria-label": e, backgroundColor: d, color: a, disabled: r, href: l, icon: t, label: u, onPress: c, renderMenu: s, style: b, testID: p } = this.props,
+                    const { "aria-label": e, backgroundColor: d, color: a, disabled: r, href: l, icon: t, label: u, onPress: s, renderMenu: c, style: b, testID: p } = this.props,
                         h = ((e, d) => ("primary" === e && "white" === d ? "whiteOnColor" : "white" === e && "primary" === d ? "primaryOnWhite" : d))(d, a);
-                    return n.createElement(o.ZP, { "aria-label": e, backgroundColor: d, color: h, disabled: r, icon: t, link: l, onPress: c, renderMenu: s, size: "xLarge", style: [i.root, !u && i.iconOnly, b], testID: p }, u);
+                    return n.createElement(o.ZP, { "aria-label": e, backgroundColor: d, color: h, disabled: r, icon: t, link: l, onPress: s, renderMenu: c, size: "xLarge", style: [i.root, !u && i.iconOnly, b], testID: p }, u);
                 }
             }
             l.defaultProps = { backgroundColor: "primary", color: "white", disabled: !1 };
@@ -1255,8 +1251,8 @@
                 i = a(439592),
                 t = a(154003),
                 u = a(392237),
-                c = a(444178);
-            const s = "inlinePrompt",
+                s = a(444178);
+            const c = "inlinePrompt",
                 b = "inlinePrompt-primaryAction",
                 p = "inlinePrompt-secondaryAction",
                 h = "inlinePrompt-centeredImageContainer";
@@ -1265,7 +1261,7 @@
                     super(...e),
                         (this._renderImage = (e, d, a) => {
                             let l = n.createElement(r.Z, { "aria-label": "", aspectMode: i.Z.exact(e.width / e.height), backgroundColor: e.backgroundColor, customVariants: d, image: e });
-                            return a && (l = n.createElement(c.Z, { link: a, role: "" }, " ", l)), e.isCentered ? n.createElement(o.Z, { style: m.centeredImage, testID: h }, n.createElement(o.Z, { style: { width: `${e.width}px`, height: `${e.height}px`, ...e.style } }, l)) : e.style ? n.createElement(o.Z, { style: e.style }, l) : l;
+                            return a && (l = n.createElement(s.Z, { link: a, role: "" }, " ", l)), e.isCentered ? n.createElement(o.Z, { style: m.centeredImage, testID: h }, n.createElement(o.Z, { style: { width: `${e.width}px`, height: `${e.height}px`, ...e.style } }, l)) : e.style ? n.createElement(o.Z, { style: e.style }, l) : l;
                         }),
                         (this._renderTitle = () => {
                             const { headline: e } = this.props;
@@ -1277,13 +1273,13 @@
                         }),
                         (this._renderAction = ({ action: e, buttonSize: d, buttonType: a, style: r, testID: l }) => {
                             const { secondaryAction: i } = this.props,
-                                { link: u, onClick: c, text: s } = e;
-                            return n.createElement(o.Z, { style: [this.styles.actionContainer, r, { justifyContent: "flex-start" }], testID: l }, n.createElement(t.ZP, { link: u, onPress: c, size: d, style: { width: i ? "100%" : "auto" }, type: a }, s));
+                                { link: u, onClick: s, text: c } = e;
+                            return n.createElement(o.Z, { style: [this.styles.actionContainer, r, { justifyContent: "flex-start" }], testID: l }, n.createElement(t.ZP, { link: u, onPress: s, size: d, style: { width: i ? "100%" : "auto" }, type: a }, c));
                         });
                 }
                 render() {
-                    const { headline: e, image: d, imageActionUrl: a, imageVariants: r, primaryAction: l, rightControl: i, secondaryAction: t, shouldRenderBorder: u, subtext: c } = this.props;
-                    return n.createElement(o.Z, { style: u ? [S.root, S.rootMargin] : m.root }, n.createElement(n.Fragment, null, d ? this._renderImage(d, r, a) : null, e || c || l || t ? n.createElement(o.Z, { style: this.styles.rootPadding, testID: s }, this._renderTitle(), this._renderBodyText(), l ? this._renderAction({ action: l, buttonType: "primaryFilled", style: this.styles.primaryAction, buttonSize: "large", testID: b }) : null, t ? this._renderAction({ action: t, buttonType: "primaryOutlined", style: this.styles.secondaryAction, buttonSize: "large", testID: p }) : null) : null), i ? n.createElement(o.Z, { style: m.rightControl }, i) : null);
+                    const { headline: e, image: d, imageActionUrl: a, imageVariants: r, primaryAction: l, rightControl: i, secondaryAction: t, shouldRenderBorder: u, subtext: s } = this.props;
+                    return n.createElement(o.Z, { style: u ? [S.root, S.rootMargin] : m.root }, n.createElement(n.Fragment, null, d ? this._renderImage(d, r, a) : null, e || s || l || t ? n.createElement(o.Z, { style: this.styles.rootPadding, testID: c }, this._renderTitle(), this._renderBodyText(), l ? this._renderAction({ action: l, buttonType: "primaryFilled", style: this.styles.primaryAction, buttonSize: "large", testID: b }) : null, t ? this._renderAction({ action: t, buttonType: "primaryOutlined", style: this.styles.secondaryAction, buttonSize: "large", testID: p }) : null) : null), i ? n.createElement(o.Z, { style: m.rightControl }, i) : null);
                 }
                 get styles() {
                     return this.props.isCompact ? w : A;
@@ -1297,7 +1293,7 @@
         },
         403556: (e, d, a) => {
             "use strict";
-            a.d(d, { Z: () => _ });
+            a.d(d, { Z: () => B });
             var n = a(807896),
                 o = a(202784),
                 r = a(194504),
@@ -1305,21 +1301,21 @@
                 i = a(392237),
                 t = a(325686),
                 u = a(674132),
-                c = a.n(u),
-                s = a(912021),
+                s = a.n(u),
+                c = a(912021),
                 b = a(516951),
                 p = a(731708),
                 h = a(310088),
                 D = a(175993),
                 m = a(58881),
                 S = a(530732);
-            const A = c().d2414d31,
-                w = () => c().ce4e85ae,
-                y = c().fb9f6f39;
+            const A = s().d2414d31,
+                w = () => s().ce4e85ae,
+                y = s().fb9f6f39;
             class M extends o.Component {
                 constructor(...e) {
                     super(...e),
-                        (this._getMemoizedLink = (0, s.Z)((e, d) => {
+                        (this._getMemoizedLink = (0, c.Z)((e, d) => {
                             const { pathname: a, query: n, state: o } = "string" == typeof e ? { pathname: e, state: {}, query: {} } : e;
                             return { pathname: a, query: n, method: "push", state: { ...o, lockScroll: d } };
                         })),
@@ -1351,13 +1347,13 @@
                     this._unlisten && this._unlisten();
                 }
                 render() {
-                    const { Icon: e, "aria-label": d, badgeCount: a, badgePip: n, children: r, color: l, isActive: u, isCompact: c, isPillLink: s, isRoundedRect: b, isWebRedesign: D, retainScrollPosition: M, style: g, to: B } = this.props,
-                        { location: _ } = this.state,
-                        v = B ? this._getMemoizedLink(B, M) : void 0,
-                        k = u ? u(B) : _?.pathname === v?.pathname,
+                    const { Icon: e, "aria-label": d, badgeCount: a, badgePip: n, children: r, color: l, isActive: u, isCompact: s, isPillLink: c, isRoundedRect: b, isWebRedesign: D, retainScrollPosition: M, style: g, to: _ } = this.props,
+                        { location: B } = this.state,
+                        v = _ ? this._getMemoizedLink(_, M) : void 0,
+                        k = u ? u(_) : B?.pathname === v?.pathname,
                         P = m.Z.generate({ backgroundColor: "transparent", color: i.default.theme.colors.text, insetFocusRing: !0 }),
                         C = D ? "medium" : k ? "bold" : "medium";
-                    return o.createElement(S.Z, { "aria-label": d, "aria-selected": k, focusable: !!k, interactiveStyles: P, link: v, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [s ? f.pill : f.link, s && k ? f.active : null, c ? (s ? f.compactPill : f.compactLink) : null, b ? f.roundedRect : null, g], withoutInteractiveStyles: D || s }, ({ isFocused: d, isHovered: u }) => o.createElement(t.Z, { style: s && f.flexGrow }, o.createElement(p.ZP, { size: D ? "headline2" : void 0, style: [f.text, { color: this._getTextColor(k, u, D, s) }, c && f.compactText, D && d && f.focusedText], weight: C }, e && o.createElement(e, { style: f.icon }), r, D || s ? null : o.createElement(t.Z, { style: k && [f.border, { backgroundColor: i.default.theme.colors[l] }] })), a ? o.createElement(h.Z, { count: a, standalone: !0, style: [f.badge, a >= 10 && f.multiDigitBadge, a >= 20 && f.truncatedCountBadge], truncatedCountFormatter: y, unreadCountLabel: A, withBorder: !1 }) : n ? o.createElement(h.Z, { pip: !0, standalone: !0, style: f.badgePip, textColor: "red500", unreadCountLabel: w, withBorder: !1 }) : null));
+                    return o.createElement(S.Z, { "aria-label": d, "aria-selected": k, focusable: !!k, interactiveStyles: P, link: v, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [c ? f.pill : f.link, c && k ? f.active : null, s ? (c ? f.compactPill : f.compactLink) : null, b ? f.roundedRect : null, g], withoutInteractiveStyles: D || c }, ({ isFocused: d, isHovered: u }) => o.createElement(t.Z, { style: c && f.flexGrow }, o.createElement(p.ZP, { size: D ? "headline2" : void 0, style: [f.text, { color: this._getTextColor(k, u, D, c) }, s && f.compactText, D && d && f.focusedText], weight: C }, e && o.createElement(e, { style: f.icon }), r, D || c ? null : o.createElement(t.Z, { style: k && [f.border, { backgroundColor: i.default.theme.colors[l] }] })), a ? o.createElement(h.Z, { count: a, standalone: !0, style: [f.badge, a >= 10 && f.multiDigitBadge, a >= 20 && f.truncatedCountBadge], truncatedCountFormatter: y, unreadCountLabel: A, withBorder: !1 }) : n ? o.createElement(h.Z, { pip: !0, standalone: !0, style: f.badgePip, textColor: "red500", unreadCountLabel: w, withBorder: !1 }) : null));
                 }
             }
             (M.contextType = D.Z), (M.defaultProps = { children: [], color: "primary", retainScrollPosition: !0 });
@@ -1380,8 +1376,8 @@
                     roundedRect: { borderRadius: e.borderRadii.large },
                 })),
                 g = M,
-                B = i.default.create((e) => ({ segmentedControl: { borderBottomWidth: e.borderWidths.small, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor }, leftAligned: { alignContent: "start", justifyContent: "start" }, flexGrow: { flexGrow: 1 }, gap: { gap: e.spaces.space8 }, linkRedesign: { paddingHorizontal: e.spaces.space12, alignItems: "start", minWidth: e.spaces.space24 }, firstLinkRedesign: { paddingStart: e.spaces.space16 }, withNoPaddingStart: { paddingStart: 0 } })),
-                _ = ({ alignFirstItem: e, "aria-label": d, isCompact: a, isPillLink: i, isRoundedRect: t, links: u, style: c, visibleItemIndex: s }) => {
+                _ = i.default.create((e) => ({ segmentedControl: { borderBottomWidth: e.borderWidths.small, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor }, leftAligned: { alignContent: "start", justifyContent: "start" }, flexGrow: { flexGrow: 1 }, gap: { gap: e.spaces.space8 }, linkRedesign: { paddingHorizontal: e.spaces.space12, alignItems: "start", minWidth: e.spaces.space24 }, firstLinkRedesign: { paddingStart: e.spaces.space16 }, withNoPaddingStart: { paddingStart: 0 } })),
+                B = ({ alignFirstItem: e, "aria-label": d, isCompact: a, isPillLink: i, isRoundedRect: t, links: u, style: s, visibleItemIndex: c }) => {
                     const b = u
                             .filter(Boolean)
                             .map((e) => e.key)
@@ -1391,14 +1387,14 @@
                         D = o.useMemo(
                             () =>
                                 u.filter(Boolean).map(({ label: d, viewType: r, ...l }, u) => {
-                                    const c = h ? [B.linkRedesign, 0 === u && B.firstLinkRedesign, e && 0 === u && B.withNoPaddingStart] : void 0;
-                                    return o.createElement(g, (0, n.Z)({ viewType: r }, l, { isCompact: a, isPillLink: i, isRoundedRect: t, isWebRedesign: h, style: c }), d);
+                                    const s = h ? [_.linkRedesign, 0 === u && _.firstLinkRedesign, e && 0 === u && _.withNoPaddingStart] : void 0;
+                                    return o.createElement(g, (0, n.Z)({ viewType: r }, l, { isCompact: a, isPillLink: i, isRoundedRect: t, isWebRedesign: h, style: s }), d);
                                 }),
                             [e, a, i, t, h, u],
                         );
-                    return o.createElement(r.Z, { "aria-label": d, buttonsContainerStyle: i && B.gap, childrenStyle: !h && B.flexGrow, key: b, style: [i ? null : B.segmentedControl, h && B.leftAligned, c], visibleItemIndex: s }, D);
+                    return o.createElement(r.Z, { "aria-label": d, buttonsContainerStyle: i && _.gap, childrenStyle: !h && _.flexGrow, key: b, style: [i ? null : _.segmentedControl, h && _.leftAligned, s], visibleItemIndex: c }, D);
                 };
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Notifications.490edb8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Notifications.942809ba.js.map

@@ -204,7 +204,7 @@
                 i = n(529356),
                 l = n(198433),
                 c = n(736063),
-                s = n(554853);
+                s = n(137882);
             const u = (e) => {
                     const t = (0, r.useHistory)(),
                         n = (0, s.b)({}),
@@ -707,4 +707,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-25e67f1f.2ca187ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-25e67f1f.a511a37a.js.map

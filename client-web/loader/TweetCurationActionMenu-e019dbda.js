@@ -99,7 +99,7 @@
                 };
         },
         234410: (e, t, n) => {
-            n.d(t, { Z: () => f });
+            n.d(t, { Z: () => _ });
             var i = n(202784),
                 a = n(325686),
                 o = n(782261),
@@ -113,25 +113,25 @@
                 p = c().dad785a7,
                 h = c().jda253ab,
                 m = c().j49c2f85,
-                _ = c().f9fa0390,
-                f = ({ addToast: e, createLocalApiErrorHandler: t, deleteTweet: n, featureSwitches: r, onDeleteTweet: d, scribeAction: c, tweet: f, userClaims: A }) => {
+                f = c().f9fa0390,
+                _ = ({ addToast: e, createLocalApiErrorHandler: t, deleteTweet: n, featureSwitches: r, onDeleteTweet: d, scribeAction: c, tweet: _, userClaims: A }) => {
                     const S = (A.isTrueAndEnabled("subscriptions_feature_labs_1004") || r.isTrue("responsive_web_edit_tweet_enabled")) && r.isTrue("responsive_web_edit_tweet_composition_enabled"),
                         g = r.isTrue("subscriptions_feature_labs_1004") || r.isTrue("responsive_web_edit_tweet_enabled"),
                         v = r.isTrue("responsive_web_twitter_article_seed_tweet_enabled"),
                         y = o.Z.postEntityName;
                     return {
-                        confirmation: { label: s, headline: u({ entity: y }), text: o.Z.getOriginalTweet(f).isEdited && (S || g) ? p({ entity: y }) : v && o.Z.isArticlePost(f) ? i.createElement(i.Fragment, null, b, i.createElement(a.Z, { style: w.additionalInfo }, _)) : b, confirmButtonType: "destructiveFilled" },
+                        confirmation: { label: s, headline: u({ entity: y }), text: o.Z.getOriginalTweet(_).isEdited && (S || g) ? p({ entity: y }) : v && o.Z.isArticlePost(_) ? i.createElement(i.Fragment, null, b, i.createElement(a.Z, { style: w.additionalInfo }, f)) : b, confirmButtonType: "destructiveFilled" },
                         isEmphasized: !0,
                         text: s,
                         onClick: () => {
-                            n(f.id_str).then(
+                            n(_.id_str).then(
                                 () => {
                                     e({ text: h({ entity: y }) });
                                 },
                                 t({ defaultToast: { text: m({ entity: y }) }, showToast: !0 }),
                             ),
                                 c({ element: "delete" }),
-                                d && d(f.id_str);
+                                d && d(_.id_str);
                         },
                         Icon: l.default,
                     };
@@ -316,30 +316,30 @@
                 p = c().j136c720,
                 h = c().d66f0338,
                 m = `${c().cfc8cb50}\n\n${c().if8dc5f0}`,
-                _ = (0, a.ju)("https://help.x.com/using-twitter/mentions-and-replies?lang=browser#hidden-reply"),
-                f = c().b2615c6d,
+                f = (0, a.ju)("https://help.x.com/using-twitter/mentions-and-replies?lang=browser#hidden-reply"),
+                _ = c().b2615c6d,
                 w = c().i62a03aa,
                 A = c().cfd2f35e,
                 S = c().a6450e84,
                 g = c().g353ad73,
                 v = c().ad00a739,
-                y = ({ addFlag: e, addToast: t, createLocalApiErrorHandler: n, hideReply: a, isSoftBlockEnabled: d, onBlock: c, onTweetDismiss: y, scribeAction: C, shouldShowHideReplyTip: D, tweet: T }) => {
+                y = ({ addFlag: e, addToast: t, createLocalApiErrorHandler: n, hideReply: a, isSoftBlockEnabled: d, onBlock: c, onTweetDismiss: y, scribeAction: C, shouldShowHideReplyTip: T, tweet: D }) => {
                     const Z = () => {
                         C({ element: "moderated_replies_prompt", action: "impression" });
                     };
                     return {
-                        confirmation: D
-                            ? { render: (e, t) => (({ onConfirm: e, onCancel: t, onHideReplyImpression: n = () => {} }) => i.createElement(o.Z, { actionLabel: b, graphic: l.default, headline: h, onAction: e, onClose: t, onImpression: n, onTertiaryAction: t, subtext: m, supportUrl: _, tertiaryActionLabel: A }))({ onConfirm: e, onCancel: t, onHideReplyImpression: Z }) }
+                        confirmation: T
+                            ? { render: (e, t) => (({ onConfirm: e, onCancel: t, onHideReplyImpression: n = () => {} }) => i.createElement(o.Z, { actionLabel: b, graphic: l.default, headline: h, onAction: e, onClose: t, onImpression: n, onTertiaryAction: t, subtext: m, supportUrl: f, tertiaryActionLabel: A }))({ onConfirm: e, onCancel: t, onHideReplyImpression: Z }) }
                             : {
                                   render: (e, t) => {
                                       const {
                                           user: { screen_name: n },
-                                      } = T;
+                                      } = D;
                                       return i.createElement(r.Z, {
                                           cancelButtonLabel: w,
                                           confirmButtonLabel: S,
                                           confirmButtonType: "destructiveFilled",
-                                          headline: f({ screenName: n }),
+                                          headline: _({ screenName: n }),
                                           onCancel: e,
                                           onConfirm: () => {
                                               c(), e();
@@ -351,7 +351,7 @@
                         text: b,
                         onClick: () => {
                             e(u.f8),
-                                a(T.id_str, { conversation_id: T.conversation_id_str }).then(
+                                a(D.id_str, { conversation_id: D.conversation_id_str }).then(
                                     (e) => {
                                         y && y(), t({ text: p });
                                     },
@@ -432,8 +432,8 @@
                 p = n(750410),
                 h = n(167630),
                 m = n(392237),
-                _ = n(312771),
-                f = n(33669);
+                f = n(312771),
+                _ = n(33669);
             const w = o().i419d136,
                 A = o().c1b9714a,
                 S = o().c5d23126,
@@ -441,10 +441,10 @@
                 v = o().cfd2f35e,
                 y = o().e8d4c1cc,
                 C = { label: o().b68c3784, link: { pathname: "/i/verified-choose", state: { referring_page: "get_verified_highlight_on_pin" } } },
-                D = i.memo(({ isBlueUpsellEligible: e, onCancel: t, onConfirm: n, onHighlight: a, onPinTweet: o, onUndohighlight: r, tweetId: d }) => {
+                T = i.memo(({ isBlueUpsellEligible: e, onCancel: t, onConfirm: n, onHighlight: a, onPinTweet: o, onUndohighlight: r, tweetId: d }) => {
                     const [c, m] = i.useState(!1),
-                        D = i.useMemo(() => ({ tweet_id: d }), [d]),
-                        Z = i.useMemo(() => (c ? i.createElement(l.Z.Primary, { action: C, headline: y, onAction: n, style: T.callout, withIcon: !1 }) : null), [c, n]),
+                        T = i.useMemo(() => ({ tweet_id: d }), [d]),
+                        Z = i.useMemo(() => (c ? i.createElement(l.Z.Primary, { action: C, headline: y, onAction: n, style: D.callout, withIcon: !1 }) : null), [c, n]),
                         x = i.useCallback(() => {
                             e ? m(!0) : (a(), n());
                         }, [m, a, n, e]),
@@ -453,17 +453,17 @@
                         }, [o, n]),
                         k = i.useCallback(
                             ({ data: e, fetchStatus: n, retry: a }) => {
-                                if (n === _.ZP.LOADED) {
+                                if (n === f.ZP.LOADED) {
                                     return !!e?.tweet_result_by_rest_id?.result?.highlights_info?.highlighted ? i.createElement(u.Z, { confirmButtonLabel: S, confirmButtonType: "primary", headline: w, onCancel: t, onConfirm: I, text: A }) : i.createElement(s.Z, { actionLabel: g, footer: Z, graphicDisplayMode: "none", headline: "Highlight your best content instead", onAction: x, onClose: t, onSecondaryAction: I, onTertiaryAction: t, secondaryActionLabel: S, subtext: "With Highlights, you can curate all your best posts on your profile.", tertiaryActionLabel: v, withCloseButton: !0 });
                                 }
-                                return i.createElement(b.Z, { allowBackNavigation: !1, enableMaskForDismiss: !1, role: "alertdialog", style: T.loadingSheet, type: "center", withMask: !0 }, n === _.ZP.FAILED ? i.createElement(p.Z, { onRequestRetry: a }) : i.createElement(h.Z, null));
+                                return i.createElement(b.Z, { allowBackNavigation: !1, enableMaskForDismiss: !1, role: "alertdialog", style: D.loadingSheet, type: "center", withMask: !0 }, n === f.ZP.FAILED ? i.createElement(p.Z, { onRequestRetry: a }) : i.createElement(h.Z, null));
                             },
                             [x, I, t, Z],
                         );
-                    return i.createElement(f.OE, { fetchPolicy: "network-only", render: k, variables: D });
+                    return i.createElement(_.OE, { fetchPolicy: "network-only", render: k, variables: T });
                 }),
-                T = m.default.create((e) => ({ loadingSheet: { backgroundColor: "transparent" }, callout: { fontSize: e.fontSizes.body, color: e.colors.text, fontWeight: e.fontWeights.medium } })),
-                Z = i.memo(D);
+                D = m.default.create((e) => ({ loadingSheet: { backgroundColor: "transparent" }, callout: { fontSize: e.fontSizes.body, color: e.colors.text, fontWeight: e.fontWeights.medium } })),
+                Z = i.memo(T);
             var x = n(690031);
             const I = o().ha35a1d2,
                 k = o().d04f95c0,
@@ -516,17 +516,16 @@
                             n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8d854c2e"),
                             n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-aaf38a28"),
                             n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-aeee0c9e"),
+                            n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2652b27c"),
                             n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-da0e99d8"),
-                            n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-4b805c4b"),
+                            n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-3931c1f3"),
                             n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-c377d397"),
-                            n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8c219810"),
-                            n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-9b4c2397"),
-                            n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-c2fdd616"),
-                            n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-70774d80"),
-                            n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-92c1aea7"),
-                            n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8767a721"),
-                            n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-d5c922ba"),
-                            n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-e9891f16"),
+                            n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-e4b9a405"),
+                            n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-f17e8d44"),
+                            n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-f39972b2"),
+                            n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-568e95f0"),
+                            n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1895c9ee"),
+                            n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8fe22a9e"),
                             n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-0a8205ef"),
                             n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-5719ea67"),
                             n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1b6af858"),
@@ -581,14 +580,14 @@
                 r = n(837731),
                 d = n(163390);
             const c = ({ addToast: e, createLocalApiErrorHandler: t, dismissUserFromConversation: n, hasPremiumPlus: c, history: l, mute: s, muteAdUpsellEnabled: u, promotedContent: b, scribeAction: p, unmute: h, user: m }) => {
-                const _ = () => {
+                const f = () => {
                         h(m.id_str, { promotedContent: b }).then(() => {
                             e({ text: (0, a.X6)(m.screen_name) });
                         }, t(r.G)),
                             p({ element: "unmute" });
                     },
                     {
-                        Icon: f,
+                        Icon: _,
                         onClick: w,
                         text: A,
                     } = (0, a.N1)(
@@ -600,13 +599,13 @@
                                     const e = { variant: "MuteAd" };
                                     l.push("/i/verified-get-verified", e);
                                 }
-                                e({ action: { label: i.d, onAction: _ }, text: (0, a.FK)(m.screen_name) });
+                                e({ action: { label: i.d, onAction: f }, text: (0, a.FK)(m.screen_name) });
                             }, t(o.W)),
                                 p({ element: "mute" });
                         },
-                        _,
+                        f,
                     );
-                return { Icon: f, text: A, onClick: w, shortcutKey: d.uq.mute };
+                return { Icon: _, text: A, onClick: w, shortcutKey: d.uq.mute };
             };
         },
         810373: (e, t, n) => {
@@ -624,8 +623,8 @@
                 p = d().cd1942f4,
                 h = d().bbd8bed6,
                 m = d().c13af432,
-                _ = d().gf5e9ea6,
-                f = d().df744bda,
+                f = d().gf5e9ea6,
+                _ = d().df744bda,
                 w = d().j9552760,
                 A = d().cfd2f35e,
                 S = d().d751694c,
@@ -634,7 +633,7 @@
                     const C = () => {
                             e(u.EM);
                         },
-                        D = () => {
+                        T = () => {
                             y(v.id_str).then(
                                 () => {
                                     t({ text: m });
@@ -645,12 +644,12 @@
                             ),
                                 r({ element: "unmute_conversation" });
                         },
-                        T = {
+                        D = {
                             text: b,
                             onClick: () => {
                                 a(v.id_str).then(
                                     () => {
-                                        t({ action: { label: _, onAction: D }, text: h });
+                                        t({ action: { label: f, onAction: T }, text: h });
                                     },
                                     (e) => {
                                         n({ showToast: !0 })(e), r({ element: "mute_conversation_error" });
@@ -658,11 +657,11 @@
                                 ),
                                     r({ element: "mute_conversation" });
                             },
-                            confirmation: d ? { render: (e, t) => i.createElement(o.Z, { actionLabel: f, graphic: c.default, graphicDisplayMode: "illustration", headline: w, onAction: e, onClose: t, onImpression: C, onTertiaryAction: t, subtext: S, supportUrl: g, tertiaryActionLabel: A }) } : void 0,
+                            confirmation: d ? { render: (e, t) => i.createElement(o.Z, { actionLabel: _, graphic: c.default, graphicDisplayMode: "illustration", headline: w, onAction: e, onClose: t, onImpression: C, onTertiaryAction: t, subtext: S, supportUrl: g, tertiaryActionLabel: A }) } : void 0,
                             Icon: l.default,
                         },
-                        Z = { text: p, onClick: D, Icon: s.default };
-                    return v.conversation_muted ? Z : T;
+                        Z = { text: p, onClick: T, Icon: s.default };
+                    return v.conversation_muted ? Z : D;
                 };
         },
         273039: (e, t, n) => {
@@ -788,11 +787,11 @@
                     c = t.isTrue("responsive_web_twitter_article_seed_tweet_enabled"),
                     p = i.Z.getLocalizedEntityName({ tweet: d, articlesEnabled: c });
                 let h = { element: "report_tweet" },
-                    _ = "/i/report/status",
-                    f = u.C2.Tweet,
+                    f = "/i/report/status",
+                    _ = u.C2.Tweet,
                     w = l.default,
                     A = a.Z.shouldShowAdDisclosure(r) ? m.reportAd : m.reportTweet({ entity: p });
-                n && ((h = { element: "appeal_tweet_warning" }), (_ = "/i/report/appeal_tweet_warning"), (f = u.C2.AppealTweetWarning), (w = s.default), (A = m.appealTweetWarning));
+                n && ((h = { element: "appeal_tweet_warning" }), (f = "/i/report/appeal_tweet_warning"), (_ = u.C2.AppealTweetWarning), (w = s.default), (A = m.appealTweetWarning));
                 return {
                     Icon: w,
                     onClick: () => {
@@ -802,10 +801,10 @@
                             a = (d?.entities?.urls?.length || 0) > 0 || n > 0 || i > 0 || void 0 !== d.card,
                             c = t.items && t.items[0] && t.items[0].conversation_details?.conversation_section;
                         e.scribeAction(h);
-                        if (!(d.community_id_str || d.card?.name === o.sj.BROADCAST || d.card?.name === o.sj.PERISCOPE_BROADCAST || (r && !e.featureSwitches.isTrue("responsive_web_ocf_reportflow_promoted_enabled"))) && (0, u.Yw)(e.featureSwitches, f)) {
-                            const t = (0, u.j_)({ clientReferer: window.location.pathname, conversationSection: c, isMedia: a, isPromoted: void 0 !== r, reportType: f, reportedTweet: d, reportedUser: d.user.id_str, scribeNamespace: e.analytics.contextualScribeNamespace });
+                        if (!(d.community_id_str || d.card?.name === o.sj.BROADCAST || d.card?.name === o.sj.PERISCOPE_BROADCAST || (r && !e.featureSwitches.isTrue("responsive_web_ocf_reportflow_promoted_enabled"))) && (0, u.Yw)(e.featureSwitches, _)) {
+                            const t = (0, u.j_)({ clientReferer: window.location.pathname, conversationSection: c, isMedia: a, isPromoted: void 0 !== r, reportType: _, reportedTweet: d, reportedUser: d.user.id_str, scribeNamespace: e.analytics.contextualScribeNamespace });
                             e.history.push({ pathname: "/i/safety/report_story_start", state: { input: { requested_variant: JSON.stringify(t) } } });
-                        } else e.history.push({ pathname: `${_}/${d.id_str}`, state: { clientReferer: window.location.pathname, conversationSection: c, isMedia: a, promotedContent: r, scribeNamespace: e.analytics.contextualScribeNamespace } });
+                        } else e.history.push({ pathname: `${f}/${d.id_str}`, state: { clientReferer: window.location.pathname, conversationSection: c, isMedia: a, promotedContent: r, scribeNamespace: e.analytics.contextualScribeNamespace } });
                     },
                     testID: b.Z.report,
                     text: A,
@@ -995,7 +994,7 @@
             }
         },
         33669: (e, t, n) => {
-            n.d(t, { OE: () => f, ZP: () => S });
+            n.d(t, { OE: () => _, ZP: () => S });
             var i = n(337653),
                 a = n(202784),
                 o = (n(585488), n(190286)),
@@ -1009,8 +1008,8 @@
                 p = n(312771),
                 h = n(301410);
             const m = u().cfd2f35e,
-                _ = i.Z,
-                f = (0, h.z)(_, { errorConfig: { context: "TWITTER_HIGHLIGHT_TWEET_CONFIRMATION_CONTEXT" } }),
+                f = i.Z,
+                _ = (0, h.z)(f, { errorConfig: { context: "TWITTER_HIGHLIGHT_TWEET_CONFIRMATION_CONTEXT" } }),
                 w = a.memo(({ onCancel: e, onConfirm: t, onHighlight: n, onUndohighlight: i, tweetId: l }) => {
                     const s = a.useMemo(() => ({ tweet_id: l }), [l]),
                         u = a.useCallback(
@@ -1030,7 +1029,7 @@
                             },
                             [n, i, u, e],
                         );
-                    return a.createElement(f, { fetchPolicy: "network-only", render: h, variables: s });
+                    return a.createElement(_, { fetchPolicy: "network-only", render: h, variables: s });
                 }),
                 A = l.default.create((e) => ({ loadingSheet: { paddingVertical: e.spaces.space20 } })),
                 S = a.memo(w);
@@ -1050,8 +1049,8 @@
                 p = n(360142),
                 h = n(919022);
             const m = (e, t) => (0, d.t5)(e, d.EM),
-                _ = (e, t) => (0, d.t5)(e, d.f8),
-                f = (e) => (0, d.t5)(e, d.FX),
+                f = (e, t) => (0, d.t5)(e, d.f8),
+                _ = (e) => (0, d.t5)(e, d.FX),
                 w = (e, t) => (0, r.n9)(e, t.tweet),
                 A = (e, t) => (0, r.z0)(e, t.tweet),
                 S =
@@ -1059,7 +1058,7 @@
                     (t, n, { featureSwitches: i }) =>
                         Promise.all([t(b.Z.delete(e)), t((0, p.ZP)({ focalTweetId: e }).deleteTimeline())]),
                 g = (0, a.Z)()
-                    .propsFromState(() => ({ userCountry: s.GG, userLanguage: s.VT, shouldShowMuteEducationTip: m, shouldShowHideReplyTip: _, shouldShowConversationControlsTip: f, disableRemoveFromCommunity: w, community: A }))
+                    .propsFromState(() => ({ userCountry: s.GG, userLanguage: s.VT, shouldShowMuteEducationTip: m, shouldShowHideReplyTip: f, shouldShowConversationControlsTip: _, disableRemoveFromCommunity: w, community: A }))
                     .propsFromActions(() => ({ addFlag: d.pj, addToast: u.fz, block: h.ZP.block, changeConversationControls: b.Z.changeConversationControls, createLocalApiErrorHandler: (0, i.zr)("TWEET_CURATION_ACTION_SHEET_CONTAINER"), deleteTweet: S, dismissUserFromConversation: p.f0, follow: h.ZP.follow, hideReply: b.Z.hideReply, unmentionUserFromConversation: b.Z.unmentionUserFromConversation, mute: l.r, muteTweet: b.Z.mute, pin: c.Yd, removeConversationControls: b.Z.removeConversationControls, removeTag: b.Z.removeTag, unblock: h.ZP.unblock, unfollow: h.ZP.unfollow, unhideReply: b.Z.unhideReply, unmute: h.ZP.unmute, unmuteTweet: b.Z.unmute, unpin: c.oc, highlight: b.Z.highlight, undoHighlight: b.Z.undoHighlight, unpublishArticleEntity: o.ZP.unpublish }))
                     .withAnalytics();
         },
@@ -1120,10 +1119,10 @@
                 },
                 h = a().h59f52ee,
                 m = a().eea0cbee,
-                _ = a().i29533b3,
-                f = a().h129c3c3,
-                w = (e) => (e ? ((e) => _({ screenName: e }))(e) : h),
-                A = (e) => (e ? ((e) => f({ screenName: e }))(e) : m);
+                f = a().i29533b3,
+                _ = a().h129c3c3,
+                w = (e) => (e ? ((e) => f({ screenName: e }))(e) : h),
+                A = (e) => (e ? ((e) => _({ screenName: e }))(e) : m);
         },
         142156: (e, t, n) => {
             n.d(t, { w: () => a });
@@ -1148,4 +1147,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TweetCurationActionMenu-e019dbda.f8cf767a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TweetCurationActionMenu-e019dbda.4c588efa.js.map

@@ -313,7 +313,7 @@
                 n("da8c5244", "Premium ವಿಶ್ಲೇಷಣೆಗಳೊಂದಿಗೆ, ನಿಮ್ಮ ಹಿ೦ಬಾಲಕರನ್ನು ಬೆಳೆಸಲು ನೀವು ಸ್ಮಾರ್ಟ್ ಡೇಟಾ ಒಳನೋಟಗಳನ್ನು ಅನ್‌ಲಾಕ್ ಮಾಡಬಹುದು."),
                 n("b081baea", "ನೀವು ಒಳನೋಟಗಳನ್ನು ಕಳೆದುಕೊಂಡಿದ್ದೀರಿ!"),
                 n("d5effffc", "ಬ್ಯಾಡ್ಜ್ ಅನ್ನು ಸೇರಿಸಿ"),
-                n("f1dd86b0", "ನಿಮ್ಮ ವ್ಯಾಪಾರವನ್ನು ಪರಿಶೀಲಿಸಿ"),
+                n("c3653d44", "ನಿಮ್ಮ ವ್ಯವಹಾರವನ್ನು ಪರಿಶೀಲಿಸಿ"),
                 n("e8070e70", "Premium ಅನ್ನು ಪ್ರಯತ್ನಿಸಿ"),
                 n("ec42820e", "ನಿಮ್ಮ ಪ್ರತಿಕ್ರಿಯೆಯನ್ನು ಇನ್ನಷ್ಟು ಜನರು ನೋಡಲು ಬಯಸುತ್ತೀರಾ?"),
                 n("b0a95418", "Premium ನೊಂದಿಗೆ ಪ್ರತಿಕ್ರಿಯೆ ಬೂಸ್ಟ್ ಅನ್ನು ಪಡೆಯಿರಿ"),
@@ -13249,4 +13249,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/kn.a168dcaa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/kn.011d32da.js.map

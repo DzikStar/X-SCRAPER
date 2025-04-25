@@ -326,7 +326,7 @@
                 n("da8c5244", "باستخدام تحليلات Premium، يمكنكِ إلغاء قفل رؤى البيانات الذكية لزيادة متابعيكِ."),
                 n("b081baea", "أنتِ تفتقدين الرؤى!"),
                 n("d5effffc", "إضافة شارة"),
-                n("f1dd86b0", "توثيق نشاطك التجاري"),
+                n("c3653d44", "توثيق نشاطكِ التجاري"),
                 n("e8070e70", "جرِّبي Premium"),
                 n("ec42820e", "هل تريدين أن يرى المزيد من الأشخاص ردّكِ؟"),
                 n("b0a95418", "احصلي على ميزة تعزيز الردود مع Premium"),
@@ -13251,4 +13251,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ar-x-fm.1bd21c7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ar-x-fm.30b9458a.js.map

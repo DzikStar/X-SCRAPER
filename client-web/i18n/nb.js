@@ -312,7 +312,7 @@
                 t("da8c5244", "Med Premium-statistikk får du tilgang til smart datainnsikt for å få flere følgere."),
                 t("b081baea", "Du går glipp av innsikt!"),
                 t("d5effffc", "Legg til merke"),
-                t("f1dd86b0", "Verifiser bedriften din"),
+                t("c3653d44", "Verifiser bedriften din"),
                 t("e8070e70", "Prøv Premium"),
                 t("ec42820e", "Vil du at flere skal se svaret ditt?"),
                 t("b0a95418", "Frem svar med Premium"),
@@ -13235,4 +13235,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nb.9d9eb93a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nb.77f3e62a.js.map

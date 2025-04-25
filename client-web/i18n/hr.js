@@ -320,7 +320,7 @@
                 o("da8c5244", "Uz analitiku pretplate Premium možete otključati pametne uvide u podatke za povećanje broja osoba koje vas prate."),
                 o("b081baea", "Propuštate uvide!"),
                 o("d5effffc", "Dodaj značku"),
-                o("f1dd86b0", "Potvrdite svoju tvrtku"),
+                o("c3653d44", "Potvrdite svoju tvrtku"),
                 o("e8070e70", "Isprobajte Premium"),
                 o("ec42820e", "Želite li da više ljudi vidi vaš odgovor?"),
                 o("b0a95418", "Iskoristite značajku Isticanje odgovora s pretplatom Premium"),
@@ -13258,4 +13258,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hr.63eb824a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hr.a0e0cb3a.js.map
