@@ -797,7 +797,7 @@
                                 if (!t.preroll || !t.preroll.mediaInfo) return null;
                                 const { mediaInfo: s, prerollId: o } = t.preroll,
                                     n = s.videoVariants.map((e) => ({ url: e.url, content_type: e.contentType, bitrate: e.bitrate })),
-                                    l = { adId: o, advertiserName: null, advertiserProfileImageUrl: null, mediaInfo: { call_to_action: void 0, duration_millis: s.durationMillis, publisher_id_str: s.publisherId, variants: n }, promotedContent: { impressionId: void 0, disclosureType: void 0 }, videoAnalyticsScribePassthrough: null };
+                                    l = { adId: o, advertiserName: null, advertiserProfileImageUrl: null, mediaInfo: { call_to_action: void 0, duration_millis: s.durationMillis, publisher_id_str: s.publisherId, variants: n }, promotedContent: { impressionId: void 0, disclosureType: void 0 } };
                                 if (s.callToAction) {
                                     const { type: e, url: t } = s.callToAction,
                                         r = (0, a.b)(t, i?.clickTrackingInfo),
@@ -877,4 +877,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.InlinePlayer-9f4db315.91e5fc1a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.InlinePlayer-9f4db315.21aa927a.js.map

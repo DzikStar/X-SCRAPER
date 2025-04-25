@@ -82,8 +82,8 @@
                 B = a(793211),
                 k = a(725516),
                 S = a(794057),
-                P = a(751632),
-                T = a(316732),
+                P = a(727828),
+                T = a(751632),
                 I = a(470397),
                 x = a(966886),
                 M = a(155727),
@@ -330,10 +330,10 @@
                                   },
                               })
                             : null,
-                        n.createElement(P.ZP, { size: de ? "title3" : "title1", style: de ? Be.title : ve.title, title: D.title, weight: "heavy" }),
+                        n.createElement(T.ZP, { size: de ? "title3" : "title1", style: de ? Be.title : ve.title, title: D.title, weight: "heavy" }),
                         t && D.metadata?.first_published_at_secs && D.lifecycle_state?.modified_at_secs ? n.createElement(X, { author: t, firstPublishedAtSecs: D.metadata.first_published_at_secs, lastPublishedAtSecs: D.lifecycle_state.modified_at_secs }) : null,
                         se ? n.createElement(n.Fragment, null, ie && x ? n.createElement(C.Z, { allowBookmarkInActionsBar: !0, style: ve.actionBar, tweet: x, withAnalyticsAction: !0, withCount: !0 }) : null, n.createElement(i.Z, { style: ve.body, testID: "twitterArticleRichTextView" }, n.createElement(Ee, { hasPostPreloaded: j, isPostBatchingEnabled: H, onScribeEvent: F, publishedPost: x, twitterArticle: D }))) : O ? null : n.createElement(m.Z, { style: ve.loadingStyle }),
-                        L ? n.createElement(T.Z, { variant: "ArticlesReader" }) : null,
+                        L ? n.createElement(P.Z, { variant: "ArticlesReader" }) : null,
                         R && x && me
                             ? n.createElement(
                                   n.Fragment,
@@ -393,4 +393,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-81ee9ca9.130b2bca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-81ee9ca9.76af4b7a.js.map

@@ -87,7 +87,7 @@
                 ae = s(737613),
                 ne = s(513313),
                 re = s(533128),
-                de = s(316732);
+                de = s(727828);
             const le = ({ dismiss: e }) => i.createElement(de.Z, { onAction: e, onClose: e, variant: "ReplyBoostPopup" }),
                 he = i.memo(le),
                 ce = ({ featureSwitches: e, isAnyPremiumSubscriber: t, isInlineComposer: s, isReply: i }) => !(t || !i || !s) && e.isTrue("subscriptions_upsells_reply_boost_popup_enabled");
@@ -1079,4 +1079,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Compose~bundle.RichTextCompose-0fb8c86a.859daa3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Compose~bundle.RichTextCompose-0fb8c86a.c46110da.js.map

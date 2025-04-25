@@ -94,7 +94,7 @@
             const y = "FETCH_PREROLLS",
                 h = (0, T.dg)(d.A7, y),
                 f = 10;
-            function S(e) {
+            function I(e) {
                 const t = {},
                     r = {};
                 return (
@@ -111,7 +111,7 @@
                     r
                 );
             }
-            function I(e, t, r, n, i) {
+            function S(e, t, r, n, i) {
                 if (!Array.isArray(e) || 0 === e.length) return Promise.resolve();
                 let s = [];
                 const o = [s];
@@ -133,7 +133,7 @@
                     ).then((e) => {
                         let t = {};
                         e.forEach((e) => {
-                            e && e.prerolls && (t = { ...t, ...S(e) });
+                            e && e.prerolls && (t = { ...t, ...I(e) });
                         });
                         const n = { type: v, payload: { ...{ dynamicIVCollection: t }, prerollDisplayLocation: i } };
                         r(n);
@@ -199,7 +199,7 @@
                         (E[n.id_str] = _), s?.preroll?.mediaInfo && !m && (l[n.id_str] = s), _?.legacy && !m && c.push(n);
                     });
                     r({ type: b, payload: { ...{ eligibleTweets: c, prerollMetadataCollection: l, promotedMetadataCollection: p, prerollEligibilityCollection: E, prerollDisplayLocation: t } } });
-                    return I(
+                    return S(
                         c.filter((e) => void 0 === l[e.id_str]),
                         null,
                         r,
@@ -220,7 +220,7 @@
                             r({ type: w, payload: { prerollDisplayLocation: t } });
                             const { dynamic_preroll_type: e, preroll_id: i } = p;
                             return (
-                                I(d, { preroll_id: i, dynamic_preroll_type: e }, r, s, t),
+                                S(d, { preroll_id: i, dynamic_preroll_type: e }, r, s, t),
                                 (function (e, t, r, i) {
                                     const s = { adId: t.preroll_id, advertiserName: null, advertiserProfileImageUrl: null, mediaInfo: { call_to_action: null, duration_millis: t.media_info.duration_millis, publisher_id_str: t.media_info.publisher_id_str, variants: t.media_info.variants }, promotedContent: { impressionId: void 0, disclosureType: void 0 }, videoAnalyticsScribePassthrough: t.videoAnalyticsScribePassthrough };
                                     if ((t.promoted_content && !r && ((s.promotedContent.impressionId = t.promoted_content.impression_id), (s.promotedContent.disclosureType = t.promoted_content.disclosure_type)), t.media_info.call_to_action)) {
@@ -248,7 +248,7 @@
                                 if (!t.preroll || !t.preroll.mediaInfo) return null;
                                 const { mediaInfo: s, prerollId: o } = t.preroll,
                                     a = s.videoVariants.map((e) => ({ url: e.url, content_type: e.contentType, bitrate: e.bitrate })),
-                                    d = { adId: o, advertiserName: null, advertiserProfileImageUrl: null, mediaInfo: { call_to_action: void 0, duration_millis: s.durationMillis, publisher_id_str: s.publisherId, variants: a }, promotedContent: { impressionId: void 0, disclosureType: void 0 }, videoAnalyticsScribePassthrough: null };
+                                    d = { adId: o, advertiserName: null, advertiserProfileImageUrl: null, mediaInfo: { call_to_action: void 0, duration_millis: s.durationMillis, publisher_id_str: s.publisherId, variants: a }, promotedContent: { impressionId: void 0, disclosureType: void 0 } };
                                 if (s.callToAction) {
                                     const { type: e, url: t } = s.callToAction,
                                         i = (0, n.b)(t, r?.clickTrackingInfo),
@@ -293,8 +293,8 @@
                 y = r(558369),
                 h = r(497294),
                 f = r(709318),
-                S = r(872788),
-                I = r(390387),
+                I = r(872788),
+                S = r(390387),
                 C = r(652881),
                 w = r(780936),
                 b = r(823885),
@@ -379,11 +379,11 @@
                             const n = r(),
                                 i = (0, y.mz)(n).isTrue("responsive_web_timeline_relay_lists_management_enabled"),
                                 s = O.select(n, e),
-                                o = (0, I._h)(n);
+                                o = (0, S._h)(n);
                             if (!s || !o) return [];
                             const a = l.Re(e),
                                 d = (0, v.Z)(o, o);
-                            return [(0, f.Vu)({ id: s.id_str, name: s.name, type: S.FO.LIST }), d.removeEntry(a), ...(0, C.C2)(i, r, C.Pq.ownedSubscribedList, e)];
+                            return [(0, f.Vu)({ id: s.id_str, name: s.name, type: I.FO.LIST }), d.removeEntry(a), ...(0, C.C2)(i, r, C.Pq.ownedSubscribedList, e)];
                         },
                     }),
                     deleteListMedia: (0, m.Tx)(O, "deleteListMedia", { getParams: (e) => ({ listId: e }), getApiMethod: (e) => e.withEndpoint(o.ZP).deleteBannerImage, context: "DELETE_LIST_MEDIA", mapResponseToActions: (e, t, r) => (t) => (t && t.entities ? [O.updateOne(e, { customBanner: void 0 })] : []) }),
@@ -415,11 +415,11 @@
                                 i = (0, y.mz)(n).isTrue("responsive_web_timeline_relay_lists_management_enabled"),
                                 s = [],
                                 o = t?.entities?.lists?.[e],
-                                a = (0, I._h)(n);
+                                a = (0, S._h)(n);
                             if (o && a) {
                                 const t = Z(a),
                                     n = (0, g.Z)(e);
-                                s.push(O.updateOne(e, o)), s.push(n.injectEntry(t)), s.push(...(0, C.s8)(i, r, C.Pq.ownedSubscribedList, e)), o.pinning && s.push((0, f.Co)({ id: o.id_str, name: o.name, type: S.FO.LIST }));
+                                s.push(O.updateOne(e, o)), s.push(n.injectEntry(t)), s.push(...(0, C.s8)(i, r, C.Pq.ownedSubscribedList, e)), o.pinning && s.push((0, f.Co)({ id: o.id_str, name: o.name, type: I.FO.LIST }));
                             }
                             return s;
                         },
@@ -432,7 +432,7 @@
                         mapResponseToActions: (e, t, r) => (n) => {
                             const i = r(),
                                 s = O.select(i, e),
-                                o = (0, I._h)(i);
+                                o = (0, S._h)(i);
                             return s && o && s.muting !== t.mute && n ? [O.updateOne(e, { muting: t.mute })] : [];
                         },
                     }),
@@ -446,10 +446,10 @@
                                 i = (0, y.mz)(n).isTrue("responsive_web_timeline_relay_lists_management_enabled"),
                                 s = [],
                                 o = t?.entities?.lists?.[e],
-                                a = (0, I._h)(n);
+                                a = (0, S._h)(n);
                             if (o && a) {
                                 const t = (0, g.Z)(e);
-                                s.push(...(0, C.C2)(i, r, C.Pq.ownedSubscribedList, e)), s.push(O.updateOne(e, o)), s.push(t.removeEntry(l._Y(a))), s.push((0, f.Vu)({ id: o.id_str, name: o.name, type: S.FO.LIST }));
+                                s.push(...(0, C.C2)(i, r, C.Pq.ownedSubscribedList, e)), s.push(O.updateOne(e, o)), s.push(t.removeEntry(l._Y(a))), s.push((0, f.Vu)({ id: o.id_str, name: o.name, type: I.FO.LIST }));
                             }
                             return s;
                         },
@@ -465,7 +465,7 @@
                         (e) =>
                         (t, r, { api: n, featureSwitches: i }) =>
                             E._O(t, { request: n.withEndpoint(o.ZP).createList, params: e })({ actionTypes: O.actionTypes.CREATE, context: "CREATE_LIST" }, (e) => {
-                                const t = (0, I._h)(r());
+                                const t = (0, S._h)(r());
                                 if (e && t) {
                                     const { result: n } = e,
                                         o = F(n),
@@ -501,7 +501,7 @@
                         ({ listId: e, targetUserId: t }) =>
                         (r, n, { api: i }) => {
                             const s = n(),
-                                o = (0, I._h)(s);
+                                o = (0, S._h)(s);
                             if (!o) return;
                             const a = (0, v.Z)(o, t),
                                 d = a.selectEntries(s),
@@ -541,7 +541,7 @@
                 G = T.Z.register(x);
         },
         206795: (e, t, r) => {
-            r.d(t, { Hi: () => f, NU: () => I, pO: () => S, g$: () => h });
+            r.d(t, { Hi: () => f, NU: () => S, pO: () => I, g$: () => h });
             var n = r(166852),
                 i = r(483557),
                 s = r(499627),
@@ -562,8 +562,8 @@
                     return r?.data?.lists || _;
                 },
                 f = ({ addTo: e, itemsToAdd: t }) => ({ payload: { key: e, items: t }, type: u }),
-                S = ({ itemToRemove: e, removeFrom: t }) => ({ payload: { key: t, item: e }, type: p }),
-                I = (e, t) => (r, n) => {
+                I = ({ itemToRemove: e, removeFrom: t }) => ({ payload: { key: t, item: e }, type: p }),
+                S = (e, t) => (r, n) => {
                     const s = n(),
                         u = y(s, e),
                         p = ((e, t) => {
@@ -791,10 +791,10 @@
                 y = r(903558),
                 h = r(87063),
                 f = r(499627),
-                S = r(795181);
-            const I = { isOpen: !1, tweet: void 0, conversation: void 0, conversationBottomCursor: void 0, conversationFetchStatus: h.Z.LOADING },
+                I = r(795181);
+            const S = { isOpen: !1, tweet: void 0, conversation: void 0, conversationBottomCursor: void 0, conversationFetchStatus: h.Z.LOADING },
                 C = { typeaheadResults: void 0, results: void 0, searchFetchStatus: h.Z.LOADING, userSearchScreenName: void 0, cursor: void 0 },
-                w = { home: { content: void 0, status: h.Z.LOADING }, trend: void 0, search: C, following: C, bookmarks: C, player: I, profile: {}, relatedVideos: {}, login: {} },
+                w = { home: { content: void 0, status: h.Z.LOADING }, trend: void 0, search: C, following: C, bookmarks: C, player: S, profile: {}, relatedVideos: {}, login: {} },
                 b = (e) => {
                     const t = new Map();
                     return e.forEach((e) => t.set(e.id_str, e)), Array.from(t.values());
@@ -822,12 +822,12 @@
                     );
                 };
             f.Z.register({
-                [S.Yf]: function (e = w, t) {
+                [I.Yf]: function (e = w, t) {
                     if (!t) return e;
                     switch (t.type) {
-                        case S.M2:
+                        case I.M2:
                             return { ...e, login: { ...e.login, deviceIsVerified: t.payload } };
-                        case S.hI:
+                        case I.hI:
                             return { ...e, login: { ...e.login, pinCodeExpired: !0, pinCode: void 0 } };
                         case y.PP.REQUEST:
                             return { ...e, home: { ...e.home, status: h.Z.LOADING } };
@@ -835,43 +835,43 @@
                             return { ...e, home: { ...e.home, status: h.Z.LOADED } };
                         case y.PP.FAILURE:
                             return { ...e, home: { content: [], status: h.Z.FAILED } };
-                        case S.bJ:
+                        case I.bJ:
                             return { ...e, home: { ...e.home, content: t.payload } };
-                        case S.jT:
+                        case I.jT:
                             return { ...e, home: { content: [], status: h.Z.LOADING } };
-                        case S.XS:
+                        case I.XS:
                             return { ...e, trend: t.payload };
-                        case S.rd:
+                        case I.rd:
                             return { ...e, relatedVideos: { ...e.relatedVideos, videos: t.payload.shouldClear ? t.payload.videos : [...(e.relatedVideos.videos || []), ...t.payload.videos], cursor: t.payload.cursor } };
-                        case S.Z:
+                        case I.Z:
                             return { ...e, relatedVideos: { ...w.relatedVideos, fetchStatus: h.Z.FAILED } };
-                        case S.gw:
+                        case I.gw:
                             return { ...e, relatedVideos: w.relatedVideos };
-                        case S._b:
+                        case I._b:
                             return { ...e, profile: { ...e.profile, [t.payload.user.screen_name.toLowerCase()]: { user: t.payload.user, videos: t.payload.shouldClear ? t.payload.videos : b([...(e.profile[t.payload.user.screen_name.toLowerCase()]?.videos || []), ...t.payload.videos]), modules: t.payload.shouldClear ? t.payload.modules : v([...(e.profile[t.payload.user.screen_name.toLowerCase()]?.modules || []), ...(t.payload.modules || [])]), cursor: t.payload.cursor } } };
-                        case S.wW:
+                        case I.wW:
                             return { ...e, login: { ...e.login, pinCode: t.payload, pinCodeExpired: !1 } };
-                        case S._c:
+                        case I._c:
                             return { ...e, profile: { ...e.profile, [t.payload.screenName.toLowerCase()]: { ...e.profile[t.payload.screenName.toLowerCase()], user: { ...e.profile[t.payload.screenName.toLowerCase()]?.user, following: t.payload.following } } } };
-                        case S.hy:
+                        case I.hy:
                             return { ...e, profile: { ...e.profile, [t.payload.screenName.toLowerCase()]: { ...e.profile[t.payload.screenName.toLowerCase()], user: { ...e.profile[t.payload.screenName.toLowerCase()]?.user, notifications: t.payload.notificationsEnabled } } } };
-                        case S.E3:
+                        case I.E3:
                             return { ...e, [t.payload.searchTab]: { ...e[t.payload.searchTab], query: t.payload.query } };
-                        case S.sz:
+                        case I.sz:
                             return t.payload.query === e[t.payload.searchTab].query ? { ...e, [t.payload.searchTab]: { ...e[t.payload.searchTab], lastCompletedQuery: t.payload.query, results: t.payload.shouldClear ? t.payload.tweets : [...(e[t.payload.searchTab].results || []), ...t.payload.tweets], cursor: t.payload.cursor, userSearchScreenName: void 0 } } : e;
-                        case S.te:
+                        case I.te:
                             return { ...e, [t.payload]: { ...C } };
-                        case S.Np:
+                        case I.Np:
                             return { ...e, search: { ...e.search, results: t.payload, userSearchScreenName: t.meta.screenName } };
-                        case S.hx:
+                        case I.hx:
                             return { ...e, player: { ...e.player, conversation: g(t.payload.tweets, e?.player?.conversation || [], t.meta.tweetId), conversationBottomCursor: t.payload.bottomCursor } };
-                        case S.BS:
+                        case I.BS:
                             return { ...e, search: { ...e.search, typeaheadResults: t.payload.results } };
-                        case S.f1:
+                        case I.f1:
                             return { ...e, player: { ...e.player, tweet: t.payload, isOpen: !0 } };
-                        case S.bV:
+                        case I.bV:
                             return { ...e, player: { ...e.player, isOpen: !1 } };
-                        case S.fY:
+                        case I.fY:
                             return { ...e, player: { ...e.player, tweet: t.payload, isOpen: !0 } };
                         case y.IP.REQUEST:
                             return { ...e, search: { ...e.search, searchFetchStatus: h.Z.LOADING } };
@@ -1115,7 +1115,7 @@
                         });
         },
         795181: (e, t, r) => {
-            r.d(t, { BS: () => S, E3: () => T, M2: () => i, Np: () => h, XS: () => d, Yf: () => n, Z: () => l, _b: () => u, _c: () => I, bJ: () => o, bV: () => _, f1: () => E, fY: () => m, gw: () => b, hI: () => s, hx: () => w, hy: () => C, jT: () => a, rd: () => c, sz: () => y, te: () => f, wW: () => p });
+            r.d(t, { BS: () => I, E3: () => T, M2: () => i, Np: () => h, XS: () => d, Yf: () => n, Z: () => l, _b: () => u, _c: () => S, bJ: () => o, bV: () => _, f1: () => E, fY: () => m, gw: () => b, hI: () => s, hx: () => w, hy: () => C, jT: () => a, rd: () => c, sz: () => y, te: () => f, wW: () => p });
             const n = "tv",
                 i = "rweb/tv/TV_DEVICE_IS_VERIFIED",
                 s = "rweb/tv/TV_DEVICE_IS_VERIFIED_CODE_EXPIRED",
@@ -1133,8 +1133,8 @@
                 y = "rweb/tv/TV_SEARCH_RESULTS",
                 h = "rweb/tv/TV_USER_SEARCH_RESULTS",
                 f = "rweb/tv/TV_SEARCH_RESULTS_CLEAR",
-                S = "rweb/tv/TV_SEARCH_TYPEAHEAD_RESULTS",
-                I = "rweb/tv/TV_UPDATE_FOLLOWING_USER",
+                I = "rweb/tv/TV_SEARCH_TYPEAHEAD_RESULTS",
+                S = "rweb/tv/TV_UPDATE_FOLLOWING_USER",
                 C = "rweb/tv/TV_UPDATE_FRIENDSHIP",
                 w = "rweb/tv/TV_TWEET_CONVERSATION_RESULTS",
                 b = "rweb/tv/TV_RELATED_VIDEOS_CLEAR";
@@ -1306,4 +1306,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-af3d50e9.323f2f8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-af3d50e9.d34632aa.js.map

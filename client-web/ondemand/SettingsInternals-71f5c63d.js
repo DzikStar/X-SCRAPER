@@ -485,8 +485,8 @@
                 S = n.n(b),
                 C = n(750442),
                 Z = n(130919),
-                v = n(534763),
-                w = n(316732),
+                v = n(727828),
+                w = n(534763),
                 L = n(443781),
                 A = n(652904),
                 P = n(301410),
@@ -503,7 +503,7 @@
                 O = S().c6e731ee,
                 B = S().be582166,
                 H = { [Z.t.PendingResult]: S().b496bc94, [Z.t.RequestLocked]: S().d8f5cce4, [Z.t.IdentityNonVerifiable]: S().i8427a1e, [Z.t.CanVerifyIdentity]: B },
-                U = r.createElement(v.b, { label: R, link: D.LT }),
+                U = r.createElement(w.b, { label: R, link: D.LT }),
                 K = (e) => {
                     const t = e.query?.status;
                     return !(!t || Array.isArray(t)) && t === Z.t.PendingResult;
@@ -553,7 +553,7 @@
                                                     return r.createElement(r.Fragment, null, r.createElement(f.Z, { description: H[E] }), U);
                                                 case Z.t.IdentityVerified:
                                                 case Z.t.UnavailableMissingBlueSubscription:
-                                                    return r.createElement(h.Z, null, r.createElement(f.Z, { description: B }), r.createElement(h.Z, { style: q.layoutDimensions }, y ? r.createElement(w.Z, { variant: "IdVerification", withColoredIcon: !0 }) : $), i ? r.createElement(h.Z, null, r.createElement(_.Z, { checked: m, disabled: y, helpText: O, label: N, name: "is_identity_verified_label_hidden", onChange: c(l, d.__id) })) : null, U);
+                                                    return r.createElement(h.Z, null, r.createElement(f.Z, { description: B }), r.createElement(h.Z, { style: q.layoutDimensions }, y ? r.createElement(v.Z, { variant: "IdVerification", withColoredIcon: !0 }) : $), i ? r.createElement(h.Z, null, r.createElement(_.Z, { checked: m, disabled: y, helpText: O, label: N, name: "is_identity_verified_label_hidden", onChange: c(l, d.__id) })) : null, U);
                                                 case Z.t.CanVerifyIdentity:
                                                     return r.createElement(h.Z, null, r.createElement(f.Z, { description: H[E] }), r.createElement(u.Switch, null, r.createElement(u.Route, null, r.createElement(I.Z, { to: "/settings/account/id_verification/start" }))));
                                                 default:
@@ -1310,4 +1310,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsInternals-71f5c63d.0c5f91ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsInternals-71f5c63d.1bfc69fa.js.map

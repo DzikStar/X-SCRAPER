@@ -212,7 +212,7 @@
                 u = a(711223),
                 g = a(323265),
                 h = a(980407),
-                y = a(316732),
+                y = a(727828),
                 b = a(952793),
                 _ = a(423488),
                 f = a(299690);
@@ -363,7 +363,7 @@
                 b = a(293723),
                 _ = a(323265),
                 f = a(980407),
-                E = a(316732),
+                E = a(727828),
                 Z = a(535338);
             const v = g().aa732c0a,
                 k = g().bf214f48,
@@ -393,4 +393,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsSuperFollows-c6fe4ea4.fa71a9da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsSuperFollows-c6fe4ea4.9acd4dca.js.map

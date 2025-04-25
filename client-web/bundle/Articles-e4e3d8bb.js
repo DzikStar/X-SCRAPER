@@ -17,11 +17,11 @@
             const a = (0, n.Z)({
                 loader: () =>
                     Promise.all([
-                        i.e("icons.8"),
+                        i.e("icons.25"),
                         i.e("modules.common-e907d115"),
                         i.e("modules.common-e019dbda"),
                         i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                        i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-00a077b2"),
+                        i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2f4a3d25"),
                         i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                         i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                         i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -501,7 +501,7 @@
                                 if (!t.preroll || !t.preroll.mediaInfo) return null;
                                 const { mediaInfo: o, prerollId: a } = t.preroll,
                                     s = o.videoVariants.map((e) => ({ url: e.url, content_type: e.contentType, bitrate: e.bitrate })),
-                                    d = { adId: a, advertiserName: null, advertiserProfileImageUrl: null, mediaInfo: { call_to_action: void 0, duration_millis: o.durationMillis, publisher_id_str: o.publisherId, variants: s }, promotedContent: { impressionId: void 0, disclosureType: void 0 }, videoAnalyticsScribePassthrough: null };
+                                    d = { adId: a, advertiserName: null, advertiserProfileImageUrl: null, mediaInfo: { call_to_action: void 0, duration_millis: o.durationMillis, publisher_id_str: o.publisherId, variants: s }, promotedContent: { impressionId: void 0, disclosureType: void 0 } };
                                 if (o.callToAction) {
                                     const { type: e, url: t } = o.callToAction,
                                         n = (0, r.b)(t, i?.clickTrackingInfo),
@@ -1294,4 +1294,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Articles-e4e3d8bb.b1f225ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Articles-e4e3d8bb.db69fd8a.js.map

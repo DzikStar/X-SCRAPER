@@ -54,8 +54,8 @@
                 U = n(400915),
                 V = n(420182),
                 D = n(997657),
-                I = n(279918),
-                M = n(167725),
+                I = n(306114),
+                M = n(279918),
                 R = n(880647),
                 z = n(655352),
                 E = n(125363),
@@ -139,7 +139,7 @@
                         ai = i.isTrue("recruiting_global_jobs_search_enabled"),
                         si = (0, H.vC)(),
                         oi = i.isTrue("c9s_enabled") && !!c,
-                        ri = (0, M.Z)(),
+                        ri = (0, I.Z)(),
                         ci = l.useMemo(() => !(Xe || !ri) && i.isTrue("subscriptions_upsells_app_tab_bar_analytics_upsell_enabled"), [Xe, i, ri]),
                         ui = (i) => () => {
                             i && e.scribe({ section: "overflow_menu", element: i, action: "click", data: { message: "VDL redesign dash menu item" } }), n && n();
@@ -204,7 +204,7 @@
                         Ri = $e,
                         zi = (0, j.Z)([ji, yi, Ge ? Ti : void 0, ti ? vi : void 0, Mi ? Ci() : void 0, oi ? Pi : void 0, Re ? ki : void 0, bi, Je ? di : void 0, Ri ? (Ye ? xi : Ai()) : void 0, li ? wi : void 0, qe ? fi : void 0, Te || Ce ? gi : void 0, ci ? hi() : void 0, Ki, Zi, ai ? Di : void 0, Ui ? Vi : void 0, Si, Fi]).filter(Me),
                         Ei = l.useContext(D.hC),
-                        qi = (0, j.Z)([ji, I.yw.Lists > Ei && Re ? ki : void 0, I.yw.Premium > Ei && Ge ? Ti : void 0, I.yw.PremiumSignup > Ei && Mi ? Ci() : void 0, I.yw.Bookmarks > Ei ? bi : void 0, I.yw.Payments > Ei && ti ? vi : void 0, I.yw.Communities > Ei && oi ? Pi : void 0, I.yw.Articles > Ei && Be ? di : void 0, I.yw.CommunityNotes > Ei && qe ? fi : void 0, I.yw.Analytics > Ei && ci ? hi() : void 0, Ki, I.yw.VerifiedOrgDash > Ei && Ri && Ye ? xi : void 0, (((!Ye || r.isLegacyVerifiedOrg()) && I.yw.VerifiedOrgSignup > Ei) || (r.isVerifiedOrgAffiliate() && !r.isVerifiedOrg())) && i.isTrue("blue_business_vo_nav_for_legacy_verified") ? Ai() : void 0, li ? wi : void 0, Qe ? pi : void 0, Te || Ce ? gi : void 0, Zi, I.yw.Jobs > Ei && ai ? Di : void 0, void 0, ni ? Oi : void 0, Ui ? Vi : void 0, Si]).filter(Me);
+                        qi = (0, j.Z)([ji, M.yw.Lists > Ei && Re ? ki : void 0, M.yw.Premium > Ei && Ge ? Ti : void 0, M.yw.PremiumSignup > Ei && Mi ? Ci() : void 0, M.yw.Bookmarks > Ei ? bi : void 0, M.yw.Payments > Ei && ti ? vi : void 0, M.yw.Communities > Ei && oi ? Pi : void 0, M.yw.Articles > Ei && Be ? di : void 0, M.yw.CommunityNotes > Ei && qe ? fi : void 0, M.yw.Analytics > Ei && ci ? hi() : void 0, Ki, M.yw.VerifiedOrgDash > Ei && Ri && Ye ? xi : void 0, (((!Ye || r.isLegacyVerifiedOrg()) && M.yw.VerifiedOrgSignup > Ei) || (r.isVerifiedOrgAffiliate() && !r.isVerifiedOrg())) && i.isTrue("blue_business_vo_nav_for_legacy_verified") ? Ai() : void 0, li ? wi : void 0, Qe ? pi : void 0, Te || Ce ? gi : void 0, Zi, M.yw.Jobs > Ei && ai ? Di : void 0, void 0, ni ? Oi : void 0, Ui ? Vi : void 0, Si]).filter(Me);
                     return (0, z.ZP)() ? ((Fe = Fe.concat(qi)), He && Ee && (Ze = Ii)) : ((Fe = Fe.concat(zi)), He && (Ze = Ii)), { coreItems: Fe, countrySpecificItems: Ze };
                 };
         },
@@ -266,4 +266,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DashMenu~loader.DashModal~bundle.Account.c9931b3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DashMenu~loader.DashModal~bundle.Account.6dd4d72a.js.map

@@ -534,7 +534,7 @@
                 o = i(653843),
                 a = i(122123),
                 c = i(417144),
-                d = i(417854),
+                d = i(884495),
                 l = i(716233),
                 u = i(540387);
             const p = n().b8098028,
@@ -956,4 +956,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.AppModules-e4e3d8bb.e14bbbea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.AppModules-e4e3d8bb.4b32fdaa.js.map

@@ -17,11 +17,11 @@
             const a = (0, n.Z)({
                 loader: () =>
                     Promise.all([
-                        i.e("icons.8"),
+                        i.e("icons.25"),
                         i.e("modules.common-e907d115"),
                         i.e("modules.common-e019dbda"),
                         i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                        i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-00a077b2"),
+                        i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2f4a3d25"),
                         i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                         i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                         i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -66,7 +66,7 @@
             });
         },
         376293: (e, t, i) => {
-            i.d(t, { $f: () => I, KV: () => f, LI: () => C, SC: () => A, Vt: () => y, ed: () => O, op: () => v });
+            i.d(t, { $f: () => I, KV: () => f, LI: () => C, SC: () => A, Vt: () => h, ed: () => O, op: () => v });
             var r = i(202784),
                 n = i(190286),
                 o = i(674132),
@@ -83,8 +83,8 @@
                 E = a().ad00a739,
                 f = a().a9fd20be,
                 _ = a().j546fb79,
-                h = a().c9623eeb,
-                y = a().e133be4e,
+                y = a().c9623eeb,
+                h = a().e133be4e,
                 T = a().he43bca4,
                 g = a().f5f01af6,
                 A = Object.freeze({ TWEET_CARET: "tweet_caret", PROFILE: "user_profile", LIST_DETAIL: "list_detail", RICH_FEEDBACK: "rich_feedback", TWEET: "tweet", FOLLOWERS_LIST: "followers_list" }),
@@ -113,8 +113,8 @@
                 },
                 P = (e) => (e ? d.default : s.default),
                 w = ({ blockSubtext: e, unblockSubtext: t, user: i }) => (!i.blocking && e ? e(i.screen_name) : i.blocking ? t : void 0),
-                L = (e) => (e.blocking ? h({ screenName: e.screen_name }) : b({ screenName: e.screen_name })),
-                C = (e, t) => (e.blocking ? ((e, t) => ({ confirmButtonType: "primary", headline: _({ screenName: e }), label: y, text: t ? g : T }))(e.screen_name, t) : I(e.screen_name, t)),
+                L = (e) => (e.blocking ? y({ screenName: e.screen_name }) : b({ screenName: e.screen_name })),
+                C = (e, t) => (e.blocking ? ((e, t) => ({ confirmButtonType: "primary", headline: _({ screenName: e }), label: h, text: t ? g : T }))(e.screen_name, t) : I(e.screen_name, t)),
                 O = ({ confirmation: e, handleConfirm: t, onClose: i }) => {
                     const { confirmButtonType: o, headline: a, label: s, text: d } = e;
                     return r.createElement(n.Z, { cancelButtonLabel: u, confirmButtonLabel: s, confirmButtonType: o, headline: a, onCancel: i, onConfirm: t, text: d });
@@ -346,8 +346,8 @@
                 E = i(917799);
             const f = "FETCH_PREROLLS",
                 _ = (0, E.dg)(d.A7, f),
-                h = 10;
-            function y(e) {
+                y = 10;
+            function h(e) {
                 const t = {},
                     i = {};
                 return (
@@ -370,7 +370,7 @@
                 const a = [o];
                 return (
                     e.forEach((e) => {
-                        o.length === h && ((o = []), a.push(o)), o.push(e);
+                        o.length === y && ((o = []), a.push(o)), o.push(e);
                     }),
                     Promise.all(
                         a.map((e) =>
@@ -386,7 +386,7 @@
                     ).then((e) => {
                         let t = {};
                         e.forEach((e) => {
-                            e && e.prerolls && (t = { ...t, ...y(e) });
+                            e && e.prerolls && (t = { ...t, ...h(e) });
                         });
                         const r = { type: v, payload: { ...{ dynamicIVCollection: t }, prerollDisplayLocation: n } };
                         i(r);
@@ -501,7 +501,7 @@
                                 if (!t.preroll || !t.preroll.mediaInfo) return null;
                                 const { mediaInfo: o, prerollId: a } = t.preroll,
                                     s = o.videoVariants.map((e) => ({ url: e.url, content_type: e.contentType, bitrate: e.bitrate })),
-                                    d = { adId: a, advertiserName: null, advertiserProfileImageUrl: null, mediaInfo: { call_to_action: void 0, duration_millis: o.durationMillis, publisher_id_str: o.publisherId, variants: s }, promotedContent: { impressionId: void 0, disclosureType: void 0 }, videoAnalyticsScribePassthrough: null };
+                                    d = { adId: a, advertiserName: null, advertiserProfileImageUrl: null, mediaInfo: { call_to_action: void 0, duration_millis: o.durationMillis, publisher_id_str: o.publisherId, variants: s }, promotedContent: { impressionId: void 0, disclosureType: void 0 } };
                                 if (o.callToAction) {
                                     const { type: e, url: t } = o.callToAction,
                                         n = (0, r.b)(t, i?.clickTrackingInfo),
@@ -545,8 +545,8 @@
                 E = i(600823),
                 f = i(558369),
                 _ = i(497294),
-                h = i(709318),
-                y = i(872788),
+                y = i(709318),
+                h = i(872788),
                 T = i(390387),
                 g = i(652881),
                 A = i(780936),
@@ -636,7 +636,7 @@
                             if (!o || !a) return [];
                             const s = l.Re(e),
                                 d = (0, v.Z)(a, a);
-                            return [(0, h.Vu)({ id: o.id_str, name: o.name, type: y.FO.LIST }), d.removeEntry(s), ...(0, g.C2)(n, i, g.Pq.ownedSubscribedList, e)];
+                            return [(0, y.Vu)({ id: o.id_str, name: o.name, type: h.FO.LIST }), d.removeEntry(s), ...(0, g.C2)(n, i, g.Pq.ownedSubscribedList, e)];
                         },
                     }),
                     deleteListMedia: (0, S.Tx)(D, "deleteListMedia", { getParams: (e) => ({ listId: e }), getApiMethod: (e) => e.withEndpoint(a.ZP).deleteBannerImage, context: "DELETE_LIST_MEDIA", mapResponseToActions: (e, t, i) => (t) => (t && t.entities ? [D.updateOne(e, { customBanner: void 0 })] : []) }),
@@ -672,7 +672,7 @@
                             if (a && s) {
                                 const t = k(s),
                                     r = (0, P.Z)(e);
-                                o.push(D.updateOne(e, a)), o.push(r.injectEntry(t)), o.push(...(0, g.s8)(n, i, g.Pq.ownedSubscribedList, e)), a.pinning && o.push((0, h.Co)({ id: a.id_str, name: a.name, type: y.FO.LIST }));
+                                o.push(D.updateOne(e, a)), o.push(r.injectEntry(t)), o.push(...(0, g.s8)(n, i, g.Pq.ownedSubscribedList, e)), a.pinning && o.push((0, y.Co)({ id: a.id_str, name: a.name, type: h.FO.LIST }));
                             }
                             return o;
                         },
@@ -702,7 +702,7 @@
                                 s = (0, T._h)(r);
                             if (a && s) {
                                 const t = (0, P.Z)(e);
-                                o.push(...(0, g.C2)(n, i, g.Pq.ownedSubscribedList, e)), o.push(D.updateOne(e, a)), o.push(t.removeEntry(l._Y(s))), o.push((0, h.Vu)({ id: a.id_str, name: a.name, type: y.FO.LIST }));
+                                o.push(...(0, g.C2)(n, i, g.Pq.ownedSubscribedList, e)), o.push(D.updateOne(e, a)), o.push(t.removeEntry(l._Y(s))), o.push((0, y.Vu)({ id: a.id_str, name: a.name, type: h.FO.LIST }));
                             }
                             return o;
                         },
@@ -796,7 +796,7 @@
                 K = E.Z.register(x);
         },
         206795: (e, t, i) => {
-            i.d(t, { Hi: () => h, NU: () => T, pO: () => y, g$: () => _ });
+            i.d(t, { Hi: () => y, NU: () => T, pO: () => h, g$: () => _ });
             var r = i(166852),
                 n = i(483557),
                 o = i(499627),
@@ -816,8 +816,8 @@
                     const i = f(e, t);
                     return i?.data?.lists || m;
                 },
-                h = ({ addTo: e, itemsToAdd: t }) => ({ payload: { key: e, items: t }, type: u }),
-                y = ({ itemToRemove: e, removeFrom: t }) => ({ payload: { key: t, item: e }, type: p }),
+                y = ({ addTo: e, itemsToAdd: t }) => ({ payload: { key: e, items: t }, type: u }),
+                h = ({ itemToRemove: e, removeFrom: t }) => ({ payload: { key: t, item: e }, type: p }),
                 T = (e, t) => (i, r) => {
                     const o = r(),
                         u = f(o, e),
@@ -1057,9 +1057,9 @@
                 E = i(674530),
                 f = i(367879),
                 _ = i(335632),
-                h = i(962741),
-                y = i(742742);
-            const T = (0, S.Z)({}, (0, _.G)({}), { [h.ZP.TimelineModule]: { handlers: { [y.Z.Carousel]: (0, f.Z)({ moduleDisplayType: E.m.Carousel, divider: { top: !1, bottom: !1 } }), [y.Z.CompactCarousel]: (0, f.Z)({ moduleDisplayType: E.m.CompactCarousel, divider: { top: !1, bottom: !1 } }) } } }),
+                y = i(962741),
+                h = i(742742);
+            const T = (0, S.Z)({}, (0, _.G)({}), { [y.ZP.TimelineModule]: { handlers: { [h.Z.Carousel]: (0, f.Z)({ moduleDisplayType: E.m.Carousel, divider: { top: !1, bottom: !1 } }), [h.Z.CompactCarousel]: (0, f.Z)({ moduleDisplayType: E.m.CompactCarousel, divider: { top: !1, bottom: !1 } }) } } }),
                 g = { page: "media" };
             function A({ history: e }) {
                 const t = !(0, c.ZP)(),
@@ -1071,4 +1071,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.VideoScreen-e4e3d8bb.e1128f4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.VideoScreen-e4e3d8bb.f120c4ea.js.map

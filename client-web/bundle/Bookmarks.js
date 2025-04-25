@@ -199,9 +199,9 @@
                 i = r.n(c),
                 m = r(223090),
                 d = r(718e3),
-                p = r(252021),
-                u = r(890882),
-                b = r(316732),
+                p = r(727828),
+                u = r(252021),
+                b = r(890882),
                 h = r(901646),
                 k = r(598897),
                 Z = r(443781),
@@ -247,7 +247,7 @@
                         A = o.useCallback(() => (t.scribePageImpression({ component: "empty", action: "impression" }), l && v ? o.createElement(n.Z, { buttonText: H, header: R, message: G, onButtonPress: v }) : null), [t, v, l]),
                         S = (e) => o.createElement(h.ZP, { bookmarkFolderId: e, key: e, onPress: () => {} }),
                         x = M ? o.createElement(m.Z, { "aria-label": z, history: r, onCreateButtonClick: () => t.scribe({ element: "create", action: "click" }) }) : null;
-                    return o.createElement(E.nO, { namespace: I }, o.createElement(g.Z, null, o.createElement(p.Z, { backLocation: "/home", history: r, primaryContent: o.createElement(a.Z, null, !M && B.isTrue("subscriptions_upsells_bookmarks_screen_enabled") ? o.createElement(b.Z, { variant: "BookmarkScreenCard", wrapperStyles: U.upsellWrapper }) : null, o.createElement(k.K, { onChange: _ }), i ? o.createElement(k.f, { query: i }) : o.createElement(o.Fragment, null, o.createElement(o.Fragment, null, M && c && o.createElement(o.Fragment, null, o.createElement(f.Z, { alwaysFetch: !0, footer: null, module: c, noItemsRenderer: A, renderer: S, retryMessage: T, withoutHeadroom: !0 }), o.createElement(s.Z, null))), o.createElement(w.Z, { history: r, title: L, urtModule: C.ZP }))), rightControl: x, sidebarContent: o.createElement(d.Z, null), title: o.createElement(u.Z, { text: M ? O : L }), withAppBar: !0 })));
+                    return o.createElement(E.nO, { namespace: I }, o.createElement(g.Z, null, o.createElement(u.Z, { backLocation: "/home", history: r, primaryContent: o.createElement(a.Z, null, !M && B.isTrue("subscriptions_upsells_bookmarks_screen_enabled") ? o.createElement(p.Z, { variant: "BookmarkScreenCard", wrapperStyles: U.upsellWrapper }) : null, o.createElement(k.K, { onChange: _ }), i ? o.createElement(k.f, { query: i }) : o.createElement(o.Fragment, null, o.createElement(o.Fragment, null, M && c && o.createElement(o.Fragment, null, o.createElement(f.Z, { alwaysFetch: !0, footer: null, module: c, noItemsRenderer: A, renderer: S, retryMessage: T, withoutHeadroom: !0 }), o.createElement(s.Z, null))), o.createElement(w.Z, { history: r, title: L, urtModule: C.ZP }))), rightControl: x, sidebarContent: o.createElement(d.Z, null), title: o.createElement(b.Z, { text: M ? O : L }), withAppBar: !0 })));
                 },
                 D = x(W),
                 U = l.default.create((e) => ({ upsellWrapper: { marginBottom: e.spaces.space8, marginHorizontal: e.spaces.space16 } }));
@@ -301,4 +301,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Bookmarks.6f94534a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Bookmarks.e76fa4da.js.map

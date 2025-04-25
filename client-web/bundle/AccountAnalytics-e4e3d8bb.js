@@ -381,9 +381,9 @@
                 b = a(323265),
                 g = a(709331),
                 y = a(857378),
-                E = a(115553),
-                h = a(507651),
-                f = a(316732),
+                E = a(727828),
+                h = a(115553),
+                f = a(507651),
                 _ = a(952793),
                 v = a(293115),
                 w = a(725405),
@@ -500,21 +500,21 @@
                         y = l.useCallback(() => {
                             m("timeFrame");
                         }, []),
-                        E = l.useCallback(() => {
+                        h = l.useCallback(() => {
                             m("exportData");
                         }, []),
                         v = l.useCallback(() => {
                             m(null);
                         }, []);
-                    return l.createElement(l.Fragment, null, l.createElement(te, { onDismiss: v, variant: o }), l.createElement(n.Z, null, l.createElement(h.Z, { "aria-label": ce, links: b }), l.createElement(n.Z, { style: de.innerContainer }, l.createElement(n.Z, { style: de.header }, a ? null : l.createElement(i.ZP, { size: "headline1", weight: "bold" }, le), l.createElement(n.Z, { style: de.controls }, l.createElement(Z.Z, { onChange: y, preventDefault: !0 }), l.createElement(c.ZP, { hoverLabel: { label: ie }, onClick: E, size: "small", testID: "export-button" }, l.createElement(d.default, null)))), l.createElement(n.Z, { style: de.imageContainer }, l.createElement(n.Z, { style: de.imageOverlay }, l.createElement(u.default, { style: de.icon }), l.createElement(i.ZP, { size: "headline1", weight: "bold" }, oe), l.createElement(f.Z, { variant: "AnalyticsPromoPage" })), l.createElement("img", { alt: re, src: g, style: de.image })), "restricted" !== r ? l.createElement(H, null) : null, l.createElement(L, { includeFreeMetrics: "restricted" === r }))));
+                    return l.createElement(l.Fragment, null, l.createElement(te, { onDismiss: v, variant: o }), l.createElement(n.Z, null, l.createElement(f.Z, { "aria-label": ce, links: b }), l.createElement(n.Z, { style: de.innerContainer }, l.createElement(n.Z, { style: de.header }, a ? null : l.createElement(i.ZP, { size: "headline1", weight: "bold" }, le), l.createElement(n.Z, { style: de.controls }, l.createElement(Z.Z, { onChange: y, preventDefault: !0 }), l.createElement(c.ZP, { hoverLabel: { label: ie }, onClick: h, size: "small", testID: "export-button" }, l.createElement(d.default, null)))), l.createElement(n.Z, { style: de.imageContainer }, l.createElement(n.Z, { style: de.imageOverlay }, l.createElement(u.default, { style: de.icon }), l.createElement(i.ZP, { size: "headline1", weight: "bold" }, oe), l.createElement(E.Z, { variant: "AnalyticsPromoPage" })), l.createElement("img", { alt: re, src: g, style: de.image })), "restricted" !== r ? l.createElement(H, null) : null, l.createElement(L, { includeFreeMetrics: "restricted" === r }))));
                 },
                 ue = (e) => {
                     const t = l.useMemo(() => l.createElement(me, e), [e]),
                         a = b.ZP.isTwitterApp();
-                    return l.createElement(v.nO, { namespace: { page: "analytics_upsell", section: "page" } }, l.createElement(E.A, { headerless: a, history: e.history, isFullWidth: !0, onBackClick: () => e.history.goBack(), primaryContent: t, sidebarContent: null, title: a ? null : ae }));
+                    return l.createElement(v.nO, { namespace: { page: "analytics_upsell", section: "page" } }, l.createElement(h.A, { headerless: a, history: e.history, isFullWidth: !0, onBackClick: () => e.history.goBack(), primaryContent: t, sidebarContent: null, title: a ? null : ae }));
                 },
                 de = r.default.create((e) => ({ innerContainer: { flexDirection: "column", marginBottom: y.h$ }, header: { justifyContent: "space-between", margin: e.spaces.space16, flexDirection: "row", alignItems: "flex-end" }, controls: { flexDirection: "row", gap: e.spaces.space8 }, image: { height: "auto", maxWidth: "100%", borderRadius: e.borderRadii.large }, imageOverlay: { position: "absolute", padding: e.spaces.space24, justifyContent: "center", alignItems: "center", gap: e.spaces.space8 }, imageContainer: { position: "relative", alignItems: "center", justifyContent: "center", marginHorizontal: e.spaces.space8 }, icon: { fontSize: e.fontSizes.title2 }, button: { marginTop: e.spaces.space8 } }));
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-e4e3d8bb.d32c834a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-e4e3d8bb.3b61486a.js.map

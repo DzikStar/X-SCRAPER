@@ -82,23 +82,25 @@
             const p = (0, d.p)(
                     () =>
                         Promise.all([
-                            a.e("icons.7"),
-                            a.e("icons.15"),
-                            a.e("icons.8"),
-                            a.e("icons.3"),
-                            a.e("icons.24"),
-                            a.e("icons.9"),
-                            a.e("icons.22"),
-                            a.e("icons.12"),
-                            a.e("modules.common-e907d115"),
-                            a.e("modules.common-e019dbda"),
                             a.e("icons.5"),
                             a.e("icons.6"),
-                            a.e("icons.14"),
+                            a.e("icons.22"),
+                            a.e("icons.25"),
+                            a.e("icons.9"),
+                            a.e("icons.4"),
+                            a.e("icons.15"),
+                            a.e("icons.20"),
+                            a.e("icons.7"),
+                            a.e("icons.0"),
+                            a.e("modules.common-e907d115"),
+                            a.e("modules.common-e019dbda"),
+                            a.e("icons.11"),
+                            a.e("icons.27"),
+                            a.e("icons.17"),
+                            a.e("icons.12"),
+                            a.e("icons.3"),
+                            a.e("icons.13"),
                             a.e("icons.18"),
-                            a.e("icons.2"),
-                            a.e("icons.21"),
-                            a.e("icons.16"),
                             a.e("modules.audio-6107ac1a"),
                             a.e("modules.audio-b953418a"),
                             a.e("modules.audio-7c51e6a7"),
@@ -109,11 +111,11 @@
                             a.e("modules.audio-e019dbda"),
                             a.e("modules.audio-262c94d4"),
                             a.e("modules.audio-c6fe4ea4"),
-                            a.e("icons.1"),
-                            a.e("icons.28"),
-                            a.e("icons.27"),
+                            a.e("icons.24"),
+                            a.e("icons.10"),
+                            a.e("icons.8"),
+                            a.e("icons.26"),
                             a.e("icons.19"),
-                            a.e("icons.0"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -145,7 +147,7 @@
                             a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                             a.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-00a077b2"),
+                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2f4a3d25"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -807,8 +809,8 @@
                 p = a(674132),
                 b = a.n(p),
                 h = a(290402),
-                m = a(741049),
-                S = a(167725),
+                m = a(306114),
+                S = a(741049),
                 D = a(443781),
                 g = a(664918),
                 f = a(652904),
@@ -974,10 +976,10 @@
                 n.useEffect(() => {
                     e.viewerUser || e.fetchPreferencesIfNeeded().catch(e.createLocalApiErrorHandler());
                 }, [e, e.viewerUser]);
-                const l = (0, S.Z)(),
+                const l = (0, m.Z)(),
                     p = () => {
                         const e = (0, y.Xh)(r.b7, t.featureSwitches);
-                        return n.createElement(o.Z, { testID: ee.loggedOutPrivacySection }, n.createElement(s.Z, { text: se }), n.createElement(m.Z, { description: e ? v() : void 0, label: ce, link: "/settings/account/personalization" }), n.createElement(m.Z, { label: ue, link: "/settings/your_twitter_data" }), t.featureSwitches.isTrue("responsive_web_cookie_compliance_banner_enabled") ? n.createElement(m.Z, { description: he, label: be, link: "/settings/cookie_preferences" }) : null, n.createElement(c.ZP, { style: J.Z.descriptionText }, pe), E(), n.createElement(Pe, null));
+                        return n.createElement(o.Z, { testID: ee.loggedOutPrivacySection }, n.createElement(s.Z, { text: se }), n.createElement(S.Z, { description: e ? v() : void 0, label: ce, link: "/settings/account/personalization" }), n.createElement(S.Z, { label: ue, link: "/settings/your_twitter_data" }), t.featureSwitches.isTrue("responsive_web_cookie_compliance_banner_enabled") ? n.createElement(S.Z, { description: he, label: be, link: "/settings/cookie_preferences" }) : null, n.createElement(c.ZP, { style: J.Z.descriptionText }, pe), E(), n.createElement(Pe, null));
                     },
                     { delegateRole: b } = e,
                     A = () => {
@@ -990,31 +992,31 @@
                             searchIndex: t,
                         });
                     },
-                    E = () => n.createElement(o.Z, null, n.createElement(u.Z, null), n.createElement(s.Z, { text: oe }), Z(), I() ? n.createElement(m.Z, { label: le, link: "/settings/display", testID: ee.displayLink }) : null, I() ? n.createElement(m.Z, { label: ie, link: "/settings/data", testID: ee.dataLink }) : null, I() ? n.createElement(m.Z, { label: ae, link: "/settings/accessibility", testID: ee.accessibilityLink }) : null, n.createElement(m.Z, { label: ge, link: "/settings/about", testID: ee.aboutLink })),
-                    Z = () => (e.withEditableFSes ? n.createElement(n.Fragment, null, n.createElement(m.Z, { label: Ae, link: "/settings/feature_switches" }), n.createElement(m.Z, { label: fe, link: "/settings/earlybird_settings" })) : null),
+                    E = () => n.createElement(o.Z, null, n.createElement(u.Z, null), n.createElement(s.Z, { text: oe }), Z(), I() ? n.createElement(S.Z, { label: le, link: "/settings/display", testID: ee.displayLink }) : null, I() ? n.createElement(S.Z, { label: ie, link: "/settings/data", testID: ee.dataLink }) : null, I() ? n.createElement(S.Z, { label: ae, link: "/settings/accessibility", testID: ee.accessibilityLink }) : null, n.createElement(S.Z, { label: ge, link: "/settings/about", testID: ee.aboutLink })),
+                    Z = () => (e.withEditableFSes ? n.createElement(n.Fragment, null, n.createElement(S.Z, { label: Ae, link: "/settings/feature_switches" }), n.createElement(S.Z, { label: fe, link: "/settings/earlybird_settings" })) : null),
                     _ = () => {
                         const { userClaims: e } = t;
-                        return e.hasSubscription("one_dollar") ? n.createElement(m.Z, { label: ye, link: "/settings/not_a_bot" }) : null;
+                        return e.hasSubscription("one_dollar") ? n.createElement(S.Z, { label: ye, link: "/settings/not_a_bot" }) : null;
                     },
                     k = () => {
                         const { searchIndex: a } = e,
                             { featureSwitches: r, userClaims: o } = t,
                             d = a.find((e) => e.id === w.VZ.TwitterBlue)?.path;
-                        if (o.isAnyPremiumSubscriber() || (!o.isAnyPremiumSubscriber() && r.isTrue("subscriptions_sign_up_enabled"))) return d ? n.createElement(m.Z, { label: Ze, link: d }) : null;
+                        if (o.isAnyPremiumSubscriber() || (!o.isAnyPremiumSubscriber() && r.isTrue("subscriptions_sign_up_enabled"))) return d ? n.createElement(S.Z, { label: Ze, link: d }) : null;
                     },
                     M = (a) => {
                         const { featureSwitches: r } = t,
                             { searchIndex: o } = e,
                             d = o.find((e) => e.id === w.VZ.Analytics)?.path;
-                        if (a && r.isTrue("subscriptions_upsells_settings_analytics_upsell_enabled")) return d ? n.createElement(m.Z, { label: we, link: d }) : null;
+                        if (a && r.isTrue("subscriptions_upsells_settings_analytics_upsell_enabled")) return d ? n.createElement(S.Z, { label: we, link: d }) : null;
                     },
                     C = () => {
                         const { searchIndex: a } = e,
                             { featureSwitches: r } = t,
                             o = a.find((e) => e.id === w.VZ.Subscription)?.path;
-                        if (r.isTrue("responsive_web_subscriptions_setting_enabled")) return o ? n.createElement(m.Z, { label: ke, link: o }) : null;
+                        if (r.isTrue("responsive_web_subscriptions_setting_enabled")) return o ? n.createElement(S.Z, { label: ke, link: o }) : null;
                     },
-                    P = () => (t.featureSwitches.isTrue("report_center_mvp_r2_enabled") ? n.createElement(m.Z, { label: _e, link: "/settings/report-center" }) : null),
+                    P = () => (t.featureSwitches.isTrue("report_center_mvp_r2_enabled") ? n.createElement(S.Z, { label: _e, link: "/settings/report-center" }) : null),
                     v = () => {
                         const { personalizationPreferences: t } = e;
                         return (0, K.s)(t);
@@ -1041,7 +1043,7 @@
                                   onRequestRetry: () => {
                                       e.fetchPreferencesIfNeeded().catch(e.createLocalApiErrorHandler());
                                   },
-                                  render: t.viewerUserId ? (B ? () => n.createElement(n.Fragment, null, a ? null : n.createElement(o.Z, { role: "tablist" }, "Admin" === b && n.createElement(m.Z, { label: Se, link: "/settings/security_and_account_access", testID: ee.accountAccessLink }))) : () => n.createElement(n.Fragment, null, A(), a ? null : n.createElement(o.Z, { role: "tablist" }, n.createElement(m.Z, { label: me, link: "/settings/account", testID: ee.accountLink }), M(l), n.createElement(m.Z, { label: Ee, link: "/settings/monetization" }), k(), C(), n.createElement(m.Z, { label: Se, link: "/settings/security_and_account_access", testID: ee.accountAccessLink }), n.createElement(m.Z, { label: ne, link: "/settings/privacy_and_safety", testID: ee.privacyAndSafetyLink }), P(), n.createElement(m.Z, { label: de, link: "/settings/notifications", testID: ee.notificationsLink }), n.createElement(m.Z, { label: De, link: "/settings/accessibility_display_and_languages", testID: ee.accessibilityLink }), _(), n.createElement(m.Z, { label: ge, link: "/settings/about", testID: ee.aboutLink }), n.createElement(i.Z, { label: te, link: Me, testID: ee.helpCenterLink }), Z()))) : p,
+                                  render: t.viewerUserId ? (B ? () => n.createElement(n.Fragment, null, a ? null : n.createElement(o.Z, { role: "tablist" }, "Admin" === b && n.createElement(S.Z, { label: Se, link: "/settings/security_and_account_access", testID: ee.accountAccessLink }))) : () => n.createElement(n.Fragment, null, A(), a ? null : n.createElement(o.Z, { role: "tablist" }, n.createElement(S.Z, { label: me, link: "/settings/account", testID: ee.accountLink }), M(l), n.createElement(S.Z, { label: Ee, link: "/settings/monetization" }), k(), C(), n.createElement(S.Z, { label: Se, link: "/settings/security_and_account_access", testID: ee.accountAccessLink }), n.createElement(S.Z, { label: ne, link: "/settings/privacy_and_safety", testID: ee.privacyAndSafetyLink }), P(), n.createElement(S.Z, { label: de, link: "/settings/notifications", testID: ee.notificationsLink }), n.createElement(S.Z, { label: De, link: "/settings/accessibility_display_and_languages", testID: ee.accessibilityLink }), _(), n.createElement(S.Z, { label: ge, link: "/settings/about", testID: ee.aboutLink }), n.createElement(i.Z, { label: te, link: Me, testID: ee.helpCenterLink }), Z()))) : p,
                               })
                             : p(),
                     ),
@@ -1057,4 +1059,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Settings-8ed0fac5.f127c1ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Settings-8ed0fac5.dcf2361a.js.map

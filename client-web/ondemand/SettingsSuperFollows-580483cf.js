@@ -66,7 +66,7 @@
                 L = x.default.create((e) => ({ interstitial: { marginVertical: e.spaces.space32 } })),
                 S = (0, R.Z)(() => s.createElement(z.Z, { leftControlShouldClose: !0, withInfoButton: !0 }, s.createElement(B.Z, { style: L.interstitial }, s.createElement(T.Z, { headline: O, illustration: T.j.TrafficBarricadeAlt, subtext: N }))), { component: "application_disabled" });
             var I = a(953134),
-                F = a(316732),
+                F = a(727828),
                 D = a(260094),
                 W = a(228477),
                 V = a(973316);
@@ -852,4 +852,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsSuperFollows-580483cf.7aa4871a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsSuperFollows-580483cf.b23d7cda.js.map

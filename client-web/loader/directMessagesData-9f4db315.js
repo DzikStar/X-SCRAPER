@@ -48,7 +48,7 @@
                 r = i(653843),
                 n = i(122123),
                 d = i(417144),
-                l = i(417854),
+                l = i(884495),
                 _ = i(716233),
                 u = i(540387);
             const m = o().b8098028,
@@ -308,4 +308,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.directMessagesData-9f4db315.b078aaaa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.directMessagesData-9f4db315.ad4d27ea.js.map

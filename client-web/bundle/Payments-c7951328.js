@@ -334,7 +334,7 @@
                 b = n(976352),
                 P = n(988291),
                 v = n(829464),
-                Z = n(316732),
+                Z = n(727828),
                 C = n(514639);
             const S = "Verify",
                 x = y.Z,
@@ -1005,4 +1005,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-c7951328.82aaedea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-c7951328.04d37e9a.js.map

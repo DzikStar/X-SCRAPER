@@ -414,9 +414,9 @@
                 o = i(674132),
                 n = i.n(o),
                 a = i(718e3),
-                l = i(252021),
-                c = i(507651),
-                d = i(316732),
+                l = i(727828),
+                c = i(252021),
+                d = i(507651),
                 _ = i(443781),
                 p = i(652904),
                 u = i(886191),
@@ -486,7 +486,7 @@
                         ];
                     this._isOwnTweet() && n.push({ key: "likes", to: `/${i}/status/${s}/likes`, label: R.likes });
                     const _ = (0, I.Z)({ featureSwitches: this.context.featureSwitches, isOwnPost: this._isOwnTweet(), isPremium: this.context.userClaims.isAnyPremiumSubscriber(), tweet: this.props.tweet, surface: "engagements_screen" });
-                    return r.createElement(p.Z, null, r.createElement(l.Z, { backLocation: `/${i}/status/${s}`, documentTitle: o, history: e, primaryContent: this._render, secondaryBar: r.createElement(r.Fragment, null, _ ? r.createElement(d.Z, { variant: "PostAnalytics" }) : null, r.createElement(c.Z, { links: n })), sidebarContent: r.createElement(a.Z, null), title: L }));
+                    return r.createElement(p.Z, null, r.createElement(c.Z, { backLocation: `/${i}/status/${s}`, documentTitle: o, history: e, primaryContent: this._render, secondaryBar: r.createElement(r.Fragment, null, _ ? r.createElement(l.Z, { variant: "PostAnalytics" }) : null, r.createElement(d.Z, { links: n })), sidebarContent: r.createElement(a.Z, null), title: L }));
                 }
             }
             A.contextType = _.rC;
@@ -598,4 +598,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TweetActivity.12d7a52a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TweetActivity.7cc6cf1a.js.map

@@ -37,7 +37,7 @@
                 s = n(443781),
                 c = n(507824),
                 d = n(166424),
-                u = n(316732);
+                u = n(727828);
             const m = { noteTweetTooltip: r().hb36f723, articlesTooltip: a.createElement(r().I18NFormatMessage, { $i18n: "j0b75ce7" }, a.createElement(i.ZP, { color: "text", link: { pathname: "/compose/articles", external: !0 }, weight: "bold", withInteractiveStyling: !0, withUnderline: !0 }, r().d759c09e)) };
             function p(e) {
                 const { isReply: t, isThread: n } = e,
@@ -69,7 +69,7 @@
                 i = n(325686),
                 l = n(392237),
                 o = n(443781),
-                r = n(316732);
+                r = n(727828);
             function s({ isActive: e, isExpanded: t, isReply: n, isThread: l }) {
                 const { featureSwitches: s, userClaims: d } = (0, o.QZ)(),
                     u = d.isAnyPremiumSubscriber();
@@ -525,4 +525,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Compose~bundle.RichTextCompose-42018f38.98dd9f8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Compose~bundle.RichTextCompose-42018f38.6c11253a.js.map

@@ -730,11 +730,13 @@
                 E = (0, M.p)(
                     () =>
                         Promise.all([
-                            r.e("icons.7"),
+                            r.e("icons.5"),
+                            r.e("icons.6"),
+                            r.e("icons.22"),
+                            r.e("icons.25"),
+                            r.e("icons.9"),
+                            r.e("icons.4"),
                             r.e("icons.15"),
-                            r.e("icons.8"),
-                            r.e("icons.3"),
-                            r.e("icons.24"),
                             r.e("modules.common-e907d115"),
                             r.e("modules.common-e019dbda"),
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
@@ -781,11 +783,13 @@
                 x = (0, M.p)(
                     () =>
                         Promise.all([
-                            r.e("icons.7"),
+                            r.e("icons.5"),
+                            r.e("icons.6"),
+                            r.e("icons.22"),
+                            r.e("icons.25"),
+                            r.e("icons.9"),
+                            r.e("icons.4"),
                             r.e("icons.15"),
-                            r.e("icons.8"),
-                            r.e("icons.3"),
-                            r.e("icons.24"),
                             r.e("modules.common-e907d115"),
                             r.e("modules.common-e019dbda"),
                             r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
@@ -1000,4 +1004,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.GifSearch.b37d321a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.GifSearch.177d5cea.js.map

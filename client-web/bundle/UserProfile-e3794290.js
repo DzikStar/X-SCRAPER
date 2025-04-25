@@ -508,8 +508,8 @@
                 Ir = r(392049),
                 Br = r(797448),
                 kr = r(799432),
-                Sr = r(966136),
-                Or = r(54158),
+                Sr = r(998118),
+                Or = r(480056),
                 Rr = r(728220),
                 xr = r(32256);
             const Nr = "UserName";
@@ -752,4 +752,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-e3794290.d751ef8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-e3794290.6c90d47a.js.map

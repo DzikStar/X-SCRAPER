@@ -81,7 +81,7 @@
                 return r.createElement(N.Z, { rightControl: t, screenType: "root", title: Y }, e.children);
             }
             const W = B.default.create((e) => ({ appBarButtons: { flexDirection: "row", alignItems: "center" } }));
-            var Q = n(316732),
+            var Q = n(727828),
                 $ = n(443781);
             const q = () => {
                     const { featureSwitches: e, userClaims: t } = (0, $.QZ)(),
@@ -609,4 +609,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.DirectMessages-58b91ff1.252c394a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.DirectMessages-58b91ff1.fe808a9a.js.map
