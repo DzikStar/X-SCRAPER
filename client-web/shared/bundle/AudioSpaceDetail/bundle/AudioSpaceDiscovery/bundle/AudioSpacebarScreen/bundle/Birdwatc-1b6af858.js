@@ -31,14 +31,14 @@
                 x = d(306114),
                 k = d(293605),
                 C = d(703572),
-                I = d(736063),
-                Z = d(904658);
+                Z = d(736063),
+                I = d(904658);
             function B() {
                 const { featureSwitches: e } = (0, s.QZ)();
-                return (0, Z.Z)() > 0 && e.isTrue("vo_upsell_enabled") ? r.createElement(E.Z, { variant: "VerifiedOrgsAdCredit" }) : null;
+                return (0, I.Z)() > 0 && e.isTrue("vo_upsell_enabled") ? r.createElement(E.Z, { variant: "VerifiedOrgsAdCredit" }) : null;
             }
             const P = function () {
-                return r.createElement(I.H, { errorConfig: { context: "AD_CREDIT_UPSELL" } }, r.createElement(B, null));
+                return r.createElement(Z.H, { errorConfig: { context: "AD_CREDIT_UPSELL" } }, r.createElement(B, null));
             };
             var T = d(399398),
                 R = d(975753);
@@ -46,24 +46,19 @@
                 loader: () =>
                     Promise.all([
                         d.e("icons.5"),
-                        d.e("icons.6"),
-                        d.e("icons.22"),
-                        d.e("icons.25"),
-                        d.e("icons.9"),
-                        d.e("icons.4"),
-                        d.e("icons.15"),
+                        d.e("icons.12"),
                         d.e("icons.20"),
-                        d.e("icons.7"),
                         d.e("icons.0"),
+                        d.e("icons.21"),
+                        d.e("icons.28"),
+                        d.e("icons.17"),
                         d.e("modules.common-e907d115"),
                         d.e("modules.common-e019dbda"),
-                        d.e("icons.11"),
-                        d.e("icons.27"),
-                        d.e("icons.17"),
-                        d.e("icons.12"),
-                        d.e("icons.3"),
-                        d.e("icons.13"),
-                        d.e("icons.18"),
+                        d.e("icons.22"),
+                        d.e("icons.9"),
+                        d.e("icons.25"),
+                        d.e("icons.6"),
+                        d.e("icons.10"),
                         d.e("modules.audio-6107ac1a"),
                         d.e("modules.audio-b953418a"),
                         d.e("modules.audio-7c51e6a7"),
@@ -75,10 +70,14 @@
                         d.e("modules.audio-262c94d4"),
                         d.e("modules.audio-c6fe4ea4"),
                         d.e("icons.24"),
-                        d.e("icons.10"),
+                        d.e("icons.23"),
+                        d.e("icons.14"),
+                        d.e("icons.3"),
+                        d.e("icons.4"),
+                        d.e("icons.13"),
+                        d.e("icons.1"),
+                        d.e("icons.18"),
                         d.e("icons.8"),
-                        d.e("icons.26"),
-                        d.e("icons.19"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -103,14 +102,13 @@
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7082ec04"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-c977f3f0"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-bde9e8ed"),
-                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-de203a7b"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-78eb13f6"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-83ae13c2"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                         d.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
                         d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2f4a3d25"),
+                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-34cda585"),
                         d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                         d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                         d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -277,7 +275,7 @@
                 },
                 ce = () => {
                     const { featureSwitches: e, userClaims: a } = (0, s.QZ)();
-                    return a.isAnyPremiumSubscriber() && e.isTrue("subscriptions_premium_module_creator_gate_enabled") ? r.createElement(I.H, { errorConfig: { context: "premium_module" } }, r.createElement(se, null)) : null;
+                    return a.isAnyPremiumSubscriber() && e.isTrue("subscriptions_premium_module_creator_gate_enabled") ? r.createElement(Z.H, { errorConfig: { context: "premium_module" } }, r.createElement(se, null)) : null;
                 },
                 ue = i.default.create((e) => ({ container: { marginBottom: e.spaces.space12 }, containerRedesign: { paddingHorizontal: e.spaces.space16, marginBottom: e.spaces.space12 } })),
                 be = { withSuggestedVideos: !0, withSearchBox: !0, withTopicsToFollow: !0, withTrends: !0, withWhoToFollow: !0 };
@@ -517,4 +515,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1b6af858.df136a7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1b6af858.e0d1aeea.js.map

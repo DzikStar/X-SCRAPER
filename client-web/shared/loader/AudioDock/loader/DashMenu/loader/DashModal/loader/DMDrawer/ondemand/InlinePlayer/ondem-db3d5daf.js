@@ -153,14 +153,14 @@
                 C = { label: x },
                 w = r.createElement(Z.default, null);
             function S({ onSend: e }) {
-                return r.createElement(g.ZP, { "aria-label": x, hoverLabel: C, icon: w, onPress: e, size: "medium", style: k.button, type: "primaryText" });
+                return r.createElement(g.ZP, { "aria-label": x, hoverLabel: C, icon: w, onPress: e, size: "medium", style: I.button, type: "primaryText" });
             }
-            const k = s.default.create((e) => ({ button: { marginStart: e.spaces.space4 } }));
-            var I = n(23425);
-            const D = "Type a message...";
+            const I = s.default.create((e) => ({ button: { marginStart: e.spaces.space4 } }));
+            var D = n(23425);
+            const k = "Type a message...";
             function _({ onSend: e }) {
                 const [t, n] = (0, a.KO)(m.Pm),
-                    o = (0, a.b9)(I.hc),
+                    o = (0, a.b9)(D.hc),
                     c = r.useRef(null);
                 r.useEffect(() => {
                     c.current && c.current.focus();
@@ -176,7 +176,7 @@
                     onKeyDown: (t) => {
                         "Enter" !== t.key || t.shiftKey ? (("c" === t.key && t.ctrlKey && t.metaKey) || ("c" === t.key && t.ctrlKey && t.altKey)) && (o(), t.preventDefault()) : (e(), t.preventDefault());
                     },
-                    placeholder: D,
+                    placeholder: k,
                     ref: c,
                     rightContent: r.createElement(S, { onSend: e }),
                     style: R.input,
@@ -185,7 +185,7 @@
                 });
             }
             const R = s.default.create((e) => ({ input: { backgroundColor: e.colors.gray50, borderRadius: e.spaces.space12 } }));
-            function P() {
+            function T() {
                 const [e, t] = (0, a.KO)(m.qw),
                     [n, s] = (0, a.KO)(m.Pm),
                     h = (0, f.v9)(p.ZP.selectViewerUser),
@@ -207,43 +207,43 @@
                     Z = r.useRef(null);
                 return r.createElement(
                     c.Z,
-                    { style: L.container },
+                    { style: z.container },
                     r.createElement(i.Z, { text: "Chat" }),
                     r.createElement(
                         o.Z,
-                        { onContentSizeChange: () => Z.current?.scrollToEnd({ animated: !1 }), ref: Z, style: L.messageContainer },
-                        e.map((e) => r.createElement(u.H, { errorConfig: T, key: e.id }, r.createElement(E.u, { message: e }))),
+                        { onContentSizeChange: () => Z.current?.scrollToEnd({ animated: !1 }), ref: Z, style: z.messageContainer },
+                        e.map((e) => r.createElement(u.H, { errorConfig: P, key: e.id }, r.createElement(E.u, { message: e }))),
                     ),
-                    r.createElement(c.Z, { style: L.draftContainer }, r.createElement(_, { onSend: y })),
+                    r.createElement(c.Z, { style: z.draftContainer }, r.createElement(_, { onSend: y })),
                 );
             }
-            const T = { context: "ConferenceChatSidebar" };
-            const L = s.default.create((e) => ({ draftContainer: { flexDirection: "row", alignItems: "center", paddingHorizontal: e.componentDimensions.gutterHorizontal }, container: { height: "100%" }, messageContainer: { flex: 1, marginBottom: e.spaces.space12 } }));
-            var z = n(565058),
+            const P = { context: "ConferenceChatSidebar" };
+            const z = s.default.create((e) => ({ draftContainer: { flexDirection: "row", alignItems: "center", paddingHorizontal: e.componentDimensions.gutterHorizontal }, container: { height: "100%" }, messageContainer: { flex: 1, marginBottom: e.spaces.space12 } }));
+            var L = n(565058),
                 M = n(954110),
-                H = n(42778);
-            const O = "Noise suppression",
+                O = n(42778);
+            const H = "Noise suppression",
                 A = "Settings";
             function B() {
-                const e = (0, a.Dv)(H.wM),
-                    t = (0, a.Dv)(H.Wj),
+                const e = (0, a.Dv)(O.wM),
+                    t = (0, a.Dv)(O.Wj),
                     n = (0, a.b9)(N);
-                return r.createElement(c.Z, null, r.createElement(i.Z, { text: A }), r.createElement(M.Z, { checked: t, disabled: !e, label: O, name: "suppression", onChange: n, type: "switch" }));
+                return r.createElement(c.Z, null, r.createElement(i.Z, { text: A }), r.createElement(M.Z, { checked: t, disabled: !e, label: H, name: "suppression", onChange: n, type: "switch" }));
             }
-            const N = (0, z.cn)(null, (e, t, n, r) => {
-                t(H.bU, r);
+            const N = (0, L.cn)(null, (e, t, n, r) => {
+                t(O.bU, r);
             });
             var W = n(715601),
-                F = n(595561),
-                V = n(136397),
-                $ = n(811176),
-                K = n(149170),
+                V = n(595561),
+                $ = n(136397),
+                F = n(811176),
+                j = n(149170),
                 q = n(616894),
-                j = n(275220),
+                K = n(275220),
                 X = n(908599),
                 G = n(53317),
-                U = n(625555),
-                J = n(4427),
+                J = n(625555),
+                U = n(4427),
                 Y = n(847982),
                 Q = n(509599),
                 ee = n(114084);
@@ -265,7 +265,7 @@
                     n = r.useCallback((t) => r.createElement(le, { onClose: t, userId: e }), [e]);
                 return t ? r.createElement(G.P, { renderAtom: de }, (e) => r.createElement(ee.H, { decoration: r.createElement(g.ZP, { "aria-label": ce, disabled: e, hoverLabel: ie, icon: oe, renderMenu: n, size: "medium", type: "primaryText" }), displayMode: "UserCompact", isDisabled: e, user: t, withLink: !1 })) : null;
             }
-            const oe = r.createElement(K.default, null),
+            const oe = r.createElement(j.default, null),
                 ce = y().h16eeb42,
                 ie = { label: ce },
                 se = y().e68b09b4;
@@ -283,17 +283,17 @@
                         },
                     ];
                 })(t);
-                return r.createElement($.Z, { items: n, onCloseRequested: e, shouldCloseOnClick: !0 });
+                return r.createElement(F.Z, { items: n, onCloseRequested: e, shouldCloseOnClick: !0 });
             }
-            const ue = (0, z.cn)((e) => {
+            const ue = (0, L.cn)((e) => {
                     const t = e(Q.Xn),
                         n = e(Q.F$),
-                        r = e(j.o);
+                        r = e(K.o);
                     return t?.filter((e) => !n.has(e) && e !== r);
                 }),
                 de = (0, X.Y)((e, t, n) => {
-                    const r = e(U.F6),
-                        a = e(J.sB);
+                    const r = e(J.F6),
+                        a = e(U.sB);
                     if (a)
                         return r
                             .getConference(a)
@@ -313,29 +313,29 @@
             }
             const ge = s.default.create((e) => ({ invite: { height: 500 * e.scaleMultiplier } })),
                 be = [pe.my.Users],
-                ye = (0, z.cn)(null, (e, t, n, r) => {
-                    const a = e(J.sB);
+                ye = (0, L.cn)(null, (e, t, n, r) => {
+                    const a = e(U.sB);
                     if (!a) return;
-                    const o = e(U.F6);
+                    const o = e(J.F6);
                     o.getConference(a)
                         .then(({ attendees_twitter_user_ids: e }) => o.updateConference({ key: a, attendees_twitter_user_ids: e.includes(n.id) ? e : e.concat(n.id) }))
                         .then(() => t(Q.jQ));
                 }),
-                Ze = (0, z.cn)(null, (e, t, n, r) => {
+                Ze = (0, L.cn)(null, (e, t, n, r) => {
                     const a = e(Q.Xn);
                     return a?.includes(n.id) ?? !1;
                 });
             function xe() {
-                return r.createElement(W.Z, { style: Ce.viewportView }, r.createElement(F.q, null), r.createElement(V.TP, null), r.createElement(ne, null), r.createElement(he, null));
+                return r.createElement(W.Z, { style: Ce.viewportView }, r.createElement(V.q, null), r.createElement($.TP, null), r.createElement(ne, null), r.createElement(he, null));
             }
             const Ce = s.default.create(() => ({ viewportView: { flexGrow: 1, flexShrink: 1, overflowX: "hidden", overflowY: "auto" } }));
             function we() {
-                const e = (0, a.Dv)(I.SR);
+                const e = (0, a.Dv)(D.SR);
                 switch (e) {
                     case "Participants":
                         return r.createElement(xe, null);
                     case "Chat":
-                        return r.createElement(P, null);
+                        return r.createElement(T, null);
                     case "Settings":
                         return r.createElement(B, null);
                     default:
@@ -511,7 +511,7 @@
             })(16 / 9);
         },
         977419: (e, t, n) => {
-            n.d(t, { I0: () => D, _x: () => S, ww: () => k });
+            n.d(t, { I0: () => k, _x: () => S, ww: () => I });
             var r = n(807896),
                 a = n(202784),
                 o = n(400752),
@@ -539,17 +539,17 @@
                 const e = (0, o.Dv)(f.Lv),
                     t = (0, s.Ji)(),
                     n = (0, d.rx)();
-                return a.createElement(i.Z, { style: P.focalView }, a.createElement(i.Z, { style: P.focalItem }, a.createElement(i.Z, { style: P.focalItem }, a.createElement(y.W.Provider, null, a.createElement(y.X, { defaultAspectRatio: 16 / 9, style: P.focalVideo }, a.createElement(i.Z, null, a.createElement(k, null)))), a.createElement(C.W, null), a.createElement(l.Z.Modal, null, a.createElement(Z.F, null))), a.createElement(I, null), n && a.createElement(m.Z, { audioSpaceId: n, height: 150 })), t && !e && a.createElement(g.L, null), t && !e && a.createElement(g.C, null), a.createElement(b.h, null), a.createElement(i.Z, { style: P.bottomStart }, a.createElement(h.xG, null)));
+                return a.createElement(i.Z, { style: T.focalView }, a.createElement(i.Z, { style: T.focalItem }, a.createElement(i.Z, { style: T.focalItem }, a.createElement(y.W.Provider, null, a.createElement(y.X, { defaultAspectRatio: 16 / 9, style: T.focalVideo }, a.createElement(i.Z, null, a.createElement(I, null)))), a.createElement(C.W, null), a.createElement(l.Z.Modal, null, a.createElement(Z.F, null))), a.createElement(D, null), n && a.createElement(m.Z, { audioSpaceId: n, height: 150 })), t && !e && a.createElement(g.L, null), t && !e && a.createElement(g.C, null), a.createElement(b.h, null), a.createElement(i.Z, { style: T.bottomStart }, a.createElement(h.xG, null)));
             }
-            function k() {
+            function I() {
                 const e = (0, o.Dv)(R);
                 return e ? a.createElement(x.nA, (0, r.Z)({ isFocal: !0 }, e)) : a.createElement(x.Ou, null);
             }
-            function I() {
-                return !(0, s.Ji)() && a.createElement(D, null);
-            }
             function D() {
-                return (0, o.Dv)(_) && a.createElement(i.Z, { style: P.hover }, a.createElement(x.Ou, { isListSafe: !0 }));
+                return !(0, s.Ji)() && a.createElement(k, null);
+            }
+            function k() {
+                return (0, o.Dv)(_) && a.createElement(i.Z, { style: T.hover }, a.createElement(x.Ou, { isListSafe: !0 }));
             }
             const _ = (0, c.cn)((e) => !!e(p.xZ).length && !!e(v.eN)?.length && !!e(R)),
                 R = (0, c.cn)((e) => {
@@ -559,7 +559,7 @@
                         r = n ? (e(p.Dg) ?? t) : t;
                     return { feedId: n ? t : r, userName: e((0, w.Kz)(r)), userAvatar: e((0, w.pB)(r)) };
                 }),
-                P = u.default.create((e) => ({ focalView: { flexGrow: 1, flexShrink: 1, flexDirection: "row" }, focalVideo: { padding: e.spaces.space8 }, focalItem: { flexGrow: 1, flexShrink: 1 }, bottomStart: { bottom: e.spaces.space16, start: e.spaces.space16, position: "fixed" }, hover: { position: "absolute", bottom: e.spaces.space16, end: e.spaces.space16, width: "25%", boxShadow: e.boxShadows.medium, borderRadius: e.borderRadii.large } }));
+                T = u.default.create((e) => ({ focalView: { flexGrow: 1, flexShrink: 1, flexDirection: "row" }, focalVideo: { padding: e.spaces.space8 }, focalItem: { flexGrow: 1, flexShrink: 1 }, bottomStart: { bottom: e.spaces.space16, start: e.spaces.space16, position: "fixed" }, hover: { position: "absolute", bottom: e.spaces.space16, end: e.spaces.space16, width: "25%", boxShadow: e.boxShadows.medium, borderRadius: e.borderRadii.large } }));
         },
         75629: (e, t, n) => {
             n.d(t, { F: () => g });
@@ -579,8 +579,8 @@
                 E = n(254810);
             const h = n.p + "ding.3588127a.mp3";
             function g() {
-                const e = (0, a.Dv)(D),
-                    t = (0, a.Dv)(I);
+                const e = (0, a.Dv)(k),
+                    t = (0, a.Dv)(D);
                 return (0, u.N)(Z), (0, u.N)(x), r.createElement(c.Z, { style: b.animationBox }, r.createElement(c.Z, { style: e ? b.show : b.hide }, r.createElement(c.Z, { style: b.container }, r.createElement(i.ZP, null, t))));
             }
             const b = s.default.create((e) => {
@@ -603,20 +603,20 @@
                 C = (0, o.cn)(null, (e, t, n) => {
                     const r = e(w);
                     r
-                        ? t(k, r.concat(n))
-                        : (t(k, n),
+                        ? t(I, r.concat(n))
+                        : (t(I, n),
                           setTimeout(() => {
-                              t(k, void 0);
+                              t(I, void 0);
                           }, 5e3),
                           t(_)),
-                        t(P);
+                        t(T);
                 }),
                 w = (0, o.cn)(),
                 S = (0, o.cn)([]),
-                k = (0, o.cn)(null, (e, t, n) => {
+                I = (0, o.cn)(null, (e, t, n) => {
                     t(w, n), n && t(S, n);
                 });
-            const I = (0, o.cn)(
+            const D = (0, o.cn)(
                     (e) =>
                         (function (e) {
                             if (!e) return "";
@@ -628,13 +628,13 @@
                             return "";
                         })(e(S)) ?? "",
                 ),
-                D = (0, o.cn)((e) => !!e(w)),
+                k = (0, o.cn)((e) => !!e(w)),
                 _ = (0, o.cn)(null, (e, t) => {
                     const n = e(v.qx);
-                    (0, p.ql)({ title: n, body: e(I) });
+                    (0, p.ql)({ title: n, body: e(D) });
                 }),
                 R = (0, o.cn)(),
-                P = (0, o.cn)(null, (e, t) => {
+                T = (0, o.cn)(null, (e, t) => {
                     const n = e(R)?.getTime();
                     if ((t(R, new Date()), n && Date.now() - n < 3e4)) return;
                     e(f.r1).some((t) => e((0, m.CS)(t))) || e(E.pL) || new Audio(h).play();
@@ -665,27 +665,27 @@
                 C = n(600150),
                 w = n(565058),
                 S = n(987809),
-                k = n(516951),
-                I = n(526250),
-                D = n(103978);
+                I = n(516951),
+                D = n(526250),
+                k = n(103978);
             function _({ feedId: e }) {
                 const t = a.useRef(null),
-                    n = (0, c.b9)(P);
+                    n = (0, c.b9)(T);
                 return (
                     a.useEffect(() => {
                         const r = t.current;
                         if (r) return n(e, r);
                     }, [n, e]),
-                    a.createElement(i.Z, { ref: t, style: T.border })
+                    a.createElement(i.Z, { ref: t, style: P.border })
                 );
             }
             const R = (0, S.xu)((e) =>
                     (0, w.cn)((t) => {
-                        const n = t((0, D.CS)(e));
+                        const n = t((0, k.CS)(e));
                         return n ? (n > 0.5 ? 0.75 : n > 0.25 ? 0.5 : 0.25) : n;
                     }),
                 ),
-                P = (0, I.v)((e, t, n, r) => {
+                T = (0, D.v)((e, t, n, r) => {
                     const a = e(R(n));
                     if (a) {
                         const e = r.offsetWidth,
@@ -695,21 +695,21 @@
                             c = 1 + (a * n) / t;
                         r.style.transform = `scale(${o}, ${c})`;
                     } else r.style.transform = "scale(0.99)";
-                    return (r.style.opacity = null == a ? "0" : ""), k.Z;
+                    return (r.style.opacity = null == a ? "0" : ""), I.Z;
                 }),
-                T = d.default.create((e) => ({ border: { position: "absolute", pointerEvents: "none", inset: 0, borderRadius: e.borderRadii.large, borderWidth: e.spaces.space16, borderStyle: "solid", borderColor: e.colors.text, transform: "scale(0.99)", transition: "transform 0.2s", opacity: 0.4, zIndex: -1 } }));
-            var L = n(492244),
-                z = n(315951),
+                P = d.default.create((e) => ({ border: { position: "absolute", pointerEvents: "none", inset: 0, borderRadius: e.borderRadii.large, borderWidth: e.spaces.space16, borderStyle: "solid", borderColor: e.colors.text, transform: "scale(0.99)", transition: "transform 0.2s", opacity: 0.4, zIndex: -1 } }));
+            var z = n(492244),
+                L = n(315951),
                 M = n(968478),
-                H = n(643442),
-                O = n(952793),
+                O = n(643442),
+                H = n(952793),
                 A = n(396963);
             function B(e) {
                 const t = (0, c.Dv)(h.gu),
                     n = (0, c.Dv)(h.kw);
                 if (!t) return null;
                 const { feedId: o, videoTrack: i } = e;
-                return o === n ? (i ? a.createElement(N, { videoTrack: i }) : null) : a.createElement(F, (0, r.Z)({}, e, { feedId: o }));
+                return o === n ? (i ? a.createElement(N, { videoTrack: i }) : null) : a.createElement(V, (0, r.Z)({}, e, { feedId: o }));
             }
             function N({ videoTrack: e }) {
                 const t = (0, h.d4)(e);
@@ -726,38 +726,38 @@
             function W({ layers: e }) {
                 switch (e) {
                     case 2:
-                        return a.createElement(L.default, { title: "throttled" });
+                        return a.createElement(z.default, { title: "throttled" });
                     case 1:
-                        return a.createElement(z.default, { title: "heavily throttled" });
+                        return a.createElement(L.default, { title: "heavily throttled" });
                     case 0:
                         return a.createElement(M.default, { title: "not publishing" });
                     default:
                         return null;
                 }
             }
-            function F(e) {
+            function V(e) {
                 const { feedId: t, feedMid: n } = e,
                     r = (0, c.Dv)((0, g.A8)(t)(n)),
                     o = (0, c.Dv)((0, h.My)(t)(n));
-                return r ? (o ? a.createElement(V, null) : a.createElement(K, e)) : a.createElement(H.default, null);
+                return r ? (o ? a.createElement($, null) : a.createElement(j, e)) : a.createElement(O.default, null);
             }
-            function V() {
+            function $() {
                 const e = (0, c.Dv)(h.u1),
                     t = (0, c.Dv)(h.E3);
-                if ((0, O.hC)("rweb_conf_dev_enabled")) return e.map((e, n) => a.createElement($, { feedId: e, track: t?.[n] }));
+                if ((0, H.hC)("rweb_conf_dev_enabled")) return e.map((e, n) => a.createElement(F, { feedId: e, track: t?.[n] }));
             }
-            function $({ feedId: e, track: t }) {
+            function F({ feedId: e, track: t }) {
                 const n = (0, c.Dv)(e ? (0, A.Kz)(e) : (0, v.J)("<unknown>"));
                 return a.createElement(i.Z, { style: X.row }, a.createElement(u.ZP, null, n), t ? a.createElement(C.d, { track: t }) : a.createElement(u.ZP, null, "none"));
             }
-            function K({ feedId: e, feedMid: t, videoTrack: n }) {
-                const r = (0, c.b9)(j),
+            function j({ feedId: e, feedMid: t, videoTrack: n }) {
+                const r = (0, c.b9)(K),
                     o = (0, c.Dv)(q(e)(t));
                 return a.useEffect(() => r({ feedId: e, feedMid: t, videoTrack: n }), [r, e, n, t]), o ? a.createElement(M.default, { title: "no data received" }) : null;
             }
             const q = (0, S.xu)((e) => (0, S.xu)((e) => (0, w.cn)(!1))),
-                j = (0, I.v)((e, t, { feedId: n, feedMid: r, videoTrack: a }) => {
-                    if (!a) return k.Z;
+                K = (0, D.v)((e, t, { feedId: n, feedMid: r, videoTrack: a }) => {
+                    if (!a) return I.Z;
                     const o = () => {
                         t(q(n)(r), a.muted);
                     };
@@ -772,15 +772,15 @@
                 }),
                 X = d.default.create((e) => ({ row: { flexDirection: "row" } }));
             var G = n(441737),
-                U = n(359127),
-                J = n(645708);
+                J = n(359127),
+                U = n(645708);
             function Y() {
-                const e = (0, c.Dv)(J.Lv);
-                return !U.zI || e ? null : a.createElement(Q, null);
+                const e = (0, c.Dv)(U.Lv);
+                return !J.zI || e ? null : a.createElement(Q, null);
             }
             function Q() {
                 const { handlers: e, interactivityState: t } = (0, s.x)({});
-                return a.createElement(i.Z, (0, r.Z)({ style: ee.hoverTile }, e), t.isHovered ? a.createElement(J.x0, null) : a.createElement(i.Z, { style: ee.placeholderButton }));
+                return a.createElement(i.Z, (0, r.Z)({ style: ee.hoverTile }, e), t.isHovered ? a.createElement(U.x0, null) : a.createElement(i.Z, { style: ee.placeholderButton }));
             }
             const ee = d.default.create((e) => ({ hoverTile: { padding: e.spaces.space16, borderRadius: e.borderRadii.infinite }, placeholderButton: { width: e.spaces.space32, height: e.spaces.space32 } }));
             var te = n(154003),
@@ -886,9 +886,9 @@
                     const t = new MediaStream();
                     b && t.addTrack(b), (e.srcObject = t);
                 }, [b]);
-                const k = a.useRef(null),
-                    I = b,
-                    D = (function (e, t) {
+                const I = a.useRef(null),
+                    D = b,
+                    k = (function (e, t) {
                         const [n, r] = a.useState(!1);
                         return (
                             a.useEffect(() => {
@@ -908,13 +908,13 @@
                             }, [t, e]),
                             n
                         );
-                    })(S, !I),
-                    R = !I || D,
+                    })(S, !D),
+                    R = !D || k,
                     {
-                        handlers: { ref: P, ...T },
-                        interactivityState: L,
+                        handlers: { ref: T, ...P },
+                        interactivityState: z,
                     } = (0, s.x)(),
-                    z = (0, c.Dv)(t ? (0, h.f)(t) : (0, v.J)(!1)),
+                    L = (0, c.Dv)(t ? (0, h.f)(t) : (0, v.J)(!1)),
                     M = (0, c.Dv)((0, h.Z8)(t));
                 !(function (e, t, n) {
                     const r = G.W.useContext();
@@ -935,9 +935,9 @@
                             }
                         );
                     }, [r, t, n, e]);
-                })(S, k, !I);
-                const H = (0, c.Dv)(E.MG),
-                    O = (function (e) {
+                })(S, I, !D);
+                const O = (0, c.Dv)(E.MG),
+                    H = (function (e) {
                         const [t, n] = a.useState(!1);
                         return (
                             a.useEffect(() => {
@@ -957,17 +957,17 @@
                             }, [e]),
                             t
                         );
-                    })(k),
+                    })(I),
                     A = (0, c.Dv)(p.bZ) && R;
                 return a.createElement(
                     a.Fragment,
                     null,
-                    H && a.createElement(_, { feedId: t }),
+                    O && a.createElement(_, { feedId: t }),
                     a.createElement(
                         i.Z,
-                        (0, r.Z)({}, T, {
+                        (0, r.Z)({}, P, {
                             ref: (t) => {
-                                (k.current = t), e && (e.current = t), (P.current = t);
+                                (I.current = t), e && (e.current = t), (T.current = t);
                             },
                             style: A ? we.videoInnerContainerHidden : we.videoInnerContainer,
                         }),
@@ -981,7 +981,7 @@
                             style: { maxWidth: "100%", maxHeight: "100%", transform: g ? "scaleX(-1)" : void 0 },
                         }),
                         R ? a.createElement(i.Z, { style: we.videoOverlayCover }, a.createElement(Ee, { containerRef: S, uri: y }), !!t && a.createElement(ge, { containerRef: S, feedId: t })) : a.createElement(i.Z, { style: we.videoOverlay }, w ? a.createElement(Y, null) : null, !!t && a.createElement(ge, { containerRef: S, feedId: t, rightVariant: !0 })),
-                        O && a.createElement(a.Fragment, null, a.createElement(i.Z, { style: we.overlayTopEnd }, a.createElement(C.X, { feedId: t }), !(0, o.fH)(o.vw.prod) && !R && t && n && a.createElement(B, { feedId: t, feedMid: n, videoTrack: I })), a.createElement(i.Z, { style: we.overlayTopStart }, !!t && !M && !z && (L.isHovered || l.Z.isTouchSupported()) && a.createElement(ie, { feedId: t })), a.createElement(i.Z, { style: we.overlayBottomStart }, a.createElement(i.Z, { style: we.nameRow }, z && a.createElement(f.default, null), a.createElement(u.ZP, null, Z)))),
+                        H && a.createElement(a.Fragment, null, a.createElement(i.Z, { style: we.overlayTopEnd }, a.createElement(C.X, { feedId: t }), !(0, o.fH)(o.vw.prod) && !R && t && n && a.createElement(B, { feedId: t, feedMid: n, videoTrack: D })), a.createElement(i.Z, { style: we.overlayTopStart }, !!t && !M && !L && (z.isHovered || l.Z.isTouchSupported()) && a.createElement(ie, { feedId: t })), a.createElement(i.Z, { style: we.overlayBottomStart }, a.createElement(i.Z, { style: we.nameRow }, L && a.createElement(f.default, null), a.createElement(u.ZP, null, Z)))),
                     ),
                 );
             }
@@ -993,7 +993,7 @@
             });
         },
         8336: (e, t, n) => {
-            n.d(t, { $i: () => w, cO: () => D, yg: () => I });
+            n.d(t, { $i: () => w, cO: () => k, yg: () => D });
             var r = n(202784),
                 a = n(400752),
                 o = n(565058),
@@ -1017,7 +1017,7 @@
                 C = (e) => `You will mute ${e}'s mic. They can unmute it again.`;
             function w({ feedId: e, icon: t }) {
                 const [n, o] = r.useState(!1),
-                    c = (0, a.b9)(k(e)),
+                    c = (0, a.b9)(I(e)),
                     l = (0, b.CO)(e);
                 return r.createElement(
                     r.Fragment,
@@ -1038,7 +1038,7 @@
                 );
             }
             const S = (0, c.xu)((e) => (0, o.cn)((t) => t(h.cS).get(e)?.session_uuid)),
-                k = (0, c.xu)((e) =>
+                I = (0, c.xu)((e) =>
                     (0, o.cn)(null, (t, n, r) => {
                         if (t((0, v.Z8)(e))) return void n(E.Dy, (e) => !e);
                         const a = t(S(e)),
@@ -1046,7 +1046,7 @@
                         o && a && n(p.Ht, o, a);
                     }),
                 ),
-                I = (0, o.cn)(null, (e, t, n, r) => {
+                D = (0, o.cn)(null, (e, t, n, r) => {
                     const { dispatch: a } = e(d.qc),
                         o = e((0, v.Bz)(n)),
                         c = e((0, h.PO)(r));
@@ -1056,7 +1056,7 @@
                     const s = e((0, b.Kz)(c));
                     a((0, g.fz)({ text: `${i} muted ${s}` }));
                 }),
-                D = (0, c.xu)((e) => (0, o.cn)((t) => !(t((0, v.Z8)(e)) || !e || t((0, v.f)(e)) || !t(f.gc) || !t(h.p5))));
+                k = (0, c.xu)((e) => (0, o.cn)((t) => !(t((0, v.Z8)(e)) || !e || t((0, v.f)(e)) || !t(f.gc) || !t(h.p5))));
         },
         826868: (e, t, n) => {
             n.d(t, { W: () => v });
@@ -1240,46 +1240,6 @@
                     if (t) return e(b(t));
                 });
         },
-        444595: (e, t, n) => {
-            n.d(t, { nH: () => d, qp: () => v });
-            n(543673), n(240753), n(128399);
-            var r = n(202784),
-                a = n(400752),
-                o = n(565058),
-                c = n(154003),
-                i = n(371344),
-                s = n(392237),
-                l = n(782826),
-                u = n(838859);
-            function d() {
-                const [e, t] = r.useState(!1),
-                    n = r.useCallback(() => t((e) => !e), []);
-                return e ? r.createElement(m, null) : r.createElement(c.ZP, { onClick: n, tabIndex: -1, type: "primaryText" });
-            }
-            function m() {
-                const [e, t] = r.useState(""),
-                    n = (0, a.b9)(p),
-                    o = r.useCallback(
-                        (t) => {
-                            "Enter" !== t.key || t.shiftKey || (t.preventDefault(), n(e));
-                        },
-                        [n, e],
-                    ),
-                    c = r.useCallback((e) => {
-                        t(e.target.value);
-                    }, []);
-                return r.createElement(i.Z, { autoFocus: !0, onChange: c, onKeyPress: o, placeholder: f, style: E.input, value: e });
-            }
-            const f = "Enter a tts-token",
-                p = (0, o.cn)(null, (e, t, n) => {
-                    t(u.Kn, n), v(n);
-                });
-            function v(e) {
-                const t = new URL(l.ZP.get());
-                t.searchParams.set("tts_token", e), l.ZP.navigateTo(t.toString());
-            }
-            const E = s.default.create(() => ({ input: { flexGrow: 0 } }));
-        },
         811233: (e, t, n) => {
             n.d(t, { J2: () => v, P: () => f, gt: () => l, je: () => p, o3: () => m });
             var r = n(202784),
@@ -1316,4 +1276,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf.10df451a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf.269212aa.js.map

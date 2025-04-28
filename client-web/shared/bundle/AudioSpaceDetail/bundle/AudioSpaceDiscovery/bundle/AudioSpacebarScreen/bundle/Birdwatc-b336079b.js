@@ -30,11 +30,12 @@
             const o = (0, n.Z)({
                 loader: () =>
                     Promise.all([
-                        r.e("icons.25"),
+                        r.e("icons.0"),
                         r.e("modules.common-e907d115"),
                         r.e("modules.common-e019dbda"),
+                        r.e("icons.14"),
                         r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                        r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2f4a3d25"),
+                        r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-34cda585"),
                         r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                         r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                         r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -86,25 +87,20 @@
                 loader: () =>
                     Promise.all([
                         r.e("icons.5"),
-                        r.e("icons.6"),
-                        r.e("icons.22"),
-                        r.e("icons.25"),
-                        r.e("icons.9"),
-                        r.e("icons.4"),
-                        r.e("icons.15"),
+                        r.e("icons.12"),
                         r.e("icons.20"),
-                        r.e("icons.7"),
                         r.e("icons.0"),
+                        r.e("icons.21"),
+                        r.e("icons.28"),
+                        r.e("icons.17"),
                         r.e("modules.common-e907d115"),
                         r.e("modules.common-e019dbda"),
-                        r.e("icons.11"),
-                        r.e("icons.27"),
-                        r.e("icons.17"),
-                        r.e("icons.12"),
-                        r.e("icons.3"),
-                        r.e("icons.13"),
-                        r.e("icons.24"),
-                        r.e("icons.26"),
+                        r.e("icons.22"),
+                        r.e("icons.9"),
+                        r.e("icons.25"),
+                        r.e("icons.6"),
+                        r.e("icons.10"),
+                        r.e("icons.14"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -129,14 +125,13 @@
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7082ec04"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-c977f3f0"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-bde9e8ed"),
-                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-de203a7b"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-78eb13f6"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-83ae13c2"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                         r.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
                         r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                        r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2f4a3d25"),
+                        r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-34cda585"),
                         r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                         r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                         r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -176,8 +171,8 @@
                         r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-af3d50e9"),
                         r.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Articles~bundle.AudioSpacePeek~bundle.Birdwatch~bundle.Brande"),
                         r.e("shared~loader.Typeahead~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSpacePeek~bundle.Bir"),
-                        r.e("loader.WideLayout-6107ac1a"),
-                        r.e("loader.WideLayout-9f4db315"),
+                        r.e("shared~bundle.JobSearch~bundle.UserJobs~loader.WideLayout"),
+                        r.e("loader.WideLayout"),
                     ]).then(r.bind(r, 912937)),
             });
         },
@@ -324,13 +319,13 @@
                     P = (0, p.F5)(E),
                     _ = {},
                     T = Intl.DateTimeFormat().resolvedOptions().timeZone,
-                    I = (0, S.Z)(),
-                    [j] = (0, t.KO)(M.k),
+                    j = (0, S.Z)(),
+                    [I] = (0, t.KO)(M.k),
                     [O] = (0, t.KO)(i.f0),
                     C = location.host.includes("x.com") && O.isTrue("x_jetfuel_enable_test_cluster"),
                     x = "darker" === u.default.theme.paletteName ? "dark" : "dark" === u.default.theme.paletteName ? "dim" : u.default.theme.paletteName;
                 (_["x-jf-client-theme"] = x), (_["x-jf-v"] = "JP-4"), T && (_.timezone = T), P && (_["accept-language"] = (0, b.o)(P));
-                const Z = ((e, a) => (e ? v.mH : a ? v.OG : v.CP))(j, C),
+                const Z = ((e, a) => (e ? v.mH : a ? v.OG : v.CP))(I, C),
                     L = {
                         httpPOST: async (e, a) => {
                             let r,
@@ -359,8 +354,8 @@
                 d.useEffect(() => {
                     document.body.setAttribute("data-theme", x ?? "light");
                 }, [x]);
-                const N = (0, n.GZ)("svelte", { net: L, history: s, analytics: I });
-                return N.addComponentOverride(R), d.createElement(d.Fragment, null, c && r ? r() : d.createElement("div", null, d.createElement(n.mQ, { analytics: I, jfPath: location.pathname.slice(g.length) + location.search, key: `${location.pathname.slice(g.length) + location.search}-${h}`, r: N })));
+                const N = (0, n.GZ)("svelte", { net: L, history: s, analytics: j });
+                return N.addComponentOverride(R), d.createElement(d.Fragment, null, c && r ? r() : d.createElement("div", null, d.createElement(n.mQ, { analytics: j, jfPath: location.pathname.slice(g.length) + location.search, key: `${location.pathname.slice(g.length) + location.search}-${h}`, r: N })));
             };
         },
         996568: (e, a, r) => {
@@ -1006,8 +1001,8 @@
                                                 P = t(D(r, p, o(p))),
                                                 _ = S({ 0: b(0, p), 1: b(1, l), 3: b(3, E), 25: b(25, t(h(E, B))), 4: b(4, m), 5: b(5, i), 6: b(6, s), 7: b(7, A), 8: b(8, t(A)), 10: b(10, d), 11: b(11, p), 12: b(12, P), 14: b(14, u), 15: b(15, A), 16: b(16, n(c, A)), 17: b(17, n(p, p)), 18: b(18, w), 19: b(19, g), 21: b(21, t(A)), 22: b(22, B), 24: b(24, t(A)), 26: b(26, t(p)), 27: b(27, t(l)), 28: b(28, t(i)), 29: b(29, t(s)), 13: b(13, f(void 0)) }),
                                                 T = a({ els: t(v), props: t(_), ts: l }),
-                                                I = a({ ref: A, t: o(l) });
-                                            return S({ 0: b(0, T), 1: b(1, I), 2: b(2, g) });
+                                                j = a({ ref: A, t: o(l) });
+                                            return S({ 0: b(0, T), 1: b(1, j), 2: b(2, g) });
                                         })([
                                             (e) => (a) => {
                                                 let r = {};
@@ -1163,7 +1158,7 @@
         },
         313129: (e, a, r) => {
             "use strict";
-            r.d(a, { wR: () => I, kp: () => j, $P: () => P, Ng: () => E, _3: () => y, Q_: () => w });
+            r.d(a, { wR: () => j, kp: () => I, $P: () => P, Ng: () => E, _3: () => y, Q_: () => w });
             r(694898), r(38857), r(540171), r(157093), r(265688), r(270315), r(592529), r(86943), r(691157), r(875640);
             var d = r(202784),
                 n = r(400752),
@@ -1258,7 +1253,7 @@
                     return (r["x-jf-client-theme"] = n), (r["x-jf-v"] = "JP-3"), d && (r.timezone = d), a && (r["accept-language"] = (0, s.o)(a)), r;
                 },
                 T = (e, a) => (e ? D.mH : a ? D.OG : D.CP),
-                I = async (e, a, r, d, n, t, o) => {
+                j = async (e, a, r, d, n, t, o) => {
                     if (!e) return {};
                     const c = _(r),
                         i = T(n, t),
@@ -1305,7 +1300,7 @@
                         return (0, p.ZP)(e), e instanceof u.Z && 404 === e.status ? (b.record("not-found"), {}) : (b.record("error"), { error: D.TT });
                     }
                 },
-                j = async (e, a, r, d, n, t) => {
+                I = async (e, a, r, d, n, t) => {
                     if (!e) return {};
                     const o = _(r),
                         c = T(n, t),
@@ -1337,7 +1332,7 @@
                                     t = r(i.f0),
                                     o = r(i.qc).getState(),
                                     c = location.host.includes("x.com") && t.isTrue("x_jetfuel_enable_test_cluster");
-                                return await I(e, void 0, o, n, d, c, a);
+                                return await j(e, void 0, o, n, d, c, a);
                             }),
                         )),
                         e);
@@ -1421,4 +1416,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-b336079b.bda78b4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-b336079b.0dbb5d2a.js.map

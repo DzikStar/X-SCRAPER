@@ -2187,7 +2187,6 @@
                     return "Het lijkt erop dat deze video groter is dan de maximale bestandsgrootte die je kan uploaden (" + e.human_readable_max_size + "GB).";
                 }),
                 a("cba4fdde", "Afleveren in 1080p aan kijkers op X"),
-                a("c92702a0", "Dit mp4-bestand kan beschadigd zijn. We proberen het te uploaden, maar het kan zijn dat je een ander videobestand moet gebruiken als het niet lukt."),
                 a("ef8f5d90", "Aanbevolen"),
                 a("a7046fb0", "Zelden nodig"),
                 a("acf3ecf4", "Media toevoegen"),
@@ -2961,9 +2960,9 @@
                 a("c6f58084", "Ontwikkelaars"),
                 a("d83f18d2", "Overzicht"),
                 a("hc5aa17c", "Download de app van X"),
-                a("j0693948", "Download de Grok-app");
-            a("fbf83158", "Waarschuwing: betaling mislukt"),
-                a("jadeb4da", "Update zo snel mogelijk je betalingsmethode voordat je abonnementsvoordelen kwijtraakt."),
+                a("j0693948", "Download de Grok-app"),
+                a("fbf83158", "Waarschuwing: betaling mislukt");
+            a("jadeb4da", "Update zo snel mogelijk je betalingsmethode voordat je abonnementsvoordelen kwijtraakt."),
                 a("bce3726a", "Factureringsgegevens"),
                 a("fce9ecce", "Aanbevolen video's"),
                 a("efe6ef9e", "Post bekijken"),
@@ -3877,9 +3876,9 @@
                 a("d7357e7e", "Uit co-hosts verwijderen"),
                 a("bf307fc0", "Blokkeren en verwijderen"),
                 a("ccf2f24e", "Rapport"),
-                a("i22835de", "Goedkeuren");
-            a("cb59a0fe", "Weigeren"),
-                a("c2376960", "Verzoeken om mee te praten"),
+                a("i22835de", "Goedkeuren"),
+                a("cb59a0fe", "Weigeren");
+            a("c2376960", "Verzoeken om mee te praten"),
                 a("aba7dcdd", function (e) {
                     return e.name + " uitnodigen";
                 }),
@@ -4909,9 +4908,9 @@
                 a("a7b48b36", "Het percentage voltooide videoweergaven."),
                 a("a2580f2a", "Voltooiingsratio"),
                 a("ff95a9cc", "Video-ID"),
-                a("a97e358e", "Videolink");
-            a("e10e8b46", "Alleen video's van de afgelopen 100 dagen worden getoond."),
-                a("ba37f6da", "Video-overzicht"),
+                a("a97e358e", "Videolink"),
+                a("e10e8b46", "Alleen video's van de afgelopen 100 dagen worden getoond.");
+            a("ba37f6da", "Video-overzicht"),
                 a("f19846b2", "Videominiatuur"),
                 a("ccd6f4a8", "Videotitel"),
                 a("c8410542", "Het aantal keer dat je video is bekeken"),
@@ -5865,11 +5864,11 @@
                 a("a0ea2fa6", "Veld 'naam' mag niet leeg zijn"),
                 a("eec37eac", "Er bestaat al een map met bladwijzers met die naam"),
                 a("fce0c59e", "Kon de animatie-JSON niet parsen. Controleer de indeling van de JSON in je animatiebestand en probeer het opnieuw."),
-                a("g0eea6c2", "Kon het animatie-JSON-bestand niet lezen. Probeer het bestand opnieuw te openen.");
-            a("ae58026a", "Open een Branded vind-ik-leuk-.json-bestand voor een voorvertoning"),
-                a("hd0bc1eb", function (e) {
-                    return e.name + " is live";
-                }),
+                a("g0eea6c2", "Kon het animatie-JSON-bestand niet lezen. Probeer het bestand opnieuw te openen."),
+                a("ae58026a", "Open een Branded vind-ik-leuk-.json-bestand voor een voorvertoning");
+            a("hd0bc1eb", function (e) {
+                return e.name + " is live";
+            }),
                 a("bea1f26b", function (e) {
                     return e.name + " was live";
                 }),
@@ -6873,9 +6872,9 @@
                 a("fdd77a34", "Maak langere posts"),
                 a("j6d26a7a", "Schrijf zoveel als je wil delen"),
                 a("c4fd68da", "Zorg voor een ervaring op maat"),
-                a("c0195168", "Wijzig je app-pictogram en navigatiemogelijkheden");
-            a("b6b5dc94", "Word geverifieerd"),
-                a("b06db848", "Onderscheid je van anderen op het platform"),
+                a("c0195168", "Wijzig je app-pictogram en navigatiemogelijkheden"),
+                a("b6b5dc94", "Word geverifieerd");
+            a("b06db848", "Onderscheid je van anderen op het platform"),
                 a("e3e3a97c", "Verdien een deel van de inkomsten van je posts"),
                 a("f15bc24e", "Verhoogde Grok-limieten"),
                 a("c4666e1c", "Meer gebruik van Grok 3, ons nieuwste model"),
@@ -7849,7 +7848,8 @@
                 a("b33d1518", "Vacatures synchroniseren vanuit een ondersteunde integratie of een aangepaste XML-feed"),
                 a("dd2db402", "Stap 1: verzamel de vereiste informatie"),
                 a("edb098c2", "Stap 2: neem contact op met ons ondersteuningsteam"),
-                a("c4474460", "Stap 2: mail ons ondersteuningsteam.");
+                a("c4474460", "Stap 2: mail ons ondersteuningsteam."),
+                a("a08da0fa", "Wat gaat er nu gebeuren?");
             function i(e, n) {
                 for (var t = 0; t < n.length; t++) {
                     var a = n[t];
@@ -7888,8 +7888,7 @@
                     o(e, n)
                 );
             }
-            a("a08da0fa", "Wat gaat er nu gebeuren?"),
-                a("c127374e", "Stuur ons een bericht"),
+            a("c127374e", "Stuur ons een bericht"),
                 a("b2cb2a0c", "Gebruikersnaam van je Geverifieerde Organisatie-account"),
                 a("b8e64002", "Naam van je sollicitantenvolgsysteem"),
                 a("acb99db6", "URL van de vacaturesite waarop vacatures staan"),
@@ -8891,9 +8890,9 @@
                 a("c057680c", "We kunnen deze video niet afspelen in deze browser. Gebruik een andere browser."),
                 a("i5dfae6e", "Deze video is niet beschikbaar op jouw locatie."),
                 a("c2388276", "Deze video is verwijderd."),
-                a("d2c96140", "Indicator gastgeluid");
-            a("f6dc9146", "OPNIEUW AFSPELEN"),
-                a("d30c74fe", "Volume"),
+                a("d2c96140", "Indicator gastgeluid"),
+                a("f6dc9146", "OPNIEUW AFSPELEN");
+            a("d30c74fe", "Volume"),
                 a("f2d4e6f2", "Opnieuw bekijken"),
                 a("e9f1af3a", "Meer informatie"),
                 a("f1881d86", "Deze post kan je niet beantwoorden, delen of leuk vinden."),
@@ -13250,4 +13249,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.08fab3ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.abf3218a.js.map

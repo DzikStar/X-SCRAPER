@@ -2186,7 +2186,6 @@
                     return "Nampaknya video ini telah melebihi saiz fail maksimum yang boleh dimuat naik (" + a.human_readable_max_size + "GB).";
                 }),
                 i("cba4fdde", "Sampaikan dalam resolusi 1080p kepada penonton di X"),
-                i("c92702a0", "Fail MP4 ini mungkin telah rosak. Kami akan cuba memuat naik fail tersebut, tetapi anda mungkin perlu menggunakan fail video yang lain jika usaha ini gagal."),
                 i("ef8f5d90", "Disyorkan"),
                 i("a7046fb0", "Jarang-jarang diperlukan"),
                 i("acf3ecf4", "Tambah media"),
@@ -2960,9 +2959,9 @@
                 i("c6f58084", "Pembangun"),
                 i("d83f18d2", "Direktori"),
                 i("hc5aa17c", "Dapatkan aplikasi X"),
-                i("j0693948", "Dapatkan aplikasi Grok");
-            i("fbf83158", "Amaran: Pembayaran gagal"),
-                i("jadeb4da", "Sila kemas kini kaedah pembayaran anda dengan segera sebelum anda kehilangan manfaat langganan anda."),
+                i("j0693948", "Dapatkan aplikasi Grok"),
+                i("fbf83158", "Amaran: Pembayaran gagal");
+            i("jadeb4da", "Sila kemas kini kaedah pembayaran anda dengan segera sebelum anda kehilangan manfaat langganan anda."),
                 i("bce3726a", "Kemas Kini Pengebilan"),
                 i("fce9ecce", "Video yang Dicadangkan"),
                 i("efe6ef9e", "Lihat siaran"),
@@ -3876,9 +3875,9 @@
                 i("d7357e7e", "Alih keluar daripada menjadi Hos lain"),
                 i("bf307fc0", "Sekat dan Alih keluar"),
                 i("ccf2f24e", "Laporan"),
-                i("i22835de", "Luluskan");
-            i("cb59a0fe", "Tolak"),
-                i("c2376960", "Meminta untuk Berbicara"),
+                i("i22835de", "Luluskan"),
+                i("cb59a0fe", "Tolak");
+            i("c2376960", "Meminta untuk Berbicara"),
                 i("aba7dcdd", function (a) {
                     return "Jemput " + a.name;
                 }),
@@ -4908,9 +4907,9 @@
                 i("a7b48b36", "Peratus tontonan video yang diselesaikan."),
                 i("a2580f2a", "Kadar Selesai"),
                 i("ff95a9cc", "ID Video"),
-                i("a97e358e", "Pautan Video");
-            i("e10e8b46", "Hanya tunjukkan video daripada 100 hari yang lalu."),
-                i("ba37f6da", "Gambaran keseluruhan video"),
+                i("a97e358e", "Pautan Video"),
+                i("e10e8b46", "Hanya tunjukkan video daripada 100 hari yang lalu.");
+            i("ba37f6da", "Gambaran keseluruhan video"),
                 i("f19846b2", "Lakaran kecil video"),
                 i("ccd6f4a8", "Tajuk video"),
                 i("c8410542", "Bilangan kali video anda ditonton."),
@@ -5864,11 +5863,11 @@
                 i("a0ea2fa6", "Medan nama tidak boleh kosong"),
                 i("eec37eac", "Folder Bookmark dengan nama itu sudah wujud"),
                 i("fce0c59e", "Gagal untuk menghuraikan JSON animasi. Semak format JSON dalam fail animasi anda dan cuba sekali lagi."),
-                i("g0eea6c2", "Gagal untuk membaca fail JSON animasi. Cuba buka fail tersebut sekali lagi.");
-            i("ae58026a", "Buka fail .json Suka Berjenama untuk pratonton"),
-                i("hd0bc1eb", function (a) {
-                    return a.name + " sedang bersiaran langsung";
-                }),
+                i("g0eea6c2", "Gagal untuk membaca fail JSON animasi. Cuba buka fail tersebut sekali lagi."),
+                i("ae58026a", "Buka fail .json Suka Berjenama untuk pratonton");
+            i("hd0bc1eb", function (a) {
+                return a.name + " sedang bersiaran langsung";
+            }),
                 i("bea1f26b", function (a) {
                     return a.name + " telah bersiaran langsung";
                 }),
@@ -6872,9 +6871,9 @@
                 i("fdd77a34", "Cipta siaran yang lebih panjang"),
                 i("j6d26a7a", "Tulis sebanyak mana yang ingin anda kongsikan"),
                 i("c4fd68da", "Sesuaikan pengalaman anda"),
-                i("c0195168", "Ubah pilihan ikon dan navigasi aplikasi anda");
-            i("b6b5dc94", "Dapatkan pengesahan"),
-                i("b06db848", "Tonjolkan diri pada platform"),
+                i("c0195168", "Ubah pilihan ikon dan navigasi aplikasi anda"),
+                i("b6b5dc94", "Dapatkan pengesahan");
+            i("b06db848", "Tonjolkan diri pada platform"),
                 i("e3e3a97c", "Peroleh sebahagian hasil daripada siaran anda"),
                 i("f15bc24e", "Had Grok yang ditingkatkan"),
                 i("c4666e1c", "Lebih banyak penggunaan Grok 3, model terkini kami"),
@@ -7848,8 +7847,9 @@
                 i("b33d1518", "Segerakkan pekerjaan daripada penyepaduan yang disokong atau suapan XML tersuai"),
                 i("dd2db402", "Langkah 1: Kumpulkan maklumat yang diperlukan"),
                 i("edb098c2", "Langkah 2: Hubungi pasukan sokongan kami"),
-                i("c4474460", "Langkah 2: Hantar e-mel kepada pasukan sokongan kami");
-            function u(a, n) {
+                i("c4474460", "Langkah 2: Hantar e-mel kepada pasukan sokongan kami"),
+                i("a08da0fa", "Apakah yang berlaku seterusnya?");
+            function d(a, n) {
                 for (var e = 0; e < n.length; e++) {
                     var i = n[e];
                     (i.enumerable = i.enumerable || !1),
@@ -7858,9 +7858,9 @@
                         Object.defineProperty(
                             a,
                             ((t = i.key),
-                            (u = void 0),
+                            (d = void 0),
                             "symbol" ==
-                            typeof (u = (function (a, n) {
+                            typeof (d = (function (a, n) {
                                 if ("object" != typeof a || null === a) return a;
                                 var e = a[Symbol.toPrimitive];
                                 if (void 0 !== e) {
@@ -7870,25 +7870,24 @@
                                 }
                                 return ("string" === n ? String : Number)(a);
                             })(t, "string"))
-                                ? u
-                                : String(u)),
+                                ? d
+                                : String(d)),
                             i,
                         );
                 }
-                var t, u;
+                var t, d;
             }
-            function d(a, n) {
+            function u(a, n) {
                 return (
-                    (d = Object.setPrototypeOf
+                    (u = Object.setPrototypeOf
                         ? Object.setPrototypeOf.bind()
                         : function (a, n) {
                               return (a.__proto__ = n), a;
                           }),
-                    d(a, n)
+                    u(a, n)
                 );
             }
-            i("a08da0fa", "Apakah yang berlaku seterusnya?"),
-                i("c127374e", "Hantar mesej kepada kami"),
+            i("c127374e", "Hantar mesej kepada kami"),
                 i("b2cb2a0c", "Nama pengguna akaun Organisasi Disahkan anda"),
                 i("b8e64002", "Nama sistem penjejakan pemohon anda"),
                 i("acb99db6", "URL laman kerjaya tempat pekerjaan anda disenaraikan"),
@@ -8890,9 +8889,9 @@
                 i("c057680c", "Kami tidak dapat memainkan video tersebut dalam pelayar ini. Sila cuba pelayar web yang lain."),
                 i("i5dfae6e", "Video ini tidak tersedia di lokasi anda."),
                 i("c2388276", "Video ini telah dipadamkan."),
-                i("d2c96140", "Penunjuk audio tetamu");
-            i("f6dc9146", "ULANG TAYANG"),
-                i("d30c74fe", "Kelantangan"),
+                i("d2c96140", "Penunjuk audio tetamu"),
+                i("f6dc9146", "ULANG TAYANG");
+            i("d30c74fe", "Kelantangan"),
                 i("f2d4e6f2", "Tonton semula"),
                 i("e9f1af3a", "Ketahui lebih lanjut"),
                 i("f1881d86", "Siaran ini tidak dapat dibalas, dikongsi atau disukai."),
@@ -9465,7 +9464,7 @@
                     (e = a),
                     ((n = s).prototype = Object.create(e.prototype)),
                     (n.prototype.constructor = n),
-                    d(n, e),
+                    u(n, e),
                     (s.prototype.render = function () {
                         return r.createElement.apply(r, this[this.props.$i18n].reduce(this.templateReducer, [r.Fragment, null]));
                     }),
@@ -12878,8 +12877,8 @@
                                 };
                             },
                         },
-                    ]) && u(i.prototype, t),
-                    g && u(i, g),
+                    ]) && d(i.prototype, t),
+                    g && d(i, g),
                     Object.defineProperty(i, "prototype", { writable: !1 }),
                     s
                 );
@@ -13235,4 +13234,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.2f7c486a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.f8dc63ca.js.map

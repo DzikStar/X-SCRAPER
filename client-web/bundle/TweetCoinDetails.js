@@ -583,29 +583,29 @@
                 C = l(392237),
                 F = l(674132),
                 B = l.n(F),
-                x = l(856151),
-                S = l(980407),
-                K = l(965245),
-                v = l(301410),
+                v = l(856151),
+                x = l(980407),
+                S = l(965245),
+                K = l(301410),
                 D = l(293115),
                 P = l(312771),
                 R = l(466441),
                 I = l(952428),
                 A = l(823161),
-                U = l(412876),
-                M = l(553660);
+                M = l(412876),
+                z = l(553660);
             const H = B().fbb7764b,
-                W = B().e70a07b2,
-                N = B().da68fff1,
-                q = ({ coins: e, isAnonymous: t, isLoggedinUser: l, user: a }) => b.createElement(w.Z, { role: "listitem" }, b.createElement(I.Z, { style: V.root, withInteractiveStyling: !1 }, b.createElement(w.Z, { style: V.row }, t ? b.createElement(A.default, { size: "xLarge", uri: "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png" }) : "User" === a?.__typename ? b.createElement(U.Z, { size: "xLarge", user: a, withLink: !0 }) : null, b.createElement(w.Z, { style: V.column }, b.createElement(f.ZP, { size: "headline2", style: V.awardDetails, weight: "medium" }, t && l ? N({ count: e }) : H({ count: e })), t ? b.createElement(f.ZP, { style: V.spacing }, W) : "User" === a?.__typename ? b.createElement(M.Z, { style: V.userName, user: a, weight: "normal", withLink: !0 }) : null)))),
-                z = b.memo(q),
-                V = C.default.create((e) => ({ root: { alignItems: "center", flexDirection: "row", justifyContent: "space-between", paddingHorizontal: e.spaces.space16, paddingVertical: e.spaces.space12 }, row: { alignItems: "center", flexDirection: "row" }, column: { flexDirection: "column" }, userName: { marginHorizontal: e.spaces.space8 }, spacing: { marginStart: e.spaces.space8 }, awardDetails: { marginStart: e.spaces.space8, marginBottom: e.spaces.space4 } })),
+                U = B().e70a07b2,
+                V = B().da68fff1,
+                W = ({ coins: e, isAnonymous: t, isLoggedinUser: l, user: a }) => b.createElement(w.Z, { role: "listitem" }, b.createElement(I.Z, { style: q.root, withInteractiveStyling: !1 }, b.createElement(w.Z, { style: q.row }, t ? b.createElement(A.default, { size: "xLarge", uri: "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png" }) : "User" === a?.__typename ? b.createElement(M.Z, { size: "xLarge", user: a, withLink: !0 }) : null, b.createElement(w.Z, { style: q.column }, b.createElement(f.ZP, { size: "headline2", style: q.awardDetails, weight: "medium" }, t && l ? V({ count: e }) : H({ count: e })), t ? b.createElement(f.ZP, { style: q.spacing }, U) : "User" === a?.__typename ? b.createElement(z.Z, { style: q.userName, user: a, weight: "normal", withLink: !0 }) : null)))),
+                N = b.memo(W),
+                q = C.default.create((e) => ({ root: { alignItems: "center", flexDirection: "row", justifyContent: "space-between", paddingHorizontal: e.spaces.space16, paddingVertical: e.spaces.space12 }, row: { alignItems: "center", flexDirection: "row" }, column: { flexDirection: "column" }, userName: { marginHorizontal: e.spaces.space8 }, spacing: { marginStart: e.spaces.space8 }, awardDetails: { marginStart: e.spaces.space8, marginBottom: e.spaces.space4 } })),
                 O = B().h1c5d6aa,
                 Q = B().h6d45054,
                 G = B().fbb7764b,
                 j = { page: "tweet_coin_details" },
                 $ = _,
-                X = (0, v.z)($, { errorConfig: { context: "TWEET_COINS_DETAILS_CONTEXT" } }),
+                X = (0, K.z)($, { errorConfig: { context: "TWEET_COINS_DETAILS_CONTEXT" } }),
                 Y = (e) => `${e.rank}`,
                 J = (e) => null != e && e > 0,
                 ee = (e) => {
@@ -615,8 +615,8 @@
                             t.goBack();
                         }, [t]),
                         n = b.useMemo(() => ({ tweet_id: l || "0" }), [l]),
-                        r = b.useCallback((e) => b.createElement(z, { coins: e.total_coins_worth, isAnonymous: e.is_anonymous, key: e.rank, user: e.sender_results?.result }), []),
-                        i = b.useCallback((e) => b.createElement(w.Z, { style: te.title }, b.createElement(x.default, null), b.createElement(f.ZP, { size: "headline1", style: te.spacing, weight: "bold" }, G({ count: e }))), []),
+                        r = b.useCallback((e) => b.createElement(N, { coins: e.total_coins_worth, isAnonymous: e.is_anonymous, key: e.rank, user: e.sender_results?.result }), []),
+                        i = b.useCallback((e) => b.createElement(w.Z, { style: te.title }, b.createElement(v.default, null), b.createElement(f.ZP, { size: "headline1", style: te.spacing, weight: "bold" }, G({ count: e }))), []),
                         s = b.useCallback(
                             ({ data: e, fetchStatus: l, retry: n }) => {
                                 if (l === P.ZP.FAILED) return b.createElement(Z.Z, { onRequestRetry: n });
@@ -627,7 +627,7 @@
                                         c = J(n),
                                         u = e?.viewer_v2?.user_results?.result,
                                         p = E.ZP.getTruncatedCount(Number(l));
-                                    return b.createElement(S.Z, { backButtonType: "close", history: t, middleControl: i(p), onBackClick: a }, b.createElement(w.Z, { style: te.root }, c ? b.createElement(w.Z, null, b.createElement(L.Z, { text: O }), J(o) ? b.createElement(z, { coins: o || 0, isAnonymous: !1, user: u }) : null, J(s) ? b.createElement(z, { coins: s || 0, isAnonymous: !0, isLoggedinUser: !0, user: u }) : null) : null, d ? b.createElement(w.Z, null, b.createElement(L.Z, { text: Q }), b.createElement(K.Z, { cacheKey: "awardsSentByOthers", identityFunction: Y, items: d, renderer: r, withoutHeadroom: !0 })) : null));
+                                    return b.createElement(x.Z, { backButtonType: "close", history: t, middleControl: i(p), onBackClick: a }, b.createElement(w.Z, { style: te.root }, c ? b.createElement(w.Z, null, b.createElement(L.Z, { text: O }), J(o) ? b.createElement(N, { coins: o || 0, isAnonymous: !1, user: u }) : null, J(s) ? b.createElement(N, { coins: s || 0, isAnonymous: !0, isLoggedinUser: !0, user: u }) : null) : null, d ? b.createElement(w.Z, null, b.createElement(L.Z, { text: Q }), b.createElement(S.Z, { cacheKey: "awardsSentByOthers", identityFunction: Y, items: d, renderer: r, withoutHeadroom: !0 })) : null));
                                 }
                                 return b.createElement(T.Z, null);
                             },
@@ -638,6 +638,19 @@
                 te = C.default.create((e) => ({ root: { marginHorizontal: e.spaces.space32 }, spacing: { marginStart: e.spaces.space4 }, title: { flexDirection: "row", alignItems: "center", justifyContent: "center", paddingEnd: e.spaces.space64 } })),
                 le = ee;
         },
+        748138: (e, t, l) => {
+            l.r(t), l.d(t, { default: () => o });
+            var a = l(202784),
+                n = l(890601),
+                r = l(783427),
+                i = l(347101);
+            const s = (e = {}) => {
+                const { direction: t } = (0, r.Z)();
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const o = s;
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TweetCoinDetails.aeaf004a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TweetCoinDetails.c8f06f9a.js.map

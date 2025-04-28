@@ -2191,7 +2191,6 @@
                     return "Looks like this video exceeds the maximum file size that can be uploaded (" + e.human_readable_max_size + "GB).";
                 }),
                 a("cba4fdde", "Deliver in 1080p to viewers on X"),
-                a("c92702a0", "This MP4 file might be corrupted. We’ll try uploading it, but you may need to use a different video file if it fails."),
                 a("ef8f5d90", "Recommended"),
                 a("a7046fb0", "Rarely needed"),
                 a("acf3ecf4", "Add media"),
@@ -2965,9 +2964,9 @@
                 a("c6f58084", "Developers"),
                 a("d83f18d2", "Directory"),
                 a("hc5aa17c", "Get the X app"),
-                a("j0693948", "Get the Grok app");
-            a("fbf83158", "Warning: Payment failed"),
-                a("jadeb4da", "Please urgently update your payment method before you lose your subscription benefits."),
+                a("j0693948", "Get the Grok app"),
+                a("fbf83158", "Warning: Payment failed");
+            a("jadeb4da", "Please urgently update your payment method before you lose your subscription benefits."),
                 a("bce3726a", "Update Billing"),
                 a("fce9ecce", "Suggested Videos"),
                 a("efe6ef9e", "View post"),
@@ -3881,9 +3880,9 @@
                 a("d7357e7e", "Remove from co-hosts"),
                 a("bf307fc0", "Block and Remove"),
                 a("ccf2f24e", "Report"),
-                a("i22835de", "Approve");
-            a("cb59a0fe", "Deny"),
-                a("c2376960", "Requests to Speak"),
+                a("i22835de", "Approve"),
+                a("cb59a0fe", "Deny");
+            a("c2376960", "Requests to Speak"),
                 a("aba7dcdd", function (e) {
                     return "Invite " + e.name;
                 }),
@@ -4913,9 +4912,9 @@
                 a("a7b48b36", "The percentage of video views that were completed."),
                 a("a2580f2a", "Completion Rate"),
                 a("ff95a9cc", "Video ID"),
-                a("a97e358e", "Video Link");
-            a("e10e8b46", "Only showing the videos from the last 100 days."),
-                a("ba37f6da", "Video overview"),
+                a("a97e358e", "Video Link"),
+                a("e10e8b46", "Only showing the videos from the last 100 days.");
+            a("ba37f6da", "Video overview"),
                 a("f19846b2", "Video thumbnail"),
                 a("ccd6f4a8", "Video title"),
                 a("c8410542", "The number of times your video was viewed."),
@@ -5869,11 +5868,11 @@
                 a("a0ea2fa6", "Name field cannot be empty"),
                 a("eec37eac", "Bookmark Folder with that name already exists"),
                 a("fce0c59e", "Failed to parse the JSON animation. Please check the format of the JSON in your animation file and try again."),
-                a("g0eea6c2", "Failed to read the JSON animation file. Please try to open the file again.");
-            a("ae58026a", "Open a Branded Like .json file to preview"),
-                a("hd0bc1eb", function (e) {
-                    return e.name + " is live";
-                }),
+                a("g0eea6c2", "Failed to read the JSON animation file. Please try to open the file again."),
+                a("ae58026a", "Open a Branded Like .json file to preview");
+            a("hd0bc1eb", function (e) {
+                return e.name + " is live";
+            }),
                 a("bea1f26b", function (e) {
                     return e.name + " was live";
                 }),
@@ -6877,9 +6876,9 @@
                 a("fdd77a34", "Create longer posts"),
                 a("j6d26a7a", "Write as much as you’d like to share"),
                 a("c4fd68da", "Customise your experience"),
-                a("c0195168", "Change your app icon and navigation options");
-            a("b6b5dc94", "Become verified"),
-                a("b06db848", "Stand out from others on the platform"),
+                a("c0195168", "Change your app icon and navigation options"),
+                a("b6b5dc94", "Become verified");
+            a("b06db848", "Stand out from others on the platform"),
                 a("e3e3a97c", "Earn a share of revenue from your posts"),
                 a("f15bc24e", "Increased Grok limits"),
                 a("c4666e1c", "More usage of Grok 3, our latest model"),
@@ -7853,7 +7852,8 @@
                 a("b33d1518", "Sync jobs from a supported integration or a custom XML feed"),
                 a("dd2db402", "Step 1: Gather the required information"),
                 a("edb098c2", "Step 2: Contact our support team"),
-                a("c4474460", "Step 2: Email our support team");
+                a("c4474460", "Step 2: Email our support team"),
+                a("a08da0fa", "What happens next?");
             function r(e, t) {
                 for (var o = 0; o < t.length; o++) {
                     var a = t[o];
@@ -7892,8 +7892,7 @@
                     s(e, t)
                 );
             }
-            a("a08da0fa", "What happens next?"),
-                a("c127374e", "Send us a message"),
+            a("c127374e", "Send us a message"),
                 a("b2cb2a0c", "Username of your Verified Org account"),
                 a("b8e64002", "Name of your applicant tracking system"),
                 a("acb99db6", "Career site URL where your jobs are listed"),
@@ -8895,9 +8894,9 @@
                 a("c057680c", "We cannot play the video in this browser. Please try a different web browser."),
                 a("i5dfae6e", "This video is not available in your location."),
                 a("c2388276", "This video has been deleted."),
-                a("d2c96140", "Guest audio indicator");
-            a("f6dc9146", "REPLAY"),
-                a("d30c74fe", "Volume"),
+                a("d2c96140", "Guest audio indicator"),
+                a("f6dc9146", "REPLAY");
+            a("d30c74fe", "Volume"),
                 a("f2d4e6f2", "Watch again"),
                 a("e9f1af3a", "Find out more"),
                 a("f1881d86", "This post can’t be replied to, shared or liked."),
@@ -13254,4 +13253,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-GB.20c60f4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-GB.f6ce450a.js.map

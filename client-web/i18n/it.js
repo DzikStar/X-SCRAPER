@@ -2191,7 +2191,6 @@
                     return "Il video supera la dimensione massima di caricamento consentita (" + i.human_readable_max_size + " GB).";
                 }),
                 o("cba4fdde", "Mostra contenuti in 1080p agli spettatori su X"),
-                o("c92702a0", "Questo file MP4 potrebbe essere corrotto. Proveremo a caricarlo, ma potresti dover utilizzare un altro file video se l'operazione non va a buon fine."),
                 o("ef8f5d90", "Suggeriti"),
                 o("a7046fb0", "Raramente necessaria"),
                 o("acf3ecf4", "Aggiungi contenuto"),
@@ -2965,9 +2964,9 @@
                 o("c6f58084", "Sviluppatori"),
                 o("d83f18d2", "Elenco"),
                 o("hc5aa17c", "Scarica l'app X"),
-                o("j0693948", "Scarica l'app Grok");
-            o("fbf83158", "Avviso: pagamento non riuscito"),
-                o("jadeb4da", "Aggiorna al più presto il metodo di pagamento prima di perdere i benefici dell'abbonamento."),
+                o("j0693948", "Scarica l'app Grok"),
+                o("fbf83158", "Avviso: pagamento non riuscito");
+            o("jadeb4da", "Aggiorna al più presto il metodo di pagamento prima di perdere i benefici dell'abbonamento."),
                 o("bce3726a", "Aggiorna la fatturazione"),
                 o("fce9ecce", "Video suggeriti"),
                 o("efe6ef9e", "Visualizza post"),
@@ -3881,9 +3880,9 @@
                 o("d7357e7e", "Rimuovi dai cohost"),
                 o("bf307fc0", "Blocca e rimuovi"),
                 o("ccf2f24e", "Segnala"),
-                o("i22835de", "Approva");
-            o("cb59a0fe", "Respingi"),
-                o("c2376960", "Richieste per partecipare attivamente"),
+                o("i22835de", "Approva"),
+                o("cb59a0fe", "Respingi");
+            o("c2376960", "Richieste per partecipare attivamente"),
                 o("aba7dcdd", function (i) {
                     return "Invita " + i.name;
                 }),
@@ -4913,9 +4912,9 @@
                 o("a7b48b36", "La percentuale di visualizzazioni video che sono state completate."),
                 o("a2580f2a", "Tasso di completamento"),
                 o("ff95a9cc", "ID video"),
-                o("a97e358e", "Link video");
-            o("e10e8b46", "Vengono mostrati solo i video degli ultimi 100 giorni."),
-                o("ba37f6da", "Riepilogo video"),
+                o("a97e358e", "Link video"),
+                o("e10e8b46", "Vengono mostrati solo i video degli ultimi 100 giorni.");
+            o("ba37f6da", "Riepilogo video"),
                 o("f19846b2", "Miniatura video"),
                 o("ccd6f4a8", "Titolo video"),
                 o("c8410542", "Il numero di volte in cui il tuo video è stato visualizzato."),
@@ -5869,11 +5868,11 @@
                 o("a0ea2fa6", "Il campo Nome non può essere vuoto"),
                 o("eec37eac", "È già stata creata una cartella di segnalibri con questo nome"),
                 o("fce0c59e", "Impossibile convertire l'animazione JSON. Controlla il formato JSON nel file dell'animazione e riprova."),
-                o("g0eea6c2", "Impossibile leggere il file dell'animazione JSON. Prova a riaprirlo.");
-            o("ae58026a", "Apri un file .JSON di Mi piace brandizzato e visualizzane l'anteprima"),
-                o("hd0bc1eb", function (i) {
-                    return i.name + " è in diretta";
-                }),
+                o("g0eea6c2", "Impossibile leggere il file dell'animazione JSON. Prova a riaprirlo."),
+                o("ae58026a", "Apri un file .JSON di Mi piace brandizzato e visualizzane l'anteprima");
+            o("hd0bc1eb", function (i) {
+                return i.name + " è in diretta";
+            }),
                 o("bea1f26b", function (i) {
                     return i.name + " era in diretta";
                 }),
@@ -6877,9 +6876,9 @@
                 o("fdd77a34", "Crea post più lunghi"),
                 o("j6d26a7a", "Scrivi tutto ciò che vuoi condividere, senza limiti"),
                 o("c4fd68da", "Personalizza la tua esperienza"),
-                o("c0195168", "Modifica l'icona app e le opzioni di navigazione");
-            o("b6b5dc94", "Ottieni la verifica"),
-                o("b06db848", "Spicca tra tutti sulla piattaforma"),
+                o("c0195168", "Modifica l'icona app e le opzioni di navigazione"),
+                o("b6b5dc94", "Ottieni la verifica");
+            o("b06db848", "Spicca tra tutti sulla piattaforma"),
                 o("e3e3a97c", "Guadagna una parte del ricavato generato dai tuoi post"),
                 o("f15bc24e", "Meno limiti per Grok"),
                 o("c4666e1c", "Meno limiti per Grok 3, il nostro ultimo modello"),
@@ -7853,7 +7852,8 @@
                 o("b33d1518", "Sincronizza le offerte tramite un'integrazione supportata o un feed XML personalizzato"),
                 o("dd2db402", "Step 1: raccogli le informazioni necessarie"),
                 o("edb098c2", "Step 2: contatta il team di assistenza"),
-                o("c4474460", "Step 2: invia un'email al nostro team di assistenza");
+                o("c4474460", "Step 2: invia un'email al nostro team di assistenza"),
+                o("a08da0fa", "E poi?");
             function r(i, e) {
                 for (var a = 0; a < e.length; a++) {
                     var o = e[a];
@@ -7892,8 +7892,7 @@
                     c(i, e)
                 );
             }
-            o("a08da0fa", "E poi?"),
-                o("c127374e", "Inviaci un messaggio"),
+            o("c127374e", "Inviaci un messaggio"),
                 o("b2cb2a0c", "Il nome utente per l'account della tua organizzazione verificata"),
                 o("b8e64002", "Il nome del sistema di monitoraggio dei candidati che usi"),
                 o("acb99db6", "L'URL del sito di candidatura dove sono elencate le tue offerte di lavoro"),
@@ -8895,9 +8894,9 @@
                 o("c057680c", "Il video non può essere riprodotto su questo browser. Prova da un altro browser."),
                 o("i5dfae6e", "Questo video non è disponibile nella tua zona."),
                 o("c2388276", "Questo video è stato eliminato."),
-                o("d2c96140", "Indicatore per l'audio dell'ospite");
-            o("f6dc9146", "REPLAY"),
-                o("d30c74fe", "Volume"),
+                o("d2c96140", "Indicatore per l'audio dell'ospite"),
+                o("f6dc9146", "REPLAY");
+            o("d30c74fe", "Volume"),
                 o("f2d4e6f2", "Guarda di nuovo"),
                 o("e9f1af3a", "Approfondisci"),
                 o("f1881d86", "Non è possibile rispondere o mettere Mi piace a questo post né condividerlo."),
@@ -13241,4 +13240,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/it.cbf6612a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/it.52d94bca.js.map

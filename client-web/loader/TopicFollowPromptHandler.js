@@ -18,9 +18,9 @@
                 u = i(863934),
                 g = i(479506),
                 I = i(903019),
-                b = i(725516),
-                f = i(864479);
-            const v = d().a2a3824a;
+                v = i(725516),
+                b = i(864479);
+            const f = d().a2a3824a;
             let w = 0;
             class _ extends o.Component {
                 constructor(e, t) {
@@ -45,7 +45,7 @@
                     const { educateOnFollow: e, isInSidebar: t, nameWeight: i, notInterestedOnClick: a, topic: s } = this.props,
                         { description: l, name: d } = s,
                         { loggedInUserId: p } = this.context;
-                    return o.createElement(r.Z, { "aria-labelledby": [this._topicDomId, this._nameDomId, this._descriptionDomId, this._followButtonDomId, this._notInterestedButtonDomId].join(" "), interactiveStyles: this._topicLink ? void 0 : null, link: this._topicLink, onClick: this._topicLink ? this._handleOnClick : void 0, style: [y.root, y.flexStart], withDarkerInteractiveBackground: t }, o.createElement(n.Z, { style: y.topic }, o.createElement(n.Z, { "aria-label": v, id: this._topicDomId }), this._renderIcon(), o.createElement(n.Z, { style: y.text }, o.createElement(c.ZP, { id: this._nameDomId, weight: i, withInteractiveStyling: !!this._topicLink }, d), l ? o.createElement(c.ZP, { color: "gray700", id: this._descriptionDomId, numberOfLines: 2 }, l) : null)), o.createElement(n.Z, { style: y.buttons }, o.createElement(h.ZP, { educateOnFollow: e, id: this._followButtonDomId, topic: s }), p && a ? o.createElement(u.Z, { id: this._notInterestedButtonDomId, onPress: a, style: y.marginStart, topicId: s.id }) : null));
+                    return o.createElement(r.Z, { "aria-labelledby": [this._topicDomId, this._nameDomId, this._descriptionDomId, this._followButtonDomId, this._notInterestedButtonDomId].join(" "), interactiveStyles: this._topicLink ? void 0 : null, link: this._topicLink, onClick: this._topicLink ? this._handleOnClick : void 0, style: [y.root, y.flexStart], withDarkerInteractiveBackground: t }, o.createElement(n.Z, { style: y.topic }, o.createElement(n.Z, { "aria-label": f, id: this._topicDomId }), this._renderIcon(), o.createElement(n.Z, { style: y.text }, o.createElement(c.ZP, { id: this._nameDomId, weight: i, withInteractiveStyling: !!this._topicLink }, d), l ? o.createElement(c.ZP, { color: "gray700", id: this._descriptionDomId, numberOfLines: 2 }, l) : null)), o.createElement(n.Z, { style: y.buttons }, o.createElement(h.ZP, { educateOnFollow: e, id: this._followButtonDomId, topic: s }), p && a ? o.createElement(u.Z, { id: this._notInterestedButtonDomId, onPress: a, style: y.marginStart, topicId: s.id }) : null));
                 }
                 _renderIcon() {
                     const { withIcon: e } = this.props;
@@ -58,10 +58,10 @@
             }
             (_.contextType = m.rC), (_.defaultProps = { nameWeight: "bold", withIcon: !0 });
             const y = s.default.create((e) => ({ root: { flexDirection: "row", justifyContent: "space-between", paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, flexStart: { alignItems: "flex-start" }, icon: { alignSelf: "flex-start", marginEnd: e.spaces.space12 }, customIcon: { borderRadius: e.borderRadii.infinite, height: e.spaces.space32, width: e.spaces.space32 }, text: { flexShrink: 1 }, buttons: { alignItems: "center", alignSelf: "center", flexDirection: "row", paddingStart: e.spaces.space8 }, marginStart: { marginStart: e.spaces.space4 }, topic: { alignItems: "center", flexDirection: "row", flexShrink: 1, paddingEnd: e.spaces.space4 } })),
-                Z = (0, f.Z)((0, b.Z)(_));
+                Z = (0, b.Z)((0, v.Z)(_));
         },
         736462: (e, t, i) => {
-            i.r(t), i.d(t, { default: () => f });
+            i.r(t), i.d(t, { default: () => b });
             var o = i(942893),
                 n = i(351322),
                 r = i(202784),
@@ -83,14 +83,14 @@
                     r.useEffect(() => {
                         t && i.scribeAction("impression");
                     }, [i, t]);
-                    const h = r.useMemo(() => [b.text, m ? b.noMarginBottom : b.border], [m]);
-                    return t ? r.createElement(c.Z, { style: m && b.incentiveFocus }, r.createElement(l.Z, { educateOnFollow: !0, nameWeight: m ? void 0 : "heavy", topic: t, withIcon: !0 }), s || n ? r.createElement(c.Z, { style: h }, s ? r.createElement(a.ZP, { size: "headline1", weight: "bold" }, s) : null, n ? r.createElement(a.ZP, { color: "gray700" }, n) : null) : null) : null;
+                    const h = r.useMemo(() => [v.text, m ? v.noMarginBottom : v.border], [m]);
+                    return t ? r.createElement(c.Z, { style: m && v.incentiveFocus }, r.createElement(l.Z, { educateOnFollow: !0, nameWeight: m ? void 0 : "heavy", topic: t, withIcon: !0 }), s || n ? r.createElement(c.Z, { style: h }, s ? r.createElement(a.ZP, { size: "headline1", weight: "bold" }, s) : null, n ? r.createElement(a.ZP, { color: "gray700" }, n) : null) : null) : null;
                 },
                 I = (0, m.Z)().propsFromState(() => ({ topic: u }))(r.memo(g)),
-                b = s.default.create((e) => ({ border: { borderTopStyle: "solid", borderTopWidth: e.borderWidths.small, borderTopColor: e.colors.borderColor, marginTop: 0, paddingTop: e.spaces.space12 }, incentiveFocus: { flexDirection: "column-reverse" }, noMarginBottom: { marginBottom: 0 }, text: { marginHorizontal: e.componentDimensions.gutterHorizontal, marginVertical: e.componentDimensions.gutterVertical } })),
-                f = n.iH({ component: I, getScribeDataItem: (e) => o.Z.forTopic(e.content.topicId, e.itemMetadata.clientEventInfo) }).getHandler();
+                v = s.default.create((e) => ({ border: { borderTopStyle: "solid", borderTopWidth: e.borderWidths.small, borderTopColor: e.colors.borderColor, marginTop: 0, paddingTop: e.spaces.space12 }, incentiveFocus: { flexDirection: "column-reverse" }, noMarginBottom: { marginBottom: 0 }, text: { marginHorizontal: e.componentDimensions.gutterHorizontal, marginVertical: e.componentDimensions.gutterVertical } })),
+                b = n.iH({ component: I, getScribeDataItem: (e) => o.Z.forTopic(e.content.topicId, e.itemMetadata.clientEventInfo) }).getHandler();
         },
-        76388: (e, t, i) => {
+        748138: (e, t, i) => {
             i.r(t), i.d(t, { default: () => s });
             var o = i(202784),
                 n = i(890601),
@@ -98,7 +98,7 @@
                 c = i(347101);
             const a = (e = {}) => {
                 const { direction: t } = (0, r.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [c.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M14 6c0 2.21-1.791 4-4 4S6 8.21 6 6s1.791-4 4-4 4 1.79 4 4zm-4 5c-2.352 0-4.373.85-5.863 2.44-1.477 1.58-2.366 3.8-2.632 6.46l-.11 1.1h17.21l-.11-1.1c-.266-2.66-1.155-4.88-2.632-6.46C14.373 11.85 12.352 11 10 11zm12.223-5.89l-2.969 4.46L17.3 8.1l-1.2 1.6 3.646 2.73 4.141-6.21-1.664-1.11z" })) }, { writingDirection: t });
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [c.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
             };
             a.metadata = { width: 24, height: 24 };
             const s = a;
@@ -118,4 +118,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TopicFollowPromptHandler.3d28196a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TopicFollowPromptHandler.bd2916fa.js.map

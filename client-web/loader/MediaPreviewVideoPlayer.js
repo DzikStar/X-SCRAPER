@@ -16,8 +16,8 @@
                 h = r(325686),
                 p = r(643442),
                 m = r(737691),
-                b = r(466445),
-                S = r(841972),
+                S = r(466445),
+                b = r(841972),
                 v = r(647174),
                 g = r(38502),
                 f = r(804579),
@@ -25,12 +25,12 @@
                 C = r(392237),
                 _ = r(41871),
                 w = r(458774),
-                E = r(420922),
-                T = r(103849),
+                T = r(420922),
+                E = r(103849),
                 P = r(70889),
                 k = r(445014),
-                x = r(986460),
-                R = r(424713),
+                R = r(986460),
+                x = r(424713),
                 Z = r(2138),
                 A = r(173739);
             const B = a().f06f2e53;
@@ -62,15 +62,15 @@
                 render() {
                     const { "aria-label": e, currentTime: t, duration: r, isSeeking: o } = this.props,
                         i = this.state.isScrubbing || o ? this.state.scrubTo : t;
-                    return "number" == typeof i && "number" == typeof r && r > 0 ? n.createElement(A.Z, { accessibilityLabelValueText: B({ currentTime: (0, R.mr)(i), durationTime: (0, R.mr)(r) }), "aria-label": e, color: "white", keepLTR: !0, keyboardStep: 5, max: r, min: 0, onActive: this._handleActive, onChange: this._handleChange, step: "any", value: i, withHidingThumb: !0 }) : null;
+                    return "number" == typeof i && "number" == typeof r && r > 0 ? n.createElement(A.Z, { accessibilityLabelValueText: B({ currentTime: (0, x.mr)(i), durationTime: (0, x.mr)(r) }), "aria-label": e, color: "white", keepLTR: !0, keyboardStep: 5, max: r, min: 0, onActive: this._handleActive, onChange: this._handleChange, step: "any", value: i, withHidingThumb: !0 }) : null;
                 }
             }
             const F = M,
                 L = a().j25d7cca,
                 O = a().a858b25c,
                 H = a().hea01798,
-                z = "PreviewControlBar-",
-                D = { CAPTIONS: `${z}Captions`, FULLSCREEN: `${z}Fullscreen` },
+                D = "PreviewControlBar-",
+                z = { CAPTIONS: `${D}Captions`, FULLSCREEN: `${D}Fullscreen` },
                 I = (e) => e === w.c.narrow || e === w.c.veryNarrow;
             class G extends n.PureComponent {
                 constructor(e) {
@@ -82,32 +82,32 @@
                             const { controls: r, isPlaying: o } = t,
                                 { pause: i, play: a, replay: s } = e,
                                 { currentBreakpoint: l } = this.state,
-                                c = (0, R.Ci)(t),
+                                c = (0, x.Ci)(t),
                                 u = I(l) ? "xSmall" : "medium";
-                            return !c || c.isLive ? null : o || (r && "PLAY_REQUESTED" === r.playState) ? n.createElement(T.Z, { "aria-label": x.gF, hoverLabelPreferredHorizontalOrientation: "end", hoverLabelWithExtraSpace: this.props.showScrubber, icon: n.createElement(p.default, null), onPress: i, size: u }) : r.isReplayButtonShown ? n.createElement(T.Z, { "aria-label": x.Js, hoverLabelPreferredHorizontalOrientation: "end", hoverLabelWithExtraSpace: this.props.showScrubber, icon: n.createElement(m.default, null), onPress: s, size: u }) : n.createElement(T.Z, { "aria-label": x.M2, hoverLabelPreferredHorizontalOrientation: "end", hoverLabelWithExtraSpace: this.props.showScrubber, icon: n.createElement(b.default, null), onPress: a, size: u });
+                            return !c || c.isLive ? null : o || (r && "PLAY_REQUESTED" === r.playState) ? n.createElement(E.Z, { "aria-label": R.gF, hoverLabelPreferredHorizontalOrientation: "end", hoverLabelWithExtraSpace: this.props.showScrubber, icon: n.createElement(p.default, null), onPress: i, size: u }) : r.isReplayButtonShown ? n.createElement(E.Z, { "aria-label": R.Js, hoverLabelPreferredHorizontalOrientation: "end", hoverLabelWithExtraSpace: this.props.showScrubber, icon: n.createElement(m.default, null), onPress: s, size: u }) : n.createElement(E.Z, { "aria-label": R.M2, hoverLabelPreferredHorizontalOrientation: "end", hoverLabelWithExtraSpace: this.props.showScrubber, icon: n.createElement(S.default, null), onPress: a, size: u });
                         }),
                         (this._renderFullScreenButton = (e, t) => {
                             const { fullscreen: r } = t,
                                 { currentBreakpoint: o } = this.state,
                                 i = this._fullScreenIcon,
                                 a = I(o) ? "xSmall" : "medium";
-                            return r.isFullscreen ? n.createElement(T.Z, { "aria-label": x.iG, hoverLabelPreferredHorizontalOrientation: "start", hoverLabelWithExtraSpace: this.props.showScrubber, icon: n.createElement(i, { isFullscreen: r.isFullscreen }), onPress: this._exitFullScreen(e), size: a }) : n.createElement(T.Z, { "aria-label": x.lO, hoverLabelPreferredHorizontalOrientation: "start", hoverLabelWithExtraSpace: this.props.showScrubber, icon: n.createElement(i, { isFullscreen: r.isFullscreen }), onPress: this._requestFullScreen(e), size: a });
+                            return r.isFullscreen ? n.createElement(E.Z, { "aria-label": R.iG, hoverLabelPreferredHorizontalOrientation: "start", hoverLabelWithExtraSpace: this.props.showScrubber, icon: n.createElement(i, { isFullscreen: r.isFullscreen }), onPress: this._exitFullScreen(e), size: a }) : n.createElement(E.Z, { "aria-label": R.lO, hoverLabelPreferredHorizontalOrientation: "start", hoverLabelWithExtraSpace: this.props.showScrubber, icon: n.createElement(i, { isFullscreen: r.isFullscreen }), onPress: this._requestFullScreen(e), size: a });
                         }),
                         (this._fullScreenIcon = ({ isFullscreen: e, style: t }) => {
                             const { hidden: r, shown: o } = N;
-                            return n.createElement(n.Fragment, null, n.createElement(S.default, { style: e ? r : o }), n.createElement(v.default, { style: e ? o : r }));
+                            return n.createElement(n.Fragment, null, n.createElement(b.default, { style: e ? r : o }), n.createElement(v.default, { style: e ? o : r }));
                         }),
                         (this._requestFullScreen = (e) => () => {
                             e.fullScreen(this.props.containerRef);
                         }),
                         (this._exitFullScreen = (e) => () => e.exitFullScreen()),
-                        (this._getScrubToFraction = (0, y.Z)((e) => (t) => (0, R.aZ)(e, t))),
+                        (this._getScrubToFraction = (0, y.Z)((e) => (t) => (0, x.aZ)(e, t))),
                         (this._renderScrubber = (e) =>
                             this.props.showScrubber && this.state.showScrubber
                                 ? n.createElement(
                                       h.Z,
                                       { style: k.ZP.scrubber },
-                                      n.createElement(o.o, { periodic: !0 }, ({ playerState: t }) => n.createElement(F, { "aria-label": H, currentTime: (0, R.SY)(t), duration: (0, R.zm)(t), getScrubToFraction: this._getScrubToFraction(t), isScrubbing: t.isScrubbing, isSeeking: t.isSeeking, playerApi: e })),
+                                      n.createElement(o.o, { periodic: !0 }, ({ playerState: t }) => n.createElement(F, { "aria-label": H, currentTime: (0, x.SY)(t), duration: (0, x.zm)(t), getScrubToFraction: this._getScrubToFraction(t), isScrubbing: t.isScrubbing, isSeeking: t.isSeeking, playerApi: e })),
                                   )
                                 : null),
                         (this._renderVolume = (e, t) => {
@@ -115,16 +115,16 @@
                                 { mute: i, setVolume: a, unmute: s } = e,
                                 { containerHeight: l, currentBreakpoint: c } = this.state,
                                 u = r ? s : i,
-                                d = r ? x.cm : x.GS;
-                            return n.createElement(_.Z, { accessibilityLabelIcon: d, accessibilityLabelSlider: x.Nj, containerHeight: l, isMuted: r, onHideSlider: this._showScrubberHandler(!0), onMuteToggle: u, onShowSlider: this._showScrubberHandler(!1), onSliderChange: this._setVolumePercent(a), size: I(c) ? "xSmall" : "medium", volumePercent: 100 * o });
+                                d = r ? R.cm : R.GS;
+                            return n.createElement(_.Z, { accessibilityLabelIcon: d, accessibilityLabelSlider: R.Nj, containerHeight: l, isMuted: r, onHideSlider: this._showScrubberHandler(!0), onMuteToggle: u, onShowSlider: this._showScrubberHandler(!1), onSliderChange: this._setVolumePercent(a), size: I(c) ? "xSmall" : "medium", volumePercent: 100 * o });
                         }),
                         (this._renderCaptionsButton = (e, t) => {
-                            const r = (0, R.Ci)(t);
+                            const r = (0, x.Ci)(t);
                             if (r && r.hasCaptions) {
                                 const { currentBreakpoint: r } = this.state,
                                     { areCaptionsShown: o } = t,
                                     { toggleCaptions: i } = e;
-                                return n.createElement(T.Z, { "aria-label": o ? L : O, hoverLabelWithExtraSpace: this.props.showScrubber, icon: o ? n.createElement(g.default, null) : n.createElement(f.default, null), onPress: i, size: I(r) ? "xSmall" : "medium", testID: "captions" });
+                                return n.createElement(E.Z, { "aria-label": o ? L : O, hoverLabelWithExtraSpace: this.props.showScrubber, icon: o ? n.createElement(g.default, null) : n.createElement(f.default, null), onPress: i, size: I(r) ? "xSmall" : "medium", testID: "captions" });
                             }
                         }),
                         (this._renderTimePlayed = () =>
@@ -138,17 +138,17 @@
                         (this._getTimestampValues = (e) => {
                             const { controls: t, isSeeking: r } = e,
                                 { playbackTimeRange: n, scrubToFraction: o } = t,
-                                i = (0, R.MU)((0, R.Ci)(e)),
-                                a = (0, R.zm)(e);
+                                i = (0, x.MU)((0, x.Ci)(e)),
+                                a = (0, x.zm)(e);
                             if (!i || !a) return null;
                             if (r && void 0 !== o && i) {
                                 return { duration: a, currentTime: o * i - (n?.startTimeS ?? 0) };
                             }
-                            return { duration: a, currentTime: (0, R.SY)(e) };
+                            return { duration: a, currentTime: (0, x.SY)(e) };
                         }),
                         (this._formatTimePlayed = ({ currentTime: e, duration: t, isCompact: r }) => {
                             const n = t - e;
-                            return r ? `${(0, R.mr)(Math.round(n))}` : `${(0, R.mr)(Math.round(e))} / ${(0, R.mr)(Math.round(t))}`;
+                            return r ? `${(0, x.mr)(Math.round(n))}` : `${(0, x.mr)(Math.round(e))} / ${(0, x.mr)(Math.round(t))}`;
                         }),
                         (this._showScrubberHandler = (e) => () => this.setState({ showScrubber: e })),
                         (this._setVolumePercent = (e) => (t) => {
@@ -175,7 +175,7 @@
                 }
                 render() {
                     const { hideControls: e, playerApi: t, playerState: r } = this.props;
-                    return t && r ? n.createElement(c.Z.ObserverContext.Consumer, null, (o) => n.createElement(h.Z, { onLayout: this._handleLayout, pointerEvents: "auto", ref: this._parentRef, style: k.i3 }, n.createElement(E.Z, { actionButton: this._renderActionButton(t, r), displayDismissableControls: !e, rightContent: n.createElement(n.Fragment, null, this._renderTimePlayed(), n.createElement(o, { focus: !0, interactionKey: D.CAPTIONS, interactionTimeoutMs: 0, mouseover: !0 }, this._renderCaptionsButton(t, r)), this._renderVolume(t, r), n.createElement(o, { focus: !0, interactionKey: D.FULLSCREEN, interactionTimeoutMs: 0, mouseover: !0 }, this._renderFullScreenButton(t, r))), scrubber: this._renderScrubber(t) }))) : null;
+                    return t && r ? n.createElement(c.Z.ObserverContext.Consumer, null, (o) => n.createElement(h.Z, { onLayout: this._handleLayout, pointerEvents: "auto", ref: this._parentRef, style: k.i3 }, n.createElement(T.Z, { actionButton: this._renderActionButton(t, r), displayDismissableControls: !e, rightContent: n.createElement(n.Fragment, null, this._renderTimePlayed(), n.createElement(o, { focus: !0, interactionKey: z.CAPTIONS, interactionTimeoutMs: 0, mouseover: !0 }, this._renderCaptionsButton(t, r)), this._renderVolume(t, r), n.createElement(o, { focus: !0, interactionKey: z.FULLSCREEN, interactionTimeoutMs: 0, mouseover: !0 }, this._renderFullScreenButton(t, r))), scrubber: this._renderScrubber(t) }))) : null;
                 }
             }
             G.defaultProps = { showScrubber: !0 };
@@ -324,7 +324,7 @@
                 u = n;
         },
         864386: (e, t, r) => {
-            r.d(t, { Z: () => b });
+            r.d(t, { Z: () => S });
             var n = r(807896),
                 o = (r(571372), r(202784)),
                 i = r(24812);
@@ -343,7 +343,7 @@
                 },
                 p = o.createContext({ observed: { click: new Set(), focused: new Set(), mousemove: new Set(), mouseover: new Set() }, Observer: () => null }),
                 m = o.createContext(() => null);
-            class b extends o.Component {
+            class S extends o.Component {
                 constructor(...e) {
                     super(...e),
                         (this._timeoutCollection = { click: {}, focused: {}, mousemove: {}, mouseover: {}, touch: {} }),
@@ -426,10 +426,10 @@
                     const { children: e } = this.props;
                     if (!e) throw new Error("component requires children prop.");
                     const t = this._renderObserver;
-                    return o.createElement(b.ObserverContext.Provider, { value: t }, o.createElement(b.Context.Provider, { value: this.getContext() }, e));
+                    return o.createElement(S.ObserverContext.Provider, { value: t }, o.createElement(S.Context.Provider, { value: this.getContext() }, e));
                 }
             }
-            (b.Context = p), (b.ObserverContext = m);
+            (S.Context = p), (S.ObserverContext = m);
         },
         986460: (e, t, r) => {
             r.d(t, { GS: () => c, Js: () => a, M2: () => s, Nj: () => d, cm: () => u, gF: () => i, iG: () => p, kA: () => l, lO: () => h });
@@ -459,8 +459,8 @@
                 h = r(466792),
                 p = r(173739),
                 m = r(392237);
-            const b = s().b3160a69;
-            class S extends o.PureComponent {
+            const S = s().b3160a69;
+            class b extends o.PureComponent {
                 constructor(...e) {
                     super(...e),
                         (this.state = { showSlider: !1, isSliderActive: !1 }),
@@ -503,13 +503,13 @@
                     }
                 }
                 render() {
-                    const { accessibilityLabelIcon: e, accessibilityLabelSlider: t, containerHeight: r, isMuted: a, onHideSlider: s, onMuteToggle: u, onShowSlider: S, onSliderChange: g, pullRight: f, sliderColor: y, volumePercent: C, withGraySliderTrack: _, withNavigationSliderBackground: w, ...E } = this.props,
-                        T = a ? o.createElement(l.default, null) : o.createElement(c.default, null),
+                    const { accessibilityLabelIcon: e, accessibilityLabelSlider: t, containerHeight: r, isMuted: a, onHideSlider: s, onMuteToggle: u, onShowSlider: b, onSliderChange: g, pullRight: f, sliderColor: y, volumePercent: C, withGraySliderTrack: _, withNavigationSliderBackground: w, ...T } = this.props,
+                        E = a ? o.createElement(l.default, null) : o.createElement(c.default, null),
                         P = w ? v.sliderWithNavigationBackground : v.sliderWithDefaultBackground;
-                    return o.createElement(h.Z, { disabled: !g, onFocusRingGained: g ? this._showSlider : void 0, onFocusRingLost: g ? this._hideSlider : void 0, onHoverIn: g ? this._showSlider : void 0, onHoverOut: g ? this._hideSlider : void 0 }, o.createElement(i.Z, { onKeyDown: g ? this._handleKeyDown : void 0 }, o.createElement(d.ZP, (0, n.Z)({ "aria-label": e, icon: T, onLayout: this._handleButtonLayoutChange, onPress: u, pullRight: f, type: "onMediaText" }, E)), g && o.createElement(h.Z, { onFocusRingGained: S, onFocusRingLost: s }, ({ isFocusedWithin: e }) => o.createElement(i.Z, { style: [v.sliderBackground, P, this._getSliderMarginStyles(E.size), e || this._shouldShowSlider(this.state) ? null : m.default.visuallyHidden, !!r && { maxHeight: this.state.sliderMaxHeight }] }, o.createElement(p.Z, { accessibilityLabelValueText: b({ volumePercent: C }), "aria-label": t, color: y || "white", isVertical: !0, keyboardStep: 10, max: 100, min: 0, onActive: this._handleSliderActive, onChange: g, step: 1, value: a ? 0 : C || 0, withGrayBackground: _ })))));
+                    return o.createElement(h.Z, { disabled: !g, onFocusRingGained: g ? this._showSlider : void 0, onFocusRingLost: g ? this._hideSlider : void 0, onHoverIn: g ? this._showSlider : void 0, onHoverOut: g ? this._hideSlider : void 0 }, o.createElement(i.Z, { onKeyDown: g ? this._handleKeyDown : void 0 }, o.createElement(d.ZP, (0, n.Z)({ "aria-label": e, icon: E, onLayout: this._handleButtonLayoutChange, onPress: u, pullRight: f, type: "onMediaText" }, T)), g && o.createElement(h.Z, { onFocusRingGained: b, onFocusRingLost: s }, ({ isFocusedWithin: e }) => o.createElement(i.Z, { style: [v.sliderBackground, P, this._getSliderMarginStyles(T.size), e || this._shouldShowSlider(this.state) ? null : m.default.visuallyHidden, !!r && { maxHeight: this.state.sliderMaxHeight }] }, o.createElement(p.Z, { accessibilityLabelValueText: S({ volumePercent: C }), "aria-label": t, color: y || "white", isVertical: !0, keyboardStep: 10, max: 100, min: 0, onActive: this._handleSliderActive, onChange: g, step: 1, value: a ? 0 : C || 0, withGrayBackground: _ })))));
                 }
             }
-            S.defaultProps = { pullRight: !1 };
+            b.defaultProps = { pullRight: !1 };
             const v = m.default.create((e) => ({ sliderBackground: { bottom: 0, borderRadius: e.borderRadii.xLarge, height: `calc(${e.spaces.space64}*2)`, start: e.spaces.space4, position: "absolute", padding: e.spaces.space12, paddingVertical: e.spaces.space16, end: e.spaces.space4 }, sliderWithDefaultBackground: { backgroundColor: e.colors.translucentBlack30 }, sliderWithNavigationBackground: { backgroundColor: e.colors.navigationBackground, boxShadow: e.boxShadows.xSmall } })),
                 g = m.default.create(({ spaces: e, spacesPx: t }) => {
                     const r = `${t.space16 + t.space4 + t.space2}px`,
@@ -517,38 +517,12 @@
                         o = `${t.space12 + t.space40}px`;
                     return { xSmall: { marginBottom: e.space24 }, small: { marginBottom: e.space32 }, medium: { marginBottom: e.space36 }, large: { marginBottom: n }, xLarge: { marginBotom: o }, smallCompact: { marginBottom: r }, DEPRECATED_normalCompact: { marginBottom: e.space32 }, DEPRECATED_normal: { marginBottom: e.space40 } };
                 }),
-                f = S;
+                f = b;
         },
         27137: (e, t, r) => {
             r.d(t, { Z: () => o });
             var n = r(157396);
             const o = (0, r(587878).Z)({ palette: n.CV.light, key: "light-blue-normal", highContrastEnabled: !1, chirpFontEnabled: !1, scale: "normal" });
-        },
-        38502: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => l });
-            var n = r(202784),
-                o = r(890601),
-                i = r(783427),
-                a = r(347101);
-            const s = (e = {}) => {
-                const { direction: t } = (0, i.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M3 5.5C3 4.12 4.119 3 5.5 3h13C19.881 3 21 4.12 21 5.5v13c0 1.38-1.119 2.5-2.5 2.5h-13C4.119 21 3 19.88 3 18.5v-13zm2.746 6.52c0 1.85 1.421 3.2 3.187 3.2v-.01h.003c1.369 0 2.154-.59 2.737-1.39l-1.22-.87c-.303.44-.812.73-1.39.73-.93 0-1.685-.75-1.685-1.68s.754-1.68 1.684-1.68c.559 0 1.051.27 1.357.69l1.207-.93c-.545-.76-1.36-1.29-2.62-1.29-1.872 0-3.26 1.41-3.26 3.21v.02zm6.584 0c0 1.85 1.421 3.2 3.185 3.2 1.368 0 2.154-.6 2.738-1.4l-1.22-.87c-.304.44-.813.74-1.39.74-.93 0-1.684-.76-1.684-1.69s.755-1.68 1.685-1.68c.559 0 1.051.27 1.356.69l1.21-.93c-.547-.76-1.36-1.29-2.622-1.29-1.872 0-3.258 1.41-3.258 3.21v.02z" })) }, { writingDirection: t });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const l = s;
-        },
-        466445: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => l });
-            var n = r(202784),
-                o = r(890601),
-                i = r(783427),
-                a = r(347101);
-            const s = (e = {}) => {
-                const { direction: t } = (0, i.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M21 12L4 2v20l17-10z" })) }, { writingDirection: t });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const l = s;
         },
         151624: (e, t, r) => {
             r.d(t, { Z: () => n });
@@ -688,4 +662,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.MediaPreviewVideoPlayer.0579dbba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.MediaPreviewVideoPlayer.bc78385a.js.map

@@ -11,20 +11,15 @@
                 loader: () =>
                     Promise.all([
                         a.e("icons.5"),
-                        a.e("icons.6"),
-                        a.e("icons.22"),
-                        a.e("icons.25"),
-                        a.e("icons.9"),
-                        a.e("icons.4"),
-                        a.e("icons.15"),
+                        a.e("icons.12"),
                         a.e("icons.20"),
+                        a.e("icons.0"),
+                        a.e("icons.21"),
+                        a.e("icons.28"),
+                        a.e("icons.17"),
                         a.e("modules.common-e907d115"),
                         a.e("modules.common-e019dbda"),
-                        a.e("icons.11"),
-                        a.e("icons.27"),
-                        a.e("icons.12"),
-                        a.e("icons.13"),
-                        a.e("icons.18"),
+                        a.e("icons.25"),
                         a.e("modules.audio-6107ac1a"),
                         a.e("modules.audio-b953418a"),
                         a.e("modules.audio-7c51e6a7"),
@@ -35,7 +30,10 @@
                         a.e("modules.audio-e019dbda"),
                         a.e("modules.audio-262c94d4"),
                         a.e("modules.audio-c6fe4ea4"),
-                        a.e("icons.24"),
+                        a.e("icons.23"),
+                        a.e("icons.14"),
+                        a.e("icons.4"),
+                        a.e("icons.18"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -60,7 +58,6 @@
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7082ec04"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-c977f3f0"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-bde9e8ed"),
-                        a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-de203a7b"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-78eb13f6"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-83ae13c2"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
@@ -90,7 +87,7 @@
             });
         },
         582129: (e, A, a) => {
-            a.d(A, { E3: () => U, HQ: () => K, Hi: () => V, JE: () => $, Mf: () => F, QJ: () => N, RB: () => ae, Tx: () => J, V$: () => z, VL: () => ee, aG: () => Ae, dq: () => H, j: () => O, ts: () => Y, zr: () => W });
+            a.d(A, { E3: () => V, HQ: () => U, Hi: () => O, JE: () => ee, Mf: () => W, QJ: () => H, RB: () => ne, Tx: () => z, V$: () => K, VL: () => Ae, _C: () => N, aG: () => ae, dq: () => F, j: () => L, ts: () => J, zr: () => X });
             a(136728), a(571372);
             var n = a(614983),
                 o = a.n(n),
@@ -102,8 +99,8 @@
                 c = a(776342),
                 i = a(674132),
                 u = a.n(i),
-                h = a(239496),
-                m = a(420182),
+                m = a(239496),
+                h = a(420182),
                 p = a(42134),
                 D = a(545937),
                 M = a(484633),
@@ -114,65 +111,66 @@
                 _ = a(905710),
                 g = a(811233),
                 S = a(110138),
-                I = a(163889),
-                v = a(427266),
-                E = a(774717),
-                C = a(934871),
+                v = a(163889),
+                I = a(427266),
+                C = a(774717),
+                E = a(934871),
                 k = a(625555),
                 B = a(41931),
                 R = a(4427),
                 Z = a(790997),
                 G = a(688327),
                 x = a(942428),
-                P = a(302217),
-                T = a(895229),
+                T = a(302217),
+                P = a(895229),
                 j = a(509599),
                 Q = a(261703);
-            const N = (0, r.cn)(null, (e, A, a) => {
+            const N = (0, r.cn)((e) => m.FH.getRegion()),
+                H = (0, r.cn)(null, (e, A, a) => {
                     const { addToast: n, conversationControls: o, isSuperFollowersOnly: r, onClose: d, options: t, title: s } = a;
                     return (
                         t.content_type && A(b.HM, t.content_type),
-                        h.FH.getRegion()
+                        e(N)
                             .then((e) => (A(x.WG, e.region), A(Q.D, { broadcastOptions: { ...t, region: e.region }, title: s, conversationControls: o })))
-                            .then((e) => (d?.(), O({ contentType: t.content_type, id: e.audioSpaceId, isAnonymous: !1, isLive: !0, isReplay: !1, isSuperFollowersOnly: r, mediaKey: e.mediaKey, role: M.Q.host, clearAndLoadSpace: (e) => A(w.e, e), resetExpandedDockStore: (e) => A(b.wM, e) }), e.audioSpaceId))
+                            .then((e) => (d?.(), L({ contentType: t.content_type, id: e.audioSpaceId, isAnonymous: !1, isLive: !0, isReplay: !1, isSuperFollowersOnly: r, mediaKey: e.mediaKey, role: M.Q.host, clearAndLoadSpace: (e) => A(w.e, e), resetExpandedDockStore: (e) => A(b.wM, e) }), e.audioSpaceId))
                             .catch(() => {
-                                d?.(), n && n({ text: q });
+                                d?.(), n && n({ text: $ });
                             })
                     );
                 }),
-                H = (0, r.cn)(null, (e, A, { isEnded: a, isKicked: n }) => {
+                F = (0, r.cn)(null, (e, A, { isEnded: a, isKicked: n }) => {
                     const o = e(p.rm),
                         r = e(p.cI);
                     return A(G.Q), a && o ? l.default.push((0, _.e)(o), { forceRenderEnded: !0 }) : e(R.MG) && n && l.default.push(e(g.P)), o ? A(Z.Hs, { spaceUserRole: r, spaceId: o, wasKicked: n }) : Promise.resolve();
                 }),
-                F = (0, r.cn)(null, async (e, A, a) => {
+                W = (0, r.cn)(null, async (e, A, a) => {
                     const n = e(p.cI);
                     A(G.Q), await A(Z.pI), await A(k.Dn, a), await A(Z.Hs, { spaceUserRole: n, spaceId: a });
                 });
-            function W() {
+            function X() {
                 return (0, d.b9)(G.R);
             }
-            const X = (0, r.cn)(!1);
-            function Y() {
-                return (0, d.Dv)(X);
+            const Y = (0, r.cn)(!1);
+            function J() {
+                return (0, d.Dv)(Y);
             }
-            const J = (0, t.xu)((e) =>
+            const z = (0, t.xu)((e) =>
                     (0, r.cn)(null, async (A, a) => {
-                        a(R.fJ, !0), a(X, !0);
+                        a(R.fJ, !0), a(Y, !0);
                         const n = await A((0, R.Xk)(e));
-                        return a(z, { conferenceId: e, broadcastId: n });
+                        return a(K, { conferenceId: e, broadcastId: n });
                     }),
                 ),
-                z = (0, r.cn)(null, async (e, A, { broadcastId: a, conferenceId: n }) => {
+                K = (0, r.cn)(null, async (e, A, { broadcastId: a, conferenceId: n }) => {
                     try {
-                        return A(R.fJ, !0), A(X, !0), e(T.p_) || (await e((0, j.tq)(a)), e(B.v) || (await A(C.yw))), A(K, a);
+                        return A(R.fJ, !0), A(Y, !0), e(P.p_) || (await e((0, j.tq)(a)), e(B.v) || (await A(E.yw))), A(U, a);
                     } catch (A) {
-                        throw (e(T.Fn) && l.default.goBack(), A);
+                        throw (e(P.Fn) && l.default.goBack(), A);
                     }
                 }),
-                K = (0, r.cn)(null, (e, A, a) => {
-                    e(T.p_) || A(P.FF, a), A(R.fJ, !0), A(X, !0);
-                    const n = E.P_();
+                U = (0, r.cn)(null, (e, A, a) => {
+                    e(P.p_) || A(T.FF, a), A(R.fJ, !0), A(Y, !0);
+                    const n = C.P_();
                     return e((0, j.tq)(a))
                         .then((n) => {
                             if (!n) return Error("failed to find space");
@@ -181,46 +179,46 @@
                             const o = n.media_key,
                                 r = (n.is_space_available_for_replay && [c.default.SpaceState.Ended, c.default.SpaceState.TimedOut].includes(n.state)) ?? !1,
                                 d = n.narrow_cast_space_type === c.default.AudienceEnum.superFollowersOnly,
-                                t = (0, y._h)(e(m.qc).getState()),
+                                t = (0, y._h)(e(h.qc).getState()),
                                 s = n.host?.user_id === t ? M.Q.host : M.Q.speaker;
-                            return O({ contentType: n.content_type, id: a, isAnonymous: !1, isLive: n.state === c.default.SpaceState.Running, isReplay: r, isSuperFollowersOnly: d, mediaKey: o, origin: void 0, role: s, started_at: n?.started_at, clearAndLoadSpace: (e) => A(w.e, e), resetExpandedDockStore: (e) => A(b.wM, e) }), s === M.Q.host ? A(ee, n.rest_id) : e(T.p_) ? A(Z.Sk, { spaceId: n.rest_id, role: s }) : A($, { spaceId: n.rest_id, role: s, shouldAutoJoin: !0 });
+                            return L({ contentType: n.content_type, id: a, isAnonymous: !1, isLive: n.state === c.default.SpaceState.Running, isReplay: r, isSuperFollowersOnly: d, mediaKey: o, origin: void 0, role: s, started_at: n?.started_at, clearAndLoadSpace: (e) => A(w.e, e), resetExpandedDockStore: (e) => A(b.wM, e) }), s === M.Q.host ? A(Ae, n.rest_id) : e(P.p_) ? A(Z.Sk, { spaceId: n.rest_id, role: s }) : A(ee, { spaceId: n.rest_id, role: s, shouldAutoJoin: !0 });
                         })
                         .then(
                             (e) => {
                                 const A = n.end();
-                                return E.IM("conferences:join:success", A), e;
+                                return C.IM("conferences:join:success", A), e;
                             },
                             (A) => {
                                 const a = n.end();
-                                E.IM("conferences:join:failure", a);
-                                const { dispatch: o } = e(m.qc);
-                                o((0, f.fz)({ text: "failed to connect to the conference" })), (0, I.Hj)(A);
+                                C.IM("conferences:join:failure", a);
+                                const { dispatch: o } = e(h.qc);
+                                o((0, f.fz)({ text: "failed to connect to the conference" })), (0, v.Hj)(A);
                             },
                         )
-                        .finally(() => A(X, !1));
+                        .finally(() => A(Y, !1));
                 });
-            function U(e) {
+            function V(e) {
                 let A = "live_not_recording";
                 return e?.is_space_available_for_replay && (A = e?.state === c.default.SpaceState.Running ? "live_recording" : "replay"), A;
             }
-            function V(e) {
+            function O(e) {
                 let A;
                 return e?.narrow_cast_space_type === c.default.AudienceEnum.superFollowersOnly ? (A = "super_followers") : e?.narrow_cast_space_type === c.default.AudienceEnum.employeesOnly ? (A = "employees") : e?.community && (A = "community"), A;
             }
-            function O(e) {
-                const { contentType: A, id: a, addToast: n, isAnonymous: o, isLive: r, isReplay: d, isSuperFollowersOnly: t, mediaKey: l, origin: c, scribe: i, started_at: u, role: h = M.Q.listener, clearAndLoadSpace: m, resetExpandedDockStore: p } = e;
+            function L(e) {
+                const { contentType: A, id: a, addToast: n, isAnonymous: o, isLive: r, isReplay: d, isSuperFollowersOnly: t, mediaKey: l, origin: c, scribe: i, started_at: u, role: m = M.Q.listener, clearAndLoadSpace: h, resetExpandedDockStore: p } = e;
                 S.Z.proxsee
                     .login()
                     .then(() => {
-                        l && (r || d) && (D.mc(), p({ contentType: (0, v.dW)(A), isReplay: d, isAnonymous: o, isSuperFollowersOnly: t, started_at: u }), d && i && i(":audiospace:replay:recording:play:click", { origin: c }), m({ id: a, isAnonymous: !!o, isLive: r, mediaKey: l, role: h }), i && i(":audiospace:event:join:listener:success", { origin: c }), c === s.Y.spacebar && i && i(":*:*:*:audiospace_fleet:join", { origin: c }));
+                        l && (r || d) && (D.mc(), p({ contentType: (0, I.dW)(A), isReplay: d, isAnonymous: o, isSuperFollowersOnly: t, started_at: u }), d && i && i(":audiospace:replay:recording:play:click", { origin: c }), h({ id: a, isAnonymous: !!o, isLive: r, mediaKey: l, role: m }), i && i(":audiospace:event:join:listener:success", { origin: c }), c === s.Y.spacebar && i && i(":*:*:*:audiospace_fleet:join", { origin: c }));
                     })
                     .catch(() => {
-                        n && n({ text: L });
+                        n && n({ text: q });
                     });
             }
-            const L = u().c60ed9b0,
-                q = u().d8227e16,
-                $ = (0, r.cn)(null, async (e, A, a) => {
+            const q = u().c60ed9b0,
+                $ = u().d8227e16,
+                ee = (0, r.cn)(null, async (e, A, a) => {
                     const { role: n, spaceId: o } = a,
                         r = await A(k.Yn, a),
                         { can_auto_join: d, session_uuid: t } = r;
@@ -230,7 +228,7 @@
                           })
                         : A(k.K7, o);
                 }),
-                ee = (0, r.cn)(null, async (e, A, a) => {
+                Ae = (0, r.cn)(null, async (e, A, a) => {
                     const n = e(k.F6),
                         r = await n.reconnectHost(a);
                     if (!r?.broadcast) return Promise.reject(new Error("Broadcast call did not return a broadcast!"));
@@ -242,7 +240,7 @@
                         l = e(Z.Eg);
                     return o()(s, "Could not reconnect to space due to lack of publisherId"), n.publishBroadcast({ broadcast_id: a, webrtc_handle_id: l.config.handlerId, webrtc_session_id: l.config.janusSessionId, janus_publisher_id: s, janus_room_id: a });
                 }),
-                Ae = (0, r.cn)(null, async (e, A, a) => {
+                ae = (0, r.cn)(null, async (e, A, a) => {
                     const n = e(k.F6),
                         r = await n.prePublishScheduledAudioBroadcast(a),
                         d = await S.Z.audioSpace(a);
@@ -258,17 +256,17 @@
                         u = e(Z.Eg);
                     return o()(i, "Could not create space due to lack of publisherId"), await n.publishBroadcast({ broadcast_id: a, webrtc_handle_id: u.config.handlerId, webrtc_session_id: u.config.janusSessionId, janus_publisher_id: i, janus_room_id: a, status: s.broadcast.status, conversation_controls: t?.conversation_controls || 0 }), await A(k.TM, { broadcast_id: a, twitter_user_ids: [s.broadcast.twitter_id] }), { broadcast: s.broadcast, audioSpaceMetadata: t };
                 }),
-                ae = (0, r.cn)(null, (e, A, a) => {
+                ne = (0, r.cn)(null, (e, A, a) => {
                     e((0, j.tq)(a)).then((e) => {
                         if (!e || !e.media_key || e.disallow_join) return;
                         const n = e.media_key,
                             o = (e.is_space_available_for_replay && [c.default.SpaceState.Ended, c.default.SpaceState.TimedOut].includes(e.state)) ?? !1;
-                        O({ contentType: e?.content_type, id: a, mediaKey: n, isLive: e.state === c.default.SpaceState.Running, isReplay: o, isAnonymous: !1, isSuperFollowersOnly: e.narrow_cast_space_type === c.default.AudienceEnum.superFollowersOnly, started_at: e?.started_at, origin: void 0, role: M.Q.listener, clearAndLoadSpace: (e) => A(w.e, e), resetExpandedDockStore: (e) => A(b.wM, e) });
+                        L({ contentType: e?.content_type, id: a, mediaKey: n, isLive: e.state === c.default.SpaceState.Running, isReplay: o, isAnonymous: !1, isSuperFollowersOnly: e.narrow_cast_space_type === c.default.AudienceEnum.superFollowersOnly, started_at: e?.started_at, origin: void 0, role: M.Q.listener, clearAndLoadSpace: (e) => A(w.e, e), resetExpandedDockStore: (e) => A(b.wM, e) });
                     });
                 });
         },
         625555: (e, A, a) => {
-            a.d(A, { Bl: () => y, Dn: () => Y, F6: () => z, FS: () => T, FX: () => f, H_: () => R, Ht: () => F, K7: () => b, N8: () => H, NG: () => S, Sd: () => k, TM: () => B, TU: () => x, Vp: () => g, X8: () => E, Yn: () => w, Yy: () => Q, ZN: () => W, bX: () => Z, cH: () => G, fP: () => X, hs: () => j, iq: () => I, oZ: () => _, rc: () => v, re: () => D, t9: () => J, w: () => N, wr: () => M, xB: () => C, yj: () => K });
+            a.d(A, { Bl: () => y, Dn: () => Y, F6: () => z, FS: () => P, FX: () => f, H_: () => R, Ht: () => F, K7: () => b, N8: () => H, NG: () => S, Sd: () => k, TM: () => B, TU: () => x, Vp: () => g, X8: () => C, Yn: () => w, Yy: () => Q, ZN: () => W, bX: () => Z, cH: () => G, fP: () => X, hs: () => j, iq: () => v, oZ: () => _, rc: () => I, re: () => D, t9: () => J, w: () => N, wr: () => M, xB: () => E, yj: () => K });
             var n = a(614983),
                 o = a.n(n),
                 r = a(565058),
@@ -279,10 +277,10 @@
                 c = a(42134),
                 i = a(484633),
                 u = a(390387),
-                h = a(692822),
-                m = a(536387),
+                m = a(692822),
+                h = a(536387),
                 p = a(509599);
-            const D = (0, m.Yh)(),
+            const D = (0, h.Yh)(),
                 M = (0, r.cn)((e) => {
                     if (e(c.lR) && e(D.isInit)) return e(D);
                 }),
@@ -324,24 +322,24 @@
                     const n = e(D);
                     return e((0, p.Go)(a)).then((e) => e.endStream({ session_uuid: n }));
                 }),
-                I = (0, r.cn)(null, (e, A) => {
+                v = (0, r.cn)(null, (e, A) => {
                     const a = e(c.rm);
                     if (!a) return Promise.resolve();
                     const n = (0, u._h)(e(l.qc).getState());
-                    return n ? A(v, a, n) : Promise.resolve();
+                    return n ? A(I, a, n) : Promise.resolve();
                 }),
-                v = (0, r.cn)(null, (e, A, a, n) => {
+                I = (0, r.cn)(null, (e, A, a, n) => {
                     const o = e(D);
                     return e((0, p.Go)(a)).then((e) => e.removeAdmin({ broadcast_id: a, twitter_user_id: n, session_uuid: o }));
                 }),
-                E = (0, r.cn)(null, (e, A, a) => {
+                C = (0, r.cn)(null, (e, A, a) => {
                     const n = e(D);
                     return e((0, p.Go)(a)).then((e) => e.lowerHand({ session_uuid: n, broadcast_id: a }));
                 }),
-                C = "✋",
+                E = "✋",
                 k = (0, r.cn)(null, (e, A, a) => {
                     const n = e(D);
-                    return e((0, p.Go)(a)).then((e) => e.raiseHand({ session_uuid: n, broadcast_id: a, emoji: C }));
+                    return e((0, p.Go)(a)).then((e) => e.raiseHand({ session_uuid: n, broadcast_id: a, emoji: E }));
                 }),
                 B = (0, r.cn)(null, (e, A, a) => e((0, p.Go)(a.broadcast_id)).then((e) => e.adminInvite(a))),
                 R = (0, r.cn)(null, (e, A, a, n, o, r) => e((0, p.Go)(a)).then((e) => e.setSpaceSettings(a, n, o, r))),
@@ -351,21 +349,21 @@
                     const n = e(D);
                     return e((0, p.Go)(a)).then((e) => e.cancelSpeakerRequest(a, n));
                 }),
-                P = (0, r.cn)((e) => {
+                T = (0, r.cn)((e) => {
                     const A = e(c.rm);
                     return A ? e((0, p.Go)(A)) : Promise.resolve(e(K));
                 }),
-                T = (0, r.cn)(null, (e, A, a) => {
+                P = (0, r.cn)(null, (e, A, a) => {
                     const n = e(s.Cl).get(a);
-                    return o()(n, "expected session"), e(P).then((e) => e.approveRequest(n.session_uuid));
+                    return o()(n, "expected session"), e(T).then((e) => e.approveRequest(n.session_uuid));
                 }),
                 j = (0, r.cn)(null, (e, A, a) => {
                     const n = e(s.Cl).get(a);
-                    return o()(n, "expected session"), e(P).then((e) => e.rejectRequest(n.session_uuid));
+                    return o()(n, "expected session"), e(T).then((e) => e.rejectRequest(n.session_uuid));
                 }),
                 Q = (0, r.cn)(null, (e, A, a, n, o) => {
-                    const r = JSON.stringify({ guestBroadcastingEvent: h._M.InviteViewersToCallIn });
-                    return e((0, p.Go)(a)).then((e) => (e.sendPrivateMessage(r, h.gK.HydraControlMessage, o, a), e.inviteToSpeak(n, a)));
+                    const r = JSON.stringify({ guestBroadcastingEvent: m._M.InviteViewersToCallIn });
+                    return e((0, p.Go)(a)).then((e) => (e.sendPrivateMessage(r, m.gK.HydraControlMessage, o, a), e.inviteToSpeak(n, a)));
                 }),
                 N = (0, r.cn)(null, (e, A, a, n) => e((0, p.Go)(a)).then((e) => e.addAdmin({ broadcast_id: a, twitter_user_id: n }))),
                 H = (0, r.cn)(null, (e, A, a, n) => {
@@ -385,7 +383,7 @@
                 K = (0, r.cn)((e) => t.VI);
         },
         136397: (e, A, a) => {
-            a.d(A, { D0: () => P, TP: () => W, ZJ: () => B, _j: () => j });
+            a.d(A, { D0: () => T, TP: () => W, ZJ: () => B, _j: () => j });
             var n = a(202784),
                 o = a(400752),
                 r = a(565058),
@@ -396,8 +394,8 @@
                 c = a(674132),
                 i = a.n(c),
                 u = a(370751),
-                h = a(516951),
-                m = a(741810),
+                m = a(516951),
+                h = a(741810),
                 p = a(614646),
                 D = a(420182),
                 M = a(142202),
@@ -408,10 +406,10 @@
                 _ = a(692822),
                 g = a(526250),
                 S = a(582129),
-                I = a(625555),
-                v = a(4427),
-                E = a(302217),
-                C = a(847982),
+                v = a(625555),
+                I = a(4427),
+                C = a(302217),
+                E = a(847982),
                 k = a(509599);
             function B() {
                 const e = (0, o.b9)(Z),
@@ -428,7 +426,7 @@
             const R = (0, r.cn)([]),
                 Z = (0, r.cn)(null, (e, A, a) => {
                     for (const n of a) {
-                        const a = e(E.Zd);
+                        const a = e(C.Zd);
                         a.log({ message: "askToJoin received", chatMessage: JSON.stringify(n) });
                         const o = n.data.sender;
                         if (!o) continue;
@@ -456,9 +454,9 @@
                     return { clearHeapForMessageType: !0 };
                 }),
                 G = (0, r.cn)(null, (e, A, a) => {
-                    const n = e(v.sB);
+                    const n = e(I.sB);
                     if (!n) return;
-                    const o = e(I.F6);
+                    const o = e(v.F6);
                     o.getConference(n)
                         .then(({ attendees_twitter_user_ids: e }) => o.updateConference({ key: n, attendees_twitter_user_ids: e.concat(a) }))
                         .then(() => A(k.jQ));
@@ -466,7 +464,7 @@
             function x({ displayName: e, username: A }) {
                 return `${e} · @${A} would like to join the conference`;
             }
-            function P() {
+            function T() {
                 const e = (0, o.oR)(),
                     A = (0, b.v9)(y.BZ),
                     a = (0, b.I0)();
@@ -481,7 +479,7 @@
                     return () => n();
                 }, [a, e, A]);
             }
-            const T = (0, r.cn)(
+            const P = (0, r.cn)(
                 null,
                 (e, A, a, n) =>
                     new Promise((o, r) => {
@@ -492,9 +490,9 @@
                             },
                             s = setTimeout(t, 3e4);
                         function l() {
-                            m.E.joinConference(a, { requestToJoin: !0 }).then(
+                            h.E.joinConference(a, { requestToJoin: !0 }).then(
                                 () => {
-                                    A(v.oK, a).then((e) => {
+                                    A(I.oK, a).then((e) => {
                                         A(S.HQ, e), t(), o();
                                     });
                                 },
@@ -522,8 +520,8 @@
                     },
                     [e],
                 );
-                const A = (0, o.b9)(T),
-                    a = (0, o.Dv)(v.sB),
+                const A = (0, o.b9)(P),
+                    a = (0, o.Dv)(I.sB),
                     r = (0, o.b9)(Q);
                 return (
                     (0, o.Dv)(Q),
@@ -549,7 +547,7 @@
             }
             const X = { context: "CONFERENCE_ASK_TO_JOIN" };
             function Y({ userId: e }) {
-                const A = (0, C.$)(e),
+                const A = (0, E.$)(e),
                     a = (0, o.b9)(G),
                     r = n.useCallback(() => {
                         a(e);
@@ -558,11 +556,11 @@
             }
             const J = (0, g.v)((e, A) => {
                     const a = e(R);
-                    if (!a.length) return h.Z;
+                    if (!a.length) return m.Z;
                     const n = e(k.F$),
                         o = new Set(e(k.Xn)),
                         r = a.filter((e) => !n.has(e) && !o.has(e));
-                    return r.length !== a.length && A(R, r), h.Z;
+                    return r.length !== a.length && A(R, r), m.Z;
                 }),
                 z = l.default.create((e) => ({ userCell: { flex: 1 }, prospectiveSpeakerUserRow: { width: "100%", justifyContent: "center" }, prospectiveSpeakerUserRowButtonsContainer: { flexDirection: "row", gap: e.spaces.space16, marginStart: e.spaces.space16, marginEnd: e.spaces.space16, justifyContent: "center" }, prospectiveSpeakerUserRowButton: { flex: 1 } }));
         },
@@ -597,7 +595,7 @@
                 );
         },
         94751: (e, A, a) => {
-            a.d(A, { Fz: () => w, Pm: () => m, U9: () => D, _$: () => y, ce: () => M, qw: () => h });
+            a.d(A, { Fz: () => w, Pm: () => h, U9: () => D, _$: () => y, ce: () => M, qw: () => m });
             var n = a(565058),
                 o = a(516951),
                 r = a(420182),
@@ -608,12 +606,12 @@
                 c = a(811322),
                 i = a(396636),
                 u = a(65178);
-            const h = (0, n.cn)([]),
-                m = (0, n.cn)(""),
+            const m = (0, n.cn)([]),
+                h = (0, n.cn)(""),
                 p =
                     ((0, u.g)(),
                     (0, i.Q)(
-                        () => h,
+                        () => m,
                         (e, A, a) => {
                             if (e(r.zE).get(t.xK)) return A(D, []), o.Z;
                             A(w, !0), A(D, (e) => [...e, a]);
@@ -642,7 +640,7 @@
                                         o = e.data.sender?.twitter_id;
                                     if (!n || !o || !a) return;
                                     const r = { id: a, text: n, timeSent: e.data.timestamp ? e.data.timestamp / 1e6 : 0, userId: o };
-                                    A(h, (e) => [...e, r]);
+                                    A(m, (e) => [...e, r]);
                                 }),
                                 { clearHeapForMessageType: !0 }
                             ),
@@ -654,7 +652,7 @@
                     };
                 }),
                 f = (0, n.cn)(null, (e, A) => {
-                    A(h, []), A(D, []), A(m, "");
+                    A(m, []), A(D, []), A(h, "");
                 });
         },
         41931: (e, A, a) => {
@@ -719,17 +717,17 @@
                             l.save();
                             const c = Math.min(A, a),
                                 i = c / 2,
-                                h = Math.min(n, d),
-                                m = h / 2;
+                                m = Math.min(n, d),
+                                h = m / 2;
                             (function (e, A) {
                                 const { radius: a, x: n, y: o } = A;
                                 e.beginPath(), e.arc(n, o, a, 0, 2 * Math.PI), e.closePath(), e.clip();
-                            })(l, { radius: m, x: t - m, y: 0 + m }),
+                            })(l, { radius: h, x: t - h, y: 0 + h }),
                                 l.translate(t, 0),
                                 l.scale(-1, 1);
                             const p = A / 2 - i,
                                 D = a / 2 - i;
-                            l.drawImage(r, p, D, c, c, 0, 0, h, h), l.restore(), (u = requestAnimationFrame(e));
+                            l.drawImage(r, p, D, c, c, 0, 0, m, m), l.restore(), (u = requestAnimationFrame(e));
                         })(),
                         () => {
                             e(i) === c && A(i, void 0), void 0 !== u && cancelAnimationFrame(u);
@@ -741,4 +739,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-647e57f3.8c33a0fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-647e57f3.cb8e97ca.js.map

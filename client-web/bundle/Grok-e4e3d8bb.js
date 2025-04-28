@@ -9,25 +9,20 @@
                 loader: () =>
                     Promise.all([
                         d.e("icons.5"),
-                        d.e("icons.6"),
-                        d.e("icons.22"),
-                        d.e("icons.25"),
-                        d.e("icons.9"),
-                        d.e("icons.4"),
-                        d.e("icons.15"),
+                        d.e("icons.12"),
                         d.e("icons.20"),
-                        d.e("icons.7"),
                         d.e("icons.0"),
+                        d.e("icons.21"),
+                        d.e("icons.28"),
+                        d.e("icons.17"),
                         d.e("modules.common-e907d115"),
                         d.e("modules.common-e019dbda"),
-                        d.e("icons.11"),
-                        d.e("icons.27"),
-                        d.e("icons.17"),
-                        d.e("icons.12"),
-                        d.e("icons.3"),
-                        d.e("icons.13"),
-                        d.e("icons.24"),
-                        d.e("icons.26"),
+                        d.e("icons.22"),
+                        d.e("icons.9"),
+                        d.e("icons.25"),
+                        d.e("icons.6"),
+                        d.e("icons.10"),
+                        d.e("icons.14"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -52,14 +47,13 @@
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7082ec04"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-c977f3f0"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-bde9e8ed"),
-                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-de203a7b"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-78eb13f6"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-83ae13c2"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                         d.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
                         d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2f4a3d25"),
+                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-34cda585"),
                         d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                         d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                         d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -99,8 +93,8 @@
                         d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-af3d50e9"),
                         d.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Articles~bundle.AudioSpacePeek~bundle.Birdwatch~bundle.Brande"),
                         d.e("shared~loader.Typeahead~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSpacePeek~bundle.Bir"),
-                        d.e("loader.WideLayout-6107ac1a"),
-                        d.e("loader.WideLayout-9f4db315"),
+                        d.e("shared~bundle.JobSearch~bundle.UserJobs~loader.WideLayout"),
+                        d.e("loader.WideLayout"),
                     ]).then(d.bind(d, 616753)),
             });
         },
@@ -109,58 +103,58 @@
             d(543673), d(240753), d(128399), d(571372);
             const r = (e, a = !1, d = !1) =>
                 new Promise((r, o) => {
-                    const n = new URL(e);
-                    d && !e.startsWith("blob:") && n.searchParams.set("grok_timestamp", Date.now().toString());
-                    const t = new window.XMLHttpRequest();
-                    (t.responseType = "blob"),
-                        (t.onreadystatechange = () => {
-                            t.readyState === window.XMLHttpRequest.DONE && (200 === t.status ? r(t.response) : o(new Error("Unexpected status code")));
+                    const t = new URL(e);
+                    d && !e.startsWith("blob:") && t.searchParams.set("grok_timestamp", Date.now().toString());
+                    const n = new window.XMLHttpRequest();
+                    (n.responseType = "blob"),
+                        (n.onreadystatechange = () => {
+                            n.readyState === window.XMLHttpRequest.DONE && (200 === n.status ? r(n.response) : o(new Error("Unexpected status code")));
                         }),
-                        (t.withCredentials = a),
-                        (t.onerror = (e) => o(e)),
-                        (t.ontimeout = (e) => o(e)),
-                        t.open("GET", n.toString(), !0),
-                        t.send();
+                        (n.withCredentials = a),
+                        (n.onerror = (e) => o(e)),
+                        (n.ontimeout = (e) => o(e)),
+                        n.open("GET", t.toString(), !0),
+                        n.send();
                 });
         },
         646403: (e, a, d) => {
             d.d(a, { E: () => o });
             var r = d(420182);
             const o = ({ analytics: e, jotaiStore: a, query: d, responseAtom: o }) => {
-                const n = a.get(r.dd);
-                let t = "";
+                const t = a.get(r.dd);
+                let n = "";
                 return (
-                    n.fetchClient
+                    t.fetchClient
                         .dispatch("/2/grok/search.json", { method: "POST", credentials: "include", body: JSON.stringify({ query: d }) })
                         .then(async (e) => {
                             if (!e.ok) return void a.set(o, (e) => ({ ...e, status: "error" }));
                             const d = e.body?.getReader();
                             if (!d) return void a.set(o, (e) => ({ ...e, status: "error" }));
                             const r = new TextDecoder();
-                            let n = "";
+                            let t = "";
                             return (async function e({ done: i, value: s }) {
                                 const l = a.get(o);
-                                if (i) t ? a.set(o, (e) => ({ ...e, status: "completed" })) : a.set(o, (e) => ({ ...e, status: "error" }));
+                                if (i) n ? a.set(o, (e) => ({ ...e, status: "completed" })) : a.set(o, (e) => ({ ...e, status: "error" }));
                                 else if (s) {
                                     const i = r.decode(s);
-                                    if (((n += i), n.includes("\n"))) {
-                                        const e = n.split("\n");
-                                        n = e.pop();
+                                    if (((t += i), t.includes("\n"))) {
+                                        const e = t.split("\n");
+                                        t = e.pop();
                                         for (const d of e)
                                             try {
                                                 const e = JSON.parse(d);
                                                 "error" === e.result?.responseType && a.set(o, { ...l, status: "error" }), e.result?.event?.universalSearch?.decision && a.set(o, (e) => ({ ...e, status: "streaming" }));
                                                 const r = e.result?.event?.universalSearch?.id;
                                                 r && a.set(o, (e) => ({ ...e, universalSearchId: r }));
-                                                const n = e.result?.citedWebResults;
-                                                n && n.length > 0 && a.set(o, (e) => ({ ...e, citedWebResults: n }));
+                                                const t = e.result?.citedWebResults;
+                                                t && t.length > 0 && a.set(o, (e) => ({ ...e, citedWebResults: t }));
                                                 const i = e.result?.followUpSuggestions;
-                                                i && a.set(o, (e) => ({ ...e, followUpSuggestions: i })), e.result?.message && !e.result?.postIds && (t += e.result?.message);
+                                                i && a.set(o, (e) => ({ ...e, followUpSuggestions: i })), e.result?.message && !e.result?.postIds && (n += e.result?.message);
                                                 const s = e.result?.imageAttachment;
                                                 s && a.set(o, (e) => ({ ...e, fileAttachments: [...e.fileAttachments, { fileName: s.fileName, mimeType: s.mimeType, url: s.imageUrl, mediaId: s.mediaIdStr }] }));
                                             } catch (e) {}
                                     }
-                                    if ((a.set(o, (e) => ({ ...e, text: t })), d)) {
+                                    if ((a.set(o, (e) => ({ ...e, text: n })), d)) {
                                         return e(await d.read());
                                     }
                                 }
@@ -178,8 +172,8 @@
             d(136728), d(875640);
             var r = d(565058),
                 o = d(323265),
-                n = d(791005),
-                t = d.n(n),
+                t = d(791005),
+                n = d.n(t),
                 i = d(420182),
                 s = d(155918),
                 l = d(623494),
@@ -250,12 +244,12 @@
                     const d = { message: this._store.get(this.prompt) ?? "", sender: s.CI.HUMAN },
                         r = this._store.get(i.dd);
                     if (!("POST_COMPOSER_IMAGE_GEN" === this.promptSource || "POST_COMPOSER_TEXT_GEN" === this.promptSource) && !this.conversationId) {
-                        const a = await r.apiClient.graphQL(t(), {});
+                        const a = await r.apiClient.graphQL(n(), {});
                         if (((this.conversationId = a.create_grok_conversation?.conversation_id || ""), !this.conversationId)) return void (0, l.Uk)(e, "conversation couln't be found or created");
                     }
-                    const n = this.userChatItemId ? "REGENERATE" : "INPUT";
+                    const t = this.userChatItemId ? "REGENERATE" : "INPUT";
                     let u;
-                    (u = "POST_COMPOSER_IMAGE_GEN" === this.promptSource ? { promptSource: "POST_COMPOSER_IMAGE_GEN", action: n } : "POST_COMPOSER_TEXT_GEN" === this.promptSource ? { promptSource: "POST_COMPOSER_TEXT_GEN", action: n } : { promptSource: "NATURAL", action: n }), a && a.toolOverrides && (this.toolOverrides = a.toolOverrides);
+                    (u = "POST_COMPOSER_IMAGE_GEN" === this.promptSource ? { promptSource: "POST_COMPOSER_IMAGE_GEN", action: t } : "POST_COMPOSER_TEXT_GEN" === this.promptSource ? { promptSource: "POST_COMPOSER_TEXT_GEN", action: t } : { promptSource: "NATURAL", action: t }), a && a.toolOverrides && (this.toolOverrides = a.toolOverrides);
                     const c = { responses: [d], conversationId: this.conversationId || void 0, grokModelOptionId: this.model || "", systemPromptName: "", imageGenerationCount: this.imageGenerationCount, promptMetadata: u, resampleResponseId: this.userChatItemId, toolOverrides: this.toolOverrides || {} };
                     (0, l.pv)(e, { conversationLength: 1, isFileAttached: !1 }), this.updateMessage(""), a && a.onStart && a.onStart();
                     const b = this._store.get(i.f0),
@@ -263,7 +257,7 @@
                     p({ api: r, analytics: e, requestBody: c, atoms: this, eventTag: this.userChatItemId ? "regenerate" : "", enableGrokApiHost: h });
                 }
             }
-            const p = ({ analytics: e, api: a, atoms: d, enableGrokApiHost: r, eventTag: n, requestBody: t }) => {
+            const p = ({ analytics: e, api: a, atoms: d, enableGrokApiHost: r, eventTag: t, requestBody: n }) => {
                 const i = (function () {
                         const e = `grok-${o.ZP.isTwitterApp() ? (o.ZP.isAndroid() ? "android" : "ios") : "web"}:api-handler`,
                             a = u.P_();
@@ -271,25 +265,25 @@
                             u.IM(`${e}:${d}`, a.end());
                         }
                         const r = new Set();
-                        function n(e) {
+                        function t(e) {
                             r.has(e) || (r.add(e), d(e));
                         }
-                        return { record: d, recordOnce: n };
+                        return { record: d, recordOnce: t };
                     })(),
-                    s = n ? ` (${n})` : "";
+                    s = t ? ` (${t})` : "";
                 let c = "",
                     b = !1;
                 return (
                     d.updateState("loading"),
                     a.fetchClient
-                        .dispatch("/2/grok/add_response.json", { method: "POST", credentials: "include", body: JSON.stringify(t), signal: d.abortController?.signal }, r ? "https://grok.x.com" : void 0)
+                        .dispatch("/2/grok/add_response.json", { method: "POST", credentials: "include", body: JSON.stringify(n), signal: d.abortController?.signal }, r ? "https://grok.x.com" : void 0)
                         .then(async (a) => {
                             if (!a.ok) return i.record(`http-${a.status}`), d.updateState("error"), void (0, l.Uk)(e, `add-response failed with status ${a.status}${s}`);
                             const r = a.body?.getReader();
                             if (!r) return d.updateState("error"), void (0, l.Uk)(e, `reader was not found${s}`);
                             d.updateState("streaming");
                             const o = new TextDecoder();
-                            let n = "";
+                            let t = "";
                             const u = setTimeout(() => {
                                     (0, l.eS)(e, !0);
                                 }, 5e3),
@@ -301,15 +295,15 @@
                                     else if (p) {
                                         i.recordOnce("time-to-first-chunk");
                                         const s = o.decode(p);
-                                        if (((n += s), n.includes("\n"))) {
-                                            const a = n.split("\n");
-                                            n = a.pop();
+                                        if (((t += s), t.includes("\n"))) {
+                                            const a = t.split("\n");
+                                            t = a.pop();
                                             for (const r of a)
                                                 try {
                                                     const e = JSON.parse(r);
                                                     if ((e.userChatItemId && (d.userChatItemId = e.userChatItemId), e.result?.upsell && d.updateUpsell(e.result.upsell), e.result?.postIds || (e.result?.message && ((c += e.result.message), d.updateMessage(c))), "error" === e.result?.responseType && d.clearAttachments(), e.result?.imageAttachmentCount)) {
                                                         let a = e.result.imageAttachmentCount;
-                                                        t.imageGenerationCount && (a = Math.min(a, t.imageGenerationCount)), d.setAttachmentCount(a);
+                                                        n.imageGenerationCount && (a = Math.min(a, n.imageGenerationCount)), d.setAttachmentCount(a);
                                                     }
                                                     const a = e.result?.event;
                                                     if ((a && a.imageAttachmentUpdate && ((b = !0), d.addImageAttachmentUpdate({ imageIdStr: a.imageAttachmentUpdate.imageIdStr, imageId: a.imageAttachmentUpdate.imageId, progress: a.imageAttachmentUpdate.progress / 100, imageUrl: a.imageAttachmentUpdate.imageUrl })), "image" === e.result?.responseType || e.result?.imageAttachment?.imageUrl)) {
@@ -342,8 +336,8 @@
             d.d(a, { C_: () => S, I5: () => h, K2: () => D, L$: () => l, Rb: () => m, nk: () => p, sI: () => f, xr: () => A });
             var r = d(202784),
                 o = d(483677),
-                n = d(782578),
-                t = d(393058),
+                t = d(782578),
+                n = d(393058),
                 i = d(521514);
             const s = (e, a) => `rgba(${e.rgb.red}, ${e.rgb.green}, ${e.rgb.blue}, ${a})`,
                 l = (e) => {
@@ -355,13 +349,13 @@
                 b = { rgb: "rgb(0, 0, 0)", rgba: "rgba(0, 0, 0, 0.9)" },
                 p = { transitionProperty: "background-color", transitionDuration: ".5s" },
                 h = (e, a) => {
-                    const { containerHeight: d, containerWidth: r, mediaHeight: o, mediaWidth: t } = e,
-                        i = t && o ? t / o : 1,
+                    const { containerHeight: d, containerWidth: r, mediaHeight: o, mediaWidth: n } = e,
+                        i = n && o ? n / o : 1,
                         s = i > 1,
                         l = a ? 400 : u,
-                        b = s && t <= l ? c(r, l) : r,
+                        b = s && n <= l ? c(r, l) : r,
                         p = !s && o <= l ? c(d, l) : d;
-                    return n.Z.getContainDimensions({ width: b, height: p }, i);
+                    return t.Z.getContainDimensions({ width: b, height: p }, i);
                 },
                 m = (e) => {
                     const a = e && e.ext_media_color && e.ext_media_color.palette;
@@ -394,30 +388,30 @@
                             a({ type: "zoom", payload: { isZoomed: e } });
                         },
                         handleMediaItemTapped: function () {
-                            t.Z.isTouchSupported() && a({ type: "tap" });
+                            n.Z.isTouchSupported() && a({ type: "tap" });
                         },
                     };
                 };
         },
         584770: (e, a, d) => {
-            d.d(a, { Z: () => t });
+            d.d(a, { Z: () => n });
             var r = d(202784),
                 o = d(443781),
-                n = d(337394);
-            const t = () => {
+                t = d(337394);
+            const n = () => {
                 const { userClaims: e } = r.useContext(o.rC);
-                return !n.cX.some((a) => e.hasSubscription(a)) && (e.hasSubscription("premium_standard") || e.hasSubscription("premium_basic"));
+                return !t.cX.some((a) => e.hasSubscription(a)) && (e.hasSubscription("premium_standard") || e.hasSubscription("premium_basic"));
             };
         },
         15334: (e, a, d) => {
-            d.d(a, { u: () => n });
+            d.d(a, { u: () => t });
             var r = d(202784),
                 o = d(443781);
-            const n = () => {
+            const t = () => {
                 const { userClaims: e } = r.useContext(o.rC);
                 return e.hasSubscription("verified_org_full_access") || e.hasSubscription("verified_org_basic") || e.hasSubscription("verified_org_free") || e.hasSubscription("verified_org_gov_paid") || e.hasSubscription("verified_org_gov_paid") || e.hasSubscription("verified_org_legacy") || e.hasSubscription("verified_org_affiliate") || e.hasSubscription("verified_org_gov_affiliate") || e.hasSubscription("premium_plus") ? "premium_plus" : e.hasSubscription("premium_standard") ? "premium_standard" : e.hasSubscription("premium_basic") ? "premium_basic" : "free";
             };
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-e4e3d8bb.9cb0a9ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-e4e3d8bb.79328aba.js.map

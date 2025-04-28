@@ -3,12 +3,12 @@
     ["loader.AppModules-e4e3d8bb"],
     {
         392884: (e, t, i) => {
-            i.r(t), i.d(t, { AppInstallOnLandingPrompt: () => Ce, AudioModule: () => ze, BottomCookieBannerPicker: () => Se, ColumnFromPath: () => Be, ColumnTimelineAdapter: () => Ge, DtabBar: () => Ee, GlobalKeyboardShortcuts: () => Le, IntercomStarter: () => Ie, JetfuelDevBar: () => ke, LeaveSite: () => Ve, LivePipeline: () => Ae, LoggedOutNotifications: () => $e, ModalSheet: () => De, Toast: () => Te, appReloader: () => Oe, badgeTimers: () => Me, bindKeyboardShortcuts: () => Ue, getScreenReaderShortcutsDataAttribute: () => Ne, ie11Reflower: () => Pe, initGeoLocation: () => Fe, inputDetect: () => we, multiAccountListFetcher: () => Re, redirectEmailUser: () => Ze, scribeExternalReferer: () => xe, userPresence: () => je });
+            i.r(t), i.d(t, { AppInstallOnLandingPrompt: () => Ce, AudioModule: () => ze, BottomCookieBannerPicker: () => Se, ColumnFromPath: () => Be, ColumnTimelineAdapter: () => Ge, DtabBar: () => Ee, GlobalKeyboardShortcuts: () => Le, IntercomStarter: () => Ie, JetfuelDevBar: () => ke, LeaveSite: () => Ve, LivePipeline: () => Ae, LoggedOutNotifications: () => $e, ModalSheet: () => De, Toast: () => Te, appReloader: () => Oe, badgeTimers: () => Me, bindKeyboardShortcuts: () => Pe, getScreenReaderShortcutsDataAttribute: () => Ne, ie11Reflower: () => Re, initGeoLocation: () => Fe, inputDetect: () => we, multiAccountListFetcher: () => Ze, redirectEmailUser: () => Ue, scribeExternalReferer: () => xe, userPresence: () => je });
             var r = {};
             i.r(r), i.d(r, { KEYBOARD: () => O, MOUSE: () => M, _private: () => H, detectedType: () => F, detectedTypes: () => z, initialize: () => C, register: () => j, registerEvery: () => V, registerSome: () => $, reset: () => G, unregister: () => B });
             var s = i(567447),
-                n = i(32399),
-                o = i(105019),
+                o = i(32399),
+                n = i(105019),
                 a = i(223543),
                 c = i(80309),
                 d = i(642028),
@@ -47,9 +47,9 @@
                 T = i.n(D);
             const O = "keyboard",
                 M = "mouse";
-            let U = [];
-            const P = { [O]: !1, [M]: !1 };
-            class R {
+            let P = [];
+            const R = { [O]: !1, [M]: !1 };
+            class Z {
                 constructor(e) {
                     (this._handleTimerEnd = () => {
                         this._count >= 3 && this._handleDetected(), this._reset();
@@ -73,12 +73,12 @@
                         (this._count = 0);
                 }
             }
-            class Z {
+            class U {
                 constructor(e) {
                     (this._handleKeyDown = (e) => {
                         const { altKey: t, ctrlKey: i, metaKey: r, target: s } = e;
-                        var n;
-                        (!(t || i || r) && ((n = s) instanceof HTMLInputElement || n instanceof HTMLTextAreaElement)) || (this.detach(), this.detected());
+                        var o;
+                        (!(t || i || r) && ((o = s) instanceof HTMLInputElement || o instanceof HTMLTextAreaElement)) || (this.detach(), this.detected());
                     }),
                         (this.attach = () => {
                             document.addEventListener("keydown", this._handleKeyDown);
@@ -90,37 +90,37 @@
                 }
             }
             function x(e) {
-                P[e] = !0;
-                const t = U.filter(({ matches: e }) => e()),
-                    i = U.filter(({ matches: e }) => !e());
-                (U = i), t.forEach(({ callback: e }) => e());
+                R[e] = !0;
+                const t = P.filter(({ matches: e }) => e()),
+                    i = P.filter(({ matches: e }) => !e());
+                (P = i), t.forEach(({ callback: e }) => e());
             }
             let N;
             const C = () => {
-                    (N = [new Z(() => x(O)), new R(() => x(M))]), N.forEach((e) => e.attach());
+                    (N = [new U(() => x(O)), new Z(() => x(M))]), N.forEach((e) => e.attach());
                 },
-                z = () => Object.keys(P).filter((e) => P[e]),
-                F = (e) => P[e],
+                z = () => Object.keys(R).filter((e) => R[e]),
+                F = (e) => R[e],
                 j = (e, t) => {
-                    const i = () => P[t];
-                    i() ? T()(e) : U.push({ matches: i, callback: e });
+                    const i = () => R[t];
+                    i() ? T()(e) : P.push({ matches: i, callback: e });
                 },
                 $ = (e, t) => {
-                    const i = () => t.some((e) => P[e]);
-                    i() ? T()(e) : U.push({ matches: i, callback: e });
+                    const i = () => t.some((e) => R[e]);
+                    i() ? T()(e) : P.push({ matches: i, callback: e });
                 },
                 V = (e, t) => {
-                    const i = () => t.every((e) => P[e]);
-                    i() ? T()(e) : U.push({ matches: i, callback: e });
+                    const i = () => t.every((e) => R[e]);
+                    i() ? T()(e) : P.push({ matches: i, callback: e });
                 },
                 B = (e) => {
-                    const t = U.indexOf(e);
-                    t > -1 && U.splice(t, 1);
+                    const t = P.indexOf(e);
+                    t > -1 && P.splice(t, 1);
                 },
                 G = () => {
-                    (U = []),
-                        Object.keys(P).forEach((e) => {
-                            P[e] = !1;
+                    (P = []),
+                        Object.keys(R).forEach((e) => {
+                            R[e] = !1;
                         }),
                         N.forEach((e) => e.detach());
                 },
@@ -163,24 +163,24 @@
                 ie = (i(571372), i(543673), i(240753), i(128399), i(2027)),
                 re = i(446914),
                 se = i(88656);
-            let ne;
-            const oe = {
+            let oe;
+            const ne = {
                     isSupported: (e) => "EventSource" in window && e.isTrue("livepipeline_client_enabled"),
                     isSupportedAndReady(e) {
-                        return this.isSupported(e) && !!ne;
+                        return this.isSupported(e) && !!oe;
                     },
                     create(e, t, i) {
                         if (!this.isSupported(e)) throw new Error("This browser does not support LivePipeline");
-                        if (ne) throw new Error("LivePipeline should only be initialized once");
+                        if (oe) throw new Error("LivePipeline should only be initialized once");
                         return (
-                            (ne = new ie.Z({
+                            (oe = new ie.Z({
                                 makeEventSource: (e) => {
                                     const t = ((e) => {
                                         const t = e.map(encodeURIComponent).join(","),
                                             r = (e) => `${e}/live_pipeline/events?topic=${t}`,
                                             s = r(window.location.hostname.endsWith("twitter.com") ? "https://api.twitter.com" : "https://api.x.com"),
-                                            n = i.getReplacementHost(new URL(s));
-                                        return n ? r(`https://${n}`) : s;
+                                            o = i.getReplacementHost(new URL(s));
+                                        return o ? r(`https://${o}`) : s;
                                     })(e);
                                     return Promise.resolve(new window.EventSource(t, { withCredentials: !0 }));
                                 },
@@ -190,21 +190,21 @@
                                         .updateSubscriptions(e)
                                         .catch((e) => {
                                             if (e)
-                                                if (e instanceof se.Z && (0, v.VZ)(e, v.ZP.SessionNotFound)) ne && ne.restartEventSource();
+                                                if (e instanceof se.Z && (0, v.VZ)(e, v.ZP.SessionNotFound)) oe && oe.restartEventSource();
                                                 else if (!(e instanceof se.Z) && e instanceof Error) return Promise.reject(e);
                                             return Promise.resolve();
                                         }),
                             })),
                             f.Z.addEventListener("change", (e) => this._handleAppStateChange(e)),
-                            ne
+                            oe
                         );
                     },
                     get() {
-                        if (!ne) throw new Error("LivePipeline instance has not been initialized");
-                        return ne;
+                        if (!oe) throw new Error("LivePipeline instance has not been initialized");
+                        return oe;
                     },
                     destroy() {
-                        ne && ne.teardown(), (ne = void 0);
+                        oe && oe.teardown(), (oe = void 0);
                     },
                     _handleAppStateChange(e) {
                         "active" === e ? this.get().resume() : this.get().suspend();
@@ -239,22 +239,22 @@
             const be = { page: "external", action: "referred" },
                 ye = (e, t, i, r) => {
                     const s = (e) => r.dispatch((0, S.zr)(e)({})),
-                        n = fe.zI({ featureSwitches: t, query: de.default && de.default.location.query });
-                    if ((0, pe.Z)(n)) return Promise.resolve();
-                    if (n.referer && !ve.ZP.isExternalUrl(n.referer) && !ve.ZP.isInternalRedirect(n.referer)) return Promise.resolve();
-                    n.referer || (n.referer = ""), n.referral_details_str || (n.referral_details_str = ""), n.referral_type || (n.referral_type = 0);
-                    const o = (0, ge.hZ)(t);
-                    o && (n.external_referer_cookie_value = o);
-                    const a = fe.ti(n),
+                        o = fe.zI({ featureSwitches: t, query: de.default && de.default.location.query });
+                    if ((0, pe.Z)(o)) return Promise.resolve();
+                    if (o.referer && !ve.ZP.isExternalUrl(o.referer) && !ve.ZP.isInternalRedirect(o.referer)) return Promise.resolve();
+                    o.referer || (o.referer = ""), o.referral_details_str || (o.referral_details_str = ""), o.referral_type || (o.referral_type = 0);
+                    const n = (0, ge.hZ)(t);
+                    n && (o.external_referer_cookie_value = n);
+                    const a = fe.ti(o),
                         c = { ...be, client: (0, _e.Z)().clientName };
-                    o && a && (c.action = "set_access_referer_cookie");
-                    const d = i.createEventObject(c, "client_event", n),
+                    n && a && (c.action = "set_access_referer_cookie");
+                    const d = i.createEventObject(c, "client_event", o),
                         l = i.createPayload([d]);
                     let u;
-                    u = n
+                    u = o
                         ? e
                               .withEndpoint(me.Z)
-                              .referer({ landing_url: n.url, referral_details: n.referral_details_str || void 0, referrer_url: n.referer || void 0 })
+                              .referer({ landing_url: o.url, referral_details: o.referral_details_str || void 0, referrer_url: o.referer || void 0 })
                               .catch(() => s("OCF_EXTERNAL_REFERER"))
                         : Promise.resolve();
                     const p = e
@@ -267,21 +267,21 @@
                     return Promise.all([p, u]);
                 },
                 we = r,
-                Se = o.Z,
+                Se = n.Z,
                 Ee = a.Z,
                 ke = l.Z,
                 Ie = d.Z,
                 Le = c.ZP,
-                Ae = oe,
+                Ae = ne,
                 De = s.Z,
                 Te = h.Z,
                 Oe = m,
                 Me = I,
-                Ue = function (e, t) {
+                Pe = function (e, t) {
                     const i = Object.keys(e);
                     let r,
                         s = !1;
-                    const n = () => {
+                    const o = () => {
                         s ||
                             ((r = A()(t)),
                             i.forEach((t) =>
@@ -296,18 +296,18 @@
                             ));
                     };
                     return (
-                        $(n, [O, M]),
+                        $(o, [O, M]),
                         () => {
-                            (s = !0), B(n), r && r.unbind(i);
+                            (s = !0), B(o), r && r.unbind(i);
                         }
                     );
                 },
-                Pe = ee,
-                Re = ae,
-                Ze = ue,
+                Re = ee,
+                Ze = ae,
+                Ue = ue,
                 xe = ye,
                 Ne = te.wR,
-                Ce = n.Z,
+                Ce = o.Z,
                 ze = _.w,
                 Fe = Y,
                 je = ce.Z,
@@ -317,38 +317,38 @@
                 Ge = null;
         },
         944681: (e, t, i) => {
-            i.d(t, { k: () => s, Q: () => n });
+            i.d(t, { k: () => s, Q: () => o });
             const r = (e, t, i) => {
                     const r = new Date();
                     let s = r.getFullYear() - e;
-                    const n = r.getMonth() + 1 - t;
-                    if (n < 0) s -= 1;
-                    else if (0 === n) {
+                    const o = r.getMonth() + 1 - t;
+                    if (o < 0) s -= 1;
+                    else if (0 === o) {
                         r.getDate() - i < 0 && (s -= 1);
                     }
                     return s;
                 },
                 s = (e, t, i, s = !1) => (e && t && i ? r(e, t, i) < 18 : s),
-                n = () => new Date().getFullYear() - 120;
+                o = () => new Date().getFullYear() - 120;
         },
         396987: (e, t, i) => {
-            i.d(t, { QF: () => a, Qo: () => c, hZ: () => o });
+            i.d(t, { QF: () => a, Qo: () => c, hZ: () => n });
             var r = i(918621);
             const s = "external_referer",
-                n = 604800;
-            function o(e) {
+                o = 604800;
+            function n(e) {
                 return (0, r.ej)({ cookieName: s, featureSwitches: e });
             }
             function a(e, t) {
                 const i = (t && t.encryptedReferralDetails) || "",
-                    o = (t && t.encryptedReferer) || "",
+                    n = (t && t.encryptedReferer) || "",
                     a = t && void 0 !== t.referralType ? `${t.referralType}` : "";
-                if (!i && !o && !a) return;
-                const c = `${encodeURIComponent(o)}|${a}|${encodeURIComponent(i)}`;
-                (0, r.d8)(s, c, { cookieOptions: { maxAge: n, encode: (e) => e }, featureSwitches: e });
+                if (!i && !n && !a) return;
+                const c = `${encodeURIComponent(n)}|${a}|${encodeURIComponent(i)}`;
+                (0, r.d8)(s, c, { cookieOptions: { maxAge: o, encode: (e) => e }, featureSwitches: e });
             }
             const c = (e) => {
-                const t = o(e);
+                const t = n(e);
                 if (t && t.split("|").length > 1) {
                     const e = t.split("|");
                     return { encryptedReferer: e[0], referralType: e[1], encryptedReferralDetails: e[2] };
@@ -360,8 +360,8 @@
             i(396987), i(875640);
             var r = i(401388),
                 s = i(2430),
-                n = i(782826);
-            const o = Object.freeze({ Web: 0, Email: 1, Partner: 2, Market: 3, Access: 4 });
+                o = i(782826);
+            const n = Object.freeze({ Web: 0, Email: 1, Partner: 2, Market: 3, Access: 4 });
             function a(e) {
                 let t = {};
                 const { emptyIfServerRendered: i = !0 } = e;
@@ -406,7 +406,7 @@
                           })(e.featureSwitches)),
                     _)
                 )
-                    t = { referral_type: o.Web, referral_details_str: _ };
+                    t = { referral_type: n.Web, referral_details_str: _ };
                 else if ("email" === g || u) {
                     let e;
                     try {
@@ -415,19 +415,19 @@
                         e = "invalid";
                     }
                     const i = ["twcamp^email", p && `twsrc^${p}`, b && `twcon^${b}`, u && `twterm^${u}`, `twgr^${e}`].filter(Boolean).join("|");
-                    t = { referral_type: o.Email, referral_details_str: i };
+                    t = { referral_type: n.Email, referral_details_str: i };
                 } else if (v) {
                     const e = w[v];
-                    e && (t = { referral_type: o.Web, referral_details_str: e });
-                } else m ? (t = { referral_type: o.Partner, referral_details_str: `twsrc^${m}` }) : a && n.ZP.isExternalUrl(a) && (t = { referral_type: o.Web });
+                    e && (t = { referral_type: n.Web, referral_details_str: e });
+                } else m ? (t = { referral_type: n.Partner, referral_details_str: `twsrc^${m}` }) : a && o.ZP.isExternalUrl(a) && (t = { referral_type: n.Web });
                 let S = f ?? h ?? y ?? a;
                 return S.length > 256 && (S = S.substring(0, 256)), S && (t = { ...t, referer: S }), (0, r.Z)(t) || (t = { ...t, url: d }), t;
             }
             function c(e) {
-                return e.referral_type === o.Access;
+                return e.referral_type === n.Access;
             }
             function d(e) {
-                return e.referral_type === o.Web;
+                return e.referral_type === n.Web;
             }
         },
         355335: (e, t, i) => {
@@ -435,13 +435,13 @@
             i(543673), i(240753), i(128399), i(136728);
             var r = i(202784),
                 s = i(565058),
-                n = i(400752),
-                o = i(107267);
+                o = i(400752),
+                n = i(107267);
             const a = (0, s.cn)(!1),
                 c = () => {
-                    const e = (0, o.useHistory)(),
-                        t = (0, o.useLocation)(),
-                        [i, s] = (0, n.KO)(a);
+                    const e = (0, n.useHistory)(),
+                        t = (0, n.useLocation)(),
+                        [i, s] = (0, o.KO)(a);
                     r.useEffect(() => {
                         const e = new URLSearchParams(t.search).get("jfDev"),
                             i = sessionStorage.getItem("jfDev");
@@ -452,8 +452,8 @@
                         (i) => {
                             const r = new URLSearchParams(t.search);
                             i ? (r.set("jfDev", "1"), sessionStorage.setItem("jfDev", "true")) : (r.delete("jfDev"), sessionStorage.removeItem("jfDev"));
-                            const n = r.toString();
-                            e.push({ pathname: t.pathname, search: n }), s(i);
+                            const o = r.toString();
+                            e.push({ pathname: t.pathname, search: o }), s(i);
                         },
                         [e, t.pathname, t.search, s],
                     );
@@ -472,39 +472,39 @@
             i.d(t, { OX: () => p, Od: () => l, PN: () => h, uq: () => d, wR: () => _ });
             var r = i(251067),
                 s = i(522171),
-                n = i(674132),
-                o = i.n(n),
+                o = i(674132),
+                n = i.n(o),
                 a = i(912021),
                 c = i(323265);
             const d = Object.freeze({ toggleCommandCenter: "mod+k", openKeyboardShortcuts: "?", swipeLeft: "left", swipeRight: "right", nextItem: "j", previousItem: "k", refresh: ".", nightMode: "z", bookmark: "b", block: "x", mute: "u", newTweet: "n", newMessage: "m", toggleDMDrawer: "i", goHome: "g h", goExplore: "g e", goNotifications: "g n", goMentions: "g r", goProfile: "g p", goLikes: "g l", goLists: "g i", goMessages: "g m", goGrok: "g g", goToDrafts: "g f", goToScheduled: "g t", goSettings: "g s", goToUser: "g u", goBookmarks: "g b", goTopArticles: "g a", goDisplay: "g d", search: "/", audio: { dock: "a d", play: "a space", mute: "a m" }, video: { play1: "k", play2: "space", mute: "m" }, columns: { createNewColumn: "c n", duplicateColumn: "c d", focusOnReorderButton: "c r", lastColumn: "c 0", nextColumn: "]", nthColumn: "c 1..9", prevColumn: "[", removeColumn: "c backspace", toggleColumnOptions: "c o", undoRemoveColumn: "c u" }, decks: { createNewDeck: "d n", editActiveDeck: "d e", lastPinnedDeck: "d 0", manageAllDecks: "d m", nthPinnedDeck: "d 1..9" }, labs: { openCommandCenter: ">" } }),
                 l = (0, a.Z)((e) => {
-                    const t = e ? [{ description: o().b7fa0cfe, keys: d.goTopArticles, universal: !1 }] : [];
-                    return [...((0, r.fH)(r.vw.prod) ? [] : [{ description: "Toggle Command Center", keys: `${u} k`, universal: !1 }]), { description: o().d5696fcc, keys: d.openKeyboardShortcuts, universal: !0 }, { description: o().a83d4280, keys: d.nextItem, universal: !0 }, { description: o().g0048656, keys: d.previousItem, universal: !0 }, { description: o().a690c4d0, keys: "Space", universal: !0 }, { description: o().e893811a, keys: d.refresh, universal: !1 }, { description: o().ha8209bc, keys: d.goHome, universal: !1 }, { description: o().fcf3e54c, keys: d.goExplore, universal: !0 }, { description: o().eb75875e, keys: d.goNotifications, universal: !1 }, { description: o().cdb53d7a, keys: d.goMentions, universal: !1 }, { description: o().fa98627a, keys: d.goProfile, universal: !1 }, { description: o().d4ebc798, keys: d.goToDrafts, universal: !1 }, { description: o().fd6a3f30, keys: d.goToScheduled, universal: !1 }, { description: o().d7b8ebaa, keys: d.goLikes, universal: !1 }, { description: o().b0041756, keys: d.goLists, universal: !1 }, { description: o().d4986f86, keys: d.goMessages, universal: !1 }, { description: o().h5860a68, keys: d.goGrok, universal: !1 }, { description: o().bb081ea2, keys: d.goSettings, universal: !0 }, { description: o().i3145aa0, keys: d.goBookmarks, universal: !1 }, ...t, { description: o().eee2ed92, keys: d.goToUser, universal: !0 }, { description: o().ee5ccf3e, keys: d.goDisplay, universal: !1 }];
+                    const t = e ? [{ description: n().b7fa0cfe, keys: d.goTopArticles, universal: !1 }] : [];
+                    return [...((0, r.fH)(r.vw.prod) ? [] : [{ description: "Toggle Command Center", keys: `${u} k`, universal: !1 }]), { description: n().d5696fcc, keys: d.openKeyboardShortcuts, universal: !0 }, { description: n().a83d4280, keys: d.nextItem, universal: !0 }, { description: n().g0048656, keys: d.previousItem, universal: !0 }, { description: n().a690c4d0, keys: "Space", universal: !0 }, { description: n().e893811a, keys: d.refresh, universal: !1 }, { description: n().ha8209bc, keys: d.goHome, universal: !1 }, { description: n().fcf3e54c, keys: d.goExplore, universal: !0 }, { description: n().eb75875e, keys: d.goNotifications, universal: !1 }, { description: n().cdb53d7a, keys: d.goMentions, universal: !1 }, { description: n().fa98627a, keys: d.goProfile, universal: !1 }, { description: n().d4ebc798, keys: d.goToDrafts, universal: !1 }, { description: n().fd6a3f30, keys: d.goToScheduled, universal: !1 }, { description: n().d7b8ebaa, keys: d.goLikes, universal: !1 }, { description: n().b0041756, keys: d.goLists, universal: !1 }, { description: n().d4986f86, keys: d.goMessages, universal: !1 }, { description: n().h5860a68, keys: d.goGrok, universal: !1 }, { description: n().bb081ea2, keys: d.goSettings, universal: !0 }, { description: n().i3145aa0, keys: d.goBookmarks, universal: !1 }, ...t, { description: n().eee2ed92, keys: d.goToUser, universal: !0 }, { description: n().ee5ccf3e, keys: d.goDisplay, universal: !1 }];
                 }),
                 u = c.ZP.isMac() ? "⌘" : "CTRL",
                 p = () => [
-                    { description: o().ab3d53f8, keys: d.newTweet, universal: !1 },
-                    { description: o().de94bda6, keys: `${u} Enter`, universal: !1 },
-                    { description: o().e736990a, keys: d.newMessage, universal: !1 },
-                    { description: o().a9ae1e78, keys: d.search, universal: !0 },
-                    { description: o().fe731016, keys: s.Z.shortcuts.like, universal: !1 },
-                    { description: o().d17df548, keys: s.Z.shortcuts.reply, universal: !1 },
-                    { description: o().g062295e, keys: s.Z.shortcuts.retweet, universal: !1 },
-                    { description: o().h01621a4, keys: s.Z.shortcuts.share, universal: !0 },
-                    { description: o().gb303814, keys: d.bookmark, universal: !1 },
-                    { description: o().c03b1126, keys: d.mute, universal: !1 },
-                    { description: o().ebd2abb2, keys: d.block, universal: !1 },
-                    { description: o().hc6c5510, keys: "Enter", universal: !0 },
-                    { description: o().eebdef38, keys: s.Z.shortcuts.openMediaModal, universal: !0 },
-                    { description: o().b488758c, keys: d.toggleDMDrawer, universal: !1 },
+                    { description: n().ab3d53f8, keys: d.newTweet, universal: !1 },
+                    { description: n().de94bda6, keys: `${u} Enter`, universal: !1 },
+                    { description: n().e736990a, keys: d.newMessage, universal: !1 },
+                    { description: n().a9ae1e78, keys: d.search, universal: !0 },
+                    { description: n().fe731016, keys: s.Z.shortcuts.like, universal: !1 },
+                    { description: n().d17df548, keys: s.Z.shortcuts.reply, universal: !1 },
+                    { description: n().g062295e, keys: s.Z.shortcuts.retweet, universal: !1 },
+                    { description: n().h01621a4, keys: s.Z.shortcuts.share, universal: !0 },
+                    { description: n().gb303814, keys: d.bookmark, universal: !1 },
+                    { description: n().c03b1126, keys: d.mute, universal: !1 },
+                    { description: n().ebd2abb2, keys: d.block, universal: !1 },
+                    { description: n().hc6c5510, keys: "Enter", universal: !0 },
+                    { description: n().eebdef38, keys: s.Z.shortcuts.openMediaModal, universal: !0 },
+                    { description: n().b488758c, keys: d.toggleDMDrawer, universal: !1 },
                 ],
                 h = () => [
-                    { description: o().c82314e0, keys: d.video.play1, universal: !0 },
-                    { description: o().c82314e0, keys: d.video.play2, universal: !0 },
-                    { description: o().b881560e, keys: d.video.mute, universal: !0 },
-                    { description: o().a94f7302, keys: d.audio.dock, universal: !1 },
-                    { description: o().a7e604c6, keys: d.audio.play, universal: !1 },
-                    { description: o().f978c4fc, keys: d.audio.mute, universal: !1 },
+                    { description: n().c82314e0, keys: d.video.play1, universal: !0 },
+                    { description: n().c82314e0, keys: d.video.play2, universal: !0 },
+                    { description: n().b881560e, keys: d.video.mute, universal: !0 },
+                    { description: n().a94f7302, keys: d.audio.dock, universal: !1 },
+                    { description: n().a7e604c6, keys: d.audio.play, universal: !1 },
+                    { description: n().f978c4fc, keys: d.audio.mute, universal: !1 },
                 ],
                 m = (0, a.Z)((e) => {
                     const t = l(e),
@@ -530,42 +530,42 @@
             i.d(t, { $r: () => q, O9: () => X, ZP: () => Q, vK: () => Y });
             var r = i(688715),
                 s = i(674132),
-                n = i.n(s),
-                o = i(653843),
+                o = i.n(s),
+                n = i(653843),
                 a = i(122123),
                 c = i(417144),
                 d = i(884495),
                 l = i(716233),
                 u = i(540387);
-            const p = n().b8098028,
-                h = n().b36f4170,
-                m = n().hab3781e,
-                _ = n().f6c4fb02,
-                f = n().g0af3dd2,
-                g = n().b8c8b0be,
-                v = n().ica6d718,
-                b = n().b28d44f7({ limit: 15 }),
-                y = n().i1db7d13,
-                w = n().baac0ed7,
+            const p = o().b8098028,
+                h = o().b36f4170,
+                m = o().hab3781e,
+                _ = o().f6c4fb02,
+                f = o().g0af3dd2,
+                g = o().b8c8b0be,
+                v = o().ica6d718,
+                b = o().b28d44f7({ limit: 15 }),
+                y = o().i1db7d13,
+                w = o().baac0ed7,
                 S = y({ limit: 512 }),
-                E = n().a22385bb,
-                k = n().be0440bf,
+                E = o().a22385bb,
+                k = o().be0440bf,
                 I = E({ limit: 140 }),
-                L = n().feeba512,
-                A = n().db123c02,
-                D = n().db6001e7({ limit: 5 }),
-                T = n().eb96d952,
-                O = n().i859a9d4,
-                M = n().b3880588,
-                U = n().ca058b68,
-                P = n().id24379c,
-                R = n().h4d7cbcc,
-                Z = (0, r.ju)("https://support.x.com/articles/20156423"),
+                L = o().feeba512,
+                A = o().db123c02,
+                D = o().db6001e7({ limit: 5 }),
+                T = o().eb96d952,
+                O = o().i859a9d4,
+                M = o().b3880588,
+                P = o().ca058b68,
+                R = o().id24379c,
+                Z = o().h4d7cbcc,
+                U = (0, r.ju)("https://support.x.com/articles/20156423"),
                 x = (0, r.ju)("https://help.x.com/using-twitter/twitter-videos"),
                 N = (e) => ({ text: e }),
-                C = (e) => ({ text: e, action: { label: O, link: Z } }),
+                C = (e) => ({ text: e, action: { label: O, link: U } }),
                 z = (e) => ({ text: e, action: { label: O, link: x } }),
-                F = { [o.Y7.GIF_IS_TOO_LARGE]: N(b), [o.Y7.CANNOT_BE_PROCESSED]: N(p), [o.Y7.FILE_IS_NOT_AN_IMAGE]: N(m) },
+                F = { [n.Y7.GIF_IS_TOO_LARGE]: N(b), [n.Y7.CANNOT_BE_PROCESSED]: N(p), [n.Y7.FILE_IS_NOT_AN_IMAGE]: N(m) },
                 j = { [c.d.ZERO_FILE_LENGTH]: N(h), [c.d.TIMEOUT]: N(M) },
                 $ = { ...j, [c.d.FILE_TOO_LARGE]: N(D), [c.d.UNSUPPORTED_MEDIA]: C(A), [c.d.INVALID_MEDIA]: C(L) },
                 V = { ...j, [c.d.FILE_TOO_LARGE]: N(b), [c.d.UNSUPPORTED_MEDIA]: C(f), [c.d.INVALID_MEDIA]: C(_) },
@@ -590,20 +590,20 @@
                                 if (e.isVideo) return B[t];
                                 break;
                             case G.METADATA:
-                                return N(R);
+                                return N(Z);
                         }
                 },
                 q = (e) => {
                     if (X(e)) return e;
                 };
-            function Q(e, t = P) {
+            function Q(e, t = R) {
                 const i = q(e);
                 if (i) {
                     const r = e.message ? `${t} ${e.message}` : t;
                     return W(i) || N(r);
                 }
             }
-            function Y(e, t = U) {
+            function Y(e, t = P) {
                 return e.type === a.gK.type && e.code === a.gK.NO_DIMENSIONS ? N(T) : e.type === u.hb.type && e.code === u.hb.NO_DIMENSIONS ? z(g) : N(t);
             }
         },
@@ -611,8 +611,8 @@
             i.d(t, { BX: () => f, Uk: () => u, Xj: () => p, ZP: () => E });
             var r = i(468811),
                 s = i.n(r),
-                n = i(595088),
-                o = i(161821),
+                o = i(595088),
+                n = i(161821),
                 a = i(184605),
                 c = i(716233),
                 d = i(774717);
@@ -621,12 +621,12 @@
                 p = Object.freeze({ InProgress: "in_progress", Complete: "complete", Failure: "failure", Canceled: "canceled" }),
                 h = (e) => (e ? m(e) : void 0),
                 m = (e) =>
-                    (0, n.Z)(e)
+                    (0, o.Z)(e)
                         .filter(([e, t]) => void 0 !== t)
                         .map(([t, i]) => ("object" == typeof i ? `${t}=${_(e[t])}` : `${t}=${String(i)}`))
                         .join(";"),
                 _ = (e) =>
-                    (0, o.Z)(e)
+                    (0, n.Z)(e)
                         .filter((e) => void 0 !== e)
                         .map(String)
                         .join(":"),
@@ -712,9 +712,9 @@
             i.d(t, { BW: () => f, SB: () => S, TO: () => k, Tz: () => v, U$: () => w, ff: () => g, vC: () => y, vn: () => E, xz: () => b, y$: () => m });
             var r = i(182056),
                 s = i(323265),
-                n = i(540387);
-            const o = 1024,
-                a = 1024 * o,
+                o = i(540387);
+            const n = 1024,
+                a = 1024 * n,
                 c = 1,
                 d = 4096,
                 l = 2048,
@@ -756,28 +756,28 @@
                             w = e.getNumberValue("media_async_upload_max_gif_size", h.Gif) * a;
                     }
                 else {
-                    if (!(i instanceof n.ZP))
+                    if (!(i instanceof o.ZP))
                         return (function (e, t, i) {
-                            let n;
+                            let o;
                             switch (t) {
                                 case y.Avatar:
-                                    n = u;
+                                    o = u;
                                     break;
                                 case y.CommunityBanner:
                                 case y.ListBanner:
                                 case y.ProfileBanner:
-                                    n = p;
+                                    o = p;
                                     break;
                                 default:
-                                    n = s.ZP.isDesktopOS() ? d : l;
+                                    o = s.ZP.isDesktopOS() ? d : l;
                             }
                             const c = e.getNumberValue("media_async_upload_max_image_size", h.Image) * a;
                             return r.Z.getConnectionInfo().then(
                                 (r) => {
                                     let a = c;
-                                    return "slow-2g" === r.effectiveType ? (a = e.getNumberValue("responsive_web_media_upload_limit_slow_2g", 150) * o) : i || "2g" === r.effectiveType ? (a = e.getNumberValue("responsive_web_media_upload_limit_2g", 250) * o) : "3g" === r.effectiveType ? (a = e.getNumberValue("responsive_web_media_upload_limit_3g", 1500) * o) : "4g" !== r.effectiveType || s.ZP.isDesktopOS() || t !== y.Tweet || (n = d), { maxDimension: n, maxFileSize: Math.min(c, a) };
+                                    return "slow-2g" === r.effectiveType ? (a = e.getNumberValue("responsive_web_media_upload_limit_slow_2g", 150) * n) : i || "2g" === r.effectiveType ? (a = e.getNumberValue("responsive_web_media_upload_limit_2g", 250) * n) : "3g" === r.effectiveType ? (a = e.getNumberValue("responsive_web_media_upload_limit_3g", 1500) * n) : "4g" !== r.effectiveType || s.ZP.isDesktopOS() || t !== y.Tweet || (o = d), { maxDimension: o, maxFileSize: Math.min(c, a) };
                                 },
-                                () => ({ maxDimension: n, maxFileSize: c }),
+                                () => ({ maxDimension: o, maxFileSize: c }),
                             );
                         })(e, v, g);
                     if (1 === b) {
@@ -792,45 +792,25 @@
                 return !(s.ZP.isIOS() && e.size > 3e8);
             }
         },
-        135698: (e, t, i) => {
-            i.d(t, { c: () => n });
-            const r = 4194304;
-            function s(e) {
-                for (let t = 0; t < e.byteLength - 8; t++)
-                    if (109 === e.getUint8(t + 4) && 111 === e.getUint8(t + 5) && 111 === e.getUint8(t + 6) && 118 === e.getUint8(t + 7)) {
-                        if (e.getUint32(t) > 0) return !0;
-                    }
-                return !1;
-            }
-            async function n(e) {
-                const t = e.slice(0, r),
-                    i = await t.arrayBuffer();
-                if (s(new DataView(i))) return !0;
-                const n = Math.max(0, e.size - r),
-                    o = e.slice(n),
-                    a = await o.arrayBuffer();
-                return s(new DataView(a));
-            }
-        },
         951790: (e, t, i) => {
-            i.d(t, { Z: () => o });
+            i.d(t, { Z: () => n });
             var r = i(323265);
             const s = {
                     setLocation(e) {
                         document.location = e;
                     },
                     getAppStoreURLs(e = "rwoiah") {
-                        const t = n(e),
+                        const t = o(e),
                             i = [t.android, t.ios],
                             r = i.find((e) => e.matches());
                         return r ? [r] : i;
                     },
                     getiOSAppStoreLink(e) {
-                        const t = n(e);
+                        const t = o(e);
                         return t.ios.matches() ? t.ios.url : t.ios.webUrl;
                     },
                     getAndroidAppStoreLink(e) {
-                        const t = n(e);
+                        const t = o(e);
                         return t.android.matches() ? t.android.url : t.android.webUrl;
                     },
                     goToAppStore(e) {
@@ -841,8 +821,8 @@
                         s.setLocation(e);
                     },
                 },
-                n = (e = "rwoiah") => ({ android: { platform: "android", matches: () => r.ZP.isAndroid(), url: `market://details?id=com.twitter.android&referrer=utm_source%3Drweb%26utm_medium%3D${e}`, webUrl: `https://play.google.com/store/apps/details?id=com.twitter.android&referrer=utm_source%3Drweb%26utm_medium%3D${e}` }, ios: { platform: "ios", matches: () => r.ZP.isIOS(), url: `https://apps.apple.com/app/apple-store/id333903271?pt=9551&ct=${e}&mt=8`, webUrl: `https://apps.apple.com/app/apple-store/id333903271?pt=9551&ct=${e}&mt=8` } }),
-                o = s;
+                o = (e = "rwoiah") => ({ android: { platform: "android", matches: () => r.ZP.isAndroid(), url: `market://details?id=com.twitter.android&referrer=utm_source%3Drweb%26utm_medium%3D${e}`, webUrl: `https://play.google.com/store/apps/details?id=com.twitter.android&referrer=utm_source%3Drweb%26utm_medium%3D${e}` }, ios: { platform: "ios", matches: () => r.ZP.isIOS(), url: `https://apps.apple.com/app/apple-store/id333903271?pt=9551&ct=${e}&mt=8`, webUrl: `https://apps.apple.com/app/apple-store/id333903271?pt=9551&ct=${e}&mt=8` } }),
+                n = s;
         },
         147595: (e, t, i) => {
             i.d(t, { R: () => s });
@@ -859,20 +839,20 @@
             i(571372);
             var r = i(2138),
                 s = i(666536),
-                n = i(624479),
-                o = i(163889);
+                o = i(624479),
+                n = i(163889);
             const a = new (class {
                 constructor() {
                     (this.usersInApp = {}),
                         (this._throttledInitialFetch = (0, r.Z)(() => {
-                            this.store.dispatch(n.ZP.fetchManyIfNeeded(Object.keys(this.usersInApp)));
+                            this.store.dispatch(o.ZP.fetchManyIfNeeded(Object.keys(this.usersInApp)));
                         }, 1500));
                 }
                 init(e) {
                     (this.store = e), (this.usersInApp = {});
                 }
                 registerUserInApp(e) {
-                    Object.keys(this.usersInApp).length > 50 && ((this.usersInApp = {}), (0, o.ZP)(new Error("Registered users in app has exceeded 50"), { level: "warning" })), this.usersInApp[e] ? (this.usersInApp[e] = this.usersInApp[e] + 1) : ((this.usersInApp[e] = 1), (0, s.Z)(this._throttledInitialFetch(), 100));
+                    Object.keys(this.usersInApp).length > 50 && ((this.usersInApp = {}), (0, n.ZP)(new Error("Registered users in app has exceeded 50"), { level: "warning" })), this.usersInApp[e] ? (this.usersInApp[e] = this.usersInApp[e] + 1) : ((this.usersInApp[e] = 1), (0, s.Z)(this._throttledInitialFetch(), 100));
                 }
                 deregisterUserInApp(e) {
                     this.usersInApp[e] && this.usersInApp[e] > 1 ? (this.usersInApp[e] = this.usersInApp[e] - 1) : delete this.usersInApp[e];
@@ -880,11 +860,11 @@
             })();
         },
         946208: (e, t, i) => {
-            i.d(t, { Id: () => r, ZP: () => o, h_: () => s });
+            i.d(t, { Id: () => r, ZP: () => n, h_: () => s });
             i(543673), i(240753), i(128399);
             const r = [".srt", "text/plain", ""],
                 s = (e) => -1 !== r.indexOf(e.type),
-                n = (e) =>
+                o = (e) =>
                     `WEBVTT FILE\r\n\r\n${e
                         .replace(/\{\\([ibu])\}/g, "</$1>")
                         .replace(/\{\\([ibu])1\}/g, "<$1>")
@@ -892,7 +872,7 @@
                         .replace(/\{\/([ibu])\}/g, "</$1>")
                         .replace(/(\d\d:\d\d:\d\d),(\d\d\d)/g, "$1.$2")
                         .replace(/\r\n\{\\an8\}/g, " line:5%\r\n")}`;
-            class o {
+            class n {
                 constructor(e) {
                     (this.fileHandle = new Blob([e], { type: "text/plain charset=UTF-8" })),
                         e instanceof File && (this.name = e.name),
@@ -901,7 +881,7 @@
                         (this.url = window.URL.createObjectURL(this.fileHandle)),
                         this.fileHandle.text &&
                             this.fileHandle.text().then((e) => {
-                                this.vtt = URL.createObjectURL(new Blob([n(e)], { type: "text/plain charset=UTF-8" }));
+                                this.vtt = URL.createObjectURL(new Blob([o(e)], { type: "text/plain charset=UTF-8" }));
                             }),
                         (this.isVideo = !1),
                         (this.isImage = !1),
@@ -914,12 +894,12 @@
             }
         },
         540387: (e, t, i) => {
-            i.d(t, { Wv: () => s, ZP: () => o, hb: () => n, jn: () => r });
+            i.d(t, { Wv: () => s, ZP: () => n, hb: () => o, jn: () => r });
             i(571372), i(543673), i(240753), i(128399);
             const r = ["video/mp4", "video/quicktime"],
                 s = (e) => -1 !== r.indexOf(e.type),
-                n = { type: "video-load", NO_DIMENSIONS: 10, LOAD_FAILED: 11, TOO_LARGE: 12 };
-            class o {
+                o = { type: "video-load", NO_DIMENSIONS: 10, LOAD_FAILED: 11, TOO_LARGE: 12 };
+            class n {
                 constructor(e, t) {
                     (this.fileHandle = e), e instanceof File && (this.name = e.name), (this.size = e.size), (this.type = e.type);
                     try {
@@ -934,16 +914,16 @@
                         new Promise((i, r) => {
                             const s = (e, t) => {
                                     const i = new Error(e);
-                                    (i.code = t), (i.type = n.type), r(i);
+                                    (i.code = t), (i.type = o.type), r(i);
                                 },
-                                o = document.createElement("video");
-                            (o.onloadedmetadata = () => {
-                                t || (o.videoWidth && o.videoHeight) ? i(o) : s("Video lacks height or width", n.NO_DIMENSIONS);
+                                n = document.createElement("video");
+                            (n.onloadedmetadata = () => {
+                                t || (n.videoWidth && n.videoHeight) ? i(n) : s("Video lacks height or width", o.NO_DIMENSIONS);
                             }),
-                                (o.onerror = () => {
-                                    s("Error loading image", n.LOAD_FAILED);
+                                (n.onerror = () => {
+                                    s("Error loading image", o.LOAD_FAILED);
                                 }),
-                                (o.src = e);
+                                (n.src = e);
                         }))(this.url, e).then((e) => {
                         const { duration: t, videoHeight: i, videoWidth: r } = e;
                         return (this.width = r), (this.height = i), (this.duration = t), (this.video = e), (this.isBrowserSupported = !(0 === i || 0 === r)), this;
@@ -956,4 +936,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.AppModules-e4e3d8bb.4b32fdaa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.AppModules-e4e3d8bb.304d338a.js.map

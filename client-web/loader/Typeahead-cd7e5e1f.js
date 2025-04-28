@@ -112,7 +112,7 @@
                 h = i.Z;
         },
         497294: (e, t, r) => {
-            r.d(t, { $i: () => me, C4: () => Y, G$: () => J, Q6: () => $, TU: () => K, WU: () => ee, _B: () => oe, _J: () => ie, _T: () => k, dD: () => ae, gz: () => Z, m3: () => N, o6: () => de, oZ: () => _e, pJ: () => ue, rA: () => Q });
+            r.d(t, { $i: () => pe, C4: () => q, G$: () => Y, Q6: () => Q, TU: () => W, WU: () => K, _B: () => ae, _J: () => re, _T: () => H, dD: () => ie, gz: () => Z, m3: () => N, o6: () => ne, oZ: () => me, pJ: () => ce, rA: () => j });
             r(571372), r(136728);
             var i = r(99107),
                 a = r(411916),
@@ -133,29 +133,28 @@
                 E = r(166677),
                 w = r(221562),
                 y = r(755296),
-                v = r(135698),
-                b = r(946208),
-                A = r(540387),
-                C = r(653798),
-                P = r(499627),
-                I = r(917799),
-                U = r(390387),
-                T = r(38562),
-                F = r(601576),
+                v = r(946208),
+                b = r(540387),
+                A = r(653798),
+                C = r(499627),
+                P = r(917799),
+                I = r(390387),
+                U = r(38562),
+                T = r(601576),
                 x = r(111531),
-                D = r(537052);
-            const M = l().g40ff2b4,
-                O = "mediaUpload",
-                R = (window.location.host.includes("twitter.com") ? "https://upload.twitter.com" : "https://upload.x.com") + "/i/media/upload2.json",
-                z = `rweb/${O}`,
-                B = [],
-                L = "upload";
-            class V extends Error {
+                F = r(537052);
+            const D = l().g40ff2b4,
+                M = "mediaUpload",
+                O = (window.location.host.includes("twitter.com") ? "https://upload.twitter.com" : "https://upload.x.com") + "/i/media/upload2.json",
+                R = `rweb/${M}`,
+                z = [],
+                B = "upload";
+            class L extends Error {
                 constructor(e, { code: t, isGif: r, isImage: i, isVideo: a, type: o }) {
                     super(e), (this.code = t), (this.type = o), (this.isGif = !!r), (this.isImage = !!i), (this.isVideo = !!a);
                 }
             }
-            function H(e, t, r) {
+            function V(e, t, r) {
                 let a = null,
                     o = {},
                     s = {};
@@ -167,7 +166,7 @@
                     }
                 }
                 return (
-                    r?.useLongVideoEndpoint && (s.uploadUrl = R),
+                    r?.useLongVideoEndpoint && (s.uploadUrl = O),
                     {
                         upload(t) {
                             (a = new _.Z(e, s)), (o = t), a.upload(o);
@@ -184,35 +183,35 @@
                     }
                 );
             }
-            const Z = (e) => e[O],
+            const Z = (e) => e[M],
                 N = (e, t) => {
                     const r = Array.isArray(t) ? t : [t];
-                    return e[O].filter((e) => r.some((t) => t === e.id));
+                    return e[M].filter((e) => r.some((t) => t === e.id));
                 },
-                k = (e, t) => {
+                H = (e, t) => {
                     const r = N(e, t);
                     if (!r.length) return 0;
                     const i = r.reduce((e, t) => e + (t.uploadProgress || 0), 0) / r.length;
                     return Math.min(i, 1);
                 },
-                X = "rweb/mediaUpload/ADD_MEDIA",
-                G = (e) => ({ payload: e, type: X });
-            let j = 1;
-            function Q(e, t) {
+                k = "rweb/mediaUpload/ADD_MEDIA",
+                X = (e) => ({ payload: e, type: k });
+            let G = 1;
+            function j(e, t) {
                 return (r, i, { featureSwitches: a, relayEnvironment: o }) => {
                     const s = Array.from(e, (e) => {
-                            if ((0, A.Wv)(e)) {
-                                const r = new A.ZP(e, t.isAmplify);
+                            if ((0, b.Wv)(e)) {
+                                const r = new b.ZP(e, t.isAmplify);
                                 if ((0, g.TO)(e)) {
                                     const e = a.isTrue("responsive_web_hevc_upload_preview_enabled") && a.isTrue("responsive_web_composer_configurable_video_player_enabled");
                                     return r.withDimensionsAndOrientation(e);
                                 }
                                 return Promise.resolve(r);
                             }
-                            return (0, b.h_)(e) ? Promise.resolve(new b.ZP(e)) : new c.ZP(e).withDimensionsAndOrientation();
+                            return (0, v.h_)(e) ? Promise.resolve(new v.ZP(e)) : new c.ZP(e).withDimensionsAndOrientation();
                         }),
                         d = r((e, t, { relayEnvironment: r }) =>
-                            n()(r, C.S, {}, { fetchPolicy: "store-or-network" })
+                            n()(r, A.S, {}, { fetchPolicy: "store-or-network" })
                                 .toPromise()
                                 .then((e) => {
                                     const t = e?.viewer?.user_results?.result;
@@ -227,18 +226,18 @@
                                     (function (e, t) {
                                         return (r, i, { featureSwitches: a, userClaims: o }) => {
                                             const { uploadIds: s = [], altTexts: n = [] } = t,
-                                                d = (0, T.IX)(i()),
+                                                d = (0, U.IX)(i()),
                                                 l = (Array.isArray(e) ? e : [e]).map((e, l) => {
                                                     const p = a.isTrue("responsive_web_media_upload_metrics_enabled");
                                                     let m;
-                                                    t.location && (m = he(t.location, e, !1, { featureSwitches: a, userClaims: o }));
-                                                    const _ = e instanceof A.ZP ? e.duration : void 0,
+                                                    t.location && (m = _e(t.location, e, !1, { featureSwitches: a, userClaims: o }));
+                                                    const _ = e instanceof b.ZP ? e.duration : void 0,
                                                         h = e instanceof c.ZP ? e.orientation : void 0,
                                                         f = p && m ? new w.ZP({ isExternal: !1, mediaCategory: m, videoDuration: _ }, d) : void 0,
                                                         S = a.isTrue("responsive_web_media_upload_md5_hashing_enabled") && e.isImage && e instanceof c.ZP,
                                                         E = a.getNumberValue("responsive_web_media_upload_target_jpg_pixels_per_byte");
                                                     return (
-                                                        e instanceof A.ZP &&
+                                                        e instanceof b.ZP &&
                                                             (function (e) {
                                                                 const { video: t } = e;
                                                                 t &&
@@ -254,14 +253,14 @@
                                                         (0, g.vn)(a, o, e, t, d).then(({ maxDimension: d, maxFileSize: p }) => {
                                                             const m = e.isImage && e instanceof c.ZP && (0, u.m2)(e, { maxFileSize: p, maxDimension: d, jpgPixelsPerByteForResize: E }),
                                                                 _ = (0, g.SB)({ featureSwitches: a, userClaims: o }),
-                                                                h = { useLongVideoEndpoint: e.isVideo && _ >= 1, actAsUserId: (0, U.dY)(i()) },
-                                                                w = m ? void 0 : H(e.fileHandle, a, h),
-                                                                y = q({ originalMediaFile: e, mediaFile: e, mediaFileHash: S ? void 0 : null, needsProcessing: m, location: t.location, uploadId: s[l] ?? "", reporter: f, uploader: w, mediaMetadata: { altText: n[l] }, abortController: S ? new AbortController() : void 0 });
-                                                            return S && Se(r, i, y.id, e.fileHandle, y.reporter, y.abortController), y;
+                                                                h = { useLongVideoEndpoint: e.isVideo && _ >= 1, actAsUserId: (0, I.dY)(i()) },
+                                                                w = m ? void 0 : V(e.fileHandle, a, h),
+                                                                y = $({ originalMediaFile: e, mediaFile: e, mediaFileHash: S ? void 0 : null, needsProcessing: m, location: t.location, uploadId: s[l] ?? "", reporter: f, uploader: w, mediaMetadata: { altText: n[l] }, abortController: S ? new AbortController() : void 0 });
+                                                            return S && fe(r, i, y.id, e.fileHandle, y.reporter, y.abortController), y;
                                                         })
                                                     );
                                                 });
-                                            return Promise.all(l).then((e) => (r(G(e)), e));
+                                            return Promise.all(l).then((e) => (r(X(e)), e));
                                         };
                                     })(e, t),
                                 );
@@ -269,33 +268,33 @@
                             },
                             (e) => {
                                 const t = (0, E.vK)(e);
-                                return t && r((0, F.fz)(t)), Promise.reject(e);
+                                return t && r((0, T.fz)(t)), Promise.reject(e);
                             },
                         )
                         .then((e) =>
                             d
                                 .then((t) => {
-                                    if (t) for (const t of e) r(oe(t.id, { ...t.mediaMetadata, allowDownloadStatus: { allowDownload: !0 } }));
+                                    if (t) for (const t of e) r(ae(t.id, { ...t.mediaMetadata, allowDownloadStatus: { allowDownload: !0 } }));
                                     return e;
                                 })
                                 .catch(() => e),
                         );
                 };
             }
-            const $ =
+            const Q =
                 ({ height: e, mediaCategory: t, mediaType: r, previewMediaType: i, previewUrl: a, sourceUrl: o, stillMediaUrl: s, width: n }) =>
                 (d, l, { featureSwitches: c }) => {
                     const u = c.isTrue("responsive_web_media_upload_metrics_enabled") && t ? new w.ZP({ isExternal: !0, mediaCategory: t }) : void 0;
                     u?.reportOperationStart(w.BX.Full, !0);
-                    const p = { actAsUserId: (0, U.dY)(l()) },
-                        m = q({ externalMediaDetails: { mediaCategory: t, mediaType: r, previewUrl: a || o, previewMediaType: i || r, sourceUrl: o, stillMediaUrl: s, width: n, height: e }, reporter: u, uploader: H(null, c, p) });
-                    return d(G(m)), u?.toggleOperationPaused(w.BX.Full, !0), [m];
+                    const p = { actAsUserId: (0, I.dY)(l()) },
+                        m = $({ externalMediaDetails: { mediaCategory: t, mediaType: r, previewUrl: a || o, previewMediaType: i || r, sourceUrl: o, stillMediaUrl: s, width: n, height: e }, reporter: u, uploader: V(null, c, p) });
+                    return d(X(m)), u?.toggleOperationPaused(w.BX.Full, !0), [m];
                 };
-            function q(e) {
-                const t = { ...e, id: j, uploadFailed: !1, uploading: !1, uploadProgress: 1, mediaMetadata: void 0 };
-                return (j += 1), t.uploadId || ((t.uploadId = ""), (t.uploadProgress = 0)), t;
+            function $(e) {
+                const t = { ...e, id: G, uploadFailed: !1, uploading: !1, uploadProgress: 1, mediaMetadata: void 0 };
+                return (G += 1), t.uploadId || ((t.uploadId = ""), (t.uploadProgress = 0)), t;
             }
-            const Y =
+            const q =
                     (e) =>
                     (t, r, { featureSwitches: i, userClaims: a }) => {
                         const [o] = N(r(), e);
@@ -303,7 +302,7 @@
                         const { abortController: s, cropData: n, id: d, location: l, mediaFile: p, needsProcessing: m, originalMediaFile: _ } = o;
                         if (!_) return Promise.reject(new Error("media item not found"));
                         const h = i.getNumberValue("responsive_web_media_upload_target_jpg_pixels_per_byte"),
-                            f = (0, T.IX)(r()),
+                            f = (0, U.IX)(r()),
                             S = { location: l };
                         return (0, g.vn)(i, a, _, S, f).then((e) => {
                             const a = { cropData: n, jpgPixelsPerByteForResize: h, maxFileSize: e.maxFileSize, maxDimension: e.maxDimension },
@@ -320,24 +319,24 @@
                                           )
                                           .then((e) => {
                                               _ !== p && p && p.dispose(), o.uploader && o.uploader.cancel && o.uploader.cancel();
-                                              const a = { actAsUserId: (0, U.dY)(r()) },
-                                                  s = H(e.fileHandle, i, a),
-                                                  n = t(ie({ id: d, mediaFile: e, needsProcessing: !1, uploadPromise: void 0, uploadProgress: 0, uploading: !1, uploadId: void 0, uploader: s }));
-                                              return (o.uploadId || o.uploading) && t(me([d])), n;
+                                              const a = { actAsUserId: (0, I.dY)(r()) },
+                                                  s = V(e.fileHandle, i, a),
+                                                  n = t(re({ id: d, mediaFile: e, needsProcessing: !1, uploadPromise: void 0, uploadProgress: 0, uploading: !1, uploadId: void 0, uploader: s }));
+                                              return (o.uploadId || o.uploading) && t(pe([d])), n;
                                           })
                                     : Promise.resolve(o);
                             if (_.size > l) {
                                 const e = Error("Exceeds size limit");
                                 return ([e.type, e.code, e.limit] = ["maxsize", _.isGif ? g.BW.GIF_IS_TOO_LARGE : g.BW.VIDEO_IS_TOO_LARGE, l]), Promise.reject(e);
                             }
-                            if (_.isVideo && _ instanceof A.ZP && _.duration > f) {
+                            if (_.isVideo && _ instanceof b.ZP && _.duration > f) {
                                 const e = Error("Exceeds duration limit");
                                 return ([e.type, e.code, e.limit] = ["maxduration", g.ff.VIDEO_IS_TOO_LONG, f]), Promise.reject(e);
                             }
                             return Promise.resolve(o);
                         });
                     },
-                J = (e, t) => (r, i) => {
+                Y = (e, t) => (r, i) => {
                     const { onFailure: a } = t,
                         s = [];
                     return new Promise((t, i) => {
@@ -348,13 +347,13 @@
                                 i.reporter?.reportOperationStart(w.BX.Full, !0),
                                     i.reporter?.reportOperationStart([w.BX.Processing, w.BX.Metadata]),
                                     i.reporter?.reportOperationComplete(w.BX.Metadata, w.Uk.Complete),
-                                    r(Y(i.id)).then(
+                                    r(q(i.id)).then(
                                         (t) => {
                                             s.push(t), t?.reporter?.reportOperationComplete(w.BX.Processing, w.Uk.Success), t?.reporter?.toggleOperationPaused(w.BX.Full, !0), n(e.slice(1));
                                         },
                                         (t) => {
-                                            const o = (0, E.ZP)(t, M);
-                                            o && r((0, F.fz)(o));
+                                            const o = (0, E.ZP)(t, D);
+                                            o && r((0, T.fz)(o));
                                             const { code: s, message: d, name: l, type: c } = t;
                                             i.reporter?.setMetadata({ reason: { name: l, message: d, code: s } });
                                             const p = "maxsize" === c || "maxduration" === c || ("resize" === c && (s === u.Y7.FILE_IS_NOT_AN_IMAGE || s === u.Y7.GIF_IS_TOO_LARGE)) ? w.Uk.Invalid : w.Uk.Failure;
@@ -366,59 +365,59 @@
                         n(e);
                     });
                 },
-                W = "rweb/mediaUpload/REMOVE_MEDIA",
-                K = (e) => ({ payload: Array.isArray(e) ? e : [e], type: W });
-            function ee(e) {
+                J = "rweb/mediaUpload/REMOVE_MEDIA",
+                W = (e) => ({ payload: Array.isArray(e) ? e : [e], type: J });
+            function K(e) {
                 return (t, r) => {
                     N(r(), e).forEach((e) => {
                         const { abortController: t, mediaFile: r, originalMediaFile: i, reporter: a, uploader: o } = e;
                         t?.abort(), o && o.cancel && o.cancel(), a?.reportOperationComplete(w.BX.Full, w.Uk.Cancel), r && r.dispose(), i && i.dispose();
                     }),
-                        t(K(e));
+                        t(W(e));
                 };
             }
-            const te = "rweb/mediaUpload/UPDATE_MEDIA",
-                re = (e) => ({ payload: e, type: te });
-            function ie(e) {
+            const ee = "rweb/mediaUpload/UPDATE_MEDIA",
+                te = (e) => ({ payload: e, type: ee });
+            function re(e) {
                 return (t, r) => {
-                    t(re(e));
+                    t(te(e));
                     const [i] = N(r(), e.id);
                     return i;
                 };
             }
-            function ae(e) {
+            function ie(e) {
                 return (t, r) => {
                     const [i] = N(r(), e);
-                    i.uploader?.cancel(), t(me(e));
+                    i.uploader?.cancel(), t(pe(e));
                 };
             }
-            function oe(e, t) {
-                return (r) => r(ie({ id: e, mediaMetadata: t }));
+            function ae(e, t) {
+                return (r) => r(re({ id: e, mediaMetadata: t }));
             }
-            const se = "SEND_METADATA",
-                ne = I.dg(z, se);
-            function de(e) {
-                return (t, r, { api: i }) => I._O(t, { params: e, request: i.withEndpoint(h.Z).metadataCreate })({ actionTypes: ne, context: se });
+            const oe = "SEND_METADATA",
+                se = P.dg(R, oe);
+            function ne(e) {
+                return (t, r, { api: i }) => P._O(t, { params: e, request: i.withEndpoint(h.Z).metadataCreate })({ actionTypes: se, context: oe });
             }
-            const le = "ATTACH_SUBTITLES",
-                ce = I.dg(z, le);
-            function ue(e) {
+            const de = "ATTACH_SUBTITLES",
+                le = P.dg(R, de);
+            function ce(e) {
                 return (t, r, i) => {
                     const { subtitlesDisplayName: a, subtitlesLang: o, subtitlesMediaUploadId: s, videoMediaUploadId: n } = e,
                         { api: d, featureSwitches: l, userClaims: c } = i,
-                        u = fe(e.mediaItem, !1, { featureSwitches: l, userClaims: c }) || "";
-                    return I._O(t, { params: { videoMediaUploadId: n, videoMediaCategory: u, subtitlesLang: o, subtitlesMediaUploadId: s, subtitlesDisplayName: a }, request: d.withEndpoint(h.Z).attachSubtitles })({ actionTypes: ce, context: le });
+                        u = he(e.mediaItem, !1, { featureSwitches: l, userClaims: c }) || "";
+                    return P._O(t, { params: { videoMediaUploadId: n, videoMediaCategory: u, subtitlesLang: o, subtitlesMediaUploadId: s, subtitlesDisplayName: a }, request: d.withEndpoint(h.Z).attachSubtitles })({ actionTypes: le, context: de });
                 };
             }
-            const pe = (e) => {
+            const ue = (e) => {
                 const t = e.trimData;
                 if (t) return `${t.startTime.toFixed(3)}-${t.endTime.toFixed(3)}`;
             };
-            const me =
+            const pe =
                     (e, t = Object.freeze({})) =>
                     (r, i, { featureSwitches: a, userClaims: o }) => {
                         const s = N(i(), e),
-                            n = (e) => r(ie(e));
+                            n = (e) => r(re(e));
                         function d(e, r = !1) {
                             const i = a.isTrue("responsive_web_media_upload_md5_hashing_enabled"),
                                 { abortController: s, id: l, mediaFile: u, mediaFileHash: p, reporter: m, uploader: h } = e,
@@ -428,7 +427,7 @@
                                 m?.toggleOperationPaused(w.BX.Full, !1),
                                 t.withoutReUpload && e.uploadId
                                     ? Promise.resolve(n({ id: l, uploadProgress: 1, uploading: !1 }))
-                                    : (t.preUpload || (m?.reportOperationStart(w.BX.UploadSubmitUntilSruFinish), m?.reportUploadSubmit(), f && S && s?.abort(), e.uploading && h && h.amendUpload({ pauseBeforeFinalize: !1, trimRanges: pe(e) })),
+                                    : (t.preUpload || (m?.reportOperationStart(w.BX.UploadSubmitUntilSruFinish), m?.reportUploadSubmit(), f && S && s?.abort(), e.uploading && h && h.amendUpload({ pauseBeforeFinalize: !1, trimRanges: ue(e) })),
                                       e.uploadPromise
                                           ? e.uploadPromise.then((t) => ({ ...t, mediaMetadata: e.mediaMetadata }))
                                           : h
@@ -440,7 +439,7 @@
                                                                   u?.setMetadata({ mediaId: t }), u?.reportOperationComplete([w.BX.Full, w.BX.UploadSubmitUntilSruFinish], w.Uk.Success), e(a({ id: c, uploadId: t, uploadProgress: 1, uploading: !1 }));
                                                               },
                                                               f = (e, t, r) => {
-                                                                  u?.setMetadata({ mediaId: r }), "uploading" === t ? (a({ id: c, uploadProgress: D.OA("uploading", e) }), 100 === e && u?.reportOperationComplete(w.BX.SruUpload, w.Uk.Success)) : "processing" === t && a({ id: c, uploadProgress: D.OA("processing", e) });
+                                                                  u?.setMetadata({ mediaId: r }), "uploading" === t ? (a({ id: c, uploadProgress: F.OA("uploading", e) }), 100 === e && u?.reportOperationComplete(w.BX.SruUpload, w.Uk.Success)) : "processing" === t && a({ id: c, uploadProgress: F.OA("processing", e) });
                                                               },
                                                               S = () => {
                                                                   u?.toggleOperationPaused(w.BX.Full, !0);
@@ -450,7 +449,7 @@
                                                                   if (i.mediaFile?.isGif && !r && s === g.Tz.INVALID_MEDIA_CODE) p?.amendUpload({ pauseBeforeFinalize: !1 }), a({ id: c, uploadProgress: 0, uploading: !1, uploadFailed: !1, uploadPromise: void 0 }), o(i, !0).then(e).catch(m);
                                                                   else {
                                                                       d?.abort(), a({ id: c, uploadProgress: 0, uploading: !1, uploadFailed: !0, uploadError: { code: s, message: h, detail_message: n, maxSizeBytes: l }, uploadPromise: void 0 });
-                                                                      const e = new V(h ? `${h}` : `Media upload failed [Error code: ${s}]`, { code: s, type: L, isGif: !!i.externalMediaDetails || (i.mediaFile && i.mediaFile.isGif), isImage: i.mediaFile && i.mediaFile.isImage, isVideo: i.mediaFile && i.mediaFile instanceof A.ZP && i.mediaFile.isVideo }),
+                                                                      const e = new L(h ? `${h}` : `Media upload failed [Error code: ${s}]`, { code: s, type: B, isGif: !!i.externalMediaDetails || (i.mediaFile && i.mediaFile.isGif), isImage: i.mediaFile && i.mediaFile.isImage, isVideo: i.mediaFile && i.mediaFile instanceof b.ZP && i.mediaFile.isVideo }),
                                                                           t = s === _.d.CANCELED ? w.Uk.Cancel : w.Uk.Failure;
                                                                       u?.setMetadata({ reason: { name: f, message: h, code: s } }), u?.reportOperationComplete([w.BX.Full, w.BX.SruUpload, w.BX.UploadSubmitUntilSruFinish], t), m(e);
                                                                   }
@@ -461,36 +460,29 @@
                                                                   { enable_1080p_variant: o, mediaFile: d, mediaFileHash: l } = i,
                                                                   c = t.isTrue("media_async_upload_longer_video_resolution_selector"),
                                                                   p = d && d.size > 1e8 && t.isTrue("rweb_media_multi_requests_enabled"),
-                                                                  m = fe(i, r, { featureSwitches: t, userClaims: n }),
+                                                                  m = he(i, r, { featureSwitches: t, userClaims: n }),
                                                                   _ = m ? `&media_category=${m}` : "";
-                                                              u?.reportOperationStart(w.BX.SruUpload), i.uploader?.upload({ success: h, progress: f, pause: S, error: E, extraInitParams: e + _, extraFinalizeParams: l ? `&original_md5=${l}` : void 0, trimRanges: pe(i), pauseBeforeFinalize: a, withMultiRequests: p, enable_1080p_variant: !c || o, mediaItem: i });
+                                                              u?.reportOperationStart(w.BX.SruUpload), i.uploader?.upload({ success: h, progress: f, pause: S, error: E, extraInitParams: e + _, extraFinalizeParams: l ? `&original_md5=${l}` : void 0, trimRanges: ue(i), pauseBeforeFinalize: a, withMultiRequests: p, enable_1080p_variant: !c || o, mediaItem: i });
                                                           }
                                                       });
-                                                  return (
-                                                      a({ id: c, uploading: !0, uploadFailed: !1, uploadProgress: 0, uploadPromise: m }),
-                                                      i.mediaFile?.fileHandle instanceof Blob &&
-                                                          (0, v.c)(i.mediaFile.fileHandle).then((e) => {
-                                                              a({ id: c, muxedMetadata: { hasMoov: e } });
-                                                          }),
-                                                      m
-                                                  );
+                                                  return a({ id: c, uploading: !0, uploadFailed: !1, uploadProgress: 0, uploadPromise: m }), m;
                                               })({ mediaItem: e, updateMediaItem: n, uploadMediaItem: d, gifAsStaticImage: r, uploadOptions: t, featureSwitches: a, userClaims: o })
                                             : Promise.reject(new Error("Media has no uploader. Did you forget to call resizeMedia?")))
                             );
                         }
                         const l = s.map((e) => d(e));
                         return Promise.all(l).catch((e) => {
-                            throw (e.type || (e.type = L), e);
+                            throw (e.type || (e.type = B), e);
                         });
                     },
-                _e = (e, t) => {
-                    const r = me(e, { ...t, preUpload: !0 });
+                me = (e, t) => {
+                    const r = pe(e, { ...t, preUpload: !0 });
                     return (...e) =>
                         r(...e).catch((e) => {
                             if (e.code !== _.d.CANCELED) throw e;
                         });
                 };
-            function he(e, t, r, i) {
+            function _e(e, t, r, i) {
                 const a = e === g.vC.Tweet || e === g.vC.TwitterArticle,
                     o = e === g.vC.TwitterArticle;
                 if (t.isSubtitles) return g.xz.Subtitles;
@@ -505,14 +497,14 @@
                 }
                 return a ? g.xz.TweetImage : g.xz.DMImage;
             }
-            function fe(e, t, r) {
+            function he(e, t, r) {
                 const { location: i, mediaFile: a } = e;
                 if (!i || !a) return null;
                 switch (i) {
                     case g.vC.Tweet:
                     case g.vC.Dm:
                     case g.vC.TwitterArticle:
-                        return he(i, a, t, r);
+                        return _e(i, a, t, r);
                     case g.vC.CommunityBanner:
                         return g.xz.CommunityBanner;
                     case g.vC.ListBanner:
@@ -523,35 +515,35 @@
                         return null;
                 }
             }
-            const Se = (e, t, r, i, a, o) => {
+            const fe = (e, t, r, i, a, o) => {
                 a?.reportOperationStart(w.BX.Hash, !0),
                     a?.setMetadata({ hashState: w.Xj.InProgress }),
                     (0, p.Q)(i, o)
                         .then((i) => {
                             const [o] = N(t(), r);
                             if (!o) {
-                                throw new V("Media item was removed", { code: p.S.HASHING_ABORTED, type: L, isGif: !1, isImage: !0, isVideo: !1 });
+                                throw new L("Media item was removed", { code: p.S.HASHING_ABORTED, type: B, isGif: !1, isImage: !0, isVideo: !1 });
                             }
-                            e(ie({ id: r, mediaFileHash: i, abortController: void 0 }));
+                            e(re({ id: r, mediaFileHash: i, abortController: void 0 }));
                             const { uploadPromise: s, uploader: n, uploading: d } = o;
                             s && d && n && n.amendUpload({ extraFinalizeParams: i ? `&original_md5=${i}` : void 0 }), a?.setMetadata({ hashState: w.Xj.Complete }), a?.reportOperationComplete(w.BX.Hash, w.Uk.Success);
                         })
                         .catch((i) => {
                             const [o] = N(t(), r);
-                            o && e(ie({ id: r, mediaFileHash: null, abortController: void 0 })), i.code === p.S.HASHING_ABORTED ? (a?.setMetadata({ hashState: w.Xj.Canceled }), a?.reportOperationComplete(w.BX.Hash, w.Uk.Cancel)) : (a?.setMetadata({ hashState: w.Xj.Failure }), a?.reportOperationComplete(w.BX.Hash, w.Uk.Failure));
+                            o && e(re({ id: r, mediaFileHash: null, abortController: void 0 })), i.code === p.S.HASHING_ABORTED ? (a?.setMetadata({ hashState: w.Xj.Canceled }), a?.reportOperationComplete(w.BX.Hash, w.Uk.Cancel)) : (a?.setMetadata({ hashState: w.Xj.Failure }), a?.reportOperationComplete(w.BX.Hash, w.Uk.Failure));
                         });
             };
-            P.Z.register({
-                [O]: function (e = B, t) {
+            C.Z.register({
+                [M]: function (e = z, t) {
                     if (!t) return e;
                     switch (t.type) {
-                        case X:
+                        case k:
                             return t.payload ? e.concat(t.payload) : e;
-                        case W: {
+                        case J: {
                             const r = t.payload;
                             return r && r.length ? e.filter((e) => -1 === r.indexOf(e.id)) : e;
                         }
-                        case te: {
+                        case ee: {
                             const r = t.payload;
                             return r
                                 ? e.map((e) => {
@@ -756,4 +748,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.Typeahead-cd7e5e1f.ec149d3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.Typeahead-cd7e5e1f.4775619a.js.map

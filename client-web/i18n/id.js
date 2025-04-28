@@ -2186,7 +2186,6 @@
                     return "Sepertinya video ini melebihi ukuran file maksimum untuk diunggah (" + a.human_readable_max_size + "GB).";
                 }),
                 i("cba4fdde", "Tayangkan dalam kualitas 1080p untuk penonton di X"),
-                i("c92702a0", "File MP4 ini mungkin rusak. Kami akan mencoba mengunggahnya, tetapi Anda mungkin perlu menggunakan file video yang berbeda jika gagal."),
                 i("ef8f5d90", "Disarankan"),
                 i("a7046fb0", "Jarang diperlukan"),
                 i("acf3ecf4", "Tambahkan media"),
@@ -2960,9 +2959,9 @@
                 i("c6f58084", "Pengembang"),
                 i("d83f18d2", "Direktori"),
                 i("hc5aa17c", "Dapatkan aplikasi X"),
-                i("j0693948", "Dapatkan aplikasi Grok");
-            i("fbf83158", "Peringatan: Pembayaran gagal"),
-                i("jadeb4da", "Harap langsung perbarui metode pembayaran Anda sebelum Anda kehilangan manfaat langganan."),
+                i("j0693948", "Dapatkan aplikasi Grok"),
+                i("fbf83158", "Peringatan: Pembayaran gagal");
+            i("jadeb4da", "Harap langsung perbarui metode pembayaran Anda sebelum Anda kehilangan manfaat langganan."),
                 i("bce3726a", "Perbarui Penagihan"),
                 i("fce9ecce", "Video yang disarankan"),
                 i("efe6ef9e", "Lihat postingan"),
@@ -3876,9 +3875,9 @@
                 i("d7357e7e", "Hapus sebagai Co-host"),
                 i("bf307fc0", "Blokir dan Hapus"),
                 i("ccf2f24e", "Laporkan"),
-                i("i22835de", "Setujui");
-            i("cb59a0fe", "Tolak"),
-                i("c2376960", "Permintaan untuk Berbicara"),
+                i("i22835de", "Setujui"),
+                i("cb59a0fe", "Tolak");
+            i("c2376960", "Permintaan untuk Berbicara"),
                 i("aba7dcdd", function (a) {
                     return "Undang " + a.name;
                 }),
@@ -4908,9 +4907,9 @@
                 i("a7b48b36", "Persentase penayangan video hingga selesai."),
                 i("a2580f2a", "Tingkat Penyelesaian"),
                 i("ff95a9cc", "ID video"),
-                i("a97e358e", "Tautan Video");
-            i("e10e8b46", "Hanya menampilkan video dari 100 hari terakhir."),
-                i("ba37f6da", "Ikhtisar video"),
+                i("a97e358e", "Tautan Video"),
+                i("e10e8b46", "Hanya menampilkan video dari 100 hari terakhir.");
+            i("ba37f6da", "Ikhtisar video"),
                 i("f19846b2", "Thumbnail video"),
                 i("ccd6f4a8", "Judul video"),
                 i("c8410542", "Berapa kali video Anda dilihat."),
@@ -5864,11 +5863,11 @@
                 i("a0ea2fa6", "Bidang nama tidak boleh kosong"),
                 i("eec37eac", "Folder Markah dengan nama tersebut sudah ada"),
                 i("fce0c59e", "Gagal mengurai JSON animasi. Harap periksa format JSON di file animasi Anda dan coba lagi."),
-                i("g0eea6c2", "Gagal membaca file JSON animasi. Coba buka file kembali.");
-            i("ae58026a", "Buka file .json Suka Bermerek untuk melihat pratinjau"),
-                i("hd0bc1eb", function (a) {
-                    return a.name + " sedang menyiarkan langsung";
-                }),
+                i("g0eea6c2", "Gagal membaca file JSON animasi. Coba buka file kembali."),
+                i("ae58026a", "Buka file .json Suka Bermerek untuk melihat pratinjau");
+            i("hd0bc1eb", function (a) {
+                return a.name + " sedang menyiarkan langsung";
+            }),
                 i("bea1f26b", function (a) {
                     return a.name + " telah menyiarkan langsung";
                 }),
@@ -6872,9 +6871,9 @@
                 i("fdd77a34", "Buat postingan yang lebih panjang"),
                 i("j6d26a7a", "Tulis sebanyak yang ingin Anda sebarkan"),
                 i("c4fd68da", "Sesuaikan pengalaman Anda"),
-                i("c0195168", "Ubah ikon aplikasi dan ikon navigasi Anda");
-            i("b6b5dc94", "Mendapatkan verifikasi"),
-                i("b06db848", "Menonjol dibandingkan yang lainnya di platform ini"),
+                i("c0195168", "Ubah ikon aplikasi dan ikon navigasi Anda"),
+                i("b6b5dc94", "Mendapatkan verifikasi");
+            i("b06db848", "Menonjol dibandingkan yang lainnya di platform ini"),
                 i("e3e3a97c", "Dapatkan bagi hasil pendapatan dari postingan Anda"),
                 i("f15bc24e", "Batas Grok yang lebih tinggi"),
                 i("c4666e1c", "Lebih leluasa menggunakan Grok 3, model terbaru kami"),
@@ -7848,7 +7847,8 @@
                 i("b33d1518", "Sinkronkan lowongan dari integrasi yang didukung atau feed XML khusus"),
                 i("dd2db402", "Langkah 1: Kumpulkan informasi yang diperlukan"),
                 i("edb098c2", "Langkah 2: Hubungi tim dukungan kami"),
-                i("c4474460", "Langkah 2: Kirimkan email kepada tim dukungan kami");
+                i("c4474460", "Langkah 2: Kirimkan email kepada tim dukungan kami"),
+                i("a08da0fa", "Lalu apa yang terjadi?");
             function r(a, n) {
                 for (var e = 0; e < n.length; e++) {
                     var i = n[e];
@@ -7887,8 +7887,7 @@
                     d(a, n)
                 );
             }
-            i("a08da0fa", "Lalu apa yang terjadi?"),
-                i("c127374e", "Kirimi kami pesan"),
+            i("c127374e", "Kirimi kami pesan"),
                 i("b2cb2a0c", "Nama pengguna akun Organisasi Terverifikasi Anda"),
                 i("b8e64002", "Nama sistem pelacakan pelamar Anda"),
                 i("acb99db6", "URL situs karier tempat lowongan Anda terdaftar"),
@@ -8890,9 +8889,9 @@
                 i("c057680c", "Kami tidak dapat memainkan video di browser ini. Silakan coba di browser web lain."),
                 i("i5dfae6e", "Video ini tidak tersedia di lokasi Anda."),
                 i("c2388276", "Video ini telah dihapus."),
-                i("d2c96140", "Indikator audio tamu");
-            i("f6dc9146", "PUTAR ULANG"),
-                i("d30c74fe", "Volume"),
+                i("d2c96140", "Indikator audio tamu"),
+                i("f6dc9146", "PUTAR ULANG");
+            i("d30c74fe", "Volume"),
                 i("f2d4e6f2", "Tonton lagi"),
                 i("e9f1af3a", "Cari tahu lebih lanjut"),
                 i("f1881d86", "Postingan ini tidak dapat dibalas, dibagikan, atau disukai."),
@@ -13235,4 +13234,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/id.30eecc5a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/id.fc61a5aa.js.map

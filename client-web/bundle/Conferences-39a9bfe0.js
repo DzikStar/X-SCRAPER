@@ -44,7 +44,7 @@
                 }, [e.affiliations?.affiliated_account_ids_results, t]);
             }
         },
-        618514: (e, t, n) => {
+        131631: (e, t, n) => {
             n.r(t), n.d(t, { ScheduledConferences: () => Oe, default: () => je });
             var r = n(807896),
                 l = (n(136728), n(202784)),
@@ -75,20 +75,20 @@
                 P = n(125363),
                 L = n(601576),
                 _ = n(919022),
-                z = n(115307),
-                I = n(923128),
+                I = n(115307),
+                z = n(923128),
                 R = n(477403),
                 j = n(956056),
                 B = n(878931),
-                H = n(526250),
-                W = (n(571372), n(459679)),
+                W = n(526250),
+                H = (n(571372), n(459679)),
                 F = n(516951),
                 N = n(536387),
                 V = n(601798);
             const O = (0, N.K9)(async (e) => {
                     const t = await e($).catch(() => {});
                     if (t)
-                        return (0, W.Z)(t.result.items, (e) => {
+                        return (0, H.Z)(t.result.items, (e) => {
                             const t = e.conferenceData?.entryPoints.find(({ entryPointType: e, uri: t }) => "video" === e && t.startsWith("https://x.com"))?.uri,
                                 n = "declined" === e.attendees?.find((e) => e.self)?.responseStatus;
                             if (!t || n) return;
@@ -114,7 +114,7 @@
                 });
             const K = (0, o.cn)(!1),
                 M = (0, N.K9)((e) => e(k.F6).getCalendarToken()),
-                q = (0, H.v)((e, t) => {
+                q = (0, W.v)((e, t) => {
                     const n = setInterval(() => {
                         t(M), e(O).catch(F.Z);
                     }, 6e4);
@@ -188,7 +188,7 @@
             const ee = l.memo(function () {
                     const e = (0, a.Dv)(O.resolved),
                         t = (0, a.Dv)(x.p_);
-                    return (0, H.N)(q), l.createElement(c.Z, { style: t ? de.roomContainer : de.container }, e ? l.createElement(ne, null) : l.createElement(le, null));
+                    return (0, W.N)(q), l.createElement(c.Z, { style: t ? de.roomContainer : de.container }, e ? l.createElement(ne, null) : l.createElement(le, null));
                 }),
                 te = 576e5;
             function ne() {
@@ -311,8 +311,10 @@
                     t(xe, !1), t(De, n.target.value);
                 }),
                 _e = y.default.create((e) => ({ button: { marginStart: e.spaces.space4 } }));
-            var ze = n(444595);
             function Ie() {
+                return l.createElement(p.ZP, { onClick: () => window.open("/i/conferences"), tabIndex: -1, type: "primaryText" });
+            }
+            function ze() {
                 l.useEffect(() => {
                     const e = setTimeout(
                         () => {
@@ -334,11 +336,11 @@
                 (0, b.b)(), (0, Re.z)(), (0, S.bu)();
                 const n = (0, Q.gt)(),
                     r = (0, a.Dv)(x.Fn);
-                return t.length ? (n ? (r ? l.createElement(He, null) : l.createElement(We, null)) : l.createElement(c.Z, { style: Ae.root }, l.createElement(i.ZP, { size: "title2" }, l.createElement(h.default, null), "Conferences"), l.createElement(c.Z, { style: Ae.inputRow }, l.createElement(Ge, null), l.createElement(c.Z, { style: Ae.separator }), l.createElement(Ee, null)), l.createElement(c.Z, { style: Ae.space16Vertical }), l.createElement(ee, null))) : l.createElement(I.Z, e);
+                return t.length ? (n ? (r ? l.createElement(We, null) : l.createElement(He, null)) : l.createElement(c.Z, { style: Ae.root }, l.createElement(i.ZP, { size: "title2" }, l.createElement(h.default, null), "Conferences"), l.createElement(c.Z, { style: Ae.inputRow }, l.createElement(Ge, null), l.createElement(c.Z, { style: Ae.separator }), l.createElement(Ee, null)), l.createElement(c.Z, { style: Ae.space16Vertical }), l.createElement(ee, null))) : l.createElement(z.Z, e);
             }
             const Be = u.Z.createLayoutCache();
-            function He() {
-                Ie();
+            function We() {
+                ze();
                 const e = (0, a.Dv)(x.p_),
                     t = (0, a.Dv)(x.lY),
                     n = (0, a.Dv)(S.fJ),
@@ -346,10 +348,10 @@
                     o = (0, v.C_)(r).rgb;
                 if (!r) return null;
                 const s = r.profile_banner_url;
-                return e ? (n ? l.createElement(c.Z, { style: Ae.rootLoading }, l.createElement(d.Z, null), ";") : l.createElement(c.Z, { style: Ae.rootRoomLeaderFollower }, s ? l.createElement(u.Z, { "aria-label": "", aspectMode: m.Z.COVER, backgroundColor: o, image: s, layoutCache: Be }) : l.createElement(c.Z, { style: Ae.backgroundProfile }, l.createElement(i.ZP, { size: "title1" }, l.createElement(h.default, null), "Conferences")), l.createElement(c.Z, { style: Ae.topBar }, l.createElement(i.ZP, { size: "headline1" }, l.createElement(h.default, null), "Conferences", l.createElement(c.Z, { style: Ae.space16Horizontal }), l.createElement(z.q, null), l.createElement(f.Z, null), l.createElement(z.u, null)), l.createElement(c.Z, { style: Ae.spacer }), l.createElement(i.ZP, { size: "headline1" }, r.name)), l.createElement(c.Z, { style: Ae.floatingSide }, l.createElement(c.Z, { style: Ae.calendarWrapper }, l.createElement(ee, null))))) : t ? l.createElement(c.Z, { style: Ae.rootRoomLeaderFollower }, l.createElement(c.Z, { style: Ae.topBar }, l.createElement(i.ZP, { size: "headline1" }, l.createElement(h.default, null), "Conferences", l.createElement(c.Z, { style: Ae.space16Horizontal }), l.createElement(z.q, null), l.createElement(f.Z, null), l.createElement(z.u, null)), l.createElement(c.Z, { style: Ae.spacer }), l.createElement(Fe, null)), l.createElement(c.Z, { style: Ae.leaderRow }, l.createElement(c.Z, { style: Ae.columnDetails }, l.createElement(i.ZP, { align: "center", size: "title2" }, r.name), l.createElement(c.Z, { style: Ae.space16Vertical }), l.createElement(c.Z, { style: Ae.inputRow }, l.createElement(Ge, null), l.createElement(c.Z, { style: Ae.separator }), l.createElement(Ee, null))), l.createElement(c.Z, { style: Ae.columnCalendar }, l.createElement(ee, null), l.createElement(ze.nH, null)))) : null;
+                return e ? (n ? l.createElement(c.Z, { style: Ae.rootLoading }, l.createElement(d.Z, null), ";") : l.createElement(c.Z, { style: Ae.rootRoomLeaderFollower }, s ? l.createElement(u.Z, { "aria-label": "", aspectMode: m.Z.COVER, backgroundColor: o, image: s, layoutCache: Be }) : l.createElement(c.Z, { style: Ae.backgroundProfile }, l.createElement(i.ZP, { size: "title1" }, l.createElement(h.default, null), "Conferences")), l.createElement(c.Z, { style: Ae.topBar }, l.createElement(i.ZP, { size: "headline1" }, l.createElement(h.default, null), "Conferences", l.createElement(c.Z, { style: Ae.space16Horizontal }), l.createElement(I.q, null), l.createElement(f.Z, null), l.createElement(I.u, null)), l.createElement(c.Z, { style: Ae.spacer }), l.createElement(i.ZP, { size: "headline1" }, r.name)), l.createElement(c.Z, { style: Ae.floatingSide }, l.createElement(c.Z, { style: Ae.calendarWrapper }, l.createElement(ee, null))))) : t ? l.createElement(c.Z, { style: Ae.rootRoomLeaderFollower }, l.createElement(c.Z, { style: Ae.topBar }, l.createElement(i.ZP, { size: "headline1" }, l.createElement(h.default, null), "Conferences", l.createElement(c.Z, { style: Ae.space16Horizontal }), l.createElement(I.q, null), l.createElement(f.Z, null), l.createElement(I.u, null)), l.createElement(c.Z, { style: Ae.spacer }), l.createElement(Fe, null)), l.createElement(c.Z, { style: Ae.leaderRow }, l.createElement(c.Z, { style: Ae.columnDetails }, l.createElement(i.ZP, { align: "center", size: "title2" }, r.name), l.createElement(c.Z, { style: Ae.space16Vertical }), l.createElement(c.Z, { style: Ae.inputRow }, l.createElement(Ge, null), l.createElement(c.Z, { style: Ae.separator }), l.createElement(Ee, null))), l.createElement(c.Z, { style: Ae.columnCalendar }, l.createElement(ee, null), l.createElement(Ie, null)))) : null;
             }
-            function We() {
-                return Ie(), l.createElement(c.Z, { style: Ae.rootRoom }, l.createElement(i.ZP, { align: "center", size: "title2" }, l.createElement(h.default, null), "Conferences"), l.createElement(c.Z, { style: Ae.inputRow }, l.createElement(Ge, null), l.createElement(c.Z, { style: Ae.separator }), l.createElement(Ee, null)), l.createElement(c.Z, { style: Ae.space16Vertical }), l.createElement(ee, null), l.createElement(c.Z, { style: Ae.topEnd }, l.createElement(Fe, null)), l.createElement(c.Z, { style: Ae.topStart }, l.createElement(ze.nH, null)));
+            function He() {
+                return ze(), l.createElement(c.Z, { style: Ae.rootRoom }, l.createElement(i.ZP, { align: "center", size: "title2" }, l.createElement(h.default, null), "Conferences"), l.createElement(c.Z, { style: Ae.inputRow }, l.createElement(Ge, null), l.createElement(c.Z, { style: Ae.separator }), l.createElement(Ee, null)), l.createElement(c.Z, { style: Ae.space16Vertical }), l.createElement(ee, null), l.createElement(c.Z, { style: Ae.topEnd }, l.createElement(Fe, null)), l.createElement(c.Z, { style: Ae.topStart }, l.createElement(Ie, null)));
             }
             function Fe() {
                 const e = (0, a.b9)(Ve);
@@ -536,4 +538,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Conferences-39a9bfe0.5d79455a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Conferences-39a9bfe0.8cf6586a.js.map

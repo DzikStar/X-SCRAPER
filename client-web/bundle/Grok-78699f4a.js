@@ -30,8 +30,8 @@
                 v = n(620988),
                 x = n(305442),
                 S = n(962379),
-                I = n(623494),
-                Z = n(976021),
+                Z = n(623494),
+                I = n(976021),
                 A = n(246277),
                 B = n(335785),
                 P = n(988290),
@@ -64,8 +64,8 @@
                 Ce = ve ? Ce : void 0;
                 const xe = (0, b.hC)("responsive_web_grok_file_upload_enabled"),
                     Se = (0, b.hC)("responsive_web_grok_show_citations"),
-                    Ie = (0, b.hC)("responsive_web_grok_personality_button_enabled"),
-                    [Ze, Ae] = a.useState(!1),
+                    Ze = (0, b.hC)("responsive_web_grok_personality_button_enabled"),
+                    [Ie, Ae] = a.useState(!1),
                     { loading: Be } = (0, S.Z)(),
                     Pe = a.useRef(Be),
                     Re = a.useRef(null),
@@ -231,17 +231,17 @@
                     [Ae],
                 );
                 a.useEffect(() => {
-                    !Ze || Fe || We || ot();
-                }, [Ze, Fe, ot, We]);
+                    !Ie || Fe || We || ot();
+                }, [Ie, Fe, ot, We]);
                 const lt = a.useCallback(
                         (0, m.Z)(() => {
-                            oe((0, D.I)({ analytics: re, conversationKey: t })), e && e.abort(), (0, I.DE)(re);
+                            oe((0, D.I)({ analytics: re, conversationKey: t })), e && e.abort(), (0, Z.DE)(re);
                         }, 50),
                         [Ue, e],
                     ),
                     dt = a.useCallback(
                         (e) => {
-                            xe && (_e(e[0]), (0, I.dP)(re, "clipboard"));
+                            xe && (_e(e[0]), (0, Z.dP)(re, "clipboard"));
                         },
                         [_e, re, xe],
                     ),
@@ -280,7 +280,7 @@
                             );
                     }, [Le, He, Te, st, ce, de]),
                     ut = !Be,
-                    mt = u && (!pe || !Ze) && !We,
+                    mt = u && (!pe || !Ie) && !We,
                     ht = { color: ze ? d.default.theme.colors.brandColor : d.default.theme.colors.gray700 };
                 a.useEffect(() => {
                     mt || tt();
@@ -310,9 +310,9 @@
                                         }),
                                     ),
                             ),
-                            a.createElement(r.Z, { style: ke || ue ? X.contentBelowRightCompact : X.contentBelowRight }, Ie && a.createElement(N.t, { conversationKey: t, disabled: Y, fadeIn: Pe.current, focused: me, inputAtBottom: G, inputAtHome: V }), !1, a.createElement(R.Z, { fadeIn: Pe.current }), a.createElement(F.Z, { isInProgress: !q, isLoading: Ze || We, isSendEnabled: qe, onSend: rt, onStop: lt, useMagicWandIcon: ne })),
+                            a.createElement(r.Z, { style: ke || ue ? X.contentBelowRightCompact : X.contentBelowRight }, Ze && a.createElement(N.t, { conversationKey: t, disabled: Y, fadeIn: Pe.current, focused: me, inputAtBottom: G, inputAtHome: V }), !1, a.createElement(R.Z, { fadeIn: Pe.current }), a.createElement(F.Z, { isInProgress: !q, isLoading: Ie || We, isSendEnabled: qe, onSend: rt, onStop: lt, useMagicWandIcon: ne })),
                         ),
-                    [ke, ue, ut, !0, se, me, ie.length, je, Ie, t, Y, G, V, q, Ze, We, qe, rt, lt, ne],
+                    [ke, ue, ut, !0, se, me, ie.length, je, Ze, t, Y, G, V, q, Ie, We, qe, rt, lt, ne],
                 );
                 return (
                     a.useEffect(() => {
@@ -322,7 +322,7 @@
                         if ((Me.text.length > 0 && Oe(Me.text), Me.attachments.length > 0)) for (const e of Me.attachments) $e(e);
                         Me.modeButtonFilterKey && (ye(Me.modeButtonFilterKey), st()), (Me.text.length > 0 || Me.attachments.length > 0 || Me.modeButtonFilterKey) && oe((0, w.Uo)(t, { text: "", attachments: [] }));
                     }, [Me, t, oe, $e, st, ye]),
-                    ae ? a.createElement(r.Z, { style: X.deprecatedContainer }, a.createElement(Z.P, { direction: i.Z.getTextDirection(ze) }, a.createElement(T.z, null), a.createElement(s.Z, { autoFocus: !pe, contentAbove: ct, editable: u && (!pe || !Ze) && !We, inputStyle: [X.inputStyle, ht], leftAligned: !0, leftContent: n ? void 0 : a.createElement(_.Z, { disabled: se, label: U }), maxNumberOfLines: 15, multiline: !0, numberOfLines: 1, onChange: Ye, onFilesAdded: dt, onKeyPress: it, placeholder: Q, ref: Re, rightContent: a.createElement(F.Z, { isInProgress: !q, isLoading: Ze || We, isSendEnabled: qe, onSend: rt, onStop: lt, useMagicWandIcon: ne }), style: X.deprecatedInputContainer, styleType: "selection", value: ze }))) : a.createElement(r.Z, { onClick: st, style: [X.container, me ? X.activeContainer : null] }, a.createElement(Z.P, { direction: i.Z.getTextDirection(ze) }, a.createElement(T.z, null), a.createElement(s.Z, { autoFocus: !pe, contentAbove: ct, contentBelow: pt, editable: mt, inputStyle: [X.inputStyle, ht], leftAligned: !0, maxNumberOfLines: 15, multiline: !0, numberOfLines: 1, onBlur: () => fe(!1), onChange: Ye, onFilesAdded: dt, onFocus: () => fe(!0), onKeyPress: it, placeholder: Q, ref: Re, style: X.inputContainer, styleType: "selection", value: ze })), je && a.createElement(H.Z, { arrowXStart: "50%", onAnimationEnd: () => Ge(null), subtitle: je.title, title: je.subtitle }))
+                    ae ? a.createElement(r.Z, { style: X.deprecatedContainer }, a.createElement(I.P, { direction: i.Z.getTextDirection(ze) }, a.createElement(T.z, null), a.createElement(s.Z, { autoFocus: !pe, contentAbove: ct, editable: u && (!pe || !Ie) && !We, inputStyle: [X.inputStyle, ht], leftAligned: !0, leftContent: n ? void 0 : a.createElement(_.Z, { disabled: se, label: U }), maxNumberOfLines: 15, multiline: !0, numberOfLines: 1, onChange: Ye, onFilesAdded: dt, onKeyPress: it, placeholder: Q, ref: Re, rightContent: a.createElement(F.Z, { isInProgress: !q, isLoading: Ie || We, isSendEnabled: qe, onSend: rt, onStop: lt, useMagicWandIcon: ne }), style: X.deprecatedInputContainer, styleType: "selection", value: ze }))) : a.createElement(r.Z, { onClick: st, style: [X.container, me ? X.activeContainer : null] }, a.createElement(I.P, { direction: i.Z.getTextDirection(ze) }, a.createElement(T.z, null), a.createElement(s.Z, { autoFocus: !pe, contentAbove: ct, contentBelow: pt, editable: mt, inputStyle: [X.inputStyle, ht], leftAligned: !0, maxNumberOfLines: 15, multiline: !0, numberOfLines: 1, onBlur: () => fe(!1), onChange: Ye, onFilesAdded: dt, onFocus: () => fe(!0), onKeyPress: it, placeholder: Q, ref: Re, style: X.inputContainer, styleType: "selection", value: ze })), je && a.createElement(H.Z, { arrowXStart: "50%", onAnimationEnd: () => Ge(null), subtitle: je.title, title: je.subtitle }))
                 );
             }
             const X = d.default.create((e) => {
@@ -416,14 +416,14 @@
                 const t = e.handle ? `/${e.handle}` : void 0;
                 return a.createElement(x.Z, { screenName: e.handle || "" }, a.createElement(m.ZP, { link: t }, e.text));
             }
-            const I = { level: 0 },
-                Z = a.createContext(I);
+            const Z = { level: 0 },
+                I = a.createContext(Z);
             function A({ token: e }) {
-                const { level: t } = a.useContext(Z),
+                const { level: t } = a.useContext(I),
                     n = [];
                 e.items?.length &&
                     e.items.forEach((e, o) => {
-                        n.push(a.createElement(Z.Provider, { key: `li-${o.toString()}`, value: { level: t + 1 } }, a.createElement(B, { isFirst: 0 === o, item: e, level: t })));
+                        n.push(a.createElement(I.Provider, { key: `li-${o.toString()}`, value: { level: t + 1 } }, a.createElement(B, { isFirst: 0 === o, item: e, level: t })));
                     });
                 const o = a.useMemo(
                     () =>
@@ -434,7 +434,7 @@
                         ][t] ?? { ...P.list, ...P.level4 },
                     [t],
                 );
-                return e.ordered ? a.createElement(Z.Provider, { value: { level: t + 1 } }, a.createElement("ol", { dir: e.direction, start: e.start, style: o }, n)) : a.createElement(Z.Provider, { value: { level: t + 1 } }, a.createElement("ul", { dir: e.direction, style: o }, n));
+                return e.ordered ? a.createElement(I.Provider, { value: { level: t + 1 } }, a.createElement("ol", { dir: e.direction, start: e.start, style: o }, n)) : a.createElement(I.Provider, { value: { level: t + 1 } }, a.createElement("ul", { dir: e.direction, style: o }, n));
             }
             const B = ({ isFirst: e, item: t, level: n }) => {
                     const o = [];
@@ -707,8 +707,8 @@
                 v = ({ webResult: e }) => a.createElement(f.Z, { style: x.hoverCardContainer }, a.createElement(C.p, { item: e })),
                 x = l.default.create((e) => ({ inlineContainer: { alignItems: "center", justifyContent: "center", display: "inline-flex", marginStart: e.spaces.space2, verticalAlign: "middle" }, animation: { opacity: 1, animationDuration: "1s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }] }, content: { transition: "filter 0.3s, transform 0.3s", filter: "grayscale(100%) opacity(0.7)", position: "relative", bottom: "0.1em" }, hoverCardContainer: { width: 350, maxWidth: "100%", pointerEvents: "none" }, faviconContainer: { backgroundColor: e.colors.whiteOnColor, borderRadius: e.borderRadii.small, borderWidth: e.spaces.space1, borderColor: e.colors.borderColor, overflow: "hidden" }, iconContainer: { backgroundColor: e.colors.gray100, borderRadius: e.borderRadii.small, padding: e.spaces.space1 }, containerHovered: { filter: "none", transform: "scale(1.2)" }, favicon: { width: 15, height: 15 }, linkIcon: { color: e.colors.gray800, width: 15, height: 15 } }));
             var S = n(323265),
-                I = n(301758),
-                Z = n(836255);
+                Z = n(301758),
+                I = n(836255);
             const A = "grok_citation_post",
                 B = ({ postId: e }) => {
                     const t = (0, u.oR)(),
@@ -724,9 +724,9 @@
                             l(!0), d.scribe({ action: "click", component: A, data: { tweet_id: e } });
                         }, [l, d, e]);
                     a.useEffect(() => {
-                        e && n(Z.Z.fetchOneIfNeeded(e));
+                        e && n(I.Z.fetchOneIfNeeded(e));
                     }, [n, e]);
-                    const m = Z.Z.selectHydrated(t.getState(), e),
+                    const m = I.Z.selectHydrated(t.getState(), e),
                         h = a.useCallback(() => a.createElement(P, { postId: e }), [e]);
                     if (!m) return null;
                     const b = m?.user?.profile_image_url_https;
@@ -736,7 +736,7 @@
                     a.createElement(
                         f.Z,
                         { style: R.hoverCardContainer },
-                        a.createElement(I.Z, {
+                        a.createElement(Z.Z, {
                             isCondensed: !0,
                             onPress: (e) => {
                                 S.ZP.isTwitterApp();
@@ -880,7 +880,6 @@
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7082ec04"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-c977f3f0"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-bde9e8ed"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-de203a7b"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-78eb13f6"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-83ae13c2"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
@@ -981,4 +980,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-78699f4a.29b305ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-78699f4a.13495d8a.js.map

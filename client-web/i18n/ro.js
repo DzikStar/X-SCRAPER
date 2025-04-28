@@ -2198,7 +2198,6 @@
                     return "Se pare că acest clip video depășește dimensiunea maximă a unui fișier care poate fi încărcat (" + e.human_readable_max_size + " GB).";
                 }),
                 t("cba4fdde", "Oferă spectatorilor de pe X conținut cu rezoluția de 1080p"),
-                t("c92702a0", "Este posibil ca acest fișier MP4 să fie corupt. Vom încerca să-l încărcăm, dar se poate să fie necesar să folosești un alt fișier video, dacă nu reușim."),
                 t("ef8f5d90", "Recomandat"),
                 t("a7046fb0", "Rareori necesar"),
                 t("acf3ecf4", "Adaugă conținut media"),
@@ -2972,9 +2971,9 @@
                 t("c6f58084", "Dezvoltatori"),
                 t("d83f18d2", "Director"),
                 t("hc5aa17c", "Obţine aplicația X"),
-                t("j0693948", "Obține aplicația Grok");
-            t("fbf83158", "Avertisment: plata a eșuat"),
-                t("jadeb4da", "Actualizează-ți urgent metoda de plată pentru a nu-ți pierde beneficiile abonamentului."),
+                t("j0693948", "Obține aplicația Grok"),
+                t("fbf83158", "Avertisment: plata a eșuat");
+            t("jadeb4da", "Actualizează-ți urgent metoda de plată pentru a nu-ți pierde beneficiile abonamentului."),
                 t("bce3726a", "Actualizare informații de facturare"),
                 t("fce9ecce", "Videoclipuri sugerate"),
                 t("efe6ef9e", "Vizualizează postarea"),
@@ -3888,9 +3887,9 @@
                 t("d7357e7e", "Elimină din co-gazde"),
                 t("bf307fc0", "Blochează și elimină"),
                 t("ccf2f24e", "Raport"),
-                t("i22835de", "Aprobă");
-            t("cb59a0fe", "Refuză"),
-                t("c2376960", "Solicitări de a vorbi"),
+                t("i22835de", "Aprobă"),
+                t("cb59a0fe", "Refuză");
+            t("c2376960", "Solicitări de a vorbi"),
                 t("aba7dcdd", function (e) {
                     return "Invită utilizatorul pe nume " + e.name;
                 }),
@@ -4920,9 +4919,9 @@
                 t("a7b48b36", "Procentul de vizualizări complete ale videoclipurilor."),
                 t("a2580f2a", "Rata de finalizare"),
                 t("ff95a9cc", "ID videoclip"),
-                t("a97e358e", "Link videoclip");
-            t("e10e8b46", "Se afișează doar videoclipuri din ultimele 100 de zile."),
-                t("ba37f6da", "Imagine de ansamblu videoclip"),
+                t("a97e358e", "Link videoclip"),
+                t("e10e8b46", "Se afișează doar videoclipuri din ultimele 100 de zile.");
+            t("ba37f6da", "Imagine de ansamblu videoclip"),
                 t("f19846b2", "Miniatură videoclip"),
                 t("ccd6f4a8", "Titlu videoclip"),
                 t("c8410542", "De câte ori a fost văzut videoclipul."),
@@ -5876,11 +5875,11 @@
                 t("a0ea2fa6", "Câmpul cu nume nu poate rămâne necompletat"),
                 t("eec37eac", "Folderul Marcaje cu acest nume există deja"),
                 t("fce0c59e", "Nu s-a putut analiza animația JSON. Verifică formatul JSON în fișierul tău de animație și încearcă din nou."),
-                t("g0eea6c2", "Nu s-a putut citi fișierul de animație JSON. Încearcă să deschizi din nou fișierul.");
-            t("ae58026a", "Deschide un fișier Apreciere de marcă .json pentru previzualizare"),
-                t("hd0bc1eb", function (e) {
-                    return e.name + " este în direct";
-                }),
+                t("g0eea6c2", "Nu s-a putut citi fișierul de animație JSON. Încearcă să deschizi din nou fișierul."),
+                t("ae58026a", "Deschide un fișier Apreciere de marcă .json pentru previzualizare");
+            t("hd0bc1eb", function (e) {
+                return e.name + " este în direct";
+            }),
                 t("bea1f26b", function (e) {
                     return e.name + " a fost în direct";
                 }),
@@ -6884,9 +6883,9 @@
                 t("fdd77a34", "Creează postări mai lungi"),
                 t("j6d26a7a", "Scrie oricât vrei să distribui"),
                 t("c4fd68da", "Personalizează-ți experiența"),
-                t("c0195168", "Schimbă-ți pictograma aplicației și opțiunile de navigare");
-            t("b6b5dc94", "Devino utilizator verificat"),
-                t("b06db848", "Ieși în evidență pe platformă"),
+                t("c0195168", "Schimbă-ți pictograma aplicației și opțiunile de navigare"),
+                t("b6b5dc94", "Devino utilizator verificat");
+            t("b06db848", "Ieși în evidență pe platformă"),
                 t("e3e3a97c", "Câștigă o cotă-parte din veniturile obținute din postările tale"),
                 t("f15bc24e", "Limite extinse pentru Grok"),
                 t("c4666e1c", "Capacitatea de a utiliza mai mult Grok 3, cel mai recent model al nostru"),
@@ -7860,7 +7859,8 @@
                 t("b33d1518", "Sincronizează locurile de muncă dintr-o integrare acceptată sau dintr-un flux personalizat XML"),
                 t("dd2db402", "Pasul 1: Colectează informațiile necesare"),
                 t("edb098c2", "Pasul 2: contactează echipa noastră de asistență"),
-                t("c4474460", "Pasul 2: Trimite un e-mail echipei de asistență");
+                t("c4474460", "Pasul 2: Trimite un e-mail echipei de asistență"),
+                t("a08da0fa", "Ce se întâmplă în continuare?");
             function c(e, a) {
                 for (var i = 0; i < a.length; i++) {
                     var t = a[i];
@@ -7899,8 +7899,7 @@
                     u(e, a)
                 );
             }
-            t("a08da0fa", "Ce se întâmplă în continuare?"),
-                t("c127374e", "Trimite-ne un mesaj"),
+            t("c127374e", "Trimite-ne un mesaj"),
                 t("b2cb2a0c", "Numele de utilizator al contului tău Organizații verificate"),
                 t("b8e64002", "Numele sistemului de monitorizare a candidaților"),
                 t("acb99db6", "URL-ul la site-ul cu cariere, unde sunt enumerate locurile de muncă"),
@@ -8902,9 +8901,9 @@
                 t("c057680c", "Nu putem reda videoclipul în acest browser. Încearcă un alt browser web."),
                 t("i5dfae6e", "Acest videoclip nu este disponibil în locația ta."),
                 t("c2388276", "Acest videoclip a fost șters."),
-                t("d2c96140", "Indicator audio pentru invitați");
-            t("f6dc9146", "REDĂ DIN NOU"),
-                t("d30c74fe", "Volum"),
+                t("d2c96140", "Indicator audio pentru invitați"),
+                t("f6dc9146", "REDĂ DIN NOU");
+            t("d30c74fe", "Volum"),
                 t("f2d4e6f2", "Urmărește din nou"),
                 t("e9f1af3a", "Află mai multe"),
                 t("f1881d86", "Această postare nu poate primi răspunsuri și nu poate fi distribuită sau apreciată."),
@@ -13250,4 +13249,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ro.0650a62a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ro.7dd91d6a.js.map

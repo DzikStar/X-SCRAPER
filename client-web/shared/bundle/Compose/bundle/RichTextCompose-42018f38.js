@@ -185,9 +185,7 @@
                     if (n) return "";
                     return A.callout_text;
                 })(t, r, n);
-                n && ((c = `${s}: ${R(t, r)}`), (d = void 0));
-                const p = !1 === t?.muxedMetadata?.hasMoov && (t?.mediaFile?.name || "").toLowerCase().endsWith(".mp4");
-                return a.createElement(i.Z, null, p && a.createElement(a.Fragment, null, a.createElement(l.Z, { size: "space8" }), a.createElement(o.Z.Attention, { text: A.corrupted_video })), a.createElement(S, { mediaItem: t }), a.createElement(l.Z, { size: "space8" }), a.createElement(o.Z.Primary, { action: d, headline: c, text: m }));
+                return n && ((c = `${s}: ${R(t, r)}`), (d = void 0)), a.createElement(i.Z, null, a.createElement(S, { mediaItem: t }), a.createElement(l.Z, { size: "space8" }), a.createElement(o.Z.Primary, { action: d, headline: c, text: m }));
             }
             function R(e, t) {
                 const n = z(e.uploadProgress || 0);
@@ -205,7 +203,7 @@
                 const i = L(n);
                 return A.uploading({ percent: i });
             }
-            const A = { error: c().c20aaf3e, uploaded: c().e4472565, processing: c().a06fa8fd, uploading: c().h7f340e5, learn_more: c().i859a9d4, callout_text: c().ee016dd6, file_too_big_error: c().daad8822, callout_text_file_too_big: c().i8ff6261, deliver_1080p_variant: c().cba4fdde, corrupted_video: c().c92702a0 },
+            const A = { error: c().c20aaf3e, uploaded: c().e4472565, processing: c().a06fa8fd, uploading: c().h7f340e5, learn_more: c().i859a9d4, callout_text: c().ee016dd6, file_too_big_error: c().daad8822, callout_text_file_too_big: c().i8ff6261, deliver_1080p_variant: c().cba4fdde },
                 z = (e) => (0, d.Z)(e, 0, 1),
                 L = (e) => Math.floor(100 * e),
                 D = (0, r.ju)("https://help.x.com/using-twitter/twitter-videos");
@@ -348,8 +346,8 @@
                     const A = Object.freeze({ all: { icon: Z, label: u().i8ea6d4e }, community: { icon: T, label: u().a176d0d8 }, by_invitation: { icon: v, label: u().gc7e52ca }, subscribers: { icon: Z, label: u().feb7560a }, community_members: { icon: k, label: u().h257006e }, super_followers_exclusive: { icon: Z, label: u().ebe1d850 }, trusted_friends_tweet: { icon: S, label: x }, verified: { icon: P, label: u().b121464a }, premium: { icon: P, label: u().e69ada9e } }),
                         { icon: z, label: L } = A[h],
                         [D, M] = a.useState(!1),
-                        F = a.useRef(null),
-                        O = (0, E.hC)("communities_show_broadcast_option_in_composer") && h === C.k.community_members && !b;
+                        O = a.useRef(null),
+                        F = (0, E.hC)("communities_show_broadcast_option_in_composer") && h === C.k.community_members && !b;
                     (0, _.q)(() => {
                         h !== C.k.all && h !== C.k.community_members && h !== C.k.premium && M(!0);
                     });
@@ -362,7 +360,7 @@
                         W = a.useCallback(() => {
                             c(!n);
                         }, [c, n]);
-                    return a.createElement(i.Z, { style: R.educationContainer }, D ? a.createElement(y.Z, { buttonRef: F }) : null, a.createElement(i.Z, { style: R.controlsContainer }, O ? a.createElement(l.Z, { "aria-label": I, onClick: W, style: R.broadcastContainer }, a.createElement(o.Z, { checked: !!n }), a.createElement(r.ZP, { color: "gray700", size: "subtext1", weight: "bold" }, I)) : a.createElement(w.Z, d, a.createElement(s.ZP, { "aria-label": L, disabled: m, icon: z, onPress: V, ref: F, size: "xSmall", style: R.button, type: "brandText" }, L))));
+                    return a.createElement(i.Z, { style: R.educationContainer }, D ? a.createElement(y.Z, { buttonRef: O }) : null, a.createElement(i.Z, { style: R.controlsContainer }, F ? a.createElement(l.Z, { "aria-label": I, onClick: W, style: R.broadcastContainer }, a.createElement(o.Z, { checked: !!n }), a.createElement(r.ZP, { color: "gray700", size: "subtext1", weight: "bold" }, I)) : a.createElement(w.Z, d, a.createElement(s.ZP, { "aria-label": L, disabled: m, icon: z, onPress: V, ref: O, size: "xSmall", style: R.button, type: "brandText" }, L))));
                 }),
                 R = c.default.create((e) => ({ button: { paddingHorizontal: e.spacesPx.space8 + e.spacesPx.space2 }, educationContainer: { display: "inline-flex", flexDirection: "column" }, controlsContainer: { display: "inline-flex", flexDirection: "row", paddingBottom: e.spaces.space12 }, broadcastContainer: { flexDirection: "row", gap: e.spaces.space8, alignItems: "center", padding: e.spaces.space2, marginStart: e.spacesPx.space16 - e.spacesPx.space1 } }));
         },
@@ -429,12 +427,12 @@
                                         checked: e.disallowedReplyControls.includes(w.m.Links),
                                         label: b().ca6500a8,
                                         onChange:
-                                            ((F = w.m.Links),
+                                            ((O = w.m.Links),
                                             () => {
-                                                if (e.disallowedReplyControls.includes(F)) e.setDisallowedReplyControls(e.disallowedReplyControls.filter((e) => e !== F));
+                                                if (e.disallowedReplyControls.includes(O)) e.setDisallowedReplyControls(e.disallowedReplyControls.filter((e) => e !== O));
                                                 else {
                                                     const t = new Set([...e.disallowedReplyControls]);
-                                                    t.add(F), e.setDisallowedReplyControls([...t]);
+                                                    t.add(O), e.setDisallowedReplyControls([...t]);
                                                 }
                                             }),
                                         style: A.disallowLinkRepliesCheck,
@@ -443,7 +441,7 @@
                             ),
                         )
                     );
-                    var F;
+                    var O;
                 },
                 L = (e) => {
                     const { children: t, controlled: n = !1, disabled: r } = e,
@@ -525,4 +523,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Compose~bundle.RichTextCompose-42018f38.6c11253a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Compose~bundle.RichTextCompose-42018f38.fa2894ea.js.map

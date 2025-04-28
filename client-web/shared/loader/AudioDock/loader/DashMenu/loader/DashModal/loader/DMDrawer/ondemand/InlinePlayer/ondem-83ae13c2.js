@@ -95,7 +95,7 @@
                         }
                     }
                     return !0;
-                })(n()(f, e));
+                })(n()(g, e));
             }
             function m(e) {
                 const t = e?.viewer?.user_results?.result;
@@ -109,10 +109,10 @@
                 return !0;
             }
             const _ = a.Z,
-                f = r.Z;
+                g = r.Z;
         },
         497294: (e, t, i) => {
-            i.d(t, { $i: () => me, C4: () => q, G$: () => Q, Q6: () => J, TU: () => K, WU: () => ee, _B: () => oe, _J: () => re, _T: () => G, dD: () => ae, gz: () => L, m3: () => k, o6: () => de, oZ: () => _e, pJ: () => ce, rA: () => $ });
+            i.d(t, { $i: () => pe, C4: () => Y, G$: () => q, Q6: () => $, TU: () => W, WU: () => K, _B: () => ae, _J: () => ie, _T: () => k, dD: () => re, gz: () => V, m3: () => L, o6: () => se, oZ: () => me, pJ: () => ue, rA: () => j });
             i(571372), i(136728);
             var r = i(99107),
                 a = i(411916),
@@ -126,48 +126,47 @@
                 p = i(514354),
                 m = i(908478),
                 _ = i(417144),
-                f = i(904940),
-                g = i(918621),
+                g = i(904940),
+                f = i(918621),
                 h = i(829053),
                 w = i(716233),
                 y = i(166677),
                 v = i(221562),
                 b = i(755296),
-                S = i(135698),
-                I = i(946208),
-                P = i(540387),
-                E = i(653798),
-                x = i(499627),
+                S = i(946208),
+                I = i(540387),
+                P = i(653798),
+                E = i(499627),
                 A = i(917799),
-                M = i(390387),
-                C = i(38562),
-                T = i(601576),
-                U = i(111531),
-                F = i(537052);
-            const O = l().g40ff2b4,
-                D = "mediaUpload",
-                B = (window.location.host.includes("twitter.com") ? "https://upload.twitter.com" : "https://upload.x.com") + "/i/media/upload2.json",
-                z = `rweb/${D}`,
-                N = [],
-                X = "upload";
-            class Z extends Error {
+                x = i(390387),
+                M = i(38562),
+                C = i(601576),
+                T = i(111531),
+                U = i(537052);
+            const F = l().g40ff2b4,
+                O = "mediaUpload",
+                D = (window.location.host.includes("twitter.com") ? "https://upload.twitter.com" : "https://upload.x.com") + "/i/media/upload2.json",
+                z = `rweb/${O}`,
+                B = [],
+                N = "upload";
+            class X extends Error {
                 constructor(e, { code: t, isGif: i, isImage: r, isVideo: a, type: o }) {
                     super(e), (this.code = t), (this.type = o), (this.isGif = !!i), (this.isImage = !!r), (this.isVideo = !!a);
                 }
             }
-            function V(e, t, i) {
+            function Z(e, t, i) {
                 let a = null,
                     o = {},
                     n = {};
                 if ((t.getNumberValue("optimized_sru_parameters_enabled") && (n = { sruParameterOverrides: { minSegmentBytes: t.getNumberValue("optimized_sru_parameters_min_segment_bytes"), idealUploadTimeMs: t.getNumberValue("optimized_sru_parameters_ideal_upload_time_ms"), maxSegmentBytes: t.getNumberValue("optimized_sru_parameters_max_segment_bytes"), clientsideSruUploadTimeoutMs: t.getNumberValue("optimized_sru_parameters_client_side_timeout_ms") } }), (0, b.s)().isLoggedIn)) {
-                    const e = (0, g.ej)({ cookieName: r.qj, featureSwitches: t });
+                    const e = (0, f.ej)({ cookieName: r.qj, featureSwitches: t });
                     if (e) {
                         const t = i?.actAsUserId;
                         n.sruHeaders = { ...(0, h.L)(t), "x-twitter-auth-type": "OAuth2Session", authorization: (0, r.Oj)(!1), [r.d4]: e };
                     }
                 }
                 return (
-                    i?.useLongVideoEndpoint && (n.uploadUrl = B),
+                    i?.useLongVideoEndpoint && (n.uploadUrl = D),
                     {
                         upload(t) {
                             (a = new _.Z(e, n)), (o = t), a.upload(o);
@@ -184,42 +183,42 @@
                     }
                 );
             }
-            const L = (e) => e[D],
-                k = (e, t) => {
+            const V = (e) => e[O],
+                L = (e, t) => {
                     const i = Array.isArray(t) ? t : [t];
-                    return e[D].filter((e) => i.some((t) => t === e.id));
+                    return e[O].filter((e) => i.some((t) => t === e.id));
                 },
-                G = (e, t) => {
-                    const i = k(e, t);
+                k = (e, t) => {
+                    const i = L(e, t);
                     if (!i.length) return 0;
                     const r = i.reduce((e, t) => e + (t.uploadProgress || 0), 0) / i.length;
                     return Math.min(r, 1);
                 },
-                H = "rweb/mediaUpload/ADD_MEDIA",
-                R = (e) => ({ payload: e, type: H });
-            let j = 1;
-            function $(e, t) {
+                G = "rweb/mediaUpload/ADD_MEDIA",
+                R = (e) => ({ payload: e, type: G });
+            let H = 1;
+            function j(e, t) {
                 return (i, r, { featureSwitches: a, relayEnvironment: o }) => {
                     const n = Array.from(e, (e) => {
-                            if ((0, P.Wv)(e)) {
-                                const i = new P.ZP(e, t.isAmplify);
+                            if ((0, I.Wv)(e)) {
+                                const i = new I.ZP(e, t.isAmplify);
                                 if ((0, w.TO)(e)) {
                                     const e = a.isTrue("responsive_web_hevc_upload_preview_enabled") && a.isTrue("responsive_web_composer_configurable_video_player_enabled");
                                     return i.withDimensionsAndOrientation(e);
                                 }
                                 return Promise.resolve(i);
                             }
-                            return (0, I.h_)(e) ? Promise.resolve(new I.ZP(e)) : new u.ZP(e).withDimensionsAndOrientation();
+                            return (0, S.h_)(e) ? Promise.resolve(new S.ZP(e)) : new u.ZP(e).withDimensionsAndOrientation();
                         }),
                         d = i((e, t, { relayEnvironment: i }) =>
-                            s()(i, E.S, {}, { fetchPolicy: "store-or-network" })
+                            s()(i, P.S, {}, { fetchPolicy: "store-or-network" })
                                 .toPromise()
                                 .then((e) => {
                                     const t = e?.viewer?.user_results?.result;
                                     return "User" === t?.__typename && (t?.sensitive_media_settings?.can_user_allow_sensitive_content ?? !1);
                                 })
                                 .catch(() => !1),
-                        ).then((e) => e && (0, U.K3)(o));
+                        ).then((e) => e && (0, T.K3)(o));
                     return Promise.all(n)
                         .then(
                             (e) => {
@@ -227,18 +226,18 @@
                                     (function (e, t) {
                                         return (i, r, { featureSwitches: a, userClaims: o }) => {
                                             const { uploadIds: n = [], altTexts: s = [] } = t,
-                                                d = (0, C.IX)(r()),
+                                                d = (0, M.IX)(r()),
                                                 l = (Array.isArray(e) ? e : [e]).map((e, l) => {
                                                     const p = a.isTrue("responsive_web_media_upload_metrics_enabled");
                                                     let m;
-                                                    t.location && (m = fe(t.location, e, !1, { featureSwitches: a, userClaims: o }));
-                                                    const _ = e instanceof P.ZP ? e.duration : void 0,
-                                                        f = e instanceof u.ZP ? e.orientation : void 0,
-                                                        g = p && m ? new v.ZP({ isExternal: !1, mediaCategory: m, videoDuration: _ }, d) : void 0,
+                                                    t.location && (m = _e(t.location, e, !1, { featureSwitches: a, userClaims: o }));
+                                                    const _ = e instanceof I.ZP ? e.duration : void 0,
+                                                        g = e instanceof u.ZP ? e.orientation : void 0,
+                                                        f = p && m ? new v.ZP({ isExternal: !1, mediaCategory: m, videoDuration: _ }, d) : void 0,
                                                         h = a.isTrue("responsive_web_media_upload_md5_hashing_enabled") && e.isImage && e instanceof u.ZP,
                                                         y = a.getNumberValue("responsive_web_media_upload_target_jpg_pixels_per_byte");
                                                     return (
-                                                        e instanceof P.ZP &&
+                                                        e instanceof I.ZP &&
                                                             (function (e) {
                                                                 const { video: t } = e;
                                                                 t &&
@@ -250,14 +249,14 @@
                                                                         i.getContext("2d").drawImage(t, 0, 0, a, r), (e.thumbnail = i.toDataURL("image/png"));
                                                                     }));
                                                             })(e),
-                                                        g?.setFileMetadata({ fileSize: e.size, mime: e.type, duration: _, width: e.width, height: e.height, orientation: f }),
+                                                        f?.setFileMetadata({ fileSize: e.size, mime: e.type, duration: _, width: e.width, height: e.height, orientation: g }),
                                                         (0, w.vn)(a, o, e, t, d).then(({ maxDimension: d, maxFileSize: p }) => {
                                                             const m = e.isImage && e instanceof u.ZP && (0, c.m2)(e, { maxFileSize: p, maxDimension: d, jpgPixelsPerByteForResize: y }),
                                                                 _ = (0, w.SB)({ featureSwitches: a, userClaims: o }),
-                                                                f = { useLongVideoEndpoint: e.isVideo && _ >= 1, actAsUserId: (0, M.dY)(r()) },
-                                                                v = m ? void 0 : V(e.fileHandle, a, f),
-                                                                b = Y({ originalMediaFile: e, mediaFile: e, mediaFileHash: h ? void 0 : null, needsProcessing: m, location: t.location, uploadId: n[l] ?? "", reporter: g, uploader: v, mediaMetadata: { altText: s[l] }, abortController: h ? new AbortController() : void 0 });
-                                                            return h && he(i, r, b.id, e.fileHandle, b.reporter, b.abortController), b;
+                                                                g = { useLongVideoEndpoint: e.isVideo && _ >= 1, actAsUserId: (0, x.dY)(r()) },
+                                                                v = m ? void 0 : Z(e.fileHandle, a, g),
+                                                                b = J({ originalMediaFile: e, mediaFile: e, mediaFileHash: h ? void 0 : null, needsProcessing: m, location: t.location, uploadId: n[l] ?? "", reporter: f, uploader: v, mediaMetadata: { altText: s[l] }, abortController: h ? new AbortController() : void 0 });
+                                                            return h && fe(i, r, b.id, e.fileHandle, b.reporter, b.abortController), b;
                                                         })
                                                     );
                                                 });
@@ -269,46 +268,46 @@
                             },
                             (e) => {
                                 const t = (0, y.vK)(e);
-                                return t && i((0, T.fz)(t)), Promise.reject(e);
+                                return t && i((0, C.fz)(t)), Promise.reject(e);
                             },
                         )
                         .then((e) =>
                             d
                                 .then((t) => {
-                                    if (t) for (const t of e) i(oe(t.id, { ...t.mediaMetadata, allowDownloadStatus: { allowDownload: !0 } }));
+                                    if (t) for (const t of e) i(ae(t.id, { ...t.mediaMetadata, allowDownloadStatus: { allowDownload: !0 } }));
                                     return e;
                                 })
                                 .catch(() => e),
                         );
                 };
             }
-            const J =
+            const $ =
                 ({ height: e, mediaCategory: t, mediaType: i, previewMediaType: r, previewUrl: a, sourceUrl: o, stillMediaUrl: n, width: s }) =>
                 (d, l, { featureSwitches: u }) => {
                     const c = u.isTrue("responsive_web_media_upload_metrics_enabled") && t ? new v.ZP({ isExternal: !0, mediaCategory: t }) : void 0;
                     c?.reportOperationStart(v.BX.Full, !0);
-                    const p = { actAsUserId: (0, M.dY)(l()) },
-                        m = Y({ externalMediaDetails: { mediaCategory: t, mediaType: i, previewUrl: a || o, previewMediaType: r || i, sourceUrl: o, stillMediaUrl: n, width: s, height: e }, reporter: c, uploader: V(null, u, p) });
+                    const p = { actAsUserId: (0, x.dY)(l()) },
+                        m = J({ externalMediaDetails: { mediaCategory: t, mediaType: i, previewUrl: a || o, previewMediaType: r || i, sourceUrl: o, stillMediaUrl: n, width: s, height: e }, reporter: c, uploader: Z(null, u, p) });
                     return d(R(m)), c?.toggleOperationPaused(v.BX.Full, !0), [m];
                 };
-            function Y(e) {
-                const t = { ...e, id: j, uploadFailed: !1, uploading: !1, uploadProgress: 1, mediaMetadata: void 0 };
-                return (j += 1), t.uploadId || ((t.uploadId = ""), (t.uploadProgress = 0)), t;
+            function J(e) {
+                const t = { ...e, id: H, uploadFailed: !1, uploading: !1, uploadProgress: 1, mediaMetadata: void 0 };
+                return (H += 1), t.uploadId || ((t.uploadId = ""), (t.uploadProgress = 0)), t;
             }
-            const q =
+            const Y =
                     (e) =>
                     (t, i, { featureSwitches: r, userClaims: a }) => {
-                        const [o] = k(i(), e);
+                        const [o] = L(i(), e);
                         if (!o) return Promise.reject(new Error("media item not found"));
                         const { abortController: n, cropData: s, id: d, location: l, mediaFile: p, needsProcessing: m, originalMediaFile: _ } = o;
                         if (!_) return Promise.reject(new Error("media item not found"));
-                        const f = r.getNumberValue("responsive_web_media_upload_target_jpg_pixels_per_byte"),
-                            g = (0, C.IX)(i()),
+                        const g = r.getNumberValue("responsive_web_media_upload_target_jpg_pixels_per_byte"),
+                            f = (0, M.IX)(i()),
                             h = { location: l };
-                        return (0, w.vn)(r, a, _, h, g).then((e) => {
-                            const a = { cropData: s, jpgPixelsPerByteForResize: f, maxFileSize: e.maxFileSize, maxDimension: e.maxDimension },
+                        return (0, w.vn)(r, a, _, h, f).then((e) => {
+                            const a = { cropData: s, jpgPixelsPerByteForResize: g, maxFileSize: e.maxFileSize, maxDimension: e.maxDimension },
                                 l = e.maxFileSize || 0,
-                                g = e.maxDuration || 0;
+                                f = e.maxDuration || 0;
                             if (_.isImage && _ instanceof u.ZP)
                                 return m
                                     ? (0, c.ZP)(_, a)
@@ -320,24 +319,24 @@
                                           )
                                           .then((e) => {
                                               _ !== p && p && p.dispose(), o.uploader && o.uploader.cancel && o.uploader.cancel();
-                                              const a = { actAsUserId: (0, M.dY)(i()) },
-                                                  n = V(e.fileHandle, r, a),
-                                                  s = t(re({ id: d, mediaFile: e, needsProcessing: !1, uploadPromise: void 0, uploadProgress: 0, uploading: !1, uploadId: void 0, uploader: n }));
-                                              return (o.uploadId || o.uploading) && t(me([d])), s;
+                                              const a = { actAsUserId: (0, x.dY)(i()) },
+                                                  n = Z(e.fileHandle, r, a),
+                                                  s = t(ie({ id: d, mediaFile: e, needsProcessing: !1, uploadPromise: void 0, uploadProgress: 0, uploading: !1, uploadId: void 0, uploader: n }));
+                                              return (o.uploadId || o.uploading) && t(pe([d])), s;
                                           })
                                     : Promise.resolve(o);
                             if (_.size > l) {
                                 const e = Error("Exceeds size limit");
                                 return ([e.type, e.code, e.limit] = ["maxsize", _.isGif ? w.BW.GIF_IS_TOO_LARGE : w.BW.VIDEO_IS_TOO_LARGE, l]), Promise.reject(e);
                             }
-                            if (_.isVideo && _ instanceof P.ZP && _.duration > g) {
+                            if (_.isVideo && _ instanceof I.ZP && _.duration > f) {
                                 const e = Error("Exceeds duration limit");
-                                return ([e.type, e.code, e.limit] = ["maxduration", w.ff.VIDEO_IS_TOO_LONG, g]), Promise.reject(e);
+                                return ([e.type, e.code, e.limit] = ["maxduration", w.ff.VIDEO_IS_TOO_LONG, f]), Promise.reject(e);
                             }
                             return Promise.resolve(o);
                         });
                     },
-                Q = (e, t) => (i, r) => {
+                q = (e, t) => (i, r) => {
                     const { onFailure: a } = t,
                         n = [];
                     return new Promise((t, r) => {
@@ -348,13 +347,13 @@
                                 r.reporter?.reportOperationStart(v.BX.Full, !0),
                                     r.reporter?.reportOperationStart([v.BX.Processing, v.BX.Metadata]),
                                     r.reporter?.reportOperationComplete(v.BX.Metadata, v.Uk.Complete),
-                                    i(q(r.id)).then(
+                                    i(Y(r.id)).then(
                                         (t) => {
                                             n.push(t), t?.reporter?.reportOperationComplete(v.BX.Processing, v.Uk.Success), t?.reporter?.toggleOperationPaused(v.BX.Full, !0), s(e.slice(1));
                                         },
                                         (t) => {
-                                            const o = (0, y.ZP)(t, O);
-                                            o && i((0, T.fz)(o));
+                                            const o = (0, y.ZP)(t, F);
+                                            o && i((0, C.fz)(o));
                                             const { code: n, message: d, name: l, type: u } = t;
                                             r.reporter?.setMetadata({ reason: { name: l, message: d, code: n } });
                                             const p = "maxsize" === u || "maxduration" === u || ("resize" === u && (n === c.Y7.FILE_IS_NOT_AN_IMAGE || n === c.Y7.GIF_IS_TOO_LARGE)) ? v.Uk.Invalid : v.Uk.Failure;
@@ -366,96 +365,96 @@
                         s(e);
                     });
                 },
-                W = "rweb/mediaUpload/REMOVE_MEDIA",
-                K = (e) => ({ payload: Array.isArray(e) ? e : [e], type: W });
-            function ee(e) {
+                Q = "rweb/mediaUpload/REMOVE_MEDIA",
+                W = (e) => ({ payload: Array.isArray(e) ? e : [e], type: Q });
+            function K(e) {
                 return (t, i) => {
-                    k(i(), e).forEach((e) => {
+                    L(i(), e).forEach((e) => {
                         const { abortController: t, mediaFile: i, originalMediaFile: r, reporter: a, uploader: o } = e;
                         t?.abort(), o && o.cancel && o.cancel(), a?.reportOperationComplete(v.BX.Full, v.Uk.Cancel), i && i.dispose(), r && r.dispose();
                     }),
-                        t(K(e));
+                        t(W(e));
                 };
             }
-            const te = "rweb/mediaUpload/UPDATE_MEDIA",
-                ie = (e) => ({ payload: e, type: te });
-            function re(e) {
+            const ee = "rweb/mediaUpload/UPDATE_MEDIA",
+                te = (e) => ({ payload: e, type: ee });
+            function ie(e) {
                 return (t, i) => {
-                    t(ie(e));
-                    const [r] = k(i(), e.id);
+                    t(te(e));
+                    const [r] = L(i(), e.id);
                     return r;
                 };
             }
-            function ae(e) {
+            function re(e) {
                 return (t, i) => {
-                    const [r] = k(i(), e);
-                    r.uploader?.cancel(), t(me(e));
+                    const [r] = L(i(), e);
+                    r.uploader?.cancel(), t(pe(e));
                 };
             }
-            function oe(e, t) {
-                return (i) => i(re({ id: e, mediaMetadata: t }));
+            function ae(e, t) {
+                return (i) => i(ie({ id: e, mediaMetadata: t }));
             }
-            const ne = "SEND_METADATA",
-                se = A.dg(z, ne);
-            function de(e) {
-                return (t, i, { api: r }) => A._O(t, { params: e, request: r.withEndpoint(f.Z).metadataCreate })({ actionTypes: se, context: ne });
+            const oe = "SEND_METADATA",
+                ne = A.dg(z, oe);
+            function se(e) {
+                return (t, i, { api: r }) => A._O(t, { params: e, request: r.withEndpoint(g.Z).metadataCreate })({ actionTypes: ne, context: oe });
             }
-            const le = "ATTACH_SUBTITLES",
-                ue = A.dg(z, le);
-            function ce(e) {
+            const de = "ATTACH_SUBTITLES",
+                le = A.dg(z, de);
+            function ue(e) {
                 return (t, i, r) => {
                     const { subtitlesDisplayName: a, subtitlesLang: o, subtitlesMediaUploadId: n, videoMediaUploadId: s } = e,
                         { api: d, featureSwitches: l, userClaims: u } = r,
                         c = ge(e.mediaItem, !1, { featureSwitches: l, userClaims: u }) || "";
-                    return A._O(t, { params: { videoMediaUploadId: s, videoMediaCategory: c, subtitlesLang: o, subtitlesMediaUploadId: n, subtitlesDisplayName: a }, request: d.withEndpoint(f.Z).attachSubtitles })({ actionTypes: ue, context: le });
+                    return A._O(t, { params: { videoMediaUploadId: s, videoMediaCategory: c, subtitlesLang: o, subtitlesMediaUploadId: n, subtitlesDisplayName: a }, request: d.withEndpoint(g.Z).attachSubtitles })({ actionTypes: le, context: de });
                 };
             }
-            const pe = (e) => {
+            const ce = (e) => {
                 const t = e.trimData;
                 if (t) return `${t.startTime.toFixed(3)}-${t.endTime.toFixed(3)}`;
             };
-            const me =
+            const pe =
                     (e, t = Object.freeze({})) =>
                     (i, r, { featureSwitches: a, userClaims: o }) => {
-                        const n = k(r(), e),
-                            s = (e) => i(re(e));
+                        const n = L(r(), e),
+                            s = (e) => i(ie(e));
                         function d(e, i = !1) {
                             const r = a.isTrue("responsive_web_media_upload_md5_hashing_enabled"),
-                                { abortController: n, id: l, mediaFile: c, mediaFileHash: p, reporter: m, uploader: f } = e,
-                                g = r && c && c.isImage && c instanceof u.ZP,
+                                { abortController: n, id: l, mediaFile: c, mediaFileHash: p, reporter: m, uploader: g } = e,
+                                f = r && c && c.isImage && c instanceof u.ZP,
                                 h = void 0 === p;
                             return (
                                 m?.toggleOperationPaused(v.BX.Full, !1),
                                 t.withoutReUpload && e.uploadId
                                     ? Promise.resolve(s({ id: l, uploadProgress: 1, uploading: !1 }))
-                                    : (t.preUpload || (m?.reportOperationStart(v.BX.UploadSubmitUntilSruFinish), m?.reportUploadSubmit(), g && h && n?.abort(), e.uploading && f && f.amendUpload({ pauseBeforeFinalize: !1, trimRanges: pe(e) })),
+                                    : (t.preUpload || (m?.reportOperationStart(v.BX.UploadSubmitUntilSruFinish), m?.reportUploadSubmit(), f && h && n?.abort(), e.uploading && g && g.amendUpload({ pauseBeforeFinalize: !1, trimRanges: ce(e) })),
                                       e.uploadPromise
                                           ? e.uploadPromise.then((t) => ({ ...t, mediaMetadata: e.mediaMetadata }))
-                                          : f
+                                          : g
                                             ? (function (e) {
                                                   const { featureSwitches: t, gifAsStaticImage: i, mediaItem: r, updateMediaItem: a, uploadMediaItem: o, uploadOptions: n, userClaims: s } = e,
                                                       { abortController: d, externalMediaDetails: l, id: u, reporter: c, uploader: p } = r,
                                                       m = new Promise((e, m) => {
-                                                          const f = (t) => {
+                                                          const g = (t) => {
                                                                   c?.setMetadata({ mediaId: t }), c?.reportOperationComplete([v.BX.Full, v.BX.UploadSubmitUntilSruFinish], v.Uk.Success), e(a({ id: u, uploadId: t, uploadProgress: 1, uploading: !1 }));
                                                               },
-                                                              g = (e, t, i) => {
-                                                                  c?.setMetadata({ mediaId: i }), "uploading" === t ? (a({ id: u, uploadProgress: F.OA("uploading", e) }), 100 === e && c?.reportOperationComplete(v.BX.SruUpload, v.Uk.Success)) : "processing" === t && a({ id: u, uploadProgress: F.OA("processing", e) });
+                                                              f = (e, t, i) => {
+                                                                  c?.setMetadata({ mediaId: i }), "uploading" === t ? (a({ id: u, uploadProgress: U.OA("uploading", e) }), 100 === e && c?.reportOperationComplete(v.BX.SruUpload, v.Uk.Success)) : "processing" === t && a({ id: u, uploadProgress: U.OA("processing", e) });
                                                               },
                                                               h = () => {
                                                                   c?.toggleOperationPaused(v.BX.Full, !0);
                                                               },
                                                               y = (t) => {
-                                                                  const { code: n, detail_message: s, maxSizeBytes: l, message: f, name: g } = t;
+                                                                  const { code: n, detail_message: s, maxSizeBytes: l, message: g, name: f } = t;
                                                                   if (r.mediaFile?.isGif && !i && n === w.Tz.INVALID_MEDIA_CODE) p?.amendUpload({ pauseBeforeFinalize: !1 }), a({ id: u, uploadProgress: 0, uploading: !1, uploadFailed: !1, uploadPromise: void 0 }), o(r, !0).then(e).catch(m);
                                                                   else {
-                                                                      d?.abort(), a({ id: u, uploadProgress: 0, uploading: !1, uploadFailed: !0, uploadError: { code: n, message: f, detail_message: s, maxSizeBytes: l }, uploadPromise: void 0 });
-                                                                      const e = new Z(f ? `${f}` : `Media upload failed [Error code: ${n}]`, { code: n, type: X, isGif: !!r.externalMediaDetails || (r.mediaFile && r.mediaFile.isGif), isImage: r.mediaFile && r.mediaFile.isImage, isVideo: r.mediaFile && r.mediaFile instanceof P.ZP && r.mediaFile.isVideo }),
+                                                                      d?.abort(), a({ id: u, uploadProgress: 0, uploading: !1, uploadFailed: !0, uploadError: { code: n, message: g, detail_message: s, maxSizeBytes: l }, uploadPromise: void 0 });
+                                                                      const e = new X(g ? `${g}` : `Media upload failed [Error code: ${n}]`, { code: n, type: N, isGif: !!r.externalMediaDetails || (r.mediaFile && r.mediaFile.isGif), isImage: r.mediaFile && r.mediaFile.isImage, isVideo: r.mediaFile && r.mediaFile instanceof I.ZP && r.mediaFile.isVideo }),
                                                                           t = n === _.d.CANCELED ? v.Uk.Cancel : v.Uk.Failure;
-                                                                      c?.setMetadata({ reason: { name: g, message: f, code: n } }), c?.reportOperationComplete([v.BX.Full, v.BX.SruUpload, v.BX.UploadSubmitUntilSruFinish], t), m(e);
+                                                                      c?.setMetadata({ reason: { name: f, message: g, code: n } }), c?.reportOperationComplete([v.BX.Full, v.BX.SruUpload, v.BX.UploadSubmitUntilSruFinish], t), m(e);
                                                                   }
                                                               };
-                                                          if (l && r.uploader) r.uploader?.uploadExternalMedia(l.sourceUrl, l.mediaType, l.mediaCategory, { success: f, progress: g, error: y, mediaItem: r });
+                                                          if (l && r.uploader) r.uploader?.uploadExternalMedia(l.sourceUrl, l.mediaType, l.mediaCategory, { success: g, progress: f, error: y, mediaItem: r });
                                                           else if (r.uploader) {
                                                               const { extraInitParams: e = "", preUpload: a = !1 } = n,
                                                                   { enable_1080p_variant: o, mediaFile: d, mediaFileHash: l } = r,
@@ -463,34 +462,27 @@
                                                                   p = d && d.size > 1e8 && t.isTrue("rweb_media_multi_requests_enabled"),
                                                                   m = ge(r, i, { featureSwitches: t, userClaims: s }),
                                                                   _ = m ? `&media_category=${m}` : "";
-                                                              c?.reportOperationStart(v.BX.SruUpload), r.uploader?.upload({ success: f, progress: g, pause: h, error: y, extraInitParams: e + _, extraFinalizeParams: l ? `&original_md5=${l}` : void 0, trimRanges: pe(r), pauseBeforeFinalize: a, withMultiRequests: p, enable_1080p_variant: !u || o, mediaItem: r });
+                                                              c?.reportOperationStart(v.BX.SruUpload), r.uploader?.upload({ success: g, progress: f, pause: h, error: y, extraInitParams: e + _, extraFinalizeParams: l ? `&original_md5=${l}` : void 0, trimRanges: ce(r), pauseBeforeFinalize: a, withMultiRequests: p, enable_1080p_variant: !u || o, mediaItem: r });
                                                           }
                                                       });
-                                                  return (
-                                                      a({ id: u, uploading: !0, uploadFailed: !1, uploadProgress: 0, uploadPromise: m }),
-                                                      r.mediaFile?.fileHandle instanceof Blob &&
-                                                          (0, S.c)(r.mediaFile.fileHandle).then((e) => {
-                                                              a({ id: u, muxedMetadata: { hasMoov: e } });
-                                                          }),
-                                                      m
-                                                  );
+                                                  return a({ id: u, uploading: !0, uploadFailed: !1, uploadProgress: 0, uploadPromise: m }), m;
                                               })({ mediaItem: e, updateMediaItem: s, uploadMediaItem: d, gifAsStaticImage: i, uploadOptions: t, featureSwitches: a, userClaims: o })
                                             : Promise.reject(new Error("Media has no uploader. Did you forget to call resizeMedia?")))
                             );
                         }
                         const l = n.map((e) => d(e));
                         return Promise.all(l).catch((e) => {
-                            throw (e.type || (e.type = X), e);
+                            throw (e.type || (e.type = N), e);
                         });
                     },
-                _e = (e, t) => {
-                    const i = me(e, { ...t, preUpload: !0 });
+                me = (e, t) => {
+                    const i = pe(e, { ...t, preUpload: !0 });
                     return (...e) =>
                         i(...e).catch((e) => {
                             if (e.code !== _.d.CANCELED) throw e;
                         });
                 };
-            function fe(e, t, i, r) {
+            function _e(e, t, i, r) {
                 const a = e === w.vC.Tweet || e === w.vC.TwitterArticle,
                     o = e === w.vC.TwitterArticle;
                 if (t.isSubtitles) return w.xz.Subtitles;
@@ -512,7 +504,7 @@
                     case w.vC.Tweet:
                     case w.vC.Dm:
                     case w.vC.TwitterArticle:
-                        return fe(r, a, t, i);
+                        return _e(r, a, t, i);
                     case w.vC.CommunityBanner:
                         return w.xz.CommunityBanner;
                     case w.vC.ListBanner:
@@ -523,35 +515,35 @@
                         return null;
                 }
             }
-            const he = (e, t, i, r, a, o) => {
+            const fe = (e, t, i, r, a, o) => {
                 a?.reportOperationStart(v.BX.Hash, !0),
                     a?.setMetadata({ hashState: v.Xj.InProgress }),
                     (0, p.Q)(r, o)
                         .then((r) => {
-                            const [o] = k(t(), i);
+                            const [o] = L(t(), i);
                             if (!o) {
-                                throw new Z("Media item was removed", { code: p.S.HASHING_ABORTED, type: X, isGif: !1, isImage: !0, isVideo: !1 });
+                                throw new X("Media item was removed", { code: p.S.HASHING_ABORTED, type: N, isGif: !1, isImage: !0, isVideo: !1 });
                             }
-                            e(re({ id: i, mediaFileHash: r, abortController: void 0 }));
+                            e(ie({ id: i, mediaFileHash: r, abortController: void 0 }));
                             const { uploadPromise: n, uploader: s, uploading: d } = o;
                             n && d && s && s.amendUpload({ extraFinalizeParams: r ? `&original_md5=${r}` : void 0 }), a?.setMetadata({ hashState: v.Xj.Complete }), a?.reportOperationComplete(v.BX.Hash, v.Uk.Success);
                         })
                         .catch((r) => {
-                            const [o] = k(t(), i);
-                            o && e(re({ id: i, mediaFileHash: null, abortController: void 0 })), r.code === p.S.HASHING_ABORTED ? (a?.setMetadata({ hashState: v.Xj.Canceled }), a?.reportOperationComplete(v.BX.Hash, v.Uk.Cancel)) : (a?.setMetadata({ hashState: v.Xj.Failure }), a?.reportOperationComplete(v.BX.Hash, v.Uk.Failure));
+                            const [o] = L(t(), i);
+                            o && e(ie({ id: i, mediaFileHash: null, abortController: void 0 })), r.code === p.S.HASHING_ABORTED ? (a?.setMetadata({ hashState: v.Xj.Canceled }), a?.reportOperationComplete(v.BX.Hash, v.Uk.Cancel)) : (a?.setMetadata({ hashState: v.Xj.Failure }), a?.reportOperationComplete(v.BX.Hash, v.Uk.Failure));
                         });
             };
-            x.Z.register({
-                [D]: function (e = N, t) {
+            E.Z.register({
+                [O]: function (e = B, t) {
                     if (!t) return e;
                     switch (t.type) {
-                        case H:
+                        case G:
                             return t.payload ? e.concat(t.payload) : e;
-                        case W: {
+                        case Q: {
                             const i = t.payload;
                             return i && i.length ? e.filter((e) => -1 === i.indexOf(e.id)) : e;
                         }
-                        case te: {
+                        case ee: {
                             const i = t.payload;
                             return i
                                 ? e.map((e) => {
@@ -596,4 +588,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-83ae13c2.c38a4e5a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-83ae13c2.d295981a.js.map

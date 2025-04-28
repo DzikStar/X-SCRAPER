@@ -2187,7 +2187,6 @@
                     return "Anscheinend überschreitet dieses Video die maximale Dateigröße für den Upload (" + e.human_readable_max_size + " GB).";
                 }),
                 t("cba4fdde", "Für Zuschauer*innen auf X in 1080 P zeigen"),
-                t("c92702a0", "Diese MP4-Datei ist möglicherweise beschädigt. Wir versuchen, sie hochzuladen, aber wenn der Upload fehlschlägt, musst du eine andere Videodatei verwenden."),
                 t("ef8f5d90", "Empfohlen"),
                 t("a7046fb0", "Selten benötigt"),
                 t("acf3ecf4", "Medien hinzufügen"),
@@ -2961,9 +2960,9 @@
                 t("c6f58084", "Entwickler"),
                 t("d83f18d2", "Verzeichnis"),
                 t("hc5aa17c", "Hol dir die X App"),
-                t("j0693948", "Hol dir die Grok App");
-            t("fbf83158", "Warnung: Zahlung fehlgeschlagen"),
-                t("jadeb4da", "Bitte aktualisiere dringend deine Zahlungsmethode, da du sonst deine Abonnementvorteile verlierst."),
+                t("j0693948", "Hol dir die Grok App"),
+                t("fbf83158", "Warnung: Zahlung fehlgeschlagen");
+            t("jadeb4da", "Bitte aktualisiere dringend deine Zahlungsmethode, da du sonst deine Abonnementvorteile verlierst."),
                 t("bce3726a", "Rechnungsinfo aktualisieren"),
                 t("fce9ecce", "Vorgeschlagene Videos"),
                 t("efe6ef9e", "Post anzeigen"),
@@ -3877,9 +3876,9 @@
                 t("d7357e7e", "Aus Co-Hosts entfernen"),
                 t("bf307fc0", "Blockieren und entfernen"),
                 t("ccf2f24e", "Meldung"),
-                t("i22835de", "Genehmigen");
-            t("cb59a0fe", "Ablehnen"),
-                t("c2376960", "Sprechwünsche"),
+                t("i22835de", "Genehmigen"),
+                t("cb59a0fe", "Ablehnen");
+            t("c2376960", "Sprechwünsche"),
                 t("aba7dcdd", function (e) {
                     return e.name + " einladen";
                 }),
@@ -4909,9 +4908,9 @@
                 t("a7b48b36", "Wie oft in Prozent die Videos vollständig angezeigt wurden."),
                 t("a2580f2a", "Abschlussrate"),
                 t("ff95a9cc", "Video-ID"),
-                t("a97e358e", "Video-Link");
-            t("e10e8b46", "Es werden nur die Videos aus den letzten 100 Tagen gezeigt."),
-                t("ba37f6da", "Videoübersicht"),
+                t("a97e358e", "Video-Link"),
+                t("e10e8b46", "Es werden nur die Videos aus den letzten 100 Tagen gezeigt.");
+            t("ba37f6da", "Videoübersicht"),
                 t("f19846b2", "Video-Miniaturbild"),
                 t("ccd6f4a8", "Videotitel"),
                 t("c8410542", "Wie oft dein Video angezeigt wurde."),
@@ -5865,11 +5864,11 @@
                 t("a0ea2fa6", "Namensfeld darf nicht leer sein"),
                 t("eec37eac", "Lesezeichenordner mit diesem Namen ist bereits vorhanden"),
                 t("fce0c59e", "Der JSON-Animationscode konnte nicht geparst werden. Bitte überprüfe das Format des JSON-Codes in deiner Animationsdatei und versuche es erneut."),
-                t("g0eea6c2", "Die JSON-Animationsdatei konnte nicht gelesen werden. Versuche bitte erneut, die Datei zu öffnen.");
-            t("ae58026a", "Eine .json-Datei für Marken-Likes zur Vorschau öffnen"),
-                t("hd0bc1eb", function (e) {
-                    return e.name + " ist live";
-                }),
+                t("g0eea6c2", "Die JSON-Animationsdatei konnte nicht gelesen werden. Versuche bitte erneut, die Datei zu öffnen."),
+                t("ae58026a", "Eine .json-Datei für Marken-Likes zur Vorschau öffnen");
+            t("hd0bc1eb", function (e) {
+                return e.name + " ist live";
+            }),
                 t("bea1f26b", function (e) {
                     return e.name + " war live";
                 }),
@@ -6873,9 +6872,9 @@
                 t("fdd77a34", "Erstelle längere Posts"),
                 t("j6d26a7a", "Schreib so viel, wie du teilen möchtest"),
                 t("c4fd68da", "Passe deine Nutzung an"),
-                t("c0195168", "Ändere dein App-Symbol und die Navigationsoptionen");
-            t("b6b5dc94", "Lass dich verifizieren"),
-                t("b06db848", "Heb dich von anderen auf der Plattform ab"),
+                t("c0195168", "Ändere dein App-Symbol und die Navigationsoptionen"),
+                t("b6b5dc94", "Lass dich verifizieren");
+            t("b06db848", "Heb dich von anderen auf der Plattform ab"),
                 t("e3e3a97c", "Erhalte eine Umsatzbeteilung aus deinen Posts"),
                 t("f15bc24e", "Höhere Grok-Limits"),
                 t("c4666e1c", "Mehr Nutzung von Grok 3, unserem neuesten Modell"),
@@ -7849,7 +7848,8 @@
                 t("b33d1518", "Jobs aus einer unterstützten Integration oder einem angepassten XML-Feed synchronisieren"),
                 t("dd2db402", "Schritt 1: Sammle die erforderlichen Informationen"),
                 t("edb098c2", "Schritt 2: Kontaktiere unser Supportteam"),
-                t("c4474460", "Schritt 2: Sende eine E-Mail an unser Supportteam");
+                t("c4474460", "Schritt 2: Sende eine E-Mail an unser Supportteam"),
+                t("a08da0fa", "Was geschieht als Nächstes?");
             function a(e, n) {
                 for (var i = 0; i < n.length; i++) {
                     var t = n[i];
@@ -7888,8 +7888,7 @@
                     d(e, n)
                 );
             }
-            t("a08da0fa", "Was geschieht als Nächstes?"),
-                t("c127374e", "Nachricht an uns senden"),
+            t("c127374e", "Nachricht an uns senden"),
                 t("b2cb2a0c", "Nutzername deines Accounts bei Verifizierte Organisationen"),
                 t("b8e64002", "Name deines Bewerbermanagementsystems"),
                 t("acb99db6", "URL der Karriere-Website, wo deine Jobs aufgelistet sind"),
@@ -8891,9 +8890,9 @@
                 t("c057680c", "Das Video kann nicht in diesem Browser abgespielt werden. Bitte versuche es mit einem anderen Browser."),
                 t("i5dfae6e", "Dieses Video ist an deinem Standort nicht verfügbar."),
                 t("c2388276", "Dieses Video wurde gelöscht."),
-                t("d2c96140", "Audioanzeige für Gast");
-            t("f6dc9146", "AUFZEICHNUNG"),
-                t("d30c74fe", "Lautstärke"),
+                t("d2c96140", "Audioanzeige für Gast"),
+                t("f6dc9146", "AUFZEICHNUNG");
+            t("d30c74fe", "Lautstärke"),
                 t("f2d4e6f2", "Erneut ansehen"),
                 t("e9f1af3a", "Mehr erfahren"),
                 t("f1881d86", "Dieser Post kann nicht beantwortet, geteilt oder mit „Gefällt mir“ markiert werden."),
@@ -13250,4 +13249,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/de.0519ca9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/de.f28462ca.js.map

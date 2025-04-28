@@ -2187,7 +2187,6 @@
                     return "Tämä video näyttäisi ylittävän suurimman sallitun tiedostokoon (" + a.human_readable_max_size + "Gt).";
                 }),
                 e("cba4fdde", "Julkaise X:n käyttäjille 1080p-resoluutioisena"),
-                e("c92702a0", "Tämä MP4-tiedosto saattaa olla viallinen. Se yritetään ladata, mutta joudut ehkä käyttämään toista videotiedostoa, jos lataus ei onnistu."),
                 e("ef8f5d90", "Suositellut"),
                 e("a7046fb0", "Harvoin tarpeen"),
                 e("acf3ecf4", "Lisää mediasisältöä"),
@@ -2961,9 +2960,9 @@
                 e("c6f58084", "Kehittäjät"),
                 e("d83f18d2", "Hakemisto"),
                 e("hc5aa17c", "Hanki X-sovellus"),
-                e("j0693948", "Hanki Grok-sovellus");
-            e("fbf83158", "Varoitus: maksu epäonnistui"),
-                e("jadeb4da", "Päivitä maksutapatietosi viipymättä, jotta et menetä tilausetujasi."),
+                e("j0693948", "Hanki Grok-sovellus"),
+                e("fbf83158", "Varoitus: maksu epäonnistui");
+            e("jadeb4da", "Päivitä maksutapatietosi viipymättä, jotta et menetä tilausetujasi."),
                 e("bce3726a", "Päivitä laskutustiedot"),
                 e("fce9ecce", "Ehdotetut videot"),
                 e("efe6ef9e", "Katso julkaisu"),
@@ -3877,9 +3876,9 @@
                 e("d7357e7e", "Poista co-hosteista"),
                 e("bf307fc0", "Estä ja poista"),
                 e("ccf2f24e", "Ilmianto"),
-                e("i22835de", "Hyväksy");
-            e("cb59a0fe", "Epää"),
-                e("c2376960", "Puhumispyynnöt"),
+                e("i22835de", "Hyväksy"),
+                e("cb59a0fe", "Epää");
+            e("c2376960", "Puhumispyynnöt"),
                 e("aba7dcdd", function (a) {
                     return "Kutsu " + a.name;
                 }),
@@ -4909,9 +4908,9 @@
                 e("a7b48b36", "Loppuun saakka katsottujen videonäyttöjen osuus."),
                 e("a2580f2a", "Loppuunkatseluaste"),
                 e("ff95a9cc", "Videon tunnus"),
-                e("a97e358e", "Videon linkki");
-            e("e10e8b46", "Näytetään videot viimeisten 100 päivän ajalta."),
-                e("ba37f6da", "Yhteenveto videoista"),
+                e("a97e358e", "Videon linkki"),
+                e("e10e8b46", "Näytetään videot viimeisten 100 päivän ajalta.");
+            e("ba37f6da", "Yhteenveto videoista"),
                 e("f19846b2", "Videon esikatselukuva"),
                 e("ccd6f4a8", "Videon nimi"),
                 e("c8410542", "Videosi katselumäärä."),
@@ -5865,11 +5864,11 @@
                 e("a0ea2fa6", "Nimikenttä ei voi olla tyhjä"),
                 e("eec37eac", "Kirjanmerkkikansio tällä nimellä on jo olemassa"),
                 e("fce0c59e", "JSON-animaatiokoodin jäsennys ei onnistunut. Tarkista animaatiotiedoston JSON-formaatti ja yritä uudelleen."),
-                e("g0eea6c2", "JSON-animaatiotiedoston lukeminen ei onnistunut. Yritä avata tiedosto uudelleen.");
-            e("ae58026a", "Avaa bränditykkäys-.json-tiedosto esikatselua varten"),
-                e("hd0bc1eb", function (a) {
-                    return a.name + " on live-tilassa";
-                }),
+                e("g0eea6c2", "JSON-animaatiotiedoston lukeminen ei onnistunut. Yritä avata tiedosto uudelleen."),
+                e("ae58026a", "Avaa bränditykkäys-.json-tiedosto esikatselua varten");
+            e("hd0bc1eb", function (a) {
+                return a.name + " on live-tilassa";
+            }),
                 e("bea1f26b", function (a) {
                     return a.name + " oli live-tilassa";
                 }),
@@ -6873,9 +6872,9 @@
                 e("fdd77a34", "Laadi pidempiä julkaisuja"),
                 e("j6d26a7a", "Kirjoita niin paljon kuin haluat"),
                 e("c4fd68da", "Räätälöi käyttökokemuksesi"),
-                e("c0195168", "Vaihda sovellusikonia ja navigointivalintoja");
-            e("b6b5dc94", "Hanki varmennus"),
-                e("b06db848", "Erotu massasta alustalla"),
+                e("c0195168", "Vaihda sovellusikonia ja navigointivalintoja"),
+                e("b6b5dc94", "Hanki varmennus");
+            e("b06db848", "Erotu massasta alustalla"),
                 e("e3e3a97c", "Ansaitse osa julkaisujesi tuottamasta liikevaihdosta"),
                 e("f15bc24e", "Suuremmat Grokin käyttörajat"),
                 e("c4666e1c", "Enemmän uusimman mallin, Grok 3:n käyttöä"),
@@ -7849,7 +7848,8 @@
                 e("b33d1518", "Synkronoi työpaikat tuetusta integraatiosta tai XML-syötteestä"),
                 e("dd2db402", "Vaihe 1: Kerää vaaditut tiedot"),
                 e("edb098c2", "Vaihe 2: Ota yhteys tukeen"),
-                e("c4474460", "Vaihe 2: Lähetä sähköposti tukitiimillemme");
+                e("c4474460", "Vaihe 2: Lähetä sähköposti tukitiimillemme"),
+                e("a08da0fa", "Mitä tapahtuu seuraavaksi?");
             function s(a, t) {
                 for (var i = 0; i < t.length; i++) {
                     var e = t[i];
@@ -7888,8 +7888,7 @@
                     u(a, t)
                 );
             }
-            e("a08da0fa", "Mitä tapahtuu seuraavaksi?"),
-                e("c127374e", "Lähetä meille viesti"),
+            e("c127374e", "Lähetä meille viesti"),
                 e("b2cb2a0c", "Varmennetut organisaatiot -tilisi käyttäjätunnus"),
                 e("b8e64002", "Työnhakijoiden seurantajärjestelmäsi nimi"),
                 e("acb99db6", "Työpaikkasivuston URL, josta työpaikkasi löytyvät"),
@@ -8891,9 +8890,9 @@
                 e("c057680c", "Videon toistaminen ei onnistu tässä selaimessa. Kokeile toista selainta."),
                 e("i5dfae6e", "Tämä video ei ole saatavilla sijainnissasi."),
                 e("c2388276", "Tämä video on poistettu."),
-                e("d2c96140", "Vieraslähettäjän äänen merkki");
-            e("f6dc9146", "UUSINTA"),
-                e("d30c74fe", "Äänenvoimakkuus"),
+                e("d2c96140", "Vieraslähettäjän äänen merkki"),
+                e("f6dc9146", "UUSINTA");
+            e("d30c74fe", "Äänenvoimakkuus"),
                 e("f2d4e6f2", "Katso uudelleen"),
                 e("e9f1af3a", "Lue lisää"),
                 e("f1881d86", "Tähän julkaisuun ei voi vastata, sitä ei voi jakaa eikä siitä voi tykätä."),
@@ -13250,4 +13249,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.0268ae7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.c147581a.js.map

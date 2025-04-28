@@ -28,7 +28,7 @@
                 u = o.iH({ component: d, shouldDisplayBorder: (0, r.Z)(!1), defaultScribeNamespace: { element: "tile" } }).getHandler();
         },
         936619: (e, t, n) => {
-            n.d(t, { Z: () => T });
+            n.d(t, { Z: () => E });
             var r = n(202784),
                 o = n(157396),
                 a = n(325686),
@@ -72,11 +72,11 @@
                 f = n(497181),
                 v = n(151587),
                 y = n(668214),
-                Z = n(919022);
-            const k = (e, t) => {
-                    if (t.entry.content.content.broadcast) return Z.ZP.select(e, t.entry.content.content.broadcast.userId);
+                k = n(919022);
+            const Z = (e, t) => {
+                    if (t.entry.content.content.broadcast) return k.ZP.select(e, t.entry.content.content.broadcast.userId);
                 },
-                E = ({ broadcastUser: e, entry: t, feedbackItems: n }) => {
+                T = ({ broadcastUser: e, entry: t, feedbackItems: n }) => {
                     let a, i, s;
                     const c = t.content,
                         { content: l, image: d, url: u } = c;
@@ -90,7 +90,7 @@
                         g = r.useMemo(() => (s ? r.createElement(b.Z, { feedbackItems: n }) : null), [s, n]);
                     return r.createElement(C, { "aria-label": a || "", attribution: e, badge: m, containerStyle: v.g.containerStyle, description: s, image: d, link: h, onClick: p, rightControl: g });
                 },
-                T = (0, y.Z)().propsFromState(() => ({ broadcastUser: k }))(r.memo(E));
+                E = (0, y.Z)().propsFromState(() => ({ broadcastUser: Z }))(r.memo(T));
         },
         407920: (e, t, n) => {
             n.r(t), n.d(t, { default: () => i });
@@ -500,19 +500,6 @@
             var r = n(157396);
             const o = (0, n(587878).Z)({ palette: r.CV.light, key: "light-blue-normal", highContrastEnabled: !1, chirpFontEnabled: !1, scale: "normal" });
         },
-        466445: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => c });
-            var r = n(202784),
-                o = n(890601),
-                a = n(783427),
-                i = n(347101);
-            const s = (e = {}) => {
-                const { direction: t } = (0, a.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M21 12L4 2v20l17-10z" })) }, { writingDirection: t });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const c = s;
-        },
         151624: (e, t, n) => {
             n.d(t, { Z: () => r });
             const r = n(454479).Z;
@@ -651,4 +638,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TileHandler.3974d8ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TileHandler.cdafde4a.js.map

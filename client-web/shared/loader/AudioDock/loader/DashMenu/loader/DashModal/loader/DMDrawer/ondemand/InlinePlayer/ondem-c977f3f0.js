@@ -375,7 +375,7 @@
                 c = (0, r.cn)((e) => e(o) || e(s));
         },
         838859: (e, t, n) => {
-            n.d(t, { AE: () => P, CN: () => j, Kn: () => q, az: () => I, c: () => L });
+            n.d(t, { AE: () => R, CN: () => D, Kn: () => N, az: () => Z, c: () => C });
             n(136728);
             var r = n(202784),
                 s = n(565058),
@@ -384,35 +384,34 @@
                 i = n(840590),
                 a = n(516951),
                 u = n(323265),
-                d = n(444595),
-                l = n(811233),
-                f = n(741382),
-                p = n(526250),
-                v = n(934871),
-                m = n(254810),
-                h = n(582129),
-                w = n(625555),
-                g = n(835515),
-                _ = n(4427),
-                b = n(790997),
-                S = n(712612),
-                x = n(895229),
-                y = n(520197);
-            const k = (0, s.cn)(() => (0, f.y)("conference-room")),
-                Z = (0, y.A6)(1e3);
-            function I() {
-                const e = (0, l.gt)(),
-                    t = (0, o.b9)(E);
-                Z.useLayoutEffect(r.useCallback(() => (e && u.ZP.isChromeOS() ? t() : a.Z), [e, t]));
+                d = n(811233),
+                l = n(741382),
+                f = n(526250),
+                p = n(934871),
+                v = n(254810),
+                m = n(582129),
+                h = n(625555),
+                w = n(835515),
+                g = n(4427),
+                _ = n(790997),
+                b = n(712612),
+                S = n(895229),
+                x = n(520197);
+            const y = (0, s.cn)(() => (0, l.y)("conference-room")),
+                k = (0, x.A6)(1e3);
+            function Z() {
+                const e = (0, d.gt)(),
+                    t = (0, o.b9)(I);
+                k.useLayoutEffect(r.useCallback(() => (e && u.ZP.isChromeOS() ? t() : a.Z), [e, t]));
             }
-            const E = (0, p.v)((e, t) => {
-                    const n = [t(M), t(D), t(R), t(C), t(O), t(Y), t(T), t(F), t(K), t(N), t(z), t(A)];
+            const I = (0, f.v)((e, t) => {
+                    const n = [t(E), t(M), t(j), t(P), t(L), t(T), t(O), t(Y), t(F), t(K), t(z), t(A)];
                     return () => {
                         n.forEach((e) => e());
                     };
                 }),
-                M = (0, p.v)((e, t) => {
-                    const n = e(k),
+                E = (0, f.v)((e, t) => {
+                    const n = e(y),
                         r = n.sub("join", (e) => {
                             const { height: t, width: r } = (0, c.iv)();
                             n.postMessage("joined", { width: r, height: t }), o(e);
@@ -422,7 +421,7 @@
                         });
                     function o({ height: n, width: r }) {
                         const s = (0, c.iv)();
-                        s.width < r ? e(x.p_) || t(x.lY, !0) : s.width > r && (t(x.p_, !0), t(x.lY, !1));
+                        s.width < r ? e(S.p_) || t(S.lY, !0) : s.width > r && (t(S.p_, !0), t(S.lY, !1));
                     }
                     const { height: i, width: a } = (0, c.iv)();
                     return (
@@ -432,116 +431,116 @@
                         }
                     );
                 }),
-                D = (0, p.v)((e, t) => {
-                    const n = e(k);
-                    return e(x.p_)
+                M = (0, f.v)((e, t) => {
+                    const n = e(y);
+                    return e(S.p_)
                         ? n.sub("enter", (n) => {
                               const { broadcastId: r, conferenceId: s, janusSessionId: o, proxseeAuth: c, roomConfig: a } = n,
                                   { chatToken: u, guestServiceToken: d, guestServicesSessionUuid: l } = n.guestServicesAuth,
                                   f = `/i/conferences-room/${s}`;
                               i.default.push(f);
-                              const p = e(w.F6),
-                                  v = e(w.yj);
-                              p.setAuth(c), v.customInit(d, u), t(b.YX, a), t(b.ZD, o), t(w.re, l), t(h.V$, { conferenceId: s, broadcastId: r });
+                              const p = e(h.F6),
+                                  v = e(h.yj);
+                              p.setAuth(c), v.customInit(d, u), t(_.YX, a), t(_.ZD, o), t(h.re, l), t(m.V$, { conferenceId: s, broadcastId: r });
                           })
                         : a.Z;
                 }),
-                j = (0, s.cn)(null, (e, t, n) => {
-                    e(k).postMessage("enter", n);
+                D = (0, s.cn)(null, (e, t, n) => {
+                    e(y).postMessage("enter", n);
                 }),
-                R = (0, p.v)((e, t) => {
-                    const n = e(k);
-                    return e(x.p_)
+                j = (0, f.v)((e, t) => {
+                    const n = e(y);
+                    return e(S.p_)
                         ? n.sub("janusPush", (e) => {
-                              t(b.M6, e);
+                              t(_.M6, e);
                           })
                         : a.Z;
                 }),
-                P = (0, s.cn)(null, (e, t, n) => {
-                    e(k).postMessage("janusPush", n);
+                R = (0, s.cn)(null, (e, t, n) => {
+                    e(y).postMessage("janusPush", n);
                 }),
-                C = (0, p.v)((e, t) => {
-                    const n = e(k);
-                    return e(x.p_)
+                P = (0, f.v)((e, t) => {
+                    const n = e(y);
+                    return e(S.p_)
                         ? n.sub("leave", () => {
                               i.default.replace("/i/conferences-room");
                           })
                         : a.Z;
                 }),
-                L = (0, s.cn)(null, (e, t) => {
-                    e(k).postMessage("leave");
+                C = (0, s.cn)(null, (e, t) => {
+                    e(y).postMessage("leave");
                 }),
-                O = (0, p.v)((e, t) => {
-                    const n = e(k);
-                    return e(x.p_)
+                L = (0, f.v)((e, t) => {
+                    const n = e(y);
+                    return e(S.p_)
                         ? n.sub("camera", (n) => {
                               (async () => {
-                                  const r = n && (await e(v.cf).then((e) => e.find((e) => e.deviceId === n)));
-                                  r ? t(v.HO, r) : t(v.eR);
+                                  const r = n && (await e(p.cf).then((e) => e.find((e) => e.deviceId === n)));
+                                  r ? t(p.HO, r) : t(p.eR);
                               })();
                           })
                         : a.Z;
                 }),
-                T = (0, p.v)((e, t) => {
-                    if (!e(x.lY)) return a.Z;
-                    const n = e(v.fx);
-                    return e(k).postMessage("camera", n?.deviceId), a.Z;
+                O = (0, f.v)((e, t) => {
+                    if (!e(S.lY)) return a.Z;
+                    const n = e(p.fx);
+                    return e(y).postMessage("camera", n?.deviceId), a.Z;
                 }),
-                Y = (0, p.v)((e, t) => {
-                    const n = e(k);
-                    if (!e(x.p_)) return a.Z;
+                T = (0, f.v)((e, t) => {
+                    const n = e(y);
+                    if (!e(S.p_)) return a.Z;
                     const r = n.sub("mic", (n) => {
                             (async () => {
-                                const r = n && (await e(m.vl).then((e) => e.find((e) => e.deviceId === n)));
-                                r && t(m.Ao, r);
+                                const r = n && (await e(v.vl).then((e) => e.find((e) => e.deviceId === n)));
+                                r && t(v.Ao, r);
                             })();
                         }),
                         s = n.sub("micMuted", (n) => {
-                            n !== e(S.Dy) && t(S.Dy, n);
+                            n !== e(b.Dy) && t(b.Dy, n);
                         });
                     return () => {
                         s(), r();
                     };
                 }),
-                F = (0, p.v)((e, t) => {
-                    if (!e(x.lY)) return a.Z;
-                    const n = e(m.fx)?.deviceId;
-                    return n && e(k).postMessage("mic", n), a.Z;
+                Y = (0, f.v)((e, t) => {
+                    if (!e(S.lY)) return a.Z;
+                    const n = e(v.fx)?.deviceId;
+                    return n && e(y).postMessage("mic", n), a.Z;
                 }),
-                K = (0, p.v)((e, t) => {
-                    if (!e(x.lY)) return a.Z;
-                    const n = e(S.Dy);
-                    return e(k).postMessage("micMuted", n), a.Z;
+                F = (0, f.v)((e, t) => {
+                    if (!e(S.lY)) return a.Z;
+                    const n = e(b.Dy);
+                    return e(y).postMessage("micMuted", n), a.Z;
                 }),
-                N = (0, p.v)((e, t) => {
-                    if (!e(x.p_)) return a.Z;
-                    return e(k).sub("reload", ({ ttsToken: e }) => {
-                        void 0 !== e ? (0, d.qp)(e) : location.reload();
+                K = (0, f.v)((e, t) => {
+                    if (!e(S.p_)) return a.Z;
+                    return e(y).sub("reload", () => {
+                        location.reload();
                     });
                 }),
-                q = (0, s.cn)(null, (e, t, n) => {
-                    e(x.lY) && e(k).postMessage("reload", { ttsToken: n });
+                N = (0, s.cn)(null, (e, t, n) => {
+                    e(S.lY) && e(y).postMessage("reload", { ttsToken: n });
                 }),
-                z = (0, p.v)((e, t) => {
-                    if (e(x.lY)) {
-                        const t = e(g.lV);
-                        return e(k).postMessage("volume", t), a.Z;
+                z = (0, f.v)((e, t) => {
+                    if (e(S.lY)) {
+                        const t = e(w.lV);
+                        return e(y).postMessage("volume", t), a.Z;
                     }
-                    if (e(x.p_)) {
-                        return e(k).sub("volume", (e) => {
-                            t(g.lV, e);
+                    if (e(S.p_)) {
+                        return e(y).sub("volume", (e) => {
+                            t(w.lV, e);
                         });
                     }
                     return a.Z;
                 }),
-                A = (0, p.v)((e, t) => {
-                    if (e(x.lY)) {
-                        const t = e(_.fJ);
-                        return e(k).postMessage("isJoined", t), a.Z;
+                A = (0, f.v)((e, t) => {
+                    if (e(S.lY)) {
+                        const t = e(g.fJ);
+                        return e(y).postMessage("isJoined", t), a.Z;
                     }
-                    if (e(x.p_)) {
-                        return e(k).sub("isJoined", (e) => {
-                            t(_.fJ, e);
+                    if (e(S.p_)) {
+                        return e(y).sub("isJoined", (e) => {
+                            t(g.fJ, e);
                         });
                     }
                     return a.Z;
@@ -702,7 +701,7 @@
                 });
         },
         509599: (e, t, n) => {
-            n.d(t, { C: () => T, CP: () => J, F$: () => q, FG: () => A, Go: () => F, Ix: () => C, PO: () => $, RS: () => N, Xn: () => G, ZO: () => O, cS: () => z, d3: () => E, jQ: () => W, jm: () => H, lw: () => D, of: () => V, p5: () => U, qH: () => X, qx: () => R, sJ: () => Y, tq: () => k, zX: () => Z });
+            n.d(t, { C: () => T, CP: () => J, F$: () => z, FG: () => B, Go: () => F, Ix: () => C, PO: () => q, RS: () => N, Xn: () => G, ZO: () => O, cS: () => A, d3: () => E, jQ: () => W, jm: () => H, lw: () => D, of: () => V, p5: () => U, qH: () => X, qx: () => R, sJ: () => Y, tq: () => k, zX: () => Z });
             n(571372);
             var r = n(202784),
                 s = n(961111),
@@ -833,8 +832,8 @@
                     const t = e(m.rm);
                     return t ? (e(K(t).resolved)?.guest_sessions ?? []) : [];
                 }),
-                q = (0, i.cn)((e) => new Set(e(N).map(({ twitter_user_id: e }) => e))),
-                z = (0, i.cn)((e) => {
+                z = (0, i.cn)((e) => new Set(e(N).map(({ twitter_user_id: e }) => e))),
+                A = (0, i.cn)((e) => {
                     const t = new Map();
                     return (
                         e(N).forEach((e) => {
@@ -843,7 +842,7 @@
                         t
                     );
                 }),
-                A = (0, i.cn)((e) => {
+                B = (0, i.cn)((e) => {
                     const t = new Map();
                     return (
                         e(N).forEach((e) => {
@@ -852,7 +851,7 @@
                         t
                     );
                 }),
-                B = (0, i.cn)((e) => {
+                $ = (0, i.cn)((e) => {
                     const t = new Map();
                     return (
                         e(N).forEach((e) => {
@@ -861,7 +860,7 @@
                         t
                     );
                 }),
-                $ = (0, a.xu)((e) => (0, i.cn)((t) => t(B).get(e)?.guest_participant_id)),
+                q = (0, a.xu)((e) => (0, i.cn)((t) => t($).get(e)?.guest_participant_id)),
                 U = (0, i.cn)((e) => {
                     const t = e(N).find((t) => t.guest_user_id === e(S.t9));
                     return t?.is_employee ?? !1;
@@ -1074,4 +1073,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-c977f3f0.687b605a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-c977f3f0.54f11f8a.js.map

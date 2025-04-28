@@ -2,16 +2,16 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["ondemand.SettingsRevamp-6107ac1a"],
     {
-        520512: (e, n, a) => {
-            a.d(n, { Z: () => r });
+        520512: (e, a, n) => {
+            n.d(a, { Z: () => r });
             var l,
                 i,
                 t = { fragment: { argumentDefinitions: (l = [{ defaultValue: null, kind: "LocalArgument", name: "allowGamblingAds" }]), kind: "Fragment", metadata: null, name: "AdsCategoriesMutation", selections: (i = [{ alias: null, args: [{ kind: "Variable", name: "allow_gambling_ads", variableName: "allowGamblingAds" }], kind: "ScalarField", name: "user_preferences_put", storageKey: null }]), type: "Mutation", abstractKey: null }, kind: "Request", operation: { argumentDefinitions: l, kind: "Operation", name: "AdsCategoriesMutation", selections: i }, params: { id: "eRWyTnzFgPgv9D4W8ujf6A", metadata: {}, name: "AdsCategoriesMutation", operationKind: "mutation", text: null } };
             t.hash = "58347e2cd632b3c8fb00f7f08a6b5c7d";
             const r = t;
         },
-        795738: (e, n, a) => {
-            a.d(n, { Z: () => t });
+        795738: (e, a, n) => {
+            n.d(a, { Z: () => t });
             var l,
                 i = {
                     fragment: {
@@ -48,16 +48,16 @@
             i.hash = "5cedb9567de269f8e1609fd181602c63";
             const t = i;
         },
-        767758: (e, n, a) => {
-            a.d(n, { Z: () => r });
+        767758: (e, a, n) => {
+            n.d(a, { Z: () => r });
             var l,
                 i,
                 t = { fragment: { argumentDefinitions: (l = [{ defaultValue: null, kind: "LocalArgument", name: "isAllowed" }]), kind: "Fragment", metadata: null, name: "AudienceAndTaggingAllowVideoDownloadsMutation", selections: (i = [{ alias: null, args: [{ kind: "Variable", name: "allow_video_downloads", variableName: "isAllowed" }], kind: "ScalarField", name: "user_preferences_put", storageKey: null }]), type: "Mutation", abstractKey: null }, kind: "Request", operation: { argumentDefinitions: l, kind: "Operation", name: "AudienceAndTaggingAllowVideoDownloadsMutation", selections: i }, params: { id: "oe9_UzzuQUeSU4qYVtMwQg", metadata: {}, name: "AudienceAndTaggingAllowVideoDownloadsMutation", operationKind: "mutation", text: null } };
             t.hash = "e1f72765089e35a46c2387c811fc3f60";
             const r = t;
         },
-        251985: (e, n, a) => {
-            a.d(n, { Z: () => s });
+        251985: (e, a, n) => {
+            n.d(a, { Z: () => s });
             var l,
                 i,
                 t,
@@ -172,8 +172,8 @@
             r.hash = "c077b6cb29b09b0ac1b73e428078b883";
             const s = r;
         },
-        181188: (e, n, a) => {
-            a.d(n, { Z: () => i });
+        181188: (e, a, n) => {
+            n.d(a, { Z: () => i });
             var l = {
                 argumentDefinitions: [{ defaultValue: null, kind: "LocalArgument", name: "awardsEnabled" }],
                 kind: "Fragment",
@@ -189,23 +189,23 @@
             };
             const i = l;
         },
-        181196: (e, n, a) => {
-            a.d(n, { Z: () => t });
+        181196: (e, a, n) => {
+            n.d(a, { Z: () => t });
             var l,
                 i = { fragment: { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "GrokSettingsScreenQuery", selections: [{ alias: null, args: null, concreteType: "UserPreferences", kind: "LinkedField", name: "user_preferences", plural: !1, selections: [{ args: null, kind: "FragmentSpread", name: "XaiDataSharingSettings_preference" }, { args: null, kind: "FragmentSpread", name: "XaiPersonalizationSettings_preference" }, { args: null, kind: "FragmentSpread", name: "XaiMemory_preference" }, (l = { kind: "ClientExtension", selections: [{ alias: null, args: null, kind: "ScalarField", name: "__id", storageKey: null }] })], storageKey: null }], type: "Query", abstractKey: null }, kind: "Request", operation: { argumentDefinitions: [], kind: "Operation", name: "GrokSettingsScreenQuery", selections: [{ alias: null, args: null, concreteType: "UserPreferences", kind: "LinkedField", name: "user_preferences", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "allow_xai_data_sharing", storageKey: null }, l, { alias: null, args: null, kind: "ScalarField", name: "allow_xai_personalization", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "allow_grok_memory", storageKey: null }], storageKey: null }] }, params: { id: "teCat2yuEC6e9oilkVKCgw", metadata: {}, name: "GrokSettingsScreenQuery", operationKind: "query", text: null } };
             i.hash = "95fb2f5f909cdb768318aedda9937212";
             const t = i;
         },
-        905402: (e, n, a) => {
-            a.d(n, { Z: () => r });
+        905402: (e, a, n) => {
+            n.d(a, { Z: () => r });
             var l,
                 i,
                 t = { fragment: { argumentDefinitions: (l = [{ defaultValue: null, kind: "LocalArgument", name: "hideSubscriptionsOnProfile" }]), kind: "Fragment", metadata: null, name: "HiddenSubscriptionsSettingsMutation", selections: (i = [{ alias: null, args: [{ kind: "Variable", name: "hide_subscriptions_on_profile", variableName: "hideSubscriptionsOnProfile" }], kind: "ScalarField", name: "user_preferences_put", storageKey: null }]), type: "Mutation", abstractKey: null }, kind: "Request", operation: { argumentDefinitions: l, kind: "Operation", name: "HiddenSubscriptionsSettingsMutation", selections: i }, params: { id: "xC9DvIAKUd4SniHOiu_gKQ", metadata: {}, name: "HiddenSubscriptionsSettingsMutation", operationKind: "mutation", text: null } };
             t.hash = "ebadbc32843b8ecaa06d4c4b55c5a366";
             const r = t;
         },
-        167120: (e, n, a) => {
-            a.d(n, { Z: () => i });
+        167120: (e, a, n) => {
+            n.d(a, { Z: () => i });
             var l = {
                 argumentDefinitions: [],
                 kind: "Fragment",
@@ -221,103 +221,8 @@
             };
             const i = l;
         },
-        629928: (e, n, a) => {
-            a.d(n, { Z: () => c });
-            var l,
-                i,
-                t,
-                r,
-                s,
-                o,
-                u,
-                d = {
-                    fragment: { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "IDVerificationQuery", selections: [{ kind: "RequiredField", field: { alias: "viewer", args: (l = [{ kind: "Literal", name: "s", value: "4721" }]), concreteType: "Viewer", kind: "LinkedField", name: "viewer_v2", plural: !1, selections: [{ kind: "RequiredField", field: { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ kind: "RequiredField", field: { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ kind: "InlineFragment", selections: [(i = { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }), { alias: null, args: null, concreteType: "UserVerificationInfo", kind: "LinkedField", name: "verification_info", plural: !1, selections: [(t = { alias: null, args: null, kind: "ScalarField", name: "is_identity_verified", storageKey: null }), (r = { alias: null, args: null, kind: "ScalarField", name: "is_identity_verified_label_hidden", storageKey: null }), { kind: "RequiredField", field: (s = { alias: null, args: null, kind: "ScalarField", name: "identity_verification_status", storageKey: null }), action: "THROW" }, (o = { kind: "ClientExtension", selections: [{ alias: null, args: null, kind: "ScalarField", name: "__id", storageKey: null }] })], storageKey: null }], type: "User", abstractKey: null }], storageKey: null }, action: "THROW" }], storageKey: null }, action: "THROW" }], storageKey: 'viewer_v2(s:"4721")' }, action: "THROW" }], type: "Query", abstractKey: null },
-                    kind: "Request",
-                    operation: {
-                        argumentDefinitions: [],
-                        kind: "Operation",
-                        name: "IDVerificationQuery",
-                        selections: [
-                            {
-                                alias: "viewer",
-                                args: l,
-                                concreteType: "Viewer",
-                                kind: "LinkedField",
-                                name: "viewer_v2",
-                                plural: !1,
-                                selections: [
-                                    {
-                                        alias: null,
-                                        args: null,
-                                        concreteType: "UserResults",
-                                        kind: "LinkedField",
-                                        name: "user_results",
-                                        plural: !1,
-                                        selections: [
-                                            {
-                                                alias: null,
-                                                args: null,
-                                                concreteType: null,
-                                                kind: "LinkedField",
-                                                name: "result",
-                                                plural: !1,
-                                                selections: [
-                                                    { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null },
-                                                    { kind: "InlineFragment", selections: [i, { alias: null, args: null, concreteType: "UserVerificationInfo", kind: "LinkedField", name: "verification_info", plural: !1, selections: [t, r, s, (u = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }), o], storageKey: null }, u], type: "User", abstractKey: null },
-                                                ],
-                                                storageKey: null,
-                                            },
-                                            u,
-                                        ],
-                                        storageKey: null,
-                                    },
-                                ],
-                                storageKey: 'viewer_v2(s:"4721")',
-                            },
-                        ],
-                    },
-                    params: { id: "3Wx7dsynDTSI0LO52L8L8A", metadata: { features: ["identity_verification_hide_verified_label_settings_enabled"] }, name: "IDVerificationQuery", operationKind: "query", text: null },
-                };
-            d.hash = "6269adea05f11011ee2eec87df25951d";
-            const c = d;
-        },
-        993770: (e, n, a) => {
-            a.d(n, { Z: () => r });
-            var l,
-                i,
-                t = {
-                    fragment: {
-                        argumentDefinitions: (l = [
-                            { defaultValue: null, kind: "LocalArgument", name: "is_identity_verified_label_hidden" },
-                            { defaultValue: null, kind: "LocalArgument", name: "user_id" },
-                        ]),
-                        kind: "Fragment",
-                        metadata: null,
-                        name: "IDVerificationUpdateHideLabelMutation",
-                        selections: (i = [
-                            {
-                                alias: null,
-                                args: [
-                                    { kind: "Variable", name: "is_identity_verified_label_hidden", variableName: "is_identity_verified_label_hidden" },
-                                    { kind: "Variable", name: "user_id", variableName: "user_id" },
-                                ],
-                                kind: "ScalarField",
-                                name: "userverificationinfo_is_identity_verified_label_hidden_put",
-                                storageKey: null,
-                            },
-                        ]),
-                        type: "Mutation",
-                        abstractKey: null,
-                    },
-                    kind: "Request",
-                    operation: { argumentDefinitions: l, kind: "Operation", name: "IDVerificationUpdateHideLabelMutation", selections: i },
-                    params: { id: "lqIzyQL1p3XCZg77zekzZA", metadata: {}, name: "IDVerificationUpdateHideLabelMutation", operationKind: "mutation", text: null },
-                };
-            t.hash = "6b62958a6368974d13a27b8fe59103e0";
-            const r = t;
-        },
-        143543: (e, n, a) => {
-            a.d(n, { Z: () => u });
+        143543: (e, a, n) => {
+            n.d(a, { Z: () => u });
             var l,
                 i,
                 t,
@@ -467,8 +372,8 @@
             o.hash = "56d779cda2fc5ed541448134b6f5b7f2";
             const u = o;
         },
-        799076: (e, n, a) => {
-            a.d(n, { Z: () => o });
+        799076: (e, a, n) => {
+            n.d(a, { Z: () => o });
             var l,
                 i,
                 t,
@@ -524,8 +429,8 @@
             s.hash = "1fe0867df1abb3f28e5d633fcc72f8b3";
             const o = s;
         },
-        56301: (e, n, a) => {
-            a.d(n, { Z: () => p });
+        56301: (e, a, n) => {
+            n.d(a, { Z: () => p });
             var l,
                 i,
                 t,
@@ -588,8 +493,8 @@
             g.hash = "fb5601a4f84129e9c12b38c57764f4fc";
             const p = g;
         },
-        658156: (e, n, a) => {
-            a.d(n, { Z: () => i });
+        658156: (e, a, n) => {
+            n.d(a, { Z: () => i });
             var l = {
                 argumentDefinitions: [{ defaultValue: null, kind: "LocalArgument", name: "awardsEnabled" }],
                 kind: "Fragment",
@@ -605,15 +510,15 @@
             };
             const i = l;
         },
-        795239: (e, n, a) => {
-            a.d(n, { Z: () => t });
+        795239: (e, a, n) => {
+            n.d(a, { Z: () => t });
             var l,
                 i = { fragment: { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "ProfileCustomizationScreenQuery", selections: [{ alias: null, args: null, concreteType: "UserPreferences", kind: "LinkedField", name: "user_preferences", plural: !1, selections: [{ args: null, kind: "FragmentSpread", name: "HiddenSubscriptionsSettings_preference" }, (l = { kind: "ClientExtension", selections: [{ alias: null, args: null, kind: "ScalarField", name: "__id", storageKey: null }] })], storageKey: null }], type: "Query", abstractKey: null }, kind: "Request", operation: { argumentDefinitions: [], kind: "Operation", name: "ProfileCustomizationScreenQuery", selections: [{ alias: null, args: null, concreteType: "UserPreferences", kind: "LinkedField", name: "user_preferences", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "hide_subscriptions_on_profile", storageKey: null }, l], storageKey: null }] }, params: { id: "nREVX5vQMgYq_cSDnMMc9Q", metadata: {}, name: "ProfileCustomizationScreenQuery", operationKind: "query", text: null } };
             i.hash = "a3fea82ec0e7539e2f280d925e816b8c";
             const t = i;
         },
-        97233: (e, n, a) => {
-            a.d(n, { Z: () => u });
+        97233: (e, a, n) => {
+            n.d(a, { Z: () => u });
             var l,
                 i,
                 t,
@@ -628,8 +533,8 @@
             o.hash = "d67c4e19399da899df0f34ae2d1f5acf";
             const u = o;
         },
-        873959: (e, n, a) => {
-            a.d(n, { Z: () => i });
+        873959: (e, a, n) => {
+            n.d(a, { Z: () => i });
             var l = {
                 argumentDefinitions: [],
                 kind: "Fragment",
@@ -645,21 +550,21 @@
             };
             const i = l;
         },
-        228820: (e, n, a) => {
-            a.d(n, { Z: () => i });
+        228820: (e, a, n) => {
+            n.d(a, { Z: () => i });
             var l = { argumentDefinitions: [{ defaultValue: null, kind: "LocalArgument", name: "awardsEnabled" }], kind: "Fragment", metadata: null, name: "SuperFollowsSettingsInternalLinkPivot_user", selections: [{ args: [{ kind: "Variable", name: "awardsEnabled", variableName: "awardsEnabled" }], kind: "FragmentSpread", name: "PayoutThresholdProgress_user" }], type: "User", abstractKey: null, hash: "703fdd6a0065aec8ec26a16a33fa6bfe" };
             const i = l;
         },
-        591668: (e, n, a) => {
-            a.d(n, { Z: () => r });
+        591668: (e, a, n) => {
+            n.d(a, { Z: () => r });
             var l,
                 i,
                 t = { fragment: { argumentDefinitions: (l = [{ defaultValue: null, kind: "LocalArgument", name: "allow_for_you_recommendations" }]), kind: "Fragment", metadata: null, name: "UserPreferencesMutation", selections: (i = [{ alias: null, args: [{ kind: "Variable", name: "allow_for_you_recommendations", variableName: "allow_for_you_recommendations" }], kind: "ScalarField", name: "user_preferences_put", storageKey: null }]), type: "Mutation", abstractKey: null }, kind: "Request", operation: { argumentDefinitions: l, kind: "Operation", name: "UserPreferencesMutation", selections: i }, params: { id: "8CvfCvbcmHcdpq4SNfsXCA", metadata: {}, name: "UserPreferencesMutation", operationKind: "mutation", text: null } };
             t.hash = "347c8857d9cf5880617d3579dab5e6aa";
             const r = t;
         },
-        86218: (e, n, a) => {
-            a.d(n, { Z: () => t });
+        86218: (e, a, n) => {
+            n.d(a, { Z: () => t });
             var l,
                 i = {
                     fragment: {
@@ -696,16 +601,16 @@
             i.hash = "b34f99ad5e6e4556ed453c5aa2b22417";
             const t = i;
         },
-        5974: (e, n, a) => {
-            a.d(n, { Z: () => r });
+        5974: (e, a, n) => {
+            n.d(a, { Z: () => r });
             var l,
                 i,
                 t = { fragment: { argumentDefinitions: (l = [{ defaultValue: null, kind: "LocalArgument", name: "allowXaiDataSharing" }]), kind: "Fragment", metadata: null, name: "XaiDataSharingSettingsMutation", selections: (i = [{ alias: null, args: [{ kind: "Variable", name: "allow_xai_data_sharing", variableName: "allowXaiDataSharing" }], kind: "ScalarField", name: "user_preferences_put", storageKey: null }]), type: "Mutation", abstractKey: null }, kind: "Request", operation: { argumentDefinitions: l, kind: "Operation", name: "XaiDataSharingSettingsMutation", selections: i }, params: { id: "KEfCyU0XXJQ8AZOxiMWuSQ", metadata: {}, name: "XaiDataSharingSettingsMutation", operationKind: "mutation", text: null } };
             t.hash = "bebfb1fce18b567d0624cf7e06a7bb9b";
             const r = t;
         },
-        903423: (e, n, a) => {
-            a.d(n, { Z: () => i });
+        903423: (e, a, n) => {
+            n.d(a, { Z: () => i });
             var l = {
                 argumentDefinitions: [],
                 kind: "Fragment",
@@ -721,16 +626,16 @@
             };
             const i = l;
         },
-        206878: (e, n, a) => {
-            a.d(n, { Z: () => r });
+        206878: (e, a, n) => {
+            n.d(a, { Z: () => r });
             var l,
                 i,
                 t = { fragment: { argumentDefinitions: (l = [{ defaultValue: null, kind: "LocalArgument", name: "allow_grok_memory" }]), kind: "Fragment", metadata: null, name: "XaiMemoryMutation", selections: (i = [{ alias: null, args: [{ kind: "Variable", name: "allow_grok_memory", variableName: "allow_grok_memory" }], kind: "ScalarField", name: "user_preferences_put", storageKey: null }]), type: "Mutation", abstractKey: null }, kind: "Request", operation: { argumentDefinitions: l, kind: "Operation", name: "XaiMemoryMutation", selections: i }, params: { id: "LiRRkGlfd-47HI98W4kVeQ", metadata: {}, name: "XaiMemoryMutation", operationKind: "mutation", text: null } };
             t.hash = "5331ca83737676a2983d1d9abe731c4b";
             const r = t;
         },
-        269877: (e, n, a) => {
-            a.d(n, { Z: () => i });
+        269877: (e, a, n) => {
+            n.d(a, { Z: () => i });
             var l = {
                 argumentDefinitions: [],
                 kind: "Fragment",
@@ -746,16 +651,16 @@
             };
             const i = l;
         },
-        599999: (e, n, a) => {
-            a.d(n, { Z: () => r });
+        599999: (e, a, n) => {
+            n.d(a, { Z: () => r });
             var l,
                 i,
                 t = { fragment: { argumentDefinitions: (l = [{ defaultValue: null, kind: "LocalArgument", name: "allowXaiPersonalization" }]), kind: "Fragment", metadata: null, name: "XaiPersonalizationSettingsMutation", selections: (i = [{ alias: null, args: [{ kind: "Variable", name: "allow_xai_personalization", variableName: "allowXaiPersonalization" }], kind: "ScalarField", name: "user_preferences_put", storageKey: null }]), type: "Mutation", abstractKey: null }, kind: "Request", operation: { argumentDefinitions: l, kind: "Operation", name: "XaiPersonalizationSettingsMutation", selections: i }, params: { id: "JbFOnszPZQclTK-4UHDjvw", metadata: {}, name: "XaiPersonalizationSettingsMutation", operationKind: "mutation", text: null } };
             t.hash = "a389747486873f33dd45ed615a98b619";
             const r = t;
         },
-        87095: (e, n, a) => {
-            a.d(n, { Z: () => i });
+        87095: (e, a, n) => {
+            n.d(a, { Z: () => i });
             var l = {
                 argumentDefinitions: [],
                 kind: "Fragment",
@@ -771,16 +676,12 @@
             };
             const i = l;
         },
-        130919: (e, n, a) => {
-            a.d(n, { t: () => l });
-            const l = Object.freeze({ CanVerifyIdentity: "CanVerifyIdentity", IdentityNonVerifiable: "IdentityNonVerifiable", IdentityVerified: "IdentityVerified", PendingResult: "PendingResult", RequestLocked: "RequestLocked", UnavailableMissingBlueSubscription: "UnavailableMissingBlueSubscription" });
-        },
-        667218: (e, n, a) => {
-            a.d(n, { n: () => l });
+        667218: (e, a, n) => {
+            n.d(a, { n: () => l });
             const l = Object.freeze({ Ads: "Ads", AppleAppStore: "AppleAppStore", Gift: "Gift", GooglePlay: "GooglePlay", Stripe: "Stripe", TPay: "TPay", Twitter: "Twitter", Unknown: "Unknown" });
         },
-        658236: (e, n, a) => {
-            a.d(n, { Z: () => s });
+        658236: (e, a, n) => {
+            n.d(a, { Z: () => s });
             var l,
                 i,
                 t,
@@ -815,8 +716,8 @@
             r.hash = "e0edcc9427df8aa89c5a62132e3e3da7";
             const s = r;
         },
-        689438: (e, n, a) => {
-            a.d(n, { Z: () => t });
+        689438: (e, a, n) => {
+            n.d(a, { Z: () => t });
             var l,
                 i = {
                     argumentDefinitions: [{ defaultValue: null, kind: "LocalArgument", name: "awardsEnabled" }],
@@ -834,8 +735,8 @@
             i.hash = "59bfc4e16e122ddcd6f093657e137573";
             const t = i;
         },
-        737722: (e, n, a) => {
-            a.d(n, { Z: () => t });
+        737722: (e, a, n) => {
+            n.d(a, { Z: () => t });
             var l,
                 i = {
                     argumentDefinitions: [{ defaultValue: null, kind: "LocalArgument", name: "awardsEnabled" }],
@@ -853,13 +754,13 @@
             i.hash = "a3ddf3a7e3d949c0df6ebd21c029ca1e";
             const t = i;
         },
-        551652: (e, n, a) => {
-            a.d(n, { Z: () => i });
+        551652: (e, a, n) => {
+            n.d(a, { Z: () => i });
             var l = { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "useMonetizationPayoutThresholdAmount_user", selections: [{ kind: "RequiredField", field: { alias: null, args: null, concreteType: "CreatorPayoutThresholdInfo", kind: "LinkedField", name: "creator_payout_threshold", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "payout_minimum_threshold_in_usd_cents", storageKey: null }], storageKey: null }, action: "THROW" }], type: "User", abstractKey: null, hash: "a7feb1fb1419eed9ac574e03fea93d01" };
             const i = l;
         },
-        626593: (e, n, a) => {
-            a.d(n, { Z: () => r });
+        626593: (e, a, n) => {
+            n.d(a, { Z: () => r });
             var l,
                 i,
                 t = {
@@ -912,8 +813,8 @@
             t.hash = "54ba7b29bfd10ea8eb4eb50a48a991e1";
             const r = t;
         },
-        283846: (e, n, a) => {
-            a.d(n, { Z: () => c });
+        283846: (e, a, n) => {
+            n.d(a, { Z: () => c });
             var l,
                 i,
                 t,
@@ -1020,8 +921,8 @@
             d.hash = "96fd3c2b5f77434e2243b19987a1eb2f";
             const c = d;
         },
-        940644: (e, n, a) => {
-            a.d(n, { Z: () => s });
+        940644: (e, a, n) => {
+            n.d(a, { Z: () => s });
             var l,
                 i,
                 t,
@@ -1053,8 +954,8 @@
             r.hash = "7db544305925f602b5d60404770b1379";
             const s = r;
         },
-        583082: (e, n, a) => {
-            a.d(n, { Z: () => i });
+        583082: (e, a, n) => {
+            n.d(a, { Z: () => i });
             var l = {
                 argumentDefinitions: [],
                 kind: "Fragment",
@@ -1071,37 +972,37 @@
             };
             const i = l;
         },
-        779610: (e, n, a) => {
-            a.d(n, { Z: () => d });
-            var l = a(202784),
-                i = a(325686),
-                t = a(191796),
-                r = a(58399),
-                s = a(731708),
-                o = a(952428),
-                u = a(392237);
+        779610: (e, a, n) => {
+            n.d(a, { Z: () => d });
+            var l = n(202784),
+                i = n(325686),
+                t = n(191796),
+                r = n(58399),
+                s = n(731708),
+                o = n(952428),
+                u = n(392237);
             const d = (e) => {
-                    const { decoration: n, description: a, disabled: d = !1, isActive: m = !1, label: g, link: p, onPress: y, paddingHorizontal: k, renderRightContent: f, role: _ = "tab", styleOverride: b, testID: F = "pivot", thumbnail: K, thumbnailSize: v, withoutArrow: S = !1 } = e,
-                        h = [c.thumbnailContainer, "medium" === v && c.thumbnailContainerMedium],
+                    const { decoration: a, description: n, disabled: d = !1, isActive: m = !1, label: g, link: p, onPress: y, paddingHorizontal: k, renderRightContent: f, role: _ = "tab", styleOverride: b, testID: F = "pivot", thumbnail: K, thumbnailSize: S, withoutArrow: h = !1 } = e,
+                        v = [c.thumbnailContainer, "medium" === S && c.thumbnailContainerMedium],
                         w = "string" == typeof g ? l.createElement(s.ZP, null, g) : g,
                         T = "object" == typeof p && p.external && !p.openInSameFrame,
-                        L = a ? ("string" == typeof a ? l.createElement(s.ZP, { color: "gray700", size: "subtext2", testID: `${F}-description` }, a) : a) : null,
+                        L = n ? ("string" == typeof n ? l.createElement(s.ZP, { color: "gray700", size: "subtext2", testID: `${F}-description` }, n) : n) : null,
                         R = l.useMemo(() => ("space0" === k ? { paddingHorizontal: 0 } : { paddingHorizontal: k ? u.default.theme.spaces[k] : u.default.theme.componentDimensions.gutterHorizontal }), [k]);
-                    return l.createElement(o.Z, { "aria-selected": "tab" === _ ? m : null, disabled: d, link: d ? void 0 : p, onPress: y, role: _, style: [c.root, R, d && c.disabled, b], testID: F, withInteractiveStyling: !!p || !!y }, l.createElement(i.Z, { style: c.contentContainer }, K ? l.createElement(i.Z, { style: h }, K) : null, l.createElement(i.Z, { style: c.content }, w, L), f ? f() : null, (!p && !y) || d || S ? null : T ? l.createElement(t.default, { style: c.icon }) : l.createElement(r.default, { style: c.icon })), n);
+                    return l.createElement(o.Z, { "aria-selected": "tab" === _ ? m : null, disabled: d, link: d ? void 0 : p, onPress: y, role: _, style: [c.root, R, d && c.disabled, b], testID: F, withInteractiveStyling: !!p || !!y }, l.createElement(i.Z, { style: c.contentContainer }, K ? l.createElement(i.Z, { style: v }, K) : null, l.createElement(i.Z, { style: c.content }, w, L), f ? f() : null, (!p && !y) || d || h ? null : T ? l.createElement(t.default, { style: c.icon }) : l.createElement(r.default, { style: c.icon })), a);
                 },
                 c = u.default.create((e) => ({ root: { justifyContent: "space-between", minHeight: `calc(${u.default.theme.lineHeights.headline1} + 2 * ${e.componentDimensions.gutterVertical})`, paddingVertical: e.componentDimensions.gutterVertical }, disabled: { opacity: 0.5 }, contentContainer: { alignItems: "center", flexDirection: "row", flexGrow: 1 }, content: { flexGrow: 1, flexShrink: 1 }, icon: { color: e.colors.gray700, paddingStart: e.spaces.space12, flexShrink: 0 }, thumbnailContainer: { alignItems: "center", justifyContent: "center", height: e.spaces.space48, width: e.spaces.space48, marginEnd: e.spaces.space16 }, thumbnailContainerMedium: { height: e.spaces.space32, width: e.spaces.space32 } }));
         },
-        536606: (e, n, a) => {
-            a.d(n, { Z: () => m });
-            var l = a(202784),
-                i = a(325686),
-                t = a(731708),
-                r = a(352924),
-                s = a(822399),
-                o = a(98538),
-                u = a(392237);
+        536606: (e, a, n) => {
+            n.d(a, { Z: () => m });
+            var l = n(202784),
+                i = n(325686),
+                t = n(731708),
+                r = n(352924),
+                s = n(822399),
+                o = n(98538),
+                u = n(392237);
             const d = (e) => {
-                const { decoration: n, isCompact: a, progressBarConfig: d, statConfig: m, title: g, valueCurrent: p, valueMax: y } = e,
+                const { decoration: a, isCompact: n, progressBarConfig: d, statConfig: m, title: g, valueCurrent: p, valueMax: y } = e,
                     k = (0, r.F)(),
                     f = ((_ = d), u.default.theme.colors[_?.color || "blue900"]);
                 var _;
@@ -1111,132 +1012,41 @@
                     F = (function (e) {
                         return { borderRadius: u.default.theme.borderRadii[e?.borderRadii || "medium"], height: u.default.theme.spaces[e?.height || "space8"], backgroundColor: u.default.theme.colors.gray50 };
                     })(d);
-                return l.createElement(i.Z, { style: c.root }, l.createElement(i.Z, { style: c.decoration }, n), l.createElement(i.Z, { style: c.title }, l.createElement(t.ZP, { size: "subtext2", weight: "medium" }, g)), l.createElement(i.Z, { id: k, style: c.valueLabel }, m.value ? l.createElement(o.Z, null, l.createElement(o.Z.Value, null, m.value), l.createElement(o.Z.Label, null, m.label)) : l.createElement(t.ZP, { weight: "bold" }, m.label)), l.createElement(i.Z, { style: a ? c.progressBarContainerCompact : c.progressBarContainer, testID: "progressBarStats-progressBarContainer" }, l.createElement(s.Z, { "aria-describedby": k, "aria-valuemax": y, colorValue: f, progress: p / y, progressStyle: b, style: F })));
+                return l.createElement(i.Z, { style: c.root }, l.createElement(i.Z, { style: c.decoration }, a), l.createElement(i.Z, { style: c.title }, l.createElement(t.ZP, { size: "subtext2", weight: "medium" }, g)), l.createElement(i.Z, { id: k, style: c.valueLabel }, m.value ? l.createElement(o.Z, null, l.createElement(o.Z.Value, null, m.value), l.createElement(o.Z.Label, null, m.label)) : l.createElement(t.ZP, { weight: "bold" }, m.label)), l.createElement(i.Z, { style: n ? c.progressBarContainerCompact : c.progressBarContainer, testID: "progressBarStats-progressBarContainer" }, l.createElement(s.Z, { "aria-describedby": k, "aria-valuemax": y, colorValue: f, progress: p / y, progressStyle: b, style: F })));
             };
             const c = u.default.create((e) => ({ root: { display: "grid", gridTemplateRows: "auto auto", gridTemplateColumns: "min-content auto auto", marginBottom: e.spaces.space16 }, decoration: { gridRow: "1/3", gridColumn: "1/2", fontSize: "30px" }, title: { display: "flex", alignItems: "flex-start" }, valueLabel: { display: "flex", alignItems: "flex-end" }, progressBarContainer: { gridRow: "2/3", gridColumn: "2/4", marginTop: e.spaces.space8 }, progressBarContainerCompact: { gridRow: "2/3", gridColumn: "2/4" } })),
                 m = l.memo(d);
         },
-        943401: (e, n, a) => {
-            a.d(n, { Z: () => o });
-            var l = a(202784),
-                i = a(731708),
-                t = a(392237);
+        943401: (e, a, n) => {
+            n.d(a, { Z: () => o });
+            var l = n(202784),
+                i = n(731708),
+                t = n(392237);
             class r extends l.Component {
                 constructor(...e) {
                     super(...e),
                         (this._renderLearnMore = () => {
-                            const { learnMoreLabel: e, learnMoreLink: n } = this.props;
-                            return l.createElement(i.ZP, { link: n, size: "subtext2" }, e);
+                            const { learnMoreLabel: e, learnMoreLink: a } = this.props;
+                            return l.createElement(i.ZP, { link: a, size: "subtext2" }, e);
                         });
                 }
                 render() {
-                    const { description: e, learnMoreLabel: n, learnMoreLink: a } = this.props,
+                    const { description: e, learnMoreLabel: a, learnMoreLink: n } = this.props,
                         t = s.root;
-                    return n && a ? l.createElement(i.ZP, { color: "gray700", size: "subtext2", style: t }, e, " ", this._renderLearnMore()) : l.createElement(i.ZP, { color: "gray700", size: "subtext2", style: t }, e);
+                    return a && n ? l.createElement(i.ZP, { color: "gray700", size: "subtext2", style: t }, e, " ", this._renderLearnMore()) : l.createElement(i.ZP, { color: "gray700", size: "subtext2", style: t }, e);
                 }
             }
             const s = t.default.create((e) => ({ root: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical } })),
                 o = r;
         },
-        928088: (e, n, a) => {
-            a.d(n, { Z: () => r });
-            var l = a(202784),
-                i = a(325686);
-            const t = a(392237).default.create((e) => ({ root: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical } })),
-                r = function ({ children: e }) {
-                    return l.createElement(i.Z, { style: t.root }, e);
-                };
-        },
-        280278: (e, n, a) => {
-            a.d(n, { ZP: () => y });
-            var l = a(202784),
-                i = a(325686),
-                t = a(827515),
-                r = a(461756),
-                s = a(731708),
-                o = a(392237);
-            const u = "up",
-                d = "down",
-                c = (e, n, a) => {
-                    a((a) => {
-                        const l = (0, t.Z)(e) ? (e > (a.count || 0) ? u : d) : u;
-                        return { ...a, count: e, oldText: a.text, pendingCount: null, pendingText: null, text: n, transitionDirection: l };
-                    });
-                },
-                m = {};
-            [u, d].forEach((e) => {
-                const n = "0.3s";
-                m[e] = { active: { transitionProperty: "transform", transitionDuration: n, transform: "translate3d(0, 0, 0)" }, pre: { transform: `translate3d(0, ${e === u ? "100%" : "-100%"}, 0)` }, post: { transform: `translate3d(0, ${e === u ? "-100%" : "100%"}, 0)`, transitionProperty: "transform", transitionDuration: n } };
-            });
-            const g = { position: "absolute" },
-                p = o.default.create({ root: { overflow: "hidden" } }),
-                y = (e) => {
-                    const { children: n, containerStyle: a, count: o, ...d } = e,
-                        [y, k] = l.useState({ animating: !1, count: e.count, pendingCount: null, text: e.children, oldText: null, pendingText: null, transitionDirection: u }),
-                        f = l.useRef(!1);
-                    return (
-                        l.useEffect(
-                            () => (
-                                (f.current = !0),
-                                function () {
-                                    f.current = !1;
-                                }
-                            ),
-                            [],
-                        ),
-                        l.useEffect(() => {
-                            if (f.current)
-                                if (r.Z.reducedMotionEnabled) k((a) => ({ ...a, oldText: null, text: n, pendingText: null, pendingCount: null, count: e.count }));
-                                else if (n !== y.pendingText) {
-                                    n === y.text || ((0, t.Z)(e.count) && y.count === e.count) ? k((e) => ({ ...e, pendingCount: null, pendingText: null })) : (k((a) => ({ ...a, pendingCount: e.count, pendingText: n })), y.animating || c(e.count, n, k));
-                                }
-                        }, [n]),
-                        l.useEffect(() => {
-                            f.current &&
-                                !1 === y.animating &&
-                                (y.oldText
-                                    ? window.requestAnimationFrame(() =>
-                                          window.requestAnimationFrame(() => {
-                                              f.current && k((e) => ({ ...e, animating: !0 }));
-                                          }),
-                                      )
-                                    : y.pendingText && c(y.pendingCount, y.pendingText, k));
-                        }, [y.animating, y.oldText]),
-                        l.useMemo(() => {
-                            const e = m[y.transitionDirection],
-                                n = y.oldText && !r.Z.reducedMotionEnabled,
-                                t = !y.animating && y.oldText && !r.Z.reducedMotionEnabled,
-                                o = { ...g, ...(y.animating ? e.post : e.active) },
-                                u = { ...(t ? e.pre : e.active) };
-                            return l.createElement(
-                                i.Z,
-                                { style: [p.root, a] },
-                                n ? l.createElement("span", { style: o }, l.createElement(s.ZP, d, y.oldText)) : null,
-                                l.createElement(
-                                    "span",
-                                    {
-                                        "data-testid": "app-text-transition-container",
-                                        onTransitionEnd: () =>
-                                            ((e, n) => {
-                                                e && n((e) => ({ ...e, animating: !1, oldText: null }));
-                                            })(f.current, k),
-                                        style: u,
-                                    },
-                                    l.createElement(s.ZP, d, y.text),
-                                ),
-                            );
-                        }, [a, d, y, f, k])
-                    );
-                };
-        },
-        98538: (e, n, a) => {
-            a.d(n, { Z: () => g });
-            var l = a(202784),
-                i = a(325686),
-                t = a(731708),
-                r = a(891198),
-                s = a(280278),
-                o = a(392237);
+        98538: (e, a, n) => {
+            n.d(a, { Z: () => g });
+            var l = n(202784),
+                i = n(325686),
+                t = n(731708),
+                r = n(891198),
+                s = n(280278),
+                o = n(392237);
             const u = "subtext1",
                 d = l.createContext({ onMedia: !1 });
             class c extends l.Component {
@@ -1249,8 +1059,8 @@
                         });
                 }
                 render() {
-                    const { children: e, link: n, onMedia: a, onPress: i } = this.props;
-                    return l.createElement(t.ZP, { color: a ? "white" : "text", hoverLabel: this._getHoverLabel(), link: n, onClick: i }, l.createElement(d.Provider, { value: { onMedia: a } }, e));
+                    const { children: e, link: a, onMedia: n, onPress: i } = this.props;
+                    return l.createElement(t.ZP, { color: n ? "white" : "text", hoverLabel: this._getHoverLabel(), link: a, onClick: i }, l.createElement(d.Provider, { value: { onMedia: n } }, e));
                 }
             }
             (c.Group = (e) =>
@@ -1259,13 +1069,13 @@
                     { style: [m.row, e.style] },
                     l.Children.toArray(e.children)
                         .filter(Boolean)
-                        .map((e, n, a) => l.createElement(i.Z, { key: n, style: n < a.length - 1 && m.groupItemNonLast }, e)),
+                        .map((e, a, n) => l.createElement(i.Z, { key: a, style: a < n.length - 1 && m.groupItemNonLast }, e)),
                 )),
-                (c.Label = ({ children: e, style: n }) => l.createElement(d.Consumer, null, ({ onMedia: a }) => l.createElement(t.ZP, { children: e, color: a ? "white" : "gray700", size: u, style: n }))),
-                (c.Value = ({ animated: e, children: n, count: a, style: i, weight: r = "bold" }) => l.createElement(d.Consumer, null, ({ onMedia: o }) => (e ? l.createElement(s.ZP, { children: n, count: a, size: u, style: i, weight: r }) : l.createElement(t.ZP, { children: n, color: o ? "white" : "text", size: u, style: i, weight: r }))));
+                (c.Label = ({ children: e, style: a }) => l.createElement(d.Consumer, null, ({ onMedia: n }) => l.createElement(t.ZP, { children: e, color: n ? "white" : "gray700", size: u, style: a }))),
+                (c.Value = ({ animated: e, children: a, count: n, style: i, weight: r = "bold" }) => l.createElement(d.Consumer, null, ({ onMedia: o }) => (e ? l.createElement(s.ZP, { children: a, count: n, size: u, style: i, weight: r }) : l.createElement(t.ZP, { children: a, color: o ? "white" : "text", size: u, style: i, weight: r }))));
             const m = o.default.create((e) => ({ row: { flexDirection: "row", flexWrap: "wrap", flex: 1 }, groupItemNonLast: { marginEnd: e.spaces.space20 } })),
                 g = c;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsRevamp-6107ac1a.9d73ba2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsRevamp-6107ac1a.5662816a.js.map

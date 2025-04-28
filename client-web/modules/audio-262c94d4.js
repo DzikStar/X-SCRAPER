@@ -3,7 +3,7 @@
     ["modules.audio-262c94d4"],
     {
         701814: (e, t, a) => {
-            a.r(t), a.d(t, { AudioSpaceAnalytics: () => F, default: () => x });
+            a.r(t), a.d(t, { AudioSpaceAnalytics: () => F, default: () => I });
             var n = a(202784),
                 c = a(776342),
                 s = a(420740),
@@ -101,11 +101,11 @@
                 }, []);
                 const b = () => e.history.goBackThroughModals(),
                     f = n.createElement(r.Z, { backButtonType: "close", onClick: b });
-                return void 0 !== d.state() && void 0 !== t ? n.createElement(o.Z, { allowBackNavigation: !0, enableMaskForDismiss: !0, onMaskClick: b, role: "menu", type: "full", withKeyboardNavigation: !0, withMask: !0 }, !p.ZP.isTwitterApp() && n.createElement(l.Z, { leftControl: f, style: I.appBar, title: B.title, withGutter: !0 }), !1 === t ? n.createElement(s.Z, { onRetry: null, title: B.wrongUser }) : u ? n.createElement(s.Z, { onRetry: null, title: B.genericError }) : n.createElement(T, e)) : null;
+                return void 0 !== d.state() && void 0 !== t ? n.createElement(o.Z, { allowBackNavigation: !0, enableMaskForDismiss: !0, onMaskClick: b, role: "menu", type: "full", withKeyboardNavigation: !0, withMask: !0 }, !p.ZP.isTwitterApp() && n.createElement(l.Z, { leftControl: f, style: x.appBar, title: B.title, withGutter: !0 }), !1 === t ? n.createElement(s.Z, { onRetry: null, title: B.wrongUser }) : u ? n.createElement(s.Z, { onRetry: null, title: B.genericError }) : n.createElement(T, e)) : null;
             }
             const B = { title: u().g7e3d2a4, wrongUser: u().abebdfae, genericError: u().ef4602ec },
-                I = i.default.create((e) => ({ appBar: { paddingVertical: e.spaces.space8 }, closeIcon: { width: e.spaces.space20, height: e.spaces.space20 } })),
-                x = F;
+                x = i.default.create((e) => ({ appBar: { paddingVertical: e.spaces.space8 }, closeIcon: { width: e.spaces.space20, height: e.spaces.space20 } })),
+                I = F;
         },
         409006: (e, t, a) => {
             a.r(t), a.d(t, { default: () => m });
@@ -308,7 +308,7 @@
                 T = (0, n.cn)((e) => e(l.dd).withEndpoint(r.Z).fetchTopics());
         },
         742113: (e, t, a) => {
-            a.r(t), a.d(t, { StartSpaceSheet: () => Te, default: () => Te });
+            a.r(t), a.d(t, { StartSpaceSheet: () => Be, default: () => Be });
             var n = a(807896),
                 c = (a(136728), a(202784)),
                 s = a(400752),
@@ -336,16 +336,18 @@
                 T = a(443781),
                 F = a(782642),
                 B = a(427266),
-                I = a(900147),
-                x = a(125363),
-                D = a(390387),
-                P = a(214997),
-                L = a(13720),
-                R = a(108837),
-                V = a(992942),
-                z = a(973014);
-            const M = { goBack: f().cb70b894, deleteScheduledSpace: f().h61d92b0, selectedSpaces: f().a488f2eb };
-            function A({ allTopics: e, setTopics: t, setView: a, topics: n }) {
+                x = a(536387),
+                I = a(582129),
+                D = a(900147),
+                P = a(125363),
+                L = a(390387),
+                R = a(214997),
+                V = a(13720),
+                z = a(108837),
+                M = a(992942),
+                A = a(973014);
+            const j = { goBack: f().cb70b894, deleteScheduledSpace: f().h61d92b0, selectedSpaces: f().a488f2eb };
+            function O({ allTopics: e, setTopics: t, setView: a, topics: n }) {
                 const [s, o] = c.useState(n),
                     l = s.map((e) => e.topic_id),
                     u = e?.browse_space_topics?.categories;
@@ -355,23 +357,23 @@
                 };
                 return c.createElement(
                     h.Z,
-                    { allowBackNavigation: !0, enableMaskForDismiss: !0, onMaskClick: p, restoreFocusInFocusTrapView: !0, style: j.root, type: "center", withMask: !0 },
+                    { allowBackNavigation: !0, enableMaskForDismiss: !0, onMaskClick: p, restoreFocusInFocusTrapView: !0, style: H.root, type: "center", withMask: !0 },
                     c.createElement(
-                        P.Z,
-                        { showsVerticalScrollIndicator: !1, style: j.accordion },
+                        R.Z,
+                        { showsVerticalScrollIndicator: !1, style: H.accordion },
                         c.createElement(
-                            L.Z,
+                            V.Z,
                             null,
                             u?.map((e) =>
                                 c.createElement(
-                                    R.Z,
-                                    { iconImage: c.createElement(V.Z, { source: { uri: `https://abs-0.twimg.com/emoji/v2/svg/${e.icon}.svg` }, style: j.image }), key: e.semantic_core_entity_id, title: e.name || "" },
+                                    z.Z,
+                                    { iconImage: c.createElement(M.Z, { source: { uri: `https://abs-0.twimg.com/emoji/v2/svg/${e.icon}.svg` }, style: H.image }), key: e.semantic_core_entity_id, title: e.name || "" },
                                     c.createElement(
                                         r.Z,
                                         null,
                                         e.subtopics?.map((e, t) => {
                                             const a = { topic_id: e.topic_id, name: e.name };
-                                            return c.createElement(z.Z, {
+                                            return c.createElement(A.Z, {
                                                 "aria-label": e.name,
                                                 compact: !0,
                                                 disabled: 3 === s.length && !l.includes(e.topic_id),
@@ -380,7 +382,7 @@
                                                     s.map((e) => e.topic_id).includes(e.topic_id) ? o(s.filter((t) => t.topic_id !== e.topic_id)) : o((e) => [...e, a]);
                                                 },
                                                 selected: l.includes(e.topic_id),
-                                                style: [j.selectionPill, 0 !== t ? { borderTopWidth: 0 } : {}],
+                                                style: [H.selectionPill, 0 !== t ? { borderTopWidth: 0 } : {}],
                                                 text: e.name,
                                             });
                                         }),
@@ -395,21 +397,21 @@
                             onClick: () => {
                                 t(s), p();
                             },
-                            style: j.saveButton,
+                            style: H.saveButton,
                             type: "brandFilled",
                         },
                         "Save",
                     ),
-                    c.createElement(d.ZP, { size: "subtext3", style: j.infoText }, M.selectedSpaces({ count: s.length, total: 3 })),
+                    c.createElement(d.ZP, { size: "subtext3", style: H.infoText }, j.selectedSpaces({ count: s.length, total: 3 })),
                 );
             }
-            const j = g.default.create((e) => ({ root: { maxHeight: "70vh", margin: e.spaces.space16 }, accordion: { marginBottom: e.spaces.space8, borderBottomWidth: 1, borderBottomColor: e.colors.gray200, borderStyle: "solid" }, saveButton: { margin: e.spaces.space8 }, selectionPill: { borderRadius: 0, textAlign: "center" }, infoText: { textAlign: "center", marginBottom: e.spaces.space8, color: e.colors.gray700 }, image: { width: e.spaces.space20, height: e.spaces.space20, marginStart: e.spaces.space8, justifyContent: "center" } }));
-            var O = a(952428),
-                H = a(894966),
-                W = a(349745),
-                $ = a(489253);
-            const N = { goBack: f().cb70b894, deleteScheduledSpace: f().h61d92b0, scheduleSpace: f().e9b73da8 };
-            function q({ cancelScheduledSpace: e, scheduledSpaces: t, setFocusedScheduledSpace: a, setView: n }) {
+            const H = g.default.create((e) => ({ root: { maxHeight: "70vh", margin: e.spaces.space16 }, accordion: { marginBottom: e.spaces.space8, borderBottomWidth: 1, borderBottomColor: e.colors.gray200, borderStyle: "solid" }, saveButton: { margin: e.spaces.space8 }, selectionPill: { borderRadius: 0, textAlign: "center" }, infoText: { textAlign: "center", marginBottom: e.spaces.space8, color: e.colors.gray700 }, image: { width: e.spaces.space20, height: e.spaces.space20, marginStart: e.spaces.space8, justifyContent: "center" } }));
+            var W = a(952428),
+                $ = a(894966),
+                N = a(349745),
+                q = a(489253);
+            const G = { goBack: f().cb70b894, deleteScheduledSpace: f().h61d92b0, scheduleSpace: f().e9b73da8 };
+            function Q({ cancelScheduledSpace: e, scheduledSpaces: t, setFocusedScheduledSpace: a, setView: n }) {
                 return (
                     0 === t.length && n("start"),
                     c.createElement(
@@ -417,26 +419,26 @@
                         { allowBackNavigation: !0, enableMaskForDismiss: !0, onMaskClick: () => n("start"), restoreFocusInFocusTrapView: !0, type: "bottom", withMask: !0 },
                         c.createElement(
                             r.Z,
-                            { style: G.container },
-                            c.createElement(i.ZP, { "aria-label": N.goBack, hoverLabel: { label: N.goBack }, icon: c.createElement(H.default, null), onPress: () => n("start"), pullLeft: !0, style: G.backButton, type: "primaryText" }),
+                            { style: Y.container },
+                            c.createElement(i.ZP, { "aria-label": G.goBack, hoverLabel: { label: G.goBack }, icon: c.createElement($.default, null), onPress: () => n("start"), pullLeft: !0, style: Y.backButton, type: "primaryText" }),
                             c.createElement(
                                 r.Z,
-                                { style: G.form },
+                                { style: Y.form },
                                 c.createElement(
                                     r.Z,
-                                    { style: G.border },
+                                    { style: Y.border },
                                     t.map((e) =>
                                         e.broadcast.scheduled_start
                                             ? c.createElement(
-                                                  O.Z,
+                                                  W.Z,
                                                   {
                                                       key: e.broadcast.id,
                                                       onPress: () => {
                                                           a(e), n("manage");
                                                       },
-                                                      style: G.broadcastItem,
+                                                      style: Y.broadcastItem,
                                                   },
-                                                  c.createElement(r.Z, null, c.createElement($.Z, { isExistingSpace: !0, scheduledFor: (0, W.BR)(new Date(e.broadcast.scheduled_start).getTime()) }), c.createElement(d.ZP, { size: "subtext2", weight: "bold" }, e.broadcast.status ? e.broadcast.status : "Scheduled Space")),
+                                                  c.createElement(r.Z, null, c.createElement(q.Z, { isExistingSpace: !0, scheduledFor: (0, N.BR)(new Date(e.broadcast.scheduled_start).getTime()) }), c.createElement(d.ZP, { size: "subtext2", weight: "bold" }, e.broadcast.status ? e.broadcast.status : "Scheduled Space")),
                                               )
                                             : null,
                                     ),
@@ -446,11 +448,11 @@
                     )
                 );
             }
-            const G = g.default.create((e) => ({ container: { display: "flex", flexDirection: "column", gap: e.spaces.space16, justifyContent: "center", padding: e.spaces.space32 }, broadcastItem: { padding: e.spaces.space8, borderBottomWidth: e.spaces.space1, borderColor: e.colors.gray200, borderStyle: "solid" }, backButton: { position: "absolute", top: e.spaces.space16, start: e.spaces.space16 }, actionButton: { marginStart: e.spaces.space12 }, actionButtons: { gap: e.spaces.space12 }, form: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, border: { borderColor: e.colors.gray200, borderStyle: "solid", borderWidth: e.spaces.space1, borderBottomWidth: 0 }, formItem: { marginBottom: e.spaces.space20 }, date: { marginVertical: 0, marginTop: e.spaces.space2 } }));
-            var Q = a(103165),
-                Y = a(999769);
-            const U = { goBack: f().cb70b894, deleteScheduledSpace: f().h61d92b0, editDetails: f().a7069f2e };
-            function J({ cancelScheduledSpace: e, focusedScheduledSpace: t, setFocusedScheduledSpace: a, setView: n }) {
+            const Y = g.default.create((e) => ({ container: { display: "flex", flexDirection: "column", gap: e.spaces.space16, justifyContent: "center", padding: e.spaces.space32 }, broadcastItem: { padding: e.spaces.space8, borderBottomWidth: e.spaces.space1, borderColor: e.colors.gray200, borderStyle: "solid" }, backButton: { position: "absolute", top: e.spaces.space16, start: e.spaces.space16 }, actionButton: { marginStart: e.spaces.space12 }, actionButtons: { gap: e.spaces.space12 }, form: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, border: { borderColor: e.colors.gray200, borderStyle: "solid", borderWidth: e.spaces.space1, borderBottomWidth: 0 }, formItem: { marginBottom: e.spaces.space20 }, date: { marginVertical: 0, marginTop: e.spaces.space2 } }));
+            var U = a(103165),
+                J = a(999769);
+            const K = { goBack: f().cb70b894, deleteScheduledSpace: f().h61d92b0, editDetails: f().a7069f2e };
+            function X({ cancelScheduledSpace: e, focusedScheduledSpace: t, setFocusedScheduledSpace: a, setView: n }) {
                 if (!t.broadcast.scheduled_start) return null;
                 const s = t.broadcast.id,
                     o = () => {
@@ -461,16 +463,16 @@
                     { allowBackNavigation: !0, enableMaskForDismiss: !0, onMaskClick: o, restoreFocusInFocusTrapView: !0, type: "bottom", withMask: !0 },
                     c.createElement(
                         r.Z,
-                        { style: K.container },
-                        c.createElement(r.Z, { style: K.shareButton }, c.createElement(Y.ZP, { audioSpaceId: s, pullRight: !0, type: "icon-borderless" })),
-                        c.createElement(i.ZP, { "aria-label": U.goBack, hoverLabel: { label: U.goBack }, icon: c.createElement(H.default, null), onPress: o, pullLeft: !0, style: K.backButton, type: "primaryText" }),
+                        { style: ee.container },
+                        c.createElement(r.Z, { style: ee.shareButton }, c.createElement(J.ZP, { audioSpaceId: s, pullRight: !0, type: "icon-borderless" })),
+                        c.createElement(i.ZP, { "aria-label": K.goBack, hoverLabel: { label: K.goBack }, icon: c.createElement($.default, null), onPress: o, pullLeft: !0, style: ee.backButton, type: "primaryText" }),
                         c.createElement(
                             r.Z,
-                            { style: K.content },
-                            c.createElement(r.Z, { style: K.spaceDetails }, c.createElement(r.Z, { style: K.mediaProxy }, c.createElement(Q.Z, { audioSpaceId: s }))),
+                            { style: ee.content },
+                            c.createElement(r.Z, { style: ee.spaceDetails }, c.createElement(r.Z, { style: ee.mediaProxy }, c.createElement(U.Z, { audioSpaceId: s }))),
                             c.createElement(
                                 r.Z,
-                                { style: K.actionButtons },
+                                { style: ee.actionButtons },
                                 c.createElement(
                                     i.ZP,
                                     {
@@ -480,7 +482,7 @@
                                         size: "medium",
                                         type: "primaryFilled",
                                     },
-                                    U.editDetails,
+                                    K.editDetails,
                                 ),
                                 c.createElement(
                                     i.ZP,
@@ -491,32 +493,32 @@
                                         size: "medium",
                                         type: "destructiveFilled",
                                     },
-                                    U.deleteScheduledSpace,
+                                    K.deleteScheduledSpace,
                                 ),
                             ),
                         ),
                     ),
                 );
             }
-            const K = g.default.create((e) => ({ container: { display: "flex", flexDirection: "column", gap: e.spaces.space16, justifyContent: "center", padding: e.spaces.space32 }, actionButtonContainer: { flexDirection: "row" }, backButton: { position: "absolute", top: e.spaces.space16, start: e.spaces.space32 }, shareButton: { position: "absolute", top: e.spaces.space16, end: e.spaces.space32 }, headerRightItem: { marginStart: e.spaces.space8 }, actionButton: { marginStart: e.spaces.space12 }, actionButtons: { gap: e.spaces.space12 }, mediaProxy: { marginTop: e.spaces.space4 }, content: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical, marginTop: e.spaces.space16 }, spaceDetails: { marginBottom: e.spaces.space20 }, date: { marginVertical: 0, marginTop: e.spaces.space2 } }));
-            var X = a(260706),
-                ee = a(564619),
-                te = a(184605),
-                ae = a(741810),
-                ne = a(566220),
-                ce = a(943245),
-                se = a(865698);
-            const re = { goBack: f().cb70b894, outbox: f().a15f06fc, title: f().h735a98e, clear: f().dbd5d400, confirm: f().g9677c6e, update: f().h3701ffe, timeLabel: f().c5dd0190, dateLabel: f().edeff232, timezoneLabel: f().fddf24b4, recordSpace: f().e93f3c2a, errorMessageSpaceInPast: f().f6cfa3fe, errorMessageSpaceTooFarFormatter: f().a8f71a2b, deleteFailedMessage: f().ae092f6c, scheduledSpaceUpdated: f().jd7f0030, scheduleSpace: f().e9b73da8, saveChanges: f().a26da034 },
-                oe = { year: !0, month: !0, day: !0 },
-                le = {};
-            function ie({ existingScheduledSpace: e, goBack: t, scheduledFor: a, setScheduledFor: n }) {
-                const s = (0, x.v9)(D.VT),
+            const ee = g.default.create((e) => ({ container: { display: "flex", flexDirection: "column", gap: e.spaces.space16, justifyContent: "center", padding: e.spaces.space32 }, actionButtonContainer: { flexDirection: "row" }, backButton: { position: "absolute", top: e.spaces.space16, start: e.spaces.space32 }, shareButton: { position: "absolute", top: e.spaces.space16, end: e.spaces.space32 }, headerRightItem: { marginStart: e.spaces.space8 }, actionButton: { marginStart: e.spaces.space12 }, actionButtons: { gap: e.spaces.space12 }, mediaProxy: { marginTop: e.spaces.space4 }, content: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical, marginTop: e.spaces.space16 }, spaceDetails: { marginBottom: e.spaces.space20 }, date: { marginVertical: 0, marginTop: e.spaces.space2 } }));
+            var te = a(260706),
+                ae = a(564619),
+                ne = a(184605),
+                ce = a(741810),
+                se = a(566220),
+                re = a(943245),
+                oe = a(865698);
+            const le = { goBack: f().cb70b894, outbox: f().a15f06fc, title: f().h735a98e, clear: f().dbd5d400, confirm: f().g9677c6e, update: f().h3701ffe, timeLabel: f().c5dd0190, dateLabel: f().edeff232, timezoneLabel: f().fddf24b4, recordSpace: f().e93f3c2a, errorMessageSpaceInPast: f().f6cfa3fe, errorMessageSpaceTooFarFormatter: f().a8f71a2b, deleteFailedMessage: f().ae092f6c, scheduledSpaceUpdated: f().jd7f0030, scheduleSpace: f().e9b73da8, saveChanges: f().a26da034 },
+                ie = { year: !0, month: !0, day: !0 },
+                de = {};
+            function ue({ existingScheduledSpace: e, goBack: t, scheduledFor: a, setScheduledFor: n }) {
+                const s = (0, P.v9)(L.VT),
                     l = (0, F.p)(),
                     u = (0, o.useHistory)(),
                     [p, g] = c.useState(e?.broadcast.available_for_replay);
                 let b;
-                b = e && e.broadcast.scheduled_start ? new Date(e.broadcast.scheduled_start) : a ? new Date(a) : (0, W.o3)();
-                const f = (0, ne.R)(),
+                b = e && e.broadcast.scheduled_start ? new Date(e.broadcast.scheduled_start) : a ? new Date(a) : (0, N.o3)();
+                const f = (0, se.R)(),
                     [y, E] = c.useState({ dateError: !1, timeError: !1, tooFarInFuture: !1, invalidDateTime: !1 }),
                     S = b || new Date(f().getTime() + 432e6),
                     [Z, w] = c.useState({ date: { year: S.getFullYear(), month: S.getMonth() + 1, day: S.getDate() }, time: { hour: S.getHours(), minute: S.getMinutes() } }),
@@ -524,26 +526,26 @@
                         t();
                     }, [t]),
                     _ = c.useCallback(() => {
-                        const a = (0, W.o3)(Z),
+                        const a = (0, N.o3)(Z),
                             c = f();
-                        if (a && !(0, W.bJ)(a, c) && !(0, W.WN)(a, c, se.i)) {
+                        if (a && !(0, N.bJ)(a, c) && !(0, N.WN)(a, c, oe.i)) {
                             const c = a?.getTime() || 0;
                             if (e)
-                                return void ae.E.replayBroadcastEdit(e.broadcast.id, { replay_edited_title: e.broadcast.status, scheduled_start_time: c, is_space_available_for_replay: p }).then(() => {
-                                    u.goBack(), l({ text: re.scheduledSpaceUpdated });
+                                return void ce.E.replayBroadcastEdit(e.broadcast.id, { replay_edited_title: e.broadcast.status, scheduled_start_time: c, is_space_available_for_replay: p }).then(() => {
+                                    u.goBack(), l({ text: le.scheduledSpaceUpdated });
                                 });
                             n(c), t();
                         }
                     }, [f, Z, t, p, n, l, e, u]),
                     C = c.useCallback(
                         ({ date: e, time: t }) => {
-                            const a = (0, W.o3)({ date: e, time: t }),
+                            const a = (0, N.o3)({ date: e, time: t }),
                                 n = f();
                             let c = !1,
                                 s = !1,
                                 r = !1,
                                 o = !1;
-                            a && a <= n ? (n.getFullYear() === e.year && n.getMonth() + 1 === e.month && n.getDate() === e.day ? (s = !0) : (c = !0)) : a && (0, W.WN)(a, n, se.i) && ((c = !0), (r = !0)), ((0, te.Z)(e.year) && (0, te.Z)(e.month) && (0, te.Z)(e.day) && (0, te.Z)(t.hour) && (0, te.Z)(t.minute)) || (o = !0), E({ timeError: s, tooFarInFuture: r, dateError: c, invalidDateTime: o });
+                            a && a <= n ? (n.getFullYear() === e.year && n.getMonth() + 1 === e.month && n.getDate() === e.day ? (s = !0) : (c = !0)) : a && (0, N.WN)(a, n, oe.i) && ((c = !0), (r = !0)), ((0, ne.Z)(e.year) && (0, ne.Z)(e.month) && (0, ne.Z)(e.day) && (0, ne.Z)(t.hour) && (0, ne.Z)(t.minute)) || (o = !0), E({ timeError: s, tooFarInFuture: r, dateError: c, invalidDateTime: o });
                         },
                         [f],
                     ),
@@ -561,15 +563,15 @@
                         },
                         [Z, C],
                     ),
-                    { date: B, time: I } = Z,
-                    { hour: P, minute: L } = I,
+                    { date: B, time: x } = Z,
+                    { hour: I, minute: D } = x,
                     { day: R, month: V, year: z } = B,
                     M = f().getFullYear(),
                     A = M + 2,
                     j = ((e) => {
                         try {
-                            const t = (0, W.o3)(Z) || new Date(),
-                                a = (0, ce.It)(e || "en"),
+                            const t = (0, N.o3)(Z) || new Date(),
+                                a = (0, re.It)(e || "en"),
                                 n = t.toLocaleDateString(a),
                                 c = t.toLocaleDateString(a, { timeZoneName: "long" }),
                                 s = c.indexOf(n);
@@ -581,29 +583,29 @@
                             return null;
                         }
                     })(s),
-                    { dateError: O, timeError: N, tooFarInFuture: q } = y,
-                    G = q ? re.errorMessageSpaceTooFarFormatter({ days: se.i }) : re.errorMessageSpaceInPast,
-                    Q = !e?.broadcast.narrow_cast_space_type || e?.broadcast.narrow_cast_space_type === se.g.ALL;
+                    { dateError: O, timeError: H, tooFarInFuture: W } = y,
+                    G = W ? le.errorMessageSpaceTooFarFormatter({ days: oe.i }) : le.errorMessageSpaceInPast,
+                    Q = !e?.broadcast.narrow_cast_space_type || e?.broadcast.narrow_cast_space_type === oe.g.ALL;
                 return c.createElement(
                     h.Z,
                     { allowBackNavigation: !0, enableMaskForDismiss: !0, onMaskClick: v, restoreFocusInFocusTrapView: !0, type: "bottom", withMask: !0 },
                     c.createElement(
                         r.Z,
-                        { style: de.container },
-                        c.createElement(i.ZP, { "aria-label": re.goBack, hoverLabel: { label: re.goBack }, icon: c.createElement(H.default, null), onPress: v, pullLeft: !0, style: de.backButton, type: "primaryText" }),
+                        { style: pe.container },
+                        c.createElement(i.ZP, { "aria-label": le.goBack, hoverLabel: { label: le.goBack }, icon: c.createElement($.default, null), onPress: v, pullLeft: !0, style: pe.backButton, type: "primaryText" }),
                         c.createElement(
                             r.Z,
-                            { style: de.form },
-                            c.createElement(r.Z, { style: de.formItem }, c.createElement($.Z, { scheduledFor: Z })),
-                            c.createElement(r.Z, { style: de.formItem }, c.createElement(d.ZP, { color: "gray700" }, re.dateLabel), c.createElement(X.Z, { day: R, errorMessage: O ? G : "", errors: O ? oe : le, label: re.dateLabel, maxSelectableYear: A, minSelectableYear: M, month: V, onChange: T, style: de.date, withCalendar: !0, year: z })),
-                            c.createElement(r.Z, { style: de.formItem }, c.createElement(ee.Z, { errorText: N ? re.errorMessageSpaceInPast : "", hour: P, invalid: N, label: re.timeLabel, minute: L, onChange: k })),
-                            j && c.createElement(r.Z, { style: de.formItem }, c.createElement(d.ZP, { color: "gray700" }, re.timezoneLabel), c.createElement(d.ZP, { size: "headline1" }, j)),
+                            { style: pe.form },
+                            c.createElement(r.Z, { style: pe.formItem }, c.createElement(q.Z, { scheduledFor: Z })),
+                            c.createElement(r.Z, { style: pe.formItem }, c.createElement(d.ZP, { color: "gray700" }, le.dateLabel), c.createElement(te.Z, { day: R, errorMessage: O ? G : "", errors: O ? ie : de, label: le.dateLabel, maxSelectableYear: A, minSelectableYear: M, month: V, onChange: T, style: pe.date, withCalendar: !0, year: z })),
+                            c.createElement(r.Z, { style: pe.formItem }, c.createElement(ae.Z, { errorText: H ? le.errorMessageSpaceInPast : "", hour: I, invalid: H, label: le.timeLabel, minute: D, onChange: k })),
+                            j && c.createElement(r.Z, { style: pe.formItem }, c.createElement(d.ZP, { color: "gray700" }, le.timezoneLabel), c.createElement(d.ZP, { size: "headline1" }, j)),
                             e &&
                                 Q &&
                                 c.createElement(
                                     r.Z,
-                                    { style: [de.rowContainer, de.formItem] },
-                                    c.createElement(d.ZP, null, re.recordSpace),
+                                    { style: [pe.rowContainer, pe.formItem] },
+                                    c.createElement(d.ZP, null, le.recordSpace),
                                     c.createElement(m.Z, {
                                         onValueChange: () => {
                                             g((e) => !e);
@@ -611,25 +613,25 @@
                                         value: p,
                                     }),
                                 ),
-                            c.createElement(i.ZP, { onPress: _, size: "large", type: "brandFilled" }, e ? re.saveChanges : re.scheduleSpace),
+                            c.createElement(i.ZP, { onPress: _, size: "large", type: "brandFilled" }, e ? le.saveChanges : le.scheduleSpace),
                         ),
                     ),
                 );
             }
-            const de = g.default.create((e) => ({ container: { display: "flex", flexDirection: "column", gap: e.spaces.space16, justifyContent: "center", padding: e.spaces.space32 }, actionButtonContainer: { flexDirection: "row" }, backButton: { position: "absolute", top: e.spaces.space16, start: e.spaces.space16 }, actionButton: { marginStart: e.spaces.space12 }, form: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, formItem: { marginBottom: e.spaces.space20 }, date: { marginVertical: 0, marginTop: e.spaces.space2 }, rowContainer: { flexDirection: "row", justifyContent: "space-between" } }));
-            var ue = a(337631),
-                pe = (a(585488), a(712696)),
-                me = a.n(pe),
-                he = a(736063);
-            const ge = ue.Z,
-                be = f().jb38600c,
-                fe = f().b3633046;
-            function ye({ communityId: e, onSelect: t }) {
-                const a = me()(ge, {}),
-                    n = [{ label: be, value: "" }, ...a.space_hostable_communities.map((e) => ({ label: e.name, value: e.rest_id }))];
+            const pe = g.default.create((e) => ({ container: { display: "flex", flexDirection: "column", gap: e.spaces.space16, justifyContent: "center", padding: e.spaces.space32 }, actionButtonContainer: { flexDirection: "row" }, backButton: { position: "absolute", top: e.spaces.space16, start: e.spaces.space16 }, actionButton: { marginStart: e.spaces.space12 }, form: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, formItem: { marginBottom: e.spaces.space20 }, date: { marginVertical: 0, marginTop: e.spaces.space2 }, rowContainer: { flexDirection: "row", justifyContent: "space-between" } }));
+            var me = a(337631),
+                he = (a(585488), a(712696)),
+                ge = a.n(he),
+                be = a(736063);
+            const fe = me.Z,
+                ye = f().jb38600c,
+                Ee = f().b3633046;
+            function Se({ communityId: e, onSelect: t }) {
+                const a = ge()(fe, {}),
+                    n = [{ label: ye, value: "" }, ...a.space_hostable_communities.map((e) => ({ label: e.name, value: e.rest_id }))];
                 return a.space_hostable_communities.length
                     ? c.createElement(u.ZP, {
-                          label: fe,
+                          label: Ee,
                           onChange: function (e) {
                               t(e || void 0);
                           },
@@ -638,149 +640,153 @@
                       })
                     : null;
             }
-            function Ee(e) {
-                return c.createElement(he.H, { errorConfig: { context: "spaces_community_select" }, suspenseFallback: null }, c.createElement(ye, e));
+            function Ze(e) {
+                return c.createElement(be.H, { errorConfig: { context: "spaces_community_select" }, suspenseFallback: null }, c.createElement(Se, e));
             }
-            var Se = a(52340);
-            const Ze = { anyone: f().c5d40fe2, close: f().ia5e7488, createYourSpace: f().b55d8a78, enableVideo: f().a8df1d34, everyone: f().baffe39a, getToKnowSpaces: f().if410292, loading: f().c02e7e3c, onlyEmployees: "Only X employees", onlyInvited: f().e3a87142, addTopics: f().i43fdce9, unauthorizedScheduleSpace: f().jafbef80, peopleYouFollow: f().af293dc2, placeholder: f().e32e99ec, recordSpace: f().e93f3c2a, scheduledSpaceDeleted: f().b701d610, manageScheduledSpaces: f().b028792d, more: f().h63a5c3c, scheduleSpace: f().e9b73da8, startNow: f().cdf630be, subscribers: f().d52a1caa, title: f().ic05a146, whoCanJoin: f().acd1bcb0, whoCanSpeak: f().h07146a2 },
-                we = "2",
-                ve = "1",
-                _e = "0",
-                Ce = [
-                    { label: Ze.onlyInvited, value: _e },
-                    { label: Ze.peopleYouFollow, value: ve },
-                    { label: Ze.everyone, value: we },
+            var we = a(52340);
+            const ve = { anyone: f().c5d40fe2, close: f().ia5e7488, createYourSpace: f().b55d8a78, enableVideo: f().a8df1d34, everyone: f().baffe39a, getToKnowSpaces: f().if410292, loading: f().c02e7e3c, onlyEmployees: "Only X employees", onlyInvited: f().e3a87142, addTopics: f().i43fdce9, unauthorizedScheduleSpace: f().jafbef80, peopleYouFollow: f().af293dc2, placeholder: f().e32e99ec, recordSpace: f().e93f3c2a, scheduledSpaceDeleted: f().b701d610, manageScheduledSpaces: f().b028792d, more: f().h63a5c3c, scheduleSpace: f().e9b73da8, startNow: f().cdf630be, subscribers: f().d52a1caa, title: f().ic05a146, whoCanJoin: f().acd1bcb0, whoCanSpeak: f().h07146a2 },
+                _e = "2",
+                Ce = "1",
+                ke = "0",
+                Te = [
+                    { label: ve.onlyInvited, value: ke },
+                    { label: ve.peopleYouFollow, value: Ce },
+                    { label: ve.everyone, value: _e },
                 ],
-                ke = c.createElement(y.default, null),
-                Te = () => {
+                Fe = c.createElement(y.default, null),
+                Be = () => {
                     const e = (0, o.useHistory)(),
                         { featureSwitches: t } = (0, T.QZ)(),
-                        a = (0, x.v9)(D.WM),
+                        a = (0, P.v9)(L.WM),
                         [n, g] = c.useState(""),
                         [b, f] = c.useState([]),
                         [y, Z] = c.useState(!1),
-                        [w, P] = c.useState(!1),
-                        [L, R] = c.useState(),
+                        [w, R] = c.useState(!1),
                         [V, z] = c.useState(),
-                        M = (0, F.p)(),
-                        [A, j] = c.useState("start"),
-                        [O, H] = c.useState(se.g.ALL),
-                        [W, $] = c.useState(_e),
-                        N = [se.g.ALL, se.g.SUBSCRIBERS].includes(O),
-                        q = w ? k.zc.VIDEO : k.zc.AUDIO,
-                        G = t.isTrue("spaces_video_creation_enabled"),
-                        Q = c.useCallback(() => {
+                        [M, A] = c.useState(),
+                        j = (0, F.p)(),
+                        [O, H] = c.useState("start"),
+                        W = (0, x.xO)();
+                    c.useEffect(() => {
+                        W.get(I._C);
+                    }, [W]);
+                    const [$, N] = c.useState(oe.g.ALL),
+                        [q, G] = c.useState(ke),
+                        Q = [oe.g.ALL, oe.g.SUBSCRIBERS].includes($),
+                        Y = w ? k.zc.VIDEO : k.zc.AUDIO,
+                        U = t.isTrue("spaces_video_creation_enabled"),
+                        J = c.useCallback(() => {
                             e.goBack();
                         }, [e]),
-                        Y = (0, s.b9)(Se.WJ);
+                        K = (0, s.b9)(we.WJ);
                     c.useEffect(() => {
-                        Y();
-                    }, [Y]);
-                    const U = c.useCallback(() => {
+                        K();
+                    }, [K]);
+                    const X = c.useCallback(() => {
                             Z((e) => !e);
                         }, []),
-                        J = c.useCallback(() => {
-                            j("start");
-                        }, []),
-                        K = c.useCallback(() => {
-                            P((e) => !e);
-                        }, []),
-                        X = c.useCallback((e) => {
-                            g(e.target.value);
-                        }, []),
                         ee = c.useCallback(() => {
-                            j("general_education");
+                            H("start");
                         }, []),
                         te = c.useCallback(() => {
-                            j("recording_education");
+                            R((e) => !e);
                         }, []),
-                        ae = (0, s.b9)(Se.Wy),
+                        ae = c.useCallback((e) => {
+                            g(e.target.value);
+                        }, []),
                         ne = c.useCallback(() => {
-                            if (!V) return;
-                            const e = { ...I.Bx, community_id: L, content_type: q, conversation_controls: parseInt(W, 10), description: n, is_space_available_for_replay: N && y, narrow_cast_space_type: parseInt(O, 10), scheduled_start_time: V, topics: b };
-                            ae({ payload: e, addToast: M, onClose: Q });
-                        }, [M, N, L, q, W, y, O, Q, ae, V, n, b]),
-                        ce = (0, s.b9)(Se.D9),
-                        re = c.useCallback(() => {
-                            ce({ narrowCastType: O, isActiveCreator: a, communityId: L, addToast: M, conversationControls: (0, B.mZ)(parseInt(W, 10)), isSuperFollowersOnly: a && O === se.g.SUBSCRIBERS, onClose: Q, options: { ...I.Bx, community_id: L, content_type: q, is_space_available_for_replay: N && y, narrow_cast_space_type: parseInt(O, 10), topics: b }, title: n });
-                        }, [ce, O, a, L, M, W, Q, q, N, y, b, n]),
-                        oe = c.useMemo(() => {
-                            const e = [{ label: Ze.anyone, value: se.g.ALL }];
-                            return t.isTrue("voice_rooms_employee_only_enabled") && e.push({ label: Ze.onlyEmployees, value: se.g.EMPLOYEES }), a && e.push({ label: Ze.subscribers, value: se.g.SUBSCRIBERS }), e;
-                        }, [t, a]),
-                        le = c.useCallback(
-                            (e) => {
-                                oe.some((t) => t.value === e) && H(e);
-                            },
-                            [oe],
-                        ),
-                        ie = c.useCallback((e) => {
-                            Ce.some((t) => t.value === e) && $(e);
+                            H("general_education");
                         }, []),
-                        de = (0, s.Dv)(Se.sD),
-                        ue = () => c.createElement(c.Fragment, null, c.createElement(l.Z, { leftControl: c.createElement(i.ZP, { "aria-label": Ze.close, hoverLabel: { label: Ze.close }, icon: c.createElement(E.default, null), onPress: Q, type: "primaryText" }), rightControl: c.createElement(v.X, null, c.createElement(Fe, { setView: j })) }), c.createElement(S.default, { style: Ve.decorationIcon }), c.createElement(r.Z, { style: Ve.container }, c.createElement(d.ZP, { size: "title3", weight: "bold" }, Ze.createYourSpace), oe.length > 1 ? c.createElement(u.ZP, { label: Ze.whoCanJoin, onChange: le, options: oe, value: O }) : null, c.createElement(u.ZP, { label: Ze.whoCanSpeak, onChange: ie, options: Ce, value: W }), c.createElement(Ee, { communityId: L, onSelect: R }), c.createElement(p.Z, { onChange: X, placeholder: Ze.placeholder, style: Ve.textInput, value: n }), c.createElement(i.ZP, { onPress: () => j("add_topics"), type: "brandText" }, Ze.addTopics({ count: b.length, total: 3 })), N ? c.createElement(r.Z, { style: Ve.rowContainer }, c.createElement(r.Z, { style: Ve.innerRowContainer }, c.createElement(d.ZP, null, Ze.recordSpace), c.createElement(i.ZP, { hoverLabel: { label: Ze.more }, icon: ke, onPress: te, size: "xSmall", type: "brandText" })), c.createElement(m.Z, { onValueChange: U, value: y })) : null, G && c.createElement(r.Z, { style: Ve.rowContainer }, c.createElement(d.ZP, null, Ze.enableVideo), c.createElement(m.Z, { onValueChange: K, value: w })), c.createElement(r.Z, { style: Ve.rowCreateSpace }, c.createElement(i.ZP, { disabled: de, onPress: V ? ne : re, size: "large", style: Ve.flex, type: "brandFilled" }, V ? Ze.scheduleSpace : Ze.startNow), c.createElement(c.Suspense, { fallback: Pe }, c.createElement(xe, { setView: j }))), c.createElement(i.ZP, { onPress: ee, type: "brandText" }, Ze.getToKnowSpaces)));
+                        ce = c.useCallback(() => {
+                            H("recording_education");
+                        }, []),
+                        se = (0, s.b9)(we.Wy),
+                        re = c.useCallback(() => {
+                            if (!M) return;
+                            const e = { ...D.Bx, community_id: V, content_type: Y, conversation_controls: parseInt(q, 10), description: n, is_space_available_for_replay: Q && y, narrow_cast_space_type: parseInt($, 10), scheduled_start_time: M, topics: b };
+                            se({ payload: e, addToast: j, onClose: J });
+                        }, [j, Q, V, Y, q, y, $, J, se, M, n, b]),
+                        le = (0, s.b9)(we.D9),
+                        ie = c.useCallback(() => {
+                            le({ narrowCastType: $, isActiveCreator: a, communityId: V, addToast: j, conversationControls: (0, B.mZ)(parseInt(q, 10)), isSuperFollowersOnly: a && $ === oe.g.SUBSCRIBERS, onClose: J, options: { ...D.Bx, community_id: V, content_type: Y, is_space_available_for_replay: Q && y, narrow_cast_space_type: parseInt($, 10), topics: b }, title: n });
+                        }, [le, $, a, V, j, q, J, Y, Q, y, b, n]),
+                        de = c.useMemo(() => {
+                            const e = [{ label: ve.anyone, value: oe.g.ALL }];
+                            return t.isTrue("voice_rooms_employee_only_enabled") && e.push({ label: ve.onlyEmployees, value: oe.g.EMPLOYEES }), a && e.push({ label: ve.subscribers, value: oe.g.SUBSCRIBERS }), e;
+                        }, [t, a]),
+                        ue = c.useCallback(
+                            (e) => {
+                                de.some((t) => t.value === e) && N(e);
+                            },
+                            [de],
+                        ),
+                        pe = c.useCallback((e) => {
+                            Te.some((t) => t.value === e) && G(e);
+                        }, []),
+                        me = (0, s.Dv)(we.sD),
+                        he = () => c.createElement(c.Fragment, null, c.createElement(l.Z, { leftControl: c.createElement(i.ZP, { "aria-label": ve.close, hoverLabel: { label: ve.close }, icon: c.createElement(E.default, null), onPress: J, type: "primaryText" }), rightControl: c.createElement(v.X, null, c.createElement(xe, { setView: H })) }), c.createElement(S.default, { style: Me.decorationIcon }), c.createElement(r.Z, { style: Me.container }, c.createElement(d.ZP, { size: "title3", weight: "bold" }, ve.createYourSpace), de.length > 1 ? c.createElement(u.ZP, { label: ve.whoCanJoin, onChange: ue, options: de, value: $ }) : null, c.createElement(u.ZP, { label: ve.whoCanSpeak, onChange: pe, options: Te, value: q }), c.createElement(Ze, { communityId: V, onSelect: z }), c.createElement(p.Z, { onChange: ae, placeholder: ve.placeholder, style: Me.textInput, value: n }), c.createElement(i.ZP, { onPress: () => H("add_topics"), type: "brandText" }, ve.addTopics({ count: b.length, total: 3 })), Q ? c.createElement(r.Z, { style: Me.rowContainer }, c.createElement(r.Z, { style: Me.innerRowContainer }, c.createElement(d.ZP, null, ve.recordSpace), c.createElement(i.ZP, { hoverLabel: { label: ve.more }, icon: Fe, onPress: ce, size: "xSmall", type: "brandText" })), c.createElement(m.Z, { onValueChange: X, value: y })) : null, U && c.createElement(r.Z, { style: Me.rowContainer }, c.createElement(d.ZP, null, ve.enableVideo), c.createElement(m.Z, { onValueChange: te, value: w })), c.createElement(r.Z, { style: Me.rowCreateSpace }, c.createElement(i.ZP, { disabled: me, onPress: M ? re : ie, size: "large", style: Me.flex, type: "brandFilled" }, M ? ve.scheduleSpace : ve.startNow), c.createElement(c.Suspense, { fallback: Re }, c.createElement(Pe, { setView: H }))), c.createElement(i.ZP, { onPress: ne, type: "brandText" }, ve.getToKnowSpaces)));
                     return c.createElement(
                         h.Z,
-                        { allowBackNavigation: !de, enableMaskForDismiss: !de, onMaskClick: Q, restoreFocusInFocusTrapView: !0, type: "bottom", withMask: !0 },
+                        { allowBackNavigation: !me, enableMaskForDismiss: !me, onMaskClick: J, restoreFocusInFocusTrapView: !0, type: "bottom", withMask: !0 },
                         (() => {
-                            switch (A) {
+                            switch (O) {
                                 case "general_education":
-                                    return c.createElement(C.ZP, { onDismiss: J });
+                                    return c.createElement(C.ZP, { onDismiss: ee });
                                 case "recording_education":
-                                    return c.createElement(_.ZP, { onDismiss: J });
+                                    return c.createElement(_.ZP, { onDismiss: ee });
                                 case "start":
-                                    return ue();
+                                    return he();
                                 case "add_topics":
-                                    return c.createElement(r.Z, { style: Ve.container }, c.createElement(v.X, null, c.createElement(Re, { setTopics: (e) => f(e), setView: (e) => j(e), topics: b })));
+                                    return c.createElement(r.Z, { style: Me.container }, c.createElement(v.X, null, c.createElement(ze, { setTopics: (e) => f(e), setView: (e) => H(e), topics: b })));
                                 case "schedule":
                                 case "list":
                                 case "manage":
-                                    return c.createElement(r.Z, { style: Ve.container }, c.createElement(Le, { scheduledFor: V, setScheduledFor: z, setView: j, view: A }));
+                                    return c.createElement(r.Z, { style: Me.container }, c.createElement(Ve, { scheduledFor: M, setScheduledFor: A, setView: H, view: O }));
                             }
                         })(),
                     );
                 };
-            function Fe(e) {
-                const { setView: t } = e,
-                    a = (0, s.Dv)(Se.aZ),
-                    n = a.length > 0,
-                    r = n ? Ze.manageScheduledSpaces({ count: a.length }) : void 0;
-                return n ? c.createElement(i.ZP, { "aria-label": r, hoverLabel: { label: r }, icon: c.createElement(Z.default, null), onPress: () => t("list"), type: "primaryText" }) : null;
-            }
-            const Be = c.createElement(w.default, null),
-                Ie = { label: Ze.scheduleSpace };
             function xe(e) {
                 const { setView: t } = e,
-                    a = (0, s.Dv)(Se.aZ);
-                return c.createElement(De, { disabled: 10 === a.length, onPress: () => t("schedule") });
+                    a = (0, s.Dv)(we.aZ),
+                    n = a.length > 0,
+                    r = n ? ve.manageScheduledSpaces({ count: a.length }) : void 0;
+                return n ? c.createElement(i.ZP, { "aria-label": r, hoverLabel: { label: r }, icon: c.createElement(Z.default, null), onPress: () => t("list"), type: "primaryText" }) : null;
             }
-            function De(e) {
-                return c.createElement(i.ZP, (0, n.Z)({ "aria-label": Ze.scheduleSpace, hoverLabel: Ie, icon: Be, size: "large", type: "brandOutlined" }, e));
+            const Ie = c.createElement(w.default, null),
+                De = { label: ve.scheduleSpace };
+            function Pe(e) {
+                const { setView: t } = e,
+                    a = (0, s.Dv)(we.aZ);
+                return c.createElement(Le, { disabled: 10 === a.length, onPress: () => t("schedule") });
             }
-            const Pe = c.createElement(De, { disabled: !0 });
             function Le(e) {
+                return c.createElement(i.ZP, (0, n.Z)({ "aria-label": ve.scheduleSpace, hoverLabel: De, icon: Ie, size: "large", type: "brandOutlined" }, e));
+            }
+            const Re = c.createElement(Le, { disabled: !0 });
+            function Ve(e) {
                 const { scheduledFor: t, setScheduledFor: a, setView: n, view: r } = e,
                     [o, l] = c.useState(),
                     i = (0, F.p)(),
-                    d = (0, s.b9)(Se.Ex),
+                    d = (0, s.b9)(we.Ex),
                     u = c.useCallback(
                         (e) => {
                             d(e).then(() => {
-                                i({ text: Ze.scheduledSpaceDeleted });
+                                i({ text: ve.scheduledSpaceDeleted });
                             }),
                                 l(void 0);
                         },
                         [d, i],
                     ),
-                    p = (0, s.Dv)(Se.aZ) ?? [];
+                    p = (0, s.Dv)(we.aZ) ?? [];
                 switch (r) {
                     case "schedule":
-                        return c.createElement(ie, { existingScheduledSpace: o, goBack: () => n(o ? "list" : "start"), scheduledFor: t, setScheduledFor: (e) => a(e) });
+                        return c.createElement(ue, { existingScheduledSpace: o, goBack: () => n(o ? "list" : "start"), scheduledFor: t, setScheduledFor: (e) => a(e) });
                     case "list":
-                        return c.createElement(q, { cancelScheduledSpace: u, scheduledSpaces: p, setFocusedScheduledSpace: l, setView: (e) => n(e) });
+                        return c.createElement(Q, { cancelScheduledSpace: u, scheduledSpaces: p, setFocusedScheduledSpace: l, setView: (e) => n(e) });
                     case "manage":
                         if (!o) return;
-                        return c.createElement(J, {
+                        return c.createElement(X, {
                             cancelScheduledSpace: () => {
                                 u(o.broadcast.id);
                             },
@@ -792,11 +798,11 @@
                         return null;
                 }
             }
-            function Re(e) {
-                const t = (0, s.Dv)(Se.Bd);
-                return c.createElement(A, (0, n.Z)({ allTopics: t }, e));
+            function ze(e) {
+                const t = (0, s.Dv)(we.Bd);
+                return c.createElement(O, (0, n.Z)({ allTopics: t }, e));
             }
-            const Ve = g.default.create((e) => ({ container: { gap: e.spaces.space16, justifyContent: "center", padding: e.spaces.space32 }, decorationIcon: { alignSelf: "center", color: e.colors.purple500, height: e.spaces.space48, width: e.spaces.space48 }, innerRowContainer: { alignItems: "center", flexDirection: "row", gap: e.spaces.space4 }, rowContainer: { flexDirection: "row", justifyContent: "space-between" }, rowCreateSpace: { display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "stretch", gap: e.spaces.space8 }, flex: { flex: 1 }, textInput: { width: "100%" } }));
+            const Me = g.default.create((e) => ({ container: { gap: e.spaces.space16, justifyContent: "center", padding: e.spaces.space32 }, decorationIcon: { alignSelf: "center", color: e.colors.purple500, height: e.spaces.space48, width: e.spaces.space48 }, innerRowContainer: { alignItems: "center", flexDirection: "row", gap: e.spaces.space4 }, rowContainer: { flexDirection: "row", justifyContent: "space-between" }, rowCreateSpace: { display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "stretch", gap: e.spaces.space8 }, flex: { flex: 1 }, textInput: { width: "100%" } }));
         },
         224192: (e, t, a) => {
             a.r(t), a.d(t, { AudioSpaceDiscovery: () => le, default: () => ie });
@@ -870,8 +876,8 @@
                 return n.createElement(b.nO, { namespace: v }, s);
             }
             const B = g.default.create((e) => ({ root: { paddingStart: e.componentDimensions.gutterHorizontal, paddingTop: e.spaces.space36 }, title: { marginBottom: e.spaces.space20 }, carousel: { marginBottom: e.spaces.space28 }, children: { width: "75%", height: "100%", marginEnd: e.spaces.space20 } }));
-            var I = a(71620),
-                x = a(58255);
+            var x = a(71620),
+                I = a(58255);
             var D = a(107267),
                 P = a(405661),
                 L = a(2430),
@@ -898,7 +904,7 @@
                         } = (function () {
                             const [e, t] = n.useState(f.ZP.NONE),
                                 [a, c] = n.useState(),
-                                s = (0, I.n7)("useAudioSpaceSearch");
+                                s = (0, x.n7)("useAudioSpaceSearch");
                             return {
                                 searchAudioSpaces: n.useCallback(
                                     (e, a) => {
@@ -906,7 +912,7 @@
                                             const n = s({ showToast: !1 });
                                             t(f.ZP.LOADING);
                                             const r = () => {
-                                                x.w
+                                                I.w
                                                     .searchAudioSpace(e, a)
                                                     .then((e) => {
                                                         c(e), t(f.ZP.LOADED);
@@ -916,7 +922,7 @@
                                                     })
                                                     .catch(n);
                                             };
-                                            x.w.initialized() ? r() : setTimeout(r, 100);
+                                            I.w.initialized() ? r() : setTimeout(r, 100);
                                         }
                                     },
                                     [s],
@@ -1056,4 +1062,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/modules.audio-262c94d4.5619e75a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/modules.audio-262c94d4.d29121fa.js.map

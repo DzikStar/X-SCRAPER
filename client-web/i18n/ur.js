@@ -2191,7 +2191,6 @@
                     return "Looks like this video exceeds the maximum file size that can be uploaded (" + e.human_readable_max_size + "GB).";
                 }),
                 o("cba4fdde", "Deliver in 1080p to viewers on X"),
-                o("c92702a0", "This MP4 file might be corrupted. We’ll try uploading it, but you may need to use a different video file if it fails."),
                 o("ef8f5d90", "تجویز کردہ"),
                 o("a7046fb0", "Rarely needed"),
                 o("acf3ecf4", "میڈیا شامل کریں"),
@@ -2965,9 +2964,9 @@
                 o("c6f58084", "ڈویلپرز"),
                 o("d83f18d2", "ڈائریکٹری"),
                 o("hc5aa17c", "Get the X app"),
-                o("j0693948", "Get the Grok app");
-            o("fbf83158", "Warning: Payment failed"),
-                o("jadeb4da", "Please urgently update your payment method before you lose your subscription benefits."),
+                o("j0693948", "Get the Grok app"),
+                o("fbf83158", "Warning: Payment failed");
+            o("jadeb4da", "Please urgently update your payment method before you lose your subscription benefits."),
                 o("bce3726a", "Update Billing"),
                 o("fce9ecce", "Suggested Videos"),
                 o("efe6ef9e", "View post"),
@@ -3881,9 +3880,9 @@
                 o("d7357e7e", "Remove from Co-hosts"),
                 o("bf307fc0", "Block and Remove"),
                 o("ccf2f24e", "رپورٹ کریں"),
-                o("i22835de", "منظور کریں");
-            o("cb59a0fe", "انکار کریں"),
-                o("c2376960", "Requests to Speak"),
+                o("i22835de", "منظور کریں"),
+                o("cb59a0fe", "انکار کریں");
+            o("c2376960", "Requests to Speak"),
                 o("aba7dcdd", function (e) {
                     return "Invite " + e.name;
                 }),
@@ -4913,9 +4912,9 @@
                 o("a7b48b36", "The percentage of video views that were completed."),
                 o("a2580f2a", "Completion Rate"),
                 o("ff95a9cc", "Video ID"),
-                o("a97e358e", "Video Link");
-            o("e10e8b46", "Only showing the videos from the last 100 days."),
-                o("ba37f6da", "Video overview"),
+                o("a97e358e", "Video Link"),
+                o("e10e8b46", "Only showing the videos from the last 100 days.");
+            o("ba37f6da", "Video overview"),
                 o("f19846b2", "Video thumbnail"),
                 o("ccd6f4a8", "Video title"),
                 o("c8410542", "The number of times your video was viewed."),
@@ -5869,11 +5868,11 @@
                 o("a0ea2fa6", "نام کا خانہ خالی نہیں ہو سکتا"),
                 o("eec37eac", "اس نام کا بک مارک فولڈر پہلے سے موجود ہے"),
                 o("fce0c59e", "اینیمیشن JSON کے تجزیہ میں ناکام۔ براہ کرم اپنی اینیمیشن فائل میں JSON کا فارمیٹ چیک کریں اور دوبارہ کوشش کریں۔"),
-                o("g0eea6c2", "اینیمیشن JSON فائل پڑھنے میں ناکام۔ براہ کرم فائل دوبارہ کھولنے کی کوشش کریں۔");
-            o("ae58026a", "پیش منظر کے لیے ایک برانڈڈ لائیک.json فائل کھولیں۔"),
-                o("hd0bc1eb", function (e) {
-                    return e.name + " لائیو ہیں";
-                }),
+                o("g0eea6c2", "اینیمیشن JSON فائل پڑھنے میں ناکام۔ براہ کرم فائل دوبارہ کھولنے کی کوشش کریں۔"),
+                o("ae58026a", "پیش منظر کے لیے ایک برانڈڈ لائیک.json فائل کھولیں۔");
+            o("hd0bc1eb", function (e) {
+                return e.name + " لائیو ہیں";
+            }),
                 o("bea1f26b", function (e) {
                     return e.name + " لائیو تھے";
                 }),
@@ -6877,9 +6876,9 @@
                 o("fdd77a34", "Create longer posts"),
                 o("j6d26a7a", "Write as much as you’d like to share"),
                 o("c4fd68da", "Customize your experience"),
-                o("c0195168", "Change your app icon and navigation options");
-            o("b6b5dc94", "Become verified"),
-                o("b06db848", "Stand out from others on the platform"),
+                o("c0195168", "Change your app icon and navigation options"),
+                o("b6b5dc94", "Become verified");
+            o("b06db848", "Stand out from others on the platform"),
                 o("e3e3a97c", "Earn a share of revenue from your posts"),
                 o("f15bc24e", "Increased Grok limits"),
                 o("c4666e1c", "More usage of Grok 3, our latest model"),
@@ -7853,7 +7852,8 @@
                 o("b33d1518", "Sync jobs from a supported integration or a custom XML feed"),
                 o("dd2db402", "Step 1: Gather the required information"),
                 o("edb098c2", "Step 2: Contact our support team"),
-                o("c4474460", "Step 2: Email our support team");
+                o("c4474460", "Step 2: Email our support team"),
+                o("a08da0fa", "What happens next?");
             function i(e, t) {
                 for (var a = 0; a < t.length; a++) {
                     var o = t[a];
@@ -7892,8 +7892,7 @@
                     c(e, t)
                 );
             }
-            o("a08da0fa", "What happens next?"),
-                o("c127374e", "Send us a message"),
+            o("c127374e", "Send us a message"),
                 o("b2cb2a0c", "Username of your Verified Org account"),
                 o("b8e64002", "Name of your applicant tracking system"),
                 o("acb99db6", "Career site URL where your jobs are listed"),
@@ -8895,9 +8894,9 @@
                 o("c057680c", "ہم اس براؤزر میں ویڈیو نہیں چلا سکتے۔ براہ کرم کوئی مختلف ویب براؤزر آزمائیں۔"),
                 o("i5dfae6e", "یہ ویڈیو آپ کے مقام پر دستیاب نہیں ہے۔"),
                 o("c2388276", "یہ ویڈیو حذف کر دی گئی ہے۔"),
-                o("d2c96140", "مہمان آڈیو اشارہ");
-            o("f6dc9146", "دوبارہ چلائیں"),
-                o("d30c74fe", "والیوم"),
+                o("d2c96140", "مہمان آڈیو اشارہ"),
+                o("f6dc9146", "دوبارہ چلائیں");
+            o("d30c74fe", "والیوم"),
                 o("f2d4e6f2", "دوبارہ دیکھیں"),
                 o("e9f1af3a", "مزید جانیں"),
                 o("f1881d86", "This post can’t be replied to, shared or liked."),
@@ -13245,4 +13244,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ur.1c5fd77a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ur.4da478ba.js.map

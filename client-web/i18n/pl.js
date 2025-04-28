@@ -2196,7 +2196,6 @@
                     return "Rozmiar tego filmu jest większy niż dozwolony maksymalny rozmiar przesyłanych plików (" + e.human_readable_max_size + " GB).";
                 }),
                 i("cba4fdde", "Udostępniaj użytkownikom serwisu X treści o rozdzielczości 1080p"),
-                i("c92702a0", "Ten plik MP4 może być uszkodzony. Próbujemy go przesłać, ale jeśli się to nie uda, trzeba będzie użyć innego pliku filmu."),
                 i("ef8f5d90", "Polecane"),
                 i("a7046fb0", "Wymagane rzadko"),
                 i("acf3ecf4", "Dodaj multimedia"),
@@ -2970,9 +2969,9 @@
                 i("c6f58084", "Deweloperzy"),
                 i("d83f18d2", "Ścieżka"),
                 i("hc5aa17c", "Pobierz aplikację X"),
-                i("j0693948", "Pobierz aplikację Grok");
-            i("fbf83158", "Ostrzeżenie: realizacja płatności nie powiodła się"),
-                i("jadeb4da", "Jak najszybciej zaktualizuj swoją metodę płatności, zanim stracisz korzyści związane z subskrypcją."),
+                i("j0693948", "Pobierz aplikację Grok"),
+                i("fbf83158", "Ostrzeżenie: realizacja płatności nie powiodła się");
+            i("jadeb4da", "Jak najszybciej zaktualizuj swoją metodę płatności, zanim stracisz korzyści związane z subskrypcją."),
                 i("bce3726a", "Aktualizuj rozliczenie"),
                 i("fce9ecce", "Sugerowane filmy"),
                 i("efe6ef9e", "Wyświetl wpis"),
@@ -3886,9 +3885,9 @@
                 i("d7357e7e", "Usuń z grona współhostów"),
                 i("bf307fc0", "Zablokuj i usuń"),
                 i("ccf2f24e", "Zgłoszenie"),
-                i("i22835de", "Akceptuj");
-            i("cb59a0fe", "Odrzuć"),
-                i("c2376960", "Prośby o głos"),
+                i("i22835de", "Akceptuj"),
+                i("cb59a0fe", "Odrzuć");
+            i("c2376960", "Prośby o głos"),
                 i("aba7dcdd", function (e) {
                     return "Zaproś użytkownika " + e.name;
                 }),
@@ -4918,9 +4917,9 @@
                 i("a7b48b36", "Odsetek wyświetleń filmów, podczas których obejrzano cały film."),
                 i("a2580f2a", "Liczba pełnych wyświetleń"),
                 i("ff95a9cc", "Identyfikator filmu"),
-                i("a97e358e", "Link do filmu");
-            i("e10e8b46", "Pokazywane są tylko filmy z ostatnich 100 dni."),
-                i("ba37f6da", "Przegląd filmu"),
+                i("a97e358e", "Link do filmu"),
+                i("e10e8b46", "Pokazywane są tylko filmy z ostatnich 100 dni.");
+            i("ba37f6da", "Przegląd filmu"),
                 i("f19846b2", "Miniatura filmu"),
                 i("ccd6f4a8", "Tytuł filmu"),
                 i("c8410542", "Liczba wyświetleń Twojego filmu."),
@@ -5874,11 +5873,11 @@
                 i("a0ea2fa6", "Pole z nazwą nie może być puste"),
                 i("eec37eac", "Folder Zakładek o tej nazwie już istnieje"),
                 i("fce0c59e", "Nie udało się otworzyć pliku animacji JSON. Sprawdź format pliku animacji JSON i spróbuj ponownie."),
-                i("g0eea6c2", "Nie udało się odczytać pliku animacji JSON. Spróbuj ponownie otworzyć plik.");
-            i("ae58026a", "Otwórz plik spersonalizowanego polubienia .json, aby zobaczyć podgląd"),
-                i("hd0bc1eb", function (e) {
-                    return e.name + " transmituje na żywo";
-                }),
+                i("g0eea6c2", "Nie udało się odczytać pliku animacji JSON. Spróbuj ponownie otworzyć plik."),
+                i("ae58026a", "Otwórz plik spersonalizowanego polubienia .json, aby zobaczyć podgląd");
+            i("hd0bc1eb", function (e) {
+                return e.name + " transmituje na żywo";
+            }),
                 i("bea1f26b", function (e) {
                     return e.name + " transmitował/a na żywo";
                 }),
@@ -6882,9 +6881,9 @@
                 i("fdd77a34", "Twórz dłuższe wpisy"),
                 i("j6d26a7a", "Pisz tyle, ile chcesz udostępnić"),
                 i("c4fd68da", "Dostosuj swoje środowisko"),
-                i("c0195168", "Zmień ikonę aplikacji i opcje nawigacji");
-            i("b6b5dc94", "Uzyskaj weryfikację"),
-                i("b06db848", "Wyróżniaj się spośród innych użytkowników platformy"),
+                i("c0195168", "Zmień ikonę aplikacji i opcje nawigacji"),
+                i("b6b5dc94", "Uzyskaj weryfikację");
+            i("b06db848", "Wyróżniaj się spośród innych użytkowników platformy"),
                 i("e3e3a97c", "Miej udział w dochodach generowanych przez Twoje wpisy"),
                 i("f15bc24e", "Zwiększone limity Groka"),
                 i("c4666e1c", "Więcej możliwości używania naszego najnowszego modelu Grok 3"),
@@ -7858,7 +7857,8 @@
                 i("b33d1518", "Synchronizuj oferty pracy z obsługiwanej integracji lub niestandardowego źródła danych XML"),
                 i("dd2db402", "Krok 1: Zbierz wymagane informacje"),
                 i("edb098c2", "Krok 2: Skontaktuj się z naszym zespołem pomocy technicznej"),
-                i("c4474460", "Krok 2: Wyślij wiadomość e-mail do naszego zespołu pomocy technicznej");
+                i("c4474460", "Krok 2: Wyślij wiadomość e-mail do naszego zespołu pomocy technicznej"),
+                i("a08da0fa", "Jakie są kolejne kroki?");
             function t(e, a) {
                 for (var o = 0; o < a.length; o++) {
                     var i = a[o];
@@ -7897,8 +7897,7 @@
                     c(e, a)
                 );
             }
-            i("a08da0fa", "Jakie są kolejne kroki?"),
-                i("c127374e", "Wyślij nam wiadomość"),
+            i("c127374e", "Wyślij nam wiadomość"),
                 i("b2cb2a0c", "Nazwa użytkownika Twojego konta zweryfikowanej organizacji"),
                 i("b8e64002", "Nazwa Twojego systemu śledzenia osób aplikujących"),
                 i("acb99db6", "Adres URL witryny z ogłoszeniami dotyczącymi pracy, w której są wymienione Twoje oferty pracy"),
@@ -8900,9 +8899,9 @@
                 i("c057680c", "Nie można wyświetlić filmu w tej przeglądarce. Użyj innej przeglądarki."),
                 i("i5dfae6e", "Ten film jest niedostępny w Twojej lokalizacji."),
                 i("c2388276", "Ten film został usunięty."),
-                i("d2c96140", "Powiadomienie głosowe o gościu dołączającym do transmisji");
-            i("f6dc9146", "POWTÓRKA TRANSMISJI"),
-                i("d30c74fe", "Głośność"),
+                i("d2c96140", "Powiadomienie głosowe o gościu dołączającym do transmisji"),
+                i("f6dc9146", "POWTÓRKA TRANSMISJI");
+            i("d30c74fe", "Głośność"),
                 i("f2d4e6f2", "Obejrzyj ponownie"),
                 i("e9f1af3a", "Dowiedz się więcej"),
                 i("f1881d86", "Tego wpisu nie można podać dalej, udostępnić ani polubić."),
@@ -13250,4 +13249,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.87f4907a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.c6a6f1ca.js.map
