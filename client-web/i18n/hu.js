@@ -600,6 +600,7 @@
                 s("e0cb0c72", "Hirdetések"),
                 s("e2eef3c2", "Ellenőrzött szervezetek"),
                 s("b55d8a78", "Hozd létre a saját Tered!"),
+                s("e5323e36", "Go Live"),
                 s("a5a30af0", "Cikkek"),
                 s("d13d697c", "Új"),
                 s("j0e2cfa8", "Üzleti"),
@@ -899,9 +900,9 @@
                 s("i821844f", "Tudj meg többet!"),
                 s("b0abbb17", "Tudj meg többet"),
                 s("e7e0d88b", "Tudj meg többet"),
-                s("i560665f", "Tudj meg többet"),
-                s("f6e774d9", "Tudj meg többet");
-            s("h486f755", "Tudj meg többet"),
+                s("i560665f", "Tudj meg többet");
+            s("f6e774d9", "Tudj meg többet"),
+                s("h486f755", "Tudj meg többet"),
                 s("bab41dab", "Tudj meg többet"),
                 s("e0ebdb29", "Tudj meg többet"),
                 s("f8493831", "Tudj meg többet"),
@@ -1907,9 +1908,9 @@
                 s("a330771e", "Hivatkozás másolása a vágólapra"),
                 s("b6510e68", "Másold ki a cikked URL-címét a megosztáshoz."),
                 s("e4a6e006", "Valami hiba történt. Kérjük, próbáld meg újra!"),
-                s("eff483e0", "A közzététel után lekérhetsz egy hivatkozást a Cikk megosztásához."),
-                s("ca15dd4e", "Piszkozat");
-            s("bb40bf66", "Közzétéve"),
+                s("eff483e0", "A közzététel után lekérhetsz egy hivatkozást a Cikk megosztásához.");
+            s("ca15dd4e", "Piszkozat"),
+                s("bb40bf66", "Közzétéve"),
                 s("h107935c", "Utolsó mentés épp most"),
                 s("a753a870", "Alkalmaz"),
                 s("afccc67e", "Hivatkozás másolása a cikkbe"),
@@ -2959,9 +2960,9 @@
                 s("c6f58084", "Fejlesztők"),
                 s("d83f18d2", "Könyvtár"),
                 s("hc5aa17c", "Az X alkalmazás letöltése"),
-                s("j0693948", "A Grok alkalmazás letöltése"),
-                s("fbf83158", "Figyelmeztet: A fizetés sikertelen");
-            s("jadeb4da", "Sürgősen frissítsd a fizetési módod, még mielőtt elveszíted az előfizetés nyújtotta előnyöket."),
+                s("j0693948", "A Grok alkalmazás letöltése");
+            s("fbf83158", "Figyelmeztet: A fizetés sikertelen"),
+                s("jadeb4da", "Sürgősen frissítsd a fizetési módod, még mielőtt elveszíted az előfizetés nyújtotta előnyöket."),
                 s("bce3726a", "Számlázási adatok frissítése"),
                 s("fce9ecce", "Javasolt videók"),
                 s("efe6ef9e", "Bejegyzés megtekintése"),
@@ -3875,9 +3876,9 @@
                 s("d7357e7e", "Eltávolítás a társhosztok közül"),
                 s("bf307fc0", "Letiltás és eltávolítás"),
                 s("ccf2f24e", "Jelentés"),
-                s("i22835de", "Elfogadás"),
-                s("cb59a0fe", "Elutasítás");
-            s("c2376960", "Hozzászólói kérések"),
+                s("i22835de", "Elfogadás");
+            s("cb59a0fe", "Elutasítás"),
+                s("c2376960", "Hozzászólói kérések"),
                 s("aba7dcdd", function (e) {
                     return e.name + " meghívása";
                 }),
@@ -4266,7 +4267,7 @@
                 s("fa0f1262", "Szünet"),
                 s("c2cac618", "Grok jelenleg a La Liga, Premier League, Bundesliga, Series A és Ligue 1 adatait támogatja."),
                 s("acae223d", function (e) {
-                    return 'Results for "' + e.prompt + '"';
+                    return "Találatok erre: „" + e.prompt + "”";
                 }),
                 s("bed99fe2", "Kevesebb megjelenítése"),
                 s("f7b57ac0", "Statisztikák"),
@@ -4795,12 +4796,12 @@
                 s("e7479ce4", "Átlagos megtekintési idő"),
                 s("g1dfa7d0", "Átl."),
                 s("h7d28188", "Vissza a tartalomhoz"),
-                s("if2704e4", "Back to Live Overview"),
+                s("if2704e4", "Vissza az élő áttekintéshez"),
                 s("ea928ae4", "Vissza a Terekhez"),
-                s("e8c07c22", "broadcast"),
-                s("a4ce6e68", "Broadcast Metrics"),
-                s("b2214c74", "Total number of views for this broadcast"),
-                s("d4fcf83a", "Total time viewers spent watching this broadcast"),
+                s("e8c07c22", "közvetítés"),
+                s("a4ce6e68", "Közvetítés mérőszámai"),
+                s("b2214c74", "A közvetítés összes megtekintésének száma"),
+                s("d4fcf83a", "A nézők által a közvetítés megtekintésével eltöltött összes idő."),
                 s("a89b0322", "Visszavonva"),
                 s("j3cb12ea", "Egyidejű hallgatók"),
                 s("b93931ee", "A bejegyzésed közzétételeinek száma."),
@@ -4836,19 +4837,19 @@
                 s("efa0f858", "A követések és a követések megszüntetésének száma az idők során. Ez nem minden esetben azonos a követők számával."),
                 s("g2b06cc6", "A nemre vonatkozó adatok következtetettek lehetnek"),
                 s("b66b3baa", "óránként"),
-                s("cf8a0772", "Impression to Views"),
-                s("g13d8010", "Last 48 Hours"),
-                s("d5627596", "Last Hour"),
+                s("cf8a0772", "Hatás a megtekintésekre"),
+                s("g13d8010", "Utolsó 48 óra"),
+                s("d5627596", "Utolsó óra"),
                 s("baf120a6", "Legkevesebb kapcsolat"),
                 s("f2382014", "ÉLŐ"),
-                s("c4a7a6aa", "Live data"),
-                s("a992032a", "Livestream Analytics"),
+                s("c4a7a6aa", "Élő adatok"),
+                s("a992032a", "Élő közvetítés elemzése"),
                 s("ie45edda", "Élő közvetítés áttekintése"),
-                s("e30fc268", "Live Viewers"),
+                s("e30fc268", "Élő közvetítés nézői"),
                 s("bd37f68e", "Médiatevékenység"),
                 s("fe074210", "perc"),
-                s("jd03a1b8", "Minutes Watched"),
-                s("a20e91e8", "minutes watched"),
+                s("jd03a1b8", "Megtekintett percek"),
+                s("a20e91e8", "perc megtekintve"),
                 s("ic2bebee", "Bevételszerzés"),
                 s("a1d642c8", "Legtöbb kapcsolat"),
                 s("ifc4c1f8", "A tartalommal szerzett új követők száma."),
@@ -4856,14 +4857,14 @@
                 s("jbcb09a8", "Még nincs elég adat"),
                 s("df846d6c", "Nem találhatók bejegyzések a kiválasztott időtartományban."),
                 s("g2ba40f6", "A kiválasztott szűrővel nincsenek elérhető Terek"),
-                s("j44061a0", "Not available"),
-                s("c4a93912", "N/A"),
-                s("a6b78788", "No viewer data available"),
+                s("j44061a0", "Nem elérhető"),
+                s("c4a93912", "nincs adat"),
+                s("a6b78788", "Nincsenek elérhető nézői adatok"),
                 s("b2438638", "/az egész"),
                 s("ic0399e0", "Organikus megtekintés"),
                 s("ja5c444a", "Fizetési időszak"),
                 s("f04e025e", "Legtöbb egyidejű hallgató"),
-                s("d6d10662", "Peak Viewers: "),
+                s("d6d10662", "Legtöbb néző: "),
                 s("d147bea2", "Látogass vissza később!"),
                 s("f0336d68", "Bejegyzéselemzések"),
                 s("g85fbd2e", "Bejegyzésazonosító"),
@@ -4871,11 +4872,11 @@
                 s("hf4f9bfe", "Hivatkozás posztolása"),
                 s("bf5ebf5c", "Bejegyzések és válaszok"),
                 s("b211652e", "Bejegyzések az idők során"),
-                s("f2efec0a", "Pre-Published"),
+                s("f2efec0a", "Előzetesen közzétéve"),
                 s("i61e0302", "Előző"),
                 s("e08a706a", "Ajánlott megtekintés"),
                 s("cbc99192", "Közzététel dátuma"),
-                s("a83c2a9a", "Realtime"),
+                s("a83c2a9a", "Valós idő"),
                 s("e9d72896", "Felvétel"),
                 s("gede4932", "Visszajátszás"),
                 s("h0de359c", "A tartalmad újraposztolásainak száma."),
@@ -4886,20 +4887,20 @@
                 s("fbc79a40", "Terek áttekintése"),
                 s("d077112a", "Tér statisztikái"),
                 s("cf3709da", "Állapot"),
-                s("e797dc32", "Stream time: "),
+                s("e797dc32", "Streamelés ideje: "),
                 s("b649d8cc", "Csak előfizetők"),
-                s("j9282130", "Broadcast thumbnail"),
-                s("g629b8b0", "Timed Out"),
-                s("eb87323c", "This shows analytics data for the selected time period since the livestream happened."),
-                s("i6a75722", "Time Range"),
+                s("j9282130", "Közvetítés ikonja"),
+                s("g629b8b0", "Időtúllépés"),
+                s("eb87323c", "Ez a kiválasztott időszak elemzési adatait mutatja az élő közvetítés óta."),
+                s("i6a75722", "Időtartomány"),
                 s("c602f5b8", "Összesen"),
                 s("b35e68ae", "Összes résztvevő"),
                 s("h78ee79a", "Összes megtekintett visszajátszás"),
                 s("e3efaed0", "Típus"),
                 s("c37993e2", "Követésmegszüntetések"),
-                s("b1ed35d0", "Unique Viewers"),
+                s("b1ed35d0", "Egyedi nézők"),
                 s("bfad9306", "Ismeretlen"),
-                s("b5a58f36", "Untitled Broadcast"),
+                s("b5a58f36", "Névtelen közvetítés"),
                 s("i70f5278", "Feltöltés ideje:"),
                 s("a98b58b6", "Ellenőrzött követők"),
                 s("a5de67ca", "Azon követők száma, akik ellenőrzött fiókkal rendelkeznek."),
@@ -4907,9 +4908,9 @@
                 s("a7b48b36", "A videók végignézésének aránya százalékban."),
                 s("a2580f2a", "Végignézési arány"),
                 s("ff95a9cc", "Videó azonosítója"),
-                s("a97e358e", "Videóhivatkozás"),
-                s("e10e8b46", "Csak a legutóbbi 100 nap videói jelennek meg.");
-            s("ba37f6da", "Videó áttekintése"),
+                s("a97e358e", "Videóhivatkozás");
+            s("e10e8b46", "Csak a legutóbbi 100 nap videói jelennek meg."),
+                s("ba37f6da", "Videó áttekintése"),
                 s("f19846b2", "Videó bélyegképe"),
                 s("ccd6f4a8", "Videó címe"),
                 s("c8410542", "A videód megtekintéseinek száma."),
@@ -5863,11 +5864,11 @@
                 s("a0ea2fa6", "A név mező nem lehet üres"),
                 s("eec37eac", "Már létezik ilyen nevű Könyvjelzőmappa"),
                 s("fce0c59e", "Nem sikerült beelemezni az animációs JSON-fájlt. Kérjük, ellenőrizd a JSON formátumát az animációs fájlban, és próbáld meg újra."),
-                s("g0eea6c2", "Nem sikerült beolvasni az animációs JSON-fájlt. Kérjük, próbáld meg újra megnyitni a fájlt."),
-                s("ae58026a", "Nyiss meg egy animált kedvelési .json-fájlt az előnézethez");
-            s("hd0bc1eb", function (e) {
-                return e.name + " élőben közvetít";
-            }),
+                s("g0eea6c2", "Nem sikerült beolvasni az animációs JSON-fájlt. Kérjük, próbáld meg újra megnyitni a fájlt.");
+            s("ae58026a", "Nyiss meg egy animált kedvelési .json-fájlt az előnézethez"),
+                s("hd0bc1eb", function (e) {
+                    return e.name + " élőben közvetít";
+                }),
                 s("bea1f26b", function (e) {
                     return e.name + " élőben közvetített";
                 }),
@@ -6871,9 +6872,9 @@
                 s("fdd77a34", "Hosszabb bejegyzések írása"),
                 s("j6d26a7a", "Írj annyit, amennyit csak meg szeretnél osztani"),
                 s("c4fd68da", "Szabd testre a felhasználói élményt!"),
-                s("c0195168", "Cseréld le az alkalmazás ikonját és a navigációs lehetőségeket"),
-                s("b6b5dc94", "Légy ellenőrzött!");
-            s("b06db848", "Tűnj ki a tömegből a platformon!"),
+                s("c0195168", "Cseréld le az alkalmazás ikonját és a navigációs lehetőségeket");
+            s("b6b5dc94", "Légy ellenőrzött!"),
+                s("b06db848", "Tűnj ki a tömegből a platformon!"),
                 s("e3e3a97c", "Szerezz részesedést a bejegyzéseidből származó bevételből"),
                 s("f15bc24e", "Megnövelt Grok-korlátok"),
                 s("c4666e1c", "A legújabb modellünk, a Grok 3 szélesebb körű használata"),
@@ -7847,8 +7848,7 @@
                 s("b33d1518", "Szinkronizáld az állásajánlatokat egy támogatott integrációból vagy egy egyedi XML-feedből"),
                 s("dd2db402", "1. lépés: Gyűjtsd össze a szükséges információkat"),
                 s("edb098c2", "2. lépés: Vedd fel a kapcsolatot támogatási csapatunkkal"),
-                s("c4474460", "2. lépés: Küldj e-mailt a támogatási csapatunknak"),
-                s("a08da0fa", "Mi a következő lépés?");
+                s("c4474460", "2. lépés: Küldj e-mailt a támogatási csapatunknak");
             function n(e, t) {
                 for (var a = 0; a < t.length; a++) {
                     var s = t[a];
@@ -7887,7 +7887,8 @@
                     z(e, t)
                 );
             }
-            s("c127374e", "Küldj nekünk egy üzenetet"),
+            s("a08da0fa", "Mi a következő lépés?"),
+                s("c127374e", "Küldj nekünk egy üzenetet"),
                 s("b2cb2a0c", "Az Ellenőrzött szervezeti fiókod felhasználóneve"),
                 s("b8e64002", "A pályázói nyomkövetési rendszered neve"),
                 s("acb99db6", "Annak a karrieroldalnak az URL-címe, ahol az álláshirdetéseid meg vannak hirdetve"),
@@ -8889,9 +8890,9 @@
                 s("c057680c", "A videó nem játszható le ebben a böngészőben. Próbálkozz másik böngészővel!"),
                 s("i5dfae6e", "Ez a videó nem érhető el a tartózkodási helyeden."),
                 s("c2388276", "Ez a videó törlésre került."),
-                s("d2c96140", "Vendég hangjelzője"),
-                s("f6dc9146", "VISSZAJÁTSZÁS");
-            s("d30c74fe", "Hangerő"),
+                s("d2c96140", "Vendég hangjelzője");
+            s("f6dc9146", "VISSZAJÁTSZÁS"),
+                s("d30c74fe", "Hangerő"),
                 s("f2d4e6f2", "Megtekintés újra"),
                 s("e9f1af3a", "Tudj meg többet!"),
                 s("f1881d86", "Erre a bejegyzésre nem lehet válaszolni, nem osztható meg és nem kedvelhető."),
@@ -13244,4 +13245,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hu.9c66bc8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hu.a30624fa.js.map

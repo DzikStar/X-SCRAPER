@@ -600,6 +600,7 @@
                 o("e0cb0c72", "Anuncios"),
                 o("e2eef3c2", "Organizaciones verificadas"),
                 o("b55d8a78", "Crear tu Espacio"),
+                o("e5323e36", "Go Live"),
                 o("a5a30af0", "Artículos"),
                 o("d13d697c", "Nuevo"),
                 o("j0e2cfa8", "Empresa"),
@@ -899,9 +900,9 @@
                 o("i821844f", "Más información"),
                 o("b0abbb17", "Más información"),
                 o("e7e0d88b", "Más información"),
-                o("i560665f", "Más información"),
-                o("f6e774d9", "Más información");
-            o("h486f755", "Más información"),
+                o("i560665f", "Más información");
+            o("f6e774d9", "Más información"),
+                o("h486f755", "Más información"),
                 o("bab41dab", "Más información"),
                 o("e0ebdb29", "Más información"),
                 o("f8493831", "Más información"),
@@ -1907,9 +1908,9 @@
                 o("a330771e", "Copiar enlace a tu portapapeles"),
                 o("b6510e68", "Copia la URL de tu Artículo para poder compartirlo."),
                 o("e4a6e006", "Algo salió mal. Inténtalo de nuevo."),
-                o("eff483e0", "Después de publicar, obtén un enlace para compartir el Artículo."),
-                o("ca15dd4e", "Borrador");
-            o("bb40bf66", "Publicados"),
+                o("eff483e0", "Después de publicar, obtén un enlace para compartir el Artículo.");
+            o("ca15dd4e", "Borrador"),
+                o("bb40bf66", "Publicados"),
                 o("h107935c", "Guardado por última vez recién"),
                 o("a753a870", "Aplicar"),
                 o("afccc67e", "Copiar enlace al Artículo"),
@@ -2959,9 +2960,9 @@
                 o("c6f58084", "Desarrolladores"),
                 o("d83f18d2", "Guía"),
                 o("hc5aa17c", "Obtén la app de X"),
-                o("j0693948", "Obtén la app de Grok"),
-                o("fbf83158", "Advertencia: error en el pago");
-            o("jadeb4da", "Actualiza tu forma de pago de inmediato antes de que pierdas los beneficios de tu suscripción."),
+                o("j0693948", "Obtén la app de Grok");
+            o("fbf83158", "Advertencia: error en el pago"),
+                o("jadeb4da", "Actualiza tu forma de pago de inmediato antes de que pierdas los beneficios de tu suscripción."),
                 o("bce3726a", "Actualizar facturación"),
                 o("fce9ecce", "Videos sugeridos"),
                 o("efe6ef9e", "Ver el post"),
@@ -3875,9 +3876,9 @@
                 o("d7357e7e", "Eliminar de los coanfitriones"),
                 o("bf307fc0", "Bloquear y eliminar"),
                 o("ccf2f24e", "Denunciar"),
-                o("i22835de", "Aprobar"),
-                o("cb59a0fe", "Rechazar");
-            o("c2376960", "Solicitudes para hablar"),
+                o("i22835de", "Aprobar");
+            o("cb59a0fe", "Rechazar"),
+                o("c2376960", "Solicitudes para hablar"),
                 o("aba7dcdd", function (e) {
                     return "Invitar a " + e.name;
                 }),
@@ -4797,7 +4798,7 @@
                 o("h7d28188", "Volver al contenido"),
                 o("if2704e4", "Back to Live Overview"),
                 o("ea928ae4", "Volver al Espacios"),
-                o("e8c07c22", "broadcast"),
+                o("e8c07c22", "transmisión"),
                 o("a4ce6e68", "Broadcast Metrics"),
                 o("b2214c74", "Total number of views for this broadcast"),
                 o("d4fcf83a", "Total time viewers spent watching this broadcast"),
@@ -4844,7 +4845,7 @@
                 o("c4a7a6aa", "Live data"),
                 o("a992032a", "Livestream Analytics"),
                 o("ie45edda", "Descripción general de la transmisión en directo"),
-                o("e30fc268", "Live Viewers"),
+                o("e30fc268", "Espectadores en directo"),
                 o("bd37f68e", "Actividad de contenido multimedia"),
                 o("fe074210", "min"),
                 o("jd03a1b8", "Minutes Watched"),
@@ -4856,7 +4857,7 @@
                 o("jbcb09a8", "Aún no hay suficientes datos"),
                 o("df846d6c", "No se encontraron posts en el período seleccionado."),
                 o("g2ba40f6", "No hay Espacios disponibles para el filtro seleccionado"),
-                o("j44061a0", "Not available"),
+                o("j44061a0", "No disponible"),
                 o("c4a93912", "N/A"),
                 o("a6b78788", "No viewer data available"),
                 o("b2438638", "del total"),
@@ -4888,7 +4889,7 @@
                 o("cf3709da", "Estado"),
                 o("e797dc32", "Stream time: "),
                 o("b649d8cc", "Solo suscriptores"),
-                o("j9282130", "Broadcast thumbnail"),
+                o("j9282130", "Miniatura de la transmisión"),
                 o("g629b8b0", "Timed Out"),
                 o("eb87323c", "This shows analytics data for the selected time period since the livestream happened."),
                 o("i6a75722", "Time Range"),
@@ -4907,9 +4908,9 @@
                 o("a7b48b36", "El porcentaje de reproducciones de video completadas."),
                 o("a2580f2a", "Tasa de finalización"),
                 o("ff95a9cc", "ID del video"),
-                o("a97e358e", "Enlace del video"),
-                o("e10e8b46", "Mostrando solo los videos de los últimos 100 días.");
-            o("ba37f6da", "Información general del video"),
+                o("a97e358e", "Enlace del video");
+            o("e10e8b46", "Mostrando solo los videos de los últimos 100 días."),
+                o("ba37f6da", "Información general del video"),
                 o("f19846b2", "Miniatura del video"),
                 o("ccd6f4a8", "Título del video"),
                 o("c8410542", "El número de veces que se vio tu video."),
@@ -5863,11 +5864,11 @@
                 o("a0ea2fa6", "El campo del nombre no puede estar vacío"),
                 o("eec37eac", "Ya existe una Carpeta de elementos guardados con ese nombre"),
                 o("fce0c59e", "Error al analizar la animación JSON. Revisa el formato JSON en tu archivo de animación e inténtalo de nuevo."),
-                o("g0eea6c2", "Error al leer el archivo JSON de animación. Intenta abrir el archivo de nuevo."),
-                o("ae58026a", "Abrir un archivo .json de Branded Likes para obtener una vista previa");
-            o("hd0bc1eb", function (e) {
-                return e.name + " está transmitiendo en directo";
-            }),
+                o("g0eea6c2", "Error al leer el archivo JSON de animación. Intenta abrir el archivo de nuevo.");
+            o("ae58026a", "Abrir un archivo .json de Branded Likes para obtener una vista previa"),
+                o("hd0bc1eb", function (e) {
+                    return e.name + " está transmitiendo en directo";
+                }),
                 o("bea1f26b", function (e) {
                     return e.name + " estuvo transmitiendo en directo";
                 }),
@@ -6871,9 +6872,9 @@
                 o("fdd77a34", "Crea posts más largos"),
                 o("j6d26a7a", "Escribe tanto como quieras compartir"),
                 o("c4fd68da", "Personaliza tu experiencia"),
-                o("c0195168", "Cambia el ícono y las opciones de navegación de tu app"),
-                o("b6b5dc94", "Obtén la verificación");
-            o("b06db848", "Destaca entre los demás en la plataforma"),
+                o("c0195168", "Cambia el ícono y las opciones de navegación de tu app");
+            o("b6b5dc94", "Obtén la verificación"),
+                o("b06db848", "Destaca entre los demás en la plataforma"),
                 o("e3e3a97c", "Obtén una cuota de los ingresos provenientes de tus posts"),
                 o("f15bc24e", "Límites de Grok incrementados"),
                 o("c4666e1c", "Más capacidad de uso de Grok 3, nuestro último modelo"),
@@ -7847,8 +7848,7 @@
                 o("b33d1518", "Sincronizar empleos desde una integración compatible o un feed XML personalizado"),
                 o("dd2db402", "Paso 1: Recopila la información necesaria"),
                 o("edb098c2", "Paso 2: comunícate con nuestro equipo de soporte"),
-                o("c4474460", "Paso 2: Envía un correo electrónico a nuestro equipo de soporte"),
-                o("a08da0fa", "¿Qué sucede a continuación?");
+                o("c4474460", "Paso 2: Envía un correo electrónico a nuestro equipo de soporte");
             function s(e, a) {
                 for (var n = 0; n < a.length; n++) {
                     var o = a[n];
@@ -7887,7 +7887,8 @@
                     i(e, a)
                 );
             }
-            o("c127374e", "Envíanos un mensaje"),
+            o("a08da0fa", "¿Qué sucede a continuación?"),
+                o("c127374e", "Envíanos un mensaje"),
                 o("b2cb2a0c", "Nombre de usuario de tu cuenta de organización verificada"),
                 o("b8e64002", "Nombre de tu sistema de seguimiento de candidatos"),
                 o("acb99db6", "URL del sitio de empleos donde aparecen tus ofertas"),
@@ -8889,9 +8890,9 @@
                 o("c057680c", "No podemos reproducir el video en este navegador. Prueba con otro navegador web."),
                 o("i5dfae6e", "Este video no está disponible en tu ubicación."),
                 o("c2388276", "Este video se eliminó."),
-                o("d2c96140", "Indicador del audio del invitado"),
-                o("f6dc9146", "REPETICIÓN");
-            o("d30c74fe", "Volumen"),
+                o("d2c96140", "Indicador del audio del invitado");
+            o("f6dc9146", "REPETICIÓN"),
+                o("d30c74fe", "Volumen"),
                 o("f2d4e6f2", "Ver de nuevo"),
                 o("e9f1af3a", "Obtener más información"),
                 o("f1881d86", "No se puede responder, compartir o dar Me gusta a este post."),
@@ -13247,4 +13248,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/es.c71289da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/es.6632658a.js.map

@@ -601,6 +601,7 @@
                 t("e0cb0c72", "Annonser"),
                 t("e2eef3c2", "Verifierade organisationer"),
                 t("b55d8a78", "Skapa ditt område"),
+                t("e5323e36", "Go Live"),
                 t("a5a30af0", "Artiklar"),
                 t("d13d697c", "Ny"),
                 t("j0e2cfa8", "Företag"),
@@ -900,9 +901,9 @@
                 t("i821844f", "Läs mer"),
                 t("b0abbb17", "Läs mer"),
                 t("e7e0d88b", "Läs mer"),
-                t("i560665f", "Läs mer"),
-                t("f6e774d9", "Läs mer");
-            t("h486f755", "Läs mer"),
+                t("i560665f", "Läs mer");
+            t("f6e774d9", "Läs mer"),
+                t("h486f755", "Läs mer"),
                 t("bab41dab", "Läs mer"),
                 t("e0ebdb29", "Läs mer"),
                 t("f8493831", "Läs mer"),
@@ -1908,9 +1909,9 @@
                 t("a330771e", "Kopiera länken till Urklipp"),
                 t("b6510e68", "Kopiera webbadressen till artikeln så att du kan dela den."),
                 t("e4a6e006", "Något gick snett. Försök igen."),
-                t("eff483e0", "Få en länk för att dela artikeln efter att ha publicerat den."),
-                t("ca15dd4e", "Utkast");
-            t("bb40bf66", "Publicerat"),
+                t("eff483e0", "Få en länk för att dela artikeln efter att ha publicerat den.");
+            t("ca15dd4e", "Utkast"),
+                t("bb40bf66", "Publicerat"),
                 t("h107935c", "Senast sparat nyss"),
                 t("a753a870", "Tillämpa"),
                 t("afccc67e", "Kopiera länken till artikeln"),
@@ -2960,9 +2961,9 @@
                 t("c6f58084", "Utvecklare"),
                 t("d83f18d2", "Katalog"),
                 t("hc5aa17c", "Skaffa X-appen"),
-                t("j0693948", "Skaffa Grok-appen"),
-                t("fbf83158", "Varning: Betalningen misslyckades");
-            t("jadeb4da", "Uppdatera din betalningsmetod innan du förlorar dina prenumerationsförmåner."),
+                t("j0693948", "Skaffa Grok-appen");
+            t("fbf83158", "Varning: Betalningen misslyckades"),
+                t("jadeb4da", "Uppdatera din betalningsmetod innan du förlorar dina prenumerationsförmåner."),
                 t("bce3726a", "Uppdatera faktureringsuppgifterna"),
                 t("fce9ecce", "Föreslagna videor"),
                 t("efe6ef9e", "Visa inlägget"),
@@ -3876,9 +3877,9 @@
                 t("d7357e7e", "Ta bort från medvärdar"),
                 t("bf307fc0", "Blockera och ta bort"),
                 t("ccf2f24e", "Rapport"),
-                t("i22835de", "Godkänn"),
-                t("cb59a0fe", "Neka");
-            t("c2376960", "Ber om att få prata"),
+                t("i22835de", "Godkänn");
+            t("cb59a0fe", "Neka"),
+                t("c2376960", "Ber om att få prata"),
                 t("aba7dcdd", function (e) {
                     return "Bjud in " + e.name;
                 }),
@@ -4267,7 +4268,7 @@
                 t("fa0f1262", "Paus"),
                 t("c2cac618", "Grok stöder nu data från La liga, Premier league, Bundesliga, Series A samt Ligue 1."),
                 t("acae223d", function (e) {
-                    return 'Results for "' + e.prompt + '"';
+                    return "Resultat för " + e.prompt;
                 }),
                 t("bed99fe2", "Visa färre"),
                 t("f7b57ac0", "Statistik"),
@@ -4796,12 +4797,12 @@
                 t("e7479ce4", "Tittad tid i snitt"),
                 t("g1dfa7d0", "Snitt"),
                 t("h7d28188", "Tillbaka till innehållet"),
-                t("if2704e4", "Back to Live Overview"),
+                t("if2704e4", "Tillbaka till liveöversikten"),
                 t("ea928ae4", "Tillbaka till områden"),
-                t("e8c07c22", "broadcast"),
-                t("a4ce6e68", "Broadcast Metrics"),
-                t("b2214c74", "Total number of views for this broadcast"),
-                t("d4fcf83a", "Total time viewers spent watching this broadcast"),
+                t("e8c07c22", "sändning"),
+                t("a4ce6e68", "Sändningsmätvärden"),
+                t("b2214c74", "Totalt antal visningar av denna sändning"),
+                t("d4fcf83a", "Total tid som tittare lade på att se på den här sändningen"),
                 t("a89b0322", "Annullerades"),
                 t("j3cb12ea", "Samtidiga lyssnare"),
                 t("b93931ee", "Antalet gånger ditt material har lagts upp."),
@@ -4837,19 +4838,19 @@
                 t("efa0f858", "Antalet följningar och avföljningar med tiden. Detta återspeglar inte nödvändigt antalet följare du har."),
                 t("g2b06cc6", "Vi kan sluta oss till data om kön"),
                 t("b66b3baa", "timmar"),
-                t("cf8a0772", "Impression to Views"),
-                t("g13d8010", "Last 48 Hours"),
-                t("d5627596", "Last Hour"),
+                t("cf8a0772", "Intryck till visningar"),
+                t("g13d8010", "Sista 48 timmarna"),
+                t("d5627596", "Sista timmen"),
                 t("baf120a6", "Minst engagerad"),
                 t("f2382014", "LIVE"),
-                t("c4a7a6aa", "Live data"),
-                t("a992032a", "Livestream Analytics"),
+                t("c4a7a6aa", "Livedata"),
+                t("a992032a", "Liveströmsstatistik"),
                 t("ie45edda", "Liveströmöversikt"),
-                t("e30fc268", "Live Viewers"),
+                t("e30fc268", "Livetittare"),
                 t("bd37f68e", "Medieaktivitet"),
                 t("fe074210", "minuter"),
-                t("jd03a1b8", "Minutes Watched"),
-                t("a20e91e8", "minutes watched"),
+                t("jd03a1b8", "Tittade minuter"),
+                t("a20e91e8", "tittade minuter"),
                 t("ic2bebee", "Intäktsgenerering"),
                 t("a1d642c8", "Mest engagerad"),
                 t("ifc4c1f8", "Antalet nya följare du har fått från detta innehåll. "),
@@ -4857,14 +4858,14 @@
                 t("jbcb09a8", "Inte tillräckligt med data än"),
                 t("df846d6c", "Inga inlägg hittades för det valda tidsintervallet."),
                 t("g2ba40f6", "Det finns inga områden som passar det valda filtret"),
-                t("j44061a0", "Not available"),
-                t("c4a93912", "N/A"),
-                t("a6b78788", "No viewer data available"),
+                t("j44061a0", "Inte tillgängligt"),
+                t("c4a93912", "Inte aktuellt"),
+                t("a6b78788", "Det finns inga tittardata"),
                 t("b2438638", "av alla"),
                 t("ic0399e0", "Organiska visningar"),
                 t("ja5c444a", "Betalperiod"),
                 t("f04e025e", "Högsta antal samtidiga lyssnare"),
-                t("d6d10662", "Peak Viewers: "),
+                t("d6d10662", "Mesta tittarna: "),
                 t("d147bea2", "Kom tillbaka senare"),
                 t("f0336d68", "Inläggsstatistik"),
                 t("g85fbd2e", "Inläggets id"),
@@ -4872,11 +4873,11 @@
                 t("hf4f9bfe", "Lägg upp en länk"),
                 t("bf5ebf5c", "Inlägg och svar"),
                 t("b211652e", "Inlägg med tiden"),
-                t("f2efec0a", "Pre-Published"),
+                t("f2efec0a", "Förpublicerat"),
                 t("i61e0302", "Föregående"),
                 t("e08a706a", "Marknadsförda visningar"),
                 t("cbc99192", "Publiceringsdatum"),
-                t("a83c2a9a", "Realtime"),
+                t("a83c2a9a", "Realtid"),
                 t("e9d72896", "Inspelat"),
                 t("gede4932", "Spela igen"),
                 t("h0de359c", "Antalet gånger det här materialet har återpublicerats."),
@@ -4887,20 +4888,20 @@
                 t("fbc79a40", "Översikt av områden"),
                 t("d077112a", "Områdesstatistik"),
                 t("cf3709da", "Status"),
-                t("e797dc32", "Stream time: "),
+                t("e797dc32", "Strömtid: "),
                 t("b649d8cc", "Bara för prenumeranter"),
-                t("j9282130", "Broadcast thumbnail"),
-                t("g629b8b0", "Timed Out"),
-                t("eb87323c", "This shows analytics data for the selected time period since the livestream happened."),
-                t("i6a75722", "Time Range"),
+                t("j9282130", "Miniatyrbild för sändning"),
+                t("g629b8b0", "Tog för lång tid"),
+                t("eb87323c", "Detta visar statistikuppgifter för den valda perioden sedan liveströmmen sändes."),
+                t("i6a75722", "Tidsintervall"),
                 t("c602f5b8", "Netto"),
                 t("b35e68ae", "Totalt antal deltagare"),
                 t("h78ee79a", "Totalt antal sedda repriser"),
                 t("e3efaed0", "Typ"),
                 t("c37993e2", "Avföljningar"),
-                t("b1ed35d0", "Unique Viewers"),
+                t("b1ed35d0", "Unika tittare"),
                 t("bfad9306", "Okänt"),
-                t("b5a58f36", "Untitled Broadcast"),
+                t("b5a58f36", "Sändning utan titel"),
                 t("i70f5278", "Överfört:"),
                 t("a98b58b6", "Verifierade följare"),
                 t("a5de67ca", "Antalet följare som har verifierat sitt konto."),
@@ -4908,9 +4909,9 @@
                 t("a7b48b36", "Andelen videovisningar som slutfördes."),
                 t("a2580f2a", "Slutförandefrekvens"),
                 t("ff95a9cc", "Video-id"),
-                t("a97e358e", "Videolänk"),
-                t("e10e8b46", "Visa bara videorna från de senaste 100 dagarna.");
-            t("ba37f6da", "Videoöversikt"),
+                t("a97e358e", "Videolänk");
+            t("e10e8b46", "Visa bara videorna från de senaste 100 dagarna."),
+                t("ba37f6da", "Videoöversikt"),
                 t("f19846b2", "Videominiatyr"),
                 t("ccd6f4a8", "Videotitel"),
                 t("c8410542", "Antalet gånger din video har setts."),
@@ -5864,11 +5865,11 @@
                 t("a0ea2fa6", "Namnfältet kan inte vara tomt"),
                 t("eec37eac", "Det finns redan en bokmärkesmapp som heter så"),
                 t("fce0c59e", "Det gick inta att tolka animeringens JSON-kod. Kontrollera formatet i JSON-koden i animeringsfilen och försök igen."),
-                t("g0eea6c2", "Det gick inte att läsa in animeringens JSON-fil. Försök öppna filen igen."),
-                t("ae58026a", "Öppna en .json-fil för en varumärkt gilla-markering för att förhandsgranska");
-            t("hd0bc1eb", function (e) {
-                return e.name + " sänder live";
-            }),
+                t("g0eea6c2", "Det gick inte att läsa in animeringens JSON-fil. Försök öppna filen igen.");
+            t("ae58026a", "Öppna en .json-fil för en varumärkt gilla-markering för att förhandsgranska"),
+                t("hd0bc1eb", function (e) {
+                    return e.name + " sänder live";
+                }),
                 t("bea1f26b", function (e) {
                     return e.name + " sände live";
                 }),
@@ -6872,9 +6873,9 @@
                 t("fdd77a34", "Skriv längre inlägg"),
                 t("j6d26a7a", "Skriv så mycket som du vill dela med dig av"),
                 t("c4fd68da", "Anpassa tidslinjen"),
-                t("c0195168", "Ändra din appikon och dina navigeringsalternativ"),
-                t("b6b5dc94", "Bli verifierad");
-            t("b06db848", "Märks bland andra på plattformen"),
+                t("c0195168", "Ändra din appikon och dina navigeringsalternativ");
+            t("b6b5dc94", "Bli verifierad"),
+                t("b06db848", "Märks bland andra på plattformen"),
                 t("e3e3a97c", "Få en del av intäkterna från dina inlägg"),
                 t("f15bc24e", "Ökade Grok-gränser"),
                 t("c4666e1c", "Använd vår senaste modell Grok 3 mer"),
@@ -7848,8 +7849,7 @@
                 t("b33d1518", "Synka jobb från en integration som stöds eller ett anpassat XML-flöde"),
                 t("dd2db402", "Steg 1: Samla in den nödvändiga informationen"),
                 t("edb098c2", "Steg 2: Kontakta vårt supportteam"),
-                t("c4474460", "Steg 2: Mejla vårt supportteam"),
-                t("a08da0fa", "Vad händer härnäst?");
+                t("c4474460", "Steg 2: Mejla vårt supportteam");
             function i(e, a) {
                 for (var n = 0; n < a.length; n++) {
                     var t = a[n];
@@ -7888,7 +7888,8 @@
                     d(e, a)
                 );
             }
-            t("c127374e", "Skicka ett meddelande"),
+            t("a08da0fa", "Vad händer härnäst?"),
+                t("c127374e", "Skicka ett meddelande"),
                 t("b2cb2a0c", "Användarnamn på kontot för din verifierade organisation"),
                 t("b8e64002", "Namn på ditt system för att hålla reda på sökande"),
                 t("acb99db6", "Webbadress till jobbannonsplatsen där dina jobb listas"),
@@ -8890,9 +8891,9 @@
                 t("c057680c", "Vi kan inte spela upp videon i den här webbläsaren. Testa en annan."),
                 t("i5dfae6e", "Denna video är inte tillgänglig på din plats."),
                 t("c2388276", "Denna video har raderats."),
-                t("d2c96140", "Gästljudindikator"),
-                t("f6dc9146", "REPRIS");
-            t("d30c74fe", "Volym"),
+                t("d2c96140", "Gästljudindikator");
+            t("f6dc9146", "REPRIS"),
+                t("d30c74fe", "Volym"),
                 t("f2d4e6f2", "Titta igen"),
                 t("e9f1af3a", "Ta reda på mer"),
                 t("f1881d86", "Det går inte att svara på, dela eller gilla detta inlägg."),
@@ -13236,4 +13237,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sv.f4887b1a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sv.240e610a.js.map

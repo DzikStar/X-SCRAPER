@@ -6,9 +6,9 @@
             i.d(t, { i: () => _.ZP, z: () => g });
             var s = i(202784),
                 o = i(928123),
-                r = i.n(o),
-                n = i(72845),
-                l = i.n(n),
+                n = i.n(o),
+                r = i(72845),
+                l = i.n(r),
                 a = i(57074),
                 c = i.n(a),
                 d = i(516951),
@@ -33,14 +33,14 @@
                 }
             }
             const b = ({ query: e, queryRef: t, render: i }) => {
-                    const s = r()(e, t);
+                    const s = n()(e, t);
                     return i({ fetchStatus: _.ZP.LOADED, data: s, error: null, retry: d.Z });
                 },
                 g = (e, t) =>
-                    function ({ fetchPolicy: i = "store-or-network", render: o, variables: r }) {
-                        const [n, a] = l()(e),
+                    function ({ fetchPolicy: i = "store-or-network", render: o, variables: n }) {
+                        const [r, a] = l()(e),
                             d = (0, h.n7)(t.errorConfig.context),
-                            u = c()(r),
+                            u = c()(n),
                             m = s.useCallback(() => {
                                 a(u, { fetchPolicy: "network-only" });
                             }, [a, u]);
@@ -48,11 +48,11 @@
                             s.useLayoutEffect(() => {
                                 a(u, { fetchPolicy: i });
                             }, [i, a, u]),
-                            n
+                            r
                                 ? s.createElement(
                                       s.Suspense,
                                       { fallback: s.createElement(p, { render: o }) },
-                                      s.createElement(w, { errorHandler: d(t.errorConfig.options || {}), key: n.fetchKey, retry: m }, (t, i) => (t ? o({ fetchStatus: _.ZP.FAILED, error: t, data: null, retry: i }) : s.createElement(b, { query: e, queryRef: n, render: o }))),
+                                      s.createElement(w, { errorHandler: d(t.errorConfig.options || {}), key: r.fetchKey, retry: m }, (t, i) => (t ? o({ fetchStatus: _.ZP.FAILED, error: t, data: null, retry: i }) : s.createElement(b, { query: e, queryRef: r, render: o }))),
                                   )
                                 : null
                         );
@@ -62,8 +62,8 @@
             i.d(t, { ZP: () => Ie });
             var s = i(807896),
                 o = (i(136728), i(202784)),
-                r = i(325686),
-                n = i(305845),
+                n = i(325686),
+                r = i(305845),
                 l = i(966582),
                 a = i(782261),
                 c = i(154003),
@@ -79,8 +79,8 @@
                 C = i(459660),
                 f = i(774426),
                 y = i(182873),
-                T = i(727828),
-                A = i(376293),
+                A = i(727828),
+                T = i(376293),
                 v = i(712816),
                 E = i(142156),
                 k = i(879596),
@@ -102,23 +102,23 @@
                 B = L(({ addFlag: e, shouldShowConversationControlsTip: t }) => {
                     const i = o.useRef(),
                         s = (0, O.R)(i),
-                        n = o.useRef(!1),
+                        r = o.useRef(!1),
                         l = t;
                     return (
                         o.useEffect(() => {
                             s &&
-                                ((n.current = !0),
+                                ((r.current = !0),
                                 setTimeout(() => {
                                     e(D.FX);
                                 }, 5e3));
                         }, [s, e]),
                         o.useEffect(
                             () => () => {
-                                n.current && e(D.FX);
+                                r.current && e(D.FX);
                             },
                             [e],
                         ),
-                        o.createElement(r.Z, { ref: i, style: M.inlineCallout }, s && l ? o.createElement(x.Z, { text: F, textStyle: M.textStyle, withRightArrow: !0 }) : null)
+                        o.createElement(n.Z, { ref: i, style: M.inlineCallout }, s && l ? o.createElement(x.Z, { text: F, textStyle: M.textStyle, withRightArrow: !0 }) : null)
                     );
                 });
             var W = i(533128),
@@ -139,8 +139,8 @@
                 ie = i(191444),
                 se = i(317859),
                 oe = i(901023),
-                re = i(778104),
-                ne = i(923936),
+                ne = i(778104),
+                re = i(923936),
                 le = i(172894),
                 ae = i(383494),
                 ce = i(810373),
@@ -156,8 +156,8 @@
                 Ce = i(872147),
                 fe = i(102236),
                 ye = i(736972),
-                Te = i(750633),
-                Ae = i(826767),
+                Ae = i(750633),
+                Te = i(826767),
                 ve = i(471927),
                 Ee = i(256195),
                 ke = i(329268),
@@ -191,27 +191,27 @@
                         (this._closeEditWithPremiumUpsell = () => {
                             this.setState({ showEditWithPremiumUpsell: !1 });
                         }),
-                        (this._renderEditWithPremiumUpsell = () => (this.state.showEditWithPremiumUpsell ? o.createElement(T.Z, { onAction: this._closeEditWithPremiumUpsell, onClose: this._closeEditWithPremiumUpsell, variant: "EditPost" }) : null)),
+                        (this._renderEditWithPremiumUpsell = () => (this.state.showEditWithPremiumUpsell ? o.createElement(A.Z, { onAction: this._closeEditWithPremiumUpsell, onClose: this._closeEditWithPremiumUpsell, variant: "EditPost" }) : null)),
                         (this._handleOnChangeConversationControls = (e) => {
-                            const { addToast: t, analytics: i, changeConversationControls: s, createLocalApiErrorHandler: o, removeConversationControls: r, tweet: n } = this.props,
-                                l = (0, g.Z)(n, e);
+                            const { addToast: t, analytics: i, changeConversationControls: s, createLocalApiErrorHandler: o, removeConversationControls: n, tweet: r } = this.props,
+                                l = (0, g.Z)(r, e);
                             e === C.k.all
-                                ? r &&
-                                  r(n.id_str).then(() => {
-                                      t({ text: l }), i.scribe({ element: He.all, action: "click", data: { items: [P.Z.getChangeConversationControlsItem(n, e)] } });
+                                ? n &&
+                                  n(r.id_str).then(() => {
+                                      t({ text: l }), i.scribe({ element: He.all, action: "click", data: { items: [P.Z.getChangeConversationControlsItem(r, e)] } });
                                   }, o(E.w))
                                 : s &&
-                                  s(n.id_str, { policy: e, screenName: n.user?.screen_name }).then(() => {
-                                      t({ text: l }), i.scribe({ element: He[e], action: "click", data: { items: [P.Z.getChangeConversationControlsItem(n, e)] } });
+                                  s(r.id_str, { policy: e, screenName: r.user?.screen_name }).then(() => {
+                                      t({ text: l }), i.scribe({ element: He[e], action: "click", data: { items: [P.Z.getChangeConversationControlsItem(r, e)] } });
                                   }, o(E.w));
                         }),
                         (this._renderCurationActionMenu = (e) => (t) =>
-                            o.createElement(n.l.Consumer, null, ({ downloadLink: i }) => {
+                            o.createElement(r.l.Consumer, null, ({ downloadLink: i }) => {
                                 const [s] = this._getActionItems(e, i);
                                 return o.createElement(f.default, { actionItems: s, onClose: t });
                             })),
                         (this._getPrerollActionItems = () => {
-                            const { analytics: e, history: t, onTweetDismiss: i, promotedContent: s, tweet: o, userCountry: r, userLanguage: n } = this.props,
+                            const { analytics: e, history: t, onTweetDismiss: i, promotedContent: s, tweet: o, userCountry: n, userLanguage: r } = this.props,
                                 { featureSwitches: a } = this.context,
                                 c = this._scribeAction,
                                 d = {},
@@ -220,7 +220,7 @@
                             return (
                                 (d.promotedTweetDismiss = (0, he.Z)({ onTweetDismiss: () => i?.(!1), hasPremiumPlus: this._hasPremiumPlus, promotedDismissUpsellEnabled: a.isTrue("subscriptions_hide_ad_upsell_enabled"), history: t })),
                                 h && (d.adInfo = (0, N.Z)({ promotedContent: s, scribeAction: c })),
-                                (d.report = (0, we.t)({ analytics: e, history: t, promotedContent: s, scribeAction: c, tweet: o, featureSwitches: a, reporterCountry: r, reporterLanguage: n })),
+                                (d.report = (0, we.t)({ analytics: e, history: t, promotedContent: s, scribeAction: c, tweet: o, featureSwitches: a, reporterCountry: n, reporterLanguage: r })),
                                 Oe.forEach((e) => {
                                     const t = d[e];
                                     if (t) {
@@ -232,55 +232,55 @@
                             );
                         }),
                         (this._getMuteOrUnmuteAction = () => {
-                            const { addToast: e, createLocalApiErrorHandler: t, dismissUserFromConversation: i, history: s, mute: o, promotedContent: r, tweet: n, unmute: l } = this.props,
-                                { user: a } = n,
+                            const { addToast: e, createLocalApiErrorHandler: t, dismissUserFromConversation: i, history: s, mute: o, promotedContent: n, tweet: r, unmute: l } = this.props,
+                                { user: a } = r,
                                 c = { addToast: e, createLocalApiErrorHandler: t, scribeAction: this._scribeAction },
                                 d = this.context.featureSwitches.isTrue("subscriptions_mute_ad_upsell_enabled");
-                            return (0, ae.Z)({ ...c, mute: o, unmute: l, user: a, dismissUserFromConversation: i, promotedContent: r, muteAdUpsellEnabled: d, history: s, hasPremiumPlus: this._hasPremiumPlus });
+                            return (0, ae.Z)({ ...c, mute: o, unmute: l, user: a, dismissUserFromConversation: i, promotedContent: n, muteAdUpsellEnabled: d, history: s, hasPremiumPlus: this._hasPremiumPlus });
                         }),
                         (this._getHighlightOrUndoAction = () => {
                             const { addToast: e, highlight: t, tweet: i, undoHighlight: s } = this.props,
                                 o = this._scribeAction,
-                                { featureSwitches: r, userClaims: n } = this.context;
-                            if (r.isTrue("highlights_tweets_action_enabled") && !this._shouldDisable(i, W.d.Highlight)) {
-                                const l = n.isTrueAndEnabled("subscriptions_feature_highlights"),
-                                    a = r.isTrue("subscriptions_sign_up_enabled") && r.isTrue("highlights_tweets_action_menu_upsell_enabled");
-                                return l ? (0, oe.Z)({ addToast: e, scribeAction: o, tweetId: i.id_str, undoHighlight: s, highlight: t }) : a ? (0, re.Z)({ scribeAction: o }) : null;
+                                { featureSwitches: n, userClaims: r } = this.context;
+                            if (n.isTrue("highlights_tweets_action_enabled") && !this._shouldDisable(i, W.d.Highlight)) {
+                                const l = r.isTrueAndEnabled("subscriptions_feature_highlights"),
+                                    a = n.isTrue("subscriptions_sign_up_enabled") && n.isTrue("highlights_tweets_action_menu_upsell_enabled");
+                                return l ? (0, oe.Z)({ addToast: e, scribeAction: o, tweetId: i.id_str, undoHighlight: s, highlight: t }) : a ? (0, ne.Z)({ scribeAction: o }) : null;
                             }
                         }),
                         (this._getHighlightUpsellOnPinAction = () => {
-                            const { addToast: e, createLocalApiErrorHandler: t, highlight: i, pin: s, tweet: o, undoHighlight: r } = this.props,
-                                n = this._scribeAction,
+                            const { addToast: e, createLocalApiErrorHandler: t, highlight: i, pin: s, tweet: o, undoHighlight: n } = this.props,
+                                r = this._scribeAction,
                                 { featureSwitches: l, userClaims: a } = this.context,
                                 c = l.isTrue("highlights_tweets_upsell_on_pin_action_enabled"),
                                 d = l.isTrue("subscriptions_sign_up_enabled"),
                                 u = l.isTrue("highlights_tweets_action_enabled") && !this._shouldDisable(o, W.d.Highlight),
                                 h = a.isTrueAndEnabled("subscriptions_feature_highlights");
-                            return u && c && d && !h ? (0, ne.Z)({ addToast: e, scribeAction: n, tweetId: o.id_str, undoHighlight: r, highlight: i, pin: s, createLocalApiErrorHandler: t, isBlueUpsellEligible: d && !h }) : (0, de.Z)({ addToast: e, scribeAction: n, pin: s, createLocalApiErrorHandler: t, tweetId: o.id_str });
+                            return u && c && d && !h ? (0, re.Z)({ addToast: e, scribeAction: r, tweetId: o.id_str, undoHighlight: n, highlight: i, pin: s, createLocalApiErrorHandler: t, isBlueUpsellEligible: d && !h }) : (0, de.Z)({ addToast: e, scribeAction: r, pin: s, createLocalApiErrorHandler: t, tweetId: o.id_str });
                         }),
                         (this._getEditTweetAction = () => {
                             const { tweet: e } = this.props,
                                 { featureSwitches: t, userClaims: i, viewerUserId: s } = this.context,
                                 { user: o } = e,
-                                r = this._scribeAction,
-                                n = o.id_str === s;
-                            if ((0, J.H)(e, { isUserTweetAuthor: n }) && !(0, W.$y)(t, e, W.d.EditTweet)) {
-                                if (this._editTweetCompositionEnabledForUser()) return (0, J.Q)({ scribeAction: r, tweet: e, featureSwitches: t });
-                                if (!this._editTweetCompositionEnabledForUser() && this._editTweetCompositionEligible && !i.isAnyPremiumSubscriber() && !i.hasSubscription("twitter_blue_legacy") && t.isTrue("subscriptions_sign_up_enabled") && t.isTrue("responsive_web_edit_tweet_upsell_enabled")) return (0, Y.Z)({ tweet: e, scribeAction: r, onClick: this._openEditWithPremiumUpsell });
+                                n = this._scribeAction,
+                                r = o.id_str === s;
+                            if ((0, J.H)(e, { isUserTweetAuthor: r }) && !(0, W.$y)(t, e, W.d.EditTweet)) {
+                                if (this._editTweetCompositionEnabledForUser()) return (0, J.Q)({ scribeAction: n, tweet: e, featureSwitches: t });
+                                if (!this._editTweetCompositionEnabledForUser() && this._editTweetCompositionEligible && !i.isAnyPremiumSubscriber() && !i.hasSubscription("twitter_blue_legacy") && t.isTrue("subscriptions_sign_up_enabled") && t.isTrue("responsive_web_edit_tweet_upsell_enabled")) return (0, Y.Z)({ tweet: e, scribeAction: n, onClick: this._openEditWithPremiumUpsell });
                             }
                             return null;
                         }),
                         (this._getEditArticleAction = () => {
                             const { addToast: e, createLocalApiErrorHandler: t, history: i, tweet: s, unpublishArticleEntity: o } = this.props,
-                                { featureSwitches: r, viewerUserId: n } = this.context,
+                                { featureSwitches: n, viewerUserId: r } = this.context,
                                 { user: l } = s,
                                 a = this._scribeAction,
-                                c = l.id_str === n && !(0, W.$y)(r, s, W.d.EditTweet);
+                                c = l.id_str === r && !(0, W.$y)(n, s, W.d.EditTweet);
                             return s.article && c ? (0, Q.Z)({ createLocalApiErrorHandler: t, scribeAction: a, addToast: e, unpublishArticleEntity: o, articleEnttiyId: s.article.rest_id, history: i }) : null;
                         }),
                         (this._getActionItems = (e, t) => {
-                            const { deleteTweet: i, follow: s, hideReply: o, muteTweet: r, removeTag: n, unmentionUserFromConversation: c, unmuteTweet: d, unpin: u } = this.props,
-                                { addFlag: h, addToast: m, analytics: _, createLocalApiErrorHandler: p, feedbackItems: w, forwardPivotDisplayType: b, forwardPivotLandingUrl: g, history: C, isPinned: f, onDeleteTweet: y, onTweetDismiss: T, promotedContent: v, shouldShowHideReplyTip: E, shouldShowMuteEducationTip: k, tweet: U, userCountry: P, userLanguage: S, withChangeConversationControls: Z, withHideReply: D, withMuteConversation: I, withUnhideReply: x, withViewHiddenReplies: O } = this.props,
+                            const { deleteTweet: i, follow: s, hideReply: o, muteTweet: n, removeTag: r, unmentionUserFromConversation: c, unmuteTweet: d, unpin: u } = this.props,
+                                { addFlag: h, addToast: m, analytics: _, createLocalApiErrorHandler: p, feedbackItems: w, forwardPivotDisplayType: b, forwardPivotLandingUrl: g, history: C, isPinned: f, onDeleteTweet: y, onTweetDismiss: A, promotedContent: v, shouldShowHideReplyTip: E, shouldShowMuteEducationTip: k, tweet: U, userCountry: P, userLanguage: S, withChangeConversationControls: Z, withHideReply: D, withMuteConversation: I, withUnhideReply: x, withViewHiddenReplies: O } = this.props,
                                 { featureSwitches: R, userClaims: H, viewerUserId: L } = this.context,
                                 { user: F } = U,
                                 M = [],
@@ -298,12 +298,12 @@
                                 const e = this._getEditTweetAction();
                                 e && (q.edit = e);
                             }
-                            if ((R.isTrue("responsive_web_show_similar_posts_action_enabled") && "ShowSimilarPosts" === b && g && (q.relatedPosts = (0, me.Z)({ landingUrl: g.url, isArticle: J, scribeAction: X })), O && U.conversation_id_str === U.id_str && !this._shouldDisable(U, W.d.ViewHiddenReplies) && (q.viewHiddenReplies = (0, Ee.Z)({ permalink: U.permalink, scribeAction: X })), (0, pe.k)(L, U) && (q.removeTag = (0, pe.Z)({ createLocalApiErrorHandler: p, viewerUserId: L, removeTag: n, tweet: U })), (0, le.So)(L, U) && R.isTrue("dont_mention_me_enabled") && (q.leaveConversation = (0, le.ZP)({ ...j, unmentionUserFromConversation: c, tweet: U })), L))
+                            if ((R.isTrue("responsive_web_show_similar_posts_action_enabled") && "ShowSimilarPosts" === b && g && (q.relatedPosts = (0, me.Z)({ landingUrl: g.url, isArticle: J, scribeAction: X })), O && U.conversation_id_str === U.id_str && !this._shouldDisable(U, W.d.ViewHiddenReplies) && (q.viewHiddenReplies = (0, Ee.Z)({ permalink: U.permalink, scribeAction: X })), (0, pe.k)(L, U) && (q.removeTag = (0, pe.Z)({ createLocalApiErrorHandler: p, viewerUserId: L, removeTag: r, tweet: U })), (0, le.So)(L, U) && R.isTrue("dont_mention_me_enabled") && (q.leaveConversation = (0, le.ZP)({ ...j, unmentionUserFromConversation: c, tweet: U })), L))
                                 if ((F.blocking || this._shouldDisable(U, W.d.ListsAddRemove, void 0, void 0, Q) || (q.addOrRemoveFromList = (0, V.Z)({ user: F, scribeAction: X })), this._birdwatchNoteWritingEnabled && !U.isStaleEdit && (q.birdwatch = this._birdwatchAction({ scribeAction: X, tweetId: U.id_str })), this._birdwatchNoteRequestEnabled && !U.isStaleEdit && (q.birdwatchRequest = this._birdwatchRequestAction({ scribeAction: X, tweetId: U.id_str })), Q)) {
-                                    f ? (q.pinOrUnpin = (0, Ae.Z)({ ...j, tweetId: U.id_str, unpin: u })) : this._shouldDisable(U, W.d.PinToProfile) || (q.pinOrUnpin = this._getHighlightUpsellOnPinAction());
+                                    f ? (q.pinOrUnpin = (0, Te.Z)({ ...j, tweetId: U.id_str, unpin: u })) : this._shouldDisable(U, W.d.PinToProfile) || (q.pinOrUnpin = this._getHighlightUpsellOnPinAction());
                                     const t = this._getHighlightOrUndoAction();
-                                    t && (q.highlightOrUndo = t), this._shouldIncludeTweetAppealOption() && (q.appealTweetWarning = (0, we.t)({ analytics: _, history: C, isAppealTweetWarning: !0, promotedContent: v, scribeAction: X, tweet: U, featureSwitches: R, reporterCountry: P, reporterLanguage: S })), I && !this._shouldDisable(U, W.d.MuteConversation) && (q.muteOrUnmuteConversation = (0, ce.Z)({ ...j, addFlag: h, muteTweet: r, shouldShowMuteEducationTip: k, tweet: U, unmuteTweet: d })), Z && !this._shouldDisable(U, W.d.ConversationControls) && (q.changeConversationControls = (0, G.Z)({ tweet: U, onChangeConversationControls: e })), this._shouldDisable(U, W.d.Delete) || (q.delete = (0, $.Z)({ ...j, deleteTweet: i, onDeleteTweet: y, tweet: U, featureSwitches: R, userClaims: H }));
-                                } else T && B && (q.promotedTweetDismiss = (0, he.Z)({ onTweetDismiss: T, hasPremiumPlus: this._hasPremiumPlus, promotedDismissUpsellEnabled: this.context.featureSwitches.isTrue("subscriptions_hide_ad_upsell_enabled"), history: C })), F.blocking || this._shouldDisable(U, W.d.Follow) || ((q.followOrUnfollow = F.following ? (0, ye.Z)({ ...j, unfollow: this.props.unfollow, promotedContent: v, user: F }) : (0, te.ZP)({ ...j, follow: s, promotedContent: v, user: F })), R.allTrue(["super_follow_android_web_subscription_enabled", "creator_subscriptions_subscribe_action_tweet_menu_enabled"]) && F.super_follow_eligible && !F.super_following && (q.subscribe = (0, fe.Z)({ scribeAction: X, history: C, user: F })), (q.muteOrUnmute = this._getMuteOrUnmuteAction())), I && (q.muteOrUnmuteConversation = (0, ce.Z)({ ...j, addFlag: h, muteTweet: r, shouldShowMuteEducationTip: k, tweet: U, unmuteTweet: d })), D && (q.hideReply = (0, ie.ZP)({ ...j, addFlag: h, hideReply: o, isSoftBlockEnabled: R.isTrue("xprofile_blocked_by_view_enabled"), onBlock: this._handleBlock, onTweetDismiss: T, shouldShowHideReplyTip: E, tweet: U })), x && (q.unhideReply = (0, Te.Z)({ ...j, tweet: U, unhideReply: this.props.unhideReply })), (q.blockOrUnblock = (0, A.op)({ blockAction: this._handleBlock, isSoftBlockEnabled: R.isTrue("xprofile_blocked_by_view_enabled"), source: A.SC.TWEET_CARET, testID: Pe.Z.block, unblockAction: this._handleUnblock, user: F }));
+                                    t && (q.highlightOrUndo = t), this._shouldIncludeTweetAppealOption() && (q.appealTweetWarning = (0, we.t)({ analytics: _, history: C, isAppealTweetWarning: !0, promotedContent: v, scribeAction: X, tweet: U, featureSwitches: R, reporterCountry: P, reporterLanguage: S })), I && !this._shouldDisable(U, W.d.MuteConversation) && (q.muteOrUnmuteConversation = (0, ce.Z)({ ...j, addFlag: h, muteTweet: n, shouldShowMuteEducationTip: k, tweet: U, unmuteTweet: d })), Z && !this._shouldDisable(U, W.d.ConversationControls) && (q.changeConversationControls = (0, G.Z)({ tweet: U, onChangeConversationControls: e })), this._shouldDisable(U, W.d.Delete) || (q.delete = (0, $.Z)({ ...j, deleteTweet: i, onDeleteTweet: y, tweet: U, featureSwitches: R, userClaims: H }));
+                                } else A && B && (q.promotedTweetDismiss = (0, he.Z)({ onTweetDismiss: A, hasPremiumPlus: this._hasPremiumPlus, promotedDismissUpsellEnabled: this.context.featureSwitches.isTrue("subscriptions_hide_ad_upsell_enabled"), history: C })), F.blocking || this._shouldDisable(U, W.d.Follow) || ((q.followOrUnfollow = F.following ? (0, ye.Z)({ ...j, unfollow: this.props.unfollow, promotedContent: v, user: F }) : (0, te.ZP)({ ...j, follow: s, promotedContent: v, user: F })), R.allTrue(["super_follow_android_web_subscription_enabled", "creator_subscriptions_subscribe_action_tweet_menu_enabled"]) && F.super_follow_eligible && !F.super_following && (q.subscribe = (0, fe.Z)({ scribeAction: X, history: C, user: F })), (q.muteOrUnmute = this._getMuteOrUnmuteAction())), I && (q.muteOrUnmuteConversation = (0, ce.Z)({ ...j, addFlag: h, muteTweet: n, shouldShowMuteEducationTip: k, tweet: U, unmuteTweet: d })), D && (q.hideReply = (0, ie.ZP)({ ...j, addFlag: h, hideReply: o, isSoftBlockEnabled: R.isTrue("xprofile_blocked_by_view_enabled"), onBlock: this._handleBlock, onTweetDismiss: A, shouldShowHideReplyTip: E, tweet: U })), x && (q.unhideReply = (0, Ae.Z)({ ...j, tweet: U, unhideReply: this.props.unhideReply })), (q.blockOrUnblock = (0, T.op)({ blockAction: this._handleBlock, isSoftBlockEnabled: R.isTrue("xprofile_blocked_by_view_enabled"), source: T.SC.TWEET_CARET, testID: Pe.Z.block, unblockAction: this._handleUnblock, user: F }));
                             L && !Q && !U.isPreviewDisplay
                                 ? (q.report = (0, we.t)({ analytics: _, history: C, promotedContent: v, scribeAction: X, tweet: U, featureSwitches: R, reporterCountry: P, reporterLanguage: S }))
                                 : !L &&
@@ -345,44 +345,45 @@
                             );
                         }),
                         (this._handleBlock = () => {
-                            const { addToast: e, block: t, createLocalApiErrorHandler: i, dismissUserFromConversation: s, history: o, promotedContent: r, tweet: n } = this.props;
-                            t(n.user.id_str, { promotedContent: r }).then(() => {
-                                s({ userId: n.user.id_str, feedbackKeys: ["UnfollowEntity"] }), e({ action: { label: xe.unblock, onAction: this._handleUnblock }, text: xe.blockedSuccess });
-                                const t = !!n.promoted_content?.impression_id;
+                            const { addToast: e, block: t, createLocalApiErrorHandler: i, dismissUserFromConversation: s, history: o, promotedContent: n, tweet: r } = this.props;
+                            t(r.user.id_str, { promotedContent: n }).then(() => {
+                                s({ userId: r.user.id_str, feedbackKeys: ["UnfollowEntity"] }), e({ action: { label: xe.unblock, onAction: this._handleUnblock }, text: xe.blockedSuccess });
+                                const t = !!r.promoted_content?.impression_id;
                                 if (this.context.featureSwitches.isTrue("subscriptions_block_ad_upsell_enabled") && t && !this._hasPremiumPlus) {
                                     const e = { variant: "BlockAd" };
                                     o.push("/i/verified-get-verified", e);
                                 }
                             }, i(v.d)),
-                                this._scribeAction({ element: "block" });
+                                this._scribeAction({ element: "block" }),
+                                this._scribeAction({ action: "block", element: "tweet_curation_action_menu" });
                         }),
                         (this._handleUnblock = () => {
                             const { createLocalApiErrorHandler: e, promotedContent: t, tweet: i, unblock: s } = this.props;
-                            s(i.user.id_str, { promotedContent: t }).catch(e(k.D)), this._scribeAction({ element: "unblock" });
+                            s(i.user.id_str, { promotedContent: t }).catch(e(k.D)), this._scribeAction({ element: "unblock" }), this._scribeAction({ action: "unblock", element: "tweet_curation_action_menu" });
                         }),
                         (this._handleImmediateDismissClick = () => {
                             const e = this._getLeaveBehindMenuActions();
                             this.props.setLeaveBehindActionItems?.(e), this._onMenuClick();
                         }),
                         (this._scribeAction = ({ action: e, additionalData: t, element: i }) => {
-                            const { analytics: s, promotedContent: o, tweet: r } = this.props,
-                                n = s.contextualScribeData;
-                            let l = n?.items ? n : { ...(n || {}), items: [P.Z.getTweetItem(r, o)] };
+                            const { analytics: s, promotedContent: o, tweet: n } = this.props,
+                                r = s.contextualScribeData;
+                            let l = r?.items ? r : { ...(r || {}), items: [P.Z.getTweetItem(n, o)] };
                             return t && (l = { ...l, ...t }), s.scribe({ element: i, action: e || "click", data: l });
                         });
                 }
                 render() {
-                    const { isActiveCreator: e, isDisabled: t, isForPreroll: i, menuControlProps: n, tweet: l, withChangeConversationControlsTooltip: a, withImmediateDismiss: h } = this.props,
+                    const { isActiveCreator: e, isDisabled: t, isForPreroll: i, menuControlProps: r, tweet: l, withChangeConversationControlsTooltip: a, withImmediateDismiss: h } = this.props,
                         m = l.conversation_control?.policy || C.k.all;
                     return i
                         ? o.createElement(c.ZP, { icon: o.createElement(p.default, { style: { height: "18px" } }), renderMenu: (e) => o.createElement(d.Z, { items: this._getPrerollActionItems(), onCloseRequested: e, shouldCloseOnClick: !0 }), size: "smallCompact", style: De.prerollDismissButton, type: "onMediaDominantColorFilled" })
                         : h
-                          ? o.createElement(r.Z, { style: De.dismissButton }, o.createElement(y.Z, { onClick: this._handleImmediateDismissClick }))
+                          ? o.createElement(n.Z, { style: De.dismissButton }, o.createElement(y.Z, { onClick: this._handleImmediateDismissClick }))
                           : o.createElement(
-                                r.Z,
+                                n.Z,
                                 { style: De.overflowMenu },
                                 a ? o.createElement(B, null) : null,
-                                o.createElement(b.Z, { controlled: !0, disallowedReplyControls: [], isActiveCreator: e, midConversationTweet: l, onChange: this._handleOnChangeConversationControls, setDisallowedReplyControls: () => {}, value: m }, ({ openPopover: e }) => o.createElement(u.Z, (0, s.Z)({}, n, { isDisabled: t, onClick: this._onMenuClick, renderActionMenu: this._renderCurationActionMenu(e), testID: q.Z.caret }))),
+                                o.createElement(b.Z, { controlled: !0, disallowedReplyControls: [], isActiveCreator: e, midConversationTweet: l, onChange: this._handleOnChangeConversationControls, setDisallowedReplyControls: () => {}, value: m }, ({ openPopover: e }) => o.createElement(u.Z, (0, s.Z)({}, r, { isDisabled: t, onClick: this._onMenuClick, renderActionMenu: this._renderCurationActionMenu(e), testID: q.Z.caret }))),
                                 a ? o.createElement(B, null) : null,
                                 this._renderEditWithPremiumUpsell(),
                             );
@@ -394,23 +395,23 @@
                         { viewerUserId: o } = this.context;
                     if (!i || !o) return e;
                     const {
-                            analytics: { contextualScribeNamespace: r },
-                            community: n,
+                            analytics: { contextualScribeNamespace: n },
+                            community: r,
                             disableRemoveFromCommunity: l,
                             withCommunityModerationAuthority: a,
                         } = this.props,
                         { community_relationship: c, user: d } = t,
                         u = !l && a;
-                    if ((d.id_str !== o && u && (this._shouldDisable(t, W.d.HideCommunityTweet) || (e.hideTweet = (0, se.Z)(s, { ...r, element: "hide_tweet" })), this._shouldDisable(t, W.d.RemoveFromCommunity) || (e.removeCommunityMember = (0, _e.Z)(d, i, { ...r, element: "remove_community_member" }))), this._shouldDisable(t, W.d.SearchUsersPost) || (e.searchUsersPost = (0, Ce.Z)(d, i, { ...r, element: "search_users_post" })), U.X7.includes(c?.actions.pin_action_result.__typename) && !this._shouldDisable(t, W.d.PinCommunityTweet))) {
-                        const t = "CommunityTweetPinActionReplace" === n?.actions?.pin_action_result?.__typename;
-                        e.pinCommunityTweet = (0, ue.Z)(s, i, t, { ...r, element: "pin_community_tweet" });
+                    if ((d.id_str !== o && u && (this._shouldDisable(t, W.d.HideCommunityTweet) || (e.hideTweet = (0, se.Z)(s, { ...n, element: "hide_tweet" })), this._shouldDisable(t, W.d.RemoveFromCommunity) || (e.removeCommunityMember = (0, _e.Z)(d, i, { ...n, element: "remove_community_member" }))), this._shouldDisable(t, W.d.SearchUsersPost) || (e.searchUsersPost = (0, Ce.Z)(d, i, { ...n, element: "search_users_post" })), U.X7.includes(c?.actions.pin_action_result.__typename) && !this._shouldDisable(t, W.d.PinCommunityTweet))) {
+                        const t = "CommunityTweetPinActionReplace" === r?.actions?.pin_action_result?.__typename;
+                        e.pinCommunityTweet = (0, ue.Z)(s, i, t, { ...n, element: "pin_community_tweet" });
                     }
-                    return U.Gd.includes(c?.actions.unpin_action_result.__typename) && !this._shouldDisable(t, W.d.UnpinCommunityTweet) && (e.unpinCommunityTweet = (0, ve.Z)(s, i, { ...r, element: "unpin_community_tweet" })), e;
+                    return U.Gd.includes(c?.actions.unpin_action_result.__typename) && !this._shouldDisable(t, W.d.UnpinCommunityTweet) && (e.unpinCommunityTweet = (0, ve.Z)(s, i, { ...n, element: "unpin_community_tweet" })), e;
                 }
                 _shouldIncludeTweetAppealOption() {
                     const { forwardPivotDisplayType: e, isNsfwUser: t, tweet: i, userCountry: s, userLanguage: o } = this.props,
-                        { featureSwitches: r, viewerUserId: n } = this.context;
-                    return (0, S.rT)({ viewerUserId: n, featureSwitches: r, forwardPivotDisplayType: e, tweet: i, userCountry: s, userLanguage: o }) || (0, S.V4)({ viewerUserId: n, featureSwitches: r, isNsfwUser: t, tweet: i, userCountry: s, userLanguage: o });
+                        { featureSwitches: n, viewerUserId: r } = this.context;
+                    return (0, S.rT)({ viewerUserId: r, featureSwitches: n, forwardPivotDisplayType: e, tweet: i, userCountry: s, userLanguage: o }) || (0, S.V4)({ viewerUserId: r, featureSwitches: n, isNsfwUser: t, tweet: i, userCountry: s, userLanguage: o });
                 }
             }
             (Ze.defaultProps = { withRemoveFromBookmarks: !1 }), (Ze.contextType = I.rC);
@@ -423,4 +424,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TweetCurationActionMenu-b7da5e41.40bb01ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TweetCurationActionMenu-b7da5e41.8b937c5a.js.map

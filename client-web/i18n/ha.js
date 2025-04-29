@@ -604,6 +604,7 @@
                 t("e0cb0c72", "Ads"),
                 t("e2eef3c2", "Verified Orgs"),
                 t("b55d8a78", "Create your Space"),
+                t("e5323e36", "Go Live"),
                 t("a5a30af0", "Articles"),
                 t("d13d697c", "New"),
                 t("j0e2cfa8", "Kasuwanci"),
@@ -903,9 +904,9 @@
                 t("i821844f", "Ƙara koyo"),
                 t("b0abbb17", "Ƙara koyo"),
                 t("e7e0d88b", "Ƙara koyo"),
-                t("i560665f", "Ƙara koyo"),
-                t("f6e774d9", "Ƙara koyo");
-            t("h486f755", "Ƙara koyo"),
+                t("i560665f", "Ƙara koyo");
+            t("f6e774d9", "Ƙara koyo"),
+                t("h486f755", "Ƙara koyo"),
                 t("bab41dab", "Ƙara koyo"),
                 t("e0ebdb29", "Ƙara koyo"),
                 t("f8493831", "Ƙara koyo"),
@@ -1911,9 +1912,9 @@
                 t("a330771e", "Copy link to your clipboard"),
                 t("b6510e68", "Copy your Article’s URL so you can share it."),
                 t("e4a6e006", "Wata matsala ta faru. Sake jarrabawa kuma."),
-                t("eff483e0", "After you publish, get a link to share the Article."),
-                t("ca15dd4e", "Draft");
-            t("bb40bf66", "Published"),
+                t("eff483e0", "After you publish, get a link to share the Article.");
+            t("ca15dd4e", "Draft"),
+                t("bb40bf66", "Published"),
                 t("h107935c", "Last saved just now"),
                 t("a753a870", "Sanya"),
                 t("afccc67e", "Copy link to Article"),
@@ -2963,9 +2964,9 @@
                 t("c6f58084", "Masu samarwa"),
                 t("d83f18d2", "Jagora"),
                 t("hc5aa17c", "Get the X app"),
-                t("j0693948", "Get the Grok app"),
-                t("fbf83158", "Warning: Payment failed");
-            t("jadeb4da", "Please urgently update your payment method before you lose your subscription benefits."),
+                t("j0693948", "Get the Grok app");
+            t("fbf83158", "Warning: Payment failed"),
+                t("jadeb4da", "Please urgently update your payment method before you lose your subscription benefits."),
                 t("bce3726a", "Update Billing"),
                 t("fce9ecce", "Suggested Videos"),
                 t("efe6ef9e", "View post"),
@@ -3879,9 +3880,9 @@
                 t("d7357e7e", "Remove from Co-hosts"),
                 t("bf307fc0", "Block and Remove"),
                 t("ccf2f24e", "Rahoto"),
-                t("i22835de", "Amincewa"),
-                t("cb59a0fe", "Hanawa");
-            t("c2376960", "Requests to Speak"),
+                t("i22835de", "Amincewa");
+            t("cb59a0fe", "Hanawa"),
+                t("c2376960", "Requests to Speak"),
                 t("aba7dcdd", function (a) {
                     return "Invite " + a.name;
                 }),
@@ -4911,9 +4912,9 @@
                 t("a7b48b36", "The percentage of video views that were completed."),
                 t("a2580f2a", "Completion Rate"),
                 t("ff95a9cc", "Video ID"),
-                t("a97e358e", "Video Link"),
-                t("e10e8b46", "Only showing the videos from the last 100 days.");
-            t("ba37f6da", "Video overview"),
+                t("a97e358e", "Video Link");
+            t("e10e8b46", "Only showing the videos from the last 100 days."),
+                t("ba37f6da", "Video overview"),
                 t("f19846b2", "Video thumbnail"),
                 t("ccd6f4a8", "Video title"),
                 t("c8410542", "The number of times your video was viewed."),
@@ -5867,11 +5868,11 @@
                 t("a0ea2fa6", "Filin suna ba zai zama babu komai ba"),
                 t("eec37eac", "Akwai folda mai alama tare da wannan sunan"),
                 t("fce0c59e", "An gaza faskara raiwatawar JSON. Daure ka duba tsarin na JSON ɗin a cikin fayil na raiwatawar sannan sake gwadawa."),
-                t("g0eea6c2", "An gaza karanta fayil na raiwatawar JSON. Daure ka sake buɗe fayil ɗin."),
-                t("ae58026a", "Buɗe wani fayil .json na So Mai Alama domin a fara duba");
-            t("hd0bc1eb", function (a) {
-                return a.name + " yana kai tsaye";
-            }),
+                t("g0eea6c2", "An gaza karanta fayil na raiwatawar JSON. Daure ka sake buɗe fayil ɗin.");
+            t("ae58026a", "Buɗe wani fayil .json na So Mai Alama domin a fara duba"),
+                t("hd0bc1eb", function (a) {
+                    return a.name + " yana kai tsaye";
+                }),
                 t("bea1f26b", function (a) {
                     return a.name + " ya kasance kai tsaye";
                 }),
@@ -6875,9 +6876,9 @@
                 t("fdd77a34", "Create longer posts"),
                 t("j6d26a7a", "Write as much as you’d like to share"),
                 t("c4fd68da", "Customize your experience"),
-                t("c0195168", "Change your app icon and navigation options"),
-                t("b6b5dc94", "Become verified");
-            t("b06db848", "Stand out from others on the platform"),
+                t("c0195168", "Change your app icon and navigation options");
+            t("b6b5dc94", "Become verified"),
+                t("b06db848", "Stand out from others on the platform"),
                 t("e3e3a97c", "Earn a share of revenue from your posts"),
                 t("f15bc24e", "Increased Grok limits"),
                 t("c4666e1c", "More usage of Grok 3, our latest model"),
@@ -7851,8 +7852,7 @@
                 t("b33d1518", "Sync jobs from a supported integration or a custom XML feed"),
                 t("dd2db402", "Step 1: Gather the required information"),
                 t("edb098c2", "Step 2: Contact our support team"),
-                t("c4474460", "Step 2: Email our support team"),
-                t("a08da0fa", "What happens next?");
+                t("c4474460", "Step 2: Email our support team");
             function r(a, e) {
                 for (var n = 0; n < e.length; n++) {
                     var t = e[n];
@@ -7891,7 +7891,8 @@
                     u(a, e)
                 );
             }
-            t("c127374e", "Send us a message"),
+            t("a08da0fa", "What happens next?"),
+                t("c127374e", "Send us a message"),
                 t("b2cb2a0c", "Username of your Verified Org account"),
                 t("b8e64002", "Name of your applicant tracking system"),
                 t("acb99db6", "Career site URL where your jobs are listed"),
@@ -8893,9 +8894,9 @@
                 t("c057680c", "We cannot play the video in this browser. Please try a different web browser."),
                 t("i5dfae6e", "This video is not available in your location."),
                 t("c2388276", "This video has been deleted."),
-                t("d2c96140", "Guest audio indicator"),
-                t("f6dc9146", "SAKE KUNNA");
-            t("d30c74fe", "Volume"),
+                t("d2c96140", "Guest audio indicator");
+            t("f6dc9146", "SAKE KUNNA"),
+                t("d30c74fe", "Volume"),
                 t("f2d4e6f2", "Watch again"),
                 t("e9f1af3a", "Nemo ƙarin"),
                 t("f1881d86", "This post can’t be replied to, shared or liked."),
@@ -13238,4 +13239,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ha.d7b3773a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ha.e7a22e1a.js.map

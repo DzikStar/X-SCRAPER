@@ -608,6 +608,7 @@
                 o("e0cb0c72", "Oglasi"),
                 o("e2eef3c2", "Provjerene organizacije"),
                 o("b55d8a78", "Stvorite svoj Prostor"),
+                o("e5323e36", "Go Live"),
                 o("a5a30af0", "Članci"),
                 o("d13d697c", "Novo"),
                 o("j0e2cfa8", "Tvrtke"),
@@ -907,9 +908,9 @@
                 o("i821844f", "Saznajte više"),
                 o("b0abbb17", "Saznajte više"),
                 o("e7e0d88b", "Saznajte više"),
-                o("i560665f", "Saznajte više"),
-                o("f6e774d9", "Saznajte više");
-            o("h486f755", "Saznajte više"),
+                o("i560665f", "Saznajte više");
+            o("f6e774d9", "Saznajte više"),
+                o("h486f755", "Saznajte više"),
                 o("bab41dab", "Saznajte više"),
                 o("e0ebdb29", "Saznajte više"),
                 o("f8493831", "Saznajte više"),
@@ -1915,9 +1916,9 @@
                 o("a330771e", "Kopirajte vezu u međuspremnik"),
                 o("b6510e68", "Kopirajte URL svog članka kako biste ga mogli dijeliti."),
                 o("e4a6e006", "Došlo je do pogreške. Pokušajte ponovno."),
-                o("eff483e0", "Nakon što objavite, dobijte vezu za dijeljenje članka."),
-                o("ca15dd4e", "Skica");
-            o("bb40bf66", "Objavljeno"),
+                o("eff483e0", "Nakon što objavite, dobijte vezu za dijeljenje članka.");
+            o("ca15dd4e", "Skica"),
+                o("bb40bf66", "Objavljeno"),
                 o("h107935c", "Zadnji put spremljeno upravo sad"),
                 o("a753a870", "Primijeni"),
                 o("afccc67e", "Kopiraj vezu na članak"),
@@ -2967,9 +2968,9 @@
                 o("c6f58084", "Razvojni inženjeri"),
                 o("d83f18d2", "Direktorij"),
                 o("hc5aa17c", "Preuzmite aplikaciju X"),
-                o("j0693948", "Preuzmite aplikaciju Grok"),
-                o("fbf83158", "Upozorenje: plaćanje nije uspjelo");
-            o("jadeb4da", "Hitno ažurirajte način plaćanja prije nego što izgubite pogodnosti pretplate."),
+                o("j0693948", "Preuzmite aplikaciju Grok");
+            o("fbf83158", "Upozorenje: plaćanje nije uspjelo"),
+                o("jadeb4da", "Hitno ažurirajte način plaćanja prije nego što izgubite pogodnosti pretplate."),
                 o("bce3726a", "Ažurirajte podatke za naplatu"),
                 o("fce9ecce", "Preporučeni videozapisi"),
                 o("efe6ef9e", "Prikaži objavu"),
@@ -3883,9 +3884,9 @@
                 o("d7357e7e", "Ukloni s mjesta suvoditelja"),
                 o("bf307fc0", "Blokiraj i ukloni"),
                 o("ccf2f24e", "Prijava"),
-                o("i22835de", "Odobri"),
-                o("cb59a0fe", "Odbij");
-            o("c2376960", "Zahtjevi za mjesto govornika"),
+                o("i22835de", "Odobri");
+            o("cb59a0fe", "Odbij"),
+                o("c2376960", "Zahtjevi za mjesto govornika"),
                 o("aba7dcdd", function (a) {
                     return "Pozovite korisnika " + a.name;
                 }),
@@ -4864,8 +4865,8 @@
                 o("jbcb09a8", "Još nema dovoljno podataka"),
                 o("df846d6c", "Nije pronađena nijedna objava za odabrani vremenski raspon."),
                 o("g2ba40f6", "Za odabrani filtar nema dostupnih Prostora"),
-                o("j44061a0", "Not available"),
-                o("c4a93912", "N/A"),
+                o("j44061a0", "Nije dostupno"),
+                o("c4a93912", "Nije primjenjivo"),
                 o("a6b78788", "No viewer data available"),
                 o("b2438638", "od ukupno"),
                 o("ic0399e0", "Organski pregledi"),
@@ -4896,7 +4897,7 @@
                 o("cf3709da", "Status"),
                 o("e797dc32", "Stream time: "),
                 o("b649d8cc", "Samo za pretplatnike"),
-                o("j9282130", "Broadcast thumbnail"),
+                o("j9282130", "Minijatura prijenosa uživo"),
                 o("g629b8b0", "Timed Out"),
                 o("eb87323c", "This shows analytics data for the selected time period since the livestream happened."),
                 o("i6a75722", "Time Range"),
@@ -4915,9 +4916,9 @@
                 o("a7b48b36", "Postotak potpuno odgledanih videozapisa."),
                 o("a2580f2a", "Potpunih pregleda"),
                 o("ff95a9cc", "ID videozapisa"),
-                o("a97e358e", "Veza na videozapis"),
-                o("e10e8b46", "Prikazuju se samo videozapisi od proteklih 100 dana.");
-            o("ba37f6da", "Pregled videozapisa"),
+                o("a97e358e", "Veza na videozapis");
+            o("e10e8b46", "Prikazuju se samo videozapisi od proteklih 100 dana."),
+                o("ba37f6da", "Pregled videozapisa"),
                 o("f19846b2", "Sličica videozapisa"),
                 o("ccd6f4a8", "Naslov videozapisa"),
                 o("c8410542", "Broj pregleda vašeg videozapisa"),
@@ -5871,11 +5872,11 @@
                 o("a0ea2fa6", "Polje za naziv ne može ostati prazno"),
                 o("eec37eac", "Mapa s knjižnim oznakama tog naziva već postoji"),
                 o("fce0c59e", "Raščlanjivanje animirane JSON datoteke nije uspjelo. Provjerite format animirane JSON datoteke i pokušajte ponovno."),
-                o("g0eea6c2", "Čitanje animirane JSON datoteke nije uspjelo. Datoteku pokušajte ponovno otvoriti."),
-                o("ae58026a", "Otvorite .json datoteku brendirane oznake „sviđa mi se” koju želite pretpregledati");
-            o("hd0bc1eb", function (a) {
-                return a.name + " emitira uživo";
-            }),
+                o("g0eea6c2", "Čitanje animirane JSON datoteke nije uspjelo. Datoteku pokušajte ponovno otvoriti.");
+            o("ae58026a", "Otvorite .json datoteku brendirane oznake „sviđa mi se” koju želite pretpregledati"),
+                o("hd0bc1eb", function (a) {
+                    return a.name + " emitira uživo";
+                }),
                 o("bea1f26b", function (a) {
                     return a.name + " emitirao/la je uživo";
                 }),
@@ -6879,9 +6880,9 @@
                 o("fdd77a34", "Pišite dulje objave"),
                 o("j6d26a7a", "Pišite onoliko koliko želite podijeliti"),
                 o("c4fd68da", "Prilagodba sučelja"),
-                o("c0195168", "Promijenite ikonu aplikacije i opcije navigacije"),
-                o("b6b5dc94", "Provjerite svoju autentičnost");
-            o("b06db848", "Istaknite se među ostalima na platformi"),
+                o("c0195168", "Promijenite ikonu aplikacije i opcije navigacije");
+            o("b6b5dc94", "Provjerite svoju autentičnost"),
+                o("b06db848", "Istaknite se među ostalima na platformi"),
                 o("e3e3a97c", "Zarađujte udio u prihodu od objava"),
                 o("f15bc24e", "Povećana ograničenja značajke Grok"),
                 o("c4666e1c", "Veće mogućnosti upotrebe značajke Grok 3, našeg najnovijeg modela"),
@@ -7855,8 +7856,7 @@
                 o("b33d1518", "Sinkronizirajte radna mjesta iz podržane integracije ili prilagođenog XML sažetka sadržaja"),
                 o("dd2db402", "1. korak: Prikupite potrebne informacije"),
                 o("edb098c2", "2. korak: obratite se našem timu za podršku"),
-                o("c4474460", "2. korak: Pošaljite poruku e-pošte našem timu za podršku"),
-                o("a08da0fa", "Što dalje?");
+                o("c4474460", "2. korak: Pošaljite poruku e-pošte našem timu za podršku");
             function t(a, e) {
                 for (var i = 0; i < e.length; i++) {
                     var o = e[i];
@@ -7895,7 +7895,8 @@
                     r(a, e)
                 );
             }
-            o("c127374e", "Pošaljite nam poruku"),
+            o("a08da0fa", "Što dalje?"),
+                o("c127374e", "Pošaljite nam poruku"),
                 o("b2cb2a0c", "Korisničko ime za vaš račun za Verified Org"),
                 o("b8e64002", "Naziv vašeg sustava za praćenje kandidata"),
                 o("acb99db6", "URL stranice za oglašavanje radnih mjesta na kojoj su navedena vaša radna mjesta"),
@@ -8897,9 +8898,9 @@
                 o("c057680c", "Taj videozapis nije moguće reproducirati u tom pregledniku. Pokušajte u nekom drugom web-pregledniku."),
                 o("i5dfae6e", "Taj videozapis nije dostupan za vašu lokaciju."),
                 o("c2388276", "Taj je videozapis izbrisan."),
-                o("d2c96140", "Pokazatelj zvuka gosta"),
-                o("f6dc9146", "REPRODUKCIJA");
-            o("d30c74fe", "Glasnoća"),
+                o("d2c96140", "Pokazatelj zvuka gosta");
+            o("f6dc9146", "REPRODUKCIJA"),
+                o("d30c74fe", "Glasnoća"),
                 o("f2d4e6f2", "Pogledajte ponovno"),
                 o("e9f1af3a", "Saznajte više"),
                 o("f1881d86", "Na tu se objavu ne može odgovoriti i objava se ne može podijeliti ni označiti oznakom „sviđa mi se”."),
@@ -13257,4 +13258,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hr.fa1bf77a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hr.e811025a.js.map

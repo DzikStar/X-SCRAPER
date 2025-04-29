@@ -601,6 +601,7 @@
                 i("e0cb0c72", "Ads"),
                 i("e2eef3c2", "Mga Beripikadong Org"),
                 i("b55d8a78", "Gumawa ng Space mo"),
+                i("e5323e36", "Go Live"),
                 i("a5a30af0", "Mga Artikulo"),
                 i("d13d697c", "Bago"),
                 i("j0e2cfa8", "Negosyo"),
@@ -900,9 +901,9 @@
                 i("i821844f", "Matuto pa"),
                 i("b0abbb17", "Matuto pa"),
                 i("e7e0d88b", "Matuto pa"),
-                i("i560665f", "Matuto pa"),
-                i("f6e774d9", "Matuto pa");
-            i("h486f755", "Matuto pa"),
+                i("i560665f", "Matuto pa");
+            i("f6e774d9", "Matuto pa"),
+                i("h486f755", "Matuto pa"),
                 i("bab41dab", "Matuto pa"),
                 i("e0ebdb29", "Matuto pa"),
                 i("f8493831", "Matuto pa"),
@@ -1908,9 +1909,9 @@
                 i("a330771e", "Kopyahin ang link sa clipboard mo"),
                 i("b6510e68", "Kopyahin ang URL ng Article mo para maibahagi mo ito."),
                 i("e4a6e006", "Nagkaroon ng problema. Pakisubukang muli."),
-                i("eff483e0", "Pagkatapos mong mag-publish, kunin ang link para ibahagi ang Article."),
-                i("ca15dd4e", "Draft");
-            i("bb40bf66", "Na-publish"),
+                i("eff483e0", "Pagkatapos mong mag-publish, kunin ang link para ibahagi ang Article.");
+            i("ca15dd4e", "Draft"),
+                i("bb40bf66", "Na-publish"),
                 i("h107935c", "Huling na-save ngayon lang"),
                 i("a753a870", "I-apply"),
                 i("afccc67e", "Kopyahin ang link sa Article"),
@@ -2960,9 +2961,9 @@
                 i("c6f58084", "Mga developer"),
                 i("d83f18d2", "Direktoryo"),
                 i("hc5aa17c", "Kunin ang X app"),
-                i("j0693948", "Kunin ang Grok app"),
-                i("fbf83158", "Babala: Hindi naproseso ang pagbabayad");
-            i("jadeb4da", "Paki-update agad ang paraan mo ng pagbabayad bago mawala ang mga benepisyo mo sa subscription."),
+                i("j0693948", "Kunin ang Grok app");
+            i("fbf83158", "Babala: Hindi naproseso ang pagbabayad"),
+                i("jadeb4da", "Paki-update agad ang paraan mo ng pagbabayad bago mawala ang mga benepisyo mo sa subscription."),
                 i("bce3726a", "I-update ang Billing"),
                 i("fce9ecce", "Mga Iminumungkahing Video"),
                 i("efe6ef9e", "Tingnan ang post"),
@@ -3876,9 +3877,9 @@
                 i("d7357e7e", "Alisin sa mga Co-host"),
                 i("bf307fc0", "I-block at Alisin"),
                 i("ccf2f24e", "Ulat"),
-                i("i22835de", "Aprubahan"),
-                i("cb59a0fe", "Tanggihan");
-            i("c2376960", "Humiling na Magsalita"),
+                i("i22835de", "Aprubahan");
+            i("cb59a0fe", "Tanggihan"),
+                i("c2376960", "Humiling na Magsalita"),
                 i("aba7dcdd", function (a) {
                     return "Imbitahan si " + a.name;
                 }),
@@ -4796,10 +4797,10 @@
                 i("e7479ce4", "Average na Tagal ng Panonood"),
                 i("g1dfa7d0", "Avg"),
                 i("h7d28188", "Bumalik sa content"),
-                i("if2704e4", "Back to Live Overview"),
+                i("if2704e4", "Bumalik sa Live na Overview"),
                 i("ea928ae4", "Bumalik sa Spaces"),
                 i("e8c07c22", "broadcast"),
-                i("a4ce6e68", "Broadcast Metrics"),
+                i("a4ce6e68", "Metrics ng Broadcast"),
                 i("b2214c74", "Total number of views for this broadcast"),
                 i("d4fcf83a", "Total time viewers spent watching this broadcast"),
                 i("a89b0322", "Kinansela"),
@@ -4837,18 +4838,18 @@
                 i("efa0f858", "Bilang ng pag-follow at pag-unfollow sa paglipas ng panahon. Hindi nit kinakailangang ipakita ang dami ng follower mo."),
                 i("g2b06cc6", "Hinulaan ang data ng kasarian"),
                 i("b66b3baa", "(na) oras"),
-                i("cf8a0772", "Impression to Views"),
-                i("g13d8010", "Last 48 Hours"),
-                i("d5627596", "Last Hour"),
+                i("cf8a0772", "Impression sa Mga View"),
+                i("g13d8010", "Nakalipas na 24 na Oras"),
+                i("d5627596", "Nakalipas na Oras"),
                 i("baf120a6", "May pinakakaunting pakikipag-ugnayan"),
                 i("f2382014", "LIVE"),
-                i("c4a7a6aa", "Live data"),
-                i("a992032a", "Livestream Analytics"),
+                i("c4a7a6aa", "Live na data"),
+                i("a992032a", "Analytics ng Livestream"),
                 i("ie45edda", "Overview ng livestream"),
-                i("e30fc268", "Live Viewers"),
+                i("e30fc268", "Mga Live na Viewer"),
                 i("bd37f68e", "Aktibidad ng media"),
                 i("fe074210", "(na) min"),
-                i("jd03a1b8", "Minutes Watched"),
+                i("jd03a1b8", "Dami ng Minutong Pinanood"),
                 i("a20e91e8", "minutes watched"),
                 i("ic2bebee", "Naka-monetize"),
                 i("a1d642c8", "May pinakamaraming pakikipag-ugnayan"),
@@ -4857,14 +4858,14 @@
                 i("jbcb09a8", "Wala pang sapat na data"),
                 i("df846d6c", "Walang nakitang post para sa piniling time range."),
                 i("g2ba40f6", "Walang available na space para sa piniling filter"),
-                i("j44061a0", "Not available"),
+                i("j44061a0", "Hindi available"),
                 i("c4a93912", "N/A"),
-                i("a6b78788", "No viewer data available"),
+                i("a6b78788", "Walang available na data ng viewer"),
                 i("b2438638", "ng kabuuan"),
                 i("ic0399e0", "Mga Organic View"),
                 i("ja5c444a", "Panahon ng pagbabayad"),
                 i("f04e025e", "Mga Peak Concurrent na Tagapakinig"),
-                i("d6d10662", "Peak Viewers: "),
+                i("d6d10662", "Mga Peak Viewer: "),
                 i("d147bea2", "Pakitingnan ulit sa ibang pagkakataon"),
                 i("f0336d68", "Analytics ng Post"),
                 i("g85fbd2e", "Post id"),
@@ -4872,7 +4873,7 @@
                 i("hf4f9bfe", "Mag-post ng Link"),
                 i("bf5ebf5c", "Mga post at reply"),
                 i("b211652e", "Mga post sa paglipas na panahon"),
-                i("f2efec0a", "Pre-Published"),
+                i("f2efec0a", "Bago Na-publish"),
                 i("i61e0302", "Nakaraan"),
                 i("e08a706a", "Mga Promoted View"),
                 i("cbc99192", "Petsa nang Na-publish"),
@@ -4889,7 +4890,7 @@
                 i("cf3709da", "Status"),
                 i("e797dc32", "Stream time: "),
                 i("b649d8cc", "Subscriber Lang"),
-                i("j9282130", "Broadcast thumbnail"),
+                i("j9282130", "Thumbnail ng broadcast"),
                 i("g629b8b0", "Timed Out"),
                 i("eb87323c", "This shows analytics data for the selected time period since the livestream happened."),
                 i("i6a75722", "Time Range"),
@@ -4908,9 +4909,9 @@
                 i("a7b48b36", "Ang percentage ng mga nakumpletong panonood ng video."),
                 i("a2580f2a", "Rate ng Pagkumpleto"),
                 i("ff95a9cc", "Video ID"),
-                i("a97e358e", "Link ng Video"),
-                i("e10e8b46", "Ipinapakita lang ang mga video mula sa nakaraang 100 araw.");
-            i("ba37f6da", "Overview ng video"),
+                i("a97e358e", "Link ng Video");
+            i("e10e8b46", "Ipinapakita lang ang mga video mula sa nakaraang 100 araw."),
+                i("ba37f6da", "Overview ng video"),
                 i("f19846b2", "Thumbnail ng video"),
                 i("ccd6f4a8", "Title ng Video"),
                 i("c8410542", "Ang dami ng beses na pinanood ang video mo."),
@@ -5864,11 +5865,11 @@
                 i("a0ea2fa6", "Hindi puwedeng walang laman ang field ng pangalan"),
                 i("eec37eac", "Mayroon nang Folder ng Bookmark na ganyan ang pangalan"),
                 i("fce0c59e", "Hindi na-parse ang animation JSON. Pakitingnan ang format ng JSON sa iyong animation file at subukan ulit."),
-                i("g0eea6c2", "Hindi na-read ang animation JSON file. Pakisubukang buksan ulit ang file."),
-                i("ae58026a", "Magbukas ng Branded na Pag-like na .json file na ipi-preview");
-            i("hd0bc1eb", function (a) {
-                return "Live si " + a.name;
-            }),
+                i("g0eea6c2", "Hindi na-read ang animation JSON file. Pakisubukang buksan ulit ang file.");
+            i("ae58026a", "Magbukas ng Branded na Pag-like na .json file na ipi-preview"),
+                i("hd0bc1eb", function (a) {
+                    return "Live si " + a.name;
+                }),
                 i("bea1f26b", function (a) {
                     return "Naging live si " + a.name;
                 }),
@@ -6872,9 +6873,9 @@
                 i("fdd77a34", "Sumulat ng mas mahahabang post"),
                 i("j6d26a7a", "Sumulat ng hanggang gusto mong ibahagi"),
                 i("c4fd68da", "I-customize ang karanasan mo"),
-                i("c0195168", "Palitan ang app icon mo at mga opsyon mo sa pag-navigate"),
-                i("b6b5dc94", "Magpa-verify");
-            i("b06db848", "Maging kapansin-pansin mula sa iba pang nasa platform"),
+                i("c0195168", "Palitan ang app icon mo at mga opsyon mo sa pag-navigate");
+            i("b6b5dc94", "Magpa-verify"),
+                i("b06db848", "Maging kapansin-pansin mula sa iba pang nasa platform"),
                 i("e3e3a97c", "Makakuha ng share ng kita mula sa mga post mo"),
                 i("f15bc24e", "Mas mataas na limitasyon ng Grok"),
                 i("c4666e1c", "Higit pang usage ng Grok 3, ang aming pinakabagong model"),
@@ -7848,8 +7849,7 @@
                 i("b33d1518", "I-sync ang mga trabaho mula sa isang sinusuportahang integrarion o isang custom na XML feed"),
                 i("dd2db402", "Hakbang 1: Ipunin ang kinakailangang impormasyon"),
                 i("edb098c2", "Hakbang 2: Makipag-ugnayan sa amng support team"),
-                i("c4474460", "Hakbang 2: I-email ang aming support team"),
-                i("a08da0fa", "Ano'ng susunod na mangyayari?");
+                i("c4474460", "Hakbang 2: I-email ang aming support team");
             function t(a, n) {
                 for (var g = 0; g < n.length; g++) {
                     var i = n[g];
@@ -7888,7 +7888,8 @@
                     o(a, n)
                 );
             }
-            i("c127374e", "Magpadala sa amin ng mensahe"),
+            i("a08da0fa", "Ano'ng susunod na mangyayari?"),
+                i("c127374e", "Magpadala sa amin ng mensahe"),
                 i("b2cb2a0c", "Username ng account ng Beripikadong Org mo"),
                 i("b8e64002", "Pangalan ng applicant tracking system mo"),
                 i("acb99db6", "Career site URL kung saan nakalista ang mga trabaho mo"),
@@ -8890,9 +8891,9 @@
                 i("c057680c", "Hindi namin mape-play ang video sa browser na ito. Mangyaring sumubok ng ibang web browser."),
                 i("i5dfae6e", "Hindi available ang video na ito sa iyong lokasyon."),
                 i("c2388276", "Na-delete na ang video na ito."),
-                i("d2c96140", "Indicator ng audio ng bisita"),
-                i("f6dc9146", "REPLAY");
-            i("d30c74fe", "Volume"),
+                i("d2c96140", "Indicator ng audio ng bisita");
+            i("f6dc9146", "REPLAY"),
+                i("d30c74fe", "Volume"),
                 i("f2d4e6f2", "Panooring muli"),
                 i("e9f1af3a", "Alamin ang higit pa"),
                 i("f1881d86", "Hindi puwedeng mag-reply, i-share, o i-like ang post na ito."),
@@ -13248,4 +13249,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fil.c82faf7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fil.8fd6809a.js.map

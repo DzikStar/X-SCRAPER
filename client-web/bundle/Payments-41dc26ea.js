@@ -444,7 +444,7 @@
                 g = n(749122),
                 b = n(615954),
                 _ = n(86320),
-                k = n(845584),
+                k = n(89319),
                 Z = n(448518),
                 P = n(655750),
                 v = n(48646),
@@ -543,4 +543,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-41dc26ea.ea09e39a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-41dc26ea.a9d1e02a.js.map

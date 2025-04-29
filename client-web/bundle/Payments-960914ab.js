@@ -156,8 +156,8 @@
                 s,
                 t,
                 r,
-                u,
-                d = {
+                d,
+                u = {
                     fragment: {
                         argumentDefinitions: (l = [{ defaultValue: null, kind: "LocalArgument", name: "user_id" }]),
                         kind: "Fragment",
@@ -238,7 +238,7 @@
                                                         ],
                                                         storageKey: null,
                                                     },
-                                                    (u = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }),
+                                                    (d = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }),
                                                 ],
                                                 type: "User",
                                                 abstractKey: null,
@@ -246,7 +246,7 @@
                                         ],
                                         storageKey: null,
                                     },
-                                    u,
+                                    d,
                                 ],
                                 storageKey: null,
                             },
@@ -254,8 +254,8 @@
                     },
                     params: { id: "zbI9_Qu1h8q-s3h9Url6CA", metadata: {}, name: "P2PTransferParticipantQuery", operationKind: "query", text: null },
                 };
-            d.hash = "83db4417d88d0f7cedaf205e10aa6842";
-            const o = d;
+            u.hash = "83db4417d88d0f7cedaf205e10aa6842";
+            const o = u;
         },
         597897: (e, a, n) => {
             n.d(a, { Z: () => o });
@@ -264,8 +264,8 @@
                 s,
                 t,
                 r,
-                u,
-                d = {
+                d,
+                u = {
                     fragment: {
                         argumentDefinitions: (l = [{ defaultValue: null, kind: "LocalArgument", name: "payment_method_id" }]),
                         kind: "Fragment",
@@ -282,7 +282,7 @@
                                 kind: "LinkedField",
                                 name: "get_payment_method",
                                 plural: !1,
-                                selections: [(s = { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }), { alias: null, args: null, concreteType: "XPaymentsPaymentMethodCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "details", plural: !1, selections: [(r = { kind: "InlineFragment", selections: (t = [{ alias: null, args: null, kind: "ScalarField", name: "status", storageKey: null }]), type: "XPaymentsBankAccountPaymentMethod", abstractKey: null }), (u = { kind: "InlineFragment", selections: t, type: "XPaymentsCreditCardPaymentMethod", abstractKey: null })], storageKey: null }], storageKey: null }],
+                                selections: [(s = { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }), { alias: null, args: null, concreteType: "XPaymentsPaymentMethodCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "details", plural: !1, selections: [(r = { kind: "InlineFragment", selections: (t = [{ alias: null, args: null, kind: "ScalarField", name: "status", storageKey: null }]), type: "XPaymentsBankAccountPaymentMethod", abstractKey: null }), (d = { kind: "InlineFragment", selections: t, type: "XPaymentsCreditCardPaymentMethod", abstractKey: null })], storageKey: null }], storageKey: null }],
                                 storageKey: null,
                             },
                         ],
@@ -290,14 +290,146 @@
                         abstractKey: null,
                     },
                     kind: "Request",
-                    operation: { argumentDefinitions: l, kind: "Operation", name: "PaymentMethodPollerQuery", selections: [{ alias: null, args: i, concreteType: "XPaymentsPaymentMethod", kind: "LinkedField", name: "get_payment_method", plural: !1, selections: [s, { alias: null, args: null, concreteType: "XPaymentsPaymentMethodCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "details", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }, r, u], storageKey: null }], storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }], storageKey: null }] },
+                    operation: { argumentDefinitions: l, kind: "Operation", name: "PaymentMethodPollerQuery", selections: [{ alias: null, args: i, concreteType: "XPaymentsPaymentMethod", kind: "LinkedField", name: "get_payment_method", plural: !1, selections: [s, { alias: null, args: null, concreteType: "XPaymentsPaymentMethodCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "details", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }, r, d], storageKey: null }], storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }], storageKey: null }] },
                     params: { id: "UF7VUY_kIMLH98wWnXXcfQ", metadata: {}, name: "PaymentMethodPollerQuery", operationKind: "query", text: null },
                 };
-            d.hash = "5fa5cabc8880578503a5697365528071";
-            const o = d;
+            u.hash = "5fa5cabc8880578503a5697365528071";
+            const o = u;
+        },
+        724983: (e, a, n) => {
+            n.d(a, { Z: () => y });
+            var l,
+                i,
+                s,
+                t,
+                r,
+                d,
+                u,
+                o,
+                c,
+                m,
+                g = {
+                    fragment: { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "RecentParticipantsQuery", selections: [{ alias: null, args: (l = [{ kind: "Literal", name: "s", value: "8cce" }]), concreteType: "User", kind: "LinkedField", name: "get_payments_recent_participants", plural: !0, selections: [{ args: null, kind: "FragmentSpread", name: "UserCell_user" }, (i = { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }), { args: null, kind: "FragmentSpread", name: "UserDetails_user" }, (s = { kind: "ClientExtension", selections: [{ alias: null, args: null, kind: "ScalarField", name: "__id", storageKey: null }] })], storageKey: 'get_payments_recent_participants(s:"8cce")' }], type: "Query", abstractKey: null },
+                    kind: "Request",
+                    operation: {
+                        argumentDefinitions: [],
+                        kind: "Operation",
+                        name: "RecentParticipantsQuery",
+                        selections: [
+                            {
+                                alias: null,
+                                args: l,
+                                concreteType: "User",
+                                kind: "LinkedField",
+                                name: "get_payments_recent_participants",
+                                plural: !0,
+                                selections: [
+                                    { alias: null, args: null, kind: "ScalarField", name: "is_blue_verified", storageKey: null },
+                                    {
+                                        alias: null,
+                                        args: null,
+                                        concreteType: "ApiUser",
+                                        kind: "LinkedField",
+                                        name: "legacy",
+                                        plural: !1,
+                                        selections: [
+                                            { alias: null, args: null, kind: "ScalarField", name: "id_str", storageKey: null },
+                                            { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null },
+                                            { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
+                                            { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
+                                            { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null },
+                                            { alias: null, args: null, kind: "ScalarField", name: "verified_type", storageKey: null },
+                                            { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null },
+                                            { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null },
+                                        ],
+                                        storageKey: null,
+                                    },
+                                    { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" },
+                                    {
+                                        alias: null,
+                                        args: null,
+                                        concreteType: "HighlightedUserLabelResponse",
+                                        kind: "LinkedField",
+                                        name: "identity_profile_labels_highlighted_label",
+                                        plural: !1,
+                                        selections: [
+                                            {
+                                                alias: null,
+                                                args: null,
+                                                concreteType: "HighlightedUserLabel",
+                                                kind: "LinkedField",
+                                                name: "label",
+                                                plural: !1,
+                                                selections: [
+                                                    {
+                                                        alias: null,
+                                                        args: null,
+                                                        concreteType: "TimelineUrl",
+                                                        kind: "LinkedField",
+                                                        name: "url",
+                                                        plural: !1,
+                                                        selections: [
+                                                            (t = { alias: null, args: null, kind: "ScalarField", name: "url", storageKey: null }),
+                                                            (r = { alias: "urlType", args: null, kind: "ScalarField", name: "url_type", storageKey: null }),
+                                                            {
+                                                                alias: "urtEndpointOptions",
+                                                                args: null,
+                                                                concreteType: "TimelineUrtEndpointOptions",
+                                                                kind: "LinkedField",
+                                                                name: "urt_endpoint_options",
+                                                                plural: !1,
+                                                                selections: [
+                                                                    { alias: "cacheId", args: null, kind: "ScalarField", name: "cache_id", storageKey: null },
+                                                                    { alias: null, args: null, kind: "ScalarField", name: "subtitle", storageKey: null },
+                                                                    { alias: null, args: null, kind: "ScalarField", name: "title", storageKey: null },
+                                                                    {
+                                                                        alias: "requestParams",
+                                                                        args: null,
+                                                                        concreteType: "RequestParamsEntry",
+                                                                        kind: "LinkedField",
+                                                                        name: "request_params",
+                                                                        plural: !0,
+                                                                        selections: [
+                                                                            { alias: null, args: null, kind: "ScalarField", name: "key", storageKey: null },
+                                                                            { alias: null, args: null, kind: "ScalarField", name: "value", storageKey: null },
+                                                                        ],
+                                                                        storageKey: null,
+                                                                    },
+                                                                    { alias: null, args: null, concreteType: "Timeline", kind: "LinkedField", name: "timeline", plural: !1, selections: [(d = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null })], storageKey: null },
+                                                                ],
+                                                                storageKey: null,
+                                                            },
+                                                        ],
+                                                        storageKey: null,
+                                                    },
+                                                    (u = { alias: null, args: null, concreteType: "BadgeInfo", kind: "LinkedField", name: "badge", plural: !1, selections: [t], storageKey: null }),
+                                                    (o = { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null }),
+                                                    (c = { alias: "userLabelType", args: null, kind: "ScalarField", name: "user_label_type", storageKey: null }),
+                                                    (m = { alias: "userLabelDisplayType", args: null, kind: "ScalarField", name: "user_label_display_type", storageKey: null }),
+                                                ],
+                                                storageKey: null,
+                                            },
+                                        ],
+                                        storageKey: null,
+                                    },
+                                    i,
+                                    { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null },
+                                    { alias: null, args: null, kind: "ScalarField", name: "profile_image_shape", storageKey: null },
+                                    { alias: "affiliates_highlighted_label", args: null, concreteType: "HighlightedUserLabelResponse", kind: "LinkedField", name: "identity_profile_labels_highlighted_label", plural: !1, selections: [{ alias: null, args: null, concreteType: "HighlightedUserLabel", kind: "LinkedField", name: "label", plural: !1, selections: [{ alias: null, args: null, concreteType: "TimelineUrl", kind: "LinkedField", name: "url", plural: !1, selections: [t, r], storageKey: null }, u, o, c, m], storageKey: null }], storageKey: null },
+                                    d,
+                                    s,
+                                ],
+                                storageKey: 'get_payments_recent_participants(s:"8cce")',
+                            },
+                        ],
+                    },
+                    params: { id: "xvZnXh4_2Bi2wZkMH18DHw", metadata: { features: ["responsive_web_graphql_timeline_navigation_enabled"] }, name: "RecentParticipantsQuery", operationKind: "query", text: null },
+                };
+            g.hash = "098d419144f289b29c1421123e7cfb25";
+            const y = g;
         },
         73863: (e, a, n) => {
-            n.d(a, { Z: () => u });
+            n.d(a, { Z: () => d });
             var l,
                 i,
                 s,
@@ -362,7 +494,7 @@
                     params: { id: "OVYbL-iJvJ51EDfDLdg03A", metadata: {}, name: "ScreenNamePaneQuery", operationKind: "query", text: null },
                 };
             r.hash = "dd75ff6118c21f4b212f173f0b0fd820";
-            const u = r;
+            const d = r;
         },
         300583: (e, a, n) => {
             n.d(a, { Z: () => s });
@@ -378,8 +510,8 @@
                 s,
                 t,
                 r,
-                u,
                 d,
+                u,
                 o,
                 c,
                 m,
@@ -412,14 +544,14 @@
                                 {
                                     kind: "InlineFragment",
                                     selections: (o = [
-                                        (d = {
+                                        (u = {
                                             alias: null,
                                             args: null,
                                             concreteType: "XPaymentsPaymentMethod",
                                             kind: "LinkedField",
                                             name: "payment_method",
                                             plural: !1,
-                                            selections: [(s = { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }), { alias: null, args: null, concreteType: "XPaymentsPaymentMethodCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "details", plural: !1, selections: [i, { kind: "InlineFragment", selections: [{ alias: null, args: null, kind: "ScalarField", name: "account_number_mask", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "bank_account_type", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "bank_name", storageKey: null }, (t = { alias: null, args: null, kind: "ScalarField", name: "status", storageKey: null }), (r = { alias: null, args: null, kind: "ScalarField", name: "logo", storageKey: null })], type: "XPaymentsBankAccountPaymentMethod", abstractKey: null }, { kind: "InlineFragment", selections: [t, { alias: null, args: null, kind: "ScalarField", name: "bin", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "card_brand", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "card_number_mask", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "issued_card_type", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "card_type", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "expiration_month", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "expiration_year", storageKey: null }], type: "XPaymentsCreditCardPaymentMethod", abstractKey: null }], storageKey: null }], storageKey: null }, (u = { kind: "ClientExtension", selections: [{ alias: null, args: null, kind: "ScalarField", name: "__id", storageKey: null }] })],
+                                            selections: [(s = { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }), { alias: null, args: null, concreteType: "XPaymentsPaymentMethodCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "details", plural: !1, selections: [i, { kind: "InlineFragment", selections: [{ alias: null, args: null, kind: "ScalarField", name: "account_number_mask", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "bank_account_type", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "bank_name", storageKey: null }, (t = { alias: null, args: null, kind: "ScalarField", name: "status", storageKey: null }), (r = { alias: null, args: null, kind: "ScalarField", name: "logo", storageKey: null })], type: "XPaymentsBankAccountPaymentMethod", abstractKey: null }, { kind: "InlineFragment", selections: [t, { alias: null, args: null, kind: "ScalarField", name: "bin", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "card_brand", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "card_number_mask", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "issued_card_type", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "card_type", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "expiration_month", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "expiration_year", storageKey: null }], type: "XPaymentsCreditCardPaymentMethod", abstractKey: null }], storageKey: null }], storageKey: null }, (d = { kind: "ClientExtension", selections: [{ alias: null, args: null, kind: "ScalarField", name: "__id", storageKey: null }] })],
                                             storageKey: null,
                                         }),
                                     ]),
@@ -438,12 +570,12 @@
                                 },
                                 { kind: "InlineFragment", selections: (g = [(m = { alias: null, args: null, concreteType: "XPaymentsMerchantDetails", kind: "LinkedField", name: "merchant_details", plural: !1, selections: [l, r, { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "website", storageKey: null }], storageKey: null })]), type: "XPaymentsBankingDepositDetails", abstractKey: null },
                                 { kind: "InlineFragment", selections: g, type: "XPaymentsBankingWithdrawalDetails", abstractKey: null },
-                                { kind: "InlineFragment", selections: [m, d], type: "XPaymentsPaymentDetails", abstractKey: null },
-                                { kind: "InlineFragment", selections: [m, d, { alias: null, args: null, kind: "ScalarField", name: "reference_transaction_id", storageKey: null }], type: "XPaymentsRefundDetails", abstractKey: null },
+                                { kind: "InlineFragment", selections: [m, u], type: "XPaymentsPaymentDetails", abstractKey: null },
+                                { kind: "InlineFragment", selections: [m, u, { alias: null, args: null, kind: "ScalarField", name: "reference_transaction_id", storageKey: null }], type: "XPaymentsRefundDetails", abstractKey: null },
                             ],
                             storageKey: null,
                         },
-                        u,
+                        d,
                     ],
                     type: "XPaymentsTransaction",
                     abstractKey: null,
@@ -480,9 +612,31 @@
             };
             const i = l;
         },
+        771469: (e, a, n) => {
+            n.d(a, { Z: () => i });
+            var l = {
+                argumentDefinitions: [],
+                kind: "Fragment",
+                metadata: null,
+                name: "UserDetails_user",
+                selections: [
+                    { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null },
+                    { args: null, kind: "FragmentSpread", name: "UserAvatar_user" },
+                    { args: null, kind: "FragmentSpread", name: "UserName_user" },
+                ],
+                type: "User",
+                abstractKey: null,
+                hash: "775686c6f111900c5c380b590fce094b",
+            };
+            const i = l;
+        },
         940211: (e, a, n) => {
             n.d(a, { b: () => l });
             const l = Object.freeze({ Cashback: "Cashback", Unspecified: "Unspecified", UserInterest: "UserInterest", UserMain: "UserMain" });
+        },
+        683799: (e, a, n) => {
+            n.d(a, { t: () => l });
+            const l = Object.freeze({ Checking: "Checking", Savings: "Savings" });
         },
         605446: (e, a, n) => {
             n.d(a, { T: () => l });
@@ -495,6 +649,14 @@
         234107: (e, a, n) => {
             n.d(a, { M: () => l });
             const l = Object.freeze({ BankCardLinkingSessionThemeDark: "BankCardLinkingSessionThemeDark", BankCardLinkingSessionThemeDimmed: "BankCardLinkingSessionThemeDimmed", BankCardLinkingSessionThemeLight: "BankCardLinkingSessionThemeLight", BankCardLinkingSessionThemeUnspecified: "BankCardLinkingSessionThemeUnspecified" });
+        },
+        492646: (e, a, n) => {
+            n.d(a, { U: () => l });
+            const l = Object.freeze({ AmericanExpress: "AmericanExpress", Mastercard: "Mastercard", Visa: "Visa" });
+        },
+        929512: (e, a, n) => {
+            n.d(a, { l: () => l });
+            const l = Object.freeze({ Charge: "Charge", Combo: "Combo", Credit: "Credit", Debit: "Debit", DeferredDebit: "DeferredDebit", Prepaid: "Prepaid" });
         },
         402229: (e, a, n) => {
             n.d(a, { R: () => l });
@@ -524,6 +686,23 @@
             n.d(a, { $: () => l });
             const l = Object.freeze({ IssuedCardShippingStatusCanceled: "IssuedCardShippingStatusCanceled", IssuedCardShippingStatusDelivered: "IssuedCardShippingStatusDelivered", IssuedCardShippingStatusFailure: "IssuedCardShippingStatusFailure", IssuedCardShippingStatusPending: "IssuedCardShippingStatusPending", IssuedCardShippingStatusReturned: "IssuedCardShippingStatusReturned", IssuedCardShippingStatusShipped: "IssuedCardShippingStatusShipped", IssuedCardShippingStatusSubmitted: "IssuedCardShippingStatusSubmitted", IssuedCardShippingStatusUnspecified: "IssuedCardShippingStatusUnspecified" });
         },
+        642004: (e, a, n) => {
+            n.d(a, { W: () => l });
+            const l = Object.freeze({ IssuedCardTypePhysical: "IssuedCardTypePhysical", IssuedCardTypeUnspecified: "IssuedCardTypeUnspecified", IssuedCardTypeVirtual: "IssuedCardTypeVirtual" });
+        },
+        87877: (e, a, n) => {
+            n.d(a, { U: () => l });
+            const l = Object.freeze({ PaymentMethodFilterFunding: "PaymentMethodFilterFunding", PaymentMethodFilterSpending: "PaymentMethodFilterSpending", PaymentMethodFilterUnspecified: "PaymentMethodFilterUnspecified" });
+        },
+        922281: (e, a, n) => {
+            n.d(a, { D: () => l });
+            const l = Object.freeze({ Active: "Active", Canceled: "Canceled", Inactive: "Inactive", Invalid: "Invalid", LoginRequired: "LoginRequired", Pending: "Pending", Revoked: "Revoked", ScaRequired: "ScaRequired", Unspecified: "Unspecified" });
+        },
+        880428: (e, a, n) => {
+            n.d(a, { O: () => l, x: () => i });
+            const l = Object.freeze({ Banking: "Banking", Cashback: "Cashback", Ecommerce: "Ecommerce", Interest: "Interest", Issuing: "Issuing", Transfer: "Transfer" }),
+                i = l;
+        },
         364539: (e, a, n) => {
             n.d(a, { m: () => l });
             const l = Object.freeze({ RequestTransferDecisionAccept: "RequestTransferDecisionAccept", RequestTransferDecisionReject: "RequestTransferDecisionReject", RequestTransferDecisionUnspecified: "RequestTransferDecisionUnspecified" });
@@ -536,6 +715,18 @@
             n.d(a, { W: () => l });
             const l = Object.freeze({ Clock: "Clock", CreditCardBack: "CreditCardBack", FollowArrows: "FollowArrows", PeopleStroke: "PeopleStroke" });
         },
+        810088: (e, a, n) => {
+            n.d(a, { g: () => l });
+            const l = Object.freeze({ AuthorizationClosed: "AuthorizationClosed", AuthorizationOpen: "AuthorizationOpen", AwaitingRequestAcceptance: "AwaitingRequestAcceptance", AwaitingUnrecognizedConfirmation: "AwaitingUnrecognizedConfirmation", Cancelled: "Cancelled", Expired: "Expired", Failed: "Failed", Hold: "Hold", Pending: "Pending", PendingRecipientAcceptance: "PendingRecipientAcceptance", PendingRecipientAction: "PendingRecipientAction", PendingRecipientOnboarding: "PendingRecipientOnboarding", PendingRequestAcceptance: "PendingRequestAcceptance", PendingReview: "PendingReview", PinVerificationRequired: "PinVerificationRequired", RejectedByRecipient: "RejectedByRecipient", RequestRejected: "RequestRejected", RequestVerificationRequired: "RequestVerificationRequired", Settled: "Settled", SoftSettled: "SoftSettled", Unspecified: "Unspecified", VerificationRequired: "VerificationRequired" });
+        },
+        357818: (e, a, n) => {
+            n.d(a, { x: () => l });
+            const l = Object.freeze({ AtmWithdrawal: "AtmWithdrawal", Deposit: "Deposit", DisputeCredit: "DisputeCredit", Payment: "Payment", Refund: "Refund", Reverse: "Reverse", Transfer: "Transfer", Unspecified: "Unspecified", Withdraw: "Withdraw" });
+        },
+        539660: (e, a, n) => {
+            n.d(a, { P: () => l });
+            const l = Object.freeze({ Cancelled: "Cancelled", InReview: "InReview", RejectedByAutoReview: "RejectedByAutoReview", RejectedByManualReview: "RejectedByManualReview", RejectedByUnsupportedRegion: "RejectedByUnsupportedRegion", RejectedCardPaymentsDisabled: "RejectedCardPaymentsDisabled", RejectedLimitsExceeded: "RejectedLimitsExceeded", RejectedNotSufficientFunds: "RejectedNotSufficientFunds", Returned: "Returned", ReversedByAgent: "ReversedByAgent", UnrecognizedActivityConfirmed: "UnrecognizedActivityConfirmed", UnrecognizedActivityRejected: "UnrecognizedActivityRejected", Unspecified: "Unspecified" });
+        },
         413722: (e, a, n) => {
             n.d(a, { O: () => l });
             const l = Object.freeze({ BackupCode: "BackupCode", Passkey: "Passkey", Sms: "Sms", Totp: "Totp", U2fSecurityKey: "U2fSecurityKey" });
@@ -545,7 +736,7 @@
             const l = Object.freeze({ UnrecognizedPaymentDecisionAccept: "UnrecognizedPaymentDecisionAccept", UnrecognizedPaymentDecisionReject: "UnrecognizedPaymentDecisionReject", UnrecognizedPaymentDecisionUnspecified: "UnrecognizedPaymentDecisionUnspecified" });
         },
         56495: (e, a, n) => {
-            n.d(a, { Z: () => u });
+            n.d(a, { Z: () => d });
             var l,
                 i,
                 s,
@@ -606,10 +797,200 @@
                     params: { id: "582dmGn3a2PeBPnHqltcUQ", metadata: {}, name: "finishTwoFactorAuthQuery", operationKind: "query", text: null },
                 };
             r.hash = "68f52c62e3f134dcfee3cc1376e38747";
-            const u = r;
+            const d = r;
+        },
+        297679: (e, a, n) => {
+            n.d(a, { Z: () => b });
+            var l,
+                i,
+                s,
+                t,
+                r,
+                d,
+                u,
+                o,
+                c,
+                m,
+                g,
+                y,
+                k,
+                p,
+                _,
+                F,
+                K,
+                f,
+                S = {
+                    fragment: {
+                        argumentDefinitions: (l = [
+                            { defaultValue: null, kind: "LocalArgument", name: "count" },
+                            { defaultValue: null, kind: "LocalArgument", name: "cursor" },
+                        ]),
+                        kind: "Fragment",
+                        metadata: null,
+                        name: "useActionableItemsQuery",
+                        selections: [
+                            {
+                                alias: "get_payments_customer_actions",
+                                args: [(i = { kind: "Literal", name: "s", value: "8cce" })],
+                                concreteType: "XPaymentsCustomerActionsSlice",
+                                kind: "LinkedField",
+                                name: "__useActionableItemsQuery_TransactionActions_slice_slice",
+                                plural: !1,
+                                selections: [
+                                    { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "items", plural: !0, selections: [(s = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null })], storageKey: null },
+                                    { args: null, kind: "FragmentSpread", name: "ActionNeededList_slice" },
+                                    (t = {
+                                        alias: null,
+                                        args: null,
+                                        concreteType: "SliceInfo",
+                                        kind: "LinkedField",
+                                        name: "slice_info",
+                                        plural: !1,
+                                        selections: [
+                                            { alias: null, args: null, kind: "ScalarField", name: "next_cursor", storageKey: null },
+                                            { alias: null, args: null, kind: "ScalarField", name: "previous_cursor", storageKey: null },
+                                        ],
+                                        storageKey: null,
+                                    }),
+                                    (r = { kind: "ClientExtension", selections: [{ alias: null, args: null, kind: "ScalarField", name: "__id", storageKey: null }] }),
+                                ],
+                                storageKey: '__useActionableItemsQuery_TransactionActions_slice_slice(s:"8cce")',
+                            },
+                        ],
+                        type: "Query",
+                        abstractKey: null,
+                    },
+                    kind: "Request",
+                    operation: {
+                        argumentDefinitions: l,
+                        kind: "Operation",
+                        name: "useActionableItemsQuery",
+                        selections: [
+                            {
+                                alias: null,
+                                args: (d = [{ kind: "Variable", name: "count", variableName: "count" }, { kind: "Variable", name: "cursor", variableName: "cursor" }, i]),
+                                concreteType: "XPaymentsCustomerActionsSlice",
+                                kind: "LinkedField",
+                                name: "get_payments_customer_actions",
+                                plural: !1,
+                                selections: [
+                                    {
+                                        alias: null,
+                                        args: null,
+                                        concreteType: null,
+                                        kind: "LinkedField",
+                                        name: "items",
+                                        plural: !0,
+                                        selections: [
+                                            s,
+                                            { kind: "TypeDiscriminator", abstractKey: "__isXPaymentsCustomerAction" },
+                                            {
+                                                kind: "InlineFragment",
+                                                selections: [
+                                                    (u = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }),
+                                                    (o = { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null }),
+                                                    { alias: null, args: null, kind: "ScalarField", name: "amount_local_micro", storageKey: null },
+                                                    { alias: null, args: null, kind: "ScalarField", name: "currency", storageKey: null },
+                                                    { alias: null, args: null, kind: "ScalarField", name: "product_code", storageKey: null },
+                                                    { alias: null, args: null, kind: "ScalarField", name: "reason_code", storageKey: null },
+                                                    { alias: null, args: null, kind: "ScalarField", name: "transaction_type", storageKey: null },
+                                                    { alias: null, args: null, kind: "ScalarField", name: "created_at", storageKey: null },
+                                                    { alias: null, args: null, kind: "ScalarField", name: "transaction_status", storageKey: null },
+                                                    { alias: null, args: null, kind: "ScalarField", name: "challenge_id", storageKey: null },
+                                                    {
+                                                        alias: null,
+                                                        args: null,
+                                                        concreteType: null,
+                                                        kind: "LinkedField",
+                                                        name: "details",
+                                                        plural: !1,
+                                                        selections: [
+                                                            s,
+                                                            {
+                                                                kind: "InlineFragment",
+                                                                selections: (k = [(y = { alias: null, args: null, concreteType: "XPaymentsPaymentMethod", kind: "LinkedField", name: "payment_method", plural: !1, selections: [(c = { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }), { alias: null, args: null, concreteType: "XPaymentsPaymentMethodCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "details", plural: !1, selections: [s, { kind: "InlineFragment", selections: [{ alias: null, args: null, kind: "ScalarField", name: "account_number_mask", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "bank_account_type", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "bank_name", storageKey: null }, (m = { alias: null, args: null, kind: "ScalarField", name: "status", storageKey: null }), (g = { alias: null, args: null, kind: "ScalarField", name: "logo", storageKey: null })], type: "XPaymentsBankAccountPaymentMethod", abstractKey: null }, { kind: "InlineFragment", selections: [m, { alias: null, args: null, kind: "ScalarField", name: "bin", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "card_brand", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "card_number_mask", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "issued_card_type", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "card_type", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "expiration_month", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "expiration_year", storageKey: null }], type: "XPaymentsCreditCardPaymentMethod", abstractKey: null }], storageKey: null }], storageKey: null }, u, r], storageKey: null })]),
+                                                                type: "XPaymentsDepositDetails",
+                                                                abstractKey: null,
+                                                            },
+                                                            { kind: "InlineFragment", selections: k, type: "XPaymentsWithdrawalDetails", abstractKey: null },
+                                                            {
+                                                                kind: "InlineFragment",
+                                                                selections: [
+                                                                    {
+                                                                        alias: null,
+                                                                        args: null,
+                                                                        concreteType: "UserResults",
+                                                                        kind: "LinkedField",
+                                                                        name: "receiver_results",
+                                                                        plural: !1,
+                                                                        selections: (F = [
+                                                                            {
+                                                                                alias: null,
+                                                                                args: null,
+                                                                                concreteType: null,
+                                                                                kind: "LinkedField",
+                                                                                name: "result",
+                                                                                plural: !1,
+                                                                                selections: [
+                                                                                    s,
+                                                                                    {
+                                                                                        kind: "InlineFragment",
+                                                                                        selections: [
+                                                                                            { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "verified_type", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }, (p = { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null })], storageKey: null },
+                                                                                            { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" },
+                                                                                            { alias: null, args: null, kind: "ScalarField", name: "profile_image_shape", storageKey: null },
+                                                                                            { alias: null, args: null, kind: "ScalarField", name: "is_blue_verified", storageKey: null },
+                                                                                            { alias: "affiliates_highlighted_label", args: null, concreteType: "HighlightedUserLabelResponse", kind: "LinkedField", name: "identity_profile_labels_highlighted_label", plural: !1, selections: [{ alias: null, args: null, concreteType: "HighlightedUserLabel", kind: "LinkedField", name: "label", plural: !1, selections: [{ alias: null, args: null, concreteType: "TimelineUrl", kind: "LinkedField", name: "url", plural: !1, selections: [(_ = { alias: null, args: null, kind: "ScalarField", name: "url", storageKey: null }), { alias: "urlType", args: null, kind: "ScalarField", name: "url_type", storageKey: null }], storageKey: null }, { alias: null, args: null, concreteType: "BadgeInfo", kind: "LinkedField", name: "badge", plural: !1, selections: [_], storageKey: null }, o, { alias: "userLabelType", args: null, kind: "ScalarField", name: "user_label_type", storageKey: null }, { alias: "userLabelDisplayType", args: null, kind: "ScalarField", name: "user_label_display_type", storageKey: null }], storageKey: null }], storageKey: null },
+                                                                                            c,
+                                                                                            u,
+                                                                                        ],
+                                                                                        type: "User",
+                                                                                        abstractKey: null,
+                                                                                    },
+                                                                                ],
+                                                                                storageKey: null,
+                                                                            },
+                                                                            u,
+                                                                        ]),
+                                                                        storageKey: null,
+                                                                    },
+                                                                    { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "sender_results", plural: !1, selections: F, storageKey: null },
+                                                                ],
+                                                                type: "XPaymentsTransferDetails",
+                                                                abstractKey: null,
+                                                            },
+                                                            { kind: "InlineFragment", selections: (f = [(K = { alias: null, args: null, concreteType: "XPaymentsMerchantDetails", kind: "LinkedField", name: "merchant_details", plural: !1, selections: [u, g, p, { alias: null, args: null, kind: "ScalarField", name: "website", storageKey: null }], storageKey: null })]), type: "XPaymentsBankingDepositDetails", abstractKey: null },
+                                                            { kind: "InlineFragment", selections: f, type: "XPaymentsBankingWithdrawalDetails", abstractKey: null },
+                                                            { kind: "InlineFragment", selections: [K, y], type: "XPaymentsPaymentDetails", abstractKey: null },
+                                                            { kind: "InlineFragment", selections: [K, y, { alias: null, args: null, kind: "ScalarField", name: "reference_transaction_id", storageKey: null }], type: "XPaymentsRefundDetails", abstractKey: null },
+                                                        ],
+                                                        storageKey: null,
+                                                    },
+                                                    r,
+                                                ],
+                                                type: "XPaymentsTransaction",
+                                                abstractKey: null,
+                                            },
+                                            { kind: "InlineFragment", selections: [{ alias: null, args: null, kind: "ScalarField", name: "title", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "call_to_action", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "call_to_action_url", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "level", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "subtitle", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "topics", storageKey: null }, r], type: "XPaymentsCustomerNotice", abstractKey: null },
+                                            r,
+                                        ],
+                                        storageKey: null,
+                                    },
+                                    t,
+                                    r,
+                                ],
+                                storageKey: null,
+                            },
+                            { alias: null, args: d, filters: ["s"], handle: "slice", key: "useActionableItemsQuery_TransactionActions_slice", kind: "LinkedHandle", name: "get_payments_customer_actions" },
+                        ],
+                    },
+                    params: { id: "NmeR2VRcmJrsDmUySN5N8g", metadata: { sliceInfoPath: ["get_payments_customer_actions", "slice_info"] }, name: "useActionableItemsQuery", operationKind: "query", text: null },
+                };
+            S.hash = "a6a8f048d1caef1c671f17a2b72cb546";
+            const b = S;
         },
         914507: (e, a, n) => {
-            n.d(a, { Z: () => u });
+            n.d(a, { Z: () => d });
             var l,
                 i,
                 s,
@@ -644,10 +1025,10 @@
                     params: { id: "eTrF_9AC0wyM2_rVC9paUw", metadata: {}, name: "useActivateCardMutation", operationKind: "mutation", text: null },
                 };
             r.hash = "61aedc6dea3685eddafdb372e833dea1";
-            const u = r;
+            const d = r;
         },
         663090: (e, a, n) => {
-            n.d(a, { Z: () => u });
+            n.d(a, { Z: () => d });
             var l,
                 i,
                 s,
@@ -694,10 +1075,10 @@
                     params: { id: "vZ7bhKa5x2QPhAUncp1gGg", metadata: {}, name: "useCancelTransferMutation", operationKind: "mutation", text: null },
                 };
             r.hash = "c7c7148f62c195069adc6e1092f60b87";
-            const u = r;
+            const d = r;
         },
         597785: (e, a, n) => {
-            n.d(a, { Z: () => u });
+            n.d(a, { Z: () => d });
             var l,
                 i,
                 s,
@@ -744,10 +1125,10 @@
                     params: { id: "Kr0QiEAsvjnMMTY76TaGHQ", metadata: {}, name: "useCancelTransferRequestMutation", operationKind: "mutation", text: null },
                 };
             r.hash = "f81b4555911f541311bd4554759996db";
-            const u = r;
+            const d = r;
         },
         990563: (e, a, n) => {
-            n.d(a, { Z: () => u });
+            n.d(a, { Z: () => d });
             var l,
                 i,
                 s,
@@ -798,10 +1179,10 @@
                     params: { id: "ZpeSramVN80ij7CD8OXxPQ", metadata: {}, name: "useClaimTransferMutation", operationKind: "mutation", text: null },
                 };
             r.hash = "b8861c5c21ebda83dcb5e6c3d95c51e0";
-            const u = r;
+            const d = r;
         },
         708154: (e, a, n) => {
-            n.d(a, { Z: () => u });
+            n.d(a, { Z: () => d });
             var l,
                 i,
                 s,
@@ -863,7 +1244,7 @@
                     params: { id: "FZcMe0C82dOKa2a4pHoGuQ", metadata: {}, name: "useConfirmUnrecognisedPaymentMutation", operationKind: "mutation", text: null },
                 };
             r.hash = "3be193089e4332b2eadaa2e062bb229f";
-            const u = r;
+            const d = r;
         },
         195816: (e, a, n) => {
             n.d(a, { Z: () => t });
@@ -902,4 +1283,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-960914ab.26a79c8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-960914ab.d4d9135a.js.map

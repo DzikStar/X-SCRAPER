@@ -605,6 +605,7 @@
                 n("e0cb0c72", "Publicités"),
                 n("e2eef3c2", "Organisations certifiées"),
                 n("b55d8a78", "Créer votre Espace"),
+                n("e5323e36", "Go Live"),
                 n("a5a30af0", "Articles"),
                 n("d13d697c", "Nouveau"),
                 n("j0e2cfa8", "Entreprise"),
@@ -904,9 +905,9 @@
                 n("i821844f", "En savoir plus"),
                 n("b0abbb17", "En savoir plus"),
                 n("e7e0d88b", "En savoir plus"),
-                n("i560665f", "En savoir plus"),
-                n("f6e774d9", "En savoir plus");
-            n("h486f755", "En savoir plus"),
+                n("i560665f", "En savoir plus");
+            n("f6e774d9", "En savoir plus"),
+                n("h486f755", "En savoir plus"),
                 n("bab41dab", "En savoir plus"),
                 n("e0ebdb29", "En savoir plus"),
                 n("f8493831", "En savoir plus"),
@@ -1912,9 +1913,9 @@
                 n("a330771e", "Copier le lien dans mon Presse‑papiers"),
                 n("b6510e68", "Copiez l'URL de votre Article pour pouvoir le partager."),
                 n("e4a6e006", "Une erreur est survenue. Veuillez réessayer."),
-                n("eff483e0", "Une fois que vous avez publié un Article, obtenez un lien pour le partager."),
-                n("ca15dd4e", "Brouillon");
-            n("bb40bf66", "Publiés"),
+                n("eff483e0", "Une fois que vous avez publié un Article, obtenez un lien pour le partager.");
+            n("ca15dd4e", "Brouillon"),
+                n("bb40bf66", "Publiés"),
                 n("h107935c", "Dernier enregistrement : à l'instant"),
                 n("a753a870", "Appliquer"),
                 n("afccc67e", "Copier le lien de l'Article"),
@@ -2964,9 +2965,9 @@
                 n("c6f58084", "Développeurs"),
                 n("d83f18d2", "Répertoire"),
                 n("hc5aa17c", "Télécharger l'application X"),
-                n("j0693948", "Télécharger l'application Grok"),
-                n("fbf83158", "Avertissement : échec du paiement");
-            n("jadeb4da", "Veuillez rapidement mettre votre moyen de paiement à jour avant de perdre les avantages liés à votre abonnement."),
+                n("j0693948", "Télécharger l'application Grok");
+            n("fbf83158", "Avertissement : échec du paiement"),
+                n("jadeb4da", "Veuillez rapidement mettre votre moyen de paiement à jour avant de perdre les avantages liés à votre abonnement."),
                 n("bce3726a", "Mettre les paramètres de facturation à jour"),
                 n("fce9ecce", "Vidéos suggérées"),
                 n("efe6ef9e", "Voir le post"),
@@ -3880,9 +3881,9 @@
                 n("d7357e7e", "Supprimer des cohôtes"),
                 n("bf307fc0", "Bloquer et supprimer"),
                 n("ccf2f24e", "Signaler"),
-                n("i22835de", "Approuver"),
-                n("cb59a0fe", "Refuser");
-            n("c2376960", "Demandes pour intervenir"),
+                n("i22835de", "Approuver");
+            n("cb59a0fe", "Refuser"),
+                n("c2376960", "Demandes pour intervenir"),
                 n("aba7dcdd", function (e) {
                     return "Inviter " + e.name;
                 }),
@@ -4271,7 +4272,7 @@
                 n("fa0f1262", "Arrêt"),
                 n("c2cac618", "Grok prend actuellement en charge les données de La Liga, de la Premier League, de la Bundesliga, de la Serie A et de la Ligue 1."),
                 n("acae223d", function (e) {
-                    return 'Results for "' + e.prompt + '"';
+                    return 'Résultats pour "' + e.prompt + '"';
                 }),
                 n("bed99fe2", "Voir moins"),
                 n("f7b57ac0", "Statistiques"),
@@ -4800,12 +4801,12 @@
                 n("e7479ce4", "Temps de visionnage moyen"),
                 n("g1dfa7d0", "Moyenne"),
                 n("h7d28188", "Retour au contenu"),
-                n("if2704e4", "Back to Live Overview"),
+                n("if2704e4", "Retour à la vue d'ensemble du direct"),
                 n("ea928ae4", "Retour aux Espaces"),
-                n("e8c07c22", "broadcast"),
-                n("a4ce6e68", "Broadcast Metrics"),
-                n("b2214c74", "Total number of views for this broadcast"),
-                n("d4fcf83a", "Total time viewers spent watching this broadcast"),
+                n("e8c07c22", "diffusion"),
+                n("a4ce6e68", "Statistiques de la diffusion"),
+                n("b2214c74", "Nombre total de vues pour cette diffusion"),
+                n("d4fcf83a", "Temps total passé par les spectateurs à visionner cette diffusion"),
                 n("a89b0322", "Annulé"),
                 n("j3cb12ea", "Auditeurs simultanés"),
                 n("b93931ee", "Le nombre de fois que votre contenu a été posté."),
@@ -4841,19 +4842,19 @@
                 n("efa0f858", "Le nombre d'abonnements et de désabonnements au fil du temps. Cela ne reflète pas nécessairement votre nombre d'abonnés."),
                 n("g2b06cc6", "Les données relatives au sexe peuvent être déduites."),
                 n("b66b3baa", "heures"),
-                n("cf8a0772", "Impression to Views"),
-                n("g13d8010", "Last 48 Hours"),
-                n("d5627596", "Last Hour"),
+                n("cf8a0772", "Impressions/vues"),
+                n("g13d8010", "Les dernières 48 heures"),
+                n("d5627596", "Dernière heure"),
                 n("baf120a6", "Engagement min."),
                 n("f2382014", "DIRECT"),
-                n("c4a7a6aa", "Live data"),
-                n("a992032a", "Livestream Analytics"),
+                n("c4a7a6aa", "Données du direct"),
+                n("a992032a", "Statistiques du flux en direct"),
                 n("ie45edda", "Vue d'ensemble du flux en direct"),
-                n("e30fc268", "Live Viewers"),
+                n("e30fc268", "Spectateurs en direct"),
                 n("bd37f68e", "Activité des médias"),
                 n("fe074210", "min"),
-                n("jd03a1b8", "Minutes Watched"),
-                n("a20e91e8", "minutes watched"),
+                n("jd03a1b8", "Minutes visionnées"),
+                n("a20e91e8", "minutes visionnées"),
                 n("ic2bebee", "Monétisé"),
                 n("a1d642c8", "Engagement max."),
                 n("ifc4c1f8", "Le nombre de nouveaux abonnés obtenus grâce à ce contenu."),
@@ -4861,14 +4862,14 @@
                 n("jbcb09a8", "Pas encore suffisamment de données"),
                 n("df846d6c", "Aucun post trouvé pour l'intervalle sélectionné."),
                 n("g2ba40f6", "Aucun Espace ne correspond au filtre sélectionné."),
-                n("j44061a0", "Not available"),
+                n("j44061a0", "Indisponible"),
                 n("c4a93912", "N/A"),
-                n("a6b78788", "No viewer data available"),
+                n("a6b78788", "Pas de données disponibles sur les spectateurs"),
                 n("b2438638", "du total"),
                 n("ic0399e0", "Vues organiques"),
                 n("ja5c444a", "Période de paiement"),
                 n("f04e025e", "Maximum d'auditeurs simultanés"),
-                n("d6d10662", "Peak Viewers: "),
+                n("d6d10662", "Maximum de spectateurs : "),
                 n("d147bea2", "Veuillez revérifier plus tard."),
                 n("f0336d68", "Statistiques de post"),
                 n("g85fbd2e", "Identifiant du post"),
@@ -4876,11 +4877,11 @@
                 n("hf4f9bfe", "Lien du post"),
                 n("bf5ebf5c", "Posts et réponses"),
                 n("b211652e", "Posts au fil du temps"),
-                n("f2efec0a", "Pre-Published"),
+                n("f2efec0a", "Prépublié"),
                 n("i61e0302", "Précédent"),
                 n("e08a706a", "Vues sponsorisées"),
                 n("cbc99192", "Date de publication"),
-                n("a83c2a9a", "Realtime"),
+                n("a83c2a9a", "Temps réel"),
                 n("e9d72896", "Enregistré"),
                 n("gede4932", "Relire"),
                 n("h0de359c", "Le nombre de fois que ce contenu a été reposté."),
@@ -4891,20 +4892,20 @@
                 n("fbc79a40", "Vue d'ensemble des Espaces"),
                 n("d077112a", "Statistiques de l'Espace "),
                 n("cf3709da", "Statut"),
-                n("e797dc32", "Stream time: "),
+                n("e797dc32", "Heure du flux : "),
                 n("b649d8cc", "Abonné uniquement"),
-                n("j9282130", "Broadcast thumbnail"),
-                n("g629b8b0", "Timed Out"),
-                n("eb87323c", "This shows analytics data for the selected time period since the livestream happened."),
-                n("i6a75722", "Time Range"),
+                n("j9282130", "Miniature de la diffusion"),
+                n("g629b8b0", "Expiré"),
+                n("eb87323c", "Cela montre des statistiques pour la période sélectionnée depuis le flux en direct."),
+                n("i6a75722", "Période"),
                 n("c602f5b8", "Total"),
                 n("b35e68ae", "Nombre de participants"),
                 n("h78ee79a", "Nombre de rediffusions"),
                 n("e3efaed0", "Type"),
                 n("c37993e2", "Désabonnements"),
-                n("b1ed35d0", "Unique Viewers"),
+                n("b1ed35d0", "Spectateurs uniques"),
                 n("bfad9306", "Inconnu"),
-                n("b5a58f36", "Untitled Broadcast"),
+                n("b5a58f36", "Diffusion sans titre"),
                 n("i70f5278", "Téléchargement le"),
                 n("a98b58b6", "Abonnés vérifiés"),
                 n("a5de67ca", "Le nombre d'abonnés dont le compte est certifié."),
@@ -4912,9 +4913,9 @@
                 n("a7b48b36", "Le pourcentage de vues de vidéos entières."),
                 n("a2580f2a", "Taux de complétion"),
                 n("ff95a9cc", "Identifiant de la vidéo"),
-                n("a97e358e", "Lien de la vidéo"),
-                n("e10e8b46", "Affichage des vidéos des 100 derniers jours uniquement.");
-            n("ba37f6da", "Vue d'ensemble des vidéos"),
+                n("a97e358e", "Lien de la vidéo");
+            n("e10e8b46", "Affichage des vidéos des 100 derniers jours uniquement."),
+                n("ba37f6da", "Vue d'ensemble des vidéos"),
                 n("f19846b2", "Miniature de la vidéo"),
                 n("ccd6f4a8", "Titre de la vidéo"),
                 n("c8410542", "Le nombre de fois que votre vidéo a été vue."),
@@ -5868,11 +5869,11 @@
                 n("a0ea2fa6", "Le champ Nom ne peut pas être vide."),
                 n("eec37eac", "Un dossier de signets portant ce nom existe déjà."),
                 n("fce0c59e", "Échec de l'analyse du fichier d'animation JSON. Veuillez vérifier le format de votre fichier et réessayer."),
-                n("g0eea6c2", "Échec de la lecture du fichier d'animation JSON. Veuillez réessayer d'ouvrir le fichier."),
-                n("ae58026a", "Ouvrez un fichier .json de Branded Like pour le prévisualiser.");
-            n("hd0bc1eb", function (e) {
-                return e.name + " est en direct.";
-            }),
+                n("g0eea6c2", "Échec de la lecture du fichier d'animation JSON. Veuillez réessayer d'ouvrir le fichier.");
+            n("ae58026a", "Ouvrez un fichier .json de Branded Like pour le prévisualiser."),
+                n("hd0bc1eb", function (e) {
+                    return e.name + " est en direct.";
+                }),
                 n("bea1f26b", function (e) {
                     return e.name + " était en direct.";
                 }),
@@ -6876,9 +6877,9 @@
                 n("fdd77a34", "Rédigez des posts plus longs"),
                 n("j6d26a7a", "Écrivez autant que ce que vous voulez partagez"),
                 n("c4fd68da", "Personnalisez votre expérience"),
-                n("c0195168", "Modifiez l'icône de votre application et les options de navigation"),
-                n("b6b5dc94", "Obtenez la certification");
-            n("b06db848", "Démarquez‑vous des autres sur la plateforme"),
+                n("c0195168", "Modifiez l'icône de votre application et les options de navigation");
+            n("b6b5dc94", "Obtenez la certification"),
+                n("b06db848", "Démarquez‑vous des autres sur la plateforme"),
                 n("e3e3a97c", "Bénéficiez d'une part des revenus générés par vos posts"),
                 n("f15bc24e", "Limites Grok repoussées"),
                 n("c4666e1c", "Plus d'utilisation de Grok 3, notre modèle le plus récent"),
@@ -7852,8 +7853,7 @@
                 n("b33d1518", "Synchroniser les offres d'emploi depuis une intégration prise en charge ou un flux XML personnalisé"),
                 n("dd2db402", "Étape 1 : rassembler les informations requises"),
                 n("edb098c2", "Étape 2 : contactez notre équipe d'assistance"),
-                n("c4474460", "Étape 2 : envoyer un email à notre équipe d'assistance"),
-                n("a08da0fa", "Que se passe‑t‑il ensuite ?");
+                n("c4474460", "Étape 2 : envoyer un email à notre équipe d'assistance");
             function a(e, t) {
                 for (var s = 0; s < t.length; s++) {
                     var n = t[s];
@@ -7892,7 +7892,8 @@
                     i(e, t)
                 );
             }
-            n("c127374e", "Nous envoyer un message"),
+            n("a08da0fa", "Que se passe‑t‑il ensuite ?"),
+                n("c127374e", "Nous envoyer un message"),
                 n("b2cb2a0c", "Nom d'utilisateur de votre compte Organisations certifiées"),
                 n("b8e64002", "Nom de votre système de suivi des candidatures"),
                 n("acb99db6", "URL du site de carrières où vos emplois sont répertoriés"),
@@ -8894,9 +8895,9 @@
                 n("c057680c", "Nous ne pouvons pas lire la vidéo dans ce navigateur. Veuillez essayer un autre navigateur Web."),
                 n("i5dfae6e", "Cette vidéo n'est pas disponible dans votre région."),
                 n("c2388276", "Cette vidéo a été supprimée."),
-                n("d2c96140", "Indicateur audio invité"),
-                n("f6dc9146", "REDIFFUSION");
-            n("d30c74fe", "Volume"),
+                n("d2c96140", "Indicateur audio invité");
+            n("f6dc9146", "REDIFFUSION"),
+                n("d30c74fe", "Volume"),
                 n("f2d4e6f2", "Revoir"),
                 n("e9f1af3a", "En savoir plus"),
                 n("f1881d86", "Il est impossible de répondre à ce post, de le partager ou de l'aimer."),
@@ -13239,4 +13240,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.2abafeca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.1ad21ada.js.map

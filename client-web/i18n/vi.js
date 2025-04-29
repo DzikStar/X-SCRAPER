@@ -600,6 +600,7 @@
                 t("e0cb0c72", "Quảng cáo"),
                 t("e2eef3c2", "Tổ chức đã xác nhận"),
                 t("b55d8a78", "Tạo Phòng của bạn"),
+                t("e5323e36", "Go Live"),
                 t("a5a30af0", "Bài viết"),
                 t("d13d697c", "Mới"),
                 t("j0e2cfa8", "Doanh nghiệp"),
@@ -899,9 +900,9 @@
                 t("i821844f", "Learn more"),
                 t("b0abbb17", "Learn more"),
                 t("e7e0d88b", "Learn more"),
-                t("i560665f", "Learn more"),
-                t("f6e774d9", "Learn more");
-            t("h486f755", "Learn more"),
+                t("i560665f", "Learn more");
+            t("f6e774d9", "Learn more"),
+                t("h486f755", "Learn more"),
                 t("bab41dab", "Learn more"),
                 t("e0ebdb29", "Tìm hiểu thêm"),
                 t("f8493831", "Tìm hiểu thêm"),
@@ -1907,9 +1908,9 @@
                 t("a330771e", "Sao chép liên kết vào bảng nhớ tạm"),
                 t("b6510e68", "Sao chép URL Bài viết để bạn có thể chia sẻ Bài viết này."),
                 t("e4a6e006", "Đã xảy ra lỗi. Hãy thử lại."),
-                t("eff483e0", "Sau khi xuất bản, hãy sao chép liên kết để chia sẻ Bài viết."),
-                t("ca15dd4e", "Bản thảo");
-            t("bb40bf66", "Đã đăng"),
+                t("eff483e0", "Sau khi xuất bản, hãy sao chép liên kết để chia sẻ Bài viết.");
+            t("ca15dd4e", "Bản thảo"),
+                t("bb40bf66", "Đã đăng"),
                 t("h107935c", "Lần lưu gần nhất: vừa xong"),
                 t("a753a870", "Áp dụng"),
                 t("afccc67e", "Sao chép liên kết đến Bài viết"),
@@ -2959,9 +2960,9 @@
                 t("c6f58084", "Nhà phát triển"),
                 t("d83f18d2", "Danh mục"),
                 t("hc5aa17c", "Tải ứng dụng X"),
-                t("j0693948", "Tải ứng dụng Grok"),
-                t("fbf83158", "Cảnh báo: Thanh toán không thành công");
-            t("jadeb4da", "Vui lòng cập nhật gấp phương thức thanh toán trước khi mất lợi ích của gói thuê bao."),
+                t("j0693948", "Tải ứng dụng Grok");
+            t("fbf83158", "Cảnh báo: Thanh toán không thành công"),
+                t("jadeb4da", "Vui lòng cập nhật gấp phương thức thanh toán trước khi mất lợi ích của gói thuê bao."),
                 t("bce3726a", "Cập nhật thông tin thanh toán"),
                 t("fce9ecce", "Các video được đề xuất"),
                 t("efe6ef9e", "Xem bài đăng"),
@@ -3875,9 +3876,9 @@
                 t("d7357e7e", "Xóa khỏi danh sách Đồng chủ phòng"),
                 t("bf307fc0", "Chặn và xóa"),
                 t("ccf2f24e", "Báo cáo"),
-                t("i22835de", "Chấp thuận"),
-                t("cb59a0fe", "Từ chối");
-            t("c2376960", "Yêu cầu phát biểu"),
+                t("i22835de", "Chấp thuận");
+            t("cb59a0fe", "Từ chối"),
+                t("c2376960", "Yêu cầu phát biểu"),
                 t("aba7dcdd", function (n) {
                     return "Mời " + n.name;
                 }),
@@ -4797,7 +4798,7 @@
                 t("h7d28188", "Quay lại nội dung"),
                 t("if2704e4", "Back to Live Overview"),
                 t("ea928ae4", "Quay lại các phòng"),
-                t("e8c07c22", "broadcast"),
+                t("e8c07c22", "nguồn phát"),
                 t("a4ce6e68", "Broadcast Metrics"),
                 t("b2214c74", "Total number of views for this broadcast"),
                 t("d4fcf83a", "Total time viewers spent watching this broadcast"),
@@ -4844,7 +4845,7 @@
                 t("c4a7a6aa", "Live data"),
                 t("a992032a", "Livestream Analytics"),
                 t("ie45edda", "Tổng quan về buổi phát trực tuyến"),
-                t("e30fc268", "Live Viewers"),
+                t("e30fc268", "Người xem trực tuyến"),
                 t("bd37f68e", "Hoạt động truyền thông"),
                 t("fe074210", "phút"),
                 t("jd03a1b8", "Minutes Watched"),
@@ -4856,8 +4857,8 @@
                 t("jbcb09a8", "Chưa đủ dữ liệu"),
                 t("df846d6c", "Không tìm thấy bài đăng nào trong khoảng thời gian đã chọn."),
                 t("g2ba40f6", "Không có phòng nào khớp với bộ lọc đã chọn"),
-                t("j44061a0", "Not available"),
-                t("c4a93912", "N/A"),
+                t("j44061a0", "Không có hiệu lực"),
+                t("c4a93912", "Không áp dụng"),
                 t("a6b78788", "No viewer data available"),
                 t("b2438638", "trên tổng số"),
                 t("ic0399e0", "Lượt xem tự nhiên"),
@@ -4888,7 +4889,7 @@
                 t("cf3709da", "Trạng thái"),
                 t("e797dc32", "Stream time: "),
                 t("b649d8cc", "Chỉ người đăng ký"),
-                t("j9282130", "Broadcast thumbnail"),
+                t("j9282130", "Hình thu nhỏ của nguồn phát"),
                 t("g629b8b0", "Timed Out"),
                 t("eb87323c", "This shows analytics data for the selected time period since the livestream happened."),
                 t("i6a75722", "Time Range"),
@@ -4907,9 +4908,9 @@
                 t("a7b48b36", "Phần trăm lượt xem video đã hoàn tất."),
                 t("a2580f2a", "Tỷ lệ hoàn thành"),
                 t("ff95a9cc", "ID video"),
-                t("a97e358e", "Liên kết đến video"),
-                t("e10e8b46", "Chỉ hiển thị video trong 100 ngày qua.");
-            t("ba37f6da", "Thông tin tổng quan về video"),
+                t("a97e358e", "Liên kết đến video");
+            t("e10e8b46", "Chỉ hiển thị video trong 100 ngày qua."),
+                t("ba37f6da", "Thông tin tổng quan về video"),
                 t("f19846b2", "Hình thu nhỏ video"),
                 t("ccd6f4a8", "Tiêu đề video"),
                 t("c8410542", "Số lượt xem video của bạn."),
@@ -5863,11 +5864,11 @@
                 t("a0ea2fa6", "Trường tên không được để trống"),
                 t("eec37eac", "Đã tồn tại Thư mục dấu trang với tên đó"),
                 t("fce0c59e", "Không thể phân tích cú pháp hoạt ảnh JSON. Vui lòng kiểm tra định dạng của JSON trong tệp hoạt ảnh của bạn và thử lại."),
-                t("g0eea6c2", "Không đọc được tệp hoạt ảnh JSON. Vui lòng thử mở lại tệp."),
-                t("ae58026a", "Để xem trước, hãy mở tệp Branded Like .json");
-            t("hd0bc1eb", function (n) {
-                return n.name + " đang trực tuyến";
-            }),
+                t("g0eea6c2", "Không đọc được tệp hoạt ảnh JSON. Vui lòng thử mở lại tệp.");
+            t("ae58026a", "Để xem trước, hãy mở tệp Branded Like .json"),
+                t("hd0bc1eb", function (n) {
+                    return n.name + " đang trực tuyến";
+                }),
                 t("bea1f26b", function (n) {
                     return n.name + " đã trực tuyến";
                 }),
@@ -6871,9 +6872,9 @@
                 t("fdd77a34", "Tạo bài đăng dài hơn"),
                 t("j6d26a7a", "Tha hồ viết bài chia sẻ"),
                 t("c4fd68da", "Tùy chỉnh trải nghiệm của bạn"),
-                t("c0195168", "Thay đổi biểu tượng ứng dụng và tùy chọn điều hướng"),
-                t("b6b5dc94", "Xác nhận tài khoản");
-            t("b06db848", "Nổi bật trong số những người dùng khác trên nền tảng"),
+                t("c0195168", "Thay đổi biểu tượng ứng dụng và tùy chọn điều hướng");
+            t("b6b5dc94", "Xác nhận tài khoản"),
+                t("b06db848", "Nổi bật trong số những người dùng khác trên nền tảng"),
                 t("e3e3a97c", "Kiếm một phần doanh thu từ bài đăng của bạn"),
                 t("f15bc24e", "Đã tăng giới hạn dùng Grok"),
                 t("c4666e1c", "Tăng mức sử dụng mô hình Grok 3 mới nhất"),
@@ -7847,8 +7848,7 @@
                 t("b33d1518", "Đồng bộ hóa việc làm từ các phần tích hợp được hỗ trợ hoặc nguồn cấp dữ liệu XML tùy chỉnh"),
                 t("dd2db402", "Bước 1: Thu thập thông tin cần thiết"),
                 t("edb098c2", "Bước 2: Liên hệ nhóm hỗ trợ của chúng tôi"),
-                t("c4474460", "Bước 2: Gửi email cho nhóm hỗ trợ của chúng tôi"),
-                t("a08da0fa", "Điều gì xảy ra tiếp theo?");
+                t("c4474460", "Bước 2: Gửi email cho nhóm hỗ trợ của chúng tôi");
             function g(n, h) {
                 for (var c = 0; c < h.length; c++) {
                     var t = h[c];
@@ -7887,7 +7887,8 @@
                     a(n, h)
                 );
             }
-            t("c127374e", "Gửi tin nhắn cho chúng tôi"),
+            t("a08da0fa", "Điều gì xảy ra tiếp theo?"),
+                t("c127374e", "Gửi tin nhắn cho chúng tôi"),
                 t("b2cb2a0c", "Tên người dùng của tài khoản Tổ chức đã xác nhận của bạn"),
                 t("b8e64002", "Tên hệ thống theo dõi ứng viên của bạn"),
                 t("acb99db6", "URL trang sự nghiệp nơi đăng tải các việc làm của bạn"),
@@ -8889,9 +8890,9 @@
                 t("c057680c", "Chúng tôi không thể phát video trong trình duyệt này. Vui lòng thử một trình duyệt web khác."),
                 t("i5dfae6e", "Video này không khả dụng tại vị trí của bạn."),
                 t("c2388276", "Video này đã bị xóa."),
-                t("d2c96140", "Chỉ báo âm thanh của khách"),
-                t("f6dc9146", "PHÁT LẠI");
-            t("d30c74fe", "Âm lượng"),
+                t("d2c96140", "Chỉ báo âm thanh của khách");
+            t("f6dc9146", "PHÁT LẠI"),
+                t("d30c74fe", "Âm lượng"),
                 t("f2d4e6f2", "Xem lại"),
                 t("e9f1af3a", "Tìm hiểu thêm"),
                 t("f1881d86", "Bạn không thể trả lời, chia sẻ hay thích bài đăng này."),
@@ -13234,4 +13235,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.36d9c64a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.6debcdea.js.map

@@ -616,6 +616,7 @@
                 n("e0cb0c72", "Ads"),
                 n("e2eef3c2", "Verified Orgs"),
                 n("b55d8a78", "Create your Space"),
+                n("e5323e36", "Go Live"),
                 n("a5a30af0", "Articles"),
                 n("d13d697c", "Nua"),
                 n("j0e2cfa8", "Gnó"),
@@ -915,9 +916,9 @@
                 n("i821844f", "Tuilleadh eolais"),
                 n("b0abbb17", "Tuilleadh eolais"),
                 n("e7e0d88b", "Tuilleadh eolais"),
-                n("i560665f", "Tuilleadh eolais"),
-                n("f6e774d9", "Tuilleadh eolais");
-            n("h486f755", "Tuilleadh eolais"),
+                n("i560665f", "Tuilleadh eolais");
+            n("f6e774d9", "Tuilleadh eolais"),
+                n("h486f755", "Tuilleadh eolais"),
                 n("bab41dab", "Tuilleadh eolais"),
                 n("e0ebdb29", "Tuilleadh eolais"),
                 n("f8493831", "Tuilleadh eolais"),
@@ -1923,9 +1924,9 @@
                 n("a330771e", "Copy link to your clipboard"),
                 n("b6510e68", "Copy your Article’s URL so you can share it."),
                 n("e4a6e006", "Tharla earráid. Bain triail eile as."),
-                n("eff483e0", "After you publish, get a link to share the Article."),
-                n("ca15dd4e", "Dréacht");
-            n("bb40bf66", "Foilsithe"),
+                n("eff483e0", "After you publish, get a link to share the Article.");
+            n("ca15dd4e", "Dréacht"),
+                n("bb40bf66", "Foilsithe"),
                 n("h107935c", "Last saved just now"),
                 n("a753a870", "Cuir i bhfeidhm"),
                 n("afccc67e", "Copy link to Article"),
@@ -2975,9 +2976,9 @@
                 n("c6f58084", "Developers"),
                 n("d83f18d2", "Directory"),
                 n("hc5aa17c", "Get the X app"),
-                n("j0693948", "Get the Grok app"),
-                n("fbf83158", "Warning: Payment failed");
-            n("jadeb4da", "Please urgently update your payment method before you lose your subscription benefits."),
+                n("j0693948", "Get the Grok app");
+            n("fbf83158", "Warning: Payment failed"),
+                n("jadeb4da", "Please urgently update your payment method before you lose your subscription benefits."),
                 n("bce3726a", "Update Billing"),
                 n("fce9ecce", "Suggested Videos"),
                 n("efe6ef9e", "View post"),
@@ -3891,9 +3892,9 @@
                 n("d7357e7e", "Remove from Co-hosts"),
                 n("bf307fc0", "Block and Remove"),
                 n("ccf2f24e", "Tuairiscigh"),
-                n("i22835de", "Ceadaigh"),
-                n("cb59a0fe", "Ná ghlac leis");
-            n("c2376960", "Requests to Speak"),
+                n("i22835de", "Ceadaigh");
+            n("cb59a0fe", "Ná ghlac leis"),
+                n("c2376960", "Requests to Speak"),
                 n("aba7dcdd", function (e) {
                     return "Invite " + e.name;
                 }),
@@ -4923,9 +4924,9 @@
                 n("a7b48b36", "The percentage of video views that were completed."),
                 n("a2580f2a", "Completion Rate"),
                 n("ff95a9cc", "Video ID"),
-                n("a97e358e", "Video Link"),
-                n("e10e8b46", "Only showing the videos from the last 100 days.");
-            n("ba37f6da", "Video overview"),
+                n("a97e358e", "Video Link");
+            n("e10e8b46", "Only showing the videos from the last 100 days."),
+                n("ba37f6da", "Video overview"),
                 n("f19846b2", "Video thumbnail"),
                 n("ccd6f4a8", "Video title"),
                 n("c8410542", "The number of times your video was viewed."),
@@ -5879,11 +5880,11 @@
                 n("a0ea2fa6", "Ní féidir leis an réimse ainm a bheith folamh"),
                 n("eec37eac", "Tá Fillteán Leabharmharcanna leis an ainm sin ann cheana"),
                 n("fce0c59e", "Theip ar pharsáil an bheochan JSON. Seiceáil formáid an JSON i do chomhad beochana agus bain triail eile as."),
-                n("g0eea6c2", "Theip ar an gcomhad beochana JSON a léamh. Déan iarracht an comhad a oscailt arís."),
-                n("ae58026a", 'Oscail comhad .json "BrandedLike" chun réamhamharc a dhéanamh');
-            n("hd0bc1eb", function (e) {
-                return "Tá " + e.name + " beo";
-            }),
+                n("g0eea6c2", "Theip ar an gcomhad beochana JSON a léamh. Déan iarracht an comhad a oscailt arís.");
+            n("ae58026a", 'Oscail comhad .json "BrandedLike" chun réamhamharc a dhéanamh'),
+                n("hd0bc1eb", function (e) {
+                    return "Tá " + e.name + " beo";
+                }),
                 n("bea1f26b", function (e) {
                     return "Bhí " + e.name + " beo";
                 }),
@@ -6887,9 +6888,9 @@
                 n("fdd77a34", "Create longer posts"),
                 n("j6d26a7a", "Write as much as you’d like to share"),
                 n("c4fd68da", "Customize your experience"),
-                n("c0195168", "Change your app icon and navigation options"),
-                n("b6b5dc94", "Become verified");
-            n("b06db848", "Stand out from others on the platform"),
+                n("c0195168", "Change your app icon and navigation options");
+            n("b6b5dc94", "Become verified"),
+                n("b06db848", "Stand out from others on the platform"),
                 n("e3e3a97c", "Earn a share of revenue from your posts"),
                 n("f15bc24e", "Increased Grok limits"),
                 n("c4666e1c", "More usage of Grok 3, our latest model"),
@@ -7863,8 +7864,7 @@
                 n("b33d1518", "Sync jobs from a supported integration or a custom XML feed"),
                 n("dd2db402", "Step 1: Gather the required information"),
                 n("edb098c2", "Step 2: Contact our support team"),
-                n("c4474460", "Step 2: Email our support team"),
-                n("a08da0fa", "What happens next?");
+                n("c4474460", "Step 2: Email our support team");
             function r(e, a) {
                 for (var t = 0; t < a.length; t++) {
                     var n = a[t];
@@ -7903,7 +7903,8 @@
                     c(e, a)
                 );
             }
-            n("c127374e", "Send us a message"),
+            n("a08da0fa", "What happens next?"),
+                n("c127374e", "Send us a message"),
                 n("b2cb2a0c", "Username of your Verified Org account"),
                 n("b8e64002", "Name of your applicant tracking system"),
                 n("acb99db6", "Career site URL where your jobs are listed"),
@@ -8905,9 +8906,9 @@
                 n("c057680c", "Ní féidir linn an físeán a sheinm sa bhrabhsálaí seo. Bain triail as brabhsálaí eile."),
                 n("i5dfae6e", "Níl an físeán seo ar fáil áit a bhfuil tú."),
                 n("c2388276", "Scriosadh an físeán seo."),
-                n("d2c96140", "Táscaire fuaime aoi"),
-                n("f6dc9146", "ATHSHEINN");
-            n("d30c74fe", "Fuaim"),
+                n("d2c96140", "Táscaire fuaime aoi");
+            n("f6dc9146", "ATHSHEINN"),
+                n("d30c74fe", "Fuaim"),
                 n("f2d4e6f2", "Féach air arís"),
                 n("e9f1af3a", "Faigh níos mó eolais"),
                 n("f1881d86", "This post can’t be replied to, shared or liked."),
@@ -13252,4 +13253,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ga.f881975a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ga.4538fbfa.js.map

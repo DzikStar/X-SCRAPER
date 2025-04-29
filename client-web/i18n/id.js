@@ -600,6 +600,7 @@
                 i("e0cb0c72", "Iklan"),
                 i("e2eef3c2", "Organisasi Terverifikasi"),
                 i("b55d8a78", "Buat Space Anda"),
+                i("e5323e36", "Go Live"),
                 i("a5a30af0", "Artikel"),
                 i("d13d697c", "Baru"),
                 i("j0e2cfa8", "Bisnis"),
@@ -899,9 +900,9 @@
                 i("i821844f", "Pelajari lebih lanjut"),
                 i("b0abbb17", "Pelajari lebih lanjut"),
                 i("e7e0d88b", "Pelajari lebih lanjut"),
-                i("i560665f", "Pelajari lebih lanjut"),
-                i("f6e774d9", "Pelajari lebih lanjut");
-            i("h486f755", "Pelajari lebih lanjut"),
+                i("i560665f", "Pelajari lebih lanjut");
+            i("f6e774d9", "Pelajari lebih lanjut"),
+                i("h486f755", "Pelajari lebih lanjut"),
                 i("bab41dab", "Pelajari lebih lanjut"),
                 i("e0ebdb29", "Pelajari lebih lanjut"),
                 i("f8493831", "Pelajari lebih lanjut"),
@@ -1907,9 +1908,9 @@
                 i("a330771e", "Salin tautan ke clipboard Anda"),
                 i("b6510e68", "Salin URL Artikel Anda untuk membagikannya."),
                 i("e4a6e006", "Ada kesalahan teknis. Silakan coba lagi."),
-                i("eff483e0", "Setelah Anda terbitkan, dapatkan tautan untuk membagikan Artikel tersebut."),
-                i("ca15dd4e", "Draf");
-            i("bb40bf66", "Diterbitkan"),
+                i("eff483e0", "Setelah Anda terbitkan, dapatkan tautan untuk membagikan Artikel tersebut.");
+            i("ca15dd4e", "Draf"),
+                i("bb40bf66", "Diterbitkan"),
                 i("h107935c", "Terakhir disimpan baru saja"),
                 i("a753a870", "Terapkan"),
                 i("afccc67e", "Salin tautan ke Artikel"),
@@ -2959,9 +2960,9 @@
                 i("c6f58084", "Pengembang"),
                 i("d83f18d2", "Direktori"),
                 i("hc5aa17c", "Dapatkan aplikasi X"),
-                i("j0693948", "Dapatkan aplikasi Grok"),
-                i("fbf83158", "Peringatan: Pembayaran gagal");
-            i("jadeb4da", "Harap langsung perbarui metode pembayaran Anda sebelum Anda kehilangan manfaat langganan."),
+                i("j0693948", "Dapatkan aplikasi Grok");
+            i("fbf83158", "Peringatan: Pembayaran gagal"),
+                i("jadeb4da", "Harap langsung perbarui metode pembayaran Anda sebelum Anda kehilangan manfaat langganan."),
                 i("bce3726a", "Perbarui Penagihan"),
                 i("fce9ecce", "Video yang disarankan"),
                 i("efe6ef9e", "Lihat postingan"),
@@ -3875,9 +3876,9 @@
                 i("d7357e7e", "Hapus sebagai Co-host"),
                 i("bf307fc0", "Blokir dan Hapus"),
                 i("ccf2f24e", "Laporkan"),
-                i("i22835de", "Setujui"),
-                i("cb59a0fe", "Tolak");
-            i("c2376960", "Permintaan untuk Berbicara"),
+                i("i22835de", "Setujui");
+            i("cb59a0fe", "Tolak"),
+                i("c2376960", "Permintaan untuk Berbicara"),
                 i("aba7dcdd", function (a) {
                     return "Undang " + a.name;
                 }),
@@ -4797,7 +4798,7 @@
                 i("h7d28188", "Kembali ke konten"),
                 i("if2704e4", "Back to Live Overview"),
                 i("ea928ae4", "Kembali ke Spaces"),
-                i("e8c07c22", "broadcast"),
+                i("e8c07c22", "siaran"),
                 i("a4ce6e68", "Broadcast Metrics"),
                 i("b2214c74", "Total number of views for this broadcast"),
                 i("d4fcf83a", "Total time viewers spent watching this broadcast"),
@@ -4844,7 +4845,7 @@
                 i("c4a7a6aa", "Live data"),
                 i("a992032a", "Livestream Analytics"),
                 i("ie45edda", "Ikhtisar streaming langsung"),
-                i("e30fc268", "Live Viewers"),
+                i("e30fc268", "Penonton Langsung"),
                 i("bd37f68e", "Aktivitas media"),
                 i("fe074210", "menit"),
                 i("jd03a1b8", "Minutes Watched"),
@@ -4856,8 +4857,8 @@
                 i("jbcb09a8", "Data belum cukup"),
                 i("df846d6c", "Tidak ditemukan postingan untuk rentang waktu yang dipilih."),
                 i("g2ba40f6", "Tidak ada Spaces yang tersedia untuk filter yang dipilih"),
-                i("j44061a0", "Not available"),
-                i("c4a93912", "N/A"),
+                i("j44061a0", "Tidak tersedia"),
+                i("c4a93912", "Tidak Ada"),
                 i("a6b78788", "No viewer data available"),
                 i("b2438638", "dari total"),
                 i("ic0399e0", "Tayangan Organik"),
@@ -4888,7 +4889,7 @@
                 i("cf3709da", "Status"),
                 i("e797dc32", "Stream time: "),
                 i("b649d8cc", "Khusus Pelanggan"),
-                i("j9282130", "Broadcast thumbnail"),
+                i("j9282130", "Thumbnail siaran"),
                 i("g629b8b0", "Timed Out"),
                 i("eb87323c", "This shows analytics data for the selected time period since the livestream happened."),
                 i("i6a75722", "Time Range"),
@@ -4907,9 +4908,9 @@
                 i("a7b48b36", "Persentase penayangan video hingga selesai."),
                 i("a2580f2a", "Tingkat Penyelesaian"),
                 i("ff95a9cc", "ID video"),
-                i("a97e358e", "Tautan Video"),
-                i("e10e8b46", "Hanya menampilkan video dari 100 hari terakhir.");
-            i("ba37f6da", "Ikhtisar video"),
+                i("a97e358e", "Tautan Video");
+            i("e10e8b46", "Hanya menampilkan video dari 100 hari terakhir."),
+                i("ba37f6da", "Ikhtisar video"),
                 i("f19846b2", "Thumbnail video"),
                 i("ccd6f4a8", "Judul video"),
                 i("c8410542", "Berapa kali video Anda dilihat."),
@@ -5863,11 +5864,11 @@
                 i("a0ea2fa6", "Bidang nama tidak boleh kosong"),
                 i("eec37eac", "Folder Markah dengan nama tersebut sudah ada"),
                 i("fce0c59e", "Gagal mengurai JSON animasi. Harap periksa format JSON di file animasi Anda dan coba lagi."),
-                i("g0eea6c2", "Gagal membaca file JSON animasi. Coba buka file kembali."),
-                i("ae58026a", "Buka file .json Suka Bermerek untuk melihat pratinjau");
-            i("hd0bc1eb", function (a) {
-                return a.name + " sedang menyiarkan langsung";
-            }),
+                i("g0eea6c2", "Gagal membaca file JSON animasi. Coba buka file kembali.");
+            i("ae58026a", "Buka file .json Suka Bermerek untuk melihat pratinjau"),
+                i("hd0bc1eb", function (a) {
+                    return a.name + " sedang menyiarkan langsung";
+                }),
                 i("bea1f26b", function (a) {
                     return a.name + " telah menyiarkan langsung";
                 }),
@@ -6871,9 +6872,9 @@
                 i("fdd77a34", "Buat postingan yang lebih panjang"),
                 i("j6d26a7a", "Tulis sebanyak yang ingin Anda sebarkan"),
                 i("c4fd68da", "Sesuaikan pengalaman Anda"),
-                i("c0195168", "Ubah ikon aplikasi dan ikon navigasi Anda"),
-                i("b6b5dc94", "Mendapatkan verifikasi");
-            i("b06db848", "Menonjol dibandingkan yang lainnya di platform ini"),
+                i("c0195168", "Ubah ikon aplikasi dan ikon navigasi Anda");
+            i("b6b5dc94", "Mendapatkan verifikasi"),
+                i("b06db848", "Menonjol dibandingkan yang lainnya di platform ini"),
                 i("e3e3a97c", "Dapatkan bagi hasil pendapatan dari postingan Anda"),
                 i("f15bc24e", "Batas Grok yang lebih tinggi"),
                 i("c4666e1c", "Lebih leluasa menggunakan Grok 3, model terbaru kami"),
@@ -7847,8 +7848,7 @@
                 i("b33d1518", "Sinkronkan lowongan dari integrasi yang didukung atau feed XML khusus"),
                 i("dd2db402", "Langkah 1: Kumpulkan informasi yang diperlukan"),
                 i("edb098c2", "Langkah 2: Hubungi tim dukungan kami"),
-                i("c4474460", "Langkah 2: Kirimkan email kepada tim dukungan kami"),
-                i("a08da0fa", "Lalu apa yang terjadi?");
+                i("c4474460", "Langkah 2: Kirimkan email kepada tim dukungan kami");
             function r(a, n) {
                 for (var e = 0; e < n.length; e++) {
                     var i = n[e];
@@ -7887,7 +7887,8 @@
                     d(a, n)
                 );
             }
-            i("c127374e", "Kirimi kami pesan"),
+            i("a08da0fa", "Lalu apa yang terjadi?"),
+                i("c127374e", "Kirimi kami pesan"),
                 i("b2cb2a0c", "Nama pengguna akun Organisasi Terverifikasi Anda"),
                 i("b8e64002", "Nama sistem pelacakan pelamar Anda"),
                 i("acb99db6", "URL situs karier tempat lowongan Anda terdaftar"),
@@ -8889,9 +8890,9 @@
                 i("c057680c", "Kami tidak dapat memainkan video di browser ini. Silakan coba di browser web lain."),
                 i("i5dfae6e", "Video ini tidak tersedia di lokasi Anda."),
                 i("c2388276", "Video ini telah dihapus."),
-                i("d2c96140", "Indikator audio tamu"),
-                i("f6dc9146", "PUTAR ULANG");
-            i("d30c74fe", "Volume"),
+                i("d2c96140", "Indikator audio tamu");
+            i("f6dc9146", "PUTAR ULANG"),
+                i("d30c74fe", "Volume"),
                 i("f2d4e6f2", "Tonton lagi"),
                 i("e9f1af3a", "Cari tahu lebih lanjut"),
                 i("f1881d86", "Postingan ini tidak dapat dibalas, dibagikan, atau disukai."),
@@ -13234,4 +13235,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/id.fc61a5aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/id.4172ae7a.js.map

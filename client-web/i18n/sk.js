@@ -610,6 +610,7 @@
                 n("e0cb0c72", "Reklamy"),
                 n("e2eef3c2", "Overené organizácie"),
                 n("b55d8a78", "Vytvoriť priestor"),
+                n("e5323e36", "Go Live"),
                 n("a5a30af0", "Články"),
                 n("d13d697c", "Nový"),
                 n("j0e2cfa8", "Firma"),
@@ -909,9 +910,9 @@
                 n("i821844f", "Viac informácií"),
                 n("b0abbb17", "Viac informácií"),
                 n("e7e0d88b", "Viac informácií"),
-                n("i560665f", "Viac informácií"),
-                n("f6e774d9", "Viac informácií");
-            n("h486f755", "Viac informácií"),
+                n("i560665f", "Viac informácií");
+            n("f6e774d9", "Viac informácií"),
+                n("h486f755", "Viac informácií"),
                 n("bab41dab", "Viac informácií"),
                 n("e0ebdb29", "Viac informácií"),
                 n("f8493831", "Viac informácií"),
@@ -1917,9 +1918,9 @@
                 n("a330771e", "Kopírovať odkaz do schránky"),
                 n("b6510e68", "Skopírujte si webovú adresu článku, aby ste ho mohli zdieľať."),
                 n("e4a6e006", "Vyskytla sa chyba. Skúste to znova."),
-                n("eff483e0", "Po zverejnení článku získajte odkaz na jeho zdieľanie."),
-                n("ca15dd4e", "Koncept");
-            n("bb40bf66", "Publikované"),
+                n("eff483e0", "Po zverejnení článku získajte odkaz na jeho zdieľanie.");
+            n("ca15dd4e", "Koncept"),
+                n("bb40bf66", "Publikované"),
                 n("h107935c", "Naposledy uložené: práve teraz"),
                 n("a753a870", "Použiť"),
                 n("afccc67e", "Skopírovať odkaz na článok"),
@@ -2969,9 +2970,9 @@
                 n("c6f58084", "Vývojári"),
                 n("d83f18d2", "Adresár"),
                 n("hc5aa17c", "Získajte aplikáciu X"),
-                n("j0693948", "Získajte aplikáciu Grok"),
-                n("fbf83158", "Upozornenie: platba zlyhala");
-            n("jadeb4da", "Čo najskôr si aktualizujte spôsob platby, než prídete o výhody predplatného."),
+                n("j0693948", "Získajte aplikáciu Grok");
+            n("fbf83158", "Upozornenie: platba zlyhala"),
+                n("jadeb4da", "Čo najskôr si aktualizujte spôsob platby, než prídete o výhody predplatného."),
                 n("bce3726a", "Aktualizujte fakturačné údaje"),
                 n("fce9ecce", "Navrhované videá"),
                 n("efe6ef9e", "Zobraziť príspevok"),
@@ -3885,9 +3886,9 @@
                 n("d7357e7e", "Odobrať zo spoluhostiteľov"),
                 n("bf307fc0", "Zablokovať a odobrať"),
                 n("ccf2f24e", "Hlásenie"),
-                n("i22835de", "Schváliť"),
-                n("cb59a0fe", "Zamietnuť");
-            n("c2376960", "Žiadosti o slovo"),
+                n("i22835de", "Schváliť");
+            n("cb59a0fe", "Zamietnuť"),
+                n("c2376960", "Žiadosti o slovo"),
                 n("aba7dcdd", function (e) {
                     return "Pozvať používateľa " + e.name;
                 }),
@@ -4166,7 +4167,7 @@
                 n("a9325f10", "Kopírovať obrázok"),
                 n("g0b12442", "Obrázok sa nepodarilo skopírovať"),
                 n("edd0c172", "Uverejniť obrázok"),
-                n("d1d3a41a", "Upraviť obrázok"),
+                n("d1d3a41a", "Úprava obrázka"),
                 n("a2697040", "Opíšte, čo chcete v obrázku zmeniť"),
                 n("ge1cefc4", "Nástroje"),
                 n("e9b6d404", "Ku ktorým vyhľadávacím nástrojom by mal mať Grok prístup?"),
@@ -4866,7 +4867,7 @@
                 n("jbcb09a8", "Zatiaľ nie je k dispozícii dostatok údajov"),
                 n("df846d6c", "Pre zvolený časový rozsah sa nenašli žiadne príspevky."),
                 n("g2ba40f6", "Pre vybraný filter nie sú k dispozícii žiadne miesta"),
-                n("j44061a0", "Not available"),
+                n("j44061a0", "Nie je k dispozícii"),
                 n("c4a93912", "N/A"),
                 n("a6b78788", "No viewer data available"),
                 n("b2438638", "z celkového počtu"),
@@ -4898,7 +4899,7 @@
                 n("cf3709da", "Stav"),
                 n("e797dc32", "Stream time: "),
                 n("b649d8cc", "Len pre predplatiteľov"),
-                n("j9282130", "Broadcast thumbnail"),
+                n("j9282130", "Miniatúra vysielania"),
                 n("g629b8b0", "Timed Out"),
                 n("eb87323c", "This shows analytics data for the selected time period since the livestream happened."),
                 n("i6a75722", "Time Range"),
@@ -4917,9 +4918,9 @@
                 n("a7b48b36", "Percento zobrazení videa, kde došlo k dopozeraniu."),
                 n("a2580f2a", "Miera dopozerania"),
                 n("ff95a9cc", "Video – ID"),
-                n("a97e358e", "Video – odkaz"),
-                n("e10e8b46", "Zobrazujú sa iba videá za posledných 100 dní");
-            n("ba37f6da", "Prehľad pre video"),
+                n("a97e358e", "Video – odkaz");
+            n("e10e8b46", "Zobrazujú sa iba videá za posledných 100 dní"),
+                n("ba37f6da", "Prehľad pre video"),
                 n("f19846b2", "Miniatúra videa"),
                 n("ccd6f4a8", "Video – názov"),
                 n("c8410542", "Počet zobrazení videa."),
@@ -5873,11 +5874,11 @@
                 n("a0ea2fa6", "Pole Názov nemôže byť prázdne"),
                 n("eec37eac", "Priečinok so záložkami s týmto názvom už existuje"),
                 n("fce0c59e", "Analýza formátu JSON animácie zlyhala. Skontrolujte formát JSON v súbore s animáciou a skúste to znova. "),
-                n("g0eea6c2", "Načítanie súboru JSON s animáciou zlyhalo. Skúste súbor otvoriť znova."),
-                n("ae58026a", "Ak si chcete pozrieť ukážku, otvorte súbor .json označenia Páči sa so značkou");
-            n("hd0bc1eb", function (e) {
-                return e.name + " je naživo";
-            }),
+                n("g0eea6c2", "Načítanie súboru JSON s animáciou zlyhalo. Skúste súbor otvoriť znova.");
+            n("ae58026a", "Ak si chcete pozrieť ukážku, otvorte súbor .json označenia Páči sa so značkou"),
+                n("hd0bc1eb", function (e) {
+                    return e.name + " je naživo";
+                }),
                 n("bea1f26b", function (e) {
                     return e.name + " bol/-a naživo";
                 }),
@@ -6881,9 +6882,9 @@
                 n("fdd77a34", "Vytvárajte dlhšie príspevky"),
                 n("j6d26a7a", "Píšte toľko, koľko chcete"),
                 n("c4fd68da", "Prispôsobte si možnosti"),
-                n("c0195168", "Zmeňte si ikonu aplikácie a možnosti navigácie"),
-                n("b6b5dc94", "Získajte overenie");
-            n("b06db848", "Odlíšte sa od ostatných na platforme"),
+                n("c0195168", "Zmeňte si ikonu aplikácie a možnosti navigácie");
+            n("b6b5dc94", "Získajte overenie"),
+                n("b06db848", "Odlíšte sa od ostatných na platforme"),
                 n("e3e3a97c", "Získajte podiel na výnosoch generovaných z vašich príspevkov"),
                 n("f15bc24e", "Zvýšené limity Groka"),
                 n("c4666e1c", "Väčšie možnosti využitia Groka 3, čo je náš najnovší model"),
@@ -7857,8 +7858,7 @@
                 n("b33d1518", "Synchronizujte pracovné miesta z podporovanej integrácie alebo vlastného informačného kanála vo formáte XML"),
                 n("dd2db402", "1. krok: zhromaždite požadované informácie"),
                 n("edb098c2", "2. krok: kontaktujte náš tím podpory"),
-                n("c4474460", "2. krok: pošlite e-mail nášmu tímu podpory"),
-                n("a08da0fa", "Čo bude nasledovať?");
+                n("c4474460", "2. krok: pošlite e-mail nášmu tímu podpory");
             function i(e, a) {
                 for (var o = 0; o < a.length; o++) {
                     var n = a[o];
@@ -7897,7 +7897,8 @@
                     r(e, a)
                 );
             }
-            n("c127374e", "Pošlite nám správu"),
+            n("a08da0fa", "Čo bude nasledovať?"),
+                n("c127374e", "Pošlite nám správu"),
                 n("b2cb2a0c", "Používateľské meno overeného účtu vašej organizácie"),
                 n("b8e64002", "Názov vášho systému sledovania uchádzačov"),
                 n("acb99db6", "Webová stránka s pracovnými miestami, ktoré ponúkate"),
@@ -8899,9 +8900,9 @@
                 n("c057680c", "V tomto prehliadači nemôžeme prehrať video. Skúste použiť iný prehliadač."),
                 n("i5dfae6e", "Toto video nie je vo vašej oblasti dostupné."),
                 n("c2388276", "Toto video bolo odstránené."),
-                n("d2c96140", "Indikátor zvuku hosťa"),
-                n("f6dc9146", "PREHRAŤ");
-            n("d30c74fe", "Hlasitosť"),
+                n("d2c96140", "Indikátor zvuku hosťa");
+            n("f6dc9146", "PREHRAŤ"),
+                n("d30c74fe", "Hlasitosť"),
                 n("f2d4e6f2", "Pozerať ešte raz"),
                 n("e9f1af3a", "Zistiť viac"),
                 n("f1881d86", "Na tento príspevok nie je možné odpovedať, zdieľať ho ani označiť, že sa vám páči."),
@@ -13251,4 +13252,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sk.10b76b3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sk.313c2daa.js.map

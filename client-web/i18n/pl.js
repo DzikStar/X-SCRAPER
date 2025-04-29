@@ -610,6 +610,7 @@
                 i("e0cb0c72", "Reklamy"),
                 i("e2eef3c2", "Zweryfikowane Organizacje"),
                 i("b55d8a78", "Utwórz Pokój"),
+                i("e5323e36", "Go Live"),
                 i("a5a30af0", "Artykuły"),
                 i("d13d697c", "Nowy adres"),
                 i("j0e2cfa8", "Biznes"),
@@ -909,9 +910,9 @@
                 i("i821844f", "Dowiedz się więcej"),
                 i("b0abbb17", "Dowiedz się więcej"),
                 i("e7e0d88b", "Dowiedz się więcej"),
-                i("i560665f", "Dowiedz się więcej"),
-                i("f6e774d9", "Dowiedz się więcej");
-            i("h486f755", "Dowiedz się więcej"),
+                i("i560665f", "Dowiedz się więcej");
+            i("f6e774d9", "Dowiedz się więcej"),
+                i("h486f755", "Dowiedz się więcej"),
                 i("bab41dab", "Dowiedz się więcej"),
                 i("e0ebdb29", "Dowiedz się więcej"),
                 i("f8493831", "Dowiedz się więcej"),
@@ -1917,9 +1918,9 @@
                 i("a330771e", "Kopiuj link do schowka"),
                 i("b6510e68", "Skopiuj adres URL artykułu, co umożliwi Ci udostępnienie go."),
                 i("e4a6e006", "Coś poszło nie tak. Spróbuj ponownie."),
-                i("eff483e0", "Po opublikowaniu pobierz link, aby udostępnić artykuł."),
-                i("ca15dd4e", "Szkic");
-            i("bb40bf66", "Opublikowano"),
+                i("eff483e0", "Po opublikowaniu pobierz link, aby udostępnić artykuł.");
+            i("ca15dd4e", "Szkic"),
+                i("bb40bf66", "Opublikowano"),
                 i("h107935c", "Ostatnio zapisano przed chwilą"),
                 i("a753a870", "Zastosuj"),
                 i("afccc67e", "Kopiuj link do artykułu"),
@@ -2969,9 +2970,9 @@
                 i("c6f58084", "Deweloperzy"),
                 i("d83f18d2", "Ścieżka"),
                 i("hc5aa17c", "Pobierz aplikację X"),
-                i("j0693948", "Pobierz aplikację Grok"),
-                i("fbf83158", "Ostrzeżenie: realizacja płatności nie powiodła się");
-            i("jadeb4da", "Jak najszybciej zaktualizuj swoją metodę płatności, zanim stracisz korzyści związane z subskrypcją."),
+                i("j0693948", "Pobierz aplikację Grok");
+            i("fbf83158", "Ostrzeżenie: realizacja płatności nie powiodła się"),
+                i("jadeb4da", "Jak najszybciej zaktualizuj swoją metodę płatności, zanim stracisz korzyści związane z subskrypcją."),
                 i("bce3726a", "Aktualizuj rozliczenie"),
                 i("fce9ecce", "Sugerowane filmy"),
                 i("efe6ef9e", "Wyświetl wpis"),
@@ -3885,9 +3886,9 @@
                 i("d7357e7e", "Usuń z grona współhostów"),
                 i("bf307fc0", "Zablokuj i usuń"),
                 i("ccf2f24e", "Zgłoszenie"),
-                i("i22835de", "Akceptuj"),
-                i("cb59a0fe", "Odrzuć");
-            i("c2376960", "Prośby o głos"),
+                i("i22835de", "Akceptuj");
+            i("cb59a0fe", "Odrzuć"),
+                i("c2376960", "Prośby o głos"),
                 i("aba7dcdd", function (e) {
                     return "Zaproś użytkownika " + e.name;
                 }),
@@ -4807,7 +4808,7 @@
                 i("h7d28188", "Powrót do treści"),
                 i("if2704e4", "Back to Live Overview"),
                 i("ea928ae4", "Powrót do pokojów"),
-                i("e8c07c22", "broadcast"),
+                i("e8c07c22", "transmituj"),
                 i("a4ce6e68", "Broadcast Metrics"),
                 i("b2214c74", "Total number of views for this broadcast"),
                 i("d4fcf83a", "Total time viewers spent watching this broadcast"),
@@ -4854,7 +4855,7 @@
                 i("c4a7a6aa", "Live data"),
                 i("a992032a", "Livestream Analytics"),
                 i("ie45edda", "Transmisja strumieniowa na żywo — przegląd"),
-                i("e30fc268", "Live Viewers"),
+                i("e30fc268", "Widzowie"),
                 i("bd37f68e", "Aktywność multimedialna"),
                 i("fe074210", "min"),
                 i("jd03a1b8", "Minutes Watched"),
@@ -4866,8 +4867,8 @@
                 i("jbcb09a8", "Nie ma jeszcze wystarczającej ilości danych"),
                 i("df846d6c", "Nie znaleziono wpisów dla wybranego zakresu czasu."),
                 i("g2ba40f6", "Brak dostępnych pokojów spełniających kryteria wybranego filtru"),
-                i("j44061a0", "Not available"),
-                i("c4a93912", "N/A"),
+                i("j44061a0", "Niedostępny"),
+                i("c4a93912", "Nie dotyczy"),
                 i("a6b78788", "No viewer data available"),
                 i("b2438638", "łącznej liczby"),
                 i("ic0399e0", "Wyświetlenia organiczne"),
@@ -4898,7 +4899,7 @@
                 i("cf3709da", "Status"),
                 i("e797dc32", "Stream time: "),
                 i("b649d8cc", "Tylko subskrybent"),
-                i("j9282130", "Broadcast thumbnail"),
+                i("j9282130", "Miniatura transmisji"),
                 i("g629b8b0", "Timed Out"),
                 i("eb87323c", "This shows analytics data for the selected time period since the livestream happened."),
                 i("i6a75722", "Time Range"),
@@ -4917,9 +4918,9 @@
                 i("a7b48b36", "Odsetek wyświetleń filmów, podczas których obejrzano cały film."),
                 i("a2580f2a", "Liczba pełnych wyświetleń"),
                 i("ff95a9cc", "Identyfikator filmu"),
-                i("a97e358e", "Link do filmu"),
-                i("e10e8b46", "Pokazywane są tylko filmy z ostatnich 100 dni.");
-            i("ba37f6da", "Przegląd filmu"),
+                i("a97e358e", "Link do filmu");
+            i("e10e8b46", "Pokazywane są tylko filmy z ostatnich 100 dni."),
+                i("ba37f6da", "Przegląd filmu"),
                 i("f19846b2", "Miniatura filmu"),
                 i("ccd6f4a8", "Tytuł filmu"),
                 i("c8410542", "Liczba wyświetleń Twojego filmu."),
@@ -5873,11 +5874,11 @@
                 i("a0ea2fa6", "Pole z nazwą nie może być puste"),
                 i("eec37eac", "Folder Zakładek o tej nazwie już istnieje"),
                 i("fce0c59e", "Nie udało się otworzyć pliku animacji JSON. Sprawdź format pliku animacji JSON i spróbuj ponownie."),
-                i("g0eea6c2", "Nie udało się odczytać pliku animacji JSON. Spróbuj ponownie otworzyć plik."),
-                i("ae58026a", "Otwórz plik spersonalizowanego polubienia .json, aby zobaczyć podgląd");
-            i("hd0bc1eb", function (e) {
-                return e.name + " transmituje na żywo";
-            }),
+                i("g0eea6c2", "Nie udało się odczytać pliku animacji JSON. Spróbuj ponownie otworzyć plik.");
+            i("ae58026a", "Otwórz plik spersonalizowanego polubienia .json, aby zobaczyć podgląd"),
+                i("hd0bc1eb", function (e) {
+                    return e.name + " transmituje na żywo";
+                }),
                 i("bea1f26b", function (e) {
                     return e.name + " transmitował/a na żywo";
                 }),
@@ -6881,9 +6882,9 @@
                 i("fdd77a34", "Twórz dłuższe wpisy"),
                 i("j6d26a7a", "Pisz tyle, ile chcesz udostępnić"),
                 i("c4fd68da", "Dostosuj swoje środowisko"),
-                i("c0195168", "Zmień ikonę aplikacji i opcje nawigacji"),
-                i("b6b5dc94", "Uzyskaj weryfikację");
-            i("b06db848", "Wyróżniaj się spośród innych użytkowników platformy"),
+                i("c0195168", "Zmień ikonę aplikacji i opcje nawigacji");
+            i("b6b5dc94", "Uzyskaj weryfikację"),
+                i("b06db848", "Wyróżniaj się spośród innych użytkowników platformy"),
                 i("e3e3a97c", "Miej udział w dochodach generowanych przez Twoje wpisy"),
                 i("f15bc24e", "Zwiększone limity Groka"),
                 i("c4666e1c", "Więcej możliwości używania naszego najnowszego modelu Grok 3"),
@@ -7857,8 +7858,7 @@
                 i("b33d1518", "Synchronizuj oferty pracy z obsługiwanej integracji lub niestandardowego źródła danych XML"),
                 i("dd2db402", "Krok 1: Zbierz wymagane informacje"),
                 i("edb098c2", "Krok 2: Skontaktuj się z naszym zespołem pomocy technicznej"),
-                i("c4474460", "Krok 2: Wyślij wiadomość e-mail do naszego zespołu pomocy technicznej"),
-                i("a08da0fa", "Jakie są kolejne kroki?");
+                i("c4474460", "Krok 2: Wyślij wiadomość e-mail do naszego zespołu pomocy technicznej");
             function t(e, a) {
                 for (var o = 0; o < a.length; o++) {
                     var i = a[o];
@@ -7897,7 +7897,8 @@
                     c(e, a)
                 );
             }
-            i("c127374e", "Wyślij nam wiadomość"),
+            i("a08da0fa", "Jakie są kolejne kroki?"),
+                i("c127374e", "Wyślij nam wiadomość"),
                 i("b2cb2a0c", "Nazwa użytkownika Twojego konta zweryfikowanej organizacji"),
                 i("b8e64002", "Nazwa Twojego systemu śledzenia osób aplikujących"),
                 i("acb99db6", "Adres URL witryny z ogłoszeniami dotyczącymi pracy, w której są wymienione Twoje oferty pracy"),
@@ -8899,9 +8900,9 @@
                 i("c057680c", "Nie można wyświetlić filmu w tej przeglądarce. Użyj innej przeglądarki."),
                 i("i5dfae6e", "Ten film jest niedostępny w Twojej lokalizacji."),
                 i("c2388276", "Ten film został usunięty."),
-                i("d2c96140", "Powiadomienie głosowe o gościu dołączającym do transmisji"),
-                i("f6dc9146", "POWTÓRKA TRANSMISJI");
-            i("d30c74fe", "Głośność"),
+                i("d2c96140", "Powiadomienie głosowe o gościu dołączającym do transmisji");
+            i("f6dc9146", "POWTÓRKA TRANSMISJI"),
+                i("d30c74fe", "Głośność"),
                 i("f2d4e6f2", "Obejrzyj ponownie"),
                 i("e9f1af3a", "Dowiedz się więcej"),
                 i("f1881d86", "Tego wpisu nie można podać dalej, udostępnić ani polubić."),
@@ -13249,4 +13250,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.c6a6f1ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.94e5379a.js.map

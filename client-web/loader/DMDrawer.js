@@ -63,7 +63,7 @@
             const o = (0, n.Z)({ loader: () => r.e("loader.AbsolutePower").then(r.bind(r, 590136)), renderPlaceholder: (e, t) => a.createElement(i.Z, { hasError: e, onRetry: t }) });
         },
         376293: (e, t, r) => {
-            r.d(t, { $f: () => D, KV: () => E, LI: () => H, SC: () => Z, Vt: () => y, ed: () => R, op: () => O });
+            r.d(t, { $f: () => D, KV: () => E, LI: () => L, SC: () => Z, Vt: () => y, ed: () => M, op: () => S });
             var a = r(202784),
                 n = r(190286),
                 i = r(674132),
@@ -86,10 +86,10 @@
                 C = o().f5f01af6,
                 Z = Object.freeze({ TWEET_CARET: "tweet_caret", PROFILE: "user_profile", LIST_DETAIL: "list_detail", RICH_FEEDBACK: "rich_feedback", TWEET: "tweet", FOLLOWERS_LIST: "followers_list" }),
                 D = (e, t) => ({ confirmButtonType: "destructiveFilled", headline: h({ screenName: e }), label: g, text: t ? p({ screenName: e }) : m({ screenName: e }) }),
-                O = ({ blockAction: e, blockSubtext: t, isSoftBlockEnabled: r, source: a, testID: n, unblockAction: i, unblockSubtext: o, user: s }) => {
+                S = ({ blockAction: e, blockSubtext: t, isSoftBlockEnabled: r, source: a, testID: n, unblockAction: i, unblockSubtext: o, user: s }) => {
                     let l,
                         u = c.Z;
-                    const h = H(s, r);
+                    const h = L(s, r);
                     switch (a) {
                         case Z.PROFILE:
                         case Z.LIST_DETAIL:
@@ -106,13 +106,13 @@
                                     s.blocking ? i(h) : e(h);
                                 });
                     }
-                    return { confirmation: h, onClick: u, testID: n, shortcutKey: l, Icon: k(s.blocking), text: T(s), subText: S({ user: s, blockSubtext: t, unblockSubtext: o }) };
+                    return { confirmation: h, onClick: u, testID: n, shortcutKey: l, Icon: O(s.blocking), text: T(s), subText: k({ user: s, blockSubtext: t, unblockSubtext: o }) };
                 },
-                k = (e) => (e ? l.default : s.default),
-                S = ({ blockSubtext: e, unblockSubtext: t, user: r }) => (!r.blocking && e ? e(r.screen_name) : r.blocking ? t : void 0),
+                O = (e) => (e ? l.default : s.default),
+                k = ({ blockSubtext: e, unblockSubtext: t, user: r }) => (!r.blocking && e ? e(r.screen_name) : r.blocking ? t : void 0),
                 T = (e) => (e.blocking ? b({ screenName: e.screen_name }) : v({ screenName: e.screen_name })),
-                H = (e, t) => (e.blocking ? ((e, t) => ({ confirmButtonType: "primary", headline: f({ screenName: e }), label: y, text: t ? C : w }))(e.screen_name, t) : D(e.screen_name, t)),
-                R = ({ confirmation: e, handleConfirm: t, onClose: r }) => {
+                L = (e, t) => (e.blocking ? ((e, t) => ({ confirmButtonType: "primary", headline: f({ screenName: e }), label: y, text: t ? C : w }))(e.screen_name, t) : D(e.screen_name, t)),
+                M = ({ confirmation: e, handleConfirm: t, onClose: r }) => {
                     const { confirmButtonType: i, headline: o, label: s, text: l } = e;
                     return a.createElement(n.Z, { cancelButtonLabel: u, confirmButtonLabel: s, confirmButtonType: i, headline: o, onCancel: r, onConfirm: t, text: l });
                 };
@@ -224,16 +224,16 @@
                 C = r(715913),
                 Z = r(601413),
                 D = r(392237),
-                O = r(323265),
-                k = r(443781),
-                S = r(740633);
+                S = r(323265),
+                O = r(443781),
+                k = r(740633);
             const T = (0, r(523561).Z)({ loader: () => r.e("ondemand.RichText").then(r.bind(r, 687184)) });
-            var H = r(111311),
-                R = r(198506),
-                M = r(768572),
+            var L = r(111311),
+                M = r(198506),
+                R = r(768572),
                 x = r(275365),
-                I = r(255534),
-                L = r(164383),
+                H = r(255534),
+                I = r(164383),
                 P = r(587521),
                 A = r(806960),
                 _ = r(786998),
@@ -290,7 +290,7 @@
                               },
                               type: t,
                           }),
-                    r && o && a.createElement(L.fK, null),
+                    r && o && a.createElement(I.fK, null),
                     o ? a.createElement(V.ZP, { "aria-label": ee, hoverLabel: { label: ee }, icon: a.createElement(J.default, null), onPress: i, type: t }) : a.createElement(V.ZP, { "aria-label": re, hoverLabel: { label: re }, icon: a.createElement(Q.default, null), onPress: i, type: t }),
                 );
             }
@@ -352,26 +352,26 @@
                 Ce = r(131290),
                 Ze = r(601576),
                 De = r(919022),
-                Oe = r(593953);
-            const ke = (e, t) => t.conversationId,
-                Se = (0, pe.P1)(
-                    (e, t) => c.selectEntriesForConversation(e, ke(0, t)),
+                Se = r(593953);
+            const Oe = (e, t) => t.conversationId,
+                ke = (0, pe.P1)(
+                    (e, t) => c.selectEntriesForConversation(e, Oe(0, t)),
                     y._h,
-                    (e, t) => (t ? (0, Oe.y9)(e, t) : void 0),
+                    (e, t) => (t ? (0, Se.y9)(e, t) : void 0),
                 ),
                 Te = (e) => (t) => ye.De(e, t),
-                He = (e) => (t, r) => ye.rA(e, t, r),
-                Re = { conversation: (e, t) => c.selectConversation(e, ke(0, t)), entries: c.selectEntries, perspective: y._h, users: De.ZP.selectAll, dataSaverMode: we.IX, dtabBarInfo: be.U6, quickReplyOptions: Se, visibility: d.kX, inboxUnreadCount: A.QA, isUnread: (e, t) => !c.selectConversationIsRead(e, ke(0, t)), isDmReceiptSettingEnabled: Ce.cn },
-                Me = { draftText: (e, t) => ye.vb(e, ke(0, t)), gifMetadata: (e, t) => ye.Tu(e, ke(0, t)), isUploading: (e, t) => ye.q9(e, ke(0, t)), media: (e, t) => ye.W8(e, ke(0, t)), mediaUploadProgress: (e, t) => ye.Ah(e, ke(0, t)) },
+                Le = (e) => (t, r) => ye.rA(e, t, r),
+                Me = { conversation: (e, t) => c.selectConversation(e, Oe(0, t)), entries: c.selectEntries, perspective: y._h, users: De.ZP.selectAll, dataSaverMode: we.IX, dtabBarInfo: be.U6, quickReplyOptions: ke, visibility: d.kX, inboxUnreadCount: A.QA, isUnread: (e, t) => !c.selectConversationIsRead(e, Oe(0, t)), isDmReceiptSettingEnabled: Ce.cn },
+                Re = { draftText: (e, t) => ye.vb(e, Oe(0, t)), gifMetadata: (e, t) => ye.Tu(e, Oe(0, t)), isUploading: (e, t) => ye.q9(e, Oe(0, t)), media: (e, t) => ye.W8(e, Oe(0, t)), mediaUploadProgress: (e, t) => ye.Ah(e, Oe(0, t)) },
                 xe = (0, fe.Z)()
-                    .propsFromState(() => ({ ...Re, ...Me }))
+                    .propsFromState(() => ({ ...Me, ...Re }))
                     .adjustStateProps(({ conversation: e, dataSaverMode: t, draftText: r, dtabBarInfo: a, entries: n, gifMetadata: i, inboxUnreadCount: o, isDmReceiptSettingEnabled: s, isUnread: l, isUploading: c, media: d, mediaUploadProgress: u, perspective: h, quickReplyOptions: v, users: g, visibility: m }) => {
                         const p = e?.data;
                         return { conversation: p && (0, Ee.lk)(p, n, g), perspective: h, dataSaverMode: t, draftText: r, dtabBarInfo: a, gifMetadata: i, inboxUnreadCount: o, isDmReceiptSettingEnabled: s, isUploading: c, isUnread: l, media: d, mediaUploadProgress: u, quickReplyOptions: v, visibility: m };
                     })
-                    .propsFromActions(({ conversationId: e }) => ({ addMedia: He(e), addToast: Ze.fz, createLocalApiErrorHandler: (0, s.zr)("DIRECT_MESSAGES_CONVERSATION"), fetchConversationHistory: c.fetchConversationHistory, removeMedia: Te(e), saveText: ye.E4, sendMessage: ye.bG, updateConversationReadState: c.updateConversationReadState, fetchUpdatesIfNeeded: c.fetchUpdatesIfNeeded }))
+                    .propsFromActions(({ conversationId: e }) => ({ addMedia: Le(e), addToast: Ze.fz, createLocalApiErrorHandler: (0, s.zr)("DIRECT_MESSAGES_CONVERSATION"), fetchConversationHistory: c.fetchConversationHistory, removeMedia: Te(e), saveText: ye.E4, sendMessage: ye.bG, updateConversationReadState: c.updateConversationReadState, fetchUpdatesIfNeeded: c.fetchUpdatesIfNeeded }))
                     .withAnalytics({ page: "messages", section: "thread_drawer" });
-            class Ie extends a.Component {
+            class He extends a.Component {
                 constructor(e, t) {
                     super(e, t),
                         (this._composer = a.createRef()),
@@ -387,7 +387,7 @@
                             const { conversationId: e, createLocalApiErrorHandler: t, fetchUpdatesIfNeeded: r, isDmReceiptSettingEnabled: a } = this.props;
                             r(a ? { active_conversation_id: e, dm_users: !0 } : {}).catch(t());
                         }),
-                        (0, S.Z)();
+                        (0, k.Z)();
                 }
                 componentDidMount() {
                     this._updatePolling();
@@ -397,23 +397,23 @@
                 }
                 render() {
                     const e = this._isExpanded();
-                    return a.createElement(M.y3.Provider, { value: void 0 }, !e && this._renderHeader(), e ? (O.ZP.isDesktopOS() ? a.createElement(T, null, ({ richTextInputContext: e, typeaheadWrapper: t }) => this._renderConversation(e, t)) : this._renderConversation()) : null);
+                    return a.createElement(R.y3.Provider, { value: void 0 }, !e && this._renderHeader(), e ? (S.ZP.isDesktopOS() ? a.createElement(T, null, ({ richTextInputContext: e, typeaheadWrapper: t }) => this._renderConversation(e, t)) : this._renderConversation()) : null);
                 }
                 _renderHeader() {
                     const { conversation: e, conversationId: t, inboxUnreadCount: r, isHeaderHighlighted: n, isUnread: i, onDrawerOpen: o, perspective: s, triggerHeaderHighlight: l } = this.props,
                         c = n ? "white" : "text",
                         d = n ? "white" : "gray700",
-                        u = e && (e.type === x.eD.ONE_TO_ONE || e.type === x.eD.SECRET_ONE_TO_ONE) && s && (0, R.Z)(e, s).map(({ user: e }) => e.screen_name),
+                        u = e && (e.type === x.eD.ONE_TO_ONE || e.type === x.eD.SECRET_ONE_TO_ONE) && s && (0, M.Z)(e, s).map(({ user: e }) => e.screen_name),
                         v = u ? a.createElement(Z.Z, { color: d, screenName: u[0] }) : void 0;
-                    return a.createElement(h.Z, { style: Le.headerRoot }, a.createElement(L._g.Provider, { value: t }, a.createElement(me, { conversationSubtitle: v, conversationTitle: a.createElement(I.Z, { conversation: e, perspective: s, textColor: c, withScreenName: !1 }), inboxUnreadCount: r, isConversationUnread: i, isHighlighted: n, onDrawerOpen: o, triggerHighlight: l })));
+                    return a.createElement(h.Z, { style: Ie.headerRoot }, a.createElement(I._g.Provider, { value: t }, a.createElement(me, { conversationSubtitle: v, conversationTitle: a.createElement(H.Z, { conversation: e, perspective: s, textColor: c, withScreenName: !1 }), inboxUnreadCount: r, isConversationUnread: i, isHighlighted: n, onDrawerOpen: o, triggerHighlight: l })));
                 }
                 _updatePolling() {
-                    this._pollingTimer && this._pollingTimer.stop(), this.props.visibility === b.S.COLLAPSED && ((this._pollingTimer = new H.Z(this._fetchUpdatesIfNeeded, { interval: 3e3 })), this._pollingTimer.start());
+                    this._pollingTimer && this._pollingTimer.stop(), this.props.visibility === b.S.COLLAPSED && ((this._pollingTimer = new L.Z(this._fetchUpdatesIfNeeded, { interval: 3e3 })), this._pollingTimer.start());
                 }
             }
-            Ie.contextType = k.rC;
-            const Le = D.default.create((e) => ({ headerRoot: { position: "sticky", top: 0, zIndex: e.componentZIndices.appBarZIndex } })),
-                Pe = xe(Ie);
+            He.contextType = O.rC;
+            const Ie = D.default.create((e) => ({ headerRoot: { position: "sticky", top: 0, zIndex: e.componentZIndices.appBarZIndex } })),
+                Pe = xe(He);
             var Ae = r(293115),
                 _e = r(715601),
                 Ne = r(602920),
@@ -474,7 +474,7 @@
             function Je({ isHeaderHighlighted: e, onDrawerOpen: t, triggerHeaderHighlight: r }) {
                 const n = (0, l.v9)(d.kX) === b.S.EXPANDED;
                 a.useEffect(() => {
-                    n && (0, S.Z)();
+                    n && (0, k.Z)();
                 }, [n]);
                 const i = () => a.createElement(h.Z, { style: Qe.headerRoot }, a.createElement(me, { isHighlighted: e, onDrawerOpen: t, triggerHighlight: r }));
                 return a.createElement(Ae.nO, { namespace: $e }, a.createElement(a.Fragment, null, !n && i(), n && a.createElement(je, { renderHeader: i })));
@@ -490,12 +490,12 @@
                     c = (0, l.v9)(y._h),
                     Z = (0, l.v9)(d.gw),
                     D = (0, l.v9)((e) => d.kX(e)),
-                    O = (0, w.N)(),
-                    [k, S] = a.useState(!1),
-                    [T, H] = a.useState(void 0),
-                    R = D === b.S.EXPANDED,
-                    M = () => {
-                        k && (S(!1), clearTimeout(i.current));
+                    S = (0, w.N)(),
+                    [O, k] = a.useState(!1),
+                    [T, L] = a.useState(void 0),
+                    M = D === b.S.EXPANDED,
+                    R = () => {
+                        O && (k(!1), clearTimeout(i.current));
                     },
                     x = (e) => {
                         const {
@@ -503,24 +503,24 @@
                                 layout: { height: t },
                             },
                         } = e;
-                        R || void 0 !== T || H(t);
+                        M || void 0 !== T || L(t);
                     },
-                    I = a.useCallback(() => {
-                        R ||
-                            k ||
+                    H = a.useCallback(() => {
+                        M ||
+                            O ||
                             i.current ||
-                            (S(!0),
+                            (k(!0),
                             (i.current = setTimeout(() => {
-                                S(!1), (i.current = null);
+                                k(!1), (i.current = null);
                             }, et)));
-                    }, [R, k]);
+                    }, [M, O]);
                 a.useEffect(
                     () => () => {
                         clearTimeout(i.current);
                     },
                     [i],
                 );
-                const L = (function (e) {
+                const I = (function (e) {
                         const [t, r] = a.useState(e);
                         if (
                             (a.useEffect(() => {
@@ -541,9 +541,9 @@
                             return !0;
                         e && !t && r(e);
                         return !1;
-                    })(R),
+                    })(M),
                     P = a.useRef(),
-                    A = R ? { transform: [{ translateY: 0 }] } : L ? { transition: "none", transform: [{ translateY: `calc(100% - ${P.current?.getBoundingClientRect().height ?? 0}px` }] } : { transform: [{ translateY: `calc(100% - ${T ?? 0}px` }] },
+                    A = M ? { transform: [{ translateY: 0 }] } : I ? { transition: "none", transform: [{ translateY: `calc(100% - ${P.current?.getBoundingClientRect().height ?? 0}px` }] } : { transform: [{ translateY: `calc(100% - ${T ?? 0}px` }] },
                     _ = (function (e) {
                         const [t, r] = a.useState(!1);
                         return (
@@ -570,7 +570,7 @@
                     ? a.createElement(
                           v.Z.Drawer,
                           null,
-                          a.createElement(g.Z, { id: "DMDrawer" }, (e, t) => a.createElement(C.Z.Provider, { value: { isDrawer: !0 } }, a.createElement(m.ZP.Provider, { value: { isDMDrawer: () => !0 } }, a.createElement(h.Z, (0, u.Z)({ ref: e() }, t({ style: [Ne.Z.root, _ && Ne.Z.expandable, !R && T && { height: T, maxHeight: T }, { width: r }, A, p.Z.reducedMotionEnabled && Ne.Z.reducedMotion], testID: B.root })), a.createElement(h.Z, { onLayout: T ? void 0 : x, ref: P, style: [R ? Ne.Z.expanded : null, Ne.Z.main] }, Z ? a.createElement(E.Z.Provider, { value: rt }, a.createElement(Pe, { conversationId: Z, history: o, isHeaderHighlighted: k, location: s, onDrawerOpen: M, perspective: c, triggerHeaderHighlight: I, typingNotifier: O })) : a.createElement(E.Z.Provider, { value: tt }, a.createElement(Je, { isHeaderHighlighted: k, onDrawerOpen: M, triggerHeaderHighlight: I }))))))),
+                          a.createElement(g.Z, { id: "DMDrawer" }, (e, t) => a.createElement(C.Z.Provider, { value: { isDrawer: !0 } }, a.createElement(m.ZP.Provider, { value: { isDMDrawer: () => !0 } }, a.createElement(h.Z, (0, u.Z)({ ref: e() }, t({ style: [Ne.Z.root, _ && Ne.Z.expandable, !M && T && { height: T, maxHeight: T }, { width: r }, A, p.Z.reducedMotionEnabled && Ne.Z.reducedMotion], testID: B.root })), a.createElement(h.Z, { onLayout: T ? void 0 : x, ref: P, style: [M ? Ne.Z.expanded : null, Ne.Z.main] }, Z ? a.createElement(E.Z.Provider, { value: rt }, a.createElement(Pe, { conversationId: Z, history: o, isHeaderHighlighted: O, location: s, onDrawerOpen: R, perspective: c, triggerHeaderHighlight: H, typingNotifier: S })) : a.createElement(E.Z.Provider, { value: tt }, a.createElement(Je, { isHeaderHighlighted: O, onDrawerOpen: R, triggerHeaderHighlight: H }))))))),
                       )
                     : null;
             }
@@ -641,7 +641,7 @@
             }
             v.defaultProps = { renderFailure: o.Z, retryable: !0 };
         },
-        270711: (e, t, r) => {
+        818088: (e, t, r) => {
             r.r(t), r.d(t, { default: () => l });
             var a = r(202784),
                 n = r(890601),
@@ -649,12 +649,12 @@
                 o = r(347101);
             const s = (e = {}) => {
                 const { direction: t } = (0, i.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M19.518 7.57C17.542 6.582 14.883 6 12 6s-5.543.582-7.518 1.57C2.566 8.528 1 10.036 1 12c0 1.393.803 2.565 1.913 3.446 1.054.836 2.473 1.488 4.087 1.923v-2.082c-1.19-.372-2.158-.863-2.844-1.408C3.322 13.218 3 12.564 3 12c0-.798.673-1.789 2.376-2.641C7.019 8.537 9.36 8 12 8s4.98.537 6.624 1.359C20.327 10.211 21 11.202 21 12s-.673 1.789-2.376 2.641c-1.299.65-3.038 1.116-5.012 1.286l1.353-1.459-1.467-1.359-3.564 3.845 3.844 3.564 1.36-1.467-1.231-1.141c2.137-.196 4.081-.714 5.612-1.479 1.916-.958 3.482-2.466 3.482-4.43s-1.566-3.472-3.482-4.43z" })) }, { writingDirection: t });
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M17 3V0h2v3h3v2h-3v3h-2V5h-3V3h3zM6.5 4c-.276 0-.5.22-.5.5v14.56l6-4.29 6 4.29V11h2v11.94l-8-5.71-8 5.71V4.5C4 3.12 5.119 2 6.5 2h4.502v2H6.5z" })) }, { writingDirection: t });
             };
             s.metadata = { width: 24, height: 24 };
             const l = s;
         },
-        394123: (e, t, r) => {
+        867492: (e, t, r) => {
             r.r(t), r.d(t, { default: () => l });
             var a = r(202784),
                 n = r(890601),
@@ -662,12 +662,12 @@
                 o = r(347101);
             const s = (e = {}) => {
                 const { direction: t } = (0, i.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M15.636 11.671c2.079-.583 3.093-2.18 3.093-3.929 0-2.307-1.471-4.741-5.983-4.741H5.623V21h7.579c4.411 0 6.008-2.484 6.008-4.994 0-2.383-1.343-3.955-3.574-4.335zm-3.295-6.287c2.535 0 3.27 1.319 3.27 2.662 0 1.242-.583 2.611-3.27 2.611H8.69V5.384h3.651zM8.69 18.617v-5.628h4.208c2.231 0 3.194 1.166 3.194 2.738 0 1.547-.887 2.89-3.397 2.89H8.69z" })) }, { writingDirection: t });
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M12 11.59L3.96 3.54 2.54 4.96 12 14.41l9.46-9.45-1.42-1.42L12 11.59zm0 7l-8.04-8.05-1.42 1.42L12 21.41l9.46-9.45-1.42-1.42L12 18.59z" })) }, { writingDirection: t });
             };
             s.metadata = { width: 24, height: 24 };
             const l = s;
         },
-        894023: (e, t, r) => {
+        377782: (e, t, r) => {
             r.r(t), r.d(t, { default: () => l });
             var a = r(202784),
                 n = r(890601),
@@ -675,12 +675,12 @@
                 o = r(347101);
             const s = (e = {}) => {
                 const { direction: t } = (0, i.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M4 7h3v2H4v2h3v2H4v2h3v2H4v2h3v2H2V3h13v5h-2V5H4v2zm18 4v10H10V11h12zm-2 2h-8v2h3v2h-3v2h8v-6z" })) }, { writingDirection: t });
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M12 2.59l9.46 9.45-1.42 1.42L12 5.41l-8.04 8.05-1.42-1.42L12 2.59zm0 7l9.46 9.45-1.42 1.42L12 12.41l-8.04 8.05-1.42-1.42L12 9.59z" })) }, { writingDirection: t });
             };
             s.metadata = { width: 24, height: 24 };
             const l = s;
         },
-        324922: (e, t, r) => {
+        19197: (e, t, r) => {
             r.r(t), r.d(t, { default: () => l });
             var a = r(202784),
                 n = r(890601),
@@ -688,12 +688,12 @@
                 o = r(347101);
             const s = (e = {}) => {
                 const { direction: t } = (0, i.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M1.998 5.5c0-1.381 1.119-2.5 2.5-2.5h15c1.381 0 2.5 1.119 2.5 2.5V12h-2v-1.537l-8 3.635-8-3.635V18.5c0 .276.224.5.5.5H13v2H4.498c-1.381 0-2.5-1.119-2.5-2.5v-13zm2 2.766l8 3.635 8-3.635V5.5c0-.276-.224-.5-.5-.5h-15c-.276 0-.5.224-.5.5v2.766zM19 18v-3h2v3h3v2h-3v3h-2v-3h-3v-2h3z" })) }, { writingDirection: t });
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M20 7H4V5h16v2zm-.004 6h-16v-2h16v2zM20 19H4v-2h16v2z" })) }, { writingDirection: t });
             };
             s.metadata = { width: 24, height: 24 };
             const l = s;
         },
-        678773: (e, t, r) => {
+        609980: (e, t, r) => {
             r.r(t), r.d(t, { default: () => l });
             var a = r(202784),
                 n = r(890601),
@@ -701,12 +701,12 @@
                 o = r(347101);
             const s = (e = {}) => {
                 const { direction: t } = (0, i.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M19.996 10h-16V8h16v2zm0 6h-16v-2h16v2z" })) }, { writingDirection: t });
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M9.5 7c.828 0 1.5 1.119 1.5 2.5S10.328 12 9.5 12 8 10.881 8 9.5 8.672 7 9.5 7zm5 0c.828 0 1.5 1.119 1.5 2.5s-.672 2.5-1.5 2.5S13 10.881 13 9.5 13.672 7 14.5 7zM12 22.25C6.348 22.25 1.75 17.652 1.75 12S6.348 1.75 12 1.75 22.25 6.348 22.25 12 17.652 22.25 12 22.25zm0-18.5c-4.549 0-8.25 3.701-8.25 8.25s3.701 8.25 8.25 8.25 8.25-3.701 8.25-8.25S16.549 3.75 12 3.75zM8.947 17.322l-1.896-.638C7.101 16.534 8.322 13 12 13s4.898 3.533 4.949 3.684l-1.897.633c-.031-.09-.828-2.316-3.051-2.316s-3.021 2.227-3.053 2.322z" })) }, { writingDirection: t });
             };
             s.metadata = { width: 24, height: 24 };
             const l = s;
         },
-        826363: (e, t, r) => {
+        937450: (e, t, r) => {
             r.r(t), r.d(t, { default: () => l });
             var a = r(202784),
                 n = r(890601),
@@ -714,7 +714,7 @@
                 o = r(347101);
             const s = (e = {}) => {
                 const { direction: t } = (0, i.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M20 7.5H4v-3h16v3zm0 6H4v-3h16v3zm0 6H4v-3h16v3z" })) }, { writingDirection: t });
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M3 5.5C3 4.119 4.12 3 5.5 3h13C19.88 3 21 4.119 21 5.5v13c0 1.381-1.12 2.5-2.5 2.5h-13C4.12 21 3 19.881 3 18.5v-13zM5.5 5c-.28 0-.5.224-.5.5v13c0 .276.22.5.5.5h13c.28 0 .5-.224.5-.5v-13c0-.276-.22-.5-.5-.5h-13zM18 10.711V9.25h-3.74v5.5h1.44v-1.719h1.7V11.57h-1.7v-.859H18zM11.79 9.25h1.44v5.5h-1.44v-5.5zm-3.07 1.375c.34 0 .77.172 1.02.43l1.03-.86c-.51-.601-1.28-.945-2.05-.945C7.19 9.25 6 10.453 6 12s1.19 2.75 2.72 2.75c.85 0 1.54-.344 2.05-.945v-2.149H8.38v1.032H9.4v.515c-.17.086-.42.172-.68.172-.76 0-1.36-.602-1.36-1.375 0-.688.6-1.375 1.36-1.375z" })) }, { writingDirection: t });
             };
             s.metadata = { width: 24, height: 24 };
             const l = s;
@@ -732,7 +732,7 @@
             s.metadata = { width: 24, height: 24 };
             const l = s;
         },
-        565421: (e, t, r) => {
+        256061: (e, t, r) => {
             r.r(t), r.d(t, { default: () => l });
             var a = r(202784),
                 n = r(890601),
@@ -740,20 +740,7 @@
                 o = r(347101);
             const s = (e = {}) => {
                 const { direction: t } = (0, i.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 32 32", children: a.createElement("g", null, a.createElement("path", { d: "M20 23h-2v-8h2v8zm-6-8h-2v8h2v-8zm14-5h-1.713l-1.111 15.577C25.038 27.496 23.424 29 21.5 29H10.486c-1.915 0-3.522-1.496-3.66-3.405L5.699 10H4V8h7V6c0-1.654 1.346-3 3-3h4c1.654 0 3 1.346 3 3v2h7v2zM13 8h6V6c0-.551-.449-1-1-1h-4c-.551 0-1 .449-1 1v2zm11.281 2H7.705l1.117 15.451c.062.869.793 1.549 1.665 1.549H21.5c.88 0 1.619-.688 1.681-1.565L24.282 10z" })) }, { writingDirection: t });
-            };
-            s.metadata = { width: 32, height: 32 };
-            const l = s;
-        },
-        748138: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => l });
-            var a = r(202784),
-                n = r(890601),
-                i = r(783427),
-                o = r(347101);
-            const s = (e = {}) => {
-                const { direction: t } = (0, i.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M1.998 5.5c0-1.381 1.119-2.5 2.5-2.5h15c1.381 0 2.5 1.119 2.5 2.5V13h-2v-2.537l-8 3.635-8-3.635V18.5c0 .276.224.5.5.5H11v2H4.498c-1.381 0-2.5-1.119-2.5-2.5v-13zm2 2.766l8 3.635 8-3.635V5.5c0-.276-.224-.5-.5-.5h-15c-.276 0-.5.224-.5.5v2.766zM19.429 16l-2 2H23v2h-5.571l2 2-1.414 1.414L13.601 19l4.414-4.414L19.429 16z" })) }, { writingDirection: t });
             };
             s.metadata = { width: 24, height: 24 };
             const l = s;
@@ -771,7 +758,7 @@
             s.metadata = { width: 24, height: 24 };
             const l = s;
         },
-        314948: (e, t, r) => {
+        89085: (e, t, r) => {
             r.r(t), r.d(t, { default: () => l });
             var a = r(202784),
                 n = r(890601),
@@ -779,12 +766,12 @@
                 o = r(347101);
             const s = (e = {}) => {
                 const { direction: t } = (0, i.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M12 3.75c-4.55 0-8.25 3.69-8.25 8.25 0 1.92.66 3.68 1.75 5.08l2.8-2.79 1.41 1.42-2.79 2.79c1.4 1.1 3.16 1.75 5.08 1.75 4.56 0 8.25-3.69 8.25-8.25 0-1.92-.65-3.68-1.75-5.08l-2.79 2.79-1.41-1.42 2.79-2.79C15.68 4.4 13.92 3.75 12 3.75zM1.75 12C1.75 6.34 6.34 1.75 12 1.75S22.25 6.34 22.25 12 17.66 22.25 12 22.25 1.75 17.66 1.75 12z" })) }, { writingDirection: t });
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M3.905 6.516h-.423V4.354h.263c.564-.015 1.018-.126 1.361-.332s.61-.529.8-.972h2.093v7.949H5.471v-4.94c-.351.305-.873.457-1.567.457zm2.194 10.88c.403-.273.69-.542.861-.81.171-.265.257-.566.257-.9 0-.304-.087-.542-.262-.713-.175-.172-.426-.257-.753-.257-.35 0-.623.096-.821.285-.198.19-.297.457-.297.799 0 .145.016.296.046.457l-2.577-.228c-.023-.175-.034-.342-.034-.502 0-.547.16-1.018.479-1.413s.764-.699 1.334-.913c.57-.213 1.224-.319 1.961-.319 1.125 0 2.009.221 2.651.662.643.441.964 1.079.964 1.916 0 .532-.112.998-.336 1.397-.224.399-.584.766-1.078 1.1-.562.381-1.372.768-2.428 1.164H10v1.881H2.542v-1.687c1.642-.806 2.828-1.445 3.558-1.917zM22 6H12v2h10V6zm0 10H12v2h10v-2z" })) }, { writingDirection: t });
             };
             s.metadata = { width: 24, height: 24 };
             const l = s;
         },
-        74514: (e, t, r) => {
+        310700: (e, t, r) => {
             r.r(t), r.d(t, { default: () => l });
             var a = r(202784),
                 n = r(890601),
@@ -792,12 +779,12 @@
                 o = r(347101);
             const s = (e = {}) => {
                 const { direction: t } = (0, i.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M12 2C7.93 2 4.51 5.02 4 9.05L2.87 18H7.1c.46 2.28 2.48 4 4.9 4s4.44-1.72 4.9-4h4.24l-.64-5h-2.02l.38 3H5.13l.85-6.7C6.36 6.27 8.94 4 12 4V2zm0 18c-1.31 0-2.42-.83-2.83-2h5.66c-.41 1.17-1.52 2-2.83 2zm.3-12.29l1.41-1.42 1.76 1.76 4.29-4.72 1.48 1.34-5.7 6.28-3.24-3.24z" })) }, { writingDirection: t });
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M21.04 1.54L17.5 5.09c-.04-.02-.08-.03-.13-.04L14.3 3H9.7l-3 2H5C3.62 5 2.5 6.12 2.5 7.5v11c0 .46.12.88.34 1.25l-1.3 1.29 1.42 1.42 19.5-19.5-1.42-1.42zM13.7 5l2.33 1.56-2 1.99C13.44 8.2 12.74 8 12 8c-2.21 0-4 1.79-4 4 0 .74.2 1.44.55 2.03L4.5 18.09V7.5c0-.28.22-.5.5-.5h2.3l3-2h3.4zM12 10c.18 0 .35.02.52.07l-2.45 2.45c-.05-.17-.07-.34-.07-.52 0-1.1.9-2 2-2zm7 11H7.24l2-2H19c.28 0 .5-.22.5-.5V9h2v9.5c0 1.38-1.12 2.5-2.5 2.5z" })) }, { writingDirection: t });
             };
             s.metadata = { width: 24, height: 24 };
             const l = s;
         },
-        474761: (e, t, r) => {
+        473026: (e, t, r) => {
             r.r(t), r.d(t, { default: () => l });
             var a = r(202784),
                 n = r(890601),
@@ -805,7 +792,46 @@
                 o = r(347101);
             const s = (e = {}) => {
                 const { direction: t } = (0, i.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M10.883 4H2v8.5h2.255c-.643 1.14-1.66 1.83-2.735 2.51l3.224 5.06c3.139-2 5.335-4.63 6.084-8.37.444-2.21.405-4.55.154-6.81L10.883 4zM4 10.5V6h5.081c.151 1.84.121 3.64-.213 5.31-.466 2.32-1.519 4.39-3.537 5.96l-1.083-1.7c1.43-1.18 2.662-3.14 2.662-5.07H4zM21.876 4h-8.882v8.5h2.255c-.644 1.14-1.66 1.83-2.735 2.51l3.224 5.06c3.138-2 5.334-4.63 6.083-8.37.444-2.21.406-4.55.154-6.81L21.876 4zm-6.883 6.5V6h5.082c.151 1.84.121 3.64-.214 5.31-.466 2.32-1.519 4.39-3.537 5.96l-1.083-1.7c1.43-1.18 2.663-3.14 2.663-5.07h-2.911z" })) }, { writingDirection: t });
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M3 5.5C3 4.119 4.119 3 5.5 3h13C19.881 3 21 4.119 21 5.5v13c0 1.381-1.119 2.5-2.5 2.5h-13C4.119 21 3 19.881 3 18.5v-13zM5.5 5c-.276 0-.5.224-.5.5v9.086l3-3 3 3 5-5 3 3V5.5c0-.276-.224-.5-.5-.5h-13zM19 15.414l-3-3-5 5-3-3-3 3V18.5c0 .276.224.5.5.5h13c.276 0 .5-.224.5-.5v-3.086zM9.75 7C8.784 7 8 7.784 8 8.75s.784 1.75 1.75 1.75 1.75-.784 1.75-1.75S10.716 7 9.75 7z" })) }, { writingDirection: t });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const l = s;
+        },
+        668430: (e, t, r) => {
+            r.r(t), r.d(t, { default: () => l });
+            var a = r(202784),
+                n = r(890601),
+                i = r(783427),
+                o = r(347101);
+            const s = (e = {}) => {
+                const { direction: t } = (0, i.Z)();
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M13 3v13.59l5.043-5.05 1.414 1.42L12 20.41l-7.457-7.45 1.414-1.42L11 16.59V3h2z" })) }, { writingDirection: t });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const l = s;
+        },
+        142496: (e, t, r) => {
+            r.r(t), r.d(t, { default: () => l });
+            var a = r(202784),
+                n = r(890601),
+                i = r(783427),
+                o = r(347101);
+            const s = (e = {}) => {
+                const { direction: t } = (0, i.Z)();
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M12.013 1l3.527 7.15 7.886 1.14-5.707 5.56 1.347 7.86L12.013 19 4.96 22.71l1.347-7.86L.6 9.29l7.886-1.14L12.013 1z" })) }, { writingDirection: t });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const l = s;
+        },
+        226597: (e, t, r) => {
+            r.r(t), r.d(t, { default: () => l });
+            var a = r(202784),
+                n = r(890601),
+                i = r(783427),
+                o = r(347101);
+            const s = (e = {}) => {
+                const { direction: t } = (0, i.Z)();
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M3.707 21.707l18-18-1.414-1.414-2.088 2.088C17.688 4.137 17.11 4 16.5 4H11v2h5.5c.028 0 .056 0 .084.002l-10.88 10.88c-.131-.266-.204-.565-.204-.882V7.551l2.068 1.93 1.365-1.462L4.5 3.882.068 8.019l1.365 1.462 2.068-1.93V16c0 .871.278 1.677.751 2.334l-1.959 1.959 1.414 1.414zM18.5 9h2v7.449l2.068-1.93 1.365 1.462-4.433 4.137-4.432-4.137 1.365-1.462 2.067 1.93V9zm-8.964 9l-2 2H13v-2H9.536z" })) }, { writingDirection: t });
             };
             s.metadata = { width: 24, height: 24 };
             const l = s;
@@ -819,6 +845,19 @@
             const s = (e = {}) => {
                 const { direction: t } = (0, i.Z)();
                 return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z" })) }, { writingDirection: t });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const l = s;
+        },
+        820803: (e, t, r) => {
+            r.r(t), r.d(t, { default: () => l });
+            var a = r(202784),
+                n = r(890601),
+                i = r(783427),
+                o = r(347101);
+            const s = (e = {}) => {
+                const { direction: t } = (0, i.Z)();
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [o.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M15 10H9V8h6v2zm-2 4H9v-2h4v2zm-.847 8.99c4.215-.652 8.988-5.523 9.097-11.469l-2-.037c-.083 4.574-3.395 8.102-6.25 9.211v-2.292l-1.786-.191C7.528 17.815 4.75 14.714 4.75 11c0-3.998 3.252-7.25 7.25-7.25v-2c-5.101 0-9.25 4.149-9.25 9.25 0 4.738 3.546 8.693 8.25 9.2v2.969l1.153-.179zm4.39-16.95l1.414 1.42L20 5.41l2.043 2.05 1.414-1.42L21.414 4l2.043-2.04L22.043.54 20 2.59 17.957.54l-1.414 1.42L18.586 4l-2.043 2.04z" })) }, { writingDirection: t });
             };
             s.metadata = { width: 24, height: 24 };
             const l = s;
@@ -862,4 +901,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.DMDrawer.0503098a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.DMDrawer.759108aa.js.map

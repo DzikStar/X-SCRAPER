@@ -601,6 +601,7 @@
                 e("e0cb0c72", "Mainokset"),
                 e("e2eef3c2", "Varmennetut organisaatiot"),
                 e("b55d8a78", "Perusta Huone"),
+                e("e5323e36", "Go Live"),
                 e("a5a30af0", "Artikkelit"),
                 e("d13d697c", "Uusi"),
                 e("j0e2cfa8", "Yritys"),
@@ -900,9 +901,9 @@
                 e("i821844f", "Lue lisää"),
                 e("b0abbb17", "Lue lisää"),
                 e("e7e0d88b", "Lue lisää"),
-                e("i560665f", "Lue lisää"),
-                e("f6e774d9", "Lue lisää");
-            e("h486f755", "Lue lisää"),
+                e("i560665f", "Lue lisää");
+            e("f6e774d9", "Lue lisää"),
+                e("h486f755", "Lue lisää"),
                 e("bab41dab", "Lue lisää"),
                 e("e0ebdb29", "Lue lisää"),
                 e("f8493831", "Lue lisää"),
@@ -1908,9 +1909,9 @@
                 e("a330771e", "Kopioi linkki leikepöydällesi"),
                 e("b6510e68", "Kopioi artikkelin URL jakoa varten."),
                 e("e4a6e006", "Jokin meni pieleen. Yritä uudelleen."),
-                e("eff483e0", "Kun olet julkaissut, poimi artikkelin jakolinkki."),
-                e("ca15dd4e", "Luonnos");
-            e("bb40bf66", "Julkaistu"),
+                e("eff483e0", "Kun olet julkaissut, poimi artikkelin jakolinkki.");
+            e("ca15dd4e", "Luonnos"),
+                e("bb40bf66", "Julkaistu"),
                 e("h107935c", "Tallennettu viimeksi nyt"),
                 e("a753a870", "Käytä"),
                 e("afccc67e", "Kopioi linkki artikkeliin"),
@@ -2960,9 +2961,9 @@
                 e("c6f58084", "Kehittäjät"),
                 e("d83f18d2", "Hakemisto"),
                 e("hc5aa17c", "Hanki X-sovellus"),
-                e("j0693948", "Hanki Grok-sovellus"),
-                e("fbf83158", "Varoitus: maksu epäonnistui");
-            e("jadeb4da", "Päivitä maksutapatietosi viipymättä, jotta et menetä tilausetujasi."),
+                e("j0693948", "Hanki Grok-sovellus");
+            e("fbf83158", "Varoitus: maksu epäonnistui"),
+                e("jadeb4da", "Päivitä maksutapatietosi viipymättä, jotta et menetä tilausetujasi."),
                 e("bce3726a", "Päivitä laskutustiedot"),
                 e("fce9ecce", "Ehdotetut videot"),
                 e("efe6ef9e", "Katso julkaisu"),
@@ -3876,9 +3877,9 @@
                 e("d7357e7e", "Poista co-hosteista"),
                 e("bf307fc0", "Estä ja poista"),
                 e("ccf2f24e", "Ilmianto"),
-                e("i22835de", "Hyväksy"),
-                e("cb59a0fe", "Epää");
-            e("c2376960", "Puhumispyynnöt"),
+                e("i22835de", "Hyväksy");
+            e("cb59a0fe", "Epää"),
+                e("c2376960", "Puhumispyynnöt"),
                 e("aba7dcdd", function (a) {
                     return "Kutsu " + a.name;
                 }),
@@ -4267,7 +4268,7 @@
                 e("fa0f1262", "Tauko"),
                 e("c2cac618", "Grokin käytettävissä on tällä hetkellä La Ligan, Englannin valioliigan, Saksan Bundesliigan, Serie A:n ja Ranskan Ligue 1:n tiedot."),
                 e("acae223d", function (a) {
-                    return 'Results for "' + a.prompt + '"';
+                    return "Tulokset haulle ”" + a.prompt + "”";
                 }),
                 e("bed99fe2", "Näytä vähemmän"),
                 e("f7b57ac0", "Tilastot"),
@@ -4796,12 +4797,12 @@
                 e("e7479ce4", "Katseluaika keskimäärin"),
                 e("g1dfa7d0", "Keskiarvo"),
                 e("h7d28188", "Takaisin sisältöön"),
-                e("if2704e4", "Back to Live Overview"),
+                e("if2704e4", "Takaisin Live-yhteenvetoon"),
                 e("ea928ae4", "Palaa huoneisiin"),
-                e("e8c07c22", "broadcast"),
-                e("a4ce6e68", "Broadcast Metrics"),
-                e("b2214c74", "Total number of views for this broadcast"),
-                e("d4fcf83a", "Total time viewers spent watching this broadcast"),
+                e("e8c07c22", "lähetys"),
+                e("a4ce6e68", "Lähetyksen tilastot"),
+                e("b2214c74", "Tämän lähetyksen katseluiden kokonaismäärä"),
+                e("d4fcf83a", "Tämän lähetyksen kokonaiskatseluaika"),
                 e("a89b0322", "Peruttu"),
                 e("j3cb12ea", "Samanaikaisia kuuntelijoita"),
                 e("b93931ee", "Sisältösi julkaisukertojen määrä."),
@@ -4837,19 +4838,19 @@
                 e("efa0f858", "Seuraamisten ja seuraamisten lopettamisten määrä suhteessa aikaan. Tämä ei välttämättä korreloi seuraajamääräsi kanssa."),
                 e("g2b06cc6", "Sukupuolitieto voi olla päätelty"),
                 e("b66b3baa", "tuntia"),
-                e("cf8a0772", "Impression to Views"),
-                e("g13d8010", "Last 48 Hours"),
-                e("d5627596", "Last Hour"),
+                e("cf8a0772", "Näyttökertaa per katselu"),
+                e("g13d8010", "Viimeiset 48 h"),
+                e("d5627596", "Viimeinen tunti"),
                 e("baf120a6", "Heikoin osallisuus"),
                 e("f2382014", "LIVE"),
-                e("c4a7a6aa", "Live data"),
-                e("a992032a", "Livestream Analytics"),
+                e("c4a7a6aa", "Live-tiedot"),
+                e("a992032a", "Livestriimin tilastot"),
                 e("ie45edda", "Livestriimin yleiskuvaus"),
-                e("e30fc268", "Live Viewers"),
+                e("e30fc268", "Live-katsojat"),
                 e("bd37f68e", "Mediatoiminnat"),
                 e("fe074210", "min"),
-                e("jd03a1b8", "Minutes Watched"),
-                e("a20e91e8", "minutes watched"),
+                e("jd03a1b8", "Minuuttia katsottu"),
+                e("a20e91e8", "minuuttia katsottu"),
                 e("ic2bebee", "Kaupallisessa käytössä"),
                 e("a1d642c8", "Vahvin osallisuus"),
                 e("ifc4c1f8", "Tällä sisällöllä saatujen uusien seuraajien määrä."),
@@ -4857,14 +4858,14 @@
                 e("jbcb09a8", "Tietoja ei ole vielä riittävästi"),
                 e("df846d6c", "Valitulla aikavälillä ei löytynyt julkaisuja."),
                 e("g2ba40f6", "Valitulla suodattimella ei ole saatavilla huoneita"),
-                e("j44061a0", "Not available"),
-                e("c4a93912", "N/A"),
-                e("a6b78788", "No viewer data available"),
+                e("j44061a0", "Ei saatavana"),
+                e("c4a93912", "Ei saatavana"),
+                e("a6b78788", "Ei katsojatietoja saatavana"),
                 e("b2438638", "kokonaismäärästä"),
                 e("ic0399e0", "Orgaaniset näytöt"),
                 e("ja5c444a", "Maksukausi"),
                 e("f04e025e", "Samanaikaisia kuuntelijoita enimmillään"),
-                e("d6d10662", "Peak Viewers: "),
+                e("d6d10662", "Katsojia eniten: "),
                 e("d147bea2", "Kokeile myöhemmin uudelleen"),
                 e("f0336d68", "Julkaisukohtaiset tilastot"),
                 e("g85fbd2e", "Julkaisun tunnus"),
@@ -4872,11 +4873,11 @@
                 e("hf4f9bfe", "Julkaisun linkki"),
                 e("bf5ebf5c", "Julkaisut ja vastaukset"),
                 e("b211652e", "Julkaisut suhteessa aikaan"),
-                e("f2efec0a", "Pre-Published"),
+                e("f2efec0a", "Ennalta julkaistu"),
                 e("i61e0302", "Edellinen"),
                 e("e08a706a", "Mainostetut näytöt"),
                 e("cbc99192", "Julkaisupäivä"),
-                e("a83c2a9a", "Realtime"),
+                e("a83c2a9a", "Reaaliaikainen"),
                 e("e9d72896", "Tallenne"),
                 e("gede4932", "Toista"),
                 e("h0de359c", "Tämän sisällön uudelleenjulkaisujen määrä."),
@@ -4887,20 +4888,20 @@
                 e("fbc79a40", "Huoneiden yleiskatsaus"),
                 e("d077112a", "Huoneen tilastot"),
                 e("cf3709da", "Tila"),
-                e("e797dc32", "Stream time: "),
+                e("e797dc32", "Striimausaika: "),
                 e("b649d8cc", "Vain tilaaja"),
-                e("j9282130", "Broadcast thumbnail"),
-                e("g629b8b0", "Timed Out"),
-                e("eb87323c", "This shows analytics data for the selected time period since the livestream happened."),
-                e("i6a75722", "Time Range"),
+                e("j9282130", "Lähetyksen esikatselukuva"),
+                e("g629b8b0", "Aikakatkaistu"),
+                e("eb87323c", "Tämä näyttää tilastotietoa valitulta ajanjaksolta livestriimin jälkeen."),
+                e("i6a75722", "Aikaväli"),
                 e("c602f5b8", "Yhteensä"),
                 e("b35e68ae", "Osallistujien kokonaismäärä"),
                 e("h78ee79a", "Katsottu uusintana yhteensä"),
                 e("e3efaed0", "Tyyppi"),
                 e("c37993e2", "Seuraamisen lopettamiset"),
-                e("b1ed35d0", "Unique Viewers"),
+                e("b1ed35d0", "Uniikkeja katsojia"),
                 e("bfad9306", "Tuntematon"),
-                e("b5a58f36", "Untitled Broadcast"),
+                e("b5a58f36", "Nimetön lähetys"),
                 e("i70f5278", "Ladattu:"),
                 e("a98b58b6", "Varmennetut seuraajat"),
                 e("a5de67ca", "Tilinsä varmentaneiden seuraajien määrä."),
@@ -4908,9 +4909,9 @@
                 e("a7b48b36", "Loppuun saakka katsottujen videonäyttöjen osuus."),
                 e("a2580f2a", "Loppuunkatseluaste"),
                 e("ff95a9cc", "Videon tunnus"),
-                e("a97e358e", "Videon linkki"),
-                e("e10e8b46", "Näytetään videot viimeisten 100 päivän ajalta.");
-            e("ba37f6da", "Yhteenveto videoista"),
+                e("a97e358e", "Videon linkki");
+            e("e10e8b46", "Näytetään videot viimeisten 100 päivän ajalta."),
+                e("ba37f6da", "Yhteenveto videoista"),
                 e("f19846b2", "Videon esikatselukuva"),
                 e("ccd6f4a8", "Videon nimi"),
                 e("c8410542", "Videosi katselumäärä."),
@@ -5864,11 +5865,11 @@
                 e("a0ea2fa6", "Nimikenttä ei voi olla tyhjä"),
                 e("eec37eac", "Kirjanmerkkikansio tällä nimellä on jo olemassa"),
                 e("fce0c59e", "JSON-animaatiokoodin jäsennys ei onnistunut. Tarkista animaatiotiedoston JSON-formaatti ja yritä uudelleen."),
-                e("g0eea6c2", "JSON-animaatiotiedoston lukeminen ei onnistunut. Yritä avata tiedosto uudelleen."),
-                e("ae58026a", "Avaa bränditykkäys-.json-tiedosto esikatselua varten");
-            e("hd0bc1eb", function (a) {
-                return a.name + " on live-tilassa";
-            }),
+                e("g0eea6c2", "JSON-animaatiotiedoston lukeminen ei onnistunut. Yritä avata tiedosto uudelleen.");
+            e("ae58026a", "Avaa bränditykkäys-.json-tiedosto esikatselua varten"),
+                e("hd0bc1eb", function (a) {
+                    return a.name + " on live-tilassa";
+                }),
                 e("bea1f26b", function (a) {
                     return a.name + " oli live-tilassa";
                 }),
@@ -6872,9 +6873,9 @@
                 e("fdd77a34", "Laadi pidempiä julkaisuja"),
                 e("j6d26a7a", "Kirjoita niin paljon kuin haluat"),
                 e("c4fd68da", "Räätälöi käyttökokemuksesi"),
-                e("c0195168", "Vaihda sovellusikonia ja navigointivalintoja"),
-                e("b6b5dc94", "Hanki varmennus");
-            e("b06db848", "Erotu massasta alustalla"),
+                e("c0195168", "Vaihda sovellusikonia ja navigointivalintoja");
+            e("b6b5dc94", "Hanki varmennus"),
+                e("b06db848", "Erotu massasta alustalla"),
                 e("e3e3a97c", "Ansaitse osa julkaisujesi tuottamasta liikevaihdosta"),
                 e("f15bc24e", "Suuremmat Grokin käyttörajat"),
                 e("c4666e1c", "Enemmän uusimman mallin, Grok 3:n käyttöä"),
@@ -7848,8 +7849,7 @@
                 e("b33d1518", "Synkronoi työpaikat tuetusta integraatiosta tai XML-syötteestä"),
                 e("dd2db402", "Vaihe 1: Kerää vaaditut tiedot"),
                 e("edb098c2", "Vaihe 2: Ota yhteys tukeen"),
-                e("c4474460", "Vaihe 2: Lähetä sähköposti tukitiimillemme"),
-                e("a08da0fa", "Mitä tapahtuu seuraavaksi?");
+                e("c4474460", "Vaihe 2: Lähetä sähköposti tukitiimillemme");
             function s(a, t) {
                 for (var i = 0; i < t.length; i++) {
                     var e = t[i];
@@ -7888,7 +7888,8 @@
                     u(a, t)
                 );
             }
-            e("c127374e", "Lähetä meille viesti"),
+            e("a08da0fa", "Mitä tapahtuu seuraavaksi?"),
+                e("c127374e", "Lähetä meille viesti"),
                 e("b2cb2a0c", "Varmennetut organisaatiot -tilisi käyttäjätunnus"),
                 e("b8e64002", "Työnhakijoiden seurantajärjestelmäsi nimi"),
                 e("acb99db6", "Työpaikkasivuston URL, josta työpaikkasi löytyvät"),
@@ -8890,9 +8891,9 @@
                 e("c057680c", "Videon toistaminen ei onnistu tässä selaimessa. Kokeile toista selainta."),
                 e("i5dfae6e", "Tämä video ei ole saatavilla sijainnissasi."),
                 e("c2388276", "Tämä video on poistettu."),
-                e("d2c96140", "Vieraslähettäjän äänen merkki"),
-                e("f6dc9146", "UUSINTA");
-            e("d30c74fe", "Äänenvoimakkuus"),
+                e("d2c96140", "Vieraslähettäjän äänen merkki");
+            e("f6dc9146", "UUSINTA"),
+                e("d30c74fe", "Äänenvoimakkuus"),
                 e("f2d4e6f2", "Katso uudelleen"),
                 e("e9f1af3a", "Lue lisää"),
                 e("f1881d86", "Tähän julkaisuun ei voi vastata, sitä ei voi jakaa eikä siitä voi tykätä."),
@@ -13249,4 +13250,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.c147581a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.2a728b8a.js.map

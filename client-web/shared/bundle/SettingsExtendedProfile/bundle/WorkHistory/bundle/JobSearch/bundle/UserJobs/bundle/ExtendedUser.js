@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~bundle.SettingsExtendedProfile~bundle.WorkHistory~bundle.JobSearch~ondemand.Verified~bundle.UserJobs~b"],
+    ["shared~bundle.SettingsExtendedProfile~bundle.WorkHistory~bundle.JobSearch~bundle.UserJobs~bundle.ExtendedUser"],
     {
         949626: (e, n, t) => {
             t.d(n, { Z: () => r });
@@ -141,4 +141,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.SettingsExtendedProfile~bundle.WorkHistory~bundle.JobSearch~ondemand.Verified~bundle.UserJobs~b.b6e0956a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.SettingsExtendedProfile~bundle.WorkHistory~bundle.JobSearch~bundle.UserJobs~bundle.ExtendedUser.783d4eca.js.map

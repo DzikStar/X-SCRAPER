@@ -612,6 +612,7 @@
                 t("e0cb0c72", "Reclame"),
                 t("e2eef3c2", "Organizații verificate"),
                 t("b55d8a78", "Creează-ți Spațiul"),
+                t("e5323e36", "Go Live"),
                 t("a5a30af0", "Articole"),
                 t("d13d697c", "Nouă"),
                 t("j0e2cfa8", "Afaceri"),
@@ -911,9 +912,9 @@
                 t("i821844f", "Află mai multe"),
                 t("b0abbb17", "Află mai multe"),
                 t("e7e0d88b", "Află mai multe"),
-                t("i560665f", "Află mai multe"),
-                t("f6e774d9", "Află mai multe");
-            t("h486f755", "Află mai multe"),
+                t("i560665f", "Află mai multe");
+            t("f6e774d9", "Află mai multe"),
+                t("h486f755", "Află mai multe"),
                 t("bab41dab", "Află mai multe"),
                 t("e0ebdb29", "Află mai multe"),
                 t("f8493831", "Află mai multe"),
@@ -1919,9 +1920,9 @@
                 t("a330771e", "Copiază linkul pe clipboard"),
                 t("b6510e68", "Copiază URL-ul articolului pentru a-l putea distribui."),
                 t("e4a6e006", "Ceva nu a mers bine. Încearcă din nou."),
-                t("eff483e0", "După publicare, obține un link pentru a distribui articolul."),
-                t("ca15dd4e", "Schiță");
-            t("bb40bf66", "Publicate"),
+                t("eff483e0", "După publicare, obține un link pentru a distribui articolul.");
+            t("ca15dd4e", "Schiță"),
+                t("bb40bf66", "Publicate"),
                 t("h107935c", "Salvată ultima dată chiar acum"),
                 t("a753a870", "Aplică"),
                 t("afccc67e", "Copiază linkul către articol"),
@@ -2971,9 +2972,9 @@
                 t("c6f58084", "Dezvoltatori"),
                 t("d83f18d2", "Director"),
                 t("hc5aa17c", "Obţine aplicația X"),
-                t("j0693948", "Obține aplicația Grok"),
-                t("fbf83158", "Avertisment: plata a eșuat");
-            t("jadeb4da", "Actualizează-ți urgent metoda de plată pentru a nu-ți pierde beneficiile abonamentului."),
+                t("j0693948", "Obține aplicația Grok");
+            t("fbf83158", "Avertisment: plata a eșuat"),
+                t("jadeb4da", "Actualizează-ți urgent metoda de plată pentru a nu-ți pierde beneficiile abonamentului."),
                 t("bce3726a", "Actualizare informații de facturare"),
                 t("fce9ecce", "Videoclipuri sugerate"),
                 t("efe6ef9e", "Vizualizează postarea"),
@@ -3887,9 +3888,9 @@
                 t("d7357e7e", "Elimină din co-gazde"),
                 t("bf307fc0", "Blochează și elimină"),
                 t("ccf2f24e", "Raport"),
-                t("i22835de", "Aprobă"),
-                t("cb59a0fe", "Refuză");
-            t("c2376960", "Solicitări de a vorbi"),
+                t("i22835de", "Aprobă");
+            t("cb59a0fe", "Refuză"),
+                t("c2376960", "Solicitări de a vorbi"),
                 t("aba7dcdd", function (e) {
                     return "Invită utilizatorul pe nume " + e.name;
                 }),
@@ -4809,7 +4810,7 @@
                 t("h7d28188", "Înapoi la conținut"),
                 t("if2704e4", "Back to Live Overview"),
                 t("ea928ae4", "Înapoi la Spații"),
-                t("e8c07c22", "broadcast"),
+                t("e8c07c22", "transmisiune"),
                 t("a4ce6e68", "Broadcast Metrics"),
                 t("b2214c74", "Total number of views for this broadcast"),
                 t("d4fcf83a", "Total time viewers spent watching this broadcast"),
@@ -4856,7 +4857,7 @@
                 t("c4a7a6aa", "Live data"),
                 t("a992032a", "Livestream Analytics"),
                 t("ie45edda", "Vedere generală cu fluxul în direct"),
-                t("e30fc268", "Live Viewers"),
+                t("e30fc268", "Spectatori în direct"),
                 t("bd37f68e", "Activitate de conținut media"),
                 t("fe074210", "(de) minute"),
                 t("jd03a1b8", "Minutes Watched"),
@@ -4868,7 +4869,7 @@
                 t("jbcb09a8", "Deocamdată, nu există date suficiente"),
                 t("df846d6c", "Nu s-au găsit postări pentru intervalul de timp selectat."),
                 t("g2ba40f6", "Nu există spații disponibile pentru filtrul selectat"),
-                t("j44061a0", "Not available"),
+                t("j44061a0", "Indisponibil"),
                 t("c4a93912", "N/A"),
                 t("a6b78788", "No viewer data available"),
                 t("b2438638", "din total"),
@@ -4900,7 +4901,7 @@
                 t("cf3709da", "Stare"),
                 t("e797dc32", "Stream time: "),
                 t("b649d8cc", "Doar abonați"),
-                t("j9282130", "Broadcast thumbnail"),
+                t("j9282130", "Miniatura Transmisiune"),
                 t("g629b8b0", "Timed Out"),
                 t("eb87323c", "This shows analytics data for the selected time period since the livestream happened."),
                 t("i6a75722", "Time Range"),
@@ -4919,9 +4920,9 @@
                 t("a7b48b36", "Procentul de vizualizări complete ale videoclipurilor."),
                 t("a2580f2a", "Rata de finalizare"),
                 t("ff95a9cc", "ID videoclip"),
-                t("a97e358e", "Link videoclip"),
-                t("e10e8b46", "Se afișează doar videoclipuri din ultimele 100 de zile.");
-            t("ba37f6da", "Imagine de ansamblu videoclip"),
+                t("a97e358e", "Link videoclip");
+            t("e10e8b46", "Se afișează doar videoclipuri din ultimele 100 de zile."),
+                t("ba37f6da", "Imagine de ansamblu videoclip"),
                 t("f19846b2", "Miniatură videoclip"),
                 t("ccd6f4a8", "Titlu videoclip"),
                 t("c8410542", "De câte ori a fost văzut videoclipul."),
@@ -5875,11 +5876,11 @@
                 t("a0ea2fa6", "Câmpul cu nume nu poate rămâne necompletat"),
                 t("eec37eac", "Folderul Marcaje cu acest nume există deja"),
                 t("fce0c59e", "Nu s-a putut analiza animația JSON. Verifică formatul JSON în fișierul tău de animație și încearcă din nou."),
-                t("g0eea6c2", "Nu s-a putut citi fișierul de animație JSON. Încearcă să deschizi din nou fișierul."),
-                t("ae58026a", "Deschide un fișier Apreciere de marcă .json pentru previzualizare");
-            t("hd0bc1eb", function (e) {
-                return e.name + " este în direct";
-            }),
+                t("g0eea6c2", "Nu s-a putut citi fișierul de animație JSON. Încearcă să deschizi din nou fișierul.");
+            t("ae58026a", "Deschide un fișier Apreciere de marcă .json pentru previzualizare"),
+                t("hd0bc1eb", function (e) {
+                    return e.name + " este în direct";
+                }),
                 t("bea1f26b", function (e) {
                     return e.name + " a fost în direct";
                 }),
@@ -6883,9 +6884,9 @@
                 t("fdd77a34", "Creează postări mai lungi"),
                 t("j6d26a7a", "Scrie oricât vrei să distribui"),
                 t("c4fd68da", "Personalizează-ți experiența"),
-                t("c0195168", "Schimbă-ți pictograma aplicației și opțiunile de navigare"),
-                t("b6b5dc94", "Devino utilizator verificat");
-            t("b06db848", "Ieși în evidență pe platformă"),
+                t("c0195168", "Schimbă-ți pictograma aplicației și opțiunile de navigare");
+            t("b6b5dc94", "Devino utilizator verificat"),
+                t("b06db848", "Ieși în evidență pe platformă"),
                 t("e3e3a97c", "Câștigă o cotă-parte din veniturile obținute din postările tale"),
                 t("f15bc24e", "Limite extinse pentru Grok"),
                 t("c4666e1c", "Capacitatea de a utiliza mai mult Grok 3, cel mai recent model al nostru"),
@@ -7859,8 +7860,7 @@
                 t("b33d1518", "Sincronizează locurile de muncă dintr-o integrare acceptată sau dintr-un flux personalizat XML"),
                 t("dd2db402", "Pasul 1: Colectează informațiile necesare"),
                 t("edb098c2", "Pasul 2: contactează echipa noastră de asistență"),
-                t("c4474460", "Pasul 2: Trimite un e-mail echipei de asistență"),
-                t("a08da0fa", "Ce se întâmplă în continuare?");
+                t("c4474460", "Pasul 2: Trimite un e-mail echipei de asistență");
             function c(e, a) {
                 for (var i = 0; i < a.length; i++) {
                     var t = a[i];
@@ -7899,7 +7899,8 @@
                     u(e, a)
                 );
             }
-            t("c127374e", "Trimite-ne un mesaj"),
+            t("a08da0fa", "Ce se întâmplă în continuare?"),
+                t("c127374e", "Trimite-ne un mesaj"),
                 t("b2cb2a0c", "Numele de utilizator al contului tău Organizații verificate"),
                 t("b8e64002", "Numele sistemului de monitorizare a candidaților"),
                 t("acb99db6", "URL-ul la site-ul cu cariere, unde sunt enumerate locurile de muncă"),
@@ -8901,9 +8902,9 @@
                 t("c057680c", "Nu putem reda videoclipul în acest browser. Încearcă un alt browser web."),
                 t("i5dfae6e", "Acest videoclip nu este disponibil în locația ta."),
                 t("c2388276", "Acest videoclip a fost șters."),
-                t("d2c96140", "Indicator audio pentru invitați"),
-                t("f6dc9146", "REDĂ DIN NOU");
-            t("d30c74fe", "Volum"),
+                t("d2c96140", "Indicator audio pentru invitați");
+            t("f6dc9146", "REDĂ DIN NOU"),
+                t("d30c74fe", "Volum"),
                 t("f2d4e6f2", "Urmărește din nou"),
                 t("e9f1af3a", "Află mai multe"),
                 t("f1881d86", "Această postare nu poate primi răspunsuri și nu poate fi distribuită sau apreciată."),
@@ -13249,4 +13250,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ro.7dd91d6a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ro.74a6b53a.js.map

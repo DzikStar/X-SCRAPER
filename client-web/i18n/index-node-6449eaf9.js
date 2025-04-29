@@ -601,6 +601,7 @@
                 a("e0cb0c72", "Ads"),
                 a("e2eef3c2", "Verified Orgs"),
                 a("b55d8a78", "Create your Space"),
+                a("e5323e36", "Go Live"),
                 a("a5a30af0", "Articles"),
                 a("d13d697c", "New"),
                 a("j0e2cfa8", "Business"),
@@ -900,9 +901,9 @@
                 a("i821844f", "Learn more"),
                 a("b0abbb17", "Learn more"),
                 a("e7e0d88b", "Learn more"),
-                a("i560665f", "Learn more"),
-                a("f6e774d9", "Learn more");
-            a("h486f755", "Learn more"),
+                a("i560665f", "Learn more");
+            a("f6e774d9", "Learn more"),
+                a("h486f755", "Learn more"),
                 a("bab41dab", "Learn more"),
                 a("e0ebdb29", "Learn more"),
                 a("f8493831", "Learn more"),
@@ -1908,9 +1909,9 @@
                 a("a330771e", "Copy link to your clipboard"),
                 a("b6510e68", "Copy your Article’s URL so you can share it."),
                 a("e4a6e006", "Something went wrong. Please try again."),
-                a("eff483e0", "After you publish, get a link to share the Article."),
-                a("ca15dd4e", "Draft");
-            a("bb40bf66", "Published"),
+                a("eff483e0", "After you publish, get a link to share the Article.");
+            a("ca15dd4e", "Draft"),
+                a("bb40bf66", "Published"),
                 a("h107935c", "Last saved just now"),
                 a("a753a870", "Apply"),
                 a("afccc67e", "Copy link to Article"),
@@ -2960,9 +2961,9 @@
                 a("c6f58084", "Developers"),
                 a("d83f18d2", "Directory"),
                 a("hc5aa17c", "Get the X app"),
-                a("j0693948", "Get the Grok app"),
-                a("fbf83158", "Warning: Payment failed");
-            a("jadeb4da", "Please urgently update your payment method before you lose your subscription benefits."),
+                a("j0693948", "Get the Grok app");
+            a("fbf83158", "Warning: Payment failed"),
+                a("jadeb4da", "Please urgently update your payment method before you lose your subscription benefits."),
                 a("bce3726a", "Update Billing"),
                 a("fce9ecce", "Suggested Videos"),
                 a("efe6ef9e", "View post"),
@@ -3876,9 +3877,9 @@
                 a("d7357e7e", "Remove from Co-hosts"),
                 a("bf307fc0", "Block and Remove"),
                 a("ccf2f24e", "Report"),
-                a("i22835de", "Approve"),
-                a("cb59a0fe", "Deny");
-            a("c2376960", "Requests to Speak"),
+                a("i22835de", "Approve");
+            a("cb59a0fe", "Deny"),
+                a("c2376960", "Requests to Speak"),
                 a("aba7dcdd", function (e) {
                     return "Invite " + e.name;
                 }),
@@ -4908,9 +4909,9 @@
                 a("a7b48b36", "The percentage of video views that were completed."),
                 a("a2580f2a", "Completion Rate"),
                 a("ff95a9cc", "Video ID"),
-                a("a97e358e", "Video Link"),
-                a("e10e8b46", "Only showing the videos from the last 100 days.");
-            a("ba37f6da", "Video overview"),
+                a("a97e358e", "Video Link");
+            a("e10e8b46", "Only showing the videos from the last 100 days."),
+                a("ba37f6da", "Video overview"),
                 a("f19846b2", "Video thumbnail"),
                 a("ccd6f4a8", "Video title"),
                 a("c8410542", "The number of times your video was viewed."),
@@ -5864,11 +5865,11 @@
                 a("a0ea2fa6", "Name field cannot be empty"),
                 a("eec37eac", "Bookmark Folder with that name already exists"),
                 a("fce0c59e", "Failed to parse the animation JSON. Please check the format of the JSON in your animation file and try again."),
-                a("g0eea6c2", "Failed to read the animation JSON file. Please try to open the file again."),
-                a("ae58026a", "Open a Branded Like .json file to preview");
-            a("hd0bc1eb", function (e) {
-                return e.name + " is live";
-            }),
+                a("g0eea6c2", "Failed to read the animation JSON file. Please try to open the file again.");
+            a("ae58026a", "Open a Branded Like .json file to preview"),
+                a("hd0bc1eb", function (e) {
+                    return e.name + " is live";
+                }),
                 a("bea1f26b", function (e) {
                     return e.name + " was live";
                 }),
@@ -6872,9 +6873,9 @@
                 a("fdd77a34", "Create longer posts"),
                 a("j6d26a7a", "Write as much as you’d like to share"),
                 a("c4fd68da", "Customize your experience"),
-                a("c0195168", "Change your app icon and navigation options"),
-                a("b6b5dc94", "Become verified");
-            a("b06db848", "Stand out from others on the platform"),
+                a("c0195168", "Change your app icon and navigation options");
+            a("b6b5dc94", "Become verified"),
+                a("b06db848", "Stand out from others on the platform"),
                 a("e3e3a97c", "Earn a share of revenue from your posts"),
                 a("f15bc24e", "Increased Grok limits"),
                 a("c4666e1c", "More usage of Grok 3, our latest model"),
@@ -7848,8 +7849,7 @@
                 a("b33d1518", "Sync jobs from a supported integration or a custom XML feed"),
                 a("dd2db402", "Step 1: Gather the required information"),
                 a("edb098c2", "Step 2: Contact our support team"),
-                a("c4474460", "Step 2: Email our support team"),
-                a("a08da0fa", "What happens next?");
+                a("c4474460", "Step 2: Email our support team");
             function i(e, t) {
                 for (var o = 0; o < t.length; o++) {
                     var a = t[o];
@@ -7888,7 +7888,8 @@
                     r(e, t)
                 );
             }
-            a("c127374e", "Send us a message"),
+            a("a08da0fa", "What happens next?"),
+                a("c127374e", "Send us a message"),
                 a("b2cb2a0c", "Username of your Verified Org account"),
                 a("b8e64002", "Name of your applicant tracking system"),
                 a("acb99db6", "Career site URL where your jobs are listed"),
@@ -8890,9 +8891,9 @@
                 a("c057680c", "We cannot play the video in this browser. Please try a different web browser."),
                 a("i5dfae6e", "This video is not available in your location."),
                 a("c2388276", "This video has been deleted."),
-                a("d2c96140", "Guest audio indicator"),
-                a("f6dc9146", "REPLAY");
-            a("d30c74fe", "Volume"),
+                a("d2c96140", "Guest audio indicator");
+            a("f6dc9146", "REPLAY"),
+                a("d30c74fe", "Volume"),
                 a("f2d4e6f2", "Watch again"),
                 a("e9f1af3a", "Find out more"),
                 a("f1881d86", "This post can’t be replied to, shared or liked."),
@@ -13236,4 +13237,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/index-node-6449eaf9.3dd3a85a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/index-node-6449eaf9.44697c0a.js.map

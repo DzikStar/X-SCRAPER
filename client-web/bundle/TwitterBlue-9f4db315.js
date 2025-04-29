@@ -2,6 +2,16 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["bundle.TwitterBlue-9f4db315"],
     {
+        225258: (e, t, r) => {
+            r.d(t, { Z: () => n });
+            const a = window?.location?.host ? `https://${window?.location?.host}` : "https://www.x.com",
+                n = ({ apiClient: e, featureSwitches: t }) => ({
+                    postConversion(t, r, n, o = {}) {
+                        const s = { conversions: [{ basePixel: t, eventPixel: r, twclid: n }] };
+                        return e.postUnversioned("/i/capi", s, { ...o, "content-type": "application/json" }, a).then((e) => e.data);
+                    },
+                });
+        },
         507651: (e, t, r) => {
             r.d(t, { Z: () => l });
             var a = r(807896),
@@ -125,23 +135,17 @@
                     }),
                 );
         },
-        116868: (e, t, r) => {
-            r.d(t, { q: () => s });
-            const a = window?.location?.host ? `https://${window?.location?.host}` : "https://www.x.com",
-                n = ({ apiClient: e, featureSwitches: t }) => ({
-                    postConversion(t, r, n, o = {}) {
-                        const s = { conversions: [{ basePixel: t, eventPixel: r, twclid: n }] };
-                        return e.postUnversioned("/i/capi", s, { ...o, "content-type": "application/json" }, a).then((e) => e.data);
-                    },
-                });
-            var o = r(917799);
-            const s =
-                    (e, t, r, a, s) =>
+        488645: (e, t, r) => {
+            r.d(t, { q: () => o });
+            var a = r(225258),
+                n = r(917799);
+            const o =
+                    (e, t, r, o, i) =>
                     async (c, l, { api: u, userPersistence: p }) => {
-                        const d = await i(p, r, a, s);
-                        return d ? (0, o.Vg)(c, { params: { basePixel: e, eventPixel: t, twclid: d }, request: ({ basePixel: e, eventPixel: t, twclid: r } = {}, a) => u.withEndpoint(n).postConversion(e, t, r, a) })("POST_CONVERSION") : Promise.resolve(null);
+                        const d = await s(p, r, o, i);
+                        return d ? (0, n.Vg)(c, { params: { basePixel: e, eventPixel: t, twclid: d }, request: ({ basePixel: e, eventPixel: t, twclid: r } = {}, n) => u.withEndpoint(a.Z).postConversion(e, t, r, n) })("POST_CONVERSION") : Promise.resolve(null);
                     },
-                i = async (e, t, r, a) => {
+                s = async (e, t, r, a) => {
                     let n = t;
                     if (a && n) await e.set(r, { twclid: n });
                     else {
@@ -173,8 +177,8 @@
                 v = r(376278),
                 P = r(511323),
                 E = r(254944),
-                S = r(465072),
-                Z = r(189700),
+                Z = r(465072),
+                S = r(189700),
                 _ = r(520489),
                 b = r(297938),
                 x = r(457566);
@@ -221,9 +225,9 @@
                     case "PaintbrushStroke":
                         return E.default;
                     case "ModeratorStroke":
-                        return S.default;
-                    case "Document":
                         return Z.default;
+                    case "Document":
+                        return S.default;
                     case "RadarStroke":
                         return _.default;
                     case "SearchPersonStroke":
@@ -243,7 +247,7 @@
                 i = r(811574),
                 c = r(548797),
                 l = r(125363),
-                u = r(116868),
+                u = r(488645),
                 p = r(248186);
             const d = ({ content: e, isTierSwitching: t, referringPage: r, selectedProduct: d, setSelectedProduct: m }) => {
                 const h = (0, n.useHistory)(),
@@ -295,24 +299,24 @@
                             }, 25);
                             return () => clearTimeout(e);
                         }, []);
-                    const Z = n.useRef(null),
+                    const S = n.useRef(null),
                         [_, b] = n.useState(0),
                         x = n.useRef(null),
                         [k, F] = n.useState(0);
                     n.useEffect(() => {
-                        b(Z.current?.clientHeight ?? 0), F(x.current?.clientHeight ?? 0);
-                    }, [Z.current?.clientHeight, x.current?.clientHeight, u]);
+                        b(S.current?.clientHeight ?? 0), F(x.current?.clientHeight ?? 0);
+                    }, [S.current?.clientHeight, x.current?.clientHeight, u]);
                     const C = n.useMemo(() => ({ marginTop: _, marginBottom: k }), [_, k]),
                         R = i.catalogItems.filter((e) => e.productCategory === r),
                         D = n.useMemo(() => e.apiContent?.products?.findIndex((e) => e.product_category === r) || 0, [e.apiContent?.products, r]),
-                        L = { content: e, referringPage: t, selectedProduct: r, setSelectedProduct: s, state: i, catalogItems: i.catalogItems, catalogItemsForProduct: R, headerRef: Z, footerRef: x, headerFooterOffset: C, selectedProductIndex: D };
+                        L = { content: e, referringPage: t, selectedProduct: r, setSelectedProduct: s, state: i, catalogItems: i.catalogItems, catalogItemsForProduct: R, headerRef: S, footerRef: x, headerFooterOffset: C, selectedProductIndex: D };
                     return n.createElement(
                         p.P.Provider,
                         { value: { footerHeight: k, headerHeight: _ } },
-                        n.createElement(o.Z, { style: [S.cover, u ? S.show : S.hide] }),
+                        n.createElement(o.Z, { style: [Z.cover, u ? Z.show : Z.hide] }),
                         n.createElement(
                             o.Z,
-                            { ref: E, style: S.root, testID: i.paywallDesignVariant },
+                            { ref: E, style: Z.root, testID: i.paywallDesignVariant },
                             (() => {
                                 switch (i.paywallDesignVariant) {
                                     case "feature_focused":
@@ -372,9 +376,9 @@
                         (0, c.jW)("premium-paywall-content-ready"), t.scribe({ element: "content-ready", action: "sent" });
                     }, [t]);
                     const p = r && 0 !== r?.catalogItems.length ? n.createElement(P, (0, a.Z)({}, e, { state: r })) : n.createElement(o.Z, { testID: "activity-indicator" });
-                    return n.createElement(n.Fragment, null, p, r?.printDebug ? n.createElement(o.Z, { style: S.printDebug, testID: "webview-paywall-debug" }, n.createElement(s.ZP, null, JSON.stringify(i, null, " \t"))) : null);
+                    return n.createElement(n.Fragment, null, p, r?.printDebug ? n.createElement(o.Z, { style: Z.printDebug, testID: "webview-paywall-debug" }, n.createElement(s.ZP, null, JSON.stringify(i, null, " \t"))) : null);
                 },
-                S = i.default.create((e) => ({ activityIndicator: { height: "100vh", display: "flex", justifyContent: "center" }, root: { WebkitUserSelect: "none", userSelect: "none" }, cover: { pointerEvents: "none", opacity: 1, transition: "opacity 100ms", position: "absolute", backgroundColor: e.colors.cellBackground, zIndex: 1, width: "100%", height: "100%" }, show: { opacity: 0 }, hide: { opacity: 1 }, printDebug: { marginBottom: e.spaces.space72 } }));
+                Z = i.default.create((e) => ({ activityIndicator: { height: "100vh", display: "flex", justifyContent: "center" }, root: { WebkitUserSelect: "none", userSelect: "none" }, cover: { pointerEvents: "none", opacity: 1, transition: "opacity 100ms", position: "absolute", backgroundColor: e.colors.cellBackground, zIndex: 1, width: "100%", height: "100%" }, show: { opacity: 0 }, hide: { opacity: 1 }, printDebug: { marginBottom: e.spaces.space72 } }));
         },
         757771: (e, t, r) => {
             e.exports = r.p + "V3GrokDark.c3fb24fa.png";
@@ -453,4 +457,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterBlue-9f4db315.2f072d4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterBlue-9f4db315.144f316a.js.map

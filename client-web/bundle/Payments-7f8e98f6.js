@@ -3,16 +3,16 @@
     ["bundle.Payments-7f8e98f6"],
     {
         986092: (e, a, n) => {
-            n.d(a, { Z: () => r });
+            n.d(a, { Z: () => s });
             var l,
-                t,
-                i = {
+                i,
+                t = {
                     fragment: {
                         argumentDefinitions: (l = [{ defaultValue: null, kind: "LocalArgument", name: "theme" }]),
                         kind: "Fragment",
                         metadata: null,
                         name: "useLinkBankCardMutation",
-                        selections: (t = [
+                        selections: (i = [
                             {
                                 alias: null,
                                 args: [
@@ -34,19 +34,19 @@
                         abstractKey: null,
                     },
                     kind: "Request",
-                    operation: { argumentDefinitions: l, kind: "Operation", name: "useLinkBankCardMutation", selections: t },
+                    operation: { argumentDefinitions: l, kind: "Operation", name: "useLinkBankCardMutation", selections: i },
                     params: { id: "4H7sxRxeTXoBW5mLdlBaDg", metadata: {}, name: "useLinkBankCardMutation", operationKind: "mutation", text: null },
                 };
-            i.hash = "ffb9482b5b17663122b08fc27f9aa3fd";
-            const r = i;
+            t.hash = "ffb9482b5b17663122b08fc27f9aa3fd";
+            const s = t;
         },
         59815: (e, a, n) => {
             n.d(a, { Z: () => u });
             var l,
-                t,
                 i,
-                r,
-                s = {
+                t,
+                s,
+                r = {
                     fragment: {
                         argumentDefinitions: (l = [{ defaultValue: null, kind: "LocalArgument", name: "redirect_url" }]),
                         kind: "Fragment",
@@ -55,7 +55,7 @@
                         selections: [
                             {
                                 alias: null,
-                                args: (t = [
+                                args: (i = [
                                     { kind: "Literal", name: "financial_institution_type", value: "Bank" },
                                     { kind: "Variable", name: "redirect_url", variableName: "redirect_url" },
                                     { kind: "Literal", name: "s", value: "4721" },
@@ -65,7 +65,7 @@
                                 name: "create_financial_institution_linking_session",
                                 plural: !1,
                                 selections: [
-                                    (i = {
+                                    (t = {
                                         kind: "InlineFragment",
                                         selections: [
                                             { alias: null, args: null, concreteType: "XPaymentsProviderToken", kind: "LinkedField", name: "linking_token", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "token", storageKey: null }], storageKey: null },
@@ -74,7 +74,7 @@
                                         type: "XPaymentsFinancialInstitutionLinkingSession",
                                         abstractKey: null,
                                     }),
-                                    (r = { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "XPaymentsCreateFinancialInstitutionLinkingSessionError", kind: "LinkedField", name: "errors", plural: !0, selections: [{ alias: null, args: null, kind: "ScalarField", name: "error_code", storageKey: null }], storageKey: null }], type: "XPaymentsCreateFinancialInstitutionLinkingSessionFailure", abstractKey: null }),
+                                    (s = { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "XPaymentsCreateFinancialInstitutionLinkingSessionError", kind: "LinkedField", name: "errors", plural: !0, selections: [{ alias: null, args: null, kind: "ScalarField", name: "error_code", storageKey: null }], storageKey: null }], type: "XPaymentsCreateFinancialInstitutionLinkingSessionFailure", abstractKey: null }),
                                 ],
                                 storageKey: null,
                             },
@@ -83,28 +83,28 @@
                         abstractKey: null,
                     },
                     kind: "Request",
-                    operation: { argumentDefinitions: l, kind: "Operation", name: "useLinkFinancialInstitutionMutation", selections: [{ alias: null, args: t, concreteType: null, kind: "LinkedField", name: "create_financial_institution_linking_session", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }, i, r], storageKey: null }] },
+                    operation: { argumentDefinitions: l, kind: "Operation", name: "useLinkFinancialInstitutionMutation", selections: [{ alias: null, args: i, concreteType: null, kind: "LinkedField", name: "create_financial_institution_linking_session", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }, t, s], storageKey: null }] },
                     params: { id: "i8S6lhGfbh_bx-tikiykSw", metadata: {}, name: "useLinkFinancialInstitutionMutation", operationKind: "mutation", text: null },
                 };
-            s.hash = "fff38a2da08a1ff4404648b5e5a9cd14";
-            const u = s;
+            r.hash = "fff38a2da08a1ff4404648b5e5a9cd14";
+            const u = r;
         },
         144098: (e, a, n) => {
             n.d(a, { Z: () => u });
             var l,
-                t,
                 i,
-                r,
-                s = {
+                t,
+                s,
+                r = {
                     fragment: {
-                        argumentDefinitions: [(l = { defaultValue: null, kind: "LocalArgument", name: "metadata" }), (t = { defaultValue: null, kind: "LocalArgument", name: "public_token" })],
+                        argumentDefinitions: [(l = { defaultValue: null, kind: "LocalArgument", name: "metadata" }), (i = { defaultValue: null, kind: "LocalArgument", name: "public_token" })],
                         kind: "Fragment",
                         metadata: null,
                         name: "useLinkTokenExchangeMutation",
                         selections: [
                             {
                                 alias: null,
-                                args: (i = [
+                                args: (t = [
                                     { kind: "Variable", name: "metadata", variableName: "metadata" },
                                     { kind: "Literal", name: "provider", value: "Plaid" },
                                     { kind: "Variable", name: "public_token", variableName: "public_token" },
@@ -114,7 +114,7 @@
                                 kind: "LinkedField",
                                 name: "exchange_public_token",
                                 plural: !1,
-                                selections: [(r = { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "XPaymentsPaymentMethodEntity", kind: "LinkedField", name: "payment_methods", plural: !0, selections: [{ alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }], storageKey: null }], type: "XPaymentsPaymentMethodResult", abstractKey: null })],
+                                selections: [(s = { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "XPaymentsPaymentMethodEntity", kind: "LinkedField", name: "payment_methods", plural: !0, selections: [{ alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }], storageKey: null }], type: "XPaymentsPaymentMethodResult", abstractKey: null })],
                                 storageKey: null,
                             },
                         ],
@@ -122,19 +122,19 @@
                         abstractKey: null,
                     },
                     kind: "Request",
-                    operation: { argumentDefinitions: [t, l], kind: "Operation", name: "useLinkTokenExchangeMutation", selections: [{ alias: null, args: i, concreteType: null, kind: "LinkedField", name: "exchange_public_token", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }, r], storageKey: null }] },
+                    operation: { argumentDefinitions: [i, l], kind: "Operation", name: "useLinkTokenExchangeMutation", selections: [{ alias: null, args: t, concreteType: null, kind: "LinkedField", name: "exchange_public_token", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }, s], storageKey: null }] },
                     params: { id: "G3M7_w7Rk5y3Ah69P0LdAw", metadata: {}, name: "useLinkTokenExchangeMutation", operationKind: "mutation", text: null },
                 };
-            s.hash = "f5dc254a8e541bb82a6488f1314bab4c";
-            const u = s;
+            r.hash = "f5dc254a8e541bb82a6488f1314bab4c";
+            const u = r;
         },
         652730: (e, a, n) => {
             n.d(a, { Z: () => u });
             var l,
-                t,
                 i,
-                r,
-                s = {
+                t,
+                s,
+                r = {
                     fragment: {
                         argumentDefinitions: (l = [{ defaultValue: null, kind: "LocalArgument", name: "payment_method_id" }]),
                         kind: "Fragment",
@@ -143,7 +143,7 @@
                         selections: [
                             {
                                 alias: null,
-                                args: (t = [
+                                args: (i = [
                                     { kind: "Variable", name: "payment_method_id", variableName: "payment_method_id" },
                                     { kind: "Literal", name: "s", value: "4721" },
                                 ]),
@@ -151,7 +151,7 @@
                                 kind: "LinkedField",
                                 name: "payment_method_link_update_complete",
                                 plural: !1,
-                                selections: [(i = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }), (r = { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "XPaymentsPaymentMethodLinkUpdateCompleteError", kind: "LinkedField", name: "errors", plural: !0, selections: [{ alias: null, args: null, kind: "ScalarField", name: "error_message", storageKey: null }], storageKey: null }], type: "XPaymentsPaymentMethodLinkUpdateCompleteFailure", abstractKey: null })],
+                                selections: [(t = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }), (s = { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "XPaymentsPaymentMethodLinkUpdateCompleteError", kind: "LinkedField", name: "errors", plural: !0, selections: [{ alias: null, args: null, kind: "ScalarField", name: "error_message", storageKey: null }], storageKey: null }], type: "XPaymentsPaymentMethodLinkUpdateCompleteFailure", abstractKey: null })],
                                 storageKey: null,
                             },
                         ],
@@ -159,25 +159,25 @@
                         abstractKey: null,
                     },
                     kind: "Request",
-                    operation: { argumentDefinitions: l, kind: "Operation", name: "useLinkUpdateCompleteMutation", selections: [{ alias: null, args: t, concreteType: null, kind: "LinkedField", name: "payment_method_link_update_complete", plural: !1, selections: [i, { kind: "TypeDiscriminator", abstractKey: "__isXPaymentsPaymentMethodLinkUpdateCompleteResult" }, r], storageKey: null }] },
+                    operation: { argumentDefinitions: l, kind: "Operation", name: "useLinkUpdateCompleteMutation", selections: [{ alias: null, args: i, concreteType: null, kind: "LinkedField", name: "payment_method_link_update_complete", plural: !1, selections: [t, { kind: "TypeDiscriminator", abstractKey: "__isXPaymentsPaymentMethodLinkUpdateCompleteResult" }, s], storageKey: null }] },
                     params: { id: "LNbwQMIN-XfxOsZciyUWMQ", metadata: {}, name: "useLinkUpdateCompleteMutation", operationKind: "mutation", text: null },
                 };
-            s.hash = "231c07d56ee420e65ae0c94657aaac6f";
-            const u = s;
+            r.hash = "231c07d56ee420e65ae0c94657aaac6f";
+            const u = r;
         },
         236706: (e, a, n) => {
             n.d(a, { Z: () => c });
             var l,
-                t,
                 i,
-                r,
+                t,
                 s,
+                r,
                 u,
-                o,
                 d,
+                o,
                 m = {
                     fragment: {
-                        argumentDefinitions: [(l = { defaultValue: null, kind: "LocalArgument", name: "amount_local_micro" }), (t = { defaultValue: null, kind: "LocalArgument", name: "currency" }), (i = { defaultValue: null, kind: "LocalArgument", name: "description" }), (r = { defaultValue: null, kind: "LocalArgument", name: "idempotency_key" }), (s = { defaultValue: null, kind: "LocalArgument", name: "payment_method_id" })],
+                        argumentDefinitions: [(l = { defaultValue: null, kind: "LocalArgument", name: "amount_local_micro" }), (i = { defaultValue: null, kind: "LocalArgument", name: "currency" }), (t = { defaultValue: null, kind: "LocalArgument", name: "description" }), (s = { defaultValue: null, kind: "LocalArgument", name: "idempotency_key" }), (r = { defaultValue: null, kind: "LocalArgument", name: "payment_method_id" })],
                         kind: "Fragment",
                         metadata: null,
                         name: "usePaymentDepositMutation",
@@ -197,7 +197,7 @@
                                 name: "create_deposit",
                                 plural: !1,
                                 selections: [
-                                    (o = {
+                                    (d = {
                                         kind: "InlineFragment",
                                         selections: [
                                             { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null },
@@ -207,7 +207,7 @@
                                         type: "XPaymentsTransaction",
                                         abstractKey: null,
                                     }),
-                                    (d = { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "XPaymentsCreateDepositError", kind: "LinkedField", name: "errors", plural: !0, selections: [{ alias: null, args: null, kind: "ScalarField", name: "error_code", storageKey: null }], storageKey: null }], type: "XPaymentsCreateDepositFailure", abstractKey: null }),
+                                    (o = { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "XPaymentsCreateDepositError", kind: "LinkedField", name: "errors", plural: !0, selections: [{ alias: null, args: null, kind: "ScalarField", name: "error_code", storageKey: null }], storageKey: null }], type: "XPaymentsCreateDepositFailure", abstractKey: null }),
                                 ],
                                 storageKey: null,
                             },
@@ -216,7 +216,7 @@
                         abstractKey: null,
                     },
                     kind: "Request",
-                    operation: { argumentDefinitions: [l, i, t, s, r], kind: "Operation", name: "usePaymentDepositMutation", selections: [{ alias: null, args: u, concreteType: null, kind: "LinkedField", name: "create_deposit", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }, o, d], storageKey: null }] },
+                    operation: { argumentDefinitions: [l, t, i, r, s], kind: "Operation", name: "usePaymentDepositMutation", selections: [{ alias: null, args: u, concreteType: null, kind: "LinkedField", name: "create_deposit", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }, d, o], storageKey: null }] },
                     params: { id: "FwEhmEjZDOCyRg9d6rAOMw", metadata: {}, name: "usePaymentDepositMutation", operationKind: "mutation", text: null },
                 };
             m.hash = "3ef71171c01e8d1faa7aec62894674e6";
@@ -225,16 +225,16 @@
         181234: (e, a, n) => {
             n.d(a, { Z: () => c });
             var l,
-                t,
                 i,
-                r,
+                t,
                 s,
+                r,
                 u,
-                o,
                 d,
+                o,
                 m = {
                     fragment: {
-                        argumentDefinitions: [(l = { defaultValue: null, kind: "LocalArgument", name: "amount_local_micro" }), (t = { defaultValue: null, kind: "LocalArgument", name: "currency" }), (i = { defaultValue: null, kind: "LocalArgument", name: "description" }), (r = { defaultValue: null, kind: "LocalArgument", name: "idempotency_key" }), (s = { defaultValue: null, kind: "LocalArgument", name: "sender_twitter_user_id" })],
+                        argumentDefinitions: [(l = { defaultValue: null, kind: "LocalArgument", name: "amount_local_micro" }), (i = { defaultValue: null, kind: "LocalArgument", name: "currency" }), (t = { defaultValue: null, kind: "LocalArgument", name: "description" }), (s = { defaultValue: null, kind: "LocalArgument", name: "idempotency_key" }), (r = { defaultValue: null, kind: "LocalArgument", name: "sender_twitter_user_id" })],
                         kind: "Fragment",
                         metadata: null,
                         name: "usePaymentRequestTransferMutation",
@@ -254,7 +254,7 @@
                                 name: "request_transfer",
                                 plural: !1,
                                 selections: [
-                                    (o = {
+                                    (d = {
                                         kind: "InlineFragment",
                                         selections: [
                                             { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null },
@@ -264,7 +264,7 @@
                                         type: "XPaymentsTransaction",
                                         abstractKey: null,
                                     }),
-                                    (d = { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "XPaymentsRequestTransferError", kind: "LinkedField", name: "errors", plural: !0, selections: [{ alias: null, args: null, kind: "ScalarField", name: "error_code", storageKey: null }], storageKey: null }], type: "XPaymentsRequestTransferFailure", abstractKey: null }),
+                                    (o = { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "XPaymentsRequestTransferError", kind: "LinkedField", name: "errors", plural: !0, selections: [{ alias: null, args: null, kind: "ScalarField", name: "error_code", storageKey: null }], storageKey: null }], type: "XPaymentsRequestTransferFailure", abstractKey: null }),
                                 ],
                                 storageKey: null,
                             },
@@ -273,7 +273,7 @@
                         abstractKey: null,
                     },
                     kind: "Request",
-                    operation: { argumentDefinitions: [l, i, t, s, r], kind: "Operation", name: "usePaymentRequestTransferMutation", selections: [{ alias: null, args: u, concreteType: null, kind: "LinkedField", name: "request_transfer", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }, { kind: "TypeDiscriminator", abstractKey: "__isXPaymentsRequestTransferResult" }, o, d], storageKey: null }] },
+                    operation: { argumentDefinitions: [l, t, i, r, s], kind: "Operation", name: "usePaymentRequestTransferMutation", selections: [{ alias: null, args: u, concreteType: null, kind: "LinkedField", name: "request_transfer", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }, { kind: "TypeDiscriminator", abstractKey: "__isXPaymentsRequestTransferResult" }, d, o], storageKey: null }] },
                     params: { id: "6WX0ffFrJN3R3CzVjlutrg", metadata: {}, name: "usePaymentRequestTransferMutation", operationKind: "mutation", text: null },
                 };
             m.hash = "02be2461297c12a861c7a979f93a2e8f";
@@ -282,16 +282,16 @@
         787560: (e, a, n) => {
             n.d(a, { Z: () => c });
             var l,
-                t,
                 i,
-                r,
+                t,
                 s,
+                r,
                 u,
-                o,
                 d,
+                o,
                 m = {
                     fragment: {
-                        argumentDefinitions: [(l = { defaultValue: null, kind: "LocalArgument", name: "amount_local_micro" }), (t = { defaultValue: null, kind: "LocalArgument", name: "currency" }), (i = { defaultValue: null, kind: "LocalArgument", name: "description" }), (r = { defaultValue: null, kind: "LocalArgument", name: "idempotency_key" }), (s = { defaultValue: null, kind: "LocalArgument", name: "receiver_twitter_user_id" })],
+                        argumentDefinitions: [(l = { defaultValue: null, kind: "LocalArgument", name: "amount_local_micro" }), (i = { defaultValue: null, kind: "LocalArgument", name: "currency" }), (t = { defaultValue: null, kind: "LocalArgument", name: "description" }), (s = { defaultValue: null, kind: "LocalArgument", name: "idempotency_key" }), (r = { defaultValue: null, kind: "LocalArgument", name: "receiver_twitter_user_id" })],
                         kind: "Fragment",
                         metadata: null,
                         name: "usePaymentTransferMutation",
@@ -311,7 +311,7 @@
                                 name: "create_transfer",
                                 plural: !1,
                                 selections: [
-                                    (o = {
+                                    (d = {
                                         kind: "InlineFragment",
                                         selections: [
                                             { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null },
@@ -321,7 +321,7 @@
                                         type: "XPaymentsTransaction",
                                         abstractKey: null,
                                     }),
-                                    (d = { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "XPaymentsCreateTransferError", kind: "LinkedField", name: "errors", plural: !0, selections: [{ alias: null, args: null, kind: "ScalarField", name: "error_code", storageKey: null }], storageKey: null }], type: "XPaymentsCreateTransferFailure", abstractKey: null }),
+                                    (o = { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "XPaymentsCreateTransferError", kind: "LinkedField", name: "errors", plural: !0, selections: [{ alias: null, args: null, kind: "ScalarField", name: "error_code", storageKey: null }], storageKey: null }], type: "XPaymentsCreateTransferFailure", abstractKey: null }),
                                 ],
                                 storageKey: null,
                             },
@@ -330,7 +330,7 @@
                         abstractKey: null,
                     },
                     kind: "Request",
-                    operation: { argumentDefinitions: [l, i, t, s, r], kind: "Operation", name: "usePaymentTransferMutation", selections: [{ alias: null, args: u, concreteType: null, kind: "LinkedField", name: "create_transfer", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }, { kind: "TypeDiscriminator", abstractKey: "__isXPaymentsCreateTransferResult" }, o, d], storageKey: null }] },
+                    operation: { argumentDefinitions: [l, t, i, r, s], kind: "Operation", name: "usePaymentTransferMutation", selections: [{ alias: null, args: u, concreteType: null, kind: "LinkedField", name: "create_transfer", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }, { kind: "TypeDiscriminator", abstractKey: "__isXPaymentsCreateTransferResult" }, d, o], storageKey: null }] },
                     params: { id: "uukZOYthkVIRWZodW6DXrQ", metadata: {}, name: "usePaymentTransferMutation", operationKind: "mutation", text: null },
                 };
             m.hash = "30372b0672544b77ef3227413f552c03";
@@ -339,16 +339,16 @@
         220474: (e, a, n) => {
             n.d(a, { Z: () => c });
             var l,
-                t,
                 i,
-                r,
+                t,
                 s,
+                r,
                 u,
-                o,
                 d,
+                o,
                 m = {
                     fragment: {
-                        argumentDefinitions: [(l = { defaultValue: null, kind: "LocalArgument", name: "amount_local_micro" }), (t = { defaultValue: null, kind: "LocalArgument", name: "currency" }), (i = { defaultValue: null, kind: "LocalArgument", name: "description" }), (r = { defaultValue: null, kind: "LocalArgument", name: "idempotency_key" }), (s = { defaultValue: null, kind: "LocalArgument", name: "payment_method_id" })],
+                        argumentDefinitions: [(l = { defaultValue: null, kind: "LocalArgument", name: "amount_local_micro" }), (i = { defaultValue: null, kind: "LocalArgument", name: "currency" }), (t = { defaultValue: null, kind: "LocalArgument", name: "description" }), (s = { defaultValue: null, kind: "LocalArgument", name: "idempotency_key" }), (r = { defaultValue: null, kind: "LocalArgument", name: "payment_method_id" })],
                         kind: "Fragment",
                         metadata: null,
                         name: "usePaymentTransferOutMutation",
@@ -368,7 +368,7 @@
                                 name: "create_withdrawal",
                                 plural: !1,
                                 selections: [
-                                    (o = {
+                                    (d = {
                                         kind: "InlineFragment",
                                         selections: [
                                             { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null },
@@ -378,7 +378,7 @@
                                         type: "XPaymentsTransaction",
                                         abstractKey: null,
                                     }),
-                                    (d = { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "XPaymentsCreateWithdrawalError", kind: "LinkedField", name: "errors", plural: !0, selections: [{ alias: null, args: null, kind: "ScalarField", name: "error_code", storageKey: null }], storageKey: null }], type: "XPaymentsCreateWithdrawalFailure", abstractKey: null }),
+                                    (o = { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "XPaymentsCreateWithdrawalError", kind: "LinkedField", name: "errors", plural: !0, selections: [{ alias: null, args: null, kind: "ScalarField", name: "error_code", storageKey: null }], storageKey: null }], type: "XPaymentsCreateWithdrawalFailure", abstractKey: null }),
                                 ],
                                 storageKey: null,
                             },
@@ -387,16 +387,16 @@
                         abstractKey: null,
                     },
                     kind: "Request",
-                    operation: { argumentDefinitions: [l, i, t, s, r], kind: "Operation", name: "usePaymentTransferOutMutation", selections: [{ alias: null, args: u, concreteType: null, kind: "LinkedField", name: "create_withdrawal", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }, o, d], storageKey: null }] },
+                    operation: { argumentDefinitions: [l, t, i, r, s], kind: "Operation", name: "usePaymentTransferOutMutation", selections: [{ alias: null, args: u, concreteType: null, kind: "LinkedField", name: "create_withdrawal", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }, d, o], storageKey: null }] },
                     params: { id: "xcPLCXa5SJWUw1zwMxBgAA", metadata: {}, name: "usePaymentTransferOutMutation", operationKind: "mutation", text: null },
                 };
             m.hash = "60ed5a27e4bd5a719963966c51b2c8bb";
             const c = m;
         },
         40969: (e, a, n) => {
-            n.d(a, { Z: () => i });
+            n.d(a, { Z: () => t });
             var l,
-                t = {
+                i = {
                     fragment: {
                         argumentDefinitions: [],
                         kind: "Fragment",
@@ -438,15 +438,140 @@
                     operation: { argumentDefinitions: [], kind: "Operation", name: "usePaymentsAccountEligibilityStatusMutation", selections: l },
                     params: { id: "t5RacliZlaQuWbVox6wp_Q", metadata: {}, name: "usePaymentsAccountEligibilityStatusMutation", operationKind: "mutation", text: null },
                 };
-            t.hash = "19f43aff1c7054223a231655937864e7";
-            const i = t;
+            i.hash = "19f43aff1c7054223a231655937864e7";
+            const t = i;
+        },
+        217995: (e, a, n) => {
+            n.d(a, { Z: () => t });
+            var l,
+                i = {
+                    fragment: {
+                        argumentDefinitions: [],
+                        kind: "Fragment",
+                        metadata: null,
+                        name: "usePaymentsAccountStatusQuery",
+                        selections: (l = [
+                            {
+                                alias: null,
+                                args: [{ kind: "Literal", name: "s", value: "4721" }],
+                                concreteType: "XPaymentsCustomer",
+                                kind: "LinkedField",
+                                name: "get_customer",
+                                plural: !1,
+                                selections: [
+                                    { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null },
+                                    { alias: null, args: null, kind: "ScalarField", name: "permissions", storageKey: null },
+                                    { alias: null, args: null, kind: "ScalarField", name: "roles", storageKey: null },
+                                    { kind: "ClientExtension", selections: [{ alias: null, args: null, kind: "ScalarField", name: "__id", storageKey: null }] },
+                                ],
+                                storageKey: 'get_customer(s:"4721")',
+                            },
+                        ]),
+                        type: "Query",
+                        abstractKey: null,
+                    },
+                    kind: "Request",
+                    operation: { argumentDefinitions: [], kind: "Operation", name: "usePaymentsAccountStatusQuery", selections: l },
+                    params: { id: "8qNB72LDdA7MIPa-TSs5nw", metadata: {}, name: "usePaymentsAccountStatusQuery", operationKind: "query", text: null },
+                };
+            i.hash = "037ff302ff922b7d6eaecbcec3eb1fdb";
+            const t = i;
+        },
+        183276: (e, a, n) => {
+            n.d(a, { Z: () => t });
+            var l,
+                i = {
+                    fragment: {
+                        argumentDefinitions: [],
+                        kind: "Fragment",
+                        metadata: null,
+                        name: "usePaymentsBalanceQuery",
+                        selections: (l = [
+                            {
+                                alias: null,
+                                args: [{ kind: "Literal", name: "s", value: "4721" }],
+                                concreteType: "XPaymentAccount",
+                                kind: "LinkedField",
+                                name: "get_accounts",
+                                plural: !0,
+                                selections: [
+                                    { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null },
+                                    { alias: null, args: null, kind: "ScalarField", name: "identifier", storageKey: null },
+                                    {
+                                        alias: null,
+                                        args: null,
+                                        concreteType: "XPaymentBalance",
+                                        kind: "LinkedField",
+                                        name: "balance",
+                                        plural: !1,
+                                        selections: [
+                                            { alias: null, args: null, kind: "ScalarField", name: "available_amount_local_micro", storageKey: null },
+                                            { alias: null, args: null, kind: "ScalarField", name: "currency", storageKey: null },
+                                        ],
+                                        storageKey: null,
+                                    },
+                                    { kind: "ClientExtension", selections: [{ alias: null, args: null, kind: "ScalarField", name: "__id", storageKey: null }] },
+                                ],
+                                storageKey: 'get_accounts(s:"4721")',
+                            },
+                        ]),
+                        type: "Query",
+                        abstractKey: null,
+                    },
+                    kind: "Request",
+                    operation: { argumentDefinitions: [], kind: "Operation", name: "usePaymentsBalanceQuery", selections: l },
+                    params: { id: "VLC5YNBevsKTDAHRVmHxQA", metadata: {}, name: "usePaymentsBalanceQuery", operationKind: "query", text: null },
+                };
+            i.hash = "e19dc41e69f79e3c85fc7a683b838348";
+            const t = i;
+        },
+        990312: (e, a, n) => {
+            n.d(a, { Z: () => t });
+            var l,
+                i = {
+                    fragment: {
+                        argumentDefinitions: [],
+                        kind: "Fragment",
+                        metadata: null,
+                        name: "usePaymentsConfigQuery",
+                        selections: (l = [
+                            {
+                                alias: null,
+                                args: [{ kind: "Literal", name: "s", value: "4721" }],
+                                concreteType: "XPaymentsClientConfig",
+                                kind: "LinkedField",
+                                name: "get_payments_client_config",
+                                plural: !1,
+                                selections: [
+                                    { alias: null, args: null, kind: "ScalarField", name: "payments_web_host", storageKey: null },
+                                    { alias: null, args: null, kind: "ScalarField", name: "sardine_client_id", storageKey: null },
+                                    { alias: null, args: null, kind: "ScalarField", name: "sardine_environment", storageKey: null },
+                                    { alias: null, args: null, kind: "ScalarField", name: "payments_help_url", storageKey: null },
+                                    { alias: null, args: null, kind: "ScalarField", name: "payments_report_url", storageKey: null },
+                                    { alias: null, args: null, kind: "ScalarField", name: "socure_public_key", storageKey: null },
+                                    { alias: null, args: null, kind: "ScalarField", name: "sardine_api_subdomain", storageKey: null },
+                                    { alias: null, args: null, kind: "ScalarField", name: "sardine_pixel_subdomain", storageKey: null },
+                                    { alias: null, args: null, kind: "ScalarField", name: "stripe_issuing_publishable_key", storageKey: null },
+                                ],
+                                storageKey: 'get_payments_client_config(s:"4721")',
+                            },
+                        ]),
+                        type: "Query",
+                        abstractKey: null,
+                    },
+                    kind: "Request",
+                    operation: { argumentDefinitions: [], kind: "Operation", name: "usePaymentsConfigQuery", selections: l },
+                    params: { id: "Xh0CemHkb-C4m_IIgMjxHw", metadata: {}, name: "usePaymentsConfigQuery", operationKind: "query", text: null },
+                };
+            i.hash = "c760d9c0183e704dfa8432d4f617f966";
+            const t = i;
         },
         576751: (e, a, n) => {
-            n.d(a, { Z: () => s });
+            n.d(a, { Z: () => r });
             var l,
-                t,
                 i,
-                r = {
+                t,
+                s = {
                     fragment: {
                         argumentDefinitions: (l = [
                             { defaultValue: null, kind: "LocalArgument", name: "document_type" },
@@ -455,7 +580,7 @@
                         kind: "Fragment",
                         metadata: null,
                         name: "usePaymentsDocumentsQuery",
-                        selections: (i = [
+                        selections: (t = [
                             {
                                 alias: null,
                                 args: [
@@ -476,14 +601,14 @@
                                         kind: "LinkedField",
                                         name: "end_date",
                                         plural: !1,
-                                        selections: (t = [
+                                        selections: (i = [
                                             { alias: null, args: null, kind: "ScalarField", name: "day", storageKey: null },
                                             { alias: null, args: null, kind: "ScalarField", name: "month", storageKey: null },
                                             { alias: null, args: null, kind: "ScalarField", name: "year", storageKey: null },
                                         ]),
                                         storageKey: null,
                                     },
-                                    { alias: null, args: null, concreteType: "XPaymentsDayMonthYear", kind: "LinkedField", name: "start_date", plural: !1, selections: t, storageKey: null },
+                                    { alias: null, args: null, concreteType: "XPaymentsDayMonthYear", kind: "LinkedField", name: "start_date", plural: !1, selections: i, storageKey: null },
                                     { alias: null, args: null, kind: "ScalarField", name: "url", storageKey: null },
                                 ],
                                 storageKey: null,
@@ -493,23 +618,23 @@
                         abstractKey: null,
                     },
                     kind: "Request",
-                    operation: { argumentDefinitions: l, kind: "Operation", name: "usePaymentsDocumentsQuery", selections: i },
+                    operation: { argumentDefinitions: l, kind: "Operation", name: "usePaymentsDocumentsQuery", selections: t },
                     params: { id: "hhOzh1oWHnxmcr1KVRTr0w", metadata: {}, name: "usePaymentsDocumentsQuery", operationKind: "query", text: null },
                 };
-            r.hash = "3222b6bc95095c4feedabf4cbb10e7b0";
-            const s = r;
+            s.hash = "3222b6bc95095c4feedabf4cbb10e7b0";
+            const r = s;
         },
         710555: (e, a, n) => {
-            n.d(a, { Z: () => r });
+            n.d(a, { Z: () => s });
             var l,
-                t,
-                i = {
+                i,
+                t = {
                     fragment: {
                         argumentDefinitions: [],
                         kind: "Fragment",
                         metadata: null,
                         name: "usePaymentsInterestQuery",
-                        selections: (t = [
+                        selections: (i = [
                             {
                                 alias: null,
                                 args: [{ kind: "Literal", name: "s", value: "4721" }],
@@ -555,17 +680,17 @@
                         abstractKey: null,
                     },
                     kind: "Request",
-                    operation: { argumentDefinitions: [], kind: "Operation", name: "usePaymentsInterestQuery", selections: t },
+                    operation: { argumentDefinitions: [], kind: "Operation", name: "usePaymentsInterestQuery", selections: i },
                     params: { id: "2MJ9VHVrtuugvzKgNqZRpQ", metadata: {}, name: "usePaymentsInterestQuery", operationKind: "query", text: null },
                 };
-            i.hash = "d78e91206490e3166cd8f0694c666328";
-            const r = i;
+            t.hash = "d78e91206490e3166cd8f0694c666328";
+            const s = t;
         },
         204133: (e, a, n) => {
-            n.d(a, { Z: () => r });
+            n.d(a, { Z: () => s });
             var l,
-                t,
-                i = {
+                i,
+                t = {
                     fragment: {
                         argumentDefinitions: [],
                         kind: "Fragment",
@@ -580,7 +705,7 @@
                                 name: "get_payments_invitation_details",
                                 plural: !1,
                                 selections: [
-                                    (t = {
+                                    (i = {
                                         kind: "InlineFragment",
                                         selections: [
                                             { alias: null, args: null, kind: "ScalarField", name: "invitation_amount_local_micro", storageKey: null },
@@ -598,16 +723,16 @@
                         abstractKey: null,
                     },
                     kind: "Request",
-                    operation: { argumentDefinitions: [], kind: "Operation", name: "usePaymentsInvitationDetailsQuery", selections: [{ alias: null, args: l, concreteType: null, kind: "LinkedField", name: "get_payments_invitation_details", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }, t], storageKey: 'get_payments_invitation_details(s:"4721")' }] },
+                    operation: { argumentDefinitions: [], kind: "Operation", name: "usePaymentsInvitationDetailsQuery", selections: [{ alias: null, args: l, concreteType: null, kind: "LinkedField", name: "get_payments_invitation_details", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }, i], storageKey: 'get_payments_invitation_details(s:"4721")' }] },
                     params: { id: "hF5qR7ovBbqQTtTYecIDTA", metadata: {}, name: "usePaymentsInvitationDetailsQuery", operationKind: "query", text: null },
                 };
-            i.hash = "0b2fcb0512092e626625d1a4fd02c399";
-            const r = i;
+            t.hash = "0b2fcb0512092e626625d1a4fd02c399";
+            const s = t;
         },
         924592: (e, a, n) => {
-            n.d(a, { Z: () => i });
+            n.d(a, { Z: () => t });
             var l,
-                t = {
+                i = {
                     fragment: {
                         argumentDefinitions: [],
                         kind: "Fragment",
@@ -660,25 +785,25 @@
                     operation: { argumentDefinitions: [], kind: "Operation", name: "usePaymentsLimitsQuery", selections: l },
                     params: { id: "u3KoVMePjS1C4sWfpOp-Sg", metadata: {}, name: "usePaymentsLimitsQuery", operationKind: "query", text: null },
                 };
-            t.hash = "d9c42db0dec9c9f01f282aef235aa66e";
-            const i = t;
+            i.hash = "d9c42db0dec9c9f01f282aef235aa66e";
+            const t = i;
         },
         388768: (e, a, n) => {
             n.d(a, { Z: () => u });
             var l,
-                t,
                 i,
-                r,
-                s = {
+                t,
+                s,
+                r = {
                     fragment: {
-                        argumentDefinitions: [(l = { defaultValue: null, kind: "LocalArgument", name: "payment_method_id" }), (t = { defaultValue: null, kind: "LocalArgument", name: "redirect_url" })],
+                        argumentDefinitions: [(l = { defaultValue: null, kind: "LocalArgument", name: "payment_method_id" }), (i = { defaultValue: null, kind: "LocalArgument", name: "redirect_url" })],
                         kind: "Fragment",
                         metadata: null,
                         name: "usePaymentsMethodUpdateMutation",
                         selections: [
                             {
                                 alias: null,
-                                args: (i = [
+                                args: (t = [
                                     { kind: "Variable", name: "payment_method_id", variableName: "payment_method_id" },
                                     { kind: "Variable", name: "redirect_url", variableName: "redirect_url" },
                                     { kind: "Literal", name: "s", value: "4721" },
@@ -688,7 +813,7 @@
                                 name: "create_item_update_session",
                                 plural: !1,
                                 selections: [
-                                    (r = {
+                                    (s = {
                                         kind: "InlineFragment",
                                         selections: [
                                             {
@@ -717,16 +842,141 @@
                         abstractKey: null,
                     },
                     kind: "Request",
-                    operation: { argumentDefinitions: [t, l], kind: "Operation", name: "usePaymentsMethodUpdateMutation", selections: [{ alias: null, args: i, concreteType: null, kind: "LinkedField", name: "create_item_update_session", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }, r], storageKey: null }] },
+                    operation: { argumentDefinitions: [i, l], kind: "Operation", name: "usePaymentsMethodUpdateMutation", selections: [{ alias: null, args: t, concreteType: null, kind: "LinkedField", name: "create_item_update_session", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }, s], storageKey: null }] },
                     params: { id: "k-QBnpPpCHmJ1gzwaaTRMw", metadata: {}, name: "usePaymentsMethodUpdateMutation", operationKind: "mutation", text: null },
                 };
-            s.hash = "6d722df25afcbe99520eb50514682edf";
-            const u = s;
+            r.hash = "6d722df25afcbe99520eb50514682edf";
+            const u = r;
+        },
+        703325: (e, a, n) => {
+            n.d(a, { Z: () => m });
+            var l,
+                i,
+                t,
+                s,
+                r,
+                u,
+                d,
+                o = {
+                    fragment: {
+                        argumentDefinitions: (l = [
+                            { defaultValue: null, kind: "LocalArgument", name: "filter" },
+                            { defaultValue: null, kind: "LocalArgument", name: "withIssuedSpend" },
+                        ]),
+                        kind: "Fragment",
+                        metadata: null,
+                        name: "usePaymentsMethodsQuery",
+                        selections: [
+                            {
+                                alias: null,
+                                args: (i = [
+                                    { kind: "Variable", name: "filter", variableName: "filter" },
+                                    { kind: "Literal", name: "s", value: "4721" },
+                                ]),
+                                concreteType: "XPaymentsPaymentMethod",
+                                kind: "LinkedField",
+                                name: "get_payment_methods_v2",
+                                plural: !0,
+                                selections: [
+                                    (t = { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }),
+                                    (u = {
+                                        alias: null,
+                                        args: null,
+                                        concreteType: "XPaymentsPaymentMethodCore",
+                                        kind: "LinkedField",
+                                        name: "core",
+                                        plural: !1,
+                                        selections: [
+                                            {
+                                                alias: null,
+                                                args: null,
+                                                concreteType: null,
+                                                kind: "LinkedField",
+                                                name: "details",
+                                                plural: !1,
+                                                selections: [
+                                                    { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null },
+                                                    { kind: "InlineFragment", selections: [{ alias: null, args: null, kind: "ScalarField", name: "account_number_mask", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "bank_account_type", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "bank_name", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "logo", storageKey: null }, (s = { alias: null, args: null, kind: "ScalarField", name: "status", storageKey: null })], type: "XPaymentsBankAccountPaymentMethod", abstractKey: null },
+                                                    { kind: "InlineFragment", selections: [s, { alias: null, args: null, kind: "ScalarField", name: "bin", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "card_brand", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "card_number_mask", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "issued_card_type", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "card_type", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "expiration_month", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "expiration_year", storageKey: null }], type: "XPaymentsCreditCardPaymentMethod", abstractKey: null },
+                                                ],
+                                                storageKey: null,
+                                            },
+                                            { condition: "withIssuedSpend", kind: "Condition", passingValue: !0, selections: [{ alias: null, args: null, concreteType: "XPaymentsPaymentProviderReference", kind: "LinkedField", name: "details_provider_reference", plural: !1, selections: [(r = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }), { alias: null, args: null, kind: "ScalarField", name: "provider", storageKey: null }], storageKey: null }] },
+                                        ],
+                                        storageKey: null,
+                                    }),
+                                    (d = { kind: "ClientExtension", selections: [{ alias: null, args: null, kind: "ScalarField", name: "__id", storageKey: null }] }),
+                                ],
+                                storageKey: null,
+                            },
+                            d,
+                        ],
+                        type: "Query",
+                        abstractKey: null,
+                    },
+                    kind: "Request",
+                    operation: { argumentDefinitions: l, kind: "Operation", name: "usePaymentsMethodsQuery", selections: [{ alias: null, args: i, concreteType: "XPaymentsPaymentMethod", kind: "LinkedField", name: "get_payment_methods_v2", plural: !0, selections: [t, u, r, d], storageKey: null }, d] },
+                    params: { id: "m_W9-Fw5Wygk-P4XL7KecQ", metadata: {}, name: "usePaymentsMethodsQuery", operationKind: "query", text: null },
+                };
+            o.hash = "3c6ca474304b23769939e90a51699acc";
+            const m = o;
+        },
+        215285: (e, a, n) => {
+            n.d(a, { Z: () => t });
+            var l,
+                i = {
+                    fragment: {
+                        argumentDefinitions: [],
+                        kind: "Fragment",
+                        metadata: null,
+                        name: "usePaymentsPreferencesQuery",
+                        selections: (l = [
+                            {
+                                alias: null,
+                                args: [{ kind: "Literal", name: "s", value: "4721" }],
+                                concreteType: "XPaymentsCustomer",
+                                kind: "LinkedField",
+                                name: "get_customer",
+                                plural: !1,
+                                selections: [
+                                    { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null },
+                                    {
+                                        alias: null,
+                                        args: null,
+                                        concreteType: "XPaymentsCustomerPreferences",
+                                        kind: "LinkedField",
+                                        name: "preferences",
+                                        plural: !1,
+                                        selections: [
+                                            { alias: null, args: null, kind: "ScalarField", name: "require_pin_to_create_transactions", storageKey: null },
+                                            { alias: null, args: null, kind: "ScalarField", name: "require_pin_to_unlock", storageKey: null },
+                                            { alias: null, args: null, kind: "ScalarField", name: "enable_bill_pay", storageKey: null },
+                                            { alias: null, args: null, kind: "ScalarField", name: "require_pin_to_link_payment_method", storageKey: null },
+                                            { alias: null, args: null, kind: "ScalarField", name: "only_receive_transfer_from_following", storageKey: null },
+                                            { alias: null, args: null, kind: "ScalarField", name: "only_allow_request_from_following", storageKey: null },
+                                            { alias: null, args: null, kind: "ScalarField", name: "enable_card_payments", storageKey: null },
+                                        ],
+                                        storageKey: null,
+                                    },
+                                    { kind: "ClientExtension", selections: [{ alias: null, args: null, kind: "ScalarField", name: "__id", storageKey: null }] },
+                                ],
+                                storageKey: 'get_customer(s:"4721")',
+                            },
+                        ]),
+                        type: "Query",
+                        abstractKey: null,
+                    },
+                    kind: "Request",
+                    operation: { argumentDefinitions: [], kind: "Operation", name: "usePaymentsPreferencesQuery", selections: l },
+                    params: { id: "rS0HgAfk9NyBMeBXBIyv8Q", metadata: {}, name: "usePaymentsPreferencesQuery", operationKind: "query", text: null },
+                };
+            i.hash = "d9c8bafaddc6a31ffc8c11a6be9f9e5f";
+            const t = i;
         },
         177405: (e, a, n) => {
-            n.d(a, { Z: () => i });
+            n.d(a, { Z: () => t });
             var l,
-                t = {
+                i = {
                     fragment: {
                         argumentDefinitions: [],
                         kind: "Fragment",
@@ -755,16 +1005,16 @@
                     operation: { argumentDefinitions: [], kind: "Operation", name: "usePaymentsRegionQuery", selections: l },
                     params: { id: "XvNMy_C13ik6VOBa08n23A", metadata: {}, name: "usePaymentsRegionQuery", operationKind: "query", text: null },
                 };
-            t.hash = "27c50b3a3248a79615ab46e65a81dd9c";
-            const i = t;
+            i.hash = "27c50b3a3248a79615ab46e65a81dd9c";
+            const t = i;
         },
         708419: (e, a, n) => {
             n.d(a, { Z: () => u });
             var l,
-                t,
                 i,
-                r,
-                s = {
+                t,
+                s,
+                r = {
                     fragment: {
                         argumentDefinitions: (l = [{ defaultValue: null, kind: "LocalArgument", name: "provider_tokens" }]),
                         kind: "Fragment",
@@ -773,7 +1023,7 @@
                         selections: [
                             {
                                 alias: null,
-                                args: (t = [
+                                args: (i = [
                                     { kind: "Variable", name: "provider_tokens", variableName: "provider_tokens" },
                                     { kind: "Literal", name: "s", value: "4721" },
                                 ]),
@@ -782,7 +1032,7 @@
                                 name: "create_x_payments_auth_session_v2",
                                 plural: !1,
                                 selections: [
-                                    (i = {
+                                    (t = {
                                         kind: "InlineFragment",
                                         selections: [
                                             { alias: null, args: null, kind: "ScalarField", name: "session_id", storageKey: null },
@@ -807,7 +1057,7 @@
                                         type: "XPaymentsAuthSession",
                                         abstractKey: null,
                                     }),
-                                    (r = { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "XPaymentsCreateAuthSessionError", kind: "LinkedField", name: "errors", plural: !0, selections: [{ alias: null, args: null, kind: "ScalarField", name: "error_code", storageKey: null }], storageKey: null }], type: "XPaymentsCreateAuthSessionFailure", abstractKey: null }),
+                                    (s = { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "XPaymentsCreateAuthSessionError", kind: "LinkedField", name: "errors", plural: !0, selections: [{ alias: null, args: null, kind: "ScalarField", name: "error_code", storageKey: null }], storageKey: null }], type: "XPaymentsCreateAuthSessionFailure", abstractKey: null }),
                                 ],
                                 storageKey: null,
                             },
@@ -816,207 +1066,12 @@
                         abstractKey: null,
                     },
                     kind: "Request",
-                    operation: { argumentDefinitions: l, kind: "Operation", name: "usePaymentsSessionMutation", selections: [{ alias: null, args: t, concreteType: null, kind: "LinkedField", name: "create_x_payments_auth_session_v2", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }, { kind: "TypeDiscriminator", abstractKey: "__isXPaymentsCreateAuthSessionResult" }, i, r], storageKey: null }] },
+                    operation: { argumentDefinitions: l, kind: "Operation", name: "usePaymentsSessionMutation", selections: [{ alias: null, args: i, concreteType: null, kind: "LinkedField", name: "create_x_payments_auth_session_v2", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }, { kind: "TypeDiscriminator", abstractKey: "__isXPaymentsCreateAuthSessionResult" }, t, s], storageKey: null }] },
                     params: { id: "jrS6luzi2VuDNWvsG4ZSZA", metadata: {}, name: "usePaymentsSessionMutation", operationKind: "mutation", text: null },
                 };
-            s.hash = "10451d8395be901d74dce6c7862265ac";
-            const u = s;
-        },
-        526274: (e, a, n) => {
-            n.d(a, { Z: () => m });
-            var l,
-                t,
-                i,
-                r,
-                s,
-                u,
-                o,
-                d = {
-                    fragment: {
-                        argumentDefinitions: (l = [{ defaultValue: null, kind: "LocalArgument", name: "payment_method_id" }]),
-                        kind: "Fragment",
-                        metadata: null,
-                        name: "usePhysicalCardDetailsQuery",
-                        selections: [
-                            {
-                                alias: null,
-                                args: (t = [
-                                    { kind: "Variable", name: "payment_method_id", variableName: "payment_method_id" },
-                                    { kind: "Literal", name: "s", value: "4721" },
-                                ]),
-                                concreteType: "XPaymentsPaymentMethod",
-                                kind: "LinkedField",
-                                name: "get_payment_method",
-                                plural: !1,
-                                selections: [
-                                    (i = { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }),
-                                    (s = { alias: null, args: null, concreteType: "XPaymentsPaymentMethodCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ alias: null, args: null, concreteType: "XPaymentsPaymentProviderReference", kind: "LinkedField", name: "details_provider_reference", plural: !1, selections: [(r = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }), { alias: null, args: null, kind: "ScalarField", name: "provider", storageKey: null }], storageKey: null }], storageKey: null }),
-                                    (u = {
-                                        alias: null,
-                                        args: null,
-                                        concreteType: "XPaymentsGetIssuedCardShipping",
-                                        kind: "LinkedField",
-                                        name: "shipping",
-                                        plural: !1,
-                                        selections: [
-                                            { alias: null, args: null, kind: "ScalarField", name: "eta_millis", storageKey: null },
-                                            { alias: null, args: null, kind: "ScalarField", name: "status", storageKey: null },
-                                        ],
-                                        storageKey: null,
-                                    }),
-                                    (o = { kind: "ClientExtension", selections: [{ alias: null, args: null, kind: "ScalarField", name: "__id", storageKey: null }] }),
-                                ],
-                                storageKey: null,
-                            },
-                        ],
-                        type: "Query",
-                        abstractKey: null,
-                    },
-                    kind: "Request",
-                    operation: { argumentDefinitions: l, kind: "Operation", name: "usePhysicalCardDetailsQuery", selections: [{ alias: null, args: t, concreteType: "XPaymentsPaymentMethod", kind: "LinkedField", name: "get_payment_method", plural: !1, selections: [i, s, u, r, o], storageKey: null }] },
-                    params: { id: "biZPiI0hHL4s98hMW6sk_w", metadata: {}, name: "usePhysicalCardDetailsQuery", operationKind: "query", text: null },
-                };
-            d.hash = "7c61033241bf092de44c7d80aaeef4df";
-            const m = d;
-        },
-        922524: (e, a, n) => {
-            n.d(a, { Z: () => u });
-            var l,
-                t,
-                i,
-                r,
-                s = {
-                    fragment: {
-                        argumentDefinitions: (l = [
-                            { defaultValue: null, kind: "LocalArgument", name: "decision" },
-                            { defaultValue: null, kind: "LocalArgument", name: "transfer_id" },
-                        ]),
-                        kind: "Fragment",
-                        metadata: null,
-                        name: "useRespondToRequestMutation",
-                        selections: [
-                            {
-                                alias: null,
-                                args: (t = [
-                                    { kind: "Variable", name: "decision", variableName: "decision" },
-                                    { kind: "Literal", name: "s", value: "4721" },
-                                    { kind: "Variable", name: "transfer_id", variableName: "transfer_id" },
-                                ]),
-                                concreteType: null,
-                                kind: "LinkedField",
-                                name: "respond_to_request_transfer",
-                                plural: !1,
-                                selections: [
-                                    (i = {
-                                        kind: "InlineFragment",
-                                        selections: [
-                                            { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null },
-                                            { alias: null, args: null, kind: "ScalarField", name: "transaction_status", storageKey: null },
-                                            { alias: null, args: null, kind: "ScalarField", name: "challenge_id", storageKey: null },
-                                            { alias: null, args: null, kind: "ScalarField", name: "reason_code", storageKey: null },
-                                        ],
-                                        type: "XPaymentsTransaction",
-                                        abstractKey: null,
-                                    }),
-                                    (r = { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "XPaymentsRespondToRequestTransferError", kind: "LinkedField", name: "errors", plural: !0, selections: [{ alias: null, args: null, kind: "ScalarField", name: "error_code", storageKey: null }], storageKey: null }], type: "XPaymentsRespondToRequestTransferFailure", abstractKey: null }),
-                                ],
-                                storageKey: null,
-                            },
-                        ],
-                        type: "Mutation",
-                        abstractKey: null,
-                    },
-                    kind: "Request",
-                    operation: { argumentDefinitions: l, kind: "Operation", name: "useRespondToRequestMutation", selections: [{ alias: null, args: t, concreteType: null, kind: "LinkedField", name: "respond_to_request_transfer", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }, { kind: "TypeDiscriminator", abstractKey: "__isXPaymentsRespondToRequestTransferResult" }, i, r], storageKey: null }] },
-                    params: { id: "-DdgykE4pvpWCb8IQM56rA", metadata: {}, name: "useRespondToRequestMutation", operationKind: "mutation", text: null },
-                };
-            s.hash = "032ec762eb37a835915cf37c38d78961";
-            const u = s;
-        },
-        800697: (e, a, n) => {
-            n.d(a, { Z: () => s });
-            var l,
-                t,
-                i,
-                r = {
-                    fragment: {
-                        argumentDefinitions: (l = [{ defaultValue: null, kind: "LocalArgument", name: "challengeId" }]),
-                        kind: "Fragment",
-                        metadata: null,
-                        name: "useStartTwoFactorAuthQuery",
-                        selections: (i = [
-                            {
-                                alias: null,
-                                args: [{ kind: "Literal", name: "s", value: "8cce" }],
-                                concreteType: "Viewer",
-                                kind: "LinkedField",
-                                name: "viewer_v2",
-                                plural: !1,
-                                selections: [
-                                    {
-                                        alias: null,
-                                        args: [{ kind: "Variable", name: "challenge_id", variableName: "challengeId" }],
-                                        concreteType: "XPaymentsStartTwoFactorLogin",
-                                        kind: "LinkedField",
-                                        name: "xp_start_two_factor_auth_challenge",
-                                        plural: !1,
-                                        selections: [
-                                            { alias: null, args: null, concreteType: "XPaymentsTwoFactorLoginVerificationRequest", kind: "LinkedField", name: "login_request", plural: !1, selections: [(t = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }), { alias: null, args: null, kind: "ScalarField", name: "challenge", storageKey: null }, { alias: null, args: null, concreteType: "XPaymentsTwoFactorAuthMethod", kind: "LinkedField", name: "two_factor_auth_method", plural: !1, selections: [t, { alias: null, args: null, kind: "ScalarField", name: "two_factor_type", storageKey: null }], storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }], storageKey: null },
-                                            { alias: null, args: null, kind: "ScalarField", name: "error", storageKey: null },
-                                        ],
-                                        storageKey: null,
-                                    },
-                                ],
-                                storageKey: 'viewer_v2(s:"8cce")',
-                            },
-                        ]),
-                        type: "Query",
-                        abstractKey: null,
-                    },
-                    kind: "Request",
-                    operation: { argumentDefinitions: l, kind: "Operation", name: "useStartTwoFactorAuthQuery", selections: i },
-                    params: { id: "mmKuTztykqv5M7qri5pU1A", metadata: {}, name: "useStartTwoFactorAuthQuery", operationKind: "query", text: null },
-                };
-            r.hash = "621c0a9b6870bcd7697f74f77643806d";
-            const s = r;
-        },
-        746523: (e, a, n) => {
-            n.d(a, { Z: () => u });
-            var l,
-                t,
-                i,
-                r,
-                s = {
-                    fragment: {
-                        argumentDefinitions: (l = [{ defaultValue: null, kind: "LocalArgument", name: "preferences" }]),
-                        kind: "Fragment",
-                        metadata: null,
-                        name: "useUpdatePaymentsPreferencesMutation",
-                        selections: [
-                            {
-                                alias: null,
-                                args: (t = [
-                                    { kind: "Variable", name: "preferences", variableName: "preferences" },
-                                    { kind: "Literal", name: "s", value: "4721" },
-                                ]),
-                                concreteType: null,
-                                kind: "LinkedField",
-                                name: "update_customer_preferences",
-                                plural: !1,
-                                selections: [(i = { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "XPaymentsUpdateCustomerPreferencesError", kind: "LinkedField", name: "errors", plural: !0, selections: [{ alias: null, args: null, kind: "ScalarField", name: "error_code", storageKey: null }], storageKey: null }], type: "XPaymentsUpdateCustomerPreferencesFailure", abstractKey: null }), (r = { kind: "InlineFragment", selections: [{ alias: null, args: null, kind: "ScalarField", name: "challenge_id", storageKey: null }], type: "XPaymentsUpdateCustomerPreferencesSuccess", abstractKey: null })],
-                                storageKey: null,
-                            },
-                        ],
-                        type: "Mutation",
-                        abstractKey: null,
-                    },
-                    kind: "Request",
-                    operation: { argumentDefinitions: l, kind: "Operation", name: "useUpdatePaymentsPreferencesMutation", selections: [{ alias: null, args: t, concreteType: null, kind: "LinkedField", name: "update_customer_preferences", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }, { kind: "TypeDiscriminator", abstractKey: "__isXPaymentsUpdateCustomerPreferencesResult" }, i, r], storageKey: null }] },
-                    params: { id: "FPIMG7UNLnx0q4pSYMg-6Q", metadata: {}, name: "useUpdatePaymentsPreferencesMutation", operationKind: "mutation", text: null },
-                };
-            s.hash = "9032a3b7dbe58e60ac00947544d3283e";
-            const u = s;
+            r.hash = "10451d8395be901d74dce6c7862265ac";
+            const u = r;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-7f8e98f6.4846044a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-7f8e98f6.8df35d5a.js.map

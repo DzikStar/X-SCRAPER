@@ -600,6 +600,7 @@
                 i("e0cb0c72", "Iklan"),
                 i("e2eef3c2", "Organisasi Disahkan"),
                 i("b55d8a78", "Cipta Space anda"),
+                i("e5323e36", "Go Live"),
                 i("a5a30af0", "Artikel"),
                 i("d13d697c", "Baharu"),
                 i("j0e2cfa8", "Perniagaan"),
@@ -899,9 +900,9 @@
                 i("i821844f", "Ketahui lebih lanjut"),
                 i("b0abbb17", "Ketahui lebih lanjut"),
                 i("e7e0d88b", "Ketahui lebih lanjut"),
-                i("i560665f", "Ketahui lebih lanjut"),
-                i("f6e774d9", "Ketahui lebih lanjut");
-            i("h486f755", "Ketahui lebih lanjut"),
+                i("i560665f", "Ketahui lebih lanjut");
+            i("f6e774d9", "Ketahui lebih lanjut"),
+                i("h486f755", "Ketahui lebih lanjut"),
                 i("bab41dab", "Ketahui lebih lanjut"),
                 i("e0ebdb29", "Ketahui lebih lanjut"),
                 i("f8493831", "Ketahui lebih lanjut"),
@@ -1907,9 +1908,9 @@
                 i("a330771e", "Salin pautan pada papan klip anda"),
                 i("b6510e68", "Salin URL Artikel anda supaya boleh dikongsi."),
                 i("e4a6e006", "Ada sesuatu yang tidak kena. Sila cuba lagi."),
-                i("eff483e0", "Selepas diterbitkan, dapatkan pautan untuk berkongsi Artikel anda."),
-                i("ca15dd4e", "Draf");
-            i("bb40bf66", "Diterbitkan"),
+                i("eff483e0", "Selepas diterbitkan, dapatkan pautan untuk berkongsi Artikel anda.");
+            i("ca15dd4e", "Draf"),
+                i("bb40bf66", "Diterbitkan"),
                 i("h107935c", "Kali terakhir disimpan sebentar tadi"),
                 i("a753a870", "Gunakan"),
                 i("afccc67e", "Salin pautan kepada Artikel"),
@@ -2959,9 +2960,9 @@
                 i("c6f58084", "Pembangun"),
                 i("d83f18d2", "Direktori"),
                 i("hc5aa17c", "Dapatkan aplikasi X"),
-                i("j0693948", "Dapatkan aplikasi Grok"),
-                i("fbf83158", "Amaran: Pembayaran gagal");
-            i("jadeb4da", "Sila kemas kini kaedah pembayaran anda dengan segera sebelum anda kehilangan manfaat langganan anda."),
+                i("j0693948", "Dapatkan aplikasi Grok");
+            i("fbf83158", "Amaran: Pembayaran gagal"),
+                i("jadeb4da", "Sila kemas kini kaedah pembayaran anda dengan segera sebelum anda kehilangan manfaat langganan anda."),
                 i("bce3726a", "Kemas Kini Pengebilan"),
                 i("fce9ecce", "Video yang Dicadangkan"),
                 i("efe6ef9e", "Lihat siaran"),
@@ -3875,9 +3876,9 @@
                 i("d7357e7e", "Alih keluar daripada menjadi Hos lain"),
                 i("bf307fc0", "Sekat dan Alih keluar"),
                 i("ccf2f24e", "Laporan"),
-                i("i22835de", "Luluskan"),
-                i("cb59a0fe", "Tolak");
-            i("c2376960", "Meminta untuk Berbicara"),
+                i("i22835de", "Luluskan");
+            i("cb59a0fe", "Tolak"),
+                i("c2376960", "Meminta untuk Berbicara"),
                 i("aba7dcdd", function (a) {
                     return "Jemput " + a.name;
                 }),
@@ -4797,7 +4798,7 @@
                 i("h7d28188", "Kembali ke kandungan"),
                 i("if2704e4", "Back to Live Overview"),
                 i("ea928ae4", "Kembali ke Spaces"),
-                i("e8c07c22", "broadcast"),
+                i("e8c07c22", "siaran"),
                 i("a4ce6e68", "Broadcast Metrics"),
                 i("b2214c74", "Total number of views for this broadcast"),
                 i("d4fcf83a", "Total time viewers spent watching this broadcast"),
@@ -4844,7 +4845,7 @@
                 i("c4a7a6aa", "Live data"),
                 i("a992032a", "Livestream Analytics"),
                 i("ie45edda", "Ringkasan strim langsung"),
-                i("e30fc268", "Live Viewers"),
+                i("e30fc268", "Penonton Siaran Langsung"),
                 i("bd37f68e", "Aktiviti media"),
                 i("fe074210", "minit"),
                 i("jd03a1b8", "Minutes Watched"),
@@ -4856,8 +4857,8 @@
                 i("jbcb09a8", "Data masih belum mencukupi"),
                 i("df846d6c", "Tiada siaran ditemukan untuk julat masa yang dipilih"),
                 i("g2ba40f6", "Tiada Spaces tersedia untuk penapis yang dipilih"),
-                i("j44061a0", "Not available"),
-                i("c4a93912", "N/A"),
+                i("j44061a0", "Tidak tersedia"),
+                i("c4a93912", "Tidak tersedia"),
                 i("a6b78788", "No viewer data available"),
                 i("b2438638", "daripada jumlah"),
                 i("ic0399e0", "Paparan Organik"),
@@ -4888,7 +4889,7 @@
                 i("cf3709da", "Status"),
                 i("e797dc32", "Stream time: "),
                 i("b649d8cc", "Pelanggan Sahaja"),
-                i("j9282130", "Broadcast thumbnail"),
+                i("j9282130", "Lakaran kecil siaran"),
                 i("g629b8b0", "Timed Out"),
                 i("eb87323c", "This shows analytics data for the selected time period since the livestream happened."),
                 i("i6a75722", "Time Range"),
@@ -4907,9 +4908,9 @@
                 i("a7b48b36", "Peratus tontonan video yang diselesaikan."),
                 i("a2580f2a", "Kadar Selesai"),
                 i("ff95a9cc", "ID Video"),
-                i("a97e358e", "Pautan Video"),
-                i("e10e8b46", "Hanya tunjukkan video daripada 100 hari yang lalu.");
-            i("ba37f6da", "Gambaran keseluruhan video"),
+                i("a97e358e", "Pautan Video");
+            i("e10e8b46", "Hanya tunjukkan video daripada 100 hari yang lalu."),
+                i("ba37f6da", "Gambaran keseluruhan video"),
                 i("f19846b2", "Lakaran kecil video"),
                 i("ccd6f4a8", "Tajuk video"),
                 i("c8410542", "Bilangan kali video anda ditonton."),
@@ -5863,11 +5864,11 @@
                 i("a0ea2fa6", "Medan nama tidak boleh kosong"),
                 i("eec37eac", "Folder Bookmark dengan nama itu sudah wujud"),
                 i("fce0c59e", "Gagal untuk menghuraikan JSON animasi. Semak format JSON dalam fail animasi anda dan cuba sekali lagi."),
-                i("g0eea6c2", "Gagal untuk membaca fail JSON animasi. Cuba buka fail tersebut sekali lagi."),
-                i("ae58026a", "Buka fail .json Suka Berjenama untuk pratonton");
-            i("hd0bc1eb", function (a) {
-                return a.name + " sedang bersiaran langsung";
-            }),
+                i("g0eea6c2", "Gagal untuk membaca fail JSON animasi. Cuba buka fail tersebut sekali lagi.");
+            i("ae58026a", "Buka fail .json Suka Berjenama untuk pratonton"),
+                i("hd0bc1eb", function (a) {
+                    return a.name + " sedang bersiaran langsung";
+                }),
                 i("bea1f26b", function (a) {
                     return a.name + " telah bersiaran langsung";
                 }),
@@ -6871,9 +6872,9 @@
                 i("fdd77a34", "Cipta siaran yang lebih panjang"),
                 i("j6d26a7a", "Tulis sebanyak mana yang ingin anda kongsikan"),
                 i("c4fd68da", "Sesuaikan pengalaman anda"),
-                i("c0195168", "Ubah pilihan ikon dan navigasi aplikasi anda"),
-                i("b6b5dc94", "Dapatkan pengesahan");
-            i("b06db848", "Tonjolkan diri pada platform"),
+                i("c0195168", "Ubah pilihan ikon dan navigasi aplikasi anda");
+            i("b6b5dc94", "Dapatkan pengesahan"),
+                i("b06db848", "Tonjolkan diri pada platform"),
                 i("e3e3a97c", "Peroleh sebahagian hasil daripada siaran anda"),
                 i("f15bc24e", "Had Grok yang ditingkatkan"),
                 i("c4666e1c", "Lebih banyak penggunaan Grok 3, model terkini kami"),
@@ -7847,8 +7848,7 @@
                 i("b33d1518", "Segerakkan pekerjaan daripada penyepaduan yang disokong atau suapan XML tersuai"),
                 i("dd2db402", "Langkah 1: Kumpulkan maklumat yang diperlukan"),
                 i("edb098c2", "Langkah 2: Hubungi pasukan sokongan kami"),
-                i("c4474460", "Langkah 2: Hantar e-mel kepada pasukan sokongan kami"),
-                i("a08da0fa", "Apakah yang berlaku seterusnya?");
+                i("c4474460", "Langkah 2: Hantar e-mel kepada pasukan sokongan kami");
             function d(a, n) {
                 for (var e = 0; e < n.length; e++) {
                     var i = n[e];
@@ -7887,7 +7887,8 @@
                     u(a, n)
                 );
             }
-            i("c127374e", "Hantar mesej kepada kami"),
+            i("a08da0fa", "Apakah yang berlaku seterusnya?"),
+                i("c127374e", "Hantar mesej kepada kami"),
                 i("b2cb2a0c", "Nama pengguna akaun Organisasi Disahkan anda"),
                 i("b8e64002", "Nama sistem penjejakan pemohon anda"),
                 i("acb99db6", "URL laman kerjaya tempat pekerjaan anda disenaraikan"),
@@ -8889,9 +8890,9 @@
                 i("c057680c", "Kami tidak dapat memainkan video tersebut dalam pelayar ini. Sila cuba pelayar web yang lain."),
                 i("i5dfae6e", "Video ini tidak tersedia di lokasi anda."),
                 i("c2388276", "Video ini telah dipadamkan."),
-                i("d2c96140", "Penunjuk audio tetamu"),
-                i("f6dc9146", "ULANG TAYANG");
-            i("d30c74fe", "Kelantangan"),
+                i("d2c96140", "Penunjuk audio tetamu");
+            i("f6dc9146", "ULANG TAYANG"),
+                i("d30c74fe", "Kelantangan"),
                 i("f2d4e6f2", "Tonton semula"),
                 i("e9f1af3a", "Ketahui lebih lanjut"),
                 i("f1881d86", "Siaran ini tidak dapat dibalas, dikongsi atau disukai."),
@@ -13234,4 +13235,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.f8dc63ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.38bbbcca.js.map

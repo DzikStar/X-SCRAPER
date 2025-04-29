@@ -616,16 +616,13 @@
                         [d, u] = i.useState(!1),
                         m = { history: (0, a.useHistory)(), location: (0, a.useLocation)(), match: (0, a.useRouteMatch)() },
                         { community: y, createLocalApiErrorHandler: b, isProtectedUser: g, join: f, leave: E, onCommunityMembershipChange: C, onJoinClick: Z, requestToJoin: w } = e,
-                        {
-                            actions: { join_action_result: v, leave_action_result: x },
-                            id_str: k,
-                            name: P,
-                            role: I,
-                        } = y,
-                        S = (0, p.Wh)(I),
-                        B = v.reason === W.ViewerJoinRequestRequired,
-                        R = v.reason === W.ViewerRequestPending,
-                        Y = i.useCallback(() => {
+                        { actions: v, id_str: x, name: k, role: P } = y,
+                        I = v?.join_action_result,
+                        S = v?.leave_action_result,
+                        B = (0, p.Wh)(P),
+                        R = I?.reason === W.ViewerJoinRequestRequired,
+                        Y = I?.reason === W.ViewerRequestPending,
+                        Q = i.useCallback(() => {
                             const { rules: e, viewerViolatedRule: t } = y,
                                 { canAction: r, message: o } = (function (e, t, n) {
                                     const { __typename: r, message: o, reason: a } = e,
@@ -653,10 +650,10 @@
                                         default:
                                             return c;
                                     }
-                                })(v, g, t);
-                            Z && Z(), !r && o && n(o), r && (e && e.length > 0 ? u(!0) : B ? w(k).catch(b({})) : f(k).then(C).catch(b({})));
-                        }, [y, k, b, g, f, B, v, w, C, Z]),
-                        Q = i.useCallback(() => {
+                                })(I, g, t);
+                            Z && Z(), !r && o && n(o), r && (e && e.length > 0 ? u(!0) : R ? w(x).catch(b({})) : f(x).then(C).catch(b({})));
+                        }, [y, x, b, g, f, R, I, w, C, Z]),
+                        X = i.useCallback(() => {
                             const { canAction: e, message: t } = (function (e) {
                                 const { __typename: t, reason: n } = e,
                                     r = (e) => ({ canAction: !1, message: e }),
@@ -670,17 +667,17 @@
                                         return i;
                                 }
                                 var o;
-                            })(x);
-                            !e && t && n(t), e && E(k).then(C).catch(b({}));
-                        }, [k, b, E, x, C]),
-                        X = i.useCallback(() => {
+                            })(S);
+                            !e && t && n(t), e && E(x).then(C).catch(b({}));
+                        }, [x, b, E, S, C]),
+                        ee = i.useCallback(() => {
                             n(void 0);
                         }, []),
-                        ee = i.useCallback(() => {
+                        te = i.useCallback(() => {
                             u(!1);
                         }, []),
-                        te = i.useMemo(() => (B ? { ...K, follow: q } : K), [B]);
-                    return i.createElement(o.Z, { style: G.button }, d ? i.createElement(_, { onMaskClick: ee }, i.createElement(h.default, (0, r.Z)({ communityId: k, onCommunityMembershipChange: C, onDismiss: ee }, m))) : null, R ? i.createElement(l.ZP, { disabled: !0, type: "primaryOutlined" }, $) : i.createElement(s.Z, { buttonText: te, isFollowing: S, name: P, onFollow: Y, onUnfollow: Q, type: "community" }), t ? i.createElement(c.Z, { actionLabel: J, graphicDisplayMode: "none", headline: t.headline, onAction: X, onClose: X, subtext: t.text, withCloseButton: !1 }) : null);
+                        ne = i.useMemo(() => (R ? { ...K, follow: q } : K), [R]);
+                    return i.createElement(o.Z, { style: G.button }, d ? i.createElement(_, { onMaskClick: te }, i.createElement(h.default, (0, r.Z)({ communityId: x, onCommunityMembershipChange: C, onDismiss: te }, m))) : null, Y ? i.createElement(l.ZP, { disabled: !0, type: "primaryOutlined" }, $) : k ? i.createElement(s.Z, { buttonText: ne, isFollowing: B, name: k, onFollow: Q, onUnfollow: X, type: "community" }) : null, t ? i.createElement(c.Z, { actionLabel: J, graphicDisplayMode: "none", headline: t.headline, onAction: ee, onClose: ee, subtext: t.text, withCloseButton: !1 }) : null);
                 },
                 G = d.default.create((e) => ({ button: { justifyContent: "right" } })),
                 Q = w((e) => {
@@ -870,4 +867,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpacePeek~bundle.Communities~loader.CommunityHandler.df5af64a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpacePeek~bundle.Communities~loader.CommunityHandler.a5907c2a.js.map

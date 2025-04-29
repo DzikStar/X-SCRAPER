@@ -600,6 +600,7 @@
                 n("e0cb0c72", "Reklamlar"),
                 n("e2eef3c2", "Onaylı Kuruluşlar"),
                 n("b55d8a78", "Sohbet Odanı oluştur"),
+                n("e5323e36", "Go Live"),
                 n("a5a30af0", "Makaleler"),
                 n("d13d697c", "Yeni"),
                 n("j0e2cfa8", "Kurumsal"),
@@ -899,9 +900,9 @@
                 n("i821844f", "Learn more"),
                 n("b0abbb17", "Learn more"),
                 n("e7e0d88b", "Learn more"),
-                n("i560665f", "Learn more"),
-                n("f6e774d9", "Learn more");
-            n("h486f755", "Learn more"),
+                n("i560665f", "Learn more");
+            n("f6e774d9", "Learn more"),
+                n("h486f755", "Learn more"),
                 n("bab41dab", "Learn more"),
                 n("e0ebdb29", "Daha fazla bilgi al"),
                 n("f8493831", "Daha fazla bilgi al"),
@@ -1907,9 +1908,9 @@
                 n("a330771e", "Bağlantıyı panona kopyala"),
                 n("b6510e68", "Makaleyi paylaşabilmek için Makalenin URL'sini kopyala."),
                 n("e4a6e006", "Bir hata oluştu. Lütfen yeniden dene."),
-                n("eff483e0", "Makaleni yayınladıktan sonra paylaşman için bir bağlantı verilir."),
-                n("ca15dd4e", "Taslak");
-            n("bb40bf66", "Yayınlananlar"),
+                n("eff483e0", "Makaleni yayınladıktan sonra paylaşman için bir bağlantı verilir.");
+            n("ca15dd4e", "Taslak"),
+                n("bb40bf66", "Yayınlananlar"),
                 n("h107935c", "Az önce kaydedildi"),
                 n("a753a870", "Uygula"),
                 n("afccc67e", "Makale bağlantısını kopyala"),
@@ -2959,9 +2960,9 @@
                 n("c6f58084", "Geliştiriciler"),
                 n("d83f18d2", "Dizin"),
                 n("hc5aa17c", "X uygulamasını indir"),
-                n("j0693948", "Grok uygulamasını indir"),
-                n("fbf83158", "Uyarı: Ödeme başarısız oldu");
-            n("jadeb4da", "Abonelik avantajlarını kaybetmemek için lütfen ödeme yöntemini hemen güncelle."),
+                n("j0693948", "Grok uygulamasını indir");
+            n("fbf83158", "Uyarı: Ödeme başarısız oldu"),
+                n("jadeb4da", "Abonelik avantajlarını kaybetmemek için lütfen ödeme yöntemini hemen güncelle."),
                 n("bce3726a", "Faturalandırma Ayarlarını Güncelle"),
                 n("fce9ecce", "Önerilen Videolar"),
                 n("efe6ef9e", "Gönderiyi görüntüle"),
@@ -3875,9 +3876,9 @@
                 n("d7357e7e", "Yardımcılardan kaldır"),
                 n("bf307fc0", "Engelle ve Çıkar"),
                 n("ccf2f24e", "Bildirim"),
-                n("i22835de", "Onayla"),
-                n("cb59a0fe", "Reddet");
-            n("c2376960", "Konuşma İstekleri"),
+                n("i22835de", "Onayla");
+            n("cb59a0fe", "Reddet"),
+                n("c2376960", "Konuşma İstekleri"),
                 n("aba7dcdd", function (e) {
                     return e.name + " adlı kişiyi davet et";
                 }),
@@ -4797,7 +4798,7 @@
                 n("h7d28188", "İçeriğe dön"),
                 n("if2704e4", "Back to Live Overview"),
                 n("ea928ae4", "Sohbet odalarına dön"),
-                n("e8c07c22", "broadcast"),
+                n("e8c07c22", "yayın"),
                 n("a4ce6e68", "Broadcast Metrics"),
                 n("b2214c74", "Total number of views for this broadcast"),
                 n("d4fcf83a", "Total time viewers spent watching this broadcast"),
@@ -4844,7 +4845,7 @@
                 n("c4a7a6aa", "Live data"),
                 n("a992032a", "Livestream Analytics"),
                 n("ie45edda", "Canlı yayına genel bakış"),
-                n("e30fc268", "Live Viewers"),
+                n("e30fc268", "Canlı Yayın Seyircisi"),
                 n("bd37f68e", "Medya etkinliği"),
                 n("fe074210", "dk"),
                 n("jd03a1b8", "Minutes Watched"),
@@ -4856,8 +4857,8 @@
                 n("jbcb09a8", "Henüz yeterli veri yok"),
                 n("df846d6c", "Seçilen zaman aralığı için gönderi bulunamadı."),
                 n("g2ba40f6", "Seçilen filtreye uyan sohbet odası yok"),
-                n("j44061a0", "Not available"),
-                n("c4a93912", "N/A"),
+                n("j44061a0", "Mevcut değil"),
+                n("c4a93912", "Yok"),
                 n("a6b78788", "No viewer data available"),
                 n("b2438638", "- toplam içindeki oran"),
                 n("ic0399e0", "Organik Görüntüleme Sayısı"),
@@ -4888,7 +4889,7 @@
                 n("cf3709da", "Durum"),
                 n("e797dc32", "Stream time: "),
                 n("b649d8cc", "Yalnızca Abone"),
-                n("j9282130", "Broadcast thumbnail"),
+                n("j9282130", "Yayının küçük resmi"),
                 n("g629b8b0", "Timed Out"),
                 n("eb87323c", "This shows analytics data for the selected time period since the livestream happened."),
                 n("i6a75722", "Time Range"),
@@ -4907,9 +4908,9 @@
                 n("a7b48b36", "Tamamlanan video görüntülemelerinin oranı."),
                 n("a2580f2a", "Tamamlanma Oranı"),
                 n("ff95a9cc", "Video kimliği"),
-                n("a97e358e", "Video Bağlantısı"),
-                n("e10e8b46", "Yalnızca son 100 günde yayınlanan videolar gösteriliyor.");
-            n("ba37f6da", "Videoya genel bakış"),
+                n("a97e358e", "Video Bağlantısı");
+            n("e10e8b46", "Yalnızca son 100 günde yayınlanan videolar gösteriliyor."),
+                n("ba37f6da", "Videoya genel bakış"),
                 n("f19846b2", "Video küçük resmi"),
                 n("ccd6f4a8", "Video başlığı"),
                 n("c8410542", "Videonun görüntülenme sayısı."),
@@ -5863,11 +5864,11 @@
                 n("a0ea2fa6", "İsim alanı boş bırakılamaz"),
                 n("eec37eac", "O isimde zaten bir Yer İşareti Klasörü var"),
                 n("fce0c59e", "Animasyon JSON dosyası ayrıştırılamadı. Lütfen animasyon dosyandaki JSON formatını kontrol et ve tekrar dene."),
-                n("g0eea6c2", "Animasyon JSON dosyası okunamadı. Lütfen dosyayı tekrar açmayı dene."),
-                n("ae58026a", "Önizleme yapmak için Markalı Beğeni .json dosyasını aç");
-            n("hd0bc1eb", function (e) {
-                return e.name + " canlı yayında";
-            }),
+                n("g0eea6c2", "Animasyon JSON dosyası okunamadı. Lütfen dosyayı tekrar açmayı dene.");
+            n("ae58026a", "Önizleme yapmak için Markalı Beğeni .json dosyasını aç"),
+                n("hd0bc1eb", function (e) {
+                    return e.name + " canlı yayında";
+                }),
                 n("bea1f26b", function (e) {
                     return e.name + " canlı yayındaydı";
                 }),
@@ -6871,9 +6872,9 @@
                 n("fdd77a34", "Daha uzun gönderiler oluştur"),
                 n("j6d26a7a", "Paylaşmak istediğin kadar içerik yaz"),
                 n("c4fd68da", "Deneyimini özelleştir"),
-                n("c0195168", "Uygulama simgeni ve gezinme seçeneklerini değiştir"),
-                n("b6b5dc94", "Onaylı hesap sahibi ol");
-            n("b06db848", "Platformdaki diğer kişiler arasında öne çık"),
+                n("c0195168", "Uygulama simgeni ve gezinme seçeneklerini değiştir");
+            n("b6b5dc94", "Onaylı hesap sahibi ol"),
+                n("b06db848", "Platformdaki diğer kişiler arasında öne çık"),
                 n("e3e3a97c", "Gönderilerinden gelir payı kazan"),
                 n("f15bc24e", "Daha yüksek Grok limitlerinden yararlan"),
                 n("c4666e1c", "En yeni modelimiz Grok 3 için daha yüksek kullanım limitleri elde et"),
@@ -7847,8 +7848,7 @@
                 n("b33d1518", "İş ilanlarını desteklenen bir entegrasyondan veya özel XML akışından senkronize et"),
                 n("dd2db402", "1. adım: Gerekli bilgileri topla"),
                 n("edb098c2", "2. adım: Destek ekibimizle iletişime geç"),
-                n("c4474460", "2. adım: Ekibimize e-posta gönder"),
-                n("a08da0fa", "Bundan sonra ne olacak?");
+                n("c4474460", "2. adım: Ekibimize e-posta gönder");
             function l(e, a) {
                 for (var i = 0; i < a.length; i++) {
                     var n = a[i];
@@ -7887,7 +7887,8 @@
                     t(e, a)
                 );
             }
-            n("c127374e", "Bize mesaj gönder"),
+            n("a08da0fa", "Bundan sonra ne olacak?"),
+                n("c127374e", "Bize mesaj gönder"),
                 n("b2cb2a0c", "Onaylı Kuruluşlar hesabının kullanıcı adı"),
                 n("b8e64002", "Başvuru takip sisteminin adı"),
                 n("acb99db6", "İş ilanlarının listelendiği kariyer sitesinin URL'si"),
@@ -8889,9 +8890,9 @@
                 n("c057680c", "Videoyu bu tarayıcıda oynatamıyoruz. Lütfen farklı bir web tarayıcı dene."),
                 n("i5dfae6e", "Bu video bulunduğun konumda izlenemiyor."),
                 n("c2388276", "Bu video silinmiş."),
-                n("d2c96140", "Misafir sesi göstergesi"),
-                n("f6dc9146", "YENİDEN OYNAT");
-            n("d30c74fe", "Ses"),
+                n("d2c96140", "Misafir sesi göstergesi");
+            n("f6dc9146", "YENİDEN OYNAT"),
+                n("d30c74fe", "Ses"),
                 n("f2d4e6f2", "Tekrar izle"),
                 n("e9f1af3a", "Daha fazlasını keşfet"),
                 n("f1881d86", "Bu gönderi yanıtlanamaz, paylaşılamaz veya beğenilemez."),
@@ -13244,4 +13245,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/tr.6dda081a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/tr.204b2c1a.js.map

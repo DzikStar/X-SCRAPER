@@ -601,6 +601,7 @@
                 t("e0cb0c72", "Ads"),
                 t("e2eef3c2", "Verifizierte Organisationen"),
                 t("b55d8a78", "Space erstellen"),
+                t("e5323e36", "Go Live"),
                 t("a5a30af0", "Artikel"),
                 t("d13d697c", "Neue E-Mail-Adresse"),
                 t("j0e2cfa8", "Unternehmen"),
@@ -900,9 +901,9 @@
                 t("i821844f", "Mehr erfahren"),
                 t("b0abbb17", "Mehr erfahren"),
                 t("e7e0d88b", "Mehr erfahren"),
-                t("i560665f", "Mehr erfahren"),
-                t("f6e774d9", "Mehr erfahren");
-            t("h486f755", "Mehr erfahren"),
+                t("i560665f", "Mehr erfahren");
+            t("f6e774d9", "Mehr erfahren"),
+                t("h486f755", "Mehr erfahren"),
                 t("bab41dab", "Mehr erfahren"),
                 t("e0ebdb29", "Mehr erfahren"),
                 t("f8493831", "Mehr erfahren"),
@@ -1908,9 +1909,9 @@
                 t("a330771e", "Link in deine Zwischenablage kopieren"),
                 t("b6510e68", "Kopiere die URL deines Artikels, damit du ihn teilen kannst."),
                 t("e4a6e006", "Etwas ist schiefgelaufen. Bitte versuche es erneut."),
-                t("eff483e0", "Nach dem Veröffentlichen erhältst du einen Link, mit dem du den Artikel teilen kannst."),
-                t("ca15dd4e", "Entwurf");
-            t("bb40bf66", "Veröffentlicht"),
+                t("eff483e0", "Nach dem Veröffentlichen erhältst du einen Link, mit dem du den Artikel teilen kannst.");
+            t("ca15dd4e", "Entwurf"),
+                t("bb40bf66", "Veröffentlicht"),
                 t("h107935c", "Zuletzt gespeichert: gerade eben"),
                 t("a753a870", "Anwenden"),
                 t("afccc67e", "Link zum Artikel kopieren"),
@@ -2960,9 +2961,9 @@
                 t("c6f58084", "Entwickler"),
                 t("d83f18d2", "Verzeichnis"),
                 t("hc5aa17c", "Hol dir die X App"),
-                t("j0693948", "Hol dir die Grok App"),
-                t("fbf83158", "Warnung: Zahlung fehlgeschlagen");
-            t("jadeb4da", "Bitte aktualisiere dringend deine Zahlungsmethode, da du sonst deine Abonnementvorteile verlierst."),
+                t("j0693948", "Hol dir die Grok App");
+            t("fbf83158", "Warnung: Zahlung fehlgeschlagen"),
+                t("jadeb4da", "Bitte aktualisiere dringend deine Zahlungsmethode, da du sonst deine Abonnementvorteile verlierst."),
                 t("bce3726a", "Rechnungsinfo aktualisieren"),
                 t("fce9ecce", "Vorgeschlagene Videos"),
                 t("efe6ef9e", "Post anzeigen"),
@@ -3876,9 +3877,9 @@
                 t("d7357e7e", "Aus Co-Hosts entfernen"),
                 t("bf307fc0", "Blockieren und entfernen"),
                 t("ccf2f24e", "Meldung"),
-                t("i22835de", "Genehmigen"),
-                t("cb59a0fe", "Ablehnen");
-            t("c2376960", "Sprechwünsche"),
+                t("i22835de", "Genehmigen");
+            t("cb59a0fe", "Ablehnen"),
+                t("c2376960", "Sprechwünsche"),
                 t("aba7dcdd", function (e) {
                     return e.name + " einladen";
                 }),
@@ -4267,7 +4268,7 @@
                 t("fa0f1262", "Pause"),
                 t("c2cac618", "Grok unterstützt derzeit Daten für La Liga, Premier League, Bundesliga, Series A und Ligue 1."),
                 t("acae223d", function (e) {
-                    return 'Results for "' + e.prompt + '"';
+                    return "Ergebnisse für „" + e.prompt + "“";
                 }),
                 t("bed99fe2", "Weniger anzeigen"),
                 t("f7b57ac0", "Statistiken"),
@@ -4796,12 +4797,12 @@
                 t("e7479ce4", "Durchschnittl. Abspielzeit"),
                 t("g1dfa7d0", "Durchschnitt"),
                 t("h7d28188", "Zurück zum Inhalt"),
-                t("if2704e4", "Back to Live Overview"),
+                t("if2704e4", "Zurück zur Live-Übersicht"),
                 t("ea928ae4", "Zurück zu Spaces"),
-                t("e8c07c22", "broadcast"),
-                t("a4ce6e68", "Broadcast Metrics"),
-                t("b2214c74", "Total number of views for this broadcast"),
-                t("d4fcf83a", "Total time viewers spent watching this broadcast"),
+                t("e8c07c22", "Live-Video"),
+                t("a4ce6e68", "Live-Video-Metriken"),
+                t("b2214c74", "Gesamtzahl der Ansichten für dieses Live-Video"),
+                t("d4fcf83a", "Wie lange sich Zuschauer*innen dieses Live-Video insgesamt angesehen haben"),
                 t("a89b0322", "Storniert"),
                 t("j3cb12ea", "Gleichzeitige Zuhörer*innen"),
                 t("b93931ee", "Wir oft dein Inhalt gepostet wurde."),
@@ -4837,19 +4838,19 @@
                 t("efa0f858", "Wie viele Accounts dir im Laufe der Zeit gefolgt sind oder dich entfolgt haben. Das entspricht nicht unbedingt der Anzahl deiner Follower*innen."),
                 t("g2b06cc6", "Geschlechtsdaten sind möglicherweise abgeleitet"),
                 t("b66b3baa", "Stunden"),
-                t("cf8a0772", "Impression to Views"),
-                t("g13d8010", "Last 48 Hours"),
-                t("d5627596", "Last Hour"),
+                t("cf8a0772", "Impression zu Ansichten"),
+                t("g13d8010", "Letzte 48 Stunden"),
+                t("d5627596", "Letzte Stunde"),
                 t("baf120a6", "Wenigste Interaktionen"),
                 t("f2382014", "LIVE"),
-                t("c4a7a6aa", "Live data"),
-                t("a992032a", "Livestream Analytics"),
+                t("c4a7a6aa", "Live-Daten"),
+                t("a992032a", "Livestream-Statistiken"),
                 t("ie45edda", "Livestream-Übersicht"),
-                t("e30fc268", "Live Viewers"),
+                t("e30fc268", "Live-Zuschauer"),
                 t("bd37f68e", "Medienaktivität"),
                 t("fe074210", "Minuten"),
-                t("jd03a1b8", "Minutes Watched"),
-                t("a20e91e8", "minutes watched"),
+                t("jd03a1b8", "Minuten angesehen"),
+                t("a20e91e8", "Minuten angesehen"),
                 t("ic2bebee", "Monetarisiert"),
                 t("a1d642c8", "Meiste Interaktionen"),
                 t("ifc4c1f8", "Wie viele Follower*innen aus diesem Inhalt entstanden sind."),
@@ -4857,14 +4858,14 @@
                 t("jbcb09a8", "Noch nicht genug Daten"),
                 t("df846d6c", "Keine Posts für den ausgewählten Zeitraum gefunden."),
                 t("g2ba40f6", "Keine Spaces für den ausgewählten Filter verfügbar"),
-                t("j44061a0", "Not available"),
-                t("c4a93912", "N/A"),
-                t("a6b78788", "No viewer data available"),
+                t("j44061a0", "Nicht verfügbar"),
+                t("c4a93912", "Nicht verfügbar"),
+                t("a6b78788", "Keine Zuschauerdaten verfügbar"),
                 t("b2438638", "der Gesamtanzahl"),
                 t("ic0399e0", "Organische Ansichten"),
                 t("ja5c444a", "Zahlungszeitraum"),
                 t("f04e025e", "Spitzenwert bei gleichzeitigen Zuhörer*innen"),
-                t("d6d10662", "Peak Viewers: "),
+                t("d6d10662", "Spitzenwert Zuschauer*innen: "),
                 t("d147bea2", "Bitte sieh später nochmal vorbei"),
                 t("f0336d68", "Post-Statistiken"),
                 t("g85fbd2e", "Post-ID"),
@@ -4872,11 +4873,11 @@
                 t("hf4f9bfe", "Post-Link"),
                 t("bf5ebf5c", "Posts und Antworten"),
                 t("b211652e", "Posts im Zeitverlauf"),
-                t("f2efec0a", "Pre-Published"),
+                t("f2efec0a", "Vorveröffentlicht"),
                 t("i61e0302", "Zurück"),
                 t("e08a706a", "Gesponserte Ansichten"),
                 t("cbc99192", "Veröffentlichungsdatum"),
-                t("a83c2a9a", "Realtime"),
+                t("a83c2a9a", "Echtzeit"),
                 t("e9d72896", "Aufgezeichnet"),
                 t("gede4932", "Erneut abspielen"),
                 t("h0de359c", "Wie oft dieser Inhalt repostet wurde."),
@@ -4887,20 +4888,20 @@
                 t("fbc79a40", "Spaces-Übersicht"),
                 t("d077112a", "Space-Statistiken"),
                 t("cf3709da", "Status"),
-                t("e797dc32", "Stream time: "),
+                t("e797dc32", "Stream-Zeit: "),
                 t("b649d8cc", "Nur Abonnent*innen"),
-                t("j9282130", "Broadcast thumbnail"),
-                t("g629b8b0", "Timed Out"),
-                t("eb87323c", "This shows analytics data for the selected time period since the livestream happened."),
-                t("i6a75722", "Time Range"),
+                t("j9282130", "Live-Video-Miniaturansicht"),
+                t("g629b8b0", "Zeitabschaltung"),
+                t("eb87323c", "Zeigt Statistikdaten für den ausgewählten Zeitraum seit dem Livestream an."),
+                t("i6a75722", "Zeitbereich"),
                 t("c602f5b8", "Gesamtbetrag"),
                 t("b35e68ae", "Gesamtzahl Teilnehmer*innen"),
                 t("h78ee79a", "Gesamtanzeige Aufzeichnung"),
                 t("e3efaed0", "Typ"),
                 t("c37993e2", "Entfolgungen"),
-                t("b1ed35d0", "Unique Viewers"),
+                t("b1ed35d0", "Eindeutige Zuschauer*innen"),
                 t("bfad9306", "Unbekannt"),
-                t("b5a58f36", "Untitled Broadcast"),
+                t("b5a58f36", "Unbenanntes Live-Video"),
                 t("i70f5278", "Hochgeladen am:"),
                 t("a98b58b6", "Bestätigte Follower*innen"),
                 t("a5de67ca", "Die Anzahl der Follower*innen, die ihren Account verifiziert haben."),
@@ -4908,9 +4909,9 @@
                 t("a7b48b36", "Wie oft in Prozent die Videos vollständig angezeigt wurden."),
                 t("a2580f2a", "Abschlussrate"),
                 t("ff95a9cc", "Video-ID"),
-                t("a97e358e", "Video-Link"),
-                t("e10e8b46", "Es werden nur die Videos aus den letzten 100 Tagen gezeigt.");
-            t("ba37f6da", "Videoübersicht"),
+                t("a97e358e", "Video-Link");
+            t("e10e8b46", "Es werden nur die Videos aus den letzten 100 Tagen gezeigt."),
+                t("ba37f6da", "Videoübersicht"),
                 t("f19846b2", "Video-Miniaturbild"),
                 t("ccd6f4a8", "Videotitel"),
                 t("c8410542", "Wie oft dein Video angezeigt wurde."),
@@ -5864,11 +5865,11 @@
                 t("a0ea2fa6", "Namensfeld darf nicht leer sein"),
                 t("eec37eac", "Lesezeichenordner mit diesem Namen ist bereits vorhanden"),
                 t("fce0c59e", "Der JSON-Animationscode konnte nicht geparst werden. Bitte überprüfe das Format des JSON-Codes in deiner Animationsdatei und versuche es erneut."),
-                t("g0eea6c2", "Die JSON-Animationsdatei konnte nicht gelesen werden. Versuche bitte erneut, die Datei zu öffnen."),
-                t("ae58026a", "Eine .json-Datei für Marken-Likes zur Vorschau öffnen");
-            t("hd0bc1eb", function (e) {
-                return e.name + " ist live";
-            }),
+                t("g0eea6c2", "Die JSON-Animationsdatei konnte nicht gelesen werden. Versuche bitte erneut, die Datei zu öffnen.");
+            t("ae58026a", "Eine .json-Datei für Marken-Likes zur Vorschau öffnen"),
+                t("hd0bc1eb", function (e) {
+                    return e.name + " ist live";
+                }),
                 t("bea1f26b", function (e) {
                     return e.name + " war live";
                 }),
@@ -6872,9 +6873,9 @@
                 t("fdd77a34", "Erstelle längere Posts"),
                 t("j6d26a7a", "Schreib so viel, wie du teilen möchtest"),
                 t("c4fd68da", "Passe deine Nutzung an"),
-                t("c0195168", "Ändere dein App-Symbol und die Navigationsoptionen"),
-                t("b6b5dc94", "Lass dich verifizieren");
-            t("b06db848", "Heb dich von anderen auf der Plattform ab"),
+                t("c0195168", "Ändere dein App-Symbol und die Navigationsoptionen");
+            t("b6b5dc94", "Lass dich verifizieren"),
+                t("b06db848", "Heb dich von anderen auf der Plattform ab"),
                 t("e3e3a97c", "Erhalte eine Umsatzbeteilung aus deinen Posts"),
                 t("f15bc24e", "Höhere Grok-Limits"),
                 t("c4666e1c", "Mehr Nutzung von Grok 3, unserem neuesten Modell"),
@@ -7848,8 +7849,7 @@
                 t("b33d1518", "Jobs aus einer unterstützten Integration oder einem angepassten XML-Feed synchronisieren"),
                 t("dd2db402", "Schritt 1: Sammle die erforderlichen Informationen"),
                 t("edb098c2", "Schritt 2: Kontaktiere unser Supportteam"),
-                t("c4474460", "Schritt 2: Sende eine E-Mail an unser Supportteam"),
-                t("a08da0fa", "Was geschieht als Nächstes?");
+                t("c4474460", "Schritt 2: Sende eine E-Mail an unser Supportteam");
             function a(e, n) {
                 for (var i = 0; i < n.length; i++) {
                     var t = n[i];
@@ -7888,7 +7888,8 @@
                     d(e, n)
                 );
             }
-            t("c127374e", "Nachricht an uns senden"),
+            t("a08da0fa", "Was geschieht als Nächstes?"),
+                t("c127374e", "Nachricht an uns senden"),
                 t("b2cb2a0c", "Nutzername deines Accounts bei Verifizierte Organisationen"),
                 t("b8e64002", "Name deines Bewerbermanagementsystems"),
                 t("acb99db6", "URL der Karriere-Website, wo deine Jobs aufgelistet sind"),
@@ -8890,9 +8891,9 @@
                 t("c057680c", "Das Video kann nicht in diesem Browser abgespielt werden. Bitte versuche es mit einem anderen Browser."),
                 t("i5dfae6e", "Dieses Video ist an deinem Standort nicht verfügbar."),
                 t("c2388276", "Dieses Video wurde gelöscht."),
-                t("d2c96140", "Audioanzeige für Gast"),
-                t("f6dc9146", "AUFZEICHNUNG");
-            t("d30c74fe", "Lautstärke"),
+                t("d2c96140", "Audioanzeige für Gast");
+            t("f6dc9146", "AUFZEICHNUNG"),
+                t("d30c74fe", "Lautstärke"),
                 t("f2d4e6f2", "Erneut ansehen"),
                 t("e9f1af3a", "Mehr erfahren"),
                 t("f1881d86", "Dieser Post kann nicht beantwortet, geteilt oder mit „Gefällt mir“ markiert werden."),
@@ -13249,4 +13250,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/de.f28462ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/de.5f530aea.js.map

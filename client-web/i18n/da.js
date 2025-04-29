@@ -601,6 +601,7 @@
                 t("e0cb0c72", "Annoncer"),
                 t("e2eef3c2", "Verificerede org."),
                 t("b55d8a78", "Opret dit Rum"),
+                t("e5323e36", "Go Live"),
                 t("a5a30af0", "Artikler"),
                 t("d13d697c", "Nye"),
                 t("j0e2cfa8", "Erhverv"),
@@ -900,9 +901,9 @@
                 t("i821844f", "Learn more"),
                 t("b0abbb17", "Learn more"),
                 t("e7e0d88b", "Learn more"),
-                t("i560665f", "Learn more"),
-                t("f6e774d9", "Learn more");
-            t("h486f755", "Learn more"),
+                t("i560665f", "Learn more");
+            t("f6e774d9", "Learn more"),
+                t("h486f755", "Learn more"),
                 t("bab41dab", "Learn more"),
                 t("e0ebdb29", "Lær mere"),
                 t("f8493831", "Lær mere"),
@@ -1908,9 +1909,9 @@
                 t("a330771e", "Kopier linket til din udklipsholder"),
                 t("b6510e68", "Kopier din Artikels URL-adresse, så du kan dele den."),
                 t("e4a6e006", "Noget gik galt. Prøv igen."),
-                t("eff483e0", "Når du har udgivet Artiklen, får du et link til at dele den."),
-                t("ca15dd4e", "Udkast");
-            t("bb40bf66", "Udgivet"),
+                t("eff483e0", "Når du har udgivet Artiklen, får du et link til at dele den.");
+            t("ca15dd4e", "Udkast"),
+                t("bb40bf66", "Udgivet"),
                 t("h107935c", "Sidst gemt lige nu"),
                 t("a753a870", "Anvend"),
                 t("afccc67e", "Kopier link til Artikel"),
@@ -2960,9 +2961,9 @@
                 t("c6f58084", "Udviklere"),
                 t("d83f18d2", "Oversigt"),
                 t("hc5aa17c", "Hent X-appen"),
-                t("j0693948", "Hent Grok-appen"),
-                t("fbf83158", "Advarsel: Betalingen mislykkedes");
-            t("jadeb4da", "Opdater snarest muligt din betalingsmetode, før du mister dine abonnementsfordele."),
+                t("j0693948", "Hent Grok-appen");
+            t("fbf83158", "Advarsel: Betalingen mislykkedes"),
+                t("jadeb4da", "Opdater snarest muligt din betalingsmetode, før du mister dine abonnementsfordele."),
                 t("bce3726a", "Opdater fakturering"),
                 t("fce9ecce", "Foreslåede videoer"),
                 t("efe6ef9e", "Vis post"),
@@ -3876,9 +3877,9 @@
                 t("d7357e7e", "Fjern fra medværter"),
                 t("bf307fc0", "Bloker og fjern"),
                 t("ccf2f24e", "Indberetning"),
-                t("i22835de", "Godkend"),
-                t("cb59a0fe", "Afvis");
-            t("c2376960", "Anmoder om at tale"),
+                t("i22835de", "Godkend");
+            t("cb59a0fe", "Afvis"),
+                t("c2376960", "Anmoder om at tale"),
                 t("aba7dcdd", function (e) {
                     return "Inviter " + e.name;
                 }),
@@ -4798,7 +4799,7 @@
                 t("h7d28188", "Tilbage til indhold "),
                 t("if2704e4", "Back to Live Overview"),
                 t("ea928ae4", "Tilbage til rummene"),
-                t("e8c07c22", "broadcast"),
+                t("e8c07c22", "udsendelse"),
                 t("a4ce6e68", "Broadcast Metrics"),
                 t("b2214c74", "Total number of views for this broadcast"),
                 t("d4fcf83a", "Total time viewers spent watching this broadcast"),
@@ -4845,7 +4846,7 @@
                 t("c4a7a6aa", "Live data"),
                 t("a992032a", "Livestream Analytics"),
                 t("ie45edda", "Oversigt over livestream"),
-                t("e30fc268", "Live Viewers"),
+                t("e30fc268", "Direkte seere"),
                 t("bd37f68e", "Medieaktivitet"),
                 t("fe074210", "minutter"),
                 t("jd03a1b8", "Minutes Watched"),
@@ -4857,8 +4858,8 @@
                 t("jbcb09a8", "Ikke nok data endnu"),
                 t("df846d6c", "Der blev ikke fundet nogen posts i det valgte tidsrum."),
                 t("g2ba40f6", "Ingen ledige pladser til det valgte filter"),
-                t("j44061a0", "Not available"),
-                t("c4a93912", "N/A"),
+                t("j44061a0", "Ikke tilgængelig"),
+                t("c4a93912", "Mangler"),
                 t("a6b78788", "No viewer data available"),
                 t("b2438638", "af det samlede antal"),
                 t("ic0399e0", "Organiske visninger"),
@@ -4889,7 +4890,7 @@
                 t("cf3709da", "Status"),
                 t("e797dc32", "Stream time: "),
                 t("b649d8cc", "Kun for abonnenter"),
-                t("j9282130", "Broadcast thumbnail"),
+                t("j9282130", "Udsendelsesminiature"),
                 t("g629b8b0", "Timed Out"),
                 t("eb87323c", "This shows analytics data for the selected time period since the livestream happened."),
                 t("i6a75722", "Time Range"),
@@ -4908,9 +4909,9 @@
                 t("a7b48b36", "Procentdelen af videovisninger, der blev gennemført."),
                 t("a2580f2a", "Gennemførelsesprocent"),
                 t("ff95a9cc", "Video-id"),
-                t("a97e358e", "Video-link"),
-                t("e10e8b46", "Viser kun videoer fra de sidste 100 dage.");
-            t("ba37f6da", "Videooversigt"),
+                t("a97e358e", "Video-link");
+            t("e10e8b46", "Viser kun videoer fra de sidste 100 dage."),
+                t("ba37f6da", "Videooversigt"),
                 t("f19846b2", "Videominiaturebillede"),
                 t("ccd6f4a8", "Video-titel"),
                 t("c8410542", "Antallet af gange, din video er blevet vist."),
@@ -5864,11 +5865,11 @@
                 t("a0ea2fa6", "Feltet Navn skal udfyldes"),
                 t("eec37eac", "Der findes allerede en bogmærkemappe med det navn"),
                 t("fce0c59e", "Kunne ikke parse animations-JSON. Tjek JSON-formatet i animationsfilen, og prøv igen."),
-                t("g0eea6c2", "Kunne ikke læse animations-JSON-filen. Prøv at åbne filen igen."),
-                t("ae58026a", "Åbn en Branded Like .json-fil for at forhåndsvise");
-            t("hd0bc1eb", function (e) {
-                return e.name + " sender direkte";
-            }),
+                t("g0eea6c2", "Kunne ikke læse animations-JSON-filen. Prøv at åbne filen igen.");
+            t("ae58026a", "Åbn en Branded Like .json-fil for at forhåndsvise"),
+                t("hd0bc1eb", function (e) {
+                    return e.name + " sender direkte";
+                }),
                 t("bea1f26b", function (e) {
                     return e.name + " sendte direkte";
                 }),
@@ -6872,9 +6873,9 @@
                 t("fdd77a34", "Skab længere opslag"),
                 t("j6d26a7a", "Skriv ligeså meget, som du har lyst til at dele"),
                 t("c4fd68da", "Tilpas din oplevelse"),
-                t("c0195168", "Skift dit app-ikon og dine navigationsmuligheder"),
-                t("b6b5dc94", "Bliv verificeret");
-            t("b06db848", "Skil dig ud fra andre på platformen"),
+                t("c0195168", "Skift dit app-ikon og dine navigationsmuligheder");
+            t("b6b5dc94", "Bliv verificeret"),
+                t("b06db848", "Skil dig ud fra andre på platformen"),
                 t("e3e3a97c", "Tjen en del af indtægterne fra dine opslag"),
                 t("f15bc24e", "Højere grænser i Grok"),
                 t("c4666e1c", "Brug mere af Grok 3, vores nyeste model"),
@@ -7848,8 +7849,7 @@
                 t("b33d1518", "Synkroniser stillinger fra en understøttet integration eller et brugerdefineret XML-feed"),
                 t("dd2db402", "Trin 1: Indsaml de nødvendige oplysninger"),
                 t("edb098c2", "Trin 2: Kontakt vores supportteam"),
-                t("c4474460", "Trin 2: Send en e-mail til vores supportteam"),
-                t("a08da0fa", "Hvad skal der ske nu?");
+                t("c4474460", "Trin 2: Send en e-mail til vores supportteam");
             function d(e, r) {
                 for (var n = 0; n < r.length; n++) {
                     var t = r[n];
@@ -7888,7 +7888,8 @@
                     a(e, r)
                 );
             }
-            t("c127374e", "Send os en besked"),
+            t("a08da0fa", "Hvad skal der ske nu?"),
+                t("c127374e", "Send os en besked"),
                 t("b2cb2a0c", "Brugernavn til din Verificerede organisationer-konto"),
                 t("b8e64002", "Navn på dit ansøgersporingssystem"),
                 t("acb99db6", "URL-adresse til jobsøgningswebsted, hvor dine stillinger er anført"),
@@ -8890,9 +8891,9 @@
                 t("c057680c", "Vi kan ikke afspille videoen i din browser. Prøv en anden browser."),
                 t("i5dfae6e", "Denne video er ikke tilgængelig i dit område."),
                 t("c2388276", "Denne video er blevet slettet."),
-                t("d2c96140", "Indikator for gæstelyd"),
-                t("f6dc9146", "REPLAY");
-            t("d30c74fe", "Lydstyrke"),
+                t("d2c96140", "Indikator for gæstelyd");
+            t("f6dc9146", "REPLAY"),
+                t("d30c74fe", "Lydstyrke"),
                 t("f2d4e6f2", "Se igen"),
                 t("e9f1af3a", "Få mere at vide"),
                 t("f1881d86", "Denne post kan ikke besvares, deles eller likes."),
@@ -13238,4 +13239,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/da.b6c522fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/da.b395a0ea.js.map

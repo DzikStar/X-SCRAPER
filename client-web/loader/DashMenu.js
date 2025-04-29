@@ -46,7 +46,7 @@
                 w = s.default.create((e) => ({ dashMenuItem: { alignItems: "center", flexDirection: "row" }, icon: { color: e.colors.text, flexShrink: 0, marginEnd: e.spaces.space12 }, iconWithDashRedesign: { alignSelf: "center", marginEnd: e.spaces.space24, height: e.spaces.space24, width: e.spaces.space24 }, item: { paddingVertical: e.spaces.space16, paddingHorizontal: e.spaces.space16, flexDirection: "row", flexGrow: 1, alignItems: "center" }, itemAccessory: { flexShrink: 1, marginStart: e.spaces.space20, minWidth: e.spaces.space24, alignItems: "center" }, itemLabel: { flexGrow: 1 }, leftMargin: { marginStart: e.spaces.space16 }, link: { flexGrow: 1, maxWidth: "100%" } }));
         },
         120735: (e, r, n) => {
-            n.d(r, { Z: () => A });
+            n.d(r, { Z: () => v });
             var t = n(202784),
                 a = n(325686),
                 o = n(661810),
@@ -72,7 +72,7 @@
                 .withAnalytics();
             var g = n(906433),
                 S = n(879526);
-            const v = ({ acceptedFollowerCount: e, analytics: r, pendingFollowerCount: n, viewerUser: s, onClose: c = d.Z }) => {
+            const A = ({ acceptedFollowerCount: e, analytics: r, pendingFollowerCount: n, viewerUser: s, onClose: c = d.Z }) => {
                     const { featureSwitches: m, userClaims: p } = (0, u.QZ)(),
                         { coreItems: h, countrySpecificItems: b } = (0, S.O)({ analytics: r, featureSwitches: m, onClose: c, userClaims: p, viewerUser: s, acceptedFollowerCount: e, pendingFollowerCount: n });
                     return t.createElement(
@@ -95,7 +95,7 @@
                     );
                     var w;
                 },
-                A = (0, c.ZP)(D(t.memo(v))),
+                v = (0, c.ZP)(D(t.memo(A))),
                 y = s.default.create((e) => ({ redesignDivider: { width: "89%", alignSelf: "center" }, countrySpecificItem: { flexGrow: 1, padding: e.spaces.space16, flexDirection: "row", justifyContent: "space-between" }, divider: { width: "89%", margin: "auto" } }));
         },
         569591: (e, r, n) => {
@@ -118,33 +118,33 @@
                 D = n(379327),
                 g = n(149170),
                 S = n(380155),
-                v = n(725516),
-                A = n(125363),
+                A = n(725516),
+                v = n(125363),
                 y = n(390387),
                 E = n(919022),
-                C = n(110512),
-                k = n(105131),
+                k = n(110512),
+                C = n(105131),
                 M = n(206962),
                 _ = n(71620),
                 Z = n(668214),
                 P = n(454319),
-                B = n(956817);
-            const x = (0, Z.Z)()
+                I = n(956817);
+            const B = (0, Z.Z)()
                     .propsFromState(() => ({ multiAccountUsers: P.$4, showMultiAccountOverflowPip: P.Zt, delegateUser: y.sy }))
-                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, _.zr)("DASH_MENU_ACCOUNT_SWITCH"), switchAccount: B.y })),
-                I = d().da4691aa,
+                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, _.zr)("DASH_MENU_ACCOUNT_SWITCH"), switchAccount: I.y })),
+                x = d().da4691aa,
                 U = d().c7e55ccf,
                 F = d().d86bbf0f,
                 T = d().h6beb5fb,
                 N = { page: "dash" },
                 L = ({ createLocalApiErrorHandler: e, delegateUser: r, multiAccountUsers: n, onClose: o, showMultiAccountOverflowPip: l, switchAccount: i }) => {
-                    const s = (0, v.z)(),
-                        d = (0, A.v9)(E.ZP.selectLoggedInUser),
-                        c = (0, C.V7)(),
-                        u = (0, A.I0)(),
+                    const s = (0, A.z)(),
+                        d = (0, v.v9)(E.ZP.selectLoggedInUser),
+                        c = (0, k.V7)(),
+                        u = (0, v.I0)(),
                         m = r || c.length || n.length > 0,
                         p = (e) => (e ? t.createElement(h.Z, { count: e, truncatedCountFormatter: T, unreadCountLabel: F }) : null),
-                        k = t.useCallback(
+                        C = t.useCallback(
                             (r, n, t) => () => {
                                 s.scribe({ ...N, section: t ? "switch_to_protected_account" : "switch_account", element: n ? "account_bubble_badged" : "account_bubble", action: "click" }), i({ user_id: r }).catch(e(S.y));
                             },
@@ -155,7 +155,7 @@
                         }, [s, o]);
                     return t.createElement(
                         a.Z,
-                        { style: V.root },
+                        { style: W.root },
                         (() => {
                             if (d && c.length) {
                                 const e = c.map((e) => ({ screenName: e.legacy.screen_name, userId: e.legacy.id_str, badgeCount: void 0, avatarImageUrl: e.legacy.profile_image_url_https })),
@@ -163,27 +163,27 @@
                                 return [n, ...e.slice(0, 2)]
                                     .filter(({ userId: e }) => e !== (r?.userId ?? n.userId))
                                     .slice(0, 2)
-                                    .map((e) => t.createElement(b.Z, { "aria-label": U({ screenname: e.screenName }), key: e.userId, onPress: () => (e.userId === d.id_str ? u((0, y.YJ)()) : u((0, y.vU)({ userId: e.userId }))), role: "button", style: V.link }, t.createElement(w.default, { decoration: p(e.badgeCount), size: "large", uri: e.avatarImageUrl })));
+                                    .map((e) => t.createElement(b.Z, { "aria-label": U({ screenname: e.screenName }), key: e.userId, onPress: () => (e.userId === d.id_str ? u((0, y.YJ)()) : u((0, y.vU)({ userId: e.userId }))), role: "button", style: W.link }, t.createElement(w.default, { decoration: p(e.badgeCount), size: "large", uri: e.avatarImageUrl })));
                             }
-                            return n.map((e) => t.createElement(b.Z, { "aria-label": U({ screenname: e.screen_name }), key: e.user_id, onPress: k(e.user_id, !!e.badgeCount, e.is_protected), role: "button", style: V.link }, t.createElement(w.default, { decoration: p(e.badgeCount), size: "large", uri: e.avatar_image_url })));
+                            return n.map((e) => t.createElement(b.Z, { "aria-label": U({ screenname: e.screen_name }), key: e.user_id, onPress: C(e.user_id, !!e.badgeCount, e.is_protected), role: "button", style: W.link }, t.createElement(w.default, { decoration: p(e.badgeCount), size: "large", uri: e.avatar_image_url })));
                         })(),
                         (() => {
                             const e = m ? t.createElement(g.default, { testID: M.Z.iconMore }) : t.createElement(D.default, { testID: M.Z.iconPlus });
-                            return t.createElement(a.Z, null, t.createElement(f.ZP, { "aria-label": I, icon: e, link: "/account/switch", onPress: _, size: "small", testID: M.Z.switcher, type: "primaryOutlined" }), l ? t.createElement(h.Z, { pip: !0, truncatedCountFormatter: T, unreadCountLabel: F }) : null);
+                            return t.createElement(a.Z, null, t.createElement(f.ZP, { "aria-label": x, icon: e, link: "/account/switch", onPress: _, size: "small", testID: M.Z.switcher, type: "primaryOutlined" }), l ? t.createElement(h.Z, { pip: !0, truncatedCountFormatter: T, unreadCountLabel: F }) : null);
                         })(),
                     );
                 },
-                V = i.default.create((e) => ({ root: { alignSelf: "flex-start", flexDirection: "row" }, link: { borderRadius: e.borderRadii.infinite, marginEnd: e.spaces.space4 } })),
-                W = (0, k.P3)(x(t.memo(L)));
-            var z = n(659773);
-            const H = (0, Z.Z)()
+                W = i.default.create((e) => ({ root: { alignSelf: "flex-start", flexDirection: "row" }, link: { borderRadius: e.borderRadii.infinite, marginEnd: e.spaces.space4 } })),
+                V = (0, C.P3)(B(t.memo(L)));
+            var O = n(659773);
+            const z = (0, Z.Z)()
                 .propsFromState(() => ({ viewerUser: E.ZP.selectViewerUser }))
-                .propsFromActions(() => ({ fetchDataUsageSettingsIfNeeded: z.MJ }))
+                .propsFromActions(() => ({ fetchDataUsageSettingsIfNeeded: O.MJ }))
                 .withAnalytics({ page: "dash" });
-            var O = n(120735);
+            var H = n(120735);
             const G = d().i5f7b6b8,
                 $ = (e) => ({ avatar: !0, badges: !0, description: !1, followButton: !1, followIndicator: !1, followersYouKnow: !1, fullName: !0, label: !1, stats: !0, subscriptionsCount: e }),
-                R = t.createElement(p.B, null, t.createElement(W, null)),
+                R = t.createElement(p.B, null, t.createElement(V, null)),
                 K = (e) => {
                     const { alignMenu: r, analytics: n, fetchDataUsageSettingsIfNeeded: i, onClose: s, renderCustomMenuItems: d, viewerUser: p, withMoreSideNavOverflow: h } = e,
                         b = (0, c.hC)("creator_subscriptions_subscription_count_enabled");
@@ -198,12 +198,12 @@
                     var f;
                     const D = (e) => {
                         if (!p) return null;
-                        const { creator_subscriptions_count: r, followers_count: n, friends_count: l, highlightedLabel: i, is_blue_verified: c, name: u, profile_image_url_https: f, protected: D, screen_name: g, translator_type: S, verified: v, verified_type: A } = p;
-                        return (0, m.ZP)() ? t.createElement(a.Z, { style: j.dropdownMinWidth }, d ? d() : t.createElement(O.Z, { onClose: s, withMoreSideNavOverflow: h })) : t.createElement(a.Z, { style: [e && j.scrollableContentPadding, (0, m.ZP)() && j.menuContentWidth] }, t.createElement(a.Z, { "aria-label": G, style: j.header }, t.createElement(o.Z, { decoration: R, isAllowedToViewOptions: $(b), isLoggedIn: !0, isUserBlueVerified: c, isUserProtected: D, isUserStatsWithLink: !0, isUserVerified: v, onAvatarClick: w, onScreenNameClick: w, subscriptionsCount: r, userAvatarSize: "xLarge", userAvatarUri: f, userFollowersCount: n, userFriendsCount: l, userHighlightedLabel: i, userName: u, userScreenName: g, userTranslatorType: S, userVerifiedType: A, withNameWrap: !0 })), d ? d() : t.createElement(O.Z, { onClose: s }));
+                        const { creator_subscriptions_count: r, followers_count: n, friends_count: l, highlightedLabel: i, is_blue_verified: c, name: u, profile_image_url_https: f, protected: D, screen_name: g, translator_type: S, verified: A, verified_type: v } = p;
+                        return (0, m.ZP)() ? t.createElement(a.Z, { style: j.dropdownMinWidth }, d ? d() : t.createElement(H.Z, { onClose: s, withMoreSideNavOverflow: h })) : t.createElement(a.Z, { style: [e && j.scrollableContentPadding, (0, m.ZP)() && j.menuContentWidth] }, t.createElement(a.Z, { "aria-label": G, style: j.header }, t.createElement(o.Z, { decoration: R, isAllowedToViewOptions: $(b), isLoggedIn: !0, isUserBlueVerified: c, isUserProtected: D, isUserStatsWithLink: !0, isUserVerified: A, onAvatarClick: w, onScreenNameClick: w, subscriptionsCount: r, userAvatarSize: "xLarge", userAvatarUri: f, userFollowersCount: n, userFriendsCount: l, userHighlightedLabel: i, userName: u, userScreenName: g, userTranslatorType: S, userVerifiedType: v, withNameWrap: !0 })), d ? d() : t.createElement(H.Z, { onClose: s }));
                     };
                     return (0, m.ZP)() ? t.createElement(u.Z, { animateInDuration: "long", isFixed: !0, onDismiss: s, preferredHorizontalOrientation: "right", preferredVerticalOrientation: "up" }, D(!1)) : t.createElement(l.Z, { align: r, onDismissed: s, style: j.drawer, withTopBar: !1 }, D(!0));
                 },
-                Y = H(K),
+                Y = z(K),
                 j = i.default.create((e) => ({ backgroundArea: { backgroundColor: e.colors.activeBlack }, drawer: { maxWidth: "70%" }, dropdownMinWidth: { minWidth: "318px" }, wrapper: { alignSelf: "flex-start", backgroundColor: e.colors.navigationBackground, boxShadow: e.boxShadows.medium, overflowY: "auto", overscrollBehavior: "contain", WebkitOverflowScrolling: "touch" }, scrollableItems: { overflow: "auto", overscrollBehavior: "contain", WebkitOverflowScrolling: "touch", flexGrow: 1, flexShrink: 1 }, scrollableContentPadding: { paddingBottom: "44px" }, header: { flexGrow: 0, flexShrink: 0 }, avatarWrapper: { flexGrow: 1 }, userNames: { display: "flex", flexDirection: "column", paddingVertical: e.spaces.space12 }, menuContentWidth: { width: `calc(${e.spaces.space64} * 4.25)` } }));
         },
         839090: (e, r, n) => {
@@ -212,21 +212,23 @@
             const t = (0, n(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        n.e("icons.5"),
+                        n.e("icons.7"),
+                        n.e("icons.8"),
+                        n.e("icons.15"),
+                        n.e("icons.3"),
+                        n.e("icons.24"),
+                        n.e("icons.9"),
+                        n.e("icons.22"),
                         n.e("icons.12"),
-                        n.e("icons.20"),
-                        n.e("icons.0"),
-                        n.e("icons.21"),
-                        n.e("icons.28"),
-                        n.e("icons.17"),
                         n.e("modules.common-e907d115"),
                         n.e("modules.common-e019dbda"),
-                        n.e("icons.22"),
-                        n.e("icons.9"),
-                        n.e("icons.25"),
+                        n.e("icons.5"),
                         n.e("icons.6"),
-                        n.e("icons.10"),
                         n.e("icons.14"),
+                        n.e("icons.18"),
+                        n.e("icons.2"),
+                        n.e("icons.16"),
+                        n.e("icons.19"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -257,7 +259,7 @@
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                         n.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
                         n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-34cda585"),
+                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-00a077b2"),
                         n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                         n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                         n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -313,7 +315,7 @@
             const i = o.default.create((e) => ({ divider: { backgroundColor: e.colors.borderColor, height: e.borderWidths.small } }));
         },
         525271: (e, r, n) => {
-            n.d(r, { Z: () => A });
+            n.d(r, { Z: () => v });
             var t = n(202784),
                 a = n(325686),
                 o = n(674132),
@@ -362,14 +364,14 @@
                 }
                 render() {
                     const { additionalControl: e, align: r, buttonType: n, children: o, style: l, subtitle: i, title: c, topBarStyle: w, withBackgroundBlur: f, withTopBar: D, withTransparentMask: g } = this.props,
-                        { isVisible: A } = this.state;
+                        { isVisible: v } = this.state;
                     return t.createElement(b.ZP.Consumer, null, ({ direction: b }) => {
                         const y = "rtl" === b,
-                            E = A ? v.visibleDrawer : ("left" === r) === y ? v.offscreenRightDrawer : v.offscreenLeftDrawer,
-                            C = A && !g ? v.maskWithBg : v.maskTransparent,
-                            k = A ? v.animateOpen : v.animateClose,
-                            M = s.Z.reducedMotionEnabled ? null : k;
-                        return t.createElement(h.Z.Modal, null, t.createElement(p.Z, null, t.createElement(m.Z, null, t.createElement(a.Z, { onClick: this._handleMaskClick, onKeyUp: this._handleEsc, style: [v.mask, C, M, f ? v.backgroundBlur : null, "left" === r ? v.alignLeft : v.alignRight] }, (0, u.Z)("div", { role: "dialog", onTransitionEnd: this._handleTransitionEnd, ref: this._setAnimationNode, onClick: S, style: [v.root, f ? v.backgroundRootBlur : null, E, M, l], children: t.createElement(t.Fragment, null, D ? t.createElement(d.Z, { leftControl: "left" === r ? e : "right" === r ? this._renderCloseButton(n) : null, rightControl: "left" === r ? this._renderCloseButton(n) : "right" === r ? e : null, style: w, subtitle: i, title: c }) : null, t.createElement(a.Z, { style: v.contentContainer }, o)) })))));
+                            E = v ? A.visibleDrawer : ("left" === r) === y ? A.offscreenRightDrawer : A.offscreenLeftDrawer,
+                            k = v && !g ? A.maskWithBg : A.maskTransparent,
+                            C = v ? A.animateOpen : A.animateClose,
+                            M = s.Z.reducedMotionEnabled ? null : C;
+                        return t.createElement(h.Z.Modal, null, t.createElement(p.Z, null, t.createElement(m.Z, null, t.createElement(a.Z, { onClick: this._handleMaskClick, onKeyUp: this._handleEsc, style: [A.mask, k, M, f ? A.backgroundBlur : null, "left" === r ? A.alignLeft : A.alignRight] }, (0, u.Z)("div", { role: "dialog", onTransitionEnd: this._handleTransitionEnd, ref: this._setAnimationNode, onClick: S, style: [A.root, f ? A.backgroundRootBlur : null, E, M, l], children: t.createElement(t.Fragment, null, D ? t.createElement(d.Z, { leftControl: "left" === r ? e : "right" === r ? this._renderCloseButton(n) : null, rightControl: "left" === r ? this._renderCloseButton(n) : "right" === r ? e : null, style: w, subtitle: i, title: c }) : null, t.createElement(a.Z, { style: A.contentContainer }, o)) })))));
                     });
                 }
                 _renderCloseButton(e) {
@@ -380,8 +382,8 @@
             const S = (e) => {
                     e.stopPropagation();
                 },
-                v = w.default.create((e) => ({ backgroundBlur: { backdropFilter: "blur(2px)" }, backgroundRootBlur: { boxShadow: "light" === e.paletteName ? e.boxShadows.small : "0 0 5px rgba(80,80,80,0.2), 0 1px 4px 1px rgba(80,80,80,0.25)" }, mask: { ...w.default.absoluteFillObject, position: "fixed", transitionProperty: "background-color", transitionTimingFunction: "ease" }, maskWithBg: { backgroundColor: e.colors.maskColor }, maskTransparent: { backgroundColor: e.colors.transparent }, root: { display: "flex", flexDirection: "column", backgroundColor: e.colors.navigationBackground, boxShadow: e.boxShadows.small, minWidth: 280, maxWidth: "100%", flexGrow: 1, flexShrink: 1, minHeight: 0, height: "100vh", transitionProperty: "transform", transitionTimingFunction: "ease" }, visibleDrawer: { transform: [{ translateX: "0%" }] }, offscreenLeftDrawer: { transform: [{ translateX: "-100%" }] }, offscreenRightDrawer: { transform: [{ translateX: "100%" }] }, alignLeft: { alignItems: "flex-start" }, alignRight: { alignItems: "flex-end" }, animateOpen: { transitionDuration: "250ms" }, animateClose: { transitionDuration: "200ms" }, contentContainer: { flexGrow: 1, flexShrink: 1, minHeight: 0, overflowY: "auto", overscrollBehavior: "contain" } })),
-                A = g;
+                A = w.default.create((e) => ({ backgroundBlur: { backdropFilter: "blur(2px)" }, backgroundRootBlur: { boxShadow: "light" === e.paletteName ? e.boxShadows.small : "0 0 5px rgba(80,80,80,0.2), 0 1px 4px 1px rgba(80,80,80,0.25)" }, mask: { ...w.default.absoluteFillObject, position: "fixed", transitionProperty: "background-color", transitionTimingFunction: "ease" }, maskWithBg: { backgroundColor: e.colors.maskColor }, maskTransparent: { backgroundColor: e.colors.transparent }, root: { display: "flex", flexDirection: "column", backgroundColor: e.colors.navigationBackground, boxShadow: e.boxShadows.small, minWidth: 280, maxWidth: "100%", flexGrow: 1, flexShrink: 1, minHeight: 0, height: "100vh", transitionProperty: "transform", transitionTimingFunction: "ease" }, visibleDrawer: { transform: [{ translateX: "0%" }] }, offscreenLeftDrawer: { transform: [{ translateX: "-100%" }] }, offscreenRightDrawer: { transform: [{ translateX: "100%" }] }, alignLeft: { alignItems: "flex-start" }, alignRight: { alignItems: "flex-end" }, animateOpen: { transitionDuration: "250ms" }, animateClose: { transitionDuration: "200ms" }, contentContainer: { flexGrow: 1, flexShrink: 1, minHeight: 0, overflowY: "auto", overscrollBehavior: "contain" } })),
+                v = g;
         },
         529509: (e, r, n) => {
             n.d(r, { Z: () => b });
@@ -661,19 +663,6 @@
             }
             s.defaultProps = { withLink: !0, withSubscribersCount: !0 };
         },
-        839: (e, r, n) => {
-            n.r(r), n.d(r, { default: () => s });
-            var t = n(202784),
-                a = n(890601),
-                o = n(783427),
-                l = n(347101);
-            const i = (e = {}) => {
-                const { direction: r } = (0, o.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: t.createElement("g", null, t.createElement("path", { d: "M2.008 6.5c0-1.381 1.119-2.5 2.5-2.5h11c1.381 0 2.5 1.119 2.5 2.5v1.882l4-2v11.236l-4-2V17.5c0 1.381-1.119 2.5-2.5 2.5h-11c-1.381 0-2.5-1.119-2.5-2.5v-11zm16 6.882l2 1V9.618l-2 1v2.764zM4.508 6c-.276 0-.5.224-.5.5v11c0 .276.224.5.5.5h11c.276 0 .5-.224.5-.5v-11c0-.276-.224-.5-.5-.5h-11zm5.5 4c-1.105 0-2 .895-2 2s.895 2 2 2 2-.895 2-2-.896-2-2-2zm-4 2c0-2.209 1.791-4 4-4s4 1.791 4 4-1.791 4-4 4-4-1.791-4-4z" })) }, { writingDirection: r });
-            };
-            i.metadata = { width: 24, height: 24 };
-            const s = i;
-        },
         197318: (e, r, n) => {
             n.r(r), n.d(r, { default: () => s });
             var t = n(202784),
@@ -687,7 +676,7 @@
             i.metadata = { width: 24, height: 24 };
             const s = i;
         },
-        297896: (e, r, n) => {
+        279849: (e, r, n) => {
             n.r(r), n.d(r, { default: () => s });
             var t = n(202784),
                 a = n(890601),
@@ -695,20 +684,7 @@
                 l = n(347101);
             const i = (e = {}) => {
                 const { direction: r } = (0, o.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: t.createElement("g", null, t.createElement("path", { d: "M4 4.5C4 3.12 5.12 2 6.5 2h11C18.88 2 20 3.12 20 4.5v15c0 1.38-1.12 2.5-2.5 2.5h-11C5.12 22 4 20.88 4 19.5V16h2v3.5c0 .28.22.5.5.5h11c.28 0 .5-.22.5-.5v-15c0-.28-.22-.5-.5-.5h-11c-.28 0-.5.22-.5.5V8H4V4.5zm6.95 3.04L15.42 12l-4.47 4.46-1.41-1.42L11.58 13H2v-2h9.58L9.54 8.96l1.41-1.42z" })) }, { writingDirection: r });
-            };
-            i.metadata = { width: 24, height: 24 };
-            const s = i;
-        },
-        748138: (e, r, n) => {
-            n.r(r), n.d(r, { default: () => s });
-            var t = n(202784),
-                a = n(890601),
-                o = n(783427),
-                l = n(347101);
-            const i = (e = {}) => {
-                const { direction: r } = (0, o.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: t.createElement("g", null, t.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: r });
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: t.createElement("g", null, t.createElement("path", { d: "M18.037 13.084c-.918 1.685-2.719 3.479-5.694 5.212l-.342.204-.343-.204c-2.976-1.733-4.777-3.527-5.696-5.212-.924-1.699-.958-3.303-.349-4.533.603-1.216 1.799-1.978 3.127-2.046 1.122-.061 2.289.381 3.261 1.366.971-.985 2.138-1.427 3.259-1.366 1.328.068 2.524.829 3.127 2.046.609 1.23.575 2.834-.349 4.533zM19.42 3.16l1.42 1.42-1.77 1.76-1.41-1.41 1.76-1.77zM13 .5h-2V3h2V.5zM.5 13H3v-2H.5v2zm2.66 6.42l1.42 1.42 1.76-1.77-1.41-1.41-1.77 1.76zM21 11v2h2.5v-2H21zM11 23.5h2V21h-2v2.5zm6.66-4.43l1.76 1.77 1.42-1.42-1.77-1.76-1.41 1.41zM6.34 4.93L4.58 3.16 3.16 4.58l1.77 1.76 1.41-1.41z" })) }, { writingDirection: r });
             };
             i.metadata = { width: 24, height: 24 };
             const s = i;
@@ -739,4 +715,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.DashMenu.c74463aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.DashMenu.5fa2a6da.js.map

@@ -610,6 +610,7 @@
                 a("e0cb0c72", "Reklamy"),
                 a("e2eef3c2", "Ověřené organizace"),
                 a("b55d8a78", "Vytvořte svůj Prostor"),
+                a("e5323e36", "Go Live"),
                 a("a5a30af0", "Články"),
                 a("d13d697c", "Nový"),
                 a("j0e2cfa8", "Firma"),
@@ -909,9 +910,9 @@
                 a("i821844f", "Další informace"),
                 a("b0abbb17", "Další informace"),
                 a("e7e0d88b", "Další informace"),
-                a("i560665f", "Další informace"),
-                a("f6e774d9", "Další informace");
-            a("h486f755", "Další informace"),
+                a("i560665f", "Další informace");
+            a("f6e774d9", "Další informace"),
+                a("h486f755", "Další informace"),
                 a("bab41dab", "Další informace"),
                 a("e0ebdb29", "Další informace"),
                 a("f8493831", "Další informace"),
@@ -1917,9 +1918,9 @@
                 a("a330771e", "Kopírujte odkaz na svou schránku"),
                 a("b6510e68", "Kopírujte URL adresu svého článku, abyste ho mohli sdílet."),
                 a("e4a6e006", "Něco se pokazilo. Zkuste to prosím znovu."),
-                a("eff483e0", "Po zveřejnění obdržíte odkaz na sdílení článku."),
-                a("ca15dd4e", "Koncept");
-            a("bb40bf66", "Publikováno"),
+                a("eff483e0", "Po zveřejnění obdržíte odkaz na sdílení článku.");
+            a("ca15dd4e", "Koncept"),
+                a("bb40bf66", "Publikováno"),
                 a("h107935c", "Naposledy uloženo právě teď"),
                 a("a753a870", "Použít"),
                 a("afccc67e", "Kopírujte odkaz na článek"),
@@ -2969,9 +2970,9 @@
                 a("c6f58084", "Vývojáři"),
                 a("d83f18d2", "Adresář"),
                 a("hc5aa17c", "Získejte aplikaci X"),
-                a("j0693948", "Získejte aplikaci Grok"),
-                a("fbf83158", "Varování: Platba selhala");
-            a("jadeb4da", "Než ztratíte výhody ověření a předplatného, urychleně aktualizujte svou platební metodu."),
+                a("j0693948", "Získejte aplikaci Grok");
+            a("fbf83158", "Varování: Platba selhala"),
+                a("jadeb4da", "Než ztratíte výhody ověření a předplatného, urychleně aktualizujte svou platební metodu."),
                 a("bce3726a", "Aktualizujte vyúčtování"),
                 a("fce9ecce", "Navržená videa"),
                 a("efe6ef9e", "Zobrazit post"),
@@ -3885,9 +3886,9 @@
                 a("d7357e7e", "Odebrat ze spoluhostitelů"),
                 a("bf307fc0", "Zablokovat a odebrat"),
                 a("ccf2f24e", "Hlášení"),
-                a("i22835de", "Schválit"),
-                a("cb59a0fe", "Zamítnout");
-            a("c2376960", "Žádosti o možnost mluvit"),
+                a("i22835de", "Schválit");
+            a("cb59a0fe", "Zamítnout"),
+                a("c2376960", "Žádosti o možnost mluvit"),
                 a("aba7dcdd", function (e) {
                     return "Pozvat " + e.name;
                 }),
@@ -4807,7 +4808,7 @@
                 a("h7d28188", "Zpět na obsah"),
                 a("if2704e4", "Back to Live Overview"),
                 a("ea928ae4", "Zpět do prostoru"),
-                a("e8c07c22", "broadcast"),
+                a("e8c07c22", "vysílání"),
                 a("a4ce6e68", "Broadcast Metrics"),
                 a("b2214c74", "Total number of views for this broadcast"),
                 a("d4fcf83a", "Total time viewers spent watching this broadcast"),
@@ -4854,7 +4855,7 @@
                 a("c4a7a6aa", "Live data"),
                 a("a992032a", "Livestream Analytics"),
                 a("ie45edda", "Přehled živého vysílání"),
-                a("e30fc268", "Live Viewers"),
+                a("e30fc268", "Diváci živého vysílání"),
                 a("bd37f68e", "Aktivita média"),
                 a("fe074210", "minutami"),
                 a("jd03a1b8", "Minutes Watched"),
@@ -4866,8 +4867,8 @@
                 a("jbcb09a8", "Dosud nedostatečné množství údajů"),
                 a("df846d6c", "Pro vybrané časové období nebyly nalezeny žádné posty."),
                 a("g2ba40f6", "Pro vybraný filtr nejsou k dispozici žádné prostory"),
-                a("j44061a0", "Not available"),
-                a("c4a93912", "N/A"),
+                a("j44061a0", "Nedostupné"),
+                a("c4a93912", "Není k dispozici"),
                 a("a6b78788", "No viewer data available"),
                 a("b2438638", "z celku"),
                 a("ic0399e0", "Organická zobrazení"),
@@ -4898,7 +4899,7 @@
                 a("cf3709da", "Stav"),
                 a("e797dc32", "Stream time: "),
                 a("b649d8cc", "Pouze pro předplatitele"),
-                a("j9282130", "Broadcast thumbnail"),
+                a("j9282130", "Miniatura vysílání"),
                 a("g629b8b0", "Timed Out"),
                 a("eb87323c", "This shows analytics data for the selected time period since the livestream happened."),
                 a("i6a75722", "Time Range"),
@@ -4917,9 +4918,9 @@
                 a("a7b48b36", "Procento zobrazení videí, která byla dokončena."),
                 a("a2580f2a", "Procentuální podíl dokončení"),
                 a("ff95a9cc", "ID videa"),
-                a("a97e358e", "Odkaz na video"),
-                a("e10e8b46", "Zobrazují se pouze videa za posledních 100 dní.");
-            a("ba37f6da", "Souhrn videa"),
+                a("a97e358e", "Odkaz na video");
+            a("e10e8b46", "Zobrazují se pouze videa za posledních 100 dní."),
+                a("ba37f6da", "Souhrn videa"),
                 a("f19846b2", "Miniatura videa"),
                 a("ccd6f4a8", "Název videa"),
                 a("c8410542", "Počet zobrazení vašeho videa."),
@@ -5873,11 +5874,11 @@
                 a("a0ea2fa6", "Jméno nemůže zůstat prázdné"),
                 a("eec37eac", "Složka pro záložky s tímto názvem už existuje"),
                 a("fce0c59e", "Soubor JSON pro animaci se nepovedlo analyzovat. Zkontrolujte prosím formát kódu JSON v souboru pro animaci a zkuste to znovu."),
-                a("g0eea6c2", "Soubor JSON pro animaci se nepovedlo přečíst. Zkuste prosím otevřít soubor znovu."),
-                a("ae58026a", "Otevřít náhled souboru .json pro značkový lajk");
-            a("hd0bc1eb", function (e) {
-                return "Uživatel " + e.name + " vysílá živě.";
-            }),
+                a("g0eea6c2", "Soubor JSON pro animaci se nepovedlo přečíst. Zkuste prosím otevřít soubor znovu.");
+            a("ae58026a", "Otevřít náhled souboru .json pro značkový lajk"),
+                a("hd0bc1eb", function (e) {
+                    return "Uživatel " + e.name + " vysílá živě.";
+                }),
                 a("bea1f26b", function (e) {
                     return "Uživatel " + e.name + " vysílal živě.";
                 }),
@@ -6881,9 +6882,9 @@
                 a("fdd77a34", "Vytvářejte delší posty"),
                 a("j6d26a7a", "Pište tolik obsahu, kolik ho chcete sdílet"),
                 a("c4fd68da", "Přizpůsobte si uživatelské prostředí"),
-                a("c0195168", "Změňte ikonu aplikace a možnosti navigace"),
-                a("b6b5dc94", "Nechte se ověřit");
-            a("b06db848", "Odlište se od ostatních na platformě"),
+                a("c0195168", "Změňte ikonu aplikace a možnosti navigace");
+            a("b6b5dc94", "Nechte se ověřit"),
+                a("b06db848", "Odlište se od ostatních na platformě"),
                 a("e3e3a97c", "Získejte podíl z příjmů ze svých postů"),
                 a("f15bc24e", "Zvýšené limity funkce Grok"),
                 a("c4666e1c", "Větší využití funkce Grok 3, našeho nejnovějšího modelu "),
@@ -7857,8 +7858,7 @@
                 a("b33d1518", "Synchronizujte úlohy z podporované integrace nebo vlastního zdroje XML"),
                 a("dd2db402", "Krok 1: Shromáždit požadované informace"),
                 a("edb098c2", "Krok 2: Kontaktujte náš tým podpory"),
-                a("c4474460", "Krok 2: Poslat e-mail našemu týmu podpory"),
-                a("a08da0fa", "Co se stane dál?");
+                a("c4474460", "Krok 2: Poslat e-mail našemu týmu podpory");
             function r(e, o) {
                 for (var t = 0; t < o.length; t++) {
                     var a = o[t];
@@ -7897,7 +7897,8 @@
                     i(e, o)
                 );
             }
-            a("c127374e", "Pošlete nám zprávu"),
+            a("a08da0fa", "Co se stane dál?"),
+                a("c127374e", "Pošlete nám zprávu"),
                 a("b2cb2a0c", "Uživatelské jméno vašeho účtu Ověřené organizace"),
                 a("b8e64002", "Název vašeho systému sledování žadatelů"),
                 a("acb99db6", "Adresa URL kariérního webu, kde jsou uvedeny vaše pracovní pozice"),
@@ -8899,9 +8900,9 @@
                 a("c057680c", "V tomto prohlížeči video nedokážeme přehrát. Zkuste jiný webový prohlížeč."),
                 a("i5dfae6e", "Toto video není na vašem místě dostupné."),
                 a("c2388276", "Toto video bylo smazáno."),
-                a("d2c96140", "Indikátor zvuku hosta"),
-                a("f6dc9146", "ZÁZNAM");
-            a("d30c74fe", "Hlasitost"),
+                a("d2c96140", "Indikátor zvuku hosta");
+            a("f6dc9146", "ZÁZNAM"),
+                a("d30c74fe", "Hlasitost"),
                 a("f2d4e6f2", "Zhlédnout znovu"),
                 a("e9f1af3a", "Zjistit víc"),
                 a("f1881d86", "Na tento post nejde odpovědět a nejde ho sdílet ani lajkovat."),
@@ -13247,4 +13248,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/cs.479e012a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/cs.b9a5a34a.js.map

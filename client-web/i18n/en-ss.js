@@ -601,6 +601,7 @@
                 a("e0cb0c72", "[[282267]] Ads"),
                 a("e2eef3c2", "[[275184]] Verified Orgs"),
                 a("b55d8a78", "[[285859]] Create your Space"),
+                a("e5323e36", "Go Live"),
                 a("a5a30af0", "[[236951]] Articles"),
                 a("d13d697c", "[[185484]] New"),
                 a("j0e2cfa8", "[[258365]] Business"),
@@ -900,9 +901,9 @@
                 a("i821844f", "Learn more"),
                 a("b0abbb17", "Learn more"),
                 a("e7e0d88b", "Learn more"),
-                a("i560665f", "Learn more"),
-                a("f6e774d9", "Learn more");
-            a("h486f755", "Learn more"),
+                a("i560665f", "Learn more");
+            a("f6e774d9", "Learn more"),
+                a("h486f755", "Learn more"),
                 a("bab41dab", "Learn more"),
                 a("e0ebdb29", "Learn more"),
                 a("f8493831", "Learn more"),
@@ -1908,9 +1909,9 @@
                 a("a330771e", "[[284904]] Copy link to your clipboard"),
                 a("b6510e68", "[[284899]] Copy your Article’s URL so you can share it."),
                 a("e4a6e006", "[[243272]] Something went wrong. Please try again."),
-                a("eff483e0", "[[284886]] After you publish, get a link to share the Article."),
-                a("ca15dd4e", "[[209399]] Draft");
-            a("bb40bf66", "[[224076]] Published"),
+                a("eff483e0", "[[284886]] After you publish, get a link to share the Article.");
+            a("ca15dd4e", "[[209399]] Draft"),
+                a("bb40bf66", "[[224076]] Published"),
                 a("h107935c", "[[284908]] Last saved just now"),
                 a("a753a870", "[[188695]] Apply"),
                 a("afccc67e", "[[284898]] Copy link to Article"),
@@ -2960,9 +2961,9 @@
                 a("c6f58084", "[[180900]] Developers"),
                 a("d83f18d2", "[[180901]] Directory"),
                 a("hc5aa17c", "[[294380]] Get the X app"),
-                a("j0693948", "[[294379]] Get the Grok app"),
-                a("fbf83158", "[[293517]] Warning: Payment failed");
-            a("jadeb4da", "[[294150]] Please urgently update your payment method before you lose your subscription benefits."),
+                a("j0693948", "[[294379]] Get the Grok app");
+            a("fbf83158", "[[293517]] Warning: Payment failed"),
+                a("jadeb4da", "[[294150]] Please urgently update your payment method before you lose your subscription benefits."),
                 a("bce3726a", "[[293518]] Update Billing"),
                 a("fce9ecce", "[[291414]] Suggested Videos"),
                 a("efe6ef9e", "[[281778]] View post"),
@@ -3876,9 +3877,9 @@
                 a("d7357e7e", "[[285863]] Remove from Co-hosts"),
                 a("bf307fc0", "[[281203]] Block and Remove"),
                 a("ccf2f24e", "[[143027]] Report"),
-                a("i22835de", "[[242576]] Approve"),
-                a("cb59a0fe", "[[242588]] Deny");
-            a("c2376960", "[[281954]] Requests to Speak"),
+                a("i22835de", "[[242576]] Approve");
+            a("cb59a0fe", "[[242588]] Deny"),
+                a("c2376960", "[[281954]] Requests to Speak"),
                 a("aba7dcdd", function (e) {
                     return "[[287269]] Invite " + e.name;
                 }),
@@ -4267,7 +4268,7 @@
                 a("fa0f1262", "[[292192]] Break"),
                 a("c2cac618", "[[293942]] Grok currently supports La Liga, Premier League, Bundesliga, Series A, and Ligue 1 data."),
                 a("acae223d", function (e) {
-                    return 'Results for "' + e.prompt + '"';
+                    return '[[294483]] Results for "' + e.prompt + '"';
                 }),
                 a("bed99fe2", "[[291931]] See less"),
                 a("f7b57ac0", "[[292472]] Stats"),
@@ -4796,12 +4797,12 @@
                 a("e7479ce4", "[[291994]] Average Watch Time"),
                 a("g1dfa7d0", "[[292092]] Avg"),
                 a("h7d28188", "[[294152]] Back to content"),
-                a("if2704e4", "Back to Live Overview"),
+                a("if2704e4", "[[294432]] Back to Live Overview"),
                 a("ea928ae4", "[[294155]] Back to spaces"),
-                a("e8c07c22", "broadcast"),
-                a("a4ce6e68", "Broadcast Metrics"),
-                a("b2214c74", "Total number of views for this broadcast"),
-                a("d4fcf83a", "Total time viewers spent watching this broadcast"),
+                a("e8c07c22", "[[294456]] broadcast"),
+                a("a4ce6e68", "[[294431]] Broadcast Metrics"),
+                a("b2214c74", "[[294451]] Total number of views for this broadcast"),
+                a("d4fcf83a", "[[294452]] Total time viewers spent watching this broadcast"),
                 a("a89b0322", "[[237297]] Canceled"),
                 a("j3cb12ea", "[[294345]] Concurrent Listeners"),
                 a("b93931ee", "[[292094]] The number of times your content was posted."),
@@ -4837,19 +4838,19 @@
                 a("efa0f858", "[[291460]] The number of follows and unfollows over time. This does not necessarily reflect your follower count."),
                 a("g2b06cc6", "[[288662]] Gender data may be inferred"),
                 a("b66b3baa", "[[292169]] hours"),
-                a("cf8a0772", "Impression to Views"),
-                a("g13d8010", "Last 48 Hours"),
-                a("d5627596", "Last Hour"),
+                a("cf8a0772", "[[294439]] Impression to Views"),
+                a("g13d8010", "[[294436]] Last 48 Hours"),
+                a("d5627596", "[[294435]] Last Hour"),
                 a("baf120a6", "[[288118]] Least engaged"),
                 a("f2382014", "[[186086]] LIVE"),
-                a("c4a7a6aa", "Live data"),
-                a("a992032a", "Livestream Analytics"),
+                a("c4a7a6aa", "[[294438]] Live data"),
+                a("a992032a", "[[294434]] Livestream Analytics"),
                 a("ie45edda", "[[294277]] Livestream overview"),
-                a("e30fc268", "Live Viewers"),
+                a("e30fc268", "[[294437]] Live Viewers"),
                 a("bd37f68e", "[[287842]] Media activity"),
                 a("fe074210", "[[292300]] mins"),
-                a("jd03a1b8", "Minutes Watched"),
-                a("a20e91e8", "minutes watched"),
+                a("jd03a1b8", "[[294440]] Minutes Watched"),
+                a("a20e91e8", "[[294455]] minutes watched"),
                 a("ic2bebee", "[[293567]] Monetized"),
                 a("a1d642c8", "[[288120]] Most engaged"),
                 a("ifc4c1f8", "[[293730]] The number of new followers gained from this content."),
@@ -4857,14 +4858,14 @@
                 a("jbcb09a8", "[[288082]] Not enough data yet"),
                 a("df846d6c", "[[293568]] No posts found for the selected time range."),
                 a("g2ba40f6", "[[294255]] No spaces available for the selected filter"),
-                a("j44061a0", "Not available"),
-                a("c4a93912", "N/A"),
-                a("a6b78788", "No viewer data available"),
+                a("j44061a0", "[[294442]] Not available"),
+                a("c4a93912", "[[294443]] N/A"),
+                a("a6b78788", "[[294441]] No viewer data available"),
                 a("b2438638", "[[291418]] of total"),
                 a("ic0399e0", "[[292807]] Organic Views"),
                 a("ja5c444a", "[[291417]] Pay period"),
                 a("f04e025e", "[[294346]] Peak Concurrent Listeners"),
-                a("d6d10662", "Peak Viewers: "),
+                a("d6d10662", "[[294445]] Peak Viewers: "),
                 a("d147bea2", "[[294278]] Please check back again later"),
                 a("f0336d68", "[[280528]] Post Analytics"),
                 a("g85fbd2e", "[[290712]] Post id"),
@@ -4872,11 +4873,11 @@
                 a("hf4f9bfe", "[[293569]] Post Link"),
                 a("bf5ebf5c", "[[293678]] Posts and replies"),
                 a("b211652e", "[[291459]] Posts over time"),
-                a("f2efec0a", "Pre-Published"),
+                a("f2efec0a", "[[294444]] Pre-Published"),
                 a("i61e0302", "[[142372]] Previous"),
                 a("e08a706a", "[[292808]] Promoted Views"),
                 a("cbc99192", "[[292093]] Published date"),
-                a("a83c2a9a", "Realtime"),
+                a("a83c2a9a", "[[294446]] Realtime"),
                 a("e9d72896", "[[294160]] Recorded"),
                 a("gede4932", "[[197192]] Replay"),
                 a("h0de359c", "[[293729]] The number of times this content was reposted."),
@@ -4887,20 +4888,20 @@
                 a("fbc79a40", "[[294163]] Spaces overview"),
                 a("d077112a", "[[294164]] Space Stats"),
                 a("cf3709da", "[[180912]] Status"),
-                a("e797dc32", "Stream time: "),
+                a("e797dc32", "[[294447]] Stream time: "),
                 a("b649d8cc", "[[294165]] Subscriber Only"),
-                a("j9282130", "Broadcast thumbnail"),
-                a("g629b8b0", "Timed Out"),
-                a("eb87323c", "This shows analytics data for the selected time period since the livestream happened."),
-                a("i6a75722", "Time Range"),
+                a("j9282130", "[[294433]] Broadcast thumbnail"),
+                a("g629b8b0", "[[294454]] Timed Out"),
+                a("eb87323c", "[[294449]] This shows analytics data for the selected time period since the livestream happened."),
+                a("i6a75722", "[[294453]] Time Range"),
                 a("c602f5b8", "[[246794]] Total"),
                 a("b35e68ae", "[[294169]] Total Participants"),
                 a("h78ee79a", "[[294168]] Total Replay Watched"),
                 a("e3efaed0", "[[292095]] Type"),
                 a("c37993e2", "[[291530]] Unfollows"),
-                a("b1ed35d0", "Unique Viewers"),
+                a("b1ed35d0", "[[294450]] Unique Viewers"),
                 a("bfad9306", "[[174602]] Unknown"),
-                a("b5a58f36", "Untitled Broadcast"),
+                a("b5a58f36", "[[294448]] Untitled Broadcast"),
                 a("i70f5278", "[[293194]] Uploaded on:"),
                 a("a98b58b6", "[[291293]] Verified followers"),
                 a("a5de67ca", "[[292161]] The number of followers who have verified their account."),
@@ -4908,9 +4909,9 @@
                 a("a7b48b36", "[[291997]] The percentage of video views that were completed."),
                 a("a2580f2a", "[[291995]] Completion Rate"),
                 a("ff95a9cc", "[[293572]] Video ID"),
-                a("a97e358e", "[[293570]] Video Link"),
-                a("e10e8b46", "[[292160]] Only showing the videos from the last 100 days.");
-            a("ba37f6da", "[[292001]] Video overview"),
+                a("a97e358e", "[[293570]] Video Link");
+            a("e10e8b46", "[[292160]] Only showing the videos from the last 100 days."),
+                a("ba37f6da", "[[292001]] Video overview"),
                 a("f19846b2", "[[293573]] Video thumbnail"),
                 a("ccd6f4a8", "[[293571]] Video title"),
                 a("c8410542", "[[291998]] The number of times your video was viewed."),
@@ -5864,11 +5865,11 @@
                 a("a0ea2fa6", "[[243523]] Name field cannot be empty"),
                 a("eec37eac", "[[243522]] Bookmark Folder with that name already exists"),
                 a("fce0c59e", "[[264678]] Failed to parse the animation JSON. Please check the format of the JSON in your animation file and try again."),
-                a("g0eea6c2", "[[264677]] Failed to read the animation JSON file. Please try to open the file again."),
-                a("ae58026a", "[[264679]] Open a Branded Like .json file to preview");
-            a("hd0bc1eb", function (e) {
-                return "[[185402]] " + e.name + " is live";
-            }),
+                a("g0eea6c2", "[[264677]] Failed to read the animation JSON file. Please try to open the file again.");
+            a("ae58026a", "[[264679]] Open a Branded Like .json file to preview"),
+                a("hd0bc1eb", function (e) {
+                    return "[[185402]] " + e.name + " is live";
+                }),
                 a("bea1f26b", function (e) {
                     return "[[185403]] " + e.name + " was live";
                 }),
@@ -6872,9 +6873,9 @@
                 a("fdd77a34", "[[293319]] Create longer posts"),
                 a("j6d26a7a", "[[293330]] Write as much as you’d like to share"),
                 a("c4fd68da", "[[293317]] Customize your experience"),
-                a("c0195168", "[[293318]] Change your app icon and navigation options"),
-                a("b6b5dc94", "[[293315]] Become verified");
-            a("b06db848", "[[293329]] Stand out from others on the platform"),
+                a("c0195168", "[[293318]] Change your app icon and navigation options");
+            a("b6b5dc94", "[[293315]] Become verified"),
+                a("b06db848", "[[293329]] Stand out from others on the platform"),
                 a("e3e3a97c", "[[293322]] Earn a share of revenue from your posts"),
                 a("f15bc24e", "[[293323]] Increased Grok limits"),
                 a("c4666e1c", "[[293327]] More usage of Grok 3, our latest model"),
@@ -7848,8 +7849,7 @@
                 a("b33d1518", "[[287559]] Sync jobs from a supported integration or a custom XML feed"),
                 a("dd2db402", "[[287377]] Step 1: Gather the required information"),
                 a("edb098c2", "[[290330]] Step 2: Contact our support team"),
-                a("c4474460", "[[287378]] Step 2: Email our support team"),
-                a("a08da0fa", "[[287380]] What happens next?");
+                a("c4474460", "[[287378]] Step 2: Email our support team");
             function i(e, t) {
                 for (var o = 0; o < t.length; o++) {
                     var a = t[o];
@@ -7888,7 +7888,8 @@
                     r(e, t)
                 );
             }
-            a("c127374e", "[[290331]] Send us a message"),
+            a("a08da0fa", "[[287380]] What happens next?"),
+                a("c127374e", "[[290331]] Send us a message"),
                 a("b2cb2a0c", "[[287382]] Username of your Verified Org account"),
                 a("b8e64002", "[[287375]] Name of your applicant tracking system"),
                 a("acb99db6", "[[287373]] Career site URL where your jobs are listed"),
@@ -8890,9 +8891,9 @@
                 a("c057680c", "[[209686]] We cannot play the video in this browser. Please try a different web browser."),
                 a("i5dfae6e", "[[209668]] This video is not available in your location."),
                 a("c2388276", "[[209677]] This video has been deleted."),
-                a("d2c96140", "[[196167]] Guest audio indicator"),
-                a("f6dc9146", "[[186088]] REPLAY");
-            a("d30c74fe", "[[209965]] Volume"),
+                a("d2c96140", "[[196167]] Guest audio indicator");
+            a("f6dc9146", "[[186088]] REPLAY"),
+                a("d30c74fe", "[[209965]] Volume"),
                 a("f2d4e6f2", "[[192806]] Watch again"),
                 a("e9f1af3a", "[[235679]] Find out more"),
                 a("f1881d86", "[[283438]] This post can’t be replied to, shared or liked."),
@@ -13236,4 +13237,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-ss.a10e67aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-ss.fcb1841a.js.map

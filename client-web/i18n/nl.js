@@ -601,6 +601,7 @@
                 a("e0cb0c72", "Advertenties"),
                 a("e2eef3c2", "Geverifieerde Organisaties"),
                 a("b55d8a78", "Je Space maken"),
+                a("e5323e36", "Go Live"),
                 a("a5a30af0", "Artikelen"),
                 a("d13d697c", "Nieuw"),
                 a("j0e2cfa8", "Zakelijk"),
@@ -900,9 +901,9 @@
                 a("i821844f", "Meer informatie"),
                 a("b0abbb17", "Meer informatie"),
                 a("e7e0d88b", "Meer informatie"),
-                a("i560665f", "Meer informatie"),
-                a("f6e774d9", "Meer informatie");
-            a("h486f755", "Meer informatie"),
+                a("i560665f", "Meer informatie");
+            a("f6e774d9", "Meer informatie"),
+                a("h486f755", "Meer informatie"),
                 a("bab41dab", "Meer informatie"),
                 a("e0ebdb29", "Meer informatie"),
                 a("f8493831", "Meer informatie"),
@@ -1908,9 +1909,9 @@
                 a("a330771e", "Link naar je klembord kopiëren"),
                 a("b6510e68", "Kopieer de URL van je artikel zodat je die kan delen."),
                 a("e4a6e006", "Er ging iets mis. Probeer het opnieuw."),
-                a("eff483e0", "Krijg een link om je Artikel te delen nadat je het hebt gepubliceerd."),
-                a("ca15dd4e", "Concept");
-            a("bb40bf66", "Gepubliceerd"),
+                a("eff483e0", "Krijg een link om je Artikel te delen nadat je het hebt gepubliceerd.");
+            a("ca15dd4e", "Concept"),
+                a("bb40bf66", "Gepubliceerd"),
                 a("h107935c", "Zojuist voor het laatst opgeslagen"),
                 a("a753a870", "Toepassen"),
                 a("afccc67e", "Link naar Artikel kopiëren"),
@@ -2960,9 +2961,9 @@
                 a("c6f58084", "Ontwikkelaars"),
                 a("d83f18d2", "Overzicht"),
                 a("hc5aa17c", "Download de app van X"),
-                a("j0693948", "Download de Grok-app"),
-                a("fbf83158", "Waarschuwing: betaling mislukt");
-            a("jadeb4da", "Update zo snel mogelijk je betalingsmethode voordat je abonnementsvoordelen kwijtraakt."),
+                a("j0693948", "Download de Grok-app");
+            a("fbf83158", "Waarschuwing: betaling mislukt"),
+                a("jadeb4da", "Update zo snel mogelijk je betalingsmethode voordat je abonnementsvoordelen kwijtraakt."),
                 a("bce3726a", "Factureringsgegevens"),
                 a("fce9ecce", "Aanbevolen video's"),
                 a("efe6ef9e", "Post bekijken"),
@@ -3876,9 +3877,9 @@
                 a("d7357e7e", "Uit co-hosts verwijderen"),
                 a("bf307fc0", "Blokkeren en verwijderen"),
                 a("ccf2f24e", "Rapport"),
-                a("i22835de", "Goedkeuren"),
-                a("cb59a0fe", "Weigeren");
-            a("c2376960", "Verzoeken om mee te praten"),
+                a("i22835de", "Goedkeuren");
+            a("cb59a0fe", "Weigeren"),
+                a("c2376960", "Verzoeken om mee te praten"),
                 a("aba7dcdd", function (e) {
                     return e.name + " uitnodigen";
                 }),
@@ -4798,7 +4799,7 @@
                 a("h7d28188", "Terug naar content"),
                 a("if2704e4", "Back to Live Overview"),
                 a("ea928ae4", "Terug naar Spaces"),
-                a("e8c07c22", "broadcast"),
+                a("e8c07c22", "uitzending"),
                 a("a4ce6e68", "Broadcast Metrics"),
                 a("b2214c74", "Total number of views for this broadcast"),
                 a("d4fcf83a", "Total time viewers spent watching this broadcast"),
@@ -4845,7 +4846,7 @@
                 a("c4a7a6aa", "Live data"),
                 a("a992032a", "Livestream Analytics"),
                 a("ie45edda", "Overzicht livestreams"),
-                a("e30fc268", "Live Viewers"),
+                a("e30fc268", "Live kijkers"),
                 a("bd37f68e", "Media-activiteit"),
                 a("fe074210", "min."),
                 a("jd03a1b8", "Minutes Watched"),
@@ -4857,8 +4858,8 @@
                 a("jbcb09a8", "Nog onvoldoende gegevens"),
                 a("df846d6c", "Geen posts gevonden voor de geselecteerde periode."),
                 a("g2ba40f6", "Geen Spaces beschikbaar voor het geselecteerde filter"),
-                a("j44061a0", "Not available"),
-                a("c4a93912", "N/A"),
+                a("j44061a0", "Niet beschikbaar"),
+                a("c4a93912", "N.v.t."),
                 a("a6b78788", "No viewer data available"),
                 a("b2438638", "van het totale aantal"),
                 a("ic0399e0", "Organische weergaven"),
@@ -4889,7 +4890,7 @@
                 a("cf3709da", "Status"),
                 a("e797dc32", "Stream time: "),
                 a("b649d8cc", "Alleen abonnees"),
-                a("j9282130", "Broadcast thumbnail"),
+                a("j9282130", "Miniatuur van uitzending"),
                 a("g629b8b0", "Timed Out"),
                 a("eb87323c", "This shows analytics data for the selected time period since the livestream happened."),
                 a("i6a75722", "Time Range"),
@@ -4908,9 +4909,9 @@
                 a("a7b48b36", "Het percentage voltooide videoweergaven."),
                 a("a2580f2a", "Voltooiingsratio"),
                 a("ff95a9cc", "Video-ID"),
-                a("a97e358e", "Videolink"),
-                a("e10e8b46", "Alleen video's van de afgelopen 100 dagen worden getoond.");
-            a("ba37f6da", "Video-overzicht"),
+                a("a97e358e", "Videolink");
+            a("e10e8b46", "Alleen video's van de afgelopen 100 dagen worden getoond."),
+                a("ba37f6da", "Video-overzicht"),
                 a("f19846b2", "Videominiatuur"),
                 a("ccd6f4a8", "Videotitel"),
                 a("c8410542", "Het aantal keer dat je video is bekeken"),
@@ -5864,11 +5865,11 @@
                 a("a0ea2fa6", "Veld 'naam' mag niet leeg zijn"),
                 a("eec37eac", "Er bestaat al een map met bladwijzers met die naam"),
                 a("fce0c59e", "Kon de animatie-JSON niet parsen. Controleer de indeling van de JSON in je animatiebestand en probeer het opnieuw."),
-                a("g0eea6c2", "Kon het animatie-JSON-bestand niet lezen. Probeer het bestand opnieuw te openen."),
-                a("ae58026a", "Open een Branded vind-ik-leuk-.json-bestand voor een voorvertoning");
-            a("hd0bc1eb", function (e) {
-                return e.name + " is live";
-            }),
+                a("g0eea6c2", "Kon het animatie-JSON-bestand niet lezen. Probeer het bestand opnieuw te openen.");
+            a("ae58026a", "Open een Branded vind-ik-leuk-.json-bestand voor een voorvertoning"),
+                a("hd0bc1eb", function (e) {
+                    return e.name + " is live";
+                }),
                 a("bea1f26b", function (e) {
                     return e.name + " was live";
                 }),
@@ -6872,9 +6873,9 @@
                 a("fdd77a34", "Maak langere posts"),
                 a("j6d26a7a", "Schrijf zoveel als je wil delen"),
                 a("c4fd68da", "Zorg voor een ervaring op maat"),
-                a("c0195168", "Wijzig je app-pictogram en navigatiemogelijkheden"),
-                a("b6b5dc94", "Word geverifieerd");
-            a("b06db848", "Onderscheid je van anderen op het platform"),
+                a("c0195168", "Wijzig je app-pictogram en navigatiemogelijkheden");
+            a("b6b5dc94", "Word geverifieerd"),
+                a("b06db848", "Onderscheid je van anderen op het platform"),
                 a("e3e3a97c", "Verdien een deel van de inkomsten van je posts"),
                 a("f15bc24e", "Verhoogde Grok-limieten"),
                 a("c4666e1c", "Meer gebruik van Grok 3, ons nieuwste model"),
@@ -7848,8 +7849,7 @@
                 a("b33d1518", "Vacatures synchroniseren vanuit een ondersteunde integratie of een aangepaste XML-feed"),
                 a("dd2db402", "Stap 1: verzamel de vereiste informatie"),
                 a("edb098c2", "Stap 2: neem contact op met ons ondersteuningsteam"),
-                a("c4474460", "Stap 2: mail ons ondersteuningsteam."),
-                a("a08da0fa", "Wat gaat er nu gebeuren?");
+                a("c4474460", "Stap 2: mail ons ondersteuningsteam.");
             function i(e, n) {
                 for (var t = 0; t < n.length; t++) {
                     var a = n[t];
@@ -7888,7 +7888,8 @@
                     o(e, n)
                 );
             }
-            a("c127374e", "Stuur ons een bericht"),
+            a("a08da0fa", "Wat gaat er nu gebeuren?"),
+                a("c127374e", "Stuur ons een bericht"),
                 a("b2cb2a0c", "Gebruikersnaam van je Geverifieerde Organisatie-account"),
                 a("b8e64002", "Naam van je sollicitantenvolgsysteem"),
                 a("acb99db6", "URL van de vacaturesite waarop vacatures staan"),
@@ -8890,9 +8891,9 @@
                 a("c057680c", "We kunnen deze video niet afspelen in deze browser. Gebruik een andere browser."),
                 a("i5dfae6e", "Deze video is niet beschikbaar op jouw locatie."),
                 a("c2388276", "Deze video is verwijderd."),
-                a("d2c96140", "Indicator gastgeluid"),
-                a("f6dc9146", "OPNIEUW AFSPELEN");
-            a("d30c74fe", "Volume"),
+                a("d2c96140", "Indicator gastgeluid");
+            a("f6dc9146", "OPNIEUW AFSPELEN"),
+                a("d30c74fe", "Volume"),
                 a("f2d4e6f2", "Opnieuw bekijken"),
                 a("e9f1af3a", "Meer informatie"),
                 a("f1881d86", "Deze post kan je niet beantwoorden, delen of leuk vinden."),
@@ -13249,4 +13250,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.abf3218a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.87278c3a.js.map

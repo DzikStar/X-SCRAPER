@@ -601,6 +601,7 @@
                 t("e0cb0c72", "Anuncis"),
                 t("e2eef3c2", "Organitzacions verificades"),
                 t("b55d8a78", "Crea el teu Espai"),
+                t("e5323e36", "Go Live"),
                 t("a5a30af0", "Articles"),
                 t("d13d697c", "Nova"),
                 t("j0e2cfa8", "Negoci"),
@@ -900,9 +901,9 @@
                 t("i821844f", "Més informació"),
                 t("b0abbb17", "Més informació"),
                 t("e7e0d88b", "Més informació"),
-                t("i560665f", "Més informació"),
-                t("f6e774d9", "Més informació");
-            t("h486f755", "Més informació"),
+                t("i560665f", "Més informació");
+            t("f6e774d9", "Més informació"),
+                t("h486f755", "Més informació"),
                 t("bab41dab", "Més informació"),
                 t("e0ebdb29", "Més informació"),
                 t("f8493831", "Més informació"),
@@ -1908,9 +1909,9 @@
                 t("a330771e", "Copia l'enllaç al porta-retalls"),
                 t("b6510e68", "Copia l'URL de l'article per poder compartir-lo."),
                 t("e4a6e006", "Alguna cosa ha anat malament. Torna-ho a provar."),
-                t("eff483e0", "Després de publicar, pots obtenir un enllaç per compartir l'article."),
-                t("ca15dd4e", "Esborrany");
-            t("bb40bf66", "S'ha publicat"),
+                t("eff483e0", "Després de publicar, pots obtenir un enllaç per compartir l'article.");
+            t("ca15dd4e", "Esborrany"),
+                t("bb40bf66", "S'ha publicat"),
                 t("h107935c", "Desat per últim cop ara mateix"),
                 t("a753a870", "Aplica"),
                 t("afccc67e", "Copia l'enllaç de l'article"),
@@ -2960,9 +2961,9 @@
                 t("c6f58084", "Desenvolupadors"),
                 t("d83f18d2", "Directori"),
                 t("hc5aa17c", "Obtén l'aplicació de X"),
-                t("j0693948", "Obtén l'aplicació de Grok"),
-                t("fbf83158", "Advertència: ha fallat el pagament");
-            t("jadeb4da", "Actualitza urgentment el mètode de pagament per no perdre els beneficis de la subscripció."),
+                t("j0693948", "Obtén l'aplicació de Grok");
+            t("fbf83158", "Advertència: ha fallat el pagament"),
+                t("jadeb4da", "Actualitza urgentment el mètode de pagament per no perdre els beneficis de la subscripció."),
                 t("bce3726a", "Actualitza la facturació"),
                 t("fce9ecce", "Vídeos suggerits"),
                 t("efe6ef9e", "Mostra la publicació"),
@@ -3876,9 +3877,9 @@
                 t("d7357e7e", "Elimina dels coamfitrions"),
                 t("bf307fc0", "Bloca'l i elimina'l"),
                 t("ccf2f24e", "Denuncia"),
-                t("i22835de", "Aprova"),
-                t("cb59a0fe", "Rebutja");
-            t("c2376960", "Sol·licituds per parlar"),
+                t("i22835de", "Aprova");
+            t("cb59a0fe", "Rebutja"),
+                t("c2376960", "Sol·licituds per parlar"),
                 t("aba7dcdd", function (e) {
                     return "Convida " + e.name;
                 }),
@@ -4857,7 +4858,7 @@
                 t("jbcb09a8", "Encara no hi ha prou dades"),
                 t("df846d6c", "No s'han trobat publicacions per a l'interval de temps seleccionat."),
                 t("g2ba40f6", "No hi ha cap espai disponible amb el filtre seleccionat"),
-                t("j44061a0", "Not available"),
+                t("j44061a0", "No disponible"),
                 t("c4a93912", "N/A"),
                 t("a6b78788", "No viewer data available"),
                 t("b2438638", "del total"),
@@ -4889,7 +4890,7 @@
                 t("cf3709da", "Estat"),
                 t("e797dc32", "Stream time: "),
                 t("b649d8cc", "Només per a subscriptors"),
-                t("j9282130", "Broadcast thumbnail"),
+                t("j9282130", "Miniatura de l'emissió"),
                 t("g629b8b0", "Timed Out"),
                 t("eb87323c", "This shows analytics data for the selected time period since the livestream happened."),
                 t("i6a75722", "Time Range"),
@@ -4908,9 +4909,9 @@
                 t("a7b48b36", "Percentatge de visualitzacions de vídeo que s'han completat."),
                 t("a2580f2a", "Taxa de compleció"),
                 t("ff95a9cc", "Identificador del vídeo"),
-                t("a97e358e", "Enllaç del vídeo"),
-                t("e10e8b46", "Només es mostren els vídeos dels últims 100 dies.");
-            t("ba37f6da", "Informació general sobre el vídeo"),
+                t("a97e358e", "Enllaç del vídeo");
+            t("e10e8b46", "Només es mostren els vídeos dels últims 100 dies."),
+                t("ba37f6da", "Informació general sobre el vídeo"),
                 t("f19846b2", "Miniatura del vídeo"),
                 t("ccd6f4a8", "Títol del vídeo"),
                 t("c8410542", "Nombre de vegades que s'ha vist el vídeo."),
@@ -5864,11 +5865,11 @@
                 t("a0ea2fa6", "El camp del nom no pot estar buit"),
                 t("eec37eac", "Ja existeix una carpeta de preferits amb aquest nom"),
                 t("fce0c59e", "No s'ha pogut analitzar l'animació JSON. Comprova el format del JSON al fitxer d'animació i torna-ho a provar."),
-                t("g0eea6c2", "No s'ha pogut llegir el fitxer JSON de l'animació. Torna a provar d'obrir el fitxer."),
-                t("ae58026a", "Obre un fitxer .json d'agradament de marca per previsualitzar-lo");
-            t("hd0bc1eb", function (e) {
-                return e.name + " és en directe";
-            }),
+                t("g0eea6c2", "No s'ha pogut llegir el fitxer JSON de l'animació. Torna a provar d'obrir el fitxer.");
+            t("ae58026a", "Obre un fitxer .json d'agradament de marca per previsualitzar-lo"),
+                t("hd0bc1eb", function (e) {
+                    return e.name + " és en directe";
+                }),
                 t("bea1f26b", function (e) {
                     return e.name + " ha emès en directe";
                 }),
@@ -6872,9 +6873,9 @@
                 t("fdd77a34", "Crea publicacions més llargues"),
                 t("j6d26a7a", "Escriu tot allò que vulguis compartir"),
                 t("c4fd68da", "Personalitza la teva experiència"),
-                t("c0195168", "Canvia la icona de l'aplicació i les opcions de navegació"),
-                t("b6b5dc94", "Verifica't");
-            t("b06db848", "Distingeix-te dels altres a la plataforma"),
+                t("c0195168", "Canvia la icona de l'aplicació i les opcions de navegació");
+            t("b6b5dc94", "Verifica't"),
+                t("b06db848", "Distingeix-te dels altres a la plataforma"),
                 t("e3e3a97c", "Guanya una part dels ingressos de les teves publicacions"),
                 t("f15bc24e", "Els límits de Grok s'han ampliat"),
                 t("c4666e1c", "Més ús de Grok 3, el nostre model més recent"),
@@ -7848,8 +7849,7 @@
                 t("b33d1518", "Sincronitza feines des d'una integració admesa o un canal XML personalitzat"),
                 t("dd2db402", "Pas 1: recull la informació necessària"),
                 t("edb098c2", "Pas 2: contacta amb el nostre equip d'assistència"),
-                t("c4474460", "Pas 2: envia un correu electrònic al nostre equip d'assistència"),
-                t("a08da0fa", "I ara què passarà?");
+                t("c4474460", "Pas 2: envia un correu electrònic al nostre equip d'assistència");
             function s(e, a) {
                 for (var i = 0; i < a.length; i++) {
                     var t = a[i];
@@ -7888,7 +7888,8 @@
                     n(e, a)
                 );
             }
-            t("c127374e", "Envia'ns un missatge"),
+            t("a08da0fa", "I ara què passarà?"),
+                t("c127374e", "Envia'ns un missatge"),
                 t("b2cb2a0c", "Nom d'usuari del teu compte d'Organització verificada"),
                 t("b8e64002", "Nom del teu sistema de seguiment d'aspirants"),
                 t("acb99db6", "URL del lloc web professional on es mostren les feines"),
@@ -8890,9 +8891,9 @@
                 t("c057680c", "No podem reproduir el vídeo en aquest navegador. Prova-ho amb un altre navegador web."),
                 t("i5dfae6e", "El vídeo no està disponible des de la teva ubicació."),
                 t("c2388276", "S'ha suprimit el vídeo."),
-                t("d2c96140", "Indicador d'àudio del convidat"),
-                t("f6dc9146", "REEMISSIÓ");
-            t("d30c74fe", "Volum"),
+                t("d2c96140", "Indicador d'àudio del convidat");
+            t("f6dc9146", "REEMISSIÓ"),
+                t("d30c74fe", "Volum"),
                 t("f2d4e6f2", "Torna'l a mirar"),
                 t("e9f1af3a", "Descobreix-ne més"),
                 t("f1881d86", "No pots respondre a la publicació, compartir-la ni indicar que t'agrada."),
@@ -13236,4 +13237,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ca.2221993a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ca.3bfd11fa.js.map

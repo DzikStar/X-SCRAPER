@@ -1,5 +1,5 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~bundle.AccountAnalytics~bundle.Grok~bundle.Payments~bundle.PaymentReceipt~ondemand.News~ondemand.Insig"],
+    ["shared~bundle.AccountAnalytics~bundle.Grok~bundle.Payments~ondemand.News~ondemand.Insights"],
     {
         617374: function (r, e, t) {
             var n;
@@ -143,7 +143,7 @@
                     (w.minus = w.sub =
                         function (r) {
                             var e = this;
-                            return (r = new e.constructor(r)), e.s == r.s ? P(e, r) : m(e, ((r.s = -r.s), r));
+                            return (r = new e.constructor(r)), e.s == r.s ? M(e, r) : m(e, ((r.s = -r.s), r));
                         }),
                     (w.modulo = w.mod =
                         function (r) {
@@ -170,7 +170,7 @@
                     (w.plus = w.add =
                         function (r) {
                             var e = this;
-                            return (r = new e.constructor(r)), e.s == r.s ? m(e, r) : P(e, ((r.s = -r.s), r));
+                            return (r = new e.constructor(r)), e.s == r.s ? m(e, r) : M(e, ((r.s = -r.s), r));
                         }),
                     (w.precision = w.sd =
                         function (r) {
@@ -246,14 +246,14 @@
                         var t,
                             n = this,
                             i = n.constructor;
-                        return void 0 === r ? (t = y(n, !0)) : (E(r, 0, o), void 0 === e ? (e = i.rounding) : E(e, 0, 8), (t = y((n = A(new i(n), r + 1, e)), !0, r + 1))), t;
+                        return void 0 === r ? (t = P(n, !0)) : (E(r, 0, o), void 0 === e ? (e = i.rounding) : E(e, 0, 8), (t = P((n = A(new i(n), r + 1, e)), !0, r + 1))), t;
                     }),
                     (w.toFixed = function (r, e) {
                         var t,
                             n,
                             i = this,
                             s = i.constructor;
-                        return void 0 === r ? y(i) : (E(r, 0, o), void 0 === e ? (e = s.rounding) : E(e, 0, 8), (t = y((n = A(new s(i), r + O(i) + 1, e)).abs(), !1, r + O(n) + 1)), i.isneg() && !i.isZero() ? "-" + t : t);
+                        return void 0 === r ? P(i) : (E(r, 0, o), void 0 === e ? (e = s.rounding) : E(e, 0, 8), (t = P((n = A(new s(i), r + O(i) + 1, e)).abs(), !1, r + O(n) + 1)), i.isneg() && !i.isZero() ? "-" + t : t);
                     }),
                     (w.toInteger = w.toint =
                         function () {
@@ -284,7 +284,7 @@
                             if (((n = a.precision), r.eq(i))) return A(h, n);
                             if (((c = (e = r.e) >= (t = r.d.length - 1)), (s = h.s), c)) {
                                 if ((t = d < 0 ? -d : d) <= p) {
-                                    for (o = new a(i), e = Math.ceil(n / 7 + 4), u = !1; t % 2 && M((o = o.times(h)).d, e), 0 !== (t = l(t / 2)); ) M((h = h.times(h)).d, e);
+                                    for (o = new a(i), e = Math.ceil(n / 7 + 4), u = !1; t % 2 && y((o = o.times(h)).d, e), 0 !== (t = l(t / 2)); ) y((h = h.times(h)).d, e);
                                     return (u = !0), r.s < 0 ? new a(i).div(o) : A(o, n);
                                 }
                             } else if (s < 0) throw Error(f + "NaN");
@@ -295,7 +295,7 @@
                             n,
                             i = this,
                             s = i.constructor;
-                        return void 0 === r ? (n = y(i, (t = O(i)) <= s.toExpNeg || t >= s.toExpPos)) : (E(r, 1, o), void 0 === e ? (e = s.rounding) : E(e, 0, 8), (n = y((i = A(new s(i), r, e)), r <= (t = O(i)) || t <= s.toExpNeg, r))), n;
+                        return void 0 === r ? (n = P(i, (t = O(i)) <= s.toExpNeg || t >= s.toExpPos)) : (E(r, 1, o), void 0 === e ? (e = s.rounding) : E(e, 0, 8), (n = P((i = A(new s(i), r, e)), r <= (t = O(i)) || t <= s.toExpNeg, r))), n;
                     }),
                     (w.toSignificantDigits = w.tosd =
                         function (r, e) {
@@ -310,7 +310,7 @@
                                 var r = this,
                                     e = O(r),
                                     t = r.constructor;
-                                return y(r, e <= t.toExpNeg || e >= t.toExpPos);
+                                return P(r, e <= t.toExpNeg || e >= t.toExpPos);
                             });
                 var b = (function () {
                     function r(r, e) {
@@ -354,20 +354,20 @@
                             L,
                             D,
                             q,
-                            P = n.constructor,
-                            y = n.s == i.s ? 1 : -1,
-                            M = n.d,
+                            M = n.constructor,
+                            P = n.s == i.s ? 1 : -1,
+                            y = n.d,
                             R = i.d;
-                        if (!n.s) return new P(n);
+                        if (!n.s) return new M(n);
                         if (!i.s) throw Error(f + "Division by zero");
-                        for (c = n.e - i.e, D = R.length, _ = M.length, v = (p = new P(y)).d = [], h = 0; R[h] == (M[h] || 0); ) ++h;
-                        if ((R[h] > (M[h] || 0) && --c, (N = null == o ? (o = P.precision) : s ? o + (O(n) - O(i)) + 1 : o) < 0)) return new P(0);
-                        if (((N = (N / 7 + 2) | 0), (h = 0), 1 == D)) for (l = 0, R = R[0], N++; (h < _ || l) && N--; h++) (b = l * g + (M[h] || 0)), (v[h] = (b / R) | 0), (l = b % R | 0);
+                        for (c = n.e - i.e, D = R.length, _ = y.length, v = (p = new M(P)).d = [], h = 0; R[h] == (y[h] || 0); ) ++h;
+                        if ((R[h] > (y[h] || 0) && --c, (N = null == o ? (o = M.precision) : s ? o + (O(n) - O(i)) + 1 : o) < 0)) return new M(0);
+                        if (((N = (N / 7 + 2) | 0), (h = 0), 1 == D)) for (l = 0, R = R[0], N++; (h < _ || l) && N--; h++) (b = l * g + (y[h] || 0)), (v[h] = (b / R) | 0), (l = b % R | 0);
                         else {
-                            for ((l = (g / (R[0] + 1)) | 0) > 1 && ((R = r(R, l)), (M = r(M, l)), (D = R.length), (_ = M.length)), x = D, m = (w = M.slice(0, D)).length; m < D; ) w[m++] = 0;
+                            for ((l = (g / (R[0] + 1)) | 0) > 1 && ((R = r(R, l)), (y = r(y, l)), (D = R.length), (_ = y.length)), x = D, m = (w = y.slice(0, D)).length; m < D; ) w[m++] = 0;
                             (q = R.slice()).unshift(0), (L = R[0]), R[1] >= g / 2 && ++L;
                             do {
-                                (l = 0), (u = e(R, w, D, m)) < 0 ? ((E = w[0]), D != m && (E = E * g + (w[1] || 0)), (l = (E / L) | 0) > 1 ? (l >= g && (l = g - 1), 1 == (u = e((a = r(R, l)), w, (d = a.length), (m = w.length))) && (l--, t(a, D < d ? q : R, d))) : (0 == l && (u = l = 1), (a = R.slice())), (d = a.length) < m && a.unshift(0), t(w, a, m), -1 == u && (u = e(R, w, D, (m = w.length))) < 1 && (l++, t(w, D < m ? q : R, m)), (m = w.length)) : 0 === u && (l++, (w = [0])), (v[h++] = l), u && w[0] ? (w[m++] = M[x] || 0) : ((w = [M[x]]), (m = 1));
+                                (l = 0), (u = e(R, w, D, m)) < 0 ? ((E = w[0]), D != m && (E = E * g + (w[1] || 0)), (l = (E / L) | 0) > 1 ? (l >= g && (l = g - 1), 1 == (u = e((a = r(R, l)), w, (d = a.length), (m = w.length))) && (l--, t(a, D < d ? q : R, d))) : (0 == l && (u = l = 1), (a = R.slice())), (d = a.length) < m && a.unshift(0), t(w, a, m), -1 == u && (u = e(R, w, D, (m = w.length))) < 1 && (l++, t(w, D < m ? q : R, m)), (m = w.length)) : 0 === u && (l++, (w = [0])), (v[h++] = l), u && w[0] ? (w[m++] = y[x] || 0) : ((w = [y[x]]), (m = 1));
                             } while ((x++ < _ || void 0 !== w[0]) && N--);
                         }
                         return v[0] || v.shift(), (p.e = c), A(p, s ? o + O(p) + 1 : o);
@@ -476,7 +476,7 @@
                     if (u && (r.e > v || r.e < -v)) throw Error(h + O(r));
                     return r;
                 }
-                function P(r, e) {
+                function M(r, e) {
                     var t,
                         n,
                         i,
@@ -513,14 +513,14 @@
                     for (; 0 === c[0]; c.shift()) --n;
                     return c[0] ? ((e.d = c), (e.e = n), u ? A(e, p) : e) : new d(0);
                 }
-                function y(r, e, t) {
+                function P(r, e, t) {
                     var n,
                         i = O(r),
                         o = N(r.d),
                         s = o.length;
                     return e ? (t && (n = t - s) > 0 ? (o = o.charAt(0) + "." + o.slice(1) + L(n)) : s > 1 && (o = o.charAt(0) + "." + o.slice(1)), (o = o + (i < 0 ? "e" : "e+") + i)) : i < 0 ? ((o = "0." + L(-i - 1) + o), t && (n = t - s) > 0 && (o += L(n))) : i >= s ? ((o += L(i + 1 - s)), t && (n = t - i - 1) > 0 && (o = o + "." + L(n))) : ((n = i + 1) < s && (o = o.slice(0, n) + "." + o.slice(n)), t && (n = t - s) > 0 && (i + 1 === s && (o += "."), (o += L(n)))), r.s < 0 ? "-" + o : o;
                 }
-                function M(r, e) {
+                function y(r, e) {
                     if (r.length > e) return (r.length = e), !0;
                 }
                 function R(r) {
@@ -572,4 +572,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AccountAnalytics~bundle.Grok~bundle.Payments~bundle.PaymentReceipt~ondemand.News~ondemand.Insig.0a4a8e0a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AccountAnalytics~bundle.Grok~bundle.Payments~ondemand.News~ondemand.Insights.a8179f3a.js.map

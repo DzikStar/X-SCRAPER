@@ -601,6 +601,7 @@
                 s("e0cb0c72", "Ads"),
                 s("e2eef3c2", "Organizações Verificadas"),
                 s("b55d8a78", "Crie seu Espaço"),
+                s("e5323e36", "Go Live"),
                 s("a5a30af0", "Artigos"),
                 s("d13d697c", "Novo"),
                 s("j0e2cfa8", "Empresas"),
@@ -900,9 +901,9 @@
                 s("i821844f", "Learn more"),
                 s("b0abbb17", "Learn more"),
                 s("e7e0d88b", "Learn more"),
-                s("i560665f", "Learn more"),
-                s("f6e774d9", "Learn more");
-            s("h486f755", "Learn more"),
+                s("i560665f", "Learn more");
+            s("f6e774d9", "Learn more"),
+                s("h486f755", "Learn more"),
                 s("bab41dab", "Learn more"),
                 s("e0ebdb29", "Saiba mais"),
                 s("f8493831", "Saiba mais"),
@@ -1908,9 +1909,9 @@
                 s("a330771e", "Copiar link para a área de transferência"),
                 s("b6510e68", "Copie o URL do seu Artigo para compartilhá-lo."),
                 s("e4a6e006", "Algo deu errado. Tente novamente."),
-                s("eff483e0", "Depois de publicar, receba um link para compartilhar o Artigo."),
-                s("ca15dd4e", "Rascunho");
-            s("bb40bf66", "Publicados"),
+                s("eff483e0", "Depois de publicar, receba um link para compartilhar o Artigo.");
+            s("ca15dd4e", "Rascunho"),
+                s("bb40bf66", "Publicados"),
                 s("h107935c", "Salvo pela última vez agora"),
                 s("a753a870", "Aplicar"),
                 s("afccc67e", "Copiar link para Artigo"),
@@ -2960,9 +2961,9 @@
                 s("c6f58084", "Desenvolvedores"),
                 s("d83f18d2", "Diretório"),
                 s("hc5aa17c", "Baixar o aplicativo X"),
-                s("j0693948", "Baixar o aplicativo Grok"),
-                s("fbf83158", "Aviso: o pagamento falhou");
-            s("jadeb4da", "Atualize o quanto antes sua forma de pagamento para não perder os benefícios da sua assinatura."),
+                s("j0693948", "Baixar o aplicativo Grok");
+            s("fbf83158", "Aviso: o pagamento falhou"),
+                s("jadeb4da", "Atualize o quanto antes sua forma de pagamento para não perder os benefícios da sua assinatura."),
                 s("bce3726a", "Atualizar dados de cobrança"),
                 s("fce9ecce", "Vídeos sugeridos"),
                 s("efe6ef9e", "Visualizar post"),
@@ -3876,9 +3877,9 @@
                 s("d7357e7e", "Remover dos co-hosts"),
                 s("bf307fc0", "Bloquear e remover"),
                 s("ccf2f24e", "Denunciar"),
-                s("i22835de", "Aprovar"),
-                s("cb59a0fe", "Negar");
-            s("c2376960", "Solicitações para falar"),
+                s("i22835de", "Aprovar");
+            s("cb59a0fe", "Negar"),
+                s("c2376960", "Solicitações para falar"),
                 s("aba7dcdd", function (e) {
                     return "Convidar " + e.name;
                 }),
@@ -4798,7 +4799,7 @@
                 s("h7d28188", "Voltar ao conteúdo"),
                 s("if2704e4", "Back to Live Overview"),
                 s("ea928ae4", "Voltar aos espaços"),
-                s("e8c07c22", "broadcast"),
+                s("e8c07c22", "transmissão"),
                 s("a4ce6e68", "Broadcast Metrics"),
                 s("b2214c74", "Total number of views for this broadcast"),
                 s("d4fcf83a", "Total time viewers spent watching this broadcast"),
@@ -4845,7 +4846,7 @@
                 s("c4a7a6aa", "Live data"),
                 s("a992032a", "Livestream Analytics"),
                 s("ie45edda", "Visão geral da transmissão ao vivo"),
-                s("e30fc268", "Live Viewers"),
+                s("e30fc268", "Assistindo Ao vivo"),
                 s("bd37f68e", "Atividade de mídia"),
                 s("fe074210", "min"),
                 s("jd03a1b8", "Minutes Watched"),
@@ -4857,7 +4858,7 @@
                 s("jbcb09a8", "Ainda não há dados suficientes"),
                 s("df846d6c", "Não há posts no período selecionado."),
                 s("g2ba40f6", "Não há espaços disponíveis para o filtro selecionado"),
-                s("j44061a0", "Not available"),
+                s("j44061a0", "Indisponível"),
                 s("c4a93912", "N/A"),
                 s("a6b78788", "No viewer data available"),
                 s("b2438638", "do total"),
@@ -4889,7 +4890,7 @@
                 s("cf3709da", "Status"),
                 s("e797dc32", "Stream time: "),
                 s("b649d8cc", "Apenas inscritos"),
-                s("j9282130", "Broadcast thumbnail"),
+                s("j9282130", "Miniatura de transmissão"),
                 s("g629b8b0", "Timed Out"),
                 s("eb87323c", "This shows analytics data for the selected time period since the livestream happened."),
                 s("i6a75722", "Time Range"),
@@ -4908,9 +4909,9 @@
                 s("a7b48b36", "A porcentagem de visualizações de vídeo que foram concluídas."),
                 s("a2580f2a", "Taxa de conclusões"),
                 s("ff95a9cc", "ID do vídeo"),
-                s("a97e358e", "Link do vídeo"),
-                s("e10e8b46", "Exibindo apenas os vídeos dos últimos 100 dias.");
-            s("ba37f6da", "Visão geral do vídeo"),
+                s("a97e358e", "Link do vídeo");
+            s("e10e8b46", "Exibindo apenas os vídeos dos últimos 100 dias."),
+                s("ba37f6da", "Visão geral do vídeo"),
                 s("f19846b2", "Miniatura do vídeo"),
                 s("ccd6f4a8", "Título do vídeo"),
                 s("c8410542", "O número de vezes que seu vídeo foi visualizado."),
@@ -5864,11 +5865,11 @@
                 s("a0ea2fa6", "O campo Nome não pode ficar em branco"),
                 s("eec37eac", "Já existe uma pasta de itens salvos com esse nome"),
                 s("fce0c59e", "Falha ao analisar o arquivo JSON de animação. Verifique o formato do JSON no seu arquivo de animação e tente novamente."),
-                s("g0eea6c2", "Falha ao ler o arquivo JSON de animação. Tente abrir o arquivo novamente."),
-                s("ae58026a", "Abra um arquivo .json de Curtida de Marca para pré-visualizar");
-            s("hd0bc1eb", function (e) {
-                return e.name + " está ao vivo";
-            }),
+                s("g0eea6c2", "Falha ao ler o arquivo JSON de animação. Tente abrir o arquivo novamente.");
+            s("ae58026a", "Abra um arquivo .json de Curtida de Marca para pré-visualizar"),
+                s("hd0bc1eb", function (e) {
+                    return e.name + " está ao vivo";
+                }),
                 s("bea1f26b", function (e) {
                     return e.name + " estava ao vivo";
                 }),
@@ -6872,9 +6873,9 @@
                 s("fdd77a34", "Crie posts maiores"),
                 s("j6d26a7a", "Escreva tudo o que quiser compartilhar"),
                 s("c4fd68da", "Personalize sua experiência"),
-                s("c0195168", "Altere o ícone do seu aplicativo e as opções de navegação"),
-                s("b6b5dc94", "Faça a verificação");
-            s("b06db848", "Destaque-se na plataforma"),
+                s("c0195168", "Altere o ícone do seu aplicativo e as opções de navegação");
+            s("b6b5dc94", "Faça a verificação"),
+                s("b06db848", "Destaque-se na plataforma"),
                 s("e3e3a97c", "Ganhe parte da receita de seus posts"),
                 s("f15bc24e", "Aumento dos limites do Grok"),
                 s("c4666e1c", "Maior uso do Grok 3, nosso modelo mais recente"),
@@ -7848,8 +7849,7 @@
                 s("b33d1518", "Sincronize os trabalhos de uma integração compatível ou um Feed XML personalizado"),
                 s("dd2db402", "Etapa 1: Reúna as informações solicitadas"),
                 s("edb098c2", "Etapa 2: Contate nossa equipe de suporte"),
-                s("c4474460", "Etapa 2: Envie um e-mail para a nossa equipe de suporte"),
-                s("a08da0fa", "O que acontecerá em seguida?");
+                s("c4474460", "Etapa 2: Envie um e-mail para a nossa equipe de suporte");
             function i(e, a) {
                 for (var o = 0; o < a.length; o++) {
                     var s = a[o];
@@ -7888,7 +7888,8 @@
                     n(e, a)
                 );
             }
-            s("c127374e", "Envie-nos uma mensagem"),
+            s("a08da0fa", "O que acontecerá em seguida?"),
+                s("c127374e", "Envie-nos uma mensagem"),
                 s("b2cb2a0c", "Nome de Usuário da sua conta de Organização Verificada"),
                 s("b8e64002", "Nome do seu sistema de rastreamento de candidatos"),
                 s("acb99db6", "URL do site de carreiras onde suas vagas estão listadas"),
@@ -8890,9 +8891,9 @@
                 s("c057680c", "Não é possível reproduzir o vídeo neste navegador da Web. Tente usar outro."),
                 s("i5dfae6e", "Este vídeo não está disponível na sua região."),
                 s("c2388276", "Este vídeo foi excluído."),
-                s("d2c96140", "Indicador de áudio do convidado"),
-                s("f6dc9146", "REPRODUZIR NOVAMENTE");
-            s("d30c74fe", "Volume"),
+                s("d2c96140", "Indicador de áudio do convidado");
+            s("f6dc9146", "REPRODUZIR NOVAMENTE"),
+                s("d30c74fe", "Volume"),
                 s("f2d4e6f2", "Assistir novamente"),
                 s("e9f1af3a", "Saiba mais"),
                 s("f1881d86", "Este post não pode ser respondido, compartilhado nem curtido."),
@@ -13236,4 +13237,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pt.6dc4327a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pt.3f764bea.js.map
