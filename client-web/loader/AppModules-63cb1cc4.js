@@ -753,7 +753,7 @@
                 C =
                     () =>
                     (e, t, { api: r }) => {
-                        const o = (0, s._O)(e, { params: {}, request: r.withEndpoint(i.Z).fetchProductSubscriptions }),
+                        const o = (0, s._O)(e, { params: { fetchPrices: !1 }, request: r.withEndpoint(i.Z).fetchProductSubscriptions }),
                             a = E(t());
                         return a !== n.ZP.NONE && a !== n.ZP.FAILED ? Promise.resolve() : o({ actionTypes: p, context: "FETCH_PRODUCT_SUBSCRIPTIONS", meta: {} });
                     },
@@ -1016,4 +1016,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.AppModules-63cb1cc4.f2a0f60a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.AppModules-63cb1cc4.c5a08cda.js.map

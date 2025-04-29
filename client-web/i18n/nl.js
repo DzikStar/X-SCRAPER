@@ -4268,7 +4268,7 @@
                 a("fa0f1262", "Pauze"),
                 a("c2cac618", "Grok ondersteunt momenteel gegevens over La Liga, Premier League, Bundesliga, Serie A en Ligue 1."),
                 a("acae223d", function (e) {
-                    return 'Results for "' + e.prompt + '"';
+                    return "Resultaten voor '" + e.prompt + "'";
                 }),
                 a("bed99fe2", "Minder bekijken"),
                 a("f7b57ac0", "Statistieken"),
@@ -4797,12 +4797,12 @@
                 a("e7479ce4", "Gemiddelde kijktijd"),
                 a("g1dfa7d0", "Gem."),
                 a("h7d28188", "Terug naar content"),
-                a("if2704e4", "Back to Live Overview"),
+                a("if2704e4", "Terug naar live overzicht"),
                 a("ea928ae4", "Terug naar Spaces"),
                 a("e8c07c22", "uitzending"),
-                a("a4ce6e68", "Broadcast Metrics"),
-                a("b2214c74", "Total number of views for this broadcast"),
-                a("d4fcf83a", "Total time viewers spent watching this broadcast"),
+                a("a4ce6e68", "Statistieken van uitzending"),
+                a("b2214c74", "Totaal aantal weergaven voor deze uitzending"),
+                a("d4fcf83a", "Totale tijd dat kijkers naar deze uitzending keken"),
                 a("a89b0322", "Geannuleerd"),
                 a("j3cb12ea", "Gelijktijdige luisteraars"),
                 a("b93931ee", "Het aantal keren dat je content is geplaatst."),
@@ -4838,19 +4838,19 @@
                 a("efa0f858", "Het aantal volgers en ontvolgers in de loop van de tijd. Dit weerspiegelt niet noodzakelijk je aantal volgers."),
                 a("g2b06cc6", "Gendergegevens zijn mogelijk afgeleid"),
                 a("b66b3baa", "uur"),
-                a("cf8a0772", "Impression to Views"),
-                a("g13d8010", "Last 48 Hours"),
-                a("d5627596", "Last Hour"),
+                a("cf8a0772", "Weergave tot gekeken"),
+                a("g13d8010", "Afgelopen 48 uur"),
+                a("d5627596", "Afgelopen uur"),
                 a("baf120a6", "Minste interacties"),
                 a("f2382014", "LIVE"),
-                a("c4a7a6aa", "Live data"),
-                a("a992032a", "Livestream Analytics"),
+                a("c4a7a6aa", "Live gegevens"),
+                a("a992032a", "Livestream-analyses"),
                 a("ie45edda", "Overzicht livestreams"),
                 a("e30fc268", "Live kijkers"),
                 a("bd37f68e", "Media-activiteit"),
                 a("fe074210", "min."),
-                a("jd03a1b8", "Minutes Watched"),
-                a("a20e91e8", "minutes watched"),
+                a("jd03a1b8", "Minuten gekeken"),
+                a("a20e91e8", "minuten gekeken"),
                 a("ic2bebee", "Geld verdiend"),
                 a("a1d642c8", "Meeste interacties"),
                 a("ifc4c1f8", "Het aantal nieuwe volgers dat deze content heeft opgeleverd."),
@@ -4860,12 +4860,12 @@
                 a("g2ba40f6", "Geen Spaces beschikbaar voor het geselecteerde filter"),
                 a("j44061a0", "Niet beschikbaar"),
                 a("c4a93912", "N.v.t."),
-                a("a6b78788", "No viewer data available"),
+                a("a6b78788", "Geen kijkergegevens beschikbaar"),
                 a("b2438638", "van het totale aantal"),
                 a("ic0399e0", "Organische weergaven"),
                 a("ja5c444a", "Betaalperiode"),
                 a("f04e025e", "Meeste gelijktijdige luisteraars"),
-                a("d6d10662", "Peak Viewers: "),
+                a("d6d10662", "Meeste kijkers: "),
                 a("d147bea2", "Kom later terug"),
                 a("f0336d68", "Analyse post"),
                 a("g85fbd2e", "Post-ID"),
@@ -4873,7 +4873,7 @@
                 a("hf4f9bfe", "Link plaatsen"),
                 a("bf5ebf5c", "Posts en antwoorden"),
                 a("b211652e", "Posts in de loop van de tijd"),
-                a("f2efec0a", "Pre-Published"),
+                a("f2efec0a", "Vooraf gepubliceerd"),
                 a("i61e0302", "Vorige"),
                 a("e08a706a", "Uitgelichte weergaven"),
                 a("cbc99192", "Publicatiedatum"),
@@ -4888,20 +4888,20 @@
                 a("fbc79a40", "Overzicht Spaces"),
                 a("d077112a", "Space-statistieken"),
                 a("cf3709da", "Status"),
-                a("e797dc32", "Stream time: "),
+                a("e797dc32", "Streamtijd: "),
                 a("b649d8cc", "Alleen abonnees"),
                 a("j9282130", "Miniatuur van uitzending"),
-                a("g629b8b0", "Timed Out"),
-                a("eb87323c", "This shows analytics data for the selected time period since the livestream happened."),
-                a("i6a75722", "Time Range"),
+                a("g629b8b0", "Timed-out"),
+                a("eb87323c", "Dit toont analysegegevens voor de geselecteerde periode sinds de livestream plaatsvond."),
+                a("i6a75722", "Tijdsbereik"),
                 a("c602f5b8", "Totaal"),
                 a("b35e68ae", "Totaal aantal deelnemers"),
                 a("h78ee79a", "Totaal aantal bekeken herhalingen"),
                 a("e3efaed0", "Soort"),
                 a("c37993e2", "Ontvolgen"),
-                a("b1ed35d0", "Unique Viewers"),
+                a("b1ed35d0", "Unieke kijkers"),
                 a("bfad9306", "Onbekend"),
-                a("b5a58f36", "Untitled Broadcast"),
+                a("b5a58f36", "Uitzending zonder titel"),
                 a("i70f5278", "Geüpload op:"),
                 a("a98b58b6", "Geverifieerde volgers"),
                 a("a5de67ca", "Het aantal volgers die hun account hebben geverifieerd."),
@@ -7004,10 +7004,6 @@
                 a("db5c77e0", "Dit is je actieve abonnement"),
                 a("h77ef73e", "Overstappen op maandabonnement"),
                 a("d723d44a", "Overstappen op jaarabonnement"),
-                a("i253b5c6", "Upgraden en betalen"),
-                a("d2beeaaa", "Downgraden en betalen"),
-                a("acf719d4", "Overstappen en betalen"),
-                a("ieafe1c6", "Bevestig je abonnementswijziging"),
                 a("gf6b66b8", "Bevestig je abonnementswijziging die vandaag ingaat"),
                 a("e83daf87", function (e) {
                     return "Bevestig je abonnementswijziging die ingaat op " + e.date;
@@ -7025,15 +7021,6 @@
                 a("d7efb6ba", "Je stapt over van maandelijkse naar jaarlijkse facturering. Het jaarabonnement wordt vandaag in rekening gebracht, waarbij je resterende maandelijkse saldo wordt gecrediteerd op de totale kosten. De overstap gebeurt onmiddellijk en je facturering vindt nu jaarlijks plaats."),
                 a("a5f2cf70", "Je schakelt over van jaar- naar maandfacturering. Je resterende jaartegoed dekt je maandelijkse betalingen totdat het op is. De overstap vindt onmiddellijk plaats, en je facturering is nu maandelijks."),
                 a("ef1c0208", "Abonnementswijziging bevestigen"),
-                a("c20806d5", "Algemene aankoopvoorwaarden"),
-                a("i10be4c9", "Voorwaarden"),
-                a("cdda96d6", "Je kan op elk moment opzeggen"),
-                a("cc67158f", "Algemene aankoopvoorwaarden"),
-                a("eb420831", "Voorwaarden"),
-                a("c7d49608", "Je kan op elk moment opzeggen"),
-                a("ab176bd1", "Algemene aankoopvoorwaarden"),
-                a("cea928a5", "Voorwaarden"),
-                a("e37c69e0", "Je kan op elk moment opzeggen"),
                 a("ia08113f", "Algemene aankoopvoorwaarden"),
                 a("d2962b73", "Voorwaarden"),
                 a("b421795a", "Opzeggen kan op elk moment"),
@@ -7849,7 +7836,20 @@
                 a("b33d1518", "Vacatures synchroniseren vanuit een ondersteunde integratie of een aangepaste XML-feed"),
                 a("dd2db402", "Stap 1: verzamel de vereiste informatie"),
                 a("edb098c2", "Stap 2: neem contact op met ons ondersteuningsteam"),
-                a("c4474460", "Stap 2: mail ons ondersteuningsteam.");
+                a("c4474460", "Stap 2: mail ons ondersteuningsteam."),
+                a("a08da0fa", "Wat gaat er nu gebeuren?"),
+                a("c127374e", "Stuur ons een bericht"),
+                a("b2cb2a0c", "Gebruikersnaam van je Geverifieerde Organisatie-account"),
+                a("b8e64002", "Naam van je sollicitantenvolgsysteem"),
+                a("acb99db6", "URL van de vacaturesite waarop vacatures staan"),
+                a("a64a5b7a", "Stuur de benodigde informatie naar ons ondersteuningsteam om het integratieproces te starten."),
+                a("e3dffb4e", "Kopieer het e-mailadres van ons ondersteuningsteam hieronder en mail de benodigde informatie om het integratieproces te starten."),
+                a("b4fef99e", "Nadat ons ondersteuningsteam je aanvraag heeft ontvangen, bekijken we je informatie en helpen we je bij het configureren van je integratie."),
+                a("h37f2d96", "Let op: momenteel worden niet alle sollicitantenvolgsystemen ondersteund."),
+                a("ce102a20", "Doorsturen naar Stripe"),
+                a("ddfd6718", "Betaling mislukt"),
+                a("i90ea7d2", "Werk je factureringsgegevens zo snel mogelijk bij om je voordelen te behouden."),
+                a("a62359e6", "Instellingen Geverifieerde Organisaties");
             function i(e, n) {
                 for (var t = 0; t < n.length; t++) {
                     var a = n[t];
@@ -7888,20 +7888,7 @@
                     o(e, n)
                 );
             }
-            a("a08da0fa", "Wat gaat er nu gebeuren?"),
-                a("c127374e", "Stuur ons een bericht"),
-                a("b2cb2a0c", "Gebruikersnaam van je Geverifieerde Organisatie-account"),
-                a("b8e64002", "Naam van je sollicitantenvolgsysteem"),
-                a("acb99db6", "URL van de vacaturesite waarop vacatures staan"),
-                a("a64a5b7a", "Stuur de benodigde informatie naar ons ondersteuningsteam om het integratieproces te starten."),
-                a("e3dffb4e", "Kopieer het e-mailadres van ons ondersteuningsteam hieronder en mail de benodigde informatie om het integratieproces te starten."),
-                a("b4fef99e", "Nadat ons ondersteuningsteam je aanvraag heeft ontvangen, bekijken we je informatie en helpen we je bij het configureren van je integratie."),
-                a("h37f2d96", "Let op: momenteel worden niet alle sollicitantenvolgsystemen ondersteund."),
-                a("ce102a20", "Doorsturen naar Stripe"),
-                a("ddfd6718", "Betaling mislukt"),
-                a("i90ea7d2", "Werk je factureringsgegevens zo snel mogelijk bij om je voordelen te behouden."),
-                a("a62359e6", "Instellingen Geverifieerde Organisaties"),
-                a("ge221b7c", "Upgrade je abonnement op Geverifieerde Organisaties om toegang te krijgen tot gelieerde accounts en meer advertentietegoed."),
+            a("ge221b7c", "Upgrade je abonnement op Geverifieerde Organisaties om toegang te krijgen tot gelieerde accounts en meer advertentietegoed."),
                 a("i4dccc18", "Facturering"),
                 a("ec3cd6e4", "Beheer je betalingsmethode, werk factureringsgegevens bij en bekijk je facturen."),
                 a("dac61c3c", "Accountinstellingen"),
@@ -8009,6 +7996,7 @@
                 a("j99e2f4d", function (e) {
                     return e.price + "/" + e.interval;
                 }),
+                a("ieafe1c6", "Bevestig je abonnementswijziging"),
                 a("bb21a170", "Abonnement wijzigen"),
                 a("b0dcc4dc", "Het wisselen van niveau is al in gang gezet voor jouw account."),
                 a("f3aef4ca", "Geen actief abonnement gevonden"),
@@ -8891,8 +8879,8 @@
                 a("c057680c", "We kunnen deze video niet afspelen in deze browser. Gebruik een andere browser."),
                 a("i5dfae6e", "Deze video is niet beschikbaar op jouw locatie."),
                 a("c2388276", "Deze video is verwijderd."),
-                a("d2c96140", "Indicator gastgeluid");
-            a("f6dc9146", "OPNIEUW AFSPELEN"),
+                a("d2c96140", "Indicator gastgeluid"),
+                a("f6dc9146", "OPNIEUW AFSPELEN"),
                 a("d30c74fe", "Volume"),
                 a("f2d4e6f2", "Opnieuw bekijken"),
                 a("e9f1af3a", "Meer informatie"),
@@ -8903,10 +8891,10 @@
                 a("ecda5f9e", "Misleidend"),
                 a("a423473c", "Wettelijk vereiste kennisgeving"),
                 a("b3296688", "Zichtbaarheid beperkt"),
-                a("ccd32094", "Nu"),
-                a("abfcce0d", function (e) {
-                    return e.amountOfTime + " geleden";
-                }),
+                a("ccd32094", "Nu");
+            a("abfcce0d", function (e) {
+                return e.amountOfTime + " geleden";
+            }),
                 a("ae408b76", "Je hebt deze post opnieuw geplaatst"),
                 a("j355f008", "Vastgemaakte post"),
                 a("habf9678", "Vastgemaakt door auteur"),
@@ -12102,24 +12090,6 @@
                             },
                         },
                         {
-                            key: "ca87939f",
-                            get: function () {
-                                return ["Door je te abonneren, ga je akkoord met onze ", ". Abonnementen worden automatisch verlengd totdat ze worden opgezegd, zoals beschreven in de ", ". ", ". Zeg minimaal 24 uur voordat je abonnement wordt verlengd op om extra kosten te voorkomen. Wanneer je upgradet naar een duurder abonnement, wordt het resterende tegoed van je vorige abonnement op je account bijgeschreven en automatisch gebruikt voor toekomstige betalingen. Je nieuwe abonnement gaat onmiddellijk in. Een geverifieerd telefoonnummer is vereist om je te abonneren."];
-                            },
-                        },
-                        {
-                            key: "ed2a6ba9",
-                            get: function () {
-                                return ["Door je te abonneren, ga je akkoord met onze ", ". Abonnementen worden automatisch verlengd totdat ze worden opgezegd, zoals beschreven in de ", ". ", ". Zeg minimaal 24 uur voordat je abonnement wordt verlengd op om extra kosten te voorkomen. Bij downgraden worden je huidige abonnement en de bijbehorende functies onmiddellijk overgezet naar het nieuwe abonnementsniveau. Je ontvangt geen terugbetaling voor enig deel van je vorige abonnement, tenzij dit wettelijk vereist is. De prijs van het nieuwe niveau wordt ook onmiddellijk in rekening gebracht. Een geverifieerd telefoonnummer is vereist om je te abonneren."];
-                            },
-                        },
-                        {
-                            key: "db638a21",
-                            get: function () {
-                                return ["Door je te abonneren, ga je akkoord met onze ", ". Abonnementen worden automatisch verlengd totdat ze worden opgezegd, zoals beschreven in de ", ". ", ". Zeg minimaal 24 uur voordat je abonnement wordt verlengd op om extra kosten te voorkomen. Wanneer je van abonnement wisselt, gaat het nieuwe abonnement onmiddellijk in. Het resterende tegoed van je vorige abonnement wordt op je account bijgeschreven en automatisch gebruikt voor toekomstige betalingen. Een geverifieerd telefoonnummer is vereist om je te abonneren."];
-                            },
-                        },
-                        {
                             key: "b2138d0f",
                             get: function () {
                                 return ["Door je te abonneren, ga je akkoord met onze ", ". Abonnementen worden automatisch verlengd totdat ze worden opgezegd, zoals beschreven in de ", ". ", ". Zeg minimaal 24 uur voordat je abonnement wordt verlengd op om extra kosten te voorkomen. Bij upgraden worden je huidige abonnement en de bijbehorende functies onmiddellijk overgezet naar het nieuwe abonnementsniveau. De prijs van het nieuwe niveau wordt onmiddellijk in rekening gebracht, maar een eventueel saldo van je huidige factureringscyclus wordt verrekend met de totale kosten van vandaag. Je ontvangt geen terugbetaling voor enig deel van je vorige abonnement, tenzij dit wettelijk is vereist."];
@@ -13250,4 +13220,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.87278c3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.a418317a.js.map

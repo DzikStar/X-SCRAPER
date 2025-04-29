@@ -7003,10 +7003,6 @@
                 s("db5c77e0", "Ez az aktív előfizetésed"),
                 s("h77ef73e", "Váltás havi csomagra"),
                 s("d723d44a", "Váltás éves csomagra"),
-                s("i253b5c6", "Magasabb csomagra váltás és fizetés"),
-                s("d2beeaaa", "Alacsonyabb csomagra váltás és fizetés"),
-                s("acf719d4", "Váltás és fizetés"),
-                s("ieafe1c6", "Előfizetés módosításának megerősítése"),
                 s("gf6b66b8", "Előfizetés módosításának megerősítése, amely a mai nappal hatályba lép"),
                 s("e83daf87", function (e) {
                     return "Előfizetés módosításának megerősítése, amely " + e.date + " napjával lép hatályba";
@@ -7024,15 +7020,6 @@
                 s("d7efb6ba", "Havi számlázásról éves számlázásra váltasz. Az éves csomag díját a mai napon felszámítjuk, és a havi egyenleged fennmaradó részét jóváírjuk a teljes terhelésben. A váltás azonnal megtörténik, és mostantól évente számlázunk."),
                 s("a5f2cf70", "Éves számlázásról havi számlázásra váltasz. Az éves jóváírásod fennmaradó része fedezi a havi kifizetéseidet mindaddig, amíg az el nem fogy. A váltás azonnal megtörténik, és mostantól havonta számlázunk."),
                 s("ef1c0208", "Csomagmódosítás megerősítése"),
-                s("c20806d5", "Vásárlói felhasználási feltételeket"),
-                s("i10be4c9", "Feltételekben"),
-                s("cdda96d6", "Bármikor lemondhatod"),
-                s("cc67158f", "Vásárlói felhasználási feltételeket"),
-                s("eb420831", "Feltételekben"),
-                s("c7d49608", "Bármikor lemondhatod"),
-                s("ab176bd1", "Vásárlói felhasználási feltételeket"),
-                s("cea928a5", "Feltételekben"),
-                s("e37c69e0", "Bármikor lemondhatod"),
                 s("ia08113f", "Vásárlói felhasználási feltételeket"),
                 s("d2962b73", "Feltételekben"),
                 s("b421795a", "Az előfizetést bármikor lemondhatod"),
@@ -7848,7 +7835,20 @@
                 s("b33d1518", "Szinkronizáld az állásajánlatokat egy támogatott integrációból vagy egy egyedi XML-feedből"),
                 s("dd2db402", "1. lépés: Gyűjtsd össze a szükséges információkat"),
                 s("edb098c2", "2. lépés: Vedd fel a kapcsolatot támogatási csapatunkkal"),
-                s("c4474460", "2. lépés: Küldj e-mailt a támogatási csapatunknak");
+                s("c4474460", "2. lépés: Küldj e-mailt a támogatási csapatunknak"),
+                s("a08da0fa", "Mi a következő lépés?"),
+                s("c127374e", "Küldj nekünk egy üzenetet"),
+                s("b2cb2a0c", "Az Ellenőrzött szervezeti fiókod felhasználóneve"),
+                s("b8e64002", "A pályázói nyomkövetési rendszered neve"),
+                s("acb99db6", "Annak a karrieroldalnak az URL-címe, ahol az álláshirdetéseid meg vannak hirdetve"),
+                s("a64a5b7a", "Küldd el a szükséges információkat a támogatási csapatunknak, hogy megkezdhessék az integrációs folyamatot."),
+                s("e3dffb4e", "Másold ki a lenti támogatási e-mail-címet, és küldd el a szükséges információkat a támogatási csapatunknak, hogy megkezdhessék az integrációs folyamatot."),
+                s("b4fef99e", "Miután a támogatási csapatunk megkapta a kérésedet, áttekintjük az információkat, és segítünk az integráció konfigurálásában."),
+                s("h37f2d96", "Tájékoztatunk, hogy jelenleg nem minden pályázói nyomkövetési rendszer támogatott."),
+                s("ce102a20", "Átirányítás a Stripe-ra"),
+                s("ddfd6718", "A fizetés sikertelen"),
+                s("i90ea7d2", "Sürgősen frissítsd a számlázási adataidat az előnyök megőrzése érdekében."),
+                s("a62359e6", "Ellenőrzött szervezet beállításai");
             function n(e, t) {
                 for (var a = 0; a < t.length; a++) {
                     var s = t[a];
@@ -7887,20 +7887,7 @@
                     z(e, t)
                 );
             }
-            s("a08da0fa", "Mi a következő lépés?"),
-                s("c127374e", "Küldj nekünk egy üzenetet"),
-                s("b2cb2a0c", "Az Ellenőrzött szervezeti fiókod felhasználóneve"),
-                s("b8e64002", "A pályázói nyomkövetési rendszered neve"),
-                s("acb99db6", "Annak a karrieroldalnak az URL-címe, ahol az álláshirdetéseid meg vannak hirdetve"),
-                s("a64a5b7a", "Küldd el a szükséges információkat a támogatási csapatunknak, hogy megkezdhessék az integrációs folyamatot."),
-                s("e3dffb4e", "Másold ki a lenti támogatási e-mail-címet, és küldd el a szükséges információkat a támogatási csapatunknak, hogy megkezdhessék az integrációs folyamatot."),
-                s("b4fef99e", "Miután a támogatási csapatunk megkapta a kérésedet, áttekintjük az információkat, és segítünk az integráció konfigurálásában."),
-                s("h37f2d96", "Tájékoztatunk, hogy jelenleg nem minden pályázói nyomkövetési rendszer támogatott."),
-                s("ce102a20", "Átirányítás a Stripe-ra"),
-                s("ddfd6718", "A fizetés sikertelen"),
-                s("i90ea7d2", "Sürgősen frissítsd a számlázási adataidat az előnyök megőrzése érdekében."),
-                s("a62359e6", "Ellenőrzött szervezet beállításai"),
-                s("ge221b7c", "Frissítsd az Ellenőrzött szervezetek előfizetésed, hogy hozzáférést kaphass a partnerekhez és még több hirdetési kreditet kapj."),
+            s("ge221b7c", "Frissítsd az Ellenőrzött szervezetek előfizetésed, hogy hozzáférést kaphass a partnerekhez és még több hirdetési kreditet kapj."),
                 s("i4dccc18", "Számlázás"),
                 s("ec3cd6e4", "A fizetési mód kezelése, a számlázási információk frissítése és a bevételek ellenőrzése."),
                 s("dac61c3c", "Fiókbeállítások"),
@@ -8008,6 +7995,7 @@
                 s("j99e2f4d", function (e) {
                     return e.price + "/" + e.interval;
                 }),
+                s("ieafe1c6", "Előfizetés módosításának megerősítése"),
                 s("bb21a170", "Előfizetés módosítása"),
                 s("b0dcc4dc", "A fiókodban már függőben van egy csomagváltás."),
                 s("f3aef4ca", "Nem található aktív előfizetés"),
@@ -8890,8 +8878,8 @@
                 s("c057680c", "A videó nem játszható le ebben a böngészőben. Próbálkozz másik böngészővel!"),
                 s("i5dfae6e", "Ez a videó nem érhető el a tartózkodási helyeden."),
                 s("c2388276", "Ez a videó törlésre került."),
-                s("d2c96140", "Vendég hangjelzője");
-            s("f6dc9146", "VISSZAJÁTSZÁS"),
+                s("d2c96140", "Vendég hangjelzője"),
+                s("f6dc9146", "VISSZAJÁTSZÁS"),
                 s("d30c74fe", "Hangerő"),
                 s("f2d4e6f2", "Megtekintés újra"),
                 s("e9f1af3a", "Tudj meg többet!"),
@@ -8902,10 +8890,10 @@
                 s("ecda5f9e", "Félrevezető"),
                 s("a423473c", "Jogilag előírt közlemény"),
                 s("b3296688", "Korlátozott láthatóság"),
-                s("ccd32094", "Most"),
-                s("abfcce0d", function (e) {
-                    return "Ennyivel ezelőtt: " + e.amountOfTime;
-                }),
+                s("ccd32094", "Most");
+            s("abfcce0d", function (e) {
+                return "Ennyivel ezelőtt: " + e.amountOfTime;
+            }),
                 s("ae408b76", "Újraposztoltad"),
                 s("j355f008", "Kitűzött bejegyzés"),
                 s("habf9678", "Kitűzte a szerző"),
@@ -12098,24 +12086,6 @@
                             },
                         },
                         {
-                            key: "ca87939f",
-                            get: function () {
-                                return ["Az előfizetéssel elfogadod a ", ". Az előfizetés a lemondásig automatikusan megújul a ", " leírtak szerint. ", ". Az előfizetést legalább 24 órával a megújítás előtt le kell mondanod, hogy ne számítsunk fel további díjakat. Drágább csomagra váltás esetén a korábbi előfizetéshez kapcsolódó jóváírások átkerülnek a felhasználói fiókodba, és automatikusan felhasználásra kerülnek az új kifizetésekhez. Az új előfizetésed azonnal életbe lép. Az előfizetéshez ellenőrzött telefonszám szükséges."];
-                            },
-                        },
-                        {
-                            key: "ed2a6ba9",
-                            get: function () {
-                                return ["Az előfizetéssel elfogadod a ", ". Az előfizetés a lemondásig automatikusan megújul a ", " leírtak szerint. ", ". Az előfizetést legalább 24 órával a megújítás előtt le kell mondanod, hogy ne számítsunk fel további díjakat. Alacsonyabb csomagra váltás esetén az aktuális előfizetés és a kapcsolódó funkciók azonnal átváltanak az új előfizetési csomagra. Az előző előfizetésre nem fizetünk visszatérítést, kivéve, ha arra jogszabály kötelez. Az új előfizetési csomag díját azonnal felszámítjuk. Az előfizetéshez ellenőrzött telefonszám szükséges."];
-                            },
-                        },
-                        {
-                            key: "db638a21",
-                            get: function () {
-                                return ["Az előfizetéssel elfogadod a ", ". Az előfizetés a lemondásig automatikusan megújul a ", " leírtak szerint. ", ". Az előfizetést legalább 24 órával a megújítás előtt le kell mondanod, hogy ne számítsunk fel további díjakat. Előfizetési csomag váltásakor az új előfizetésed azonnal életbe lép. A korábbi előfizetéshez kapcsolódó jóváírások átkerülnek a felhasználói fiókodba, és automatikusan felhasználásra kerülnek az új kifizetésekhez. Az előfizetéshez ellenőrzött telefonszám szükséges."];
-                            },
-                        },
-                        {
                             key: "b2138d0f",
                             get: function () {
                                 return ["Az előfizetéssel elfogadod a ", ". Az előfizetések a ", " leírt módon a lemondásig automatikusan megújulnak. ", ". Az előfizetést legalább 24 órával a megújítás előtt le kell mondanod, hogy ne számítsunk fel további díjakat. Magasabb csomagra váltás esetén az aktuális előfizetés és a kapcsolódó funkciók azonnal átváltanak az új előfizetési csomagra. Az új csomag díja azonnal felszámításra kerül, de a jelenlegi számlázási ciklusból származó időarányos egyenleget beszámítjuk a mai teljes terhelésbe. Nem kapsz visszatérítést a korábbi előfizetésed egyetlen részére sem, kivéve, ha a törvény azt megköveteli."];
@@ -13245,4 +13215,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hu.a30624fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hu.c97e0e3a.js.map

@@ -8,7 +8,7 @@
             e.exports = { queryId: "BqIHKmwZKtiUBPi07jKctg", operationName: "EnableLoggedOutWebNotifications", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
         584550: (e) => {
-            e.exports = { queryId: "lWVG1NYl6Z8-6qTDNP9jrg", operationName: "ListProductSubscriptions", operationType: "query", metadata: { featureSwitches: ["subscriptions_management_fetch_next_billing_time"], fieldToggles: [] } };
+            e.exports = { queryId: "V8-RP7SxlI4qzRmpCmEqgw", operationName: "ListProductSubscriptions", operationType: "query", metadata: { featureSwitches: ["subscriptions_management_fetch_next_billing_time", "subscriptions_marketing_page_fetch_promotions"], fieldToggles: [] } };
         },
         322766: (e) => {
             e.exports = { queryId: "RM4x9h3tF8bCn69VV3-gRg", operationName: "NotABotCheckoutUrlWithEligibility", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
@@ -771,7 +771,7 @@
         },
         551415: (e, t, n) => {
             "use strict";
-            n.d(t, { Z: () => I });
+            n.d(t, { Z: () => N });
             var o = n(202784),
                 s = n(107267),
                 i = n(952793),
@@ -866,7 +866,7 @@
                     const t = (0, Z.wZ)(e);
                     return !!t && ((e) => -1 !== L.indexOf(e))(t);
                 },
-                N = (e) => (0, m.selectFetchStatus)(e) === F.ZP.LOADED,
+                I = (e) => (0, m.selectFetchStatus)(e) === F.ZP.LOADED,
                 D = (e) => {
                     const { isPersistedDataLoaded: t, isSupportedNavPath: n } = e,
                         a = (0, s.useLocation)(),
@@ -882,13 +882,13 @@
                     if (!t || !n || l) return null;
                     return r.isTrue() && o.createElement(o.Fragment, null, o.createElement(S, null), o.createElement(C, null));
                 },
-                I = (0, p.Z)()
-                    .propsFromState(() => ({ isSupportedNavPath: B, isPersistedDataLoaded: N }))
+                N = (0, p.Z)()
+                    .propsFromState(() => ({ isSupportedNavPath: B, isPersistedDataLoaded: I }))
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, P.zr)("LOGGED_OUT_NOTIFICATIONS") }))(o.memo(D));
         },
         233391: (e, t, n) => {
             "use strict";
-            n.d(t, { BH: () => q, Qj: () => j, Wc: () => H, sI: () => R });
+            n.d(t, { BH: () => U, Qj: () => j, Wc: () => H, sI: () => R });
             var o = n(202784),
                 s = n(731708),
                 i = n(392237),
@@ -920,36 +920,36 @@
                 F = ({ customText: e }) => (e ? o.createElement(r().I18NFormatMessage, { $i18n: "ccc1f303" }, o.createElement(s.ZP, null, e)) : void 0),
                 L = ({ userFullName: e }) => (e ? o.createElement(r().I18NFormatMessage, { $i18n: "ce02fabf" }, o.createElement(s.ZP, null, e)) : void 0),
                 B = r().e6d43d06,
-                N = ({ customText: e }) => (e ? o.createElement(r().I18NFormatMessage, { $i18n: "a85608a7" }, o.createElement(s.ZP, null, e)) : void 0),
+                I = ({ customText: e }) => (e ? o.createElement(r().I18NFormatMessage, { $i18n: "a85608a7" }, o.createElement(s.ZP, null, e)) : void 0),
                 D = r().ic848090,
-                I = r().f9ebe066,
+                N = r().f9ebe066,
                 M = ({ userFullName: e }) => (e ? o.createElement(r().I18NFormatMessage, { $i18n: "c76865b7" }, o.createElement(s.ZP, null, e)) : void 0),
                 O = r().je3d93e2,
                 K = r().ea88ce2e,
-                U = r().je3d93e2,
-                q = Object.freeze({ follow: "follow", like: "like", reply: "reply", retweet: "retweet", generic: "generic", dmshare: "dmshare", postvideo: "postvideo", subscribe: "subscribe", topic: "topic", community: "community", bookmark: "bookmark", search: "search" }),
+                q = r().je3d93e2,
+                U = Object.freeze({ follow: "follow", like: "like", reply: "reply", retweet: "retweet", generic: "generic", dmshare: "dmshare", postvideo: "postvideo", subscribe: "subscribe", topic: "topic", community: "community", bookmark: "bookmark", search: "search" }),
                 H = (e, t) => {
                     switch (t) {
-                        case q.follow:
+                        case U.follow:
                             return { icon: l.default, text: E, subtext: C, iconStyle: V.iconOther };
-                        case q.like:
+                        case U.like:
                             return { icon: c.default, text: x, subtext: T, iconStyle: V.iconLike };
-                        case q.reply:
+                        case U.reply:
                             return { icon: u.default, text: k, subtext: v, iconStyle: V.iconOther };
-                        case q.retweet:
+                        case U.retweet:
                             return { icon: d.default, text: P, subtext: A, iconStyle: V.iconRetweet };
-                        case q.dmshare:
+                        case U.dmshare:
                             return { icon: p.default, text: Z, iconStyle: V.iconOther };
-                        case q.subscribe:
+                        case U.subscribe:
                             return { icon: m.default, text: F, subtext: L, iconStyle: V.iconOther };
-                        case q.topic:
-                            return { icon: h.default, text: B, subtext: N, iconStyle: V.iconTopics };
-                        case q.community:
-                            return { icon: g.default, text: D, subtext: I, iconStyle: V.iconOther };
-                        case q.search:
+                        case U.topic:
+                            return { icon: h.default, text: B, subtext: I, iconStyle: V.iconTopics };
+                        case U.community:
+                            return { icon: g.default, text: D, subtext: N, iconStyle: V.iconOther };
+                        case U.search:
                             return { icon: _.default, text: M, subtext: O, iconStyle: V.iconOther };
                         default:
-                            return { icon: b.default, text: K, subtext: U, iconStyle: V.iconTwitter };
+                            return { icon: b.default, text: K, subtext: q, iconStyle: V.iconTwitter };
                     }
                 },
                 R = (e) => (e.hasValue("responsive_web_use_app_prompt_copy_variant", "prompt_better") ? f : y),
@@ -1000,7 +1000,7 @@
                 F = a().hd50e064,
                 L = a().a565833e,
                 B = a().e919c3bc;
-            class N extends o.Component {
+            class I extends o.Component {
                 constructor(e, t) {
                     super(e, t),
                         (this._getFullSheetDisplayElements = T.Wc.bind(null, this.context.featureSwitches)),
@@ -1083,8 +1083,8 @@
                     t.scribe({ component: "login_signup_sheet", element: s, action: e });
                 }
             }
-            (N.defaultProps = { displayMode: T.BH.generic, hideSignUp: !1, isFullHeightOnMobile: !0, useBottomBanner: !1, loginLabel: B, signupLabel: L, onlyShowOnce: !1 }), (N.displayMode = T.BH), (N.contextType = d.rC);
-            const D = x(N);
+            (I.defaultProps = { displayMode: T.BH.generic, hideSignUp: !1, isFullHeightOnMobile: !0, useBottomBanner: !1, loginLabel: B, signupLabel: L, onlyShowOnce: !1 }), (I.displayMode = T.BH), (I.contextType = d.rC);
+            const D = x(I);
         },
         331879: (e, t, n) => {
             "use strict";
@@ -1113,4 +1113,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.AppModules-a2dee9c7.480e84fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.AppModules-a2dee9c7.2ffe7d4a.js.map

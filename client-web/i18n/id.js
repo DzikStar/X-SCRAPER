@@ -4267,7 +4267,7 @@
                 i("fa0f1262", "Rehat"),
                 i("c2cac618", "Grok saat ini mendukung data La Liga, Premier League, Bundesliga, Seri A, dan Ligue 1."),
                 i("acae223d", function (a) {
-                    return 'Results for "' + a.prompt + '"';
+                    return 'Hasil untuk "' + a.prompt + '"';
                 }),
                 i("bed99fe2", "Lihat lebih sedikit"),
                 i("f7b57ac0", "Statistik"),
@@ -4796,12 +4796,12 @@
                 i("e7479ce4", "Rata-Rata Waktu Tonton"),
                 i("g1dfa7d0", "Rata-rata"),
                 i("h7d28188", "Kembali ke konten"),
-                i("if2704e4", "Back to Live Overview"),
+                i("if2704e4", "Kembali ke Ikhtisar Siaran Langsung"),
                 i("ea928ae4", "Kembali ke Spaces"),
                 i("e8c07c22", "siaran"),
-                i("a4ce6e68", "Broadcast Metrics"),
-                i("b2214c74", "Total number of views for this broadcast"),
-                i("d4fcf83a", "Total time viewers spent watching this broadcast"),
+                i("a4ce6e68", "Metrik Siaran"),
+                i("b2214c74", "Total jumlah tayangan pada siaran ini"),
+                i("d4fcf83a", "Total waktu yang dihabiskan penonton untuk menonton siaran ini"),
                 i("a89b0322", "Dibatalkan"),
                 i("j3cb12ea", "Pendengar Serentak"),
                 i("b93931ee", "Berapa kali konten Anda diposting."),
@@ -4837,19 +4837,19 @@
                 i("efa0f858", "Jumlah pengikut dan berhenti mengikuti seiring waktu. Angka ini tidak serta-merta mencerminkan jumlah pengikut Anda."),
                 i("g2b06cc6", "Data gender mungkin merupakan simpulan"),
                 i("b66b3baa", "jam"),
-                i("cf8a0772", "Impression to Views"),
-                i("g13d8010", "Last 48 Hours"),
-                i("d5627596", "Last Hour"),
+                i("cf8a0772", "Impresi terhadap Tayangan"),
+                i("g13d8010", "48 Jam Terakhir"),
+                i("d5627596", "Satu Jam Terakhir"),
                 i("baf120a6", "Paling tidak aktif"),
                 i("f2382014", "LANGSUNG"),
-                i("c4a7a6aa", "Live data"),
-                i("a992032a", "Livestream Analytics"),
+                i("c4a7a6aa", "Data siaran langsung"),
+                i("a992032a", "Analitik Streaming Langsung"),
                 i("ie45edda", "Ikhtisar streaming langsung"),
                 i("e30fc268", "Penonton Langsung"),
                 i("bd37f68e", "Aktivitas media"),
                 i("fe074210", "menit"),
-                i("jd03a1b8", "Minutes Watched"),
-                i("a20e91e8", "minutes watched"),
+                i("jd03a1b8", "Menit Menonton"),
+                i("a20e91e8", "menit menonton"),
                 i("ic2bebee", "Dimonetisasi"),
                 i("a1d642c8", "Paling aktif"),
                 i("ifc4c1f8", "Jumlah pengikut baru yang didapatkan dari konten ini."),
@@ -4859,12 +4859,12 @@
                 i("g2ba40f6", "Tidak ada Spaces yang tersedia untuk filter yang dipilih"),
                 i("j44061a0", "Tidak tersedia"),
                 i("c4a93912", "Tidak Ada"),
-                i("a6b78788", "No viewer data available"),
+                i("a6b78788", "Tidak ada data penonton"),
                 i("b2438638", "dari total"),
                 i("ic0399e0", "Tayangan Organik"),
                 i("ja5c444a", "Periode pembayaran"),
                 i("f04e025e", "Puncak Pendengar Serentak"),
-                i("d6d10662", "Peak Viewers: "),
+                i("d6d10662", "Penonton Puncak: "),
                 i("d147bea2", "Silakan periksa kembali lagi nanti"),
                 i("f0336d68", "Analitik Postingan"),
                 i("g85fbd2e", "ID postingan"),
@@ -4872,7 +4872,7 @@
                 i("hf4f9bfe", "Tautan Postingan"),
                 i("bf5ebf5c", "Postingan dan balasan"),
                 i("b211652e", "Postingan seiring waktu"),
-                i("f2efec0a", "Pre-Published"),
+                i("f2efec0a", "Sebelum Publikasi"),
                 i("i61e0302", "Sebelumnya"),
                 i("e08a706a", "Tayangan Promosi"),
                 i("cbc99192", "Tanggal publikasi"),
@@ -4887,20 +4887,20 @@
                 i("fbc79a40", "Ikhtisar Spaces"),
                 i("d077112a", "Statistik Space"),
                 i("cf3709da", "Status"),
-                i("e797dc32", "Stream time: "),
+                i("e797dc32", "Waktu streaming: "),
                 i("b649d8cc", "Khusus Pelanggan"),
-                i("j9282130", "Thumbnail siaran"),
-                i("g629b8b0", "Timed Out"),
-                i("eb87323c", "This shows analytics data for the selected time period since the livestream happened."),
-                i("i6a75722", "Time Range"),
+                i("j9282130", "Thumbnail Siaran"),
+                i("g629b8b0", "Waktu Habis"),
+                i("eb87323c", "Hal ini menampilkan data analitik untuk periode waktu yang dipilih sejak streaming langsung dilakukan."),
+                i("i6a75722", "Rentang Waktu"),
                 i("c602f5b8", "Total"),
                 i("b35e68ae", "Total Peserta"),
                 i("h78ee79a", "Total Menonton Pemutaran Ulang"),
                 i("e3efaed0", "Jenis"),
                 i("c37993e2", "Berhenti mengikuti"),
-                i("b1ed35d0", "Unique Viewers"),
+                i("b1ed35d0", "Penonton Unik"),
                 i("bfad9306", "Tidak diketahui"),
-                i("b5a58f36", "Untitled Broadcast"),
+                i("b5a58f36", "Siaran Tanpa Judul"),
                 i("i70f5278", "Diunggah pada:"),
                 i("a98b58b6", "Pengikut terverifikasi"),
                 i("a5de67ca", "Jumlah pengikut yang sudah memverifikasi akunnya."),
@@ -7003,10 +7003,6 @@
                 i("db5c77e0", "Ini adalah langganan aktif Anda"),
                 i("h77ef73e", "Beralih ke paket bulanan"),
                 i("d723d44a", "Beralih ke paket tahunan"),
-                i("i253b5c6", "Tingkatkan & Bayar"),
-                i("d2beeaaa", "Turunkan Versi & Bayar"),
-                i("acf719d4", "Beralih & Bayar"),
-                i("ieafe1c6", "Konfirmasikan perubahan pada langganan Anda"),
                 i("gf6b66b8", "Konfirmasikan perubahan langganan Anda, berlaku mulai hari ini"),
                 i("e83daf87", function (a) {
                     return "Konfirmasikan perubahan langganan Anda, berlaku mulai " + a.date;
@@ -7024,15 +7020,6 @@
                 i("d7efb6ba", "Anda beralih dari penagihan bulanan ke tahunan. Anda akan dikenakan biaya untuk paket tahunan hari ini, dan sisa kredit bulanan prorata akan dikreditkan pada total biaya. Peralihan ini langsung terjadi, dan penagihan Anda kini akan menjadi tahunan."),
                 i("a5f2cf70", "Anda beralih dari penagihan tahunan ke bulanan. Sisa kredit tahunan Anda akan digunakan untuk pembayaran bulanan hingga habis. Peralihan ini langsung terjadi, dan penagihan Anda kini akan dilakukan bulanan."),
                 i("ef1c0208", "Konfirmasikan perubahan paket"),
-                i("c20806d5", "Persyaratan Layanan untuk Pembeli"),
-                i("i10be4c9", "Persyaratan"),
-                i("cdda96d6", "Bisa dibatalkan kapan saja"),
-                i("cc67158f", "Persyaratan Layanan untuk Pembeli"),
-                i("eb420831", "Persyaratan"),
-                i("c7d49608", "Bisa dibatalkan kapan saja"),
-                i("ab176bd1", "Persyaratan Layanan untuk Pembeli"),
-                i("cea928a5", "Persyaratan"),
-                i("e37c69e0", "Bisa dibatalkan kapan saja"),
                 i("ia08113f", "Persyaratan Layanan untuk Pembeli"),
                 i("d2962b73", "Persyaratan"),
                 i("b421795a", "Bisa dibatalkan kapan saja"),
@@ -7848,7 +7835,20 @@
                 i("b33d1518", "Sinkronkan lowongan dari integrasi yang didukung atau feed XML khusus"),
                 i("dd2db402", "Langkah 1: Kumpulkan informasi yang diperlukan"),
                 i("edb098c2", "Langkah 2: Hubungi tim dukungan kami"),
-                i("c4474460", "Langkah 2: Kirimkan email kepada tim dukungan kami");
+                i("c4474460", "Langkah 2: Kirimkan email kepada tim dukungan kami"),
+                i("a08da0fa", "Lalu apa yang terjadi?"),
+                i("c127374e", "Kirimi kami pesan"),
+                i("b2cb2a0c", "Nama pengguna akun Organisasi Terverifikasi Anda"),
+                i("b8e64002", "Nama sistem pelacakan pelamar Anda"),
+                i("acb99db6", "URL situs karier tempat lowongan Anda terdaftar"),
+                i("a64a5b7a", "Kirimkan informasi yang diperlukan kepada tim dukungan kami untuk memulai proses integrasi."),
+                i("e3dffb4e", "Salin alamat email dukungan kami di bawah ini dan kirimkan informasi yang diperlukan kepada tim dukungan kami untuk memulai proses integrasi."),
+                i("b4fef99e", "Setelah tim dukungan menerima permintaan Anda, kami akan meninjau informasi Anda dan akan membantu mengonfigurasi integrasi Anda."),
+                i("h37f2d96", "Harap diperhatikan bahwa belum semua sistem pelacakan pelamar didukung saat ini."),
+                i("ce102a20", "Mengalihkan ke Stripe"),
+                i("ddfd6718", "Pembayaran Gagal"),
+                i("i90ea7d2", "Harap langsung perbarui penagihan Anda agar tidak kehilangan manfaat."),
+                i("a62359e6", "Pengaturan Organisasi Terverifikasi");
             function r(a, n) {
                 for (var e = 0; e < n.length; e++) {
                     var i = n[e];
@@ -7887,20 +7887,7 @@
                     d(a, n)
                 );
             }
-            i("a08da0fa", "Lalu apa yang terjadi?"),
-                i("c127374e", "Kirimi kami pesan"),
-                i("b2cb2a0c", "Nama pengguna akun Organisasi Terverifikasi Anda"),
-                i("b8e64002", "Nama sistem pelacakan pelamar Anda"),
-                i("acb99db6", "URL situs karier tempat lowongan Anda terdaftar"),
-                i("a64a5b7a", "Kirimkan informasi yang diperlukan kepada tim dukungan kami untuk memulai proses integrasi."),
-                i("e3dffb4e", "Salin alamat email dukungan kami di bawah ini dan kirimkan informasi yang diperlukan kepada tim dukungan kami untuk memulai proses integrasi."),
-                i("b4fef99e", "Setelah tim dukungan menerima permintaan Anda, kami akan meninjau informasi Anda dan akan membantu mengonfigurasi integrasi Anda."),
-                i("h37f2d96", "Harap diperhatikan bahwa belum semua sistem pelacakan pelamar didukung saat ini."),
-                i("ce102a20", "Mengalihkan ke Stripe"),
-                i("ddfd6718", "Pembayaran Gagal"),
-                i("i90ea7d2", "Harap langsung perbarui penagihan Anda agar tidak kehilangan manfaat."),
-                i("a62359e6", "Pengaturan Organisasi Terverifikasi"),
-                i("ge221b7c", "Tingkatkan langganan Organisasi Terverifikasi untuk mendapatkan akses ke afiliasi dan lebih banyak kredit iklan."),
+            i("ge221b7c", "Tingkatkan langganan Organisasi Terverifikasi untuk mendapatkan akses ke afiliasi dan lebih banyak kredit iklan."),
                 i("i4dccc18", "Penagihan"),
                 i("ec3cd6e4", "Kelola metode pembayaran Anda, perbarui informasi tagihan, dan tinjau faktur Anda."),
                 i("dac61c3c", "Pengaturan akun"),
@@ -8008,6 +7995,7 @@
                 i("j99e2f4d", function (a) {
                     return a.price + "/" + a.interval;
                 }),
+                i("ieafe1c6", "Konfirmasikan perubahan pada langganan Anda"),
                 i("bb21a170", "Ubah langganan"),
                 i("b0dcc4dc", "Akun Anda masih menunggu peralihan tingkat."),
                 i("f3aef4ca", "Tidak ada langganan aktif yang ditemukan"),
@@ -8890,8 +8878,8 @@
                 i("c057680c", "Kami tidak dapat memainkan video di browser ini. Silakan coba di browser web lain."),
                 i("i5dfae6e", "Video ini tidak tersedia di lokasi Anda."),
                 i("c2388276", "Video ini telah dihapus."),
-                i("d2c96140", "Indikator audio tamu");
-            i("f6dc9146", "PUTAR ULANG"),
+                i("d2c96140", "Indikator audio tamu"),
+                i("f6dc9146", "PUTAR ULANG"),
                 i("d30c74fe", "Volume"),
                 i("f2d4e6f2", "Tonton lagi"),
                 i("e9f1af3a", "Cari tahu lebih lanjut"),
@@ -8902,10 +8890,10 @@
                 i("ecda5f9e", "Menyesatkan"),
                 i("a423473c", "Pemberitahuan Wajib secara Hukum"),
                 i("b3296688", "Visibilitas Terbatas"),
-                i("ccd32094", "Sekarang"),
-                i("abfcce0d", function (a) {
-                    return a.amountOfTime + " yang lalu";
-                }),
+                i("ccd32094", "Sekarang");
+            i("abfcce0d", function (a) {
+                return a.amountOfTime + " yang lalu";
+            }),
                 i("ae408b76", "Anda memposting ulang"),
                 i("j355f008", "Postingan tersemat"),
                 i("habf9678", "Disematkan oleh Penulis"),
@@ -12088,24 +12076,6 @@
                             },
                         },
                         {
-                            key: "ca87939f",
-                            get: function () {
-                                return ["Dengan berlangganan, Anda menyetujui ", " kami. Langganan akan diperpanjang secara otomatis hingga dibatalkan, seperti yang dijelaskan dalam ", ". ", ". Lakukan pembatalan setidaknya 24 jam sebelum perpanjangan untuk menghindari biaya tambahan. Saat meningkatkan ke harga yang lebih tinggi, kredit dari sisa langganan sebelumnya akan masuk ke akun Anda dan secara otomatis digunakan untuk pembayaran berikutnya. Langganan baru Anda akan langsung aktif. Diperlukan nomor telepon terverifikasi untuk berlangganan."];
-                            },
-                        },
-                        {
-                            key: "ed2a6ba9",
-                            get: function () {
-                                return ["Dengan berlangganan, Anda menyetujui ", " kami. Langganan akan diperpanjang secara otomatis hingga dibatalkan, seperti yang dijelaskan dalam ", ". ", ". Lakukan pembatalan setidaknya 24 jam sebelum perpanjangan untuk menghindari biaya tambahan. Saat menurunkan tingkat paket, langganan Anda saat ini dan fitur terkaitnya akan langsung dialihkan ke paket langganan yang baru. Anda tidak akan menerima pengembalian dana dari langganan sebelumnya, kecuali diwajibkan oleh hukum. Anda juga akan langsung dikenakan biaya untuk harga tingkat yang baru. Diperlukan nomor telepon yang terverifikasi untuk berlangganan."];
-                            },
-                        },
-                        {
-                            key: "db638a21",
-                            get: function () {
-                                return ["Dengan berlangganan, Anda menyetujui ", " kami. Langganan akan diperpanjang secara otomatis hingga dibatalkan, seperti yang dijelaskan dalam ", ". ", ". Lakukan pembatalan setidaknya 24 jam sebelum perpanjangan untuk menghindari biaya tambahan. Saat Anda mengganti paket, langganan baru Anda akan langsung aktif. Kredit dari sisa langganan sebelumnya akan masuk ke akun Anda dan secara otomatis digunakan untuk pembayaran berikutnya. Diperlukan nomor telepon terverifikasi untuk berlangganan."];
-                            },
-                        },
-                        {
                             key: "b2138d0f",
                             get: function () {
                                 return ["Dengan berlangganan, Anda menyetujui ", " kami. Langganan akan diperpanjang secara otomatis hingga dibatalkan, seperti yang dijelaskan dalam ", ". ", ". Lakukan pembatalan setidaknya 24 jam sebelum perpanjangan untuk menghindari biaya perpanjangan. Saat menaikkan tingkat paket, langganan Anda saat ini dan fitur terkaitnya akan langsung dialihkan ke paket langganan yang baru. Anda akan langsung dikenakan harga tingkatan baru tetapi saldo prorata dari siklus penagihan Anda saat ini akan dikreditkan ke total biaya hari ini. Anda tidak akan menerima pengembalian dana untuk porsi langganan sebelumnya, kecuali diwajibkan oleh hukum."];
@@ -13235,4 +13205,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/id.4172ae7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/id.fd4df4fa.js.map

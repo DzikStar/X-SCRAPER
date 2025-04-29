@@ -4267,7 +4267,7 @@
                 i("fa0f1262", "Rehat"),
                 i("c2cac618", "Grok menyokong data La Liga, Liga Perdana, Bundesliga, Series A dan Ligue 1 pada masa ini."),
                 i("acae223d", function (a) {
-                    return 'Results for "' + a.prompt + '"';
+                    return 'Hasil untuk "' + a.prompt + '"';
                 }),
                 i("bed99fe2", "Tunjukkan kurang"),
                 i("f7b57ac0", "Statistik"),
@@ -4796,12 +4796,12 @@
                 i("e7479ce4", "Purata Masa Tontonan"),
                 i("g1dfa7d0", "Pur"),
                 i("h7d28188", "Kembali ke kandungan"),
-                i("if2704e4", "Back to Live Overview"),
+                i("if2704e4", "Kembali ke Ringkasan Siaran Langsung"),
                 i("ea928ae4", "Kembali ke Spaces"),
                 i("e8c07c22", "siaran"),
-                i("a4ce6e68", "Broadcast Metrics"),
-                i("b2214c74", "Total number of views for this broadcast"),
-                i("d4fcf83a", "Total time viewers spent watching this broadcast"),
+                i("a4ce6e68", "Metrik Siaran"),
+                i("b2214c74", "Jumlah bilangan tontonan untuk siaran ini"),
+                i("d4fcf83a", "Jumlah masa yang diluangkan oleh penonton untuk menonton siaran ini"),
                 i("a89b0322", "Dibatalkan"),
                 i("j3cb12ea", "Pendengar Serentak"),
                 i("b93931ee", "Bilangan kali kandungan anda disiarkan."),
@@ -4837,19 +4837,19 @@
                 i("efa0f858", "Bilangan ikutan dan nyahikut dari semasa ke semasa. Ini tidak semestinya mencerminkan bilangan pengikut anda."),
                 i("g2b06cc6", "Data jantina mungkin disimpulkan"),
                 i("b66b3baa", "jam"),
-                i("cf8a0772", "Impression to Views"),
-                i("g13d8010", "Last 48 Hours"),
-                i("d5627596", "Last Hour"),
+                i("cf8a0772", "Tera kepada Tontonan"),
+                i("g13d8010", "48 Jam Yang Lalu"),
+                i("d5627596", "Sejam Yang Lalu"),
                 i("baf120a6", "Paling kurang interaksi"),
                 i("f2382014", "SIARAN LANGSUNG"),
-                i("c4a7a6aa", "Live data"),
-                i("a992032a", "Livestream Analytics"),
+                i("c4a7a6aa", "Data siaran langsung"),
+                i("a992032a", "Analitis Strim Langsung"),
                 i("ie45edda", "Ringkasan strim langsung"),
                 i("e30fc268", "Penonton Siaran Langsung"),
                 i("bd37f68e", "Aktiviti media"),
                 i("fe074210", "minit"),
-                i("jd03a1b8", "Minutes Watched"),
-                i("a20e91e8", "minutes watched"),
+                i("jd03a1b8", "Minit Ditonton"),
+                i("a20e91e8", "minit ditonton"),
                 i("ic2bebee", "Diwangkan"),
                 i("a1d642c8", "Paling banyak interaksi"),
                 i("ifc4c1f8", "Bilangan pengikut baharu yang diperoleh daripada kandungan ini."),
@@ -4859,12 +4859,12 @@
                 i("g2ba40f6", "Tiada Spaces tersedia untuk penapis yang dipilih"),
                 i("j44061a0", "Tidak tersedia"),
                 i("c4a93912", "Tidak tersedia"),
-                i("a6b78788", "No viewer data available"),
+                i("a6b78788", "Tiada data penonton tersedia"),
                 i("b2438638", "daripada jumlah"),
                 i("ic0399e0", "Paparan Organik"),
                 i("ja5c444a", "Tempoh bayaran"),
                 i("f04e025e", "Pendengar Serentak Puncak"),
-                i("d6d10662", "Peak Viewers: "),
+                i("d6d10662", "Penonton Puncak: "),
                 i("d147bea2", "Sila semak semula sekali lagi kemudian"),
                 i("f0336d68", "Analitis Siaran"),
                 i("g85fbd2e", "ID siaran"),
@@ -4872,11 +4872,11 @@
                 i("hf4f9bfe", "Pautan Siaran"),
                 i("bf5ebf5c", "Siaran dan balasan"),
                 i("b211652e", "Siaran dari semasa ke semasa"),
-                i("f2efec0a", "Pre-Published"),
+                i("f2efec0a", "Prapenerbitan"),
                 i("i61e0302", "Sebelum"),
                 i("e08a706a", "Paparan Dipromosikan"),
                 i("cbc99192", "Tarikh penerbitan"),
-                i("a83c2a9a", "Realtime"),
+                i("a83c2a9a", "Masa nyata"),
                 i("e9d72896", "Dirakam"),
                 i("gede4932", "Main Semula"),
                 i("h0de359c", "Bilangan kali kandungan ini disiarkan semula."),
@@ -4887,20 +4887,20 @@
                 i("fbc79a40", "Gambaran keseluruhan Spaces"),
                 i("d077112a", "Statistik Space"),
                 i("cf3709da", "Status"),
-                i("e797dc32", "Stream time: "),
+                i("e797dc32", "Masa strim: "),
                 i("b649d8cc", "Pelanggan Sahaja"),
                 i("j9282130", "Lakaran kecil siaran"),
-                i("g629b8b0", "Timed Out"),
-                i("eb87323c", "This shows analytics data for the selected time period since the livestream happened."),
-                i("i6a75722", "Time Range"),
+                i("g629b8b0", "Tamat Masa"),
+                i("eb87323c", "Ini menunjukkan data analitis untuk tempoh masa yang dipilih sejak strim langsung berlaku."),
+                i("i6a75722", "Julat Masa"),
                 i("c602f5b8", "Jumlah"),
                 i("b35e68ae", "Jumlah Peserta"),
                 i("h78ee79a", "Jumlah Main Semula Ditonton"),
                 i("e3efaed0", "Jenis"),
                 i("c37993e2", "Nyahikut"),
-                i("b1ed35d0", "Unique Viewers"),
+                i("b1ed35d0", "Penonton Unik"),
                 i("bfad9306", "Tidak diketahui"),
-                i("b5a58f36", "Untitled Broadcast"),
+                i("b5a58f36", "Siaran Tidak Bertajuk"),
                 i("i70f5278", "Dimuat naik pada:"),
                 i("a98b58b6", "Pengikut yang disahkan"),
                 i("a5de67ca", "Bilangan pengikut yang telah mengesahkan akaun mereka."),
@@ -7003,10 +7003,6 @@
                 i("db5c77e0", "Ini merupakan langganan aktif anda"),
                 i("h77ef73e", "Bertukar kepada pelan bulanan"),
                 i("d723d44a", "Bertukar kepada pelan tahunan"),
-                i("i253b5c6", "Naik taraf & Bayar"),
-                i("d2beeaaa", "Turun taraf & Bayar"),
-                i("acf719d4", "Tukar & Bayar"),
-                i("ieafe1c6", "Sahkan penukaran langganan anda"),
                 i("gf6b66b8", "Sahkan penukaran langganan anda, berkuat kuasa mulai hari ini"),
                 i("e83daf87", function (a) {
                     return "Sahkan penukaran langganan anda, berkuat kuasa mulai " + a.date;
@@ -7024,15 +7020,6 @@
                 i("d7efb6ba", "Anda akan bertukar daripada pengebilan bulanan kepada tahunan. Anda akan dikenakan bayaran untuk pelan tahunan hari ini, dengan baki bulanan prorata anda dikreditkan kepada jumlah bayaran. Pertukaran berlaku dengan serta-merta dan pengebilan anda kini merupakan secara tahunan."),
                 i("a5f2cf70", "Anda akan bertukar daripada pengebilan tahunan kepada bulanan. Baki kredit tahunan anda akan menampung bayaran bulanan anda sehingga baki itu habis. Pertukaran berlaku dengan serta-merta dan pengebilan anda kini merupakan secara bulanan."),
                 i("ef1c0208", "Sahkan perubahan pelan"),
-                i("c20806d5", "Terma Perkhidmatan Pembeli"),
-                i("i10be4c9", "Terma"),
-                i("cdda96d6", "Batalkan pada bila-bila masa"),
-                i("cc67158f", "Terma Perkhidmatan Pembeli"),
-                i("eb420831", "Terma"),
-                i("c7d49608", "Batalkan pada bila-bila masa"),
-                i("ab176bd1", "Terma Perkhidmatan Pembeli"),
-                i("cea928a5", "Terma"),
-                i("e37c69e0", "Batalkan pada bila-bila masa"),
                 i("ia08113f", "Terma Perkhidmatan Pembeli"),
                 i("d2962b73", "Terma"),
                 i("b421795a", "Batalkan pada bila-bila masa"),
@@ -7848,46 +7835,8 @@
                 i("b33d1518", "Segerakkan pekerjaan daripada penyepaduan yang disokong atau suapan XML tersuai"),
                 i("dd2db402", "Langkah 1: Kumpulkan maklumat yang diperlukan"),
                 i("edb098c2", "Langkah 2: Hubungi pasukan sokongan kami"),
-                i("c4474460", "Langkah 2: Hantar e-mel kepada pasukan sokongan kami");
-            function d(a, n) {
-                for (var e = 0; e < n.length; e++) {
-                    var i = n[e];
-                    (i.enumerable = i.enumerable || !1),
-                        (i.configurable = !0),
-                        "value" in i && (i.writable = !0),
-                        Object.defineProperty(
-                            a,
-                            ((t = i.key),
-                            (d = void 0),
-                            "symbol" ==
-                            typeof (d = (function (a, n) {
-                                if ("object" != typeof a || null === a) return a;
-                                var e = a[Symbol.toPrimitive];
-                                if (void 0 !== e) {
-                                    var i = e.call(a, n || "default");
-                                    if ("object" != typeof i) return i;
-                                    throw new TypeError("@@toPrimitive must return a primitive value.");
-                                }
-                                return ("string" === n ? String : Number)(a);
-                            })(t, "string"))
-                                ? d
-                                : String(d)),
-                            i,
-                        );
-                }
-                var t, d;
-            }
-            function u(a, n) {
-                return (
-                    (u = Object.setPrototypeOf
-                        ? Object.setPrototypeOf.bind()
-                        : function (a, n) {
-                              return (a.__proto__ = n), a;
-                          }),
-                    u(a, n)
-                );
-            }
-            i("a08da0fa", "Apakah yang berlaku seterusnya?"),
+                i("c4474460", "Langkah 2: Hantar e-mel kepada pasukan sokongan kami"),
+                i("a08da0fa", "Apakah yang berlaku seterusnya?"),
                 i("c127374e", "Hantar mesej kepada kami"),
                 i("b2cb2a0c", "Nama pengguna akaun Organisasi Disahkan anda"),
                 i("b8e64002", "Nama sistem penjejakan pemohon anda"),
@@ -7899,8 +7848,46 @@
                 i("ce102a20", "Mengubah hala ke Stripe"),
                 i("ddfd6718", "Pembayaran Gagal"),
                 i("i90ea7d2", "Sila kemas kini pengebilan anda dengan segera untuk mengekalkan manfaat anda."),
-                i("a62359e6", "Tetapan Organisasi Disahkan"),
-                i("ge221b7c", "Naik taraf langganan Organisasi Disahkan untuk mendapatkan akses kepada ahli gabungan dan lebih banyak kredit iklan."),
+                i("a62359e6", "Tetapan Organisasi Disahkan");
+            function u(a, n) {
+                for (var e = 0; e < n.length; e++) {
+                    var i = n[e];
+                    (i.enumerable = i.enumerable || !1),
+                        (i.configurable = !0),
+                        "value" in i && (i.writable = !0),
+                        Object.defineProperty(
+                            a,
+                            ((t = i.key),
+                            (u = void 0),
+                            "symbol" ==
+                            typeof (u = (function (a, n) {
+                                if ("object" != typeof a || null === a) return a;
+                                var e = a[Symbol.toPrimitive];
+                                if (void 0 !== e) {
+                                    var i = e.call(a, n || "default");
+                                    if ("object" != typeof i) return i;
+                                    throw new TypeError("@@toPrimitive must return a primitive value.");
+                                }
+                                return ("string" === n ? String : Number)(a);
+                            })(t, "string"))
+                                ? u
+                                : String(u)),
+                            i,
+                        );
+                }
+                var t, u;
+            }
+            function d(a, n) {
+                return (
+                    (d = Object.setPrototypeOf
+                        ? Object.setPrototypeOf.bind()
+                        : function (a, n) {
+                              return (a.__proto__ = n), a;
+                          }),
+                    d(a, n)
+                );
+            }
+            i("ge221b7c", "Naik taraf langganan Organisasi Disahkan untuk mendapatkan akses kepada ahli gabungan dan lebih banyak kredit iklan."),
                 i("i4dccc18", "Pengebilan"),
                 i("ec3cd6e4", "Uruskan kaedah pembayaran anda, kemas kini maklumat pengebilan, dan semak invois anda."),
                 i("dac61c3c", "Tetapan akaun"),
@@ -8008,6 +7995,7 @@
                 i("j99e2f4d", function (a) {
                     return a.price + " / " + a.interval;
                 }),
+                i("ieafe1c6", "Sahkan penukaran langganan anda"),
                 i("bb21a170", "Tukar langganan"),
                 i("b0dcc4dc", "Akaun anda sedang menunggu pertukaran peringkat."),
                 i("f3aef4ca", "Tiada langganan aktif ditemui"),
@@ -8890,8 +8878,8 @@
                 i("c057680c", "Kami tidak dapat memainkan video tersebut dalam pelayar ini. Sila cuba pelayar web yang lain."),
                 i("i5dfae6e", "Video ini tidak tersedia di lokasi anda."),
                 i("c2388276", "Video ini telah dipadamkan."),
-                i("d2c96140", "Penunjuk audio tetamu");
-            i("f6dc9146", "ULANG TAYANG"),
+                i("d2c96140", "Penunjuk audio tetamu"),
+                i("f6dc9146", "ULANG TAYANG"),
                 i("d30c74fe", "Kelantangan"),
                 i("f2d4e6f2", "Tonton semula"),
                 i("e9f1af3a", "Ketahui lebih lanjut"),
@@ -8902,10 +8890,10 @@
                 i("ecda5f9e", "Mengelirukan"),
                 i("a423473c", "Notis Yang Diperlukan Oleh Undang-Undang"),
                 i("b3296688", "Keterlihatan Terhad"),
-                i("ccd32094", "Sekarang"),
-                i("abfcce0d", function (a) {
-                    return a.amountOfTime + " yang lalu";
-                }),
+                i("ccd32094", "Sekarang");
+            i("abfcce0d", function (a) {
+                return a.amountOfTime + " yang lalu";
+            }),
                 i("ae408b76", "Anda membuat siaran semula"),
                 i("j355f008", "Siaran yang dipinkan"),
                 i("habf9678", "Dipinkan oleh Pengarang"),
@@ -9465,7 +9453,7 @@
                     (e = a),
                     ((n = s).prototype = Object.create(e.prototype)),
                     (n.prototype.constructor = n),
-                    u(n, e),
+                    d(n, e),
                     (s.prototype.render = function () {
                         return r.createElement.apply(r, this[this.props.$i18n].reduce(this.templateReducer, [r.Fragment, null]));
                     }),
@@ -12088,24 +12076,6 @@
                             },
                         },
                         {
-                            key: "ca87939f",
-                            get: function () {
-                                return ["Dengan melanggan, anda bersetuju dengan ", " kami. Langganan akan dibaharui secara automatik sehingga dibatalkan, seperti yang diterangkan dalam ", ". ", ". Buat pembatalan sekurang-kurangnya 24 jam sebelum pembaharuan untuk mengelakkan bayaran tambahan. Apabila menaik taraf ke tahap yang lebih mahal, kredit untuk baki langganan anda yang sebelumnya akan dimasukkan ke akaun anda dan digunakan untuk pembayaran pada masa akan datang secara automatik. Langganan baharu anda akan bermula dengan serta-merta. Nombor telefon yang disahkan adalah diperlukan untuk melanggan."];
-                            },
-                        },
-                        {
-                            key: "ed2a6ba9",
-                            get: function () {
-                                return ["Dengan melanggan, anda bersetuju dengan ", " kami. Langganan akan dibaharui secara automatik sehingga dibatalkan, seperti yang diterangkan dalam ", ". ", ". Buat pembatalan sekurang-kurangnya 24 jam sebelum pembaharuan untuk mengelakkan bayaran tambahan. Apabila menurun taraf, langganan semasa anda dan ciri yang berkaitan akan bertukar kepada tahap langganan baharu dengan serta-merta. Anda tidak akan menerima bayaran balik untuk mana-mana bahagian langganan anda yang sebelumnya, kecuali diperlukan oleh undang-undang. Anda juga akan dikenakan bayaran untuk harga tahap baharu dengan serta-merta. Nombor telefon yang disahkan adalah diperlukan untuk melanggan."];
-                            },
-                        },
-                        {
-                            key: "db638a21",
-                            get: function () {
-                                return ["Dengan melanggan, anda bersetuju dengan ", " kami. Langganan akan dibaharui secara automatik sehingga dibatalkan, seperti yang diterangkan dalam ", ". ", ". Buat pembatalan sekurang-kurangnya 24 jam sebelum pembaharuan untuk mengelakkan bayaran tambahan. Apabila anda menukar pelan anda, langganan baharu anda akan bermula dengan serta-merta. Kredit untuk baki langganan anda yang sebelumnya akan dimasukkan ke akaun anda dan digunakan untuk pembayaran pada masa akan datang secara automatik. Nombor telefon yang disahkan adalah diperlukan untuk melanggan."];
-                            },
-                        },
-                        {
                             key: "b2138d0f",
                             get: function () {
                                 return ["Dengan melanggan, anda bersetuju dengan ", " kami. Langganan akan dibaharui secara automatik sehingga dibatalkan, seperti yang diterangkan dalam ", ". ", ". Buat pembatalan sekurang-kurangnya 24 jam sebelum pembaharuan untuk mengelakkan bayaran tambahan. Apabila menaik taraf, langganan semasa anda dan ciri yang berkaitan akan bertukar kepada tahap langganan baharu dengan serta-merta. Anda akan dikenakan bayaran untuk harga bagi tahap baharu itu dengan serta-merta tetapi mana-mana baki prorata daripada kitaran pengebilan semasa anda akan dikreditkan kepada jumlah bayaran hari ini. Anda tidak akan menerima bayaran balik untuk mana-mana bahagian langganan anda yang sebelumnya, kecuali dikehendaki oleh undang-undang."];
@@ -12878,8 +12848,8 @@
                                 };
                             },
                         },
-                    ]) && d(i.prototype, t),
-                    g && d(i, g),
+                    ]) && u(i.prototype, t),
+                    g && u(i, g),
                     Object.defineProperty(i, "prototype", { writable: !1 }),
                     s
                 );
@@ -13235,4 +13205,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.38bbbcca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.d905f91a.js.map

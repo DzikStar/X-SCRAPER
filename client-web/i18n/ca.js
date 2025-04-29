@@ -4268,7 +4268,7 @@
                 t("fa0f1262", "Descans"),
                 t("c2cac618", "Actualment, Grok admet dades de La Lliga, Premier League, Bundesliga, Serie A i Ligue 1."),
                 t("acae223d", function (e) {
-                    return 'Results for "' + e.prompt + '"';
+                    return 'Resultats per a "' + e.prompt + '"';
                 }),
                 t("bed99fe2", "Mostra'n menys"),
                 t("f7b57ac0", "Estadístiques"),
@@ -4797,12 +4797,12 @@
                 t("e7479ce4", "Temps mitjà de visualització"),
                 t("g1dfa7d0", "Mitjana"),
                 t("h7d28188", "Torna al contingut"),
-                t("if2704e4", "Back to Live Overview"),
+                t("if2704e4", "Torna a la informació general en directe"),
                 t("ea928ae4", "Torna als espais"),
-                t("e8c07c22", "broadcast"),
-                t("a4ce6e68", "Broadcast Metrics"),
-                t("b2214c74", "Total number of views for this broadcast"),
-                t("d4fcf83a", "Total time viewers spent watching this broadcast"),
+                t("e8c07c22", "emissió"),
+                t("a4ce6e68", "Mètriques d'emissió"),
+                t("b2214c74", "Nombre total de visualitzacions d'aquesta emissió"),
+                t("d4fcf83a", "Temps total que han dedicat els espectadors a veure aquesta emissió"),
                 t("a89b0322", "S'ha cancel·lat"),
                 t("j3cb12ea", "Oients simultanis"),
                 t("b93931ee", "Total de publicacions del teu contingut."),
@@ -4838,19 +4838,19 @@
                 t("efa0f858", "Total de vegades que t'han seguit i t'han deixat de seguir. No necessàriament reflecteix la quantitat de seguidors."),
                 t("g2b06cc6", "Les dades del gènere poden ser una deducció"),
                 t("b66b3baa", "hores"),
-                t("cf8a0772", "Impression to Views"),
-                t("g13d8010", "Last 48 Hours"),
-                t("d5627596", "Last Hour"),
+                t("cf8a0772", "Impressions i visualitzacions"),
+                t("g13d8010", "Últimes 48 hores"),
+                t("d5627596", "Última hora"),
                 t("baf120a6", "Menys interaccions"),
                 t("f2382014", "EN DIRECTE"),
-                t("c4a7a6aa", "Live data"),
-                t("a992032a", "Livestream Analytics"),
+                t("c4a7a6aa", "Dades en directe"),
+                t("a992032a", "Analítiques de la transmissió en directe"),
                 t("ie45edda", "Informació general sobre la transmissió en directe"),
-                t("e30fc268", "Live Viewers"),
+                t("e30fc268", "Espectadors"),
                 t("bd37f68e", "Activitat del contingut"),
                 t("fe074210", "minuts"),
-                t("jd03a1b8", "Minutes Watched"),
-                t("a20e91e8", "minutes watched"),
+                t("jd03a1b8", "Minuts de contingut vist"),
+                t("a20e91e8", "minuts de contingut vist"),
                 t("ic2bebee", "Monetitzat"),
                 t("a1d642c8", "Més interaccions"),
                 t("ifc4c1f8", "Nombre de seguidors nous obtinguts amb aquest contingut."),
@@ -4858,14 +4858,14 @@
                 t("jbcb09a8", "Encara no hi ha prou dades"),
                 t("df846d6c", "No s'han trobat publicacions per a l'interval de temps seleccionat."),
                 t("g2ba40f6", "No hi ha cap espai disponible amb el filtre seleccionat"),
-                t("j44061a0", "No disponible"),
+                t("j44061a0", "No disponibles"),
                 t("c4a93912", "N/A"),
-                t("a6b78788", "No viewer data available"),
+                t("a6b78788", "No hi ha dades d'espectadors"),
                 t("b2438638", "del total"),
                 t("ic0399e0", "Visualitzacions orgàniques"),
                 t("ja5c444a", "Període de pagament"),
                 t("f04e025e", "Màxim d'oients simultanis"),
-                t("d6d10662", "Peak Viewers: "),
+                t("d6d10662", "Màxim d'espectadors: "),
                 t("d147bea2", "Torna-ho a provar més tard"),
                 t("f0336d68", "Analítiques de publicació"),
                 t("g85fbd2e", "ID de la publicació"),
@@ -4873,11 +4873,11 @@
                 t("hf4f9bfe", "Enllaç de la publicació"),
                 t("bf5ebf5c", "Publicacions i respostes"),
                 t("b211652e", "Total de publicacions"),
-                t("f2efec0a", "Pre-Published"),
+                t("f2efec0a", "Abans de la publicació"),
                 t("i61e0302", "Anterior"),
                 t("e08a706a", "Visualitzacions patrocinades"),
                 t("cbc99192", "Data de publicació"),
-                t("a83c2a9a", "Realtime"),
+                t("a83c2a9a", "Temps real"),
                 t("e9d72896", "Enregistrat"),
                 t("gede4932", "Torna-ho a reproduir"),
                 t("h0de359c", "Total de respostes d'aquest contingut."),
@@ -4888,20 +4888,20 @@
                 t("fbc79a40", "Resum dels espais"),
                 t("d077112a", "Estadístiques dels espais"),
                 t("cf3709da", "Estat"),
-                t("e797dc32", "Stream time: "),
+                t("e797dc32", "Temps d'emissió: "),
                 t("b649d8cc", "Només per a subscriptors"),
                 t("j9282130", "Miniatura de l'emissió"),
-                t("g629b8b0", "Timed Out"),
-                t("eb87323c", "This shows analytics data for the selected time period since the livestream happened."),
-                t("i6a75722", "Time Range"),
+                t("g629b8b0", "El temps s'ha esgotat"),
+                t("eb87323c", "Es mostren les analítiques del període de temps seleccionat des de la transmissió en directe."),
+                t("i6a75722", "Interval de temps"),
                 t("c602f5b8", "Total"),
                 t("b35e68ae", "Total de participants"),
                 t("h78ee79a", "Total de reemissions vistes"),
                 t("e3efaed0", "Tipus"),
                 t("c37993e2", "Vegades que s'ha deixat de seguir"),
-                t("b1ed35d0", "Unique Viewers"),
+                t("b1ed35d0", "Espectadors únics"),
                 t("bfad9306", "Desconegut"),
-                t("b5a58f36", "Untitled Broadcast"),
+                t("b5a58f36", "Emissió sense títol"),
                 t("i70f5278", "S'ha pujat el:"),
                 t("a98b58b6", "Seguidors verificats"),
                 t("a5de67ca", "Quantitat de seguidors que han verificat el seu compte."),
@@ -7004,10 +7004,6 @@
                 t("db5c77e0", "Aquesta és la teva subscripció activa"),
                 t("h77ef73e", "Canvia al pla mensual"),
                 t("d723d44a", "Canvia al pla anual"),
-                t("i253b5c6", "Puja de nivell i paga"),
-                t("d2beeaaa", "Baixa de nivell i paga"),
-                t("acf719d4", "Canvia i paga"),
-                t("ieafe1c6", "Confirma el canvi de subscripció"),
                 t("gf6b66b8", "Confirma el canvi de subscripció, efectiu des d'avui"),
                 t("e83daf87", function (e) {
                     return "Confirma el canvi de subscripció, efectiu des del " + e.date;
@@ -7025,15 +7021,6 @@
                 t("d7efb6ba", "Estàs passant de la facturació mensual a la facturació anual. Se't cobrarà el pla anual avui, i el teu saldo mensual prorratejat restant s'abonarà al càrrec total. El canvi es produeix immediatament i ara la teva facturació serà anual."),
                 t("a5f2cf70", "Estàs canviant de la facturació anual a la mensual. El teu crèdit anual restant cobrirà els teus pagaments mensuals fins que s'esgoti. El canvi es produeix immediatament i ara la teva facturació serà mensual."),
                 t("ef1c0208", "Confirma el canvi de pla"),
-                t("c20806d5", "condicions del servei per a compradors"),
-                t("i10be4c9", "condicions"),
-                t("cdda96d6", "Es poden cancel·lar en qualsevol moment"),
-                t("cc67158f", "condicions del servei per a compradors"),
-                t("eb420831", "condicions"),
-                t("c7d49608", "Es poden cancel·lar en qualsevol moment"),
-                t("ab176bd1", "condicions del servei per a compradors"),
-                t("cea928a5", "condicions"),
-                t("e37c69e0", "Es poden cancel·lar en qualsevol moment"),
                 t("ia08113f", "Condicions del servei per a compradors"),
                 t("d2962b73", "condicions"),
                 t("b421795a", "Es poden cancel·lar en qualsevol moment"),
@@ -7849,7 +7836,20 @@
                 t("b33d1518", "Sincronitza feines des d'una integració admesa o un canal XML personalitzat"),
                 t("dd2db402", "Pas 1: recull la informació necessària"),
                 t("edb098c2", "Pas 2: contacta amb el nostre equip d'assistència"),
-                t("c4474460", "Pas 2: envia un correu electrònic al nostre equip d'assistència");
+                t("c4474460", "Pas 2: envia un correu electrònic al nostre equip d'assistència"),
+                t("a08da0fa", "I ara què passarà?"),
+                t("c127374e", "Envia'ns un missatge"),
+                t("b2cb2a0c", "Nom d'usuari del teu compte d'Organització verificada"),
+                t("b8e64002", "Nom del teu sistema de seguiment d'aspirants"),
+                t("acb99db6", "URL del lloc web professional on es mostren les feines"),
+                t("a64a5b7a", "Envia la informació necessària al nostre equip d'assistència per iniciar el procés d'integració."),
+                t("e3dffb4e", "Copia l'adreça de correu electrònic d'assistència següent i envia la informació necessària al nostre equip d'assistència per iniciar el procés d'integració."),
+                t("b4fef99e", "Després que l'equip d'assistència rebi la teva sol·licitud, revisarem la teva informació i t'ajudarem amb la configuració de la integració."),
+                t("h37f2d96", "Tingues en compte que ara per ara no s'admeten tots els sistemes de seguiment d'aspirants."),
+                t("ce102a20", "Redirigint-te a Stripe"),
+                t("ddfd6718", "Ha fallat el pagament"),
+                t("i90ea7d2", "Actualitza la facturació urgentment per conservar els avantatges."),
+                t("a62359e6", "Configuració d'organització verificada");
             function s(e, a) {
                 for (var i = 0; i < a.length; i++) {
                     var t = a[i];
@@ -7888,20 +7888,7 @@
                     n(e, a)
                 );
             }
-            t("a08da0fa", "I ara què passarà?"),
-                t("c127374e", "Envia'ns un missatge"),
-                t("b2cb2a0c", "Nom d'usuari del teu compte d'Organització verificada"),
-                t("b8e64002", "Nom del teu sistema de seguiment d'aspirants"),
-                t("acb99db6", "URL del lloc web professional on es mostren les feines"),
-                t("a64a5b7a", "Envia la informació necessària al nostre equip d'assistència per iniciar el procés d'integració."),
-                t("e3dffb4e", "Copia l'adreça de correu electrònic d'assistència següent i envia la informació necessària al nostre equip d'assistència per iniciar el procés d'integració."),
-                t("b4fef99e", "Després que l'equip d'assistència rebi la teva sol·licitud, revisarem la teva informació i t'ajudarem amb la configuració de la integració."),
-                t("h37f2d96", "Tingues en compte que ara per ara no s'admeten tots els sistemes de seguiment d'aspirants."),
-                t("ce102a20", "Redirigint-te a Stripe"),
-                t("ddfd6718", "Ha fallat el pagament"),
-                t("i90ea7d2", "Actualitza la facturació urgentment per conservar els avantatges."),
-                t("a62359e6", "Configuració d'organització verificada"),
-                t("ge221b7c", "Actualitza a la subscripció d'Organització verificada per accedir a l'opció d'afiliats i a més crèdits per a anuncis."),
+            t("ge221b7c", "Actualitza a la subscripció d'Organització verificada per accedir a l'opció d'afiliats i a més crèdits per a anuncis."),
                 t("i4dccc18", "Facturació"),
                 t("ec3cd6e4", "Gestiona el mètode de pagament, modifica les dades de facturació i consulta les factures."),
                 t("dac61c3c", "Configuració del compte"),
@@ -8009,6 +7996,7 @@
                 t("j99e2f4d", function (e) {
                     return e.price + " / " + e.interval;
                 }),
+                t("ieafe1c6", "Confirma el canvi de subscripció"),
                 t("bb21a170", "Canvia la subscripció"),
                 t("b0dcc4dc", "El teu compte ja té un canvi de nivell pendent."),
                 t("f3aef4ca", "No s'ha trobat cap subscripció activa"),
@@ -8891,8 +8879,8 @@
                 t("c057680c", "No podem reproduir el vídeo en aquest navegador. Prova-ho amb un altre navegador web."),
                 t("i5dfae6e", "El vídeo no està disponible des de la teva ubicació."),
                 t("c2388276", "S'ha suprimit el vídeo."),
-                t("d2c96140", "Indicador d'àudio del convidat");
-            t("f6dc9146", "REEMISSIÓ"),
+                t("d2c96140", "Indicador d'àudio del convidat"),
+                t("f6dc9146", "REEMISSIÓ"),
                 t("d30c74fe", "Volum"),
                 t("f2d4e6f2", "Torna'l a mirar"),
                 t("e9f1af3a", "Descobreix-ne més"),
@@ -8903,10 +8891,10 @@
                 t("ecda5f9e", "Enganyós"),
                 t("a423473c", "Avís legalment requerit"),
                 t("b3296688", "Visibilitat limitada"),
-                t("ccd32094", "Ara"),
-                t("abfcce0d", function (e) {
-                    return "Fa " + e.amountOfTime;
-                }),
+                t("ccd32094", "Ara");
+            t("abfcce0d", function (e) {
+                return "Fa " + e.amountOfTime;
+            }),
                 t("ae408b76", "Ho has republicat"),
                 t("j355f008", "Publicació fixada"),
                 t("habf9678", "Fixat per l'autor"),
@@ -12089,24 +12077,6 @@
                             },
                         },
                         {
-                            key: "ca87939f",
-                            get: function () {
-                                return ["En subscriure't, acceptes les nostres ", ". Les subscripcions es renoven automàticament fins que es cancel·len, tal com es descriu a les ", ". ", ", però fes-ho com a màxim 24 hores abans de la renovació per evitar càrrecs addicionals. Quan canviïs a un pla amb un preu més alt, el crèdit de la resta de la teva subscripció anterior es transferirà al teu compte i s'utilitzarà automàticament per als pagaments futurs. La subscripció nova començarà immediatament. Cal un número de telèfon verificat per subscriure's."];
-                            },
-                        },
-                        {
-                            key: "ed2a6ba9",
-                            get: function () {
-                                return ["En subscriure't, acceptes les nostres ", ". Les subscripcions es renoven automàticament fins que es cancel·len, tal com es descriu a les ", ". ", ", però fes-ho com a màxim 24 hores abans de la renovació per evitar càrrecs addicionals. Quan canviïs a un nivell més baix, la teva subscripció actual i les característiques associades es canviaran a la subscripció nova immediatament. No rebràs cap reemborsament per cap part de la subscripció anterior, tret que sigui obligatori per llei. També se't cobrarà el preu del nivell nou immediatament."];
-                            },
-                        },
-                        {
-                            key: "db638a21",
-                            get: function () {
-                                return ["En subscriure't, acceptes les nostres ", ". Les subscripcions es renoven automàticament fins que es cancel·len, tal com es descriu a les ", ". ", ", però fes-ho com a màxim 24 hores abans de la renovació per evitar càrrecs addicionals. Quan canviïs de pla, la teva subscripció nova s'iniciarà immediatament. El crèdit de la resta de la teva subscripció anterior es transferirà al teu compte i s'utilitzarà automàticament per als pagaments futurs. Cal un número de telèfon verificat per subscriure's."];
-                            },
-                        },
-                        {
                             key: "b2138d0f",
                             get: function () {
                                 return ["En subscriure't, acceptes les nostres ", ". Les subscripcions es renoven automàticament fins que es cancel·len, tal com es descriu a les ", ". ", ", però fes-ho com a màxim 24 hores abans de la renovació per evitar càrrecs addicionals. Quan canviïs a un nivell més alt, la teva subscripció actual i les característiques associades es canviaran a la subscripció nova immediatament. Se't cobrarà immediatament el preu del nou nivell, però qualsevol saldo prorratejat del teu cicle de facturació actual s'abonarà al càrrec total d'avui. No rebràs cap reemborsament de cap part de la teva subscripció anterior, tret que ho requereixi la llei."];
@@ -13237,4 +13207,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ca.3bfd11fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ca.014f638a.js.map

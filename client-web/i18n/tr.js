@@ -4267,7 +4267,7 @@
                 n("fa0f1262", "Devre Arası"),
                 n("c2cac618", "Grok şu anda La Liga, Premier Lig, Bundesliga, Serie A ve Ligue 1 verilerini desteklemektedir."),
                 n("acae223d", function (e) {
-                    return 'Results for "' + e.prompt + '"';
+                    return '"' + e.prompt + '" için sonuçlar';
                 }),
                 n("bed99fe2", "Daha azını göster"),
                 n("f7b57ac0", "İstatistikler"),
@@ -4796,12 +4796,12 @@
                 n("e7479ce4", "Ortalama İzlenme Süresi"),
                 n("g1dfa7d0", "Ort."),
                 n("h7d28188", "İçeriğe dön"),
-                n("if2704e4", "Back to Live Overview"),
+                n("if2704e4", "Canlı Yayına Genel Bakışa Dön"),
                 n("ea928ae4", "Sohbet odalarına dön"),
                 n("e8c07c22", "yayın"),
-                n("a4ce6e68", "Broadcast Metrics"),
-                n("b2214c74", "Total number of views for this broadcast"),
-                n("d4fcf83a", "Total time viewers spent watching this broadcast"),
+                n("a4ce6e68", "Yayın Metrikleri"),
+                n("b2214c74", "Bu yayın için toplam izleme sayısı"),
+                n("d4fcf83a", "Seyircilerin bu yayını izlerken harcadığı toplam süre"),
                 n("a89b0322", "İptal edildi"),
                 n("j3cb12ea", "Aynı Anda Dinleyen Dinleyici Sayısı"),
                 n("b93931ee", "İçeriğinin gönderi olarak yayınlanma sayısı."),
@@ -4837,19 +4837,19 @@
                 n("efa0f858", "Zaman içindeki takip ve takibi bırakma sayısı. Bu rakamlar, takipçi sayını göstermez."),
                 n("g2b06cc6", "Cinsiyet verileri çıkarım olabilir"),
                 n("b66b3baa", "saat"),
-                n("cf8a0772", "Impression to Views"),
-                n("g13d8010", "Last 48 Hours"),
-                n("d5627596", "Last Hour"),
+                n("cf8a0772", "Görüntülemelerdeki Gösterim"),
+                n("g13d8010", "Son 48 Saat"),
+                n("d5627596", "Son 1 Saat"),
                 n("baf120a6", "En az etkileşim"),
                 n("f2382014", "CANLI"),
-                n("c4a7a6aa", "Live data"),
-                n("a992032a", "Livestream Analytics"),
+                n("c4a7a6aa", "Canlı veriler"),
+                n("a992032a", "Canlı Yayın İstatistikleri"),
                 n("ie45edda", "Canlı yayına genel bakış"),
-                n("e30fc268", "Canlı Yayın Seyircisi"),
+                n("e30fc268", "Seyirci Sayısı"),
                 n("bd37f68e", "Medya etkinliği"),
                 n("fe074210", "dk"),
-                n("jd03a1b8", "Minutes Watched"),
-                n("a20e91e8", "minutes watched"),
+                n("jd03a1b8", "Dakika Cinsinden İzlenme Süresi"),
+                n("a20e91e8", "dakika cinsinden izlenme süresi"),
                 n("ic2bebee", "Para kazanma"),
                 n("a1d642c8", "En çok etkileşim"),
                 n("ifc4c1f8", "Bu içerik sayesinde kazanılan yeni takipçi sayısı."),
@@ -4857,14 +4857,14 @@
                 n("jbcb09a8", "Henüz yeterli veri yok"),
                 n("df846d6c", "Seçilen zaman aralığı için gönderi bulunamadı."),
                 n("g2ba40f6", "Seçilen filtreye uyan sohbet odası yok"),
-                n("j44061a0", "Mevcut değil"),
+                n("j44061a0", "Kullanılamıyor"),
                 n("c4a93912", "Yok"),
-                n("a6b78788", "No viewer data available"),
+                n("a6b78788", "Seyirci verisi bulunmuyor"),
                 n("b2438638", "- toplam içindeki oran"),
                 n("ic0399e0", "Organik Görüntüleme Sayısı"),
                 n("ja5c444a", "Ödeme dönemi"),
                 n("f04e025e", "En Yüksek Aynı Anda Dinleyen Dinleyici Sayısı"),
-                n("d6d10662", "Peak Viewers: "),
+                n("d6d10662", "Maksimum Seyirci Sayısı: "),
                 n("d147bea2", "Lütfen daha sonra yeniden incele"),
                 n("f0336d68", "Gönderi İstatistikleri"),
                 n("g85fbd2e", "Gönderi kimliği"),
@@ -4872,11 +4872,11 @@
                 n("hf4f9bfe", "Gönderi Bağlantısı"),
                 n("bf5ebf5c", "Gönderiler ve yanıtlar"),
                 n("b211652e", "Zaman içinde gönderi sayısı"),
-                n("f2efec0a", "Pre-Published"),
+                n("f2efec0a", "Önceden Yayınlanmış"),
                 n("i61e0302", "Önceki"),
                 n("e08a706a", "Sponsorlu Görüntüleme Sayısı"),
                 n("cbc99192", "Yayınlanma tarihi"),
-                n("a83c2a9a", "Realtime"),
+                n("a83c2a9a", "Gerçek zamanlı"),
                 n("e9d72896", "Kayıtlı"),
                 n("gede4932", "Yeniden oynat"),
                 n("h0de359c", "Bu içeriğin yeniden gönderilme sayısı."),
@@ -4887,20 +4887,20 @@
                 n("fbc79a40", "Sohbet odalarına genel bakış"),
                 n("d077112a", "Sohbet Odası İstatistikleri"),
                 n("cf3709da", "Durum"),
-                n("e797dc32", "Stream time: "),
+                n("e797dc32", "Yayın zamanı: "),
                 n("b649d8cc", "Yalnızca Abone"),
                 n("j9282130", "Yayının küçük resmi"),
-                n("g629b8b0", "Timed Out"),
-                n("eb87323c", "This shows analytics data for the selected time period since the livestream happened."),
-                n("i6a75722", "Time Range"),
+                n("g629b8b0", "Zaman Aşımına Uğradı"),
+                n("eb87323c", "Bu, canlı yayın gerçekleştiğinden bu yana seçilen zaman aralığına yönelik istatistik verilerini gösterir."),
+                n("i6a75722", "Zaman Aralığı"),
                 n("c602f5b8", "Toplam"),
                 n("b35e68ae", "Toplam Katılımcı Sayısı"),
                 n("h78ee79a", "İzlenen Toplam Yeniden Oynatma"),
                 n("e3efaed0", "Tür"),
                 n("c37993e2", "Takibi bırakmalar"),
-                n("b1ed35d0", "Unique Viewers"),
+                n("b1ed35d0", "Benzersiz Seyirci Sayısı"),
                 n("bfad9306", "Bilinmiyor"),
-                n("b5a58f36", "Untitled Broadcast"),
+                n("b5a58f36", "Başlıksız Yayın"),
                 n("i70f5278", "Yüklenme tarihi:"),
                 n("a98b58b6", "Onaylı takipçiler"),
                 n("a5de67ca", "Hesaplarını onaylayan takipçilerin sayısı."),
@@ -7003,10 +7003,6 @@
                 n("db5c77e0", "Aktif aboneliğin bu plan"),
                 n("h77ef73e", "Aylık plana geç"),
                 n("d723d44a", "Yıllık plana geç"),
-                n("i253b5c6", "Üst Sürüme Geç ve Ödeme Yap"),
-                n("d2beeaaa", "Alt Sürüme Geç ve Ödeme Yap"),
-                n("acf719d4", "Geç ve Ödeme Yap"),
-                n("ieafe1c6", "Abonelik değişikliğini onayla"),
                 n("gf6b66b8", "Bugünden itibaren geçerli olacak abonelik değişikliğini onayla"),
                 n("e83daf87", function (e) {
                     return e.date + " tarihinden itibaren geçerli olacak abonelik değişikliğini onayla";
@@ -7024,15 +7020,6 @@
                 n("d7efb6ba", "Aylık faturalandırmadan yıllık faturalandırmaya geçiyorsun. Yıllık planın ücreti hemen tahsil edilir ve kalan orantılı aylık bakiyen toplam ücrete yansıtılır. Geçiş hemen gerçekleşir ve faturalandırman artık yıllık düzende olur."),
                 n("a5f2cf70", "Yıllık faturalandırmadan aylık faturalandırmaya geçiyorsun. Kalan yıllık kredin, bitene kadar aylık ödemelerini karşılar. Geçiş hemen gerçekleşir ve faturalandırman artık aylık düzende olur."),
                 n("ef1c0208", "Plan değişikliğini onayla"),
-                n("c20806d5", "Alıcı Hizmet Şartlarımızı"),
-                n("i10be4c9", "Şartlar"),
-                n("cdda96d6", "Dilediğin zaman iptal et"),
-                n("cc67158f", "Alıcı Hizmet Şartlarımızı"),
-                n("eb420831", "Şartlar"),
-                n("c7d49608", "Dilediğin zaman iptal et"),
-                n("ab176bd1", "Alıcı Hizmet Şartlarımızı"),
-                n("cea928a5", "Şartlar"),
-                n("e37c69e0", "Dilediğin zaman iptal et"),
                 n("ia08113f", "Alıcı Hizmet Şartlarımızı"),
                 n("d2962b73", "Şartlar"),
                 n("b421795a", "Dilediğin zaman iptal et"),
@@ -7848,7 +7835,20 @@
                 n("b33d1518", "İş ilanlarını desteklenen bir entegrasyondan veya özel XML akışından senkronize et"),
                 n("dd2db402", "1. adım: Gerekli bilgileri topla"),
                 n("edb098c2", "2. adım: Destek ekibimizle iletişime geç"),
-                n("c4474460", "2. adım: Ekibimize e-posta gönder");
+                n("c4474460", "2. adım: Ekibimize e-posta gönder"),
+                n("a08da0fa", "Bundan sonra ne olacak?"),
+                n("c127374e", "Bize mesaj gönder"),
+                n("b2cb2a0c", "Onaylı Kuruluşlar hesabının kullanıcı adı"),
+                n("b8e64002", "Başvuru takip sisteminin adı"),
+                n("acb99db6", "İş ilanlarının listelendiği kariyer sitesinin URL'si"),
+                n("a64a5b7a", "Entegrasyon işlemini başlatmak için gerekli bilgileri destek ekibimize gönder."),
+                n("e3dffb4e", "Aşağıdaki destek e-posta adresimizi kopyala ve entegrasyon işlemini başlatmak için gerekli bilgileri destek ekibimize gönder."),
+                n("b4fef99e", "Destek ekibimiz talebini aldıktan sonra bilgilerin incelenir ve entegrasyonunu yapılandırman için destek sunulur."),
+                n("h37f2d96", "Şu anda tüm başvuru takip sistemlerinin desteklenmediğini lütfen unutma."),
+                n("ce102a20", "Stripe'a yönlendiriliyor"),
+                n("ddfd6718", "Ödeme Başarısız Oldu"),
+                n("i90ea7d2", "Avantajlardan yararlanmaya devam etmek için lütfen faturalandırma ayarlarını hemen güncelle."),
+                n("a62359e6", "Onaylı Kuruluş Ayarları");
             function l(e, a) {
                 for (var i = 0; i < a.length; i++) {
                     var n = a[i];
@@ -7887,20 +7887,7 @@
                     t(e, a)
                 );
             }
-            n("a08da0fa", "Bundan sonra ne olacak?"),
-                n("c127374e", "Bize mesaj gönder"),
-                n("b2cb2a0c", "Onaylı Kuruluşlar hesabının kullanıcı adı"),
-                n("b8e64002", "Başvuru takip sisteminin adı"),
-                n("acb99db6", "İş ilanlarının listelendiği kariyer sitesinin URL'si"),
-                n("a64a5b7a", "Entegrasyon işlemini başlatmak için gerekli bilgileri destek ekibimize gönder."),
-                n("e3dffb4e", "Aşağıdaki destek e-posta adresimizi kopyala ve entegrasyon işlemini başlatmak için gerekli bilgileri destek ekibimize gönder."),
-                n("b4fef99e", "Destek ekibimiz talebini aldıktan sonra bilgilerin incelenir ve entegrasyonunu yapılandırman için destek sunulur."),
-                n("h37f2d96", "Şu anda tüm başvuru takip sistemlerinin desteklenmediğini lütfen unutma."),
-                n("ce102a20", "Stripe'a yönlendiriliyor"),
-                n("ddfd6718", "Ödeme Başarısız Oldu"),
-                n("i90ea7d2", "Avantajlardan yararlanmaya devam etmek için lütfen faturalandırma ayarlarını hemen güncelle."),
-                n("a62359e6", "Onaylı Kuruluş Ayarları"),
-                n("ge221b7c", "Onaylı Kuruluşlar aboneliğini güncelleyerek ilişkili hesaplar ve daha fazla reklam kredisi avantajından yararlanın."),
+            n("ge221b7c", "Onaylı Kuruluşlar aboneliğini güncelleyerek ilişkili hesaplar ve daha fazla reklam kredisi avantajından yararlanın."),
                 n("i4dccc18", "Faturalandırma"),
                 n("ec3cd6e4", "Ödeme yöntemini yönet, faturalandırma bilgilerini güncelle ve faturalarını gözden geçir."),
                 n("dac61c3c", "Hesap ayarları"),
@@ -8008,6 +7995,7 @@
                 n("j99e2f4d", function (e) {
                     return e.price + " / " + e.interval;
                 }),
+                n("ieafe1c6", "Abonelik değişikliğini onayla"),
                 n("bb21a170", "Aboneliği değiştir"),
                 n("b0dcc4dc", "Hesabında zaten bir kademe geçişi işlemi bekliyor."),
                 n("f3aef4ca", "Aktif abonelik bulunamadı"),
@@ -8890,8 +8878,8 @@
                 n("c057680c", "Videoyu bu tarayıcıda oynatamıyoruz. Lütfen farklı bir web tarayıcı dene."),
                 n("i5dfae6e", "Bu video bulunduğun konumda izlenemiyor."),
                 n("c2388276", "Bu video silinmiş."),
-                n("d2c96140", "Misafir sesi göstergesi");
-            n("f6dc9146", "YENİDEN OYNAT"),
+                n("d2c96140", "Misafir sesi göstergesi"),
+                n("f6dc9146", "YENİDEN OYNAT"),
                 n("d30c74fe", "Ses"),
                 n("f2d4e6f2", "Tekrar izle"),
                 n("e9f1af3a", "Daha fazlasını keşfet"),
@@ -8902,10 +8890,10 @@
                 n("ecda5f9e", "Yanıltıcı"),
                 n("a423473c", "Yasal Olarak Gerekli Bildirim"),
                 n("b3296688", "Görünürlük Kısıtlandı"),
-                n("ccd32094", "Şimdi"),
-                n("abfcce0d", function (e) {
-                    return e.amountOfTime + " önce";
-                }),
+                n("ccd32094", "Şimdi");
+            n("abfcce0d", function (e) {
+                return e.amountOfTime + " önce";
+            }),
                 n("ae408b76", "Yeniden gönderi yayınladın"),
                 n("j355f008", "Sabitlenmiş gönderi"),
                 n("habf9678", "Yazar tarafından sabitlendi"),
@@ -12098,24 +12086,6 @@
                             },
                         },
                         {
-                            key: "ca87939f",
-                            get: function () {
-                                return ["Abone olarak ", " kabul etmiş olursun. Abonelikler, ", "'da açıklandığı gibi, iptal edilene kadar otomatik olarak yenilenir. ", ". Ek ücretleri önlemek için yenileme zamanından en az 24 saat önce iptal et. Daha yüksek ücretli bir kademeye geçtiğinde önceki aboneliğinden kalan kredi hesabına aktarılır ve gelecekteki ödemeler için otomatik olarak uygulanır. Yeni aboneliğin hemen başlar. Abone olmak için onaylanmış bir telefon numarası gereklidir."];
-                            },
-                        },
-                        {
-                            key: "ed2a6ba9",
-                            get: function () {
-                                return ["Abone olarak ", " kabul etmiş olursun. Abonelikler, ", "'da açıklandığı gibi, iptal edilene kadar otomatik olarak yenilenir. ", ". Ek ücretleri önlemek için yenileme zamanından en az 24 saat önce iptal et. Alt sürüme geçiş yaptığında, mevcut aboneliğin ve ilgili özellikler hemen yeni abonelik kademesine geçer. Yasalarca zorunlu olmadığı sürece, önceki aboneliğinin hiçbir kısmı için geri ödeme yapılmaz. Ayrıca yeni kademenin ücreti de hemen tahsil edilir. Abone olmak için onaylanmış bir telefon numarası gereklidir."];
-                            },
-                        },
-                        {
-                            key: "db638a21",
-                            get: function () {
-                                return ["Abone olarak ", " kabul etmiş olursun. Abonelikler, ", "'da açıklandığı gibi, iptal edilene kadar otomatik olarak yenilenir. ", ". Ek ücretleri önlemek için yenileme zamanından en az 24 saat önce iptal et. Planını değiştirdiğinde, yeni aboneliğin hemen başlar. Önceki aboneliğinden kalan kredi hesabına aktarılır ve gelecekteki ödemeler için otomatik olarak uygulanır. Abone olmak için onaylanmış bir telefon numarası gereklidir."];
-                            },
-                        },
-                        {
                             key: "b2138d0f",
                             get: function () {
                                 return ["Abone olarak ", " kabul etmiş olursun. Abonelikler, ", "'da açıklandığı gibi, iptal edilene kadar otomatik olarak yenilenir. ", ". Ek ücretleri önlemek için yenileme zamanından en az 24 saat önce iptal et. Üst sürüme geçiş yaptığında, mevcut aboneliğin ve ilişkili özellikler hemen yeni abonelik kademesine geçer. Yeni kademenin ücreti hemen tahsil edilir ancak mevcut faturalandırma döngünden kalan orantılı bakiye bugünkü toplam ücrete yansıtılır. Yasalarca zorunlu kılınmadığı sürece, önceki aboneliğinin herhangi bir kısmı için geri ödeme alamazsın."];
@@ -13245,4 +13215,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/tr.204b2c1a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/tr.215469aa.js.map

@@ -7004,10 +7004,6 @@
                 s("db5c77e0", "[Thïís ïís yöøür åäctïívéê sübscrïíptïíöøn]"),
                 s("h77ef73e", "[Swïítch töø möønthly plåän]"),
                 s("d723d44a", "[Swïítch töø åännüåäl plåän]"),
-                s("i253b5c6", "[Upgråädéê & Påäy]"),
-                s("d2beeaaa", "[Döøwngråädéê & Påäy]"),
-                s("acf719d4", "[Swïítch & Påäy]"),
-                s("ieafe1c6", "[Cöønfïírm yöøür sübscrïíptïíöøn chåängéê]"),
                 s("gf6b66b8", "[Cöønfïírm yöøür sübscrïíptïíöøn chåängéê, éêfféêctïívéê fröøm töødåäy]"),
                 s("e83daf87", function (t) {
                     return "[Cöønfïírm yöøür sübscrïíptïíöøn chåängéê, éêfféêctïívéê fröøm " + t.date + "]";
@@ -7025,15 +7021,6 @@
                 s("d7efb6ba", "[Yöøü’réê swïítchïíng fröøm möønthly töø åännüåäl bïíllïíng. Yöøü’ll béê chåärgéêd föør théê åännüåäl plåän töødåäy, wïíth yöøür réêmåäïínïíng pröøråätéêd möønthly båälåäncéê créêdïítéêd töø théê töøtåäl chåärgéê. Théê swïítch håäppéêns ïímméêdïíåätéêly, åänd yöøür bïíllïíng wïíll nöøw béê åännüåäl.]"),
                 s("a5f2cf70", "[Yöøü’réê swïítchïíng fröøm åännüåäl töø möønthly bïíllïíng. Yöøür réêmåäïínïíng åännüåäl créêdïít wïíll cöøvéêr yöøür möønthly påäyméênts üntïíl ïít rüns öøüt. Théê swïítch håäppéêns ïímméêdïíåätéêly, åänd yöøür bïíllïíng wïíll nöøw béê möønthly.]"),
                 s("ef1c0208", "[Cöønfïírm plåän chåängéê]"),
-                s("c20806d5", "Pürchåäséêr Téêrms öøf Séêrvïícéê"),
-                s("i10be4c9", "Téêrms"),
-                s("cdda96d6", "Cåäncéêl åänytïíméê"),
-                s("cc67158f", "Pürchåäséêr Téêrms öøf Séêrvïícéê"),
-                s("eb420831", "Téêrms"),
-                s("c7d49608", "Cåäncéêl åänytïíméê"),
-                s("ab176bd1", "Pürchåäséêr Téêrms öøf Séêrvïícéê"),
-                s("cea928a5", "Téêrms"),
-                s("e37c69e0", "Cåäncéêl åänytïíméê"),
                 s("ia08113f", "Pürchåäséêr Téêrms öøf Séêrvïícéê"),
                 s("d2962b73", "Téêrms"),
                 s("b421795a", "Cåäncéêl åänytïíméê"),
@@ -7849,7 +7836,20 @@
                 s("b33d1518", "[Sync jöøbs fröøm åä süppöørtéêd ïíntéêgråätïíöøn öør åä cüstöøm XML féêéêd]"),
                 s("dd2db402", "[Stéêp 1: Gåäthéêr théê réêqüïíréêd ïínföørmåätïíöøn]"),
                 s("edb098c2", "[Stéêp 2: Cöøntåäct öøür süppöørt téêåäm]"),
-                s("c4474460", "[Stéêp 2: Emåäïíl öøür süppöørt téêåäm]");
+                s("c4474460", "[Stéêp 2: Emåäïíl öøür süppöørt téêåäm]"),
+                s("a08da0fa", "[Whåät håäppéêns néêxt?]"),
+                s("c127374e", "[Séênd üs åä méêssåägéê]"),
+                s("b2cb2a0c", "[Uséêrnåäméê öøf yöøür Véêrïífïíéêd Org åäccöøünt]"),
+                s("b8e64002", "[Nåäméê öøf yöøür åäpplïícåänt tråäckïíng systéêm]"),
+                s("acb99db6", "[Cåäréêéêr sïítéê URL whéêréê yöøür jöøbs åäréê lïístéêd]"),
+                s("a64a5b7a", "[Séênd théê réêqüïíréêd ïínföørmåätïíöøn töø öøür süppöørt téêåäm töø ståärt théê ïíntéêgråätïíöøn pröøcéêss.]"),
+                s("e3dffb4e", "[Cöøpy öøür süppöørt éêmåäïíl åäddréêss béêlöøw åänd séênd théê réêqüïíréêd ïínföørmåätïíöøn töø öøür süppöørt téêåäm töø ståärt théê ïíntéêgråätïíöøn pröøcéêss.]"),
+                s("b4fef99e", "[Aftéêr öøür süppöørt téêåäm réêcéêïívéês yöøür réêqüéêst, wéê wïíll réêvïíéêw yöøür ïínföørmåätïíöøn åänd wïíll åässïíst wïíth cöønfïígürïíng yöøür ïíntéêgråätïíöøn.]"),
+                s("h37f2d96", "[Pléêåäséê nöøtéê nöøt åäll åäpplïícåänt tråäckïíng systéêms åäréê cürréêntly süppöørtéêd.]"),
+                s("ce102a20", "[Réêdïíréêctïíng töø Strïípéê]"),
+                s("ddfd6718", "[Påäyméênt Fåäïíléêd]"),
+                s("i90ea7d2", "[Pléêåäséê ürgéêntly üpdåätéê yöøür bïíllïíng töø kéêéêp yöøür béênéêfïíts.]"),
+                s("a62359e6", "[Véêrïífïíéêd Orgåänïízåätïíöøn Séêttïíngs]");
             function d(t, n) {
                 for (var r = 0; r < n.length; r++) {
                     var s = n[r];
@@ -7888,20 +7888,7 @@
                     e(t, n)
                 );
             }
-            s("a08da0fa", "[Whåät håäppéêns néêxt?]"),
-                s("c127374e", "[Séênd üs åä méêssåägéê]"),
-                s("b2cb2a0c", "[Uséêrnåäméê öøf yöøür Véêrïífïíéêd Org åäccöøünt]"),
-                s("b8e64002", "[Nåäméê öøf yöøür åäpplïícåänt tråäckïíng systéêm]"),
-                s("acb99db6", "[Cåäréêéêr sïítéê URL whéêréê yöøür jöøbs åäréê lïístéêd]"),
-                s("a64a5b7a", "[Séênd théê réêqüïíréêd ïínföørmåätïíöøn töø öøür süppöørt téêåäm töø ståärt théê ïíntéêgråätïíöøn pröøcéêss.]"),
-                s("e3dffb4e", "[Cöøpy öøür süppöørt éêmåäïíl åäddréêss béêlöøw åänd séênd théê réêqüïíréêd ïínföørmåätïíöøn töø öøür süppöørt téêåäm töø ståärt théê ïíntéêgråätïíöøn pröøcéêss.]"),
-                s("b4fef99e", "[Aftéêr öøür süppöørt téêåäm réêcéêïívéês yöøür réêqüéêst, wéê wïíll réêvïíéêw yöøür ïínföørmåätïíöøn åänd wïíll åässïíst wïíth cöønfïígürïíng yöøür ïíntéêgråätïíöøn.]"),
-                s("h37f2d96", "[Pléêåäséê nöøtéê nöøt åäll åäpplïícåänt tråäckïíng systéêms åäréê cürréêntly süppöørtéêd.]"),
-                s("ce102a20", "[Réêdïíréêctïíng töø Strïípéê]"),
-                s("ddfd6718", "[Påäyméênt Fåäïíléêd]"),
-                s("i90ea7d2", "[Pléêåäséê ürgéêntly üpdåätéê yöøür bïíllïíng töø kéêéêp yöøür béênéêfïíts.]"),
-                s("a62359e6", "[Véêrïífïíéêd Orgåänïízåätïíöøn Séêttïíngs]"),
-                s("ge221b7c", "[Upgråädéê Véêrïífïíéêd Orgåänïízåätïíöøn sübscrïíptïíöøn töø géêt åäccéêss töø åäffïílïíåätéês åänd möøréê åäd créêdïíts.]"),
+            s("ge221b7c", "[Upgråädéê Véêrïífïíéêd Orgåänïízåätïíöøn sübscrïíptïíöøn töø géêt åäccéêss töø åäffïílïíåätéês åänd möøréê åäd créêdïíts.]"),
                 s("i4dccc18", "[Bïíllïíng]"),
                 s("ec3cd6e4", "[Måänåägéê yöøür påäyméênt méêthöød, üpdåätéê bïíllïíng ïínföørmåätïíöøn, åänd réêvïíéêw yöøür ïínvöøïícéês.]"),
                 s("dac61c3c", "[Accöøünt séêttïíngs]"),
@@ -8009,6 +7996,7 @@
                 s("j99e2f4d", function (t) {
                     return "[" + t.price + " / " + t.interval + "]";
                 }),
+                s("ieafe1c6", "[Cöønfïírm yöøür sübscrïíptïíöøn chåängéê]"),
                 s("bb21a170", "[Chåängéê sübscrïíptïíöøn]"),
                 s("b0dcc4dc", "[Yöøür åäccöøünt ïís åälréêåädy péêndïíng åä tïíéêr swïítch.]"),
                 s("f3aef4ca", "[Nöø åäctïívéê sübscrïíptïíöøn föøünd]"),
@@ -8891,8 +8879,8 @@
                 s("c057680c", "[Wéê cåännöøt plåäy théê vïídéêöø ïín thïís bröøwséêr. Pléêåäséê try åä dïífféêréênt wéêb bröøwséêr.]"),
                 s("i5dfae6e", "[Thïís vïídéêöø ïís nöøt åävåäïílåäbléê ïín yöøür löøcåätïíöøn.]"),
                 s("c2388276", "[Thïís vïídéêöø håäs béêéên déêléêtéêd.]"),
-                s("d2c96140", "[Güéêst åäüdïíöø ïíndïícåätöør]");
-            s("f6dc9146", "[REPLAY]"),
+                s("d2c96140", "[Güéêst åäüdïíöø ïíndïícåätöør]"),
+                s("f6dc9146", "[REPLAY]"),
                 s("d30c74fe", "[Vöølüméê]"),
                 s("f2d4e6f2", "[Wåätch åägåäïín]"),
                 s("e9f1af3a", "[Fïínd öøüt möøréê]"),
@@ -8903,10 +8891,10 @@
                 s("ecda5f9e", "[Mïísléêåädïíng]"),
                 s("a423473c", "[Léêgåälly Réêqüïíréêd Nöøtïícéê]"),
                 s("b3296688", "[Vïísïíbïílïíty Lïímïítéêd]"),
-                s("ccd32094", "[Nöøw]"),
-                s("abfcce0d", function (t) {
-                    return "[" + t.amountOfTime + " åägöø]";
-                }),
+                s("ccd32094", "[Nöøw]");
+            s("abfcce0d", function (t) {
+                return "[" + t.amountOfTime + " åägöø]";
+            }),
                 s("ae408b76", "[Yöøü réêpöøstéêd]"),
                 s("j355f008", "[Pïínnéêd pöøst]"),
                 s("habf9678", "[Pïínnéêd by Aüthöør]"),
@@ -12089,24 +12077,6 @@
                             },
                         },
                         {
-                            key: "ca87939f",
-                            get: function () {
-                                return ["[By sübscrïíbïíng, yöøü åägréêéê töø öøür ", ". Sübscrïíptïíöøns åäütöø-réênéêw üntïíl cåäncéêléêd, åäs déêscrïíbéêd ïín théê ", ". ", ". Cåäncéêl åät léêåäst 24 höøürs prïíöør töø réênéêwåäl töø åävöøïíd åäddïítïíöønåäl chåärgéês. Whéên üpgråädïíng töø åä hïíghéêr prïícéêd tïíéêr, créêdïít föør théê réêmåäïíndéêr öøf yöøür préêvïíöøüs sübscrïíptïíöøn wïíll göø töøwåärds yöøür åäccöøünt åänd åäütöømåätïícåälly béê åäpplïíéêd töø fütüréê påäyméênts. Yöøür néêw sübscrïíptïíöøn wïíll ståärt ïímméêdïíåätéêly. A véêrïífïíéêd phöønéê nümbéêr ïís réêqüïíréêd töø sübscrïíbéê.]"];
-                            },
-                        },
-                        {
-                            key: "ed2a6ba9",
-                            get: function () {
-                                return ["[By sübscrïíbïíng, yöøü åägréêéê töø öøür ", ". Sübscrïíptïíöøns åäütöø-réênéêw üntïíl cåäncéêléêd, åäs déêscrïíbéêd ïín théê ", ". ", ". Cåäncéêl åät léêåäst 24 höøürs prïíöør töø réênéêwåäl töø åävöøïíd åäddïítïíöønåäl chåärgéês. Whéên döøwngråädïíng, yöøür cürréênt sübscrïíptïíöøn åänd théê åässöøcïíåätéêd féêåätüréês wïíll swïítch töø théê néêw sübscrïíptïíöøn tïíéêr ïímméêdïíåätéêly. Yöøü wïíll nöøt réêcéêïívéê åä réêfünd föør åäny pöørtïíöøn öøf yöøür préêvïíöøüs sübscrïíptïíöøn, ünléêss réêqüïíréêd by låäw. Yöøü wïíll åälsöø béê chåärgéêd föør théê prïícéê öøf théê néêw tïíéêr ïímméêdïíåätéêly. A véêrïífïíéêd phöønéê nümbéêr ïís réêqüïíréêd töø sübscrïíbéê.]"];
-                            },
-                        },
-                        {
-                            key: "db638a21",
-                            get: function () {
-                                return ["[By sübscrïíbïíng, yöøü åägréêéê töø öøür ", ". Sübscrïíptïíöøns åäütöø-réênéêw üntïíl cåäncéêléêd, åäs déêscrïíbéêd ïín théê ", ". ", ". Cåäncéêl åät léêåäst 24 höøürs prïíöør töø réênéêwåäl töø åävöøïíd åäddïítïíöønåäl chåärgéês. Whéên yöøü swïítch yöøür plåän, yöøür néêw sübscrïíptïíöøn wïíll ståärt ïímméêdïíåätéêly. Créêdïít föør théê réêmåäïíndéêr öøf yöøür préêvïíöøüs sübscrïíptïíöøn wïíll göø töøwåärds yöøür åäccöøünt åänd åäütöømåätïícåälly béê åäpplïíéêd töø fütüréê påäyméênts. A véêrïífïíéêd phöønéê nümbéêr ïís réêqüïíréêd töø sübscrïíbéê.]"];
-                            },
-                        },
-                        {
                             key: "b2138d0f",
                             get: function () {
                                 return ["[By sübscrïíbïíng, yöøü åägréêéê töø öøür ", ". Sübscrïíptïíöøns åäütöø-réênéêw üntïíl cåäncéêléêd, åäs déêscrïíbéêd ïín théê ", ". ", ". Cåäncéêl åät léêåäst 24 höøürs prïíöør töø réênéêwåäl töø åävöøïíd åäddïítïíöønåäl chåärgéês. Whéên üpgråädïíng, yöøür cürréênt sübscrïíptïíöøn åänd théê åässöøcïíåätéêd féêåätüréês wïíll swïítch töø théê néêw sübscrïíptïíöøn tïíéêr ïímméêdïíåätéêly. Yöøü wïíll béê chåärgéêd föør théê prïícéê öøf théê néêw tïíéêr ïímméêdïíåätéêly büt åäny pröøråätéêd båälåäncéê fröøm yöøür cürréênt bïíllïíng cycléê wïíll béê créêdïítéêd töøwåärds töødåäy’s töøtåäl chåärgéê. Yöøü wïíll nöøt réêcéêïívéê åä réêfünd föør åäny pöørtïíöøn öøf yöøür préêvïíöøüs sübscrïíptïíöøn, ünléêss réêqüïíréêd by låäw.]"];
@@ -13237,4 +13207,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-xx.ab575caa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-xx.6505767a.js.map

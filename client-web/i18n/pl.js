@@ -4277,7 +4277,7 @@
                 i("fa0f1262", "Przerwa"),
                 i("c2cac618", "Grok aktualnie obsługuje dane z następujących lig: La Liga, Premier League, Bundesliga, Series A i Ligue 1."),
                 i("acae223d", function (e) {
-                    return 'Results for "' + e.prompt + '"';
+                    return "Wyniki dla: „" + e.prompt + "”";
                 }),
                 i("bed99fe2", "Zobacz mniej"),
                 i("f7b57ac0", "Statystyki"),
@@ -4806,12 +4806,12 @@
                 i("e7479ce4", "Średni czas oglądania"),
                 i("g1dfa7d0", "Średnia"),
                 i("h7d28188", "Powrót do treści"),
-                i("if2704e4", "Back to Live Overview"),
+                i("if2704e4", "Powrót do aktywności — przegląd"),
                 i("ea928ae4", "Powrót do pokojów"),
-                i("e8c07c22", "transmituj"),
-                i("a4ce6e68", "Broadcast Metrics"),
-                i("b2214c74", "Total number of views for this broadcast"),
-                i("d4fcf83a", "Total time viewers spent watching this broadcast"),
+                i("e8c07c22", "transmisja"),
+                i("a4ce6e68", "Statystyki transmisji"),
+                i("b2214c74", "Łączna liczba wyświetleń tej transmisji"),
+                i("d4fcf83a", "Łączna ilość czasu poświęconego przez oglądających na oglądanie tej transmisji"),
                 i("a89b0322", "Anulowano"),
                 i("j3cb12ea", "Równocześni słuchacze"),
                 i("b93931ee", "Liczba publikacji Twoich treści."),
@@ -4847,19 +4847,19 @@
                 i("efa0f858", "Liczba zdarzeń rozpoczęcia i zakończenia obserwowania z biegiem czasu. Ta wartość nie musi odpowiadać liczbie obserwujących."),
                 i("g2b06cc6", "Dane dotyczące płci mogą być wnioskowane"),
                 i("b66b3baa", "godziny"),
-                i("cf8a0772", "Impression to Views"),
-                i("g13d8010", "Last 48 Hours"),
-                i("d5627596", "Last Hour"),
+                i("cf8a0772", "Wyświetlenia"),
+                i("g13d8010", "Ostatnie 48 godzin"),
+                i("d5627596", "Ostatnia godzina"),
                 i("baf120a6", "Najmniej interakcji"),
                 i("f2382014", "TRANSMISJA NA ŻYWO"),
-                i("c4a7a6aa", "Live data"),
-                i("a992032a", "Livestream Analytics"),
+                i("c4a7a6aa", "Dane na żywo"),
+                i("a992032a", "Analizy transmisji strumieniowej na żywo"),
                 i("ie45edda", "Transmisja strumieniowa na żywo — przegląd"),
-                i("e30fc268", "Widzowie"),
+                i("e30fc268", "Oglądający na żywo"),
                 i("bd37f68e", "Aktywność multimedialna"),
                 i("fe074210", "min"),
-                i("jd03a1b8", "Minutes Watched"),
-                i("a20e91e8", "minutes watched"),
+                i("jd03a1b8", "Minuty oglądania"),
+                i("a20e91e8", "minuty oglądania"),
                 i("ic2bebee", "Zmonetyzowane"),
                 i("a1d642c8", "Najwięcej interakcji"),
                 i("ifc4c1f8", "Liczba nowych obserwujących zdobytych za pomocą tych treści."),
@@ -4867,14 +4867,14 @@
                 i("jbcb09a8", "Nie ma jeszcze wystarczającej ilości danych"),
                 i("df846d6c", "Nie znaleziono wpisów dla wybranego zakresu czasu."),
                 i("g2ba40f6", "Brak dostępnych pokojów spełniających kryteria wybranego filtru"),
-                i("j44061a0", "Niedostępny"),
+                i("j44061a0", "Niedostępne"),
                 i("c4a93912", "Nie dotyczy"),
-                i("a6b78788", "No viewer data available"),
+                i("a6b78788", "Brak dostępnych danych dotyczących oglądających"),
                 i("b2438638", "łącznej liczby"),
                 i("ic0399e0", "Wyświetlenia organiczne"),
                 i("ja5c444a", "Okres płatności"),
                 i("f04e025e", "Najwięcej równoczesnych słuchaczy"),
-                i("d6d10662", "Peak Viewers: "),
+                i("d6d10662", "Największa liczba oglądających: "),
                 i("d147bea2", "Sprawdź ponownie później"),
                 i("f0336d68", "Analizy wpisów"),
                 i("g85fbd2e", "Identyfikator wpisu"),
@@ -4882,11 +4882,11 @@
                 i("hf4f9bfe", "Link do wpisu"),
                 i("bf5ebf5c", "Wpisy i odpowiedzi"),
                 i("b211652e", "Wpisy z biegiem czasu"),
-                i("f2efec0a", "Pre-Published"),
+                i("f2efec0a", "Wstępnie opublikowane"),
                 i("i61e0302", "Poprzedni"),
                 i("e08a706a", "Wyświetlenia promowane"),
                 i("cbc99192", "Data opublikowania"),
-                i("a83c2a9a", "Realtime"),
+                i("a83c2a9a", "W czasie rzeczywistym"),
                 i("e9d72896", "Nagrane"),
                 i("gede4932", "Odtwórz ponownie"),
                 i("h0de359c", "Liczba podań dalej tych treści."),
@@ -4897,20 +4897,20 @@
                 i("fbc79a40", "Przegląd pokojów"),
                 i("d077112a", "Statystyki pokoju"),
                 i("cf3709da", "Status"),
-                i("e797dc32", "Stream time: "),
+                i("e797dc32", "Czas przesyłania strumieniowego: "),
                 i("b649d8cc", "Tylko subskrybent"),
                 i("j9282130", "Miniatura transmisji"),
-                i("g629b8b0", "Timed Out"),
-                i("eb87323c", "This shows analytics data for the selected time period since the livestream happened."),
-                i("i6a75722", "Time Range"),
+                i("g629b8b0", "Przekroczenie limitu czasu"),
+                i("eb87323c", "Pokazuje dane analiz dotyczących wybranego okresu od momentu rozpoczęcia transmisji strumieniowej na żywo."),
+                i("i6a75722", "Zakres czasu"),
                 i("c602f5b8", "Suma"),
                 i("b35e68ae", "Łączna liczba uczestników"),
                 i("h78ee79a", "Łączna liczba wyświetleń powtórki"),
                 i("e3efaed0", "Typ"),
                 i("c37993e2", "Zakończenia obserwowania"),
-                i("b1ed35d0", "Unique Viewers"),
+                i("b1ed35d0", "Unikatowi oglądający"),
                 i("bfad9306", "Nieznane"),
-                i("b5a58f36", "Untitled Broadcast"),
+                i("b5a58f36", "Transmisja bez tytułu"),
                 i("i70f5278", "Data przesłania:"),
                 i("a98b58b6", "Zweryfikowani obserwujący"),
                 i("a5de67ca", "Liczba obserwujących, którzy zweryfikowali swoje konta."),
@@ -7013,10 +7013,6 @@
                 i("db5c77e0", "To jest Twoja aktywna subskrypcja"),
                 i("h77ef73e", "Zmień subskrypcję na miesięczną"),
                 i("d723d44a", "Zmień subskrypcję na roczną"),
-                i("i253b5c6", "Podnieś poziom i zapłać"),
-                i("d2beeaaa", "Obniż poziom i zapłać"),
-                i("acf719d4", "Zmień i zapłać"),
-                i("ieafe1c6", "Potwierdź zmianę subskrypcji"),
                 i("gf6b66b8", "Potwierdź zmianę subskrypcji, która będzie obowiązywać od dzisiaj"),
                 i("e83daf87", function (e) {
                     return "Potwierdź zmianę subskrypcji, która będzie obowiązywać od " + e.date;
@@ -7034,15 +7030,6 @@
                 i("d7efb6ba", "Wykonujesz przełączenie z rozliczenia miesięcznego na roczne. Dziś zostanie Ci naliczona opłata za plan roczny, a pozostała proporcjonalna część Twojego salda miesięcznego zostanie wykorzystana na potrzeby opłacenia łącznej opłaty. Przełączenie zostanie wykonane natychmiast i od teraz będziesz mieć rozliczenie roczne."),
                 i("a5f2cf70", "Wykonujesz przełączenie z rozliczenia rocznego na miesięczne. Pozostała część Twojej płatności rocznej będzie wykorzystywana na potrzeby opłacania płatności miesięcznych, dopóki się nie wyczerpie. Przełączenie zostanie wykonane natychmiast i od teraz będziesz mieć rozliczenie miesięczne."),
                 i("ef1c0208", "Potwierdź zmianę planu"),
-                i("c20806d5", "Warunki dotyczące zakupów"),
-                i("i10be4c9", "Warunkach"),
-                i("cdda96d6", "Subskrypcję możesz anulować w dowolnym momencie"),
-                i("cc67158f", "Warunki dotyczące zakupów"),
-                i("eb420831", "Warunkach"),
-                i("c7d49608", "Subskrypcję możesz anulować w dowolnym momencie"),
-                i("ab176bd1", "Warunki dotyczące zakupów"),
-                i("cea928a5", "Warunkach"),
-                i("e37c69e0", "Subskrypcję możesz anulować w dowolnym momencie"),
                 i("ia08113f", "Warunki dotyczące zakupów"),
                 i("d2962b73", "Warunkach"),
                 i("b421795a", "Subskrypcję możesz anulować w dowolnym momencie"),
@@ -7858,7 +7845,20 @@
                 i("b33d1518", "Synchronizuj oferty pracy z obsługiwanej integracji lub niestandardowego źródła danych XML"),
                 i("dd2db402", "Krok 1: Zbierz wymagane informacje"),
                 i("edb098c2", "Krok 2: Skontaktuj się z naszym zespołem pomocy technicznej"),
-                i("c4474460", "Krok 2: Wyślij wiadomość e-mail do naszego zespołu pomocy technicznej");
+                i("c4474460", "Krok 2: Wyślij wiadomość e-mail do naszego zespołu pomocy technicznej"),
+                i("a08da0fa", "Jakie są kolejne kroki?"),
+                i("c127374e", "Wyślij nam wiadomość"),
+                i("b2cb2a0c", "Nazwa użytkownika Twojego konta zweryfikowanej organizacji"),
+                i("b8e64002", "Nazwa Twojego systemu śledzenia osób aplikujących"),
+                i("acb99db6", "Adres URL witryny z ogłoszeniami dotyczącymi pracy, w której są wymienione Twoje oferty pracy"),
+                i("a64a5b7a", "Wyślij naszemu zespołowi pomocy technicznej wymagane informacje, aby rozpocząć proces integracji."),
+                i("e3dffb4e", "Skopiuj widoczny poniżej adres e-mail naszej pomocy technicznej i wyślij zespołowi pomocy technicznej wymagane informacje, aby rozpocząć proces integracji."),
+                i("b4fef99e", "Gdy nasz zespół pomocy technicznej otrzyma Twoje żądanie, przejrzymy Twoje informacje i pomożemy Ci w skonfigurowaniu integracji."),
+                i("h37f2d96", "Pamiętaj, że nie wszystkie systemy śledzenia osób aplikujących są aktualnie obsługiwane."),
+                i("ce102a20", "Przekierowywanie do usługi Stripe"),
+                i("ddfd6718", "Realizacja płatności nie powiodła się"),
+                i("i90ea7d2", "Jak najszybciej zaktualizuj swoje rozliczenie, aby nie stracić korzyści."),
+                i("a62359e6", "Ustawienia zweryfikowanej organizacji");
             function t(e, a) {
                 for (var o = 0; o < a.length; o++) {
                     var i = a[o];
@@ -7897,20 +7897,7 @@
                     c(e, a)
                 );
             }
-            i("a08da0fa", "Jakie są kolejne kroki?"),
-                i("c127374e", "Wyślij nam wiadomość"),
-                i("b2cb2a0c", "Nazwa użytkownika Twojego konta zweryfikowanej organizacji"),
-                i("b8e64002", "Nazwa Twojego systemu śledzenia osób aplikujących"),
-                i("acb99db6", "Adres URL witryny z ogłoszeniami dotyczącymi pracy, w której są wymienione Twoje oferty pracy"),
-                i("a64a5b7a", "Wyślij naszemu zespołowi pomocy technicznej wymagane informacje, aby rozpocząć proces integracji."),
-                i("e3dffb4e", "Skopiuj widoczny poniżej adres e-mail naszej pomocy technicznej i wyślij zespołowi pomocy technicznej wymagane informacje, aby rozpocząć proces integracji."),
-                i("b4fef99e", "Gdy nasz zespół pomocy technicznej otrzyma Twoje żądanie, przejrzymy Twoje informacje i pomożemy Ci w skonfigurowaniu integracji."),
-                i("h37f2d96", "Pamiętaj, że nie wszystkie systemy śledzenia osób aplikujących są aktualnie obsługiwane."),
-                i("ce102a20", "Przekierowywanie do usługi Stripe"),
-                i("ddfd6718", "Realizacja płatności nie powiodła się"),
-                i("i90ea7d2", "Jak najszybciej zaktualizuj swoje rozliczenie, aby nie stracić korzyści."),
-                i("a62359e6", "Ustawienia zweryfikowanej organizacji"),
-                i("ge221b7c", "Podnieś poziom subskrypcji programu Zweryfikowane Organizacje, aby móc korzystać z kont powiązanych oraz otrzymać więcej kredytów reklamowych."),
+            i("ge221b7c", "Podnieś poziom subskrypcji programu Zweryfikowane Organizacje, aby móc korzystać z kont powiązanych oraz otrzymać więcej kredytów reklamowych."),
                 i("i4dccc18", "Rachunki"),
                 i("ec3cd6e4", "Zarządzaj sposobem płatności, aktualizuj informacje dotyczące rozliczeń i przeglądaj faktury."),
                 i("dac61c3c", "Ustawienia konta"),
@@ -8018,6 +8005,7 @@
                 i("j99e2f4d", function (e) {
                     return e.price + "/" + e.interval;
                 }),
+                i("ieafe1c6", "Potwierdź zmianę subskrypcji"),
                 i("bb21a170", "Zmień subskrypcję"),
                 i("b0dcc4dc", "Twoje konto oczekuje już na zmianę poziomu."),
                 i("f3aef4ca", "Nie znaleziono aktywnych subskrypcji"),
@@ -8900,8 +8888,8 @@
                 i("c057680c", "Nie można wyświetlić filmu w tej przeglądarce. Użyj innej przeglądarki."),
                 i("i5dfae6e", "Ten film jest niedostępny w Twojej lokalizacji."),
                 i("c2388276", "Ten film został usunięty."),
-                i("d2c96140", "Powiadomienie głosowe o gościu dołączającym do transmisji");
-            i("f6dc9146", "POWTÓRKA TRANSMISJI"),
+                i("d2c96140", "Powiadomienie głosowe o gościu dołączającym do transmisji"),
+                i("f6dc9146", "POWTÓRKA TRANSMISJI"),
                 i("d30c74fe", "Głośność"),
                 i("f2d4e6f2", "Obejrzyj ponownie"),
                 i("e9f1af3a", "Dowiedz się więcej"),
@@ -8912,10 +8900,10 @@
                 i("ecda5f9e", "Wprowadza w błąd"),
                 i("a423473c", "Informacja wymagana prawnie"),
                 i("b3296688", "Ograniczona widoczność"),
-                i("ccd32094", "Teraz"),
-                i("abfcce0d", function (e) {
-                    return e.amountOfTime + " temu";
-                }),
+                i("ccd32094", "Teraz");
+            i("abfcce0d", function (e) {
+                return e.amountOfTime + " temu";
+            }),
                 i("ae408b76", "Podano dalej"),
                 i("j355f008", "Przypięty wpis"),
                 i("habf9678", "Przypięty przez autora"),
@@ -12098,24 +12086,6 @@
                             },
                         },
                         {
-                            key: "ca87939f",
-                            get: function () {
-                                return ["Tworząc subskrypcję, akceptujesz nasze ", ". Subskrypcje są odnawiane automatycznie do momentu anulowania, tak jak opisano w ", ". ", ". Aby uniknąć dodatkowych opłat, anuluj subskrypcję w dowolnym momencie co najmniej 24 godziny przed odnowieniem. Podwyższenie poziomu do poziomu o wyższej cenie spowoduje, że kredyt na pozostałą część poprzedniej subskrypcji trafi na Twoje konto i będzie automatycznie używany na potrzeby przyszłych płatności. Twoja nowa subskrypcja zacznie działać natychmiast. Do utworzenia subskrypcji wymagany jest zweryfikowany numer telefonu."];
-                            },
-                        },
-                        {
-                            key: "ed2a6ba9",
-                            get: function () {
-                                return ["Tworząc subskrypcję, akceptujesz nasze ", ". Subskrypcje są odnawiane automatycznie do momentu anulowania, tak jak opisano w ", ". ", ". Aby uniknąć dodatkowych opłat, anuluj subskrypcję w dowolnym momencie co najmniej 24 godziny przed odnowieniem. Obniżenie poziomu spowoduje, że Twoja bieżąca subskrypcja i skojarzone z nią funkcje zostaną natychmiast przełączone do nowego poziomu subskrypcji. Nie otrzymasz zwrotu kosztów żadnej części poprzedniej subskrypcji, chyba że wymagają tego przepisy prawa. Natychmiast zostanie Ci też naliczona opłata zgodna z ceną nowego poziomu. Do utworzenia subskrypcji wymagany jest zweryfikowany numer telefonu."];
-                            },
-                        },
-                        {
-                            key: "db638a21",
-                            get: function () {
-                                return ["Tworząc subskrypcję, akceptujesz nasze ", ". Subskrypcje są odnawiane automatycznie do momentu anulowania, tak jak opisano w ", ". ", ". Aby uniknąć dodatkowych opłat, anuluj subskrypcję w dowolnym momencie co najmniej 24 godziny przed odnowieniem. Po zmianie planu Twoja nowa subskrypcja zacznie działać natychmiast. Kredyt na pozostałą część poprzedniej subskrypcji trafi na Twoje konto i będzie automatycznie używany na potrzeby przyszłych płatności. Do utworzenia subskrypcji wymagany jest zweryfikowany numer telefonu."];
-                            },
-                        },
-                        {
                             key: "b2138d0f",
                             get: function () {
                                 return ["Subskrybując, akceptujesz nasze ", ". Subskrypcje są odnawiane automatycznie do momentu anulowania, tak jak opisano w ", ". ", ". Aby uniknąć dodatkowych opłat, anuluj subskrypcję w dowolnym momencie co najmniej 24 godziny przed odnowieniem. Podniesienie poziomu spowoduje, że Twoja bieżąca subskrypcja i skojarzone z nią funkcje zostaną natychmiast przełączone do nowego poziomu subskrypcji. Natychmiast zostanie Ci naliczona opłata równa cenie nowego poziomu, ale pozostała proporcjonalna część z Twojego aktualnego cyklu rozliczeniowego zostanie wykorzystana na potrzeby opłacania dzisiejszej łącznej opłaty. Nie otrzymasz zwrotu kosztów żadnej części poprzedniej subskrypcji, chyba że jest to wymagane przez prawo."];
@@ -13250,4 +13220,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.94e5379a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.eaa23f7a.js.map

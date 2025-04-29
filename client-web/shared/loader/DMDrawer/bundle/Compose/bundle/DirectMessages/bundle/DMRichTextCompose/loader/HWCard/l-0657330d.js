@@ -138,7 +138,7 @@
                 L = n().eb722de2,
                 z = n().ib5110be,
                 B = y.default.create((e) => ({
-                    root: { backgroundColor: e.colors.cellBackground, borderColor: e.colors.borderColor, borderRadius: e.borderRadii.large, borderStyle: "solid", borderWidth: e.borderWidths.small, overflow: "hidden", width: "100%" },
+                    root: { backgroundColor: e.colors.cellBackground, borderColor: e.colors.borderColor, borderRadius: e.borderRadii.large, borderStyle: "solid", borderWidth: e.borderWidths.small, overflow: "hidden", width: "100%", cursor: "pointer" },
                     rootImage: { width: "100%" },
                     labelBtnPadding: { paddingStart: e.spaces.space4 },
                     footer: { padding: e.spaces.space12, marginTop: e.spaces.space8 },
@@ -164,7 +164,7 @@
                     blurIcon: { color: e.colors.whiteOnColor, width: e.spaces.space24, height: e.spaces.space24 },
                     blurContainer: { height: "100%", maxHeight: 50, aspectRatio: 1.5, borderRadius: e.borderRadii.small, overflow: "hidden" },
                     blur: { filter: "blur(3px)" },
-                    quoteTweetContainer: { flex: 1, marginStart: `calc(${y.default.theme.spaces.space12} * -1)`, marginTop: `calc(${y.default.theme.spaces.space12} * -1)`, marginBottom: `calc(${y.default.theme.spaces.space4} * -1)` },
+                    quoteTweetContainer: { flex: 1, marginStart: `calc(${y.default.theme.spaces.space12} * -1)`, marginTop: `calc(${y.default.theme.spaces.space12} * -1)`, marginBottom: `calc(${y.default.theme.spaces.space4} * -1)`, pointerEvents: "none" },
                 })),
                 O = ({ continueInGrokEnabled: e, conversation: t, destination: a, mediaVisibilityResults: l, metadata: n, openGrok: y }) => {
                     const [w, E] = r.useState(!!l),
@@ -414,4 +414,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompose~loader.HWCard~l-0657330d.8d4065ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompose~loader.HWCard~l-0657330d.2aed6dca.js.map

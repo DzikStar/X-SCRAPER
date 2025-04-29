@@ -7004,10 +7004,6 @@
                 t("db5c77e0", "Detta är din aktiva prenumeration"),
                 t("h77ef73e", "Växla till en månadsplan"),
                 t("d723d44a", "Växla till en årsplan"),
-                t("i253b5c6", "Uppgradera och betala"),
-                t("d2beeaaa", "Nedgradera och betala"),
-                t("acf719d4", "Växla och betala"),
-                t("ieafe1c6", "Bekräfta prenumerationsändringen"),
                 t("gf6b66b8", "Bekräfta prenumerationsändringen som träder i kraft i dag"),
                 t("e83daf87", function (e) {
                     return "Bekräfta prenumerationsändringen som träder i kraft " + e.date;
@@ -7025,15 +7021,6 @@
                 t("d7efb6ba", "Du växlar från månads- till årsfakturering. Du debiteras för årsplanen i dag och det återstående proportionella månadssaldot krediteras mot årsavgiften. Växlingen sker direkt och faktureringen sker nu varje år."),
                 t("a5f2cf70", "Du byter från års- till månadsfakturering. Det kvarvarande årssaldot används till månadsbetalningen tills det tar slut. Övergången sker direkt, och faktureringen sker nu varje månad."),
                 t("ef1c0208", "Bekräfta planändringen"),
-                t("c20806d5", "användarvillkor för köpare"),
-                t("i10be4c9", "villkoren"),
-                t("cdda96d6", "Säg upp prenumerationen"),
-                t("cc67158f", "användarvillkor för köpare"),
-                t("eb420831", "villkoren"),
-                t("c7d49608", "Säg upp prenumerationen"),
-                t("ab176bd1", "användarvillkor för köpare"),
-                t("cea928a5", "villkoren"),
-                t("e37c69e0", "Säg upp prenumerationen"),
                 t("ia08113f", "användarvillkor för köpare"),
                 t("d2962b73", "villkoren"),
                 t("b421795a", "Säg upp prenumerationen"),
@@ -7849,7 +7836,20 @@
                 t("b33d1518", "Synka jobb från en integration som stöds eller ett anpassat XML-flöde"),
                 t("dd2db402", "Steg 1: Samla in den nödvändiga informationen"),
                 t("edb098c2", "Steg 2: Kontakta vårt supportteam"),
-                t("c4474460", "Steg 2: Mejla vårt supportteam");
+                t("c4474460", "Steg 2: Mejla vårt supportteam"),
+                t("a08da0fa", "Vad händer härnäst?"),
+                t("c127374e", "Skicka ett meddelande"),
+                t("b2cb2a0c", "Användarnamn på kontot för din verifierade organisation"),
+                t("b8e64002", "Namn på ditt system för att hålla reda på sökande"),
+                t("acb99db6", "Webbadress till jobbannonsplatsen där dina jobb listas"),
+                t("a64a5b7a", "Skicka den efterfrågade informationen till vårt supportteam för att sätta igång integrationsprocessen."),
+                t("e3dffb4e", "Kopiera e-postadressen till vår support nedan och skicka den efterfrågade informationen till vårt supportteam för att sätta igång integrationsprocessen."),
+                t("b4fef99e", "Efter att vårt supportteam tar emot din begäran, kommer vi att granska din information och hjälpa dig med att konfigurera din integration."),
+                t("h37f2d96", "Observera att inte alla system för att hålla reda på sökande stöds nu."),
+                t("ce102a20", "Omdirigerar till Stripe"),
+                t("ddfd6718", "Betalningen misslyckades"),
+                t("i90ea7d2", "Uppdatera dina faktureringsuppgifter snarast för att behålla dina förmåner."),
+                t("a62359e6", "Inställningar för Verifierade organisationer");
             function i(e, a) {
                 for (var n = 0; n < a.length; n++) {
                     var t = a[n];
@@ -7888,20 +7888,7 @@
                     d(e, a)
                 );
             }
-            t("a08da0fa", "Vad händer härnäst?"),
-                t("c127374e", "Skicka ett meddelande"),
-                t("b2cb2a0c", "Användarnamn på kontot för din verifierade organisation"),
-                t("b8e64002", "Namn på ditt system för att hålla reda på sökande"),
-                t("acb99db6", "Webbadress till jobbannonsplatsen där dina jobb listas"),
-                t("a64a5b7a", "Skicka den efterfrågade informationen till vårt supportteam för att sätta igång integrationsprocessen."),
-                t("e3dffb4e", "Kopiera e-postadressen till vår support nedan och skicka den efterfrågade informationen till vårt supportteam för att sätta igång integrationsprocessen."),
-                t("b4fef99e", "Efter att vårt supportteam tar emot din begäran, kommer vi att granska din information och hjälpa dig med att konfigurera din integration."),
-                t("h37f2d96", "Observera att inte alla system för att hålla reda på sökande stöds nu."),
-                t("ce102a20", "Omdirigerar till Stripe"),
-                t("ddfd6718", "Betalningen misslyckades"),
-                t("i90ea7d2", "Uppdatera dina faktureringsuppgifter snarast för att behålla dina förmåner."),
-                t("a62359e6", "Inställningar för Verifierade organisationer"),
-                t("ge221b7c", "Uppgradera prenumerationen på Verifierade organisationer för att få tillgång till anknutna konton och fler annonskrediter."),
+            t("ge221b7c", "Uppgradera prenumerationen på Verifierade organisationer för att få tillgång till anknutna konton och fler annonskrediter."),
                 t("i4dccc18", "Fakturering"),
                 t("ec3cd6e4", "Hantera din betalningsmetod, uppdatera faktureringsinformationen och granska dina fakturor."),
                 t("dac61c3c", "Kontoinställningar"),
@@ -8009,6 +7996,7 @@
                 t("j99e2f4d", function (e) {
                     return e.price + "/" + e.interval;
                 }),
+                t("ieafe1c6", "Bekräfta prenumerationsändringen"),
                 t("bb21a170", "Ändra prenumeration"),
                 t("b0dcc4dc", "Ditt konto är redan på väg att ändra nivå."),
                 t("f3aef4ca", "Ingen aktiv prenumeration hittades"),
@@ -8891,8 +8879,8 @@
                 t("c057680c", "Vi kan inte spela upp videon i den här webbläsaren. Testa en annan."),
                 t("i5dfae6e", "Denna video är inte tillgänglig på din plats."),
                 t("c2388276", "Denna video har raderats."),
-                t("d2c96140", "Gästljudindikator");
-            t("f6dc9146", "REPRIS"),
+                t("d2c96140", "Gästljudindikator"),
+                t("f6dc9146", "REPRIS"),
                 t("d30c74fe", "Volym"),
                 t("f2d4e6f2", "Titta igen"),
                 t("e9f1af3a", "Ta reda på mer"),
@@ -8903,10 +8891,10 @@
                 t("ecda5f9e", "Vilseledande"),
                 t("a423473c", "Obligatoriskt juridiskt meddelande"),
                 t("b3296688", "Begränsad synlighet"),
-                t("ccd32094", "Nu"),
-                t("abfcce0d", function (e) {
-                    return e.amountOfTime + " sedan";
-                }),
+                t("ccd32094", "Nu");
+            t("abfcce0d", function (e) {
+                return e.amountOfTime + " sedan";
+            }),
                 t("ae408b76", "Du återpublicerade"),
                 t("j355f008", "Fastnålat inlägg"),
                 t("habf9678", "Fastnålat av upphovsmannen"),
@@ -12089,24 +12077,6 @@
                             },
                         },
                         {
-                            key: "ca87939f",
-                            get: function () {
-                                return ["Genom att prenumerera samtycker du till våra ", ". Prenumerationer förlängs automatiskt tills de sägs upp, enligt beskrivningen i ", ". ", " när du vill. Säg upp prenumerationen minst 24 timmar innan den förlängs för att slippa ytterligare debiteringar. När du uppgraderar till en nivå med högre pris får du kredit för återstoden av den tidigare prenumerationen på ditt konto, och den används automatiskt för kommande betalningar. Den nya prenumerationen inleds direkt. Ett verifierat telefonnummer krävs för att få prenumerera. "];
-                            },
-                        },
-                        {
-                            key: "ed2a6ba9",
-                            get: function () {
-                                return ["Genom att prenumerera samtycker du till våra ", ". Prenumerationer förlängs automatiskt tills de sägs upp, enligt beskrivningen i ", ". ", " när du vill. Säg upp prenumerationen minst 24 timmar innan den förlängs för att slippa ytterligare debiteringar. Vid nedgradering övergår din nuvarande prenumeration och motsvarande funktioner till den nya prenumerationsnivå direkt. Du får inga pengar tillbaka för någon del av din tidigare prenumeration, såvida lagen inte kräver det. Du debiteras även för den nya nivåns pris omedelbart. Ett verifierat telefonnummer krävs för att få prenumerera. "];
-                            },
-                        },
-                        {
-                            key: "db638a21",
-                            get: function () {
-                                return ["Genom att prenumerera samtycker du till våra ", ". Prenumerationer förlängs automatiskt tills de sägs upp, enligt beskrivningen i ", ". ", " när du vill. Säg upp prenumerationen minst 24 timmar innan den förlängs för att slippa ytterligare debiteringar. När du byter plan inleds den nya prenumerationen direkt. Kredit för återstoden av den tidigare prenumerationen sätts in på ditt konto och används automatiskt för kommande betalningar. Ett verifierat telefonnummer krävs för att få prenumerera. "];
-                            },
-                        },
-                        {
                             key: "b2138d0f",
                             get: function () {
                                 return ["Genom att prenumerera samtycker du till våra ", ". Prenumerationer förlängs automatiskt tills de sägs upp, enligt beskrivningen i ", ". ", " när du vill. När du uppgraderar växlas den aktuella prenumerationen och motsvarande funktioner till den nya prenumerationsnivån direkt. Du debiteras priset för den nya nivån omedelbart, men det proportionellt avräknade saldot från den aktuella faktureringscykeln krediteras mot dagens totala avgift. Du får inga pengar tillbaka för någon del av den tidigare prenumerationen såvida lagen inte kräver det."];
@@ -13237,4 +13207,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sv.240e610a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sv.ac9c57aa.js.map

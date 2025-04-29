@@ -7008,10 +7008,6 @@
                 o("db5c77e0", "Si tratta del tuo abbonamento attivo"),
                 o("h77ef73e", "Passa al piano mensile"),
                 o("d723d44a", "Passa al piano annuale"),
-                o("i253b5c6", "Esegui l'upgrade e paga"),
-                o("d2beeaaa", "Esegui il downgrade e paga"),
-                o("acf719d4", "Esegui il passaggio e paga"),
-                o("ieafe1c6", "Conferma la modifica di abbonamento"),
                 o("gf6b66b8", "Conferma la modifica dell'abbonamento in vigore da oggi"),
                 o("e83daf87", function (i) {
                     return "Conferma la modifica dell'abbonamento in vigore dal giorno " + i.date;
@@ -7029,15 +7025,6 @@
                 o("d7efb6ba", "Stai passando dalla fatturazione mensile a quella annuale. Il piano annuale ti verrà addebitato oggi e il saldo mensile residuo sarà calcolato in modo proporzionale per poi essere sottratto dal totale dell'addebito. Il passaggio avviene immediatamente, pertanto adesso la fatturazione sarà annuale."),
                 o("a5f2cf70", "Stai passando dalla fatturazione annuale a quella mensile. Il credito annuale residuo verrà utilizzato per i pagamenti mensili fino al suo esaurimento. Il passaggio avviene immediatamente, pertanto adesso la fatturazione sarà mensile."),
                 o("ef1c0208", "Conferma la modifica del piano"),
-                o("c20806d5", "Termini di servizio per gli acquirenti"),
-                o("i10be4c9", "termini"),
-                o("cdda96d6", "Puoi disdire in qualsiasi istante"),
-                o("cc67158f", "Termini di servizio per gli acquirenti"),
-                o("eb420831", "termini"),
-                o("c7d49608", "Puoi disdire in qualsiasi istante"),
-                o("ab176bd1", "Termini di servizio per gli acquirenti"),
-                o("cea928a5", "termini"),
-                o("e37c69e0", "Puoi disdire in qualsiasi istante"),
                 o("ia08113f", "Termini di servizio per gli acquirenti"),
                 o("d2962b73", "termini"),
                 o("b421795a", "Puoi disdire in qualsiasi istante"),
@@ -7853,7 +7840,20 @@
                 o("b33d1518", "Sincronizza le offerte tramite un'integrazione supportata o un feed XML personalizzato"),
                 o("dd2db402", "Step 1: raccogli le informazioni necessarie"),
                 o("edb098c2", "Step 2: contatta il team di assistenza"),
-                o("c4474460", "Step 2: invia un'email al nostro team di assistenza");
+                o("c4474460", "Step 2: invia un'email al nostro team di assistenza"),
+                o("a08da0fa", "E poi?"),
+                o("c127374e", "Inviaci un messaggio"),
+                o("b2cb2a0c", "Il nome utente per l'account della tua organizzazione verificata"),
+                o("b8e64002", "Il nome del sistema di monitoraggio dei candidati che usi"),
+                o("acb99db6", "L'URL del sito di candidatura dove sono elencate le tue offerte di lavoro"),
+                o("a64a5b7a", "Per avviare il processo di integrazione, invia le informazioni necessarie al nostro team di assistenza."),
+                o("e3dffb4e", "Per avviare il processo di integrazione, copia l'indirizzo email di assistenza che trovi qui sotto e invia le informazioni necessarie al nostro team di assistenza."),
+                o("b4fef99e", "Non appena il nostro team di assistenza riceverà la richiesta, esamineremo le tue informazioni e ti aiuteremo a configurare l'integrazione."),
+                o("h37f2d96", "Nota: attualmente non tutti i sistemi di monitoraggio dei candidati sono supportati."),
+                o("ce102a20", "Reindirizzamento a Stripe in corso"),
+                o("ddfd6718", "Pagamento non riuscito"),
+                o("i90ea7d2", "Aggiorna al più presto i dettagli di fatturazione per continuare a godere dei benefici."),
+                o("a62359e6", "Impostazioni di Organizzazioni verificate");
             function r(i, e) {
                 for (var a = 0; a < e.length; a++) {
                     var o = e[a];
@@ -7892,20 +7892,7 @@
                     c(i, e)
                 );
             }
-            o("a08da0fa", "E poi?"),
-                o("c127374e", "Inviaci un messaggio"),
-                o("b2cb2a0c", "Il nome utente per l'account della tua organizzazione verificata"),
-                o("b8e64002", "Il nome del sistema di monitoraggio dei candidati che usi"),
-                o("acb99db6", "L'URL del sito di candidatura dove sono elencate le tue offerte di lavoro"),
-                o("a64a5b7a", "Per avviare il processo di integrazione, invia le informazioni necessarie al nostro team di assistenza."),
-                o("e3dffb4e", "Per avviare il processo di integrazione, copia l'indirizzo email di assistenza che trovi qui sotto e invia le informazioni necessarie al nostro team di assistenza."),
-                o("b4fef99e", "Non appena il nostro team di assistenza riceverà la richiesta, esamineremo le tue informazioni e ti aiuteremo a configurare l'integrazione."),
-                o("h37f2d96", "Nota: attualmente non tutti i sistemi di monitoraggio dei candidati sono supportati."),
-                o("ce102a20", "Reindirizzamento a Stripe in corso"),
-                o("ddfd6718", "Pagamento non riuscito"),
-                o("i90ea7d2", "Aggiorna al più presto i dettagli di fatturazione per continuare a godere dei benefici."),
-                o("a62359e6", "Impostazioni di Organizzazioni verificate"),
-                o("ge221b7c", "Per ottenere l'accesso agli affiliati e altri crediti pubblicitari, esegui l'upgrade dell'abbonamento a Organizzazioni verificate."),
+            o("ge221b7c", "Per ottenere l'accesso agli affiliati e altri crediti pubblicitari, esegui l'upgrade dell'abbonamento a Organizzazioni verificate."),
                 o("i4dccc18", "Fatturazione"),
                 o("ec3cd6e4", "Gestisci il metodo di pagamento, aggiorna i dettagli di pagamento e controlla le fatture."),
                 o("dac61c3c", "Impostazioni account"),
@@ -8013,6 +8000,7 @@
                 o("j99e2f4d", function (i) {
                     return i.price + " ogni " + i.interval;
                 }),
+                o("ieafe1c6", "Conferma la modifica di abbonamento"),
                 o("bb21a170", "Modifica abbonamento"),
                 o("b0dcc4dc", "Il tuo account è in attesa di modifica del livello."),
                 o("f3aef4ca", "Non sono presenti abbonamenti attivi"),
@@ -8895,8 +8883,8 @@
                 o("c057680c", "Il video non può essere riprodotto su questo browser. Prova da un altro browser."),
                 o("i5dfae6e", "Questo video non è disponibile nella tua zona."),
                 o("c2388276", "Questo video è stato eliminato."),
-                o("d2c96140", "Indicatore per l'audio dell'ospite");
-            o("f6dc9146", "REPLAY"),
+                o("d2c96140", "Indicatore per l'audio dell'ospite"),
+                o("f6dc9146", "REPLAY"),
                 o("d30c74fe", "Volume"),
                 o("f2d4e6f2", "Guarda di nuovo"),
                 o("e9f1af3a", "Approfondisci"),
@@ -8907,10 +8895,10 @@
                 o("ecda5f9e", "Fuorviante"),
                 o("a423473c", "Avviso obbligatorio per legge"),
                 o("b3296688", "Visibilità limitata"),
-                o("ccd32094", "Ora"),
-                o("abfcce0d", function (i) {
-                    return i.amountOfTime + " fa";
-                }),
+                o("ccd32094", "Ora");
+            o("abfcce0d", function (i) {
+                return i.amountOfTime + " fa";
+            }),
                 o("ae408b76", "Repost da parte tua"),
                 o("j355f008", "Post fissato"),
                 o("habf9678", "Fissato dall'autore"),
@@ -12093,24 +12081,6 @@
                             },
                         },
                         {
-                            key: "ca87939f",
-                            get: function () {
-                                return ["Abbonandoti accetti i ", ". Come indicato nei ", ", gli abbonamenti si rinnovano in automatico fino alla disdetta. ", ". Per evitare costi aggiuntivi, disdici entro 24 ore dal rinnovo. Quando esegui l'upgrade a un piano con un prezzo più alto, il credito per il resto dell'abbonamento precedente sarà aggiunto al tuo account e applicato automaticamente ai pagamenti futuri. Il tuo nuovo abbonamento avrà validità immediata. Per abbonarti devi disporre di un numero di telefono convalidato."];
-                            },
-                        },
-                        {
-                            key: "ed2a6ba9",
-                            get: function () {
-                                return ["Abbonandoti accetti i ", ". Come indicato nei ", ", gli abbonamenti si rinnovano in automatico fino alla disdetta. ", ". Per evitare costi aggiuntivi, disdici entro 24 ore dal rinnovo. Quando esegui il downgrade, passerai subito al nuovo piano di abbonamento e alle relative funzioni. Non riceverai rimborsi per nessuna parte dell'abbonamento precedente (salvo obblighi di legge). Ti verrà anche addebitato istantaneamente il prezzo del nuovo piano. Per abbonarti devi disporre di un numero di telefono convalidato."];
-                            },
-                        },
-                        {
-                            key: "db638a21",
-                            get: function () {
-                                return ["Abbonandoti accetti i ", ". Come indicato nei ", ", gli abbonamenti si rinnovano in automatico fino alla disdetta. ", ". Per evitare costi aggiuntivi, disdici entro 24 ore dal rinnovo. Quando passi a un altro piano, il nuovo piano avrà validità immediata. Il credito per il resto dell'abbonamento precedente sarà aggiunto al tuo account e applicato automaticamente ai pagamenti futuri. Per abbonarti devi disporre di un numero di telefono convalidato."];
-                            },
-                        },
-                        {
                             key: "b2138d0f",
                             get: function () {
                                 return ["Abbonandoti accetti i ", ". Come indicato nei ", ", gli abbonamenti si rinnovano in automatico fino alla disdetta. ", ". Per evitare costi aggiuntivi, disdici entro 24 ore dal rinnovo. Quando esegui l'upgrade, passerai subito al nuovo piano di abbonamento e alle relative funzioni. Il prezzo del nuovo piano ti verrà addebitato subito ma qualsiasi saldo calcolato in modo proporzionale dal ciclo di fatturazione attuale sarà sottratto dal totale dell'addebito odierno. Non riceverai rimborsi per nessuna parte dell'abbonamento precedente (salvo obblighi di legge)."];
@@ -13241,4 +13211,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/it.7077bbba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/it.78bd8b5a.js.map

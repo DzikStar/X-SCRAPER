@@ -4268,7 +4268,7 @@
                 s("fa0f1262", "Quebra"),
                 s("c2cac618", "Atualmente, o Grok permite dados da La Liga, Premier League, Bundesliga, Série A e Ligue 1."),
                 s("acae223d", function (e) {
-                    return 'Results for "' + e.prompt + '"';
+                    return 'Resultados para "' + e.prompt + '"';
                 }),
                 s("bed99fe2", "Ver menos"),
                 s("f7b57ac0", "Estatísticas"),
@@ -4797,12 +4797,12 @@
                 s("e7479ce4", "Tempo médio de exibição"),
                 s("g1dfa7d0", "Média"),
                 s("h7d28188", "Voltar ao conteúdo"),
-                s("if2704e4", "Back to Live Overview"),
+                s("if2704e4", "Voltar à visão geral ao vivo"),
                 s("ea928ae4", "Voltar aos espaços"),
                 s("e8c07c22", "transmissão"),
-                s("a4ce6e68", "Broadcast Metrics"),
-                s("b2214c74", "Total number of views for this broadcast"),
-                s("d4fcf83a", "Total time viewers spent watching this broadcast"),
+                s("a4ce6e68", "Métricas de transmissão"),
+                s("b2214c74", "Número total de espectadores para esta transmissão"),
+                s("d4fcf83a", "Tempo total que os espectadores passaram assistindo a esta transmissão"),
                 s("a89b0322", "Cancelado"),
                 s("j3cb12ea", "Ouvintes simultâneos"),
                 s("b93931ee", "Número de vezes que seu conteúdo foi postado."),
@@ -4838,19 +4838,19 @@
                 s("efa0f858", "O número de seguidores ganhos e perdidos ao longo do tempo. Isso não reflete necessariamente sua contagem de seguidores."),
                 s("g2b06cc6", "Os dados de sexo são inferidos"),
                 s("b66b3baa", "horas"),
-                s("cf8a0772", "Impression to Views"),
-                s("g13d8010", "Last 48 Hours"),
-                s("d5627596", "Last Hour"),
+                s("cf8a0772", "Impressões para visualizações"),
+                s("g13d8010", "Últimas 48 horas"),
+                s("d5627596", "Última hora"),
                 s("baf120a6", "Menos engajado"),
                 s("f2382014", "AO VIVO"),
-                s("c4a7a6aa", "Live data"),
-                s("a992032a", "Livestream Analytics"),
+                s("c4a7a6aa", "Dados ao vivo"),
+                s("a992032a", "Estatísticas de transmissão ao vivo"),
                 s("ie45edda", "Visão geral da transmissão ao vivo"),
                 s("e30fc268", "Assistindo Ao vivo"),
                 s("bd37f68e", "Atividade de mídia"),
                 s("fe074210", "min"),
-                s("jd03a1b8", "Minutes Watched"),
-                s("a20e91e8", "minutes watched"),
+                s("jd03a1b8", "Minutos assistidos"),
+                s("a20e91e8", "minutos assistidos"),
                 s("ic2bebee", "Monetizado"),
                 s("a1d642c8", "Mais engajado"),
                 s("ifc4c1f8", "O número de novos seguidores conquistados com este conteúdo."),
@@ -4860,12 +4860,12 @@
                 s("g2ba40f6", "Não há espaços disponíveis para o filtro selecionado"),
                 s("j44061a0", "Indisponível"),
                 s("c4a93912", "N/A"),
-                s("a6b78788", "No viewer data available"),
+                s("a6b78788", "Nenhum dado de espectador disponível"),
                 s("b2438638", "do total"),
                 s("ic0399e0", "Visualizações orgânicas"),
                 s("ja5c444a", "Período de pagamento"),
                 s("f04e025e", "Máximo de ouvintes simultâneos"),
-                s("d6d10662", "Peak Viewers: "),
+                s("d6d10662", "Espectadores de pico: "),
                 s("d147bea2", "Volte mais tarde"),
                 s("f0336d68", "Estatísticas do post"),
                 s("g85fbd2e", "ID do post"),
@@ -4873,11 +4873,11 @@
                 s("hf4f9bfe", "Postar link"),
                 s("bf5ebf5c", "Posts e respostas"),
                 s("b211652e", "Posts ao longo do tempo"),
-                s("f2efec0a", "Pre-Published"),
+                s("f2efec0a", "Pré-publicado"),
                 s("i61e0302", "Anterior"),
                 s("e08a706a", "Visualizações promovidas"),
                 s("cbc99192", "Data de publicação"),
-                s("a83c2a9a", "Realtime"),
+                s("a83c2a9a", "Tempo real"),
                 s("e9d72896", "Gravado"),
                 s("gede4932", "Reproduzir novamente"),
                 s("h0de359c", "O número de vezes que este conteúdo foi repostado."),
@@ -4888,20 +4888,20 @@
                 s("fbc79a40", "Visão geral dos espaços"),
                 s("d077112a", "Estatísticas de espaço"),
                 s("cf3709da", "Status"),
-                s("e797dc32", "Stream time: "),
+                s("e797dc32", "Horário de transmissão: "),
                 s("b649d8cc", "Apenas inscritos"),
                 s("j9282130", "Miniatura de transmissão"),
-                s("g629b8b0", "Timed Out"),
-                s("eb87323c", "This shows analytics data for the selected time period since the livestream happened."),
-                s("i6a75722", "Time Range"),
+                s("g629b8b0", "Tempo esgotado"),
+                s("eb87323c", "Isso mostra os dados de estatísticas para o período selecionado desde que aconteceu a transmissão ao vivo."),
+                s("i6a75722", "Intervalo de tempo"),
                 s("c602f5b8", "Total"),
                 s("b35e68ae", "Total de participantes"),
                 s("h78ee79a", "Total de replays assistidos"),
                 s("e3efaed0", "Tipo"),
                 s("c37993e2", "Deixar de seguir"),
-                s("b1ed35d0", "Unique Viewers"),
+                s("b1ed35d0", "Espectadores únicos"),
                 s("bfad9306", "Desconhecido"),
-                s("b5a58f36", "Untitled Broadcast"),
+                s("b5a58f36", "Transmissão sem título"),
                 s("i70f5278", "Carregado em:"),
                 s("a98b58b6", "Seguidores verificados"),
                 s("a5de67ca", "Número de seguidores que verificaram sua conta."),
@@ -7004,10 +7004,6 @@
                 s("db5c77e0", "Esta é sua assinatura ativa"),
                 s("h77ef73e", "Trocar para o plano mensal"),
                 s("d723d44a", "Trocar para o plano anual"),
-                s("i253b5c6", "Fazer upgrade e pagar"),
-                s("d2beeaaa", "Fazer downgrade e pagar"),
-                s("acf719d4", "Trocar e pagar"),
-                s("ieafe1c6", "Confirme sua mudança de assinatura"),
                 s("gf6b66b8", "Confirme a alteração da sua assinatura, em vigor a partir de hoje"),
                 s("e83daf87", function (e) {
                     return "Confirme a alteração da sua assinatura, em vigor a partir de " + e.date;
@@ -7025,15 +7021,6 @@
                 s("d7efb6ba", "Você está mudando de cobrança mensal para anual. O plano anual será cobrado hoje, com o saldo proporcional restante do plano mensal creditado no valor total. A mudança acontece imediatamente e sua cobrança agora será anual."),
                 s("a5f2cf70", "Você está mudando de cobrança anual para mensal. Seu crédito anual restante cobrirá seus pagamentos mensais até que acabe. A mudança acontece imediatamente, e sua cobrança agora será mensal."),
                 s("ef1c0208", "Confirmar alteração de plano"),
-                s("c20806d5", "Termos de Serviço do Comprador"),
-                s("i10be4c9", "Termos"),
-                s("cdda96d6", "Cancele a qualquer momento"),
-                s("cc67158f", "Termos de Serviço do Comprador"),
-                s("eb420831", "Termos"),
-                s("c7d49608", "Cancele a qualquer momento"),
-                s("ab176bd1", "Termos de Serviço do Comprador"),
-                s("cea928a5", "Termos"),
-                s("e37c69e0", "Cancele a qualquer momento"),
                 s("ia08113f", "Termos de serviço do comprador"),
                 s("d2962b73", "Termos"),
                 s("b421795a", "Cancele a qualquer momento"),
@@ -7849,7 +7836,20 @@
                 s("b33d1518", "Sincronize os trabalhos de uma integração compatível ou um Feed XML personalizado"),
                 s("dd2db402", "Etapa 1: Reúna as informações solicitadas"),
                 s("edb098c2", "Etapa 2: Contate nossa equipe de suporte"),
-                s("c4474460", "Etapa 2: Envie um e-mail para a nossa equipe de suporte");
+                s("c4474460", "Etapa 2: Envie um e-mail para a nossa equipe de suporte"),
+                s("a08da0fa", "O que acontecerá em seguida?"),
+                s("c127374e", "Envie-nos uma mensagem"),
+                s("b2cb2a0c", "Nome de Usuário da sua conta de Organização Verificada"),
+                s("b8e64002", "Nome do seu sistema de rastreamento de candidatos"),
+                s("acb99db6", "URL do site de carreiras onde suas vagas estão listadas"),
+                s("a64a5b7a", "Envie as informações necessárias para a nossa equipe de suporte para iniciar o processo de integração."),
+                s("e3dffb4e", "Copie o nosso endereço de e-mail de suporte abaixo e envie as informações solicitadas à nossa equipe de suporte para iniciar o processo de integração."),
+                s("b4fef99e", "Depois que a nossa equipe de suporte receber sua solicitação, analisaremos suas informações e ajudaremos a configurar a sua integração."),
+                s("h37f2d96", "Observe que nem todos os sistemas de rastreamento de candidatos são compatíveis."),
+                s("ce102a20", "Redirecionar para o Stripe"),
+                s("ddfd6718", "O pagamento falhou"),
+                s("i90ea7d2", "Atualize o quanto antes seus dados de cobrança para manter seus benefícios."),
+                s("a62359e6", "Configurações de Organizações Verificadas");
             function i(e, a) {
                 for (var o = 0; o < a.length; o++) {
                     var s = a[o];
@@ -7888,20 +7888,7 @@
                     n(e, a)
                 );
             }
-            s("a08da0fa", "O que acontecerá em seguida?"),
-                s("c127374e", "Envie-nos uma mensagem"),
-                s("b2cb2a0c", "Nome de Usuário da sua conta de Organização Verificada"),
-                s("b8e64002", "Nome do seu sistema de rastreamento de candidatos"),
-                s("acb99db6", "URL do site de carreiras onde suas vagas estão listadas"),
-                s("a64a5b7a", "Envie as informações necessárias para a nossa equipe de suporte para iniciar o processo de integração."),
-                s("e3dffb4e", "Copie o nosso endereço de e-mail de suporte abaixo e envie as informações solicitadas à nossa equipe de suporte para iniciar o processo de integração."),
-                s("b4fef99e", "Depois que a nossa equipe de suporte receber sua solicitação, analisaremos suas informações e ajudaremos a configurar a sua integração."),
-                s("h37f2d96", "Observe que nem todos os sistemas de rastreamento de candidatos são compatíveis."),
-                s("ce102a20", "Redirecionar para o Stripe"),
-                s("ddfd6718", "O pagamento falhou"),
-                s("i90ea7d2", "Atualize o quanto antes seus dados de cobrança para manter seus benefícios."),
-                s("a62359e6", "Configurações de Organizações Verificadas"),
-                s("ge221b7c", "Faça um upgrade na assinatura da Organização Verificada para obter acesso a afiliadas e mais créditos de publicidade."),
+            s("ge221b7c", "Faça um upgrade na assinatura da Organização Verificada para obter acesso a afiliadas e mais créditos de publicidade."),
                 s("i4dccc18", "Cobrança"),
                 s("ec3cd6e4", "Gerencie seu método de pagamento, atualize informações de cobrança e revise suas faturas."),
                 s("dac61c3c", "Configurações da conta"),
@@ -8009,6 +7996,7 @@
                 s("j99e2f4d", function (e) {
                     return e.price + "/" + e.interval;
                 }),
+                s("ieafe1c6", "Confirme sua mudança de assinatura"),
                 s("bb21a170", "Alterar assinatura"),
                 s("b0dcc4dc", "Já há uma troca de nível pendente na sua conta."),
                 s("f3aef4ca", "Nenhuma assinatura ativa encontrada"),
@@ -8891,8 +8879,8 @@
                 s("c057680c", "Não é possível reproduzir o vídeo neste navegador da Web. Tente usar outro."),
                 s("i5dfae6e", "Este vídeo não está disponível na sua região."),
                 s("c2388276", "Este vídeo foi excluído."),
-                s("d2c96140", "Indicador de áudio do convidado");
-            s("f6dc9146", "REPRODUZIR NOVAMENTE"),
+                s("d2c96140", "Indicador de áudio do convidado"),
+                s("f6dc9146", "REPRODUZIR NOVAMENTE"),
                 s("d30c74fe", "Volume"),
                 s("f2d4e6f2", "Assistir novamente"),
                 s("e9f1af3a", "Saiba mais"),
@@ -8903,10 +8891,10 @@
                 s("ecda5f9e", "Enganoso"),
                 s("a423473c", "Notificação obrigatória por lei"),
                 s("b3296688", "Visibilidade limitada"),
-                s("ccd32094", "Agoraㅤ"),
-                s("abfcce0d", function (e) {
-                    return e.amountOfTime + " atrás";
-                }),
+                s("ccd32094", "Agoraㅤ");
+            s("abfcce0d", function (e) {
+                return e.amountOfTime + " atrás";
+            }),
                 s("ae408b76", "Você repostou"),
                 s("j355f008", "Post fixado"),
                 s("habf9678", "Fixado pelo autor"),
@@ -12089,24 +12077,6 @@
                             },
                         },
                         {
-                            key: "ca87939f",
-                            get: function () {
-                                return ['Ao clicar em "Assinar", você concorda com os ', ". As Assinaturas são renovadas automaticamente até serem canceladas, conforme descrito nos ", ". ", ". Cancele pelo menos 24 horas antes da renovação para evitar cobranças adicionais. Ao fazer o upgrade para um nível de preço superior, o crédito do restante da assinatura anterior irá para sua conta e será usado automaticamente para os pagamentos futuros. A nova assinatura será iniciada imediatamente. Você precisa ter um celular verificado para a assinatura. "];
-                            },
-                        },
-                        {
-                            key: "ed2a6ba9",
-                            get: function () {
-                                return ['Ao clicar em "Assinar", você concorda com os ', ". As Assinaturas são renovadas automaticamente até serem canceladas, conforme descrito nos ", ". ", ". Cancele pelo menos 24 horas antes da renovação para evitar cobranças adicionais. Ao fazer downgrade, a assinatura atual e os recursos associados mudarão imediatamente para o novo nível de assinatura. Você não receberá reembolso por nenhuma porção da assinatura anterior, a não quer que exigido por lei. Será cobrado também imediatamente o preço do novo nível. Você precisa ter um celular verificado para a assinatura."];
-                            },
-                        },
-                        {
-                            key: "db638a21",
-                            get: function () {
-                                return ['Ao clicar em "Assinar", você concorda com os ', ". As Assinaturas são renovadas automaticamente até serem canceladas, conforme descrito nos ", ". ", ". Cancele pelo menos 24 horas antes da renovação para evitar cobranças adicionais. Ao trocar de plano, a nova assinatura será iniciada imediatamente. O crédito do restante da assinatura anterior irá para sua conta e será usado automaticamente para os pagamentos futuros. Você precisa ter um celular verificado para a assinatura. "];
-                            },
-                        },
-                        {
                             key: "b2138d0f",
                             get: function () {
                                 return ["Ao assinar, você concorda com nossos ", ". As assinaturas são renovadas automaticamente até serem canceladas, conforme descrito nos ", ". ", ". Cancele pelo menos 24 horas antes da renovação para evitar cobranças adicionais. Ao fazer upgrade, sua assinatura atual e os recursos associados mudarão para o novo nível de assinatura imediatamente. Você pagará o preço do novo nível imediatamente, mas qualquer saldo proporcional do seu ciclo de cobrança atual será creditado no valor total de hoje. Você não receberá reembolsos por nenhuma parte da sua assinatura anterior, a menos que exigido por lei."];
@@ -13237,4 +13207,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pt.3f764bea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pt.ee423b1a.js.map

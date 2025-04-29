@@ -4800,7 +4800,7 @@
                 t("if2704e4", "Zurück zur Live-Übersicht"),
                 t("ea928ae4", "Zurück zu Spaces"),
                 t("e8c07c22", "Live-Video"),
-                t("a4ce6e68", "Live-Video-Metriken"),
+                t("a4ce6e68", "Live-Videometriken"),
                 t("b2214c74", "Gesamtzahl der Ansichten für dieses Live-Video"),
                 t("d4fcf83a", "Wie lange sich Zuschauer*innen dieses Live-Video insgesamt angesehen haben"),
                 t("a89b0322", "Storniert"),
@@ -4846,7 +4846,7 @@
                 t("c4a7a6aa", "Live-Daten"),
                 t("a992032a", "Livestream-Statistiken"),
                 t("ie45edda", "Livestream-Übersicht"),
-                t("e30fc268", "Live-Zuschauer"),
+                t("e30fc268", "Live-Zuschauer*innen"),
                 t("bd37f68e", "Medienaktivität"),
                 t("fe074210", "Minuten"),
                 t("jd03a1b8", "Minuten angesehen"),
@@ -4859,7 +4859,7 @@
                 t("df846d6c", "Keine Posts für den ausgewählten Zeitraum gefunden."),
                 t("g2ba40f6", "Keine Spaces für den ausgewählten Filter verfügbar"),
                 t("j44061a0", "Nicht verfügbar"),
-                t("c4a93912", "Nicht verfügbar"),
+                t("c4a93912", "N. v."),
                 t("a6b78788", "Keine Zuschauerdaten verfügbar"),
                 t("b2438638", "der Gesamtanzahl"),
                 t("ic0399e0", "Organische Ansichten"),
@@ -4890,7 +4890,7 @@
                 t("cf3709da", "Status"),
                 t("e797dc32", "Stream-Zeit: "),
                 t("b649d8cc", "Nur Abonnent*innen"),
-                t("j9282130", "Live-Video-Miniaturansicht"),
+                t("j9282130", "Miniaturansicht für Live-Video"),
                 t("g629b8b0", "Zeitabschaltung"),
                 t("eb87323c", "Zeigt Statistikdaten für den ausgewählten Zeitraum seit dem Livestream an."),
                 t("i6a75722", "Zeitbereich"),
@@ -7004,10 +7004,6 @@
                 t("db5c77e0", "Das ist dein aktives Abonnement"),
                 t("h77ef73e", "Zum Monatsplan wechseln"),
                 t("d723d44a", "Zum Jahresplan wechseln"),
-                t("i253b5c6", "Hochstufen und bezahlen"),
-                t("d2beeaaa", "Niedrigere Stufe und bezahlen"),
-                t("acf719d4", "Wechseln und bezahlen"),
-                t("ieafe1c6", "Änderung deines Abonnements bestätigen"),
                 t("gf6b66b8", "Änderung deines Abonnements, gültig ab heute, bestätigen"),
                 t("e83daf87", function (e) {
                     return "Änderung deines Abonnements, gültig ab " + e.date + ", bestätigen";
@@ -7025,15 +7021,6 @@
                 t("d7efb6ba", "Du wechselst von der monatlichen zur jährlichen Abrechnung. Der Jahresplan wird dir heute in Rechnung gestellt und dein verbleibendes monatliches Guthaben wird auf die Gesamtgebühr angerechnet. Der Wechsel erfolgt sofort und du erhältst nun eine jährliche Rechnung."),
                 t("a5f2cf70", "Du wechselst von der jährlichen zur monatlichen Abrechnung. Dein verbleibendes jährliches Guthaben deckt deine monatlichen Zahlungen ab, bis es aufgebraucht ist. Der Wechsel erfolgt sofort und du erhältst nun eine monatliche Rechnung."),
                 t("ef1c0208", "Planänderung bestätigen"),
-                t("c20806d5", "Allgemeinen Geschäftsbedingungen"),
-                t("i10be4c9", "Bedingungen"),
-                t("cdda96d6", "Du kannst jederzeit kündigen"),
-                t("cc67158f", "Allgemeinen Geschäftsbedingungen"),
-                t("eb420831", "Bedingungen"),
-                t("c7d49608", "Du kannst jederzeit kündigen"),
-                t("ab176bd1", "Allgemeinen Geschäftsbedingungen"),
-                t("cea928a5", "Bedingungen"),
-                t("e37c69e0", "Du kannst jederzeit kündigen"),
                 t("ia08113f", "Allgemeinen Geschäftsbedingungen für Käufer*innen"),
                 t("d2962b73", "Bedingungen"),
                 t("b421795a", "Du kannst jederzeit kündigen"),
@@ -7849,7 +7836,20 @@
                 t("b33d1518", "Jobs aus einer unterstützten Integration oder einem angepassten XML-Feed synchronisieren"),
                 t("dd2db402", "Schritt 1: Sammle die erforderlichen Informationen"),
                 t("edb098c2", "Schritt 2: Kontaktiere unser Supportteam"),
-                t("c4474460", "Schritt 2: Sende eine E-Mail an unser Supportteam");
+                t("c4474460", "Schritt 2: Sende eine E-Mail an unser Supportteam"),
+                t("a08da0fa", "Was geschieht als Nächstes?"),
+                t("c127374e", "Nachricht an uns senden"),
+                t("b2cb2a0c", "Nutzername deines Accounts bei Verifizierte Organisationen"),
+                t("b8e64002", "Name deines Bewerbermanagementsystems"),
+                t("acb99db6", "URL der Karriere-Website, wo deine Jobs aufgelistet sind"),
+                t("a64a5b7a", "Sende die gewünschten Informationen an unser Supportteam, damit der Integrationsprozess beginnen kann."),
+                t("e3dffb4e", "Kopiere unsere Support-E-Mail-Adresse unten und sende die gewünschten Informationen an unser Supportteam, damit der Integrationsprozess beginnen kann."),
+                t("b4fef99e", "Nachdem unser Supportteam deine Anfrage erhalten hat, prüfen wir deine Informationen und helfen dir bei der Konfiguration deiner Integration."),
+                t("h37f2d96", "Bitte beachte, dass derzeit nicht alle Bewerbermanagementsysteme unterstützt werden."),
+                t("ce102a20", "Weiterleitung zu Stripe"),
+                t("ddfd6718", "Zahlung fehlgeschlagen"),
+                t("i90ea7d2", "Bitte aktualisiere dringend deine Rechnungsinformationen, damit du deine Vorteile behalten kannst."),
+                t("a62359e6", "Einstellungen für Verifizierte Organisation");
             function a(e, n) {
                 for (var i = 0; i < n.length; i++) {
                     var t = n[i];
@@ -7888,20 +7888,7 @@
                     d(e, n)
                 );
             }
-            t("a08da0fa", "Was geschieht als Nächstes?"),
-                t("c127374e", "Nachricht an uns senden"),
-                t("b2cb2a0c", "Nutzername deines Accounts bei Verifizierte Organisationen"),
-                t("b8e64002", "Name deines Bewerbermanagementsystems"),
-                t("acb99db6", "URL der Karriere-Website, wo deine Jobs aufgelistet sind"),
-                t("a64a5b7a", "Sende die gewünschten Informationen an unser Supportteam, damit der Integrationsprozess beginnen kann."),
-                t("e3dffb4e", "Kopiere unsere Support-E-Mail-Adresse unten und sende die gewünschten Informationen an unser Supportteam, damit der Integrationsprozess beginnen kann."),
-                t("b4fef99e", "Nachdem unser Supportteam deine Anfrage erhalten hat, prüfen wir deine Informationen und helfen dir bei der Konfiguration deiner Integration."),
-                t("h37f2d96", "Bitte beachte, dass derzeit nicht alle Bewerbermanagementsysteme unterstützt werden."),
-                t("ce102a20", "Weiterleitung zu Stripe"),
-                t("ddfd6718", "Zahlung fehlgeschlagen"),
-                t("i90ea7d2", "Bitte aktualisiere dringend deine Rechnungsinformationen, damit du deine Vorteile behalten kannst."),
-                t("a62359e6", "Einstellungen für Verifizierte Organisation"),
-                t("ge221b7c", "Führe ein Upgrade bei deinem Abonnement von Verifizierte Organisationen durch, wenn du Zugriff auf verbundene Accounts und ein höheres Werbeguthaben erhalten möchtest."),
+            t("ge221b7c", "Führe ein Upgrade bei deinem Abonnement von Verifizierte Organisationen durch, wenn du Zugriff auf verbundene Accounts und ein höheres Werbeguthaben erhalten möchtest."),
                 t("i4dccc18", "Rechnungsstellung"),
                 t("ec3cd6e4", "Verwalte deine Zahlungsmethode, aktualisiere die Rechnungsinformationen und prüfe deine Rechnungen."),
                 t("dac61c3c", "Account-Einstellungen"),
@@ -8009,6 +7996,7 @@
                 t("j99e2f4d", function (e) {
                     return e.price + " / " + e.interval;
                 }),
+                t("ieafe1c6", "Änderung deines Abonnements bestätigen"),
                 t("bb21a170", "Abonnement ändern"),
                 t("b0dcc4dc", "Für deinen Account ist bereits ein Stufenwechsel ausstehend."),
                 t("f3aef4ca", "Kein aktives Abonnement gefunden"),
@@ -8891,8 +8879,8 @@
                 t("c057680c", "Das Video kann nicht in diesem Browser abgespielt werden. Bitte versuche es mit einem anderen Browser."),
                 t("i5dfae6e", "Dieses Video ist an deinem Standort nicht verfügbar."),
                 t("c2388276", "Dieses Video wurde gelöscht."),
-                t("d2c96140", "Audioanzeige für Gast");
-            t("f6dc9146", "AUFZEICHNUNG"),
+                t("d2c96140", "Audioanzeige für Gast"),
+                t("f6dc9146", "AUFZEICHNUNG"),
                 t("d30c74fe", "Lautstärke"),
                 t("f2d4e6f2", "Erneut ansehen"),
                 t("e9f1af3a", "Mehr erfahren"),
@@ -8903,10 +8891,10 @@
                 t("ecda5f9e", "Irreführend"),
                 t("a423473c", "Gesetzlich vorgeschriebener Hinweis"),
                 t("b3296688", "Sichtbarkeit eingeschränkt"),
-                t("ccd32094", "Jetzt"),
-                t("abfcce0d", function (e) {
-                    return "vor " + e.amountOfTime;
-                }),
+                t("ccd32094", "Jetzt");
+            t("abfcce0d", function (e) {
+                return "vor " + e.amountOfTime;
+            }),
                 t("ae408b76", "Du hast repostet"),
                 t("j355f008", "Angehefteter Post"),
                 t("habf9678", "Angeheftet von Autor*in"),
@@ -12102,24 +12090,6 @@
                             },
                         },
                         {
-                            key: "ca87939f",
-                            get: function () {
-                                return ["Wenn du ein Abonnement abschließt, erklärst du dich mit unseren ", " einverstanden. Abonnements verlängern sich automatisch, bis sie gekündigt werden, wie in den ", " beschrieben. ", ". Die Abbestellung muss mindestens 24 Stunden vor der Verlängerung erfolgen, sonst fallen zusätzliche Gebühren an. Wenn du ein Upgrade auf eine höhere Preisstufe vornimmst, wird der Restbetrag deines vorherigen Abonnements auf deinem Account gutgeschrieben und automatisch auf zukünftige Zahlungen angerechnet. Dein neues Abonnement beginnt sofort. Für ein Abonnement ist eine verifizierte Telefonnummer erforderlich."];
-                            },
-                        },
-                        {
-                            key: "ed2a6ba9",
-                            get: function () {
-                                return ["Wenn du ein Abonnement abschließt, erklärst du dich mit unseren ", " einverstanden. Abonnements verlängern sich automatisch, bis sie gekündigt werden, wie in den ", " beschrieben. ", ". Die Abbestellung muss mindestens 24 Stunden vor der Verlängerung erfolgen, sonst fallen zusätzliche Gebühren an. Wenn du ein Downgrade vornimmst, werden dein aktuelles Abonnement und die damit verbundenen Funktionen sofort auf die neue Abonnementstufe umgestellt. Du erhältst keine Rückerstattung für einen Teil deines vorherigen Abonnements, es sei denn, dies ist gesetzlich vorgeschrieben. Außerdem wird dir der Preis für die neue Stufe sofort in Rechnung gestellt. Für ein Abonnement ist eine verifizierte Telefonnummer erforderlich."];
-                            },
-                        },
-                        {
-                            key: "db638a21",
-                            get: function () {
-                                return ["Wenn du ein Abonnement abschließt, erklärst du dich mit unseren ", " einverstanden. Abonnements verlängern sich automatisch, bis sie gekündigt werden, wie in den ", " beschrieben. ", ". Die Abbestellung muss mindestens 24 Stunden vor der Verlängerung erfolgen, sonst fallen zusätzliche Gebühren an. Wenn du deinen Plan wechselst, beginnt dein neues Abonnement sofort. Das Restguthaben deines vorherigen Abonnements wird auf deinem Account gutgeschrieben und automatisch auf zukünftige Zahlungen angerechnet. Für ein Abonnement ist eine verifizierte Telefonnummer erforderlich."];
-                            },
-                        },
-                        {
                             key: "b2138d0f",
                             get: function () {
                                 return ["Wenn du ein Abonnement abschließt, erklärst du dich mit unseren ", " einverstanden. Abonnements verlängern sich automatisch, bis sie gekündigt werden, wie in den ", " beschrieben. ", ". Die Abbestellung muss mindestens 24 Stunden vor der Verlängerung erfolgen, sonst fallen zusätzliche Gebühren an. Wenn du ein Upgrade vornimmst, werden dein aktuelles Abonnement und die damit verbundenen Funktionen sofort auf die neue Abonnementstufe umgestellt. Der Preis für die neue Stufe wird dir sofort in Rechnung gestellt, aber dein anteiliges Guthaben aus dem aktuellen Rechnungszyklus wird dir auf die heutige Gesamtgebühr angerechnet. Du erhältst keine Rückerstattung für einen Teil deines vorherigen Abonnements, es sei denn, dies ist gesetzlich vorgeschrieben."];
@@ -13250,4 +13220,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/de.5f530aea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/de.2abe306a.js.map

@@ -4267,7 +4267,7 @@
                 t("fa0f1262", "Break"),
                 t("c2cac618", "Grok støtter data for La Liga, Premier League, Bundesliga, Series A og Ligue 1."),
                 t("acae223d", function (e) {
-                    return 'Results for "' + e.prompt + '"';
+                    return "Resultater for " + e.prompt;
                 }),
                 t("bed99fe2", "Se færre"),
                 t("f7b57ac0", "Statistikk"),
@@ -4796,12 +4796,12 @@
                 t("e7479ce4", "Gjennomsnittlig visningstid"),
                 t("g1dfa7d0", "Snitt"),
                 t("h7d28188", "Tilbake til innholdet"),
-                t("if2704e4", "Back to Live Overview"),
+                t("if2704e4", "Tilbake til direkteoversikt"),
                 t("ea928ae4", "Tilbake til områdene"),
-                t("e8c07c22", "Sending"),
-                t("a4ce6e68", "Broadcast Metrics"),
-                t("b2214c74", "Total number of views for this broadcast"),
-                t("d4fcf83a", "Total time viewers spent watching this broadcast"),
+                t("e8c07c22", "sendt"),
+                t("a4ce6e68", "Måledata for sending"),
+                t("b2214c74", "Totalt antall visninger for denne sendingen"),
+                t("d4fcf83a", "Total tid som seere så på sendingen"),
                 t("a89b0322", "Kansellert"),
                 t("j3cb12ea", "Samtidige lyttere"),
                 t("b93931ee", "Antall ganger innholdet ditt har blitt publisert."),
@@ -4837,19 +4837,19 @@
                 t("efa0f858", "Antall følginger og avfølginger over tid. Dette gjenspeiler ikke nødvendigvis antall følgere."),
                 t("g2b06cc6", "Kjønnsdata kan være antakelser"),
                 t("b66b3baa", "timer"),
-                t("cf8a0772", "Impression to Views"),
-                t("g13d8010", "Last 48 Hours"),
-                t("d5627596", "Last Hour"),
+                t("cf8a0772", "Visninger"),
+                t("g13d8010", "Siste to døgn"),
+                t("d5627596", "Siste time"),
                 t("baf120a6", "Minst engasjert"),
                 t("f2382014", "DIREKTE"),
-                t("c4a7a6aa", "Live data"),
-                t("a992032a", "Livestream Analytics"),
+                t("c4a7a6aa", "Direktedata"),
+                t("a992032a", "Direktestrømanalyse"),
                 t("ie45edda", "Oversikt over Livestream"),
                 t("e30fc268", "Direkteseere"),
                 t("bd37f68e", "Innholdsaktivitet"),
                 t("fe074210", "minutter"),
-                t("jd03a1b8", "Minutes Watched"),
-                t("a20e91e8", "minutes watched"),
+                t("jd03a1b8", "Minutter sett"),
+                t("a20e91e8", "minutter sett"),
                 t("ic2bebee", "Pengeinntjening"),
                 t("a1d642c8", "Mest engasjert"),
                 t("ifc4c1f8", "Antall nye følgere som resultat av dette innholdet."),
@@ -4859,12 +4859,12 @@
                 t("g2ba40f6", "Ingen områder tilgjengelige for valgt filter"),
                 t("j44061a0", "Utilgjengelig"),
                 t("c4a93912", "Ikke tilgjengelig"),
-                t("a6b78788", "No viewer data available"),
+                t("a6b78788", "Ingen seerdata tilgjengelige"),
                 t("b2438638", "av totalen"),
                 t("ic0399e0", "Organiske visninger"),
                 t("ja5c444a", "Betalingsperiode"),
                 t("f04e025e", "Maksimum samtidige lyttere"),
-                t("d6d10662", "Peak Viewers: "),
+                t("d6d10662", "Maksimum seere: "),
                 t("d147bea2", "Kom tilbake senere"),
                 t("f0336d68", "Innleggsstatistikk"),
                 t("g85fbd2e", "Innleggs-ID"),
@@ -4872,11 +4872,11 @@
                 t("hf4f9bfe", "Publiser lenke"),
                 t("bf5ebf5c", "Innlegg og svar"),
                 t("b211652e", "Innlegg over tid"),
-                t("f2efec0a", "Pre-Published"),
+                t("f2efec0a", "Forhåndsutgitt"),
                 t("i61e0302", "Forrige"),
                 t("e08a706a", "Promoterte visninger"),
                 t("cbc99192", "Publiseringsdato"),
-                t("a83c2a9a", "Realtime"),
+                t("a83c2a9a", "Sanntid"),
                 t("e9d72896", "Tatt opp"),
                 t("gede4932", "Spill av på nytt"),
                 t("h0de359c", "Antall ganger dette innholdet har blitt republisert."),
@@ -4887,20 +4887,20 @@
                 t("fbc79a40", "Oversikt over områder"),
                 t("d077112a", "Statistikk om områder"),
                 t("cf3709da", "Status"),
-                t("e797dc32", "Stream time: "),
+                t("e797dc32", "Strømmetid: "),
                 t("b649d8cc", "Kun abonnent"),
                 t("j9282130", "Miniatyrbilde for sendingen"),
-                t("g629b8b0", "Timed Out"),
-                t("eb87323c", "This shows analytics data for the selected time period since the livestream happened."),
-                t("i6a75722", "Time Range"),
+                t("g629b8b0", "Tidsavbrutt"),
+                t("eb87323c", "Viser analysedata for valgt tid etter at direktestrømmen ble sendt."),
+                t("i6a75722", "Tidsomfang"),
                 t("c602f5b8", "Totalt"),
                 t("b35e68ae", "Totalt antall deltakere"),
                 t("h78ee79a", "Total reprisetitting"),
                 t("e3efaed0", "Type"),
                 t("c37993e2", "Avfølginger"),
-                t("b1ed35d0", "Unique Viewers"),
+                t("b1ed35d0", "Unike seere"),
                 t("bfad9306", "Ukjent"),
-                t("b5a58f36", "Untitled Broadcast"),
+                t("b5a58f36", "Sending uten navn"),
                 t("i70f5278", "Lastet opp:"),
                 t("a98b58b6", "Verifiserte følgere"),
                 t("a5de67ca", "Antall følgere som har verifisert kontoen sin."),
@@ -7003,10 +7003,6 @@
                 t("db5c77e0", "Dette er det aktive abonnementet ditt"),
                 t("h77ef73e", "Bytt til månedsabonnement"),
                 t("d723d44a", "Bytt til årsabonnement"),
-                t("i253b5c6", "Oppgrader og betal"),
-                t("d2beeaaa", "Nedgrader og betal"),
-                t("acf719d4", "Bytt og betal"),
-                t("ieafe1c6", "Bekreft endringen av abonnementet ditt"),
                 t("gf6b66b8", "Bekreft endringen av abonnementet fra og med i dag"),
                 t("e83daf87", function (e) {
                     return "Bekreft endringen av abonnementet fra og med " + e.date;
@@ -7024,15 +7020,6 @@
                 t("d7efb6ba", "Du bytter fra månedlig til årlig fakturering. Du belastes for det årlige abonnementet i dag, med gjenværende proporsjonal månedlig saldo kreditert til totalbeløpet. Byttet skjer umiddelbart, og faktureringen blir heretter årlig."),
                 t("a5f2cf70", "Du bytter fra årlig til månedlig fakturering. Din gjenværende årskreditt dekker månedsbetalingene til den er brukt opp. Byttet skjer umiddelbart, og du faktureres heretter månedlig."),
                 t("ef1c0208", "Bekreft abonnementsendringen"),
-                t("c20806d5", "kjøpsvilkårene"),
-                t("i10be4c9", "vilkårene"),
-                t("cdda96d6", "Du kan kansellere når som helst"),
-                t("cc67158f", "kjøpsvilkårene"),
-                t("eb420831", "vilkårene"),
-                t("c7d49608", "Du kan kansellere når som helst"),
-                t("ab176bd1", "kjøpsvilkårene"),
-                t("cea928a5", "vilkårene"),
-                t("e37c69e0", "Du kan kansellere når som helst"),
                 t("ia08113f", "kjøpsvilkårene"),
                 t("d2962b73", "vilkårene"),
                 t("b421795a", "Avslutt når du vil"),
@@ -7848,7 +7835,20 @@
                 t("b33d1518", "Synkroniser jobber fra en støttet integrasjon eller en egendefinert XML-strøm"),
                 t("dd2db402", "Trinn 1: Samle den nødvendige informasjonen"),
                 t("edb098c2", "Trinn 2: Kontakt brukerstøtten vår"),
-                t("c4474460", "Trinn 2: Send en e-post til støtteteamet vårt");
+                t("c4474460", "Trinn 2: Send en e-post til støtteteamet vårt"),
+                t("a08da0fa", "Hva skjer nå?"),
+                t("c127374e", "Send oss en melding"),
+                t("b2cb2a0c", "Kontobrukernavnet for den verifiserte organisasjonen"),
+                t("b8e64002", "Navnet på kandidatsystemet du bruker"),
+                t("acb99db6", "Nettadressen til karrierenettstedet med jobbene dine"),
+                t("a64a5b7a", "Send den nødvendige informasjonen til brukerstøtten vår for å starte integrasjonsprosessen."),
+                t("e3dffb4e", "Kopier støtte-e-postadressen under og send den nødvendige informasjonen til støtteteamet vårt for å starte integrasjonsprosessen."),
+                t("b4fef99e", "Når støtteteamet vårt har mottatt forespørselen, vil vi gå gjennom informasjonen og hjelpe deg å konfigurere integrasjonen din."),
+                t("h37f2d96", "Vær obs på at ikke alle kandidatsystemer støttes for øyeblikket."),
+                t("ce102a20", "Omdirigerer til Stripe"),
+                t("ddfd6718", "Betalingen mislyktes"),
+                t("i90ea7d2", "Oppdater faktureringsopplysningene snarest for å beholde fordelene."),
+                t("a62359e6", "Innstillinger for verifisert organisasjon");
             function a(e, n) {
                 for (var r = 0; r < n.length; r++) {
                     var t = n[r];
@@ -7887,20 +7887,7 @@
                     d(e, n)
                 );
             }
-            t("a08da0fa", "Hva skjer nå?"),
-                t("c127374e", "Send oss en melding"),
-                t("b2cb2a0c", "Kontobrukernavnet for den verifiserte organisasjonen"),
-                t("b8e64002", "Navnet på kandidatsystemet du bruker"),
-                t("acb99db6", "Nettadressen til karrierenettstedet med jobbene dine"),
-                t("a64a5b7a", "Send den nødvendige informasjonen til brukerstøtten vår for å starte integrasjonsprosessen."),
-                t("e3dffb4e", "Kopier støtte-e-postadressen under og send den nødvendige informasjonen til støtteteamet vårt for å starte integrasjonsprosessen."),
-                t("b4fef99e", "Når støtteteamet vårt har mottatt forespørselen, vil vi gå gjennom informasjonen og hjelpe deg å konfigurere integrasjonen din."),
-                t("h37f2d96", "Vær obs på at ikke alle kandidatsystemer støttes for øyeblikket."),
-                t("ce102a20", "Omdirigerer til Stripe"),
-                t("ddfd6718", "Betalingen mislyktes"),
-                t("i90ea7d2", "Oppdater faktureringsopplysningene snarest for å beholde fordelene."),
-                t("a62359e6", "Innstillinger for verifisert organisasjon"),
-                t("ge221b7c", "Oppgrader abonnementet på Verifiserte organisasjoner for å få tilgang til tilknyttede kontoer og mer annonsekreditt."),
+            t("ge221b7c", "Oppgrader abonnementet på Verifiserte organisasjoner for å få tilgang til tilknyttede kontoer og mer annonsekreditt."),
                 t("i4dccc18", "Fakturering"),
                 t("ec3cd6e4", "Administrer betalingsmåten, oppdater faktureringsinformasjon og se gjennom fakturaene dine."),
                 t("dac61c3c", "Kontoinnstillinger"),
@@ -8008,6 +7995,7 @@
                 t("j99e2f4d", function (e) {
                     return e.price + " per " + e.interval;
                 }),
+                t("ieafe1c6", "Bekreft endringen av abonnementet ditt"),
                 t("bb21a170", "Endre abonnement"),
                 t("b0dcc4dc", "Kontoen din venter allerede på å bytte nivå."),
                 t("f3aef4ca", "Fant ikke noe aktivt abonnement"),
@@ -8890,8 +8878,8 @@
                 t("c057680c", "Vi kan ikke spille av videoen i denne nettleseren. Prøv en annen nettleser."),
                 t("i5dfae6e", "Denne videoen er ikke tilgjengelig der du befinner deg."),
                 t("c2388276", "Denne videoen er slettet."),
-                t("d2c96140", "Lydindikator for gjest");
-            t("f6dc9146", "REPRISE"),
+                t("d2c96140", "Lydindikator for gjest"),
+                t("f6dc9146", "REPRISE"),
                 t("d30c74fe", "Volum"),
                 t("f2d4e6f2", "Se på nytt"),
                 t("e9f1af3a", "Finn ut mer"),
@@ -8902,10 +8890,10 @@
                 t("ecda5f9e", "Villedende"),
                 t("a423473c", "Lovpålagt melding"),
                 t("b3296688", "Begrenset synlighet"),
-                t("ccd32094", "Nå"),
-                t("abfcce0d", function (e) {
-                    return e.amountOfTime + " siden";
-                }),
+                t("ccd32094", "Nå");
+            t("abfcce0d", function (e) {
+                return e.amountOfTime + " siden";
+            }),
                 t("ae408b76", "Du republiserte"),
                 t("j355f008", "Festet innlegg"),
                 t("habf9678", "Festet av forfatteren"),
@@ -12088,24 +12076,6 @@
                             },
                         },
                         {
-                            key: "ca87939f",
-                            get: function () {
-                                return ["Ved å abonnere samtykker du i ", " våre. Abonnementer fornyes automatisk inntil de kanselleres, slik det er beskrevet i ", ". ", ". Kanselleringen må skje minst 24 timer før fornyelse for å unngå ytterligere debiteringer. Når du oppgraderer til et dyrere nivå, godskrives kreditt for den resterende perioden av det tidligere abonnementet kontoen din og brukes automatisk til fremtidige betalinger. Det nye abonnementet ditt starter umiddelbart. For å abonnere kreves det et verifisert telefonnummer."];
-                            },
-                        },
-                        {
-                            key: "ed2a6ba9",
-                            get: function () {
-                                return ["Ved å abonnere samtykker du i ", " våre. Abonnementer fornyes automatisk inntil de kanselleres, slik det er beskrevet i ", ". ", ". Kanselleringen må skje minst 24 timer før fornyelse for å unngå ytterligere debiteringer. Når du nedgraderer, endres nåværende abonnement og tilknyttede funksjoner umiddelbart til det nye abonnementsnivået. Du får ikke refundert noen del av det tidligere abonnementet med mindre dette er lovpålagt. Du blir også debitert prisen på det nye nivået umiddelbart. For å abonnere kreves det et verifisert telefonnummer."];
-                            },
-                        },
-                        {
-                            key: "db638a21",
-                            get: function () {
-                                return ["Ved å abonnere samtykker du i ", " våre. Abonnementer fornyes automatisk inntil de kanselleres, slik det er beskrevet i ", ". ", ". Kanselleringen må skje minst 24 timer før fornyelse for å unngå ytterligere debiteringer. Når du bytter abonnement, starter det nye abonnementet umiddelbart. Kreditt for den resterende perioden av det tidligere abonnementet godskrives kontoen din og brukes automatisk til fremtidige betalinger. For å abonnere kreves det et verifisert telefonnummer."];
-                            },
-                        },
-                        {
                             key: "b2138d0f",
                             get: function () {
                                 return ["Ved å abonnere samtykker du i ", ". Abonnementer fornyes automatisk inntil de avsluttes som beskrevet i ", ". ", ". Avsluttingen må skje minst et døgn før fornyelse for å unngå ekstra gebyrer. Når du oppgraderer, endres nåværende abonnement og tilknyttede funksjoner umiddelbart til det nye abonnementsnivået. Du belastes umiddelbart for prisen på det nye nivået, men proporsjonal saldo fra nåværende faktureringssyklus krediteres mot dagens totalbeløp. Du får ikke refundert noen del av det tidligere abonnementet med mindre dette er lovpålagt."];
@@ -13235,4 +13205,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nb.ae980b4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nb.0e78440a.js.map

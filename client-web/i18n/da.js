@@ -4268,7 +4268,7 @@
                 t("fa0f1262", "Pause"),
                 t("c2cac618", "Grok understøtter i øjeblikket data fra La Liga, Premier League, Bundesliga, Serie A og Ligue 1."),
                 t("acae223d", function (e) {
-                    return 'Results for "' + e.prompt + '"';
+                    return 'Resultater for "' + e.prompt + '"';
                 }),
                 t("bed99fe2", "Se færre"),
                 t("f7b57ac0", "Statistik"),
@@ -4797,12 +4797,12 @@
                 t("e7479ce4", "Gennemsnitlig visningstid"),
                 t("g1dfa7d0", "Gns."),
                 t("h7d28188", "Tilbage til indhold "),
-                t("if2704e4", "Back to Live Overview"),
+                t("if2704e4", "Tilbage til live-oversigten"),
                 t("ea928ae4", "Tilbage til rummene"),
                 t("e8c07c22", "udsendelse"),
-                t("a4ce6e68", "Broadcast Metrics"),
-                t("b2214c74", "Total number of views for this broadcast"),
-                t("d4fcf83a", "Total time viewers spent watching this broadcast"),
+                t("a4ce6e68", "Nøgletal for udsendelser"),
+                t("b2214c74", "Samlet antal visninger for denne udsendelse"),
+                t("d4fcf83a", "Samlet tid seerne brugte på at se denne udsendelse"),
                 t("a89b0322", "Annulleret"),
                 t("j3cb12ea", "Samtidige lyttere"),
                 t("b93931ee", "Det antal gange, dit indhold er blevet postet."),
@@ -4838,19 +4838,19 @@
                 t("efa0f858", "Antal følger og følger ikke over tid. Dette afspejler ikke nødvendigvis dit antal følgere."),
                 t("g2b06cc6", "Kønsdata bliver muligvis udledt"),
                 t("b66b3baa", "timer"),
-                t("cf8a0772", "Impression to Views"),
-                t("g13d8010", "Last 48 Hours"),
-                t("d5627596", "Last Hour"),
+                t("cf8a0772", "Eksponeringer til visninger"),
+                t("g13d8010", "Sidste 48 timer"),
+                t("d5627596", "Sidste time"),
                 t("baf120a6", "Mindst engageret"),
                 t("f2382014", "DIREKTE"),
-                t("c4a7a6aa", "Live data"),
-                t("a992032a", "Livestream Analytics"),
+                t("c4a7a6aa", "Live-data"),
+                t("a992032a", "Livestream-statistik"),
                 t("ie45edda", "Oversigt over livestream"),
                 t("e30fc268", "Direkte seere"),
                 t("bd37f68e", "Medieaktivitet"),
                 t("fe074210", "minutter"),
-                t("jd03a1b8", "Minutes Watched"),
-                t("a20e91e8", "minutes watched"),
+                t("jd03a1b8", "Antal minutter set"),
+                t("a20e91e8", "minutter set"),
                 t("ic2bebee", "Indtægtsgivende"),
                 t("a1d642c8", "Mest engageret"),
                 t("ifc4c1f8", "Antallet af nye følgere, som dette indhold har tiltrukket."),
@@ -4860,12 +4860,12 @@
                 t("g2ba40f6", "Ingen ledige pladser til det valgte filter"),
                 t("j44061a0", "Ikke tilgængelig"),
                 t("c4a93912", "Mangler"),
-                t("a6b78788", "No viewer data available"),
+                t("a6b78788", "Ingen tilgængelige seerdata"),
                 t("b2438638", "af det samlede antal"),
                 t("ic0399e0", "Organiske visninger"),
                 t("ja5c444a", "Betalingsperiode"),
                 t("f04e025e", "Højeste antal samtidige lyttere"),
-                t("d6d10662", "Peak Viewers: "),
+                t("d6d10662", "Højeste antal seere: "),
                 t("d147bea2", "Kom tilbage senere"),
                 t("f0336d68", "Post-statistik"),
                 t("g85fbd2e", "Post-id"),
@@ -4873,11 +4873,11 @@
                 t("hf4f9bfe", "Post-link"),
                 t("bf5ebf5c", "Indlæg og svar"),
                 t("b211652e", "Posts over tid"),
-                t("f2efec0a", "Pre-Published"),
+                t("f2efec0a", "Forhåndsudgivet"),
                 t("i61e0302", "Forrige"),
                 t("e08a706a", "Promoverede visninger"),
                 t("cbc99192", "Udgivelsesdato"),
-                t("a83c2a9a", "Realtime"),
+                t("a83c2a9a", "Realtid"),
                 t("e9d72896", "Optaget"),
                 t("gede4932", "Afspil igen"),
                 t("h0de359c", "Antallet af gange dette indhold er blevet repostet."),
@@ -4888,20 +4888,20 @@
                 t("fbc79a40", "Oversigt over rum"),
                 t("d077112a", "Rumstatistik"),
                 t("cf3709da", "Status"),
-                t("e797dc32", "Stream time: "),
+                t("e797dc32", "Streamingtid: "),
                 t("b649d8cc", "Kun for abonnenter"),
                 t("j9282130", "Udsendelsesminiature"),
-                t("g629b8b0", "Timed Out"),
-                t("eb87323c", "This shows analytics data for the selected time period since the livestream happened."),
-                t("i6a75722", "Time Range"),
+                t("g629b8b0", "Time-out"),
+                t("eb87323c", "Dette viser analysedata for den valgte tidsperiode, siden livestreamen fandt sted."),
+                t("i6a75722", "Tidsinterval"),
                 t("c602f5b8", "I alt"),
                 t("b35e68ae", "Samlet antal deltagere"),
                 t("h78ee79a", "Samlet antal sete afspilninger"),
                 t("e3efaed0", "Type"),
                 t("c37993e2", "Følger ikke længere"),
-                t("b1ed35d0", "Unique Viewers"),
+                t("b1ed35d0", "Unikke seere"),
                 t("bfad9306", "Ukendt"),
-                t("b5a58f36", "Untitled Broadcast"),
+                t("b5a58f36", "Udsendelse uden titel"),
                 t("i70f5278", "Uploadet den:"),
                 t("a98b58b6", "Verificerede følgere"),
                 t("a5de67ca", "Antallet af følgere, der har verificeret deres konto."),
@@ -7004,10 +7004,6 @@
                 t("db5c77e0", "Dette er dit aktive abonnement"),
                 t("h77ef73e", "Skift til månedsabonnement"),
                 t("d723d44a", "Skift til årsabonnement"),
-                t("i253b5c6", "Opgrader og betal"),
-                t("d2beeaaa", "Nedgrader og betal"),
-                t("acf719d4", "Skift og betal"),
-                t("ieafe1c6", "Bekræft ændringen af dit abonnement"),
                 t("gf6b66b8", "Bekræft din abonnementsændring, der træder i kraft fra i dag"),
                 t("e83daf87", function (e) {
                     return "Bekræft din abonnementsændring, der træder i kraft fra den " + e.date;
@@ -7025,15 +7021,6 @@
                 t("d7efb6ba", "Du ændrer din fakturering fra månedlig til årlig. Du vil blive opkrævet for årsplanen i dag, og din resterende forholdsmæssige månedlige saldo vil blive krediteret den samlede opkrævning. Ændringen træder i kraft med det samme, og din fakturering vil nu være årlig."),
                 t("a5f2cf70", "Du ændrer din fakturering fra årlig til månedlig. Din resterende årlige kredit vil dække dine månedlige betalinger, indtil den løber ud. Ændringen sker med det samme, og du vil nu blive faktureret hver måned."),
                 t("ef1c0208", "Bekræft planændring"),
-                t("c20806d5", "vilkår for anvendelse"),
-                t("i10be4c9", "vilkårene"),
-                t("cdda96d6", "Kan altid opsiges"),
-                t("cc67158f", "vilkår for anvendelse"),
-                t("eb420831", "vilkårene"),
-                t("c7d49608", "Kan altid opsiges"),
-                t("ab176bd1", "vilkår for anvendelse"),
-                t("cea928a5", "vilkårene"),
-                t("e37c69e0", "Kan altid opsiges"),
                 t("ia08113f", " Vilkår for anvendelse"),
                 t("d2962b73", "Vilkår"),
                 t("b421795a", "Annullér når som helst"),
@@ -7849,7 +7836,20 @@
                 t("b33d1518", "Synkroniser stillinger fra en understøttet integration eller et brugerdefineret XML-feed"),
                 t("dd2db402", "Trin 1: Indsaml de nødvendige oplysninger"),
                 t("edb098c2", "Trin 2: Kontakt vores supportteam"),
-                t("c4474460", "Trin 2: Send en e-mail til vores supportteam");
+                t("c4474460", "Trin 2: Send en e-mail til vores supportteam"),
+                t("a08da0fa", "Hvad skal der ske nu?"),
+                t("c127374e", "Send os en besked"),
+                t("b2cb2a0c", "Brugernavn til din Verificerede organisationer-konto"),
+                t("b8e64002", "Navn på dit ansøgersporingssystem"),
+                t("acb99db6", "URL-adresse til jobsøgningswebsted, hvor dine stillinger er anført"),
+                t("a64a5b7a", "Send de nødvendige oplysninger til vores supportteam for at starte integrationsprocessen."),
+                t("e3dffb4e", "Kopiér vores support-e-mailadresse nedenfor, og send de nødvendige oplysninger til vores supportteam for at starte integrationsprocessen."),
+                t("b4fef99e", "Når vores supportteam har modtaget din anmodning, gennemgår vi dine oplysninger og hjælper dig med at konfigurere din integration."),
+                t("h37f2d96", "Bemærk, at ikke alle ansøgersporingssystemer understøttes i øjeblikket."),
+                t("ce102a20", "Omdirigering til Stripe"),
+                t("ddfd6718", "Betalingen mislykkedes"),
+                t("i90ea7d2", "Du bedes hurtigst muligt opdatere dine faktureringsoplysninger for at beholde dine fordele."),
+                t("a62359e6", "Indstillinger for verificeret organisation");
             function d(e, r) {
                 for (var n = 0; n < r.length; n++) {
                     var t = r[n];
@@ -7888,20 +7888,7 @@
                     a(e, r)
                 );
             }
-            t("a08da0fa", "Hvad skal der ske nu?"),
-                t("c127374e", "Send os en besked"),
-                t("b2cb2a0c", "Brugernavn til din Verificerede organisationer-konto"),
-                t("b8e64002", "Navn på dit ansøgersporingssystem"),
-                t("acb99db6", "URL-adresse til jobsøgningswebsted, hvor dine stillinger er anført"),
-                t("a64a5b7a", "Send de nødvendige oplysninger til vores supportteam for at starte integrationsprocessen."),
-                t("e3dffb4e", "Kopiér vores support-e-mailadresse nedenfor, og send de nødvendige oplysninger til vores supportteam for at starte integrationsprocessen."),
-                t("b4fef99e", "Når vores supportteam har modtaget din anmodning, gennemgår vi dine oplysninger og hjælper dig med at konfigurere din integration."),
-                t("h37f2d96", "Bemærk, at ikke alle ansøgersporingssystemer understøttes i øjeblikket."),
-                t("ce102a20", "Omdirigering til Stripe"),
-                t("ddfd6718", "Betalingen mislykkedes"),
-                t("i90ea7d2", "Du bedes hurtigst muligt opdatere dine faktureringsoplysninger for at beholde dine fordele."),
-                t("a62359e6", "Indstillinger for verificeret organisation"),
-                t("ge221b7c", "Opgrader dit abonnement på Verificerede organisationer for at få adgang til tilknytninger og flere annoncekreditter."),
+            t("ge221b7c", "Opgrader dit abonnement på Verificerede organisationer for at få adgang til tilknytninger og flere annoncekreditter."),
                 t("i4dccc18", "Fakturering"),
                 t("ec3cd6e4", "Administrer din betalingsmetode, opdater faktureringsoplysninger, og gennemgå dine fakturaer."),
                 t("dac61c3c", "Kontoindstillinger"),
@@ -8009,6 +7996,7 @@
                 t("j99e2f4d", function (e) {
                     return e.price + "/" + e.interval;
                 }),
+                t("ieafe1c6", "Bekræft ændringen af dit abonnement"),
                 t("bb21a170", "Skift abonnement"),
                 t("b0dcc4dc", "Din konto afventer allerede et niveauskift."),
                 t("f3aef4ca", "Intet aktivt abonnement fundet"),
@@ -8891,8 +8879,8 @@
                 t("c057680c", "Vi kan ikke afspille videoen i din browser. Prøv en anden browser."),
                 t("i5dfae6e", "Denne video er ikke tilgængelig i dit område."),
                 t("c2388276", "Denne video er blevet slettet."),
-                t("d2c96140", "Indikator for gæstelyd");
-            t("f6dc9146", "REPLAY"),
+                t("d2c96140", "Indikator for gæstelyd"),
+                t("f6dc9146", "REPLAY"),
                 t("d30c74fe", "Lydstyrke"),
                 t("f2d4e6f2", "Se igen"),
                 t("e9f1af3a", "Få mere at vide"),
@@ -8903,10 +8891,10 @@
                 t("ecda5f9e", "Vildledende"),
                 t("a423473c", "Lovpligtig meddelelse"),
                 t("b3296688", "Synlighed begrænset"),
-                t("ccd32094", "Nu"),
-                t("abfcce0d", function (e) {
-                    return e.amountOfTime + " siden";
-                }),
+                t("ccd32094", "Nu");
+            t("abfcce0d", function (e) {
+                return e.amountOfTime + " siden";
+            }),
                 t("ae408b76", "Du repostede"),
                 t("j355f008", "Fastgjort post"),
                 t("habf9678", "Fastgjort af forfatter"),
@@ -12089,24 +12077,6 @@
                             },
                         },
                         {
-                            key: "ca87939f",
-                            get: function () {
-                                return ["Ved at abonnere accepterer du vores ", ". Abonnementer fornys automatisk, indtil de opsiges, som beskrevet i ", ". ", ". Annuller mindst 24 timer før fornyelse for at undgå ekstra gebyrer. Når du opgradere til et højere prisniveau, overføres kreditten for resten af dit tidligere abonnement til din konto og bruges automatisk til fremtidige betalinger. Dit nye abonnement begynder med det samme. Et verificeret telefonnummer er påkrævet for at abonnere."];
-                            },
-                        },
-                        {
-                            key: "ed2a6ba9",
-                            get: function () {
-                                return ["Ved at abonnere accepterer du vores ", ". Abonnementer fornys automatisk, indtil de opsiges, som beskrevet i ", ". ", ". Annuller mindst 24 timer før fornyelse for at undgå ekstra gebyrer. Når du nedgraderer, skifter dit nuværende abonnement og de tilknyttede funktioner omgående til det nye abonnementsniveau. Du vil ikke modtage refusion for dit tidligere abonnement, medmindre loven kræver det. Du vil også blive opkrævet prisen for det nye niveau med det samme. Et verificeret telefonnummer er påkrævet for at abonnere."];
-                            },
-                        },
-                        {
-                            key: "db638a21",
-                            get: function () {
-                                return ["Ved at abonnere accepterer du vores ", ". Abonnementer fornys automatisk, indtil de opsiges, som beskrevet i ", ". ", ". Annuller mindst 24 timer før fornyelse for at undgå ekstra gebyrer. Når du skifter abonnement, starter dit nye abonnement med det samme. Kreditten for resten af dit tidligere abonnement overføres til din konto og bruges automatisk til fremtidige betalinger. Et verificeret telefonnummer er påkrævet for at abonnere."];
-                            },
-                        },
-                        {
                             key: "b2138d0f",
                             get: function () {
                                 return ["Når du abonnerer, accepterer du vores ", ". Abonnementer fornyes automatisk, indtil de opsiges i overensstemmelse med vores ", ". ", ". Opsig mindst 24 timer før fornyelsen for at undgå yderligere gebyrer. Når du opgraderer, ændres dit nuværende abonnement og de tilknyttede funktioner til det nye abonnementsniveau med det samme. Du vil straks blive opkrævet for prisen på det nye niveau, men enhver forholdsmæssig saldo fra din nuværende faktureringsperiode vil blive krediteret til dagens samlede opkrævning. Du vil ikke modtage refusion for nogen del af dit tidligere abonnement, medmindre det er påkrævet ved lov."];
@@ -13239,4 +13209,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/da.b395a0ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/da.ea95fa0a.js.map

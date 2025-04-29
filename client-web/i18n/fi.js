@@ -7004,10 +7004,6 @@
                 e("db5c77e0", "Tämä on nykyinen tilauksesi"),
                 e("h77ef73e", "Vaihda kuukausitilaukseen"),
                 e("d723d44a", "Vaihda vuositilaukseen"),
-                e("i253b5c6", "Valitse ylempi taso ja maksa"),
-                e("d2beeaaa", "Valitse alempi taso ja maksa"),
-                e("acf719d4", "Vaihda ja maksa"),
-                e("ieafe1c6", "Vahvista tilauksesi muutos"),
                 e("gf6b66b8", "Vahvista tilauksesi muutos alkaen tästä päivästä"),
                 e("e83daf87", function (a) {
                     return "Vahvista tilauksesi muutos alkaen " + a.date;
@@ -7025,15 +7021,6 @@
                 e("d7efb6ba", "Olet vaihtamassa kuukausiveloituksen vuosiveloitukseen. Sinulta veloitetaan vuositilaus tänään, ja jo suoritettu maksu alentaa maksettavaa summaa. Laskutusjakson muutos tapahtuu välittömästi, ja veloitukset tehdään tästedes vuosittain."),
                 e("a5f2cf70", "Olet vaihtamassa vuosilaskutuksen kuukausilaskutukseen. Aiemmin suoritetusta vuosimaksusta käyttämättä jäänyt osuus kattaa kuukausimaksut, kunnes se on kokonaan käytetty. Laskutusjakson muutos tapahtuu välittömästi, ja veloitukset tehdään tästedes kuukausittain."),
                 e("ef1c0208", "Vahvista tilauksen muutos"),
-                e("c20806d5", "ostoehdot"),
-                e("i10be4c9", "ehdoissa"),
-                e("cdda96d6", "Peru milloin tahansa"),
-                e("cc67158f", "ostoehdot"),
-                e("eb420831", "ehdoissa"),
-                e("c7d49608", "Peru milloin tahansa"),
-                e("ab176bd1", "ostoehdot"),
-                e("cea928a5", "ehdoissa"),
-                e("e37c69e0", "Peru milloin tahansa"),
                 e("ia08113f", "palvelun ostoehdot"),
                 e("d2962b73", "ehdoissa"),
                 e("b421795a", "Peru milloin tahansa"),
@@ -7849,7 +7836,20 @@
                 e("b33d1518", "Synkronoi työpaikat tuetusta integraatiosta tai XML-syötteestä"),
                 e("dd2db402", "Vaihe 1: Kerää vaaditut tiedot"),
                 e("edb098c2", "Vaihe 2: Ota yhteys tukeen"),
-                e("c4474460", "Vaihe 2: Lähetä sähköposti tukitiimillemme");
+                e("c4474460", "Vaihe 2: Lähetä sähköposti tukitiimillemme"),
+                e("a08da0fa", "Mitä tapahtuu seuraavaksi?"),
+                e("c127374e", "Lähetä meille viesti"),
+                e("b2cb2a0c", "Varmennetut organisaatiot -tilisi käyttäjätunnus"),
+                e("b8e64002", "Työnhakijoiden seurantajärjestelmäsi nimi"),
+                e("acb99db6", "Työpaikkasivuston URL, josta työpaikkasi löytyvät"),
+                e("a64a5b7a", "Lähetä pyydetyt tiedot tukitiimille aloittaaksesi integrointiprosessin."),
+                e("e3dffb4e", "Kopioi tukisähköpostiosoitteemme alle ja lähetä pyydetyt tiedot tukitiimillemme aloittaaksesi integraation."),
+                e("b4fef99e", "Kun tukitiimimme on saanut pyyntösi, käymme läpi tietosi ja autamme sinua integraation konfiguroinnissa."),
+                e("h37f2d96", "Huomaa, ettei kaikkia työnhakijoiden seurantajärjestelmiä vielä tueta."),
+                e("ce102a20", "Edelleenohjataan Stripeen"),
+                e("ddfd6718", "Maksu epäonnistui"),
+                e("i90ea7d2", "Päivitä laskutustietosi pian, jotta säilytät etusi."),
+                e("a62359e6", "Varmennetut organisaatiot");
             function s(a, t) {
                 for (var i = 0; i < t.length; i++) {
                     var e = t[i];
@@ -7888,20 +7888,7 @@
                     u(a, t)
                 );
             }
-            e("a08da0fa", "Mitä tapahtuu seuraavaksi?"),
-                e("c127374e", "Lähetä meille viesti"),
-                e("b2cb2a0c", "Varmennetut organisaatiot -tilisi käyttäjätunnus"),
-                e("b8e64002", "Työnhakijoiden seurantajärjestelmäsi nimi"),
-                e("acb99db6", "Työpaikkasivuston URL, josta työpaikkasi löytyvät"),
-                e("a64a5b7a", "Lähetä pyydetyt tiedot tukitiimille aloittaaksesi integrointiprosessin."),
-                e("e3dffb4e", "Kopioi tukisähköpostiosoitteemme alle ja lähetä pyydetyt tiedot tukitiimillemme aloittaaksesi integraation."),
-                e("b4fef99e", "Kun tukitiimimme on saanut pyyntösi, käymme läpi tietosi ja autamme sinua integraation konfiguroinnissa."),
-                e("h37f2d96", "Huomaa, ettei kaikkia työnhakijoiden seurantajärjestelmiä vielä tueta."),
-                e("ce102a20", "Edelleenohjataan Stripeen"),
-                e("ddfd6718", "Maksu epäonnistui"),
-                e("i90ea7d2", "Päivitä laskutustietosi pian, jotta säilytät etusi."),
-                e("a62359e6", "Varmennetut organisaatiot"),
-                e("ge221b7c", "Päivitä varmennetun organisaation tilaukseen, niin saat käyttöösi affiliaatit ja enemmän mainoskrediittejä."),
+            e("ge221b7c", "Päivitä varmennetun organisaation tilaukseen, niin saat käyttöösi affiliaatit ja enemmän mainoskrediittejä."),
                 e("i4dccc18", "Laskutus"),
                 e("ec3cd6e4", "Hallitse maksutapaa, päivitä laskutustiedot ja tarkastele laskujasi."),
                 e("dac61c3c", "Tilin asetukset"),
@@ -8009,6 +7996,7 @@
                 e("j99e2f4d", function (a) {
                     return a.price + " / " + a.interval;
                 }),
+                e("ieafe1c6", "Vahvista tilauksesi muutos"),
                 e("bb21a170", "Vaihda tilaus"),
                 e("b0dcc4dc", "Tilisi odottaa jo nyt tason vaihtoa."),
                 e("f3aef4ca", "Aktiivista tilausta ei löytynyt"),
@@ -8891,8 +8879,8 @@
                 e("c057680c", "Videon toistaminen ei onnistu tässä selaimessa. Kokeile toista selainta."),
                 e("i5dfae6e", "Tämä video ei ole saatavilla sijainnissasi."),
                 e("c2388276", "Tämä video on poistettu."),
-                e("d2c96140", "Vieraslähettäjän äänen merkki");
-            e("f6dc9146", "UUSINTA"),
+                e("d2c96140", "Vieraslähettäjän äänen merkki"),
+                e("f6dc9146", "UUSINTA"),
                 e("d30c74fe", "Äänenvoimakkuus"),
                 e("f2d4e6f2", "Katso uudelleen"),
                 e("e9f1af3a", "Lue lisää"),
@@ -8903,10 +8891,10 @@
                 e("ecda5f9e", "Harhaanjohtava"),
                 e("a423473c", "Lakisääteinen huomautus"),
                 e("b3296688", "Näkyvyyttä rajattu"),
-                e("ccd32094", "Nyt"),
-                e("abfcce0d", function (a) {
-                    return a.amountOfTime + " sitten";
-                }),
+                e("ccd32094", "Nyt");
+            e("abfcce0d", function (a) {
+                return a.amountOfTime + " sitten";
+            }),
                 e("ae408b76", "Uudelleenjulkaisit"),
                 e("j355f008", "Kiinnitetty julkaisu"),
                 e("habf9678", "Tekijän kiinnittämä"),
@@ -12102,24 +12090,6 @@
                             },
                         },
                         {
-                            key: "ca87939f",
-                            get: function () {
-                                return ["Tilaamalla hyväksyt ", ". Tilaukset uusitaan automaattisesti niin kauan kunnes ne perutaan, kuten ", " on kuvattu. ", ". Peru viimeistään 24 tuntia ennen seuraavaa laskutusta välttyäksesi lisämaksuilta. Kun vaihdat tilaustason kalliimpaan, aiemmalta tilaukselta jäänyt summa siirretään tilillesi ja käytetään automaattisesti tuleviin maksuihin. Uusi tilauksesi alkaa välittömästi. Tilaajilla on oltava varmennettu puhelinnumero."];
-                            },
-                        },
-                        {
-                            key: "ed2a6ba9",
-                            get: function () {
-                                return ["Tilaamalla hyväksyt ", ". Tilaukset uusitaan automaattisesti niin kauan kunnes ne perutaan, kuten ", " on kuvattu. ", ". Peru viimeistään 24 tuntia ennen seuraavaa laskutusta välttyäksesi lisämaksuilta. Kun vaihdat tilaustason alempaan, nykyinen tilauksesi ja siihen liittyvät ominaisuudet vaihtuvat uuden tilauksen mukaisiin välittömästi. Et saa palautusta edellisen tilauksen käyttämättä jääneestä ajasta, ellei laki siihen pakota. Sinulta veloitetaan myös uuden tason hinta välittömästi. Tilaajilla on oltava varmennettu puhelinnumero."];
-                            },
-                        },
-                        {
-                            key: "db638a21",
-                            get: function () {
-                                return ["Tilaamalla hyväksyt ", ". Tilaukset uusitaan automaattisesti niin kauan kunnes ne perutaan, kuten ", " on kuvattu. ", ". Peru viimeistään 24 tuntia ennen seuraavaa laskutusta välttyäksesi lisämaksuilta. Kun vaihdat tilaustasoa, uusi tilauksesi alkaa välittömästi. Aiemmalta tilaukselta jäänyt summa siirretään tilillesi ja käytetään automaattisesti tuleviin maksuihin. Tilaajilla on oltava varmennettu puhelinnumero."];
-                            },
-                        },
-                        {
                             key: "b2138d0f",
                             get: function () {
                                 return ["Tilauksen tekemällä hyväksyt ", ". Tilaukset uusiutuvat automaattisesti siihen asti, kunnes ne perutaan, kuten ", " on ilmoitettu. ", ". Peru viimeistään 24 tuntia ennen tilauksen uusimista välttääksesi veloituksen. Kun vaihdat ylempään tilaustasoon, nykyinen tilauksesi ja siihen liittyvät ominaisuudet vaihtuvat uuden tilauksen mukaisiin välittömästi. Sinulta veloitetaan uuden tilauksen hinta välittömästi, mutta nykyisestä tilausjaksosta suoritetusta maksusta käyttämättä jäänyt osuus vähennetään tänään veloitettavasta summasta. Et saa palautusta edellisen tilauksen käyttämättä jääneestä ajasta, paitsi jos laki velvoittaa maksun palautukseen."];
@@ -13250,4 +13220,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.2a728b8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.eb737eaa.js.map

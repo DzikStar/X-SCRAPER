@@ -17,14 +17,6 @@
                 y = () => a.createElement(r.Z, { style: l.ZP.actionButtons }, a.createElement(s.ZP, { "aria-label": m, hoverLabel: { label: m }, icon: a.createElement(c.default, null), link: u, pullRight: !0, type: "primaryText" }), a.createElement(s.ZP, { "aria-label": d, hoverLabel: { label: d }, icon: a.createElement(i.default, null), link: o.Sr, pullRight: !0, type: "primaryText" })),
                 p = a.memo(y);
         },
-        749122: (e, t, n) => {
-            n.d(t, { Z: () => i });
-            var a = n(202784),
-                r = n(731708);
-            const s = ({ account: e, size: t, weight: n }) => a.createElement(r.ZP, { size: t, style: c.name, weight: n }, e.issuedCardAccountName),
-                c = n(392237).default.create((e) => ({ name: { display: "flex", overflow: "hidden", textOverflow: "clip" } })),
-                i = a.memo(s);
-        },
         615954: (e, t, n) => {
             n.d(t, { Z: () => m });
             var a = n(202784),
@@ -288,7 +280,7 @@
                                         .then(({ challengeId: a, status: s, transactionId: c }) => {
                                             const i = e ? (({ formattedAmount: e }) => `You approved the payment of ${e}.`)({ formattedAmount: e }) : null,
                                                 o = (0, r.wu)({ status: s, challengeId: a });
-                                            o ? v.push(o, { challengeId: a, challengeInitiator: d.kW.transaction, successMessage: i, recordId: n }) : (i && w({ text: i }), t?.());
+                                            o ? v.push(o, { challengeId: a, challengeInitiator: d.kW.confirmUnrecognisedPayment, successMessage: i, recordId: n }) : (i && w({ text: i }), t?.());
                                         })
                                         .catch((e) => {
                                             const t = (0, h.XE)({ errors: e, roles: P });
@@ -404,7 +396,7 @@
                 return a.createElement(l.H, { errorConfig: _ }, a.createElement(L, e));
             }
             const F = a.memo(V),
-                M = ({ amount: e, onSuccess: t, recordId: n, senderScreenName: l, size: g, transactionId: f }) => {
+                q = ({ amount: e, onSuccess: t, recordId: n, senderScreenName: l, size: g, transactionId: f }) => {
                     const [I, E] = (0, p.C7)(),
                         k = (0, y.z)(),
                         P = (0, s.useHistory)(),
@@ -431,9 +423,9 @@
                         C = E || !w;
                     return a.createElement(c.ZP, { disabled: C, onPress: S, size: g ?? "medium", type: "primaryOutlined" }, E ? a.createElement(i.Z, { size: "small" }) : "Decline");
                 },
-                q = { context: "PaymentsDeclineTransfer" };
+                M = { context: "PaymentsDeclineTransfer" };
             function H(e) {
-                return a.createElement(l.H, { errorConfig: q }, a.createElement(M, e));
+                return a.createElement(l.H, { errorConfig: M }, a.createElement(q, e));
             }
             const K = a.memo(H),
                 W = ({ amount: e, onSuccess: t, recordId: n, size: l, transactionId: p, type: g, userScreenName: f }) => {
@@ -483,7 +475,7 @@
                                         .then(({ challengeId: a, status: s, transactionId: c }) => {
                                             const i = e ? (({ formattedAmount: e }) => `You rejected the ${e} payment.`)({ formattedAmount: e }) : null,
                                                 o = (0, r.wu)({ status: s, challengeId: a });
-                                            o ? Z.push(o, { challengeId: a, challengeInitiator: d.kW.transaction, successMessage: i, recordId: n }) : (i && v({ text: i }), t?.());
+                                            o ? Z.push(o, { challengeId: a, challengeInitiator: d.kW.confirmUnrecognisedPayment, successMessage: i, recordId: n }) : (i && v({ text: i }), t?.());
                                         })
                                         .catch((e) => {
                                             const t = (0, h.XE)({ errors: e, roles: E });
@@ -564,21 +556,21 @@
                         _ = A.receiver_results?.result,
                         V = A.sender_results?.result,
                         F = A.payment_method,
-                        M = A.merchant_details,
-                        q = (0, f.Z)({ senderId: V?.rest_id }),
-                        H = (0, E.GU)({ transactionType: D, isViewerSender: q }),
-                        K = L || "User" !== _?.__typename || "User" !== V?.__typename ? null : q ? _ : V,
-                        W = (0, E.zK)({ transactionType: D, productCode: R, merchantDetails: M, amountType: H }),
+                        q = A.merchant_details,
+                        M = (0, f.Z)({ senderId: V?.rest_id }),
+                        H = (0, E.GU)({ transactionType: D, isViewerSender: M }),
+                        K = L || "User" !== _?.__typename || "User" !== V?.__typename ? null : M ? _ : V,
+                        W = (0, E.zK)({ transactionType: D, productCode: R, merchantDetails: q, amountType: H }),
                         Y = D === y.x.Deposit || D === y.x.Withdraw ? (0, E.Ou)(F) : null,
                         O = (0, E.qK)({ transactionType: D, description: z, productCode: R, accountName: Y ? (Y.accountType ? `${Y.accountType} ${Y.accountName.name}` : `${Y.accountName.name}`) : "", createdAt: C }),
-                        U = (0, E.lD)({ status: $, reasonCode: T, isViewerSender: q }),
+                        U = (0, E.lD)({ status: $, reasonCode: T, isViewerSender: M }),
                         B = (0, E._T)({ status: $ }),
                         J = (0, E.Gl)({ status: $ }),
                         X = V?.legacy?.screen_name,
                         j = _?.legacy?.screen_name,
-                        G = (0, E.DK)({ isViewerSender: q, status: $, transactionType: D }),
+                        G = (0, E.DK)({ isViewerSender: M, status: $, transactionType: D }),
                         Q = (0, E.pQ)({ productCode: R, transactionType: D, account: Y });
-                    return r.createElement(o.Z, { key: N, link: `${p.bR}/${N}`, style: I.dE.listItem }, K ? r.createElement(h.Z, { size: "xLarge", user: K }) : Q ? r.createElement(P.KR, { size: "xLarge", type: Q.iconType, uri: Q.uri }) : W ? r.createElement(P.G7, { size: "xLarge", type: W.type, uri: W.logo }) : r.createElement(l.default, { size: "xLarge" }), r.createElement(s.Z, { style: I.dE.listItemFlex, testID: `transaction-item-${N}` }, r.createElement(s.Z, { style: I.dE.listItemContent }, r.createElement(s.Z, { style: I.dE.listItemFlex }, K ? r.createElement(g.Z, { user: K, weight: "medium" }) : Q ? r.createElement(w.Z, { title: Q.title }) : W ? r.createElement(b.Z, { name: W.name, website: W.website }) : Y ? r.createElement(Z.Z, { account: Y }) : r.createElement(m.ZP, null, "This account is unavailable"), G && a ? r.createElement(m.ZP, { color: "gray700" }, (0, E.lw)({ status: $, description: z, amount: a, currency: x })) : J ? r.createElement(m.ZP, { color: "gray700" }, U) : O ? r.createElement(m.ZP, { color: "gray700" }, O) : null), G ? r.createElement(v.Z, { amount: a, challengeId: c, currency: x, isViewerSender: q, receiverScreenName: j, recordId: n, senderScreenName: X, status: $, transactionId: N, transactionType: D, withPrimaryOnly: !0 }) : r.createElement(s.Z, { style: I.dE.alignEnd }, r.createElement(k.Z, { amount: a, currency: x, hasCompleted: B, showGreenCredit: !0, size: "body", type: H, weight: "normal" }), r.createElement(d.Z, { style: I.dE.alignEnd, timestamp: parseInt(C, 10) })))));
+                    return r.createElement(o.Z, { key: N, link: `${p.bR}/${N}`, style: I.dE.listItem }, K ? r.createElement(h.Z, { size: "xLarge", user: K }) : Q ? r.createElement(P.KR, { size: "xLarge", type: Q.iconType, uri: Q.uri }) : W ? r.createElement(P.G7, { size: "xLarge", type: W.type, uri: W.logo }) : r.createElement(l.default, { size: "xLarge" }), r.createElement(s.Z, { style: I.dE.listItemFlex, testID: `transaction-item-${N}` }, r.createElement(s.Z, { style: I.dE.listItemContent }, r.createElement(s.Z, { style: I.dE.listItemFlex }, K ? r.createElement(g.Z, { user: K, weight: "medium" }) : Q ? r.createElement(w.Z, { title: Q.title }) : W ? r.createElement(b.Z, { name: W.name, website: W.website }) : Y ? r.createElement(Z.Z, { account: Y }) : r.createElement(m.ZP, null, "This account is unavailable"), G && a ? r.createElement(m.ZP, { color: "gray700" }, (0, E.lw)({ status: $, description: z, amount: a, currency: x })) : J ? r.createElement(m.ZP, { color: "gray700" }, U) : O ? r.createElement(m.ZP, { color: "gray700" }, O) : null), G ? r.createElement(v.Z, { amount: a, challengeId: c, currency: x, isViewerSender: M, receiverScreenName: j, recordId: n, senderScreenName: X, status: $, transactionId: N, transactionType: D, withPrimaryOnly: !0 }) : r.createElement(s.Z, { style: I.dE.alignEnd }, r.createElement(k.Z, { amount: a, currency: x, hasCompleted: B, size: "body", type: H, weight: "normal" }), r.createElement(d.Z, { style: I.dE.alignEnd, timestamp: parseInt(C, 10) })))));
                 },
                 x = r.memo(C);
         },
@@ -625,6 +617,22 @@
             const o = a.memo(i),
                 l = c.default.create((e) => ({ alignCenter: { alignItems: "center", textAlign: "center", wordBreak: "break-word" } }));
         },
+        847211: (e, t, n) => {
+            n.d(t, { Z: () => y });
+            var a = n(202784),
+                r = n(325686),
+                s = n(743080),
+                c = n(477922),
+                i = n(731708);
+            const o = ({ account: e, size: t, weight: n }) => a.createElement(i.ZP, { size: t, style: l.name, weight: n }, e.issuedCardAccountName),
+                l = n(392237).default.create((e) => ({ name: { display: "flex", overflow: "hidden", textOverflow: "clip" } })),
+                m = a.memo(o);
+            var d = n(86320);
+            function u({ account: e, isIssued: t, testId: n }) {
+                return a.createElement(r.Z, { style: s.YP.description, testID: n }, e ? (t ? a.createElement(a.Fragment, null, a.createElement(c.qn, { size: "small", type: e.type, uri: e?.avatar?.uri }), a.createElement(m, { account: e, weight: "normal" })) : a.createElement(d.Z, { account: e, weight: "normal" })) : null);
+            }
+            const y = a.memo(u);
+        },
         972758: (e, t, n) => {
             n.d(t, { Z: () => i });
             var a = n(202784),
@@ -653,4 +661,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-d97a9c6b.b2a71f9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-d97a9c6b.7a94382a.js.map

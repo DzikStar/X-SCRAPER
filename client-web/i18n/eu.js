@@ -7007,10 +7007,6 @@
                 o("db5c77e0", "This is your active subscription"),
                 o("h77ef73e", "Switch to monthly plan"),
                 o("d723d44a", "Switch to annual plan"),
-                o("i253b5c6", "Upgrade & Pay"),
-                o("d2beeaaa", "Downgrade & Pay"),
-                o("acf719d4", "Switch & Pay"),
-                o("ieafe1c6", "Confirm your subscription change"),
                 o("gf6b66b8", "Confirm your subscription change, effective from today"),
                 o("e83daf87", function (e) {
                     return "Confirm your subscription change, effective from " + e.date;
@@ -7028,15 +7024,6 @@
                 o("d7efb6ba", "You’re switching from monthly to annual billing. You’ll be charged for the annual plan today, with your remaining prorated monthly balance credited to the total charge. The switch happens immediately, and your billing will now be annual."),
                 o("a5f2cf70", "You’re switching from annual to monthly billing. Your remaining annual credit will cover your monthly payments until it runs out. The switch happens immediately, and your billing will now be monthly."),
                 o("ef1c0208", "Confirm plan change"),
-                o("c20806d5", "Purchaser Terms of Service"),
-                o("i10be4c9", "Terms"),
-                o("cdda96d6", "Cancel anytime"),
-                o("cc67158f", "Purchaser Terms of Service"),
-                o("eb420831", "Terms"),
-                o("c7d49608", "Cancel anytime"),
-                o("ab176bd1", "Purchaser Terms of Service"),
-                o("cea928a5", "Terms"),
-                o("e37c69e0", "Cancel anytime"),
                 o("ia08113f", "Purchaser Terms of Service"),
                 o("d2962b73", "Terms"),
                 o("b421795a", "Cancel anytime"),
@@ -7852,7 +7839,20 @@
                 o("b33d1518", "Sync jobs from a supported integration or a custom XML feed"),
                 o("dd2db402", "Step 1: Gather the required information"),
                 o("edb098c2", "Step 2: Contact our support team"),
-                o("c4474460", "Step 2: Email our support team");
+                o("c4474460", "Step 2: Email our support team"),
+                o("a08da0fa", "What happens next?"),
+                o("c127374e", "Send us a message"),
+                o("b2cb2a0c", "Username of your Verified Org account"),
+                o("b8e64002", "Name of your applicant tracking system"),
+                o("acb99db6", "Career site URL where your jobs are listed"),
+                o("a64a5b7a", "Send the required information to our support team to start the integration process."),
+                o("e3dffb4e", "Copy our support email address below and send the required information to our support team to start the integration process."),
+                o("b4fef99e", "After our support team receives your request, we will review your information and will assist with configuring your integration."),
+                o("h37f2d96", "Please note not all applicant tracking systems are currently supported."),
+                o("ce102a20", "Redirecting to Stripe"),
+                o("ddfd6718", "Payment Failed"),
+                o("i90ea7d2", "Please urgently update your billing to keep your benefits."),
+                o("a62359e6", "Verified Organization Settings");
             function n(e, a) {
                 for (var t = 0; t < a.length; t++) {
                     var o = a[t];
@@ -7891,20 +7891,7 @@
                     u(e, a)
                 );
             }
-            o("a08da0fa", "What happens next?"),
-                o("c127374e", "Send us a message"),
-                o("b2cb2a0c", "Username of your Verified Org account"),
-                o("b8e64002", "Name of your applicant tracking system"),
-                o("acb99db6", "Career site URL where your jobs are listed"),
-                o("a64a5b7a", "Send the required information to our support team to start the integration process."),
-                o("e3dffb4e", "Copy our support email address below and send the required information to our support team to start the integration process."),
-                o("b4fef99e", "After our support team receives your request, we will review your information and will assist with configuring your integration."),
-                o("h37f2d96", "Please note not all applicant tracking systems are currently supported."),
-                o("ce102a20", "Redirecting to Stripe"),
-                o("ddfd6718", "Payment Failed"),
-                o("i90ea7d2", "Please urgently update your billing to keep your benefits."),
-                o("a62359e6", "Verified Organization Settings"),
-                o("ge221b7c", "Upgrade Verified Organization subscription to get access to affiliates and more ad credits."),
+            o("ge221b7c", "Upgrade Verified Organization subscription to get access to affiliates and more ad credits."),
                 o("i4dccc18", "Billing"),
                 o("ec3cd6e4", "Manage your payment method, update billing information, and review your invoices."),
                 o("dac61c3c", "Account settings"),
@@ -8012,6 +7999,7 @@
                 o("j99e2f4d", function (e) {
                     return e.price + " / " + e.interval;
                 }),
+                o("ieafe1c6", "Confirm your subscription change"),
                 o("bb21a170", "Change subscription"),
                 o("b0dcc4dc", "Your account is already pending a tier switch."),
                 o("f3aef4ca", "No active subscription found"),
@@ -8894,8 +8882,8 @@
                 o("c057680c", "Ezin dugu arakatzaile honetan erreproduzitu bideoa. Saiatu beste web arakatzaile batekin."),
                 o("i5dfae6e", "Bideo hau ez dago eskuragarri zure kokapenean."),
                 o("c2388276", "Bideo hau ezabatu da."),
-                o("d2c96140", "Gonbidatuen audioaren adierazlea");
-            o("f6dc9146", "ERREPIKATU"),
+                o("d2c96140", "Gonbidatuen audioaren adierazlea"),
+                o("f6dc9146", "ERREPIKATU"),
                 o("d30c74fe", "Bolumena"),
                 o("f2d4e6f2", "Ikusi berriro"),
                 o("e9f1af3a", "Lortu informazio gehiago"),
@@ -8906,10 +8894,10 @@
                 o("ecda5f9e", "Engainagarria"),
                 o("a423473c", "Legez eskatzen den oharra"),
                 o("b3296688", "Visibility Limited"),
-                o("ccd32094", "Orain"),
-                o("abfcce0d", function (e) {
-                    return "Duela " + e.amountOfTime;
-                }),
+                o("ccd32094", "Orain");
+            o("abfcce0d", function (e) {
+                return "Duela " + e.amountOfTime;
+            }),
                 o("ae408b76", "You reposted"),
                 o("j355f008", "Pinned post"),
                 o("habf9678", "Egileak finkatuta"),
@@ -12096,24 +12084,6 @@
                             },
                         },
                         {
-                            key: "ca87939f",
-                            get: function () {
-                                return ["By subscribing, you agree to our ", ". Subscriptions auto-renew until canceled, as described in the ", ". ", ". Cancel at least 24 hours prior to renewal to avoid additional charges. When upgrading to a higher priced tier, credit for the remainder of your previous subscription will go towards your account and automatically be applied to future payments. Your new subscription will start immediately. A verified phone number is required to subscribe."];
-                            },
-                        },
-                        {
-                            key: "ed2a6ba9",
-                            get: function () {
-                                return ["By subscribing, you agree to our ", ". Subscriptions auto-renew until canceled, as described in the ", ". ", ". Cancel at least 24 hours prior to renewal to avoid additional charges. When downgrading, your current subscription and the associated features will switch to the new subscription tier immediately. You will not receive a refund for any portion of your previous subscription, unless required by law. You will also be charged for the price of the new tier immediately. A verified phone number is required to subscribe."];
-                            },
-                        },
-                        {
-                            key: "db638a21",
-                            get: function () {
-                                return ["By subscribing, you agree to our ", ". Subscriptions auto-renew until canceled, as described in the ", ". ", ". Cancel at least 24 hours prior to renewal to avoid additional charges. When you switch your plan, your new subscription will start immediately. Credit for the remainder of your previous subscription will go towards your account and automatically be applied to future payments. A verified phone number is required to subscribe."];
-                            },
-                        },
-                        {
                             key: "b2138d0f",
                             get: function () {
                                 return ["By subscribing, you agree to our ", ". Subscriptions auto-renew until canceled, as described in the ", ". ", ". Cancel at least 24 hours prior to renewal to avoid additional charges. When upgrading, your current subscription and the associated features will switch to the new subscription tier immediately. You will be charged for the price of the new tier immediately but any prorated balance from your current billing cycle will be credited towards today’s total charge. You will not receive a refund for any portion of your previous subscription, unless required by law."];
@@ -13243,4 +13213,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/eu.b421858a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/eu.7347f89a.js.map

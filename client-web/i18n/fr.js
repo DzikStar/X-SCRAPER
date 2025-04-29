@@ -4896,7 +4896,7 @@
                 n("b649d8cc", "Abonné uniquement"),
                 n("j9282130", "Miniature de la diffusion"),
                 n("g629b8b0", "Expiré"),
-                n("eb87323c", "Cela montre des statistiques pour la période sélectionnée depuis le flux en direct."),
+                n("eb87323c", "Cela montre des statistiques pour la période sélectionnée depuis la diffusion du flux en direct."),
                 n("i6a75722", "Période"),
                 n("c602f5b8", "Total"),
                 n("b35e68ae", "Nombre de participants"),
@@ -7008,10 +7008,6 @@
                 n("db5c77e0", "Ceci est votre abonnement actif."),
                 n("h77ef73e", "Passer à l'abonnement mensuel"),
                 n("d723d44a", "Passer à l'abonnement annuel"),
-                n("i253b5c6", "Passer à l'abonnement supérieur et payer"),
-                n("d2beeaaa", "Passer à l'abonnement inférieur et payer"),
-                n("acf719d4", "Changer et payer"),
-                n("ieafe1c6", "Confirmer la modification de votre abonnement"),
                 n("gf6b66b8", "Confirmez la modification de votre abonnement, effective à partir d'aujourd'hui"),
                 n("e83daf87", function (e) {
                     return "Confirmez la modification de votre abonnement, effective à partir du " + e.date;
@@ -7029,15 +7025,6 @@
                 n("d7efb6ba", "Vous passez d'une facturation mensuelle à une facturation annuelle. L'abonnement annuel vous sera facturé aujourd'hui, et le solde restant de votre abonnement mensuel calculé au prorata sera crédité sur la nouvelle facture. Le changement est immédiat et votre facturation sera maintenant annuelle."),
                 n("a5f2cf70", "Vous passez d'une facturation annuelle à une facturation mensuelle. Votre crédit annuel restant couvrira vos paiements mensuels jusqu'à ce qu'il soit épuisé. Le changement est immédiat et votre facturation sera désormais mensuelle."),
                 n("ef1c0208", "Confirmer le changement d'abonnement"),
-                n("c20806d5", "Conditions d'utilisation des Services payants"),
-                n("i10be4c9", "Conditions"),
-                n("cdda96d6", "Vous pouvez annuler votre abonnement à tout moment"),
-                n("cc67158f", "Conditions d'utilisation des Services payants"),
-                n("eb420831", "Conditions"),
-                n("c7d49608", "Vous pouvez annuler votre abonnement à tout moment"),
-                n("ab176bd1", "Conditions d'utilisation des Services payants"),
-                n("cea928a5", "Conditions"),
-                n("e37c69e0", "Vous pouvez annuler votre abonnement à tout moment"),
                 n("ia08113f", "Conditions d'utilisation des Services payants"),
                 n("d2962b73", "Conditions"),
                 n("b421795a", "Vous pouvez annuler votre abonnement à tout moment"),
@@ -7853,7 +7840,20 @@
                 n("b33d1518", "Synchroniser les offres d'emploi depuis une intégration prise en charge ou un flux XML personnalisé"),
                 n("dd2db402", "Étape 1 : rassembler les informations requises"),
                 n("edb098c2", "Étape 2 : contactez notre équipe d'assistance"),
-                n("c4474460", "Étape 2 : envoyer un email à notre équipe d'assistance");
+                n("c4474460", "Étape 2 : envoyer un email à notre équipe d'assistance"),
+                n("a08da0fa", "Que se passe‑t‑il ensuite ?"),
+                n("c127374e", "Nous envoyer un message"),
+                n("b2cb2a0c", "Nom d'utilisateur de votre compte Organisations certifiées"),
+                n("b8e64002", "Nom de votre système de suivi des candidatures"),
+                n("acb99db6", "URL du site de carrières où vos emplois sont répertoriés"),
+                n("a64a5b7a", "Envoyez les informations requises à notre équipe d'assistance pour lancer le processus d'intégration."),
+                n("e3dffb4e", "Copiez l'adresse email de notre service d'assistance ci-dessous et envoyez les informations requises à notre équipe d'assistance pour lancer le processus d'intégration."),
+                n("b4fef99e", "Après réception de votre demande par notre équipe d'assistance, nous examinerons vos informations et vous aiderons à configurer votre intégration."),
+                n("h37f2d96", "Veuillez noter que les systèmes de suivi des candidatures ne sont actuellement pas tous pris en charge."),
+                n("ce102a20", "Redirection vers Stripe"),
+                n("ddfd6718", "Échec du paiement"),
+                n("i90ea7d2", "Veuillez rapidement mettre vos paramètres de facturation à jour pour conserver vos avantages."),
+                n("a62359e6", "Paramètres d'organisation certifiée");
             function a(e, t) {
                 for (var s = 0; s < t.length; s++) {
                     var n = t[s];
@@ -7892,20 +7892,7 @@
                     i(e, t)
                 );
             }
-            n("a08da0fa", "Que se passe‑t‑il ensuite ?"),
-                n("c127374e", "Nous envoyer un message"),
-                n("b2cb2a0c", "Nom d'utilisateur de votre compte Organisations certifiées"),
-                n("b8e64002", "Nom de votre système de suivi des candidatures"),
-                n("acb99db6", "URL du site de carrières où vos emplois sont répertoriés"),
-                n("a64a5b7a", "Envoyez les informations requises à notre équipe d'assistance pour lancer le processus d'intégration."),
-                n("e3dffb4e", "Copiez l'adresse email de notre service d'assistance ci-dessous et envoyez les informations requises à notre équipe d'assistance pour lancer le processus d'intégration."),
-                n("b4fef99e", "Après réception de votre demande par notre équipe d'assistance, nous examinerons vos informations et vous aiderons à configurer votre intégration."),
-                n("h37f2d96", "Veuillez noter que les systèmes de suivi des candidatures ne sont actuellement pas tous pris en charge."),
-                n("ce102a20", "Redirection vers Stripe"),
-                n("ddfd6718", "Échec du paiement"),
-                n("i90ea7d2", "Veuillez rapidement mettre vos paramètres de facturation à jour pour conserver vos avantages."),
-                n("a62359e6", "Paramètres d'organisation certifiée"),
-                n("ge221b7c", "Mettez à niveau vers l'abonnement Organisations certifiées pour accéder aux affiliés et à davantage de crédits publicitaires."),
+            n("ge221b7c", "Mettez à niveau vers l'abonnement Organisations certifiées pour accéder aux affiliés et à davantage de crédits publicitaires."),
                 n("i4dccc18", "Facturation"),
                 n("ec3cd6e4", "Gérez votre moyen de paiement, mettez vos informations de facturation à jour et passez vos factures en revue."),
                 n("dac61c3c", "Paramètres du compte"),
@@ -8013,6 +8000,7 @@
                 n("j99e2f4d", function (e) {
                     return e.price + "/" + e.interval;
                 }),
+                n("ieafe1c6", "Confirmer la modification de votre abonnement"),
                 n("bb21a170", "Changer d'abonnement"),
                 n("b0dcc4dc", "Un changement d'abonnement est déjà prévu pour votre compte."),
                 n("f3aef4ca", "Aucun abonnement actif trouvé"),
@@ -8895,8 +8883,8 @@
                 n("c057680c", "Nous ne pouvons pas lire la vidéo dans ce navigateur. Veuillez essayer un autre navigateur Web."),
                 n("i5dfae6e", "Cette vidéo n'est pas disponible dans votre région."),
                 n("c2388276", "Cette vidéo a été supprimée."),
-                n("d2c96140", "Indicateur audio invité");
-            n("f6dc9146", "REDIFFUSION"),
+                n("d2c96140", "Indicateur audio invité"),
+                n("f6dc9146", "REDIFFUSION"),
                 n("d30c74fe", "Volume"),
                 n("f2d4e6f2", "Revoir"),
                 n("e9f1af3a", "En savoir plus"),
@@ -8907,10 +8895,10 @@
                 n("ecda5f9e", "Trompeur"),
                 n("a423473c", "Avis requis par la loi"),
                 n("b3296688", "Visibilité limitée"),
-                n("ccd32094", "Maintenant"),
-                n("abfcce0d", function (e) {
-                    return "Il y a " + e.amountOfTime;
-                }),
+                n("ccd32094", "Maintenant");
+            n("abfcce0d", function (e) {
+                return "Il y a " + e.amountOfTime;
+            }),
                 n("ae408b76", "Vous avez reposté"),
                 n("j355f008", "Post épinglé"),
                 n("habf9678", "Épinglé par l'auteur"),
@@ -12093,24 +12081,6 @@
                             },
                         },
                         {
-                            key: "ca87939f",
-                            get: function () {
-                                return ["En vous abonnant, vous acceptez nos ", ". Les abonnements sont renouvelés automatiquement jusqu'à leur résiliation, comme indiqué dans les ", ". ", ". Annulez au moins 24 heures avant le renouvellement afin d'éviter des frais supplémentaires. Quand vous changez pour un abonnement supérieur, le crédit restant sur votre abonnement précédent est automatiquement utilisé pour les futurs règlements de votre compte. Votre nouvel abonnement commence immédiatement. Un numéro de téléphone vérifié est requis pour s'abonner."];
-                            },
-                        },
-                        {
-                            key: "ed2a6ba9",
-                            get: function () {
-                                return ["En vous abonnant, vous acceptez nos ", ". Les abonnements sont renouvelés automatiquement jusqu'à leur résiliation, comme indiqué dans les ", ". ", ". Annulez au moins 24 heures avant le renouvellement afin d'éviter des frais supplémentaires. Quand vous passez à un abonnement inférieur, votre abonnement actuel et les fonctionnalités associées sont instantanément modifiés. Vous ne recevrez pas de remboursement pour votre abonnement précédent, sauf si la loi l'exige. Le nouvel abonnement vous sera par ailleurs immédiatement facturé. Un numéro de téléphone vérifié est requis pour s'abonner."];
-                            },
-                        },
-                        {
-                            key: "db638a21",
-                            get: function () {
-                                return ["En vous abonnant, vous acceptez nos ", ". Les abonnements sont renouvelés automatiquement jusqu'à leur résiliation, comme indiqué dans les ", ". ", ". Annulez au moins 24 heures avant le renouvellement afin d'éviter des frais supplémentaires. Quand vous changez de type d'abonnement, votre nouvel abonnement commence immédiatement. Le crédit restant sur votre abonnement précédent est automatiquement utilisé pour les futurs règlements de votre compte. Un numéro de téléphone vérifié est requis pour s'abonner."];
-                            },
-                        },
-                        {
                             key: "b2138d0f",
                             get: function () {
                                 return ["En vous abonnant, vous acceptez nos ", ". Les abonnements sont renouvelés automatiquement jusqu'à leur résiliation, comme indiqué dans les ", ". ", ". Annulez au moins 24 heures avant le renouvellement afin d'éviter des frais supplémentaires. Quand vous passez à un abonnement supérieur, votre abonnement existant et les fonctionnalités associées sont instantanément modifiés. Le tarif du nouvel abonnement vous est immédiatement facturé, mais tout solde restant calculé au prorata de votre cycle de facturation en cours est crédité sur la nouvelle facture. Vous ne recevrez pas de remboursement pour quelque partie que ce soit de votre abonnement précédent, sauf si la loi l'exige."];
@@ -13240,4 +13210,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.1ad21ada.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.d16ca18a.js.map

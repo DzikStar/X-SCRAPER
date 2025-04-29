@@ -4277,7 +4277,7 @@
                 n("fa0f1262", "Prestávka"),
                 n("c2cac618", "Grok momentálne podporuje údaje z týchto líg: La Liga, Premier League, Bundesliga, Series A a Ligue 1."),
                 n("acae223d", function (e) {
-                    return 'Results for "' + e.prompt + '"';
+                    return "Výsledky pre „" + e.prompt + "“";
                 }),
                 n("bed99fe2", "Zobraziť menej"),
                 n("f7b57ac0", "Štatistiky"),
@@ -4806,12 +4806,12 @@
                 n("e7479ce4", "Priemerný čas pozerania"),
                 n("g1dfa7d0", "Priem."),
                 n("h7d28188", "Späť na obsah"),
-                n("if2704e4", "Back to Live Overview"),
+                n("if2704e4", "Späť na prehľad naživo"),
                 n("ea928ae4", "Späť na priestory"),
-                n("e8c07c22", "broadcast"),
-                n("a4ce6e68", "Broadcast Metrics"),
-                n("b2214c74", "Total number of views for this broadcast"),
-                n("d4fcf83a", "Total time viewers spent watching this broadcast"),
+                n("e8c07c22", "vysielanie"),
+                n("a4ce6e68", "Metriky vysielania"),
+                n("b2214c74", "Celkový počet zhliadnutí tohto vysielania"),
+                n("d4fcf83a", "Celkový čas strávený divákmi sledovaním tohto vysielania"),
                 n("a89b0322", "Zrušené"),
                 n("j3cb12ea", "Súbežní poslucháči"),
                 n("b93931ee", "Počet uverejnení vášho obsahu."),
@@ -4847,19 +4847,19 @@
                 n("efa0f858", "Počet sledovaní a zrušených sledovaní v priebehu času. Tento údaj nemusí nevyhnutne zodpovedať počtu vašich sledujúcich."),
                 n("g2b06cc6", "Údaje o pohlaví môžu byť odvodené"),
                 n("b66b3baa", "hod."),
-                n("cf8a0772", "Impression to Views"),
-                n("g13d8010", "Last 48 Hours"),
-                n("d5627596", "Last Hour"),
+                n("cf8a0772", "Pomer zobrazenia k zobrazeniam"),
+                n("g13d8010", "Posledných 48 hodín"),
+                n("d5627596", "Posledná hodina"),
                 n("baf120a6", "Najmenšia miera interakcie"),
                 n("f2382014", "NAŽIVO"),
-                n("c4a7a6aa", "Live data"),
-                n("a992032a", "Livestream Analytics"),
+                n("c4a7a6aa", "Údaje naživo"),
+                n("a992032a", "Štatistika živého prenosu"),
                 n("ie45edda", "Prehľad živého prenosu"),
-                n("e30fc268", "Live Viewers"),
+                n("e30fc268", "Diváci živého vysielania"),
                 n("bd37f68e", "Mediálna aktivita"),
                 n("fe074210", "min."),
-                n("jd03a1b8", "Minutes Watched"),
-                n("a20e91e8", "minutes watched"),
+                n("jd03a1b8", "Minúty sledovania"),
+                n("a20e91e8", "minúty sledovania"),
                 n("ic2bebee", "Speňažené"),
                 n("a1d642c8", "Najväčšia miera interakcie"),
                 n("ifc4c1f8", "Počet nových sledujúcich získaných z tohto obsahu."),
@@ -4869,12 +4869,12 @@
                 n("g2ba40f6", "Pre vybraný filter nie sú k dispozícii žiadne miesta"),
                 n("j44061a0", "Nie je k dispozícii"),
                 n("c4a93912", "N/A"),
-                n("a6b78788", "No viewer data available"),
+                n("a6b78788", "Nie sú k dispozícii žiadne údaje o divákoch"),
                 n("b2438638", "z celkového počtu"),
                 n("ic0399e0", "Organické zobrazenia"),
                 n("ja5c444a", "Výplatné obdobie"),
                 n("f04e025e", "Maximálny počet súbežných poslucháčov"),
-                n("d6d10662", "Peak Viewers: "),
+                n("d6d10662", "Maximum divákov: "),
                 n("d147bea2", "Vráťte sa sem neskôr"),
                 n("f0336d68", "Štatistika príspevkov"),
                 n("g85fbd2e", "Identifikátor príspevku"),
@@ -4882,11 +4882,11 @@
                 n("hf4f9bfe", "Uverejniť odkaz"),
                 n("bf5ebf5c", "Príspevky a odpovede"),
                 n("b211652e", "Príspevky v priebehu času"),
-                n("f2efec0a", "Pre-Published"),
+                n("f2efec0a", "Vopred publikované"),
                 n("i61e0302", "Predchádzajúce"),
                 n("e08a706a", "Sponzorované zobrazenia"),
                 n("cbc99192", "Dátum zverejnenia"),
-                n("a83c2a9a", "Realtime"),
+                n("a83c2a9a", "V reálnom čase"),
                 n("e9d72896", "Nahraté"),
                 n("gede4932", "Prehrať znova"),
                 n("h0de359c", "Počet opätovných uverejnení tohto obsahu."),
@@ -4897,20 +4897,20 @@
                 n("fbc79a40", "Prehľad priestorov"),
                 n("d077112a", "Štatistiky priestoru"),
                 n("cf3709da", "Stav"),
-                n("e797dc32", "Stream time: "),
+                n("e797dc32", "Čas streamu: "),
                 n("b649d8cc", "Len pre predplatiteľov"),
                 n("j9282130", "Miniatúra vysielania"),
-                n("g629b8b0", "Timed Out"),
-                n("eb87323c", "This shows analytics data for the selected time period since the livestream happened."),
-                n("i6a75722", "Time Range"),
+                n("g629b8b0", "Časový limit vypršal"),
+                n("eb87323c", "Zobrazuje štatistické údaje za vybrané časové obdobie od uskutočnenia živého prenosu."),
+                n("i6a75722", "Časový rozsah"),
                 n("c602f5b8", "Súčet"),
                 n("b35e68ae", "Celkovo účastníkov"),
                 n("h78ee79a", "Celkový počet opätovných prehratí"),
                 n("e3efaed0", "Typ"),
                 n("c37993e2", "Zrušené sledovania"),
-                n("b1ed35d0", "Unique Viewers"),
+                n("b1ed35d0", "Jedineční diváci"),
                 n("bfad9306", "Neznáme"),
-                n("b5a58f36", "Untitled Broadcast"),
+                n("b5a58f36", "Vysielanie bez názvu"),
                 n("i70f5278", "Nahrané:"),
                 n("a98b58b6", "Overení sledujúci"),
                 n("a5de67ca", "Počet sledujúcich, ktorí majú overený účet."),
@@ -7013,10 +7013,6 @@
                 n("db5c77e0", "Toto je vaše aktívne predplatné"),
                 n("h77ef73e", "Prejsť na mesačnú tarifu"),
                 n("d723d44a", "Prejsť na ročnú tarifu"),
-                n("i253b5c6", "Zlepšiť predplatné a zaplatiť"),
-                n("d2beeaaa", "Znížiť tarifu a zaplatiť"),
-                n("acf719d4", "Prepnúť tarifu a zaplatiť"),
-                n("ieafe1c6", "Potvrďte zmenu svojho predplatného"),
                 n("gf6b66b8", "Potvrďte zmenu predplatného s účinnosťou od dnešného dňa"),
                 n("e83daf87", function (e) {
                     return "Potvrďte zmenu predplatného s účinnosťou od " + e.date;
@@ -7034,15 +7030,6 @@
                 n("d7efb6ba", "Prechádzate z mesačnej fakturácie na ročnú. Dnes sa vám zaúčtuje ročná tarifa, pričom zostávajúci pomerný mesačný zostatok sa použije na pokrytie celkového poplatku. K prechodu dôjde okamžite a vaša fakturácia bude odteraz na ročnej báze."),
                 n("a5f2cf70", "Prechádzate z ročnej fakturácie na mesačnú. Váš zostávajúci ročný kredit sa bude používať na pokrytie mesačných platieb, kým sa nevyčerpá. K prechodu dôjde okamžite a vaša fakturácia bude odteraz na mesačnej báze."),
                 n("ef1c0208", "Potvrdiť zmenu tarify"),
-                n("c20806d5", "našimi podmienkami používania pre kupujúcich"),
-                n("i10be4c9", "podmienkach"),
-                n("cdda96d6", "Predplatné môžete kedykoľvek zrušiť"),
-                n("cc67158f", "našimi podmienkami používania pre kupujúcich"),
-                n("eb420831", "podmienkach"),
-                n("c7d49608", "Predplatné môžete kedykoľvek zrušiť"),
-                n("ab176bd1", "podmienkami používania pre kupujúcich"),
-                n("cea928a5", "podmienkach"),
-                n("e37c69e0", "Predplatné môžete kedykoľvek zrušiť"),
                 n("ia08113f", "podmienkami používania pre kupujúcich"),
                 n("d2962b73", "podmienkach"),
                 n("b421795a", "Predplatné môžete kedykoľvek zrušiť"),
@@ -7858,7 +7845,20 @@
                 n("b33d1518", "Synchronizujte pracovné miesta z podporovanej integrácie alebo vlastného informačného kanála vo formáte XML"),
                 n("dd2db402", "1. krok: zhromaždite požadované informácie"),
                 n("edb098c2", "2. krok: kontaktujte náš tím podpory"),
-                n("c4474460", "2. krok: pošlite e-mail nášmu tímu podpory");
+                n("c4474460", "2. krok: pošlite e-mail nášmu tímu podpory"),
+                n("a08da0fa", "Čo bude nasledovať?"),
+                n("c127374e", "Pošlite nám správu"),
+                n("b2cb2a0c", "Používateľské meno overeného účtu vašej organizácie"),
+                n("b8e64002", "Názov vášho systému sledovania uchádzačov"),
+                n("acb99db6", "Webová stránka s pracovnými miestami, ktoré ponúkate"),
+                n("a64a5b7a", "Odošlite nášmu tímu podpory požadované informácie, aby bolo možné začať integračný proces."),
+                n("e3dffb4e", "Skopírujte našu e-mailovú adresu podpory uvedenú nižšie a nášmu tímu podpory odošlite požadované informácie, aby ste mohli začať proces integrácie."),
+                n("b4fef99e", "Keď náš tím podpory dostane vašu žiadosť, skontrolujeme vaše informácie a pomôžeme vám s konfiguráciou integrácie."),
+                n("h37f2d96", "Momentálne podporujeme len niektoré systémy sledovania uchádzačov."),
+                n("ce102a20", "Prebieha presmerovanie do služby Stripe"),
+                n("ddfd6718", "Platba zlyhala"),
+                n("i90ea7d2", "Aktualizujte platobné údaje ihneď, aby ste nestratili výhody."),
+                n("a62359e6", "Nastavenia overených organizácií");
             function i(e, a) {
                 for (var o = 0; o < a.length; o++) {
                     var n = a[o];
@@ -7897,20 +7897,7 @@
                     r(e, a)
                 );
             }
-            n("a08da0fa", "Čo bude nasledovať?"),
-                n("c127374e", "Pošlite nám správu"),
-                n("b2cb2a0c", "Používateľské meno overeného účtu vašej organizácie"),
-                n("b8e64002", "Názov vášho systému sledovania uchádzačov"),
-                n("acb99db6", "Webová stránka s pracovnými miestami, ktoré ponúkate"),
-                n("a64a5b7a", "Odošlite nášmu tímu podpory požadované informácie, aby bolo možné začať integračný proces."),
-                n("e3dffb4e", "Skopírujte našu e-mailovú adresu podpory uvedenú nižšie a nášmu tímu podpory odošlite požadované informácie, aby ste mohli začať proces integrácie."),
-                n("b4fef99e", "Keď náš tím podpory dostane vašu žiadosť, skontrolujeme vaše informácie a pomôžeme vám s konfiguráciou integrácie."),
-                n("h37f2d96", "Momentálne podporujeme len niektoré systémy sledovania uchádzačov."),
-                n("ce102a20", "Prebieha presmerovanie do služby Stripe"),
-                n("ddfd6718", "Platba zlyhala"),
-                n("i90ea7d2", "Aktualizujte platobné údaje ihneď, aby ste nestratili výhody."),
-                n("a62359e6", "Nastavenia overených organizácií"),
-                n("ge221b7c", "Prejdite na vyššiu úroveň predplatného pre overené organizácie, aby ste mohli využívať pridružené účty a získať viac reklamných kreditov."),
+            n("ge221b7c", "Prejdite na vyššiu úroveň predplatného pre overené organizácie, aby ste mohli využívať pridružené účty a získať viac reklamných kreditov."),
                 n("i4dccc18", "Fakturácia"),
                 n("ec3cd6e4", "Spravujte svoj spôsob platby, aktualizujte fakturačné informácie a kontrolujte svoje faktúry."),
                 n("dac61c3c", "Nastavenia účtu"),
@@ -8018,6 +8005,7 @@
                 n("j99e2f4d", function (e) {
                     return e.price + "/" + e.interval;
                 }),
+                n("ieafe1c6", "Potvrďte zmenu svojho predplatného"),
                 n("bb21a170", "Zmena predplatného"),
                 n("b0dcc4dc", "Vo vašom účte sa už spracúva zmena úrovne"),
                 n("f3aef4ca", "Nenašlo sa žiadne aktívne predplatné"),
@@ -8900,8 +8888,8 @@
                 n("c057680c", "V tomto prehliadači nemôžeme prehrať video. Skúste použiť iný prehliadač."),
                 n("i5dfae6e", "Toto video nie je vo vašej oblasti dostupné."),
                 n("c2388276", "Toto video bolo odstránené."),
-                n("d2c96140", "Indikátor zvuku hosťa");
-            n("f6dc9146", "PREHRAŤ"),
+                n("d2c96140", "Indikátor zvuku hosťa"),
+                n("f6dc9146", "PREHRAŤ"),
                 n("d30c74fe", "Hlasitosť"),
                 n("f2d4e6f2", "Pozerať ešte raz"),
                 n("e9f1af3a", "Zistiť viac"),
@@ -8912,10 +8900,10 @@
                 n("ecda5f9e", "Zavádzajúce"),
                 n("a423473c", "Oznámenie vyžadované zákonom"),
                 n("b3296688", "Obmedzená viditeľnosť"),
-                n("ccd32094", "Teraz"),
-                n("abfcce0d", function (e) {
-                    return "Pred " + e.amountOfTime;
-                }),
+                n("ccd32094", "Teraz");
+            n("abfcce0d", function (e) {
+                return "Pred " + e.amountOfTime;
+            }),
                 n("ae408b76", "Opätovne ste uverejnili"),
                 n("j355f008", "Pripnutý príspevok"),
                 n("habf9678", "Pripnuté autorom"),
@@ -12102,24 +12090,6 @@
                             },
                         },
                         {
-                            key: "ca87939f",
-                            get: function () {
-                                return ["Aktiváciou predplatného súhlasíte s ", ". Predplatné sa obnovujú automaticky, až kým ich nezrušíte, ako je uvedené v ", ". ", ". Ak chcete predísť dodatočným poplatkom, zrušte predplatné aspoň 24 hodín pred jeho obnovením. Pri zvýšení úrovne predplatného bude kredit za zvyšok vášho predchádzajúceho predplatného pripísaný na váš účet a automaticky sa uplatní na budúce platby. Vaše nové predplatné začne okamžite. Na aktiváciu predplatného je potrebné overené telefónne číslo."];
-                            },
-                        },
-                        {
-                            key: "ed2a6ba9",
-                            get: function () {
-                                return ["Aktiváciou predplatného súhlasíte s ", ". Predplatné sa obnovujú automaticky, až kým ich nezrušíte, ako je uvedené v ", ". ", ". Ak chcete predísť dodatočným poplatkom, zrušte predplatné aspoň 24 hodín pred jeho obnovením. Pri znížení úrovne predplatného sa vaše aktuálne predplatné a súvisiace funkcie okamžite prepnú na novú úroveň predplatného. Za žiadnu časť predchádzajúce predplatného vám nebudú vrátené peniaze, pokiaľ to nevyžaduje zákon. Okrem toho vám bude okamžite zaúčtovaný poplatok za novú úroveň. Na aktiváciu predplatného je potrebné overené telefónne číslo."];
-                            },
-                        },
-                        {
-                            key: "db638a21",
-                            get: function () {
-                                return ["Aktiváciou predplatného súhlasíte s našimi ", ". Predplatné sa obnovujú automaticky, až kým ich nezrušíte, ako je uvedené v ", ". ", ". Ak chcete predísť dodatočným poplatkom, zrušte predplatné aspoň 24 hodín pred jeho obnovením. Pri zmene tarify sa vaše nové predplatné začne okamžite. Kredit za zvyšok predchádzajúceho predplatného sa pripíše na váš účet a automaticky sa použije na budúce platby. Na aktiváciu predplatného je potrebné overené telefónne číslo."];
-                            },
-                        },
-                        {
                             key: "b2138d0f",
                             get: function () {
                                 return ["Predplatením si služieb súhlasíte s našimi ", ". Predplatné sa obnovujú automaticky, až kým nie sú zrušené, ako je uvedené v ", ". ", ". Ak chcete predísť ďalším poplatkom, predplatné zrušte aspoň 24 hodín pred jeho obnovením. Pri zvýšení úrovne predplatného sa vaše aktuálne predplatné a súvisiace funkcie okamžite prepnú na novú úroveň predplatného. Cena za novú úroveň sa vám bude účtovať okamžite, ale prípadný pomerný zostatok z aktuálneho fakturačného cyklu sa použije na pokrytie dnešného celkového poplatku. Za žiadnu časť predchádzajúce predplatného vám nebudú vrátené peniaze, pokiaľ to nevyžaduje zákon."];
@@ -13252,4 +13222,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sk.313c2daa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sk.1b59212a.js.map

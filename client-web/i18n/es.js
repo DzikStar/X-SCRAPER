@@ -7003,10 +7003,6 @@
                 o("db5c77e0", "Esta es tu suscripción activa"),
                 o("h77ef73e", "Cambiar al plan mensual"),
                 o("d723d44a", "Cambiar al plan anual"),
-                o("i253b5c6", "Cambiar a suscripción superior y pagar"),
-                o("d2beeaaa", "Cambiar a suscripción inferior y pagar"),
-                o("acf719d4", "Cambiar y pagar"),
-                o("ieafe1c6", "Confirma tu cambio de suscripción"),
                 o("gf6b66b8", "Confirma tu cambio de suscripción, en vigor a partir de hoy"),
                 o("e83daf87", function (e) {
                     return "Confirma tu cambio de suscripción, en vigor a partir del " + e.date;
@@ -7024,15 +7020,6 @@
                 o("d7efb6ba", "Quieres cambiar del plan mensual al plan anual. El plan anual se te cobrará hoy, y el saldo mensual prorrateado restante se acreditará en el cargo total. El cambio se realiza de inmediato, y tu facturación pasa a ser anual."),
                 o("a5f2cf70", "Quieres cambiar del plan anual al plan mensual. Tu crédito anual restante cubrirá tus pagos mensuales hasta que se agote. El cambio se realiza inmediatamente y tu facturación ahora es mensual."),
                 o("ef1c0208", "Confirma el cambio del plan"),
-                o("c20806d5", "Términos de servicio para compradores"),
-                o("i10be4c9", "Términos"),
-                o("cdda96d6", "Puedes cancelar tu suscripción en cualquier momento"),
-                o("cc67158f", "Términos de servicio para compradores"),
-                o("eb420831", "Términos"),
-                o("c7d49608", "Puedes cancelar tu suscripción en cualquier momento"),
-                o("ab176bd1", "Términos de servicio para compradores"),
-                o("cea928a5", "Términos"),
-                o("e37c69e0", "Puedes cancelar tu suscripción en cualquier momento"),
                 o("ia08113f", "Términos de servicio para compradores"),
                 o("d2962b73", "Términos"),
                 o("b421795a", "Puedes cancelar tu suscripción en cualquier momento"),
@@ -7848,7 +7835,20 @@
                 o("b33d1518", "Sincronizar empleos desde una integración compatible o un feed XML personalizado"),
                 o("dd2db402", "Paso 1: Recopila la información necesaria"),
                 o("edb098c2", "Paso 2: comunícate con nuestro equipo de soporte"),
-                o("c4474460", "Paso 2: Envía un correo electrónico a nuestro equipo de soporte");
+                o("c4474460", "Paso 2: Envía un correo electrónico a nuestro equipo de soporte"),
+                o("a08da0fa", "¿Qué sucede a continuación?"),
+                o("c127374e", "Envíanos un mensaje"),
+                o("b2cb2a0c", "Nombre de usuario de tu cuenta de organización verificada"),
+                o("b8e64002", "Nombre de tu sistema de seguimiento de candidatos"),
+                o("acb99db6", "URL del sitio de empleos donde aparecen tus ofertas"),
+                o("a64a5b7a", "Envía la información necesaria a nuestro equipo de soporte para iniciar el proceso de integración."),
+                o("e3dffb4e", "Copia nuestra dirección de correo electrónico de soporte y envía la información necesaria a nuestro equipo de soporte para iniciar el proceso de integración."),
+                o("b4fef99e", "Una vez que nuestro equipo de soporte reciba tu solicitud, revisaremos tu información y te ayudaremos a configurar tu integración."),
+                o("h37f2d96", "Ten en cuenta que actualmente no se admiten todos los sistemas de seguimiento de candidatos."),
+                o("ce102a20", "Redirigiendo a Stripe"),
+                o("ddfd6718", "Error en el pago"),
+                o("i90ea7d2", "Actualiza tu facturación de inmediato para mantener tus beneficios."),
+                o("a62359e6", "Configuración de Organizaciones verificadas");
             function s(e, a) {
                 for (var n = 0; n < a.length; n++) {
                     var o = a[n];
@@ -7887,20 +7887,7 @@
                     i(e, a)
                 );
             }
-            o("a08da0fa", "¿Qué sucede a continuación?"),
-                o("c127374e", "Envíanos un mensaje"),
-                o("b2cb2a0c", "Nombre de usuario de tu cuenta de organización verificada"),
-                o("b8e64002", "Nombre de tu sistema de seguimiento de candidatos"),
-                o("acb99db6", "URL del sitio de empleos donde aparecen tus ofertas"),
-                o("a64a5b7a", "Envía la información necesaria a nuestro equipo de soporte para iniciar el proceso de integración."),
-                o("e3dffb4e", "Copia nuestra dirección de correo electrónico de soporte y envía la información necesaria a nuestro equipo de soporte para iniciar el proceso de integración."),
-                o("b4fef99e", "Una vez que nuestro equipo de soporte reciba tu solicitud, revisaremos tu información y te ayudaremos a configurar tu integración."),
-                o("h37f2d96", "Ten en cuenta que actualmente no se admiten todos los sistemas de seguimiento de candidatos."),
-                o("ce102a20", "Redirigiendo a Stripe"),
-                o("ddfd6718", "Error en el pago"),
-                o("i90ea7d2", "Actualiza tu facturación de inmediato para mantener tus beneficios."),
-                o("a62359e6", "Configuración de Organizaciones verificadas"),
-                o("ge221b7c", "Actualiza la suscripción de Organización verificada para obtener acceso a las cuentas afiliadas y a más créditos de anuncios."),
+            o("ge221b7c", "Actualiza la suscripción de Organización verificada para obtener acceso a las cuentas afiliadas y a más créditos de anuncios."),
                 o("i4dccc18", "Facturación"),
                 o("ec3cd6e4", "Administra tu forma de pago, actualiza la información de pago y revisa tus facturas."),
                 o("dac61c3c", "Configuración de la cuenta"),
@@ -8008,6 +7995,7 @@
                 o("j99e2f4d", function (e) {
                     return e.price + "/" + e.interval;
                 }),
+                o("ieafe1c6", "Confirma tu cambio de suscripción"),
                 o("bb21a170", "Cambiar suscripción"),
                 o("b0dcc4dc", "Tu cuenta ya tiene pendiente un cambio de nivel."),
                 o("f3aef4ca", "No se encontró ninguna suscripción activa"),
@@ -8890,8 +8878,8 @@
                 o("c057680c", "No podemos reproducir el video en este navegador. Prueba con otro navegador web."),
                 o("i5dfae6e", "Este video no está disponible en tu ubicación."),
                 o("c2388276", "Este video se eliminó."),
-                o("d2c96140", "Indicador del audio del invitado");
-            o("f6dc9146", "REPETICIÓN"),
+                o("d2c96140", "Indicador del audio del invitado"),
+                o("f6dc9146", "REPETICIÓN"),
                 o("d30c74fe", "Volumen"),
                 o("f2d4e6f2", "Ver de nuevo"),
                 o("e9f1af3a", "Obtener más información"),
@@ -8902,10 +8890,10 @@
                 o("ecda5f9e", "Engañoso"),
                 o("a423473c", "Aviso obligatorio por ley"),
                 o("b3296688", "Visibilidad limitada"),
-                o("ccd32094", "Ahora"),
-                o("abfcce0d", function (e) {
-                    return "Hace " + e.amountOfTime;
-                }),
+                o("ccd32094", "Ahora");
+            o("abfcce0d", function (e) {
+                return "Hace " + e.amountOfTime;
+            }),
                 o("ae408b76", "Reposteaste"),
                 o("j355f008", "Post fijado"),
                 o("habf9678", "Anclado por el autor"),
@@ -12101,24 +12089,6 @@
                             },
                         },
                         {
-                            key: "ca87939f",
-                            get: function () {
-                                return ["Al suscribirte, aceptas nuestros ", ". Las suscripciones se renuevan automáticamente hasta que se cancelan, tal como se describe en los ", ". ", ". Cancélala al menos 24 horas antes de la renovación para evitar cargos adicionales. Si eliges un nivel de suscripción superior, el crédito correspondiente a lo que queda de tu suscripción anterior se acreditará en tu cuenta y se utilizará automáticamente en los pagos posteriores. Para suscribirte, necesitas un número de teléfono verificado. "];
-                            },
-                        },
-                        {
-                            key: "ed2a6ba9",
-                            get: function () {
-                                return ["Al suscribirte, aceptas nuestros ", ". Las suscripciones se renuevan automáticamente hasta que se cancelan, tal como se describe en los ", ". ", ". Cancélala al menos 24 horas antes de la renovación para evitar cargos adicionales. Si eliges un nivel de suscripción inferior, tu suscripción actual y las funciones asociadas cambiarán inmediatamente de acuerdo con el nuevo nivel de suscripción. No recibirás un reembolso por tu suscripción anterior, a menos que lo exija la ley. Además, se te cobrará de inmediato el precio del nivel nuevo. Para suscribirte, necesitas un número de teléfono verificado."];
-                            },
-                        },
-                        {
-                            key: "db638a21",
-                            get: function () {
-                                return ["Al suscribirte, aceptas nuestros ", ". Las suscripciones se renuevan automáticamente hasta que se cancelan, tal como se describe en los ", ". ", ". Cancélala al menos 24 horas antes de la renovación para evitar cargos adicionales. Si cambias tu plan, tu suscripción nueva comenzará inmediatamente. El crédito correspondiente a lo que queda de tu suscripción anterior se acreditará en tu cuenta y se utilizará automáticamente en los pagos posteriores. Para suscribirte, necesitas un número de teléfono verificado. "];
-                            },
-                        },
-                        {
                             key: "b2138d0f",
                             get: function () {
                                 return ["Al suscribirte, aceptas nuestros ", ". Las suscripciones se renuevan automáticamente hasta que se cancelan, tal como se describe en los ", ". ", ". Cancélala al menos 24 horas antes de la renovación para evitar cargos adicionales. Si eliges un nivel de suscripción superior, tu suscripción actual y las funciones asociadas cambiarán inmediatamente de acuerdo con el nuevo nivel de suscripción. Se te cobrará el precio del nuevo nivel de inmediato, pero el saldo prorrateado de tu ciclo de facturación actual se acreditará en el cargo total de hoy. No recibirás un reembolso por tu suscripción anterior, a menos que lo exija la ley."];
@@ -13248,4 +13218,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/es.034e042a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/es.ed9d667a.js.map

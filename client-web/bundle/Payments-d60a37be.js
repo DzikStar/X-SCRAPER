@@ -3,14 +3,14 @@
     ["bundle.Payments-d60a37be"],
     {
         43429: (e, t, n) => {
-            n.d(t, { $W: () => a, DH: () => f, Ln: () => m, Ms: () => b, NU: () => y, Rz: () => o, Vq: () => i, ah: () => c, cX: () => l, dX: () => u, hv: () => h, ic: () => r, q9: () => g, uc: () => _, w8: () => s, wC: () => d, wG: () => p });
+            n.d(t, { $W: () => a, DH: () => f, Ln: () => m, Ms: () => b, NU: () => y, Rz: () => o, Vq: () => c, ah: () => i, cX: () => l, dX: () => u, hv: () => h, ic: () => r, q9: () => g, uc: () => _, w8: () => s, wC: () => d, wG: () => p });
             n(202784);
             const r = 25,
                 a = "xpayments-preset-all",
                 s = (Object.freeze({ onboarding: "onboarding", upgradeToKycDocumentsVerified: "upgradeToKycDocumentsVerified" }), 280),
                 o = Object.freeze({ credit: "credit", debit: "debit" }),
-                c = (Object.freeze({ XPayments: "XPayments" }), Object.freeze({ reviewPane: "reviewPane", amountPane: "amountPane", successPane: "successPane" })),
-                i = Object.freeze({ termsPane: "termsPane" }),
+                i = (Object.freeze({ XPayments: "XPayments" }), Object.freeze({ reviewPane: "reviewPane", amountPane: "amountPane", successPane: "successPane" })),
+                c = Object.freeze({ termsPane: "termsPane" }),
                 l = Object.freeze({ reviewPane: "reviewPane", participantPane: "participantPane" }),
                 d = Object.freeze({ bankDeposit: "bankDeposit", bankWithdraw: "bankWithdraw", card: "card", atm: "atm" }),
                 u = Object.freeze({ bank: "bank", card: "card", x: "x" }),
@@ -29,13 +29,13 @@
                 a = n(107267),
                 s = n(507651),
                 o = n(952793),
-                c = n(514639),
-                i = n(412100);
+                i = n(514639),
+                c = n(412100);
             const l = () => {
                     const e = (0, a.useLocation)(),
-                        { hasPendingTransactions: t } = (0, i.Z)(),
+                        { hasPendingTransactions: t } = (0, c.Z)(),
                         n = (0, o.hC)("payments_card_spend_enabled"),
-                        l = r.useMemo(() => [{ to: { pathname: c.gp }, key: c.gp, label: "Account", isActive: () => e.pathname === c.gp }, n ? { to: { pathname: c.Tb }, key: c.Tb, label: "Card", isActive: () => e.pathname === c.Tb } : null, { to: { pathname: c.bR }, key: c.bR, label: "Activity", isActive: () => e.pathname === c.bR, badgePip: t }], [n, t, e.pathname]);
+                        l = r.useMemo(() => [{ to: { pathname: i.gp }, key: i.gp, label: "Account", isActive: () => e.pathname === i.gp }, n ? { to: { pathname: i.Tb }, key: i.Tb, label: "Card", isActive: () => e.pathname === i.Tb } : null, { to: { pathname: i.bR }, key: i.bR, label: "Activity", isActive: () => e.pathname === i.bR, badgePip: t }], [n, t, e.pathname]);
                     return r.createElement(s.Z, { isPillLink: !0, links: l });
                 },
                 d = r.memo(l);
@@ -46,8 +46,8 @@
                 a = n(437429),
                 s = n.n(a),
                 o = n(107267),
-                c = n(413722),
-                i = n(980407),
+                i = n(413722),
+                c = n(980407),
                 l = n(736063),
                 d = n(782642),
                 u = n(725516),
@@ -74,12 +74,12 @@
             const Z = ({ onClose: e, onSubmit: t }) => {
                     const n = (0, u.z)(),
                         [a, s] = r.useState(""),
-                        [o, c] = r.useState(!1),
-                        i = (0, C.jh)(),
+                        [o, i] = r.useState(!1),
+                        c = (0, C.jh)(),
                         l = r.useCallback(() => {
-                            c(!0),
+                            i(!0),
                                 t({ challengeResponse: a }).finally(() => {
-                                    c(!1);
+                                    i(!1);
                                 });
                         }, [t, a]),
                         d = r.useCallback((e) => {
@@ -89,7 +89,7 @@
                         r.useEffect(() => {
                             n && n.scribe({ page: "money", section: "money-2fa-app", action: "impression" });
                         }, [n]),
-                        r.createElement(r.Fragment, null, r.createElement(y.Z, { style: i.container }, r.createElement(b.ZP, { size: "title3", weight: "bold" }, "Enter the code from your authenticator app"), r.createElement(v.Z, { autoFocus: !0, label: "Code", name: "code", onChange: d, showPasswordVisibilityIcon: !0, style: C.ZP.paddingNone, testID: "code", type: "password", value: a })), r.createElement(y.Z, { style: i.footer }, r.createElement(w.ZP, { disabled: !a || o, onPress: l, size: "large", type: "primaryFilled" }, o ? r.createElement(P.Z, null) : "Next")))
+                        r.createElement(r.Fragment, null, r.createElement(y.Z, { style: c.container }, r.createElement(b.ZP, { size: "title3", weight: "bold" }, "Enter the code from your authenticator app"), r.createElement(v.Z, { autoFocus: !0, label: "Code", name: "code", onChange: d, showPasswordVisibilityIcon: !0, style: C.ZP.paddingNone, testID: "code", type: "password", value: a })), r.createElement(y.Z, { style: c.footer }, r.createElement(w.ZP, { disabled: !a || o, onPress: l, size: "large", type: "primaryFilled" }, o ? r.createElement(P.Z, null) : "Next")))
                     );
                 },
                 I = { context: "TwoFactorAppCode" };
@@ -100,12 +100,12 @@
                 S = ({ onClose: e, onSubmit: t }) => {
                     const n = (0, u.z)(),
                         [a, s] = r.useState(""),
-                        [o, c] = r.useState(!1),
-                        i = (0, C.jh)(),
+                        [o, i] = r.useState(!1),
+                        c = (0, C.jh)(),
                         l = r.useCallback(() => {
-                            c(!0),
+                            i(!0),
                                 t({ challengeResponse: a }).finally(() => {
-                                    c(!1);
+                                    i(!1);
                                 });
                         }, [t, a]),
                         d = r.useCallback((e) => {
@@ -115,7 +115,7 @@
                         r.useEffect(() => {
                             n && n.scribe({ page: "money", section: "money-2fa-backup", action: "impression" });
                         }, [n]),
-                        r.createElement(r.Fragment, null, r.createElement(y.Z, { style: i.container }, r.createElement(b.ZP, { size: "title3", weight: "bold" }, "Enter your backup code"), r.createElement(v.Z, { autoFocus: !0, label: "Code", name: "code", onChange: d, showPasswordVisibilityIcon: !0, style: C.ZP.paddingNone, testID: "code", type: "password", value: a })), r.createElement(y.Z, { style: i.footer }, r.createElement(w.ZP, { disabled: !a || o, onPress: l, size: "large", type: "primaryFilled" }, o ? r.createElement(P.Z, null) : "Next")))
+                        r.createElement(r.Fragment, null, r.createElement(y.Z, { style: c.container }, r.createElement(b.ZP, { size: "title3", weight: "bold" }, "Enter your backup code"), r.createElement(v.Z, { autoFocus: !0, label: "Code", name: "code", onChange: d, showPasswordVisibilityIcon: !0, style: C.ZP.paddingNone, testID: "code", type: "password", value: a })), r.createElement(y.Z, { style: c.footer }, r.createElement(w.ZP, { disabled: !a || o, onPress: l, size: "large", type: "primaryFilled" }, o ? r.createElement(P.Z, null) : "Next")))
                     );
                 },
                 F = { context: "TwoFactorBackupCode" };
@@ -161,12 +161,12 @@
             const N = ({ onClose: e, onSubmit: t }) => {
                     const n = (0, u.z)(),
                         [a, s] = r.useState(""),
-                        [o, c] = r.useState(!1),
-                        i = (0, C.jh)(),
+                        [o, i] = r.useState(!1),
+                        c = (0, C.jh)(),
                         l = r.useCallback(() => {
-                            c(!0),
+                            i(!0),
                                 t({ challengeResponse: a }).finally(() => {
-                                    c(!1);
+                                    i(!1);
                                 });
                         }, [t, a]),
                         d = r.useCallback((e) => {
@@ -176,7 +176,7 @@
                         r.useEffect(() => {
                             n && n.scribe({ page: "money", section: "money-2fa-sms", action: "impression" });
                         }, [n]),
-                        r.createElement(r.Fragment, null, r.createElement(y.Z, { style: i.container }, r.createElement(b.ZP, { size: "title3", weight: "bold" }, "Enter the code we sent to your phone"), r.createElement(v.Z, { autoFocus: !0, label: "Code", name: "code", onChange: d, showPasswordVisibilityIcon: !0, style: C.ZP.paddingNone, testID: "code", type: "password", value: a })), r.createElement(y.Z, { style: i.footer }, r.createElement(w.ZP, { disabled: !a || o, onPress: l, size: "large", type: "primaryFilled" }, o ? r.createElement(P.Z, null) : "Next")))
+                        r.createElement(r.Fragment, null, r.createElement(y.Z, { style: c.container }, r.createElement(b.ZP, { size: "title3", weight: "bold" }, "Enter the code we sent to your phone"), r.createElement(v.Z, { autoFocus: !0, label: "Code", name: "code", onChange: d, showPasswordVisibilityIcon: !0, style: C.ZP.paddingNone, testID: "code", type: "password", value: a })), r.createElement(y.Z, { style: c.footer }, r.createElement(w.ZP, { disabled: !a || o, onPress: l, size: "large", type: "primaryFilled" }, o ? r.createElement(P.Z, null) : "Next")))
                     );
                 },
                 O = { context: "TwoFactorSms" };
@@ -195,10 +195,10 @@
                     return { error: r, ...(a && { challenge: a.challenge, loginRequestId: a.id, twoFactor: { id: a.two_factor_auth_method.id, type: a.two_factor_auth_method.two_factor_type }, verified: !!a.verified }) };
                 },
                 $ = "Please try again later or contact support team.",
-                G = "The request expired, try again.",
-                X = "The 2FA method on your account has an issue. Go to the app Settings, verify it, and try again.",
-                B = "Too many attempts, try again later.",
-                K = { DuplicatedRenameTwoFactorMethodDisplayName: X, ExpiredLoginVerification: G, FailureSmsCarrierDisabled: "We were not able to send an SMS to this carrier.", IneligibleFor2faAfterModification: X, InvalidRenameTwoFactorMethodDisplayName: X, LoginVerificationUserReactivationRequired: X, NoSecretForUser: X, NoTwoFactorAuthMethod: X, NotAllowed: X, NotValidForTokenExchange: X, NotYetApprovedLoginVerification: X, OfflineCodeSync: X, OverLoginVerificationAttemptLimit: B, OverLoginVerificationConvertLimit: B, OverResendLimit: B, SmsOverPerUserLimit: B, TwoFactorAuthMethodExpired: G, FailureSendingLoginVerificationRequest: $, OverLoginVerificationStartLimit: B, SmsVerPerUserLimit: B, TwoFactorAuthMethodDoesNotExist: X },
+                B = "The request expired, try again.",
+                G = "The 2FA method on your account has an issue. Go to the app Settings, verify it, and try again.",
+                X = "Too many attempts, try again later.",
+                K = { DuplicatedRenameTwoFactorMethodDisplayName: G, ExpiredLoginVerification: B, FailureSmsCarrierDisabled: "We were not able to send an SMS to this carrier.", IneligibleFor2faAfterModification: G, InvalidRenameTwoFactorMethodDisplayName: G, LoginVerificationUserReactivationRequired: G, NoSecretForUser: G, NoTwoFactorAuthMethod: G, NotAllowed: G, NotValidForTokenExchange: G, NotYetApprovedLoginVerification: G, OfflineCodeSync: G, OverLoginVerificationAttemptLimit: X, OverLoginVerificationConvertLimit: X, OverResendLimit: X, SmsOverPerUserLimit: X, TwoFactorAuthMethodExpired: B, FailureSendingLoginVerificationRequest: $, OverLoginVerificationStartLimit: X, SmsVerPerUserLimit: X, TwoFactorAuthMethodDoesNotExist: G },
                 Q = ({ challengeId: e, isNonModalScreen: t, onSuccess: n }) => {
                     const { challenge: a, error: l, loginRequestId: p, twoFactor: _ } = W({ challengeId: e }),
                         h = (0, o.useHistory)(),
@@ -227,8 +227,8 @@
                         Z = r.useCallback(() => {
                             (0, m.qc)({ environment: b, closePath: C, challengeInitiator: P, history: h });
                         }, [P, C, b, h]),
-                        I = r.useMemo(() => (_?.type === c.O.BackupCode ? r.createElement(q, { onClose: Z, onSubmit: w }) : a && _?.type === c.O.Passkey ? r.createElement(D, { challenge: a, onClose: Z, onSubmit: w }) : _?.type === c.O.Sms ? r.createElement(L, { onClose: Z, onSubmit: w }) : _?.type === c.O.Totp ? r.createElement(k, { onClose: Z, onSubmit: w }) : r.createElement(z, { error: l ? (K[l] ?? $) : $, onClose: Z })), [a, l, Z, w, _?.type]);
-                    return r.createElement(i.Z, { backButtonType: "close", history: h, isFullWidth: t, onBackClick: Z }, I);
+                        I = r.useMemo(() => (_?.type === i.O.BackupCode ? r.createElement(q, { onClose: Z, onSubmit: w }) : a && _?.type === i.O.Passkey ? r.createElement(D, { challenge: a, onClose: Z, onSubmit: w }) : _?.type === i.O.Sms ? r.createElement(L, { onClose: Z, onSubmit: w }) : _?.type === i.O.Totp ? r.createElement(k, { onClose: Z, onSubmit: w }) : r.createElement(z, { error: l ? (K[l] ?? $) : $, onClose: Z })), [a, l, Z, w, _?.type]);
+                    return r.createElement(c.Z, { backButtonType: "close", history: h, isFullWidth: t, onBackClick: Z }, I);
                 },
                 J = { context: "VerifyTwoFactorAuth" };
             function Y(e) {
@@ -243,8 +243,8 @@
                 a = n(325686),
                 s = n(437429),
                 o = n.n(s),
-                c = n(107267),
-                i = n(167630),
+                i = n(107267),
+                c = n(167630),
                 l = n(362075),
                 d = n(392237),
                 u = n(980407),
@@ -289,27 +289,27 @@
                 },
                 C = Object.freeze({ changePhone: "change-phone", success: "success", failure: "failure", ineligible: "ineligible", pendingReview: "pending-review", redirect: "redirect", close: "close", ready: "ready", initPorts: "initPorts", invalidChallenge: "invalid-challenge", docvChallenge: "challenge-docv-required", kycChallenge: "challenge-kyc-required", selfieChallenge: "challenge-selfie-required", twoFactorChallenge: "challenge-2fa-required", accountNumbercopiedToClipboard: "account-number-copied-to-clipboard", routingNumbercopiedToClipboard: "routing-number-copied-to-clipboard", edit: "edit", forgotPin: "forgot-pin", kyc: "kyc", stepUpDocv: "stepUpDocv" }),
                 Z = (0, v.bI)(),
-                I = ({ allowClipboardWrite: e, iframeUrl: t, isInlineFrame: n, isNonModalScreen: s }) => {
-                    const o = (0, c.useHistory)(),
-                        [d, m] = r.useState(!1),
-                        h = (0, p.ZP)() ? F.paddingSmall : null,
-                        f = r.useCallback(() => {
-                            m(!0);
+                I = ({ allowClipboardWrite: e, iframeUrl: t, isBackgroundHidden: n, isInlineFrame: s, isNonModalScreen: o }) => {
+                    const d = (0, i.useHistory)(),
+                        [m, h] = r.useState(!1),
+                        f = (0, p.ZP)() ? F.paddingSmall : null,
+                        g = r.useCallback(() => {
+                            h(!0);
                         }, []),
-                        g = r.createElement(a.Z, { style: F.modal }, t && r.createElement(r.Fragment, null, !d && r.createElement(i.Z, { size: "small", style: b.ZP.spinner, testID: "loading-spinner" }), r.createElement(l.Z, { allowClipboardWrite: e, allowForms: !0, onLoad: f, reportError: _.ZP, src: t, style: d ? [F.idvIframe, n ? void 0 : h] : F.hide, title: "Money" })));
-                    return s || n ? g : r.createElement(u.Z, { history: o, renderHeader: () => null }, g);
+                        y = r.createElement(a.Z, { style: n ? F.hide : F.modal }, t && r.createElement(r.Fragment, null, !m && r.createElement(c.Z, { size: "small", style: b.ZP.spinner, testID: "loading-spinner" }), r.createElement(l.Z, { allowClipboardWrite: e, allowForms: !0, onLoad: g, reportError: _.ZP, src: t, style: m ? [F.idvIframe, s ? void 0 : f] : F.hide, title: "Money" })));
+                    return o || s || n ? y : r.createElement(u.Z, { history: d, renderHeader: () => null }, y);
                 },
                 E = (e) => {
-                    const { additionalParams: t, linkType: n = h.P_.onboarding, redirectPath: a, errorPath: s, redirectState: i, closePath: l, eventCallback: d, payload: u, isNonModalScreen: m, challengeInitiator: p, challengeId: _ } = e,
-                        b = (0, c.useHistory)(),
-                        { paymentsOrigin: w } = (0, f.Z)(),
-                        E = g.Z.getSession(),
-                        k = g.Z.getProviderToken(),
-                        S = (0, v.gh)(),
-                        [F, T] = r.useState(!1),
-                        q = o()(),
-                        { allowClipboardWrite: x, defaultClosePath: A, isInlineFrame: R, path: z, redirectOnCompletion: H } = h.QU[n],
-                        D = r.useCallback(
+                    const { additionalParams: t, linkType: n = h.P_.onboarding, redirectPath: a, errorPath: s, redirectState: c, closePath: l, eventCallback: d, payload: u, isNonModalScreen: m, isBackgroundHidden: p, challengeInitiator: _, challengeId: b } = e,
+                        w = (0, i.useHistory)(),
+                        { paymentsOrigin: E } = (0, f.Z)(),
+                        k = g.Z.getSession(),
+                        S = g.Z.getProviderToken(),
+                        F = (0, v.gh)(),
+                        [T, q] = r.useState(!1),
+                        x = o()(),
+                        { allowClipboardWrite: A, defaultClosePath: R, isInlineFrame: z, path: H, redirectOnCompletion: D } = h.QU[n],
+                        N = r.useCallback(
                             (e) => {
                                 const { errors: t, message: n, url: r } = e.data;
                                 switch (n) {
@@ -319,33 +319,33 @@
                                         break;
                                     }
                                     case C.changePhone:
-                                        b.push("/settings/phone");
+                                        w.push("/settings/phone");
                                         break;
                                     case C.success:
-                                        H && T(!0);
+                                        D && q(!0);
                                         break;
                                     case C.failure:
-                                        H && b.replace(s ?? h.D$, { errors: t });
+                                        D && w.replace(s ?? h.D$, { errors: t });
                                         break;
                                     case C.ineligible:
-                                        (0, v.J$)(q), b.replace(h.H0);
+                                        (0, v.J$)(x), w.replace(h.H0);
                                         break;
                                     case C.pendingReview:
-                                        (0, v.J$)(q), b.replace(h.vr);
+                                        (0, v.J$)(x), w.replace(h.vr);
                                         break;
                                     case C.redirect:
                                         Z && (window.location.href = r);
                                         break;
                                     case C.close:
-                                        (0, v.J$)(q), b.replace(l ?? A);
+                                        (0, v.J$)(x), w.replace(l ?? R);
                                 }
                                 d?.(e);
                             },
-                            [d, b, H, q, l, A, u, s],
+                            [d, w, D, x, l, R, u, s],
                         );
-                    P({ allowedOrigin: w, handler: D, linkType: n });
-                    const N = r.useMemo(() => {
-                        if (!E || !w || !k) return;
+                    P({ allowedOrigin: E, handler: N, linkType: n });
+                    const O = r.useMemo(() => {
+                        if (!k || !E || !S) return;
                         const e = new Map();
                         return (
                             t?.forEach(({ key: t, value: n }) => {
@@ -357,15 +357,15 @@
                                     (({ challengeId: e, challengeInitiator: t }) => {
                                         const n = new URL(`https://${window.location.host}${h.$l}`);
                                         return e && n.searchParams.set("challengeId", e), t && n.searchParams.set("challengeInitiator", t), n.href;
-                                    })({ challengeId: _, challengeInitiator: p }),
+                                    })({ challengeId: b, challengeInitiator: _ }),
                                 ),
-                            (0, v.uG)({ basePath: `/${z}`, xPaymentsSession: E, theme: S, paymentsOrigin: w, moreSearchParams: e, providerToken: k })
+                            (0, v.uG)({ basePath: `/${H}`, xPaymentsSession: k, theme: F, paymentsOrigin: E, moreSearchParams: e, providerToken: S })
                         );
-                    }, [E, w, k, t, z, S, _, p]);
-                    return F ? r.createElement(y.default, { challengeId: _, challengeInitiator: p, linkType: n, redirectPath: a, redirectState: i }) : r.createElement(I, { allowClipboardWrite: x, iframeUrl: N, isInlineFrame: R, isNonModalScreen: m });
+                    }, [k, E, S, t, H, F, b, _]);
+                    return T ? r.createElement(y.default, { challengeId: b, challengeInitiator: _, linkType: n, redirectPath: a, redirectState: c }) : r.createElement(I, { allowClipboardWrite: A, iframeUrl: O, isBackgroundHidden: p, isInlineFrame: z, isNonModalScreen: m });
                 },
                 k = (e) => {
-                    const t = r.createElement(i.Z, { size: "small", style: b.ZP.spinner, testID: "loading-spinner" });
+                    const t = r.createElement(c.Z, { size: "small", style: b.ZP.spinner, testID: "loading-spinner" });
                     return r.createElement(m.B, { fallback: t }, r.createElement(E, e));
                 },
                 S = r.memo(k),
@@ -377,11 +377,11 @@
                 a = (n(585488), n(353391)),
                 s = n.n(a),
                 o = n(312771),
-                c = n(127218),
-                i = n(43429);
+                i = n(127218),
+                c = n(43429);
             const l = r.Z,
                 d = () => {
-                    const { data: e, fetchNext: t, refetch: n, subsequentFetchStatus: r } = (0, c.C)(l, { count: i.ic }),
+                    const { data: e, fetchNext: t, refetch: n, subsequentFetchStatus: r } = (0, i.C)(l, { count: c.ic }),
                         a = e?.get_payments_customer_actions?.__id ?? "useActionableItemsQuery_TransactionActions_slice";
                     return (
                         s()([a], () => {
@@ -397,10 +397,10 @@
                 a = n(202784),
                 s = (n(585488), n(351743)),
                 o = n.n(s),
-                c = n(727384);
-            const i = r.Z,
+                i = n(727384);
+            const c = r.Z,
                 l = () => {
-                    const [e, t] = o()(i);
+                    const [e, t] = o()(c);
                     return [
                         a.useCallback(
                             ({ recordId: t, transactionId: n }) =>
@@ -411,13 +411,13 @@
                                             const n = e?.cancel_transfer?.id,
                                                 s = e?.cancel_transfer?.challenge_id,
                                                 o = e?.cancel_transfer?.transaction_status,
-                                                c = e?.cancel_transfer?.errors;
-                                            n && o ? r({ transactionId: n, status: o, challengeId: s }) : a(c || t);
+                                                i = e?.cancel_transfer?.errors;
+                                            n && o ? r({ transactionId: n, status: o, challengeId: s }) : a(i || t);
                                         },
                                         updater: (e, n) => {
                                             const r = n?.cancel_transfer?.transaction_status,
                                                 a = n?.cancel_transfer?.reason_code;
-                                            (0, c.H_)(e, { status: r, recordId: t, reasonCode: a });
+                                            (0, i.H_)(e, { status: r, recordId: t, reasonCode: a });
                                         },
                                         onError: a,
                                     });
@@ -434,10 +434,10 @@
                 a = n(202784),
                 s = (n(585488), n(351743)),
                 o = n.n(s),
-                c = n(727384);
-            const i = r.Z,
+                i = n(727384);
+            const c = r.Z,
                 l = () => {
-                    const [e, t] = o()(i);
+                    const [e, t] = o()(c);
                     return [
                         a.useCallback(
                             ({ recordId: t, transactionId: n }) =>
@@ -448,13 +448,13 @@
                                             const n = e?.cancel_request_transfer?.id,
                                                 s = e?.cancel_request_transfer?.transaction_status,
                                                 o = e?.cancel_request_transfer?.challenge_id,
-                                                c = e?.cancel_request_transfer?.errors;
-                                            n && s ? r({ transactionId: n, status: s, challengeId: o }) : a(c || t);
+                                                i = e?.cancel_request_transfer?.errors;
+                                            n && s ? r({ transactionId: n, status: s, challengeId: o }) : a(i || t);
                                         },
                                         updater: (e, n) => {
                                             const r = n?.cancel_request_transfer?.transaction_status,
                                                 a = n?.cancel_request_transfer?.reason_code;
-                                            (0, c.H_)(e, { status: r, recordId: t, reasonCode: a });
+                                            (0, i.H_)(e, { status: r, recordId: t, reasonCode: a });
                                         },
                                         onError: a,
                                     });
@@ -471,8 +471,8 @@
                 a = n(202784),
                 s = (n(585488), n(351743)),
                 o = n.n(s),
-                c = n(402229),
-                i = n(727384);
+                i = n(402229),
+                c = n(727384);
             const l = r.Z,
                 d = ({ decision: e }) => {
                     const [t, n] = o()(l);
@@ -486,13 +486,13 @@
                                             const n = e?.claim_transfer?.id,
                                                 r = e?.claim_transfer?.transaction_status,
                                                 o = e?.claim_transfer?.challenge_id,
-                                                c = e?.claim_transfer?.errors;
-                                            n && r ? a({ transactionId: n, status: r, challengeId: o }) : s(c || t);
+                                                i = e?.claim_transfer?.errors;
+                                            n && r ? a({ transactionId: n, status: r, challengeId: o }) : s(i || t);
                                         },
                                         updater: (e, t) => {
                                             const r = t?.claim_transfer?.transaction_status,
                                                 a = t?.claim_transfer?.reason_code;
-                                            (0, i.H_)(e, { status: r, recordId: n, reasonCode: a });
+                                            (0, c.H_)(e, { status: r, recordId: n, reasonCode: a });
                                         },
                                         onError: s,
                                     });
@@ -502,8 +502,8 @@
                         n,
                     ];
                 },
-                u = () => d({ decision: c.R.ClaimTransferDecisionAccept }),
-                m = () => d({ decision: c.R.ClaimTransferDecisionReject });
+                u = () => d({ decision: i.R.ClaimTransferDecisionAccept }),
+                m = () => d({ decision: i.R.ClaimTransferDecisionReject });
         },
         202241: (e, t, n) => {
             n.d(t, { F8: () => m, yA: () => u });
@@ -511,8 +511,8 @@
                 a = n(202784),
                 s = (n(585488), n(351743)),
                 o = n.n(s),
-                c = n(402311),
-                i = n(727384);
+                i = n(402311),
+                c = n(727384);
             const l = r.Z,
                 d = ({ decision: e }) => {
                     const [t, n] = o()(l);
@@ -526,15 +526,15 @@
                                             const n = e?.confirm_unrecognized_payment?.transaction,
                                                 r = n?.id,
                                                 o = n?.transaction_status,
-                                                c = e?.confirm_unrecognized_payment?.errors,
-                                                i = e?.confirm_unrecognized_payment?.challenge_id;
-                                            r && o ? a({ transactionId: r, status: o, challengeId: i }) : s(c || t);
+                                                i = e?.confirm_unrecognized_payment?.errors,
+                                                c = e?.confirm_unrecognized_payment?.challenge_id;
+                                            r && o ? a({ transactionId: r, status: o, challengeId: c }) : s(i || t);
                                         },
                                         updater: (e, t) => {
                                             const r = t?.confirm_unrecognized_payment?.transaction,
                                                 a = r?.transaction_status,
                                                 s = r?.reason_code;
-                                            (0, i.H_)(e, { status: a, recordId: n, reasonCode: s });
+                                            (0, c.H_)(e, { status: a, recordId: n, reasonCode: s });
                                         },
                                         onError: s,
                                     });
@@ -544,8 +544,8 @@
                         n,
                     ];
                 },
-                u = () => d({ decision: c.n.UnrecognizedPaymentDecisionAccept }),
-                m = () => d({ decision: c.n.UnrecognizedPaymentDecisionReject });
+                u = () => d({ decision: i.n.UnrecognizedPaymentDecisionAccept }),
+                m = () => d({ decision: i.n.UnrecognizedPaymentDecisionReject });
         },
         467734: (e, t, n) => {
             n.d(t, { Z: () => s });
@@ -554,12 +554,12 @@
             const s = ({ senderId: e }) => (0, r.v9)(a._h) === e;
         },
         226595: (e, t, n) => {
-            n.d(t, { Z: () => c });
+            n.d(t, { Z: () => i });
             var r = n(642004),
                 a = n(87877),
                 s = n(922281),
                 o = n(226332);
-            const c = () => {
+            const i = () => {
                 const { paymentMethods: e } = (0, o.Z)(a.U.PaymentMethodFilterSpending),
                     t = e?.filter((e) => e.core?.details?.issued_card_type === r.W.IssuedCardTypePhysical);
                 return { cards: e, virtualCards: e?.filter((e) => e.core?.details?.issued_card_type === r.W.IssuedCardTypeVirtual), physicalCards: t, inactivePhysicalCards: t?.filter((e) => e.core?.details?.status === s.D.Inactive) };
@@ -571,12 +571,12 @@
                 a = n(202784),
                 s = (n(585488), n(351743)),
                 o = n.n(s),
-                c = n(952793),
-                i = n(441484),
+                i = n(952793),
+                c = n(441484),
                 l = n(698478);
             const d = r.Z,
                 u = () => {
-                    const e = (0, c.hC)("payments_enabled"),
+                    const e = (0, i.hC)("payments_enabled"),
                         [t, n] = a.useState(),
                         [r, s] = a.useState(!1),
                         [u, m] = o()(d);
@@ -584,8 +584,8 @@
                         u({
                             variables: {},
                             onCompleted: (e) => {
-                                !!e?.check_transfers_eligibility?.eligible && i.Z.fetchNewSession
-                                    ? i.Z.fetchNewSession().finally(() => {
+                                !!e?.check_transfers_eligibility?.eligible && c.Z.fetchNewSession
+                                    ? c.Z.fetchNewSession().finally(() => {
                                           n(e);
                                       })
                                     : n(e);
@@ -607,10 +607,10 @@
                 a = (n(585488), n(353391)),
                 s = n.n(a),
                 o = n(940211),
-                c = n(482924);
-            const i = r.Z,
+                i = n(482924);
+            const c = r.Z,
                 l = () => {
-                    const { data: e, refetch: t, refetchStatus: n } = (0, c.A)(i, {}, { fetchPolicy: "store-and-network" }),
+                    const { data: e, refetch: t, refetchStatus: n } = (0, i.A)(c, {}, { fetchPolicy: "store-and-network" }),
                         r = e.get_accounts?.find((e) => e.identifier === o.b.UserMain),
                         a = r?.__id ?? "get_accounts";
                     return (
@@ -648,32 +648,32 @@
                 };
         },
         57335: (e, t, n) => {
-            n.d(t, { Z: () => c });
+            n.d(t, { Z: () => i });
             var r = n(710555),
                 a = (n(585488), n(940211)),
                 s = n(482924);
             const o = r.Z,
-                c = () => {
+                i = () => {
                     const { data: e } = (0, s.A)(o, {}, { fetchPolicy: "store-and-network" }),
                         t = e.get_accounts?.find((e) => e.identifier === a.b.UserInterest);
                     return { id: t?.id, interest: t?.interest_details };
                 };
         },
         329923: (e, t, n) => {
-            n.d(t, { Z: () => i });
+            n.d(t, { Z: () => c });
             var r = n(204133),
                 a = (n(585488), n(712696)),
                 s = n.n(a),
                 o = n(727384);
-            const c = r.Z,
-                i = () => {
-                    const e = s()(c, {}),
+            const i = r.Z,
+                c = () => {
+                    const e = s()(i, {}),
                         t = e?.get_payments_invitation_details,
                         n = t?.invitation_amount_local_micro,
                         r = t?.currency,
                         a = t?.invitation_count,
-                        i = n ? (0, o.vw)({ amount: n, currency: r }) : null;
-                    return { invitationCount: a ? parseInt(a, 10) : null, formattedAmount: i };
+                        c = n ? (0, o.vw)({ amount: n, currency: r }) : null;
+                    return { invitationCount: a ? parseInt(a, 10) : null, formattedAmount: c };
                 };
         },
         889738: (e, t, n) => {
@@ -693,14 +693,14 @@
                 a = (n(585488), n(353391)),
                 s = n.n(a),
                 o = n(87877),
-                c = n(922281),
-                i = n(482924);
+                i = n(922281),
+                c = n(482924);
             const l = r.Z,
                 d = (e) => {
-                    const { data: t, refetch: n, refetchStatus: r } = (0, i.A)(l, { filter: e ?? o.U.PaymentMethodFilterFunding, withIssuedSpend: e === o.U.PaymentMethodFilterSpending }),
+                    const { data: t, refetch: n, refetchStatus: r } = (0, c.A)(l, { filter: e ?? o.U.PaymentMethodFilterFunding, withIssuedSpend: e === o.U.PaymentMethodFilterSpending }),
                         a = t?.get_payment_methods_v2,
-                        d = a?.filter((e) => e.core?.details?.status === c.D.Active),
-                        u = a?.filter((e) => e.core?.details?.status === c.D.Active || e.core?.details?.status === c.D.LoginRequired),
+                        d = a?.filter((e) => e.core?.details?.status === i.D.Active),
+                        u = a?.filter((e) => e.core?.details?.status === i.D.Active || e.core?.details?.status === i.D.LoginRequired),
                         m = a?.[0]?.__id ?? t?.__id;
                     return (
                         s()([m], () => {
@@ -717,8 +717,8 @@
                 a = n(202784),
                 s = (n(585488), n(353391)),
                 o = n.n(s),
-                c = n(107267),
-                i = n(782642),
+                i = n(107267),
+                c = n(782642),
                 l = n(514639),
                 d = n(312771),
                 u = n(482924),
@@ -753,8 +753,8 @@
                 b = r.Z,
                 v = () => {
                     const { data: e, refetch: t, refetchStatus: n } = (0, u.A)(b, {}),
-                        r = (0, c.useHistory)(),
-                        s = (0, i.p)(),
+                        r = (0, i.useHistory)(),
+                        s = (0, c.p)(),
                         m = e?.get_customer?.preferences,
                         p = a.useMemo(() => ({ require_pin_to_create_transactions: !!m?.require_pin_to_create_transactions, require_pin_to_unlock: !!m?.require_pin_to_unlock, enable_bill_pay: !!m?.enable_bill_pay, require_pin_to_link_payment_method: !!m?.require_pin_to_link_payment_method, only_receive_transfer_from_following: !!m?.only_receive_transfer_from_following, only_allow_request_from_following: !!m?.only_allow_request_from_following, enable_card_payments: !!m?.enable_card_payments }), [m]),
                         [_, h] = a.useState(p),
@@ -807,14 +807,14 @@
                 };
         },
         464978: (e, t, n) => {
-            n.d(t, { Z: () => i });
+            n.d(t, { Z: () => c });
             var r = n(192828),
                 a = (n(585488), n(353391)),
                 s = n.n(a),
                 o = n(482924);
-            const c = r.Z,
-                i = (e) => {
-                    const { data: t, refetch: n } = (0, o.A)(c, { transaction_id: e }),
+            const i = r.Z,
+                c = (e) => {
+                    const { data: t, refetch: n } = (0, o.A)(i, { transaction_id: e }),
                         r = t.get_transaction_by_id?.__id ?? "get_transaction_by_id";
                     return (
                         s()([r], () => {
@@ -831,13 +831,13 @@
                 s = n(464978);
             const o = (e) => {
                 const { get_transaction_by_id: t } = (0, s.Z)(e),
-                    { amount_local_micro: n, currency: o, details: c, transaction_status: i, transaction_type: l } = t ?? {},
-                    d = c?.sender_results?.result,
+                    { amount_local_micro: n, currency: o, details: i, transaction_status: c, transaction_type: l } = t ?? {},
+                    d = i?.sender_results?.result,
                     u = d?.legacy?.name ?? "",
                     m = parseFloat(n),
                     p = n ? (0, r.p2)({ amount: m, currency: o }) : null,
                     _ = (0, a.Z)({ senderId: d?.rest_id });
-                return [(0, r.M9)({ status: i, transactionType: l, isViewerSender: _ }), u && p ? { name: u, formattedAmount: p } : null];
+                return [(0, r.M9)({ status: c, transactionType: l, isViewerSender: _ }), u && p ? { name: u, formattedAmount: p } : null];
             };
         },
         825941: (e, t, n) => {
@@ -846,12 +846,12 @@
                 a = (n(585488), n(353391)),
                 s = n.n(a),
                 o = n(127218),
-                c = n(43429);
-            const i = r.Z,
+                i = n(43429);
+            const c = r.Z,
                 l = (e) => {
-                    const t = { count: c.ic };
+                    const t = { count: i.ic };
                     e?.searchFilterId && (t.search_filter_id = e?.searchFilterId);
-                    const { data: n, fetchNext: r, refetch: a } = (0, o.C)(i, t, { fetchPolicy: "store-and-network" }),
+                    const { data: n, fetchNext: r, refetch: a } = (0, o.C)(c, t, { fetchPolicy: "store-and-network" }),
                         l = n?.get_transactions?.__id ?? "usePaymentsTransactionsListQuery_TransactionList_slice";
                     return (
                         s()([l], () => {
@@ -867,8 +867,8 @@
                 a = n(202784),
                 s = (n(585488), n(351743)),
                 o = n.n(s),
-                c = n(364539),
-                i = n(727384);
+                i = n(364539),
+                c = n(727384);
             const l = r.Z,
                 d = ({ decision: e }) => {
                     const [t, n] = o()(l);
@@ -882,13 +882,13 @@
                                             const n = e?.respond_to_request_transfer?.id,
                                                 r = e?.respond_to_request_transfer?.transaction_status,
                                                 o = e?.respond_to_request_transfer?.errors,
-                                                c = e?.respond_to_request_transfer?.challenge_id;
-                                            n && r ? a({ transactionId: n, status: r, challengeId: c }) : s(o || t);
+                                                i = e?.respond_to_request_transfer?.challenge_id;
+                                            n && r ? a({ transactionId: n, status: r, challengeId: i }) : s(o || t);
                                         },
                                         updater: (e, t) => {
                                             const r = t?.respond_to_request_transfer?.transaction_status,
                                                 a = t?.respond_to_request_transfer?.reason_code;
-                                            (0, i.H_)(e, { status: r, recordId: n, reasonCode: a });
+                                            (0, c.H_)(e, { status: r, recordId: n, reasonCode: a });
                                         },
                                         onError: s,
                                     });
@@ -898,9 +898,9 @@
                         n,
                     ];
                 },
-                u = () => d({ decision: c.m.RequestTransferDecisionAccept }),
-                m = () => d({ decision: c.m.RequestTransferDecisionReject });
+                u = () => d({ decision: i.m.RequestTransferDecisionAccept }),
+                m = () => d({ decision: i.m.RequestTransferDecisionReject });
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-d60a37be.59b8e6da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-d60a37be.a76ae60a.js.map

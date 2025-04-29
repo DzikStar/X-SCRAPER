@@ -4279,7 +4279,7 @@
                 t("fa0f1262", "Pauză"),
                 t("c2cac618", "Grok acceptă momentan date din La Liga, Premier League, Bundesliga, Series A și Ligue 1."),
                 t("acae223d", function (e) {
-                    return 'Results for "' + e.prompt + '"';
+                    return "Rezultate pentru „" + e.prompt + "”";
                 }),
                 t("bed99fe2", "Vezi mai puține"),
                 t("f7b57ac0", "Statistici"),
@@ -4808,12 +4808,12 @@
                 t("e7479ce4", "Durata medie de vizionare"),
                 t("g1dfa7d0", "Medie"),
                 t("h7d28188", "Înapoi la conținut"),
-                t("if2704e4", "Back to Live Overview"),
+                t("if2704e4", "Înapoi la vederea generală a transmisiunii în direct"),
                 t("ea928ae4", "Înapoi la Spații"),
                 t("e8c07c22", "transmisiune"),
-                t("a4ce6e68", "Broadcast Metrics"),
-                t("b2214c74", "Total number of views for this broadcast"),
-                t("d4fcf83a", "Total time viewers spent watching this broadcast"),
+                t("a4ce6e68", "Metrici transmisiune"),
+                t("b2214c74", "Numărul total de vizualizări ale transmisiunii"),
+                t("d4fcf83a", "Durata totală pe care spectatorii au petrecut-o vizionând transmisiunea"),
                 t("a89b0322", "Anulat"),
                 t("j3cb12ea", "Ascultători concomitenți"),
                 t("b93931ee", "De câte ori a fost postat conținutul tău."),
@@ -4849,19 +4849,19 @@
                 t("efa0f858", "Numărul de urmăriri și de opriri ale urmării, în timp. Aceste date nu reflectă neapărat numărul tău de urmăritori."),
                 t("g2b06cc6", "Este posibil ca datele despre gen să fie deduse"),
                 t("b66b3baa", "ore"),
-                t("cf8a0772", "Impression to Views"),
-                t("g13d8010", "Last 48 Hours"),
-                t("d5627596", "Last Hour"),
+                t("cf8a0772", "Impresii la vizualizări"),
+                t("g13d8010", "Ultimele 48 de ore"),
+                t("d5627596", "Ultima oră"),
                 t("baf120a6", "Cu cele mai puține interacțiuni"),
                 t("f2382014", "ÎN DIRECT"),
-                t("c4a7a6aa", "Live data"),
-                t("a992032a", "Livestream Analytics"),
+                t("c4a7a6aa", "Date în direct"),
+                t("a992032a", "Analiză flux în direct"),
                 t("ie45edda", "Vedere generală cu fluxul în direct"),
                 t("e30fc268", "Spectatori în direct"),
                 t("bd37f68e", "Activitate de conținut media"),
                 t("fe074210", "(de) minute"),
-                t("jd03a1b8", "Minutes Watched"),
-                t("a20e91e8", "minutes watched"),
+                t("jd03a1b8", "Minute vizionate"),
+                t("a20e91e8", "minute vizionate"),
                 t("ic2bebee", "Monetizat"),
                 t("a1d642c8", "Cu cele mai multe interacțiuni"),
                 t("ifc4c1f8", "Numărul de noi urmăritori obținut în urma acestui conținut."),
@@ -4871,12 +4871,12 @@
                 t("g2ba40f6", "Nu există spații disponibile pentru filtrul selectat"),
                 t("j44061a0", "Indisponibil"),
                 t("c4a93912", "N/A"),
-                t("a6b78788", "No viewer data available"),
+                t("a6b78788", "Nu sunt disponibile date despre spectatori"),
                 t("b2438638", "din total"),
                 t("ic0399e0", "Vizualizări organice"),
                 t("ja5c444a", "Perioada de plată"),
                 t("f04e025e", "Numărul maxim de ascultători concomitenți"),
-                t("d6d10662", "Peak Viewers: "),
+                t("d6d10662", "Număr maxim de spectatori: "),
                 t("d147bea2", "Încearcă mai târziu."),
                 t("f0336d68", "Analiză postare"),
                 t("g85fbd2e", "ID postare"),
@@ -4884,11 +4884,11 @@
                 t("hf4f9bfe", "Link postare"),
                 t("bf5ebf5c", "Postări și răspunsuri"),
                 t("b211652e", "Postări în timp"),
-                t("f2efec0a", "Pre-Published"),
+                t("f2efec0a", "Publicat în prealabil"),
                 t("i61e0302", "Anteriorul"),
                 t("e08a706a", "Vizualizări promovate"),
                 t("cbc99192", "Data publicării"),
-                t("a83c2a9a", "Realtime"),
+                t("a83c2a9a", "Timp real"),
                 t("e9d72896", "Înregistrat"),
                 t("gede4932", "Reluare"),
                 t("h0de359c", "De câte ori a fost repostat acest conținut."),
@@ -4899,20 +4899,20 @@
                 t("fbc79a40", "Prezentare generală Spații"),
                 t("d077112a", "Statistici Spații"),
                 t("cf3709da", "Stare"),
-                t("e797dc32", "Stream time: "),
+                t("e797dc32", "Durata fluxului: "),
                 t("b649d8cc", "Doar abonați"),
-                t("j9282130", "Miniatura Transmisiune"),
-                t("g629b8b0", "Timed Out"),
-                t("eb87323c", "This shows analytics data for the selected time period since the livestream happened."),
-                t("i6a75722", "Time Range"),
+                t("j9282130", "Miniatură transmisiune"),
+                t("g629b8b0", "Expirat"),
+                t("eb87323c", "Afișează date de analiză pentru perioada selectată, de la difuzarea fluxului în direct."),
+                t("i6a75722", "Interval de timp"),
                 t("c602f5b8", "Total"),
                 t("b35e68ae", "Nr. total de participanți"),
                 t("h78ee79a", "Nr. total de vizionări"),
                 t("e3efaed0", "Tip"),
                 t("c37993e2", "Opriri ale urmăririi"),
-                t("b1ed35d0", "Unique Viewers"),
+                t("b1ed35d0", "Spectatori unici"),
                 t("bfad9306", "Necunoscut"),
-                t("b5a58f36", "Untitled Broadcast"),
+                t("b5a58f36", "Transmisiune fără titlu"),
                 t("i70f5278", "Încărcat la:"),
                 t("a98b58b6", "Urmăritori verificați"),
                 t("a5de67ca", "Numărul de urmăritori care și-au verificat contul."),
@@ -7015,10 +7015,6 @@
                 t("db5c77e0", "Acesta este abonamentul tău activ"),
                 t("h77ef73e", "Schimbă la planul lunar"),
                 t("d723d44a", "Schimbă la planul anual"),
-                t("i253b5c6", "Upgrade și plată"),
-                t("d2beeaaa", "Retrogradare și plată"),
-                t("acf719d4", "Schimbare și plată"),
-                t("ieafe1c6", "Confirmă schimbarea abonamentului"),
                 t("gf6b66b8", "Confirmă schimbarea abonamentului, care va intra în vigoare astăzi"),
                 t("e83daf87", function (e) {
                     return "Confirmă schimbarea abonamentului, care va intra în vigoare pe " + e.date;
@@ -7036,15 +7032,6 @@
                 t("d7efb6ba", "Treci de la facturarea lunară la o facturare anuală. Ți se va factura astăzi planul anual, iar soldul lunar rămas, calculat proporțional, va fi creditat din tariful total. Modificarea intră în vigoare imediat, iar facturarea va fi acum anuală."),
                 t("a5f2cf70", "Treci de la facturarea anuală la o facturare lunară. Creditul anual rămas va acoperi plățile lunare până când se termină. Trecerea intră în vigoare imediat, iar facturarea se va face acum lunar."),
                 t("ef1c0208", "Confirmă schimbarea de plan"),
-                t("c20806d5", "Condițiile noastre de utilizare pentru cumpărători"),
-                t("i10be4c9", "Condiții"),
-                t("cdda96d6", "Poți anula oricând"),
-                t("cc67158f", "Condițiile noastre de utilizare pentru cumpărători"),
-                t("eb420831", "Condiții"),
-                t("c7d49608", "Poți anula oricând"),
-                t("ab176bd1", "Condițiile noastre de utilizare pentru cumpărători"),
-                t("cea928a5", "Condiții"),
-                t("e37c69e0", "Poți anula oricând"),
                 t("ia08113f", "Condițiile noastre de utilizare pentru cumpărători"),
                 t("d2962b73", "Condiții"),
                 t("b421795a", "Poți anula oricând"),
@@ -7860,7 +7847,20 @@
                 t("b33d1518", "Sincronizează locurile de muncă dintr-o integrare acceptată sau dintr-un flux personalizat XML"),
                 t("dd2db402", "Pasul 1: Colectează informațiile necesare"),
                 t("edb098c2", "Pasul 2: contactează echipa noastră de asistență"),
-                t("c4474460", "Pasul 2: Trimite un e-mail echipei de asistență");
+                t("c4474460", "Pasul 2: Trimite un e-mail echipei de asistență"),
+                t("a08da0fa", "Ce se întâmplă în continuare?"),
+                t("c127374e", "Trimite-ne un mesaj"),
+                t("b2cb2a0c", "Numele de utilizator al contului tău Organizații verificate"),
+                t("b8e64002", "Numele sistemului de monitorizare a candidaților"),
+                t("acb99db6", "URL-ul la site-ul cu cariere, unde sunt enumerate locurile de muncă"),
+                t("a64a5b7a", "Trimite-i echipei de asistență informațiile necesare pentru a începe procesul de integrare."),
+                t("e3dffb4e", "Copiază adresa de e-mail de asistență de mai jos și trimite-i echipei de asistență informațiile necesare pentru a începe procesul de integrare."),
+                t("b4fef99e", "După ce echipa noastră de asistență primește cererea, vom revizui informațiile furnizate și te vom ajuta să configurezi integrarea."),
+                t("h37f2d96", "Ai în vedere că nu toate sistemele de monitorizare a candidaților sunt acceptate momentan."),
+                t("ce102a20", "Redirecționare către Stripe"),
+                t("ddfd6718", "Plata a eșuat"),
+                t("i90ea7d2", "Actualizează-ți urgent informațiile de facturare pentru a-ți păstra beneficiile."),
+                t("a62359e6", "Setări Organizații verificate");
             function c(e, a) {
                 for (var i = 0; i < a.length; i++) {
                     var t = a[i];
@@ -7899,20 +7899,7 @@
                     u(e, a)
                 );
             }
-            t("a08da0fa", "Ce se întâmplă în continuare?"),
-                t("c127374e", "Trimite-ne un mesaj"),
-                t("b2cb2a0c", "Numele de utilizator al contului tău Organizații verificate"),
-                t("b8e64002", "Numele sistemului de monitorizare a candidaților"),
-                t("acb99db6", "URL-ul la site-ul cu cariere, unde sunt enumerate locurile de muncă"),
-                t("a64a5b7a", "Trimite-i echipei de asistență informațiile necesare pentru a începe procesul de integrare."),
-                t("e3dffb4e", "Copiază adresa de e-mail de asistență de mai jos și trimite-i echipei de asistență informațiile necesare pentru a începe procesul de integrare."),
-                t("b4fef99e", "După ce echipa noastră de asistență primește cererea, vom revizui informațiile furnizate și te vom ajuta să configurezi integrarea."),
-                t("h37f2d96", "Ai în vedere că nu toate sistemele de monitorizare a candidaților sunt acceptate momentan."),
-                t("ce102a20", "Redirecționare către Stripe"),
-                t("ddfd6718", "Plata a eșuat"),
-                t("i90ea7d2", "Actualizează-ți urgent informațiile de facturare pentru a-ți păstra beneficiile."),
-                t("a62359e6", "Setări Organizații verificate"),
-                t("ge221b7c", "Fă upgrade la aboamentul pentru Organizații verificate pentru a avea acces la mai multe credite pentru reclame și afiliați."),
+            t("ge221b7c", "Fă upgrade la aboamentul pentru Organizații verificate pentru a avea acces la mai multe credite pentru reclame și afiliați."),
                 t("i4dccc18", "Facturare"),
                 t("ec3cd6e4", "Gestionează metoda de plată, actualizează informațiile de facturare și verifică-ți facturile."),
                 t("dac61c3c", "Setări cont"),
@@ -8020,6 +8007,7 @@
                 t("j99e2f4d", function (e) {
                     return e.price + "/" + e.interval;
                 }),
+                t("ieafe1c6", "Confirmă schimbarea abonamentului"),
                 t("bb21a170", "Modificare abonament"),
                 t("b0dcc4dc", "Contul tău este deja în așteptarea unei schimbări a nivelului."),
                 t("f3aef4ca", "Nu s-au găsit abonamente active"),
@@ -8902,8 +8890,8 @@
                 t("c057680c", "Nu putem reda videoclipul în acest browser. Încearcă un alt browser web."),
                 t("i5dfae6e", "Acest videoclip nu este disponibil în locația ta."),
                 t("c2388276", "Acest videoclip a fost șters."),
-                t("d2c96140", "Indicator audio pentru invitați");
-            t("f6dc9146", "REDĂ DIN NOU"),
+                t("d2c96140", "Indicator audio pentru invitați"),
+                t("f6dc9146", "REDĂ DIN NOU"),
                 t("d30c74fe", "Volum"),
                 t("f2d4e6f2", "Urmărește din nou"),
                 t("e9f1af3a", "Află mai multe"),
@@ -8914,10 +8902,10 @@
                 t("ecda5f9e", "Înșelător"),
                 t("a423473c", "Notificare impusă prin lege"),
                 t("b3296688", "Vizibilitate limitată"),
-                t("ccd32094", "Acum"),
-                t("abfcce0d", function (e) {
-                    return "Cu " + e.amountOfTime + " în urmă";
-                }),
+                t("ccd32094", "Acum");
+            t("abfcce0d", function (e) {
+                return "Cu " + e.amountOfTime + " în urmă";
+            }),
                 t("ae408b76", "Ai repostat"),
                 t("j355f008", "Postare fixată"),
                 t("habf9678", "Fixat de Autor"),
@@ -12100,24 +12088,6 @@
                             },
                         },
                         {
-                            key: "ca87939f",
-                            get: function () {
-                                return ["Dacă te abonezi, ești de acord cu ", ". Abonamentele se reînnoiesc automat până la anulare, așa cum este menționat în ", ". ", ". Anulează cu cel puțin 24 de ore înainte de reînnoire pentru a evita taxe suplimentare. Atunci când faci upgrade la un nivel cu un preț mai mare, creditul pentru perioada rămasă din abonamentul tău anterior va intra în contul tău și va fi aplicat automat la plățile viitoare. Noul tău abonament va începe imediat. Pentru abonare este necesar un număr de telefon verificat."];
-                            },
-                        },
-                        {
-                            key: "ed2a6ba9",
-                            get: function () {
-                                return ["Dacă te abonezi, ești de acord cu ", ". Abonamentele se reînnoiesc automat până la anulare, așa cum este menționat în ", ". ", ". Anulează cu cel puțin 24 de ore înainte de reînnoire pentru a evita taxe suplimentare. Atunci când retrogradezi nivelul abonamentului, abonamentul tău curent și caracteristicile asociate vor fi schimbate imediat la noul nivel de abonament. Nu vei primi o rambursare pentru nicio porțiune a abonamentului tău anterior, cu excepția cazului în care acest lucru este cerut prin lege. De asemenea, ți se va percepe imediat prețul pentru noul nivel. Pentru abonare este necesar un număr de telefon verificat."];
-                            },
-                        },
-                        {
-                            key: "db638a21",
-                            get: function () {
-                                return ["Dacă te abonezi, ești de acord cu ", ". Abonamentele se reînnoiesc automat până la anulare, așa cum este menționat în ", ". ", ". Anulează cu cel puțin 24 de ore înainte de reînnoire pentru a evita taxe suplimentare. Atunci când îți schimbi planul, noul tău abonament va începe automat. Creditul pentru perioada rămasă din abonamentul tău anterior va intra în contul tău și va fi aplicat automat la plățile viitoare. Pentru abonare este necesar un număr de telefon verificat."];
-                            },
-                        },
-                        {
                             key: "b2138d0f",
                             get: function () {
                                 return ["Dacă te abonezi, accepți ", ". Abonamentele se reînnoiesc automat până la anulare, așa cum este menționat în ", ". ", ". Anulează cu cel puțin 24 de ore înainte de reînnoire pentru a evita taxele suplimentare. Atunci când faci upgrade, abonamentul tău curent și caracteristicile asociate vor trece imediat la noul nivel de abonament. Ți se va factura imediat prețul pentru noul nivel, iar soldul, calculat proporțional din ciclul curent de facturare, va fi creditat din tariful total de astăzi. Nu vei primi nicio rambursare pentru nicio parte din abonamentul anterior, cu excepția cazului în care acest lucru este cerut prin lege."];
@@ -13250,4 +13220,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ro.74a6b53a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ro.c575be4a.js.map

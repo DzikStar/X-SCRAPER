@@ -4267,7 +4267,7 @@
                 t("fa0f1262", "Nghỉ giải lao"),
                 t("c2cac618", "Grok hiện hỗ trợ dữ liệu của La Liga, Ngoại hạng Anh, Bundesliga, Series A và Ligue 1."),
                 t("acae223d", function (n) {
-                    return 'Results for "' + n.prompt + '"';
+                    return 'Kết quả cho "' + n.prompt + '"';
                 }),
                 t("bed99fe2", "Ẩn bớt"),
                 t("f7b57ac0", "Số liệu thống kê"),
@@ -4796,12 +4796,12 @@
                 t("e7479ce4", "Thời gian xem trung bình"),
                 t("g1dfa7d0", "Trung bình"),
                 t("h7d28188", "Quay lại nội dung"),
-                t("if2704e4", "Back to Live Overview"),
+                t("if2704e4", "Quay lại phần Tổng quan về phát trực tuyến"),
                 t("ea928ae4", "Quay lại các phòng"),
                 t("e8c07c22", "nguồn phát"),
-                t("a4ce6e68", "Broadcast Metrics"),
-                t("b2214c74", "Total number of views for this broadcast"),
-                t("d4fcf83a", "Total time viewers spent watching this broadcast"),
+                t("a4ce6e68", "Số liệu nguồn phát"),
+                t("b2214c74", "Tổng số lượt xem cho buổi phát này"),
+                t("d4fcf83a", "Tổng thời gian người xem đã dành để xem buổi phát này"),
                 t("a89b0322", "Đã hủy"),
                 t("j3cb12ea", "Người nghe cùng lúc"),
                 t("b93931ee", "Số lần nội dung của bạn được đăng."),
@@ -4837,19 +4837,19 @@
                 t("efa0f858", "Số lượt theo dõi và ngừng theo dõi theo thời gian. Số liệu này không nhất thiết phản ánh số người theo dõi bạn."),
                 t("g2b06cc6", "Dữ liệu về giới tính có thể là phỏng đoán"),
                 t("b66b3baa", "giờ"),
-                t("cf8a0772", "Impression to Views"),
-                t("g13d8010", "Last 48 Hours"),
-                t("d5627596", "Last Hour"),
+                t("cf8a0772", "Lượt hiển thị thành lượt xem"),
+                t("g13d8010", "48 giờ qua"),
+                t("d5627596", "Giờ qua"),
                 t("baf120a6", "Tương tác ít nhất"),
                 t("f2382014", "TRỰC TIẾP"),
-                t("c4a7a6aa", "Live data"),
-                t("a992032a", "Livestream Analytics"),
+                t("c4a7a6aa", "Dữ liệu về buổi phát trực tuyến"),
+                t("a992032a", "Số liệu phân tích buổi phát trực tuyến"),
                 t("ie45edda", "Tổng quan về buổi phát trực tuyến"),
                 t("e30fc268", "Người xem trực tuyến"),
                 t("bd37f68e", "Hoạt động truyền thông"),
                 t("fe074210", "phút"),
-                t("jd03a1b8", "Minutes Watched"),
-                t("a20e91e8", "minutes watched"),
+                t("jd03a1b8", "Phút đã xem"),
+                t("a20e91e8", "phút đã xem"),
                 t("ic2bebee", "Kiếm tiền"),
                 t("a1d642c8", "Tương tác nhiều nhất"),
                 t("ifc4c1f8", "Số người theo dõi mới có được từ nội dung này."),
@@ -4857,14 +4857,14 @@
                 t("jbcb09a8", "Chưa đủ dữ liệu"),
                 t("df846d6c", "Không tìm thấy bài đăng nào trong khoảng thời gian đã chọn."),
                 t("g2ba40f6", "Không có phòng nào khớp với bộ lọc đã chọn"),
-                t("j44061a0", "Không có hiệu lực"),
-                t("c4a93912", "Không áp dụng"),
-                t("a6b78788", "No viewer data available"),
+                t("j44061a0", "Không có sẵn"),
+                t("c4a93912", "Không có"),
+                t("a6b78788", "Không có dữ liệu lượt xem"),
                 t("b2438638", "trên tổng số"),
                 t("ic0399e0", "Lượt xem tự nhiên"),
                 t("ja5c444a", "Thời gian thanh toán"),
                 t("f04e025e", "Số người nghe cùng lúc cao nhất"),
-                t("d6d10662", "Peak Viewers: "),
+                t("d6d10662", "Số lượt xem đỉnh điểm: "),
                 t("d147bea2", "Hãy kiểm tra lại sau"),
                 t("f0336d68", "Số liệu phân tích bài đăng"),
                 t("g85fbd2e", "Id bài đăng"),
@@ -4872,11 +4872,11 @@
                 t("hf4f9bfe", "Liên kết đến bài đăng"),
                 t("bf5ebf5c", "Bài đăng và câu trả lời"),
                 t("b211652e", "Số bài đăng theo thời gian"),
-                t("f2efec0a", "Pre-Published"),
+                t("f2efec0a", "Trước khi đăng"),
                 t("i61e0302", "Trước"),
                 t("e08a706a", "Lượt xem nhờ được quảng bá"),
                 t("cbc99192", "Ngày xuất bản"),
-                t("a83c2a9a", "Realtime"),
+                t("a83c2a9a", "Theo thời gian thực"),
                 t("e9d72896", "Đã ghi"),
                 t("gede4932", "Phát lại"),
                 t("h0de359c", "Số lần nội dung này được đăng lại."),
@@ -4887,20 +4887,20 @@
                 t("fbc79a40", "Tổng quan về Spaces"),
                 t("d077112a", "Số liệu phân tích Phòng"),
                 t("cf3709da", "Trạng thái"),
-                t("e797dc32", "Stream time: "),
+                t("e797dc32", "Thời gian phát trực tuyến: "),
                 t("b649d8cc", "Chỉ người đăng ký"),
                 t("j9282130", "Hình thu nhỏ của nguồn phát"),
-                t("g629b8b0", "Timed Out"),
-                t("eb87323c", "This shows analytics data for the selected time period since the livestream happened."),
-                t("i6a75722", "Time Range"),
+                t("g629b8b0", "Hết giờ"),
+                t("eb87323c", "Phần này hiển thị dữ liệu phân tích trong khoảng thời gian đã chọn kể từ khi phát trực tuyến."),
+                t("i6a75722", "Khoảng thời gian"),
                 t("c602f5b8", "Tổng"),
                 t("b35e68ae", "Tổng số người tham gia"),
                 t("h78ee79a", "Tổng số lượt xem lại"),
                 t("e3efaed0", "Loại"),
                 t("c37993e2", "Ngừng theo dõi"),
-                t("b1ed35d0", "Unique Viewers"),
+                t("b1ed35d0", "Số lượt xem duy nhất"),
                 t("bfad9306", "Không xác định"),
-                t("b5a58f36", "Untitled Broadcast"),
+                t("b5a58f36", "Nguồn phát không có tiêu đề"),
                 t("i70f5278", "Đã tải lên vào:"),
                 t("a98b58b6", "Người theo dõi được xác nhận"),
                 t("a5de67ca", "Số người theo dõi đã xác nhận tài khoản của họ."),
@@ -7003,10 +7003,6 @@
                 t("db5c77e0", "Đây là gói thuê bao đang hoạt động của bạn"),
                 t("h77ef73e", "Chuyển sang gói hằng tháng"),
                 t("d723d44a", "Chuyển sang gói hằng năm"),
-                t("i253b5c6", "Nâng cấp và thanh toán"),
-                t("d2beeaaa", "Hạ cấp và thanh toán"),
-                t("acf719d4", "Chuyển đổi và thanh toán"),
-                t("ieafe1c6", "Xác nhận thay đổi gói thuê bao của bạn"),
                 t("gf6b66b8", "Xác nhận thay đổi gói thuê bao của bạn, có hiệu lực từ ngày hôm nay"),
                 t("e83daf87", function (n) {
                     return "Xác nhận thay đổi gói thuê bao của bạn, có hiệu lực từ " + n.date;
@@ -7024,15 +7020,6 @@
                 t("d7efb6ba", "Bạn đang chuyển từ thanh toán theo tháng sang thanh toán theo năm. Bạn sẽ bị tính phí theo gói hằng năm ngay hôm nay, với số dư hằng tháng còn lại (được tính theo tỷ lệ) được trừ vào tổng số tiền phải trả. Việc chuyển đổi sẽ diễn ra ngay lập tức và từ giờ bạn sẽ thanh toán theo năm."),
                 t("a5f2cf70", "Bạn đang chuyển từ thanh toán theo năm sang theo tháng. Khoản tín dụng hằng năm còn lại của bạn sẽ chi trả cho các khoản thanh toán hằng tháng của bạn cho đến khi hết. Quá trình chuyển đổi diễn ra ngay lập tức và từ giờ bạn sẽ thanh toán theo tháng."),
                 t("ef1c0208", "Xác nhận thay đổi gói"),
-                t("c20806d5", "Điều khoản dịch vụ người mua"),
-                t("i10be4c9", "Điều khoản"),
-                t("cdda96d6", "Bạn có thể hủy bất cứ lúc nào"),
-                t("cc67158f", "Điều khoản dịch vụ người mua"),
-                t("eb420831", "Điều khoản"),
-                t("c7d49608", "Bạn có thể hủy bất cứ lúc nào"),
-                t("ab176bd1", "Điều khoản dịch vụ người mua"),
-                t("cea928a5", "Điều khoản"),
-                t("e37c69e0", "Bạn có thể hủy bất cứ lúc nào"),
                 t("ia08113f", "Điều khoản dịch vụ dành cho người mua"),
                 t("d2962b73", "Điều khoản"),
                 t("b421795a", "Bạn có thể hủy bất cứ lúc nào"),
@@ -7848,7 +7835,20 @@
                 t("b33d1518", "Đồng bộ hóa việc làm từ các phần tích hợp được hỗ trợ hoặc nguồn cấp dữ liệu XML tùy chỉnh"),
                 t("dd2db402", "Bước 1: Thu thập thông tin cần thiết"),
                 t("edb098c2", "Bước 2: Liên hệ nhóm hỗ trợ của chúng tôi"),
-                t("c4474460", "Bước 2: Gửi email cho nhóm hỗ trợ của chúng tôi");
+                t("c4474460", "Bước 2: Gửi email cho nhóm hỗ trợ của chúng tôi"),
+                t("a08da0fa", "Điều gì xảy ra tiếp theo?"),
+                t("c127374e", "Gửi tin nhắn cho chúng tôi"),
+                t("b2cb2a0c", "Tên người dùng của tài khoản Tổ chức đã xác nhận của bạn"),
+                t("b8e64002", "Tên hệ thống theo dõi ứng viên của bạn"),
+                t("acb99db6", "URL trang sự nghiệp nơi đăng tải các việc làm của bạn"),
+                t("a64a5b7a", "Gửi thông tin cần thiết cho nhóm hỗ trợ của chúng tôi để bắt đầu quy trình tích hợp."),
+                t("e3dffb4e", "Sao chép địa chỉ email hỗ trợ của chúng tôi ở dưới và gửi thông tin cần thiết cho nhóm hỗ trợ của chúng tôi để bắt đầu quy trình tích hợp."),
+                t("b4fef99e", "Sau khi nhóm hỗ trợ của chúng tôi nhận được yêu cầu của bạn, chúng tôi sẽ xem xét thông tin và hỗ trợ định cấu hình phần tích hợp của bạn."),
+                t("h37f2d96", "Hãy lưu ý rằng hiện tại, không phải hệ thống theo dõi ứng viên nào cũng được hỗ trợ."),
+                t("ce102a20", "Đang chuyển hướng đến Stripe"),
+                t("ddfd6718", "Thanh toán không thành công"),
+                t("i90ea7d2", "Vui lòng cập nhật gấp thông tin thanh toán để tiếp tục hưởng quyền lợi."),
+                t("a62359e6", "Cài đặt Tổ chức đã xác nhận");
             function g(n, h) {
                 for (var c = 0; c < h.length; c++) {
                     var t = h[c];
@@ -7887,20 +7887,7 @@
                     a(n, h)
                 );
             }
-            t("a08da0fa", "Điều gì xảy ra tiếp theo?"),
-                t("c127374e", "Gửi tin nhắn cho chúng tôi"),
-                t("b2cb2a0c", "Tên người dùng của tài khoản Tổ chức đã xác nhận của bạn"),
-                t("b8e64002", "Tên hệ thống theo dõi ứng viên của bạn"),
-                t("acb99db6", "URL trang sự nghiệp nơi đăng tải các việc làm của bạn"),
-                t("a64a5b7a", "Gửi thông tin cần thiết cho nhóm hỗ trợ của chúng tôi để bắt đầu quy trình tích hợp."),
-                t("e3dffb4e", "Sao chép địa chỉ email hỗ trợ của chúng tôi ở dưới và gửi thông tin cần thiết cho nhóm hỗ trợ của chúng tôi để bắt đầu quy trình tích hợp."),
-                t("b4fef99e", "Sau khi nhóm hỗ trợ của chúng tôi nhận được yêu cầu của bạn, chúng tôi sẽ xem xét thông tin và hỗ trợ định cấu hình phần tích hợp của bạn."),
-                t("h37f2d96", "Hãy lưu ý rằng hiện tại, không phải hệ thống theo dõi ứng viên nào cũng được hỗ trợ."),
-                t("ce102a20", "Đang chuyển hướng đến Stripe"),
-                t("ddfd6718", "Thanh toán không thành công"),
-                t("i90ea7d2", "Vui lòng cập nhật gấp thông tin thanh toán để tiếp tục hưởng quyền lợi."),
-                t("a62359e6", "Cài đặt Tổ chức đã xác nhận"),
-                t("ge221b7c", "Nâng cấp gói thuê bao Tổ chức đã xác nhận để có quyền sử dụng tính năng bên liên kết và nhận thêm tín dụng quảng cáo."),
+            t("ge221b7c", "Nâng cấp gói thuê bao Tổ chức đã xác nhận để có quyền sử dụng tính năng bên liên kết và nhận thêm tín dụng quảng cáo."),
                 t("i4dccc18", "Thanh toán"),
                 t("ec3cd6e4", "Quản lý phương thức thanh toán, cập nhật thông tin thanh toán và xem hóa đơn."),
                 t("dac61c3c", "Cài đặt tài khoản"),
@@ -8008,6 +7995,7 @@
                 t("j99e2f4d", function (n) {
                     return n.price + "/" + n.interval;
                 }),
+                t("ieafe1c6", "Xác nhận thay đổi gói thuê bao của bạn"),
                 t("bb21a170", "Thay đổi gói thuê bao"),
                 t("b0dcc4dc", "Tài khoản của bạn đang chờ chuyển cấp."),
                 t("f3aef4ca", "Không tìm thấy gói thuê bao đang hoạt động nào"),
@@ -8890,8 +8878,8 @@
                 t("c057680c", "Chúng tôi không thể phát video trong trình duyệt này. Vui lòng thử một trình duyệt web khác."),
                 t("i5dfae6e", "Video này không khả dụng tại vị trí của bạn."),
                 t("c2388276", "Video này đã bị xóa."),
-                t("d2c96140", "Chỉ báo âm thanh của khách");
-            t("f6dc9146", "PHÁT LẠI"),
+                t("d2c96140", "Chỉ báo âm thanh của khách"),
+                t("f6dc9146", "PHÁT LẠI"),
                 t("d30c74fe", "Âm lượng"),
                 t("f2d4e6f2", "Xem lại"),
                 t("e9f1af3a", "Tìm hiểu thêm"),
@@ -8902,10 +8890,10 @@
                 t("ecda5f9e", "Lừa dối"),
                 t("a423473c", "Thông báo theo quy định của pháp luật"),
                 t("b3296688", "Hạn chế khả năng hiển thị"),
-                t("ccd32094", "Bây giờ"),
-                t("abfcce0d", function (n) {
-                    return n.amountOfTime + " trước";
-                }),
+                t("ccd32094", "Bây giờ");
+            t("abfcce0d", function (n) {
+                return n.amountOfTime + " trước";
+            }),
                 t("ae408b76", "Bạn đã đăng lại"),
                 t("j355f008", "Bài đăng đã ghim"),
                 t("habf9678", "Đã được Tác giả ghim"),
@@ -12088,24 +12076,6 @@
                             },
                         },
                         {
-                            key: "ca87939f",
-                            get: function () {
-                                return ["Bằng việc đăng ký, bạn đồng ý với ", " của chúng tôi. Gói thuê bao sẽ tự động gia hạn cho đến khi bị hủy, như được nêu trong ", ". ", ". Bạn phải hủy ít nhất 24 giờ trước khi gia hạn để tránh mọi khoản phí phát sinh. Khi bạn nâng cấp lên cấp gói thuê bao có mức giá cao hơn, tín dụng cho số dư của gói thuê bao trước sẽ được chuyển vào tài khoản và tự động được dùng cho các khoản thanh toán trong tương lai. Gói thuê bao mới sẽ bắt đầu ngay. Bạn cần có số điện thoại đã xác nhận để đăng ký. "];
-                            },
-                        },
-                        {
-                            key: "ed2a6ba9",
-                            get: function () {
-                                return ["Bằng việc đăng ký, bạn đồng ý với ", " của chúng tôi. Gói thuê bao sẽ tự động gia hạn cho đến khi bị hủy, như được nêu trong ", ". ", ". Bạn phải hủy ít nhất 24 giờ trước khi gia hạn để tránh mọi khoản phí phát sinh. Khi bạn hạ cấp, gói thuê bao hiện tại của bạn và các tính năng liên kết sẽ được chuyển ngay sang cấp gói thuê bao mới. Bạn sẽ không nhận được khoản hoàn tiền cho bất kỳ phần nào của gói thuê bao trước, trừ phi luật pháp yêu cầu. Bạn cũng sẽ bị tính phí ngay mức giá của cấp gói thuê bao mới. Bạn cần có số điện thoại đã xác nhận để đăng ký."];
-                            },
-                        },
-                        {
-                            key: "db638a21",
-                            get: function () {
-                                return ["Bằng việc đăng ký, bạn đồng ý với ", " của chúng tôi. Gói thuê bao sẽ tự động gia hạn cho đến khi bị hủy, như được nêu trong ", ". ", ". Bạn phải hủy ít nhất 24 giờ trước khi gia hạn để tránh mọi khoản phí phát sinh. Khi bạn chuyển đổi gói thuê bao, gói thuê bao mới của bạn sẽ bắt đầu ngay. Tín dụng cho số dư của gói thuê bao trước sẽ được chuyển vào tài khoản và tự động được dùng cho các khoản thanh toán trong tương lai. Bạn cần có số điện thoại đã xác nhận để đăng ký."];
-                            },
-                        },
-                        {
                             key: "b2138d0f",
                             get: function () {
                                 return ["Bằng việc đăng ký, bạn đồng ý với ", " của chúng tôi. Gói thuê bao sẽ tự động gia hạn cho đến khi bị hủy, như được nêu trong ", ". ", ". Hãy hủy ít nhất 24 giờ trước khi gia hạn để tránh mọi khoản phí phát sinh. Khi bạn nâng cấp, gói thuê bao hiện tại của bạn và các tính năng liên kết sẽ được chuyển ngay sang cấp gói thuê bao mới. Bạn sẽ bị tính phí ngay theo mức giá của cấp mới, nhưng mọi số dư còn lại (được tính theo tỷ lệ) của chu kỳ thanh toán hiện tại sẽ được trừ vào tổng số tiền phải thanh toán hôm nay. Bạn sẽ không được hoàn lại bất kỳ phần nào của gói thuê bao trước đó, trừ phi pháp luật yêu cầu."];
@@ -13235,4 +13205,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.6debcdea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.ca3f084a.js.map

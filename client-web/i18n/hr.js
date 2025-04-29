@@ -4275,7 +4275,7 @@
                 o("fa0f1262", "Predah"),
                 o("c2cac618", "Grok trenutačno podržava podatke za sljedeće: La Liga, Premier liga, Bundesliga, Serija A i Liga 1"),
                 o("acae223d", function (a) {
-                    return 'Results for "' + a.prompt + '"';
+                    return "Rezultati za „" + a.prompt + "”";
                 }),
                 o("bed99fe2", "Pogledaj manje"),
                 o("f7b57ac0", "Statistika"),
@@ -4804,12 +4804,12 @@
                 o("e7479ce4", "Prosječno vrijeme gledanja"),
                 o("g1dfa7d0", "Pros."),
                 o("h7d28188", "Natrag na sadržaj"),
-                o("if2704e4", "Back to Live Overview"),
+                o("if2704e4", "Natrag na pregled uživo"),
                 o("ea928ae4", "Natrag na Prostore"),
-                o("e8c07c22", "broadcast"),
-                o("a4ce6e68", "Broadcast Metrics"),
-                o("b2214c74", "Total number of views for this broadcast"),
-                o("d4fcf83a", "Total time viewers spent watching this broadcast"),
+                o("e8c07c22", "prijenos uživo"),
+                o("a4ce6e68", "Mjerni podaci o prijenosu uživo"),
+                o("b2214c74", "Ukupan broj pregleda za ovaj prijenos uživo"),
+                o("d4fcf83a", "Ukupno vrijeme koje su gledatelji proveli gledajući ovaj prijenos uživo"),
                 o("a89b0322", "Otkazano"),
                 o("j3cb12ea", "Istodobni slušatelji"),
                 o("b93931ee", "Broj objava vašeg sadržaja."),
@@ -4845,19 +4845,19 @@
                 o("efa0f858", "Broj osoba koje su vas počele i prestale pratiti tijekom vremena. To ne utječe nužno na vaš broj osoba koje vas prate."),
                 o("g2b06cc6", "Podaci o rodu možda su izvedeni"),
                 o("b66b3baa", "sati"),
-                o("cf8a0772", "Impression to Views"),
-                o("g13d8010", "Last 48 Hours"),
-                o("d5627596", "Last Hour"),
+                o("cf8a0772", "Prikazi u odnosu na preglede"),
+                o("g13d8010", "U posljednjih 48 h"),
+                o("d5627596", "U posljednjih 1 h"),
                 o("baf120a6", "Najmanji angažman"),
                 o("f2382014", "UŽIVO"),
-                o("c4a7a6aa", "Live data"),
-                o("a992032a", "Livestream Analytics"),
+                o("c4a7a6aa", "Podaci o prijenosu uživo"),
+                o("a992032a", "Analitika emitiranja uživo"),
                 o("ie45edda", "Pregled emitiranja uživo"),
-                o("e30fc268", "Live Viewers"),
+                o("e30fc268", "Gledatelji prijenosa uživo"),
                 o("bd37f68e", "Aktivnost u medijima"),
                 o("fe074210", "min"),
-                o("jd03a1b8", "Minutes Watched"),
-                o("a20e91e8", "minutes watched"),
+                o("jd03a1b8", "Gledanje u minutama"),
+                o("a20e91e8", "gledanje u minutama"),
                 o("ic2bebee", "Monetizirano"),
                 o("a1d642c8", "Najveći angažman"),
                 o("ifc4c1f8", "Broj novih osoba koje su vas počele pratiti zahvaljujući tom sadržaju."),
@@ -4867,12 +4867,12 @@
                 o("g2ba40f6", "Za odabrani filtar nema dostupnih Prostora"),
                 o("j44061a0", "Nije dostupno"),
                 o("c4a93912", "Nije primjenjivo"),
-                o("a6b78788", "No viewer data available"),
+                o("a6b78788", "Nema dostupnih podataka o gledateljima"),
                 o("b2438638", "od ukupno"),
                 o("ic0399e0", "Organski pregledi"),
                 o("ja5c444a", "Razdoblje plaćanja"),
                 o("f04e025e", "Najveći broj istodobnih slušatelja"),
-                o("d6d10662", "Peak Viewers: "),
+                o("d6d10662", "Najveći broj gledatelja: "),
                 o("d147bea2", "Vratite se ponovno kasnije"),
                 o("f0336d68", "Analiza objava"),
                 o("g85fbd2e", "ID objave"),
@@ -4880,11 +4880,11 @@
                 o("hf4f9bfe", "Objavi vezu"),
                 o("bf5ebf5c", "Objave i odgovori"),
                 o("b211652e", "Objave tijekom vremena"),
-                o("f2efec0a", "Pre-Published"),
+                o("f2efec0a", "Unaprijed objavljeno"),
                 o("i61e0302", "Prethodno"),
                 o("e08a706a", "Promovirani pregledi"),
                 o("cbc99192", "Datum objavljivanja"),
-                o("a83c2a9a", "Realtime"),
+                o("a83c2a9a", "Stvarno vrijeme"),
                 o("e9d72896", "Snimljeno"),
                 o("gede4932", "Ponovno reproduciraj"),
                 o("h0de359c", "Broj prosljeđivanja vašeg sadržaja."),
@@ -4895,20 +4895,20 @@
                 o("fbc79a40", "Pregled Prostora"),
                 o("d077112a", "Statistika Prostora"),
                 o("cf3709da", "Status"),
-                o("e797dc32", "Stream time: "),
+                o("e797dc32", "Vrijeme emitiranja: "),
                 o("b649d8cc", "Samo za pretplatnike"),
                 o("j9282130", "Minijatura prijenosa uživo"),
-                o("g629b8b0", "Timed Out"),
-                o("eb87323c", "This shows analytics data for the selected time period since the livestream happened."),
-                o("i6a75722", "Time Range"),
+                o("g629b8b0", "Isteklo"),
+                o("eb87323c", "To prikazuje podatke o analitici za odabrano vremensko razdoblje od emitiranja uživo."),
+                o("i6a75722", "Vremenski raspon"),
                 o("c602f5b8", "Ukupno"),
                 o("b35e68ae", "Ukupno sudionika"),
                 o("h78ee79a", "Ukupno ponovno gledanje snimke"),
                 o("e3efaed0", "Vrsta"),
                 o("c37993e2", "Broj osoba koje su vas prestale pratiti"),
-                o("b1ed35d0", "Unique Viewers"),
+                o("b1ed35d0", "Jedinstveni gledatelji"),
                 o("bfad9306", "Nepoznato"),
-                o("b5a58f36", "Untitled Broadcast"),
+                o("b5a58f36", "Prijenos uživo bez naslova"),
                 o("i70f5278", "Preneseno:"),
                 o("a98b58b6", "Provjerene osobe koje prate"),
                 o("a5de67ca", "Broj provjerenih osoba koje prate koje su potvrdile svoj račun."),
@@ -7011,10 +7011,6 @@
                 o("db5c77e0", "Ovo je vaša aktivna pretplata"),
                 o("h77ef73e", "Prebacite se na mjesečni plan"),
                 o("d723d44a", "Prebacite se na godišnji plan"),
-                o("i253b5c6", "Nadogradi i plati"),
-                o("d2beeaaa", "Smanji razinu i plati"),
-                o("acf719d4", "Prebaci se i plati"),
-                o("ieafe1c6", "Potvrdite promjenu pretplate"),
                 o("gf6b66b8", "Potvrdite promjenu pretplate koja stupa na snagu danas"),
                 o("e83daf87", function (a) {
                     return "Potvrdite promjenu pretplate koja stupa na snagu " + a.date;
@@ -7032,15 +7028,6 @@
                 o("d7efb6ba", "Prebacujete se s mjesečne na godišnju naplatu. Danas će vam se naplatiti godišnji plan, a preostali mjesečni saldo proporcionalno će se preusmjeriti na ukupni iznos za naplatu. Promjena stupa na snagu odmah, a vaša će naplata odsad biti na godišnjoj razini."),
                 o("a5f2cf70", "Prebacujete se s godišnje na mjesečnu naplatu. Vaš preostali godišnji kredit pokrivat će vaša mjesečna plaćanja sve dok se ne potroši. Prebacivanje stupa na snagu odmah, a vaša će naplata odsad biti na mjesečnoj razini."),
                 o("ef1c0208", "Potvrdite promjenu plana"),
-                o("c20806d5", "Uvjete pružanja usluge za kupce"),
-                o("i10be4c9", "Uvjetima"),
-                o("cdda96d6", "Otkažite u bilo kojem trenutku"),
-                o("cc67158f", "Uvjete pružanja usluge za kupce"),
-                o("eb420831", "Uvjetima"),
-                o("c7d49608", "Otkažite u bilo kojem trenutku"),
-                o("ab176bd1", "Uvjete pružanja usluge za kupce"),
-                o("cea928a5", "Uvjetima"),
-                o("e37c69e0", "Otkažite u bilo kojem trenutku"),
                 o("ia08113f", "Uvjete pružanja usluge za kupce"),
                 o("d2962b73", "Uvjetima"),
                 o("b421795a", "Možete otkazati u bilo kojem trenutku"),
@@ -7856,7 +7843,20 @@
                 o("b33d1518", "Sinkronizirajte radna mjesta iz podržane integracije ili prilagođenog XML sažetka sadržaja"),
                 o("dd2db402", "1. korak: Prikupite potrebne informacije"),
                 o("edb098c2", "2. korak: obratite se našem timu za podršku"),
-                o("c4474460", "2. korak: Pošaljite poruku e-pošte našem timu za podršku");
+                o("c4474460", "2. korak: Pošaljite poruku e-pošte našem timu za podršku"),
+                o("a08da0fa", "Što dalje?"),
+                o("c127374e", "Pošaljite nam poruku"),
+                o("b2cb2a0c", "Korisničko ime za vaš račun za Verified Org"),
+                o("b8e64002", "Naziv vašeg sustava za praćenje kandidata"),
+                o("acb99db6", "URL stranice za oglašavanje radnih mjesta na kojoj su navedena vaša radna mjesta"),
+                o("a64a5b7a", "Pošaljite tražene podatke našem timu za podršku kako bismo započeli postupak integracije."),
+                o("e3dffb4e", "Kopirajte našu adresu e-pošte za podršku u nastavku i pošaljite tražene podatke našem timu za podršku kako bismo započeli postupak integracije."),
+                o("b4fef99e", "Nakon što naš tim za podršku primi vaš zahtjev, pregledat ćemo vaše podatke i pomoći ćemo vam konfigurirati vašu integraciju."),
+                o("h37f2d96", "Imajte na umu da trenutačno nisu podržani svi sustavi za praćenje kandidata."),
+                o("ce102a20", "Preusmjeravanje na uslugu Stripe"),
+                o("ddfd6718", "Plaćanje nije uspjelo"),
+                o("i90ea7d2", "Hitno ažurirajte podatke za naplatu da biste zadržali pogodnosti."),
+                o("a62359e6", "Postavke provjerenih organizacija");
             function t(a, e) {
                 for (var i = 0; i < e.length; i++) {
                     var o = e[i];
@@ -7895,20 +7895,7 @@
                     r(a, e)
                 );
             }
-            o("a08da0fa", "Što dalje?"),
-                o("c127374e", "Pošaljite nam poruku"),
-                o("b2cb2a0c", "Korisničko ime za vaš račun za Verified Org"),
-                o("b8e64002", "Naziv vašeg sustava za praćenje kandidata"),
-                o("acb99db6", "URL stranice za oglašavanje radnih mjesta na kojoj su navedena vaša radna mjesta"),
-                o("a64a5b7a", "Pošaljite tražene podatke našem timu za podršku kako bismo započeli postupak integracije."),
-                o("e3dffb4e", "Kopirajte našu adresu e-pošte za podršku u nastavku i pošaljite tražene podatke našem timu za podršku kako bismo započeli postupak integracije."),
-                o("b4fef99e", "Nakon što naš tim za podršku primi vaš zahtjev, pregledat ćemo vaše podatke i pomoći ćemo vam konfigurirati vašu integraciju."),
-                o("h37f2d96", "Imajte na umu da trenutačno nisu podržani svi sustavi za praćenje kandidata."),
-                o("ce102a20", "Preusmjeravanje na uslugu Stripe"),
-                o("ddfd6718", "Plaćanje nije uspjelo"),
-                o("i90ea7d2", "Hitno ažurirajte podatke za naplatu da biste zadržali pogodnosti."),
-                o("a62359e6", "Postavke provjerenih organizacija"),
-                o("ge221b7c", "Nadogradite pretplatu za Provjerene organizacije kako biste dobili pristup povezanim računima i više kredita za oglase."),
+            o("ge221b7c", "Nadogradite pretplatu za Provjerene organizacije kako biste dobili pristup povezanim računima i više kredita za oglase."),
                 o("i4dccc18", "Naplata"),
                 o("ec3cd6e4", "Upravljajte načinom plaćanja, ažurirajte podatke za naplatu i pregledajte fakture."),
                 o("dac61c3c", "Postavke računa"),
@@ -8016,6 +8003,7 @@
                 o("j99e2f4d", function (a) {
                     return a.price + " / " + a.interval;
                 }),
+                o("ieafe1c6", "Potvrdite promjenu pretplate"),
                 o("bb21a170", "Promijeni pretplatu"),
                 o("b0dcc4dc", "Vaš je račun već na čekanju za promjenu razine."),
                 o("f3aef4ca", "Nije pronađena aktivna pretplata"),
@@ -8898,8 +8886,8 @@
                 o("c057680c", "Taj videozapis nije moguće reproducirati u tom pregledniku. Pokušajte u nekom drugom web-pregledniku."),
                 o("i5dfae6e", "Taj videozapis nije dostupan za vašu lokaciju."),
                 o("c2388276", "Taj je videozapis izbrisan."),
-                o("d2c96140", "Pokazatelj zvuka gosta");
-            o("f6dc9146", "REPRODUKCIJA"),
+                o("d2c96140", "Pokazatelj zvuka gosta"),
+                o("f6dc9146", "REPRODUKCIJA"),
                 o("d30c74fe", "Glasnoća"),
                 o("f2d4e6f2", "Pogledajte ponovno"),
                 o("e9f1af3a", "Saznajte više"),
@@ -8910,10 +8898,10 @@
                 o("ecda5f9e", "Sadrži netočne informacije"),
                 o("a423473c", "Obavezna pravna napomena"),
                 o("b3296688", "Vidljivost je ograničena"),
-                o("ccd32094", "Odmah"),
-                o("abfcce0d", function (a) {
-                    return "Prije " + a.amountOfTime;
-                }),
+                o("ccd32094", "Odmah");
+            o("abfcce0d", function (a) {
+                return "Prije " + a.amountOfTime;
+            }),
                 o("ae408b76", "Proslijedili ste objavu"),
                 o("j355f008", "Prikvačena objava"),
                 o("habf9678", "Prikvačio autor"),
@@ -12103,24 +12091,6 @@
                             },
                         },
                         {
-                            key: "ca87939f",
-                            get: function () {
-                                return ["Pretplatom pristajete na naše ", ". Pretplate se automatski obnavljaju do otkazivanja, kako je opisano u ", ". ", ". Ako želite otkazati pretplatu, to učinite najmanje 24 sata prije obnove kako biste izbjegli dodatne naplate. Kada nadograđujete na višu razinu, kredit ostatka prethodne pretplate prebacuje se na vaš račun i automatski upotrebljava za daljnja plaćanja. Vaša će nova pretplata odmah započeti. Za pretplatu je potreban provjeren telefonski broj."];
-                            },
-                        },
-                        {
-                            key: "ed2a6ba9",
-                            get: function () {
-                                return ["Pretplatom pristajete na naše ", ". Pretplate se automatski obnavljaju do otkazivanja, kao što je opisano u ", ". ", ". Ako želite otkazati pretplatu, to učinite najmanje 24 sata prije obnove kako biste izbjegli dodatne naplate. Kada prelazite na nižu razinu, vaša će se trenutna pretplata i povezane značajke odmah prebaciti na novu razinu pretplate. Nećete dobiti povrat sredstava ni za koji dio prethodne pretplate, osim ako to nije zakonski obvezno. Nadalje, odmah će vam se naplatiti cijena nove razine. Za pretplatu je potreban provjeren telefonski broj."];
-                            },
-                        },
-                        {
-                            key: "db638a21",
-                            get: function () {
-                                return ["Pretplatom pristajete na naše ", ". Pretplate se automatski obnavljaju do otkazivanja, kao što je opisano u ", ". ", ". Ako želite otkazati pretplatu, to učinite najmanje 24 sata prije obnove kako biste izbjegli dodatne naplate. Kada mijenjate plan, vaša će nova pretplata odmah započeti. Kredit ostatka prethodne pretplate prebacuje se na vaš račun i automatski upotrebljava za daljnja plaćanja. Za pretplatu je potreban provjeren telefonski broj."];
-                            },
-                        },
-                        {
                             key: "b2138d0f",
                             get: function () {
                                 return ["Ako se pretplatite, pristajete na naše ", ". Pretplate se automatski obnavljaju sve dok ih ne otkažete, kao što je opisano u ", ". ", ". Ako želite otkazati pretplatu, to učinite najmanje 24 sata prije obnove kako biste izbjegli dodatne naplate. Ako nadograđujete pretplatu, vaša trenutačna pretplata i povezane značajke odmah će se prebaciti na novu razinu pretplate. Odmah ćemo vam naplatiti cijenu nove razine, ali sav preostali saldo trenutačnog ciklusa naplate proporcionalno će se preusmjeriti za današnji ukupni iznos za plaćanje. Nećete dobiti povrat novca ni za koji dio prethodne pretplate, osim ako zakon nalaže drukčije."];
@@ -13258,4 +13228,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hr.e811025a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hr.4ced8afa.js.map

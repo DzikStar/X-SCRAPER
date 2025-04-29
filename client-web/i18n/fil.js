@@ -7004,10 +7004,6 @@
                 i("db5c77e0", "Ito ang active subscription mo"),
                 i("h77ef73e", "Lumipat sa buwanang plan"),
                 i("d723d44a", "Lumipat sa taunang plan"),
-                i("i253b5c6", "Mag-upgrade at Magbayad"),
-                i("d2beeaaa", "Mag-downgrade at Magbayad"),
-                i("acf719d4", "Lumipat at Magbayad"),
-                i("ieafe1c6", "Kumpirmahin ang pagpapalit ng subscription mo"),
                 i("gf6b66b8", "Kumpirmahin ang pagpapalit ng subscription mo, na magkakabisa simula sa araw na ito"),
                 i("e83daf87", function (a) {
                     return "Kumpirmahin ang pagpapalit ng subscription mo, na magkakabisa simula sa " + a.date;
@@ -7025,15 +7021,6 @@
                 i("d7efb6ba", "Lumilipat ka mula sa buwanan papunta sa taunang billing. Sisingilin ka para sa taunang plan sa araw na ito, na ike-credit sa kabuuang singil ang natitira mong prorated na buwanang balanse. Magkakabisa kaagad ang paglipat, at magiging taunan na ngayon ang billing mo."),
                 i("a5f2cf70", "Lumilipat ka mula sa taunang billing papunta sa buwanang billing. Sasaklawin ng natitira mong taunang credit ang mga buwanan mong pagbabayad hanggang sa maubos ito. Magkakabisa kaagad ang paglipat, at magiging buwanan na ngayon ang billing mo."),
                 i("ef1c0208", "Kumpirmahin ang pagbabago sa plan mo"),
-                i("c20806d5", "Mga Tuntunin ng Serbisyo ng Purchaser"),
-                i("i10be4c9", "Mga Tuntunin"),
-                i("cdda96d6", "Magkansela kahit kailan."),
-                i("cc67158f", "Mga Tuntunin ng Serbisyo ng Purchaser"),
-                i("eb420831", "Mga Tuntunin"),
-                i("c7d49608", "Magkansela kahit kailan"),
-                i("ab176bd1", "Mga Tuntunin ng Serbisyo ng Purchaser"),
-                i("cea928a5", "Mga Tuntunin"),
-                i("e37c69e0", "Magkansela kahit kailan."),
                 i("ia08113f", "Mga Tuntunin ng Serbisyo sa Purchaser"),
                 i("d2962b73", "Mga Tuntunin"),
                 i("b421795a", "Kanselahin kahit kailan"),
@@ -7849,7 +7836,20 @@
                 i("b33d1518", "I-sync ang mga trabaho mula sa isang sinusuportahang integrarion o isang custom na XML feed"),
                 i("dd2db402", "Hakbang 1: Ipunin ang kinakailangang impormasyon"),
                 i("edb098c2", "Hakbang 2: Makipag-ugnayan sa amng support team"),
-                i("c4474460", "Hakbang 2: I-email ang aming support team");
+                i("c4474460", "Hakbang 2: I-email ang aming support team"),
+                i("a08da0fa", "Ano'ng susunod na mangyayari?"),
+                i("c127374e", "Magpadala sa amin ng mensahe"),
+                i("b2cb2a0c", "Username ng account ng Beripikadong Org mo"),
+                i("b8e64002", "Pangalan ng applicant tracking system mo"),
+                i("acb99db6", "Career site URL kung saan nakalista ang mga trabaho mo"),
+                i("a64a5b7a", "Ipadala ang kinakailangang impormasyon sa aing support team para simulan ang proseso ng integration."),
+                i("e3dffb4e", "Kopyahin ang email address ng aming suporta sa ibaba at ipadala ang kinakailangang impormasyon sa aming support team para simulan ang proseso ng integration."),
+                i("b4fef99e", "Pagkatapos matanggap ng aming support team ang kahilingan mo, ire-review namin ang impormasyon mo at tutulungan kang i-configure ang integration mo."),
+                i("h37f2d96", "Pakitandaan na hindi lahat ng applicant tracking system ay kasalukuyang sinusuportahan."),
+                i("ce102a20", "Nire-redirect sa Stripe"),
+                i("ddfd6718", "Hindi Naproseso ang Pagbabayad"),
+                i("i90ea7d2", "Paki-update agad ang billing mo para mapanatili ang mga benepisyo mo."),
+                i("a62359e6", "Mga Setting ng Beripikadong Organisasyon");
             function t(a, n) {
                 for (var g = 0; g < n.length; g++) {
                     var i = n[g];
@@ -7888,20 +7888,7 @@
                     o(a, n)
                 );
             }
-            i("a08da0fa", "Ano'ng susunod na mangyayari?"),
-                i("c127374e", "Magpadala sa amin ng mensahe"),
-                i("b2cb2a0c", "Username ng account ng Beripikadong Org mo"),
-                i("b8e64002", "Pangalan ng applicant tracking system mo"),
-                i("acb99db6", "Career site URL kung saan nakalista ang mga trabaho mo"),
-                i("a64a5b7a", "Ipadala ang kinakailangang impormasyon sa aing support team para simulan ang proseso ng integration."),
-                i("e3dffb4e", "Kopyahin ang email address ng aming suporta sa ibaba at ipadala ang kinakailangang impormasyon sa aming support team para simulan ang proseso ng integration."),
-                i("b4fef99e", "Pagkatapos matanggap ng aming support team ang kahilingan mo, ire-review namin ang impormasyon mo at tutulungan kang i-configure ang integration mo."),
-                i("h37f2d96", "Pakitandaan na hindi lahat ng applicant tracking system ay kasalukuyang sinusuportahan."),
-                i("ce102a20", "Nire-redirect sa Stripe"),
-                i("ddfd6718", "Hindi Naproseso ang Pagbabayad"),
-                i("i90ea7d2", "Paki-update agad ang billing mo para mapanatili ang mga benepisyo mo."),
-                i("a62359e6", "Mga Setting ng Beripikadong Organisasyon"),
-                i("ge221b7c", "I-upgrade ang subscription sa Beripikadong Organisasyon para magkaroon ng access sa mga affiliate at iba pang ad credit. "),
+            i("ge221b7c", "I-upgrade ang subscription sa Beripikadong Organisasyon para magkaroon ng access sa mga affiliate at iba pang ad credit. "),
                 i("i4dccc18", "Billing"),
                 i("ec3cd6e4", "Pamahalaan ang paraan mo ng pagbabayad, i-update ng impormasyon ng billing, at i-review ang mga invoice mo."),
                 i("dac61c3c", "Mga setting ng account"),
@@ -8009,6 +7996,7 @@
                 i("j99e2f4d", function (a) {
                     return a.price + " / " + a.interval;
                 }),
+                i("ieafe1c6", "Kumpirmahin ang pagpapalit ng subscription mo"),
                 i("bb21a170", "Palitan ang subscription"),
                 i("b0dcc4dc", "May nakabinbin na tier switch sa account mo. "),
                 i("f3aef4ca", "Walang nakitang active subscription"),
@@ -8891,8 +8879,8 @@
                 i("c057680c", "Hindi namin mape-play ang video sa browser na ito. Mangyaring sumubok ng ibang web browser."),
                 i("i5dfae6e", "Hindi available ang video na ito sa iyong lokasyon."),
                 i("c2388276", "Na-delete na ang video na ito."),
-                i("d2c96140", "Indicator ng audio ng bisita");
-            i("f6dc9146", "REPLAY"),
+                i("d2c96140", "Indicator ng audio ng bisita"),
+                i("f6dc9146", "REPLAY"),
                 i("d30c74fe", "Volume"),
                 i("f2d4e6f2", "Panooring muli"),
                 i("e9f1af3a", "Alamin ang higit pa"),
@@ -8903,10 +8891,10 @@
                 i("ecda5f9e", "Mapanlinlang"),
                 i("a423473c", "Abiso na Legal na Kinakailangan"),
                 i("b3296688", "Limitado ang Makakakita"),
-                i("ccd32094", "Ngayon"),
-                i("abfcce0d", function (a) {
-                    return a.amountOfTime + " ang nakalipas";
-                }),
+                i("ccd32094", "Ngayon");
+            i("abfcce0d", function (a) {
+                return a.amountOfTime + " ang nakalipas";
+            }),
                 i("ae408b76", "Nag-repost ka"),
                 i("j355f008", "Naka-pin na post"),
                 i("habf9678", "Na-pin ng Author"),
@@ -12096,24 +12084,6 @@
                             },
                         },
                         {
-                            key: "ca87939f",
-                            get: function () {
-                                return ["Sa pag-subscribe, sumasang-ayon ka sa aming ", ". Awtomatikong nagre-renew ang mga subscription hanggang sa kanselahin mo ito, gaya ng inilarawan sa ", ". ", " Magkansela kahit 24 na oras bago ang pag-renew para iwasan ang mga karagdagang singil. Kapag nag-upgrade ka sa isang mas mahal na tier, mapupunta sa account mo ang credit sa natitirang panahon ng nakaraan mong subscription at awtomatikong gagamitin para sa mga susunod na pagbabayad. Kailangan ng na-verify na numero ng telepono para mag-subscribe."];
-                            },
-                        },
-                        {
-                            key: "ed2a6ba9",
-                            get: function () {
-                                return ["Sa pag-subscribe, sumasang-ayon ka sa aming ", ". Awtomatikong nagre-renew ang mga subscription hanggang sa kanselahin mo ito, gaya ng inilarawan sa ", ". ", ". Magkansela kahit 24 na oras bago ang pag-renew para iwasan ang mga karagdagang singil. Kapag nagda-downgrade, lilipat kaagad sa bagong subscription tier ang kasalukuyan mong subscription at mga nauugnay na feature. Hindi ka makakatanggap ng refund para sa anumang bahagi na nakaraan mong subscription, maliban kung iniaatas ng batas. Kaagad ka ring sisingilin ng presyo ng bagong tier. Kailangan ng na-verify na numero ng telepono para mag-subscribe."];
-                            },
-                        },
-                        {
-                            key: "db638a21",
-                            get: function () {
-                                return ["Sa pag-subscribe, sumasang-ayon ka sa aming ", ". Awtomatikong nagre-renew ang mga subscription hanggang sa kanselahin mo ito, gaya ng inilarawan sa ", ". ", " Magkansela kahit 24 na oras bago ang pag-renew para iwasan ang mga karagdagang singil. Kapag nagpalit ka ng plan, magsisimula kaagad ang bago mong subscription. Mapupunta sa account mo ang credit sa natitirang panahon ng nakaraan mong subscription at awtomatikong gagamitin para sa mga susunod na pagbabayad. Kailangan ng na-verify na numero ng telepono para mag-subscribe."];
-                            },
-                        },
-                        {
                             key: "b2138d0f",
                             get: function () {
                                 return ["Sa pag-subscribe, sumasang-ayon ka sa aming ", ". Awtomatikong ire-renew ang mga subscription hanggang sa kanselahin mo ito, gaya ng inilarawan sa ", ". ", ". Kanselahin nang kahit 24 na oras bago ang pag-renew para hindi magkaroon ng mga karagdagang singil. Kapag nag-upgrade, lilipat kaagad ang kasalukuyan mong subscription at mga nauugnay na feature nito sa tier ng bagong subscription. Sisingilin ka kaagad para sa presyo ng bagong tier pero ike-credit ang anumang prorated na balanse mula sa kasalukuyan mong billing cycle sa kabuuang singil sa araw na ito. Hindi ka makakatanggap ng refund para sa anumang bahagi ng nakaraan mong subscription, maliban kung ipinag-uutos ng batas."];
@@ -13249,4 +13219,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fil.4903e66a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fil.a3277b5a.js.map
