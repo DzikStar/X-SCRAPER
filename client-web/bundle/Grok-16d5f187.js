@@ -17,7 +17,7 @@
                 u = s.default.create((e) => ({ container: { postion: "relative", width: 120, height: 90 }, imageWrap: { position: "absolute", start: 0, top: 0, width: 90, height: 68, borderRadius: e.borderRadii.large, outlineStyle: "solid", outlineColor: e.colors.white, outlineWidth: e.spaces.space2, boxShadow: e.boxShadows.medium, overflow: "hidden" }, image: { width: "100%", height: "100%" }, text: { position: "absolute", end: 0, bottom: 0, maxWidth: "90%", backgroundColor: e.colors.gray50, paddingVertical: e.spaces.space4, paddingHorizontal: e.spaces.space8, borderRadius: e.borderRadii.medium, backdropFilter: "blur(3px)", boxShadow: "light" === e.paletteName ? e.boxShadows.medium : void 0 } }));
         },
         226247: (e, t, n) => {
-            n.d(t, { e: () => b });
+            n.d(t, { e: () => f });
             var a = n(202784),
                 o = n(325686),
                 i = n(67369),
@@ -32,11 +32,11 @@
                 g = n(480241);
             const h = p().e68b09b4,
                 y = { label: h },
-                b = ({ button: e, image: t, onRemove: n, text: d, title: m }) => {
+                f = ({ button: e, image: t, onRemove: n, text: d, title: m }) => {
                     const p = (0, i.yu)();
-                    return a.createElement(o.Z, { style: [f.container, p ? { zoom: 0.8 } : void 0] }, a.createElement(o.Z, { style: f.content }, a.createElement(o.Z, { style: f.textContainer }, a.createElement(r.ZP, { size: "title4", weight: "medium" }, m), a.createElement(s.Z, { size: "space4" }), a.createElement(r.ZP, { color: "gray700" }, d)), e ? a.createElement(o.Z, { style: f.buttonContainer }, e) : null), t ? a.createElement(o.Z, { style: f.imageWrapper }, t) : null, a.createElement(l.Z, { resizeMode: "cover", source: { uri: g }, style: f.bottomGrid }), n ? a.createElement(c.ZP, { "aria-label": h, hoverLabel: y, icon: a.createElement(u.default, null), onClick: n, size: "xSmall", style: f.closeButton, type: "onMediaDominantColorFilled" }) : null);
+                    return a.createElement(o.Z, { style: [b.container, p ? { zoom: 0.8 } : void 0] }, a.createElement(o.Z, { style: b.content }, a.createElement(o.Z, { style: b.textContainer }, a.createElement(r.ZP, { size: "title4", weight: "medium" }, m), a.createElement(s.Z, { size: "space4" }), a.createElement(r.ZP, { color: "gray700" }, d)), e ? a.createElement(o.Z, { style: b.buttonContainer }, e) : null), t ? a.createElement(o.Z, { style: b.imageWrapper }, t) : null, a.createElement(l.Z, { resizeMode: "cover", source: { uri: g }, style: b.bottomGrid }), n ? a.createElement(c.ZP, { "aria-label": h, hoverLabel: y, icon: a.createElement(u.default, null), onClick: n, size: "xSmall", style: b.closeButton, type: "onMediaDominantColorFilled" }) : null);
                 },
-                f = d.default.create((e) => ({ container: { overflow: "hidden", borderRadius: e.borderRadii.large, borderWidth: e.spaces.space1, borderColor: e.colors.borderColor, paddingHorizontal: e.spaces.space20, paddingVertical: e.spaces.space20, gap: e.spaces.space20, position: "relative", flexDirection: "row", alignItems: "center" }, content: { position: "relative", gap: e.spaces.space12, boxSizing: "border-box", flex: 1, zIndex: 100 }, textContainer: { flex: 1, gap: e.spaces.space4 }, imageWrapper: { position: "relative", paddingVertical: e.spaces.space4, zIndex: 100 }, closeButton: { position: "absolute", top: e.spaces.space8, end: e.spaces.space8, zIndex: 200 }, bottomGrid: { width: "100%", opacity: "light" === e.paletteName ? 0.4 : "dark" === e.paletteName ? 0.5 : 1, height: 50, position: "absolute", start: 0, bottom: 0, zIndex: 1 }, buttonContainer: { marginTop: e.spaces.space12, position: "relative", zIndex: 100, alignItems: "flex-start" } }));
+                b = d.default.create((e) => ({ container: { overflow: "hidden", borderRadius: e.borderRadii.large, borderWidth: e.spaces.space1, borderColor: e.colors.borderColor, paddingHorizontal: e.spaces.space20, paddingVertical: e.spaces.space20, gap: e.spaces.space20, position: "relative", flexDirection: "row", alignItems: "center" }, content: { position: "relative", gap: e.spaces.space12, boxSizing: "border-box", flex: 1, zIndex: 100 }, textContainer: { flex: 1, gap: e.spaces.space4 }, imageWrapper: { position: "relative", paddingVertical: e.spaces.space4, zIndex: 100 }, closeButton: { position: "absolute", top: e.spaces.space8, end: e.spaces.space8, zIndex: 200 }, bottomGrid: { width: "100%", opacity: "light" === e.paletteName ? 0.4 : "dark" === e.paletteName ? 0.5 : 1, height: 50, position: "absolute", start: 0, bottom: 0, zIndex: 1 }, buttonContainer: { marginTop: e.spaces.space12, position: "relative", zIndex: 100, alignItems: "flex-start" } }));
         },
         246020: (e, t, n) => {
             n.d(t, { Z: () => ve });
@@ -55,8 +55,8 @@
                 g = n(323265),
                 h = n(290402),
                 y = n(358493),
-                b = n(952793),
-                f = n(655352),
+                f = n(952793),
+                b = n(655352),
                 E = n(725516),
                 w = n(125363),
                 v = n(175856),
@@ -131,7 +131,7 @@
                         n = (0, M.uf)(),
                         o = (0, w.v9)(n.selectCurrentResponseFollowUps),
                         i = (0, w.I0)(),
-                        r = (0, b.hC)("responsive_web_grok_show_citations"),
+                        r = (0, f.hC)("responsive_web_grok_show_citations"),
                         s = (0, A.Z)("followup"),
                         { isReasoningEnabled: l, isResearchEnabled: c } = (0, ie.w)(),
                         d = (0, w.v9)(n.selectLastHumanMessage),
@@ -153,8 +153,8 @@
                 ge = n(435296),
                 he = n(6337);
             const ye = 53,
-                be = p().j22655f2,
-                fe = p().c02e7e3c,
+                fe = p().j22655f2,
+                be = p().c02e7e3c,
                 Ee = 9e5,
                 we = (0, o.cn)(0);
             function ve({ containerStyle: e = {}, containerRef: t, conversationId: n, initialPrompt: o, mode: s, disableStartScreen: d = !1, disableEducation: m = !1, contentPadding: p }) {
@@ -162,7 +162,7 @@
                     D = (0, w.I0)();
                 (0, L.Z)();
                 const { access: T, conversationKey: F, fetchConversationIdError: W, fetchConversationIdStatus: j, messageIds: H, status: O, ...U } = (0, M.ZP)(),
-                    K = (0, f.ZP)(),
+                    K = (0, b.ZP)(),
                     { keyboardVisible: N } = a.useContext(y.hr),
                     { isGrokDrawer: V } = (0, pe.ZP)(),
                     G = (0, w.v9)((e) => (0, Z.Pt)(e)),
@@ -173,9 +173,9 @@
                     (!Q || $ + Ee < e) && (J(e), D((0, C.C)({ analytics: B })()));
                 });
                 const X = (0, w.v9)((e) => (0, v.t5)(e, v.Qn)),
-                    q = (0, b.hC)("subscriptions_inapp_grok_nux_enabled"),
+                    q = (0, f.hC)("subscriptions_inapp_grok_nux_enabled"),
                     { isConversationLoading: Y } = (0, S.Z)({ conversationId: n }),
-                    ee = (0, b.hC)("responsive_web_grok_show_citations"),
+                    ee = (0, f.hC)("responsive_web_grok_show_citations"),
                     te = O === I.Q_.IDLE;
                 a.useEffect(() => {
                     !1 !== T && D(P.ZP.fetchOneIfNeeded(z.c0));
@@ -210,8 +210,8 @@
                         return [Ce.inputWrapper, { paddingBottom: e }];
                     }, [K, N]),
                     le = o?.text || re || Y,
-                    ce = a.useMemo(() => () => (Y ? a.createElement(c.Z, null) : a.createElement(a.Fragment, null, a.createElement(ue.y, { contentPadding: p, conversationKey: F }), a.createElement(r.Z, { style: Ce.bottomContainer }, a.createElement(de, { conversationKey: F }), a.createElement(r.Z, { style: Ce.inputContainer }, a.createElement(r.Z, { style: se }, a.createElement(me.Z, { conversationKey: F, hasAccess: !1 !== T, inputAtBottom: !0, insideConversation: !0, isIdle: te, mode: s, placeholder: be, useDraftPersistence: !0 })))))), [te, s, T, F, p, se, Y]);
-                return (0, _.Z)(!d && !V, U.conversationId, re), !1 === T && G !== R.ZP.LOADING ? (V ? a.createElement(r.Z, { style: Ce.activityIndicatorContainer }, a.createElement(c.Z, null)) : a.createElement(he.Z, null)) : a.createElement(r.Z, { ref: t, style: [Ce.container, e] }, a.createElement(a.Fragment, null, X && q && !m ? a.createElement(oe, null) : null, le || d ? a.createElement(h.Z, { "aria-label": fe, fetchStatus: j === R.ZP.NONE ? R.ZP.LOADED : j, onRequestRetry: ie, render: ce, retryMessage: W }) : a.createElement(ge.k, { access: T, conversationKey: F })));
+                    ce = a.useMemo(() => () => (Y ? a.createElement(c.Z, null) : a.createElement(a.Fragment, null, a.createElement(ue.y, { contentPadding: p, conversationKey: F }), a.createElement(r.Z, { style: Ce.bottomContainer }, a.createElement(de, { conversationKey: F }), a.createElement(r.Z, { style: Ce.inputContainer }, a.createElement(r.Z, { style: se }, a.createElement(me.Z, { conversationKey: F, hasAccess: !1 !== T, inputAtBottom: !0, insideConversation: !0, isIdle: te, mode: s, placeholder: fe, useDraftPersistence: !0 })))))), [te, s, T, F, p, se, Y]);
+                return (0, _.Z)(!d && !V, U.conversationId, re), !1 === T && G !== R.ZP.LOADING ? (V ? a.createElement(r.Z, { style: Ce.activityIndicatorContainer }, a.createElement(c.Z, null)) : a.createElement(he.Z, null)) : a.createElement(r.Z, { ref: t, style: [Ce.container, e] }, a.createElement(a.Fragment, null, X && q && !m ? a.createElement(oe, null) : null, le || d ? a.createElement(h.Z, { "aria-label": be, fetchStatus: j === R.ZP.NONE ? R.ZP.LOADED : j, onRequestRetry: ie, render: ce, retryMessage: W }) : a.createElement(ge.k, { access: T, conversationKey: F })));
             }
             const Ze = !!g.ZP.isWebView(),
                 Ce = d.default.create((e) => ({ container: { display: "grid", gridTemplateRows: "1fr auto", maxWidth: "100%", width: "100%", minHeight: `calc(100vh - ${Ze ? "0" : e.componentDimensions.appBarHeightPx}px)`, paddingBottom: d.default.iPhoneOffsetBottom }, disclaimer: { marginVertical: e.spaces.space12, marginHorizontal: e.spaces.space4 }, disclaimerNarrow: { marginVertical: e.spaces.space8, marginHorizontal: e.spaces.space4 }, bottomContainer: { position: "sticky", bottom: 0, width: "100%" }, inputContainer: { backgroundColor: e.colors.appBarBackground, backdropFilter: "blur(12px)", justifyContent: "center", alignItems: "center", paddingTop: e.spaces.space4, paddingBottom: e.spaces.space12, paddingHorizontal: e.spaces.space16 }, inputWrapper: { width: "100%", maxWidth: `calc(${z.vf}px + ${e.spaces.space32})` }, somethingWentWrongContainer: { alignItems: "center", justifyContent: "center", padding: e.spaces.space32 }, activityIndicatorContainer: { width: "100%", height: "100%", justifyContent: "center", alignItems: "center" } }));
@@ -232,8 +232,8 @@
                 g = n.n(u),
                 h = n(323265),
                 y = n(980407),
-                b = n(15334),
-                f = n(293115),
+                f = n(15334),
+                b = n(293115),
                 E = n(125363),
                 w = n(389071),
                 v = n(184711),
@@ -258,7 +258,7 @@
                 j = 1500;
             function H() {
                 const e = (0, i.useHistory)(),
-                    t = (0, b.u)(),
+                    t = (0, f.u)(),
                     n = (0, E.v9)(w.F9),
                     p = a.useMemo(() => ({ subscription_level: t, grok_details: { grok_mode: "regular", grok_model: n } }), [t, n]),
                     [u, g] = a.useState(!0),
@@ -317,7 +317,7 @@
                         !$ && V && Q();
                     }, [Q, V, $]),
                     a.createElement(
-                        f.nO,
+                        b.nO,
                         { data: p, namespace: W },
                         a.createElement(
                             y.Z,
@@ -430,10 +430,10 @@
                     const { openGrok: g } = (0, m.Z)(),
                         h = (0, d.Z)(),
                         y = (0, i.LX)(),
-                        b = a.useCallback(() => {
+                        f = a.useCallback(() => {
                             n(), c ? c(p, p) : g({ text: p, autoSubmit: !0 }), h.scribe({ element: "grok_onboarding_prompt", action: "click" });
                         }, [h, n, p, g, c]);
-                    return a.createElement(r.Z, { onPress: b, style: [u.container, y ? u.fullWidth : void 0] }, ({ isHovered: n }) => a.createElement(o.Z, { style: [u.content, n ? u.hovered : void 0] }, a.createElement(s.Z, { resizeMode: "cover", source: e, style: [u.image, y ? u.fullWidth : void 0] }), a.createElement(o.Z, { style: u.text }, a.createElement(l.ZP, { color: "text", size: "body" }, t))));
+                    return a.createElement(r.Z, { onPress: f, style: [u.container, y ? u.fullWidth : void 0] }, ({ isHovered: n }) => a.createElement(o.Z, { style: [u.content, n ? u.hovered : void 0] }, a.createElement(s.Z, { resizeMode: "cover", source: e, style: [u.image, y ? u.fullWidth : void 0] }), a.createElement(o.Z, { style: u.text }, a.createElement(l.ZP, { color: "text", size: "body" }, t))));
                 },
                 u = c.default.create((e) => ({ container: {}, content: { backgroundColor: e.colors.gray0, borderRadius: e.borderRadii.large, paddingTop: e.spaces.space8, paddingHorizontal: e.spaces.space8, overflow: "hidden" }, image: { width: 235, height: 175, borderRadius: e.borderRadii.large }, fullWidth: { width: "100%" }, hovered: { backgroundColor: e.colors.gray100 }, text: { height: e.spaces.space36, justifyContent: "center", alignItems: "center" } }));
         },
@@ -453,8 +453,8 @@
                 g = n(674132),
                 h = n.n(g),
                 y = n(47086),
-                b = n(161335),
-                f = n(149170),
+                f = n(161335),
+                b = n(149170),
                 E = n(837020),
                 w = n(189700),
                 v = n(839090),
@@ -465,7 +465,7 @@
             const k = ({ status: e, expectedChunks: t = [0.25, 0.5, 0.75, 1], intermediateResults: n = [], url: a, aspectRatio: i, isModerated: s, withActionRow: l, openMediaToEdit: d, onImageSize: m, mediaId: p, allMediaIds: u }) => {
                     const [g, h] = o.useState(0),
                         y = R({ expectedChunks: t, progress: g }),
-                        b = o.useMemo(
+                        f = o.useMemo(
                             () =>
                                 [...n]
                                     .sort((e, t) => e.progress - t.progress)
@@ -486,7 +486,7 @@
                                     }),
                             [n, g, i],
                         ),
-                        f = n.length > 0 && g > 0,
+                        b = n.length > 0 && g > 0,
                         E = o.useMemo(() => ({ top: 0, height: 100 * g + "%", overflow: "hidden", transitionProperty: "height, mask", transitionDuration: `${y}ms`, transitionTimingFunction: 1 === g ? "ease-in" : "linear", zIndex: 50, mask: g < 1 ? "linear-gradient(\n        to bottom,\n        rgba(0, 0, 0, 1) 0%,\n        rgba(0, 0, 0, 1) calc(100% - 5px),\n        rgba(0, 0, 0, 0) 100%\n      )" : void 0 }), [g, y]),
                         w = o.useMemo(() => ({ top: 0, height: 100 * g + "%", overflow: "hidden", transform: "translate3d(0,0,0)", transitionProperty: "height", transitionDuration: y / 1.5 + "ms", transitionTimingFunction: "linear", filter: "blur(70px) contrast(2)", zIndex: 10 }), [g, y]),
                         [v, Z] = o.useState(0);
@@ -501,7 +501,7 @@
                                     (e) => {},
                                 );
                         }, [a, Z]),
-                        o.createElement(r.Z, { style: P.container }, "loading" === e ? o.createElement(r.Z, { style: P.logoContainer }, o.createElement(x.x1, { style: P.grokIcon })) : null, "loading" === e || "aborted" === e || f ? o.createElement(o.Fragment, null, o.createElement(r.Z, { style: [P.content, E] }, o.createElement(r.Z, { style: s || "aborted" === e ? P.contentModerated : void 0 }, b)), o.createElement(r.Z, { style: [P.content, w] }, b)) : null, o.createElement(c.Z, { resizeMode: "cover", source: f || s ? void 0 : a, style: [P.finalImage, { aspectRatio: i ?? (v || 4 / 3) }] }), l && "aborted" !== e ? o.createElement(r.Z, { style: [P.actionRow, P.animation] }, o.createElement(I.rO, { allMediaIds: u, buttonSize: "medium", buttonType: "onMediaText", contentUrl: a, isLoading: "ready" !== e, mediaId: p, setEditMode: d || (() => {}), withStartAlignment: !0 })) : null)
+                        o.createElement(r.Z, { style: P.container }, "loading" === e ? o.createElement(r.Z, { style: P.logoContainer }, o.createElement(x.x1, { style: P.grokIcon })) : null, "loading" === e || "aborted" === e || b ? o.createElement(o.Fragment, null, o.createElement(r.Z, { style: [P.content, E] }, o.createElement(r.Z, { style: s || "aborted" === e ? P.contentModerated : void 0 }, f)), o.createElement(r.Z, { style: [P.content, w] }, f)) : null, o.createElement(c.Z, { resizeMode: "cover", source: b || s ? void 0 : a, style: [P.finalImage, { aspectRatio: i ?? (v || 4 / 3) }] }), l && "aborted" !== e ? o.createElement(r.Z, { style: [P.actionRow, P.animation] }, o.createElement(I.rO, { allMediaIds: u, buttonSize: "medium", buttonType: "onMediaText", contentUrl: a, isLoading: "ready" !== e, mediaId: p, setEditMode: d || (() => {}), withStartAlignment: !0 })) : null)
                     );
                 },
                 P = d.default.create((e) => ({ animation: { opacity: 1, animationDuration: ".3s", animationTimingFunction: "ease-out", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }] }, actionRow: { position: "absolute", bottom: 0, width: "100%", backdropFilter: "blur(4px) brightness(70%)", zIndex: 300 }, content: { position: "absolute", height: "100%", width: "100%", start: 0, opacity: 1 }, contentModerated: { transitionProperty: "opacity", transitionDuration: "500ms", transitionTimingFunction: "linear", opacity: 0 }, image: { position: "absolute", start: 0, top: 0, width: "100%", zIndex: 100 }, transparent: { opacity: 0 }, finalImage: { position: "relative", zIndex: 200, width: "100%" }, container: { borderRadius: e.borderRadii.large, backgroundColor: e.colors.gray50, transform: "translate3d(0,0,0)", width: "100%", overflow: "hidden", position: "relative" }, logoContainer: { position: "absolute", start: 0, top: 0, width: "100%", height: "100%", justifyContent: "center", alignItems: "center", opacity: 0, animationIterationCount: "infinite", animationDuration: "1.5s", animationKeyframes: [{ "0%": { opacity: "0" }, "50%": { opacity: "1" }, "100%": { opacity: "0" } }] }, grokIcon: { color: e.colors.gray200, width: "20%", maxWidth: e.spaces.space64, height: "20%", maxHeight: e.spaces.space64 } })),
@@ -560,9 +560,9 @@
                             onPress: H,
                             style: [n && { justifyContent: "center" }, le, P ? W.noClick : void 0, G],
                         }),
-                        I ? o.createElement(c.Z, { resizeMode: "cover", source: N || $, style: [W.inputAttachmentPreview, { width: Q ?? D, height: C ?? D }] }) : o.createElement(k, { allMediaIds: e, aspectRatio: t, intermediateResults: x, isModerated: P, mediaId: R, onImageSize: O, openMediaToEdit: K, resizeMode: "cover", status: V, url: N || $, withActionRow: J && q.isHovered }),
-                        "error" === V ? o.createElement(r.Z, { style: W.errorContainer }, o.createElement(y.default, { color: d.default.theme.colors.gray600, style: W.errorIcon }), se ? o.createElement(m.ZP, { size: "body", style: W.errorMessage }, S) : null) : P || "aborted" === V ? o.createElement(r.Z, { style: W.errorContainer }, o.createElement(b.default, { color: d.default.theme.colors.text, style: W.errorIconLarge })) : null,
-                        o.createElement(r.Z, { style: W.imageButtonContainer }, s ? o.createElement(p.ZP, { "aria-label": L, hoverLabel: A, icon: o.createElement(f.default, null), onClick: ie, size: "xSmall", type: "onMediaDominantColorFilled" }) : null, ne && ee ? o.createElement(v.Z, { onDismiss: re }, o.createElement(i.Z, { onPress: re }, F)) : null, U && (Y || (!Y && ae)) ? o.createElement(p.ZP, { "aria-label": z, hoverLabel: M, icon: o.createElement(E.default, null), onClick: ce, size: "xSmall", style: W.removeBtn, type: "onMediaDominantColorFilled" }) : null),
+                        I ? (!$ || $.startsWith("blob:") ? o.createElement(r.Z, { style: [W.inputAttachmentPreview, W.inputAttachmentPreviewPlaceholder, { width: Q ?? D, height: C ?? D }] }) : o.createElement(c.Z, { resizeMode: "cover", source: N || $, style: [W.inputAttachmentPreview, { width: Q ?? D, height: C ?? D }] })) : o.createElement(k, { allMediaIds: e, aspectRatio: t, intermediateResults: x, isModerated: P, mediaId: R, onImageSize: O, openMediaToEdit: K, resizeMode: "cover", status: V, url: N || $, withActionRow: J && q.isHovered }),
+                        "error" === V ? o.createElement(r.Z, { style: W.errorContainer }, o.createElement(y.default, { color: d.default.theme.colors.gray600, style: W.errorIcon }), se ? o.createElement(m.ZP, { size: "body", style: W.errorMessage }, S) : null) : P || "aborted" === V ? o.createElement(r.Z, { style: W.errorContainer }, o.createElement(f.default, { color: d.default.theme.colors.text, style: W.errorIconLarge })) : null,
+                        o.createElement(r.Z, { style: W.imageButtonContainer }, s ? o.createElement(p.ZP, { "aria-label": L, hoverLabel: A, icon: o.createElement(b.default, null), onClick: ie, size: "xSmall", type: "onMediaDominantColorFilled" }) : null, ne && ee ? o.createElement(v.Z, { onDismiss: re }, o.createElement(i.Z, { onPress: re }, F)) : null, U && (Y || (!Y && ae)) ? o.createElement(p.ZP, { "aria-label": z, hoverLabel: M, icon: o.createElement(E.default, null), onClick: ce, size: "xSmall", style: W.removeBtn, type: "onMediaDominantColorFilled" }) : null),
                     );
                 }
                 if (I) {
@@ -604,6 +604,7 @@
                 errorMessage: { color: e.colors.gray600 },
                 removeBtn: { animationDuration: "0.2s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }], animationTimingFunction: "ease", animationFillMode: "both", position: "absolute", top: 0, end: 0 },
                 inputAttachmentPreviewRemoveBtn: { top: e.spaces.space4, end: e.spaces.space4 },
+                inputAttachmentPreviewPlaceholder: { backgroundColor: "light" === e.paletteName ? e.colors.gray100 : e.colors.gray200 },
                 inputAttachmentPreview: { borderRadius: e.spaces.space8 },
                 inputAttachmentPreviewFileContainer: { position: "relative", borderRadius: e.spaces.space8, padding: e.spaces.space8, backgroundColor: "light" === e.paletteName ? e.colors.gray100 : e.colors.gray300 },
                 inputAttachmentPreviewFileContainerContent: { display: "flex", flexDirection: "column", justifyContent: "space-between", gap: e.spaces.space4, height: "100%" },
@@ -635,9 +636,9 @@
                     !r)
                 )
                     return;
-                return s.$.includes(r?.local?.type) || s.$.includes(r?.remote?.mimeType) ? a.createElement(o.Z, null, r.remote && a.createElement(o.Z, { style: [m.default, m.visible] }, a.createElement(c.Z, { file: r.remote, height: e, isImageActionsEnabled: !1, isInputAttachmentPreview: !0, isLoading: !1, onRemove: n, preloadedImageUrl: p.current, width: d })), r.local && a.createElement(o.Z, { style: [m.default, r.remote ? m.hidden : m.visible] }, a.createElement(l.Z, { file: r.local, height: e, isInputAttachmentPreview: !0, onRemove: n, width: d }), a.createElement(i.Z, { style: { top: "50%", start: "50%", position: "absolute", transform: "translate(-50%, -50%)" } }))) : a.createElement(o.Z, null, r.remote ? a.createElement(c.Z, { file: r.remote, height: e, isImageActionsEnabled: !1, isInputAttachmentPreview: !0, isLoading: !1, onRemove: n, preloadedImageUrl: p.current, width: d }) : r.local ? a.createElement(a.Fragment, null, a.createElement(l.Z, { file: r.local, height: e, isInputAttachmentPreview: !0, onRemove: n, width: d }), a.createElement(i.Z, { style: [{ top: "50%", start: "50%", position: "absolute", transform: "translate(-50%, -50%)" }, r.remote ? m.hidden : m.visible] })) : null);
+                return s.$.includes(r?.local?.type) || s.$.includes(r?.remote?.mimeType) ? a.createElement(o.Z, null, r.remote && a.createElement(o.Z, { style: m.default }, a.createElement(c.Z, { file: r.remote, height: e, isImageActionsEnabled: !1, isInputAttachmentPreview: !0, isLoading: !1, onRemove: n, preloadedImageUrl: p.current, width: d })), r.local && a.createElement(o.Z, { style: [m.default, r.remote ? m.hidden : void 0] }, a.createElement(l.Z, { file: r.local, height: e, isInputAttachmentPreview: !0, onRemove: n, width: d }), a.createElement(i.Z, { style: { top: "50%", start: "50%", position: "absolute", transform: "translate(-50%, -50%)" } }))) : a.createElement(o.Z, null, r.remote ? a.createElement(c.Z, { file: r.remote, height: e, isImageActionsEnabled: !1, isInputAttachmentPreview: !0, isLoading: !1, onRemove: n, preloadedImageUrl: p.current, width: d }) : r.local ? a.createElement(a.Fragment, null, a.createElement(l.Z, { file: r.local, height: e, isInputAttachmentPreview: !0, onRemove: n, width: d }), a.createElement(i.Z, { style: [{ top: "50%", start: "50%", position: "absolute", transform: "translate(-50%, -50%)" }, r.remote ? m.hidden : void 0] })) : null);
             }
-            const m = r.default.create((e) => ({ default: { opacity: 0, transition: "all 0.3s ease-in-out", zIndex: 1 }, visible: { opacity: 1 }, hidden: { opacity: 0, position: "absolute", zIndex: -1 } }));
+            const m = r.default.create((e) => ({ default: { opacity: 1, zIndex: 1 }, hidden: { position: "absolute", zIndex: -1 } }));
         },
         523253: (e, t, n) => {
             n.d(t, { Z: () => i });
@@ -666,8 +667,8 @@
                 g = n(952793),
                 h = n(128225),
                 y = n(725516),
-                b = n(125363),
-                f = n(270172),
+                f = n(125363),
+                b = n(270172),
                 E = n(601576),
                 w = n(654917),
                 v = n(246277);
@@ -679,7 +680,7 @@
                 P = s().d1d3a41a,
                 R = ["ton.x.com", "ton.twitter.com", "pbs.twimg.com"];
             function z({ allFiles: e, aspectRatio: t, centerJustify: n, extraMenuItems: r, file: s, height: z, index: _, intermediateResults: M, isAborted: S, isImageActionsEnabled: L = !0, isInputAttachmentPreview: A, isLoading: B, messageId: D, onClick: T, onImageSize: F, onRemove: W, onViewed: j, preloadedImageUrl: H, style: O, useActionRowButtons: U, width: K, withMediaCarousel: N }) {
-                const V = (0, b.I0)(),
+                const V = (0, f.I0)(),
                     G = (0, o.useHistory)(),
                     $ = (0, y.z)(),
                     [J, Q] = a.useState(!1),
@@ -694,7 +695,7 @@
                     if (!s.url || s.isPublic || !p.v5.includes(s.mimeType) || ae) return;
                     const e = s.url;
                     Q(!0),
-                        V((0, f.X)(e))
+                        V((0, b.X)(e))
                             .then((e) => {
                                 q(e ?? void 0);
                             })
@@ -818,4 +819,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-16d5f187.a2beb23a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-16d5f187.73c3cd8a.js.map

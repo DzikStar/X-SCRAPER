@@ -3,7 +3,7 @@
     ["loader.DashModal"],
     {
         232870: (e, t, a) => {
-            a.r(t), a.d(t, { DashModal: () => f, default: () => C });
+            a.r(t), a.d(t, { DashModal: () => b, default: () => M });
             var o = a(807896),
                 r = (a(136728), a(202784)),
                 l = a(325686),
@@ -20,30 +20,30 @@
                 g = a(879526);
             const y = "0.1s",
                 v = () => !1;
-            function b(e) {
+            function C(e) {
                 return null == e ? null : "string" == typeof e ? e : e.pathname;
             }
-            const f = ({ closeMenu: e, ...t }) => {
+            const b = ({ closeMenu: e, ...t }) => {
                     const [a, n] = r.useState(!1);
                     r.useEffect(() => {
                         setTimeout(() => n(!0), 0);
                     }, [n]);
                     const y = (0, w.Q)({ ...t, withExtendedItems: !0 }),
-                        { acceptedIds: f, ids: C } = (0, p.v9)(m.sC),
-                        { coreItems: k, countrySpecificItems: E } = (0, g.O)({ analytics: t.analytics, featureSwitches: t.featureSwitches, onClose: e, userClaims: t.userClaims, viewerUser: t.viewerUser, acceptedFollowerCount: f.length, pendingFollowerCount: C.length - f.length }),
-                        z = r.useCallback(() => {
+                        { acceptedIds: b, ids: M } = (0, p.v9)(m.sC),
+                        { coreItems: k, countrySpecificItems: E } = (0, g.O)({ analytics: t.analytics, featureSwitches: t.featureSwitches, onClose: e, userClaims: t.userClaims, viewerUser: t.viewerUser, acceptedFollowerCount: b.length, pendingFollowerCount: M.length - b.length }),
+                        Z = r.useCallback(() => {
                             n(!1),
                                 setTimeout(() => {
                                     e();
                                 }, 100);
                         }, [e]),
-                        Z = r.useCallback(
+                        G = r.useCallback(
                             (e) => {
-                                e.stopPropagation(), z();
+                                e.stopPropagation(), Z();
                             },
-                            [z],
+                            [Z],
                         ),
-                        G = (0, i.pj)(),
+                        z = (0, i.pj)(),
                         S = (0, i.GS)(),
                         I = r.useMemo(() => {
                             const e = [],
@@ -51,23 +51,23 @@
                             return (
                                 y.forEach((a, l) => {
                                     const { component: i, renderIcon: s, ...n } = a,
-                                        c = b(n.path);
-                                    c && t.add(c), e.push(r.createElement(i, (0, o.Z)({}, n, { isActive: v, key: c, rank: void 0, renderIcon: () => s(!1, M.iconColor), size: S ? "normal" : "large", withBorder: !0, withHoverLabel: !1, withLabel: !1, withSubLabel: !S })));
+                                        c = C(n.path);
+                                    c && t.add(c), e.push(r.createElement(i, (0, o.Z)({}, n, { isActive: v, key: c, rank: void 0, renderIcon: () => s(!1, f.iconColor), size: S ? "normal" : "large", withBorder: !0, withHoverLabel: !1, withLabel: !1, withSubLabel: !S })));
                                 }),
                                 [...k, ...E].forEach((a, l) => {
                                     const { badgeCount: i, component: s, decoration: n, icon: c, iconColor: h, link: u, pip: p, rightControl: m, ...w } = a,
-                                        g = b(u);
-                                    g && !t.has(g) && e.push(r.createElement(d.ZP, (0, o.Z)({}, w, { "aria-label": w.label, isActive: v, key: y.length + l, layout: "vertical", path: g, rank: void 0, renderIcon: () => (c ? r.createElement(c, { style: [M.icon, M.iconColor] }) : null), size: S ? "normal" : "large", withBorder: !0, withHoverLabel: !1, withLabel: !1, withSubLabel: !S })));
+                                        g = C(u);
+                                    g && !t.has(g) && e.push(r.createElement(d.ZP, (0, o.Z)({}, w, { "aria-label": w.label, isActive: v, key: y.length + l, layout: "vertical", path: g, rank: void 0, renderIcon: () => (c ? r.createElement(c, { style: [f.icon, f.iconColor] }) : null), size: S ? "normal" : "large", withBorder: !0, withHoverLabel: !1, withLabel: !1, withSubLabel: !S })));
                                 }),
                                 e
                             );
                         }, [k, E, S, y]);
-                    return r.createElement(h.ZP, { clickMaskToClose: !0, modalSize: "full", onMaskClick: z, style: [M.modal, a && M.modalVisible], withBackground: !1, withMask: !1, withPassthroughEvents: !1 }, r.createElement(l.Z, { "aria-labelledby": u.Q_, "aria-modal": !0, onClick: Z, role: "dialog", style: M.dashModalStyle }, r.createElement(s.ZP, { icon: r.createElement(c.default, { size: 32, style: M.iconColor }), size: "large", style: M.closeButton, type: "primaryText" }), r.createElement(l.Z, { style: [M.dashModalGrid, G && M.dashModalGridNarrow, S && M.dashModalGridVeryNarrow, a && M.dashModalGridAnimatedIn] }, I)));
+                    return r.createElement(h.ZP, { clickMaskToClose: !0, modalSize: "full", onMaskClick: Z, style: [f.modal, a && f.modalVisible], withBackground: !1, withMask: !1, withPassthroughEvents: !1 }, r.createElement(l.Z, { "aria-labelledby": u.Q_, "aria-modal": !0, onClick: G, role: "dialog", style: f.dashModalStyle }, r.createElement(s.ZP, { icon: r.createElement(c.default, { size: 32, style: f.iconColor }), size: "large", style: f.closeButton, type: "primaryText" }), r.createElement(l.Z, { style: [f.dashModalGrid, z && f.dashModalGridNarrow, S && f.dashModalGridVeryNarrow, a && f.dashModalGridAnimatedIn] }, I)));
                 },
-                M = n.default.create((e) => ({ modal: { transition: `opacity ${y} ease-in-out`, opacity: "0" }, modalVisible: { opacity: "1" }, dashModalStyle: { width: "100%", height: "100%", backgroundColor: e.colors.cellBackground, padding: e.spaces.space32, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }, dashModalGrid: { display: "grid", gridTemplateColumns: "repeat(6, 1fr)", gridAutoFlow: "row", gridGap: e.spaces.space80, transition: `transform ${y} ease-in-out`, transform: "translate(0,15%)" }, dashModalGridAnimatedIn: { transform: "translate(0,0)" }, dashModalGridNarrow: { display: "grid", gridTemplateColumns: "repeat(5, 1fr)", gridAutoFlow: "row", gridGap: e.spaces.space64 }, dashModalGridVeryNarrow: { gridGap: e.spaces.space24 }, closeButton: { position: "absolute", top: e.spaces.space32, start: e.spaces.space32 }, icon: { width: e.spaces.space32, height: e.spaces.space32 }, iconColor: { color: e.colors.text } })),
-                C = f;
+                f = n.default.create((e) => ({ modal: { transition: `opacity ${y} ease-in-out`, opacity: "0" }, modalVisible: { opacity: "1" }, dashModalStyle: { width: "100%", height: "100%", backgroundColor: e.colors.cellBackground, padding: e.spaces.space32, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }, dashModalGrid: { display: "grid", gridTemplateColumns: "repeat(6, 1fr)", gridAutoFlow: "row", gridGap: e.spaces.space80, transition: `transform ${y} ease-in-out`, transform: "translate(0,15%)" }, dashModalGridAnimatedIn: { transform: "translate(0,0)" }, dashModalGridNarrow: { display: "grid", gridTemplateColumns: "repeat(5, 1fr)", gridAutoFlow: "row", gridGap: e.spaces.space64 }, dashModalGridVeryNarrow: { gridGap: e.spaces.space24 }, closeButton: { position: "absolute", top: e.spaces.space32, start: e.spaces.space32 }, icon: { width: e.spaces.space32, height: e.spaces.space32 }, iconColor: { color: e.colors.text } })),
+                M = b;
         },
-        197318: (e, t, a) => {
+        297896: (e, t, a) => {
             a.r(t), a.d(t, { default: () => n });
             var o = a(202784),
                 r = a(890601),
@@ -75,12 +75,12 @@
                 i = a(347101);
             const s = (e = {}) => {
                 const { direction: t } = (0, l.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M8.7 2.4c.7-.6 1.5-1 2.3-1.4.5-.2 1.1-.3 1.7-.3.4 0 .8.1 1.1.3s.7.4.9.7c.2.3.3.6.4 1 .1.4.1.7 0 1.1-.1.5-.2 1-.4 1.4-.4.8-.8 1.5-1.3 2.2-1.8 2.8-3.9 5.1-5.7 7.7-.4.6-.9 1.3-1.3 1.9-.2.3-.4.6-.6 1.1-.3.6.2.8.8.5 2.3-1.1 10.3-11.2 12.8-9 .3.3 1.7 1.5-1.3 5.8-.4.6-.7 1.1-1.1 1.6-.5.7-1.1 1.5-1.6 2.3-.4.6-.7 1.2-1 1.9-.1.2-.2.6 0 .8.4.4 1.9-.7 3.7-2.4l3.2-3.2c.5-.5 1.2.1.7.7-1.6 1.9-5.5 6.4-7.5 6.3-.4 0-.7-.1-1-.3s-.5-.5-.6-.8c-.1-.2-.2-.7.1-1.5.3-.8.6-1.6 1.1-2.3.5-.8 1-1.7 1.5-2.4.3-.5.7-1.1 1-1.6.3-.5.8-1.4 1.2-2 .2-.3.6-.9.2-1.2-.2-.2-.5-.2-1.3.6 0 0-6.6 6.7-9 8.4-1.3.9-2.8 1.2-3.6.4-1-.9-1.6-2.5 1.5-6.4 3.1-3.8 6.5-8.7 6.8-9.6.1-.2.1-.4.1-.5.1-.5-.5-.9-1-.7-.3.2-.8.5-1.6 1.2-2.3 2-4.3 4.3-6.1 6.8-.1.2-.3.3-.5.4s-.4.2-.6.2c-.4.1-.8-.1-1.2-.3-.3-.2-.5-.6-.6-1v-.6c.1-.2.1-.4.3-.5 2.7-2.9 5-5.2 7.5-7.3z" })) }, { writingDirection: t });
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M4 4.5C4 3.12 5.12 2 6.5 2h11C18.88 2 20 3.12 20 4.5v15c0 1.38-1.12 2.5-2.5 2.5h-11C5.12 22 4 20.88 4 19.5V16h2v3.5c0 .28.22.5.5.5h11c.28 0 .5-.22.5-.5v-15c0-.28-.22-.5-.5-.5h-11c-.28 0-.5.22-.5.5V8H4V4.5zm6.95 3.04L15.42 12l-4.47 4.46-1.41-1.42L11.58 13H2v-2h9.58L9.54 8.96l1.41-1.42z" })) }, { writingDirection: t });
             };
             s.metadata = { width: 24, height: 24 };
             const n = s;
         },
-        279849: (e, t, a) => {
+        256260: (e, t, a) => {
             a.r(t), a.d(t, { default: () => n });
             var o = a(202784),
                 r = a(890601),
@@ -88,7 +88,7 @@
                 i = a(347101);
             const s = (e = {}) => {
                 const { direction: t } = (0, l.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M18.037 13.084c-.918 1.685-2.719 3.479-5.694 5.212l-.342.204-.343-.204c-2.976-1.733-4.777-3.527-5.696-5.212-.924-1.699-.958-3.303-.349-4.533.603-1.216 1.799-1.978 3.127-2.046 1.122-.061 2.289.381 3.261 1.366.971-.985 2.138-1.427 3.259-1.366 1.328.068 2.524.829 3.127 2.046.609 1.23.575 2.834-.349 4.533zM19.42 3.16l1.42 1.42-1.77 1.76-1.41-1.41 1.76-1.77zM13 .5h-2V3h2V.5zM.5 13H3v-2H.5v2zm2.66 6.42l1.42 1.42 1.76-1.77-1.41-1.41-1.77 1.76zM21 11v2h2.5v-2H21zM11 23.5h2V21h-2v2.5zm6.66-4.43l1.76 1.77 1.42-1.42-1.77-1.76-1.41 1.41zM6.34 4.93L4.58 3.16 3.16 4.58l1.77 1.76 1.41-1.41z" })) }, { writingDirection: t });
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M10 10c2.209 0 4-1.79 4-4s-1.791-4-4-4-4 1.79-4 4 1.791 4 4 4zm0-6c1.105 0 2 .9 2 2s-.895 2-2 2-2-.9-2-2 .895-2 2-2zm5.863 9.44C14.373 11.85 12.352 11 10 11s-4.373.85-5.863 2.44c-1.477 1.58-2.366 3.8-2.632 6.46l-.11 1.1h17.21l-.11-1.1c-.266-2.66-1.155-4.88-2.632-6.46zM5.596 14.81C6.682 13.65 8.162 13 10 13s3.318.65 4.404 1.81c.921.978 1.602 2.388 1.939 4.19H3.657c.337-1.802 1.018-3.212 1.939-4.19zM24 10h-4.583l1.79 1.79-1.414 1.42-3.5-3.5-.707-.71.707-.71 3.5-3.5 1.414 1.42L19.417 8H24v2z" })) }, { writingDirection: t });
             };
             s.metadata = { width: 24, height: 24 };
             const n = s;
@@ -111,4 +111,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.DashModal.b8767fca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.DashModal.dc62737a.js.map

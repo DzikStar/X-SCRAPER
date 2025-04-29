@@ -3,7 +3,7 @@
     ["bundle.Grok-1d830d6b"],
     {
         204162: (e, t, a) => {
-            a.d(t, { Z: () => C });
+            a.d(t, { Z: () => f });
             var n = a(202784),
                 o = a(154003),
                 s = a(721266),
@@ -16,34 +16,36 @@
                 u = a(125363),
                 p = a(389071),
                 b = a(327597),
-                g = a(928831);
-            function C({ conversationKey: e, isCompactLayout: t, onClick: a, suggestion: r }) {
-                const C = (0, m.z)(),
-                    h = (0, u.I0)(),
-                    [k, I] = n.useState(!1),
-                    y = "SEARCH" === r?.mode ? l.default : i.default,
-                    _ = (0, p.bD)(e),
-                    w = n.useMemo(() => (t ? r.mobile : r.web), [t, r]),
-                    { isReasoningEnabled: v, isResearchEnabled: E, selectDeepsearchMode: x, selectReasoningMode: Z } = (0, g.w)(),
-                    D = (0, u.v9)(_.selectLastHumanMessage);
+                g = a(448781),
+                C = a(928831);
+            function f({ conversationKey: e, isCompactLayout: t, onClick: a, suggestion: r }) {
+                const f = (0, m.z)(),
+                    k = (0, u.I0)(),
+                    [I, y] = n.useState(!1),
+                    _ = "SEARCH" === r?.mode || "DEEPER_SEARCH" === r?.mode ? l.default : i.default,
+                    w = (0, p.bD)(e),
+                    E = n.useMemo(() => (t ? r.mobile : r.web), [t, r]),
+                    { isReasoningEnabled: v, isResearchEnabled: x, selectDeepsearchMode: Z, selectReasoningMode: D, setDeepersearchAdvancedSettings: S, setDeepsearchAdvancedSettings: P } = (0, C.w)(),
+                    M = (0, u.v9)(w.selectLastHumanMessage);
                 n.useEffect(() => {
-                    I(!0);
+                    y(!0);
                 }, []);
-                const S = n.useCallback(() => {
-                        C.scribe({ component: `follow_up_suggested_mode_${r.mode}`, action: "impression" });
-                    }, [C, r.mode]),
-                    P = n.useCallback(
+                const R = n.useCallback(() => {
+                        f.scribe({ component: `follow_up_suggested_mode_${r.mode}`, action: "impression" });
+                    }, [f, r.mode]),
+                    T = n.useCallback(
                         (t) => {
-                            C.scribe({ component: `follow_up_suggested_mode_${t.mode}`, action: "click" });
+                            f.scribe({ component: `follow_up_suggested_mode_${t.mode}`, action: "click" });
                             const n = "SEARCH" === t.mode,
-                                o = "THINK" === t.mode;
-                            n && !E ? x() : o && !v && Z(), h((0, b.u)({ analytics: C, conversationKey: e })({ text: D?.message?.message, returnCitations: !0, isDeepsearch: "SEARCH" === t.mode, isReasoning: "THINK" === t.mode })), a && a();
+                                o = "DEEPER_SEARCH" === t.mode,
+                                s = "THINK" === t.mode;
+                            (!n && !o) || x ? s && !v && D() : (o ? S() : P(), Z()), k((0, b.u)({ analytics: f, conversationKey: e })({ text: M?.message?.message, returnCitations: !0, isDeepsearch: n || o, isReasoning: s, deepsearchArgsOverride: o ? { mode: g.z_ } : void 0 })), a && a();
                         },
-                        [D, C, e, h, a, v, E, x, Z],
+                        [M, f, e, k, a, v, x, Z, D, S, P],
                     );
-                return n.createElement(o.ZP, { onClick: () => P(r), style: [f.buttonContainer, t && f.buttonContainerCompact, { opacity: k ? 1 : 0, transition: "opacity 0.3s ease-in" }] }, n.createElement(d.D, { id: `follow_up_mode_button_${r.mode}`, onFullyVisible: S, position: "bottom", testID: `follow_up_mode_button_${r.mode}` }), n.createElement(y, { style: f.icon }), n.createElement(s.Z, { size: "space8" }), n.createElement(c.ZP, { size: "subtext2", style: [f.suggestedModeText, t && f.suggestedModeTextCompact], weight: "medium" }, w));
+                return n.createElement(o.ZP, { onClick: () => T(r), style: [h.buttonContainer, t && h.buttonContainerCompact, { opacity: I ? 1 : 0, transition: "opacity 0.3s ease-in" }] }, n.createElement(d.D, { id: `follow_up_mode_button_${r.mode}`, onFullyVisible: R, position: "bottom", testID: `follow_up_mode_button_${r.mode}` }), n.createElement(_, { style: h.icon }), n.createElement(s.Z, { size: "space8" }), n.createElement(c.ZP, { size: "subtext2", style: [h.suggestedModeText, t && h.suggestedModeTextCompact], weight: "medium" }, E));
             }
-            const f = r.default.create((e) => ({ buttonContainer: { alignItems: "center", padding: e.spaces.space2, borderRadius: e.spaces.space20, backgroundColor: e.colors.gray50, marginTop: e.spaces.space1, flexDirection: "row", border: "none" }, buttonContainerCompact: { border: "none", backgroundColor: e.colors.gray50, marginTop: e.spaces.space1, padding: e.spaces.space1 }, iconContainer: { flexDirection: "row", alignItems: "center", justifyContent: "center" }, icon: { width: e.spaces.space16, height: e.spaces.space16, color: e.colors.gray900 }, suggestedModeText: { color: e.colors.gray900 }, suggestedModeTextCompact: { color: e.colors.gray900 } }));
+            const h = r.default.create((e) => ({ buttonContainer: { alignItems: "center", padding: e.spaces.space2, borderRadius: e.spaces.space20, backgroundColor: e.colors.gray50, marginTop: e.spaces.space1, flexDirection: "row", border: "none" }, buttonContainerCompact: { border: "none", backgroundColor: e.colors.gray50, marginTop: e.spaces.space1, padding: e.spaces.space1 }, iconContainer: { flexDirection: "row", alignItems: "center", justifyContent: "center" }, icon: { width: e.spaces.space16, height: e.spaces.space16, color: e.colors.gray900 }, suggestedModeText: { color: e.colors.gray900 }, suggestedModeTextCompact: { color: e.colors.gray900 } }));
         },
         811085: (e, t, a) => {
             a.d(t, { W: () => h });
@@ -84,13 +86,13 @@
                         },
                         [y, _?.agentChatItemId, i, s, I],
                     ),
-                    v = n.useCallback(() => {
+                    E = n.useCallback(() => {
                         a.scribe({ action: "click", component: "thumbs_up" }), w("Like");
                     }, [a, w]),
-                    E = n.useCallback(() => {
+                    v = n.useCallback(() => {
                         a.scribe({ action: "click", component: "thumbs_down" }), w("Dislike");
                     }, [a, w]);
-                return n.createElement(o.Z, { style: k.root }, n.createElement(o.Z, { style: k.buttonsContainer }, n.createElement(r.ZP, { disabled: !!d, onPress: v, size: "medium", style: [k.button, k.leftControl], type: "Like" === d ? "primaryFilled" : "primaryOutlined" }, f), n.createElement(r.ZP, { disabled: !!d, onPress: E, size: "medium", style: [k.button, k.rightControl], type: "Dislike" === d ? "primaryFilled" : "primaryOutlined" }, C)));
+                return n.createElement(o.Z, { style: k.root }, n.createElement(o.Z, { style: k.buttonsContainer }, n.createElement(r.ZP, { disabled: !!d, onPress: E, size: "medium", style: [k.button, k.leftControl], type: "Like" === d ? "primaryFilled" : "primaryOutlined" }, f), n.createElement(r.ZP, { disabled: !!d, onPress: v, size: "medium", style: [k.button, k.rightControl], type: "Dislike" === d ? "primaryFilled" : "primaryOutlined" }, C)));
             }
             const k = l.default.create((e) => ({ root: { backgroundColor: e.colors.navigationBackground, borderRadius: e.borderRadii.small, overflow: "hidden" }, buttonsContainer: { flexDirection: "row", justifyContent: "space-between" }, button: { flexGrow: 1, marginTop: e.spaces.space12, marginBottom: e.spaces.space12 }, leftControl: { marginStart: e.spaces.space12, marginEnd: e.spaces.space4 }, rightControl: { marginEnd: e.spaces.space12, marginStart: e.spaces.space4 } }));
         },
@@ -138,8 +140,8 @@
             }
             var _ = a(351743),
                 w = a.n(_),
-                v = a(922449),
-                E = a(671212),
+                E = a(922449),
+                v = a(671212),
                 x = a(946474),
                 Z = a(517330),
                 D = a(725516),
@@ -149,7 +151,7 @@
                 R = a(975617);
             const T = b().ca0f5894,
                 z = b().fe731016;
-            function L({ conversationKey: e, messageId: t }) {
+            function A({ conversationKey: e, messageId: t }) {
                 const a = (0, D.z)(),
                     s = (0, i.I0)(),
                     c = (0, d.bD)(e),
@@ -177,14 +179,14 @@
                         [C, f?.agentChatItemId, r, s, b],
                     ),
                     [y, _] = n.useState(!1),
-                    [L, F] = n.useState(!1),
-                    K = n.useCallback(() => {
+                    [A, F] = n.useState(!1),
+                    O = n.useCallback(() => {
                         a.scribe({ action: "click", component: "thumbs_up" }), I("Like");
                     }, [a, I]),
                     G = n.useCallback(() => {
                         a.scribe({ action: "click", component: "thumbs_down" }), I("Dislike"), _(!0);
                     }, [a, I]),
-                    O = n.useCallback(() => {
+                    K = n.useCallback(() => {
                         C && f?.agentChatItemId && (a.scribe({ action: "click", component: "feedback_comment" }), F(!0), _(!1));
                     }, [a, C, f]),
                     H = n.useCallback(
@@ -205,8 +207,8 @@
                 return C && f?.agentChatItemId
                     ? n.createElement(
                           o.Z,
-                          { style: [A.container, g ? void 0 : A.noGap] },
-                          m ? n.createElement(h.Z, { color: "primary", disabled: !0, icon: "Like" === m ? n.createElement(v.default, null) : n.createElement(E.default, null), label: "Like" === m ? z : T }) : n.createElement(n.Fragment, null, n.createElement(h.Z, { icon: n.createElement(x.default, null), label: z, onPress: K }), n.createElement(h.Z, { icon: n.createElement(Z.default, null), label: T, onPress: G })),
+                          { style: [L.container, g ? void 0 : L.noGap] },
+                          m ? n.createElement(h.Z, { color: "primary", disabled: !0, icon: "Like" === m ? n.createElement(E.default, null) : n.createElement(v.default, null), label: "Like" === m ? z : T }) : n.createElement(n.Fragment, null, n.createElement(h.Z, { icon: n.createElement(x.default, null), label: z, onPress: O }), n.createElement(h.Z, { icon: n.createElement(Z.default, null), label: T, onPress: G })),
                           k &&
                               y &&
                               n.createElement(S.Z, {
@@ -215,10 +217,10 @@
                                       _(!1);
                                   },
                                   onSelect: H,
-                                  onSelectOtherOption: O,
+                                  onSelectOtherOption: K,
                               }),
                           k &&
-                              L &&
+                              A &&
                               n.createElement(M.Z, {
                                   conversationId: C,
                                   conversationItemId: f.agentChatItemId,
@@ -230,9 +232,9 @@
                       )
                     : null;
             }
-            const A = s.default.create((e) => ({ container: { flexDirection: "row", gap: e.spaces.space8 }, noGap: { gap: 0 } }));
+            const L = s.default.create((e) => ({ container: { flexDirection: "row", gap: e.spaces.space8 }, noGap: { gap: 0 } }));
             var F = a(615455),
-                K = a(799027);
+                O = a(799027);
             function G({ memoryReferences: e }) {
                 const [t, a] = n.useState(!1),
                     o = n.useCallback(() => {
@@ -241,9 +243,9 @@
                     s = n.useCallback(() => {
                         a(!1);
                     }, []);
-                return n.createElement(n.Fragment, null, n.createElement(h.Z, { icon: n.createElement(F.default, null), label: K.i, onPress: o }), t && n.createElement(K.Z, { memoryReferences: e, onDrawerDismiss: s }));
+                return n.createElement(n.Fragment, null, n.createElement(h.Z, { icon: n.createElement(F.default, null), label: O.i, onPress: o }), t && n.createElement(O.Z, { memoryReferences: e, onDrawerDismiss: s }));
             }
-            var O = a(807896),
+            var K = a(807896),
                 H = (a(136728), a(797553)),
                 B = a(143670),
                 $ = a(837020),
@@ -287,25 +289,25 @@
                         g({});
                     }, [g]),
                     [_, w] = n.useState(!1),
-                    v = n.useCallback(() => {
+                    E = n.useCallback(() => {
                         w(!_);
                     }, [_]),
-                    E = n.useMemo(() => {
+                    v = n.useMemo(() => {
                         const e = [];
                         return b ? (e.push({ Icon: V.default, actionText: N, onClick: g }), s ? e.push({ Icon: te(j.default), actionText: Q.withoutSearch, onClick: f }) : e.push({ Icon: j.default, actionText: Q.withSearch, onClick: I }), a ? e.push({ Icon: te(W.default), actionText: Q.withoutImage, onClick: C }) : e.push({ Icon: W.default, actionText: Q.withImage, onClick: k }), e) : e;
                     }, [s, a, b, g, k, C, I, f]);
                 return n.createElement(
                     o.Z,
                     null,
-                    n.createElement(h.Z, { icon: n.createElement(V.default, null), label: N, onPress: E.length ? v : y }),
+                    n.createElement(h.Z, { icon: n.createElement(V.default, null), label: N, onPress: v.length ? E : y }),
                     _ &&
                         n.createElement(
                             H.default,
-                            { isFixed: !0, onDismiss: v, preferredHorizontalOrientation: "right" },
-                            E.map((e) =>
+                            { isFixed: !0, onDismiss: E, preferredHorizontalOrientation: "right" },
+                            v.map((e) =>
                                 n.createElement(
                                     B.Z,
-                                    (0, O.Z)({}, e, {
+                                    (0, K.Z)({}, e, {
                                         onClick: () => {
                                             e.onClick();
                                         },
@@ -392,13 +394,13 @@
                     I = p && -1 !== p.indexOf("post_analysis") && (0, r.I)((f && f.message) || ""),
                     _ = (0, l.hC)("responsive_web_grok_show_message_reply_button"),
                     w = !_e && _ && I,
-                    { isCompactLayout: v } = (0, u.ZP)(),
-                    E = h.fileAttachments && h.fileAttachments.length > 0 && h.fileAttachments.every((e) => e.mimeType.startsWith("image")),
+                    { isCompactLayout: E } = (0, u.ZP)(),
+                    v = h.fileAttachments && h.fileAttachments.length > 0 && h.fileAttachments.every((e) => e.mimeType.startsWith("image")),
                     x = h.memoryReferences && h.memoryReferences.length;
-                return n.createElement(o.Z, { style: ve.expandedDrawer }, n.createElement(o.Z, { style: [ve.expandedDrawerLeft, v ? ve.smallerGap : null] }, c ? n.createElement(ne, { analysisEntityId: e, conversationKey: t, hasImages: !!h.fileAttachments?.length, hasSearch: !!h.webResults?.length, imageGenerationCount: k, promptSource: p, userChatItemId: h.userChatItemId }) : null, !c || !h.message || h.isDeleted || w || E ? null : n.createElement(y, { text: h.message, textContainer: g }), h.isDeleted ? null : n.createElement(Ie, { conversationKey: t, messageId: c }), x && n.createElement(G, { memoryReferences: h.memoryReferences || [] }), h.isDeleted ? null : n.createElement(L, { conversationKey: t, messageId: c }), !!a && a));
+                return n.createElement(o.Z, { style: Ee.expandedDrawer }, n.createElement(o.Z, { style: [Ee.expandedDrawerLeft, E ? Ee.smallerGap : null] }, c ? n.createElement(ne, { analysisEntityId: e, conversationKey: t, hasImages: !!h.fileAttachments?.length, hasSearch: !!h.webResults?.length, imageGenerationCount: k, promptSource: p, userChatItemId: h.userChatItemId }) : null, !c || !h.message || h.isDeleted || w || v ? null : n.createElement(y, { text: h.message, textContainer: g }), h.isDeleted ? null : n.createElement(Ie, { conversationKey: t, messageId: c }), x && n.createElement(G, { memoryReferences: h.memoryReferences || [] }), h.isDeleted ? null : n.createElement(A, { conversationKey: t, messageId: c }), !!a && a));
             }
-            const ve = s.default.create((e) => ({ expandedDrawer: { flexDirection: "row", justifyContent: "space-between", width: "100%", alignItems: "center" }, expandedDrawerLeft: { flexDirection: "row", alignItems: "center" }, expandedDrawerRight: { flexDirection: "row", gap: e.spaces.space16, alignItems: "center" }, smallerGap: { gap: e.spaces.space8 } }));
+            const Ee = s.default.create((e) => ({ expandedDrawer: { flexDirection: "row", justifyContent: "space-between", width: "100%", alignItems: "center" }, expandedDrawerLeft: { flexDirection: "row", alignItems: "center" }, expandedDrawerRight: { flexDirection: "row", gap: e.spaces.space16, alignItems: "center" }, smallerGap: { gap: e.spaces.space8 } }));
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-1d830d6b.a488983a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-1d830d6b.5d317eca.js.map

@@ -774,39 +774,39 @@
                 l = r(100326);
             const E =
                 ({ analytics: e, conversationKey: t }) =>
-                ({ analysisEntityId: r, attachments: E, mode: u, onStart: m, returnCitations: p, promptMetadata: _ = { promptSource: "NATURAL", action: "INPUT" }, returnSearchResults: g = !0, features: S = { eagerTweets: !0, serverHistory: !0 }, text: R, isGrokDrawer: h = !1, trendPromptIdStr: T, imageGenerationCount: I, source: w, toolOverrides: f, isReasoning: O, isDeepsearch: A, personalityId: b }) =>
-                async (T, k, { api: C, featureSwitches: U }) => {
-                    const N = !s.ZP.isTwitterApp() && U.isTrue("responsive_web_grok_api_enable_grok_host"),
-                        F = (0, o.bD)(t);
-                    let y = F.selectConversationId(k());
-                    const M = s.ZP.isAndroid(),
-                        D = s.ZP.isIOS();
-                    if ((null != F.selectCurrentResponseMessage(k()) && (await T((0, c.I)({ analytics: e, conversationKey: t }))), (y ??= await (0, l.X)({ analytics: e, api: C, dispatch: T, grokModule: F, analysisEntityId: r })), !y)) return void (0, n.Uk)(e, "conversation couln't be found or created");
-                    let P;
-                    const v = U.isTrue("responsive_web_grok_location_enabled");
-                    if (v) {
-                        const e = (0, a.fw)(k())?.position;
-                        e && (P = { latitude: e.coords.latitude, longitude: e.coords.longitude, accuracy: e.coords.accuracy });
+                ({ analysisEntityId: r, attachments: E, mode: u, onStart: m, returnCitations: p, promptMetadata: _ = { promptSource: "NATURAL", action: "INPUT" }, returnSearchResults: g = !0, features: S = { eagerTweets: !0, serverHistory: !0 }, text: R, isGrokDrawer: h = !1, trendPromptIdStr: T, imageGenerationCount: I, source: w, toolOverrides: f, isReasoning: O, isDeepsearch: A, deepsearchArgsOverride: b, personalityId: k }) =>
+                async (T, C, { api: U, featureSwitches: N }) => {
+                    const F = !s.ZP.isTwitterApp() && N.isTrue("responsive_web_grok_api_enable_grok_host"),
+                        y = (0, o.bD)(t);
+                    let M = y.selectConversationId(C());
+                    const D = s.ZP.isAndroid(),
+                        P = s.ZP.isIOS();
+                    if ((null != y.selectCurrentResponseMessage(C()) && (await T((0, c.I)({ analytics: e, conversationKey: t }))), (M ??= await (0, l.X)({ analytics: e, api: U, dispatch: T, grokModule: y, analysisEntityId: r })), !M)) return void (0, n.Uk)(e, "conversation couln't be found or created");
+                    let v;
+                    const L = N.isTrue("responsive_web_grok_location_enabled");
+                    if (L) {
+                        const e = (0, a.fw)(C())?.position;
+                        e && (v = { latitude: e.coords.latitude, longitude: e.coords.longitude, accuracy: e.coords.accuracy });
                     }
-                    const L = u ?? F.selectMode(k()),
-                        G = (0, o.F9)(k()),
-                        K = F.selectConversationForAPI(k()),
-                        x = (0, o.en)(k()),
-                        H = { ...f };
-                    if (x && x.toolOverrides) {
-                        const e = x.toolOverrides;
+                    const G = u ?? y.selectMode(C()),
+                        K = (0, o.F9)(C()),
+                        x = y.selectConversationForAPI(C()),
+                        H = (0, o.en)(C()),
+                        B = { ...f };
+                    if (H && H.toolOverrides) {
+                        const e = H.toolOverrides;
                         Object.keys(e).forEach((t) => {
-                            H[t] = e[t];
+                            B[t] = e[t];
                         });
                     }
                     if (!(R || (E && 0 !== E.length))) return Promise.resolve();
-                    const B = { message: R ?? "", sender: i.CI.HUMAN, promptSource: w ?? "", ...(r ? { postIds: [r] } : void 0) };
-                    E && (B.fileAttachments = E), A && (B.isDeepsearch = A), O && (B.isReasoning = O);
-                    const j = { responses: K.concat(B), systemPromptName: L, grokModelOptionId: G, conversationId: y, returnSearchResults: g, returnCitations: p, promptMetadata: _, imageGenerationCount: I, requestFeatures: S, ...(r ? { analysisEntityId: r } : void 0), geoLocation: P, enableSideBySide: !("GROK_ANALYZE" === _.promptSource || h || D || M || A || O), toolOverrides: H, isDeepsearch: A, isReasoning: O, personalityId: b, deepsearchArgs: A ? x?.deepsearchArgs : void 0 };
-                    T(F.setPromptSource(w || "")), T(F.setUsingExperiment(!1)), T(F.userSendMessage(B, _)), (0, n.pv)(e, { conversationLength: K.length, isFileAttached: Boolean(B.fileAttachments?.length), isDeepsearch: j.isDeepsearch || void 0, isReasoning: j.isReasoning || void 0 }), m?.();
-                    const Z = U.isTrue("responsive_web_grok_enable_add_response_keepalive") && (A || O),
-                        Q = U.getNumberValue("responsive_web_grok_add_response_num_retries", 0);
-                    return (0, d.D)({ grokModule: F, requestBody: j, dispatch: T, analytics: e, api: C, flags: { enableLocation: v, enableGrokApiHost: N, numRetries: Q, enableKeepalive: Z } });
+                    const j = { message: R ?? "", sender: i.CI.HUMAN, promptSource: w ?? "", ...(r ? { postIds: [r] } : void 0) };
+                    E && (j.fileAttachments = E), A && (j.isDeepsearch = A), O && (j.isReasoning = O);
+                    const Z = { responses: x.concat(j), systemPromptName: G, grokModelOptionId: K, conversationId: M, returnSearchResults: g, returnCitations: p, promptMetadata: _, imageGenerationCount: I, requestFeatures: S, ...(r ? { analysisEntityId: r } : void 0), geoLocation: v, enableSideBySide: !("GROK_ANALYZE" === _.promptSource || h || P || D || A || O), toolOverrides: B, isDeepsearch: A, isReasoning: O, personalityId: k, deepsearchArgs: b ?? (A ? H?.deepsearchArgs : void 0) };
+                    T(y.setPromptSource(w || "")), T(y.setUsingExperiment(!1)), T(y.userSendMessage(j, _)), (0, n.pv)(e, { conversationLength: x.length, isFileAttached: Boolean(j.fileAttachments?.length), isDeepsearch: Z.isDeepsearch || void 0, isReasoning: Z.isReasoning || void 0 }), m?.();
+                    const Q = N.isTrue("responsive_web_grok_enable_add_response_keepalive") && (A || O),
+                        V = N.getNumberValue("responsive_web_grok_add_response_num_retries", 0);
+                    return (0, d.D)({ grokModule: y, requestBody: Z, dispatch: T, analytics: e, api: U, flags: { enableLocation: L, enableGrokApiHost: F, numRetries: V, enableKeepalive: Q } });
                 };
         },
         63538: (e, t, r) => {
@@ -934,4 +934,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e851f17f.15056a8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e851f17f.d479776a.js.map

@@ -341,7 +341,7 @@
                 k = a(38660),
                 I = a(804455),
                 M = a(472238);
-            const O = (0, a(523561).Z)({ loader: () => Promise.all([a.e("modules.common-e907d115"), a.e("modules.common-e019dbda"), a.e("icons.14"), a.e("icons.2"), a.e("icons.27"), a.e("shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerPrerollUI~loaders.video.VideoPlayerEventsU"), a.e("shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerPrerollUI"), a.e("loaders.video.VideoPlayerPrerollUI")]).then(a.bind(a, 463371)), renderPlaceholder: () => r.createElement("div", { "data-testid": "videoPlayer" }) }),
+            const O = (0, a(523561).Z)({ loader: () => Promise.all([a.e("icons.10"), a.e("icons.13"), a.e("modules.common-e907d115"), a.e("modules.common-e019dbda"), a.e("icons.17"), a.e("icons.4"), a.e("shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerPrerollUI~loaders.video.VideoPlayerEventsU"), a.e("shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerPrerollUI"), a.e("loaders.video.VideoPlayerPrerollUI")]).then(a.bind(a, 463371)), renderPlaceholder: () => r.createElement("div", { "data-testid": "videoPlayer" }) }),
                 B = ({ "aria-label": e, containerRef: t, id: a, includeDisputeLinkInCopyrightErrorMessage: i, liveBroadcastRewindEnabled: d, onClick: u, onScribeEvent: y, playerApi: h, playerDisplayOptions: m, playerState: b, poster: g, shouldShowAltLabel: f, showWatchAgain: E, useKeyboardShortcuts: S }) => {
                     const v = r.useCallback(() => {
                         u?.({ playerState: b, playerApi: h });
@@ -372,7 +372,7 @@
                 D = i.default.create((e) => ({ base: { ...i.default.absoluteFillObject, cursor: "pointer" } })),
                 F = r.memo(B);
         },
-        38502: (e, t, a) => {
+        355830: (e, t, a) => {
             a.r(t), a.d(t, { default: () => o });
             var r = a(202784),
                 n = a(890601),
@@ -380,11 +380,11 @@
                 i = a(347101);
             const s = (e = {}) => {
                 const { direction: t } = (0, l.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M3 5.5C3 4.12 4.119 3 5.5 3h13C19.881 3 21 4.12 21 5.5v13c0 1.38-1.119 2.5-2.5 2.5h-13C4.119 21 3 19.88 3 18.5v-13zm2.746 6.52c0 1.85 1.421 3.2 3.187 3.2v-.01h.003c1.369 0 2.154-.59 2.737-1.39l-1.22-.87c-.303.44-.812.73-1.39.73-.93 0-1.685-.75-1.685-1.68s.754-1.68 1.684-1.68c.559 0 1.051.27 1.357.69l1.207-.93c-.545-.76-1.36-1.29-2.62-1.29-1.872 0-3.26 1.41-3.26 3.21v.02zm6.584 0c0 1.85 1.421 3.2 3.185 3.2 1.368 0 2.154-.6 2.738-1.4l-1.22-.87c-.304.44-.813.74-1.39.74-.93 0-1.684-.76-1.684-1.69s.755-1.68 1.685-1.68c.559 0 1.051.27 1.356.69l1.21-.93c-.547-.76-1.36-1.29-2.622-1.29-1.872 0-3.258 1.41-3.258 3.21v.02z" })) }, { writingDirection: t });
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M12 1.5c1.808 0 3.51.46 4.995 1.26l-1.491 1.49C14.435 3.77 13.249 3.5 12 3.5c-4.694 0-8.5 3.81-8.5 8.5 0 1.25.269 2.44.753 3.5L2.762 17C1.957 15.51 1.5 13.81 1.5 12 1.5 6.2 6.201 1.5 12 1.5zm0 19c-1.249 0-2.435-.27-3.504-.75l-1.491 1.49c1.485.8 3.187 1.26 4.995 1.26 5.799 0 10.5-4.7 10.5-10.5 0-1.81-.457-3.51-1.262-5l-1.491 1.5c.484 1.06.753 2.25.753 3.5 0 4.69-3.806 8.5-8.5 8.5zm8.5-18.41L15.086 7.5 16.5 8.91l5.414-5.41L20.5 2.09zm-4 9.91l-7-4.45v8.9l7-4.45zm-13 9.91L8.414 17 7 15.59 2.086 20.5 3.5 21.91z" })) }, { writingDirection: t });
             };
             s.metadata = { width: 24, height: 24 };
             const o = s;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loaders.video.VideoPlayerMiniUI.4c1b991a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loaders.video.VideoPlayerMiniUI.dc5992ea.js.map

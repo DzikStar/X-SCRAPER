@@ -125,10 +125,10 @@
                 v = n(668214),
                 S = n(709318),
                 C = n(601576);
-            const I = (0, v.Z)()
+            const Z = (0, v.Z)()
                     .propsFromActions(() => ({ addToast: C.fz, createLocalApiErrorHandler: (0, _.zr)("TOGGLE_PIN_LIST"), pinTimeline: S.qM, unpinTimeline: S.bK }))
                     .withAnalytics(),
-                Z = m().c5d23126,
+                I = m().c5d23126,
                 P = m().j44ec610,
                 A = m().d8a032a2,
                 E = m().fa816a0a,
@@ -136,9 +136,9 @@
                 T = m().cdb33880,
                 B = (e) => {
                     const { addToast: a, analytics: n, couldPinList: r, createLocalApiErrorHandler: t, isListPinned: i, listId: o, mode: d, name: s, pinTimeline: c, unpinTimeline: u } = e,
-                        m = l.useMemo(() => (d === f.H.Reordering ? l.createElement(D.default, null) : i ? l.createElement(w.default, null) : l.createElement(M.default, { style: r ? null : x.disabledPin })), [r, i, d]),
+                        m = l.useMemo(() => (d === f.H.Reordering ? l.createElement(D.default, null) : i ? l.createElement(w.default, null) : l.createElement(M.default, { style: r ? null : L.disabledPin })), [r, i, d]),
                         h = l.useMemo(() => {
-                            if (d === f.H.Pinning) return { label: i ? P : Z };
+                            if (d === f.H.Pinning) return { label: i ? P : I };
                         }, [i, d]),
                         b = l.useCallback(() => {
                             if (r || i) {
@@ -149,8 +149,8 @@
                         g = l.useMemo(() => (d === f.H.Reordering ? E : i ? T : F), [i, d]);
                     return l.createElement(y.ZP, { "aria-label": g, hoverLabel: h, icon: m, onPress: d === f.H.Pinning ? b : void 0, testID: "list-icon-button", type: "brandText" });
                 },
-                x = c.default.create((e) => ({ disabledPin: { color: e.colors.gray300 } })),
-                L = I(l.memo(B));
+                L = c.default.create((e) => ({ disabledPin: { color: e.colors.gray300 } })),
+                x = Z(l.memo(B));
             var R = n(725516),
                 K = n(346252),
                 H = n(374235),
@@ -159,21 +159,21 @@
                 O = "listCell",
                 U = (m().d58baa7f, m().j681933e),
                 V = (e) => {
-                    const { dataSaverMode: a, decoration: n, facepileUrls: c, followersContext: u, isFollowing: m, isListPinned: y, isSelected: D, listId: w, listVisibility: M, media: k, memberCount: _, membersContext: v, mode: S, name: C, onClick: I, pinnedTimelinesCount: Z, role: P, user: A, withBottomBorder: E, withHoverCard: F, withSubscribe: T = !1 } = e,
+                    const { dataSaverMode: a, decoration: n, facepileUrls: c, followersContext: u, isFollowing: m, isListPinned: y, isSelected: D, listId: w, listVisibility: M, media: k, memberCount: _, membersContext: v, mode: S, name: C, onClick: Z, pinnedTimelinesCount: I, role: P, user: A, withBottomBorder: E, withHoverCard: F, withSubscribe: T = !1 } = e,
                         { featureSwitches: B } = (0, g.QZ)(),
-                        x = B.getNumberValue("home_timeline_spheres_max_user_owned_or_subscribed_lists_count", z.F),
-                        V = !Z || Z < x,
+                        L = B.getNumberValue("home_timeline_spheres_max_user_owned_or_subscribed_lists_count", z.F),
+                        V = !I || I < L,
                         j = `/i/lists/${w}`,
                         $ = l.useCallback((e) => (e ? l.createElement(H.Z, { basePath: j, listId: w, wrapperStyle: { maxWidth: "100%" } }, e) : null), [j, w]),
                         G = l.useMemo(() => l.createElement(r.Z, { style: W.name }, l.createElement(t.ZP, { numberOfLines: 1, weight: "bold" }, C), "private" === M ? l.createElement(t.ZP, { size: "body", style: W.icon }, l.createElement(h.default, { "aria-label": U, style: W.iconLock })) : null), [M, C]),
                         X = l.useMemo(() => l.createElement(r.Z, { style: W.thumbnailImage, testID: N }, l.createElement(K.Z, { cropCandidates: k.crop, dataSaverMode: a, icon: "lists", image: k.image, type: "fixed" })), [a, k.crop, k.image]),
-                        q = l.useMemo(() => n || (D ? l.createElement(b.default, { style: W.iconCheckmark }) : S === f.H.Reordering || S === f.H.Pinning ? l.createElement(L, { couldPinList: V, isListPinned: y, listId: w, mode: S, name: C }) : T ? l.createElement(p.Z, { isFollowing: m, isMinimal: !0, listId: w, listName: C, user: A }) : void 0), [V, n, y, m, D, w, S, C, A, T]),
+                        q = l.useMemo(() => n || (D ? l.createElement(b.default, { style: W.iconCheckmark }) : S === f.H.Reordering || S === f.H.Pinning ? l.createElement(x, { couldPinList: V, isListPinned: y, listId: w, mode: S, name: C }) : T ? l.createElement(p.Z, { isFollowing: m, isMinimal: !0, listId: w, listName: C, user: A }) : void 0), [V, n, y, m, D, w, S, C, A, T]),
                         Q = (0, R.z)(),
                         J = l.useCallback(
                             (e) => {
-                                Q.contextualScribeNamespace.element ? Q.scribeAction("click") : Q.scribe({ component: "list", action: "click" }), I?.(e, { listId: w, member_count: _ });
+                                Q.contextualScribeNamespace.element ? Q.scribeAction("click") : Q.scribe({ component: "list", action: "click" }), Z?.(e, { listId: w, member_count: _ });
                             },
-                            [Q, I, w, _],
+                            [Q, Z, w, _],
                         );
                     return l.createElement(i.Z, { "aria-checked": D, link: { pathname: j, anchorless: !0 }, onPress: J, role: P, style: [W.root, E && W.bottomBorder], testID: O }, l.createElement(r.Z, { style: W.listContainer }, l.createElement(r.Z, { style: W.leftColumn }, $(X), l.createElement(r.Z, { style: W.listAttribution }, l.createElement(r.Z, { style: W.nameContainer }, $(G), v ? l.createElement(t.ZP, { color: "gray700", numberOfLines: 1, size: "subtext2" }, l.createElement(o.Z, null), v) : null), c && u ? l.createElement(r.Z, { style: W.rowContainer }, l.createElement(d.Z, { style: W.facepile, userAvatarUrls: c }), l.createElement(t.ZP, { color: "gray700", numberOfLines: 1, size: "subtext2" }, u)) : A ? l.createElement(s.Z, { affiliateBadgeInfo: A.highlightedLabel, avatarSize: "small", color: "text", isBlueVerified: A.is_blue_verified, isProtected: A.protected, isVerified: A.verified, name: A.name, nameSize: "subtext2", profileImageUrl: A.profile_image_url_https, screenName: A.screen_name, screenNameSize: "subtext2", verifiedType: A.verified_type, withHoverCard: F, withLink: !0, withScreenName: !0 }) : null)), l.createElement(r.Z, { style: W.rightColumn }, q)));
                 },
@@ -318,21 +318,21 @@
                 }),
                 S = s.memo(v);
             var C = n(269950),
-                I = n(358869);
-            const Z = ({ entry: e, feedbackItems: a, module: n, renderEntry: l, shouldDisplayPin: r, ...t }) => {
+                Z = n(358869);
+            const I = ({ entry: e, feedbackItems: a, module: n, renderEntry: l, shouldDisplayPin: r, ...t }) => {
                     const o = r ? C.H.Pinning : void 0;
                     return e.itemContentRef ? s.createElement(E, (0, i.Z)({}, t, { itemContentRef: e.itemContentRef, mode: o })) : s.createElement(F, (0, i.Z)({}, t, { itemContent: e.content, mode: o }));
                 },
-                P = s.memo(Z),
+                P = s.memo(I),
                 A = d,
                 E = ({ itemContentRef: e, shouldDisplayPin: a, ...n }) => {
                     const l = u()(A, e);
-                    return s.createElement(I.ZP, (0, i.Z)({}, n, { isMember: l.list.isMember ?? void 0, listRef: l.list }));
+                    return s.createElement(Z.ZP, (0, i.Z)({}, n, { isMember: l.list.isMember ?? void 0, listRef: l.list }));
                 },
                 F = ({ itemContent: e, mode: a, shouldDisplayPin: n, ...l }) => {
                     const r = (0, m.hC)("responsive_web_redux_use_fragment_enabled"),
-                        t = s.useMemo(() => (0, b.D9)(I.Dx, h.Z, e.id), [e.id]);
-                    return r ? s.createElement(I.ZP, (0, i.Z)({ isMember: e.isMember, listRef: t, mode: a }, l)) : s.createElement(S, (0, i.Z)({ isMember: e.isMember, listId: e.id, mode: a }, l));
+                        t = s.useMemo(() => (0, b.D9)(Z.Dx, h.Z, e.id), [e.id]);
+                    return r ? s.createElement(Z.ZP, (0, i.Z)({ isMember: e.isMember, listRef: t, mode: a }, l)) : s.createElement(S, (0, i.Z)({ isMember: e.isMember, listId: e.id, mode: a }, l));
                 },
                 T = (e) =>
                     t
@@ -380,11 +380,11 @@
             var v = n(668214),
                 S = n(38562),
                 C = n(510588);
-            const I = (e, a) => a.entry.content.id,
-                Z = (e, a) => d.Z.select(e, I(0, a)),
-                P = (e, a) => C.tt(e, I(0, a)),
+            const Z = (e, a) => a.entry.content.id,
+                I = (e, a) => d.Z.select(e, Z(0, a)),
+                P = (e, a) => C.tt(e, Z(0, a)),
                 A = (0, v.Z)()
-                    .propsFromState(() => ({ listId: I, list: Z, dataSaverMode: S.IX, media: P }))
+                    .propsFromState(() => ({ listId: Z, list: I, dataSaverMode: S.IX, media: P }))
                     .adjustStateProps(({ dataSaverMode: e, list: a, listId: n, media: l }) => ({ name: a?.name, isPrivate: "private" === a?.mode, listId: n, dataSaverMode: e, media: l }))
                     .withAnalytics();
             var E = {
@@ -406,18 +406,18 @@
             var T = { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "relayListTile", selections: [{ alias: null, args: null, concreteType: "List", kind: "LinkedField", name: "list", plural: !1, selections: [{ args: null, kind: "FragmentSpread", name: "relayListTile_list" }], storageKey: null }], type: "TimelineTwitterList", abstractKey: null, hash: "b432c27a6feadb4a3b7e46cb313a950d" };
             const B = T;
             n(585488);
-            var x = n(277660),
-                L = n.n(x),
+            var L = n(277660),
+                x = n.n(L),
                 R = n(268260);
             const K = B,
                 H = ({ dataSaverMode: e, listRef: a }) => {
-                    const n = L()(K, a).list;
+                    const n = x()(K, a).list;
                     return i.createElement(O, { dataSaverMode: e, list: n });
                 },
                 z = i.memo(H),
                 N = F,
                 O = (e) => {
-                    const a = L()(N, e.list),
+                    const a = x()(N, e.list),
                         n = (0, R.u)(a);
                     return i.createElement(_, { dataSaverMode: e.dataSaverMode, isPrivate: "Private" === a.mode, listId: a.id_str, media: n, name: a.name || "" });
                 },
@@ -484,14 +484,15 @@
             const l = (0, n(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        n.e("icons.7"),
-                        n.e("icons.8"),
-                        n.e("icons.15"),
-                        n.e("icons.3"),
-                        n.e("icons.24"),
-                        n.e("icons.6"),
-                        n.e("icons.21"),
+                        n.e("icons.23"),
+                        n.e("icons.2"),
+                        n.e("icons.16"),
+                        n.e("icons.10"),
                         n.e("icons.19"),
+                        n.e("icons.24"),
+                        n.e("icons.17"),
+                        n.e("icons.21"),
+                        n.e("icons.18"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -722,7 +723,7 @@
                 },
                 d = i.default.create((e) => ({ middotGroup: { alignItems: "baseline", flexDirection: "row", flexShrink: 1 } }));
         },
-        784732: (e, a, n) => {
+        971657: (e, a, n) => {
             n.r(a), n.d(a, { default: () => d });
             var l = n(202784),
                 r = n(890601),
@@ -730,7 +731,20 @@
                 i = n(347101);
             const o = (e = {}) => {
                 const { direction: a } = (0, t.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: l.createElement("g", null, l.createElement("path", { d: "M1.998 5.5c0-1.38 1.119-2.5 2.5-2.5h15c1.381 0 2.5 1.12 2.5 2.5v13c0 1.38-1.119 2.5-2.5 2.5h-15c-1.381 0-2.5-1.12-2.5-2.5v-13zm2.5-.5c-.276 0-.5.22-.5.5v13c0 .28.224.5.5.5h15c.276 0 .5-.22.5-.5v-13c0-.28-.224-.5-.5-.5h-15zM6 7h6v6H6V7zm2 2v2h2V9H8zm10 0h-4V7h4v2zm0 4h-4v-2h4v2zm-.002 4h-12v-2h12v2z" })) }, { writingDirection: a });
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: l.createElement("g", null, l.createElement("path", { d: "M7.501 19.917L7.471 21H.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977.963 0 1.95.212 2.87.672-.444.478-.851 1.03-1.212 1.656-.507-.204-1.054-.329-1.658-.329-2.767 0-4.57 2.223-4.938 6.004H7.56c-.023.302-.05.599-.059.917zm8.999-8.921c-3.264 0-6.816 2.358-7 8.977L9.471 21h4.528v-2h-2.438c.367-3.781 2.17-6.004 4.938-6.004 1.089 0 2.022.356 2.784 1.004h2.632c-1.376-2.136-3.446-3.004-5.415-3.004zm0-.996c-.799 0-1.527-.279-2.116-.73C13.548 8.63 13 7.632 13 6.5 13 4.57 14.567 3 16.5 3S20 4.57 20 6.5c0 1.132-.548 2.13-1.384 2.77-.589.451-1.317.73-2.116.73zM15 6.5c0 .827.673 1.5 1.5 1.5S18 7.327 18 6.5 17.327 5 16.5 5 15 5.673 15 6.5zm-11 0C4 4.57 5.567 3 7.5 3S11 4.57 11 6.5 9.433 10 7.5 10 4 8.43 4 6.5zm2 0C6 7.327 6.673 8 7.5 8S9 7.327 9 6.5 8.327 5 7.5 5 6 5.673 6 6.5zM21 21h3v-2h-3v-3h-2v3h-3v2h3v3h2v-3z" })) }, { writingDirection: a });
+            };
+            o.metadata = { width: 24, height: 24 };
+            const d = o;
+        },
+        678773: (e, a, n) => {
+            n.r(a), n.d(a, { default: () => d });
+            var l = n(202784),
+                r = n(890601),
+                t = n(783427),
+                i = n(347101);
+            const o = (e = {}) => {
+                const { direction: a } = (0, t.Z)();
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: l.createElement("g", null, l.createElement("path", { d: "M19.996 10h-16V8h16v2zm0 6h-16v-2h16v2z" })) }, { writingDirection: a });
             };
             o.metadata = { width: 24, height: 24 };
             const d = o;
@@ -750,4 +764,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.ListHandler.96f5bb4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.ListHandler.91bdb5ca.js.map

@@ -4268,7 +4268,7 @@
                 n("fa0f1262", "વિરામ "),
                 n("c2cac618", "Grok હાલમાં La Liga, Premier League, Bundesliga, Series A અને Ligue 1 ડેટાને સમર્થન આપે છે."),
                 n("acae223d", function (e) {
-                    return 'Results for "' + e.prompt + '"';
+                    return '"' + e.prompt + '" માટેનાં પરિણામો';
                 }),
                 n("bed99fe2", "ઓછું જુઓ"),
                 n("f7b57ac0", "આંકડા"),
@@ -4799,10 +4799,10 @@
                 n("h7d28188", "સામગ્રી પર પાછા જાઓ"),
                 n("if2704e4", "લાઇવ ઓવરવ્યૂ પર પાછા"),
                 n("ea928ae4", "સ્પેસ પર પાછા જાઓ"),
-                n("e8c07c22", "broadcast"),
+                n("e8c07c22", "બ્રૉડકાસ્ટ કરો"),
                 n("a4ce6e68", "બ્રૉડકાસ્ટના મેટ્રિક્સ"),
-                n("b2214c74", "Total number of views for this broadcast"),
-                n("d4fcf83a", "Total time viewers spent watching this broadcast"),
+                n("b2214c74", "આ બ્રૉડકાસ્ટ માટે જોવાયાની કુલ સંખ્યા"),
+                n("d4fcf83a", "આ બ્રૉડકાસ્ટ જોવા માટે દર્શકોએ પસાર કરેલો કુલ સમય"),
                 n("a89b0322", "રદ કર્યું"),
                 n("j3cb12ea", "એક સમયે સાંભળતા શ્રોતાઓ"),
                 n("b93931ee", "તમારી સામગ્રી કેટલી વાર પોસ્ટ કરવામાં આવી હતી તેની સંખ્યા."),
@@ -4850,7 +4850,7 @@
                 n("bd37f68e", "મીડિયાની પ્રવૃત્તિ"),
                 n("fe074210", "મિનિટ"),
                 n("jd03a1b8", "જોવાયાની મિનિટો"),
-                n("a20e91e8", "minutes watched"),
+                n("a20e91e8", "જોવાયાની મિનિટો"),
                 n("ic2bebee", "મનીટાઇઝ કરેલ"),
                 n("a1d642c8", "સૌથી વધુ સક્રિય"),
                 n("ifc4c1f8", "આ કન્ટેન્ટમાંથી નવા ફોલોઅર્સ પ્રાપ્ત થયા છે."),
@@ -4891,9 +4891,9 @@
                 n("e797dc32", "સ્ટ્રીમ સમય: "),
                 n("b649d8cc", "માત્ર સબ્સ્ક્રાઇબર્સ "),
                 n("j9282130", "બ્રૉડકાસ્ટ થમ્બનેલ"),
-                n("g629b8b0", "Timed Out"),
+                n("g629b8b0", "સમય સમાપ્ત"),
                 n("eb87323c", "લાઇવસ્ટ્રીમ થઈ ત્યારથી પસંદ કરેલા સમયગાળા માટે આ વિશ્લેષણનો ડેટા બતાવે છે."),
-                n("i6a75722", "Time Range"),
+                n("i6a75722", "સમય શ્રેણી"),
                 n("c602f5b8", "કુલ"),
                 n("b35e68ae", "કુલ સહભાગીઓ"),
                 n("h78ee79a", "કુલ જોવાયેલ રિપ્લે "),
@@ -13252,4 +13252,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/gu.71fb076a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/gu.c0bcd24a.js.map

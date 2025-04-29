@@ -2,12 +2,12 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["bundle.JobSearch-6107ac1a"],
     {
-        771741: (e, l, a) => {
-            a.d(l, { Z: () => m });
+        771741: (l, e, a) => {
+            a.d(e, { Z: () => g });
             var n,
                 i,
-                r,
                 s,
+                r,
                 t,
                 u,
                 o,
@@ -51,7 +51,7 @@
                                                         selections: [
                                                             {
                                                                 alias: null,
-                                                                args: (r = [
+                                                                args: (s = [
                                                                     { kind: "Variable", name: "limit", variableName: "limit" },
                                                                     { kind: "Variable", name: "offset", variableName: "offset" },
                                                                 ]),
@@ -59,7 +59,7 @@
                                                                 kind: "LinkedField",
                                                                 name: "saved_jobs",
                                                                 plural: !1,
-                                                                selections: [(s = { alias: null, args: null, kind: "ScalarField", name: "total", storageKey: null }), { alias: null, args: null, concreteType: "ApiJobResults", kind: "LinkedField", name: "items_results", plural: !0, selections: [(t = { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }), { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ args: null, kind: "FragmentSpread", name: "JobSearchListItem_item" }], storageKey: null }], storageKey: null }],
+                                                                selections: [(r = { alias: null, args: null, kind: "ScalarField", name: "total", storageKey: null }), { alias: null, args: null, concreteType: "ApiJobResults", kind: "LinkedField", name: "items_results", plural: !0, selections: [(t = { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }), { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ args: null, kind: "FragmentSpread", name: "JobSearchListItem_item" }], storageKey: null }], storageKey: null }],
                                                                 storageKey: null,
                                                             },
                                                         ],
@@ -115,13 +115,13 @@
                                                         selections: [
                                                             {
                                                                 alias: null,
-                                                                args: r,
+                                                                args: s,
                                                                 concreteType: "SavedJobsSlice",
                                                                 kind: "LinkedField",
                                                                 name: "saved_jobs",
                                                                 plural: !1,
                                                                 selections: [
-                                                                    s,
+                                                                    r,
                                                                     {
                                                                         alias: null,
                                                                         args: null,
@@ -201,20 +201,20 @@
                     params: { id: "3EfERYyUSDzKHWxk4OKP4g", metadata: {}, name: "JobBookmarksListContainerQuery", operationKind: "query", text: null },
                 };
             c.hash = "24c236e39ef6f8567817bc588787b248";
-            const m = c;
+            const g = c;
         },
-        255875: (e, l, a) => {
-            a.d(l, { Z: () => g });
+        255875: (l, e, a) => {
+            a.d(e, { Z: () => m });
             var n,
                 i,
-                r,
                 s,
+                r,
                 t,
                 u,
                 o,
                 d,
                 c,
-                m = {
+                g = {
                     fragment: {
                         argumentDefinitions: [],
                         kind: "Fragment",
@@ -228,7 +228,7 @@
                                 kind: "LinkedField",
                                 name: "viewer_v2",
                                 plural: !1,
-                                selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "MatchingProfile", kind: "LinkedField", name: "matching_profile", plural: !1, selections: [(i = { alias: null, args: null, kind: "ScalarField", name: "remote_work_allowed", storageKey: null }), (r = { alias: null, args: null, kind: "ScalarField", name: "recommendations_enabled", storageKey: null }), (s = { alias: null, args: null, kind: "ScalarField", name: "notifications_enabled", storageKey: null }), (t = { alias: null, args: null, kind: "ScalarField", name: "consented_at", storageKey: null }), (o = { alias: null, args: null, concreteType: "MatchingCriteria", kind: "LinkedField", name: "job_titles", plural: !0, selections: [(u = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }), { alias: null, args: null, kind: "ScalarField", name: "job_title", storageKey: null }], storageKey: null }), { alias: null, args: null, concreteType: "MatchingCriteria", kind: "LinkedField", name: "locations", plural: !0, selections: [u, (d = { alias: null, args: null, kind: "ScalarField", name: "location_id", storageKey: null }), { alias: null, args: null, concreteType: "ApiLocation", kind: "LinkedField", name: "location", plural: !1, selections: [(c = { alias: null, args: null, concreteType: "LocationCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "display_name", storageKey: null }], storageKey: null })], storageKey: null }], storageKey: null }], storageKey: null }], type: "User", abstractKey: null }], storageKey: null }], storageKey: null }],
+                                selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "MatchingProfile", kind: "LinkedField", name: "matching_profile", plural: !1, selections: [(i = { alias: null, args: null, kind: "ScalarField", name: "remote_work_allowed", storageKey: null }), (s = { alias: null, args: null, kind: "ScalarField", name: "recommendations_enabled", storageKey: null }), (r = { alias: null, args: null, kind: "ScalarField", name: "notifications_enabled", storageKey: null }), (t = { alias: null, args: null, kind: "ScalarField", name: "consented_at", storageKey: null }), (o = { alias: null, args: null, concreteType: "MatchingCriteria", kind: "LinkedField", name: "job_titles", plural: !0, selections: [(u = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }), { alias: null, args: null, kind: "ScalarField", name: "job_title", storageKey: null }], storageKey: null }), { alias: null, args: null, concreteType: "MatchingCriteria", kind: "LinkedField", name: "locations", plural: !0, selections: [u, (d = { alias: null, args: null, kind: "ScalarField", name: "location_id", storageKey: null }), { alias: null, args: null, concreteType: "ApiLocation", kind: "LinkedField", name: "location", plural: !1, selections: [(c = { alias: null, args: null, concreteType: "LocationCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "display_name", storageKey: null }], storageKey: null })], storageKey: null }], storageKey: null }], storageKey: null }], type: "User", abstractKey: null }], storageKey: null }], storageKey: null }],
                                 storageKey: 'viewer_v2(s:"4721")',
                             },
                         ],
@@ -266,7 +266,7 @@
                                                 plural: !1,
                                                 selections: [
                                                     { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null },
-                                                    { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "MatchingProfile", kind: "LinkedField", name: "matching_profile", plural: !1, selections: [i, r, s, t, o, { alias: null, args: null, concreteType: "MatchingCriteria", kind: "LinkedField", name: "locations", plural: !0, selections: [u, d, { alias: null, args: null, concreteType: "ApiLocation", kind: "LinkedField", name: "location", plural: !1, selections: [c, u], storageKey: null }], storageKey: null }], storageKey: null }, u], type: "User", abstractKey: null },
+                                                    { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "MatchingProfile", kind: "LinkedField", name: "matching_profile", plural: !1, selections: [i, s, r, t, o, { alias: null, args: null, concreteType: "MatchingCriteria", kind: "LinkedField", name: "locations", plural: !0, selections: [u, d, { alias: null, args: null, concreteType: "ApiLocation", kind: "LinkedField", name: "location", plural: !1, selections: [c, u], storageKey: null }], storageKey: null }], storageKey: null }, u], type: "User", abstractKey: null },
                                                 ],
                                                 storageKey: null,
                                             },
@@ -281,18 +281,18 @@
                     },
                     params: { id: "KyP8Xn6i971KhAlvtt82BA", metadata: {}, name: "JobRecommendationSettingsContainerQuery", operationKind: "query", text: null },
                 };
-            m.hash = "3d29c264d4bf9d235184f195fe296322";
-            const g = m;
+            g.hash = "3d29c264d4bf9d235184f195fe296322";
+            const m = g;
         },
-        335572: (e, l, a) => {
-            a.d(l, { Z: () => o });
+        335572: (l, e, a) => {
+            a.d(e, { Z: () => o });
             var n,
                 i,
-                r,
                 s,
+                r,
                 t,
                 u = {
-                    fragment: { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "JobRecommendationsContainerQuery", selections: [{ alias: null, args: (n = [{ kind: "Literal", name: "s", value: "f3d8" }]), concreteType: "Viewer", kind: "LinkedField", name: "viewer_v2", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ kind: "InlineFragment", selections: [(i = { alias: null, args: null, concreteType: "MatchingProfile", kind: "LinkedField", name: "matching_profile", plural: !1, selections: [{ alias: null, args: null, concreteType: "MatchingCriteria", kind: "LinkedField", name: "job_titles", plural: !0, selections: [{ alias: null, args: null, kind: "ScalarField", name: "job_title", storageKey: null }], storageKey: null }], storageKey: null }), { alias: null, args: (r = [{ kind: "Literal", name: "count", value: 1 }]), concreteType: "ApiJobResults", kind: "LinkedField", name: "job_recommendations_results", plural: !0, selections: [(s = { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null })], storageKey: "job_recommendations_results(count:1)" }], type: "User", abstractKey: null }], storageKey: null }], storageKey: null }], storageKey: 'viewer_v2(s:"f3d8")' }], type: "Query", abstractKey: null },
+                    fragment: { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "JobRecommendationsContainerQuery", selections: [{ alias: null, args: (n = [{ kind: "Literal", name: "s", value: "f3d8" }]), concreteType: "Viewer", kind: "LinkedField", name: "viewer_v2", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ kind: "InlineFragment", selections: [(i = { alias: null, args: null, concreteType: "MatchingProfile", kind: "LinkedField", name: "matching_profile", plural: !1, selections: [{ alias: null, args: null, concreteType: "MatchingCriteria", kind: "LinkedField", name: "job_titles", plural: !0, selections: [{ alias: null, args: null, kind: "ScalarField", name: "job_title", storageKey: null }], storageKey: null }], storageKey: null }), { alias: null, args: (s = [{ kind: "Literal", name: "count", value: 1 }]), concreteType: "ApiJobResults", kind: "LinkedField", name: "job_recommendations_results", plural: !0, selections: [(r = { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null })], storageKey: "job_recommendations_results(count:1)" }], type: "User", abstractKey: null }], storageKey: null }], storageKey: null }], storageKey: 'viewer_v2(s:"f3d8")' }], type: "Query", abstractKey: null },
                     kind: "Request",
                     operation: {
                         argumentDefinitions: [],
@@ -324,7 +324,7 @@
                                                 plural: !1,
                                                 selections: [
                                                     { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null },
-                                                    { kind: "InlineFragment", selections: [i, { alias: null, args: r, concreteType: "ApiJobResults", kind: "LinkedField", name: "job_recommendations_results", plural: !0, selections: [s, (t = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null })], storageKey: "job_recommendations_results(count:1)" }, t], type: "User", abstractKey: null },
+                                                    { kind: "InlineFragment", selections: [i, { alias: null, args: s, concreteType: "ApiJobResults", kind: "LinkedField", name: "job_recommendations_results", plural: !0, selections: [r, (t = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null })], storageKey: "job_recommendations_results(count:1)" }, t], type: "User", abstractKey: null },
                                                 ],
                                                 storageKey: null,
                                             },
@@ -342,12 +342,12 @@
             u.hash = "0b6735767ac9ff762d17b55eb87700e0";
             const o = u;
         },
-        893211: (e, l, a) => {
-            a.d(l, { Z: () => m });
+        893211: (l, e, a) => {
+            a.d(e, { Z: () => g });
             var n,
                 i,
-                r,
                 s,
+                r,
                 t,
                 u,
                 o,
@@ -386,7 +386,7 @@
                                                     {
                                                         kind: "InlineFragment",
                                                         selections: [
-                                                            (r = {
+                                                            (s = {
                                                                 alias: null,
                                                                 args: null,
                                                                 concreteType: "MatchingProfile",
@@ -400,7 +400,7 @@
                                                                 ],
                                                                 storageKey: null,
                                                             }),
-                                                            { alias: null, args: (s = [{ kind: "Variable", name: "count", variableName: "count" }]), concreteType: "ApiJobResults", kind: "LinkedField", name: "job_recommendations_results", plural: !0, selections: [(t = { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }), { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ args: null, kind: "FragmentSpread", name: "JobSearchListItem_item" }], storageKey: null }], storageKey: null },
+                                                            { alias: null, args: (r = [{ kind: "Variable", name: "count", variableName: "count" }]), concreteType: "ApiJobResults", kind: "LinkedField", name: "job_recommendations_results", plural: !0, selections: [(t = { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }), { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ args: null, kind: "FragmentSpread", name: "JobSearchListItem_item" }], storageKey: null }], storageKey: null },
                                                         ],
                                                         type: "User",
                                                         abstractKey: null,
@@ -452,10 +452,10 @@
                                                     {
                                                         kind: "InlineFragment",
                                                         selections: [
-                                                            r,
+                                                            s,
                                                             {
                                                                 alias: null,
-                                                                args: s,
+                                                                args: r,
                                                                 concreteType: "ApiJobResults",
                                                                 kind: "LinkedField",
                                                                 name: "job_recommendations_results",
@@ -529,21 +529,21 @@
                     params: { id: "anMTtT1I7crxLEDvedjdjg", metadata: {}, name: "JobRecommendationsListContainerQuery", operationKind: "query", text: null },
                 };
             c.hash = "a2f9147c015c58ceed84d98f3e96cbdb";
-            const m = c;
+            const g = c;
         },
-        377178: (e, l, a) => {
-            a.d(l, { Z: () => k });
+        377178: (l, e, a) => {
+            a.d(e, { Z: () => k });
             var n,
                 i,
-                r,
                 s,
+                r,
                 t,
                 u,
                 o,
                 d,
                 c,
-                m,
                 g,
+                m,
                 y = {
                     fragment: {
                         argumentDefinitions: (n = [
@@ -556,15 +556,15 @@
                         selections: [
                             {
                                 alias: "jobData",
-                                args: (r = [{ kind: "Variable", name: "rest_id", variableName: "jobId" }, (i = { kind: "Literal", name: "s", value: "f3d8" })]),
+                                args: (s = [{ kind: "Variable", name: "rest_id", variableName: "jobId" }, (i = { kind: "Literal", name: "s", value: "f3d8" })]),
                                 concreteType: "ApiJobResults",
                                 kind: "LinkedField",
                                 name: "job_by_rest_id",
                                 plural: !1,
-                                selections: [(s = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }), (t = { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }), { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ kind: "InlineFragment", selections: [s, (u = { condition: "loggedIn", kind: "Condition", passingValue: !0, selections: [{ alias: null, args: null, kind: "ScalarField", name: "user_sentiment", storageKey: null }] }), { alias: null, args: null, concreteType: "JobCore", kind: "LinkedField", name: "core", plural: !1, selections: [(o = { alias: null, args: null, kind: "ScalarField", name: "title", storageKey: null }), { args: null, kind: "FragmentSpread", name: "JobScreen_job" }], storageKey: null }, { alias: null, args: null, concreteType: "ApiCompanyProfileResults", kind: "LinkedField", name: "company_profile_results", plural: !1, selections: [s, t, { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ kind: "InlineFragment", selections: [s, t, { args: null, kind: "FragmentSpread", name: "JobSearchListItem_company" }], type: "ApiCompanyProfile", abstractKey: null }], storageKey: null }], storageKey: null }, { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ kind: "InlineFragment", selections: [{ args: null, kind: "FragmentSpread", name: "JobScreen_user" }], type: "User", abstractKey: null }], storageKey: null }], storageKey: null }], type: "ApiJob", abstractKey: null }], storageKey: null }],
+                                selections: [(r = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }), (t = { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }), { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ kind: "InlineFragment", selections: [r, (u = { condition: "loggedIn", kind: "Condition", passingValue: !0, selections: [{ alias: null, args: null, kind: "ScalarField", name: "user_sentiment", storageKey: null }] }), { alias: null, args: null, concreteType: "JobCore", kind: "LinkedField", name: "core", plural: !1, selections: [(o = { alias: null, args: null, kind: "ScalarField", name: "title", storageKey: null }), { args: null, kind: "FragmentSpread", name: "JobScreen_job" }], storageKey: null }, { alias: null, args: null, concreteType: "ApiCompanyProfileResults", kind: "LinkedField", name: "company_profile_results", plural: !1, selections: [r, t, { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ kind: "InlineFragment", selections: [r, t, { args: null, kind: "FragmentSpread", name: "JobSearchListItem_company" }], type: "ApiCompanyProfile", abstractKey: null }], storageKey: null }], storageKey: null }, { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ kind: "InlineFragment", selections: [{ args: null, kind: "FragmentSpread", name: "JobScreen_user" }], type: "User", abstractKey: null }], storageKey: null }], storageKey: null }], type: "ApiJob", abstractKey: null }], storageKey: null }],
                                 storageKey: null,
                             },
-                            { condition: "loggedIn", kind: "Condition", passingValue: !0, selections: [{ alias: "viewer", args: (d = [i]), concreteType: "Viewer", kind: "LinkedField", name: "viewer_v2", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [(c = { kind: "InlineFragment", selections: [s], type: "User", abstractKey: null })], storageKey: null }], storageKey: null }], storageKey: 'viewer_v2(s:"f3d8")' }] },
+                            { condition: "loggedIn", kind: "Condition", passingValue: !0, selections: [{ alias: "viewer", args: (d = [i]), concreteType: "Viewer", kind: "LinkedField", name: "viewer_v2", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [(c = { kind: "InlineFragment", selections: [r], type: "User", abstractKey: null })], storageKey: null }], storageKey: null }], storageKey: 'viewer_v2(s:"f3d8")' }] },
                         ],
                         type: "Query",
                         abstractKey: null,
@@ -577,13 +577,13 @@
                         selections: [
                             {
                                 alias: "jobData",
-                                args: r,
+                                args: s,
                                 concreteType: "ApiJobResults",
                                 kind: "LinkedField",
                                 name: "job_by_rest_id",
                                 plural: !1,
                                 selections: [
-                                    s,
+                                    r,
                                     t,
                                     {
                                         alias: null,
@@ -593,14 +593,14 @@
                                         name: "result",
                                         plural: !1,
                                         selections: [
-                                            (m = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }),
+                                            (g = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }),
                                             {
                                                 kind: "InlineFragment",
                                                 selections: [
-                                                    s,
+                                                    r,
                                                     u,
                                                     { alias: null, args: null, concreteType: "JobCore", kind: "LinkedField", name: "core", plural: !1, selections: [o, { alias: null, args: null, kind: "ScalarField", name: "employment_type", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "external_url", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "featured", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "formatted_salary", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "job_description", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "job_function", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "job_page_url", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "location", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "location_type", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "posted_at", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "salary_currency_code", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "salary_interval", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "salary_max", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "salary_min", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "seniority_level", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "short_description", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "team", storageKey: null }], storageKey: null },
-                                                    { alias: null, args: null, concreteType: "ApiCompanyProfileResults", kind: "LinkedField", name: "company_profile_results", plural: !1, selections: [s, t, { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [m, { kind: "InlineFragment", selections: [s, t, { alias: null, args: null, concreteType: "CompanyProfileCore", kind: "LinkedField", name: "core", plural: !1, selections: [(g = { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null })], storageKey: null }, { alias: null, args: null, concreteType: "CompanyLogoImage", kind: "LinkedField", name: "logo", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "normal_url", storageKey: null }], storageKey: null }], type: "ApiCompanyProfile", abstractKey: null }], storageKey: null }], storageKey: null },
+                                                    { alias: null, args: null, concreteType: "ApiCompanyProfileResults", kind: "LinkedField", name: "company_profile_results", plural: !1, selections: [r, t, { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [g, { kind: "InlineFragment", selections: [r, t, { alias: null, args: null, concreteType: "CompanyProfileCore", kind: "LinkedField", name: "core", plural: !1, selections: [(m = { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null })], storageKey: null }, { alias: null, args: null, concreteType: "CompanyLogoImage", kind: "LinkedField", name: "logo", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "normal_url", storageKey: null }], storageKey: null }], type: "ApiCompanyProfile", abstractKey: null }], storageKey: null }], storageKey: null },
                                                     {
                                                         alias: null,
                                                         args: null,
@@ -617,7 +617,7 @@
                                                                 name: "result",
                                                                 plural: !1,
                                                                 selections: [
-                                                                    m,
+                                                                    g,
                                                                     {
                                                                         kind: "InlineFragment",
                                                                         selections: [
@@ -633,7 +633,7 @@
                                                                                 selections: [
                                                                                     { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null },
                                                                                     { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
-                                                                                    g,
+                                                                                    m,
                                                                                     { alias: null, args: null, kind: "ScalarField", name: "verified_type", storageKey: null },
                                                                                     { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null },
                                                                                     {
@@ -677,7 +677,7 @@
                                                                                 storageKey: null,
                                                                             },
                                                                             { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" },
-                                                                            s,
+                                                                            r,
                                                                         ],
                                                                         type: "User",
                                                                         abstractKey: null,
@@ -685,7 +685,7 @@
                                                                 ],
                                                                 storageKey: null,
                                                             },
-                                                            s,
+                                                            r,
                                                         ],
                                                         storageKey: null,
                                                     },
@@ -699,7 +699,7 @@
                                 ],
                                 storageKey: null,
                             },
-                            { condition: "loggedIn", kind: "Condition", passingValue: !0, selections: [{ alias: "viewer", args: d, concreteType: "Viewer", kind: "LinkedField", name: "viewer_v2", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [m, c], storageKey: null }, s], storageKey: null }], storageKey: 'viewer_v2(s:"f3d8")' }] },
+                            { condition: "loggedIn", kind: "Condition", passingValue: !0, selections: [{ alias: "viewer", args: d, concreteType: "Viewer", kind: "LinkedField", name: "viewer_v2", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [g, c], storageKey: null }, r], storageKey: null }], storageKey: 'viewer_v2(s:"f3d8")' }] },
                         ],
                     },
                     params: { id: "lkS1Zj_iyLY_hmJCQIqqJg", metadata: {}, name: "JobScreenQuery", operationKind: "query", text: null },
@@ -707,8 +707,8 @@
             y.hash = "d125bf2d2767c4d27ed19cdf4b6b3bf7";
             const k = y;
         },
-        455506: (e, l, a) => {
-            a.d(l, { Z: () => i });
+        455506: (l, e, a) => {
+            a.d(e, { Z: () => i });
             var n = {
                 argumentDefinitions: [],
                 kind: "Fragment",
@@ -740,8 +740,8 @@
             };
             const i = n;
         },
-        962155: (e, l, a) => {
-            a.d(l, { Z: () => i });
+        962155: (l, e, a) => {
+            a.d(e, { Z: () => i });
             var n = {
                 argumentDefinitions: [],
                 kind: "Fragment",
@@ -818,8 +818,8 @@
             };
             const i = n;
         },
-        230747: (e, l, a) => {
-            a.d(l, { Z: () => i });
+        230747: (l, e, a) => {
+            a.d(e, { Z: () => i });
             var n = {
                 argumentDefinitions: [],
                 kind: "Fragment",
@@ -847,18 +847,18 @@
             };
             const i = n;
         },
-        175967: (e, l, a) => {
-            a.d(l, { Z: () => g });
+        175967: (l, e, a) => {
+            a.d(e, { Z: () => m });
             var n,
                 i,
-                r,
                 s,
+                r,
                 t,
                 u,
                 o,
                 d,
                 c,
-                m = {
+                g = {
                     fragment: {
                         argumentDefinitions: (n = [
                             { defaultValue: null, kind: "LocalArgument", name: "count" },
@@ -871,14 +871,14 @@
                         selections: [
                             {
                                 alias: "job_search",
-                                args: [(i = { kind: "Literal", name: "s", value: "f3d8" }), (r = { kind: "Variable", name: "search_params", variableName: "searchParams" })],
+                                args: [(i = { kind: "Literal", name: "s", value: "f3d8" }), (s = { kind: "Variable", name: "search_params", variableName: "searchParams" })],
                                 concreteType: "JobSearchSlice",
                                 kind: "LinkedField",
                                 name: "__JobSearchQueryScreen_job_search_slice_slice",
                                 plural: !1,
                                 selections: [
                                     { args: null, kind: "FragmentSpread", name: "JobSearchList_jobsSlice" },
-                                    { alias: null, args: null, concreteType: "ApiJobResults", kind: "LinkedField", name: "items_results", plural: !0, selections: [(s = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }), (t = { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null })], storageKey: null },
+                                    { alias: null, args: null, concreteType: "ApiJobResults", kind: "LinkedField", name: "items_results", plural: !0, selections: [(r = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }), (t = { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null })], storageKey: null },
                                     (u = {
                                         alias: null,
                                         args: null,
@@ -907,7 +907,7 @@
                         selections: [
                             {
                                 alias: null,
-                                args: (o = [{ kind: "Variable", name: "count", variableName: "count" }, { kind: "Variable", name: "cursor", variableName: "cursor" }, i, r]),
+                                args: (o = [{ kind: "Variable", name: "count", variableName: "count" }, { kind: "Variable", name: "cursor", variableName: "cursor" }, i, s]),
                                 concreteType: "JobSearchSlice",
                                 kind: "LinkedField",
                                 name: "job_search",
@@ -921,7 +921,7 @@
                                         name: "items_results",
                                         plural: !0,
                                         selections: [
-                                            s,
+                                            r,
                                             t,
                                             {
                                                 alias: null,
@@ -936,7 +936,7 @@
                                                     {
                                                         kind: "InlineFragment",
                                                         selections: [
-                                                            s,
+                                                            r,
                                                             {
                                                                 alias: null,
                                                                 args: null,
@@ -956,9 +956,9 @@
                                                                 ],
                                                                 storageKey: null,
                                                             },
-                                                            { alias: null, args: null, concreteType: "ApiCompanyProfileResults", kind: "LinkedField", name: "company_profile_results", plural: !1, selections: [s, t, { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [d, { kind: "InlineFragment", selections: [s, t, { alias: null, args: null, concreteType: "CompanyProfileCore", kind: "LinkedField", name: "core", plural: !1, selections: [(c = { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null })], storageKey: null }, { alias: null, args: null, concreteType: "CompanyLogoImage", kind: "LinkedField", name: "logo", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "normal_url", storageKey: null }], storageKey: null }], type: "ApiCompanyProfile", abstractKey: null }], storageKey: null }], storageKey: null },
+                                                            { alias: null, args: null, concreteType: "ApiCompanyProfileResults", kind: "LinkedField", name: "company_profile_results", plural: !1, selections: [r, t, { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [d, { kind: "InlineFragment", selections: [r, t, { alias: null, args: null, concreteType: "CompanyProfileCore", kind: "LinkedField", name: "core", plural: !1, selections: [(c = { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null })], storageKey: null }, { alias: null, args: null, concreteType: "CompanyLogoImage", kind: "LinkedField", name: "logo", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "normal_url", storageKey: null }], storageKey: null }], type: "ApiCompanyProfile", abstractKey: null }], storageKey: null }], storageKey: null },
                                                             { alias: null, args: null, kind: "ScalarField", name: "user_sentiment", storageKey: null },
-                                                            { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [d, { kind: "InlineFragment", selections: [t, { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }, c, { alias: null, args: null, kind: "ScalarField", name: "verified_type", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null }], storageKey: null }, { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" }, { alias: null, args: null, kind: "ScalarField", name: "profile_image_shape", storageKey: null }, s], type: "User", abstractKey: null }], storageKey: null }, s], storageKey: null },
+                                                            { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [d, { kind: "InlineFragment", selections: [t, { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }, c, { alias: null, args: null, kind: "ScalarField", name: "verified_type", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null }], storageKey: null }, { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" }, { alias: null, args: null, kind: "ScalarField", name: "profile_image_shape", storageKey: null }, r], type: "User", abstractKey: null }], storageKey: null }, r], storageKey: null },
                                                         ],
                                                         type: "ApiJob",
                                                         abstractKey: null,
@@ -978,14 +978,14 @@
                     },
                     params: { id: "JyATh-zc07YHeyDDl3rDgg", metadata: { sliceInfoPath: ["job_search", "slice_info"] }, name: "JobSearchQueryScreenJobsQuery", operationKind: "query", text: null },
                 };
-            m.hash = "a2ffaaeb36509d6abe442707e15770fc";
-            const g = m;
+            g.hash = "a2ffaaeb36509d6abe442707e15770fc";
+            const m = g;
         },
-        36879: (e, l, a) => {
-            a.d(l, { Z: () => s });
+        36879: (l, e, a) => {
+            a.d(e, { Z: () => r });
             var n,
                 i,
-                r = {
+                s = {
                     fragment: {
                         argumentDefinitions: (n = [{ defaultValue: null, kind: "LocalArgument", name: "query" }]),
                         kind: "Fragment",
@@ -1016,14 +1016,14 @@
                     operation: { argumentDefinitions: n, kind: "Operation", name: "LocationSelectorQuery", selections: i },
                     params: { id: "hbib0bN-dlHHvUhiy3YVyg", metadata: {}, name: "LocationSelectorQuery", operationKind: "query", text: null },
                 };
-            r.hash = "0c96137d33dbd43edd62fadf5964f7b1";
-            const s = r;
+            s.hash = "0c96137d33dbd43edd62fadf5964f7b1";
+            const r = s;
         },
-        780038: (e, l, a) => {
-            a.d(l, { Z: () => s });
+        780038: (l, e, a) => {
+            a.d(e, { Z: () => r });
             var n,
                 i,
-                r = {
+                s = {
                     fragment: {
                         argumentDefinitions: (n = [
                             { defaultValue: null, kind: "LocalArgument", name: "jobTitle" },
@@ -1057,15 +1057,15 @@
                     operation: { argumentDefinitions: n, kind: "Operation", name: "RecommendationCtaCreateMatchingCriteriaMutation", selections: i },
                     params: { id: "503PTeh6jFLXHFQX52kIkA", metadata: {}, name: "RecommendationCtaCreateMatchingCriteriaMutation", operationKind: "mutation", text: null },
                 };
-            r.hash = "43ddec86fc7e1d11f32f358d65a40b77";
-            const s = r;
+            s.hash = "43ddec86fc7e1d11f32f358d65a40b77";
+            const r = s;
         },
-        884038: (e, l, a) => {
-            a.d(l, { Z: () => u });
+        884038: (l, e, a) => {
+            a.d(e, { Z: () => u });
             var n,
                 i,
-                r,
                 s,
+                r,
                 t = {
                     fragment: {
                         argumentDefinitions: [],
@@ -1107,7 +1107,7 @@
                                                                     kind: "InlineFragment",
                                                                     selections: [
                                                                         (i = { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }),
-                                                                        (r = {
+                                                                        (s = {
                                                                             alias: null,
                                                                             args: null,
                                                                             concreteType: "MatchingProfile",
@@ -1176,11 +1176,11 @@
                                                 plural: !1,
                                                 selections: [
                                                     { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null },
-                                                    { kind: "InlineFragment", selections: [i, r, (s = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null })], type: "User", abstractKey: null },
+                                                    { kind: "InlineFragment", selections: [i, s, (r = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null })], type: "User", abstractKey: null },
                                                 ],
                                                 storageKey: null,
                                             },
-                                            s,
+                                            r,
                                         ],
                                         storageKey: null,
                                     },
@@ -1194,180 +1194,58 @@
             t.hash = "d7264b1acc3250cbc9528b91abfabcb9";
             const u = t;
         },
-        729002: (e, l, a) => {
-            a.d(l, { Z: () => i });
+        729002: (l, e, a) => {
+            a.d(e, { Z: () => i });
             var n = { kind: "InlineDataFragment", name: "parseUserEntities_userEntities", hash: "16101b38cee4e401a6aa44e1c860d74f" };
             const i = n;
         },
-        594695: (e, l, a) => {
-            a.d(l, { Z: () => d });
-            var n,
-                i,
-                r,
-                s,
-                t,
-                u,
-                o = {
-                    fragment: {
-                        argumentDefinitions: [(n = { defaultValue: null, kind: "LocalArgument", name: "consented" }), (i = { defaultValue: null, kind: "LocalArgument", name: "matchingCriteria" }), (r = { defaultValue: null, kind: "LocalArgument", name: "recommendationsEnabled" }), (s = { defaultValue: null, kind: "LocalArgument", name: "remoteWorkAllowed" }), (t = { defaultValue: null, kind: "LocalArgument", name: "userId" })],
-                        kind: "Fragment",
-                        metadata: null,
-                        name: "usePutMatchingProfileMutation",
-                        selections: (u = [
-                            {
-                                alias: null,
-                                args: [
-                                    { kind: "Variable", name: "consented", variableName: "consented" },
-                                    { kind: "Variable", name: "matching_criteria", variableName: "matchingCriteria" },
-                                    { kind: "Variable", name: "recommendations_enabled", variableName: "recommendationsEnabled" },
-                                    { kind: "Variable", name: "remote_work_allowed", variableName: "remoteWorkAllowed" },
-                                    { kind: "Literal", name: "s", value: "84b0" },
-                                    { kind: "Variable", name: "user_id", variableName: "userId" },
-                                ],
-                                concreteType: "PutMatchingProfileResult",
-                                kind: "LinkedField",
-                                name: "put_matching_profile",
-                                plural: !1,
-                                selections: [{ alias: null, args: null, kind: "ScalarField", name: "success", storageKey: null }],
-                                storageKey: null,
-                            },
-                        ]),
-                        type: "Mutation",
-                        abstractKey: null,
-                    },
-                    kind: "Request",
-                    operation: { argumentDefinitions: [t, n, r, s, i], kind: "Operation", name: "usePutMatchingProfileMutation", selections: u },
-                    params: { id: "2jaLJJQhearTWZhqu89gBQ", metadata: {}, name: "usePutMatchingProfileMutation", operationKind: "mutation", text: null },
-                };
-            o.hash = "b23a8c052c25cec3489865df8f18d46d";
-            const d = o;
-        },
-        488248: (e, l, a) => {
-            a.d(l, { Z: () => s });
-            var n,
-                i,
-                r = {
-                    fragment: {
-                        argumentDefinitions: (n = [{ defaultValue: null, kind: "LocalArgument", name: "userId" }]),
-                        kind: "Fragment",
-                        metadata: null,
-                        name: "useRefreshJobRecommendationsMutation",
-                        selections: (i = [
-                            {
-                                alias: null,
-                                args: [
-                                    { kind: "Literal", name: "s", value: "84b0" },
-                                    { kind: "Variable", name: "user_id", variableName: "userId" },
-                                ],
-                                concreteType: "RefreshJobRecommendationsResult",
-                                kind: "LinkedField",
-                                name: "refresh_job_recommendations",
-                                plural: !1,
-                                selections: [{ alias: null, args: null, kind: "ScalarField", name: "recommendation_count", storageKey: null }],
-                                storageKey: null,
-                            },
-                        ]),
-                        type: "Mutation",
-                        abstractKey: null,
-                    },
-                    kind: "Request",
-                    operation: { argumentDefinitions: n, kind: "Operation", name: "useRefreshJobRecommendationsMutation", selections: i },
-                    params: { id: "NjDhjn_53KnOmYAcoyxqew", metadata: {}, name: "useRefreshJobRecommendationsMutation", operationKind: "mutation", text: null },
-                };
-            r.hash = "492b79a53d8f9fbe4f7ba82e23dbab65";
-            const s = r;
-        },
-        420412: (e, l, a) => {
-            a.d(l, { Z: () => u });
+        420412: (l, e, a) => {
+            a.d(e, { Z: () => u });
             var n = a(202784),
                 i = a(325686),
-                r = a(235902),
-                s = a(885015),
+                s = a(235902),
+                r = a(885015),
                 t = a(392237);
-            function u({ borderColor: e = "borderColor", isSlim: l = !1, label: a }) {
-                const { isWebRedesign: u } = r.ZP.useProps(),
-                    d = "borderColor" === e || "nestedBorderColor" === e ? o[e] : { backgroundColor: t.default.theme.colors[e] ?? t.default.theme.colors.borderColor };
-                return a ? n.createElement(s.Z, { style: !l && o.root, withGutter: !0 }, n.createElement(i.Z, { style: o.gapColumn }, n.createElement(i.Z, { style: [o.gap, d] })), n.createElement(i.Z, { style: o.gapText }, a), n.createElement(i.Z, { style: o.gapColumn }, n.createElement(i.Z, { style: [o.gap, d] }))) : n.createElement(i.Z, { style: [!l && o.root, u() && o.rootRedesign, o.gap, d] });
+            function u({ borderColor: l = "borderColor", isSlim: e = !1, label: a }) {
+                const { isWebRedesign: u } = s.ZP.useProps(),
+                    d = "borderColor" === l || "nestedBorderColor" === l ? o[l] : { backgroundColor: t.default.theme.colors[l] ?? t.default.theme.colors.borderColor };
+                return a ? n.createElement(r.Z, { style: !e && o.root, withGutter: !0 }, n.createElement(i.Z, { style: o.gapColumn }, n.createElement(i.Z, { style: [o.gap, d] })), n.createElement(i.Z, { style: o.gapText }, a), n.createElement(i.Z, { style: o.gapColumn }, n.createElement(i.Z, { style: [o.gap, d] }))) : n.createElement(i.Z, { style: [!e && o.root, u() && o.rootRedesign, o.gap, d] });
             }
-            const o = t.default.create((e) => ({ borderColor: { backgroundColor: t.default.theme.colors.borderColor }, nestedBorderColor: { backgroundColor: t.default.theme.colors.nestedBorderColor }, gap: { height: e.borderWidths.small }, gapColumn: { flex: 1, justifyContent: "center" }, gapText: { "flex-basis": "auto" }, root: { marginVertical: e.spaces.space4 }, rootRedesign: { marginHorizontal: e.spaces.space16 } }));
+            const o = t.default.create((l) => ({ borderColor: { backgroundColor: t.default.theme.colors.borderColor }, nestedBorderColor: { backgroundColor: t.default.theme.colors.nestedBorderColor }, gap: { height: l.borderWidths.small }, gapColumn: { flex: 1, justifyContent: "center" }, gapText: { "flex-basis": "auto" }, root: { marginVertical: l.spaces.space4 }, rootRedesign: { marginHorizontal: l.spaces.space16 } }));
         },
-        885015: (e, l, a) => {
-            a.d(l, { Z: () => o });
+        885015: (l, e, a) => {
+            a.d(e, { Z: () => o });
             var n = a(807896),
                 i = a(202784),
-                r = a(325686),
-                s = a(392237);
+                s = a(325686),
+                r = a(392237);
             class t extends i.Component {
                 render() {
-                    const { children: e, style: l, withGutter: a, ...s } = this.props,
-                        t = i.Children.map(e, (e) => e && i.cloneElement(e, { style: [e.props.style, u.column, a && u.withGutterColumn] }));
-                    return i.createElement(r.Z, (0, n.Z)({ style: [l, u.root, a && u.withGutter] }, s), t);
+                    const { children: l, style: e, withGutter: a, ...r } = this.props,
+                        t = i.Children.map(l, (l) => l && i.cloneElement(l, { style: [l.props.style, u.column, a && u.withGutterColumn] }));
+                    return i.createElement(s.Z, (0, n.Z)({ style: [e, u.root, a && u.withGutter] }, r), t);
                 }
             }
             t.defaultProps = { withGutter: !1 };
-            const u = s.default.create((e) => ({ root: { flexDirection: "row" }, column: { flexBasis: 0, minWidth: 0 }, withGutter: { marginHorizontal: `-${e.spaces.space4}` }, withGutterColumn: { marginHorizontal: e.spaces.space4 } })),
+            const u = r.default.create((l) => ({ root: { flexDirection: "row" }, column: { flexBasis: 0, minWidth: 0 }, withGutter: { marginHorizontal: `-${l.spaces.space4}` }, withGutterColumn: { marginHorizontal: l.spaces.space4 } })),
                 o = t;
         },
-        524496: (e, l, a) => {
-            a.d(l, { Z: () => b });
-            a(136728);
-            var n = a(202784),
-                i = a(301503),
-                r = a(325686),
-                s = a(595088),
-                t = a(516951),
-                u = a(731708),
-                o = a(779802),
-                d = a(537392),
-                c = a(989272),
-                m = a(925873),
-                g = a(202253),
-                y = a(786475),
-                k = a(392237),
-                p = a(135904);
-            const F = { [o.P7.atomic]: { element: "section" }, [o.P7.header1]: { element: "h1", wrapper: n.createElement(u.ZP, null) }, [o.P7.header2]: { element: "h2", wrapper: n.createElement(u.ZP, null) } },
-                K = (0, s.Z)(F).reduce((e, [l, a]) => e.set(l, a), i.DefaultDraftBlockRenderMap);
-            let _ = !1;
-            const b = n.memo(function (e) {
-                    const { componentByType: l, contentState: a, onScribeEvent: s, paragraphFontSizeOverride: u } = e;
-                    n.useEffect(() => {
-                        _ || (c.fH(p.c, p.n), (_ = !0));
-                    }, []);
-                    const k = [(0, g.ez)(s, u), g.aF, g.RU];
-                    e.disable_entityLinkDecorator || k.push((0, g.NA)(s, u));
-                    const F = m.Z.initEditorState(a, { decorators: k });
-                    let b = t.Z;
-                    return (
-                        l &&
-                            (b = (e) => {
-                                const a = e.getType();
-                                return l[a] || null;
-                            }),
-                        n.createElement(d.ZP, null, ({ containerWidth: e }) => n.createElement(r.Z, { style: f.fontFamily }, n.createElement(i.Editor, { blockRenderMap: K, blockRendererFn: b, blockStyleFn: (0, o.su)(y.Z.isNarrowScreenWidth(e)), editorState: F, onChange: t.Z, readOnly: !0, webDriverTestID: "longformRichTextComponent" })))
-                    );
-                }),
-                f = k.default.create((e) => ({ fontFamily: { fontFamily: e.fontFamilies.normal } }));
-        },
-        183806: (e, l, a) => {
-            a.d(l, { Z: () => n });
-            const n = a(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
-        },
-        125568: (e, l, a) => {
-            a.d(l, { t: () => i });
+        125568: (l, e, a) => {
+            a.d(e, { t: () => i });
             var n = a(202784);
             function i() {
-                const e = n.useRef(!0);
+                const l = n.useRef(!0);
                 return (
                     n.useLayoutEffect(
                         () => () => {
-                            e.current = !1;
+                            l.current = !1;
                         },
                         [],
                     ),
-                    n.useCallback(() => e.current, [])
+                    n.useCallback(() => l.current, [])
                 );
             }
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.JobSearch-6107ac1a.b4e333fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.JobSearch-6107ac1a.6b2cc23a.js.map
