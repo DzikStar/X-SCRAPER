@@ -6983,6 +6983,7 @@
                 e("ed672bfa", "Kaikki Basicin ja Premiumin päivitykset sekä..."),
                 e("db63fa1c", "Valitse premium-tílaus"),
                 e("b128c6bc", "Hanki varmennetun tilin merkintä ja tusinoittain muita etuja"),
+                e("a9904a1c", "Säästä X Premiumista rajoitetun ajan"),
                 e("acfaf7a0", "Vertaile tasoja ja ominaisuuksia"),
                 e("e1606e52", "Muuta tilaustasi"),
                 e("d2f2b91a", "rekisteröityä täällä"),
@@ -7848,8 +7849,7 @@
                 e("h37f2d96", "Huomaa, ettei kaikkia työnhakijoiden seurantajärjestelmiä vielä tueta."),
                 e("ce102a20", "Edelleenohjataan Stripeen"),
                 e("ddfd6718", "Maksu epäonnistui"),
-                e("i90ea7d2", "Päivitä laskutustietosi pian, jotta säilytät etusi."),
-                e("a62359e6", "Varmennetut organisaatiot");
+                e("i90ea7d2", "Päivitä laskutustietosi pian, jotta säilytät etusi.");
             function s(a, t) {
                 for (var i = 0; i < t.length; i++) {
                     var e = t[i];
@@ -7888,7 +7888,8 @@
                     u(a, t)
                 );
             }
-            e("ge221b7c", "Päivitä varmennetun organisaation tilaukseen, niin saat käyttöösi affiliaatit ja enemmän mainoskrediittejä."),
+            e("a62359e6", "Varmennetut organisaatiot"),
+                e("ge221b7c", "Päivitä varmennetun organisaation tilaukseen, niin saat käyttöösi affiliaatit ja enemmän mainoskrediittejä."),
                 e("i4dccc18", "Laskutus"),
                 e("ec3cd6e4", "Hallitse maksutapaa, päivitä laskutustiedot ja tarkastele laskujasi."),
                 e("dac61c3c", "Tilin asetukset"),
@@ -8890,11 +8891,11 @@
                 e("d1386940", "Pysy ajan tasalla"),
                 e("ecda5f9e", "Harhaanjohtava"),
                 e("a423473c", "Lakisääteinen huomautus"),
-                e("b3296688", "Näkyvyyttä rajattu"),
-                e("ccd32094", "Nyt");
-            e("abfcce0d", function (a) {
-                return a.amountOfTime + " sitten";
-            }),
+                e("b3296688", "Näkyvyyttä rajattu");
+            e("ccd32094", "Nyt"),
+                e("abfcce0d", function (a) {
+                    return a.amountOfTime + " sitten";
+                }),
                 e("ae408b76", "Uudelleenjulkaisit"),
                 e("j355f008", "Kiinnitetty julkaisu"),
                 e("habf9678", "Tekijän kiinnittämä"),
@@ -13220,4 +13221,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.eb737eaa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.4629a59a.js.map

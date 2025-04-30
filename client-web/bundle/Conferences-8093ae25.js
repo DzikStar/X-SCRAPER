@@ -780,7 +780,7 @@
                 f = n(674132),
                 p = n.n(f),
                 E = n(123751),
-                g = n(78067),
+                g = n(310453),
                 h = n(625555),
                 b = n(403883),
                 v = (n(585488), n(736063)),
@@ -870,4 +870,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Conferences-8093ae25.f1c3688a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Conferences-8093ae25.834e616a.js.map

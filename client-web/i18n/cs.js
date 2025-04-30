@@ -6992,6 +6992,7 @@
                 a("ed672bfa", "Všechny upgrady od Basic a Premium, plus..."),
                 a("db63fa1c", "Vybrat plán Premium"),
                 a("b128c6bc", "Získejte ověřený odznak a desítky dalších úžasných výhod a benefitů"),
+                a("a9904a1c", "Uložit na X Premium po omezenou dobu"),
                 a("acfaf7a0", "Srovnejte úrovně a funkce"),
                 a("e1606e52", "Změnit předplatné"),
                 a("d2f2b91a", "zaregistrujte se zde"),
@@ -7857,8 +7858,7 @@
                 a("h37f2d96", "Pamatujte, že v současné době nejsou podporovány všechny systémy sledování žadatelů."),
                 a("ce102a20", "Přesměrování na Stripe"),
                 a("ddfd6718", "Platba selhala"),
-                a("i90ea7d2", "Urychleně aktualizujte svoje vyúčtování, abyste si zachovali výhody."),
-                a("a62359e6", "Nastavení Ověřených organizací");
+                a("i90ea7d2", "Urychleně aktualizujte svoje vyúčtování, abyste si zachovali výhody.");
             function r(e, o) {
                 for (var t = 0; t < o.length; t++) {
                     var a = o[t];
@@ -7897,7 +7897,8 @@
                     i(e, o)
                 );
             }
-            a("ge221b7c", "Upgradujte předplatné ověřené organizace a získejte přístup k partnerským účtům a většímu množství reklamních kreditů."),
+            a("a62359e6", "Nastavení Ověřených organizací"),
+                a("ge221b7c", "Upgradujte předplatné ověřené organizace a získejte přístup k partnerským účtům a většímu množství reklamních kreditů."),
                 a("i4dccc18", "Vyúčtování"),
                 a("ec3cd6e4", "Spravujte svůj způsob platby, aktualizujte fakturační údaje a kontrolujte své faktury."),
                 a("dac61c3c", "Nastavení účtu"),
@@ -8899,11 +8900,11 @@
                 a("d1386940", "Buďte stále v obraze"),
                 a("ecda5f9e", "Zavádějící"),
                 a("a423473c", "Zákonem vyžadované upozornění"),
-                a("b3296688", "Viditelnost omezena"),
-                a("ccd32094", "Nyní");
-            a("abfcce0d", function (e) {
-                return "před " + e.amountOfTime;
-            }),
+                a("b3296688", "Viditelnost omezena");
+            a("ccd32094", "Nyní"),
+                a("abfcce0d", function (e) {
+                    return "před " + e.amountOfTime;
+                }),
                 a("ae408b76", "Repostovali jste"),
                 a("j355f008", "Připnutý post"),
                 a("habf9678", "Připnuto autorem"),
@@ -13218,4 +13219,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/cs.c906c81a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/cs.7ef7f26a.js.map

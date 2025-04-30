@@ -6983,6 +6983,7 @@
                 s("ed672bfa", "Todas as atualizações do Basic e Premium, além de..."),
                 s("db63fa1c", "Selecionar um plano premium"),
                 s("b128c6bc", "Obtenha um selo verificado e ganhe muitos outros benefícios e vantagens incríveis"),
+                s("a9904a1c", "Salvar no X Premium por tempo limitado"),
                 s("acfaf7a0", "Comparar níveis e recursos"),
                 s("e1606e52", "Alterar sua assinatura"),
                 s("d2f2b91a", "inscreva-se aqui"),
@@ -7848,8 +7849,7 @@
                 s("h37f2d96", "Observe que nem todos os sistemas de rastreamento de candidatos são compatíveis."),
                 s("ce102a20", "Redirecionar para o Stripe"),
                 s("ddfd6718", "O pagamento falhou"),
-                s("i90ea7d2", "Atualize o quanto antes seus dados de cobrança para manter seus benefícios."),
-                s("a62359e6", "Configurações de Organizações Verificadas");
+                s("i90ea7d2", "Atualize o quanto antes seus dados de cobrança para manter seus benefícios.");
             function i(e, a) {
                 for (var o = 0; o < a.length; o++) {
                     var s = a[o];
@@ -7888,7 +7888,8 @@
                     n(e, a)
                 );
             }
-            s("ge221b7c", "Faça um upgrade na assinatura da Organização Verificada para obter acesso a afiliadas e mais créditos de publicidade."),
+            s("a62359e6", "Configurações de Organizações Verificadas"),
+                s("ge221b7c", "Faça um upgrade na assinatura da Organização Verificada para obter acesso a afiliadas e mais créditos de publicidade."),
                 s("i4dccc18", "Cobrança"),
                 s("ec3cd6e4", "Gerencie seu método de pagamento, atualize informações de cobrança e revise suas faturas."),
                 s("dac61c3c", "Configurações da conta"),
@@ -8890,11 +8891,11 @@
                 s("d1386940", "Informe-se"),
                 s("ecda5f9e", "Enganoso"),
                 s("a423473c", "Notificação obrigatória por lei"),
-                s("b3296688", "Visibilidade limitada"),
-                s("ccd32094", "Agoraㅤ");
-            s("abfcce0d", function (e) {
-                return e.amountOfTime + " atrás";
-            }),
+                s("b3296688", "Visibilidade limitada");
+            s("ccd32094", "Agoraㅤ"),
+                s("abfcce0d", function (e) {
+                    return e.amountOfTime + " atrás";
+                }),
                 s("ae408b76", "Você repostou"),
                 s("j355f008", "Post fixado"),
                 s("habf9678", "Fixado pelo autor"),
@@ -13207,4 +13208,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pt.ee423b1a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pt.9bb6358a.js.map

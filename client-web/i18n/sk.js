@@ -6992,6 +6992,7 @@
                 n("ed672bfa", "Všetky výhody z predplatných Základ a Premium a navyše…"),
                 n("db63fa1c", "Vyberte si premium tarifu"),
                 n("b128c6bc", "Získajte odznak overenia a mnoho ďalších výhod"),
+                n("a9904a1c", "Časovo obmedzená ponuka X Premium za nižšiu cenu"),
                 n("acfaf7a0", "Porovnanie úrovní a funkcií"),
                 n("e1606e52", "Zmena vášho predplatného"),
                 n("d2f2b91a", "zaregistrujte sa tu"),
@@ -7857,8 +7858,7 @@
                 n("h37f2d96", "Momentálne podporujeme len niektoré systémy sledovania uchádzačov."),
                 n("ce102a20", "Prebieha presmerovanie do služby Stripe"),
                 n("ddfd6718", "Platba zlyhala"),
-                n("i90ea7d2", "Aktualizujte platobné údaje ihneď, aby ste nestratili výhody."),
-                n("a62359e6", "Nastavenia overených organizácií");
+                n("i90ea7d2", "Aktualizujte platobné údaje ihneď, aby ste nestratili výhody.");
             function i(e, a) {
                 for (var o = 0; o < a.length; o++) {
                     var n = a[o];
@@ -7897,7 +7897,8 @@
                     r(e, a)
                 );
             }
-            n("ge221b7c", "Prejdite na vyššiu úroveň predplatného pre overené organizácie, aby ste mohli využívať pridružené účty a získať viac reklamných kreditov."),
+            n("a62359e6", "Nastavenia overených organizácií"),
+                n("ge221b7c", "Prejdite na vyššiu úroveň predplatného pre overené organizácie, aby ste mohli využívať pridružené účty a získať viac reklamných kreditov."),
                 n("i4dccc18", "Fakturácia"),
                 n("ec3cd6e4", "Spravujte svoj spôsob platby, aktualizujte fakturačné informácie a kontrolujte svoje faktúry."),
                 n("dac61c3c", "Nastavenia účtu"),
@@ -8899,11 +8900,11 @@
                 n("d1386940", "Majte vždy aktuálne informácie"),
                 n("ecda5f9e", "Zavádzajúce"),
                 n("a423473c", "Oznámenie vyžadované zákonom"),
-                n("b3296688", "Obmedzená viditeľnosť"),
-                n("ccd32094", "Teraz");
-            n("abfcce0d", function (e) {
-                return "Pred " + e.amountOfTime;
-            }),
+                n("b3296688", "Obmedzená viditeľnosť");
+            n("ccd32094", "Teraz"),
+                n("abfcce0d", function (e) {
+                    return "Pred " + e.amountOfTime;
+                }),
                 n("ae408b76", "Opätovne ste uverejnili"),
                 n("j355f008", "Pripnutý príspevok"),
                 n("habf9678", "Pripnuté autorom"),
@@ -13222,4 +13223,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sk.1b59212a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sk.10ee921a.js.map

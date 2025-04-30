@@ -6983,6 +6983,7 @@
                 t("ed672bfa", "Alle opgraderinger fra Basis og Premium, plus ..."),
                 t("db63fa1c", "Vælg en premium-plan"),
                 t("b128c6bc", "Få et verificeret badge og masser af andre fantastiske frynsegoder og fordele"),
+                t("a9904a1c", "Spar på X Premium i en begrænset periode"),
                 t("acfaf7a0", "Sammenlign niveauer og funktioner"),
                 t("e1606e52", "Ændr dit abonnement"),
                 t("d2f2b91a", "tilmeld dig her"),
@@ -7848,8 +7849,7 @@
                 t("h37f2d96", "Bemærk, at ikke alle ansøgersporingssystemer understøttes i øjeblikket."),
                 t("ce102a20", "Omdirigering til Stripe"),
                 t("ddfd6718", "Betalingen mislykkedes"),
-                t("i90ea7d2", "Du bedes hurtigst muligt opdatere dine faktureringsoplysninger for at beholde dine fordele."),
-                t("a62359e6", "Indstillinger for verificeret organisation");
+                t("i90ea7d2", "Du bedes hurtigst muligt opdatere dine faktureringsoplysninger for at beholde dine fordele.");
             function d(e, r) {
                 for (var n = 0; n < r.length; n++) {
                     var t = r[n];
@@ -7888,7 +7888,8 @@
                     a(e, r)
                 );
             }
-            t("ge221b7c", "Opgrader dit abonnement på Verificerede organisationer for at få adgang til tilknytninger og flere annoncekreditter."),
+            t("a62359e6", "Indstillinger for verificeret organisation"),
+                t("ge221b7c", "Opgrader dit abonnement på Verificerede organisationer for at få adgang til tilknytninger og flere annoncekreditter."),
                 t("i4dccc18", "Fakturering"),
                 t("ec3cd6e4", "Administrer din betalingsmetode, opdater faktureringsoplysninger, og gennemgå dine fakturaer."),
                 t("dac61c3c", "Kontoindstillinger"),
@@ -8890,11 +8891,11 @@
                 t("d1386940", "Hold dig orienteret"),
                 t("ecda5f9e", "Vildledende"),
                 t("a423473c", "Lovpligtig meddelelse"),
-                t("b3296688", "Synlighed begrænset"),
-                t("ccd32094", "Nu");
-            t("abfcce0d", function (e) {
-                return e.amountOfTime + " siden";
-            }),
+                t("b3296688", "Synlighed begrænset");
+            t("ccd32094", "Nu"),
+                t("abfcce0d", function (e) {
+                    return e.amountOfTime + " siden";
+                }),
                 t("ae408b76", "Du repostede"),
                 t("j355f008", "Fastgjort post"),
                 t("habf9678", "Fastgjort af forfatter"),
@@ -13209,4 +13210,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/da.ea95fa0a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/da.b6ceac3a.js.map

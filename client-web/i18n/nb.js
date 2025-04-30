@@ -6982,6 +6982,7 @@
                 t("ed672bfa", "Alle oppgraderinger fra Basic og Premium, pluss ..."),
                 t("db63fa1c", "Velg et premiumabonnement"),
                 t("b128c6bc", "Få et verifisert merke og dusinvis av andre flotte fordeler"),
+                t("a9904a1c", "Spar på X Premium for en begrenset tid"),
                 t("acfaf7a0", "Sammenlign nivåer og funksjoner"),
                 t("e1606e52", "Endre abonnementet"),
                 t("d2f2b91a", "registrere seg her"),
@@ -7847,8 +7848,7 @@
                 t("h37f2d96", "Vær obs på at ikke alle kandidatsystemer støttes for øyeblikket."),
                 t("ce102a20", "Omdirigerer til Stripe"),
                 t("ddfd6718", "Betalingen mislyktes"),
-                t("i90ea7d2", "Oppdater faktureringsopplysningene snarest for å beholde fordelene."),
-                t("a62359e6", "Innstillinger for verifisert organisasjon");
+                t("i90ea7d2", "Oppdater faktureringsopplysningene snarest for å beholde fordelene.");
             function a(e, n) {
                 for (var r = 0; r < n.length; r++) {
                     var t = n[r];
@@ -7887,7 +7887,8 @@
                     d(e, n)
                 );
             }
-            t("ge221b7c", "Oppgrader abonnementet på Verifiserte organisasjoner for å få tilgang til tilknyttede kontoer og mer annonsekreditt."),
+            t("a62359e6", "Innstillinger for verifisert organisasjon"),
+                t("ge221b7c", "Oppgrader abonnementet på Verifiserte organisasjoner for å få tilgang til tilknyttede kontoer og mer annonsekreditt."),
                 t("i4dccc18", "Fakturering"),
                 t("ec3cd6e4", "Administrer betalingsmåten, oppdater faktureringsinformasjon og se gjennom fakturaene dine."),
                 t("dac61c3c", "Kontoinnstillinger"),
@@ -8889,11 +8890,11 @@
                 t("d1386940", "Hold deg informert"),
                 t("ecda5f9e", "Villedende"),
                 t("a423473c", "Lovpålagt melding"),
-                t("b3296688", "Begrenset synlighet"),
-                t("ccd32094", "Nå");
-            t("abfcce0d", function (e) {
-                return e.amountOfTime + " siden";
-            }),
+                t("b3296688", "Begrenset synlighet");
+            t("ccd32094", "Nå"),
+                t("abfcce0d", function (e) {
+                    return e.amountOfTime + " siden";
+                }),
                 t("ae408b76", "Du republiserte"),
                 t("j355f008", "Festet innlegg"),
                 t("habf9678", "Festet av forfatteren"),
@@ -13205,4 +13206,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nb.0e78440a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nb.fd4c774a.js.map

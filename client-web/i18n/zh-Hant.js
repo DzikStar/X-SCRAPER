@@ -6982,6 +6982,7 @@
                 n("ed672bfa", "基本和 Premium 方案中的所有升級，加上…"),
                 n("db63fa1c", "選取一個 Premium 方案"),
                 n("b128c6bc", "獲得已認證徽章以及數十種其他超棒的福利和權益"),
+                n("a9904a1c", "享有 X Premium 限時折扣"),
                 n("acfaf7a0", "比較等級和功能"),
                 n("e1606e52", "變更你的訂閱"),
                 n("d2f2b91a", "在這裡註冊"),
@@ -7847,8 +7848,7 @@
                 n("h37f2d96", "請注意，並非所有應徵者追蹤系統目前均受支援。"),
                 n("ce102a20", "正在重新導向到 Stripe"),
                 n("ddfd6718", "付款失敗"),
-                n("i90ea7d2", "請立即更新你的帳單資訊以保留你的權益。"),
-                n("a62359e6", "已認證組織設定");
+                n("i90ea7d2", "請立即更新你的帳單資訊以保留你的權益。");
             function t(e, c) {
                 for (var a = 0; a < c.length; a++) {
                     var n = c[a];
@@ -7887,7 +7887,8 @@
                     r(e, c)
                 );
             }
-            n("ge221b7c", "升級「已認證組織」訂閱，以存取附屬帳戶並獲得更多廣告抵用金。"),
+            n("a62359e6", "已認證組織設定"),
+                n("ge221b7c", "升級「已認證組織」訂閱，以存取附屬帳戶並獲得更多廣告抵用金。"),
                 n("i4dccc18", "帳單"),
                 n("ec3cd6e4", "管理你的付款方式、更新帳單資訊，並檢視你的發票。"),
                 n("dac61c3c", "帳戶設定"),
@@ -8889,11 +8890,11 @@
                 n("d1386940", "掌握最新資訊"),
                 n("ecda5f9e", "誤導"),
                 n("a423473c", "法律要求的通知"),
-                n("b3296688", "可見度受限"),
-                n("ccd32094", "現在");
-            n("abfcce0d", function (e) {
-                return e.amountOfTime + "前";
-            }),
+                n("b3296688", "可見度受限");
+            n("ccd32094", "現在"),
+                n("abfcce0d", function (e) {
+                    return e.amountOfTime + "前";
+                }),
                 n("ae408b76", "你已轉發"),
                 n("j355f008", "釘選的貼文"),
                 n("habf9678", "已被作者釘選"),
@@ -13215,4 +13216,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh-Hant.8f143afa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh-Hant.ddec61da.js.map

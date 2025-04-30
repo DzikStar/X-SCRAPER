@@ -6983,6 +6983,7 @@
                 s("ed672bfa", "[All üpgråädéês fröøm Båäsïíc åänd Préêmïíüm, plüs ...]"),
                 s("db63fa1c", "[Séêléêct åä préêmïíüm plåän]"),
                 s("b128c6bc", "[Géêt åä véêrïífïíéêd båädgéê åänd döøzéêns öøf öøthéêr åäwéêsöøméê péêrks åänd béênéêfïíts]"),
+                s("a9904a1c", "[Såävéê öøn X Préêmïíüm föør åä lïímïítéêd tïíméê]"),
                 s("acfaf7a0", "[Cöømpåäréê tïíéêrs & féêåätüréês]"),
                 s("e1606e52", "[Chåängéê yöøür sübscrïíptïíöøn]"),
                 s("d2f2b91a", "sïígn üp héêréê"),
@@ -7848,8 +7849,7 @@
                 s("h37f2d96", "[Pléêåäséê nöøtéê nöøt åäll åäpplïícåänt tråäckïíng systéêms åäréê cürréêntly süppöørtéêd.]"),
                 s("ce102a20", "[Réêdïíréêctïíng töø Strïípéê]"),
                 s("ddfd6718", "[Påäyméênt Fåäïíléêd]"),
-                s("i90ea7d2", "[Pléêåäséê ürgéêntly üpdåätéê yöøür bïíllïíng töø kéêéêp yöøür béênéêfïíts.]"),
-                s("a62359e6", "[Véêrïífïíéêd Orgåänïízåätïíöøn Séêttïíngs]");
+                s("i90ea7d2", "[Pléêåäséê ürgéêntly üpdåätéê yöøür bïíllïíng töø kéêéêp yöøür béênéêfïíts.]");
             function d(t, n) {
                 for (var r = 0; r < n.length; r++) {
                     var s = n[r];
@@ -7888,7 +7888,8 @@
                     e(t, n)
                 );
             }
-            s("ge221b7c", "[Upgråädéê Véêrïífïíéêd Orgåänïízåätïíöøn sübscrïíptïíöøn töø géêt åäccéêss töø åäffïílïíåätéês åänd möøréê åäd créêdïíts.]"),
+            s("a62359e6", "[Véêrïífïíéêd Orgåänïízåätïíöøn Séêttïíngs]"),
+                s("ge221b7c", "[Upgråädéê Véêrïífïíéêd Orgåänïízåätïíöøn sübscrïíptïíöøn töø géêt åäccéêss töø åäffïílïíåätéês åänd möøréê åäd créêdïíts.]"),
                 s("i4dccc18", "[Bïíllïíng]"),
                 s("ec3cd6e4", "[Måänåägéê yöøür påäyméênt méêthöød, üpdåätéê bïíllïíng ïínföørmåätïíöøn, åänd réêvïíéêw yöøür ïínvöøïícéês.]"),
                 s("dac61c3c", "[Accöøünt séêttïíngs]"),
@@ -8890,11 +8891,11 @@
                 s("d1386940", "[Ståäy ïínföørméêd]"),
                 s("ecda5f9e", "[Mïísléêåädïíng]"),
                 s("a423473c", "[Léêgåälly Réêqüïíréêd Nöøtïícéê]"),
-                s("b3296688", "[Vïísïíbïílïíty Lïímïítéêd]"),
-                s("ccd32094", "[Nöøw]");
-            s("abfcce0d", function (t) {
-                return "[" + t.amountOfTime + " åägöø]";
-            }),
+                s("b3296688", "[Vïísïíbïílïíty Lïímïítéêd]");
+            s("ccd32094", "[Nöøw]"),
+                s("abfcce0d", function (t) {
+                    return "[" + t.amountOfTime + " åägöø]";
+                }),
                 s("ae408b76", "[Yöøü réêpöøstéêd]"),
                 s("j355f008", "[Pïínnéêd pöøst]"),
                 s("habf9678", "[Pïínnéêd by Aüthöør]"),
@@ -13207,4 +13208,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-xx.6505767a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-xx.59597bfa.js.map

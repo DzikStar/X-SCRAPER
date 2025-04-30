@@ -388,7 +388,7 @@
             const L = l.default.create((e) => ({ img: { ...l.default.absoluteFillObject, height: "auto", margin: "auto", maxHeight: "100%", maxWidth: "100%", width: "auto" }, progressBar: { position: "absolute", top: 0, zIndex: 1 } })),
                 D = n.createElement(S.Z, { ariaValueText: T, indeterminate: !0, style: L.progressBar }),
                 M = P;
-            var R = o(78067);
+            var R = o(310453);
             class F extends n.PureComponent {
                 constructor(...e) {
                     super(...e),
@@ -765,4 +765,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.DirectMessages-9f4db315.1267580a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.DirectMessages-9f4db315.0a9c0f7a.js.map

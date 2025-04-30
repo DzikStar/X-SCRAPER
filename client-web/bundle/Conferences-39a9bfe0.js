@@ -73,8 +73,8 @@
                 x = n(895229),
                 T = n(741881),
                 P = n(125363),
-                L = n(601576),
-                _ = n(919022),
+                _ = n(601576),
+                L = n(919022),
                 I = n(115307),
                 z = n(923128),
                 R = n(477403),
@@ -126,7 +126,7 @@
                     const t = await e(M).catch(() => {});
                     if (t && "google" === t.vendor) {
                         J().client.setToken({ access_token: t.token });
-                        const n = { calendarId: "primary", timeMin: new Date().toISOString(), showDeleted: !1, singleEvents: !0, maxResults: 20, orderBy: "startTime", eventTypes: ["default"] };
+                        const n = { calendarId: t.calendar_id ?? "primary", timeMin: new Date().toISOString(), showDeleted: !1, singleEvents: !0, maxResults: 20, orderBy: "startTime", eventTypes: ["default"] };
                         try {
                             return await J().client.calendar.events.list(n);
                         } catch (t) {
@@ -258,7 +258,7 @@
                     );
                 })();
                 const t = (0, a.b9)(Pe),
-                    n = (0, a.b9)(Le),
+                    n = (0, a.b9)(_e),
                     r = (0, a.Dv)(xe),
                     o = (0, s.useHistory)(),
                     c = l.useCallback(
@@ -283,10 +283,10 @@
                     n = l.useCallback(() => {
                         e(t);
                     }, [t, e]);
-                return l.createElement(p.ZP, { "aria-label": ke, hoverLabel: Se, icon: ye, onPress: n, size: "medium", style: _e.button, type: "primaryText" });
+                return l.createElement(p.ZP, { "aria-label": ke, hoverLabel: Se, icon: ye, onPress: n, size: "medium", style: Le.button, type: "primaryText" });
             }
             function Ce() {
-                return l.createElement(p.ZP, { "aria-label": ke, disabled: !0, hoverLabel: Se, icon: ye, size: "medium", style: _e.button, type: "primaryText" });
+                return l.createElement(p.ZP, { "aria-label": ke, disabled: !0, hoverLabel: Se, icon: ye, size: "medium", style: Le.button, type: "primaryText" });
             }
             const ke = "Join",
                 Se = { label: ke },
@@ -307,10 +307,10 @@
             const Pe = (0, o.cn)(null, (e, t, n, r) => {
                     "Enter" !== r.key || r.shiftKey || (r.preventDefault(), t(Te, n));
                 }),
-                Le = (0, o.cn)(null, (e, t, n) => {
+                _e = (0, o.cn)(null, (e, t, n) => {
                     t(xe, !1), t(De, n.target.value);
                 }),
-                _e = y.default.create((e) => ({ button: { marginStart: e.spaces.space4 } }));
+                Le = y.default.create((e) => ({ button: { marginStart: e.spaces.space4 } }));
             function Ie() {
                 return l.createElement(p.ZP, { onClick: () => window.open("/i/conferences"), tabIndex: -1, type: "primaryText" });
             }
@@ -344,7 +344,7 @@
                 const e = (0, a.Dv)(x.p_),
                     t = (0, a.Dv)(x.lY),
                     n = (0, a.Dv)(S.fJ),
-                    r = (0, P.v9)(_.ZP.selectViewerUser),
+                    r = (0, P.v9)(L.ZP.selectViewerUser),
                     o = (0, v.C_)(r).rgb;
                 if (!r) return null;
                 const s = r.profile_banner_url;
@@ -434,7 +434,7 @@
                             n.push(e((0, Q.je)(r))), t(C.V$, { conferenceId: r, broadcastId: l });
                         })
                         .catch(() => {
-                            (0, L.fz)({ text: "something went wrong" });
+                            (0, _.fz)({ text: "something went wrong" });
                         }),
                 ),
                 Ae = y.default.create((e) => {
@@ -538,4 +538,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Conferences-39a9bfe0.8cf6586a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Conferences-39a9bfe0.a4552ffa.js.map

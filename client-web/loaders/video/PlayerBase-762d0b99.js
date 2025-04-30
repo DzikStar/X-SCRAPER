@@ -3,7 +3,7 @@
     ["loaders.video.PlayerBase-762d0b99", "shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"],
     {
         426582: (e, t, r) => {
-            r.d(t, { H6: () => E, PC: () => R, ZP: () => p });
+            r.d(t, { H6: () => p, PC: () => R, ZP: () => E });
             r(571372);
             var o = r(22525),
                 i = r(768256),
@@ -31,20 +31,20 @@
                 },
                 _ = ({ broadcast: e, associatedEvent: t = {} }) => {
                     const { end_ms: r, image_url: o, ping_ms: i, start_ms: a, state: n, timedout_ms: d, total_watched: l, total_watching: _ } = e,
-                        { description: R, id: E, title: p, url: h } = t,
+                        { description: R, id: p, title: E, url: h } = t,
                         u = n === c,
                         O = o,
                         I = parseInt(_, 10) || 0,
-                        T = parseInt(l, 10) || 0,
-                        m = { isLive: u, viewerCount: u ? I : T, posterImage: O, eventDescription: R, eventTitle: p, eventUrl: h, eventId: E };
-                    if ((p && h && (m.cta = { label: p, type: s.$2.EVENT, url: h }), !u)) {
+                        m = parseInt(l, 10) || 0,
+                        T = { isLive: u, viewerCount: u ? I : m, posterImage: O, eventDescription: R, eventTitle: E, eventUrl: h, eventId: p };
+                    if ((E && h && (T.cta = { label: E, type: s.$2.EVENT, url: h }), !u)) {
                         const e = (r || d || i || a) - a;
-                        m.durationMs = e;
+                        T.durationMs = e;
                     }
-                    return m;
+                    return T;
                 },
                 R = (e) => e.source && e.source.type === n.P.BROADCAST;
-            class E {
+            class p {
                 constructor(e, t, r, o, i) {
                     (this.dispatch = e), (this.httpClient = t), (this.playerId = r), (this.broadcastId = o), (this.includeBroadcastEventAssociation = i), (this.updaterTimeout = null);
                 }
@@ -81,7 +81,7 @@
                     clearTimeout(this.updaterTimeout), (this.updaterTimeout = null);
                 }
             }
-            class p {
+            class E {
                 constructor(e, t) {
                     (this.httpClient = e), (this.includeBroadcastEventAssociation = t);
                 }
@@ -106,6 +106,13 @@
                 }
             }
         },
+        196282: (e, t, r) => {
+            r.d(t, { BQ: () => s, KQ: () => o, Y5: () => a, ZC: () => i });
+            const o = "https://lic.staging.drmtoday.com/license-proxy-widevine/cenc/?specConform=true",
+                i = "https://lic.staging.drmtoday.com/license-proxy-headerauth/drmtoday/RightsManager.asmx",
+                s = "https://lic.staging.drmtoday.com/license-server-fairplay/",
+                a = "https://lic.staging.drmtoday.com/license-server-fairplay/cert/x";
+        },
         789403: (e, t, r) => {
             r.d(t, { Z: () => o });
             const o = { BROADCAST_REQUEST_ERROR: "BROADCAST_REQUEST_ERROR", BROADCAST_ENDED_NO_REPLAY: "BROADCAST_ENDED_NO_REPLAY", BROADCAST_NOT_FOUND: "BROADCAST_NOT_FOUND", CONFIG_USER_DATA_NETWORK_ERROR: "CONFIG_USER_DATA_NETWORK_ERROR", CONFIG_NETWORK_ERROR: "CONFIG_NETWORK_ERROR", DMCA_TAKEDOWN_ERROR: "DMCA_TAKEDOWN_ERROR", EUROPEAN_COPYRIGHT_VIOLATION: "EUROPEAN_COPYRIGHT_VIOLATION", LIVE_PARSE_ERROR: "LIVE_PARSE_ERROR", LIVE_STREAM_ACQUISITION_MISSING_CONTENT_ID: "LIVE_STREAM_ACQUISITION_MISSING_CONTENT_ID", LIVE_STREAM_ACQUISITION_NETWORK_ERROR: "LIVE_STREAM_ACQUISITION_NETWORK_ERROR", LIVE_VIDEO_GEOBLOCK_ERROR: "LIVE_VIDEO_GEOBLOCK_ERROR", LIVE_VIDEO_COPYRIGHT_VIOLATION_ERROR: "LIVE_VIDEO_COPYRIGHT_VIOLATION_ERROR", LIVE_VIDEO_GEOLOCATION_PROMPT: "LIVE_VIDEO_GEOLOCATION_PROMPT", LIVE_VIDEO_NO_COOKIES_ERROR: "LIVE_VIDEO_NO_COOKIES_ERROR", MEDIA_NOT_SUPPORTED: "MEDIA_NOT_SUPPORTED", MEDIA_SRC_INVALID_ERROR: "MEDIA_SRC_INVALID_ERROR", MEDIA_ABORTED: "MEDIA_ABORTED", MEDIA_FORBIDDEN: "MEDIA_FORBIDDEN", MEDIA_NETWORK_ERROR: "MEDIA_NETWORK_ERROR", MEDIA_DECODE_ERROR: "MEDIA_DECODE_ERROR", MEDIA_GEOBLOCK_ERROR: "MEDIA_GEOBLOCK_ERROR", MEDIA_TEARDOWN_ERROR: "MEDIA_TEARDOWN_ERROR", MEDIA_UNKNOWN_CODE_ERROR: "MEDIA_UNKNOWN_CODE_ERROR", ORIGINAL_CONTEXT_DELETED: "ORIGINAL_CONTEXT_DELETED", PICTURE_IN_PICTURE_ERROR: "PICTURE_IN_PICTURE_ERROR", UNSUPPORTED_TYPE: "UNSUPPORTED_TYPE", VMAP_NETWORK_ERROR: "VMAP_NETWORK_ERROR", VMAP_PARSE_ERROR: "VMAP_PARSE_ERROR" };
@@ -122,8 +129,8 @@
                 l = r(123751);
             const _ = "/1.1/videos/",
                 R = "TwitterVideoPlayerUserConfig",
-                E = { features: { fatalErrorRetryMax: 3 }, translations: {} },
-                p = { features: { fatalErrorRetryMax: 10 } };
+                p = { features: { fatalErrorRetryMax: 3 }, translations: {} },
+                E = { features: { fatalErrorRetryMax: 10 } };
             const h = class {
                 constructor(e, t) {
                     (this.httpClient = e), (this.logger = t);
@@ -139,8 +146,8 @@
                                 return JSON.parse(window.sessionStorage.getItem(R));
                             } catch (e) {}
                         })(),
-                        o = { eventId: e.eventId, posterImage: e.poster, track: { contentId: e.contentId, contentType: e.contentType, cta: e.cta, durationMs: e.durationMs, expandedUrl: e.expandedUrl, mediaAvailability: e.mediaAvailability, publisherId: e.publisherId, shouldLoop: e.loop, variants: e.variants, viewCount: e.viewCount, vmapUrl: e.vmapUrl } };
-                    if (!e.shouldLoadTranslations || !this._shouldLoadStaticConfig(t)) return Promise.resolve({ ...E, ...o });
+                        o = { eventId: e.eventId, posterImage: e.poster, track: { contentId: e.contentId, contentType: e.contentType, cta: e.cta, durationMs: e.durationMs, expandedUrl: e.expandedUrl, mediaAvailability: e.mediaAvailability, publisherId: e.publisherId, shouldLoop: e.loop, variants: e.variants, viewCount: e.viewCount, vmapUrl: e.vmapUrl, generateDrmTokenCallback: e.generateDrmTokenCallback } };
+                    if (!e.shouldLoadTranslations || !this._shouldLoadStaticConfig(t)) return Promise.resolve({ ...p, ...o });
                     const i = this.httpClient
                         .dispatch({ method: "GET", path: "/1.1/videos/static/config.json", host: "https://api.twitter.com" })
                         .then(
@@ -162,11 +169,11 @@
                                 throw new Error(d.Z.CONFIG_USER_DATA_NETWORK_ERROR);
                             },
                         )
-                        .catch((e) => (this.logger.log("ConfigurationLoader", `failed to load static configuration: ${e}`), { ...E }));
+                        .catch((e) => (this.logger.log("ConfigurationLoader", `failed to load static configuration: ${e}`), { ...p }));
                     return (r ? Promise.resolve(r) : i).then(({ features: e, translations: t }) => ({ ...o, features: e, translations: t }));
                 }
                 loadDynamicConfigState(e, t, r) {
-                    if ((e.type === l.P.BROADCAST && t && !t.shouldLoadTranslations) || e.type === l.P.AUDIO_SPACE) return Promise.resolve({ ...E, ...p });
+                    if ((e.type === l.P.BROADCAST && t && !t.shouldLoadTranslations) || e.type === l.P.AUDIO_SPACE) return Promise.resolve({ ...p, ...E });
                     try {
                         return this.httpClient.dispatch({ method: "GET", path: this.getApiEndpointForPlayerSource(e), host: "https://api.twitter.com", params: { bitrate_cap: r.shouldCapBitrate ? c.qJ : void 0 } }).then(
                             (e) => {
@@ -189,9 +196,9 @@
                         l = r.reloadTimecode,
                         _ = (0, a.K)(r.requestedTimecode),
                         R = _ > 0 || 0 === _ ? _ : -1;
-                    let E, p;
-                    (0, s.Yh)(i), o && (({ mediaAvailability: p } = o), r.maxLoopCount ? ((o.maxLoopCount = r.maxLoopCount), (o.loopCounter = 0)) : r.maxLoopingThresholdSec >= 0 && ((o.maxLoopingThresholdSec = r.maxLoopingThresholdSec), (o.loopCounter = 0)), o.variants && o.variants.length > 0 ? (E = o.variants) : o.playbackUrl && o.playbackType && (E = [{ src: o.playbackUrl, type: o.playbackType }]));
-                    const h = (0, n.yc)(p);
+                    let p, E;
+                    (0, s.Yh)(i), o && (({ mediaAvailability: E } = o), r.maxLoopCount ? ((o.maxLoopCount = r.maxLoopCount), (o.loopCounter = 0)) : r.maxLoopingThresholdSec >= 0 && ((o.maxLoopingThresholdSec = r.maxLoopingThresholdSec), (o.loopCounter = 0)), o.variants && o.variants.length > 0 ? (p = o.variants) : o.playbackUrl && o.playbackType && (p = [{ src: o.playbackUrl, type: o.playbackType }]));
+                    const h = (0, n.yc)(E);
                     if (h) {
                         let e;
                         switch (h) {
@@ -199,10 +206,10 @@
                             case d.Z.DMCA_TAKEDOWN_ERROR:
                                 throw new Error(h);
                             case d.Z.EUROPEAN_COPYRIGHT_VIOLATION:
-                                throw ((e = new Error(h)), (e.copyrightHolder = p.unavailability_info.copyright_holder_name), e);
+                                throw ((e = new Error(h)), (e.copyrightHolder = E.unavailability_info.copyright_holder_name), e);
                         }
                     }
-                    return { ...t, ...c, tracks: [{ ...o, id: 0, displayType: "content", requestedTimecode: R, reloadTimecode: l, rotation: 0, variants: E, currentVariantIndex: 0 }], currentTrackId: 0, source: { ...t.source, trackId: 0 }, mediaAvailability: p };
+                    return { ...t, ...c, tracks: [{ ...o, id: 0, displayType: "content", requestedTimecode: R, reloadTimecode: l, rotation: 0, variants: p, currentVariantIndex: 0 }], currentTrackId: 0, source: { ...t.source, trackId: 0 }, mediaAvailability: E };
                 }
                 getApiEndpointForPlayerSource(e) {
                     switch (e.type) {
@@ -226,8 +233,8 @@
             var u = r(150078),
                 O = r(842337);
             const I = "error",
-                T = "playback";
-            const m = class {
+                m = "playback";
+            const T = class {
                 constructor(e, t, r, o, i) {
                     (this.dispatch = e), (this.httpClient = t), (this.twitterAuthedHttpClient = r), (this.playerId = o), (this.showGeolocationPrompt = i);
                 }
@@ -311,12 +318,12 @@
                     return t
                         ? this.httpClient.dispatch({ method: "GET", path: t, host: "", withCredentials: !0 }).then(
                               () => Promise.resolve(e),
-                              () => Promise.reject({ type: T, payload: r }),
+                              () => Promise.reject({ type: m, payload: r }),
                           )
-                        : Promise.reject({ type: T, payload: r });
+                        : Promise.reject({ type: m, payload: r });
                 }
                 handleRejectedPromises(e) {
-                    if (e.type === T) return Promise.resolve(e.payload);
+                    if (e.type === m) return Promise.resolve(e.payload);
                     {
                         const t = e.reason ? new Error(e.reason) : e;
                         return Promise.reject(t);
@@ -365,7 +372,7 @@
                         return void 0 !== t ? { type: "url", url: t.getAttribute("url") } : void 0 !== r ? { type: "watch", url: r.getAttribute("url") } : void 0;
                     }
                 },
-                v = (e, t, r, s, a, n, c) => [new h(r, c), new o.Z(r), new i.ZP(r, n), new A(t), new m(e, t, r, s, a)],
+                v = (e, t, r, s, a, n, c) => [new h(r, c), new o.Z(r), new i.ZP(r, n), new A(t), new T(e, t, r, s, a)],
                 y = (e, t, r, o) => {
                     const i = Promise.resolve({ source: e, videoConfig: t });
                     return r.reduce((e, t) => e.then((e) => t.load(e, o)), i);
@@ -418,4 +425,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loaders.video.PlayerBase-762d0b99.aaefad4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loaders.video.PlayerBase-762d0b99.aa7a1afa.js.map

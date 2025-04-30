@@ -6986,6 +6986,7 @@
                 o("ed672bfa", "All upgrades from Basic and Premium, plus ..."),
                 o("db63fa1c", "Select a premium plan"),
                 o("b128c6bc", "Get a verified badge and dozens of other awesome perks and benefits"),
+                o("a9904a1c", "Save on X Premium for a limited time"),
                 o("acfaf7a0", "Compare tiers & features"),
                 o("e1606e52", "Change your subscription"),
                 o("d2f2b91a", "sign up here"),
@@ -7851,8 +7852,7 @@
                 o("h37f2d96", "Please note not all applicant tracking systems are currently supported."),
                 o("ce102a20", "Redirecting to Stripe"),
                 o("ddfd6718", "Payment Failed"),
-                o("i90ea7d2", "Please urgently update your billing to keep your benefits."),
-                o("a62359e6", "Verified Organization Settings");
+                o("i90ea7d2", "Please urgently update your billing to keep your benefits.");
             function n(e, a) {
                 for (var t = 0; t < a.length; t++) {
                     var o = a[t];
@@ -7891,7 +7891,8 @@
                     u(e, a)
                 );
             }
-            o("ge221b7c", "Upgrade Verified Organization subscription to get access to affiliates and more ad credits."),
+            o("a62359e6", "Verified Organization Settings"),
+                o("ge221b7c", "Upgrade Verified Organization subscription to get access to affiliates and more ad credits."),
                 o("i4dccc18", "Billing"),
                 o("ec3cd6e4", "Manage your payment method, update billing information, and review your invoices."),
                 o("dac61c3c", "Account settings"),
@@ -8893,11 +8894,11 @@
                 o("d1386940", "Egon jakinaren gainean"),
                 o("ecda5f9e", "Engainagarria"),
                 o("a423473c", "Legez eskatzen den oharra"),
-                o("b3296688", "Visibility Limited"),
-                o("ccd32094", "Orain");
-            o("abfcce0d", function (e) {
-                return "Duela " + e.amountOfTime;
-            }),
+                o("b3296688", "Visibility Limited");
+            o("ccd32094", "Orain"),
+                o("abfcce0d", function (e) {
+                    return "Duela " + e.amountOfTime;
+                }),
                 o("ae408b76", "You reposted"),
                 o("j355f008", "Pinned post"),
                 o("habf9678", "Egileak finkatuta"),
@@ -13213,4 +13214,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/eu.7347f89a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/eu.1d886bea.js.map

@@ -6982,6 +6982,7 @@
                 i("ed672bfa", "Semua yang ada pada Dasar dan Premium, serta ..."),
                 i("db63fa1c", "Pilih paket premium"),
                 i("b128c6bc", "Dapatkan lencana terverifikasi dan puluhan keuntungan menarik lainnya"),
+                i("a9904a1c", "Hemat X Premium sebelum penawaran berakhir"),
                 i("acfaf7a0", "Bandingkan tingkatan & fitur"),
                 i("e1606e52", "Ubah langganan Anda"),
                 i("d2f2b91a", "daftar di sini"),
@@ -7847,8 +7848,7 @@
                 i("h37f2d96", "Harap diperhatikan bahwa belum semua sistem pelacakan pelamar didukung saat ini."),
                 i("ce102a20", "Mengalihkan ke Stripe"),
                 i("ddfd6718", "Pembayaran Gagal"),
-                i("i90ea7d2", "Harap langsung perbarui penagihan Anda agar tidak kehilangan manfaat."),
-                i("a62359e6", "Pengaturan Organisasi Terverifikasi");
+                i("i90ea7d2", "Harap langsung perbarui penagihan Anda agar tidak kehilangan manfaat.");
             function r(a, n) {
                 for (var e = 0; e < n.length; e++) {
                     var i = n[e];
@@ -7887,7 +7887,8 @@
                     d(a, n)
                 );
             }
-            i("ge221b7c", "Tingkatkan langganan Organisasi Terverifikasi untuk mendapatkan akses ke afiliasi dan lebih banyak kredit iklan."),
+            i("a62359e6", "Pengaturan Organisasi Terverifikasi"),
+                i("ge221b7c", "Tingkatkan langganan Organisasi Terverifikasi untuk mendapatkan akses ke afiliasi dan lebih banyak kredit iklan."),
                 i("i4dccc18", "Penagihan"),
                 i("ec3cd6e4", "Kelola metode pembayaran Anda, perbarui informasi tagihan, dan tinjau faktur Anda."),
                 i("dac61c3c", "Pengaturan akun"),
@@ -8889,11 +8890,11 @@
                 i("d1386940", "Ikuti info terbaru"),
                 i("ecda5f9e", "Menyesatkan"),
                 i("a423473c", "Pemberitahuan Wajib secara Hukum"),
-                i("b3296688", "Visibilitas Terbatas"),
-                i("ccd32094", "Sekarang");
-            i("abfcce0d", function (a) {
-                return a.amountOfTime + " yang lalu";
-            }),
+                i("b3296688", "Visibilitas Terbatas");
+            i("ccd32094", "Sekarang"),
+                i("abfcce0d", function (a) {
+                    return a.amountOfTime + " yang lalu";
+                }),
                 i("ae408b76", "Anda memposting ulang"),
                 i("j355f008", "Postingan tersemat"),
                 i("habf9678", "Disematkan oleh Penulis"),
@@ -13205,4 +13206,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/id.fd4df4fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/id.3164084a.js.map

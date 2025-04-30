@@ -6982,6 +6982,7 @@
                 o("ed672bfa", "Todas las actualizaciones de los planes Básico y Premium, más..."),
                 o("db63fa1c", "Selecciona un plan premium"),
                 o("b128c6bc", "Obtén una insignia de verificación y decenas de increíbles ventajas y beneficios adicionales."),
+                o("a9904a1c", "Ahorra en X Premium por tiempo limitado"),
                 o("acfaf7a0", "Comparar niveles y funciones"),
                 o("e1606e52", "Cambia tu suscripción"),
                 o("d2f2b91a", "registrarse aquí"),
@@ -7847,8 +7848,7 @@
                 o("h37f2d96", "Ten en cuenta que actualmente no se admiten todos los sistemas de seguimiento de candidatos."),
                 o("ce102a20", "Redirigiendo a Stripe"),
                 o("ddfd6718", "Error en el pago"),
-                o("i90ea7d2", "Actualiza tu facturación de inmediato para mantener tus beneficios."),
-                o("a62359e6", "Configuración de Organizaciones verificadas");
+                o("i90ea7d2", "Actualiza tu facturación de inmediato para mantener tus beneficios.");
             function s(e, a) {
                 for (var n = 0; n < a.length; n++) {
                     var o = a[n];
@@ -7887,7 +7887,8 @@
                     i(e, a)
                 );
             }
-            o("ge221b7c", "Actualiza la suscripción de Organización verificada para obtener acceso a las cuentas afiliadas y a más créditos de anuncios."),
+            o("a62359e6", "Configuración de Organizaciones verificadas"),
+                o("ge221b7c", "Actualiza la suscripción de Organización verificada para obtener acceso a las cuentas afiliadas y a más créditos de anuncios."),
                 o("i4dccc18", "Facturación"),
                 o("ec3cd6e4", "Administra tu forma de pago, actualiza la información de pago y revisa tus facturas."),
                 o("dac61c3c", "Configuración de la cuenta"),
@@ -8889,11 +8890,11 @@
                 o("d1386940", "Mantente informado"),
                 o("ecda5f9e", "Engañoso"),
                 o("a423473c", "Aviso obligatorio por ley"),
-                o("b3296688", "Visibilidad limitada"),
-                o("ccd32094", "Ahora");
-            o("abfcce0d", function (e) {
-                return "Hace " + e.amountOfTime;
-            }),
+                o("b3296688", "Visibilidad limitada");
+            o("ccd32094", "Ahora"),
+                o("abfcce0d", function (e) {
+                    return "Hace " + e.amountOfTime;
+                }),
                 o("ae408b76", "Reposteaste"),
                 o("j355f008", "Post fijado"),
                 o("habf9678", "Anclado por el autor"),
@@ -13218,4 +13219,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/es.ed9d667a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/es.54b4ae5a.js.map

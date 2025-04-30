@@ -3555,7 +3555,7 @@
                 t("c90fe716", "Möchtest du deine Konversationen löschen?"),
                 t("a8d516a4", "X kann deine öffentlichen X Daten sowie deine Nutzerinteraktionen, Eingaben und Ergebnisse bei Grok auf X an xAI weiterleiten, damit Grok und andere von xAI entwickelte KI-Modelle damit trainiert und näher abgestimmt werden können. Das hilft uns bei der kontinuierlichen Verbesserung deiner Nutzung."),
                 t("a127886c", "Grok erlauben, sich an deinen Konversationsverlauf zu erinnern"),
-                t("f49b39b8", "Erlaube Grok, sich an Details aus deinen früheren Konversationen zu erinnern. Du kannst individuelle Konversationen löschen, damit die verknüpften Details vergessen werden."),
+                t("f49b39b8", "Erlaube Grok, sich an Details aus deinen früheren Konversationen zu erinnern. Du kannst einzelne Konversationen löschen, damit die verknüpften Details vergessen werden."),
                 t("b7de9ad2", "X erlauben, deine Nutzung von Grok zu personalisieren"),
                 t("ed141096", "Erlauben, dass deine X Daten sowie deine Interaktionen, Eingaben und Ergebnisse bei Grok zur Personalisierung deiner Grok-Nutzung herangezogen werden. X kann deine X Daten sowie deine Nutzerinteraktionen, Eingaben und Ergebnisse bei Grok an xAI weiterleiten, damit deine Nutzung von Grok und anderen von xAI entwickelten KI-Modelle personalisiert werden kann. Das hilft uns bei der kontinuierlichen Verbesserung deiner Nutzung. "),
                 t("ecdbece0", "Du wurdest erfolgreich für das Münzenprogramm registriert."),
@@ -4164,9 +4164,9 @@
                 t("e9b6d404", "Auf welche Suchtools sollte Grok Zugriff haben?"),
                 t("h15dce2e", "Erweiterte Einstellungen"),
                 t("ff9dc268", "Prompt bearbeiten"),
-                t("e9fcdd0c", "Grok bitten, das Web aggressiv zu durchsuchen"),
+                t("e9fcdd0c", "Grok bitten, das Web detailliert zu durchsuchen"),
                 t("fc4e8aba", "Grok bitten, Schritt für Schritt zu argumentieren"),
-                t("e4ae6abe", "Grok bitten, dein Bild zu verwandeln"),
+                t("e4ae6abe", "Grok bitten, dein Bild umzuwandeln"),
                 t("e8ade5e2", "Persönlichkeit auswählen"),
                 t("b5df32b0", "Frag Grok etwas"),
                 t("fb3b9776", "Die Grok-Ausgabe wurde von diesem/dieser Nutzer*in angepasst."),
@@ -6924,7 +6924,7 @@
                 t("h0e1730e", "Antwortpriorität"),
                 t("jf7f743c", "Längere Videos posten"),
                 t("c0c25b6c", "Lesezeichenordner"),
-                t("ab31c79e", "Angepasste App-Symbole"),
+                t("ab31c79e", "App-Symbole anpassen"),
                 t("a8a702ae", "Angepasste Navigation"),
                 t("d5ab1b50", "Verifizierungszeichen"),
                 t("ac298984", "Höhere Antwortpriorität"),
@@ -6933,7 +6933,7 @@
                 t("bf7614d4", "Gestalterabonnements"),
                 t("gadc9f4a", "Höchste Antwortpriorität"),
                 t("c127c5c2", "Keine Werbung"),
-                t("c1e0f3c8", "Grok DeepSearch und Denken"),
+                t("c1e0f3c8", "Grok DeepSearch und Denken nutzen"),
                 t("aac0bbb6", "Zugriff auf Radar"),
                 t("a6722922", "Werbefrei"),
                 t("ba016532", "Antwort-Boost"),
@@ -6979,10 +6979,11 @@
                 t("bb4998fb", function (e) {
                     return "Bis " + e.date;
                 }),
-                t("c0847ebc", "Alle Upgrades aus Basis, plus ..."),
-                t("ed672bfa", "Alle Upgrades aus Basis und Premium, plus ..."),
+                t("c0847ebc", "Alle Upgrades aus Basis plus ..."),
+                t("ed672bfa", "Alle Upgrades aus Basis und Premium plus ..."),
                 t("db63fa1c", "Premium-Plan auswählen"),
                 t("b128c6bc", "Hol dir ein Verifizierungsabzeichen und Dutzende anderer toller Vorteile"),
+                t("a9904a1c", "X Premium zum Sonderpreis für begrenzte Zeit"),
                 t("acfaf7a0", "Stufen und Funktionen vergleichen"),
                 t("e1606e52", "Abonnement ändern"),
                 t("d2f2b91a", "hier registrieren"),
@@ -7848,8 +7849,7 @@
                 t("h37f2d96", "Bitte beachte, dass derzeit nicht alle Bewerbermanagementsysteme unterstützt werden."),
                 t("ce102a20", "Weiterleitung zu Stripe"),
                 t("ddfd6718", "Zahlung fehlgeschlagen"),
-                t("i90ea7d2", "Bitte aktualisiere dringend deine Rechnungsinformationen, damit du deine Vorteile behalten kannst."),
-                t("a62359e6", "Einstellungen für Verifizierte Organisation");
+                t("i90ea7d2", "Bitte aktualisiere dringend deine Rechnungsinformationen, damit du deine Vorteile behalten kannst.");
             function a(e, n) {
                 for (var i = 0; i < n.length; i++) {
                     var t = n[i];
@@ -7888,7 +7888,8 @@
                     d(e, n)
                 );
             }
-            t("ge221b7c", "Führe ein Upgrade bei deinem Abonnement von Verifizierte Organisationen durch, wenn du Zugriff auf verbundene Accounts und ein höheres Werbeguthaben erhalten möchtest."),
+            t("a62359e6", "Einstellungen für Verifizierte Organisation"),
+                t("ge221b7c", "Führe ein Upgrade bei deinem Abonnement von Verifizierte Organisationen durch, wenn du Zugriff auf verbundene Accounts und ein höheres Werbeguthaben erhalten möchtest."),
                 t("i4dccc18", "Rechnungsstellung"),
                 t("ec3cd6e4", "Verwalte deine Zahlungsmethode, aktualisiere die Rechnungsinformationen und prüfe deine Rechnungen."),
                 t("dac61c3c", "Account-Einstellungen"),
@@ -8890,11 +8891,11 @@
                 t("d1386940", "Bleib auf dem Laufenden"),
                 t("ecda5f9e", "Irreführend"),
                 t("a423473c", "Gesetzlich vorgeschriebener Hinweis"),
-                t("b3296688", "Sichtbarkeit eingeschränkt"),
-                t("ccd32094", "Jetzt");
-            t("abfcce0d", function (e) {
-                return "vor " + e.amountOfTime;
-            }),
+                t("b3296688", "Sichtbarkeit eingeschränkt");
+            t("ccd32094", "Jetzt"),
+                t("abfcce0d", function (e) {
+                    return "vor " + e.amountOfTime;
+                }),
                 t("ae408b76", "Du hast repostet"),
                 t("j355f008", "Angehefteter Post"),
                 t("habf9678", "Angeheftet von Autor*in"),
@@ -13220,4 +13221,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/de.2abe306a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/de.60eba69a.js.map

@@ -8,7 +8,7 @@
                     return a.e("i18n/emoji-bg").then(a.t.bind(a, 49009, 23));
                 },
             });
-            function t(e, c, a) {
+            function f(e, c, a) {
                 return "one" == (1 == e ? "one" : "other") ? c : a;
             }
             n("c39b0e24", "X"),
@@ -607,11 +607,11 @@
                 n("h5e38204", "Чат"),
                 n("h7d5d9fa", "Бета"),
                 n("ga169e1b", function (e) {
-                    return "Лични съобщения (" + e.count + " непрочетен" + t(e.count, " разговор", "и разговора") + ")";
+                    return "Лични съобщения (" + e.count + " непрочетен" + f(e.count, " разговор", "и разговора") + ")";
                 }),
                 n("d83682ec", "Начало (нови непрочетени публикации)"),
                 n("e1249849", function (e) {
-                    return "Известия (" + e.count + " непрочетен" + t(e.count, "о известие", "и известия") + ")";
+                    return "Известия (" + e.count + " непрочетен" + f(e.count, "о известие", "и известия") + ")";
                 }),
                 n("c0b786ee", "Търсене и разглеждане"),
                 n("bb967f9e", "Видеоклипове"),
@@ -624,7 +624,7 @@
                 }),
                 n("j62f43a6", "Преглед на профилите с делегиране"),
                 n("d4c52015", function (e) {
-                    return e.count + " чакащ" + t(e.count, "а покана", "и покани") + " за профил за делегиране";
+                    return e.count + " чакащ" + f(e.count, "а покана", "и покани") + " за профил за делегиране";
                 }),
                 n("b8e1d524", "Профили"),
                 n("gef27c4c", "Меню на профила"),
@@ -647,7 +647,7 @@
                     return e.count + " души";
                 }),
                 n("b93ba92d", function (e) {
-                    return e.peopleCount + " " + t(e.peopleCount, "човек", "души");
+                    return e.peopleCount + " " + f(e.peopleCount, "човек", "души");
                 }),
                 n("ae2205d2", "Следвате се взаимно"),
                 n("fd06b02f", function (e) {
@@ -1254,7 +1254,7 @@
                 n("e18cb87c", "Обяснете тази публикация"),
                 n("ffe16626", "Филтърът за отговори е включен."),
                 n("jc81f6a7", function (e) {
-                    return e.count + " преглеждан" + t(e.count, "е", "ия");
+                    return e.count + " преглеждан" + f(e.count, "е", "ия");
                 }),
                 n("g521abc6", "Grok, анализ!"),
                 n("a09331e0", "Свързани статии"),
@@ -1269,7 +1269,7 @@
                     return "" + e.displayCount;
                 }),
                 n("aa037e65", function (e) {
-                    return "" + t(e.count, "показване", "Показвания");
+                    return "" + f(e.count, "показване", "Показвания");
                 }),
                 n("b8f3500a", "Преглед на нишката в Четене"),
                 n("fc7db594", "Резюме на профила"),
@@ -1295,7 +1295,7 @@
                 n("c74e87e0", "Файлът е твърде голям. Избери по-малък."),
                 n("bea50a2a", "Този файлов формат не се поддържа."),
                 n("j77292b7", function (e) {
-                    return "Моля, изберете само до " + e.count + " файл" + t(e.count, "", "а");
+                    return "Моля, изберете само до " + e.count + " файл" + f(e.count, "", "а");
                 }),
                 n("d4d35bea", "Превеждане..."),
                 n("he9c9634", "Преводът не може да се извлече"),
@@ -1416,25 +1416,25 @@
                     return "" + e.displayCount;
                 }),
                 n("f23d99b0", function (e) {
-                    return "Отметк" + t(e.count, "а", "и");
+                    return "Отметк" + f(e.count, "а", "и");
                 }),
                 n("e8866a55", function (e) {
                     return "" + e.displayCount;
                 }),
                 n("eb3abe45", function (e) {
-                    return "харесван" + t(e.count, "е", "ия");
+                    return "харесван" + f(e.count, "е", "ия");
                 }),
                 n("eff958fb", function (e) {
                     return "" + e.displayCount;
                 }),
                 n("i5a8c515", function (e) {
-                    return "цитат" + t(e.count, "", "а");
+                    return "цитат" + f(e.count, "", "а");
                 }),
                 n("dd77f9fb", function (e) {
                     return "" + e.displayCount;
                 }),
                 n("a755b81b", function (e) {
-                    return "Препубликуван" + t(e.count, "е", "ия");
+                    return "Препубликуван" + f(e.count, "е", "ия");
                 }),
                 n("e9f1fbcc", "Тук няма нищо за гледане – засега"),
                 n("a3b80be6", "Провери отново по-късно, за да видиш публикации относно това."),
@@ -1522,7 +1522,7 @@
                     return "" + e.formattedCount;
                 }),
                 n("cface2d1", function (e) {
-                    return "член" + t(e.count, "", "ове");
+                    return "член" + f(e.count, "", "ове");
                 }),
                 n("b5334780", "Чакащи"),
                 n("b171d7c4", "Присъединяване"),
@@ -1618,17 +1618,17 @@
                     return "" + e.formattedCount;
                 }),
                 n("h9f711f0", function (e) {
-                    return "последовател" + t(e.count, "", "и");
+                    return "последовател" + f(e.count, "", "и");
                 }),
                 n("jceadc3e", "Неозаглавено"),
                 n("a1d5303c", "Поверителен"),
                 n("cc8f8a80", "Скрито"),
                 n("c33a97d6", "Публично"),
                 n("i73fff1b", function (e) {
-                    return "Показване на " + e.count + " публикаци" + t(e.count, "я", "и");
+                    return "Показване на " + e.count + " публикаци" + f(e.count, "я", "и");
                 }),
                 n("a682906d", function (e) {
-                    return "Още " + e.count + " харесван" + t(e.count, "е", "ия");
+                    return "Още " + e.count + " харесван" + f(e.count, "е", "ия");
                 }),
                 n("g566e973", function (e) {
                     return e.jobCount + " свободни работни позиции" + e.tcc_organization_open_job_count;
@@ -1746,7 +1746,7 @@
                 n("g345246c", "Това е публикувана статия, нов начин за писане в X."),
                 n("b14efa0a", "Изображение на корицата на статията"),
                 n("afdccedb", function (e) {
-                    return "Показване на " + e.displayCount + " отговор" + t(e.count, "", "а");
+                    return "Показване на " + e.displayCount + " отговор" + f(e.count, "", "а");
                 }),
                 n("bdba3e1a", "Включване на известията за публикации"),
                 n("c4da7d28", "Изключване на известията за публикации"),
@@ -1954,10 +1954,10 @@
                 n("ifea3114", "Споделяне"),
                 n("b384f696", "Препоръчваме заглавието да бъде между 50 – 70 знака"),
                 n("a7da0adb", function (e) {
-                    return e.count + " дум" + t(e.count, "а", "и");
+                    return e.count + " дум" + f(e.count, "а", "и");
                 }),
                 n("aea1d455", function (e) {
-                    return e.count + " минут" + t(e.count, "а", "и");
+                    return e.count + " минут" + f(e.count, "а", "и");
                 }),
                 n("df898d71", function (e) {
                     return e.readingTimeValue + " време за четене";
@@ -2032,18 +2032,18 @@
                 n("e289d950", "Трябва да влезеш в профила си, преди да можеш да споделиш тази публикация."),
                 n("d28215f0", "Съжаляваме, анкетите не са разрешени в общностите!"),
                 n("ec2fc089", function (e) {
-                    return "Твоята/ите публикаци" + t(e.numOfTweets, "я беше", "и бяха") + " изпратена/и на " + e.communityName;
+                    return "Твоята/ите публикаци" + f(e.numOfTweets, "я беше", "и бяха") + " изпратена/и на " + e.communityName;
                 }),
                 n("c7152355", function (e) {
-                    return "Не забравяй да направиш изображени" + t(e.numberOfImages, "ето", "ята") + " достъпно";
+                    return "Не забравяй да направиш изображени" + f(e.numberOfImages, "ето", "ята") + " достъпно";
                 }),
                 n("ffa5562a", "Добрите описания на изображения са сбити, но описателни. Ако има текст в изображението, се погрижи да го преразкажеш или препишеш."),
                 n("a2d3facd", function (e) {
-                    return "Описани" + t(e.numberOfImages, "ето ти прави", "ята ти правят") + " X достъпен за хора с увреждания и за всички, които се нуждаят от повече контекст.";
+                    return "Описани" + f(e.numberOfImages, "ето ти прави", "ята ти правят") + " X достъпен за хора с увреждания и за всички, които се нуждаят от повече контекст.";
                 }),
                 n("cc6d0a48", "Можеш да изключиш това напомняне в настройките за достъпност."),
                 n("j499fbcb", function (e) {
-                    return "Добави описани" + t(e.numberOfImages, "е", "я");
+                    return "Добави описани" + f(e.numberOfImages, "е", "я");
                 }),
                 n("bb8170da", "Не сега"),
                 n("h4dd544e", "Твоята публикация беше изпратена."),
@@ -2105,14 +2105,14 @@
                 n("cce30dcc", "Отбелязване на местоположението"),
                 n("ee016dd6", "За качването на дълги видеоклипове е нужно известно време. Не затваряй раздела на браузъра, за да не прекъснеш качването."),
                 n("b7d8e3f1", function (e) {
-                    return e.numberOfAltTextEntries + " изображение описани" + t(e.numberOfAltTextEntries, "е", "я");
+                    return e.numberOfAltTextEntries + " изображение описани" + f(e.numberOfAltTextEntries, "е", "я");
                 }),
                 n("d1175c78", "Отбелязване на хора"),
                 n("b2943227", function (e) {
-                    return "Качване на надписи файл" + t(e.numberOfVideos, "", "а") + " (.srt)";
+                    return "Качване на надписи файл" + f(e.numberOfVideos, "", "а") + " (.srt)";
                 }),
                 n("d0afbb37", function (e) {
-                    return e.numberOfSubtitles + " надпис файл" + t(e.numberOfSubtitles, "", "а");
+                    return e.numberOfSubtitles + " надпис файл" + f(e.numberOfSubtitles, "", "а");
                 }),
                 n("e349147c", "Какво се случва?"),
                 n("b4481d6c", "Сподели какво мислиш..."),
@@ -2131,7 +2131,7 @@
                     return "" + e.formattedCount;
                 }),
                 n("a7daec1e", function (e) {
-                    return "" + t(e.count, "човек", "души");
+                    return "" + f(e.count, "човек", "души");
                 }),
                 n("f0598964", "Искаш да споделяш с по-малко хора?"),
                 n("e1ae1c0a", "Кръгът в X ти дава възможност да изпращаш публикации само до избрани от теб хора."),
@@ -2202,7 +2202,7 @@
                     return e.userOneName + " " + e.userTwoName + " и " + e.userThreeName;
                 }),
                 n("h758cd23", function (e) {
-                    return e.userOneName + " " + e.userTwoName + " и още " + t(e.othersCount, "1 човек", e.othersCount + " души");
+                    return e.userOneName + " " + e.userTwoName + " и още " + f(e.othersCount, "1 човек", e.othersCount + " души");
                 }),
                 n("fba61ad6", function (e) {
                     return "" + e.userName;
@@ -2214,7 +2214,7 @@
                     return e.userOneName + ", " + e.userTwoName + " и " + e.userThreeName;
                 }),
                 n("b8168f25", function (e) {
-                    return e.userOneName + " " + e.userTwoName + " и още " + t(e.othersCount, "1 човек", e.othersCount + " души");
+                    return e.userOneName + " " + e.userTwoName + " и още " + f(e.othersCount, "1 човек", e.othersCount + " души");
                 }),
                 n("ab67a7ac", function (e) {
                     return "" + e.userName;
@@ -2229,7 +2229,7 @@
                 }),
                 n("dcbb6a0b", "абонатите"),
                 n("ba74e38b", function (e) {
-                    return e.userOneName + " " + e.userTwoName + " и още " + t(e.othersCount, "1 човек", e.othersCount + " души");
+                    return e.userOneName + " " + e.userTwoName + " и още " + f(e.othersCount, "1 човек", e.othersCount + " души");
                 }),
                 n("c65916af", "абонатите"),
                 n("g5c5ebb8", function (e) {
@@ -2263,13 +2263,13 @@
                     return "" + e.trustedFriendsTweetOwner;
                 }),
                 n("a035ba65", function (e) {
-                    return e.userOneName + " " + e.userTwoName + " и още " + t(e.othersCount, "1 човек", e.othersCount + " души");
+                    return e.userOneName + " " + e.userTwoName + " и още " + f(e.othersCount, "1 човек", e.othersCount + " души");
                 }),
                 n("e4c52c45", function (e) {
                     return "" + e.trustedFriendsTweetOwner;
                 }),
                 n("baf2c639", function (e) {
-                    return e.userOneName + " " + e.userTwoName + " и още " + t(e.othersCount, "1 човек", e.othersCount + " души");
+                    return e.userOneName + " " + e.userTwoName + " и още " + f(e.othersCount, "1 човек", e.othersCount + " души");
                 }),
                 n("j8e134e5", function (e) {
                     return "" + e.trustedFriendsTweetOwner;
@@ -2302,10 +2302,10 @@
                 n("ceb1ad26", "Представяме видеоклипове с възможност за изтегляне"),
                 n("ea97bc08", "Стани офлайн или ремиксирай! Потребителите на Premium вече имат силата да изтеглят и да претворяват твоето съдържание. Ако не искаш видеоклиповете ти да се изтеглят, натисни „Редактиране“ на видеото си. Твоето съдържание, твоите правила."),
                 n("e6042757", function (e) {
-                    return "Остава(т) " + e.minutes + " минут" + t(e.minutes, "а", "и") + " и " + e.seconds + " секунд" + t(e.seconds, "а", "и") + " за редактиране на публикацията";
+                    return "Остава(т) " + e.minutes + " минут" + f(e.minutes, "а", "и") + " и " + e.seconds + " секунд" + f(e.seconds, "а", "и") + " за редактиране на публикацията";
                 }),
                 n("a4e39717", function (e) {
-                    return "Остава(т) " + e.minutes + " минут" + t(e.minutes, "а", "и") + " за редактиране на публикацията";
+                    return "Остава(т) " + e.minutes + " минут" + f(e.minutes, "а", "и") + " за редактиране на публикацията";
                 }),
                 n("c55eed72", "Отговор до"),
                 n("caca3102", "Други хора в този разговор"),
@@ -2338,7 +2338,7 @@
                 n("j74e5dd4", "Публикацията, на която се опитваш да отговориш, е изтрита"),
                 n("c5ceafc8", "Отговаря се"),
                 n("f501ba43", function (e) {
-                    return "още " + e.count + " публикаци" + t(e.count, "я", "и");
+                    return "още " + e.count + " публикаци" + f(e.count, "я", "и");
                 }),
                 n("b321d0cc", "Зареждане на изображения"),
                 n("abd649ce", "Отхвърляне на неизпратена публикация"),
@@ -2523,7 +2523,7 @@
                     return "" + e.displayCoins;
                 }),
                 n("g62dcfbc", function (e) {
-                    return "Монет" + t(e.count, "а", "и");
+                    return "Монет" + f(e.count, "а", "и");
                 }),
                 n("be059f7e", "Достигни до още 100 хил. потребители още сега"),
                 n("c34f845e", "Опитай да приоритизираш тази публикация!"),
@@ -2559,7 +2559,7 @@
                 n("d555d7e0", "Новата парола не може да съвпада със сегашната ти."),
                 n("fa8af9ae", "Паролите не съвпадат."),
                 n("a03f5c73", function (e) {
-                    return e.applicationCount + " приложени" + t(e.applicationCount, "е", "я");
+                    return e.applicationCount + " приложени" + f(e.applicationCount, "е", "я");
                 }),
                 n("j25601d9", "Научи повече"),
                 n("cb841d56", "Смяна на телефона"),
@@ -2721,10 +2721,10 @@
                     return e.price + " /година";
                 }),
                 n("i57aeafb", function (e) {
-                    return "За първи" + t(e.duration, "я месец", "те " + e.duration + " месеца") + ", след това " + e.standardPrice + ", плащани месечно";
+                    return "За първи" + f(e.duration, "я месец", "те " + e.duration + " месеца") + ", след това " + e.standardPrice + ", плащани месечно";
                 }),
                 n("ae3e3723", function (e) {
-                    return "За първ" + t(e.duration, "ата година", "ите " + e.duration + " години") + ", след това " + e.standardPrice + ", плащани ежегодно";
+                    return "За първ" + f(e.duration, "ата година", "ите " + e.duration + " години") + ", след това " + e.standardPrice + ", плащани ежегодно";
                 }),
                 n("ade4c757", function (e) {
                     return "След това " + e.price + "/месец";
@@ -2756,10 +2756,10 @@
                 n("fb3c7168", "Твоите папки за отметки"),
                 n("b346bc12", "Отметка"),
                 n("je8143e1", function (e) {
-                    return "Вземи" + e.percentage + "% отстъпка от X " + e.productName + " за " + t(e.duration, "един месец", e.duration + " месеца");
+                    return "Вземи" + e.percentage + "% отстъпка от X " + e.productName + " за " + f(e.duration, "един месец", e.duration + " месеца");
                 }),
                 n("j5847735", function (e) {
-                    return "Вземи" + e.percentage + "% отстъпка от X " + e.productName + " за " + t(e.duration, "една година", e.duration + " години");
+                    return "Вземи" + e.percentage + "% отстъпка от X " + e.productName + " за " + f(e.duration, "една година", e.duration + " години");
                 }),
                 n("da3431f9", function (e) {
                     return "Тази отстъпка е малък подарък от нас, в случай че искаш да запазиш X " + e.productName + " за още малко!";
@@ -3012,15 +3012,15 @@
                 n("b956c04a", "Наистина ли искаш да изтриеш разширеното си описание?"),
                 n("ifb23caa", "Изтриването на разширеното описание ще го премахне от профила ти."),
                 n("c2333081", function (e) {
-                    return e.count + " знак" + t(e.count, "", "а");
+                    return e.count + " знак" + f(e.count, "", "а");
                 }),
                 n("a2b8c54c", "Изтрито"),
                 n("a9cc8f96", "Максималният брой знаци е надвишен"),
                 n("eb7710f1", function (e) {
-                    return e.years + " годин" + t(e.years, "а", "и");
+                    return e.years + " годин" + f(e.years, "а", "и");
                 }),
                 n("bfc38bb5", function (e) {
-                    return e.months + " месец" + t(e.months, "", "а");
+                    return e.months + " месец" + f(e.months, "", "а");
                 }),
                 n("h6a724ac", "Сигурен/на ли си, че искаш да изтриеш това?"),
                 n("f94aacae", "Изтриването ще го премахне от профила ти."),
@@ -3152,7 +3152,7 @@
                 n("c349b958", "Поканване на член"),
                 n("e177f72a", "Можеш да каниш други хора, които да действат от името на профила ти, и да управляваш ролите в профила. Членовете могат да изпращат лични съобщения, да публикуват публикации и да създават списъци, както и да ги разглеждат."),
                 n("cd5c5e73", function (e) {
-                    return "Може да имаш само " + e.numDelegatesLabel + " делегиран" + t(e.numDelegates, "е", "ия");
+                    return "Може да имаш само " + e.numDelegatesLabel + " делегиран" + f(e.numDelegates, "е", "ия");
                 }),
                 n("efee0a50", "Поканване на член в този профил"),
                 n("ja0a1aa6", "Поканване на сътрудник в този профил"),
@@ -3359,7 +3359,7 @@
                 n("ee9ea930", "Диаманти"),
                 n("cf3b535e", "Диамантите се натрупват чрез получаване на монети за отговарящи на условията публикации. Парите, спечелени от диаманти, се добавят към очакваните ти приходи."),
                 n("fbb7764b", function (e) {
-                    return e.count + " Монет" + t(e.count, "а", "и");
+                    return e.count + " Монет" + f(e.count, "а", "и");
                 }),
                 n("e70a07b2", "Анонимен"),
                 n("c76972f0", "От последното изплащане"),
@@ -3698,19 +3698,19 @@
                 n("ea522535", "Научи повече"),
                 n("hf5ca8f8", "профила си"),
                 n("d9cbe351", function (e) {
-                    return e.count + " влизанесъбити" + t(e.count, "е", "я");
+                    return e.count + " влизанесъбити" + f(e.count, "е", "я");
                 }),
                 n("de90b04a", "Места, посетени от теб"),
                 n("cbd2ef59", function (e) {
-                    return e.count + " местоположени" + t(e.count, "е", "я");
+                    return e.count + " местоположени" + f(e.count, "е", "я");
                 }),
                 n("a4441bb8", "Интереси от X"),
                 n("e1c6b2d6", "Персонализирани аудитории"),
                 n("ed19d10d", function (e) {
-                    return e.audienceCount + " аудитори" + t(e.audienceCount, "я", "и") + " от " + e.advertiserCount + " рекламодател" + t(e.advertiserCount, "", "я");
+                    return e.audienceCount + " аудитори" + f(e.audienceCount, "я", "и") + " от " + e.advertiserCount + " рекламодател" + f(e.advertiserCount, "", "я");
                 }),
                 n("f00d0d03", function (e) {
-                    return e.count + " интерес" + t(e.count, "", "а");
+                    return e.count + " интерес" + f(e.count, "", "а");
                 }),
                 n("hf9c2caa", "Да се поиска ли списък с рекламодатели?"),
                 n("c29b7971", function (e) {
@@ -3733,11 +3733,11 @@
                 n("jd8607ba", "Активиран на"),
                 n("ea4f6c9e", "Браузъри"),
                 n("d750b93f", function (e) {
-                    return e.count + " браузър" + t(e.count, "", "а");
+                    return e.count + " браузър" + f(e.count, "", "а");
                 }),
                 n("a9783602", "Мобилни устройства"),
                 n("j043aa31", function (e) {
-                    return e.count + " мобилн" + t(e.count, "о устройство", "и устройства");
+                    return e.count + " мобилн" + f(e.count, "о устройство", "и устройства");
                 }),
                 n("ae415fd2", "Тази настройка е изключена."),
                 n("a90be7b4", "Имейл адреси"),
@@ -3810,7 +3810,7 @@
                 n("e5d26f84", "Не пропускай нищо от случващото се, като активираш известията от X. X ще получи информация за езика и държавата на устройството ти, за да персонализира известията за теб."),
                 n("f91f00ba", "Създаване на аудиоклип"),
                 n("f9b2d343", function (e) {
-                    return e.count + " публикаци" + t(e.count, "я", "и");
+                    return e.count + " публикаци" + f(e.count, "я", "и");
                 }),
                 n("jcc8306e", "Заявка за говорене"),
                 n("j41fd45a", "Заявката е изпратена"),
@@ -3860,7 +3860,7 @@
                 n("c855ab8e", "Само за абонати"),
                 n("ddeb0a3c", "Това е Общността. Харесват ли ти хората? Разгледай наоколо."),
                 n("e111f531", function (e) {
-                    return e.count + " се включи" + t(e.count, "", "ха");
+                    return e.count + " се включи" + f(e.count, "", "ха");
                 }),
                 n("cbef820f", function (e) {
                     return e.screenName + " препубликува потока!";
@@ -3883,22 +3883,22 @@
                     return "Изпращане на покана на " + e.name;
                 }),
                 n("f5c7aaa7", function (e) {
-                    return "домакин" + t(e.count, "", "и");
+                    return "домакин" + f(e.count, "", "и");
                 }),
                 n("fc56c8b1", function (e) {
-                    return "съдомакин" + t(e.count, "", "и");
+                    return "съдомакин" + f(e.count, "", "и");
                 }),
                 n("iba0f45d", function (e) {
-                    return "говорител" + t(e.count, "", "и");
+                    return "говорител" + f(e.count, "", "и");
                 }),
                 n("dc066955", function (e) {
-                    return "слушател" + t(e.count, "", "и");
+                    return "слушател" + f(e.count, "", "и");
                 }),
                 n("b53ed9ab", function (e) {
-                    return e.participantCount + " " + e.title + " · " + e.remainingCapacityCount + " отворени м" + t(e.remainingCapacityCount, "ясто", "еста");
+                    return e.participantCount + " " + e.title + " · " + e.remainingCapacityCount + " отворени м" + f(e.remainingCapacityCount, "ясто", "еста");
                 }),
                 n("c3b5b829", function (e) {
-                    return e.count + " заявк" + t(e.count, "а", "и");
+                    return e.count + " заявк" + f(e.count, "а", "и");
                 }),
                 n("fe7a1910", "Изпращане на покани"),
                 n("ic3c757e", "Търсене на потребители"),
@@ -3951,7 +3951,7 @@
                 n("c4fdbd16", "Не можеш да изпращаш съобщения до потребители, блокирани от теб."),
                 n("hf3e7e38", "Съобщението ти не можа да бъде изпратено."),
                 n("dd8272fd", function (e) {
-                    return e.count + " нов/и нов" + t(e.count, "о съобщение", "и съобщения");
+                    return e.count + " нов/и нов" + f(e.count, "о съобщение", "и съобщения");
                 }),
                 n("e2cd3b7c", "Аудио разговорът приключи"),
                 n("f42f365a", "Видео разговорът приключи"),
@@ -4006,7 +4006,7 @@
                     return "Вчера, " + e.time;
                 }),
                 n("h95f9e77", function (e) {
-                    return e.reactionCount + " реакци" + t(e.reactionCount, "я", "и");
+                    return e.reactionCount + " реакци" + f(e.reactionCount, "я", "и");
                 }),
                 n("c0098d4a", "Реакции"),
                 n("j85999ec", "Списък с реакциите на потребителите"),
@@ -4017,13 +4017,13 @@
                 n("e8bd8fec", "Изпратено"),
                 n("b2d32fae", "Видяно от всички"),
                 n("a763d33f", function (e) {
-                    return "Видяно от " + e.count + " " + t(e.count, "човек", "души");
+                    return "Видяно от " + e.count + " " + f(e.count, "човек", "души");
                 }),
                 n("d84b485e", "Ти последва този профил"),
                 n("be0c83d8", "Ти прие заявката"),
                 n("bcc13060", "Ранен достъп"),
                 n("e535cae9", function (e) {
-                    return e.count + " последовател" + t(e.count, "", "и");
+                    return e.count + " последовател" + f(e.count, "", "и");
                 }),
                 n("cf249089", function (e) {
                     return "Присъединяване: " + e.joinDate;
@@ -4075,7 +4075,7 @@
                 n("a30a206e", "Разбрах!"),
                 n("ib4b1b86", "Представяме закачени разговори"),
                 n("bd3ca2ef", function (e) {
-                    return "Избери менюто за действие върху разговор, за да го закачиш в началото за лесен достъп. Можеш да закачиш до " + e.count + " разговор" + t(e.count, "", "а") + ".";
+                    return "Избери менюто за действие върху разговор, за да го закачиш в началото за лесен достъп. Можеш да закачиш до " + e.count + " разговор" + f(e.count, "", "а") + ".";
                 }),
                 n("e1c9ec9c", "Закачане на разговора"),
                 n("e3cfff7c", "Отлагане на разговора"),
@@ -4095,7 +4095,7 @@
                 n("hd3927c6", "Разговорът не бе откачен. Опитай отново."),
                 n("f1ac0968", "Разговорът не бе откачен. Провери връзката си и опитай отново."),
                 n("d571e4f9", function (e) {
-                    return "Можеш да фиксираш само " + e.count + " разговор" + t(e.count, "", "а");
+                    return "Можеш да фиксираш само " + e.count + " разговор" + f(e.count, "", "а");
                 }),
                 n("a551bf7e", "Трябва да откачиш един разговор, за да закачиш друг."),
                 n("a676a876", "Приветстваме те във „Входящи“!"),
@@ -4116,16 +4116,16 @@
                 n("bece84b4", "Нямаш заявки за съобщения"),
                 n("e51be7c1", "Научи повече"),
                 n("f041be05", function (e) {
-                    return e.stringCount + " pending request" + t(e.count, "", "s");
+                    return e.stringCount + " pending request" + f(e.count, "", "s");
                 }),
                 n("a2fad0f3", function (e) {
-                    return e.stringCount + " new pe" + t(e.count, "rson", "ople") + " you may know";
+                    return e.stringCount + " new pe" + f(e.count, "rson", "ople") + " you may know";
                 }),
                 n("cbddf365", function (e) {
-                    return e.stringCount + " pe" + t(e.count, "rson", "ople") + " you may know";
+                    return e.stringCount + " pe" + f(e.count, "rson", "ople") + " you may know";
                 }),
                 n("fac945ad", function (e) {
-                    return e.stringCount + " new request" + t(e.count, "", "s");
+                    return e.stringCount + " new request" + f(e.count, "", "s");
                 }),
                 n("ed93de0c", "Анализиране на публикацията"),
                 n("ba44f4ea", "Повече подробности от Grok"),
@@ -4267,7 +4267,7 @@
                 n("fa0f1262", "Почивка"),
                 n("c2cac618", "В момента Grok поддържа данни за La Liga, Premier League, Bundesliga, Series A и Ligue 1."),
                 n("acae223d", function (e) {
-                    return 'Results for "' + e.prompt + '"';
+                    return "Резултати за „" + e.prompt + "“";
                 }),
                 n("bed99fe2", "Показване на по-малко"),
                 n("f7b57ac0", "Статистика"),
@@ -4325,7 +4325,7 @@
                 n("ef018bf6", "Анализиране на повече изображения с Premium"),
                 n("cdace6d2", "Надстройване още сега"),
                 n("a3186bff", function (e) {
-                    return e.count + " уеб страниц" + t(e.count, "а", "и");
+                    return e.count + " уеб страниц" + f(e.count, "а", "и");
                 }),
                 n("f4146dda", "Кой отговор предпочиташ?"),
                 n("a2c2be32", "Това ще помогне да направим Grok по-добър."),
@@ -4796,12 +4796,12 @@
                 n("e7479ce4", "Средно време на гледане"),
                 n("g1dfa7d0", "Средно"),
                 n("h7d28188", "Назад към съдържанието"),
-                n("if2704e4", "Back to Live Overview"),
+                n("if2704e4", "Назад към общия преглед на живо"),
                 n("ea928ae4", "Назад към Залите"),
-                n("e8c07c22", "broadcast"),
-                n("a4ce6e68", "Broadcast Metrics"),
-                n("b2214c74", "Total number of views for this broadcast"),
-                n("d4fcf83a", "Total time viewers spent watching this broadcast"),
+                n("e8c07c22", "предаване на живо"),
+                n("a4ce6e68", "Метрики за предаване на живо"),
+                n("b2214c74", "Общият брой гледания на това предаване на живо"),
+                n("d4fcf83a", "Общото време, което са прекарали зрителите в гледане на това предаване на живо"),
                 n("a89b0322", "Анулирано"),
                 n("j3cb12ea", "Едновременни слушатели"),
                 n("b93931ee", "Броят пъти, когато съдържанието ти е публикувано."),
@@ -4837,19 +4837,19 @@
                 n("efa0f858", "Броят следвания и спирания на следвания във времето. Това не отразява задължително броя ти последователи."),
                 n("g2b06cc6", "Данните за пола може да са предполагаеми"),
                 n("b66b3baa", "часа"),
-                n("cf8a0772", "Impression to Views"),
-                n("g13d8010", "Last 48 Hours"),
-                n("d5627596", "Last Hour"),
+                n("cf8a0772", "Импресия към гледания"),
+                n("g13d8010", "Последните 48 часа"),
+                n("d5627596", "Последният час"),
                 n("baf120a6", "Последно взаимодействие"),
                 n("f2382014", "НА ЖИВО"),
-                n("c4a7a6aa", "Live data"),
-                n("a992032a", "Livestream Analytics"),
+                n("c4a7a6aa", "Данни на живо"),
+                n("a992032a", "Статистики за излъчване на живо"),
                 n("ie45edda", "Преглед на излъчването на живо"),
-                n("e30fc268", "Live Viewers"),
+                n("e30fc268", "Зрители на живо"),
                 n("bd37f68e", "Активност в социалните мрежи"),
                 n("fe074210", "мин"),
-                n("jd03a1b8", "Minutes Watched"),
-                n("a20e91e8", "minutes watched"),
+                n("jd03a1b8", "Изгледани минути"),
+                n("a20e91e8", "изгледани минути"),
                 n("ic2bebee", "С монетизация"),
                 n("a1d642c8", "Най-скорошно взаимодействие"),
                 n("ifc4c1f8", "Броят на новите последователи, получени от това съдържание."),
@@ -4859,12 +4859,12 @@
                 n("g2ba40f6", "За избрания филтър няма свободни зали"),
                 n("j44061a0", "Не е налично"),
                 n("c4a93912", "Няма данни"),
-                n("a6b78788", "No viewer data available"),
+                n("a6b78788", "Няма налични данни за зрители"),
                 n("b2438638", "от общото"),
                 n("ic0399e0", "Органични прегледи"),
                 n("ja5c444a", "Период на плащане"),
                 n("f04e025e", "Най-голям брой едновременни слушатели"),
-                n("d6d10662", "Peak Viewers: "),
+                n("d6d10662", "Пикови зрители: "),
                 n("d147bea2", "Моля, опитайте отново по-късно"),
                 n("f0336d68", "Публикуване на статистики"),
                 n("g85fbd2e", "ИД на публикация"),
@@ -4872,11 +4872,11 @@
                 n("hf4f9bfe", "Публикуване на връзка"),
                 n("bf5ebf5c", "Публикации и отговори"),
                 n("b211652e", "Публикации във времето"),
-                n("f2efec0a", "Pre-Published"),
+                n("f2efec0a", "Предварително публикувани"),
                 n("i61e0302", "Предишно"),
                 n("e08a706a", "Спонсорирани прегледи"),
                 n("cbc99192", "Дата на публикуване"),
-                n("a83c2a9a", "Realtime"),
+                n("a83c2a9a", "В реално време"),
                 n("e9d72896", "Записано"),
                 n("gede4932", "Повторно пускане"),
                 n("h0de359c", "Броят на препубликуванията на това съдържание."),
@@ -4887,20 +4887,20 @@
                 n("fbc79a40", "Общ преглед на Залите"),
                 n("d077112a", "Статистика за Залата"),
                 n("cf3709da", "Статус"),
-                n("e797dc32", "Stream time: "),
+                n("e797dc32", "Време на потока: "),
                 n("b649d8cc", "Само за абонати"),
                 n("j9282130", "Миниатюра за предаване на живо"),
-                n("g629b8b0", "Timed Out"),
-                n("eb87323c", "This shows analytics data for the selected time period since the livestream happened."),
-                n("i6a75722", "Time Range"),
+                n("g629b8b0", "Изтекло време"),
+                n("eb87323c", "Това показва статистическите данни за избрания времеви период от излъчването на живо."),
+                n("i6a75722", "Времеви диапазон"),
                 n("c602f5b8", "Общо"),
                 n("b35e68ae", "Общ брой участници"),
                 n("h78ee79a", "Общ брой гледания на повторението"),
                 n("e3efaed0", "Тип"),
                 n("c37993e2", "Спирания на следването"),
-                n("b1ed35d0", "Unique Viewers"),
+                n("b1ed35d0", "Уникални зрители"),
                 n("bfad9306", "Неизвестно"),
-                n("b5a58f36", "Untitled Broadcast"),
+                n("b5a58f36", "Предаване на живо без заглавие"),
                 n("i70f5278", "Качено на:"),
                 n("a98b58b6", "Потвърдени последователи"),
                 n("a5de67ca", "Броят последователи, които са потвърдили профилите си."),
@@ -5162,7 +5162,7 @@
                 n("cef977e4", "Експортирай данните си"),
                 n("f88e624e", "Разговорът бе актуализиран"),
                 n("e15e5637", function (e) {
-                    return "Последни" + t(e.count, "ят час", "те " + e.count + " часа");
+                    return "Последни" + f(e.count, "ят час", "те " + e.count + " часа");
                 }),
                 n("h5ab8b0e", "Хората, които следват"),
                 n("a0f01bca", "Щракни, за да промениш интервала от време"),
@@ -5219,7 +5219,7 @@
                 n("a26da034", "Запазване на промените"),
                 n("b3633046", "Избор на общност"),
                 n("ce447fcb", function (e) {
-                    return e.count + " слушател" + t(e.count, "", "и");
+                    return e.count + " слушател" + f(e.count, "", "и");
                 }),
                 n("ef7da97f", function (e) {
                     return "Слушащи: " + e.count;
@@ -5244,10 +5244,10 @@
                 }),
                 n("e4e811fc", "Установява се връзка..."),
                 n("aadbc747", function (e) {
-                    return "съдомакин" + t(e.hostCount, "", "и");
+                    return "съдомакин" + f(e.hostCount, "", "и");
                 }),
                 n("hbd6035f", function (e) {
-                    return "говорител" + t(e.speakerCount, "", "и");
+                    return "говорител" + f(e.speakerCount, "", "и");
                 }),
                 n("if420852", "Пускане на записа"),
                 n("f7dc3b1c", "Тази Зала приключи"),
@@ -5702,7 +5702,7 @@
                 n("a796c19c", "Повторно присъединяване"),
                 n("h837a96c", "Ще се присъединиш повторно към програмата за Бележки на общността."),
                 n("a4d4bcb9", function (e) {
-                    return "Ако искаш да се присъединиш повторно, може да го направиш оттук след " + e.numDaysToRejoin + " д" + t(e.numDaysToRejoin, "ен", "ни") + ".";
+                    return "Ако искаш да се присъединиш повторно, може да го направиш оттук след " + e.numDaysToRejoin + " д" + f(e.numDaysToRejoin, "ен", "ни") + ".";
                 }),
                 n("a490bc51", "Научи повече"),
                 n("c94ad3e8", "изпратиш отзиви"),
@@ -5904,13 +5904,13 @@
                 n("cb6adb10", "Разгледай Общности"),
                 n("df362964", "Намиране на Общности"),
                 n("dfd5031f", function (e) {
-                    return e.newTweets + " нов/и публикаци" + t(e.newTweets, "я", "и");
+                    return e.newTweets + " нов/и публикаци" + f(e.newTweets, "я", "и");
                 }),
                 n("ha4bb8a9", function (e) {
-                    return e.reportedTweets + " доклад" + t(e.reportedTweets, "", "а");
+                    return e.reportedTweets + " доклад" + f(e.reportedTweets, "", "а");
                 }),
                 n("caf003b3", function (e) {
-                    return e.memberRequests + " заявк" + t(e.memberRequests, "а", "и");
+                    return e.memberRequests + " заявк" + f(e.memberRequests, "а", "и");
                 }),
                 n("a2118086", "Сортиране на публикации"),
                 n("hb01fe46", "Когато го направиш, ще ги виждаш тук."),
@@ -5984,10 +5984,10 @@
                 n("ee609174", "Общи настройки"),
                 n("ab19cdaa", "Настройки за спам"),
                 n("d755f47d", function (e) {
-                    return e.count + " публикаци" + t(e.count, "я", "и") + " за преглед";
+                    return e.count + " публикаци" + f(e.count, "я", "и") + " за преглед";
                 }),
                 n("efc26607", function (e) {
-                    return e.memberCount + " член" + t(e.memberCount, "", "ове");
+                    return e.memberCount + " член" + f(e.memberCount, "", "ове");
                 }),
                 n("adfcc3ce", "Добавяне, изтриване или редактиране на правила"),
                 n("d0330d9c", "Преглед на правилата"),
@@ -6010,7 +6010,7 @@
                 n("e538848c", "Повече няма да имаш достъп до инструментите за модериране. Ако размислиш, ще трябва да те поканят като модератор отново."),
                 n("j49e6aa2", "Да, искам да напусна"),
                 n("dde5f323", function (e) {
-                    return e.count + " нов" + t(e.count, "а заявка", "и заявки") + " за членство за преглед";
+                    return e.count + " нов" + f(e.count, "а заявка", "и заявки") + " за членство за преглед";
                 }),
                 n("f5e0332a", "Съдържание за възрастни (NSFW)"),
                 n("e983404a", "Закачени хаштагове"),
@@ -6132,7 +6132,7 @@
                     return "Потребителят @" + e.screen_name + " не може да бъде поканен сега";
                 }),
                 n("i6568549", function (e) {
-                    return "Имаш още " + e.remaining_invite_count + " покан" + t(e.remaining_invite_count, "а", "и");
+                    return "Имаш още " + e.remaining_invite_count + " покан" + f(e.remaining_invite_count, "а", "и");
                 }),
                 n("b4f16d00", "Потърси хора, които да поканиш"),
                 n("ja1387a8", "Резултатите от търсене ще включват само твоите последователи и хората, които позволяват лични съобщения от всеки потребител."),
@@ -6262,11 +6262,11 @@
                 n("dc7a9436", "Докладване на публикация в X"),
                 n("e2bc5db0", "@X"),
                 n("d0a1b248", function (e) {
-                    return e.formattedCount + " член" + t(e.count, "", "ове");
+                    return e.formattedCount + " член" + f(e.count, "", "ове");
                 }),
                 n("cd4d48d2", "@X"),
                 n("ff0f742a", function (e) {
-                    return e.formattedCount + " член" + t(e.count, "", "ове");
+                    return e.formattedCount + " член" + f(e.count, "", "ове");
                 }),
                 n("dca19c06", "Ти скри тази публикация"),
                 n("dd641764", "Ти запази тази публикация"),
@@ -6630,7 +6630,7 @@
                 n("db4620aa", "ЗАЛА НА ЖИВО"),
                 n("c958e692", "ЗАПИСАНА ЗАЛА"),
                 n("i2c2bfb7", function (e) {
-                    return e.count + " слуша" + t(e.count, "", "т");
+                    return e.count + " слуша" + f(e.count, "", "т");
                 }),
                 n("i3f7ff00", "Миниатюра на медийния материал"),
                 n("h400d7c2", "ПРИСЪЕДИНЯВАНЕ КЪМ ЗАЛАТА"),
@@ -6982,6 +6982,7 @@
                 n("ed672bfa", "Всички надстойвания от Basic и Premium и..."),
                 n("db63fa1c", "Избиране на план Premium"),
                 n("b128c6bc", "Получаване на потвърдена значка и десетки други страхотни предимства и ползи"),
+                n("a9904a1c", "Запазване на X Premium за ограничено време"),
                 n("acfaf7a0", "Сравняване на нива и функции"),
                 n("e1606e52", "Промяна на абонамента"),
                 n("d2f2b91a", "регистрирайте се тук"),
@@ -7362,7 +7363,7 @@
                 n("h1c5d6aa", "Изпратени от теб"),
                 n("h6d45054", "Изпратено от всички"),
                 n("da68fff1", function (e) {
-                    return e.count + " Монет" + t(e.count, "а", "и") + " (това се вижда само от теб)";
+                    return e.count + " Монет" + f(e.count, "а", "и") + " (това се вижда само от теб)";
                 }),
                 n("e35f2534", "Зареждане на ангажиранията за публикацията"),
                 n("i60dfa72", "Ангажирания с публикация"),
@@ -7421,13 +7422,13 @@
                     return "Това показва колко пъти е била прочетена тази публикации през първите 48 часа след публикуването й. Максималната стойност е " + e.maxValue + " импресии.";
                 }),
                 n("ib1f8491", function (e) {
-                    return e.likeCount + " харесван" + t(e.likeCount, "е", "ия");
+                    return e.likeCount + " харесван" + f(e.likeCount, "е", "ия");
                 }),
                 n("dc0e7f37", function (e) {
-                    return e.retweetCount + " препубликуван" + t(e.retweetCount, "е", "ия");
+                    return e.retweetCount + " препубликуван" + f(e.retweetCount, "е", "ия");
                 }),
                 n("d0eeb127", function (e) {
-                    return e.replyCount + " отговор" + t(e.replyCount, "", "а");
+                    return e.replyCount + " отговор" + f(e.replyCount, "", "а");
                 }),
                 n("db6efeb8", "Рекламирането се провежда"),
                 n("j6daea86", "Промоцията ти е застопорена"),
@@ -7440,7 +7441,7 @@
                 n("e8adeec8", "Повторно рекламиране"),
                 n("fbb5c37e", "Повторно буустване"),
                 n("ccffb487", function (e) {
-                    return "Публикацията ти получи " + e.impressions + " импреси" + t(e.impressions, "я", "и") + " досега. Премини към професионален акаунт, за да увеличиш обхвата си. ";
+                    return "Публикацията ти получи " + e.impressions + " импреси" + f(e.impressions, "я", "и") + " досега. Премини към професионален акаунт, за да увеличиш обхвата си. ";
                 }),
                 n("ha13fd94", "Приоритизиране на публикация"),
                 n("jede3014", "Рекламирането ти се преглежда"),
@@ -7483,7 +7484,7 @@
                     return e.totalBudget + " за " + e.durationLabel;
                 }),
                 n("bad70c09", function (e) {
-                    return "местоположени" + t(e.numLocations, "е", "я");
+                    return "местоположени" + f(e.numLocations, "е", "я");
                 }),
                 n("c133a39b", function (e) {
                     return e.minAge + " – " + e.maxAge;
@@ -7492,7 +7493,7 @@
                     return e.minAge + "+";
                 }),
                 n("g4bf9cb7", function (e) {
-                    return e.durationDays + " д" + t(e.durationDays, "ен", "ни");
+                    return e.durationDays + " д" + f(e.durationDays, "ен", "ни");
                 }),
                 n("gc3ce5d9", function (e) {
                     return "Прогнозен обхват от " + e.audienceLow + " – " + e.audienceHigh + " души дневно";
@@ -7592,7 +7593,7 @@
                 n("a74821a0", "Изглежда, че плащането ти не е обработено или валидността му ще изтече. Актуализирай данните си за плащане, за да запазиш абонамента си за Premium."),
                 n("bb55752e", "Монетите ти позволяват да подкрепяш създатели, които публикуват отлично съдържание. Неизползваните монети се пазят в салдото ти."),
                 n("ea7ce65f", function (e) {
-                    return "Включен" + t(e.count, "а е " + e.count + " бонус монета", "и са " + e.count + " бонус монети") + ".";
+                    return "Включен" + f(e.count, "а е " + e.count + " бонус монета", "и са " + e.count + " бонус монети") + ".";
                 }),
                 n("e557f9d2", "Достигна лимита на салдото си в монети."),
                 n("e2beba5e", "Най-популярно"),
@@ -7787,7 +7788,7 @@
                 n("h24a8862", "Относно това квадратче за отметка"),
                 n("c29e3a88", "Избор на афилиейт партньори"),
                 n("j8318d57", function (e) {
-                    return e.number + " афилиейт партньор" + t(e.number, "", "и");
+                    return e.number + " афилиейт партньор" + f(e.number, "", "и");
                 }),
                 n("bf809ec0", "Избор на афилиейт партньори"),
                 n("b719e224", "Няма резултати"),
@@ -7847,9 +7848,8 @@
                 n("h37f2d96", "Имай предвид, че в момента не се поддържат всички системи за проследяване на кандидати."),
                 n("ce102a20", "Пренасочване към Stripe"),
                 n("ddfd6718", "Неуспешно плащане"),
-                n("i90ea7d2", "Спешно актуализирай фактурирането си, за да запазиш предимствата си."),
-                n("a62359e6", "Настройки на потвърдените организации");
-            function f(e, c) {
+                n("i90ea7d2", "Спешно актуализирай фактурирането си, за да запазиш предимствата си.");
+            function t(e, c) {
                 for (var a = 0; a < c.length; a++) {
                     var n = c[a];
                     (n.enumerable = n.enumerable || !1),
@@ -7857,10 +7857,10 @@
                         "value" in n && (n.writable = !0),
                         Object.defineProperty(
                             e,
-                            ((t = n.key),
-                            (f = void 0),
+                            ((f = n.key),
+                            (t = void 0),
                             "symbol" ==
-                            typeof (f = (function (e, c) {
+                            typeof (t = (function (e, c) {
                                 if ("object" != typeof e || null === e) return e;
                                 var a = e[Symbol.toPrimitive];
                                 if (void 0 !== a) {
@@ -7869,13 +7869,13 @@
                                     throw new TypeError("@@toPrimitive must return a primitive value.");
                                 }
                                 return ("string" === c ? String : Number)(e);
-                            })(t, "string"))
-                                ? f
-                                : String(f)),
+                            })(f, "string"))
+                                ? t
+                                : String(t)),
                             n,
                         );
                 }
-                var t, f;
+                var f, t;
             }
             function r(e, c) {
                 return (
@@ -7887,7 +7887,8 @@
                     r(e, c)
                 );
             }
-            n("ge221b7c", "Надстрой абонамента за потвърдена организация, за да получиш достъп до афилиейт партньори и повече рекламни кредити."),
+            n("a62359e6", "Настройки на потвърдените организации"),
+                n("ge221b7c", "Надстрой абонамента за потвърдена организация, за да получиш достъп до афилиейт партньори и повече рекламни кредити."),
                 n("i4dccc18", "Платежни"),
                 n("ec3cd6e4", "Управлявай метода си на плащане, актуализирай информацията за фактуриране и преглеждай фактурите си."),
                 n("dac61c3c", "Настройки на профила"),
@@ -8044,7 +8045,7 @@
                 n("e6b0965a", "Твоята поръчка"),
                 n("a1b58798", "Прегледай поръчката си по-долу"),
                 n("b651c7d7", function (e) {
-                    return "Афилиейт партньор" + t(e.count, "", "и") + " x " + e.count;
+                    return "Афилиейт партньор" + f(e.count, "", "и") + " x " + e.count;
                 }),
                 n("ec5e9c54", "Основен абонамент"),
                 n("e16093fc", "Общо на месец"),
@@ -8571,7 +8572,7 @@
                     return "" + e.formattedCount;
                 }),
                 n("hda3bb87", function (e) {
-                    return "следван" + t(e.count, "/а", "и");
+                    return "следван" + f(e.count, "/а", "и");
                 }),
                 n("cd3f5206", "Следва:"),
                 n("c930299f", function (e) {
@@ -8697,7 +8698,7 @@
                     return "Започва в " + e.hoursWord + " " + e.minutesWord + " " + e.secondsWord;
                 }),
                 n("daa73df1", function (e) {
-                    return e.viewerCount + " преглеждан" + t(e.viewerCount, "е", "ия");
+                    return e.viewerCount + " преглеждан" + f(e.viewerCount, "е", "ия");
                 }),
                 n("b4f19b97", function (e) {
                     return e.listItem1 + " и " + e.listItem2;
@@ -8889,11 +8890,11 @@
                 n("d1386940", "Информирай се"),
                 n("ecda5f9e", "Подвеждащо"),
                 n("a423473c", "Законово изисквано съобщение"),
-                n("b3296688", "Видимостта е ограничена"),
-                n("ccd32094", "Сега");
-            n("abfcce0d", function (e) {
-                return "Преди " + e.amountOfTime;
-            }),
+                n("b3296688", "Видимостта е ограничена");
+            n("ccd32094", "Сега"),
+                n("abfcce0d", function (e) {
+                    return "Преди " + e.amountOfTime;
+                }),
                 n("ae408b76", "Ти препубликува"),
                 n("j355f008", "Закачена публикация"),
                 n("habf9678", "Закачено от автора"),
@@ -8909,32 +8910,32 @@
                     return e.count + " в тази Зала";
                 }),
                 n("c83eea99", function (e) {
-                    return e.participant + " и " + e.count + " слуша" + t(e.count, "", "т");
+                    return e.participant + " и " + e.count + " слуша" + f(e.count, "", "т");
                 }),
                 n("cdff6cd3", function (e) {
-                    return e.speaker + " говори и " + e.count + " слуша" + t(e.count, "", "т");
+                    return e.speaker + " говори и " + e.count + " слуша" + f(e.count, "", "т");
                 }),
                 n("df006f4f", function (e) {
-                    return e.count + " има" + t(e.count, "", "т") + " интерес";
+                    return e.count + " има" + f(e.count, "", "т") + " интерес";
                 }),
                 n("c889af33", function (e) {
-                    return e.count + " се присъедини" + t(e.count, "", "ха");
+                    return e.count + " се присъедини" + f(e.count, "", "ха");
                 }),
                 n("d6f2056f", function (e) {
-                    return e.count + " се включи" + t(e.count, "", "ха");
+                    return e.count + " се включи" + f(e.count, "", "ха");
                 }),
                 n("jbc5f47a", "Прикрепена лента за Зали"),
                 n("gfe2830f", function (e) {
-                    return e.count + " " + t(e.count, "човек", "души");
+                    return e.count + " " + f(e.count, "човек", "души");
                 }),
                 n("dbeae6cf", function (e) {
-                    return "още " + e.count + " слушател" + t(e.count, "", "и");
+                    return "още " + e.count + " слушател" + f(e.count, "", "и");
                 }),
                 n("d2543d97", function (e) {
                     return "+" + e.count;
                 }),
                 n("dc718e53", function (e) {
-                    return "+" + e.count + " " + t(e.count, "човек", "души");
+                    return "+" + e.count + " " + f(e.count, "човек", "души");
                 }),
                 n("d0e7b11b", function (e) {
                     return e.date + " в " + e.time;
@@ -8949,19 +8950,19 @@
                     return e.hours + " " + e.minutes + " " + e.seconds;
                 }),
                 n("d925a4f9", function (e) {
-                    return "Остава" + t(e.count, " " + e.formattedCount + " минута", "т " + e.formattedCount + " минути");
+                    return "Остава" + f(e.count, " " + e.formattedCount + " минута", "т " + e.formattedCount + " минути");
                 }),
                 n("ib15cddb", function (e) {
-                    return "Остава" + t(e.count, " " + e.formattedCount + " час", "т " + e.formattedCount + " часа");
+                    return "Остава" + f(e.count, " " + e.formattedCount + " час", "т " + e.formattedCount + " часа");
                 }),
                 n("db9ed19f", function (e) {
-                    return "Остава" + t(e.count, " " + e.formattedCount + " ден", "т " + e.formattedCount + " дни");
+                    return "Остава" + f(e.count, " " + e.formattedCount + " ден", "т " + e.formattedCount + " дни");
                 }),
                 n("e1ebcecb", function (e) {
-                    return e.formattedDays + " д" + t(e.days, "ен", "ни") + " Остава" + t(e.hours, " " + e.formattedHours + " час", "т " + e.formattedHours + " часа");
+                    return e.formattedDays + " д" + f(e.days, "ен", "ни") + " Остава" + f(e.hours, " " + e.formattedHours + " час", "т " + e.formattedHours + " часа");
                 }),
                 n("cc1da1fd", function (e) {
-                    return e.formattedHours + " час" + t(e.hours, "", "а") + " Остава" + t(e.mins, " " + e.formattedMins + " минута", "т " + e.formattedMins + " минути");
+                    return e.formattedHours + " час" + f(e.hours, "", "а") + " Остава" + f(e.mins, " " + e.formattedMins + " минута", "т " + e.formattedMins + " минути");
                 }),
                 n("f89a5d60", "Домакин"),
                 n("ce2cfb36", "Само за абонати"),
@@ -8987,7 +8988,7 @@
                     return "Домакин: " + e.host;
                 }),
                 n("eb0b05b9", function (e) {
-                    return "с още " + e.count + " човек" + t(e.count, "", "а");
+                    return "с още " + e.count + " човек" + f(e.count, "", "а");
                 }),
                 n("d19b9f77", function (e) {
                     return e.action + " за " + e.title + " с домакин " + e.host + ", " + e.scheduledStart;
@@ -9015,20 +9016,20 @@
                 n("f8e8e32e", "Ти"),
                 n("df6703d3", "Ти"),
                 n("c20f7e9f", function (e) {
-                    return t(e.otherUsersCount, d.createElement(d.Fragment, null, "", e.secondName), "още " + e.otherUsersCount + " души");
+                    return f(e.otherUsersCount, d.createElement(d.Fragment, null, "", e.secondName), "още " + e.otherUsersCount + " души");
                 }),
                 n("he26f627", function (e) {
-                    return t(e.otherUsersCount, d.createElement(d.Fragment, null, "", e.secondName), "още " + e.otherUsersCount + " души");
+                    return f(e.otherUsersCount, d.createElement(d.Fragment, null, "", e.secondName), "още " + e.otherUsersCount + " души");
                 }),
                 n("gea7aa3c", "Напред"),
                 n("b6462b32", "Предишно"),
                 n("caddb529", "и"),
                 n("ff31714c", function (e) {
-                    return "и още " + t(e.othersCount, "1 човек", e.othersCount + " души");
+                    return "и още " + f(e.othersCount, "1 човек", e.othersCount + " души");
                 }),
                 n("e06c99b7", "и"),
                 n("i4e2f96c", function (e) {
-                    return "и още " + t(e.othersCount, "1 човек", e.othersCount + " души");
+                    return "и още " + f(e.othersCount, "1 човек", e.othersCount + " души");
                 }),
                 n("ga629a8c", "Преглед на хора в разговор"),
                 n("d6f781e4", "Когато се абонираш за любимите си създатели в X, получаваш бонусно съдържание, а те печелят малко пари."),
@@ -9050,10 +9051,10 @@
                 n("ec286028", "Поставяне на аудиото на пауза"),
                 n("ad77feb6", "Надписите не са налице"),
                 n("e82adfeb", function (e) {
-                    return e.count + " уеб страниц" + t(e.count, "а", "и");
+                    return e.count + " уеб страниц" + f(e.count, "а", "и");
                 }),
                 n("cfb8c1f7", function (e) {
-                    return e.count + " публикаци" + t(e.count, "я", "и");
+                    return e.count + " публикаци" + f(e.count, "я", "и");
                 }),
                 n("g78032d5", function (e) {
                     return e.count + " уеб страници и публикации";
@@ -9079,7 +9080,7 @@
                 n("g10ace38", "Опции за анкетата"),
                 n("a3edf99a", "Крайни резултати"),
                 n("c2b81e9d", function (e) {
-                    return e.formattedCount + " глас" + t(e.count, "", "а");
+                    return e.formattedCount + " глас" + f(e.count, "", "а");
                 }),
                 n("e86732e4", "Избрано"),
                 n("a35a5b10", "Последователи, които познаваш"),
@@ -9163,22 +9164,22 @@
                     return "Увеличение с(ъс) " + e.trendValuePositivePercent;
                 }),
                 n("e3098e07", function (e) {
-                    return "Преди " + e.minutes + " минут" + t(e.minutes, "а", "и");
+                    return "Преди " + e.minutes + " минут" + f(e.minutes, "а", "и");
                 }),
                 n("fea16a51", function (e) {
-                    return "Преди " + e.hours + " час" + t(e.hours, "", "а");
+                    return "Преди " + e.hours + " час" + f(e.hours, "", "а");
                 }),
                 n("a4f2d94d", function (e) {
-                    return "Преди " + e.days + " д" + t(e.days, "ен", "ни");
+                    return "Преди " + e.days + " д" + f(e.days, "ен", "ни");
                 }),
                 n("hf9bc787", function (e) {
-                    return "Преди " + e.weeks + " седмиц" + t(e.weeks, "а", "и");
+                    return "Преди " + e.weeks + " седмиц" + f(e.weeks, "а", "и");
                 }),
                 n("efcd5885", function (e) {
-                    return "Преди " + e.months + " месец" + t(e.months, "", "а");
+                    return "Преди " + e.months + " месец" + f(e.months, "", "а");
                 }),
                 n("c37228b5", function (e) {
-                    return "Преди " + e.years + " годин" + t(e.years, "а", "и");
+                    return "Преди " + e.years + " годин" + f(e.years, "а", "и");
                 }),
                 n("jf83d092", "Ден"),
                 n("af4abf20", "Месец"),
@@ -9198,7 +9199,7 @@
                 n("de540c32", "Показване на паролата"),
                 n("b4abfdb4", "Скриване на паролата"),
                 n("f06ae5d3", function (e) {
-                    return e.standardTweetCount + " оставащ" + t(e.standardTweetCount, " знак", "и знака") + " за стандартна публикация, общо " + e.totalCount + " оставащ" + t(e.totalCount, " знак", "и знака");
+                    return e.standardTweetCount + " оставащ" + f(e.standardTweetCount, " знак", "и знака") + " за стандартна публикация, общо " + e.totalCount + " оставащ" + f(e.totalCount, " знак", "и знака");
                 }),
                 n("fee0a8bc", "Запазване"),
                 n("ae7f7656", "Изчистване"),
@@ -9282,52 +9283,52 @@
                 n("b8c465e2", "Препубликувана"),
                 n("c7a989ce", "С поставена отметка"),
                 n("b03835c7", function (e) {
-                    return e.replyCount + " отговор" + t(e.replyCount, "", "а");
+                    return e.replyCount + " отговор" + f(e.replyCount, "", "а");
                 }),
                 n("g4a195e7", function (e) {
-                    return e.retweetCount + " препубликуван" + t(e.retweetCount, "е", "ия");
+                    return e.retweetCount + " препубликуван" + f(e.retweetCount, "е", "ия");
                 }),
                 n("e089b42d", function (e) {
-                    return e.likeCount + " харесван" + t(e.likeCount, "е", "ия");
+                    return e.likeCount + " харесван" + f(e.likeCount, "е", "ия");
                 }),
                 n("e0a8fe39", function (e) {
-                    return e.bookmarkCount + " отметк" + t(e.bookmarkCount, "а", "и");
+                    return e.bookmarkCount + " отметк" + f(e.bookmarkCount, "а", "и");
                 }),
                 n("c58b2ab7", function (e) {
-                    return e.viewCount + " показван" + t(e.viewCount, "е", "ия");
+                    return e.viewCount + " показван" + f(e.viewCount, "е", "ия");
                 }),
                 n("f2849136", "Статистики"),
                 n("f206e970", "Преглед на статистиката на публикацията"),
                 n("c7073f5b", function (e) {
-                    return e.count + " п" + t(e.count, "оказване", "реглеждания") + ". Виж статистиката за публикацията";
+                    return e.count + " п" + f(e.count, "оказване", "реглеждания") + ". Виж статистиката за публикацията";
                 }),
                 n("hf417cf0", "Премахване от отметките"),
                 n("febd30ed", function (e) {
-                    return e.count + " Отметк" + t(e.count, "а", "и") + ". Отметка";
+                    return e.count + " Отметк" + f(e.count, "а", "и") + ". Отметка";
                 }),
                 n("a8dc9587", function (e) {
-                    return e.count + " Отметк" + t(e.count, "а", "и") + ". С поставена отметка";
+                    return e.count + " Отметк" + f(e.count, "а", "и") + ". С поставена отметка";
                 }),
                 n("d636ebc6", "Харесване"),
                 n("eb3a8b0c", "Отмяна на харесването"),
                 n("j472ecfc", "Харесай тази публикация"),
                 n("dac92b0d", function (e) {
-                    return e.count + " харесван" + t(e.count, "е", "ия") + ". Харесване";
+                    return e.count + " харесван" + f(e.count, "е", "ия") + ". Харесване";
                 }),
                 n("aa650427", function (e) {
-                    return e.count + " харесван" + t(e.count, "е", "ия") + ". Харесано";
+                    return e.count + " харесван" + f(e.count, "е", "ия") + ". Харесано";
                 }),
                 n("hdf7226a", "Отговор"),
                 n("c9940955", function (e) {
-                    return e.count + " отговор" + t(e.count, "", "а") + ". Отговор";
+                    return e.count + " отговор" + f(e.count, "", "а") + ". Отговор";
                 }),
                 n("f2919fb8", "Препубликуване"),
                 n("fd1e5446", "Отмяна на препубликуване"),
                 n("dfad425d", function (e) {
-                    return e.count + " препубликуван" + t(e.count, "е", "ия") + ". Препубликувано(и)";
+                    return e.count + " препубликуван" + f(e.count, "е", "ия") + ". Препубликувано(и)";
                 }),
                 n("a386dc55", function (e) {
-                    return e.count + " препубликуван" + t(e.count, "е", "ия") + ". Препубликувано(и)";
+                    return e.count + " препубликуван" + f(e.count, "е", "ия") + ". Препубликувано(и)";
                 }),
                 n("f65198c2", "Преглед на цитатите"),
                 n("dc63da16", "Споделяне"),
@@ -9341,25 +9342,25 @@
                     return "" + e.formattedCount;
                 }),
                 n("daf8a75f", function (e) {
-                    return "следван" + t(e.count, "/а", "и");
+                    return "следван" + f(e.count, "/а", "и");
                 }),
                 n("ef1f4fc6", function (e) {
                     return "" + e.formattedCount;
                 }),
                 n("ad9b5988", function (e) {
-                    return "последовател" + t(e.count, "", "и");
+                    return "последовател" + f(e.count, "", "и");
                 }),
                 n("a9980948", function (e) {
                     return "" + e.formattedCount;
                 }),
                 n("ce44a35c", function (e) {
-                    return "абонат" + t(e.count, "", "и");
+                    return "абонат" + f(e.count, "", "и");
                 }),
                 n("id949f68", function (e) {
                     return "" + e.formattedCount;
                 }),
                 n("hb608cfc", function (e) {
-                    return "Абонамент" + t(e.count, "", "и");
+                    return "Абонамент" + f(e.count, "", "и");
                 }),
                 n("ef633578", "Профилът е спрян"),
                 n("a6a3d496", "Вмъкване на връзка"),
@@ -9978,7 +9979,7 @@
                         {
                             key: "a1c39f5b",
                             get: function () {
-                                return ["Ще се свържем с теб веднага щом вземем решение. Това може да отнеме до " + this.props.days + " д" + t(this.props.days, "ен", "ни") + "."];
+                                return ["Ще се свържем с теб веднага щом вземем решение. Това може да отнеме до " + this.props.days + " д" + f(this.props.days, "ен", "ни") + "."];
                             },
                         },
                         {
@@ -10464,25 +10465,25 @@
                         {
                             key: "a629c16f",
                             get: function () {
-                                return ["", " " + this.props.discountedPrice + ", плащани месечно за " + t(this.props.duration, "един месец", this.props.duration + " месеца")];
+                                return ["", " " + this.props.discountedPrice + ", плащани месечно за " + f(this.props.duration, "един месец", this.props.duration + " месеца")];
                             },
                         },
                         {
                             key: "c142e70f",
                             get: function () {
-                                return ["", " " + this.props.discountedPrice + ", плащани ежегодно за " + t(this.props.duration, "една година", this.props.duration + " години")];
+                                return ["", " " + this.props.discountedPrice + ", плащани ежегодно за " + f(this.props.duration, "една година", this.props.duration + " години")];
                             },
                         },
                         {
                             key: "e9dc8a25",
                             get: function () {
-                                return ["", " ", " за " + t(this.props.duration, "една година", this.props.duration + " години")];
+                                return ["", " ", " за " + f(this.props.duration, "една година", this.props.duration + " години")];
                             },
                         },
                         {
                             key: "f8a9cbb7",
                             get: function () {
-                                return ["", " ", " за " + t(this.props.duration, "един месец", this.props.duration + " месеца")];
+                                return ["", " ", " за " + f(this.props.duration, "един месец", this.props.duration + " месеца")];
                             },
                         },
                         {
@@ -10914,7 +10915,7 @@
                         {
                             key: "b6656851",
                             get: function () {
-                                return ["В тази група има " + this.props.count + " още " + t(this.props.count, "човек", "души")];
+                                return ["В тази група има " + this.props.count + " още " + f(this.props.count, "човек", "души")];
                             },
                         },
                         {
@@ -11226,7 +11227,7 @@
                         {
                             key: "eea0a14f",
                             get: function () {
-                                return [this.props.formattedCount + " харесван" + t(this.props.count, "е", "ия")];
+                                return [this.props.formattedCount + " харесван" + f(this.props.count, "е", "ия")];
                             },
                         },
                         {
@@ -11238,7 +11239,7 @@
                         {
                             key: "a0a3adf7",
                             get: function () {
-                                return [this.props.formattedCount + " публикаци" + t(this.props.count, "я", "и")];
+                                return [this.props.formattedCount + " публикаци" + f(this.props.count, "я", "и")];
                             },
                         },
                         {
@@ -11742,7 +11743,7 @@
                         {
                             key: "e77dac87",
                             get: function () {
-                                return ["Показване на още " + this.props.remainingCount + " публикаци" + t(this.props.remainingCount, "я", "и") + " публикации, цитирани от заявителите"];
+                                return ["Показване на още " + this.props.remainingCount + " публикаци" + f(this.props.remainingCount, "я", "и") + " публикации, цитирани от заявителите"];
                             },
                         },
                         {
@@ -12738,7 +12739,7 @@
                         {
                             key: "d6b02329",
                             get: function () {
-                                return [this.props.formattedCount + " член" + t(this.props.count, "", "ове")];
+                                return [this.props.formattedCount + " член" + f(this.props.count, "", "ове")];
                             },
                         },
                         {
@@ -12843,13 +12844,13 @@
                                 var e,
                                     c = d.Children.toArray(this.props.children),
                                     a = ((e = this.props.$i18n), b[u[e]] || o);
-                                return function (e, n, t) {
-                                    return e.concat(n, c[a(t)]);
+                                return function (e, n, f) {
+                                    return e.concat(n, c[a(f)]);
                                 };
                             },
                         },
-                    ]) && f(n.prototype, i),
-                    m && f(n, m),
+                    ]) && t(n.prototype, i),
+                    m && t(n, m),
                     Object.defineProperty(n, "prototype", { writable: !1 }),
                     g
                 );
@@ -13205,4 +13206,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/bg.cf038b1a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/bg.4fa19f4a.js.map

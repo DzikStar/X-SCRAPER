@@ -6982,6 +6982,7 @@
                 s("ed672bfa", "Az Alap és Premium csomag összes frissítése, plusz..."),
                 s("db63fa1c", "Válassz Premium csomagot!"),
                 s("b128c6bc", "Ellenőrzött jelvényt kaphatsz tucatnyi elképesztő előnnyel"),
+                s("a9904a1c", "Korlátozott ideig kedvezményesen fizethetsz elő az X Premiumra"),
                 s("acfaf7a0", "Csomagok és szolgáltatások összehasonlítása"),
                 s("e1606e52", "Az előfizetésed módosítása"),
                 s("d2f2b91a", "itt regisztrálhatnak"),
@@ -7847,8 +7848,7 @@
                 s("h37f2d96", "Tájékoztatunk, hogy jelenleg nem minden pályázói nyomkövetési rendszer támogatott."),
                 s("ce102a20", "Átirányítás a Stripe-ra"),
                 s("ddfd6718", "A fizetés sikertelen"),
-                s("i90ea7d2", "Sürgősen frissítsd a számlázási adataidat az előnyök megőrzése érdekében."),
-                s("a62359e6", "Ellenőrzött szervezet beállításai");
+                s("i90ea7d2", "Sürgősen frissítsd a számlázási adataidat az előnyök megőrzése érdekében.");
             function n(e, t) {
                 for (var a = 0; a < t.length; a++) {
                     var s = t[a];
@@ -7887,7 +7887,8 @@
                     z(e, t)
                 );
             }
-            s("ge221b7c", "Frissítsd az Ellenőrzött szervezetek előfizetésed, hogy hozzáférést kaphass a partnerekhez és még több hirdetési kreditet kapj."),
+            s("a62359e6", "Ellenőrzött szervezet beállításai"),
+                s("ge221b7c", "Frissítsd az Ellenőrzött szervezetek előfizetésed, hogy hozzáférést kaphass a partnerekhez és még több hirdetési kreditet kapj."),
                 s("i4dccc18", "Számlázás"),
                 s("ec3cd6e4", "A fizetési mód kezelése, a számlázási információk frissítése és a bevételek ellenőrzése."),
                 s("dac61c3c", "Fiókbeállítások"),
@@ -8889,11 +8890,11 @@
                 s("d1386940", "Maradj naprakész!"),
                 s("ecda5f9e", "Félrevezető"),
                 s("a423473c", "Jogilag előírt közlemény"),
-                s("b3296688", "Korlátozott láthatóság"),
-                s("ccd32094", "Most");
-            s("abfcce0d", function (e) {
-                return "Ennyivel ezelőtt: " + e.amountOfTime;
-            }),
+                s("b3296688", "Korlátozott láthatóság");
+            s("ccd32094", "Most"),
+                s("abfcce0d", function (e) {
+                    return "Ennyivel ezelőtt: " + e.amountOfTime;
+                }),
                 s("ae408b76", "Újraposztoltad"),
                 s("j355f008", "Kitűzött bejegyzés"),
                 s("habf9678", "Kitűzte a szerző"),
@@ -13215,4 +13216,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hu.c97e0e3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hu.6dd9a9aa.js.map

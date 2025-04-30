@@ -269,7 +269,7 @@
                         ),
                         S = C["aria-label"],
                         P = n.useCallback(({ containerRef: t, playerApi: s, playerState: o }) => n.createElement(l.Z, { "aria-label": S, containerRef: t, includeDisputeLinkInCopyrightErrorMessage: e, liveBroadcastRewindEnabled: _, onClick: T, playerApi: s, playerDisplayOptions: C.displayOptions, playerState: o, poster: C.poster?.url, shouldShowAltLabel: C.shouldShowAltLabel, showWatchAgain: (0, p.I4)({ source: C.source, withPostPlayback: C.withPostPlayback }), useKeyboardShortcuts: !0 }), [S, T, C.source, e, C.displayOptions, C.poster?.url, C.shouldShowAltLabel, C.withPostPlayback, _]);
-                    return n.createElement(r.Z, { onClick: R, onLayout: E && t ? void 0 : D, style: !(E && t) && v.video, testID: d }, n.createElement(c.Z, (0, o.Z)({}, C, { aspectRatio: b, autoplayGroupOptions: g, uiStack: (E && t) || i ? P : void 0 })));
+                    return n.createElement(r.Z, { onClick: R, onLayout: E && t ? void 0 : D, style: !(E && t) && v.video, testID: d }, n.createElement(c.Z, (0, o.Z)({}, C, { aspectRatio: b, autoplayGroupOptions: g, uiStack: i ? P : void 0 })));
                 },
                 v = d.default.create((e) => ({ video: { height: "100%" } })),
                 x = C(n.memo(b));
@@ -983,4 +983,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7796c48c.c85094aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-7796c48c.259dd0fa.js.map

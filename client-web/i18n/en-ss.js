@@ -6983,6 +6983,7 @@
                 a("ed672bfa", "[[293633]] All upgrades from Basic and Premium, plus ..."),
                 a("db63fa1c", "[[294027]] Select a premium plan"),
                 a("b128c6bc", "[[294026]] Get a verified badge and dozens of other awesome perks and benefits"),
+                a("a9904a1c", "[[294605]] Save on X Premium for a limited time"),
                 a("acfaf7a0", "[[287238]] Compare tiers & features"),
                 a("e1606e52", "[[294053]] Change your subscription"),
                 a("d2f2b91a", "sign up here"),
@@ -7848,8 +7849,7 @@
                 a("h37f2d96", "[[287376]] Please note not all applicant tracking systems are currently supported."),
                 a("ce102a20", "[[293426]] Redirecting to Stripe"),
                 a("ddfd6718", "[[293516]] Payment Failed"),
-                a("i90ea7d2", "[[293514]] Please urgently update your billing to keep your benefits."),
-                a("a62359e6", "[[289188]] Verified Organization Settings");
+                a("i90ea7d2", "[[293514]] Please urgently update your billing to keep your benefits.");
             function i(e, t) {
                 for (var o = 0; o < t.length; o++) {
                     var a = t[o];
@@ -7888,7 +7888,8 @@
                     r(e, t)
                 );
             }
-            a("ge221b7c", "[[287675]] Upgrade Verified Organization subscription to get access to affiliates and more ad credits."),
+            a("a62359e6", "[[289188]] Verified Organization Settings"),
+                a("ge221b7c", "[[287675]] Upgrade Verified Organization subscription to get access to affiliates and more ad credits."),
                 a("i4dccc18", "[[274804]] Billing"),
                 a("ec3cd6e4", "[[289008]] Manage your payment method, update billing information, and review your invoices."),
                 a("dac61c3c", "[[287561]] Account settings"),
@@ -8890,11 +8891,11 @@
                 a("d1386940", "[[235685]] Stay informed"),
                 a("ecda5f9e", "[[235686]] Misleading"),
                 a("a423473c", "[[242345]] Legally Required Notice"),
-                a("b3296688", "[[274957]] Visibility Limited"),
-                a("ccd32094", "[[155157]] Now");
-            a("abfcce0d", function (e) {
-                return "[[190985]] " + e.amountOfTime + " ago";
-            }),
+                a("b3296688", "[[274957]] Visibility Limited");
+            a("ccd32094", "[[155157]] Now"),
+                a("abfcce0d", function (e) {
+                    return "[[190985]] " + e.amountOfTime + " ago";
+                }),
                 a("ae408b76", "[[281811]] You reposted"),
                 a("j355f008", "[[281812]] Pinned post"),
                 a("habf9678", "[[263563]] Pinned by Author"),
@@ -13207,4 +13208,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-ss.e8c9489a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-ss.8fe9caba.js.map

@@ -212,7 +212,7 @@
             const z = l.default.create((e) => ({ img: { ...l.default.absoluteFillObject, height: "auto", margin: "auto", maxHeight: "100%", maxWidth: "100%", width: "auto" }, progressBar: { position: "absolute", top: 0, zIndex: 1 } })),
                 L = n.createElement(I.Z, { ariaValueText: P, indeterminate: !0, style: z.progressBar }),
                 M = E;
-            var B = o(78067);
+            var B = o(310453);
             class q extends n.PureComponent {
                 constructor(...e) {
                     super(...e),
@@ -664,4 +664,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserAvatar-6107ac1a.b57e5dda.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserAvatar-6107ac1a.ca4b962a.js.map

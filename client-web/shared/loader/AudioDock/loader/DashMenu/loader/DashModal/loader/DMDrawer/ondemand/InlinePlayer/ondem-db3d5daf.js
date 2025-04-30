@@ -426,7 +426,7 @@
             function y() {
                 return (0, a.Dv)(g.eX) ? null : r.createElement(o.Z, { style: Z.sidebar }, r.createElement(i.k, null));
             }
-            const Z = c.default.create((e) => ({ sidebar: { width: 348 }, listviewPlaceholder: { width: "20%", minWidth: 200 } }));
+            const Z = c.default.create((e) => ({ sidebar: { width: 348 * e.scaleMultiplier }, listviewPlaceholder: { width: "20%", minWidth: 200 * e.scaleMultiplier } }));
         },
         23425: (e, t, n) => {
             n.d(t, { SR: () => c, T1: () => s, X6: () => p, XQ: () => u, eX: () => i, em: () => m, hc: () => d, xK: () => l, yu: () => f });
@@ -1276,4 +1276,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf.269212aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf.9592fa4a.js.map

@@ -6983,6 +6983,7 @@
                 n("ed672bfa", "બેઝિક અને Premiumના બધા અપગ્રેડ, ઉપરાંત..."),
                 n("db63fa1c", "પ્રિમિયમ પ્લાન પસંદ કરો"),
                 n("b128c6bc", "ચકાસાયેલો બૅજ અને અન્ય અનેક અદ્ભુત લાભ તથા ફાયદા મેળવો"),
+                n("a9904a1c", "મર્યાદિત સમય માટે X Premium પર બચત કરો"),
                 n("acfaf7a0", "ટિઅર અને સુવિધાઓની તુલના કરો"),
                 n("e1606e52", "તમારું સબ્સ્ક્રિપ્શન બદલો"),
                 n("d2f2b91a", "અહીં સાઇન અપ કરો"),
@@ -7848,8 +7849,7 @@
                 n("h37f2d96", "કૃપા કરીને નોંધ કરો કે બધી ઉમેદવાર ટ્રૅકિંગ સિસ્ટમ હાલમાં સમર્થિત નથી."),
                 n("ce102a20", "સ્ટ્રાઇપ પર રીડાયરેક્ટ કરી રહ્યું છે"),
                 n("ddfd6718", "ચુકવણી નિષ્ફળ થઈ"),
-                n("i90ea7d2", "તમારા લાભ જાળવવા માટે કૃપા કરીને તાકીદે તમારું બિલિંગ અપડેટ કરો."),
-                n("a62359e6", "ચકાસાયેલું સંસ્થા સેટિંગ્સ");
+                n("i90ea7d2", "તમારા લાભ જાળવવા માટે કૃપા કરીને તાકીદે તમારું બિલિંગ અપડેટ કરો.");
             function t(e, c) {
                 for (var a = 0; a < c.length; a++) {
                     var n = c[a];
@@ -7888,7 +7888,8 @@
                     r(e, c)
                 );
             }
-            n("ge221b7c", "સહયોગીઓ અને જાહેરાતની વધુ ક્રેડિટની ઍક્સેસ મેળવવા માટે ચકાસાયેલી સંસ્થાનું સબ્સ્ક્રિપ્શન પર અપગ્રેડ કરો."),
+            n("a62359e6", "ચકાસાયેલું સંસ્થા સેટિંગ્સ"),
+                n("ge221b7c", "સહયોગીઓ અને જાહેરાતની વધુ ક્રેડિટની ઍક્સેસ મેળવવા માટે ચકાસાયેલી સંસ્થાનું સબ્સ્ક્રિપ્શન પર અપગ્રેડ કરો."),
                 n("i4dccc18", "બિલિંગ"),
                 n("ec3cd6e4", "તમારી ચુકવણી પદ્ધતિ મેનેજ કરો, બિલિંગ માહિતી અપડેટ કરો અને તમારા ઇન્વૉઇસની સમીક્ષા કરો."),
                 n("dac61c3c", "એકાઉન્ટ સેટિંગ્સ"),
@@ -8890,11 +8891,11 @@
                 n("d1386940", "માહિતગાર રહો"),
                 n("ecda5f9e", "ગેરમાર્ગે દોરનારી"),
                 n("a423473c", "કાયદેસર આવશ્યક સૂચના"),
-                n("b3296688", "દૃશ્યતા મર્યાદિત"),
-                n("ccd32094", "હવે");
-            n("abfcce0d", function (e) {
-                return e.amountOfTime + " પહેલાં";
-            }),
+                n("b3296688", "દૃશ્યતા મર્યાદિત");
+            n("ccd32094", "હવે"),
+                n("abfcce0d", function (e) {
+                    return e.amountOfTime + " પહેલાં";
+                }),
                 n("ae408b76", "તમે રીપોસ્ટ કર્યું"),
                 n("j355f008", "પિન કરેલી પોસ્ટ"),
                 n("habf9678", "લેખક દ્વારા પિન કરાયેલ"),
@@ -9458,11 +9459,11 @@
                     },
                 ],
                 u = { c4d3d079: 0, be5322c7: 1, c5f6ee1d: 1, f451c521: 1, d1f8bdd9: 1, d764af97: 2, hec0fd4d: 1, j55320df: 2, e70dcc35: 1, g1bf440b: 2, cd2e7c19: 1, aee9e7fb: 2, i6cec545: 3, d6998bab: 4, ff973a65: 1, a9ec3729: 1, ie9320f7: 1, c70aad4b: 1, g46e6cc5: 1 };
-            function o(e) {
+            function i(e) {
                 return e;
             }
-            var i = (function (e) {
-                var c, a, n, i, g;
+            var o = (function (e) {
+                var c, a, n, o, g;
                 function m() {
                     return e.apply(this, arguments) || this;
                 }
@@ -9475,7 +9476,7 @@
                         return d.createElement.apply(d, this[this.props.$i18n].reduce(this.templateReducer, [d.Fragment, null]));
                     }),
                     (n = m),
-                    (i = [
+                    (o = [
                         {
                             key: "bb85c49d",
                             get: function () {
@@ -12859,21 +12860,21 @@
                             get: function () {
                                 var e,
                                     c = d.Children.toArray(this.props.children),
-                                    a = ((e = this.props.$i18n), b[u[e]] || o);
+                                    a = ((e = this.props.$i18n), b[u[e]] || i);
                                 return function (e, n, f) {
                                     return e.concat(n, c[a(f)]);
                                 };
                             },
                         },
-                    ]) && t(n.prototype, i),
+                    ]) && t(n.prototype, o),
                     g && t(n, g),
                     Object.defineProperty(n, "prototype", { writable: !1 }),
                     m
                 );
             })(a(674132)._ActualI18NFormatMessage || d.Component);
-            n("_ActualI18NFormatMessage", i),
+            n("_ActualI18NFormatMessage", o),
                 n("I18NFormatMessage", function (e) {
-                    return d.createElement(i, e);
+                    return d.createElement(o, e);
                 });
             var g = a(495075);
             a(800694), a(556829), a(530152), a(658610), a(492344), a(663823);
@@ -13222,4 +13223,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/gu.7fb0ff4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/gu.de74d4ca.js.map

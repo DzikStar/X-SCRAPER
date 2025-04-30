@@ -2537,7 +2537,7 @@
                 t("g62dcfbc", function (e) {
                     return "Moned" + r(e.count, "e", "ă", "e");
                 }),
-                t("be059f7e", "Ajungi la încă +100.000 de utilizatori acum"),
+                t("be059f7e", "Ajungi la până la încă 100.000 de utilizatori acum"),
                 t("c34f845e", "Încearcă să dai boost acestei postări!"),
                 t("c37102aa", "Fă ca postările tale să ajungă astăzi la peste 100.000 de utilizatori, pe care conținutul tău îi poate interesa."),
                 t("ac245c4c", "Dă boost pentru vizibilitate acum"),
@@ -3565,7 +3565,7 @@
                 t("ebc4fda0", "Urmează să ștergi istoricul de conversații cu Grok. Nu vei putea niciodată să accesezi din nou aceste conversații."),
                 t("c90fe716", "Ștergi conversațiile?"),
                 t("a8d516a4", "X poate partaja cu xAI datele tale publice de pe X, precum și interacțiunile ca utilizator, informațiile introduse și rezultatele obținute cu Grok pe X, pentru a instrui și a optimiza Grok și alte modele AI dezvoltate de xAI. Acest lucru ne ajută să îți îmbunătățim în permanență experiența de utilizator."),
-                t("a127886c", "Permite-i lui Gok să țină minte istoricul conversației"),
+                t("a127886c", "Permite-i lui Grok să țină minte istoricul conversației"),
                 t("f49b39b8", "Permite-i lui Grok să țină minte detalii din conversațiile anterioare. Poți șterge conversații individuale, pentru ca Grok să uite detaliile asociate."),
                 t("b7de9ad2", "Permite ca X să-ți personalizeze experiența cu Grok"),
                 t("ed141096", "Permite ca datele tale de pe X, precum şi interacțiunile, informațiile introduse și rezultatele oferite de Grok să fie utilizate pentru a-ți personaliza experiența cu Grok. X poate partaja cu xAI datele tale de pe X, precum și interacțiunile ca utilizator, informațiile introduse și rezultatele oferite de Grok, pentru a-ți personaliza experiența cu Grok și alte modele AI dezvoltate de xAI. Acest lucru ne ajută să îți îmbunătățim în permanență experiența de utilizator. "),
@@ -4169,7 +4169,7 @@
                 t("a9325f10", "Copiază imaginea"),
                 t("g0b12442", "Eșec la copierea imaginii"),
                 t("edd0c172", "Postează imaginea"),
-                t("d1d3a41a", "Editează imaginea"),
+                t("d1d3a41a", "Editare imagine"),
                 t("a2697040", "Descrie ce vrei să schimbi în imagine"),
                 t("ge1cefc4", "Instrumente"),
                 t("e9b6d404", "La ce instrumente de căutare ar trebui să aibă acces Grok?"),
@@ -6994,6 +6994,7 @@
                 t("ed672bfa", "Toate upgrade-urile din De bază și Premium, plus..."),
                 t("db63fa1c", "Selectează un plan Premium"),
                 t("b128c6bc", "Primește o insignă de utilizator verificat și zeci de alte avantaje și beneficii incredibile"),
+                t("a9904a1c", "Economisește la X Premium pentru o perioadă limitată"),
                 t("acfaf7a0", "Compară niveluri și caracteristici"),
                 t("e1606e52", "Modifică-ți abonamentul"),
                 t("d2f2b91a", "înregistrează-te aici"),
@@ -7859,8 +7860,7 @@
                 t("h37f2d96", "Ai în vedere că nu toate sistemele de monitorizare a candidaților sunt acceptate momentan."),
                 t("ce102a20", "Redirecționare către Stripe"),
                 t("ddfd6718", "Plata a eșuat"),
-                t("i90ea7d2", "Actualizează-ți urgent informațiile de facturare pentru a-ți păstra beneficiile."),
-                t("a62359e6", "Setări Organizații verificate");
+                t("i90ea7d2", "Actualizează-ți urgent informațiile de facturare pentru a-ți păstra beneficiile.");
             function c(e, a) {
                 for (var i = 0; i < a.length; i++) {
                     var t = a[i];
@@ -7899,7 +7899,8 @@
                     u(e, a)
                 );
             }
-            t("ge221b7c", "Fă upgrade la aboamentul pentru Organizații verificate pentru a avea acces la mai multe credite pentru reclame și afiliați."),
+            t("a62359e6", "Setări Organizații verificate"),
+                t("ge221b7c", "Fă upgrade la aboamentul pentru Organizații verificate pentru a avea acces la mai multe credite pentru reclame și afiliați."),
                 t("i4dccc18", "Facturare"),
                 t("ec3cd6e4", "Gestionează metoda de plată, actualizează informațiile de facturare și verifică-ți facturile."),
                 t("dac61c3c", "Setări cont"),
@@ -8901,11 +8902,11 @@
                 t("d1386940", "Rămâi informat"),
                 t("ecda5f9e", "Înșelător"),
                 t("a423473c", "Notificare impusă prin lege"),
-                t("b3296688", "Vizibilitate limitată"),
-                t("ccd32094", "Acum");
-            t("abfcce0d", function (e) {
-                return "Cu " + e.amountOfTime + " în urmă";
-            }),
+                t("b3296688", "Vizibilitate limitată");
+            t("ccd32094", "Acum"),
+                t("abfcce0d", function (e) {
+                    return "Cu " + e.amountOfTime + " în urmă";
+                }),
                 t("ae408b76", "Ai repostat"),
                 t("j355f008", "Postare fixată"),
                 t("habf9678", "Fixat de Autor"),
@@ -13220,4 +13221,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ro.c575be4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ro.c9b2cdba.js.map

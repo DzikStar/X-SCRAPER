@@ -6982,6 +6982,7 @@
                 n("ed672bfa", "Basic ve Premium planından yapılan tüm yükseltmelere ek olarak..."),
                 n("db63fa1c", "Bir Premium planı seç"),
                 n("b128c6bc", "Onaylı hesap rozeti ve düzinelerce başka harika avantaj ve fayda elde et"),
+                n("a9904a1c", "Sınırlı bir süre için geçerli teklifle X Premium'dan tasarruf et"),
                 n("acfaf7a0", "Katmanları ve özellikleri karşılaştır"),
                 n("e1606e52", "Aboneliğini değiştir"),
                 n("d2f2b91a", "buradan kaydolabilir"),
@@ -7847,8 +7848,7 @@
                 n("h37f2d96", "Şu anda tüm başvuru takip sistemlerinin desteklenmediğini lütfen unutma."),
                 n("ce102a20", "Stripe'a yönlendiriliyor"),
                 n("ddfd6718", "Ödeme Başarısız Oldu"),
-                n("i90ea7d2", "Avantajlardan yararlanmaya devam etmek için lütfen faturalandırma ayarlarını hemen güncelle."),
-                n("a62359e6", "Onaylı Kuruluş Ayarları");
+                n("i90ea7d2", "Avantajlardan yararlanmaya devam etmek için lütfen faturalandırma ayarlarını hemen güncelle.");
             function l(e, a) {
                 for (var i = 0; i < a.length; i++) {
                     var n = a[i];
@@ -7887,7 +7887,8 @@
                     t(e, a)
                 );
             }
-            n("ge221b7c", "Onaylı Kuruluşlar aboneliğini güncelleyerek ilişkili hesaplar ve daha fazla reklam kredisi avantajından yararlanın."),
+            n("a62359e6", "Onaylı Kuruluş Ayarları"),
+                n("ge221b7c", "Onaylı Kuruluşlar aboneliğini güncelleyerek ilişkili hesaplar ve daha fazla reklam kredisi avantajından yararlanın."),
                 n("i4dccc18", "Faturalandırma"),
                 n("ec3cd6e4", "Ödeme yöntemini yönet, faturalandırma bilgilerini güncelle ve faturalarını gözden geçir."),
                 n("dac61c3c", "Hesap ayarları"),
@@ -8889,11 +8890,11 @@
                 n("d1386940", "Haberdar ol"),
                 n("ecda5f9e", "Yanıltıcı"),
                 n("a423473c", "Yasal Olarak Gerekli Bildirim"),
-                n("b3296688", "Görünürlük Kısıtlandı"),
-                n("ccd32094", "Şimdi");
-            n("abfcce0d", function (e) {
-                return e.amountOfTime + " önce";
-            }),
+                n("b3296688", "Görünürlük Kısıtlandı");
+            n("ccd32094", "Şimdi"),
+                n("abfcce0d", function (e) {
+                    return e.amountOfTime + " önce";
+                }),
                 n("ae408b76", "Yeniden gönderi yayınladın"),
                 n("j355f008", "Sabitlenmiş gönderi"),
                 n("habf9678", "Yazar tarafından sabitlendi"),
@@ -13215,4 +13216,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/tr.215469aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/tr.0525128a.js.map

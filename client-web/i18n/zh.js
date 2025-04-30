@@ -6982,6 +6982,7 @@
                 f("ed672bfa", "基础和 Premium 订阅的所有升级，外加..."),
                 f("db63fa1c", "选择一项 Premium 计划"),
                 f("b128c6bc", "获得认证徽章以及几十种其他超棒的特权和福利"),
+                f("a9904a1c", "X Premium 限时优惠"),
                 f("acfaf7a0", "比较级别和功能"),
                 f("e1606e52", "更改你的订阅"),
                 f("d2f2b91a", "此处注册"),
@@ -7847,8 +7848,7 @@
                 f("h37f2d96", "请注意，目前并未支持所有的申请人跟踪系统。"),
                 f("ce102a20", "重定向至 Stripe"),
                 f("ddfd6718", "付款失败"),
-                f("i90ea7d2", "请立即更新你的账单，以保留你的特权。"),
-                f("a62359e6", "认证组织设置");
+                f("i90ea7d2", "请立即更新你的账单，以保留你的特权。");
             function t(e, c) {
                 for (var a = 0; a < c.length; a++) {
                     var f = c[a];
@@ -7887,7 +7887,8 @@
                     r(e, c)
                 );
             }
-            f("ge221b7c", "升级认证组织订阅，以便访问附属账号并获取更多广告积分。"),
+            f("a62359e6", "认证组织设置"),
+                f("ge221b7c", "升级认证组织订阅，以便访问附属账号并获取更多广告积分。"),
                 f("i4dccc18", "账单"),
                 f("ec3cd6e4", "管理付款方式、更新账单信息和查看发票。"),
                 f("dac61c3c", "账号设置"),
@@ -8889,11 +8890,11 @@
                 f("d1386940", "关注最新资讯"),
                 f("ecda5f9e", "误导"),
                 f("a423473c", "法律要求的声明"),
-                f("b3296688", "展示受限"),
-                f("ccd32094", "现在");
-            f("abfcce0d", function (e) {
-                return e.amountOfTime + " 前";
-            }),
+                f("b3296688", "展示受限");
+            f("ccd32094", "现在"),
+                f("abfcce0d", function (e) {
+                    return e.amountOfTime + " 前";
+                }),
                 f("ae408b76", "你已转帖"),
                 f("j355f008", "已置顶帖子"),
                 f("habf9678", "已被作者置顶"),
@@ -13221,4 +13222,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh.e8468b5a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh.091cafea.js.map

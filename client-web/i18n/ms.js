@@ -6982,6 +6982,7 @@
                 i("ed672bfa", "Semua naik taraf daripada Asas dan Premium, serta ..."),
                 i("db63fa1c", "Pilih pelan premium"),
                 i("b128c6bc", "Dapatkan lencana disahkan dan banyak lagi faedah dan manfaat"),
+                i("a9904a1c", "Berjimat untuk X Premium bagi masa yang terhad "),
                 i("acfaf7a0", "Bandingkan peringkat & ciri"),
                 i("e1606e52", "Ubah langganan anda"),
                 i("d2f2b91a", "daftar di sini"),
@@ -7847,8 +7848,7 @@
                 i("h37f2d96", "Harap maklum bahawa tidak semua sistem penjejakan pemohon disokong pada masa sekarang."),
                 i("ce102a20", "Mengubah hala ke Stripe"),
                 i("ddfd6718", "Pembayaran Gagal"),
-                i("i90ea7d2", "Sila kemas kini pengebilan anda dengan segera untuk mengekalkan manfaat anda."),
-                i("a62359e6", "Tetapan Organisasi Disahkan");
+                i("i90ea7d2", "Sila kemas kini pengebilan anda dengan segera untuk mengekalkan manfaat anda.");
             function u(a, n) {
                 for (var e = 0; e < n.length; e++) {
                     var i = n[e];
@@ -7887,7 +7887,8 @@
                     d(a, n)
                 );
             }
-            i("ge221b7c", "Naik taraf langganan Organisasi Disahkan untuk mendapatkan akses kepada ahli gabungan dan lebih banyak kredit iklan."),
+            i("a62359e6", "Tetapan Organisasi Disahkan"),
+                i("ge221b7c", "Naik taraf langganan Organisasi Disahkan untuk mendapatkan akses kepada ahli gabungan dan lebih banyak kredit iklan."),
                 i("i4dccc18", "Pengebilan"),
                 i("ec3cd6e4", "Uruskan kaedah pembayaran anda, kemas kini maklumat pengebilan, dan semak invois anda."),
                 i("dac61c3c", "Tetapan akaun"),
@@ -8889,11 +8890,11 @@
                 i("d1386940", "Sentiasa termaklum"),
                 i("ecda5f9e", "Mengelirukan"),
                 i("a423473c", "Notis Yang Diperlukan Oleh Undang-Undang"),
-                i("b3296688", "Keterlihatan Terhad"),
-                i("ccd32094", "Sekarang");
-            i("abfcce0d", function (a) {
-                return a.amountOfTime + " yang lalu";
-            }),
+                i("b3296688", "Keterlihatan Terhad");
+            i("ccd32094", "Sekarang"),
+                i("abfcce0d", function (a) {
+                    return a.amountOfTime + " yang lalu";
+                }),
                 i("ae408b76", "Anda membuat siaran semula"),
                 i("j355f008", "Siaran yang dipinkan"),
                 i("habf9678", "Dipinkan oleh Pengarang"),
@@ -13205,4 +13206,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.d905f91a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.7df26b0a.js.map

@@ -6992,6 +6992,7 @@
                 i("ed672bfa", "Wszystkie funkcje wersji Basic i Premium oraz..."),
                 i("db63fa1c", "Wybierz plan Premium"),
                 i("b128c6bc", "Uzyskaj odznakę zweryfikowanego konta oraz wiele innych niesamowitych korzyści"),
+                i("a9904a1c", "Oszczędzaj na subskrypcji X Premium przez ograniczony czas"),
                 i("acfaf7a0", "Porównaj poziomy i funkcje"),
                 i("e1606e52", "Zmień subskrypcję"),
                 i("d2f2b91a", "zarejestruj się tutaj"),
@@ -7857,8 +7858,7 @@
                 i("h37f2d96", "Pamiętaj, że nie wszystkie systemy śledzenia osób aplikujących są aktualnie obsługiwane."),
                 i("ce102a20", "Przekierowywanie do usługi Stripe"),
                 i("ddfd6718", "Realizacja płatności nie powiodła się"),
-                i("i90ea7d2", "Jak najszybciej zaktualizuj swoje rozliczenie, aby nie stracić korzyści."),
-                i("a62359e6", "Ustawienia zweryfikowanej organizacji");
+                i("i90ea7d2", "Jak najszybciej zaktualizuj swoje rozliczenie, aby nie stracić korzyści.");
             function t(e, a) {
                 for (var o = 0; o < a.length; o++) {
                     var i = a[o];
@@ -7897,7 +7897,8 @@
                     c(e, a)
                 );
             }
-            i("ge221b7c", "Podnieś poziom subskrypcji programu Zweryfikowane Organizacje, aby móc korzystać z kont powiązanych oraz otrzymać więcej kredytów reklamowych."),
+            i("a62359e6", "Ustawienia zweryfikowanej organizacji"),
+                i("ge221b7c", "Podnieś poziom subskrypcji programu Zweryfikowane Organizacje, aby móc korzystać z kont powiązanych oraz otrzymać więcej kredytów reklamowych."),
                 i("i4dccc18", "Rachunki"),
                 i("ec3cd6e4", "Zarządzaj sposobem płatności, aktualizuj informacje dotyczące rozliczeń i przeglądaj faktury."),
                 i("dac61c3c", "Ustawienia konta"),
@@ -8899,11 +8900,11 @@
                 i("d1386940", "Bądź na bieżąco"),
                 i("ecda5f9e", "Wprowadza w błąd"),
                 i("a423473c", "Informacja wymagana prawnie"),
-                i("b3296688", "Ograniczona widoczność"),
-                i("ccd32094", "Teraz");
-            i("abfcce0d", function (e) {
-                return e.amountOfTime + " temu";
-            }),
+                i("b3296688", "Ograniczona widoczność");
+            i("ccd32094", "Teraz"),
+                i("abfcce0d", function (e) {
+                    return e.amountOfTime + " temu";
+                }),
                 i("ae408b76", "Podano dalej"),
                 i("j355f008", "Przypięty wpis"),
                 i("habf9678", "Przypięty przez autora"),
@@ -13220,4 +13221,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.eaa23f7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.f3e8427a.js.map

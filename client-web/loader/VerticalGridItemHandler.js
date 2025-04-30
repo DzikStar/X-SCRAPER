@@ -32,9 +32,9 @@
                     return n.createElement(d.Z, { style: h.wrapper }, n.createElement(y.Z, { "aria-label": e, containerStyle: h.container, link: t, onClick: r, upper: a, withInteractiveStyling: !0 }));
                 };
             var k = r(674132),
-                E = r.n(k),
-                Z = r(324688),
-                v = r(233391),
+                v = r.n(k),
+                E = r(324688),
+                Z = r(233391),
                 S = r(288955),
                 x = r(71620),
                 R = r(668214),
@@ -42,13 +42,13 @@
             const T = (0, R.Z)()
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, x.zr)("TOPIC_TILE_CONTEXT"), follow: I.Z.follow, unfollow: I.Z.unfollow }))
                     .withAnalytics(),
-                L = E().je808a17,
-                F = E().ge8f3043,
-                A = E().aa576cbf,
-                _ = T((e) => {
+                L = v().je808a17,
+                z = v().ge8f3043,
+                F = v().aa576cbf,
+                H = T((e) => {
                     const { analytics: t, createLocalApiErrorHandler: r, follow: o, isRecommended: l, style: a, topic: c, unfollow: d, url: p } = e,
                         { following: u, id: m, name: b } = c,
-                        f = u ? A({ topicName: b }) : F({ topicName: b }),
+                        f = u ? F({ topicName: b }) : z({ topicName: b }),
                         y = n.useRef(!1),
                         g = (e, t, r) => (c.following ? e(k(r)) : e(h(t))),
                         h = (e) => (l) => {
@@ -63,26 +63,26 @@
                                 .then(e && e(c.id)),
                                 t.scribeAction("unfollow");
                         },
-                        E = (e) => {
+                        v = (e) => {
                             t.scribeAction("click");
                         };
-                    return n.createElement(S.Z, { customText: b, displayMode: v.BH.topic }, (e) =>
-                        n.createElement(Z.m.Consumer, null, ({ onFollow: t, onInitialize: r, onUnfollow: o }) => {
+                    return n.createElement(S.Z, { customText: b, displayMode: Z.BH.topic }, (e) =>
+                        n.createElement(E.m.Consumer, null, ({ onFollow: t, onInitialize: r, onUnfollow: o }) => {
                             r && !y.current && (r(m, u), (y.current = !0));
                             const c = l
                                 ? ((e, t, r) => ({ "aria-label": f, onClick: g(e, t, r), text: b }))(e, t, o)
                                 : ((e) => {
-                                      return { "aria-label": L({ topicName: b }), onClick: e(E), link: p?.url || ((t = m), `/i/topics/${t}`), text: b };
+                                      return { "aria-label": L({ topicName: b }), onClick: e(v), link: p?.url || ((t = m), `/i/topics/${t}`), text: b };
                                       var t;
                                   })(e);
                             return n.createElement(n.Fragment, null, a === i.pI.DoubleStateDefault ? n.createElement(w, (0, s.Z)({}, c, { isSelected: u })) : n.createElement(C, c));
                         }),
                     );
                 }),
-                z = (e, t) => {
+                A = (e, t) => {
                     if (t.entry.content.content.topicTile) return I.Z.select(e, t.entry.content.content?.topicTile.topicId);
                 },
-                H = ({ entry: e, feedbackItems: t, module: r, topic: o }) => {
+                _ = ({ entry: e, feedbackItems: t, module: r, topic: o }) => {
                     const l = (0, c.z)(),
                         { functionalityType: a, style: s, url: d } = e.content.content.topicTile,
                         p = a === i.sv.Recommendation;
@@ -90,12 +90,12 @@
                         n.useEffect(() => {
                             l.scribe({ action: "impression" });
                         }, [l]),
-                        o ? n.createElement(_, { isRecommended: p, style: s, topic: o, url: d }) : null
+                        o ? n.createElement(H, { isRecommended: p, style: s, topic: o, url: d }) : null
                     );
                 },
                 U = (0, R.Z)()
-                    .propsFromState(() => ({ topic: z }))
-                    .withAnalytics()(n.memo(H)),
+                    .propsFromState(() => ({ topic: A }))
+                    .withAnalytics()(n.memo(_)),
                 D = a
                     .iH({
                         component: U,
@@ -126,7 +126,7 @@
                     return o.createElement(n.Z, { "aria-label": e, disabled: r, interactive: g, interactiveStyles: g ? w : void 0, link: d, onClick: u, style: [c.root, t] }, h);
                 };
         },
-        98440: (e, t, r) => {
+        452693: (e, t, r) => {
             r.r(t), r.d(t, { default: () => c });
             var o = r(202784),
                 l = r(890601),
@@ -134,11 +134,11 @@
                 n = r(347101);
             const i = (e = {}) => {
                 const { direction: t } = (0, a.Z)();
-                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" })) }, { writingDirection: t });
+                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M12 1.75c-5.11 0-9.25 4.14-9.25 9.25 0 4.77 3.61 8.7 8.25 9.2v2.96l1.15-.17c1.88-.29 4.11-1.56 5.87-3.5 1.79-1.96 3.17-4.69 3.23-7.97.09-5.54-4.14-9.77-9.25-9.77zM13 14H9v-2h4v2zm2-4H9V8h6v2z" })) }, { writingDirection: t });
             };
             i.metadata = { width: 24, height: 24 };
             const c = i;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.VerticalGridItemHandler.123919ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.VerticalGridItemHandler.1ba5264a.js.map

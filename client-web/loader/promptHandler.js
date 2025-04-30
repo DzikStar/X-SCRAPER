@@ -3,7 +3,7 @@
     ["loader.promptHandler"],
     {
         32694: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => k });
+            n.r(t), n.d(t, { default: () => Z });
             var o = n(351322),
                 r = n(202784),
                 a = (n(136728), n(325686)),
@@ -38,11 +38,11 @@
             var y = n(674132),
                 C = n.n(y),
                 b = n(725516),
-                f = n(927389),
-                v = n(668214),
+                v = n(927389),
+                f = n(668214),
                 x = n(919022);
             const T = (e, t) => x.ZP.selectViewerUser(e),
-                R = (0, v.Z)().propsFromState(() => ({ viewerUser: T })),
+                R = (0, f.Z)().propsFromState(() => ({ viewerUser: T })),
                 E = C().a682906d,
                 S = R(({ entry: e, feedbackItems: t, viewerUser: n }) => {
                     const o = (0, b.z)(),
@@ -50,7 +50,7 @@
                         i = n?.favourites_count || 0,
                         s = a?.likesNeededToCompleteOnboarding || 0,
                         c = Math.max(0, s - i),
-                        l = r.useMemo(() => (t?.length ? r.createElement(f.Z, { feedbackItems: t }) : void 0), [t]);
+                        l = r.useMemo(() => (t?.length ? r.createElement(v.Z, { feedbackItems: t }) : void 0), [t]);
                     return (
                         r.useEffect(() => {
                             o.scribeAction("impression");
@@ -58,10 +58,10 @@
                         r.createElement(g, { bodyText: a?.bodyRichText?.text, currentLikeCount: i, headerIconUrl: a?.headerIconUrl, headerText: a?.headerRichText?.text, likeContext: E({ count: c }), rightControl: l, totalLikeCount: s })
                     );
                 }),
-                k = o.iH({ component: S }).getHandler();
+                Z = o.iH({ component: S }).getHandler();
         },
         565410: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => Z });
+            n.r(t), n.d(t, { default: () => k });
             var o = n(459643),
                 r = n(942893),
                 a = n(351322),
@@ -78,17 +78,17 @@
                 y = n(71620),
                 C = n(668214),
                 b = n(960919);
-            const f = (0, C.Z)().propsFromActions(({ module: e }) => ({ applyReactionInstructions: e.applyReactionInstructions, createLocalApiErrorHandler: (0, y.zr)("RELEVANCE_PROMPT"), processCallback: b.Z, updateEntry: e.updateEntry }));
-            var v = n(913973),
+            const v = (0, C.Z)().propsFromActions(({ module: e }) => ({ applyReactionInstructions: e.applyReactionInstructions, createLocalApiErrorHandler: (0, y.zr)("RELEVANCE_PROMPT"), processCallback: b.Z, updateEntry: e.updateEntry }));
+            var f = n(913973),
                 x = n(837020);
-            const T = (e) => ("IconCheckmark" === e ? i.createElement(v.default, null) : "IconClose" === e ? i.createElement(x.default, null) : void 0),
+            const T = (e) => ("IconCheckmark" === e ? i.createElement(f.default, null) : "IconClose" === e ? i.createElement(x.default, null) : void 0),
                 R = (e, t) => {
                     if (e && e === h.ThumbsUpAndDown) return t ? "IconCheckmark" : "IconClose";
                 },
                 E = ({ applyReactionInstructions: e, createLocalApiErrorHandler: t, entry: n, processCallback: o, updateEntry: r }) => {
                     const a = n.content.relevancePrompt && n.content.relevancePrompt,
-                        { confirmation: p, displayType: y = h.Compact, isRelevantCallback: C, isRelevantText: b, notRelevantCallback: f, notRelevantText: v, showConfirmation: x, subtitle: E, title: k } = a || {},
-                        Z = (0, g.z)(),
+                        { confirmation: p, displayType: y = h.Compact, isRelevantCallback: C, isRelevantText: b, notRelevantCallback: v, notRelevantText: f, showConfirmation: x, subtitle: E, title: Z } = a || {},
+                        k = (0, g.z)(),
                         P = R(y, !0),
                         w = R(y, !1),
                         I = y === h.ThumbsUpAndDown,
@@ -96,7 +96,7 @@
                         D = y === h.Large,
                         _ = c.b();
                     (0, u.q)(() => {
-                        Z.scribe({ element: "relevance_prompt", action: "impression" });
+                        k.scribe({ element: "relevance_prompt", action: "impression" });
                     });
                     const H = i.useCallback(
                             (e) => {
@@ -105,14 +105,14 @@
                             [t, n.entryId, o, a, r],
                         ),
                         M = i.useCallback(() => {
-                            Z.scribe({ element: "is_relevant", action: "click" }), H(C), e({ entry: n, triggerName: m.K.ON_IS_RELEVANT });
-                        }, [Z, e, n, C, H]),
+                            k.scribe({ element: "is_relevant", action: "click" }), H(C), e({ entry: n, triggerName: m.K.ON_IS_RELEVANT });
+                        }, [k, e, n, C, H]),
                         L = i.useCallback(() => {
-                            Z.scribe({ element: "not_relevant", action: "click" }), H(f);
-                        }, [Z, f, H]),
-                        O = k.length > 65 ? "title4" : "title3",
+                            k.scribe({ element: "not_relevant", action: "click" }), H(v);
+                        }, [k, v, H]),
+                        O = Z.length > 65 ? "title4" : "title3",
                         G = ({ isRelevant: e }) => {
-                            const t = e ? b : v,
+                            const t = e ? b : f,
                                 n = e ? P : w,
                                 o = e ? M : L;
                             return i.createElement(l.ZP, { "aria-label": t, icon: n ? T(n) : void 0, onPress: o, size: n || D ? "large" : "xSmall", style: n ? S.icon : !D && S.button, type: "primaryOutlined" }, n ? null : t);
@@ -121,11 +121,11 @@
                         U = i.useMemo(() => [I && S.thumbsUpDown, (A || D) && S.compact], [A, D, I]),
                         B = i.useMemo(() => [S.root, I && S.thumbsUpDown, D && S.large, A && S.compact], [I, D, A]),
                         F = i.useMemo(() => [S.buttonContainer, D && S.buttonContainerLarge], [D]);
-                    return i.createElement(s.Z, { "aria-labelledby": _, role: "group", style: z }, x ? i.createElement(s.Z, { role: "alert" }, i.createElement(d.ZP, { style: U }, p)) : i.createElement(s.Z, { style: B }, i.createElement(s.Z, { style: D ? S.firstHalfLarge : S.firstHalf }, i.createElement(d.ZP, { id: _, size: D ? O : void 0, weight: D ? "heavy" : void 0 }, k), E ? i.createElement(d.ZP, { color: "gray700", size: "subtext2" }, E) : null), i.createElement(s.Z, { style: !D && S.secondHalf }, i.createElement(s.Z, { style: F }, i.createElement(G, { isRelevant: !0 }), i.createElement(G, { isRelevant: !1 })))));
+                    return i.createElement(s.Z, { "aria-labelledby": _, role: "group", style: z }, x ? i.createElement(s.Z, { role: "alert" }, i.createElement(d.ZP, { style: U }, p)) : i.createElement(s.Z, { style: B }, i.createElement(s.Z, { style: D ? S.firstHalfLarge : S.firstHalf }, i.createElement(d.ZP, { id: _, size: D ? O : void 0, weight: D ? "heavy" : void 0 }, Z), E ? i.createElement(d.ZP, { color: "gray700", size: "subtext2" }, E) : null), i.createElement(s.Z, { style: !D && S.secondHalf }, i.createElement(s.Z, { style: F }, i.createElement(G, { isRelevant: !0 }), i.createElement(G, { isRelevant: !1 })))));
                 },
                 S = p.default.create((e) => ({ button: { margin: "1ex" }, buttonContainer: { display: "grid", gridTemplateColumns: "repeat(2,1fr)" }, buttonContainerLarge: { display: "flex", flexDirection: "column", flexGrow: 1, rowGap: e.spacesPx.space16 }, secondHalf: { width: "50%", display: "grid", justifyContent: "end" }, firstHalf: { width: "50%", flexDirection: "column", justifyContent: "center" }, firstHalfLarge: { display: "flex", flexDirection: "column", rowGap: e.spacesPx.space8 }, root: { flexDirection: "row", justifyContent: "space-between" }, promptContainer: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, promptContainerLarge: { paddingHorizontal: e.spacesPx.space32, paddingVertical: e.spacesPx.space32 }, compact: { padding: e.spaces.space12, borderColor: e.colors.buttonOutlinedBorder, borderRadius: e.spaces.space4, borderStyle: "solid", borderWidth: e.borderWidths.small }, thumbsUpDown: { display: "flex", borderRadius: e.spaces.space8, padding: e.spaces.space12, backgroundColor: e.colors.orange0, alignItems: "center", minHeight: e.spaces.space64 }, large: { display: "flex", flexDirection: "column", rowGap: e.spacesPx.space20 }, icon: { marginStart: e.spaces.space12 } })),
-                k = f(i.memo(E)),
-                Z = a.iH({ component: k, getScribeDataItem: (e) => r.Z.forRelevancePrompt(e.itemMetadata.clientEventInfo), isFocusable: (0, o.Z)(!0), shouldDisplayBorder: (0, o.Z)(!0) }).getHandler();
+                Z = v(i.memo(E)),
+                k = a.iH({ component: Z, getScribeDataItem: (e) => r.Z.forRelevancePrompt(e.itemMetadata.clientEventInfo), isFocusable: (0, o.Z)(!0), shouldDisplayBorder: (0, o.Z)(!0) }).getHandler();
         },
         927389: (e, t, n) => {
             n.d(t, { Z: () => d });
@@ -187,14 +187,14 @@
                     return o.createElement(r.Z, { style: l ? [C.root, C.rootMargin] : y.root }, o.createElement(o.Fragment, null, t ? this._renderImage(t, a, n) : null, e || d || i || c ? o.createElement(r.Z, { style: this.styles.rootPadding, testID: p }, this._renderTitle(), this._renderBodyText(), i ? this._renderAction({ action: i, buttonType: "primaryFilled", style: this.styles.primaryAction, buttonSize: "large", testID: u }) : null, c ? this._renderAction({ action: c, buttonType: "primaryOutlined", style: this.styles.secondaryAction, buttonSize: "large", testID: m }) : null) : null), s ? o.createElement(r.Z, { style: y.rightControl }, s) : null);
                 }
                 get styles() {
-                    return this.props.isCompact ? f : b;
+                    return this.props.isCompact ? v : b;
                 }
             }
             g.defaultProps = { shouldRenderBorder: !1 };
             const y = l.default.create((e) => ({ root: { backgroundColor: e.colors.cellBackground }, flexGrow: { flexGrow: 1 }, centeredImage: { display: "flex", flexDirection: "row", justifyContent: "center" }, rightControl: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical, position: "absolute", end: 0, top: 0 } })),
                 C = l.default.create((e) => ({ root: { borderColor: e.colors.nestedBorderColor, borderWidth: e.borderWidths.small, borderRadius: e.borderRadii.xLarge, overflow: "hidden" }, rootMargin: { marginStart: e.spaces.space16, marginEnd: e.spaces.space16 } })),
                 b = l.default.create((e) => ({ rootPadding: { padding: e.spaces.space32 }, body: { marginTop: e.spaces.space8 }, actionContainer: { flexDirection: "row" }, primaryAction: { marginTop: e.spaces.space28 }, secondaryAction: { marginTop: e.spaces.space16 } })),
-                f = l.default.create((e) => ({ rootPadding: { padding: e.spaces.space16 }, body: { marginTop: e.spaces.space2 }, actionContainer: { flexDirection: "row" }, primaryAction: { marginTop: e.spaces.space4 }, secondaryAction: { marginTop: e.spaces.space2 } }));
+                v = l.default.create((e) => ({ rootPadding: { padding: e.spaces.space16 }, body: { marginTop: e.spaces.space2 }, actionContainer: { flexDirection: "row" }, primaryAction: { marginTop: e.spaces.space4 }, secondaryAction: { marginTop: e.spaces.space2 } }));
         },
         173739: (e, t, n) => {
             n.d(t, { Z: () => i });
@@ -211,6 +211,19 @@
             n.d(t, { Z: () => r });
             var o = n(157396);
             const r = (0, n(587878).Z)({ palette: o.CV.light, key: "light-blue-normal", highContrastEnabled: !1, chirpFontEnabled: !1, scale: "normal" });
+        },
+        466445: (e, t, n) => {
+            n.r(t), n.d(t, { default: () => c });
+            var o = n(202784),
+                r = n(890601),
+                a = n(783427),
+                i = n(347101);
+            const s = (e = {}) => {
+                const { direction: t } = (0, a.Z)();
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M21 12L4 2v20l17-10z" })) }, { writingDirection: t });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const c = s;
         },
         151624: (e, t, n) => {
             n.d(t, { Z: () => o });
@@ -350,4 +363,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.promptHandler.d9a4f5ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.promptHandler.27250fba.js.map

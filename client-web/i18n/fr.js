@@ -4162,7 +4162,7 @@
                 n("a9325f10", "Copier l'image"),
                 n("g0b12442", "La copie de l'image a échoué."),
                 n("edd0c172", "Poster l'image"),
-                n("d1d3a41a", "Éditer l'image"),
+                n("d1d3a41a", "Édition d'images"),
                 n("a2697040", "Décrivez ce qu'il faut changer dans l'image"),
                 n("ge1cefc4", "Outils"),
                 n("e9b6d404", "À quels outils de recherche Grok doit‑il avoir accès ?"),
@@ -6987,6 +6987,7 @@
                 n("ed672bfa", "Toutes les mises à niveau des abonnements Basique et Premium, plus…"),
                 n("db63fa1c", "Choisissez un abonnement Premium"),
                 n("b128c6bc", "Obtenez un badge Certifié et des dizaines d'autres avantages et bénéfices exceptionnels."),
+                n("a9904a1c", "Économisez sur X Premium (durée limitée)"),
                 n("acfaf7a0", "Comparer les abonnements et fonctionnalités"),
                 n("e1606e52", "Modifier l'abonnement"),
                 n("d2f2b91a", "inscrivez‑vous ici"),
@@ -7852,8 +7853,7 @@
                 n("h37f2d96", "Veuillez noter que les systèmes de suivi des candidatures ne sont actuellement pas tous pris en charge."),
                 n("ce102a20", "Redirection vers Stripe"),
                 n("ddfd6718", "Échec du paiement"),
-                n("i90ea7d2", "Veuillez rapidement mettre vos paramètres de facturation à jour pour conserver vos avantages."),
-                n("a62359e6", "Paramètres d'organisation certifiée");
+                n("i90ea7d2", "Veuillez rapidement mettre vos paramètres de facturation à jour pour conserver vos avantages.");
             function a(e, t) {
                 for (var s = 0; s < t.length; s++) {
                     var n = t[s];
@@ -7892,7 +7892,8 @@
                     i(e, t)
                 );
             }
-            n("ge221b7c", "Mettez à niveau vers l'abonnement Organisations certifiées pour accéder aux affiliés et à davantage de crédits publicitaires."),
+            n("a62359e6", "Paramètres d'organisation certifiée"),
+                n("ge221b7c", "Mettez à niveau vers l'abonnement Organisations certifiées pour accéder aux affiliés et à davantage de crédits publicitaires."),
                 n("i4dccc18", "Facturation"),
                 n("ec3cd6e4", "Gérez votre moyen de paiement, mettez vos informations de facturation à jour et passez vos factures en revue."),
                 n("dac61c3c", "Paramètres du compte"),
@@ -8894,11 +8895,11 @@
                 n("d1386940", "Soyez au fait de l'actualité"),
                 n("ecda5f9e", "Trompeur"),
                 n("a423473c", "Avis requis par la loi"),
-                n("b3296688", "Visibilité limitée"),
-                n("ccd32094", "Maintenant");
-            n("abfcce0d", function (e) {
-                return "Il y a " + e.amountOfTime;
-            }),
+                n("b3296688", "Visibilité limitée");
+            n("ccd32094", "Maintenant"),
+                n("abfcce0d", function (e) {
+                    return "Il y a " + e.amountOfTime;
+                }),
                 n("ae408b76", "Vous avez reposté"),
                 n("j355f008", "Post épinglé"),
                 n("habf9678", "Épinglé par l'auteur"),
@@ -13210,4 +13211,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.d16ca18a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.36c6549a.js.map

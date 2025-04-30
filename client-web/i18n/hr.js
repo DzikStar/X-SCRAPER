@@ -6990,6 +6990,7 @@
                 o("ed672bfa", "Sve nadogradnje osnovne i Premium pretplate plus..."),
                 o("db63fa1c", "Odaberite Premium plan"),
                 o("b128c6bc", "Preuzmite značku provjerenog računa i desetke drugih sjajnih povlastica i pogodnosti"),
+                o("a9904a1c", "Uštedite na pretplati za X Premium tijekom ograničenog vremena"),
                 o("acfaf7a0", "Usporedba razina i značajki"),
                 o("e1606e52", "Promijenite pretplatu"),
                 o("d2f2b91a", "prijava se izvršava ovdje"),
@@ -7855,8 +7856,7 @@
                 o("h37f2d96", "Imajte na umu da trenutačno nisu podržani svi sustavi za praćenje kandidata."),
                 o("ce102a20", "Preusmjeravanje na uslugu Stripe"),
                 o("ddfd6718", "Plaćanje nije uspjelo"),
-                o("i90ea7d2", "Hitno ažurirajte podatke za naplatu da biste zadržali pogodnosti."),
-                o("a62359e6", "Postavke provjerenih organizacija");
+                o("i90ea7d2", "Hitno ažurirajte podatke za naplatu da biste zadržali pogodnosti.");
             function t(a, e) {
                 for (var i = 0; i < e.length; i++) {
                     var o = e[i];
@@ -7895,7 +7895,8 @@
                     r(a, e)
                 );
             }
-            o("ge221b7c", "Nadogradite pretplatu za Provjerene organizacije kako biste dobili pristup povezanim računima i više kredita za oglase."),
+            o("a62359e6", "Postavke provjerenih organizacija"),
+                o("ge221b7c", "Nadogradite pretplatu za Provjerene organizacije kako biste dobili pristup povezanim računima i više kredita za oglase."),
                 o("i4dccc18", "Naplata"),
                 o("ec3cd6e4", "Upravljajte načinom plaćanja, ažurirajte podatke za naplatu i pregledajte fakture."),
                 o("dac61c3c", "Postavke računa"),
@@ -8897,11 +8898,11 @@
                 o("d1386940", "Ostanite u toku"),
                 o("ecda5f9e", "Sadrži netočne informacije"),
                 o("a423473c", "Obavezna pravna napomena"),
-                o("b3296688", "Vidljivost je ograničena"),
-                o("ccd32094", "Odmah");
-            o("abfcce0d", function (a) {
-                return "Prije " + a.amountOfTime;
-            }),
+                o("b3296688", "Vidljivost je ograničena");
+            o("ccd32094", "Odmah"),
+                o("abfcce0d", function (a) {
+                    return "Prije " + a.amountOfTime;
+                }),
                 o("ae408b76", "Proslijedili ste objavu"),
                 o("j355f008", "Prikvačena objava"),
                 o("habf9678", "Prikvačio autor"),
@@ -13228,4 +13229,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hr.4ced8afa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hr.bfbff6ca.js.map

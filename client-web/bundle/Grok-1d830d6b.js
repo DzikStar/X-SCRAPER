@@ -22,7 +22,7 @@
                 const f = (0, m.z)(),
                     k = (0, u.I0)(),
                     [I, y] = n.useState(!1),
-                    _ = "SEARCH" === r?.mode || "DEEPER_SEARCH" === r?.mode ? l.default : i.default,
+                    _ = "SEARCH" === r?.mode || "DEEPERSEARCH" === r?.mode ? l.default : i.default,
                     w = (0, p.bD)(e),
                     E = n.useMemo(() => (t ? r.mobile : r.web), [t, r]),
                     { isReasoningEnabled: v, isResearchEnabled: x, selectDeepsearchMode: Z, selectReasoningMode: D, setDeepersearchAdvancedSettings: S, setDeepsearchAdvancedSettings: P } = (0, C.w)(),
@@ -37,9 +37,9 @@
                         (t) => {
                             f.scribe({ component: `follow_up_suggested_mode_${t.mode}`, action: "click" });
                             const n = "SEARCH" === t.mode,
-                                o = "DEEPER_SEARCH" === t.mode,
+                                o = "DEEPERSEARCH" === t.mode,
                                 s = "THINK" === t.mode;
-                            (!n && !o) || x ? s && !v && D() : (o ? S() : P(), Z()), k((0, b.u)({ analytics: f, conversationKey: e })({ text: M?.message?.message, returnCitations: !0, isDeepsearch: n || o, isReasoning: s, deepsearchArgsOverride: o ? { mode: g.z_ } : void 0 })), a && a();
+                            n || o ? (o ? S() : P(), x || Z()) : s && !v && D(), k((0, b.u)({ analytics: f, conversationKey: e })({ text: M?.message?.message, returnCitations: !0, isDeepsearch: n || o, isReasoning: s, deepsearchArgsOverride: o ? { mode: g.z_ } : void 0 })), a && a();
                         },
                         [M, f, e, k, a, v, x, Z, D, S, P],
                     );
@@ -403,4 +403,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-1d830d6b.5d317eca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-1d830d6b.32f1ba4a.js.map

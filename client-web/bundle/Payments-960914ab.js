@@ -664,7 +664,7 @@
         },
         976352: (e, a, n) => {
             n.d(a, { C: () => l });
-            const l = Object.freeze({ ContactSupport: "ContactSupport", Deposit: "Deposit", GetPremium: "GetPremium", KycDocumentUpload: "KycDocumentUpload", KycVerification: "KycVerification", LearnMore: "LearnMore", SelfieVerification: "SelfieVerification" });
+            const l = Object.freeze({ ContactSupport: "ContactSupport", Deposit: "Deposit", GetPremium: "GetPremium", KycDocumentUpload: "KycDocumentUpload", KycVerification: "KycVerification", LearnMore: "LearnMore", Questionnaire: "Questionnaire", SelfieVerification: "SelfieVerification", SetupPasskey: "SetupPasskey" });
         },
         988291: (e, a, n) => {
             n.d(a, { S: () => l });
@@ -1411,4 +1411,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-960914ab.1920525a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-960914ab.0b17a5ca.js.map

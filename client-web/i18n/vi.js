@@ -6982,6 +6982,7 @@
                 t("ed672bfa", "Tất cả được nâng cấp từ gói Cơ bản và Premium, cộng với..."),
                 t("db63fa1c", "Chọn gói Premium"),
                 t("b128c6bc", "Nhận huy hiệu đã xác nhận và hàng chục đặc quyền cũng như lợi ích tuyệt vời khác"),
+                t("a9904a1c", "Tiết kiệm khi mua X Premium trong thời gian có hạn"),
                 t("acfaf7a0", "So cách các loại gói và tính năng"),
                 t("e1606e52", "Thay đổi gói thuê bao của bạn"),
                 t("d2f2b91a", "đăng ký tại đây"),
@@ -7847,8 +7848,7 @@
                 t("h37f2d96", "Hãy lưu ý rằng hiện tại, không phải hệ thống theo dõi ứng viên nào cũng được hỗ trợ."),
                 t("ce102a20", "Đang chuyển hướng đến Stripe"),
                 t("ddfd6718", "Thanh toán không thành công"),
-                t("i90ea7d2", "Vui lòng cập nhật gấp thông tin thanh toán để tiếp tục hưởng quyền lợi."),
-                t("a62359e6", "Cài đặt Tổ chức đã xác nhận");
+                t("i90ea7d2", "Vui lòng cập nhật gấp thông tin thanh toán để tiếp tục hưởng quyền lợi.");
             function g(n, h) {
                 for (var c = 0; c < h.length; c++) {
                     var t = h[c];
@@ -7887,7 +7887,8 @@
                     a(n, h)
                 );
             }
-            t("ge221b7c", "Nâng cấp gói thuê bao Tổ chức đã xác nhận để có quyền sử dụng tính năng bên liên kết và nhận thêm tín dụng quảng cáo."),
+            t("a62359e6", "Cài đặt Tổ chức đã xác nhận"),
+                t("ge221b7c", "Nâng cấp gói thuê bao Tổ chức đã xác nhận để có quyền sử dụng tính năng bên liên kết và nhận thêm tín dụng quảng cáo."),
                 t("i4dccc18", "Thanh toán"),
                 t("ec3cd6e4", "Quản lý phương thức thanh toán, cập nhật thông tin thanh toán và xem hóa đơn."),
                 t("dac61c3c", "Cài đặt tài khoản"),
@@ -8889,11 +8890,11 @@
                 t("d1386940", "Nhận thông báo"),
                 t("ecda5f9e", "Lừa dối"),
                 t("a423473c", "Thông báo theo quy định của pháp luật"),
-                t("b3296688", "Hạn chế khả năng hiển thị"),
-                t("ccd32094", "Bây giờ");
-            t("abfcce0d", function (n) {
-                return n.amountOfTime + " trước";
-            }),
+                t("b3296688", "Hạn chế khả năng hiển thị");
+            t("ccd32094", "Bây giờ"),
+                t("abfcce0d", function (n) {
+                    return n.amountOfTime + " trước";
+                }),
                 t("ae408b76", "Bạn đã đăng lại"),
                 t("j355f008", "Bài đăng đã ghim"),
                 t("habf9678", "Đã được Tác giả ghim"),
@@ -13205,4 +13206,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.ca3f084a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.ec891cca.js.map

@@ -437,79 +437,77 @@
                 x = 523,
                 C = o.default.create((e) => ({ container: { position: "relative", alignItems: "center" }, spinner: { alignItems: "center", position: "absolute", start: 0, end: 0, justifyContent: "center" }, label: { color: e.colors.text } })),
                 P = ({ props: e }) => {
-                    const t = e.str("mobileKey"),
-                        r = e.str("webKey"),
-                        { featureSwitches: c } = s.useContext(m.rC),
-                        d = (0, y.z)(),
-                        P = (0, h.v9)(g.OW),
-                        W = (0, l.useLocation)(),
-                        M = e.str("dataExchangeToken") ?? "",
-                        $ = e.str("name") ?? "arkose_token",
-                        T = t ? c.getStringValue(t) : "",
-                        R = r ? c.getStringValue(r) : "",
-                        N = s.useMemo(() => p.ZP.isWebView(), []),
-                        O = N ? (window.matchMedia("(prefers-color-scheme: dark)") ? "dark" : "default") : k[o.default.theme.paletteName],
-                        B = s.useMemo(() => N || window.innerWidth < w, [N]),
-                        [D, F] = s.useState(B ? S : x),
-                        [I, L] = s.useState(B ? E : w),
-                        [V, _] = s.useState(f.t.passive),
-                        j = s.useMemo(() => (B ? Math.min((window.innerWidth - 32) / E, (window.innerHeight - 32) / S) : 1), [B]),
-                        z = W.query?.guestId,
-                        Q = s.useMemo(() => (N && "string" == typeof z ? z : N ? "" : P || ""), [N, z, P]),
-                        H = s.useCallback(() => {
-                            f.Z.loadIframe(d, Q, t || "", r || "");
-                        }, [d, Q, t, r]),
-                        { change: A, submit: q, values: J } = s.useContext(Z.q3),
-                        [K, G] = s.useState("loading"),
-                        U = (0, u.r)((e) => {
+                    const t = e.str("publicKey") ?? e.str("webKey"),
+                        { featureSwitches: r } = s.useContext(m.rC),
+                        c = (0, y.z)(),
+                        d = (0, h.v9)(g.OW),
+                        P = (0, l.useLocation)(),
+                        W = e.str("dataExchangeToken") ?? "",
+                        M = e.str("name") ?? "arkose_token",
+                        T = t ? r.getStringValue(t) : "",
+                        $ = s.useMemo(() => p.ZP.isWebView(), []),
+                        R = $ ? (window.matchMedia("(prefers-color-scheme: dark)") ? "dark" : "default") : k[o.default.theme.paletteName],
+                        N = s.useMemo(() => $ || window.innerWidth < w, [$]),
+                        [O, B] = s.useState(N ? S : x),
+                        [D, F] = s.useState(N ? E : w),
+                        [I, L] = s.useState(f.t.passive),
+                        _ = s.useMemo(() => (N ? Math.min((window.innerWidth - 32) / E, (window.innerHeight - 32) / S) : 1), [N]),
+                        j = P.query?.guestId,
+                        z = s.useMemo(() => ($ && "string" == typeof j ? j : $ ? "" : d || ""), [$, j, d]),
+                        V = s.useCallback(() => {
+                            f.Z.loadIframe(c, z, t || "", t || "");
+                        }, [c, z, t]),
+                        { change: Q, submit: H, values: A } = s.useContext(Z.q3),
+                        [q, J] = s.useState("loading"),
+                        K = (0, u.r)((e) => {
                             if ("string" == typeof e.data)
                                 try {
-                                    const s = JSON.parse(e.data);
-                                    switch (s.eventId) {
+                                    const r = JSON.parse(e.data);
+                                    switch (r.eventId) {
                                         case "challenge-suppressed":
-                                            f.Z.suppressedChallenge(d, Q, t || "0", r || "0"), _(f.t.passive);
+                                            f.Z.suppressedChallenge(c, z, t || "0", t || "0"), L(f.t.passive);
                                             break;
                                         case "challenge-shown":
-                                            f.Z.shownChallenge(d, Q, t || "0", r || "0"), _(f.t.interactive), G("shown");
+                                            f.Z.shownChallenge(c, z, t || "0", t || "0"), L(f.t.interactive), J("shown");
                                             break;
                                         case "challenge-complete": {
-                                            f.Z.completeChallenge(d, Q, V, t || "0", r || "0");
-                                            const e = s.payload.sessionToken;
-                                            A($, e), G("complete");
+                                            f.Z.completeChallenge(c, z, I, t || "0", t || "0");
+                                            const e = r.payload.sessionToken;
+                                            Q(M, e), J("complete");
                                             break;
                                         }
                                         case "challenge-iframeSize":
-                                            F(s.payload.frameHeight), L(s.payload.frameWidth);
+                                            B(r.payload.frameHeight), F(r.payload.frameWidth);
                                             break;
                                         case "challenge-loaded":
-                                            G("loaded");
+                                            J("loaded");
                                             break;
                                         case "challenge-failed":
-                                            G("failed");
+                                            J("failed");
                                             break;
                                         case "challenge-error":
-                                            G("errored");
+                                            J("errored");
                                     }
                                 } catch (e) {
-                                    G("errored"), (0, b.ZP)(e);
+                                    J("errored"), (0, b.ZP)(e);
                                 }
                         });
                     s.useEffect(
                         () => (
-                            window.addEventListener("message", U, !1),
+                            window.addEventListener("message", K, !1),
                             () => {
-                                window.removeEventListener("message", U, !1);
+                                window.removeEventListener("message", K, !1);
                             }
                         ),
-                        [U],
+                        [K],
                     );
-                    const X = null != J[$],
-                        Y = s.useRef(!1);
+                    const G = null != A[M],
+                        U = s.useRef(!1);
                     return (
                         s.useEffect(() => {
-                            X && !Y.current && ((Y.current = !0), q());
-                        }, [X, q]),
-                        s.createElement(n.Z, { style: C.container }, s.createElement(n.Z, { style: [C.spinner, { height: D }] }, "loading" === K || "loaded" === K ? s.createElement(i.Z, null) : "complete" === K ? s.createElement(a.Z, { style: C.label }, v) : null), s.createElement("iframe", { height: D, id: "arkoseFrame", onLoad: H, src: [B ? `https://iframe.arkoselabs.com/${T}/index.html?theme=${O}` : `https://iframe.arkoselabs.com/${R}/index.html?theme=${O}`, M && `&data=${M}`].filter(Boolean).join(""), style: { MozTransform: `scale(${j})`, OTransform: `scale(${j})`, WebkitTransform: `scale(${j})`, borderWidth: 0, MozTransformOrigin: "50% 0", OTransformOrigin: "50% 0", WebkitTransformOrigin: "50% 0", alignSelf: "center" }, title: "arkoseFrame", width: I }))
+                            G && !U.current && ((U.current = !0), H());
+                        }, [G, H]),
+                        s.createElement(n.Z, { style: C.container }, s.createElement(n.Z, { style: [C.spinner, { height: O }] }, "loading" === q || "loaded" === q ? s.createElement(i.Z, null) : "complete" === q ? s.createElement(a.Z, { style: C.label }, v) : null), s.createElement("iframe", { height: O, id: "arkoseFrame", onLoad: V, src: [`https://iframe.arkoselabs.com/${T}/index.html?theme=${R}`, W && `&data=${W}`].filter(Boolean).join(""), style: { MozTransform: `scale(${_})`, OTransform: `scale(${_})`, WebkitTransform: `scale(${_})`, borderWidth: 0, MozTransformOrigin: "50% 0", OTransformOrigin: "50% 0", WebkitTransformOrigin: "50% 0", alignSelf: "center" }, title: "arkoseFrame", width: D }))
                     );
                 };
         },
@@ -523,4 +521,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-b2a4a903.7bceab7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-b2a4a903.5b91b9ea.js.map

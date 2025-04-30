@@ -6983,6 +6983,7 @@
                 t("ed672bfa", "Totes les actualitzacions des de Basic i Premium més..."),
                 t("db63fa1c", "Selecciona un pla premium"),
                 t("b128c6bc", "Aconsegueix una insígnia verificada i desenes d'altres avantatges i beneficis increïbles"),
+                t("a9904a1c", "Estalvia en X Premium durant un temps limitat"),
                 t("acfaf7a0", "Compara nivells i característiques"),
                 t("e1606e52", "Canvia la teva subscripció"),
                 t("d2f2b91a", "registre aquí"),
@@ -7848,8 +7849,7 @@
                 t("h37f2d96", "Tingues en compte que ara per ara no s'admeten tots els sistemes de seguiment d'aspirants."),
                 t("ce102a20", "Redirigint-te a Stripe"),
                 t("ddfd6718", "Ha fallat el pagament"),
-                t("i90ea7d2", "Actualitza la facturació urgentment per conservar els avantatges."),
-                t("a62359e6", "Configuració d'organització verificada");
+                t("i90ea7d2", "Actualitza la facturació urgentment per conservar els avantatges.");
             function s(e, a) {
                 for (var i = 0; i < a.length; i++) {
                     var t = a[i];
@@ -7888,7 +7888,8 @@
                     n(e, a)
                 );
             }
-            t("ge221b7c", "Actualitza a la subscripció d'Organització verificada per accedir a l'opció d'afiliats i a més crèdits per a anuncis."),
+            t("a62359e6", "Configuració d'organització verificada"),
+                t("ge221b7c", "Actualitza a la subscripció d'Organització verificada per accedir a l'opció d'afiliats i a més crèdits per a anuncis."),
                 t("i4dccc18", "Facturació"),
                 t("ec3cd6e4", "Gestiona el mètode de pagament, modifica les dades de facturació i consulta les factures."),
                 t("dac61c3c", "Configuració del compte"),
@@ -8890,11 +8891,11 @@
                 t("d1386940", "Rep informació"),
                 t("ecda5f9e", "Enganyós"),
                 t("a423473c", "Avís legalment requerit"),
-                t("b3296688", "Visibilitat limitada"),
-                t("ccd32094", "Ara");
-            t("abfcce0d", function (e) {
-                return "Fa " + e.amountOfTime;
-            }),
+                t("b3296688", "Visibilitat limitada");
+            t("ccd32094", "Ara"),
+                t("abfcce0d", function (e) {
+                    return "Fa " + e.amountOfTime;
+                }),
                 t("ae408b76", "Ho has republicat"),
                 t("j355f008", "Publicació fixada"),
                 t("habf9678", "Fixat per l'autor"),
@@ -13207,4 +13208,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ca.014f638a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ca.f2820d0a.js.map

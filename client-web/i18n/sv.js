@@ -6983,6 +6983,7 @@
                 t("ed672bfa", "Alla uppgraderingar från grundnivån och Premium samt …"),
                 t("db63fa1c", "Välj en premiumplan"),
                 t("b128c6bc", "Få ett verifieringsmärke och dussintals andra makalösa förmåner"),
+                t("a9904a1c", "Spara på X Premium under begränsad tid"),
                 t("acfaf7a0", "Jämför nivåer och funktioner"),
                 t("e1606e52", "Ändra prenumeration"),
                 t("d2f2b91a", "registrera sig här"),
@@ -7848,8 +7849,7 @@
                 t("h37f2d96", "Observera att inte alla system för att hålla reda på sökande stöds nu."),
                 t("ce102a20", "Omdirigerar till Stripe"),
                 t("ddfd6718", "Betalningen misslyckades"),
-                t("i90ea7d2", "Uppdatera dina faktureringsuppgifter snarast för att behålla dina förmåner."),
-                t("a62359e6", "Inställningar för Verifierade organisationer");
+                t("i90ea7d2", "Uppdatera dina faktureringsuppgifter snarast för att behålla dina förmåner.");
             function i(e, a) {
                 for (var n = 0; n < a.length; n++) {
                     var t = a[n];
@@ -7888,7 +7888,8 @@
                     d(e, a)
                 );
             }
-            t("ge221b7c", "Uppgradera prenumerationen på Verifierade organisationer för att få tillgång till anknutna konton och fler annonskrediter."),
+            t("a62359e6", "Inställningar för Verifierade organisationer"),
+                t("ge221b7c", "Uppgradera prenumerationen på Verifierade organisationer för att få tillgång till anknutna konton och fler annonskrediter."),
                 t("i4dccc18", "Fakturering"),
                 t("ec3cd6e4", "Hantera din betalningsmetod, uppdatera faktureringsinformationen och granska dina fakturor."),
                 t("dac61c3c", "Kontoinställningar"),
@@ -8890,11 +8891,11 @@
                 t("d1386940", "Håll dig underrättad"),
                 t("ecda5f9e", "Vilseledande"),
                 t("a423473c", "Obligatoriskt juridiskt meddelande"),
-                t("b3296688", "Begränsad synlighet"),
-                t("ccd32094", "Nu");
-            t("abfcce0d", function (e) {
-                return e.amountOfTime + " sedan";
-            }),
+                t("b3296688", "Begränsad synlighet");
+            t("ccd32094", "Nu"),
+                t("abfcce0d", function (e) {
+                    return e.amountOfTime + " sedan";
+                }),
                 t("ae408b76", "Du återpublicerade"),
                 t("j355f008", "Fastnålat inlägg"),
                 t("habf9678", "Fastnålat av upphovsmannen"),
@@ -13207,4 +13208,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sv.ac9c57aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sv.139f088a.js.map

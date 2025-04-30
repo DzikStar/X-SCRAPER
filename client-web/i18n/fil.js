@@ -6983,6 +6983,7 @@
                 i("ed672bfa", "Lahat ng upgrade mula Basic at Premium, kasama ang ..."),
                 i("db63fa1c", "Pumili ng premium plan"),
                 i("b128c6bc", "Makakuha ng badge na na-verify at iba pang pambihirang perks at benepisyo"),
+                i("a9904a1c", "Makatipid sa X Premium sa loob ng limitadong panahon"),
                 i("acfaf7a0", "Maghambing ng mga tier at feature"),
                 i("e1606e52", "Palitan ang subscription"),
                 i("d2f2b91a", "mag-sign up dito "),
@@ -7848,8 +7849,7 @@
                 i("h37f2d96", "Pakitandaan na hindi lahat ng applicant tracking system ay kasalukuyang sinusuportahan."),
                 i("ce102a20", "Nire-redirect sa Stripe"),
                 i("ddfd6718", "Hindi Naproseso ang Pagbabayad"),
-                i("i90ea7d2", "Paki-update agad ang billing mo para mapanatili ang mga benepisyo mo."),
-                i("a62359e6", "Mga Setting ng Beripikadong Organisasyon");
+                i("i90ea7d2", "Paki-update agad ang billing mo para mapanatili ang mga benepisyo mo.");
             function t(a, n) {
                 for (var g = 0; g < n.length; g++) {
                     var i = n[g];
@@ -7888,7 +7888,8 @@
                     o(a, n)
                 );
             }
-            i("ge221b7c", "I-upgrade ang subscription sa Beripikadong Organisasyon para magkaroon ng access sa mga affiliate at iba pang ad credit. "),
+            i("a62359e6", "Mga Setting ng Beripikadong Organisasyon"),
+                i("ge221b7c", "I-upgrade ang subscription sa Beripikadong Organisasyon para magkaroon ng access sa mga affiliate at iba pang ad credit. "),
                 i("i4dccc18", "Billing"),
                 i("ec3cd6e4", "Pamahalaan ang paraan mo ng pagbabayad, i-update ng impormasyon ng billing, at i-review ang mga invoice mo."),
                 i("dac61c3c", "Mga setting ng account"),
@@ -8890,11 +8891,11 @@
                 i("d1386940", "Manatiling nakakaalam"),
                 i("ecda5f9e", "Mapanlinlang"),
                 i("a423473c", "Abiso na Legal na Kinakailangan"),
-                i("b3296688", "Limitado ang Makakakita"),
-                i("ccd32094", "Ngayon");
-            i("abfcce0d", function (a) {
-                return a.amountOfTime + " ang nakalipas";
-            }),
+                i("b3296688", "Limitado ang Makakakita");
+            i("ccd32094", "Ngayon"),
+                i("abfcce0d", function (a) {
+                    return a.amountOfTime + " ang nakalipas";
+                }),
                 i("ae408b76", "Nag-repost ka"),
                 i("j355f008", "Naka-pin na post"),
                 i("habf9678", "Na-pin ng Author"),
@@ -13219,4 +13220,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fil.a3277b5a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fil.41009b2a.js.map

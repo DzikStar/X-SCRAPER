@@ -271,8 +271,8 @@
             var k = i(90890),
                 R = i(97837);
             const L = "videoPlayer",
-                O = new y.ZP({});
-            class D extends r.Component {
+                D = new y.ZP({});
+            class O extends r.Component {
                 constructor(e, t) {
                     super(e, t),
                         (this._emitter = null),
@@ -307,7 +307,7 @@
                                 } = this.props,
                                 R = this.context.featureSwitches.isTrue("rweb_video_pip_enabled"),
                                 L = this.context.featureSwitches.isTrue("rweb_live_broadcast_rewind_enabled");
-                            return r.createElement(f.R.Consumer, null, ({ prerollDisplayLocation: f }) => r.createElement(u.Z, (0, a.Z)({ adProvider: this._tweetAdProvider(f), additionalBadges: t, analytics: i, "aria-label": s, aspectRatio: o, basePlayerClass: S, configType: "static", contentId: b, cta: this._getPlayerCTA(), disableHls: this._disableHls, durationMs: l, enablePiP: R, enableVideoPlayerCaptionRendering: !0, eventId: g, featureProvider: this.context.featureSwitches, geolocationPrompt: c, httpClient: y, includeBroadcastEventAssociation: d, intentToPlayTime: p, language: h, liveBroadcastRewindEnabled: L, mediaAvailability: _, objectFitVideo: n && n.objectFitVideo, onApiReady: this._handleApiReady, playbackSessionId: I.id, playerId: m, precache: this._shouldAutoplay, publisherId: P, requestedTimecode: E, twitterAuthedHttpClient: A, videoEl: T, videoId: I, viewCount: w, viewCountGraphData: k, vmapUrl: v }, e), C));
+                            return r.createElement(f.R.Consumer, null, ({ prerollDisplayLocation: f }) => r.createElement(u.Z, (0, a.Z)({ adProvider: this._tweetAdProvider(f), additionalBadges: t, analytics: i, "aria-label": s, aspectRatio: o, basePlayerClass: S, configType: "static", contentId: b, cta: this._getPlayerCTA(), disableHls: this._disableHls, durationMs: l, enablePiP: R, enableVideoPlayerCaptionRendering: !0, eventId: g, featureProvider: this.context.featureSwitches, generateDrmTokenCallback: this.props.generateDrmTokenCallback, geolocationPrompt: c, httpClient: y, includeBroadcastEventAssociation: d, intentToPlayTime: p, language: h, liveBroadcastRewindEnabled: L, mediaAvailability: _, objectFitVideo: n && n.objectFitVideo, onApiReady: this._handleApiReady, playbackSessionId: I.id, playerId: m, precache: this._shouldAutoplay, publisherId: P, requestedTimecode: E, twitterAuthedHttpClient: A, videoEl: T, videoId: I, viewCount: w, viewCountGraphData: k, vmapUrl: v }, e), C));
                         }),
                         (this._setPlayerApi = (e) => {
                             const { customOverlay: t, onMuteChange: i, onSetPlayerApi: a } = this.props;
@@ -466,9 +466,9 @@
                     this._emitter && this._placementRef && t && (this._placementRef.sample(this._handlePlacementChange), (this._hasInitialPlacementMeasurement = !0));
                 }
             }
-            (D.contextType = g.rC), (D.defaultProps = { autoplay: A.Z.Off, playbackCoordination: k.Tc, playbackPriority: l.W.NORMAL, showControls: !0, dataSaverMode: !1, geolocationPrompt: !0, heightsReady: !0, noAuthHttpClient: O, includeBroadcastEventAssociation: !1 });
+            (O.contextType = g.rC), (O.defaultProps = { autoplay: A.Z.Off, playbackCoordination: k.Tc, playbackPriority: l.W.NORMAL, showControls: !0, dataSaverMode: !1, geolocationPrompt: !0, heightsReady: !0, noAuthHttpClient: D, includeBroadcastEventAssociation: !1 });
             const N = _.default.create({ aspectRatio: { zIndex: void 0 }, aspectRatioDocked: { zIndex: void 0, maxHeight: "70vh" } }),
-                M = (0, I.Z)(D);
+                M = (0, I.Z)(O);
             var U = i(555492),
                 F = i(513588),
                 V = i(942893),
@@ -877,4 +877,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.InlinePlayer-9f4db315.21aa927a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.InlinePlayer-9f4db315.794386ea.js.map

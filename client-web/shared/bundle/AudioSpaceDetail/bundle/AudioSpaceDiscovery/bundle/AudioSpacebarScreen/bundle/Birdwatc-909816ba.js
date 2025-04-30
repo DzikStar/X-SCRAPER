@@ -19,7 +19,7 @@
             }
         },
         396682: (e, t, i) => {
-            i.d(t, { Z: () => q });
+            i.d(t, { Z: () => G });
             i(571372), i(136728);
             var s = i(726426),
                 a = i.n(s),
@@ -29,32 +29,33 @@
                 n = i(449034),
                 d = i(62600),
                 l = i(22525),
-                c = (i(875640), i(55736)),
+                c = (i(875640), i(694898), i(38857), i(540171), i(157093), i(265688), i(270315), i(592529), i(86943), i(691157), i(55736)),
                 p = i(923863),
                 u = i(197889),
                 g = i(449095),
                 T = i(834025),
-                v = i(150078),
-                y = i(303186),
+                y = i(150078),
+                v = i(303186),
                 m = i(590436),
                 f = i(297310),
-                E = i(789403),
-                P = i(104591),
-                b = i(228698),
+                E = i(196282),
+                P = i(789403),
+                b = i(104591),
+                C = i(228698),
                 I = i(842337),
                 S = i(486934),
-                C = i(833828),
+                k = i(833828),
                 R = i(418577),
-                k = i(773975);
-            let L;
-            const _ = 1,
+                L = i(773975);
+            let _;
+            const D = 1,
                 A = 2,
-                D = 3,
+                w = 3,
                 x = 4;
-            function w(e) {
+            function O(e) {
                 return void 0 !== e.getTime ? e.getTime() : e;
             }
-            const O = class {
+            const J = class {
                 constructor(e, t, i, s, a, r = {}) {
                     (this.onLoadStart = () => {
                         this.playerRenderPromise || this.dispatchPlayerReady();
@@ -82,12 +83,13 @@
                         (this.shouldCapBitrate = r.shouldCapBitrate),
                         (this.captionDefaultOffset = { bottom: 0 }),
                         (this.captionStyle = r.captionStyle),
-                        (0, c.G6)() || ((this.smartBufferingExperimentEnabled = this.store.dispatch((0, S.mu)(this.playerId, P.Tq))), (this.hlsJsSegmentsToPrebuffer = this.precache ? f.dN : 0)),
-                        (this.isHlsWorkerEnabled = i.dispatch((0, S.mu)(t, P.V$)) || !1),
-                        (this.repositionedCaptionsEnabled = this.enableVideoPlayerCaptionRendering && i.dispatch((0, S.mu)(t, P.Ao))),
-                        i.dispatch((0, S.mu)(t, P.GN)),
-                        (this.isTranscribedCaptionsEnabled = i.dispatch((0, S.mu)(t, P.Q5))),
-                        (0, c.G6)() ? (this.enableSafariMse = i.dispatch((0, S.mu)(t, P.uj))) : (this.enableSafariMse = !1),
+                        (this.generateDrmTokenCallback = r.generateDrmTokenCallback),
+                        (0, c.G6)() || ((this.smartBufferingExperimentEnabled = this.store.dispatch((0, S.mu)(this.playerId, b.Tq))), (this.hlsJsSegmentsToPrebuffer = this.precache ? f.dN : 0)),
+                        (this.isHlsWorkerEnabled = i.dispatch((0, S.mu)(t, b.V$)) || !1),
+                        (this.repositionedCaptionsEnabled = this.enableVideoPlayerCaptionRendering && i.dispatch((0, S.mu)(t, b.Ao))),
+                        i.dispatch((0, S.mu)(t, b.GN)),
+                        (this.isTranscribedCaptionsEnabled = i.dispatch((0, S.mu)(t, b.Q5))),
+                        (0, c.G6)() ? (this.enableSafariMse = i.dispatch((0, S.mu)(t, b.uj))) : (this.enableSafariMse = !1),
                         (this.liveAdDomainRegex = /t.lv.twimg.com$|ton.twitter.com$/),
                         (this.logger = a),
                         (this.onTimeUpdate = this.onTimeUpdate.bind(this)),
@@ -128,7 +130,7 @@
                     this.trackDataUsage();
                     const i = this.hlsJs;
                     if (i) {
-                        this.smartBufferingExperimentEnabled && (this.hlsJs.off(L.Events.BUFFER_APPENDED, this.onBufferAppended), this.hlsJs.off(L.Events.BUFFER_EOS, this.onBufferEOS)), this.hlsJs.off(L.Events.ERROR, this.onHlsJsError), this.hlsJs.off(L.Events.FRAG_LOADING, this.onFragmentLoading), this.hlsJs.off(L.Events.FRAG_PARSING_INIT_SEGMENT, this.onFragmentParsingInitSegment), this.hlsJs.off(L.Events.LEVEL_SWITCHING, this.onLevelSwitching), this.hlsJs.off(L.Events.LEVEL_LOADED, this.onLevelLoaded), this.hlsJs.off(L.Events.MANIFEST_PARSED, this.onManifestParsed), i.detachMedia();
+                        this.smartBufferingExperimentEnabled && (this.hlsJs.off(_.Events.BUFFER_APPENDED, this.onBufferAppended), this.hlsJs.off(_.Events.BUFFER_EOS, this.onBufferEOS)), this.hlsJs.off(_.Events.ERROR, this.onHlsJsError), this.hlsJs.off(_.Events.FRAG_LOADING, this.onFragmentLoading), this.hlsJs.off(_.Events.FRAG_PARSING_INIT_SEGMENT, this.onFragmentParsingInitSegment), this.hlsJs.off(_.Events.LEVEL_SWITCHING, this.onLevelSwitching), this.hlsJs.off(_.Events.LEVEL_LOADED, this.onLevelLoaded), this.hlsJs.off(_.Events.MANIFEST_PARSED, this.onManifestParsed), i.detachMedia();
                         const e = () => {
                             i.destroy();
                         };
@@ -178,7 +180,7 @@
                             }
                     }
                     this.store.dispatch(
-                        (0, k.Ky)(
+                        (0, L.Ky)(
                             this.playerId,
                             e,
                             t,
@@ -203,9 +205,9 @@
                     }
                 }
                 trackDataUsage() {
-                    (0, C.gu)(this.playerId, (e) => {
+                    (0, k.gu)(this.playerId, (e) => {
                         const t = e.getAndReset();
-                        t > 0 && this.store.dispatch(b.Vi(this.playerId, t));
+                        t > 0 && this.store.dispatch(C.Vi(this.playerId, t));
                     });
                 }
                 checkInitialSeek() {
@@ -221,28 +223,28 @@
                     this.isLooping || !this.isLive || (this.liveBroadcastRewindEnabled && !this.initialOnPlay) || ((this.initialOnPlay = !1), this.hlsJs ? this.hlsJs.liveSyncPosition && (this.videoTag.currentTime = this.hlsJs.liveSyncPosition) : e && window.isFinite(e) && (this.videoTag.currentTime = e));
                 }
                 onPlaying() {
-                    this.videoTag.paused || ((this.isEnded = !1), (this.reloadTimecode = void 0), this.store.dispatch(b.pm(this.playerId)), this.onBufferEnd(), this.onTimeUpdate());
+                    this.videoTag.paused || ((this.isEnded = !1), (this.reloadTimecode = void 0), this.store.dispatch(C.pm(this.playerId)), this.onBufferEnd(), this.onTimeUpdate());
                 }
                 onPause() {
-                    this.videoTag.ended || this.store.dispatch(b.x9(this.playerId)), this.onBufferEnd();
+                    this.videoTag.ended || this.store.dispatch(C.x9(this.playerId)), this.onBufferEnd();
                 }
                 onVolumeChange() {
-                    this.store.dispatch(b.KE(this.playerId, this.videoTag.muted, this.videoTag.volume)), (0, T.E)("volume", this.videoTag.volume);
+                    this.store.dispatch(C.KE(this.playerId, this.videoTag.muted, this.videoTag.volume)), (0, T.E)("volume", this.videoTag.volume);
                 }
                 onPlaybackRateChange() {
-                    this.store.dispatch(b.M8(this.playerId, this.videoTag.playbackRate));
+                    this.store.dispatch(C.M8(this.playerId, this.videoTag.playbackRate));
                 }
                 onSeeking() {
-                    this.seeking || this.isLooping || ((this.seeking = !0), this.store.dispatch(b.U9(this.playerId))), this.store.dispatch((0, r.Nu)(this.hydraExperienceId)), (this.hasInitialSeeked = !0);
+                    this.seeking || this.isLooping || ((this.seeking = !0), this.store.dispatch(C.U9(this.playerId))), this.store.dispatch((0, r.Nu)(this.hydraExperienceId)), (this.hasInitialSeeked = !0);
                 }
                 onSeeked() {
-                    (this.seeking = !1), (this.isEnded = !1), (this.isLooping = !1), (this.lastRequestedSeekTarget = void 0), this.store.dispatch(b.BN(this.playerId, this._lastTargetScrubToFraction)), this.onBufferEnd(), this.updateRotation();
+                    (this.seeking = !1), (this.isEnded = !1), (this.isLooping = !1), (this.lastRequestedSeekTarget = void 0), this.store.dispatch(C.BN(this.playerId, this._lastTargetScrubToFraction)), this.onBufferEnd(), this.updateRotation();
                 }
                 onEnterPictureInPicture() {
-                    this.store.dispatch(b.PY(this.playerId, !0));
+                    this.store.dispatch(C.PY(this.playerId, !0));
                 }
                 onExitPictureInPicture() {
-                    this.teardownRequested && this.teardownPlayer({ forceTeardown: !0 }), this.store.dispatch(b.PY(this.playerId, !1));
+                    this.teardownRequested && this.teardownPlayer({ forceTeardown: !0 }), this.store.dispatch(C.PY(this.playerId, !1));
                 }
                 updateRotation() {
                     const e = (this.getId3Track() || {}).cues || [],
@@ -255,16 +257,16 @@
                             const e = JSON.parse(r.value.data),
                                 t = this.normalizeRotation(e.rotation),
                                 i = this.getCurrentTrack();
-                            void 0 === t || isNaN(t) || t === i.rotation || this.store.dispatch((0, k.PC)(this.playerId, t));
+                            void 0 === t || isNaN(t) || t === i.rotation || this.store.dispatch((0, L.PC)(this.playerId, t));
                             const s = !!e.blank;
                             if (!isNaN(t)) {
                                 const e = this.getCurrentTrack()?.blank;
-                                s !== e && this.store.dispatch((0, k.ho)(this.playerId, s));
+                                s !== e && this.store.dispatch((0, L.ho)(this.playerId, s));
                             }
                         } catch (e) {}
                 }
                 onEnded() {
-                    this.onBufferEnd(), (this.isEnded = this.hasEndedOnce = !0), this.store.dispatch((0, k.Eo)(this.playerId));
+                    this.onBufferEnd(), (this.isEnded = this.hasEndedOnce = !0), this.store.dispatch((0, L.Eo)(this.playerId));
                     const e = this.getCurrentTrack();
                     if (void 0 === e) return;
                     const { shouldLoop: t } = e;
@@ -283,33 +285,33 @@
                     if (i.fatal || r) {
                         this.teardownPlayer();
                         const t = "broadcast" === e || "live" === e || "periscope" === e;
-                        403 === s ? (r && t ? this.store.dispatch((0, I.cJ)(this.playerId, new Error(E.Z.LIVE_VIDEO_COPYRIGHT_VIOLATION_ERROR))) : r ? this.store.dispatch((0, I.cJ)(this.playerId, new Error(E.Z.EUROPEAN_COPYRIGHT_VIOLATION))) : t ? this.store.dispatch((0, I.cJ)(this.playerId, new Error(E.Z.LIVE_VIDEO_GEOBLOCK_ERROR))) : this.store.dispatch((0, I.cJ)(this.playerId, new Error(E.Z.MEDIA_FORBIDDEN)))) : ((s = s ? `:${s}` : ""), this.store.dispatch((0, I.cJ)(this.playerId, new Error(`${i.type}:${i.details}${s}`))));
-                    } else i.details === L.ErrorDetails.LEVEL_SWITCH_ERROR && this.store.dispatch((0, I.$w)(this.playerId));
+                        403 === s ? (r && t ? this.store.dispatch((0, I.cJ)(this.playerId, new Error(P.Z.LIVE_VIDEO_COPYRIGHT_VIOLATION_ERROR))) : r ? this.store.dispatch((0, I.cJ)(this.playerId, new Error(P.Z.EUROPEAN_COPYRIGHT_VIOLATION))) : t ? this.store.dispatch((0, I.cJ)(this.playerId, new Error(P.Z.LIVE_VIDEO_GEOBLOCK_ERROR))) : this.store.dispatch((0, I.cJ)(this.playerId, new Error(P.Z.MEDIA_FORBIDDEN)))) : ((s = s ? `:${s}` : ""), this.store.dispatch((0, I.cJ)(this.playerId, new Error(`${i.type}:${i.details}${s}`))));
+                    } else i.details === _.ErrorDetails.LEVEL_SWITCH_ERROR && this.store.dispatch((0, I.$w)(this.playerId));
                 }
                 onError(e, t) {
                     if (!this.videoTag.error) return;
                     const { code: i } = this.videoTag.error;
                     let s;
                     switch (i) {
-                        case _:
-                            s = E.Z.MEDIA_ABORTED;
+                        case D:
+                            s = P.Z.MEDIA_ABORTED;
                             break;
                         case A:
-                            s = E.Z.MEDIA_NETWORK_ERROR;
+                            s = P.Z.MEDIA_NETWORK_ERROR;
                             break;
-                        case D:
-                            s = E.Z.MEDIA_DECODE_ERROR;
+                        case w:
+                            s = P.Z.MEDIA_DECODE_ERROR;
                             break;
                         case x:
-                            s = E.Z.MEDIA_SRC_INVALID_ERROR;
+                            s = P.Z.MEDIA_SRC_INVALID_ERROR;
                             break;
                         default:
-                            s = E.Z.MEDIA_UNKNOWN_CODE_ERROR;
+                            s = P.Z.MEDIA_UNKNOWN_CODE_ERROR;
                     }
-                    const a = (0, C.Sv)(this.playerId);
-                    s === E.Z.MEDIA_SRC_INVALID_ERROR && a && (0, c.G6)()
+                    const a = (0, k.Sv)(this.playerId);
+                    s === P.Z.MEDIA_SRC_INVALID_ERROR && a && (0, c.G6)()
                         ? (0, u._)(a, this.videoTag.currentSrc).then((e) => {
-                              e ? this.store.dispatch((0, I.cJ)(this.playerId, new Error(E.Z.EUROPEAN_COPYRIGHT_VIOLATION))) : this.store.dispatch((0, I.cJ)(this.playerId, new Error(s))), this.teardownPlayer();
+                              e ? this.store.dispatch((0, I.cJ)(this.playerId, new Error(P.Z.EUROPEAN_COPYRIGHT_VIOLATION))) : this.store.dispatch((0, I.cJ)(this.playerId, new Error(s))), this.teardownPlayer();
                           })
                         : (this.store.dispatch((0, I.cJ)(this.playerId, new Error(s))), this.teardownPlayer());
                 }
@@ -354,20 +356,20 @@
                             o = [e.startTime, r, a, t].join("|");
                         (this.activeCues[o] = !0), i[o] || ("TXXX" === r && this.parseId3Data(a, t), e.value && s.push(e.value));
                     }
-                    this.store.dispatch((0, k.RR)(this.playerId, s));
+                    this.store.dispatch((0, L.RR)(this.playerId, s));
                 }
                 parseId3Data(e, t) {
                     try {
                         const i = JSON.parse(t);
                         if ("JSONMetadata" === e) {
                             const e = this.normalizeRotation(i.rotation);
-                            isNaN(e) || this.store.dispatch((0, k.PC)(this.playerId, e));
+                            isNaN(e) || this.store.dispatch((0, L.PC)(this.playerId, e));
                             const t = !!i.blank;
                             if (!isNaN(e)) {
                                 const e = this.getCurrentTrack()?.blank;
-                                t !== e && this.store.dispatch((0, k.ho)(this.playerId, t));
+                                t !== e && this.store.dispatch((0, L.ho)(this.playerId, t));
                             }
-                            this.store.dispatch((0, k.$9)(this.playerId, i));
+                            this.store.dispatch((0, L.$9)(this.playerId, i));
                         } else "HydraAudioLevel" === e ? this.store.dispatch((0, r.S_)(this.hydraExperienceId, i)) : "HydraParticipants" === e && this.store.dispatch((0, r.eu)(this.hydraExperienceId, i));
                     } catch (e) {}
                 }
@@ -375,7 +377,7 @@
                     if (0 === this.pendingSegments) {
                         const e = this.getPlayerState(),
                             { controls: t, hasPlaybackStarted: i, nextTrackIds: s } = e,
-                            a = t?.playState === b.EX.PLAY_REQUESTED;
+                            a = t?.playState === C.EX.PLAY_REQUESTED;
                         if (((this.bufferedSegments += 1), !i && !a && this.hlsJs)) {
                             this.prebufferedSegments += 1;
                             const e = s && 0 !== s.length;
@@ -391,17 +393,17 @@
                     this.bufferedSegments !== this.expectedSegments || a || r || !this.hlsJs || this.store.dispatch((0, R.HP)(this.playerId, R.BufferStateRequest.BUFFERING_COMPLETED));
                 }
                 onFragmentLoading(e, t) {
-                    void 0 !== t && void 0 !== t.frag && t.frag.programDateTime && (this.dateTimeAnchor = { streamTimeMs: 1e3 * t.frag.start, absoluteTimeMs: w(t.frag.programDateTime) });
+                    void 0 !== t && void 0 !== t.frag && t.frag.programDateTime && (this.dateTimeAnchor = { streamTimeMs: 1e3 * t.frag.start, absoluteTimeMs: O(t.frag.programDateTime) });
                 }
                 onFragmentParsingInitSegment(e, t) {
                     if (void 0 !== t && void 0 !== t.frag && void 0 !== t.frag.level && void 0 !== this.hlsJs) {
                         const e = this.hlsJs.levels[t.frag.level];
-                        void 0 !== e && void 0 !== e.details && void 0 !== e.details.programDateTime && void 0 !== e.details.fragments && void 0 !== e.details.fragments[0] && (this.dateTimeAnchor = { streamTimeMs: 1e3 * e.details.fragments[0].start, absoluteTimeMs: w(e.details.programDateTime) });
+                        void 0 !== e && void 0 !== e.details && void 0 !== e.details.programDateTime && void 0 !== e.details.fragments && void 0 !== e.details.fragments[0] && (this.dateTimeAnchor = { streamTimeMs: 1e3 * e.details.fragments[0].start, absoluteTimeMs: O(e.details.programDateTime) });
                     }
                 }
                 onLevelSwitching(e, t) {
                     const i = this.hlsJs?.levels?.[t.level]?.bitrate;
-                    void 0 !== i && this.store.dispatch((0, k.FI)(this.playerId, i, this.hlsJs.bandwidthEstimate));
+                    void 0 !== i && this.store.dispatch((0, L.FI)(this.playerId, i, this.hlsJs.bandwidthEstimate));
                 }
                 onLevelLoaded(e, t) {
                     if (this.hlsJs && !this.maximumBufferLength) {
@@ -417,11 +419,11 @@
                     (this.shouldLoop && !e) ||
                         ((this.buffering = !0),
                         setTimeout(() => {
-                            this.buffering && this.store.dispatch((0, k.Iu)(this.playerId));
+                            this.buffering && this.store.dispatch((0, L.Iu)(this.playerId));
                         }, 20));
                 }
                 onBufferEnd() {
-                    this.buffering && ((this.buffering = !1), this.store.dispatch((0, k.qV)(this.playerId)));
+                    this.buffering && ((this.buffering = !1), this.store.dispatch((0, L.qV)(this.playerId)));
                 }
                 getFilteredCaptionTrack() {
                     const e = this.videoTag.textTracks || [];
@@ -443,7 +445,7 @@
                 }
                 handleTrackChanged(e) {
                     const t = [...e.target].filter((e) => e.mode === p.bD.SHOWING)[0];
-                    t && !this.selectedTextTrack && (this.selectedTextTrack = t), t && t === this.clonedTextTrack && (0, p.xz)(this.selectedTextTrack, p.bD.HIDDEN), this.store.dispatch(b.er(this.playerId, void 0 !== t));
+                    t && !this.selectedTextTrack && (this.selectedTextTrack = t), t && t === this.clonedTextTrack && (0, p.xz)(this.selectedTextTrack, p.bD.HIDDEN), this.store.dispatch(C.er(this.playerId, void 0 !== t));
                 }
                 handleTrackAdded({ track: e }) {
                     const { CAPTIONS: t, METADATA: i, SUBTITLES: s } = p.TextTrackKind;
@@ -455,7 +457,7 @@
                     if (!s || t === i) return;
                     const a = s.activeCues,
                         r = (a && [...a]) || [];
-                    if ((this.store.dispatch((0, k.Ev)(this.playerId, r)), !this.repositionedCaptionsEnabled || t !== s || !i)) return;
+                    if ((this.store.dispatch((0, L.Ev)(this.playerId, r)), !this.repositionedCaptionsEnabled || t !== s || !i)) return;
                     if (s.cues.length === i?.cues?.length) return;
                     const o = i.activeCues;
                     for (let e = 0; e < o.length; e++) {
@@ -494,24 +496,24 @@
                 }
                 handleControlUpdate(e) {
                     switch (e.muteState) {
-                        case b.VE.MUTE_REQUESTED:
+                        case C.VE.MUTE_REQUESTED:
                             this.videoTag.muted = !0;
                             break;
-                        case b.VE.UNMUTE_REQUESTED:
+                        case C.VE.UNMUTE_REQUESTED:
                             this.videoTag.muted = !1;
                     }
                     switch (e.playState) {
-                        case b.EX.PAUSE_REQUESTED: {
+                        case C.EX.PAUSE_REQUESTED: {
                             const e = () => {
                                 this.videoTag && (this.videoTag.pause(), this.stopListeningForId3Tags());
                             };
                             this.videoTag.paused ? e() : this.playPromise.then(e);
                             break;
                         }
-                        case b.EX.PLAY_REQUESTED: {
+                        case C.EX.PLAY_REQUESTED: {
                             const e = this.hlsJs ? this.hlsJsPlay() : this.videoTag.play() || Promise.resolve();
                             (this.playPromise = e.catch((e) => {
-                                this.videoTag && this.videoTag.paused && (this.shouldRetryAutoplayMuted && e instanceof DOMException && "NotAllowedError" === e.name ? ((this.shouldRetryAutoplayMuted = !1), this.store.dispatch(b.qA(this.playerId))) : this.store.dispatch(b.Sb(this.playerId)));
+                                this.videoTag && this.videoTag.paused && (this.shouldRetryAutoplayMuted && e instanceof DOMException && "NotAllowedError" === e.name ? ((this.shouldRetryAutoplayMuted = !1), this.store.dispatch(C.qA(this.playerId))) : this.store.dispatch(C.Sb(this.playerId)));
                             })),
                                 this.startListeningForId3Tags();
                             break;
@@ -529,10 +531,10 @@
                     if (void 0 !== e.requestedQualityLevel && this.hlsJs) {
                         const t = e.requestedQualityLevel,
                             { autoLevelEnabled: i, currentLevel: s, nextLoadLevel: a } = this.hlsJs;
-                        t !== (i ? -1 : a) ? (t < s && -1 !== t ? (this.hlsJs.nextLevel = t) : (this.hlsJs.currentLevel = t)) : (i || t === s) && this.store.dispatch(b.a$(this.playerId, t));
+                        t !== (i ? -1 : a) ? (t < s && -1 !== t ? (this.hlsJs.nextLevel = t) : (this.hlsJs.currentLevel = t)) : (i || t === s) && this.store.dispatch(C.a$(this.playerId, t));
                     }
                     switch (e.pipState) {
-                        case b.JZ.PICTURE_IN_PICTURE_ON_REQUESTED:
+                        case C.JZ.PICTURE_IN_PICTURE_ON_REQUESTED:
                             this.videoTag.hasAttribute("disablePictureInPicture") && this.videoTag.removeAttribute("disablePictureInPicture"),
                                 document.pictureInPictureEnabled &&
                                     this.videoTag &&
@@ -540,19 +542,19 @@
                                     (this.inProgressPiPRequest = this.videoTag
                                         .requestPictureInPicture()
                                         .catch(() => {
-                                            this.store.dispatch((0, I.cJ)(this.playerId, new Error(E.Z.PICTURE_IN_PICTURE_ERROR)));
+                                            this.store.dispatch((0, I.cJ)(this.playerId, new Error(P.Z.PICTURE_IN_PICTURE_ERROR)));
                                         })
                                         .finally(() => {
                                             this.inProgressPiPRequest = void 0;
                                         }));
                             break;
-                        case b.JZ.PICTURE_IN_PICTURE_OFF_REQUESTED:
+                        case C.JZ.PICTURE_IN_PICTURE_OFF_REQUESTED:
                             document.pictureInPictureElement &&
                                 !this.inProgressPiPRequest &&
                                 (this.inProgressPiPRequest = document
                                     .exitPictureInPicture()
                                     .catch(() => {
-                                        this.store.dispatch((0, I.cJ)(this.playerId, new Error(E.Z.PICTURE_IN_PICTURE_ERROR)));
+                                        this.store.dispatch((0, I.cJ)(this.playerId, new Error(P.Z.PICTURE_IN_PICTURE_ERROR)));
                                     })
                                     .finally(() => {
                                         this.inProgressPiPRequest = void 0;
@@ -574,9 +576,9 @@
                     }).then(() => (this.checkInitialSeek(), this.videoTag.play() || Promise.resolve()));
                 }
                 xhrSetup(e, t, i) {
-                    const s = new v.Z(t).getHostname(),
+                    const s = new y.Z(t).getHostname(),
                         a = s && this.liveAdDomainRegex.test(s),
-                        r = i === L.ResourceTypes.KEY;
+                        r = i === _.ResourceTypes.KEY;
                     (a || r) && (e.withCredentials = !0);
                 }
                 hasCaptions() {
@@ -585,21 +587,21 @@
                 renderVideoVariant() {
                     const { contentType: e } = this.getCurrentTrack();
                     let { variants: t } = this.getCurrentTrack();
-                    const i = this.store.dispatch((0, S.mu)(this.playerId, P.WE));
+                    const i = this.store.dispatch((0, S.mu)(this.playerId, b.WE));
                     i && "" !== i && (t = (0, l.FR)(i, t));
                     const { enableSafariMse: s, shouldCapBitrate: a } = this,
                         r = { enableSafariMse: s, shouldCapBitrate: a },
                         { selectedVariant: o, useMse: h } = (0, m.vW)(t, r);
-                    return o ? (h ? this.renderHlsJs(o, a, e) : this.renderHtml5(o)) : (this.store.dispatch((0, I.cJ)(this.playerId, new Error(E.Z.MEDIA_NOT_SUPPORTED))), Promise.resolve());
+                    return o ? (h ? this.renderHlsJs(o, a, e) : this.renderHtml5(o)) : (this.store.dispatch((0, I.cJ)(this.playerId, new Error(P.Z.MEDIA_NOT_SUPPORTED))), Promise.resolve());
                 }
-                renderHlsJs(e, t, i) {
+                async renderHlsJs(e, t, i) {
                     const s = this.getInitialTimeCode();
                     this.bufferedSegments = this.expectedSegments = this.pendingSegments = this.prebufferedSegments = 0;
-                    const a = this.store.dispatch((0, S.mu)(this.playerId, P.sl)),
-                        r = this.store.dispatch((0, S.mu)(this.playerId, P.R1));
+                    const a = this.store.dispatch((0, S.mu)(this.playerId, b.sl)),
+                        r = this.store.dispatch((0, S.mu)(this.playerId, b.R1));
                     return (0, m.QJ)(a)
                         .then((a) => {
-                            L = a;
+                            _ = a;
                             const o = {
                                 autoStartLoad: !0,
                                 enableWorker: this.isHlsWorkerEnabled,
@@ -609,7 +611,7 @@
                                 fragLoadingTimeOut: 2e4,
                                 levelLoadingMaxRetry: 4,
                                 levelLoadingTimeOut: 2e4,
-                                loader: (0, g.h)(this.playerId, L),
+                                loader: (0, g.h)(this.playerId, _),
                                 manifestLoadingMaxRetry: 4,
                                 manifestLoadingTimeOut: 2e4,
                                 maxBufferHole: 1.5,
@@ -618,6 +620,31 @@
                                 startPosition: s,
                                 xhrSetup: this.xhrSetup.bind(this),
                                 capLevelToPlayerSize: !r && !t,
+                                emeEnabled: !0,
+                                drmSystems: { "com.widevine.alpha": { licenseUrl: E.KQ }, "com.microsoft.playready": { licenseUrl: E.ZC }, "com.apple.fps": { licenseUrl: E.BQ, serverCertificateUrl: E.Y5 } },
+                                licenseXhrSetup: (e, t) => {
+                                    if ("function" == typeof this.generateDrmTokenCallback)
+                                        return this.generateDrmTokenCallback()
+                                            .then((t) => {
+                                                if (null === t) throw new Error("Video is not DRM protected, no token generated");
+                                                e.setRequestHeader("x-dt-auth-token", t);
+                                            })
+                                            .catch((e) => {
+                                                throw new Error("Failed to generate DRM token:", e);
+                                            });
+                                    throw new Error("generateDrmTokenCallback is not defined, skipping token fetch");
+                                },
+                                licenseResponseCallback: function (e, t, i) {
+                                    const s = e.response;
+                                    if ("com.apple.fps" === i.keySystem)
+                                        try {
+                                            return ((a = new TextDecoder().decode(s).trim()), Uint8Array.from(atob(a), (e) => e.charCodeAt(0))).buffer;
+                                        } catch (e) {
+                                            this.logger.log("FairPlay license decode error:", e);
+                                        }
+                                    var a;
+                                    return s;
+                                },
                                 debug: {
                                     trace: (e) => {
                                         this.logger.log("HlsJs.trace", e);
@@ -639,17 +666,17 @@
                                     },
                                 },
                             };
-                            this.precache || (o.maxMaxBufferLength = 0), (this.hlsJs = new L({ ...o })), this.smartBufferingExperimentEnabled && (this.hlsJs.on(L.Events.BUFFER_APPENDED, this.onBufferAppended), this.hlsJs.on(L.Events.BUFFER_EOS, this.onBufferEOS)), this.hlsJs.on(L.Events.ERROR, this.onHlsJsError.bind(this, i)), this.hlsJs.on(L.Events.FRAG_LOADING, this.onFragmentLoading), this.hlsJs.on(L.Events.FRAG_PARSING_INIT_SEGMENT, this.onFragmentParsingInitSegment), this.hlsJs.on(L.Events.LEVEL_SWITCHING, this.onLevelSwitching), this.hlsJs.on(L.Events.LEVEL_LOADED, this.onLevelLoaded), this.hlsJs.on(L.Events.MANIFEST_PARSED, this.onManifestParsed.bind(this, t, i)), this.repositionedCaptionsEnabled && (this.hlsJs.subtitleDisplay = !1), this.hlsJs.attachMedia(this.videoTag), this.hlsJs.loadSource(e.src), this.store.dispatch((0, k.pp)(this.playerId));
+                            this.precache || (o.maxMaxBufferLength = 0), (this.hlsJs = new _({ ...o })), this.smartBufferingExperimentEnabled && (this.hlsJs.on(_.Events.BUFFER_APPENDED, this.onBufferAppended), this.hlsJs.on(_.Events.BUFFER_EOS, this.onBufferEOS)), this.hlsJs.on(_.Events.ERROR, this.onHlsJsError.bind(this, i)), this.hlsJs.on(_.Events.FRAG_LOADING, this.onFragmentLoading), this.hlsJs.on(_.Events.FRAG_PARSING_INIT_SEGMENT, this.onFragmentParsingInitSegment), this.hlsJs.on(_.Events.LEVEL_SWITCHING, this.onLevelSwitching), this.hlsJs.on(_.Events.LEVEL_LOADED, this.onLevelLoaded), this.hlsJs.on(_.Events.MANIFEST_PARSED, this.onManifestParsed.bind(this, t, i)), this.repositionedCaptionsEnabled && (this.hlsJs.subtitleDisplay = !1), this.hlsJs.attachMedia(this.videoTag), this.hlsJs.loadSource(e.src), this.store.dispatch((0, L.pp)(this.playerId));
                         })
                         .catch(() => {
-                            this.store.dispatch((0, I.cJ)(this.playerId, new Error(`${E.Z.CONFIG_NETWORK_ERROR}:HlsJsChunk`)));
+                            this.store.dispatch((0, I.cJ)(this.playerId, new Error(`${P.Z.CONFIG_NETWORK_ERROR}:HlsJsChunk`)));
                         });
                 }
                 renderHtml5(e) {
                     return this.videoTag.setAttribute("preload", this.precache ? "auto" : "none"), this.videoTag.setAttribute("src", e.src), this.videoTag.setAttribute("type", e.type), Promise.resolve();
                 }
                 onManifestParsed(e, t, i, { levels: s }) {
-                    if ((this.hlsJs && e && (this.hlsJs.autoLevelCapping = s.length = (0, y.e)(s, e)), this.hlsJs)) {
+                    if ((this.hlsJs && e && (this.hlsJs.autoLevelCapping = s.length = (0, v.e)(s, e)), this.hlsJs)) {
                         let e;
                         for (e = 0; e < s.length - 1 && !(s[e].bitrate > this.hlsJs.bandwidthEstimate); e++);
                         this.hlsJs.startLevel = e;
@@ -660,16 +687,16 @@
                             const { bitrate: s, frameRate: a, height: r, width: o } = t;
                             e.push({ bitrate: s, frameRate: a, height: r, level: i, width: o });
                         }),
-                            this.store.dispatch((0, k.XB)(this.playerId, e));
+                            this.store.dispatch((0, L.XB)(this.playerId, e));
                     }
                     if (this.hlsJs) {
                         const { autoLevelEnabled: e, startLevel: t } = this.hlsJs;
-                        e ? this.store.dispatch(b.a$(this.playerId, -1)) : this.store.dispatch(b.a$(this.playerId, t));
+                        e ? this.store.dispatch(C.a$(this.playerId, -1)) : this.store.dispatch(C.a$(this.playerId, t));
                     }
                     this.dispatchPlayerReady();
                 }
                 dispatchPlayerReady() {
-                    this.store.dispatch((0, k.UL)(this.playerId));
+                    this.store.dispatch((0, L.UL)(this.playerId));
                 }
                 setCaptionStyle(e) {
                     (this.captionStyle = e), this.renderContainer();
@@ -764,7 +791,7 @@
                     const { videoTag: t } = this;
                     if (!(t.readyState < 2))
                         switch (e) {
-                            case b.F3.CAPTIONS_ON_REQUESTED: {
+                            case C.F3.CAPTIONS_ON_REQUESTED: {
                                 this.selectedTextTrack || (this.selectedTextTrack = this.getCaptionsTrack());
                                 const { selectedTextTrack: e } = this;
                                 if (!e) return;
@@ -776,7 +803,7 @@
                                 (0, p.xz)(a, p.bD.SHOWING);
                                 break;
                             }
-                            case b.F3.CAPTIONS_OFF_REQUESTED: {
+                            case C.F3.CAPTIONS_OFF_REQUESTED: {
                                 const { clonedTextTrack: e, selectedTextTrack: t } = this;
                                 if (t && t.mode) {
                                     const e = t.kind === p.TextTrackKind.CAPTIONS ? p.bD.HIDDEN : p.bD.DISABLED;
@@ -804,15 +831,15 @@
                     (s.style.width = `${a}%`), (s.style.height = `${r}%`), (s.style.top = `${o}%`), (s.style.left = `${h}%`), n && ((s.style.transform = `rotate(${e}deg) scale(1.005)`), (s.style.objectFit = t ? "contain" : this.objectFitVideo));
                 }
             };
-            var J = i(123751),
-                M = i(677138),
+            var M = i(123751),
+                B = i(677138),
                 N = i(373516),
-                B = i(768256),
-                F = i(142885),
-                U = i(270223),
-                V = i(828063),
-                Z = i(724429);
-            class H {
+                F = i(768256),
+                U = i(142885),
+                V = i(270223),
+                Z = i(828063),
+                H = i(724429);
+            class q {
                 constructor({ source: e = {}, videoConfig: t, domElement: s, httpClient: c, twitterAuthedHttpClient: p, options: u = {} }) {
                     (this.teardown = () => {
                         this.broadcastUpdater && this.broadcastUpdater.cancelUpdate(),
@@ -820,13 +847,13 @@
                                 e();
                             }),
                             (this.unsubscribeCalls = []),
-                            (0, U.Rm)(this.id),
+                            (0, V.Rm)(this.id),
                             (this.source = void 0),
                             (this.session = void 0),
-                            void 0 !== this.hydraExperienceId && M.Z.dispatch((0, r.Nt)(this.hydraExperienceId)),
+                            void 0 !== this.hydraExperienceId && B.Z.dispatch((0, r.Nt)(this.hydraExperienceId)),
                             this.video && this.video.teardown(),
-                            M.Z.dispatch((0, Z.ns)(this.id)),
-                            (0, C.yu)(this.id),
+                            B.Z.dispatch((0, H.ns)(this.id)),
+                            (0, k.yu)(this.id),
                             this.logger.clearLogs(),
                             this.rejectPlayerReadyPromise();
                     }),
@@ -834,77 +861,77 @@
                             this.initiallyMuted
                                 ? this.playPreview()
                                 : this.playerReadyPromise.then(() => {
-                                      this._dispatch(b.D0(this.id));
+                                      this._dispatch(C.D0(this.id));
                                   }),
                             this
                         )),
                         (this.pause = () => (
                             this.playerReadyPromise.then(() => {
-                                this._dispatch(b.hz(this.id));
+                                this._dispatch(C.hz(this.id));
                             }),
                             this
                         )),
                         (this.replay = () => (
                             this.playerReadyPromise.then(() => {
-                                this._dispatch(b.A3(this.id));
+                                this._dispatch(C.A3(this.id));
                             }),
                             this
                         )),
                         (this.mute = () => (
                             this.playerReadyPromise.then(() => {
-                                this._dispatch(b.qA(this.id));
+                                this._dispatch(C.qA(this.id));
                             }),
                             this
                         )),
                         (this.unmute = () => (
                             this.playerReadyPromise.then(() => {
-                                this._dispatch(b.s3(this.id));
+                                this._dispatch(C.s3(this.id));
                             }),
                             this
                         )),
                         (this.scrubToFraction = (e) => (
                             this.playerReadyPromise.then(() => {
-                                const t = M.Z.getState(),
+                                const t = B.Z.getState(),
                                     i = this._getPlayerState(t),
                                     s = (0, l.Ci)(i),
                                     a = (s && s.durationMs) * (e / 1e3);
-                                this._dispatch(b.li(this.id, a));
+                                this._dispatch(C.li(this.id, a));
                             }),
                             this
                         )),
                         (this.seekTo = (e) => (
                             this.playerReadyPromise.then(() => {
-                                this._dispatch(b.li(this.id, e));
+                                this._dispatch(C.li(this.id, e));
                             }),
                             this
                         )),
                         (this.setScrubbing = (e) => (
                             this.playerReadyPromise.then(() => {
-                                this._dispatch(b.OM(this.id, e));
+                                this._dispatch(C.OM(this.id, e));
                             }),
                             this
                         )),
                         (this.setVolume = (e) => (
                             this.playerReadyPromise.then(() => {
-                                this._dispatch(b.A9(this.id, e));
+                                this._dispatch(C.A9(this.id, e));
                             }),
                             this
                         )),
                         (this.setQualityLevel = (e) => (
                             this.playerReadyPromise.then(() => {
-                                this._dispatch(b.ak(this.id, e));
+                                this._dispatch(C.ak(this.id, e));
                             }),
                             this
                         )),
                         (this.setPlaybackRate = (e) => (
                             this.playerReadyPromise.then(() => {
-                                this._dispatch(b.LO(this.id, e));
+                                this._dispatch(C.LO(this.id, e));
                             }),
                             this
                         )),
                         (this.setPlaybackTimeRange = ({ endTimeS: e, startTimeS: t }) => (
                             this.playerReadyPromise.then(() => {
-                                t <= 0 && e >= this.video.getVideoTag().duration ? this._dispatch(b.WS(this.id)) : this._dispatch(b.H4(this.id, t, e));
+                                t <= 0 && e >= this.video.getVideoTag().duration ? this._dispatch(C.WS(this.id)) : this._dispatch(C.H4(this.id, t, e));
                             }),
                             this
                         )),
@@ -913,87 +940,87 @@
                         }),
                         (this.fullScreen = (e) => {
                             const t = e || this.domElement;
-                            return M.Z.dispatch((0, V.Zx)(this.id, t, this.video.getVideoTag())), this;
+                            return B.Z.dispatch((0, Z.Zx)(this.id, t, this.video.getVideoTag())), this;
                         }),
-                        (this.exitFullScreen = () => (M.Z.dispatch((0, V.g3)(this.id)), this)),
+                        (this.exitFullScreen = () => (B.Z.dispatch((0, Z.g3)(this.id)), this)),
                         (this.hideControls = () => (
                             this.playerReadyPromise.then(() => {
-                                this._dispatch(b.Pt(this.id));
+                                this._dispatch(C.Pt(this.id));
                             }),
                             this
                         )),
                         (this.showControls = () => (
                             this.playerReadyPromise.then(() => {
-                                this._dispatch(b.cW(this.id));
+                                this._dispatch(C.cW(this.id));
                             }),
                             this
                         )),
                         (this.skipBy = (e) => (
                             this.playerReadyPromise.then(() => {
-                                const t = M.Z.getState(),
+                                const t = B.Z.getState(),
                                     i = this._getPlayerState(t),
                                     s = (0, l.Ci)(i),
                                     a = s && s.currentTimeMs / 1e3,
                                     r = Number(e) + Number(a);
-                                this._dispatch(b.li(this.id, r));
+                                this._dispatch(C.li(this.id, r));
                             }),
                             this
                         )),
                         (this.playPreview = (e = !1) => (
                             this.playerReadyPromise.then(() => {
-                                const t = M.Z.getState(),
+                                const t = B.Z.getState(),
                                     i = t && t.players && t.players[this.id],
                                     { hasPlaybackStarted: s, isPreview: a } = i || {};
-                                (!a && s) || e ? this._dispatch(b.D0(this.id)) : (this._dispatch((0, N.Mp)(this.id)), this.initiallyMuted && (this.initiallyMuted = !1));
+                                (!a && s) || e ? this._dispatch(C.D0(this.id)) : (this._dispatch((0, N.Mp)(this.id)), this.initiallyMuted && (this.initiallyMuted = !1));
                             }),
                             this
                         )),
                         (this.pausePreview = () => (
                             this.playerReadyPromise.then(() => {
-                                const e = M.Z.getState(),
+                                const e = B.Z.getState(),
                                     t = e && e.players && e.players[this.id],
                                     { isPreview: i } = t || {};
-                                i ? this._dispatch((0, N.tf)(this.id)) : this._dispatch(b.hz(this.id));
+                                i ? this._dispatch((0, N.tf)(this.id)) : this._dispatch(C.hz(this.id));
                             }),
                             this
                         )),
                         (this.objectFitVideo = (e) => (-1 !== f.Tj.indexOf(e) && this.video && (this.video.objectFitVideo = e), this)),
                         (this.toggleCaptions = () => (
                             this.playerReadyPromise.then(() => {
-                                const e = M.Z.getState(),
+                                const e = B.Z.getState(),
                                     t = e && e.players && e.players[this.id],
                                     i = !(!t || !t.areCaptionsShown);
-                                this._dispatch(i ? b.Cx(this.id, !0) : b.AB(this.id, !0));
+                                this._dispatch(i ? C.Cx(this.id, !0) : C.AB(this.id, !0));
                             }),
                             this
                         )),
                         (this.setCaptionDefaultOffset = ({ bottom: e }) => {
-                            this._dispatch(b.pK(this.id, { bottom: e }));
+                            this._dispatch(C.pK(this.id, { bottom: e }));
                         }),
                         (this.togglePiPMode = () => (
                             this.playerReadyPromise.then(() => {
-                                const e = M.Z.getState(),
+                                const e = B.Z.getState(),
                                     t = e && e.players && e.players[this.id],
                                     i = !(!t || !t.inPiPMode);
-                                this._dispatch(i ? b.hV(this.id) : b.ET(this.id));
+                                this._dispatch(i ? C.hV(this.id) : C.ET(this.id));
                             }),
                             this
                         )),
                         (this.nextTrack = () => (
                             this.playerReadyPromise.then(() => {
-                                this._dispatch((0, k.IV)(this.id));
+                                this._dispatch((0, L.IV)(this.id));
                             }),
                             this
                         )),
                         (this.triggerError = (e) => {
                             const t = new Error(e || "synthetic");
-                            return M.Z.dispatch((0, I.cJ)(this.id, t)), this;
+                            return B.Z.dispatch((0, I.cJ)(this.id, t)), this;
                         }),
                         (this.reload = ({ autoPlay: e = !1, requestedTimecode: t } = {}) => {
                             this.playerReadyPromise = new Promise((e, t) => {
                                 (this.resolvePlayerReadyPromise = e), (this.rejectPlayerReadyPromise = t);
                             }).catch(() => {});
-                            const i = (M.Z.getState() || { players: {} }).players[this.id];
+                            const i = (B.Z.getState() || { players: {} }).players[this.id];
                             let s = -1;
                             if (i) {
                                 if (void 0 !== t) this.playerOptions.requestedTimecode = t;
@@ -1003,47 +1030,47 @@
                                 const { isMuted: a, isPlaying: r, isPreview: o } = i,
                                     h = r || e;
                                 this.playerReadyPromise.then(() => {
-                                    o ? (h ? this._dispatch((0, N.Mp)(this.id)) : this._dispatch((0, N.tf)(this.id))) : (h && this._dispatch(b.D0(this.id)), a && this._dispatch(b.qA(this.id)));
+                                    o ? (h ? this._dispatch((0, N.Mp)(this.id)) : this._dispatch((0, N.tf)(this.id))) : (h && this._dispatch(C.D0(this.id)), a && this._dispatch(C.qA(this.id)));
                                 });
                             }
-                            return this.video && this.video.teardownPlayer(), M.Z.dispatch(this._reloadPlayer(this.id, this.source, this.videoConfig, this.session, this.resolvePlayerReadyPromise, this.rejectPlayerReadyPromise, { ...this.playerOptions, reloadTimecode: s }, this.logger)), this;
+                            return this.video && this.video.teardownPlayer(), B.Z.dispatch(this._reloadPlayer(this.id, this.source, this.videoConfig, this.session, this.resolvePlayerReadyPromise, this.rejectPlayerReadyPromise, { ...this.playerOptions, reloadTimecode: s }, this.logger)), this;
                         }),
                         (this.on = (e, t) => (
-                            Object.keys(F.Z).forEach((i) => {
-                                F.Z[i] === e && (0, U.Oo)(this.id, e, t);
+                            Object.keys(U.Z).forEach((i) => {
+                                U.Z[i] === e && (0, V.Oo)(this.id, e, t);
                             }),
                             this
                         )),
                         (this.updatePosition = ({ percentOfViewportOccupied: e, percentVisible: t, sizesInfo: i }) => (
                             this.playerReadyPromise.then(() => {
-                                this._dispatch(b.cg(this.id, t, e, i));
+                                this._dispatch(C.cg(this.id, t, e, i));
                             }),
                             this
                         )),
                         (this.callToActionClicked = () => (
                             this.playerReadyPromise.then(() => {
-                                this._dispatch(b.ze(this.id));
+                                this._dispatch(C.ze(this.id));
                             }),
                             this
                         )),
                         (this.callToActionImpression = () => (
                             this.playerReadyPromise.then(() => {
-                                this._dispatch(b.sX(this.id));
+                                this._dispatch(C.sX(this.id));
                             }),
                             this
                         )),
                         (this.liveClickthroughClicked = () => (
                             this.playerReadyPromise.then(() => {
-                                this._dispatch(b.xb(this.id));
+                                this._dispatch(C.xb(this.id));
                             }),
                             this
                         )),
                         (this.subscribe = (e) => {
-                            const t = M.Z.getState();
+                            const t = B.Z.getState();
                             let i = this._getPlayerState(t),
                                 s = this._getHydraState(t);
-                            const a = M.Z.subscribe(() => {
-                                const t = M.Z.getState(),
+                            const a = B.Z.subscribe(() => {
+                                const t = B.Z.getState(),
                                     a = this._getPlayerState(t),
                                     r = this._getHydraState(t);
                                 void 0 !== a && (i !== a || s !== r) && ((i = a), (s = r), e(a, r));
@@ -1063,15 +1090,16 @@
                                     (o ? 0 : r) || 0,
                                 );
                         }),
-                        (this.id = H.id),
-                        (H.id += 1),
+                        (this.id = q.id),
+                        (q.id += 1),
                         (this.unsubscribeCalls = []),
                         (this.source = e),
                         (this.videoConfig = t),
                         (this.session = { id: a()() }),
                         (this.playbackSessionId = u.playbackSessionId),
                         (this.initiallyMuted = u.initiallyMuted),
-                        (this._reloadPlayer = B.fi),
+                        (this._reloadPlayer = F.fi),
+                        t?.generateDrmTokenCallback && (this.generateDrmTokenCallback = t.generateDrmTokenCallback),
                         (this.playerReadyPromise = new Promise((e, t) => {
                             (this.resolvePlayerReadyPromise = e), (this.rejectPlayerReadyPromise = t);
                         })
@@ -1080,22 +1108,22 @@
                         u.autoplay && this.play(),
                         (this.logger = new h.Z(this.id)),
                         i.g.VIDEO_PLAYER_DEBUG_ENABLED && (h.Z.debuggingEnabled = !0),
-                        (0, C.dw)(this.id, new n.Z(new d.Z(c)), new n.Z(new d.Z(p || c)), this.logger, new o.Z(), u.featureProvider),
+                        (0, k.dw)(this.id, new n.Z(new d.Z(c)), new n.Z(new d.Z(p || c)), this.logger, new o.Z(), u.featureProvider),
                         this.subscribe(this.onStoreUpdate),
-                        (this.source.type !== J.P.BROADCAST && this.source.type !== J.P.STATIC_BROADCAST && this.source.type !== J.P.AUDIO_SPACE) || (this.hydraExperienceId = u.hydraExperienceId = M.Z.dispatch((0, r.mC)())),
+                        (this.source.type !== M.P.BROADCAST && this.source.type !== M.P.STATIC_BROADCAST && this.source.type !== M.P.AUDIO_SPACE) || (this.hydraExperienceId = u.hydraExperienceId = B.Z.dispatch((0, r.mC)())),
                         (this.options = u);
                     let g = -1;
-                    const T = this.playbackSessionId ? (0, C.Cv)(this.playbackSessionId) : void 0;
-                    T && ((this.options.videoEl = u.videoEl || T.videoEl), (g = T.reloadTimecode));
-                    const { featureProvider: v, includeBroadcastEventAssociation: y, initiallyMutedCaptions: m, intentToPlayTime: E, maxLoopCount: P, maxLoopingThresholdSec: S, precache: R, promotedContext: L, requestedTimecode: _, shouldCapBitrate: A, showGeolocationPrompt: D } = this.options;
-                    (this.playerOptions = { featureProvider: v, includeBroadcastEventAssociation: y, initiallyMutedCaptions: m, intentToPlayTime: E, maxLoopCount: P, maxLoopingThresholdSec: S, precache: R, promotedContext: L, reloadTimecode: g, requestedTimecode: _, shouldCapBitrate: A, showGeolocationPrompt: D }),
-                        M.Z.dispatch((0, B.MD)(this.id, e, t, this.session, u.analytics, u.adProvider, this.resolvePlayerReadyPromise, this.rejectPlayerReadyPromise, this.playerOptions, this.logger)).then((e) => {
+                    const T = this.playbackSessionId ? (0, k.Cv)(this.playbackSessionId) : void 0;
+                    T && ((this.options.videoEl = u.videoEl || T.videoEl), (g = T.reloadTimecode)), (this.options.generateDrmTokenCallback = this.generateDrmTokenCallback);
+                    const { featureProvider: y, includeBroadcastEventAssociation: v, initiallyMutedCaptions: m, intentToPlayTime: E, maxLoopCount: P, maxLoopingThresholdSec: b, precache: S, promotedContext: R, requestedTimecode: _, shouldCapBitrate: D, showGeolocationPrompt: A } = this.options;
+                    (this.playerOptions = { featureProvider: y, includeBroadcastEventAssociation: v, initiallyMutedCaptions: m, intentToPlayTime: E, maxLoopCount: P, maxLoopingThresholdSec: b, precache: S, promotedContext: R, reloadTimecode: g, requestedTimecode: _, shouldCapBitrate: D, showGeolocationPrompt: A }),
+                        B.Z.dispatch((0, F.MD)(this.id, e, t, this.session, u.analytics, u.adProvider, this.resolvePlayerReadyPromise, this.rejectPlayerReadyPromise, this.playerOptions, this.logger)).then((e) => {
                             this.broadcastUpdater = e;
                         }),
                         s && this.attach(s);
                 }
                 attach(e) {
-                    this.video || ((this.domElement = e), (this.video = new O(this.domElement, this.id, M.Z, this.reload, this.logger, this.options)));
+                    this.video || ((this.domElement = e), (this.video = new J(this.domElement, this.id, B.Z, this.reload, this.logger, this.options)));
                 }
                 _getPlayerState(e) {
                     if (e.players) return e.players[this.id];
@@ -1104,12 +1132,12 @@
                     if (void 0 !== this.hydraExperienceId && e.hydraExperiences) return e.hydraExperiences[this.hydraExperienceId];
                 }
                 _dispatch(e) {
-                    const t = M.Z.getState();
-                    this._getPlayerState(t) ? M.Z.dispatch(e) : this.triggerError(E.Z.MEDIA_TEARDOWN_ERROR);
+                    const t = B.Z.getState();
+                    this._getPlayerState(t) ? B.Z.dispatch(e) : this.triggerError(P.Z.MEDIA_TEARDOWN_ERROR);
                 }
             }
-            H.id = 0;
-            const q = H;
+            q.id = 0;
+            const G = q;
         },
         940454: (e, t, i) => {
             i.r(t), i.d(t, { CreatePlayer: () => a.Z, OBJECT_FIT_VALUES: () => r.Tj, default: () => l });
@@ -1118,7 +1146,7 @@
                 r = i(297310),
                 o = i(213980),
                 h = i.n(o);
-            h().string, h().string, h().arrayOf(h().element), h().func, h().object, h().bool, h().object, h().string, h().oneOf(["media_entity", "gif", "vmap", "broadcast"]), h().bool, h().object, h().node, h().shape({ objectFitVideo: h().oneOf(r.Tj), playerHandlesRotations: h().bool }), h().number, h().bool, h().string, h().shape({ getValue: h().func }), h().bool, h().object, h().bool, h().bool, h().bool, h().instanceOf(Date), h().string, h().bool, h().number, h().object, h().string, h().string, h().bool, h().object, h().string, h().string, h().func, h().bool, h().bool, h().bool, h().object, h().arrayOf(h().shape({ src: h().string, type: h().string })), h().object, h().object, h().oneOfType([h().string, h().number]), h().string;
+            h().string, h().string, h().arrayOf(h().element), h().func, h().object, h().bool, h().object, h().string, h().oneOf(["media_entity", "gif", "vmap", "broadcast"]), h().bool, h().object, h().node, h().shape({ objectFitVideo: h().oneOf(r.Tj), playerHandlesRotations: h().bool }), h().number, h().bool, h().string, h().shape({ getValue: h().func }), h().bool, h().object, h().bool, h().bool, h().bool, h().instanceOf(Date), h().string, h().bool, h().number, h().object, h().string, h().string, h().bool, h().object, h().string, h().string, h().func, h().bool, h().bool, h().bool, h().object, h().arrayOf(h().shape({ src: h().string, type: h().string })), h().object, h().object, h().oneOfType([h().string, h().number]), h().string, h().func;
             const n = { base: { height: "100%", position: "relative", transform: "translateZ(0)", width: "100%" }, wrapper: { height: "100%", position: "absolute", width: "100%" } };
             class d extends s.PureComponent {
                 constructor(e) {
@@ -1134,7 +1162,7 @@
                         }),
                         (this.videoPlayer = a.Z.createPlayer({
                             source: this.props.videoId,
-                            videoConfig: { contentId: this.props.contentId, contentType: this.props.contentType, cta: this.props.cta, durationMs: this.props.durationMs, viewCount: this.props.viewCount, expandedUrl: this.props.expandedUrl, eventId: this.props.eventId, mediaAvailability: this.props.mediaAvailability, publisherId: this.props.publisherId, poster: this.props.poster, loop: this.props.loop, shouldLoadTranslations: this.props.shouldLoadTranslations, variants: this.props.variants, viewCountGraphData: this.props.viewCountGraphData, vmapUrl: this.props.vmapUrl },
+                            videoConfig: { contentId: this.props.contentId, contentType: this.props.contentType, cta: this.props.cta, durationMs: this.props.durationMs, viewCount: this.props.viewCount, expandedUrl: this.props.expandedUrl, eventId: this.props.eventId, mediaAvailability: this.props.mediaAvailability, publisherId: this.props.publisherId, poster: this.props.poster, loop: this.props.loop, shouldLoadTranslations: this.props.shouldLoadTranslations, variants: this.props.variants, viewCountGraphData: this.props.viewCountGraphData, vmapUrl: this.props.vmapUrl, generateDrmTokenCallback: this.props.generateDrmTokenCallback },
                             httpClient: this.props.httpClient,
                             twitterAuthedHttpClient: this.props.twitterAuthedHttpClient,
                             options: { accessibilityLabel: this.props.accessibilityLabel, "aria-label": this.props["aria-label"], additionalBadges: this.props.additionalBadges, autoplay: this.props.autoplay, adProvider: this.props.adProvider, analytics: this.props.analytics, captionStyle: this.props.captionStyle, enablePiP: this.props.enablePiP, enableVideoPlayerCaptionRendering: this.props.enableVideoPlayerCaptionRendering, featureProvider: this.props.featureProvider, hlsjsVersion: this.props.hlsjsVersion, includeBroadcastEventAssociation: this.props.includeBroadcastEventAssociation, initiallyMuted: this.props.initiallyMuted, initiallyMutedCaptions: this.props.initiallyMutedCaptions, intentToPlayTime: this.props.intentToPlayTime, language: this.props.language, maxLoopCount: this.props.maxLoopCount, maxLoopingThresholdSec: this.props.maxLoopingThresholdSec, objectFitVideo: this.props.displayOptions.objectFitVideo, playbackSessionId: this.props.playbackSessionId, playerHandlesRotations: this.props.displayOptions.playerHandlesRotations, precache: this.props.precache, liveBroadcastRewindEnabled: this.props.liveBroadcastRewindEnabled, promotedContext: this.props.promotedContext, requestedTimecode: this.props.requestedTimecode, showControls: this.props.controls, showGeolocationPrompt: this.props.geolocationPrompt, shouldCapBitrate: this.props.shouldCapBitrate, shouldRetryAutoplayMuted: this.props.shouldRetryAutoplayMuted, videoEl: this.props.videoEl },
@@ -1159,4 +1187,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba.db79177a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba.1316cbca.js.map

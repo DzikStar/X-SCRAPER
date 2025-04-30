@@ -6987,6 +6987,7 @@
                 a("ed672bfa", "All upgrades from Basic and Premium, plus ..."),
                 a("db63fa1c", "Select a premium plan"),
                 a("b128c6bc", "Get a verified badge and dozens of other awesome perks and benefits"),
+                a("a9904a1c", "Save on X Premium for a limited time"),
                 a("acfaf7a0", "Compare tiers & features"),
                 a("e1606e52", "Change your subscription"),
                 a("d2f2b91a", "sign up here"),
@@ -7852,8 +7853,7 @@
                 a("h37f2d96", "Please note not all applicant tracking systems are currently supported."),
                 a("ce102a20", "Redirecting to Stripe"),
                 a("ddfd6718", "Payment Failed"),
-                a("i90ea7d2", "Please urgently update your billing to keep your benefits."),
-                a("a62359e6", "Verified Organisation Settings");
+                a("i90ea7d2", "Please urgently update your billing to keep your benefits.");
             function r(e, t) {
                 for (var o = 0; o < t.length; o++) {
                     var a = t[o];
@@ -7892,7 +7892,8 @@
                     s(e, t)
                 );
             }
-            a("ge221b7c", "Upgrade Verified Organisation subscription to get access to affiliates and more ad credits."),
+            a("a62359e6", "Verified Organisation Settings"),
+                a("ge221b7c", "Upgrade Verified Organisation subscription to get access to affiliates and more ad credits."),
                 a("i4dccc18", "Billing"),
                 a("ec3cd6e4", "Manage your payment method, update billing information, and review your invoices."),
                 a("dac61c3c", "Account settings"),
@@ -8894,11 +8895,11 @@
                 a("d1386940", "Stay informed"),
                 a("ecda5f9e", "Misleading"),
                 a("a423473c", "Legally Required Notice"),
-                a("b3296688", "Visibility Limited"),
-                a("ccd32094", "Now");
-            a("abfcce0d", function (e) {
-                return e.amountOfTime + " ago";
-            }),
+                a("b3296688", "Visibility Limited");
+            a("ccd32094", "Now"),
+                a("abfcce0d", function (e) {
+                    return e.amountOfTime + " ago";
+                }),
                 a("ae408b76", "You reposted"),
                 a("j355f008", "Pinned post"),
                 a("habf9678", "Pinned by Author"),
@@ -13224,4 +13225,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-GB.487b86ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-GB.eac578ba.js.map

@@ -173,7 +173,7 @@
                 K = a(284702),
                 Q = a(782578),
                 J = a(123751),
-                X = a(78067);
+                X = a(310453);
             const ee = ({ media: e, messageId: t }) => {
                 e && (e.media_url_https = (0, N.ib)(e.media_url_https));
                 const a = e && K.Z.extractVideoProps(J.Z.forDm(t), e);
@@ -718,4 +718,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.DMRichTextCompose~bundle.DirectMessages-2ace928a.8658bb0a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.DMRichTextCompose~bundle.DirectMessages-2ace928a.288361aa.js.map

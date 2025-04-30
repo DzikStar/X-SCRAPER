@@ -6998,6 +6998,7 @@
                 n("ed672bfa", "All upgrades from Basic and Premium, plus ..."),
                 n("db63fa1c", "Select a premium plan"),
                 n("b128c6bc", "Get a verified badge and dozens of other awesome perks and benefits"),
+                n("a9904a1c", "Save on X Premium for a limited time"),
                 n("acfaf7a0", "Compare tiers & features"),
                 n("e1606e52", "Change your subscription"),
                 n("d2f2b91a", "sign up here"),
@@ -7863,8 +7864,7 @@
                 n("h37f2d96", "Please note not all applicant tracking systems are currently supported."),
                 n("ce102a20", "Redirecting to Stripe"),
                 n("ddfd6718", "Payment Failed"),
-                n("i90ea7d2", "Please urgently update your billing to keep your benefits."),
-                n("a62359e6", "Verified Organization Settings");
+                n("i90ea7d2", "Please urgently update your billing to keep your benefits.");
             function r(e, a) {
                 for (var t = 0; t < a.length; t++) {
                     var n = a[t];
@@ -7903,7 +7903,8 @@
                     c(e, a)
                 );
             }
-            n("ge221b7c", "Upgrade Verified Organization subscription to get access to affiliates and more ad credits."),
+            n("a62359e6", "Verified Organization Settings"),
+                n("ge221b7c", "Upgrade Verified Organization subscription to get access to affiliates and more ad credits."),
                 n("i4dccc18", "Billing"),
                 n("ec3cd6e4", "Manage your payment method, update billing information, and review your invoices."),
                 n("dac61c3c", "Account settings"),
@@ -8905,11 +8906,11 @@
                 n("d1386940", "Fan ar an eolas"),
                 n("ecda5f9e", "Míthreorach"),
                 n("a423473c", "Fógra a éilítear de réir an dlí"),
-                n("b3296688", "Visibility Limited"),
-                n("ccd32094", "Anois");
-            n("abfcce0d", function (e) {
-                return e.amountOfTime + " ó shin";
-            }),
+                n("b3296688", "Visibility Limited");
+            n("ccd32094", "Anois"),
+                n("abfcce0d", function (e) {
+                    return e.amountOfTime + " ó shin";
+                }),
                 n("ae408b76", "You reposted"),
                 n("j355f008", "Pinned post"),
                 n("habf9678", "Pionnáilte ag an Údar"),
@@ -13223,4 +13224,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ga.f7c6b65a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ga.a214a85a.js.map

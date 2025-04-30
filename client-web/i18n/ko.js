@@ -6986,6 +6986,7 @@
                 n("ed672bfa", "베이직 및 Premium의 모든 기능 업그레이드 + 추가 혜택"),
                 n("db63fa1c", "Premium 요금제 선택하기"),
                 n("b128c6bc", "인증 배지 등 다양한 혜택과 특전을 누리세요 "),
+                n("a9904a1c", "한정된 기간 동안 X Premium을 할인된 가격으로 즐기세요"),
                 n("acfaf7a0", "등급 및 기능 비교"),
                 n("e1606e52", "구독 변경"),
                 n("d2f2b91a", "여기에서 가입하세요"),
@@ -7851,8 +7852,7 @@
                 n("h37f2d96", "현재 모든 지원자 추적 시스템이 지원되는 것은 아닙니다."),
                 n("ce102a20", "Stripe에 리디렉션 중"),
                 n("ddfd6718", "결제 실패"),
-                n("i90ea7d2", "혜택을 계속 받으려면 지금 바로 결제 정보를 업데이트하세요."),
-                n("a62359e6", "인증된 조직 설정");
+                n("i90ea7d2", "혜택을 계속 받으려면 지금 바로 결제 정보를 업데이트하세요.");
             function r(e, c) {
                 for (var a = 0; a < c.length; a++) {
                     var n = c[a];
@@ -7891,7 +7891,8 @@
                     d(e, c)
                 );
             }
-            n("ge221b7c", "인증된 조직 구독을 업그레이드하면 제휴 계정 기능을 이용하고 더 많은 광고 크레딧을 받을 수 있습니다."),
+            n("a62359e6", "인증된 조직 설정"),
+                n("ge221b7c", "인증된 조직 구독을 업그레이드하면 제휴 계정 기능을 이용하고 더 많은 광고 크레딧을 받을 수 있습니다."),
                 n("i4dccc18", "결제"),
                 n("ec3cd6e4", "결제 방법을 관리하고, 결제 정보를 업데이트하고, 인보이스를 검토하세요."),
                 n("dac61c3c", "계정 설정"),
@@ -8893,11 +8894,11 @@
                 n("d1386940", "정보 계속 받기"),
                 n("ecda5f9e", "오해의 소지가 있음"),
                 n("a423473c", "법적 요구 통지"),
-                n("b3296688", "노출 범위 제한됨"),
-                n("ccd32094", "지금");
-            n("abfcce0d", function (e) {
-                return e.amountOfTime + " 전";
-            }),
+                n("b3296688", "노출 범위 제한됨");
+            n("ccd32094", "지금"),
+                n("abfcce0d", function (e) {
+                    return e.amountOfTime + " 전";
+                }),
                 n("ae408b76", "재게시했습니다"),
                 n("j355f008", "메인에 올린 게시물"),
                 n("habf9678", "작성자가 메인에 올렸습니다"),
@@ -13225,4 +13226,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ko.9335b88a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ko.65f9f95a.js.map
