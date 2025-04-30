@@ -1,5 +1,5 @@
 var manifest = {
-    feature_set_token: "3aaced758a224396e5cba2c96c039fe80609fc80",
+    feature_set_token: "af7cc75f0f65e3d413dc03d6f149f2d1bf7bb1ed",
     config: {
         "2fa_temporary_password_enabled": { value: !1 },
         Arkose_rweb_hosted_page: { value: !0 },
@@ -941,6 +941,7 @@ var manifest = {
         subscriptions_upsells_get_verified_profile: { value: !0 },
         subscriptions_upsells_get_verified_profile_card: { value: !0 },
         subscriptions_upsells_get_verified_profile_card_variant: { value: "variant_a" },
+        subscriptions_upsells_get_verified_profile_rotation_basic_upgrade_enabled: { value: !1 },
         subscriptions_upsells_get_verified_profile_rotation_enabled: { value: !0 },
         subscriptions_upsells_home_nav_migration_enabled: { value: !0 },
         subscriptions_upsells_home_sidebar_migration_enabled: { value: !0 },
@@ -2850,7 +2851,7 @@ var manifest = {
         subscriptions_upsells_post_analytics_title_text_variant: { name: "subscriptions_upsells_post_analytics_title_text_variant", type: "string" },
         subscriptions_upsells_post_analytics_message_text_variant: { name: "subscriptions_upsells_post_analytics_message_text_variant", type: "string" },
         subscriptions_upsells_premium_nav_migration_enabled: { name: "subscriptions_upsells_premium_nav_migration_enabled", type: "boolean", defaultValue: !1 },
-        subscriptions_upsells_get_verified_profile_rotation_basic_upgrade_enabled: { name: "subscriptions_upsells_get_verified_profile_rotation_basic_upgrade_enabled", type: "string" },
+        subscriptions_upsells_get_verified_profile_rotation_basic_upgrade_enabled: { name: "subscriptions_upsells_get_verified_profile_rotation_basic_upgrade_enabled", type: "boolean", defaultValue: !1 },
         subscriptions_verification_info_enabled: { name: "subscriptions_verification_info_enabled", type: "string" },
         subscriptions_verification_info_reason_enabled: { name: "subscriptions_verification_info_reason_enabled", type: "string" },
         subscriptions_verification_info_is_identity_verified_enabled: { name: "subscriptions_verification_info_is_identity_verified_enabled", type: "boolean", defaultValue: !0 },
