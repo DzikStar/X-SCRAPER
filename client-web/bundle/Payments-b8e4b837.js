@@ -721,16 +721,18 @@
                         } = n.useMemo(() => {
                             const e = p?.get_payment_method?.shipping,
                                 t = e?.status,
-                                a = e?.eta_millis;
+                                a = e?.eta_millis,
+                                n = a ? new Date(parseInt(a, 10)) : void 0,
+                                r = !!n && n < new Date();
                             switch (t) {
                                 case j.$.IssuedCardShippingStatusDelivered:
-                                    return { title: "Ready to activate", subtitle: a ? ((n = X(new Date(parseInt(a, 10)))), `Card arrived on ${n}`) : null, Icon: B.default, action: y, disabled: u };
+                                    return { title: "Ready to activate", subtitle: n ? ((i = X(n)), `Card arrived on ${i}`) : null, Icon: B.default, action: y, disabled: u };
                                 case j.$.IssuedCardShippingStatusShipped:
-                                    return { title: "Your card has shipped", subtitle: "Activate your card once its arrived", Icon: L.default };
+                                    return { title: "Your card has shipped", subtitle: "Activate your card once its arrived", Icon: L.default, action: r ? y : void 0, disabled: u };
                                 default:
                                     return { title: "Your card has been ordered", subtitle: "Use it online while you wait.", Icon: M.default };
                             }
-                            var n;
+                            var i;
                         }, [p?.get_payment_method?.shipping, u, y]);
                     return n.createElement(l.Z, { "aria-label": b, containerStyle: i.tile, disabled: t || f, onClick: g, stackLayoutUpperStyle: S.ZP.upper, upper: n.createElement(r.Z, { style: S.ZP.row }, n.createElement(h, { style: S.ZP.icon }), n.createElement(r.Z, null, n.createElement(o.ZP, null, b), E ? n.createElement(o.ZP, { color: "gray700", size: "subtext2" }, E) : null)), withInteractiveStyling: !!g });
                 },
@@ -807,4 +809,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-b8e4b837.0043040a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-b8e4b837.1a65ec5a.js.map

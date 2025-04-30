@@ -95,7 +95,7 @@
                 i = r(811574),
                 s = r(548797),
                 u = r(125363),
-                d = r(488645),
+                d = r(116868),
                 m = r(248186);
             const p = ({ content: e, isTierSwitching: t, referringPage: r, selectedProduct: p, setSelectedProduct: g }) => {
                 const f = (0, n.useHistory)(),
@@ -534,7 +534,7 @@
                 c = l.default.create((e) => ({ dotContainer: { flexDirection: "row", justifyContent: "center" }, dot: { width: 7, height: 7, borderRadius: 5, marginHorizontal: 4, backgroundColor: e.colors.gray500 }, dotActive: { backgroundColor: "light" === e.paletteName ? e.colors.alwaysBlack : e.colors.whiteOnColor } }));
         },
         934912: (e, t, r) => {
-            r.d(t, { Z: () => s, k: () => c });
+            r.d(t, { Z: () => s });
             var a = r(202784),
                 n = r(325686),
                 l = r(731708),
@@ -813,4 +813,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterBlue-cda947e7.8d988f5a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterBlue-cda947e7.14733b9a.js.map

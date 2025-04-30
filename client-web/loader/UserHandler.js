@@ -3,14 +3,14 @@
     ["loader.UserHandler"],
     {
         333241: (e, o, r) => {
-            r.d(o, { Z: () => I });
+            r.d(o, { Z: () => _ });
             r(136728);
             var t = r(202784),
                 n = r(638236),
                 a = r(811176),
-                s = r(674132),
-                l = r.n(s),
-                d = r(415506),
+                l = r(674132),
+                d = r.n(l),
+                s = r(415506),
                 i = r(516951),
                 c = r(443781),
                 u = r(376293),
@@ -22,13 +22,13 @@
                 f = "removeFollower",
                 b = "report",
                 M = "share",
-                y = l().j7bb1a43,
-                _ = l().hef5960c,
-                I = (0, D.M)((e) => {
+                y = d().j7bb1a43,
+                v = d().hef5960c,
+                _ = (0, D.M)((e) => {
                     const { featureSwitches: o } = (0, c.QZ)(),
-                        { onBlock: r, onClose: s, onMute: l, onRemoveFollower: D, onReportUser: I, onShare: P, onUnblock: k, onUnmute: v, user: E } = e,
+                        { onBlock: r, onClose: l, onMute: d, onRemoveFollower: D, onReportUser: _, onShare: I, onUnblock: P, onUnmute: k, user: E } = e,
                         S = [],
-                        A = (o, r) => {
+                        C = (o, r) => {
                             const { confirm: t, onClose: n } = e;
                             if (o) {
                                 const { label: e, ...a } = o;
@@ -44,20 +44,20 @@
                         S.push({
                             Icon: n.Z,
                             onClick: () => {
-                                s(), P();
+                                l(), I();
                             },
                             testID: M,
-                            text: _,
+                            text: v,
                         });
                     !E.blocking &&
                         S.push({
                             ...(0, h.N1)(
                                 E,
                                 () => {
-                                    s(), l();
+                                    l(), d();
                                 },
                                 () => {
-                                    s(), v();
+                                    l(), k();
                                 },
                             ),
                             testID: w,
@@ -66,40 +66,40 @@
                         S.push({
                             ...(0, m.l)({
                                 removeFollowerAction: (e) => {
-                                    A(e, D);
+                                    C(e, D);
                                 },
                                 user: E,
                             }),
                             testID: f,
                         }),
-                        S.push((0, u.op)({ blockAction: (e) => A(e, r), isSoftBlockEnabled: o.isTrue("xprofile_blocked_by_view_enabled"), source: u.SC.FOLLOWERS_LIST, testID: p, unblockAction: (e) => A(e, k), user: E })),
+                        S.push((0, u.op)({ blockAction: (e) => C(e, r), isSoftBlockEnabled: o.isTrue("xprofile_blocked_by_view_enabled"), source: u.SC.FOLLOWERS_LIST, testID: p, unblockAction: (e) => C(e, P), user: E })),
                         S.push({
-                            Icon: d.default,
+                            Icon: s.default,
                             onClick: () => {
-                                s(), I();
+                                l(), _();
                             },
                             testID: b,
                             text: y({ screenName: E.screen_name }),
                         });
-                    const C = S.map(({ Icon: e, onClick: o, testID: r, text: t }) => ({ text: t, onClick: o, Icon: e, testID: r }));
-                    return t.createElement(a.Z, { items: C, onCloseRequested: s });
+                    const A = S.map(({ Icon: e, onClick: o, testID: r, text: t }) => ({ text: t, onClick: o, Icon: e, testID: r }));
+                    return t.createElement(a.Z, { items: A, onCloseRequested: l });
                 });
         },
         864479: (e, o, r) => {
-            r.d(o, { Z: () => s });
+            r.d(o, { Z: () => l });
             var t = r(807896),
                 n = r(202784),
                 a = r(771099);
-            const s = (e) => (o) => n.createElement(a.$6, null, (r) => n.createElement(e, (0, t.Z)({}, o, { isInSidebar: r })));
+            const l = (e) => (o) => n.createElement(a.$6, null, (r) => n.createElement(e, (0, t.Z)({}, o, { isInSidebar: r })));
         },
         293988: (e, o, r) => {
-            r.d(o, { Z: () => P });
+            r.d(o, { Z: () => I });
             var t = r(202784),
                 n = r(154003),
                 a = r(674132),
-                s = r.n(a),
-                l = r(74514),
-                d = r(405303),
+                l = r.n(a),
+                d = r(74514),
+                s = r(405303),
                 i = r(684511),
                 c = r(860174),
                 u = r(71620),
@@ -111,17 +111,17 @@
                     .propsFromState(() => ({ shouldPromptPush: p }))
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, u.zr)("DEVICE_FOLLOW_BUTTON_CONTAINER"), updateDeviceFollowing: D.ZP.updateDeviceFollowing }))
                     .withAnalytics({ element: "mobile_notifications" }),
-                f = s().bdba3e1a,
-                b = s().c4da7d28,
-                M = s().j87c21f4,
-                y = s().iebc30ca,
-                _ = s().dc740eb2;
-            class I extends t.PureComponent {
+                f = l().bdba3e1a,
+                b = l().c4da7d28,
+                M = l().j87c21f4,
+                y = l().iebc30ca,
+                v = l().dc740eb2;
+            class _ extends t.PureComponent {
                 constructor(e) {
                     super(e),
                         (this._renderButton = () => {
                             const { isFollowing: e, style: o } = this.props;
-                            return e ? t.createElement(n.ZP, { "aria-label": b, hoverLabel: { label: y }, icon: t.createElement(l.default, null), onPress: this._handleUnfollow, style: o, type: "primaryOutlined" }) : t.createElement(n.ZP, { "aria-label": f, hoverLabel: { label: M }, icon: t.createElement(d.default, null), onPress: this._handleFollow, style: o, type: "primaryOutlined" });
+                            return e ? t.createElement(n.ZP, { "aria-label": b, hoverLabel: { label: y }, icon: t.createElement(d.default, null), onPress: this._handleUnfollow, style: o, type: "primaryOutlined" }) : t.createElement(n.ZP, { "aria-label": f, hoverLabel: { label: M }, icon: t.createElement(s.default, null), onPress: this._handleFollow, style: o, type: "primaryOutlined" });
                         }),
                         (this._handleFollow = () => {
                             const { isDeviceFollowWithoutUserFollow: e, shouldPromptPush: o } = this.props;
@@ -139,7 +139,7 @@
                         (this.state = { showingPushPrompt: !1 });
                 }
                 render() {
-                    return t.createElement("div", null, this.state.showingPushPrompt ? t.createElement(i.Z, { fullScreen: !0, message: _ }) : null, this._renderButton());
+                    return t.createElement("div", null, this.state.showingPushPrompt ? t.createElement(i.Z, { fullScreen: !0, message: v }) : null, this._renderButton());
                 }
                 _updateDeviceFollowing(e) {
                     const { createLocalApiErrorHandler: o, updateDeviceFollowing: r, userId: t } = this.props;
@@ -150,16 +150,16 @@
                     o.scribeAction(e);
                 }
             }
-            const P = w(I);
+            const I = w(_);
         },
         168222: (e, o, r) => {
-            r.r(o), r.d(o, { default: () => k });
+            r.r(o), r.d(o, { default: () => P });
             var t = r(459643),
                 n = r(942893),
                 a = r(409438),
-                s = r(240089),
-                l = r(351322),
-                d = r(202784),
+                l = r(240089),
+                d = r(351322),
+                s = r(202784),
                 i = r(392237),
                 c = r(187669),
                 u = r(952793),
@@ -178,49 +178,49 @@
                     .propsFromActions(({ module: e }) => ({ saveAsRecentSearch: w.DI, applyReactionInstructions: e.applyReactionInstructions }))
                     .withAnalytics(),
                 y = (e) => {
-                    const { analytics: o, applyReactionInstructions: r, cellClickable: t, decoration: l, entry: i, isCarouselItem: p, onClick: w, saveAsRecentSearch: f, shouldScribeImpression: b, shouldScribeProfileClick: M, shouldStoreTypeaheadItem: y, user: I, withFollowsYou: P, withLink: k } = e,
+                    const { analytics: o, applyReactionInstructions: r, cellClickable: t, decoration: d, entry: i, isCarouselItem: p, onClick: w, saveAsRecentSearch: f, shouldScribeImpression: b, shouldScribeProfileClick: M, shouldStoreTypeaheadItem: y, user: _, withFollowsYou: I, withLink: P } = e,
                         {
-                            content: { id: v, promotedMetadata: E, socialContext: S },
+                            content: { id: k, promotedMetadata: E, socialContext: S },
                         } = i,
-                        A = D(E),
-                        C = (S && S.generalContext) || void 0,
-                        O = e.displayMode,
-                        Z = (0, u.hC)("super_follow_android_web_subscription_enabled") && O === a.Z.SubscribableUser ? s.dk : s.ET,
-                        T = l || Z,
-                        F = i.itemMetadata && i.itemMetadata.clientEventInfo && i.itemMetadata.clientEventInfo.details && i.itemMetadata.clientEventInfo.details.timelinesDetails && i.itemMetadata.clientEventInfo.details.timelinesDetails.injectionType;
+                        C = D(E),
+                        A = (S && S.generalContext) || void 0,
+                        Z = e.displayMode,
+                        g = (0, u.hC)("super_follow_android_web_subscription_enabled") && Z === a.Z.SubscribableUser ? l.dk : l.ET,
+                        O = d || g,
+                        L = i.itemMetadata && i.itemMetadata.clientEventInfo && i.itemMetadata.clientEventInfo.details && i.itemMetadata.clientEventInfo.details.timelinesDetails && i.itemMetadata.clientEventInfo.details.timelinesDetails.injectionType;
                     (0, c.q)(() => {
-                        if ("WhoToFollow" === F) {
-                            const e = I ? [n.Z.getUserItem(I)] : [];
-                            I?.following ? o.scribe({ element: "followed_user", action: "impression", data: { items: e } }) : I?.muting ? o.scribe({ element: "muted_user", action: "impression", data: { items: e } }) : I?.blocking && o.scribe({ element: "blocked_user", action: "impression", data: { items: e } });
+                        if ("WhoToFollow" === L) {
+                            const e = _ ? [n.Z.getUserItem(_)] : [];
+                            _?.following ? o.scribe({ element: "followed_user", action: "impression", data: { items: e } }) : _?.muting ? o.scribe({ element: "muted_user", action: "impression", data: { items: e } }) : _?.blocking && o.scribe({ element: "blocked_user", action: "impression", data: { items: e } });
                         }
                     });
-                    const L = d.useCallback(() => {
+                    const T = s.useCallback(() => {
                         r({ entry: i, triggerName: m.K.ON_FOLLOW });
                     }, [r, i]);
-                    return d.createElement(s.Z9, { cellClickable: t, decoration: T, displayMode: O, isConcise: p, onClick: w, onFollowClick: L, promotedContent: A, promotedItemType: h.bj.USER, referringPage: O, saveAsRecentSearch: f, shouldScribeImpression: b, shouldScribeProfileClick: M, shouldStoreTypeaheadItem: y, socialContext: C, style: p && _.isCarouselItem, userId: v, withFollowsYou: P, withLink: k });
+                    return s.createElement(l.Z9, { cellClickable: t, decoration: O, displayMode: Z, isConcise: p, onClick: w, onFollowClick: T, promotedContent: C, promotedItemType: h.bj.USER, referringPage: Z, saveAsRecentSearch: f, shouldScribeImpression: b, shouldScribeProfileClick: M, shouldStoreTypeaheadItem: y, socialContext: A, style: p && v.isCarouselItem, userId: k, withFollowsYou: I, withLink: P });
                 },
-                _ = i.default.create((e) => ({ isCarouselItem: { width: 312 } })),
-                I = M(d.memo(y)),
-                P = [s.ET, s.C_],
-                k = ({ cellClickable: e = !0, decoration: o, displayMode: r = a.Z.UserCompact, isCarouselItem: s, onClick: d, shouldScribeProfileClick: i = !0, shouldScribeImpression: c = !1, shouldStoreTypeaheadItem: u, withLink: h = !0 }) =>
-                    l
+                v = i.default.create((e) => ({ isCarouselItem: { width: 312 } })),
+                _ = M(s.memo(y)),
+                I = [l.ET, l.C_],
+                P = ({ cellClickable: e = !0, decoration: o, displayMode: r = a.Z.UserCompact, isCarouselItem: l, onClick: s, shouldScribeProfileClick: i = !0, shouldScribeImpression: c = !1, shouldStoreTypeaheadItem: u, withLink: h = !0 }) =>
+                    d
                         .iH({
-                            component: I,
+                            component: _,
                             defaultScribeNamespace: { element: "user" },
                             getScribeDataItem(e) {
                                 const {
                                         content: { id: o, promotedMetadata: r },
                                         cursor: t,
                                         itemMetadata: a,
-                                        position: s,
+                                        position: l,
                                     } = e,
-                                    l = a.clientEventInfo,
-                                    d = D(r);
-                                return n.Z.getUserItem({ id_str: o, promoted_content: d }, void 0, s, t, l);
+                                    d = a.clientEventInfo,
+                                    s = D(r);
+                                return n.Z.getUserItem({ id_str: o, promoted_content: s }, void 0, l, t, d);
                             },
                             isFocusable: (0, t.Z)(!0),
                         })
-                        .getHandler(() => ({ cellClickable: e, decoration: o, displayMode: r, isCarouselItem: s, onClick: d, shouldScribeProfileClick: i, shouldScribeImpression: c, shouldStoreTypeaheadItem: u, withLink: h, withFollowsYou: !o || P.includes(o) }));
+                        .getHandler(() => ({ cellClickable: e, decoration: o, displayMode: r, isCarouselItem: l, onClick: s, shouldScribeProfileClick: i, shouldScribeImpression: c, shouldStoreTypeaheadItem: u, withLink: h, withFollowsYou: !o || I.includes(o) }));
         },
         684511: (e, o, r) => {
             r.d(o, { Z: () => t });
@@ -268,32 +268,32 @@
             const n = r.n(t)().gf5e9ea6;
         },
         916585: (e, o, r) => {
-            r.d(o, { k: () => s });
+            r.d(o, { k: () => l });
             var t = r(674132),
                 n = r.n(t),
                 a = r(437358);
-            const s = (e, o) => {
+            const l = (e, o) => {
                 const { id_str: r, screen_name: t } = e,
-                    s = (0, n().d78131b9)({ screenName: t });
-                return { Icon: a.default, text: s, link: { pathname: "/i/lists/add_member", state: { userId: r } }, onClick: o };
+                    l = (0, n().d78131b9)({ screenName: t });
+                return { Icon: a.default, text: l, link: { pathname: "/i/lists/add_member", state: { userId: r } }, onClick: o };
             };
         },
         847607: (e, o, r) => {
-            r.d(o, { Aq: () => u, FK: () => b, GS: () => l, N1: () => m, PY: () => h, X6: () => M, cm: () => d });
+            r.d(o, { Aq: () => u, FK: () => b, GS: () => d, N1: () => m, PY: () => h, X6: () => M, cm: () => s });
             r(202784);
             var t = r(674132),
                 n = r.n(t),
                 a = r(391366),
-                s = r(40904);
-            const l = n().hb568af4,
-                d = n().bb1cbeb6,
+                l = r(40904);
+            const d = n().hb568af4,
+                s = n().bb1cbeb6,
                 i = (n().h2f62206, n().e67b2d65),
                 c = n().f05597b3,
                 u = (e) => i({ screenName: e }),
                 h = (e) => c({ screenName: e }),
                 m = (e, o, r) => {
                     const { muting: t, screen_name: n } = e;
-                    return { text: t ? h(n) : u(n), onClick: t ? r : o, Icon: t ? a.default : s.default };
+                    return { text: t ? h(n) : u(n), onClick: t ? r : o, Icon: t ? a.default : l.default };
                 },
                 D = n().h59f52ee,
                 p = n().eea0cbee,
@@ -308,15 +308,15 @@
             var t = r(674132),
                 n = r.n(t),
                 a = r(224823);
-            const s = n().b3036480,
-                l = n().b3036480,
-                d = n().e68b09b4,
+            const l = n().b3036480,
+                d = n().b3036480,
+                s = n().e68b09b4,
                 i = n().h27b7407,
                 c = ({ removeFollowerAction: e, user: o }) => {
                     const r = u(o);
-                    return { Icon: a.default, text: s, onClick: () => e(r) };
+                    return { Icon: a.default, text: l, onClick: () => e(r) };
                 },
-                u = (e) => ({ confirmButtonType: "destructiveFilled", headline: l, label: d, text: i({ screenName: e.screen_name }) });
+                u = (e) => ({ confirmButtonType: "destructiveFilled", headline: d, label: s, text: i({ screenName: e.screen_name }) });
         },
         48886: (e, o, r) => {
             r.d(o, { q: () => n });
@@ -334,31 +334,31 @@
             const t = Object.freeze({ ON_LINGER: "onLinger", ON_IS_RELEVANT: "onIsRelevant", ON_SHOW_MORE: "onShowMore", ON_LIKE: "onLike", ON_FOLLOW: "onFollow" });
         },
         988823: (e, o, r) => {
-            r.d(o, { M: () => s });
+            r.d(o, { M: () => l });
             var t = r(807896),
                 n = r(202784),
                 a = r(190286);
-            const s = (e) => (o) => {
-                const [r, s] = n.useState(null),
-                    l = (e) =>
+            const l = (e) => (o) => {
+                const [r, l] = n.useState(null),
+                    d = (e) =>
                         new Promise((o, r) => {
-                            s({ resolve: o, reject: r, confirmationSheetProps: e });
+                            l({ resolve: o, reject: r, confirmationSheetProps: e });
                         });
                 if (r) {
-                    const { confirmationSheetProps: e, reject: o, resolve: l } = r;
+                    const { confirmationSheetProps: e, reject: o, resolve: d } = r;
                     return n.createElement(
                         a.Z,
                         (0, t.Z)({}, e, {
                             onCancel: () => {
-                                o(), s(null);
+                                o(), l(null);
                             },
                             onConfirm: () => {
-                                l(), s(null);
+                                d(), l(null);
                             },
                         }),
                     );
                 }
-                return n.createElement(e, (0, t.Z)({}, o, { confirm: l }));
+                return n.createElement(e, (0, t.Z)({}, o, { confirm: d }));
             };
         },
         694180: (e, o, r) => {
@@ -366,9 +366,9 @@
             var t = r(370751),
                 n = r(399896),
                 a = r(663550),
-                s = r(499627),
-                l = r(917799);
-            const d = {},
+                l = r(499627),
+                d = r(917799);
+            const s = {},
                 i = Object.freeze({ REQUEST: "rweb/promotedContent/LOG_REQUEST", SUCCESS: "rweb/promotedContent/LOG_SUCCESS", FAILURE: "rweb/promotedContent/LOG_FAILURE" }),
                 c = "rweb/promotedContent/LOG_UNIQUE_EVENT",
                 u = (0, t.Z)([a.dx.IMPRESSION, a.dx.DWELL]),
@@ -378,32 +378,32 @@
                 p =
                     (e) =>
                     (o, r, { api: t }) => {
-                        const { event: a, impression_id: s, promoted_trend_id: d } = e,
-                            c = `trend-${d}-${a}`;
+                        const { event: a, impression_id: l, promoted_trend_id: s } = e,
+                            c = `trend-${s}-${a}`;
                         if (h.has(a) && D(r(), c)) return Promise.resolve();
-                        const u = { promoted_trend_id: d, event: a, impression_id: s };
-                        return (0, l._O)(o, { params: u, request: t.withEndpoint(n.Z).log })({ actionTypes: i, context: "APP_PROMOTED_CONTENT_LOG", meta: u }, (e, o) => {
+                        const u = { promoted_trend_id: s, event: a, impression_id: l };
+                        return (0, d._O)(o, { params: u, request: t.withEndpoint(n.Z).log })({ actionTypes: i, context: "APP_PROMOTED_CONTENT_LOG", meta: u }, (e, o) => {
                             if (!o && h.has(a)) return [m(c)];
                         });
                     },
                 w =
                     ({ disclosureType: e, itemId: o, itemType: r, params: t }) =>
-                    (a, s, { api: d }) => {
+                    (a, l, { api: s }) => {
                         const { event: c, impression_id: h } = t,
                             p = `${r}-${o ?? "undefined"}-${h ?? "undefined"}-${c ?? "undefined"}`;
-                        if (u.has(c) && D(s(), p)) return Promise.resolve();
+                        if (u.has(c) && D(l(), p)) return Promise.resolve();
                         const w = e && "earned" === e.toLowerCase() ? "1" : null,
                             f = { ...t, earned: w, epoch_ms: Date.now() };
-                        return (0, l._O)(a, { params: f, request: d.withEndpoint(n.Z).log })({ actionTypes: i, context: "APP_PROMOTED_CONTENT_LOG", meta: f }, (e, o) => {
+                        return (0, d._O)(a, { params: f, request: s.withEndpoint(n.Z).log })({ actionTypes: i, context: "APP_PROMOTED_CONTENT_LOG", meta: f }, (e, o) => {
                             if (!o && u.has(c)) return [m(p)];
                         });
                     },
                 f =
                     (e) =>
                     (o, r, { api: t }) =>
-                        (0, l._O)(o, { params: e, request: t.withEndpoint(n.Z).log })({ actionTypes: i, context: "APP_PROMOTED_CONTENT_LOG", meta: e });
-            s.Z.register({
-                promotedContent: function (e = d, o) {
+                        (0, d._O)(o, { params: e, request: t.withEndpoint(n.Z).log })({ actionTypes: i, context: "APP_PROMOTED_CONTENT_LOG", meta: e });
+            l.Z.register({
+                promotedContent: function (e = s, o) {
                     if (!o) return e;
                     if (o.type === c) {
                         if (!o.payload) return e;
@@ -415,19 +415,19 @@
             });
         },
         204744: (e, o, r) => {
-            r.d(o, { DI: () => y, H$: () => h, OB: () => _, Ww: () => c, YB: () => u, hj: () => w, qF: () => b });
+            r.d(o, { DI: () => y, H$: () => h, OB: () => v, Ww: () => c, YB: () => u, hj: () => w, qF: () => b });
             r(901951);
             var t = r(499627),
                 n = r(390387);
             const a = "recentSearches",
-                s = "rweb.recentSearches",
-                l =
+                l = "rweb.recentSearches",
+                d =
                     (e) =>
                     (o, r, { userPersistence: t }) =>
-                        t.set(s, { recentSearches: e }).catch(() => {
+                        t.set(l, { recentSearches: e }).catch(() => {
                             Promise.resolve();
                         }),
-                d = (e, o) => {
+                s = (e, o) => {
                     let r = [];
                     if (e.user) {
                         const t = e.user;
@@ -459,8 +459,8 @@
                     (o, r, { userPersistence: t }) => {
                         o({ payload: e, type: p });
                         const a = r(),
-                            s = c(a);
-                        return (0, n.Qb)(a) ? o(l(s)) : Promise.resolve();
+                            l = c(a);
+                        return (0, n.Qb)(a) ? o(d(l)) : Promise.resolve();
                     },
                 f = "rweb/recentSearches/CLEAR_ALL",
                 b =
@@ -469,7 +469,7 @@
                         e({ type: f });
                         const t = o(),
                             a = c(t);
-                        return (0, n.Qb)(t) ? e(l(a)) : Promise.resolve();
+                        return (0, n.Qb)(t) ? e(d(a)) : Promise.resolve();
                     },
                 M = "rweb/recentSearches/ADD_QUERY",
                 y =
@@ -477,10 +477,10 @@
                     (o, r, { userPersistence: t }) => {
                         o({ payload: e, type: M });
                         const a = r(),
-                            s = c(a);
-                        return (0, n.Qb)(a) ? o(l(s)) : Promise.resolve();
+                            l = c(a);
+                        return (0, n.Qb)(a) ? o(d(l)) : Promise.resolve();
                     },
-                _ =
+                v =
                     () =>
                     (e, o, { userPersistence: r }) => {
                         const t = o();
@@ -490,7 +490,7 @@
                                   const t = o();
                                   return (0, n.Qb)(t)
                                       ? r
-                                            .get(s)
+                                            .get(l)
                                             .then((o) => {
                                                 e(D(o));
                                             })
@@ -506,12 +506,12 @@
                     switch (o.type) {
                         case M: {
                             const r = o.payload,
-                                t = r ? d(r, e.recentSearches) : [];
+                                t = r ? s(r, e.recentSearches) : [];
                             return t.length > 49 && t.splice(49, 1), r && t.unshift(r), { ...e, recentSearches: t };
                         }
                         case p: {
                             const r = o.payload,
-                                t = r ? d(r, e.recentSearches) : [];
+                                t = r ? s(r, e.recentSearches) : [];
                             return { ...e, recentSearches: t };
                         }
                         case f:
@@ -530,15 +530,15 @@
             var t = r(161821),
                 n = r(390387),
                 a = r(836255),
-                s = r(255117),
-                l = r(166506),
-                d = r(919022);
+                l = r(255117),
+                d = r(166506),
+                s = r(919022);
             const i =
                 (e, o) =>
                 (r, i, { api: c, featureSwitches: u }) =>
-                    r(d.ZP.mute(e, o)).then(() => {
+                    r(s.ZP.mute(e, o)).then(() => {
                         const o = i(),
-                            d = (0, t.Z)(a.Z.selectAll(o)).reduce((r, t) => {
+                            s = (0, t.Z)(a.Z.selectAll(o)).reduce((r, t) => {
                                 if (null != t)
                                     if (t.user === e) r[t.id_str] = !0;
                                     else if (t.retweeted_status) {
@@ -548,10 +548,10 @@
                                 return r;
                             }, {}),
                             c = (0, n._h)(i()),
-                            u = c ? [(0, s.ZP)({ useLatest: !1, userId: c }).removeTweets(d), (0, s.ZP)({ useLatest: !0, userId: c }).removeTweets(d)] : [],
-                            h = (0, l.k9)();
+                            u = c ? [(0, l.ZP)({ useLatest: !1, userId: c }).removeTweets(s), (0, l.ZP)({ useLatest: !0, userId: c }).removeTweets(s)] : [],
+                            h = (0, d.k9)();
                         if (h.selectInitialFetchStatus(o) && !h.selectCanRefresh(o)) {
-                            const r = (0, l.f8)(e, o, h);
+                            const r = (0, d.f8)(e, o, h);
                             r && u.push(r);
                         }
                         return r(u);
@@ -562,10 +562,10 @@
             var t = r(503768),
                 n = r(750085),
                 a = r(962741),
-                s = r(466015),
-                l = r(919022),
-                d = r(218951);
-            const i = () => (0, d.Z)({ timelineId: "mutedAccountsGraphQL", network: { getEndpoint: (e) => e.withEndpoint(t.ZP).fetchMutedAccounts, getEndpointParams: ({ count: e, cursor: o }) => ({ count: e, cursor: "string" == typeof o ? o : void 0 }) }, context: "FETCH_MUTED_ACCOUNTS", perfKey: "mutedAccountsGraphql", formatResponse: n.Z }),
+                l = r(466015),
+                d = r(919022),
+                s = r(218951);
+            const i = () => (0, s.Z)({ timelineId: "mutedAccountsGraphQL", network: { getEndpoint: (e) => e.withEndpoint(t.ZP).fetchMutedAccounts, getEndpointParams: ({ count: e, cursor: o }) => ({ count: e, cursor: "string" == typeof o ? o : void 0 }) }, context: "FETCH_MUTED_ACCOUNTS", perfKey: "mutedAccountsGraphql", formatResponse: n.Z }),
                 c = (e) => (o, r) => {
                     const t = r();
                     o(
@@ -573,7 +573,7 @@
                             .selectEntries(t)
                             .filter((e) => {
                                 const o = e.type === a.ZP.User ? e.content.id : "",
-                                    r = l.ZP.select(t, o);
+                                    r = d.ZP.select(t, o);
                                 return r && !r.muting;
                             })
                             .map((o) => e.removeEntry(o.entryId)),
@@ -581,12 +581,51 @@
                 },
                 u = (e, o, r) => {
                     if (!r.selectEntries(o).find((o) => o.type === a.ZP.User && o.content.id === e)) {
-                        const o = (0, s.OD)(e),
-                            t = (0, s.$0)({ entryId: o, id: e, sortIndex: Date.now().toString() });
+                        const o = (0, l.OD)(e),
+                            t = (0, l.$0)({ entryId: o, id: e, sortIndex: Date.now().toString() });
                         return r.injectEntry(t);
                     }
                 };
         },
+        971657: (e, o, r) => {
+            r.r(o), r.d(o, { default: () => s });
+            var t = r(202784),
+                n = r(890601),
+                a = r(783427),
+                l = r(347101);
+            const d = (e = {}) => {
+                const { direction: o } = (0, a.Z)();
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: t.createElement("g", null, t.createElement("path", { d: "M7.501 19.917L7.471 21H.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977.963 0 1.95.212 2.87.672-.444.478-.851 1.03-1.212 1.656-.507-.204-1.054-.329-1.658-.329-2.767 0-4.57 2.223-4.938 6.004H7.56c-.023.302-.05.599-.059.917zm8.999-8.921c-3.264 0-6.816 2.358-7 8.977L9.471 21h4.528v-2h-2.438c.367-3.781 2.17-6.004 4.938-6.004 1.089 0 2.022.356 2.784 1.004h2.632c-1.376-2.136-3.446-3.004-5.415-3.004zm0-.996c-.799 0-1.527-.279-2.116-.73C13.548 8.63 13 7.632 13 6.5 13 4.57 14.567 3 16.5 3S20 4.57 20 6.5c0 1.132-.548 2.13-1.384 2.77-.589.451-1.317.73-2.116.73zM15 6.5c0 .827.673 1.5 1.5 1.5S18 7.327 18 6.5 17.327 5 16.5 5 15 5.673 15 6.5zm-11 0C4 4.57 5.567 3 7.5 3S11 4.57 11 6.5 9.433 10 7.5 10 4 8.43 4 6.5zm2 0C6 7.327 6.673 8 7.5 8S9 7.327 9 6.5 8.327 5 7.5 5 6 5.673 6 6.5zM21 21h3v-2h-3v-3h-2v3h-3v2h3v3h2v-3z" })) }, { writingDirection: o });
+            };
+            d.metadata = { width: 24, height: 24 };
+            const s = d;
+        },
+        226597: (e, o, r) => {
+            r.r(o), r.d(o, { default: () => s });
+            var t = r(202784),
+                n = r(890601),
+                a = r(783427),
+                l = r(347101);
+            const d = (e = {}) => {
+                const { direction: o } = (0, a.Z)();
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: t.createElement("g", null, t.createElement("path", { d: "M3.707 21.707l18-18-1.414-1.414-2.088 2.088C17.688 4.137 17.11 4 16.5 4H11v2h5.5c.028 0 .056 0 .084.002l-10.88 10.88c-.131-.266-.204-.565-.204-.882V7.551l2.068 1.93 1.365-1.462L4.5 3.882.068 8.019l1.365 1.462 2.068-1.93V16c0 .871.278 1.677.751 2.334l-1.959 1.959 1.414 1.414zM18.5 9h2v7.449l2.068-1.93 1.365 1.462-4.433 4.137-4.432-4.137 1.365-1.462 2.067 1.93V9zm-8.964 9l-2 2H13v-2H9.536z" })) }, { writingDirection: o });
+            };
+            d.metadata = { width: 24, height: 24 };
+            const s = d;
+        },
+        155353: (e, o, r) => {
+            r.r(o), r.d(o, { default: () => s });
+            var t = r(202784),
+                n = r(890601),
+                a = r(783427),
+                l = r(347101);
+            const d = (e = {}) => {
+                const { direction: o } = (0, a.Z)();
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: t.createElement("g", null, t.createElement("path", { d: "M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z" })) }, { writingDirection: o });
+            };
+            d.metadata = { width: 24, height: 24 };
+            const s = d;
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.UserHandler.a9d8568a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.UserHandler.83ee6d7a.js.map

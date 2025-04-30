@@ -35,7 +35,7 @@
                 l = a(415805),
                 c = a(284702),
                 d = a(738584),
-                u = a(907187),
+                u = a(905996),
                 p = a(123751),
                 m = a(614425),
                 h = a(443781),
@@ -1062,4 +1062,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.TV~bundle.Account-e019dbda.a2594a0a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.TV~bundle.Account-e019dbda.33f46c1a.js.map

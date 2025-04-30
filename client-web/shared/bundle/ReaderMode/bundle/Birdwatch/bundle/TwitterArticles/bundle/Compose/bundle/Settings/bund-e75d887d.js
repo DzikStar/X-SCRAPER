@@ -138,7 +138,7 @@
                         }),
                         (this._scribeAction = (e) => {
                             const { analytics: t, scribeElement: a } = this.props;
-                            t.scribe({ element: a, action: e });
+                            "impression" === e ? t.scribe({ element: a, action: e }) : t.scribe({ action: a });
                         }),
                         (this._renderTranslation = () => {
                             const { originLanguage: e, translatedMessage: t, translationSource: a } = this.props,
@@ -270,4 +270,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e75d887d.931b162a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-e75d887d.1fde2d1a.js.map

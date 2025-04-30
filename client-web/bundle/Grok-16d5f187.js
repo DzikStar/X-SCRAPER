@@ -68,20 +68,20 @@
                 P = n(919022),
                 R = n(312771),
                 z = n(464023),
-                _ = n(574305),
-                M = n(654917),
+                M = n(574305),
+                _ = n(654917),
                 S = n(354851),
                 L = n(222656),
                 A = n(305442),
                 B = n(107267),
                 D = n(154003),
                 T = n(731708),
-                F = n(837020),
-                W = n(757700),
-                j = n(67369),
-                H = n(721266),
-                O = n(415506),
-                U = n(315951),
+                U = n(837020),
+                F = n(757700),
+                W = n(67369),
+                j = n(721266),
+                H = n(415506),
+                O = n(315951),
                 K = n(786272);
             const N = p().d0205a24,
                 V = p().ed4177c4,
@@ -92,8 +92,8 @@
                 X = p().c3d89aca,
                 q = p().c9f7c196,
                 Y = ({ onContinue: e }) => {
-                    const t = (0, j.LX)();
-                    return a.createElement(r.Z, { style: ee.legalText }, a.createElement(r.Z, { style: ee.content }, a.createElement(r.Z, { style: ee.section }, a.createElement(O.default, { style: ee.titleIcon }), a.createElement(r.Z, { style: ee.sectionContent }, a.createElement(T.ZP, { style: ee.title }, N), a.createElement(T.ZP, { style: ee.description }, V))), a.createElement(r.Z, { style: ee.section }, a.createElement(U.default, { style: ee.titleIcon }), a.createElement(r.Z, { style: ee.sectionContent }, a.createElement(T.ZP, { style: ee.title }, G), a.createElement(T.ZP, { style: ee.description }, $, " ", a.createElement(T.ZP, { link: "https://help.x.com/using-x/about-grok" }, q)))), a.createElement(r.Z, { style: ee.section }, a.createElement(K.default, { style: ee.titleIcon }), a.createElement(r.Z, { style: ee.sectionContent }, a.createElement(T.ZP, { style: ee.title }, J), a.createElement(T.ZP, { style: ee.description }, Q, " ", a.createElement(T.ZP, { link: "https://help.x.com/using-x/about-grok" }, q))))), t ? a.createElement(H.Z, { size: "space48" }) : null, a.createElement(r.Z, { style: [ee.continueButtonContainer, t ? ee.sticky : void 0] }, a.createElement(D.ZP, { onPress: e, size: "large", style: ee.continueButton, type: "primaryFilled" }, X)));
+                    const t = (0, W.LX)();
+                    return a.createElement(r.Z, { style: ee.legalText }, a.createElement(r.Z, { style: ee.content }, a.createElement(r.Z, { style: ee.section }, a.createElement(H.default, { style: ee.titleIcon }), a.createElement(r.Z, { style: ee.sectionContent }, a.createElement(T.ZP, { style: ee.title }, N), a.createElement(T.ZP, { style: ee.description }, V))), a.createElement(r.Z, { style: ee.section }, a.createElement(O.default, { style: ee.titleIcon }), a.createElement(r.Z, { style: ee.sectionContent }, a.createElement(T.ZP, { style: ee.title }, G), a.createElement(T.ZP, { style: ee.description }, $, " ", a.createElement(T.ZP, { link: "https://help.x.com/using-x/about-grok" }, q)))), a.createElement(r.Z, { style: ee.section }, a.createElement(K.default, { style: ee.titleIcon }), a.createElement(r.Z, { style: ee.sectionContent }, a.createElement(T.ZP, { style: ee.title }, J), a.createElement(T.ZP, { style: ee.description }, Q, " ", a.createElement(T.ZP, { link: "https://help.x.com/using-x/about-grok" }, q))))), t ? a.createElement(j.Z, { size: "space48" }) : null, a.createElement(r.Z, { style: [ee.continueButtonContainer, t ? ee.sticky : void 0] }, a.createElement(D.ZP, { onPress: e, size: "large", style: ee.continueButton, type: "primaryFilled" }, X)));
                 },
                 ee = d.default.create((e) => ({ legalText: { width: "100%", maxWidth: z.vf, flexDirection: "column", alignItems: "center", justifyContent: "center" }, titleIcon: { width: e.spaces.space20, minWidth: e.spaces.space20, height: e.spaces.space20, minHeight: e.spaces.space20, marginEnd: e.spaces.space8 }, sectionContent: { flexDirection: "column", gap: e.spaces.space4, flex: 1 }, sticky: { position: "sticky", bottom: 0 }, content: { borderRadius: e.borderRadii.large, backgroundColor: e.colors.gray0, marginHorizontal: e.spaces.space24, gap: e.spaces.space16, padding: e.spaces.space24 }, continueButtonContainer: { width: "100%", paddingVertical: e.spaces.space24, alignItems: "center", justifyContent: "center", backgroundColor: e.colors.cellBackground }, continueButton: { width: "100%", maxWidth: e.breakpoints.xSmall, justifyContent: "center", alignItems: "center" }, section: { width: "100%", gap: e.spaces.space4, flexDirection: "row" }, title: { fontWeight: "bold" }, description: { color: e.colors.gray700, fontSize: e.fontSizes.subtext1 } })),
                 te = p().h0681e3e,
@@ -105,7 +105,7 @@
                         n = () => {
                             e((0, v.pj)(v.Qn));
                         };
-                    return a.createElement(W.ZP, { clickMaskToClose: !0, history: t, modalSize: "fitChildren", onMaskClick: n, withBackground: !0 }, a.createElement(r.Z, { style: ae.container }, a.createElement(r.Z, { style: ae.closeButton }, a.createElement(D.ZP, { icon: a.createElement(F.default, null), onPress: n, type: "primaryText" })), a.createElement(r.Z, { style: ae.header }, a.createElement(T.ZP, { size: "title4", weight: "medium" }, te), a.createElement(T.ZP, { color: "gray700", size: "body" }, ne)), a.createElement(r.Z, { style: ae.prompts }, a.createElement(Y, { onContinue: n }))));
+                    return a.createElement(F.ZP, { clickMaskToClose: !0, history: t, modalSize: "fitChildren", onMaskClick: n, withBackground: !0 }, a.createElement(r.Z, { style: ae.container }, a.createElement(r.Z, { style: ae.closeButton }, a.createElement(D.ZP, { icon: a.createElement(U.default, null), onPress: n, type: "primaryText" })), a.createElement(r.Z, { style: ae.header }, a.createElement(T.ZP, { size: "title4", weight: "medium" }, te), a.createElement(T.ZP, { color: "gray700", size: "body" }, ne)), a.createElement(r.Z, { style: ae.prompts }, a.createElement(Y, { onContinue: n }))));
                 };
             var ie = n(928831),
                 re = n(976021);
@@ -128,7 +128,7 @@
             const ce = d.default.create((e) => ({ container: { maxWidth: "100%", marginStart: "auto", marginEnd: "auto", overflowX: "auto", paddingVertical: e.spaces.space4 }, row: { display: "flex", width: "fit-content", flexDirection: "row", justifyContent: "flex-start", gap: e.spaces.space16, paddingHorizontal: e.spaces.space8 }, animation: { opacity: 1, animationDuration: "2s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }] }, followUpBotton: { borderRadius: e.borderRadii.large, padding: e.spaces.space8 } })),
                 de = ({ conversationKey: e }) => {
                     const t = (0, E.z)(),
-                        n = (0, M.uf)(),
+                        n = (0, _.uf)(),
                         o = (0, w.v9)(n.selectCurrentResponseFollowUps),
                         i = (0, w.I0)(),
                         r = (0, f.hC)("responsive_web_grok_show_citations"),
@@ -161,7 +161,7 @@
                 const B = (0, E.z)(),
                     D = (0, w.I0)();
                 (0, L.Z)();
-                const { access: T, conversationKey: F, fetchConversationIdError: W, fetchConversationIdStatus: j, messageIds: H, status: O, ...U } = (0, M.ZP)(),
+                const { access: T, conversationKey: U, fetchConversationIdError: F, fetchConversationIdStatus: W, messageIds: j, status: H, ...O } = (0, _.ZP)(),
                     K = (0, b.ZP)(),
                     { keyboardVisible: N } = a.useContext(y.hr),
                     { isGrokDrawer: V } = (0, pe.ZP)(),
@@ -176,17 +176,17 @@
                     q = (0, f.hC)("subscriptions_inapp_grok_nux_enabled"),
                     { isConversationLoading: Y } = (0, S.Z)({ conversationId: n }),
                     ee = (0, f.hC)("responsive_web_grok_show_citations"),
-                    te = O === I.Q_.IDLE;
+                    te = H === I.Q_.IDLE;
                 a.useEffect(() => {
                     !1 !== T && D(P.ZP.fetchOneIfNeeded(z.c0));
                 }, [D, T]),
                     a.useEffect(() => {
-                        W && D((0, k.fz)({ text: W }));
-                    }, [D, W]);
+                        F && D((0, k.fz)({ text: F }));
+                    }, [D, F]);
                 const ne = (0, A.Z)("content");
                 a.useEffect(() => {
                     if (!Y && o?.text) {
-                        D((0, x.u)({ analytics: B, conversationKey: F })({ text: o.text, returnCitations: ee, analysisEntityId: o.analysisEntityId, mode: s, imageGenerationCount: ne, isReasoning: o?.isReasoning, isDeepsearch: o?.isDeepsearch }));
+                        D((0, x.u)({ analytics: B, conversationKey: U })({ text: o.text, returnCitations: ee, analysisEntityId: o.analysisEntityId, mode: s, imageGenerationCount: ne, isReasoning: o?.isReasoning, isDeepsearch: o?.isDeepsearch }));
                         const e = new URL(window.location);
                         e.searchParams.delete("text"), e.searchParams.delete("deepsearch"), e.searchParams.delete("think"), history.replaceState(null, "", e.toString());
                     }
@@ -200,7 +200,7 @@
                             }
                         }
                     }, [G]);
-                const ae = a.useMemo(() => (O !== I.Q_.IDLE ? [...H, null] : H), [O, H]),
+                const ae = a.useMemo(() => (H !== I.Q_.IDLE ? [...j, null] : j), [H, j]),
                     ie = a.useCallback(() => {
                         D((0, Z.Ki)(l()()));
                     }, [D]),
@@ -210,14 +210,14 @@
                         return [Ce.inputWrapper, { paddingBottom: e }];
                     }, [K, N]),
                     le = o?.text || re || Y,
-                    ce = a.useMemo(() => () => (Y ? a.createElement(c.Z, null) : a.createElement(a.Fragment, null, a.createElement(ue.y, { contentPadding: p, conversationKey: F }), a.createElement(r.Z, { style: Ce.bottomContainer }, a.createElement(de, { conversationKey: F }), a.createElement(r.Z, { style: Ce.inputContainer }, a.createElement(r.Z, { style: se }, a.createElement(me.Z, { conversationKey: F, hasAccess: !1 !== T, inputAtBottom: !0, insideConversation: !0, isIdle: te, mode: s, placeholder: fe, useDraftPersistence: !0 })))))), [te, s, T, F, p, se, Y]);
-                return (0, _.Z)(!d && !V, U.conversationId, re), !1 === T && G !== R.ZP.LOADING ? (V ? a.createElement(r.Z, { style: Ce.activityIndicatorContainer }, a.createElement(c.Z, null)) : a.createElement(he.Z, null)) : a.createElement(r.Z, { ref: t, style: [Ce.container, e] }, a.createElement(a.Fragment, null, X && q && !m ? a.createElement(oe, null) : null, le || d ? a.createElement(h.Z, { "aria-label": be, fetchStatus: j === R.ZP.NONE ? R.ZP.LOADED : j, onRequestRetry: ie, render: ce, retryMessage: W }) : a.createElement(ge.k, { access: T, conversationKey: F })));
+                    ce = a.useMemo(() => () => (Y ? a.createElement(c.Z, null) : a.createElement(a.Fragment, null, a.createElement(ue.y, { contentPadding: p, conversationKey: U }), a.createElement(r.Z, { style: Ce.bottomContainer }, a.createElement(de, { conversationKey: U }), a.createElement(r.Z, { style: Ce.inputContainer }, a.createElement(r.Z, { style: se }, a.createElement(me.Z, { conversationKey: U, hasAccess: !1 !== T, inputAtBottom: !0, insideConversation: !0, isIdle: te, mode: s, placeholder: fe, useDraftPersistence: !0 })))))), [te, s, T, U, p, se, Y]);
+                return (0, M.Z)(!d && !V, O.conversationId, re), !1 === T && G !== R.ZP.LOADING ? (V ? a.createElement(r.Z, { style: Ce.activityIndicatorContainer }, a.createElement(c.Z, null)) : a.createElement(he.Z, null)) : a.createElement(r.Z, { ref: t, style: [Ce.container, e] }, a.createElement(a.Fragment, null, X && q && !m ? a.createElement(oe, null) : null, le || d ? a.createElement(h.Z, { "aria-label": be, fetchStatus: W === R.ZP.NONE ? R.ZP.LOADED : W, onRequestRetry: ie, render: ce, retryMessage: F }) : a.createElement(ge.k, { access: T, conversationKey: U })));
             }
             const Ze = !!g.ZP.isWebView(),
                 Ce = d.default.create((e) => ({ container: { display: "grid", gridTemplateRows: "1fr auto", maxWidth: "100%", width: "100%", minHeight: `calc(100vh - ${Ze ? "0" : e.componentDimensions.appBarHeightPx}px)`, paddingBottom: d.default.iPhoneOffsetBottom }, disclaimer: { marginVertical: e.spaces.space12, marginHorizontal: e.spaces.space4 }, disclaimerNarrow: { marginVertical: e.spaces.space8, marginHorizontal: e.spaces.space4 }, bottomContainer: { position: "sticky", bottom: 0, width: "100%" }, inputContainer: { backgroundColor: e.colors.appBarBackground, backdropFilter: "blur(12px)", justifyContent: "center", alignItems: "center", paddingTop: e.spaces.space4, paddingBottom: e.spaces.space12, paddingHorizontal: e.spaces.space16 }, inputWrapper: { width: "100%", maxWidth: `calc(${z.vf}px + ${e.spaces.space32})` }, somethingWentWrongContainer: { alignItems: "center", justifyContent: "center", padding: e.spaces.space32 }, activityIndicatorContainer: { width: "100%", height: "100%", justifyContent: "center", alignItems: "center" } }));
         },
         462441: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => H });
+            n.r(t), n.d(t, { default: () => j });
             var a = n(202784),
                 o = n(325686),
                 i = n(107267),
@@ -245,30 +245,30 @@
                 P = n(351743),
                 R = n.n(P);
             const z = Z.Z,
-                _ = v.Z,
-                M = {},
+                M = v.Z,
+                _ = {},
                 S = (0, C.cn)(!1);
             const L = g().j95bac7a,
                 A = g().c5665922,
                 B = g().ff625c40,
                 D = g().e5c7d602,
                 T = g().dbd5d400,
-                F = g().i2209530,
-                W = { page: h.ZP.isTwitterApp() ? (h.ZP.isAndroid() ? "grok_custom_android" : "grok_custom_ios") : "grok_custom" },
-                j = 1500;
-            function H() {
+                U = g().i2209530,
+                F = { page: h.ZP.isTwitterApp() ? (h.ZP.isAndroid() ? "grok_custom_android" : "grok_custom_ios") : "grok_custom" },
+                W = 1500;
+            function j() {
                 const e = (0, i.useHistory)(),
                     t = (0, f.u)(),
                     n = (0, E.v9)(w.F9),
                     p = a.useMemo(() => ({ subscription_level: t, grok_details: { grok_mode: "regular", grok_model: n } }), [t, n]),
                     [u, g] = a.useState(!0),
                     [h, v, Z, C] = (function ({ fetchKey: e }) {
-                        const { get_grok_customization_setting: t } = k()(z, M, { fetchPolicy: "network-only", fetchKey: e }),
+                        const { get_grok_customization_setting: t } = k()(z, _, { fetchPolicy: "network-only", fetchKey: e }),
                             [n, o] = (0, x.KO)(S);
                         a.useEffect(() => {
                             o(t?.enabled ?? !1);
                         }, [t?.enabled, o]);
-                        const [i, r] = R()(_),
+                        const [i, r] = R()(M),
                             s = a.useCallback(
                                 (e) => {
                                     i({
@@ -283,7 +283,7 @@
                         return [t, s, r, n];
                     })({ fetchKey: "customPrompt" }),
                     [I, P] = a.useState(""),
-                    [H, U] = a.useState(""),
+                    [j, O] = a.useState(""),
                     [K, N] = a.useState(C),
                     [V, G] = a.useState(!1),
                     [$, J] = a.useState(!1);
@@ -301,36 +301,36 @@
                 const Q = a.useCallback(() => {
                         if (!V) return;
                         g(!1), G(!1);
-                        v({ enabled: K, custom_instruction: { instruction: I }, personality: { personality: H } });
-                    }, [v, V, K, H, I]),
+                        v({ enabled: K, custom_instruction: { instruction: I }, personality: { personality: j } });
+                    }, [v, V, K, j, I]),
                     X = a.useCallback(() => {
-                        P(""), U(""), G(!0), N(!1);
+                        P(""), O(""), G(!0), N(!1);
                     }, []),
                     q = a.useCallback(() => {
                         e.goBack(), Q();
                     }, [e, Q]);
                 return (
                     a.useEffect(() => {
-                        h && (N(h.enabled || !1), U(h.personality?.personality || ""), P(h.custom_instruction?.instruction || ""));
+                        h && (N(h.enabled || !1), O(h.personality?.personality || ""), P(h.custom_instruction?.instruction || ""));
                     }, [h]),
                     a.useEffect(() => {
                         !$ && V && Q();
                     }, [Q, V, $]),
                     a.createElement(
                         b.nO,
-                        { data: p, namespace: W },
+                        { data: p, namespace: F },
                         a.createElement(
                             y.Z,
                             { documentTitle: L, history: e, onBackClick: q, title: L },
                             a.createElement(
                                 o.Z,
-                                { style: O.section },
+                                { style: H.section },
                                 a.createElement(r.ZP, null, A),
                                 a.createElement(
                                     o.Z,
-                                    { style: O.textInputBox },
+                                    { style: H.textInputBox },
                                     a.createElement(s.Z, {
-                                        maxLength: j,
+                                        maxLength: W,
                                         multiline: !0,
                                         numberOfLines: 5,
                                         onBlur: () => J(!1),
@@ -345,27 +345,27 @@
                             a.createElement(l.Z, null),
                             a.createElement(
                                 o.Z,
-                                { style: O.section },
+                                { style: H.section },
                                 a.createElement(r.ZP, null, B),
                                 a.createElement(
                                     o.Z,
-                                    { style: O.textInputBox },
+                                    { style: H.textInputBox },
                                     a.createElement(s.Z, {
-                                        maxLength: j,
+                                        maxLength: W,
                                         multiline: !0,
                                         numberOfLines: 5,
                                         onBlur: () => J(!1),
                                         onChange: (e) => {
-                                            H.length < e.target.value.length && N(!0), U(e.target.value), G(!0);
+                                            j.length < e.target.value.length && N(!0), O(e.target.value), G(!0);
                                         },
                                         onFocus: () => J(!0),
-                                        value: H,
+                                        value: j,
                                     }),
                                 ),
                             ),
                             a.createElement(
                                 o.Z,
-                                { style: [O.row, O.enableRow] },
+                                { style: [H.row, H.enableRow] },
                                 a.createElement(r.ZP, { weight: "medium" }, D),
                                 a.createElement(c.Z, {
                                     onValueChange: (e) => {
@@ -374,12 +374,12 @@
                                     value: K,
                                 }),
                             ),
-                            a.createElement(o.Z, { style: [O.row, O.buttonRow], type: "" }, a.createElement(d.Z, { animating: !u, hidesWhenStopped: !0, style: O.indicator }), a.createElement(m.ZP, { backgroundColor: "transparent", borderColor: "transparent", onClick: X, style: O.button, textSizeOverride: "subtext2" }, T), a.createElement(m.ZP, { backgroundColor: "gray100", onClick: q, style: O.button }, a.createElement(r.ZP, { size: "subtext2", weight: "medium" }, F))),
+                            a.createElement(o.Z, { style: [H.row, H.buttonRow], type: "" }, a.createElement(d.Z, { animating: !u, hidesWhenStopped: !0, style: H.indicator }), a.createElement(m.ZP, { backgroundColor: "transparent", borderColor: "transparent", onClick: X, style: H.button, textSizeOverride: "subtext2" }, T), a.createElement(m.ZP, { backgroundColor: "gray100", onClick: q, style: H.button }, a.createElement(r.ZP, { size: "subtext2", weight: "medium" }, U))),
                         ),
                     )
                 );
             }
-            const O = p.default.create((e) => ({ right: { alignItems: "end" }, row: { flexDirection: "row", width: "100%", alignItems: "center", paddingHorizontal: e.spaces.space20, paddingBottom: e.spaces.space20 }, enableRow: { justifyContent: "space-between" }, buttonRow: { width: "100%", alignItems: "center", justifyContent: "end", paddingHorizontal: e.spaces.space20, paddingBottom: e.spaces.space20 }, section: { padding: e.spaces.space20 }, textInputBox: { paddingTop: 10 }, button: { paddingVertical: e.spaces.space8, paddingHorizontal: e.spaces.space16, borderRadius: e.spaces.space8 }, indicator: { marginEnd: e.spaces.space16 } }));
+            const H = p.default.create((e) => ({ right: { alignItems: "end" }, row: { flexDirection: "row", width: "100%", alignItems: "center", paddingHorizontal: e.spaces.space20, paddingBottom: e.spaces.space20 }, enableRow: { justifyContent: "space-between" }, buttonRow: { width: "100%", alignItems: "center", justifyContent: "end", paddingHorizontal: e.spaces.space20, paddingBottom: e.spaces.space20 }, section: { padding: e.spaces.space20 }, textInputBox: { paddingTop: 10 }, button: { paddingVertical: e.spaces.space8, paddingHorizontal: e.spaces.space16, borderRadius: e.spaces.space8 }, indicator: { marginEnd: e.spaces.space16 } }));
         },
         480243: (e, t, n) => {
             n.d(t, { W: () => g });
@@ -438,7 +438,7 @@
                 u = c.default.create((e) => ({ container: {}, content: { backgroundColor: e.colors.gray0, borderRadius: e.borderRadii.large, paddingTop: e.spaces.space8, paddingHorizontal: e.spaces.space8, overflow: "hidden" }, image: { width: 235, height: 175, borderRadius: e.borderRadii.large }, fullWidth: { width: "100%" }, hovered: { backgroundColor: e.colors.gray100 }, text: { height: e.spaces.space36, justifyContent: "center", alignItems: "center" } }));
         },
         246277: (e, t, n) => {
-            n.d(t, { $: () => B, Z: () => F });
+            n.d(t, { $: () => B, Z: () => U });
             var a = n(807896),
                 o = n(202784),
                 i = n(215045),
@@ -462,46 +462,46 @@
                 C = n(45843),
                 x = n(457566),
                 I = n(774038);
-            const k = ({ status: e, expectedChunks: t = [0.25, 0.5, 0.75, 1], intermediateResults: n = [], url: a, aspectRatio: i, isModerated: s, withActionRow: l, openMediaToEdit: d, onImageSize: m, mediaId: p, allMediaIds: u }) => {
-                    const [g, h] = o.useState(0),
-                        y = R({ expectedChunks: t, progress: g }),
-                        f = o.useMemo(
+            const k = ({ status: e, expectedChunks: t = [0.25, 0.5, 0.75, 1], intermediateResults: n = [], url: a, aspectRatio: i, isModerated: s, withActionRow: l, openMediaToEdit: d, onImageSize: m, mediaId: p, mediaUrl: u, allMediaIds: g, allMediaUrls: h }) => {
+                    const [y, f] = o.useState(0),
+                        b = R({ expectedChunks: t, progress: y }),
+                        E = o.useMemo(
                             () =>
                                 [...n]
                                     .sort((e, t) => e.progress - t.progress)
                                     .map((e, t) => {
                                         const n = i ?? 4 / 3,
                                             a = Math.round((n / e.progress) * 100) / 100;
-                                        return g > e.progress
+                                        return y > e.progress
                                             ? null
                                             : o.createElement(c.Z, {
                                                   key: `progress_${e.progress}`,
                                                   onLoad: () => {
-                                                      h((t) => Math.max(t, e.progress));
+                                                      f((t) => Math.max(t, e.progress));
                                                   },
                                                   resizeMode: "cover",
                                                   source: e.imageUrl,
                                                   style: [P.image, { aspectRatio: a }],
                                               });
                                     }),
-                            [n, g, i],
+                            [n, y, i],
                         ),
-                        b = n.length > 0 && g > 0,
-                        E = o.useMemo(() => ({ top: 0, height: 100 * g + "%", overflow: "hidden", transitionProperty: "height, mask", transitionDuration: `${y}ms`, transitionTimingFunction: 1 === g ? "ease-in" : "linear", zIndex: 50, mask: g < 1 ? "linear-gradient(\n        to bottom,\n        rgba(0, 0, 0, 1) 0%,\n        rgba(0, 0, 0, 1) calc(100% - 5px),\n        rgba(0, 0, 0, 0) 100%\n      )" : void 0 }), [g, y]),
-                        w = o.useMemo(() => ({ top: 0, height: 100 * g + "%", overflow: "hidden", transform: "translate3d(0,0,0)", transitionProperty: "height", transitionDuration: y / 1.5 + "ms", transitionTimingFunction: "linear", filter: "blur(70px) contrast(2)", zIndex: 10 }), [g, y]),
-                        [v, Z] = o.useState(0);
+                        w = n.length > 0 && y > 0,
+                        v = o.useMemo(() => ({ top: 0, height: 100 * y + "%", overflow: "hidden", transitionProperty: "height, mask", transitionDuration: `${b}ms`, transitionTimingFunction: 1 === y ? "ease-in" : "linear", zIndex: 50, mask: y < 1 ? "linear-gradient(\n        to bottom,\n        rgba(0, 0, 0, 1) 0%,\n        rgba(0, 0, 0, 1) calc(100% - 5px),\n        rgba(0, 0, 0, 0) 100%\n      )" : void 0 }), [y, b]),
+                        Z = o.useMemo(() => ({ top: 0, height: 100 * y + "%", overflow: "hidden", transform: "translate3d(0,0,0)", transitionProperty: "height", transitionDuration: b / 1.5 + "ms", transitionTimingFunction: "linear", filter: "blur(70px) contrast(2)", zIndex: 10 }), [y, b]),
+                        [k, z] = o.useState(0);
                     return (
                         o.useEffect(() => {
                             a &&
                                 C.Z.getSize(
                                     a,
                                     (e, t) => {
-                                        e && t && (Z(e / t), m?.(e, t));
+                                        e && t && (z(e / t), m?.(e, t));
                                     },
                                     (e) => {},
                                 );
-                        }, [a, Z]),
-                        o.createElement(r.Z, { style: P.container }, "loading" === e ? o.createElement(r.Z, { style: P.logoContainer }, o.createElement(x.x1, { style: P.grokIcon })) : null, "loading" === e || "aborted" === e || b ? o.createElement(o.Fragment, null, o.createElement(r.Z, { style: [P.content, E] }, o.createElement(r.Z, { style: s || "aborted" === e ? P.contentModerated : void 0 }, f)), o.createElement(r.Z, { style: [P.content, w] }, f)) : null, o.createElement(c.Z, { resizeMode: "cover", source: b || s ? void 0 : a, style: [P.finalImage, { aspectRatio: i ?? (v || 4 / 3) }] }), l && "aborted" !== e ? o.createElement(r.Z, { style: [P.actionRow, P.animation] }, o.createElement(I.rO, { allMediaIds: u, buttonSize: "medium", buttonType: "onMediaText", contentUrl: a, isLoading: "ready" !== e, mediaId: p, setEditMode: d || (() => {}), withStartAlignment: !0 })) : null)
+                        }, [a, z]),
+                        o.createElement(r.Z, { style: P.container }, "loading" === e ? o.createElement(r.Z, { style: P.logoContainer }, o.createElement(x.x1, { style: P.grokIcon })) : null, "loading" === e || "aborted" === e || w ? o.createElement(o.Fragment, null, o.createElement(r.Z, { style: [P.content, v] }, o.createElement(r.Z, { style: s || "aborted" === e ? P.contentModerated : void 0 }, E)), o.createElement(r.Z, { style: [P.content, Z] }, E)) : null, o.createElement(c.Z, { resizeMode: "cover", source: w || s ? void 0 : a, style: [P.finalImage, { aspectRatio: i ?? (k || 4 / 3) }] }), l && "aborted" !== e ? o.createElement(r.Z, { style: [P.actionRow, P.animation] }, o.createElement(I.rO, { allMediaIds: g, allMediaUrls: h, buttonSize: "medium", buttonType: "onMediaText", contentUrl: a, isLoading: "ready" !== e, mediaId: p, mediaUrl: u, setEditMode: d || (() => {}), withStartAlignment: !0 })) : null)
                     );
                 },
                 P = d.default.create((e) => ({ animation: { opacity: 1, animationDuration: ".3s", animationTimingFunction: "ease-out", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }] }, actionRow: { position: "absolute", bottom: 0, width: "100%", backdropFilter: "blur(4px) brightness(70%)", zIndex: 300 }, content: { position: "absolute", height: "100%", width: "100%", start: 0, opacity: 1 }, contentModerated: { transitionProperty: "opacity", transitionDuration: "500ms", transitionTimingFunction: "linear", opacity: 0 }, image: { position: "absolute", start: 0, top: 0, width: "100%", zIndex: 100 }, transparent: { opacity: 0 }, finalImage: { position: "relative", zIndex: 200, width: "100%" }, container: { borderRadius: e.borderRadii.large, backgroundColor: e.colors.gray50, transform: "translate3d(0,0,0)", width: "100%", overflow: "hidden", position: "relative" }, logoContainer: { position: "absolute", start: 0, top: 0, width: "100%", height: "100%", justifyContent: "center", alignItems: "center", opacity: 0, animationIterationCount: "infinite", animationDuration: "1.5s", animationKeyframes: [{ "0%": { opacity: "0" }, "50%": { opacity: "1" }, "100%": { opacity: "0" } }] }, grokIcon: { color: e.colors.gray200, width: "20%", maxWidth: e.spaces.space64, height: "20%", maxHeight: e.spaces.space64 } })),
@@ -518,78 +518,78 @@
                     }, [t, e]);
                 },
                 z = h().e68b09b4,
-                _ = h().c26b9b9c,
-                M = { label: z },
+                M = h().c26b9b9c,
+                _ = { label: z },
                 S = h().ac85c6b2,
                 L = h().g10600b0,
                 A = { label: L },
                 B = ["image/jpeg", "image/webp", "image/png"],
                 D = 80,
                 T = { width: 1.5 * D, height: D };
-            function F({ allMediaIds: e, aspectRatio: t, centerJustify: n, disableClickWhileLoading: g = !0, filename: h, height: C, intermediateResults: x, isInputAttachmentPreview: I, isModerated: P, mediaId: R, menuItems: F, mimetype: j, onClick: H, onImageSize: O, onRemove: U, openMediaToEdit: K, preloadedImageUrl: N, status: V, style: G, url: $, useActionRowButtons: J, width: Q }) {
-                const { handlers: X, interactivityState: q } = (0, s.x)({}),
-                    Y = (0, l.yu)(),
-                    [ee, te] = o.useState(!1),
-                    ne = F && F.length > 0,
-                    [ae, oe] = o.useState(!1),
-                    ie = o.useCallback((e) => {
-                        e.stopPropagation(), te(!0);
+            function U({ allMediaIds: e, allMediaUrls: t, aspectRatio: n, centerJustify: g, disableClickWhileLoading: h = !0, filename: C, height: x, intermediateResults: I, isInputAttachmentPreview: P, isModerated: R, mediaId: U, mediaUrl: W, menuItems: j, mimetype: H, onClick: O, onImageSize: K, onRemove: N, openMediaToEdit: V, preloadedImageUrl: G, status: $, style: J, url: Q, useActionRowButtons: X, width: q }) {
+                const { handlers: Y, interactivityState: ee } = (0, s.x)({}),
+                    te = (0, l.yu)(),
+                    [ne, ae] = o.useState(!1),
+                    oe = j && j.length > 0,
+                    [ie, re] = o.useState(!1),
+                    se = o.useCallback((e) => {
+                        e.stopPropagation(), ae(!0);
                     }, []),
-                    re = o.useCallback(() => te(!1), []),
-                    se = !Q || !C || (Q > 200 && C > 150),
-                    le = o.useMemo(() => ({ width: Q ?? "auto", height: C ?? "auto", outline: "none" }), [Q, C]),
-                    ce = o.useCallback(
+                    le = o.useCallback(() => ae(!1), []),
+                    ce = !q || !x || (q > 200 && x > 150),
+                    de = o.useMemo(() => ({ width: q ?? "auto", height: x ?? "auto", outline: "none" }), [q, x]),
+                    me = o.useCallback(
                         (e) => {
-                            e.stopPropagation(), e.preventDefault(), U?.();
+                            e.stopPropagation(), e.preventDefault(), N?.();
                         },
-                        [U],
+                        [N],
                     ),
-                    { isInputFocused: de } = (0, Z.w)();
-                if (B.includes(j)) {
-                    const s = "ready" === V && ne && q.isHovered && !J;
+                    { isInputFocused: pe } = (0, Z.w)();
+                if (B.includes(H)) {
+                    const s = "ready" === $ && oe && ee.isHovered && !X;
                     return o.createElement(
                         i.Z,
-                        (0, a.Z)({ disabled: (g && !$) || "aborted" === V }, X, {
-                            onLongPress: Y ? ie : void 0,
+                        (0, a.Z)({ disabled: (h && !Q) || "aborted" === $ }, Y, {
+                            onLongPress: te ? se : void 0,
                             onMouseEnter: () => {
-                                oe(!0);
+                                re(!0);
                             },
                             onMouseLeave: () => {
-                                oe(!1);
+                                re(!1);
                             },
-                            onPress: H,
-                            style: [n && { justifyContent: "center" }, le, P ? W.noClick : void 0, G],
+                            onPress: O,
+                            style: [g && { justifyContent: "center" }, de, R ? F.noClick : void 0, J],
                         }),
-                        I ? (!$ || $.startsWith("blob:") ? o.createElement(r.Z, { style: [W.inputAttachmentPreview, W.inputAttachmentPreviewPlaceholder, { width: Q ?? D, height: C ?? D }] }) : o.createElement(c.Z, { resizeMode: "cover", source: N || $, style: [W.inputAttachmentPreview, { width: Q ?? D, height: C ?? D }] })) : o.createElement(k, { allMediaIds: e, aspectRatio: t, intermediateResults: x, isModerated: P, mediaId: R, onImageSize: O, openMediaToEdit: K, resizeMode: "cover", status: V, url: N || $, withActionRow: J && q.isHovered }),
-                        "error" === V ? o.createElement(r.Z, { style: W.errorContainer }, o.createElement(y.default, { color: d.default.theme.colors.gray600, style: W.errorIcon }), se ? o.createElement(m.ZP, { size: "body", style: W.errorMessage }, S) : null) : P || "aborted" === V ? o.createElement(r.Z, { style: W.errorContainer }, o.createElement(f.default, { color: d.default.theme.colors.text, style: W.errorIconLarge })) : null,
-                        o.createElement(r.Z, { style: W.imageButtonContainer }, s ? o.createElement(p.ZP, { "aria-label": L, hoverLabel: A, icon: o.createElement(b.default, null), onClick: ie, size: "xSmall", type: "onMediaDominantColorFilled" }) : null, ne && ee ? o.createElement(v.Z, { onDismiss: re }, o.createElement(i.Z, { onPress: re }, F)) : null, U && (Y || (!Y && ae)) ? o.createElement(p.ZP, { "aria-label": z, hoverLabel: M, icon: o.createElement(E.default, null), onClick: ce, size: "xSmall", style: W.removeBtn, type: "onMediaDominantColorFilled" }) : null),
+                        P ? (!Q || Q.startsWith("blob:") ? o.createElement(r.Z, { style: [F.inputAttachmentPreview, F.inputAttachmentPreviewPlaceholder, { width: q ?? D, height: x ?? D }] }) : o.createElement(c.Z, { resizeMode: "cover", source: G || Q, style: [F.inputAttachmentPreview, { width: q ?? D, height: x ?? D }] })) : o.createElement(k, { allMediaIds: e, allMediaUrls: t, aspectRatio: n, intermediateResults: I, isModerated: R, mediaId: U, mediaUrl: W, onImageSize: K, openMediaToEdit: V, resizeMode: "cover", status: $, url: G || Q, withActionRow: X && ee.isHovered }),
+                        "error" === $ ? o.createElement(r.Z, { style: F.errorContainer }, o.createElement(y.default, { color: d.default.theme.colors.gray600, style: F.errorIcon }), ce ? o.createElement(m.ZP, { size: "body", style: F.errorMessage }, S) : null) : R || "aborted" === $ ? o.createElement(r.Z, { style: F.errorContainer }, o.createElement(f.default, { color: d.default.theme.colors.text, style: F.errorIconLarge })) : null,
+                        o.createElement(r.Z, { style: F.imageButtonContainer }, s ? o.createElement(p.ZP, { "aria-label": L, hoverLabel: A, icon: o.createElement(b.default, null), onClick: se, size: "xSmall", type: "onMediaDominantColorFilled" }) : null, oe && ne ? o.createElement(v.Z, { onDismiss: le }, o.createElement(i.Z, { onPress: le }, j)) : null, N && (te || (!te && ie)) ? o.createElement(p.ZP, { "aria-label": z, hoverLabel: _, icon: o.createElement(E.default, null), onClick: me, size: "xSmall", style: F.removeBtn, type: "onMediaDominantColorFilled" }) : null),
                     );
                 }
-                if (I) {
+                if (P) {
                     const e = (function (e) {
                         if (!e || "string" != typeof e) return "";
                         const t = e.lastIndexOf(".");
                         if (-1 === t || 0 === t) return "";
                         return e.slice(t + 1).toLowerCase();
-                    })(h);
+                    })(C);
                     return o.createElement(
                         r.Z,
                         {
                             onMouseEnter: () => {
-                                oe(!0);
+                                re(!0);
                             },
                             onMouseLeave: () => {
-                                oe(!1);
+                                re(!1);
                             },
-                            style: [W.inputAttachmentPreviewFileContainer, { width: Q ?? T.width, height: C ?? T.height }, G],
+                            style: [F.inputAttachmentPreviewFileContainer, { width: q ?? T.width, height: x ?? T.height }, J],
                         },
-                        o.createElement(r.Z, { style: W.inputAttachmentPreviewFileContainerContent }, o.createElement(m.ZP, { hoverLabel: { label: h }, numberOfLines: 2, selectable: !1, size: "subtext2" }, h), o.createElement(r.Z, { style: W.inputAttachmentPreviewBottomContainer }, o.createElement(r.Z, { style: W.inputAttachmentPreviewFileIconContainer }, o.createElement(w.default, { style: W.inputAttachmentPreviewFileIcon })), o.createElement(m.ZP, { numberOfLines: 1, size: "subtext3" }, e.toUpperCase()))),
-                        U && (Y || (!Y && ae)) ? o.createElement(o.Fragment, null, o.createElement(p.ZP, { "aria-label": z, hoverLabel: M, icon: o.createElement(E.default, null), onClick: ce, size: "xSmall", style: [W.removeBtn, W.inputAttachmentPreviewRemoveBtn], type: "onMediaDominantColorFilled" })) : null,
+                        o.createElement(r.Z, { style: F.inputAttachmentPreviewFileContainerContent }, o.createElement(m.ZP, { hoverLabel: { label: C }, numberOfLines: 2, selectable: !1, size: "subtext2" }, C), o.createElement(r.Z, { style: F.inputAttachmentPreviewBottomContainer }, o.createElement(r.Z, { style: F.inputAttachmentPreviewFileIconContainer }, o.createElement(w.default, { style: F.inputAttachmentPreviewFileIcon })), o.createElement(m.ZP, { numberOfLines: 1, size: "subtext3" }, e.toUpperCase()))),
+                        N && (te || (!te && ie)) ? o.createElement(o.Fragment, null, o.createElement(p.ZP, { "aria-label": z, hoverLabel: _, icon: o.createElement(E.default, null), onClick: me, size: "xSmall", style: [F.removeBtn, F.inputAttachmentPreviewRemoveBtn], type: "onMediaDominantColorFilled" })) : null,
                     );
                 }
-                return o.createElement(r.Z, { style: [W.documentContainer, de ? W.documentContainerActive : null, G] }, o.createElement(r.Z, { style: W.iconContainer }, o.createElement(w.default, { style: W.documentIcon })), o.createElement(r.Z, { style: W.documentNameContainer }, o.createElement(m.ZP, { hoverLabel: { label: h }, numberOfLines: 1, selectable: !1, size: "subtext2", weight: "medium" }, h), o.createElement(u.Z, { size: "space4" }), o.createElement(m.ZP, { color: "gray700", selectable: !1, size: "subtext3", weight: "normal" }, _)), U && (Y || (!Y && ae)) ? o.createElement(o.Fragment, null, o.createElement(u.Z, { size: "space4" }), o.createElement(p.ZP, { "aria-label": z, hoverLabel: M, icon: o.createElement(E.default, null), onClick: ce, size: "xSmall", style: W.removeBtn, type: "primaryText" })) : null);
+                return o.createElement(r.Z, { style: [F.documentContainer, pe ? F.documentContainerActive : null, J] }, o.createElement(r.Z, { style: F.iconContainer }, o.createElement(w.default, { style: F.documentIcon })), o.createElement(r.Z, { style: F.documentNameContainer }, o.createElement(m.ZP, { hoverLabel: { label: C }, numberOfLines: 1, selectable: !1, size: "subtext2", weight: "medium" }, C), o.createElement(u.Z, { size: "space4" }), o.createElement(m.ZP, { color: "gray700", selectable: !1, size: "subtext3", weight: "normal" }, M)), N && (te || (!te && ie)) ? o.createElement(o.Fragment, null, o.createElement(u.Z, { size: "space4" }), o.createElement(p.ZP, { "aria-label": z, hoverLabel: _, icon: o.createElement(E.default, null), onClick: me, size: "xSmall", style: F.removeBtn, type: "primaryText" })) : null);
             }
-            const W = d.default.create((e) => ({
+            const F = d.default.create((e) => ({
                 documentContainer: { flexDirection: "row", alignItems: "center", width: "100%", maxWidth: "100%", paddingHorizontal: e.spaces.space12, paddingVertical: e.spaces.space12, gap: e.spaces.space8, backgroundColor: "light" === e.paletteName ? e.colors.gray50 : e.colors.gray100, borderRadius: e.spaces.space12, flexGrow: 1, flexShrink: 0 },
                 documentContainerActive: { backgroundColor: "light" === e.paletteName ? e.colors.gray100 : e.colors.gray200 },
                 noClick: { pointerEvents: "none" },
@@ -679,7 +679,7 @@
                 k = s().edd0c172,
                 P = s().d1d3a41a,
                 R = ["ton.x.com", "ton.twitter.com", "pbs.twimg.com"];
-            function z({ allFiles: e, aspectRatio: t, centerJustify: n, extraMenuItems: r, file: s, height: z, index: _, intermediateResults: M, isAborted: S, isImageActionsEnabled: L = !0, isInputAttachmentPreview: A, isLoading: B, messageId: D, onClick: T, onImageSize: F, onRemove: W, onViewed: j, preloadedImageUrl: H, style: O, useActionRowButtons: U, width: K, withMediaCarousel: N }) {
+            function z({ allFiles: e, aspectRatio: t, centerJustify: n, extraMenuItems: r, file: s, height: z, index: M, intermediateResults: _, isAborted: S, isImageActionsEnabled: L = !0, isInputAttachmentPreview: A, isLoading: B, messageId: D, onClick: T, onImageSize: U, onRemove: F, onViewed: W, preloadedImageUrl: j, style: H, useActionRowButtons: O, width: K, withMediaCarousel: N }) {
                 const V = (0, f.I0)(),
                     G = (0, o.useHistory)(),
                     $ = (0, y.z)(),
@@ -708,19 +708,20 @@
                     re = a.useCallback(
                         ({ editMode: t } = {}) => {
                             let n = s.mediaId;
-                            if (!n && s.url) {
-                                n = new URL(s.url).searchParams.get("mediaId") ?? void 0;
+                            const a = s.url;
+                            if (!n && a) {
+                                n = new URL(a).searchParams.get("mediaId") ?? void 0;
                             }
-                            if (($.scribe({ element: "expand_image", action: "click", data: { event_info: JSON.stringify({ mediaId: n, allMediaIds: e ? e.map((e) => e.mediaId) : void 0 }) } }), N)) {
+                            if (($.scribe({ element: "expand_image", action: "click", data: { event_info: JSON.stringify({ mediaId: n, mediaUrl: a, allMediaIds: e ? e.map((e) => e.mediaId) : void 0, allMediaUrls: e ? e.map((e) => e.url) : void 0 }) } }), N)) {
                                 const e = "/i/grok/media-carousel";
-                                G.push({ pathname: e, state: { file: s, messageId: D, conversationKey: ie, index: _, editMode: t } });
+                                G.push({ pathname: e, state: { file: s, messageId: D, conversationKey: ie, index: M, editMode: t } });
                             } else {
                                 const e = !n || ae ? "/i/grok/media" : `/i/grok/media/${n}`;
                                 G.push({ pathname: e, state: { file: s } });
                             }
-                            j && j({ ...s, mediaId: n });
+                            W && W({ ...s, mediaId: n });
                         },
-                        [s, G, ae, j, ie, _, D, N, e, $],
+                        [s, G, ae, W, ie, M, D, N, e, $],
                     ),
                     se = a.useCallback(() => {
                         re({ editMode: !0 });
@@ -785,7 +786,7 @@
                         [oe, $, V, G, ne, r, ce],
                     ),
                     me = a.useCallback(() => (T ? T(re) : re()), [T, re]);
-                return a.createElement(v.Z, { allMediaIds: e ? e.map((e) => e.mediaId || "") : void 0, aspectRatio: t, centerJustify: n, disableClickWhileLoading: !N, filename: s.fileName, height: z, intermediateResults: M, isInputAttachmentPreview: A, isModerated: !!s.moderated, mediaId: s.mediaId, menuItems: de, mimetype: s.mimeType, onClick: me, onImageSize: F, onRemove: W, openMediaToEdit: se, preloadedImageUrl: H, status: le, style: O, url: oe, useActionRowButtons: U, width: K });
+                return a.createElement(v.Z, { allMediaIds: e ? e.map((e) => e.mediaId || "") : void 0, aspectRatio: t, centerJustify: n, disableClickWhileLoading: !N, filename: s.fileName, height: z, intermediateResults: _, isInputAttachmentPreview: A, isModerated: !!s.moderated, mediaId: s.mediaId, menuItems: de, mimetype: s.mimeType, onClick: me, onImageSize: U, onRemove: F, openMediaToEdit: se, preloadedImageUrl: j, status: le, style: H, url: oe, useActionRowButtons: O, width: K });
             }
         },
         609013: (e, t, n) => {
@@ -819,4 +820,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-16d5f187.73c3cd8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-16d5f187.f73e2f4a.js.map

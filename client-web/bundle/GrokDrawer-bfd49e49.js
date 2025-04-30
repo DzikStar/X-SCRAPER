@@ -56,7 +56,7 @@
             };
         },
         189953: (e, t, s) => {
-            s.d(t, { $t: () => ae, A0: () => Re, BA: () => se, BS: () => k, CH: () => L, CR: () => z, Cr: () => _, DX: () => j, Dh: () => S, Dn: () => U, En: () => u, FF: () => Q, FV: () => N, Gy: () => b, HF: () => E, IK: () => r, JO: () => V, Jt: () => ne, KH: () => f, L0: () => X, Lc: () => a, OW: () => w, Oj: () => O, P9: () => Z, Q_: () => o, Qg: () => K, Qh: () => J, Sv: () => i, TY: () => D, Tv: () => B, UN: () => h, VK: () => c, WK: () => te, Ws: () => d, Xg: () => $, Xi: () => G, Y8: () => p, Yb: () => y, Yf: () => n, Yx: () => m, ZN: () => W, ar: () => x, cA: () => Ee, cw: () => oe, dK: () => l, dO: () => I, dZ: () => M, dw: () => me, f1: () => pe, j$: () => ge, k$: () => F, lQ: () => ee, lh: () => R, li: () => ce, lm: () => g, mq: () => Se, my: () => A, nK: () => T, o$: () => P, px: () => ie, qd: () => Y, ru: () => le, ub: () => v, vc: () => H, vi: () => C, wG: () => re, x5: () => q, yB: () => de, z2: () => ue });
+            s.d(t, { $t: () => ae, A0: () => Re, BA: () => se, BS: () => U, CH: () => L, CR: () => z, Cr: () => _, DX: () => j, Dh: () => S, Dn: () => k, En: () => u, FF: () => Q, FV: () => N, Gy: () => b, HF: () => E, IK: () => r, JO: () => V, Jt: () => ne, KH: () => C, L0: () => X, Lc: () => a, OW: () => w, Oj: () => O, P9: () => Z, Q_: () => o, Qg: () => K, Qh: () => J, Sv: () => i, TY: () => D, Tv: () => B, UN: () => h, VK: () => c, WK: () => te, Ws: () => d, Xg: () => $, Xi: () => G, Y8: () => p, Yb: () => y, Yf: () => n, Yx: () => m, ZN: () => W, ar: () => x, cA: () => Ee, cw: () => oe, dK: () => l, dO: () => I, dZ: () => M, dw: () => me, f1: () => pe, j$: () => ge, k$: () => F, lQ: () => ee, lh: () => R, li: () => ce, lm: () => g, mq: () => Se, my: () => A, nK: () => T, o$: () => P, px: () => ie, qd: () => Y, ru: () => le, ub: () => v, vc: () => H, vi: () => f, wG: () => re, x5: () => q, yB: () => de, z2: () => ue });
             const n = "grok",
                 r = Object.freeze({ FUN: "fun", REGULAR: "" }),
                 o = Object.freeze({ IDLE: "idle", TYPING: "typing", WAITING: "waiting", FAILED: "failed" }),
@@ -74,8 +74,8 @@
                 S = Object.freeze({ REQUEST: "rweb/CLEAR_CONVERSATIONS/REQUEST", SUCCESS: "rweb/CLEAR_CONVERSATIONS/SUCCESS", FAILURE: "rweb/CLEAR_CONVERSATIONS/FAILURE" }),
                 I = Object.freeze({ REQUEST: "rweb/GROK_USER_EVENTS_LOG/REQUEST", SUCCESS: "rweb/GROK_USER_EVENTS_LOG/SUCCESS", FAILURE: "rweb/GROK_USER_EVENTS_LOG/FAILURE" }),
                 y = "rweb/grok/DELETE_CONVERSATION",
-                C = "rweb/grok/RENAME_CONVERSATION",
-                f = "rweb/grok/SET_ABORT_CONTROLLER",
+                f = "rweb/grok/RENAME_CONVERSATION",
+                C = "rweb/grok/SET_ABORT_CONTROLLER",
                 _ = "rweb/grok/CLEAR_CONVERSATION",
                 v = "rweb/grok/USER_SEND_MESSAGE",
                 A = "rweb/grok/REGENERATE_RESPONSE",
@@ -85,8 +85,8 @@
                 b = "rweb/grok/GROK_RESPONSE_COMPLETE",
                 N = "rweb/grok/GROK_RESPONSE_ERROR",
                 w = "rweb/grok/GROK_RESPONSE_METADATA",
-                k = "rweb/grok/GROK_RESPONSE_DISCLAIMER",
-                U = "rweb/grok/GROK_RESPONSE_FILE_ATTACHMENTS",
+                U = "rweb/grok/GROK_RESPONSE_DISCLAIMER",
+                k = "rweb/grok/GROK_RESPONSE_FILE_ATTACHMENTS",
                 L = "rweb/grok/GROK_RESPONSE_FEEDBACK_LABELS",
                 P = "rweb/grok/GROK_RESPONSE_FOLLOWUP_SUGGESTIONS",
                 M = "rweb/grok/GROK_RESPONSE_FOLLOWUP_SUGGESTED_MODE",
@@ -128,7 +128,7 @@
                 Se = "rweb/grok/SET_IS_PAST_THINKING_TRACE";
         },
         389071: (e, t, s) => {
-            s.d(t, { BU: () => G, Es: () => T, F0: () => ne, F9: () => B, Io: () => k, JE: () => K, JU: () => w, Ki: () => J, NV: () => D, OR: () => P, Pl: () => ae, Pt: () => U, SJ: () => re, SL: () => Q, Tu: () => F, UM: () => O, Uo: () => ie, V$: () => M, X4: () => te, YJ: () => V, bD: () => h, bv: () => L, en: () => se, f: () => _, hi: () => H, j1: () => z, jP: () => q, lo: () => oe, pZ: () => x, t5: () => W, uF: () => Y, uX: () => N, uz: () => X, v0: () => $, vf: () => j, x1: () => ee, zO: () => b });
+            s.d(t, { BU: () => G, Es: () => T, F0: () => ne, F9: () => B, Io: () => U, JE: () => K, JU: () => w, Ki: () => J, NV: () => D, OR: () => P, Pl: () => ae, Pt: () => k, SJ: () => re, SL: () => Q, Tu: () => F, UM: () => O, Uo: () => ie, V$: () => M, X4: () => te, YJ: () => V, bD: () => h, bv: () => L, en: () => se, f: () => _, hi: () => H, j1: () => z, jP: () => q, lo: () => oe, pZ: () => x, t5: () => W, uF: () => Y, uX: () => N, uz: () => X, v0: () => $, vf: () => j, x1: () => ee, zO: () => b });
             s(136728), s(571372), s(574858);
             var n = s(726426),
                 r = s.n(n),
@@ -147,8 +147,8 @@
                 S = () => ({ messageIds: [], messages: {}, model: void 0, mode: g, currentResponse: void 0, alternativeCurrentResponse: void 0, currentQuery: void 0, status: m.Q_.IDLE, abortController: void 0, conversationId: void 0, analysisEntityId: void 0, inputPrefill: { text: "", attachments: [] }, fetchConversationIdStatus: p.ZP.NONE, fetchConversationIdError: "", webResults: [], citedWebResults: [], intermediateImageResults: [], promptSource: "", cardAttachments: [], experimentData: { experiments: [], usingExperiment: !1 } }),
                 I = r()(),
                 y = "PROMPT_CONVERSATION_KEY",
-                C = { conversations: { [I]: S(), [y]: S() }, conversationHistory: { items: [] }, pinnedConversations: { items: [] }, pinnedConversationsIdMap: {}, mediaHistory: { items: [], status: p.ZP.NONE }, conversationList: [I, y], currentConversation: I, fetchConversationStatus: p.ZP.NONE, fetchPinnedConversationsStatus: p.ZP.NONE, fetchHistoryStatus: p.ZP.NONE, fetchHomeStatus: p.ZP.NONE, modelOptions: [], selectedModel: void 0, prompts: [], version: "", accessRestrictedReasons: [], freeAcessEnabled: !1, preferredPrompts: [], layout: null, grokInput: { selectedGrokModeButton: null, focused: !1, advancedSettings: null } },
-                f = (e) => `${e.length}`;
+                f = { conversations: { [I]: S(), [y]: S() }, conversationHistory: { items: [] }, pinnedConversations: { items: [] }, pinnedConversationsIdMap: {}, mediaHistory: { items: [], status: p.ZP.NONE }, conversationList: [I, y], currentConversation: I, fetchConversationStatus: p.ZP.NONE, fetchPinnedConversationsStatus: p.ZP.NONE, fetchHistoryStatus: p.ZP.NONE, fetchHomeStatus: p.ZP.NONE, modelOptions: [], selectedModel: void 0, prompts: [], version: "", accessRestrictedReasons: [], freeAcessEnabled: !1, preferredPrompts: [], layout: null, grokInput: { selectedGrokModeButton: null, focused: !1, advancedSettings: null } },
+                C = (e) => `${e.length}`;
             function _({ conversationKey: e }) {
                 function t(t) {
                     return t[m.Yf].conversations[e];
@@ -463,7 +463,7 @@
                     }
                     case m.ub: {
                         const s = A(t.payload.message, e),
-                            n = f(e.messageIds),
+                            n = C(e.messageIds),
                             r = e.messageIds[e.messageIds.length - 1];
                         return t.payload.message.fileAttachments?.length && "FOLLOW_UP" === t.payload.promptMetadata?.promptSource && (s.hideAttachments = !0), { ...e, messageIds: e.messageIds.concat(n), messages: { ...e.messages, [r]: { ...e.messages[r], allowRetry: !1 }, [n]: { ...s, promptMetadata: t.payload.promptMetadata } }, currentResponse: { ...E, promptMetadata: t.payload.promptMetadata }, currentQuery: void 0, status: m.Q_.WAITING };
                     }
@@ -523,13 +523,13 @@
                         return e;
                     case m.FV: {
                         const n = t.payload,
-                            r = f(e.messageIds),
+                            r = C(e.messageIds),
                             o = s(),
                             a = A({ message: e.currentResponse?.message ? `${e.currentResponse.message}...\n\n${n}` : n, sender: e.currentResponse?.sender ?? l.CI.ASSISTANT, localOnly: !0, allowRetry: !0 }, e);
                         return { ...e, messageIds: e.messageIds.concat(r), messages: { ...e.messages, ...o, [r]: a }, currentResponse: void 0, currentQuery: void 0, status: m.Q_.IDLE };
                     }
                     case m.Gy: {
-                        const t = f(e.messageIds),
+                        const t = C(e.messageIds),
                             s = A({ ...e.currentResponse, message: e.currentResponse?.message ?? "", sender: e.currentResponse?.sender ?? l.CI.ASSISTANT, thinkingTrace: e.currentResponse?.thinkingTrace, promptSource: e.promptSource ?? "" }, e);
                         return e.experimentData?.usingExperiment ? { ...e, messageIds: e.messageIds.concat(t), messages: { ...e.messages, [t]: s }, experimentData: { ...e.experimentData, experiments: [e.currentResponse, e.alternativeCurrentResponse] }, currentResponse: void 0, alternativeCurrentResponse: void 0, currentQuery: void 0, status: m.Q_.IDLE } : { ...e, messageIds: e.messageIds.concat(t), messages: { ...e.messages, [t]: s }, currentResponse: void 0, alternativeCurrentResponse: void 0, currentQuery: void 0, status: m.Q_.IDLE };
                     }
@@ -554,7 +554,7 @@
                             r = !!t;
                         e.currentResponse?.deepSearchSummaryAccumulator && e.currentResponse.deepSearchSummaryAccumulator.onAbort();
                         const o = { sender: l.CI.ASSISTANT, message: r ? n : `${n}...`, thinkingTrace: t ? `${t}...` : "", cardAttachments: e.currentResponse?.cardAttachments, deepSearchSummaryAccumulator: e.currentResponse?.deepSearchSummaryAccumulator, isDeepsearch: e.currentResponse?.isDeepsearch, isReasoning: e.currentResponse?.isReasoning, intermediateImageResults: e.currentResponse?.intermediateImageResults, fileAttachments: e.currentResponse?.fileAttachments, localOnly: !0, allowRetry: !1, isAborted: !0, expectedImageAspectRatio: e.currentResponse?.expectedImageAspectRatio },
-                            a = f(e.messageIds),
+                            a = C(e.messageIds),
                             i = o.localOnly ? s() : {};
                         return { ...e, abortController: void 0, messageIds: e.messageIds.concat(a), messages: { ...e.messages, ...i, [a]: o }, currentResponse: void 0, status: m.Q_.IDLE };
                     }
@@ -632,10 +632,10 @@
             function w(e) {
                 return e[m.Yf].grokInput;
             }
-            function k(e) {
+            function U(e) {
                 return e[m.Yf].preferredPrompts;
             }
-            function U(e) {
+            function k(e) {
                 return e[m.Yf].fetchHomeStatus;
             }
             function L(e) {
@@ -740,7 +740,7 @@
             }
             d.Z.register(
                 {
-                    [m.Yf]: function (e = C, t) {
+                    [m.Yf]: function (e = f, t) {
                         if (!t) return e;
                         switch (t.type) {
                             case m.$t: {
@@ -864,7 +864,7 @@
             );
         },
         155918: (e, t, s) => {
-            s.d(t, { CI: () => r, EG: () => o, dj: () => a });
+            s.d(t, { CI: () => r, EG: () => o, VU: () => i, dj: () => a });
             s(136728);
             var n = s(623494);
             const r = Object.freeze({ HUMAN: 1, ASSISTANT: 2 });
@@ -897,7 +897,11 @@
                     return t && (0, n.kl)(t, s, { json: e }), null;
                 }
             }
+            function i(e) {
+                const t = e.fileAttachments && e.fileAttachments.length > 0 && e.fileAttachments.every((e) => e.mimeType.startsWith("image"));
+                return { mediaIds: t ? (e.fileAttachments || []).map((e) => e.mediaId).filter(Boolean) : [], mediaUrls: t ? (e.fileAttachments || []).map((e) => e.url).filter(Boolean) : [] };
+            }
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.GrokDrawer-bfd49e49.d289090a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.GrokDrawer-bfd49e49.73787d2a.js.map

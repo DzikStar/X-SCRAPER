@@ -3,7 +3,7 @@
     ["bundle.UserAvatar-8486177b", "bundle.DirectMessages-8486177b", "shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-29ff9b73"],
     {
         389071: (e, t, s) => {
-            s.d(t, { BU: () => K, Es: () => E, F0: () => ne, F9: () => q, Io: () => P, JE: () => U, JU: () => L, Ki: () => X, NV: () => D, OR: () => w, Pl: () => oe, Pt: () => x, SJ: () => re, SL: () => Z, Tu: () => Q, UM: () => k, Uo: () => ie, V$: () => N, X4: () => te, YJ: () => G, bD: () => b, bv: () => H, en: () => se, f: () => S, hi: () => O, j1: () => J, jP: () => V, lo: () => ae, pZ: () => F, t5: () => B, uF: () => Y, uX: () => T, uz: () => z, v0: () => j, vf: () => $, x1: () => ee, zO: () => M });
+            s.d(t, { BU: () => K, Es: () => E, F0: () => ne, F9: () => q, Io: () => P, JE: () => D, JU: () => L, Ki: () => X, NV: () => U, OR: () => w, Pl: () => oe, Pt: () => x, SJ: () => re, SL: () => Z, Tu: () => Q, UM: () => k, Uo: () => ie, V$: () => N, X4: () => te, YJ: () => G, bD: () => b, bv: () => H, en: () => se, f: () => S, hi: () => O, j1: () => J, jP: () => z, lo: () => ae, pZ: () => F, t5: () => B, uF: () => Y, uX: () => T, uz: () => V, v0: () => j, vf: () => $, x1: () => ee, zO: () => M });
             s(136728), s(571372), s(574858);
             var n = s(726426),
                 r = s.n(n),
@@ -21,8 +21,8 @@
                 f = m.IK.REGULAR,
                 I = () => ({ messageIds: [], messages: {}, model: void 0, mode: f, currentResponse: void 0, alternativeCurrentResponse: void 0, currentQuery: void 0, status: m.Q_.IDLE, abortController: void 0, conversationId: void 0, analysisEntityId: void 0, inputPrefill: { text: "", attachments: [] }, fetchConversationIdStatus: p.ZP.NONE, fetchConversationIdError: "", webResults: [], citedWebResults: [], intermediateImageResults: [], promptSource: "", cardAttachments: [], experimentData: { experiments: [], usingExperiment: !1 } }),
                 v = r()(),
-                R = "PROMPT_CONVERSATION_KEY",
-                h = { conversations: { [v]: I(), [R]: I() }, conversationHistory: { items: [] }, pinnedConversations: { items: [] }, pinnedConversationsIdMap: {}, mediaHistory: { items: [], status: p.ZP.NONE }, conversationList: [v, R], currentConversation: v, fetchConversationStatus: p.ZP.NONE, fetchPinnedConversationsStatus: p.ZP.NONE, fetchHistoryStatus: p.ZP.NONE, fetchHomeStatus: p.ZP.NONE, modelOptions: [], selectedModel: void 0, prompts: [], version: "", accessRestrictedReasons: [], freeAcessEnabled: !1, preferredPrompts: [], layout: null, grokInput: { selectedGrokModeButton: null, focused: !1, advancedSettings: null } },
+                h = "PROMPT_CONVERSATION_KEY",
+                R = { conversations: { [v]: I(), [h]: I() }, conversationHistory: { items: [] }, pinnedConversations: { items: [] }, pinnedConversationsIdMap: {}, mediaHistory: { items: [], status: p.ZP.NONE }, conversationList: [v, h], currentConversation: v, fetchConversationStatus: p.ZP.NONE, fetchPinnedConversationsStatus: p.ZP.NONE, fetchHistoryStatus: p.ZP.NONE, fetchHomeStatus: p.ZP.NONE, modelOptions: [], selectedModel: void 0, prompts: [], version: "", accessRestrictedReasons: [], freeAcessEnabled: !1, preferredPrompts: [], layout: null, grokInput: { selectedGrokModeButton: null, focused: !1, advancedSettings: null } },
                 C = (e) => `${e.length}`;
             function S({ conversationKey: e }) {
                 function t(t) {
@@ -522,10 +522,10 @@
             function N(e) {
                 return e[m.Yf].conversationHistory.cursor;
             }
-            function D(e) {
+            function U(e) {
                 return e[m.Yf].pinnedConversations.cursor;
             }
-            function U(e) {
+            function D(e) {
                 return e[m.Yf].fetchHistoryStatus;
             }
             function K(e) {
@@ -580,10 +580,10 @@
             function j(e) {
                 return { type: m.BA, payload: e };
             }
-            function z(e) {
+            function V(e) {
                 return { type: m.Jt, payload: e };
             }
-            function V(e) {
+            function z(e) {
                 return { type: m.wG, payload: e };
             }
             function X(e) {
@@ -615,7 +615,7 @@
             }
             d.Z.register(
                 {
-                    [m.Yf]: function (e = h, t) {
+                    [m.Yf]: function (e = R, t) {
                         if (!t) return e;
                         switch (t.type) {
                             case m.$t: {
@@ -739,7 +739,7 @@
             );
         },
         155918: (e, t, s) => {
-            s.d(t, { CI: () => r, EG: () => a, dj: () => o });
+            s.d(t, { CI: () => r, EG: () => a, VU: () => i, dj: () => o });
             s(136728);
             var n = s(623494);
             const r = Object.freeze({ HUMAN: 1, ASSISTANT: 2 });
@@ -772,7 +772,11 @@
                     return t && (0, n.kl)(t, s, { json: e }), null;
                 }
             }
+            function i(e) {
+                const t = e.fileAttachments && e.fileAttachments.length > 0 && e.fileAttachments.every((e) => e.mimeType.startsWith("image"));
+                return { mediaIds: t ? (e.fileAttachments || []).map((e) => e.mediaId).filter(Boolean) : [], mediaUrls: t ? (e.fileAttachments || []).map((e) => e.url).filter(Boolean) : [] };
+            }
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserAvatar-8486177b.a89f7f4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserAvatar-8486177b.de0fc30a.js.map
