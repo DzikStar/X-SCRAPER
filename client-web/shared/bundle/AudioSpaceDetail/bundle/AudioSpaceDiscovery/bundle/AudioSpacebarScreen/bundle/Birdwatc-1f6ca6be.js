@@ -1028,7 +1028,7 @@
             a.d(t, { C: () => c });
             var i = a(202784),
                 r = a(325686),
-                n = a(492470),
+                n = a(680714),
                 o = a(278065);
             const l = [
                     "accessibility_alt",
@@ -1632,4 +1632,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1f6ca6be.de59dc9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1f6ca6be.9b27d44a.js.map

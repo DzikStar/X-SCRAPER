@@ -37,16 +37,16 @@
                         case "recommended_jobs":
                             d = r ? (0, a.ju)(`https://x.com/jobs/recommended/${r}`) : void 0;
                     }
-                    return o.createElement(l.Z, { style: E.root }, o.createElement(i.Z, { link: d, style: E.listItem }, o.createElement(c.Z, { displayType: "carousel", employmentType: t?.core?.employment_type, formattedSalary: t?.core?.formatted_salary, location: t?.core?.location, recruitingOrganization: k(n), salaryInterval: t?.core?.salary_interval, salaryMax: t?.core?.salary_max, salaryMin: t?.core?.salary_min, shortDescription: t?.core?.short_description, title: t?.core?.title, titleSize: "body" })));
+                    return o.createElement(l.Z, { style: k.root }, o.createElement(i.Z, { link: d, style: k.listItem }, o.createElement(c.Z, { displayType: "carousel", employmentType: t?.core?.employment_type, formattedSalary: t?.core?.formatted_salary, location: t?.core?.location, recruitingOrganization: v(n), salaryInterval: t?.core?.salary_interval, salaryMax: t?.core?.salary_max, salaryMin: t?.core?.salary_min, shortDescription: t?.core?.short_description, title: t?.core?.title, titleSize: "body" })));
                 },
-                k = (e) => {
+                v = (e) => {
                     if (!e || !e.profile) return null;
                     const { is_blue_verified: t, name: n, profile_image_url_https: r, screen_name: o, verified: l, verified_type: a } = e.profile;
                     return { name: n, screen_name: o, verified: l, verified_type: a, is_blue_verified: t, profile_image_url_https: r };
                 },
-                E = s.default.create((e) => ({ root: { paddingStart: e.spaces.space12 }, listItem: { padding: e.spaces.space12, width: "20em", overflow: "hidden", borderRadius: e.borderRadii.xLarge, borderColor: e.colors.gray100, borderWidth: e.borderWidths.small } })),
-                v = w(o.memo(D)),
-                S = r.iH({ component: v }).getHandler();
+                k = s.default.create((e) => ({ root: { paddingStart: e.spaces.space12 }, listItem: { padding: e.spaces.space12, width: "20em", overflow: "hidden", borderRadius: e.borderRadii.xLarge, borderColor: e.colors.gray100, borderWidth: e.borderWidths.small } })),
+                E = w(o.memo(D)),
+                S = r.iH({ component: E }).getHandler();
         },
         386619: (e, t, n) => {
             n.d(t, { Z: () => a });
@@ -92,15 +92,15 @@
                         h = r.createElement(p.Z, { isBlueVerified: o, isVerified: c, name: l, screenName: i || "<none>", verifiedType: d, weight: f, withScreenName: u });
                     return (({ displayType: e }) => "carousel" === e)(e) && a ? r.createElement(s.Z, { avatarCell: r.createElement(m.default, { shape: "square", size: "small", uri: a }), avatarCellStyle: S.avatarCell, avatarSize: "small", style: S.avatarRow }, h) : h;
                 },
-                k = (e) => {
+                v = (e) => {
                     const { location: t } = e;
                     return t ? r.createElement(o.Z, { style: S.locationWithIcon }, y(e) ? r.createElement(c.ZP, { color: "gray700", size: "body", style: S.dontShrinkMeBro }, r.createElement(l.default, null)) : null, r.createElement(c.ZP, { color: "gray700", style: S.elidedText }, t)) : null;
                 },
-                E = (e) => {
+                k = (e) => {
                     const { employmentType: t, formattedSalary: n, salaryInterval: l } = e;
                     return n || t ? r.createElement(o.Z, { style: S.metaRow }, n ? r.createElement(o.Z, { style: S.withIcon }, y(e) ? r.createElement(c.ZP, { color: "gray700", size: "body" }, r.createElement(a.default, null)) : null, r.createElement(c.ZP, { color: "gray700" }, (0, g.M)(n, l))) : null, t ? r.createElement(o.Z, { style: S.withIcon }, y(e) ? r.createElement(c.ZP, { color: "gray700", size: "body" }, r.createElement(i.default, null)) : null, r.createElement(c.ZP, { color: "gray700" }, h.eo[t])) : null) : null;
                 },
-                v = ({ shortDescription: e }) => {
+                E = ({ shortDescription: e }) => {
                     const t = (0, g.G)(e);
                     return t ? r.createElement(o.Z, { style: S.richTextWrapper }, r.createElement(f.Z, { contentState: t })) : null;
                 },
@@ -110,7 +110,7 @@
                         a = "carousel" === t,
                         i = "full" === t,
                         s = "full" !== t;
-                    return r.createElement(o.Z, { style: a ? S.carouselJob : S.job }, r.createElement(c.ZP, { size: l, style: s ? S.elidedText : void 0, weight: "bold" }, n), r.createElement(D, e), r.createElement(o.Z, { style: b(e) }, r.createElement(k, e), w(e) ? r.createElement(E, e) : null), i ? r.createElement(r.Fragment, null, r.createElement(v, e), r.createElement(d.ZP, { "aria-label": "Apply", size: "small", type: "primaryFilled" }, "View job")) : null);
+                    return r.createElement(o.Z, { style: a ? S.carouselJob : S.job }, r.createElement(c.ZP, { size: l, style: s ? S.elidedText : void 0, weight: "bold" }, n), r.createElement(D, e), r.createElement(o.Z, { style: b(e) }, r.createElement(v, e), w(e) ? r.createElement(k, e) : null), i ? r.createElement(r.Fragment, null, r.createElement(E, e), r.createElement(d.ZP, { "aria-label": "Apply", size: "small", type: "primaryFilled" }, "View job")) : null);
                 };
         },
         89217: (e, t, n) => {
@@ -190,13 +190,13 @@
                                 const n = e.getType();
                                 return t[n] || null;
                             }),
-                        r.createElement(d.ZP, null, ({ containerWidth: e }) => r.createElement(l.Z, { style: k.fontFamily }, r.createElement(o.Editor, { blockRenderMap: y, blockRendererFn: D, blockStyleFn: (0, s.su)(p.Z.isNarrowScreenWidth(e)), editorState: b, onChange: i.Z, readOnly: !0, webDriverTestID: "longformRichTextComponent" })))
+                        r.createElement(d.ZP, null, ({ containerWidth: e }) => r.createElement(l.Z, { style: v.fontFamily }, r.createElement(o.Editor, { blockRenderMap: y, blockRendererFn: D, blockStyleFn: (0, s.su)(p.Z.isNarrowScreenWidth(e)), editorState: b, onChange: i.Z, readOnly: !0, webDriverTestID: "longformRichTextComponent" })))
                     );
                 }),
-                k = h.default.create((e) => ({ fontFamily: { fontFamily: e.fontFamilies.normal } }));
+                v = h.default.create((e) => ({ fontFamily: { fontFamily: e.fontFamilies.normal } }));
         },
         779802: (e, t, n) => {
-            n.d(t, { $u: () => S, Ak: () => Z, KJ: () => D, LI: () => $, P7: () => g, PW: () => v, QF: () => b, Qm: () => w, Tr: () => z, b$: () => h, db: () => I, et: () => E, fR: () => p, iH: () => x, lD: () => y, su: () => k, u4: () => T, wX: () => _ });
+            n.d(t, { $u: () => S, Ak: () => Z, KJ: () => D, LI: () => $, P7: () => g, PW: () => E, QF: () => b, Qm: () => w, Tr: () => z, b$: () => h, db: () => I, et: () => k, fR: () => p, iH: () => x, lD: () => y, su: () => v, u4: () => T, wX: () => _ });
             var r = n(202784),
                 o = n(674132),
                 l = n.n(o),
@@ -222,7 +222,7 @@
                 ],
                 w = "LINK",
                 D = (e) => [{ buttonTestId: "btn-link", Icon: u.default, key: w, onPress: e }],
-                k = (e, t) => (n) => {
+                v = (e, t) => (n) => {
                     const r = (t) => (e ? `${t}-narrow` : t);
                     switch (n.getType()) {
                         case g.bulleted:
@@ -241,12 +241,12 @@
                             return t?.(n) || "";
                     }
                 },
-                E = l().d5a48014,
-                v = l().b92b6156,
+                k = l().d5a48014,
+                E = l().b92b6156,
                 S = l().ec5ed598,
                 $ = ({ children: e, extendedWidth: t, size: n, weight: o }) => r.createElement(m.ZP, { extendedWidth: t, size: n, weight: o }, e),
                 z = { blockType: g.paragraph, label: S, component: $({ size: "body", children: S }) },
-                x = [{ blockType: g.header1, label: E, component: $({ size: "title1", extendedWidth: !0, children: E }) }, { blockType: g.header2, label: v, component: $({ size: "title3", weight: "heavy", children: v }) }, z],
+                x = [{ blockType: g.header1, label: k, component: $({ size: "title1", extendedWidth: !0, children: k }) }, { blockType: g.header2, label: E, component: $({ size: "title3", weight: "heavy", children: E }) }, z],
                 _ = ["backspace", "backspace-word", "backspace-to-start-of-line"],
                 Z = ["delete", "delete-word", "delete-to-start-of-line"],
                 T = "increase-text-size",
@@ -304,7 +304,7 @@
             }
             const s = [];
         },
-        69893: (e, t, n) => {
+        264171: (e, t, n) => {
             n.r(t), n.d(t, { default: () => c });
             var r = n(202784),
                 o = n(890601),
@@ -312,11 +312,24 @@
                 a = n(347101);
             const i = (e = {}) => {
                 const { direction: t } = (0, l.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M17.879 15c.079.323.121.658.121 1 0 2.757-2.691 5-6 5s-6-2.243-6-5h2c0 1.654 1.794 3 4 3s4-1.346 4-3c0-.352-.096-.686-.246-1h2.125zM12 11c-2.206 0-4-1.346-4-3s1.794-3 4-3 4 1.346 4 3h2c0-2.757-2.691-5-6-5S6 5.243 6 8c0 1.126.455 2.163 1.211 3H3v2h18v-2h-9z" })) }, { writingDirection: t });
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M12 2c-4.687 0-8.5 3.813-8.5 8.5 0 5.967 7.621 11.116 7.945 11.332l.555.37.555-.37c.324-.216 7.945-5.365 7.945-11.332C20.5 5.813 16.687 2 12 2zm0 11.5c-1.65 0-3-1.34-3-3s1.35-3 3-3c1.66 0 3 1.34 3 3s-1.34 3-3 3z" })) }, { writingDirection: t });
+            };
+            i.metadata = { width: 24, height: 24 };
+            const c = i;
+        },
+        89085: (e, t, n) => {
+            n.r(t), n.d(t, { default: () => c });
+            var r = n(202784),
+                o = n(890601),
+                l = n(783427),
+                a = n(347101);
+            const i = (e = {}) => {
+                const { direction: t } = (0, l.Z)();
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M3.905 6.516h-.423V4.354h.263c.564-.015 1.018-.126 1.361-.332s.61-.529.8-.972h2.093v7.949H5.471v-4.94c-.351.305-.873.457-1.567.457zm2.194 10.88c.403-.273.69-.542.861-.81.171-.265.257-.566.257-.9 0-.304-.087-.542-.262-.713-.175-.172-.426-.257-.753-.257-.35 0-.623.096-.821.285-.198.19-.297.457-.297.799 0 .145.016.296.046.457l-2.577-.228c-.023-.175-.034-.342-.034-.502 0-.547.16-1.018.479-1.413s.764-.699 1.334-.913c.57-.213 1.224-.319 1.961-.319 1.125 0 2.009.221 2.651.662.643.441.964 1.079.964 1.916 0 .532-.112.998-.336 1.397-.224.399-.584.766-1.078 1.1-.562.381-1.372.768-2.428 1.164H10v1.881H2.542v-1.687c1.642-.806 2.828-1.445 3.558-1.917zM22 6H12v2h10V6zm0 10H12v2h10v-2z" })) }, { writingDirection: t });
             };
             i.metadata = { width: 24, height: 24 };
             const c = i;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.jobLoader.c84bb48a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.jobLoader.828631fa.js.map

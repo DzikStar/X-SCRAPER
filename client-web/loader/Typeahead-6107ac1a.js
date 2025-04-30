@@ -266,8 +266,8 @@
             const P = s().ae408b76,
                 R = s().j355f008,
                 D = s().habf9678,
-                F = s().db0798ed,
-                Z = s().dc716ec9,
+                Z = s().db0798ed,
+                F = s().dc716ec9,
                 A = ({ text: e }) => {
                     const { direction: t } = (0, x.Z)();
                     return i.createElement(I.ZP, { dir: t, withHashflags: !0 }, e);
@@ -290,8 +290,8 @@
                                 P = i.createElement(a.default, { style: I }),
                                 R = i.createElement(l.default, { style: I }),
                                 D = i.createElement(c.default, { style: I }),
-                                F = i.createElement(d.default, { style: I }),
-                                Z = i.createElement(h.default, { style: L.circle }),
+                                Z = i.createElement(d.default, { style: I }),
+                                F = i.createElement(h.default, { style: L.circle }),
                                 A = i.createElement(u.default, { style: I }),
                                 M = i.createElement(m.default, { style: I }),
                                 N = i.createElement(p.default, { style: I }),
@@ -316,9 +316,9 @@
                                 case O.Q.Follow:
                                     return D;
                                 case O.Q.Moment:
-                                    return F;
-                                case O.Q.NewTweets:
                                     return Z;
+                                case O.Q.NewTweets:
+                                    return F;
                                 case O.Q.Reply:
                                 case O.Q.Conversation:
                                     return A;
@@ -360,7 +360,7 @@
                         case O.Q.ReplyPin:
                             return { Icon: H, text: D };
                         case O.Q.Topic:
-                            return { Icon: H, "aria-label": "Recommendation" === x?.functionalityType || "RecWithEducation" === x?.functionalityType ? Z({ topicName: I }) : F({ topicName: I }), text: I ? i.createElement(A, { text: I }) : null, link: o };
+                            return { Icon: H, "aria-label": "Recommendation" === x?.functionalityType || "RecWithEducation" === x?.functionalityType ? F({ topicName: I }) : Z({ topicName: I }), text: I ? i.createElement(A, { text: I }) : null, link: o };
                         default:
                             return { Icon: H, text: I ? i.createElement(A, { text: I }) : null, link: o };
                     }
@@ -609,7 +609,23 @@
             r.d(t, { H: () => i });
             const i = ({ description: e, entities: t, withheldDescription: r, withheldEntities: i }) => (r ? { description: r, entities: i } : { description: e, entities: t });
         },
-        971657: (e, t, r) => {
+        58399: (e, t, r) => {
+            "use strict";
+            r.r(t), r.d(t, { default: () => c });
+            var i = r(202784),
+                o = r(890601),
+                s = r(783427),
+                n = r(717683),
+                a = r(347101);
+            const l = (e = {}) => {
+                const t = i.useContext(n.Z),
+                    { direction: r } = (0, s.Z)();
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style, t && a.Z.iconRTL], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M14.586 12L7.543 4.96l1.414-1.42L17.414 12l-8.457 8.46-1.414-1.42L14.586 12z" })) }, { writingDirection: r });
+            };
+            l.metadata = { width: 24, height: 24 };
+            const c = l;
+        },
+        246492: (e, t, r) => {
             "use strict";
             r.r(t), r.d(t, { default: () => l });
             var i = r(202784),
@@ -618,12 +634,12 @@
                 n = r(347101);
             const a = (e = {}) => {
                 const { direction: t } = (0, s.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M7.501 19.917L7.471 21H.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977.963 0 1.95.212 2.87.672-.444.478-.851 1.03-1.212 1.656-.507-.204-1.054-.329-1.658-.329-2.767 0-4.57 2.223-4.938 6.004H7.56c-.023.302-.05.599-.059.917zm8.999-8.921c-3.264 0-6.816 2.358-7 8.977L9.471 21h4.528v-2h-2.438c.367-3.781 2.17-6.004 4.938-6.004 1.089 0 2.022.356 2.784 1.004h2.632c-1.376-2.136-3.446-3.004-5.415-3.004zm0-.996c-.799 0-1.527-.279-2.116-.73C13.548 8.63 13 7.632 13 6.5 13 4.57 14.567 3 16.5 3S20 4.57 20 6.5c0 1.132-.548 2.13-1.384 2.77-.589.451-1.317.73-2.116.73zM15 6.5c0 .827.673 1.5 1.5 1.5S18 7.327 18 6.5 17.327 5 16.5 5 15 5.673 15 6.5zm-11 0C4 4.57 5.567 3 7.5 3S11 4.57 11 6.5 9.433 10 7.5 10 4 8.43 4 6.5zm2 0C6 7.327 6.673 8 7.5 8S9 7.327 9 6.5 8.327 5 7.5 5 6 5.673 6 6.5zM21 21h3v-2h-3v-3h-2v3h-3v2h3v3h2v-3z" })) }, { writingDirection: t });
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M14 6c0 2.21-1.791 4-4 4S6 8.21 6 6s1.791-4 4-4 4 1.79 4 4zm-4 5c-2.352 0-4.373.85-5.863 2.44-1.477 1.58-2.366 3.8-2.632 6.46l-.11 1.1h17.21l-.11-1.1c-.266-2.66-1.155-4.88-2.632-6.46C14.373 11.85 12.352 11 10 11zm5.586-2l4.207 4.21 1.414-1.42L19.414 10H24V8h-4.586l1.793-1.79-1.414-1.42L15.586 9z" })) }, { writingDirection: t });
             };
             a.metadata = { width: 24, height: 24 };
             const l = a;
         },
-        790093: (e, t, r) => {
+        264171: (e, t, r) => {
             "use strict";
             r.r(t), r.d(t, { default: () => l });
             var i = r(202784),
@@ -632,7 +648,7 @@
                 n = r(347101);
             const a = (e = {}) => {
                 const { direction: t } = (0, s.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M19.5 3h-15C3.119 3 2 4.119 2 5.5v11C2 17.881 3.119 19 4.5 19h4.15l3.34 2.793L15.37 19h4.13c1.381 0 2.5-1.119 2.5-2.5v-11C22 4.119 20.881 3 19.5 3zM8 12.25c-.69 0-1.25-.56-1.25-1.25S7.31 9.75 8 9.75s1.25.56 1.25 1.25-.56 1.25-1.25 1.25zm4 0c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25zm4 0c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25z" })) }, { writingDirection: t });
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M12 2c-4.687 0-8.5 3.813-8.5 8.5 0 5.967 7.621 11.116 7.945 11.332l.555.37.555-.37c.324-.216 7.945-5.365 7.945-11.332C20.5 5.813 16.687 2 12 2zm0 11.5c-1.65 0-3-1.34-3-3s1.35-3 3-3c1.66 0 3 1.34 3 3s-1.34 3-3 3z" })) }, { writingDirection: t });
             };
             a.metadata = { width: 24, height: 24 };
             const l = a;
@@ -661,6 +677,20 @@
             const a = (e = {}) => {
                 const { direction: t } = (0, s.Z)();
                 return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M14 2c0 3.35.74 5.53 2.1 6.9 1.36 1.36 3.55 2.1 6.9 2.1v2c-3.35 0-5.54.74-6.9 2.1-1.36 1.37-2.1 3.55-2.1 6.9h-2c0-3.35-.74-5.53-2.11-6.9C8.53 13.74 6.35 13 3 13v-2c3.35 0 5.53-.74 6.89-2.1C11.26 7.53 12 5.35 12 2h2zM5 1c0 1.66-1.34 3-3 3v1c1.66 0 3 1.34 3 3h1c0-1.66 1.34-3 3-3V4C7.34 4 6 2.66 6 1H5z" })) }, { writingDirection: t });
+            };
+            a.metadata = { width: 24, height: 24 };
+            const l = a;
+        },
+        452693: (e, t, r) => {
+            "use strict";
+            r.r(t), r.d(t, { default: () => l });
+            var i = r(202784),
+                o = r(890601),
+                s = r(783427),
+                n = r(347101);
+            const a = (e = {}) => {
+                const { direction: t } = (0, s.Z)();
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M12 1.75c-5.11 0-9.25 4.14-9.25 9.25 0 4.77 3.61 8.7 8.25 9.2v2.96l1.15-.17c1.88-.29 4.11-1.56 5.87-3.5 1.79-1.96 3.17-4.69 3.23-7.97.09-5.54-4.14-9.77-9.25-9.77zM13 14H9v-2h4v2zm2-4H9V8h6v2z" })) }, { writingDirection: t });
             };
             a.metadata = { width: 24, height: 24 };
             const l = a;
@@ -1557,4 +1587,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.Typeahead-6107ac1a.702277fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.Typeahead-6107ac1a.5f406afa.js.map
