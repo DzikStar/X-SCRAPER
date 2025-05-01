@@ -56,7 +56,7 @@
             };
         },
         189953: (e, t, s) => {
-            s.d(t, { $t: () => ae, A0: () => Re, BA: () => se, BS: () => U, CH: () => L, CR: () => z, Cr: () => _, DX: () => j, Dh: () => S, Dn: () => k, En: () => u, FF: () => Q, FV: () => N, Gy: () => b, HF: () => E, IK: () => r, JO: () => V, Jt: () => ne, KH: () => C, L0: () => X, Lc: () => a, OW: () => w, Oj: () => O, P9: () => Z, Q_: () => o, Qg: () => K, Qh: () => J, Sv: () => i, TY: () => D, Tv: () => B, UN: () => h, VK: () => c, WK: () => te, Ws: () => d, Xg: () => $, Xi: () => G, Y8: () => p, Yb: () => y, Yf: () => n, Yx: () => m, ZN: () => W, ar: () => x, cA: () => Ee, cw: () => oe, dK: () => l, dO: () => I, dZ: () => M, dw: () => me, f1: () => pe, j$: () => ge, k$: () => F, lQ: () => ee, lh: () => R, li: () => ce, lm: () => g, mq: () => Se, my: () => A, nK: () => T, o$: () => P, px: () => ie, qd: () => Y, ru: () => le, ub: () => v, vc: () => H, vi: () => f, wG: () => re, x5: () => q, yB: () => de, z2: () => ue });
+            s.d(t, { $t: () => ae, A0: () => Re, BA: () => se, BS: () => U, CH: () => L, CR: () => z, Cr: () => _, DX: () => j, Dh: () => S, Dn: () => k, En: () => u, FF: () => Q, FV: () => N, Gy: () => b, HF: () => E, IK: () => r, JO: () => V, Jt: () => ne, KH: () => C, L0: () => X, Lc: () => a, OW: () => w, Oj: () => O, P9: () => Z, Q_: () => o, Qg: () => K, Qh: () => J, Sv: () => i, TY: () => D, Tv: () => B, UN: () => h, VK: () => c, WK: () => te, Ws: () => d, Xg: () => $, Xi: () => G, Y8: () => p, Yb: () => y, Yf: () => n, Yx: () => m, ZN: () => W, _i: () => ce, ar: () => x, cA: () => Ee, cw: () => oe, dK: () => l, dO: () => I, dZ: () => M, dw: () => me, f1: () => pe, j$: () => ge, k$: () => F, lQ: () => ee, lh: () => R, lm: () => g, mq: () => Se, my: () => A, nK: () => T, o$: () => P, px: () => ie, qd: () => Y, ru: () => le, ub: () => v, vc: () => H, vi: () => f, wG: () => re, x5: () => q, yB: () => de, z2: () => ue });
             const n = "grok",
                 r = Object.freeze({ FUN: "fun", REGULAR: "" }),
                 o = Object.freeze({ IDLE: "idle", TYPING: "typing", WAITING: "waiting", FAILED: "failed" }),
@@ -116,7 +116,7 @@
                 oe = "rweb/grok/SET_PROMPT_SOURCE",
                 ae = "rweb/grok/NEW_CONVERSATION",
                 ie = "rweb/grok/IMAGE_INTERMEDIATE_RESULT",
-                ce = "rweb/grok/SELECT_COMPOSER_MODE",
+                ce = "rweb/grok/SET_GROK_INPUT_FILTER_KEY",
                 ue = "rweb/grok/SET_GROK_INPUT_FOCUSED",
                 de = "rweb/grok/QUERY_TYPING",
                 pe = "rweb/grok/ADD_BANNER_MESSAGE",
@@ -128,7 +128,7 @@
                 Se = "rweb/grok/SET_IS_PAST_THINKING_TRACE";
         },
         389071: (e, t, s) => {
-            s.d(t, { BU: () => G, Es: () => T, F0: () => ne, F9: () => B, Io: () => U, JE: () => K, JU: () => w, Ki: () => J, NV: () => D, OR: () => P, Pl: () => ae, Pt: () => k, SJ: () => re, SL: () => Q, Tu: () => F, UM: () => O, Uo: () => ie, V$: () => M, X4: () => te, YJ: () => V, bD: () => h, bv: () => L, en: () => se, f: () => _, hi: () => H, j1: () => z, jP: () => q, lo: () => oe, pZ: () => x, t5: () => W, uF: () => Y, uX: () => N, uz: () => X, v0: () => $, vf: () => j, x1: () => ee, zO: () => b });
+            s.d(t, { BU: () => K, Es: () => T, F0: () => se, F9: () => j, JE: () => D, JU: () => w, Ki: () => q, NV: () => M, OR: () => L, Pl: () => oe, Pt: () => U, SJ: () => ne, SL: () => F, Tu: () => H, UM: () => O, Uo: () => ae, V$: () => P, X4: () => ee, YJ: () => Z, bD: () => h, bv: () => k, en: () => te, f: () => _, hi: () => G, j1: () => B, jP: () => X, lo: () => re, ni: () => J, pZ: () => Q, t5: () => V, uF: () => x, uX: () => N, uz: () => $, v0: () => z, vf: () => W, zO: () => b });
             s(136728), s(571372), s(574858);
             var n = s(726426),
                 r = s.n(n),
@@ -147,7 +147,7 @@
                 S = () => ({ messageIds: [], messages: {}, model: void 0, mode: g, currentResponse: void 0, alternativeCurrentResponse: void 0, currentQuery: void 0, status: m.Q_.IDLE, abortController: void 0, conversationId: void 0, analysisEntityId: void 0, inputPrefill: { text: "", attachments: [] }, fetchConversationIdStatus: p.ZP.NONE, fetchConversationIdError: "", webResults: [], citedWebResults: [], intermediateImageResults: [], promptSource: "", cardAttachments: [], experimentData: { experiments: [], usingExperiment: !1 } }),
                 I = r()(),
                 y = "PROMPT_CONVERSATION_KEY",
-                f = { conversations: { [I]: S(), [y]: S() }, conversationHistory: { items: [] }, pinnedConversations: { items: [] }, pinnedConversationsIdMap: {}, mediaHistory: { items: [], status: p.ZP.NONE }, conversationList: [I, y], currentConversation: I, fetchConversationStatus: p.ZP.NONE, fetchPinnedConversationsStatus: p.ZP.NONE, fetchHistoryStatus: p.ZP.NONE, fetchHomeStatus: p.ZP.NONE, modelOptions: [], selectedModel: void 0, prompts: [], version: "", accessRestrictedReasons: [], freeAcessEnabled: !1, preferredPrompts: [], layout: null, grokInput: { selectedGrokModeButton: null, focused: !1, advancedSettings: null } },
+                f = { conversations: { [I]: S(), [y]: S() }, conversationHistory: { items: [] }, pinnedConversations: { items: [] }, pinnedConversationsIdMap: {}, mediaHistory: { items: [], status: p.ZP.NONE }, conversationList: [I, y], currentConversation: I, fetchConversationStatus: p.ZP.NONE, fetchPinnedConversationsStatus: p.ZP.NONE, fetchHistoryStatus: p.ZP.NONE, fetchHomeStatus: p.ZP.NONE, modelOptions: [], selectedModel: void 0, prompts: [], version: "", accessRestrictedReasons: [], freeAcessEnabled: !1, preferredPrompts: [], layout: null, grokInput: { filterKey: null, focused: !1, advancedSettings: null } },
                 C = (e) => `${e.length}`;
             function _({ conversationKey: e }) {
                 function t(t) {
@@ -633,66 +633,63 @@
                 return e[m.Yf].grokInput;
             }
             function U(e) {
-                return e[m.Yf].preferredPrompts;
-            }
-            function k(e) {
                 return e[m.Yf].fetchHomeStatus;
             }
-            function L(e) {
+            function k(e) {
                 return e[m.Yf].conversationHistory.items;
             }
-            function P(e) {
+            function L(e) {
                 return e[m.Yf].pinnedConversations.items;
             }
-            function M(e) {
+            function P(e) {
                 return e[m.Yf].conversationHistory.cursor;
             }
-            function D(e) {
+            function M(e) {
                 return e[m.Yf].pinnedConversations.cursor;
+            }
+            function D(e) {
+                return e[m.Yf].fetchHistoryStatus;
             }
             function K(e) {
                 return e[m.Yf].fetchHistoryStatus;
             }
             function G(e) {
-                return e[m.Yf].fetchHistoryStatus;
-            }
-            function H(e) {
                 return e[m.Yf].mediaHistory.status;
             }
-            function F(e) {
+            function H(e) {
                 return e[m.Yf].mediaHistory.cursor;
             }
-            function Q(e) {
+            function F(e) {
                 return e[m.Yf].mediaHistory.items;
             }
-            function x(e) {
+            function Q(e) {
                 return e[m.Yf].accessRestrictedReasons;
             }
-            function Y(e) {
+            function x(e) {
                 return e[m.Yf].freeAcessEnabled;
             }
-            function Z(e) {
+            function Y(e) {
                 const t = (function (e) {
                     return e[m.Yf].conversationList[0];
                 })(e);
                 return h(t);
             }
-            function V(e, t) {
-                return t ? h(t) : Z(e);
+            function Z(e, t) {
+                return t ? h(t) : Y(e);
             }
-            function W(e) {
+            function V(e) {
                 return e[m.Yf].version;
             }
-            function j(e) {
+            function W(e) {
                 return e[m.Yf].modelOptions;
             }
-            function B(e) {
+            function j(e) {
                 const t = e[m.Yf].modelOptions,
                     s = e[m.Yf].selectedModel,
                     n = !!t.find((e) => e.id === s);
                 return (s && n ? s : t[0]?.id) ?? void 0;
             }
-            function z(e, t) {
+            function B(e, t) {
                 if (c.ZP.isTwitterApp()) {
                     const s = window.webkit?.messageHandlers?.grokWebviewEventMessageHandler;
                     if (s) {
@@ -702,40 +699,40 @@
                 }
                 return { type: m.WK, payload: e };
             }
-            function $(e) {
+            function z(e) {
                 return { type: m.BA, payload: e };
             }
-            function X(e) {
+            function $(e) {
                 return { type: m.Jt, payload: e };
             }
-            function q(e) {
+            function X(e) {
                 return { type: m.wG, payload: e };
             }
-            function J(e) {
+            function q(e) {
                 return { type: m.$t, payload: e };
             }
-            function ee(e) {
-                return { type: m.li, payload: e };
+            function J(e) {
+                return { type: m._i, payload: e };
             }
-            function te(e) {
+            function ee(e) {
                 return { type: m.z2, payload: e };
             }
-            function se(e) {
+            function te(e) {
                 return e[m.Yf].grokInput.advancedSettings;
             }
-            function ne(e) {
+            function se(e) {
                 return { type: m.j$, payload: e };
             }
-            function re(e) {
+            function ne(e) {
                 return { type: m.Yb, payload: e };
             }
-            function oe(e, t) {
+            function re(e, t) {
                 return { type: m.vi, payload: { conversationId: e, title: t } };
             }
-            function ae(e) {
+            function oe(e) {
                 return { type: m.dw, payload: { mediaId: e } };
             }
-            function ie(e, t) {
+            function ae(e, t) {
                 return { type: m.Qh, payload: { conversationId: e, inputPrefill: t } };
             }
             d.Z.register(
@@ -753,8 +750,8 @@
                                 const s = e.conversationHistory.items.map((e) => (e.grokConversation.rest_id === t.payload.conversationId ? { ...e, title: t.payload.title } : e));
                                 return { ...e, pinnedConversations: { ...e.pinnedConversations, items: e.pinnedConversations.items.map((e) => (e.grokConversation.rest_id === t.payload.conversationId ? { ...e, title: t.payload.title } : e)) }, conversationHistory: { ...e.conversationHistory, items: s } };
                             }
-                            case m.li:
-                                return { ...e, grokInput: { ...e.grokInput, selectedGrokModeButton: t.payload } };
+                            case m._i:
+                                return { ...e, grokInput: { ...e.grokInput, filterKey: t.payload } };
                             case m.z2:
                                 return { ...e, grokInput: { ...e.grokInput, focused: t.payload } };
                             case m.j$:
@@ -857,7 +854,7 @@
                 () => (e, t, s) =>
                     Promise.resolve().then(() => {
                         const { featureSwitches: n } = s,
-                            r = V(t()),
+                            r = Z(t()),
                             o = n.getStringValue("subscriptions_inapp_grok_default_mode");
                         e(r.setMode("fun" === o ? m.IK.FUN : m.IK.REGULAR));
                     }),
@@ -904,4 +901,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.GrokDrawer-bfd49e49.73787d2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.GrokDrawer-bfd49e49.4345857a.js.map

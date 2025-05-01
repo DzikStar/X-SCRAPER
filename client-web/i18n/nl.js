@@ -4162,6 +4162,8 @@
                 a("e9b6d404", "Tot welke zoektools moet Grok toegang hebben?"),
                 a("h15dce2e", "Geavanceerde instellingen"),
                 a("ff9dc268", "Prompt bewerken"),
+                a("acb2baa0", "Create Images"),
+                a("h30fd372", "Try Voice Mode"),
                 a("e9fcdd0c", "Vraag Grok om het web agressief te doorzoeken"),
                 a("fc4e8aba", "Vraag Grok om stap voor stap te redeneren"),
                 a("e4ae6abe", "Vraag Grok om je afbeelding te transformeren"),
@@ -4331,41 +4333,16 @@
                 a("g01599b6", "Antwoord 1"),
                 a("e02694e0", "Antwoord 2"),
                 a("h6867fcc", "Ik vind dit antwoord beter"),
-                a("b2175228", "Grok voor Android is er"),
-                a("d2d8650c", "Krijg de beste Grok-ervaring in onze nieuwe aparte app"),
-                a("ia5bef3e", "Hoe kan ik je vandaag helpen?"),
-                a("ge683598", "Vraag wat je maar wil aan Grok ..."),
-                a("fef25c88", "Probeer Grok nu gratis uit"),
-                a("fb172aa8", "Een gratis niveau van Grok is nu beschikbaar in jouw regio. Chat, genereer afbeeldingen en analyseer foto's. Er gelden beperkingen."),
-                a("d7af4f40", "Genereer een afbeelding van een sterrenstelsel"),
-                a("gcb6c0be", "Grok kan fouten maken. Controleer de output."),
-                a("cb88fd82", "Je gebruikt een gratis versie van Grok."),
-                a("g27a5314", "Voeg een telefoonnummer toe aan je account om Grok te gebruiken."),
-                a("bdd84568", "Je account is te nieuw om Grok te gebruiken. Probeer het later opnieuw."),
-                a("a9109a94", "Een Solarpunk-dorp"),
-                a("g986f7a4", "Genereer een afbeelding van een Solarpunk-dorp"),
-                a("ad685264", "Mount Fuji"),
-                a("hdb08284", "Maak een anime-afbeelding van Mount Fuji"),
-                a("a986ae84", "Een vliegende kat"),
-                a("a14b556a", "Genereer een afbeelding van een vliegende kat"),
-                a("gc16b670", "Een robot in een veld vol bloemen"),
-                a("d5b8fa44", "Genereer een afbeelding van een robot in een veld vol bloemen"),
-                a("da196ff6", "Astronaut op Mars"),
-                a("ae3979cc", "Maak een portret van een astronaut op Mars"),
-                a("a682460e", "Een snelle roadster"),
-                a("e03e5514", "Maak een afbeelding met bewegingsonscherpte van een Tesla-roadster die door Shinjuku rijdt"),
-                a("e68eac68", "Het Noorderlicht bewonderen"),
-                a("hc6e6754", "Maak een afbeelding van iemand die het noorderlicht bewondert"),
-                a("cf59f9f6", "Help me een sollicitatiebrief schrijven"),
-                a("cd9aeac8", "Wat zijn de headlines van vandaag"),
-                a("acf2f0be", "Beveel een RPG-fantasygame aan"),
-                a("b9bd12e2", "Los het Two Sum-probleem op in Python"),
+                a("d07488a6", "Get the Android app"),
+                a("d9cfe70c", "Access advanced Grok features"),
                 a("hf9afab0", "Schakel DeepSearch in om het internet en X te scannen, informatie te analyseren en gedetailleerde, goed onderbouwde antwoorden te geven met snel, agentic zoeken."),
                 a("ef3b3f04", "Schakel Denk in om ons redeneermodel te gebruiken. Dit is de beste optie voor wiskunde, wetenschap en codering. Je kan Grok ook vragen 'Denk harder na' over elke vraag waarvoor je wat meer denkkracht nodig hebt. "),
                 a("b43636b8", "Nieuw: Grok 3"),
                 a("j376298c", "Grok 3 komt met twee nieuwe modi voor interactie met ons krachtigste model: DeepSearch en Denk."),
                 a("e3584f8e", "Wat zijn de 10 meest succesvolle strategieën voor het handelen in opties die worden gebruikt door hedgefondsen?"),
                 a("d91b7b8a", "Wat zou het kosten om een universiteit te bouwen in 1885?"),
+                a("ia5bef3e", "Hoe kan ik je vandaag helpen?"),
+                a("ebea5880", "Recent Conversations"),
                 a("e13591c0", "Voorbeeld van een Grok-gesprek"),
                 a("c27ca452", "Abonnees van Premium+ kunnen op X nu Grok gebruiken, onze meest geavanceerde AI."),
                 a("b6abc25a", "Nieuw: Grok 2"),
@@ -4909,8 +4886,8 @@
                 a("ff95a9cc", "Video-ID"),
                 a("a97e358e", "Videolink"),
                 a("e10e8b46", "Alleen video's van de afgelopen 100 dagen worden getoond."),
-                a("ba37f6da", "Video-overzicht");
-            a("f19846b2", "Videominiatuur"),
+                a("ba37f6da", "Video-overzicht"),
+                a("f19846b2", "Videominiatuur"),
                 a("ccd6f4a8", "Videotitel"),
                 a("c8410542", "Het aantal keer dat je video is bekeken"),
                 a("a532072a", "Kijkers"),
@@ -4932,8 +4909,8 @@
                 a("f2f463ea", "ai -start-up"),
                 a("a10a357e", "bevat 'ai' en heeft minimaal 50 vind-ik-leuks"),
                 a("ca8ed1e8", "ai min_faves:50"),
-                a("i945a3f2", "bevat 'ai' en een URL met daarin het woord 'grok'"),
-                a("a9348088", "ai url:grok"),
+                a("i945a3f2", "bevat 'ai' en een URL met daarin het woord 'grok'");
+            a("a9348088", "ai url:grok"),
                 a("b5c3cdbc", "bevat vermelding van account 'grok' van X"),
                 a("e2634592", "@grok"),
                 a("i88ba038", "Meldingen uitgeschakeld"),
@@ -5867,10 +5844,10 @@
                 a("ae58026a", "Open een Branded vind-ik-leuk-.json-bestand voor een voorvertoning"),
                 a("hd0bc1eb", function (e) {
                     return e.name + " is live";
-                });
-            a("bea1f26b", function (e) {
-                return e.name + " was live";
-            }),
+                }),
+                a("bea1f26b", function (e) {
+                    return e.name + " was live";
+                }),
                 a("ab3ee97f", function (e) {
                     return e.screenName + " is niet live";
                 }),
@@ -5898,8 +5875,8 @@
                 a("edef4c82", "Rechtstreeks posts plaatsen in een Community"),
                 a("a7640df6", "Je posts worden gedeeld met Community-leden en met je volgers."),
                 a("h3bb8068", "Krijg hulp wanneer dat nodig is"),
-                a("a709f8f8", "Beheerders en moderators helpen Community's te beheren en zorgen dat gesprekken goed verlopen."),
-                a("c8d33380", "Nieuwe items"),
+                a("a709f8f8", "Beheerders en moderators helpen Community's te beheren en zorgen dat gesprekken goed verlopen.");
+            a("c8d33380", "Nieuwe items"),
                 a("cb6adb10", "Community's ontdekken"),
                 a("df362964", "Find Communities"),
                 a("dfd5031f", function (e) {
@@ -6873,8 +6850,8 @@
                 a("c4fd68da", "Zorg voor een ervaring op maat"),
                 a("c0195168", "Wijzig je app-pictogram en navigatiemogelijkheden"),
                 a("b6b5dc94", "Word geverifieerd"),
-                a("b06db848", "Onderscheid je van anderen op het platform");
-            a("e3e3a97c", "Verdien een deel van de inkomsten van je posts"),
+                a("b06db848", "Onderscheid je van anderen op het platform"),
+                a("e3e3a97c", "Verdien een deel van de inkomsten van je posts"),
                 a("f15bc24e", "Verhoogde Grok-limieten"),
                 a("c4666e1c", "Meer gebruik van Grok 3, ons nieuwste model"),
                 a("he74ae7a", "De hoogste Grok-gebruikslimieten"),
@@ -6896,8 +6873,8 @@
                 a("c3148608", "Krijg sneller ondersteuning wanneer je hulp nodig hebt"),
                 a("b485ca6e", "Tabblad Hoogtepunten"),
                 a("d438955e", "Zet je topposts in de schijnwerpers"),
-                a("f373a352", "Versleutelde privéberichten"),
-                a("g7405aca", "Chat veilig met end-to-end versleuteling"),
+                a("f373a352", "Versleutelde privéberichten");
+            a("g7405aca", "Chat veilig met end-to-end versleuteling"),
                 a("j659fa0c", "Het beste van Grok 3"),
                 a("ibff5694", "Ontgrendel de hoogste gebruikslimieten, DeepSearch en Denk, plus vroege toegang tot nieuwe functies"),
                 a("i824f4da", "Minder advertenties"),
@@ -7849,7 +7826,34 @@
                 a("ddfd6718", "Betaling mislukt"),
                 a("i90ea7d2", "Werk je factureringsgegevens zo snel mogelijk bij om je voordelen te behouden."),
                 a("a62359e6", "Instellingen Geverifieerde Organisaties"),
-                a("ge221b7c", "Upgrade je abonnement op Geverifieerde Organisaties om toegang te krijgen tot gelieerde accounts en meer advertentietegoed.");
+                a("ge221b7c", "Upgrade je abonnement op Geverifieerde Organisaties om toegang te krijgen tot gelieerde accounts en meer advertentietegoed."),
+                a("i4dccc18", "Facturering"),
+                a("ec3cd6e4", "Beheer je betalingsmethode, werk factureringsgegevens bij en bekijk je facturen."),
+                a("dac61c3c", "Accountinstellingen"),
+                a("b6b5fd66", "Beheer je account van X, waaronder het wijzigen van je gebruikersnaam en wachtwoord."),
+                a("hb9c4a1c", "Vragen, meldingen van bugs en feedback"),
+                a("c674f5b4", "Factuurbetalingen instellen"),
+                a("i8237e66", "Schakel over van creditcardbetalingen naar facturering via bankoverschrijving."),
+                a("hebd348a", "Stel in hoe advertenties worden gebruikt om vacatures uit te lichten via de Hiring-portal."),
+                a("ib5e6f90", "Vacatures uitlichten"),
+                a("id720215", "Hiring"),
+                a("dd59f146", "Advertentieaccount voor het uitlichten van vacatures"),
+                a("e7e36818", "Advertentieaccounts komen in aanmerking voor het uitlichten van vacatures als ze volledig zijn ingesteld, inclusief een financieringsbron."),
+                a("c28566e0", "Advertentieaccount"),
+                a("c80160d3", "Adverteren"),
+                a("ff0edac0", "Weet je zeker dat je je abonnement wil opzeggen?"),
+                a("h2ac0348", "Nee, ga terug"),
+                a("dbf9667e", "Ik weet het zeker"),
+                a("j7592572", "U-bocht"),
+                a("ee778942", "Verkeerslichten"),
+                a("fdd57981", function (e) {
+                    return "We willen je graag eenmalig een gratis advertentietegoed van USD " + e.totalAmount + " aanbieden.";
+                }),
+                a("i032a231", function (e) {
+                    return "Ik blijf en claim mijn advertentietegoed van " + e.totalAmount;
+                }),
+                a("hd7d278c", "Nee, bedankt"),
+                a("jf8a0dea", "Geweldig! Je nieuwe gratis advertentietegoed verschijnt in je account bij je volgende factureringscyclus.");
             function i(e, n) {
                 for (var t = 0; t < n.length; t++) {
                     var a = n[t];
@@ -7888,34 +7892,7 @@
                     o(e, n)
                 );
             }
-            a("i4dccc18", "Facturering"),
-                a("ec3cd6e4", "Beheer je betalingsmethode, werk factureringsgegevens bij en bekijk je facturen."),
-                a("dac61c3c", "Accountinstellingen"),
-                a("b6b5fd66", "Beheer je account van X, waaronder het wijzigen van je gebruikersnaam en wachtwoord."),
-                a("hb9c4a1c", "Vragen, meldingen van bugs en feedback"),
-                a("c674f5b4", "Factuurbetalingen instellen"),
-                a("i8237e66", "Schakel over van creditcardbetalingen naar facturering via bankoverschrijving."),
-                a("hebd348a", "Stel in hoe advertenties worden gebruikt om vacatures uit te lichten via de Hiring-portal."),
-                a("ib5e6f90", "Vacatures uitlichten"),
-                a("id720215", "Hiring"),
-                a("dd59f146", "Advertentieaccount voor het uitlichten van vacatures"),
-                a("e7e36818", "Advertentieaccounts komen in aanmerking voor het uitlichten van vacatures als ze volledig zijn ingesteld, inclusief een financieringsbron."),
-                a("c28566e0", "Advertentieaccount"),
-                a("c80160d3", "Adverteren"),
-                a("ff0edac0", "Weet je zeker dat je je abonnement wil opzeggen?"),
-                a("h2ac0348", "Nee, ga terug"),
-                a("dbf9667e", "Ik weet het zeker"),
-                a("j7592572", "U-bocht"),
-                a("ee778942", "Verkeerslichten"),
-                a("fdd57981", function (e) {
-                    return "We willen je graag eenmalig een gratis advertentietegoed van USD " + e.totalAmount + " aanbieden.";
-                }),
-                a("i032a231", function (e) {
-                    return "Ik blijf en claim mijn advertentietegoed van " + e.totalAmount;
-                }),
-                a("hd7d278c", "Nee, bedankt"),
-                a("jf8a0dea", "Geweldig! Je nieuwe gratis advertentietegoed verschijnt in je account bij je volgende factureringscyclus."),
-                a("ebbb3154", "Sluiten en teruggaan naar X"),
+            a("ebbb3154", "Sluiten en teruggaan naar X"),
                 a("j1f68dda", "Laatste stap: weet je zeker dat je wil opzeggen?"),
                 a("c9c3464c", "Opzeggen abonnement in behandeling"),
                 a("dd3a293c", "Je abonnement op Geverifieerde Organisaties is beëindigd."),
@@ -8893,8 +8870,8 @@
                 a("ccd32094", "Nu"),
                 a("abfcce0d", function (e) {
                     return e.amountOfTime + " geleden";
-                });
-            a("ae408b76", "Je hebt deze post opnieuw geplaatst"),
+                }),
+                a("ae408b76", "Je hebt deze post opnieuw geplaatst"),
                 a("j355f008", "Vastgemaakte post"),
                 a("habf9678", "Vastgemaakt door auteur"),
                 a("db0798ed", function (e) {
@@ -8950,10 +8927,10 @@
                 }),
                 a("d925a4f9", function (e) {
                     return e.formattedCount + " minu" + r(e.count, "ut", "ten") + " resterend";
-                }),
-                a("ib15cddb", function (e) {
-                    return e.formattedCount + " uur resterend";
-                }),
+                });
+            a("ib15cddb", function (e) {
+                return e.formattedCount + " uur resterend";
+            }),
                 a("db9ed19f", function (e) {
                     return e.formattedCount + " dag" + r(e.count, "", "en") + " resterend";
                 }),
@@ -13219,4 +13196,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.2c8d3dba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.33ed244a.js.map

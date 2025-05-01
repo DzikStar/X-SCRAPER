@@ -25,7 +25,7 @@
                     y = "SEARCH" === c?.mode || "DEEPERSEARCH" === c?.mode ? l.default : i.default,
                     v = (0, p.bD)(e),
                     w = n.useMemo(() => (t ? c.mobile : c.web), [t, c]),
-                    { isReasoningEnabled: E, isResearchEnabled: x, selectDeepsearchMode: Z, selectReasoningMode: D, setDeepersearchAdvancedSettings: M, setDeepsearchAdvancedSettings: S } = (0, f.w)(),
+                    { isReasoningEnabled: E, isResearchEnabled: x, selectDeepsearchFilterKey: Z, selectReasoningFilterKey: D, setDeepersearchAdvancedSettings: M, setDeepsearchAdvancedSettings: S } = (0, f.w)(),
                     P = (0, u.v9)(v.selectLastHumanMessage);
                 n.useEffect(() => {
                     _(!0);
@@ -183,23 +183,23 @@
                         },
                         [k, _?.agentChatItemId, u, c, f],
                     ),
-                    [F, G] = n.useState(!1),
-                    [K, H] = n.useState(!1),
+                    [F, K] = n.useState(!1),
+                    [G, H] = n.useState(!1),
                     B = n.useCallback(() => {
                         r.scribe({ action: "click", component: "thumbs_up", data: { event_info: w } }), O("Like");
                     }, [r, O, w]),
                     U = n.useCallback(() => {
-                        r.scribe({ action: "click", component: "thumbs_down", data: { event_info: w } }), O("Dislike"), G(!0);
+                        r.scribe({ action: "click", component: "thumbs_down", data: { event_info: w } }), O("Dislike"), K(!0);
                     }, [r, O, w]),
                     j = n.useCallback(() => {
-                        k && _?.agentChatItemId && (r.scribe({ action: "click", component: "feedback_comment", data: { event_info: w } }), H(!0), G(!1));
+                        k && _?.agentChatItemId && (r.scribe({ action: "click", component: "feedback_comment", data: { event_info: w } }), H(!0), K(!1));
                     }, [r, k, _, w]),
                     V = n.useCallback(
                         (e) => {
                             k &&
                                 _?.agentChatItemId &&
                                 (r.scribe({ action: "click", component: "feedback_label", data: { event_info: w } }),
-                                G(!1),
+                                K(!1),
                                 f({
                                     variables: { contextualFeedback: { label_id: e }, conversationId: k, conversationItemId: _.agentChatItemId ?? "", modelVersion: u },
                                     onCompleted: (e) => {
@@ -219,13 +219,13 @@
                               n.createElement(S.Z, {
                                   feedbackLabels: _.feedbackLabels,
                                   onClose: () => {
-                                      G(!1);
+                                      K(!1);
                                   },
                                   onSelect: V,
                                   onSelectOtherOption: j,
                               }),
                           y &&
-                              K &&
+                              G &&
                               n.createElement(R.Z, {
                                   conversationId: k,
                                   conversationItemId: _.agentChatItemId,
@@ -239,8 +239,8 @@
             }
             const L = s.default.create((e) => ({ container: { flexDirection: "row", gap: e.spaces.space8 }, noGap: { gap: 0 } }));
             var F = a(615455),
-                G = a(799027);
-            function K({ memoryReferences: e }) {
+                K = a(799027);
+            function G({ memoryReferences: e }) {
                 const [t, a] = n.useState(!1),
                     o = n.useCallback(() => {
                         a(!0);
@@ -248,7 +248,7 @@
                     s = n.useCallback(() => {
                         a(!1);
                     }, []);
-                return n.createElement(n.Fragment, null, n.createElement(I.Z, { icon: n.createElement(F.default, null), label: G.i, onPress: o }), t && n.createElement(G.Z, { memoryReferences: e, onDrawerDismiss: s }));
+                return n.createElement(n.Fragment, null, n.createElement(I.Z, { icon: n.createElement(F.default, null), label: K.i, onPress: o }), t && n.createElement(K.Z, { memoryReferences: e, onDrawerDismiss: s }));
             }
             var H = a(807896),
                 B = (a(136728), a(797553)),
@@ -406,10 +406,10 @@
                     x = k.fileAttachments && k.fileAttachments.length > 0 && k.fileAttachments.every((e) => e.mimeType.startsWith("image")),
                     { mediaIds: Z, mediaUrls: D } = (0, m.VU)(k),
                     M = k.memoryReferences && k.memoryReferences.length;
-                return n.createElement(o.Z, { style: Ee.expandedDrawer }, n.createElement(o.Z, { style: [Ee.expandedDrawerLeft, E ? Ee.smallerGap : null] }, r ? n.createElement(oe, { analysisEntityId: e, conversationKey: t, hasImages: !!k.fileAttachments?.length, hasSearch: !!k.webResults?.length, imageGenerationCount: I, promptSource: b, userChatItemId: k.userChatItemId }) : null, !r || !k.message || k.isDeleted || w || x ? null : n.createElement(v, { text: k.message, textContainer: f }), k.isDeleted ? null : n.createElement(_e, { allMediaIds: Z, allMediaUrls: D, conversationKey: t, messageId: r }), M && n.createElement(K, { memoryReferences: k.memoryReferences || [] }), k.isDeleted ? null : n.createElement(O, { allMediaIds: Z, allMediaUrls: D, conversationKey: t, messageId: r }), !!a && a));
+                return n.createElement(o.Z, { style: Ee.expandedDrawer }, n.createElement(o.Z, { style: [Ee.expandedDrawerLeft, E ? Ee.smallerGap : null] }, r ? n.createElement(oe, { analysisEntityId: e, conversationKey: t, hasImages: !!k.fileAttachments?.length, hasSearch: !!k.webResults?.length, imageGenerationCount: I, promptSource: b, userChatItemId: k.userChatItemId }) : null, !r || !k.message || k.isDeleted || w || x ? null : n.createElement(v, { text: k.message, textContainer: f }), k.isDeleted ? null : n.createElement(_e, { allMediaIds: Z, allMediaUrls: D, conversationKey: t, messageId: r }), M && n.createElement(G, { memoryReferences: k.memoryReferences || [] }), k.isDeleted ? null : n.createElement(O, { allMediaIds: Z, allMediaUrls: D, conversationKey: t, messageId: r }), !!a && a));
             }
             const Ee = s.default.create((e) => ({ expandedDrawer: { flexDirection: "row", justifyContent: "space-between", width: "100%", alignItems: "center" }, expandedDrawerLeft: { flexDirection: "row", alignItems: "center" }, expandedDrawerRight: { flexDirection: "row", gap: e.spaces.space16, alignItems: "center" }, smallerGap: { gap: e.spaces.space8 } }));
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-1d830d6b.3ce3e05a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-1d830d6b.c02bceea.js.map

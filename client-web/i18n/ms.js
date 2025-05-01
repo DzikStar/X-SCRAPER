@@ -4161,6 +4161,8 @@
                 i("e9b6d404", "Alatan carian manakah yang sepatutnya boleh diakses oleh Grok?"),
                 i("h15dce2e", "Tetapan Lanjutan"),
                 i("ff9dc268", "Edit gesaan"),
+                i("acb2baa0", "Create Images"),
+                i("h30fd372", "Try Voice Mode"),
                 i("e9fcdd0c", "Tanya Grok untuk membuat carian di web secara agresif"),
                 i("fc4e8aba", "Tanya Grok untuk membuat pertimbangan langkah demi langkah"),
                 i("e4ae6abe", "Minta Grok ubah imej anda"),
@@ -4330,41 +4332,16 @@
                 i("g01599b6", "Respons 1"),
                 i("e02694e0", "Respons 2"),
                 i("h6867fcc", "Saya suka respons ini"),
-                i("b2175228", "Grok untuk Android telah tiba"),
-                i("d2d8650c", "Dapatkan pengalaman Grok yang terbaik dalam aplikasi kendiri baharu kami"),
-                i("ia5bef3e", "Apa yang boleh saya bantu anda hari ini?"),
-                i("ge683598", "Tanya Grok apa-apa saja..."),
-                i("fef25c88", "Cuba Grok secara percuma sekarang"),
-                i("fb172aa8", "Tahap Grok yang percuma kini tersedia di rantau anda. Sembang, jana imej, dan analisis foto. Tertakluk pada had."),
-                i("d7af4f40", "Jana imej galaksi"),
-                i("gcb6c0be", "Grok boleh melakukan kesilapan. Sahkan output yang diberikannya."),
-                i("cb88fd82", "Anda sedang menggunakan versi percuma Grok."),
-                i("g27a5314", "Untuk mula menggunakan Grok, tambahkan nombor telefon pada akaun anda."),
-                i("bdd84568", "Akaun anda terlalu baharu untuk menggunakan Grok. Sila cuba lagi kemudian."),
-                i("a9109a94", "Perkampungan solarpunk"),
-                i("g986f7a4", "Janakan imej perkampungan solarpunk"),
-                i("ad685264", "Gunung Fuji"),
-                i("hdb08284", "Buat gambar Gunung Fuji dengan gaya anime"),
-                i("a986ae84", "Kucing terbang"),
-                i("a14b556a", "Janakan imej kucing terbang"),
-                i("gc16b670", "Robot di padang bunga"),
-                i("d5b8fa44", "Janakan imej robot di padang bunga"),
-                i("da196ff6", "Angkasawan di Marikh"),
-                i("ae3979cc", "Buat potret seorang angkasawan di Marikh"),
-                i("a682460e", "Kereta dipandu laju"),
-                i("e03e5514", "Buat gambar kereta Tesla sedang dipandu di Shinjuku dengan pergerakan kabur"),
-                i("e68eac68", "Menikmati aurora"),
-                i("hc6e6754", "Buat gambar seseorang sedang menikmati aurora"),
-                i("cf59f9f6", "Bantu saya tulis surat pengenalan"),
-                i("cd9aeac8", "Beritahu saya berita utama hari ini"),
-                i("acf2f0be", "Syorkan permainan RPG fantasi"),
-                i("b9bd12e2", "Selesaikan masalah Dua Jumlah dalam Python"),
+                i("d07488a6", "Get the Android app"),
+                i("d9cfe70c", "Access advanced Grok features"),
                 i("hf9afab0", "Dayakan DeepSearch untuk mengimbas Internet dan X, menganalisis maklumat, dan menyampaikan jawapan yang terperinci dan kukuh dengan carian yang pantas dan berdikari. "),
                 i("ef3b3f04", 'Dayakan Fikir untuk menggunakan model pertimbangan kami. Ciri ini sangat sesuai untuk bidang matematik, sains dan pengekodan. Anda juga boleh meminta Grok untuk "Fikir dengan lebih mendalam" tentang sebarang pertanyaan yang mungkin mencabar minda. '),
                 i("b43636b8", "Memperkenalkan Grok 3"),
                 i("j376298c", "Grok 3 memperkenalkan dua mod baharu untuk berinteraksi dengan model kami yang paling berkuasa: DeepSearch dan Fikir."),
                 i("e3584f8e", "Apakah 10 strategi perdagangan opsyen yang paling berjaya yang digunakan oleh dana lindung nilai"),
                 i("d91b7b8a", "Berapakah kos untuk membina sebuah universiti pada tahun 1885?"),
+                i("ia5bef3e", "Apa yang boleh saya bantu anda hari ini?"),
+                i("ebea5880", "Recent Conversations"),
                 i("e13591c0", "Contoh perbualan Grok"),
                 i("c27ca452", "Pelanggan Premium kini boleh menggunakan AI kami yang termaju, Grok, di X."),
                 i("b6abc25a", "Memperkenalkan Grok 2"),
@@ -4908,8 +4885,8 @@
                 i("ff95a9cc", "ID Video"),
                 i("a97e358e", "Pautan Video"),
                 i("e10e8b46", "Hanya tunjukkan video daripada 100 hari yang lalu."),
-                i("ba37f6da", "Gambaran keseluruhan video");
-            i("f19846b2", "Lakaran kecil video"),
+                i("ba37f6da", "Gambaran keseluruhan video"),
+                i("f19846b2", "Lakaran kecil video"),
                 i("ccd6f4a8", "Tajuk video"),
                 i("c8410542", "Bilangan kali video anda ditonton."),
                 i("a532072a", "Penonton"),
@@ -4931,8 +4908,8 @@
                 i("f2f463ea", "ai -pemula"),
                 i("a10a357e", 'mengandungi "ai" dan mempunyai sekurang-kurangnya 50 sukaan'),
                 i("ca8ed1e8", "ai min_faves:50"),
-                i("i945a3f2", 'mengandungi "ai" dan URL yang mengandungi perkataan "grok"'),
-                i("a9348088", "ai url:grok"),
+                i("i945a3f2", 'mengandungi "ai" dan URL yang mengandungi perkataan "grok"');
+            i("a9348088", "ai url:grok"),
                 i("b5c3cdbc", 'menyebut akaun X "grok"'),
                 i("e2634592", "@grok"),
                 i("i88ba038", "Makluman Dinyahdayakan"),
@@ -5866,10 +5843,10 @@
                 i("ae58026a", "Buka fail .json Suka Berjenama untuk pratonton"),
                 i("hd0bc1eb", function (a) {
                     return a.name + " sedang bersiaran langsung";
-                });
-            i("bea1f26b", function (a) {
-                return a.name + " telah bersiaran langsung";
-            }),
+                }),
+                i("bea1f26b", function (a) {
+                    return a.name + " telah bersiaran langsung";
+                }),
                 i("ab3ee97f", function (a) {
                     return a.screenName + " tidak bersiaran langsung";
                 }),
@@ -5897,8 +5874,8 @@
                 i("edef4c82", "Buat siaran secara terus kepada Komuniti"),
                 i("a7640df6", "Siaran anda dikongsi dengan ahli Komuniti dan pengikut anda."),
                 i("h3bb8068", "Dapatkan sandaran apabila diperlukan"),
-                i("a709f8f8", "Pentadbir dan moderator membantu dalam mengurus Komuniti dan memastikan perbualan menepati tujuan."),
-                i("c8d33380", "Item baharu"),
+                i("a709f8f8", "Pentadbir dan moderator membantu dalam mengurus Komuniti dan memastikan perbualan menepati tujuan.");
+            i("c8d33380", "Item baharu"),
                 i("cb6adb10", "Temui Komuniti"),
                 i("df362964", "Cari Komuniti"),
                 i("dfd5031f", function (a) {
@@ -6872,8 +6849,8 @@
                 i("c4fd68da", "Sesuaikan pengalaman anda"),
                 i("c0195168", "Ubah pilihan ikon dan navigasi aplikasi anda"),
                 i("b6b5dc94", "Dapatkan pengesahan"),
-                i("b06db848", "Tonjolkan diri pada platform");
-            i("e3e3a97c", "Peroleh sebahagian hasil daripada siaran anda"),
+                i("b06db848", "Tonjolkan diri pada platform"),
+                i("e3e3a97c", "Peroleh sebahagian hasil daripada siaran anda"),
                 i("f15bc24e", "Had Grok yang ditingkatkan"),
                 i("c4666e1c", "Lebih banyak penggunaan Grok 3, model terkini kami"),
                 i("he74ae7a", "Had penggunaan Grok paling tinggi"),
@@ -6895,8 +6872,8 @@
                 i("c3148608", "Dapatkan bantuan dengan lebih pantas apabila anda memerlukan bantuan"),
                 i("b485ca6e", "Tab Sorotan"),
                 i("d438955e", "Tampilkan siaran teratas anda"),
-                i("f373a352", "DM yang disulitkan"),
-                i("g7405aca", "Sembang secara selamat dengan penyulitan hujung ke hujung"),
+                i("f373a352", "DM yang disulitkan");
+            i("g7405aca", "Sembang secara selamat dengan penyulitan hujung ke hujung"),
                 i("j659fa0c", "Yang terbaik daripada Grok 3"),
                 i("ibff5694", "Peroleh had penggunaan yang paling tinggi, DeepSearch & Fikir, serta akses awal kepada ciri baharu"),
                 i("i824f4da", "Iklan yang sedikit"),
@@ -7848,46 +7825,8 @@
                 i("ddfd6718", "Pembayaran Gagal"),
                 i("i90ea7d2", "Sila kemas kini pengebilan anda dengan segera untuk mengekalkan manfaat anda."),
                 i("a62359e6", "Tetapan Organisasi Disahkan"),
-                i("ge221b7c", "Naik taraf langganan Organisasi Disahkan untuk mendapatkan akses kepada ahli gabungan dan lebih banyak kredit iklan.");
-            function u(a, n) {
-                for (var e = 0; e < n.length; e++) {
-                    var i = n[e];
-                    (i.enumerable = i.enumerable || !1),
-                        (i.configurable = !0),
-                        "value" in i && (i.writable = !0),
-                        Object.defineProperty(
-                            a,
-                            ((t = i.key),
-                            (u = void 0),
-                            "symbol" ==
-                            typeof (u = (function (a, n) {
-                                if ("object" != typeof a || null === a) return a;
-                                var e = a[Symbol.toPrimitive];
-                                if (void 0 !== e) {
-                                    var i = e.call(a, n || "default");
-                                    if ("object" != typeof i) return i;
-                                    throw new TypeError("@@toPrimitive must return a primitive value.");
-                                }
-                                return ("string" === n ? String : Number)(a);
-                            })(t, "string"))
-                                ? u
-                                : String(u)),
-                            i,
-                        );
-                }
-                var t, u;
-            }
-            function d(a, n) {
-                return (
-                    (d = Object.setPrototypeOf
-                        ? Object.setPrototypeOf.bind()
-                        : function (a, n) {
-                              return (a.__proto__ = n), a;
-                          }),
-                    d(a, n)
-                );
-            }
-            i("i4dccc18", "Pengebilan"),
+                i("ge221b7c", "Naik taraf langganan Organisasi Disahkan untuk mendapatkan akses kepada ahli gabungan dan lebih banyak kredit iklan."),
+                i("i4dccc18", "Pengebilan"),
                 i("ec3cd6e4", "Uruskan kaedah pembayaran anda, kemas kini maklumat pengebilan, dan semak invois anda."),
                 i("dac61c3c", "Tetapan akaun"),
                 i("b6b5fd66", "Urus akaun X anda termasuk mengubah nama pengguna atau kata laluan anda."),
@@ -7913,8 +7852,46 @@
                     return "Saya akan kekal dan tuntut kredit iklan bernilai " + a.totalAmount;
                 }),
                 i("hd7d278c", "Tidak mahu"),
-                i("jf8a0dea", "Bagus! Iklan kredit percuma baharu anda akan muncul dalam akaun anda pada kitaran pengebilan anda yang seterusnya."),
-                i("ebbb3154", "Tutup dan kembali ke X"),
+                i("jf8a0dea", "Bagus! Iklan kredit percuma baharu anda akan muncul dalam akaun anda pada kitaran pengebilan anda yang seterusnya.");
+            function d(a, n) {
+                for (var e = 0; e < n.length; e++) {
+                    var i = n[e];
+                    (i.enumerable = i.enumerable || !1),
+                        (i.configurable = !0),
+                        "value" in i && (i.writable = !0),
+                        Object.defineProperty(
+                            a,
+                            ((t = i.key),
+                            (d = void 0),
+                            "symbol" ==
+                            typeof (d = (function (a, n) {
+                                if ("object" != typeof a || null === a) return a;
+                                var e = a[Symbol.toPrimitive];
+                                if (void 0 !== e) {
+                                    var i = e.call(a, n || "default");
+                                    if ("object" != typeof i) return i;
+                                    throw new TypeError("@@toPrimitive must return a primitive value.");
+                                }
+                                return ("string" === n ? String : Number)(a);
+                            })(t, "string"))
+                                ? d
+                                : String(d)),
+                            i,
+                        );
+                }
+                var t, d;
+            }
+            function u(a, n) {
+                return (
+                    (u = Object.setPrototypeOf
+                        ? Object.setPrototypeOf.bind()
+                        : function (a, n) {
+                              return (a.__proto__ = n), a;
+                          }),
+                    u(a, n)
+                );
+            }
+            i("ebbb3154", "Tutup dan kembali ke X"),
                 i("j1f68dda", "Langkah terakhir: Adakah anda pasti anda ingin membuat pembatalan?"),
                 i("c9c3464c", "Pembatalan langganan sedang berjalan"),
                 i("dd3a293c", "Langganan Organisasi Disahkan anda telah tamat."),
@@ -8892,8 +8869,8 @@
                 i("ccd32094", "Sekarang"),
                 i("abfcce0d", function (a) {
                     return a.amountOfTime + " yang lalu";
-                });
-            i("ae408b76", "Anda membuat siaran semula"),
+                }),
+                i("ae408b76", "Anda membuat siaran semula"),
                 i("j355f008", "Siaran yang dipinkan"),
                 i("habf9678", "Dipinkan oleh Pengarang"),
                 i("db0798ed", function (a) {
@@ -8949,10 +8926,10 @@
                 }),
                 i("d925a4f9", function (a) {
                     return "Tinggal " + a.formattedCount + " minit";
-                }),
-                i("ib15cddb", function (a) {
-                    return "Tinggal " + a.formattedCount + " jam";
-                }),
+                });
+            i("ib15cddb", function (a) {
+                return "Tinggal " + a.formattedCount + " jam";
+            }),
                 i("db9ed19f", function (a) {
                     return "Tinggal " + a.formattedCount + " hari";
                 }),
@@ -9452,7 +9429,7 @@
                     (e = a),
                     ((n = s).prototype = Object.create(e.prototype)),
                     (n.prototype.constructor = n),
-                    d(n, e),
+                    u(n, e),
                     (s.prototype.render = function () {
                         return r.createElement.apply(r, this[this.props.$i18n].reduce(this.templateReducer, [r.Fragment, null]));
                     }),
@@ -12847,8 +12824,8 @@
                                 };
                             },
                         },
-                    ]) && u(i.prototype, t),
-                    g && u(i, g),
+                    ]) && d(i.prototype, t),
+                    g && d(i, g),
                     Object.defineProperty(i, "prototype", { writable: !1 }),
                     s
                 );
@@ -13204,4 +13181,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.4ea1af9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.b3e780ca.js.map

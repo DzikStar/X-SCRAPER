@@ -4171,6 +4171,8 @@
                 a("e9b6d404", "K jakým vyhledávacím nástrojům by měl mít Grok přístup?"),
                 a("h15dce2e", "Pokročilé nastavení"),
                 a("ff9dc268", "Upravit výzvu"),
+                a("acb2baa0", "Create Images"),
+                a("h30fd372", "Try Voice Mode"),
                 a("e9fcdd0c", "Zeptejte se funkce Grok, jak agresivně prohledat web"),
                 a("fc4e8aba", "Zeptejte se funkce Grok, jak můžete uvažovat krok za krokem"),
                 a("e4ae6abe", "Požádejte Groka, aby upravil váš obrázek"),
@@ -4340,41 +4342,16 @@
                 a("g01599b6", "Odpověď 1"),
                 a("e02694e0", "Odpověď 2"),
                 a("h6867fcc", "Dávám přednost této odpovědi"),
-                a("b2175228", "Grok pro Android je tady"),
-                a("d2d8650c", "Získejte nejlepší zážitek z Grok v naší nové samostatné aplikaci"),
-                a("ia5bef3e", "Jak vám dnes můžu pomoct?"),
-                a("ge683598", "Zeptejte se Groka na něco..."),
-                a("fef25c88", "Nyní si můžete vyzkoušet funkci Grok zdarma"),
-                a("fb172aa8", "Ve vašem regionu je nyní k dispozici bezplatná zkušební verze funkce Grok. Chatujte, generujte obrázky a analyzujte fotografie. Platí omezení."),
-                a("d7af4f40", "Generujte obrázek galaxie"),
-                a("gcb6c0be", "Grok může dělat chyby. Jeho výstupy si ověřte."),
-                a("cb88fd82", "Používáte bezplatnou verzi funkce Grok."),
-                a("g27a5314", "Přidejte ke svému účtu telefonní číslo, abyste mohli začít používat funkci Grok."),
-                a("bdd84568", "Váš účet je na používání funkce Grok příliš nový. Zkuste to znovu později."),
-                a("a9109a94", "Solarpunková vesnice"),
-                a("g986f7a4", "Vytvoř obrázek solarpunkové vesnice"),
-                a("ad685264", "Hora Fuji"),
-                a("hdb08284", "Vytvořte obrázek hory Fuji ve stylu anime"),
-                a("a986ae84", "Letící kočka"),
-                a("a14b556a", "Vytvoř obrázek letící kočky"),
-                a("gc16b670", "Robot na poli s květinami"),
-                a("d5b8fa44", "Vytvoř obrázek robota na poli s květinami"),
-                a("da196ff6", "Astronaut na Marsu"),
-                a("ae3979cc", "Vytvořte portrét astronauta na Marsu"),
-                a("a682460e", "Rychle jedoucí roadster"),
-                a("e03e5514", "Vyfoťte roadster Tesla projíždějící Shinjuku s rozmazáním pohybu"),
-                a("e68eac68", "Obdivování polární záře"),
-                a("hc6e6754", "Vytvořte obrázek někoho, jak obdivuje polární záři"),
-                a("cf59f9f6", "Pomoz mi napsat průvodní dopis"),
-                a("cd9aeac8", "Pověz mi, jaké jsou dnešní titulky"),
-                a("acf2f0be", "Doporuč mi fantasy RPG hru"),
-                a("b9bd12e2", "Vyřeš problém dvou sum v Pythonu"),
+                a("d07488a6", "Get the Android app"),
+                a("d9cfe70c", "Access advanced Grok features"),
                 a("hf9afab0", "Povolte DeepSearch pro skenování internetu a X, analýzu informací a poskytování podrobných, dobře odůvodněných odpovědí s rychlým, agentním vyhledáváním."),
                 a("ef3b3f04", "Povolte funkci Přemýšlet používat náš model uvažování. Je to nejlepší pro oblast matematiky, vědy a kódování. Můžete také požádat Groka, aby „přemýšlel usilovněji“ o jakékoli otázce, která by mohla vyžadovat trochu více mozkové aktivity. "),
                 a("b43636b8", "Představujeme Grok 3"),
                 a("j376298c", "Grok 3 představuje dva nové režimy pro interakci s naším nejvýkonnějším modelem: DeepSearch a Přemýšlet."),
                 a("e3584f8e", "Jakých 10 nejúspěšnějších opčních strategií obchodování používají hedgeové fondy"),
                 a("d91b7b8a", "Kolik by stálo vybudování univerzity v roce 1885?"),
+                a("ia5bef3e", "Jak vám dnes můžu pomoct?"),
+                a("ebea5880", "Recent Conversations"),
                 a("e13591c0", "Příklad konverzace s Grok"),
                 a("c27ca452", "Předplatitelé Premium mohou nyní používat naši nejpokročilejší umělou inteligenci Grok na platformě X."),
                 a("b6abc25a", "Představujeme Grok 2"),
@@ -4918,8 +4895,8 @@
                 a("ff95a9cc", "ID videa"),
                 a("a97e358e", "Odkaz na video"),
                 a("e10e8b46", "Zobrazují se pouze videa za posledních 100 dní."),
-                a("ba37f6da", "Souhrn videa");
-            a("f19846b2", "Miniatura videa"),
+                a("ba37f6da", "Souhrn videa"),
+                a("f19846b2", "Miniatura videa"),
                 a("ccd6f4a8", "Název videa"),
                 a("c8410542", "Počet zobrazení vašeho videa."),
                 a("a532072a", "Diváci"),
@@ -4941,8 +4918,8 @@
                 a("f2f463ea", "ai -startup"),
                 a("a10a357e", "obsahuje „ai“ a má nejméně 50 lajků"),
                 a("ca8ed1e8", "ai min_faves:50"),
-                a("i945a3f2", "obsahuje „ai“ a URL adresu, která obsahuje slovo „grok“"),
-                a("a9348088", "ai url:grok"),
+                a("i945a3f2", "obsahuje „ai“ a URL adresu, která obsahuje slovo „grok“");
+            a("a9348088", "ai url:grok"),
                 a("b5c3cdbc", "zmínění o funkci „grok“ účtu na X"),
                 a("e2634592", "@grok"),
                 a("i88ba038", "Upozornění zakázáno"),
@@ -5876,10 +5853,10 @@
                 a("ae58026a", "Otevřít náhled souboru .json pro značkový lajk"),
                 a("hd0bc1eb", function (e) {
                     return "Uživatel " + e.name + " vysílá živě.";
-                });
-            a("bea1f26b", function (e) {
-                return "Uživatel " + e.name + " vysílal živě.";
-            }),
+                }),
+                a("bea1f26b", function (e) {
+                    return "Uživatel " + e.name + " vysílal živě.";
+                }),
                 a("ab3ee97f", function (e) {
                     return e.screenName + " nevysílá živě";
                 }),
@@ -5907,8 +5884,8 @@
                 a("edef4c82", "Postujte přímo do komunity"),
                 a("a7640df6", "Vaše posty jsou sdíleny s lidmi z komunity a s vašimi sledujícími."),
                 a("h3bb8068", "Vždycky za vámi někdo stojí"),
-                a("a709f8f8", "Správci a moderátoři pomáhají řídit komunity a zajišťovat, aby se konverzace držely tématu."),
-                a("c8d33380", "Nové položky"),
+                a("a709f8f8", "Správci a moderátoři pomáhají řídit komunity a zajišťovat, aby se konverzace držely tématu.");
+            a("c8d33380", "Nové položky"),
                 a("cb6adb10", "Objevte komunity"),
                 a("df362964", "Najít komunity"),
                 a("dfd5031f", function (e) {
@@ -6882,8 +6859,8 @@
                 a("c4fd68da", "Přizpůsobte si uživatelské prostředí"),
                 a("c0195168", "Změňte ikonu aplikace a možnosti navigace"),
                 a("b6b5dc94", "Nechte se ověřit"),
-                a("b06db848", "Odlište se od ostatních na platformě");
-            a("e3e3a97c", "Získejte podíl z příjmů ze svých postů"),
+                a("b06db848", "Odlište se od ostatních na platformě"),
+                a("e3e3a97c", "Získejte podíl z příjmů ze svých postů"),
                 a("f15bc24e", "Zvýšené limity funkce Grok"),
                 a("c4666e1c", "Větší využití funkce Grok 3, našeho nejnovějšího modelu "),
                 a("he74ae7a", "Omezení nejvyššího počtu použití funkce Grok"),
@@ -6905,8 +6882,8 @@
                 a("c3148608", "Získejte rychlejší pomoc, když ji potřebujete"),
                 a("b485ca6e", "Karta Nejzajímavější"),
                 a("d438955e", "Předveďte své nejlepší posty"),
-                a("f373a352", "Zašifrované SZ"),
-                a("g7405aca", "Chatujte bezpečně pomocí kompletního šifrování"),
+                a("f373a352", "Zašifrované SZ");
+            a("g7405aca", "Chatujte bezpečně pomocí kompletního šifrování"),
                 a("j659fa0c", "To nejlepší z funkce Grok 3"),
                 a("ibff5694", "Odemkněte omezení nejvyššího počtu použití, funkce DeepSearch a Přemýšlet a brzký přístup k novým funkcím"),
                 a("i824f4da", "Méně reklam"),
@@ -7858,7 +7835,34 @@
                 a("ddfd6718", "Platba selhala"),
                 a("i90ea7d2", "Urychleně aktualizujte svoje vyúčtování, abyste si zachovali výhody."),
                 a("a62359e6", "Nastavení Ověřených organizací"),
-                a("ge221b7c", "Upgradujte předplatné ověřené organizace a získejte přístup k partnerským účtům a většímu množství reklamních kreditů.");
+                a("ge221b7c", "Upgradujte předplatné ověřené organizace a získejte přístup k partnerským účtům a většímu množství reklamních kreditů."),
+                a("i4dccc18", "Vyúčtování"),
+                a("ec3cd6e4", "Spravujte svůj způsob platby, aktualizujte fakturační údaje a kontrolujte své faktury."),
+                a("dac61c3c", "Nastavení účtu"),
+                a("b6b5fd66", "Spravujte svůj účet X včetně změny uživatelského jména nebo hesla."),
+                a("hb9c4a1c", "Otázky, zprávy o chybách a zpětná vazba"),
+                a("c674f5b4", "Nastavení plateb faktur"),
+                a("i8237e66", "Přejděte z plateb kartou na fakturaci bankovním převodem."),
+                a("hebd348a", "Nakonfigurujte, jak se reklamy používají k propagaci pracovních pozic z portálu Nábor."),
+                a("ib5e6f90", "Propagace pracovní pozice"),
+                a("id720215", "Nábor"),
+                a("dd59f146", "Reklamní účet pro propagaci pracovní pozice"),
+                a("e7e36818", "Reklamní účty jsou způsobilé pro propagaci pracovní pozice, pokud jsou plně vybaveny zdrojem financování."),
+                a("c28566e0", "Reklamní účet"),
+                a("c80160d3", "Reklama"),
+                a("ff0edac0", "Opravdu chcete zrušit předplatné?"),
+                a("h2ac0348", "Ne, chci se vrátit"),
+                a("dbf9667e", "Ano"),
+                a("j7592572", "Obrat do protisměru"),
+                a("ee778942", "Semafor"),
+                a("fdd57981", function (e) {
+                    return "Rádi bychom vám nabídli jednorázový kredit na reklamu v hodnotě " + e.totalAmount + " USD.";
+                }),
+                a("i032a231", function (e) {
+                    return "Zůstanu a uplatním svůj kredit na reklamu v hodnotě " + e.totalAmount;
+                }),
+                a("hd7d278c", "Ne, díky"),
+                a("jf8a0dea", "Výborně! Nový kredit na reklamu zdarma se ve vašem účtu objeví v příštím fakturačním cyklu.");
             function r(e, o) {
                 for (var t = 0; t < o.length; t++) {
                     var a = o[t];
@@ -7897,34 +7901,7 @@
                     i(e, o)
                 );
             }
-            a("i4dccc18", "Vyúčtování"),
-                a("ec3cd6e4", "Spravujte svůj způsob platby, aktualizujte fakturační údaje a kontrolujte své faktury."),
-                a("dac61c3c", "Nastavení účtu"),
-                a("b6b5fd66", "Spravujte svůj účet X včetně změny uživatelského jména nebo hesla."),
-                a("hb9c4a1c", "Otázky, zprávy o chybách a zpětná vazba"),
-                a("c674f5b4", "Nastavení plateb faktur"),
-                a("i8237e66", "Přejděte z plateb kartou na fakturaci bankovním převodem."),
-                a("hebd348a", "Nakonfigurujte, jak se reklamy používají k propagaci pracovních pozic z portálu Nábor."),
-                a("ib5e6f90", "Propagace pracovní pozice"),
-                a("id720215", "Nábor"),
-                a("dd59f146", "Reklamní účet pro propagaci pracovní pozice"),
-                a("e7e36818", "Reklamní účty jsou způsobilé pro propagaci pracovní pozice, pokud jsou plně vybaveny zdrojem financování."),
-                a("c28566e0", "Reklamní účet"),
-                a("c80160d3", "Reklama"),
-                a("ff0edac0", "Opravdu chcete zrušit předplatné?"),
-                a("h2ac0348", "Ne, chci se vrátit"),
-                a("dbf9667e", "Ano"),
-                a("j7592572", "Obrat do protisměru"),
-                a("ee778942", "Semafor"),
-                a("fdd57981", function (e) {
-                    return "Rádi bychom vám nabídli jednorázový kredit na reklamu v hodnotě " + e.totalAmount + " USD.";
-                }),
-                a("i032a231", function (e) {
-                    return "Zůstanu a uplatním svůj kredit na reklamu v hodnotě " + e.totalAmount;
-                }),
-                a("hd7d278c", "Ne, díky"),
-                a("jf8a0dea", "Výborně! Nový kredit na reklamu zdarma se ve vašem účtu objeví v příštím fakturačním cyklu."),
-                a("ebbb3154", "Zavřít a vrátit se na X"),
+            a("ebbb3154", "Zavřít a vrátit se na X"),
                 a("j1f68dda", "Poslední krok: Opravdu chcete akci zrušit?"),
                 a("c9c3464c", "Probíhá rušení předplatného"),
                 a("dd3a293c", "Vaše předplatné Ověřených organizací skončilo."),
@@ -8902,8 +8879,8 @@
                 a("ccd32094", "Nyní"),
                 a("abfcce0d", function (e) {
                     return "před " + e.amountOfTime;
-                });
-            a("ae408b76", "Repostovali jste"),
+                }),
+                a("ae408b76", "Repostovali jste"),
                 a("j355f008", "Připnutý post"),
                 a("habf9678", "Připnuto autorem"),
                 a("db0798ed", function (e) {
@@ -8959,10 +8936,10 @@
                 }),
                 a("d925a4f9", function (e) {
                     return "Zbýv" + n(e.count, "ají " + e.formattedCount + " minuty", "á " + e.formattedCount + " minut", "á " + e.formattedCount + " minuta", "á " + e.formattedCount + " minut");
-                }),
-                a("ib15cddb", function (e) {
-                    return "Zbýv" + n(e.count, "ají " + e.formattedCount + " hodiny", "á " + e.formattedCount + " hodin", "á " + e.formattedCount + " hodina", "á " + e.formattedCount + " hodin");
-                }),
+                });
+            a("ib15cddb", function (e) {
+                return "Zbýv" + n(e.count, "ají " + e.formattedCount + " hodiny", "á " + e.formattedCount + " hodin", "á " + e.formattedCount + " hodina", "á " + e.formattedCount + " hodin");
+            }),
                 a("db9ed19f", function (e) {
                     return "Zbýv" + n(e.count, "ají " + e.formattedCount + " dny", "á " + e.formattedCount + " dnů", "á " + e.formattedCount + " den", "á " + e.formattedCount + " dnů");
                 }),
@@ -13217,4 +13194,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/cs.58f3778a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/cs.981e759a.js.map

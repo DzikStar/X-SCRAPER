@@ -4166,6 +4166,8 @@
                 n("e9b6d404", "À quels outils de recherche Grok doit‑il avoir accès ?"),
                 n("h15dce2e", "Paramètres avancés"),
                 n("ff9dc268", "Éditer le message"),
+                n("acb2baa0", "Create Images"),
+                n("h30fd372", "Try Voice Mode"),
                 n("e9fcdd0c", "Demandez à Grok de faire des recherches agressives sur le Web."),
                 n("fc4e8aba", "Demandez à Grok de raisonner étape par étape."),
                 n("e4ae6abe", "Demandez à Grok de transformer votre image."),
@@ -4335,41 +4337,16 @@
                 n("g01599b6", "Réponse 1"),
                 n("e02694e0", "Réponse 2"),
                 n("h6867fcc", "Je préfère cette réponse."),
-                n("b2175228", "Grok pour Android est disponible."),
-                n("d2d8650c", "Profitez de la meilleure expérience Grok qui soit dans notre nouvelle application autonome."),
-                n("ia5bef3e", "Coment puis‑je vous aider aujourd'hui ?"),
-                n("ge683598", "Demandez quelque chose à Grok…"),
-                n("fef25c88", "Testez Grok gratuitement"),
-                n("fb172aa8", "Un abonnement gratuit à Grok est disponible dans votre région. Discutez, générez des images et analysez des photos. Des limites s'appliquent."),
-                n("d7af4f40", "Génère une image de galaxie"),
-                n("gcb6c0be", "Grok peut faire des erreurs. Vérifiez ses résultats."),
-                n("cb88fd82", "Vous utilisez une version gratuite de Grok."),
-                n("g27a5314", "Pour commencer à utiliser Grok, ajoutez un numéro de téléphone à votre compte."),
-                n("bdd84568", "Votre compte est trop récent pour pouvoir utiliser Grok. Veuillez réessayer plus tard."),
-                n("a9109a94", "Un village solarpunk"),
-                n("g986f7a4", "Génère une image d'un village solarpunk"),
-                n("ad685264", "Mont Fuji"),
-                n("hdb08284", "Crée une image de style animation japonaise du mont Fuji"),
-                n("a986ae84", "Un chat qui vole"),
-                n("a14b556a", "Génère une image de chat qui vole"),
-                n("gc16b670", "Un robot dans un champ de fleurs"),
-                n("d5b8fa44", "Génère une image d'un robot dans un champ de fleurs"),
-                n("da196ff6", "Astronaute sur Mars"),
-                n("ae3979cc", "Fais le portrait d'un astronaute sur la planète Mars."),
-                n("a682460e", "Un roadster à pleine vitesse"),
-                n("e03e5514", "Crée une image d'un roadster Tesla dans Shinjuku avec un flou de mouvement"),
-                n("e68eac68", "En admiration devant les aurores boréales"),
-                n("hc6e6754", "Crée une image d'une personne qui admire des aurores boréales."),
-                n("cf59f9f6", "Aide‑moi à écrire une lettre d'accompagnement"),
-                n("cd9aeac8", "Donne‑moi les titres de l'actualité"),
-                n("acf2f0be", "Recommande‑moi un jeu de rôle fantasy"),
-                n("b9bd12e2", "Résous le problème de la somme de deux nombres en Python"),
+                n("d07488a6", "Get the Android app"),
+                n("d9cfe70c", "Access advanced Grok features"),
                 n("hf9afab0", "Activez DeepSearch pour parcourir Internet et X, analyser des informations et obtenir des réponses détaillées et bien argumentées avec la recherche agentique rapide."),
                 n("ef3b3f04", "Activez le mode Description pour utiliser notre modèle de raisonnement. C'est le mieux adapté aux maths, aux sciences et au codage. Vous pouvez aussi demander à Grok de réfléchir plus intensément sur toute question susceptible de nécessiter une réflexion plus profonde. "),
                 n("b43636b8", "Lancement de Grok 3"),
                 n("j376298c", "Grok 3 propose deux nouveaux modes d'interaction avec notre modèle le plus puissant : DeepSearch et Réflexion."),
                 n("e3584f8e", "Quelles sont les 10 stratégies les plus fructueuses utilisées par les fonds spéculatifs en ce qui concerne les options ?"),
                 n("d91b7b8a", "Combien cela coûtait‑il de construire une université en 1885 ?"),
+                n("ia5bef3e", "Coment puis‑je vous aider aujourd'hui ?"),
+                n("ebea5880", "Recent Conversations"),
                 n("e13591c0", "Exemple de conversation Grok"),
                 n("c27ca452", "Les abonnés à Premium peuvent désormais utiliser sur X notre IA la plus avancée, Grok."),
                 n("b6abc25a", "Lancement de Grok 2"),
@@ -4913,8 +4890,8 @@
                 n("ff95a9cc", "Identifiant de la vidéo"),
                 n("a97e358e", "Lien de la vidéo"),
                 n("e10e8b46", "Affichage des vidéos des 100 derniers jours uniquement."),
-                n("ba37f6da", "Vue d'ensemble des vidéos");
-            n("f19846b2", "Miniature de la vidéo"),
+                n("ba37f6da", "Vue d'ensemble des vidéos"),
+                n("f19846b2", "Miniature de la vidéo"),
                 n("ccd6f4a8", "Titre de la vidéo"),
                 n("c8410542", "Le nombre de fois que votre vidéo a été vue."),
                 n("a532072a", "Spectateurs"),
@@ -4936,8 +4913,8 @@
                 n("f2f463ea", "ia -startup"),
                 n("a10a357e", 'contient "ia" et compte au moins 50 J\'aime'),
                 n("ca8ed1e8", "ia min_faves:50"),
-                n("i945a3f2", 'contient "ia" et une URL comportant le mot "grok"'),
-                n("a9348088", "ia url:grok"),
+                n("i945a3f2", 'contient "ia" et une URL comportant le mot "grok"');
+            n("a9348088", "ia url:grok"),
                 n("b5c3cdbc", 'mentionne le compte X "grok"'),
                 n("e2634592", "@grok"),
                 n("i88ba038", "Alerte désactivée"),
@@ -5871,10 +5848,10 @@
                 n("ae58026a", "Ouvrez un fichier .json de Branded Like pour le prévisualiser."),
                 n("hd0bc1eb", function (e) {
                     return e.name + " est en direct.";
-                });
-            n("bea1f26b", function (e) {
-                return e.name + " était en direct.";
-            }),
+                }),
+                n("bea1f26b", function (e) {
+                    return e.name + " était en direct.";
+                }),
                 n("ab3ee97f", function (e) {
                     return e.screenName + " n'est pas en direct";
                 }),
@@ -5902,8 +5879,8 @@
                 n("edef4c82", "Postez directement à l'attention d'une Communauté"),
                 n("a7640df6", "Vos posts sont partagés avec les membres de la Communauté et avec vos abonnés."),
                 n("h3bb8068", "Obtenez de l'aide quand vous en avez besoin"),
-                n("a709f8f8", "Les administrateurs et les modérateurs contribuent à la gestion des Communautés et des conversations."),
-                n("c8d33380", "Nouveaux éléments"),
+                n("a709f8f8", "Les administrateurs et les modérateurs contribuent à la gestion des Communautés et des conversations.");
+            n("c8d33380", "Nouveaux éléments"),
                 n("cb6adb10", "Découvrir les Communautés"),
                 n("df362964", "Rechercher des Communautés"),
                 n("dfd5031f", function (e) {
@@ -6877,8 +6854,8 @@
                 n("c4fd68da", "Personnalisez votre expérience"),
                 n("c0195168", "Modifiez l'icône de votre application et les options de navigation"),
                 n("b6b5dc94", "Obtenez la certification"),
-                n("b06db848", "Démarquez‑vous des autres sur la plateforme");
-            n("e3e3a97c", "Bénéficiez d'une part des revenus générés par vos posts"),
+                n("b06db848", "Démarquez‑vous des autres sur la plateforme"),
+                n("e3e3a97c", "Bénéficiez d'une part des revenus générés par vos posts"),
                 n("f15bc24e", "Limites Grok repoussées"),
                 n("c4666e1c", "Plus d'utilisation de Grok 3, notre modèle le plus récent"),
                 n("he74ae7a", "Limites d'utilisation les plus élevées pour Grok"),
@@ -6900,8 +6877,8 @@
                 n("c3148608", "Profitez d'une assistance plus rapide en cas de besoin."),
                 n("b485ca6e", "Onglet Posts marquants"),
                 n("d438955e", "Mettez vos meilleurs posts en avant."),
-                n("f373a352", "MP cryptés"),
-                n("g7405aca", "Discutez en toute sécurité grâce au cryptage de bout en bout."),
+                n("f373a352", "MP cryptés");
+            n("g7405aca", "Discutez en toute sécurité grâce au cryptage de bout en bout."),
                 n("j659fa0c", "Le meilleur de Grok 3"),
                 n("ibff5694", "Profitez des limites d'utilisation les plus élevées, des modes DeepSearch et Réflexion ainsi que d'un accès anticipé aux nouvelles fonctionnalités."),
                 n("i824f4da", "Moins de publicités"),
@@ -7853,7 +7830,34 @@
                 n("ddfd6718", "Échec du paiement"),
                 n("i90ea7d2", "Veuillez rapidement mettre vos paramètres de facturation à jour pour conserver vos avantages."),
                 n("a62359e6", "Paramètres d'organisation certifiée"),
-                n("ge221b7c", "Mettez à niveau vers l'abonnement Organisations certifiées pour accéder aux affiliés et à davantage de crédits publicitaires.");
+                n("ge221b7c", "Mettez à niveau vers l'abonnement Organisations certifiées pour accéder aux affiliés et à davantage de crédits publicitaires."),
+                n("i4dccc18", "Facturation"),
+                n("ec3cd6e4", "Gérez votre moyen de paiement, mettez vos informations de facturation à jour et passez vos factures en revue."),
+                n("dac61c3c", "Paramètres du compte"),
+                n("b6b5fd66", "Gérez votre compte X, notamment la modification de votre nom d'utilisateur ou de votre mot de passe."),
+                n("hb9c4a1c", "Questions, signalements de bugs et retours"),
+                n("c674f5b4", "Configurez le paiement des factures"),
+                n("i8237e66", "Passez de paiements par carte à une facturation via virements bancaires."),
+                n("hebd348a", "Configurez la manière dont des publicités sont utilisées pour promouvoir des offres d'emploi depuis le portail Recrutement."),
+                n("ib5e6f90", "Promotion d'offres d'emploi"),
+                n("id720215", "Recrutement"),
+                n("dd59f146", "Compte d'annonceur permettant la promotion d'offres d'emploi"),
+                n("e7e36818", "Les comptes d'annonceur peuvent promouvoir des offres d'emploi quand leur configuration est complète, source de financement comprise."),
+                n("c28566e0", "Compte d'annonceur"),
+                n("c80160d3", "Publicité"),
+                n("ff0edac0", "Vous voulez annuler votre abonnement ?"),
+                n("h2ac0348", "Non, j'ai changé d'avis"),
+                n("dbf9667e", "Je suis sûr"),
+                n("j7592572", "Demi‑tour"),
+                n("ee778942", "Feux tricolores"),
+                n("fdd57981", function (e) {
+                    return "Nous aimerions vous offrir un crédit publicitaire ponctuel de " + e.totalAmount + " USD";
+                }),
+                n("i032a231", function (e) {
+                    return "Je reste et je profite du crédit publicitaire de " + e.totalAmount;
+                }),
+                n("hd7d278c", "Non merci"),
+                n("jf8a0dea", "Parfait ! Votre nouveau crédit publicitaire gratuit apparaîtra dans votre compte lors de votre prochain cycle de facturation.");
             function a(e, t) {
                 for (var s = 0; s < t.length; s++) {
                     var n = t[s];
@@ -7892,34 +7896,7 @@
                     i(e, t)
                 );
             }
-            n("i4dccc18", "Facturation"),
-                n("ec3cd6e4", "Gérez votre moyen de paiement, mettez vos informations de facturation à jour et passez vos factures en revue."),
-                n("dac61c3c", "Paramètres du compte"),
-                n("b6b5fd66", "Gérez votre compte X, notamment la modification de votre nom d'utilisateur ou de votre mot de passe."),
-                n("hb9c4a1c", "Questions, signalements de bugs et retours"),
-                n("c674f5b4", "Configurez le paiement des factures"),
-                n("i8237e66", "Passez de paiements par carte à une facturation via virements bancaires."),
-                n("hebd348a", "Configurez la manière dont des publicités sont utilisées pour promouvoir des offres d'emploi depuis le portail Recrutement."),
-                n("ib5e6f90", "Promotion d'offres d'emploi"),
-                n("id720215", "Recrutement"),
-                n("dd59f146", "Compte d'annonceur permettant la promotion d'offres d'emploi"),
-                n("e7e36818", "Les comptes d'annonceur peuvent promouvoir des offres d'emploi quand leur configuration est complète, source de financement comprise."),
-                n("c28566e0", "Compte d'annonceur"),
-                n("c80160d3", "Publicité"),
-                n("ff0edac0", "Vous voulez annuler votre abonnement ?"),
-                n("h2ac0348", "Non, j'ai changé d'avis"),
-                n("dbf9667e", "Je suis sûr"),
-                n("j7592572", "Demi‑tour"),
-                n("ee778942", "Feux tricolores"),
-                n("fdd57981", function (e) {
-                    return "Nous aimerions vous offrir un crédit publicitaire ponctuel de " + e.totalAmount + " USD";
-                }),
-                n("i032a231", function (e) {
-                    return "Je reste et je profite du crédit publicitaire de " + e.totalAmount;
-                }),
-                n("hd7d278c", "Non merci"),
-                n("jf8a0dea", "Parfait ! Votre nouveau crédit publicitaire gratuit apparaîtra dans votre compte lors de votre prochain cycle de facturation."),
-                n("ebbb3154", "Fermer et revenir à X"),
+            n("ebbb3154", "Fermer et revenir à X"),
                 n("j1f68dda", "Dernière étape : voulez‑vous vraiment annuler ?"),
                 n("c9c3464c", "Annulation de l'abonnement en cours"),
                 n("dd3a293c", "Votre abonnement au service Organisations certifiées est terminé."),
@@ -8897,8 +8874,8 @@
                 n("ccd32094", "Maintenant"),
                 n("abfcce0d", function (e) {
                     return "Il y a " + e.amountOfTime;
-                });
-            n("ae408b76", "Vous avez reposté"),
+                }),
+                n("ae408b76", "Vous avez reposté"),
                 n("j355f008", "Post épinglé"),
                 n("habf9678", "Épinglé par l'auteur"),
                 n("db0798ed", function (e) {
@@ -8954,10 +8931,10 @@
                 }),
                 n("d925a4f9", function (e) {
                     return e.formattedCount + " minute" + r(e.count, " restante", "s restantes");
-                }),
-                n("ib15cddb", function (e) {
-                    return e.formattedCount + " heure" + r(e.count, " restante", "s restantes");
-                }),
+                });
+            n("ib15cddb", function (e) {
+                return e.formattedCount + " heure" + r(e.count, " restante", "s restantes");
+            }),
                 n("db9ed19f", function (e) {
                     return e.formattedCount + " jour" + r(e.count, " restant", "s restants");
                 }),
@@ -13209,4 +13186,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.ef1d8b0a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.48aaeb9a.js.map

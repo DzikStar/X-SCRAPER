@@ -4171,6 +4171,8 @@
                 n("e9b6d404", "Ku ktorým vyhľadávacím nástrojom by mal mať Grok prístup?"),
                 n("h15dce2e", "Rozšírené nastavenia"),
                 n("ff9dc268", "Upraviť pokyn"),
+                n("acb2baa0", "Create Images"),
+                n("h30fd372", "Try Voice Mode"),
                 n("e9fcdd0c", "Spýtajte sa Groka na intenzívnejšie prehľadávanie webu"),
                 n("fc4e8aba", "Spýtajte sa Groka na systematické uvažovanie"),
                 n("e4ae6abe", "Požiadajte Groka, aby zmenil váš obrázok"),
@@ -4340,41 +4342,16 @@
                 n("g01599b6", "2. odpoveď"),
                 n("e02694e0", "1. odpoveď"),
                 n("h6867fcc", "Preferujem túto odpoveď"),
-                n("b2175228", "Grok pre Android je tu"),
-                n("d2d8650c", "Používajte Groka naplno v našej novej samostatnej aplikácii"),
-                n("ia5bef3e", "Ako vám dnes môžem pomôcť?"),
-                n("ge683598", "Spýtajte sa Groka na čokoľvek…"),
-                n("fef25c88", "Vyskúšajte Groka zadarmo"),
-                n("fb172aa8", "Vo vašom regióne je teraz k dispozícii bezplatná úroveň Groka. Chatujte, generujte obrázky a analyzujte fotky. Platia obmedzenia."),
-                n("d7af4f40", "Vygeneruj obrázok galaxie"),
-                n("gcb6c0be", "Grok môže robiť chyby. Overujte jeho výsledky."),
-                n("cb88fd82", "Používate bezplatnú verziu Groka."),
-                n("g27a5314", "Ak chcete začať používať Groka, pridajte do svojho účtu telefónne číslo."),
-                n("bdd84568", "Váš účet je príliš nový na to, aby ste mohli používať Groka. Skúste to znova neskôr."),
-                n("a9109a94", "Solarpunková dedina"),
-                n("g986f7a4", "Vygeneruj obrázok solarpunkovej dediny"),
-                n("ad685264", "Hora Fuji"),
-                n("hdb08284", "Vytvor obrázok hory Fuji v štýle anime"),
-                n("a986ae84", "Lietajúca mačka"),
-                n("a14b556a", "Vygeneruj obrázok lietajúcej mačky"),
-                n("gc16b670", "Robot v poli kvetov"),
-                n("d5b8fa44", "Vygeneruj obrázok robota v poli kvetov"),
-                n("da196ff6", "Astronaut na Marse"),
-                n("ae3979cc", "Vytvor portrét astronauta na Marse"),
-                n("a682460e", "Rýchle auto"),
-                n("e03e5514", "Vytvor obrázok Tesly Roadster prechádzajúcej cez Shinjuku s rozmazaným pohybom"),
-                n("e68eac68", "Obdivovanie polárnej žiary"),
-                n("hc6e6754", "Vytvor obrázok človeka obdivujúceho polárnu žiaru"),
-                n("cf59f9f6", "Pomôž mi napísať sprievodný list"),
-                n("cd9aeac8", "Povedz mi dnešné aktuality"),
-                n("acf2f0be", "Odporuč fantasy hru typu RPG"),
-                n("b9bd12e2", "Vyrieš problém dvojitého sčítania v Pythone"),
+                n("d07488a6", "Get the Android app"),
+                n("d9cfe70c", "Access advanced Grok features"),
                 n("hf9afab0", "Aktivujte si režim DeepSearch. Dokáže skenovať internet a službu X, analyzovať informácie a poskytovať podrobné a dobre zdôvodnené odpovede pomocou rýchleho a agentského vyhľadávania."),
                 n("ef3b3f04", "Aktivujte si režim Premýšľanie, aby ste mohli používať náš model uvažovania. Je najvhodnejší pri matematických, vedeckých a programátorských problémoch. Groka môžete požiadať aj o intenzívnejšie premýšľanie pri akejkoľvek otázke, ktorá by si mohla vyžadovať trochu viac mozgovej kapacity. "),
                 n("b43636b8", "Predstavujeme Groka 3"),
                 n("j376298c", "Grok 3 prináša dva nové režimy interakcie s naším najvýkonnejším modelom: DeepSearch a Premýšľanie."),
                 n("e3584f8e", "Ktorých 10 najúspešnejších stratégií obchodovania s opciami používajú hedžové fondy?"),
                 n("d91b7b8a", "Koľko by stálo postaviť univerzitu v roku 1885?"),
+                n("ia5bef3e", "Ako vám dnes môžem pomôcť?"),
+                n("ebea5880", "Recent Conversations"),
                 n("e13591c0", "Príklad konverzácie s Grokom"),
                 n("c27ca452", "Používatelia s predplatným Premium môžu teraz na X používať našu najpokročilejšiu umelú inteligenciu – Groka."),
                 n("b6abc25a", "Predstavujeme Groka 2"),
@@ -4918,8 +4895,8 @@
                 n("ff95a9cc", "Video – ID"),
                 n("a97e358e", "Video – odkaz"),
                 n("e10e8b46", "Zobrazujú sa iba videá za posledných 100 dní"),
-                n("ba37f6da", "Prehľad pre video");
-            n("f19846b2", "Miniatúra videa"),
+                n("ba37f6da", "Prehľad pre video"),
+                n("f19846b2", "Miniatúra videa"),
                 n("ccd6f4a8", "Video – názov"),
                 n("c8410542", "Počet zobrazení videa."),
                 n("a532072a", "Diváci"),
@@ -4941,8 +4918,8 @@
                 n("f2f463ea", "ai -startup"),
                 n("a10a357e", "obsahuje „ai“ a má aspoň 50 označení Páči sa"),
                 n("ca8ed1e8", "ai min_faves:50"),
-                n("i945a3f2", "obsahuje „ai“ a webovú adresu, ktorá obsahuje slovo „grok“"),
-                n("a9348088", "ai url:grok"),
+                n("i945a3f2", "obsahuje „ai“ a webovú adresu, ktorá obsahuje slovo „grok“");
+            n("a9348088", "ai url:grok"),
                 n("b5c3cdbc", "zmieňuje sa o účte X s názvom „grok“"),
                 n("e2634592", "@grok"),
                 n("i88ba038", "Upozornenia boli vypnuté"),
@@ -5876,10 +5853,10 @@
                 n("ae58026a", "Ak si chcete pozrieť ukážku, otvorte súbor .json označenia Páči sa so značkou"),
                 n("hd0bc1eb", function (e) {
                     return e.name + " je naživo";
-                });
-            n("bea1f26b", function (e) {
-                return e.name + " bol/-a naživo";
-            }),
+                }),
+                n("bea1f26b", function (e) {
+                    return e.name + " bol/-a naživo";
+                }),
                 n("ab3ee97f", function (e) {
                     return e.screenName + " nevysiela naživo";
                 }),
@@ -5907,8 +5884,8 @@
                 n("edef4c82", "Uverejniť priamo v komunite"),
                 n("a7640df6", "Vaše príspevky sa zdieľajú s členmi komunity a vašimi sledujúcimi."),
                 n("h3bb8068", "Získajte zálohu, keď ju potrebujete"),
-                n("a709f8f8", "Správcovia a moderátori pomáhajú spravovať Komunity a konverzácie sa vďaka nim uberajú správnym smerom."),
-                n("c8d33380", "Nové položky"),
+                n("a709f8f8", "Správcovia a moderátori pomáhajú spravovať Komunity a konverzácie sa vďaka nim uberajú správnym smerom.");
+            n("c8d33380", "Nové položky"),
                 n("cb6adb10", "Objavte Komunity"),
                 n("df362964", "Nájsť Komunity"),
                 n("dfd5031f", function (e) {
@@ -6882,8 +6859,8 @@
                 n("c4fd68da", "Prispôsobte si možnosti"),
                 n("c0195168", "Zmeňte si ikonu aplikácie a možnosti navigácie"),
                 n("b6b5dc94", "Získajte overenie"),
-                n("b06db848", "Odlíšte sa od ostatných na platforme");
-            n("e3e3a97c", "Získajte podiel na výnosoch generovaných z vašich príspevkov"),
+                n("b06db848", "Odlíšte sa od ostatných na platforme"),
+                n("e3e3a97c", "Získajte podiel na výnosoch generovaných z vašich príspevkov"),
                 n("f15bc24e", "Zvýšené limity Groka"),
                 n("c4666e1c", "Väčšie možnosti využitia Groka 3, čo je náš najnovší model"),
                 n("he74ae7a", "Najvyššie limity používania Groka"),
@@ -6905,8 +6882,8 @@
                 n("c3148608", "Získajte rýchlejšiu pomoc, keď ju potrebujete"),
                 n("b485ca6e", "Karta Výber"),
                 n("d438955e", "Upriamte pozornosť na svoje najlepšie príspevky"),
-                n("f373a352", "Šifrované súkromné správy"),
-                n("g7405aca", "Bezpečne četujte vďaka šifrovaniu end-to-end"),
+                n("f373a352", "Šifrované súkromné správy");
+            n("g7405aca", "Bezpečne četujte vďaka šifrovaniu end-to-end"),
                 n("j659fa0c", "To najlepšie z Groka 3"),
                 n("ibff5694", "Získajte najvyššie limity používania, prístup k režimom DeepSearch a Premýšľanie a tiež prednostný prístup k novým funkciám"),
                 n("i824f4da", "Menej reklám"),
@@ -7858,7 +7835,34 @@
                 n("ddfd6718", "Platba zlyhala"),
                 n("i90ea7d2", "Aktualizujte platobné údaje ihneď, aby ste nestratili výhody."),
                 n("a62359e6", "Nastavenia overených organizácií"),
-                n("ge221b7c", "Prejdite na vyššiu úroveň predplatného pre overené organizácie, aby ste mohli využívať pridružené účty a získať viac reklamných kreditov.");
+                n("ge221b7c", "Prejdite na vyššiu úroveň predplatného pre overené organizácie, aby ste mohli využívať pridružené účty a získať viac reklamných kreditov."),
+                n("i4dccc18", "Fakturácia"),
+                n("ec3cd6e4", "Spravujte svoj spôsob platby, aktualizujte fakturačné informácie a kontrolujte svoje faktúry."),
+                n("dac61c3c", "Nastavenia účtu"),
+                n("b6b5fd66", "Spravujte svoj účet X vrátane zmien používateľského mena alebo hesla."),
+                n("hb9c4a1c", "Otázky, hlásenia chýb a spätná väzba"),
+                n("c674f5b4", "Nastavenie platieb faktúrami"),
+                n("i8237e66", "Prejdite z platieb platobnou kartou na fakturáciou bankovým prevodom."),
+                n("hebd348a", "Nakonfigurujte spôsob používania reklám na sponzorovanie pracovných miest z portálu Najímanie."),
+                n("ib5e6f90", "Sponzorovanie pracovných miest"),
+                n("id720215", "portálu pracovných ponúk"),
+                n("dd59f146", "Reklamný účet na sponzorovanie pracovných miest"),
+                n("e7e36818", "Reklamné účty majú nárok na sponzorovanie pracovných miest, keď majú nastavený zdroj financovania."),
+                n("c28566e0", "Pridať účet"),
+                n("c80160d3", "Reklama"),
+                n("ff0edac0", "Ste si istí, že chcete zrušiť svoje predplatné?"),
+                n("h2ac0348", "Nie, chcem sa vrátiť."),
+                n("dbf9667e", "Určite."),
+                n("j7592572", "Zmena názoru"),
+                n("ee778942", "Semafor"),
+                n("fdd57981", function (e) {
+                    return "Radi by sme vám ponúkli bezplatný jednorazový reklamný kredit vo výške " + e.totalAmount + " USD.";
+                }),
+                n("i032a231", function (e) {
+                    return "Pokračovať v predplatnom a nárokovať si reklamný kredit " + e.totalAmount;
+                }),
+                n("hd7d278c", "Nie, ďakujem"),
+                n("jf8a0dea", "Skvelé! Váš nový bezplatný reklamný kredit sa objaví na vašom účte v nasledujúcom fakturačnom cykle.");
             function i(e, a) {
                 for (var o = 0; o < a.length; o++) {
                     var n = a[o];
@@ -7897,34 +7901,7 @@
                     r(e, a)
                 );
             }
-            n("i4dccc18", "Fakturácia"),
-                n("ec3cd6e4", "Spravujte svoj spôsob platby, aktualizujte fakturačné informácie a kontrolujte svoje faktúry."),
-                n("dac61c3c", "Nastavenia účtu"),
-                n("b6b5fd66", "Spravujte svoj účet X vrátane zmien používateľského mena alebo hesla."),
-                n("hb9c4a1c", "Otázky, hlásenia chýb a spätná väzba"),
-                n("c674f5b4", "Nastavenie platieb faktúrami"),
-                n("i8237e66", "Prejdite z platieb platobnou kartou na fakturáciou bankovým prevodom."),
-                n("hebd348a", "Nakonfigurujte spôsob používania reklám na sponzorovanie pracovných miest z portálu Najímanie."),
-                n("ib5e6f90", "Sponzorovanie pracovných miest"),
-                n("id720215", "portálu pracovných ponúk"),
-                n("dd59f146", "Reklamný účet na sponzorovanie pracovných miest"),
-                n("e7e36818", "Reklamné účty majú nárok na sponzorovanie pracovných miest, keď majú nastavený zdroj financovania."),
-                n("c28566e0", "Pridať účet"),
-                n("c80160d3", "Reklama"),
-                n("ff0edac0", "Ste si istí, že chcete zrušiť svoje predplatné?"),
-                n("h2ac0348", "Nie, chcem sa vrátiť."),
-                n("dbf9667e", "Určite."),
-                n("j7592572", "Zmena názoru"),
-                n("ee778942", "Semafor"),
-                n("fdd57981", function (e) {
-                    return "Radi by sme vám ponúkli bezplatný jednorazový reklamný kredit vo výške " + e.totalAmount + " USD.";
-                }),
-                n("i032a231", function (e) {
-                    return "Pokračovať v predplatnom a nárokovať si reklamný kredit " + e.totalAmount;
-                }),
-                n("hd7d278c", "Nie, ďakujem"),
-                n("jf8a0dea", "Skvelé! Váš nový bezplatný reklamný kredit sa objaví na vašom účte v nasledujúcom fakturačnom cykle."),
-                n("ebbb3154", "Zavrieť a prejsť späť na X"),
+            n("ebbb3154", "Zavrieť a prejsť späť na X"),
                 n("j1f68dda", "Posledný krok: Naozaj chcete predplatné zrušiť?"),
                 n("c9c3464c", "Prebieha rušenie predplatného."),
                 n("dd3a293c", "Vaše predplatné Overená organizácia sa skončilo."),
@@ -8902,8 +8879,8 @@
                 n("ccd32094", "Teraz"),
                 n("abfcce0d", function (e) {
                     return "Pred " + e.amountOfTime;
-                });
-            n("ae408b76", "Opätovne ste uverejnili"),
+                }),
+                n("ae408b76", "Opätovne ste uverejnili"),
                 n("j355f008", "Pripnutý príspevok"),
                 n("habf9678", "Pripnuté autorom"),
                 n("db0798ed", function (e) {
@@ -8959,10 +8936,10 @@
                 }),
                 n("d925a4f9", function (e) {
                     return "Zostáva" + t(e.count, "jú " + e.formattedCount + " minúty", " " + e.formattedCount + " minúty", " " + e.formattedCount + " minúta", " " + e.formattedCount + " minút");
-                }),
-                n("ib15cddb", function (e) {
-                    return "Zostáva" + t(e.count, "jú " + e.formattedCount + " hodiny", " " + e.formattedCount + " hodiny", " " + e.formattedCount + " hodina", " " + e.formattedCount + " hodín");
-                }),
+                });
+            n("ib15cddb", function (e) {
+                return "Zostáva" + t(e.count, "jú " + e.formattedCount + " hodiny", " " + e.formattedCount + " hodiny", " " + e.formattedCount + " hodina", " " + e.formattedCount + " hodín");
+            }),
                 n("db9ed19f", function (e) {
                     return "Zostáva" + t(e.count, "jú " + e.formattedCount + " dni", " " + e.formattedCount + " dňa", " " + e.formattedCount + " deň", " " + e.formattedCount + " dní");
                 }),
@@ -13221,4 +13198,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sk.0c40463a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sk.bf3dc0da.js.map

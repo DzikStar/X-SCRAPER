@@ -179,7 +179,7 @@
             const o = r;
         },
         66351: (e, t, n) => {
-            n.d(t, { Z: () => b });
+            n.d(t, { Z: () => h });
             var a,
                 l,
                 i,
@@ -194,7 +194,7 @@
                 g,
                 _,
                 y = n(897455),
-                h = {
+                b = {
                     fragment: {
                         argumentDefinitions: [(a = { defaultValue: null, kind: "LocalArgument", name: "count" }), (l = { defaultValue: null, kind: "LocalArgument", name: "cursor" }), (i = { defaultValue: !1, kind: "LocalArgument", name: "includePromotedContent" }), (s = { defaultValue: null, kind: "LocalArgument", name: "isListMemberTargetUserId" }), (r = { defaultValue: null, kind: "LocalArgument", name: "timelineId" }), (o = { defaultValue: !1, kind: "LocalArgument", name: "withBirdwatchNotes" }), (c = { defaultValue: !1, kind: "LocalArgument", name: "withClientEventToken" }), (d = { defaultValue: !1, kind: "LocalArgument", name: "withCommunity" }), (u = { defaultValue: !1, kind: "LocalArgument", name: "withDmMuting" }), (m = { defaultValue: !1, kind: "LocalArgument", name: "withQuickPromoteEligibilityTweetFields" }), (p = { defaultValue: !1, kind: "LocalArgument", name: "withVoice" })],
                         kind: "Fragment",
@@ -274,10 +274,10 @@
                             },
                         ],
                     },
-                    params: { id: "o7Ie-8fvnTo08OgS8gS3tw", metadata: { features: ["articles_preview_enabled", "c9s_tweet_anatomy_moderator_badge_enabled", "communities_web_enable_tweet_community_results_fetch", "creator_subscriptions_quote_tweet_preview_enabled", "creator_subscriptions_tweet_preview_api_enabled", "freedom_of_speech_not_reach_fetch_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "longform_notetweets_consumption_enabled", "longform_notetweets_inline_media_enabled", "longform_notetweets_rich_text_read_enabled", "premium_content_api_read_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "responsive_web_edit_tweet_api_enabled", "responsive_web_enhance_cards_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_grok_analysis_button_from_backend", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_grok_share_attachment_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_jetfuel_frame", "responsive_web_twitter_article_tweet_consumption_enabled", "rweb_tipjar_consumption_enabled", "rweb_video_screen_enabled", "standardized_nudges_misinfo", "tweet_awards_web_tipping_enabled", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "verified_phone_label_enabled", "view_counts_everywhere_api_enabled"] }, name: "managementListsPageTimelineQuery", operationKind: "query", text: null },
+                    params: { id: "K8IYVGxUPr5LkttVyJt9_A", metadata: { features: ["articles_preview_enabled", "c9s_tweet_anatomy_moderator_badge_enabled", "communities_web_enable_tweet_community_results_fetch", "creator_subscriptions_quote_tweet_preview_enabled", "creator_subscriptions_tweet_preview_api_enabled", "freedom_of_speech_not_reach_fetch_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "longform_notetweets_consumption_enabled", "longform_notetweets_inline_media_enabled", "longform_notetweets_rich_text_read_enabled", "premium_content_api_read_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "responsive_web_edit_tweet_api_enabled", "responsive_web_enhance_cards_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_grok_analysis_button_from_backend", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_grok_share_attachment_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_jetfuel_frame", "responsive_web_twitter_article_tweet_consumption_enabled", "rweb_tipjar_consumption_enabled", "rweb_video_screen_enabled", "standardized_nudges_misinfo", "tweet_awards_web_tipping_enabled", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "verified_phone_label_enabled", "view_counts_everywhere_api_enabled"] }, name: "managementListsPageTimelineQuery", operationKind: "query", text: null },
                 };
-            h.hash = "5b66468936446aae49ccfb5965fb93f4";
-            const b = h;
+            b.hash = "5b66468936446aae49ccfb5965fb93f4";
+            const h = b;
         },
         425376: (e, t, n) => {
             n.d(t, { Z: () => _ });
@@ -293,22 +293,22 @@
                 m = n(138099),
                 p = n(392237);
             const g = p.default.create((e) => ({ root: { paddingVertical: e.spacesPx.space32 }, rootWithImage: { paddingTop: 0 }, graphic: { marginBottom: e.spacesPx.space20 }, icon: { alignSelf: "center", height: e.spacesPx.space64, width: e.spacesPx.space64 }, container: { paddingHorizontal: e.spacesPx.space32 }, description: { marginTop: e.spacesPx.space8, marginBottom: e.spacesPx.space4 }, actionButton: { marginTop: e.spacesPx.space16 } })),
-                _ = ({ actionPrimary: e, actionSecondary: t, children: n, headline: _, icon: y, iconColor: h, image: b, onDismiss: k, shouldDisplay: f, text: w, withMask: v = !0 }) => {
+                _ = ({ actionPrimary: e, actionSecondary: t, children: n, headline: _, icon: y, iconColor: b, image: h, onDismiss: k, shouldDisplay: f, text: w, withMask: v = !0 }) => {
                     const [T, x] = a.useState(!1),
-                        F = (e) => a.createElement(u.Z, { onDismiss: R, renderContent: () => C(R), switchOnlyOnXSmallBreakpoint: !0, visibilityBehavior: i.J.forceVisible, withArrow: !0, withFixedPosition: !0, withMask: v }, e),
-                        L = () => a.createElement(m.Z, { onMaskClick: () => R(), type: "center", withMask: !0 }, C(R)),
-                        C = (n) => a.createElement(l.Z, { style: [g.root, b && g.rootWithImage] }, S(), a.createElement(l.Z, { style: g.container }, K(), Z(), E({ action: e, dismiss: n, type: t && "primaryFilled" }), E({ action: t, dismiss: n }))),
-                        S = () => {
-                            let e = y && a.createElement(y, { style: h ? [g.icon, { color: p.default.theme.colors[h] }] : g.icon });
-                            return b && !d.Z.isEnabled && (e = a.createElement(s.Z, { "aria-label": "", aspectMode: o.Z.exact(2), image: b })), e && a.createElement(l.Z, { style: g.graphic }, e);
+                        L = (e) => a.createElement(u.Z, { onDismiss: R, renderContent: () => C(R), switchOnlyOnXSmallBreakpoint: !0, visibilityBehavior: i.J.forceVisible, withArrow: !0, withFixedPosition: !0, withMask: v }, e),
+                        F = () => a.createElement(m.Z, { onMaskClick: () => R(), type: "center", withMask: !0 }, C(R)),
+                        C = (n) => a.createElement(l.Z, { style: [g.root, h && g.rootWithImage] }, K(), a.createElement(l.Z, { style: g.container }, S(), Z(), E({ action: e, dismiss: n, type: t && "primaryFilled" }), E({ action: t, dismiss: n }))),
+                        K = () => {
+                            let e = y && a.createElement(y, { style: b ? [g.icon, { color: p.default.theme.colors[b] }] : g.icon });
+                            return h && !d.Z.isEnabled && (e = a.createElement(s.Z, { "aria-label": "", aspectMode: o.Z.exact(2), image: h })), e && a.createElement(l.Z, { style: g.graphic }, e);
                         },
-                        K = () => a.createElement(r.ZP, { size: "title3", weight: "heavy" }, _),
+                        S = () => a.createElement(r.ZP, { size: "title3", weight: "heavy" }, _),
                         Z = () => a.createElement(r.ZP, { color: "gray700", style: g.description }, w),
                         E = ({ action: e, dismiss: t, type: n }) => e && a.createElement(c.ZP, { link: e.link && e.link, onPress: e.onClick ? e.onClick : t, size: "large", style: g.actionButton, type: n }, e.text),
                         R = () => {
                             k && k(), x(!0);
                         };
-                    return f && !T ? (n ? F(n) : L()) : n || null;
+                    return f && !T ? (n ? L(n) : F()) : n || null;
                 };
         },
         664064: (e, t, n) => {
@@ -373,7 +373,7 @@
             p.defaultProps = { renderFailure: s.Z, retryable: !0 };
         },
         403556: (e, t, n) => {
-            n.d(t, { Z: () => F });
+            n.d(t, { Z: () => L });
             var a = n(807896),
                 l = n(202784),
                 i = n(194504),
@@ -388,8 +388,8 @@
                 g = n(310088),
                 _ = n(175993),
                 y = n(58881),
-                h = n(530732);
-            const b = d().d2414d31,
+                b = n(530732);
+            const h = d().d2414d31,
                 k = () => d().ce4e85ae,
                 f = d().fb9f6f39;
             class w extends l.Component {
@@ -428,12 +428,12 @@
                 }
                 render() {
                     const { Icon: e, "aria-label": t, badgeCount: n, badgePip: a, children: i, color: s, isActive: c, isCompact: d, isPillLink: u, isRoundedRect: m, isWebRedesign: _, retainScrollPosition: w, style: T, to: x } = this.props,
-                        { location: F } = this.state,
-                        L = x ? this._getMemoizedLink(x, w) : void 0,
-                        C = c ? c(x) : F?.pathname === L?.pathname,
-                        S = y.Z.generate({ backgroundColor: "transparent", color: r.default.theme.colors.text, insetFocusRing: !0 }),
-                        K = _ ? "medium" : C ? "bold" : "medium";
-                    return l.createElement(h.Z, { "aria-label": t, "aria-selected": C, focusable: !!C, interactiveStyles: S, link: L, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [u ? v.pill : v.link, u && C ? v.active : null, d ? (u ? v.compactPill : v.compactLink) : null, m ? v.roundedRect : null, T], withoutInteractiveStyles: _ || u }, ({ isFocused: t, isHovered: c }) => l.createElement(o.Z, { style: u && v.flexGrow }, l.createElement(p.ZP, { size: _ ? "headline2" : void 0, style: [v.text, { color: this._getTextColor(C, c, _, u) }, d && v.compactText, _ && t && v.focusedText], weight: K }, e && l.createElement(e, { style: v.icon }), i, _ || u ? null : l.createElement(o.Z, { style: C && [v.border, { backgroundColor: r.default.theme.colors[s] }] })), n ? l.createElement(g.Z, { count: n, standalone: !0, style: [v.badge, n >= 10 && v.multiDigitBadge, n >= 20 && v.truncatedCountBadge], truncatedCountFormatter: f, unreadCountLabel: b, withBorder: !1 }) : a ? l.createElement(g.Z, { pip: !0, standalone: !0, style: v.badgePip, textColor: "red500", unreadCountLabel: k, withBorder: !1 }) : null));
+                        { location: L } = this.state,
+                        F = x ? this._getMemoizedLink(x, w) : void 0,
+                        C = c ? c(x) : L?.pathname === F?.pathname,
+                        K = y.Z.generate({ backgroundColor: "transparent", color: r.default.theme.colors.text, insetFocusRing: !0 }),
+                        S = _ ? "medium" : C ? "bold" : "medium";
+                    return l.createElement(b.Z, { "aria-label": t, "aria-selected": C, focusable: !!C, interactiveStyles: K, link: F, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [u ? v.pill : v.link, u && C ? v.active : null, d ? (u ? v.compactPill : v.compactLink) : null, m ? v.roundedRect : null, T], withoutInteractiveStyles: _ || u }, ({ isFocused: t, isHovered: c }) => l.createElement(o.Z, { style: u && v.flexGrow }, l.createElement(p.ZP, { size: _ ? "headline2" : void 0, style: [v.text, { color: this._getTextColor(C, c, _, u) }, d && v.compactText, _ && t && v.focusedText], weight: S }, e && l.createElement(e, { style: v.icon }), i, _ || u ? null : l.createElement(o.Z, { style: C && [v.border, { backgroundColor: r.default.theme.colors[s] }] })), n ? l.createElement(g.Z, { count: n, standalone: !0, style: [v.badge, n >= 10 && v.multiDigitBadge, n >= 20 && v.truncatedCountBadge], truncatedCountFormatter: f, unreadCountLabel: h, withBorder: !1 }) : a ? l.createElement(g.Z, { pip: !0, standalone: !0, style: v.badgePip, textColor: "red500", unreadCountLabel: k, withBorder: !1 }) : null));
                 }
             }
             (w.contextType = _.Z), (w.defaultProps = { children: [], color: "primary", retainScrollPosition: !0 });
@@ -457,7 +457,7 @@
                 })),
                 T = w,
                 x = r.default.create((e) => ({ segmentedControl: { borderBottomWidth: e.borderWidths.small, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor }, leftAligned: { alignContent: "start", justifyContent: "start" }, flexGrow: { flexGrow: 1 }, gap: { gap: e.spaces.space8 }, linkRedesign: { paddingHorizontal: e.spaces.space12, alignItems: "start", minWidth: e.spaces.space24 }, firstLinkRedesign: { paddingStart: e.spaces.space16 }, withNoPaddingStart: { paddingStart: 0 } })),
-                F = ({ alignFirstItem: e, "aria-label": t, isCompact: n, isPillLink: r, isRoundedRect: o, links: c, style: d, visibleItemIndex: u }) => {
+                L = ({ alignFirstItem: e, "aria-label": t, isCompact: n, isPillLink: r, isRoundedRect: o, links: c, style: d, visibleItemIndex: u }) => {
                     const m = c
                             .filter(Boolean)
                             .map((e) => e.key)
@@ -479,7 +479,7 @@
             n.d(t, { Z: () => a });
             const a = n(202784).createContext({ refsMap: {} });
         },
-        517747: (e, t, n) => {
+        391366: (e, t, n) => {
             n.r(t), n.d(t, { default: () => o });
             var a = n(202784),
                 l = n(890601),
@@ -487,7 +487,7 @@
                 s = n(347101);
             const r = (e = {}) => {
                 const { direction: t } = (0, i.Z)();
-                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M14 6V3h2v8h-2V8H3V6h11zm7 2h-3.5V6H21v2zM8 16v-3h2v8H8v-3H3v-2h5zm13 2h-9.5v-2H21v2z" })) }, { writingDirection: t });
+                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M18 1.2v21.6L8.71 17H5.5C4.12 17 3 15.88 3 14.5v-5C3 8.12 4.12 7 5.5 7h3.21L18 1.2zM8 9H5.5c-.28 0-.5.22-.5.5v5c0 .28.22.5.5.5H8V9zm2 6.45l6 3.75V4.8l-6 3.75v6.9z" })) }, { writingDirection: t });
             };
             r.metadata = { width: 24, height: 24 };
             const o = r;
@@ -498,4 +498,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Articles-6107ac1a.48e6997a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Articles-6107ac1a.ea909f9a.js.map

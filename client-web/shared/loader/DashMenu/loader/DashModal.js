@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~loader.DashMenu~loader.DashModal~bundle.Account"],
+    ["shared~loader.DashMenu~loader.DashModal"],
     {
         395337: (e, i, l) => {
             l.d(i, { Z: () => r });
@@ -46,8 +46,8 @@
                 L = l(68290),
                 K = l(707570),
                 S = l(839),
-                A = l(593875),
-                x = l(829110),
+                x = l(593875),
+                A = l(829110),
                 O = l(720930),
                 P = l(516951),
                 j = l(450681),
@@ -99,7 +99,7 @@
                         Le = [];
                     const Ke = i.isTrue("subscriptions_branding_checkmark_logo_enabled"),
                         Se = (0, t.Dv)(V.lZ),
-                        [Ae, xe] = n.useState(!1),
+                        [xe, Ae] = n.useState(!1),
                         [Oe, Pe] = n.useState(!1),
                         je = i.isTrue("subscriptions_upsells_vo_nav_decoration_enabled"),
                         Ue = i.getStringValue("subscriptions_upsells_vo_nav_decoration_variant"),
@@ -107,7 +107,7 @@
                     n.useEffect(() => {
                         Ve &&
                             Se.get(Ce).then((e) => {
-                                xe(!e?.analyticsClickedV2), Pe(!e?.[Ve?.key]);
+                                Ae(!e?.analyticsClickedV2), Pe(!e?.[Ve?.key]);
                             });
                     }, [Se, Ve]);
                     const De = (0, E.I0)();
@@ -167,7 +167,7 @@
                                     Se.set(Ce, i);
                                 }),
                                 _i("analytics")),
-                            decoration: Ae ? n.createElement(o.ZP, { background: "blue500" }, ve) : null,
+                            decoration: xe ? n.createElement(o.ZP, { background: "blue500" }, ve) : null,
                         }),
                         Fi = () => {
                             const e = i.isTrue("subscriptions_premium_experiment_nav_text");
@@ -177,8 +177,8 @@
                         Li = { label: ne, link: "/logout", icon: C.default, onClick: _i("logout_overflow_item"), testID: Y.Z.logout },
                         Ki = { icon: T.default, label: re, link: (0, s.ju)("https://ads.x.com/?ref=gl-tw-tw-twitter-ads-rweb"), onClick: _i("twitter_ads_item") },
                         Si = i.isTrue("subscriptions_upsells_monetization_redesign_enabled"),
-                        Ai = { icon: F.default, label: te, link: Si ? "/i/monetization" : "/settings/monetization", onClick: _i("monetization") },
-                        xi = { icon: Z.default, label: se, link: "/settings", onClick: _i("settings_overflow_item"), testID: Y.Z.settings },
+                        xi = { icon: F.default, label: te, link: Si ? "/i/monetization" : "/settings/monetization", onClick: _i("monetization") },
+                        Ai = { icon: Z.default, label: se, link: "/settings", onClick: _i("settings_overflow_item"), testID: Y.Z.settings },
                         Oi = () => ({
                             label: je ? ye : ue,
                             onClick: () => (
@@ -197,17 +197,17 @@
                         Pi = { label: ue, onClick: _i("verified_organization_dashboard_item"), link: "/i/verified", icon: L.default },
                         ji = { label: de, onClick: _i("create_space_item"), link: "/i/spaces/start", icon: K.default },
                         Ui = { label: _e, onClick: _i("go_live_item"), link: "/i/go-live", icon: S.default },
-                        Vi = c ? { label: me, onClick: _i("communities_item"), link: `/${c.screen_name}/communities`, icon: A.default } : void 0,
-                        Di = Xe && c ? { label: we, onClick: _i("chat_item"), link: "/i/chat", icon: x.default, decoration: n.createElement(o.ZP, { background: "blue500" }, he) } : void 0,
+                        Vi = c ? { label: me, onClick: _i("communities_item"), link: `/${c.screen_name}/communities`, icon: x.default } : void 0,
+                        Di = Xe && c ? { label: we, onClick: _i("chat_item"), link: "/i/chat", icon: A.default, decoration: n.createElement(o.ZP, { background: "blue500" }, he) } : void 0,
                         Ii = i.isTrue("spaces_conference_enabled") || !!ri,
                         Mi = { label: "Conferences", onClick: _i("conferences_item"), link: "/i/conferences", icon: S.default },
                         Ri = { label: ke, onClick: _i("jobs_item"), link: "/jobs", icon: O.default },
                         zi = [fi, bi],
                         Ei = He && !Ye,
                         qi = Ne,
-                        Qi = (0, j.Z)([Di, wi, Je ? Zi : void 0, si ? hi : void 0, Ei ? Fi() : void 0, ci ? Vi : void 0, ze ? vi : void 0, ki, ei ? mi : void 0, qi ? (Be ? Pi : Oi()) : void 0, ai ? Ci : void 0, Qe ? pi : void 0, Fe || Te ? yi : void 0, di ? Ti() : void 0, Ai, Ki, oi ? Ri : void 0, Ii ? Mi : void 0, xi, Li]).filter(Re),
+                        Qi = (0, j.Z)([Di, wi, Je ? Zi : void 0, si ? hi : void 0, Ei ? Fi() : void 0, ci ? Vi : void 0, ze ? vi : void 0, ki, ei ? mi : void 0, qi ? (Be ? Pi : Oi()) : void 0, ai ? Ci : void 0, Qe ? pi : void 0, Fe || Te ? yi : void 0, di ? Ti() : void 0, xi, Ki, oi ? Ri : void 0, Ii ? Mi : void 0, Ai, Li]).filter(Re),
                         Wi = n.useContext(D.hC),
-                        Hi = (0, j.Z)([Di, M.yw.Lists > Wi && ze ? vi : void 0, M.yw.Premium > Wi && Je ? Zi : void 0, M.yw.PremiumSignup > Wi && Ei ? Fi() : void 0, M.yw.Bookmarks > Wi ? ki : void 0, M.yw.Payments > Wi && si ? hi : void 0, M.yw.Communities > Wi && ci ? Vi : void 0, M.yw.Articles > Wi && Ge ? mi : void 0, M.yw.CommunityNotes > Wi && Qe ? pi : void 0, M.yw.Analytics > Wi && di ? Ti() : void 0, Ai, M.yw.VerifiedOrgDash > Wi && qi && Be ? Pi : void 0, (((!Be || r.isLegacyVerifiedOrg()) && M.yw.VerifiedOrgSignup > Wi) || (r.isVerifiedOrgAffiliate() && !r.isVerifiedOrg())) && i.isTrue("blue_business_vo_nav_for_legacy_verified") ? Oi() : void 0, ai ? Ci : void 0, We ? gi : void 0, Fe || Te ? yi : void 0, Ki, M.yw.Jobs > Wi && oi ? Ri : void 0, void 0, ni ? ji : void 0, ti ? Ui : void 0, Ii ? Mi : void 0, xi]).filter(Re);
+                        Hi = (0, j.Z)([Di, M.yw.Lists > Wi && ze ? vi : void 0, M.yw.Premium > Wi && Je ? Zi : void 0, M.yw.PremiumSignup > Wi && Ei ? Fi() : void 0, M.yw.Bookmarks > Wi ? ki : void 0, M.yw.Payments > Wi && si ? hi : void 0, M.yw.Communities > Wi && ci ? Vi : void 0, M.yw.Articles > Wi && Ge ? mi : void 0, M.yw.CommunityNotes > Wi && Qe ? pi : void 0, M.yw.Analytics > Wi && di ? Ti() : void 0, xi, M.yw.VerifiedOrgDash > Wi && qi && Be ? Pi : void 0, (((!Be || r.isLegacyVerifiedOrg()) && M.yw.VerifiedOrgSignup > Wi) || (r.isVerifiedOrgAffiliate() && !r.isVerifiedOrg())) && i.isTrue("blue_business_vo_nav_for_legacy_verified") ? Oi() : void 0, ai ? Ci : void 0, We ? gi : void 0, Fe || Te ? yi : void 0, Ki, M.yw.Jobs > Wi && oi ? Ri : void 0, void 0, ni ? ji : void 0, ti ? Ui : void 0, Ii ? Mi : void 0, Ai]).filter(Re);
                     return (0, z.ZP)() ? ((Ze = Ze.concat(Hi)), $e && qe && (Le = zi)) : ((Ze = Ze.concat(Qi)), $e && (Le = zi)), { coreItems: Ze, countrySpecificItems: Le };
                 };
         },
@@ -269,4 +269,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DashMenu~loader.DashModal~bundle.Account.91ea250a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DashMenu~loader.DashModal.39fbc2ca.js.map

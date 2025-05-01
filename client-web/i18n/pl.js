@@ -4171,6 +4171,8 @@
                 i("e9b6d404", "Do jakich narzędzi wyszukiwania Grok ma mieć dostęp?"),
                 i("h15dce2e", "Ustawienia zaawansowane"),
                 i("ff9dc268", "Edytuj podpowiedź"),
+                i("acb2baa0", "Create Images"),
+                i("h30fd372", "Try Voice Mode"),
                 i("e9fcdd0c", "Poproś Groka, aby agresywnie przeszukiwał Internet"),
                 i("fc4e8aba", "Poproś Groka, aby rozumował krok po kroku"),
                 i("e4ae6abe", "Poproś Groka o przekształcenie obrazu"),
@@ -4340,41 +4342,16 @@
                 i("g01599b6", "Odpowiedź 2"),
                 i("e02694e0", "Odpowiedź 1"),
                 i("h6867fcc", "Wolę tę odpowiedź"),
-                i("b2175228", "Grok dla systemu Android już tu jest"),
-                i("d2d8650c", "Korzystaj z najlepszych funkcji Groka dostępnych w naszej nowej autonomicznej aplikacji"),
-                i("ia5bef3e", "Jak mogę Ci dziś pomóc?"),
-                i("ge683598", "Zapytaj Groka o cokolwiek..."),
-                i("fef25c88", "Wypróbuj Groka bezpłatnie"),
-                i("fb172aa8", "Bezpłatny poziom Groka jest teraz dostępny w Twoim regionie. Umożliwia on czatowanie, generowanie obrazów i analizowanie zdjęć. Obowiązują określone limity."),
-                i("d7af4f40", "Wygeneruj obraz przedstawiający galaktykę"),
-                i("gcb6c0be", "Grok może popełniać błędy. Zweryfikuj uzyskane wyniki."),
-                i("cb88fd82", "Używasz bezpłatnej wersji Groka."),
-                i("g27a5314", "Aby zacząć używać Groka, dodaj numer telefonu do swojego konta."),
-                i("bdd84568", "Twoje konto jest zbyt nowe, aby umożliwiało używanie Groka. Spróbuj ponownie później."),
-                i("a9109a94", "Wioska solarpunkowa"),
-                i("g986f7a4", "Wygeneruj obraz wioski solarpunkowej"),
-                i("ad685264", "Fudżi"),
-                i("hdb08284", "Wygeneruj obraz Fudżi w stylu anime"),
-                i("a986ae84", "Latający kot"),
-                i("a14b556a", "Wygeneruj obraz latającego kota"),
-                i("gc16b670", "Robot na łące"),
-                i("d5b8fa44", "Wygeneruj obraz robota na łące"),
-                i("da196ff6", "Astronauta na Marsie"),
-                i("ae3979cc", "Wygeneruj portret astronauty na Marsie"),
-                i("a682460e", "Mknący roadster"),
-                i("e03e5514", "Wygeneruj zdjęcie Tesli Roadster jadącej przez Shinjuku z efektem rozmycia ruchu"),
-                i("e68eac68", "Podziwianie zorzy polarnej"),
-                i("hc6e6754", "Wygeneruj zdjęcie osoby podziwiającej zorzę polarną"),
-                i("cf59f9f6", "Pomóż mi napisać list motywacyjny"),
-                i("cd9aeac8", "Pokaż dzisiejsze nagłówki prasowe"),
-                i("acf2f0be", "Poleć grę RPG fantasy"),
-                i("b9bd12e2", "Rozwiąż problem 2Sum w Pythonie"),
+                i("d07488a6", "Get the Android app"),
+                i("d9cfe70c", "Access advanced Grok features"),
                 i("hf9afab0", "Włącz tryb DeepSearch, aby skanować Internet i serwis X, analizować informacje oraz dostarczać szczegółowe, dobrze uzasadnione odpowiedzi dzięki błyskawicznie działającej, opartej na agentach funkcji wyszukiwania."),
                 i("ef3b3f04", "Włącz tryb Myśl, aby używać naszego modelu rozumowania. Sprawdza się on najlepiej w przypadku matematyki, nauki i programowania. Możesz także kazać Grokowi „myśleć intensywniej” nad dowolnym pytaniem wymagającym użycia większej liczby komórek mózgowych. "),
                 i("b43636b8", "Wprowadzamy Groka 3"),
                 i("j376298c", "W Groku 3, czyli naszym najwydajniejszym modelu, wprowadzamy dwa nowe tryby interakcji: DeepSearch i Myśl."),
                 i("e3584f8e", "Jakich 10 najlepszych strategii handlu opcjami używają fundusze hedgingowe"),
                 i("d91b7b8a", "Ile kosztowało wybudowanie uniwersytetu w 1885 roku?"),
+                i("ia5bef3e", "Jak mogę Ci dziś pomóc?"),
+                i("ebea5880", "Recent Conversations"),
                 i("e13591c0", "Przykładowa rozmowa z Grokiem"),
                 i("c27ca452", "Posiadacze subskrypcji Premium mogą teraz korzystać z naszej najbardziej zaawansowanej AI, czyli Groka, w serwisie X."),
                 i("b6abc25a", "Wprowadzamy Groka 2"),
@@ -4918,8 +4895,8 @@
                 i("ff95a9cc", "Identyfikator filmu"),
                 i("a97e358e", "Link do filmu"),
                 i("e10e8b46", "Pokazywane są tylko filmy z ostatnich 100 dni."),
-                i("ba37f6da", "Przegląd filmu");
-            i("f19846b2", "Miniatura filmu"),
+                i("ba37f6da", "Przegląd filmu"),
+                i("f19846b2", "Miniatura filmu"),
                 i("ccd6f4a8", "Tytuł filmu"),
                 i("c8410542", "Liczba wyświetleń Twojego filmu."),
                 i("a532072a", "Oglądający"),
@@ -4941,8 +4918,8 @@
                 i("f2f463ea", "-startup ai"),
                 i("a10a357e", "zawiera wyraz „ai” i ma co najmniej 50 polubień"),
                 i("ca8ed1e8", "ai min_faves:50"),
-                i("i945a3f2", "zawiera wyraz „ai” oraz adres URL, w którym znajduje się wyraz „grok”"),
-                i("a9348088", "ai url:grok"),
+                i("i945a3f2", "zawiera wyraz „ai” oraz adres URL, w którym znajduje się wyraz „grok”");
+            i("a9348088", "ai url:grok"),
                 i("b5c3cdbc", "wzmianka dotycząca konta „grok” w serwisie X"),
                 i("e2634592", "@grok"),
                 i("i88ba038", "Alert wyłączony"),
@@ -5876,10 +5853,10 @@
                 i("ae58026a", "Otwórz plik spersonalizowanego polubienia .json, aby zobaczyć podgląd"),
                 i("hd0bc1eb", function (e) {
                     return e.name + " transmituje na żywo";
-                });
-            i("bea1f26b", function (e) {
-                return e.name + " transmitował/a na żywo";
-            }),
+                }),
+                i("bea1f26b", function (e) {
+                    return e.name + " transmitował/a na żywo";
+                }),
                 i("ab3ee97f", function (e) {
                     return e.screenName + " nie transmituje na żywo";
                 }),
@@ -5907,8 +5884,8 @@
                 i("edef4c82", "Publikuj wpisy bezpośrednio w grupie dyskusyjnej"),
                 i("a7640df6", "Twoje wpisy są udostępniane członkom grupy dyskusyjnej oraz Twoim obserwującym."),
                 i("h3bb8068", "Ciekawe rozmowy"),
-                i("a709f8f8", "Administratorzy i moderatorzy pomagają zarządzać Grupami dyskusyjnymi i dbać o produktywność rozmów."),
-                i("c8d33380", "Nowe pozycje"),
+                i("a709f8f8", "Administratorzy i moderatorzy pomagają zarządzać Grupami dyskusyjnymi i dbać o produktywność rozmów.");
+            i("c8d33380", "Nowe pozycje"),
                 i("cb6adb10", "Odkryj Grupy dyskusyjne"),
                 i("df362964", "Znajdź Grupy dyskusyjne"),
                 i("dfd5031f", function (e) {
@@ -6882,8 +6859,8 @@
                 i("c4fd68da", "Dostosuj swoje środowisko"),
                 i("c0195168", "Zmień ikonę aplikacji i opcje nawigacji"),
                 i("b6b5dc94", "Uzyskaj weryfikację"),
-                i("b06db848", "Wyróżniaj się spośród innych użytkowników platformy");
-            i("e3e3a97c", "Miej udział w dochodach generowanych przez Twoje wpisy"),
+                i("b06db848", "Wyróżniaj się spośród innych użytkowników platformy"),
+                i("e3e3a97c", "Miej udział w dochodach generowanych przez Twoje wpisy"),
                 i("f15bc24e", "Zwiększone limity Groka"),
                 i("c4666e1c", "Więcej możliwości używania naszego najnowszego modelu Grok 3"),
                 i("he74ae7a", "Najwyższe limity użycia Groka"),
@@ -6905,8 +6882,8 @@
                 i("c3148608", "Szybciej otrzymuj potrzebną pomoc"),
                 i("b485ca6e", "Karta Najciekawsze"),
                 i("d438955e", "Prezentuj swoje najpopularniejsze wpisy"),
-                i("f373a352", "Szyfrowane wiadomości prywatne"),
-                i("g7405aca", "Czatuj bezpiecznie dzięki kompleksowemu szyfrowaniu"),
+                i("f373a352", "Szyfrowane wiadomości prywatne");
+            i("g7405aca", "Czatuj bezpiecznie dzięki kompleksowemu szyfrowaniu"),
                 i("j659fa0c", "Najlepsze funkcje Groka 3"),
                 i("ibff5694", "Odblokuj najwyższe limity użycia, tryby DeepSearch i Myśl oraz wczesny dostęp do nowych funkcji"),
                 i("i824f4da", "Mniej reklam"),
@@ -7858,7 +7835,34 @@
                 i("ddfd6718", "Realizacja płatności nie powiodła się"),
                 i("i90ea7d2", "Jak najszybciej zaktualizuj swoje rozliczenie, aby nie stracić korzyści."),
                 i("a62359e6", "Ustawienia zweryfikowanej organizacji"),
-                i("ge221b7c", "Podnieś poziom subskrypcji programu Zweryfikowane Organizacje, aby móc korzystać z kont powiązanych oraz otrzymać więcej kredytów reklamowych.");
+                i("ge221b7c", "Podnieś poziom subskrypcji programu Zweryfikowane Organizacje, aby móc korzystać z kont powiązanych oraz otrzymać więcej kredytów reklamowych."),
+                i("i4dccc18", "Rachunki"),
+                i("ec3cd6e4", "Zarządzaj sposobem płatności, aktualizuj informacje dotyczące rozliczeń i przeglądaj faktury."),
+                i("dac61c3c", "Ustawienia konta"),
+                i("b6b5fd66", "Zarządzaj swoim kontem w serwisie X (obejmuje to możliwość zmiany nazwy użytkownika lub hasła)."),
+                i("hb9c4a1c", "Pytania, zgłoszenia usterek i opinie"),
+                i("c674f5b4", "Konfiguruj płatności faktur"),
+                i("i8237e66", "Zmień płatności kartą kredytową na fakturowanie za pośrednictwem przelewów bankowych."),
+                i("hebd348a", "Skonfiguruj sposób wykorzystania reklam do promowania ofert pracy z portalu Rekrutacja."),
+                i("ib5e6f90", "Promocja oferty pracy"),
+                i("id720215", "Rekrutacja"),
+                i("dd59f146", "Konto do promowania ofert pracy"),
+                i("e7e36818", "Konta reklamowe kwalifikują się do promocji ofert pracy, gdy są w pełni skonfigurowane i mają ustawione źródło finansowania."),
+                i("c28566e0", "Konto reklamowe"),
+                i("c80160d3", "Reklama"),
+                i("ff0edac0", "Czy na pewno chcesz anulować subskrypcję?"),
+                i("h2ac0348", "No, wróć"),
+                i("dbf9667e", "Tak"),
+                i("j7592572", "Twój ruch"),
+                i("ee778942", "Sygnalizacja świetlna"),
+                i("fdd57981", function (e) {
+                    return "Chcemy zaoferować Ci jednorazowy bezpłatny kredyt reklamowy w wysokości " + e.totalAmount + " USD.";
+                }),
+                i("i032a231", function (e) {
+                    return "Zostaję i chcę otrzymać mój kredyt reklamowy w wysokości " + e.totalAmount;
+                }),
+                i("hd7d278c", "Nie, dziękuję"),
+                i("jf8a0dea", "Doskonale! Twój nowy bezpłatny kredyt reklamowy trafi na Twoje konto w następnym cyklu rozliczeniowym.");
             function t(e, a) {
                 for (var o = 0; o < a.length; o++) {
                     var i = a[o];
@@ -7897,34 +7901,7 @@
                     c(e, a)
                 );
             }
-            i("i4dccc18", "Rachunki"),
-                i("ec3cd6e4", "Zarządzaj sposobem płatności, aktualizuj informacje dotyczące rozliczeń i przeglądaj faktury."),
-                i("dac61c3c", "Ustawienia konta"),
-                i("b6b5fd66", "Zarządzaj swoim kontem w serwisie X (obejmuje to możliwość zmiany nazwy użytkownika lub hasła)."),
-                i("hb9c4a1c", "Pytania, zgłoszenia usterek i opinie"),
-                i("c674f5b4", "Konfiguruj płatności faktur"),
-                i("i8237e66", "Zmień płatności kartą kredytową na fakturowanie za pośrednictwem przelewów bankowych."),
-                i("hebd348a", "Skonfiguruj sposób wykorzystania reklam do promowania ofert pracy z portalu Rekrutacja."),
-                i("ib5e6f90", "Promocja oferty pracy"),
-                i("id720215", "Rekrutacja"),
-                i("dd59f146", "Konto do promowania ofert pracy"),
-                i("e7e36818", "Konta reklamowe kwalifikują się do promocji ofert pracy, gdy są w pełni skonfigurowane i mają ustawione źródło finansowania."),
-                i("c28566e0", "Konto reklamowe"),
-                i("c80160d3", "Reklama"),
-                i("ff0edac0", "Czy na pewno chcesz anulować subskrypcję?"),
-                i("h2ac0348", "No, wróć"),
-                i("dbf9667e", "Tak"),
-                i("j7592572", "Twój ruch"),
-                i("ee778942", "Sygnalizacja świetlna"),
-                i("fdd57981", function (e) {
-                    return "Chcemy zaoferować Ci jednorazowy bezpłatny kredyt reklamowy w wysokości " + e.totalAmount + " USD.";
-                }),
-                i("i032a231", function (e) {
-                    return "Zostaję i chcę otrzymać mój kredyt reklamowy w wysokości " + e.totalAmount;
-                }),
-                i("hd7d278c", "Nie, dziękuję"),
-                i("jf8a0dea", "Doskonale! Twój nowy bezpłatny kredyt reklamowy trafi na Twoje konto w następnym cyklu rozliczeniowym."),
-                i("ebbb3154", "Zamknij i wróć do serwisu X"),
+            i("ebbb3154", "Zamknij i wróć do serwisu X"),
                 i("j1f68dda", "Ostatni krok: czy na pewno chcesz anulować?"),
                 i("c9c3464c", "Trwa anulowanie subskrypcji"),
                 i("dd3a293c", "Twoja subskrypcja opcji Zweryfikowane Organizacje wygasła."),
@@ -8902,8 +8879,8 @@
                 i("ccd32094", "Teraz"),
                 i("abfcce0d", function (e) {
                     return e.amountOfTime + " temu";
-                });
-            i("ae408b76", "Podano dalej"),
+                }),
+                i("ae408b76", "Podano dalej"),
                 i("j355f008", "Przypięty wpis"),
                 i("habf9678", "Przypięty przez autora"),
                 i("db0798ed", function (e) {
@@ -8959,10 +8936,10 @@
                 }),
                 i("d925a4f9", function (e) {
                     return "Pozostał" + n(e.count, "y " + e.formattedCount + " minuty", "o " + e.formattedCount + " minut", "a " + e.formattedCount + " minuta", "o " + e.formattedCount + " minut");
-                }),
-                i("ib15cddb", function (e) {
-                    return "Pozostał" + n(e.count, "y " + e.formattedCount + " godziny", "o " + e.formattedCount + " godzin", "a " + e.formattedCount + " godzina", "o " + e.formattedCount + " godzin");
-                }),
+                });
+            i("ib15cddb", function (e) {
+                return "Pozostał" + n(e.count, "y " + e.formattedCount + " godziny", "o " + e.formattedCount + " godzin", "a " + e.formattedCount + " godzina", "o " + e.formattedCount + " godzin");
+            }),
                 i("db9ed19f", function (e) {
                     return "Pozostał" + n(e.count, "y " + e.formattedCount + " dni", "o " + e.formattedCount + " dni", " " + e.formattedCount + " dzień", "o " + e.formattedCount + " dni");
                 }),
@@ -13219,4 +13196,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.51b4335a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.f6f1c26a.js.map

@@ -3,7 +3,7 @@
     ["bundle.UserAvatar-3c20ad5c", "bundle.DirectMessages-6ac0f1a5"],
     {
         620988: (e, t, n) => {
-            n.d(t, { ZH: () => x, ZP: () => w, x9: () => y });
+            n.d(t, { ZH: () => x, ZP: () => k, x9: () => y });
             n(136728);
             var a = n(202784),
                 o = n(726426),
@@ -86,7 +86,7 @@
                         },
                         [g, o, s, i],
                     ),
-                    w = a.useCallback(
+                    k = a.useCallback(
                         async (e) => {
                             const a = r()(),
                                 o = { abortController: new AbortController(), isUploading: !1, remote: e };
@@ -94,7 +94,7 @@
                         },
                         [t],
                     );
-                return a.createElement(v.Provider, { value: { selectedFiles: t, onFileSelected: y, clearSelectedFile: x, onGrokFileSelected: w } }, e);
+                return a.createElement(v.Provider, { value: { selectedFiles: t, onFileSelected: y, clearSelectedFile: x, onGrokFileSelected: k } }, e);
             }
             function y() {
                 const e = (0, l.hC)("responsive_web_grok_pdf_upload_enabled"),
@@ -104,7 +104,7 @@
                     return e && n.push("application/pdf"), t && (n.push("text/plain"), n.push("text/xml"), n.push("text/csv"), n.push("text/markdown"), n.push("text/x-markdown"), n.push("text/md"), n.push("text/calendar"), n.push("text/vcard"), n.push("text/json"), n.push("text/yaml"), n.push("text/x-python"), n.push("text/x-csrc"), n.push("text/x-c++src"), n.push("text/x-csharp"), n.push("text/x-ruby"), n.push("text/x-java-source"), n.push("text/x-go"), n.push("text/x-rust"), n.push("text/x-swift"), n.push("text/x-kotlin"), n.push("text/x-sql"), n.push("text/x-lua"), n.push("text/x-scala"), n.push("text/x-haskell"), n.push("text/x-php"), n.push("text/x-perl"), n.push("text/x-shellscript"), n.push("text/x-rsrc"), n.push("text/x-dart"), n.push("application/markdown"), n.push("application/xml"), n.push("application/json"), n.push("application/x-yaml"), n.push("application/x-latex"), n.push("application/x-sh"), n.push("application/x-msdownload"), n.push("application/x-httpd-php"), n.push("application/sql"), n.push("application/vnd.openxmlformats-officedocument.wordprocessingml.document"), n.push("application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")), n;
                 }, [e, t]);
             }
-            function w() {
+            function k() {
                 return a.useContext(v);
             }
         },
@@ -199,27 +199,27 @@
                     v = (0, l.v9)(n.selectStatus),
                     x = (0, l.v9)(d.Pt),
                     y = (0, l.v9)(n.selectConversationId),
-                    w = (0, l.v9)(d.pZ),
-                    k = (0, l.v9)(d.uF),
-                    S = (0, l.v9)(d.F9),
-                    b = (0, l.v9)(n.selectAnalysisEntityId),
+                    k = (0, l.v9)(d.pZ),
+                    w = (0, l.v9)(d.uF),
+                    b = (0, l.v9)(d.F9),
+                    S = (0, l.v9)(n.selectAnalysisEntityId),
                     C = (0, l.v9)(n.selectUsingExperiment);
                 let E = !1;
                 const I = (0, c.hC)("responsive_web_grok_general_availability");
-                e.isTrueAndEnabled("subscriptions_inapp_grok") ? (E = "premium") : (I || k) && (E = w.length > 0 ? "restricted" : "free");
+                e.isTrueAndEnabled("subscriptions_inapp_grok") ? (E = "premium") : (I || w) && (E = k.length > 0 ? "restricted" : "free");
                 const N = a.useCallback(
                         async (e, t) => {
-                            g !== e && (i(n.setMode(e)), r.ZP.isTwitterApp() || (await i((0, u.O)(e, S))), (0, p.RC)(t, e));
+                            g !== e && (i(n.setMode(e)), r.ZP.isTwitterApp() || (await i((0, u.O)(e, b))), (0, p.RC)(t, e));
                         },
-                        [i, n, g, S],
+                        [i, n, g, b],
                     ),
                     Z = a.useCallback(
                         async (e, t, n) => {
-                            e !== S && (i((0, d.j1)(e, t)), r.ZP.isTwitterApp() || (await i((0, u.O)(g, e))), (0, p.JO)(n, e));
+                            e !== b && (i((0, d.j1)(e, t)), r.ZP.isTwitterApp() || (await i((0, u.O)(g, e))), (0, p.JO)(n, e));
                         },
-                        [i, g, S],
+                        [i, g, b],
                     );
-                return { messageIds: o, access: E, status: v, grokSettingsStatus: x, conversationKey: t, conversationId: y, analysisEntityId: b, accessRestrictedReasons: w, fetchConversationIdStatus: h, fetchConversationIdError: _, mode: g, model: S, changeMode: N, changeModel: Z, usingExperiment: C };
+                return { messageIds: o, access: E, status: v, grokSettingsStatus: x, conversationKey: t, conversationId: y, analysisEntityId: S, accessRestrictedReasons: k, fetchConversationIdStatus: h, fetchConversationIdError: _, mode: g, model: b, changeMode: N, changeModel: Z, usingExperiment: C };
             }
         },
         979512: (e, t, n) => {
@@ -243,10 +243,10 @@
                 v = n(511582),
                 x = n(389071),
                 y = n(96275),
-                w = n(327597),
-                k = n(189953),
-                S = n(456228),
-                b = n(551864),
+                k = n(327597),
+                w = n(189953),
+                b = n(456228),
+                S = n(551864),
                 C = n(623494),
                 E = n(461900),
                 I = n(737368),
@@ -284,13 +284,13 @@
                                     s({ text: A });
                                 }
                             const N = {};
-                            if ((("post_image_annotation" !== h && "post_image_annotation_fullscreen" !== h) || ((N.imageGen = !0), (0, C.u1)(t, "post_image_annotation_fullscreen" === h, m)), "grok_image_feed" === h && (N.imageGen = !0), c.pathname.startsWith("/i/grok") && !c.pathname.startsWith("/i/grok/feed"))) return void r((0, w.u)({ analytics: t, conversationKey: F })({ text: _, attachments: I ? [I] : void 0, mode: k.IK.REGULAR, returnCitations: O, promptMetadata: f, imageGenerationCount: J, toolOverrides: N, source: h, isDeepsearch: d, isReasoning: p }));
+                            if ((("post_image_annotation" !== h && "post_image_annotation_fullscreen" !== h) || ((N.imageGen = !0), (0, C.u1)(t, "post_image_annotation_fullscreen" === h, m)), "grok_image_feed" === h && (N.imageGen = !0), c.pathname.startsWith("/i/grok") && !c.pathname.startsWith("/i/grok/feed"))) return void r((0, k.u)({ analytics: t, conversationKey: F })({ text: _, attachments: I ? [I] : void 0, mode: w.IK.REGULAR, returnCitations: O, promptMetadata: f, imageGenerationCount: J, toolOverrides: N, source: h, isDeepsearch: d, isReasoning: p }));
                             const Z = a ?? i()();
                             if (a) {
                                 const e = a || "";
                                 await r((0, y.d)(e, t));
                             } else r((0, x.Ki)(Z));
-                            if ((P && M ? ((0, C.YW)(t, h), B && r(g.bi(v.S.COLLAPSED)), r((0, S.bi)(b.j.EXPANDED))) : R.push("/i/grok"), e)) r((0, w.u)({ analytics: t, conversationKey: Z })({ text: _, attachments: I ? [I] : void 0, mode: k.IK.REGULAR, promptMetadata: f, returnCitations: O, imageGenerationCount: J, toolOverrides: N, source: h, isDeepsearch: d, isReasoning: p }));
+                            if ((P && M ? ((0, C.YW)(t, h), B && r(g.bi(v.S.COLLAPSED)), r((0, b.bi)(S.j.EXPANDED))) : R.push("/i/grok"), e)) r((0, k.u)({ analytics: t, conversationKey: Z })({ text: _, attachments: I ? [I] : void 0, mode: w.IK.REGULAR, promptMetadata: f, returnCitations: O, imageGenerationCount: J, toolOverrides: N, source: h, isDeepsearch: d, isReasoning: p }));
                             else {
                                 const e = { text: _, attachments: I ? [I] : [] };
                                 u && I ? (e.modeButtonFilterKey = "ImageEdit") : d ? (e.modeButtonFilterKey = "Research") : p && (e.modeButtonFilterKey = "Reasoning"), r((0, x.Uo)(Z, e));
@@ -309,7 +309,7 @@
             }
         },
         623494: (e, t, n) => {
-            n.d(t, { DE: () => f, G$: () => s, HO: () => E, HR: () => A, JO: () => g, Jm: () => b, NH: () => O, RC: () => _, S7: () => Z, UV: () => P, Uk: () => k, YI: () => d, YW: () => N, ZY: () => h, az: () => c, c3: () => i, dP: () => x, dd: () => m, eS: () => S, eV: () => C, hf: () => v, hq: () => l, kl: () => w, mm: () => p, op: () => y, pv: () => r, qQ: () => R, u1: () => I, y6: () => u, zC: () => F, zX: () => M });
+            n.d(t, { DE: () => f, G$: () => s, HO: () => E, HR: () => A, JO: () => g, Jm: () => S, NH: () => O, RC: () => _, S7: () => Z, UV: () => P, Uk: () => w, YI: () => d, YW: () => N, ZY: () => h, az: () => c, c3: () => i, dP: () => x, dd: () => m, eS: () => b, eV: () => C, hf: () => v, hq: () => l, kl: () => k, mm: () => p, op: () => y, pv: () => r, qQ: () => R, u1: () => I, y6: () => u, zC: () => F, zX: () => M });
             var a = n(163889);
             function o() {
                 return `online:${window.navigator.onLine}|effectiveType:${window.navigator.connection?.effectiveType ?? "unknown"}`;
@@ -362,23 +362,23 @@
             function y(e, t) {
                 U(e)({ element: "file-attachment", action: "fail", data: { event_info: t } });
             }
-            function w(e, t, n) {
+            function k(e, t, n) {
                 U(e)({ element: "api-add-response", action: "error", data: { event_info: `${t.message}\n${t.stack}\n${o()}` } }), (0, a.Hj)(t, { level: "warning", extra: n });
             }
-            function k(e, t) {
+            function w(e, t) {
                 U(e)({ element: "api-add-response", action: "fail", data: { event_info: `${t}\n${o()}` } });
             }
-            function S(e, t) {
+            function b(e, t) {
                 U(e)({ element: "response-chunk-read", action: "timer_elapsed", data: { event_info: t ? "first_chunk" : void 0 } });
             }
-            function b(e) {
+            function S(e) {
                 U(e)({ element: "file-upload", action: "success" });
             }
             function C(e, t) {
                 U(e)({ element: "file-upload", action: "fail", data: { event_info: t } });
             }
             function E(e, t) {
-                U(e)({ element: "grok-post-analyze", action: "start", data: { event_source: t ? "post_details" : "timeline" } });
+                U(e)({ element: "grok_post_analysis_button", action: "click", data: { event_source: t ? "post_details" : "timeline" } });
             }
             function I(e, t, n) {
                 U(e)({ element: "grok-post-image-annotation", action: "start", data: { event_source: t ? "post_details" : "timeline", event_info: n ? JSON.stringify({ mediaId: n }) : void 0 } });
@@ -412,7 +412,7 @@
             };
         },
         156607: (e, t, n) => {
-            n.r(t), n.d(t, { UserAvatarScreen: () => y, default: () => w });
+            n.r(t), n.d(t, { UserAvatarScreen: () => y, default: () => k });
             var a = n(202784),
                 o = n(290402),
                 r = n(300234),
@@ -469,10 +469,10 @@
                         ),
                     );
                 },
-                w = x(y);
+                k = x(y);
         },
         332912: (e, t, n) => {
-            n.r(t), n.d(t, { UserHeaderScreen: () => y, default: () => w });
+            n.r(t), n.d(t, { UserHeaderScreen: () => y, default: () => k });
             var a = n(202784),
                 o = n(290402),
                 r = n(300234),
@@ -524,8 +524,8 @@
                         )
                     );
                 },
-                w = v(y);
+                k = v(y);
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserAvatar-3c20ad5c.098a58ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserAvatar-3c20ad5c.d0a24c6a.js.map

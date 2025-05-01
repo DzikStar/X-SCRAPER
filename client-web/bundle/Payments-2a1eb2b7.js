@@ -138,7 +138,7 @@
                 if (a === C.O.Cashback) return i;
                 switch (r) {
                     case b.x.Transfer:
-                        return n ? `For "${n}"` : "";
+                        return n ? `For "${n}"` : i;
                     case b.x.Deposit:
                         return s ? "Direct Deposit" : e ? `From ${e}` : "";
                     case b.x.Withdraw:
@@ -416,4 +416,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-2a1eb2b7.2daedb6a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-2a1eb2b7.9461e56a.js.map

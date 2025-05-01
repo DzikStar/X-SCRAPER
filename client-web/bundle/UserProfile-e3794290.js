@@ -198,7 +198,7 @@
                                         hoverLabel: { label: Ce },
                                         icon: n.createElement(le.x1, null),
                                         onPress: () => {
-                                            h?.screen_name && (w.scribe({ element: "grok_profile_summary_button", action: "click" }), A({ text: `@${h.screen_name}`, autoSubmit: !0, source: "user_profile_summary" }));
+                                            h?.screen_name && (w.scribe({ element: "grok_profile_summary", action: "click" }), A({ text: `@${h.screen_name}`, autoSubmit: !0, source: "user_profile_summary" }));
                                         },
                                         style: Se.button,
                                     })
@@ -752,4 +752,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-e3794290.8800922a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-e3794290.1fdaea7a.js.map

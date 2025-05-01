@@ -4162,6 +4162,8 @@
                 e("e9b6d404", "Mihin hakutyökaluihin Grokin pitäisi päästä?"),
                 e("h15dce2e", "Lisäasetukset"),
                 e("ff9dc268", "Muokkaa kehotetta"),
+                e("acb2baa0", "Create Images"),
+                e("h30fd372", "Try Voice Mode"),
                 e("e9fcdd0c", "Pyydä Grokia tekemään aggressiivinen verkkohaku"),
                 e("fc4e8aba", "Pyydä Grokia päättelemään vaiheittaisesti"),
                 e("e4ae6abe", "Pyydä Grokia muuntamaan kuvasi"),
@@ -4331,41 +4333,16 @@
                 e("g01599b6", "Vastaus 1"),
                 e("e02694e0", "Vastaus 2"),
                 e("h6867fcc", "Tämä vastaus on parempi"),
-                e("b2175228", "Grokin Android-versio on täällä"),
-                e("d2d8650c", "Hyödynnä Grokia tehokkaimmin uudessa erillisessä sovelluksessa"),
-                e("ia5bef3e", "Miten voin olla avuksi?"),
-                e("ge683598", "Kysy Grokilta mitä vain"),
-                e("fef25c88", "Kokeile Grokia maksutta nyt"),
-                e("fb172aa8", "Maksuton Grok-taso on nyt saatavilla alueellasi. Voit keskustella, muodostaa kuvia ja analysoida kuvia. Palveluun sovelletaan rajoituksia."),
-                e("d7af4f40", "Muodosta kuva galaksista"),
-                e("gcb6c0be", "Grok tekee virheitä. Tarkista itse sen tuottama teksti."),
-                e("cb88fd82", "Käytät Grokin maksutonta versiota."),
-                e("g27a5314", "Jos haluat aloittaa Grokin käytön, lisää puhelinnumero tilillesi."),
-                e("bdd84568", "Tilisi on liian uusi, jotta voisit käyttää Grokia. Yritä myöhemmin uudelleen."),
-                e("a9109a94", "Solarpunk-kylä"),
-                e("g986f7a4", "Tuota kuva solarpunk-kylästä"),
-                e("ad685264", "Fuji-vuori"),
-                e("hdb08284", "Tee anime-kuva Fuji-vuoresta"),
-                e("a986ae84", "Lentävä kissa"),
-                e("a14b556a", "Tuota kuva lentävästä kissasta"),
-                e("gc16b670", "Robotti kukkakedolla"),
-                e("d5b8fa44", "Tuota kuva robotista kukkakedolla"),
-                e("da196ff6", "Astronautti Marsissa"),
-                e("ae3979cc", "Tee kuva astronautista Marsissa"),
-                e("a682460e", "Avoauto vauhdissa"),
-                e("e03e5514", "Tee kuva avo-Teslasta Shinjukussa, lisää vauhtisumeutta"),
-                e("e68eac68", "Revontulten ihastelua"),
-                e("hc6e6754", "Tee kuva, jossa joku ihastelee revontulia"),
-                e("cf59f9f6", "Auta kirjoittamaan saatekirje"),
-                e("cd9aeac8", "Kerro päivän uutisaiheet"),
-                e("acf2f0be", "Suosittele fantasia-RPG-peliä"),
-                e("b9bd12e2", "Ratkaise two-sum-tehtävä Pythonilla"),
+                e("d07488a6", "Get the Android app"),
+                e("d9cfe70c", "Access advanced Grok features"),
                 e("hf9afab0", "Anna DeepSearchin skannata internetiä ja X:ää, analysoida informaatiota ja tuottaa tarkkoja ja perusteltuja vastauksia nopealla toimijahaulla."),
                 e("ef3b3f04", "Anna Grokin miettiä käyttäen päättelymalliamme. Se toimii parhaiten matematiikan, luonnontieteiden ja koodauksen kysymyksissä. Voit pyytää Grokia myös miettimään ankarammin kysymystä, joka vaatisi enemmän ajattelukapasiteettia. "),
                 e("b43636b8", "Esittelyssä Grok 3"),
                 e("j376298c", "Grok 3 sisältää kaksi uutta vuorovaikutusmoodia tehokkaaseen hakuun: DeepSearch ja Mieti."),
                 e("e3584f8e", "Mitkä 10 optiokaupankäynnin strategiaa menestyvät parhaiten hedgerahastojen käytössä"),
                 e("d91b7b8a", "Mitä maksaisi yliopiston rakentaminen vuonna 1885?|"),
+                e("ia5bef3e", "Miten voin olla avuksi?"),
+                e("ebea5880", "Recent Conversations"),
                 e("e13591c0", "Grok-esimerkkikeskustelu"),
                 e("c27ca452", "Premium-tilaajat pääsevät käyttämään X:ssä edistyneintä tekoälyämme, Grokia."),
                 e("b6abc25a", "Esittelyssä Grok 2"),
@@ -4909,8 +4886,8 @@
                 e("ff95a9cc", "Videon tunnus"),
                 e("a97e358e", "Videon linkki"),
                 e("e10e8b46", "Näytetään videot viimeisten 100 päivän ajalta."),
-                e("ba37f6da", "Yhteenveto videoista");
-            e("f19846b2", "Videon esikatselukuva"),
+                e("ba37f6da", "Yhteenveto videoista"),
+                e("f19846b2", "Videon esikatselukuva"),
                 e("ccd6f4a8", "Videon nimi"),
                 e("c8410542", "Videosi katselumäärä."),
                 e("a532072a", "Katsojat"),
@@ -4932,8 +4909,8 @@
                 e("f2f463ea", "ai -startup"),
                 e("a10a357e", 'sisältää termin "ai" ja on saanut ainakin 50 tykkäystä'),
                 e("ca8ed1e8", "ai min_faves:50"),
-                e("i945a3f2", 'sisältää termin "ai" ja URL-osoitteen, jossa esiintyy sana "grok"'),
-                e("a9348088", "ai url:grok"),
+                e("i945a3f2", 'sisältää termin "ai" ja URL-osoitteen, jossa esiintyy sana "grok"');
+            e("a9348088", "ai url:grok"),
                 e("b5c3cdbc", 'mainitsee X-tilin "grok"'),
                 e("e2634592", "@grok"),
                 e("i88ba038", "Ilmoitukset poistettu käytöstä"),
@@ -5867,10 +5844,10 @@
                 e("ae58026a", "Avaa bränditykkäys-.json-tiedosto esikatselua varten"),
                 e("hd0bc1eb", function (a) {
                     return a.name + " on live-tilassa";
-                });
-            e("bea1f26b", function (a) {
-                return a.name + " oli live-tilassa";
-            }),
+                }),
+                e("bea1f26b", function (a) {
+                    return a.name + " oli live-tilassa";
+                }),
                 e("ab3ee97f", function (a) {
                     return a.screenName + " ei ole live-tilassa";
                 }),
@@ -5898,8 +5875,8 @@
                 e("edef4c82", "Julkaise suoraan Yhteisöön"),
                 e("a7640df6", "Yhteisön jäsenet ja seuraajasi näkevät julkaisusi."),
                 e("h3bb8068", "Löydä samanhenkistä väkeä"),
-                e("a709f8f8", "Järjestelmänvalvojat ja moderaattorit auttavat hallitsemaan Yhteisöjä ja pitämään keskustelut raiteillaan."),
-                e("c8d33380", "Uusia kohteita"),
+                e("a709f8f8", "Järjestelmänvalvojat ja moderaattorit auttavat hallitsemaan Yhteisöjä ja pitämään keskustelut raiteillaan.");
+            e("c8d33380", "Uusia kohteita"),
                 e("cb6adb10", "Löydä Yhteisöjä"),
                 e("df362964", "Löydä Yhteisöjä"),
                 e("dfd5031f", function (a) {
@@ -6873,8 +6850,8 @@
                 e("c4fd68da", "Räätälöi käyttökokemuksesi"),
                 e("c0195168", "Vaihda sovellusikonia ja navigointivalintoja"),
                 e("b6b5dc94", "Hanki varmennus"),
-                e("b06db848", "Erotu massasta alustalla");
-            e("e3e3a97c", "Ansaitse osa julkaisujesi tuottamasta liikevaihdosta"),
+                e("b06db848", "Erotu massasta alustalla"),
+                e("e3e3a97c", "Ansaitse osa julkaisujesi tuottamasta liikevaihdosta"),
                 e("f15bc24e", "Suuremmat Grokin käyttörajat"),
                 e("c4666e1c", "Enemmän uusimman mallin, Grok 3:n käyttöä"),
                 e("he74ae7a", "Suurimmat Grokin käyttörajat"),
@@ -6896,8 +6873,8 @@
                 e("c3148608", "Saa apu nopeammin sitä tarvitessasi"),
                 e("b485ca6e", "Kohokohdat-välilehti"),
                 e("d438955e", "Nosta suosituimpia julkaisujasi"),
-                e("f373a352", "Salatut yksityisviestit"),
-                e("g7405aca", "Käy keskustelut täysin salattuina"),
+                e("f373a352", "Salatut yksityisviestit");
+            e("g7405aca", "Käy keskustelut täysin salattuina"),
                 e("j659fa0c", "Grok 3:n parhaat tehot"),
                 e("ibff5694", "Saa käyttöösi korkeimmat käyttörajat, DeepSearch ja Mieti sekä uudet ominaisuudet ennen muita"),
                 e("i824f4da", "Vähemmän mainoksia"),
@@ -7849,7 +7826,34 @@
                 e("ddfd6718", "Maksu epäonnistui"),
                 e("i90ea7d2", "Päivitä laskutustietosi pian, jotta säilytät etusi."),
                 e("a62359e6", "Varmennetut organisaatiot"),
-                e("ge221b7c", "Päivitä varmennetun organisaation tilaukseen, niin saat käyttöösi affiliaatit ja enemmän mainoskrediittejä.");
+                e("ge221b7c", "Päivitä varmennetun organisaation tilaukseen, niin saat käyttöösi affiliaatit ja enemmän mainoskrediittejä."),
+                e("i4dccc18", "Laskutus"),
+                e("ec3cd6e4", "Hallitse maksutapaa, päivitä laskutustiedot ja tarkastele laskujasi."),
+                e("dac61c3c", "Tilin asetukset"),
+                e("b6b5fd66", "X-tilisi hallinta, esimerkiksi käyttäjätunnuksen ja salasanan vaihto."),
+                e("hb9c4a1c", "Kysymykset, bugi-ilmoitukset ja muu palaute"),
+                e("c674f5b4", "Ota laskutus käyttöön"),
+                e("i8237e66", "Vaihda luottokorttiveloitukset laskujen maksuun pankkitililtä."),
+                e("hebd348a", "Määritä, kuinka työpaikkoja markkinoidaan mainosten avulla Hiring-portaalista."),
+                e("ib5e6f90", "Työpaikkailmoitukset"),
+                e("id720215", "Hiring"),
+                e("dd59f146", "Mainostili työpaikkailmoituksia varten"),
+                e("e7e36818", "Työpaikkailmoituksia voi hyödyntää mainostileillä, kun niiden rahoituslähde on kokonaan määritetty."),
+                e("c28566e0", "Mainostili"),
+                e("c80160d3", "mainontasivulta"),
+                e("ff0edac0", "Haluatko varmasti perua tilauksesi?"),
+                e("h2ac0348", "En, palaan takaisin"),
+                e("dbf9667e", "Olen varma"),
+                e("j7592572", "U-käännös"),
+                e("ee778942", "Liikennevalot"),
+                e("fdd57981", function (a) {
+                    return "Saat meiltä " + a.totalAmount + " dollaria mainoskrediittiä.";
+                }),
+                e("i032a231", function (a) {
+                    return "Jään ja otan vastaan " + a.totalAmount + " mainoskrediitin";
+                }),
+                e("hd7d278c", "Ei kiitos"),
+                e("jf8a0dea", "Hienoa! Uusi maksuton mainoskrediitti ilmestyy tilillesi seuraavalla laskutusjaksolla.");
             function s(a, t) {
                 for (var i = 0; i < t.length; i++) {
                     var e = t[i];
@@ -7888,34 +7892,7 @@
                     u(a, t)
                 );
             }
-            e("i4dccc18", "Laskutus"),
-                e("ec3cd6e4", "Hallitse maksutapaa, päivitä laskutustiedot ja tarkastele laskujasi."),
-                e("dac61c3c", "Tilin asetukset"),
-                e("b6b5fd66", "X-tilisi hallinta, esimerkiksi käyttäjätunnuksen ja salasanan vaihto."),
-                e("hb9c4a1c", "Kysymykset, bugi-ilmoitukset ja muu palaute"),
-                e("c674f5b4", "Ota laskutus käyttöön"),
-                e("i8237e66", "Vaihda luottokorttiveloitukset laskujen maksuun pankkitililtä."),
-                e("hebd348a", "Määritä, kuinka työpaikkoja markkinoidaan mainosten avulla Hiring-portaalista."),
-                e("ib5e6f90", "Työpaikkailmoitukset"),
-                e("id720215", "Hiring"),
-                e("dd59f146", "Mainostili työpaikkailmoituksia varten"),
-                e("e7e36818", "Työpaikkailmoituksia voi hyödyntää mainostileillä, kun niiden rahoituslähde on kokonaan määritetty."),
-                e("c28566e0", "Mainostili"),
-                e("c80160d3", "mainontasivulta"),
-                e("ff0edac0", "Haluatko varmasti perua tilauksesi?"),
-                e("h2ac0348", "En, palaan takaisin"),
-                e("dbf9667e", "Olen varma"),
-                e("j7592572", "U-käännös"),
-                e("ee778942", "Liikennevalot"),
-                e("fdd57981", function (a) {
-                    return "Saat meiltä " + a.totalAmount + " dollaria mainoskrediittiä.";
-                }),
-                e("i032a231", function (a) {
-                    return "Jään ja otan vastaan " + a.totalAmount + " mainoskrediitin";
-                }),
-                e("hd7d278c", "Ei kiitos"),
-                e("jf8a0dea", "Hienoa! Uusi maksuton mainoskrediitti ilmestyy tilillesi seuraavalla laskutusjaksolla."),
-                e("ebbb3154", "Sulje ja palaa X:ään"),
+            e("ebbb3154", "Sulje ja palaa X:ään"),
                 e("j1f68dda", "Viimeinen vaihe: Haluatko varmasti perua?"),
                 e("c9c3464c", "Tilauksen peruminen käynnissä"),
                 e("dd3a293c", "Varmennettu organisaatio -tilauksesi on päättynyt."),
@@ -8893,8 +8870,8 @@
                 e("ccd32094", "Nyt"),
                 e("abfcce0d", function (a) {
                     return a.amountOfTime + " sitten";
-                });
-            e("ae408b76", "Uudelleenjulkaisit"),
+                }),
+                e("ae408b76", "Uudelleenjulkaisit"),
                 e("j355f008", "Kiinnitetty julkaisu"),
                 e("habf9678", "Tekijän kiinnittämä"),
                 e("db0798ed", function (a) {
@@ -8950,10 +8927,10 @@
                 }),
                 e("d925a4f9", function (a) {
                     return a.formattedCount + " minuutti" + n(a.count, "", "a") + " jäljellä";
-                }),
-                e("ib15cddb", function (a) {
-                    return a.formattedCount + " tunti" + n(a.count, "", "a") + " jäljellä";
-                }),
+                });
+            e("ib15cddb", function (a) {
+                return a.formattedCount + " tunti" + n(a.count, "", "a") + " jäljellä";
+            }),
                 e("db9ed19f", function (a) {
                     return a.formattedCount + " päivä" + n(a.count, "", "ä") + " jäljellä";
                 }),
@@ -13219,4 +13196,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.ce9db6da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.4c58dcaa.js.map

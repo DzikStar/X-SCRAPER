@@ -3,7 +3,7 @@
     ["bundle.DirectMessages-8486177b", "bundle.UserAvatar-8486177b", "shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-29ff9b73"],
     {
         389071: (e, t, s) => {
-            s.d(t, { BU: () => K, Es: () => E, F0: () => ne, F9: () => q, Io: () => P, JE: () => D, JU: () => L, Ki: () => X, NV: () => U, OR: () => w, Pl: () => oe, Pt: () => x, SJ: () => re, SL: () => Z, Tu: () => Q, UM: () => k, Uo: () => ie, V$: () => N, X4: () => te, YJ: () => G, bD: () => b, bv: () => H, en: () => se, f: () => S, hi: () => O, j1: () => J, jP: () => z, lo: () => ae, pZ: () => F, t5: () => B, uF: () => Y, uX: () => T, uz: () => V, v0: () => j, vf: () => $, x1: () => ee, zO: () => M });
+            s.d(t, { BU: () => D, Es: () => E, F0: () => se, F9: () => $, JE: () => U, JU: () => L, Ki: () => z, NV: () => N, OR: () => H, Pl: () => ae, Pt: () => P, SJ: () => ne, SL: () => Q, Tu: () => O, UM: () => k, Uo: () => oe, V$: () => w, X4: () => ee, YJ: () => W, bD: () => b, bv: () => x, en: () => te, f: () => S, hi: () => K, j1: () => q, jP: () => V, lo: () => re, ni: () => X, pZ: () => Z, t5: () => G, uF: () => F, uX: () => T, uz: () => j, v0: () => J, vf: () => B, zO: () => M });
             s(136728), s(571372), s(574858);
             var n = s(726426),
                 r = s.n(n),
@@ -22,7 +22,7 @@
                 I = () => ({ messageIds: [], messages: {}, model: void 0, mode: f, currentResponse: void 0, alternativeCurrentResponse: void 0, currentQuery: void 0, status: m.Q_.IDLE, abortController: void 0, conversationId: void 0, analysisEntityId: void 0, inputPrefill: { text: "", attachments: [] }, fetchConversationIdStatus: p.ZP.NONE, fetchConversationIdError: "", webResults: [], citedWebResults: [], intermediateImageResults: [], promptSource: "", cardAttachments: [], experimentData: { experiments: [], usingExperiment: !1 } }),
                 v = r()(),
                 h = "PROMPT_CONVERSATION_KEY",
-                R = { conversations: { [v]: I(), [h]: I() }, conversationHistory: { items: [] }, pinnedConversations: { items: [] }, pinnedConversationsIdMap: {}, mediaHistory: { items: [], status: p.ZP.NONE }, conversationList: [v, h], currentConversation: v, fetchConversationStatus: p.ZP.NONE, fetchPinnedConversationsStatus: p.ZP.NONE, fetchHistoryStatus: p.ZP.NONE, fetchHomeStatus: p.ZP.NONE, modelOptions: [], selectedModel: void 0, prompts: [], version: "", accessRestrictedReasons: [], freeAcessEnabled: !1, preferredPrompts: [], layout: null, grokInput: { selectedGrokModeButton: null, focused: !1, advancedSettings: null } },
+                R = { conversations: { [v]: I(), [h]: I() }, conversationHistory: { items: [] }, pinnedConversations: { items: [] }, pinnedConversationsIdMap: {}, mediaHistory: { items: [], status: p.ZP.NONE }, conversationList: [v, h], currentConversation: v, fetchConversationStatus: p.ZP.NONE, fetchPinnedConversationsStatus: p.ZP.NONE, fetchHistoryStatus: p.ZP.NONE, fetchHomeStatus: p.ZP.NONE, modelOptions: [], selectedModel: void 0, prompts: [], version: "", accessRestrictedReasons: [], freeAcessEnabled: !1, preferredPrompts: [], layout: null, grokInput: { filterKey: null, focused: !1, advancedSettings: null } },
                 C = (e) => `${e.length}`;
             function S({ conversationKey: e }) {
                 function t(t) {
@@ -508,66 +508,63 @@
                 return e[m.Yf].grokInput;
             }
             function P(e) {
-                return e[m.Yf].preferredPrompts;
-            }
-            function x(e) {
                 return e[m.Yf].fetchHomeStatus;
             }
-            function H(e) {
+            function x(e) {
                 return e[m.Yf].conversationHistory.items;
             }
-            function w(e) {
+            function H(e) {
                 return e[m.Yf].pinnedConversations.items;
             }
-            function N(e) {
+            function w(e) {
                 return e[m.Yf].conversationHistory.cursor;
             }
-            function U(e) {
+            function N(e) {
                 return e[m.Yf].pinnedConversations.cursor;
+            }
+            function U(e) {
+                return e[m.Yf].fetchHistoryStatus;
             }
             function D(e) {
                 return e[m.Yf].fetchHistoryStatus;
             }
             function K(e) {
-                return e[m.Yf].fetchHistoryStatus;
-            }
-            function O(e) {
                 return e[m.Yf].mediaHistory.status;
             }
-            function Q(e) {
+            function O(e) {
                 return e[m.Yf].mediaHistory.cursor;
             }
-            function Z(e) {
+            function Q(e) {
                 return e[m.Yf].mediaHistory.items;
             }
-            function F(e) {
+            function Z(e) {
                 return e[m.Yf].accessRestrictedReasons;
             }
-            function Y(e) {
+            function F(e) {
                 return e[m.Yf].freeAcessEnabled;
             }
-            function W(e) {
+            function Y(e) {
                 const t = (function (e) {
                     return e[m.Yf].conversationList[0];
                 })(e);
                 return b(t);
             }
-            function G(e, t) {
-                return t ? b(t) : W(e);
+            function W(e, t) {
+                return t ? b(t) : Y(e);
             }
-            function B(e) {
+            function G(e) {
                 return e[m.Yf].version;
             }
-            function $(e) {
+            function B(e) {
                 return e[m.Yf].modelOptions;
             }
-            function q(e) {
+            function $(e) {
                 const t = e[m.Yf].modelOptions,
                     s = e[m.Yf].selectedModel,
                     n = !!t.find((e) => e.id === s);
                 return (s && n ? s : t[0]?.id) ?? void 0;
             }
-            function J(e, t) {
+            function q(e, t) {
                 if (c.ZP.isTwitterApp()) {
                     const s = window.webkit?.messageHandlers?.grokWebviewEventMessageHandler;
                     if (s) {
@@ -577,40 +574,40 @@
                 }
                 return { type: m.WK, payload: e };
             }
-            function j(e) {
+            function J(e) {
                 return { type: m.BA, payload: e };
             }
-            function V(e) {
+            function j(e) {
                 return { type: m.Jt, payload: e };
             }
-            function z(e) {
+            function V(e) {
                 return { type: m.wG, payload: e };
             }
-            function X(e) {
+            function z(e) {
                 return { type: m.$t, payload: e };
             }
-            function ee(e) {
-                return { type: m.li, payload: e };
+            function X(e) {
+                return { type: m._i, payload: e };
             }
-            function te(e) {
+            function ee(e) {
                 return { type: m.z2, payload: e };
             }
-            function se(e) {
+            function te(e) {
                 return e[m.Yf].grokInput.advancedSettings;
             }
-            function ne(e) {
+            function se(e) {
                 return { type: m.j$, payload: e };
             }
-            function re(e) {
+            function ne(e) {
                 return { type: m.Yb, payload: e };
             }
-            function ae(e, t) {
+            function re(e, t) {
                 return { type: m.vi, payload: { conversationId: e, title: t } };
             }
-            function oe(e) {
+            function ae(e) {
                 return { type: m.dw, payload: { mediaId: e } };
             }
-            function ie(e, t) {
+            function oe(e, t) {
                 return { type: m.Qh, payload: { conversationId: e, inputPrefill: t } };
             }
             d.Z.register(
@@ -628,8 +625,8 @@
                                 const s = e.conversationHistory.items.map((e) => (e.grokConversation.rest_id === t.payload.conversationId ? { ...e, title: t.payload.title } : e));
                                 return { ...e, pinnedConversations: { ...e.pinnedConversations, items: e.pinnedConversations.items.map((e) => (e.grokConversation.rest_id === t.payload.conversationId ? { ...e, title: t.payload.title } : e)) }, conversationHistory: { ...e.conversationHistory, items: s } };
                             }
-                            case m.li:
-                                return { ...e, grokInput: { ...e.grokInput, selectedGrokModeButton: t.payload } };
+                            case m._i:
+                                return { ...e, grokInput: { ...e.grokInput, filterKey: t.payload } };
                             case m.z2:
                                 return { ...e, grokInput: { ...e.grokInput, focused: t.payload } };
                             case m.j$:
@@ -732,7 +729,7 @@
                 () => (e, t, s) =>
                     Promise.resolve().then(() => {
                         const { featureSwitches: n } = s,
-                            r = G(t()),
+                            r = W(t()),
                             a = n.getStringValue("subscriptions_inapp_grok_default_mode");
                         e(r.setMode("fun" === a ? m.IK.FUN : m.IK.REGULAR));
                     }),
@@ -779,4 +776,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.DirectMessages-8486177b.2c99b4ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.DirectMessages-8486177b.3db717fa.js.map

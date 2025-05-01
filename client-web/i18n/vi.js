@@ -4161,6 +4161,8 @@
                 t("e9b6d404", "Grok nên có quyền truy cập vào những công cụ tìm kiếm nào?"),
                 t("h15dce2e", "Cài đặt nâng cao"),
                 t("ff9dc268", "Chỉnh sửa câu lệnh"),
+                t("acb2baa0", "Create Images"),
+                t("h30fd372", "Try Voice Mode"),
                 t("e9fcdd0c", "Yêu cầu Grok tăng cường tìm kiếm trên web"),
                 t("fc4e8aba", "Yêu cầu Grok lập luận từng bước"),
                 t("e4ae6abe", "Yêu cầu Grok biến đổi hình ảnh của bạn"),
@@ -4330,41 +4332,16 @@
                 t("g01599b6", "Phản hồi 1"),
                 t("e02694e0", "Phản hồi 2"),
                 t("h6867fcc", "Tôi thích phản hồi này"),
-                t("b2175228", "Grok dành cho Android đã có"),
-                t("d2d8650c", "Nhận trải nghiệm Grok tốt nhất trong ứng dụng độc lập mới của chúng tôi"),
-                t("ia5bef3e", "Hôm nay, tôi có thể giúp gì cho bạn?"),
-                t("ge683598", "Hỏi Grok bất cứ điều gì..."),
-                t("fef25c88", "Dùng thử miễn phí Grok ngay"),
-                t("fb172aa8", "Khu vực của bạn hiện đã có Grok bậc miễn phí. Hãy trò chuyện, tạo hình ảnh và phân tích ảnh. Có áp dụng giới hạn."),
-                t("d7af4f40", "Tạo hình ảnh thiên hà"),
-                t("gcb6c0be", "Grok có thể nhầm lẫn. Hãy nhớ xác minh thông tin Grok cung cấp."),
-                t("cb88fd82", "Bạn đang dùng phiên bản Grok miễn phí."),
-                t("g27a5314", "Để bắt đầu dùng Grok, hãy thêm số điện thoại vào tài khoản của bạn."),
-                t("bdd84568", "Tài khoản của bạn quá mới nên chưa thể dùng Grok. Vui lòng thử lại sau."),
-                t("a9109a94", "Một ngôi làng phong cách solarpunk (viễn tưởng năng lượng xanh)"),
-                t("g986f7a4", "Tạo hình ảnh một ngôi làng phong cách solarpunk (viễn tưởng năng lượng xanh)"),
-                t("ad685264", "Núi Phú Sĩ"),
-                t("hdb08284", "Tạo hình ảnh núi Phú Sĩ phong cách anime"),
-                t("a986ae84", "Một con mèo bay"),
-                t("a14b556a", "Tạo hình ảnh một con mèo bay"),
-                t("gc16b670", "Một rô bốt trên cánh đồng hoa"),
-                t("d5b8fa44", "Tạo hình ảnh một rô bốt trên cánh đồng hoa"),
-                t("da196ff6", "Phi hành gia trên sao Hỏa"),
-                t("ae3979cc", "Tạo ảnh chân dung phi hành gia trên sao Hỏa"),
-                t("a682460e", "Ô tô hai chỗ mui trần đang phóng nhanh"),
-                t("e03e5514", "Tạo hình ảnh xe Tesla hai chỗ mui trần lái qua khu Shinjuku với hiệu ứng nhòe do chuyển động"),
-                t("e68eac68", "Chiêm ngưỡng bắc cực quang"),
-                t("hc6e6754", "Tạo hình ảnh một người đang chiêm ngưỡng bắc cực quang"),
-                t("cf59f9f6", "Giúp tôi viết thư xin việc"),
-                t("cd9aeac8", "Cho tôi biết các tin chính của ngày hôm nay"),
-                t("acf2f0be", "Đề xuất một trò chơi nhập vai kỳ ảo"),
-                t("b9bd12e2", "Giải bài toán Tổng hai số trong Python"),
+                t("d07488a6", "Get the Android app"),
+                t("d9cfe70c", "Access advanced Grok features"),
                 t("hf9afab0", "Cho phép DeepSearch quét Internet và X, phân tích thông tin và cung cấp câu trả lời chi tiết, có lập luận tốt nhờ khả năng tìm kiếm nhanh và chủ động."),
                 t("ef3b3f04", 'Cho phép tính năng Suy nghĩ dùng mô hình lập luận của chúng tôi. Tính năng này phù hợp nhất với toán học, khoa học và lập trình. Bạn cũng có thể yêu cầu Grok "Suy nghĩ sâu hơn" về bất kỳ câu hỏi nào cần tư duy thêm. '),
                 t("b43636b8", "Giới thiệu Grok 3"),
                 t("j376298c", "Grok 3 giới thiệu hai chế độ mới để tương tác với mô hình mạnh nhất của chúng tôi: DeepSearch và Suy nghĩ."),
                 t("e3584f8e", "10 chiến lược giao dịch quyền chọn thành công nhất được các quỹ đầu cơ sử dụng là gì"),
                 t("d91b7b8a", "Xây một trường đại học hồi năm 1885 thì mất bao nhiêu tiền?"),
+                t("ia5bef3e", "Hôm nay, tôi có thể giúp gì cho bạn?"),
+                t("ebea5880", "Recent Conversations"),
                 t("e13591c0", "Ví dụ về cuộc trò chuyện với Grok"),
                 t("c27ca452", "Người đăng ký Premium giờ đây có thể dùng Grok – AI tân tiến nhất của chúng tôi trên X."),
                 t("b6abc25a", "Giới thiệu Grok 2"),
@@ -4908,8 +4885,8 @@
                 t("ff95a9cc", "ID video"),
                 t("a97e358e", "Liên kết đến video"),
                 t("e10e8b46", "Chỉ hiển thị video trong 100 ngày qua."),
-                t("ba37f6da", "Thông tin tổng quan về video");
-            t("f19846b2", "Hình thu nhỏ video"),
+                t("ba37f6da", "Thông tin tổng quan về video"),
+                t("f19846b2", "Hình thu nhỏ video"),
                 t("ccd6f4a8", "Tiêu đề video"),
                 t("c8410542", "Số lượt xem video của bạn."),
                 t("a532072a", "Người xem"),
@@ -4931,8 +4908,8 @@
                 t("f2f463ea", "ai -công ty khởi nghiệp"),
                 t("a10a357e", 'chứa "ai" và có ít nhất 50 lượt thích'),
                 t("ca8ed1e8", "ai min_faves:50"),
-                t("i945a3f2", 'chứa "ai" và URL kèm theo từ "grok" trong đó'),
-                t("a9348088", "ai url:grok"),
+                t("i945a3f2", 'chứa "ai" và URL kèm theo từ "grok" trong đó');
+            t("a9348088", "ai url:grok"),
                 t("b5c3cdbc", 'đề cập đến tài khoản X "grok"'),
                 t("e2634592", "@grok"),
                 t("i88ba038", "Đã tắt cảnh báo"),
@@ -5866,10 +5843,10 @@
                 t("ae58026a", "Để xem trước, hãy mở tệp Branded Like .json"),
                 t("hd0bc1eb", function (n) {
                     return n.name + " đang trực tuyến";
-                });
-            t("bea1f26b", function (n) {
-                return n.name + " đã trực tuyến";
-            }),
+                }),
+                t("bea1f26b", function (n) {
+                    return n.name + " đã trực tuyến";
+                }),
                 t("ab3ee97f", function (n) {
                     return n.screenName + " không phát trực tuyến";
                 }),
@@ -5897,8 +5874,8 @@
                 t("edef4c82", "Đăng trực tiếp lên Cộng đồng"),
                 t("a7640df6", "Bài đăng của bạn được chia sẻ với các thành viên trong Cộng đồng và những người theo dõi bạn."),
                 t("h3bb8068", "Nhận bản sao lưu khi cần"),
-                t("a709f8f8", "Quản trị viên và người kiểm duyệt giúp quản lý Cộng đồng và giữ cho cuộc trò chuyện đi đúng hướng."),
-                t("c8d33380", "Mục mới"),
+                t("a709f8f8", "Quản trị viên và người kiểm duyệt giúp quản lý Cộng đồng và giữ cho cuộc trò chuyện đi đúng hướng.");
+            t("c8d33380", "Mục mới"),
                 t("cb6adb10", "Khám phá Cộng đồng"),
                 t("df362964", "Tìm các cộng đồng"),
                 t("dfd5031f", function (n) {
@@ -6872,8 +6849,8 @@
                 t("c4fd68da", "Tùy chỉnh trải nghiệm của bạn"),
                 t("c0195168", "Thay đổi biểu tượng ứng dụng và tùy chọn điều hướng"),
                 t("b6b5dc94", "Xác nhận tài khoản"),
-                t("b06db848", "Nổi bật trong số những người dùng khác trên nền tảng");
-            t("e3e3a97c", "Kiếm một phần doanh thu từ bài đăng của bạn"),
+                t("b06db848", "Nổi bật trong số những người dùng khác trên nền tảng"),
+                t("e3e3a97c", "Kiếm một phần doanh thu từ bài đăng của bạn"),
                 t("f15bc24e", "Đã tăng giới hạn dùng Grok"),
                 t("c4666e1c", "Tăng mức sử dụng mô hình Grok 3 mới nhất"),
                 t("he74ae7a", "Hạn mức sử dụng Grok cao nhất"),
@@ -6895,8 +6872,8 @@
                 t("c3148608", "Nhận trợ giúp nhanh hơn khi bạn cần hỗ trợ"),
                 t("b485ca6e", "Tab Sự kiện nổi bật"),
                 t("d438955e", "Quảng bá các bài đăng hàng đầu của bạn"),
-                t("f373a352", "Tin nhắn trực tiếp được mã hóa"),
-                t("g7405aca", "Trò chuyện an toàn nhờ tính năng mã hóa đầu cuối"),
+                t("f373a352", "Tin nhắn trực tiếp được mã hóa");
+            t("g7405aca", "Trò chuyện an toàn nhờ tính năng mã hóa đầu cuối"),
                 t("j659fa0c", "Những điều đỉnh nhất của Grok 3"),
                 t("ibff5694", "Mở khóa hạn mức sử dụng cao nhất, chế độ DeepSearch và Suy nghĩ, cùng quyền truy cập sớm vào các tính năng mới"),
                 t("i824f4da", "Ít quảng cáo hơn"),
@@ -7848,7 +7825,34 @@
                 t("ddfd6718", "Thanh toán không thành công"),
                 t("i90ea7d2", "Vui lòng cập nhật gấp thông tin thanh toán để tiếp tục hưởng quyền lợi."),
                 t("a62359e6", "Cài đặt Tổ chức đã xác nhận"),
-                t("ge221b7c", "Nâng cấp gói thuê bao Tổ chức đã xác nhận để có quyền sử dụng tính năng bên liên kết và nhận thêm tín dụng quảng cáo.");
+                t("ge221b7c", "Nâng cấp gói thuê bao Tổ chức đã xác nhận để có quyền sử dụng tính năng bên liên kết và nhận thêm tín dụng quảng cáo."),
+                t("i4dccc18", "Thanh toán"),
+                t("ec3cd6e4", "Quản lý phương thức thanh toán, cập nhật thông tin thanh toán và xem hóa đơn."),
+                t("dac61c3c", "Cài đặt tài khoản"),
+                t("b6b5fd66", "Quản lý tài khoản X, trong đó có việc thay đổi tên người dùng hoặc mật khẩu của bạn."),
+                t("hb9c4a1c", "Câu hỏi, báo cáo lỗi và phản hồi"),
+                t("c674f5b4", "Thiết lập phương thức thanh toán hóa đơn"),
+                t("i8237e66", "Chuyển từ phương thức thanh toán bằng thẻ tín dụng sang lập hóa đơn qua chuyển khoản ngân hàng."),
+                t("hebd348a", "Định cấu hình cách dùng quảng cáo để quảng bá việc làm trên cổng thông tin Tuyển dụng."),
+                t("ib5e6f90", "Quảng bá việc làm"),
+                t("id720215", "Tuyển dụng"),
+                t("dd59f146", "Tài khoản quảng cáo quảng bá việc làm"),
+                t("e7e36818", "Tài khoản quảng cáo đủ điều kiện quảng bá việc làm khi tài khoản được thiết lập đầy đủ nguồn tiền."),
+                t("c28566e0", "Tài khoản quảng cáo"),
+                t("c80160d3", "Quảng cáo"),
+                t("ff0edac0", "Bạn có chắc chắn muốn hủy thuê bao của mình không?"),
+                t("h2ac0348", "Không, tôi muốn quay lại"),
+                t("dbf9667e", "Tôi chắc chắn"),
+                t("j7592572", "Vòng ngược lại"),
+                t("ee778942", "Đèn giao thông"),
+                t("fdd57981", function (n) {
+                    return "Chúng tôi muốn tặng bạn ưu đãi một lần trị giá " + n.totalAmount + " USD tín dụng quảng cáo miễn phí.";
+                }),
+                t("i032a231", function (n) {
+                    return "Tôi sẽ tiếp tục dùng gói thuê bao và nhận " + n.totalAmount + " tín dụng quảng cáo";
+                }),
+                t("hd7d278c", "Không, cảm ơn"),
+                t("jf8a0dea", "Tuyệt vời! Tín dụng quảng cáo miễn phí mới của bạn sẽ được thêm vào tài khoản trong chu kỳ thanh toán tiếp theo.");
             function g(n, h) {
                 for (var c = 0; c < h.length; c++) {
                     var t = h[c];
@@ -7887,34 +7891,7 @@
                     a(n, h)
                 );
             }
-            t("i4dccc18", "Thanh toán"),
-                t("ec3cd6e4", "Quản lý phương thức thanh toán, cập nhật thông tin thanh toán và xem hóa đơn."),
-                t("dac61c3c", "Cài đặt tài khoản"),
-                t("b6b5fd66", "Quản lý tài khoản X, trong đó có việc thay đổi tên người dùng hoặc mật khẩu của bạn."),
-                t("hb9c4a1c", "Câu hỏi, báo cáo lỗi và phản hồi"),
-                t("c674f5b4", "Thiết lập phương thức thanh toán hóa đơn"),
-                t("i8237e66", "Chuyển từ phương thức thanh toán bằng thẻ tín dụng sang lập hóa đơn qua chuyển khoản ngân hàng."),
-                t("hebd348a", "Định cấu hình cách dùng quảng cáo để quảng bá việc làm trên cổng thông tin Tuyển dụng."),
-                t("ib5e6f90", "Quảng bá việc làm"),
-                t("id720215", "Tuyển dụng"),
-                t("dd59f146", "Tài khoản quảng cáo quảng bá việc làm"),
-                t("e7e36818", "Tài khoản quảng cáo đủ điều kiện quảng bá việc làm khi tài khoản được thiết lập đầy đủ nguồn tiền."),
-                t("c28566e0", "Tài khoản quảng cáo"),
-                t("c80160d3", "Quảng cáo"),
-                t("ff0edac0", "Bạn có chắc chắn muốn hủy thuê bao của mình không?"),
-                t("h2ac0348", "Không, tôi muốn quay lại"),
-                t("dbf9667e", "Tôi chắc chắn"),
-                t("j7592572", "Vòng ngược lại"),
-                t("ee778942", "Đèn giao thông"),
-                t("fdd57981", function (n) {
-                    return "Chúng tôi muốn tặng bạn ưu đãi một lần trị giá " + n.totalAmount + " USD tín dụng quảng cáo miễn phí.";
-                }),
-                t("i032a231", function (n) {
-                    return "Tôi sẽ tiếp tục dùng gói thuê bao và nhận " + n.totalAmount + " tín dụng quảng cáo";
-                }),
-                t("hd7d278c", "Không, cảm ơn"),
-                t("jf8a0dea", "Tuyệt vời! Tín dụng quảng cáo miễn phí mới của bạn sẽ được thêm vào tài khoản trong chu kỳ thanh toán tiếp theo."),
-                t("ebbb3154", "Đóng và quay lại X"),
+            t("ebbb3154", "Đóng và quay lại X"),
                 t("j1f68dda", "Bước cuối cùng: Bạn có chắc chắn muốn hủy không?"),
                 t("c9c3464c", "Đang tiến hành hủy thuê bao"),
                 t("dd3a293c", "Thuê bao Tổ chức đã xác nhận của bạn đã kết thúc."),
@@ -8892,8 +8869,8 @@
                 t("ccd32094", "Bây giờ"),
                 t("abfcce0d", function (n) {
                     return n.amountOfTime + " trước";
-                });
-            t("ae408b76", "Bạn đã đăng lại"),
+                }),
+                t("ae408b76", "Bạn đã đăng lại"),
                 t("j355f008", "Bài đăng đã ghim"),
                 t("habf9678", "Đã được Tác giả ghim"),
                 t("db0798ed", function (n) {
@@ -8949,10 +8926,10 @@
                 }),
                 t("d925a4f9", function (n) {
                     return "Còn " + n.formattedCount + " phút";
-                }),
-                t("ib15cddb", function (n) {
-                    return "Còn " + n.formattedCount + " giờ";
-                }),
+                });
+            t("ib15cddb", function (n) {
+                return "Còn " + n.formattedCount + " giờ";
+            }),
                 t("db9ed19f", function (n) {
                     return "Còn " + n.formattedCount + " ngày";
                 }),
@@ -13204,4 +13181,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.9e706a9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.4fc7bcda.js.map

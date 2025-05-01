@@ -204,6 +204,19 @@
             }
             const h = p.default.create((e) => ({ backgroundImage: { ...p.default.absoluteFillObject, filter: "blur(5px)" }, overlay: { ...p.default.absoluteFillObject, backgroundColor: e.colors.translucentBlack77 }, blankOverlay: { backgroundColor: e.colors.gray0 }, buttonContainer: { justifyContent: "center", alignSelf: "center" }, errorContainer: { justifyContent: "center", height: "100%", marginHorizontal: e.spaces.space32 }, errorMsgTextWhite: { color: e.colors.white, textAlign: "center", marginBottom: e.spaces.space20 }, errorMsgTextGray: { color: e.colors.gray700, textAlign: "center", marginBottom: e.spaces.space20 }, playErrorIcon: { fill: e.colors.gray700, height: e.spaces.space48, width: e.spaces.space48, marginHorizontal: "auto", paddingBottom: e.spaces.space20, verticalAlign: "middle" } }));
         },
+        41065: (e, t, r) => {
+            r.r(t), r.d(t, { default: () => c });
+            var n = r(202784),
+                o = r(890601),
+                i = r(783427),
+                a = r(347101);
+            const s = (e = {}) => {
+                const { direction: t } = (0, i.Z)();
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M6.866 18H.846l.075-1.069C1.33 11.083 4.335 9 7.011 9c1.457 0 2.734.576 3.743 1.615-.515.378-1.003.826-1.45 1.355-.562-.569-1.305-.97-2.293-.97-2.074 0-3.522 1.847-3.981 5h4.225c-.169.616-.295 1.288-.389 2zM4 5c0-1.654 1.343-3 3-3s3 1.346 3 3-1.343 3-3 3-3-1.346-3-3zm2 0c0 .551.448 1 1 1s1-.449 1-1-.448-1-1-1-1 .449-1 1zm9.5 5c-.778 0-1.49-.263-2.071-.693C12.566 8.669 12 7.653 12 6.5 12 4.57 13.567 3 15.5 3S19 4.57 19 6.5c0 1.111-.53 2.092-1.34 2.733-.596.472-1.341.767-2.16.767zM14 6.5c0 .827.673 1.5 1.5 1.5S17 7.327 17 6.5 16.327 5 15.5 5 14 5.673 14 6.5zm1.5 4.496c3.264 0 6.816 2.358 7 8.977L22.529 21H8.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977zm0 2c-2.767 0-4.57 2.223-4.938 6.004h9.875c-.367-3.781-2.17-6.004-4.938-6.004z" })) }, { writingDirection: t });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const c = s;
+        },
         411240: (e, t, r) => {
             r.d(t, { Z: () => n });
             const n = (e, t) => {
@@ -776,7 +789,7 @@
                     T,
                     I = function (e) {
                         if (e === h && Z) return Z;
-                        if (!b && e && e in M) return M[e];
+                        if (!b && e && e in k) return k[e];
                         switch (e) {
                             case C:
                             case E:
@@ -790,11 +803,11 @@
                         };
                     },
                     O = t + " Iterator",
-                    k = !1,
-                    M = e.prototype,
-                    L = M[S] || M["@@iterator"] || (h && M[h]),
+                    M = !1,
+                    k = e.prototype,
+                    L = k[S] || k["@@iterator"] || (h && k[h]),
                     Z = (!b && L) || I(h),
-                    j = ("Array" === t && M.entries) || L;
+                    j = ("Array" === t && k.entries) || L;
                 if (
                     (j && (A = l(j.call(new e()))) !== Object.prototype && A.next && (i || l(A) === x || (u ? u(A, x) : s(A[S]) || d(A, S, R)), p(A, O, !0, !0), i && (v[O] = R)),
                     g &&
@@ -802,16 +815,16 @@
                         L &&
                         L.name !== E &&
                         (!i && m
-                            ? f(M, "name", E)
-                            : ((k = !0),
+                            ? f(k, "name", E)
+                            : ((M = !0),
                               (Z = function () {
                                   return o(L, this);
                               }))),
                     h)
                 )
-                    if (((_ = { values: I(E), keys: y ? Z : I(C), entries: I(w) }), P)) for (T in _) (b || k || !(T in M)) && d(M, T, _[T]);
-                    else n({ target: t, proto: !0, forced: b || k }, _);
-                return (i && !P) || M[S] === Z || d(M, S, Z, { name: h }), (v[t] = Z), _;
+                    if (((_ = { values: I(E), keys: y ? Z : I(C), entries: I(w) }), P)) for (T in _) (b || M || !(T in k)) && d(k, T, _[T]);
+                    else n({ target: t, proto: !0, forced: b || M }, _);
+                return (i && !P) || k[S] === Z || d(k, S, Z, { name: h }), (v[t] = Z), _;
             };
         },
         360693: (e, t, r) => {
@@ -1131,12 +1144,12 @@
                         T = i(c, d),
                         I = d.source,
                         O = 0,
-                        k = R;
+                        M = R;
                     if (
-                        (_ && ((T = b(T, "y", "")), -1 === x(T, "g") && (T += "g"), (k = S(R, d.lastIndex)), d.lastIndex > 0 && (!d.multiline || (d.multiline && "\n" !== m(R, d.lastIndex - 1))) && ((I = "(?: " + I + ")"), (k = " " + k), O++), (r = new RegExp("^(?:" + I + ")", T))),
+                        (_ && ((T = b(T, "y", "")), -1 === x(T, "g") && (T += "g"), (M = S(R, d.lastIndex)), d.lastIndex > 0 && (!d.multiline || (d.multiline && "\n" !== m(R, d.lastIndex - 1))) && ((I = "(?: " + I + ")"), (M = " " + M), O++), (r = new RegExp("^(?:" + I + ")", T))),
                         w && (r = new RegExp("^" + I + "$(?!\\s)", T)),
                         C && (n = d.lastIndex),
-                        (o = i(y, _ ? r : d, k)),
+                        (o = i(y, _ ? r : d, M)),
                         _ ? (o ? ((o.input = S(o.input, O)), (o[0] = S(o[0], O)), (o.index = d.lastIndex), (d.lastIndex += o[0].length)) : (d.lastIndex = 0)) : C && o && (d.lastIndex = d.global ? o.index + o[0].length : n),
                         w &&
                             o &&
@@ -1378,7 +1391,7 @@
                 O = function (e) {
                     T(e.data);
                 },
-                k = function (e) {
+                M = function (e) {
                     s.postMessage(R(e), n.protocol + "//" + n.host);
                 };
             (x && b) ||
@@ -1407,8 +1420,8 @@
                         })
                       : w && !g
                         ? ((a = (i = new w()).port2), (i.port1.onmessage = O), (o = l(a.postMessage, a)))
-                        : s.addEventListener && u(s.postMessage) && !s.importScripts && n && "file:" !== n.protocol && !f(k)
-                          ? ((o = k), s.addEventListener("message", O, !1))
+                        : s.addEventListener && u(s.postMessage) && !s.importScripts && n && "file:" !== n.protocol && !f(M)
+                          ? ((o = M), s.addEventListener("message", O, !1))
                           : (o =
                                 _ in v("script")
                                     ? function (e) {
@@ -1444,4 +1457,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.InlinePlayer-6107ac1a.8ff5e79a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.InlinePlayer-6107ac1a.7c4fad3a.js.map

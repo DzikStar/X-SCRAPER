@@ -62,8 +62,8 @@
                 x = n(281030),
                 S = n(601576);
             const _ = f().d96cf7ce,
-                M = f().ef4602ec,
-                z = f().d4eb0e26,
+                z = f().ef4602ec,
+                M = f().d4eb0e26,
                 P = r.Z,
                 L = a.Z,
                 R = i.memo(({ isFavorite: e, onHistoryLinkClicked: t, restId: n, selected: a, title: r }) => {
@@ -79,29 +79,29 @@
                     function A(e) {
                         H(e.target.value);
                     }
-                    function D() {
+                    function F() {
                         T({
                             onCompleted: (e) => {
-                                e.delete_grok_conversation?.grok_deletion_error ? c(S.fz({ text: M })) : c((0, I.SJ)(n));
+                                e.delete_grok_conversation?.grok_deletion_error ? c(S.fz({ text: z })) : c((0, I.SJ)(n));
                             },
                             variables: { conversationId: n },
                         });
                     }
-                    function F() {
+                    function D() {
                         f(!0);
                     }
                     function O() {
                         U({
                             onCompleted: (e) => {
-                                e.grokconversation_edit?.edit_error ? c(S.fz({ text: M })) : c((0, I.lo)(n, R)), f(!1);
+                                e.grokconversation_edit?.edit_error ? c(S.fz({ text: z })) : c((0, I.lo)(n, R)), f(!1);
                             },
                             variables: { conversationId: n, title: R },
                         });
                     }
                     function W(e) {
                         const t = [
-                            { Icon: E.default, onClick: F, text: z },
-                            { Icon: b.default, onClick: D, text: _ },
+                            { Icon: E.default, onClick: D, text: M },
+                            { Icon: b.default, onClick: F, text: _ },
                         ];
                         return i.createElement(m.Z, { items: t, onCloseRequested: e });
                     }
@@ -195,9 +195,9 @@
                         m = (0, g.v9)(h.V$),
                         p = (0, g.v9)(h.JE),
                         S = (0, E.uf)(),
-                        M = (0, g.v9)(S.selectConversationId),
-                        z = r.useMemo(() => (0, u.Z)(d ?? [], ({ created_at_ms: e }) => (e ? (0, b._)(e) : "")), [d]),
-                        P = r.useMemo(() => Object.keys(z), [z]),
+                        z = (0, g.v9)(S.selectConversationId),
+                        M = r.useMemo(() => (0, u.Z)(d ?? [], ({ created_at_ms: e }) => (e ? (0, b._)(e) : "")), [d]),
+                        P = r.useMemo(() => Object.keys(M), [M]),
                         L = r.useCallback(
                             (e = !0) => {
                                 const t = e ? m : void 0;
@@ -217,9 +217,9 @@
                                 r.Fragment,
                                 null,
                                 r.createElement(c.ZP, { color: "gray700", style: _.conversation, weight: "bold" }, t.item),
-                                z[t.item].map(({ grokConversation: t, is_pinned: n, title: a }) => r.createElement(v.G, { isFavorite: n ?? !1, key: t.rest_id, onHistoryLinkClicked: e, restId: t.rest_id, selected: M === t.rest_id, title: a })),
+                                M[t.item].map(({ grokConversation: t, is_pinned: n, title: a }) => r.createElement(v.G, { isFavorite: n ?? !1, key: t.rest_id, onHistoryLinkClicked: e, restId: t.rest_id, selected: z === t.rest_id, title: a })),
                             ),
-                        [M, z, e],
+                        [z, M, e],
                     );
                     return 0 === P.length && "loading" === p ? null : d && 0 !== d.length ? r.createElement(o.Z, { style: _.container }, r.createElement(o.Z, { style: _.searchBoxContainer }, r.createElement(x, { customSearchBox: r.createElement(C.v, { initialValue: a, onSubmit: t }) })), a ? r.createElement(k.D, { onSearchHistoryClicked: e, query: a, queryKey: n }) : r.createElement(o.Z, { style: _.content }, r.createElement(i.Z, { ItemSeparatorComponent: () => r.createElement(s.Z, { size: "space8" }), ListFooterComponent: () => r.createElement(s.Z, { size: "space16" }), ListHeaderComponent: () => r.createElement(s.Z, { size: "space8" }), data: P, keyExtractor: (e, t) => P[t], onEndReached: L, onEndReachedThreshold: 0.4, renderItem: R, style: { height: "100%" } }))) : r.createElement(o.Z, { style: _.noHistoryContainer }, r.createElement(o.Z, null, r.createElement(c.ZP, { size: "title3", weight: "bold" }, Z), r.createElement(s.Z, { size: "space4" }), r.createElement(c.ZP, { color: "gray500", size: "body" }, I)));
                 },
@@ -471,8 +471,8 @@
                 return a.createElement(b.Z, { interactiveStyles: { hoverStyle: _.hover }, link: `/i/grok?conversation=${t}`, onClick: h, style: _.conversation }, a.createElement(d.ZP, { color: "text", numberOfLines: 2, weight: "bold", withInteractiveStyling: !1 }, p), a.createElement(m.Z, { size: "space2" }), a.createElement(d.ZP, { color: "gray900", numberOfLines: 4 }, l), a.createElement(m.Z, { size: "space8" }), a.createElement(d.ZP, { color: "gray500" }, g));
             }
             const _ = u.default.create((e) => ({ conversation: { alignItems: "start", paddingVertical: e.spaces.space8, paddingHorizontal: e.spaces.space12 }, hover: { backgroundColor: e.colors.gray0, borderRadius: e.borderRadii.medium } })),
-                M = g().ab437026,
-                z = g().e12569ec,
+                z = g().ab437026,
+                M = g().e12569ec,
                 P = g().g61ed8a4,
                 L = g().hb52cc4a,
                 R = ({ onSearchHistoryClicked: e, query: t, queryKey: n }) => {
@@ -495,7 +495,7 @@
                                 });
                     }, [t, n, k, Z, v]);
                     const I = a.useMemo(() => (0, h.Z)(b, (e) => e.conversation?.id), [b]);
-                    return c ? a.createElement(o.Z, { style: B.fullScreenContainer }, a.createElement(l.Z, { size: "large" })) : p ? a.createElement(o.Z, { style: B.fullScreenContainer }, a.createElement(o.Z, null, a.createElement(d.ZP, { size: "title3", weight: "bold" }, P), a.createElement(m.Z, { size: "space4" }), a.createElement(d.ZP, { color: "gray500", size: "body" }, L))) : 0 === I.length ? a.createElement(o.Z, { style: B.fullScreenContainer }, a.createElement(o.Z, null, a.createElement(d.ZP, { size: "title3", weight: "bold" }, M), a.createElement(m.Z, { size: "space4" }), a.createElement(d.ZP, { color: "gray500", size: "body" }, z))) : a.createElement(o.Z, { style: B.container }, a.createElement(o.Z, { style: B.content }, a.createElement(i.Z, { ItemSeparatorComponent: () => a.createElement(m.Z, { size: "space8" }), ListFooterComponent: () => a.createElement(m.Z, { size: "space16" }), ListHeaderComponent: () => a.createElement(m.Z, { size: "space8" }), contentContainerStyle: B.results, data: I, keyExtractor: (e) => `${e.conversation.id}_${e.chatItemId}`, renderItem: ({ item: n }) => a.createElement(S, { chatItemId: n.chatItemId, conversationId: n.conversation.id, createdAt: n.createdAt, message: n.message, onSearchHistoryClicked: e, searchQuery: t, title: n.title }) })));
+                    return c ? a.createElement(o.Z, { style: B.fullScreenContainer }, a.createElement(l.Z, { size: "large" })) : p ? a.createElement(o.Z, { style: B.fullScreenContainer }, a.createElement(o.Z, null, a.createElement(d.ZP, { size: "title3", weight: "bold" }, P), a.createElement(m.Z, { size: "space4" }), a.createElement(d.ZP, { color: "gray500", size: "body" }, L))) : 0 === I.length ? a.createElement(o.Z, { style: B.fullScreenContainer }, a.createElement(o.Z, null, a.createElement(d.ZP, { size: "title3", weight: "bold" }, z), a.createElement(m.Z, { size: "space4" }), a.createElement(d.ZP, { color: "gray500", size: "body" }, M))) : a.createElement(o.Z, { style: B.container }, a.createElement(o.Z, { style: B.content }, a.createElement(i.Z, { ItemSeparatorComponent: () => a.createElement(m.Z, { size: "space8" }), ListFooterComponent: () => a.createElement(m.Z, { size: "space16" }), ListHeaderComponent: () => a.createElement(m.Z, { size: "space8" }), contentContainerStyle: B.results, data: I, keyExtractor: (e) => `${e.conversation.id}_${e.chatItemId}`, renderItem: ({ item: n }) => a.createElement(S, { chatItemId: n.chatItemId, conversationId: n.conversation.id, createdAt: n.createdAt, message: n.message, onSearchHistoryClicked: e, searchQuery: t, title: n.title }) })));
                 },
                 B = u.default.create((e) => ({ loadingContainer: { width: "100%", height: "50%", alignItems: "center", justifyContent: "center" }, container: { width: "100%", maxHeight: "100%", alignItems: "center", position: "relative" }, content: { width: "100%", flex: 1 }, results: { paddingHorizontal: e.spaces.space12 }, fullScreenContainer: { width: "100%", height: "calc(100vh - 53px)", alignItems: "center", justifyContent: "center" } }));
         },
@@ -534,7 +534,7 @@
                     c = (0, h.z)(),
                     s = (0, p.hC)("responsive_web_grok_history_search_enabled"),
                     l = "string" == typeof n.query.q ? n.query.q : void 0,
-                    [_, z] = a.useState(Math.random());
+                    [_, M] = a.useState(Math.random());
                 (0, E.Z)();
                 const [P, L] = a.useState(w.G.all),
                     R = a.useCallback(() => {
@@ -543,15 +543,15 @@
                     B = a.useCallback(
                         (e) => {
                             const n = new URLSearchParams(window.location.search).get("q");
-                            c.scribe({ element: "grok_search", action: "submit" }), e !== n ? t.push(`/i/grok/history?q=${encodeURIComponent(e)}`) : z(Math.random());
+                            c.scribe({ element: "grok_search", action: "submit" }), e !== n ? t.push(`/i/grok/history?q=${encodeURIComponent(e)}`) : M(Math.random());
                         },
                         [t, c],
                     ),
                     H = a.useMemo(() => (l ? a.createElement(I.D, { query: l, queryKey: _ }) : P === w.G.images ? a.createElement(v.v, null) : P === w.G.pins ? a.createElement(k.s, null) : a.createElement(C.c, { onSearchSubmit: B, searchKey: _, searchValue: l ?? "" })), [l, _, P, B]),
                     [T] = (0, f.ZP)();
-                return a.createElement(g.nO, { namespace: x }, a.createElement(u.Z, null, T ? a.createElement(y.T, { documentTitle: S }) : null, a.createElement(m.Z, { customSearchBox: s ? a.createElement(Z.v, { initialValue: l ?? "", onSubmit: B }) : void 0, documentTitle: S, history: t, isFullWidth: !0, onBackClick: R, primaryContent: a.createElement(r.Z, { style: M.container }, d.ZP.isWebView() ? a.createElement(o.Z, { size: "space56" }) : null, H), primaryContentLabel: S, rightControl: a.createElement(a.Fragment, null), secondaryBar: l ? null : a.createElement(w.k, { onTabChange: L, selectedTab: P }), sidebarContent: null, title: s ? void 0 : S, withBorderLessLayout: T, withSearchBox: s })));
+                return a.createElement(g.nO, { namespace: x }, a.createElement(u.Z, null, T ? a.createElement(y.T, { documentTitle: S }) : null, a.createElement(m.Z, { customSearchBox: s ? a.createElement(Z.v, { initialValue: l ?? "", onSubmit: B }) : void 0, documentTitle: S, history: t, isFullWidth: !0, onBackClick: R, primaryContent: a.createElement(r.Z, { style: z.container }, d.ZP.isWebView() ? a.createElement(o.Z, { size: "space56" }) : null, H), primaryContentLabel: S, rightControl: a.createElement(a.Fragment, null), secondaryBar: l ? null : a.createElement(w.k, { onTabChange: L, selectedTab: P }), sidebarContent: null, title: s ? void 0 : S, withBorderLessLayout: T, withSearchBox: s })));
             }
-            const M = c.default.create((e) => ({ container: { paddingHorizontal: e.spaces.space24 } }));
+            const z = c.default.create((e) => ({ container: { paddingHorizontal: e.spaces.space24 } }));
         },
         975226: (e, t, n) => {
             n.d(t, { _: () => d });
@@ -568,7 +568,7 @@
                 };
         },
         774038: (e, t, n) => {
-            n.d(t, { N6: () => F, eQ: () => W, rO: () => O });
+            n.d(t, { N6: () => D, eQ: () => W, rO: () => O });
             n(543673), n(240753), n(128399), n(136728);
             var a = n(202784),
                 r = n(107267),
@@ -596,8 +596,8 @@
                 x = n(928831),
                 S = n(988290),
                 _ = n(737368),
-                M = n(305442);
-            const z = f.ZP.isTwitterApp(),
+                z = n(305442);
+            const M = f.ZP.isTwitterApp(),
                 P = f.ZP.isTwitterApp() ? (f.ZP.isAndroid() ? "grok_android" : "grok_ios") : "grok",
                 L = m().j826e722,
                 R = m().a9325f10,
@@ -607,12 +607,12 @@
                 U = m().abd845fe,
                 j = m().d1d3a41a,
                 A = m().a2697040,
-                D = ["ton.x.com", "ton.twitter.com", "pbs.twimg.com"];
-            function F(e) {
+                F = ["ton.x.com", "ton.twitter.com", "pbs.twimg.com"];
+            function D(e) {
                 const t = a.useMemo(() => e || { fileName: "", mimeType: "" }, [e]),
                     n = (0, k.I0)(),
                     [r, i] = a.useState(),
-                    o = a.useMemo(() => !!t?.url && D.includes(new URL(t.url).hostname), [t]),
+                    o = a.useMemo(() => !!t?.url && F.includes(new URL(t.url).hostname), [t]),
                     c = a.useMemo(() => ((t.url && o) || t.isPublic ? t.url : r ? URL.createObjectURL(r) : void 0), [r, o, t.isPublic, t.url]);
                 return (
                     a.useEffect(() => {
@@ -631,19 +631,19 @@
                 const w = (0, k.I0)(),
                     x = (0, C.Z)(),
                     _ = (0, r.useHistory)(),
-                    { isGrokDrawer: M } = (0, S.ZP)(),
+                    { isGrokDrawer: z } = (0, S.ZP)(),
                     A = (0, E.hC)("responsive_web_grok_image_edit");
                 return a.createElement(
                     i.Z,
-                    { onClick: (e) => e.stopPropagation(), style: Z ? G.containerCorner : G.container, withGutter: !0 },
-                    !z &&
+                    { onClick: (e) => e.stopPropagation(), style: Z ? K.containerCorner : K.container, withGutter: !0 },
+                    !M &&
                         a.createElement(
                             a.Fragment,
                             null,
                             a.createElement(o.ZP, {
                                 disabled: d,
                                 hoverLabel: { label: L },
-                                icon: a.createElement(u.default, { style: G.white }),
+                                icon: a.createElement(u.default, { style: K.white }),
                                 key: "saveImage",
                                 onClick: (n) => {
                                     (async () => {
@@ -655,13 +655,13 @@
                                     })();
                                 },
                                 size: n,
-                                style: G.button,
+                                style: K.button,
                                 type: s,
                             }),
                             a.createElement(o.ZP, {
                                 disabled: d,
                                 hoverLabel: { label: R },
-                                icon: a.createElement(p.default, { style: G.white }),
+                                icon: a.createElement(p.default, { style: K.white }),
                                 key: "copyImage",
                                 onClick: (n) => {
                                     (async () => {
@@ -679,13 +679,13 @@
                                     })();
                                 },
                                 size: n,
-                                style: G.button,
+                                style: K.button,
                                 type: s,
                             }),
                             a.createElement(o.ZP, {
                                 disabled: d,
                                 hoverLabel: { label: T },
-                                icon: a.createElement(g.default, { style: G.white }),
+                                icon: a.createElement(g.default, { style: K.white }),
                                 key: "postImage",
                                 onClick: (n) => {
                                     (async () => {
@@ -696,7 +696,7 @@
                                     })();
                                 },
                                 size: n,
-                                style: G.button,
+                                style: K.button,
                                 type: s,
                             }),
                         ),
@@ -706,7 +706,7 @@
                               {
                                   disabled: d,
                                   hoverLabel: { label: j },
-                                  icon: a.createElement(h.default, { style: G.white }),
+                                  icon: a.createElement(h.default, { style: K.white }),
                                   key: "editImage",
                                   onClick: (n) => {
                                       (async () => {
@@ -714,10 +714,10 @@
                                       })();
                                   },
                                   size: n,
-                                  style: G.button,
+                                  style: K.button,
                                   type: s,
                               },
-                              !M && a.createElement(c.ZP, { style: G.white }, U),
+                              !z && a.createElement(c.ZP, { style: K.white }, U),
                           )
                         : null,
                 );
@@ -726,8 +726,8 @@
                 const c = (0, _.k)(),
                     l = (0, k.I0)(),
                     d = (0, C.Z)(),
-                    { isImageEditEnabled: m, selectImageEditMode: u } = (0, x.w)(),
-                    p = (0, M.Z)("image_edit"),
+                    { isImageEditEnabled: m, selectImageEditFilterKey: u } = (0, x.w)(),
+                    p = (0, z.Z)("image_edit"),
                     g = a.useRef(!1),
                     h = a.useCallback(
                         (a) => {
@@ -749,9 +749,9 @@
                         },
                         [p, l, d, c, e, t, r, n, m, u],
                     );
-                return a.createElement(i.Z, { onClick: (e) => e.stopPropagation(), style: G.container, withGutter: !0 }, !z && a.createElement(s.Z, { backButtonType: "close", onClick: () => o(!1) }), a.createElement(w.Z, { conversationKey: t, disableFileUploads: !0, hasAccess: !0, isIdle: !0, mode: "", placeholder: A, promptSender: h, useMagicWandIcon: !0, useNonExpanded: !0 }));
+                return a.createElement(i.Z, { onClick: (e) => e.stopPropagation(), style: K.container, withGutter: !0 }, !M && a.createElement(s.Z, { backButtonType: "close", onClick: () => o(!1) }), a.createElement(w.Z, { conversationKey: t, disableFileUploads: !0, hasAccess: !0, isIdle: !0, mode: "", placeholder: A, promptSender: h, useMagicWandIcon: !0, useNonExpanded: !0 }));
             }
-            const G = l.default.create((e) => ({ button: { borderRadius: e.borderRadii.large, backdropFilter: "blur(8px)" }, container: { padding: e.spaces.space12, flexDirection: "row", gap: e.spaces.space20, justifyContent: "center" }, containerCorner: { padding: e.spaces.space4, flexDirection: "row", gap: e.spaces.space8, justifyContent: "center" }, center: { justifyContent: "center", alignItems: "center" }, flex: { flex: 1 }, white: { color: "white" } }));
+            const K = l.default.create((e) => ({ button: { borderRadius: e.borderRadii.large, backdropFilter: "blur(8px)" }, container: { padding: e.spaces.space12, flexDirection: "row", gap: e.spaces.space20, justifyContent: "center" }, containerCorner: { padding: e.spaces.space4, flexDirection: "row", gap: e.spaces.space8, justifyContent: "center" }, center: { justifyContent: "center", alignItems: "center" }, flex: { flex: 1 }, white: { color: "white" } }));
         },
         86629: (e, t, n) => {
             n.r(t), n.d(t, { default: () => Z });
@@ -789,36 +789,36 @@
             function S({ conversationKey: e, defaultEditMode: t, indexArg: n, messageId: c }) {
                 (0, E.n)(!0);
                 const [Z, S] = a.useState(t),
-                    M = (0, i.useHistory)(),
-                    z = (0, f.ZP)(),
+                    z = (0, i.useHistory)(),
+                    M = (0, f.ZP)(),
                     P = a.useCallback(() => {
-                        M.goBack();
-                    }, [M]),
-                    L = e === z.conversationKey,
-                    R = L ? z.messageIds : I,
-                    B = L && (z.status === g.Q_.TYPING || z.status === g.Q_.WAITING),
+                        z.goBack();
+                    }, [z]),
+                    L = e === M.conversationKey,
+                    R = L ? M.messageIds : I,
+                    B = L && (M.status === g.Q_.TYPING || M.status === g.Q_.WAITING),
                     H = a.useMemo(() => (B ? [...R, null] : R), [B, R]),
                     T = H.length,
                     U = c || H[H.length - 1],
                     j = (0, p.bD)(e),
                     A = (0, u.v9)((e) => j.selectMessageById(e, T ? U : null)),
-                    D = A.fileAttachments || w,
-                    F = A.intermediateImageResults || x,
-                    O = a.useMemo(() => (0, s.Z)([...F.map((e) => e.imageIdStr), ...D.map((e) => e.mediaId)]).filter(Boolean), [D, F]),
-                    W = a.useMemo(() => D.map((e) => e.url).filter(Boolean), [D]),
-                    [G, K] = a.useState({ width: 0, height: 0 }),
-                    N = Math.min(1, Math.max(C / G.width || 0, k / G.height || 0)),
-                    [$, V] = a.useState(D.map(() => null)),
+                    F = A.fileAttachments || w,
+                    D = A.intermediateImageResults || x,
+                    O = a.useMemo(() => (0, s.Z)([...D.map((e) => e.imageIdStr), ...F.map((e) => e.mediaId)]).filter(Boolean), [F, D]),
+                    W = a.useMemo(() => F.map((e) => e.url).filter(Boolean), [F]),
+                    [K, G] = a.useState({ width: 0, height: 0 }),
+                    N = Math.min(1, Math.max(C / K.width || 0, k / K.height || 0)),
+                    [$, V] = a.useState(F.map(() => null)),
                     q = a.useCallback(
                         ({ nativeEvent: { layout: e } }) => {
-                            (e.width === G.width && e.height === G.height) || K({ width: e.width, height: e.height });
+                            (e.width === K.width && e.height === K.height) || G({ width: e.width, height: e.height });
                         },
-                        [K, G],
+                        [G, K],
                     ),
                     [J, Q] = a.useState(0),
                     X = O[J],
                     Y = W[J],
-                    ee = D.find((e) => e.mediaId === X) ?? { fileName: "image", mimeType: "image/jpeg" },
+                    ee = F.find((e) => e.mediaId === X) ?? { fileName: "image", mimeType: "image/jpeg" },
                     te = (0, b.N6)(ee);
                 if (!T) return a.createElement(h.Z, { to: "/home" });
                 const ne = Z ? a.createElement(b.eQ, { contentUrl: te || "", conversationKey: e, grokFile: ee, onSend: P, setEditMode: S }) : a.createElement(b.rO, { allMediaIds: O, allMediaUrls: W, contentUrl: te, isLoading: !te, mediaId: X, mediaUrl: Y, setEditMode: S });
@@ -831,25 +831,25 @@
                         a.createElement(
                             r.Z,
                             { onLayout: q, style: _.flex },
-                            G.width &&
-                                G.height &&
+                            K.width &&
+                                K.height &&
                                 a.createElement(
                                     o.Z,
-                                    { contentPadding: 1, onScroll: (e) => Q(Math.round(e.next / G.width)), scrollToCenter: !0, style: [G, _.center], visibleItemIndex: n, withAddedNavButtonClickArea: !0, withGlobalKeyboardNavigation: !0, withScrollIntoView: !1 },
-                                    D.map((e, t) => {
+                                    { contentPadding: 1, onScroll: (e) => Q(Math.round(e.next / K.width)), scrollToCenter: !0, style: [K, _.center], visibleItemIndex: n, withAddedNavButtonClickArea: !0, withGlobalKeyboardNavigation: !0, withScrollIntoView: !1 },
+                                    F.map((e, t) => {
                                         const n = O[t],
-                                            i = D.find((e) => e.mediaId === n) ?? { fileName: "image", mimeType: "image/jpeg" },
-                                            o = F.filter((e) => e.imageIdStr === n),
+                                            i = F.find((e) => e.mediaId === n) ?? { fileName: "image", mimeType: "image/jpeg" },
+                                            o = D.filter((e) => e.imageIdStr === n),
                                             c = B ? A.expectedImageAspectRatio || v : $[t] || v,
-                                            s = $[t] || B ? Math.min(G.width, G.height * c) * N : void 0;
+                                            s = $[t] || B ? Math.min(K.width, K.height * c) * N : void 0;
                                         return a.createElement(
                                             r.Z,
-                                            { key: `slot_${t}`, style: [G, _.center] },
+                                            { key: `slot_${t}`, style: [K, _.center] },
                                             a.createElement(y.Z, {
                                                 aspectRatio: A.expectedImageAspectRatio,
                                                 centerJustify: !0,
                                                 file: i,
-                                                height: G.height * N,
+                                                height: K.height * N,
                                                 intermediateResults: o,
                                                 isLoading: B,
                                                 key: `image_${t}`,
@@ -926,4 +926,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-c69e90f3.1045830a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-c69e90f3.990f0b6a.js.map

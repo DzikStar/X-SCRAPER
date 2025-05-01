@@ -4165,6 +4165,8 @@
                 t("e9b6d404", "What search tools should Grok have access to?"),
                 t("h15dce2e", "Advanced Settings"),
                 t("ff9dc268", "Edit prompt"),
+                t("acb2baa0", "Create Images"),
+                t("h30fd372", "Try Voice Mode"),
                 t("e9fcdd0c", "Ask Grok to aggressively search the web"),
                 t("fc4e8aba", "Ask Grok to reason step-by-step"),
                 t("e4ae6abe", "Ask Grok to transform your image"),
@@ -4334,41 +4336,16 @@
                 t("g01599b6", "Response 1"),
                 t("e02694e0", "Response 2"),
                 t("h6867fcc", "I prefer this response"),
-                t("b2175228", "Grok for Android is here"),
-                t("d2d8650c", "Get the best Grok experience in our new standalone app"),
-                t("ia5bef3e", "How can I help you today?"),
-                t("ge683598", "Ask Grok anything..."),
-                t("fef25c88", "Try Grok for free now"),
-                t("fb172aa8", "A free tier of Grok is now available in your region. Chat, generate images, and analyze photos. Limits apply."),
-                t("d7af4f40", "Generate an image of a galaxy"),
-                t("gcb6c0be", "Grok can make mistakes. Verify its outputs."),
-                t("cb88fd82", "You are using a free Grok version."),
-                t("g27a5314", "To start using Grok, add a phone number to your account."),
-                t("bdd84568", "Your account is too new to use Grok. Please try again later."),
-                t("a9109a94", "A solarpunk village"),
-                t("g986f7a4", "Generate an image of a solarpunk village"),
-                t("ad685264", "Mount Fuji"),
-                t("hdb08284", "Make an anime style picture of Mount Fuji"),
-                t("a986ae84", "A flying cat"),
-                t("a14b556a", "Generate an image of a flying cat"),
-                t("gc16b670", "A robot in a flower field"),
-                t("d5b8fa44", "Generate an image of a robot in a flower field"),
-                t("da196ff6", "Astronaut on Mars"),
-                t("ae3979cc", "Make a portrait of an astronaut on Mars"),
-                t("a682460e", "A speeding roadster"),
-                t("e03e5514", "Make a picture of a Tesla roadster driving through Shinjuku with motion blur"),
-                t("e68eac68", "Admiring northern lights"),
-                t("hc6e6754", "Make a picture of someone admiring northern lights"),
-                t("cf59f9f6", "Help me write a cover letter"),
-                t("cd9aeac8", "Tell me today’s headlines"),
-                t("acf2f0be", "Recommend a fantasy RPG game"),
-                t("b9bd12e2", "Solve the Two Sum problem in Python"),
+                t("d07488a6", "Get the Android app"),
+                t("d9cfe70c", "Access advanced Grok features"),
                 t("hf9afab0", "Enable DeepSearch to scan the internet and X, analyze information, and deliver detailed, well-reasoned answers with rapid, agentic search."),
                 t("ef3b3f04", "Enable Think to use our reasoning model. It’s best for math, science and coding. You can also ask Grok to “Think harder” about any question that might need a little more brain power. "),
                 t("b43636b8", "Introducing Grok 3"),
                 t("j376298c", "Grok 3 introduces two new modes to interact with our most powerful model: DeepSearch and Think."),
                 t("e3584f8e", "What are the 10 most successful options trading strategies used by hedge funds"),
                 t("d91b7b8a", "What would it cost to build a university in 1885?"),
+                t("ia5bef3e", "How can I help you today?"),
+                t("ebea5880", "Recent Conversations"),
                 t("e13591c0", "Example Grok conversation"),
                 t("c27ca452", "Premium subscribers can now use our most advanced AI, Grok, on X."),
                 t("b6abc25a", "Introducing Grok 2"),
@@ -4912,8 +4889,8 @@
                 t("ff95a9cc", "Video ID"),
                 t("a97e358e", "Video Link"),
                 t("e10e8b46", "Only showing the videos from the last 100 days."),
-                t("ba37f6da", "Video overview");
-            t("f19846b2", "Video thumbnail"),
+                t("ba37f6da", "Video overview"),
+                t("f19846b2", "Video thumbnail"),
                 t("ccd6f4a8", "Video title"),
                 t("c8410542", "The number of times your video was viewed."),
                 t("a532072a", "Viewers"),
@@ -4935,8 +4912,8 @@
                 t("f2f463ea", "ai -startup"),
                 t("a10a357e", 'contains "ai" and has at least 50 likes'),
                 t("ca8ed1e8", "ai min_faves:50"),
-                t("i945a3f2", 'contains "ai" and a URL with the word "grok" in it'),
-                t("a9348088", "ai url:grok"),
+                t("i945a3f2", 'contains "ai" and a URL with the word "grok" in it');
+            t("a9348088", "ai url:grok"),
                 t("b5c3cdbc", 'mentioning X account "grok"'),
                 t("e2634592", "@grok"),
                 t("i88ba038", "Alert Disabled"),
@@ -5870,10 +5847,10 @@
                 t("ae58026a", "Buɗe wani fayil .json na So Mai Alama domin a fara duba"),
                 t("hd0bc1eb", function (a) {
                     return a.name + " yana kai tsaye";
-                });
-            t("bea1f26b", function (a) {
-                return a.name + " ya kasance kai tsaye";
-            }),
+                }),
+                t("bea1f26b", function (a) {
+                    return a.name + " ya kasance kai tsaye";
+                }),
                 t("ab3ee97f", function (a) {
                     return a.screenName + " is not live";
                 }),
@@ -5901,8 +5878,8 @@
                 t("edef4c82", "Post directly to a Community"),
                 t("a7640df6", "Your posts are shared with Community members and your followers."),
                 t("h3bb8068", "Sami tsimi lokacin da ka buƙace shi"),
-                t("a709f8f8", "Masu gudanarwa da masu daidaitawa suna taimakawa gudanar Al'ummomi da kuma barin tattaunawa a kan hanya."),
-                t("c8d33380", "Sababbin abubuwa"),
+                t("a709f8f8", "Masu gudanarwa da masu daidaitawa suna taimakawa gudanar Al'ummomi da kuma barin tattaunawa a kan hanya.");
+            t("c8d33380", "Sababbin abubuwa"),
                 t("cb6adb10", "Gano Al'ummomi"),
                 t("df362964", "Nemi Al'ummai"),
                 t("dfd5031f", function (a) {
@@ -6876,8 +6853,8 @@
                 t("c4fd68da", "Customize your experience"),
                 t("c0195168", "Change your app icon and navigation options"),
                 t("b6b5dc94", "Become verified"),
-                t("b06db848", "Stand out from others on the platform");
-            t("e3e3a97c", "Earn a share of revenue from your posts"),
+                t("b06db848", "Stand out from others on the platform"),
+                t("e3e3a97c", "Earn a share of revenue from your posts"),
                 t("f15bc24e", "Increased Grok limits"),
                 t("c4666e1c", "More usage of Grok 3, our latest model"),
                 t("he74ae7a", "Highest Grok usage limits"),
@@ -6899,8 +6876,8 @@
                 t("c3148608", "Get faster assistance when you need help"),
                 t("b485ca6e", "Highlights tab"),
                 t("d438955e", "Showcase your top posts"),
-                t("f373a352", "Encrypted DMs"),
-                t("g7405aca", "Chat securely with end-to-end encryption"),
+                t("f373a352", "Encrypted DMs");
+            t("g7405aca", "Chat securely with end-to-end encryption"),
                 t("j659fa0c", "The best of Grok 3"),
                 t("ibff5694", "Unlock the highest usage limits, DeepSearch & Think, plus early access to new features"),
                 t("i824f4da", "Fewer ads"),
@@ -7852,7 +7829,34 @@
                 t("ddfd6718", "Payment Failed"),
                 t("i90ea7d2", "Please urgently update your billing to keep your benefits."),
                 t("a62359e6", "Verified Organization Settings"),
-                t("ge221b7c", "Upgrade Verified Organization subscription to get access to affiliates and more ad credits.");
+                t("ge221b7c", "Upgrade Verified Organization subscription to get access to affiliates and more ad credits."),
+                t("i4dccc18", "Billing"),
+                t("ec3cd6e4", "Manage your payment method, update billing information, and review your invoices."),
+                t("dac61c3c", "Account settings"),
+                t("b6b5fd66", "Manage your X account including changing your username or password."),
+                t("hb9c4a1c", "Questions, bug reports and feedback"),
+                t("c674f5b4", "Setup invoice payments"),
+                t("i8237e66", "Switch from credit card payments to invoicing via bank transfers."),
+                t("hebd348a", "Configure how ads are used to promote jobs from the Hiring portal."),
+                t("ib5e6f90", "Job Promotion"),
+                t("id720215", "Hiring"),
+                t("dd59f146", "Job promotion ad account"),
+                t("e7e36818", "Ad accounts are eligible for job promotion when they are fully set up with a funding source."),
+                t("c28566e0", "Ad Account"),
+                t("c80160d3", "Advertising"),
+                t("ff0edac0", "Are you sure you want to cancel your subscription?"),
+                t("h2ac0348", "No, take me back"),
+                t("dbf9667e", "I’m sure"),
+                t("j7592572", "U-turn"),
+                t("ee778942", "Traffic lights"),
+                t("fdd57981", function (a) {
+                    return "We’d like to offer you a free one-time " + a.totalAmount + " USD ad credit.";
+                }),
+                t("i032a231", function (a) {
+                    return "I’ll stay and claim the " + a.totalAmount + " ad credit";
+                }),
+                t("hd7d278c", "No thanks"),
+                t("jf8a0dea", "Great! Your new free ad credit will appear in your account on your next billing cycle.");
             function r(a, e) {
                 for (var n = 0; n < e.length; n++) {
                     var t = e[n];
@@ -7891,34 +7895,7 @@
                     u(a, e)
                 );
             }
-            t("i4dccc18", "Billing"),
-                t("ec3cd6e4", "Manage your payment method, update billing information, and review your invoices."),
-                t("dac61c3c", "Account settings"),
-                t("b6b5fd66", "Manage your X account including changing your username or password."),
-                t("hb9c4a1c", "Questions, bug reports and feedback"),
-                t("c674f5b4", "Setup invoice payments"),
-                t("i8237e66", "Switch from credit card payments to invoicing via bank transfers."),
-                t("hebd348a", "Configure how ads are used to promote jobs from the Hiring portal."),
-                t("ib5e6f90", "Job Promotion"),
-                t("id720215", "Hiring"),
-                t("dd59f146", "Job promotion ad account"),
-                t("e7e36818", "Ad accounts are eligible for job promotion when they are fully set up with a funding source."),
-                t("c28566e0", "Ad Account"),
-                t("c80160d3", "Advertising"),
-                t("ff0edac0", "Are you sure you want to cancel your subscription?"),
-                t("h2ac0348", "No, take me back"),
-                t("dbf9667e", "I’m sure"),
-                t("j7592572", "U-turn"),
-                t("ee778942", "Traffic lights"),
-                t("fdd57981", function (a) {
-                    return "We’d like to offer you a free one-time " + a.totalAmount + " USD ad credit.";
-                }),
-                t("i032a231", function (a) {
-                    return "I’ll stay and claim the " + a.totalAmount + " ad credit";
-                }),
-                t("hd7d278c", "No thanks"),
-                t("jf8a0dea", "Great! Your new free ad credit will appear in your account on your next billing cycle."),
-                t("ebbb3154", "Close and return to X"),
+            t("ebbb3154", "Close and return to X"),
                 t("j1f68dda", "Final step: Are you sure you want to cancel?"),
                 t("c9c3464c", "Subscription cancellation in progress"),
                 t("dd3a293c", "Your Verified Organization subscription has ended."),
@@ -8896,8 +8873,8 @@
                 t("ccd32094", "Yanzu"),
                 t("abfcce0d", function (a) {
                     return a.amountOfTime + " da ya wuce";
-                });
-            t("ae408b76", "You reposted"),
+                }),
+                t("ae408b76", "You reposted"),
                 t("j355f008", "Pinned post"),
                 t("habf9678", "Mawallafi ya kafa"),
                 t("db0798ed", function (a) {
@@ -8953,10 +8930,10 @@
                 }),
                 t("d925a4f9", function (a) {
                     return "Saura mint" + i(a.count, "i", "una") + " " + a.formattedCount;
-                }),
-                t("ib15cddb", function (a) {
-                    return "Saura " + i(a.count, "sa''a", " sa''o''i") + " " + a.formattedCount;
-                }),
+                });
+            t("ib15cddb", function (a) {
+                return "Saura " + i(a.count, "sa''a", " sa''o''i") + " " + a.formattedCount;
+            }),
                 t("db9ed19f", function (a) {
                     return "Saura kwana" + i(a.count, "", "ki") + " " + a.formattedCount;
                 }),
@@ -13208,4 +13185,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ha.9750cdda.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ha.ab4220fa.js.map

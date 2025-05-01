@@ -4162,6 +4162,8 @@
                 t("e9b6d404", "Auf welche Suchtools sollte Grok Zugriff haben?"),
                 t("h15dce2e", "Erweiterte Einstellungen"),
                 t("ff9dc268", "Prompt bearbeiten"),
+                t("acb2baa0", "Create Images"),
+                t("h30fd372", "Try Voice Mode"),
                 t("e9fcdd0c", "Grok bitten, das Web detailliert zu durchsuchen"),
                 t("fc4e8aba", "Grok bitten, Schritt für Schritt zu argumentieren"),
                 t("e4ae6abe", "Grok bitten, dein Bild umzuwandeln"),
@@ -4331,41 +4333,16 @@
                 t("g01599b6", "Antwort 1"),
                 t("e02694e0", "Antwort 2"),
                 t("h6867fcc", "Ich bevorzuge diese Antwort"),
-                t("b2175228", "Grok für Android ist hier"),
-                t("d2d8650c", "Nutze Grok optimal in unserer neuen, eigenständigen App"),
-                t("ia5bef3e", "Wie kann ich dir heute helfen?"),
-                t("ge683598", "Frag Grok etwas..."),
-                t("fef25c88", "Grok jetzt gratis ausprobieren"),
-                t("fb172aa8", "In deiner Region ist nun eine Gratisstufe von Grok verfügbar. Du kannst damit chatten, Bilder generieren und Fotos analysieren. Es gelten Limits."),
-                t("d7af4f40", "Generiere ein Bild einer Galaxie"),
-                t("gcb6c0be", "Grok kann Fehler machen. Überprüfe die Ausgaben."),
-                t("cb88fd82", "Du nutzt eine Gratisversion von Grok."),
-                t("g27a5314", "Wenn du Grok nutzen möchtest, musst du deinem Account eine Telefonnummer hinzufügen."),
-                t("bdd84568", "Dein Account ist zu neu und darf Grok noch nicht nutzen. Bitte versuche es später erneut."),
-                t("a9109a94", "Ein Solarpunkt-Dorf"),
-                t("g986f7a4", "Generiere ein Bild eines Solarpunk-Dorfes"),
-                t("ad685264", "Fudschijama"),
-                t("hdb08284", "Erstelle ein Bild vom Fudschijama im Anime-Stil"),
-                t("a986ae84", "Eine fliegende Katze"),
-                t("a14b556a", "Generiere ein Bild einer fliegenden Katze"),
-                t("gc16b670", "Ein Roboter in einem Blumenfeld"),
-                t("d5b8fa44", "Generiere ein Bild eines Roboters in einem Blumenfeld"),
-                t("da196ff6", "Astronaut auf dem Mars"),
-                t("ae3979cc", "Erstelle ein Porträt eines Astronauten auf dem Mars"),
-                t("a682460e", "Ein rasanter Sportwagen"),
-                t("e03e5514", "Erstelle ein Bild mit Bewegungsunschärfe von einem Tesla-Sportwagen, der durch Shinjuku fährt"),
-                t("e68eac68", "Beeindruckt vom Polarlicht"),
-                t("hc6e6754", "Erstelle ein Bild einer Person, die das Polarlicht bewundert"),
-                t("cf59f9f6", "Hilf mir, ein Anschreiben zu verfassen"),
-                t("cd9aeac8", "Zeig mir die Schlagzeilen von heute"),
-                t("acf2f0be", "Empfiehl mir ein Fantasy-RPG-Game"),
-                t("b9bd12e2", "Löse das Zweisummenproblem in Python"),
+                t("d07488a6", "Get the Android app"),
+                t("d9cfe70c", "Access advanced Grok features"),
                 t("hf9afab0", "Aktiviere „DeepSearch“, wenn du das Internet und X durchsuchen, Informationen analysieren und detaillierte, wohlüberlegte Antworten mit der schnellen Agentsuche erhalten möchtest."),
                 t("ef3b3f04", "Aktiviere „Denken“, wenn du unser Logikmodell nutzen möchtest. Es eignet sich am besten für Mathematik, Naturwissenschaften und Programmierung. Du kannst angeben, dass Grok über eine beliebige Frage „Schärfer nachdenken“ soll, die vielleicht eine stärkere Denkleistung erfordert. "),
                 t("b43636b8", "Wir stellen vor: Grok 3"),
                 t("j376298c", "Grok 3 führt zwei neue Modi für die Interaktion mit unserem leistungsstärksten Modell ein: DeepSearch und Denken."),
                 t("e3584f8e", "Was sind die 10 erfolgreichsten Handelsstrategien für Optionen, die Hedgefonds einsetzen?"),
                 t("d91b7b8a", "Was kostete der Bau einer Universität 1885?"),
+                t("ia5bef3e", "Wie kann ich dir heute helfen?"),
+                t("ebea5880", "Recent Conversations"),
                 t("e13591c0", "Beispielkonversation mit Grok"),
                 t("c27ca452", "Premium-Abonnent*innen können nun unsere fortschrittlichste KI, Grok, auf X nutzen."),
                 t("b6abc25a", "Wir stellen vor: Grok 2"),
@@ -4909,8 +4886,8 @@
                 t("ff95a9cc", "Video-ID"),
                 t("a97e358e", "Video-Link"),
                 t("e10e8b46", "Es werden nur die Videos aus den letzten 100 Tagen gezeigt."),
-                t("ba37f6da", "Videoübersicht");
-            t("f19846b2", "Video-Miniaturbild"),
+                t("ba37f6da", "Videoübersicht"),
+                t("f19846b2", "Video-Miniaturbild"),
                 t("ccd6f4a8", "Videotitel"),
                 t("c8410542", "Wie oft dein Video angezeigt wurde."),
                 t("a532072a", "Zuschauer*innen"),
@@ -4932,8 +4909,8 @@
                 t("f2f463ea", "ai startup"),
                 t("a10a357e", "enthält „ai“ und hat mindestens 50 „Gefällt mir“-Markierungen"),
                 t("ca8ed1e8", "ai min_faves:50"),
-                t("i945a3f2", "enthält „ai“ und eine URL, in der das Wort „grok“ enthalten ist"),
-                t("a9348088", "ai url:grok"),
+                t("i945a3f2", "enthält „ai“ und eine URL, in der das Wort „grok“ enthalten ist");
+            t("a9348088", "ai url:grok"),
                 t("b5c3cdbc", "erwähnt den X Account „grok“"),
                 t("e2634592", "Grok"),
                 t("i88ba038", "Alarm deaktiviert"),
@@ -5867,10 +5844,10 @@
                 t("ae58026a", "Eine .json-Datei für Marken-Likes zur Vorschau öffnen"),
                 t("hd0bc1eb", function (e) {
                     return e.name + " ist live";
-                });
-            t("bea1f26b", function (e) {
-                return e.name + " war live";
-            }),
+                }),
+                t("bea1f26b", function (e) {
+                    return e.name + " war live";
+                }),
                 t("ab3ee97f", function (e) {
                     return e.screenName + " ist nicht live";
                 }),
@@ -5898,8 +5875,8 @@
                 t("edef4c82", "Direkt an eine Community posten"),
                 t("a7640df6", "Deine Posts werden mit Community-Mitgliedern und mit deinen Follower*innen geteilt."),
                 t("h3bb8068", "Rückhalt, wenn du ihn brauchst"),
-                t("a709f8f8", "Administratoren und Moderatoren helfen bei der Verwaltung von Communities und sorgen dafür, dass die Konversation beim Thema bleibt."),
-                t("c8d33380", "Neue Elemente"),
+                t("a709f8f8", "Administratoren und Moderatoren helfen bei der Verwaltung von Communities und sorgen dafür, dass die Konversation beim Thema bleibt.");
+            t("c8d33380", "Neue Elemente"),
                 t("cb6adb10", "Communities entdecken"),
                 t("df362964", "Communities suchen"),
                 t("dfd5031f", function (e) {
@@ -6873,8 +6850,8 @@
                 t("c4fd68da", "Passe deine Nutzung an"),
                 t("c0195168", "Ändere dein App-Symbol und die Navigationsoptionen"),
                 t("b6b5dc94", "Lass dich verifizieren"),
-                t("b06db848", "Heb dich von anderen auf der Plattform ab");
-            t("e3e3a97c", "Erhalte eine Umsatzbeteilung aus deinen Posts"),
+                t("b06db848", "Heb dich von anderen auf der Plattform ab"),
+                t("e3e3a97c", "Erhalte eine Umsatzbeteilung aus deinen Posts"),
                 t("f15bc24e", "Höhere Grok-Limits"),
                 t("c4666e1c", "Mehr Nutzung von Grok 3, unserem neuesten Modell"),
                 t("he74ae7a", "Höchste Grok-Nutzungslimits"),
@@ -6896,8 +6873,8 @@
                 t("c3148608", "Schnellere Hilfe, wenn du sie brauchst"),
                 t("b485ca6e", "Tab „Highlights“"),
                 t("d438955e", "Präsentiere deine besten Posts"),
-                t("f373a352", "Verschlüsselte Direktnachrichten"),
-                t("g7405aca", "Chatte sicher mit durchgehender Verschlüsselung"),
+                t("f373a352", "Verschlüsselte Direktnachrichten");
+            t("g7405aca", "Chatte sicher mit durchgehender Verschlüsselung"),
                 t("j659fa0c", "Das Beste von Grok 3"),
                 t("ibff5694", "Hol dir die höchsten Nutzungslimits, DeepSearch und Denken, sowie vorzeitigen Zugriff auf neue Funktionen"),
                 t("i824f4da", "Weniger Werbung"),
@@ -7849,7 +7826,34 @@
                 t("ddfd6718", "Zahlung fehlgeschlagen"),
                 t("i90ea7d2", "Bitte aktualisiere dringend deine Rechnungsinformationen, damit du deine Vorteile behalten kannst."),
                 t("a62359e6", "Einstellungen für Verifizierte Organisation"),
-                t("ge221b7c", "Führe ein Upgrade bei deinem Abonnement von Verifizierte Organisationen durch, wenn du Zugriff auf verbundene Accounts und ein höheres Werbeguthaben erhalten möchtest.");
+                t("ge221b7c", "Führe ein Upgrade bei deinem Abonnement von Verifizierte Organisationen durch, wenn du Zugriff auf verbundene Accounts und ein höheres Werbeguthaben erhalten möchtest."),
+                t("i4dccc18", "Rechnungsstellung"),
+                t("ec3cd6e4", "Verwalte deine Zahlungsmethode, aktualisiere die Rechnungsinformationen und prüfe deine Rechnungen."),
+                t("dac61c3c", "Account-Einstellungen"),
+                t("b6b5fd66", "Verwalte deinen X Account, indem du z. B. deinen Nutzernamen oder dein Passwort änderst."),
+                t("hb9c4a1c", "Fragen stellen, Fehler melden, Feedback geben"),
+                t("c674f5b4", "Rechnungszahlungen einrichten"),
+                t("i8237e66", "Wechsle von Zahlungen per Kreditkarte zu Banküberweisungen."),
+                t("hebd348a", "Konfiguriere, wie Jobs aus dem Hiring-Portal mit Anzeigen beworben werden. "),
+                t("ib5e6f90", "Job-Promotion"),
+                t("id720215", "Hiring-"),
+                t("dd59f146", "Werbe-Account für Job-Promotionen"),
+                t("e7e36818", "Werbe-Accounts kommen für Job-Promotionen in Frage, wenn sie vollständig mit einer Finanzierungsquelle eingerichtet wurden."),
+                t("c28566e0", "Werbe-Account"),
+                t("c80160d3", "Werbung"),
+                t("ff0edac0", "Möchtest du dein Abonnement wirklich kündigen?"),
+                t("h2ac0348", "Nein, ich möchte zurück"),
+                t("dbf9667e", "Ich bin sicher"),
+                t("j7592572", "Kehrtwendung"),
+                t("ee778942", "Ampel"),
+                t("fdd57981", function (e) {
+                    return "Wir möchten dir ein einmaliges Gratis-Werbeguthaben von " + e.totalAmount + " anbieten.";
+                }),
+                t("i032a231", function (e) {
+                    return "Bleiben und " + e.totalAmount + " Werbeguthaben in Anspruch nehmen";
+                }),
+                t("hd7d278c", "Nein, danke"),
+                t("jf8a0dea", "Prima! Dein neues Gratis-Werbeguthaben erscheint im nächsten Rechnungszyklus in deinem Account.");
             function a(e, n) {
                 for (var i = 0; i < n.length; i++) {
                     var t = n[i];
@@ -7888,34 +7892,7 @@
                     d(e, n)
                 );
             }
-            t("i4dccc18", "Rechnungsstellung"),
-                t("ec3cd6e4", "Verwalte deine Zahlungsmethode, aktualisiere die Rechnungsinformationen und prüfe deine Rechnungen."),
-                t("dac61c3c", "Account-Einstellungen"),
-                t("b6b5fd66", "Verwalte deinen X Account, indem du z. B. deinen Nutzernamen oder dein Passwort änderst."),
-                t("hb9c4a1c", "Fragen stellen, Fehler melden, Feedback geben"),
-                t("c674f5b4", "Rechnungszahlungen einrichten"),
-                t("i8237e66", "Wechsle von Zahlungen per Kreditkarte zu Banküberweisungen."),
-                t("hebd348a", "Konfiguriere, wie Jobs aus dem Hiring-Portal mit Anzeigen beworben werden. "),
-                t("ib5e6f90", "Job-Promotion"),
-                t("id720215", "Hiring-"),
-                t("dd59f146", "Werbe-Account für Job-Promotionen"),
-                t("e7e36818", "Werbe-Accounts kommen für Job-Promotionen in Frage, wenn sie vollständig mit einer Finanzierungsquelle eingerichtet wurden."),
-                t("c28566e0", "Werbe-Account"),
-                t("c80160d3", "Werbung"),
-                t("ff0edac0", "Möchtest du dein Abonnement wirklich kündigen?"),
-                t("h2ac0348", "Nein, ich möchte zurück"),
-                t("dbf9667e", "Ich bin sicher"),
-                t("j7592572", "Kehrtwendung"),
-                t("ee778942", "Ampel"),
-                t("fdd57981", function (e) {
-                    return "Wir möchten dir ein einmaliges Gratis-Werbeguthaben von " + e.totalAmount + " anbieten.";
-                }),
-                t("i032a231", function (e) {
-                    return "Bleiben und " + e.totalAmount + " Werbeguthaben in Anspruch nehmen";
-                }),
-                t("hd7d278c", "Nein, danke"),
-                t("jf8a0dea", "Prima! Dein neues Gratis-Werbeguthaben erscheint im nächsten Rechnungszyklus in deinem Account."),
-                t("ebbb3154", "Schließen und zu X zurückkehren"),
+            t("ebbb3154", "Schließen und zu X zurückkehren"),
                 t("j1f68dda", "Letzter Schritt: Wirklich stornieren?"),
                 t("c9c3464c", "Abonnement-Kündigung wird durchgeführt"),
                 t("dd3a293c", 'Dein Abonnement von "Verifizierte Organisationen" ist beendet.'),
@@ -8893,8 +8870,8 @@
                 t("ccd32094", "Jetzt"),
                 t("abfcce0d", function (e) {
                     return "vor " + e.amountOfTime;
-                });
-            t("ae408b76", "Du hast repostet"),
+                }),
+                t("ae408b76", "Du hast repostet"),
                 t("j355f008", "Angehefteter Post"),
                 t("habf9678", "Angeheftet von Autor*in"),
                 t("db0798ed", function (e) {
@@ -8950,10 +8927,10 @@
                 }),
                 t("d925a4f9", function (e) {
                     return "Noch " + e.formattedCount + " Minute" + r(e.count, "", "n");
-                }),
-                t("ib15cddb", function (e) {
-                    return "Noch " + e.formattedCount + " Stunde" + r(e.count, "", "n");
-                }),
+                });
+            t("ib15cddb", function (e) {
+                return "Noch " + e.formattedCount + " Stunde" + r(e.count, "", "n");
+            }),
                 t("db9ed19f", function (e) {
                     return "Noch " + e.formattedCount + " Tag" + r(e.count, "", "e");
                 }),
@@ -13219,4 +13196,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/de.f446d7ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/de.764d067a.js.map

@@ -58,15 +58,15 @@
                 T = o.default.create((e) => ({ container: { position: "relative", height: 200, overflow: "hidden" }, carousel: { position: "absolute", bottom: 0, start: 0, width: "100%", backgroundImage: `linear-gradient(${e.colors.transparent}, ${e.colors.cellBackground} 30%)`, zIndex: 10 }, tweet: { backgroundColor: e.colors.cellBackground }, shadow: { position: "absolute", bottom: 0, start: 0, height: 100, width: "100%", backgroundImage: `linear-gradient(${e.colors.transparent}, ${e.colors.cellBackground})`, zIndex: 10 }, tweets: {} }));
             var S = a(172016),
                 V = a(623130),
-                j = a(144199);
-            const D = m().jd08d606,
-                $ = m().he526d22,
-                R = m().i6932876,
-                N = () => {
-                    const e = S.Z.get() > 1 ? j : V;
-                    return n.createElement(Z, { description: $, title: D }, n.createElement(_, { prompt: "Make a cyberpunk picture" }, n.createElement(r.Z, { style: G.imageContainer }, n.createElement(l.Z, { "aria-label": R, aspectMode: s.Z.exact(2), image: e }))));
+                D = a(144199);
+            const $ = m().jd08d606,
+                j = m().he526d22,
+                N = m().i6932876,
+                G = () => {
+                    const e = S.Z.get() > 1 ? D : V;
+                    return n.createElement(Z, { description: j, title: $ }, n.createElement(_, { prompt: "Make a cyberpunk picture" }, n.createElement(r.Z, { style: R.imageContainer }, n.createElement(l.Z, { "aria-label": N, aspectMode: s.Z.exact(2), image: e }))));
                 },
-                G = o.default.create((e) => ({ imageContainer: { borderRadius: e.borderRadii.large, overflow: "hidden" } }));
+                R = o.default.create((e) => ({ imageContainer: { borderRadius: e.borderRadii.large, overflow: "hidden" } }));
             var F = a(353644),
                 L = a(263160);
             const q = m().j7cdee8e,
@@ -95,7 +95,7 @@
                 const e = (0, i.LX)(),
                     t = (0, i.Mv)(),
                     a = n.useMemo(() => ({ width: e ? "100%" : 920 }), [e]);
-                return n.createElement(r.Z, { style: ie.container }, n.createElement(r.Z, { style: ie.scrollable }, n.createElement(r.Z, { style: ie.contentContainer }, n.createElement(r.Z, { style: ie.content }, n.createElement(r.Z, { style: a }, n.createElement(r.Z, { style: ie.header }, n.createElement(c.ZP, { size: "title1", weight: "medium" }, ne), n.createElement(w.Z, { size: "space4" }), n.createElement(c.ZP, { align: "center", color: "gray700", size: "headline1" }, re), n.createElement(w.Z, { size: "space36" }), n.createElement(r.Z, { style: ie.upsellButtonContainer }, n.createElement(te, null))), n.createElement(w.Z, { size: "space80" }), n.createElement(r.Z, { style: ie.upsellBlocks }, n.createElement(N, null), n.createElement(X, null), n.createElement(I, null), t ? null : n.createElement(H, null)))), n.createElement(y.Z, { resizeMode: "cover", source: { uri: f }, style: ie.topGrid }), n.createElement(y.Z, { resizeMode: "cover", source: { uri: f }, style: ie.bottomGrid }))));
+                return n.createElement(r.Z, { style: ie.container }, n.createElement(r.Z, { style: ie.scrollable }, n.createElement(r.Z, { style: ie.contentContainer }, n.createElement(r.Z, { style: ie.content }, n.createElement(r.Z, { style: a }, n.createElement(r.Z, { style: ie.header }, n.createElement(c.ZP, { size: "title1", weight: "medium" }, ne), n.createElement(w.Z, { size: "space4" }), n.createElement(c.ZP, { align: "center", color: "gray700", size: "headline1" }, re), n.createElement(w.Z, { size: "space36" }), n.createElement(r.Z, { style: ie.upsellButtonContainer }, n.createElement(te, null))), n.createElement(w.Z, { size: "space80" }), n.createElement(r.Z, { style: ie.upsellBlocks }, n.createElement(G, null), n.createElement(X, null), n.createElement(I, null), t ? null : n.createElement(H, null)))), n.createElement(y.Z, { resizeMode: "cover", source: { uri: f }, style: ie.topGrid }), n.createElement(y.Z, { resizeMode: "cover", source: { uri: f }, style: ie.bottomGrid }))));
             }
             const ie = o.default.create((e) => ({ container: { display: "grid", width: "100%", position: "relative" }, body: { width: "100%", height: "100%", maxHeight: "100%", flexDirection: "column" }, topGrid: { width: "100%", height: 200, position: "absolute", start: 0, top: 0, zIndex: 1, transform: "rotate(180deg)" }, bottomGrid: { width: "100%", height: 150, position: "absolute", start: 0, bottom: 0, zIndex: 1 }, header: { width: "100%", flexDirection: "column", alignItems: "center" }, scrollable: { width: "100%", flex: 1, flexGrow: 1, overflow: "auto", minHeight: "100%", height: "100%", alignItems: "center" }, content: { position: "relative", zIndex: 10, paddingTop: 100, boxSizing: "border-box", paddingHorizontal: o.default.theme.spaces.space16, paddingBottom: o.default.theme.spaces.space48 }, contentContainer: { minWidth: "100%", minHeight: "100%", alignItems: "center" }, upsellButtonContainer: { width: "min-content" }, upsellBlocks: { marginTop: e.spaces.space16, flexDirection: "row", flexWrap: "wrap", justifyContent: "center", alignItems: "flex-start", gap: e.spaces.space40, rowGap: e.spaces.space56 } })),
                 le = m().e13591c0,
@@ -129,26 +129,6 @@
                 pe = { video: { overflow: "auto", maxWidth: me, maxHeight: me, alignSelf: "center", width: "100%" } },
                 ue = o.default.create((e) => ({ narrowVideoContainer: { marginVertical: e.spaces.space16, marginHorizontal: e.spaces.space16 }, contentWithoutVideo: { justifyContent: "center" }, content: { justifyContent: "space-between", marginVertical: e.spaces.space32 }, contentNarrow: { justifyContent: "space-between" }, upsell: { paddingHorizontal: e.spaces.space16, marginBottom: e.spaces.space32, justifyContent: "center" }, upsellNarrow: { position: "absolute", bottom: "0px", backgroundColor: e.colors.cellBackground, paddingHorizontal: e.spaces.space16, marginBottom: e.spaces.space24, justifyContent: "center", paddingTop: e.spaces.space16, webkitMask: "var(--mask)", "--mask": "linear-gradient(to top, rgba(0,0,0, 1) 0%, rgba(0,0,0, 1) 84%, rgba(0,0,0, 0) 100%, rgba(0,0,0, 0) 0 ) 100% 50% / 100% 100%", mask: "var(--mask)" }, title: { marginBottom: e.spaces.space8 }, description: { marginBottom: e.spaces.space16 }, imagePlaceholder: { maxWidth: me, maxHeight: me, marginHorizontal: "auto", width: "100%" }, imagePlaceholderWebView: { marginTop: e.spaces.space28 }, imagePlaceholderWide: { paddingHorizontal: e.spaces.space48 } }));
         },
-        396510: (e, t, a) => {
-            a.d(t, { k: () => p });
-            var n = a(202784),
-                r = a(674132),
-                o = a.n(r),
-                i = a(125363),
-                l = a(175856),
-                s = a(226247),
-                c = a(183240);
-            const d = o().fef25c88,
-                m = o().fb172aa8,
-                p = () => {
-                    const e = (0, i.I0)(),
-                        t = (0, i.v9)((e) => (0, l.t5)(e, l.Rf)),
-                        a = n.useCallback(() => {
-                            e((0, l.pj)(l.Rf));
-                        }, [e]);
-                    return t ? n.createElement(s.e, { image: n.createElement(c.o, null), onRemove: a, text: m, title: d }) : null;
-                };
-        },
         464023: (e, t, a) => {
             a.d(t, { F4: () => i, J5: () => l, N_: () => r, UD: () => s, c0: () => n, oq: () => c, uY: () => o, vf: () => d });
             const n = "1720665183188922368",
@@ -162,4 +142,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-9e9ee61b.c82ff89a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-9e9ee61b.174b827a.js.map

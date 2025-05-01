@@ -4162,6 +4162,8 @@
                 a("e9b6d404", "[[293476]] What search tools should Grok have access to?"),
                 a("h15dce2e", "[[293473]] Advanced Settings"),
                 a("ff9dc268", "[[289210]] Edit prompt"),
+                a("acb2baa0", "Create Images"),
+                a("h30fd372", "Try Voice Mode"),
                 a("e9fcdd0c", "[[293613]] Ask Grok to aggressively search the web"),
                 a("fc4e8aba", "[[293612]] Ask Grok to reason step-by-step"),
                 a("e4ae6abe", "[[293616]] Ask Grok to transform your image"),
@@ -4331,41 +4333,16 @@
                 a("g01599b6", "[[292208]] Response 1"),
                 a("e02694e0", "[[292207]] Response 2"),
                 a("h6867fcc", "[[292206]] I prefer this response"),
-                a("b2175228", "[[294142]] Grok for Android is here"),
-                a("d2d8650c", "[[294143]] Get the best Grok experience in our new standalone app"),
-                a("ia5bef3e", "[[291171]] How can I help you today?"),
-                a("ge683598", "[[291170]] Ask Grok anything..."),
-                a("fef25c88", "[[290830]] Try Grok for free now"),
-                a("fb172aa8", "[[290829]] A free tier of Grok is now available in your region. Chat, generate images, and analyze photos. Limits apply."),
-                a("d7af4f40", "[[290807]] Generate an image of a galaxy"),
-                a("gcb6c0be", "[[288841]] Grok can make mistakes. Verify its outputs."),
-                a("cb88fd82", "[[290810]] You are using a free Grok version."),
-                a("g27a5314", "[[290831]] To start using Grok, add a phone number to your account."),
-                a("bdd84568", "[[290835]] Your account is too new to use Grok. Please try again later."),
-                a("a9109a94", "[[288872]] A solarpunk village"),
-                a("g986f7a4", "[[288873]] Generate an image of a solarpunk village"),
-                a("ad685264", "[[289063]] Mount Fuji"),
-                a("hdb08284", "[[289062]] Make an anime style picture of Mount Fuji"),
-                a("a986ae84", "[[288836]] A flying cat"),
-                a("a14b556a", "[[288847]] Generate an image of a flying cat"),
-                a("gc16b670", "[[288835]] A robot in a flower field"),
-                a("d5b8fa44", "[[288848]] Generate an image of a robot in a flower field"),
-                a("da196ff6", "[[289060]] Astronaut on Mars"),
-                a("ae3979cc", "[[289065]] Make a portrait of an astronaut on Mars"),
-                a("a682460e", "[[289059]] A speeding roadster"),
-                a("e03e5514", "[[289061]] Make a picture of a Tesla roadster driving through Shinjuku with motion blur"),
-                a("e68eac68", "[[289058]] Admiring northern lights"),
-                a("hc6e6754", "[[289064]] Make a picture of someone admiring northern lights"),
-                a("cf59f9f6", "[[288839]] Help me write a cover letter"),
-                a("cd9aeac8", "[[288845]] Tell me today’s headlines"),
-                a("acf2f0be", "[[288843]] Recommend a fantasy RPG game"),
-                a("b9bd12e2", "[[288866]] Solve the Two Sum problem in Python"),
+                a("d07488a6", "Get the Android app"),
+                a("d9cfe70c", "Access advanced Grok features"),
                 a("hf9afab0", "[[293069]] Enable DeepSearch to scan the internet and X, analyze information, and deliver detailed, well-reasoned answers with rapid, agentic search."),
                 a("ef3b3f04", "[[293068]] Enable Think to use our reasoning model. It’s best for math, science and coding. You can also ask Grok to “Think harder” about any question that might need a little more brain power. "),
                 a("b43636b8", "[[293044]] Introducing Grok 3"),
                 a("j376298c", "[[293071]] Grok 3 introduces two new modes to interact with our most powerful model: DeepSearch and Think."),
                 a("e3584f8e", "[[293073]] What are the 10 most successful options trading strategies used by hedge funds"),
                 a("d91b7b8a", "[[293072]] What would it cost to build a university in 1885?"),
+                a("ia5bef3e", "[[291171]] How can I help you today?"),
+                a("ebea5880", "Recent Conversations"),
                 a("e13591c0", "[[285207]] Example Grok conversation"),
                 a("c27ca452", "[[287265]] Premium subscribers can now use our most advanced AI, Grok, on X."),
                 a("b6abc25a", "[[288833]] Introducing Grok 2"),
@@ -4909,8 +4886,8 @@
                 a("ff95a9cc", "[[293572]] Video ID"),
                 a("a97e358e", "[[293570]] Video Link"),
                 a("e10e8b46", "[[292160]] Only showing the videos from the last 100 days."),
-                a("ba37f6da", "[[292001]] Video overview");
-            a("f19846b2", "[[293573]] Video thumbnail"),
+                a("ba37f6da", "[[292001]] Video overview"),
+                a("f19846b2", "[[293573]] Video thumbnail"),
                 a("ccd6f4a8", "[[293571]] Video title"),
                 a("c8410542", "[[291998]] The number of times your video was viewed."),
                 a("a532072a", "[[294256]] Viewers"),
@@ -4932,8 +4909,8 @@
                 a("f2f463ea", "[[289750]] ai -startup"),
                 a("a10a357e", '[[289742]] contains "ai" and has at least 50 likes'),
                 a("ca8ed1e8", "[[289743]] ai min_faves:50"),
-                a("i945a3f2", '[[289749]] contains "ai" and a URL with the word "grok" in it'),
-                a("a9348088", "[[289744]] ai url:grok"),
+                a("i945a3f2", '[[289749]] contains "ai" and a URL with the word "grok" in it');
+            a("a9348088", "[[289744]] ai url:grok"),
                 a("b5c3cdbc", '[[289741]] mentioning X account "grok"'),
                 a("e2634592", "[[289701]] @grok"),
                 a("i88ba038", "[[291386]] Alert Disabled"),
@@ -5867,10 +5844,10 @@
                 a("ae58026a", "[[264679]] Open a Branded Like .json file to preview"),
                 a("hd0bc1eb", function (e) {
                     return "[[185402]] " + e.name + " is live";
-                });
-            a("bea1f26b", function (e) {
-                return "[[185403]] " + e.name + " was live";
-            }),
+                }),
+                a("bea1f26b", function (e) {
+                    return "[[185403]] " + e.name + " was live";
+                }),
                 a("ab3ee97f", function (e) {
                     return "[[289975]] " + e.screenName + " is not live";
                 }),
@@ -5898,8 +5875,8 @@
                 a("edef4c82", "[[282179]] Post directly to a Community"),
                 a("a7640df6", "[[291947]] Your posts are shared with Community members and your followers."),
                 a("h3bb8068", "[[238885]] Get backup when you need it"),
-                a("a709f8f8", "[[238880]] Admins and moderators help manage Communities and keep conversations on track."),
-                a("c8d33380", "[[263856]] New items"),
+                a("a709f8f8", "[[238880]] Admins and moderators help manage Communities and keep conversations on track.");
+            a("c8d33380", "[[263856]] New items"),
                 a("cb6adb10", "[[238290]] Discover Communities"),
                 a("df362964", "[[266636]] Find Communities"),
                 a("dfd5031f", function (e) {
@@ -6873,8 +6850,8 @@
                 a("c4fd68da", "[[293317]] Customize your experience"),
                 a("c0195168", "[[293318]] Change your app icon and navigation options"),
                 a("b6b5dc94", "[[293315]] Become verified"),
-                a("b06db848", "[[293329]] Stand out from others on the platform");
-            a("e3e3a97c", "[[293322]] Earn a share of revenue from your posts"),
+                a("b06db848", "[[293329]] Stand out from others on the platform"),
+                a("e3e3a97c", "[[293322]] Earn a share of revenue from your posts"),
                 a("f15bc24e", "[[293323]] Increased Grok limits"),
                 a("c4666e1c", "[[293327]] More usage of Grok 3, our latest model"),
                 a("he74ae7a", "[[293324]] Highest Grok usage limits"),
@@ -6896,8 +6873,8 @@
                 a("c3148608", "[[293228]] Get faster assistance when you need help"),
                 a("b485ca6e", "[[290025]] Highlights tab"),
                 a("d438955e", "[[293238]] Showcase your top posts"),
-                a("f373a352", "[[290030]] Encrypted DMs"),
-                a("g7405aca", "[[293224]] Chat securely with end-to-end encryption"),
+                a("f373a352", "[[290030]] Encrypted DMs");
+            a("g7405aca", "[[293224]] Chat securely with end-to-end encryption"),
                 a("j659fa0c", "[[293164]] The best of Grok 3"),
                 a("ibff5694", "[[293165]] Unlock the highest usage limits, DeepSearch & Think, plus early access to new features"),
                 a("i824f4da", "[[290861]] Fewer ads"),
@@ -7849,7 +7826,34 @@
                 a("ddfd6718", "[[293516]] Payment Failed"),
                 a("i90ea7d2", "[[293514]] Please urgently update your billing to keep your benefits."),
                 a("a62359e6", "[[289188]] Verified Organization Settings"),
-                a("ge221b7c", "[[287675]] Upgrade Verified Organization subscription to get access to affiliates and more ad credits.");
+                a("ge221b7c", "[[287675]] Upgrade Verified Organization subscription to get access to affiliates and more ad credits."),
+                a("i4dccc18", "[[274804]] Billing"),
+                a("ec3cd6e4", "[[289008]] Manage your payment method, update billing information, and review your invoices."),
+                a("dac61c3c", "[[287561]] Account settings"),
+                a("b6b5fd66", "[[287562]] Manage your X account including changing your username or password."),
+                a("hb9c4a1c", "[[287563]] Questions, bug reports and feedback"),
+                a("c674f5b4", "[[287564]] Setup invoice payments"),
+                a("i8237e66", "[[287565]] Switch from credit card payments to invoicing via bank transfers."),
+                a("hebd348a", "[[289184]] Configure how ads are used to promote jobs from the Hiring portal."),
+                a("ib5e6f90", "[[289185]] Job Promotion"),
+                a("id720215", "Hiring"),
+                a("dd59f146", "[[289186]] Job promotion ad account"),
+                a("e7e36818", "[[289182]] Ad accounts are eligible for job promotion when they are fully set up with a funding source."),
+                a("c28566e0", "[[288944]] Ad Account"),
+                a("c80160d3", "Advertising"),
+                a("ff0edac0", "[[275003]] Are you sure you want to cancel your subscription?"),
+                a("h2ac0348", "[[275009]] No, take me back"),
+                a("dbf9667e", "[[275008]] I’m sure"),
+                a("j7592572", "[[287997]] U-turn"),
+                a("ee778942", "[[287999]] Traffic lights"),
+                a("fdd57981", function (e) {
+                    return "[[287998]] We’d like to offer you a free one-time " + e.totalAmount + " USD ad credit.";
+                }),
+                a("i032a231", function (e) {
+                    return "[[287995]] I’ll stay and claim the " + e.totalAmount + " ad credit";
+                }),
+                a("hd7d278c", "[[246799]] No thanks"),
+                a("jf8a0dea", "[[287970]] Great! Your new free ad credit will appear in your account on your next billing cycle.");
             function i(e, t) {
                 for (var o = 0; o < t.length; o++) {
                     var a = t[o];
@@ -7888,34 +7892,7 @@
                     r(e, t)
                 );
             }
-            a("i4dccc18", "[[274804]] Billing"),
-                a("ec3cd6e4", "[[289008]] Manage your payment method, update billing information, and review your invoices."),
-                a("dac61c3c", "[[287561]] Account settings"),
-                a("b6b5fd66", "[[287562]] Manage your X account including changing your username or password."),
-                a("hb9c4a1c", "[[287563]] Questions, bug reports and feedback"),
-                a("c674f5b4", "[[287564]] Setup invoice payments"),
-                a("i8237e66", "[[287565]] Switch from credit card payments to invoicing via bank transfers."),
-                a("hebd348a", "[[289184]] Configure how ads are used to promote jobs from the Hiring portal."),
-                a("ib5e6f90", "[[289185]] Job Promotion"),
-                a("id720215", "Hiring"),
-                a("dd59f146", "[[289186]] Job promotion ad account"),
-                a("e7e36818", "[[289182]] Ad accounts are eligible for job promotion when they are fully set up with a funding source."),
-                a("c28566e0", "[[288944]] Ad Account"),
-                a("c80160d3", "Advertising"),
-                a("ff0edac0", "[[275003]] Are you sure you want to cancel your subscription?"),
-                a("h2ac0348", "[[275009]] No, take me back"),
-                a("dbf9667e", "[[275008]] I’m sure"),
-                a("j7592572", "[[287997]] U-turn"),
-                a("ee778942", "[[287999]] Traffic lights"),
-                a("fdd57981", function (e) {
-                    return "[[287998]] We’d like to offer you a free one-time " + e.totalAmount + " USD ad credit.";
-                }),
-                a("i032a231", function (e) {
-                    return "[[287995]] I’ll stay and claim the " + e.totalAmount + " ad credit";
-                }),
-                a("hd7d278c", "[[246799]] No thanks"),
-                a("jf8a0dea", "[[287970]] Great! Your new free ad credit will appear in your account on your next billing cycle."),
-                a("ebbb3154", "[[287965]] Close and return to X"),
+            a("ebbb3154", "[[287965]] Close and return to X"),
                 a("j1f68dda", "[[287968]] Final step: Are you sure you want to cancel?"),
                 a("c9c3464c", "[[275012]] Subscription cancellation in progress"),
                 a("dd3a293c", "[[275021]] Your Verified Organization subscription has ended."),
@@ -8893,8 +8870,8 @@
                 a("ccd32094", "[[155157]] Now"),
                 a("abfcce0d", function (e) {
                     return "[[190985]] " + e.amountOfTime + " ago";
-                });
-            a("ae408b76", "[[281811]] You reposted"),
+                }),
+                a("ae408b76", "[[281811]] You reposted"),
                 a("j355f008", "[[281812]] Pinned post"),
                 a("habf9678", "[[263563]] Pinned by Author"),
                 a("db0798ed", function (e) {
@@ -8950,10 +8927,10 @@
                 }),
                 a("d925a4f9", function (e) {
                     return "[[227431]] " + e.formattedCount + " minute" + n(e.count, "", "s") + " left";
-                }),
-                a("ib15cddb", function (e) {
-                    return "[[227432]] " + e.formattedCount + " hour" + n(e.count, "", "s") + " left";
-                }),
+                });
+            a("ib15cddb", function (e) {
+                return "[[227432]] " + e.formattedCount + " hour" + n(e.count, "", "s") + " left";
+            }),
                 a("db9ed19f", function (e) {
                     return "[[227433]] " + e.formattedCount + " day" + n(e.count, "", "s") + " left";
                 }),
@@ -13206,4 +13183,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-ss.2e9ba67a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-ss.12c26e7a.js.map

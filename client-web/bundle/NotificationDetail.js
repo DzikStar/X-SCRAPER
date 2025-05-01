@@ -10,8 +10,8 @@
                 n = o(325686),
                 s = o(370006),
                 l = o(786998),
-                d = o(929028),
-                c = o(386802);
+                c = o(929028),
+                d = o(386802);
             function p(e, t, o) {
                 return e || (!t && o ? "fixed" : void 0);
             }
@@ -28,22 +28,22 @@
                         });
                 }
                 _renderContent() {
-                    const { backButtonType: e, centerTitle: t, centeredLogo: o, fixed: i, hideBackButton: a, isFullWidth: n, isLarge: d, leftControl: c, middleControl: h, position: u, rightControl: m, secondaryBar: f, style: g, subtitle: b, title: w, titleDomId: y, titleIconCell: B, titleIconCellSize: k, withBackground: x, withWideContainer: _ } = this.props,
+                    const { backButtonType: e, centerTitle: t, centeredLogo: o, fixed: i, hideBackButton: a, isFullWidth: n, isLarge: c, leftControl: d, middleControl: h, position: u, rightControl: m, secondaryBar: f, style: g, subtitle: b, title: w, titleDomId: y, titleIconCell: B, titleIconCellSize: k, withBackground: x, withWideContainer: _ } = this.props,
                         { isModal: C } = this.context,
-                        Z = a ? c : r.createElement(s.Z, { backButtonType: e, onClick: this._handleBackClick }),
+                        Z = a ? d : r.createElement(s.Z, { backButtonType: e, onClick: this._handleBackClick }),
                         v = (function (e, t, o) {
                             return e && !(t && o);
                         })(!!x, C, !!f);
-                    return r.createElement(r.Fragment, null, r.createElement(l.Z, { centerTitle: t, centeredLogo: o, isFullWidth: n, isLarge: d, leftControl: Z, middleControl: h, position: p(u, C, i), rightControl: m, style: g, subtitle: b, title: w, titleDomId: y, titleIconCell: B, titleIconCellSize: k, withBackground: v, withWideContainer: _ }), f || null);
+                    return r.createElement(r.Fragment, null, r.createElement(l.Z, { centerTitle: t, centeredLogo: o, isFullWidth: n, isLarge: c, leftControl: Z, middleControl: h, position: p(u, C, i), rightControl: m, style: g, subtitle: b, title: w, titleDomId: y, titleIconCell: B, titleIconCellSize: k, withBackground: v, withWideContainer: _ }), f || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
                         { isModal: t } = this.context,
-                        o = d.Z.getBackgroundStyles();
+                        o = c.Z.getBackgroundStyles();
                     return t ? r.createElement(n.Z, { style: !!e && o }, this._renderContent()) : this._renderContent();
                 }
             }
-            (h.contextType = c.Z), (h.defaultProps = { fixed: !0, backLocation: "/", isFullWidth: !1, isLarge: !1, withBackground: !0 });
+            (h.contextType = d.Z), (h.defaultProps = { fixed: !0, backLocation: "/", isFullWidth: !1, isLarge: !1, withBackground: !0 });
         },
         980407: (e, t, o) => {
             o.d(t, { Z: () => f, w: () => u });
@@ -53,8 +53,8 @@
                 n = o(386802),
                 s = o(392237),
                 l = o(652904),
-                d = o(555079),
-                c = o(625661),
+                c = o(555079),
+                d = o(625661),
                 p = o(449067),
                 h = o(715601);
             class u extends r.Component {
@@ -63,7 +63,7 @@
                         (this._renderChildViewAppBar = () => {
                             const { appBarRef: e, appBarStyle: t, backButtonType: o, backLocation: a, centerTitle: n, hideBackButton: s, history: l, isFullWidth: p, isLarge: h, middleControl: u, onBackClick: f, rightControl: g, secondaryBar: b, subtitle: w, title: y } = this.props,
                                 { isModal: B } = this.context;
-                            return r.createElement(i.Z, { style: B ? [m.childViewAppBarRoot, m.appBarZindex] : m.appBarZindex }, r.createElement(c.ZP, { backButtonType: o || (B ? "close" : "back"), backLocation: a, centerTitle: n, fixed: !B, hideBackButton: s, history: l, isFullWidth: p, isLarge: h, middleControl: u, onBackClick: f, ref: e, rightControl: g, secondaryBar: b, style: [B && m.appBarModal, t], subtitle: w, title: y, titleDomId: d.Q_ }));
+                            return r.createElement(i.Z, { style: B ? [m.childViewAppBarRoot, m.appBarZindex] : m.appBarZindex }, r.createElement(d.ZP, { backButtonType: o || (B ? "close" : "back"), backLocation: a, centerTitle: n, fixed: !B, hideBackButton: s, history: l, isFullWidth: p, isLarge: h, middleControl: u, onBackClick: f, ref: e, rightControl: g, secondaryBar: b, style: [B && m.appBarModal, t], subtitle: w, title: y, titleDomId: c.Q_ }));
                         }),
                         (this._handleLayout = (e) => {
                             const { onLayout: t } = this.props,
@@ -72,10 +72,10 @@
                         });
                 }
                 render() {
-                    const { "aria-hidden": e, bottomBar: t, children: o, containerStyle: n, documentTitle: s, isFullWidth: d, isLarge: c, renderHeader: u, title: f, withoutBottomBarMobile: g } = this.props,
+                    const { "aria-hidden": e, bottomBar: t, children: o, containerStyle: n, documentTitle: s, isFullWidth: c, isLarge: d, renderHeader: u, title: f, withoutBottomBarMobile: g } = this.props,
                         { isModal: b } = this.context,
                         w = u ? u(this._renderChildViewAppBar()) : this._renderChildViewAppBar();
-                    return r.createElement(l.Z, null, r.createElement(p.Z.Configure, { documentTitle: s, headerless: !0, title: f }), r.createElement(i.Z, { "aria-hidden": e, onLayout: this._handleLayout, style: [m.root, b && m.rootModal] }, !b && w, r.createElement(a.Z, { isFullWidth: d, isLarge: c, style: [m.container, b && m.containerModal, n] }, b ? r.createElement(h.Z, { style: m.viewport }, w, o) : o), t ? r.createElement(i.Z, { style: [m.bottomBarModal, !b && !g && m.bottomBarMobile] }, r.createElement(a.Z, { isFullWidth: d, isLarge: c }, t)) : null));
+                    return r.createElement(l.Z, null, r.createElement(p.Z.Configure, { documentTitle: s, headerless: !0, title: f }), r.createElement(i.Z, { "aria-hidden": e, onLayout: this._handleLayout, style: [m.root, b && m.rootModal] }, !b && w, r.createElement(a.Z, { isFullWidth: c, isLarge: d, style: [m.container, b && m.containerModal, n] }, b ? r.createElement(h.Z, { style: m.viewport }, w, o) : o), t ? r.createElement(i.Z, { style: [m.bottomBarModal, !b && !g && m.bottomBarMobile] }, r.createElement(a.Z, { isFullWidth: c, isLarge: d }, t)) : null));
                 }
             }
             (u.defaultProps = { isFullWidth: !1, isLarge: !1 }), (u.contextType = n.Z);
@@ -83,7 +83,7 @@
                 f = u;
         },
         652904: (e, t, o) => {
-            o.d(t, { Z: () => c });
+            o.d(t, { Z: () => d });
             var r = o(202784),
                 i = o(500002),
                 a = o(668214),
@@ -92,7 +92,7 @@
             const l = (0, a.Z)()
                 .propsFromActions(() => ({ updateLocation: s.YF, updateTweetDetailNav: n.NH }))
                 .withAnalytics();
-            class d extends r.Component {
+            class c extends r.Component {
                 componentDidMount() {
                     this._performPageUpdates(this.props);
                 }
@@ -108,8 +108,8 @@
                         } = e;
                     let l = !1;
                     t.pathname !== o ? (this._isInBackground = !0) : this._isInBackground && t.pathname === o && ((this._isInBackground = !1), (l = !0));
-                    const d = i || s;
-                    ((d && i !== s) || (!d && o !== a) || r !== n || l) && this._performPageUpdates(this.props);
+                    const c = i || s;
+                    ((c && i !== s) || (!c && o !== a) || r !== n || l) && this._performPageUpdates(this.props);
                 }
                 render() {
                     return this.props.children;
@@ -119,8 +119,8 @@
                     t.scribePageImpression(), o(t.contextualScribeNamespace, t.contextualScribeData), r(t.contextualScribeNamespace);
                 }
             }
-            d.defaultProps = { children: null };
-            const c = (0, i.ZP)(l(d));
+            c.defaultProps = { children: null };
+            const d = (0, i.ZP)(l(c));
         },
         728054: (e, t, o) => {
             o.r(t), o.d(t, { SafetyReportNotificationScreen: () => y, default: () => k });
@@ -131,8 +131,8 @@
                 n = o(392237),
                 s = o(674132),
                 l = o.n(s),
-                d = o(840647),
-                c = o(980407),
+                c = o(840647),
+                d = o(980407),
                 p = o(782826),
                 h = o(615027),
                 u = o(2430);
@@ -158,8 +158,8 @@
                         n = this._getParams(),
                         s = r.createElement(i.ZP, { onPress: this._handleDone, size: "small", type: "brandFilled" }, w),
                         l = -1 !== t?.indexOf("appealable_label"),
-                        d = new URL(`${t}?${n}`, window.location.origin);
-                    return t ? r.createElement(c.Z, { backButtonType: l ? "back" : "close", backLocation: "/notifications", history: e, rightControl: l ? s : void 0, title: o }, r.createElement(a.Z, { allowForms: !0, src: d.toString(), style: B.iframe })) : r.createElement(h.Z, { to: "/notifications" });
+                        c = new URL(`${t}?${n}`, window.location.origin);
+                    return t ? r.createElement(d.Z, { backButtonType: l ? "back" : "close", backLocation: "/notifications", history: e, rightControl: l ? s : void 0, title: o }, r.createElement(a.Z, { allowForms: !0, src: c.toString(), style: B.iframe })) : r.createElement(h.Z, { to: "/notifications" });
                 }
                 _getSafeUrl() {
                     const { relativeUrl: e } = this.props;
@@ -171,7 +171,7 @@
                 _getParams() {
                     const { analytics: e } = this.props,
                         t = e.contextualScribeNamespace,
-                        o = { client_location: [t.page, t.section, t.component].join(":"), client_referer: window.location.pathname, client_app_id: (0, d.Z)().clientAppId };
+                        o = { client_location: [t.page, t.section, t.component].join(":"), client_referer: window.location.pathname, client_app_id: (0, c.Z)().clientAppId };
                     return Object.keys(o)
                         .filter((e) => !!o[e])
                         .map((e) => `${encodeURIComponent(e)}=${encodeURIComponent(o[e])}`)
@@ -189,8 +189,8 @@
                 n = o(688715),
                 s = o(950822),
                 l = o(386802),
-                d = o(392237);
-            class c extends i.Component {
+                c = o(392237);
+            class d extends i.Component {
                 constructor(...e) {
                     super(...e),
                         (this._ref = i.createRef()),
@@ -222,17 +222,30 @@
                     this.props.onMessage && ((e = this._handleMessage), window.removeEventListener("message", e, !1));
                 }
                 render() {
-                    const { allowClipboardWrite: e, allowForms: t, allowTopNavigation: o, dangerouslyDisableSandbox: r, src: l, style: d, title: c } = this.props,
+                    const { allowClipboardWrite: e, allowForms: t, allowTopNavigation: o, dangerouslyDisableSandbox: r, src: l, style: c, title: d } = this.props,
                         { isModal: h } = this.context,
                         u = ["autoplay", "fullscreen", "web-share", ...(e ? ["clipboard-write"] : [])],
-                        m = (0, s.Z)("iframe", { allow: `${u.join("; ")}`, allowFullScreen: !0, onLoad: this.props.onLoad, ref: this._handleRef, src: (0, n.ju)(l), style: p.iframe, title: c, ...(r ? null : { sandbox: `allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts${t ? " allow-forms" : ""}${o ? " allow-top-navigation" : ""}` }) });
-                    return i.createElement(a.Z, { style: h ? [p.root, p.modalPadding, d] : [p.root, d] }, m);
+                        m = (0, s.Z)("iframe", { allow: `${u.join("; ")}`, allowFullScreen: !0, onLoad: this.props.onLoad, ref: this._handleRef, src: (0, n.ju)(l), style: p.iframe, title: d, ...(r ? null : { sandbox: `allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts${t ? " allow-forms" : ""}${o ? " allow-top-navigation" : ""}` }) });
+                    return i.createElement(a.Z, { style: h ? [p.root, p.modalPadding, c] : [p.root, c] }, m);
                 }
             }
-            c.contextType = l.t;
-            const p = d.default.create((e) => ({ root: { overflow: "auto", WebkitOverflowScrolling: "touch" }, modalPadding: { paddingTop: e.componentDimensions.appBarHeight }, iframe: { borderWidth: 0, flexGrow: 1 } })),
-                h = i.forwardRef((e, t) => i.createElement(c, (0, r.Z)({ forwardedRef: t }, e)));
+            d.contextType = l.t;
+            const p = c.default.create((e) => ({ root: { overflow: "auto", WebkitOverflowScrolling: "touch" }, modalPadding: { paddingTop: e.componentDimensions.appBarHeight }, iframe: { borderWidth: 0, flexGrow: 1 } })),
+                h = i.forwardRef((e, t) => i.createElement(d, (0, r.Z)({ forwardedRef: t }, e)));
+        },
+        41065: (e, t, o) => {
+            o.r(t), o.d(t, { default: () => l });
+            var r = o(202784),
+                i = o(890601),
+                a = o(783427),
+                n = o(347101);
+            const s = (e = {}) => {
+                const { direction: t } = (0, a.Z)();
+                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M6.866 18H.846l.075-1.069C1.33 11.083 4.335 9 7.011 9c1.457 0 2.734.576 3.743 1.615-.515.378-1.003.826-1.45 1.355-.562-.569-1.305-.97-2.293-.97-2.074 0-3.522 1.847-3.981 5h4.225c-.169.616-.295 1.288-.389 2zM4 5c0-1.654 1.343-3 3-3s3 1.346 3 3-1.343 3-3 3-3-1.346-3-3zm2 0c0 .551.448 1 1 1s1-.449 1-1-.448-1-1-1-1 .449-1 1zm9.5 5c-.778 0-1.49-.263-2.071-.693C12.566 8.669 12 7.653 12 6.5 12 4.57 13.567 3 15.5 3S19 4.57 19 6.5c0 1.111-.53 2.092-1.34 2.733-.596.472-1.341.767-2.16.767zM14 6.5c0 .827.673 1.5 1.5 1.5S17 7.327 17 6.5 16.327 5 15.5 5 14 5.673 14 6.5zm1.5 4.496c3.264 0 6.816 2.358 7 8.977L22.529 21H8.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977zm0 2c-2.767 0-4.57 2.223-4.938 6.004h9.875c-.367-3.781-2.17-6.004-4.938-6.004z" })) }, { writingDirection: t });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const l = s;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.NotificationDetail.4112479a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.NotificationDetail.f3d2d29a.js.map

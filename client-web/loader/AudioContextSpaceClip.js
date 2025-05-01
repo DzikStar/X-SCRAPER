@@ -2,16 +2,16 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["loader.AudioContextSpaceClip", "loader.AudioDock", "loader.AudioContextVoiceMedia"],
     {
-        97837: (t, e, s) => {
-            s.d(e, { Z: () => u });
-            var o = s(202784),
-                i = s(525744),
-                n = s(859799),
-                r = s(390686),
-                c = s(393495);
+        97837: (t, e, i) => {
+            i.d(e, { Z: () => h });
+            var o = i(202784),
+                s = i(525744),
+                n = i(859799),
+                r = i(390686),
+                c = i(393495);
             class a {
-                constructor(t, e, s) {
-                    (this.placement = t), (this.obstructions = e), (this.layerId = s);
+                constructor(t, e, i) {
+                    (this.placement = t), (this.obstructions = e), (this.layerId = i);
                 }
                 getPositionData() {
                     return { percentVisible: this.visibleFraction(), percentOfViewportOccupied: this.placement.viewportOccupiedFraction(), sizesInfo: { viewportSize: this.placement.viewport, mediaSize: this.placement.item } };
@@ -20,9 +20,9 @@
                     const t = this.placement.visiblePart();
                     if (!t) return 0;
                     const e = this.layerId ? this.obstructions.getObstructionAboveLayer(this.layerId, t) : this.obstructions.getTotalObstruction(t),
-                        s = c.Z.area(this.placement.item),
+                        i = c.Z.area(this.placement.item),
                         o = (1 - e) * c.Z.area(t);
-                    return s > 0 ? o / s : 0;
+                    return i > 0 ? o / i : 0;
                 }
                 top() {
                     return this.placement.item.top;
@@ -42,11 +42,11 @@
                     super(...t),
                         (this._handlePageVisibilityChange = () => {
                             if (this._placement) {
-                                const { layerId: t, obstructionDetection: e, onPageVisibilityChange: s } = this.props,
+                                const { layerId: t, obstructionDetection: e, onPageVisibilityChange: i } = this.props,
                                     o = document.visibilityState,
-                                    i = this._obstructions || e.getObstructions(),
-                                    n = new a(this._placement, i, t);
-                                s && s(o, n);
+                                    s = this._obstructions || e.getObstructions(),
+                                    n = new a(this._placement, s, t);
+                                i && i(o, n);
                             }
                         }),
                         (this._handlePlacementChange = (t) => {
@@ -77,63 +77,76 @@
                 componentWillUnmount() {
                     this._obstructionSubscription && (this._obstructionSubscription.unsubscribe(), (this._obstructionSubscription = void 0)), document.removeEventListener("visibilitychange", this._handlePageVisibilityChange);
                 }
-                _updateAndNotify({ obstructions: t, placement: e }, s) {
-                    const { layerId: o, obstructionDetection: i } = this.props;
+                _updateAndNotify({ obstructions: t, placement: e }, i) {
+                    const { layerId: o, obstructionDetection: s } = this.props;
                     (this._placement = e || this._placement),
-                        (this._obstructions = t || this._obstructions || i.getObstructions()),
+                        (this._obstructions = t || this._obstructions || s.getObstructions()),
                         this._placement
-                            ? s(new a(this._placement, this._obstructions, o))
+                            ? i(new a(this._placement, this._obstructions, o))
                             : this._placementRef &&
                               this._placementRef.sample((t) => {
-                                  (this._placement = t), (this._obstructions = this._obstructions || i.getObstructions()), s(new a(t, this._obstructions, o));
+                                  (this._placement = t), (this._obstructions = this._obstructions || s.getObstructions()), i(new a(t, this._obstructions, o));
                               });
                 }
             }
-            l.defaultProps = { obstructionDetection: i.Z };
-            const u = (0, n.Z)(l);
+            l.defaultProps = { obstructionDetection: s.Z };
+            const h = (0, n.Z)(l);
         },
-        420412: (t, e, s) => {
-            s.d(e, { Z: () => a });
-            var o = s(202784),
-                i = s(325686),
-                n = s(235902),
-                r = s(885015),
-                c = s(392237);
-            function a({ borderColor: t = "borderColor", isSlim: e = !1, label: s }) {
+        420412: (t, e, i) => {
+            i.d(e, { Z: () => a });
+            var o = i(202784),
+                s = i(325686),
+                n = i(235902),
+                r = i(885015),
+                c = i(392237);
+            function a({ borderColor: t = "borderColor", isSlim: e = !1, label: i }) {
                 const { isWebRedesign: a } = n.ZP.useProps(),
-                    u = "borderColor" === t || "nestedBorderColor" === t ? l[t] : { backgroundColor: c.default.theme.colors[t] ?? c.default.theme.colors.borderColor };
-                return s ? o.createElement(r.Z, { style: !e && l.root, withGutter: !0 }, o.createElement(i.Z, { style: l.gapColumn }, o.createElement(i.Z, { style: [l.gap, u] })), o.createElement(i.Z, { style: l.gapText }, s), o.createElement(i.Z, { style: l.gapColumn }, o.createElement(i.Z, { style: [l.gap, u] }))) : o.createElement(i.Z, { style: [!e && l.root, a() && l.rootRedesign, l.gap, u] });
+                    h = "borderColor" === t || "nestedBorderColor" === t ? l[t] : { backgroundColor: c.default.theme.colors[t] ?? c.default.theme.colors.borderColor };
+                return i ? o.createElement(r.Z, { style: !e && l.root, withGutter: !0 }, o.createElement(s.Z, { style: l.gapColumn }, o.createElement(s.Z, { style: [l.gap, h] })), o.createElement(s.Z, { style: l.gapText }, i), o.createElement(s.Z, { style: l.gapColumn }, o.createElement(s.Z, { style: [l.gap, h] }))) : o.createElement(s.Z, { style: [!e && l.root, a() && l.rootRedesign, l.gap, h] });
             }
             const l = c.default.create((t) => ({ borderColor: { backgroundColor: c.default.theme.colors.borderColor }, nestedBorderColor: { backgroundColor: c.default.theme.colors.nestedBorderColor }, gap: { height: t.borderWidths.small }, gapColumn: { flex: 1, justifyContent: "center" }, gapText: { "flex-basis": "auto" }, root: { marginVertical: t.spaces.space4 }, rootRedesign: { marginHorizontal: t.spaces.space16 } }));
         },
-        885015: (t, e, s) => {
-            s.d(e, { Z: () => l });
-            var o = s(807896),
-                i = s(202784),
-                n = s(325686),
-                r = s(392237);
-            class c extends i.Component {
+        885015: (t, e, i) => {
+            i.d(e, { Z: () => l });
+            var o = i(807896),
+                s = i(202784),
+                n = i(325686),
+                r = i(392237);
+            class c extends s.Component {
                 render() {
-                    const { children: t, style: e, withGutter: s, ...r } = this.props,
-                        c = i.Children.map(t, (t) => t && i.cloneElement(t, { style: [t.props.style, a.column, s && a.withGutterColumn] }));
-                    return i.createElement(n.Z, (0, o.Z)({ style: [e, a.root, s && a.withGutter] }, r), c);
+                    const { children: t, style: e, withGutter: i, ...r } = this.props,
+                        c = s.Children.map(t, (t) => t && s.cloneElement(t, { style: [t.props.style, a.column, i && a.withGutterColumn] }));
+                    return s.createElement(n.Z, (0, o.Z)({ style: [e, a.root, i && a.withGutter] }, r), c);
                 }
             }
             c.defaultProps = { withGutter: !1 };
             const a = r.default.create((t) => ({ root: { flexDirection: "row" }, column: { flexBasis: 0, minWidth: 0 }, withGutter: { marginHorizontal: `-${t.spaces.space4}` }, withGutterColumn: { marginHorizontal: t.spaces.space4 } })),
                 l = c;
         },
-        662678: (t, e, s) => {
-            s.d(e, { G: () => i, Z: () => o });
-            s(136728);
-            const o = function (t, e) {
-                return i(t, e);
+        41065: (t, e, i) => {
+            i.r(e), i.d(e, { default: () => a });
+            var o = i(202784),
+                s = i(890601),
+                n = i(783427),
+                r = i(347101);
+            const c = (t = {}) => {
+                const { direction: e } = (0, n.Z)();
+                return (0, s.Z)("svg", { ...t, role: t["aria-label"] ? t.role || "img" : void 0, "aria-hidden": void 0 === t["aria-label"], style: [r.Z.root, t.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M6.866 18H.846l.075-1.069C1.33 11.083 4.335 9 7.011 9c1.457 0 2.734.576 3.743 1.615-.515.378-1.003.826-1.45 1.355-.562-.569-1.305-.97-2.293-.97-2.074 0-3.522 1.847-3.981 5h4.225c-.169.616-.295 1.288-.389 2zM4 5c0-1.654 1.343-3 3-3s3 1.346 3 3-1.343 3-3 3-3-1.346-3-3zm2 0c0 .551.448 1 1 1s1-.449 1-1-.448-1-1-1-1 .449-1 1zm9.5 5c-.778 0-1.49-.263-2.071-.693C12.566 8.669 12 7.653 12 6.5 12 4.57 13.567 3 15.5 3S19 4.57 19 6.5c0 1.111-.53 2.092-1.34 2.733-.596.472-1.341.767-2.16.767zM14 6.5c0 .827.673 1.5 1.5 1.5S17 7.327 17 6.5 16.327 5 15.5 5 14 5.673 14 6.5zm1.5 4.496c3.264 0 6.816 2.358 7 8.977L22.529 21H8.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977zm0 2c-2.767 0-4.57 2.223-4.938 6.004h9.875c-.367-3.781-2.17-6.004-4.938-6.004z" })) }, { writingDirection: e });
             };
-            function i(t, e) {
+            c.metadata = { width: 24, height: 24 };
+            const a = c;
+        },
+        662678: (t, e, i) => {
+            i.d(e, { G: () => s, Z: () => o });
+            i(136728);
+            const o = function (t, e) {
+                return s(t, e);
+            };
+            function s(t, e) {
                 return t.reduce(
-                    (s, o, i) => {
-                        const n = e ? e(o, i, t) : !!o;
-                        return n && s[0].push(o), !n && s[1].push(o), s;
+                    (i, o, s) => {
+                        const n = e ? e(o, s, t) : !!o;
+                        return n && i[0].push(o), !n && i[1].push(o), i;
                     },
                     [[], []],
                 );
@@ -141,4 +154,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.AudioContextSpaceClip.4a3f450a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.AudioContextSpaceClip.b8dc3dfa.js.map

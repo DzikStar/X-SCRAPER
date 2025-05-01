@@ -3,7 +3,7 @@
     ["bundle.DirectMessages-6ac0f1a5"],
     {
         620988: (e, t, n) => {
-            n.d(t, { ZH: () => x, ZP: () => y, x9: () => w });
+            n.d(t, { ZH: () => x, ZP: () => k, x9: () => w });
             n(136728);
             var a = n(202784),
                 o = n(726426),
@@ -20,14 +20,14 @@
             const f = 4,
                 h = r().h4d7cbcc,
                 g = r().j77292b7,
-                v = { onGrokFileSelected: (e) => new Promise((e) => e()), onFileSelected: (e, t) => new Promise((e) => e()), selectedFiles: {}, clearSelectedFile: () => {} },
-                _ = a.createContext(v);
+                _ = { onGrokFileSelected: (e) => new Promise((e) => e()), onFileSelected: (e, t) => new Promise((e) => e()), selectedFiles: {}, clearSelectedFile: () => {} },
+                v = a.createContext(_);
             function x({ children: e }) {
                 const [t, n] = a.useState({}),
                     o = (0, d.p)(),
                     s = (0, u.Z)(),
                     r = (0, m.k)(),
-                    v = (0, l.JY)("responsive_web_grok_file_upload_max_files", f),
+                    _ = (0, l.JY)("responsive_web_grok_file_upload_max_files", f),
                     x = a.useCallback(
                         (e) => {
                             const a = t[e];
@@ -68,7 +68,7 @@
                                     }));
                                 } catch (e) {}
                             var u;
-                            n((e) => (Object.keys(e).length >= v ? (o({ text: g({ count: v }) }), e) : { ...e, [a]: d }));
+                            n((e) => (Object.keys(e).length >= _ ? (o({ text: g({ count: _ }) }), e) : { ...e, [a]: d }));
                             try {
                                 const t = await r(e, l);
                                 (0, p.Jm)(s), (d.remote = { ...t, dimensions: d.dimensions }), n((e) => (e[a] ? { ...e, [a]: d } : e));
@@ -84,9 +84,9 @@
                                 (d.isUploading = !1), n((e) => (e[a] ? { ...e, [a]: d } : e));
                             }
                         },
-                        [v, o, r, s],
+                        [_, o, r, s],
                     ),
-                    y = a.useCallback(
+                    k = a.useCallback(
                         async (e) => {
                             const a = i()(),
                                 o = { abortController: new AbortController(), isUploading: !1, remote: e };
@@ -94,7 +94,7 @@
                         },
                         [t],
                     );
-                return a.createElement(_.Provider, { value: { selectedFiles: t, onFileSelected: w, clearSelectedFile: x, onGrokFileSelected: y } }, e);
+                return a.createElement(v.Provider, { value: { selectedFiles: t, onFileSelected: w, clearSelectedFile: x, onGrokFileSelected: k } }, e);
             }
             function w() {
                 const e = (0, l.hC)("responsive_web_grok_pdf_upload_enabled"),
@@ -104,12 +104,12 @@
                     return e && n.push("application/pdf"), t && (n.push("text/plain"), n.push("text/xml"), n.push("text/csv"), n.push("text/markdown"), n.push("text/x-markdown"), n.push("text/md"), n.push("text/calendar"), n.push("text/vcard"), n.push("text/json"), n.push("text/yaml"), n.push("text/x-python"), n.push("text/x-csrc"), n.push("text/x-c++src"), n.push("text/x-csharp"), n.push("text/x-ruby"), n.push("text/x-java-source"), n.push("text/x-go"), n.push("text/x-rust"), n.push("text/x-swift"), n.push("text/x-kotlin"), n.push("text/x-sql"), n.push("text/x-lua"), n.push("text/x-scala"), n.push("text/x-haskell"), n.push("text/x-php"), n.push("text/x-perl"), n.push("text/x-shellscript"), n.push("text/x-rsrc"), n.push("text/x-dart"), n.push("application/markdown"), n.push("application/xml"), n.push("application/json"), n.push("application/x-yaml"), n.push("application/x-latex"), n.push("application/x-sh"), n.push("application/x-msdownload"), n.push("application/x-httpd-php"), n.push("application/sql"), n.push("application/vnd.openxmlformats-officedocument.wordprocessingml.document"), n.push("application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")), n;
                 }, [e, t]);
             }
-            function y() {
-                return a.useContext(_);
+            function k() {
+                return a.useContext(v);
             }
         },
         737368: (e, t, n) => {
-            n.d(t, { k: () => v });
+            n.d(t, { k: () => _ });
             n(571372);
             var a = n(202784),
                 o = n(674132),
@@ -125,13 +125,13 @@
             const f = i().c74e87e0,
                 h = i().bea50a2a,
                 g = (e) => e.toLowerCase().replace(/\/$/, ""),
-                v = () => {
+                _ = () => {
                     const e = (0, c.p)(),
                         t = (0, l.z)(),
                         n = (0, d.I0)(),
                         o = (0, m.x9)(),
                         i = (0, r.hC)("responsive_web_grok_file_compression_enabled"),
-                        v = (0, r.JY)("responsive_web_grok_file_max_size", 5242880);
+                        _ = (0, r.JY)("responsive_web_grok_file_max_size", 5242880);
                     return a.useCallback(
                         async (a, r) => {
                             let c = a;
@@ -152,15 +152,15 @@
                             if (i) {
                                 let n;
                                 try {
-                                    n = await (0, s.hv)(a, v);
+                                    n = await (0, s.hv)(a, _);
                                 } catch (e) {}
                                 if (!n) throw (e({ text: f }), (0, p.op)(t, "failed to compress the file"), new Error());
                                 c = n;
-                            } else if (a.size > v) throw (e({ text: f }), (0, p.op)(t, "file is too large"), new Error());
+                            } else if (a.size > _) throw (e({ text: f }), (0, p.op)(t, "file is too large"), new Error());
                             const l = await n((0, u.t)(c, r));
                             return (0, p.Jm)(t), l;
                         },
-                        [e, t, n, i, v, o],
+                        [e, t, n, i, _, o],
                     );
                 };
         },
@@ -195,31 +195,31 @@
                     s = (0, l.I0)(),
                     h = (0, l.v9)(n.selectFetchConversationIdStatus),
                     g = (0, l.v9)(n.selectFetchConversationIdError),
-                    v = (0, l.v9)(n.selectMode),
-                    _ = (0, l.v9)(n.selectStatus),
+                    _ = (0, l.v9)(n.selectMode),
+                    v = (0, l.v9)(n.selectStatus),
                     x = (0, l.v9)(d.Pt),
                     w = (0, l.v9)(n.selectConversationId),
-                    y = (0, l.v9)(d.pZ),
-                    k = (0, l.v9)(d.uF),
+                    k = (0, l.v9)(d.pZ),
+                    y = (0, l.v9)(d.uF),
                     b = (0, l.v9)(d.F9),
                     C = (0, l.v9)(n.selectAnalysisEntityId),
                     S = (0, l.v9)(n.selectUsingExperiment);
                 let E = !1;
                 const I = (0, c.hC)("responsive_web_grok_general_availability");
-                e.isTrueAndEnabled("subscriptions_inapp_grok") ? (E = "premium") : (I || k) && (E = y.length > 0 ? "restricted" : "free");
+                e.isTrueAndEnabled("subscriptions_inapp_grok") ? (E = "premium") : (I || y) && (E = k.length > 0 ? "restricted" : "free");
                 const O = a.useCallback(
                         async (e, t) => {
-                            v !== e && (s(n.setMode(e)), i.ZP.isTwitterApp() || (await s((0, u.O)(e, b))), (0, p.RC)(t, e));
+                            _ !== e && (s(n.setMode(e)), i.ZP.isTwitterApp() || (await s((0, u.O)(e, b))), (0, p.RC)(t, e));
                         },
-                        [s, n, v, b],
+                        [s, n, _, b],
                     ),
                     J = a.useCallback(
                         async (e, t, n) => {
-                            e !== b && (s((0, d.j1)(e, t)), i.ZP.isTwitterApp() || (await s((0, u.O)(v, e))), (0, p.JO)(n, e));
+                            e !== b && (s((0, d.j1)(e, t)), i.ZP.isTwitterApp() || (await s((0, u.O)(_, e))), (0, p.JO)(n, e));
                         },
-                        [s, v, b],
+                        [s, _, b],
                     );
-                return { messageIds: o, access: E, status: _, grokSettingsStatus: x, conversationKey: t, conversationId: w, analysisEntityId: C, accessRestrictedReasons: y, fetchConversationIdStatus: h, fetchConversationIdError: g, mode: v, model: b, changeMode: O, changeModel: J, usingExperiment: S };
+                return { messageIds: o, access: E, status: v, grokSettingsStatus: x, conversationKey: t, conversationId: w, analysisEntityId: C, accessRestrictedReasons: k, fetchConversationIdStatus: h, fetchConversationIdError: g, mode: _, model: b, changeMode: O, changeModel: J, usingExperiment: S };
             }
         },
         979512: (e, t, n) => {
@@ -239,12 +239,12 @@
                 f = n(293115),
                 h = n(252352),
                 g = n(125363),
-                v = n(550293),
-                _ = n(511582),
+                _ = n(550293),
+                v = n(511582),
                 x = n(389071),
                 w = n(96275),
-                y = n(327597),
-                k = n(189953),
+                k = n(327597),
+                y = n(189953),
                 b = n(456228),
                 C = n(551864),
                 S = n(623494),
@@ -270,7 +270,7 @@
                     N = (0, o.useHistory)(),
                     A = (0, I.k)(),
                     D = (0, J.Z)("drawer"),
-                    T = (0, g.v9)(v.kX) === _.S.EXPANDED;
+                    T = (0, g.v9)(_.kX) === v.S.EXPANDED;
                 return {
                     openGrok: a.useCallback(
                         async ({ autoSubmit: e, conversationId: a, imageUrl: o, isDeepsearch: d, isImageEdit: u, isReasoning: p, mediaId: m, promptMetadata: f, source: h, text: g }) => {
@@ -284,13 +284,13 @@
                                     r({ text: F });
                                 }
                             const O = {};
-                            if ((("post_image_annotation" !== h && "post_image_annotation_fullscreen" !== h) || ((O.imageGen = !0), (0, S.u1)(t, "post_image_annotation_fullscreen" === h, m)), "grok_image_feed" === h && (O.imageGen = !0), c.pathname.startsWith("/i/grok") && !c.pathname.startsWith("/i/grok/feed"))) return void i((0, y.u)({ analytics: t, conversationKey: P })({ text: g, attachments: I ? [I] : void 0, mode: k.IK.REGULAR, returnCitations: M, promptMetadata: f, imageGenerationCount: D, toolOverrides: O, source: h, isDeepsearch: d, isReasoning: p }));
+                            if ((("post_image_annotation" !== h && "post_image_annotation_fullscreen" !== h) || ((O.imageGen = !0), (0, S.u1)(t, "post_image_annotation_fullscreen" === h, m)), "grok_image_feed" === h && (O.imageGen = !0), c.pathname.startsWith("/i/grok") && !c.pathname.startsWith("/i/grok/feed"))) return void i((0, k.u)({ analytics: t, conversationKey: P })({ text: g, attachments: I ? [I] : void 0, mode: y.IK.REGULAR, returnCitations: M, promptMetadata: f, imageGenerationCount: D, toolOverrides: O, source: h, isDeepsearch: d, isReasoning: p }));
                             const J = a ?? s()();
                             if (a) {
                                 const e = a || "";
                                 await i((0, w.d)(e, t));
                             } else i((0, x.Ki)(J));
-                            if ((R && Z ? ((0, S.YW)(t, h), T && i(v.bi(_.S.COLLAPSED)), i((0, b.bi)(C.j.EXPANDED))) : N.push("/i/grok"), e)) i((0, y.u)({ analytics: t, conversationKey: J })({ text: g, attachments: I ? [I] : void 0, mode: k.IK.REGULAR, promptMetadata: f, returnCitations: M, imageGenerationCount: D, toolOverrides: O, source: h, isDeepsearch: d, isReasoning: p }));
+                            if ((R && Z ? ((0, S.YW)(t, h), T && i(_.bi(v.S.COLLAPSED)), i((0, b.bi)(C.j.EXPANDED))) : N.push("/i/grok"), e)) i((0, k.u)({ analytics: t, conversationKey: J })({ text: g, attachments: I ? [I] : void 0, mode: y.IK.REGULAR, promptMetadata: f, returnCitations: M, imageGenerationCount: D, toolOverrides: O, source: h, isDeepsearch: d, isReasoning: p }));
                             else {
                                 const e = { text: g, attachments: I ? [I] : [] };
                                 u && I ? (e.modeButtonFilterKey = "ImageEdit") : d ? (e.modeButtonFilterKey = "Research") : p && (e.modeButtonFilterKey = "Reasoning"), i((0, x.Uo)(J, e));
@@ -309,7 +309,7 @@
             }
         },
         623494: (e, t, n) => {
-            n.d(t, { DE: () => f, G$: () => r, HO: () => E, HR: () => F, JO: () => v, Jm: () => C, NH: () => M, RC: () => g, S7: () => J, UV: () => R, Uk: () => k, YI: () => d, YW: () => O, ZY: () => h, az: () => c, c3: () => s, dP: () => x, dd: () => m, eS: () => b, eV: () => S, hf: () => _, hq: () => l, kl: () => y, mm: () => p, op: () => w, pv: () => i, qQ: () => N, u1: () => I, y6: () => u, zC: () => P, zX: () => Z });
+            n.d(t, { DE: () => f, G$: () => r, HO: () => E, HR: () => F, JO: () => _, Jm: () => C, NH: () => M, RC: () => g, S7: () => J, UV: () => R, Uk: () => y, YI: () => d, YW: () => O, ZY: () => h, az: () => c, c3: () => s, dP: () => x, dd: () => m, eS: () => b, eV: () => S, hf: () => v, hq: () => l, kl: () => k, mm: () => p, op: () => w, pv: () => i, qQ: () => N, u1: () => I, y6: () => u, zC: () => P, zX: () => Z });
             var a = n(163889);
             function o() {
                 return `online:${window.navigator.onLine}|effectiveType:${window.navigator.connection?.effectiveType ?? "unknown"}`;
@@ -350,10 +350,10 @@
             function g(e, t) {
                 A(e)({ element: "grok_mode", action: "change", data: { event_info: t } });
             }
-            function v(e, t) {
+            function _(e, t) {
                 A(e)({ element: "grok_model", action: "change", data: { event_info: t } });
             }
-            function _(e, t) {
+            function v(e, t) {
                 A(e)({ element: "tweet-carousel", action: "change", data: { event_info: t.toString() } });
             }
             function x(e, t) {
@@ -362,10 +362,10 @@
             function w(e, t) {
                 A(e)({ element: "file-attachment", action: "fail", data: { event_info: t } });
             }
-            function y(e, t, n) {
+            function k(e, t, n) {
                 A(e)({ element: "api-add-response", action: "error", data: { event_info: `${t.message}\n${t.stack}\n${o()}` } }), (0, a.Hj)(t, { level: "warning", extra: n });
             }
-            function k(e, t) {
+            function y(e, t) {
                 A(e)({ element: "api-add-response", action: "fail", data: { event_info: `${t}\n${o()}` } });
             }
             function b(e, t) {
@@ -378,7 +378,7 @@
                 A(e)({ element: "file-upload", action: "fail", data: { event_info: t } });
             }
             function E(e, t) {
-                A(e)({ element: "grok-post-analyze", action: "start", data: { event_source: t ? "post_details" : "timeline" } });
+                A(e)({ element: "grok_post_analysis_button", action: "click", data: { event_source: t ? "post_details" : "timeline" } });
             }
             function I(e, t, n) {
                 A(e)({ element: "grok-post-image-annotation", action: "start", data: { event_source: t ? "post_details" : "timeline", event_info: n ? JSON.stringify({ mediaId: n }) : void 0 } });
@@ -413,4 +413,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.DirectMessages-6ac0f1a5.c0aaeeda.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.DirectMessages-6ac0f1a5.65cb173a.js.map

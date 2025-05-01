@@ -22,7 +22,7 @@
                         l = (e) => e && e.doesIntersectWith(d),
                         t = (e) => (e ? Math.abs(d.getTop() - e.getTop()) : 1 / 0),
                         c = e.getList().filter(({ id: d }) => !r(d) && a.isRendered(d) && e.isRendered(d)),
-                        s =
+                        u =
                             c.length > 0
                                 ? i(c, (e, d) => {
                                       const r = a.getForItem(e.id),
@@ -30,7 +30,7 @@
                                       return o(l, r, i) || n(t, r, i);
                                   })
                                 : null;
-                    return s && s.id;
+                    return u && u.id;
                 },
                 c = {
                     initialScrollHeadroom: (e) => e.getRect().getHeight(),
@@ -79,8 +79,8 @@
                 i = d(735e3),
                 t = (d(136728), d(392237)),
                 c = d(457311),
-                s = d(674132),
-                u = d.n(s),
+                u = d(674132),
+                s = d.n(u),
                 p = d(516951),
                 b = d(807896),
                 D = d(154003),
@@ -97,10 +97,10 @@
                     n.useEffect(() => {
                         c && ((t.current += 1), 1 === t.current && l.scribe({ action: "impression", element: "topic_pill", data: { module_id: o, position: d } }));
                     }, [l, c, o, d]);
-                    const s = n.useCallback(() => {
+                    const u = n.useCallback(() => {
                         l.scribe({ action: "click", element: "topic_pill", data: { module_id: o, position: d } }), e(o);
                     }, [l, e, o, d]);
-                    return n.createElement(D.ZP, { onClick: s, ref: i, type: r === o ? "primaryFilled" : "primaryOutlined" }, n.createElement(h.ZP, null, o));
+                    return n.createElement(D.ZP, { onClick: u, ref: i, type: r === o ? "primaryFilled" : "primaryOutlined" }, n.createElement(h.ZP, null, o));
                 },
                 w = (e) => {
                     const { pillGroups: a } = e;
@@ -115,12 +115,12 @@
                 M = t.default.create((e) => ({ container: { paddingHorizontal: e.componentDimensions.gutterHorizontal }, buttons: { marginHorizontal: e.spaces.space2 } }));
             var f = d(325686),
                 g = d(143778),
-                P = d(443781);
-            const v = n.createContext(Object.create(P.wp, Object.getOwnPropertyDescriptors({ gap: void 0, horizontalPadding: void 0, numRowsFromMetadata: void 0, scrollerDisplayType: l.m.Carousel }))),
-                I = v;
+                v = d(443781);
+            const P = n.createContext(Object.create(v.wp, Object.getOwnPropertyDescriptors({ gap: void 0, horizontalPadding: void 0, numRowsFromMetadata: void 0, scrollerDisplayType: l.m.Carousel }))),
+                I = P;
             var B = d(332878);
-            const k = n.forwardRef(({ assumedItemHeight: e = 0, anchoring: a = B.Z, identityFunction: d, items: r, minimumOffscreenToViewportRatio: o = 0, nearEndProximityRatio: i = 0, nearStartProximityRatio: t = 0, noItemsRenderer: c = g.Z, preferredOffscreenToViewportRatio: s = 0, onAtEnd: u = p.Z, onAtStart: b = p.Z, onNearEnd: D = p.Z, onNearStart: h = p.Z, onPositionRestored: m = p.Z, renderer: y }, w) => {
-                    const { gap: M, horizontalPadding: P, numRowsFromMetadata: I, scrollerDisplayType: k = l.m.Carousel } = n.useContext(v),
+            const k = n.forwardRef(({ assumedItemHeight: e = 0, anchoring: a = B.Z, identityFunction: d, items: r, minimumOffscreenToViewportRatio: o = 0, nearEndProximityRatio: i = 0, nearStartProximityRatio: t = 0, noItemsRenderer: c = g.Z, preferredOffscreenToViewportRatio: u = 0, onAtEnd: s = p.Z, onAtStart: b = p.Z, onNearEnd: D = p.Z, onNearStart: h = p.Z, onPositionRestored: m = p.Z, renderer: y }, w) => {
+                    const { gap: M, horizontalPadding: v, numRowsFromMetadata: I, scrollerDisplayType: k = l.m.Carousel } = n.useContext(P),
                         R = I || T(r.length, k),
                         E = n.useRef(0),
                         Z = (0, A.z)();
@@ -150,7 +150,7 @@
                             },
                             [Z],
                         );
-                    return r.length ? n.createElement(S.Z, { buttonsContainerStyle: { gap: M, paddingHorizontal: P }, onScroll: G, onVisibleRangeChange: F }, C) : c();
+                    return r.length ? n.createElement(S.Z, { buttonsContainerStyle: { gap: M, paddingHorizontal: v }, onScroll: G, onVisibleRangeChange: F }, C) : c();
                 }),
                 T = (e, a) => (a === l.m.GridCarousel && e >= 8 ? (e < 12 ? 2 : 3) : 1),
                 R = k;
@@ -188,7 +188,8 @@
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                         d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2f4a3d25"),
+                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-209b0896"),
+                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-ce92c4ef"),
                         d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                         d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                         d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -240,8 +241,8 @@
                 K = d(801184),
                 N = d(269011),
                 O = d(335632);
-            const L = u().afb4c24a,
-                j = u().fdd81500;
+            const L = s().afb4c24a,
+                j = s().fdd81500;
             class W extends n.Component {
                 constructor(e) {
                     super(e),
@@ -268,13 +269,13 @@
                         (this.state = { selectedPillGroup: this.pillGroups.length ? this.pillGroups[0] : void 0 });
                 }
                 render() {
-                    const { applyReactionInstructions: e, canRefresh: a, dismissedEntries: d, module: r, moduleEntryId: o, numRowsFromMetadata: i, perfKey: t, renderEmptyState: c, richScribeAction: s, scrollerDisplayType: u } = this.props,
+                    const { applyReactionInstructions: e, canRefresh: a, dismissedEntries: d, module: r, moduleEntryId: o, numRowsFromMetadata: i, perfKey: t, renderEmptyState: c, richScribeAction: u, scrollerDisplayType: s } = this.props,
                         b = this.getEntriesToRender(),
                         D = this.getGap(b),
                         h = this.getHorizontalPadding(b);
                     return n.createElement(
                         I.Provider,
-                        { value: { gap: D, horizontalPadding: h, numRowsFromMetadata: i, scrollerDisplayType: u, ...this.context } },
+                        { value: { gap: D, horizontalPadding: h, numRowsFromMetadata: i, scrollerDisplayType: s, ...this.context } },
                         this.pillGroups.length > 1 && this.state.selectedPillGroup
                             ? n.createElement(w, {
                                   onSelect: (e) => {
@@ -284,11 +285,11 @@
                                   selectedPillGroup: this.state.selectedPillGroup,
                               })
                             : null,
-                        n.createElement(V.Z, { dismissedEntries: d, entries: this.getEntriesToRender(), entryConfiguration: (0, _.Z)({}, (0, O.G)({}), { [x.ZP.Tweet]: { handlers: { [z.Z.Media]: (0, K.mG)({ isCarouselItem: !0 }), [z.Z.MediaShort]: (0, K.UM)({ isCarouselItem: !0 }) } }, [x.ZP.User]: (0, N.Z)({ isCarouselItem: !0 }) }), perfKey: t }, (d, i) => n.createElement(G.ZP, { identifier: o }, n.createElement(F.Z, { applyReactionInstructions: e, canRefresh: a, clearActiveCover: p.Z, entries: i, handlerRegistry: d, initialFetchStatus: H.Z.LOADED, key: this.state.selectedPillGroup, module: r, onAtTop: p.Z, onRef: p.Z, perfKey: t, processCallback: p.Z, refreshControl: null, removeAlert: p.Z, renderEmptyState: c, richScribeAction: s, scroller: u === l.m.PagedCarousel ? C : R, timelineId: o, title: j, withKeyboardShortcuts: !1 }))),
+                        n.createElement(V.Z, { dismissedEntries: d, entries: this.getEntriesToRender(), entryConfiguration: (0, _.Z)({}, (0, O.G)({}), { [x.ZP.Tweet]: { handlers: { [z.Z.Media]: (0, K.mG)({ isCarouselItem: !0 }), [z.Z.MediaShort]: (0, K.UM)({ isCarouselItem: !0 }) } }, [x.ZP.User]: (0, N.Z)({ isCarouselItem: !0 }) }), perfKey: t }, (d, i) => n.createElement(G.ZP, { identifier: o }, n.createElement(F.Z, { applyReactionInstructions: e, canRefresh: a, clearActiveCover: p.Z, entries: i, handlerRegistry: d, initialFetchStatus: H.Z.LOADED, key: this.state.selectedPillGroup, module: r, onAtTop: p.Z, onRef: p.Z, perfKey: t, processCallback: p.Z, refreshControl: null, removeAlert: p.Z, renderEmptyState: c, richScribeAction: u, scroller: s === l.m.PagedCarousel ? C : R, timelineId: o, title: j, withKeyboardShortcuts: !1 }))),
                     );
                 }
             }
-            (W.contextType = P.rC), (W.defaultProps = { renderEmptyState: () => n.createElement(c.Z, { message: L }), scrollerDisplayType: l.m.Vertical });
+            (W.contextType = v.rC), (W.defaultProps = { renderEmptyState: () => n.createElement(c.Z, { message: L }), scrollerDisplayType: l.m.Vertical });
             const U = W;
             var q = d(668214),
                 J = d(481242);
@@ -301,17 +302,17 @@
                 ee = (0, i.o)(),
                 ae = ({ applyReactionInstructions: e, canRefresh: a, dismissedEntries: d, entry: r, module: o, perfKey: i, richScribeAction: t }) => {
                     const {
-                            content: { displayType: c, items: s = ee },
-                            entryId: u,
+                            content: { displayType: c, items: u = ee },
+                            entryId: s,
                             itemMetadata: p,
                         } = r,
                         b = c,
                         D = b === l.m.GridCarousel ? p.moduleMetadata?.gridCarouselMetadata?.numRows : void 0;
-                    return n.createElement(U, { applyReactionInstructions: e, canRefresh: a, dismissedEntries: d, items: s, module: o, moduleEntryId: u, numRowsFromMetadata: D, perfKey: i, richScribeAction: t, scrollerDisplayType: b });
+                    return n.createElement(U, { applyReactionInstructions: e, canRefresh: a, dismissedEntries: d, items: u, module: o, moduleEntryId: s, numRowsFromMetadata: D, perfKey: i, richScribeAction: t, scrollerDisplayType: b });
                 },
                 de = $(n.memo(ae)),
                 re = o.iH({ component: de, isFocusable: (0, r.Z)(!0) }).getHandler();
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.CarouselTimelineHandler.c41cab7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.CarouselTimelineHandler.eda2a9ca.js.map

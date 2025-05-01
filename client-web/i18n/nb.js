@@ -4161,6 +4161,8 @@
                 t("e9b6d404", "Hvilke søkeverktøy skal Grok ha tilgang til?"),
                 t("h15dce2e", "Avanserte innstillinger"),
                 t("ff9dc268", "Rediger instruksjon"),
+                t("acb2baa0", "Create Images"),
+                t("h30fd372", "Try Voice Mode"),
                 t("e9fcdd0c", "Be Grok om å søke aggressivt på nettet"),
                 t("fc4e8aba", "Bruk tenking for å resonnere trinn for trinn"),
                 t("e4ae6abe", "Be Grok om å transformere bildet"),
@@ -4330,41 +4332,16 @@
                 t("g01599b6", "Svar 1"),
                 t("e02694e0", "Svar 2"),
                 t("h6867fcc", "Jeg foretrekker dette svaret"),
-                t("b2175228", "Grok for Android er her"),
-                t("d2d8650c", "Få den beste Grok-opplevelsen i vår nye frittstående app"),
-                t("ia5bef3e", "Hva kan jeg hjelpe deg med i dag?"),
-                t("ge683598", "Spør Grok om alt …"),
-                t("fef25c88", "Prøv Grok gratis nå"),
-                t("fb172aa8", "Et gratisnivå med Grok er nå tilgjengelig i ditt området. Nettprat, generer bilder og analyser fotografier. Begrensninger gjelder."),
-                t("d7af4f40", "Generer et bilde av en galakse"),
-                t("gcb6c0be", "Grok kan gjøre feil, så verifiser resultatene du får."),
-                t("cb88fd82", "Du bruker en gratisversjon av Grok."),
-                t("g27a5314", "Begynn å bruke Grok ved å legge til et telefonnummer i kontoen din."),
-                t("bdd84568", "Kontoen din er for ny til å kunne brukes med Grok. Prøv igjen senere."),
-                t("a9109a94", "En solarpunklandsby"),
-                t("g986f7a4", "Lag et bilde av en solarpunklandsby"),
-                t("ad685264", "Fuji-fjellet"),
-                t("hdb08284", "Lag et bilde i animestil av Fuji-fjellet"),
-                t("a986ae84", "En flygende katt"),
-                t("a14b556a", "Lag et bilde av en flygende katt"),
-                t("gc16b670", "En robot i en blomstereng"),
-                t("d5b8fa44", "Lag et bilde av en robot i en blomstereng"),
-                t("da196ff6", "Astronaut på Mars"),
-                t("ae3979cc", "Lag et portrett av en astronaut på Mars"),
-                t("a682460e", "En Roadster i full fart"),
-                t("e03e5514", "Lag et bilde med bevegelsesuskarphet av en Tesla Roadster som kjører gjennom Shinjuku"),
-                t("e68eac68", "Noen som beundrer nordlyset"),
-                t("hc6e6754", "Lag et bilde av noen som beundrer nordlyset"),
-                t("cf59f9f6", "Hjelp meg å skrive et følgebrev"),
-                t("cd9aeac8", "Vis meg dagens overskrifter"),
-                t("acf2f0be", "Anbefal et RPG-spill med fantasytema"),
-                t("b9bd12e2", "Løs tosumsproblemet i Python"),
+                t("d07488a6", "Get the Android app"),
+                t("d9cfe70c", "Access advanced Grok features"),
                 t("hf9afab0", "Aktiver DeepSearch for å søke på internett og X, analysere opplysninger og gi detaljerte, velbegrunnede svar med raskt, agentisk søk."),
                 t("ef3b3f04", "Aktiver Tenk for å bruke resonneringsmodellen vår. Den er best for matematikk, vitenskap og koding. Du kan også be Grok om å «tenke hardere» på et spørsmål som trenger litt mer hjernekraft. "),
                 t("b43636b8", "Vi presenterer Grok 3"),
                 t("j376298c", "Grok 3 innfører to nye moduser som samhandler med vår kraftigste modell: DeepSearch og Tenk."),
                 t("e3584f8e", "Hva er de ti mest vellykkede opsjonshandelsstrategiene som brukes av hedgefond"),
                 t("d91b7b8a", "Hva kostet det å bygge et universitet i 1885?"),
+                t("ia5bef3e", "Hva kan jeg hjelpe deg med i dag?"),
+                t("ebea5880", "Recent Conversations"),
                 t("e13591c0", "Eksempel på Grok-samtale"),
                 t("c27ca452", "Abonnenter på Premium kan nå bruke Grok, vår mest avanserte KI, på X."),
                 t("b6abc25a", "La oss presentere Grok 2"),
@@ -4908,8 +4885,8 @@
                 t("ff95a9cc", "Video-ID"),
                 t("a97e358e", "Videolenke"),
                 t("e10e8b46", "Viser bare videoene fra de siste 100 dagene."),
-                t("ba37f6da", "Videooversikt");
-            t("f19846b2", "Videominiatyrbilde"),
+                t("ba37f6da", "Videooversikt"),
+                t("f19846b2", "Videominiatyrbilde"),
                 t("ccd6f4a8", "Videotittel"),
                 t("c8410542", "Antall ganger videoen din har blitt vist."),
                 t("a532072a", "Seere"),
@@ -4931,8 +4908,8 @@
                 t("f2f463ea", "ki -oppstartsselskap"),
                 t("a10a357e", "inneholder «ki» og har minst 50 likerklikk"),
                 t("ca8ed1e8", "ki min_faves:50"),
-                t("i945a3f2", "inneholder «ki» og en nettadresse med ordet «grok»"),
-                t("a9348088", "ki url:grok"),
+                t("i945a3f2", "inneholder «ki» og en nettadresse med ordet «grok»");
+            t("a9348088", "ki url:grok"),
                 t("b5c3cdbc", "omtaler X-kontoen «grok»"),
                 t("e2634592", "@grok"),
                 t("i88ba038", "Varsel deaktivert"),
@@ -5866,10 +5843,10 @@
                 t("ae58026a", "Åpne og forhåndsvis et merkelikerklikk fra en JSON-fil"),
                 t("hd0bc1eb", function (e) {
                     return e.name + " sender direkte";
-                });
-            t("bea1f26b", function (e) {
-                return e.name + " sendte direkte";
-            }),
+                }),
+                t("bea1f26b", function (e) {
+                    return e.name + " sendte direkte";
+                }),
                 t("ab3ee97f", function (e) {
                     return e.screenName + " sender ikke direkte";
                 }),
@@ -5897,8 +5874,8 @@
                 t("edef4c82", "Publiser direkte til et fellesskap"),
                 t("a7640df6", "Innleggene dine deles med medlemmer av fellesskapet og følgerne dine."),
                 t("h3bb8068", "Få hjelp når du trenger det"),
-                t("a709f8f8", "Administratorer og moderatorer hjelper til i Fellesskaper og holder samtalene på rett spor."),
-                t("c8d33380", "Nye elementer"),
+                t("a709f8f8", "Administratorer og moderatorer hjelper til i Fellesskaper og holder samtalene på rett spor.");
+            t("c8d33380", "Nye elementer"),
                 t("cb6adb10", "Oppdag Fellesskaper"),
                 t("df362964", "Finn Fellesskaper"),
                 t("dfd5031f", function (e) {
@@ -6872,8 +6849,8 @@
                 t("c4fd68da", "Tilpass brukeropplevelsen"),
                 t("c0195168", "Endre appikonet og navigasjonsvalgene"),
                 t("b6b5dc94", "Bli verifisert"),
-                t("b06db848", "Skill deg ut fra andre på plattformen");
-            t("e3e3a97c", "Tjen en inntektsandel fra innleggene dine"),
+                t("b06db848", "Skill deg ut fra andre på plattformen"),
+                t("e3e3a97c", "Tjen en inntektsandel fra innleggene dine"),
                 t("f15bc24e", "Økte Grok-grenser"),
                 t("c4666e1c", "Mer bruk av Grok 3, vår nyeste modell"),
                 t("he74ae7a", "Høyeste forbruksgrenser for Grok"),
@@ -6895,8 +6872,8 @@
                 t("c3148608", "Få raskere hjelp når du trenger det"),
                 t("b485ca6e", "Høydepunkter-fane"),
                 t("d438955e", "Fremhev toppinnleggene dine"),
-                t("f373a352", "Krypterte direktemeldinger"),
-                t("g7405aca", "Nettprat sikkert med gjennomgående kryptering"),
+                t("f373a352", "Krypterte direktemeldinger");
+            t("g7405aca", "Nettprat sikkert med gjennomgående kryptering"),
                 t("j659fa0c", "Det beste i Grok 3"),
                 t("ibff5694", "Få høyeste forbruksgrenser, DeepSearch og tenking samt tidlig tilgang til nye funksjoner"),
                 t("i824f4da", "Færre annonser"),
@@ -7848,7 +7825,34 @@
                 t("ddfd6718", "Betalingen mislyktes"),
                 t("i90ea7d2", "Oppdater faktureringsopplysningene snarest for å beholde fordelene."),
                 t("a62359e6", "Innstillinger for verifisert organisasjon"),
-                t("ge221b7c", "Oppgrader abonnementet på Verifiserte organisasjoner for å få tilgang til tilknyttede kontoer og mer annonsekreditt.");
+                t("ge221b7c", "Oppgrader abonnementet på Verifiserte organisasjoner for å få tilgang til tilknyttede kontoer og mer annonsekreditt."),
+                t("i4dccc18", "Fakturering"),
+                t("ec3cd6e4", "Administrer betalingsmåten, oppdater faktureringsinformasjon og se gjennom fakturaene dine."),
+                t("dac61c3c", "Kontoinnstillinger"),
+                t("b6b5fd66", "Administrer X-kontoen din, inkludert endring av brukernavn eller passord."),
+                t("hb9c4a1c", "Spørsmål, feilrapporteringer og tilbakemeldinger"),
+                t("c674f5b4", "Konfigurer fakturabetalinger"),
+                t("i8237e66", "Bytt fra kredittkortbetalinger til fakturering med bankoverføring."),
+                t("hebd348a", "Konfigurer hvordan annonser brukes til å promotere jobber fra Rekruttering-portalen."),
+                t("ib5e6f90", "Jobbpromotering"),
+                t("id720215", "Rekruttering"),
+                t("dd59f146", "Annonsekonto med jobbpromotering"),
+                t("e7e36818", "Annonsekontoer kvalifiserer til jobbpromotering når de er fullt konfigurert med en finansieringskilde."),
+                t("c28566e0", "Annonsekonto"),
+                t("c80160d3", "Annonsering"),
+                t("ff0edac0", "Er du sikker på at du vil avslutte abonnementet?"),
+                t("h2ac0348", "Nei, gå tilbake"),
+                t("dbf9667e", "Jeg er sikker"),
+                t("j7592572", "U-sving"),
+                t("ee778942", "Trafikklys"),
+                t("fdd57981", function (e) {
+                    return "Vi vil gjerne gi deg et engangstilbud om $ " + e.totalAmount + " i gratis annonsekreditt.";
+                }),
+                t("i032a231", function (e) {
+                    return "Jeg blir værende og vil ha " + e.totalAmount + " i annonsekreditt";
+                }),
+                t("hd7d278c", "Nei takk"),
+                t("jf8a0dea", "Supert! Den nye gratis annonsekreditten vises i kontoen din i den neste faktureringsperioden.");
             function a(e, n) {
                 for (var r = 0; r < n.length; r++) {
                     var t = n[r];
@@ -7887,34 +7891,7 @@
                     d(e, n)
                 );
             }
-            t("i4dccc18", "Fakturering"),
-                t("ec3cd6e4", "Administrer betalingsmåten, oppdater faktureringsinformasjon og se gjennom fakturaene dine."),
-                t("dac61c3c", "Kontoinnstillinger"),
-                t("b6b5fd66", "Administrer X-kontoen din, inkludert endring av brukernavn eller passord."),
-                t("hb9c4a1c", "Spørsmål, feilrapporteringer og tilbakemeldinger"),
-                t("c674f5b4", "Konfigurer fakturabetalinger"),
-                t("i8237e66", "Bytt fra kredittkortbetalinger til fakturering med bankoverføring."),
-                t("hebd348a", "Konfigurer hvordan annonser brukes til å promotere jobber fra Rekruttering-portalen."),
-                t("ib5e6f90", "Jobbpromotering"),
-                t("id720215", "Rekruttering"),
-                t("dd59f146", "Annonsekonto med jobbpromotering"),
-                t("e7e36818", "Annonsekontoer kvalifiserer til jobbpromotering når de er fullt konfigurert med en finansieringskilde."),
-                t("c28566e0", "Annonsekonto"),
-                t("c80160d3", "Annonsering"),
-                t("ff0edac0", "Er du sikker på at du vil avslutte abonnementet?"),
-                t("h2ac0348", "Nei, gå tilbake"),
-                t("dbf9667e", "Jeg er sikker"),
-                t("j7592572", "U-sving"),
-                t("ee778942", "Trafikklys"),
-                t("fdd57981", function (e) {
-                    return "Vi vil gjerne gi deg et engangstilbud om $ " + e.totalAmount + " i gratis annonsekreditt.";
-                }),
-                t("i032a231", function (e) {
-                    return "Jeg blir værende og vil ha " + e.totalAmount + " i annonsekreditt";
-                }),
-                t("hd7d278c", "Nei takk"),
-                t("jf8a0dea", "Supert! Den nye gratis annonsekreditten vises i kontoen din i den neste faktureringsperioden."),
-                t("ebbb3154", "Lukk og gå tilbake til X"),
+            t("ebbb3154", "Lukk og gå tilbake til X"),
                 t("j1f68dda", "Siste trinn: Er du sikker på at du vil kansellere?"),
                 t("c9c3464c", "Abonnementet avsluttes"),
                 t("dd3a293c", "Abonnementet på verifisert organisasjon er avsluttet."),
@@ -8892,8 +8869,8 @@
                 t("ccd32094", "Nå"),
                 t("abfcce0d", function (e) {
                     return e.amountOfTime + " siden";
-                });
-            t("ae408b76", "Du republiserte"),
+                }),
+                t("ae408b76", "Du republiserte"),
                 t("j355f008", "Festet innlegg"),
                 t("habf9678", "Festet av forfatteren"),
                 t("db0798ed", function (e) {
@@ -8949,10 +8926,10 @@
                 }),
                 t("d925a4f9", function (e) {
                     return e.formattedCount + " minutt" + i(e.count, "", "er") + " igjen";
-                }),
-                t("ib15cddb", function (e) {
-                    return e.formattedCount + " time" + i(e.count, "", "r") + " igjen";
-                }),
+                });
+            t("ib15cddb", function (e) {
+                return e.formattedCount + " time" + i(e.count, "", "r") + " igjen";
+            }),
                 t("db9ed19f", function (e) {
                     return e.formattedCount + " dag" + i(e.count, "", "er") + " igjen";
                 }),
@@ -13204,4 +13181,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nb.1838339a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nb.092a19aa.js.map

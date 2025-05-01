@@ -168,22 +168,20 @@
                 O = o(177371),
                 z = o(533128),
                 W = o(523561),
-                V = o(195560);
-            const q = (0, W.Z)({
+                q = o(195560);
+            const K = (0, W.Z)({
                 loader: () =>
                     Promise.all([
+                        o.e("icons.13"),
+                        o.e("icons.22"),
+                        o.e("icons.29"),
                         o.e("icons.5"),
-                        o.e("icons.6"),
-                        o.e("icons.25"),
-                        o.e("icons.15"),
+                        o.e("icons.7"),
+                        o.e("icons.1"),
                         o.e("icons.20"),
-                        o.e("icons.0"),
                         o.e("modules.common-e907d115"),
                         o.e("modules.common-e019dbda"),
-                        o.e("icons.27"),
-                        o.e("icons.17"),
-                        o.e("icons.11"),
-                        o.e("icons.12"),
+                        o.e("icons.25"),
                         o.e("modules.audio-6107ac1a"),
                         o.e("modules.audio-b953418a"),
                         o.e("modules.audio-7c51e6a7"),
@@ -194,7 +192,12 @@
                         o.e("modules.audio-e019dbda"),
                         o.e("modules.audio-262c94d4"),
                         o.e("modules.audio-c6fe4ea4"),
-                        o.e("icons.24"),
+                        o.e("icons.6"),
+                        o.e("icons.17"),
+                        o.e("icons.14"),
+                        o.e("icons.16"),
+                        o.e("icons.23"),
+                        o.e("icons.8"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -224,7 +227,8 @@
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                         o.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                        o.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2f4a3d25"),
+                        o.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-209b0896"),
+                        o.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-ce92c4ef"),
                         o.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                         o.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                         o.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -308,9 +312,9 @@
                         o.e("shared~bundle.Compose~bundle.RichTextCompose-e6266db0"),
                         o.e("bundle.RichTextCompose"),
                     ]).then(o.bind(o, 728455)),
-                renderPlaceholder: (e, t) => a.createElement(V.Z, { hasError: e, onRetry: t }),
+                renderPlaceholder: (e, t) => a.createElement(q.Z, { hasError: e, onRetry: t }),
             });
-            var K = o(352975),
+            var V = o(352975),
                 $ = o(383494),
                 Q = o(966582),
                 G = o(71620),
@@ -483,7 +487,7 @@
                                         this._scribeAction({ element: e, action: "click" });
                                     },
                                 };
-                            return (0, K.Z)({ ...d, block: t, isSoftBlockEnabled: this.context.featureSwitches.isTrue("xprofile_blocked_by_view_enabled"), unblock: i, user: r, promotedContent: n });
+                            return (0, V.Z)({ ...d, block: t, isSoftBlockEnabled: this.context.featureSwitches.isTrue("xprofile_blocked_by_view_enabled"), unblock: i, user: r, promotedContent: n });
                         }),
                         (this._getMuteOrUnmuteAction = () => {
                             const { addToast: e, createLocalApiErrorHandler: t, history: o, mute: n, promotedContent: a, tweet: i, unmute: r } = this.props;
@@ -697,10 +701,10 @@
                     if (!E) return null;
                     const { viewerUserId: z } = this.context,
                         { enableKeyboardShortcuts: W } = this.state,
-                        V = r.Z.getOriginalTweet(E),
-                        q = { contextTweet: t, enableKeyboardShortcuts: W, forwardPivotInfo: i, hasModeratedReplies: d, handleReplyFilterInlineCalloutImpression: this._handleReplyFilterInlineCalloutImpression, showReplyFilterInlineCallout: I, innerForwardPivotInfo: s, viewerUser: L, promotedContent: C, promotedContentAdvertiser: A, quotedTweetTombstoneInfo: g, quoteTweetSocialContextProps: S, readerModeAvailable: f, socialContext: T, socialContextColor: x, topic: B, topicFollowPrompt: P, tweet: E, replyBadge: M, replyContext: v, rootTweetAuthorId: k, withActions: U, withAltTextBadge: !0, withInlineMedia: F, withSocialContext: O, nudges: m, innerNudges: c },
-                        K = V.user.id_str === z,
-                        $ = !V.in_reply_to_status_id_str && K && !V.community_id_str,
+                        q = r.Z.getOriginalTweet(E),
+                        K = { contextTweet: t, enableKeyboardShortcuts: W, forwardPivotInfo: i, hasModeratedReplies: d, handleReplyFilterInlineCalloutImpression: this._handleReplyFilterInlineCalloutImpression, showReplyFilterInlineCallout: I, innerForwardPivotInfo: s, viewerUser: L, promotedContent: C, promotedContentAdvertiser: A, quotedTweetTombstoneInfo: g, quoteTweetSocialContextProps: S, readerModeAvailable: f, socialContext: T, socialContextColor: x, topic: B, topicFollowPrompt: P, tweet: E, replyBadge: M, replyContext: v, rootTweetAuthorId: k, withActions: U, withAltTextBadge: !0, withInlineMedia: F, withSocialContext: O, nudges: m, innerNudges: c },
+                        V = q.user.id_str === z,
+                        $ = !q.in_reply_to_status_id_str && V && !q.community_id_str,
                         Q = this._renderConversationControlsTooltip();
                     return a.createElement(
                         y.nO,
@@ -711,7 +715,7 @@
                             this._renderLeftConversationBanner(),
                             a.createElement(
                                 _.ZP,
-                                (0, n.Z)({}, q, {
+                                (0, n.Z)({}, K, {
                                     allowBookmarkInActionsBar: !0,
                                     inlineCalloutInfo: this._getInlineCalloutInfo(),
                                     isFocal: !0,
@@ -765,7 +769,7 @@
                         { replyPressToggle: i } = this.state,
                         { viewerUserId: r } = this.context;
                     if (!o) return null;
-                    return r && !this._shouldDisable(o, z.d.Reply) ? a.createElement(P.c_, null, (0, S.ZP)() ? a.createElement(q, { history: e, location: t, parentTweetId: n, replyPressToggle: i }) : a.createElement(m.Z, { container: s.Z, fab: this._fabReply(e), withoutBottomPadding: !0 })) : null;
+                    return r && !this._shouldDisable(o, z.d.Reply) ? a.createElement(P.c_, null, (0, S.ZP)() ? a.createElement(K, { history: e, location: t, parentTweetId: n, replyPressToggle: i }) : a.createElement(m.Z, { container: s.Z, fab: this._fabReply(e), withoutBottomPadding: !0 })) : null;
                 }
                 _renderWithheldTweet() {
                     const { tweet: e } = this.props;
@@ -837,7 +841,7 @@
             const d = i.default.create((e) => ({ root: { borderWidth: 0, height: e.spaces.space48, boxShadow: e.boxShadows.small }, iconOnly: { height: e.spaces.space56, width: e.spaces.space56 } })),
                 l = r;
         },
-        394123: (e, t, o) => {
+        428259: (e, t, o) => {
             o.r(t), o.d(t, { default: () => l });
             var n = o(202784),
                 a = o(890601),
@@ -845,7 +849,20 @@
                 r = o(347101);
             const d = (e = {}) => {
                 const { direction: t } = (0, i.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M15.636 11.671c2.079-.583 3.093-2.18 3.093-3.929 0-2.307-1.471-4.741-5.983-4.741H5.623V21h7.579c4.411 0 6.008-2.484 6.008-4.994 0-2.383-1.343-3.955-3.574-4.335zm-3.295-6.287c2.535 0 3.27 1.319 3.27 2.662 0 1.242-.583 2.611-3.27 2.611H8.69V5.384h3.651zM8.69 18.617v-5.628h4.208c2.231 0 3.194 1.166 3.194 2.738 0 1.547-.887 2.89-3.397 2.89H8.69z" })) }, { writingDirection: t });
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M6 13.5c-1.934 0-3.5 1.567-3.5 3.5s1.566 3.5 3.5 3.5 3.5-1.567 3.5-3.5-1.566-3.5-3.5-3.5zm0 5.25c-.962 0-1.75-.783-1.75-1.75s.788-1.75 1.75-1.75 1.75.783 1.75 1.75-.788 1.75-1.75 1.75zM22 8H12V6h10v2zM6 3.5C4.066 3.5 2.5 5.067 2.5 7s1.566 3.5 3.5 3.5S9.5 8.933 9.5 7 7.934 3.5 6 3.5zm0 5.25c-.962 0-1.75-.783-1.75-1.75S5.038 5.25 6 5.25 7.75 6.033 7.75 7 6.962 8.75 6 8.75zM22 18H12v-2h10v2z" })) }, { writingDirection: t });
+            };
+            d.metadata = { width: 24, height: 24 };
+            const l = d;
+        },
+        971657: (e, t, o) => {
+            o.r(t), o.d(t, { default: () => l });
+            var n = o(202784),
+                a = o(890601),
+                i = o(783427),
+                r = o(347101);
+            const d = (e = {}) => {
+                const { direction: t } = (0, i.Z)();
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M7.501 19.917L7.471 21H.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977.963 0 1.95.212 2.87.672-.444.478-.851 1.03-1.212 1.656-.507-.204-1.054-.329-1.658-.329-2.767 0-4.57 2.223-4.938 6.004H7.56c-.023.302-.05.599-.059.917zm8.999-8.921c-3.264 0-6.816 2.358-7 8.977L9.471 21h4.528v-2h-2.438c.367-3.781 2.17-6.004 4.938-6.004 1.089 0 2.022.356 2.784 1.004h2.632c-1.376-2.136-3.446-3.004-5.415-3.004zm0-.996c-.799 0-1.527-.279-2.116-.73C13.548 8.63 13 7.632 13 6.5 13 4.57 14.567 3 16.5 3S20 4.57 20 6.5c0 1.132-.548 2.13-1.384 2.77-.589.451-1.317.73-2.116.73zM15 6.5c0 .827.673 1.5 1.5 1.5S18 7.327 18 6.5 17.327 5 16.5 5 15 5.673 15 6.5zm-11 0C4 4.57 5.567 3 7.5 3S11 4.57 11 6.5 9.433 10 7.5 10 4 8.43 4 6.5zm2 0C6 7.327 6.673 8 7.5 8S9 7.327 9 6.5 8.327 5 7.5 5 6 5.673 6 6.5zM21 21h3v-2h-3v-3h-2v3h-3v2h3v3h2v-3z" })) }, { writingDirection: t });
             };
             d.metadata = { width: 24, height: 24 };
             const l = d;
@@ -863,7 +880,7 @@
             d.metadata = { width: 24, height: 24 };
             const l = d;
         },
-        993752: (e, t, o) => {
+        41065: (e, t, o) => {
             o.r(t), o.d(t, { default: () => l });
             var n = o(202784),
                 a = o(890601),
@@ -871,42 +888,12 @@
                 r = o(347101);
             const d = (e = {}) => {
                 const { direction: t } = (0, i.Z)();
-                return (0, a.Z)(
-                    "svg",
-                    {
-                        ...e,
-                        role: e["aria-label"] ? e.role || "img" : void 0,
-                        "aria-hidden": void 0 === e["aria-label"],
-                        style: [r.Z.root, e.style],
-                        viewBox: "0 0 90 24",
-                        children: n.createElement(
-                            "g",
-                            null,
-                            n.createElement("path", {
-                                d: "M6.57 2.094c-.289.16-.718.469-.937.668l-.414.36V1.983h-2.7v14.258h2.7v-5.055l.828.598c.758.524.937.574 2.195.574 1.567 0 2.434-.359 3.387-1.386 1.078-1.137 1.402-2.04 1.422-3.844 0-1.281-.074-1.805-.38-2.457-.433-.938-1.421-2-2.284-2.453-.828-.434-3.114-.504-3.817-.125zM9.38 4.78c.52.469 1.062 1.66 1.062 2.348 0 .758-.613 1.984-1.152 2.344-.27.18-.812.363-1.242.398-2.684.305-3.996-2.96-2-4.96.594-.598.648-.618 1.781-.544.813.055 1.262.18 1.55.414zm7.793-2.543c-1.117.524-2.125 1.66-2.52 2.867-.468 1.391-.289 3.555.395 4.801 1.277 2.383 4.195 3.211 6.39 1.86l.883-.559v1.063h2.52V1.984h-2.52v1.137l-.414-.379c-1.082-1.012-3.168-1.246-4.734-.504zm3.996 2.434c1.117.687 1.531 2.746.793 3.953-1.441 2.363-4.879 1.3-4.86-1.496.016-1.066.45-1.95 1.188-2.438.7-.468 2.121-.488 2.879-.02zm9.793-2.668c-.234.105-.703.379-1.027.629l-.594.453V1.984h-2.52v14.258h2.7v-5.09l.539.47c2.015 1.694 5.472.687 6.77-2.005.413-.847.503-1.246.503-2.472 0-2.344-.953-4.004-2.863-4.907-.973-.468-2.664-.578-3.508-.234zm2.465 2.687c.863.524 1.187 1.282 1.097 2.653-.07 1.027-.144 1.21-.718 1.804-.559.559-.813.668-1.621.743-.793.05-1.063 0-1.582-.364-1.586-1.062-1.696-3.445-.2-4.71.739-.614 2.125-.684 3.024-.126zm8.37-2.671c-.937.328-2.269 1.644-2.753 2.707-.633 1.445-.594 3.484.07 4.875.29.574.848 1.316 1.262 1.675 1.602 1.371 4.102 1.536 5.508.364.664-.579.738-.563.738.09v.539h2.52V1.984h-2.52v1.082l-.828-.593c-.723-.504-.973-.578-2.105-.614-.723-.02-1.567.055-1.891.16zm3.763 2.796c2.554 2.149.16 6.247-2.829 4.82-1.78-.847-1.886-3.917-.195-4.945.899-.558 2.285-.488 3.024.125zm8.08-2.775c-1.028.324-2.395 1.84-2.774 3.086-.629 2.004-.09 4.438 1.278 5.738 1.585 1.496 4.32 1.625 5.796.27l.434-.395-.09.953c-.219 2.204-2.574 3.016-5.258 1.79l-.933-.434-.489 1.062-.468 1.067.578.344c.324.199 1.168.488 1.906.648 3.527.793 6.445-.559 7.219-3.32.11-.38.18-2.852.18-5.774v-5.09H58.5v.543c0 .614-.2.684-.559.235-.703-.832-2.808-1.192-4.3-.723zm3.78 2.652c1.438 1.028 1.403 3.63-.073 4.532-.883.539-2.27.468-3.004-.145-1.082-.922-1.317-2.113-.688-3.45.688-1.405 2.485-1.858 3.766-.937zm8.587-2.632c-1.656.593-2.953 1.964-3.387 3.625-.27.976-.105 2.726.324 3.718.45.993 1.457 2.004 2.559 2.528 1.203.593 3.527.593 4.785.015 2-.918 3.043-2.597 3.043-4.906 0-1.047-.11-1.555-.414-2.203-.938-1.95-2.754-3.031-5.023-3.031-.665.02-1.512.125-1.887.254zm3.273 2.523c1.008.543 1.586 2.004 1.262 3.27-.648 2.433-3.852 2.832-4.969.628-.738-1.425-.394-2.921.828-3.734.72-.488 2.106-.559 2.88-.164zm0 0",
-                            }),
-                        ),
-                    },
-                    { writingDirection: t },
-                );
-            };
-            d.metadata = { width: 90, height: 24 };
-            const l = d;
-        },
-        474761: (e, t, o) => {
-            o.r(t), o.d(t, { default: () => l });
-            var n = o(202784),
-                a = o(890601),
-                i = o(783427),
-                r = o(347101);
-            const d = (e = {}) => {
-                const { direction: t } = (0, i.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M10.883 4H2v8.5h2.255c-.643 1.14-1.66 1.83-2.735 2.51l3.224 5.06c3.139-2 5.335-4.63 6.084-8.37.444-2.21.405-4.55.154-6.81L10.883 4zM4 10.5V6h5.081c.151 1.84.121 3.64-.213 5.31-.466 2.32-1.519 4.39-3.537 5.96l-1.083-1.7c1.43-1.18 2.662-3.14 2.662-5.07H4zM21.876 4h-8.882v8.5h2.255c-.644 1.14-1.66 1.83-2.735 2.51l3.224 5.06c3.138-2 5.334-4.63 6.083-8.37.444-2.21.406-4.55.154-6.81L21.876 4zm-6.883 6.5V6h5.082c.151 1.84.121 3.64-.214 5.31-.466 2.32-1.519 4.39-3.537 5.96l-1.083-1.7c1.43-1.18 2.663-3.14 2.663-5.07h-2.911z" })) }, { writingDirection: t });
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M6.866 18H.846l.075-1.069C1.33 11.083 4.335 9 7.011 9c1.457 0 2.734.576 3.743 1.615-.515.378-1.003.826-1.45 1.355-.562-.569-1.305-.97-2.293-.97-2.074 0-3.522 1.847-3.981 5h4.225c-.169.616-.295 1.288-.389 2zM4 5c0-1.654 1.343-3 3-3s3 1.346 3 3-1.343 3-3 3-3-1.346-3-3zm2 0c0 .551.448 1 1 1s1-.449 1-1-.448-1-1-1-1 .449-1 1zm9.5 5c-.778 0-1.49-.263-2.071-.693C12.566 8.669 12 7.653 12 6.5 12 4.57 13.567 3 15.5 3S19 4.57 19 6.5c0 1.111-.53 2.092-1.34 2.733-.596.472-1.341.767-2.16.767zM14 6.5c0 .827.673 1.5 1.5 1.5S17 7.327 17 6.5 16.327 5 15.5 5 14 5.673 14 6.5zm1.5 4.496c3.264 0 6.816 2.358 7 8.977L22.529 21H8.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977zm0 2c-2.767 0-4.57 2.223-4.938 6.004h9.875c-.367-3.781-2.17-6.004-4.938-6.004z" })) }, { writingDirection: t });
             };
             d.metadata = { width: 24, height: 24 };
             const l = d;
         },
-        69893: (e, t, o) => {
+        883437: (e, t, o) => {
             o.r(t), o.d(t, { default: () => l });
             var n = o(202784),
                 a = o(890601),
@@ -914,25 +901,23 @@
                 r = o(347101);
             const d = (e = {}) => {
                 const { direction: t } = (0, i.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M17.879 15c.079.323.121.658.121 1 0 2.757-2.691 5-6 5s-6-2.243-6-5h2c0 1.654 1.794 3 4 3s4-1.346 4-3c0-.352-.096-.686-.246-1h2.125zM12 11c-2.206 0-4-1.346-4-3s1.794-3 4-3 4 1.346 4 3h2c0-2.757-2.691-5-6-5S6 5.243 6 8c0 1.126.455 2.163 1.211 3H3v2h18v-2h-9z" })) }, { writingDirection: t });
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M21.503 6.745c.475 1.032.748 2.176.748 3.385 0 2.955-1.608 5.68-4.196 7.11l-8.054 4.459v-3.452l2-2v2.06l5.086-2.816c1.952-1.079 3.164-3.133 3.164-5.36 0-.644-.101-1.264-.286-1.847l1.538-1.538zM3.71 21.71l-1.414-1.414 3.401-3.401C3.34 15.5 1.751 12.935 1.751 10c0-4.411 3.591-8 8.005-8h4.366c1.818 0 3.494.608 4.849 1.62l1.325-1.325 1.414 1.414-18 18.001zm3.462-6.29L17.545 5.047C16.567 4.386 15.389 4 14.123 4H9.757c-3.311 0-6.005 2.691-6.005 6 0 2.389 1.401 4.451 3.421 5.42z" })) }, { writingDirection: t });
             };
             d.metadata = { width: 24, height: 24 };
             const l = d;
         },
-        500201: (e, t, o) => {
-            o.r(t), o.d(t, { default: () => s });
+        258292: (e, t, o) => {
+            o.r(t), o.d(t, { default: () => l });
             var n = o(202784),
                 a = o(890601),
                 i = o(783427),
-                r = o(717683),
-                d = o(347101);
-            const l = (e = {}) => {
-                const t = n.useContext(r.Z),
-                    { direction: o } = (0, i.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [d.Z.root, e.style, t && d.Z.iconRTL], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M21.15 6.232c.97.977.97 2.559 0 3.536L9.91 21H3v-6.914L14.23 2.854c.98-.977 2.56-.977 3.54 0l3.38 3.378zM14.75 19l-2 2H21v-2h-6.25z" })) }, { writingDirection: o });
+                r = o(347101);
+            const d = (e = {}) => {
+                const { direction: t } = (0, i.Z)();
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M12.013 1l3.527 7.15 7.886 1.14-5.707 5.56 1.347 7.86L12.013 19 4.96 22.71l1.347-7.86L.6 9.29l7.886-1.14L12.013 1z" })) }, { writingDirection: t });
             };
-            l.metadata = { width: 24, height: 24 };
-            const s = l;
+            d.metadata = { width: 24, height: 24 };
+            const l = d;
         },
         662678: (e, t, o) => {
             o.d(t, { G: () => a, Z: () => n });
@@ -966,4 +951,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.inlineTombstoneHandler~loader.tweetHandler.1499f5ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.inlineTombstoneHandler~loader.tweetHandler.2f1b524a.js.map

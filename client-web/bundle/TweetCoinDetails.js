@@ -50,12 +50,12 @@
                 }
                 _renderContent() {
                     const { backButtonType: e, centerTitle: t, centeredLogo: l, fixed: n, hideBackButton: r, isFullWidth: i, isLarge: d, leftControl: c, middleControl: p, position: m, rightControl: g, secondaryBar: y, style: h, subtitle: k, title: _, titleDomId: b, titleIconCell: w, titleIconCellSize: f, withBackground: Z, withWideContainer: E } = this.props,
-                        { isModal: L } = this.context,
-                        T = r ? c : a.createElement(s.Z, { backButtonType: e, onClick: this._handleBackClick }),
-                        C = (function (e, t, l) {
+                        { isModal: C } = this.context,
+                        L = r ? c : a.createElement(s.Z, { backButtonType: e, onClick: this._handleBackClick }),
+                        T = (function (e, t, l) {
                             return e && !(t && l);
-                        })(!!Z, L, !!y);
-                    return a.createElement(a.Fragment, null, a.createElement(o.Z, { centerTitle: t, centeredLogo: l, isFullWidth: i, isLarge: d, leftControl: T, middleControl: p, position: u(m, L, n), rightControl: g, style: h, subtitle: k, title: _, titleDomId: b, titleIconCell: w, titleIconCellSize: f, withBackground: C, withWideContainer: E }), y || null);
+                        })(!!Z, C, !!y);
+                    return a.createElement(a.Fragment, null, a.createElement(o.Z, { centerTitle: t, centeredLogo: l, isFullWidth: i, isLarge: d, leftControl: L, middleControl: p, position: u(m, C, n), rightControl: g, style: h, subtitle: k, title: _, titleDomId: b, titleIconCell: w, titleIconCellSize: f, withBackground: T, withWideContainer: E }), y || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
@@ -578,34 +578,34 @@
                 f = (l(585488), l(731708)),
                 Z = l(750410),
                 E = l(891198),
-                L = l(844685),
-                T = l(167630),
-                C = l(392237),
+                C = l(844685),
+                L = l(167630),
+                T = l(392237),
                 F = l(674132),
                 B = l.n(F),
                 x = l(856151),
                 S = l(980407),
-                K = l(965245),
-                v = l(301410),
+                v = l(965245),
+                K = l(301410),
                 D = l(293115),
                 P = l(312771),
                 R = l(466441),
                 I = l(952428),
                 A = l(823161),
-                U = l(412876),
-                M = l(553660);
-            const H = B().fbb7764b,
-                W = B().e70a07b2,
-                N = B().da68fff1,
-                q = ({ coins: e, isAnonymous: t, isLoggedinUser: l, user: a }) => b.createElement(w.Z, { role: "listitem" }, b.createElement(I.Z, { style: V.root, withInteractiveStyling: !1 }, b.createElement(w.Z, { style: V.row }, t ? b.createElement(A.default, { size: "xLarge", uri: "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png" }) : "User" === a?.__typename ? b.createElement(U.Z, { size: "xLarge", user: a, withLink: !0 }) : null, b.createElement(w.Z, { style: V.column }, b.createElement(f.ZP, { size: "headline2", style: V.awardDetails, weight: "medium" }, t && l ? N({ count: e }) : H({ count: e })), t ? b.createElement(f.ZP, { style: V.spacing }, W) : "User" === a?.__typename ? b.createElement(M.Z, { style: V.userName, user: a, weight: "normal", withLink: !0 }) : null)))),
-                z = b.memo(q),
-                V = C.default.create((e) => ({ root: { alignItems: "center", flexDirection: "row", justifyContent: "space-between", paddingHorizontal: e.spaces.space16, paddingVertical: e.spaces.space12 }, row: { alignItems: "center", flexDirection: "row" }, column: { flexDirection: "column" }, userName: { marginHorizontal: e.spaces.space8 }, spacing: { marginStart: e.spaces.space8 }, awardDetails: { marginStart: e.spaces.space8, marginBottom: e.spaces.space4 } })),
+                M = l(412876),
+                U = l(553660);
+            const z = B().fbb7764b,
+                H = B().e70a07b2,
+                W = B().da68fff1,
+                N = ({ coins: e, isAnonymous: t, isLoggedinUser: l, user: a }) => b.createElement(w.Z, { role: "listitem" }, b.createElement(I.Z, { style: V.root, withInteractiveStyling: !1 }, b.createElement(w.Z, { style: V.row }, t ? b.createElement(A.default, { size: "xLarge", uri: "https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png" }) : "User" === a?.__typename ? b.createElement(M.Z, { size: "xLarge", user: a, withLink: !0 }) : null, b.createElement(w.Z, { style: V.column }, b.createElement(f.ZP, { size: "headline2", style: V.awardDetails, weight: "medium" }, t && l ? W({ count: e }) : z({ count: e })), t ? b.createElement(f.ZP, { style: V.spacing }, H) : "User" === a?.__typename ? b.createElement(U.Z, { style: V.userName, user: a, weight: "normal", withLink: !0 }) : null)))),
+                q = b.memo(N),
+                V = T.default.create((e) => ({ root: { alignItems: "center", flexDirection: "row", justifyContent: "space-between", paddingHorizontal: e.spaces.space16, paddingVertical: e.spaces.space12 }, row: { alignItems: "center", flexDirection: "row" }, column: { flexDirection: "column" }, userName: { marginHorizontal: e.spaces.space8 }, spacing: { marginStart: e.spaces.space8 }, awardDetails: { marginStart: e.spaces.space8, marginBottom: e.spaces.space4 } })),
                 O = B().h1c5d6aa,
                 Q = B().h6d45054,
                 G = B().fbb7764b,
                 j = { page: "tweet_coin_details" },
                 $ = _,
-                X = (0, v.z)($, { errorConfig: { context: "TWEET_COINS_DETAILS_CONTEXT" } }),
+                X = (0, K.z)($, { errorConfig: { context: "TWEET_COINS_DETAILS_CONTEXT" } }),
                 Y = (e) => `${e.rank}`,
                 J = (e) => null != e && e > 0,
                 ee = (e) => {
@@ -615,7 +615,7 @@
                             t.goBack();
                         }, [t]),
                         n = b.useMemo(() => ({ tweet_id: l || "0" }), [l]),
-                        r = b.useCallback((e) => b.createElement(z, { coins: e.total_coins_worth, isAnonymous: e.is_anonymous, key: e.rank, user: e.sender_results?.result }), []),
+                        r = b.useCallback((e) => b.createElement(q, { coins: e.total_coins_worth, isAnonymous: e.is_anonymous, key: e.rank, user: e.sender_results?.result }), []),
                         i = b.useCallback((e) => b.createElement(w.Z, { style: te.title }, b.createElement(x.default, null), b.createElement(f.ZP, { size: "headline1", style: te.spacing, weight: "bold" }, G({ count: e }))), []),
                         s = b.useCallback(
                             ({ data: e, fetchStatus: l, retry: n }) => {
@@ -627,17 +627,30 @@
                                         c = J(n),
                                         u = e?.viewer_v2?.user_results?.result,
                                         p = E.ZP.getTruncatedCount(Number(l));
-                                    return b.createElement(S.Z, { backButtonType: "close", history: t, middleControl: i(p), onBackClick: a }, b.createElement(w.Z, { style: te.root }, c ? b.createElement(w.Z, null, b.createElement(L.Z, { text: O }), J(o) ? b.createElement(z, { coins: o || 0, isAnonymous: !1, user: u }) : null, J(s) ? b.createElement(z, { coins: s || 0, isAnonymous: !0, isLoggedinUser: !0, user: u }) : null) : null, d ? b.createElement(w.Z, null, b.createElement(L.Z, { text: Q }), b.createElement(K.Z, { cacheKey: "awardsSentByOthers", identityFunction: Y, items: d, renderer: r, withoutHeadroom: !0 })) : null));
+                                    return b.createElement(S.Z, { backButtonType: "close", history: t, middleControl: i(p), onBackClick: a }, b.createElement(w.Z, { style: te.root }, c ? b.createElement(w.Z, null, b.createElement(C.Z, { text: O }), J(o) ? b.createElement(q, { coins: o || 0, isAnonymous: !1, user: u }) : null, J(s) ? b.createElement(q, { coins: s || 0, isAnonymous: !0, isLoggedinUser: !0, user: u }) : null) : null, d ? b.createElement(w.Z, null, b.createElement(C.Z, { text: Q }), b.createElement(v.Z, { cacheKey: "awardsSentByOthers", identityFunction: Y, items: d, renderer: r, withoutHeadroom: !0 })) : null));
                                 }
-                                return b.createElement(T.Z, null);
+                                return b.createElement(L.Z, null);
                             },
                             [r, t, a, i],
                         );
                     return b.createElement(D.nO, { namespace: j }, l ? b.createElement(X, { render: s, variables: n }) : b.createElement(R.default, e));
                 },
-                te = C.default.create((e) => ({ root: { marginHorizontal: e.spaces.space32 }, spacing: { marginStart: e.spaces.space4 }, title: { flexDirection: "row", alignItems: "center", justifyContent: "center", paddingEnd: e.spaces.space64 } })),
+                te = T.default.create((e) => ({ root: { marginHorizontal: e.spaces.space32 }, spacing: { marginStart: e.spaces.space4 }, title: { flexDirection: "row", alignItems: "center", justifyContent: "center", paddingEnd: e.spaces.space64 } })),
                 le = ee;
+        },
+        41065: (e, t, l) => {
+            l.r(t), l.d(t, { default: () => o });
+            var a = l(202784),
+                n = l(890601),
+                r = l(783427),
+                i = l(347101);
+            const s = (e = {}) => {
+                const { direction: t } = (0, r.Z)();
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M6.866 18H.846l.075-1.069C1.33 11.083 4.335 9 7.011 9c1.457 0 2.734.576 3.743 1.615-.515.378-1.003.826-1.45 1.355-.562-.569-1.305-.97-2.293-.97-2.074 0-3.522 1.847-3.981 5h4.225c-.169.616-.295 1.288-.389 2zM4 5c0-1.654 1.343-3 3-3s3 1.346 3 3-1.343 3-3 3-3-1.346-3-3zm2 0c0 .551.448 1 1 1s1-.449 1-1-.448-1-1-1-1 .449-1 1zm9.5 5c-.778 0-1.49-.263-2.071-.693C12.566 8.669 12 7.653 12 6.5 12 4.57 13.567 3 15.5 3S19 4.57 19 6.5c0 1.111-.53 2.092-1.34 2.733-.596.472-1.341.767-2.16.767zM14 6.5c0 .827.673 1.5 1.5 1.5S17 7.327 17 6.5 16.327 5 15.5 5 14 5.673 14 6.5zm1.5 4.496c3.264 0 6.816 2.358 7 8.977L22.529 21H8.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977zm0 2c-2.767 0-4.57 2.223-4.938 6.004h9.875c-.367-3.781-2.17-6.004-4.938-6.004z" })) }, { writingDirection: t });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const o = s;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TweetCoinDetails.aeaf004a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TweetCoinDetails.150ab7ba.js.map

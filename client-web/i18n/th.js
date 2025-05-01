@@ -2,14 +2,14 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["i18n/th"],
     {
-        743834: (e, a, c) => {
-            var n = c(292426)._register("th", {
+        743834: (e, c, a) => {
+            var n = a(292426)._register("th", {
                 get emoji() {
-                    return c.e("i18n/emoji-th").then(c.t.bind(c, 953899, 23));
+                    return a.e("i18n/emoji-th").then(a.t.bind(a, 953899, 23));
                 },
             });
-            function f(e, a) {
-                return a;
+            function f(e, c) {
+                return c;
             }
             n("c39b0e24", "X"),
                 n("jb38600c", "ไม่มี"),
@@ -4161,6 +4161,8 @@
                 n("e9b6d404", "Grok ควรเข้าถึงเครื่องมือค้นหาใดบ้าง"),
                 n("h15dce2e", "การตั้งค่าขั้นสูง"),
                 n("ff9dc268", "แก้ไขข้อความแจ้ง"),
+                n("acb2baa0", "Create Images"),
+                n("h30fd372", "Try Voice Mode"),
                 n("e9fcdd0c", "ขอให้ Grok ค้นหาบนเว็บอย่างจริงจัง"),
                 n("fc4e8aba", "ขอให้ Grok อธิบายเหตุผลทีละขั้นตอน"),
                 n("e4ae6abe", "ขอให้ Grok เปลี่ยนรูปภาพของคุณ"),
@@ -4330,41 +4332,16 @@
                 n("g01599b6", "คำตอบ 1"),
                 n("e02694e0", "คำตอบ 2"),
                 n("h6867fcc", "ฉันชอบคำตอบนี้มากกว่า"),
-                n("b2175228", "Grok สำหรับ Android พร้อมให้บริการแล้ว"),
-                n("d2d8650c", "รับประสบการณ์ Grok ที่ดีที่สุดในแอปสแตนด์อโลนใหม่ของเรา"),
-                n("ia5bef3e", "วันนี้ฉันจะช่วยคุณได้อย่างไรบ้าง"),
-                n("ge683598", "ถาม Grok อะไรก็ได้..."),
-                n("fef25c88", "ลองใช้ Grok ฟรีทันที"),
-                n("fb172aa8", "Grok แบบฟรีมีให้บริการแล้วในภูมิภาคของคุณ แชท สร้างรูปภาพ และวิเคราะห์รูปภาพ มีข้อจำกัด"),
-                n("d7af4f40", "สร้างภาพกาแล็กซี"),
-                n("gcb6c0be", "Grok สามารถทำผิดพลาดได้ ตรวจสอบผลลัพธ์"),
-                n("cb88fd82", "คุณกำลังใช้ Grok เวอร์ชันฟรี"),
-                n("g27a5314", "หากต้องการเริ่มใช้ Grok ให้เพิ่มหมายเลขโทรศัพท์ลงในบัญชีของคุณ"),
-                n("bdd84568", "บัญชีของคุณใหม่เกินกว่าจะใช้ Grok โปรดลองอีกครั้งในภายหลัง"),
-                n("a9109a94", "หมู่บ้านโซลาร์พังก์"),
-                n("g986f7a4", "สร้างภาพหมู่บ้านโซลาร์พังก์"),
-                n("ad685264", "ภูเขาฟูจิ"),
-                n("hdb08284", "สร้างภาพสไตล์อนิเมะของภูเขาไฟฟูจิ"),
-                n("a986ae84", "แมวบินได้"),
-                n("a14b556a", "สร้างภาพแมวบินได้"),
-                n("gc16b670", "หุ่นยนต์ในทุ่งดอกไม้"),
-                n("d5b8fa44", "สร้างภาพหุ่นยนต์ในทุ่งดอกไม้"),
-                n("da196ff6", "นักบินอวกาศบนดาวอังคาร"),
-                n("ae3979cc", "สร้างภาพครึ่งตัวของนักบินอวกาศบนดาวอังคาร"),
-                n("a682460e", "รถเปิดประทุนที่เร่งความเร็ว"),
-                n("e03e5514", "สร้างภาพรถเปิดประทุนของ Tesla ที่ขับผ่านชินจูกุพร้อมภาพเบลอจากการเคลื่อนไหว"),
-                n("e68eac68", "ชื่นชมแสงเหนือ"),
-                n("hc6e6754", "สร้างภาพผู้คนที่กำลังชื่นชมแสงเหนือ"),
-                n("cf59f9f6", "ช่วยฉันเขียนจดหมายสมัครงานที"),
-                n("cd9aeac8", "บอกฉันเกี่ยวกับพาดหัวข่าวของวันนี้"),
-                n("acf2f0be", "แนะนำเกม RPG แนวแฟนตาซี"),
-                n("b9bd12e2", "แก้ไขปัญหา Two Sum ในไพธอน"),
+                n("d07488a6", "Get the Android app"),
+                n("d9cfe70c", "Access advanced Grok features"),
                 n("hf9afab0", "เปิดใช้งาน DeepSearch เพื่อสแกนอินเทอร์เน็ตและ X วิเคราะห์ข้อมูล และส่งมอบคำตอบที่ละเอียดและมีเหตุผลด้วยการค้นหาแบบมีตัวแทนที่รวดเร็ว"),
                 n("ef3b3f04", 'เปิดใช้งานการคิดเพื่อใช้โมเดลการให้เหตุผลของเรา เหมาะสำหรับวิชาคณิตศาสตร์ วิทยาศาสตร์ และการเขียนโค้ดมากที่สุด คุณยังสามารถขอให้ Grok "คิดให้มากขึ้น" เกี่ยวกับคำถามที่อาจต้องใช้พลังสมองเพิ่มขึ้นอีกเล็กน้อย '),
                 n("b43636b8", "ขอแนะนำ Grok 3"),
                 n("j376298c", "Grok 3 แนะนำสองโหมดใหม่เพื่อโต้ตอบกับโมเดลที่ทรงพลังที่สุดของเรา: DeepSearch และการคิด"),
                 n("e3584f8e", "10 ตัวเลือกกลยุทธ์การซื้อขายที่ประสบความสำเร็จมากที่สุดที่ใช้โดยกองทุนป้องกันความเสี่ยงคืออะไร"),
                 n("d91b7b8a", "การสร้างมหาวิทยาลัยในปี 1885 ต้องใช้เงินลงทุนเท่าใด"),
+                n("ia5bef3e", "วันนี้ฉันจะช่วยคุณได้อย่างไรบ้าง"),
+                n("ebea5880", "Recent Conversations"),
                 n("e13591c0", "ตัวอย่างบทสนทนา Grok"),
                 n("c27ca452", "สมาชิก Premium สามารถใช้ Grok ซึ่งเป็น AI ที่ทันสมัยที่สุดบน X ได้แล้ว"),
                 n("b6abc25a", "ขอแนะนำ Grok 2"),
@@ -4908,8 +4885,8 @@
                 n("ff95a9cc", "รหัสวิดีโอ"),
                 n("a97e358e", "ลิงก์วิดีโอ"),
                 n("e10e8b46", "แสดงเฉพาะวิดีโอจาก 100 วันที่ผ่านมา"),
-                n("ba37f6da", "ภาพรวมของวิดีโอ");
-            n("f19846b2", "วิดีโอขนาดย่อ"),
+                n("ba37f6da", "ภาพรวมของวิดีโอ"),
+                n("f19846b2", "วิดีโอขนาดย่อ"),
                 n("ccd6f4a8", "ชื่อวิดีโอ"),
                 n("c8410542", "จำนวนครั้งที่มีการรับชมวิดีโอของคุณ"),
                 n("a532072a", "ผู้ชม"),
@@ -4931,8 +4908,8 @@
                 n("f2f463ea", "ai -startup"),
                 n("a10a357e", 'มีคำว่า "ai" และมีการกดชื่นชอบอย่างน้อย 50 ครั้ง'),
                 n("ca8ed1e8", "ai min_faves:50"),
-                n("i945a3f2", 'มี "ai" และ URL ที่มีคำว่า "grok" อยู่ด้วย'),
-                n("a9348088", "ai url:grok"),
+                n("i945a3f2", 'มี "ai" และ URL ที่มีคำว่า "grok" อยู่ด้วย');
+            n("a9348088", "ai url:grok"),
                 n("b5c3cdbc", 'พูดถึงบัญชี X "grok"'),
                 n("e2634592", "@grok"),
                 n("i88ba038", "ปิดใช้งานการแจ้งเตือน"),
@@ -5866,10 +5843,10 @@
                 n("ae58026a", "เปิดไฟล์ .json ความชอบของแบรนด์เพื่อดูตัวอย่าง"),
                 n("hd0bc1eb", function (e) {
                     return e.name + " กำลังถ่ายทอดสด";
-                });
-            n("bea1f26b", function (e) {
-                return e.name + " ได้ถ่ายทอดสด";
-            }),
+                }),
+                n("bea1f26b", function (e) {
+                    return e.name + " ได้ถ่ายทอดสด";
+                }),
                 n("ab3ee97f", function (e) {
                     return e.screenName + " ไม่ได้ถ่ายทอดสด";
                 }),
@@ -5897,8 +5874,8 @@
                 n("edef4c82", "โพสต์ไปยังชุมชนโดยตรง"),
                 n("a7640df6", "โพสต์ของคุณจะถูกแชร์กับสมาชิกชุมชนและผู้ติดตามของคุณ"),
                 n("h3bb8068", "ดูข้อมูลสำรองเมื่อคุณต้องการ"),
-                n("a709f8f8", "ผู้ดูแลระบบและผู้ดูแลช่วยจัดการชุมชนและติดตามการสนทนา"),
-                n("c8d33380", "รายการใหม่"),
+                n("a709f8f8", "ผู้ดูแลระบบและผู้ดูแลช่วยจัดการชุมชนและติดตามการสนทนา");
+            n("c8d33380", "รายการใหม่"),
                 n("cb6adb10", "ค้นหาชุมชน"),
                 n("df362964", "ค้นหาชุมชน"),
                 n("dfd5031f", function (e) {
@@ -6872,8 +6849,8 @@
                 n("c4fd68da", "นําเสนอประสบการณ์ที่เหมาะสมกับคุณ"),
                 n("c0195168", "เปลี่ยนไอคอนแอปและตัวเลือกการนำทางของคุณ"),
                 n("b6b5dc94", "ยืนยันบัญชีของคุณ"),
-                n("b06db848", "โดดเด่นกว่าคนอื่นบนแพลตฟอร์ม");
-            n("e3e3a97c", "รับส่วนแบ่งรายได้จากโพสต์ของคุณ"),
+                n("b06db848", "โดดเด่นกว่าคนอื่นบนแพลตฟอร์ม"),
+                n("e3e3a97c", "รับส่วนแบ่งรายได้จากโพสต์ของคุณ"),
                 n("f15bc24e", "เพิ่มขีดจำกัด Grok"),
                 n("c4666e1c", "ใช้งาน Grok 3 โมเดลรุ่นล่าสุดของเราได้มากขึ้น"),
                 n("he74ae7a", "ขีดจำกัดการใช้งาน Grok สูงสุด"),
@@ -6895,8 +6872,8 @@
                 n("c3148608", "รับความช่วยเหลือรวดเร็วยิ่งขึ้นเมื่อคุณต้องการ"),
                 n("b485ca6e", "แท็บไฮไลต์"),
                 n("d438955e", "แสดงโพสต์ยอดนิยมของคุณ"),
-                n("f373a352", "ข้อความส่วนตัวที่เข้ารหัสลับแล้ว"),
-                n("g7405aca", "แชทอย่างปลอดภัยด้วยการเข้ารหัสลับจากต้นทางถึงปลายทาง"),
+                n("f373a352", "ข้อความส่วนตัวที่เข้ารหัสลับแล้ว");
+            n("g7405aca", "แชทอย่างปลอดภัยด้วยการเข้ารหัสลับจากต้นทางถึงปลายทาง"),
                 n("j659fa0c", "Grok 3 ที่ดีที่สุด"),
                 n("ibff5694", "ปลดล็อกขีดจำกัดการใช้งานสูงสุด DeepSearch และการคิด พร้อมสิทธิ์การเข้าถึงคุณสมบัติใหม่ๆ ก่อนใคร"),
                 n("i824f4da", "โฆษณาน้อยลง"),
@@ -7848,46 +7825,8 @@
                 n("ddfd6718", "การชำระเงินล้มเหลว"),
                 n("i90ea7d2", "โปรดอัปเดตการเรียกเก็บเงินของคุณโดยทันทีเพื่อรักษาสิทธิประโยชน์ของคุณ"),
                 n("a62359e6", "การตั้งค่าองค์กรที่ได้รับการยืนยัน"),
-                n("ge221b7c", "อัปเกรดระบบสมาชิกองค์กรที่ได้รับการยืนยันเพื่อเข้าถึงพันธมิตรและเครดิตโฆษณาเพิ่มเติม");
-            function t(e, a) {
-                for (var c = 0; c < a.length; c++) {
-                    var n = a[c];
-                    (n.enumerable = n.enumerable || !1),
-                        (n.configurable = !0),
-                        "value" in n && (n.writable = !0),
-                        Object.defineProperty(
-                            e,
-                            ((f = n.key),
-                            (t = void 0),
-                            "symbol" ==
-                            typeof (t = (function (e, a) {
-                                if ("object" != typeof e || null === e) return e;
-                                var c = e[Symbol.toPrimitive];
-                                if (void 0 !== c) {
-                                    var n = c.call(e, a || "default");
-                                    if ("object" != typeof n) return n;
-                                    throw new TypeError("@@toPrimitive must return a primitive value.");
-                                }
-                                return ("string" === a ? String : Number)(e);
-                            })(f, "string"))
-                                ? t
-                                : String(t)),
-                            n,
-                        );
-                }
-                var f, t;
-            }
-            function r(e, a) {
-                return (
-                    (r = Object.setPrototypeOf
-                        ? Object.setPrototypeOf.bind()
-                        : function (e, a) {
-                              return (e.__proto__ = a), e;
-                          }),
-                    r(e, a)
-                );
-            }
-            n("i4dccc18", "การเรียกเก็บเงิน"),
+                n("ge221b7c", "อัปเกรดระบบสมาชิกองค์กรที่ได้รับการยืนยันเพื่อเข้าถึงพันธมิตรและเครดิตโฆษณาเพิ่มเติม"),
+                n("i4dccc18", "การเรียกเก็บเงิน"),
                 n("ec3cd6e4", "จัดการวิธีการชำระเงิน อัปเดตข้อมูลการเรียกเก็บเงิน และตรวจสอบใบแจ้งหนี้ของคุณ"),
                 n("dac61c3c", "การตั้งค่าบัญชี"),
                 n("b6b5fd66", "จัดการบัญชี X ของคุณรวมถึงการเปลี่ยนชื่อผู้ใช้หรือรหัสผ่านของคุณ"),
@@ -7913,8 +7852,46 @@
                     return "ฉันจะอยู่และรับเครดิตโฆษณามูลค่า " + e.totalAmount + " ของฉัน";
                 }),
                 n("hd7d278c", "ไม่เป็นไร ขอบคุณ"),
-                n("jf8a0dea", "ยอดเยี่ยม! เครดิตโฆษณาฟรีใหม่ของคุณจะปรากฏในบัญชีของคุณในรอบการเรียกเก็บเงินถัดไป"),
-                n("ebbb3154", "ปิดและกลับไปที่ X"),
+                n("jf8a0dea", "ยอดเยี่ยม! เครดิตโฆษณาฟรีใหม่ของคุณจะปรากฏในบัญชีของคุณในรอบการเรียกเก็บเงินถัดไป");
+            function t(e, c) {
+                for (var a = 0; a < c.length; a++) {
+                    var n = c[a];
+                    (n.enumerable = n.enumerable || !1),
+                        (n.configurable = !0),
+                        "value" in n && (n.writable = !0),
+                        Object.defineProperty(
+                            e,
+                            ((f = n.key),
+                            (t = void 0),
+                            "symbol" ==
+                            typeof (t = (function (e, c) {
+                                if ("object" != typeof e || null === e) return e;
+                                var a = e[Symbol.toPrimitive];
+                                if (void 0 !== a) {
+                                    var n = a.call(e, c || "default");
+                                    if ("object" != typeof n) return n;
+                                    throw new TypeError("@@toPrimitive must return a primitive value.");
+                                }
+                                return ("string" === c ? String : Number)(e);
+                            })(f, "string"))
+                                ? t
+                                : String(t)),
+                            n,
+                        );
+                }
+                var f, t;
+            }
+            function r(e, c) {
+                return (
+                    (r = Object.setPrototypeOf
+                        ? Object.setPrototypeOf.bind()
+                        : function (e, c) {
+                              return (e.__proto__ = c), e;
+                          }),
+                    r(e, c)
+                );
+            }
+            n("ebbb3154", "ปิดและกลับไปที่ X"),
                 n("j1f68dda", "ขั้นตอนสุดท้าย: คุณแน่ใจหรือไม่ว่าต้องการยกเลิก"),
                 n("c9c3464c", "กำลังดำเนินการยกเลิกระบบสมาชิก"),
                 n("dd3a293c", "ระบบสมาชิกองค์กรที่ได้รับการยืนยันของคุณสิ้นสุดลงแล้ว"),
@@ -8892,8 +8869,8 @@
                 n("ccd32094", "ขณะนี้"),
                 n("abfcce0d", function (e) {
                     return e.amountOfTime + " ที่แล้ว";
-                });
-            n("ae408b76", "คุณรีโพสต์แล้ว"),
+                }),
+                n("ae408b76", "คุณรีโพสต์แล้ว"),
                 n("j355f008", "โพสต์ที่ปักหมุด"),
                 n("habf9678", "ปักหมุดโดยผู้เขียน"),
                 n("db0798ed", function (e) {
@@ -8949,10 +8926,10 @@
                 }),
                 n("d925a4f9", function (e) {
                     return "เหลืออีก " + e.formattedCount + " นาที";
-                }),
-                n("ib15cddb", function (e) {
-                    return "เหลืออีก " + e.formattedCount + " ชั่วโมง";
-                }),
+                });
+            n("ib15cddb", function (e) {
+                return "เหลืออีก " + e.formattedCount + " ชั่วโมง";
+            }),
                 n("db9ed19f", function (e) {
                     return "เหลืออีก " + e.formattedCount + " วัน";
                 }),
@@ -9437,22 +9414,22 @@
                 n("acddd4d4", "สีแดง"),
                 n("cef9b062", "สีน้ำเงินอมเขียว"),
                 n("d9daefca", "สีเทาเข้ม");
-            var d = c(202784),
+            var d = a(202784),
                 b = [],
                 u = {};
             function i(e) {
                 return e;
             }
             var o = (function (e) {
-                var a, c, n, f, o;
+                var c, a, n, f, o;
                 function m() {
                     return e.apply(this, arguments) || this;
                 }
                 return (
-                    (c = e),
-                    ((a = m).prototype = Object.create(c.prototype)),
-                    (a.prototype.constructor = a),
-                    r(a, c),
+                    (a = e),
+                    ((c = m).prototype = Object.create(a.prototype)),
+                    (c.prototype.constructor = c),
+                    r(c, a),
                     (m.prototype.render = function () {
                         return d.createElement.apply(d, this[this.props.$i18n].reduce(this.templateReducer, [d.Fragment, null]));
                     }),
@@ -12840,10 +12817,10 @@
                             key: "templateReducer",
                             get: function () {
                                 var e,
-                                    a = d.Children.toArray(this.props.children),
-                                    c = ((e = this.props.$i18n), b[u[e]] || i);
+                                    c = d.Children.toArray(this.props.children),
+                                    a = ((e = this.props.$i18n), b[u[e]] || i);
                                 return function (e, n, f) {
-                                    return e.concat(n, a[c(f)]);
+                                    return e.concat(n, c[a(f)]);
                                 };
                             },
                         },
@@ -12852,13 +12829,13 @@
                     Object.defineProperty(n, "prototype", { writable: !1 }),
                     m
                 );
-            })(c(674132)._ActualI18NFormatMessage || d.Component);
+            })(a(674132)._ActualI18NFormatMessage || d.Component);
             n("_ActualI18NFormatMessage", o),
                 n("I18NFormatMessage", function (e) {
                     return d.createElement(o, e);
                 });
-            var m = c(495075);
-            c(800694), c(556829), c(530152), c(658610), c(492344), c(663823);
+            var m = a(495075);
+            a(800694), a(556829), a(530152), a(658610), a(492344), a(663823);
             m._validateParameterTypeNumber, m._validateParameterPresence;
             var g = m._numberRound,
                 h = (m._numberFormat, m._numberFormatterFn),
@@ -13204,4 +13181,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/th.ee72c97a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/th.a6e7f8aa.js.map

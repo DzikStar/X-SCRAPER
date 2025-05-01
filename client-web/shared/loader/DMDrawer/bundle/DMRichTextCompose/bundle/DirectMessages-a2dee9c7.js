@@ -2,7 +2,7 @@
     ["shared~loader.DMDrawer~bundle.DMRichTextCompose~bundle.DirectMessages-a2dee9c7"],
     {
         525279: (e) => {
-            e.exports = { queryId: "zr9kubSPFR5Ay3s59UyzmQ", operationName: "BookmarkFolderTimeline", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
+            e.exports = { queryId: "0fuIC8EW-1jNA9IqiGgB7Q", operationName: "BookmarkFolderTimeline", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
         },
         527154: (e) => {
             e.exports = { queryId: "i78YDd0Tza-dV4SYs58kRg", operationName: "BookmarkFoldersSlice", operationType: "query", metadata: { featureSwitches: [], fieldToggles: [] } };
@@ -11,7 +11,7 @@
             e.exports = { queryId: "4KHZvvNbHNf07bsgnL9gWA", operationName: "bookmarkTweetToFolder", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
         342459: (e) => {
-            e.exports = { queryId: "-LGfdImKeQz0xS_jjUwzlA", operationName: "Bookmarks", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
+            e.exports = { queryId: "x6Qk_1nACXELbfKOkON7uA", operationName: "Bookmarks", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
         },
         745735: (e) => {
             e.exports = { queryId: "6Xxqpq8TM_CREYiuof_h5w", operationName: "createBookmarkFolder", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
@@ -241,8 +241,8 @@
                 k = a.n(S),
                 A = a(974829),
                 D = a.n(A),
-                F = a(934309);
-            const I = { result: [], entities: {}, slice_info: {} },
+                I = a(934309);
+            const F = { result: [], entities: {}, slice_info: {} },
                 P = (e, t) => {
                     const a = t?.bookmark_all_delete,
                         n = "Done" === a;
@@ -284,8 +284,8 @@
                         const { bookmarkFolderId: a, tweetId: n } = t;
                         return e.graphQL(D(), { bookmark_collection_id: a, tweet_id: n });
                     },
-                    fetchBookmarksTimeline: ({ count: a, cursor: n }) => e.graphQL(m(), { count: a, cursor: n, includePromotedContent: !0, ...(0, o.d)(t) }, (e, t) => !t?.bookmark_timeline_v2?.timeline).then((e) => e?.bookmark_timeline_v2?.timeline || F.cY),
-                    fetchBookmarkFolderTimeline: ({ bookmark_collection_id: a, cursor: n }) => e.graphQL(u(), { bookmark_collection_id: a, cursor: n, includePromotedContent: !0, ...(0, o.d)(t) }, E).then((e) => e?.bookmark_collection_timeline?.timeline || F.cY),
+                    fetchBookmarksTimeline: ({ count: a, cursor: n }) => e.graphQL(m(), { count: a, cursor: n, includePromotedContent: !0, ...(0, o.d)(t) }, (e, t) => !t?.bookmark_timeline_v2?.timeline).then((e) => e?.bookmark_timeline_v2?.timeline || I.cY),
+                    fetchBookmarkFolderTimeline: ({ bookmark_collection_id: a, cursor: n }) => e.graphQL(u(), { bookmark_collection_id: a, cursor: n, includePromotedContent: !0, ...(0, o.d)(t) }, E).then((e) => e?.bookmark_collection_timeline?.timeline || I.cY),
                     fetchBookmarkFoldersSlice: (t) =>
                         t
                             ? e.graphQL(d(), t, Z).then((e) => {
@@ -296,9 +296,9 @@
                                       const { entities: e, result: t } = (0, n.Fv)(i.items, [l]);
                                       return { entities: e, result: t, slice_info: i.slice_info };
                                   }
-                                  return I;
+                                  return F;
                               })
-                            : Promise.resolve(I),
+                            : Promise.resolve(F),
                 });
         },
         333241: (e, t, a) => {
@@ -326,8 +326,8 @@
                 v = l().hef5960c,
                 S = (0, b.M)((e) => {
                     const { featureSwitches: t } = (0, c.QZ)(),
-                        { onBlock: a, onClose: o, onMute: l, onRemoveFollower: b, onReportUser: S, onShare: k, onUnblock: A, onUnmute: D, user: F } = e,
-                        I = [],
+                        { onBlock: a, onClose: o, onMute: l, onRemoveFollower: b, onReportUser: S, onShare: k, onUnblock: A, onUnmute: D, user: I } = e,
+                        F = [],
                         P = (t, a) => {
                             const { confirm: n, onClose: i } = e;
                             if (t) {
@@ -338,10 +338,10 @@
                             } else a();
                         };
                     !!window.navigator.share &&
-                        !F.protected &&
-                        !F.blocking &&
-                        !F.blocked_by &&
-                        I.push({
+                        !I.protected &&
+                        !I.blocking &&
+                        !I.blocked_by &&
+                        F.push({
                             Icon: i.Z,
                             onClick: () => {
                                 o(), k();
@@ -349,10 +349,10 @@
                             testID: w,
                             text: v,
                         });
-                    !F.blocking &&
-                        I.push({
+                    !I.blocking &&
+                        F.push({
                             ...(0, p.N1)(
-                                F,
+                                I,
                                 () => {
                                     o(), l();
                                 },
@@ -362,26 +362,26 @@
                             ),
                             testID: h,
                         });
-                    F.followed_by &&
-                        I.push({
+                    I.followed_by &&
+                        F.push({
                             ...(0, m.l)({
                                 removeFollowerAction: (e) => {
                                     P(e, b);
                                 },
-                                user: F,
+                                user: I,
                             }),
                             testID: f,
                         }),
-                        I.push((0, u.op)({ blockAction: (e) => P(e, a), isSoftBlockEnabled: t.isTrue("xprofile_blocked_by_view_enabled"), source: u.SC.FOLLOWERS_LIST, testID: _, unblockAction: (e) => P(e, A), user: F })),
-                        I.push({
+                        F.push((0, u.op)({ blockAction: (e) => P(e, a), isSoftBlockEnabled: t.isTrue("xprofile_blocked_by_view_enabled"), source: u.SC.FOLLOWERS_LIST, testID: _, unblockAction: (e) => P(e, A), user: I })),
+                        F.push({
                             Icon: s.default,
                             onClick: () => {
                                 o(), S();
                             },
                             testID: g,
-                            text: y({ screenName: F.screen_name }),
+                            text: y({ screenName: I.screen_name }),
                         });
-                    const Z = I.map(({ Icon: e, onClick: t, testID: a, text: n }) => ({ text: n, onClick: t, Icon: e, testID: a }));
+                    const Z = F.map(({ Icon: e, onClick: t, testID: a, text: n }) => ({ text: n, onClick: t, Icon: e, testID: a }));
                     return n.createElement(r.Z, { items: Z, onCloseRequested: o });
                 });
         },
@@ -488,7 +488,7 @@
         },
         304059: (e, t, a) => {
             "use strict";
-            a.d(t, { Z: () => O });
+            a.d(t, { Z: () => z });
             var n = a(202784),
                 i = a(325686),
                 r = a(537392),
@@ -512,7 +512,7 @@
                 k = a(950822),
                 A = a(303186),
                 D = a(954300);
-            class F extends n.Component {
+            class I extends n.Component {
                 constructor(...e) {
                     super(...e),
                         (this._setVideoRef = (e) => {
@@ -526,20 +526,19 @@
                     return (0, k.Z)("video", { ...o, children: [l.map((e) => n.createElement("source", { key: e.src, src: e.src, type: e.type })), e], ref: this._setVideoRef, style: i });
                 }
             }
-            F.defaultProps = { dataSaverMode: !1, variants: [] };
-            var I = a(959587),
+            I.defaultProps = { dataSaverMode: !1, variants: [] };
+            var F = a(959587),
                 P = a(751170),
                 Z = a(523561),
                 E = a(195560);
             const C = (0, Z.Z)({
                     loader: () =>
                         Promise.all([
-                            a.e("icons.6"),
-                            a.e("icons.25"),
-                            a.e("icons.22"),
                             a.e("icons.0"),
+                            a.e("icons.20"),
                             a.e("modules.common-e907d115"),
                             a.e("modules.common-e019dbda"),
+                            a.e("icons.24"),
                             a.e("modules.audio-6107ac1a"),
                             a.e("modules.audio-b953418a"),
                             a.e("modules.audio-7c51e6a7"),
@@ -550,8 +549,13 @@
                             a.e("modules.audio-e019dbda"),
                             a.e("modules.audio-262c94d4"),
                             a.e("modules.audio-c6fe4ea4"),
+                            a.e("icons.10"),
+                            a.e("icons.14"),
+                            a.e("icons.26"),
+                            a.e("icons.3"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2f4a3d25"),
+                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-209b0896"),
+                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-ce92c4ef"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -650,13 +654,13 @@
                 }
                 render() {
                     const { "aria-label": e, enableGif: t, mediaItem: a, onEdit: d, onEditSensitiveWarning: c, onRemove: u, role: p, style: g, withAltTextLabel: y, withCloseButton: v, withDragAndDropIndicator: S, withEditButton: k, withEditIcon: A, withEditSensitiveWarningButton: D } = this.props,
-                        { mediaContainerSizeStyle: F, playGif: P } = this.state,
+                        { mediaContainerSizeStyle: I, playGif: P } = this.state,
                         Z = a.externalMediaDetails && a.externalMediaDetails.mediaType === f.Re,
                         E = Z || (t && a.mediaFile && a.mediaFile.isGif),
                         C = !!a.mediaFile?.isVideo;
                     return n.createElement(r.ZP, null, ({ windowWidth: t }) => {
                         const a = void 0 !== A ? A : !w.Z.isTwoColumnLayout(t);
-                        return n.createElement(i.Z, { "aria-label": e || x, onLayout: this._handleMediaPreviewLayout, role: p, style: [g, z.cursor, Z && z.gifPlayButton, F] }, this._renderPreview(), Z && !P && n.createElement(o.Z, { "aria-label": B, onPress: this._handleGifClick, size: "small" }), E ? n.createElement(I.ZP, { type: I.AM }) : null, y && !C ? n.createElement(l.Z, { align: "left", altLabel: e }) : null, n.createElement(i.Z, { style: z.editMedia }, S ? n.createElement(s.ZP, { "aria-label": U, hoverLabel: { label: U }, icon: n.createElement(m.default, null), size: "small", type: "onMediaDominantColorFilled" }) : null, k && D ? n.createElement(s.ZP, { "aria-label": L, icon: n.createElement(b.default, { style: z.editSensitiveWarningIcon }), onPress: c, size: "small", type: "onMediaDominantColorFilled" }) : null, k ? n.createElement(s.ZP, { "aria-label": T, icon: a ? n.createElement(_.default, null) : void 0, onPress: d, size: a ? "xSmall" : "small", type: "onMediaDominantColorFilled" }, a ? void 0 : M) : null), v ? n.createElement(s.ZP, { "aria-label": N, hoverLabel: { label: R }, icon: n.createElement(h.default, null), onPress: u, size: "small", style: z.buttonRight, type: "onMediaDominantColorFilled" }) : null);
+                        return n.createElement(i.Z, { "aria-label": e || x, onLayout: this._handleMediaPreviewLayout, role: p, style: [g, O.cursor, Z && O.gifPlayButton, I] }, this._renderPreview(), Z && !P && n.createElement(o.Z, { "aria-label": B, onPress: this._handleGifClick, size: "small" }), E ? n.createElement(F.ZP, { type: F.AM }) : null, y && !C ? n.createElement(l.Z, { align: "left", altLabel: e }) : null, n.createElement(i.Z, { style: O.editMedia }, S ? n.createElement(s.ZP, { "aria-label": U, hoverLabel: { label: U }, icon: n.createElement(m.default, null), size: "small", type: "onMediaDominantColorFilled" }) : null, k && D ? n.createElement(s.ZP, { "aria-label": L, icon: n.createElement(b.default, { style: O.editSensitiveWarningIcon }), onPress: c, size: "small", type: "onMediaDominantColorFilled" }) : null, k ? n.createElement(s.ZP, { "aria-label": T, icon: a ? n.createElement(_.default, null) : void 0, onPress: d, size: a ? "xSmall" : "small", type: "onMediaDominantColorFilled" }, a ? void 0 : M) : null), v ? n.createElement(s.ZP, { "aria-label": N, hoverLabel: { label: R }, icon: n.createElement(h.default, null), onPress: u, size: "small", style: O.buttonRight, type: "onMediaDominantColorFilled" }) : null);
                     });
                 }
                 _renderPreview() {
@@ -671,7 +675,7 @@
                 _renderGifPreview(e, t) {
                     const { playGif: a } = this.state,
                         r = { uri: a ? e : t };
-                    return n.createElement(i.Z, { onClick: this._handleGifClick, style: d.default.absoluteFill }, n.createElement(c.Z, { resizeMode: "cover", source: r, style: z.video }));
+                    return n.createElement(i.Z, { onClick: this._handleGifClick, style: d.default.absoluteFill }, n.createElement(c.Z, { resizeMode: "cover", source: r, style: O.video }));
                 }
                 _renderImagePreview() {
                     const { borderRadius: e, enableGif: t, imageResizeMode: a, mediaItem: i, onClick: r } = this.props;
@@ -689,13 +693,13 @@
                     }
                     {
                         const a = (0, y.TO)(i.fileHandle) ? [{ content_type: e, url: t }] : [];
-                        return n.createElement(F, { autoPlay: !1, controls: !0, getVideoRef: this._setVideoRef, loop: !0, muted: !0, onPause: this._handleVideoOnPause, onPlay: this._handleVideoOnPlay, playsInline: !0, poster: i instanceof S.ZP ? i.thumbnail : "", style: z.video, variants: a }, o?.upload?.mediaFile instanceof v.ZP ? n.createElement("track", { default: !0, kind: "subtitles", label: o.displayName, src: o.upload.mediaFile.vtt, srcLang: o.lang }) : null);
+                        return n.createElement(I, { autoPlay: !1, controls: !0, getVideoRef: this._setVideoRef, loop: !0, muted: !0, onPause: this._handleVideoOnPause, onPlay: this._handleVideoOnPlay, playsInline: !0, poster: i instanceof S.ZP ? i.thumbnail : "", style: O.video, variants: a }, o?.upload?.mediaFile instanceof v.ZP ? n.createElement("track", { default: !0, kind: "subtitles", label: o.displayName, src: o.upload.mediaFile.vtt, srcLang: o.lang }) : null);
                     }
                 }
             }
             (V.contextType = g.rC), (V.defaultProps = { enableGif: !0, withCloseButton: !0, withAltTextLabel: !1, withEditButton: !1, withEditSensitiveWarningButton: !1 });
-            const z = d.default.create((e) => ({ buttonLeft: { position: "absolute", start: e.spaces.space4, top: e.spaces.space4 }, buttonRight: { position: "absolute", end: e.spaces.space4, top: e.spaces.space4 }, cursor: { cursor: "pointer" }, editSensitiveWarningIcon: { color: e.colors.primary }, editMedia: { display: "flex", start: e.spaces.space4, top: e.spaces.space4, gap: e.spaces.space4, flexDirection: "row", position: "absolute" }, editImage: { bottom: e.spaces.space4 }, editVideo: { top: e.spaces.space4 }, gifPlayButton: { alignItems: "center", justifyContent: "center" }, video: { height: "100%", width: "100%" } })),
-                O = V;
+            const O = d.default.create((e) => ({ buttonLeft: { position: "absolute", start: e.spaces.space4, top: e.spaces.space4 }, buttonRight: { position: "absolute", end: e.spaces.space4, top: e.spaces.space4 }, cursor: { cursor: "pointer" }, editSensitiveWarningIcon: { color: e.colors.primary }, editMedia: { display: "flex", start: e.spaces.space4, top: e.spaces.space4, gap: e.spaces.space4, flexDirection: "row", position: "absolute" }, editImage: { bottom: e.spaces.space4 }, editVideo: { top: e.spaces.space4 }, gifPlayButton: { alignItems: "center", justifyContent: "center" }, video: { height: "100%", width: "100%" } })),
+                z = V;
         },
         46705: (e, t, a) => {
             "use strict";
@@ -856,11 +860,11 @@
                 D = (0, f.Z)()
                     .propsFromState(() => ({ card: k, legacyAndUnifiedCard: A }))
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, h.zr)("COMPOSER_CARD_PREVIEW"), fetchCardPreviewIfNeeded: g.Z.fetchCardPreviewIfNeeded, updateDMComposer: w.G6, updateTweetComposer: v.zi })),
-                F = d().f6fec9f6,
-                I = /^https?:\/\//i,
+                I = d().f6fec9f6,
+                F = /^https?:\/\//i,
                 P = (e) => {
                     const t = (0, m.Z)(e);
-                    if (t.length) return t.map((e) => (!I.test(e) && `http://${e}`) || e);
+                    if (t.length) return t.map((e) => (!F.test(e) && `http://${e}`) || e);
                 };
             class Z extends n.Component {
                 constructor(e, t) {
@@ -895,7 +899,7 @@
                         { viewerUserId: a } = this.context;
                     if (e || !a) return null;
                     const i = this._getCards();
-                    return i ? n.createElement(r.Z, { style: t }, n.createElement(_.default, { card: i.legacyCard, cardContext: { tweetUserId: a, tweetId: "0" }, isInteractive: !1, preventVideoPlayback: !0, unifiedCard: i.unifiedCard }), n.createElement(o.ZP, { "aria-label": F, icon: n.createElement(c.default, null), onPress: this._handleCardPreviewDismissal, size: "xSmall", style: E.closeButton, type: "onMediaDominantColorFilled" })) : null;
+                    return i ? n.createElement(r.Z, { style: t }, n.createElement(_.default, { card: i.legacyCard, cardContext: { tweetUserId: a, tweetId: "0" }, isInteractive: !1, preventVideoPlayback: !0, unifiedCard: i.unifiedCard }), n.createElement(o.ZP, { "aria-label": I, icon: n.createElement(c.default, null), onPress: this._handleCardPreviewDismissal, size: "xSmall", style: E.closeButton, type: "onMediaDominantColorFilled" })) : null;
                 }
                 _getCards() {
                     const { card: e, legacyAndUnifiedCard: t } = this.props,
@@ -1077,17 +1081,17 @@
                         { gifUrl: t, provider: a } = this.props,
                         { display_name: i, name: r } = a,
                         l = A[r];
-                    return l ? n.createElement(n.Fragment, null, e ? n.createElement(w, { description: v({ providerName: i }), headerText: y, link: t, onCancel: this._handleCopyLinkSheetCancel }) : null, n.createElement(o.ZP, { align: "center", color: "gray700", style: [F.root, F.verticalAlign] }, n.createElement(u().I18NFormatMessage, { $i18n: "e2e6ea0d" }, this._renderAttribution(i, l)))) : null;
+                    return l ? n.createElement(n.Fragment, null, e ? n.createElement(w, { description: v({ providerName: i }), headerText: y, link: t, onCancel: this._handleCopyLinkSheetCancel }) : null, n.createElement(o.ZP, { align: "center", color: "gray700", style: [I.root, I.verticalAlign] }, n.createElement(u().I18NFormatMessage, { $i18n: "e2e6ea0d" }, this._renderAttribution(i, l)))) : null;
                 }
                 _renderAttribution(e, t) {
-                    return n.createElement(l.Z, { interactiveStyles: null, renderMenu: this._renderMenu }, n.createElement(o.ZP, { style: F.verticalAlign, weight: "bold", withInteractiveStyling: !0 }, n.createElement(s.Z, { source: { uri: t }, style: F.image }), n.createElement(o.ZP, null, e.toUpperCase())));
+                    return n.createElement(l.Z, { interactiveStyles: null, renderMenu: this._renderMenu }, n.createElement(o.ZP, { style: I.verticalAlign, weight: "bold", withInteractiveStyling: !0 }, n.createElement(s.Z, { source: { uri: t }, style: I.image }), n.createElement(o.ZP, null, e.toUpperCase())));
                 }
             }
-            const F = d.default.create((e) => ({ button: { marginStart: e.spaces.space12 }, image: { display: "inline-block", height: e.spaces.space16, marginHorizontal: e.spaces.space4, width: e.spaces.space16 }, root: { marginHorizontal: e.spaces.space8 }, verticalAlign: { display: "flex", alignItems: "center", flexDirection: "row" }, alignLeft: { textAlign: "start" } })),
-                I = D;
+            const I = d.default.create((e) => ({ button: { marginStart: e.spaces.space12 }, image: { display: "inline-block", height: e.spaces.space16, marginHorizontal: e.spaces.space4, width: e.spaces.space16 }, root: { marginHorizontal: e.spaces.space8 }, verticalAlign: { display: "flex", alignItems: "center", flexDirection: "row" }, alignLeft: { textAlign: "start" } })),
+                F = D;
             var P = a(668214),
                 Z = a(601576);
-            const E = (0, P.Z)().propsFromActions(() => ({ addToast: Z.fz }))(({ addToast: e, gifUrl: t, provider: a }) => n.createElement(I, { addToast: e, gifUrl: t, provider: a }));
+            const E = (0, P.Z)().propsFromActions(() => ({ addToast: Z.fz }))(({ addToast: e, gifUrl: t, provider: a }) => n.createElement(F, { addToast: e, gifUrl: t, provider: a }));
         },
         170371: (e, t, a) => {
             "use strict";
@@ -1174,7 +1178,7 @@
         },
         62857: (e, t, a) => {
             "use strict";
-            a.d(t, { Z: () => I });
+            a.d(t, { Z: () => F });
             var n = a(807896),
                 i = a(202784),
                 r = a(476984),
@@ -1231,7 +1235,7 @@
                     }))
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, f.zr)("USERS_LIST_CONTAINER"), fetchUsersIfNeeded: y.ZP.fetchManyIfNeeded })),
                 D = s().f5b426c2;
-            class F extends i.Component {
+            class I extends i.Component {
                 constructor(...e) {
                     super(...e),
                         (this.state = { allUsersUnavailable: !1 }),
@@ -1273,7 +1277,7 @@
                     );
                 }
             }
-            const I = A(F);
+            const F = A(I);
         },
         246851: (e, t, a) => {
             "use strict";
@@ -1291,4 +1295,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.DMRichTextCompose~bundle.DirectMessages-a2dee9c7.307924fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.DMRichTextCompose~bundle.DirectMessages-a2dee9c7.674f5dfa.js.map

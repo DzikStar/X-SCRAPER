@@ -4162,6 +4162,8 @@
                 t("e9b6d404", "A quines eines de cerca pot accedir Grok?"),
                 t("h15dce2e", "Configuració avançada"),
                 t("ff9dc268", "Edita la sol·licitud"),
+                t("acb2baa0", "Create Images"),
+                t("h30fd372", "Try Voice Mode"),
                 t("e9fcdd0c", "Demana-li a Grok que cerqui de manera enèrgica al web"),
                 t("fc4e8aba", "Demana-li a Grok que raoni pas a pas"),
                 t("e4ae6abe", "Demana a Grok que transformi la teva imatge"),
@@ -4331,41 +4333,16 @@
                 t("g01599b6", "Resposta 1"),
                 t("e02694e0", "Resposta 2"),
                 t("h6867fcc", "Prefereixo aquesta resposta"),
-                t("b2175228", "Grok per a Android ja està disponible"),
-                t("d2d8650c", "Passa't a la nova aplicació independent i gaudeix de la millor experiència amb Grok"),
-                t("ia5bef3e", "Com et puc ajudar?"),
-                t("ge683598", "Pregunta el que vulguis a Grok..."),
-                t("fef25c88", "Prova Grok de manera gratuïta ara"),
-                t("fb172aa8", "Ja hi ha disponible una subscripció gratuïta a Grok a la teva regió. Xateja, genera imatges i analitza fotos. S'apliquen límits."),
-                t("d7af4f40", "Genera una imatge d'una galàxia"),
-                t("gcb6c0be", "Grok pot cometre errors. Verifica les seves respostes."),
-                t("cb88fd82", "Fas servir la versió gratuïta de Grok."),
-                t("g27a5314", "Per començar a utilitzar Grok, afegeix un número de telèfon al compte."),
-                t("bdd84568", "El teu compte és massa nou per utilitzar Grok. Torna-ho a provar més tard."),
-                t("a9109a94", "Un poble solarpunk"),
-                t("g986f7a4", "Genera la imatge d'un poble solarpunk"),
-                t("ad685264", "Mont Fuji"),
-                t("hdb08284", "Fes una foto amb estil d'anime del mont Fuji"),
-                t("a986ae84", "Un gat volador"),
-                t("a14b556a", "Genera una imatge d'un gat volador"),
-                t("gc16b670", "Un robot en un camp de flors"),
-                t("d5b8fa44", "Genera una imatge d'un robot en un camp de flors"),
-                t("da196ff6", "Un astronauta a Mart"),
-                t("ae3979cc", "Fes un retrat d'un astronauta a Mart"),
-                t("a682460e", "Un descapotable a tota velocitat"),
-                t("e03e5514", "Fes una foto d'un Tesla descapotable circulant per Shinjuku difuminat pel moviment"),
-                t("e68eac68", "Admirar l'aurora boreal"),
-                t("hc6e6754", "Fes una foto d'una persona que contempla l'aurora boreal"),
-                t("cf59f9f6", "Ajuda'm a escriure una carta de presentació"),
-                t("cd9aeac8", "Dona'm els titulars d'avui"),
-                t("acf2f0be", "Recomana'm un joc de rol de fantasia"),
-                t("b9bd12e2", "Resol el problema de Two Sum a Python"),
+                t("d07488a6", "Get the Android app"),
+                t("d9cfe70c", "Access advanced Grok features"),
                 t("hf9afab0", "Habilita DeepSearch per fer cerques a Internet i X, analitzar informació i oferir respostes detallades i raonades amb una cerca ràpida i autònoma."),
                 t("ef3b3f04", 'Habilita l\'opció Raonament per utilitzar el nostre model de raonament. És ideal per a matemàtiques, ciències i programació. També pots demanar a Grok "Raona més" per a qualsevol pregunta que pugui requerir una mica més de capacitat intel·lectual. '),
                 t("b43636b8", "Et presentem Grok 3"),
                 t("j376298c", "Grok 3 introdueix dos nous modes per interactuar amb el nostre model més potent: DeepSearch i Raonament."),
                 t("e3584f8e", "Quines són les 10 millors estratègies de negociació d'opcions que utilitzen els fons de cobertura"),
                 t("d91b7b8a", "Quant costaria construir una universitat el 1885?"),
+                t("ia5bef3e", "Com et puc ajudar?"),
+                t("ebea5880", "Recent Conversations"),
                 t("e13591c0", "Exemple de conversa amb Grok"),
                 t("c27ca452", "Ara, els subscriptors de Premium poden fer servir la nostra IA més avançada, Grok, a X."),
                 t("b6abc25a", "Et presentem Grok 2"),
@@ -4909,8 +4886,8 @@
                 t("ff95a9cc", "Identificador del vídeo"),
                 t("a97e358e", "Enllaç del vídeo"),
                 t("e10e8b46", "Només es mostren els vídeos dels últims 100 dies."),
-                t("ba37f6da", "Informació general sobre el vídeo");
-            t("f19846b2", "Miniatura del vídeo"),
+                t("ba37f6da", "Informació general sobre el vídeo"),
+                t("f19846b2", "Miniatura del vídeo"),
                 t("ccd6f4a8", "Títol del vídeo"),
                 t("c8410542", "Nombre de vegades que s'ha vist el vídeo."),
                 t("a532072a", "Espectadors"),
@@ -4932,8 +4909,8 @@
                 t("f2f463ea", "ia -empresa emergent"),
                 t("a10a357e", 'conté "ia" i té almenys 50 m\'agrada'),
                 t("ca8ed1e8", "ai min_faves:50"),
-                t("i945a3f2", 'conté "ia" i un URL que inclou la paraula "grok"'),
-                t("a9348088", "ai url:grok"),
+                t("i945a3f2", 'conté "ia" i un URL que inclou la paraula "grok"');
+            t("a9348088", "ai url:grok"),
                 t("b5c3cdbc", 'menciona el compte d\'X "grok"'),
                 t("e2634592", "@grok"),
                 t("i88ba038", "Alerta desactivada"),
@@ -5867,10 +5844,10 @@
                 t("ae58026a", "Obre un fitxer .json d'agradament de marca per previsualitzar-lo"),
                 t("hd0bc1eb", function (e) {
                     return e.name + " és en directe";
-                });
-            t("bea1f26b", function (e) {
-                return e.name + " ha emès en directe";
-            }),
+                }),
+                t("bea1f26b", function (e) {
+                    return e.name + " ha emès en directe";
+                }),
                 t("ab3ee97f", function (e) {
                     return e.screenName + " no està en directe";
                 }),
@@ -5898,8 +5875,8 @@
                 t("edef4c82", "Publica directament a una Comunitat"),
                 t("a7640df6", "Les teves publicacions es comparteixen amb els membres de la comunitat i els teus seguidors."),
                 t("h3bb8068", "Obtén suport quan el necessitis"),
-                t("a709f8f8", "Els administradors i moderadors ajuden a gestionar les Comunitats i a portar les converses pel bon camí."),
-                t("c8d33380", "Elements nous"),
+                t("a709f8f8", "Els administradors i moderadors ajuden a gestionar les Comunitats i a portar les converses pel bon camí.");
+            t("c8d33380", "Elements nous"),
                 t("cb6adb10", "Descobreix Comunitats"),
                 t("df362964", "Cerca Comunitats"),
                 t("dfd5031f", function (e) {
@@ -6873,8 +6850,8 @@
                 t("c4fd68da", "Personalitza la teva experiència"),
                 t("c0195168", "Canvia la icona de l'aplicació i les opcions de navegació"),
                 t("b6b5dc94", "Verifica't"),
-                t("b06db848", "Distingeix-te dels altres a la plataforma");
-            t("e3e3a97c", "Guanya una part dels ingressos de les teves publicacions"),
+                t("b06db848", "Distingeix-te dels altres a la plataforma"),
+                t("e3e3a97c", "Guanya una part dels ingressos de les teves publicacions"),
                 t("f15bc24e", "Els límits de Grok s'han ampliat"),
                 t("c4666e1c", "Més ús de Grok 3, el nostre model més recent"),
                 t("he74ae7a", "Límits d'ús màxim de Grok"),
@@ -6896,8 +6873,8 @@
                 t("c3148608", "Rep ajuda més ràpidament quan la necessitis"),
                 t("b485ca6e", "Pestanya Destacats"),
                 t("d438955e", "Presenta les teves publicacions més populars"),
-                t("f373a352", "Missatges directes encriptats"),
-                t("g7405aca", "Xateja de forma segura amb l'encriptació d'extrem a extrem"),
+                t("f373a352", "Missatges directes encriptats");
+            t("g7405aca", "Xateja de forma segura amb l'encriptació d'extrem a extrem"),
                 t("j659fa0c", "El millor de Grok 3"),
                 t("ibff5694", "Accedeix als límits d'ús màxim, DeepSearch i Pensa, i accés anticipat a noves funcions"),
                 t("i824f4da", "Menys anuncis"),
@@ -7849,7 +7826,34 @@
                 t("ddfd6718", "Ha fallat el pagament"),
                 t("i90ea7d2", "Actualitza la facturació urgentment per conservar els avantatges."),
                 t("a62359e6", "Configuració d'organització verificada"),
-                t("ge221b7c", "Actualitza a la subscripció d'Organització verificada per accedir a l'opció d'afiliats i a més crèdits per a anuncis.");
+                t("ge221b7c", "Actualitza a la subscripció d'Organització verificada per accedir a l'opció d'afiliats i a més crèdits per a anuncis."),
+                t("i4dccc18", "Facturació"),
+                t("ec3cd6e4", "Gestiona el mètode de pagament, modifica les dades de facturació i consulta les factures."),
+                t("dac61c3c", "Configuració del compte"),
+                t("b6b5fd66", "Gestiona el teu compte de X i fes canvis, per exemple, al nom d'usuari o la contrasenya."),
+                t("hb9c4a1c", "Preguntes, informes d'errors i comentaris"),
+                t("c674f5b4", "Configura el pagament de factures"),
+                t("i8237e66", "Passa del pagament amb targeta de crèdit a la facturació mitjançant transferència bancària."),
+                t("hebd348a", "Configura com s'utilitzen els anuncis per patrocinar feines des del portal Contractació."),
+                t("ib5e6f90", "Patrocini de feines"),
+                t("id720215", "Contractació"),
+                t("dd59f146", "Compte d'anuncis per patrocinar feines"),
+                t("e7e36818", "Els comptes publicitaris poden promocionar feines quan s'han configurat completament amb una font financera."),
+                t("c28566e0", "Afegeix el compte"),
+                t("c80160d3", "Publicitat"),
+                t("ff0edac0", "Segur que vols cancel·lar la subscripció?"),
+                t("h2ac0348", "No, vull tornar enrere"),
+                t("dbf9667e", "N'estic segur"),
+                t("j7592572", "Gir de 180 graus"),
+                t("ee778942", "Semàfors"),
+                t("fdd57981", function (e) {
+                    return "Et volem oferir " + e.totalAmount + " $ de crèdit gratuït per a publicitat d'un sol ús.";
+                }),
+                t("i032a231", function (e) {
+                    return "Em quedaré i reclamaré el crèdit per a publicitat de " + e.totalAmount;
+                }),
+                t("hd7d278c", "No, gràcies"),
+                t("jf8a0dea", "Genial! El teu nou crèdit gratuït per a publicitat es mostrarà al compte el proper cicle de facturació.");
             function s(e, a) {
                 for (var i = 0; i < a.length; i++) {
                     var t = a[i];
@@ -7888,34 +7892,7 @@
                     n(e, a)
                 );
             }
-            t("i4dccc18", "Facturació"),
-                t("ec3cd6e4", "Gestiona el mètode de pagament, modifica les dades de facturació i consulta les factures."),
-                t("dac61c3c", "Configuració del compte"),
-                t("b6b5fd66", "Gestiona el teu compte de X i fes canvis, per exemple, al nom d'usuari o la contrasenya."),
-                t("hb9c4a1c", "Preguntes, informes d'errors i comentaris"),
-                t("c674f5b4", "Configura el pagament de factures"),
-                t("i8237e66", "Passa del pagament amb targeta de crèdit a la facturació mitjançant transferència bancària."),
-                t("hebd348a", "Configura com s'utilitzen els anuncis per patrocinar feines des del portal Contractació."),
-                t("ib5e6f90", "Patrocini de feines"),
-                t("id720215", "Contractació"),
-                t("dd59f146", "Compte d'anuncis per patrocinar feines"),
-                t("e7e36818", "Els comptes publicitaris poden promocionar feines quan s'han configurat completament amb una font financera."),
-                t("c28566e0", "Afegeix el compte"),
-                t("c80160d3", "Publicitat"),
-                t("ff0edac0", "Segur que vols cancel·lar la subscripció?"),
-                t("h2ac0348", "No, vull tornar enrere"),
-                t("dbf9667e", "N'estic segur"),
-                t("j7592572", "Gir de 180 graus"),
-                t("ee778942", "Semàfors"),
-                t("fdd57981", function (e) {
-                    return "Et volem oferir " + e.totalAmount + " $ de crèdit gratuït per a publicitat d'un sol ús.";
-                }),
-                t("i032a231", function (e) {
-                    return "Em quedaré i reclamaré el crèdit per a publicitat de " + e.totalAmount;
-                }),
-                t("hd7d278c", "No, gràcies"),
-                t("jf8a0dea", "Genial! El teu nou crèdit gratuït per a publicitat es mostrarà al compte el proper cicle de facturació."),
-                t("ebbb3154", "Tanca i torna a X"),
+            t("ebbb3154", "Tanca i torna a X"),
                 t("j1f68dda", "Últim pas: segur que vols cancel·lar?"),
                 t("c9c3464c", "Cancel·lació de la subscripció en curs"),
                 t("dd3a293c", "La teva subscripció d'Organització verificada ha finalitzat."),
@@ -8893,8 +8870,8 @@
                 t("ccd32094", "Ara"),
                 t("abfcce0d", function (e) {
                     return "Fa " + e.amountOfTime;
-                });
-            t("ae408b76", "Ho has republicat"),
+                }),
+                t("ae408b76", "Ho has republicat"),
                 t("j355f008", "Publicació fixada"),
                 t("habf9678", "Fixat per l'autor"),
                 t("db0798ed", function (e) {
@@ -8950,10 +8927,10 @@
                 }),
                 t("d925a4f9", function (e) {
                     return "Qued" + r(e.count, "a " + e.formattedCount + " minut", "en " + e.formattedCount + " minuts");
-                }),
-                t("ib15cddb", function (e) {
-                    return "Qued" + r(e.count, "a " + e.formattedCount + " hora", "en " + e.formattedCount + " hores");
-                }),
+                });
+            t("ib15cddb", function (e) {
+                return "Qued" + r(e.count, "a " + e.formattedCount + " hora", "en " + e.formattedCount + " hores");
+            }),
                 t("db9ed19f", function (e) {
                     return "Qued" + r(e.count, "a " + e.formattedCount + " dia", "en " + e.formattedCount + " dies");
                 }),
@@ -13206,4 +13183,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ca.ef86a1aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ca.1fb62a0a.js.map

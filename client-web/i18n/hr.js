@@ -4169,6 +4169,8 @@
                 o("e9b6d404", "Kojim alatima za pretraživanje Grok treba imati pristup?"),
                 o("h15dce2e", "Napredne postavke"),
                 o("ff9dc268", "Uredi upit"),
+                o("acb2baa0", "Create Images"),
+                o("h30fd372", "Try Voice Mode"),
                 o("e9fcdd0c", "Pitajte značajku Grok da agresivno pretraži web"),
                 o("fc4e8aba", "Pitajte značajku Grok da navede razloge korak po korak"),
                 o("e4ae6abe", "Pitajte Groka da preobrazi vašu sliku"),
@@ -4338,41 +4340,16 @@
                 o("g01599b6", "Odgovor 1"),
                 o("e02694e0", "Odgovor 2"),
                 o("h6867fcc", "Preferiram ovaj odgovor"),
-                o("b2175228", "Stigao je Grok za Android"),
-                o("d2d8650c", "Najbolji doživljaj Groka u našoj novoj samostalnoj aplikaciji"),
-                o("ia5bef3e", "Kako vam danas mogu pomoći?"),
-                o("ge683598", "Pitajte Groka bilo što..."),
-                o("fef25c88", "Besplatno isprobajte Grok odmah"),
-                o("fb172aa8", "Besplatna razina značajke Grok sada je dostupna u vašoj regiji. Razgovarajte, generirajte slike i analizirajte fotografije. Primjenjuju se ograničenja."),
-                o("d7af4f40", "Generirajte sliku galaksije"),
-                o("gcb6c0be", "Grok može činiti pogreške. Provjerite njegove rezultate."),
-                o("cb88fd82", "Upotrebljavate besplatnu verziju značajke Grok."),
-                o("g27a5314", "Da biste počeli upotrebljavati značajku Grok, dodajte telefonski broj svom računu."),
-                o("bdd84568", "Vaš je račun previše nov za upotrebu značajke Grok. Pokušajte ponovno kasnije."),
-                o("a9109a94", "Solarpunk selo"),
-                o("g986f7a4", "Generiraj sliku Solarpunk sela"),
-                o("ad685264", "Planina Fuji"),
-                o("hdb08284", "Izradite sliku planine Fiji u anime stilu"),
-                o("a986ae84", "Leteća mačka"),
-                o("a14b556a", "Generiraj sliku leteće mačke"),
-                o("gc16b670", "Robot u polju cvijeća"),
-                o("d5b8fa44", "Generiraj sliku robota u polju cvijeća"),
-                o("da196ff6", "Astronaut na Marsu"),
-                o("ae3979cc", "Izradite portret astronauta na Marsu"),
-                o("a682460e", "Brzi Roadster"),
-                o("e03e5514", "Izradite sliku automobila Tesla Roadster koji vozi kroz Shinjuku uz zamućenje pokreta"),
-                o("e68eac68", "Divljenje polarnoj svjetlosti"),
-                o("hc6e6754", "Izradite sliku osobe koja se divi polarnoj svjetlosti"),
-                o("cf59f9f6", "Pomogni mi napisati motivacijsko pismo"),
-                o("cd9aeac8", "Pokaži mi današnje naslove"),
-                o("acf2f0be", "Preporučite RPG igru fantazije"),
-                o("b9bd12e2", "Riješite problem dva zbroja u programu Python"),
+                o("d07488a6", "Get the Android app"),
+                o("d9cfe70c", "Access advanced Grok features"),
                 o("hf9afab0", "Omogućite DeepSearch za skeniranje interneta i platforme X, analizu informacija i pružanje detaljnih, dobro obrazloženih odgovora brzim i sistematičnim pretraživanjem."),
                 o("ef3b3f04", 'Omogućite Think i uživajte u našem modelu rasuđivanja. Najbolje funkcionira u rješavanju matematičkih zadataka, znanstvenom promišljanju i pisanju koda. Također možete zamoliti Groka da "podrobnije razmisli uz Think" o bilo kojem pitanju koje bi moglo zahtijevati dublje promišljanje. '),
                 o("b43636b8", "Stigao je Grok 3"),
                 o("j376298c", "Grok 3 donosi dva nova načina za interakciju s našim najmoćnijim modelom: DeepSearch i Think."),
                 o("e3584f8e", "Kojih 10 najuspješnijih strategija trgovanja opcijama koriste hedge fondovi"),
                 o("d91b7b8a", "Koliko bi koštala izgradnja sveučilišta 1885. godine?"),
+                o("ia5bef3e", "Kako vam danas mogu pomoći?"),
+                o("ebea5880", "Recent Conversations"),
                 o("e13591c0", "Primjer razgovora s Grokom"),
                 o("c27ca452", "Korisnici pretplate Premium sada mogu na platformi X upotrebljavati Grok, našu najnapredniju umjetnu inteligenciju."),
                 o("b6abc25a", "Stigao je Grok 2"),
@@ -4916,8 +4893,8 @@
                 o("ff95a9cc", "ID videozapisa"),
                 o("a97e358e", "Veza na videozapis"),
                 o("e10e8b46", "Prikazuju se samo videozapisi od proteklih 100 dana."),
-                o("ba37f6da", "Pregled videozapisa");
-            o("f19846b2", "Sličica videozapisa"),
+                o("ba37f6da", "Pregled videozapisa"),
+                o("f19846b2", "Sličica videozapisa"),
                 o("ccd6f4a8", "Naslov videozapisa"),
                 o("c8410542", "Broj pregleda vašeg videozapisa"),
                 o("a532072a", "Gledatelji"),
@@ -4939,8 +4916,8 @@
                 o("f2f463ea", "ai-pokretanje"),
                 o("a10a357e", "sadrži „ai” i ima najmanje 50 oznaka „sviđa mi se”"),
                 o("ca8ed1e8", "ai min_faves:50"),
-                o("i945a3f2", "sadrži „ai” i URL koji sadrži riječ „grok”"),
-                o("a9348088", "ai url:grok"),
+                o("i945a3f2", "sadrži „ai” i URL koji sadrži riječ „grok”");
+            o("a9348088", "ai url:grok"),
                 o("b5c3cdbc", "spominjanje računa za X „grok”"),
                 o("e2634592", "@grok"),
                 o("i88ba038", "Upozorenje onemogućeno"),
@@ -5874,10 +5851,10 @@
                 o("ae58026a", "Otvorite .json datoteku brendirane oznake „sviđa mi se” koju želite pretpregledati"),
                 o("hd0bc1eb", function (a) {
                     return a.name + " emitira uživo";
-                });
-            o("bea1f26b", function (a) {
-                return a.name + " emitirao/la je uživo";
-            }),
+                }),
+                o("bea1f26b", function (a) {
+                    return a.name + " emitirao/la je uživo";
+                }),
                 o("ab3ee97f", function (a) {
                     return a.screenName + " ne emitira uživo";
                 }),
@@ -5905,8 +5882,8 @@
                 o("edef4c82", "Objava izravno u Zajednicu"),
                 o("a7640df6", "Vaše se objave dijele s članovima Zajednice i osobama koje vas prate."),
                 o("h3bb8068", "Zatražite pojačanje kada vam je potrebno"),
-                o("a709f8f8", "Administratori i moderatori mogu pomoći pri upravljanju zajednicama i održavati razgovor u okviru teme."),
-                o("c8d33380", "Nove stavke"),
+                o("a709f8f8", "Administratori i moderatori mogu pomoći pri upravljanju zajednicama i održavati razgovor u okviru teme.");
+            o("c8d33380", "Nove stavke"),
                 o("cb6adb10", "Otkrijte zajednice"),
                 o("df362964", "Pronađi Zajednice"),
                 o("dfd5031f", function (a) {
@@ -6880,8 +6857,8 @@
                 o("c4fd68da", "Prilagodba sučelja"),
                 o("c0195168", "Promijenite ikonu aplikacije i opcije navigacije"),
                 o("b6b5dc94", "Provjerite svoju autentičnost"),
-                o("b06db848", "Istaknite se među ostalima na platformi");
-            o("e3e3a97c", "Zarađujte udio u prihodu od objava"),
+                o("b06db848", "Istaknite se među ostalima na platformi"),
+                o("e3e3a97c", "Zarađujte udio u prihodu od objava"),
                 o("f15bc24e", "Povećana ograničenja značajke Grok"),
                 o("c4666e1c", "Veće mogućnosti upotrebe značajke Grok 3, našeg najnovijeg modela"),
                 o("he74ae7a", "Najveća ograničenja upotrebe značajke Grok"),
@@ -6903,8 +6880,8 @@
                 o("c3148608", "Brže dobijte pomoć kada vam je potrebna"),
                 o("b485ca6e", "Kartica Istaknuto"),
                 o("d438955e", "Istaknite najpopularnije objave"),
-                o("f373a352", "Šifrirane izravne poruke"),
-                o("g7405aca", "Sigurno razgovarajte uz sveobuhvatno šifriranje"),
+                o("f373a352", "Šifrirane izravne poruke");
+            o("g7405aca", "Sigurno razgovarajte uz sveobuhvatno šifriranje"),
                 o("j659fa0c", "Najbolje od značajke Grok 3"),
                 o("ibff5694", "Otključajte najveća ograničenja upotrebe, DeepSearch i Razmišljanje, plus rani pristup novim značajkama"),
                 o("i824f4da", "Manje oglasa"),
@@ -7856,7 +7833,34 @@
                 o("ddfd6718", "Plaćanje nije uspjelo"),
                 o("i90ea7d2", "Hitno ažurirajte podatke za naplatu da biste zadržali pogodnosti."),
                 o("a62359e6", "Postavke provjerenih organizacija"),
-                o("ge221b7c", "Nadogradite pretplatu za Provjerene organizacije kako biste dobili pristup povezanim računima i više kredita za oglase.");
+                o("ge221b7c", "Nadogradite pretplatu za Provjerene organizacije kako biste dobili pristup povezanim računima i više kredita za oglase."),
+                o("i4dccc18", "Naplata"),
+                o("ec3cd6e4", "Upravljajte načinom plaćanja, ažurirajte podatke za naplatu i pregledajte fakture."),
+                o("dac61c3c", "Postavke računa"),
+                o("b6b5fd66", "Upravljajte svojim računom za X, uključujući mijenjanje korisničkog imena i lozinke."),
+                o("hb9c4a1c", "Pitanja, izvješća o programskim pogreškama"),
+                o("c674f5b4", "Postavljanje plaćanja računa"),
+                o("i8237e66", "Prebacite se s plaćanja kreditnom karticom na plaćanja računa putem bankovnih transfera."),
+                o("hebd348a", "Konfigurirajte način upotrebe oglasa za promoviranje poslova s portala Zapošljavanje."),
+                o("ib5e6f90", "Promoviranje posla"),
+                o("id720215", "Zapošljavanje"),
+                o("dd59f146", "Račun za oglase i promoviranje posla"),
+                o("e7e36818", "Računi za oglase ispunjavaju uvjete za promoviranje poslova kada su u potpunosti postavljeni i imaju izvor financiranja."),
+                o("c28566e0", "Račun za oglase"),
+                o("c80160d3", "Oglašavanje"),
+                o("ff0edac0", "Sigurno želite otkazati pretplatu?"),
+                o("h2ac0348", "Ne, vrati se"),
+                o("dbf9667e", "Da"),
+                o("j7592572", "Polukružni okret"),
+                o("ee778942", "Semafor"),
+                o("fdd57981", function (a) {
+                    return "Želimo vam ponuditi besplatan jednokratan kredit za oglase u iznosu od " + a.totalAmount + " USD.";
+                }),
+                o("i032a231", function (a) {
+                    return "Ostat ću i iskoristiti " + a.totalAmount + " kredita za oglase";
+                }),
+                o("hd7d278c", "Ne, hvala"),
+                o("jf8a0dea", "Sjajno! Vaš novi besplatni kredit za oglase prikazat će se na vašem računu u sljedećem ciklusu naplate.");
             function t(a, e) {
                 for (var i = 0; i < e.length; i++) {
                     var o = e[i];
@@ -7895,34 +7899,7 @@
                     r(a, e)
                 );
             }
-            o("i4dccc18", "Naplata"),
-                o("ec3cd6e4", "Upravljajte načinom plaćanja, ažurirajte podatke za naplatu i pregledajte fakture."),
-                o("dac61c3c", "Postavke računa"),
-                o("b6b5fd66", "Upravljajte svojim računom za X, uključujući mijenjanje korisničkog imena i lozinke."),
-                o("hb9c4a1c", "Pitanja, izvješća o programskim pogreškama"),
-                o("c674f5b4", "Postavljanje plaćanja računa"),
-                o("i8237e66", "Prebacite se s plaćanja kreditnom karticom na plaćanja računa putem bankovnih transfera."),
-                o("hebd348a", "Konfigurirajte način upotrebe oglasa za promoviranje poslova s portala Zapošljavanje."),
-                o("ib5e6f90", "Promoviranje posla"),
-                o("id720215", "Zapošljavanje"),
-                o("dd59f146", "Račun za oglase i promoviranje posla"),
-                o("e7e36818", "Računi za oglase ispunjavaju uvjete za promoviranje poslova kada su u potpunosti postavljeni i imaju izvor financiranja."),
-                o("c28566e0", "Račun za oglase"),
-                o("c80160d3", "Oglašavanje"),
-                o("ff0edac0", "Sigurno želite otkazati pretplatu?"),
-                o("h2ac0348", "Ne, vrati se"),
-                o("dbf9667e", "Da"),
-                o("j7592572", "Polukružni okret"),
-                o("ee778942", "Semafor"),
-                o("fdd57981", function (a) {
-                    return "Želimo vam ponuditi besplatan jednokratan kredit za oglase u iznosu od " + a.totalAmount + " USD.";
-                }),
-                o("i032a231", function (a) {
-                    return "Ostat ću i iskoristiti " + a.totalAmount + " kredita za oglase";
-                }),
-                o("hd7d278c", "Ne, hvala"),
-                o("jf8a0dea", "Sjajno! Vaš novi besplatni kredit za oglase prikazat će se na vašem računu u sljedećem ciklusu naplate."),
-                o("ebbb3154", "Zatvori i vrati se na X"),
+            o("ebbb3154", "Zatvori i vrati se na X"),
                 o("j1f68dda", "Posljednji korak: jeste li sigurni da želite otkazati?"),
                 o("c9c3464c", "Otkazivanje pretplate je u tijeku"),
                 o("dd3a293c", "Vaša je pretplata za Provjerene organizacije završila."),
@@ -8900,8 +8877,8 @@
                 o("ccd32094", "Odmah"),
                 o("abfcce0d", function (a) {
                     return "Prije " + a.amountOfTime;
-                });
-            o("ae408b76", "Proslijedili ste objavu"),
+                }),
+                o("ae408b76", "Proslijedili ste objavu"),
                 o("j355f008", "Prikvačena objava"),
                 o("habf9678", "Prikvačio autor"),
                 o("db0798ed", function (a) {
@@ -8957,10 +8934,10 @@
                 }),
                 o("d925a4f9", function (a) {
                     return "Preostal" + n(a.count, "e su još " + a.formattedCount + " minute", "a je još " + a.formattedCount + " minuta", "o je još " + a.formattedCount + " minuta");
-                }),
-                o("ib15cddb", function (a) {
-                    return "Preosta" + n(a.count, "la su još " + a.formattedCount + " sata", "o je još " + a.formattedCount + " sat", "lo je još " + a.formattedCount + " sati");
-                }),
+                });
+            o("ib15cddb", function (a) {
+                return "Preosta" + n(a.count, "la su još " + a.formattedCount + " sata", "o je još " + a.formattedCount + " sat", "lo je još " + a.formattedCount + " sati");
+            }),
                 o("db9ed19f", function (a) {
                     return "Preosta" + n(a.count, "la su još " + a.formattedCount + " dana", "o je još " + a.formattedCount + " dan", "lo je još " + a.formattedCount + " dana");
                 }),
@@ -13227,4 +13204,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hr.618ff2ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hr.209861aa.js.map

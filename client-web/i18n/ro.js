@@ -4173,6 +4173,8 @@
                 t("e9b6d404", "La ce instrumente de căutare ar trebui să aibă acces Grok?"),
                 t("h15dce2e", "Setări avansate"),
                 t("ff9dc268", "Editează promptul"),
+                t("acb2baa0", "Create Images"),
+                t("h30fd372", "Try Voice Mode"),
                 t("e9fcdd0c", "Cere-i lui Grok să caute intens pe internet"),
                 t("fc4e8aba", "Cere-i lui Grok un raționament pas cu pas"),
                 t("e4ae6abe", "Cere-i lui Grok să-ți transforme imaginea"),
@@ -4342,41 +4344,16 @@
                 t("g01599b6", "Răspunsul 1"),
                 t("e02694e0", "Răspunsul 2"),
                 t("h6867fcc", "Prefer acest răspuns"),
-                t("b2175228", "Grok pentru Android este disponibil"),
-                t("d2d8650c", "Bucură-te de cea mai bună experiență Grok, în noua aplicație independentă"),
-                t("ia5bef3e", "Cum te pot ajuta astăzi?"),
-                t("ge683598", "Pune-i orice întrebare lui Grok..."),
-                t("fef25c88", "Încearcă Grok gratuit acum"),
-                t("fb172aa8", "Un nivel gratuit pentru Grok este disponibil acum în regiunea ta. Discută pe chat, generează imagini și analizează fotografii. Se aplică anumite limite."),
-                t("d7af4f40", "Generează imaginea unei galaxii"),
-                t("gcb6c0be", "Grok poate face greșeli. Verifică rezultatele pe care ți le oferă."),
-                t("cb88fd82", "Folosești versiunea gratuită a lui Grok."),
-                t("g27a5314", "Pentru a începe să folosești Grok, adaugă un număr de telefon la contul tău."),
-                t("bdd84568", "Contul tău este prea nou pentru a utiliza Grok. Încearcă din nou mai târziu."),
-                t("a9109a94", "Un sat solarpunk"),
-                t("g986f7a4", "Generează imaginea unui sat solarpunk"),
-                t("ad685264", "Muntele Fuji"),
-                t("hdb08284", "Fă o poză în stil anime a muntelui Fuji"),
-                t("a986ae84", "O pisică zburătoare"),
-                t("a14b556a", "Generează o imagine cu o pisică zburătoare"),
-                t("gc16b670", "Un robot într-un câmp cu flori"),
-                t("d5b8fa44", "Generează o imagine cu un robot într-un câmp cu flori"),
-                t("da196ff6", "Astronaut pe Marte"),
-                t("ae3979cc", "Fă portretul unui astronaut pe Marte"),
-                t("a682460e", "Un Roadster accelerând"),
-                t("e03e5514", "Fă o poză unui Roadster Tesla conducând în Shinjuku, cu estompare a mișcării"),
-                t("e68eac68", "Admirând aurorele boreale"),
-                t("hc6e6754", "Fă o poză cu o persoană care admiră aurorele boreale"),
-                t("cf59f9f6", "Ajută-mă să scriu o scrisoare de intenție"),
-                t("cd9aeac8", "Spune-mi titlurile zilei"),
-                t("acf2f0be", "Recomandă un joc RPG de fantezie"),
-                t("b9bd12e2", "Rezolvă problema privind suma a două numere în Python"),
+                t("d07488a6", "Get the Android app"),
+                t("d9cfe70c", "Access advanced Grok features"),
                 t("hf9afab0", "Activează DeepSearch pentru a căuta pe internet și pe X, analiza informații și oferi răspunsuri detaliate, bine argumentate, cu ajutorul unei căutări rapide și autonome."),
                 t("ef3b3f04", "Activează modul Gândire pentru a utiliza modelul nostru de argumentare. Este ideal pentru matematică, știință și scriere de cod. De asemenea, poți folosi opțiunea „Gândește-te mai bine” pentru orice întrebare care are nevoie de mai multă capacitate intelectuală de la Grok. "),
                 t("b43636b8", "Îți prezentăm Grok 3"),
                 t("j376298c", "Grok 3 prezintă două noi moduri pentru a interacționa cu cel mai puternic model al nostru: DeepSearch și Gândire."),
                 t("e3584f8e", "Care sunt cele mai de succes 10 strategii de tranzacționare utilizate de fondurile de acoperire"),
                 t("d91b7b8a", "Cât costa să construiești o universitate în 1885?"),
+                t("ia5bef3e", "Cum te pot ajuta astăzi?"),
+                t("ebea5880", "Recent Conversations"),
                 t("e13591c0", "Exemplu de conversație cu Grok"),
                 t("c27ca452", "Abonații Premium pot utiliza acum pe X cea mai avansată inteligență artificială a noastră, denumită Grok."),
                 t("b6abc25a", "Îți prezentăm Grok 2"),
@@ -4920,8 +4897,8 @@
                 t("ff95a9cc", "ID videoclip"),
                 t("a97e358e", "Link videoclip"),
                 t("e10e8b46", "Se afișează doar videoclipuri din ultimele 100 de zile."),
-                t("ba37f6da", "Imagine de ansamblu videoclip");
-            t("f19846b2", "Miniatură videoclip"),
+                t("ba37f6da", "Imagine de ansamblu videoclip"),
+                t("f19846b2", "Miniatură videoclip"),
                 t("ccd6f4a8", "Titlu videoclip"),
                 t("c8410542", "De câte ori a fost văzut videoclipul."),
                 t("a532072a", "Spectatori"),
@@ -4943,8 +4920,8 @@
                 t("f2f463ea", "ai -start-up"),
                 t("a10a357e", "conține „ai” și are cel puțin 50 de aprecieri"),
                 t("ca8ed1e8", "ai min_faves:50"),
-                t("i945a3f2", "conține „ai” și un URL care include cuvântul „grok”"),
-                t("a9348088", "ai url:grok"),
+                t("i945a3f2", "conține „ai” și un URL care include cuvântul „grok”");
+            t("a9348088", "ai url:grok"),
                 t("b5c3cdbc", "menționează contul X „grok”"),
                 t("e2634592", "@grok"),
                 t("i88ba038", "Alertă dezactivată"),
@@ -5878,10 +5855,10 @@
                 t("ae58026a", "Deschide un fișier Apreciere de marcă .json pentru previzualizare"),
                 t("hd0bc1eb", function (e) {
                     return e.name + " este în direct";
-                });
-            t("bea1f26b", function (e) {
-                return e.name + " a fost în direct";
-            }),
+                }),
+                t("bea1f26b", function (e) {
+                    return e.name + " a fost în direct";
+                }),
                 t("ab3ee97f", function (e) {
                     return e.screenName + " nu este în direct";
                 }),
@@ -5909,8 +5886,8 @@
                 t("edef4c82", "Postează direct într-o Comunitate"),
                 t("a7640df6", "Postările tale sunt distribuite membrilor Comunității și urmăritorilor tăi."),
                 t("h3bb8068", "Cere ajutor când ai nevoie"),
-                t("a709f8f8", "Administratorii și moderatorii ajută la gestionarea Comunităților și mențin conversațiile pe drumul cel bun."),
-                t("c8d33380", "Elemente noi"),
+                t("a709f8f8", "Administratorii și moderatorii ajută la gestionarea Comunităților și mențin conversațiile pe drumul cel bun.");
+            t("c8d33380", "Elemente noi"),
                 t("cb6adb10", "Descoperă comunități"),
                 t("df362964", "Găsește Comunități"),
                 t("dfd5031f", function (e) {
@@ -6884,8 +6861,8 @@
                 t("c4fd68da", "Personalizează-ți experiența"),
                 t("c0195168", "Schimbă-ți pictograma aplicației și opțiunile de navigare"),
                 t("b6b5dc94", "Devino utilizator verificat"),
-                t("b06db848", "Ieși în evidență pe platformă");
-            t("e3e3a97c", "Câștigă o cotă-parte din veniturile obținute din postările tale"),
+                t("b06db848", "Ieși în evidență pe platformă"),
+                t("e3e3a97c", "Câștigă o cotă-parte din veniturile obținute din postările tale"),
                 t("f15bc24e", "Limite extinse pentru Grok"),
                 t("c4666e1c", "Capacitatea de a utiliza mai mult Grok 3, cel mai recent model al nostru"),
                 t("he74ae7a", "Cele mai ample limite de utilizare Grok"),
@@ -6907,8 +6884,8 @@
                 t("c3148608", "Obține asistență mai repede atunci când ai nevoie de ajutor"),
                 t("b485ca6e", "Fila Evidențieri"),
                 t("d438955e", "Evidențiază-ți postările de top"),
-                t("f373a352", "Mesaje directe criptate"),
-                t("g7405aca", "Discută în siguranță cu criptarea de la un capăt la altul"),
+                t("f373a352", "Mesaje directe criptate");
+            t("g7405aca", "Discută în siguranță cu criptarea de la un capăt la altul"),
                 t("j659fa0c", "Tot ce e mai bun din Grok 3"),
                 t("ibff5694", "Bucură-te de cele mai ample limite de utilizare, DeepSearch și Gândire plus acces timpuriu la noi caracteristici"),
                 t("i824f4da", "Mai puține reclame"),
@@ -7860,7 +7837,34 @@
                 t("ddfd6718", "Plata a eșuat"),
                 t("i90ea7d2", "Actualizează-ți urgent informațiile de facturare pentru a-ți păstra beneficiile."),
                 t("a62359e6", "Setări Organizații verificate"),
-                t("ge221b7c", "Fă upgrade la aboamentul pentru Organizații verificate pentru a avea acces la mai multe credite pentru reclame și afiliați.");
+                t("ge221b7c", "Fă upgrade la aboamentul pentru Organizații verificate pentru a avea acces la mai multe credite pentru reclame și afiliați."),
+                t("i4dccc18", "Facturare"),
+                t("ec3cd6e4", "Gestionează metoda de plată, actualizează informațiile de facturare și verifică-ți facturile."),
+                t("dac61c3c", "Setări cont"),
+                t("b6b5fd66", "Gestionează-ți contul X, inclusiv schimbarea numelui de utilizator și a parolei."),
+                t("hb9c4a1c", "Întrebări, rapoarte de erori și feedback"),
+                t("c674f5b4", "Configurează plățile facturilor"),
+                t("i8237e66", "Treci de la plățile pe cardul de credit la facturarea prin transferuri bancare."),
+                t("hebd348a", "Configurează modul în care sunt utilizate reclamele pentru promovarea locurilor de muncă din portalul pentru angajări."),
+                t("ib5e6f90", "Promovarea locurilor de muncă"),
+                t("id720215", "pentru angajări"),
+                t("dd59f146", "Contul de reclame pentru promovarea locurilor de muncă"),
+                t("e7e36818", "Conturile pentru reclame sunt eligibile pentru promovarea locurilor de muncă atunci când sunt complet configurate cu o sursă de finanțare."),
+                t("c28566e0", "Cont pentru reclame"),
+                t("c80160d3", "Publicitate"),
+                t("ff0edac0", "Sigur vrei să îți anulezi abonamentul?"),
+                t("h2ac0348", "Nu, vreau să mă întorc"),
+                t("dbf9667e", "Sunt sigur"),
+                t("j7592572", "Întoarcere"),
+                t("ee778942", "Semafor"),
+                t("fdd57981", function (e) {
+                    return "Vrem să-ți oferim un credit gratuit pentru reclame, în valoare de " + e.totalAmount + ", disponibil o singură dată.";
+                }),
+                t("i032a231", function (e) {
+                    return "Voi rămâne și voi solicita creditul de reclame, în valoare de " + e.totalAmount;
+                }),
+                t("hd7d278c", "Nu, mulțumesc"),
+                t("jf8a0dea", "Excelent! Noul tău credit gratuit de reclame va apărea în contul tău la următorul ciclu de facturare.");
             function c(e, a) {
                 for (var i = 0; i < a.length; i++) {
                     var t = a[i];
@@ -7899,34 +7903,7 @@
                     u(e, a)
                 );
             }
-            t("i4dccc18", "Facturare"),
-                t("ec3cd6e4", "Gestionează metoda de plată, actualizează informațiile de facturare și verifică-ți facturile."),
-                t("dac61c3c", "Setări cont"),
-                t("b6b5fd66", "Gestionează-ți contul X, inclusiv schimbarea numelui de utilizator și a parolei."),
-                t("hb9c4a1c", "Întrebări, rapoarte de erori și feedback"),
-                t("c674f5b4", "Configurează plățile facturilor"),
-                t("i8237e66", "Treci de la plățile pe cardul de credit la facturarea prin transferuri bancare."),
-                t("hebd348a", "Configurează modul în care sunt utilizate reclamele pentru promovarea locurilor de muncă din portalul pentru angajări."),
-                t("ib5e6f90", "Promovarea locurilor de muncă"),
-                t("id720215", "pentru angajări"),
-                t("dd59f146", "Contul de reclame pentru promovarea locurilor de muncă"),
-                t("e7e36818", "Conturile pentru reclame sunt eligibile pentru promovarea locurilor de muncă atunci când sunt complet configurate cu o sursă de finanțare."),
-                t("c28566e0", "Cont pentru reclame"),
-                t("c80160d3", "Publicitate"),
-                t("ff0edac0", "Sigur vrei să îți anulezi abonamentul?"),
-                t("h2ac0348", "Nu, vreau să mă întorc"),
-                t("dbf9667e", "Sunt sigur"),
-                t("j7592572", "Întoarcere"),
-                t("ee778942", "Semafor"),
-                t("fdd57981", function (e) {
-                    return "Vrem să-ți oferim un credit gratuit pentru reclame, în valoare de " + e.totalAmount + ", disponibil o singură dată.";
-                }),
-                t("i032a231", function (e) {
-                    return "Voi rămâne și voi solicita creditul de reclame, în valoare de " + e.totalAmount;
-                }),
-                t("hd7d278c", "Nu, mulțumesc"),
-                t("jf8a0dea", "Excelent! Noul tău credit gratuit de reclame va apărea în contul tău la următorul ciclu de facturare."),
-                t("ebbb3154", "Închide și întoarce-te la X"),
+            t("ebbb3154", "Închide și întoarce-te la X"),
                 t("j1f68dda", "Pas final: Sigur anulezi?"),
                 t("c9c3464c", "Anularea abonamentului este în curs"),
                 t("dd3a293c", "Abonamentul tău de organizație verificată s-a încheiat."),
@@ -8904,8 +8881,8 @@
                 t("ccd32094", "Acum"),
                 t("abfcce0d", function (e) {
                     return "Cu " + e.amountOfTime + " în urmă";
-                });
-            t("ae408b76", "Ai repostat"),
+                }),
+                t("ae408b76", "Ai repostat"),
                 t("j355f008", "Postare fixată"),
                 t("habf9678", "Fixat de Autor"),
                 t("db0798ed", function (e) {
@@ -8961,10 +8938,10 @@
                 }),
                 t("d925a4f9", function (e) {
                     return e.formattedCount + " " + r(e.count, "minute rămase", "minut rămas", "de minute rămase");
-                }),
-                t("ib15cddb", function (e) {
-                    return e.formattedCount + " " + r(e.count, "ore rămase", "oră rămasă", "de ore rămase");
-                }),
+                });
+            t("ib15cddb", function (e) {
+                return e.formattedCount + " " + r(e.count, "ore rămase", "oră rămasă", "de ore rămase");
+            }),
                 t("db9ed19f", function (e) {
                     return e.formattedCount + " " + r(e.count, "zile rămase", "zi rămasă", "de zile rămase");
                 }),
@@ -13219,4 +13196,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ro.d6da54ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ro.e1c1a9ca.js.map
