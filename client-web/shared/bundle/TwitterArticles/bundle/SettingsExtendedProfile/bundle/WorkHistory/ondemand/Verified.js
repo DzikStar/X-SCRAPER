@@ -2,24 +2,24 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["shared~bundle.TwitterArticles~bundle.SettingsExtendedProfile~bundle.WorkHistory~ondemand.Verified"],
     {
-        385264: (e, t, o) => {
-            o.d(t, { Q: () => n });
-            const n = Object.freeze({ Media: "Media", GIFs: "GIFs", Posts: "Posts", Markdown: "Markdown", Divider: "Divider", Code: "Code", LaTeX: "LaTeX" });
+        385264: (e, t, n) => {
+            n.d(t, { Q: () => o });
+            const o = Object.freeze({ Media: "Media", GIFs: "GIFs", Posts: "Posts", Markdown: "Markdown", Divider: "Divider", Code: "Code", LaTeX: "LaTeX" });
         },
-        625661: (e, t, o) => {
-            o.d(t, { ZP: () => u });
-            var n = o(202784),
-                r = o(614983),
-                i = o.n(r),
-                a = o(325686),
-                s = o(370006),
-                l = o(786998),
-                c = o(929028),
-                d = o(386802);
-            function h(e, t, o) {
-                return e || (!t && o ? "fixed" : void 0);
+        625661: (e, t, n) => {
+            n.d(t, { ZP: () => u });
+            var o = n(202784),
+                r = n(614983),
+                i = n.n(r),
+                s = n(325686),
+                a = n(370006),
+                l = n(786998),
+                c = n(929028),
+                d = n(386802);
+            function h(e, t, n) {
+                return e || (!t && n ? "fixed" : void 0);
             }
-            class u extends n.Component {
+            class u extends o.Component {
                 constructor(...e) {
                     super(...e),
                         (this._handleBackClick = () => {
@@ -32,86 +32,86 @@
                         });
                 }
                 _renderContent() {
-                    const { backButtonType: e, centerTitle: t, centeredLogo: o, fixed: r, hideBackButton: i, isFullWidth: a, isLarge: c, leftControl: d, middleControl: u, position: p, rightControl: g, secondaryBar: m, style: y, subtitle: f, title: C, titleDomId: S, titleIconCell: b, titleIconCellSize: k, withBackground: x, withWideContainer: _ } = this.props,
+                    const { backButtonType: e, centerTitle: t, centeredLogo: n, fixed: r, hideBackButton: i, isFullWidth: s, isLarge: c, leftControl: d, middleControl: u, position: p, rightControl: g, secondaryBar: m, style: f, subtitle: y, title: C, titleDomId: S, titleIconCell: b, titleIconCellSize: x, withBackground: k, withWideContainer: _ } = this.props,
                         { isModal: E } = this.context,
-                        T = i ? d : n.createElement(s.Z, { backButtonType: e, onClick: this._handleBackClick }),
-                        B = (function (e, t, o) {
-                            return e && !(t && o);
-                        })(!!x, E, !!m);
-                    return n.createElement(n.Fragment, null, n.createElement(l.Z, { centerTitle: t, centeredLogo: o, isFullWidth: a, isLarge: c, leftControl: T, middleControl: u, position: h(p, E, r), rightControl: g, style: y, subtitle: f, title: C, titleDomId: S, titleIconCell: b, titleIconCellSize: k, withBackground: B, withWideContainer: _ }), m || null);
+                        T = i ? d : o.createElement(a.Z, { backButtonType: e, onClick: this._handleBackClick }),
+                        B = (function (e, t, n) {
+                            return e && !(t && n);
+                        })(!!k, E, !!m);
+                    return o.createElement(o.Fragment, null, o.createElement(l.Z, { centerTitle: t, centeredLogo: n, isFullWidth: s, isLarge: c, leftControl: T, middleControl: u, position: h(p, E, r), rightControl: g, style: f, subtitle: y, title: C, titleDomId: S, titleIconCell: b, titleIconCellSize: x, withBackground: B, withWideContainer: _ }), m || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
                         { isModal: t } = this.context,
-                        o = c.Z.getBackgroundStyles();
-                    return t ? n.createElement(a.Z, { style: !!e && o }, this._renderContent()) : this._renderContent();
+                        n = c.Z.getBackgroundStyles();
+                    return t ? o.createElement(s.Z, { style: !!e && n }, this._renderContent()) : this._renderContent();
                 }
             }
             (u.contextType = d.Z), (u.defaultProps = { fixed: !0, backLocation: "/", isFullWidth: !1, isLarge: !1, withBackground: !0 });
         },
-        980407: (e, t, o) => {
-            o.d(t, { Z: () => m, w: () => p });
-            var n = o(202784),
-                r = o(325686),
-                i = o(108362),
-                a = o(386802),
-                s = o(392237),
-                l = o(652904),
-                c = o(555079),
-                d = o(625661),
-                h = o(449067),
-                u = o(715601);
-            class p extends n.Component {
+        980407: (e, t, n) => {
+            n.d(t, { Z: () => m, w: () => p });
+            var o = n(202784),
+                r = n(325686),
+                i = n(108362),
+                s = n(386802),
+                a = n(392237),
+                l = n(652904),
+                c = n(555079),
+                d = n(625661),
+                h = n(449067),
+                u = n(715601);
+            class p extends o.Component {
                 constructor(...e) {
                     super(...e),
                         (this._renderChildViewAppBar = () => {
-                            const { appBarRef: e, appBarStyle: t, backButtonType: o, backLocation: i, centerTitle: a, hideBackButton: s, history: l, isFullWidth: h, isLarge: u, middleControl: p, onBackClick: m, rightControl: y, secondaryBar: f, subtitle: C, title: S } = this.props,
+                            const { appBarRef: e, appBarStyle: t, backButtonType: n, backLocation: i, centerTitle: s, hideBackButton: a, history: l, isFullWidth: h, isLarge: u, middleControl: p, onBackClick: m, rightControl: f, secondaryBar: y, subtitle: C, title: S } = this.props,
                                 { isModal: b } = this.context;
-                            return n.createElement(r.Z, { style: b ? [g.childViewAppBarRoot, g.appBarZindex] : g.appBarZindex }, n.createElement(d.ZP, { backButtonType: o || (b ? "close" : "back"), backLocation: i, centerTitle: a, fixed: !b, hideBackButton: s, history: l, isFullWidth: h, isLarge: u, middleControl: p, onBackClick: m, ref: e, rightControl: y, secondaryBar: f, style: [b && g.appBarModal, t], subtitle: C, title: S, titleDomId: c.Q_ }));
+                            return o.createElement(r.Z, { style: b ? [g.childViewAppBarRoot, g.appBarZindex] : g.appBarZindex }, o.createElement(d.ZP, { backButtonType: n || (b ? "close" : "back"), backLocation: i, centerTitle: s, fixed: !b, hideBackButton: a, history: l, isFullWidth: h, isLarge: u, middleControl: p, onBackClick: m, ref: e, rightControl: f, secondaryBar: y, style: [b && g.appBarModal, t], subtitle: C, title: S, titleDomId: c.Q_ }));
                         }),
                         (this._handleLayout = (e) => {
                             const { onLayout: t } = this.props,
-                                { isModal: o } = this.context;
-                            t && (o ? window.requestAnimationFrame(() => t(e)) : t(e));
+                                { isModal: n } = this.context;
+                            t && (n ? window.requestAnimationFrame(() => t(e)) : t(e));
                         });
                 }
                 render() {
-                    const { "aria-hidden": e, bottomBar: t, children: o, containerStyle: a, documentTitle: s, isFullWidth: c, isLarge: d, renderHeader: p, title: m, withoutBottomBarMobile: y } = this.props,
-                        { isModal: f } = this.context,
+                    const { "aria-hidden": e, bottomBar: t, children: n, containerStyle: s, documentTitle: a, isFullWidth: c, isLarge: d, renderHeader: p, title: m, withoutBottomBarMobile: f } = this.props,
+                        { isModal: y } = this.context,
                         C = p ? p(this._renderChildViewAppBar()) : this._renderChildViewAppBar();
-                    return n.createElement(l.Z, null, n.createElement(h.Z.Configure, { documentTitle: s, headerless: !0, title: m }), n.createElement(r.Z, { "aria-hidden": e, onLayout: this._handleLayout, style: [g.root, f && g.rootModal] }, !f && C, n.createElement(i.Z, { isFullWidth: c, isLarge: d, style: [g.container, f && g.containerModal, a] }, f ? n.createElement(u.Z, { style: g.viewport }, C, o) : o), t ? n.createElement(r.Z, { style: [g.bottomBarModal, !f && !y && g.bottomBarMobile] }, n.createElement(i.Z, { isFullWidth: c, isLarge: d }, t)) : null));
+                    return o.createElement(l.Z, null, o.createElement(h.Z.Configure, { documentTitle: a, headerless: !0, title: m }), o.createElement(r.Z, { "aria-hidden": e, onLayout: this._handleLayout, style: [g.root, y && g.rootModal] }, !y && C, o.createElement(i.Z, { isFullWidth: c, isLarge: d, style: [g.container, y && g.containerModal, s] }, y ? o.createElement(u.Z, { style: g.viewport }, C, n) : n), t ? o.createElement(r.Z, { style: [g.bottomBarModal, !y && !f && g.bottomBarMobile] }, o.createElement(i.Z, { isFullWidth: c, isLarge: d }, t)) : null));
                 }
             }
-            (p.defaultProps = { isFullWidth: !1, isLarge: !1 }), (p.contextType = a.Z);
-            const g = s.default.create((e) => ({ root: { backgroundColor: e.colors.cellBackground, flexGrow: 1, flexShrink: 1 }, rootModal: { borderRadius: e.borderRadii.xLarge, flexShrink: 1 }, appBarModal: { borderTopStartRadius: e.borderRadii.small, borderTopEndRadius: e.borderRadii.small }, childViewAppBarRoot: { position: "sticky", top: 0 }, appBarZindex: { zIndex: e.componentZIndices.appBarZIndex }, container: { flexGrow: 1 }, containerModal: { flexShrink: 1 }, viewport: { borderBottomStartRadius: e.borderRadii.xLarge, borderBottomEndRadius: e.borderRadii.xLarge, flexGrow: 1, flexShrink: 1, overflow: "auto", zIndex: void 0 }, bottomBarModal: { borderTopColor: e.colors.borderColor, borderTopWidth: e.borderWidths.small }, bottomBarMobile: { position: "fixed", backfaceVisibility: "hidden", bottom: 0, width: "100%", paddingBottom: s.default.iPhoneOffsetBottom, backgroundColor: e.colors.navigationBackground, borderTopStyle: "solid" } })),
+            (p.defaultProps = { isFullWidth: !1, isLarge: !1 }), (p.contextType = s.Z);
+            const g = a.default.create((e) => ({ root: { backgroundColor: e.colors.cellBackground, flexGrow: 1, flexShrink: 1 }, rootModal: { borderRadius: e.borderRadii.xLarge, flexShrink: 1 }, appBarModal: { borderTopStartRadius: e.borderRadii.small, borderTopEndRadius: e.borderRadii.small }, childViewAppBarRoot: { position: "sticky", top: 0 }, appBarZindex: { zIndex: e.componentZIndices.appBarZIndex }, container: { flexGrow: 1 }, containerModal: { flexShrink: 1 }, viewport: { borderBottomStartRadius: e.borderRadii.xLarge, borderBottomEndRadius: e.borderRadii.xLarge, flexGrow: 1, flexShrink: 1, overflow: "auto", zIndex: void 0 }, bottomBarModal: { borderTopColor: e.colors.borderColor, borderTopWidth: e.borderWidths.small }, bottomBarMobile: { position: "fixed", backfaceVisibility: "hidden", bottom: 0, width: "100%", paddingBottom: a.default.iPhoneOffsetBottom, backgroundColor: e.colors.navigationBackground, borderTopStyle: "solid" } })),
                 m = p;
         },
-        874111: (e, t, o) => {
-            o.d(t, { Ff: () => w, KU: () => T, O7: () => P, QX: () => M, Sc: () => v, Ve: () => _, Vn: () => O, WE: () => Z, WF: () => b, c6: () => k, ci: () => S, eE: () => x, iT: () => C, ii: () => L, jB: () => F, k: () => H, mA: () => I, r_: () => B, wq: () => D });
-            o(136728);
-            var n = o(301503),
-                r = o(674132),
-                i = o.n(r),
-                a = o(473026),
-                s = o(937450),
-                l = o(266151),
-                c = o(498720),
-                d = o(506868),
-                h = o(38716),
-                u = o(794057),
-                p = o(385264);
-            const g = (e, t, o) => {
-                    const r = f(e, m(e)),
-                        i = n.AtomicBlockUtils.insertAtomicBlock(r, t, o),
-                        a = y(i, t);
-                    if (a) {
-                        const e = i.getCurrentContent().getBlockBefore(a),
-                            t = i.getCurrentContent().getBlockAfter(a),
-                            o = t?.getKey() === i.getCurrentContent().getLastBlock().getKey(),
-                            n = e?.getText() ? i : w(i, e?.getKey()),
-                            r = o ? n : w(n, t?.getKey()),
-                            s = r.getCurrentContent().getBlockAfter(a);
-                        return f(r, s);
+        874111: (e, t, n) => {
+            n.d(t, { Ff: () => I, KU: () => T, O7: () => Z, QX: () => L, Sc: () => w, Ve: () => _, Vn: () => D, WE: () => P, WF: () => b, c6: () => x, ci: () => S, eE: () => k, iT: () => C, ii: () => F, jB: () => M, k: () => V, mA: () => v, r_: () => B, wq: () => R });
+            n(136728);
+            var o = n(301503),
+                r = n(674132),
+                i = n.n(r),
+                s = n(473026),
+                a = n(937450),
+                l = n(266151),
+                c = n(498720),
+                d = n(506868),
+                h = n(38716),
+                u = n(794057),
+                p = n(385264);
+            const g = (e, t, n) => {
+                    const r = y(e, m(e)),
+                        i = o.AtomicBlockUtils.insertAtomicBlock(r, t, n),
+                        s = f(i, t);
+                    if (s) {
+                        const e = i.getCurrentContent().getBlockBefore(s),
+                            t = i.getCurrentContent().getBlockAfter(s),
+                            n = t?.getKey() === i.getCurrentContent().getLastBlock().getKey(),
+                            o = e?.getText() ? i : I(i, e?.getKey()),
+                            r = n ? o : I(o, t?.getKey()),
+                            a = r.getCurrentContent().getBlockAfter(s);
+                        return y(r, a);
                     }
                     return i;
                 },
@@ -119,19 +119,19 @@
                     const t = e.getSelection();
                     return e.getCurrentContent().getBlockForKey(t.getStartKey());
                 },
-                y = (e, t) => {
-                    const o = e
+                f = (e, t) => {
+                    const n = e
                         .getCurrentContent()
                         .getBlocksAsArray()
                         .find((e) => e.getCharacterList().some((e) => e.getEntity() === t));
-                    return o?.getKey();
+                    return n?.getKey();
                 },
-                f = (e, t) => {
+                y = (e, t) => {
                     if (!t) return e;
-                    const o = t.getKey(),
+                    const n = t.getKey(),
                         r = t.getText().length,
-                        i = new n.SelectionState({ anchorKey: o, anchorOffset: r, focusKey: o, focusOffset: r, hasFocus: !0, isBackward: !1 });
-                    return n.EditorState.acceptSelection(e, i);
+                        i = new o.SelectionState({ anchorKey: n, anchorOffset: r, focusKey: n, focusOffset: r, hasFocus: !0, isBackward: !1 });
+                    return o.EditorState.acceptSelection(e, i);
                 },
                 C = (e) => e.getCurrentContent().getPlainText(),
                 S = (e) => e.getPlainText().trim(),
@@ -139,191 +139,191 @@
                     C(e)
                         .split(/\s+/)
                         .filter((e) => !!e).length,
-                k = (e) => C(e).length,
-                x = (e) => e.getCurrentContent().getBlocksAsArray().length,
+                x = (e) => C(e).length,
+                k = (e) => e.getCurrentContent().getBlocksAsArray().length,
                 _ = (e, t) => t.reduce((e, t) => E(e, t), e),
                 E = (e, t) => {
-                    const o = e.getCurrentContent().createEntity(u.DC.TWEET, u.pc.IMMUTABLE, { tweetId: t }),
-                        r = o.getLastCreatedEntityKey(),
-                        i = n.EditorState.set(e, { currentContent: o });
+                    const n = e.getCurrentContent().createEntity(u.DC.TWEET, u.pc.IMMUTABLE, { tweetId: t }),
+                        r = n.getLastCreatedEntityKey(),
+                        i = o.EditorState.set(e, { currentContent: n });
                     return g(i, r, " ");
                 },
                 T = (e) => (e.mediaFile?.isImage ? u._e.IMAGE : e.mediaFile?.isVideo ? u._e.VIDEO : u._e.GIF),
                 B = (e, t) => {
-                    const o = e.getCurrentContent(),
+                    const n = e.getCurrentContent(),
                         r = t.map((e) => ({ mediaCategory: T(e), localMediaId: e.id, mediaId: e.uploadId })),
-                        i = o.createEntity(u.DC.MEDIA, u.pc.IMMUTABLE, { mediaItems: r }),
-                        a = i.getLastCreatedEntityKey(),
-                        s = i.mergeEntityData(a, { entityKey: a }),
-                        l = n.EditorState.set(e, { currentContent: s });
-                    return { newEditorState: g(l, a, " "), entityKey: a };
+                        i = n.createEntity(u.DC.MEDIA, u.pc.IMMUTABLE, { mediaItems: r }),
+                        s = i.getLastCreatedEntityKey(),
+                        a = i.mergeEntityData(s, { entityKey: s }),
+                        l = o.EditorState.set(e, { currentContent: a });
+                    return { newEditorState: g(l, s, " "), entityKey: s };
                 },
-                v = (e, t, o, r) => {
+                w = (e, t, n, r) => {
                     const i = e.getCurrentContent(),
-                        a = i.getEntity(t).getData(),
-                        { mediaItems: s } = a,
-                        l = s.findIndex((e) => e.mediaId === o),
-                        c = s[l];
+                        s = i.getEntity(t).getData(),
+                        { mediaItems: a } = s,
+                        l = a.findIndex((e) => e.mediaId === n),
+                        c = a[l];
                     if (c) {
-                        const o = { ...c, localMediaId: r.id, mediaId: r.uploadId },
-                            a = [...s.slice(0, l), o, ...s.slice(l + 1)],
-                            d = i.mergeEntityData(t, { mediaItems: a });
-                        return n.EditorState.push(e, d, "change-block-data");
+                        const n = { ...c, localMediaId: r.id, mediaId: r.uploadId },
+                            s = [...a.slice(0, l), n, ...a.slice(l + 1)],
+                            d = i.mergeEntityData(t, { mediaItems: s });
+                        return o.EditorState.push(e, d, "change-block-data");
                     }
                     return e;
                 },
-                I = (e, t, o, r) => {
+                v = (e, t, n, r) => {
                     const i = e.getCurrentContent(),
-                        a = i
+                        s = i
                             .getEntity(t)
                             .getData()
-                            .mediaItems.filter((e) => !(e.localMediaId === o || r[e.mediaId] === o)),
-                        s = i.mergeEntityData(t, { mediaItems: a });
-                    return n.EditorState.push(e, s, "change-block-data");
+                            .mediaItems.filter((e) => !(e.localMediaId === n || r[e.mediaId] === n)),
+                        a = i.mergeEntityData(t, { mediaItems: s });
+                    return o.EditorState.push(e, a, "change-block-data");
                 },
-                w = (e, t) => {
+                I = (e, t) => {
                     if (!t) return e;
-                    const o = e.getCurrentContent(),
-                        r = o.getBlockAfter(t),
-                        i = o.getBlockMap().filter((e) => e.getKey() !== t),
-                        a = o.merge({ blockMap: i });
-                    return f(n.EditorState.push(e, a, "change-block-data"), r);
+                    const n = e.getCurrentContent(),
+                        r = n.getBlockAfter(t),
+                        i = n.getBlockMap().filter((e) => e.getKey() !== t),
+                        s = n.merge({ blockMap: i });
+                    return y(o.EditorState.push(e, s, "change-block-data"), r);
                 },
-                L = (e) => {
+                F = (e) => {
                     const t = e.getCurrentContent(),
-                        o = [];
+                        n = [];
                     return (
                         t.getBlocksAsArray().forEach((e) => {
                             let t = null;
                             e.findEntityRanges(
                                 (e) => null !== e.getEntity() && ((t = e.getEntity()), !0),
                                 () => {
-                                    t && o.push(t);
+                                    t && n.push(t);
                                 },
                             );
                         }),
-                        o
+                        n
                     );
                 },
-                M = (e, t, o) => {
-                    const r = e.getCurrentContent().mergeEntityData(t, o),
-                        i = n.EditorState.push(e, r, "change-block-data"),
-                        a = n.SelectionState.createEmpty(m(e).getKey());
-                    return n.EditorState.forceSelection(i, a);
+                L = (e, t, n) => {
+                    const r = e.getCurrentContent().mergeEntityData(t, n),
+                        i = o.EditorState.push(e, r, "change-block-data"),
+                        s = o.SelectionState.createEmpty(m(e).getKey());
+                    return o.EditorState.forceSelection(i, s);
                 },
-                Z = (e, t, o) => {
-                    const n = o.map((e) => t[e.mediaId]).map((t) => e.find((e) => e.id === t) ?? null);
-                    return n.some((e) => !e) ? o.map((t) => e.find((e) => e.id === t.localMediaId) ?? null) : n;
+                P = (e, t, n) => {
+                    const o = n.map((e) => t[e.mediaId]).map((t) => e.find((e) => e.id === t) ?? null);
+                    return o.some((e) => !e) ? n.map((t) => e.find((e) => e.id === t.localMediaId) ?? null) : o;
                 },
-                F = (e, t) => {
-                    const o = e.getCurrentContent().createEntity(u.DC.MARKDOWN, u.pc.MUTABLE, { markdown: t }),
-                        r = o.getLastCreatedEntityKey(),
-                        i = n.EditorState.set(e, { currentContent: o });
+                M = (e, t) => {
+                    const n = e.getCurrentContent().createEntity(u.DC.MARKDOWN, u.pc.MUTABLE, { markdown: t }),
+                        r = n.getLastCreatedEntityKey(),
+                        i = o.EditorState.set(e, { currentContent: n });
                     return g(i, r, " ");
                 },
-                P = (e) => {
+                Z = (e) => {
                     const t = e.getCurrentContent().createEntity(u.DC.DIVIDER, u.pc.IMMUTABLE),
-                        o = t.getLastCreatedEntityKey(),
-                        r = n.EditorState.set(e, { currentContent: t });
-                    return g(r, o, " ");
+                        n = t.getLastCreatedEntityKey(),
+                        r = o.EditorState.set(e, { currentContent: t });
+                    return g(r, n, " ");
                 },
-                D = (e, t) => {
-                    const o = e.getCurrentContent().createEntity(u.DC.LATEX, u.pc.IMMUTABLE),
-                        r = o.getLastCreatedEntityKey(),
-                        i = n.EditorState.set(e, { currentContent: o });
+                R = (e, t) => {
+                    const n = e.getCurrentContent().createEntity(u.DC.LATEX, u.pc.IMMUTABLE),
+                        r = n.getLastCreatedEntityKey(),
+                        i = o.EditorState.set(e, { currentContent: n });
                     return g(i, r, t);
                 },
-                O = (e, t, o) => {
+                D = (e, t, n) => {
                     const r = e.getCurrentContent(),
                         i = r.getBlockForKey(t),
-                        a = i.getText().length,
-                        s = i.getEntityAt(0),
-                        l = n.SelectionState.createEmpty(t).merge({ anchorOffset: 0, focusOffset: a }),
-                        c = n.Modifier.replaceText(r, l, o),
-                        d = l.merge({ anchorOffset: 0, focusOffset: o.length }),
-                        h = n.Modifier.applyEntity(c, d, s);
-                    return n.EditorState.set(e, { currentContent: h });
+                        s = i.getText().length,
+                        a = i.getEntityAt(0),
+                        l = o.SelectionState.createEmpty(t).merge({ anchorOffset: 0, focusOffset: s }),
+                        c = o.Modifier.replaceText(r, l, n),
+                        d = l.merge({ anchorOffset: 0, focusOffset: n.length }),
+                        h = o.Modifier.applyEntity(c, d, a);
+                    return o.EditorState.set(e, { currentContent: h });
                 },
-                R = i().add55c98,
+                O = i().add55c98,
                 A = i().i0db46e6,
-                z = i().fa4e68ca,
-                W = i().c80940f4,
-                K = i().i89195ea,
+                K = i().fa4e68ca,
+                z = i().c80940f4,
+                W = i().i89195ea,
                 U = i().cfeb3f86,
-                V = i().ad9e175c,
-                H = [
-                    { id: p.Q.Media, text: R, Icon: a.default },
-                    { id: p.Q.GIFs, text: A, Icon: s.default },
-                    { id: p.Q.Posts, text: z, Icon: l.default },
-                    { id: p.Q.Markdown, text: W, Icon: c.default },
-                    { id: p.Q.Divider, text: K, Icon: d.default },
+                H = i().ad9e175c,
+                V = [
+                    { id: p.Q.Media, text: O, Icon: s.default },
+                    { id: p.Q.GIFs, text: A, Icon: a.default },
+                    { id: p.Q.Posts, text: K, Icon: l.default },
+                    { id: p.Q.Markdown, text: z, Icon: c.default },
+                    { id: p.Q.Divider, text: W, Icon: d.default },
                     { id: p.Q.Code, text: U, Icon: c.default },
-                    { id: p.Q.LaTeX, text: V, Icon: h.default },
+                    { id: p.Q.LaTeX, text: H, Icon: h.default },
                 ];
         },
-        652904: (e, t, o) => {
-            o.d(t, { Z: () => d });
-            var n = o(202784),
-                r = o(500002),
-                i = o(668214),
-                a = o(997174),
-                s = o(118823);
+        652904: (e, t, n) => {
+            n.d(t, { Z: () => d });
+            var o = n(202784),
+                r = n(500002),
+                i = n(668214),
+                s = n(997174),
+                a = n(118823);
             const l = (0, i.Z)()
-                .propsFromActions(() => ({ updateLocation: s.YF, updateTweetDetailNav: a.NH }))
+                .propsFromActions(() => ({ updateLocation: a.YF, updateTweetDetailNav: s.NH }))
                 .withAnalytics();
-            class c extends n.Component {
+            class c extends o.Component {
                 componentDidMount() {
                     this._performPageUpdates(this.props);
                 }
                 componentDidUpdate(e) {
                     const {
                             history: { location: t },
-                            location: { pathname: o, search: n },
+                            location: { pathname: n, search: o },
                             locationKey: r,
                         } = this.props,
                         {
-                            location: { pathname: i, search: a },
-                            locationKey: s,
+                            location: { pathname: i, search: s },
+                            locationKey: a,
                         } = e;
                     let l = !1;
-                    t.pathname !== o ? (this._isInBackground = !0) : this._isInBackground && t.pathname === o && ((this._isInBackground = !1), (l = !0));
-                    const c = r || s;
-                    ((c && r !== s) || (!c && o !== i) || n !== a || l) && this._performPageUpdates(this.props);
+                    t.pathname !== n ? (this._isInBackground = !0) : this._isInBackground && t.pathname === n && ((this._isInBackground = !1), (l = !0));
+                    const c = r || a;
+                    ((c && r !== a) || (!c && n !== i) || o !== s || l) && this._performPageUpdates(this.props);
                 }
                 render() {
                     return this.props.children;
                 }
                 _performPageUpdates(e) {
-                    const { analytics: t, updateLocation: o, updateTweetDetailNav: n } = e;
-                    t.scribePageImpression(), o(t.contextualScribeNamespace, t.contextualScribeData), n(t.contextualScribeNamespace);
+                    const { analytics: t, updateLocation: n, updateTweetDetailNav: o } = e;
+                    t.scribePageImpression(), n(t.contextualScribeNamespace, t.contextualScribeData), o(t.contextualScribeNamespace);
                 }
             }
             c.defaultProps = { children: null };
             const d = (0, r.ZP)(l(c));
         },
-        297256: (e, t, o) => {
-            o.d(t, { b: () => j });
-            var n = o(807896),
-                r = (o(136728), o(202784)),
-                i = o(301503),
-                a = o(325686),
-                s = o(674132),
-                l = o.n(s),
-                c = o(487552),
-                d = o(337637),
-                h = o(675320),
-                u = o(161821),
-                p = o(516951),
-                g = o(665285),
-                m = o(811176),
-                y = o(731708),
-                f = o(154003),
-                C = o(757483),
-                S = o(108362),
-                b = o(595088),
-                k = o(716406),
-                x = o(855488),
-                _ = o(344175);
+        297256: (e, t, n) => {
+            n.d(t, { b: () => j });
+            var o = n(807896),
+                r = (n(136728), n(202784)),
+                i = n(301503),
+                s = n(325686),
+                a = n(674132),
+                l = n.n(a),
+                c = n(487552),
+                d = n(337637),
+                h = n(675320),
+                u = n(161821),
+                p = n(516951),
+                g = n(665285),
+                m = n(811176),
+                f = n(731708),
+                y = n(154003),
+                C = n(757483),
+                S = n(108362),
+                b = n(595088),
+                x = n(716406),
+                k = n(855488),
+                _ = n(344175);
             const E = l().fee0a8bc;
             class T extends r.Component {
                 constructor(e) {
@@ -334,62 +334,62 @@
                             return r.createElement(
                                 r.Fragment,
                                 null,
-                                (0, b.Z)(e).map(([e, o]) => {
-                                    const { getErrorText: i, initialValue: a, numberOfLines: s, ...l } = o,
+                                (0, b.Z)(e).map(([e, n]) => {
+                                    const { getErrorText: i, initialValue: s, numberOfLines: a, ...l } = n,
                                         c = i?.(t[e]);
-                                    return r.createElement(x.Z, (0, n.Z)({ errorText: c, invalid: !!c, key: e, multiline: !!s && s > 1, name: e, numberOfLines: s, onChange: this._handleFieldChanged(e), value: t[e] || "" }, l));
+                                    return r.createElement(k.Z, (0, o.Z)({ errorText: c, invalid: !!c, key: e, multiline: !!a && a > 1, name: e, numberOfLines: a, onChange: this._handleFieldChanged(e), value: t[e] || "" }, l));
                                 }),
                             );
                         }),
                         (this._handleFieldChanged = (e) => (t) => {
-                            const { fieldValues: o } = this.state,
-                                n = { ...o, [e]: t.target.value };
-                            this.setState({ fieldValues: n });
+                            const { fieldValues: n } = this.state,
+                                o = { ...n, [e]: t.target.value };
+                            this.setState({ fieldValues: o });
                         }),
                         (this._handleSave = (e) => {
                             const { onSave: t } = this.props,
-                                { fieldValues: o } = this.state;
-                            t(o, e);
+                                { fieldValues: n } = this.state;
+                            t(n, e);
                         }),
                         (this._isSaveEnabled = () => {
                             const { fields: e, isSaveDisabled: t } = this.props,
-                                { fieldValues: o } = this.state,
-                                n = (0, b.Z)(o),
-                                r = n.some(([t, o]) => o !== e[t].initialValue),
-                                i = n.some(([t, o]) => e[t].validLength && o.length > e[t].validLength),
-                                a = n.some(([t, o]) => !!e[t].getErrorText?.(o));
-                            return r && !i && !a && !(t && t(o));
+                                { fieldValues: n } = this.state,
+                                o = (0, b.Z)(n),
+                                r = o.some(([t, n]) => n !== e[t].initialValue),
+                                i = o.some(([t, n]) => e[t].validLength && n.length > e[t].validLength),
+                                s = o.some(([t, n]) => !!e[t].getErrorText?.(n));
+                            return r && !i && !s && !(t && t(n));
                         }),
-                        (this.state = { fieldValues: (0, k.Z)(e.fields, (e) => e.initialValue) });
+                        (this.state = { fieldValues: (0, x.Z)(e.fields, (e) => e.initialValue) });
                 }
                 render() {
-                    const { buttonLabelOverride: e, onClose: t, sheetTitle: o } = this.props;
-                    return r.createElement(_.Z, { onClose: t, primaryButtonConfig: { label: e || E, forceDisabled: !this._isSaveEnabled(), onClick: this._handleSave }, title: o, withKeyboardNavigation: !0 }, this._render());
+                    const { buttonLabelOverride: e, onClose: t, sheetTitle: n } = this.props;
+                    return r.createElement(_.Z, { onClose: t, primaryButtonConfig: { label: e || E, forceDisabled: !this._isSaveEnabled(), onClick: this._handleSave }, title: n, withKeyboardNavigation: !0 }, this._render());
                 }
             }
-            var B = o(371344),
-                v = o(40610),
-                I = o(530732),
-                w = o(215337),
-                L = o(135904),
-                M = o(989272),
-                Z = o(855125),
-                F = o(202253),
-                P = o(392237),
-                D = o(779802);
-            const O = P.default.create((e) => ({ separator: { borderEndWidth: e.borderWidths.small, borderColor: e.colors.gray200, marginVertical: e.spaces.space8 } })),
-                R = ({ style: e }) => r.createElement(a.Z, { style: [O.separator, e] }),
+            var B = n(371344),
+                w = n(40610),
+                v = n(530732),
+                I = n(215337),
+                F = n(135904),
+                L = n(989272),
+                P = n(855125),
+                M = n(202253),
+                Z = n(392237),
+                R = n(779802);
+            const D = Z.default.create((e) => ({ separator: { borderEndWidth: e.borderWidths.small, borderColor: e.colors.gray200, marginVertical: e.spaces.space8 } })),
+                O = ({ style: e }) => r.createElement(s.Z, { style: [D.separator, e] }),
                 A = l().a6a3d496,
-                z = l().acce6978,
-                W = l().f5e8f526,
-                K = l().h517e8d8,
+                K = l().acce6978,
+                z = l().f5e8f526,
+                W = l().h517e8d8,
                 U = l().a30ae58e,
-                V = l().da38c958,
-                H = l().fee0a8bc,
+                H = l().da38c958,
+                V = l().fee0a8bc,
                 G = l().d5d57678,
-                Q = l().ec822028,
-                N = l().ebc5d2cc,
-                $ = { [D.P7.bulleted]: ["-", "*", "+"], [D.P7.numbered]: ["1.", "1)", "1]"], [D.P7.blockquote]: [">", ">>"], [D.P7.header1]: ["#"], [D.P7.header2]: ["##"] };
+                N = l().ec822028,
+                Q = l().ebc5d2cc,
+                $ = { [R.P7.bulleted]: ["-", "*", "+"], [R.P7.numbered]: ["1.", "1)", "1]"], [R.P7.blockquote]: [">", ">>"], [R.P7.header1]: ["#"], [R.P7.header2]: ["##"] };
             class j extends r.Component {
                 constructor(e) {
                     super(e),
@@ -405,10 +405,10 @@
                         }),
                         (this._keyBindingFn = (e) => {
                             const { keyBindingFn: t } = this.props,
-                                o = i.KeyBindingUtil.hasCommandModifier(e),
-                                n = e.shiftKey && o,
+                                n = i.KeyBindingUtil.hasCommandModifier(e),
+                                o = e.shiftKey && n,
                                 r = e.key.toLowerCase();
-                            return "k" === r && o ? D.Qm.toLowerCase() : "x" === r && n ? D.fR.strikethrough.toLowerCase() : "7" === r && n ? D.P7.numbered : "8" === r && n ? D.P7.bulleted : "9" === r && n ? D.P7.blockquote : "." === r && n ? D.u4 : "," === r && n ? D.db : t?.(e);
+                            return "k" === r && n ? R.Qm.toLowerCase() : "x" === r && o ? R.fR.strikethrough.toLowerCase() : "7" === r && o ? R.P7.numbered : "8" === r && o ? R.P7.bulleted : "9" === r && o ? R.P7.blockquote : "." === r && o ? R.u4 : "," === r && o ? R.db : t?.(e);
                         }),
                         (this._isEditorFocused = () => {
                             const {
@@ -421,9 +421,9 @@
                                     richTextInputContext: { editorState: e },
                                 } = this.props,
                                 t = e?.getCurrentContent(),
-                                o = t?.getBlockMap().first().getType(),
-                                n = o === D.P7.bulleted || o === D.P7.numbered || o === D.P7.blockquote;
-                            return !this._isEditorFocused() && !n;
+                                n = t?.getBlockMap().first().getType(),
+                                o = n === R.P7.bulleted || n === R.P7.numbered || n === R.P7.blockquote;
+                            return !this._isEditorFocused() && !o;
                         }),
                         (this._getBackspaceAndDeleteCommandHandlers = () => {
                             const {
@@ -431,35 +431,35 @@
                                 richTextInputContext: { editorState: t },
                             } = this.props;
                             if (t && e) {
-                                const o = (o) => {
-                                        const n = o(t);
-                                        return n ? () => e(n) : void 0;
+                                const n = (n) => {
+                                        const o = n(t);
+                                        return o ? () => e(o) : void 0;
                                     },
-                                    n = (e, t) => (t ? Object.fromEntries(e.map((e) => [e, t])) : {});
-                                return { ...n(D.wX, o(i.RichUtils.onBackspace)), ...n(D.Ak, o(i.RichUtils.onDelete)) };
+                                    o = (e, t) => (t ? Object.fromEntries(e.map((e) => [e, t])) : {});
+                                return { ...o(R.wX, n(i.RichUtils.onBackspace)), ...o(R.Ak, n(i.RichUtils.onDelete)) };
                             }
                             return {};
                         }),
                         (this._getEditorStateWithLinkSelected = (e) => {
                             const t = this._getSelectedEntityWithRange();
                             if (t) {
-                                const { end: o, entity: n, start: r } = t,
-                                    i = n.getData().url;
-                                if (i) return { editorStateWithLinkSelected: this._getEditorStateWithTextSelection(e, r, o), entityUrl: i };
+                                const { end: n, entity: o, start: r } = t,
+                                    i = o.getData().url;
+                                if (i) return { editorStateWithLinkSelected: this._getEditorStateWithTextSelection(e, r, n), entityUrl: i };
                             }
                             return { editorStateWithLinkSelected: e, entityUrl: void 0 };
                         }),
-                        (this._getEditorStateWithTextSelection = (e, t, o) => {
-                            const n = e.getSelection(),
-                                r = n.merge(n.getIsBackward() ? { anchorOffset: o, focusOffset: t } : { anchorOffset: t, focusOffset: o });
+                        (this._getEditorStateWithTextSelection = (e, t, n) => {
+                            const o = e.getSelection(),
+                                r = o.merge(o.getIsBackward() ? { anchorOffset: n, focusOffset: t } : { anchorOffset: t, focusOffset: n });
                             return i.EditorState.acceptSelection(e, r);
                         }),
                         (this._getSelectedText = (e) => {
                             const t = e.getSelection(),
-                                o = e.getCurrentContent(),
-                                n = t.getStartKey();
-                            if (n === t.getEndKey()) {
-                                const e = o.getBlockForKey(n),
+                                n = e.getCurrentContent(),
+                                o = t.getStartKey();
+                            if (o === t.getEndKey()) {
+                                const e = n.getBlockForKey(o),
                                     r = t.getStartOffset(),
                                     i = t.getEndOffset();
                                 return e.getText().slice(r, i) || "";
@@ -471,15 +471,15 @@
                             } = this.props;
                             if (e) {
                                 const t = e.getSelection(),
-                                    o = e.getCurrentContent(),
-                                    n = t.getAnchorKey(),
-                                    r = o.getBlockForKey(n),
+                                    n = e.getCurrentContent(),
+                                    o = t.getAnchorKey(),
+                                    r = n.getBlockForKey(o),
                                     i = r.getEntityAt(t.getAnchorOffset()),
-                                    a = r.getEntityAt(t.getFocusOffset());
-                                if (i && i === a) {
+                                    s = r.getEntityAt(t.getFocusOffset());
+                                if (i && i === s) {
                                     const e = r.getCharacterList().toArray(),
                                         t = (e) => e?.getEntity() === i;
-                                    return { start: (0, d.Z)(e, t), end: (0, h.Z)(e, t) + 1, entity: o.getEntity(i) };
+                                    return { start: (0, d.Z)(e, t), end: (0, h.Z)(e, t) + 1, entity: n.getEntity(i) };
                                 }
                             }
                         }),
@@ -488,17 +488,17 @@
                                     richTextInputContext: { editorState: e },
                                     textSizesOverride: t,
                                 } = this.props,
-                                o = e ? i.RichUtils.getCurrentBlockType(e) : void 0;
-                            return (t || D.iH).find((e) => e.blockType === o) || D.Tr;
+                                n = e ? i.RichUtils.getCurrentBlockType(e) : void 0;
+                            return (t || R.iH).find((e) => e.blockType === n) || R.Tr;
                         }),
                         (this._toggleTextStyle = (e) => {
                             const {
                                 onChange: t,
-                                richTextInputContext: { editorState: o },
+                                richTextInputContext: { editorState: n },
                             } = this.props;
-                            return (n) => () => {
-                                if (!o || "function" != typeof t) return;
-                                const r = e(o, n);
+                            return (o) => () => {
+                                if (!n || "function" != typeof t) return;
+                                const r = e(n, o);
                                 t(r);
                             };
                         }),
@@ -507,21 +507,21 @@
                         }),
                         (this._handleIncreaseTextSize = () => {
                             const { textSizesOverride: e } = this.props,
-                                t = e || D.iH,
-                                o = this._getSelectedTextSize(),
-                                n = t.indexOf(o);
-                            if (0 !== n) {
-                                const e = t[n - 1];
+                                t = e || R.iH,
+                                n = this._getSelectedTextSize(),
+                                o = t.indexOf(n);
+                            if (0 !== o) {
+                                const e = t[o - 1];
                                 this._handleChangeTextSize(e);
                             }
                         }),
                         (this._handleDecreaseTextSize = () => {
                             const { textSizesOverride: e } = this.props,
-                                t = e || D.iH,
-                                o = this._getSelectedTextSize(),
-                                n = t.indexOf(o);
-                            if (n !== t.length - 1) {
-                                const e = t[n + 1];
+                                t = e || R.iH,
+                                n = this._getSelectedTextSize(),
+                                o = t.indexOf(n);
+                            if (o !== t.length - 1) {
+                                const e = t[o + 1];
                                 this._handleChangeTextSize(e);
                             }
                         }),
@@ -537,16 +537,16 @@
                         }),
                         (this._handleAddLink =
                             (e, t) =>
-                            ({ source: o, text: n }) => {
+                            ({ source: n, text: o }) => {
                                 const { onChange: r } = this.props;
-                                if (r && o) {
-                                    const a = e.getSelection(),
-                                        s = t ? i.EditorState.push(e, i.Modifier.replaceText(e.getCurrentContent(), a, n || o), "insert-characters") : e,
-                                        l = s.getSelection(),
-                                        c = this._getEditorStateWithTextSelection(s, a.getStartOffset(), l.getEndOffset()),
+                                if (r && n) {
+                                    const s = e.getSelection(),
+                                        a = t ? i.EditorState.push(e, i.Modifier.replaceText(e.getCurrentContent(), s, o || n), "insert-characters") : e,
+                                        l = a.getSelection(),
+                                        c = this._getEditorStateWithTextSelection(a, s.getStartOffset(), l.getEndOffset()),
                                         d = c
                                             .getCurrentContent()
-                                            .createEntity(D.Qm, "MUTABLE", { url: this._getUrlWithProtocol(o) })
+                                            .createEntity(R.Qm, "MUTABLE", { url: this._getUrlWithProtocol(n) })
                                             .getLastCreatedEntityKey();
                                     r(i.EditorState.forceSelection(i.RichUtils.toggleLink(c, c.getSelection(), d), l));
                                 }
@@ -558,8 +558,8 @@
                                 richTextInputContext: { editorState: t },
                             } = this.props;
                             if (e && t) {
-                                const { editorStateWithLinkSelected: o } = this._getEditorStateWithLinkSelected(t);
-                                e(i.RichUtils.toggleLink(o, o.getSelection(), null));
+                                const { editorStateWithLinkSelected: n } = this._getEditorStateWithLinkSelected(t);
+                                e(i.RichUtils.toggleLink(n, n.getSelection(), null));
                             }
                         }),
                         (this._handleLinkPopoverOpen = () => {
@@ -571,19 +571,19 @@
                         (this._handleReturn = (e) => {
                             const {
                                 handleReturn: t,
-                                onChange: o,
-                                richTextInputContext: { editorState: n },
+                                onChange: n,
+                                richTextInputContext: { editorState: o },
                             } = this.props;
-                            if (o && n) {
+                            if (n && o) {
                                 if (i.KeyBindingUtil.isSoftNewlineEvent(e)) {
-                                    return o(i.RichUtils.insertSoftNewline(n)), "handled";
+                                    return n(i.RichUtils.insertSoftNewline(o)), "handled";
                                 }
-                                const t = n.getSelection(),
-                                    r = n.getCurrentContent(),
-                                    a = t.getStartKey(),
-                                    s = a === t.getEndKey() ? r.getBlockForKey(a) : void 0;
-                                if (s?.getType() === D.P7.blockquote && 0 === s?.getLength()) {
-                                    return o(i.RichUtils.toggleBlockType(n, D.P7.blockquote)), "handled";
+                                const t = o.getSelection(),
+                                    r = o.getCurrentContent(),
+                                    s = t.getStartKey(),
+                                    a = s === t.getEndKey() ? r.getBlockForKey(s) : void 0;
+                                if (a?.getType() === R.P7.blockquote && 0 === a?.getLength()) {
+                                    return n(i.RichUtils.toggleBlockType(o, R.P7.blockquote)), "handled";
                                 }
                             }
                             return t?.(e) || "not-handled";
@@ -596,80 +596,80 @@
                         }),
                         (this._removeInvalidStyles = (e) => {
                             const t = e.getCurrentContent(),
-                                o = t.getBlockMap(),
-                                n = o.map(this._removeInvalidStylesFromContentBlock),
-                                r = t.merge({ blockMap: o.merge(n) });
+                                n = t.getBlockMap(),
+                                o = n.map(this._removeInvalidStylesFromContentBlock),
+                                r = t.merge({ blockMap: n.merge(o) });
                             return i.EditorState.push(e, r, "change-block-data");
                         }),
                         (this._removeInvalidStylesFromContentBlock = (e) => {
-                            const t = [...(0, u.Z)(D.fR), ...(0, u.Z)(D.P7)],
-                                o = e.getCharacterList().map((e) =>
+                            const t = [...(0, u.Z)(R.fR), ...(0, u.Z)(R.P7)],
+                                n = e.getCharacterList().map((e) =>
                                     e
                                         .getStyle()
                                         .filter((e) => !t?.includes(e))
                                         .reduce((e, t) => i.CharacterMetadata.removeStyle(e, t), e),
                                 );
-                            return (t?.includes(e.getType()) ? e : e.set("type", "unstyled")).set("characterList", o);
+                            return (t?.includes(e.getType()) ? e : e.set("type", "unstyled")).set("characterList", n);
                         }),
                         (this._getUrlWithProtocol = (e) => (e.startsWith("http://") || e.startsWith("https://") ? e : `https://${e}`)),
-                        (this._getSourceInputErrorText = (e) => (e ? ((0, g.Z)(e, !1, !1) ? void 0 : N) : Q)),
+                        (this._getSourceInputErrorText = (e) => (e ? ((0, g.Z)(e, !1, !1) ? void 0 : Q) : N)),
                         (this._renderToolbarButtonGroup = (e, t) => {
                             const {
-                                    richTextInputContext: { editorState: o },
+                                    richTextInputContext: { editorState: n },
                                 } = this.props,
-                                s = o?.getCurrentInlineStyle(),
-                                l = o ? i.RichUtils.getCurrentBlockType(o) : void 0;
+                                a = n?.getCurrentInlineStyle(),
+                                l = n ? i.RichUtils.getCurrentBlockType(n) : void 0;
                             return r.createElement(
-                                a.Z,
+                                s.Z,
                                 { style: q.buttonGroup },
-                                t ? null : r.createElement(R, { style: q.separatorMargin }),
+                                t ? null : r.createElement(O, { style: q.separatorMargin }),
                                 e.map((e, t) => {
-                                    const { Icon: o, buttonTestId: i, key: a, renderActionMenu: c, ...d } = e,
-                                        h = this._isEditorFocused() && s?.contains(a),
-                                        u = this._isEditorFocused() && a === l,
-                                        p = a === D.Qm && this.isPopoverShown,
+                                    const { Icon: n, buttonTestId: i, key: s, renderActionMenu: c, ...d } = e,
+                                        h = this._isEditorFocused() && a?.contains(s),
+                                        u = this._isEditorFocused() && s === l,
+                                        p = s === R.Qm && this.isPopoverShown,
                                         g = h || u || p,
-                                        m = r.createElement(o, { style: g ? void 0 : q.iconGray });
-                                    return r.createElement(r.Fragment, { key: a }, r.createElement(f.ZP, (0, n.Z)({ icon: m, key: a, preventFocusShift: this._isEditorFocused(), size: "small", testID: i, type: g ? "brandText" : "primaryText" }, d)), c && c());
+                                        m = r.createElement(n, { style: g ? void 0 : q.iconGray });
+                                    return r.createElement(r.Fragment, { key: s }, r.createElement(y.ZP, (0, o.Z)({ icon: m, key: s, preventFocusShift: this._isEditorFocused(), size: "small", testID: i, type: g ? "brandText" : "primaryText" }, d)), c && c());
                                 }),
                             );
                         }),
                         (this._renderTextSizeMenu = () => {
                             const { textSizesOverride: e } = this.props,
-                                t = e || D.iH,
-                                o = this._getSelectedTextSize(),
-                                n = t.map((e) => ({ isSelected: o === e, onClick: () => this._handleChangeTextSize(e), selectable: !0, text: e.component }));
-                            return r.createElement(m.Z, { items: n, onCloseRequested: this._handleHideTextSizeMenu, preventFocusShift: this._isEditorFocused(), shouldCloseOnClick: !0 });
+                                t = e || R.iH,
+                                n = this._getSelectedTextSize(),
+                                o = t.map((e) => ({ isSelected: n === e, onClick: () => this._handleChangeTextSize(e), selectable: !0, text: e.component }));
+                            return r.createElement(m.Z, { items: o, onCloseRequested: this._handleHideTextSizeMenu, preventFocusShift: this._isEditorFocused(), shouldCloseOnClick: !0 });
                         }),
-                        (this._renderLinkPopoverContent = (e, t) => (o) => {
-                            const n = { external: !0, openInSameFrame: !1, pathname: t };
+                        (this._renderLinkPopoverContent = (e, t) => (n) => {
+                            const o = { external: !0, openInSameFrame: !1, pathname: t };
                             return r.createElement(
-                                a.Z,
+                                s.Z,
                                 { style: q.linkPopoverContent },
-                                r.createElement(y.ZP, { numberOfLines: 2, style: q.bottomMargin, weight: "bold" }, e),
-                                r.createElement(Z.Z, { link: n, style: q.bottomMargin }, t),
+                                r.createElement(f.ZP, { numberOfLines: 2, style: q.bottomMargin, weight: "bold" }, e),
+                                r.createElement(P.Z, { link: o, style: q.bottomMargin }, t),
                                 r.createElement(
-                                    a.Z,
+                                    s.Z,
                                     { style: q.linkPopoverButtons },
                                     r.createElement(
-                                        f.ZP,
+                                        y.ZP,
                                         {
                                             onPress: () => {
-                                                o(), this._handleToggleLinkSheet();
+                                                n(), this._handleToggleLinkSheet();
                                             },
                                             type: "primaryFilled",
                                         },
-                                        W,
+                                        z,
                                     ),
                                     r.createElement(
-                                        f.ZP,
+                                        y.ZP,
                                         {
                                             onPress: () => {
-                                                o(), this._handleRemoveLink();
+                                                n(), this._handleRemoveLink();
                                             },
                                             style: q.removeLinkButtonMargin,
                                         },
-                                        K,
+                                        W,
                                     ),
                                 ),
                             );
@@ -679,29 +679,29 @@
                                 richTextInputContext: { editorState: e },
                             } = this.props;
                             if (e) {
-                                const { editorStateWithLinkSelected: t, entityUrl: o } = this._getEditorStateWithLinkSelected(e),
-                                    n = this._getSelectedText(t);
-                                return r.createElement(T, { buttonLabelOverride: o ? H : G, fields: { source: { label: V, initialValue: o || "", getErrorText: this._getSourceInputErrorText }, ...(void 0 !== n ? { text: { label: U, initialValue: n } } : {}) }, onClose: this._handleToggleLinkSheet, onSave: this._handleAddLink(t, void 0 !== n), sheetTitle: o ? z : A });
+                                const { editorStateWithLinkSelected: t, entityUrl: n } = this._getEditorStateWithLinkSelected(e),
+                                    o = this._getSelectedText(t);
+                                return r.createElement(T, { buttonLabelOverride: n ? V : G, fields: { source: { label: H, initialValue: n || "", getErrorText: this._getSourceInputErrorText }, ...(void 0 !== o ? { text: { label: U, initialValue: o } } : {}) }, onClose: this._handleToggleLinkSheet, onSave: this._handleAddLink(t, void 0 !== o), sheetTitle: n ? K : A });
                             }
                         }),
-                        (this._handleInTextShortcut = (e) => (t, o, n) => {
+                        (this._handleInTextShortcut = (e) => (t, n, o) => {
                             const r = e.getSelection(),
-                                a = i.Modifier.insertText(e.getCurrentContent(), r, n);
-                            let s = i.EditorState.push(e, a, "insert-characters");
-                            const l = i.Modifier.removeRange(s.getCurrentContent(), s.getSelection().merge({ anchorOffset: 0, focusOffset: o.length + n.length }), "backward"),
-                                c = i.Modifier.setBlockType(l, s.getSelection().merge({ anchorOffset: 0, focusOffset: 0 }), t);
-                            return (s = i.EditorState.push(s, c, "change-block-type")), this.props.onChange?.(s), "handled";
+                                s = i.Modifier.insertText(e.getCurrentContent(), r, o);
+                            let a = i.EditorState.push(e, s, "insert-characters");
+                            const l = i.Modifier.removeRange(a.getCurrentContent(), a.getSelection().merge({ anchorOffset: 0, focusOffset: n.length + o.length }), "backward"),
+                                c = i.Modifier.setBlockType(l, a.getSelection().merge({ anchorOffset: 0, focusOffset: 0 }), t);
+                            return (a = i.EditorState.push(a, c, "change-block-type")), this.props.onChange?.(a), "handled";
                         }),
                         (this._handleBeforeInput = (e, t) => {
-                            const { allowInTextShortcuts: o } = this.props.richTextInputContext;
-                            if (!o || " " !== e) return "not-handled";
-                            const n = t.getSelection(),
-                                r = t.getCurrentContent().getBlockForKey(n.getStartKey()),
+                            const { allowInTextShortcuts: n } = this.props.richTextInputContext;
+                            if (!n || " " !== e) return "not-handled";
+                            const o = t.getSelection(),
+                                r = t.getCurrentContent().getBlockForKey(o.getStartKey()),
                                 i = r.getType(),
-                                a = r.getText().slice(0, n.getFocusOffset()),
-                                s = this._handleInTextShortcut(t);
+                                s = r.getText().slice(0, o.getFocusOffset()),
+                                a = this._handleInTextShortcut(t);
                             if ("unstyled" !== i) return "not-handled";
-                            for (const [t, o] of Object.entries($)) if (o.includes(a)) return s(t, a, e);
+                            for (const [t, n] of Object.entries($)) if (n.includes(s)) return a(t, s, e);
                             return "not-handled";
                         }),
                         (this._setFieldTextInputRef = (e) => {
@@ -709,10 +709,10 @@
                         }),
                         (this.state = { showLinkSheet: !1, showTextSizeMenu: !1 });
                     const t = [];
-                    e.limitedRichText || (t.push((0, F.U_)(this._renderLinkPopoverContent, this._handleLinkPopoverOpen, this._handleLinkPopoverClose)), t.push((0, F.NA)(p.Z, e.paragraphFontSizeOverride))), t.push(F.aF), t.push(F.RU), (this.decorator = new i.CompositeDecorator(t));
+                    e.limitedRichText || (t.push((0, M.U_)(this._renderLinkPopoverContent, this._handleLinkPopoverOpen, this._handleLinkPopoverClose)), t.push((0, M.NA)(p.Z, e.paragraphFontSizeOverride))), t.push(M.aF), t.push(M.RU), (this.decorator = new i.CompositeDecorator(t));
                 }
                 componentDidMount() {
-                    this._setDecorator(), M.fH(L.c, L.n);
+                    this._setDecorator(), L.fH(F.c, F.n);
                 }
                 componentDidUpdate() {
                     const {
@@ -721,57 +721,57 @@
                     e && e.getDecorator() !== this.decorator && this._setDecorator();
                 }
                 render() {
-                    const { additionalToolbarButtonConfigs: e, emojiPickerButton: t, errorText: o, inputStyle: s, isInputFullWidth: l, keyCommandHandlers: c, limitedRichText: d, middleControl: h, onChange: u, paragraphFontSizeOverride: p, placeholder: g, richTextInputContext: m, showError: b, textSizesOverride: k, toolbarRightControl: x, toolbarStyle: _, withAppBar: E, ...T } = this.props,
-                        { showLinkSheet: L, showTextSizeMenu: M } = this.state,
-                        Z = (0, D.b$)(this._toggleTextStyle(i.RichUtils.toggleInlineStyle)),
-                        F = (0, D.QF)(this._toggleTextStyle(i.RichUtils.toggleBlockType)),
-                        O = (0, D.lD)(this._toggleTextStyle(i.RichUtils.toggleBlockType)),
-                        A = (0, D.KJ)(this._handleToggleLinkSheet),
-                        z = this._getSelectedTextSize(),
-                        W = { ...m, blockStyleFn: (0, D.su)(!1, m.blockStyleFn), stripPastedStyles: !1 },
-                        K = Object.fromEntries([...Z, ...(d ? [] : A), ...O, ...(d ? [] : F)].map((e) => [e.key.toLowerCase(), e.onPress])),
-                        U = { [D.u4]: this._handleIncreaseTextSize, [D.db]: this._handleDecreaseTextSize },
-                        V = { ...K, ...(d ? {} : U), ...this._getBackspaceAndDeleteCommandHandlers() },
-                        H = c ? { ...V, ...c } : V,
+                    const { additionalToolbarButtonConfigs: e, emojiPickerButton: t, errorText: n, inputStyle: a, isInputFullWidth: l, keyCommandHandlers: c, limitedRichText: d, middleControl: h, onChange: u, paragraphFontSizeOverride: p, placeholder: g, richTextInputContext: m, showError: b, textSizesOverride: x, toolbarRightControl: k, toolbarStyle: _, withAppBar: E, ...T } = this.props,
+                        { showLinkSheet: F, showTextSizeMenu: L } = this.state,
+                        P = (0, R.b$)(this._toggleTextStyle(i.RichUtils.toggleInlineStyle)),
+                        M = (0, R.QF)(this._toggleTextStyle(i.RichUtils.toggleBlockType)),
+                        D = (0, R.lD)(this._toggleTextStyle(i.RichUtils.toggleBlockType)),
+                        A = (0, R.KJ)(this._handleToggleLinkSheet),
+                        K = this._getSelectedTextSize(),
+                        z = { ...m, blockStyleFn: (0, R.su)(!1, m.blockStyleFn), stripPastedStyles: !1 },
+                        W = Object.fromEntries([...P, ...(d ? [] : A), ...D, ...(d ? [] : M)].map((e) => [e.key.toLowerCase(), e.onPress])),
+                        U = { [R.u4]: this._handleIncreaseTextSize, [R.db]: this._handleDecreaseTextSize },
+                        H = { ...W, ...(d ? {} : U), ...this._getBackspaceAndDeleteCommandHandlers() },
+                        V = c ? { ...H, ...c } : H,
                         G = this._handleOnChange,
-                        Q = C.Z.hexToCss(P.default.theme.colors.navigationBackground, 0),
-                        N = C.Z.hexToCss(P.default.theme.colors.navigationBackground, 1),
+                        N = C.Z.hexToCss(Z.default.theme.colors.navigationBackground, 0),
+                        Q = C.Z.hexToCss(Z.default.theme.colors.navigationBackground, 1),
                         $ = [q.toolbar_container, this.props.withAppBar ? q.toolbar_container_with_app_bar : q.toolbar_container_no_padding];
                     return r.createElement(
                         r.Fragment,
                         null,
                         r.createElement(
-                            a.Z,
+                            s.Z,
                             { style: $ },
-                            L ? this._renderLinkSheet() : null,
-                            b && o ? r.createElement(v.Z.Danger, { text: o, withIcon: !0 }) : null,
+                            F ? this._renderLinkSheet() : null,
+                            b && n ? r.createElement(w.Z.Danger, { text: n, withIcon: !0 }) : null,
                             r.createElement(
-                                a.Z,
+                                s.Z,
                                 { style: [q.toolbar, _] },
-                                Y,
+                                J,
                                 r.createElement(
-                                    a.Z,
+                                    s.Z,
                                     { id: "toolbar-styling-buttons", style: q.toolbar_styling_buttons },
-                                    this._renderToolbarButtonGroup(Z, !0),
+                                    this._renderToolbarButtonGroup(P, !0),
                                     d
                                         ? null
                                         : r.createElement(
                                               r.Fragment,
                                               null,
-                                              r.createElement(R, { style: q.separatorMargin }),
-                                              r.createElement(I.Z, { interactiveStyles: null, onClick: this._handleShowTextSizeMenu, preventFocusShift: this._isEditorFocused(), style: q.textSizeSelection }, (e) => r.createElement(r.Fragment, null, r.createElement(y.ZP, { color: "gray700", numberOfLines: 1, size: "subtext1" }, z.label), r.createElement(f.ZP, { icon: X, interactivityState: e, size: "small", type: "primaryText" }), M ? this._renderTextSizeMenu() : null)),
+                                              r.createElement(O, { style: q.separatorMargin }),
+                                              r.createElement(v.Z, { interactiveStyles: null, onClick: this._handleShowTextSizeMenu, preventFocusShift: this._isEditorFocused(), style: q.textSizeSelection }, (e) => r.createElement(r.Fragment, null, r.createElement(f.ZP, { color: "gray700", numberOfLines: 1, size: "subtext1" }, K.label), r.createElement(y.ZP, { icon: X, interactivityState: e, size: "small", type: "primaryText" }), L ? this._renderTextSizeMenu() : null)),
                                           ),
-                                    d ? null : this._renderToolbarButtonGroup(F),
-                                    this._renderToolbarButtonGroup(O),
+                                    d ? null : this._renderToolbarButtonGroup(M),
+                                    this._renderToolbarButtonGroup(D),
                                     d ? null : this._renderToolbarButtonGroup(A),
                                     t ? t() : null,
                                     e ? this._renderToolbarButtonGroup(e) : null,
                                 ),
-                                r.createElement(a.Z, { style: q.toolbar_right_control }, x, r.createElement(w.Z, { angle: 90, angleUnit: "deg", colors: [Q, N, N], locations: [0, 0.75, 1], style: q.toolbar_styling_buttons_fadeout_right })),
+                                r.createElement(s.Z, { style: q.toolbar_right_control }, k, r.createElement(I.Z, { angle: 90, angleUnit: "deg", colors: [N, Q, Q], locations: [0, 0.75, 1], style: q.toolbar_styling_buttons_fadeout_right })),
                             ),
-                            r.createElement(w.Z, { angle: 270, angleUnit: "deg", colors: [Q, N, N], locations: [0, 0.75, 1], style: q.toolbar_styling_buttons_fadeout_left }),
+                            r.createElement(I.Z, { angle: 270, angleUnit: "deg", colors: [N, Q, Q], locations: [0, 0.75, 1], style: q.toolbar_styling_buttons_fadeout_left }),
                         ),
-                        r.createElement(S.Z, { isFullWidth: l, withWideContainer: !0 }, h, r.createElement(B.Z, (0, n.Z)({ handleBeforeInput: this._handleBeforeInput, handleReturn: this._handleReturn, inputStyle: [q.input, s], keyBindingFn: this._keyBindingFn, keyCommandHandlers: H, onChange: G, placeholder: this._shouldShowPlaceholder() ? g : void 0, ref: this._setFieldTextInputRef, richTextInputContext: W }, T))),
+                        r.createElement(S.Z, { isFullWidth: l, withWideContainer: !0 }, h, r.createElement(B.Z, (0, o.Z)({ handleBeforeInput: this._handleBeforeInput, handleReturn: this._handleReturn, inputStyle: [q.input, a], keyBindingFn: this._keyBindingFn, keyCommandHandlers: V, onChange: G, placeholder: this._shouldShowPlaceholder() ? g : void 0, ref: this._setFieldTextInputRef, richTextInputContext: z }, T))),
                     );
                 }
                 focus() {
@@ -782,36 +782,292 @@
                 }
             }
             j.defaultProps = { leftAligned: !0, multiline: !0, styleType: "selection" };
-            const q = P.default.create((e) => {
+            const q = Z.default.create((e) => {
                     const t = e.componentZIndices.appBarZIndex,
-                        o = { position: "absolute", width: e.spacesPx.space48, height: "100%", pointerEvents: "none" };
-                    return { bottomMargin: { marginBottom: e.spaces.space8 }, buttonGroup: { flexDirection: "row" }, iconGray: { color: e.colors.gray700 }, input: { paddingHorizontal: 0, paddingBottom: 0 }, linkPopoverButtons: { flexDirection: "row", marginTop: e.spaces.space8 }, linkPopoverContent: { marginHorizontal: e.spaces.space24, marginVertical: e.spaces.space24 }, removeLinkButtonMargin: { marginStart: e.spaces.space8 }, separatorMargin: { marginHorizontal: `calc(${e.spaces.space4} + ${e.spaces.space2})` }, textSizeSelection: { alignItems: "center", flexDirection: "row", justifyContent: "space-between", marginStart: e.spaces.space8, marginEnd: e.spaces.space4, width: `calc(${e.spaces.space80} + ${e.spaces.space32})` }, toolbar_container_no_padding: { top: 0 }, toolbar_container_with_app_bar: { top: e.componentDimensions.appBarHeightPx - 0.5 }, toolbar_container: { zIndex: t, position: "sticky", width: "100%", backgroundColor: e.colors.cellBackground, borderBottomWidth: e.borderWidths.small, borderColor: e.colors.borderColor }, toolbar: { flexDirection: "row", justifyContent: "space-between", paddingBottom: e.spaces.space4 }, toolbar_styling_buttons: { flex: 1, flexDirection: "row", paddingStart: e.spaces.space8, paddingEnd: e.spaces.space48, overflowX: "auto", overscrollBehavior: "contain", WebkitOverflowScrolling: "touch", scrollbarWidth: "none", alignItems: "center", paddingVertical: e.spaces.space2 }, toolbar_styling_buttons_fadeout_right: { ...o, start: -1 * o.width }, toolbar_styling_buttons_fadeout_left: { ...o, start: 0, width: e.spacesPx.space16, zIndex: t + 1 }, toolbar_right_control: { flexShrink: 1, flexDirection: "row", alignItems: "center", paddingEnd: e.spaces.space16 } };
+                        n = { position: "absolute", width: e.spacesPx.space48, height: "100%", pointerEvents: "none" };
+                    return { bottomMargin: { marginBottom: e.spaces.space8 }, buttonGroup: { flexDirection: "row" }, iconGray: { color: e.colors.gray700 }, input: { paddingHorizontal: 0, paddingBottom: 0 }, linkPopoverButtons: { flexDirection: "row", marginTop: e.spaces.space8 }, linkPopoverContent: { marginHorizontal: e.spaces.space24, marginVertical: e.spaces.space24 }, removeLinkButtonMargin: { marginStart: e.spaces.space8 }, separatorMargin: { marginHorizontal: `calc(${e.spaces.space4} + ${e.spaces.space2})` }, textSizeSelection: { alignItems: "center", flexDirection: "row", justifyContent: "space-between", marginStart: e.spaces.space8, marginEnd: e.spaces.space4, width: `calc(${e.spaces.space80} + ${e.spaces.space32})` }, toolbar_container_no_padding: { top: 0 }, toolbar_container_with_app_bar: { top: e.componentDimensions.appBarHeightPx - 0.5 }, toolbar_container: { zIndex: t, position: "sticky", width: "100%", backgroundColor: e.colors.cellBackground, borderBottomWidth: e.borderWidths.small, borderColor: e.colors.borderColor }, toolbar: { flexDirection: "row", justifyContent: "space-between", paddingBottom: e.spaces.space4 }, toolbar_styling_buttons: { flex: 1, flexDirection: "row", paddingStart: e.spaces.space8, paddingEnd: e.spaces.space48, overflowX: "auto", overscrollBehavior: "contain", WebkitOverflowScrolling: "touch", scrollbarWidth: "none", alignItems: "center", paddingVertical: e.spaces.space2 }, toolbar_styling_buttons_fadeout_right: { ...n, start: -1 * n.width }, toolbar_styling_buttons_fadeout_left: { ...n, start: 0, width: e.spacesPx.space16, zIndex: t + 1 }, toolbar_right_control: { flexShrink: 1, flexDirection: "row", alignItems: "center", paddingEnd: e.spaces.space16 } };
                 }),
                 X = r.createElement(c.default, { style: q.iconGray }),
-                Y = r.createElement("style", null, "\n    #toolbar-styling-buttons *::-webkit-scrollbar {\n      display: none;\n    }\n  ");
+                J = r.createElement("style", null, "\n    #toolbar-styling-buttons *::-webkit-scrollbar {\n      display: none;\n    }\n  ");
         },
-        344175: (e, t, o) => {
-            o.d(t, { Z: () => u });
-            var n = o(202784),
-                r = o(325686),
-                i = o(370006),
-                a = o(786998),
-                s = o(731708),
-                l = o(154003),
-                c = o(157130),
-                d = o(138099);
-            const h = o(392237).default.create((e) => ({ sheet: { maxHeight: "100vh" }, appBar: { borderRadius: e.borderRadii.xLarge, overflow: "hidden" }, buttonContainer: { flexDirection: "row-reverse" }, secondaryButton: { marginEnd: e.spaces.space8 }, content: { flex: 1, overflowY: "auto" }, popoverContent: { padding: e.spaces.space20 } })),
-                u = ({ children: e, enableMaskForDismiss: t = !0, onBackClick: o, onClose: u, primaryButtonConfig: p, secondaryButtonConfig: g, style: m, title: y, withKeyboardNavigation: f, withPassthroughEvents: C }) => {
-                    const [S, b] = n.useState(!1),
-                        k = () => {
-                            x(), p?.onClick(x);
-                        },
+        977952: (e, t, n) => {
+            n.d(t, { Z: () => I });
+            var o = n(807896),
+                r = n(202784),
+                i = (n(136728), n(301503)),
+                s = n(516951),
+                a = n(950822),
+                l = n(233184),
+                c = n(745153),
+                d = n(392237),
+                h = n(989272),
+                u = (n(571372), n(370751)),
+                p = n(122375),
+                g = n(835305),
+                m = n(899492);
+            function f(e) {
+                let t;
+                if (e.html)
+                    try {
+                        t = (function (e) {
+                            if (!e.html) return null;
+                            if (
+                                ((function (e) {
+                                    const t = e.html;
+                                    if (!t) return;
+                                    const n = RegExp(`<img alt="(?<emoji>[^"]+)" .*? src="${m.S()}[^>]*>`, "g");
+                                    let o,
+                                        r = t;
+                                    for (; (o = n.exec(t)); ) {
+                                        const e = o.groups?.emoji;
+                                        if (!e) continue;
+                                        const t = o.index,
+                                            i = n.lastIndex;
+                                        r = [r.substring(0, t), e, r.substring(i, r.length)].join("");
+                                    }
+                                    e.html = r;
+                                })(e),
+                                !e.html)
+                            )
+                                return null;
+                            const t = (0, i.convertFromHTML)(e.html);
+                            if (!t || !Array.isArray(t.contentBlocks)) return null;
+                            const n = i.ContentState.createFromBlockArray(t.contentBlocks, t.entityMap);
+                            let o = (0, i.convertToRaw)(n);
+                            e.longformRichTextTransform ||
+                                (o.blocks = (function (e, t) {
+                                    const n = /[\n|\r]*?[^\n|^\r]+(?:[\n|\r]+)?/g;
+                                    let o;
+                                    const r = [];
+                                    for (; (o = n.exec(e.text)); ) {
+                                        const t = o.index,
+                                            i = n.lastIndex,
+                                            s = e.text.substring(t, i),
+                                            a = x(s, k.start_newline),
+                                            l = x(s, k.end_newline);
+                                        r.push([a, l]);
+                                    }
+                                    const s = [];
+                                    for (let e = 0; e < t.blocks.length; e++) {
+                                        let [n, o] = r[e];
+                                        0 === e && n && n++, e === t.blocks.length - 1 && o && o++;
+                                        for (let e = 0; e < n; e++) {
+                                            const e = (0, i.genKey)(),
+                                                t = { ..._(), key: e };
+                                            s.push(t);
+                                        }
+                                        s.push(t.blocks[e]);
+                                        for (let e = 0; e < o; e++) {
+                                            const e = (0, i.genKey)(),
+                                                t = { ..._(), key: e };
+                                            s.push(t);
+                                        }
+                                    }
+                                    return s;
+                                })(e, o));
+                            o = (function (e, t) {
+                                const n = [];
+                                for (const o of t.blocks)
+                                    switch (o.type) {
+                                        case p.Wo:
+                                            n.push(y(e, o));
+                                            break;
+                                        case p.p8:
+                                        case p.r$:
+                                        case p.Mm:
+                                        case p.Z4:
+                                        case p.Re:
+                                            if (e.allowExtendedPasteStyles) n.push(y(e, o));
+                                            else {
+                                                const t = { ...o, type: p.Wo };
+                                                n.push(y(e, t));
+                                            }
+                                            break;
+                                        default: {
+                                            const t = { ...o, type: p.Wo };
+                                            n.push(y(e, t));
+                                        }
+                                    }
+                                return { blocks: n, entityMap: e.longformRichTextTransform ? t.entityMap : {} };
+                            })(e, o);
+                            const r = (0, i.convertFromRaw)(o);
+                            return r;
+                        })(e);
+                    } catch (t) {
+                        const n = "warning",
+                            { html: o, text: r } = e,
+                            i = { extra: { text: r, html: o, error: t }, level: n };
+                        l.Z.report(new Error("[RichTextInput::handle_paste] html error"), i);
+                    }
+                return !t && e.text && (t = i.ContentState.createFromText(e.text)), t || null;
+            }
+            function y(e, t) {
+                const n = t.inlineStyleRanges || [],
+                    o = [],
+                    r = e.longformRichTextTransform ? b : S;
+                for (const t of n) !e.stripPastedStyles && r.has(t.style) && o.push(t);
+                return (t.inlineStyleRanges = o), t;
+            }
+            const C = [g.DraftJS.Bold, g.DraftJS.Italic],
+                S = (0, u.Z)(C),
+                b = (0, u.Z)([...S, g.DraftJS.Strikethrough]);
+            function x(e, t) {
+                const n = e.match(t);
+                if (!n) return 0;
+                const [o] = n;
+                return o.length - 1;
+            }
+            const k = { newline: /[\n\r]/, start_newline: /^[\n\r]+/, end_newline: /[\n\r]+$/ };
+            function _() {
+                return { key: "", type: "unstyled", text: "", depth: void 0, inlineStyleRanges: [], entityRanges: [] };
+            }
+            class E extends r.Component {
+                constructor(...e) {
+                    super(...e),
+                        (this.state = { containerClass: void 0 }),
+                        (this.focus = () => {
+                            this._editor && this._editor.focus();
+                        }),
+                        (this.blur = () => {
+                            this._editor && this._editor.blur();
+                        }),
+                        (this.getValue = () => this.props.editorState.getCurrentContent().getPlainText()),
+                        (this.getOffsetHeight = () => {
+                            const { editor: e } = this._editor || {};
+                            return (e && e.offsetHeight) || 0;
+                        }),
+                        (this.clear = () => {}),
+                        (this._setSelectionToStart = () => {
+                            const { editorState: e } = this.props,
+                                t = e.getCurrentContent().getFirstBlock().getKey();
+                            return i.EditorState.acceptSelection(e, new i.SelectionState({ anchorKey: t, anchorOffset: 0, focusKey: t, focusOffset: 0, isBackward: !1 }));
+                        }),
+                        (this._setFocusToStart = () => {
+                            const e = this._setSelectionToStart();
+                            return i.EditorState.forceSelection(e, e.getSelection());
+                        }),
+                        (this._setFocusToEnd = () => {
+                            const { autoFocus: e, editorState: t, onChange: n } = this.props;
+                            n?.(e ? i.EditorState.moveFocusToEnd(t) : i.EditorState.moveSelectionToEnd(t));
+                        }),
+                        (this._setDraftJsStyle = () => {
+                            const { contentHorizontalPadding: e, placeholderTextColor: t } = this.props,
+                                n = (0, h.w3)({ placeholderTextColor: t, contentHorizontalPadding: e });
+                            this.setState({ containerClass: n });
+                        }),
+                        (this._setEditorRef = (e) => {
+                            this._editor = e;
+                        }),
+                        (this._handleViewClick = () => this.focus()),
+                        (this._handleFiles = (e) => {
+                            const { onFilesAdded: t } = this.props,
+                                n = [];
+                            if (
+                                (e.forEach((e) => {
+                                    e instanceof File && n.push(e);
+                                }),
+                                n.length)
+                            ) {
+                                const e = t?.(n);
+                                return e ? "handled" : "not-handled";
+                            }
+                            return "not-handled";
+                        }),
+                        (this._onPastedFiles = (e) => this._handleFiles(e)),
+                        (this._onDroppedFiles = (e, t) => this._handleFiles(t)),
+                        (this._onPastedText = (e, t, n) => {
+                            const { multiline: o, onChange: r } = this.props;
+                            if (!r) return "not-handled";
+                            const { allowExtendedPasteStyles: s, longformRichTextTransform: a, stripPastedStyles: l } = this.props;
+                            let c = f({ text: e, html: t, editorState: n, stripPastedStyles: l, allowExtendedPasteStyles: s, longformRichTextTransform: a });
+                            if (!c) return "not-handled";
+                            if (!o) {
+                                const e = (function (e) {
+                                    return e.replace(w.all_newlines, " ");
+                                })(c.getPlainText());
+                                c = i.ContentState.createFromText(e);
+                            }
+                            return (c = i.Modifier.replaceWithFragment(n.getCurrentContent(), n.getSelection(), c.getBlockMap())), r(i.EditorState.push(n, c, "insert-fragment")), "handled";
+                        }),
+                        (this._myKeyBindingFn = (e) => {
+                            const { dismissComposerCommandName: t, keyBindingFn: n, sendTweetCommandName: o } = this.props,
+                                { hasCommandModifier: r } = i.KeyBindingUtil;
+                            return e.keyCode === B.enter && r(e) ? o : e.keyCode === B.esc ? t : n?.(e) || (0, i.getDefaultKeyBinding)(e);
+                        }),
+                        (this._onKeyCommand = (e) => {
+                            const { keyCommandHandlers: t } = this.props,
+                                n = t && t[e];
+                            return n ? (n(), "handled") : "not-handled";
+                        }),
+                        (this._onSingleLineReturn = (e, t) => {
+                            const { handleReturn: n } = this.props;
+                            return n?.(e, t), "handled";
+                        }),
+                        (this._getContainerStyle = () => {
+                            const e = v[this.props.appTextSize],
+                                t = d.default.theme.lineHeightsPx[e];
+                            let n = 1,
+                                o = 1;
+                            this.props.multiline && (this.props.numberOfLines && (n = this.props.numberOfLines), this.props.maxNumberOfLines && (o = this.props.maxNumberOfLines));
+                            const r = n * t,
+                                i = o * t;
+                            return this.props.withMaxHeight ? { minHeight: r, maxHeight: i, overflowX: "hidden", overflowY: "auto" } : { minHeight: r, height: "100%" };
+                        });
+                }
+                componentDidMount() {
+                    const { onChange: e, positionCursorAtBeginning: t, positionCursorAtEnd: n } = this.props;
+                    n ? this._setFocusToEnd() : t ? e?.(this._setFocusToStart()) : this.props.autoFocus && this.focus(), this._setDraftJsStyle();
+                }
+                static getDerivedStateFromError() {
+                    return {};
+                }
+                componentDidCatch(e) {
+                    l.Z.report(e, { tags: { userVisible: !0, draftJs: !0 } });
+                }
+                render() {
+                    const { multiline: e, onKeyPress: t, onKeyUp: n, testID: o } = this.props;
+                    return r.createElement(T, { className: [!e && h._i.single_line, this.state.containerClass, this.props.withFormatInline && h._i.format_inline].join(" ") }, r.createElement(T, { onClick: this._handleViewClick, style: [this._getContainerStyle(), this.props.style], testID: o ? `${o}RichTextInputContainer` : void 0 }, r.createElement(i.Editor, { ariaActiveDescendantID: this.props.ariaActiveDescendant, ariaAutoComplete: this.props.ariaAutocomplete, ariaControls: this.props.ariaControls, ariaLabel: this.props.ariaLabel, ariaMultiline: e, blockRenderMap: this.props.blockRenderMap, blockRendererFn: this.props.blockRendererFn, blockStyleFn: this.props.blockStyleFn, customAttrs: { [c.Z.NO_REFOCUS_ATTRIBUTE]: "true", onKeyPress: t, onKeyUp: n }, customStyleMap: { overflow: { backgroundColor: d.default.theme.colors.red200 } }, editorState: this.props.editorState, handleBeforeInput: this.props.handleBeforeInput, handleDroppedFiles: this._onDroppedFiles, handleKeyCommand: this._onKeyCommand, handlePastedFiles: this._onPastedFiles, handlePastedText: this._onPastedText, handleReturn: e ? this.props.handleReturn : this._onSingleLineReturn, keyBindingFn: this._myKeyBindingFn, onChange: this.props.onChange, onFocus: this.props.onFocus, onKeyDown: this.props.onKeyDown, placeholder: this.props.placeholder, ref: this._setEditorRef, spellCheck: "false" !== this.props.spellCheck, stripPastedStyles: this.props.stripPastedStyles, tabIndex: 0, webDriverTestID: o }), this.props.dragPlaceholder));
+                }
+            }
+            E.defaultProps = { allowExtendedPasteStyles: !1, appTextSize: "body", autoFocus: !1, keyCommandHandlers: {}, maxNumberOfLines: 30, multiline: !0, numberOfLines: 6, onFocus: s.Z, positionCursorAtEnd: !1, spellCheck: "true", stripPastedStyles: !0, withMaxHeight: !0, longformRichTextTransform: !1 };
+            const T = (e) => (0, a.Z)("div", e),
+                B = { enter: 13, esc: 27 };
+            const w = { all_newlines: /[\r\n]/g },
+                v = { small: "subtext2", normal: "body", large: "headline1", subtext2: "subtext2", body: "body", headline1: "headline1", title4: "title4" },
+                I = r.forwardRef((e, t) =>
+                    r.createElement(
+                        E,
+                        (0, o.Z)({}, e, {
+                            onFocus: function (t) {
+                                e.onFocus && e.onFocus(t);
+                            },
+                            ref: t,
+                        }),
+                    ),
+                );
+        },
+        344175: (e, t, n) => {
+            n.d(t, { Z: () => u });
+            var o = n(202784),
+                r = n(325686),
+                i = n(370006),
+                s = n(786998),
+                a = n(731708),
+                l = n(154003),
+                c = n(157130),
+                d = n(138099);
+            const h = n(392237).default.create((e) => ({ sheet: { maxHeight: "100vh" }, appBar: { borderRadius: e.borderRadii.xLarge, overflow: "hidden" }, buttonContainer: { flexDirection: "row-reverse" }, secondaryButton: { marginEnd: e.spaces.space8 }, content: { flex: 1, overflowY: "auto" }, popoverContent: { padding: e.spaces.space20 } })),
+                u = ({ children: e, enableMaskForDismiss: t = !0, onBackClick: n, onClose: u, primaryButtonConfig: p, secondaryButtonConfig: g, style: m, title: f, withKeyboardNavigation: y, withPassthroughEvents: C }) => {
+                    const [S, b] = o.useState(!1),
                         x = () => {
+                            k(), p?.onClick(k);
+                        },
+                        k = () => {
                             b((e) => !e);
                         },
-                        _ = n.createElement(i.Z, { backButtonType: o ? "back" : "close", onClick: o || u }),
+                        _ = o.createElement(i.Z, { backButtonType: n ? "back" : "close", onClick: n || u }),
                         E = g
-                            ? n.createElement(
+                            ? o.createElement(
                                   l.ZP,
                                   {
                                       "aria-label": g.label,
@@ -825,27 +1081,27 @@
                                   g.label,
                               )
                             : null,
-                        T = n.createElement(
+                        T = o.createElement(
                             r.Z,
                             { style: h.buttonContainer },
                             (() => {
                                 if (p) {
-                                    const { forceDisabled: t, label: o, popoverMessage: r, type: i } = p,
-                                        a = n.createElement(l.ZP, { "aria-label": o, disabled: S || t, onClick: k, size: "small", type: i || "primaryFilled" }, o);
-                                    return r ? n.createElement(c.Z, { enableHover: !0, renderContent: ((e = r), () => n.createElement(s.ZP, { style: h.popoverContent }, e)), withArrow: !0 }, a) : a;
+                                    const { forceDisabled: t, label: n, popoverMessage: r, type: i } = p,
+                                        s = o.createElement(l.ZP, { "aria-label": n, disabled: S || t, onClick: x, size: "small", type: i || "primaryFilled" }, n);
+                                    return r ? o.createElement(c.Z, { enableHover: !0, renderContent: ((e = r), () => o.createElement(a.ZP, { style: h.popoverContent }, e)), withArrow: !0 }, s) : s;
                                 }
                                 return null;
                                 var e;
                             })(),
                             E,
                         );
-                    return n.createElement(d.Z, { enableMaskForDismiss: t, onMaskClick: u, style: [h.sheet, m], type: "full", withKeyboardNavigation: f, withMask: !0, withPassthroughEvents: C }, n.createElement(a.Z, { leftControl: _, rightControl: T, style: h.appBar, title: y }), n.createElement(r.Z, { style: h.content }, e));
+                    return o.createElement(d.Z, { enableMaskForDismiss: t, onMaskClick: u, style: [h.sheet, m], type: "full", withKeyboardNavigation: y, withMask: !0, withPassthroughEvents: C }, o.createElement(s.Z, { leftControl: _, rightControl: T, style: h.appBar, title: f }), o.createElement(r.Z, { style: h.content }, e));
                 };
         },
-        183806: (e, t, o) => {
-            o.d(t, { Z: () => n });
-            const n = o(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
+        183806: (e, t, n) => {
+            n.d(t, { Z: () => o });
+            const o = n(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.TwitterArticles~bundle.SettingsExtendedProfile~bundle.WorkHistory~ondemand.Verified.ee6db97a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.TwitterArticles~bundle.SettingsExtendedProfile~bundle.WorkHistory~ondemand.Verified.497cebda.js.map

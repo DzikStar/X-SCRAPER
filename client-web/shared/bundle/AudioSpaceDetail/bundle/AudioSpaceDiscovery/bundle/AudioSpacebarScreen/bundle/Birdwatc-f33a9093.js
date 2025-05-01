@@ -21,8 +21,8 @@
                 M = r(950570),
                 f = r(911318);
             const b = i().ib65b1c6,
-                w = i().f55cebb8,
-                _ = i().dcc304d6,
+                _ = i().f55cebb8,
+                w = i().dcc304d6,
                 y = i().g61ed8a4,
                 P = { clientId: f.fp, scope: "name email", usePopup: !0 };
             class I extends o.PureComponent {
@@ -35,9 +35,9 @@
                             const { buttonState: e } = this.props;
                             switch (e) {
                                 case u.yX.LogIn:
-                                    return w;
-                                case u.yX.ContinueWith:
                                     return _;
+                                case u.yX.ContinueWith:
+                                    return w;
                                 default:
                                     return b;
                             }
@@ -101,9 +101,9 @@
             const i = (0, n.Z)({
                 loader: () =>
                     Promise.all([
-                        r.e("icons.24"),
                         r.e("modules.common-e907d115"),
                         r.e("modules.common-e019dbda"),
+                        r.e("icons.11"),
                         r.e("modules.audio-6107ac1a"),
                         r.e("modules.audio-b953418a"),
                         r.e("modules.audio-7c51e6a7"),
@@ -121,7 +121,6 @@
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-64ffe41f"),
-                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-5517db7c"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-58d4ab8e"),
@@ -160,9 +159,9 @@
             const D = (0, n.Z)({
                 loader: () =>
                     Promise.all([
-                        r.e("icons.24"),
                         r.e("modules.common-e907d115"),
                         r.e("modules.common-e019dbda"),
+                        r.e("icons.11"),
                         r.e("modules.audio-6107ac1a"),
                         r.e("modules.audio-b953418a"),
                         r.e("modules.audio-7c51e6a7"),
@@ -180,7 +179,6 @@
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-64ffe41f"),
-                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-5517db7c"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-58d4ab8e"),
@@ -256,15 +254,15 @@
                 M = r(399398),
                 f = r(88660),
                 b = r(293115),
-                w = r(725405),
-                _ = r(125363),
+                _ = r(725405),
+                w = r(125363),
                 y = r(919022),
                 P = r(443781);
             const I = D().da1aa48f,
                 A = D().b68c3784,
                 k = "get_verified_profile_sidebar",
                 v = ({ dismiss: e, profileUser: { screen_name: a }, viewerUser: { name: r, profile_image_url_https: o } }) => {
-                    const c = (0, w.Z)(),
+                    const c = (0, _.Z)(),
                         { featureSwitches: u } = (0, P.QZ)(),
                         f = u.getStringValue("subscriptions_upsells_verified_profile_sidebar_variant"),
                         b = d.useMemo(() => {
@@ -287,7 +285,7 @@
                     (0, p.q)(() => {
                         c.scribeAction("impression");
                     });
-                    const { description: _, header: y, withAnimatedBadge: v, withAvatar: g, withUsername: S } = ((e, a) => ({ variant_a: { header: D().e4a7a968, description: I({ screenName: a }), withAnimatedBadge: !0 }, variant_b: { header: D().id9c1e82, description: I({ screenName: a }), withAnimatedBadge: !0 }, variant_c: { header: D().d43b0edc, description: I({ screenName: a }), withAnimatedBadge: !0 }, variant_d: { header: D().d4ea0ed4, description: I({ screenName: a }), withAnimatedBadge: !0 }, variant_e: { header: D().cffeaeae, description: I({ screenName: a }), withAvatar: !0 }, variant_f: { header: D().cffeaeae, description: I({ screenName: a }), withUsername: !0 } })[e])(b, a);
+                    const { description: w, header: y, withAnimatedBadge: v, withAvatar: g, withUsername: S } = ((e, a) => ({ variant_a: { header: D().e4a7a968, description: I({ screenName: a }), withAnimatedBadge: !0 }, variant_b: { header: D().id9c1e82, description: I({ screenName: a }), withAnimatedBadge: !0 }, variant_c: { header: D().d43b0edc, description: I({ screenName: a }), withAnimatedBadge: !0 }, variant_d: { header: D().d4ea0ed4, description: I({ screenName: a }), withAnimatedBadge: !0 }, variant_e: { header: D().cffeaeae, description: I({ screenName: a }), withAvatar: !0 }, variant_f: { header: D().cffeaeae, description: I({ screenName: a }), withUsername: !0 } })[e])(b, a);
                     return d.createElement(
                         M.g,
                         { testID: "verified_profile_upsell" },
@@ -310,7 +308,7 @@
                                 v ? d.createElement(n.Z, { style: Z.image }, d.createElement(t.Z, { "aria-label": A, image: "https://abs.twimg.com/responsive-web/client-web/verification-card-v2@3x.8ebee019.png" })) : null,
                                 g ? d.createElement(n.Z, { style: Z.userAvatar }, d.createElement(s.default, { hasAdaptiveImage: !0, uri: o }), d.createElement(h.default, { style: [Z.iconVerified, Z.iconOverlap] })) : null,
                                 d.createElement(i.ZP, { size: "headline1", weight: "heavy" }, y),
-                                d.createElement(i.ZP, null, _),
+                                d.createElement(i.ZP, null, w),
                                 d.createElement(
                                     l.ZP,
                                     {
@@ -337,9 +335,9 @@
                 },
                 S = ({ screenName: e }) => {
                     const { featureSwitches: a, userClaims: r } = (0, P.QZ)(),
-                        o = (0, _.I0)(),
-                        n = (0, _.v9)(y.ZP.selectViewerUser),
-                        l = (0, _.v9)((a) => y.ZP.selectByScreenName(a, e));
+                        o = (0, w.I0)(),
+                        n = (0, w.v9)(y.ZP.selectViewerUser),
+                        l = (0, w.v9)((a) => y.ZP.selectByScreenName(a, e));
                     d.useEffect(() => {
                         o(y.ZP.fetchOneByScreenNameIfNeeded(e));
                     }, [o, e]);
@@ -480,4 +478,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-f33a9093.66e6be0a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-f33a9093.a6cfc5fa.js.map

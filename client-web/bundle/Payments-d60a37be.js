@@ -3,7 +3,7 @@
     ["bundle.Payments-d60a37be"],
     {
         43429: (e, t, n) => {
-            n.d(t, { $W: () => r, DH: () => f, Ln: () => m, Ms: () => b, NU: () => y, Rz: () => o, Vq: () => i, ah: () => c, cX: () => l, dX: () => u, hv: () => h, ic: () => a, q9: () => g, uc: () => _, w8: () => s, wC: () => d, wG: () => p });
+            n.d(t, { $W: () => r, DH: () => f, Ln: () => m, Ms: () => b, NU: () => y, Rz: () => o, Vq: () => i, ah: () => c, cX: () => l, dX: () => u, hv: () => _, ic: () => a, q9: () => g, uc: () => h, w8: () => s, wC: () => d, wG: () => p });
             n(202784);
             const a = 25,
                 r = "xpayments-preset-all",
@@ -16,12 +16,12 @@
                 u = Object.freeze({ bank: "bank", card: "card", x: "x" }),
                 m = 4e3,
                 p = 4,
-                _ = "https://money.x.com/articles/terms-and-conditions",
-                h = "https://money.x.com/articles/privacy-policy",
+                h = "https://money.x.com/articles/terms-and-conditions",
+                _ = "https://money.x.com/articles/privacy-policy",
                 f = "https://money.x.com/articles/short-form-disclosure",
                 g = Object.freeze({ initiate: "initiate-challenge", complete2fa: "2fa-complete-challenge", completeKyc: "kyc-complete-challenge", completeDocv: "docv-complete-challenge", completeSelfie: "selfie-complete-challenge" }),
                 y = Object.freeze({ balance: "balance", credit: "credit", debit: "debit" }),
-                b = Object.freeze({ interest: "interest", deposit: "deposit", withdraw: "withdraw", atm: "atm" });
+                b = Object.freeze({ interest: "interest", cashback: "cashback", deposit: "deposit", withdraw: "withdraw", atm: "atm" });
         },
         452275: (e, t, n) => {
             n.d(t, { Z: () => d });
@@ -53,12 +53,12 @@
                 u = n(725516),
                 m = n(727384),
                 p = n(56495),
-                _ = n(10622),
-                h = n.n(_);
+                h = n(10622),
+                _ = n.n(h);
             n(585488);
             const f = p.Z,
                 g = ({ challengeId: e, challengeResponse: t, environment: n, loginRequestId: a }) =>
-                    h()(n, f, { challengeId: e, challengeResponse: t, loginRequestId: a }, { fetchPolicy: "network-only" })
+                    _()(n, f, { challengeId: e, challengeResponse: t, loginRequestId: a }, { fetchPolicy: "network-only" })
                         .toPromise()
                         .then((e) => {
                             const t = e?.viewer_v2?.xp_finish_two_factor_auth_challenge?.login_request,
@@ -200,10 +200,10 @@
                 X = "Too many attempts, try again later.",
                 K = { DuplicatedRenameTwoFactorMethodDisplayName: G, ExpiredLoginVerification: B, FailureSmsCarrierDisabled: "We were not able to send an SMS to this carrier.", IneligibleFor2faAfterModification: G, InvalidRenameTwoFactorMethodDisplayName: G, LoginVerificationUserReactivationRequired: G, NoSecretForUser: G, NoTwoFactorAuthMethod: G, NotAllowed: G, NotValidForTokenExchange: G, NotYetApprovedLoginVerification: G, OfflineCodeSync: G, OverLoginVerificationAttemptLimit: X, OverLoginVerificationConvertLimit: X, OverResendLimit: X, SmsOverPerUserLimit: X, TwoFactorAuthMethodExpired: B, FailureSendingLoginVerificationRequest: $, OverLoginVerificationStartLimit: X, SmsVerPerUserLimit: X, TwoFactorAuthMethodDoesNotExist: G },
                 Q = ({ challengeId: e, isNonModalScreen: t, onSuccess: n }) => {
-                    const { challenge: r, error: l, loginRequestId: p, twoFactor: _ } = W({ challengeId: e }),
-                        h = (0, o.useHistory)(),
+                    const { challenge: r, error: l, loginRequestId: p, twoFactor: h } = W({ challengeId: e }),
+                        _ = (0, o.useHistory)(),
                         f = (0, d.p)(),
-                        y = h.location?.state,
+                        y = _.location?.state,
                         b = s()(),
                         v = (0, u.z)();
                     a.useEffect(() => {
@@ -225,10 +225,10 @@
                         ),
                         { challengeInitiator: P, closePath: C } = y ?? {},
                         Z = a.useCallback(() => {
-                            (0, m.qc)({ environment: b, closePath: C, challengeInitiator: P, history: h });
-                        }, [P, C, b, h]),
-                        I = a.useMemo(() => (_?.type === c.O.BackupCode ? a.createElement(q, { onClose: Z, onSubmit: w }) : r && _?.type === c.O.Passkey ? a.createElement(D, { challenge: r, onClose: Z, onSubmit: w }) : _?.type === c.O.Sms ? a.createElement(L, { onClose: Z, onSubmit: w }) : _?.type === c.O.Totp ? a.createElement(E, { onClose: Z, onSubmit: w }) : a.createElement(z, { error: l ? (K[l] ?? $) : $, onClose: Z })), [r, l, Z, w, _?.type]);
-                    return a.createElement(i.Z, { backButtonType: "close", history: h, isFullWidth: t, onBackClick: Z }, I);
+                            (0, m.qc)({ environment: b, closePath: C, challengeInitiator: P, history: _ });
+                        }, [P, C, b, _]),
+                        I = a.useMemo(() => (h?.type === c.O.BackupCode ? a.createElement(q, { onClose: Z, onSubmit: w }) : r && h?.type === c.O.Passkey ? a.createElement(D, { challenge: r, onClose: Z, onSubmit: w }) : h?.type === c.O.Sms ? a.createElement(L, { onClose: Z, onSubmit: w }) : h?.type === c.O.Totp ? a.createElement(E, { onClose: Z, onSubmit: w }) : a.createElement(z, { error: l ? (K[l] ?? $) : $, onClose: Z })), [r, l, Z, w, h?.type]);
+                    return a.createElement(i.Z, { backButtonType: "close", history: _, isFullWidth: t, onBackClick: Z }, I);
                 },
                 J = { context: "VerifyTwoFactorAuth" };
             function Y(e) {
@@ -250,8 +250,8 @@
                 u = n(980407),
                 m = n(943914),
                 p = n(655352),
-                _ = n(163889),
-                h = n(514639),
+                h = n(163889),
+                _ = n(514639),
                 f = n(412450),
                 g = n(441484),
                 y = n(99387),
@@ -267,7 +267,7 @@
                 }
                 static addHandler(e, t) {
                     w.handlers.add(t);
-                    const { isInlineFrame: n } = h.QU[e];
+                    const { isInlineFrame: n } = _.QU[e];
                     (w.activeHandler && n) || w._updateActiveHandler(e, t);
                 }
                 static removeHandler(e, t) {
@@ -291,16 +291,16 @@
                 Z = (0, v.bI)(),
                 I = ({ allowClipboardWrite: e, iframeUrl: t, isBackgroundHidden: n, isInlineFrame: s, isNonModalScreen: o }) => {
                     const d = (0, c.useHistory)(),
-                        [m, h] = a.useState(!1),
+                        [m, _] = a.useState(!1),
                         f = (0, p.ZP)() ? F.paddingSmall : null,
                         g = a.useCallback(() => {
-                            h(!0);
+                            _(!0);
                         }, []),
-                        y = a.createElement(r.Z, { style: n ? F.hide : F.modal }, t && a.createElement(a.Fragment, null, !m && a.createElement(i.Z, { size: "small", style: b.ZP.spinner, testID: "loading-spinner" }), a.createElement(l.Z, { allowClipboardWrite: e, allowForms: !0, onLoad: g, reportError: _.ZP, src: t, style: m ? [F.idvIframe, s ? void 0 : f] : F.hide, title: "Money" })));
+                        y = a.createElement(r.Z, { style: n ? F.hide : F.modal }, t && a.createElement(a.Fragment, null, !m && a.createElement(i.Z, { size: "small", style: b.ZP.spinner, testID: "loading-spinner" }), a.createElement(l.Z, { allowClipboardWrite: e, allowForms: !0, onLoad: g, reportError: h.ZP, src: t, style: m ? [F.idvIframe, s ? void 0 : f] : F.hide, title: "Money" })));
                     return o || s || n ? y : a.createElement(u.Z, { history: d, renderHeader: () => null }, y);
                 },
                 k = (e) => {
-                    const { additionalParams: t, linkType: n = h.P_.onboarding, redirectPath: r, errorPath: s, redirectState: i, closePath: l, eventCallback: d, payload: u, isNonModalScreen: m, isBackgroundHidden: p, challengeInitiator: _, challengeId: b } = e,
+                    const { additionalParams: t, linkType: n = _.P_.onboarding, redirectPath: r, errorPath: s, redirectState: i, closePath: l, eventCallback: d, payload: u, isNonModalScreen: m, isBackgroundHidden: p, challengeInitiator: h, challengeId: b } = e,
                         w = (0, c.useHistory)(),
                         { paymentsOrigin: k } = (0, f.Z)(),
                         E = g.Z.getSession(),
@@ -308,7 +308,7 @@
                         F = (0, v.gh)(),
                         [T, q] = a.useState(!1),
                         x = o()(),
-                        { allowClipboardWrite: A, defaultClosePath: R, isInlineFrame: z, path: H, redirectOnCompletion: D } = h.QU[n],
+                        { allowClipboardWrite: A, defaultClosePath: R, isInlineFrame: z, path: H, redirectOnCompletion: D } = _.QU[n],
                         N = a.useCallback(
                             (e) => {
                                 const { errors: t, message: n, url: a } = e.data;
@@ -325,13 +325,13 @@
                                         D && q(!0);
                                         break;
                                     case C.failure:
-                                        D && w.replace(s ?? h.D$, { errors: t });
+                                        D && w.replace(s ?? _.D$, { errors: t });
                                         break;
                                     case C.ineligible:
-                                        (0, v.J$)(x), w.replace(h.H0);
+                                        (0, v.J$)(x), w.replace(_.H0);
                                         break;
                                     case C.pendingReview:
-                                        (0, v.J$)(x), w.replace(h.vr);
+                                        (0, v.J$)(x), w.replace(_.vr);
                                         break;
                                     case C.redirect:
                                         Z && (window.location.href = a);
@@ -355,14 +355,14 @@
                                 e.set(
                                     "redirectUrl",
                                     (({ challengeId: e, challengeInitiator: t }) => {
-                                        const n = new URL(`https://${window.location.host}${h.$l}`);
+                                        const n = new URL(`https://${window.location.host}${_.$l}`);
                                         return e && n.searchParams.set("challengeId", e), t && n.searchParams.set("challengeInitiator", t), n.href;
-                                    })({ challengeId: b, challengeInitiator: _ }),
+                                    })({ challengeId: b, challengeInitiator: h }),
                                 ),
                             (0, v.uG)({ basePath: `/${H}`, xPaymentsSession: E, theme: F, paymentsOrigin: k, moreSearchParams: e, providerToken: S })
                         );
-                    }, [E, k, S, t, H, F, b, _]);
-                    return T ? a.createElement(y.default, { challengeId: b, challengeInitiator: _, linkType: n, redirectPath: r, redirectState: i }) : a.createElement(I, { allowClipboardWrite: A, iframeUrl: O, isBackgroundHidden: p, isInlineFrame: z, isNonModalScreen: m });
+                    }, [E, k, S, t, H, F, b, h]);
+                    return T ? a.createElement(y.default, { challengeId: b, challengeInitiator: h, linkType: n, redirectPath: r, redirectState: i }) : a.createElement(I, { allowClipboardWrite: A, iframeUrl: O, isBackgroundHidden: p, isInlineFrame: z, isNonModalScreen: m });
                 },
                 E = (e) => {
                     const t = a.createElement(i.Z, { size: "small", style: b.ZP.spinner, testID: "loading-spinner" });
@@ -597,9 +597,9 @@
                         });
                     }, [u]);
                     const p = t?.check_transfers_eligibility,
-                        _ = !!p?.eligible,
-                        { permissions: h, requirements: f, roles: g } = p ?? {};
-                    return { isEligible: e && _, hasLoaded: !m && (!!t || a), requirements: f, roles: g, permissions: h, paymentsRedirectPath: (0, l.rW)({ roles: g, permissions: h }) };
+                        h = !!p?.eligible,
+                        { permissions: _, requirements: f, roles: g } = p ?? {};
+                    return { isEligible: e && h, hasLoaded: !m && (!!t || a), requirements: f, roles: g, permissions: _, paymentsRedirectPath: (0, l.rW)({ roles: g, permissions: _ }) };
                 };
         },
         934265: (e, t, n) => {
@@ -726,11 +726,11 @@
                 u = n(482924),
                 m = n(746523),
                 p = n(351743),
-                _ = n.n(p),
-                h = n(727384);
+                h = n.n(p),
+                _ = n(727384);
             const f = m.Z,
                 g = () => {
-                    const [e, t] = _()(f);
+                    const [e, t] = h()(f);
                     return [
                         r.useCallback(
                             ({ preferences: t }) =>
@@ -742,7 +742,7 @@
                                                 s = e?.update_customer_preferences?.challenge_id;
                                             r ? a(r) : n({ challengeId: s });
                                         },
-                                        updater: h.Oc,
+                                        updater: _.Oc,
                                         onError: a,
                                     });
                                 }),
@@ -759,23 +759,23 @@
                         s = (0, i.p)(),
                         m = e?.get_customer?.preferences,
                         p = r.useMemo(() => ({ require_pin_to_create_transactions: !!m?.require_pin_to_create_transactions, require_pin_to_unlock: !!m?.require_pin_to_unlock, enable_bill_pay: !!m?.enable_bill_pay, require_pin_to_link_payment_method: !!m?.require_pin_to_link_payment_method, only_receive_transfer_from_following: !!m?.only_receive_transfer_from_following, only_allow_request_from_following: !!m?.only_allow_request_from_following, enable_card_payments: !!m?.enable_card_payments }), [m]),
-                        [_, h] = r.useState(p),
+                        [h, _] = r.useState(p),
                         [f, v] = g(),
                         w = r.useCallback(
                             (e, t) => {
-                                f({ preferences: { ..._, [e]: t } })
+                                f({ preferences: { ...h, [e]: t } })
                                     .then(({ challengeId: e }) => {
                                         e ? a.push(l.vw, { challengeId: e, successMessage: y, challengeInitiator: l.kW.preference }) : s({ text: y });
                                     })
                                     .catch(() => {
-                                        s({ text: "Something went wrong. Please try again later." }), h((n) => ({ ...n, [e]: !t }));
+                                        s({ text: "Something went wrong. Please try again later." }), _((n) => ({ ...n, [e]: !t }));
                                     });
                             },
-                            [s, f, a, _],
+                            [s, f, a, h],
                         ),
                         P = r.useCallback(
                             (e, t) => {
-                                h((n) => ({ ...n, [e]: t })), w(e, t);
+                                _((n) => ({ ...n, [e]: t })), w(e, t);
                             },
                             [w],
                         ),
@@ -788,12 +788,12 @@
                         Z = e?.get_customer?.__id ?? "get_customer";
                     return (
                         r.useEffect(() => {
-                            n !== d.iF.LOADING && h(p);
+                            n !== d.iF.LOADING && _(p);
                         }, [p, n]),
                         o()([Z], () => {
                             t();
                         }),
-                        { preferences: _, refetch: t, refetchStatus: n, handlePreferencesChange: P, handleDeferredPreferencesChange: C, isInProgress: v }
+                        { preferences: h, refetch: t, refetchStatus: n, handlePreferencesChange: P, handleDeferredPreferencesChange: C, isInProgress: v }
                     );
                 };
         },
@@ -838,8 +838,8 @@
                     u = d?.legacy?.name ?? "",
                     m = parseFloat(n),
                     p = n ? (0, a.p2)({ amount: m, currency: o }) : null,
-                    _ = (0, r.Z)({ senderId: d?.rest_id });
-                return [(0, a.M9)({ status: i, transactionType: l, isViewerSender: _ }), u && p ? { name: u, formattedAmount: p } : null];
+                    h = (0, r.Z)({ senderId: d?.rest_id });
+                return [(0, a.M9)({ status: i, transactionType: l, isViewerSender: h }), u && p ? { name: u, formattedAmount: p } : null];
             };
         },
         825941: (e, t, n) => {
@@ -905,4 +905,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-d60a37be.b55095da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-d60a37be.ebb27eea.js.map

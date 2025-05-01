@@ -203,10 +203,10 @@
             const A = "FocalTweetInlineTombstone",
                 I = "More Replies";
             let g;
-            const M = Object.freeze({ Default: "ui_defaultLabel", TransparentCursor: "ui_transparentCursor" }),
-                T = { ...(0, v.G)({}), [s.ZP.Tweet]: (0, y.Z)({ hideConversationControlsEducationText: !0, withMuteConversation: !0 }) },
+            const T = Object.freeze({ Default: "ui_defaultLabel", TransparentCursor: "ui_transparentCursor" }),
+                M = { ...(0, v.G)({}), [s.ZP.Tweet]: (0, y.Z)({ hideConversationControlsEducationText: !0, withMuteConversation: !0 }) },
                 C = ({ changeDropdownState: e, hideReplyContextMode: t, isCurrentUserRootAuthor: o, isReaderMode: n, isTransparentCursorsEnabled: d, replyDropdownSelection: a, rootTweetAuthorId: i, tweetTextSize: c, withFocalTweetMedia: y, withRuxInjections: v }) =>
-                    (0, r.Z)({}, T, {
+                    (0, r.Z)({}, M, {
                         [s.ZP.SelfThreadTweetComposer]: w.Z,
                         [s.ZP.Tweet]: {
                             handlers: {
@@ -270,7 +270,7 @@
                             },
                         },
                         [s.ZP.Tombstone]: { handlers: { [A]: (0, D._n)({ isFocalTweet: !0, isReaderMode: n, withHideReply: o }), [u.Z.Inline]: (0, D._n)({ isReaderMode: n, tweetDismissFeedbackKey: o ? l.qt : void 0, withHideReply: o }) } },
-                        [s.ZP.Label]: h.ov({ selectDisplayType: (e) => ((e, t) => (t && e.content.text === I ? M.TransparentCursor : M.Default))(e, d), handlers: { [M.TransparentCursor]: m.L, [M.Default]: m.k } }),
+                        [s.ZP.Label]: h.ov({ selectDisplayType: (e) => ((e, t) => (t && e.content.text === I ? T.TransparentCursor : T.Default))(e, d), handlers: { [T.TransparentCursor]: m.L, [T.Default]: m.k } }),
                         [s.ZP.TimelineCursor]: (0, b.Z)({ withRuxInjections: v }),
                         [s.ZP.ThreadHeader]: S.Z,
                     }),
@@ -350,8 +350,8 @@
                             return (0, c.ZP)(`Unhandled timeline unavailable reason: ${e}`), null;
                     }
                 },
-                M = () => n.createElement(m.Z, null);
-            class T extends n.Component {
+                T = () => n.createElement(m.Z, null);
+            class M extends n.Component {
                 constructor(...e) {
                     super(...e),
                         (this._isInitialFocusEntry = (e, t) => {
@@ -380,7 +380,7 @@
                 }
                 render() {
                     const { apiErrorHandlerMap: e, fetchOptions: t, module: o, onEntriesRendered: r } = this.props;
-                    return n.createElement(w.Z, { anchoring: l.Z, apiErrorHandlerMap: e, entryConfiguration: this._getEntryConfig(), fetchOptions: t, isInitialFocusEntry: this._isInitialFocusEntry, module: o, nearStartProximityRatio: 2, olderAtTop: !0, onEntriesRendered: r, preprocessEntryList: this._getPreprocessor(), prerollDisplayLocation: h.Nw.OTHER, previewEntries: this._previewEntries(), refreshControl: null, renderEmptyState: M, renderUnavailable: g, title: I });
+                    return n.createElement(w.Z, { anchoring: l.Z, apiErrorHandlerMap: e, entryConfiguration: this._getEntryConfig(), fetchOptions: t, isInitialFocusEntry: this._isInitialFocusEntry, module: o, nearStartProximityRatio: 2, olderAtTop: !0, onEntriesRendered: r, preprocessEntryList: this._getPreprocessor(), prerollDisplayLocation: h.Nw.OTHER, previewEntries: this._previewEntries(), refreshControl: null, renderEmptyState: T, renderUnavailable: g, title: I });
                 }
                 _previewEntries() {
                     const { focalTweet: e } = this.props,
@@ -388,8 +388,8 @@
                     return e ? [u.Se({ id: t, sortIndex: s.Z })] : void 0;
                 }
             }
-            (T.defaultProps = { withFocalTweetMedia: !0 }), (T.contextType = b.rC);
-            const C = v(T);
+            (M.defaultProps = { withFocalTweetMedia: !0 }), (M.contextType = b.rC);
+            const C = v(M);
         },
         438965: (e, t, o) => {
             o.d(t, { FE: () => d, Hx: () => s, Oj: () => r, P3: () => l, QO: () => i, j: () => a });
@@ -466,8 +466,8 @@
                 A = o(163390),
                 I = o(768572),
                 g = o(933794),
-                M = o(579051),
-                T = o(719536),
+                T = o(579051),
+                M = o(719536),
                 C = o(476984),
                 P = o.n(C),
                 E = o(214997),
@@ -609,13 +609,13 @@
             }
             const U = i.default.create(() => ({ scrollView: { overflowY: "auto", scrollSnapType: "y mandatory", height: "100%" }, scrollSnapItem: { width: "100%", scrollSnapAlign: "start", scrollSnapStop: "always" }, scrollSnapItemInner: { height: window.innerHeight, width: "100%" } })),
                 O = (0, R.Z)((0, k.Z)(H)),
-                V = { triggerCause: T.Z.MOVEMENT };
+                V = { triggerCause: M.Z.MOVEMENT };
             class L extends n.PureComponent {
                 constructor(e, t) {
                     super(e, t),
                         (this._renderer = n.createRef()),
                         (this._keyboardShortcutHandlers = { [A.uq.refresh]: this._handleKeyboardRefresh, [A.uq.nextItem]: this._handleKeyboardFocusNext, [A.uq.previousItem]: this._handleKeyboardFocusPrevious }),
-                        (this._getList = (0, w.Z)((e, t, o, n) => e.filter((e) => !this.props.blockedOrMutedEntryIds.has(o(e))).map((e, r) => (0, M.f)(o(e), e, t, !1, n && n(e))))),
+                        (this._getList = (0, w.Z)((e, t, o, n) => e.filter((e) => !this.props.blockedOrMutedEntryIds.has(o(e))).map((e, r) => (0, T.f)(o(e), e, t, !1, n && n(e))))),
                         (this._render = () => {
                             const { withKeyboardShortcuts: e } = this.props;
                             return n.createElement(g.Z, { enabled: e, handlers: this._keyboardShortcutHandlers }, n.createElement(O, { list: this.state.list, onPositionUpdate: this._handlePositionUpdate, onScrollEnd: this._handleScrollEnd, ref: this._renderer }));
@@ -726,20 +726,24 @@
                                 {
                                     loader: () =>
                                         Promise.all([
-                                            o.e("icons.8"),
-                                            o.e("icons.13"),
+                                            o.e("icons.5"),
+                                            o.e("icons.6"),
+                                            o.e("icons.25"),
+                                            o.e("icons.22"),
+                                            o.e("icons.9"),
+                                            o.e("icons.4"),
+                                            o.e("icons.15"),
                                             o.e("icons.20"),
-                                            o.e("icons.14"),
-                                            o.e("icons.1"),
-                                            o.e("icons.3"),
-                                            o.e("icons.24"),
-                                            o.e("icons.11"),
+                                            o.e("icons.7"),
+                                            o.e("icons.0"),
                                             o.e("modules.common-e907d115"),
                                             o.e("modules.common-e019dbda"),
-                                            o.e("icons.28"),
-                                            o.e("icons.10"),
+                                            o.e("icons.27"),
                                             o.e("icons.17"),
-                                            o.e("icons.4"),
+                                            o.e("icons.11"),
+                                            o.e("icons.3"),
+                                            o.e("icons.12"),
+                                            o.e("icons.13"),
                                             o.e("icons.18"),
                                             o.e("modules.audio-6107ac1a"),
                                             o.e("modules.audio-b953418a"),
@@ -751,12 +755,9 @@
                                             o.e("modules.audio-e019dbda"),
                                             o.e("modules.audio-262c94d4"),
                                             o.e("modules.audio-c6fe4ea4"),
-                                            o.e("icons.12"),
-                                            o.e("icons.29"),
-                                            o.e("icons.22"),
-                                            o.e("icons.7"),
-                                            o.e("icons.0"),
-                                            o.e("icons.19"),
+                                            o.e("icons.24"),
+                                            o.e("icons.10"),
+                                            o.e("icons.8"),
                                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -764,7 +765,6 @@
                                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
                                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
                                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-64ffe41f"),
-                                            o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-5517db7c"),
                                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
                                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-58d4ab8e"),
@@ -787,7 +787,7 @@
                                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
                                             o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                                             o.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                                            o.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-7af5e2f7"),
+                                            o.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2f4a3d25"),
                                             o.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                                             o.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                                             o.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -867,7 +867,7 @@
                         [f] = n.useState(!1),
                         [v, A] = n.useState(null),
                         [I, g] = n.useState(!1),
-                        [M, T] = n.useState(!1),
+                        [T, M] = n.useState(!1),
                         [C, P] = n.useState(!1),
                         [E, _] = n.useState(!0),
                         [x, Z] = n.useState(new Set()),
@@ -895,9 +895,9 @@
                         ),
                         B = n.useCallback(
                             (e) => {
-                                T(e);
+                                M(e);
                             },
-                            [T],
+                            [M],
                         ),
                         F = n.useCallback(
                             (e) => {
@@ -945,7 +945,7 @@
                                                     forwardPivotInfo: o,
                                                     onTweetUpdate: k,
                                                     hasClosedCaptioning: E,
-                                                    isMuted: M,
+                                                    isMuted: T,
                                                     setHasClosedCaptioning: N,
                                                     onMuteToggle: B,
                                                     setBlockedOrMutedEntry: (e, t) => {
@@ -1023,4 +1023,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ImmersiveMediaViewer.7e3be3da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ImmersiveMediaViewer.09012dda.js.map

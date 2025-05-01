@@ -864,28 +864,30 @@
                     { domId: "card-cvc", label: "CVV", key: "issuingCardCvcDisplay", skeletonWidth: 28 },
                 ],
                 xe = ({ cardId: e, isLoading: t, refetch: a, setIsLoading: c }) => {
-                    const i = (0, fe.useElements)({ fonts: [{ family: "ProtoMono", src: `url(${C.gF})` }] }),
-                        [l] = ve(),
-                        o = Ie({ cardId: e });
+                    const [i, l] = n.useState(!1),
+                        o = (0, fe.useElements)({ fonts: [{ family: "ProtoMono", src: `url(${C.gF})` }] }),
+                        [d] = ve(),
+                        u = Ie({ cardId: e });
                     n.useEffect(() => {
                         (async () => {
-                            if (!o || !i) return;
-                            const t = await l({ cardId: e, nonce: o });
+                            if (!u || !o || i) return;
+                            const t = await d({ cardId: e, nonce: u });
                             Se.forEach(({ domId: a, key: n }) => {
                                 if (a) {
-                                    i.create(n, { issuingCard: e, nonce: o, ephemeralKeySecret: t, style: { base: { color: "#000000", fontFamily: "ProtoMono", fontSize: `${m.default.theme.fontSizesPx.headline2}px` } } }).mount(`#${a}`);
+                                    o.create(n, { issuingCard: e, nonce: u, ephemeralKeySecret: t, style: { base: { color: "#000000", fontFamily: "ProtoMono", fontSize: `${m.default.theme.fontSizesPx.headline2}px` } } }).mount(`#${a}`);
                                 }
                             }),
+                                l(!0),
                                 setTimeout(() => {
                                     c(!1);
                                 }, 800);
                         })();
-                    }, [i, e, l, a, o, c]);
-                    const d = (0, Pe.Z)();
+                    }, [o, e, d, a, u, c, i]);
+                    const p = (0, Pe.Z)();
                     return n.createElement(
                         r.Z,
                         { style: Ae.cardDetails },
-                        Se.map((e) => n.createElement(r.Z, { key: e.key, style: Ae.element }, n.createElement(s.ZP, { color: "gray500", size: "subtext2", style: Ae.fontFamily }, e.label), e.domId ? n.createElement(n.Fragment, null, t ? n.createElement(be.Z, { color: "gray700", lineHeightPx: 20, maxWidthPx: e.skeletonWidth, withBorderRadius: !0, wordHeightPx: 1, wordPercentWidths: e.wordPercentWidths ?? [100], wordSpacingPx: 12 }) : null, n.createElement(r.Z, { id: e.domId, style: t ? Ae.hide : null })) : n.createElement(s.ZP, { color: "alwaysBlack", style: Ae.fontFamily, weight: "normal" }, d))),
+                        Se.map((e) => n.createElement(r.Z, { key: e.key, style: Ae.element }, n.createElement(s.ZP, { color: "gray500", size: "subtext2", style: Ae.fontFamily }, e.label), e.domId ? n.createElement(n.Fragment, null, t ? n.createElement(be.Z, { color: "gray700", lineHeightPx: 20, maxWidthPx: e.skeletonWidth, withBorderRadius: !0, wordHeightPx: 1, wordPercentWidths: e.wordPercentWidths ?? [100], wordSpacingPx: 12 }) : null, n.createElement(r.Z, { id: e.domId, style: t ? Ae.hide : null })) : n.createElement(s.ZP, { color: "alwaysBlack", style: Ae.fontFamily, weight: "normal" }, p))),
                     );
                 },
                 Te = (e) => {
@@ -989,4 +991,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-b8e4b837.5ec4b11a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-b8e4b837.3acfc2ea.js.map

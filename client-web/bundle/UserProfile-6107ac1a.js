@@ -383,6 +383,7 @@
                 "./IconModeratorPlus.js": 662696,
                 "./IconModeratorStroke.js": 465072,
                 "./IconMoney.js": 190636,
+                "./IconMoneyHandStroke.js": 734767,
                 "./IconMoneyStroke.js": 748138,
                 "./IconMoonStroke.js": 976618,
                 "./IconMore.js": 149170,
@@ -549,6 +550,7 @@
                 "./IconStrikethrough.js": 69893,
                 "./IconSuperfollows.js": 491831,
                 "./IconSuperfollowsStroke.js": 646677,
+                "./IconSupergrok.js": 202560,
                 "./IconSuperlikes.js": 109449,
                 "./IconSuperlikesStroke.js": 201889,
                 "./IconTerminal.js": 976898,
@@ -1007,6 +1009,7 @@
                 "./IconModeratorPlus.js": 662696,
                 "./IconModeratorStroke.js": 465072,
                 "./IconMoney.js": 190636,
+                "./IconMoneyHandStroke.js": 734767,
                 "./IconMoneyStroke.js": 748138,
                 "./IconMoonStroke.js": 976618,
                 "./IconMore.js": 149170,
@@ -1173,6 +1176,7 @@
                 "./IconStrikethrough.js": 69893,
                 "./IconSuperfollows.js": 491831,
                 "./IconSuperfollowsStroke.js": 646677,
+                "./IconSupergrok.js": 202560,
                 "./IconSuperlikes.js": 109449,
                 "./IconSuperlikesStroke.js": 201889,
                 "./IconTerminal.js": 976898,
@@ -1474,4 +1478,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-6107ac1a.a3ad195a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-6107ac1a.865dfe4a.js.map

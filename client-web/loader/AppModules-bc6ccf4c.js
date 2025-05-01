@@ -27,17 +27,17 @@
                 g = n(108362),
                 m = n(661810),
                 p = n(365023),
-                f = n(292627),
-                w = n(537392),
-                E = n(392237);
-            const _ = l().af8fa2ae,
+                w = n(292627),
+                f = n(537392),
+                _ = n(392237);
+            const E = l().af8fa2ae,
                 y = r.createElement(h.default, null);
             class T extends r.Component {
                 constructor(...e) {
                     super(...e),
                         (this._renderAriaOnly = () => {
                             const { testID: e, text: t } = this.props;
-                            return r.createElement(a.Z, { role: "alert", style: E.default.visuallyHidden, testID: e }, r.createElement(o.Z, null, t));
+                            return r.createElement(a.Z, { role: "alert", style: _.default.visuallyHidden, testID: e }, r.createElement(o.Z, null, t));
                         }),
                         (this._renderIcon = () => {
                             const { variant: e } = this.props;
@@ -49,7 +49,7 @@
                         }),
                         (this._renderContent = () => {
                             const { action: e, text: t, withAutoDismiss: n, withClearButton: i } = this.props;
-                            return r.createElement(r.Fragment, null, r.createElement(d.ZP, { color: "whiteOnColor", style: I.titleText }, t), r.createElement(a.Z, { "aria-hidden": n, style: I.actionButtons }, e && this._renderActionLabel(e), i && r.createElement(u.ZP, { "aria-label": _, borderColor: "transparent", color: "white", icon: y, onPress: this._handleClose, style: I.closeButton })));
+                            return r.createElement(r.Fragment, null, r.createElement(d.ZP, { color: "whiteOnColor", style: I.titleText }, t), r.createElement(a.Z, { "aria-hidden": n, style: I.actionButtons }, e && this._renderActionLabel(e), i && r.createElement(u.ZP, { "aria-label": E, borderColor: "transparent", color: "white", icon: y, onPress: this._handleClose, style: I.closeButton })));
                         }),
                         (this._renderVariantContent = () => {
                             const { variant: e } = this.props;
@@ -85,13 +85,13 @@
                                 r.createElement(
                                     g.Z,
                                     { style: I.noPointerEvents },
-                                    r.createElement(p.Z, { id: "Toast" }, (t, n) => r.createElement(a.Z, (0, i.Z)({ ref: t() }, n({ role: "alert", style: [I.root, s && this._getRootVariantStyle(), ...l, e > E.default.theme.breakpoints.medium && I.rootWide], testID: o })), h)),
+                                    r.createElement(p.Z, { id: "Toast" }, (t, n) => r.createElement(a.Z, (0, i.Z)({ ref: t() }, n({ role: "alert", style: [I.root, s && this._getRootVariantStyle(), ...l, e > _.default.theme.breakpoints.medium && I.rootWide], testID: o })), h)),
                                 ),
                             );
                         }),
                         (this._renderContentWithoutLayer = ({ windowWidth: e }) => {
                             const { testID: t } = this.props;
-                            return r.createElement(g.Z, null, r.createElement(a.Z, { role: "alert", style: [I.root, e > E.default.theme.breakpoints.medium && I.rootWide], testID: t }, this._renderContent()));
+                            return r.createElement(g.Z, null, r.createElement(a.Z, { role: "alert", style: [I.root, e > _.default.theme.breakpoints.medium && I.rootWide], testID: t }, this._renderContent()));
                         }),
                         (this._createTimer = () => {
                             const { action: e, autoDismissDelay: t, onClose: n, text: i, withAutoDismiss: r } = this.props;
@@ -117,7 +117,7 @@
                 }
                 render() {
                     const { ariaOnly: e, withoutLayer: t } = this.props;
-                    return e ? this._renderAriaOnly() : r.createElement(w.ZP, null, t ? this._renderContentWithoutLayer : this._renderContentWithLayer);
+                    return e ? this._renderAriaOnly() : r.createElement(f.ZP, null, t ? this._renderContentWithoutLayer : this._renderContentWithLayer);
                 }
                 _renderActionLabel(e) {
                     const { label: t, link: n } = e;
@@ -131,11 +131,11 @@
                     clearTimeout(this._timerId);
                 }
             }
-            T.defaultProps = { withAutoDismiss: !0, withClearButton: !1, LayerComponent: f.Z.ModalToasts };
-            const I = E.default.create((e) => ({ root: { alignItems: "center", backgroundColor: e.colors.primary, flexDirection: "row", justifyContent: "space-between", padding: e.spaces.space12, pointerEvents: "auto" }, rootVariantJp: { alignItems: "flex-start", backgroundColor: e.colors.green500, pointerEvents: "auto", flexDirection: "row", padding: e.spaces.space12 }, rootVariantJetfuel: { flexDirection: "column", alignItems: "center", backgroundColor: "transparent" }, icon: { flexShrink: 0, width: 50, height: 50 }, noPointerEvents: { pointerEvents: "none" }, body: { flexShrink: 1 }, divider: { marginHorizontal: e.spaces.space12, backgroundColor: e.colors.white }, content: { alignItems: "center", flexDirection: "row", justifyContent: "space-between" }, rootWide: { alignSelf: "center", borderRadius: e.borderRadii.small, marginBottom: e.spaces.space32 }, titleText: { flexShrink: 1, paddingHorizontal: e.spaces.space12 }, actionText: { alignSelf: "center", whiteSpace: "nowrap", marginEnd: e.spaces.space12 }, actionButtons: { flexDirection: "row" }, actionMargin: { marginHorizontal: e.spaces.space12 }, closeButton: { marginStart: e.spaces.space12, paddingHorizontal: e.spaces.space4 } })),
+            T.defaultProps = { withAutoDismiss: !0, withClearButton: !1, LayerComponent: w.Z.ModalToasts };
+            const I = _.default.create((e) => ({ root: { alignItems: "center", backgroundColor: e.colors.primary, flexDirection: "row", justifyContent: "space-between", padding: e.spaces.space12, pointerEvents: "auto" }, rootVariantJp: { alignItems: "flex-start", backgroundColor: e.colors.green500, pointerEvents: "auto", flexDirection: "row", padding: e.spaces.space12 }, rootVariantJetfuel: { flexDirection: "column", alignItems: "center", backgroundColor: "transparent" }, icon: { flexShrink: 0, width: 50, height: 50 }, noPointerEvents: { pointerEvents: "none" }, body: { flexShrink: 1 }, divider: { marginHorizontal: e.spaces.space12, backgroundColor: e.colors.white }, content: { alignItems: "center", flexDirection: "row", justifyContent: "space-between" }, rootWide: { alignSelf: "center", borderRadius: e.borderRadii.small, marginBottom: e.spaces.space32 }, titleText: { flexShrink: 1, paddingHorizontal: e.spaces.space12 }, actionText: { alignSelf: "center", whiteSpace: "nowrap", marginEnd: e.spaces.space12 }, actionButtons: { flexDirection: "row" }, actionMargin: { marginHorizontal: e.spaces.space12 }, closeButton: { marginStart: e.spaces.space12, paddingHorizontal: e.spaces.space4 } })),
                 b = T;
         },
-        540820: (e, t, n) => {
+        452693: (e, t, n) => {
             n.r(t), n.d(t, { default: () => l });
             var i = n(202784),
                 r = n(890601),
@@ -143,9 +143,9 @@
                 a = n(347101);
             const s = (e = {}) => {
                 const { direction: t } = (0, o.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 50 50", children: i.createElement("g", null, i.createElement("path", { d: "M25.23 12.24l-2.1-2.1c-4.54-4.54-11.9-4.54-16.45 0h0c-4.54 4.54-4.54 11.9 0 16.45l18.55 18.55 16.45-16.45 2.1-2.1c4.54-4.54 4.54-11.9 0-16.45h0c-4.54-4.54-11.9-4.54-16.45 0l-2.1 2.1h0z", fill: "none", stroke: "#fff", strokeMiterlimit: "10" }), i.createElement("path", { d: "M26.86 23.19l6.39-7.29h-1.51l-5.55 6.33-4.43-6.33h-5.11l6.7 9.57-6.7 7.64h1.51l5.86-6.68 4.68 6.68h5.11l-6.95-9.92zm-2.07 2.37l-.68-.95-5.4-7.58h2.33l4.36 6.12.68.95 5.67 7.95h-2.33l-4.62-6.49z", fill: "#fff" })) }, { writingDirection: t });
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M12 1.75c-5.11 0-9.25 4.14-9.25 9.25 0 4.77 3.61 8.7 8.25 9.2v2.96l1.15-.17c1.88-.29 4.11-1.56 5.87-3.5 1.79-1.96 3.17-4.69 3.23-7.97.09-5.54-4.14-9.77-9.25-9.77zM13 14H9v-2h4v2zm2-4H9V8h6v2z" })) }, { writingDirection: t });
             };
-            s.metadata = { width: 50, height: 50 };
+            s.metadata = { width: 24, height: 24 };
             const l = s;
         },
         19697: (e, t, n) => {
@@ -510,7 +510,7 @@
                         });
         },
         653843: (e, t, n) => {
-            n.d(t, { Y7: () => g, ZP: () => T, m2: () => E });
+            n.d(t, { Y7: () => g, ZP: () => T, m2: () => _ });
             var i = n(19697),
                 r = n(790187),
                 o = n(549755),
@@ -548,26 +548,26 @@
                     const { height: i, size: r, width: o } = e;
                     return o > n || i > n || r > t;
                 },
-                f = (e, t) => t || { top: 0, left: 0, width: e.width, height: e.height },
-                w = (e, t) => {
-                    const { height: n, left: i, top: r, width: o } = f(e, t);
+                w = (e, t) => t || { top: 0, left: 0, width: e.width, height: e.height },
+                f = (e, t) => {
+                    const { height: n, left: i, top: r, width: o } = w(e, t);
                     return !(0 === r && 0 === i && o === e.width && n === e.height);
                 };
-            function E(e, t) {
+            function _(e, t) {
                 const { maxFileSize: n = c, maxDimension: i = d, cropData: r, jpgPixelsPerByteForResize: o } = t || {},
                     a = "image/jpeg" === e.type,
                     s = (e.width * e.height) / e.size;
-                return m(e) || p(e, n, i) || w(e, r) || (a && !!o && s < o);
+                return m(e) || p(e, n, i) || f(e, r) || (a && !!o && s < o);
             }
-            const _ = (e, t) => {
+            const E = (e, t) => {
                     const { height: n, width: i } = e;
                     return i <= t && n <= t ? { width: i, height: n } : i > n ? { width: t, height: Math.round(n / (i / t)) } : { width: Math.round(i / (n / t)), height: t };
                 },
                 y = (e) => ("function" == typeof e.decode ? e.decode() : Promise.resolve());
             function T(e, t) {
                 const { maxFileSize: n = c, maxDimension: r = d, targetQuality: s = u, cropData: h } = t || {},
-                    m = f(e, h);
-                if (!E(e, t)) return Promise.resolve(e.fileHandle);
+                    m = w(e, h);
+                if (!_(e, t)) return Promise.resolve(e.fileHandle);
                 if (!(0, a.DS)(e)) {
                     const e = new o.Z("The provided file is not a valid image", g.FILE_IS_NOT_AN_IMAGE);
                     return Promise.reject(e);
@@ -582,7 +582,7 @@
                     .then(({ img: e, orientation: t }) => {
                         const n = ({ height: n, width: r }) => (0, i.$i)(e, r, n, t, m);
                         return y(e)
-                            .then(() => ((e) => e(_(m, r)))(n))
+                            .then(() => ((e) => e(E(m, r)))(n))
                             .then(p);
                     })
                     .catch(() => {
@@ -593,4 +593,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.AppModules-bc6ccf4c.1129af2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.AppModules-bc6ccf4c.ed90285a.js.map

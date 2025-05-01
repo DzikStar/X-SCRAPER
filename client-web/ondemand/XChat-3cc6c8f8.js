@@ -3369,7 +3369,7 @@
                     wn.call(this, i), (this.a2y_1 = t), (this.b2y_1 = n);
                 }
                 function E_(t, n, i) {
-                    var r = new U_(t, n, i);
+                    var r = new M_(t, n, i);
                     return (r.s9_1 = nn), (r.t9_1 = null), r.ia();
                 }
                 function D_(t) {
@@ -3385,29 +3385,29 @@
                         };
                     return (r.$arity = 1), r;
                 }
-                function F_(t, n, i) {
-                    wn.call(this, i), (this.b31_1 = t), (this.c31_1 = n);
+                function F_(t) {
+                    this.t30_1 = t;
                 }
-                function L_(t, n) {
-                    (this.f31_1 = t), (this.g31_1 = n);
+                function L_(t) {
+                    this.u30_1 = t;
                 }
-                function I_(t) {
-                    this.h31_1 = t;
+                function I_(t, n, i) {
+                    wn.call(this, i), (this.d31_1 = t), (this.e31_1 = n);
                 }
-                function O_(t) {
-                    this.i31_1 = t;
+                function O_(t, n) {
+                    (this.h31_1 = t), (this.i31_1 = n);
                 }
                 function R_(t, n) {
                     wn.call(this, n), (this.v2y_1 = t);
                 }
-                function U_(t, n, i) {
-                    wn.call(this, i), (this.f2z_1 = t), (this.g2z_1 = n);
+                function U_(t, n) {
+                    wn.call(this, n), (this.f2z_1 = t);
                 }
                 function B_(t, n) {
-                    wn.call(this, n), (this.s2z_1 = t);
+                    wn.call(this, n), (this.r2z_1 = t);
                 }
-                function M_(t, n) {
-                    wn.call(this, n), (this.e30_1 = t);
+                function M_(t, n, i) {
+                    wn.call(this, i), (this.d30_1 = t), (this.e30_1 = n);
                 }
                 function P_(t, n) {
                     return t.j31(n);
@@ -4285,11 +4285,11 @@
                 }
                 function lv() {}
                 function fv() {}
-                function vv(t) {
-                    mi("Flow was aborted, no more elements needed", this), ri(this, vv), (this.i2a_1 = t);
+                function vv() {
+                    mi("Child of the scoped flow was cancelled", this), ri(this, vv);
                 }
-                function wv() {
-                    mi("Child of the scoped flow was cancelled", this), ri(this, wv);
+                function wv(t) {
+                    mi("Flow was aborted, no more elements needed", this), ri(this, wv), (this.i2a_1 = t);
                 }
                 function $v(t, n) {
                     return (t + 1) | 0;
@@ -4443,7 +4443,7 @@
                     en(vo, "Emitter", hn, hn, [js]),
                     qn(wo, wn),
                     en(Po, "AbstractSharedFlow", hn, zv),
-                    en($o, "SharedFlowImpl", hn, Po, [Po, Qh, Vh, Wh, Vo], [1]),
+                    en($o, "SharedFlowImpl", hn, Po, [Po, Vh, Qh, Wh, Vo], [1]),
                     en(Ho, "AbstractSharedFlowSlot"),
                     en(mo, "SharedFlowSlot", mo, Ho),
                     Ei(go),
@@ -4455,7 +4455,7 @@
                     en(Ao, "SharingCommand", hn, Hn),
                     zn(To, "StateFlow", hn, hn, [Qh], [1]),
                     qn(Io, wn),
-                    en(Oo, "StateFlowImpl", hn, Po, [Po, Qh, To, Vh, Wh, Vo], [1]),
+                    en(Oo, "StateFlowImpl", hn, Po, [Po, Vh, To, Qh, Wh, Vo], [1]),
                     en(Ro, "StateFlowSlot", Ro, Ho, hn, [0]),
                     en(Go, "SubscriptionCountStateFlow", hn, $o, [To, $o], [1]),
                     Ri(Wo, wn, hn, [1]),
@@ -4553,9 +4553,9 @@
                     qn(A_, wn),
                     en(D_, "sam$kotlinx_coroutines_flow_FlowCollector$0", hn, hn, [Vh, Ui], [1]),
                     Ri(N_, wn, hn, [1]),
-                    qn(F_, wn),
+                    en(F_, hn, hn, hn, [Vh], [1]),
                     en(L_, hn, hn, hn, [Vh], [1]),
-                    en(I_, hn, hn, hn, [Vh], [1]),
+                    qn(I_, wn),
                     en(O_, hn, hn, hn, [Vh], [1]),
                     qn(R_, wn),
                     qn(U_, wn),
@@ -4605,8 +4605,8 @@
                     An(ov, "Dispatchers"),
                     en(cv, "JsMainDispatcher", hn, xu),
                     en(_v, "JobCancellationException", hn, oi),
-                    en(vv, "AbortFlowException", hn, oi),
-                    en(wv, "ChildCancelledException", wv, oi),
+                    en(vv, "ChildCancelledException", vv, oi),
+                    en(wv, "AbortFlowException", hn, oi),
                     en(dv, "SafeCollector", hn, hn, [Vh], [1]),
                     en(mv, "WorkaroundAtomicReference"),
                     en(qv, "DiagnosticCoroutineContextException", hn, ni),
@@ -5146,8 +5146,8 @@
                     (rn(es).u1i = function (t, n) {
                         return vl(t), new ml(this, t, n);
                     }),
-                    (rn(es).v1i = function (t) {
-                        return this.u1i(t, null);
+                    (rn(es).v1i = function (t, n, i) {
+                        return (n = n === hn ? null : n), i === hn ? this.u1i(t, n) : i.u1i.call(this, t, n);
                     }),
                     (rn(es).x1i = function (t, n) {
                         return this.w1i(t, n);
@@ -8088,7 +8088,7 @@
                         return (i.t28_1 = t), i;
                     }),
                     (rn(va).a1c = function (t) {
-                        return t instanceof wv || this.c1c(t);
+                        return t instanceof vv || this.c1c(t);
                     }),
                     (rn(wa).f25 = function (t, n) {
                         var i = this.g25(t, n);
@@ -8195,7 +8195,7 @@
                                             continue t;
                                         }
                                         this.p2b_1 = this.n2b_1;
-                                        if (((this.q2b_1 = this.p2b_1), this.q2b_1.w1b(new wv()), (this.q9_1 = 1), (t = this.q2b_1.t1b(this)) === dn())) return t;
+                                        if (((this.q2b_1 = this.p2b_1), this.q2b_1.w1b(new vv()), (this.q9_1 = 1), (t = this.q2b_1.t1b(this)) === dn())) return t;
                                         continue t;
                                     case 1:
                                         (this.o2b_1 = this.p2b_1), (this.q9_1 = 2);
@@ -8388,7 +8388,7 @@
                                     if (n instanceof wh) {
                                         var r = vh(n);
                                         if (null != r) throw r;
-                                        this.n2d_1.w1b(new wv()), (this.m2d_1._v = Aa());
+                                        this.n2d_1.w1b(new vv()), (this.m2d_1._v = Aa());
                                     }
                                     return nn;
                                 }
@@ -9170,7 +9170,7 @@
                                             this.q9_1 = 4;
                                             continue t;
                                         }
-                                        throw new vv(this.q2m_1);
+                                        throw new wv(this.q2m_1);
                                     case 4:
                                         return nn;
                                     case 5:
@@ -9204,7 +9204,7 @@
                                         (this.r9_1 = 3), (this.q9_1 = 4);
                                         continue t;
                                     case 2:
-                                        if (((this.r9_1 = 3), this.t9_1 instanceof vv)) {
+                                        if (((this.r9_1 = 3), this.t9_1 instanceof wv)) {
                                             qa(this.t9_1, this.i2n_1), (this.q9_1 = 4);
                                             continue t;
                                         }
@@ -10063,28 +10063,40 @@
                         var i = new N_(this.r30_1, n);
                         return (i.s30_1 = t), i;
                     }),
-                    (rn(F_).ia = function () {
+                    (rn(F_).f2c = function (t, n) {
+                        throw ((this.t30_1._v = t), new wv(this));
+                    }),
+                    (rn(F_).l1x = function (t, n) {
+                        return this.f2c(null == t || null != t ? t : sn(), n);
+                    }),
+                    (rn(L_).f2c = function (t, n) {
+                        throw ((this.u30_1._v = t), new wv(this));
+                    }),
+                    (rn(L_).l1x = function (t, n) {
+                        return this.f2c(null == t || null != t ? t : sn(), n);
+                    }),
+                    (rn(I_).ia = function () {
                         var t = this.s9_1;
                         t: for (;;)
                             try {
                                 switch (this.q9_1) {
                                     case 0:
                                         this.r9_1 = 4;
-                                        if (((this.d31_1 = this.c31_1), (this.q9_1 = 1), (t = this.b31_1.f31_1(this.d31_1, this)) === dn())) return t;
+                                        if (((this.f31_1 = this.e31_1), (this.q9_1 = 1), (t = this.d31_1.h31_1(this.f31_1, this)) === dn())) return t;
                                         continue t;
                                     case 1:
                                         if (t) {
-                                            (this.b31_1.g31_1._v = this.d31_1), (this.e31_1 = !1), (this.q9_1 = 2);
+                                            (this.d31_1.i31_1._v = this.f31_1), (this.g31_1 = !1), (this.q9_1 = 2);
                                             continue t;
                                         }
-                                        (this.e31_1 = !0), (this.q9_1 = 2);
+                                        (this.g31_1 = !0), (this.q9_1 = 2);
                                         continue t;
                                     case 2:
-                                        if (this.e31_1) {
+                                        if (this.g31_1) {
                                             this.q9_1 = 3;
                                             continue t;
                                         }
-                                        throw new vv(this.b31_1);
+                                        throw new wv(this.d31_1);
                                     case 3:
                                         return nn;
                                     case 4:
@@ -10096,21 +10108,9 @@
                                 (this.q9_1 = this.r9_1), (this.t9_1 = n);
                             }
                     }),
-                    (rn(L_).f2c = function (t, n) {
-                        var i = new F_(this, t, n);
-                        return (i.s9_1 = nn), (i.t9_1 = null), i.ia();
-                    }),
-                    (rn(L_).l1x = function (t, n) {
-                        return this.f2c(null == t || null != t ? t : sn(), n);
-                    }),
-                    (rn(I_).f2c = function (t, n) {
-                        throw ((this.h31_1._v = t), new vv(this));
-                    }),
-                    (rn(I_).l1x = function (t, n) {
-                        return this.f2c(null == t || null != t ? t : sn(), n);
-                    }),
                     (rn(O_).f2c = function (t, n) {
-                        throw ((this.i31_1._v = t), new vv(this));
+                        var i = new I_(this, t, n);
+                        return (i.s9_1 = nn), (i.t9_1 = null), i.ia();
                     }),
                     (rn(O_).l1x = function (t, n) {
                         return this.f2c(null == t || null != t ? t : sn(), n);
@@ -10144,24 +10144,24 @@
                             try {
                                 switch (this.q9_1) {
                                     case 0:
-                                        (this.r9_1 = 3), (this.h2z_1 = { _v: Sa() });
-                                        this.i2z_1 = this.f2z_1;
-                                        if (((this.j2z_1 = new L_(this.g2z_1, this.h2z_1)), (this.r9_1 = 2), (this.q9_1 = 1), (t = this.i2z_1.u1w(this.j2z_1, this)) === dn())) return t;
+                                        (this.r9_1 = 3), (this.g2z_1 = { _v: Sa() });
+                                        this.h2z_1 = this.f2z_1;
+                                        if (((this.i2z_1 = new F_(this.g2z_1)), (this.r9_1 = 2), (this.q9_1 = 1), (t = this.h2z_1.u1w(this.i2z_1, this)) === dn())) return t;
                                         continue t;
                                     case 1:
                                         (this.r9_1 = 3), (this.q9_1 = 4);
                                         continue t;
                                     case 2:
-                                        if (((this.r9_1 = 3), this.t9_1 instanceof vv)) {
-                                            qa(this.t9_1, this.j2z_1), (this.q9_1 = 4);
+                                        if (((this.r9_1 = 3), this.t9_1 instanceof wv)) {
+                                            qa(this.t9_1, this.i2z_1), (this.q9_1 = 4);
                                             continue t;
                                         }
                                         throw this.t9_1;
                                     case 3:
                                         throw this.t9_1;
                                     case 4:
-                                        if (((this.r9_1 = 3), this.h2z_1._v === Sa())) throw Qi("Expected at least one element matching the predicate " + xn(this.g2z_1));
-                                        var n = this.h2z_1._v;
+                                        if (((this.r9_1 = 3), this.g2z_1._v === Sa())) throw Qi("Expected at least one element");
+                                        var n = this.g2z_1._v;
                                         return null == n || null != n ? n : sn();
                                 }
                             } catch (t) {
@@ -10176,30 +10176,28 @@
                             try {
                                 switch (this.q9_1) {
                                     case 0:
-                                        (this.r9_1 = 3), (this.t2z_1 = { _v: Sa() });
-                                        this.u2z_1 = this.s2z_1;
-                                        if (((this.v2z_1 = new I_(this.t2z_1)), (this.r9_1 = 2), (this.q9_1 = 1), (t = this.u2z_1.u1w(this.v2z_1, this)) === dn())) return t;
+                                        (this.r9_1 = 4), (this.s2z_1 = { _v: null });
+                                        this.t2z_1 = this.r2z_1;
+                                        if (((this.u2z_1 = new L_(this.s2z_1)), (this.r9_1 = 2), (this.q9_1 = 1), (t = this.t2z_1.u1w(this.u2z_1, this)) === dn())) return t;
                                         continue t;
                                     case 1:
-                                        (this.r9_1 = 3), (this.q9_1 = 4);
+                                        (this.r9_1 = 4), (this.q9_1 = 3);
                                         continue t;
                                     case 2:
-                                        if (((this.r9_1 = 3), this.t9_1 instanceof vv)) {
-                                            qa(this.t9_1, this.v2z_1), (this.q9_1 = 4);
+                                        if (((this.r9_1 = 4), this.t9_1 instanceof wv)) {
+                                            qa(this.t9_1, this.u2z_1), (this.q9_1 = 3);
                                             continue t;
                                         }
                                         throw this.t9_1;
                                     case 3:
-                                        throw this.t9_1;
+                                        return (this.r9_1 = 4), this.s2z_1._v;
                                     case 4:
-                                        if (((this.r9_1 = 3), this.t2z_1._v === Sa())) throw Qi("Expected at least one element");
-                                        var n = this.t2z_1._v;
-                                        return null == n || null != n ? n : sn();
+                                        throw this.t9_1;
                                 }
                             } catch (t) {
-                                var i = t;
-                                if (3 === this.r9_1) throw i;
-                                (this.q9_1 = this.r9_1), (this.t9_1 = i);
+                                var n = t;
+                                if (4 === this.r9_1) throw n;
+                                (this.q9_1 = this.r9_1), (this.t9_1 = n);
                             }
                     }),
                     (rn(M_).ia = function () {
@@ -10208,28 +10206,30 @@
                             try {
                                 switch (this.q9_1) {
                                     case 0:
-                                        (this.r9_1 = 4), (this.f30_1 = { _v: null });
-                                        this.g30_1 = this.e30_1;
-                                        if (((this.h30_1 = new O_(this.f30_1)), (this.r9_1 = 2), (this.q9_1 = 1), (t = this.g30_1.u1w(this.h30_1, this)) === dn())) return t;
+                                        (this.r9_1 = 3), (this.f30_1 = { _v: Sa() });
+                                        this.g30_1 = this.d30_1;
+                                        if (((this.h30_1 = new O_(this.e30_1, this.f30_1)), (this.r9_1 = 2), (this.q9_1 = 1), (t = this.g30_1.u1w(this.h30_1, this)) === dn())) return t;
                                         continue t;
                                     case 1:
-                                        (this.r9_1 = 4), (this.q9_1 = 3);
+                                        (this.r9_1 = 3), (this.q9_1 = 4);
                                         continue t;
                                     case 2:
-                                        if (((this.r9_1 = 4), this.t9_1 instanceof vv)) {
-                                            qa(this.t9_1, this.h30_1), (this.q9_1 = 3);
+                                        if (((this.r9_1 = 3), this.t9_1 instanceof wv)) {
+                                            qa(this.t9_1, this.h30_1), (this.q9_1 = 4);
                                             continue t;
                                         }
                                         throw this.t9_1;
                                     case 3:
-                                        return (this.r9_1 = 4), this.f30_1._v;
-                                    case 4:
                                         throw this.t9_1;
+                                    case 4:
+                                        if (((this.r9_1 = 3), this.f30_1._v === Sa())) throw Qi("Expected at least one element matching the predicate " + xn(this.e30_1));
+                                        var n = this.f30_1._v;
+                                        return null == n || null != n ? n : sn();
                                 }
                             } catch (t) {
-                                var n = t;
-                                if (4 === this.r9_1) throw n;
-                                (this.q9_1 = this.r9_1), (this.t9_1 = n);
+                                var i = t;
+                                if (3 === this.r9_1) throw i;
+                                (this.q9_1 = this.r9_1), (this.t9_1 = i);
                             }
                     }),
                     (rn(W_).k1o = function () {
@@ -11457,11 +11457,11 @@
                         return _c(t), n.u1w(t, i);
                     }),
                     (t.$_$.f = function (t, n) {
-                        var i = new M_(t, n);
+                        var i = new B_(t, n);
                         return (i.s9_1 = nn), (i.t9_1 = null), i.ia();
                     }),
                     (t.$_$.g = function (t, n) {
-                        var i = new B_(t, n);
+                        var i = new U_(t, n);
                         return (i.s9_1 = nn), (i.t9_1 = null), i.ia();
                     }),
                     (t.$_$.h = function (t, n) {
@@ -11783,4 +11783,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-3cc6c8f8.82e86b3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-3cc6c8f8.d6f4f03a.js.map

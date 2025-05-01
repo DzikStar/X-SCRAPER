@@ -93,16 +93,16 @@
                         s = e.challengeInitiator,
                         P = t.location?.state,
                         { challengeId: E, challengeInitiator: v, closePath: x, message: C, recordId: Z, redirectPath: I, redirectState: w, successMessage: _ } = P ?? {},
-                        [S, T] = n.useState(E),
-                        M = s ?? v,
+                        [S, M] = n.useState(E),
+                        T = s ?? v,
                         [N, z] = n.useState(C ?? p.q9.initiate),
                         [L, W] = n.useState(),
                         [F, H] = n.useState(!1),
                         D = c()(),
-                        R = M === u.kW.auth,
-                        A = (M ? b[M] : void 0) ?? u.P_.challenge,
-                        U = k.includes(M),
-                        q = (M ? f[M] : void 0) ?? _,
+                        R = T === u.kW.auth,
+                        A = (T ? b[T] : void 0) ?? u.P_.challenge,
+                        U = k.includes(T),
+                        q = (T ? f[T] : void 0) ?? _,
                         B = n.useCallback((e) => {
                             W(e.loginRequestId), z(p.q9.complete2fa), H(!1);
                         }, []),
@@ -111,19 +111,19 @@
                                 const { authStatus: a, challengeId: n, message: c } = e.data;
                                 switch (c) {
                                     case y.T.success:
-                                        R && 1 === a && d.Z.updateSessionStatus(o.c.Active), Z ? (0, g.Se)(D, Z) : M === u.kW.activateCard ? (0, g.uN)(D) : (0, g.J$)(D), I ? t.replace(I, w) : t.goBack(), q && r({ text: q });
+                                        R && 1 === a && d.Z.updateSessionStatus(o.c.Active), Z ? (0, g.Se)(D, Z) : T === u.kW.activateCard ? (0, g.uN)(D) : (0, g.J$)(D), I ? t.replace(I, w) : t.goBack(), q && r({ text: q });
                                         break;
                                     case y.T.docvChallenge:
-                                        t.replace(u.AU.tier3.verifyIdentityPath, { ...P, challengeInitiator: M });
+                                        t.replace(u.AU.tier3.verifyIdentityPath, { ...P, challengeInitiator: T });
                                         break;
                                     case y.T.kycChallenge:
-                                        t.replace(u.AU.tier2.verifyIdentityPath, { ...P, challengeInitiator: M });
+                                        t.replace(u.AU.tier2.verifyIdentityPath, { ...P, challengeInitiator: T });
                                         break;
                                     case y.T.selfieChallenge:
-                                        t.replace(u.AU.selfie.verifyIdentityPath, { ...P, challengeInitiator: M });
+                                        t.replace(u.AU.selfie.verifyIdentityPath, { ...P, challengeInitiator: T });
                                         break;
                                     case y.T.twoFactorChallenge:
-                                        T(n), H(!0);
+                                        M(n), H(!0);
                                         break;
                                     case y.T.forgotPin:
                                         t.push(u.jR, { challengeInitiator: u.kW.forgotPin });
@@ -132,22 +132,22 @@
                                         R && d.Z.fetchNewSession();
                                         break;
                                     case y.T.close:
-                                        (0, g.qc)({ environment: D, closePath: x, challengeInitiator: M, history: t });
+                                        (0, g.qc)({ environment: D, closePath: x, challengeInitiator: T, history: t });
                                 }
                             },
-                            [R, Z, I, q, t, P, D, M, x, w, r],
+                            [R, Z, I, q, t, P, D, T, x, w, r],
                         );
                     n.useEffect(() => {
                         a && a.scribe({ page: "money", section: "verify-challenge", action: "impression" });
                     }, [a]),
                         n.useEffect(
                             () => (
-                                M === u.kW.auth && d.Z.loadChallenge(),
+                                T === u.kW.auth && d.Z.loadChallenge(),
                                 () => {
-                                    M === u.kW.auth && d.Z.closeChallenge();
+                                    T === u.kW.auth && d.Z.closeChallenge();
                                 }
                             ),
-                            [M],
+                            [T],
                         );
                     const j = R;
                     return n.createElement(n.Fragment, null, S && F ? n.createElement(h.Z, { challengeId: S, isNonModalScreen: j, onSuccess: B }) : null, S || U ? n.createElement(y.Z, { closePath: x, eventCallback: V, isBackgroundHidden: F, isNonModalScreen: j, linkType: A, payload: { challengeId: S, loginRequestId: L, message: N }, redirectPath: I, redirectState: w }) : null);
@@ -450,7 +450,7 @@
                 y = s.default.create((e) => ({ currency: { marginEnd: e.spaces.space4 }, amountInput: { paddingHorizontal: "0" } }));
         },
         477922: (e, t, a) => {
-            a.d(t, { G7: () => v, KR: () => x, qn: () => Z });
+            a.d(t, { G7: () => x, KR: () => C, qn: () => I });
             var n = a(807896),
                 r = a(202784),
                 c = a(45843),
@@ -461,24 +461,25 @@
                 u = a(297896),
                 d = a(748138),
                 m = a(913315),
-                p = a(286555),
-                h = a(43429);
-            const y = Object.freeze({ small: "small", xLarge: "xLarge", xxxLarge: "xxxLarge", xJumbo: "xJumbo" }),
-                g = { [y.small]: { width: o.default.theme.spacesPx.space16, height: o.default.theme.spacesPx.space16 }, [y.xLarge]: { width: o.default.theme.spacesPx.space40, height: o.default.theme.spacesPx.space40 }, [y.xxxLarge]: { width: o.default.theme.spaces.space56, height: o.default.theme.spaces.space56 }, [y.xJumbo]: { width: o.default.theme.spaces.space80, height: o.default.theme.spaces.space80 } },
-                f = { [y.small]: { width: o.default.theme.spacesPx.space8, height: o.default.theme.spacesPx.space8 }, [y.xLarge]: { width: o.default.theme.spacesPx.space20, height: o.default.theme.spacesPx.space20 }, [y.xxxLarge]: { width: o.default.theme.spaces.space28, height: o.default.theme.spaces.space28 }, [y.xJumbo]: { width: o.default.theme.spaces.space40, height: o.default.theme.spaces.space40 } },
-                b = ({ Icon: e, size: t, uri: a }) => (a ? r.createElement(c.Z, { source: { uri: a }, style: [I.rounded, I.logo, g[t]] }) : r.createElement(l.Z, { style: [g[t], I.rounded, I.iconContainer] }, r.createElement(e, { style: [I.logo, f[t]] }))),
-                k = (e) => r.createElement(b, (0, n.Z)({}, e, { Icon: s.default })),
-                P = { [h.wC.bankDeposit]: i.default, [h.wC.bankWithdraw]: u.default, [h.wC.card]: s.default, [h.wC.atm]: d.default },
-                E = { [h.Ms.atm]: d.default, [h.Ms.deposit]: i.default, [h.Ms.withdraw]: u.default, [h.Ms.interest]: m.default },
-                v = (e) => {
+                p = a(734767),
+                h = a(286555),
+                y = a(43429);
+            const g = Object.freeze({ small: "small", xLarge: "xLarge", xxxLarge: "xxxLarge", xJumbo: "xJumbo" }),
+                f = { [g.small]: { width: o.default.theme.spacesPx.space16, height: o.default.theme.spacesPx.space16 }, [g.xLarge]: { width: o.default.theme.spacesPx.space40, height: o.default.theme.spacesPx.space40 }, [g.xxxLarge]: { width: o.default.theme.spaces.space56, height: o.default.theme.spaces.space56 }, [g.xJumbo]: { width: o.default.theme.spaces.space80, height: o.default.theme.spaces.space80 } },
+                b = { [g.small]: { width: o.default.theme.spacesPx.space8, height: o.default.theme.spacesPx.space8 }, [g.xLarge]: { width: o.default.theme.spacesPx.space20, height: o.default.theme.spacesPx.space20 }, [g.xxxLarge]: { width: o.default.theme.spaces.space28, height: o.default.theme.spaces.space28 }, [g.xJumbo]: { width: o.default.theme.spaces.space40, height: o.default.theme.spaces.space40 } },
+                k = ({ Icon: e, size: t, uri: a }) => (a ? r.createElement(c.Z, { source: { uri: a }, style: [w.rounded, w.logo, f[t]] }) : r.createElement(l.Z, { style: [f[t], w.rounded, w.iconContainer] }, r.createElement(e, { style: [w.logo, b[t]] }))),
+                P = (e) => r.createElement(k, (0, n.Z)({}, e, { Icon: s.default })),
+                E = { [y.wC.bankDeposit]: i.default, [y.wC.bankWithdraw]: u.default, [y.wC.card]: s.default, [y.wC.atm]: d.default },
+                v = { [y.Ms.atm]: d.default, [y.Ms.deposit]: i.default, [y.Ms.withdraw]: u.default, [y.Ms.interest]: m.default, [y.Ms.cashback]: p.default },
+                x = (e) => {
                     const { type: t, ...a } = e;
-                    return r.createElement(b, (0, n.Z)({}, a, { Icon: P[t] }));
+                    return r.createElement(k, (0, n.Z)({}, a, { Icon: E[t] }));
                 },
-                x = ({ type: e, ...t }) => r.createElement(b, (0, n.Z)({}, t, { Icon: E[e] })),
-                C = (e) => r.createElement(b, (0, n.Z)({}, e, { Icon: p.default })),
-                Z = ({ type: e, ...t }) => (e === h.dX.bank ? r.createElement(C, t) : e === h.dX.card ? r.createElement(k, t) : null),
-                I = o.default.create((e) => ({ logo: { color: e.colors.text, flexShrink: 0 }, rounded: { borderRadius: e.borderRadii.infinite }, iconContainer: { borderColor: e.colors.gray200, borderStyle: "solid", borderWidth: e.spaces.space1, justifyContent: "center", alignItems: "center" } }));
+                C = ({ type: e, ...t }) => r.createElement(k, (0, n.Z)({}, t, { Icon: v[e] })),
+                Z = (e) => r.createElement(k, (0, n.Z)({}, e, { Icon: h.default })),
+                I = ({ type: e, ...t }) => (e === y.dX.bank ? r.createElement(Z, t) : e === y.dX.card ? r.createElement(P, t) : null),
+                w = o.default.create((e) => ({ logo: { color: e.colors.text, flexShrink: 0 }, rounded: { borderRadius: e.borderRadii.infinite }, iconContainer: { borderColor: e.colors.gray200, borderStyle: "solid", borderWidth: e.spaces.space1, justifyContent: "center", alignItems: "center" } }));
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-c7951328.3b25fa7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-c7951328.57d3385a.js.map

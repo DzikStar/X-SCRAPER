@@ -30,11 +30,11 @@
                 _renderContent() {
                     const { backButtonType: e, centerTitle: t, centeredLogo: o, fixed: r, hideBackButton: a, isFullWidth: i, isLarge: l, leftControl: c, middleControl: p, position: h, rightControl: b, secondaryBar: m, style: f, subtitle: y, title: D, titleDomId: S, titleIconCell: w, titleIconCellSize: A, withBackground: g, withWideContainer: v } = this.props,
                         { isModal: T } = this.context,
-                        M = a ? c : n.createElement(d.Z, { backButtonType: e, onClick: this._handleBackClick }),
-                        C = (function (e, t, o) {
+                        C = a ? c : n.createElement(d.Z, { backButtonType: e, onClick: this._handleBackClick }),
+                        M = (function (e, t, o) {
                             return e && !(t && o);
                         })(!!g, T, !!m);
-                    return n.createElement(n.Fragment, null, n.createElement(s.Z, { centerTitle: t, centeredLogo: o, isFullWidth: i, isLarge: l, leftControl: M, middleControl: p, position: u(h, T, r), rightControl: b, style: f, subtitle: y, title: D, titleDomId: S, titleIconCell: w, titleIconCellSize: A, withBackground: C, withWideContainer: v }), m || null);
+                    return n.createElement(n.Fragment, null, n.createElement(s.Z, { centerTitle: t, centeredLogo: o, isFullWidth: i, isLarge: l, leftControl: C, middleControl: p, position: u(h, T, r), rightControl: b, style: f, subtitle: y, title: D, titleDomId: S, titleIconCell: w, titleIconCellSize: A, withBackground: M, withWideContainer: v }), m || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
@@ -69,12 +69,12 @@
                 g = { label: A },
                 v = n.createElement(p.default, null),
                 T = n.createElement(h.default, null);
-            function M() {
-                const e = n.useMemo(() => n.createElement(C, null), []),
+            function C() {
+                const e = n.useMemo(() => n.createElement(M, null), []),
                     t = n.useMemo(() => n.createElement(P, null), []);
                 return n.createElement(r.Z, { style: I.navStyle }, n.createElement(s.Z, { leftControl: e, rightControl: t, title: D }));
             }
-            function C() {
+            function M() {
                 const e = (0, y.RQ)();
                 return n.createElement(l.ZP, { "aria-label": S, hoverLabel: w, icon: v, onPress: e, pullLeft: !0, type: "primaryText" });
             }
@@ -94,7 +94,7 @@
                             return { viewport: e, onViewportSet: o };
                         })(),
                         o = (0, y.Ct)();
-                    return n.createElement(i.Z, { ref: o, style: I.container }, n.createElement(f.Z, { onViewportSet: e, style: I.sidebarViewStyle }, n.createElement(M, null), t && n.createElement(a.Route, { component: b.ConversationTimeline })));
+                    return n.createElement(i.Z, { ref: o, style: I.container }, n.createElement(f.Z, { onViewportSet: e, style: I.sidebarViewStyle }, n.createElement(C, null), t && n.createElement(a.Route, { component: b.ConversationTimeline })));
                 },
                 I = d.default.create((e) => ({ container: { height: d.default.supports("height: 100dvh") ? "100dvh" : "100vh", borderStartWidth: e.borderWidths.small, borderStartStyle: "solid", borderStartColor: e.colors.borderColor, borderEndWidth: e.borderWidths.small, borderEndStyle: "solid", borderEndColor: e.colors.borderColor }, navStyle: { zIndex: e.componentZIndices.appBarZIndex, backfaceVisibility: "hidden", position: "sticky", top: -0.5 }, sidebarViewStyle: { flex: 1, inset: 0, overflow: "auto" } }));
         },
@@ -485,10 +485,10 @@
             const g = "FocalTweetInlineTombstone",
                 v = "More Replies";
             let T;
-            const M = Object.freeze({ Default: "ui_defaultLabel", TransparentCursor: "ui_transparentCursor" }),
-                C = { ...(0, A.G)({}), [s.ZP.Tweet]: (0, S.Z)({ hideConversationControlsEducationText: !0, withMuteConversation: !0 }) },
+            const C = Object.freeze({ Default: "ui_defaultLabel", TransparentCursor: "ui_transparentCursor" }),
+                M = { ...(0, A.G)({}), [s.ZP.Tweet]: (0, S.Z)({ hideConversationControlsEducationText: !0, withMuteConversation: !0 }) },
                 P = ({ changeDropdownState: e, hideReplyContextMode: t, isCurrentUserRootAuthor: o, isReaderMode: n, isTransparentCursorsEnabled: a, replyDropdownSelection: i, rootTweetAuthorId: d, tweetTextSize: c, withFocalTweetMedia: S, withRuxInjections: A }) =>
-                    (0, r.Z)({}, C, {
+                    (0, r.Z)({}, M, {
                         [s.ZP.SelfThreadTweetComposer]: f.Z,
                         [s.ZP.Tweet]: {
                             handlers: {
@@ -552,7 +552,7 @@
                             },
                         },
                         [s.ZP.Tombstone]: { handlers: { [g]: (0, D._n)({ isFocalTweet: !0, isReaderMode: n, withHideReply: o }), [u.Z.Inline]: (0, D._n)({ isReaderMode: n, tweetDismissFeedbackKey: o ? l.qt : void 0, withHideReply: o }) } },
-                        [s.ZP.Label]: h.ov({ selectDisplayType: (e) => ((e, t) => (t && e.content.text === v ? M.TransparentCursor : M.Default))(e, a), handlers: { [M.TransparentCursor]: m.L, [M.Default]: m.k } }),
+                        [s.ZP.Label]: h.ov({ selectDisplayType: (e) => ((e, t) => (t && e.content.text === v ? C.TransparentCursor : C.Default))(e, a), handlers: { [C.TransparentCursor]: m.L, [C.Default]: m.k } }),
                         [s.ZP.TimelineCursor]: (0, b.Z)({ withRuxInjections: A }),
                         [s.ZP.ThreadHeader]: y.Z,
                     }),
@@ -582,7 +582,7 @@
                                 } else {
                                     if (o.type === s.ZP.Tombstone) {
                                         const t = { isStart: a, isEnd: !0 };
-                                        return o.content.displayType === u.Z.Inline ? k({ contextTweetId: e, entry: o, socialContext: c, topicFollowPrompt: p, conversationPosition: t }) : Z({ entry: o, conversationPosition: t });
+                                        return o.content.displayType === u.Z.Inline ? Z({ contextTweetId: e, entry: o, socialContext: c, topicFollowPrompt: p, conversationPosition: t }) : k({ entry: o, conversationPosition: t });
                                     }
                                     if (o.type === s.ZP.Tweet) return I({ originalEntry: o, contextTweetId: e, contextualClientEventInfo: t, socialContext: c, promotedContent: r, topicFollowPrompt: p, conversationPosition: { isStart: a, isEnd: !0, position: "focal", showReplyContext: !1 } });
                                 }
@@ -591,8 +591,8 @@
                     };
                 },
                 I = ({ contextTweetId: e, contextualClientEventInfo: t, conversationPosition: o, originalEntry: n, promotedContent: r, socialContext: a, topicFollowPrompt: i }) => c.Wf({ ...n, conversationPosition: o, referringContext: { contextTweetId: e, contextualClientEventInfo: t, socialContext: a, promotedContent: r, topicFollowPrompt: i } }, { displayType: p.Z.FocalTweet }),
-                k = ({ contextTweetId: e, conversationPosition: t, entry: o, socialContext: n, topicFollowPrompt: r }) => c.Wf({ ...o, conversationPosition: t, referringContext: { contextTweetId: e, socialContext: n } }, { displayType: g }),
-                Z = ({ conversationPosition: e, entry: t }) => ({ ...t, conversationPosition: e }),
+                Z = ({ contextTweetId: e, conversationPosition: t, entry: o, socialContext: n, topicFollowPrompt: r }) => c.Wf({ ...o, conversationPosition: t, referringContext: { contextTweetId: e, socialContext: n } }, { displayType: g }),
+                k = ({ conversationPosition: e, entry: t }) => ({ ...t, conversationPosition: e }),
                 x = (e, t) => ({ ...e, conversationPosition: { isStart: t, isEnd: !1, position: "ancestor", showReplyContext: !1 } }),
                 E = (e, t) => ({ ...e, conversationPosition: { isStart: t, isEnd: !1, position: "ancestor" } });
         },
@@ -632,8 +632,8 @@
                             return (0, c.ZP)(`Unhandled timeline unavailable reason: ${e}`), null;
                     }
                 },
-                M = () => n.createElement(m.Z, null);
-            class C extends n.Component {
+                C = () => n.createElement(m.Z, null);
+            class M extends n.Component {
                 constructor(...e) {
                     super(...e),
                         (this._isInitialFocusEntry = (e, t) => {
@@ -662,7 +662,7 @@
                 }
                 render() {
                     const { apiErrorHandlerMap: e, fetchOptions: t, module: o, onEntriesRendered: r } = this.props;
-                    return n.createElement(f.Z, { anchoring: l.Z, apiErrorHandlerMap: e, entryConfiguration: this._getEntryConfig(), fetchOptions: t, isInitialFocusEntry: this._isInitialFocusEntry, module: o, nearStartProximityRatio: 2, olderAtTop: !0, onEntriesRendered: r, preprocessEntryList: this._getPreprocessor(), prerollDisplayLocation: h.Nw.OTHER, previewEntries: this._previewEntries(), refreshControl: null, renderEmptyState: M, renderUnavailable: T, title: v });
+                    return n.createElement(f.Z, { anchoring: l.Z, apiErrorHandlerMap: e, entryConfiguration: this._getEntryConfig(), fetchOptions: t, isInitialFocusEntry: this._isInitialFocusEntry, module: o, nearStartProximityRatio: 2, olderAtTop: !0, onEntriesRendered: r, preprocessEntryList: this._getPreprocessor(), prerollDisplayLocation: h.Nw.OTHER, previewEntries: this._previewEntries(), refreshControl: null, renderEmptyState: C, renderUnavailable: T, title: v });
                 }
                 _previewEntries() {
                     const { focalTweet: e } = this.props,
@@ -670,8 +670,8 @@
                     return e ? [u.Se({ id: t, sortIndex: s.Z })] : void 0;
                 }
             }
-            (C.defaultProps = { withFocalTweetMedia: !0 }), (C.contextType = b.rC);
-            const P = A(C);
+            (M.defaultProps = { withFocalTweetMedia: !0 }), (M.contextType = b.rC);
+            const P = A(M);
         },
         438965: (e, t, o) => {
             o.d(t, { FE: () => a, Hx: () => s, Oj: () => r, P3: () => l, QO: () => d, j: () => i });
@@ -748,8 +748,8 @@
                         }),
                     }))
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, y.zr)("USERS_LIST_CONTAINER"), fetchUsersIfNeeded: w.ZP.fetchManyIfNeeded })),
-                M = s().f5b426c2;
-            class C extends r.Component {
+                C = s().f5b426c2;
+            class M extends r.Component {
                 constructor(...e) {
                     super(...e),
                         (this.state = { allUsersUnavailable: !1 }),
@@ -768,7 +768,7 @@
                     i()(e.userIds, this.props.userIds) || this._fetchUsersIfNeeded();
                 }
                 render() {
-                    return r.createElement(c.Z, { "aria-label": M, fetchStatus: this.state.allUsersUnavailable ? f.ZP.LOADED : this.props.fetchStatus, onRequestRetry: this._handleFetch, render: this._renderContent, retryable: !1 });
+                    return r.createElement(c.Z, { "aria-label": C, fetchStatus: this.state.allUsersUnavailable ? f.ZP.LOADED : this.props.fetchStatus, onRequestRetry: this._handleFetch, render: this._renderContent, retryable: !1 });
                 }
                 _fetchUsersIfNeeded() {
                     const { availableUserIds: e, createLocalApiErrorHandler: t, fetchUsersIfNeeded: o, userIds: n } = this.props;
@@ -791,7 +791,7 @@
                     );
                 }
             }
-            const P = T(C);
+            const P = T(M);
         },
         26193: (e, t, o) => {
             o.d(t, { Z: () => n });
@@ -799,22 +799,26 @@
             const n = (0, o(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        o.e("icons.8"),
-                        o.e("icons.13"),
+                        o.e("icons.5"),
+                        o.e("icons.6"),
+                        o.e("icons.25"),
+                        o.e("icons.22"),
+                        o.e("icons.9"),
+                        o.e("icons.4"),
+                        o.e("icons.15"),
                         o.e("icons.20"),
-                        o.e("icons.14"),
-                        o.e("icons.1"),
-                        o.e("icons.3"),
-                        o.e("icons.24"),
-                        o.e("icons.11"),
+                        o.e("icons.7"),
+                        o.e("icons.0"),
                         o.e("modules.common-e907d115"),
                         o.e("modules.common-e019dbda"),
-                        o.e("icons.28"),
-                        o.e("icons.10"),
+                        o.e("icons.27"),
                         o.e("icons.17"),
-                        o.e("icons.4"),
+                        o.e("icons.11"),
+                        o.e("icons.3"),
                         o.e("icons.12"),
-                        o.e("icons.22"),
+                        o.e("icons.13"),
+                        o.e("icons.24"),
+                        o.e("icons.26"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -822,7 +826,6 @@
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-64ffe41f"),
-                        o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-5517db7c"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-58d4ab8e"),
@@ -846,7 +849,7 @@
                         o.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                         o.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
                         o.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                        o.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-7af5e2f7"),
+                        o.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2f4a3d25"),
                         o.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                         o.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                         o.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -886,8 +889,8 @@
                         o.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-af3d50e9"),
                         o.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Articles~bundle.AudioSpacePeek~bundle.Birdwatch~bundle.Brande"),
                         o.e("shared~loader.Typeahead~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSpacePeek~bundle.Bir"),
-                        o.e("shared~bundle.JobSearch~bundle.UserJobs~loader.WideLayout"),
-                        o.e("loader.WideLayout"),
+                        o.e("loader.WideLayout-6107ac1a"),
+                        o.e("loader.WideLayout-9f4db315"),
                     ]).then(o.bind(o, 130888)),
                 renderPlaceholder: (e, t) => null,
             });
@@ -1019,4 +1022,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Conversation-e019dbda.bf98aa8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Conversation-e019dbda.eb4dc91a.js.map
