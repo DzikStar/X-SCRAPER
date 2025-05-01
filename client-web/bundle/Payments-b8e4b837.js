@@ -3,7 +3,7 @@
     ["bundle.Payments-b8e4b837"],
     {
         351190: (e, t, a) => {
-            a.r(t), a.d(t, { default: () => x });
+            a.r(t), a.d(t, { default: () => T });
             var n = a(202784),
                 r = a(325686),
                 i = a(731708),
@@ -52,7 +52,7 @@
                     return n.createElement(
                         n.Fragment,
                         null,
-                        n.createElement(r.Z, { style: f.container }, n.createElement(r.Z, { style: T.flexCol, testID: "account-balance" }, n.createElement(i.ZP, { size: "headline2", weight: "bold" }, "Balance"), n.createElement(r.Z, null, s ? n.createElement(E.Z, { amount: s.available_amount_local_micro }) : null)), u ? n.createElement(n.Fragment, null, n.createElement(r.Z, { style: T.interest }, u.apy && n.createElement(r.Z, { style: T.flexGap }, n.createElement(i.ZP, { color: "gray700" }, "Current interest rate"), n.createElement(i.ZP, null, (0, P.Bj)({ apy: u.apy }))), n.createElement(r.Z, { style: T.flexGap }, n.createElement(i.ZP, { color: "gray700" }, "Total interest earned"), n.createElement(E.Z, { amount: u.earned.local_micro, currency: u.pending.currency, size: "body", weight: "normal" })), u.pending && n.createElement(r.Z, { style: T.flexGap }, n.createElement(i.ZP, { color: "gray700" }, "Pending interest"), n.createElement(E.Z, { amount: u.pending.local_micro, currency: u.pending.currency, size: "body", weight: "normal" }))), n.createElement(c.Z, { spacing: "space8" })) : null, I ? n.createElement(r.Z, { style: T.flexCol, testID: "account-details" }, n.createElement(i.ZP, { size: "headline2", weight: "bold" }, "Account details"), n.createElement(l.Z, { "aria-label": _, containerStyle: f.tile, stackLayoutUpperStyle: T.routing, upper: t ? n.createElement(b.Z, { eventCallback: S, linkType: h.P_.accountRouting, payload: { customerId: t } }) : void 0, withInteractiveStyling: !1 })) : v ? n.createElement(r.Z, { style: T.flexCol }, n.createElement(i.ZP, { size: "headline1", weight: "bold" }, "Verification needed"), n.createElement(i.ZP, { color: "gray700" }, "Verify your identity to unlock your account and routing numbers for secure payments."), n.createElement(o.ZP, { link: { pathname: h.AU.tier2.verifyIdentityPath, state: { closePath: h.l_, redirectPath: h.l_ } }, type: "primaryFilled" }, _)) : null),
+                        n.createElement(r.Z, { style: f.container }, n.createElement(r.Z, { style: x.flexCol, testID: "account-balance" }, n.createElement(i.ZP, { size: "headline2", weight: "bold" }, "Balance"), n.createElement(r.Z, null, s ? n.createElement(E.Z, { amount: s.available_amount_local_micro }) : null)), u ? n.createElement(n.Fragment, null, n.createElement(r.Z, { style: x.interest }, u.apy && n.createElement(r.Z, { style: x.flexGap }, n.createElement(i.ZP, { color: "gray700" }, "Current interest rate"), n.createElement(i.ZP, null, (0, P.Bj)({ apy: u.apy }))), n.createElement(r.Z, { style: x.flexGap }, n.createElement(i.ZP, { color: "gray700" }, "Total interest earned"), n.createElement(E.Z, { amount: u.earned.local_micro, currency: u.pending.currency, size: "body", weight: "normal" })), u.pending && n.createElement(r.Z, { style: x.flexGap }, n.createElement(i.ZP, { color: "gray700" }, "Pending interest"), n.createElement(E.Z, { amount: u.pending.local_micro, currency: u.pending.currency, size: "body", weight: "normal" }))), n.createElement(c.Z, { spacing: "space8" })) : null, I ? n.createElement(r.Z, { style: x.flexCol, testID: "account-details" }, n.createElement(i.ZP, { size: "headline2", weight: "bold" }, "Account details"), n.createElement(l.Z, { "aria-label": _, containerStyle: f.tile, stackLayoutUpperStyle: x.routing, upper: t ? n.createElement(b.Z, { eventCallback: S, linkType: h.P_.accountRouting, payload: { customerId: t } }) : void 0, withInteractiveStyling: !1 })) : v ? n.createElement(r.Z, { style: x.flexCol }, n.createElement(i.ZP, { size: "headline1", weight: "bold" }, "Verification needed"), n.createElement(i.ZP, { color: "gray700" }, "Verify your identity to unlock your account and routing numbers for secure payments."), n.createElement(o.ZP, { link: { pathname: h.AU.tier2.verifyIdentityPath, state: { closePath: h.l_, redirectPath: h.l_ } }, type: "primaryFilled" }, _)) : null),
                         w ? n.createElement(r.Z, { style: f.footer }, n.createElement(o.ZP, { icon: n.createElement(d.default, null), link: h.IN, type: "secondaryFilled" }, "Deposit funds")) : null,
                     );
                 },
@@ -62,8 +62,8 @@
                         a = n.useCallback(() => t.goBack(), [t]);
                     return n.createElement(u.Z, { backButtonType: "close", history: t, onBackClick: a }, n.createElement(f.nO, { namespace: v }, n.createElement(p.H, { errorConfig: w }, n.createElement(I, e))));
                 },
-                T = s.default.create((e) => ({ flexGap: { flexDirection: "row", justifyContent: "space-between" }, icon: { color: e.colors.text }, flexCol: { flexDirection: "column", gap: e.spaces.space12, flexShrink: 1 }, padding: { padding: e.spaces.space8 }, routing: { height: 150 * e.scaleMultiplier }, interest: { flexDirection: "column", gap: e.spaces.space12 } })),
-                x = n.memo(S);
+                x = s.default.create((e) => ({ flexGap: { flexDirection: "row", justifyContent: "space-between" }, icon: { color: e.colors.text }, flexCol: { flexDirection: "column", gap: e.spaces.space12, flexShrink: 1 }, padding: { padding: e.spaces.space8 }, routing: { height: 150 * e.scaleMultiplier }, interest: { flexDirection: "column", gap: e.spaces.space12 } })),
+                T = n.memo(S);
         },
         99387: (e, t, a) => {
             a.r(t), a.d(t, { default: () => A });
@@ -77,7 +77,7 @@
                 d = a(167630),
                 m = a(529356),
                 u = a(515510),
-                p = a(883229),
+                p = a(736063),
                 y = a(782642),
                 h = a(514639),
                 g = a(445664),
@@ -96,25 +96,25 @@
                     const Z = (0, l.useHistory)(),
                         _ = c()(),
                         S = (0, E.z)(),
-                        T = (0, y.p)(),
-                        { headline: x, errorMessage: A = v, targetRole: R, subtext: D = P, challengeCompleteMessage: B } = I[i],
+                        x = (0, y.p)(),
+                        { headline: T, errorMessage: A = v, targetRole: R, subtext: D = P, challengeCompleteMessage: B } = I[i],
                         L = p ?? R,
-                        M = n.useMemo(() => n.createElement(r.Z, { style: { width: "100%" } }, n.createElement(s.ZP, null, D), n.createElement(d.Z, { style: w.activityIndicator })), [D]);
+                        F = n.useMemo(() => n.createElement(r.Z, { style: { width: "100%" } }, n.createElement(s.ZP, null, D), n.createElement(d.Z, { style: w.activityIndicator })), [D]);
                     n.useEffect(() => {
                         S.scribe({ page: "payments-poller", section: "polling", action: "impression" });
                     }, [S]);
-                    const j = n.useCallback(
+                    const M = n.useCallback(
                         (e) => {
-                            clearInterval(e), Z.replace(a ?? h.gp), T({ text: A });
+                            clearInterval(e), Z.replace(a ?? h.gp), x({ text: A });
                         },
-                        [Z, a, T, A],
+                        [Z, a, x, A],
                     );
                     return (
                         n.useEffect(() => {
                             let a = 0;
                             const n = () => {
                                 a >= b.wG
-                                    ? (S.scribe({ page: "payments-poller", section: "polling", action: "failure" }), j(r))
+                                    ? (S.scribe({ page: "payments-poller", section: "polling", action: "failure" }), M(r))
                                     : ((a += 1),
                                       (0, g.v)({ environment: _ })
                                           .then((a) => {
@@ -148,22 +148,22 @@
                                               }
                                           })
                                           .catch(() => {
-                                              j(r);
+                                              M(r);
                                           }));
                             };
                             n();
                             const r = setInterval(n, b.Ln);
                             return () => clearInterval(r);
-                        }, [S, _, j, Z, i, o, L, u, e, t, B]),
-                        n.createElement(m.Z, { graphicDisplayMode: "illustration", graphicStyle: k.ir, headline: x, onAction: () => {}, subtext: M })
+                        }, [S, _, M, Z, i, o, L, u, e, t, B]),
+                        n.createElement(m.Z, { graphicDisplayMode: "illustration", graphicStyle: k.ir, headline: T, onAction: () => {}, subtext: F })
                     );
                 },
-                T = { context: "PaymentsAccountsPoller" },
-                x = (e) => n.createElement(p.N, { errorConfig: T }, n.createElement(S, e)),
-                A = n.memo(x);
+                x = { context: "PaymentsAccountsPoller" },
+                T = (e) => n.createElement(p.H, { errorConfig: x }, n.createElement(S, e)),
+                A = n.memo(T);
         },
         496743: (e, t, a) => {
-            a.r(t), a.d(t, { default: () => W });
+            a.r(t), a.d(t, { default: () => j });
             var n = a(202784),
                 r = a(108362),
                 i = a(252021),
@@ -190,13 +190,13 @@
                 I = a(578719),
                 w = a(43429),
                 S = a(412100),
-                T = a(825941);
-            const x = p.Z,
+                x = a(825941);
+            const T = p.Z,
                 A = { [P.W.CreditCardBack]: b.default, [P.W.FollowArrows]: k.default, [P.W.PeopleStroke]: C.default, [P.W.Clock]: Z.default },
                 R = (e) => {
                     const t = (0, m.jh)(),
                         { selectedFilter: a, withHeader: r } = e,
-                        { data: i, fetchNext: c } = (0, T.Z)({ searchFilterId: a }),
+                        { data: i, fetchNext: c } = (0, x.Z)({ searchFilterId: a }),
                         l = i?.get_transactions;
                     return n.createElement(n.Fragment, null, l ? n.createElement(y.Z, null, r ? n.createElement(y.Z, { style: m.ZP.header }, n.createElement(g.ZP, { size: "headline2", weight: "bold" }, "All transactions")) : null, n.createElement(f.Z, { "aria-label": "Activity", containerStyle: t.tile, stackLayoutUpperStyle: m.ZP.upper, upper: n.createElement(I.Z, { emptyStateDescription: "You have not made any transactions yet.", fetchNext: c, slice: l }), withInteractiveStyling: !1 })) : null);
                 },
@@ -206,26 +206,26 @@
                 },
                 B = E.default.create(() => ({ tabStrip: { width: "100%" } })),
                 L = { context: "TRANSACTIONS_LIST" },
-                M = (e) => {
+                F = (e) => {
                     const t = e.location.query?.filter?.toString() || w.$W,
                         [a, r] = n.useState(t),
-                        i = (0, h.useLazyLoadQuery)(x),
+                        i = (0, h.useLazyLoadQuery)(T),
                         l = (i.get_payments_transaction_search_filters?.filter(({ details: e }) => !!e?.title).map(({ details: e, rest_id: t }) => ({ id: t, title: e?.title || "", icon: e?.icon })) || []).map(({ icon: t, id: n, title: i }) => ({ key: n, label: i, Icon: t ? A[t] : void 0, to: { pathname: e.location.pathname, query: { filter: n } }, isActive: () => a === n, onClick: () => r(n) })),
                         o = a === w.$W;
                     return n.createElement(n.Fragment, null, l.length && n.createElement(v.Z, { isCompact: !0, isPillLink: !0, isRoundedRect: !0, links: l, style: B.tabStrip }), n.createElement(c.H, { errorConfig: L }, o ? n.createElement(D, (0, u.Z)({}, e, { selectedFilter: a })) : n.createElement(R, (0, u.Z)({}, e, { selectedFilter: a }))));
                 },
-                j = n.memo(M),
+                M = n.memo(F),
                 N = { page: "money", section: "balance" },
-                F = "Money",
-                z = { context: "ACCOUNT_ACTIVITY" },
+                z = "Money",
+                W = { context: "ACCOUNT_ACTIVITY" },
                 H = (e) => {
                     const { history: t } = e,
                         a = (0, m.jh)(),
-                        u = n.useCallback(() => n.createElement(n.Fragment, null, n.createElement(r.Z, { style: a.root, withWideContainer: !0 }, n.createElement(c.H, { errorConfig: z }, n.createElement(d.Z, null), n.createElement(c.H, { errorConfig: z }, n.createElement(j, e))))), [a.root, e]),
+                        u = n.useCallback(() => n.createElement(n.Fragment, null, n.createElement(r.Z, { style: a.root, withWideContainer: !0 }, n.createElement(c.H, { errorConfig: W }, n.createElement(d.Z, null), n.createElement(c.H, { errorConfig: W }, n.createElement(M, e))))), [a.root, e]),
                         p = n.useCallback(() => t.goBack(), [t]);
-                    return n.createElement(o.nO, { namespace: N }, n.createElement(i.Z, { backLocation: l.gp, documentTitle: F, history: t, isFullWidth: !0, onBackClick: p, primaryContent: u(), rightControl: n.createElement(s.Z, null), sidebarContent: null, title: F }));
+                    return n.createElement(o.nO, { namespace: N }, n.createElement(i.Z, { backLocation: l.gp, documentTitle: z, history: t, isFullWidth: !0, onBackClick: p, primaryContent: u(), rightControl: n.createElement(s.Z, null), sidebarContent: null, title: z }));
                 },
-                W = n.memo(H);
+                j = n.memo(H);
         },
         829376: (e, t, a) => {
             a.r(t), a.d(t, { default: () => o });
@@ -264,11 +264,11 @@
                 I = a(413713),
                 w = a(626278),
                 S = (a(585488), a(351743)),
-                T = a.n(S),
-                x = a(39431);
+                x = a.n(S),
+                T = a(39431);
             const A = w.Z,
                 R = ({ decision: e }) => {
-                    const [t, a] = T()(A);
+                    const [t, a] = x()(A);
                     return [
                         n.useCallback(
                             ({ authenticationId: a }) =>
@@ -288,7 +288,7 @@
                     ];
                 },
                 D = ({ amount: e, authenticationId: t, onSuccess: a }) => {
-                    const [r, i] = R({ decision: x._.ThreeDsAuthenticationResponseAllow }),
+                    const [r, i] = R({ decision: T._.ThreeDsAuthenticationResponseAllow }),
                         { permissions: c } = (0, _.Z)({ fetchKey: "Payments" }),
                         o = (0, k.Fs)({ permissions: c, permission: P.d.RespondToThreedsAuthentication }),
                         s = (0, l.z)(),
@@ -315,9 +315,9 @@
             function L(e) {
                 return n.createElement(i.H, { errorConfig: B }, n.createElement(D, e));
             }
-            const M = n.memo(L),
-                j = ({ amount: e, authenticationId: t, onSuccess: a }) => {
-                    const [r, i] = R({ decision: x._.ThreeDsAuthenticationResponseDeny }),
+            const F = n.memo(L),
+                M = ({ amount: e, authenticationId: t, onSuccess: a }) => {
+                    const [r, i] = R({ decision: T._.ThreeDsAuthenticationResponseDeny }),
                         { permissions: c } = (0, _.Z)({ fetchKey: "Payments" }),
                         o = (0, k.Fs)({ permissions: c, permission: P.d.RespondToThreedsAuthentication }),
                         s = (0, l.z)(),
@@ -341,19 +341,19 @@
                     return n.createElement(C.ZP, { disabled: u, onPress: m, size: "medium", type: "destructiveFilled" }, i ? n.createElement(Z.Z, { size: "small" }) : "I did not make this purchase");
                 },
                 N = { context: "PaymentsRejectPaymentAuth" };
-            function F(e) {
-                return n.createElement(i.H, { errorConfig: N }, n.createElement(j, e));
+            function z(e) {
+                return n.createElement(i.H, { errorConfig: N }, n.createElement(M, e));
             }
-            const z = n.memo(F);
+            const W = n.memo(z);
             var H = a(461461),
-                W = a(712696),
-                U = a.n(W);
-            const V = H.Z,
-                O = () => U()(V, {}, { fetchPolicy: "network-only" }),
-                Y = { page: "money", section: "authenticate-payment" },
-                K = ({ authenticationId: e }) => {
+                j = a(712696),
+                V = a.n(j);
+            const U = H.Z,
+                K = () => V()(U, {}, { fetchPolicy: "network-only" }),
+                O = { page: "money", section: "authenticate-payment" },
+                Y = ({ authenticationId: e }) => {
                     const t = (0, b.jh)(),
-                        a = O(),
+                        a = K(),
                         i = a?.get_active_three_ds_authentications?.three_ds_authentications,
                         l = i?.find((t) => t.id === e),
                         C = (0, r.useHistory)(),
@@ -364,12 +364,12 @@
                     const { amount: P, merchant_details: v, payment_method: _ } = l ?? {},
                         I = (0, k.Ou)(_),
                         w = P ? (0, k.vw)({ amount: P.local_micro, currency: P.currency }) : null,
-                        S = n.createElement(s.Z, { style: t.footer }, n.createElement(s.Z, { style: b.YP.actions }, n.createElement(z, { amount: w, authenticationId: e, key: "RejectPaymentAuth", onSuccess: Z }), n.createElement(M, { amount: w, authenticationId: e, key: "AcceptPaymentAuth", onSuccess: Z })));
-                    return n.createElement(u.nO, { namespace: Y }, n.createElement(m.Z, { bottomBar: S, history: C, onBackClick: Z, withoutBottomBarMobile: !0 }, n.createElement(s.Z, { style: t.container }, n.createElement(s.Z, { style: b.YP.content }, v ? n.createElement(s.Z, { style: b.YP.gap }, n.createElement(y.G7, { size: "xJumbo", type: E.wC.card, uri: v.logo }), n.createElement(h.Z, { name: v.name, size: "title4" })) : null, n.createElement(s.Z, { style: [b.YP.gap, b.YP.marginTop] }, P ? n.createElement(p.Z, { amount: P.local_micro, currency: P.currency, hasCompleted: !1, type: E.NU.debit }) : null), n.createElement(d.Z, { spacing: "space12" }), n.createElement(g.Z, { description: "Verification requested by merchant", title: "Status" }), I && I.issuedCardAccountName ? n.createElement(g.Z, { description: n.createElement(f.Z, { account: I, isIssued: !0, testId: "issuedCard" }), title: "Card used" }) : null, n.createElement(g.Z, { description: "Online", title: "Location" }), n.createElement(g.Z, { description: e, title: "Authentication ID" })))));
+                        S = n.createElement(s.Z, { style: t.footer }, n.createElement(s.Z, { style: b.YP.actions }, n.createElement(W, { amount: w, authenticationId: e, key: "RejectPaymentAuth", onSuccess: Z }), n.createElement(F, { amount: w, authenticationId: e, key: "AcceptPaymentAuth", onSuccess: Z })));
+                    return n.createElement(u.nO, { namespace: O }, n.createElement(m.Z, { bottomBar: S, history: C, onBackClick: Z, withoutBottomBarMobile: !0 }, n.createElement(s.Z, { style: t.container }, n.createElement(s.Z, { style: b.YP.content }, v ? n.createElement(s.Z, { style: b.YP.gap }, n.createElement(y.G7, { size: "xJumbo", type: E.wC.card, uri: v.logo }), n.createElement(h.Z, { name: v.name, size: "title4" })) : null, n.createElement(s.Z, { style: [b.YP.gap, b.YP.marginTop] }, P ? n.createElement(p.Z, { amount: P.local_micro, currency: P.currency, hasCompleted: !1, type: E.NU.debit }) : null), n.createElement(d.Z, { spacing: "space12" }), n.createElement(g.Z, { description: "Verification requested by merchant", title: "Status" }), I && I.issuedCardAccountName ? n.createElement(g.Z, { description: n.createElement(f.Z, { account: I, isIssued: !0, testId: "issuedCard" }), title: "Card used" }) : null, n.createElement(g.Z, { description: "Online", title: "Location" }), n.createElement(g.Z, { description: e, title: "Authentication ID" })))));
                 },
-                G = { context: "AUTHENTICATE_PANE" },
-                $ = (e) => n.createElement(i.H, { errorConfig: G }, n.createElement(K, e)),
-                q = n.memo($),
+                $ = { context: "AUTHENTICATE_PANE" },
+                G = (e) => n.createElement(i.H, { errorConfig: $ }, n.createElement(Y, e)),
+                q = n.memo(G),
                 J = (e) => {
                     const t = (0, l.z)(),
                         a = (0, r.useParams)().authenticationId;
@@ -387,7 +387,7 @@
             const ee = n.memo(Q);
         },
         129813: (e, t, a) => {
-            a.r(t), a.d(t, { default: () => j, fetchCardStatus: () => A });
+            a.r(t), a.d(t, { default: () => M, fetchCardStatus: () => A });
             var n = a(807896),
                 r = a(655729),
                 i = a(202784),
@@ -405,7 +405,7 @@
                 f = a(605446),
                 E = a(622769),
                 b = a(420182),
-                k = a(883229),
+                k = a(736063),
                 C = a(782642),
                 Z = a(514639),
                 P = a(725516),
@@ -414,10 +414,10 @@
                 I = a(743080),
                 w = a(727384),
                 S = a(224058);
-            const T = { [f.T.BankCardLinkingSessionRejectionReasonCardAlreadyExists]: "This card already exists.", [f.T.BankCardLinkingSessionRejectionReasonInaccurateCardDetails]: "Please verify the card details entered and try again.", [f.T.BankCardLinkingSessionRejectionReasonProviderFailedToAuthorizeCard]: "We were unable to verify the card details entered.", [f.T.BankCardLinkingSessionRejectionReasonProviderFailedToVerifyAddress]: "We were unable to verify the address associated with the card.", [f.T.BankCardLinkingSessionRejectionReasonProviderFailedToVerifyCardholderName]: "We were unable to verify the name associated with the card.", [f.T.BankCardLinkingSessionRejectionReasonUnsupportedCardType]: "We do not support this card at this time.", [f.T.BankCardLinkingSessionRejectionReasonUnsupportedIssuerCountry]: "We do not support this card at this time.", [f.T.BankCardLinkingSessionRejectionReasonUnusableCard]: "We were unable to verify the card details entered." },
-                x = r.Z,
+            const x = { [f.T.BankCardLinkingSessionRejectionReasonCardAlreadyExists]: "This card already exists.", [f.T.BankCardLinkingSessionRejectionReasonInaccurateCardDetails]: "Please verify the card details entered and try again.", [f.T.BankCardLinkingSessionRejectionReasonProviderFailedToAuthorizeCard]: "We were unable to verify the card details entered.", [f.T.BankCardLinkingSessionRejectionReasonProviderFailedToVerifyAddress]: "We were unable to verify the address associated with the card.", [f.T.BankCardLinkingSessionRejectionReasonProviderFailedToVerifyCardholderName]: "We were unable to verify the name associated with the card.", [f.T.BankCardLinkingSessionRejectionReasonUnsupportedCardType]: "We do not support this card at this time.", [f.T.BankCardLinkingSessionRejectionReasonUnsupportedIssuerCountry]: "We do not support this card at this time.", [f.T.BankCardLinkingSessionRejectionReasonUnusableCard]: "We were unable to verify the card details entered." },
+                T = r.Z,
                 A = ({ cardLinkId: e, environment: t }) =>
-                    s()(t, x, { id: e }, { fetchPolicy: "network-only" })
+                    s()(t, T, { id: e }, { fetchPolicy: "network-only" })
                         .toPromise()
                         .then((e) => {
                             const t = e?.get_bank_card_linking_session?.status,
@@ -454,7 +454,7 @@
                                                       clearInterval(o), (0, w.ve)(r), t(), n.replace(a ?? Z.gp);
                                                       break;
                                                   case E.G.BankCardLinkingSessionStatusRejected:
-                                                      s(o, i ? T[i] : void 0);
+                                                      s(o, i ? x[i] : void 0);
                                               }
                                           })
                                           .catch(() => {
@@ -483,8 +483,8 @@
                 },
                 B = g.default.create((e) => ({ container: { width: "100%" }, margin: { marginBottom: e.spaces.space12, marginTop: e.spaces.space12 }, error: { marginTop: e.spaces.space12 }, activityIndicator: { marginTop: e.spaces.space12 } })),
                 L = { context: "BankCardPoller" },
-                M = (e) => i.createElement(k.N, { errorConfig: L }, i.createElement(D, null)),
-                j = i.memo(M);
+                F = (e) => i.createElement(k.H, { errorConfig: L }, i.createElement(D, null)),
+                M = i.memo(F);
         },
         224058: (e, t, a) => {
             a.d(t, { a: () => n });
@@ -534,7 +534,7 @@
                 },
                 w = "Add a debit card",
                 S = { page: "money", section: "bank-card" },
-                T = (e) => {
+                x = (e) => {
                     const t = (0, r.Dv)(m.lZ),
                         a = I(),
                         d = (0, c.useHistory)(),
@@ -545,7 +545,7 @@
                         P = (0, y.JY)("payments_crb_iframe_delay_msecs", 0),
                         v = n.useMemo(() => ({ pathname: h.ac, state: C ?? {} }), [C]),
                         _ = n.createElement(i.Z, { style: k.footer }, n.createElement(l.ZP, { align: "center", color: "text", link: v }, "Use a bank account")),
-                        T = n.useCallback(() => {
+                        x = n.useCallback(() => {
                             P
                                 ? setTimeout(() => {
                                       b(!0);
@@ -553,13 +553,13 @@
                                 : b(!0),
                                 a?.id && t.set(E.a, { redirectPath: Z, cardLinkId: a.id });
                         }, [P, Z, a, t]),
-                        x = n.useCallback(() => {
+                        T = n.useCallback(() => {
                             Z === h.iE.bankAccounts ? d.push(h.iE.bankAccounts) : d.push(h.gp);
                         }, [d, Z]);
-                    return n.createElement(u.Z, { backButtonType: "close", bottomBar: _, history: d, onBackClick: x, withoutBottomBarMobile: !0 }, n.createElement(g.nO, { namespace: S }, n.createElement(i.Z, { style: k.container }, n.createElement(l.ZP, { align: "center", size: "title2", style: f.ZP.title, weight: "heavy" }, w), !p && n.createElement(o.Z, { style: f.ZP.spinner, testID: "loading-spinner" }), a?.iframe_url ? n.createElement(s.Z, { allowForms: !0, allowTopNavigation: !0, onLoad: T, src: a.iframe_url, style: p ? D.iframe : D.hide, title: w }) : null)));
+                    return n.createElement(u.Z, { backButtonType: "close", bottomBar: _, history: d, onBackClick: T, withoutBottomBarMobile: !0 }, n.createElement(g.nO, { namespace: S }, n.createElement(i.Z, { style: k.container }, n.createElement(l.ZP, { align: "center", size: "title2", style: f.ZP.title, weight: "heavy" }, w), !p && n.createElement(o.Z, { style: f.ZP.spinner, testID: "loading-spinner" }), a?.iframe_url ? n.createElement(s.Z, { allowForms: !0, allowTopNavigation: !0, onLoad: x, src: a.iframe_url, style: p ? D.iframe : D.hide, title: w }) : null)));
                 },
-                x = { context: "BANK_CARD" },
-                A = (e) => n.createElement(p.H, { errorConfig: x }, n.createElement(T, e)),
+                T = { context: "BANK_CARD" },
+                A = (e) => n.createElement(p.H, { errorConfig: T }, n.createElement(x, e)),
                 R = n.memo(A),
                 D = d.default.create((e) => ({ iframe: { width: "100%", paddingTop: "0px", flex: 1 }, hide: { display: "none" } }));
         },
@@ -609,53 +609,55 @@
             }
             const h = n.memo(y);
         },
-        900592: (e, t, a) => {
-            a.r(t), a.d(t, { default: () => de });
+        123062: (e, t, a) => {
+            a.r(t), a.d(t, { default: () => Ae });
             var n = a(202784),
                 r = a(325686),
                 i = a(992942),
                 c = a(154003),
-                l = a(165822),
-                o = a(731708),
-                s = a(953035),
-                d = a(392237),
-                m = a(108362),
-                u = a(177826),
-                p = a(468670),
-                y = a(777217),
-                h = a(861420),
-                g = a(692165),
-                f = a(436117),
-                E = a(252021),
-                b = a(736063),
-                k = a(514639),
-                C = a(445664),
-                Z = a(293115),
-                P = a(615027),
-                v = a(575123),
-                _ = a(452275),
-                I = a(226595),
-                w = a(24568),
-                S = a(743080),
-                T = a(727384);
-            const x = { front: "https://pbs.twimg.com/static/money/mock-card-landscape-front.jpg", back: "https://pbs.twimg.com/static/money/mock-card-landscape-back.jpg" };
+                l = a(167630),
+                o = a(165822),
+                s = a(731708),
+                d = a(953035),
+                m = a(392237),
+                u = a(108362),
+                p = a(161335),
+                y = a(177826),
+                h = a(468670),
+                g = a(777217),
+                f = a(861420),
+                E = a(692165),
+                b = a(436117),
+                k = a(252021),
+                C = a(736063),
+                Z = a(514639),
+                P = a(445664),
+                v = a(293115),
+                _ = a(615027),
+                I = a(575123),
+                w = a(452275),
+                S = a(226595),
+                x = a(24568),
+                T = a(743080),
+                A = a(727384);
+            const R = { front: "https://pbs.twimg.com/static/money/mock-card-landscape-front.jpg", back: "https://pbs.twimg.com/static/money/mock-card-landscape-back.jpg" };
             a(136728);
-            var A = a(107267),
-                R = a(674132),
-                D = a.n(R),
-                B = a(684779),
-                L = a(717160),
-                M = a(711223),
-                j = a(633806),
-                N = a(782642),
-                F = a(725516),
-                z = a(413713),
-                H = a(914507),
-                W = (a(585488), a(351743)),
-                U = a.n(W);
-            const V = H.Z,
-                O = () => {
-                    const [e, t] = U()(V);
+            var D = a(107267),
+                B = a(674132),
+                L = a.n(B),
+                F = a(684779),
+                M = a(717160),
+                N = a(711223),
+                z = a(633806),
+                W = a(782642),
+                H = a(725516),
+                j = a(413713),
+                V = a(914507),
+                U = (a(585488), a(351743)),
+                K = a.n(U);
+            const O = V.Z,
+                Y = () => {
+                    const [e, t] = K()(O);
                     return [
                         n.useCallback(
                             ({ cardId: t }) =>
@@ -675,30 +677,30 @@
                         t,
                     ];
                 };
-            var Y = a(526274),
-                K = a(353391),
-                G = a.n(K),
-                $ = a(482924);
-            const q = Y.Z,
-                J = ({ paymentMethodId: e }) => {
-                    const { data: t, refetch: a, refetchStatus: n } = (0, $.A)(q, { payment_method_id: e }),
+            var $ = a(526274),
+                G = a(353391),
+                q = a.n(G),
+                J = a(482924);
+            const X = $.Z,
+                Q = ({ paymentMethodId: e }) => {
+                    const { data: t, refetch: a, refetchStatus: n } = (0, J.A)(X, { payment_method_id: e }),
                         r = t?.get_payment_method?.__id ?? "get_payment_method";
                     return (
-                        G()([r], () => {
+                        q()([r], () => {
                             a();
                         }),
                         { data: t, refetchStatus: n }
                     );
                 },
-                X = D().jade381b,
-                Q = ({ card: e, disabled: t }) => {
-                    const a = (0, F.z)(),
-                        i = (0, S.jh)(),
-                        c = (0, N.p)(),
-                        s = (0, A.useHistory)(),
+                ee = L().jade381b,
+                te = ({ card: e, disabled: t }) => {
+                    const a = (0, H.z)(),
+                        i = (0, T.jh)(),
+                        c = (0, W.p)(),
+                        l = (0, D.useHistory)(),
                         d = e.rest_id,
-                        [m, u] = O(),
-                        { data: p } = J({ paymentMethodId: e.rest_id });
+                        [m, u] = Y(),
+                        { data: p } = Q({ paymentMethodId: e.rest_id });
                     n.useEffect(() => {
                         a && a.scribe({ page: "money", section: "card-shipping", action: "impression" });
                     }, [a]);
@@ -706,12 +708,12 @@
                             a.scribe({ page: "money", section: "confirm-payment", element: "approve", action: "click" }),
                                 m({ cardId: d })
                                     .then(({ challengeId: e }) => {
-                                        e && s.push(k.vw, { challengeId: e, challengeInitiator: k.kW.activateCard });
+                                        e && l.push(Z.vw, { challengeId: e, challengeInitiator: Z.kW.activateCard });
                                     })
                                     .catch((e) => {
-                                        c({ text: (0, z.kJ)({ errors: e }).message });
+                                        c({ text: (0, j.kJ)({ errors: e }).message });
                                     });
-                        }, [a, m, d, s, c]),
+                        }, [a, m, d, l, c]),
                         {
                             Icon: h,
                             action: g,
@@ -725,51 +727,159 @@
                                 n = a ? new Date(parseInt(a, 10)) : void 0,
                                 r = !!n && n < new Date();
                             switch (t) {
-                                case j.$.IssuedCardShippingStatusDelivered:
-                                    return { title: "Ready to activate", subtitle: n ? ((i = X(n)), `Card arrived on ${i}`) : null, Icon: B.default, action: y, disabled: u };
-                                case j.$.IssuedCardShippingStatusShipped:
-                                    return { title: "Your card has shipped", subtitle: "Activate your card once its arrived", Icon: L.default, action: r ? y : void 0, disabled: u };
+                                case z.$.IssuedCardShippingStatusDelivered:
+                                    return { title: "Ready to activate", subtitle: n ? ((i = ee(n)), `Card arrived on ${i}`) : null, Icon: F.default, action: y, disabled: u };
+                                case z.$.IssuedCardShippingStatusShipped:
+                                    return { title: "Your card has shipped", subtitle: "Activate your card once its arrived", Icon: M.default, action: r ? y : void 0, disabled: u };
                                 default:
-                                    return { title: "Your card has been ordered", subtitle: "Use it online while you wait.", Icon: M.default };
+                                    return { title: "Your card has been ordered", subtitle: "Use it online while you wait.", Icon: N.default };
                             }
                             var i;
                         }, [p?.get_payment_method?.shipping, u, y]);
-                    return n.createElement(l.Z, { "aria-label": b, containerStyle: i.tile, disabled: t || f, onClick: g, stackLayoutUpperStyle: S.ZP.upper, upper: n.createElement(r.Z, { style: S.ZP.row }, n.createElement(h, { style: S.ZP.icon }), n.createElement(r.Z, null, n.createElement(o.ZP, null, b), E ? n.createElement(o.ZP, { color: "gray700", size: "subtext2" }, E) : null)), withInteractiveStyling: !!g });
+                    return n.createElement(o.Z, { "aria-label": b, containerStyle: i.tile, disabled: t || f, onClick: g, stackLayoutUpperStyle: T.ZP.upper, upper: n.createElement(r.Z, { style: T.ZP.row }, n.createElement(h, { style: T.ZP.icon }), n.createElement(r.Z, null, n.createElement(s.ZP, null, b), E ? n.createElement(s.ZP, { color: "gray700", size: "subtext2" }, E) : null)), withInteractiveStyling: !!g });
                 },
-                ee = { context: "ShippingStatus" };
-            function te(e) {
-                return n.createElement(b.H, { errorConfig: ee }, n.createElement(Q, e));
+                ae = { context: "ShippingStatus" };
+            function ne(e) {
+                return n.createElement(C.H, { errorConfig: ae }, n.createElement(te, e));
             }
-            const ae = n.memo(te),
-                ne = { page: "money", section: "cards" },
-                re = "Money",
-                ie = "Your card is locked",
-                ce = (e) => {
-                    const t = (0, S.jh)(),
-                        { permissions: a } = (0, C.Z)({ fetchKey: "Payments" }),
-                        { cards: d, inactivePhysicalCards: m } = (0, I.Z)(),
-                        { handleDeferredPreferencesChange: E, isInProgress: b, preferences: Z } = (0, w.Z)(),
-                        v = n.useCallback(() => {
-                            E("enable_card_payments", !1);
-                        }, [E]),
-                        _ = n.useCallback(() => {
-                            E("enable_card_payments", !0);
-                        }, [E]),
-                        A = !(0, T.aY)(a),
-                        R = !(0, T.Fs)({ permissions: a, permission: f.d.RequestIssuedCard }),
-                        D = !Z.enable_card_payments;
-                    return n.createElement(n.Fragment, null, d && d?.length > 0 ? n.createElement(n.Fragment, null, n.createElement(r.Z, { style: le.imageContainer }, n.createElement(i.Z, { ariaLabel: "Card", source: x.front, style: le.image }), n.createElement(c.ZP, { fontWeight: "normal", icon: n.createElement(u.default, null), onClick: () => {}, size: "xSmall", style: le.showDetailsButton, type: "onMediaText" }, "Show card details")), m && m?.length > 0 ? n.createElement(ae, { card: m[0], disabled: R }) : null, D ? n.createElement(l.Z, { "aria-label": ie, containerStyle: t.tile, stackLayoutUpperStyle: S.ZP.upper, upper: n.createElement(r.Z, { style: S.ZP.row }, n.createElement(p.default, { style: S.ZP.icon }), n.createElement(r.Z, null, n.createElement(o.ZP, null, ie), n.createElement(o.ZP, { color: "gray700", size: "subtext2" }, "Future transactions would be declined."))), withInteractiveStyling: !1 }) : null, n.createElement(r.Z, { style: t.pivotTileContainer }, D ? n.createElement(s.Z, { containerStyle: t.pivotTile, disabled: A, icon: y.default, iconColor: "text", isCompact: !0, isLoading: b, onClick: _, text: "Unlock card", withInteractiveStyling: !0 }) : n.createElement(s.Z, { containerStyle: t.pivotTile, disabled: A, icon: p.default, iconColor: "text", isCompact: !0, isLoading: b, onClick: v, text: "Lock card", withInteractiveStyling: !0 }), n.createElement(s.Z, { containerStyle: t.pivotTile, disabled: R, icon: h.default, iconColor: "text", isCompact: !0, link: R ? void 0 : k.SR, text: "Change pin", withInteractiveStyling: !0 }), n.createElement(s.Z, { containerStyle: t.pivotTile, disabled: R, icon: g.default, iconColor: "text", isCompact: !0, link: R ? void 0 : k.dI, text: "Get card help", withInteractiveStyling: !0 }))) : n.createElement(P.Z, { to: k.lf }));
+            const re = n.memo(ne);
+            var ie = a(866432),
+                ce = a(497366),
+                le = a(776588),
+                oe = a(883229),
+                se = a(943914),
+                de = a(412450),
+                me = a(529438);
+            const ue = a(456221).Z,
+                pe = () => {
+                    const [e, t] = K()(ue),
+                        a = (0, D.useHistory)();
+                    return [
+                        n.useCallback(
+                            ({ cardId: t, nonce: n }) =>
+                                new Promise((r, i) => {
+                                    e({
+                                        variables: { cardId: t, nonce: n },
+                                        onCompleted: (e, t) => {
+                                            const n = e?.create_payment_method_session?.errors,
+                                                c = e?.create_payment_method_session?.session?.provider_token,
+                                                l = e?.create_payment_method_session?.challenge_id;
+                                            l ? a.push(Z.vw, { challengeId: l, challengeInitiator: Z.kW.viewCardDetails, closePath: Z.gp }) : c ? r(c) : i(n || t);
+                                        },
+                                        onError: i,
+                                    });
+                                }),
+                            [e, a],
+                        ),
+                        t,
+                    ];
                 },
-                le = d.default.create((e) => ({ image: { width: 370 * e.scaleMultiplier, height: 230 * e.scaleMultiplier, marginVertical: e.spaces.space12, borderRadius: e.borderRadii.medium, boxShadow: e.boxShadows.medium }, showDetailsButton: { position: "absolute", bottom: e.spaces.space24, start: e.spaces.space8, marginHorizontal: "auto" }, imageContainer: { marginHorizontal: "auto" } })),
-                oe = { context: "ACCOUNT_CARDS" },
-                se = (e) => {
+                ye = ({ cardId: e }) => {
+                    const t = (0, ie.useStripe)(),
+                        [a, r] = n.useState();
+                    return (
+                        n.useEffect(() => {
+                            t &&
+                                t.createEphemeralKeyNonce({ issuingCard: e }).then(({ nonce: e }) => {
+                                    r(e);
+                                });
+                        }, [e, t]),
+                        a
+                    );
+                },
+                he = { type: "CustomRetry", content: () => null },
+                ge = [
+                    { domId: "card-number", key: "issuingCardNumberDisplay", label: "Card Number", skeletonWidth: 200, wordPercentWidths: [15, 15, 15, 15] },
+                    { key: "name", label: "Cardholder Name" },
+                    { domId: "card-expiry", key: "issuingCardExpiryDisplay", label: "EXP", skeletonWidth: 40 },
+                    { domId: "card-cvc", label: "CVV", key: "issuingCardCvcDisplay", skeletonWidth: 28 },
+                ],
+                fe = ({ cardId: e, isLoading: t, refetch: a, setIsLoading: i }) => {
+                    const c = (0, ie.useElements)({ fonts: [{ family: "ProtoMono", src: `url(${Z.gF})` }] }),
+                        [l] = pe(),
+                        o = ye({ cardId: e });
+                    n.useEffect(() => {
+                        (async () => {
+                            if (!o || !c) return;
+                            const t = await l({ cardId: e, nonce: o });
+                            ge.forEach(({ domId: a, key: n }) => {
+                                if (a) {
+                                    c.create(n, { issuingCard: e, nonce: o, ephemeralKeySecret: t, style: { base: { color: "#000000", fontFamily: "ProtoMono", fontSize: `${m.default.theme.fontSizesPx.headline2}px` } } }).mount(`#${a}`);
+                                }
+                            }),
+                                setTimeout(() => {
+                                    i(!1);
+                                }, 800);
+                        })();
+                    }, [c, e, l, a, o, i]);
+                    const d = (0, me.Z)();
+                    return n.createElement(
+                        r.Z,
+                        { style: be.cardDetails },
+                        ge.map((e) => n.createElement(r.Z, { key: e.key, style: be.element }, n.createElement(s.ZP, { color: "gray500", size: "subtext2", style: be.fontFamily }, e.label), e.domId ? n.createElement(n.Fragment, null, t ? n.createElement(le.Z, { color: "gray700", lineHeightPx: 20, maxWidthPx: e.skeletonWidth, withBorderRadius: !0, wordHeightPx: 1, wordPercentWidths: e.wordPercentWidths ?? [100], wordSpacingPx: 12 }) : null, n.createElement(r.Z, { id: e.domId, style: t ? be.hide : null })) : n.createElement(s.ZP, { color: "alwaysBlack", style: be.fontFamily, weight: "normal" }, d))),
+                    );
+                },
+                Ee = (e) => {
+                    const { stripePKey: t } = (0, de.Z)(),
+                        a = n.useMemo(() => (0, ce.loadStripe)(t), [t]);
+                    return n.createElement(ie.Elements, { stripe: a }, n.createElement(fe, e));
+                },
+                be = m.default.create((e) => ({ cardDetails: { position: "absolute", top: e.spaces.space32, start: e.spaces.space16, end: e.spaces.space16 }, element: { display: "flex", flexDirection: "column", gap: e.spaces.space4, marginBottom: e.spaces.space8 }, hide: { display: "none" }, fontFamily: { fontFamily: "ProtoMono" } })),
+                ke = { context: "STRIPE_ELEMENTS" },
+                Ce = (e) => n.createElement(oe.N, { errorConfig: ke, fallback: he }, n.createElement(se.B, { fallback: null }, n.createElement(Ee, e))),
+                Ze = n.memo(Ce),
+                Pe = { page: "money", section: "cards" },
+                ve = "Money",
+                _e = "Your card is locked",
+                Ie = "Card",
+                we = (e) => {
+                    const t = (0, T.jh)(),
+                        { fetchCount: a, permissions: m } = (0, P.Z)({ fetchKey: "Payments" }),
+                        [u, k] = n.useState(!1),
+                        [C, v] = n.useState(!1),
+                        { activeVirtualCards: I, cards: w, inactivePhysicalCards: D } = (0, S.Z)(),
+                        { handleDeferredPreferencesChange: B, isInProgress: L, preferences: F } = (0, x.Z)(),
+                        M = n.useCallback(() => {
+                            B("enable_card_payments", !1);
+                        }, [B]),
+                        N = n.useCallback(() => {
+                            B("enable_card_payments", !0);
+                        }, [B]),
+                        z = !(0, A.aY)(m),
+                        W = !(0, A.Fs)({ permissions: m, permission: b.d.RequestIssuedCard }),
+                        H = !F.enable_card_payments,
+                        j = I?.[0]?.core?.details_provider_reference?.id,
+                        V = n.useCallback(() => {
+                            v(!0), k(!0);
+                        }, []),
+                        U = n.useCallback(() => {
+                            v(!1), k(!1);
+                        }, []);
+                    return n.createElement(
+                        n.Fragment,
+                        null,
+                        w && w?.length > 0
+                            ? n.createElement(
+                                  n.Fragment,
+                                  null,
+                                  n.createElement(r.Z, { style: Se.imageContainer }, n.createElement(r.Z, { style: [Se.card, C ? Se.flipped : null] }, n.createElement(r.Z, { style: C ? Se.cardBack : null }, n.createElement(i.Z, { ariaLabel: Ie, source: R.front, style: [Se.image, C ? Se.hide : null] }), n.createElement(i.Z, { ariaLabel: Ie, source: R.back, style: [Se.image, C ? null : Se.hide] }), C && j ? n.createElement(Ze, { cardId: j, isLoading: u, refetch: a, setIsLoading: k }) : null, j ? n.createElement(c.ZP, { disabled: u, fontWeight: "normal", icon: u ? void 0 : C ? n.createElement(p.default, null) : n.createElement(y.default, null), onClick: C ? U : V, size: "xSmall", style: Se.showDetailsButton, type: "onMediaWhiteFilled" }, u ? n.createElement(l.Z, { size: "small", style: Se.loader }) : C ? "Hide card details" : "Show card details") : null))),
+                                  D && D?.length > 0 ? n.createElement(re, { card: D[0], disabled: W }) : null,
+                                  H ? n.createElement(o.Z, { "aria-label": _e, containerStyle: t.tile, stackLayoutUpperStyle: T.ZP.upper, upper: n.createElement(r.Z, { style: T.ZP.row }, n.createElement(h.default, { style: T.ZP.icon }), n.createElement(r.Z, null, n.createElement(s.ZP, null, _e), n.createElement(s.ZP, { color: "gray700", size: "subtext2" }, "Future transactions would be declined."))), withInteractiveStyling: !1 }) : null,
+                                  n.createElement(r.Z, { style: t.pivotTileContainer }, H ? n.createElement(d.Z, { containerStyle: t.pivotTile, disabled: z, icon: g.default, iconColor: "text", isCompact: !0, isLoading: L, onClick: N, text: "Unlock card", withInteractiveStyling: !0 }) : n.createElement(d.Z, { containerStyle: t.pivotTile, disabled: z, icon: h.default, iconColor: "text", isCompact: !0, isLoading: L, onClick: M, text: "Lock card", withInteractiveStyling: !0 }), n.createElement(d.Z, { containerStyle: t.pivotTile, disabled: W, icon: f.default, iconColor: "text", isCompact: !0, link: W ? void 0 : Z.SR, text: "Change pin", withInteractiveStyling: !0 }), n.createElement(d.Z, { containerStyle: t.pivotTile, disabled: W, icon: E.default, iconColor: "text", isCompact: !0, link: W ? void 0 : Z.dI, text: "Get card help", withInteractiveStyling: !0 })),
+                              )
+                            : n.createElement(_.Z, { to: Z.lf }),
+                    );
+                },
+                Se = m.default.create((e) => ({ image: { width: 370 * e.scaleMultiplier, height: 230 * e.scaleMultiplier, marginVertical: e.spaces.space12, borderRadius: e.borderRadii.medium, boxShadow: e.boxShadows.medium }, showDetailsButton: { position: "absolute", bottom: e.spaces.space24, end: e.spaces.space8, marginHorizontal: "auto" }, imageContainer: { marginHorizontal: "auto", perspective: "1000px", perspectiveOrigin: "center" }, card: { position: "relative", transformStyle: "preserve-3d", transition: "transform 0.4s ease-out" }, cardBack: { transform: "rotateX(180deg)", transformStyle: "preserve-3d" }, flipped: { transform: "rotateX(180deg)" }, loader: { marginHorizontal: e.spaces.space16, marginVertical: e.spaces.space2 }, hide: { display: "none" } })),
+                xe = { context: "ACCOUNT_CARDS" },
+                Te = (e) => {
                     const { history: t } = e,
-                        a = (0, S.jh)(),
-                        r = n.useCallback(() => n.createElement(m.Z, { style: a.root, withWideContainer: !0 }, n.createElement(b.H, { errorConfig: oe }, n.createElement(_.Z, null), n.createElement(b.H, { errorConfig: oe }, n.createElement(ce, e)))), [a.root, e]),
+                        a = (0, T.jh)(),
+                        r = n.useCallback(() => n.createElement(u.Z, { style: a.root, withWideContainer: !0 }, n.createElement(C.H, { errorConfig: xe }, n.createElement(w.Z, null), n.createElement(C.H, { errorConfig: xe }, n.createElement(we, e)))), [a.root, e]),
                         i = n.useCallback(() => t.goBack(), [t]);
-                    return n.createElement(Z.nO, { namespace: ne }, n.createElement(E.Z, { backLocation: k.gp, documentTitle: re, history: t, isFullWidth: !0, onBackClick: i, primaryContent: r(), rightControl: n.createElement(v.Z, null), sidebarContent: null, title: re }));
+                    return n.createElement(v.nO, { namespace: Pe }, n.createElement(k.Z, { backLocation: Z.gp, documentTitle: ve, history: t, isFullWidth: !0, onBackClick: i, primaryContent: r(), rightControl: n.createElement(I.Z, null), sidebarContent: null, title: ve }));
                 },
-                de = n.memo(se);
+                Ae = n.memo(Te);
         },
         67356: (e, t, a) => {
             a.r(t), a.d(t, { default: () => k });
@@ -809,4 +919,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-b8e4b837.1a65ec5a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-b8e4b837.03e6475a.js.map

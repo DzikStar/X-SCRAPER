@@ -86,10 +86,10 @@
                         a,
                     ];
                 };
-            const $ = a(220474).Z,
-                F = () => {
+            const H = a(220474).Z,
+                $ = () => {
                     const e = n.useMemo(() => L()(), []),
-                        [t, a] = x()($);
+                        [t, a] = x()(H);
                     return [
                         n.useCallback(
                             ({ accountId: a, amount: n }) =>
@@ -112,14 +112,14 @@
                         a,
                     ];
                 },
-                H = ({ accountId: e, amount: t, transferDirection: a }) => {
+                F = ({ accountId: e, amount: t, transferDirection: a }) => {
                     const o = (0, s.z)(),
                         l = (0, r.useHistory)(),
                         m = (0, P.jh)(),
                         d = (0, g.Dc)(t),
                         [_, Z] = n.useState(null),
                         [w, I] = q(),
-                        [C, v] = F(),
+                        [C, v] = $(),
                         { roles: M } = (0, E.Z)({ fetchKey: "Payments" }),
                         S = I || v,
                         { confirmTitle: T, path: A } = u[a],
@@ -141,13 +141,13 @@
                                     t ? l.replace(t, L) : Z(e);
                                 });
                         }, [o, A, B, a, w, C, d, e, l, z, t, M, L]),
-                        $ = n.useCallback(() => {
+                        H = n.useCallback(() => {
                             o.scribe({ page: "money", section: A, component: "review-transfer", element: "cancel", action: "click" });
                         }, [o, A]),
-                        H = n.createElement(p.Z, { style: m.footer }, _ ? n.createElement(k.ZP, { errors: _, linkState: L, roles: M }) : null, n.createElement(y.ZP, { size: "subtext2" }, "Please note that while transfers typically take 3 business days to complete, they may complete sooner or take longer based on a number of factors, including, for example, confirmations from your external bank. Funds may not be available in your account until the transfer is complete."), n.createElement(p.Z, { style: P.ZP.actionButtons }, n.createElement(h.ZP, { link: c.gp, onPress: $, size: "large", style: P.ZP.button, type: "primaryOutlined" }, "Cancel"), n.createElement(h.ZP, { disabled: S, onPress: R, size: "large", style: P.ZP.button, type: "primaryFilled" }, S ? n.createElement(f.Z, null) : "Confirm")));
-                    return n.createElement(b.Z, { backButtonType: "back", bottomBar: H, history: l, withoutBottomBarMobile: !0 }, n.createElement(p.Z, { style: m.container }, n.createElement(y.ZP, { size: "title2", style: P.ZP.title, weight: "heavy" }, x), n.createElement(D, { accountId: e, transferDirection: a })));
+                        F = n.createElement(p.Z, { style: m.footer }, _ ? n.createElement(k.ZP, { errors: _, linkState: L, roles: M }) : null, n.createElement(y.ZP, { size: "subtext2" }, "Please note that while transfers typically take 3 business days to complete, they may complete sooner or take longer based on a number of factors, including, for example, confirmations from your external bank. Funds may not be available in your account until the transfer is complete."), n.createElement(p.Z, { style: P.ZP.actionButtons }, n.createElement(h.ZP, { link: c.gp, onPress: H, size: "large", style: P.ZP.button, type: "primaryOutlined" }, "Cancel"), n.createElement(h.ZP, { disabled: S, onPress: R, size: "large", style: P.ZP.button, type: "primaryFilled" }, S ? n.createElement(f.Z, null) : "Confirm")));
+                    return n.createElement(b.Z, { backButtonType: "back", bottomBar: F, history: l, withoutBottomBarMobile: !0 }, n.createElement(p.Z, { style: m.container }, n.createElement(y.ZP, { size: "title2", style: P.ZP.title, weight: "heavy" }, x), n.createElement(D, { accountId: e, transferDirection: a })));
                 },
-                O = n.memo(H);
+                O = n.memo(F);
             var V = a(952793),
                 N = a(984067),
                 U = a(934265);
@@ -166,19 +166,19 @@
                         [x, B] = n.useState(z),
                         L = x?.rest_id,
                         R = e === i.Rz.debit,
-                        { label: q, path: $ } = u[e],
-                        F = !k || !w || !L || x?.core?.details?.status !== Z.D.Active,
-                        H = n.useMemo(() => ({ ...f, step: i.ah.reviewPane, amount: k, accountId: L }), [L, k, f]),
-                        O = `/i/money/${$}`,
-                        j = n.useMemo(() => ({ pathname: O, state: H }), [O, H]),
+                        { label: q, path: H } = u[e],
+                        $ = !k || !w || !L || x?.core?.details?.status !== Z.D.Active,
+                        F = n.useMemo(() => ({ ...f, step: i.ah.reviewPane, amount: k, accountId: L }), [L, k, f]),
+                        O = `/i/money/${H}`,
+                        j = n.useMemo(() => ({ pathname: O, state: F }), [O, F]),
                         K = (0, g.DO)({ roles: S, permissions: v, actionPermission: d[e] }),
                         X = n.useCallback(() => {
-                            t.scribe({ page: "money", section: $, element: "transfer", action: "click" }), K ? a.push(K, { redirectPath: O, redirectState: H, closePath: c.gp }) : a.push(j);
-                        }, [t, a, $, O, j, H, K]),
+                            t.scribe({ page: "money", section: H, element: "transfer", action: "click" }), K ? a.push(K, { redirectPath: O, redirectState: F, closePath: c.gp }) : a.push(j);
+                        }, [t, a, H, O, j, F, K]),
                         Q = n.useCallback(() => {
                             a.push(c.gp);
                         }, [a]),
-                        Y = n.createElement(p.Z, { style: o.footer }, n.createElement(h.ZP, { disabled: F, onPress: X, size: "large", type: "primaryFilled" }, q)),
+                        Y = n.createElement(p.Z, { style: o.footer }, n.createElement(h.ZP, { disabled: $, onPress: X, size: "large", type: "primaryFilled" }, q)),
                         W = n.useMemo(() => ({ redirectPath: O }), [O]),
                         G = n.useMemo(() => ({ pathname: c.ac, state: W }), [W]),
                         J = n.useMemo(() => ({ pathname: c.UA, state: W }), [W]),
@@ -247,7 +247,7 @@
                 _ = a(529356),
                 Z = a(731708),
                 w = a(922281),
-                I = a(883229),
+                I = a(736063),
                 C = a(725516),
                 v = a(43429),
                 M = a(743080);
@@ -294,15 +294,15 @@
                 },
                 D = l.default.create((e) => ({ container: { width: "100%" }, margin: { marginBottom: e.spaces.space12, marginTop: e.spaces.space12 }, error: { marginTop: e.spaces.space12 }, activityIndicator: { marginTop: e.spaces.space12 } })),
                 A = { context: "PaymentMethodPoller" },
-                z = (e) => n.createElement(I.N, { errorConfig: A }, n.createElement(T, e)),
+                z = (e) => n.createElement(I.H, { errorConfig: A }, n.createElement(T, e)),
                 x = n.memo(z);
             var B = a(144098),
                 L = a(351743),
                 R = a.n(L),
                 q = a(727384);
-            const $ = B.Z,
-                F = () => {
-                    const [e, t] = R()($);
+            const H = B.Z,
+                $ = () => {
+                    const [e, t] = R()(H);
                     return [
                         n.useCallback(
                             ({ metadata: t, publicToken: a }) =>
@@ -322,9 +322,9 @@
                         t,
                     ];
                 };
-            const H = a(652730).Z,
+            const F = a(652730).Z,
                 O = () => {
-                    const [e, t] = R()(H);
+                    const [e, t] = R()(F);
                     return [
                         n.useCallback(
                             ({ paymentMethodId: t }) =>
@@ -353,7 +353,7 @@
                         [b, E] = n.useState(!1),
                         [k, P] = n.useState(null),
                         [g, _] = n.useState(!1),
-                        [Z, w] = F(),
+                        [Z, w] = $(),
                         [I, C] = O(),
                         v = (0, u.p)(),
                         M = window.location.href,
@@ -361,8 +361,8 @@
                         T = t.location?.query?.token,
                         D = t.location?.state,
                         { linkType: A = p.P_.linkExternalAccount, token: z, redirectPath: B = p.gp, targetRole: L = m.N.KycDocumentsVerified, closePath: R, paymentMethodId: q } = D || {},
-                        $ = e ?? z ?? T ?? k,
-                        H = n.useCallback(
+                        H = e ?? z ?? T ?? k,
+                        F = n.useCallback(
                             (e, t) => {
                                 switch ((d.Yh.delete(V), A)) {
                                     case p.P_.onboarding:
@@ -399,7 +399,7 @@
                         X = n.useCallback((e, t) => {
                             if ("IDENTITY_VERIFICATION_CLOSE_UI" === e) _(!0);
                         }, []),
-                        Q = { token: $, onSuccess: H, onLoad: j, onEvent: X, onExit: U, ...(S ? { receivedRedirectUri: M } : null) },
+                        Q = { token: H, onSuccess: F, onLoad: j, onEvent: X, onExit: U, ...(S ? { receivedRedirectUri: M } : null) },
                         { open: Y, ready: W } = (0, c.usePlaidLink)(Q);
                     if (
                         (n.useEffect(() => {
@@ -409,12 +409,12 @@
                                 });
                         }, [S]),
                         n.useEffect(() => {
-                            S || d.Yh.set(V, $);
-                        }, [S, $]),
+                            S || d.Yh.set(V, H);
+                        }, [S, H]),
                         n.useEffect(() => {
-                            $ && W && Y();
-                        }, [$, W, Y]),
-                        !$)
+                            H && W && Y();
+                        }, [H, W, Y]),
+                        !H)
                     )
                         return S ? n.createElement(s.Z, { style: K.loadingStyle }) : n.createElement(y.Z, { to: "/" });
                     if (!l || !W) return n.createElement(s.Z, { style: K.loadingStyle });
@@ -442,4 +442,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-0cabf78d.4c2a40fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-0cabf78d.ed0c2d5a.js.map

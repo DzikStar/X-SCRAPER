@@ -21,7 +21,7 @@
                 c = a(768246),
                 d = a(264531),
                 g = a(611463),
-                m = a(383508),
+                m = a(455091),
                 y = a(446368);
             const p = ({ children: e, settings: l }) => {
                 const a = (0, t.useLocation)(),
@@ -407,6 +407,20 @@
                 return s > 0 ? t(s, "week") : r > 0 ? t(r, "day") : n > 0 ? t(n, "hour") : a > 0 ? t(a, "minute") : t(l, "second");
             };
         },
+        595117: (e, l, a) => {
+            a.d(l, { l: () => r });
+            const n = "temp-files";
+            async function r(e) {
+                const l = await navigator.storage.getDirectory(),
+                    a = await l.getDirectoryHandle(n, { create: !0 }),
+                    r = (function (e) {
+                        return `${Date.now()}-${e}`;
+                    })(e.name),
+                    s = await a.getFileHandle(r, { create: !0 }),
+                    t = await s.createWritable();
+                return await t.write(e), await t.close(), `${n}/${r}`;
+            }
+        },
         950849: (e, l, a) => {
             a.d(l, { E: () => r });
             var n = a(202784);
@@ -487,4 +501,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-6db2a8a8.fe31250a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-6db2a8a8.aaf7a2fa.js.map

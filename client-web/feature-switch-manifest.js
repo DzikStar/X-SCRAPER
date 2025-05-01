@@ -1828,6 +1828,7 @@ var manifest = {
         premium_churn_prevention_offers_web_17199: { name: "premium_churn_prevention_offers_web_17199", type: "experiment", enumeration_values: ["control", "treatment"] },
         premium_content_api_read_enabled: { name: "premium_content_api_read_enabled", type: "boolean", defaultValue: !1 },
         premium_failed_payment_profile_card_17219: { name: "premium_failed_payment_profile_card_17219", type: "experiment", enumeration_values: ["control", "holdback"] },
+        premium_get_verified_upsell_basic_tier_web_17332: { name: "premium_get_verified_upsell_basic_tier_web_17332", type: "experiment", enumeration_values: ["control", "treatment"] },
         premium_module_v1_17146: { name: "premium_module_v1_17146", type: "experiment", enumeration_values: ["control", "treatment"] },
         premium_post_analytics_post_details_upsell_17122: { name: "premium_post_analytics_post_details_upsell_17122", type: "experiment", enumeration_values: ["control", "holdback"] },
         premium_reply_boost_popup_web_17100: { name: "premium_reply_boost_popup_web_17100", type: "experiment", enumeration_values: ["control", "holdback"] },

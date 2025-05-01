@@ -31,9 +31,9 @@
                 u = (0, o.forwardRef)(function ({ multiline: e, ...t }, n) {
                     return e ? (0, r.jsx)(s, { ...t, ref: n }) : (0, r.jsx)(l, { ...t, ref: n });
                 }),
-                d = (0, a.j)("has-[:invalid]:border-red-500 focus-within:border-primary flex items-center gap-2 overflow-hidden placeholder:text-gray-800 border border-solid border-gray-200 p-2", { variants: { borderRadius: { "2xLarge": "rounded-2xl", "3xLarge": "rounded-3xl", full: "rounded-full", large: "rounded-lg", medium: "rounded-md", none: "rounded-none", small: "rounded-sm", xLarge: "rounded-xl", true: "rounded" } } }),
-                c = (0, o.forwardRef)(function ({ borderRadius: e, leftContent: t, rightContent: n, ...o }, i) {
-                    return (0, r.jsxs)("div", { className: d({ borderRadius: e ?? (o.multiline ? "3xLarge" : "full"), className: (0, a.cx)(t ? "ps-3" : "ps-4", n ? "pe-3" : "pe-4") }), children: [t, (0, r.jsx)(u, { ...o, ref: i }), n] });
+                d = (0, a.j)("flex items-center gap-2 overflow-hidden placeholder:text-gray-800", { variants: { borderRadius: { "2xLarge": "rounded-2xl", "3xLarge": "rounded-3xl", full: "rounded-full", large: "rounded-lg", medium: "rounded-md", none: "rounded-none", small: "rounded-sm", xLarge: "rounded-xl", true: "rounded" }, variant: { default: "has-[:invalid]:border-red-500 focus-within:border-primary border border-solid border-gray-200 p-2", dashed: "border-2 border-dashed border-gray-200 !pe-2" } }, defaultVariants: { variant: "default" } }),
+                c = (0, o.forwardRef)(function ({ borderRadius: e, variant: t, leftContent: n, rightContent: o, ...i }, l) {
+                    return (0, r.jsxs)("div", { className: d({ borderRadius: e ?? (i.multiline ? "3xLarge" : "full"), className: (0, a.cx)(n ? "ps-3" : "ps-4", o ? "pe-3" : "pe-4"), variant: t }), children: [n, (0, r.jsx)(u, { ...i, ref: l }), o] });
                 });
         },
         461222: (e, t, n) => {
@@ -64,6 +64,11 @@
             n.d(t, { Z: () => a });
             var r = n(552322);
             const a = (e) => (0, r.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, r.jsx)("path", { d: "M14.23 2.854c.98-.977 2.56-.977 3.54 0l3.38 3.378c.97.977.97 2.559 0 3.536L9.91 21H3v-6.914L14.23 2.854zm2.12 1.414c-.19-.195-.51-.195-.7 0L5 14.914V19h4.09L19.73 8.354c.2-.196.2-.512 0-.708l-3.38-3.378zM14.75 19l-2 2H21v-2h-6.25z" }) });
+        },
+        950268: (e, t, n) => {
+            n.d(t, { Z: () => a });
+            var r = n(552322);
+            const a = (e) => (0, r.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...e, children: (0, r.jsx)("path", { d: "M11 11V4h2v7h7v2h-7v7h-2v-7H4v-2h7z" }) });
         },
         517652: (e, t, n) => {
             n.d(t, { Z: () => a });
@@ -316,8 +321,8 @@
                 return [l, u];
             }
             let N = null;
-            function B({ open: e, onOpenChange: t, children: n, onDrag: i, onRelease: s, snapPoints: d, shouldScaleBackground: c = !1, setBackgroundColorOnScale: f = !0, closeThreshold: m = 0.25, scrollLockTimeout: p = 100, dismissible: h = !0, handleOnly: v = !1, fadeFromIndex: g = d && d.length - 1, activeSnapPoint: w, setActiveSnapPoint: b, fixed: x, modal: E = !0, onClose: O, nested: M, noBodyStyles: B = !1, direction: L = "bottom", defaultOpen: F = !1, disablePreventScroll: I = !0, snapToSequentialPoint: z = !1, preventScrollRestoration: H = !1, repositionInputs: j = !0, onAnimationEnd: W, container: U, autoFocus: q = !1 }) {
-                var Y, V;
+            function B({ open: e, onOpenChange: t, children: n, onDrag: i, onRelease: s, snapPoints: d, shouldScaleBackground: c = !1, setBackgroundColorOnScale: f = !0, closeThreshold: m = 0.25, scrollLockTimeout: p = 100, dismissible: h = !0, handleOnly: v = !1, fadeFromIndex: g = d && d.length - 1, activeSnapPoint: w, setActiveSnapPoint: b, fixed: x, modal: E = !0, onClose: O, nested: M, noBodyStyles: B = !1, direction: L = "bottom", defaultOpen: F = !1, disablePreventScroll: I = !0, snapToSequentialPoint: z = !1, preventScrollRestoration: j = !1, repositionInputs: H = !0, onAnimationEnd: W, container: U, autoFocus: q = !1 }) {
+                var V, Y;
                 const [X = !1, _] = k({
                         defaultProp: F,
                         prop: e,
@@ -351,8 +356,8 @@
                     de = a.useRef(!F),
                     ce = a.useRef(0),
                     fe = a.useRef(null),
-                    me = a.useRef((null == (Y = fe.current) ? void 0 : Y.getBoundingClientRect().height) || 0),
-                    pe = a.useRef((null == (V = fe.current) ? void 0 : V.getBoundingClientRect().width) || 0),
+                    me = a.useRef((null == (V = fe.current) ? void 0 : V.getBoundingClientRect().height) || 0),
+                    pe = a.useRef((null == (Y = fe.current) ? void 0 : Y.getBoundingClientRect().width) || 0),
                     he = a.useRef(0),
                     ve = a.useCallback((e) => {
                         d && e === xe.length - 1 && (ne.current = new Date());
@@ -460,7 +465,7 @@
                             }
                         );
                     })({ snapPoints: d, activeSnapPointProp: w, setActiveSnapPointProp: b, drawerRef: fe, fadeFromIndex: g, overlayRef: te, onSnapPointChange: ve, direction: L, container: U, snapToSequentialPoint: z });
-                y({ isDisabled: !X || J || !E || Q || !Z || !j || !I });
+                y({ isDisabled: !X || J || !E || Q || !Z || !H || !I });
                 const { restorePositionSetting: Ce } = (function ({ isOpen: e, modal: t, nested: n, hasBeenOpened: r, preventScrollRestoration: o, noBodyStyles: i }) {
                     const [s, u] = a.useState(() => ("undefined" != typeof window ? window.location.href : "")),
                         d = a.useRef(0),
@@ -523,7 +528,7 @@
                         }, [e, r, s, t, n, c, f]),
                         { restorePositionSetting: f }
                     );
-                })({ isOpen: X, modal: E, nested: null != M && M, hasBeenOpened: Z, preventScrollRestoration: H, noBodyStyles: B });
+                })({ isOpen: X, modal: E, nested: null != M && M, hasBeenOpened: Z, preventScrollRestoration: j, noBodyStyles: B });
                 function Se() {
                     return (window.innerWidth - 26) / window.innerWidth;
                 }
@@ -576,7 +581,7 @@
                     a.useEffect(() => {
                         var e;
                         function t() {
-                            if (!fe.current || !j) return;
+                            if (!fe.current || !H) return;
                             if (R(document.activeElement) || ue.current) {
                                 var e;
                                 const t = (null == (e = window.visualViewport) ? void 0 : e.height) || 0,
@@ -946,4 +951,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~ondemand.Insights~ondemand.XChat.d319d2ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~ondemand.Insights~ondemand.XChat.f3dbebca.js.map

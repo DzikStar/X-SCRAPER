@@ -3,7 +3,7 @@
     ["ondemand.XChat-e0975bf4"],
     {
         547334: (e, t, n) => {
-            n.d(t, { P: () => P });
+            n.d(t, { P: () => I });
             var s = n(552322),
                 i = n(425522),
                 a = n(941204),
@@ -44,42 +44,32 @@
                     s = n / t;
                 return s > 400 && ((s = 400), (n = s * t)), { width: n, height: s };
             }
-            var p = n(26429),
-                v = n(412035),
-                f = n(559274),
-                g = n(862399),
-                j = n(812115),
-                w = n(615069),
-                y = n(796309);
-            const C = i.com.x.models.dm.PostLoadingState,
+            var p = n(812115),
+                v = n(615069),
+                f = n(517922),
+                g = n(556160);
+            const j = i.com.x.models.dm.PostLoadingState,
+                w = i.com.x.dms.chat.DmEvent;
+            function C({ post: e, onEvent: t, className: n }) {
+                return e.postState instanceof j.NeedsResolution ? (t(new w.ResolvePost(e.id)), (0, s.jsx)(f.C, {})) : e.postState instanceof j.ResolvedPost ? (0, s.jsx)(g.K, { post: e.postState, url: e.url, className: n }) : (0, s.jsxs)(p.r, { href: e.url, target: "_blank", className: "gap-2 w-52 p-4 bg-gray-200 flex items-center justify-between", children: [(0, s.jsx)(a.x, { children: "x.com" }), (0, s.jsx)("div", { className: "text-headline1", children: (0, s.jsx)(v.Z, {}) })] });
+            }
+            const y = i.com.x.dms.model.MessageItemAttachment,
                 b = i.com.x.dms.chat.DmEvent;
-            function N({ post: e, onEvent: t, className: n }) {
-                if (e.postState instanceof C.NeedsResolution) return t(new b.ResolvePost(e.id)), (0, s.jsxs)("div", { className: "flex-col gap-2 w-52 h-32 bg-gray-200 flex items-center justify-center", children: [(0, s.jsx)(r.P, {}), (0, s.jsx)("div", { className: "text-sm text-gray-500", children: "x.com" })] });
-                if (e.postState instanceof C.ResolvedPost) {
-                    const t = e.postState.post;
-                    return (0, s.jsxs)("div", {
-                        className: (0, y.cn)("flex flex-col gap-2 h-full w-full border border-gray-200 py-2 px-4 cursor-pointer hover:bg-gray-50/50 transition-colors duration-100", n),
-                        onClick: () => {
-                            window.open(e.url, "_blank");
-                        },
-                        children: [(0, s.jsxs)("div", { className: "flex gap-2 items-center", children: [(0, s.jsx)(p.q, { screenName: t.author.screenName, size: "small", url: t.author.profileImageUrl, withLink: "external", shape: t.author.profileImageShape, className: "size-5 shrink-0" }), (0, s.jsxs)("div", { className: "flex items-center gap-1 w-full", children: [(0, s.jsx)(v.R, { badges: t.author.badges, name: t.author.name, size: "subtext1", withLink: "external", screenNameColor: "gray800", screenName: t.author.screenName, isStacked: !1 }), (0, s.jsx)("div", { className: "shrink-0 size-0.5 bg-text/40 rounded-full" }), (0, s.jsx)("div", { className: "shrink-0", children: (0, s.jsx)(f.E, { timestamp: t.createdAt, size: "subtext1", color: "gray800" }) })] })] }), (0, s.jsx)(g.W, { text: t.text, displayTextRange: t.displayTextRange, entities: t.entities })],
-                    });
-                }
-                return (0, s.jsxs)(j.r, { href: e.url, target: "_blank", className: "gap-2 w-52 p-4 bg-gray-200 flex items-center justify-between", children: [(0, s.jsx)(a.x, { children: "x.com" }), (0, s.jsx)("div", { className: "text-headline1", children: (0, s.jsx)(w.Z, {}) })] });
+            function N({ urlCard: e, onEvent: t }) {
+                e instanceof y.UrlCard.NeedsResolving && !e.showTapToLoadPrompt && t(new b.ResolveUrlCard(e, !1));
+                let n = null;
+                return e instanceof y.UrlCard.Resolved && (n = e.bannerImage && (0, s.jsx)("img", { src: e.bannerImage, loading: "lazy", alt: e.displayTitle || e.displayHostname, className: "max-w-[300px] max-h-[400px]" })), e instanceof y.UrlCard.Loading && (n = (0, s.jsx)("div", { className: "flex items-center justify-center h-32 pt-2 w-full", children: (0, s.jsx)(r.P, {}) })), (0, s.jsxs)("div", { className: "flex flex-col gap-0.5 bg-gray-100 cursor-pointer transition-colors duration-100", onClick: () => window.open(e.urlToOpen, "_blank"), children: [n, (0, s.jsxs)("div", { className: "flex flex-col gap-0.5 px-4 py-2 hover:bg-gray-50/50", children: [e.displayTitle && (0, s.jsx)(a.x, { weight: "medium", children: e.displayTitle }), (0, s.jsx)(a.x, { color: "gray900", size: "subtext2", children: e.displayHostname })] })] });
             }
-            function k({ isReceived: e, urlCard: t }) {
-                return (0, s.jsx)("div", { className: "flex py-2 px-4 " + (e ? "bg-gray-200" : "bg-blue-500"), children: (0, s.jsx)(a.x, { as: "a", color: e ? "text" : "white", style: { overflowWrap: "anywhere" }, href: t.urlToOpen, children: t.displayTitle || t.urlToOpen }) });
-            }
-            const S = i.com.x.dms.model.MessageItemAttachment,
-                E = i.com.x.dms.chat.DmEvent,
-                I = i.com.x.dms.model.MediaUriState;
-            function P({ attachment: e, isReceived: t, onEvent: n, className: i }) {
-                if (e instanceof S.Post) return (0, s.jsx)(N, { isReceived: t, post: e, onEvent: n, className: i });
-                if (e instanceof S.UrlCard) return (0, s.jsx)(k, { isReceived: t, urlCard: e });
-                if (e instanceof S.Media && e instanceof S.Media.FromServer) {
-                    if ((e.uriState instanceof I.AttachmentNeedsResolving && n(new E.ResolveAttachment(e.uriState)), e.uriState instanceof I.ResolvedMedia)) return (0, s.jsx)(m, { src: e.uriState.uri, type: e.type, dimensions: e.dimensions });
-                    if (e.uriState instanceof I.Resolving) return (0, s.jsx)(x, { dimensions: e.dimensions });
-                    if (e.uriState === I.FailedToLoad) return (0, s.jsx)(u, { dimensions: e.dimensions });
+            const k = i.com.x.dms.model.MessageItemAttachment,
+                S = i.com.x.dms.chat.DmEvent,
+                E = i.com.x.dms.model.MediaUriState;
+            function I({ attachment: e, isReceived: t, onEvent: n, className: i }) {
+                if (e instanceof k.Post) return (0, s.jsx)(C, { isReceived: t, post: e, onEvent: n, className: i });
+                if (e instanceof k.UrlCard) return (0, s.jsx)(N, { urlCard: e, onEvent: n });
+                if (e instanceof k.Media && e instanceof k.Media.FromServer) {
+                    if ((e.uriState instanceof E.AttachmentNeedsResolving && n(new S.ResolveAttachment(e.uriState)), e.uriState instanceof E.ResolvedMedia)) return (0, s.jsx)(m, { src: e.uriState.uri, type: e.type, dimensions: e.dimensions });
+                    if (e.uriState instanceof E.Resolving) return (0, s.jsx)(x, { dimensions: e.dimensions });
+                    if (e.uriState === E.FailedToLoad) return (0, s.jsx)(u, { dimensions: e.dimensions });
                 }
                 return (0, s.jsx)(a.x, { color: t ? "text" : "white", children: "Attachment" });
             }
@@ -191,12 +181,12 @@
                 g = n(889906),
                 j = n(446368);
             const w = i.com.x.dms.EmojiPickerBottomSheetModel,
-                y = i.kotlin.collections.KtList,
-                C = (0, a.createContext)(void 0),
+                C = i.kotlin.collections.KtList,
+                y = (0, a.createContext)(void 0),
                 b = "undefined" == typeof window;
             let N;
             function k() {
-                const e = (0, a.useContext)(C);
+                const e = (0, a.useContext)(y);
                 if (!e) throw new Error("useGraph must be used within an GraphProvider");
                 return e;
             }
@@ -220,7 +210,7 @@
                         });
                     },
                     async function () {
-                        return new w(y.fromJsArray([]));
+                        return new w(C.fromJsArray([]));
                     },
                     (e, n, s, i, a) => {
                         t.scribe({ client: "m5", page: e ?? void 0, section: n ?? void 0, component: s ?? void 0, element: i ?? void 0, action: a ?? void 0 });
@@ -235,11 +225,11 @@
                 if (b) return;
                 const t = (0, g.useRelayEnvironment)(),
                     n = (0, j.z$)();
-                return N || (N = S(t, n)), (0, s.jsx)(C.Provider, { value: N, children: e });
+                return N || (N = S(t, n)), (0, s.jsx)(y.Provider, { value: N, children: e });
             }
         },
         200012: (e, t, n) => {
-            n.d(t, { p: () => Oe });
+            n.d(t, { p: () => $e });
             var s = n(552322),
                 i = n(469745),
                 a = n(727071),
@@ -265,7 +255,7 @@
                 g = n(803049),
                 j = n(537335),
                 w = n(336984);
-            const y = ({ previewWithMetadata: e }) => {
+            const C = ({ previewWithMetadata: e }) => {
                     if (!e.preview) return null;
                     const t = e.preview.latestMessagePreview,
                         n = e.metadata.usersByIdAllTime.asJsReadonlyMapView(),
@@ -307,11 +297,11 @@
                     }
                     return l;
                 },
-                C = o.com.x.dms.ReadByOthersIndicator,
+                y = o.com.x.dms.ReadByOthersIndicator,
                 b = ({ onEvent: e, previewWithMetadata: t, isSelected: n }) => {
                     const i = t.preview?.timestampValue,
                         a = t.metadata.title instanceof o.com.x.dms.model.DmTitleState.OneToOne;
-                    return (0, s.jsxs)("div", { className: "flex flex-row", children: [(0, s.jsxs)("div", { className: `flex items-start grow p-2 mr-2 gap-5 rounded-lg hover:bg-gray-100 ${n && "bg-gray-0"} transition-colors cursor-pointer`, children: [(0, s.jsx)(h, { avatarSize: "xxLarge", titleState: t.metadata.title, onCustomAvatarNeedsResolving: (n) => e(new o.com.x.dms.convlist.ConversationListEvent.CustomAvatarNeedsResolving(t.conversationId, n)), isInlineFacepile: !0 }), (0, s.jsxs)("div", { className: "flex-1 gap-5", children: [(0, s.jsx)(d.R, { name: t.metadata.title.title, badges: a ? (0, w.r)(t.metadata.title.otherUser) : void 0 }), (0, s.jsx)(r.x, { color: "gray700", weight: t.isUnreadByMe ? "bold" : "normal", numberOfLines: 1, className: "break-all", children: (0, s.jsx)(y, { previewWithMetadata: t }) })] }), (0, s.jsxs)("div", { className: "flex flex-col items-end", children: [(0, s.jsxs)("div", { className: "flex flex-row gap-1 items-center h-5", children: [(0, s.jsx)(r.x, { size: "subtext3", children: i && (0, s.jsx)(j.Q, { timestamp: i }) }), t.isMuted && (0, s.jsx)(p.Z, { width: "14", height: "14", className: "text-gray-700" })] }), (0, s.jsxs)("div", { className: "flex flex-row gap-1 items-center h-5", children: [t.showReadByOthersIndicator === C.Read && (0, s.jsx)(v.Z, { width: "14", height: "14", className: "text-gray-700" }), t.showReadByOthersIndicator === C.Unread && (0, s.jsx)(f.Z, { width: "14", height: "14", className: "text-gray-700" }), t.isUnreadByMe && (0, s.jsx)(g.Z, { width: "14", height: "14", className: "text-blue-500" })] })] })] }), (0, s.jsx)("div", { className: `w-1 ${n ? "bg-text" : "bg-background"} justify-self-end rounded-lg` })] });
+                    return (0, s.jsxs)("div", { className: "flex flex-row", children: [(0, s.jsxs)("div", { className: `flex items-start grow p-2 mr-2 gap-5 rounded-lg hover:bg-gray-100 ${n && "bg-gray-0"} transition-colors cursor-pointer`, children: [(0, s.jsx)(h, { avatarSize: "xxLarge", titleState: t.metadata.title, onCustomAvatarNeedsResolving: (n) => e(new o.com.x.dms.convlist.ConversationListEvent.CustomAvatarNeedsResolving(t.conversationId, n)), isInlineFacepile: !0 }), (0, s.jsxs)("div", { className: "flex-1 gap-5", children: [(0, s.jsx)(d.R, { name: t.metadata.title.title, badges: a ? (0, w.r)(t.metadata.title.otherUser) : void 0 }), (0, s.jsx)(r.x, { color: "gray700", weight: t.isUnreadByMe ? "bold" : "normal", numberOfLines: 1, className: "break-all", children: (0, s.jsx)(C, { previewWithMetadata: t }) })] }), (0, s.jsxs)("div", { className: "flex flex-col items-end", children: [(0, s.jsxs)("div", { className: "flex flex-row gap-1 items-center h-5", children: [(0, s.jsx)(r.x, { size: "subtext3", children: i && (0, s.jsx)(j.Q, { timestamp: i }) }), t.isMuted && (0, s.jsx)(p.Z, { width: "14", height: "14", className: "text-gray-700" })] }), (0, s.jsxs)("div", { className: "flex flex-row gap-1 items-center h-5", children: [t.showReadByOthersIndicator === y.Read && (0, s.jsx)(v.Z, { width: "14", height: "14", className: "text-gray-700" }), t.showReadByOthersIndicator === y.Unread && (0, s.jsx)(f.Z, { width: "14", height: "14", className: "text-gray-700" }), t.isUnreadByMe && (0, s.jsx)(g.Z, { width: "14", height: "14", className: "text-blue-500" })] })] })] }), (0, s.jsx)("div", { className: `w-1 ${n ? "bg-text" : "bg-background"} justify-self-end rounded-lg` })] });
                 };
             var N = n(202784),
                 k = n(110241),
@@ -359,9 +349,9 @@
             function M() {
                 return (0, s.jsxs)("div", { children: [(0, s.jsx)(r.x, { weight: "bold", children: "No chats yet" }), (0, s.jsx)(r.x, { color: "gray700", children: "Start chatting with end-to-end encryption" })] });
             }
-            var R = n(534801),
+            var R = n(984713),
                 A = n(304183);
-            const z = ({ component: e, shouldRegister: t }) =>
+            const T = ({ component: e, shouldRegister: t }) =>
                     (0, s.jsxs)("div", {
                         className: "p-5 rounded-2xl border-2 border-gray-100 bg-gray-0 absolute bottom-4 left-4 right-4 flex flex-col gap-2 z-10",
                         children: [
@@ -370,7 +360,7 @@
                                 variant: "primaryText",
                                 icon: (0, s.jsx)(A.Z, {}),
                                 onClick: () => {
-                                    e.onEvent(o.com.x.dms.convlist.ConversationListEvent.DismissConversationActionsDialog);
+                                    e.onEvent(o.com.x.dms.convlist.ConversationListEvent.DismissBottomDialog);
                                 },
                             }),
                             (0, s.jsx)(r.x, { size: "body", weight: "bold", children: "Daily Verification" }),
@@ -385,7 +375,7 @@
                             }),
                         ],
                     }),
-                T = ({ connectionState: e }) => {
+                z = ({ connectionState: e }) => {
                     const t = ((e) => {
                         switch (e) {
                             case o.com.x.dms.DmConnectionIndicatorState.CONNECTING:
@@ -401,8 +391,8 @@
                 };
             var D = n(334038),
                 L = n(264531);
-            const B = o.com.x.dms.convlist,
-                U = o.com.x.dms.InboxBottomDialog;
+            const U = o.com.x.dms.convlist,
+                B = o.com.x.dms.InboxBottomDialog;
             function _({ component: e, setShowNewDM: t, showNewDM: n }) {
                 const i = (0, I._)(e.state),
                     a = i.previews?.asJsReadonlyArrayView(),
@@ -410,13 +400,13 @@
                 return (0, s.jsxs)(s.Fragment, {
                     children: [
                         (0, s.jsxs)("div", {
-                            className: "flex flex-col h-screen border-r relative",
+                            className: "flex flex-col h-screen border-r relative w-full",
                             children: [
                                 (0, s.jsxs)("header", {
                                     className: "flex items-center justify-between p-4 border-b border-border h-16",
                                     children: [
                                         (0, s.jsx)(r.x, { weight: "bold", size: "headline1", children: "Messages" }),
-                                        i.showConnectionIndicator && (0, s.jsx)(T, { connectionState: i.showConnectionIndicator }),
+                                        i.showConnectionIndicator && (0, s.jsx)(z, { connectionState: i.showConnectionIndicator }),
                                         (0, s.jsxs)("div", {
                                             className: "flex items-center gap-4",
                                             children: [
@@ -425,7 +415,7 @@
                                                 (0, s.jsx)(c.z, {
                                                     icon: (0, s.jsx)(P.Z, { className: "h-5 w-5" }),
                                                     onClick: () => {
-                                                        e.onEvent(B.ConversationListEvent.FloatingActionButtonClicked);
+                                                        e.onEvent(U.ConversationListEvent.FloatingActionButtonClicked);
                                                     },
                                                 }),
                                             ],
@@ -433,15 +423,15 @@
                                     ],
                                 }),
                                 a && a.length > 0 ? (0, s.jsx)(E, { conversations: a, component: e }) : (0, s.jsx)(M, {}),
-                                i.showBottomDialog instanceof U.PinReminder && (0, s.jsx)(z, { component: e, shouldRegister: i.showBottomDialog.shouldRegister }),
+                                i.showBottomDialog instanceof B.PinReminder && (0, s.jsx)(T, { component: e, shouldRegister: i.showBottomDialog.shouldRegister }),
                             ],
                         }),
                         n && (0, s.jsx)(R.x, { onVisibilityChange: t }),
                     ],
                 });
             }
-            var G = n(91695),
-                V = n(704778),
+            var G = n(794069),
+                V = n(787395),
                 Z = n(611463),
                 O = n(369962),
                 $ = n(582440),
@@ -474,14 +464,14 @@
                 },
                 q = ({ toolbarState: e }) => ((e instanceof W.Group || e instanceof W.OneToOne) && e.ttl ? (0, s.jsx)(K, { ttl: e.ttl }) : e instanceof W.Group ? (0, s.jsxs)(r.x, { size: "subtext2", color: "gray700", children: [e.numParticipants, " people"] }) : null),
                 K = ({ ttl: e }) => (0, s.jsxs)("div", { className: "flex flex-row gap-1", children: [(0, s.jsx)(F.Z, { className: "text-gray-700" }), (0, s.jsx)(r.x, { size: "subtext2", color: "gray700", children: (0, O.L)(e.inWholeMilliseconds) })] });
-            var Q = n(617588),
-                H = n(628047),
+            var H = n(617588),
+                Q = n(628047),
                 Y = n(853582),
                 ee = n(898100),
                 te = n(511974),
                 ne = n(682008),
                 se = n(379342),
-                ie = n(383508),
+                ie = n(455091),
                 ae = n(844098),
                 oe = n(130629),
                 re = n(816828),
@@ -603,8 +593,8 @@
                             return (0, s.jsxs)("div", { className: "flex flex-row w-full gap-2 py-2 items-center", children: [(0, s.jsx)(m.s, { url: n.user.profileImageUrl, size: "large" }), (0, s.jsx)("div", { className: "flex-1", children: (0, s.jsx)(d.R, { name: n.user.displayName, screenName: n.user.screenName, badges: (0, w.r)(n.user), isStacked: !0 }) }), (0, s.jsx)(je, { participant: n, menuItems: a, handleParticipantClicked: e, handleParticipantMenuButtonClicked: t })] }, n.user.screenName);
                         }),
                     });
-            var ye = n(395828);
-            function Ce({ icon: e, destructive: t, onClick: n, title: i, value: a, showChevron: o = !1 }) {
+            var Ce = n(395828);
+            function ye({ icon: e, destructive: t, onClick: n, title: i, value: a, showChevron: o = !1 }) {
                 return (0, s.jsx)("div", { className: "my-2 rounded-xl bg-gray-0 cursor-pointer w-full", onClick: n, children: (0, s.jsxs)("div", { className: "flex flex-row items-center justify-between p-4", children: [(0, s.jsxs)("div", { className: `flex items-center gap-2 ${t && "text-red-500"}`, children: [e, (0, s.jsx)(r.x, { size: "body", weight: "medium", color: t ? "red500" : "text", children: i })] }), (0, s.jsxs)("div", { className: "flex items-center gap-2", children: [a && (0, s.jsx)(r.x, { size: "body", color: "gray500", children: a }), o && (0, s.jsx)(te.Z, { className: "text-gray-500" })] })] }) });
             }
             const be = o.com.x.dms.convinfo,
@@ -613,16 +603,16 @@
                 const n = (function (e) {
                     switch (e) {
                         case Ne.DeleteConversation:
-                            return { title: "Delete conversation", icon: (0, s.jsx)(ye.Z, {}), destructive: !0 };
+                            return { title: "Delete conversation", icon: (0, s.jsx)(Ce.Z, {}), destructive: !0 };
                         case Ne.LeaveGroup:
-                            return { title: "Leave conversation", icon: (0, s.jsx)(ye.Z, {}) };
+                            return { title: "Leave conversation", icon: (0, s.jsx)(Ce.Z, {}) };
                         case Ne.ResignAsAdmin:
                             return { title: "Resign as admin", icon: (0, s.jsx)(ve.Z, {}) };
                     }
                     return null;
                 })(e);
                 return n
-                    ? (0, s.jsx)(Ce, {
+                    ? (0, s.jsx)(ye, {
                           icon: n.icon,
                           title: n.title,
                           destructive: n.destructive,
@@ -634,7 +624,7 @@
                     : null;
             }
             const Se = ({ title: e, onBackClicked: t }) => (0, s.jsxs)("div", { className: "flex flex-shrink-0 items-center h-16 border-b border-border w-full relative", children: [(0, s.jsx)("div", { className: "absolute left-2", children: (0, s.jsx)(c.z, { icon: (0, s.jsx)($.Z, {}), onClick: t, variant: "primaryText" }) }), (0, s.jsx)(r.x, { size: "headline1", weight: "bold", className: "flex-1 text-center", children: e })] }),
-                Ee = ({ onEvent: e, ttl: t }) => (0, s.jsx)(Ce, { icon: (0, s.jsx)(F.Z, {}), title: "Vanishing Mode", showChevron: !0, value: t ? (0, O.L)(t) : "Off", onClick: e }),
+                Ee = ({ onEvent: e, ttl: t }) => (0, s.jsx)(ye, { icon: (0, s.jsx)(F.Z, {}), title: "Vanishing Mode", showChevron: !0, value: t ? (0, O.L)(t) : "Off", onClick: e }),
                 Ie = o.com.x.dms.convinfo;
             function Pe({ id: e }) {
                 const [t, n] = (0, N.useState)(null),
@@ -741,7 +731,7 @@
                                                     })
                                                   : null,
                                               a.contents.peopleSection.canAddPeople
-                                                  ? (0, s.jsx)(Ce, {
+                                                  ? (0, s.jsx)(ye, {
                                                         icon: (0, s.jsx)(ne.Z, {}),
                                                         onClick: () => {
                                                             e.onEvent(Ie.ConversationInfoEvent.AddPeopleClicked);
@@ -761,8 +751,8 @@
             }
             var Re = n(463341),
                 Ae = n(522302),
-                ze = n(167285);
-            const Te = o.com.x.dms.vanishingmode,
+                Te = n(167285);
+            const ze = o.com.x.dms.vanishingmode,
                 De = ({ id: e }) => {
                     const { t } = (0, ie.$G)(),
                         [n, i] = (0, N.useState)(null),
@@ -774,7 +764,7 @@
                                 n = a.vanishingModeComponent(
                                     t,
                                     o.com.x.models.dm.XConversationId.Companion.fromStringRequired(e),
-                                    new Te.VanishingModeCallbacks(() => {
+                                    new ze.VanishingModeCallbacks(() => {
                                         r.toConversationInfo(e);
                                     }),
                                 );
@@ -791,7 +781,7 @@
                                 (0, s.jsx)(Se, {
                                     title: t("Vanishing Mode"),
                                     onBackClicked: (e) => {
-                                        e.stopPropagation(), n?.handleEvent(Te.VanishingModeEvent.BackButtonClicked);
+                                        e.stopPropagation(), n?.handleEvent(ze.VanishingModeEvent.BackButtonClicked);
                                     },
                                 }),
                                 n ? (0, s.jsx)(Le, { component: n }) : (0, s.jsx)("div", { className: "flex items-center h-full", children: (0, s.jsx)(l.P, {}) }),
@@ -809,14 +799,14 @@
                             (0, s.jsx)("div", {
                                 className: "w-full bg-gray-0 rounded-xl",
                                 children: n.times.asJsReadonlyArrayView().map((i, a) => {
-                                    const o = i ? (0, ze.S)({ diffSeconds: i.inWholeMilliseconds / 1e3, style: "long" }) : t("None"),
+                                    const o = i ? (0, Te.S)({ diffSeconds: i.inWholeMilliseconds / 1e3, style: "long" }) : t("None"),
                                         l = (!i && !n.currentTtl) || i?.equals(n.currentTtl);
                                     return (0, s.jsxs)(
                                         "div",
                                         {
                                             className: "flex justify-between items-center p-4 cursor-pointer " + (0 === a ? "" : "border-t border-t-gray-100"),
                                             onClick: () => {
-                                                e.handleEvent(new Te.VanishingModeEvent.TimeClicked(i));
+                                                e.handleEvent(new ze.VanishingModeEvent.TimeClicked(i));
                                             },
                                             children: [(0, s.jsx)(r.x, { children: o }), (0, s.jsx)("div", { className: "h-6 text-primary", children: l && (0, s.jsx)(Ae.Z, { width: 24, height: 24 }) })],
                                         },
@@ -827,8 +817,8 @@
                         ],
                     });
                 },
-                Be = o.com.x.dms.participantlist,
-                Ue = ({ id: e }) => {
+                Ue = o.com.x.dms.participantlist,
+                Be = ({ id: e }) => {
                     const { t } = (0, ie.$G)(),
                         [n, i] = (0, N.useState)(null),
                         a = (0, Z.n)(),
@@ -839,7 +829,7 @@
                                 n = a.participantListComponent(
                                     t,
                                     o.com.x.models.dm.XConversationId.Companion.fromStringRequired(e),
-                                    new Be.ParticipantListCallbacks(
+                                    new Ue.ParticipantListCallbacks(
                                         () => {
                                             r.toConversationInfo(e);
                                         },
@@ -859,7 +849,7 @@
                                 (0, s.jsx)(Se, {
                                     title: t("All participants"),
                                     onBackClicked: (e) => {
-                                        e.stopPropagation(), n?.handleEvent(Be.ParticipantListEvent.BackButtonClicked);
+                                        e.stopPropagation(), n?.handleEvent(Ue.ParticipantListEvent.BackButtonClicked);
                                     },
                                 }),
                                 n ? (0, s.jsx)(_e, { component: n }) : (0, s.jsx)("div", { className: "flex items-center h-full", children: (0, s.jsx)(l.P, {}) }),
@@ -872,13 +862,13 @@
                     (0, le.e)(e.toasts);
                     const n = (0, N.useCallback)(
                             (t) => {
-                                e.handleEvent(new Be.ParticipantListEvent.ParticipantClicked(t));
+                                e.handleEvent(new Ue.ParticipantListEvent.ParticipantClicked(t));
                             },
                             [e],
                         ),
                         i = (0, N.useCallback)(
                             (t, n) => {
-                                e.handleEvent(new Be.ParticipantListEvent.ParticipantMenuButtonClicked(t, n));
+                                e.handleEvent(new Ue.ParticipantListEvent.ParticipantMenuButtonClicked(t, n));
                             },
                             [e],
                         );
@@ -886,12 +876,12 @@
                 };
             function Ge() {
                 const e = (0, k.a)(),
-                    t = (0, Q.F)(),
-                    n = (0, H.v)(),
+                    t = (0, H.F)(),
+                    n = (0, Q.v)(),
                     i = (0, Y.k)(),
                     [a, o] = (0, N.useState)(!1);
                 return "" !== e && i
-                    ? (0, s.jsx)(Ue, { id: e })
+                    ? (0, s.jsx)(Be, { id: e })
                     : "" !== e && t
                       ? (0, s.jsx)(Pe, { id: e })
                       : "" !== e && n
@@ -944,11 +934,15 @@
                             }
                         );
                     }, [i, e, a]),
-                    t ? (0, s.jsxs)("div", { className: "flex flex-col h-screen flex-grow", children: [(0, s.jsx)(X, { component: t }), (0, s.jsx)("div", { className: "flex-1 overflow-hidden", children: (0, s.jsx)(Re.Bu, { children: (0, s.jsx)(V.r, { component: t }) }) }), (0, s.jsx)(G.R, { component: t })] }) : (0, s.jsx)("div", { children: "Loading..." })
+                    t ? (0, s.jsx)(Ze, { component: t }) : (0, s.jsx)("div", { className: "w-full h-screen", children: (0, s.jsx)(l.P, {}) })
                 );
             }
-            var Ze = n(607499);
-            const Oe = () => {
+            function Ze({ component: e }) {
+                const t = (0, I._)(e.state);
+                return (0, s.jsxs)("div", { className: "flex flex-col h-screen flex-grow", children: [(0, s.jsx)(X, { component: e }), (0, s.jsx)("div", { className: "flex-1 overflow-hidden", children: (0, s.jsx)(Re.Bu, { children: (0, s.jsx)(V.r, { component: e }) }) }), !t.isReadOnly && (0, s.jsx)(G.R, { component: e })] });
+            }
+            var Oe = n(607499);
+            const $e = () => {
                     const [e, t] = (0, N.useState)(null),
                         n = (0, Z.n)(),
                         i = (0, se.s)(),
@@ -982,10 +976,10 @@
                                 }
                             );
                         }, [n, i]),
-                        null === e ? (0, s.jsx)("div", { className: "flex flex-col justify-center h-screen w-full", children: (0, s.jsx)(l.P, {}) }) : (0, s.jsx)(Ze.S, { children: (0, s.jsx)($e, { component: e, setShowNewDM: r, showNewDM: a }) })
+                        null === e ? (0, s.jsx)("div", { className: "flex flex-col justify-center h-screen w-full", children: (0, s.jsx)(l.P, {}) }) : (0, s.jsx)(Oe.S, { children: (0, s.jsx)(Fe, { component: e, setShowNewDM: r, showNewDM: a }) })
                     );
                 },
-                $e = ({ component: e, setShowNewDM: t, showNewDM: n }) => {
+                Fe = ({ component: e, setShowNewDM: t, showNewDM: n }) => {
                     const o = (0, i.a)("(max-width: 768px)"),
                         r = (0, a.U)().id,
                         c = void 0 === r || "" === r;
@@ -994,4 +988,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-e0975bf4.354e2e5a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-e0975bf4.a6d79a8a.js.map

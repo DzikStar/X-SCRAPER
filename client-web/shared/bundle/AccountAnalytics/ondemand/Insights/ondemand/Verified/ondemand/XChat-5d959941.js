@@ -143,7 +143,7 @@
             r.d(t, { S: () => g });
             var n = r(552322),
                 a = r(202784),
-                l = r(383508),
+                l = r(455091),
                 i = r(941204),
                 o = r(436059),
                 s = r(285446);
@@ -239,6 +239,17 @@
             var a, l, i;
             n.hash = "777d4308f91b1255b5b97d302fdd1a24";
             const o = n;
+        },
+        455091: (e, t, r) => {
+            r.d(t, { cC: () => n.cC, $G: () => n.$G });
+            var n = r(679816),
+                a = r(424991),
+                l = r(963463),
+                i = r(573936);
+            (0, a.Fs)()
+                .use(l.Z)
+                .use(i.D)
+                .init({ debug: !1, fallbackLng: "en", interpolation: { escapeValue: !1, prefix: "{", suffix: "}" }, keySeparator: !1, react: { useSuspense: !0 }, resources: {} });
         },
         26429: (e, t, r) => {
             r.d(t, { q: () => i });
@@ -777,4 +788,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AccountAnalytics~ondemand.Insights~ondemand.Verified~ondemand.XChat-5d959941.3c9eaeba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AccountAnalytics~ondemand.Insights~ondemand.Verified~ondemand.XChat-5d959941.a89d0b2a.js.map

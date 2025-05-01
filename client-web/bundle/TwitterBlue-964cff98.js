@@ -40,7 +40,7 @@
                     o.useEffect(() => {
                         k && T.scribe({ component: "paywall_with_offer", element: _?.promotion.program_id, action: "impression" });
                     }, [k, _, T]);
-                    const D = z.isTrue("subscriptions_offers_localized_pricing_enabled") && !a,
+                    const D = z.isTrue("subscriptions_offers_localized_pricing_enabled"),
                         R = i()(v.WL, t.apiContent?.subscribe_button)?.detail_text,
                         A = D ? o.createElement(s.ZP, { color: "alwaysDarkGray700", style: { marginTop: d.default.theme.spaces.space12 } }, R) : null,
                         W = i()(v.lO, t.apiContent?.header),
@@ -757,4 +757,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterBlue-964cff98.7a887dda.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterBlue-964cff98.4db1467a.js.map

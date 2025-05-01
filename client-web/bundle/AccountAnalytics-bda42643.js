@@ -94,7 +94,7 @@
                                   (0, a.jsx)("defs", { children: (0, a.jsxs)("linearGradient", { id: "viewersGradient", x1: "0", y1: "0", x2: "0", y2: "1", children: [(0, a.jsx)("stop", { offset: "5%", stopColor: "hsl(var(--colors-purple-500) / 0.5)", stopOpacity: 0.8 }), (0, a.jsx)("stop", { offset: "95%", stopColor: "hsl(var(--colors-purple-500) / 0)", stopOpacity: 0 })] }) }),
                                   (0, a.jsx)(N, { strokeDasharray: "0", vertical: !1, stroke: "hsl(var(--colors-gray-100))" }),
                                   (0, a.jsx)(w, { dataKey: "seconds", tickLine: !1, axisLine: !1, className: "text-subtext3", minTickGap: 60, tickMargin: 8, tick: { fill: "hsl(var(--colors-gray-600))" }, tickFormatter: C }),
-                                  (0, a.jsx)(k, { tickLine: !1, axisLine: !1, className: "text-subtext3", tickFormatter: (e) => (0, m.uf)(e), tick: { fill: "hsl(var(--colors-gray-600))" } }),
+                                  (0, a.jsx)(k, { tickLine: !1, axisLine: !1, className: "text-subtext3", tickFormatter: (e) => (0, m.uf)(e), tick: { fill: "hsl(var(--colors-gray-600))" }, allowDecimals: !1 }),
                                   (0, a.jsx)(g.h7, {
                                       content: (0, a.jsx)(g.dg, {
                                           labelFormatter: (e, s) => {
@@ -120,16 +120,16 @@
                 return (0, a.jsxs)("div", { className: "bg-gray-0 rounded-xl p-4 flex flex-col border border-gray-200", children: [(0, a.jsx)("div", { className: "flex items-center justify-between pb-2.5", children: (0, a.jsxs)("h2", { className: "font-medium text-gray-900 md:text-headline2 md:font-bold", children: [e.postsContentType, " ", (0, a.jsxs)("span", { className: "text-gray-500 text-[14px] font-normal", children: ["(", (0, m.uf)(t.length), ")"] })] }) }), (0, a.jsx)("div", { className: "relative max-md:max-h-[250px] md:h-[250px]", children: 0 === t.length ? (0, a.jsx)("p", { className: "text-gray-600 mt-2", children: e.pleaseCheckBackAgainLater }) : (0, a.jsx)("div", { className: "overflow-y-auto max-md:max-h-[250px] md:h-full space-y-4 relative [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]", children: t.map((e, s) => (0, a.jsx)(z, { post: e, isLast: s === t.length - 1 }, e.id)) }) })] });
             }
             var R = t(812115),
-                F = t(840489);
-            function D({ speaker: e }) {
+                D = t(840489);
+            function F({ speaker: e }) {
                 const s = `https://x.com/${e.screenName}`;
-                return (0, a.jsxs)(R.r, { href: s, target: "_blank", className: (0, F.Z)("flex items-center gap-3 p-3 md:rounded-xl md:border md:border-gray-50 cursor-pointer md:hover:bg-gray-50", "focus:outline-none focus-visible:outline-none active:outline-none", "[-webkit-tap-highlight-color:transparent] [tap-highlight-color:transparent]", "[touch-callout:none] [user-select:none]", "border-b border-gray-100 max-md:last:border-b-0"), children: [(0, a.jsx)(n.q, { screenName: e.screenName, size: "xLarge", url: e.profileImageUrl, withLink: "external" }), (0, a.jsxs)("div", { className: "flex flex-col gap-1", children: [(0, a.jsx)(l.R, { badges: e.badges, name: e.name, size: "subtext1", withLink: "external" }), (0, a.jsxs)("div", { className: "text-subtext2 text-gray-700", children: ["@", e.screenName] })] })] });
+                return (0, a.jsxs)(R.r, { href: s, target: "_blank", className: (0, D.Z)("flex items-center gap-3 p-3 md:rounded-xl md:border md:border-gray-50 cursor-pointer md:hover:bg-gray-50", "focus:outline-none focus-visible:outline-none active:outline-none", "[-webkit-tap-highlight-color:transparent] [tap-highlight-color:transparent]", "[touch-callout:none] [user-select:none]", "border-b border-gray-100 max-md:last:border-b-0"), children: [(0, a.jsx)(n.q, { screenName: e.screenName, size: "xLarge", url: e.profileImageUrl, withLink: "external" }), (0, a.jsxs)("div", { className: "flex flex-col gap-1", children: [(0, a.jsx)(l.R, { badges: e.badges, name: e.name, size: "subtext1", withLink: "external" }), (0, a.jsxs)("div", { className: "text-subtext2 text-gray-700", children: ["@", e.screenName] })] })] });
             }
             function M() {
                 const { analytics: e } = (0, x.M1)(),
                     { spaceDetails: s } = (0, r.R5)(),
                     t = s?.participants.speakers || [];
-                return (0, a.jsxs)("div", { className: "bg-gray-0 rounded-xl p-4 flex flex-col border border-gray-200", children: [(0, a.jsx)("div", { className: "flex items-center justify-between pb-2.5", children: (0, a.jsxs)("h2", { className: "font-medium text-gray-900 md:text-headline2 md:font-bold", children: [e.speakers, " ", (0, a.jsxs)("span", { className: "text-gray-500 text-[14px] font-normal", children: ["(", (0, m.uf)(t.length), ")"] })] }) }), (0, a.jsx)("div", { className: "relative max-md:max-h-[250px] md:h-[250px]", children: 0 === t.length ? (0, a.jsx)("p", { className: "text-gray-600 mt-2", children: e.pleaseCheckBackAgainLater }) : (0, a.jsx)("div", { className: "overflow-y-auto max-md:max-h-[250px] md:h-full space-y-4 relative [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]", children: t.map((e) => (0, a.jsx)(D, { speaker: e }, e.id)) }) })] });
+                return (0, a.jsxs)("div", { className: "bg-gray-0 rounded-xl p-4 flex flex-col border border-gray-200", children: [(0, a.jsx)("div", { className: "flex items-center justify-between pb-2.5", children: (0, a.jsxs)("h2", { className: "font-medium text-gray-900 md:text-headline2 md:font-bold", children: [e.speakers, " ", (0, a.jsxs)("span", { className: "text-gray-500 text-[14px] font-normal", children: ["(", (0, m.uf)(t.length), ")"] })] }) }), (0, a.jsx)("div", { className: "relative max-md:max-h-[250px] md:h-[250px]", children: 0 === t.length ? (0, a.jsx)("p", { className: "text-gray-600 mt-2", children: e.pleaseCheckBackAgainLater }) : (0, a.jsx)("div", { className: "overflow-y-auto max-md:max-h-[250px] md:h-full space-y-4 relative [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]", children: t.map((e) => (0, a.jsx)(F, { speaker: e }, e.id)) }) })] });
             }
             var O = t(436059),
                 Z = t(941204),
@@ -167,7 +167,7 @@
             }
         },
         47649: (e, s, t) => {
-            t.d(s, { l: () => D });
+            t.d(s, { l: () => F });
             var a = t(552322),
                 r = t(202784),
                 n = t(407250),
@@ -316,7 +316,7 @@
                     f = p.find((s) => s.value === e);
                 return (0, a.jsxs)("div", { className: "flex items-center gap-2 relative", children: [(0, a.jsx)(l.z, { size: "xSmallCompact", onClick: () => n("asc" === s ? "desc" : "asc"), className: "px-0 border-none bg-background", children: "asc" === s ? (0, a.jsx)(m.Z, { className: "size-5 text-gray-900" }) : (0, a.jsx)(h.Z, { className: "size-5 text-gray-900" }) }), (0, a.jsxs)(i.Ph, { value: e, onValueChange: (e) => t(e), children: [(0, a.jsx)(i.i4, { className: "bg-background text-subtext1 w-auto font-bold border-none pl-1 !ring-0 !ring-offset-0 focus:!ring-0 focus:!ring-offset-0 data-[state=open]:!border-none", children: (0, a.jsx)(i.ki, { children: f?.icon }) }), (0, a.jsx)(i.Bw, { children: p.map((e) => (0, a.jsx)(i.Ql, { value: e.value, children: (0, a.jsxs)("div", { className: "flex items-center gap-2", children: [(0, a.jsx)("span", { className: "text-gray-700", children: e.icon }), (0, a.jsx)("span", { children: e.label })] }) }, e.value)) })] })] });
             }
-            function F({ spaces: e, getSpaceAnalyticsUrl: s, getSpaceUrl: t }) {
+            function D({ spaces: e, getSpaceAnalyticsUrl: s, getSpaceUrl: t }) {
                 const l = (0, u.t)(),
                     c = (0, p.j)(),
                     d = (0, f.l)(),
@@ -400,14 +400,14 @@
                     ],
                 });
             }
-            function D({ isMock: e, getSpaceAnalyticsUrl: s, getSpaceUrl: t }) {
+            function F({ isMock: e, getSpaceAnalyticsUrl: s, getSpaceUrl: t }) {
                 return (0, a.jsx)(z.br, { isMockData: e, children: (0, a.jsx)(M, { getSpaceAnalyticsUrl: s, getSpaceUrl: t }) });
             }
             function M({ getSpaceAnalyticsUrl: e, getSpaceUrl: s }) {
                 const { spaces: t } = (0, z.BK)();
-                return (0, a.jsx)("div", { className: "flex flex-col min-[988px]:gap-6 min-[988px]:p-0", children: (0, a.jsx)(F, { spaces: t, getSpaceAnalyticsUrl: e, getSpaceUrl: s }) });
+                return (0, a.jsx)("div", { className: "flex flex-col min-[988px]:gap-6 min-[988px]:p-0", children: (0, a.jsx)(D, { spaces: t, getSpaceAnalyticsUrl: e, getSpaceUrl: s }) });
             }
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-bda42643.70ee2c5a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-bda42643.a9b0150a.js.map

@@ -10,60 +10,60 @@
                     i,
                     l,
                     s,
-                    c,
                     n,
+                    c,
                     u = Math.imul,
                     p = r.$_$.o7,
                     g = r.$_$.l6,
                     d = r.$_$.ke,
                     m = r.$_$.je,
                     h = r.$_$.u,
-                    b = r.$_$.hd,
-                    f = r.$_$.x7,
+                    f = r.$_$.hd,
+                    b = r.$_$.x7,
                     q = r.$_$.t,
-                    v = r.$_$.ik,
+                    v = r.$_$.mk,
                     w = r.$_$.u9,
                     y = r.$_$.db,
-                    k = r.$_$.nd,
-                    E = r.$_$.d1,
-                    A = r.$_$.h1,
-                    D = r.$_$.sc,
-                    L = r.$_$.t3,
+                    E = r.$_$.nd,
+                    A = r.$_$.d1,
+                    D = r.$_$.h1,
+                    L = r.$_$.sc,
+                    k = r.$_$.t3,
                     x = r.$_$.ne,
                     S = r.$_$.f5,
-                    _ = r.$_$.fj,
+                    _ = r.$_$.jj,
                     T = r.$_$.uc,
                     $ = r.$_$.oe,
                     N = r.$_$.tc,
                     R = r.$_$.g,
-                    U = r.$_$.eg,
-                    C = r.$_$.cg,
+                    U = r.$_$.fg,
+                    C = r.$_$.dg,
                     V = r.$_$.p1,
-                    O = r.$_$.ii,
+                    O = r.$_$.mi,
                     B = r.$_$.sa,
-                    j = r.$_$.id,
-                    I = r.$_$.ta,
-                    G = r.$_$.n3,
-                    H = r.$_$.h2,
-                    z = r.$_$.hh,
-                    P = r.$_$.ri,
+                    I = r.$_$.id,
+                    G = r.$_$.ta,
+                    H = r.$_$.n3,
+                    P = r.$_$.h2,
+                    z = r.$_$.lh,
+                    j = r.$_$.vi,
                     F = r.$_$.fe,
                     M = r.$_$.de,
-                    Y = r.$_$.kh,
+                    Y = r.$_$.oh,
                     J = r.$_$.f2,
                     Z = r.$_$.rc,
                     K = r.$_$.qc;
                 function Q(e) {
                     return (function (e, r) {
-                        return W.call(r), p(r.sbj_1, e), r;
+                        return W.call(r), p(r.vbm_1, e), r;
                     })(e, m(d(W)));
                 }
                 function W() {
                     oe.call(this);
-                    this.sbj_1 = h();
+                    this.vbm_1 = h();
                 }
                 function X(e, r) {
-                    for (var a = q(f(r, 10)), t = r.p(); t.q(); ) {
+                    for (var a = q(b(r, 10)), t = r.p(); t.q(); ) {
                         var o = t.r(),
                             i = o.wg(),
                             l = o.xg(),
@@ -74,9 +74,9 @@
                 }
                 function ee() {
                     (a = this),
-                        (this.vbj_1 = w([v("<", "&gt;"), v(">", "&lt;"), v('"', "&quot;"), v("'", "&apos;"), v("&", "&amp;")])),
-                        (this.wbj_1 = X(0, this.vbj_1)),
-                        (this.xbj_1 = w([
+                        (this.ybm_1 = w([v("<", "&gt;"), v(">", "&lt;"), v('"', "&quot;"), v("'", "&apos;"), v("&", "&amp;")])),
+                        (this.zbm_1 = X(0, this.ybm_1)),
+                        (this.abn_1 = w([
                             v("'", "&apos;"),
                             v(" ", "&nbsp"),
                             v(" ", "&nbsp;"),
@@ -431,7 +431,7 @@
                             v("♥", "&hearts;"),
                             v("♦", "&diams;"),
                         ])),
-                        (this.ybj_1 = X(0, this.xbj_1));
+                        (this.bbn_1 = X(0, this.abn_1));
                     var e = h();
                     e.e(v("Æ", "&AElig")),
                         e.e(v("Æ", "&AElig;")),
@@ -2664,8 +2664,8 @@
                         e.e(v("𝓏", "&zscr;")),
                         e.e(v("‍", "&zwj;")),
                         e.e(v("‌", "&zwnj;")),
-                        (this.zbj_1 = y(e)),
-                        (this.abk_1 = X(0, this.zbj_1));
+                        (this.cbn_1 = y(e)),
+                        (this.dbn_1 = X(0, this.cbn_1));
                 }
                 function re() {
                     return null == a && new ee(), a;
@@ -2673,25 +2673,25 @@
                 function ae() {
                     t = this;
                     var e = w([v("\0", ""), v("\v", "&#11;"), v("\f", "&#12;"), v("￾", ""), v("￿", "")]);
-                    (this.cbk_1 = Q([new te(re().vbj_1), new te(e), c.bbk(1, 8), c.bbk(14, 31), c.bbk(127, 132), c.bbk(134, 159), new he()])), (this.dbk_1 = Q([new te(re().xbj_1)])), (this.ebk_1 = Q([new te(re().zbj_1), c.bbk(1, 8), c.bbk(14, 31), c.bbk(127, 132), c.bbk(134, 159)])), (this.fbk_1 = Q([new te(re().ybj_1), new ge([])])), (this.gbk_1 = Q([new te(re().abk_1), new ge([])])), (this.hbk_1 = Q([new te(re().wbj_1), new ge([])]));
+                    (this.fbn_1 = Q([new te(re().ybm_1), new te(e), n.ebn(1, 8), n.ebn(14, 31), n.ebn(127, 132), n.ebn(134, 159), new he()])), (this.gbn_1 = Q([new te(re().abn_1)])), (this.hbn_1 = Q([new te(re().cbn_1), n.ebn(1, 8), n.ebn(14, 31), n.ebn(127, 132), n.ebn(134, 159)])), (this.ibn_1 = Q([new te(re().bbn_1), new ge([])])), (this.jbn_1 = Q([new te(re().dbn_1), new ge([])])), (this.kbn_1 = Q([new te(re().zbm_1), new ge([])]));
                 }
                 function te(e) {
                     oe.call(this);
-                    this.kbk_1 = E();
-                    this.lbk_1 = A();
+                    this.nbn_1 = A();
+                    this.obn_1 = D();
                     for (var r = 2147483647, a = 0, t = e.p(); t.q(); ) {
                         var o = t.r(),
                             i = o.wg(),
                             l = o.xg();
-                        this.kbk_1.t2(i, l);
-                        var s = D(i, 0),
-                            c = L(s),
-                            n = S(x(c));
-                        this.lbk_1.e(new _(n));
+                        this.nbn_1.t2(i, l);
+                        var s = L(i, 0),
+                            n = k(s),
+                            c = S(x(n));
+                        this.obn_1.e(new _(c));
                         var u = i.length;
                         u < r && (r = u), u > a && (a = u);
                     }
-                    (this.mbk_1 = r), (this.nbk_1 = a);
+                    (this.pbn_1 = r), (this.qbn_1 = a);
                 }
                 function oe() {}
                 function ie() {
@@ -2704,14 +2704,14 @@
                 function se(e, r) {
                     O.call(this, e, r);
                 }
-                function ce(e, r) {
-                    return e.pbk_1.w(r);
+                function ne(e, r) {
+                    return e.sbn_1.w(r);
                 }
-                function ne() {
-                    (s = this), (this.qbk_1 = B(pe()));
+                function ce() {
+                    (s = this), (this.tbn_1 = B(pe()));
                 }
                 function ue() {
-                    return null == s && new ne(), s;
+                    return null == s && new ce(), s;
                 }
                 function pe() {
                     return le(), o;
@@ -2719,40 +2719,40 @@
                 function ge(e) {
                     ue(), oe.call(this);
                     var r;
-                    (r = 0 === e.length ? ue().qbk_1 : I(e.slice())), (this.pbk_1 = r);
+                    (r = 0 === e.length ? ue().tbn_1 : G(e.slice())), (this.sbn_1 = r);
                 }
                 function de() {}
                 function me(e, r) {
-                    ie.call(this), (this.ubk_1 = e), (this.vbk_1 = r);
+                    ie.call(this), (this.xbn_1 = e), (this.ybn_1 = r);
                 }
                 function he() {
                     ie.call(this);
                 }
-                function be(e, r, a, t) {
+                function fe(e, r, a, t) {
                     (a[(t + 1) | 0] = (function (e, r) {
                         var a = 1023 & r,
-                            t = G(56320),
-                            o = L(t);
+                            t = H(56320),
+                            o = k(t);
                         return F((a + o) | 0);
                     })(0, r)),
                         (a[t] = (function (e, r) {
                             return F((55232 + ((r >>> 10) | 0)) | 0);
                         })(0, r));
                 }
-                function fe() {
-                    (this.rbk_1 = 65536), (this.sbk_1 = 1114111);
+                function be() {
+                    (this.ubn_1 = 65536), (this.vbn_1 = 1114111);
                 }
-                b(oe, "StringTranslator"),
-                    b(W, "AggregateTranslator", W, oe),
-                    k(ee, "EntityMaps"),
-                    k(ae, "KsoupEntities"),
-                    b(te, "LookupTranslator", R, oe),
-                    b(ie, "CodePointTranslator", R, oe),
-                    b(se, "Option", R, O),
-                    j(ne),
-                    b(ge, "NumericEntityDecoder", R, oe),
-                    j(de),
-                    b(
+                f(oe, "StringTranslator"),
+                    f(W, "AggregateTranslator", W, oe),
+                    E(ee, "EntityMaps"),
+                    E(ae, "KsoupEntities"),
+                    f(te, "LookupTranslator", R, oe),
+                    f(ie, "CodePointTranslator", R, oe),
+                    f(se, "Option", R, O),
+                    I(ce),
+                    f(ge, "NumericEntityDecoder", R, oe),
+                    I(de),
+                    f(
                         me,
                         "NumericEntityEncoder",
                         function () {
@@ -2761,47 +2761,47 @@
                         },
                         ie,
                     ),
-                    b(he, "UnicodeUnpairedSurrogateRemover", he, ie),
-                    k(fe, "CharsUtils"),
-                    (d(W).tbj = function (e, r, a) {
-                        for (var t = this.sbj_1.p(); t.q(); ) {
-                            var o = t.r().tbj(e, r, a);
+                    f(he, "UnicodeUnpairedSurrogateRemover", he, ie),
+                    E(be, "CharsUtils"),
+                    (d(W).wbm = function (e, r, a) {
+                        for (var t = this.vbm_1.p(); t.q(); ) {
+                            var o = t.r().wbm(e, r, a);
                             if (0 !== o) return o;
                         }
                         return 0;
                     }),
-                    (d(ae).ibk = function (e) {
-                        return this.gbk_1.ubj(e);
+                    (d(ae).lbn = function (e) {
+                        return this.jbn_1.xbm(e);
                     }),
-                    (d(ae).jbk = function (e) {
-                        return this.ibk(e);
+                    (d(ae).mbn = function (e) {
+                        return this.lbn(e);
                     }),
-                    (d(te).tbj = function (e, r, a) {
-                        var t = D(e, r),
-                            o = L(t),
+                    (d(te).wbm = function (e, r, a) {
+                        var t = L(e, r),
+                            o = k(t),
                             i = S(x(o));
-                        if (this.lbk_1.w(new _(i))) {
-                            var l = this.nbk_1;
-                            ((r + this.nbk_1) | 0) > e.length && (l = (e.length - r) | 0);
+                        if (this.obn_1.w(new _(i))) {
+                            var l = this.qbn_1;
+                            ((r + this.qbn_1) | 0) > e.length && (l = (e.length - r) | 0);
                             var s = l,
-                                c = this.mbk_1;
-                            if (c <= s)
+                                n = this.pbn_1;
+                            if (n <= s)
                                 do {
-                                    var n = s;
+                                    var c = s;
                                     s = (s + -1) | 0;
-                                    var u = T(e, r, (r + n) | 0),
-                                        p = this.kbk_1.p2($(u));
+                                    var u = T(e, r, (r + c) | 0),
+                                        p = this.nbn_1.p2($(u));
                                     if (null != p) return a.z8(p), N(u);
-                                } while (n !== c);
+                                } while (c !== n);
                         }
                         return 0;
                     }),
-                    (d(oe).ubj = function (e) {
+                    (d(oe).xbm = function (e) {
                         var r = V(u(e.length, 2));
                         return (
                             (function (e, r, a) {
                                 for (var t = 0, o = r.length; t < o; ) {
-                                    var i = e.tbj(r, t, a);
+                                    var i = e.wbm(r, t, a);
                                     if (0 !== i) {
                                         var l = 0;
                                         if (l < i)
@@ -2809,10 +2809,10 @@
                                                 (l = (l + 1) | 0), (t = (t + 1) | 0);
                                             } while (l < i);
                                     } else {
-                                        var s = D(r, t);
+                                        var s = L(r, t);
                                         if ((a.a9(s), (t = (t + 1) | 0), C(s) && t < o)) {
-                                            var c = D(r, t);
-                                            U(c) && (a.a9(c), (t = (t + 1) | 0));
+                                            var n = L(r, t);
+                                            U(n) && (a.a9(n), (t = (t + 1) | 0));
                                         }
                                     }
                                 }
@@ -2820,92 +2820,92 @@
                             r.toString()
                         );
                     }),
-                    (d(ie).tbj = function (e, r, a) {
-                        var t = D(e, r),
-                            o = L(t);
-                        return this.obk(o, a) ? 1 : 0;
+                    (d(ie).wbm = function (e, r, a) {
+                        var t = L(e, r),
+                            o = k(t);
+                        return this.rbn(o, a) ? 1 : 0;
                     }),
-                    (d(ge).tbj = function (e, r, a) {
+                    (d(ge).wbm = function (e, r, a) {
                         var t = e.length;
-                        if (D(e, r) === G(38) && r < ((t - 2) | 0) && D(e, (r + 1) | 0) === G(35)) {
+                        if (L(e, r) === H(38) && r < ((t - 2) | 0) && L(e, (r + 1) | 0) === H(35)) {
                             var o = (r + 2) | 0,
                                 l = !1,
-                                s = D(e, o);
-                            if ((s === G(120) || s === G(88)) && ((l = !0), (o = (o + 1) | 0) === t)) return 0;
-                            var c = o;
+                                s = L(e, o);
+                            if ((s === H(120) || s === H(88)) && ((l = !0), (o = (o + 1) | 0) === t)) return 0;
+                            var n = o;
                             e: for (;;) {
                                 var u;
-                                if (c < t) {
+                                if (n < t) {
                                     var p,
                                         g,
-                                        d = D(e, c);
-                                    if (G(48) <= d && d <= G(57)) g = !0;
+                                        d = L(e, n);
+                                    if (H(48) <= d && d <= H(57)) g = !0;
                                     else {
-                                        var m = D(e, c);
-                                        g = G(97) <= m && m <= G(102);
+                                        var m = L(e, n);
+                                        g = H(97) <= m && m <= H(102);
                                     }
                                     if (g) p = !0;
                                     else {
-                                        var h = D(e, c);
-                                        p = G(65) <= h && h <= G(70);
+                                        var h = L(e, n);
+                                        p = H(65) <= h && h <= H(70);
                                     }
                                     u = p;
                                 } else u = !1;
                                 if (!u) break e;
-                                c = (c + 1) | 0;
+                                n = (n + 1) | 0;
                             }
-                            var b,
-                                f = !(c === t) && D(e, c) === G(59);
-                            if (!f) {
-                                if (ce(this, pe())) return 0;
-                                if (ce(this, (le(), i))) throw H("Semi-colon required at end of numeric entity");
+                            var f,
+                                b = !(n === t) && L(e, n) === H(59);
+                            if (!b) {
+                                if (ne(this, pe())) return 0;
+                                if (ne(this, (le(), i))) throw P("Semi-colon required at end of numeric entity");
                             }
                             try {
-                                b = z($(T(e, o, c)), l ? 16 : 10);
+                                f = z($(T(e, o, n)), l ? 16 : 10);
                             } catch (e) {
-                                if (e instanceof P) {
+                                if (e instanceof j) {
                                     return 0;
                                 }
                                 throw e;
                             }
-                            var q = b;
+                            var q = f;
                             if (q > 65535)
-                                for (var v = n.tbk(q), w = 0, y = v.length; w < y; ) {
-                                    var k = v[w];
-                                    (w = (w + 1) | 0), a.a9(k);
+                                for (var v = c.wbn(q), w = 0, y = v.length; w < y; ) {
+                                    var E = v[w];
+                                    (w = (w + 1) | 0), a.a9(E);
                                 }
                             else {
-                                var E,
-                                    A = G(0);
-                                if (q < L(A)) E = !0;
+                                var A,
+                                    D = H(0);
+                                if (q < k(D)) A = !0;
                                 else {
-                                    var x = G(65535);
-                                    E = q > L(x);
+                                    var x = H(65535);
+                                    A = q > k(x);
                                 }
-                                if (E) throw H("Invalid Char code: " + q);
+                                if (A) throw P("Invalid Char code: " + q);
                                 var S = F(q);
                                 a.a9(S);
                             }
-                            return (((((((2 + c) | 0) - o) | 0) + (l ? 1 : 0)) | 0) + (f ? 1 : 0)) | 0;
+                            return (((((((2 + n) | 0) - o) | 0) + (l ? 1 : 0)) | 0) + (b ? 1 : 0)) | 0;
                         }
                         return 0;
                     }),
-                    (d(de).bbk = function (e, r) {
+                    (d(de).ebn = function (e, r) {
                         return new me(M(e, r), !0);
                     }),
-                    (d(me).obk = function (e, r) {
-                        return this.vbk_1 === this.ubk_1.nl(e) && (r.z8("&#"), r.z8(Y(e, 10)), r.a9(G(59)), !0);
+                    (d(me).rbn = function (e, r) {
+                        return this.ybn_1 === this.xbn_1.nl(e) && (r.z8("&#"), r.z8(Y(e, 10)), r.a9(H(59)), !0);
                     }),
-                    (d(he).obk = function (e, r) {
+                    (d(he).rbn = function (e, r) {
                         var a,
-                            t = G(55296);
-                        if (e >= L(t)) {
-                            var o = G(57343);
-                            a = e <= L(o);
+                            t = H(55296);
+                        if (e >= k(t)) {
+                            var o = H(57343);
+                            a = e <= k(o);
                         } else a = !1;
                         return a;
                     }),
-                    (d(fe).tbk = function (e) {
+                    (d(be).wbn = function (e) {
                         var r;
                         if (
                             (function (e, r) {
@@ -2921,12 +2921,12 @@
                             )
                                 throw J();
                             var a = Z(2);
-                            be(0, e, a, 0), (r = a);
+                            fe(0, e, a, 0), (r = a);
                         }
                         return r;
                     }),
-                    (c = new de()),
-                    (n = new fe()),
+                    (n = new de()),
+                    (c = new be()),
                     (e.$_$ = e.$_$ || {}),
                     (e.$_$.a = function () {
                         return null == t && new ae(), t;
@@ -2935,4 +2935,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-170d59ab.19081d0a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-170d59ab.9b10d43a.js.map
