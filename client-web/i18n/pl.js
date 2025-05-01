@@ -1348,8 +1348,6 @@
                 }),
                 i("i47ad24c", "Nie przestawaj! Im więcej wpisów polubisz, tym lepsza będzie Twoja oś czasu."),
                 i("def4a37c", "Dobra robota! Twoja oś czasu wygląda coraz lepiej. Im więcej polubień dodasz, tym lepsza będzie Twoja oś czasu. Jeśli coś Cię zainteresuje, pamiętaj, aby to polubić."),
-                i("bcab06d2", "Polubiono wpis"),
-                i("i5efe23e", "Anulowano polubienie wpisu"),
                 i("f5d17674", "Wpis został podany dalej"),
                 i("d714acfa", "Anulowano podanie dalej wpisu"),
                 i("b18dff26", "Tylko subskrybenci mogą zobaczyć ten podany dalej wpis"),
@@ -1918,10 +1916,10 @@
                 i("a330771e", "Kopiuj link do schowka"),
                 i("b6510e68", "Skopiuj adres URL artykułu, co umożliwi Ci udostępnienie go."),
                 i("e4a6e006", "Coś poszło nie tak. Spróbuj ponownie."),
-                i("eff483e0", "Po opublikowaniu pobierz link, aby udostępnić artykuł.");
-            i("ca15dd4e", "Szkic"),
-                i("bb40bf66", "Opublikowano"),
-                i("h107935c", "Ostatnio zapisano przed chwilą"),
+                i("eff483e0", "Po opublikowaniu pobierz link, aby udostępnić artykuł."),
+                i("ca15dd4e", "Szkic"),
+                i("bb40bf66", "Opublikowano");
+            i("h107935c", "Ostatnio zapisano przed chwilą"),
                 i("a753a870", "Zastosuj"),
                 i("afccc67e", "Kopiuj link do artykułu"),
                 i("beb24e9e", "Adres URL został skopiowany do schowka"),
@@ -2970,10 +2968,10 @@
                 i("c6f58084", "Deweloperzy"),
                 i("d83f18d2", "Ścieżka"),
                 i("hc5aa17c", "Pobierz aplikację X"),
-                i("j0693948", "Pobierz aplikację Grok");
-            i("fbf83158", "Ostrzeżenie: realizacja płatności nie powiodła się"),
-                i("jadeb4da", "Jak najszybciej zaktualizuj swoją metodę płatności, zanim stracisz korzyści związane z subskrypcją."),
-                i("bce3726a", "Aktualizuj rozliczenie"),
+                i("j0693948", "Pobierz aplikację Grok"),
+                i("fbf83158", "Ostrzeżenie: realizacja płatności nie powiodła się"),
+                i("jadeb4da", "Jak najszybciej zaktualizuj swoją metodę płatności, zanim stracisz korzyści związane z subskrypcją.");
+            i("bce3726a", "Aktualizuj rozliczenie"),
                 i("fce9ecce", "Sugerowane filmy"),
                 i("efe6ef9e", "Wyświetl wpis"),
                 i("b3d183ce", "Wpis z odpowiedziami"),
@@ -3886,12 +3884,12 @@
                 i("d7357e7e", "Usuń z grona współhostów"),
                 i("bf307fc0", "Zablokuj i usuń"),
                 i("ccf2f24e", "Zgłoszenie"),
-                i("i22835de", "Akceptuj");
-            i("cb59a0fe", "Odrzuć"),
-                i("c2376960", "Prośby o głos"),
-                i("aba7dcdd", function (e) {
-                    return "Zaproś użytkownika " + e.name;
-                }),
+                i("i22835de", "Akceptuj"),
+                i("cb59a0fe", "Odrzuć"),
+                i("c2376960", "Prośby o głos");
+            i("aba7dcdd", function (e) {
+                return "Zaproś użytkownika " + e.name;
+            }),
                 i("f5c7aaa7", function (e) {
                     return "ho" + n(e.count, "ści", "stów", "st", "sta");
                 }),
@@ -4918,10 +4916,10 @@
                 i("a7b48b36", "Odsetek wyświetleń filmów, podczas których obejrzano cały film."),
                 i("a2580f2a", "Liczba pełnych wyświetleń"),
                 i("ff95a9cc", "Identyfikator filmu"),
-                i("a97e358e", "Link do filmu");
-            i("e10e8b46", "Pokazywane są tylko filmy z ostatnich 100 dni."),
-                i("ba37f6da", "Przegląd filmu"),
-                i("f19846b2", "Miniatura filmu"),
+                i("a97e358e", "Link do filmu"),
+                i("e10e8b46", "Pokazywane są tylko filmy z ostatnich 100 dni."),
+                i("ba37f6da", "Przegląd filmu");
+            i("f19846b2", "Miniatura filmu"),
                 i("ccd6f4a8", "Tytuł filmu"),
                 i("c8410542", "Liczba wyświetleń Twojego filmu."),
                 i("a532072a", "Oglądający"),
@@ -5874,14 +5872,14 @@
                 i("a0ea2fa6", "Pole z nazwą nie może być puste"),
                 i("eec37eac", "Folder Zakładek o tej nazwie już istnieje"),
                 i("fce0c59e", "Nie udało się otworzyć pliku animacji JSON. Sprawdź format pliku animacji JSON i spróbuj ponownie."),
-                i("g0eea6c2", "Nie udało się odczytać pliku animacji JSON. Spróbuj ponownie otworzyć plik.");
-            i("ae58026a", "Otwórz plik spersonalizowanego polubienia .json, aby zobaczyć podgląd"),
+                i("g0eea6c2", "Nie udało się odczytać pliku animacji JSON. Spróbuj ponownie otworzyć plik."),
+                i("ae58026a", "Otwórz plik spersonalizowanego polubienia .json, aby zobaczyć podgląd"),
                 i("hd0bc1eb", function (e) {
                     return e.name + " transmituje na żywo";
-                }),
-                i("bea1f26b", function (e) {
-                    return e.name + " transmitował/a na żywo";
-                }),
+                });
+            i("bea1f26b", function (e) {
+                return e.name + " transmitował/a na żywo";
+            }),
                 i("ab3ee97f", function (e) {
                     return e.screenName + " nie transmituje na żywo";
                 }),
@@ -6882,10 +6880,10 @@
                 i("fdd77a34", "Twórz dłuższe wpisy"),
                 i("j6d26a7a", "Pisz tyle, ile chcesz udostępnić"),
                 i("c4fd68da", "Dostosuj swoje środowisko"),
-                i("c0195168", "Zmień ikonę aplikacji i opcje nawigacji");
-            i("b6b5dc94", "Uzyskaj weryfikację"),
-                i("b06db848", "Wyróżniaj się spośród innych użytkowników platformy"),
-                i("e3e3a97c", "Miej udział w dochodach generowanych przez Twoje wpisy"),
+                i("c0195168", "Zmień ikonę aplikacji i opcje nawigacji"),
+                i("b6b5dc94", "Uzyskaj weryfikację"),
+                i("b06db848", "Wyróżniaj się spośród innych użytkowników platformy");
+            i("e3e3a97c", "Miej udział w dochodach generowanych przez Twoje wpisy"),
                 i("f15bc24e", "Zwiększone limity Groka"),
                 i("c4666e1c", "Więcej możliwości używania naszego najnowszego modelu Grok 3"),
                 i("he74ae7a", "Najwyższe limity użycia Groka"),
@@ -7858,7 +7856,9 @@
                 i("h37f2d96", "Pamiętaj, że nie wszystkie systemy śledzenia osób aplikujących są aktualnie obsługiwane."),
                 i("ce102a20", "Przekierowywanie do usługi Stripe"),
                 i("ddfd6718", "Realizacja płatności nie powiodła się"),
-                i("i90ea7d2", "Jak najszybciej zaktualizuj swoje rozliczenie, aby nie stracić korzyści.");
+                i("i90ea7d2", "Jak najszybciej zaktualizuj swoje rozliczenie, aby nie stracić korzyści."),
+                i("a62359e6", "Ustawienia zweryfikowanej organizacji"),
+                i("ge221b7c", "Podnieś poziom subskrypcji programu Zweryfikowane Organizacje, aby móc korzystać z kont powiązanych oraz otrzymać więcej kredytów reklamowych.");
             function t(e, a) {
                 for (var o = 0; o < a.length; o++) {
                     var i = a[o];
@@ -7897,9 +7897,7 @@
                     c(e, a)
                 );
             }
-            i("a62359e6", "Ustawienia zweryfikowanej organizacji"),
-                i("ge221b7c", "Podnieś poziom subskrypcji programu Zweryfikowane Organizacje, aby móc korzystać z kont powiązanych oraz otrzymać więcej kredytów reklamowych."),
-                i("i4dccc18", "Rachunki"),
+            i("i4dccc18", "Rachunki"),
                 i("ec3cd6e4", "Zarządzaj sposobem płatności, aktualizuj informacje dotyczące rozliczeń i przeglądaj faktury."),
                 i("dac61c3c", "Ustawienia konta"),
                 i("b6b5fd66", "Zarządzaj swoim kontem w serwisie X (obejmuje to możliwość zmiany nazwy użytkownika lub hasła)."),
@@ -8900,12 +8898,12 @@
                 i("d1386940", "Bądź na bieżąco"),
                 i("ecda5f9e", "Wprowadza w błąd"),
                 i("a423473c", "Informacja wymagana prawnie"),
-                i("b3296688", "Ograniczona widoczność");
-            i("ccd32094", "Teraz"),
+                i("b3296688", "Ograniczona widoczność"),
+                i("ccd32094", "Teraz"),
                 i("abfcce0d", function (e) {
                     return e.amountOfTime + " temu";
-                }),
-                i("ae408b76", "Podano dalej"),
+                });
+            i("ae408b76", "Podano dalej"),
                 i("j355f008", "Przypięty wpis"),
                 i("habf9678", "Przypięty przez autora"),
                 i("db0798ed", function (e) {
@@ -13221,4 +13219,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.f3e8427a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.51b4335a.js.map

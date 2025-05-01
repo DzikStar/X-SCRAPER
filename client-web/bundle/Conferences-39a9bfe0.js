@@ -130,7 +130,7 @@
                         try {
                             return await J().client.calendar.events.list(n);
                         } catch (t) {
-                            J().client.setToken(null), e(k.F6).deleteCalendarToken();
+                            J().client.setToken(null), 401 === t.status && e(k.F6).deleteCalendarToken();
                         }
                     }
                 }),
@@ -538,4 +538,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Conferences-39a9bfe0.a4552ffa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Conferences-39a9bfe0.7e6cf3aa.js.map

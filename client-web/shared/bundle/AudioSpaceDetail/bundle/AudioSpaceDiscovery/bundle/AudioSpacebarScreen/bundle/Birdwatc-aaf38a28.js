@@ -136,9 +136,10 @@
             };
         },
         244448: (e, t, a) => {
-            a.d(t, { GZ: () => n.GZ, mQ: () => i.Z, tJ: () => n.tJ, vz: () => n.vz });
+            a.d(t, { GZ: () => n.GZ, mQ: () => i.Z, q3: () => r.q3, tJ: () => n.tJ, vz: () => n.vz });
             var i = a(498348),
-                n = a(122883);
+                n = a(122883),
+                r = a(511799);
         },
         801102: (e, t, a) => {
             a.d(t, { Z: () => r });
@@ -453,7 +454,7 @@
             }
         },
         746066: (e, t, a) => {
-            a.d(t, { Z: () => s });
+            a.d(t, { Z: () => c });
             var i = a(202784),
                 n = a(801102),
                 r = a(608222),
@@ -464,22 +465,27 @@
                     s = e.action("next"),
                     c = e.strDict("errors"),
                     { setErrors: d } = (0, i.useContext)(l.q3),
-                    _ = (0, o.Z)((e) => {
+                    _ = (0, o.Z)(() => {
                         s && s(), c && d(c);
-                        const t = (0, n.Z)(e),
+                        const e = (0, n.Z)(t),
                             i = a?.Runtime?.ui?.toast;
-                        t && t.length > 0 && i && i({ text: t });
-                    });
+                        e && e.length > 0 && i && i({ text: e });
+                    }),
+                    m = (0, i.useRef)(!1);
                 return (
                     (0, i.useEffect)(() => {
-                        _(t);
-                    }, [t, _]),
+                        m.current || ((m.current = !0), _());
+                    }, [_]),
                     null
                 );
             }
+            function c(e) {
+                const { submissionKey: t } = (0, i.useContext)(l.q3);
+                return (0, i.createElement)(s, { ...e, key: t });
+            }
         },
         173590: (e, t, a) => {
-            a.d(t, { Z: () => p });
+            a.d(t, { Z: () => f });
             var i = a(552322),
                 n = a(202784),
                 r = a(801102),
@@ -489,82 +495,84 @@
                 c = a(644109),
                 d = a(916025),
                 _ = a(830030),
-                m = a(910352),
-                u = a(511799);
-            function p({ el: e, p: t, mods: a }) {
-                const p = (0, s.o)(),
-                    f = t.url("action") ?? "",
-                    h = t.strDict("errors"),
-                    g = t.url("validation"),
-                    k = t.str("submissionStatus") ?? "pending",
-                    [v, b] = (0, n.useState)(() => t.strDict("values") ?? {}),
-                    [w, x] = (0, n.useState)(),
-                    [y, E] = (0, n.useState)(g ? "ongoing" : "pending"),
-                    S = (0, m.Z)((e) => {
+                m = a(770688),
+                u = a(910352),
+                p = a(511799);
+            function f({ el: e, p: t, mods: a }) {
+                const f = (0, s.o)(),
+                    h = t.url("action") ?? "",
+                    g = t.strDict("errors"),
+                    k = t.url("validation"),
+                    v = t.str("submissionStatus") ?? "pending",
+                    [b, w] = (0, n.useState)(() => t.strDict("values") ?? {}),
+                    [x, y] = (0, n.useState)(),
+                    [E, S] = (0, n.useState)(),
+                    [C, j] = (0, n.useState)(k ? "ongoing" : "pending"),
+                    N = (0, u.Z)((e) => {
                         t.setStrDict("errors", e);
                     }),
-                    C = (0, m.Z)((e) => {
+                    I = (0, u.Z)((e) => {
                         t.setStr("focus", e);
                     }),
-                    j = (0, m.Z)((e) => {
+                    Z = (0, u.Z)((e) => {
                         t.setStrDict("values", (0, _.e)(e));
                     }),
-                    N = (0, m.Z)((e) => {
+                    R = (0, u.Z)((e) => {
                         t.setStr("submissionStatus", e), t.setBool("submitting", "ongoing" === e);
                     }),
-                    I = (e) => {
-                        E(e), t.setBool("validating", "ongoing" === e);
+                    T = (e) => {
+                        j(e), t.setBool("validating", "ongoing" === e);
                     },
-                    Z = (0, m.Z)(async () => {
-                        if ("ongoing" !== k && f) {
-                            N("ongoing");
-                            const e = p?.Runtime;
+                    A = (0, u.Z)(async () => {
+                        if ("ongoing" !== v && h) {
+                            R("ongoing"), S((0, m.h)()), y(void 0);
+                            const e = f?.Runtime;
                             if (e)
                                 try {
-                                    const { ok: t, data: a } = await e.net.httpPOST(f, new Map(Object.entries(v)));
+                                    const { ok: t, data: a } = await e.net.httpPOST(h, new Map(Object.entries(b)));
                                     if (t && a) {
                                         const t = (0, l.KM)(e, new Uint8Array(a));
-                                        x(t.root.value), N("success");
-                                    } else N("error");
+                                        y(t.root.value), R("success");
+                                    } else R("error");
                                 } catch (e) {
-                                    N("error");
+                                    R("error");
                                 }
                         }
                     }),
-                    R = (0, m.Z)((e, t) => {
-                        b((a) => ({ ...a, [e]: t })), N("pending"), I("pending"), x(void 0);
+                    P = (0, u.Z)((e, t) => {
+                        w((a) => ({ ...a, [e]: t })), R("pending"), T("pending"), y(void 0);
                     }),
-                    T = (0, n.useRef)(v);
+                    M = (0, n.useRef)(b);
                 (0, n.useLayoutEffect)(() => {
-                    T.current = v;
-                }, [v]);
-                const A = (0, m.Z)((e, t) => {
-                        I("ongoing");
-                        const a = p?.Runtime;
+                    M.current = b;
+                }, [b]);
+                const L = (0, u.Z)((e, t) => {
+                        T("ongoing");
+                        const a = f?.Runtime;
                         a &&
                             a.net
-                                .httpPOST(t, new Map(Object.entries(v)))
+                                .httpPOST(t, new Map(Object.entries(b)))
                                 .then(({ ok: t, data: a }) => {
-                                    if (T.current === e)
+                                    if (M.current === e)
                                         if (t && a) {
                                             const e = JSON.parse(new TextDecoder().decode(a));
-                                            (0, d.x)(e) ? (S({}), I("success")) : (S(e), I("failure"));
-                                        } else S({}), I("success");
+                                            (0, d.x)(e) ? (N({}), T("success")) : (N(e), T("failure"));
+                                        } else N({}), T("success");
                                 })
                                 .catch(() => {
-                                    I("error");
+                                    T("error");
                                 });
                     }),
-                    P = (0, n.useMemo)(() => (0, c.D)(A, 500), [A]);
+                    $ = (0, n.useMemo)(() => (0, c.D)(L, 500), [L]);
                 (0, n.useEffect)(() => {
-                    g && P(v, g);
-                }, [P, v, g]);
-                const M = (0, n.useMemo)(() => (g ? "success" === y : !!f && ("pending" === k || "error" === k)), [k, y, g, f]);
+                    k && $(b, k);
+                }, [$, b, k]);
+                const D = (0, n.useMemo)(() => (k ? "success" === C : !!h && ("pending" === v || "error" === v)), [v, C, k, h]);
                 return (
                     (0, n.useEffect)(() => {
-                        j(v);
-                    }, [v, j]),
-                    (0, i.jsxs)(u.q3.Provider, { value: { values: v, submit: Z, change: R, submissionResult: w, submissionStatus: k, validationStatus: y, errors: h, setErrors: S, setFocus: C, canSubmit: M }, children: [(0, i.jsx)("div", { className: a, children: (0, r.Z)(e) }), w && (0, i.jsx)(o.Z, { el: w })] })
+                        Z(b);
+                    }, [b, Z]),
+                    (0, i.jsxs)(p.q3.Provider, { value: { values: b, submit: A, change: P, submissionResult: x, submissionKey: E, submissionStatus: v, validationStatus: C, errors: g, setErrors: N, setFocus: I, canSubmit: D }, children: [(0, i.jsx)("div", { className: a, children: (0, r.Z)(e) }), x && (0, i.jsx)(o.Z, { el: x })] })
                 );
             }
         },
@@ -597,38 +605,39 @@
             }
         },
         166490: (e, t, a) => {
-            a.d(t, { Z: () => o });
+            a.d(t, { Z: () => l });
             var i = a(552322),
                 n = a(202784),
-                r = a(511799);
-            function o({ p: e, mods: t }) {
+                r = a(511799),
+                o = a(695301);
+            function l({ p: e, mods: t }) {
                 const a = e.str("name") ?? "",
-                    o = e.str("label") ?? "",
-                    l = e.str("value") ?? "",
-                    s = e.bool("autofocus") ?? !1,
-                    c = e.enum("type") ?? r.n$.text,
-                    { change: d, setFocus: _, values: m } = (0, n.useContext)(r.q3),
-                    u = c === r.n$.growing_text,
-                    p = (0, n.useCallback)(
+                    l = e.str("label") ?? "",
+                    s = e.str("value") ?? "",
+                    c = e.bool("autofocus") ?? !1,
+                    d = e.enum("type") ?? r.n$.text,
+                    { change: _, setFocus: m, values: u } = (0, n.useContext)(r.q3),
+                    p = d === r.n$.growing_text,
+                    f = (0, n.useCallback)(
                         (e) => {
-                            c === r.n$.date && e.currentTarget.value ? d(a, new Date(e.currentTarget.value).toISOString()) : d(a, e.currentTarget.value);
+                            d === r.n$.date && e.currentTarget.value ? _(a, new Date(e.currentTarget.value).toISOString()) : _(a, (0, o.J)(d, e.currentTarget.value));
                         },
-                        [a, d, c],
+                        [a, _, d],
                     );
                 (0, n.useEffect)(() => {
-                    l && d(a, l);
-                }, [a, l, d]);
-                const f = (0, n.useCallback)(() => {
-                        _(a);
-                    }, [a, _]),
-                    h = (0, n.useCallback)(() => {
-                        _("");
-                    }, [_]),
-                    g = (0, r.Jt)(c),
-                    k = m[a] ?? l,
-                    v = (0, r.VD)(c),
-                    b = "date" === v ? new Date(k).toLocaleDateString("en-CA").padStart(10, "0") : k;
-                return u ? (0, i.jsx)("textarea", { autoFocus: s, name: a, onBlur: h, className: `placeholder:text-gray-500 ${t}`, onChange: p, onFocus: f, placeholder: o, value: k }) : (0, i.jsx)("input", { type: v, autoFocus: s, inputMode: g, name: a, onBlur: h, className: `placeholder:text-gray-500 ${t}`, onChange: p, onFocus: f, placeholder: o, value: b });
+                    s && _(a, s);
+                }, [a, s, _]);
+                const h = (0, n.useCallback)(() => {
+                        m(a);
+                    }, [a, m]),
+                    g = (0, n.useCallback)(() => {
+                        m("");
+                    }, [m]),
+                    k = (0, r.Jt)(d),
+                    v = u[a] ?? s,
+                    b = (0, r.VD)(d),
+                    w = (0, o.m)(d, v);
+                return p ? (0, i.jsx)("textarea", { autoFocus: c, name: a, onBlur: g, className: `placeholder:text-gray-500 ${t}`, onChange: f, onFocus: h, placeholder: l, value: v }) : (0, i.jsx)("input", { type: b, autoFocus: c, inputMode: k, name: a, onBlur: g, className: `placeholder:text-gray-500 ${t}`, onChange: f, onFocus: h, placeholder: l, value: w });
             }
         },
         161276: (e, t, a) => {
@@ -671,10 +680,10 @@
                     c = e.bool("autofocus") ?? !1,
                     d = e.bool("autosubmit") ?? !1,
                     { change: _, submit: m, values: u } = (0, n.useContext)(o.q3),
-                    p = u.code ?? "",
+                    p = u[l] ?? "",
                     f = (0, n.useCallback)(
                         (t) => {
-                            _(l, t), e.setStrDict(l, Object(Array.from(t)));
+                            _(l, t), e.setStrDict("code", Object(Array.from(t)));
                         },
                         [_, l, e],
                     ),
@@ -717,6 +726,41 @@
                     }, []),
                     (0, i.jsxs)("div", { className: `relative ${a}`, ref: j, children: [(0, r.Z)(t), (0, i.jsx)("div", { className: "absolute left-0 top-0 right-0 bottom-0 flex flex-row", style: { gap: v, width: y, paddingLeft: S }, children: Array.from({ length: s }).map((e, t) => (0, i.jsx)("input", { maxLength: s, inputMode: "numeric", onChange: (e) => g(e, t), autoFocus: c && 0 === t, onKeyDown: k, ref: h[t], value: p[t] ?? "", className: "min-w-0 outline-none text-center caret-text bg-transparent text-transparent", style: { width: w } }, t)) })] })
                 );
+            }
+        },
+        631389: (e, t, a) => {
+            a.d(t, { Z: () => l });
+            var i = a(552322),
+                n = a(202784),
+                r = a(511799),
+                o = a(695301);
+            function l({ p: e, mods: t }) {
+                const a = e.str("name") ?? "",
+                    l = e.str("label") ?? "",
+                    s = e.str("value") ?? "",
+                    c = e.bool("autofocus") ?? !1,
+                    d = e.enum("type") ?? r.n$.text,
+                    { change: _, setFocus: m, values: u } = (0, n.useContext)(r.q3),
+                    p = (0, n.useCallback)(
+                        (e) => {
+                            _(a, (0, o.J)(d, e.currentTarget.value));
+                        },
+                        [a, _, d],
+                    );
+                (0, n.useEffect)(() => {
+                    s && _(a, s);
+                }, [a, s, _]);
+                const f = (0, n.useCallback)(() => {
+                        m(a);
+                    }, [a, m]),
+                    h = (0, n.useCallback)(() => {
+                        m("");
+                    }, [m]),
+                    g = u[a] ?? s,
+                    k = (0, r.VD)(d),
+                    v = (0, r.Jt)(d),
+                    b = (0, o.m)(d, g);
+                return r.zK.includes(d) ? (0, i.jsx)("textarea", { autoFocus: c, name: a, onBlur: h, className: `placeholder:text-gray-500 ${t}`, onChange: p, onFocus: f, placeholder: l, value: b }) : (0, i.jsx)("input", { type: k, autoFocus: c, inputMode: v, name: a, onBlur: h, className: `placeholder:text-gray-500 bg-transparent ${t}`, onChange: p, onFocus: f, placeholder: l, value: b });
             }
         },
         723395: (e, t, a) => {
@@ -977,7 +1021,7 @@
                     (0, n.useEffect)(() => {
                         f(a, b.dial_code + o(g));
                     }, [f, b, a, g]),
-                    (0, i.jsxs)("div", { className: `flex flex-row items-center gap-1 ${t}`, children: [(0, i.jsxs)("div", { className: "items-end relative", children: [(0, i.jsx)("div", { className: "pe-2 text-blue-500 " + (u ? "text-text" : ""), children: b.dial_code }), (0, i.jsx)("select", { disabled: u, onChange: E, value: b.name, className: "absolute top-0 left-0 w-full h-full opacity-0", children: y.map((e) => (0, i.jsxs)("option", { value: e.name, children: [e.name, "(", e.dial_code, ")"] }, e.name)) })] }), (0, i.jsx)("input", { autoFocus: p, inputMode: "tel", maxLength: b.limit, name: a, onChange: v, placeholder: d || b.pattern, className: "flex-grow", value: x })] })
+                    (0, i.jsxs)("div", { className: `flex flex-row items-center gap-1 ${t}`, children: [(0, i.jsxs)("div", { className: "items-end relative", children: [(0, i.jsx)("div", { className: "pe-2 text-blue-500 " + (u ? "text-text" : ""), children: b.dial_code }), (0, i.jsx)("select", { disabled: u, onChange: E, value: b.name, className: "absolute top-0 left-0 w-full h-full opacity-0", children: y.map((e) => (0, i.jsxs)("option", { value: e.name, children: [e.name, "(", e.dial_code, ")"] }, e.name)) })] }), (0, i.jsx)("input", { autoFocus: p, inputMode: "tel", maxLength: b.limit, name: a, onChange: v, placeholder: d || b.pattern, className: "flex-grow bg-transparent", value: x })] })
                 );
             }
         },
@@ -1008,11 +1052,12 @@
             }
         },
         511799: (e, t, a) => {
-            a.d(t, { Jt: () => o, VD: () => l, ZB: () => s, n$: () => r, q3: () => n });
+            a.d(t, { Jt: () => l, VD: () => s, ZB: () => c, n$: () => r, q3: () => n, zK: () => o });
             var i = a(202784);
-            const n = (0, i.createContext)({ values: {}, submit: () => {}, setErrors: () => {}, change: (e, t) => {}, errors: {}, setFocus: () => {}, submissionStatus: "pending", submissionResult: void 0, validationStatus: "pending", canSubmit: !1 }),
+            const n = (0, i.createContext)({ values: {}, submit: () => {}, setErrors: () => {}, change: (e, t) => {}, errors: {}, setFocus: () => {}, submissionStatus: "pending", submissionResult: void 0, validationStatus: "pending", submissionKey: void 0, canSubmit: !1 }),
                 r = { text: 0, password: 1, email: 2, number: 3, username: 4, tel: 5, url: 6, auth_code: 7, hidden: 8, growing_text: 9, date: 10 },
-                o =
+                o = [r.text, r.email, r.username, r.url, r.growing_text],
+                l =
                     ((0, i.createContext)({ groupKeys: new Set(), active: new Set(), register: (e) => {} }),
                     (e) => {
                         switch (e) {
@@ -1035,7 +1080,7 @@
                                 return "text";
                         }
                     }),
-                l = (e) => {
+                s = (e) => {
                     switch (e) {
                         case r.password:
                             return "password";
@@ -1059,7 +1104,22 @@
                             return "text";
                     }
                 },
-                s = (0, i.createContext)(null);
+                c = (0, i.createContext)(null);
+        },
+        695301: (e, t, a) => {
+            a.d(t, { J: () => r, m: () => n });
+            var i = a(511799);
+            const n = (e, t) => {
+                    switch (e) {
+                        case i.n$.date:
+                            return new Date(t).toLocaleDateString("en-CA").padStart(10, "0");
+                        case i.n$.username:
+                            return "@" === t[0] ? t : `@${t}`;
+                        default:
+                            return t;
+                    }
+                },
+                r = (e, t) => (e === i.n$.username ? t.replace("@", "") : t);
         },
         971668: (e, t, a) => {
             a.d(t, { Z: () => l });
@@ -2023,4 +2083,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-aaf38a28.9dbf7caa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-aaf38a28.a49b302a.js.map

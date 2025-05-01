@@ -10,16 +10,16 @@
                 o = a(579578);
             const l = ({ children: e, overrideStyles: t, props: a, scribeContext: l, style: s }) => {
                 const c = a.action("on:press"),
-                    _ = a.action("on:longpress"),
-                    d = a.bool("disabled") ?? !1,
-                    m = i.useRef(),
+                    d = a.action("on:longpress"),
+                    m = a.bool("disabled") ?? !1,
+                    _ = i.useRef(),
                     p = (0, n.Z)(),
                     u = i.useCallback(() => {
-                        _ && _();
+                        d && d();
                         const e = a.strDict("scribe:longpress") ?? {},
                             t = (0, o.Q)("longpress", { ...l, ...e });
                         p.scribe(t);
-                    }, [_, l, p, a]),
+                    }, [d, l, p, a]),
                     f = i.useCallback(() => {
                         c && c();
                         const e = a.strDict("scribe:press") ?? {},
@@ -27,12 +27,12 @@
                         p.scribe(t);
                     }, [c, l, p, a]),
                     h = i.useCallback(() => {
-                        clearTimeout(m.current), (m.current = setTimeout(u, 500));
+                        clearTimeout(_.current), (_.current = setTimeout(u, 500));
                     }, [u]),
                     g = i.useCallback(() => {
-                        clearTimeout(m.current);
+                        clearTimeout(_.current);
                     }, []);
-                return i.useEffect(() => () => clearTimeout(m.current), []), i.createElement(r.Z, { disabled: d, interactiveStyles: { hoverStyle: t.hover, pressedStyle: t.active }, onPress: f, onPressIn: h, onPressOut: g, style: [{ flexShrink: 1 }, s] }, e);
+                return i.useEffect(() => () => clearTimeout(_.current), []), i.createElement(r.Z, { disabled: m, interactiveStyles: { hoverStyle: t.hover, pressedStyle: t.active }, onPress: f, onPressIn: h, onPressOut: g, style: [{ flexShrink: 1 }, s] }, e);
             };
         },
         620740: (e, t, a) => {
@@ -60,45 +60,45 @@
                 l = a(682830),
                 s = a(167630),
                 c = a(731708),
-                _ = a(392237),
-                d = a(738124),
-                m = a(313129);
+                d = a(392237),
+                m = a(738124),
+                _ = a(313129);
             const p = ({ header: e, scribeContext: t, src: a }) => {
-                    const [l, _] = i.useState(!1),
+                    const [l, d] = i.useState(!1),
                         [p, f] = i.useState([]),
                         [h, g] = i.useState(null),
                         [k, b] = i.useState(null),
                         y = i.useMemo(() => (h ? `/${a}?cursor=${h}` : `/${a}`), [a, h]),
-                        { error: v, jfResponse: w } = (0, m._3)(y) ?? {},
-                        C = i.useMemo(() => {
+                        { error: v, jfResponse: w } = (0, _._3)(y) ?? {},
+                        x = i.useMemo(() => {
                             const e = w?.root?.value,
                                 { children: t } = e ?? {};
                             return t?.map((t) => e?.dom.el(t)) ?? [];
                         }, [w]);
                     i.useEffect(() => {
-                        C.length > 0 &&
+                        x.length > 0 &&
                             (f((e) => {
                                 switch (k) {
                                     case "top":
-                                        return [...C, ...e];
+                                        return [...x, ...e];
                                     case "bottom":
-                                        return [...e, ...C];
+                                        return [...e, ...x];
                                     default:
-                                        return C;
+                                        return x;
                                 }
                             }),
                             b(null),
-                            _(!1));
-                    }, [C, l, k]);
-                    const x = i.useCallback(({ item: e }) => i.createElement(d.Z, { parentContext: t, payload: e }), [t]),
-                        E = i.useCallback((e, t) => `${e.type}-${t}`, []),
-                        S = i.useCallback(() => (e ? i.createElement(d.Z, { payload: e }) : null), [e]),
+                            d(!1));
+                    }, [x, l, k]);
+                    const E = i.useCallback(({ item: e }) => i.createElement(m.Z, { parentContext: t, payload: e }), [t]),
+                        C = i.useCallback((e, t) => `${e.type}-${t}`, []),
+                        S = i.useCallback(() => (e ? i.createElement(m.Z, { payload: e }) : null), [e]),
                         Z = i.useCallback(() => ("bottom" === k ? i.createElement(o.Z, { style: u.footer }, i.createElement(s.Z, { size: "small" })) : null), [k]),
                         P = i.useCallback(() => {}, [null, l]),
                         R = i.useCallback(() => {}, [null, l]);
-                    return v ? i.createElement(c.ZP, { style: u.error }, v) : i.createElement(r.Z, { ListFooterComponent: Z, ListHeaderComponent: S, data: p, keyExtractor: E, onEndReached: R, onEndReachedThreshold: 0.1, refreshControl: i.createElement(n.Z, { onRefresh: P, refreshing: l && "top" === k }), renderItem: x });
+                    return v ? i.createElement(c.ZP, { style: u.error }, v) : i.createElement(r.Z, { ListFooterComponent: Z, ListHeaderComponent: S, data: p, keyExtractor: C, onEndReached: R, onEndReachedThreshold: 0.1, refreshControl: i.createElement(n.Z, { onRefresh: P, refreshing: l && "top" === k }), renderItem: E });
                 },
-                u = _.default.create({ footer: { padding: 10, justifyContent: "center", alignItems: "center" }, error: { color: "red", textAlign: "center", marginTop: 20 } }),
+                u = d.default.create({ footer: { padding: 10, justifyContent: "center", alignItems: "center" }, error: { color: "red", textAlign: "center", marginTop: 20 } }),
                 f = ({ props: e, scribeContext: t, style: a }) => {
                     const r = e.str("src"),
                         n = e.element("header");
@@ -106,7 +106,7 @@
                 };
         },
         684799: (e, t, a) => {
-            a.d(t, { It: () => v, WD: () => b, ZN: () => y, q3: () => k, rm: () => x, yH: () => w });
+            a.d(t, { It: () => v, WD: () => b, ZN: () => y, q3: () => k, rm: () => E, yH: () => w });
             var i = a(202784),
                 r = a(400752),
                 n = a(325686),
@@ -114,9 +114,9 @@
                 l = a(682830),
                 s = a(392237),
                 c = a(401388),
-                _ = a(666536),
-                d = a(403808),
-                m = a(738124),
+                d = a(666536),
+                m = a(403808),
+                _ = a(738124),
                 p = a(420182),
                 u = a(782642),
                 f = a(313129),
@@ -131,64 +131,64 @@
                         y = (0, g.m)(),
                         v = t.url("action") ?? "",
                         w = t.strDict("errors"),
-                        C = t.url("validation"),
-                        x = t.str("submissionStatus") ?? "pending",
+                        x = t.url("validation"),
+                        E = t.str("submissionStatus") ?? "pending",
                         [S, Z] = i.useState(() => ({})),
                         [P, R] = i.useState(),
-                        [T, A] = i.useState(C ? "ongoing" : "pending"),
-                        I = (0, d.r)((e) => {
+                        [T, I] = i.useState(x ? "ongoing" : "pending"),
+                        A = (0, m.r)((e) => {
                             t.setStrDict("errors", e);
                         }),
-                        M = (0, d.r)((e) => {
+                        M = (0, m.r)((e) => {
                             t.setStr("focus", e);
                         }),
-                        L = (0, d.r)((e) => {
+                        D = (0, m.r)((e) => {
                             t.setStrDict("values", e);
                         }),
-                        B = (0, d.r)((e) => {
+                        L = (0, m.r)((e) => {
                             t.setStr("submissionStatus", e), t.setBool("submitting", "ongoing" === e);
                         }),
-                        D = (e) => {
-                            A(e), t.setBool("validating", "ongoing" === e);
+                        B = (e) => {
+                            I(e), t.setBool("validating", "ongoing" === e);
                         },
-                        z = (0, d.r)(async () => {
-                            if ("ongoing" !== x && v) {
-                                B("ongoing");
+                        N = (0, m.r)(async () => {
+                            if ("ongoing" !== E && v) {
+                                L("ongoing");
                                 try {
                                     const { jfResponse: e } = await (0, f.wR)(v, S, b, l, u, !1, y);
-                                    e ? (R(e.root.value), B("success")) : B("error");
+                                    e ? (R(e.root.value), L("success")) : L("error");
                                 } catch (e) {
-                                    B("error");
+                                    L("error");
                                 }
                             }
                         }),
-                        G = (0, d.r)((e, t) => {
-                            Z((a) => ({ ...a, [e]: t })), B("pending"), D("pending"), R();
+                        G = (0, m.r)((e, t) => {
+                            Z((a) => ({ ...a, [e]: t })), L("pending"), B("pending"), R();
                         }),
-                        N = i.useRef(S);
+                        z = i.useRef(S);
                     i.useLayoutEffect(() => {
-                        N.current = S;
+                        z.current = S;
                     }, [S]);
-                    const q = (0, d.r)((e, t) => {
-                            D("ongoing"),
+                    const j = (0, m.r)((e, t) => {
+                            B("ongoing"),
                                 (0, f.kp)(t, e, b, l, u, !1)
                                     .then(({ jsonResponse: t }) => {
-                                        N.current === e && (t && !(0, c.Z)(t) ? (I(t), D("failure")) : (I({}), D("success")));
+                                        z.current === e && (t && !(0, c.Z)(t) ? (A(t), B("failure")) : (A({}), B("success")));
                                     })
                                     .catch(() => {
-                                        D("error");
+                                        B("error");
                                     });
                         }),
-                        j = i.useMemo(() => (0, _.Z)(q, 500), [q]);
+                        q = i.useMemo(() => (0, d.Z)(j, 500), [j]);
                     i.useEffect(() => {
-                        C && j(S, C);
-                    }, [j, S, C]);
-                    const H = i.useMemo(() => (C ? "success" === T : "pending" === x || "error" === x), [x, T, C]);
+                        x && q(S, x);
+                    }, [q, S, x]);
+                    const H = i.useMemo(() => (x ? "success" === T : "pending" === E || "error" === E), [E, T, x]);
                     return (
                         i.useEffect(() => {
-                            L(S);
-                        }, [S, L]),
-                        i.createElement(k.Provider, { value: { values: S, submit: z, change: G, submissionResult: P, submissionStatus: x, errors: w, setErrors: I, setFocus: M, canSubmit: H } }, i.createElement(n.Z, { style: [E.form, o] }, e), P && i.createElement(m.Z, { parentContext: a, payload: P }))
+                            D(S);
+                        }, [S, D]),
+                        i.createElement(k.Provider, { value: { values: S, submit: N, change: G, submissionResult: P, submissionStatus: E, errors: w, setErrors: A, setFocus: M, canSubmit: H } }, i.createElement(n.Z, { style: [C.form, o] }, e), P && i.createElement(_.Z, { parentContext: a, payload: P }))
                     );
                 },
                 y = ({ children: e, overrideStyles: t, props: a, style: r }) => {
@@ -201,8 +201,8 @@
                 v = ({ children: e, props: t, scribeContext: a, style: r }) => {
                     const o = t.element("loading"),
                         { submissionResult: l, submissionStatus: s } = i.useContext(k),
-                        c = o ? i.createElement(m.Z, { parentContext: a, payload: o }) : { children: e };
-                    return i.createElement(n.Z, { style: r }, "ongoing" === s && o ? c : "success" === s && l ? i.createElement(m.Z, { parentContext: a, payload: l }) : e);
+                        c = o ? i.createElement(_.Z, { parentContext: a, payload: o }) : { children: e };
+                    return i.createElement(n.Z, { style: r }, "ongoing" === s && o ? c : "success" === s && l ? i.createElement(_.Z, { parentContext: a, payload: l }) : e);
                 },
                 w = ({ children: e, props: t, scribeContext: a, style: r }) => {
                     const { values: n } = i.useContext(k),
@@ -213,13 +213,13 @@
                                 .map(([e, t]) => `${encodeURIComponent(e)}=${encodeURIComponent(t)}`)
                                 .join("&"))(n),
                         c = s ? `${o}${o.includes("?") ? "&" : "?"}${s}` : o;
-                    return i.createElement(i.Suspense, { fallback: i.createElement(l.J, null) }, i.createElement(C, { path: c }, e));
+                    return i.createElement(i.Suspense, { fallback: i.createElement(l.J, null) }, i.createElement(x, { path: c }, e));
                 },
-                C = ({ children: e, path: t }) => {
+                x = ({ children: e, path: t }) => {
                     const { jfResponse: a } = (0, f.Q_)(t) ?? {};
-                    return a ? i.createElement(m.Z, { payload: a }) : i.createElement(n.Z, null, e);
+                    return a ? i.createElement(_.Z, { payload: a }) : i.createElement(n.Z, null, e);
                 },
-                x = ({ children: e, props: t, style: a }) => {
+                E = ({ children: e, props: t, style: a }) => {
                     const r = (0, u.p)(),
                         n = t.action("next"),
                         o = t.strDict("errors"),
@@ -231,10 +231,10 @@
                         null
                     );
                 };
-            const E = s.default.create((e) => ({ form: { flexShrink: 1 } }));
+            const C = s.default.create((e) => ({ form: { flexShrink: 1 } }));
         },
         656825: (e, t, a) => {
-            a.d(t, { N7: () => _, PJ: () => c, XN: () => d });
+            a.d(t, { N7: () => d, PJ: () => c, XN: () => m });
             var i = a(202784),
                 r = a(466999),
                 n = a(325686),
@@ -242,36 +242,36 @@
                 l = a(417681),
                 s = a(684799);
             const c = i.createContext({ groupKeys: new Set(), active: new Set(), register: (e) => {} }),
-                _ = ({ children: e, overrideStyles: t, props: a, style: r }) => {
-                    const [o, _] = i.useState(() => new Set()),
-                        { values: d } = i.useContext(s.q3),
-                        m = i.useCallback(
+                d = ({ children: e, overrideStyles: t, props: a, style: r }) => {
+                    const [o, d] = i.useState(() => new Set()),
+                        { values: m } = i.useContext(s.q3),
+                        _ = i.useCallback(
                             (e) => {
-                                o.has(e) || _((t) => new Set(t).add(e));
+                                o.has(e) || d((t) => new Set(t).add(e));
                             },
-                            [_, o],
+                            [d, o],
                         ),
                         p = i.useCallback(
                             () =>
                                 new Set(
-                                    Object.entries(d)
+                                    Object.entries(m)
                                         .filter(([e, t]) => t && "" !== t.trim() && o.has(e))
                                         .map((e) => e[0]),
                                 ),
-                            [d, o],
+                            [m, o],
                         )(),
                         u = p.size > 0,
                         f = u ? t.active : {};
-                    return i.createElement(c.Provider, { value: { active: p, groupKeys: o, register: m } }, i.createElement(l.u.Provider, { value: u }, i.createElement(n.Z, { style: [{ flexShrink: 1 }, r, f] }, e)));
+                    return i.createElement(c.Provider, { value: { active: p, groupKeys: o, register: _ } }, i.createElement(l.u.Provider, { value: u }, i.createElement(n.Z, { style: [{ flexShrink: 1 }, r, f] }, e)));
                 },
-                d = ({ style: e }) => {
+                m = ({ style: e }) => {
                     const { active: t } = i.useContext(c);
-                    return i.createElement(r.Z, { numberOfLines: 1, style: [m.text, e] }, t.size);
+                    return i.createElement(r.Z, { numberOfLines: 1, style: [_.text, e] }, t.size);
                 },
-                m = o.default.create((e) => ({ text: { color: e.colors.text, textOverflow: "ellipsis" } }));
+                _ = o.default.create((e) => ({ text: { color: e.colors.text, textOverflow: "ellipsis" } }));
         },
         795164: (e, t, a) => {
-            a.d(t, { Cj: () => Z, sz: () => I, Z7: () => S, _h: () => T, QP: () => R, qM: () => A });
+            a.d(t, { Cj: () => Z, sz: () => A, Z7: () => S, _h: () => T, QP: () => R, qM: () => I });
             var i = a(202784),
                 r = a(215045),
                 n = a(3348),
@@ -279,9 +279,9 @@
                 l = a(392237),
                 s = a(403808),
                 c = a(323265),
-                _ = a(738124),
-                d = a(417681),
-                m = a(643426),
+                d = a(738124),
+                m = a(417681),
+                _ = a(643426),
                 p = a(684799),
                 u = a(656825);
             function f(e, t) {
@@ -299,19 +299,19 @@
                 y = 4,
                 v = 5,
                 w = 6,
-                C = 8,
-                x = 9,
-                E = 10,
+                x = 8,
+                E = 9,
+                C = 10,
                 S = ({ overrideStyles: e, props: t, style: a }) => {
                     const r = t.str("name") ?? "",
                         o = t.str("label"),
-                        _ = t.str("value") ?? "",
-                        m = t.bool("autofocus") ?? !1,
+                        d = t.str("value") ?? "",
+                        _ = t.bool("autofocus") ?? !1,
                         f = t.enum("type") ?? h,
                         { change: S, setFocus: Z, submit: P, values: R } = i.useContext(p.q3),
-                        T = f === x,
-                        A = f === g,
-                        I = f === C,
+                        T = f === E,
+                        I = f === g,
+                        A = f === x,
                         M = i.useCallback(
                             (e) => {
                                 S(r, e);
@@ -319,22 +319,22 @@
                             [r, S],
                         );
                     i.useEffect(() => {
-                        _ && S(r, _);
-                    }, [r, _, S]);
-                    const { register: L } = i.useContext(u.PJ);
+                        d && S(r, d);
+                    }, [r, d, S]);
+                    const { register: D } = i.useContext(u.PJ);
                     i.useEffect(() => {
-                        L(r);
-                    }, [r, L]);
-                    const B = i.useCallback(() => {
+                        D(r);
+                    }, [r, D]);
+                    const L = i.useCallback(() => {
                             Z(r);
                         }, [r, Z]),
-                        D = i.useCallback(() => {
+                        B = i.useCallback(() => {
                             Z("");
                         }, [Z]),
-                        z = !!R[r] && "" !== R[r],
-                        G = z ? e.active : {},
-                        N = I ? { display: "none" } : {},
-                        q = ((e) => {
+                        N = !!R[r] && "" !== R[r],
+                        G = N ? e.active : {},
+                        z = A ? { display: "none" } : {},
+                        j = ((e) => {
                             switch (e) {
                                 case h:
                                     return "text";
@@ -350,63 +350,63 @@
                                     return "email";
                                 case y:
                                     return "text";
-                                case E:
+                                case C:
                                     return "date";
                                 default:
                                     return "text";
                             }
                         })(f),
-                        j = i.useCallback(
+                        q = i.useCallback(
                             (e) => {
                                 const t = e.currentTarget.value;
                                 t && S(r, new Date(t).toISOString());
                             },
                             [S, r],
                         ),
-                        H = R[r] ?? _,
-                        O = { border: 0, outline: 0, flexShrink: 1, minWidth: 50, flexGrow: 1, ...a, ...G, ...N },
+                        H = R[r] ?? d,
+                        O = { border: 0, outline: 0, flexShrink: 1, minWidth: 50, flexGrow: 1, ...a, ...G, ...z },
                         F = "content" === a.fieldSizing && !c.ZP.isChrome(),
-                        K = i.useRef(null),
-                        [U, $] = i.useState(0),
+                        $ = i.useRef(null),
+                        [K, U] = i.useState(0),
                         J = (0, s.r)((e) => {
                             if (!F) return;
-                            const t = K.current,
+                            const t = $.current,
                                 a = document.createElement("span");
                             (a.style.visibility = "hidden"), (a.style.position = "absolute"), (a.style.font = window.getComputedStyle(t).font);
                             let i = (e || o) ?? "";
                             f === g && (i = new Array(i.length).fill(c.ZP.isSafari() ? "#" : "•").join("")), (a.textContent = i), document.body.appendChild(a);
                             const r = a.offsetWidth + (c.ZP.isSafari() ? 40 : 20);
-                            document.body.removeChild(a), $(r);
+                            document.body.removeChild(a), U(r);
                         });
                     if (
                         (i.useEffect(() => {
                             J(H);
                         }, [J, H]),
-                        "date" === q)
+                        "date" === j)
                     ) {
-                        const e = R[r] ?? _,
+                        const e = R[r] ?? d,
                             t = new Date(e).toLocaleDateString("en-CA").padStart(10, "0");
-                        return i.createElement(d.u.Provider, { value: z }, i.createElement("input", { autoFocus: m, name: r, onChange: j, style: { ...O, lineHeight: "number" == typeof O.lineHeight ? `${O.lineHeight}px` : O.lineHeight }, type: "date", value: t }));
+                        return i.createElement(m.u.Provider, { value: N }, i.createElement("input", { autoFocus: _, name: r, onChange: q, style: { ...O, lineHeight: "number" == typeof O.lineHeight ? `${O.lineHeight}px` : O.lineHeight }, type: "date", value: t }));
                     }
                     return i.createElement(
-                        d.u.Provider,
-                        { value: z },
+                        m.u.Provider,
+                        { value: N },
                         i.createElement(n.Z, {
-                            autoFocus: m,
-                            inputMode: q,
+                            autoFocus: _,
+                            inputMode: j,
                             multiline: T,
                             name: r,
-                            onBlur: D,
+                            onBlur: B,
                             onChangeText: M,
-                            onFocus: B,
+                            onFocus: L,
                             onSubmitEditing: () => {
                                 P();
                             },
                             placeholder: o,
                             placeholderTextColor: l.default.theme.colors.gray500,
-                            ref: K,
-                            secureTextEntry: A,
-                            style: [O, F && { width: U }],
+                            ref: $,
+                            secureTextEntry: I,
+                            style: [O, F && { width: K }],
                             value: H,
                         }),
                     );
@@ -415,8 +415,8 @@
                     const o = a.str("name") ?? "",
                         l = a.bool("submit") ?? !1,
                         s = a.bool("dismiss") ?? !1,
-                        { change: c, submit: _, values: h } = i.useContext(p.q3),
-                        { dismiss: g } = i.useContext(m.b),
+                        { change: c, submit: d, values: h } = i.useContext(p.q3),
+                        { dismiss: g } = i.useContext(_.b),
                         { register: k } = i.useContext(u.PJ);
                     i.useEffect(() => {
                         k(o);
@@ -424,59 +424,59 @@
                     const b = h[o] ?? "false",
                         y = "true" === b;
                     f(b, () => {
-                        l && _(), s && g && g();
+                        l && d(), s && g && g();
                     });
                     const v = i.useCallback(() => {
                             c(o, "true" === b ? void 0 : "true");
                         }, [o, c, b]),
                         w = y ? t.active : {};
-                    return i.createElement(d.u.Provider, { value: y }, i.createElement(r.Z, { onPress: v, style: [{ flexShrink: 1 }, n, w] }, e));
+                    return i.createElement(m.u.Provider, { value: y }, i.createElement(r.Z, { onPress: v, style: [{ flexShrink: 1 }, n, w] }, e));
                 },
                 P = i.createContext(null),
                 R = ({ children: e, overrideStyles: t, props: a, style: r }) => {
                     const n = a.str("name") ?? "",
                         l = a.bool("submit") ?? !1,
                         [s, c] = i.useState(null),
-                        { submit: _, values: m } = i.useContext(p.q3),
+                        { submit: d, values: _ } = i.useContext(p.q3),
                         { register: h } = i.useContext(u.PJ);
-                    f(m[n], () => {
-                        l && _();
+                    f(_[n], () => {
+                        l && d();
                     }),
                         i.useEffect(() => {
                             h(n);
                         }, [n, h]);
-                    const g = !!m[n],
+                    const g = !!_[n],
                         k = g ? t.active : {};
-                    return i.createElement(P.Provider, { value: { name: n, submitOnChange: l, active: s, setActive: c } }, i.createElement(d.u.Provider, { value: g }, i.createElement(o.Z, { style: [{ flexShrink: 1 }, r, k] }, e)));
+                    return i.createElement(P.Provider, { value: { name: n, submitOnChange: l, active: s, setActive: c } }, i.createElement(m.u.Provider, { value: g }, i.createElement(o.Z, { style: [{ flexShrink: 1 }, r, k] }, e)));
                 },
                 T = ({ children: e, overrideStyles: t, props: a, style: n }) => {
                     const o = a.str("value") ?? "",
                         l = a.element("active"),
                         s = a.bool("dismiss") ?? !1,
                         c = i.useContext(P),
-                        { change: _, values: u } = i.useContext(p.q3),
-                        { dismiss: h } = i.useContext(m.b),
+                        { change: d, values: u } = i.useContext(p.q3),
+                        { dismiss: h } = i.useContext(_.b),
                         g = (c?.name ? u[c.name] : null) === o;
                     f(String(g), () => {
                         s && h && h();
                     });
                     const k = i.useCallback(() => {
-                            c && (g ? (_(c.name, void 0), c.setActive(null)) : (_(c.name, o), c.setActive(l)));
-                        }, [c, o, _, l, g]),
+                            c && (g ? (d(c.name, void 0), c.setActive(null)) : (d(c.name, o), c.setActive(l)));
+                        }, [c, o, d, l, g]),
                         b = g ? t.active : {};
-                    return i.createElement(d.u.Provider, { value: g }, i.createElement(r.Z, { onPress: k, style: [{ flexShrink: 1 }, n, b] }, e));
+                    return i.createElement(m.u.Provider, { value: g }, i.createElement(r.Z, { onPress: k, style: [{ flexShrink: 1 }, n, b] }, e));
                 },
-                A = ({ scribeContext: e, style: t }) => {
+                I = ({ scribeContext: e, style: t }) => {
                     const a = i.useContext(P);
-                    if (a?.active) return i.createElement(o.Z, { style: t }, i.createElement(_.Z, { parentContext: e, payload: a.active }));
+                    if (a?.active) return i.createElement(o.Z, { style: t }, i.createElement(d.Z, { parentContext: e, payload: a.active }));
                 },
-                I = ({ children: e, props: t }) => {
+                A = ({ children: e, props: t }) => {
                     const a = t.str("name") ?? "",
                         r = t.int("length") ?? 6,
                         l = t.bool("autofocus") ?? !1,
                         s = t.bool("autosubmit") ?? !1,
-                        { change: c, submit: _, values: d } = i.useContext(p.q3),
-                        m = d.code ?? "",
+                        { change: c, submit: d, values: m } = i.useContext(p.q3),
+                        _ = m.code ?? "",
                         u = i.useCallback(
                             (e) => {
                                 c(a, e), t.setStrDict("code", Array.from(e));
@@ -485,17 +485,17 @@
                         ),
                         f = i.useMemo(() => Array.from({ length: r }).map(() => i.createRef()), [r]);
                     i.useEffect(() => {
-                        m.length === r && s ? _() : f[m.length]?.current?.focus();
-                    }, [s, m, f, r, _]);
+                        _.length === r && s ? d() : f[_.length]?.current?.focus();
+                    }, [s, _, f, r, d]);
                     const h = i.useCallback(
                             (e, t) => {
-                                const a = m.slice(0, t) + e + m.slice(t + 1);
+                                const a = _.slice(0, t) + e + _.slice(t + 1);
                                 u(a);
                             },
-                            [m, u],
+                            [_, u],
                         ),
                         g = (e) => {
-                            "Backspace" === e.key && (u(m.slice(0, m.length - 1)), e.preventDefault());
+                            "Backspace" === e.key && (u(_.slice(0, _.length - 1)), e.preventDefault());
                         },
                         [k, b] = i.useState(0),
                         [y, v] = i.useState(10),
@@ -509,23 +509,23 @@
                             b((a - i * r) / (r - 1)), v(i);
                         }
                     }, [w, r]);
-                    const C = [M.inputs, { gap: k }],
-                        x = [M.input, { width: y }];
+                    const x = [M.inputs, { gap: k }],
+                        E = [M.input, { width: y }];
                     return i.createElement(
                         o.Z,
                         { ref: w, style: M.container },
                         e,
                         i.createElement(
                             o.Z,
-                            { style: C },
-                            Array.from({ length: r }).map((e, t) => i.createElement(n.Z, { autoFocus: l && 0 === t, inputMode: "numeric", key: t, maxLength: r, onChangeText: (e) => h(e, t), onKeyPress: g, ref: f[t], style: x, value: m[t] ?? "" })),
+                            { style: x },
+                            Array.from({ length: r }).map((e, t) => i.createElement(n.Z, { autoFocus: l && 0 === t, inputMode: "numeric", key: t, maxLength: r, onChangeText: (e) => h(e, t), onKeyPress: g, ref: f[t], style: E, value: _[t] ?? "" })),
                         ),
                     );
                 },
                 M = l.default.create((e) => ({ container: { position: "relative", width: "100%", alignItems: "center" }, inputs: { position: "absolute", left: 0, top: 0, right: 0, bottom: 0, display: "flex", flexDirection: "row", justifyContent: "center" }, input: { minWidth: 0, outline: 0, textAlign: "center", caretColor: e.colors.text, color: "transparent" } }));
         },
         665161: (e, t, a) => {
-            a.d(t, { U: () => _ });
+            a.d(t, { U: () => d });
             var i = a(202784),
                 r = a(466999),
                 n = a(3348),
@@ -533,16 +533,16 @@
                 l = a(392237),
                 s = a(417681),
                 c = a(684799);
-            const _ = ({ overrideStyles: e, props: t, style: a }) => {
-                    const _ = t.str("name") ?? "",
+            const d = ({ overrideStyles: e, props: t, style: a }) => {
+                    const d = t.str("name") ?? "",
                         g = t.str("placeholder") ?? "",
                         k = t.str("countryCode") ?? "+1",
                         b = t.strList("allowedCountryCodes"),
                         y = t.bool("countryCodePickerDisabled") ?? !1,
-                        { change: v, submit: w, values: C } = i.useContext(c.q3),
-                        [x, E] = i.useState(""),
+                        { change: v, submit: w, values: x } = i.useContext(c.q3),
+                        [E, C] = i.useState(""),
                         [S, Z] = i.useState(() => u.find((e) => e.dial_code === k) ?? p),
-                        P = i.useMemo(() => h(x, S.pattern), [S.pattern, x]),
+                        P = i.useMemo(() => h(E, S.pattern), [S.pattern, E]),
                         R = i.useMemo(() => u.filter((e) => b.includes(e.dial_code)), [b]),
                         T = i.useCallback(
                             (e) => {
@@ -552,29 +552,29 @@
                             [R],
                         );
                     i.useEffect(() => {
-                        v(_, S.dial_code + f(x));
-                    }, [v, S, _, x]);
-                    const A = !!C[_] && "" !== C[_],
-                        I = A ? e.active : {},
-                        [M, L] = d(a),
-                        B = i.useMemo(() => {
+                        v(d, S.dial_code + f(E));
+                    }, [v, S, d, E]);
+                    const I = !!x[d] && "" !== x[d],
+                        A = I ? e.active : {},
+                        [M, D] = m(a),
+                        L = i.useMemo(() => {
                             let e = 0;
                             for (let t = 0; t < S.pattern.length; t++) "#" === S.pattern[t] ? (e += 1) : (e += 0.5);
                             return `${Math.ceil(e)}ch`;
                         }, [S.pattern]);
                     return i.createElement(
                         s.u.Provider,
-                        { value: A },
+                        { value: I },
                         i.createElement(
                             o.Z,
-                            { style: [m.container, L, I] },
+                            { style: [_.container, D, A] },
                             i.createElement(
                                 o.Z,
-                                { style: m.countryCodeContainer },
-                                i.createElement(r.Z, { style: [m.countryCode, y && m.countryCodeDisabled, M] }, S.dial_code),
+                                { style: _.countryCodeContainer },
+                                i.createElement(r.Z, { style: [_.countryCode, y && _.countryCodeDisabled, M] }, S.dial_code),
                                 i.createElement(
                                     "select",
-                                    { disabled: y, onChange: T, style: m.countryCodeSelector },
+                                    { disabled: y, onChange: T, style: _.countryCodeSelector },
                                     R.map((e) => i.createElement("option", { key: e.name, value: e.name }, e.name, "(", e.dial_code, ")")),
                                 ),
                             ),
@@ -582,24 +582,24 @@
                                 autoFocus: !0,
                                 inputMode: "tel",
                                 maxLength: S.limit,
-                                name: _,
-                                onChangeText: E,
+                                name: d,
+                                onChangeText: C,
                                 onSubmitEditing: () => {
                                     w();
                                 },
                                 placeholder: g || S.pattern,
                                 placeholderTextColor: l.default.theme.colors.gray500,
-                                style: [M, { width: B }, { border: 0, outline: 0 }],
+                                style: [M, { width: L }, { border: 0, outline: 0 }],
                                 value: P,
                             }),
                         ),
                     );
                 },
-                d = (e) => {
+                m = (e) => {
                     const { fontSize: t, fontStyle: a, fontWeight: i, letterSpacing: r, lineHeight: n, ...o } = e;
                     return [{ fontSize: t, fontStyle: a, fontWeight: i, letterSpacing: r, lineHeight: n }, o];
                 },
-                m = l.default.create((e) => ({ container: { flexDirection: "row", gap: e.spaces.space4 }, countryCodeContainer: { alignItems: "flex-end", position: "relative" }, countryCode: { paddingEnd: e.spaces.space4, color: e.colors.link }, countryCodeDisabled: { color: e.colors.text }, countryCodeSelector: { position: "absolute", start: 0, top: 0, end: 0, bottom: 0, opacity: 0 } })),
+                _ = l.default.create((e) => ({ container: { flexDirection: "row", gap: e.spaces.space4 }, countryCodeContainer: { alignItems: "flex-end", position: "relative" }, countryCode: { paddingEnd: e.spaces.space4, color: e.colors.link }, countryCodeDisabled: { color: e.colors.text }, countryCodeSelector: { position: "absolute", start: 0, top: 0, end: 0, bottom: 0, opacity: 0 } })),
                 p = { name: "United States", dial_code: "+1", pattern: "### ### ####", limit: 12 },
                 u = [
                     { name: "Afghanistan", dial_code: "+93", pattern: "### ### ####", limit: 12 },
@@ -816,19 +816,19 @@
                 l = a(810641),
                 s = a(519896),
                 c = a(383675),
-                _ = a(293115);
-            const d = o().e9f1fbcc,
-                m = o().a3b80be6,
-                p = () => i.createElement(r.Z, { header: d, message: m }),
+                d = a(293115);
+            const m = o().e9f1fbcc,
+                _ = o().a3b80be6,
+                p = () => i.createElement(r.Z, { header: m, message: _ }),
                 u = ({ children: e, props: t, style: a }) => {
                     const r = t.str("timelineId"),
                         n = t.str("name") ?? "JF-GenericURT",
                         o = t.str("scribe_page") ?? "jf-urt",
-                        d = t.str("scribe_section") ?? void 0,
-                        m = ((e) => i.useMemo(() => (e ? (0, c.R)(e, !1) : void 0), [e]))(r);
-                    if (m) {
-                        const e = { page: o, section: d };
-                        return i.createElement(_.nO, { namespace: e }, i.createElement(l.Z, { module: m, prerollDisplayLocation: s.Nw.OTHER, refreshControl: null, renderEmptyState: p, title: n }));
+                        m = t.str("scribe_section") ?? void 0,
+                        _ = ((e) => i.useMemo(() => (e ? (0, c.R)(e, !1) : void 0), [e]))(r);
+                    if (_) {
+                        const e = { page: o, section: m };
+                        return i.createElement(d.nO, { namespace: e }, i.createElement(l.Z, { module: _, prerollDisplayLocation: s.Nw.OTHER, refreshControl: null, renderEmptyState: p, title: n }));
                     }
                 };
         },
@@ -841,19 +841,19 @@
                 l = a(810641),
                 s = a(519896),
                 c = a(383675),
-                _ = a(293115);
-            const d = o().e9f1fbcc,
-                m = o().a3b80be6,
-                p = () => i.createElement(r.Z, { header: d, message: m }),
+                d = a(293115);
+            const m = o().e9f1fbcc,
+                _ = o().a3b80be6,
+                p = () => i.createElement(r.Z, { header: m, message: _ }),
                 u = ({ children: e, p: t }) => {
                     const a = t.str("timelineId"),
                         r = t.str("name") ?? "JF-GenericURT",
                         n = t.str("scribe_page") ?? "jf-urt",
                         o = t.str("scribe_section") ?? void 0,
-                        d = ((e) => i.useMemo(() => (e ? (0, c.R)(e, !1) : void 0), [e]))(a);
-                    if (d) {
+                        m = ((e) => i.useMemo(() => (e ? (0, c.R)(e, !1) : void 0), [e]))(a);
+                    if (m) {
                         const e = { page: n, section: o };
-                        return i.createElement(_.nO, { namespace: e }, i.createElement(l.Z, { module: d, prerollDisplayLocation: s.Nw.OTHER, refreshControl: null, renderEmptyState: p, title: r }));
+                        return i.createElement(d.nO, { namespace: e }, i.createElement(l.Z, { module: m, prerollDisplayLocation: s.Nw.OTHER, refreshControl: null, renderEmptyState: p, title: r }));
                     }
                 };
         },
@@ -866,22 +866,22 @@
                 l = 2,
                 s = ({ children: e, props: t, style: a }) => {
                     const s = t.int("columns") ?? 1;
-                    let c, _;
+                    let c, d;
                     switch (t.enum("align")) {
                         case n:
-                            (c = "start"), (_ = "left");
+                            (c = "start"), (d = "left");
                             break;
                         case l:
-                            (c = "end"), (_ = "right");
+                            (c = "end"), (d = "right");
                             break;
                         case o:
-                            (c = "center"), (_ = "center");
+                            (c = "center"), (d = "center");
                             break;
                         default:
-                            (c = "start"), (_ = "left");
+                            (c = "start"), (d = "left");
                     }
-                    const { width: d, ...m } = a,
-                        p = { display: "flex", flexDirection: "column", flexShrink: 1, textAlign: _, justifyContent: "center", alignItems: c, flexBasis: 0, flexGrow: s, width: 0, ...m };
+                    const { width: m, ..._ } = a,
+                        p = { display: "flex", flexDirection: "column", flexShrink: 1, textAlign: d, justifyContent: "center", alignItems: c, flexBasis: 0, flexGrow: s, width: 0, ..._ };
                     return i.createElement(r.Z, { style: p }, e);
                 };
         },
@@ -898,9 +898,9 @@
                 l = 1,
                 s = 2,
                 c = 3,
-                _ = 4,
-                d = 5,
-                m = 6,
+                d = 4,
+                m = 5,
+                _ = 6,
                 p = ({ children: e, props: t, style: a }) => {
                     const p = t.f32("gapH") ?? 0,
                         u = t.f32("gapV") ?? 0;
@@ -913,16 +913,16 @@
                             f = "flex-end";
                             break;
                         case s:
-                        case m:
+                        case _:
                             f = "center";
                             break;
                         case c:
                             f = "baseline";
                             break;
-                        case _:
+                        case d:
                             f = "flex-start";
                             break;
-                        case d:
+                        case m:
                             f = "flex-end";
                             break;
                         default:
@@ -934,7 +934,7 @@
                 };
         },
         693603: (e, t, a) => {
-            a.d(t, { Z: () => _ });
+            a.d(t, { Z: () => d });
             var i = a(202784),
                 r = a(325686),
                 n = a(340454);
@@ -942,28 +942,28 @@
                 l = 1,
                 s = 2,
                 c = 3,
-                _ = ({ children: e, props: t, style: a }) => {
-                    const _ = i.useContext(n._),
-                        d = t.int("gap") ?? _.gapH ?? 2;
-                    let m;
+                d = ({ children: e, props: t, style: a }) => {
+                    const d = i.useContext(n._),
+                        m = t.int("gap") ?? d.gapH ?? 2;
+                    let _;
                     switch (t.enum("align")) {
                         case l:
-                            m = "flex-start";
+                            _ = "flex-start";
                             break;
                         case c:
-                            m = "flex-end";
+                            _ = "flex-end";
                             break;
                         case o:
-                            m = "center";
+                            _ = "center";
                             break;
                         case s:
-                            m = "baseline";
+                            _ = "baseline";
                             break;
                         default:
-                            m = "flex-start";
+                            _ = "flex-start";
                     }
                     const { height: p, ...u } = a,
-                        f = { display: "flex", flexDirection: "row", flexBasis: "auto", alignSelf: "stretch", alignItems: m, gap: d, height: "auto", ...u };
+                        f = { display: "flex", flexDirection: "row", flexBasis: "auto", alignSelf: "stretch", alignItems: _, gap: m, height: "auto", ...u };
                     return i.createElement(r.Z, { style: f }, e);
                 };
         },
@@ -1602,8 +1602,8 @@
                     const a = e.enum("key") ?? -1,
                         n = (-1 !== a ? l[a] : void 0) ?? "",
                         c = e.int("size") ?? 24,
-                        _ = s[n] ?? o.default;
-                    return i.createElement(r.Z, { style: t }, i.createElement(_, { style: [{ flexShrink: 0, flexGrow: 0, justifyContents: "center" }, t, { height: c, width: c }] }));
+                        d = s[n] ?? o.default;
+                    return i.createElement(r.Z, { style: t }, i.createElement(d, { style: [{ flexShrink: 0, flexGrow: 0, justifyContents: "center" }, t, { height: c, width: c }] }));
                 };
         },
         943695: (e, t, a) => {
@@ -1630,6 +1630,205 @@
                 return i.createElement(r.Z, { style: [{ overflow: "hidden", width: "100%", height: "100%", aspectRatio: s }, a] }, i.createElement(n.Z, { resizeMode: l ? "cover" : "contain", source: { uri: o }, style: { width: "100%", height: "100%" } }));
             };
         },
+        552531: (e, t, a) => {
+            a.d(t, { Z: () => n });
+            var i = a(202784),
+                r = a(555874);
+            const n = ({ children: e, props: t, style: a }) => {
+                const n = i.useCallback(({ item: e }) => e, []);
+                return i.createElement(r.Z, { data: e ?? [], keyExtractor: (e, t) => `${t}`, renderItem: n });
+            };
+        },
+        610467: (e, t, a) => {
+            a.d(t, { Z: () => n });
+            var i = a(202784),
+                r = a(335923);
+            const n = ({ children: e, props: t, style: a }) => {
+                const n = t.str("t") ?? "";
+                return i.createElement(r.Z, { markdownText: n, style: [{ flexShrink: 1 }, a] });
+            };
+        },
+        183854: (e, t, a) => {
+            a.d(t, { Z: () => m });
+            var i = a(202784),
+                r = a(215045),
+                n = a(797553),
+                o = a(661810),
+                l = a(392237),
+                s = a(738124),
+                c = a(643426);
+            const d = l.default.create((e) => ({ dropdown: { padding: e.spaces.space16 }, item: { marginBottom: e.spaces.space8 }, divider: { marginTop: e.spaces.space8 } })),
+                m = ({ children: e, props: t, scribeContext: a, style: l }) => {
+                    const m = t.elements("labels"),
+                        [_, p] = i.useState(!1),
+                        [u, f] = i.useState(0),
+                        h = e ?? [],
+                        g = m ? m[u] : void 0;
+                    return g && m && m?.length === h.length
+                        ? i.createElement(
+                              i.Fragment,
+                              null,
+                              _ && m
+                                  ? i.createElement(
+                                        n.default,
+                                        { contentStyle: d.dropdown, onDismiss: () => p(!1) },
+                                        i.createElement(
+                                            c.b.Provider,
+                                            { value: { dismiss: () => p(!1) } },
+                                            e?.map((e, t) => i.createElement(r.Z, { key: t, onPress: () => f(t), style: d.item }, 0 !== t && i.createElement(o.Z, { style: d.item }), e)),
+                                        ),
+                                    )
+                                  : i.createElement(r.Z, { onPress: () => p(!0), style: [{ flexShrink: 1 }, l] }, g ? i.createElement(s.Z, { parentContext: a, payload: g }) : void 0),
+                          )
+                        : null;
+                };
+        },
+        643426: (e, t, a) => {
+            a.d(t, { b: () => i });
+            const i = a(202784).createContext({ dismiss: void 0 });
+        },
+        172993: (e, t, a) => {
+            a.d(t, { Z: () => d });
+            a(136728);
+            var i = a(202784),
+                r = a(215045),
+                n = a(443781),
+                o = a(946409),
+                l = a(725405),
+                s = a(579578);
+            const c = "https://x.com",
+                d = ({ children: e, props: t, scribeContext: a, style: d }) => {
+                    const m = (0, l.Z)(),
+                        { history: _ } = (0, n.QZ)(),
+                        p = t.url("url") ?? "",
+                        u = t.strDict("scribe:press") ?? {},
+                        f = i.useCallback((e) => {
+                            e.stopPropagation();
+                        }, []);
+                    return i.createElement(
+                        r.Z,
+                        {
+                            onPointerDown: f,
+                            onPress: () => {
+                                if (p) {
+                                    if (p.startsWith("twitter://jf/")) {
+                                        const e = p.slice(10);
+                                        _.push(`/i/${e}`);
+                                    } else if (p.startsWith("twitter://")) {
+                                        const e = (0, o.Mh)(p);
+                                        e && _.push(e.pathname ?? "", e.state);
+                                    } else if (p.startsWith("https://twitter.com")) {
+                                        const e = p.slice(10);
+                                        _.push(e);
+                                    } else if (p.startsWith(c)) {
+                                        const e = p.slice(13);
+                                        _.push(e);
+                                    } else window && (window.location.href = p);
+                                    const e = (0, s.Q)("click", { ...a, ...u });
+                                    m.scribe(e);
+                                }
+                            },
+                            style: [{ flexShrink: 1 }, d],
+                        },
+                        e,
+                    );
+                };
+        },
+        779227: (e, t, a) => {
+            a.d(t, { Z: () => p });
+            a(136728);
+            var i = a(202784),
+                r = a(744610),
+                n = a(215045),
+                o = a(392237),
+                l = a(443781),
+                s = a(725405),
+                c = a(579578),
+                d = a(643426);
+            const m = o.default.create((e) => ({ hover: { opacity: 0.8 } })),
+                _ = (e) => {
+                    const { paddingBottom: t, paddingEnd: a, paddingLeft: i, paddingRight: r, paddingStart: n, paddingTop: o, ...l } = e;
+                    return [{ paddingStart: n, paddingTop: o, paddingBottom: t, paddingEnd: a, paddingLeft: i, paddingRight: r }, l];
+                },
+                p = ({ children: e, props: t, scribeContext: a, style: o }) => {
+                    const { history: p } = (0, l.QZ)(),
+                        u = (0, s.Z)(),
+                        f = t.str("to") ?? "",
+                        h = t.bool("animate") ?? !0,
+                        g = f.startsWith("/") ? f.slice(1) : f,
+                        { dismiss: k } = i.useContext(d.b),
+                        b = i.useRef(new r.Z.Value(1)).current,
+                        [y, v] = i.useState(!1),
+                        w = y ? m.hover : {},
+                        x = i.useCallback(() => {
+                            h && r.Z.spring(b, { toValue: 0.9, velocity: 1, useNativeDriver: !0 }).start();
+                        }, [h, b]),
+                        E = i.useCallback(() => {
+                            h && r.Z.spring(b, { toValue: 1, velocity: 1, useNativeDriver: !0 }).start();
+                        }, [h, b]),
+                        C = { transform: [{ scale: b }] },
+                        S = i.useCallback(() => {
+                            const e = t.strDict("scribe:press") ?? {},
+                                i = (0, c.Q)("navigate", { ...a, ...e });
+                            u.scribe(i), ":back" === g ? p.goBack() : k && ":dismiss" === g ? k() : p.push(`/i/jf/${g}`);
+                        }, [g, k, u, a, p, t]),
+                        Z = i.useCallback((e) => {
+                            e.stopPropagation();
+                        }, []),
+                        [P, R] = _(o);
+                    return i.createElement(
+                        r.Z.View,
+                        { style: [{ flexShrink: 1 }, R, C, w] },
+                        i.createElement(
+                            n.Z,
+                            {
+                                onMouseEnter: () => {
+                                    v(!0);
+                                },
+                                onMouseLeave: () => {
+                                    v(!1);
+                                },
+                                onPointerDown: Z,
+                                onPress: S,
+                                onPressIn: x,
+                                onPressOut: E,
+                                style: [P, { flexGrow: 1 }],
+                            },
+                            e,
+                        ),
+                    );
+                };
+        },
+        723129: (e, t, a) => {
+            a.d(t, { Z: () => n });
+            var i = a(202784),
+                r = a(325686);
+            const n = ({ children: e, props: t }) => {
+                const a = t.int("activePage") ?? 0;
+                if (e) return i.createElement(r.Z, { style: { flex: 1 } }, e[a]);
+            };
+        },
+        312604: (e, t, a) => {
+            a.d(t, { Z: () => l });
+            var i = a(202784),
+                r = a(325686),
+                n = a(738124);
+            const o = 0;
+            const l = function ({ children: e, props: t, style: a }) {
+                const l = t.element("header"),
+                    s = t.element("footer"),
+                    c = t.enum("headerBehavior"),
+                    d = { ...(c === o && { position: "fixed", top: 8 }) },
+                    m = { ...(c === o && { position: "fixed", bottom: 8 }) };
+                return i.createElement(r.Z, { style: [{ flex: 1 }, a] }, i.createElement(r.Z, { style: d }, l && i.createElement(n.Z, { payload: l, style: d })), e, i.createElement(r.Z, { style: m }, s && i.createElement(n.Z, { payload: s })));
+            };
+        },
+        121152: (e, t, a) => {
+            a.d(t, { Z: () => n });
+            var i = a(202784),
+                r = a(325686);
+            const n = ({ children: e, props: t, style: a }) => i.createElement(r.Z, { style: a }, e);
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1f6ca6be.de59dc9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1f6ca6be.d32c1e0a.js.map

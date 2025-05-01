@@ -477,6 +477,11 @@
             var e = s(552322);
             const c = (l) => (0, e.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...l, children: (0, e.jsx)("path", { d: "M17.863 13.44c1.477 1.58 2.366 3.8 2.632 6.46l.11 1.1H3.395l.11-1.1c.266-2.66 1.155-4.88 2.632-6.46C7.627 11.85 9.648 11 12 11s4.373.85 5.863 2.44zM12 2C9.791 2 8 3.79 8 6s1.791 4 4 4 4-1.79 4-4-1.791-4-4-4z" }) });
         },
+        445238: (l, h, s) => {
+            s.d(h, { Z: () => c });
+            var e = s(552322);
+            const c = (l) => (0, e.jsx)("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", width: "1em", height: "1em", display: "flex", fill: "currentColor", role: "img", ...l, children: (0, e.jsx)("path", { d: "M19.268 12.854c-.944-.945-2.592-.945-3.536 0l-2.255 2.255c-2.243-1.052-4.015-2.972-4.882-5.29l2.551-2.551c.974-.975.974-2.561 0-3.535L9.248 1.835C8.287.873 6.716.863 5.746 1.809c-3.719 3.612-3.72 3.643-3.737 4.149-.006.18-.009.361-.009.543 0 8.041 6.272 14.828 14.28 15.453.061.005.121.007.182.007.634 0 1.25-.258 1.713-.722l2.972-2.971c.974-.975.974-2.561 0-3.535l-1.878-1.879Zm.464 4-2.972 2.972c-.094.094-.204.147-.325.134-6.973-.544-12.436-6.456-12.436-13.459v-.14c.292-.312 1.071-1.109 3.14-3.119.192-.187.503-.184.694.007l1.898 1.898c.195.195.195.512 0 .707L6.318 9.267l.174.573c1.018 3.356 3.579 6.118 6.853 7.387l.608.235 3.194-3.194c.127-.128.276-.146.353-.146s.226.019.354.146l1.878 1.879c.195.195.195.512 0 .707Z" }) });
+        },
         30019: (l, h, s) => {
             s.d(h, { Z: () => c });
             var e = s(552322);
@@ -549,4 +554,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-568e95f0.8c192fba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-568e95f0.64bb594a.js.map

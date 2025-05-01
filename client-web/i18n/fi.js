@@ -1339,8 +1339,6 @@
                 }),
                 e("i47ad24c", "Jatka samaan malliin. Mitä useammasta julkaisusta tykkäät, sitä parempi aikajanastasi tulee."),
                 e("def4a37c", "Hyvin menee! Aikajanasi alkaa näyttää paremmalta. Mitä enemmän tykkäät, sitä paremman aikajanakokemuksen saat. Jatka tykkäilyä sinua kiinnostavista asioista."),
-                e("bcab06d2", "Tykätty julkaisusta"),
-                e("i5efe23e", "Tykkäys poistettu julkaisusta"),
                 e("f5d17674", "Julkaisu uudelleenjulkaistu"),
                 e("d714acfa", "Julkaisun uudelleenjulkaisu peruttu"),
                 e("b18dff26", "Vain tilaajat näkevät tämän uudelleenjulkaisun"),
@@ -1909,10 +1907,10 @@
                 e("a330771e", "Kopioi linkki leikepöydällesi"),
                 e("b6510e68", "Kopioi artikkelin URL jakoa varten."),
                 e("e4a6e006", "Jokin meni pieleen. Yritä uudelleen."),
-                e("eff483e0", "Kun olet julkaissut, poimi artikkelin jakolinkki.");
-            e("ca15dd4e", "Luonnos"),
-                e("bb40bf66", "Julkaistu"),
-                e("h107935c", "Tallennettu viimeksi nyt"),
+                e("eff483e0", "Kun olet julkaissut, poimi artikkelin jakolinkki."),
+                e("ca15dd4e", "Luonnos"),
+                e("bb40bf66", "Julkaistu");
+            e("h107935c", "Tallennettu viimeksi nyt"),
                 e("a753a870", "Käytä"),
                 e("afccc67e", "Kopioi linkki artikkeliin"),
                 e("beb24e9e", "URL kopioitu leikepöydälle"),
@@ -2961,10 +2959,10 @@
                 e("c6f58084", "Kehittäjät"),
                 e("d83f18d2", "Hakemisto"),
                 e("hc5aa17c", "Hanki X-sovellus"),
-                e("j0693948", "Hanki Grok-sovellus");
-            e("fbf83158", "Varoitus: maksu epäonnistui"),
-                e("jadeb4da", "Päivitä maksutapatietosi viipymättä, jotta et menetä tilausetujasi."),
-                e("bce3726a", "Päivitä laskutustiedot"),
+                e("j0693948", "Hanki Grok-sovellus"),
+                e("fbf83158", "Varoitus: maksu epäonnistui"),
+                e("jadeb4da", "Päivitä maksutapatietosi viipymättä, jotta et menetä tilausetujasi.");
+            e("bce3726a", "Päivitä laskutustiedot"),
                 e("fce9ecce", "Ehdotetut videot"),
                 e("efe6ef9e", "Katso julkaisu"),
                 e("b3d183ce", "Julkaisu vastauksineen"),
@@ -3877,12 +3875,12 @@
                 e("d7357e7e", "Poista co-hosteista"),
                 e("bf307fc0", "Estä ja poista"),
                 e("ccf2f24e", "Ilmianto"),
-                e("i22835de", "Hyväksy");
-            e("cb59a0fe", "Epää"),
-                e("c2376960", "Puhumispyynnöt"),
-                e("aba7dcdd", function (a) {
-                    return "Kutsu " + a.name;
-                }),
+                e("i22835de", "Hyväksy"),
+                e("cb59a0fe", "Epää"),
+                e("c2376960", "Puhumispyynnöt");
+            e("aba7dcdd", function (a) {
+                return "Kutsu " + a.name;
+            }),
                 e("f5c7aaa7", function (a) {
                     return "host" + n(a.count, "", "ia");
                 }),
@@ -4909,10 +4907,10 @@
                 e("a7b48b36", "Loppuun saakka katsottujen videonäyttöjen osuus."),
                 e("a2580f2a", "Loppuunkatseluaste"),
                 e("ff95a9cc", "Videon tunnus"),
-                e("a97e358e", "Videon linkki");
-            e("e10e8b46", "Näytetään videot viimeisten 100 päivän ajalta."),
-                e("ba37f6da", "Yhteenveto videoista"),
-                e("f19846b2", "Videon esikatselukuva"),
+                e("a97e358e", "Videon linkki"),
+                e("e10e8b46", "Näytetään videot viimeisten 100 päivän ajalta."),
+                e("ba37f6da", "Yhteenveto videoista");
+            e("f19846b2", "Videon esikatselukuva"),
                 e("ccd6f4a8", "Videon nimi"),
                 e("c8410542", "Videosi katselumäärä."),
                 e("a532072a", "Katsojat"),
@@ -5865,14 +5863,14 @@
                 e("a0ea2fa6", "Nimikenttä ei voi olla tyhjä"),
                 e("eec37eac", "Kirjanmerkkikansio tällä nimellä on jo olemassa"),
                 e("fce0c59e", "JSON-animaatiokoodin jäsennys ei onnistunut. Tarkista animaatiotiedoston JSON-formaatti ja yritä uudelleen."),
-                e("g0eea6c2", "JSON-animaatiotiedoston lukeminen ei onnistunut. Yritä avata tiedosto uudelleen.");
-            e("ae58026a", "Avaa bränditykkäys-.json-tiedosto esikatselua varten"),
+                e("g0eea6c2", "JSON-animaatiotiedoston lukeminen ei onnistunut. Yritä avata tiedosto uudelleen."),
+                e("ae58026a", "Avaa bränditykkäys-.json-tiedosto esikatselua varten"),
                 e("hd0bc1eb", function (a) {
                     return a.name + " on live-tilassa";
-                }),
-                e("bea1f26b", function (a) {
-                    return a.name + " oli live-tilassa";
-                }),
+                });
+            e("bea1f26b", function (a) {
+                return a.name + " oli live-tilassa";
+            }),
                 e("ab3ee97f", function (a) {
                     return a.screenName + " ei ole live-tilassa";
                 }),
@@ -6873,10 +6871,10 @@
                 e("fdd77a34", "Laadi pidempiä julkaisuja"),
                 e("j6d26a7a", "Kirjoita niin paljon kuin haluat"),
                 e("c4fd68da", "Räätälöi käyttökokemuksesi"),
-                e("c0195168", "Vaihda sovellusikonia ja navigointivalintoja");
-            e("b6b5dc94", "Hanki varmennus"),
-                e("b06db848", "Erotu massasta alustalla"),
-                e("e3e3a97c", "Ansaitse osa julkaisujesi tuottamasta liikevaihdosta"),
+                e("c0195168", "Vaihda sovellusikonia ja navigointivalintoja"),
+                e("b6b5dc94", "Hanki varmennus"),
+                e("b06db848", "Erotu massasta alustalla");
+            e("e3e3a97c", "Ansaitse osa julkaisujesi tuottamasta liikevaihdosta"),
                 e("f15bc24e", "Suuremmat Grokin käyttörajat"),
                 e("c4666e1c", "Enemmän uusimman mallin, Grok 3:n käyttöä"),
                 e("he74ae7a", "Suurimmat Grokin käyttörajat"),
@@ -7849,7 +7847,9 @@
                 e("h37f2d96", "Huomaa, ettei kaikkia työnhakijoiden seurantajärjestelmiä vielä tueta."),
                 e("ce102a20", "Edelleenohjataan Stripeen"),
                 e("ddfd6718", "Maksu epäonnistui"),
-                e("i90ea7d2", "Päivitä laskutustietosi pian, jotta säilytät etusi.");
+                e("i90ea7d2", "Päivitä laskutustietosi pian, jotta säilytät etusi."),
+                e("a62359e6", "Varmennetut organisaatiot"),
+                e("ge221b7c", "Päivitä varmennetun organisaation tilaukseen, niin saat käyttöösi affiliaatit ja enemmän mainoskrediittejä.");
             function s(a, t) {
                 for (var i = 0; i < t.length; i++) {
                     var e = t[i];
@@ -7888,9 +7888,7 @@
                     u(a, t)
                 );
             }
-            e("a62359e6", "Varmennetut organisaatiot"),
-                e("ge221b7c", "Päivitä varmennetun organisaation tilaukseen, niin saat käyttöösi affiliaatit ja enemmän mainoskrediittejä."),
-                e("i4dccc18", "Laskutus"),
+            e("i4dccc18", "Laskutus"),
                 e("ec3cd6e4", "Hallitse maksutapaa, päivitä laskutustiedot ja tarkastele laskujasi."),
                 e("dac61c3c", "Tilin asetukset"),
                 e("b6b5fd66", "X-tilisi hallinta, esimerkiksi käyttäjätunnuksen ja salasanan vaihto."),
@@ -8891,12 +8889,12 @@
                 e("d1386940", "Pysy ajan tasalla"),
                 e("ecda5f9e", "Harhaanjohtava"),
                 e("a423473c", "Lakisääteinen huomautus"),
-                e("b3296688", "Näkyvyyttä rajattu");
-            e("ccd32094", "Nyt"),
+                e("b3296688", "Näkyvyyttä rajattu"),
+                e("ccd32094", "Nyt"),
                 e("abfcce0d", function (a) {
                     return a.amountOfTime + " sitten";
-                }),
-                e("ae408b76", "Uudelleenjulkaisit"),
+                });
+            e("ae408b76", "Uudelleenjulkaisit"),
                 e("j355f008", "Kiinnitetty julkaisu"),
                 e("habf9678", "Tekijän kiinnittämä"),
                 e("db0798ed", function (a) {
@@ -13221,4 +13219,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.4629a59a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.ce9db6da.js.map

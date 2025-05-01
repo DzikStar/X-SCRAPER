@@ -59,21 +59,22 @@
             const n = (0, d(523561).Z)({
                     loader: () =>
                         Promise.all([
-                            d.e("icons.23"),
-                            d.e("icons.2"),
-                            d.e("icons.16"),
-                            d.e("icons.10"),
-                            d.e("icons.19"),
-                            d.e("icons.24"),
+                            d.e("icons.8"),
                             d.e("icons.13"),
+                            d.e("icons.20"),
+                            d.e("icons.14"),
+                            d.e("icons.1"),
+                            d.e("icons.3"),
+                            d.e("icons.24"),
+                            d.e("icons.11"),
                             d.e("modules.common-e907d115"),
                             d.e("modules.common-e019dbda"),
-                            d.e("icons.27"),
-                            d.e("icons.22"),
+                            d.e("icons.28"),
+                            d.e("icons.10"),
                             d.e("icons.17"),
-                            d.e("icons.7"),
-                            d.e("icons.21"),
-                            d.e("icons.18"),
+                            d.e("icons.4"),
+                            d.e("icons.12"),
+                            d.e("icons.22"),
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -81,6 +82,7 @@
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-64ffe41f"),
+                            d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-5517db7c"),
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-58d4ab8e"),
@@ -104,7 +106,7 @@
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                             d.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2d1eb5e2"),
+                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-7af5e2f7"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -135,7 +137,7 @@
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-f33a9093"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-b336079b"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1f6ca6be"),
-                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-b2a4a903"),
+                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-10bcc2eb"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2569c2fe"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-0ad0de7e"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-abb249de"),
@@ -203,7 +205,7 @@
             const t = (0, o.ZP)(i(u));
         },
         985124: (e, a, d) => {
-            d.d(a, { $J: () => c, WA: () => x, ZC: () => M, cj: () => T, eo: () => r.eo, hb: () => $, kW: () => i, pg: () => k, rP: () => l, u4: () => W, xk: () => j });
+            d.d(a, { $J: () => c, WA: () => x, ZC: () => v, cj: () => T, eo: () => r.eo, hb: () => $, kW: () => i, pg: () => k, rP: () => l, u4: () => W, xk: () => j });
             var r = d(89217),
                 o = d(674132),
                 n = d.n(o);
@@ -223,9 +225,9 @@
                 y = n().af19cdc2,
                 f = n().e4a51fca,
                 w = n().e8ca78ae,
-                v = n().c365dcc6,
-                M = Object.freeze({ software_engineering: u, data_analytics: t, product: s, design: b, marketing: h, sales_am: D, operations: p, people_hr: S, finance_accounting: m, legal_compliance: A, science_engineering: y, medical: f, construction_trades: w, other: v }),
-                k = Object.entries(M).map(([e, a]) => ({ label: String(a), value: e })),
+                M = n().c365dcc6,
+                v = Object.freeze({ software_engineering: u, data_analytics: t, product: s, design: b, marketing: h, sales_am: D, operations: p, people_hr: S, finance_accounting: m, legal_compliance: A, science_engineering: y, medical: f, construction_trades: w, other: M }),
+                k = Object.entries(v).map(([e, a]) => ({ label: String(a), value: e })),
                 P = n().e25d75e4,
                 I = n().e89b3f04,
                 B = n().h55825dc,
@@ -360,8 +362,8 @@
             var y = d(701796);
             const f = u().f508c49c,
                 w = u().f88553c8,
-                v = u().d6825dce,
-                M = u().b9613442,
+                M = u().d6825dce,
+                v = u().b9613442,
                 k = u().c2b3f0da,
                 P = u().c791d3fc,
                 I = { label: u().ifea3114, withDelay: !0 },
@@ -385,7 +387,7 @@
                         }, [u, a]),
                         L = r.useCallback(() => {
                             const e = [];
-                            return o.Z.isAvailable() && e.push({ text: f, onClick: E, Icon: t.default }), g && (e.push(((e) => ({ text: v, onClick: e, Icon: s.default }))(_)), e.push(((e) => ({ text: M, onClick: e, Icon: b.default }))(x))), Z && e.push(((e) => ({ text: k, onClick: e, Icon: h.default }))(j)), e;
+                            return o.Z.isAvailable() && e.push({ text: f, onClick: E, Icon: t.default }), g && (e.push(((e) => ({ text: M, onClick: e, Icon: s.default }))(_)), e.push(((e) => ({ text: v, onClick: e, Icon: b.default }))(x))), Z && e.push(((e) => ({ text: k, onClick: e, Icon: h.default }))(j)), e;
                         }, [E, _, j, x, Z, g]),
                         R = r.useCallback(
                             (e) => {
@@ -445,4 +447,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.JobSearch~bundle.UserJobs.a07f422a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.JobSearch~bundle.UserJobs.750df6ea.js.map

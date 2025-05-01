@@ -23,8 +23,8 @@
                 w = d(710396),
                 f = d(655352),
                 A = d(485785),
-                y = d(125363),
-                M = d(936572),
+                M = d(125363),
+                y = d(936572),
                 v = d(909622),
                 _ = d(919022),
                 E = d(788994),
@@ -46,19 +46,21 @@
             const O = (0, d(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        d.e("icons.23"),
-                        d.e("icons.2"),
-                        d.e("icons.16"),
-                        d.e("icons.10"),
-                        d.e("icons.19"),
-                        d.e("icons.24"),
+                        d.e("icons.8"),
                         d.e("icons.13"),
+                        d.e("icons.20"),
+                        d.e("icons.14"),
+                        d.e("icons.1"),
+                        d.e("icons.3"),
+                        d.e("icons.24"),
+                        d.e("icons.11"),
                         d.e("modules.common-e907d115"),
                         d.e("modules.common-e019dbda"),
-                        d.e("icons.27"),
-                        d.e("icons.22"),
+                        d.e("icons.28"),
+                        d.e("icons.10"),
                         d.e("icons.17"),
-                        d.e("icons.7"),
+                        d.e("icons.4"),
+                        d.e("icons.18"),
                         d.e("modules.audio-6107ac1a"),
                         d.e("modules.audio-b953418a"),
                         d.e("modules.audio-7c51e6a7"),
@@ -69,16 +71,13 @@
                         d.e("modules.audio-e019dbda"),
                         d.e("modules.audio-262c94d4"),
                         d.e("modules.audio-c6fe4ea4"),
-                        d.e("icons.4"),
-                        d.e("icons.8"),
-                        d.e("icons.14"),
-                        d.e("icons.28"),
+                        d.e("icons.12"),
+                        d.e("icons.29"),
+                        d.e("icons.22"),
+                        d.e("icons.7"),
+                        d.e("icons.0"),
+                        d.e("icons.19"),
                         d.e("icons.26"),
-                        d.e("icons.21"),
-                        d.e("icons.11"),
-                        d.e("icons.3"),
-                        d.e("icons.1"),
-                        d.e("icons.18"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -86,6 +85,7 @@
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-64ffe41f"),
+                        d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-5517db7c"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-58d4ab8e"),
@@ -109,7 +109,7 @@
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                         d.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
                         d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2d1eb5e2"),
+                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-7af5e2f7"),
                         d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                         d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                         d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -140,7 +140,7 @@
                         d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-f33a9093"),
                         d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-b336079b"),
                         d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1f6ca6be"),
-                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-b2a4a903"),
+                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-10bcc2eb"),
                         d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2569c2fe"),
                         d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-0ad0de7e"),
                         d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-abb249de"),
@@ -290,7 +290,7 @@
             });
             function De(e) {
                 const { featureSwitches: a, userClaims: d } = (0, s.QZ)(),
-                    l = (0, y.v9)(_.ZP.selectViewerUser),
+                    l = (0, M.v9)(_.ZP.selectViewerUser),
                     t = d.isAnyPremiumSubscriber(),
                     o = d.isPaidVerifiedOrg(),
                     i = a.isTrue("rweb_sourcemap_migration"),
@@ -301,13 +301,13 @@
                     w = e.isOwnProfile && g && a.isTrue("subscriptions_upsells_profile_sidebar_analytics_upsell_enabled"),
                     f = a.isTrue("march_madness_brackets_enabled_loggedin_sidebar_popup"),
                     A = t && !o && "/home" === location.pathname;
-                if (e.profileUserId) return r.createElement(r.Fragment, null, D && r.createElement(T, null), r.createElement(c.B, null), e.profileScreenName ? r.createElement(h.Z, { screenName: e.profileScreenName }) : null, r.createElement(b.O, null), i && p && r.createElement(Ae, e), e.isOwnProfile ? r.createElement(C.Z, { entryPoint: "profile" }) : null, w && r.createElement(n.Z, { style: _e.paddedContainer, testID: "profileAnalyticsUpsell" }, r.createElement(x.Z, { variant: "ProfileSidebarAnalyticsUpsell" })), r.createElement(ye, e), r.createElement(fe, e), r.createElement(Me, e));
-                let M = r.createElement(r.Fragment, null, r.createElement(fe, e), r.createElement(ye, e));
-                return a.isTrue("rweb_sidebar_lower_whats_happening_enabled") && (M = r.createElement(r.Fragment, null, r.createElement(ye, e), r.createElement(fe, e))), i && (M = r.createElement(r.Fragment, null, p && r.createElement(Ae, e), r.createElement(fe, e), r.createElement(ye, e))), r.createElement(r.Fragment, null, "/home" === location.pathname ? r.createElement(ue, null) : null, D && r.createElement(T, null), A && r.createElement(C.Z, { entryPoint: "home" }), r.createElement(c.B, { userProfileId: e.profileUserId, userProfileScreenName: e.profileScreenName }), r.createElement(u.Z, null), o && a.isTrue("blue_business_admin_sidebar_module_enabled") ? r.createElement(m.Z, null) : null, "/home" === location.pathname && f && r.createElement(j.Z, { link: { pathname: "/i/jf/brackets/welcome" }, occasion: j.c.MarchMadness, withBackgroundImage: !0 }), r.createElement(b.O, null), M, S && r.createElement(n.Z, { style: _e.paddedContainer, testID: "exploreAnalyticsUpsell" }, r.createElement(x.Z, { variant: "ExploreSidebarAnalyticsUpsell" })), r.createElement(Me, e));
+                if (e.profileUserId) return r.createElement(r.Fragment, null, D && r.createElement(T, null), r.createElement(c.B, null), e.profileScreenName ? r.createElement(h.Z, { screenName: e.profileScreenName }) : null, r.createElement(b.O, null), i && p && r.createElement(Ae, e), e.isOwnProfile ? r.createElement(C.Z, { entryPoint: "profile" }) : null, w && r.createElement(n.Z, { style: _e.paddedContainer, testID: "profileAnalyticsUpsell" }, r.createElement(x.Z, { variant: "ProfileSidebarAnalyticsUpsell" })), r.createElement(Me, e), r.createElement(fe, e), r.createElement(ye, e));
+                let y = r.createElement(r.Fragment, null, r.createElement(fe, e), r.createElement(Me, e));
+                return a.isTrue("rweb_sidebar_lower_whats_happening_enabled") && (y = r.createElement(r.Fragment, null, r.createElement(Me, e), r.createElement(fe, e))), i && (y = r.createElement(r.Fragment, null, p && r.createElement(Ae, e), r.createElement(fe, e), r.createElement(Me, e))), r.createElement(r.Fragment, null, "/home" === location.pathname ? r.createElement(ue, null) : null, D && r.createElement(T, null), A && r.createElement(C.Z, { entryPoint: "home" }), r.createElement(c.B, { userProfileId: e.profileUserId, userProfileScreenName: e.profileScreenName }), r.createElement(u.Z, null), o && a.isTrue("blue_business_admin_sidebar_module_enabled") ? r.createElement(m.Z, null) : null, "/home" === location.pathname && f && r.createElement(j.Z, { link: { pathname: "/i/jf/brackets/welcome" }, occasion: j.c.MarchMadness, withBackgroundImage: !0 }), r.createElement(b.O, null), y, S && r.createElement(n.Z, { style: _e.paddedContainer, testID: "exploreAnalyticsUpsell" }, r.createElement(x.Z, { variant: "ExploreSidebarAnalyticsUpsell" })), r.createElement(ye, e));
             }
             function ge(e) {
                 const { featureSwitches: a, viewerUserId: d } = (0, s.QZ)(),
-                    l = (0, y.v9)(M.op);
+                    l = (0, M.v9)(y.op);
                 if (!d && !a.isTrue("rweb_enable_logged_out_search_search_bar_enabled")) return null;
                 if (!(0, f.ZP)() || !e.withSearchBox) return null;
                 const o = a.isTrue("rweb_sourcemap_migration"),
@@ -339,12 +339,12 @@
                     d = e.profileUserId || a;
                 return e.withSuggestedVideos && d ? r.createElement(o.Z, { hideOnError: !0 }, r.createElement(R.g, null, r.createElement(Z.O, null))) : null;
             }
-            function ye(e) {
+            function Me(e) {
                 const { viewerUserId: a } = (0, s.QZ)(),
                     d = e.profileUserId || a;
                 return e.withWhoToFollow && d ? r.createElement(o.Z, { hideOnError: !0 }, r.createElement(R.g, null, r.createElement(w.Z, { userId: d, withProfileHeaderText: !!e.profileUserId }))) : null;
             }
-            function Me(e) {
+            function ye(e) {
                 const { featureSwitches: a, isRestrictedSession: d, viewerUserId: n } = (0, s.QZ)(),
                     l = e.profileUserId || n,
                     t = r.useMemo(() => {
@@ -383,12 +383,12 @@
                     const w = () => {
                             p.scribe({ component: g, action: "click", element: "card" });
                         },
-                        { backgroundcolor: f, buttonSize: A, cardWidth: y, marginbottom: M, textcolor: v } = u ?? {},
+                        { backgroundcolor: f, buttonSize: A, cardWidth: M, marginbottom: y, textcolor: v } = u ?? {},
                         _ = f ? l.default.theme.colors[f] : l.default.theme.colors.gray0,
                         E = v ? l.default.theme.colors[v] : l.default.theme.colors.gray900,
-                        x = M ? l.default.theme.spaces[M] : l.default.theme.spaces.space16,
+                        x = y ? l.default.theme.spaces[y] : l.default.theme.spaces.space16,
                         k = { [D.MarchMadness]: { header: h.header, description: h.description, legalDisclaimer: h.legalDisclaimer, buttonText: h.buttonText, image: h.image } }[d];
-                    return b ? r.createElement(t.Z, { interactiveStyles: null, link: a, onPress: w, style: S.bannerContainer }, r.createElement(o.Z, { resizeMode: "contain", source: { uri: "light" === l.default.theme.paletteName ? k.image.lightMode : k.image.darkMode }, style: { height: 85 } })) : r.createElement(n.Z, { style: [S.card, { backgroundColor: _ }, { maxWidth: y }, { marginBottom: x }], testID: "popupCard" }, r.createElement(n.Z, { style: e ? S.horizontalContent : S.verticalContent }, r.createElement(n.Z, { style: e ? S.textContainer : null }, r.createElement(i.ZP, { size: "headline2", style: [S.popupTitle, { alignSelf: "flex-start" }], weight: "bold" }, k.header), r.createElement(i.ZP, { size: "subtext1", style: [S.popupDescription, { color: E }] }, k.description, " ", e ? null : k.legalDisclaimer)), r.createElement(n.Z, { style: S.buttonContainer }, r.createElement(s.ZP, { backgroundColor: "light" === l.default.theme.paletteName ? "orange300" : "orange600", borderColor: "transparent", link: a, onClick: w, size: "medium", style: [S.popupButton, { width: A }] }, k.buttonText), e && r.createElement(i.ZP, { size: "subtext3", style: [S.legalDisclaimer, { color: E }] }, k.legalDisclaimer))));
+                    return b ? r.createElement(t.Z, { interactiveStyles: null, link: a, onPress: w, style: S.bannerContainer }, r.createElement(o.Z, { resizeMode: "contain", source: { uri: "light" === l.default.theme.paletteName ? k.image.lightMode : k.image.darkMode }, style: { height: 85 } })) : r.createElement(n.Z, { style: [S.card, { backgroundColor: _ }, { maxWidth: M }, { marginBottom: x }], testID: "popupCard" }, r.createElement(n.Z, { style: e ? S.horizontalContent : S.verticalContent }, r.createElement(n.Z, { style: e ? S.textContainer : null }, r.createElement(i.ZP, { size: "headline2", style: [S.popupTitle, { alignSelf: "flex-start" }], weight: "bold" }, k.header), r.createElement(i.ZP, { size: "subtext1", style: [S.popupDescription, { color: E }] }, k.description, " ", e ? null : k.legalDisclaimer)), r.createElement(n.Z, { style: S.buttonContainer }, r.createElement(s.ZP, { backgroundColor: "light" === l.default.theme.paletteName ? "orange300" : "orange600", borderColor: "transparent", link: a, onClick: w, size: "medium", style: [S.popupButton, { width: A }] }, k.buttonText), e && r.createElement(i.ZP, { size: "subtext3", style: [S.legalDisclaimer, { color: E }] }, k.legalDisclaimer))));
                 },
                 S = l.default.create((e) => ({ card: { backgroundColor: e.colors.gray0, borderRadius: e.spaces.space16, padding: e.spaces.space16, alignItems: "center", maxWidth: 350, width: "100%" }, transparent: { backgroundColor: "transparent" }, popupTitle: { marginBottom: e.spaces.space8, textAlign: "start" }, popupDescription: { textAlign: "start", marginEnd: e.spaces.space12 }, legalDisclaimer: { position: "absolute", top: "60px", end: "50%", transform: "translateX(50%)", textAlign: "center", minWidth: 100, opacity: 0.7 }, popupButton: { width: "100%", borderRadius: e.spaces.space24, marginTop: e.spaces.space12, height: e.spaces.space40 }, buttonContainer: { position: "relative" }, horizontalContent: { flexDirection: "row", justifyContent: "space-between", alignItems: "center", width: "100%", paddingBottom: e.spaces.space8 }, verticalContent: { width: "100%" }, textContainer: { flex: 1 }, bannerContainer: { marginBottom: e.spaces.space16 } }));
         },
@@ -435,11 +435,11 @@
                 w = { id: "brandResources", text: l().e0adec82, link: (0, r.ju)("https://about.x.com/press/brand-assets") },
                 f = { id: "advertising", text: l().a4cf866e, link: (0, r.ju)("https://ads.x.com/?ref=gl-tw-tw-twitter-advertise") },
                 A = { id: "marketing", text: l().df1b7550, link: (0, r.ju)("https://marketing.x.com") },
-                y = { id: "xForBusiness", text: l().he258678, visibleLoggedIn: !0, link: (0, r.ju)("https://business.x.com/?ref=web-twc-ao-gbl-twitterforbusiness&utm_source=twc&utm_medium=web&utm_campaign=ao&utm_content=twitterforbusiness") },
-                M = { id: "developers", text: l().c6f58084, visibleLoggedIn: !0, link: (0, r.ju)("https://developer.x.com") },
+                M = { id: "xForBusiness", text: l().he258678, visibleLoggedIn: !0, link: (0, r.ju)("https://business.x.com/?ref=web-twc-ao-gbl-twitterforbusiness&utm_source=twc&utm_medium=web&utm_campaign=ao&utm_content=twitterforbusiness") },
+                y = { id: "developers", text: l().c6f58084, visibleLoggedIn: !0, link: (0, r.ju)("https://developer.x.com") },
                 v = { id: "directory", text: l().d83f18d2, link: (0, r.ju)("https://x.com/i/directory/profiles") },
                 _ = { id: "settings", text: l().bb081ea2, internal: !0, link: "/settings", excludeOnSettingsPage: !0 },
-                E = (e) => (e ? ((o.text = l().hc5aa17c), (D.text = l().j0693948), [t, o, D, S, s, c, u, M, f, b, p, _]) : [t, o, D, i, s, c, u, b, p, m, h, g, S, w, f, A, y, M, v, _]);
+                E = (e) => (e ? ((o.text = l().hc5aa17c), (D.text = l().j0693948), [t, o, D, S, s, c, u, y, f, b, p, _]) : [t, o, D, i, s, c, u, b, p, m, h, g, S, w, f, A, M, y, v, _]);
         },
         788994: (e, a, d) => {
             d.d(a, { Z: () => f });
@@ -517,4 +517,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1b6af858.67c2050a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1b6af858.91939d9a.js.map

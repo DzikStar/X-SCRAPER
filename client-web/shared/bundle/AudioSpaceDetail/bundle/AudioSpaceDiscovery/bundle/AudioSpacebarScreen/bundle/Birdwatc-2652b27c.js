@@ -54,12 +54,13 @@
             }
         },
         849957: (e, t, n) => {
-            n.d(t, { Z: () => a });
+            n.d(t, { Z: () => o });
             var r = n(552322),
-                s = n(373461);
-            function a({ p: e }) {
-                const t = e.str("src") ?? "";
-                return (0, r.jsx)(s.Z, { url: t });
+                s = n(373461),
+                a = n(801102);
+            function o({ p: e, el: t }) {
+                const n = e.str("src") ?? "";
+                return (0, r.jsx)(s.Z, { url: n, placeholder: (0, a.Z)(t) });
             }
         },
         128069: (e, t, n) => {
@@ -429,33 +430,33 @@
                 o = n(109195),
                 i = n(122883),
                 c = n(608222);
-            function l({ url: e }) {
-                const t = (0, c.o)(),
-                    [n, l] = (0, a.useState)(!0),
-                    [d, u] = (0, a.useState)(null),
-                    [m, f] = (0, a.useState)(null);
-                if (!t) return (0, r.jsx)("div", { children: "Runtime context not available" });
-                const { Runtime: h } = t;
-                if (!h) return (0, r.jsx)("div", { children: "Runtime not available" });
-                const p = (0, i.vz)(h);
+            function l({ url: e, placeholder: t }) {
+                const n = (0, c.o)(),
+                    [l, d] = (0, a.useState)(!0),
+                    [u, m] = (0, a.useState)(null),
+                    [f, h] = (0, a.useState)(null);
+                if (!n) return (0, r.jsx)("div", { children: "Runtime context not available" });
+                const { Runtime: p } = n;
+                if (!p) return (0, r.jsx)("div", { children: "Runtime not available" });
+                const x = (0, i.vz)(p);
                 return (
                     (0, a.useEffect)(() => {
                         e &&
                             (async () => {
-                                l(!0);
+                                d(!0);
                                 try {
-                                    const t = p.session(),
-                                        n = await h.net.httpGet(e);
-                                    n.data && t.onChunk(new Uint8Array(n.data)), f(p.root.value), l(!1);
+                                    const t = x.session(),
+                                        n = await p.net.httpGet(e);
+                                    n.data && t.onChunk(new Uint8Array(n.data)), h(x.root.value), d(!1);
                                 } catch (e) {
-                                    l(!1), u(e instanceof Error ? e : new Error(String(e)));
+                                    d(!1), m(e instanceof Error ? e : new Error(String(e)));
                                 }
                             })();
                     }, [e]),
-                    n ? (0, r.jsx)(s.P, {}) : d ? (0, r.jsxs)("div", { children: ["Error: ", d.message] }) : (0, r.jsx)(o.Z, { el: m })
+                    l ? (t ?? (0, r.jsx)(s.P, {})) : u ? (0, r.jsxs)("div", { children: ["Error: ", u.message] }) : (0, r.jsx)(o.Z, { el: f })
                 );
             }
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2652b27c.24216c9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2652b27c.2460d6fa.js.map

@@ -1342,8 +1342,6 @@
                 }),
                 o("i47ad24c", "Keep it up! The more posts you like, the better your timeline will be."),
                 o("def4a37c", "Primeran! Zure denbora-lerroa hobetzen ari da. Zenbat eta gehiago Atsegin duzula adieraziz, orduan eta hobea izango da zure denbora-lerroa gustuko dituzun gauzak Atsegiten."),
-                o("bcab06d2", "Post liked"),
-                o("i5efe23e", "Post unliked"),
                 o("f5d17674", "Post reposted"),
                 o("d714acfa", "Post unreposted"),
                 o("b18dff26", "Only Subscribed can see this repost"),
@@ -1912,10 +1910,10 @@
                 o("a330771e", "Copy link to your clipboard"),
                 o("b6510e68", "Copy your Article’s URL so you can share it."),
                 o("e4a6e006", "Arazoren bat izan da. Saiatu berriro."),
-                o("eff483e0", "After you publish, get a link to share the Article.");
-            o("ca15dd4e", "Zirriborroa"),
-                o("bb40bf66", "Argitaratuta"),
-                o("h107935c", "Last saved just now"),
+                o("eff483e0", "After you publish, get a link to share the Article."),
+                o("ca15dd4e", "Zirriborroa"),
+                o("bb40bf66", "Argitaratuta");
+            o("h107935c", "Last saved just now"),
                 o("a753a870", "Aplikatu"),
                 o("afccc67e", "Copy link to Article"),
                 o("beb24e9e", "URL copied to the clipboard"),
@@ -2964,10 +2962,10 @@
                 o("c6f58084", "Developers"),
                 o("d83f18d2", "Directory"),
                 o("hc5aa17c", "Get the X app"),
-                o("j0693948", "Get the Grok app");
-            o("fbf83158", "Warning: Payment failed"),
-                o("jadeb4da", "Please urgently update your payment method before you lose your subscription benefits."),
-                o("bce3726a", "Update Billing"),
+                o("j0693948", "Get the Grok app"),
+                o("fbf83158", "Warning: Payment failed"),
+                o("jadeb4da", "Please urgently update your payment method before you lose your subscription benefits.");
+            o("bce3726a", "Update Billing"),
                 o("fce9ecce", "Suggested Videos"),
                 o("efe6ef9e", "View post"),
                 o("b3d183ce", "Post with replies"),
@@ -3880,12 +3878,12 @@
                 o("d7357e7e", "Remove from Co-hosts"),
                 o("bf307fc0", "Block and Remove"),
                 o("ccf2f24e", "Salatu"),
-                o("i22835de", "Onartu");
-            o("cb59a0fe", "Ukatu"),
-                o("c2376960", "Requests to Speak"),
-                o("aba7dcdd", function (e) {
-                    return "Invite " + e.name;
-                }),
+                o("i22835de", "Onartu"),
+                o("cb59a0fe", "Ukatu"),
+                o("c2376960", "Requests to Speak");
+            o("aba7dcdd", function (e) {
+                return "Invite " + e.name;
+            }),
                 o("f5c7aaa7", function (e) {
                     return "host" + r(e.count, "", "s");
                 }),
@@ -4912,10 +4910,10 @@
                 o("a7b48b36", "The percentage of video views that were completed."),
                 o("a2580f2a", "Completion Rate"),
                 o("ff95a9cc", "Video ID"),
-                o("a97e358e", "Video Link");
-            o("e10e8b46", "Only showing the videos from the last 100 days."),
-                o("ba37f6da", "Video overview"),
-                o("f19846b2", "Video thumbnail"),
+                o("a97e358e", "Video Link"),
+                o("e10e8b46", "Only showing the videos from the last 100 days."),
+                o("ba37f6da", "Video overview");
+            o("f19846b2", "Video thumbnail"),
                 o("ccd6f4a8", "Video title"),
                 o("c8410542", "The number of times your video was viewed."),
                 o("a532072a", "Viewers"),
@@ -5868,14 +5866,14 @@
                 o("a0ea2fa6", "Izenaren eremua ezin da hutsik egon"),
                 o("eec37eac", "Badago izen hori duen laster-marken karpeta"),
                 o("fce0c59e", "Ezin izan da JSON animazioa analizatu. Egiaztatu JSON-ren formatua zure animazio fitxategian eta saiatu berriro."),
-                o("g0eea6c2", "Ezin izan da irakurri animazio JSON fitxategia. Saiatu berriro fitxategia irekitzen.");
-            o("ae58026a", "Ireki Markek Atsegin duten .json fitxategia aurreikusteko"),
+                o("g0eea6c2", "Ezin izan da irakurri animazio JSON fitxategia. Saiatu berriro fitxategia irekitzen."),
+                o("ae58026a", "Ireki Markek Atsegin duten .json fitxategia aurreikusteko"),
                 o("hd0bc1eb", function (e) {
                     return e.name + " zuzenean dago";
-                }),
-                o("bea1f26b", function (e) {
-                    return e.name + " zuzenean zegoen";
-                }),
+                });
+            o("bea1f26b", function (e) {
+                return e.name + " zuzenean zegoen";
+            }),
                 o("ab3ee97f", function (e) {
                     return e.screenName + " is not live";
                 }),
@@ -6876,10 +6874,10 @@
                 o("fdd77a34", "Create longer posts"),
                 o("j6d26a7a", "Write as much as you’d like to share"),
                 o("c4fd68da", "Customize your experience"),
-                o("c0195168", "Change your app icon and navigation options");
-            o("b6b5dc94", "Become verified"),
-                o("b06db848", "Stand out from others on the platform"),
-                o("e3e3a97c", "Earn a share of revenue from your posts"),
+                o("c0195168", "Change your app icon and navigation options"),
+                o("b6b5dc94", "Become verified"),
+                o("b06db848", "Stand out from others on the platform");
+            o("e3e3a97c", "Earn a share of revenue from your posts"),
                 o("f15bc24e", "Increased Grok limits"),
                 o("c4666e1c", "More usage of Grok 3, our latest model"),
                 o("he74ae7a", "Highest Grok usage limits"),
@@ -7852,7 +7850,9 @@
                 o("h37f2d96", "Please note not all applicant tracking systems are currently supported."),
                 o("ce102a20", "Redirecting to Stripe"),
                 o("ddfd6718", "Payment Failed"),
-                o("i90ea7d2", "Please urgently update your billing to keep your benefits.");
+                o("i90ea7d2", "Please urgently update your billing to keep your benefits."),
+                o("a62359e6", "Verified Organization Settings"),
+                o("ge221b7c", "Upgrade Verified Organization subscription to get access to affiliates and more ad credits.");
             function n(e, a) {
                 for (var t = 0; t < a.length; t++) {
                     var o = a[t];
@@ -7891,9 +7891,7 @@
                     u(e, a)
                 );
             }
-            o("a62359e6", "Verified Organization Settings"),
-                o("ge221b7c", "Upgrade Verified Organization subscription to get access to affiliates and more ad credits."),
-                o("i4dccc18", "Billing"),
+            o("i4dccc18", "Billing"),
                 o("ec3cd6e4", "Manage your payment method, update billing information, and review your invoices."),
                 o("dac61c3c", "Account settings"),
                 o("b6b5fd66", "Manage your X account including changing your username or password."),
@@ -8894,12 +8892,12 @@
                 o("d1386940", "Egon jakinaren gainean"),
                 o("ecda5f9e", "Engainagarria"),
                 o("a423473c", "Legez eskatzen den oharra"),
-                o("b3296688", "Visibility Limited");
-            o("ccd32094", "Orain"),
+                o("b3296688", "Visibility Limited"),
+                o("ccd32094", "Orain"),
                 o("abfcce0d", function (e) {
                     return "Duela " + e.amountOfTime;
-                }),
-                o("ae408b76", "You reposted"),
+                });
+            o("ae408b76", "You reposted"),
                 o("j355f008", "Pinned post"),
                 o("habf9678", "Egileak finkatuta"),
                 o("db0798ed", function (e) {
@@ -13214,4 +13212,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/eu.1d886bea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/eu.d6140ada.js.map

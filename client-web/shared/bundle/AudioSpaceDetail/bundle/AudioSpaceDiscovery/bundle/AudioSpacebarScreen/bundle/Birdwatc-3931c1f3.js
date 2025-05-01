@@ -52,14 +52,14 @@
                     for (let r = 0; r < 105; r += 5) n(`opacity-${r}`, (a) => (a.opacity = "" + r / 100)), n(`bg-opacity-${r}`, (a) => (a["--jbgo"] = "" + r / 100)), n(`border-opacity-${r}`, (a) => (a["--jbo"] = "" + r / 100));
                     for (const r of [
                         ["-none", 0],
-                        ["-xs", 0.5],
+                        ["-xs", 1],
                         ["-sm", 1],
                         ["", 2],
-                        ["-md", 4],
-                        ["-lg", 8],
-                        ["-xl", 16],
-                        ["-2xl", 32],
-                        ["-3xl", 64],
+                        ["-md", 2],
+                        ["-lg", 3],
+                        ["-xl", 4],
+                        ["-2xl", 5],
+                        ["-3xl", 6],
                     ]) {
                         const [g, o] = r;
                         n(`border${g}`, (r) => (r["border-width"] = a(o))), n(`border-t${g}`, (r) => (r["border-top-width"] = a(o))), n(`border-b${g}`, (r) => (r["border-bottom-width"] = a(o))), n(`border-l${g}`, (r) => (r["border-left-width"] = a(o))), n(`border-r${g}`, (r) => (r["border-right-width"] = a(o)));
@@ -95,6 +95,7 @@
                     }
                     n("underline", (r) => (r["text-decoration-line"] = "underline"));
                     for (const r of ["left", "center", "right"]) n(`text-${r}`, (a) => (a["text-align"] = r));
+                    n("whitespace-pre", (r) => (r["white-space"] = "pre"));
                     for (const r of [
                         ["tighter", -0.05],
                         ["tight", -0.025],
@@ -270,7 +271,7 @@
             new Set(), new Set();
         },
         705156: (r, a, g) => {
-            g.d(a, { O: () => U });
+            g.d(a, { O: () => X });
             var o = g(552322),
                 b = g(960546),
                 e = g(655419),
@@ -284,139 +285,142 @@
                 s = g(166490),
                 c = g(161276),
                 m = g(399762),
-                u = g(723395),
-                f = g(140682),
-                h = g(315111),
-                p = g(971668),
-                x = g(790119),
-                $ = g(550932),
-                w = g(514378),
-                k = g(608594),
-                Z = g(96675),
-                y = g(324212),
-                S = g(379265),
-                C = g(447763),
-                I = g(553366),
-                R = g(969517),
-                F = g(547645),
-                O = g(229476),
-                P = g(849957),
-                T = g(128069),
-                V = g(475122),
-                A = g(771017),
-                z = g(315198),
+                u = g(631389),
+                f = g(723395),
+                h = g(140682),
+                p = g(315111),
+                x = g(971668),
+                $ = g(790119),
+                w = g(550932),
+                k = g(514378),
+                Z = g(608594),
+                y = g(96675),
+                S = g(324212),
+                C = g(379265),
+                I = g(447763),
+                R = g(553366),
+                F = g(969517),
+                O = g(547645),
+                P = g(229476),
+                T = g(849957),
+                V = g(128069),
+                A = g(475122),
+                z = g(771017),
+                M = g(315198),
                 N = g(139466),
                 E = g(353151),
                 G = g(314672),
                 L = g(88214),
-                M = g(272403),
-                B = g(64614),
-                D = g(26296),
-                _ = g(472036),
-                W = g(400441),
-                q = g(696281),
-                H = g(122883);
-            const Y = {
+                B = g(272403),
+                D = g(64614),
+                _ = g(26296),
+                W = g(472036),
+                q = g(400441),
+                H = g(696281),
+                Y = g(122883);
+            const J = {
                     ActionResponder: v.Z,
-                    AdaptiveView: rr,
+                    AdaptiveView: ar,
                     Button: e.Z,
-                    ContextMenu: rr,
+                    ContextMenu: ar,
                     Counter: t.Z,
                     Cover: n.Z,
-                    DebugProps: rr,
-                    Divider: ar,
-                    Ellipse: ar,
+                    DebugProps: ar,
+                    Divider: gr,
+                    Ellipse: gr,
                     Feed: i.Z,
-                    "Feed.Item": rr,
+                    "Feed.Item": ar,
                     FeedPage: function ({ el: r }) {
-                        return (0, o.jsx)(X, { el: r, desc: "not for render - sth went wrong" });
+                        return (0, o.jsx)(K, { el: r, desc: "not for render - sth went wrong" });
                     },
-                    FocusImage: K,
+                    FocusImage: rr,
                     Form: j.Z,
-                    "Form.AsYouType": K,
-                    "Form.Group": rr,
-                    "Form.Group.Reset": rr,
-                    "Form.GroupCounter": K,
-                    "Form.Reset": rr,
-                    "Form.Result": ar,
+                    "Form.AsYouType": rr,
+                    "Form.Group": ar,
+                    "Form.Group.Reset": ar,
+                    "Form.GroupCounter": rr,
+                    "Form.Reset": ar,
+                    "Form.Result": gr,
                     "Form.Selection": d.Z,
                     "Form.Submit": l.Z,
-                    GlassMorphicView: K,
-                    Grid: p.Z,
-                    "Grid.Cell": x.Z,
-                    "Grid.Row": $.Z,
-                    HScroller: w.Z,
-                    HStack: ar,
-                    Icon: k.C,
-                    If: Z.Z,
-                    Image: y.Z,
+                    GlassMorphicView: rr,
+                    Grid: x.Z,
+                    "Grid.Cell": $.Z,
+                    "Grid.Row": w.Z,
+                    HScroller: k.Z,
+                    HStack: gr,
+                    Icon: Z.C,
+                    If: y.Z,
+                    Image: S.Z,
                     Input: s.Z,
                     "Input.Checkbox": c.Z,
                     "Input.Code": m.Z,
-                    "Input.Option": u.Z,
-                    "Input.Phone": f.Z,
-                    "Input.Reset": rr,
-                    "Input.Select": h.Z,
-                    Label: K,
-                    Link: S.Z,
-                    List: C.Z,
+                    "Input.Multiline": u.Z,
+                    "Input.Option": f.Z,
+                    "Input.Phone": h.Z,
+                    "Input.Reset": ar,
+                    "Input.Select": p.Z,
+                    Label: rr,
+                    Link: C.Z,
+                    List: I.Z,
                     List2: b.Z,
-                    Markdown: K,
-                    Menu: K,
-                    Nav: I.Z,
-                    Overlay: rr,
-                    Page: R.Z,
-                    "Page.Section": R.Z,
-                    Pager: F.Z,
-                    ParticleChaos: K,
-                    Popover: O.Z,
-                    Rect: ar,
-                    Remote: P.Z,
-                    RichText: T.Z,
-                    ShareLink: V.Z,
-                    Sheet: A.Z,
-                    SignInWithAppleButton: K,
-                    SignupArkoseSecurityChallenge: gr,
-                    Space: ar,
-                    Spinner: z.Z,
+                    Markdown: rr,
+                    Menu: rr,
+                    Nav: R.Z,
+                    Overlay: ar,
+                    Page: F.Z,
+                    "Page.Section": F.Z,
+                    Pager: O.Z,
+                    ParticleChaos: rr,
+                    Popover: P.Z,
+                    Rect: gr,
+                    Remote: T.Z,
+                    RichText: V.Z,
+                    ShareLink: A.Z,
+                    Sheet: z.Z,
+                    SignInWithAppleButton: rr,
+                    SignupArkoseSecurityChallenge: or,
+                    Space: gr,
+                    Spinner: M.Z,
                     StoryPager: G.Z,
                     "StoryPager.Element": E.Z,
                     "StoryPager.Story": N.Z,
                     Text: L.Z,
-                    TiledView: K,
-                    Time: M.Z,
-                    Timer: B.Z,
-                    TournamentBracket: K,
-                    VScroller: W.Z,
-                    VStack: ar,
-                    Video: D.Z,
-                    View: _.Z,
-                    XClipAppStoreOverlay: rr,
-                    ZStack: q.Z,
-                    Zoomable: K,
-                    "x.com.Broadcast": K,
-                    "x.com.GenericURT": gr,
-                    "x.com.ImmersiveVideo": K,
-                    "x.com.Video": gr,
-                    "x.com.WebView": K,
+                    TiledView: rr,
+                    Time: B.Z,
+                    Timer: D.Z,
+                    Toggle: rr,
+                    TournamentBracket: rr,
+                    VScroller: q.Z,
+                    VStack: gr,
+                    Video: _.Z,
+                    View: W.Z,
+                    XClipAppStoreOverlay: ar,
+                    ZStack: H.Z,
+                    Zoomable: rr,
+                    "x.com.Broadcast": rr,
+                    "x.com.GenericURT": or,
+                    "x.com.ImmersiveVideo": rr,
+                    "x.com.Video": or,
+                    "x.com.WebView": rr,
                 },
-                J = new Map(Object.entries(Y).map(([r, a]) => [(0, H.$3)(r), a])),
-                Q = new Map(Object.entries(Y).map(([r]) => [(0, H.$3)(r), r])),
-                U = (r) => J.get(r.type) ?? K;
-            function X({ el: r, desc: a = "not found - fix it" }) {
-                return (0, o.jsxs)("h3", { children: ["[", Q.get(r.type) ?? r.type, "]:", a] });
-            }
-            function K({ el: r }) {
-                return (0, o.jsx)(X, { el: r });
+                Q = new Map(Object.entries(J).map(([r, a]) => [(0, Y.$3)(r), a])),
+                U = new Map(Object.entries(J).map(([r]) => [(0, Y.$3)(r), r])),
+                X = (r) => Q.get(r.type) ?? rr;
+            function K({ el: r, desc: a = "not found - fix it" }) {
+                return (0, o.jsxs)("h3", { children: ["[", U.get(r.type) ?? r.type, "]:", a] });
             }
             function rr({ el: r }) {
-                return (0, o.jsx)(X, { el: r });
+                return (0, o.jsx)(K, { el: r });
             }
             function ar({ el: r }) {
-                return (0, o.jsx)(X, { el: r, desc: "deprecated - remove it" });
+                return (0, o.jsx)(K, { el: r });
             }
             function gr({ el: r }) {
-                return (0, o.jsx)(X, { el: r, desc: "should be in web - implement it." });
+                return (0, o.jsx)(K, { el: r, desc: "deprecated - remove it" });
+            }
+            function or({ el: r }) {
+                return (0, o.jsx)(K, { el: r, desc: "should be in web - implement it." });
             }
         },
         869593: (r, a, g) => {
@@ -450,6 +454,11 @@
         113158: (r, a, g) => {
             function o() {}
             g.d(a, { Z: () => o });
+        },
+        770688: (r, a, g) => {
+            g.d(a, { h: () => b });
+            let o = 0;
+            const b = () => ((o += 1), o.toString(36));
         },
         326762: (r, a, g) => {
             g.d(a, { Z: () => b });
@@ -494,4 +503,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-3931c1f3.141292ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-3931c1f3.abaec67a.js.map

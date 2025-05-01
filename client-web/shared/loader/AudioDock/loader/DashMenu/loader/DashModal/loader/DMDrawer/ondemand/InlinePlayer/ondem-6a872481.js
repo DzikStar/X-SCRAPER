@@ -291,7 +291,7 @@
                             } else y(o);
                         },
                         y = (t) => {
-                            this._stats(e, t || "unknown-error", { requestStartTime: c, segmentBytes: l }), "function" == typeof a && a(O(E) || { code: f.INVALID_RES_STATUS });
+                            this._stats(e, t || "unknown-error", { requestStartTime: c, segmentBytes: l }), "function" == typeof a && a(O(E) || { code: f.INVALID_RES_STATUS, mediaId: this.mediaId });
                         },
                         E = new XMLHttpRequest();
                     E.open(t, u, !0),
@@ -393,4 +393,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481.207b3dba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481.cc29ea8a.js.map

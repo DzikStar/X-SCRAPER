@@ -1023,7 +1023,7 @@
                             } else w(a);
                         },
                         w = (e) => {
-                            this._stats(t, e || "unknown-error", { requestStartTime: m, segmentBytes: u }), "function" == typeof n && n(T(S) || { code: y.INVALID_RES_STATUS });
+                            this._stats(t, e || "unknown-error", { requestStartTime: m, segmentBytes: u }), "function" == typeof n && n(I(S) || { code: y.INVALID_RES_STATUS, mediaId: this.mediaId });
                         },
                         S = new XMLHttpRequest();
                     S.open(e, h, !0),
@@ -1031,7 +1031,7 @@
                         (S.timeout = this.sruParameterOverrides?.clientsideSruUploadTimeoutMs || g),
                         (S.onload = () => {
                             if (S.status >= 200 && S.status < 400) {
-                                const e = T(S);
+                                const e = I(S);
                                 204 === S.status || e ? (this._stats(t, "success", { requestStartTime: m, segmentBytes: u }), s(e || {}), !c && d && d()) : p("parsererror");
                             } else S.status && 503 !== S.status ? w("invalid-response") : p("503");
                         }),
@@ -1071,7 +1071,7 @@
                 w = Object.freeze({ 0: y.INTERNAL_ERROR, 1: y.INVALID_MEDIA, 2: y.FILE_TOO_LARGE, 3: y.UNSUPPORTED_MEDIA, 4: y.TIMEOUT }),
                 S = Object.freeze({ RESET: 0, PENDING: 1, PAUSED: 2, SUCCEEDED: 3, FAILED: 4 }),
                 E = {};
-            function T(e) {
+            function I(e) {
                 try {
                     return JSON.parse(e.responseText);
                 } catch (e) {
@@ -1089,4 +1089,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Logout-6107ac1a.9b39308a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Logout-6107ac1a.6b2d105a.js.map

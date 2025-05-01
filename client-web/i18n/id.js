@@ -1338,8 +1338,6 @@
                 }),
                 i("i47ad24c", "Ayo teruskan! Semakin banyak postingan yang Anda suka, semakin baik timeline Anda jadinya."),
                 i("def4a37c", "Bagus! Timeline Anda makin relevan dengan minat Anda. Makin sering Anda menyukai postingan, timeline Anda akan makin relevan dengan minat Anda–terus berikan tanda suka pada postingan yang Anda minati."),
-                i("bcab06d2", "Postingan disukai"),
-                i("i5efe23e", "Postingan batal disukai"),
                 i("f5d17674", "Postingan diposting ulang"),
                 i("d714acfa", "Postingan batal diposting ulang"),
                 i("b18dff26", "Hanya Pelanggan yang dapat melihat posting ulang ini"),
@@ -1908,10 +1906,10 @@
                 i("a330771e", "Salin tautan ke clipboard Anda"),
                 i("b6510e68", "Salin URL Artikel Anda untuk membagikannya."),
                 i("e4a6e006", "Ada kesalahan teknis. Silakan coba lagi."),
-                i("eff483e0", "Setelah Anda terbitkan, dapatkan tautan untuk membagikan Artikel tersebut.");
-            i("ca15dd4e", "Draf"),
-                i("bb40bf66", "Diterbitkan"),
-                i("h107935c", "Terakhir disimpan baru saja"),
+                i("eff483e0", "Setelah Anda terbitkan, dapatkan tautan untuk membagikan Artikel tersebut."),
+                i("ca15dd4e", "Draf"),
+                i("bb40bf66", "Diterbitkan");
+            i("h107935c", "Terakhir disimpan baru saja"),
                 i("a753a870", "Terapkan"),
                 i("afccc67e", "Salin tautan ke Artikel"),
                 i("beb24e9e", "URL disalin ke clipboard"),
@@ -2960,10 +2958,10 @@
                 i("c6f58084", "Pengembang"),
                 i("d83f18d2", "Direktori"),
                 i("hc5aa17c", "Dapatkan aplikasi X"),
-                i("j0693948", "Dapatkan aplikasi Grok");
-            i("fbf83158", "Peringatan: Pembayaran gagal"),
-                i("jadeb4da", "Harap langsung perbarui metode pembayaran Anda sebelum Anda kehilangan manfaat langganan."),
-                i("bce3726a", "Perbarui Penagihan"),
+                i("j0693948", "Dapatkan aplikasi Grok"),
+                i("fbf83158", "Peringatan: Pembayaran gagal"),
+                i("jadeb4da", "Harap langsung perbarui metode pembayaran Anda sebelum Anda kehilangan manfaat langganan.");
+            i("bce3726a", "Perbarui Penagihan"),
                 i("fce9ecce", "Video yang disarankan"),
                 i("efe6ef9e", "Lihat postingan"),
                 i("b3d183ce", "Postingan dengan balasan"),
@@ -3876,12 +3874,12 @@
                 i("d7357e7e", "Hapus sebagai Co-host"),
                 i("bf307fc0", "Blokir dan Hapus"),
                 i("ccf2f24e", "Laporkan"),
-                i("i22835de", "Setujui");
-            i("cb59a0fe", "Tolak"),
-                i("c2376960", "Permintaan untuk Berbicara"),
-                i("aba7dcdd", function (a) {
-                    return "Undang " + a.name;
-                }),
+                i("i22835de", "Setujui"),
+                i("cb59a0fe", "Tolak"),
+                i("c2376960", "Permintaan untuk Berbicara");
+            i("aba7dcdd", function (a) {
+                return "Undang " + a.name;
+            }),
                 i("f5c7aaa7", function (a) {
                     return "host";
                 }),
@@ -4908,10 +4906,10 @@
                 i("a7b48b36", "Persentase penayangan video hingga selesai."),
                 i("a2580f2a", "Tingkat Penyelesaian"),
                 i("ff95a9cc", "ID video"),
-                i("a97e358e", "Tautan Video");
-            i("e10e8b46", "Hanya menampilkan video dari 100 hari terakhir."),
-                i("ba37f6da", "Ikhtisar video"),
-                i("f19846b2", "Thumbnail video"),
+                i("a97e358e", "Tautan Video"),
+                i("e10e8b46", "Hanya menampilkan video dari 100 hari terakhir."),
+                i("ba37f6da", "Ikhtisar video");
+            i("f19846b2", "Thumbnail video"),
                 i("ccd6f4a8", "Judul video"),
                 i("c8410542", "Berapa kali video Anda dilihat."),
                 i("a532072a", "Penonton"),
@@ -5864,14 +5862,14 @@
                 i("a0ea2fa6", "Bidang nama tidak boleh kosong"),
                 i("eec37eac", "Folder Markah dengan nama tersebut sudah ada"),
                 i("fce0c59e", "Gagal mengurai JSON animasi. Harap periksa format JSON di file animasi Anda dan coba lagi."),
-                i("g0eea6c2", "Gagal membaca file JSON animasi. Coba buka file kembali.");
-            i("ae58026a", "Buka file .json Suka Bermerek untuk melihat pratinjau"),
+                i("g0eea6c2", "Gagal membaca file JSON animasi. Coba buka file kembali."),
+                i("ae58026a", "Buka file .json Suka Bermerek untuk melihat pratinjau"),
                 i("hd0bc1eb", function (a) {
                     return a.name + " sedang menyiarkan langsung";
-                }),
-                i("bea1f26b", function (a) {
-                    return a.name + " telah menyiarkan langsung";
-                }),
+                });
+            i("bea1f26b", function (a) {
+                return a.name + " telah menyiarkan langsung";
+            }),
                 i("ab3ee97f", function (a) {
                     return a.screenName + " sedang tidak menyiarkan langsung";
                 }),
@@ -6872,10 +6870,10 @@
                 i("fdd77a34", "Buat postingan yang lebih panjang"),
                 i("j6d26a7a", "Tulis sebanyak yang ingin Anda sebarkan"),
                 i("c4fd68da", "Sesuaikan pengalaman Anda"),
-                i("c0195168", "Ubah ikon aplikasi dan ikon navigasi Anda");
-            i("b6b5dc94", "Mendapatkan verifikasi"),
-                i("b06db848", "Menonjol dibandingkan yang lainnya di platform ini"),
-                i("e3e3a97c", "Dapatkan bagi hasil pendapatan dari postingan Anda"),
+                i("c0195168", "Ubah ikon aplikasi dan ikon navigasi Anda"),
+                i("b6b5dc94", "Mendapatkan verifikasi"),
+                i("b06db848", "Menonjol dibandingkan yang lainnya di platform ini");
+            i("e3e3a97c", "Dapatkan bagi hasil pendapatan dari postingan Anda"),
                 i("f15bc24e", "Batas Grok yang lebih tinggi"),
                 i("c4666e1c", "Lebih leluasa menggunakan Grok 3, model terbaru kami"),
                 i("he74ae7a", "Batas penggunaan Grok tertinggi"),
@@ -7848,7 +7846,9 @@
                 i("h37f2d96", "Harap diperhatikan bahwa belum semua sistem pelacakan pelamar didukung saat ini."),
                 i("ce102a20", "Mengalihkan ke Stripe"),
                 i("ddfd6718", "Pembayaran Gagal"),
-                i("i90ea7d2", "Harap langsung perbarui penagihan Anda agar tidak kehilangan manfaat.");
+                i("i90ea7d2", "Harap langsung perbarui penagihan Anda agar tidak kehilangan manfaat."),
+                i("a62359e6", "Pengaturan Organisasi Terverifikasi"),
+                i("ge221b7c", "Tingkatkan langganan Organisasi Terverifikasi untuk mendapatkan akses ke afiliasi dan lebih banyak kredit iklan.");
             function r(a, n) {
                 for (var e = 0; e < n.length; e++) {
                     var i = n[e];
@@ -7887,9 +7887,7 @@
                     d(a, n)
                 );
             }
-            i("a62359e6", "Pengaturan Organisasi Terverifikasi"),
-                i("ge221b7c", "Tingkatkan langganan Organisasi Terverifikasi untuk mendapatkan akses ke afiliasi dan lebih banyak kredit iklan."),
-                i("i4dccc18", "Penagihan"),
+            i("i4dccc18", "Penagihan"),
                 i("ec3cd6e4", "Kelola metode pembayaran Anda, perbarui informasi tagihan, dan tinjau faktur Anda."),
                 i("dac61c3c", "Pengaturan akun"),
                 i("b6b5fd66", "Kelola akun X Anda, termasuk mengubah nama pengguna atau kata sandi Anda."),
@@ -8890,12 +8888,12 @@
                 i("d1386940", "Ikuti info terbaru"),
                 i("ecda5f9e", "Menyesatkan"),
                 i("a423473c", "Pemberitahuan Wajib secara Hukum"),
-                i("b3296688", "Visibilitas Terbatas");
-            i("ccd32094", "Sekarang"),
+                i("b3296688", "Visibilitas Terbatas"),
+                i("ccd32094", "Sekarang"),
                 i("abfcce0d", function (a) {
                     return a.amountOfTime + " yang lalu";
-                }),
-                i("ae408b76", "Anda memposting ulang"),
+                });
+            i("ae408b76", "Anda memposting ulang"),
                 i("j355f008", "Postingan tersemat"),
                 i("habf9678", "Disematkan oleh Penulis"),
                 i("db0798ed", function (a) {
@@ -13206,4 +13204,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/id.3164084a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/id.0e44fada.js.map

@@ -3,7 +3,7 @@
     ["loader.UserHandler"],
     {
         333241: (e, o, r) => {
-            r.d(o, { Z: () => _ });
+            r.d(o, { Z: () => I });
             r(136728);
             var t = r(202784),
                 n = r(638236),
@@ -23,12 +23,12 @@
                 b = "report",
                 M = "share",
                 y = d().j7bb1a43,
-                v = d().hef5960c,
-                _ = (0, D.M)((e) => {
+                _ = d().hef5960c,
+                I = (0, D.M)((e) => {
                     const { featureSwitches: o } = (0, c.QZ)(),
-                        { onBlock: r, onClose: l, onMute: d, onRemoveFollower: D, onReportUser: _, onShare: I, onUnblock: P, onUnmute: k, user: E } = e,
-                        S = [],
-                        C = (o, r) => {
+                        { onBlock: r, onClose: l, onMute: d, onRemoveFollower: D, onReportUser: I, onShare: P, onUnblock: v, onUnmute: k, user: E } = e,
+                        C = [],
+                        S = (o, r) => {
                             const { confirm: t, onClose: n } = e;
                             if (o) {
                                 const { label: e, ...a } = o;
@@ -41,16 +41,16 @@
                         !E.protected &&
                         !E.blocking &&
                         !E.blocked_by &&
-                        S.push({
+                        C.push({
                             Icon: n.Z,
                             onClick: () => {
-                                l(), I();
+                                l(), P();
                             },
                             testID: M,
-                            text: v,
+                            text: _,
                         });
                     !E.blocking &&
-                        S.push({
+                        C.push({
                             ...(0, h.N1)(
                                 E,
                                 () => {
@@ -63,25 +63,25 @@
                             testID: w,
                         });
                     E.followed_by &&
-                        S.push({
+                        C.push({
                             ...(0, m.l)({
                                 removeFollowerAction: (e) => {
-                                    C(e, D);
+                                    S(e, D);
                                 },
                                 user: E,
                             }),
                             testID: f,
                         }),
-                        S.push((0, u.op)({ blockAction: (e) => C(e, r), isSoftBlockEnabled: o.isTrue("xprofile_blocked_by_view_enabled"), source: u.SC.FOLLOWERS_LIST, testID: p, unblockAction: (e) => C(e, P), user: E })),
-                        S.push({
+                        C.push((0, u.op)({ blockAction: (e) => S(e, r), isSoftBlockEnabled: o.isTrue("xprofile_blocked_by_view_enabled"), source: u.SC.FOLLOWERS_LIST, testID: p, unblockAction: (e) => S(e, v), user: E })),
+                        C.push({
                             Icon: s.default,
                             onClick: () => {
-                                l(), _();
+                                l(), I();
                             },
                             testID: b,
                             text: y({ screenName: E.screen_name }),
                         });
-                    const A = S.map(({ Icon: e, onClick: o, testID: r, text: t }) => ({ text: t, onClick: o, Icon: e, testID: r }));
+                    const A = C.map(({ Icon: e, onClick: o, testID: r, text: t }) => ({ text: t, onClick: o, Icon: e, testID: r }));
                     return t.createElement(a.Z, { items: A, onCloseRequested: l });
                 });
         },
@@ -93,7 +93,7 @@
             const l = (e) => (o) => n.createElement(a.$6, null, (r) => n.createElement(e, (0, t.Z)({}, o, { isInSidebar: r })));
         },
         293988: (e, o, r) => {
-            r.d(o, { Z: () => I });
+            r.d(o, { Z: () => P });
             var t = r(202784),
                 n = r(154003),
                 a = r(674132),
@@ -115,8 +115,8 @@
                 b = l().c4da7d28,
                 M = l().j87c21f4,
                 y = l().iebc30ca,
-                v = l().dc740eb2;
-            class _ extends t.PureComponent {
+                _ = l().dc740eb2;
+            class I extends t.PureComponent {
                 constructor(e) {
                     super(e),
                         (this._renderButton = () => {
@@ -139,7 +139,7 @@
                         (this.state = { showingPushPrompt: !1 });
                 }
                 render() {
-                    return t.createElement("div", null, this.state.showingPushPrompt ? t.createElement(i.Z, { fullScreen: !0, message: v }) : null, this._renderButton());
+                    return t.createElement("div", null, this.state.showingPushPrompt ? t.createElement(i.Z, { fullScreen: !0, message: _ }) : null, this._renderButton());
                 }
                 _updateDeviceFollowing(e) {
                     const { createLocalApiErrorHandler: o, updateDeviceFollowing: r, userId: t } = this.props;
@@ -150,10 +150,10 @@
                     o.scribeAction(e);
                 }
             }
-            const I = w(_);
+            const P = w(I);
         },
         168222: (e, o, r) => {
-            r.r(o), r.d(o, { default: () => P });
+            r.r(o), r.d(o, { default: () => v });
             var t = r(459643),
                 n = r(942893),
                 a = r(409438),
@@ -178,34 +178,34 @@
                     .propsFromActions(({ module: e }) => ({ saveAsRecentSearch: w.DI, applyReactionInstructions: e.applyReactionInstructions }))
                     .withAnalytics(),
                 y = (e) => {
-                    const { analytics: o, applyReactionInstructions: r, cellClickable: t, decoration: d, entry: i, isCarouselItem: p, onClick: w, saveAsRecentSearch: f, shouldScribeImpression: b, shouldScribeProfileClick: M, shouldStoreTypeaheadItem: y, user: _, withFollowsYou: I, withLink: P } = e,
+                    const { analytics: o, applyReactionInstructions: r, cellClickable: t, decoration: d, entry: i, isCarouselItem: p, onClick: w, saveAsRecentSearch: f, shouldScribeImpression: b, shouldScribeProfileClick: M, shouldStoreTypeaheadItem: y, user: I, withFollowsYou: P, withLink: v } = e,
                         {
-                            content: { id: k, promotedMetadata: E, socialContext: S },
+                            content: { id: k, promotedMetadata: E, socialContext: C },
                         } = i,
-                        C = D(E),
-                        A = (S && S.generalContext) || void 0,
+                        S = D(E),
+                        A = (C && C.generalContext) || void 0,
                         Z = e.displayMode,
                         g = (0, u.hC)("super_follow_android_web_subscription_enabled") && Z === a.Z.SubscribableUser ? l.dk : l.ET,
-                        O = d || g,
-                        L = i.itemMetadata && i.itemMetadata.clientEventInfo && i.itemMetadata.clientEventInfo.details && i.itemMetadata.clientEventInfo.details.timelinesDetails && i.itemMetadata.clientEventInfo.details.timelinesDetails.injectionType;
+                        L = d || g,
+                        O = i.itemMetadata && i.itemMetadata.clientEventInfo && i.itemMetadata.clientEventInfo.details && i.itemMetadata.clientEventInfo.details.timelinesDetails && i.itemMetadata.clientEventInfo.details.timelinesDetails.injectionType;
                     (0, c.q)(() => {
-                        if ("WhoToFollow" === L) {
-                            const e = _ ? [n.Z.getUserItem(_)] : [];
-                            _?.following ? o.scribe({ element: "followed_user", action: "impression", data: { items: e } }) : _?.muting ? o.scribe({ element: "muted_user", action: "impression", data: { items: e } }) : _?.blocking && o.scribe({ element: "blocked_user", action: "impression", data: { items: e } });
+                        if ("WhoToFollow" === O) {
+                            const e = I ? [n.Z.getUserItem(I)] : [];
+                            I?.following ? o.scribe({ element: "followed_user", action: "impression", data: { items: e } }) : I?.muting ? o.scribe({ element: "muted_user", action: "impression", data: { items: e } }) : I?.blocking && o.scribe({ element: "blocked_user", action: "impression", data: { items: e } });
                         }
                     });
                     const T = s.useCallback(() => {
                         r({ entry: i, triggerName: m.K.ON_FOLLOW });
                     }, [r, i]);
-                    return s.createElement(l.Z9, { cellClickable: t, decoration: O, displayMode: Z, isConcise: p, onClick: w, onFollowClick: T, promotedContent: C, promotedItemType: h.bj.USER, referringPage: Z, saveAsRecentSearch: f, shouldScribeImpression: b, shouldScribeProfileClick: M, shouldStoreTypeaheadItem: y, socialContext: A, style: p && v.isCarouselItem, userId: k, withFollowsYou: I, withLink: P });
+                    return s.createElement(l.Z9, { cellClickable: t, decoration: L, displayMode: Z, isConcise: p, onClick: w, onFollowClick: T, promotedContent: S, promotedItemType: h.bj.USER, referringPage: Z, saveAsRecentSearch: f, shouldScribeImpression: b, shouldScribeProfileClick: M, shouldStoreTypeaheadItem: y, socialContext: A, style: p && _.isCarouselItem, userId: k, withFollowsYou: P, withLink: v });
                 },
-                v = i.default.create((e) => ({ isCarouselItem: { width: 312 } })),
-                _ = M(s.memo(y)),
-                I = [l.ET, l.C_],
-                P = ({ cellClickable: e = !0, decoration: o, displayMode: r = a.Z.UserCompact, isCarouselItem: l, onClick: s, shouldScribeProfileClick: i = !0, shouldScribeImpression: c = !1, shouldStoreTypeaheadItem: u, withLink: h = !0 }) =>
+                _ = i.default.create((e) => ({ isCarouselItem: { width: 312 } })),
+                I = M(s.memo(y)),
+                P = [l.ET, l.C_],
+                v = ({ cellClickable: e = !0, decoration: o, displayMode: r = a.Z.UserCompact, isCarouselItem: l, onClick: s, shouldScribeProfileClick: i = !0, shouldScribeImpression: c = !1, shouldStoreTypeaheadItem: u, withLink: h = !0 }) =>
                     d
                         .iH({
-                            component: _,
+                            component: I,
                             defaultScribeNamespace: { element: "user" },
                             getScribeDataItem(e) {
                                 const {
@@ -220,7 +220,7 @@
                             },
                             isFocusable: (0, t.Z)(!0),
                         })
-                        .getHandler(() => ({ cellClickable: e, decoration: o, displayMode: r, isCarouselItem: l, onClick: s, shouldScribeProfileClick: i, shouldScribeImpression: c, shouldStoreTypeaheadItem: u, withLink: h, withFollowsYou: !o || I.includes(o) }));
+                        .getHandler(() => ({ cellClickable: e, decoration: o, displayMode: r, isCarouselItem: l, onClick: s, shouldScribeProfileClick: i, shouldScribeImpression: c, shouldStoreTypeaheadItem: u, withLink: h, withFollowsYou: !o || P.includes(o) }));
         },
         684511: (e, o, r) => {
             r.d(o, { Z: () => t });
@@ -237,6 +237,7 @@
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-64ffe41f"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-5517db7c"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-58d4ab8e"),
@@ -415,7 +416,7 @@
             });
         },
         204744: (e, o, r) => {
-            r.d(o, { DI: () => y, H$: () => h, OB: () => v, Ww: () => c, YB: () => u, hj: () => w, qF: () => b });
+            r.d(o, { DI: () => y, H$: () => h, OB: () => _, Ww: () => c, YB: () => u, hj: () => w, qF: () => b });
             r(901951);
             var t = r(499627),
                 n = r(390387);
@@ -480,7 +481,7 @@
                             l = c(a);
                         return (0, n.Qb)(a) ? o(d(l)) : Promise.resolve();
                     },
-                v =
+                _ =
                     () =>
                     (e, o, { userPersistence: r }) => {
                         const t = o();
@@ -587,7 +588,7 @@
                     }
                 };
         },
-        971657: (e, o, r) => {
+        224823: (e, o, r) => {
             r.r(o), r.d(o, { default: () => s });
             var t = r(202784),
                 n = r(890601),
@@ -595,12 +596,12 @@
                 l = r(347101);
             const d = (e = {}) => {
                 const { direction: o } = (0, a.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: t.createElement("g", null, t.createElement("path", { d: "M7.501 19.917L7.471 21H.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977.963 0 1.95.212 2.87.672-.444.478-.851 1.03-1.212 1.656-.507-.204-1.054-.329-1.658-.329-2.767 0-4.57 2.223-4.938 6.004H7.56c-.023.302-.05.599-.059.917zm8.999-8.921c-3.264 0-6.816 2.358-7 8.977L9.471 21h4.528v-2h-2.438c.367-3.781 2.17-6.004 4.938-6.004 1.089 0 2.022.356 2.784 1.004h2.632c-1.376-2.136-3.446-3.004-5.415-3.004zm0-.996c-.799 0-1.527-.279-2.116-.73C13.548 8.63 13 7.632 13 6.5 13 4.57 14.567 3 16.5 3S20 4.57 20 6.5c0 1.132-.548 2.13-1.384 2.77-.589.451-1.317.73-2.116.73zM15 6.5c0 .827.673 1.5 1.5 1.5S18 7.327 18 6.5 17.327 5 16.5 5 15 5.673 15 6.5zm-11 0C4 4.57 5.567 3 7.5 3S11 4.57 11 6.5 9.433 10 7.5 10 4 8.43 4 6.5zm2 0C6 7.327 6.673 8 7.5 8S9 7.327 9 6.5 8.327 5 7.5 5 6 5.673 6 6.5zM21 21h3v-2h-3v-3h-2v3h-3v2h3v3h2v-3z" })) }, { writingDirection: o });
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: t.createElement("g", null, t.createElement("path", { d: "M10 4c-1.105 0-2 .9-2 2s.895 2 2 2 2-.9 2-2-.895-2-2-2zM6 6c0-2.21 1.791-4 4-4s4 1.79 4 4-1.791 4-4 4-4-1.79-4-4zm12.586 3l-2.043-2.04 1.414-1.42L20 7.59l2.043-2.05 1.414 1.42L21.414 9l2.043 2.04-1.414 1.42L20 10.41l-2.043 2.05-1.414-1.42L18.586 9zM3.651 19h12.698c-.337-1.8-1.023-3.21-1.945-4.19C13.318 13.65 11.838 13 10 13s-3.317.65-4.404 1.81c-.922.98-1.608 2.39-1.945 4.19zm.486-5.56C5.627 11.85 7.648 11 10 11s4.373.85 5.863 2.44c1.477 1.58 2.366 3.8 2.632 6.46l.11 1.1H1.395l.11-1.1c.266-2.66 1.155-4.88 2.632-6.46z" })) }, { writingDirection: o });
             };
             d.metadata = { width: 24, height: 24 };
             const s = d;
         },
-        226597: (e, o, r) => {
+        74514: (e, o, r) => {
             r.r(o), r.d(o, { default: () => s });
             var t = r(202784),
                 n = r(890601),
@@ -608,7 +609,7 @@
                 l = r(347101);
             const d = (e = {}) => {
                 const { direction: o } = (0, a.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: t.createElement("g", null, t.createElement("path", { d: "M3.707 21.707l18-18-1.414-1.414-2.088 2.088C17.688 4.137 17.11 4 16.5 4H11v2h5.5c.028 0 .056 0 .084.002l-10.88 10.88c-.131-.266-.204-.565-.204-.882V7.551l2.068 1.93 1.365-1.462L4.5 3.882.068 8.019l1.365 1.462 2.068-1.93V16c0 .871.278 1.677.751 2.334l-1.959 1.959 1.414 1.414zM18.5 9h2v7.449l2.068-1.93 1.365 1.462-4.433 4.137-4.432-4.137 1.365-1.462 2.067 1.93V9zm-8.964 9l-2 2H13v-2H9.536z" })) }, { writingDirection: o });
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style], viewBox: "0 0 24 24", children: t.createElement("g", null, t.createElement("path", { d: "M12 2C7.93 2 4.51 5.02 4 9.05L2.87 18H7.1c.46 2.28 2.48 4 4.9 4s4.44-1.72 4.9-4h4.24l-.64-5h-2.02l.38 3H5.13l.85-6.7C6.36 6.27 8.94 4 12 4V2zm0 18c-1.31 0-2.42-.83-2.83-2h5.66c-.41 1.17-1.52 2-2.83 2zm.3-12.29l1.41-1.42 1.76 1.76 4.29-4.72 1.48 1.34-5.7 6.28-3.24-3.24z" })) }, { writingDirection: o });
             };
             d.metadata = { width: 24, height: 24 };
             const s = d;
@@ -628,4 +629,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.UserHandler.83ee6d7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.UserHandler.820145fa.js.map

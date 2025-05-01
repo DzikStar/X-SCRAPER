@@ -1338,8 +1338,6 @@
                 }),
                 t("i47ad24c", "Fortsett slik! Jo flere innlegg du liker, desto bedre blir tidslinjen din."),
                 t("def4a37c", "Bra jobba! Tidslinjen din har blitt bedre. Jo mer du liker, desto bedre blir tidslinjen. Så fortsett gjerne med å like saker du er interessert i."),
-                t("bcab06d2", "Innlegg likt"),
-                t("i5efe23e", "Innlegg ikke lenger likt"),
                 t("f5d17674", "Innlegg republisert"),
                 t("d714acfa", "Innlegg ikke lenger republisert"),
                 t("b18dff26", "Bare abonnenter kan se dette republiserte innlegget"),
@@ -1908,10 +1906,10 @@
                 t("a330771e", "Kopier lenke til utklippstavlen"),
                 t("b6510e68", "Kopier nettadressen til artikkelen din for å dele den."),
                 t("e4a6e006", "Noe gikk galt. Prøv på nytt."),
-                t("eff483e0", "Etter at du har publisert, kan du dele artikkelen med en lenke.");
-            t("ca15dd4e", "Utkast"),
-                t("bb40bf66", "Publisert"),
-                t("h107935c", "Sist lagret akkurat nå"),
+                t("eff483e0", "Etter at du har publisert, kan du dele artikkelen med en lenke."),
+                t("ca15dd4e", "Utkast"),
+                t("bb40bf66", "Publisert");
+            t("h107935c", "Sist lagret akkurat nå"),
                 t("a753a870", "Ta i bruk"),
                 t("afccc67e", "Kopier lenke til artikkel"),
                 t("beb24e9e", "Nettadressen er kopiert til utklippstavlen"),
@@ -2960,10 +2958,10 @@
                 t("c6f58084", "Utviklere"),
                 t("d83f18d2", "Katalog"),
                 t("hc5aa17c", "Last ned X-appen"),
-                t("j0693948", "Last ned Grok-appen");
-            t("fbf83158", "Advarsel: Betalingen mislyktes"),
-                t("jadeb4da", "Oppdater betalingsmåten snarest før du mister abonnementsfordelene."),
-                t("bce3726a", "Oppdater faktureringsopplysningene"),
+                t("j0693948", "Last ned Grok-appen"),
+                t("fbf83158", "Advarsel: Betalingen mislyktes"),
+                t("jadeb4da", "Oppdater betalingsmåten snarest før du mister abonnementsfordelene.");
+            t("bce3726a", "Oppdater faktureringsopplysningene"),
                 t("fce9ecce", "Foreslåtte videoer"),
                 t("efe6ef9e", "Se innlegg"),
                 t("b3d183ce", "Innlegg med svar"),
@@ -3876,12 +3874,12 @@
                 t("d7357e7e", "Fjern som medvert"),
                 t("bf307fc0", "Blokker og fjern"),
                 t("ccf2f24e", "Rapport"),
-                t("i22835de", "Godkjenn");
-            t("cb59a0fe", "Avslå"),
-                t("c2376960", "Forespørsler om å få snakke"),
-                t("aba7dcdd", function (e) {
-                    return "Inviter " + e.name;
-                }),
+                t("i22835de", "Godkjenn"),
+                t("cb59a0fe", "Avslå"),
+                t("c2376960", "Forespørsler om å få snakke");
+            t("aba7dcdd", function (e) {
+                return "Inviter " + e.name;
+            }),
                 t("f5c7aaa7", function (e) {
                     return "vert" + i(e.count, "", "er");
                 }),
@@ -4908,10 +4906,10 @@
                 t("a7b48b36", "Prosentandelen av fullførte videovisninger."),
                 t("a2580f2a", "Fullføringsandel"),
                 t("ff95a9cc", "Video-ID"),
-                t("a97e358e", "Videolenke");
-            t("e10e8b46", "Viser bare videoene fra de siste 100 dagene."),
-                t("ba37f6da", "Videooversikt"),
-                t("f19846b2", "Videominiatyrbilde"),
+                t("a97e358e", "Videolenke"),
+                t("e10e8b46", "Viser bare videoene fra de siste 100 dagene."),
+                t("ba37f6da", "Videooversikt");
+            t("f19846b2", "Videominiatyrbilde"),
                 t("ccd6f4a8", "Videotittel"),
                 t("c8410542", "Antall ganger videoen din har blitt vist."),
                 t("a532072a", "Seere"),
@@ -5864,14 +5862,14 @@
                 t("a0ea2fa6", "Navnefeltet kan ikke være tomt"),
                 t("eec37eac", "Bokmerkemappe med det navnet eksisterer allerede"),
                 t("fce0c59e", "JSON-filen med animasjonen kunne ikke behandles. Sjekk JSON-formatet i animasjonsfilen og prøv på nytt."),
-                t("g0eea6c2", "JSON-filen med animasjonen kunne ikke leses. Prøv å åpne filen på nytt.");
-            t("ae58026a", "Åpne og forhåndsvis et merkelikerklikk fra en JSON-fil"),
+                t("g0eea6c2", "JSON-filen med animasjonen kunne ikke leses. Prøv å åpne filen på nytt."),
+                t("ae58026a", "Åpne og forhåndsvis et merkelikerklikk fra en JSON-fil"),
                 t("hd0bc1eb", function (e) {
                     return e.name + " sender direkte";
-                }),
-                t("bea1f26b", function (e) {
-                    return e.name + " sendte direkte";
-                }),
+                });
+            t("bea1f26b", function (e) {
+                return e.name + " sendte direkte";
+            }),
                 t("ab3ee97f", function (e) {
                     return e.screenName + " sender ikke direkte";
                 }),
@@ -6872,10 +6870,10 @@
                 t("fdd77a34", "Skriv lengre innlegg"),
                 t("j6d26a7a", "Skriv så mye du vil om det du har på hjertet"),
                 t("c4fd68da", "Tilpass brukeropplevelsen"),
-                t("c0195168", "Endre appikonet og navigasjonsvalgene");
-            t("b6b5dc94", "Bli verifisert"),
-                t("b06db848", "Skill deg ut fra andre på plattformen"),
-                t("e3e3a97c", "Tjen en inntektsandel fra innleggene dine"),
+                t("c0195168", "Endre appikonet og navigasjonsvalgene"),
+                t("b6b5dc94", "Bli verifisert"),
+                t("b06db848", "Skill deg ut fra andre på plattformen");
+            t("e3e3a97c", "Tjen en inntektsandel fra innleggene dine"),
                 t("f15bc24e", "Økte Grok-grenser"),
                 t("c4666e1c", "Mer bruk av Grok 3, vår nyeste modell"),
                 t("he74ae7a", "Høyeste forbruksgrenser for Grok"),
@@ -7848,7 +7846,9 @@
                 t("h37f2d96", "Vær obs på at ikke alle kandidatsystemer støttes for øyeblikket."),
                 t("ce102a20", "Omdirigerer til Stripe"),
                 t("ddfd6718", "Betalingen mislyktes"),
-                t("i90ea7d2", "Oppdater faktureringsopplysningene snarest for å beholde fordelene.");
+                t("i90ea7d2", "Oppdater faktureringsopplysningene snarest for å beholde fordelene."),
+                t("a62359e6", "Innstillinger for verifisert organisasjon"),
+                t("ge221b7c", "Oppgrader abonnementet på Verifiserte organisasjoner for å få tilgang til tilknyttede kontoer og mer annonsekreditt.");
             function a(e, n) {
                 for (var r = 0; r < n.length; r++) {
                     var t = n[r];
@@ -7887,9 +7887,7 @@
                     d(e, n)
                 );
             }
-            t("a62359e6", "Innstillinger for verifisert organisasjon"),
-                t("ge221b7c", "Oppgrader abonnementet på Verifiserte organisasjoner for å få tilgang til tilknyttede kontoer og mer annonsekreditt."),
-                t("i4dccc18", "Fakturering"),
+            t("i4dccc18", "Fakturering"),
                 t("ec3cd6e4", "Administrer betalingsmåten, oppdater faktureringsinformasjon og se gjennom fakturaene dine."),
                 t("dac61c3c", "Kontoinnstillinger"),
                 t("b6b5fd66", "Administrer X-kontoen din, inkludert endring av brukernavn eller passord."),
@@ -8890,12 +8888,12 @@
                 t("d1386940", "Hold deg informert"),
                 t("ecda5f9e", "Villedende"),
                 t("a423473c", "Lovpålagt melding"),
-                t("b3296688", "Begrenset synlighet");
-            t("ccd32094", "Nå"),
+                t("b3296688", "Begrenset synlighet"),
+                t("ccd32094", "Nå"),
                 t("abfcce0d", function (e) {
                     return e.amountOfTime + " siden";
-                }),
-                t("ae408b76", "Du republiserte"),
+                });
+            t("ae408b76", "Du republiserte"),
                 t("j355f008", "Festet innlegg"),
                 t("habf9678", "Festet av forfatteren"),
                 t("db0798ed", function (e) {
@@ -13206,4 +13204,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nb.fd4c774a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nb.1838339a.js.map

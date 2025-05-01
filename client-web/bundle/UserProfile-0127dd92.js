@@ -77,8 +77,7 @@
         },
         998118: (e, t, n) => {
             function r({ featureSwitch: e, featureSwitches: t, isOwnProfile: n, user: r, userClaims: o, verifiedType: a }) {
-                const i = !o.isAnyPremiumSubscriber() || (o.hasSubscription("premium_basic") && !o.isVerifiedOrg() && !o.isLegacyVerifiedOrg() && !o.isVerifiedOrgAffiliate() && t.isTrue("subscriptions_upsells_get_verified_profile_rotation_basic_upgrade_enabled"));
-                return n && i && "Government" !== a && "Business" !== a && t.isTrue("subscriptions_sign_up_enabled") && !r?.is_blue_verified && t.isTrue(e);
+                return n && "Government" !== a && "Business" !== a && t.isTrue("subscriptions_sign_up_enabled") && !r?.is_blue_verified && t.isTrue(e) && (!o.isAnyPremiumSubscriber() || (o.hasSubscription("premium_basic") && !o.isVerifiedOrg() && !o.isLegacyVerifiedOrg() && !o.isVerifiedOrgAffiliate() && t.isTrue("subscriptions_upsells_get_verified_profile_rotation_basic_upgrade_enabled")));
             }
             n.d(t, { Z: () => r });
         },
@@ -497,4 +496,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-0127dd92.eea592ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-0127dd92.fff7a71a.js.map

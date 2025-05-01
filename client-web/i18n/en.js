@@ -1339,8 +1339,6 @@
                 }),
                 a("i47ad24c", "Keep it up! The more posts you like, the better your timeline will be."),
                 a("def4a37c", "Nice work! Your timeline’s getting better. The more you like, the better your timeline will be – keep liking the stuff you’re into."),
-                a("bcab06d2", "Post liked"),
-                a("i5efe23e", "Post unliked"),
                 a("f5d17674", "Post reposted"),
                 a("d714acfa", "Post unreposted"),
                 a("b18dff26", "Only Subscribed can see this repost"),
@@ -1909,10 +1907,10 @@
                 a("a330771e", "Copy link to your clipboard"),
                 a("b6510e68", "Copy your Article’s URL so you can share it."),
                 a("e4a6e006", "Something went wrong. Please try again."),
-                a("eff483e0", "After you publish, get a link to share the Article.");
-            a("ca15dd4e", "Draft"),
-                a("bb40bf66", "Published"),
-                a("h107935c", "Last saved just now"),
+                a("eff483e0", "After you publish, get a link to share the Article."),
+                a("ca15dd4e", "Draft"),
+                a("bb40bf66", "Published");
+            a("h107935c", "Last saved just now"),
                 a("a753a870", "Apply"),
                 a("afccc67e", "Copy link to Article"),
                 a("beb24e9e", "URL copied to the clipboard"),
@@ -2961,10 +2959,10 @@
                 a("c6f58084", "Developers"),
                 a("d83f18d2", "Directory"),
                 a("hc5aa17c", "Get the X app"),
-                a("j0693948", "Get the Grok app");
-            a("fbf83158", "Warning: Payment failed"),
-                a("jadeb4da", "Please urgently update your payment method before you lose your subscription benefits."),
-                a("bce3726a", "Update Billing"),
+                a("j0693948", "Get the Grok app"),
+                a("fbf83158", "Warning: Payment failed"),
+                a("jadeb4da", "Please urgently update your payment method before you lose your subscription benefits.");
+            a("bce3726a", "Update Billing"),
                 a("fce9ecce", "Suggested Videos"),
                 a("efe6ef9e", "View post"),
                 a("b3d183ce", "Post with replies"),
@@ -3877,12 +3875,12 @@
                 a("d7357e7e", "Remove from Co-hosts"),
                 a("bf307fc0", "Block and Remove"),
                 a("ccf2f24e", "Report"),
-                a("i22835de", "Approve");
-            a("cb59a0fe", "Deny"),
-                a("c2376960", "Requests to Speak"),
-                a("aba7dcdd", function (e) {
-                    return "Invite " + e.name;
-                }),
+                a("i22835de", "Approve"),
+                a("cb59a0fe", "Deny"),
+                a("c2376960", "Requests to Speak");
+            a("aba7dcdd", function (e) {
+                return "Invite " + e.name;
+            }),
                 a("f5c7aaa7", function (e) {
                     return "host" + n(e.count, "", "s");
                 }),
@@ -4909,10 +4907,10 @@
                 a("a7b48b36", "The percentage of video views that were completed."),
                 a("a2580f2a", "Completion Rate"),
                 a("ff95a9cc", "Video ID"),
-                a("a97e358e", "Video Link");
-            a("e10e8b46", "Only showing the videos from the last 100 days."),
-                a("ba37f6da", "Video overview"),
-                a("f19846b2", "Video thumbnail"),
+                a("a97e358e", "Video Link"),
+                a("e10e8b46", "Only showing the videos from the last 100 days."),
+                a("ba37f6da", "Video overview");
+            a("f19846b2", "Video thumbnail"),
                 a("ccd6f4a8", "Video title"),
                 a("c8410542", "The number of times your video was viewed."),
                 a("a532072a", "Viewers"),
@@ -5865,14 +5863,14 @@
                 a("a0ea2fa6", "Name field cannot be empty"),
                 a("eec37eac", "Bookmark Folder with that name already exists"),
                 a("fce0c59e", "Failed to parse the animation JSON. Please check the format of the JSON in your animation file and try again."),
-                a("g0eea6c2", "Failed to read the animation JSON file. Please try to open the file again.");
-            a("ae58026a", "Open a Branded Like .json file to preview"),
+                a("g0eea6c2", "Failed to read the animation JSON file. Please try to open the file again."),
+                a("ae58026a", "Open a Branded Like .json file to preview"),
                 a("hd0bc1eb", function (e) {
                     return e.name + " is live";
-                }),
-                a("bea1f26b", function (e) {
-                    return e.name + " was live";
-                }),
+                });
+            a("bea1f26b", function (e) {
+                return e.name + " was live";
+            }),
                 a("ab3ee97f", function (e) {
                     return e.screenName + " is not live";
                 }),
@@ -6873,10 +6871,10 @@
                 a("fdd77a34", "Create longer posts"),
                 a("j6d26a7a", "Write as much as you’d like to share"),
                 a("c4fd68da", "Customize your experience"),
-                a("c0195168", "Change your app icon and navigation options");
-            a("b6b5dc94", "Become verified"),
-                a("b06db848", "Stand out from others on the platform"),
-                a("e3e3a97c", "Earn a share of revenue from your posts"),
+                a("c0195168", "Change your app icon and navigation options"),
+                a("b6b5dc94", "Become verified"),
+                a("b06db848", "Stand out from others on the platform");
+            a("e3e3a97c", "Earn a share of revenue from your posts"),
                 a("f15bc24e", "Increased Grok limits"),
                 a("c4666e1c", "More usage of Grok 3, our latest model"),
                 a("he74ae7a", "Highest Grok usage limits"),
@@ -7849,7 +7847,9 @@
                 a("h37f2d96", "Please note not all applicant tracking systems are currently supported."),
                 a("ce102a20", "Redirecting to Stripe"),
                 a("ddfd6718", "Payment Failed"),
-                a("i90ea7d2", "Please urgently update your billing to keep your benefits.");
+                a("i90ea7d2", "Please urgently update your billing to keep your benefits."),
+                a("a62359e6", "Verified Organization Settings"),
+                a("ge221b7c", "Upgrade Verified Organization subscription to get access to affiliates and more ad credits.");
             function i(e, t) {
                 for (var o = 0; o < t.length; o++) {
                     var a = t[o];
@@ -7888,9 +7888,7 @@
                     r(e, t)
                 );
             }
-            a("a62359e6", "Verified Organization Settings"),
-                a("ge221b7c", "Upgrade Verified Organization subscription to get access to affiliates and more ad credits."),
-                a("i4dccc18", "Billing"),
+            a("i4dccc18", "Billing"),
                 a("ec3cd6e4", "Manage your payment method, update billing information, and review your invoices."),
                 a("dac61c3c", "Account settings"),
                 a("b6b5fd66", "Manage your X account including changing your username or password."),
@@ -8891,12 +8889,12 @@
                 a("d1386940", "Stay informed"),
                 a("ecda5f9e", "Misleading"),
                 a("a423473c", "Legally Required Notice"),
-                a("b3296688", "Visibility Limited");
-            a("ccd32094", "Now"),
+                a("b3296688", "Visibility Limited"),
+                a("ccd32094", "Now"),
                 a("abfcce0d", function (e) {
                     return e.amountOfTime + " ago";
-                }),
-                a("ae408b76", "You reposted"),
+                });
+            a("ae408b76", "You reposted"),
                 a("j355f008", "Pinned post"),
                 a("habf9678", "Pinned by Author"),
                 a("db0798ed", function (e) {
@@ -13208,4 +13206,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en.6b323cca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en.b78bc9ca.js.map

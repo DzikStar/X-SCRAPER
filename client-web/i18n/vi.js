@@ -1338,8 +1338,6 @@
                 }),
                 t("i47ad24c", "Tiếp tục nào! Bạn càng thích nhiều bài đăng, thì dòng thời gian của bạn càng hiển thị nội dung phù hợp."),
                 t("def4a37c", "Làm tốt lắm! Bạn càng thích nhiều, dòng thời gian của bạn sẽ càng tuyệt hơn – hãy tiếp tục thích những gì mình yêu thích."),
-                t("bcab06d2", "Đã thích bài đăng"),
-                t("i5efe23e", "Đã bỏ thích bài đăng"),
                 t("f5d17674", "Đã đăng lại bài đăng"),
                 t("d714acfa", "Đã hủy đăng lại bài đăng"),
                 t("b18dff26", "Chỉ Người đăng ký mới có thể thấy bài đăng lại này"),
@@ -1908,10 +1906,10 @@
                 t("a330771e", "Sao chép liên kết vào bảng nhớ tạm"),
                 t("b6510e68", "Sao chép URL Bài viết để bạn có thể chia sẻ Bài viết này."),
                 t("e4a6e006", "Đã xảy ra lỗi. Hãy thử lại."),
-                t("eff483e0", "Sau khi xuất bản, hãy sao chép liên kết để chia sẻ Bài viết.");
-            t("ca15dd4e", "Bản thảo"),
-                t("bb40bf66", "Đã đăng"),
-                t("h107935c", "Lần lưu gần nhất: vừa xong"),
+                t("eff483e0", "Sau khi xuất bản, hãy sao chép liên kết để chia sẻ Bài viết."),
+                t("ca15dd4e", "Bản thảo"),
+                t("bb40bf66", "Đã đăng");
+            t("h107935c", "Lần lưu gần nhất: vừa xong"),
                 t("a753a870", "Áp dụng"),
                 t("afccc67e", "Sao chép liên kết đến Bài viết"),
                 t("beb24e9e", "Đã sao chép URL vào bảng nhớ tạm"),
@@ -2960,10 +2958,10 @@
                 t("c6f58084", "Nhà phát triển"),
                 t("d83f18d2", "Danh mục"),
                 t("hc5aa17c", "Tải ứng dụng X"),
-                t("j0693948", "Tải ứng dụng Grok");
-            t("fbf83158", "Cảnh báo: Thanh toán không thành công"),
-                t("jadeb4da", "Vui lòng cập nhật gấp phương thức thanh toán trước khi mất lợi ích của gói thuê bao."),
-                t("bce3726a", "Cập nhật thông tin thanh toán"),
+                t("j0693948", "Tải ứng dụng Grok"),
+                t("fbf83158", "Cảnh báo: Thanh toán không thành công"),
+                t("jadeb4da", "Vui lòng cập nhật gấp phương thức thanh toán trước khi mất lợi ích của gói thuê bao.");
+            t("bce3726a", "Cập nhật thông tin thanh toán"),
                 t("fce9ecce", "Các video được đề xuất"),
                 t("efe6ef9e", "Xem bài đăng"),
                 t("b3d183ce", "Bài đăng có câu trả lời"),
@@ -3876,12 +3874,12 @@
                 t("d7357e7e", "Xóa khỏi danh sách Đồng chủ phòng"),
                 t("bf307fc0", "Chặn và xóa"),
                 t("ccf2f24e", "Báo cáo"),
-                t("i22835de", "Chấp thuận");
-            t("cb59a0fe", "Từ chối"),
-                t("c2376960", "Yêu cầu phát biểu"),
-                t("aba7dcdd", function (n) {
-                    return "Mời " + n.name;
-                }),
+                t("i22835de", "Chấp thuận"),
+                t("cb59a0fe", "Từ chối"),
+                t("c2376960", "Yêu cầu phát biểu");
+            t("aba7dcdd", function (n) {
+                return "Mời " + n.name;
+            }),
                 t("f5c7aaa7", function (n) {
                     return "chủ phòng";
                 }),
@@ -4908,10 +4906,10 @@
                 t("a7b48b36", "Phần trăm lượt xem video đã hoàn tất."),
                 t("a2580f2a", "Tỷ lệ hoàn thành"),
                 t("ff95a9cc", "ID video"),
-                t("a97e358e", "Liên kết đến video");
-            t("e10e8b46", "Chỉ hiển thị video trong 100 ngày qua."),
-                t("ba37f6da", "Thông tin tổng quan về video"),
-                t("f19846b2", "Hình thu nhỏ video"),
+                t("a97e358e", "Liên kết đến video"),
+                t("e10e8b46", "Chỉ hiển thị video trong 100 ngày qua."),
+                t("ba37f6da", "Thông tin tổng quan về video");
+            t("f19846b2", "Hình thu nhỏ video"),
                 t("ccd6f4a8", "Tiêu đề video"),
                 t("c8410542", "Số lượt xem video của bạn."),
                 t("a532072a", "Người xem"),
@@ -5864,14 +5862,14 @@
                 t("a0ea2fa6", "Trường tên không được để trống"),
                 t("eec37eac", "Đã tồn tại Thư mục dấu trang với tên đó"),
                 t("fce0c59e", "Không thể phân tích cú pháp hoạt ảnh JSON. Vui lòng kiểm tra định dạng của JSON trong tệp hoạt ảnh của bạn và thử lại."),
-                t("g0eea6c2", "Không đọc được tệp hoạt ảnh JSON. Vui lòng thử mở lại tệp.");
-            t("ae58026a", "Để xem trước, hãy mở tệp Branded Like .json"),
+                t("g0eea6c2", "Không đọc được tệp hoạt ảnh JSON. Vui lòng thử mở lại tệp."),
+                t("ae58026a", "Để xem trước, hãy mở tệp Branded Like .json"),
                 t("hd0bc1eb", function (n) {
                     return n.name + " đang trực tuyến";
-                }),
-                t("bea1f26b", function (n) {
-                    return n.name + " đã trực tuyến";
-                }),
+                });
+            t("bea1f26b", function (n) {
+                return n.name + " đã trực tuyến";
+            }),
                 t("ab3ee97f", function (n) {
                     return n.screenName + " không phát trực tuyến";
                 }),
@@ -6872,10 +6870,10 @@
                 t("fdd77a34", "Tạo bài đăng dài hơn"),
                 t("j6d26a7a", "Tha hồ viết bài chia sẻ"),
                 t("c4fd68da", "Tùy chỉnh trải nghiệm của bạn"),
-                t("c0195168", "Thay đổi biểu tượng ứng dụng và tùy chọn điều hướng");
-            t("b6b5dc94", "Xác nhận tài khoản"),
-                t("b06db848", "Nổi bật trong số những người dùng khác trên nền tảng"),
-                t("e3e3a97c", "Kiếm một phần doanh thu từ bài đăng của bạn"),
+                t("c0195168", "Thay đổi biểu tượng ứng dụng và tùy chọn điều hướng"),
+                t("b6b5dc94", "Xác nhận tài khoản"),
+                t("b06db848", "Nổi bật trong số những người dùng khác trên nền tảng");
+            t("e3e3a97c", "Kiếm một phần doanh thu từ bài đăng của bạn"),
                 t("f15bc24e", "Đã tăng giới hạn dùng Grok"),
                 t("c4666e1c", "Tăng mức sử dụng mô hình Grok 3 mới nhất"),
                 t("he74ae7a", "Hạn mức sử dụng Grok cao nhất"),
@@ -7848,7 +7846,9 @@
                 t("h37f2d96", "Hãy lưu ý rằng hiện tại, không phải hệ thống theo dõi ứng viên nào cũng được hỗ trợ."),
                 t("ce102a20", "Đang chuyển hướng đến Stripe"),
                 t("ddfd6718", "Thanh toán không thành công"),
-                t("i90ea7d2", "Vui lòng cập nhật gấp thông tin thanh toán để tiếp tục hưởng quyền lợi.");
+                t("i90ea7d2", "Vui lòng cập nhật gấp thông tin thanh toán để tiếp tục hưởng quyền lợi."),
+                t("a62359e6", "Cài đặt Tổ chức đã xác nhận"),
+                t("ge221b7c", "Nâng cấp gói thuê bao Tổ chức đã xác nhận để có quyền sử dụng tính năng bên liên kết và nhận thêm tín dụng quảng cáo.");
             function g(n, h) {
                 for (var c = 0; c < h.length; c++) {
                     var t = h[c];
@@ -7887,9 +7887,7 @@
                     a(n, h)
                 );
             }
-            t("a62359e6", "Cài đặt Tổ chức đã xác nhận"),
-                t("ge221b7c", "Nâng cấp gói thuê bao Tổ chức đã xác nhận để có quyền sử dụng tính năng bên liên kết và nhận thêm tín dụng quảng cáo."),
-                t("i4dccc18", "Thanh toán"),
+            t("i4dccc18", "Thanh toán"),
                 t("ec3cd6e4", "Quản lý phương thức thanh toán, cập nhật thông tin thanh toán và xem hóa đơn."),
                 t("dac61c3c", "Cài đặt tài khoản"),
                 t("b6b5fd66", "Quản lý tài khoản X, trong đó có việc thay đổi tên người dùng hoặc mật khẩu của bạn."),
@@ -8890,12 +8888,12 @@
                 t("d1386940", "Nhận thông báo"),
                 t("ecda5f9e", "Lừa dối"),
                 t("a423473c", "Thông báo theo quy định của pháp luật"),
-                t("b3296688", "Hạn chế khả năng hiển thị");
-            t("ccd32094", "Bây giờ"),
+                t("b3296688", "Hạn chế khả năng hiển thị"),
+                t("ccd32094", "Bây giờ"),
                 t("abfcce0d", function (n) {
                     return n.amountOfTime + " trước";
-                }),
-                t("ae408b76", "Bạn đã đăng lại"),
+                });
+            t("ae408b76", "Bạn đã đăng lại"),
                 t("j355f008", "Bài đăng đã ghim"),
                 t("habf9678", "Đã được Tác giả ghim"),
                 t("db0798ed", function (n) {
@@ -13206,4 +13204,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.ec891cca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.9e706a9a.js.map

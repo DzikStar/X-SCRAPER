@@ -1339,8 +1339,6 @@
                 }),
                 s("i47ad24c", "[Kéêéêp ïít üp! Théê möøréê pöøsts yöøü lïíkéê, théê béêttéêr yöøür tïíméêlïínéê wïíll béê.]"),
                 s("def4a37c", "[Nïícéê wöørk! Yöøür tïíméêlïínéê’s géêttïíng béêttéêr. Théê möøréê yöøü lïíkéê, théê béêttéêr yöøür tïíméêlïínéê wïíll béê – kéêéêp lïíkïíng théê stüff yöøü’réê ïíntöø.]"),
-                s("bcab06d2", "[Pöøst lïíkéêd]"),
-                s("i5efe23e", "[Pöøst ünlïíkéêd]"),
                 s("f5d17674", "[Pöøst réêpöøstéêd]"),
                 s("d714acfa", "[Pöøst ünréêpöøstéêd]"),
                 s("b18dff26", "[Only Sübscrïíbéêd cåän séêéê thïís réêpöøst]"),
@@ -1909,10 +1907,10 @@
                 s("a330771e", "[Cöøpy lïínk töø yöøür clïípböøåärd]"),
                 s("b6510e68", "[Cöøpy yöøür Artïícléê’s URL söø yöøü cåän shåäréê ïít.]"),
                 s("e4a6e006", "[Söøméêthïíng wéênt wröøng. Pléêåäséê try åägåäïín.]"),
-                s("eff483e0", "[Aftéêr yöøü püblïísh, géêt åä lïínk töø shåäréê théê Artïícléê.]");
-            s("ca15dd4e", "[Dråäft]"),
-                s("bb40bf66", "[Püblïíshéêd]"),
-                s("h107935c", "[Låäst såävéêd jüst nöøw]"),
+                s("eff483e0", "[Aftéêr yöøü püblïísh, géêt åä lïínk töø shåäréê théê Artïícléê.]"),
+                s("ca15dd4e", "[Dråäft]"),
+                s("bb40bf66", "[Püblïíshéêd]");
+            s("h107935c", "[Låäst såävéêd jüst nöøw]"),
                 s("a753a870", "[Apply]"),
                 s("afccc67e", "[Cöøpy lïínk töø Artïícléê]"),
                 s("beb24e9e", "[URL cöøpïíéêd töø théê clïípböøåärd]"),
@@ -2961,10 +2959,10 @@
                 s("c6f58084", "[Déêvéêlöøpéêrs]"),
                 s("d83f18d2", "[Dïíréêctöøry]"),
                 s("hc5aa17c", "[Géêt théê X åäpp]"),
-                s("j0693948", "[Géêt théê Gröøk åäpp]");
-            s("fbf83158", "[Wåärnïíng: Påäyméênt fåäïíléêd]"),
-                s("jadeb4da", "[Pléêåäséê ürgéêntly üpdåätéê yöøür påäyméênt méêthöød béêföøréê yöøü löøséê yöøür sübscrïíptïíöøn béênéêfïíts.]"),
-                s("bce3726a", "[Updåätéê Bïíllïíng]"),
+                s("j0693948", "[Géêt théê Gröøk åäpp]"),
+                s("fbf83158", "[Wåärnïíng: Påäyméênt fåäïíléêd]"),
+                s("jadeb4da", "[Pléêåäséê ürgéêntly üpdåätéê yöøür påäyméênt méêthöød béêföøréê yöøü löøséê yöøür sübscrïíptïíöøn béênéêfïíts.]");
+            s("bce3726a", "[Updåätéê Bïíllïíng]"),
                 s("fce9ecce", "[Süggéêstéêd Vïídéêöøs]"),
                 s("efe6ef9e", "[Vïíéêw pöøst]"),
                 s("b3d183ce", "[Pöøst wïíth réêplïíéês]"),
@@ -3877,12 +3875,12 @@
                 s("d7357e7e", "[Réêmöøvéê fröøm Cöø-höøsts]"),
                 s("bf307fc0", "[Blöøck åänd Réêmöøvéê]"),
                 s("ccf2f24e", "[Réêpöørt]"),
-                s("i22835de", "[Appröøvéê]");
-            s("cb59a0fe", "[Déêny]"),
-                s("c2376960", "[Réêqüéêsts töø Spéêåäk]"),
-                s("aba7dcdd", function (t) {
-                    return "[Invïítéê " + t.name + "]";
-                }),
+                s("i22835de", "[Appröøvéê]"),
+                s("cb59a0fe", "[Déêny]"),
+                s("c2376960", "[Réêqüéêsts töø Spéêåäk]");
+            s("aba7dcdd", function (t) {
+                return "[Invïítéê " + t.name + "]";
+            }),
                 s("f5c7aaa7", function (t) {
                     return "[höøst" + c(t.count, "", "s") + "]";
                 }),
@@ -4909,10 +4907,10 @@
                 s("a7b48b36", "[Théê péêrcéêntåägéê öøf vïídéêöø vïíéêws thåät wéêréê cöømpléêtéêd.]"),
                 s("a2580f2a", "[Cöømpléêtïíöøn Råätéê]"),
                 s("ff95a9cc", "[Vïídéêöø ID]"),
-                s("a97e358e", "[Vïídéêöø Lïínk]");
-            s("e10e8b46", "[Only shöøwïíng théê vïídéêöøs fröøm théê låäst 100 dåäys.]"),
-                s("ba37f6da", "[Vïídéêöø öøvéêrvïíéêw]"),
-                s("f19846b2", "[Vïídéêöø thümbnåäïíl]"),
+                s("a97e358e", "[Vïídéêöø Lïínk]"),
+                s("e10e8b46", "[Only shöøwïíng théê vïídéêöøs fröøm théê låäst 100 dåäys.]"),
+                s("ba37f6da", "[Vïídéêöø öøvéêrvïíéêw]");
+            s("f19846b2", "[Vïídéêöø thümbnåäïíl]"),
                 s("ccd6f4a8", "[Vïídéêöø tïítléê]"),
                 s("c8410542", "[Théê nümbéêr öøf tïíméês yöøür vïídéêöø wåäs vïíéêwéêd.]"),
                 s("a532072a", "[Vïíéêwéêrs]"),
@@ -5865,14 +5863,14 @@
                 s("a0ea2fa6", "[Nåäméê fïíéêld cåännöøt béê éêmpty]"),
                 s("eec37eac", "[Böøöøkmåärk Föøldéêr wïíth thåät nåäméê åälréêåädy éêxïísts]"),
                 s("fce0c59e", "[Fåäïíléêd töø påärséê théê åänïímåätïíöøn JSON. Pléêåäséê chéêck théê föørmåät öøf théê JSON ïín yöøür åänïímåätïíöøn fïíléê åänd try åägåäïín.]"),
-                s("g0eea6c2", "[Fåäïíléêd töø réêåäd théê åänïímåätïíöøn JSON fïíléê. Pléêåäséê try töø öøpéên théê fïíléê åägåäïín.]");
-            s("ae58026a", "[Opéên åä Bråändéêd Lïíkéê .jsöøn fïíléê töø préêvïíéêw]"),
+                s("g0eea6c2", "[Fåäïíléêd töø réêåäd théê åänïímåätïíöøn JSON fïíléê. Pléêåäséê try töø öøpéên théê fïíléê åägåäïín.]"),
+                s("ae58026a", "[Opéên åä Bråändéêd Lïíkéê .jsöøn fïíléê töø préêvïíéêw]"),
                 s("hd0bc1eb", function (t) {
                     return "[" + t.name + " ïís lïívéê]";
-                }),
-                s("bea1f26b", function (t) {
-                    return "[" + t.name + " wåäs lïívéê]";
-                }),
+                });
+            s("bea1f26b", function (t) {
+                return "[" + t.name + " wåäs lïívéê]";
+            }),
                 s("ab3ee97f", function (t) {
                     return "[" + t.screenName + " ïís nöøt lïívéê]";
                 }),
@@ -6873,10 +6871,10 @@
                 s("fdd77a34", "[Créêåätéê löøngéêr pöøsts]"),
                 s("j6d26a7a", "[Wrïítéê åäs müch åäs yöøü’d lïíkéê töø shåäréê]"),
                 s("c4fd68da", "[Cüstöømïízéê yöøür éêxpéêrïíéêncéê]"),
-                s("c0195168", "[Chåängéê yöøür åäpp ïícöøn åänd nåävïígåätïíöøn öøptïíöøns]");
-            s("b6b5dc94", "[Béêcöøméê véêrïífïíéêd]"),
-                s("b06db848", "[Ståänd öøüt fröøm öøthéêrs öøn théê plåätföørm]"),
-                s("e3e3a97c", "[Eåärn åä shåäréê öøf réêvéênüéê fröøm yöøür pöøsts]"),
+                s("c0195168", "[Chåängéê yöøür åäpp ïícöøn åänd nåävïígåätïíöøn öøptïíöøns]"),
+                s("b6b5dc94", "[Béêcöøméê véêrïífïíéêd]"),
+                s("b06db848", "[Ståänd öøüt fröøm öøthéêrs öøn théê plåätföørm]");
+            s("e3e3a97c", "[Eåärn åä shåäréê öøf réêvéênüéê fröøm yöøür pöøsts]"),
                 s("f15bc24e", "[Incréêåäséêd Gröøk lïímïíts]"),
                 s("c4666e1c", "[Möøréê üsåägéê öøf Gröøk 3, öøür låätéêst möødéêl]"),
                 s("he74ae7a", "[Hïíghéêst Gröøk üsåägéê lïímïíts]"),
@@ -7849,7 +7847,9 @@
                 s("h37f2d96", "[Pléêåäséê nöøtéê nöøt åäll åäpplïícåänt tråäckïíng systéêms åäréê cürréêntly süppöørtéêd.]"),
                 s("ce102a20", "[Réêdïíréêctïíng töø Strïípéê]"),
                 s("ddfd6718", "[Påäyméênt Fåäïíléêd]"),
-                s("i90ea7d2", "[Pléêåäséê ürgéêntly üpdåätéê yöøür bïíllïíng töø kéêéêp yöøür béênéêfïíts.]");
+                s("i90ea7d2", "[Pléêåäséê ürgéêntly üpdåätéê yöøür bïíllïíng töø kéêéêp yöøür béênéêfïíts.]"),
+                s("a62359e6", "[Véêrïífïíéêd Orgåänïízåätïíöøn Séêttïíngs]"),
+                s("ge221b7c", "[Upgråädéê Véêrïífïíéêd Orgåänïízåätïíöøn sübscrïíptïíöøn töø géêt åäccéêss töø åäffïílïíåätéês åänd möøréê åäd créêdïíts.]");
             function d(t, n) {
                 for (var r = 0; r < n.length; r++) {
                     var s = n[r];
@@ -7888,9 +7888,7 @@
                     e(t, n)
                 );
             }
-            s("a62359e6", "[Véêrïífïíéêd Orgåänïízåätïíöøn Séêttïíngs]"),
-                s("ge221b7c", "[Upgråädéê Véêrïífïíéêd Orgåänïízåätïíöøn sübscrïíptïíöøn töø géêt åäccéêss töø åäffïílïíåätéês åänd möøréê åäd créêdïíts.]"),
-                s("i4dccc18", "[Bïíllïíng]"),
+            s("i4dccc18", "[Bïíllïíng]"),
                 s("ec3cd6e4", "[Måänåägéê yöøür påäyméênt méêthöød, üpdåätéê bïíllïíng ïínföørmåätïíöøn, åänd réêvïíéêw yöøür ïínvöøïícéês.]"),
                 s("dac61c3c", "[Accöøünt séêttïíngs]"),
                 s("b6b5fd66", "[Måänåägéê yöøür X åäccöøünt ïínclüdïíng chåängïíng yöøür üséêrnåäméê öør påässwöørd.]"),
@@ -8891,12 +8889,12 @@
                 s("d1386940", "[Ståäy ïínföørméêd]"),
                 s("ecda5f9e", "[Mïísléêåädïíng]"),
                 s("a423473c", "[Léêgåälly Réêqüïíréêd Nöøtïícéê]"),
-                s("b3296688", "[Vïísïíbïílïíty Lïímïítéêd]");
-            s("ccd32094", "[Nöøw]"),
+                s("b3296688", "[Vïísïíbïílïíty Lïímïítéêd]"),
+                s("ccd32094", "[Nöøw]"),
                 s("abfcce0d", function (t) {
                     return "[" + t.amountOfTime + " åägöø]";
-                }),
-                s("ae408b76", "[Yöøü réêpöøstéêd]"),
+                });
+            s("ae408b76", "[Yöøü réêpöøstéêd]"),
                 s("j355f008", "[Pïínnéêd pöøst]"),
                 s("habf9678", "[Pïínnéêd by Aüthöør]"),
                 s("db0798ed", function (t) {
@@ -13208,4 +13206,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-xx.59597bfa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-xx.6869702a.js.map

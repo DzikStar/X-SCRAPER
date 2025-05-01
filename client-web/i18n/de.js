@@ -1339,8 +1339,6 @@
                 }),
                 t("i47ad24c", "Weiter so! Je mehr Posts du mit „Gefällt mir“ markierst, desto besser wird deine Timeline."),
                 t("def4a37c", "Gut gemacht! Deine Timeline macht sich langsam. Je mehr du mit „Gefällt mir“ markierst, desto besser wird deine Timeline. Markiere also Sachen, die dir gefallen."),
-                t("bcab06d2", "Post mit „Gefällt mir“ markiert"),
-                t("i5efe23e", "„Gefällt mir“-Markierung aus Post entfernt"),
                 t("f5d17674", "Post repostet"),
                 t("d714acfa", "Repost des Posts aufgehoben"),
                 t("b18dff26", "Nur Abonnent*innen können diesen Repost sehen."),
@@ -1909,10 +1907,10 @@
                 t("a330771e", "Link in deine Zwischenablage kopieren"),
                 t("b6510e68", "Kopiere die URL deines Artikels, damit du ihn teilen kannst."),
                 t("e4a6e006", "Etwas ist schiefgelaufen. Bitte versuche es erneut."),
-                t("eff483e0", "Nach dem Veröffentlichen erhältst du einen Link, mit dem du den Artikel teilen kannst.");
-            t("ca15dd4e", "Entwurf"),
-                t("bb40bf66", "Veröffentlicht"),
-                t("h107935c", "Zuletzt gespeichert: gerade eben"),
+                t("eff483e0", "Nach dem Veröffentlichen erhältst du einen Link, mit dem du den Artikel teilen kannst."),
+                t("ca15dd4e", "Entwurf"),
+                t("bb40bf66", "Veröffentlicht");
+            t("h107935c", "Zuletzt gespeichert: gerade eben"),
                 t("a753a870", "Anwenden"),
                 t("afccc67e", "Link zum Artikel kopieren"),
                 t("beb24e9e", "URL in die Zwischenablage kopiert"),
@@ -2961,10 +2959,10 @@
                 t("c6f58084", "Entwickler"),
                 t("d83f18d2", "Verzeichnis"),
                 t("hc5aa17c", "Hol dir die X App"),
-                t("j0693948", "Hol dir die Grok App");
-            t("fbf83158", "Warnung: Zahlung fehlgeschlagen"),
-                t("jadeb4da", "Bitte aktualisiere dringend deine Zahlungsmethode, da du sonst deine Abonnementvorteile verlierst."),
-                t("bce3726a", "Rechnungsinfo aktualisieren"),
+                t("j0693948", "Hol dir die Grok App"),
+                t("fbf83158", "Warnung: Zahlung fehlgeschlagen"),
+                t("jadeb4da", "Bitte aktualisiere dringend deine Zahlungsmethode, da du sonst deine Abonnementvorteile verlierst.");
+            t("bce3726a", "Rechnungsinfo aktualisieren"),
                 t("fce9ecce", "Vorgeschlagene Videos"),
                 t("efe6ef9e", "Post anzeigen"),
                 t("b3d183ce", "Post mit Antworten"),
@@ -3877,12 +3875,12 @@
                 t("d7357e7e", "Aus Co-Hosts entfernen"),
                 t("bf307fc0", "Blockieren und entfernen"),
                 t("ccf2f24e", "Meldung"),
-                t("i22835de", "Genehmigen");
-            t("cb59a0fe", "Ablehnen"),
-                t("c2376960", "Sprechwünsche"),
-                t("aba7dcdd", function (e) {
-                    return e.name + " einladen";
-                }),
+                t("i22835de", "Genehmigen"),
+                t("cb59a0fe", "Ablehnen"),
+                t("c2376960", "Sprechwünsche");
+            t("aba7dcdd", function (e) {
+                return e.name + " einladen";
+            }),
                 t("f5c7aaa7", function (e) {
                     return "Host" + r(e.count, "", "s");
                 }),
@@ -4909,10 +4907,10 @@
                 t("a7b48b36", "Wie oft in Prozent die Videos vollständig angezeigt wurden."),
                 t("a2580f2a", "Abschlussrate"),
                 t("ff95a9cc", "Video-ID"),
-                t("a97e358e", "Video-Link");
-            t("e10e8b46", "Es werden nur die Videos aus den letzten 100 Tagen gezeigt."),
-                t("ba37f6da", "Videoübersicht"),
-                t("f19846b2", "Video-Miniaturbild"),
+                t("a97e358e", "Video-Link"),
+                t("e10e8b46", "Es werden nur die Videos aus den letzten 100 Tagen gezeigt."),
+                t("ba37f6da", "Videoübersicht");
+            t("f19846b2", "Video-Miniaturbild"),
                 t("ccd6f4a8", "Videotitel"),
                 t("c8410542", "Wie oft dein Video angezeigt wurde."),
                 t("a532072a", "Zuschauer*innen"),
@@ -5865,14 +5863,14 @@
                 t("a0ea2fa6", "Namensfeld darf nicht leer sein"),
                 t("eec37eac", "Lesezeichenordner mit diesem Namen ist bereits vorhanden"),
                 t("fce0c59e", "Der JSON-Animationscode konnte nicht geparst werden. Bitte überprüfe das Format des JSON-Codes in deiner Animationsdatei und versuche es erneut."),
-                t("g0eea6c2", "Die JSON-Animationsdatei konnte nicht gelesen werden. Versuche bitte erneut, die Datei zu öffnen.");
-            t("ae58026a", "Eine .json-Datei für Marken-Likes zur Vorschau öffnen"),
+                t("g0eea6c2", "Die JSON-Animationsdatei konnte nicht gelesen werden. Versuche bitte erneut, die Datei zu öffnen."),
+                t("ae58026a", "Eine .json-Datei für Marken-Likes zur Vorschau öffnen"),
                 t("hd0bc1eb", function (e) {
                     return e.name + " ist live";
-                }),
-                t("bea1f26b", function (e) {
-                    return e.name + " war live";
-                }),
+                });
+            t("bea1f26b", function (e) {
+                return e.name + " war live";
+            }),
                 t("ab3ee97f", function (e) {
                     return e.screenName + " ist nicht live";
                 }),
@@ -6873,10 +6871,10 @@
                 t("fdd77a34", "Erstelle längere Posts"),
                 t("j6d26a7a", "Schreib so viel, wie du teilen möchtest"),
                 t("c4fd68da", "Passe deine Nutzung an"),
-                t("c0195168", "Ändere dein App-Symbol und die Navigationsoptionen");
-            t("b6b5dc94", "Lass dich verifizieren"),
-                t("b06db848", "Heb dich von anderen auf der Plattform ab"),
-                t("e3e3a97c", "Erhalte eine Umsatzbeteilung aus deinen Posts"),
+                t("c0195168", "Ändere dein App-Symbol und die Navigationsoptionen"),
+                t("b6b5dc94", "Lass dich verifizieren"),
+                t("b06db848", "Heb dich von anderen auf der Plattform ab");
+            t("e3e3a97c", "Erhalte eine Umsatzbeteilung aus deinen Posts"),
                 t("f15bc24e", "Höhere Grok-Limits"),
                 t("c4666e1c", "Mehr Nutzung von Grok 3, unserem neuesten Modell"),
                 t("he74ae7a", "Höchste Grok-Nutzungslimits"),
@@ -7849,7 +7847,9 @@
                 t("h37f2d96", "Bitte beachte, dass derzeit nicht alle Bewerbermanagementsysteme unterstützt werden."),
                 t("ce102a20", "Weiterleitung zu Stripe"),
                 t("ddfd6718", "Zahlung fehlgeschlagen"),
-                t("i90ea7d2", "Bitte aktualisiere dringend deine Rechnungsinformationen, damit du deine Vorteile behalten kannst.");
+                t("i90ea7d2", "Bitte aktualisiere dringend deine Rechnungsinformationen, damit du deine Vorteile behalten kannst."),
+                t("a62359e6", "Einstellungen für Verifizierte Organisation"),
+                t("ge221b7c", "Führe ein Upgrade bei deinem Abonnement von Verifizierte Organisationen durch, wenn du Zugriff auf verbundene Accounts und ein höheres Werbeguthaben erhalten möchtest.");
             function a(e, n) {
                 for (var i = 0; i < n.length; i++) {
                     var t = n[i];
@@ -7888,9 +7888,7 @@
                     d(e, n)
                 );
             }
-            t("a62359e6", "Einstellungen für Verifizierte Organisation"),
-                t("ge221b7c", "Führe ein Upgrade bei deinem Abonnement von Verifizierte Organisationen durch, wenn du Zugriff auf verbundene Accounts und ein höheres Werbeguthaben erhalten möchtest."),
-                t("i4dccc18", "Rechnungsstellung"),
+            t("i4dccc18", "Rechnungsstellung"),
                 t("ec3cd6e4", "Verwalte deine Zahlungsmethode, aktualisiere die Rechnungsinformationen und prüfe deine Rechnungen."),
                 t("dac61c3c", "Account-Einstellungen"),
                 t("b6b5fd66", "Verwalte deinen X Account, indem du z. B. deinen Nutzernamen oder dein Passwort änderst."),
@@ -8891,12 +8889,12 @@
                 t("d1386940", "Bleib auf dem Laufenden"),
                 t("ecda5f9e", "Irreführend"),
                 t("a423473c", "Gesetzlich vorgeschriebener Hinweis"),
-                t("b3296688", "Sichtbarkeit eingeschränkt");
-            t("ccd32094", "Jetzt"),
+                t("b3296688", "Sichtbarkeit eingeschränkt"),
+                t("ccd32094", "Jetzt"),
                 t("abfcce0d", function (e) {
                     return "vor " + e.amountOfTime;
-                }),
-                t("ae408b76", "Du hast repostet"),
+                });
+            t("ae408b76", "Du hast repostet"),
                 t("j355f008", "Angehefteter Post"),
                 t("habf9678", "Angeheftet von Autor*in"),
                 t("db0798ed", function (e) {
@@ -13221,4 +13219,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/de.60eba69a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/de.f446d7ca.js.map

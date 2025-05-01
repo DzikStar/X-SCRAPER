@@ -1342,8 +1342,6 @@
                 }),
                 t("i47ad24c", "Keep it up! The more posts you like, the better your timeline will be."),
                 t("def4a37c", "Aiki mai kyau! Shafinka yana kara kyau. Da yanda kake kara yadda kake so, haka shafinka zai kara kyau- cigaba da liking abubuwan da kake da ra'ayi akan su. "),
-                t("bcab06d2", "Post liked"),
-                t("i5efe23e", "Post unliked"),
                 t("f5d17674", "Post reposted"),
                 t("d714acfa", "Post unreposted"),
                 t("b18dff26", "Only Subscribed can see this repost"),
@@ -1912,10 +1910,10 @@
                 t("a330771e", "Copy link to your clipboard"),
                 t("b6510e68", "Copy your Article’s URL so you can share it."),
                 t("e4a6e006", "Wata matsala ta faru. Sake jarrabawa kuma."),
-                t("eff483e0", "After you publish, get a link to share the Article.");
-            t("ca15dd4e", "Draft"),
-                t("bb40bf66", "Published"),
-                t("h107935c", "Last saved just now"),
+                t("eff483e0", "After you publish, get a link to share the Article."),
+                t("ca15dd4e", "Draft"),
+                t("bb40bf66", "Published");
+            t("h107935c", "Last saved just now"),
                 t("a753a870", "Sanya"),
                 t("afccc67e", "Copy link to Article"),
                 t("beb24e9e", "URL copied to the clipboard"),
@@ -2964,10 +2962,10 @@
                 t("c6f58084", "Masu samarwa"),
                 t("d83f18d2", "Jagora"),
                 t("hc5aa17c", "Get the X app"),
-                t("j0693948", "Get the Grok app");
-            t("fbf83158", "Warning: Payment failed"),
-                t("jadeb4da", "Please urgently update your payment method before you lose your subscription benefits."),
-                t("bce3726a", "Update Billing"),
+                t("j0693948", "Get the Grok app"),
+                t("fbf83158", "Warning: Payment failed"),
+                t("jadeb4da", "Please urgently update your payment method before you lose your subscription benefits.");
+            t("bce3726a", "Update Billing"),
                 t("fce9ecce", "Suggested Videos"),
                 t("efe6ef9e", "View post"),
                 t("b3d183ce", "Post with replies"),
@@ -3880,12 +3878,12 @@
                 t("d7357e7e", "Remove from Co-hosts"),
                 t("bf307fc0", "Block and Remove"),
                 t("ccf2f24e", "Rahoto"),
-                t("i22835de", "Amincewa");
-            t("cb59a0fe", "Hanawa"),
-                t("c2376960", "Requests to Speak"),
-                t("aba7dcdd", function (a) {
-                    return "Invite " + a.name;
-                }),
+                t("i22835de", "Amincewa"),
+                t("cb59a0fe", "Hanawa"),
+                t("c2376960", "Requests to Speak");
+            t("aba7dcdd", function (a) {
+                return "Invite " + a.name;
+            }),
                 t("f5c7aaa7", function (a) {
                     return "host" + o(a.count, "", "s");
                 }),
@@ -4912,10 +4910,10 @@
                 t("a7b48b36", "The percentage of video views that were completed."),
                 t("a2580f2a", "Completion Rate"),
                 t("ff95a9cc", "Video ID"),
-                t("a97e358e", "Video Link");
-            t("e10e8b46", "Only showing the videos from the last 100 days."),
-                t("ba37f6da", "Video overview"),
-                t("f19846b2", "Video thumbnail"),
+                t("a97e358e", "Video Link"),
+                t("e10e8b46", "Only showing the videos from the last 100 days."),
+                t("ba37f6da", "Video overview");
+            t("f19846b2", "Video thumbnail"),
                 t("ccd6f4a8", "Video title"),
                 t("c8410542", "The number of times your video was viewed."),
                 t("a532072a", "Viewers"),
@@ -5868,14 +5866,14 @@
                 t("a0ea2fa6", "Filin suna ba zai zama babu komai ba"),
                 t("eec37eac", "Akwai folda mai alama tare da wannan sunan"),
                 t("fce0c59e", "An gaza faskara raiwatawar JSON. Daure ka duba tsarin na JSON ɗin a cikin fayil na raiwatawar sannan sake gwadawa."),
-                t("g0eea6c2", "An gaza karanta fayil na raiwatawar JSON. Daure ka sake buɗe fayil ɗin.");
-            t("ae58026a", "Buɗe wani fayil .json na So Mai Alama domin a fara duba"),
+                t("g0eea6c2", "An gaza karanta fayil na raiwatawar JSON. Daure ka sake buɗe fayil ɗin."),
+                t("ae58026a", "Buɗe wani fayil .json na So Mai Alama domin a fara duba"),
                 t("hd0bc1eb", function (a) {
                     return a.name + " yana kai tsaye";
-                }),
-                t("bea1f26b", function (a) {
-                    return a.name + " ya kasance kai tsaye";
-                }),
+                });
+            t("bea1f26b", function (a) {
+                return a.name + " ya kasance kai tsaye";
+            }),
                 t("ab3ee97f", function (a) {
                     return a.screenName + " is not live";
                 }),
@@ -6876,10 +6874,10 @@
                 t("fdd77a34", "Create longer posts"),
                 t("j6d26a7a", "Write as much as you’d like to share"),
                 t("c4fd68da", "Customize your experience"),
-                t("c0195168", "Change your app icon and navigation options");
-            t("b6b5dc94", "Become verified"),
-                t("b06db848", "Stand out from others on the platform"),
-                t("e3e3a97c", "Earn a share of revenue from your posts"),
+                t("c0195168", "Change your app icon and navigation options"),
+                t("b6b5dc94", "Become verified"),
+                t("b06db848", "Stand out from others on the platform");
+            t("e3e3a97c", "Earn a share of revenue from your posts"),
                 t("f15bc24e", "Increased Grok limits"),
                 t("c4666e1c", "More usage of Grok 3, our latest model"),
                 t("he74ae7a", "Highest Grok usage limits"),
@@ -7852,7 +7850,9 @@
                 t("h37f2d96", "Please note not all applicant tracking systems are currently supported."),
                 t("ce102a20", "Redirecting to Stripe"),
                 t("ddfd6718", "Payment Failed"),
-                t("i90ea7d2", "Please urgently update your billing to keep your benefits.");
+                t("i90ea7d2", "Please urgently update your billing to keep your benefits."),
+                t("a62359e6", "Verified Organization Settings"),
+                t("ge221b7c", "Upgrade Verified Organization subscription to get access to affiliates and more ad credits.");
             function r(a, e) {
                 for (var n = 0; n < e.length; n++) {
                     var t = e[n];
@@ -7891,9 +7891,7 @@
                     u(a, e)
                 );
             }
-            t("a62359e6", "Verified Organization Settings"),
-                t("ge221b7c", "Upgrade Verified Organization subscription to get access to affiliates and more ad credits."),
-                t("i4dccc18", "Billing"),
+            t("i4dccc18", "Billing"),
                 t("ec3cd6e4", "Manage your payment method, update billing information, and review your invoices."),
                 t("dac61c3c", "Account settings"),
                 t("b6b5fd66", "Manage your X account including changing your username or password."),
@@ -8894,12 +8892,12 @@
                 t("d1386940", "Stay informed"),
                 t("ecda5f9e", "Misleading"),
                 t("a423473c", "Legally Required Notice"),
-                t("b3296688", "Visibility Limited");
-            t("ccd32094", "Yanzu"),
+                t("b3296688", "Visibility Limited"),
+                t("ccd32094", "Yanzu"),
                 t("abfcce0d", function (a) {
                     return a.amountOfTime + " da ya wuce";
-                }),
-                t("ae408b76", "You reposted"),
+                });
+            t("ae408b76", "You reposted"),
                 t("j355f008", "Pinned post"),
                 t("habf9678", "Mawallafi ya kafa"),
                 t("db0798ed", function (a) {
@@ -13210,4 +13208,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ha.9cf7060a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ha.9750cdda.js.map

@@ -16,9 +16,9 @@
                 u = a(491831),
                 m = a(856151),
                 b = a(711223),
-                g = a(860747),
+                g = a(462770),
                 _ = a(199213),
-                v = a(253518),
+                v = a(469149),
                 f = a(92235),
                 y = a(534763),
                 h = a(698537),
@@ -435,4 +435,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsRevamp-cff17ecc.c7a649ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsRevamp-cff17ecc.9882899a.js.map

@@ -871,13 +871,13 @@
                                                                   c?.toggleOperationPaused(S.BX.Full, !0);
                                                               },
                                                               w = (t) => {
-                                                                  const { code: s, detail_message: n, maxSizeBytes: d, message: h, name: f } = t;
+                                                                  const { code: s, detail_message: n, maxSizeBytes: d, mediaId: h, message: f, name: g } = t;
                                                                   if (a.mediaFile?.isGif && !i && s === b.Tz.INVALID_MEDIA_CODE) p?.amendUpload({ pauseBeforeFinalize: !1 }), r({ id: u, uploadProgress: 0, uploading: !1, uploadFailed: !1, uploadPromise: void 0 }), o(a, !0).then(e).catch(m);
                                                                   else {
-                                                                      l?.abort(), r({ id: u, uploadProgress: 0, uploading: !1, uploadFailed: !0, uploadError: { code: s, message: h, detail_message: n, maxSizeBytes: d }, uploadPromise: void 0 });
-                                                                      const e = new Z(h ? `${h}` : `Media upload failed [Error code: ${s}]`, { code: s, type: z, isGif: !!a.externalMediaDetails || (a.mediaFile && a.mediaFile.isGif), isImage: a.mediaFile && a.mediaFile.isImage, isVideo: a.mediaFile && a.mediaFile instanceof A.ZP && a.mediaFile.isVideo }),
+                                                                      l?.abort(), r({ id: u, uploadProgress: 0, uploading: !1, uploadFailed: !0, uploadError: { code: s, message: f, detail_message: n, maxSizeBytes: d }, uploadPromise: void 0 });
+                                                                      const e = new Z(f ? `${f}` : `Media upload failed [Error code: ${s}]${h ? ` ${h}` : ""}`, { code: s, type: z, isGif: !!a.externalMediaDetails || (a.mediaFile && a.mediaFile.isGif), isImage: a.mediaFile && a.mediaFile.isImage, isVideo: a.mediaFile && a.mediaFile instanceof A.ZP && a.mediaFile.isVideo }),
                                                                           t = s === _.d.CANCELED ? S.Uk.Cancel : S.Uk.Failure;
-                                                                      c?.setMetadata({ reason: { name: f, message: h, code: s } }), c?.reportOperationComplete([S.BX.Full, S.BX.SruUpload, S.BX.UploadSubmitUntilSruFinish], t), m(e);
+                                                                      c?.setMetadata({ reason: { name: g, message: f, code: s } }), c?.reportOperationComplete([S.BX.Full, S.BX.SruUpload, S.BX.UploadSubmitUntilSruFinish], t), m(e);
                                                                   }
                                                               };
                                                           if (d && a.uploader) a.uploader?.uploadExternalMedia(d.sourceUrl, d.mediaType, d.mediaCategory, { success: h, progress: f, error: w, mediaItem: a });
@@ -1119,4 +1119,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Logout-9f4db315.9281036a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Logout-9f4db315.d653da2a.js.map

@@ -989,7 +989,7 @@
                             } else w(a);
                         },
                         w = (e) => {
-                            this._stats(t, e || "unknown-error", { requestStartTime: m, segmentBytes: u }), "function" == typeof n && n(E(S) || { code: f.INVALID_RES_STATUS });
+                            this._stats(t, e || "unknown-error", { requestStartTime: m, segmentBytes: u }), "function" == typeof n && n(I(S) || { code: f.INVALID_RES_STATUS, mediaId: this.mediaId });
                         },
                         S = new XMLHttpRequest();
                     S.open(e, h, !0),
@@ -997,7 +997,7 @@
                         (S.timeout = this.sruParameterOverrides?.clientsideSruUploadTimeoutMs || g),
                         (S.onload = () => {
                             if (S.status >= 200 && S.status < 400) {
-                                const e = E(S);
+                                const e = I(S);
                                 204 === S.status || e ? (this._stats(t, "success", { requestStartTime: m, segmentBytes: u }), s(e || {}), !c && d && d()) : p("parsererror");
                             } else S.status && 503 !== S.status ? w("invalid-response") : p("503");
                         }),
@@ -1037,7 +1037,7 @@
                 w = Object.freeze({ 0: f.INTERNAL_ERROR, 1: f.INVALID_MEDIA, 2: f.FILE_TOO_LARGE, 3: f.UNSUPPORTED_MEDIA, 4: f.TIMEOUT }),
                 S = Object.freeze({ RESET: 0, PENDING: 1, PAUSED: 2, SUCCEEDED: 3, FAILED: 4 }),
                 T = {};
-            function E(e) {
+            function I(e) {
                 try {
                     return JSON.parse(e.responseText);
                 } catch (e) {
@@ -1047,4 +1047,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.directMessagesData-6107ac1a.fd1f054a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.directMessagesData-6107ac1a.d27fefba.js.map

@@ -6,12 +6,12 @@
             n.d(t, { P: () => I });
             var s = n(552322),
                 i = n(425522),
-                a = n(941204),
-                o = n(335944),
-                r = n(702024),
+                a = n(332161),
+                o = n(472275),
+                r = n(193686),
                 l = n(202784),
-                c = n(94595),
-                d = n(390278);
+                c = n(286689),
+                d = n(615014);
             function m({ src: e, type: t, dimensions: n }) {
                 const { width: i, height: a } = h(n),
                     [r, c] = (0, l.useState)(!1),
@@ -45,7 +45,7 @@
                 return s > 400 && ((s = 400), (n = s * t)), { width: n, height: s };
             }
             var p = n(812115),
-                v = n(615069),
+                v = n(871885),
                 f = n(517922),
                 g = n(556160);
             const j = i.com.x.models.dm.PostLoadingState,
@@ -96,7 +96,7 @@
         759746: (e, t, n) => {
             n.d(t, { M: () => r });
             var s = n(552322),
-                i = n(475694),
+                i = n(789764),
                 a = n(350311);
             const o = ({ firstUrl: e, resolution: t, secondUrl: n, size: i = "xxLarge" }) => {
                     const o = ((e) => {
@@ -144,7 +144,7 @@
         350311: (e, t, n) => {
             n.d(t, { j: () => a, s: () => o });
             var s = n(552322),
-                i = n(26429);
+                i = n(378364);
             const a = "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
                 o = ({ url: e, size: t, resolution: n = "200x200" }) => (0, s.jsx)(i.q, { url: e || a, size: t, resolution: n });
         },
@@ -231,13 +231,13 @@
         200012: (e, t, n) => {
             n.d(t, { p: () => $e });
             var s = n(552322),
-                i = n(469745),
+                i = n(305399),
                 a = n(727071),
                 o = n(425522),
-                r = n(941204),
-                l = n(702024),
-                c = n(436059),
-                d = n(412035),
+                r = n(332161),
+                l = n(193686),
+                c = n(993165),
+                d = n(589259),
                 m = n(350311);
             const x = ({ avatar: e, avatarSize: t, onCustomAvatarNeedsResolving: n }) => (e instanceof o.com.x.dms.model.MediaUriState.ResolvedMedia ? (0, s.jsx)(m.s, { url: e.uri, size: t }) : (e instanceof o.com.x.dms.model.MediaUriState.AvatarNeedsResolving && n(e), (0, s.jsx)(m.s, { size: t })));
             var u = n(759746);
@@ -249,10 +249,10 @@
                 }
                 return (0, s.jsx)(m.s, { size: e });
             };
-            var p = n(595455),
-                v = n(338175),
-                f = n(533788),
-                g = n(803049),
+            var p = n(80208),
+                v = n(38375),
+                f = n(817614),
+                g = n(332476),
                 j = n(537335),
                 w = n(336984);
             const C = ({ previewWithMetadata: e }) => {
@@ -305,7 +305,7 @@
                 };
             var N = n(202784),
                 k = n(110241),
-                S = n(921879);
+                S = n(983706);
             const E = ({ component: e, conversations: t }) => {
                 const n = (0, k.a)(),
                     i = (0, N.useRef)(null),
@@ -345,12 +345,12 @@
                 return (0, s.jsx)(S.T, { api: i, onScroll: r, items: t, renderItem: c });
             };
             var I = n(533476),
-                P = n(11099);
+                P = n(219622);
             function M() {
                 return (0, s.jsxs)("div", { children: [(0, s.jsx)(r.x, { weight: "bold", children: "No chats yet" }), (0, s.jsx)(r.x, { color: "gray700", children: "Start chatting with end-to-end encryption" })] });
             }
             var R = n(984713),
-                A = n(304183);
+                A = n(741064);
             const T = ({ component: e, shouldRegister: t }) =>
                     (0, s.jsxs)("div", {
                         className: "p-5 rounded-2xl border-2 border-gray-100 bg-gray-0 absolute bottom-4 left-4 right-4 flex flex-col gap-2 z-10",
@@ -434,8 +434,8 @@
                 V = n(787395),
                 Z = n(611463),
                 O = n(369962),
-                $ = n(582440),
-                F = n(154666);
+                $ = n(782879),
+                F = n(468208);
             const J = o.com.x.dms.chat.DmEvent.ResolveCustomGroupAvatar,
                 W = o.com.x.dms.model.DmTitleState,
                 X = ({ component: e }) => {
@@ -467,18 +467,18 @@
             var H = n(617588),
                 Q = n(628047),
                 Y = n(853582),
-                ee = n(898100),
-                te = n(511974),
-                ne = n(682008),
+                ee = n(351417),
+                te = n(123848),
+                ne = n(662375),
                 se = n(379342),
                 ie = n(455091),
-                ae = n(844098),
-                oe = n(130629),
-                re = n(816828),
+                ae = n(653748),
+                oe = n(423011),
+                re = n(772669),
                 le = n(658358),
                 ce = n(466285),
                 de = n(620134),
-                me = n(517652);
+                me = n(353561);
             const xe = ({ conversationId: e, onVisibilityChange: t }) => {
                     const [n, i] = (0, N.useState)(null),
                         a = (0, Z.n)();
@@ -559,11 +559,11 @@
                         ],
                     });
                 };
-            var he = n(776604),
-                pe = n(578132),
-                ve = n(903201),
-                fe = n(427724),
-                ge = n(705187);
+            var he = n(527735),
+                pe = n(117113),
+                ve = n(791010),
+                fe = n(162807),
+                ge = n(89616);
             const je = ({ handleParticipantClicked: e, handleParticipantMenuButtonClicked: t, menuItems: n, participant: i }) => {
                     if (!n || 0 === n.length) return null;
                     const a = n
@@ -593,7 +593,7 @@
                             return (0, s.jsxs)("div", { className: "flex flex-row w-full gap-2 py-2 items-center", children: [(0, s.jsx)(m.s, { url: n.user.profileImageUrl, size: "large" }), (0, s.jsx)("div", { className: "flex-1", children: (0, s.jsx)(d.R, { name: n.user.displayName, screenName: n.user.screenName, badges: (0, w.r)(n.user), isStacked: !0 }) }), (0, s.jsx)(je, { participant: n, menuItems: a, handleParticipantClicked: e, handleParticipantMenuButtonClicked: t })] }, n.user.screenName);
                         }),
                     });
-            var Ce = n(395828);
+            var Ce = n(568366);
             function ye({ icon: e, destructive: t, onClick: n, title: i, value: a, showChevron: o = !1 }) {
                 return (0, s.jsx)("div", { className: "my-2 rounded-xl bg-gray-0 cursor-pointer w-full", onClick: n, children: (0, s.jsxs)("div", { className: "flex flex-row items-center justify-between p-4", children: [(0, s.jsxs)("div", { className: `flex items-center gap-2 ${t && "text-red-500"}`, children: [e, (0, s.jsx)(r.x, { size: "body", weight: "medium", color: t ? "red500" : "text", children: i })] }), (0, s.jsxs)("div", { className: "flex items-center gap-2", children: [a && (0, s.jsx)(r.x, { size: "body", color: "gray500", children: a }), o && (0, s.jsx)(te.Z, { className: "text-gray-500" })] })] }) });
             }
@@ -750,7 +750,7 @@
                 });
             }
             var Re = n(463341),
-                Ae = n(522302),
+                Ae = n(994120),
                 Te = n(167285);
             const ze = o.com.x.dms.vanishingmode,
                 De = ({ id: e }) => {
@@ -988,4 +988,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-e0975bf4.a6d79a8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-e0975bf4.ebfba34a.js.map

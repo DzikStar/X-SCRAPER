@@ -474,7 +474,7 @@
                             } else g(o);
                         },
                         g = (t) => {
-                            this._stats(e, t || "unknown-error", { requestStartTime: m, segmentBytes: u }), "function" == typeof n && n(b(E) || { code: y.INVALID_RES_STATUS });
+                            this._stats(e, t || "unknown-error", { requestStartTime: m, segmentBytes: u }), "function" == typeof n && n(b(E) || { code: y.INVALID_RES_STATUS, mediaId: this.mediaId });
                         },
                         E = new XMLHttpRequest();
                     E.open(t, l, !0),
@@ -768,4 +768,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.AppModules-6107ac1a.5d5bf55a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.AppModules-6107ac1a.51eb0dfa.js.map

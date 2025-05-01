@@ -435,7 +435,7 @@
                             (this.mediaId = e.media_id_string), this._getStatus();
                         },
                         (...e) => this._uploadError(...e),
-                        p,
+                        m,
                     );
                 }
                 _postInit() {
@@ -456,7 +456,7 @@
                                 i,
                                 (...e) => this._initSuccess(...e),
                                 (...e) => this._uploadError(...e),
-                                p,
+                                m,
                             );
                     } else this._uploadError({ code: S.ZERO_FILE_LENGTH });
                 }
@@ -520,7 +520,7 @@
                                 t,
                                 (...e) => this._finalizeOrStatusSuccess(...e),
                                 (...e) => this._uploadError(...e),
-                                p,
+                                m,
                             );
                     }
                 }
@@ -559,7 +559,7 @@
                             e,
                             (...e) => this._finalizeOrStatusSuccess(...e),
                             (...e) => this._uploadError(...e),
-                            p,
+                            m,
                         );
                     }
                 }
@@ -597,7 +597,7 @@
                 }
                 _sendXhr(e, t, i, s, a, l, r, d, u = 0) {
                     const c = `${this.uploadUrl}?command=${t}${i}`;
-                    let p = !1;
+                    let m = !1;
                     const h = new Date(),
                         g = (n) => {
                             if (l) {
@@ -608,16 +608,16 @@
                             } else f(n);
                         },
                         f = (e) => {
-                            this._stats(t, e || "unknown-error", { requestStartTime: h, segmentBytes: u }), "function" == typeof a && a(T(k) || { code: S.INVALID_RES_STATUS });
+                            this._stats(t, e || "unknown-error", { requestStartTime: h, segmentBytes: u }), "function" == typeof a && a(T(k) || { code: S.INVALID_RES_STATUS, mediaId: this.mediaId });
                         },
                         k = new XMLHttpRequest();
                     k.open(e, c, !0),
                         (k.withCredentials = !0),
-                        (k.timeout = this.sruParameterOverrides?.clientsideSruUploadTimeoutMs || m),
+                        (k.timeout = this.sruParameterOverrides?.clientsideSruUploadTimeoutMs || p),
                         (k.onload = () => {
                             if (k.status >= 200 && k.status < 400) {
                                 const e = T(k);
-                                204 === k.status || e ? (this._stats(t, "success", { requestStartTime: h, segmentBytes: u }), s(e || {}), !p && d && d()) : g("parsererror");
+                                204 === k.status || e ? (this._stats(t, "success", { requestStartTime: h, segmentBytes: u }), s(e || {}), !m && d && d()) : g("parsererror");
                             } else k.status && 503 !== k.status ? f("invalid-response") : g("503");
                         }),
                         (k.onerror = () => g("error")),
@@ -629,7 +629,7 @@
                         F ? e.loaded === e.total && this._bitrateMonitor?.uploadFinish(c, e.total) : ((F = !0), this._bitrateMonitor?.uploadStart(c, e.loaded));
                         const t = e.loaded,
                             i = ((this.uploadedBytes + t) / this.totalBytes) * 100;
-                        if ((this._notifyProgress(i, this.mediaId), t / e.total > y && !p && ((p = !0), r))) {
+                        if ((this._notifyProgress(i, this.mediaId), t / e.total > y && !m && ((m = !0), r))) {
                             const e = Math.max(1, new Date().getTime() - h.getTime()),
                                 i = this.minSegmentBytes,
                                 s = this.sruParameterOverrides?.maxSegmentBytes;
@@ -646,8 +646,8 @@
                 }
             }
             const c = 2147483647,
-                p = 1,
-                m = 45e3,
+                m = 1,
+                p = 45e3,
                 h = (window.location.host.includes("twitter.com") ? "https://upload.twitter.com" : "https://upload.x.com") + "/i/media/upload.json",
                 g = 2,
                 y = 0.95,
@@ -674,4 +674,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.SideNav~loader.SideNavRedesign-6107ac1a.b9e5b38a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.SideNav~loader.SideNavRedesign-6107ac1a.8ff48cfa.js.map

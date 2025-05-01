@@ -1338,8 +1338,6 @@
                 }),
                 s("i47ad24c", "Csak így tovább! Minél több bejegyzést kedvelsz, annál jobb lesz az idővonalad."),
                 s("def4a37c", "Szép munka! Az idővonalad egyre jobb. Minél többet kedvelsz, annál jobb lesz az idővonalad – kedveld továbbra is azokat a dolgokat, amelyek tetszenek neked."),
-                s("bcab06d2", "Bejegyzés kedvelve"),
-                s("i5efe23e", "A bejegyzés kedvelése visszavonva"),
                 s("f5d17674", "Bejegyzés újraposztolva"),
                 s("d714acfa", "Bejegyzés újraposztolása visszavonva"),
                 s("b18dff26", "Csak az Előfizetettek láthatják ezt az újraposztolt bejegyzést."),
@@ -1908,10 +1906,10 @@
                 s("a330771e", "Hivatkozás másolása a vágólapra"),
                 s("b6510e68", "Másold ki a cikked URL-címét a megosztáshoz."),
                 s("e4a6e006", "Valami hiba történt. Kérjük, próbáld meg újra!"),
-                s("eff483e0", "A közzététel után lekérhetsz egy hivatkozást a Cikk megosztásához.");
-            s("ca15dd4e", "Piszkozat"),
-                s("bb40bf66", "Közzétéve"),
-                s("h107935c", "Utolsó mentés épp most"),
+                s("eff483e0", "A közzététel után lekérhetsz egy hivatkozást a Cikk megosztásához."),
+                s("ca15dd4e", "Piszkozat"),
+                s("bb40bf66", "Közzétéve");
+            s("h107935c", "Utolsó mentés épp most"),
                 s("a753a870", "Alkalmaz"),
                 s("afccc67e", "Hivatkozás másolása a cikkbe"),
                 s("beb24e9e", "Az URL-cím vágólapra másolva"),
@@ -2960,10 +2958,10 @@
                 s("c6f58084", "Fejlesztők"),
                 s("d83f18d2", "Könyvtár"),
                 s("hc5aa17c", "Az X alkalmazás letöltése"),
-                s("j0693948", "A Grok alkalmazás letöltése");
-            s("fbf83158", "Figyelmeztet: A fizetés sikertelen"),
-                s("jadeb4da", "Sürgősen frissítsd a fizetési módod, még mielőtt elveszíted az előfizetés nyújtotta előnyöket."),
-                s("bce3726a", "Számlázási adatok frissítése"),
+                s("j0693948", "A Grok alkalmazás letöltése"),
+                s("fbf83158", "Figyelmeztet: A fizetés sikertelen"),
+                s("jadeb4da", "Sürgősen frissítsd a fizetési módod, még mielőtt elveszíted az előfizetés nyújtotta előnyöket.");
+            s("bce3726a", "Számlázási adatok frissítése"),
                 s("fce9ecce", "Javasolt videók"),
                 s("efe6ef9e", "Bejegyzés megtekintése"),
                 s("b3d183ce", "Bejegyzés válaszokkal"),
@@ -3876,12 +3874,12 @@
                 s("d7357e7e", "Eltávolítás a társhosztok közül"),
                 s("bf307fc0", "Letiltás és eltávolítás"),
                 s("ccf2f24e", "Jelentés"),
-                s("i22835de", "Elfogadás");
-            s("cb59a0fe", "Elutasítás"),
-                s("c2376960", "Hozzászólói kérések"),
-                s("aba7dcdd", function (e) {
-                    return e.name + " meghívása";
-                }),
+                s("i22835de", "Elfogadás"),
+                s("cb59a0fe", "Elutasítás"),
+                s("c2376960", "Hozzászólói kérések");
+            s("aba7dcdd", function (e) {
+                return e.name + " meghívása";
+            }),
                 s("f5c7aaa7", function (e) {
                     return "hoszt";
                 }),
@@ -4908,10 +4906,10 @@
                 s("a7b48b36", "A videók végignézésének aránya százalékban."),
                 s("a2580f2a", "Végignézési arány"),
                 s("ff95a9cc", "Videó azonosítója"),
-                s("a97e358e", "Videóhivatkozás");
-            s("e10e8b46", "Csak a legutóbbi 100 nap videói jelennek meg."),
-                s("ba37f6da", "Videó áttekintése"),
-                s("f19846b2", "Videó bélyegképe"),
+                s("a97e358e", "Videóhivatkozás"),
+                s("e10e8b46", "Csak a legutóbbi 100 nap videói jelennek meg."),
+                s("ba37f6da", "Videó áttekintése");
+            s("f19846b2", "Videó bélyegképe"),
                 s("ccd6f4a8", "Videó címe"),
                 s("c8410542", "A videód megtekintéseinek száma."),
                 s("a532072a", "Nézők"),
@@ -5864,14 +5862,14 @@
                 s("a0ea2fa6", "A név mező nem lehet üres"),
                 s("eec37eac", "Már létezik ilyen nevű Könyvjelzőmappa"),
                 s("fce0c59e", "Nem sikerült beelemezni az animációs JSON-fájlt. Kérjük, ellenőrizd a JSON formátumát az animációs fájlban, és próbáld meg újra."),
-                s("g0eea6c2", "Nem sikerült beolvasni az animációs JSON-fájlt. Kérjük, próbáld meg újra megnyitni a fájlt.");
-            s("ae58026a", "Nyiss meg egy animált kedvelési .json-fájlt az előnézethez"),
+                s("g0eea6c2", "Nem sikerült beolvasni az animációs JSON-fájlt. Kérjük, próbáld meg újra megnyitni a fájlt."),
+                s("ae58026a", "Nyiss meg egy animált kedvelési .json-fájlt az előnézethez"),
                 s("hd0bc1eb", function (e) {
                     return e.name + " élőben közvetít";
-                }),
-                s("bea1f26b", function (e) {
-                    return e.name + " élőben közvetített";
-                }),
+                });
+            s("bea1f26b", function (e) {
+                return e.name + " élőben közvetített";
+            }),
                 s("ab3ee97f", function (e) {
                     return e.screenName + " nem közvetít élőben";
                 }),
@@ -6872,10 +6870,10 @@
                 s("fdd77a34", "Hosszabb bejegyzések írása"),
                 s("j6d26a7a", "Írj annyit, amennyit csak meg szeretnél osztani"),
                 s("c4fd68da", "Szabd testre a felhasználói élményt!"),
-                s("c0195168", "Cseréld le az alkalmazás ikonját és a navigációs lehetőségeket");
-            s("b6b5dc94", "Légy ellenőrzött!"),
-                s("b06db848", "Tűnj ki a tömegből a platformon!"),
-                s("e3e3a97c", "Szerezz részesedést a bejegyzéseidből származó bevételből"),
+                s("c0195168", "Cseréld le az alkalmazás ikonját és a navigációs lehetőségeket"),
+                s("b6b5dc94", "Légy ellenőrzött!"),
+                s("b06db848", "Tűnj ki a tömegből a platformon!");
+            s("e3e3a97c", "Szerezz részesedést a bejegyzéseidből származó bevételből"),
                 s("f15bc24e", "Megnövelt Grok-korlátok"),
                 s("c4666e1c", "A legújabb modellünk, a Grok 3 szélesebb körű használata"),
                 s("he74ae7a", "Legmagasabb Grok-használati korlátok"),
@@ -7848,7 +7846,9 @@
                 s("h37f2d96", "Tájékoztatunk, hogy jelenleg nem minden pályázói nyomkövetési rendszer támogatott."),
                 s("ce102a20", "Átirányítás a Stripe-ra"),
                 s("ddfd6718", "A fizetés sikertelen"),
-                s("i90ea7d2", "Sürgősen frissítsd a számlázási adataidat az előnyök megőrzése érdekében.");
+                s("i90ea7d2", "Sürgősen frissítsd a számlázási adataidat az előnyök megőrzése érdekében."),
+                s("a62359e6", "Ellenőrzött szervezet beállításai"),
+                s("ge221b7c", "Frissítsd az Ellenőrzött szervezetek előfizetésed, hogy hozzáférést kaphass a partnerekhez és még több hirdetési kreditet kapj.");
             function n(e, t) {
                 for (var a = 0; a < t.length; a++) {
                     var s = t[a];
@@ -7887,9 +7887,7 @@
                     z(e, t)
                 );
             }
-            s("a62359e6", "Ellenőrzött szervezet beállításai"),
-                s("ge221b7c", "Frissítsd az Ellenőrzött szervezetek előfizetésed, hogy hozzáférést kaphass a partnerekhez és még több hirdetési kreditet kapj."),
-                s("i4dccc18", "Számlázás"),
+            s("i4dccc18", "Számlázás"),
                 s("ec3cd6e4", "A fizetési mód kezelése, a számlázási információk frissítése és a bevételek ellenőrzése."),
                 s("dac61c3c", "Fiókbeállítások"),
                 s("b6b5fd66", "Az X-fiókod kezelése, beleértve a felhasználónév és jelszó módosítását is."),
@@ -8890,12 +8888,12 @@
                 s("d1386940", "Maradj naprakész!"),
                 s("ecda5f9e", "Félrevezető"),
                 s("a423473c", "Jogilag előírt közlemény"),
-                s("b3296688", "Korlátozott láthatóság");
-            s("ccd32094", "Most"),
+                s("b3296688", "Korlátozott láthatóság"),
+                s("ccd32094", "Most"),
                 s("abfcce0d", function (e) {
                     return "Ennyivel ezelőtt: " + e.amountOfTime;
-                }),
-                s("ae408b76", "Újraposztoltad"),
+                });
+            s("ae408b76", "Újraposztoltad"),
                 s("j355f008", "Kitűzött bejegyzés"),
                 s("habf9678", "Kitűzte a szerző"),
                 s("db0798ed", function (e) {
@@ -13216,4 +13214,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hu.6dd9a9aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hu.8ff85fca.js.map

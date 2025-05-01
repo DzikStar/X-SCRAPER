@@ -1339,8 +1339,6 @@
                 }),
                 i("i47ad24c", "Ipagpatuloy mo lang! Mas marami kang nila-like na post, mas gaganda ang timeline mo."),
                 i("def4a37c", "Magaling! Paganda nang paganda ang timeline mo. Kung mas marami kang ila-like, mas gaganda ang timeline mo – mag-like lang nang mag-like ng mga gusto mo."),
-                i("bcab06d2", "Na-like na ang post"),
-                i("i5efe23e", "Na-unlike na ang post"),
                 i("f5d17674", "Na-repost na ang post"),
                 i("d714acfa", "Na-unrepost na ang post"),
                 i("b18dff26", "Mga Nag-subscribe lang ang makakakita ng repost na ito"),
@@ -1909,10 +1907,10 @@
                 i("a330771e", "Kopyahin ang link sa clipboard mo"),
                 i("b6510e68", "Kopyahin ang URL ng Article mo para maibahagi mo ito."),
                 i("e4a6e006", "Nagkaroon ng problema. Pakisubukang muli."),
-                i("eff483e0", "Pagkatapos mong mag-publish, kunin ang link para ibahagi ang Article.");
-            i("ca15dd4e", "Draft"),
-                i("bb40bf66", "Na-publish"),
-                i("h107935c", "Huling na-save ngayon lang"),
+                i("eff483e0", "Pagkatapos mong mag-publish, kunin ang link para ibahagi ang Article."),
+                i("ca15dd4e", "Draft"),
+                i("bb40bf66", "Na-publish");
+            i("h107935c", "Huling na-save ngayon lang"),
                 i("a753a870", "I-apply"),
                 i("afccc67e", "Kopyahin ang link sa Article"),
                 i("beb24e9e", "Nakopya na ang URL sa clipboard"),
@@ -2961,10 +2959,10 @@
                 i("c6f58084", "Mga developer"),
                 i("d83f18d2", "Direktoryo"),
                 i("hc5aa17c", "Kunin ang X app"),
-                i("j0693948", "Kunin ang Grok app");
-            i("fbf83158", "Babala: Hindi naproseso ang pagbabayad"),
-                i("jadeb4da", "Paki-update agad ang paraan mo ng pagbabayad bago mawala ang mga benepisyo mo sa subscription."),
-                i("bce3726a", "I-update ang Billing"),
+                i("j0693948", "Kunin ang Grok app"),
+                i("fbf83158", "Babala: Hindi naproseso ang pagbabayad"),
+                i("jadeb4da", "Paki-update agad ang paraan mo ng pagbabayad bago mawala ang mga benepisyo mo sa subscription.");
+            i("bce3726a", "I-update ang Billing"),
                 i("fce9ecce", "Mga Iminumungkahing Video"),
                 i("efe6ef9e", "Tingnan ang post"),
                 i("b3d183ce", "Post na may mga reply"),
@@ -3877,12 +3875,12 @@
                 i("d7357e7e", "Alisin sa mga Co-host"),
                 i("bf307fc0", "I-block at Alisin"),
                 i("ccf2f24e", "Ulat"),
-                i("i22835de", "Aprubahan");
-            i("cb59a0fe", "Tanggihan"),
-                i("c2376960", "Humiling na Magsalita"),
-                i("aba7dcdd", function (a) {
-                    return "Imbitahan si " + a.name;
-                }),
+                i("i22835de", "Aprubahan"),
+                i("cb59a0fe", "Tanggihan"),
+                i("c2376960", "Humiling na Magsalita");
+            i("aba7dcdd", function (a) {
+                return "Imbitahan si " + a.name;
+            }),
                 i("f5c7aaa7", function (a) {
                     return e(a.count, "H", "h") + "ost";
                 }),
@@ -4909,10 +4907,10 @@
                 i("a7b48b36", "Ang percentage ng mga nakumpletong panonood ng video."),
                 i("a2580f2a", "Rate ng Pagkumpleto"),
                 i("ff95a9cc", "Video ID"),
-                i("a97e358e", "Link ng Video");
-            i("e10e8b46", "Ipinapakita lang ang mga video mula sa nakaraang 100 araw."),
-                i("ba37f6da", "Overview ng video"),
-                i("f19846b2", "Thumbnail ng video"),
+                i("a97e358e", "Link ng Video"),
+                i("e10e8b46", "Ipinapakita lang ang mga video mula sa nakaraang 100 araw."),
+                i("ba37f6da", "Overview ng video");
+            i("f19846b2", "Thumbnail ng video"),
                 i("ccd6f4a8", "Title ng Video"),
                 i("c8410542", "Ang dami ng beses na pinanood ang video mo."),
                 i("a532072a", "Mga Viewer"),
@@ -5865,14 +5863,14 @@
                 i("a0ea2fa6", "Hindi puwedeng walang laman ang field ng pangalan"),
                 i("eec37eac", "Mayroon nang Folder ng Bookmark na ganyan ang pangalan"),
                 i("fce0c59e", "Hindi na-parse ang animation JSON. Pakitingnan ang format ng JSON sa iyong animation file at subukan ulit."),
-                i("g0eea6c2", "Hindi na-read ang animation JSON file. Pakisubukang buksan ulit ang file.");
-            i("ae58026a", "Magbukas ng Branded na Pag-like na .json file na ipi-preview"),
+                i("g0eea6c2", "Hindi na-read ang animation JSON file. Pakisubukang buksan ulit ang file."),
+                i("ae58026a", "Magbukas ng Branded na Pag-like na .json file na ipi-preview"),
                 i("hd0bc1eb", function (a) {
                     return "Live si " + a.name;
-                }),
-                i("bea1f26b", function (a) {
-                    return "Naging live si " + a.name;
-                }),
+                });
+            i("bea1f26b", function (a) {
+                return "Naging live si " + a.name;
+            }),
                 i("ab3ee97f", function (a) {
                     return "Hindi naka-live si " + a.screenName;
                 }),
@@ -6873,10 +6871,10 @@
                 i("fdd77a34", "Sumulat ng mas mahahabang post"),
                 i("j6d26a7a", "Sumulat ng hanggang gusto mong ibahagi"),
                 i("c4fd68da", "I-customize ang karanasan mo"),
-                i("c0195168", "Palitan ang app icon mo at mga opsyon mo sa pag-navigate");
-            i("b6b5dc94", "Magpa-verify"),
-                i("b06db848", "Maging kapansin-pansin mula sa iba pang nasa platform"),
-                i("e3e3a97c", "Makakuha ng share ng kita mula sa mga post mo"),
+                i("c0195168", "Palitan ang app icon mo at mga opsyon mo sa pag-navigate"),
+                i("b6b5dc94", "Magpa-verify"),
+                i("b06db848", "Maging kapansin-pansin mula sa iba pang nasa platform");
+            i("e3e3a97c", "Makakuha ng share ng kita mula sa mga post mo"),
                 i("f15bc24e", "Mas mataas na limitasyon ng Grok"),
                 i("c4666e1c", "Higit pang usage ng Grok 3, ang aming pinakabagong model"),
                 i("he74ae7a", "Pinakamatataas na limitasyon ng usage ng Grok"),
@@ -7849,7 +7847,9 @@
                 i("h37f2d96", "Pakitandaan na hindi lahat ng applicant tracking system ay kasalukuyang sinusuportahan."),
                 i("ce102a20", "Nire-redirect sa Stripe"),
                 i("ddfd6718", "Hindi Naproseso ang Pagbabayad"),
-                i("i90ea7d2", "Paki-update agad ang billing mo para mapanatili ang mga benepisyo mo.");
+                i("i90ea7d2", "Paki-update agad ang billing mo para mapanatili ang mga benepisyo mo."),
+                i("a62359e6", "Mga Setting ng Beripikadong Organisasyon"),
+                i("ge221b7c", "I-upgrade ang subscription sa Beripikadong Organisasyon para magkaroon ng access sa mga affiliate at iba pang ad credit. ");
             function t(a, n) {
                 for (var g = 0; g < n.length; g++) {
                     var i = n[g];
@@ -7888,9 +7888,7 @@
                     o(a, n)
                 );
             }
-            i("a62359e6", "Mga Setting ng Beripikadong Organisasyon"),
-                i("ge221b7c", "I-upgrade ang subscription sa Beripikadong Organisasyon para magkaroon ng access sa mga affiliate at iba pang ad credit. "),
-                i("i4dccc18", "Billing"),
+            i("i4dccc18", "Billing"),
                 i("ec3cd6e4", "Pamahalaan ang paraan mo ng pagbabayad, i-update ng impormasyon ng billing, at i-review ang mga invoice mo."),
                 i("dac61c3c", "Mga setting ng account"),
                 i("b6b5fd66", "Pamahalaan ang X account mo kasama ang pagpapalit ng username o password mo."),
@@ -8891,12 +8889,12 @@
                 i("d1386940", "Manatiling nakakaalam"),
                 i("ecda5f9e", "Mapanlinlang"),
                 i("a423473c", "Abiso na Legal na Kinakailangan"),
-                i("b3296688", "Limitado ang Makakakita");
-            i("ccd32094", "Ngayon"),
+                i("b3296688", "Limitado ang Makakakita"),
+                i("ccd32094", "Ngayon"),
                 i("abfcce0d", function (a) {
                     return a.amountOfTime + " ang nakalipas";
-                }),
-                i("ae408b76", "Nag-repost ka"),
+                });
+            i("ae408b76", "Nag-repost ka"),
                 i("j355f008", "Naka-pin na post"),
                 i("habf9678", "Na-pin ng Author"),
                 i("db0798ed", function (a) {
@@ -13220,4 +13218,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fil.41009b2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fil.867476ca.js.map

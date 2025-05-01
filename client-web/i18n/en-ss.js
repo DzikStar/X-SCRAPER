@@ -1339,8 +1339,6 @@
                 }),
                 a("i47ad24c", "[[281722]] Keep it up! The more posts you like, the better your timeline will be."),
                 a("def4a37c", "[[264930]] Nice work! Your timeline’s getting better. The more you like, the better your timeline will be – keep liking the stuff you’re into."),
-                a("bcab06d2", "[[281748]] Post liked"),
-                a("i5efe23e", "[[281730]] Post unliked"),
                 a("f5d17674", "[[281734]] Post reposted"),
                 a("d714acfa", "[[281737]] Post unreposted"),
                 a("b18dff26", "[[281747]] Only Subscribed can see this repost"),
@@ -1909,10 +1907,10 @@
                 a("a330771e", "[[284904]] Copy link to your clipboard"),
                 a("b6510e68", "[[284899]] Copy your Article’s URL so you can share it."),
                 a("e4a6e006", "[[243272]] Something went wrong. Please try again."),
-                a("eff483e0", "[[284886]] After you publish, get a link to share the Article.");
-            a("ca15dd4e", "[[209399]] Draft"),
-                a("bb40bf66", "[[224076]] Published"),
-                a("h107935c", "[[284908]] Last saved just now"),
+                a("eff483e0", "[[284886]] After you publish, get a link to share the Article."),
+                a("ca15dd4e", "[[209399]] Draft"),
+                a("bb40bf66", "[[224076]] Published");
+            a("h107935c", "[[284908]] Last saved just now"),
                 a("a753a870", "[[188695]] Apply"),
                 a("afccc67e", "[[284898]] Copy link to Article"),
                 a("beb24e9e", "[[284938]] URL copied to the clipboard"),
@@ -2961,10 +2959,10 @@
                 a("c6f58084", "[[180900]] Developers"),
                 a("d83f18d2", "[[180901]] Directory"),
                 a("hc5aa17c", "[[294380]] Get the X app"),
-                a("j0693948", "[[294379]] Get the Grok app");
-            a("fbf83158", "[[293517]] Warning: Payment failed"),
-                a("jadeb4da", "[[294150]] Please urgently update your payment method before you lose your subscription benefits."),
-                a("bce3726a", "[[293518]] Update Billing"),
+                a("j0693948", "[[294379]] Get the Grok app"),
+                a("fbf83158", "[[293517]] Warning: Payment failed"),
+                a("jadeb4da", "[[294150]] Please urgently update your payment method before you lose your subscription benefits.");
+            a("bce3726a", "[[293518]] Update Billing"),
                 a("fce9ecce", "[[291414]] Suggested Videos"),
                 a("efe6ef9e", "[[281778]] View post"),
                 a("b3d183ce", "[[280530]] Post with replies"),
@@ -3877,12 +3875,12 @@
                 a("d7357e7e", "[[285863]] Remove from Co-hosts"),
                 a("bf307fc0", "[[281203]] Block and Remove"),
                 a("ccf2f24e", "[[143027]] Report"),
-                a("i22835de", "[[242576]] Approve");
-            a("cb59a0fe", "[[242588]] Deny"),
-                a("c2376960", "[[281954]] Requests to Speak"),
-                a("aba7dcdd", function (e) {
-                    return "[[287269]] Invite " + e.name;
-                }),
+                a("i22835de", "[[242576]] Approve"),
+                a("cb59a0fe", "[[242588]] Deny"),
+                a("c2376960", "[[281954]] Requests to Speak");
+            a("aba7dcdd", function (e) {
+                return "[[287269]] Invite " + e.name;
+            }),
                 a("f5c7aaa7", function (e) {
                     return "[[281000]] host" + n(e.count, "", "s");
                 }),
@@ -4909,10 +4907,10 @@
                 a("a7b48b36", "[[291997]] The percentage of video views that were completed."),
                 a("a2580f2a", "[[291995]] Completion Rate"),
                 a("ff95a9cc", "[[293572]] Video ID"),
-                a("a97e358e", "[[293570]] Video Link");
-            a("e10e8b46", "[[292160]] Only showing the videos from the last 100 days."),
-                a("ba37f6da", "[[292001]] Video overview"),
-                a("f19846b2", "[[293573]] Video thumbnail"),
+                a("a97e358e", "[[293570]] Video Link"),
+                a("e10e8b46", "[[292160]] Only showing the videos from the last 100 days."),
+                a("ba37f6da", "[[292001]] Video overview");
+            a("f19846b2", "[[293573]] Video thumbnail"),
                 a("ccd6f4a8", "[[293571]] Video title"),
                 a("c8410542", "[[291998]] The number of times your video was viewed."),
                 a("a532072a", "[[294256]] Viewers"),
@@ -5865,14 +5863,14 @@
                 a("a0ea2fa6", "[[243523]] Name field cannot be empty"),
                 a("eec37eac", "[[243522]] Bookmark Folder with that name already exists"),
                 a("fce0c59e", "[[264678]] Failed to parse the animation JSON. Please check the format of the JSON in your animation file and try again."),
-                a("g0eea6c2", "[[264677]] Failed to read the animation JSON file. Please try to open the file again.");
-            a("ae58026a", "[[264679]] Open a Branded Like .json file to preview"),
+                a("g0eea6c2", "[[264677]] Failed to read the animation JSON file. Please try to open the file again."),
+                a("ae58026a", "[[264679]] Open a Branded Like .json file to preview"),
                 a("hd0bc1eb", function (e) {
                     return "[[185402]] " + e.name + " is live";
-                }),
-                a("bea1f26b", function (e) {
-                    return "[[185403]] " + e.name + " was live";
-                }),
+                });
+            a("bea1f26b", function (e) {
+                return "[[185403]] " + e.name + " was live";
+            }),
                 a("ab3ee97f", function (e) {
                     return "[[289975]] " + e.screenName + " is not live";
                 }),
@@ -6873,10 +6871,10 @@
                 a("fdd77a34", "[[293319]] Create longer posts"),
                 a("j6d26a7a", "[[293330]] Write as much as you’d like to share"),
                 a("c4fd68da", "[[293317]] Customize your experience"),
-                a("c0195168", "[[293318]] Change your app icon and navigation options");
-            a("b6b5dc94", "[[293315]] Become verified"),
-                a("b06db848", "[[293329]] Stand out from others on the platform"),
-                a("e3e3a97c", "[[293322]] Earn a share of revenue from your posts"),
+                a("c0195168", "[[293318]] Change your app icon and navigation options"),
+                a("b6b5dc94", "[[293315]] Become verified"),
+                a("b06db848", "[[293329]] Stand out from others on the platform");
+            a("e3e3a97c", "[[293322]] Earn a share of revenue from your posts"),
                 a("f15bc24e", "[[293323]] Increased Grok limits"),
                 a("c4666e1c", "[[293327]] More usage of Grok 3, our latest model"),
                 a("he74ae7a", "[[293324]] Highest Grok usage limits"),
@@ -7849,7 +7847,9 @@
                 a("h37f2d96", "[[287376]] Please note not all applicant tracking systems are currently supported."),
                 a("ce102a20", "[[293426]] Redirecting to Stripe"),
                 a("ddfd6718", "[[293516]] Payment Failed"),
-                a("i90ea7d2", "[[293514]] Please urgently update your billing to keep your benefits.");
+                a("i90ea7d2", "[[293514]] Please urgently update your billing to keep your benefits."),
+                a("a62359e6", "[[289188]] Verified Organization Settings"),
+                a("ge221b7c", "[[287675]] Upgrade Verified Organization subscription to get access to affiliates and more ad credits.");
             function i(e, t) {
                 for (var o = 0; o < t.length; o++) {
                     var a = t[o];
@@ -7888,9 +7888,7 @@
                     r(e, t)
                 );
             }
-            a("a62359e6", "[[289188]] Verified Organization Settings"),
-                a("ge221b7c", "[[287675]] Upgrade Verified Organization subscription to get access to affiliates and more ad credits."),
-                a("i4dccc18", "[[274804]] Billing"),
+            a("i4dccc18", "[[274804]] Billing"),
                 a("ec3cd6e4", "[[289008]] Manage your payment method, update billing information, and review your invoices."),
                 a("dac61c3c", "[[287561]] Account settings"),
                 a("b6b5fd66", "[[287562]] Manage your X account including changing your username or password."),
@@ -8891,12 +8889,12 @@
                 a("d1386940", "[[235685]] Stay informed"),
                 a("ecda5f9e", "[[235686]] Misleading"),
                 a("a423473c", "[[242345]] Legally Required Notice"),
-                a("b3296688", "[[274957]] Visibility Limited");
-            a("ccd32094", "[[155157]] Now"),
+                a("b3296688", "[[274957]] Visibility Limited"),
+                a("ccd32094", "[[155157]] Now"),
                 a("abfcce0d", function (e) {
                     return "[[190985]] " + e.amountOfTime + " ago";
-                }),
-                a("ae408b76", "[[281811]] You reposted"),
+                });
+            a("ae408b76", "[[281811]] You reposted"),
                 a("j355f008", "[[281812]] Pinned post"),
                 a("habf9678", "[[263563]] Pinned by Author"),
                 a("db0798ed", function (e) {
@@ -13208,4 +13206,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-ss.8fe9caba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-ss.2e9ba67a.js.map
