@@ -610,7 +610,7 @@
                 i("e0cb0c72", "Reklamy"),
                 i("e2eef3c2", "Zweryfikowane Organizacje"),
                 i("b55d8a78", "Utwórz Pokój"),
-                i("e5323e36", "Go Live"),
+                i("e5323e36", "Transmituj na żywo"),
                 i("a5a30af0", "Artykuły"),
                 i("d13d697c", "Nowy adres"),
                 i("j0e2cfa8", "Biznes"),
@@ -2969,10 +2969,15 @@
                 i("d83f18d2", "Ścieżka"),
                 i("hc5aa17c", "Pobierz aplikację X"),
                 i("j0693948", "Pobierz aplikację Grok"),
-                i("fbf83158", "Ostrzeżenie: realizacja płatności nie powiodła się"),
-                i("jadeb4da", "Jak najszybciej zaktualizuj swoją metodę płatności, zanim stracisz korzyści związane z subskrypcją.");
-            i("bce3726a", "Aktualizuj rozliczenie"),
+                i("af781666", "What do people think?"),
+                i("ad35153e", "beta");
+            i("fbf83158", "Ostrzeżenie: realizacja płatności nie powiodła się"),
+                i("jadeb4da", "Jak najszybciej zaktualizuj swoją metodę płatności, zanim stracisz korzyści związane z subskrypcją."),
+                i("bce3726a", "Aktualizuj rozliczenie"),
                 i("fce9ecce", "Sugerowane filmy"),
+                i("dc954b88", "Try the full news experience"),
+                i("j66b95a2", "In-Depth News"),
+                i("b58d2bd2", "Odpowiednie wpisy"),
                 i("efe6ef9e", "Wyświetl wpis"),
                 i("b3d183ce", "Wpis z odpowiedziami"),
                 i("c299a6c0", "Wątek"),
@@ -3881,15 +3886,15 @@
                 i("b90eb348", "Udziel głosu"),
                 i("d9a63e82", "Usuń z grona mówców"),
                 i("bd917b26", "Zaproś do współhostowania"),
-                i("d7357e7e", "Usuń z grona współhostów"),
-                i("bf307fc0", "Zablokuj i usuń"),
+                i("d7357e7e", "Usuń z grona współhostów");
+            i("bf307fc0", "Zablokuj i usuń"),
                 i("ccf2f24e", "Zgłoszenie"),
                 i("i22835de", "Akceptuj"),
                 i("cb59a0fe", "Odrzuć"),
-                i("c2376960", "Prośby o głos");
-            i("aba7dcdd", function (e) {
-                return "Zaproś użytkownika " + e.name;
-            }),
+                i("c2376960", "Prośby o głos"),
+                i("aba7dcdd", function (e) {
+                    return "Zaproś użytkownika " + e.name;
+                }),
                 i("f5c7aaa7", function (e) {
                     return "ho" + n(e.count, "ści", "stów", "st", "sta");
                 }),
@@ -4321,7 +4326,6 @@
                 i("aa7c96bb", function (e) {
                     return "Zobacz " + e.numResults + " więcej";
                 }),
-                i("b58d2bd2", "Odpowiednie wpisy"),
                 i("f5a2377e", "Myślenie o: "),
                 i("g3ce0132", "Myślano o:"),
                 i("f8007364", "Rozwiń, aby wyświetlić szczegóły"),
@@ -4343,7 +4347,7 @@
                 i("e02694e0", "Odpowiedź 1"),
                 i("h6867fcc", "Wolę tę odpowiedź"),
                 i("d07488a6", "Get the Android app"),
-                i("d9cfe70c", "Access advanced Grok features"),
+                i("d9cfe70c", "Dostęp do zaawansowanych funkcji Groka"),
                 i("hf9afab0", "Włącz tryb DeepSearch, aby skanować Internet i serwis X, analizować informacje oraz dostarczać szczegółowe, dobrze uzasadnione odpowiedzi dzięki błyskawicznie działającej, opartej na agentach funkcji wyszukiwania."),
                 i("ef3b3f04", "Włącz tryb Myśl, aby używać naszego modelu rozumowania. Sprawdza się on najlepiej w przypadku matematyki, nauki i programowania. Możesz także kazać Grokowi „myśleć intensywniej” nad dowolnym pytaniem wymagającym użycia większej liczby komórek mózgowych. "),
                 i("b43636b8", "Wprowadzamy Groka 3"),
@@ -4914,12 +4918,12 @@
                 i("j8ee77c4", '"startup ai"'),
                 i("d0480758", 'zawiera wyraz „startup" lub „ai” (albo oba te wyrazy)'),
                 i("f0048fa2", "startup OR ai"),
-                i("da0df186", "zawiera wyraz „ai”, ale nie „startup”"),
-                i("f2f463ea", "-startup ai"),
+                i("da0df186", "zawiera wyraz „ai”, ale nie „startup”");
+            i("f2f463ea", "-startup ai"),
                 i("a10a357e", "zawiera wyraz „ai” i ma co najmniej 50 polubień"),
                 i("ca8ed1e8", "ai min_faves:50"),
-                i("i945a3f2", "zawiera wyraz „ai” oraz adres URL, w którym znajduje się wyraz „grok”");
-            i("a9348088", "ai url:grok"),
+                i("i945a3f2", "zawiera wyraz „ai” oraz adres URL, w którym znajduje się wyraz „grok”"),
+                i("a9348088", "ai url:grok"),
                 i("b5c3cdbc", "wzmianka dotycząca konta „grok” w serwisie X"),
                 i("e2634592", "@grok"),
                 i("i88ba038", "Alert wyłączony"),
@@ -5880,12 +5884,12 @@
                 i("e50e1bb0", "Zapraszamy do korzystania z grup dyskusyjnych"),
                 i("i6829daa", "Grupy dyskusyjne to moderowane grupy na X, w ramach których użytkownicy mogą rozmawiać i udostępniać treści."),
                 i("fc5c6914", "Poznaj osoby o podobnych zainteresowaniach"),
-                i("aa1a9820", "Dołącz do grup dyskusyjnych, aby łączyć się z osobami, które mają takie same zainteresowania, jak Ty."),
-                i("edef4c82", "Publikuj wpisy bezpośrednio w grupie dyskusyjnej"),
+                i("aa1a9820", "Dołącz do grup dyskusyjnych, aby łączyć się z osobami, które mają takie same zainteresowania, jak Ty.");
+            i("edef4c82", "Publikuj wpisy bezpośrednio w grupie dyskusyjnej"),
                 i("a7640df6", "Twoje wpisy są udostępniane członkom grupy dyskusyjnej oraz Twoim obserwującym."),
                 i("h3bb8068", "Ciekawe rozmowy"),
-                i("a709f8f8", "Administratorzy i moderatorzy pomagają zarządzać Grupami dyskusyjnymi i dbać o produktywność rozmów.");
-            i("c8d33380", "Nowe pozycje"),
+                i("a709f8f8", "Administratorzy i moderatorzy pomagają zarządzać Grupami dyskusyjnymi i dbać o produktywność rozmów."),
+                i("c8d33380", "Nowe pozycje"),
                 i("cb6adb10", "Odkryj Grupy dyskusyjne"),
                 i("df362964", "Znajdź Grupy dyskusyjne"),
                 i("dfd5031f", function (e) {
@@ -6437,6 +6441,7 @@
                 i("f7d1a8e0", "Aplikacja na Androida"),
                 i("aab2fae0", "Aplikacja na iOS"),
                 i("a35d9c9a", "Zasoby"),
+                i("ic61c5fc", "Przewiń do góry"),
                 i("i6671128", "Udało Ci się odblokować dodatkowe funkcje serwisu X"),
                 i("d5e4d0a6", "Możesz dołączyć do rozmowy i łatwiej nawiązać kontakty. Już teraz:"),
                 i("a97bc07e", "Odblokuj dodatkowe funkcje serwisu X"),
@@ -6877,13 +6882,13 @@
                 i("fa006202", "Odtwarzanie filmów w tle"),
                 i("jf389778", "Oglądaj w trakcie przeglądania lub używania innych aplikacji"),
                 i("f2977d80", "Foldery Zakładek"),
-                i("j1d3d910", "Organizuj zapisane wpisy, aby mieć do nich łatwiejszy dostęp"),
-                i("f0f48668", "Pomoc techniczna premium"),
+                i("j1d3d910", "Organizuj zapisane wpisy, aby mieć do nich łatwiejszy dostęp");
+            i("f0f48668", "Pomoc techniczna premium"),
                 i("c3148608", "Szybciej otrzymuj potrzebną pomoc"),
                 i("b485ca6e", "Karta Najciekawsze"),
                 i("d438955e", "Prezentuj swoje najpopularniejsze wpisy"),
-                i("f373a352", "Szyfrowane wiadomości prywatne");
-            i("g7405aca", "Czatuj bezpiecznie dzięki kompleksowemu szyfrowaniu"),
+                i("f373a352", "Szyfrowane wiadomości prywatne"),
+                i("g7405aca", "Czatuj bezpiecznie dzięki kompleksowemu szyfrowaniu"),
                 i("j659fa0c", "Najlepsze funkcje Groka 3"),
                 i("ibff5694", "Odblokuj najwyższe limity użycia, tryby DeepSearch i Myśl oraz wczesny dostęp do nowych funkcji"),
                 i("i824f4da", "Mniej reklam"),
@@ -7853,16 +7858,7 @@
                 i("ff0edac0", "Czy na pewno chcesz anulować subskrypcję?"),
                 i("h2ac0348", "No, wróć"),
                 i("dbf9667e", "Tak"),
-                i("j7592572", "Twój ruch"),
-                i("ee778942", "Sygnalizacja świetlna"),
-                i("fdd57981", function (e) {
-                    return "Chcemy zaoferować Ci jednorazowy bezpłatny kredyt reklamowy w wysokości " + e.totalAmount + " USD.";
-                }),
-                i("i032a231", function (e) {
-                    return "Zostaję i chcę otrzymać mój kredyt reklamowy w wysokości " + e.totalAmount;
-                }),
-                i("hd7d278c", "Nie, dziękuję"),
-                i("jf8a0dea", "Doskonale! Twój nowy bezpłatny kredyt reklamowy trafi na Twoje konto w następnym cyklu rozliczeniowym.");
+                i("j7592572", "Twój ruch");
             function t(e, a) {
                 for (var o = 0; o < a.length; o++) {
                     var i = a[o];
@@ -7901,7 +7897,16 @@
                     c(e, a)
                 );
             }
-            i("ebbb3154", "Zamknij i wróć do serwisu X"),
+            i("ee778942", "Sygnalizacja świetlna"),
+                i("fdd57981", function (e) {
+                    return "Chcemy zaoferować Ci jednorazowy bezpłatny kredyt reklamowy w wysokości " + e.totalAmount + " USD.";
+                }),
+                i("i032a231", function (e) {
+                    return "Zostaję i chcę otrzymać mój kredyt reklamowy w wysokości " + e.totalAmount;
+                }),
+                i("hd7d278c", "Nie, dziękuję"),
+                i("jf8a0dea", "Doskonale! Twój nowy bezpłatny kredyt reklamowy trafi na Twoje konto w następnym cyklu rozliczeniowym."),
+                i("ebbb3154", "Zamknij i wróć do serwisu X"),
                 i("j1f68dda", "Ostatni krok: czy na pewno chcesz anulować?"),
                 i("c9c3464c", "Trwa anulowanie subskrypcji"),
                 i("dd3a293c", "Twoja subskrypcja opcji Zweryfikowane Organizacje wygasła."),
@@ -8408,7 +8413,6 @@
                 i("h9659832", "Zobacz swoje szkice wpisów."),
                 i("f1b6535e", "Szkice wpisów"),
                 i("a24add8a", "Zobacz wpisy w zakładkach."),
-                i("ic61c5fc", "Przewiń do góry"),
                 i("gb19f215", function (e) {
                     return "Kolumna - " + e.title;
                 }),
@@ -8924,10 +8928,10 @@
                 }),
                 i("d0e7b11b", function (e) {
                     return e.date + " o " + e.time;
-                }),
-                i("b4349cbc", function (e) {
-                    return "" + e.relativeDay;
-                }),
+                });
+            i("b4349cbc", function (e) {
+                return "" + e.relativeDay;
+            }),
                 i("ebe41367", function (e) {
                     return "Czas " + e.time;
                 }),
@@ -8936,10 +8940,10 @@
                 }),
                 i("d925a4f9", function (e) {
                     return "Pozostał" + n(e.count, "y " + e.formattedCount + " minuty", "o " + e.formattedCount + " minut", "a " + e.formattedCount + " minuta", "o " + e.formattedCount + " minut");
-                });
-            i("ib15cddb", function (e) {
-                return "Pozostał" + n(e.count, "y " + e.formattedCount + " godziny", "o " + e.formattedCount + " godzin", "a " + e.formattedCount + " godzina", "o " + e.formattedCount + " godzin");
-            }),
+                }),
+                i("ib15cddb", function (e) {
+                    return "Pozostał" + n(e.count, "y " + e.formattedCount + " godziny", "o " + e.formattedCount + " godzin", "a " + e.formattedCount + " godzina", "o " + e.formattedCount + " godzin");
+                }),
                 i("db9ed19f", function (e) {
                     return "Pozostał" + n(e.count, "y " + e.formattedCount + " dni", "o " + e.formattedCount + " dni", " " + e.formattedCount + " dzień", "o " + e.formattedCount + " dni");
                 }),
@@ -13196,4 +13200,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.f6f1c26a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.4889284a.js.map

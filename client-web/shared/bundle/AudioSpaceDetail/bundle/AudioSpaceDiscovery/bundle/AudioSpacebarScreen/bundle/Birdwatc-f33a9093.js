@@ -101,7 +101,7 @@
             const i = (0, n.Z)({
                 loader: () =>
                     Promise.all([
-                        r.e("icons.29"),
+                        r.e("icons.16"),
                         r.e("modules.common-e907d115"),
                         r.e("modules.common-e019dbda"),
                         r.e("modules.audio-6107ac1a"),
@@ -159,7 +159,7 @@
             const D = (0, n.Z)({
                 loader: () =>
                     Promise.all([
-                        r.e("icons.29"),
+                        r.e("icons.16"),
                         r.e("modules.common-e907d115"),
                         r.e("modules.common-e019dbda"),
                         r.e("modules.audio-6107ac1a"),
@@ -478,4 +478,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-f33a9093.d4f0fd9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-f33a9093.9e21a6da.js.map

@@ -605,7 +605,7 @@
                 n("e0cb0c72", "Publicités"),
                 n("e2eef3c2", "Organisations certifiées"),
                 n("b55d8a78", "Créer votre Espace"),
-                n("e5323e36", "Go Live"),
+                n("e5323e36", "Passer en direct"),
                 n("a5a30af0", "Articles"),
                 n("d13d697c", "Nouveau"),
                 n("j0e2cfa8", "Entreprise"),
@@ -2964,10 +2964,15 @@
                 n("d83f18d2", "Répertoire"),
                 n("hc5aa17c", "Télécharger l'application X"),
                 n("j0693948", "Télécharger l'application Grok"),
-                n("fbf83158", "Avertissement : échec du paiement"),
-                n("jadeb4da", "Veuillez rapidement mettre votre moyen de paiement à jour avant de perdre les avantages liés à votre abonnement.");
-            n("bce3726a", "Mettre les paramètres de facturation à jour"),
+                n("af781666", "What do people think?"),
+                n("ad35153e", "bêta");
+            n("fbf83158", "Avertissement : échec du paiement"),
+                n("jadeb4da", "Veuillez rapidement mettre votre moyen de paiement à jour avant de perdre les avantages liés à votre abonnement."),
+                n("bce3726a", "Mettre les paramètres de facturation à jour"),
                 n("fce9ecce", "Vidéos suggérées"),
+                n("dc954b88", "Try the full news experience"),
+                n("j66b95a2", "In-Depth News"),
+                n("b58d2bd2", "Posts pertinents"),
                 n("efe6ef9e", "Voir le post"),
                 n("b3d183ce", "Posts avec réponses"),
                 n("c299a6c0", "Discussion"),
@@ -3876,15 +3881,15 @@
                 n("b90eb348", "Inviter à parler"),
                 n("d9a63e82", "Supprimer des intervenants"),
                 n("bd917b26", "Inviter à coanimer"),
-                n("d7357e7e", "Supprimer des cohôtes"),
-                n("bf307fc0", "Bloquer et supprimer"),
+                n("d7357e7e", "Supprimer des cohôtes");
+            n("bf307fc0", "Bloquer et supprimer"),
                 n("ccf2f24e", "Signaler"),
                 n("i22835de", "Approuver"),
                 n("cb59a0fe", "Refuser"),
-                n("c2376960", "Demandes pour intervenir");
-            n("aba7dcdd", function (e) {
-                return "Inviter " + e.name;
-            }),
+                n("c2376960", "Demandes pour intervenir"),
+                n("aba7dcdd", function (e) {
+                    return "Inviter " + e.name;
+                }),
                 n("f5c7aaa7", function (e) {
                     return "hôte" + r(e.count, "", "s");
                 }),
@@ -4316,7 +4321,6 @@
                 n("aa7c96bb", function (e) {
                     return "Voir " + e.numResults + " résultats de plus";
                 }),
-                n("b58d2bd2", "Posts pertinents"),
                 n("f5a2377e", "Réflexion en cours : "),
                 n("g3ce0132", "Réflexion d'une durée de"),
                 n("f8007364", "Développer pour voir les détails"),
@@ -4338,7 +4342,7 @@
                 n("e02694e0", "Réponse 2"),
                 n("h6867fcc", "Je préfère cette réponse."),
                 n("d07488a6", "Get the Android app"),
-                n("d9cfe70c", "Access advanced Grok features"),
+                n("d9cfe70c", "Accès aux fonctionnalités avancées de Grok"),
                 n("hf9afab0", "Activez DeepSearch pour parcourir Internet et X, analyser des informations et obtenir des réponses détaillées et bien argumentées avec la recherche agentique rapide."),
                 n("ef3b3f04", "Activez le mode Description pour utiliser notre modèle de raisonnement. C'est le mieux adapté aux maths, aux sciences et au codage. Vous pouvez aussi demander à Grok de réfléchir plus intensément sur toute question susceptible de nécessiter une réflexion plus profonde. "),
                 n("b43636b8", "Lancement de Grok 3"),
@@ -4909,12 +4913,12 @@
                 n("j8ee77c4", '"startup ia"'),
                 n("d0480758", 'contient "ia" ou "startup" (ou les deux)'),
                 n("f0048fa2", "ia OR startup"),
-                n("da0df186", 'contient "ia", mais pas "startup"'),
-                n("f2f463ea", "ia -startup"),
+                n("da0df186", 'contient "ia", mais pas "startup"');
+            n("f2f463ea", "ia -startup"),
                 n("a10a357e", 'contient "ia" et compte au moins 50 J\'aime'),
                 n("ca8ed1e8", "ia min_faves:50"),
-                n("i945a3f2", 'contient "ia" et une URL comportant le mot "grok"');
-            n("a9348088", "ia url:grok"),
+                n("i945a3f2", 'contient "ia" et une URL comportant le mot "grok"'),
+                n("a9348088", "ia url:grok"),
                 n("b5c3cdbc", 'mentionne le compte X "grok"'),
                 n("e2634592", "@grok"),
                 n("i88ba038", "Alerte désactivée"),
@@ -5875,12 +5879,12 @@
                 n("e50e1bb0", "Bienvenue dans les Communautés"),
                 n("i6829daa", "Les Communautés sont des groupes de discussion faisant l'objet d'une modération, au sein desquels les utilisateurs de X peuvent interagir et partager des informations."),
                 n("fc5c6914", "Rencontrez d'autres personnes qui partagent vos centres d'intérêt"),
-                n("aa1a9820", "Rejoignez des Communautés pour entrer en lien avec des personnes qui partagent vos centres d'intérêt."),
-                n("edef4c82", "Postez directement à l'attention d'une Communauté"),
+                n("aa1a9820", "Rejoignez des Communautés pour entrer en lien avec des personnes qui partagent vos centres d'intérêt.");
+            n("edef4c82", "Postez directement à l'attention d'une Communauté"),
                 n("a7640df6", "Vos posts sont partagés avec les membres de la Communauté et avec vos abonnés."),
                 n("h3bb8068", "Obtenez de l'aide quand vous en avez besoin"),
-                n("a709f8f8", "Les administrateurs et les modérateurs contribuent à la gestion des Communautés et des conversations.");
-            n("c8d33380", "Nouveaux éléments"),
+                n("a709f8f8", "Les administrateurs et les modérateurs contribuent à la gestion des Communautés et des conversations."),
+                n("c8d33380", "Nouveaux éléments"),
                 n("cb6adb10", "Découvrir les Communautés"),
                 n("df362964", "Rechercher des Communautés"),
                 n("dfd5031f", function (e) {
@@ -6432,6 +6436,7 @@
                 n("f7d1a8e0", "Application Android"),
                 n("aab2fae0", "Application iOS"),
                 n("a35d9c9a", "Ressources"),
+                n("ic61c5fc", "Défiler vers le haut"),
                 n("i6671128", "Vous allez encore mieux profiter de X"),
                 n("d5e4d0a6", "Vous pouvez rejoindre la conversation et entrer plus facilement en lien avec les autres. Désormais :"),
                 n("a97bc07e", "Profitez encore mieux de X"),
@@ -6872,13 +6877,13 @@
                 n("fa006202", "Lecture des vidéos en arrière‑plan"),
                 n("jf389778", "Regardez des vidéos tout en naviguant ou en utilisant d'autres applications."),
                 n("f2977d80", "Dossiers de signets"),
-                n("j1d3d910", "Organisez vos posts enregistrés pour pouvoir y accéder facilement."),
-                n("f0f48668", "Assistance premium"),
+                n("j1d3d910", "Organisez vos posts enregistrés pour pouvoir y accéder facilement.");
+            n("f0f48668", "Assistance premium"),
                 n("c3148608", "Profitez d'une assistance plus rapide en cas de besoin."),
                 n("b485ca6e", "Onglet Posts marquants"),
                 n("d438955e", "Mettez vos meilleurs posts en avant."),
-                n("f373a352", "MP cryptés");
-            n("g7405aca", "Discutez en toute sécurité grâce au cryptage de bout en bout."),
+                n("f373a352", "MP cryptés"),
+                n("g7405aca", "Discutez en toute sécurité grâce au cryptage de bout en bout."),
                 n("j659fa0c", "Le meilleur de Grok 3"),
                 n("ibff5694", "Profitez des limites d'utilisation les plus élevées, des modes DeepSearch et Réflexion ainsi que d'un accès anticipé aux nouvelles fonctionnalités."),
                 n("i824f4da", "Moins de publicités"),
@@ -7848,16 +7853,7 @@
                 n("ff0edac0", "Vous voulez annuler votre abonnement ?"),
                 n("h2ac0348", "Non, j'ai changé d'avis"),
                 n("dbf9667e", "Je suis sûr"),
-                n("j7592572", "Demi‑tour"),
-                n("ee778942", "Feux tricolores"),
-                n("fdd57981", function (e) {
-                    return "Nous aimerions vous offrir un crédit publicitaire ponctuel de " + e.totalAmount + " USD";
-                }),
-                n("i032a231", function (e) {
-                    return "Je reste et je profite du crédit publicitaire de " + e.totalAmount;
-                }),
-                n("hd7d278c", "Non merci"),
-                n("jf8a0dea", "Parfait ! Votre nouveau crédit publicitaire gratuit apparaîtra dans votre compte lors de votre prochain cycle de facturation.");
+                n("j7592572", "Demi‑tour");
             function a(e, t) {
                 for (var s = 0; s < t.length; s++) {
                     var n = t[s];
@@ -7896,7 +7892,16 @@
                     i(e, t)
                 );
             }
-            n("ebbb3154", "Fermer et revenir à X"),
+            n("ee778942", "Feux tricolores"),
+                n("fdd57981", function (e) {
+                    return "Nous aimerions vous offrir un crédit publicitaire ponctuel de " + e.totalAmount + " USD";
+                }),
+                n("i032a231", function (e) {
+                    return "Je reste et je profite du crédit publicitaire de " + e.totalAmount;
+                }),
+                n("hd7d278c", "Non merci"),
+                n("jf8a0dea", "Parfait ! Votre nouveau crédit publicitaire gratuit apparaîtra dans votre compte lors de votre prochain cycle de facturation."),
+                n("ebbb3154", "Fermer et revenir à X"),
                 n("j1f68dda", "Dernière étape : voulez‑vous vraiment annuler ?"),
                 n("c9c3464c", "Annulation de l'abonnement en cours"),
                 n("dd3a293c", "Votre abonnement au service Organisations certifiées est terminé."),
@@ -8403,7 +8408,6 @@
                 n("h9659832", "Affichez vos brouillons de posts."),
                 n("f1b6535e", "Brouillons de posts"),
                 n("a24add8a", "Voyez les posts ajoutés aux signets."),
-                n("ic61c5fc", "Défiler vers le haut"),
                 n("gb19f215", function (e) {
                     return "Colonne - " + e.title;
                 }),
@@ -8919,10 +8923,10 @@
                 }),
                 n("d0e7b11b", function (e) {
                     return e.date + " à " + e.time;
-                }),
-                n("b4349cbc", function (e) {
-                    return "" + e.relativeDay;
-                }),
+                });
+            n("b4349cbc", function (e) {
+                return "" + e.relativeDay;
+            }),
                 n("ebe41367", function (e) {
                     return "Durée " + e.time;
                 }),
@@ -8931,10 +8935,10 @@
                 }),
                 n("d925a4f9", function (e) {
                     return e.formattedCount + " minute" + r(e.count, " restante", "s restantes");
-                });
-            n("ib15cddb", function (e) {
-                return e.formattedCount + " heure" + r(e.count, " restante", "s restantes");
-            }),
+                }),
+                n("ib15cddb", function (e) {
+                    return e.formattedCount + " heure" + r(e.count, " restante", "s restantes");
+                }),
                 n("db9ed19f", function (e) {
                     return e.formattedCount + " jour" + r(e.count, " restant", "s restants");
                 }),
@@ -13186,4 +13190,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.48aaeb9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.b23a7c6a.js.map

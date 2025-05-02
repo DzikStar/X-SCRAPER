@@ -43,14 +43,14 @@
                     const { "aria-label": t, label: n, onPress: u, scribeComponent: g, ...E } = e,
                         { loggedInUserId: f } = r.useContext(m.rC),
                         _ = (0, h.z)(),
-                        Z = r.useCallback(
+                        w = r.useCallback(
                             (e) => {
                                 _.scribe({ component: g, action: "click" }), u && u(e);
                             },
                             [_, u, g],
                         ),
-                        w = d.ZM.useCollapsibleNavBars(),
-                        y = [...d.Ah({ elementPosition: "bottom" }), w && b.fabStaysAboveSafeArea];
+                        Z = d.ZM.useCollapsibleNavBars(),
+                        y = [...d.Ah({ elementPosition: "bottom" }), Z && b.fabStaysAboveSafeArea];
                     return f
                         ? r.createElement(
                               i.Z.FloatingAction,
@@ -64,7 +64,7 @@
                                   return r.createElement(
                                       o.Z,
                                       { "aria-label": t, pointerEvents: "box-none", role: "complementary", style: h },
-                                      r.createElement(c.Z, { id: "FloatingActionButtonBase" }, (e, s) => r.createElement(o.Z, (0, a.Z)({ ref: e() }, s({ style: m })), r.createElement(p.Z, (0, a.Z)({}, E, { "aria-label": t, label: i ? n : void 0, onPress: Z, style: d && b.buttonMicro })))),
+                                      r.createElement(c.Z, { id: "FloatingActionButtonBase" }, (e, s) => r.createElement(o.Z, (0, a.Z)({ ref: e() }, s({ style: m })), r.createElement(p.Z, (0, a.Z)({}, E, { "aria-label": t, label: i ? n : void 0, onPress: w, style: d && b.buttonMicro })))),
                                   );
                               }),
                           )
@@ -112,7 +112,7 @@
             const a = { createList: "FloatingActionButtons_CreateList_Button", tweet: "FloatingActionButtons_Tweet_Button", message: "FloatingActionButtons_Message_Button" };
         },
         371493: (e, t, n) => {
-            n.d(t, { $N: () => _, G0: () => f, Jj: () => Z, O9: () => b, S: () => u, fy: () => g, jz: () => w, nm: () => E, qk: () => d, uI: () => h });
+            n.d(t, { $N: () => _, G0: () => f, Jj: () => w, O9: () => b, S: () => u, fy: () => g, jz: () => Z, nm: () => E, qk: () => d, uI: () => h });
             var a = n(912021),
                 r = n(644829),
                 o = n(740527),
@@ -146,12 +146,12 @@
                             .filter((e) => 0 === e.indexOf(h))
                             .map((e) => (0, s.$q)(e)),
                     ),
-                Z = (e) => {
+                w = (e) => {
                     const t = `trend-relevant-users-${e}-gql`,
                         n = { timelineId: t, formatResponse: i.Z, network: { getEndpoint: (e) => e.withEndpoint(r.Z).fetchTrendRelevantUsersGraphQL, getEndpointParams: () => ({ trendId: e }) }, context: "FETCH_TREND_RELEVANT_USERS", perfKey: t, staleIntervalMs: m };
                     return (0, c.Z)(n);
                 },
-                w = (e) => (0, c.Z)({ timelineId: `trendingEventHistoryGraphQL-${e}`, network: { getEndpoint: (e) => e.withEndpoint(r.Z).fetchTrendHistory, getEndpointParams: () => ({ trendId: e }) }, formatResponse: i.Z, context: "FETCH_TREND_HISTORY", perfKey: "trendingEventHistoryGraphQL" });
+                Z = (e) => (0, c.Z)({ timelineId: `trendingEventHistoryGraphQL-${e}`, network: { getEndpoint: (e) => e.withEndpoint(r.Z).fetchTrendHistory, getEndpointParams: () => ({ trendId: e }) }, formatResponse: i.Z, context: "FETCH_TREND_HISTORY", perfKey: "trendingEventHistoryGraphQL" });
         },
         849461: (e, t, n) => {
             n.r(t), n.d(t, { ExploreScreen: () => M, default: () => $ });
@@ -167,25 +167,25 @@
                 h = n(443781),
                 m = n(32677),
                 b = n(231035),
-                u = n(784917),
+                u = n(337523),
                 g = n(519896),
                 E = n(371493),
                 f = n(24949),
                 _ = n(912021),
-                Z = n(668214),
-                w = n(558369);
+                w = n(668214),
+                Z = n(558369);
             const y = (e, t) => t.match?.params?.tabId || void 0,
                 x = () => {
                     const e = (0, _.Z)((e) => (0, E.fy)(e)),
                         t = (0, _.Z)((e, t) => (0, E.fy)(e, t));
                     return (0, f.P1)(
-                        (e) => !0 === (0, w.FG)(e, "explore_graphql_enabled"),
+                        (e) => !0 === (0, Z.FG)(e, "explore_graphql_enabled"),
                         y,
-                        (t) => e(!0 === (0, w.FG)(t, "explore_graphql_enabled")).selectPageConfiguration(t),
+                        (t) => e(!0 === (0, Z.FG)(t, "explore_graphql_enabled")).selectPageConfiguration(t),
                         (e, n, a) => t(e, a ? a?.tabs?.initialTabId : n),
                     );
                 },
-                C = (0, Z.Z)()
+                C = (0, w.Z)()
                     .propsFromState(() => ({ initialTabModule: x(), selectedTabId: y }))
                     .withAnalytics({ page: "guide", section: "main" });
             const k = { ...(0, n(335632).G)({ withThirdPartyCards: !0, errorContext: "EXPLORE_SCREEN" }) },
@@ -217,10 +217,14 @@
                         b = s.isTrue("responsive_web_trends_setting_new_endpoints") ? "/settings/explore" : "/settings/trends",
                         f = a.createElement(l.Z, { onPress: this._handleSettingsClick, pullRight: !0, to: b }),
                         _ = r.state && r.state.searchFocused,
-                        Z = a.createElement(c.Z, { withSearchBox: !1, withTrends: !1 }),
-                        w = this.context.featureSwitches.isTrue("rweb_enable_logged_out_search_search_bar_enabled"),
-                        y = e.contextualScribeNamespace;
-                    return a.createElement(a.Fragment, null, a.createElement(p.Z, { description: L, includeOpenGraphMeta: !1, title: T }), a.createElement(d.Z, { canonical: (0, o.ju)("https://x.com/explore"), description: L, image: R, imageH: B, imageW: I, title: T, type: "article" }), a.createElement(u.Z, { entryConfiguration: k, fab: h, getTabLink: this._getTabLink, history: t, initialPageNamespace: y, module: n, onBackClick: _ ? this._handleBackClick : void 0, prerollDisplayLocation: g.Nw.OTHER, renderEmptyState: S, renderUnavailable: v, rightControl: f, selectedTabId: i, sidebarContent: Z, timelinePrefix: E.uI, title: T, withBottomLoginSignupBar: !0, withDeferredView: !0, withSearchBox: w }), !1);
+                        w = this.context.featureSwitches.isTrue("responsive_web_grok_05221996"),
+                        Z = w && !!i && "news" !== i && "for_you" !== i,
+                        y = w && "news" === i,
+                        x = w && "news" === i,
+                        C = a.createElement(c.Z, { withFullNews: x, withNews: Z, withNewsSentiment: y, withSearchBox: !1, withTrends: !1 }),
+                        P = this.context.featureSwitches.isTrue("rweb_enable_logged_out_search_search_bar_enabled"),
+                        M = e.contextualScribeNamespace;
+                    return a.createElement(a.Fragment, null, a.createElement(p.Z, { description: L, includeOpenGraphMeta: !1, title: T }), a.createElement(d.Z, { canonical: (0, o.ju)("https://x.com/explore"), description: L, image: R, imageH: B, imageW: I, title: T, type: "article" }), a.createElement(u.Z, { entryConfiguration: k, fab: h, getTabLink: this._getTabLink, history: t, initialPageNamespace: M, module: n, onBackClick: _ ? this._handleBackClick : void 0, prerollDisplayLocation: g.Nw.OTHER, renderEmptyState: S, renderUnavailable: v, rightControl: f, selectedTabId: i, sidebarContent: C, timelinePrefix: E.uI, title: T, withBottomLoginSignupBar: !0, withDeferredView: !0, withSearchBox: P }), !1);
                 }
             }
             M.contextType = h.rC;
@@ -244,4 +248,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Explore.719b21aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Explore.b0fd193a.js.map

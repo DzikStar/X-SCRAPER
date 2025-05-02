@@ -165,7 +165,7 @@
                 i = a.n(r),
                 o = a(698891),
                 c = a(443781),
-                s = a(784917),
+                s = a(337523),
                 d = a(916616),
                 m = a(249777),
                 p = a(486361),
@@ -782,4 +782,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Birdwatch-dec6592b.d7224dca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Birdwatch-dec6592b.484ba5da.js.map

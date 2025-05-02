@@ -237,8 +237,8 @@
                 w = a.n(g),
                 y = a(615626),
                 v = a.n(y),
-                S = a(182247),
-                k = a.n(S),
+                k = a(182247),
+                S = a.n(k),
                 A = a(974829),
                 D = a.n(A),
                 I = a(934309);
@@ -278,7 +278,7 @@
                     },
                     editBookmarkFolder(t) {
                         const { bookmarkFolderId: a, name: n } = t;
-                        return e.graphQL(k(), { bookmark_collection_id: a, name: n });
+                        return e.graphQL(S(), { bookmark_collection_id: a, name: n });
                     },
                     removeTweetFromBookmarkFolder(t) {
                         const { bookmarkFolderId: a, tweetId: n } = t;
@@ -303,7 +303,7 @@
         },
         333241: (e, t, a) => {
             "use strict";
-            a.d(t, { Z: () => S });
+            a.d(t, { Z: () => k });
             a(136728);
             var n = a(202784),
                 i = a(638236),
@@ -324,9 +324,9 @@
                 w = "share",
                 y = l().j7bb1a43,
                 v = l().hef5960c,
-                S = (0, b.M)((e) => {
+                k = (0, b.M)((e) => {
                     const { featureSwitches: t } = (0, c.QZ)(),
-                        { onBlock: a, onClose: o, onMute: l, onRemoveFollower: b, onReportUser: S, onShare: k, onUnblock: A, onUnmute: D, user: I } = e,
+                        { onBlock: a, onClose: o, onMute: l, onRemoveFollower: b, onReportUser: k, onShare: S, onUnblock: A, onUnmute: D, user: I } = e,
                         F = [],
                         P = (t, a) => {
                             const { confirm: n, onClose: i } = e;
@@ -344,7 +344,7 @@
                         F.push({
                             Icon: i.Z,
                             onClick: () => {
-                                o(), k();
+                                o(), S();
                             },
                             testID: w,
                             text: v,
@@ -376,7 +376,7 @@
                         F.push({
                             Icon: s.default,
                             onClick: () => {
-                                o(), S();
+                                o(), k();
                             },
                             testID: g,
                             text: y({ screenName: I.screen_name }),
@@ -508,8 +508,8 @@
                 w = a(10656),
                 y = a(716233),
                 v = a(946208),
-                S = a(540387),
-                k = a(950822),
+                k = a(540387),
+                S = a(950822),
                 A = a(303186),
                 D = a(954300);
             class I extends n.Component {
@@ -523,7 +523,7 @@
                 render() {
                     const { children: e, dataSaverMode: t, getVideoRef: a, style: i, variants: r, ...o } = this.props,
                         l = (0, A.IM)((0, D.rD)(r), t);
-                    return (0, k.Z)("video", { ...o, children: [l.map((e) => n.createElement("source", { key: e.src, src: e.src, type: e.type })), e], ref: this._setVideoRef, style: i });
+                    return (0, S.Z)("video", { ...o, children: [l.map((e) => n.createElement("source", { key: e.src, src: e.src, type: e.type })), e], ref: this._setVideoRef, style: i });
                 }
             }
             I.defaultProps = { dataSaverMode: !1, variants: [] };
@@ -534,11 +534,12 @@
             const C = (0, Z.Z)({
                     loader: () =>
                         Promise.all([
-                            a.e("icons.0"),
-                            a.e("icons.20"),
+                            a.e("icons.16"),
+                            a.e("icons.10"),
                             a.e("modules.common-e907d115"),
                             a.e("modules.common-e019dbda"),
-                            a.e("icons.24"),
+                            a.e("icons.13"),
+                            a.e("icons.22"),
                             a.e("modules.audio-6107ac1a"),
                             a.e("modules.audio-b953418a"),
                             a.e("modules.audio-7c51e6a7"),
@@ -549,13 +550,10 @@
                             a.e("modules.audio-e019dbda"),
                             a.e("modules.audio-262c94d4"),
                             a.e("modules.audio-c6fe4ea4"),
-                            a.e("icons.10"),
-                            a.e("icons.14"),
+                            a.e("icons.4"),
                             a.e("icons.26"),
-                            a.e("icons.3"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-209b0896"),
-                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-ce92c4ef"),
+                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2d1eb5e2"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -653,14 +651,14 @@
                         });
                 }
                 render() {
-                    const { "aria-label": e, enableGif: t, mediaItem: a, onEdit: d, onEditSensitiveWarning: c, onRemove: u, role: p, style: g, withAltTextLabel: y, withCloseButton: v, withDragAndDropIndicator: S, withEditButton: k, withEditIcon: A, withEditSensitiveWarningButton: D } = this.props,
+                    const { "aria-label": e, enableGif: t, mediaItem: a, onEdit: d, onEditSensitiveWarning: c, onRemove: u, role: p, style: g, withAltTextLabel: y, withCloseButton: v, withDragAndDropIndicator: k, withEditButton: S, withEditIcon: A, withEditSensitiveWarningButton: D } = this.props,
                         { mediaContainerSizeStyle: I, playGif: P } = this.state,
                         Z = a.externalMediaDetails && a.externalMediaDetails.mediaType === f.Re,
                         E = Z || (t && a.mediaFile && a.mediaFile.isGif),
                         C = !!a.mediaFile?.isVideo;
                     return n.createElement(r.ZP, null, ({ windowWidth: t }) => {
                         const a = void 0 !== A ? A : !w.Z.isTwoColumnLayout(t);
-                        return n.createElement(i.Z, { "aria-label": e || x, onLayout: this._handleMediaPreviewLayout, role: p, style: [g, O.cursor, Z && O.gifPlayButton, I] }, this._renderPreview(), Z && !P && n.createElement(o.Z, { "aria-label": B, onPress: this._handleGifClick, size: "small" }), E ? n.createElement(F.ZP, { type: F.AM }) : null, y && !C ? n.createElement(l.Z, { align: "left", altLabel: e }) : null, n.createElement(i.Z, { style: O.editMedia }, S ? n.createElement(s.ZP, { "aria-label": U, hoverLabel: { label: U }, icon: n.createElement(m.default, null), size: "small", type: "onMediaDominantColorFilled" }) : null, k && D ? n.createElement(s.ZP, { "aria-label": L, icon: n.createElement(b.default, { style: O.editSensitiveWarningIcon }), onPress: c, size: "small", type: "onMediaDominantColorFilled" }) : null, k ? n.createElement(s.ZP, { "aria-label": T, icon: a ? n.createElement(_.default, null) : void 0, onPress: d, size: a ? "xSmall" : "small", type: "onMediaDominantColorFilled" }, a ? void 0 : M) : null), v ? n.createElement(s.ZP, { "aria-label": N, hoverLabel: { label: R }, icon: n.createElement(h.default, null), onPress: u, size: "small", style: O.buttonRight, type: "onMediaDominantColorFilled" }) : null);
+                        return n.createElement(i.Z, { "aria-label": e || x, onLayout: this._handleMediaPreviewLayout, role: p, style: [g, O.cursor, Z && O.gifPlayButton, I] }, this._renderPreview(), Z && !P && n.createElement(o.Z, { "aria-label": B, onPress: this._handleGifClick, size: "small" }), E ? n.createElement(F.ZP, { type: F.AM }) : null, y && !C ? n.createElement(l.Z, { align: "left", altLabel: e }) : null, n.createElement(i.Z, { style: O.editMedia }, k ? n.createElement(s.ZP, { "aria-label": U, hoverLabel: { label: U }, icon: n.createElement(m.default, null), size: "small", type: "onMediaDominantColorFilled" }) : null, S && D ? n.createElement(s.ZP, { "aria-label": L, icon: n.createElement(b.default, { style: O.editSensitiveWarningIcon }), onPress: c, size: "small", type: "onMediaDominantColorFilled" }) : null, S ? n.createElement(s.ZP, { "aria-label": T, icon: a ? n.createElement(_.default, null) : void 0, onPress: d, size: a ? "xSmall" : "small", type: "onMediaDominantColorFilled" }, a ? void 0 : M) : null), v ? n.createElement(s.ZP, { "aria-label": N, hoverLabel: { label: R }, icon: n.createElement(h.default, null), onPress: u, size: "small", style: O.buttonRight, type: "onMediaDominantColorFilled" }) : null);
                     });
                 }
                 _renderPreview() {
@@ -684,7 +682,7 @@
                 _renderVideoPreview(e, t, a, i) {
                     const { mediaItem: r } = this.props,
                         o = r.mediaMetadata?.subtitles;
-                    if (this.context.featureSwitches.isTrue("responsive_web_composer_configurable_video_player_enabled") && i instanceof S.ZP) {
+                    if (this.context.featureSwitches.isTrue("responsive_web_composer_configurable_video_player_enabled") && i instanceof k.ZP) {
                         let o = [];
                         (0, y.TO)(i.fileHandle) && (o = [{ src: t, type: e }]);
                         const l = r.mediaMetadata?.subtitles,
@@ -693,7 +691,7 @@
                     }
                     {
                         const a = (0, y.TO)(i.fileHandle) ? [{ content_type: e, url: t }] : [];
-                        return n.createElement(I, { autoPlay: !1, controls: !0, getVideoRef: this._setVideoRef, loop: !0, muted: !0, onPause: this._handleVideoOnPause, onPlay: this._handleVideoOnPlay, playsInline: !0, poster: i instanceof S.ZP ? i.thumbnail : "", style: O.video, variants: a }, o?.upload?.mediaFile instanceof v.ZP ? n.createElement("track", { default: !0, kind: "subtitles", label: o.displayName, src: o.upload.mediaFile.vtt, srcLang: o.lang }) : null);
+                        return n.createElement(I, { autoPlay: !1, controls: !0, getVideoRef: this._setVideoRef, loop: !0, muted: !0, onPause: this._handleVideoOnPause, onPlay: this._handleVideoOnPlay, playsInline: !0, poster: i instanceof k.ZP ? i.thumbnail : "", style: O.video, variants: a }, o?.upload?.mediaFile instanceof v.ZP ? n.createElement("track", { default: !0, kind: "subtitles", label: o.displayName, src: o.upload.mediaFile.vtt, srcLang: o.lang }) : null);
                     }
                 }
             }
@@ -848,17 +846,17 @@
                 w = a(798538),
                 y = a(465814),
                 v = a(632960);
-            function S(e, t, a) {
+            function k(e, t, a) {
                 const { urls: n } = t,
                     i = [...n];
                 let r;
                 for (const t of i.reverse()) if (((r = a(e, t)), r)) break;
                 return r;
             }
-            const k = (e, t) => S(e, t, g.Z.select),
-                A = (e, t) => S(e, t, y.Z.select),
+            const S = (e, t) => k(e, t, g.Z.select),
+                A = (e, t) => k(e, t, y.Z.select),
                 D = (0, f.Z)()
-                    .propsFromState(() => ({ card: k, legacyAndUnifiedCard: A }))
+                    .propsFromState(() => ({ card: S, legacyAndUnifiedCard: A }))
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, h.zr)("COMPOSER_CARD_PREVIEW"), fetchCardPreviewIfNeeded: g.Z.fetchCardPreviewIfNeeded, updateDMComposer: w.G6, updateTweetComposer: v.zi })),
                 I = d().f6fec9f6,
                 F = /^https?:\/\//i,
@@ -966,7 +964,7 @@
         },
         293988: (e, t, a) => {
             "use strict";
-            a.d(t, { Z: () => k });
+            a.d(t, { Z: () => S });
             var n = a(202784),
                 i = a(154003),
                 r = a(674132),
@@ -989,7 +987,7 @@
                 w = o().j87c21f4,
                 y = o().iebc30ca,
                 v = o().dc740eb2;
-            class S extends n.PureComponent {
+            class k extends n.PureComponent {
                 constructor(e) {
                     super(e),
                         (this._renderButton = () => {
@@ -1023,7 +1021,7 @@
                     t.scribeAction(e);
                 }
             }
-            const k = h(S);
+            const S = h(k);
         },
         490834: (e, t, a) => {
             "use strict";
@@ -1060,16 +1058,16 @@
                 w = f,
                 y = u().e05c00b4,
                 v = u().eabf2209,
-                S = u().a613e720,
-                k = u().f88553c8,
+                k = u().a613e720,
+                S = u().f88553c8,
                 A = { riffsy: "https://abs.twimg.com/a/1501527574/img/t1/icon_riffsy.png", giphy: "https://abs.twimg.com/a/1501527574/img/t1/icon_giphy.png" };
             class D extends n.PureComponent {
                 constructor(e) {
                     super(e),
-                        (this._renderMenu = (e) => n.createElement(r.Z, { items: [{ text: S, Icon: p.default, onClick: this._handleCopyGifLinkButtonClick }], onCloseRequested: e })),
+                        (this._renderMenu = (e) => n.createElement(r.Z, { items: [{ text: k, Icon: p.default, onClick: this._handleCopyGifLinkButtonClick }], onCloseRequested: e })),
                         (this._handleCopyGifLinkButtonClick = (e) => {
                             const { addToast: t, gifUrl: a } = this.props;
-                            i.Z.isAvailable() ? (i.Z.setString(a), t({ text: k })) : this.setState({ showCopyLinkSheet: !0 }), e && e();
+                            i.Z.isAvailable() ? (i.Z.setString(a), t({ text: S })) : this.setState({ showCopyLinkSheet: !0 }), e && e();
                         }),
                         (this._handleCopyLinkSheetCancel = () => {
                             this.setState({ showCopyLinkSheet: !1 });
@@ -1203,14 +1201,14 @@
                 w = a(668214),
                 y = a(919022);
             const v = (e, t) => t.userIds,
-                S = (e, t) => {
+                k = (e, t) => {
                     const { filterPredicate: a = (e) => !!e, userIds: n } = t;
                     return n.filter((t) => {
                         const n = y.ZP.select(e, t);
                         return !!n && a(n);
                     });
                 },
-                k = (e, t) => {
+                S = (e, t) => {
                     const { userIds: a } = t;
                     return a.reduce((t, a) => {
                         const n = y.ZP.selectFetchStatus(e, a);
@@ -1219,8 +1217,8 @@
                 },
                 A = (0, w.Z)()
                     .propsFromState(() => ({
-                        availableUserIds: (0, g.Z)(S, (e) => e),
-                        fetchStatus: (0, g.Z)(S, k, v, (e, t, a) => {
+                        availableUserIds: (0, g.Z)(k, (e) => e),
+                        fetchStatus: (0, g.Z)(k, S, v, (e, t, a) => {
                             let n = h.ZP.LOADED;
                             for (let i = 0; i < a.length; i++) {
                                 const r = a[i];
@@ -1295,4 +1293,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.DMRichTextCompose~bundle.DirectMessages-a2dee9c7.674f5dfa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.DMRichTextCompose~bundle.DirectMessages-a2dee9c7.54edabaa.js.map

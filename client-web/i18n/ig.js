@@ -2963,10 +2963,15 @@
                 t("d83f18d2", "Ndekọ"),
                 t("hc5aa17c", "Get the X app"),
                 t("j0693948", "Get the Grok app"),
-                t("fbf83158", "Warning: Payment failed"),
-                t("jadeb4da", "Please urgently update your payment method before you lose your subscription benefits.");
-            t("bce3726a", "Update Billing"),
+                t("af781666", "What do people think?"),
+                t("ad35153e", "beta");
+            t("fbf83158", "Warning: Payment failed"),
+                t("jadeb4da", "Please urgently update your payment method before you lose your subscription benefits."),
+                t("bce3726a", "Update Billing"),
                 t("fce9ecce", "Suggested Videos"),
+                t("dc954b88", "Try the full news experience"),
+                t("j66b95a2", "In-Depth News"),
+                t("b58d2bd2", "Relevant Posts"),
                 t("efe6ef9e", "View post"),
                 t("b3d183ce", "Post with replies"),
                 t("c299a6c0", "Eriri okwu"),
@@ -3875,15 +3880,15 @@
                 t("b90eb348", "Invite to Speak"),
                 t("d9a63e82", "Remove from Speakers"),
                 t("bd917b26", "Invite to Co-host"),
-                t("d7357e7e", "Remove from Co-hosts"),
-                t("bf307fc0", "Block and Remove"),
+                t("d7357e7e", "Remove from Co-hosts");
+            t("bf307fc0", "Block and Remove"),
                 t("ccf2f24e", "Kọọrọ"),
                 t("i22835de", "Kwado"),
                 t("cb59a0fe", "Jụ"),
-                t("c2376960", "Requests to Speak");
-            t("aba7dcdd", function (e) {
-                return "Invite " + e.name;
-            }),
+                t("c2376960", "Requests to Speak"),
+                t("aba7dcdd", function (e) {
+                    return "Invite " + e.name;
+                }),
                 t("f5c7aaa7", function (e) {
                     return "host" + i(e.count, "", "s");
                 }),
@@ -4315,7 +4320,6 @@
                 t("aa7c96bb", function (e) {
                     return "See " + e.numResults + " more";
                 }),
-                t("b58d2bd2", "Relevant Posts"),
                 t("f5a2377e", "Thinking for"),
                 t("g3ce0132", "Thought for"),
                 t("f8007364", "Expand for details"),
@@ -4908,12 +4912,12 @@
                 t("j8ee77c4", '"ai startup"'),
                 t("d0480758", 'contains either "ai" or "startup" (or both)'),
                 t("f0048fa2", "ai OR startup"),
-                t("da0df186", 'contains "ai", but not "startup"'),
-                t("f2f463ea", "ai -startup"),
+                t("da0df186", 'contains "ai", but not "startup"');
+            t("f2f463ea", "ai -startup"),
                 t("a10a357e", 'contains "ai" and has at least 50 likes'),
                 t("ca8ed1e8", "ai min_faves:50"),
-                t("i945a3f2", 'contains "ai" and a URL with the word "grok" in it');
-            t("a9348088", "ai url:grok"),
+                t("i945a3f2", 'contains "ai" and a URL with the word "grok" in it'),
+                t("a9348088", "ai url:grok"),
                 t("b5c3cdbc", 'mentioning X account "grok"'),
                 t("e2634592", "@grok"),
                 t("i88ba038", "Alert Disabled"),
@@ -5874,12 +5878,12 @@
                 t("e50e1bb0", "Welcome to Communities"),
                 t("i6829daa", "Communities are moderated discussion groups where people on X can connect and share."),
                 t("fc5c6914", "Zute ndị ọzọ nwere mmasị gị"),
-                t("aa1a9820", "Join Communities to connect with people who share your interests."),
-                t("edef4c82", "Post directly to a Community"),
+                t("aa1a9820", "Join Communities to connect with people who share your interests.");
+            t("edef4c82", "Post directly to a Community"),
                 t("a7640df6", "Your posts are shared with Community members and your followers."),
                 t("h3bb8068", "Nweta ndabere mgbe ị chọrọ ya"),
-                t("a709f8f8", "Ndị nchịkwa na ndị nhazi na-enyere aka ijikwa Ogbe gasị ma na-eme mkpakọrịtaụka na-aga n'ihu.");
-            t("c8d33380", "Ihe ọhụrụ"),
+                t("a709f8f8", "Ndị nchịkwa na ndị nhazi na-enyere aka ijikwa Ogbe gasị ma na-eme mkpakọrịtaụka na-aga n'ihu."),
+                t("c8d33380", "Ihe ọhụrụ"),
                 t("cb6adb10", "Chọpụta Ọgbakọ"),
                 t("df362964", "Chọta Ogbe gasị"),
                 t("dfd5031f", function (e) {
@@ -6431,6 +6435,7 @@
                 t("f7d1a8e0", "Ngwa Android"),
                 t("aab2fae0", "Ngwa iOS"),
                 t("a35d9c9a", "Ndịnaọrụ"),
+                t("ic61c5fc", "Scroll to top"),
                 t("i6671128", "You’ve unlocked more on X"),
                 t("d5e4d0a6", "Ị nwere ike isonyere mkparịta ụka ahụ wee jikọọ na ndị ọzọ n'ụzọ dị mfe karị. Ugbu a ị nwere ike ime ihe ndị a:"),
                 t("a97bc07e", "Unlock more on X"),
@@ -6871,13 +6876,13 @@
                 t("fa006202", "Background video playback"),
                 t("jf389778", "Watch while browsing or using other apps"),
                 t("f2977d80", "Foldà gasị Ebenrụtụakā"),
-                t("j1d3d910", "Keep your saved posts organized for easy access"),
-                t("f0f48668", "Premium support"),
+                t("j1d3d910", "Keep your saved posts organized for easy access");
+            t("f0f48668", "Premium support"),
                 t("c3148608", "Get faster assistance when you need help"),
                 t("b485ca6e", "Highlights tab"),
                 t("d438955e", "Showcase your top posts"),
-                t("f373a352", "Encrypted DMs");
-            t("g7405aca", "Chat securely with end-to-end encryption"),
+                t("f373a352", "Encrypted DMs"),
+                t("g7405aca", "Chat securely with end-to-end encryption"),
                 t("j659fa0c", "The best of Grok 3"),
                 t("ibff5694", "Unlock the highest usage limits, DeepSearch & Think, plus early access to new features"),
                 t("i824f4da", "Fewer ads"),
@@ -7847,16 +7852,7 @@
                 t("ff0edac0", "Are you sure you want to cancel your subscription?"),
                 t("h2ac0348", "No, take me back"),
                 t("dbf9667e", "I’m sure"),
-                t("j7592572", "U-turn"),
-                t("ee778942", "Traffic lights"),
-                t("fdd57981", function (e) {
-                    return "We’d like to offer you a free one-time " + e.totalAmount + " USD ad credit.";
-                }),
-                t("i032a231", function (e) {
-                    return "I’ll stay and claim the " + e.totalAmount + " ad credit";
-                }),
-                t("hd7d278c", "No thanks"),
-                t("jf8a0dea", "Great! Your new free ad credit will appear in your account on your next billing cycle.");
+                t("j7592572", "U-turn");
             function r(e, a) {
                 for (var n = 0; n < a.length; n++) {
                     var t = a[n];
@@ -7895,7 +7891,16 @@
                     c(e, a)
                 );
             }
-            t("ebbb3154", "Close and return to X"),
+            t("ee778942", "Traffic lights"),
+                t("fdd57981", function (e) {
+                    return "We’d like to offer you a free one-time " + e.totalAmount + " USD ad credit.";
+                }),
+                t("i032a231", function (e) {
+                    return "I’ll stay and claim the " + e.totalAmount + " ad credit";
+                }),
+                t("hd7d278c", "No thanks"),
+                t("jf8a0dea", "Great! Your new free ad credit will appear in your account on your next billing cycle."),
+                t("ebbb3154", "Close and return to X"),
                 t("j1f68dda", "Final step: Are you sure you want to cancel?"),
                 t("c9c3464c", "Subscription cancellation in progress"),
                 t("dd3a293c", "Your Verified Organization subscription has ended."),
@@ -8402,7 +8407,6 @@
                 t("h9659832", "View your draft posts."),
                 t("f1b6535e", "Draft posts"),
                 t("a24add8a", "See bookmarked posts."),
-                t("ic61c5fc", "Scroll to top"),
                 t("gb19f215", function (e) {
                     return "Column - " + e.title;
                 }),
@@ -8918,10 +8922,10 @@
                 }),
                 t("d0e7b11b", function (e) {
                     return e.date + " at " + e.time;
-                }),
-                t("b4349cbc", function (e) {
-                    return "" + e.relativeDay;
-                }),
+                });
+            t("b4349cbc", function (e) {
+                return "" + e.relativeDay;
+            }),
                 t("ebe41367", function (e) {
                     return "Time " + e.time;
                 }),
@@ -8930,10 +8934,10 @@
                 }),
                 t("d925a4f9", function (e) {
                     return e.formattedCount + " nkeji fọdụrụ";
-                });
-            t("ib15cddb", function (e) {
-                return e.formattedCount + " awa fọdụrụ";
-            }),
+                }),
+                t("ib15cddb", function (e) {
+                    return e.formattedCount + " awa fọdụrụ";
+                }),
                 t("db9ed19f", function (e) {
                     return e.formattedCount + " ụbọchị fọdụrụ";
                 }),
@@ -13198,4 +13202,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ig.31c60dda.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ig.c259e7ba.js.map

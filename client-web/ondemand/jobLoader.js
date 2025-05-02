@@ -37,16 +37,16 @@
                         case "recommended_jobs":
                             d = r ? (0, a.ju)(`https://x.com/jobs/recommended/${r}`) : void 0;
                     }
-                    return o.createElement(l.Z, { style: v.root }, o.createElement(i.Z, { link: d, style: v.listItem }, o.createElement(c.Z, { displayType: "carousel", employmentType: t?.core?.employment_type, formattedSalary: t?.core?.formatted_salary, location: t?.core?.location, recruitingOrganization: k(n), salaryInterval: t?.core?.salary_interval, salaryMax: t?.core?.salary_max, salaryMin: t?.core?.salary_min, shortDescription: t?.core?.short_description, title: t?.core?.title, titleSize: "body" })));
+                    return o.createElement(l.Z, { style: E.root }, o.createElement(i.Z, { link: d, style: E.listItem }, o.createElement(c.Z, { displayType: "carousel", employmentType: t?.core?.employment_type, formattedSalary: t?.core?.formatted_salary, location: t?.core?.location, recruitingOrganization: k(n), salaryInterval: t?.core?.salary_interval, salaryMax: t?.core?.salary_max, salaryMin: t?.core?.salary_min, shortDescription: t?.core?.short_description, title: t?.core?.title, titleSize: "body" })));
                 },
                 k = (e) => {
                     if (!e || !e.profile) return null;
                     const { is_blue_verified: t, name: n, profile_image_url_https: r, screen_name: o, verified: l, verified_type: a } = e.profile;
                     return { name: n, screen_name: o, verified: l, verified_type: a, is_blue_verified: t, profile_image_url_https: r };
                 },
-                v = s.default.create((e) => ({ root: { paddingStart: e.spaces.space12 }, listItem: { padding: e.spaces.space12, width: "20em", overflow: "hidden", borderRadius: e.borderRadii.xLarge, borderColor: e.colors.gray100, borderWidth: e.borderWidths.small } })),
-                E = w(o.memo(D)),
-                S = r.iH({ component: E }).getHandler();
+                E = s.default.create((e) => ({ root: { paddingStart: e.spaces.space12 }, listItem: { padding: e.spaces.space12, width: "20em", overflow: "hidden", borderRadius: e.borderRadii.xLarge, borderColor: e.colors.gray100, borderWidth: e.borderWidths.small } })),
+                v = w(o.memo(D)),
+                S = r.iH({ component: v }).getHandler();
         },
         386619: (e, t, n) => {
             n.d(t, { Z: () => a });
@@ -96,11 +96,11 @@
                     const { location: t } = e;
                     return t ? r.createElement(o.Z, { style: S.locationWithIcon }, y(e) ? r.createElement(c.ZP, { color: "gray700", size: "body", style: S.dontShrinkMeBro }, r.createElement(l.default, null)) : null, r.createElement(c.ZP, { color: "gray700", style: S.elidedText }, t)) : null;
                 },
-                v = (e) => {
+                E = (e) => {
                     const { employmentType: t, formattedSalary: n, salaryInterval: l } = e;
                     return n || t ? r.createElement(o.Z, { style: S.metaRow }, n ? r.createElement(o.Z, { style: S.withIcon }, y(e) ? r.createElement(c.ZP, { color: "gray700", size: "body" }, r.createElement(a.default, null)) : null, r.createElement(c.ZP, { color: "gray700" }, (0, g.M)(n, l))) : null, t ? r.createElement(o.Z, { style: S.withIcon }, y(e) ? r.createElement(c.ZP, { color: "gray700", size: "body" }, r.createElement(i.default, null)) : null, r.createElement(c.ZP, { color: "gray700" }, h.eo[t])) : null) : null;
                 },
-                E = ({ shortDescription: e }) => {
+                v = ({ shortDescription: e }) => {
                     const t = (0, g.G)(e);
                     return t ? r.createElement(o.Z, { style: S.richTextWrapper }, r.createElement(f.Z, { contentState: t })) : null;
                 },
@@ -110,7 +110,7 @@
                         a = "carousel" === t,
                         i = "full" === t,
                         s = "full" !== t;
-                    return r.createElement(o.Z, { style: a ? S.carouselJob : S.job }, r.createElement(c.ZP, { size: l, style: s ? S.elidedText : void 0, weight: "bold" }, n), r.createElement(D, e), r.createElement(o.Z, { style: b(e) }, r.createElement(k, e), w(e) ? r.createElement(v, e) : null), i ? r.createElement(r.Fragment, null, r.createElement(E, e), r.createElement(d.ZP, { "aria-label": "Apply", size: "small", type: "primaryFilled" }, "View job")) : null);
+                    return r.createElement(o.Z, { style: a ? S.carouselJob : S.job }, r.createElement(c.ZP, { size: l, style: s ? S.elidedText : void 0, weight: "bold" }, n), r.createElement(D, e), r.createElement(o.Z, { style: b(e) }, r.createElement(k, e), w(e) ? r.createElement(E, e) : null), i ? r.createElement(r.Fragment, null, r.createElement(v, e), r.createElement(d.ZP, { "aria-label": "Apply", size: "small", type: "primaryFilled" }, "View job")) : null);
                 };
         },
         89217: (e, t, n) => {
@@ -196,7 +196,7 @@
                 k = h.default.create((e) => ({ fontFamily: { fontFamily: e.fontFamilies.normal } }));
         },
         779802: (e, t, n) => {
-            n.d(t, { $u: () => S, Ak: () => Z, KJ: () => D, LI: () => $, P7: () => g, PW: () => E, QF: () => b, Qm: () => w, Tr: () => z, b$: () => h, db: () => I, et: () => v, fR: () => p, iH: () => x, lD: () => y, su: () => k, u4: () => T, wX: () => _ });
+            n.d(t, { $u: () => S, Ak: () => Z, KJ: () => D, LI: () => $, P7: () => g, PW: () => v, QF: () => b, Qm: () => w, Tr: () => z, b$: () => h, db: () => I, et: () => E, fR: () => p, iH: () => x, lD: () => y, su: () => k, u4: () => T, wX: () => _ });
             var r = n(202784),
                 o = n(674132),
                 l = n.n(o),
@@ -241,12 +241,12 @@
                             return t?.(n) || "";
                     }
                 },
-                v = l().d5a48014,
-                E = l().b92b6156,
+                E = l().d5a48014,
+                v = l().b92b6156,
                 S = l().ec5ed598,
                 $ = ({ children: e, extendedWidth: t, size: n, weight: o }) => r.createElement(m.ZP, { extendedWidth: t, size: n, weight: o }, e),
                 z = { blockType: g.paragraph, label: S, component: $({ size: "body", children: S }) },
-                x = [{ blockType: g.header1, label: v, component: $({ size: "title1", extendedWidth: !0, children: v }) }, { blockType: g.header2, label: E, component: $({ size: "title3", weight: "heavy", children: E }) }, z],
+                x = [{ blockType: g.header1, label: E, component: $({ size: "title1", extendedWidth: !0, children: E }) }, { blockType: g.header2, label: v, component: $({ size: "title3", weight: "heavy", children: v }) }, z],
                 _ = ["backspace", "backspace-word", "backspace-to-start-of-line"],
                 Z = ["delete", "delete-word", "delete-to-start-of-line"],
                 T = "increase-text-size",
@@ -304,7 +304,7 @@
             }
             const s = [];
         },
-        428259: (e, t, n) => {
+        69893: (e, t, n) => {
             n.r(t), n.d(t, { default: () => c });
             var r = n(202784),
                 o = n(890601),
@@ -312,11 +312,11 @@
                 a = n(347101);
             const i = (e = {}) => {
                 const { direction: t } = (0, l.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M6 13.5c-1.934 0-3.5 1.567-3.5 3.5s1.566 3.5 3.5 3.5 3.5-1.567 3.5-3.5-1.566-3.5-3.5-3.5zm0 5.25c-.962 0-1.75-.783-1.75-1.75s.788-1.75 1.75-1.75 1.75.783 1.75 1.75-.788 1.75-1.75 1.75zM22 8H12V6h10v2zM6 3.5C4.066 3.5 2.5 5.067 2.5 7s1.566 3.5 3.5 3.5S9.5 8.933 9.5 7 7.934 3.5 6 3.5zm0 5.25c-.962 0-1.75-.783-1.75-1.75S5.038 5.25 6 5.25 7.75 6.033 7.75 7 6.962 8.75 6 8.75zM22 18H12v-2h10v2z" })) }, { writingDirection: t });
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M17.879 15c.079.323.121.658.121 1 0 2.757-2.691 5-6 5s-6-2.243-6-5h2c0 1.654 1.794 3 4 3s4-1.346 4-3c0-.352-.096-.686-.246-1h2.125zM12 11c-2.206 0-4-1.346-4-3s1.794-3 4-3 4 1.346 4 3h2c0-2.757-2.691-5-6-5S6 5.243 6 8c0 1.126.455 2.163 1.211 3H3v2h18v-2h-9z" })) }, { writingDirection: t });
             };
             i.metadata = { width: 24, height: 24 };
             const c = i;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.jobLoader.630aebea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.jobLoader.c84bb48a.js.map

@@ -30,11 +30,11 @@
                 _renderContent() {
                     const { backButtonType: e, centerTitle: a, centeredLogo: d, fixed: r, hideBackButton: l, isFullWidth: n, isLarge: t, leftControl: s, middleControl: b, position: p, rightControl: D, secondaryBar: h, style: S, subtitle: m, title: A, titleDomId: M, titleIconCell: y, titleIconCellSize: w, withBackground: f, withWideContainer: B } = this.props,
                         { isModal: g } = this.context,
-                        v = l ? s : o.createElement(i.Z, { backButtonType: e, onClick: this._handleBackClick }),
-                        k = (function (e, a, d) {
+                        k = l ? s : o.createElement(i.Z, { backButtonType: e, onClick: this._handleBackClick }),
+                        v = (function (e, a, d) {
                             return e && !(a && d);
                         })(!!f, g, !!h);
-                    return o.createElement(o.Fragment, null, o.createElement(c.Z, { centerTitle: a, centeredLogo: d, isFullWidth: n, isLarge: t, leftControl: v, middleControl: b, position: u(p, g, r), rightControl: D, style: S, subtitle: m, title: A, titleDomId: M, titleIconCell: y, titleIconCellSize: w, withBackground: k, withWideContainer: B }), h || null);
+                    return o.createElement(o.Fragment, null, o.createElement(c.Z, { centerTitle: a, centeredLogo: d, isFullWidth: n, isLarge: t, leftControl: k, middleControl: b, position: u(p, g, r), rightControl: D, style: S, subtitle: m, title: A, titleDomId: M, titleIconCell: y, titleIconCellSize: w, withBackground: v, withWideContainer: B }), h || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
@@ -211,20 +211,19 @@
                 M = (0, b.p)(
                     () =>
                         Promise.all([
-                            d.e("icons.0"),
-                            d.e("icons.13"),
-                            d.e("icons.22"),
-                            d.e("icons.29"),
-                            d.e("icons.5"),
-                            d.e("icons.15"),
-                            d.e("icons.7"),
-                            d.e("icons.1"),
-                            d.e("icons.20"),
-                            d.e("icons.11"),
+                            d.e("icons.23"),
+                            d.e("icons.16"),
+                            d.e("icons.2"),
+                            d.e("icons.10"),
+                            d.e("icons.19"),
+                            d.e("icons.24"),
                             d.e("modules.common-e907d115"),
                             d.e("modules.common-e019dbda"),
-                            d.e("icons.25"),
-                            d.e("icons.24"),
+                            d.e("icons.13"),
+                            d.e("icons.27"),
+                            d.e("icons.22"),
+                            d.e("icons.17"),
+                            d.e("icons.7"),
                             d.e("modules.audio-6107ac1a"),
                             d.e("modules.audio-b953418a"),
                             d.e("modules.audio-7c51e6a7"),
@@ -235,16 +234,16 @@
                             d.e("modules.audio-e019dbda"),
                             d.e("modules.audio-262c94d4"),
                             d.e("modules.audio-c6fe4ea4"),
-                            d.e("icons.6"),
-                            d.e("icons.10"),
-                            d.e("icons.17"),
-                            d.e("icons.14"),
-                            d.e("icons.16"),
-                            d.e("icons.23"),
-                            d.e("icons.26"),
-                            d.e("icons.3"),
+                            d.e("icons.4"),
                             d.e("icons.8"),
+                            d.e("icons.14"),
+                            d.e("icons.26"),
                             d.e("icons.28"),
+                            d.e("icons.21"),
+                            d.e("icons.11"),
+                            d.e("icons.3"),
+                            d.e("icons.1"),
+                            d.e("icons.18"),
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -275,8 +274,7 @@
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                             d.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-209b0896"),
-                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-ce92c4ef"),
+                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2d1eb5e2"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -322,6 +320,7 @@
                             d.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-ff0fc217"),
                             d.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-93606ba8"),
                             d.e("shared~loader.Typeahead~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSpacePeek~bundle.Bir"),
+                            d.e("shared~bundle.AccountVerification~bundle.SettingsProfile~bundle.UserLists~loader.MediaPickerWithPreview~bundl"),
                             d.e("shared~bundle.Communities~bundle.UserLists"),
                             d.e("bundle.UserLists-6107ac1a"),
                             d.e("bundle.UserLists-b308cbaf"),
@@ -333,20 +332,19 @@
                 y = (0, b.p)(
                     () =>
                         Promise.all([
-                            d.e("icons.0"),
-                            d.e("icons.13"),
-                            d.e("icons.22"),
-                            d.e("icons.29"),
-                            d.e("icons.5"),
-                            d.e("icons.15"),
-                            d.e("icons.7"),
-                            d.e("icons.1"),
-                            d.e("icons.20"),
-                            d.e("icons.11"),
+                            d.e("icons.23"),
+                            d.e("icons.16"),
+                            d.e("icons.2"),
+                            d.e("icons.10"),
+                            d.e("icons.19"),
+                            d.e("icons.24"),
                             d.e("modules.common-e907d115"),
                             d.e("modules.common-e019dbda"),
-                            d.e("icons.25"),
-                            d.e("icons.24"),
+                            d.e("icons.13"),
+                            d.e("icons.27"),
+                            d.e("icons.22"),
+                            d.e("icons.17"),
+                            d.e("icons.7"),
                             d.e("modules.audio-6107ac1a"),
                             d.e("modules.audio-b953418a"),
                             d.e("modules.audio-7c51e6a7"),
@@ -357,16 +355,16 @@
                             d.e("modules.audio-e019dbda"),
                             d.e("modules.audio-262c94d4"),
                             d.e("modules.audio-c6fe4ea4"),
-                            d.e("icons.6"),
-                            d.e("icons.10"),
-                            d.e("icons.17"),
-                            d.e("icons.14"),
-                            d.e("icons.16"),
-                            d.e("icons.23"),
-                            d.e("icons.26"),
-                            d.e("icons.3"),
+                            d.e("icons.4"),
                             d.e("icons.8"),
+                            d.e("icons.14"),
+                            d.e("icons.26"),
                             d.e("icons.28"),
+                            d.e("icons.21"),
+                            d.e("icons.11"),
+                            d.e("icons.3"),
+                            d.e("icons.1"),
+                            d.e("icons.18"),
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -397,8 +395,7 @@
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                             d.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-209b0896"),
-                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-ce92c4ef"),
+                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2d1eb5e2"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -444,6 +441,7 @@
                             d.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-ff0fc217"),
                             d.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-93606ba8"),
                             d.e("shared~loader.Typeahead~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSpacePeek~bundle.Bir"),
+                            d.e("shared~bundle.AccountVerification~bundle.SettingsProfile~bundle.UserLists~loader.MediaPickerWithPreview~bundl"),
                             d.e("shared~bundle.Communities~bundle.UserLists"),
                             d.e("bundle.UserLists-6107ac1a"),
                             d.e("bundle.UserLists-b308cbaf"),
@@ -485,7 +483,7 @@
                 f = w;
         },
         403556: (e, a, d) => {
-            d.d(a, { Z: () => v });
+            d.d(a, { Z: () => k });
             var o = d(807896),
                 r = d(202784),
                 l = d(194504),
@@ -540,12 +538,12 @@
                 }
                 render() {
                     const { Icon: e, "aria-label": a, badgeCount: d, badgePip: o, children: l, color: n, isActive: t, isCompact: s, isPillLink: u, isRoundedRect: b, isWebRedesign: h, retainScrollPosition: w, style: B, to: g } = this.props,
-                        { location: v } = this.state,
-                        k = g ? this._getMemoizedLink(g, w) : void 0,
-                        P = t ? t(g) : v?.pathname === k?.pathname,
+                        { location: k } = this.state,
+                        v = g ? this._getMemoizedLink(g, w) : void 0,
+                        P = t ? t(g) : k?.pathname === v?.pathname,
                         C = S.Z.generate({ backgroundColor: "transparent", color: i.default.theme.colors.text, insetFocusRing: !0 }),
                         I = h ? "medium" : P ? "bold" : "medium";
-                    return r.createElement(m.Z, { "aria-label": a, "aria-selected": P, focusable: !!P, interactiveStyles: C, link: k, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [u ? f.pill : f.link, u && P ? f.active : null, s ? (u ? f.compactPill : f.compactLink) : null, b ? f.roundedRect : null, B], withoutInteractiveStyles: h || u }, ({ isFocused: a, isHovered: t }) => r.createElement(c.Z, { style: u && f.flexGrow }, r.createElement(p.ZP, { size: h ? "headline2" : void 0, style: [f.text, { color: this._getTextColor(P, t, h, u) }, s && f.compactText, h && a && f.focusedText], weight: I }, e && r.createElement(e, { style: f.icon }), l, h || u ? null : r.createElement(c.Z, { style: P && [f.border, { backgroundColor: i.default.theme.colors[n] }] })), d ? r.createElement(D.Z, { count: d, standalone: !0, style: [f.badge, d >= 10 && f.multiDigitBadge, d >= 20 && f.truncatedCountBadge], truncatedCountFormatter: y, unreadCountLabel: A, withBorder: !1 }) : o ? r.createElement(D.Z, { pip: !0, standalone: !0, style: f.badgePip, textColor: "red500", unreadCountLabel: M, withBorder: !1 }) : null));
+                    return r.createElement(m.Z, { "aria-label": a, "aria-selected": P, focusable: !!P, interactiveStyles: C, link: v, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [u ? f.pill : f.link, u && P ? f.active : null, s ? (u ? f.compactPill : f.compactLink) : null, b ? f.roundedRect : null, B], withoutInteractiveStyles: h || u }, ({ isFocused: a, isHovered: t }) => r.createElement(c.Z, { style: u && f.flexGrow }, r.createElement(p.ZP, { size: h ? "headline2" : void 0, style: [f.text, { color: this._getTextColor(P, t, h, u) }, s && f.compactText, h && a && f.focusedText], weight: I }, e && r.createElement(e, { style: f.icon }), l, h || u ? null : r.createElement(c.Z, { style: P && [f.border, { backgroundColor: i.default.theme.colors[n] }] })), d ? r.createElement(D.Z, { count: d, standalone: !0, style: [f.badge, d >= 10 && f.multiDigitBadge, d >= 20 && f.truncatedCountBadge], truncatedCountFormatter: y, unreadCountLabel: A, withBorder: !1 }) : o ? r.createElement(D.Z, { pip: !0, standalone: !0, style: f.badgePip, textColor: "red500", unreadCountLabel: M, withBorder: !1 }) : null));
                 }
             }
             (w.contextType = h.Z), (w.defaultProps = { children: [], color: "primary", retainScrollPosition: !0 });
@@ -569,7 +567,7 @@
                 })),
                 B = w,
                 g = i.default.create((e) => ({ segmentedControl: { borderBottomWidth: e.borderWidths.small, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor }, leftAligned: { alignContent: "start", justifyContent: "start" }, flexGrow: { flexGrow: 1 }, gap: { gap: e.spaces.space8 }, linkRedesign: { paddingHorizontal: e.spaces.space12, alignItems: "start", minWidth: e.spaces.space24 }, firstLinkRedesign: { paddingStart: e.spaces.space16 }, withNoPaddingStart: { paddingStart: 0 } })),
-                v = ({ alignFirstItem: e, "aria-label": a, isCompact: d, isPillLink: i, isRoundedRect: c, links: t, style: s, visibleItemIndex: u }) => {
+                k = ({ alignFirstItem: e, "aria-label": a, isCompact: d, isPillLink: i, isRoundedRect: c, links: t, style: s, visibleItemIndex: u }) => {
                     const b = t
                             .filter(Boolean)
                             .map((e) => e.key)
@@ -587,19 +585,6 @@
                     return r.createElement(l.Z, { "aria-label": a, buttonsContainerStyle: i && g.gap, childrenStyle: !D && g.flexGrow, key: b, style: [i ? null : g.segmentedControl, D && g.leftAligned, s], visibleItemIndex: u }, h);
                 };
         },
-        41065: (e, a, d) => {
-            d.r(a), d.d(a, { default: () => c });
-            var o = d(202784),
-                r = d(890601),
-                l = d(783427),
-                n = d(347101);
-            const i = (e = {}) => {
-                const { direction: a } = (0, l.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M6.866 18H.846l.075-1.069C1.33 11.083 4.335 9 7.011 9c1.457 0 2.734.576 3.743 1.615-.515.378-1.003.826-1.45 1.355-.562-.569-1.305-.97-2.293-.97-2.074 0-3.522 1.847-3.981 5h4.225c-.169.616-.295 1.288-.389 2zM4 5c0-1.654 1.343-3 3-3s3 1.346 3 3-1.343 3-3 3-3-1.346-3-3zm2 0c0 .551.448 1 1 1s1-.449 1-1-.448-1-1-1-1 .449-1 1zm9.5 5c-.778 0-1.49-.263-2.071-.693C12.566 8.669 12 7.653 12 6.5 12 4.57 13.567 3 15.5 3S19 4.57 19 6.5c0 1.111-.53 2.092-1.34 2.733-.596.472-1.341.767-2.16.767zM14 6.5c0 .827.673 1.5 1.5 1.5S17 7.327 17 6.5 16.327 5 15.5 5 14 5.673 14 6.5zm1.5 4.496c3.264 0 6.816 2.358 7 8.977L22.529 21H8.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977zm0 2c-2.767 0-4.57 2.223-4.938 6.004h9.875c-.367-3.781-2.17-6.004-4.938-6.004z" })) }, { writingDirection: a });
-            };
-            i.metadata = { width: 24, height: 24 };
-            const c = i;
-        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TrustedFriendsManagement.0fa7e33a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TrustedFriendsManagement.9d80064a.js.map

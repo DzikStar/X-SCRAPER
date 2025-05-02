@@ -601,7 +601,7 @@
                 a("e0cb0c72", "Advertenties"),
                 a("e2eef3c2", "Geverifieerde Organisaties"),
                 a("b55d8a78", "Je Space maken"),
-                a("e5323e36", "Go Live"),
+                a("e5323e36", "Live gaan"),
                 a("a5a30af0", "Artikelen"),
                 a("d13d697c", "Nieuw"),
                 a("j0e2cfa8", "Zakelijk"),
@@ -2960,10 +2960,15 @@
                 a("d83f18d2", "Overzicht"),
                 a("hc5aa17c", "Download de app van X"),
                 a("j0693948", "Download de Grok-app"),
-                a("fbf83158", "Waarschuwing: betaling mislukt"),
-                a("jadeb4da", "Update zo snel mogelijk je betalingsmethode voordat je abonnementsvoordelen kwijtraakt.");
-            a("bce3726a", "Factureringsgegevens"),
+                a("af781666", "What do people think?"),
+                a("ad35153e", "bèta");
+            a("fbf83158", "Waarschuwing: betaling mislukt"),
+                a("jadeb4da", "Update zo snel mogelijk je betalingsmethode voordat je abonnementsvoordelen kwijtraakt."),
+                a("bce3726a", "Factureringsgegevens"),
                 a("fce9ecce", "Aanbevolen video's"),
+                a("dc954b88", "Try the full news experience"),
+                a("j66b95a2", "In-Depth News"),
+                a("b58d2bd2", "Relevante posts"),
                 a("efe6ef9e", "Post bekijken"),
                 a("b3d183ce", "Posts met antwoorden"),
                 a("c299a6c0", "Collectie"),
@@ -3872,15 +3877,15 @@
                 a("b90eb348", "Uitnodigen om mee te praten"),
                 a("d9a63e82", "Verwijderen uit sprekers"),
                 a("bd917b26", "Uitnodigen als co-host"),
-                a("d7357e7e", "Uit co-hosts verwijderen"),
-                a("bf307fc0", "Blokkeren en verwijderen"),
+                a("d7357e7e", "Uit co-hosts verwijderen");
+            a("bf307fc0", "Blokkeren en verwijderen"),
                 a("ccf2f24e", "Rapport"),
                 a("i22835de", "Goedkeuren"),
                 a("cb59a0fe", "Weigeren"),
-                a("c2376960", "Verzoeken om mee te praten");
-            a("aba7dcdd", function (e) {
-                return e.name + " uitnodigen";
-            }),
+                a("c2376960", "Verzoeken om mee te praten"),
+                a("aba7dcdd", function (e) {
+                    return e.name + " uitnodigen";
+                }),
                 a("f5c7aaa7", function (e) {
                     return "host" + r(e.count, "", "s");
                 }),
@@ -4312,7 +4317,6 @@
                 a("aa7c96bb", function (e) {
                     return "Nog " + e.numResults + " meer bekijken";
                 }),
-                a("b58d2bd2", "Relevante posts"),
                 a("f5a2377e", "Nadenken over "),
                 a("g3ce0132", "Nagedacht over"),
                 a("f8007364", "Uitklappen voor details"),
@@ -4334,11 +4338,11 @@
                 a("e02694e0", "Antwoord 2"),
                 a("h6867fcc", "Ik vind dit antwoord beter"),
                 a("d07488a6", "Get the Android app"),
-                a("d9cfe70c", "Access advanced Grok features"),
+                a("d9cfe70c", "Krijg toegang tot geavanceerde Grok-functies"),
                 a("hf9afab0", "Schakel DeepSearch in om het internet en X te scannen, informatie te analyseren en gedetailleerde, goed onderbouwde antwoorden te geven met snel, agentic zoeken."),
-                a("ef3b3f04", "Schakel Denk in om ons redeneermodel te gebruiken. Dit is de beste optie voor wiskunde, wetenschap en codering. Je kan Grok ook vragen 'Denk harder na' over elke vraag waarvoor je wat meer denkkracht nodig hebt. "),
+                a("ef3b3f04", "Schakel Denken in om ons redeneermodel te gebruiken. Dit is de beste optie voor wiskunde, wetenschap en codering. Je kan Grok ook vragen 'Denk harder na' over elke vraag waarvoor je wat meer denkkracht nodig hebt. "),
                 a("b43636b8", "Nieuw: Grok 3"),
-                a("j376298c", "Grok 3 komt met twee nieuwe modi voor interactie met ons krachtigste model: DeepSearch en Denk."),
+                a("j376298c", "Grok 3 komt met twee nieuwe modi voor interactie met ons krachtigste model: DeepSearch en Denken."),
                 a("e3584f8e", "Wat zijn de 10 meest succesvolle strategieën voor het handelen in opties die worden gebruikt door hedgefondsen?"),
                 a("d91b7b8a", "Wat zou het kosten om een universiteit te bouwen in 1885?"),
                 a("ia5bef3e", "Hoe kan ik je vandaag helpen?"),
@@ -4905,12 +4909,12 @@
                 a("j8ee77c4", '"ai start-up"'),
                 a("d0480758", "bevat 'ai' of 'start-up' (of beide)"),
                 a("f0048fa2", "ai OR start-up"),
-                a("da0df186", "bevat 'ai, maar niet 'start-up'"),
-                a("f2f463ea", "ai -start-up"),
+                a("da0df186", "bevat 'ai, maar niet 'start-up'");
+            a("f2f463ea", "ai -start-up"),
                 a("a10a357e", "bevat 'ai' en heeft minimaal 50 vind-ik-leuks"),
                 a("ca8ed1e8", "ai min_faves:50"),
-                a("i945a3f2", "bevat 'ai' en een URL met daarin het woord 'grok'");
-            a("a9348088", "ai url:grok"),
+                a("i945a3f2", "bevat 'ai' en een URL met daarin het woord 'grok'"),
+                a("a9348088", "ai url:grok"),
                 a("b5c3cdbc", "bevat vermelding van account 'grok' van X"),
                 a("e2634592", "@grok"),
                 a("i88ba038", "Meldingen uitgeschakeld"),
@@ -5871,12 +5875,12 @@
                 a("e50e1bb0", "Welkom bij Community's"),
                 a("i6829daa", "Community's zijn gemodereerde discussiegroepen waar mensen op X met elkaar in contact kunnen komen en dingen kunnen delen."),
                 a("fc5c6914", "Ontmoet anderen met dezelfde interesses"),
-                a("aa1a9820", "Word lid van Community's om in contact te komen met mensen met dezelfde interesses."),
-                a("edef4c82", "Rechtstreeks posts plaatsen in een Community"),
+                a("aa1a9820", "Word lid van Community's om in contact te komen met mensen met dezelfde interesses.");
+            a("edef4c82", "Rechtstreeks posts plaatsen in een Community"),
                 a("a7640df6", "Je posts worden gedeeld met Community-leden en met je volgers."),
                 a("h3bb8068", "Krijg hulp wanneer dat nodig is"),
-                a("a709f8f8", "Beheerders en moderators helpen Community's te beheren en zorgen dat gesprekken goed verlopen.");
-            a("c8d33380", "Nieuwe items"),
+                a("a709f8f8", "Beheerders en moderators helpen Community's te beheren en zorgen dat gesprekken goed verlopen."),
+                a("c8d33380", "Nieuwe items"),
                 a("cb6adb10", "Community's ontdekken"),
                 a("df362964", "Find Communities"),
                 a("dfd5031f", function (e) {
@@ -6428,6 +6432,7 @@
                 a("f7d1a8e0", "Android-app"),
                 a("aab2fae0", "iOS-app"),
                 a("a35d9c9a", "Bronnen"),
+                a("ic61c5fc", "Naar boven scrollen"),
                 a("i6671128", "Je hebt meer ontgrendeld op X"),
                 a("d5e4d0a6", "Je kan eenvoudiger meepraten en verbinden met anderen. Je kan nu profiteren van het volgende:"),
                 a("a97bc07e", "Ontgrendel meer op X"),
@@ -6855,7 +6860,7 @@
                 a("f15bc24e", "Verhoogde Grok-limieten"),
                 a("c4666e1c", "Meer gebruik van Grok 3, ons nieuwste model"),
                 a("he74ae7a", "De hoogste Grok-gebruikslimieten"),
-                a("f5732cd4", "Plus uitgebreide toegang tot DeepSearch en Denk"),
+                a("f5732cd4", "Plus uitgebreide toegang tot DeepSearch en Denken"),
                 a("e0198956", "Ontvang een deel van de inkomsten die worden gegenereerd door interacties van geverifieerde accounts met content die jij op X plaatst."),
                 a("iadf78e2", "Video's downloaden"),
                 a("ee54c3de", "Sla video's rechtstreeks op je apparaat op"),
@@ -6868,13 +6873,13 @@
                 a("fa006202", "Video afspelen in de achtergrond"),
                 a("jf389778", "Kijk terwijl je browset of andere apps gebruikt"),
                 a("f2977d80", "Bladwijzermappen"),
-                a("j1d3d910", "Hou je opgeslagen posts georganiseerd zodat je ze eenvoudig kan raadplegen"),
-                a("f0f48668", "Premium ondersteuning"),
+                a("j1d3d910", "Hou je opgeslagen posts georganiseerd zodat je ze eenvoudig kan raadplegen");
+            a("f0f48668", "Premium ondersteuning"),
                 a("c3148608", "Krijg sneller ondersteuning wanneer je hulp nodig hebt"),
                 a("b485ca6e", "Tabblad Hoogtepunten"),
                 a("d438955e", "Zet je topposts in de schijnwerpers"),
-                a("f373a352", "Versleutelde privéberichten");
-            a("g7405aca", "Chat veilig met end-to-end versleuteling"),
+                a("f373a352", "Versleutelde privéberichten"),
+                a("g7405aca", "Chat veilig met end-to-end versleuteling"),
                 a("j659fa0c", "Het beste van Grok 3"),
                 a("ibff5694", "Ontgrendel de hoogste gebruikslimieten, DeepSearch en Denk, plus vroege toegang tot nieuwe functies"),
                 a("i824f4da", "Minder advertenties"),
@@ -6908,7 +6913,7 @@
                 a("bf7614d4", "Makersabonnementen"),
                 a("gadc9f4a", "Meeste voorrang bij antwoorden"),
                 a("c127c5c2", "Verwijder alle advertenties"),
-                a("c1e0f3c8", "Ontgrendel Grok DeepSearch en Denk"),
+                a("c1e0f3c8", "Ontgrendel Grok DeepSearch en Denken"),
                 a("aac0bbb6", "Toegang tot Radar"),
                 a("a6722922", "Advertenties verwijderd"),
                 a("ba016532", "Antwoordboost"),
@@ -7011,7 +7016,7 @@
                 a("i4db5c92", "Opzeggen kan op elk moment"),
                 a("ae095fe8", "Grok AI"),
                 a("d4e60288", "Hoogste gebruikslimieten"),
-                a("abaa4274", "DeepSearch en Denk ontgrendelen"),
+                a("abaa4274", "DeepSearch en Denken ontgrendelen"),
                 a("e0d53864", "Vroege toegang tot nieuwe functies"),
                 a("g1be3530", "GRATIS PROEFPERIODE"),
                 a("b10b4f1f", function (e) {
@@ -7055,7 +7060,7 @@
                     return "Abonneer je met " + e.percentage + "% korting (tijdelijke aanbieding)";
                 }),
                 a("dfc5f972", "En nog veel meer ..."),
-                a("fb8453c8", "DeepSearch- en Denk-verzoeken ontgrendelen"),
+                a("fb8453c8", "DeepSearch- en Denken-verzoeken ontgrendelen"),
                 a("e45b3f30", "Ontgrendel Onderzoek- en Redenering-verzoeken"),
                 a("aaebdc2e", "Sterk verbeterde toegang tot Grok 3-mini en Grok 3"),
                 a("ddf8a412", "Eerder toegang tot nieuwe functies dan anderen"),
@@ -7844,16 +7849,7 @@
                 a("ff0edac0", "Weet je zeker dat je je abonnement wil opzeggen?"),
                 a("h2ac0348", "Nee, ga terug"),
                 a("dbf9667e", "Ik weet het zeker"),
-                a("j7592572", "U-bocht"),
-                a("ee778942", "Verkeerslichten"),
-                a("fdd57981", function (e) {
-                    return "We willen je graag eenmalig een gratis advertentietegoed van USD " + e.totalAmount + " aanbieden.";
-                }),
-                a("i032a231", function (e) {
-                    return "Ik blijf en claim mijn advertentietegoed van " + e.totalAmount;
-                }),
-                a("hd7d278c", "Nee, bedankt"),
-                a("jf8a0dea", "Geweldig! Je nieuwe gratis advertentietegoed verschijnt in je account bij je volgende factureringscyclus.");
+                a("j7592572", "U-bocht");
             function i(e, n) {
                 for (var t = 0; t < n.length; t++) {
                     var a = n[t];
@@ -7892,7 +7888,16 @@
                     o(e, n)
                 );
             }
-            a("ebbb3154", "Sluiten en teruggaan naar X"),
+            a("ee778942", "Verkeerslichten"),
+                a("fdd57981", function (e) {
+                    return "We willen je graag eenmalig een gratis advertentietegoed van USD " + e.totalAmount + " aanbieden.";
+                }),
+                a("i032a231", function (e) {
+                    return "Ik blijf en claim mijn advertentietegoed van " + e.totalAmount;
+                }),
+                a("hd7d278c", "Nee, bedankt"),
+                a("jf8a0dea", "Geweldig! Je nieuwe gratis advertentietegoed verschijnt in je account bij je volgende factureringscyclus."),
+                a("ebbb3154", "Sluiten en teruggaan naar X"),
                 a("j1f68dda", "Laatste stap: weet je zeker dat je wil opzeggen?"),
                 a("c9c3464c", "Opzeggen abonnement in behandeling"),
                 a("dd3a293c", "Je abonnement op Geverifieerde Organisaties is beëindigd."),
@@ -8399,7 +8404,6 @@
                 a("h9659832", "Bekijk je conceptposts"),
                 a("f1b6535e", "Conceptposts"),
                 a("a24add8a", "Bekijk posts opgeslagen als bladwijzers."),
-                a("ic61c5fc", "Naar boven scrollen"),
                 a("gb19f215", function (e) {
                     return "Kolom - " + e.title;
                 }),
@@ -8915,10 +8919,10 @@
                 }),
                 a("d0e7b11b", function (e) {
                     return e.date + " om " + e.time;
-                }),
-                a("b4349cbc", function (e) {
-                    return "" + e.relativeDay;
-                }),
+                });
+            a("b4349cbc", function (e) {
+                return "" + e.relativeDay;
+            }),
                 a("ebe41367", function (e) {
                     return "Tijdsduur " + e.time;
                 }),
@@ -8927,10 +8931,10 @@
                 }),
                 a("d925a4f9", function (e) {
                     return e.formattedCount + " minu" + r(e.count, "ut", "ten") + " resterend";
-                });
-            a("ib15cddb", function (e) {
-                return e.formattedCount + " uur resterend";
-            }),
+                }),
+                a("ib15cddb", function (e) {
+                    return e.formattedCount + " uur resterend";
+                }),
                 a("db9ed19f", function (e) {
                     return e.formattedCount + " dag" + r(e.count, "", "en") + " resterend";
                 }),
@@ -13196,4 +13200,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.33ed244a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.796dc19a.js.map

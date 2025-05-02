@@ -1,5 +1,5 @@
 var manifest = {
-    feature_set_token: "0ca6ae77a95f0c88a2c6d43d2a02b2ff2f15ea3d",
+    feature_set_token: "610c982bcc8895946310b5b65468c828cffe8b1d",
     config: {
         "2fa_temporary_password_enabled": { value: !1 },
         Arkose_rweb_hosted_page: { value: !0 },
@@ -511,6 +511,7 @@ var manifest = {
         responsive_web_grok_start_title_experiment_enabled: { value: !1 },
         responsive_web_grok_text_selection_enabled: { value: !1 },
         responsive_web_grok_text_upload_enabled: { value: !0 },
+        responsive_web_grok_trend_news_cell_enabled: { value: !1 },
         responsive_web_grok_trends_design_enabled: { value: !1 },
         responsive_web_grok_tweet_translation: { value: !1 },
         responsive_web_grok_tweet_translation_limit: { value: 5e3 },
@@ -2140,6 +2141,7 @@ var manifest = {
         responsive_web_grok_debug_enabled: { name: "responsive_web_grok_debug_enabled", type: "boolean", defaultValue: !1 },
         responsive_web_grok_05221996: { name: "responsive_web_grok_05221996", type: "boolean", defaultValue: !1 },
         responsive_web_grok_new_home_layout: { name: "responsive_web_grok_new_home_layout", type: "boolean", defaultValue: !1 },
+        responsive_web_grok_trend_news_cell_enabled: { name: "responsive_web_grok_trend_news_cell_enabled", type: "boolean", defaultValue: !1 },
         responsive_web_grok_api_enable_grok_host: { name: "responsive_web_grok_api_enable_grok_host", type: "boolean", defaultValue: !0 },
         responsive_web_hashtag_highlight_is_enabled: { name: "responsive_web_hashtag_highlight_is_enabled", type: "boolean", defaultValue: !1 },
         responsive_web_hashtag_highlight_show_avatar: { name: "responsive_web_hashtag_highlight_show_avatar", type: "boolean", defaultValue: !1 },
@@ -2372,7 +2374,6 @@ var manifest = {
         rweb_card_carouselv2_non_safari_15141: { name: "rweb_card_carouselv2_non_safari_15141", type: "experiment", enumeration_values: [] },
         rweb_card_carouselv2_safari_15142: { name: "rweb_card_carouselv2_safari_15142", type: "experiment", enumeration_values: [] },
         rweb_client_transaction_id_enabled: { name: "rweb_client_transaction_id_enabled", type: "boolean", defaultValue: !1 },
-        rweb_compact_media_17284: { name: "rweb_compact_media_17284", type: "experiment", enumeration_values: ["control", "max_450", "max_420", "max_400"] },
         rweb_conf_dev_enabled: { name: "rweb_conf_dev_enabled", type: "boolean", defaultValue: !1 },
         rweb_conf_multi_video_enabled: { name: "rweb_conf_multi_video_enabled", type: "boolean", defaultValue: !0 },
         rweb_conf_only_enabled: { name: "rweb_conf_only_enabled", type: "boolean", defaultValue: !1 },

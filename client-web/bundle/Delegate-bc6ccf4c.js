@@ -103,12 +103,12 @@
                 c = r(392237);
             const d = (e) => {
                     const { decoration: t, description: r, disabled: d = !1, isActive: p = !1, label: h, link: m, onPress: g, paddingHorizontal: b, renderRightContent: f, role: y = "tab", styleOverride: C, testID: Z = "pivot", thumbnail: E, thumbnailSize: v, withoutArrow: _ = !1 } = e,
-                        w = [u.thumbnailContainer, "medium" === v && u.thumbnailContainerMedium],
-                        k = "string" == typeof h ? a.createElement(s.ZP, null, h) : h,
+                        k = [u.thumbnailContainer, "medium" === v && u.thumbnailContainerMedium],
+                        w = "string" == typeof h ? a.createElement(s.ZP, null, h) : h,
                         x = "object" == typeof m && m.external && !m.openInSameFrame,
                         R = r ? ("string" == typeof r ? a.createElement(s.ZP, { color: "gray700", size: "subtext2", testID: `${Z}-description` }, r) : r) : null,
-                        z = a.useMemo(() => ("space0" === b ? { paddingHorizontal: 0 } : { paddingHorizontal: b ? c.default.theme.spaces[b] : c.default.theme.componentDimensions.gutterHorizontal }), [b]);
-                    return a.createElement(i.Z, { "aria-selected": "tab" === y ? p : null, disabled: d, link: d ? void 0 : m, onPress: g, role: y, style: [u.root, z, d && u.disabled, C], testID: Z, withInteractiveStyling: !!m || !!g }, a.createElement(o.Z, { style: u.contentContainer }, E ? a.createElement(o.Z, { style: w }, E) : null, a.createElement(o.Z, { style: u.content }, k, R), f ? f() : null, (!m && !g) || d || _ ? null : x ? a.createElement(l.default, { style: u.icon }) : a.createElement(n.default, { style: u.icon })), t);
+                        I = a.useMemo(() => ("space0" === b ? { paddingHorizontal: 0 } : { paddingHorizontal: b ? c.default.theme.spaces[b] : c.default.theme.componentDimensions.gutterHorizontal }), [b]);
+                    return a.createElement(i.Z, { "aria-selected": "tab" === y ? p : null, disabled: d, link: d ? void 0 : m, onPress: g, role: y, style: [u.root, I, d && u.disabled, C], testID: Z, withInteractiveStyling: !!m || !!g }, a.createElement(o.Z, { style: u.contentContainer }, E ? a.createElement(o.Z, { style: k }, E) : null, a.createElement(o.Z, { style: u.content }, w, R), f ? f() : null, (!m && !g) || d || _ ? null : x ? a.createElement(l.default, { style: u.icon }) : a.createElement(n.default, { style: u.icon })), t);
                 },
                 u = c.default.create((e) => ({ root: { justifyContent: "space-between", minHeight: `calc(${c.default.theme.lineHeights.headline1} + 2 * ${e.componentDimensions.gutterVertical})`, paddingVertical: e.componentDimensions.gutterVertical }, disabled: { opacity: 0.5 }, contentContainer: { alignItems: "center", flexDirection: "row", flexGrow: 1 }, content: { flexGrow: 1, flexShrink: 1 }, icon: { color: e.colors.gray700, paddingStart: e.spaces.space12, flexShrink: 0 }, thumbnailContainer: { alignItems: "center", justifyContent: "center", height: e.spaces.space48, width: e.spaces.space48, marginEnd: e.spaces.space16 }, thumbnailContainerMedium: { height: e.spaces.space32, width: e.spaces.space32 } }));
         },
@@ -254,19 +254,6 @@
             s.metadata = { width: 24, height: 24 };
             const i = s;
         },
-        41065: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => i });
-            var a = r(202784),
-                o = r(890601),
-                l = r(783427),
-                n = r(347101);
-            const s = (e = {}) => {
-                const { direction: t } = (0, l.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M6.866 18H.846l.075-1.069C1.33 11.083 4.335 9 7.011 9c1.457 0 2.734.576 3.743 1.615-.515.378-1.003.826-1.45 1.355-.562-.569-1.305-.97-2.293-.97-2.074 0-3.522 1.847-3.981 5h4.225c-.169.616-.295 1.288-.389 2zM4 5c0-1.654 1.343-3 3-3s3 1.346 3 3-1.343 3-3 3-3-1.346-3-3zm2 0c0 .551.448 1 1 1s1-.449 1-1-.448-1-1-1-1 .449-1 1zm9.5 5c-.778 0-1.49-.263-2.071-.693C12.566 8.669 12 7.653 12 6.5 12 4.57 13.567 3 15.5 3S19 4.57 19 6.5c0 1.111-.53 2.092-1.34 2.733-.596.472-1.341.767-2.16.767zM14 6.5c0 .827.673 1.5 1.5 1.5S17 7.327 17 6.5 16.327 5 15.5 5 14 5.673 14 6.5zm1.5 4.496c3.264 0 6.816 2.358 7 8.977L22.529 21H8.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977zm0 2c-2.767 0-4.57 2.223-4.938 6.004h9.875c-.367-3.781-2.17-6.004-4.938-6.004z" })) }, { writingDirection: t });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const i = s;
-        },
         662678: (e, t, r) => {
             r.d(t, { G: () => o, Z: () => a });
             r(136728);
@@ -285,4 +272,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Delegate-bc6ccf4c.ff1735ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Delegate-bc6ccf4c.c858a0aa.js.map

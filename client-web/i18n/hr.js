@@ -608,7 +608,7 @@
                 o("e0cb0c72", "Oglasi"),
                 o("e2eef3c2", "Provjerene organizacije"),
                 o("b55d8a78", "Stvorite svoj Prostor"),
-                o("e5323e36", "Go Live"),
+                o("e5323e36", "Emitiraj uživo"),
                 o("a5a30af0", "Članci"),
                 o("d13d697c", "Novo"),
                 o("j0e2cfa8", "Tvrtke"),
@@ -2967,10 +2967,15 @@
                 o("d83f18d2", "Direktorij"),
                 o("hc5aa17c", "Preuzmite aplikaciju X"),
                 o("j0693948", "Preuzmite aplikaciju Grok"),
-                o("fbf83158", "Upozorenje: plaćanje nije uspjelo"),
-                o("jadeb4da", "Hitno ažurirajte način plaćanja prije nego što izgubite pogodnosti pretplate.");
-            o("bce3726a", "Ažurirajte podatke za naplatu"),
+                o("af781666", "What do people think?"),
+                o("ad35153e", "beta");
+            o("fbf83158", "Upozorenje: plaćanje nije uspjelo"),
+                o("jadeb4da", "Hitno ažurirajte način plaćanja prije nego što izgubite pogodnosti pretplate."),
+                o("bce3726a", "Ažurirajte podatke za naplatu"),
                 o("fce9ecce", "Preporučeni videozapisi"),
+                o("dc954b88", "Try the full news experience"),
+                o("j66b95a2", "In-Depth News"),
+                o("b58d2bd2", "Relevantne objave"),
                 o("efe6ef9e", "Prikaži objavu"),
                 o("b3d183ce", "Objava s odgovorima"),
                 o("c299a6c0", "Nit razgovora"),
@@ -3879,15 +3884,15 @@
                 o("b90eb348", "Pozovi govornika"),
                 o("d9a63e82", "Ukloni s mjesta govornika"),
                 o("bd917b26", "Pozovi na mjesto suvoditelja"),
-                o("d7357e7e", "Ukloni s mjesta suvoditelja"),
-                o("bf307fc0", "Blokiraj i ukloni"),
+                o("d7357e7e", "Ukloni s mjesta suvoditelja");
+            o("bf307fc0", "Blokiraj i ukloni"),
                 o("ccf2f24e", "Prijava"),
                 o("i22835de", "Odobri"),
                 o("cb59a0fe", "Odbij"),
-                o("c2376960", "Zahtjevi za mjesto govornika");
-            o("aba7dcdd", function (a) {
-                return "Pozovite korisnika " + a.name;
-            }),
+                o("c2376960", "Zahtjevi za mjesto govornika"),
+                o("aba7dcdd", function (a) {
+                    return "Pozovite korisnika " + a.name;
+                }),
                 o("f5c7aaa7", function (a) {
                     return "voditelj" + n(a.count, "a", "", "a");
                 }),
@@ -4319,7 +4324,6 @@
                 o("aa7c96bb", function (a) {
                     return "Pogledajte još " + a.numResults;
                 }),
-                o("b58d2bd2", "Relevantne objave"),
                 o("f5a2377e", "Razmišljanje "),
                 o("g3ce0132", "Razmišljanje je trajalo"),
                 o("f8007364", "Proširite za detalje"),
@@ -4341,7 +4345,7 @@
                 o("e02694e0", "Odgovor 2"),
                 o("h6867fcc", "Preferiram ovaj odgovor"),
                 o("d07488a6", "Get the Android app"),
-                o("d9cfe70c", "Access advanced Grok features"),
+                o("d9cfe70c", "Pristupite naprednim značajkama Groka"),
                 o("hf9afab0", "Omogućite DeepSearch za skeniranje interneta i platforme X, analizu informacija i pružanje detaljnih, dobro obrazloženih odgovora brzim i sistematičnim pretraživanjem."),
                 o("ef3b3f04", 'Omogućite Think i uživajte u našem modelu rasuđivanja. Najbolje funkcionira u rješavanju matematičkih zadataka, znanstvenom promišljanju i pisanju koda. Također možete zamoliti Groka da "podrobnije razmisli uz Think" o bilo kojem pitanju koje bi moglo zahtijevati dublje promišljanje. '),
                 o("b43636b8", "Stigao je Grok 3"),
@@ -4912,12 +4916,12 @@
                 o("j8ee77c4", "„ai pokretanje”"),
                 o("d0480758", "sadrži ili „ai” ili „pokretanje” (ili oboje)"),
                 o("f0048fa2", "ai ILI pokretanje"),
-                o("da0df186", "sadrži „ai”, ali ne „pokretanje”"),
-                o("f2f463ea", "ai-pokretanje"),
+                o("da0df186", "sadrži „ai”, ali ne „pokretanje”");
+            o("f2f463ea", "ai-pokretanje"),
                 o("a10a357e", "sadrži „ai” i ima najmanje 50 oznaka „sviđa mi se”"),
                 o("ca8ed1e8", "ai min_faves:50"),
-                o("i945a3f2", "sadrži „ai” i URL koji sadrži riječ „grok”");
-            o("a9348088", "ai url:grok"),
+                o("i945a3f2", "sadrži „ai” i URL koji sadrži riječ „grok”"),
+                o("a9348088", "ai url:grok"),
                 o("b5c3cdbc", "spominjanje računa za X „grok”"),
                 o("e2634592", "@grok"),
                 o("i88ba038", "Upozorenje onemogućeno"),
@@ -5878,12 +5882,12 @@
                 o("e50e1bb0", "Dobro došli u Zajednice"),
                 o("i6829daa", "Zajednice su moderirane grupe za raspravu u kojima se korisnici platforme X mogu povezivati i dijeliti sadržaj."),
                 o("fc5c6914", "Upoznajte druge osobe koje dijele vaše interese"),
-                o("aa1a9820", "Uključite se u Zajednice i povežite se s osobama koje dijele vaše interese."),
-                o("edef4c82", "Objava izravno u Zajednicu"),
+                o("aa1a9820", "Uključite se u Zajednice i povežite se s osobama koje dijele vaše interese.");
+            o("edef4c82", "Objava izravno u Zajednicu"),
                 o("a7640df6", "Vaše se objave dijele s članovima Zajednice i osobama koje vas prate."),
                 o("h3bb8068", "Zatražite pojačanje kada vam je potrebno"),
-                o("a709f8f8", "Administratori i moderatori mogu pomoći pri upravljanju zajednicama i održavati razgovor u okviru teme.");
-            o("c8d33380", "Nove stavke"),
+                o("a709f8f8", "Administratori i moderatori mogu pomoći pri upravljanju zajednicama i održavati razgovor u okviru teme."),
+                o("c8d33380", "Nove stavke"),
                 o("cb6adb10", "Otkrijte zajednice"),
                 o("df362964", "Pronađi Zajednice"),
                 o("dfd5031f", function (a) {
@@ -6435,6 +6439,7 @@
                 o("f7d1a8e0", "Aplikacija za Android"),
                 o("aab2fae0", "Aplikacija za iOS"),
                 o("a35d9c9a", "Resursi"),
+                o("ic61c5fc", "Pomakni se prema gore"),
                 o("i6671128", "Otključali ste veći broj značajki na platformi X"),
                 o("d5e4d0a6", "Možete se lakše uključiti u razgovor i povezati s drugim korisnicima. Sada možete sljedeće:"),
                 o("a97bc07e", "Otključajte veći broj značajki na platformi X"),
@@ -6875,13 +6880,13 @@
                 o("fa006202", "Pozadinska reprodukcija videozapisa"),
                 o("jf389778", "Gledajte dok pregledavate ili upotrebljavate druge aplikacije"),
                 o("f2977d80", "Mape s knjižnim oznakama"),
-                o("j1d3d910", "Neka vaše spremljene objave budu organizirane kako biste im mogli jednostavno pristupiti"),
-                o("f0f48668", "Premium podrška"),
+                o("j1d3d910", "Neka vaše spremljene objave budu organizirane kako biste im mogli jednostavno pristupiti");
+            o("f0f48668", "Premium podrška"),
                 o("c3148608", "Brže dobijte pomoć kada vam je potrebna"),
                 o("b485ca6e", "Kartica Istaknuto"),
                 o("d438955e", "Istaknite najpopularnije objave"),
-                o("f373a352", "Šifrirane izravne poruke");
-            o("g7405aca", "Sigurno razgovarajte uz sveobuhvatno šifriranje"),
+                o("f373a352", "Šifrirane izravne poruke"),
+                o("g7405aca", "Sigurno razgovarajte uz sveobuhvatno šifriranje"),
                 o("j659fa0c", "Najbolje od značajke Grok 3"),
                 o("ibff5694", "Otključajte najveća ograničenja upotrebe, DeepSearch i Razmišljanje, plus rani pristup novim značajkama"),
                 o("i824f4da", "Manje oglasa"),
@@ -7851,16 +7856,7 @@
                 o("ff0edac0", "Sigurno želite otkazati pretplatu?"),
                 o("h2ac0348", "Ne, vrati se"),
                 o("dbf9667e", "Da"),
-                o("j7592572", "Polukružni okret"),
-                o("ee778942", "Semafor"),
-                o("fdd57981", function (a) {
-                    return "Želimo vam ponuditi besplatan jednokratan kredit za oglase u iznosu od " + a.totalAmount + " USD.";
-                }),
-                o("i032a231", function (a) {
-                    return "Ostat ću i iskoristiti " + a.totalAmount + " kredita za oglase";
-                }),
-                o("hd7d278c", "Ne, hvala"),
-                o("jf8a0dea", "Sjajno! Vaš novi besplatni kredit za oglase prikazat će se na vašem računu u sljedećem ciklusu naplate.");
+                o("j7592572", "Polukružni okret");
             function t(a, e) {
                 for (var i = 0; i < e.length; i++) {
                     var o = e[i];
@@ -7899,7 +7895,16 @@
                     r(a, e)
                 );
             }
-            o("ebbb3154", "Zatvori i vrati se na X"),
+            o("ee778942", "Semafor"),
+                o("fdd57981", function (a) {
+                    return "Želimo vam ponuditi besplatan jednokratan kredit za oglase u iznosu od " + a.totalAmount + " USD.";
+                }),
+                o("i032a231", function (a) {
+                    return "Ostat ću i iskoristiti " + a.totalAmount + " kredita za oglase";
+                }),
+                o("hd7d278c", "Ne, hvala"),
+                o("jf8a0dea", "Sjajno! Vaš novi besplatni kredit za oglase prikazat će se na vašem računu u sljedećem ciklusu naplate."),
+                o("ebbb3154", "Zatvori i vrati se na X"),
                 o("j1f68dda", "Posljednji korak: jeste li sigurni da želite otkazati?"),
                 o("c9c3464c", "Otkazivanje pretplate je u tijeku"),
                 o("dd3a293c", "Vaša je pretplata za Provjerene organizacije završila."),
@@ -8406,7 +8411,6 @@
                 o("h9659832", "Pogledajte svoje skice objava."),
                 o("f1b6535e", "Skice objava"),
                 o("a24add8a", "Prikažite objave dodane u knjižne oznake."),
-                o("ic61c5fc", "Pomakni se prema gore"),
                 o("gb19f215", function (a) {
                     return "Članak " + a.title;
                 }),
@@ -8922,10 +8926,10 @@
                 }),
                 o("d0e7b11b", function (a) {
                     return a.date + " u " + a.time;
-                }),
-                o("b4349cbc", function (a) {
-                    return "" + a.relativeDay;
-                }),
+                });
+            o("b4349cbc", function (a) {
+                return "" + a.relativeDay;
+            }),
                 o("ebe41367", function (a) {
                     return "Trajanje " + a.time;
                 }),
@@ -8934,10 +8938,10 @@
                 }),
                 o("d925a4f9", function (a) {
                     return "Preostal" + n(a.count, "e su još " + a.formattedCount + " minute", "a je još " + a.formattedCount + " minuta", "o je još " + a.formattedCount + " minuta");
-                });
-            o("ib15cddb", function (a) {
-                return "Preosta" + n(a.count, "la su još " + a.formattedCount + " sata", "o je još " + a.formattedCount + " sat", "lo je još " + a.formattedCount + " sati");
-            }),
+                }),
+                o("ib15cddb", function (a) {
+                    return "Preosta" + n(a.count, "la su još " + a.formattedCount + " sata", "o je još " + a.formattedCount + " sat", "lo je još " + a.formattedCount + " sati");
+                }),
                 o("db9ed19f", function (a) {
                     return "Preosta" + n(a.count, "la su još " + a.formattedCount + " dana", "o je još " + a.formattedCount + " dan", "lo je još " + a.formattedCount + " dana");
                 }),
@@ -13204,4 +13208,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hr.209861aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hr.3083332a.js.map

@@ -2975,10 +2975,15 @@
                 n("d83f18d2", "Directory"),
                 n("hc5aa17c", "Get the X app"),
                 n("j0693948", "Get the Grok app"),
-                n("fbf83158", "Warning: Payment failed"),
-                n("jadeb4da", "Please urgently update your payment method before you lose your subscription benefits.");
-            n("bce3726a", "Update Billing"),
+                n("af781666", "What do people think?"),
+                n("ad35153e", "beta");
+            n("fbf83158", "Warning: Payment failed"),
+                n("jadeb4da", "Please urgently update your payment method before you lose your subscription benefits."),
+                n("bce3726a", "Update Billing"),
                 n("fce9ecce", "Suggested Videos"),
+                n("dc954b88", "Try the full news experience"),
+                n("j66b95a2", "In-Depth News"),
+                n("b58d2bd2", "Relevant Posts"),
                 n("efe6ef9e", "View post"),
                 n("b3d183ce", "Post with replies"),
                 n("c299a6c0", "Snáithe"),
@@ -3887,15 +3892,15 @@
                 n("b90eb348", "Invite to Speak"),
                 n("d9a63e82", "Remove from Speakers"),
                 n("bd917b26", "Invite to Co-host"),
-                n("d7357e7e", "Remove from Co-hosts"),
-                n("bf307fc0", "Block and Remove"),
+                n("d7357e7e", "Remove from Co-hosts");
+            n("bf307fc0", "Block and Remove"),
                 n("ccf2f24e", "Tuairiscigh"),
                 n("i22835de", "Ceadaigh"),
                 n("cb59a0fe", "Ná ghlac leis"),
-                n("c2376960", "Requests to Speak");
-            n("aba7dcdd", function (e) {
-                return "Invite " + e.name;
-            }),
+                n("c2376960", "Requests to Speak"),
+                n("aba7dcdd", function (e) {
+                    return "Invite " + e.name;
+                }),
                 n("f5c7aaa7", function (e) {
                     return "host" + o(e.count, "", "s");
                 }),
@@ -4327,7 +4332,6 @@
                 n("aa7c96bb", function (e) {
                     return "See " + e.numResults + " more";
                 }),
-                n("b58d2bd2", "Relevant Posts"),
                 n("f5a2377e", "Thinking for"),
                 n("g3ce0132", "Thought for"),
                 n("f8007364", "Expand for details"),
@@ -4920,12 +4924,12 @@
                 n("j8ee77c4", '"ai startup"'),
                 n("d0480758", 'contains either "ai" or "startup" (or both)'),
                 n("f0048fa2", "ai OR startup"),
-                n("da0df186", 'contains "ai", but not "startup"'),
-                n("f2f463ea", "ai -startup"),
+                n("da0df186", 'contains "ai", but not "startup"');
+            n("f2f463ea", "ai -startup"),
                 n("a10a357e", 'contains "ai" and has at least 50 likes'),
                 n("ca8ed1e8", "ai min_faves:50"),
-                n("i945a3f2", 'contains "ai" and a URL with the word "grok" in it');
-            n("a9348088", "ai url:grok"),
+                n("i945a3f2", 'contains "ai" and a URL with the word "grok" in it'),
+                n("a9348088", "ai url:grok"),
                 n("b5c3cdbc", 'mentioning X account "grok"'),
                 n("e2634592", "@grok"),
                 n("i88ba038", "Alert Disabled"),
@@ -5886,12 +5890,12 @@
                 n("e50e1bb0", "Welcome to Communities"),
                 n("i6829daa", "Communities are moderated discussion groups where people on X can connect and share."),
                 n("fc5c6914", "Meet others with your interests"),
-                n("aa1a9820", "Join Communities to connect with people who share your interests."),
-                n("edef4c82", "Post directly to a Community"),
+                n("aa1a9820", "Join Communities to connect with people who share your interests.");
+            n("edef4c82", "Post directly to a Community"),
                 n("a7640df6", "Your posts are shared with Community members and your followers."),
                 n("h3bb8068", "Get backup when you need it"),
-                n("a709f8f8", "Admins and moderators help manage Communities and keep conversations on track.");
-            n("c8d33380", "Míreanna nua"),
+                n("a709f8f8", "Admins and moderators help manage Communities and keep conversations on track."),
+                n("c8d33380", "Míreanna nua"),
                 n("cb6adb10", "Discover Communities"),
                 n("df362964", "Find Communities"),
                 n("dfd5031f", function (e) {
@@ -6443,6 +6447,7 @@
                 n("f7d1a8e0", "aip anaróideach "),
                 n("aab2fae0", "aip iOS"),
                 n("a35d9c9a", "Acmhainní"),
+                n("ic61c5fc", "Scroll to top"),
                 n("i6671128", "You’ve unlocked more on X"),
                 n("d5e4d0a6", "You can join the conversation and connect with others more easily. Now you can do the following:"),
                 n("a97bc07e", "Unlock more on X"),
@@ -6883,13 +6888,13 @@
                 n("fa006202", "Background video playback"),
                 n("jf389778", "Watch while browsing or using other apps"),
                 n("f2977d80", "Bookmark folders"),
-                n("j1d3d910", "Keep your saved posts organized for easy access"),
-                n("f0f48668", "Premium support"),
+                n("j1d3d910", "Keep your saved posts organized for easy access");
+            n("f0f48668", "Premium support"),
                 n("c3148608", "Get faster assistance when you need help"),
                 n("b485ca6e", "Highlights tab"),
                 n("d438955e", "Showcase your top posts"),
-                n("f373a352", "Encrypted DMs");
-            n("g7405aca", "Chat securely with end-to-end encryption"),
+                n("f373a352", "Encrypted DMs"),
+                n("g7405aca", "Chat securely with end-to-end encryption"),
                 n("j659fa0c", "The best of Grok 3"),
                 n("ibff5694", "Unlock the highest usage limits, DeepSearch & Think, plus early access to new features"),
                 n("i824f4da", "Fewer ads"),
@@ -7859,16 +7864,7 @@
                 n("ff0edac0", "Are you sure you want to cancel your subscription?"),
                 n("h2ac0348", "No, take me back"),
                 n("dbf9667e", "I’m sure"),
-                n("j7592572", "U-turn"),
-                n("ee778942", "Traffic lights"),
-                n("fdd57981", function (e) {
-                    return "We’d like to offer you a free one-time " + e.totalAmount + " USD ad credit.";
-                }),
-                n("i032a231", function (e) {
-                    return "I’ll stay and claim the " + e.totalAmount + " ad credit";
-                }),
-                n("hd7d278c", "Níor mhaith, go raibh maith agat"),
-                n("jf8a0dea", "Great! Your new free ad credit will appear in your account on your next billing cycle.");
+                n("j7592572", "U-turn");
             function r(e, a) {
                 for (var t = 0; t < a.length; t++) {
                     var n = a[t];
@@ -7907,7 +7903,16 @@
                     c(e, a)
                 );
             }
-            n("ebbb3154", "Close and return to X"),
+            n("ee778942", "Traffic lights"),
+                n("fdd57981", function (e) {
+                    return "We’d like to offer you a free one-time " + e.totalAmount + " USD ad credit.";
+                }),
+                n("i032a231", function (e) {
+                    return "I’ll stay and claim the " + e.totalAmount + " ad credit";
+                }),
+                n("hd7d278c", "Níor mhaith, go raibh maith agat"),
+                n("jf8a0dea", "Great! Your new free ad credit will appear in your account on your next billing cycle."),
+                n("ebbb3154", "Close and return to X"),
                 n("j1f68dda", "Final step: Are you sure you want to cancel?"),
                 n("c9c3464c", "Subscription cancellation in progress"),
                 n("dd3a293c", "Your Verified Organization subscription has ended."),
@@ -8414,7 +8419,6 @@
                 n("h9659832", "View your draft posts."),
                 n("f1b6535e", "Draft posts"),
                 n("a24add8a", "See bookmarked posts."),
-                n("ic61c5fc", "Scroll to top"),
                 n("gb19f215", function (e) {
                     return "Column - " + e.title;
                 }),
@@ -8930,10 +8934,10 @@
                 }),
                 n("d0e7b11b", function (e) {
                     return e.date + " ag " + e.time;
-                }),
-                n("b4349cbc", function (e) {
-                    return "" + e.relativeDay;
-                }),
+                });
+            n("b4349cbc", function (e) {
+                return "" + e.relativeDay;
+            }),
                 n("ebe41367", function (e) {
                     return "Am " + e.time;
                 }),
@@ -8942,10 +8946,10 @@
                 }),
                 n("d925a4f9", function (e) {
                     return e.formattedCount + " minute" + o(e.count, "", "s") + " left";
-                });
-            n("ib15cddb", function (e) {
-                return e.formattedCount + " hour" + o(e.count, "", "s") + " left";
-            }),
+                }),
+                n("ib15cddb", function (e) {
+                    return e.formattedCount + " hour" + o(e.count, "", "s") + " left";
+                }),
                 n("db9ed19f", function (e) {
                     return e.formattedCount + " day" + o(e.count, "", "s") + " left";
                 }),
@@ -13199,4 +13203,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ga.67575f7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ga.950a925a.js.map

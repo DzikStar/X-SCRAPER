@@ -600,7 +600,7 @@
                 t("e0cb0c72", "Quảng cáo"),
                 t("e2eef3c2", "Tổ chức đã xác nhận"),
                 t("b55d8a78", "Tạo Phòng của bạn"),
-                t("e5323e36", "Go Live"),
+                t("e5323e36", "Phát trực tuyến"),
                 t("a5a30af0", "Bài viết"),
                 t("d13d697c", "Mới"),
                 t("j0e2cfa8", "Doanh nghiệp"),
@@ -2959,10 +2959,15 @@
                 t("d83f18d2", "Danh mục"),
                 t("hc5aa17c", "Tải ứng dụng X"),
                 t("j0693948", "Tải ứng dụng Grok"),
-                t("fbf83158", "Cảnh báo: Thanh toán không thành công"),
-                t("jadeb4da", "Vui lòng cập nhật gấp phương thức thanh toán trước khi mất lợi ích của gói thuê bao.");
-            t("bce3726a", "Cập nhật thông tin thanh toán"),
+                t("af781666", "What do people think?"),
+                t("ad35153e", "bản thử nghiệm");
+            t("fbf83158", "Cảnh báo: Thanh toán không thành công"),
+                t("jadeb4da", "Vui lòng cập nhật gấp phương thức thanh toán trước khi mất lợi ích của gói thuê bao."),
+                t("bce3726a", "Cập nhật thông tin thanh toán"),
                 t("fce9ecce", "Các video được đề xuất"),
+                t("dc954b88", "Try the full news experience"),
+                t("j66b95a2", "In-Depth News"),
+                t("b58d2bd2", "Bài đăng có liên quan"),
                 t("efe6ef9e", "Xem bài đăng"),
                 t("b3d183ce", "Bài đăng có câu trả lời"),
                 t("c299a6c0", "Chuỗi hội thoại"),
@@ -3871,15 +3876,15 @@
                 t("b90eb348", "Mời phát biểu"),
                 t("d9a63e82", "Xóa người nói"),
                 t("bd917b26", "Mời làm Đồng chủ phòng"),
-                t("d7357e7e", "Xóa khỏi danh sách Đồng chủ phòng"),
-                t("bf307fc0", "Chặn và xóa"),
+                t("d7357e7e", "Xóa khỏi danh sách Đồng chủ phòng");
+            t("bf307fc0", "Chặn và xóa"),
                 t("ccf2f24e", "Báo cáo"),
                 t("i22835de", "Chấp thuận"),
                 t("cb59a0fe", "Từ chối"),
-                t("c2376960", "Yêu cầu phát biểu");
-            t("aba7dcdd", function (n) {
-                return "Mời " + n.name;
-            }),
+                t("c2376960", "Yêu cầu phát biểu"),
+                t("aba7dcdd", function (n) {
+                    return "Mời " + n.name;
+                }),
                 t("f5c7aaa7", function (n) {
                     return "chủ phòng";
                 }),
@@ -4311,7 +4316,6 @@
                 t("aa7c96bb", function (n) {
                     return "Xem " + n.numResults + " khác";
                 }),
-                t("b58d2bd2", "Bài đăng có liên quan"),
                 t("f5a2377e", "Đang nghĩ trong "),
                 t("g3ce0132", "Đã nghĩ trong"),
                 t("f8007364", "Mở rộng để xem chi tiết"),
@@ -4333,7 +4337,7 @@
                 t("e02694e0", "Phản hồi 2"),
                 t("h6867fcc", "Tôi thích phản hồi này"),
                 t("d07488a6", "Get the Android app"),
-                t("d9cfe70c", "Access advanced Grok features"),
+                t("d9cfe70c", "Truy cập vào các tính năng nâng cao của Grok"),
                 t("hf9afab0", "Cho phép DeepSearch quét Internet và X, phân tích thông tin và cung cấp câu trả lời chi tiết, có lập luận tốt nhờ khả năng tìm kiếm nhanh và chủ động."),
                 t("ef3b3f04", 'Cho phép tính năng Suy nghĩ dùng mô hình lập luận của chúng tôi. Tính năng này phù hợp nhất với toán học, khoa học và lập trình. Bạn cũng có thể yêu cầu Grok "Suy nghĩ sâu hơn" về bất kỳ câu hỏi nào cần tư duy thêm. '),
                 t("b43636b8", "Giới thiệu Grok 3"),
@@ -4904,12 +4908,12 @@
                 t("j8ee77c4", '"công ty khởi nghiệp ai"'),
                 t("d0480758", 'chứa "ai" hoặc "công ty khởi nghiệp" (hoặc cả hai)'),
                 t("f0048fa2", "ai HOẶC công ty khởi nghiệp"),
-                t("da0df186", 'chứa "ai" nhưng không chứa "công ty khởi nghiệp"'),
-                t("f2f463ea", "ai -công ty khởi nghiệp"),
+                t("da0df186", 'chứa "ai" nhưng không chứa "công ty khởi nghiệp"');
+            t("f2f463ea", "ai -công ty khởi nghiệp"),
                 t("a10a357e", 'chứa "ai" và có ít nhất 50 lượt thích'),
                 t("ca8ed1e8", "ai min_faves:50"),
-                t("i945a3f2", 'chứa "ai" và URL kèm theo từ "grok" trong đó');
-            t("a9348088", "ai url:grok"),
+                t("i945a3f2", 'chứa "ai" và URL kèm theo từ "grok" trong đó'),
+                t("a9348088", "ai url:grok"),
                 t("b5c3cdbc", 'đề cập đến tài khoản X "grok"'),
                 t("e2634592", "@grok"),
                 t("i88ba038", "Đã tắt cảnh báo"),
@@ -5870,12 +5874,12 @@
                 t("e50e1bb0", "Chào mừng bạn đến với Cộng đồng"),
                 t("i6829daa", "Cộng đồng là các nhóm thảo luận được kiểm duyệt, nơi mọi người trên X có thể kết nối và chia sẻ."),
                 t("fc5c6914", "Gặp gỡ những người khác có cùng mối quan tâm của bạn"),
-                t("aa1a9820", "Tham gia Cộng đồng để kết nối với những người có cùng mối quan tâm với bạn."),
-                t("edef4c82", "Đăng trực tiếp lên Cộng đồng"),
+                t("aa1a9820", "Tham gia Cộng đồng để kết nối với những người có cùng mối quan tâm với bạn.");
+            t("edef4c82", "Đăng trực tiếp lên Cộng đồng"),
                 t("a7640df6", "Bài đăng của bạn được chia sẻ với các thành viên trong Cộng đồng và những người theo dõi bạn."),
                 t("h3bb8068", "Nhận bản sao lưu khi cần"),
-                t("a709f8f8", "Quản trị viên và người kiểm duyệt giúp quản lý Cộng đồng và giữ cho cuộc trò chuyện đi đúng hướng.");
-            t("c8d33380", "Mục mới"),
+                t("a709f8f8", "Quản trị viên và người kiểm duyệt giúp quản lý Cộng đồng và giữ cho cuộc trò chuyện đi đúng hướng."),
+                t("c8d33380", "Mục mới"),
                 t("cb6adb10", "Khám phá Cộng đồng"),
                 t("df362964", "Tìm các cộng đồng"),
                 t("dfd5031f", function (n) {
@@ -6427,6 +6431,7 @@
                 t("f7d1a8e0", "Ứng dụng Android"),
                 t("aab2fae0", "Ứng dụng iOS"),
                 t("a35d9c9a", "Tài nguyên"),
+                t("ic61c5fc", "Cuộn lên đầu"),
                 t("i6671128", "Bạn được khám phá nhiều điều hơn trên X"),
                 t("d5e4d0a6", "Bạn có thể tham gia cuộc trò chuyện và kết nối với những người khác dễ dàng hơn. Bây giờ bạn có thể làm như sau:"),
                 t("a97bc07e", "Khám phá nhiều điều hơn trên X"),
@@ -6867,13 +6872,13 @@
                 t("fa006202", "Phát video trong nền"),
                 t("jf389778", "Xem trong khi duyệt nội dung hoặc sử dụng ứng dụng khác"),
                 t("f2977d80", "Thư mục dấu trang"),
-                t("j1d3d910", "Sắp xếp khoa học các bài đăng đã lưu để dễ dàng truy cập"),
-                t("f0f48668", "Hỗ trợ cao cấp"),
+                t("j1d3d910", "Sắp xếp khoa học các bài đăng đã lưu để dễ dàng truy cập");
+            t("f0f48668", "Hỗ trợ cao cấp"),
                 t("c3148608", "Nhận trợ giúp nhanh hơn khi bạn cần hỗ trợ"),
                 t("b485ca6e", "Tab Sự kiện nổi bật"),
                 t("d438955e", "Quảng bá các bài đăng hàng đầu của bạn"),
-                t("f373a352", "Tin nhắn trực tiếp được mã hóa");
-            t("g7405aca", "Trò chuyện an toàn nhờ tính năng mã hóa đầu cuối"),
+                t("f373a352", "Tin nhắn trực tiếp được mã hóa"),
+                t("g7405aca", "Trò chuyện an toàn nhờ tính năng mã hóa đầu cuối"),
                 t("j659fa0c", "Những điều đỉnh nhất của Grok 3"),
                 t("ibff5694", "Mở khóa hạn mức sử dụng cao nhất, chế độ DeepSearch và Suy nghĩ, cùng quyền truy cập sớm vào các tính năng mới"),
                 t("i824f4da", "Ít quảng cáo hơn"),
@@ -7843,16 +7848,7 @@
                 t("ff0edac0", "Bạn có chắc chắn muốn hủy thuê bao của mình không?"),
                 t("h2ac0348", "Không, tôi muốn quay lại"),
                 t("dbf9667e", "Tôi chắc chắn"),
-                t("j7592572", "Vòng ngược lại"),
-                t("ee778942", "Đèn giao thông"),
-                t("fdd57981", function (n) {
-                    return "Chúng tôi muốn tặng bạn ưu đãi một lần trị giá " + n.totalAmount + " USD tín dụng quảng cáo miễn phí.";
-                }),
-                t("i032a231", function (n) {
-                    return "Tôi sẽ tiếp tục dùng gói thuê bao và nhận " + n.totalAmount + " tín dụng quảng cáo";
-                }),
-                t("hd7d278c", "Không, cảm ơn"),
-                t("jf8a0dea", "Tuyệt vời! Tín dụng quảng cáo miễn phí mới của bạn sẽ được thêm vào tài khoản trong chu kỳ thanh toán tiếp theo.");
+                t("j7592572", "Vòng ngược lại");
             function g(n, h) {
                 for (var c = 0; c < h.length; c++) {
                     var t = h[c];
@@ -7891,7 +7887,16 @@
                     a(n, h)
                 );
             }
-            t("ebbb3154", "Đóng và quay lại X"),
+            t("ee778942", "Đèn giao thông"),
+                t("fdd57981", function (n) {
+                    return "Chúng tôi muốn tặng bạn ưu đãi một lần trị giá " + n.totalAmount + " USD tín dụng quảng cáo miễn phí.";
+                }),
+                t("i032a231", function (n) {
+                    return "Tôi sẽ tiếp tục dùng gói thuê bao và nhận " + n.totalAmount + " tín dụng quảng cáo";
+                }),
+                t("hd7d278c", "Không, cảm ơn"),
+                t("jf8a0dea", "Tuyệt vời! Tín dụng quảng cáo miễn phí mới của bạn sẽ được thêm vào tài khoản trong chu kỳ thanh toán tiếp theo."),
+                t("ebbb3154", "Đóng và quay lại X"),
                 t("j1f68dda", "Bước cuối cùng: Bạn có chắc chắn muốn hủy không?"),
                 t("c9c3464c", "Đang tiến hành hủy thuê bao"),
                 t("dd3a293c", "Thuê bao Tổ chức đã xác nhận của bạn đã kết thúc."),
@@ -8398,7 +8403,6 @@
                 t("h9659832", "Xem bản thảo bài đăng của bạn."),
                 t("f1b6535e", "Bản thảo bài đăng"),
                 t("a24add8a", "Xem bài đăng được đánh dấu trang."),
-                t("ic61c5fc", "Cuộn lên đầu"),
                 t("gb19f215", function (n) {
                     return "Cột - " + n.title;
                 }),
@@ -8914,10 +8918,10 @@
                 }),
                 t("d0e7b11b", function (n) {
                     return n.date + " vào lúc " + n.time;
-                }),
-                t("b4349cbc", function (n) {
-                    return "" + n.relativeDay;
-                }),
+                });
+            t("b4349cbc", function (n) {
+                return "" + n.relativeDay;
+            }),
                 t("ebe41367", function (n) {
                     return "Thời gian " + n.time;
                 }),
@@ -8926,10 +8930,10 @@
                 }),
                 t("d925a4f9", function (n) {
                     return "Còn " + n.formattedCount + " phút";
-                });
-            t("ib15cddb", function (n) {
-                return "Còn " + n.formattedCount + " giờ";
-            }),
+                }),
+                t("ib15cddb", function (n) {
+                    return "Còn " + n.formattedCount + " giờ";
+                }),
                 t("db9ed19f", function (n) {
                     return "Còn " + n.formattedCount + " ngày";
                 }),
@@ -13181,4 +13185,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.4fc7bcda.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.0e11057a.js.map

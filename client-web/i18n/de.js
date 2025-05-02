@@ -601,7 +601,7 @@
                 t("e0cb0c72", "Ads"),
                 t("e2eef3c2", "Verifizierte Organisationen"),
                 t("b55d8a78", "Space erstellen"),
-                t("e5323e36", "Go Live"),
+                t("e5323e36", "Live gehen"),
                 t("a5a30af0", "Artikel"),
                 t("d13d697c", "Neue E-Mail-Adresse"),
                 t("j0e2cfa8", "Unternehmen"),
@@ -2960,10 +2960,15 @@
                 t("d83f18d2", "Verzeichnis"),
                 t("hc5aa17c", "Hol dir die X App"),
                 t("j0693948", "Hol dir die Grok App"),
-                t("fbf83158", "Warnung: Zahlung fehlgeschlagen"),
-                t("jadeb4da", "Bitte aktualisiere dringend deine Zahlungsmethode, da du sonst deine Abonnementvorteile verlierst.");
-            t("bce3726a", "Rechnungsinfo aktualisieren"),
+                t("af781666", "What do people think?"),
+                t("ad35153e", "Beta");
+            t("fbf83158", "Warnung: Zahlung fehlgeschlagen"),
+                t("jadeb4da", "Bitte aktualisiere dringend deine Zahlungsmethode, da du sonst deine Abonnementvorteile verlierst."),
+                t("bce3726a", "Rechnungsinfo aktualisieren"),
                 t("fce9ecce", "Vorgeschlagene Videos"),
+                t("dc954b88", "Try the full news experience"),
+                t("j66b95a2", "In-Depth News"),
+                t("b58d2bd2", "Relevante Posts"),
                 t("efe6ef9e", "Post anzeigen"),
                 t("b3d183ce", "Post mit Antworten"),
                 t("c299a6c0", "Thread"),
@@ -3872,15 +3877,15 @@
                 t("b90eb348", "Zum Sprechen einl."),
                 t("d9a63e82", "Aus Sprechern entfernen"),
                 t("bd917b26", "Als Co-Host einladen"),
-                t("d7357e7e", "Aus Co-Hosts entfernen"),
-                t("bf307fc0", "Blockieren und entfernen"),
+                t("d7357e7e", "Aus Co-Hosts entfernen");
+            t("bf307fc0", "Blockieren und entfernen"),
                 t("ccf2f24e", "Meldung"),
                 t("i22835de", "Genehmigen"),
                 t("cb59a0fe", "Ablehnen"),
-                t("c2376960", "Sprechwünsche");
-            t("aba7dcdd", function (e) {
-                return e.name + " einladen";
-            }),
+                t("c2376960", "Sprechwünsche"),
+                t("aba7dcdd", function (e) {
+                    return e.name + " einladen";
+                }),
                 t("f5c7aaa7", function (e) {
                     return "Host" + r(e.count, "", "s");
                 }),
@@ -4312,7 +4317,6 @@
                 t("aa7c96bb", function (e) {
                     return e.numResults + " weitere sehen";
                 }),
-                t("b58d2bd2", "Relevante Posts"),
                 t("f5a2377e", "Denkprozess läuft seit "),
                 t("g3ce0132", "Denkprozess dauerte"),
                 t("f8007364", "Für Details erweitern"),
@@ -4334,7 +4338,7 @@
                 t("e02694e0", "Antwort 2"),
                 t("h6867fcc", "Ich bevorzuge diese Antwort"),
                 t("d07488a6", "Get the Android app"),
-                t("d9cfe70c", "Access advanced Grok features"),
+                t("d9cfe70c", "Auf erweiterte Grok-Funktionen zugreifen"),
                 t("hf9afab0", "Aktiviere „DeepSearch“, wenn du das Internet und X durchsuchen, Informationen analysieren und detaillierte, wohlüberlegte Antworten mit der schnellen Agentsuche erhalten möchtest."),
                 t("ef3b3f04", "Aktiviere „Denken“, wenn du unser Logikmodell nutzen möchtest. Es eignet sich am besten für Mathematik, Naturwissenschaften und Programmierung. Du kannst angeben, dass Grok über eine beliebige Frage „Schärfer nachdenken“ soll, die vielleicht eine stärkere Denkleistung erfordert. "),
                 t("b43636b8", "Wir stellen vor: Grok 3"),
@@ -4905,12 +4909,12 @@
                 t("j8ee77c4", '"ai startup"'),
                 t("d0480758", "enthält „ai“ oder „startup“ (oder beide)"),
                 t("f0048fa2", "ai startup"),
-                t("da0df186", "enthält „ai“, aber nicht „startup“"),
-                t("f2f463ea", "ai startup"),
+                t("da0df186", "enthält „ai“, aber nicht „startup“");
+            t("f2f463ea", "ai startup"),
                 t("a10a357e", "enthält „ai“ und hat mindestens 50 „Gefällt mir“-Markierungen"),
                 t("ca8ed1e8", "ai min_faves:50"),
-                t("i945a3f2", "enthält „ai“ und eine URL, in der das Wort „grok“ enthalten ist");
-            t("a9348088", "ai url:grok"),
+                t("i945a3f2", "enthält „ai“ und eine URL, in der das Wort „grok“ enthalten ist"),
+                t("a9348088", "ai url:grok"),
                 t("b5c3cdbc", "erwähnt den X Account „grok“"),
                 t("e2634592", "Grok"),
                 t("i88ba038", "Alarm deaktiviert"),
@@ -5871,12 +5875,12 @@
                 t("e50e1bb0", "Willkommen bei Communities"),
                 t("i6829daa", "Communities sind moderierte Diskussionsgruppen, in denen Leute auf X miteinander in Verbindung treten und sich austauschen können"),
                 t("fc5c6914", "Lerne andere mit den gleichen Interessen kennen"),
-                t("aa1a9820", "Tritt Communities bei und nimm Verbindung mit Leuten auf, die die gleichen Interessen haben wie du."),
-                t("edef4c82", "Direkt an eine Community posten"),
+                t("aa1a9820", "Tritt Communities bei und nimm Verbindung mit Leuten auf, die die gleichen Interessen haben wie du.");
+            t("edef4c82", "Direkt an eine Community posten"),
                 t("a7640df6", "Deine Posts werden mit Community-Mitgliedern und mit deinen Follower*innen geteilt."),
                 t("h3bb8068", "Rückhalt, wenn du ihn brauchst"),
-                t("a709f8f8", "Administratoren und Moderatoren helfen bei der Verwaltung von Communities und sorgen dafür, dass die Konversation beim Thema bleibt.");
-            t("c8d33380", "Neue Elemente"),
+                t("a709f8f8", "Administratoren und Moderatoren helfen bei der Verwaltung von Communities und sorgen dafür, dass die Konversation beim Thema bleibt."),
+                t("c8d33380", "Neue Elemente"),
                 t("cb6adb10", "Communities entdecken"),
                 t("df362964", "Communities suchen"),
                 t("dfd5031f", function (e) {
@@ -6428,6 +6432,7 @@
                 t("f7d1a8e0", "Android-App"),
                 t("aab2fae0", "iOS-App"),
                 t("a35d9c9a", "Ressourcen"),
+                t("ic61c5fc", "Nach oben scrollen"),
                 t("i6671128", "Du hast mehr auf X freigeschaltet"),
                 t("d5e4d0a6", "Nun ist es noch leichter, dich an der Konversation zu beteiligen und mit anderen Verbindung aufzunehmen:"),
                 t("a97bc07e", "Mehr auf X freischalten"),
@@ -6868,13 +6873,13 @@
                 t("fa006202", "Hintergrund-Videowiedergabe"),
                 t("jf389778", "Videos ansehen, während du blätterst oder andere Apps nutzt"),
                 t("f2977d80", "Lesezeichenordner"),
-                t("j1d3d910", "Ordne deine gespeicherten Posts für einfachen Zugriff"),
-                t("f0f48668", "Premium-Support"),
+                t("j1d3d910", "Ordne deine gespeicherten Posts für einfachen Zugriff");
+            t("f0f48668", "Premium-Support"),
                 t("c3148608", "Schnellere Hilfe, wenn du sie brauchst"),
                 t("b485ca6e", "Tab „Highlights“"),
                 t("d438955e", "Präsentiere deine besten Posts"),
-                t("f373a352", "Verschlüsselte Direktnachrichten");
-            t("g7405aca", "Chatte sicher mit durchgehender Verschlüsselung"),
+                t("f373a352", "Verschlüsselte Direktnachrichten"),
+                t("g7405aca", "Chatte sicher mit durchgehender Verschlüsselung"),
                 t("j659fa0c", "Das Beste von Grok 3"),
                 t("ibff5694", "Hol dir die höchsten Nutzungslimits, DeepSearch und Denken, sowie vorzeitigen Zugriff auf neue Funktionen"),
                 t("i824f4da", "Weniger Werbung"),
@@ -7844,16 +7849,7 @@
                 t("ff0edac0", "Möchtest du dein Abonnement wirklich kündigen?"),
                 t("h2ac0348", "Nein, ich möchte zurück"),
                 t("dbf9667e", "Ich bin sicher"),
-                t("j7592572", "Kehrtwendung"),
-                t("ee778942", "Ampel"),
-                t("fdd57981", function (e) {
-                    return "Wir möchten dir ein einmaliges Gratis-Werbeguthaben von " + e.totalAmount + " anbieten.";
-                }),
-                t("i032a231", function (e) {
-                    return "Bleiben und " + e.totalAmount + " Werbeguthaben in Anspruch nehmen";
-                }),
-                t("hd7d278c", "Nein, danke"),
-                t("jf8a0dea", "Prima! Dein neues Gratis-Werbeguthaben erscheint im nächsten Rechnungszyklus in deinem Account.");
+                t("j7592572", "Kehrtwendung");
             function a(e, n) {
                 for (var i = 0; i < n.length; i++) {
                     var t = n[i];
@@ -7892,7 +7888,16 @@
                     d(e, n)
                 );
             }
-            t("ebbb3154", "Schließen und zu X zurückkehren"),
+            t("ee778942", "Ampel"),
+                t("fdd57981", function (e) {
+                    return "Wir möchten dir ein einmaliges Gratis-Werbeguthaben von " + e.totalAmount + " anbieten.";
+                }),
+                t("i032a231", function (e) {
+                    return "Bleiben und " + e.totalAmount + " Werbeguthaben in Anspruch nehmen";
+                }),
+                t("hd7d278c", "Nein, danke"),
+                t("jf8a0dea", "Prima! Dein neues Gratis-Werbeguthaben erscheint im nächsten Rechnungszyklus in deinem Account."),
+                t("ebbb3154", "Schließen und zu X zurückkehren"),
                 t("j1f68dda", "Letzter Schritt: Wirklich stornieren?"),
                 t("c9c3464c", "Abonnement-Kündigung wird durchgeführt"),
                 t("dd3a293c", 'Dein Abonnement von "Verifizierte Organisationen" ist beendet.'),
@@ -8399,7 +8404,6 @@
                 t("h9659832", "Zeige deine Post-Entwürfe an."),
                 t("f1b6535e", "Post-Entwürfe"),
                 t("a24add8a", "Zeige mit Lesezeichen markierte Posts."),
-                t("ic61c5fc", "Nach oben scrollen"),
                 t("gb19f215", function (e) {
                     return "Spalte – " + e.title;
                 }),
@@ -8915,10 +8919,10 @@
                 }),
                 t("d0e7b11b", function (e) {
                     return e.date + " um " + e.time;
-                }),
-                t("b4349cbc", function (e) {
-                    return "" + e.relativeDay;
-                }),
+                });
+            t("b4349cbc", function (e) {
+                return "" + e.relativeDay;
+            }),
                 t("ebe41367", function (e) {
                     return "Zeit " + e.time;
                 }),
@@ -8927,10 +8931,10 @@
                 }),
                 t("d925a4f9", function (e) {
                     return "Noch " + e.formattedCount + " Minute" + r(e.count, "", "n");
-                });
-            t("ib15cddb", function (e) {
-                return "Noch " + e.formattedCount + " Stunde" + r(e.count, "", "n");
-            }),
+                }),
+                t("ib15cddb", function (e) {
+                    return "Noch " + e.formattedCount + " Stunde" + r(e.count, "", "n");
+                }),
                 t("db9ed19f", function (e) {
                     return "Noch " + e.formattedCount + " Tag" + r(e.count, "", "e");
                 }),
@@ -13196,4 +13200,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/de.764d067a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/de.83ee7baa.js.map

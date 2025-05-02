@@ -109,8 +109,8 @@
                 f = a(731708),
                 v = a(392237),
                 E = a(366635),
-                S = a(41871),
-                k = a(986460),
+                k = a(41871),
+                S = a(986460),
                 w = a(424713),
                 P = a(251478),
                 C = a(890328),
@@ -122,8 +122,8 @@
                 I = a(420922),
                 T = a(103849),
                 D = a(70889),
-                x = a(807896),
-                M = a(466999),
+                M = a(807896),
+                x = a(466999),
                 A = a(154003),
                 F = a(591354);
             class O extends r.PureComponent {
@@ -141,7 +141,7 @@
                         a = t > 0,
                         n = a ? (0, F.bl)({ seconds: (0, F.Cf)(t) }) : F.DP,
                         l = a ? (0, F.WB)({ seconds: (0, F.I_)(t) }) : F.Be;
-                    return r.createElement(A.ZP, { "aria-label": n, disabled: a, onPress: a ? void 0 : this._handleSkipPress, pointerEvents: "auto", size: "small", testID: "ControlBar-skipButton", type: "onMediaDominantColorFilled" }, r.createElement(M.Z, { style: R.eR }, l));
+                    return r.createElement(A.ZP, { "aria-label": n, disabled: a, onPress: a ? void 0 : this._handleSkipPress, pointerEvents: "auto", size: "small", testID: "ControlBar-skipButton", type: "onMediaDominantColorFilled" }, r.createElement(x.Z, { style: R.eR }, l));
                 }
             }
             O.defaultProps = { skipThreshold: 7e3 };
@@ -150,7 +150,7 @@
                     ? r.createElement(
                           n.Z,
                           { pointerEvents: "none", style: R.Xo },
-                          r.createElement(_.o, { periodic: !0 }, ({ playerApi: t, playerState: a }) => r.createElement(O, (0, x.Z)({}, e, { playerApi: t, playerState: a }))),
+                          r.createElement(_.o, { periodic: !0 }, ({ playerApi: t, playerState: a }) => r.createElement(O, (0, M.Z)({}, e, { playerApi: t, playerState: a }))),
                       )
                     : r.createElement(
                           n.Z,
@@ -165,7 +165,7 @@
                                   r.createElement(
                                       n.Z,
                                       { style: R.Xo },
-                                      r.createElement(_.o, { periodic: !0 }, ({ playerApi: t, playerState: a }) => r.createElement(O, (0, x.Z)({}, e, { playerApi: t, playerState: a }))),
+                                      r.createElement(_.o, { periodic: !0 }, ({ playerApi: t, playerState: a }) => r.createElement(O, (0, M.Z)({}, e, { playerApi: t, playerState: a }))),
                                   ),
                               ),
                           ),
@@ -237,7 +237,7 @@
                 fe = s().a7bf9962,
                 ve = s().ccc97152,
                 Ee = s().h531ade0;
-            function Se({ availableResolutions: e, currentResolution: t, downloadLink: a, handlePlaybackRateChange: n, handlePlaybackRateKeyDown: l, handleQualityLevelChange: i, handleQualityLevelKeyDown: o, isPlaybackRateSupported: c, onDismiss: u, selectedPlaybackRate: d, selectedQuality: h }) {
+            function ke({ availableResolutions: e, currentResolution: t, downloadLink: a, handlePlaybackRateChange: n, handlePlaybackRateKeyDown: l, handleQualityLevelChange: i, handleQualityLevelKeyDown: o, isPlaybackRateSupported: c, onDismiss: u, selectedPlaybackRate: d, selectedQuality: h }) {
                 const [p, m] = r.useState("main"),
                     b = ie.find(({ value: e }) => e === d)?.label ?? te,
                     y = r.useMemo(() => {
@@ -261,8 +261,8 @@
                     E = r.useCallback(() => {
                         m("main");
                     }, []),
-                    S = r.useMemo(() => ({ playbackRateLabel: r.createElement(f.ZP, null, ve), playbackRateValueLabel: r.createElement(f.ZP, { color: "gray700", size: "body", weight: "normal" }, b) }), [b]),
-                    k = r.useMemo(() => r.createElement(s().I18NFormatMessage, { $i18n: "i6125da7" }, S.playbackRateLabel, S.playbackRateValueLabel), [S]),
+                    k = r.useMemo(() => ({ playbackRateLabel: r.createElement(f.ZP, null, ve), playbackRateValueLabel: r.createElement(f.ZP, { color: "gray700", size: "body", weight: "normal" }, b) }), [b]),
+                    S = r.useMemo(() => r.createElement(s().I18NFormatMessage, { $i18n: "i6125da7" }, k.playbackRateLabel, k.playbackRateValueLabel), [k]),
                     w = r.useMemo(() => ({ qualityLevelLabel: r.createElement(f.ZP, null, Ee), qualityLevelValueLabel: r.createElement(f.ZP, { color: "gray700", size: "body", weight: "normal" }, y) }), [y]),
                     P = r.useMemo(() => r.createElement(s().I18NFormatMessage, { $i18n: "c4f28ae1" }, w.qualityLevelLabel, w.qualityLevelValueLabel), [w]);
                 switch (p) {
@@ -270,7 +270,7 @@
                         return r.createElement(
                             r.Fragment,
                             null,
-                            c && r.createElement(q.Z, { Icon: G.default, actionText: k, onClick: g }),
+                            c && r.createElement(q.Z, { Icon: G.default, actionText: S, onClick: g }),
                             e && r.createElement(q.Z, { Icon: K.default, actionText: P, onClick: v }),
                             a &&
                                 r.createElement(q.Z, {
@@ -290,11 +290,11 @@
                         return null;
                 }
             }
-            const ke = s().e23b20a0;
+            const Se = s().e23b20a0;
             function we({ availableResolutions: e, currentResolution: t, handlePlaybackRateChange: a, handlePlaybackRateKeyDown: l, handleQualityLevelChange: s, handleQualityLevelKeyDown: i, isPlaybackRateSupported: o, onDismiss: c, selectedPlaybackRate: u, selectedQuality: d, type: h }) {
                 const p = "sheet" === h,
                     { downloadLink: m } = r.useContext($.l);
-                return r.createElement(n.Z, { role: "dialog", style: Pe.root }, r.createElement(Se, { availableResolutions: e, currentResolution: t, downloadLink: m, handlePlaybackRateChange: a, handlePlaybackRateKeyDown: l, handleQualityLevelChange: s, handleQualityLevelKeyDown: i, isPlaybackRateSupported: o, onDismiss: c, selectedPlaybackRate: u, selectedQuality: d }), p ? r.createElement(A.ZP, { onPress: c, style: Pe.cancelButton, testID: "Cancel", type: "primaryOutlined" }, ke) : null);
+                return r.createElement(n.Z, { role: "dialog", style: Pe.root }, r.createElement(ke, { availableResolutions: e, currentResolution: t, downloadLink: m, handlePlaybackRateChange: a, handlePlaybackRateKeyDown: l, handleQualityLevelChange: s, handleQualityLevelKeyDown: i, isPlaybackRateSupported: o, onDismiss: c, selectedPlaybackRate: u, selectedQuality: d }), p ? r.createElement(A.ZP, { onPress: c, style: Pe.cancelButton, testID: "Cancel", type: "primaryOutlined" }, Se) : null);
             }
             const Pe = v.default.create((e) => ({ root: { flexDirection: "column", paddingTop: e.spaces.space8, paddingBottom: e.spaces.space4, paddingStart: e.spaces.space8, paddingEnd: e.spaces.space8, borderRadius: e.borderRadii.xLarge }, cancelButton: { marginHorizontal: e.spaces.space16, marginVertical: e.spaces.space16 } })),
                 Ce = s().h9b3104e;
@@ -314,10 +314,10 @@
                     function E(e, a) {
                         s.keyboardSelected ? i({ ...s, keyboardSelected: !1, selectedPlaybackRate: a }) : (t.setPlaybackRate(parseFloat(a)), c(), i({ ...s, selectedPlaybackRate: a }));
                     }
-                    function S(e, a) {
+                    function k(e, a) {
                         s.keyboardSelected ? i({ ...s, keyboardSelected: !1, selectedQuality: a }) : (t.setQualityLevel(parseInt(a, 10)), c(), i({ ...s, selectedQuality: a }));
                     }
-                    function k(e) {
+                    function S(e) {
                         return function (t) {
                             t.key === U.Z.ArrowDown || t.key === U.Z.ArrowUp || t.key === U.Z.ArrowLeft || t.key === U.Z.ArrowRight ? (t.stopPropagation(), i({ ...s, keyboardSelected: !0 })) : t.key === U.Z.Enter ? (e(), c()) : t.key === U.Z.Escape && i({ ...s, selectedPlaybackRate: n, selectedQuality: l });
                         };
@@ -333,7 +333,7 @@
                         {
                             onDismiss: c,
                             renderContent: (e, t) => {
-                                const a = { availableResolutions: y, currentResolution: v, handlePlaybackRateKeyDown: k(P), handlePlaybackRateChange: E, handleQualityLevelChange: S, handleQualityLevelKeyDown: k(C), isPlaybackRateSupported: f, onDismiss: c, selectedPlaybackRate: s.selectedPlaybackRate, selectedQuality: s.selectedQuality, type: t };
+                                const a = { availableResolutions: y, currentResolution: v, handlePlaybackRateKeyDown: S(P), handlePlaybackRateChange: E, handleQualityLevelChange: k, handleQualityLevelKeyDown: S(C), isPlaybackRateSupported: f, onDismiss: c, selectedPlaybackRate: s.selectedPlaybackRate, selectedQuality: s.selectedQuality, type: t };
                                 return r.createElement(we, a);
                             },
                             visibilityBehavior: p,
@@ -364,7 +364,7 @@
                           },
                           r.createElement(
                               T.g,
-                              (0, x.Z)({}, i, {
+                              (0, M.Z)({}, i, {
                                   "aria-label": Ce,
                                   icon: r.createElement(N.default, null),
                                   onPress: function () {
@@ -450,8 +450,8 @@
                 Ie = ({ barData: e }) => r.createElement(n.Z, { style: R.ZP.viewCountGraph }, r.createElement(Re, { data: e })),
                 Te = /^https?:\/\/(?:www.)?(?:periscope|pscp).tv/,
                 De = s().j25d7cca,
-                xe = s().a858b25c,
-                Me = s().faf9f484,
+                Me = s().a858b25c,
+                xe = s().faf9f484,
                 Ae = s().ae2ea9e7,
                 Fe = s().hea01798,
                 Oe = s().f8a09386,
@@ -473,8 +473,8 @@
                                 { pause: l, play: s, replay: i } = e,
                                 { currentBreakpoint: d } = this.state,
                                 h = (0, w.Ci)(t),
-                                p = Qe(d) ? "xSmall" : "medium";
-                            return !h || (h.isLive && !this.props.liveBroadcastRewindEnabled) ? null : n || (a && "PLAY_REQUESTED" === a.playState) ? r.createElement(T.Z, { "aria-label": k.gF, hoverLabelPreferredHorizontalOrientation: "end", hoverLabelWithExtraSpace: this.props.showScrubber, icon: r.createElement(o.default, null), onPress: l, size: p }) : a.isReplayButtonShown ? r.createElement(T.Z, { "aria-label": k.Js, hoverLabelPreferredHorizontalOrientation: "end", hoverLabelWithExtraSpace: this.props.showScrubber, icon: r.createElement(c.default, null), onPress: i, size: p }) : r.createElement(T.Z, { "aria-label": k.M2, hoverLabelPreferredHorizontalOrientation: "end", hoverLabelWithExtraSpace: this.props.showScrubber, icon: r.createElement(u.default, null), onPress: s, size: p });
+                                p = Qe(d) ? "small" : "medium";
+                            return !h || (h.isLive && !this.props.liveBroadcastRewindEnabled) ? null : n || (a && "PLAY_REQUESTED" === a.playState) ? r.createElement(T.Z, { "aria-label": S.gF, hoverLabelPreferredHorizontalOrientation: "end", hoverLabelWithExtraSpace: this.props.showScrubber, icon: r.createElement(o.default, null), onPress: l, size: p }) : a.isReplayButtonShown ? r.createElement(T.Z, { "aria-label": S.Js, hoverLabelPreferredHorizontalOrientation: "end", hoverLabelWithExtraSpace: this.props.showScrubber, icon: r.createElement(c.default, null), onPress: i, size: p }) : r.createElement(T.Z, { "aria-label": S.M2, hoverLabelPreferredHorizontalOrientation: "end", hoverLabelWithExtraSpace: this.props.showScrubber, icon: r.createElement(u.default, null), onPress: s, size: p });
                         }),
                         (this._renderViewCount = (e) => {
                             const t = (0, w.Ci)(e);
@@ -500,7 +500,7 @@
                                 const t = (0, w.Ci)(e);
                                 if (!t || !t.isLive || !this.props.liveBroadcastRewindEnabled) return null;
                                 const a = this._isLive(e);
-                                return r.createElement(r.Fragment, null, r.createElement(T.Z, { "aria-label": k.kA, icon: a ? $e : Ue, onPress: () => this._jumpToLive() }, r.createElement(f.ZP, { color: a ? "white" : "gray100", size: "subtext1" }, Ne)));
+                                return r.createElement(r.Fragment, null, r.createElement(T.Z, { "aria-label": S.kA, icon: a ? $e : Ue, onPress: () => this._jumpToLive() }, r.createElement(f.ZP, { color: a ? "white" : "gray100", size: "subtext1" }, Ne)));
                             })),
                         (this._renderPublisherAttribution = (e) => {
                             const { publisherDisplayName: t, publisherProfileImageUrl: a } = this.props,
@@ -517,7 +517,7 @@
                                 { currentBreakpoint: a } = this.state;
                             if (t && t.displayType === P.ak.AD) {
                                 const { advertiserName: e } = t;
-                                return r.createElement(D.Z, { style: Qe(a) && { fontSize: v.default.theme.fontSizes.subtext2 } }, e ? Ae({ advertiserName: e }) : Me);
+                                return r.createElement(D.Z, { style: Qe(a) && { fontSize: v.default.theme.fontSizes.subtext2 } }, e ? Ae({ advertiserName: e }) : xe);
                             }
                             return null;
                         }),
@@ -528,12 +528,12 @@
                                 { fullscreen: s } = t,
                                 { currentBreakpoint: i } = this.state,
                                 o = this._fullScreenIcon,
-                                c = Qe(i) ? "xSmall" : "medium";
-                            return a && l ? null : s.isFullscreen ? r.createElement(T.Z, { "aria-label": k.iG, hoverLabelPreferredHorizontalOrientation: "start", hoverLabelWithExtraSpace: this.props.showScrubber, icon: r.createElement(o, { isFullscreen: s.isFullscreen }), onPress: this._exitFullScreen(e), size: c }) : r.createElement(T.Z, { "aria-label": k.lO, hoverLabelPreferredHorizontalOrientation: "start", hoverLabelWithExtraSpace: this.props.showScrubber, icon: r.createElement(o, { isFullscreen: s.isFullscreen }), onPress: this._requestFullScreen(e), size: c });
+                                c = Qe(i) ? "small" : "medium";
+                            return a && l ? null : s.isFullscreen ? r.createElement(T.Z, { "aria-label": S.iG, hoverLabelPreferredHorizontalOrientation: "start", hoverLabelWithExtraSpace: this.props.showScrubber, icon: r.createElement(o, { isFullscreen: s.isFullscreen }), onPress: this._exitFullScreen(e), size: c }) : r.createElement(T.Z, { "aria-label": S.lO, hoverLabelPreferredHorizontalOrientation: "start", hoverLabelWithExtraSpace: this.props.showScrubber, icon: r.createElement(o, { isFullscreen: s.isFullscreen }), onPress: this._requestFullScreen(e), size: c });
                         }),
                         (this._renderPictureInPictureButton = (e) => {
                             const { currentBreakpoint: t } = this.state,
-                                a = Qe(t) ? "xSmall" : "medium";
+                                a = Qe(t) ? "small" : "medium";
                             return r.createElement(T.Z, { "aria-label": ze, icon: r.createElement(d.default, null), onPress: this._togglePictureInPicture(e), size: a });
                         }),
                         (this._togglePictureInPicture = (e) => () => {
@@ -598,8 +598,8 @@
                                 { mute: l, setVolume: s, unmute: i } = e,
                                 { containerHeight: o, currentBreakpoint: c } = this.state,
                                 u = a ? i : l,
-                                d = a ? k.cm : k.GS;
-                            return r.createElement(S.Z, { accessibilityLabelIcon: d, accessibilityLabelSlider: k.Nj, containerHeight: o, isMuted: a, onHideSlider: this._showScrubberHandler(!0), onMuteToggle: u, onShowSlider: this._showScrubberHandler(!1), onSliderChange: this._setVolumePercent(s), size: Qe(c) ? "xSmall" : "medium", volumePercent: 100 * n });
+                                d = a ? S.cm : S.GS;
+                            return r.createElement(k.Z, { accessibilityLabelIcon: d, accessibilityLabelSlider: S.Nj, containerHeight: o, isMuted: a, onHideSlider: this._showScrubberHandler(!0), onMuteToggle: u, onShowSlider: this._showScrubberHandler(!1), onSliderChange: this._setVolumePercent(s), size: Qe(c) ? "small" : "medium", volumePercent: 100 * n });
                         }),
                         (this._renderCaptionsButton = (e, t) => {
                             const a = (0, w.Ci)(t);
@@ -607,7 +607,7 @@
                                 const { currentBreakpoint: a } = this.state,
                                     { areCaptionsShown: n } = t,
                                     { toggleCaptions: l } = e;
-                                return r.createElement(T.Z, { "aria-label": n ? De : xe, hoverLabelWithExtraSpace: this.props.showScrubber, icon: n ? r.createElement(m.default, null) : r.createElement(b.default, null), onPress: l, size: Qe(a) ? "xSmall" : "medium", testID: "captions" });
+                                return r.createElement(T.Z, { "aria-label": n ? De : Me, hoverLabelWithExtraSpace: this.props.showScrubber, icon: n ? r.createElement(m.default, null) : r.createElement(b.default, null), onPress: l, size: Qe(a) ? "small" : "medium", testID: "captions" });
                             }
                         }),
                         (this._renderTimePlayed = () =>
@@ -646,7 +646,7 @@
                                         const e = s + (l || 0);
                                         n.addSearchParam("t", e.toString());
                                     }
-                                    return r.createElement(T.Z, { "aria-label": Oe, hoverLabelPreferredHorizontalOrientation: "start", hoverLabelWithExtraSpace: this.props.showScrubber, icon: r.createElement(y.default, null), link: { pathname: n.toString(), anchorless: !0 }, onPress: a, size: Qe(t) ? "xSmall" : "medium", testID: "periscopeLink" });
+                                    return r.createElement(T.Z, { "aria-label": Oe, hoverLabelPreferredHorizontalOrientation: "start", hoverLabelWithExtraSpace: this.props.showScrubber, icon: r.createElement(y.default, null), link: { pathname: n.toString(), anchorless: !0 }, onPress: a, size: Qe(t) ? "small" : "medium", testID: "periscopeLink" });
                                 }
                             })),
                         (this._renderCustomIconLink = (e) => {
@@ -654,7 +654,7 @@
                                 a = new C.Z(e.link),
                                 n = e.tooltipLabel,
                                 l = e.onPress;
-                            return r.createElement(T.Z, { "aria-label": n, hoverLabelPreferredHorizontalOrientation: "start", hoverLabelWithExtraSpace: this.props.showScrubber, icon: e.icon, link: { pathname: a.toString(), anchorless: !0 }, onPress: l, size: Qe(t) ? "xSmall" : "medium" });
+                            return r.createElement(T.Z, { "aria-label": n, hoverLabelPreferredHorizontalOrientation: "start", hoverLabelWithExtraSpace: this.props.showScrubber, icon: e.icon, link: { pathname: a.toString(), anchorless: !0 }, onPress: l, size: Qe(t) ? "small" : "medium" });
                         }),
                         (this._showScrubberHandler = (e) => () => this.setState({ showScrubber: e })),
                         (this._setVolumePercent = (e) => (t) => {
@@ -1097,16 +1097,16 @@
                     const f = n.useMemo(() => [g.playButton, h], [h]),
                         v = n.useMemo(() => [g.playIcon, e], [e]);
                     if (!c || !a) return null;
-                    const { controls: E, isPlaying: S } = c,
-                        { pause: k, play: w, replay: P } = a,
+                    const { controls: E, isPlaying: k } = c,
+                        { pause: S, play: w, replay: P } = a,
                         C = (0, d.Ci)(c);
                     if (!C || (C.isLive && !t)) return null;
                     let _;
-                    return (_ = S || (E && "PLAY_REQUESTED" === E.playState) ? { "aria-label": u.gF, children: n.createElement(l.default, { style: v }), hoverLabel: m, onPress: k } : E.isReplayButtonShown ? { "aria-label": u.Js, children: n.createElement(s.default, { style: v }), hoverLabel: b, onPress: P } : { "aria-label": u.M2, children: n.createElement(i.default, { style: v }), hoverLabel: p, onPress: w }), n.createElement(o.Z, (0, r.Z)({}, y, _, { style: f }));
+                    return (_ = k || (E && "PLAY_REQUESTED" === E.playState) ? { "aria-label": u.gF, children: n.createElement(l.default, { style: v }), hoverLabel: m, onPress: S } : E.isReplayButtonShown ? { "aria-label": u.Js, children: n.createElement(s.default, { style: v }), hoverLabel: b, onPress: P } : { "aria-label": u.M2, children: n.createElement(i.default, { style: v }), hoverLabel: p, onPress: w }), n.createElement(o.Z, (0, r.Z)({}, y, _, { style: f }));
                 },
                 g = c.default.create((e) => ({ playButton: { padding: e.spaces.space4 }, playIcon: { height: e.spaces.space12, width: e.spaces.space12 } })),
                 f = n.memo(y);
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerEventsUI.d34a93aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerEventsUI.691e11ea.js.map

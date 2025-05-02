@@ -601,7 +601,7 @@
                 t("e0cb0c72", "Annonser"),
                 t("e2eef3c2", "Verifierade organisationer"),
                 t("b55d8a78", "Skapa ditt område"),
-                t("e5323e36", "Go Live"),
+                t("e5323e36", "Sänd live"),
                 t("a5a30af0", "Artiklar"),
                 t("d13d697c", "Ny"),
                 t("j0e2cfa8", "Företag"),
@@ -2960,10 +2960,15 @@
                 t("d83f18d2", "Katalog"),
                 t("hc5aa17c", "Skaffa X-appen"),
                 t("j0693948", "Skaffa Grok-appen"),
-                t("fbf83158", "Varning: Betalningen misslyckades"),
-                t("jadeb4da", "Uppdatera din betalningsmetod innan du förlorar dina prenumerationsförmåner.");
-            t("bce3726a", "Uppdatera faktureringsuppgifterna"),
+                t("af781666", "What do people think?"),
+                t("ad35153e", "beta");
+            t("fbf83158", "Varning: Betalningen misslyckades"),
+                t("jadeb4da", "Uppdatera din betalningsmetod innan du förlorar dina prenumerationsförmåner."),
+                t("bce3726a", "Uppdatera faktureringsuppgifterna"),
                 t("fce9ecce", "Föreslagna videor"),
+                t("dc954b88", "Try the full news experience"),
+                t("j66b95a2", "In-Depth News"),
+                t("b58d2bd2", "Relevanta inlägg"),
                 t("efe6ef9e", "Visa inlägget"),
                 t("b3d183ce", "Inlägg med svar"),
                 t("c299a6c0", "Tråd"),
@@ -3872,15 +3877,15 @@
                 t("b90eb348", "Bjud in att prata"),
                 t("d9a63e82", "Ta bort från talare"),
                 t("bd917b26", "Bjud in som medvärd"),
-                t("d7357e7e", "Ta bort från medvärdar"),
-                t("bf307fc0", "Blockera och ta bort"),
+                t("d7357e7e", "Ta bort från medvärdar");
+            t("bf307fc0", "Blockera och ta bort"),
                 t("ccf2f24e", "Rapport"),
                 t("i22835de", "Godkänn"),
                 t("cb59a0fe", "Neka"),
-                t("c2376960", "Ber om att få prata");
-            t("aba7dcdd", function (e) {
-                return "Bjud in " + e.name;
-            }),
+                t("c2376960", "Ber om att få prata"),
+                t("aba7dcdd", function (e) {
+                    return "Bjud in " + e.name;
+                }),
                 t("f5c7aaa7", function (e) {
                     return "värd" + r(e.count, "", "ar");
                 }),
@@ -4312,7 +4317,6 @@
                 t("aa7c96bb", function (e) {
                     return "Se " + e.numResults + " till";
                 }),
-                t("b58d2bd2", "Relevanta inlägg"),
                 t("f5a2377e", "Funderar på "),
                 t("g3ce0132", "Fundering om"),
                 t("f8007364", "Utöka om du vill se mer"),
@@ -4334,7 +4338,7 @@
                 t("e02694e0", "Svar 2"),
                 t("h6867fcc", "Jag föredrar detta svar"),
                 t("d07488a6", "Get the Android app"),
-                t("d9cfe70c", "Access advanced Grok features"),
+                t("d9cfe70c", "Kom åt avancerade Grok-funktioner"),
                 t("hf9afab0", "Aktivera DeepSearch för att söka på internet och X, analysera information och lämna detaljerade, väl genomtänkta svar med snabba agentsökningar."),
                 t("ef3b3f04", "Aktivera Tänk för att använda vår resonemangsmodell. Det är bäst för matematik, vetenskap och programmering. Du kan även be Grok att Fundera mer på en fråga som kanske kräver lite mer tankekraft. "),
                 t("b43636b8", "Lansering av Grok 3"),
@@ -4905,12 +4909,12 @@
                 t("j8ee77c4", "”nystartat ai-bolag”"),
                 t("d0480758", "innehåller antingen ”ai” eller ”nystartat” (eller båda)"),
                 t("f0048fa2", "ai eller nystartat"),
-                t("da0df186", "innehåller ”ai” men inte ”nystartat”"),
-                t("f2f463ea", "ai -nystartat"),
+                t("da0df186", "innehåller ”ai” men inte ”nystartat”");
+            t("f2f463ea", "ai -nystartat"),
                 t("a10a357e", "innehåller ”ai” och har minst 50 gilla-markeringar"),
                 t("ca8ed1e8", "ai min_faves:50"),
-                t("i945a3f2", "innehåller ”ai” och en webbadress med ordet ”grok” i");
-            t("a9348088", "ai url:grok"),
+                t("i945a3f2", "innehåller ”ai” och en webbadress med ordet ”grok” i"),
+                t("a9348088", "ai url:grok"),
                 t("b5c3cdbc", "nämner X-kontot ”grok”"),
                 t("e2634592", "@grok"),
                 t("i88ba038", "Varningen har inaktiverats"),
@@ -5871,12 +5875,12 @@
                 t("e50e1bb0", "Välkommen till Grupper"),
                 t("i6829daa", "Grupper är modererade diskussionsgrupper som folk på X kan ansluta och bidra till."),
                 t("fc5c6914", "Träffa andra med dina intressen"),
-                t("aa1a9820", "Gå med i grupper och få kontakt med personer med samma intressen."),
-                t("edef4c82", "Gör inlägg direkt till en grupp"),
+                t("aa1a9820", "Gå med i grupper och få kontakt med personer med samma intressen.");
+            t("edef4c82", "Gör inlägg direkt till en grupp"),
                 t("a7640df6", "Dina inlägg delas med gruppmedlemmar och dina följare."),
                 t("h3bb8068", "Få hjälp när du behöver det"),
-                t("a709f8f8", "Administratörer och moderatorer hanterar grupper och håller ordning på samtalen.");
-            t("c8d33380", "Nya objekt"),
+                t("a709f8f8", "Administratörer och moderatorer hanterar grupper och håller ordning på samtalen."),
+                t("c8d33380", "Nya objekt"),
                 t("cb6adb10", "Upptäck grupper"),
                 t("df362964", "Hitta grupper"),
                 t("dfd5031f", function (e) {
@@ -6428,6 +6432,7 @@
                 t("f7d1a8e0", "Android-app"),
                 t("aab2fae0", "iOS-app"),
                 t("a35d9c9a", "Resurser"),
+                t("ic61c5fc", "Gå längst upp"),
                 t("i6671128", "Du kommer nu åt mer på X"),
                 t("d5e4d0a6", "Du kan delta i samtalet och ta kontakt med andra lättare. Nu kan du göra detta:"),
                 t("a97bc07e", "Kom åt mer på X"),
@@ -6868,13 +6873,13 @@
                 t("fa006202", "Videouppspelning i bakgrunden"),
                 t("jf389778", "Titta medan du surfar eller använder andra appar"),
                 t("f2977d80", "Mappar med bokmärken"),
-                t("j1d3d910", "Håll dina sparade inlägg ordnade så att de är lätta att hitta"),
-                t("f0f48668", "Premiumsupport"),
+                t("j1d3d910", "Håll dina sparade inlägg ordnade så att de är lätta att hitta");
+            t("f0f48668", "Premiumsupport"),
                 t("c3148608", "Få hjälp snabbare när du behöver det"),
                 t("b485ca6e", "Fliken Höjdpunkter"),
                 t("d438955e", "Visa upp dina främsta inlägg"),
-                t("f373a352", "Krypterade direktmeddelanden");
-            t("g7405aca", "Chatta säkert med kryptering från källa till mål"),
+                t("f373a352", "Krypterade direktmeddelanden"),
+                t("g7405aca", "Chatta säkert med kryptering från källa till mål"),
                 t("j659fa0c", "Det bästa från Grok 3"),
                 t("ibff5694", "Kom åt de högsta användningsgränserna, DeepSearch och Tänk samt få tidig åtkomst till nya funktioner"),
                 t("i824f4da", "Färre annonser"),
@@ -7844,16 +7849,7 @@
                 t("ff0edac0", "Vill du verkligen säga upp prenumerationen?"),
                 t("h2ac0348", "Nej, ta mig tillbaka"),
                 t("dbf9667e", "Jag är säker"),
-                t("j7592572", "U-sväng"),
-                t("ee778942", "Trafikljus"),
-                t("fdd57981", function (e) {
-                    return "Vi vill erbjuda dig en annonskredit på " + e.totalAmount + " USD som ett engångserbjudande.";
-                }),
-                t("i032a231", function (e) {
-                    return "Jag stannar och gör anspråk på annonskrediten på " + e.totalAmount;
-                }),
-                t("hd7d278c", "Nej tack"),
-                t("jf8a0dea", "Fint! Din nya kostnadsfria annonskredit kommer att dyka upp i ditt konto nästa faktureringscykel.");
+                t("j7592572", "U-sväng");
             function i(e, a) {
                 for (var n = 0; n < a.length; n++) {
                     var t = a[n];
@@ -7892,7 +7888,16 @@
                     d(e, a)
                 );
             }
-            t("ebbb3154", "Stäng och återgå till X"),
+            t("ee778942", "Trafikljus"),
+                t("fdd57981", function (e) {
+                    return "Vi vill erbjuda dig en annonskredit på " + e.totalAmount + " USD som ett engångserbjudande.";
+                }),
+                t("i032a231", function (e) {
+                    return "Jag stannar och gör anspråk på annonskrediten på " + e.totalAmount;
+                }),
+                t("hd7d278c", "Nej tack"),
+                t("jf8a0dea", "Fint! Din nya kostnadsfria annonskredit kommer att dyka upp i ditt konto nästa faktureringscykel."),
+                t("ebbb3154", "Stäng och återgå till X"),
                 t("j1f68dda", "Sista steget: Är du helt säker på att du vill avsluta prenumerationen?"),
                 t("c9c3464c", "Prenumerationen sägs upp"),
                 t("dd3a293c", "Din prenumeration på Verifierade organisationer har löpt ut."),
@@ -8399,7 +8404,6 @@
                 t("h9659832", "Visa dina inläggsutkast."),
                 t("f1b6535e", "Inläggsutkast"),
                 t("a24add8a", "Se bokmärkta inlägg."),
-                t("ic61c5fc", "Gå längst upp"),
                 t("gb19f215", function (e) {
                     return "Kolumn - " + e.title;
                 }),
@@ -8915,10 +8919,10 @@
                 }),
                 t("d0e7b11b", function (e) {
                     return e.date + " kl " + e.time;
-                }),
-                t("b4349cbc", function (e) {
-                    return "" + e.relativeDay;
-                }),
+                });
+            t("b4349cbc", function (e) {
+                return "" + e.relativeDay;
+            }),
                 t("ebe41367", function (e) {
                     return "Tid " + e.time;
                 }),
@@ -8927,10 +8931,10 @@
                 }),
                 t("d925a4f9", function (e) {
                     return e.formattedCount + " minut" + r(e.count, "", "er") + " kvar";
-                });
-            t("ib15cddb", function (e) {
-                return e.formattedCount + " timm" + r(e.count, "e", "ar") + " kvar";
-            }),
+                }),
+                t("ib15cddb", function (e) {
+                    return e.formattedCount + " timm" + r(e.count, "e", "ar") + " kvar";
+                }),
                 t("db9ed19f", function (e) {
                     return e.formattedCount + " dag" + r(e.count, "", "ar") + " kvar";
                 }),
@@ -13183,4 +13187,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sv.fa8304ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sv.bf5c67da.js.map

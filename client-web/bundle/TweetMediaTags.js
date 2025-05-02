@@ -88,8 +88,8 @@
                 w = (0, p.M)((e) => {
                     const { featureSwitches: t } = (0, c.QZ)(),
                         { onBlock: o, onClose: s, onMute: l, onRemoveFollower: p, onReportUser: w, onShare: M, onUnblock: E, onUnmute: I, user: Z } = e,
-                        C = [],
-                        _ = (t, o) => {
+                        _ = [],
+                        P = (t, o) => {
                             const { confirm: r, onClose: a } = e;
                             if (t) {
                                 const { label: e, ...n } = t;
@@ -102,7 +102,7 @@
                         !Z.protected &&
                         !Z.blocking &&
                         !Z.blocked_by &&
-                        C.push({
+                        _.push({
                             Icon: a.Z,
                             onClick: () => {
                                 s(), M();
@@ -111,7 +111,7 @@
                             text: v,
                         });
                     !Z.blocking &&
-                        C.push({
+                        _.push({
                             ...(0, h.N1)(
                                 Z,
                                 () => {
@@ -124,17 +124,17 @@
                             testID: b,
                         });
                     Z.followed_by &&
-                        C.push({
+                        _.push({
                             ...(0, m.l)({
                                 removeFollowerAction: (e) => {
-                                    _(e, p);
+                                    P(e, p);
                                 },
                                 user: Z,
                             }),
                             testID: D,
                         }),
-                        C.push((0, u.op)({ blockAction: (e) => _(e, o), isSoftBlockEnabled: t.isTrue("xprofile_blocked_by_view_enabled"), source: u.SC.FOLLOWERS_LIST, testID: f, unblockAction: (e) => _(e, E), user: Z })),
-                        C.push({
+                        _.push((0, u.op)({ blockAction: (e) => P(e, o), isSoftBlockEnabled: t.isTrue("xprofile_blocked_by_view_enabled"), source: u.SC.FOLLOWERS_LIST, testID: f, unblockAction: (e) => P(e, E), user: Z })),
+                        _.push({
                             Icon: i.default,
                             onClick: () => {
                                 s(), w();
@@ -142,8 +142,8 @@
                             testID: k,
                             text: g({ screenName: Z.screen_name }),
                         });
-                    const P = C.map(({ Icon: e, onClick: t, testID: o, text: r }) => ({ text: r, onClick: t, Icon: e, testID: o }));
-                    return r.createElement(n.Z, { items: P, onCloseRequested: s });
+                    const C = _.map(({ Icon: e, onClick: t, testID: o, text: r }) => ({ text: r, onClick: t, Icon: e, testID: o }));
+                    return r.createElement(n.Z, { items: C, onCloseRequested: s });
                 });
         },
         980407: (e, t, o) => {
@@ -313,7 +313,7 @@
             const c = (0, a.ZP)(i(d));
         },
         62857: (e, t, o) => {
-            o.d(t, { Z: () => C });
+            o.d(t, { Z: () => _ });
             var r = o(807896),
                 a = o(202784),
                 n = o(476984),
@@ -412,7 +412,7 @@
                     );
                 }
             }
-            const C = E(Z);
+            const _ = E(Z);
         },
         684511: (e, t, o) => {
             o.d(t, { Z: () => r });
@@ -455,7 +455,7 @@
             });
         },
         376293: (e, t, o) => {
-            o.d(t, { $f: () => E, KV: () => D, LI: () => P, SC: () => M, Vt: () => g, ed: () => S, op: () => I });
+            o.d(t, { $f: () => E, KV: () => D, LI: () => C, SC: () => M, Vt: () => g, ed: () => S, op: () => I });
             var r = o(202784),
                 a = o(190286),
                 n = o(674132),
@@ -481,7 +481,7 @@
                 I = ({ blockAction: e, blockSubtext: t, isSoftBlockEnabled: o, source: r, testID: a, unblockAction: n, unblockSubtext: s, user: l }) => {
                     let i,
                         u = d.Z;
-                    const h = P(l, o);
+                    const h = C(l, o);
                     switch (r) {
                         case M.PROFILE:
                         case M.LIST_DETAIL:
@@ -498,12 +498,12 @@
                                     l.blocking ? n(h) : e(h);
                                 });
                     }
-                    return { confirmation: h, onClick: u, testID: a, shortcutKey: i, Icon: Z(l.blocking), text: _(l), subText: C({ user: l, blockSubtext: t, unblockSubtext: s }) };
+                    return { confirmation: h, onClick: u, testID: a, shortcutKey: i, Icon: Z(l.blocking), text: P(l), subText: _({ user: l, blockSubtext: t, unblockSubtext: s }) };
                 },
                 Z = (e) => (e ? i.default : l.default),
-                C = ({ blockSubtext: e, unblockSubtext: t, user: o }) => (!o.blocking && e ? e(o.screen_name) : o.blocking ? t : void 0),
-                _ = (e) => (e.blocking ? y({ screenName: e.screen_name }) : m({ screenName: e.screen_name })),
-                P = (e, t) => (e.blocking ? ((e, t) => ({ confirmButtonType: "primary", headline: k({ screenName: e }), label: g, text: t ? w : v }))(e.screen_name, t) : E(e.screen_name, t)),
+                _ = ({ blockSubtext: e, unblockSubtext: t, user: o }) => (!o.blocking && e ? e(o.screen_name) : o.blocking ? t : void 0),
+                P = (e) => (e.blocking ? y({ screenName: e.screen_name }) : m({ screenName: e.screen_name })),
+                C = (e, t) => (e.blocking ? ((e, t) => ({ confirmButtonType: "primary", headline: k({ screenName: e }), label: g, text: t ? w : v }))(e.screen_name, t) : E(e.screen_name, t)),
                 S = ({ confirmation: e, handleConfirm: t, onClose: o }) => {
                     const { confirmButtonType: n, headline: s, label: l, text: i } = e;
                     return r.createElement(a.Z, { cancelButtonLabel: u, confirmButtonLabel: l, confirmButtonType: n, headline: s, onCancel: o, onConfirm: t, text: i });
@@ -806,7 +806,7 @@
                 };
         },
         528282: (e, t, o) => {
-            o.r(t), o.d(t, { MediaTagsScreen: () => Z, default: () => C });
+            o.r(t), o.d(t, { MediaTagsScreen: () => Z, default: () => _ });
             var r = o(202784),
                 a = o(175848),
                 n = o(731708),
@@ -854,7 +854,7 @@
                     y = p ? p.permalink : "/";
                 return r.createElement(d.Z, { backLocation: y, history: l, title: E }, r.createElement(i.Z, { "aria-label": M, fetchStatus: o, onRequestRetry: D, render: k, renderFailure: I, retryable: !f }));
             }
-            const C = v(Z);
+            const _ = v(Z);
         },
         879113: (e, t, o) => {
             o.d(t, { Z: () => m });
@@ -903,7 +903,7 @@
             l.metadata = { width: 24, height: 24 };
             const i = l;
         },
-        41065: (e, t, o) => {
+        226597: (e, t, o) => {
             o.r(t), o.d(t, { default: () => i });
             var r = o(202784),
                 a = o(890601),
@@ -911,12 +911,12 @@
                 s = o(347101);
             const l = (e = {}) => {
                 const { direction: t } = (0, n.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M6.866 18H.846l.075-1.069C1.33 11.083 4.335 9 7.011 9c1.457 0 2.734.576 3.743 1.615-.515.378-1.003.826-1.45 1.355-.562-.569-1.305-.97-2.293-.97-2.074 0-3.522 1.847-3.981 5h4.225c-.169.616-.295 1.288-.389 2zM4 5c0-1.654 1.343-3 3-3s3 1.346 3 3-1.343 3-3 3-3-1.346-3-3zm2 0c0 .551.448 1 1 1s1-.449 1-1-.448-1-1-1-1 .449-1 1zm9.5 5c-.778 0-1.49-.263-2.071-.693C12.566 8.669 12 7.653 12 6.5 12 4.57 13.567 3 15.5 3S19 4.57 19 6.5c0 1.111-.53 2.092-1.34 2.733-.596.472-1.341.767-2.16.767zM14 6.5c0 .827.673 1.5 1.5 1.5S17 7.327 17 6.5 16.327 5 15.5 5 14 5.673 14 6.5zm1.5 4.496c3.264 0 6.816 2.358 7 8.977L22.529 21H8.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977zm0 2c-2.767 0-4.57 2.223-4.938 6.004h9.875c-.367-3.781-2.17-6.004-4.938-6.004z" })) }, { writingDirection: t });
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M3.707 21.707l18-18-1.414-1.414-2.088 2.088C17.688 4.137 17.11 4 16.5 4H11v2h5.5c.028 0 .056 0 .084.002l-10.88 10.88c-.131-.266-.204-.565-.204-.882V7.551l2.068 1.93 1.365-1.462L4.5 3.882.068 8.019l1.365 1.462 2.068-1.93V16c0 .871.278 1.677.751 2.334l-1.959 1.959 1.414 1.414zM18.5 9h2v7.449l2.068-1.93 1.365 1.462-4.433 4.137-4.432-4.137 1.365-1.462 2.067 1.93V9zm-8.964 9l-2 2H13v-2H9.536z" })) }, { writingDirection: t });
             };
             l.metadata = { width: 24, height: 24 };
             const i = l;
         },
-        391366: (e, t, o) => {
+        155353: (e, t, o) => {
             o.r(t), o.d(t, { default: () => i });
             var r = o(202784),
                 a = o(890601),
@@ -924,11 +924,11 @@
                 s = o(347101);
             const l = (e = {}) => {
                 const { direction: t } = (0, n.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M18 1.2v21.6L8.71 17H5.5C4.12 17 3 15.88 3 14.5v-5C3 8.12 4.12 7 5.5 7h3.21L18 1.2zM8 9H5.5c-.28 0-.5.22-.5.5v5c0 .28.22.5.5.5H8V9zm2 6.45l6 3.75V4.8l-6 3.75v6.9z" })) }, { writingDirection: t });
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z" })) }, { writingDirection: t });
             };
             l.metadata = { width: 24, height: 24 };
             const i = l;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TweetMediaTags.ce49dc3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TweetMediaTags.ff62c15a.js.map

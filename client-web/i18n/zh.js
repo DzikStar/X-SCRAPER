@@ -600,7 +600,7 @@
                 f("e0cb0c72", "广告"),
                 f("e2eef3c2", "认证组织"),
                 f("b55d8a78", "创建你的空间"),
-                f("e5323e36", "Go Live"),
+                f("e5323e36", "开始直播"),
                 f("a5a30af0", "文章"),
                 f("d13d697c", "新"),
                 f("j0e2cfa8", "商业"),
@@ -2959,10 +2959,15 @@
                 f("d83f18d2", "目录"),
                 f("hc5aa17c", "获取 X 应用"),
                 f("j0693948", "获取 Grok 应用"),
-                f("fbf83158", "警告：付款失败"),
-                f("jadeb4da", "请立即更新你的付款方式，以免失去你的订阅特权。");
-            f("bce3726a", "更新账单"),
+                f("af781666", "What do people think?"),
+                f("ad35153e", "测试版");
+            f("fbf83158", "警告：付款失败"),
+                f("jadeb4da", "请立即更新你的付款方式，以免失去你的订阅特权。"),
+                f("bce3726a", "更新账单"),
                 f("fce9ecce", "建议的视频"),
+                f("dc954b88", "Try the full news experience"),
+                f("j66b95a2", "In-Depth News"),
+                f("b58d2bd2", "相关帖子"),
                 f("efe6ef9e", "查看帖子"),
                 f("b3d183ce", "有回复的帖子"),
                 f("c299a6c0", "主题帖"),
@@ -3871,15 +3876,15 @@
                 f("b90eb348", "邀请发言"),
                 f("d9a63e82", "从发言人中移除"),
                 f("bd917b26", "邀请共同主持"),
-                f("d7357e7e", "从共同主持人中移除"),
-                f("bf307fc0", "屏蔽并移除"),
+                f("d7357e7e", "从共同主持人中移除");
+            f("bf307fc0", "屏蔽并移除"),
                 f("ccf2f24e", "举报"),
                 f("i22835de", "批准"),
                 f("cb59a0fe", "拒绝"),
-                f("c2376960", "请求发言");
-            f("aba7dcdd", function (e) {
-                return "邀请 " + e.name;
-            }),
+                f("c2376960", "请求发言"),
+                f("aba7dcdd", function (e) {
+                    return "邀请 " + e.name;
+                }),
                 f("f5c7aaa7", function (e) {
                     return "主持人";
                 }),
@@ -4311,7 +4316,6 @@
                 f("aa7c96bb", function (e) {
                     return "查看另外 " + e.numResults + " 条";
                 }),
-                f("b58d2bd2", "相关帖子"),
                 f("f5a2377e", "正在思考 "),
                 f("g3ce0132", "已经思考"),
                 f("f8007364", "展开详情"),
@@ -4333,7 +4337,7 @@
                 f("e02694e0", "答案 2"),
                 f("h6867fcc", "我更喜欢这个答案"),
                 f("d07488a6", "Get the Android app"),
-                f("d9cfe70c", "Access advanced Grok features"),
+                f("d9cfe70c", "访问高级 Grok 功能"),
                 f("hf9afab0", "让 DeepSearch 能够扫描互联网和 X，分析信息，并通过快速代理搜索功能提供详细、合理的答案。"),
                 f("ef3b3f04", "让“思考”能够运用我们的推理模型。它最适合数学、科学和编码。你也可以让 Grok 对任何可能需要耗费更多脑力的问题进行“努力思考”。 "),
                 f("b43636b8", "Grok 3 简介"),
@@ -4904,12 +4908,12 @@
                 f("j8ee77c4", '"ai startup"'),
                 f("d0480758", '包含 "ai" 或 "startup"（或两者）'),
                 f("f0048fa2", "ai 或 startup"),
-                f("da0df186", '包含 "ai"，但不包含 "startup"'),
-                f("f2f463ea", '"ai startup"'),
+                f("da0df186", '包含 "ai"，但不包含 "startup"');
+            f("f2f463ea", '"ai startup"'),
                 f("a10a357e", '包含 "ai" 并至少有 50 个点赞'),
                 f("ca8ed1e8", "ai min_faves:50"),
-                f("i945a3f2", '包含 "ai" 和其中带有 "grok" 一词的 URL');
-            f("a9348088", "ai url:grok"),
+                f("i945a3f2", '包含 "ai" 和其中带有 "grok" 一词的 URL'),
+                f("a9348088", "ai url:grok"),
                 f("b5c3cdbc", '提及 X 账号 "grok"'),
                 f("e2634592", "@grok"),
                 f("i88ba038", "通知已禁用"),
@@ -5870,12 +5874,12 @@
                 f("e50e1bb0", "欢迎来到社群"),
                 f("i6829daa", "社群是由版主管理的讨论群组，X 用户可以在这里沟通和分享。"),
                 f("fc5c6914", "认识其他兴趣相投的人"),
-                f("aa1a9820", "加入社群，与志同道合的人沟通。"),
-                f("edef4c82", "直接发帖到社群"),
+                f("aa1a9820", "加入社群，与志同道合的人沟通。");
+            f("edef4c82", "直接发帖到社群"),
                 f("a7640df6", "你的帖子会与社群成员和你的关注者分享。"),
                 f("h3bb8068", "在需要时调取备份"),
-                f("a709f8f8", "管理员和版主帮助管理社群并让对话正常进行。");
-            f("c8d33380", "新动态"),
+                f("a709f8f8", "管理员和版主帮助管理社群并让对话正常进行。"),
+                f("c8d33380", "新动态"),
                 f("cb6adb10", "发现社群"),
                 f("df362964", "查找社群"),
                 f("dfd5031f", function (e) {
@@ -6427,6 +6431,7 @@
                 f("f7d1a8e0", "Android 应用"),
                 f("aab2fae0", "iOS 应用"),
                 f("a35d9c9a", "资源"),
+                f("ic61c5fc", "滚动到顶部"),
                 f("i6671128", "你已经解锁 X 上的更多精彩"),
                 f("d5e4d0a6", "你可以更轻松地加入对话并与他人联系。现在你可以做以下事情："),
                 f("a97bc07e", "解锁 X 上的更多精彩"),
@@ -6867,13 +6872,13 @@
                 f("fa006202", "背景视频播放"),
                 f("jf389778", "在浏览或使用其他应用时观看"),
                 f("f2977d80", "为文件夹添加书签"),
-                f("j1d3d910", "让你保存的帖子井井有条，以方便访问"),
-                f("f0f48668", "高级支持"),
+                f("j1d3d910", "让你保存的帖子井井有条，以方便访问");
+            f("f0f48668", "高级支持"),
                 f("c3148608", "在需要时更快地寻求帮助"),
                 f("b485ca6e", "“亮点”标签"),
                 f("d438955e", "展示你的热门帖子"),
-                f("f373a352", "加密私信");
-            f("g7405aca", "利用端到端加密确保聊天安全"),
+                f("f373a352", "加密私信"),
+                f("g7405aca", "利用端到端加密确保聊天安全"),
                 f("j659fa0c", "最好的 Grok 3"),
                 f("ibff5694", "解锁最高使用限制、DeepSearch 和 Think，以及抢先体验新功能"),
                 f("i824f4da", "更少广告"),
@@ -7843,16 +7848,7 @@
                 f("ff0edac0", "你确定要取消订阅服务吗？"),
                 f("h2ac0348", "不，我要返回"),
                 f("dbf9667e", "我确定"),
-                f("j7592572", "U 形弯"),
-                f("ee778942", "交通灯"),
-                f("fdd57981", function (e) {
-                    return "我们将为你提供一次性 " + e.totalAmount + " 美元的免费广告积分。";
-                }),
-                f("i032a231", function (e) {
-                    return "我要留下来领取 " + e.totalAmount + " 广告积分";
-                }),
-                f("hd7d278c", "不，谢谢"),
-                f("jf8a0dea", "太好了！新的免费广告积分将在下一个账单周期计入你的账号。");
+                f("j7592572", "U 形弯");
             function t(e, c) {
                 for (var a = 0; a < c.length; a++) {
                     var f = c[a];
@@ -7891,7 +7887,16 @@
                     r(e, c)
                 );
             }
-            f("ebbb3154", "关闭并返回 X"),
+            f("ee778942", "交通灯"),
+                f("fdd57981", function (e) {
+                    return "我们将为你提供一次性 " + e.totalAmount + " 美元的免费广告积分。";
+                }),
+                f("i032a231", function (e) {
+                    return "我要留下来领取 " + e.totalAmount + " 广告积分";
+                }),
+                f("hd7d278c", "不，谢谢"),
+                f("jf8a0dea", "太好了！新的免费广告积分将在下一个账单周期计入你的账号。"),
+                f("ebbb3154", "关闭并返回 X"),
                 f("j1f68dda", "最后一步：你确定要取消吗？"),
                 f("c9c3464c", "正在取消订阅服务"),
                 f("dd3a293c", "你的认证组织订阅服务已结束。"),
@@ -8398,7 +8403,6 @@
                 f("h9659832", "查看你的帖子草稿。"),
                 f("f1b6535e", "帖子草稿"),
                 f("a24add8a", "首先查看加入书签的帖子。"),
-                f("ic61c5fc", "滚动到顶部"),
                 f("gb19f215", function (e) {
                     return "列 - " + e.title;
                 }),
@@ -8914,10 +8918,10 @@
                 }),
                 f("d0e7b11b", function (e) {
                     return e.date + "，时间 " + e.time;
-                }),
-                f("b4349cbc", function (e) {
-                    return "" + e.relativeDay;
-                }),
+                });
+            f("b4349cbc", function (e) {
+                return "" + e.relativeDay;
+            }),
                 f("ebe41367", function (e) {
                     return "时间 " + e.time;
                 }),
@@ -8926,10 +8930,10 @@
                 }),
                 f("d925a4f9", function (e) {
                     return "剩下 " + e.formattedCount + " 分钟";
-                });
-            f("ib15cddb", function (e) {
-                return "剩下 " + e.formattedCount + " 小时";
-            }),
+                }),
+                f("ib15cddb", function (e) {
+                    return "剩下 " + e.formattedCount + " 小时";
+                }),
                 f("db9ed19f", function (e) {
                     return "剩下 " + e.formattedCount + " 天";
                 }),
@@ -13197,4 +13201,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh.8ec7756a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh.c0b7e17a.js.map

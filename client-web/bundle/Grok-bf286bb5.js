@@ -271,7 +271,7 @@
                                 color: "gray900",
                                 disabled: e,
                                 icon: a.createElement(c.default, { style: K.icon }),
-                                onClick: () => {
+                                onClick: (e) => {
                                     m.scribe({ action: "click", component: "grok-input", element: "AdvancedSettings" }), y(!h);
                                 },
                                 size: "smallCompact",
@@ -388,8 +388,14 @@
             function p() {
                 const { clearFilterKey: e, isCreateImageEnabled: t, isImageEditEnabled: n } = (0, u.w)(),
                     i = t || n,
-                    p = a.useCallback(() => (t ? d.y3 : n ? d.mC : ""), [t, n]);
-                return a.createElement(o.Z, { style: [b.container, i && b.showContainer] }, a.createElement(r.Z, { show: i }, a.createElement(o.Z, { style: b.content }, a.createElement(l.ZP, { style: b.label }, p()), a.createElement(s.Z, { onClick: e, withoutInteractiveStyles: !0 }, a.createElement(c.default, { style: b.closeIcon })))));
+                    p = a.useCallback(() => (t ? d.y3 : n ? d.mC : ""), [t, n]),
+                    m = a.useCallback(
+                        (t) => {
+                            t.preventDefault(), e();
+                        },
+                        [e],
+                    );
+                return a.createElement(o.Z, { style: [b.container, i && b.showContainer] }, a.createElement(r.Z, { show: i }, a.createElement(o.Z, { style: b.content }, a.createElement(l.ZP, { style: b.label }, p()), a.createElement(s.Z, { onClick: m, withoutInteractiveStyles: !0 }, a.createElement(c.default, { style: b.closeIcon })))));
             }
             const m = i.default.theme.spacesPx.space64,
                 b = i.default.create((e) => ({ container: { position: "absolute", top: 0, start: 0, width: "100%" }, showContainer: { animationDuration: "0.2s", animationKeyframes: [{ "0%": { top: 0 }, "100%": { top: -m / 2 - e.spacesPx.space2 } }], animationTimingFunction: "ease", animationFillMode: "both" }, content: { width: "100%", height: m, backgroundColor: e.colors.gray0, borderTopStartRadius: e.spaces.space24, borderTopEndRadius: e.spaces.space24, display: "flex", flexDirection: "row", alignItems: "flex-start", justifyContent: "space-between", paddingHorizontal: e.spaces.space16, paddingTop: e.spaces.space8 }, label: { fontSize: e.fontSizes.subtext1, color: e.colors.gray700 }, closeIcon: { color: e.colors.gray700 } }));
@@ -891,4 +897,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-bf286bb5.d38d2e4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-bf286bb5.77240fba.js.map

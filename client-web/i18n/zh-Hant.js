@@ -600,7 +600,7 @@
                 n("e0cb0c72", "廣告"),
                 n("e2eef3c2", "已認證組織"),
                 n("b55d8a78", "建立你的音訊空間"),
-                n("e5323e36", "Go Live"),
+                n("e5323e36", "開始直播"),
                 n("a5a30af0", "文章"),
                 n("d13d697c", "新的"),
                 n("j0e2cfa8", "商業"),
@@ -2959,10 +2959,15 @@
                 n("d83f18d2", "目錄"),
                 n("hc5aa17c", "取得 X 應用程式"),
                 n("j0693948", "取得 Grok 應用程式"),
-                n("fbf83158", "警告：付款失敗"),
-                n("jadeb4da", "請立即更新你的付款方式，以免喪失訂閱權益。");
-            n("bce3726a", "更新帳單資訊"),
+                n("af781666", "What do people think?"),
+                n("ad35153e", "Beta 版");
+            n("fbf83158", "警告：付款失敗"),
+                n("jadeb4da", "請立即更新你的付款方式，以免喪失訂閱權益。"),
+                n("bce3726a", "更新帳單資訊"),
                 n("fce9ecce", "建議的影片"),
+                n("dc954b88", "Try the full news experience"),
+                n("j66b95a2", "In-Depth News"),
+                n("b58d2bd2", "相關貼文"),
                 n("efe6ef9e", "查看貼文"),
                 n("b3d183ce", "含有回覆的貼文"),
                 n("c299a6c0", "對話串"),
@@ -3871,15 +3876,15 @@
                 n("b90eb348", "邀請說話"),
                 n("d9a63e82", "從說話者中移除"),
                 n("bd917b26", "邀請共同主持"),
-                n("d7357e7e", "從共同主持人中移除"),
-                n("bf307fc0", "封鎖並移除"),
+                n("d7357e7e", "從共同主持人中移除");
+            n("bf307fc0", "封鎖並移除"),
                 n("ccf2f24e", "檢舉"),
                 n("i22835de", "核准"),
                 n("cb59a0fe", "拒絕"),
-                n("c2376960", "說話請求");
-            n("aba7dcdd", function (e) {
-                return "邀請 " + e.name;
-            }),
+                n("c2376960", "說話請求"),
+                n("aba7dcdd", function (e) {
+                    return "邀請 " + e.name;
+                }),
                 n("f5c7aaa7", function (e) {
                     return "位主持人";
                 }),
@@ -4311,7 +4316,6 @@
                 n("aa7c96bb", function (e) {
                     return "查看另外 " + e.numResults + " 個";
                 }),
-                n("b58d2bd2", "相關貼文"),
                 n("f5a2377e", "思考了 "),
                 n("g3ce0132", "思考了"),
                 n("f8007364", "展開以取得詳細資料"),
@@ -4333,7 +4337,7 @@
                 n("e02694e0", "回應 2"),
                 n("h6867fcc", "我比較喜歡此回應"),
                 n("d07488a6", "Get the Android app"),
-                n("d9cfe70c", "Access advanced Grok features"),
+                n("d9cfe70c", "存取進階 Grok 功能"),
                 n("hf9afab0", "啟用 DeepSearch 可瀏覽網際網路和 X、分析資訊，並透過快速代理型搜尋來提供詳細且合理的答案。"),
                 n("ef3b3f04", "啟用「思考」可使用我們的推理模型。它最適合數學、科學和程式碼撰寫。你還可以要求 Grok 對任何可能需要耗費更多腦力的問題進行「深入思考」。 "),
                 n("b43636b8", "隆重推出 Grok 3"),
@@ -4904,12 +4908,12 @@
                 n("j8ee77c4", '"ai 啟動"'),
                 n("d0480758", '包含 "ai" 或 "啟動" (或兩者)'),
                 n("f0048fa2", "ai OR 啟動"),
-                n("da0df186", '包含 "ai"，但不包含 "啟動"'),
-                n("f2f463ea", "ai -啟動"),
+                n("da0df186", '包含 "ai"，但不包含 "啟動"');
+            n("f2f463ea", "ai -啟動"),
                 n("a10a357e", '包含 "ai" 且至少有 50 個喜歡'),
                 n("ca8ed1e8", "ai min_faves:50"),
-                n("i945a3f2", '包含 "ai" 和具有 "grok" 字詞的網址');
-            n("a9348088", "ai url:grok"),
+                n("i945a3f2", '包含 "ai" 和具有 "grok" 字詞的網址'),
+                n("a9348088", "ai url:grok"),
                 n("b5c3cdbc", '提及 X 帳戶 "grok"'),
                 n("e2634592", "@grok"),
                 n("i88ba038", "警示已停用"),
@@ -5870,12 +5874,12 @@
                 n("e50e1bb0", "歡迎使用社群"),
                 n("i6829daa", "社群是有人監管的討論群組，X 上的人可以在這裡相互連繫和分享。"),
                 n("fc5c6914", "認識與你志同道合的人"),
-                n("aa1a9820", "加入社群，與志同道合的人建立聯繫。"),
-                n("edef4c82", "將貼文直接發佈至社群"),
+                n("aa1a9820", "加入社群，與志同道合的人建立聯繫。");
+            n("edef4c82", "將貼文直接發佈至社群"),
                 n("a7640df6", "你的貼文會與社群成員和你的跟隨者分享。"),
                 n("h3bb8068", "在需要時取得協助"),
-                n("a709f8f8", "管理員和版主可協助管理社群，使對話正常進行。");
-            n("c8d33380", "新項目"),
+                n("a709f8f8", "管理員和版主可協助管理社群，使對話正常進行。"),
+                n("c8d33380", "新項目"),
                 n("cb6adb10", "探索社群"),
                 n("df362964", "尋找社群"),
                 n("dfd5031f", function (e) {
@@ -6427,6 +6431,7 @@
                 n("f7d1a8e0", "Android 應用程式"),
                 n("aab2fae0", "iOS 應用程式"),
                 n("a35d9c9a", "資源"),
+                n("ic61c5fc", "捲動至頂端"),
                 n("i6671128", "你已解鎖 X 上的更多功能"),
                 n("d5e4d0a6", "你可以更輕鬆地加入對話並與他人聯繫。現在你可以進行下列動作："),
                 n("a97bc07e", "解鎖 X 上的更多功能"),
@@ -6867,13 +6872,13 @@
                 n("fa006202", "背景影片播放 "),
                 n("jf389778", "在瀏覽或使用其他應用程式時觀看"),
                 n("f2977d80", "書籤資料夾"),
-                n("j1d3d910", "將你儲存的貼文保持井然有序，以方便存取"),
-                n("f0f48668", "進階支援"),
+                n("j1d3d910", "將你儲存的貼文保持井然有序，以方便存取");
+            n("f0f48668", "進階支援"),
                 n("c3148608", "在你需要幫助時，獲得更快的協助"),
                 n("b485ca6e", "精選內容標籤"),
                 n("d438955e", "展示你的熱門貼文"),
-                n("f373a352", "加密的私人訊息");
-            n("g7405aca", "透過端對端加密，進行安全聊天"),
+                n("f373a352", "加密的私人訊息"),
+                n("g7405aca", "透過端對端加密，進行安全聊天"),
                 n("j659fa0c", "最佳 Grok 3 體驗"),
                 n("ibff5694", "解鎖最高的使用配額、DeepSearch 和「思考」，以及搶先體驗新功能"),
                 n("i824f4da", "更少的廣告"),
@@ -7843,16 +7848,7 @@
                 n("ff0edac0", "你確定要取消訂閱嗎？"),
                 n("h2ac0348", "否，請返回"),
                 n("dbf9667e", "我確定"),
-                n("j7592572", "迴轉"),
-                n("ee778942", "紅綠燈"),
-                n("fdd57981", function (e) {
-                    return "我們想為你提供 " + e.totalAmount + " 美元的一次性免費廣告抵用金。";
-                }),
-                n("i032a231", function (e) {
-                    return "我將留下來並領取 " + e.totalAmount + " 廣告抵用金";
-                }),
-                n("hd7d278c", "不用，謝謝"),
-                n("jf8a0dea", "太棒了！新的免費廣告抵用金將在下一個計費週期顯示在你的帳戶中。");
+                n("j7592572", "迴轉");
             function t(e, c) {
                 for (var a = 0; a < c.length; a++) {
                     var n = c[a];
@@ -7891,7 +7887,16 @@
                     r(e, c)
                 );
             }
-            n("ebbb3154", "關閉並返回 X"),
+            n("ee778942", "紅綠燈"),
+                n("fdd57981", function (e) {
+                    return "我們想為你提供 " + e.totalAmount + " 美元的一次性免費廣告抵用金。";
+                }),
+                n("i032a231", function (e) {
+                    return "我將留下來並領取 " + e.totalAmount + " 廣告抵用金";
+                }),
+                n("hd7d278c", "不用，謝謝"),
+                n("jf8a0dea", "太棒了！新的免費廣告抵用金將在下一個計費週期顯示在你的帳戶中。"),
+                n("ebbb3154", "關閉並返回 X"),
                 n("j1f68dda", "最後步驟：你確定要取消嗎？"),
                 n("c9c3464c", "正在取消訂閱"),
                 n("dd3a293c", "你的已認證組織訂閱已結束。"),
@@ -8398,7 +8403,6 @@
                 n("h9659832", "查看你的草稿貼文。"),
                 n("f1b6535e", "草稿貼文"),
                 n("a24add8a", "查看已加入書籤的貼文。"),
-                n("ic61c5fc", "捲動至頂端"),
                 n("gb19f215", function (e) {
                     return "欄 - " + e.title;
                 }),
@@ -8914,10 +8918,10 @@
                 }),
                 n("d0e7b11b", function (e) {
                     return e.date + " " + e.time;
-                }),
-                n("b4349cbc", function (e) {
-                    return "" + e.relativeDay;
-                }),
+                });
+            n("b4349cbc", function (e) {
+                return "" + e.relativeDay;
+            }),
                 n("ebe41367", function (e) {
                     return "時間 " + e.time;
                 }),
@@ -8926,10 +8930,10 @@
                 }),
                 n("d925a4f9", function (e) {
                     return "剩下 " + e.formattedCount + " 分鐘";
-                });
-            n("ib15cddb", function (e) {
-                return "剩下 " + e.formattedCount + " 小時";
-            }),
+                }),
+                n("ib15cddb", function (e) {
+                    return "剩下 " + e.formattedCount + " 小時";
+                }),
                 n("db9ed19f", function (e) {
                     return "剩下 " + e.formattedCount + " 天";
                 }),
@@ -13191,4 +13195,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh-Hant.78c313da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh-Hant.00e59f1a.js.map

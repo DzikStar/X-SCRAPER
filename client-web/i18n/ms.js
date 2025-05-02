@@ -600,7 +600,7 @@
                 i("e0cb0c72", "Iklan"),
                 i("e2eef3c2", "Organisasi Disahkan"),
                 i("b55d8a78", "Cipta Space anda"),
-                i("e5323e36", "Go Live"),
+                i("e5323e36", "Bersiaran Langsung"),
                 i("a5a30af0", "Artikel"),
                 i("d13d697c", "Baharu"),
                 i("j0e2cfa8", "Perniagaan"),
@@ -2959,10 +2959,15 @@
                 i("d83f18d2", "Direktori"),
                 i("hc5aa17c", "Dapatkan aplikasi X"),
                 i("j0693948", "Dapatkan aplikasi Grok"),
-                i("fbf83158", "Amaran: Pembayaran gagal"),
-                i("jadeb4da", "Sila kemas kini kaedah pembayaran anda dengan segera sebelum anda kehilangan manfaat langganan anda.");
-            i("bce3726a", "Kemas Kini Pengebilan"),
+                i("af781666", "What do people think?"),
+                i("ad35153e", "beta");
+            i("fbf83158", "Amaran: Pembayaran gagal"),
+                i("jadeb4da", "Sila kemas kini kaedah pembayaran anda dengan segera sebelum anda kehilangan manfaat langganan anda."),
+                i("bce3726a", "Kemas Kini Pengebilan"),
                 i("fce9ecce", "Video yang Dicadangkan"),
+                i("dc954b88", "Try the full news experience"),
+                i("j66b95a2", "In-Depth News"),
+                i("b58d2bd2", "Siaran Berkaitan"),
                 i("efe6ef9e", "Lihat siaran"),
                 i("b3d183ce", "Buat siaran dengan balasan"),
                 i("c299a6c0", "Thread"),
@@ -3871,15 +3876,15 @@
                 i("b90eb348", "Jemput untuk Berbicara"),
                 i("d9a63e82", "Alih keluar daripada Pembicara"),
                 i("bd917b26", "Jemput untuk menjadi Hos lain"),
-                i("d7357e7e", "Alih keluar daripada menjadi Hos lain"),
-                i("bf307fc0", "Sekat dan Alih keluar"),
+                i("d7357e7e", "Alih keluar daripada menjadi Hos lain");
+            i("bf307fc0", "Sekat dan Alih keluar"),
                 i("ccf2f24e", "Laporan"),
                 i("i22835de", "Luluskan"),
                 i("cb59a0fe", "Tolak"),
-                i("c2376960", "Meminta untuk Berbicara");
-            i("aba7dcdd", function (a) {
-                return "Jemput " + a.name;
-            }),
+                i("c2376960", "Meminta untuk Berbicara"),
+                i("aba7dcdd", function (a) {
+                    return "Jemput " + a.name;
+                }),
                 i("f5c7aaa7", function (a) {
                     return "hos";
                 }),
@@ -4311,7 +4316,6 @@
                 i("aa7c96bb", function (a) {
                     return "Lihat " + a.numResults + " lagi";
                 }),
-                i("b58d2bd2", "Siaran Berkaitan"),
                 i("f5a2377e", "Berfikir selama "),
                 i("g3ce0132", "Difikirkan selama"),
                 i("f8007364", "Kembangkan untuk mendapatkan butiran"),
@@ -4333,7 +4337,7 @@
                 i("e02694e0", "Respons 2"),
                 i("h6867fcc", "Saya suka respons ini"),
                 i("d07488a6", "Get the Android app"),
-                i("d9cfe70c", "Access advanced Grok features"),
+                i("d9cfe70c", "Akses ciri lanjutan Grok"),
                 i("hf9afab0", "Dayakan DeepSearch untuk mengimbas Internet dan X, menganalisis maklumat, dan menyampaikan jawapan yang terperinci dan kukuh dengan carian yang pantas dan berdikari. "),
                 i("ef3b3f04", 'Dayakan Fikir untuk menggunakan model pertimbangan kami. Ciri ini sangat sesuai untuk bidang matematik, sains dan pengekodan. Anda juga boleh meminta Grok untuk "Fikir dengan lebih mendalam" tentang sebarang pertanyaan yang mungkin mencabar minda. '),
                 i("b43636b8", "Memperkenalkan Grok 3"),
@@ -4904,12 +4908,12 @@
                 i("j8ee77c4", '"pemula ai"'),
                 i("d0480758", 'mengandungi sama ada "ai" atau "pemula" (atau kedua-duanya)'),
                 i("f0048fa2", "ai ATAU pemula"),
-                i("da0df186", 'mengandungi "ai", tetapi tidak mengandungi "pemula"'),
-                i("f2f463ea", "ai -pemula"),
+                i("da0df186", 'mengandungi "ai", tetapi tidak mengandungi "pemula"');
+            i("f2f463ea", "ai -pemula"),
                 i("a10a357e", 'mengandungi "ai" dan mempunyai sekurang-kurangnya 50 sukaan'),
                 i("ca8ed1e8", "ai min_faves:50"),
-                i("i945a3f2", 'mengandungi "ai" dan URL yang mengandungi perkataan "grok"');
-            i("a9348088", "ai url:grok"),
+                i("i945a3f2", 'mengandungi "ai" dan URL yang mengandungi perkataan "grok"'),
+                i("a9348088", "ai url:grok"),
                 i("b5c3cdbc", 'menyebut akaun X "grok"'),
                 i("e2634592", "@grok"),
                 i("i88ba038", "Makluman Dinyahdayakan"),
@@ -5870,12 +5874,12 @@
                 i("e50e1bb0", "Selamat datang ke Komuniti"),
                 i("i6829daa", "Komuniti ialah kumpulan perbincangan yang dikendalikan dan merupakan tempat untuk pengguna di X berhubung dan berkongsi."),
                 i("fc5c6914", "Temui orang lain yang mempunyai minat yang sama seperti anda"),
-                i("aa1a9820", "Sertai Komuniti untuk berhubung dengan orang yang berkongsi minat yang sama seperti anda."),
-                i("edef4c82", "Buat siaran secara terus kepada Komuniti"),
+                i("aa1a9820", "Sertai Komuniti untuk berhubung dengan orang yang berkongsi minat yang sama seperti anda.");
+            i("edef4c82", "Buat siaran secara terus kepada Komuniti"),
                 i("a7640df6", "Siaran anda dikongsi dengan ahli Komuniti dan pengikut anda."),
                 i("h3bb8068", "Dapatkan sandaran apabila diperlukan"),
-                i("a709f8f8", "Pentadbir dan moderator membantu dalam mengurus Komuniti dan memastikan perbualan menepati tujuan.");
-            i("c8d33380", "Item baharu"),
+                i("a709f8f8", "Pentadbir dan moderator membantu dalam mengurus Komuniti dan memastikan perbualan menepati tujuan."),
+                i("c8d33380", "Item baharu"),
                 i("cb6adb10", "Temui Komuniti"),
                 i("df362964", "Cari Komuniti"),
                 i("dfd5031f", function (a) {
@@ -6427,6 +6431,7 @@
                 i("f7d1a8e0", "Aplikasi Android"),
                 i("aab2fae0", "Aplikasi iOS"),
                 i("a35d9c9a", "Sumber"),
+                i("ic61c5fc", "Tatal ke atas"),
                 i("i6671128", "Anda telah memperoleh lebih banyak ciri di X"),
                 i("d5e4d0a6", "Anda boleh menyertai perbualan dan berhubung dengan orang lain dengan mudah. Kini anda boleh melakukan perkara berikut:"),
                 i("a97bc07e", "Peroleh lebih banyak ciri di X"),
@@ -6867,13 +6872,13 @@
                 i("fa006202", "Main semula video latar belakang"),
                 i("jf389778", "Tonton sambil menyemak imbas atau menggunakan aplikasi lain"),
                 i("f2977d80", "Folder Bookmark"),
-                i("j1d3d910", "Kekalkan siaran yang anda simpan dalam keadaan teratur agar dapat diakses dengan mudah"),
-                i("f0f48668", "Sokongan premium"),
+                i("j1d3d910", "Kekalkan siaran yang anda simpan dalam keadaan teratur agar dapat diakses dengan mudah");
+            i("f0f48668", "Sokongan premium"),
                 i("c3148608", "Dapatkan bantuan dengan lebih pantas apabila anda memerlukan bantuan"),
                 i("b485ca6e", "Tab Sorotan"),
                 i("d438955e", "Tampilkan siaran teratas anda"),
-                i("f373a352", "DM yang disulitkan");
-            i("g7405aca", "Sembang secara selamat dengan penyulitan hujung ke hujung"),
+                i("f373a352", "DM yang disulitkan"),
+                i("g7405aca", "Sembang secara selamat dengan penyulitan hujung ke hujung"),
                 i("j659fa0c", "Yang terbaik daripada Grok 3"),
                 i("ibff5694", "Peroleh had penggunaan yang paling tinggi, DeepSearch & Fikir, serta akses awal kepada ciri baharu"),
                 i("i824f4da", "Iklan yang sedikit"),
@@ -7843,16 +7848,7 @@
                 i("ff0edac0", "Adakah anda pasti anda ingin membatalkan langganan anda?"),
                 i("h2ac0348", "Tidak, bawa saya kembali"),
                 i("dbf9667e", "Saya pasti"),
-                i("j7592572", "Pusingan U"),
-                i("ee778942", "Lampu isyarat"),
-                i("fdd57981", function (a) {
-                    return "Kami ingin menawarkan kredit iklan percuma sebanyak " + a.totalAmount + " USD satu kali kepada anda.";
-                }),
-                i("i032a231", function (a) {
-                    return "Saya akan kekal dan tuntut kredit iklan bernilai " + a.totalAmount;
-                }),
-                i("hd7d278c", "Tidak mahu"),
-                i("jf8a0dea", "Bagus! Iklan kredit percuma baharu anda akan muncul dalam akaun anda pada kitaran pengebilan anda yang seterusnya.");
+                i("j7592572", "Pusingan U");
             function d(a, n) {
                 for (var e = 0; e < n.length; e++) {
                     var i = n[e];
@@ -7891,7 +7887,16 @@
                     u(a, n)
                 );
             }
-            i("ebbb3154", "Tutup dan kembali ke X"),
+            i("ee778942", "Lampu isyarat"),
+                i("fdd57981", function (a) {
+                    return "Kami ingin menawarkan kredit iklan percuma sebanyak " + a.totalAmount + " USD satu kali kepada anda.";
+                }),
+                i("i032a231", function (a) {
+                    return "Saya akan kekal dan tuntut kredit iklan bernilai " + a.totalAmount;
+                }),
+                i("hd7d278c", "Tidak mahu"),
+                i("jf8a0dea", "Bagus! Iklan kredit percuma baharu anda akan muncul dalam akaun anda pada kitaran pengebilan anda yang seterusnya."),
+                i("ebbb3154", "Tutup dan kembali ke X"),
                 i("j1f68dda", "Langkah terakhir: Adakah anda pasti anda ingin membuat pembatalan?"),
                 i("c9c3464c", "Pembatalan langganan sedang berjalan"),
                 i("dd3a293c", "Langganan Organisasi Disahkan anda telah tamat."),
@@ -8398,7 +8403,6 @@
                 i("h9659832", "Lihat draf siaran anda."),
                 i("f1b6535e", "Draf siaran"),
                 i("a24add8a", "Lihat siaran dalam Bookmark."),
-                i("ic61c5fc", "Tatal ke atas"),
                 i("gb19f215", function (a) {
                     return "Ruang - " + a.title;
                 }),
@@ -8914,10 +8918,10 @@
                 }),
                 i("d0e7b11b", function (a) {
                     return a.date + " pada pukul " + a.time;
-                }),
-                i("b4349cbc", function (a) {
-                    return "" + a.relativeDay;
-                }),
+                });
+            i("b4349cbc", function (a) {
+                return "" + a.relativeDay;
+            }),
                 i("ebe41367", function (a) {
                     return "Masa " + a.time;
                 }),
@@ -8926,10 +8930,10 @@
                 }),
                 i("d925a4f9", function (a) {
                     return "Tinggal " + a.formattedCount + " minit";
-                });
-            i("ib15cddb", function (a) {
-                return "Tinggal " + a.formattedCount + " jam";
-            }),
+                }),
+                i("ib15cddb", function (a) {
+                    return "Tinggal " + a.formattedCount + " jam";
+                }),
                 i("db9ed19f", function (a) {
                     return "Tinggal " + a.formattedCount + " hari";
                 }),
@@ -13181,4 +13185,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.b3e780ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.1d27b63a.js.map

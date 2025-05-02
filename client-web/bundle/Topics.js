@@ -163,7 +163,7 @@
                 l = o(651930),
                 d = o(983389),
                 p = o(572067),
-                h = o(784917),
+                h = o(337523),
                 m = o(293115),
                 u = o(807469),
                 g = o(740527),
@@ -282,7 +282,7 @@
                 a = o(187669),
                 s = o(718e3),
                 c = o(651930),
-                l = o(784917),
+                l = o(337523),
                 d = o(24949),
                 p = o(668214),
                 h = o(807469),
@@ -366,7 +366,7 @@
                 s = o(912021),
                 c = o(718e3),
                 l = o(443781),
-                d = o(784917),
+                d = o(337523),
                 p = o(835546),
                 h = o(807469),
                 m = o(740527),
@@ -449,4 +449,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Topics.3a355bba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Topics.e9b1ec0a.js.map

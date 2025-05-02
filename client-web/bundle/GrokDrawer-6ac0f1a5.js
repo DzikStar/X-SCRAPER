@@ -3,12 +3,12 @@
     ["bundle.GrokDrawer-6ac0f1a5"],
     {
         448781: (e, a, n) => {
-            n.d(a, { XD: () => f, ZP: () => C, eK: () => y, p9: () => w, pB: () => A, yF: () => g, z_: () => v });
+            n.d(a, { XD: () => f, ZP: () => C, eK: () => y, p9: () => A, pB: () => g, yF: () => w, z_: () => v });
             var d = n(202784),
                 o = n(214997),
                 r = n(325686),
-                t = n(731708),
-                l = n(782947),
+                l = n(731708),
+                t = n(782947),
                 i = n(154003),
                 s = n(392237),
                 c = n(674132),
@@ -20,14 +20,14 @@
                 D = u().f388a7ec,
                 S = u().ab1eb384,
                 f = "DeepSearch",
-                g = u().i330e54c,
-                A = "default",
-                w = "DeeperSearch",
+                w = u().i330e54c,
+                g = "default",
+                A = "DeeperSearch",
                 y = u().ac64b674,
                 v = "deeper",
                 k = [
-                    { label: f, description: g, value: A },
-                    { label: w, description: y, value: v },
+                    { label: f, description: w, value: g },
+                    { label: A, description: y, value: v },
                 ],
                 M = s.default.create((e) => ({ container: { flex: 1 }, scrollView: { flex: 1 }, contentContainerScrollView: { display: "flex", flexDirection: "column", gap: e.spaces.space12, paddingHorizontal: e.spaces.space24 }, compactContentContainerScrollView: { gap: e.spaces.space8, paddingVertical: e.spaces.space16 }, title: { fontSize: e.fontSizes.headline2 }, subtitle: { color: e.colors.gray700 }, section: { marginTop: e.spaces.space8, gap: e.spaces.space12 }, buttonContainer: { display: "flex", width: "100%", flexDirection: "row", justifyContent: "flex-end", padding: e.spaces.space24 }, compactButtonContainer: { justifyContent: "center" }, resetToDefaultButton: {} })),
                 C = () => {
@@ -35,16 +35,16 @@
                         { advancedSettings: n, setDeepersearchAdvancedSettings: s, setDeepsearchAdvancedSettings: c } = (0, m.w)(),
                         u = (0, b.z)(),
                         f = e && !a,
-                        g = d.useCallback(
+                        w = d.useCallback(
                             (e, a) => {
-                                u.scribe({ action: "change", component: "grok-deepsearch-mode", element: a }), a === A ? c() : s();
+                                u.scribe({ action: "change", component: "grok-deepsearch-mode", element: a }), a === g ? c() : s();
                             },
                             [u, c, s],
                         );
                     return d.createElement(
                         r.Z,
                         { style: M.container },
-                        d.createElement(o.Z, { contentContainerStyle: [M.contentContainerScrollView, f ? M.compactContentContainerScrollView : void 0], style: M.scrollView }, d.createElement(t.ZP, { style: M.title, weight: "bold" }, D), d.createElement(t.ZP, { style: M.subtitle }, S), d.createElement(r.Z, { style: M.section }, d.createElement(l.Z, { horizontal: !f, name: "", onChange: g, options: k, value: n?.deepsearchArgs?.mode || k[0].value }))),
+                        d.createElement(o.Z, { contentContainerStyle: [M.contentContainerScrollView, f ? M.compactContentContainerScrollView : void 0], style: M.scrollView }, d.createElement(l.ZP, { style: M.title, weight: "bold" }, D), d.createElement(l.ZP, { style: M.subtitle }, S), d.createElement(r.Z, { style: M.section }, d.createElement(t.Z, { horizontal: !f, name: "", onChange: w, options: k, value: n?.deepsearchArgs?.mode || k[0].value }))),
                         d.createElement(
                             r.Z,
                             { style: [M.buttonContainer, f ? M.compactButtonContainer : void 0] },
@@ -53,14 +53,14 @@
                                 {
                                     borderColor: "transparent",
                                     color: "gray900",
-                                    disabled: !n?.deepsearchArgs?.mode || n?.deepsearchArgs?.mode === A,
+                                    disabled: !n?.deepsearchArgs?.mode || n?.deepsearchArgs?.mode === g,
                                     onClick: () => {
-                                        g("", k[0].value);
+                                        w("", k[0].value);
                                     },
                                     size: "small",
                                     style: M.resetToDefaultButton,
                                 },
-                                d.createElement(t.ZP, null, p),
+                                d.createElement(l.ZP, null, p),
                             ),
                         ),
                     );
@@ -71,8 +71,8 @@
             var d = n(202784),
                 o = n(400752),
                 r = n(67369),
-                t = n(323265),
-                l = n(420182),
+                l = n(323265),
+                t = n(420182),
                 i = n(443781),
                 s = n(952793),
                 c = n(125363),
@@ -83,12 +83,12 @@
             const p = "rweb.grokInputAdvancedSettings",
                 D = () => {
                     const [e, a] = d.useState(!1),
-                        n = (0, o.Dv)(l.lZ),
+                        n = (0, o.Dv)(t.lZ),
                         D = (0, c.v9)((e) => (0, u.JU)(e)),
                         { advancedSettings: S, filterKey: f } = D,
-                        { isGrokDrawer: g } = (0, h.ZP)(),
-                        A = (0, c.I0)(),
-                        w = (() => {
+                        { isGrokDrawer: w } = (0, h.ZP)(),
+                        g = (0, c.I0)(),
+                        A = (() => {
                             const e = (0, c.oR)(),
                                 a = (0, u.F9)(e.getState()),
                                 { layout: n } = (0, b.Z)();
@@ -112,55 +112,55 @@
                         C = (0, s.hC)("responsive_web_grok_enable_file_attachment_with_deepsearch"),
                         I = (0, s.hC)("responsive_web_grok_enable_file_attachment_with_think"),
                         E = (0, s.hC)("responsive_web_grok_enable_deepersearch"),
+                        N = d.useCallback(
+                            (e) => {
+                                g((0, u.X4)(e));
+                            },
+                            [g],
+                        ),
                         _ = d.useCallback(
                             (e) => {
-                                A((0, u.X4)(e));
+                                g((0, u.F0)(e));
                             },
-                            [A],
+                            [g],
                         ),
-                        B = d.useCallback(
-                            (e) => {
-                                A((0, u.F0)(e));
-                            },
-                            [A],
-                        ),
-                        P = d.useCallback(() => {
+                        B = d.useCallback(() => {
                             if (S) {
                                 const e = { ...S };
-                                delete e.deepsearchArgs, B(e);
-                            } else B(null);
-                        }, [S, B]),
-                        G = d.useCallback(() => {
-                            B({ ...S, deepsearchArgs: { mode: m.z_ } });
-                        }, [S, B]);
+                                delete e.deepsearchArgs, _(e);
+                            } else _(null);
+                        }, [S, _]),
+                        P = d.useCallback(() => {
+                            _({ ...S, deepsearchArgs: { mode: m.z_ } });
+                        }, [S, _]);
                     d.useEffect(() => {
                         n.get(p).then((e) => {
                             e && n.set(p, null);
                         });
-                    }, [n, B, E]);
-                    const R = d.useCallback(
+                    }, [n, _, E]);
+                    const G = d.useCallback(
                             (e) => {
-                                A((0, u.ni)(null === e ? null : e));
+                                g((0, u.ni)(null === e ? null : e));
                             },
-                            [A],
+                            [g],
                         ),
+                        R = d.useCallback(() => {
+                            G(null);
+                        }, [G]),
                         T = d.useCallback(() => {
-                            R(null);
-                        }, [R]),
+                            G("Research");
+                        }, [G]),
                         x = d.useCallback(() => {
-                            R("Research");
-                        }, [R]),
+                            G("Reasoning");
+                        }, [G]),
                         Z = d.useCallback(() => {
-                            R("Reasoning");
-                        }, [R]),
-                        N = d.useCallback(() => {
-                            R("ImageEdit");
-                        }, [R]),
+                            G("ImageEdit");
+                        }, [G]),
                         L = d.useCallback(
                             (e) => {
-                                R(e);
+                                G(e);
                             },
-                            [R],
+                            [G],
                         ),
                         O = (0, r.Mv)(),
                         H = !f,
@@ -170,27 +170,27 @@
                         K = "ImageEdit" === f,
                         J = "CreateImage" === f,
                         X = (0, r.yu)(),
-                        U = X && t.ZP.isWebView(),
-                        V = O || !!g,
+                        U = X && l.ZP.isWebView(),
+                        V = O || !!w,
                         $ = D.focused,
                         j = (F && !C) || (z && !I);
                     return (
                         d.useEffect(() => {
-                            w.every((e) => "Hidden" === e[y]) || w.length <= 0 ? T() : k && ("Research" !== k || F ? ("Reasoning" !== k || z ? "ImageEdit" !== k || K || N() : Z()) : x(), M(""));
-                        }, [w, y, T, K, z, F, k, x, N, Z]),
-                        { grokInput: D, setFocused: _, isResearchEnabled: F, isReasoningEnabled: z, isImageEditEnabled: K, isCreateImageEnabled: J, isDefault: H, isInputFocused: $, hasSelectedFilterKey: W, isInputMobileSize: X, isInputMobile: U, isInputCompact: V, grokModeButtons: w, grokModeButtonStatusKey: y, filterKey: f, isFileInputDisabled: j, setAdvancedSettings: B, setDeepsearchAdvancedSettings: P, setDeepersearchAdvancedSettings: G, advancedSettings: S, grokModeButtonOverrides: v, selectDeepsearchFilterKey: x, selectReasoningFilterKey: Z, selectImageEditFilterKey: N, clearFilterKey: T, setPendingModeButtonFilterKey: M, setFilterKey: L, hasValue: e, setHasValue: a }
+                            A.every((e) => "Hidden" === e[y]) || A.length <= 0 ? R() : k && ("Research" !== k || F ? ("Reasoning" !== k || z ? "ImageEdit" !== k || K || Z() : x()) : T(), M(""));
+                        }, [A, y, R, K, z, F, k, T, Z, x]),
+                        { grokInput: D, setFocused: N, isResearchEnabled: F, isReasoningEnabled: z, isImageEditEnabled: K, isCreateImageEnabled: J, isDefault: H, isInputFocused: $, hasSelectedFilterKey: W, isInputMobileSize: X, isInputMobile: U, isInputCompact: V, grokModeButtons: A, grokModeButtonStatusKey: y, filterKey: f, isFileInputDisabled: j, setAdvancedSettings: _, setDeepsearchAdvancedSettings: B, setDeepersearchAdvancedSettings: P, advancedSettings: S, grokModeButtonOverrides: v, selectDeepsearchFilterKey: T, selectReasoningFilterKey: x, selectImageEditFilterKey: Z, clearFilterKey: R, setPendingModeButtonFilterKey: M, setFilterKey: L, hasValue: e, setHasValue: a }
                     );
                 };
         },
         988290: (e, a, n) => {
-            n.d(a, { BQ: () => t, ZP: () => l });
+            n.d(a, { BQ: () => l, ZP: () => t });
             var d = n(202784);
             const o = { scrollable: void 0, isCompactLayout: !1, isEditingEnabled: !0, isShowButtons: !0, isShowCarousel: !0, isPagedScroll: !0, isGrokShare: !1, isGrokDrawer: !1 },
                 r = d.createContext(o);
-            function t({ children: e, isCompactLayout: a, isEditingEnabled: n, isGrokDrawer: o, isGrokShare: t, isPagedScroll: l, isShowButtons: i, isShowCarousel: s, scrollable: c }) {
-                return d.createElement(r.Provider, { value: { scrollable: c, isCompactLayout: a, isShowButtons: i, isEditingEnabled: n, isShowCarousel: s, isPagedScroll: l, isGrokShare: t, isGrokDrawer: o } }, e);
+            function l({ children: e, isCompactLayout: a, isEditingEnabled: n, isGrokDrawer: o, isGrokShare: l, isPagedScroll: t, isShowButtons: i, isShowCarousel: s, scrollable: c }) {
+                return d.createElement(r.Provider, { value: { scrollable: c, isCompactLayout: a, isShowButtons: i, isEditingEnabled: n, isShowCarousel: s, isPagedScroll: t, isGrokShare: l, isGrokDrawer: o } }, e);
             }
-            function l() {
+            function t() {
                 return d.useContext(r);
             }
         },
@@ -199,8 +199,8 @@
             var d = n(807896),
                 o = n(202784),
                 r = n(325686),
-                t = n(107267),
-                l = n(523561),
+                l = n(107267),
+                t = n(523561),
                 i = n(292627),
                 s = n(365023),
                 c = n(461756),
@@ -212,9 +212,9 @@
                 D = n(551864),
                 S = n(537392),
                 f = n(78882);
-            var g = n(530732),
-                A = n(786998),
-                w = n(392237),
+            var w = n(530732),
+                g = n(786998),
+                A = n(392237),
                 y = n(457566),
                 v = n(725405),
                 k = n(550293),
@@ -222,27 +222,27 @@
             const C = { header: "GrokDrawerHeader", headerHighlighted: "GrokDrawerHeaderHighlighted", root: "GrokDrawer" };
             var I = n(731708),
                 E = n(674132),
-                _ = n.n(E),
-                B = n(952793),
-                P = n(389071),
-                G = n(189953);
-            function R({ children: e, size: a, weight: n }) {
-                return o.createElement(r.Z, { style: T.container }, o.createElement(I.ZP, { size: a, style: T.label, weight: n || "normal" }, o.createElement("span", null, e)));
+                N = n.n(E),
+                _ = n(952793),
+                B = n(389071),
+                P = n(189953);
+            function G({ children: e, size: a, weight: n }) {
+                return o.createElement(r.Z, { style: R.container }, o.createElement(I.ZP, { size: a, style: R.label, weight: n || "normal" }, o.createElement("span", null, e)));
             }
-            const T = w.default.create((e) => ({ container: { position: "relative", width: "fit-content", animationDuration: "0.3s", opacity: 1, animationTimingFunction: "linear", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }] }, label: { color: e.colors.transparent, backgroundColor: e.colors.gray600, backgroundImage: `linear-gradient(to right, ${e.colors.gray600} 0%, ${e.colors.gray900} 20%, ${e.colors.gray500} 40%, ${e.colors.gray600} 100%)`, opacity: 1, display: "inline-block", backgroundClip: "text", animationDuration: "0.7s", backgroundRepeat: "no-repeat", animationIterationCount: "infinite", animationTimingFunction: "linear", animationKeyframes: [{ "0%": { backgroundPositionX: "-2em" }, "100%": { backgroundPositionX: "7em" } }] } })),
-                x = _().h5860a68,
-                Z = _().ed93de0c,
-                N = _().ba44f4ea;
+            const R = A.default.create((e) => ({ container: { position: "relative", width: "fit-content", animationDuration: "0.3s", opacity: 1, animationTimingFunction: "linear", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }] }, label: { color: e.colors.transparent, backgroundColor: e.colors.gray600, backgroundImage: `linear-gradient(to right, ${e.colors.gray600} 0%, ${e.colors.gray900} 20%, ${e.colors.gray500} 40%, ${e.colors.gray600} 100%)`, opacity: 1, display: "inline-block", backgroundClip: "text", animationDuration: "0.7s", backgroundRepeat: "no-repeat", animationIterationCount: "infinite", animationTimingFunction: "linear", animationKeyframes: [{ "0%": { backgroundPositionX: "-2em" }, "100%": { backgroundPositionX: "7em" } }] } })),
+                T = N().h5860a68,
+                x = N().ed93de0c,
+                Z = N().ba44f4ea;
             function L() {
-                const e = (0, B.hC)("responsive_web_grok_analyze_animation"),
-                    a = (0, m.v9)(P.Es),
-                    n = (0, P.f)({ conversationKey: a }),
+                const e = (0, _.hC)("responsive_web_grok_analyze_animation"),
+                    a = (0, m.v9)(B.Es),
+                    n = (0, B.f)({ conversationKey: a }),
                     d = -1 !== (0, m.v9)(n.selectPromptSource)?.indexOf("post_analysis"),
-                    t = (0, m.v9)(n.selectStatus),
-                    l = t === G.Q_.TYPING || t === G.Q_.WAITING;
-                return o.createElement(r.Z, { style: O.titleTextRoot }, d && e ? (l ? o.createElement(R, { size: "headline2", weight: "bold" }, `${Z}...`) : o.createElement(I.ZP, { size: "headline2", style: O.animation }, N)) : o.createElement(I.ZP, null, x));
+                    l = (0, m.v9)(n.selectStatus),
+                    t = l === P.Q_.TYPING || l === P.Q_.WAITING;
+                return o.createElement(r.Z, { style: O.titleTextRoot }, d && e ? (t ? o.createElement(G, { size: "headline2", weight: "bold" }, `${x}...`) : o.createElement(I.ZP, { size: "headline2", style: O.animation }, Z)) : o.createElement(I.ZP, null, T));
             }
-            const O = w.default.create((e) => ({ titleTextRoot: { paddingStart: e.spaces.space2, flexGrow: 1, flexShrink: 1 }, animation: { opacity: 1, animationDuration: "2s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }] } }));
+            const O = A.default.create((e) => ({ titleTextRoot: { paddingStart: e.spaces.space2, flexGrow: 1, flexShrink: 1 }, animation: { opacity: 1, animationDuration: "2s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }] } }));
             n(136728);
             var H = n(154003),
                 W = n(530243),
@@ -250,29 +250,29 @@
                 z = n(487552),
                 K = n(899667),
                 J = n(807901);
-            const X = _().a6e89af8,
-                U = _().d227d19e,
-                V = _().j7d0e836,
-                $ = _().ica55d24,
+            const X = N().a6e89af8,
+                U = N().d227d19e,
+                V = N().j7d0e836,
+                $ = N().ica55d24,
                 j = { label: $ };
             function Y({ conversationUrl: e, handleToggleVisibility: a, isExpanded: n, onClose: d }) {
-                const l = (0, t.useHistory)(),
+                const t = (0, l.useHistory)(),
                     i = o.useCallback(() => {
-                        e && (l.push(e), a());
-                    }, [a, e, l]),
+                        e && (t.push(e), a());
+                    }, [a, e, t]),
                     { canClearConversation: s, handleClearConversationClickWithoutNav: c } = (0, J.Z)();
                 return o.createElement(r.Z, { style: Q.rightControls }, n && e && o.createElement(H.ZP, { "aria-label": X, hoverLabel: { label: X }, icon: o.createElement(W.default, { style: { height: 19, width: 19, marginBottom: 2 } }), onPress: i, type: "primaryText" }), n && s && o.createElement(H.ZP, { "aria-label": $, disabled: !s, hoverLabel: j, icon: o.createElement(F.default, { style: Q.composeIcon }), onPress: c, type: "primaryText" }), n && o.createElement(H.ZP, { "aria-label": U, hoverLabel: { label: U }, icon: o.createElement(z.default, null), onPress: a, type: "primaryText" }), !n && o.createElement(H.ZP, { "aria-label": V, hoverLabel: { label: V }, icon: o.createElement(K.default, null), onPress: a, type: "primaryText" }));
             }
-            const Q = w.default.create((e) => ({ rightControls: { flexDirection: "row", alignItems: "center" }, composeIcon: { fill: "none" } }));
+            const Q = A.default.create((e) => ({ rightControls: { flexDirection: "row", alignItems: "center" }, composeIcon: { fill: "none" } }));
             function q({ conversationUrl: e }) {
                 const a = o.createRef(),
                     n = (0, m.I0)(),
                     d = (0, m.v9)(p.kX) === D.j.EXPANDED,
-                    t = (0, m.v9)(k.kX) === M.S.EXPANDED,
-                    l = o.useCallback(() => {
+                    l = (0, m.v9)(k.kX) === M.S.EXPANDED,
+                    t = o.useCallback(() => {
                         const e = d ? D.j.COLLAPSED : D.j.EXPANDED;
-                        e === D.j.EXPANDED && t && n(k.bi(M.S.COLLAPSED)), n(p.bi(e));
-                    }, [d, n, t]),
+                        e === D.j.EXPANDED && l && n(k.bi(M.S.COLLAPSED)), n(p.bi(e));
+                    }, [d, n, l]),
                     i = o.useCallback(() => {
                         n(p.bi(D.j.CLOSED));
                     }, [n]),
@@ -281,12 +281,12 @@
                     r.Z,
                     { ref: a, style: [ee.headerRoot, !d && ee.headerBorderClosed, ee.cursor], testID: C.header },
                     d
-                        ? o.createElement(A.Z, { onMiddleControlClick: l, rightControl: o.createElement(Y, { conversationUrl: e, handleToggleVisibility: l, isExpanded: d, onClose: i }), style: ee.roundedAppBarCorners, title: o.createElement(r.Z, { style: ee.titleContainer }, o.createElement(y.x1, null), o.createElement(L, null)) })
+                        ? o.createElement(g.Z, { onMiddleControlClick: t, rightControl: o.createElement(Y, { conversationUrl: e, handleToggleVisibility: t, isExpanded: d, onClose: i }), style: ee.roundedAppBarCorners, title: o.createElement(r.Z, { style: ee.titleContainer }, o.createElement(y.x1, null), o.createElement(L, null)) })
                         : o.createElement(
-                              g.Z,
+                              w.Z,
                               {
                                   onPress: () => {
-                                      s.scribe({ element: "grok-bubble", action: "click" }), l();
+                                      s.scribe({ element: "grok-bubble", action: "click" }), t();
                                   },
                                   style: [ee.collapsedContainer, { alignItems: "center", justifyContent: "center" }],
                               },
@@ -294,25 +294,24 @@
                           ),
                 );
             }
-            const ee = w.default.create((e) => ({ cursor: { cursor: "pointer" }, headerRoot: { height: 55, borderTopStartRadius: e.borderRadii.xLarge, borderTopEndRadius: e.borderRadii.xLarge, transition: "all 0.3s ease" }, headerBorderClosed: { borderColor: e.colors.navigationBackground }, titleContainer: { height: "100%", alignItems: "center", gap: e.spaces.space4, display: "flex", flexDirection: "row", flexGrow: 1 }, collapsedContainer: { height: "100%", alignItems: "center", display: "flex", flexDirection: "column", flexGrow: 1 }, grokText: { fontSize: 8, marginTop: -4 }, icon: { width: 32, height: 32 }, roundedAppBarCorners: { borderTopStartRadius: e.borderRadii.xLarge, borderTopEndRadius: e.borderRadii.xLarge } })),
+            const ee = A.default.create((e) => ({ cursor: { cursor: "pointer" }, headerRoot: { height: 55, borderTopStartRadius: e.borderRadii.xLarge, borderTopEndRadius: e.borderRadii.xLarge, transition: "all 0.3s ease" }, headerBorderClosed: { borderColor: e.colors.navigationBackground }, titleContainer: { height: "100%", alignItems: "center", gap: e.spaces.space4, display: "flex", flexDirection: "row", flexGrow: 1 }, collapsedContainer: { height: "100%", alignItems: "center", display: "flex", flexDirection: "column", flexGrow: 1 }, grokText: { fontSize: 8, marginTop: -4 }, icon: { width: 32, height: 32 }, roundedAppBarCorners: { borderTopStartRadius: e.borderRadii.xLarge, borderTopEndRadius: e.borderRadii.xLarge } })),
                 ae = { page: "grok-drawer" };
-            const ne = (0, l.Z)({
+            const ne = (0, t.Z)({
                 loader: () =>
                     Promise.all([
-                        n.e("icons.0"),
-                        n.e("icons.13"),
-                        n.e("icons.22"),
-                        n.e("icons.29"),
-                        n.e("icons.5"),
-                        n.e("icons.15"),
-                        n.e("icons.7"),
-                        n.e("icons.1"),
-                        n.e("icons.20"),
-                        n.e("icons.11"),
+                        n.e("icons.23"),
+                        n.e("icons.16"),
+                        n.e("icons.2"),
+                        n.e("icons.10"),
+                        n.e("icons.19"),
+                        n.e("icons.24"),
                         n.e("modules.common-e907d115"),
                         n.e("modules.common-e019dbda"),
-                        n.e("icons.25"),
-                        n.e("icons.24"),
+                        n.e("icons.13"),
+                        n.e("icons.27"),
+                        n.e("icons.22"),
+                        n.e("icons.17"),
+                        n.e("icons.7"),
                         n.e("modules.audio-6107ac1a"),
                         n.e("modules.audio-b953418a"),
                         n.e("modules.audio-7c51e6a7"),
@@ -323,16 +322,16 @@
                         n.e("modules.audio-e019dbda"),
                         n.e("modules.audio-262c94d4"),
                         n.e("modules.audio-c6fe4ea4"),
-                        n.e("icons.6"),
-                        n.e("icons.10"),
-                        n.e("icons.17"),
-                        n.e("icons.14"),
-                        n.e("icons.16"),
-                        n.e("icons.23"),
-                        n.e("icons.26"),
-                        n.e("icons.3"),
+                        n.e("icons.4"),
                         n.e("icons.8"),
+                        n.e("icons.14"),
+                        n.e("icons.26"),
                         n.e("icons.28"),
+                        n.e("icons.21"),
+                        n.e("icons.11"),
+                        n.e("icons.3"),
+                        n.e("icons.1"),
+                        n.e("icons.18"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -363,8 +362,7 @@
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                         n.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
                         n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-209b0896"),
-                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-ce92c4ef"),
+                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2d1eb5e2"),
                         n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                         n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                         n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -430,25 +428,25 @@
                         n.e("shared~loader.DMDrawer~bundle.Birdwatch~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompos-8d7085c2"),
                         n.e("shared~loader.DMDrawer~bundle.Birdwatch~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompos-53f39e22"),
                         n.e("shared~loader.DMDrawer~bundle.Birdwatch~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompos-167a4ae5"),
-                        n.e("shared~bundle.AccountAnalytics~bundle.Grok~ondemand.News~bundle.Ocf~ondemand.Insights~bundle.TV~bundle.Accoun"),
-                        n.e("shared~bundle.Birdwatch~bundle.Grok~ondemand.News~loader.inlineTombstoneHandler~loader.tweetHandler"),
-                        n.e("shared~bundle.AccountAnalytics~bundle.Grok~bundle.Payments~ondemand.News~ondemand.Insights"),
-                        n.e("shared~bundle.AccountAnalytics~bundle.Grok~ondemand.News~ondemand.Insights-5c163be3"),
-                        n.e("shared~bundle.AccountAnalytics~bundle.Grok~ondemand.News~ondemand.Insights-306954a6"),
-                        n.e("shared~bundle.AccountAnalytics~bundle.Grok~ondemand.News~ondemand.Insights-0ec68f8f"),
-                        n.e("shared~bundle.AccountAnalytics~bundle.Grok~ondemand.News~ondemand.Insights-536eaa00"),
-                        n.e("shared~bundle.AccountAnalytics~bundle.Grok~ondemand.News~ondemand.Insights-0786ae68"),
-                        n.e("shared~bundle.AccountAnalytics~bundle.Grok~ondemand.News~ondemand.Insights-f82e0cd2"),
-                        n.e("shared~bundle.AccountAnalytics~bundle.Grok~ondemand.News~ondemand.Insights-f5b13972"),
-                        n.e("shared~bundle.AccountAnalytics~bundle.Grok~ondemand.News~ondemand.Insights-8584f0c3"),
-                        n.e("shared~bundle.AccountAnalytics~bundle.Grok~ondemand.News~ondemand.Insights-01309e43"),
-                        n.e("shared~bundle.AccountAnalytics~bundle.Grok~ondemand.News~ondemand.Insights-398ef225"),
-                        n.e("shared~bundle.AccountAnalytics~bundle.Grok~ondemand.News~ondemand.Insights-fc70f967"),
-                        n.e("shared~bundle.AccountAnalytics~bundle.Grok~ondemand.News~ondemand.Insights-e43b6c88"),
-                        n.e("shared~bundle.AccountAnalytics~bundle.Grok~ondemand.News~ondemand.Insights-b08eb7a4"),
-                        n.e("shared~bundle.AccountAnalytics~bundle.Grok~ondemand.News~ondemand.Insights-5ba759f7"),
-                        n.e("shared~bundle.AccountAnalytics~bundle.Grok~ondemand.News~ondemand.Insights-ae3eee7f"),
-                        n.e("shared~bundle.AccountAnalytics~bundle.Grok~ondemand.News~ondemand.Insights-27545368"),
+                        n.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~bundle.Ocf~ondemand.Insights~bundle.TV~l"),
+                        n.e("shared~bundle.Birdwatch~bundle.News~bundle.Grok~ondemand.News~loader.inlineTombstoneHandler~loader.tweetHandl"),
+                        n.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~bundle.Payments~ondemand.News~ondemand.Insights~loader"),
+                        n.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.NewsSe-df6c0f5f"),
+                        n.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.NewsSe-962a9654"),
+                        n.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.NewsSe-d35c1f9c"),
+                        n.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.NewsSe-ff8476c2"),
+                        n.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.NewsSe-6e668ce9"),
+                        n.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.NewsSe-9fd4b2af"),
+                        n.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.NewsSe-ad2ef762"),
+                        n.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.NewsSe-b67eba62"),
+                        n.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.NewsSe-ad6d127d"),
+                        n.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.NewsSe-829eb18b"),
+                        n.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.NewsSe-4fec5af7"),
+                        n.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.NewsSe-898c8d51"),
+                        n.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.NewsSe-b92a6472"),
+                        n.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.NewsSe-67dc3650"),
+                        n.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.NewsSe-ed7b0ce8"),
+                        n.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.NewsSe-7ba852e1"),
                         n.e("shared~bundle.TwitterArticles~bundle.Grok~loader.Markdown~loader.TexBlock"),
                         n.e("shared~bundle.TwitterArticles~bundle.Grok~loader.Markdown"),
                         n.e("bundle.Grok-e907d115"),
@@ -487,19 +485,19 @@
             });
             function de({ width: e }) {
                 const a = (0, u.cm)(),
-                    [n, l] = o.useState(0),
-                    g =
-                        ((A = n),
+                    [n, t] = o.useState(0),
+                    w =
+                        ((g = n),
                         (0, S.Zx)(({ windowHeight: e }) => {
-                            const a = f.I2.find((a) => A <= Math.ceil(e * a));
-                            return a ? e * Math.max(a, 0.5) : Math.min(A, Math.ceil(f.T6 * e));
+                            const a = f.I2.find((a) => g <= Math.ceil(e * a));
+                            return a ? e * Math.max(a, 0.5) : Math.min(g, Math.ceil(f.T6 * e));
                         }));
-                var A;
-                const w = (0, m.v9)((e) => p.kX(e)),
-                    y = w === D.j.EXPANDED,
-                    v = w === D.j.CLOSED;
+                var g;
+                const A = (0, m.v9)((e) => p.kX(e)),
+                    y = A === D.j.EXPANDED,
+                    v = A === D.j.CLOSED;
                 o.useEffect(() => {
-                    v && l(0);
+                    v && t(0);
                 }, [v]);
                 const k = o.useCallback(
                         (e) => {
@@ -508,13 +506,13 @@
                                     layout: { height: a },
                                 },
                             } = e;
-                            l(a);
+                            t(a);
                         },
-                        [l],
+                        [t],
                     ),
-                    M = o.useMemo(() => [f.ZP.allowPointer, f.ZP.main, y ? { minHeight: g, maxWidth: null } : f.ZP.collapsedSmall], [y, g]);
+                    M = o.useMemo(() => [f.ZP.allowPointer, f.ZP.main, y ? { minHeight: w, maxWidth: null } : f.ZP.collapsedSmall], [y, w]);
                 return (function () {
-                    const e = (0, t.useHistory)(),
+                    const e = (0, l.useHistory)(),
                         a = e.getLastNonModalLocationPathname() ?? e.location.pathname;
                     return o.useMemo(() => (0, b.z)(a) || a.startsWith("/i/chat") || a.startsWith("/i/communitynotes") || a.startsWith("/messages") || a.startsWith("/i/radar") || a.startsWith("/i/money") || a.startsWith("/i/verified") || a.startsWith("/i/broadcasts/") || a.startsWith("/compose/articles") || a.startsWith("/i/account_analytics") || a.startsWith("/i/conferences-room") || a.startsWith("/i/premium/hiring") || a.startsWith("/i/grok") || a.endsWith("/live"), [a]);
                 })() ||
@@ -524,18 +522,18 @@
                     : o.createElement(
                           i.Z.GrokDrawer,
                           null,
-                          o.createElement(s.Z, { id: "GrokDrawer" }, (a, t) => o.createElement(h.nO, { namespace: ae }, o.createElement(r.Z, (0, d.Z)({ ref: a() }, t({ style: [f.ZP.denyPointer, f.ZP.root, { width: e, height: n }, c.Z.reducedMotionEnabled && f.ZP.reducedMotion], testID: C.root })), o.createElement(r.Z, { onLayout: k, style: M }, o.createElement(q, { conversationUrl: "/i/grok" }), y && o.createElement(ne, null))))),
+                          o.createElement(s.Z, { id: "GrokDrawer" }, (a, l) => o.createElement(h.nO, { namespace: ae }, o.createElement(r.Z, (0, d.Z)({ ref: a() }, l({ style: [f.ZP.denyPointer, f.ZP.root, { width: e, height: n }, c.Z.reducedMotionEnabled && f.ZP.reducedMotion], testID: C.root })), o.createElement(r.Z, { onLayout: k, style: M }, o.createElement(q, { conversationUrl: "/i/grok" }), y && o.createElement(ne, null))))),
                       );
             }
         },
         78882: (e, a, n) => {
-            n.d(a, { I2: () => t, T6: () => l, ZP: () => i });
+            n.d(a, { I2: () => l, T6: () => t, ZP: () => i });
             var d = n(392237),
                 o = n(198438),
                 r = n(521514);
-            const t = [0.4, 0.53, 0.66, 0.8],
-                l = 0.8,
-                i = d.default.create((e) => ({ root: { position: "relative", alignSelf: "flex-end", marginEnd: e.spaces.space20, marginBottom: e.spaces.space12, minWidth: r.Z.dmDrawerWidth.min, maxWidth: r.Z.dmDrawerWidth.max, transition: `all ${o.s}ms ease` }, main: { position: "absolute", backgroundColor: e.colors.navigationBackground, borderRadius: e.borderRadii.xLarge, overflow: "hidden", boxShadow: e.boxShadows.medium, flex: 1, width: "100%", maxHeight: 100 * l + "vh" }, hidden: { display: "none" }, contentContainer: { flex: 1, height: "unset", overflow: "auto", minHeight: "unset", maxHeight: "unset" }, drawerHeaderRadius: { borderTopStartRadius: e.borderRadii.xLarge, borderTopEndRadius: e.borderRadii.xLarge }, reducedMotion: { transition: "none" }, collapsedSmall: { maxWidth: 55, alignSelf: "flex-end", borderColor: e.colors.gray400, borderWidth: e.spaces.space1, backgroundColor: e.colors.appBarBackground, backdropFilter: "blur(12px)" }, denyPointer: { pointerEvents: "none" }, allowPointer: { pointerEvents: "auto" } }));
+            const l = [0.4, 0.53, 0.66, 0.8],
+                t = 0.8,
+                i = d.default.create((e) => ({ root: { position: "relative", alignSelf: "flex-end", marginEnd: e.spaces.space20, marginBottom: e.spaces.space12, minWidth: r.Z.dmDrawerWidth.min, maxWidth: r.Z.dmDrawerWidth.max, transition: `all ${o.s}ms ease` }, main: { position: "absolute", backgroundColor: e.colors.navigationBackground, borderRadius: e.borderRadii.xLarge, overflow: "hidden", boxShadow: e.boxShadows.medium, flex: 1, width: "100%", maxHeight: 100 * t + "vh" }, hidden: { display: "none" }, contentContainer: { flex: 1, height: "unset", overflow: "auto", minHeight: "unset", maxHeight: "unset" }, drawerHeaderRadius: { borderTopStartRadius: e.borderRadii.xLarge, borderTopEndRadius: e.borderRadii.xLarge }, reducedMotion: { transition: "none" }, collapsedSmall: { maxWidth: 55, alignSelf: "flex-end", borderColor: e.colors.gray400, borderWidth: e.spaces.space1, backgroundColor: e.colors.appBarBackground, backdropFilter: "blur(12px)" }, denyPointer: { pointerEvents: "none" }, allowPointer: { pointerEvents: "auto" } }));
         },
         807901: (e, a, n) => {
             n.d(a, { Z: () => D });
@@ -543,31 +541,31 @@
             var d = n(202784),
                 o = n(107267),
                 r = n(674132),
-                t = n.n(r),
-                l = n(774426),
+                l = n.n(r),
+                t = n(774426),
                 i = n(725516),
                 s = n(125363),
                 c = n(189953),
                 u = n(928831),
                 b = n(623494),
                 h = n(654917);
-            const m = t().f794af9a,
-                p = t().eccf9fea;
+            const m = l().f794af9a,
+                p = l().eccf9fea;
             function D() {
                 const e = (0, s.I0)(),
                     a = (0, h.uf)(),
                     n = (0, o.useHistory)(),
                     r = (0, s.v9)(a.selectCanClearConversation),
-                    { access: t, changeMode: D, mode: S } = (0, h.ZP)(),
+                    { access: l, changeMode: D, mode: S } = (0, h.ZP)(),
                     { clearFilterKey: f } = (0, u.w)(),
-                    g = !1 !== t,
-                    A = (0, i.z)(),
-                    w = (0, o.useLocation)(),
+                    w = !1 !== l,
+                    g = (0, i.z)(),
+                    A = (0, o.useLocation)(),
                     y = d.useCallback(() => {
-                        const d = new URLSearchParams(w.search),
+                        const d = new URLSearchParams(A.search),
                             o = d.get("analysisEntityId"),
-                            t = d.get("conversation");
-                        (o || t) && r
+                            l = d.get("conversation");
+                        (o || l) && r
                             ? (n.goBack(),
                               setTimeout(() => {
                                   e(a.clearConversation());
@@ -575,36 +573,36 @@
                             : r
                               ? e(a.clearConversation())
                               : n.goBack();
-                    }, [r, e, a, n, w.search]),
+                    }, [r, e, a, n, A.search]),
                     v = d.useCallback(() => {
-                        r && (e(a.clearConversation()), n.push("/i/grok"), (0, b.ZY)(A), f());
-                    }, [A, r, e, a, n, f]),
+                        r && (e(a.clearConversation()), n.push("/i/grok"), (0, b.ZY)(g), f());
+                    }, [g, r, e, a, n, f]),
                     k = d.useCallback(() => {
-                        r && (e(a.clearConversation()), (0, b.ZY)(A), f());
-                    }, [A, r, e, a, f]),
+                        r && (e(a.clearConversation()), (0, b.ZY)(g), f());
+                    }, [g, r, e, a, f]),
                     M = d.useCallback(
                         (e) => {
                             const a = [
                                 {
                                     disabled: S === c.IK.REGULAR,
                                     onClick: function () {
-                                        D(c.IK.REGULAR, A);
+                                        D(c.IK.REGULAR, g);
                                     },
                                     text: p,
                                 },
                                 {
                                     disabled: S === c.IK.FUN,
                                     onClick: function () {
-                                        D(c.IK.FUN, A);
+                                        D(c.IK.FUN, g);
                                     },
                                     text: m,
                                 },
                             ];
-                            return d.createElement(l.default, { actionItems: a, onClose: e });
+                            return d.createElement(t.default, { actionItems: a, onClose: e });
                         },
-                        [A, S, D],
+                        [g, S, D],
                     );
-                return { canClearConversation: r, handleBackClick: y, handleClearConversationClick: v, handleClearConversationClickWithoutNav: k, isEligible: g, renderActionsMenu: M };
+                return { canClearConversation: r, handleBackClick: y, handleClearConversationClick: v, handleClearConversationClickWithoutNav: k, isEligible: w, renderActionsMenu: M };
             }
         },
         654917: (e, a, n) => {
@@ -612,8 +610,8 @@
             var d = n(202784),
                 o = n(107267),
                 r = n(323265),
-                t = n(791632),
-                l = n(443781),
+                l = n(791632),
+                t = n(443781),
                 i = n(952793),
                 s = n(125363),
                 c = n(389071),
@@ -622,7 +620,7 @@
             function h() {
                 const e = (0, o.useHistory)(),
                     a = (0, s.v9)(c.Es);
-                return (0, t.HD)(e) ? (0, t.tT)(e) : a;
+                return (0, l.HD)(e) ? (0, l.tT)(e) : a;
             }
             function m() {
                 const e = h(),
@@ -631,157 +629,157 @@
                 return (0, s.v9)(n.selectIsInitialized) || a((0, c.Ki)(e)), n;
             }
             function p() {
-                const { userClaims: e } = (0, l.QZ)(),
+                const { userClaims: e } = (0, t.QZ)(),
                     a = h(),
                     n = m(),
                     o = (0, s.v9)(n.selectMessageIds),
-                    t = (0, s.I0)(),
+                    l = (0, s.I0)(),
                     p = (0, s.v9)(n.selectFetchConversationIdStatus),
                     D = (0, s.v9)(n.selectFetchConversationIdError),
                     S = (0, s.v9)(n.selectMode),
                     f = (0, s.v9)(n.selectStatus),
-                    g = (0, s.v9)(c.Pt),
-                    A = (0, s.v9)(n.selectConversationId),
-                    w = (0, s.v9)(c.pZ),
+                    w = (0, s.v9)(c.Pt),
+                    g = (0, s.v9)(n.selectConversationId),
+                    A = (0, s.v9)(c.pZ),
                     y = (0, s.v9)(c.uF),
                     v = (0, s.v9)(c.F9),
                     k = (0, s.v9)(n.selectAnalysisEntityId),
                     M = (0, s.v9)(n.selectUsingExperiment);
                 let C = !1;
                 const I = (0, i.hC)("responsive_web_grok_general_availability");
-                e.isTrueAndEnabled("subscriptions_inapp_grok") ? (C = "premium") : (I || y) && (C = w.length > 0 ? "restricted" : "free");
+                e.isTrueAndEnabled("subscriptions_inapp_grok") ? (C = "premium") : (I || y) && (C = A.length > 0 ? "restricted" : "free");
                 const E = d.useCallback(
                         async (e, a) => {
-                            S !== e && (t(n.setMode(e)), r.ZP.isTwitterApp() || (await t((0, u.O)(e, v))), (0, b.RC)(a, e));
+                            S !== e && (l(n.setMode(e)), r.ZP.isTwitterApp() || (await l((0, u.O)(e, v))), (0, b.RC)(a, e));
                         },
-                        [t, n, S, v],
+                        [l, n, S, v],
                     ),
-                    _ = d.useCallback(
+                    N = d.useCallback(
                         async (e, a, n) => {
-                            e !== v && (t((0, c.j1)(e, a)), r.ZP.isTwitterApp() || (await t((0, u.O)(S, e))), (0, b.JO)(n, e));
+                            e !== v && (l((0, c.j1)(e, a)), r.ZP.isTwitterApp() || (await l((0, u.O)(S, e))), (0, b.JO)(n, e));
                         },
-                        [t, S, v],
+                        [l, S, v],
                     );
-                return { messageIds: o, access: C, status: f, grokSettingsStatus: g, conversationKey: a, conversationId: A, analysisEntityId: k, accessRestrictedReasons: w, fetchConversationIdStatus: p, fetchConversationIdError: D, mode: S, model: v, changeMode: E, changeModel: _, usingExperiment: M };
+                return { messageIds: o, access: C, status: f, grokSettingsStatus: w, conversationKey: a, conversationId: g, analysisEntityId: k, accessRestrictedReasons: A, fetchConversationIdStatus: p, fetchConversationIdError: D, mode: S, model: v, changeMode: E, changeModel: N, usingExperiment: M };
             }
         },
         962379: (e, a, n) => {
-            n.d(a, { Z: () => l });
+            n.d(a, { Z: () => t });
             var d = n(952793),
                 o = n(87063),
                 r = n(125363),
-                t = n(389071);
-            function l() {
-                const e = (0, r.v9)((e) => (0, t.uX)(e)),
+                l = n(389071);
+            function t() {
+                const e = (0, r.v9)((e) => (0, l.uX)(e)),
                     a = (0, d.hC)("responsive_web_grok_use_new_layout"),
-                    n = (0, r.v9)((e) => (0, t.Pt)(e)),
-                    l = Boolean(e?.sections.find((e) => "WIDE_TEXT_CARD" === e.section_type));
-                return { enabled: a, layout: e, loading: !n || "none" === n || n === o.Z.LOADING, isGrok3LayoutEnabled: l };
+                    n = (0, r.v9)((e) => (0, l.Pt)(e)),
+                    t = Boolean(e?.sections.find((e) => "WIDE_TEXT_CARD" === e.section_type));
+                return { enabled: a, layout: e, loading: !n || "none" === n || n === o.Z.LOADING, isGrok3LayoutEnabled: t };
             }
         },
         623494: (e, a, n) => {
-            n.d(a, { DE: () => m, G$: () => l, HO: () => C, HR: () => B, JO: () => S, Jm: () => k, NH: () => P, RC: () => D, S7: () => _, UV: () => R, Uk: () => y, YI: () => c, YW: () => E, ZY: () => p, az: () => i, c3: () => t, dP: () => g, dd: () => h, eS: () => v, eV: () => M, hf: () => f, hq: () => s, kl: () => w, mm: () => b, op: () => A, pv: () => r, qQ: () => x, u1: () => I, y6: () => u, zC: () => G, zX: () => T });
+            n.d(a, { DE: () => m, G$: () => t, HO: () => C, HR: () => _, JO: () => S, Jm: () => k, NH: () => B, RC: () => D, S7: () => N, UV: () => G, Uk: () => y, YI: () => c, YW: () => E, ZY: () => p, az: () => i, c3: () => l, dP: () => w, dd: () => h, eS: () => v, eV: () => M, hf: () => f, hq: () => s, kl: () => A, mm: () => b, op: () => g, pv: () => r, qQ: () => T, u1: () => I, y6: () => u, zC: () => P, zX: () => R });
             var d = n(163889);
             function o() {
                 return `online:${window.navigator.onLine}|effectiveType:${window.navigator.connection?.effectiveType ?? "unknown"}`;
             }
             function r(e, a) {
-                Z(e)({ element: "api-add-response", action: "start", data: { event_info: JSON.stringify(a) } });
-            }
-            function t(e, a) {
-                Z(e)({ element: "api-add-response-regenerate", action: "start", data: { event_info: JSON.stringify(a) } });
+                x(e)({ element: "api-add-response", action: "start", data: { event_info: JSON.stringify(a) } });
             }
             function l(e, a) {
-                Z(e)({ element: "selected-side-by-side", action: "click", data: { event_info: JSON.stringify(a) } });
+                x(e)({ element: "api-add-response-regenerate", action: "start", data: { event_info: JSON.stringify(a) } });
+            }
+            function t(e, a) {
+                x(e)({ element: "selected-side-by-side", action: "click", data: { event_info: JSON.stringify(a) } });
             }
             function i(e, a, n) {
-                Z(e)({ element: "client-home-log", action: a, data: { event_info: JSON.stringify(n) } });
+                x(e)({ element: "client-home-log", action: a, data: { event_info: JSON.stringify(n) } });
             }
             function s(e, a) {
-                Z(e)({ element: "deepsearch-premature-stream-close-log", action: "error", data: { event_info: JSON.stringify({ errorMessage: a.errorMessage }), duration_ms: a.durationMs } });
+                x(e)({ element: "deepsearch-premature-stream-close-log", action: "error", data: { event_info: JSON.stringify({ errorMessage: a.errorMessage }), duration_ms: a.durationMs } });
             }
             function c(e, a) {
-                Z(e)({ element: "deepsearch-premature-manual-stream-stop", action: "click", data: { event_info: JSON.stringify(a.messageTagCounts), duration_ms: a.durationMs } });
+                x(e)({ element: "deepsearch-premature-manual-stream-stop", action: "click", data: { event_info: JSON.stringify(a.messageTagCounts), duration_ms: a.durationMs } });
             }
             function u(e, a) {
-                Z(e)({ element: "deepsearch-duration", action: "complete", data: { duration_ms: a } });
+                x(e)({ element: "deepsearch-duration", action: "complete", data: { duration_ms: a } });
             }
             function b(e, a, n) {
-                Z(e)({ element: "api-add-response-retry", action: "start", data: { event_info: JSON.stringify({ numRetriesExecuted: a, error: n }) } });
+                x(e)({ element: "api-add-response-retry", action: "start", data: { event_info: JSON.stringify({ numRetriesExecuted: a, error: n }) } });
             }
             function h(e, a) {
-                Z(e)({ element: "api-add-response-edit", action: "start", data: { event_info: JSON.stringify(a) } });
+                x(e)({ element: "api-add-response-edit", action: "start", data: { event_info: JSON.stringify(a) } });
             }
             function m(e) {
-                Z(e)({ element: "abort", action: "click" });
+                x(e)({ element: "abort", action: "click" });
             }
             function p(e) {
-                Z(e)({ element: "clear-conversation", action: "click" });
+                x(e)({ element: "clear-conversation", action: "click" });
             }
             function D(e, a) {
-                Z(e)({ element: "grok_mode", action: "change", data: { event_info: a } });
+                x(e)({ element: "grok_mode", action: "change", data: { event_info: a } });
             }
             function S(e, a) {
-                Z(e)({ element: "grok_model", action: "change", data: { event_info: a } });
+                x(e)({ element: "grok_model", action: "change", data: { event_info: a } });
             }
             function f(e, a) {
-                Z(e)({ element: "tweet-carousel", action: "change", data: { event_info: a.toString() } });
+                x(e)({ element: "tweet-carousel", action: "change", data: { event_info: a.toString() } });
+            }
+            function w(e, a) {
+                x(e)({ element: "file-attachment", action: "add", data: { event_info: a } });
             }
             function g(e, a) {
-                Z(e)({ element: "file-attachment", action: "add", data: { event_info: a } });
+                x(e)({ element: "file-attachment", action: "fail", data: { event_info: a } });
             }
-            function A(e, a) {
-                Z(e)({ element: "file-attachment", action: "fail", data: { event_info: a } });
-            }
-            function w(e, a, n) {
-                Z(e)({ element: "api-add-response", action: "error", data: { event_info: `${a.message}\n${a.stack}\n${o()}` } }), (0, d.Hj)(a, { level: "warning", extra: n });
+            function A(e, a, n) {
+                x(e)({ element: "api-add-response", action: "error", data: { event_info: `${a.message}\n${a.stack}\n${o()}` } }), (0, d.Hj)(a, { level: "warning", extra: n });
             }
             function y(e, a) {
-                Z(e)({ element: "api-add-response", action: "fail", data: { event_info: `${a}\n${o()}` } });
+                x(e)({ element: "api-add-response", action: "fail", data: { event_info: `${a}\n${o()}` } });
             }
             function v(e, a) {
-                Z(e)({ element: "response-chunk-read", action: "timer_elapsed", data: { event_info: a ? "first_chunk" : void 0 } });
+                x(e)({ element: "response-chunk-read", action: "timer_elapsed", data: { event_info: a ? "first_chunk" : void 0 } });
             }
             function k(e) {
-                Z(e)({ element: "file-upload", action: "success" });
+                x(e)({ element: "file-upload", action: "success" });
             }
             function M(e, a) {
-                Z(e)({ element: "file-upload", action: "fail", data: { event_info: a } });
+                x(e)({ element: "file-upload", action: "fail", data: { event_info: a } });
             }
             function C(e, a) {
-                Z(e)({ element: "grok_post_analysis_button", action: "click", data: { event_source: a ? "post_details" : "timeline" } });
+                x(e)({ element: "grok_post_analysis_button", action: "click", data: { event_source: a ? "post_details" : "timeline" } });
             }
             function I(e, a, n) {
-                Z(e)({ element: "grok-post-image-annotation", action: "start", data: { event_source: a ? "post_details" : "timeline", event_info: n ? JSON.stringify({ mediaId: n }) : void 0 } });
+                x(e)({ element: "grok-post-image-annotation", action: "start", data: { event_source: a ? "post_details" : "timeline", event_info: n ? JSON.stringify({ mediaId: n }) : void 0 } });
             }
             function E(e, a) {
-                Z(e)({ element: "grok-drawer-open", action: "success", data: { event_source: a } });
+                x(e)({ element: "grok-drawer-open", action: "success", data: { event_source: a } });
             }
-            function _(e, a) {
-                Z(e)({ element: "grok-card-attachment", action: "show", data: { event_info: JSON.stringify({ cardType: a.cardType, variant: a.variant }) } });
+            function N(e, a) {
+                x(e)({ element: "grok-card-attachment", action: "show", data: { event_info: JSON.stringify({ cardType: a.cardType, variant: a.variant }) } });
             }
-            function B(e, a, n) {
-                Z(e)({ element: "grok-card-attachment-follow-up", action: "send", data: { event_info: JSON.stringify({ cardType: a.cardType, variant: a.variant, followUpText: n }) } });
+            function _(e, a, n) {
+                x(e)({ element: "grok-card-attachment-follow-up", action: "send", data: { event_info: JSON.stringify({ cardType: a.cardType, variant: a.variant, followUpText: n }) } });
             }
-            function P(e) {
-                Z(e)({ element: "open-grok-memory-drawer", action: "start", data: {} });
+            function B(e) {
+                x(e)({ element: "open-grok-memory-drawer", action: "start", data: {} });
+            }
+            function P(e, a) {
+                x(e)({ element: "grok-memory-detail", action: "click", data: { event_info: a } });
             }
             function G(e, a) {
-                Z(e)({ element: "grok-memory-detail", action: "click", data: { event_info: a } });
+                x(e)({ element: "grok-memory-forget", action: "click", data: { event_info: a } });
             }
-            function R(e, a) {
-                Z(e)({ element: "grok-memory-forget", action: "click", data: { event_info: a } });
+            function R(e, a, n) {
+                x(e)({ element: "grok-memory-forget", action: "error", data: { event_info: JSON.stringify({ conversationId: a, error: n }) } });
             }
-            function T(e, a, n) {
-                Z(e)({ element: "grok-memory-forget", action: "error", data: { event_info: JSON.stringify({ conversationId: a, error: n }) } });
+            function T(e, a) {
+                x(e)({ element: "grok-memory-detail", action: "click", data: { event_info: a } });
             }
-            function x(e, a) {
-                Z(e)({ element: "grok-memory-detail", action: "click", data: { event_info: a } });
-            }
-            const Z = (e) => (a) => {
+            const x = (e) => (a) => {
                 e.scribe({ ...a, data: { url: window.location.href, ...a.data } });
             };
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.GrokDrawer-6ac0f1a5.e1c486da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.GrokDrawer-6ac0f1a5.c0ed77ea.js.map

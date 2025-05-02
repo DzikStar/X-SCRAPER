@@ -82,55 +82,59 @@
                 C = o(962379),
                 E = o(623494),
                 w = o(988290);
-            const k = ({ Icon: e, allPrompts: t, body: o, isDeepsearch: r, isImageEdit: i, isReasoning: s, label: k, prompt: _, promptAction: Z, promptId: x, sectionType: I, toolOverrides: P }) => {
-                    const [R, z] = a.useState(!1),
-                        D = (0, m.Z)(),
-                        T = (0, u.I0)(),
-                        S = (0, f.eX)(),
-                        { isCompactLayout: F } = (0, w.ZP)(),
-                        { clearSelectedFile: M, selectedFiles: B } = (0, h.ZP)(),
-                        { clearFilterKey: O, isCreateImageEnabled: L, isImageEditEnabled: H } = (0, l.w)(),
-                        K = (0, d.hC)("responsive_web_grok_show_citations"),
-                        j = (0, d.hC)("responsive_web_grok_new_home_layout"),
-                        N = a.useMemo(() => Object.keys(B), [B]),
-                        G = a.useMemo(() => N.map((e) => B[e]?.remote).filter(Boolean), [N, B]),
-                        W = a.useRef(null),
-                        { handleFileChange: V } = (0, b.J)({ analytics: D, isReturnCitations: K, prompt: _, promptId: x }),
-                        { enabled: A } = (0, C.Z)(),
-                        $ = a.useRef(!1),
-                        U = a.useCallback(() => {
-                            $.current || (0, E.az)(D, "impression", { promptId: x ?? "", prompt: _, sectionType: I, allPrompts: t ?? [] });
-                        }, [D, x, _, I, t]),
-                        X = a.useCallback(() => z(!0), []),
-                        Y = a.useCallback(() => z(!1), []),
-                        J = a.useCallback(() => {
-                            if (((0, E.az)(D, "click", { promptId: x ?? "", prompt: _, sectionType: I, allPrompts: t ?? [] }), "UPLOAD" === Z && W.current)) return void W.current.click();
+            const k = ({ Icon: e, allPrompts: t, body: o, isDeepsearch: r, isImageEdit: i, isImageGen: s, isReasoning: k, label: _, prompt: Z, promptAction: x, promptId: I, sectionType: P, toolOverrides: R }) => {
+                    const [z, D] = a.useState(!1),
+                        T = (0, m.Z)(),
+                        S = (0, u.I0)(),
+                        F = (0, f.eX)(),
+                        { isCompactLayout: M } = (0, w.ZP)(),
+                        { clearSelectedFile: B, selectedFiles: O } = (0, h.ZP)(),
+                        { clearFilterKey: L, isCreateImageEnabled: H, isImageEditEnabled: K } = (0, l.w)(),
+                        j = (0, d.hC)("responsive_web_grok_show_citations"),
+                        G = (0, d.hC)("responsive_web_grok_new_home_layout"),
+                        N = a.useMemo(() => Object.keys(O), [O]),
+                        W = a.useMemo(() => N.map((e) => O[e]?.remote).filter(Boolean), [N, O]),
+                        V = a.useRef(null),
+                        { handleFileChange: A } = (0, b.J)({ analytics: T, isReturnCitations: j, prompt: Z, promptId: I }),
+                        { enabled: $ } = (0, C.Z)(),
+                        U = a.useRef(!1),
+                        X = a.useCallback(() => {
+                            U.current || (0, E.az)(T, "impression", { promptId: I ?? "", prompt: Z, sectionType: P, allPrompts: t ?? [] });
+                        }, [T, I, Z, P, t]),
+                        Y = a.useCallback(() => D(!0), []),
+                        J = a.useCallback(() => D(!1), []),
+                        Q = a.useCallback(() => {
+                            if (((0, E.az)(T, "click", { promptId: I ?? "", prompt: Z, sectionType: P, allPrompts: t ?? [] }), "UPLOAD" === x && V.current)) return void V.current.click();
                             let e = {};
+                            i && (e = { attachments: W, imageGenerationCount: 4, promptMetadata: { promptSource: "IMAGE_EDIT", action: "INPUT", properties: { imageUrl: W[0].url } } });
+                            let o = {};
                             if (
-                                (i && (e = { attachments: G, imageGenerationCount: 4, promptMetadata: { promptSource: "IMAGE_EDIT", action: "INPUT", properties: { imageUrl: G[0].url } } }),
-                                T(
-                                    (0, y.u)({ analytics: D, conversationKey: S })({
-                                        text: _,
-                                        returnCitations: K,
-                                        toolOverrides: P,
+                                (s && (o = { imageGenerationCount: 4 }),
+                                S(
+                                    (0, y.u)({ analytics: T, conversationKey: F })({
+                                        text: Z,
+                                        returnCitations: j,
+                                        toolOverrides: R,
                                         isDeepsearch: r,
-                                        isReasoning: s,
+                                        isReasoning: k,
+                                        isImageGen: s,
                                         ...e,
+                                        ...o,
                                         onStart: () => {
                                             N.forEach((e) => {
-                                                M(e);
+                                                B(e);
                                             }),
-                                                j && (L || H) && O();
+                                                G && (H || K) && L();
                                         },
                                     }),
                                 ),
-                                "" !== x)
+                                "" !== I)
                             ) {
                                 const e = "PRESET";
-                                T((0, g.U)({ group_id: e, object_id: x, action_type: "CLICK" }));
+                                S((0, g.U)({ group_id: e, object_id: I, action_type: "CLICK" }));
                             }
-                        }, [_, x, T, I, t, D, K, S, Z, P, r, s, i, G, M, N, L, H, O, j]);
-                    return A ? a.createElement(n.Z, { style: [v.outerContainer, R ? v.hovered : void 0] }, a.createElement(n.Z, { onClick: J, onMouseEnter: X, onMouseLeave: Y, style: v.contentContainer }, a.createElement(p.D, { id: `prompt_${x}`, onFullyVisible: U, position: "bottom", testID: `prompt_${x}` }), a.createElement(n.Z, { style: v.promptContainer }, e ? a.createElement(e, { style: v.icon }) : void 0, a.createElement(n.Z, { style: v.prompt }, a.createElement(c.ZP, { size: "body", weight: "normal" }, k), !!o && a.createElement(c.ZP, { style: v.promptTextStyle }, o))), a.createElement("input", { onChange: V, ref: W, style: { display: "none" }, type: "file" }))) : a.createElement(n.Z, { onClick: J, onMouseEnter: X, onMouseLeave: Y, style: [v.deprecatedContainer, R ? v.hovered : void 0, F ? v.compact : void 0] }, a.createElement(p.D, { id: `prompt_${x}`, onFullyVisible: U, position: "bottom", testID: `prompt_${x}` }), a.createElement(n.Z, { style: v.deprecatedPrompt }, a.createElement(c.ZP, null, k)), e ? a.createElement(e, { style: v.deprecatedIcon }) : void 0);
+                        }, [Z, I, S, P, t, T, j, F, x, R, r, k, i, W, B, N, H, K, L, G, s]);
+                    return $ ? a.createElement(n.Z, { style: [v.outerContainer, z ? v.hovered : void 0] }, a.createElement(n.Z, { onClick: Q, onMouseEnter: Y, onMouseLeave: J, style: v.contentContainer }, a.createElement(p.D, { id: `prompt_${I}`, onFullyVisible: X, position: "bottom", testID: `prompt_${I}` }), a.createElement(n.Z, { style: v.promptContainer }, e ? a.createElement(e, { style: v.icon }) : void 0, a.createElement(n.Z, { style: v.prompt }, a.createElement(c.ZP, { size: "body", weight: "normal" }, _), !!o && a.createElement(c.ZP, { style: v.promptTextStyle }, o))), a.createElement("input", { onChange: A, ref: V, style: { display: "none" }, type: "file" }))) : a.createElement(n.Z, { onClick: Q, onMouseEnter: Y, onMouseLeave: J, style: [v.deprecatedContainer, z ? v.hovered : void 0, M ? v.compact : void 0] }, a.createElement(p.D, { id: `prompt_${I}`, onFullyVisible: X, position: "bottom", testID: `prompt_${I}` }), a.createElement(n.Z, { style: v.deprecatedPrompt }, a.createElement(c.ZP, null, _)), e ? a.createElement(e, { style: v.deprecatedIcon }) : void 0);
                 },
                 v = i.default.create((e) => ({ outerContainer: { width: "100%" }, contentContainer: { paddingVertical: e.spaces.space12, paddingHorizontal: e.spaces.space16, justifyContent: "center", alignItems: "flex-start", borderRadius: e.spaces.space16, cursor: "pointer", transition: "background-color 0.5s", overflow: "hidden" }, loadingBlock: { backgroundColor: "transparent" }, compact: { width: "45%" }, hovered: { backgroundColor: e.colors.gray50, borderRadius: e.spaces.space8 }, promptContainer: { flexDirection: "row", alignItems: "center" }, prompt: { marginStart: e.spaces.space8, flex: 1 }, promptTextStyle: { fontSize: e.fontSizes.headline2, color: e.colors.gray600 }, icon: { width: e.spaces.space24, height: e.spaces.space24, color: e.colors.gray800 }, deprecatedContainer: { width: 170, height: 130, padding: e.spaces.space16, justifyContent: "space-between", alignItems: "flex-start", backgroundColor: e.colors.activeFaintGray, borderRadius: e.borderRadii.large, cursor: "pointer", transition: "background-color 0.5s" }, deprecatedPrompt: { flexGrow: 1, textOverflow: "ellipsis" }, deprecatedIcon: { width: e.spaces.space20, height: e.spaces.space20, color: e.colors.link } }));
             var _ = o(619697);
@@ -156,16 +160,16 @@
                     const { grokInput: t, isDefault: o } = (0, l.w)(),
                         i = a.useMemo(() => e.data.prompts.filter((e) => e.filter_key === t.filterKey), [t.filterKey, e.data.prompts]),
                         { promptElements: c } = a.useMemo(() => {
-                            const e = P(i),
-                                t = e.map(() => new r.Z.Value(0)),
-                                o = t.map((e, t) => r.Z.timing(e, { toValue: 1, duration: 300, delay: 30 * t, useNativeDriver: !1 }));
-                            r.Z.parallel(o).start();
-                            const n = e.map((e, o) => {
-                                const n = { opacity: t[o], transform: [{ translateY: t[o].interpolate({ inputRange: [0, 1], outputRange: [20, 0] }) }] };
-                                return a.createElement(r.Z.View, { key: e.prompt_id, style: [R.gridItem, n] }, a.createElement(k, { Icon: e.icon_name ? s[e.icon_name] : void 0, isDeepsearch: "Research" === e.filter_key, isImageEdit: "ImageEdit" === e.filter_key, isReasoning: "Reasoning" === e.filter_key, label: e.display_body ?? "", prompt: e.prompt, promptId: e.prompt_id, sectionType: "FLOATING_CARD", toolOverrides: e.tool_overrides }));
+                            const t = P(i, e.numPromptsToShow ?? 4),
+                                o = t.map(() => new r.Z.Value(0)),
+                                n = o.map((e, t) => r.Z.timing(e, { toValue: 1, duration: 300, delay: 30 * t, useNativeDriver: !1 }));
+                            r.Z.parallel(n).start();
+                            const l = t.map((e, t) => {
+                                const n = { opacity: o[t], transform: [{ translateY: o[t].interpolate({ inputRange: [0, 1], outputRange: [20, 0] }) }] };
+                                return a.createElement(r.Z.View, { key: e.prompt_id, style: [R.gridItem, n] }, a.createElement(k, { Icon: e.icon_name ? s[e.icon_name] : void 0, isDeepsearch: "Research" === e.filter_key, isImageEdit: "ImageEdit" === e.filter_key, isImageGen: "CreateImage" === e.filter_key, isReasoning: "Reasoning" === e.filter_key, label: e.display_body ?? "", prompt: e.prompt, promptId: e.prompt_id, sectionType: "FLOATING_CARD", toolOverrides: e.tool_overrides }));
                             });
-                            return { animatedValues: t, promptElements: n };
-                        }, [i]);
+                            return { animatedValues: o, promptElements: l };
+                        }, [i, e.numPromptsToShow]);
                     return (o && !e.hasSelectedFilterKey) || 0 === c.length ? null : a.createElement(Z, { animationKey: t.filterKey || "default", style: R.fadeContainer }, a.createElement(_.$, { data: e.data }, a.createElement(n.Z, { style: R.container }, c)));
                 },
                 I = (e) => {
@@ -177,14 +181,14 @@
                     }
                     return t;
                 },
-                P = (e) => {
-                    const t = ["g3_image_edit_2"],
-                        o = e.filter((e) => e.prompt_id && t.includes(e.prompt_id));
-                    if (o.length >= 4) return I(o).slice(0, 4);
-                    const a = 4 - o.length,
-                        r = e.filter((e) => !(o.includes(e) || (e.prompt_id && t.includes(e.prompt_id))));
-                    for (let e = 0; e < a && e < r.length; e++) o.push(r[e]);
-                    return I(o);
+                P = (e, t) => {
+                    const o = ["g3_image_edit_2"],
+                        a = e.filter((e) => e.prompt_id && o.includes(e.prompt_id));
+                    if (a.length >= t) return I(a).slice(0, t);
+                    const r = t - a.length,
+                        n = e.filter((e) => !(a.includes(e) || (e.prompt_id && o.includes(e.prompt_id))));
+                    for (let e = 0; e < r && e < n.length; e++) a.push(n[e]);
+                    return I(a);
                 },
                 R = i.default.create((e) => ({ container: { width: "100%", flexDirection: "column", alignItems: "stretch" }, gridItem: { alignItems: "flex-start", width: "100%" }, fadeContainer: { width: "100%" } }));
         },
@@ -375,9 +379,9 @@
                         H = a.useRef(null),
                         { handleFileChange: K } = (0, b.J)({ analytics: D, isReturnCitations: B, prompt: _, promptId: x }),
                         { enabled: j } = (0, C.Z)(),
-                        N = a.useRef(!1),
-                        G = a.useCallback(() => {
-                            N.current || (0, E.az)(D, "impression", { promptId: x ?? "", prompt: _, sectionType: I, allPrompts: t ?? [] });
+                        G = a.useRef(!1),
+                        N = a.useCallback(() => {
+                            G.current || (0, E.az)(D, "impression", { promptId: x ?? "", prompt: _, sectionType: I, allPrompts: t ?? [] });
                         }, [D, x, _, I, t]),
                         W = a.useCallback(() => z(!0), []),
                         V = a.useCallback(() => z(!1), []),
@@ -389,7 +393,7 @@
                                 T((0, g.U)({ group_id: e, object_id: x, action_type: "CLICK" }));
                             }
                         }, [_, x, T, I, t, D, B, S, Z, P, n, s, i, L]);
-                    return j ? a.createElement(r.Z, { onClick: A, onMouseEnter: W, onMouseLeave: V, style: [v.container, R ? v.hovered : void 0] }, e ? a.createElement(a.Fragment, null, a.createElement(e, { style: v.icon }), a.createElement(c.Z, { size: "space8" })) : void 0, a.createElement(r.Z, { style: v.prompt }, a.createElement(l.ZP, { size: "body", weight: "medium" }, k), !!o && a.createElement(l.ZP, { color: "gray600", size: "body", weight: "normal" }, o)), a.createElement("input", { onChange: K, ref: H, style: { display: "none" }, type: "file" })) : a.createElement(r.Z, { onClick: A, onMouseEnter: W, onMouseLeave: V, style: [v.deprecatedContainer, R ? v.hovered : void 0, F ? v.compact : void 0] }, a.createElement(p.D, { id: `prompt_${x}`, onFullyVisible: G, position: "bottom", testID: `prompt_${x}` }), a.createElement(r.Z, { style: v.deprecatedPrompt }, a.createElement(l.ZP, null, k)), e ? a.createElement(e, { style: v.deprecatedIcon }) : void 0);
+                    return j ? a.createElement(r.Z, { onClick: A, onMouseEnter: W, onMouseLeave: V, style: [v.container, R ? v.hovered : void 0] }, e ? a.createElement(a.Fragment, null, a.createElement(e, { style: v.icon }), a.createElement(c.Z, { size: "space8" })) : void 0, a.createElement(r.Z, { style: v.prompt }, a.createElement(l.ZP, { size: "body", weight: "medium" }, k), !!o && a.createElement(l.ZP, { color: "gray600", size: "body", weight: "normal" }, o)), a.createElement("input", { onChange: K, ref: H, style: { display: "none" }, type: "file" })) : a.createElement(r.Z, { onClick: A, onMouseEnter: W, onMouseLeave: V, style: [v.deprecatedContainer, R ? v.hovered : void 0, F ? v.compact : void 0] }, a.createElement(p.D, { id: `prompt_${x}`, onFullyVisible: N, position: "bottom", testID: `prompt_${x}` }), a.createElement(r.Z, { style: v.deprecatedPrompt }, a.createElement(l.ZP, null, k)), e ? a.createElement(e, { style: v.deprecatedIcon }) : void 0);
                 },
                 v = i.default.create((e) => ({ container: { paddingVertical: e.spaces.space12, paddingHorizontal: e.spaces.space16, justifyContent: "center", alignItems: "flex-start", backgroundColor: e.colors.gray0, borderRadius: e.spaces.space12, cursor: "pointer", transition: "background-color 0.5s", overflow: "hidden", flex: 1, flexGrow: 1, shrink: 1, minWidth: 150, maxHeight: 68, minHeight: 68 }, loadingBlock: { backgroundColor: "transparent" }, compact: { width: "45%" }, hovered: { backgroundColor: e.colors.gray50 }, prompt: { textOverflow: "ellipsis", wrap: "wrap" }, icon: { width: e.spaces.space20, height: e.spaces.space20, shrink: 0, color: e.colors.gray900 }, deprecatedContainer: { width: 170, height: 130, padding: e.spaces.space16, justifyContent: "space-between", alignItems: "flex-start", backgroundColor: e.colors.activeFaintGray, borderRadius: e.borderRadii.large, cursor: "pointer", transition: "background-color 0.5s" }, deprecatedPrompt: { flexGrow: 1, textOverflow: "ellipsis" }, deprecatedIcon: { width: e.spaces.space20, height: e.spaces.space20, color: e.colors.link } }));
             var _ = o(619697);
@@ -828,17 +832,21 @@
                     { filterKey: p, hasSelectedFilterKey: w, hasValue: k, isInputFocused: v } = (0, b.w)(),
                     [_, x] = a.useState(!0),
                     R = (0, m.v9)(u.bv),
-                    z = (0, m.v9)(u.JE);
+                    z = (0, m.v9)(u.JE),
+                    T = a.useRef(null);
                 a.useEffect(() => {
                     o((0, g.A)());
                 }, [o]);
-                const T = "ImageEdit" === p || "CreateImage" === p,
-                    S = l?.sections.find((e) => "FLOATING_CARD" === e.section_type),
-                    F = S?.prompts?.some((e) => e.filter_key === p);
+                const S = "ImageEdit" === p || "CreateImage" === p,
+                    F = l?.sections.find((e) => "FLOATING_CARD" === e.section_type),
+                    M = F?.prompts?.some((e) => e.filter_key === p),
+                    B = () => {
+                        T.current && T.current.focus();
+                    };
                 return a.createElement(
                     a.Fragment,
                     null,
-                    w && !F
+                    w && !M
                         ? a.createElement(r.Z, { style: D.logoContainer }, a.createElement(c.default, { style: D.logo }))
                         : v
                           ? a.createElement(r.Z, { style: D.container })
@@ -854,7 +862,23 @@
                                     }),
                                 s && a.createElement(I.t, null),
                             ),
-                    a.createElement(r.Z, { style: D.bottomContainer }, k ? null : w ? (S && F ? a.createElement(a.Fragment, null, a.createElement(f.u, { data: S, hasSelectedFilterKey: w }), a.createElement(n.Z, { axis: "y", size: T ? "space40" : "space12" })) : null) : a.createElement(r.Z, { style: D.idleContent }, "loaded" === z && !v && a.createElement(Z, { conversationHistory: R, style: D.recentConversations }), a.createElement(E.ZP, { isMobile: !0, style: D.presets })), a.createElement(h.Z, { conversationKey: t, hasAccess: !1 !== e && "restricted" !== e, inputAtBottom: !0, inputAtHome: !0, isIdle: !0, placeholder: P, useDraftPersistence: !0 })),
+                    a.createElement(
+                        r.Z,
+                        { style: D.bottomContainer },
+                        k ? null : w ? (F && M ? a.createElement(a.Fragment, null, a.createElement(f.u, { data: F, hasSelectedFilterKey: w, numPromptsToShow: 2 }), a.createElement(n.Z, { axis: "y", size: S ? "space40" : "space12" })) : null) : a.createElement(r.Z, { style: D.idleContent }, "loaded" === z && !v && a.createElement(Z, { conversationHistory: R, style: D.recentConversations }), a.createElement(E.ZP, { focusInput: B, isMobile: !0, style: D.presets })),
+                        a.createElement(h.Z, {
+                            conversationKey: t,
+                            hasAccess: !1 !== e && "restricted" !== e,
+                            inputAtBottom: !0,
+                            inputAtHome: !0,
+                            isIdle: !0,
+                            onFieldTextInputRef: (e) => {
+                                T.current = e;
+                            },
+                            placeholder: P,
+                            useDraftPersistence: !0,
+                        }),
+                    ),
                 );
             }
             const z = !!p.ZP.isWebView(),
@@ -1020,4 +1044,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-cebf58fc.1078186a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-cebf58fc.dfee27ea.js.map

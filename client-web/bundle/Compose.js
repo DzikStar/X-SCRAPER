@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["bundle.Compose", "shared~bundle.AccountVerification~bundle.SettingsProfile~loader.MediaPickerWithPreview~bundle.RichTextCompose"],
+    ["bundle.Compose", "shared~bundle.AccountVerification~bundle.SettingsProfile~bundle.UserLists~loader.MediaPickerWithPreview~bundl"],
     {
         625661: (e, t, i) => {
             i.d(t, { ZP: () => h });
@@ -206,11 +206,12 @@
             const Z = (0, R.Z)({
                     loader: () =>
                         Promise.all([
-                            i.e("icons.0"),
-                            i.e("icons.20"),
+                            i.e("icons.16"),
+                            i.e("icons.10"),
                             i.e("modules.common-e907d115"),
                             i.e("modules.common-e019dbda"),
-                            i.e("icons.24"),
+                            i.e("icons.13"),
+                            i.e("icons.22"),
                             i.e("modules.audio-6107ac1a"),
                             i.e("modules.audio-b953418a"),
                             i.e("modules.audio-7c51e6a7"),
@@ -221,13 +222,10 @@
                             i.e("modules.audio-e019dbda"),
                             i.e("modules.audio-262c94d4"),
                             i.e("modules.audio-c6fe4ea4"),
-                            i.e("icons.10"),
-                            i.e("icons.14"),
+                            i.e("icons.4"),
                             i.e("icons.26"),
-                            i.e("icons.3"),
                             i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                            i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-209b0896"),
-                            i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-ce92c4ef"),
+                            i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2d1eb5e2"),
                             i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                             i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                             i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -273,8 +271,8 @@
                     renderPlaceholder: (e, t) => a.createElement(P.Z, { hasError: e, onRetry: t }),
                 }),
                 I = h().gd80afba,
-                k = h().j322caee,
-                L = h().abd845fe,
+                L = h().j322caee,
+                k = h().abd845fe,
                 x = h().df1b0708,
                 M = h().cd959e5c,
                 F = h().e68b09b4,
@@ -332,7 +330,7 @@
                         Z = !!i.mediaFile?.isVideo;
                     return a.createElement(n.ZP, null, ({ windowWidth: t }) => {
                         const i = void 0 !== D ? D : !y.Z.isTwoColumnLayout(t);
-                        return a.createElement(r.Z, { "aria-label": e || U, onLayout: this._handleMediaPreviewLayout, role: h, style: [g, O.cursor, R && O.gifPlayButton, A] }, this._renderPreview(), R && !T && a.createElement(o.Z, { "aria-label": x, onPress: this._handleGifClick, size: "small" }), P ? a.createElement(B.ZP, { type: B.AM }) : null, _ && !Z ? a.createElement(s.Z, { align: "left", altLabel: e }) : null, a.createElement(r.Z, { style: O.editMedia }, C ? a.createElement(d.ZP, { "aria-label": V, hoverLabel: { label: V }, icon: a.createElement(p.default, null), size: "small", type: "onMediaDominantColorFilled" }) : null, E && v ? a.createElement(d.ZP, { "aria-label": k, icon: a.createElement(b.default, { style: O.editSensitiveWarningIcon }), onPress: c, size: "small", type: "onMediaDominantColorFilled" }) : null, E ? a.createElement(d.ZP, { "aria-label": I, icon: i ? a.createElement(m.default, null) : void 0, onPress: l, size: i ? "xSmall" : "small", type: "onMediaDominantColorFilled" }, i ? void 0 : L) : null), w ? a.createElement(d.ZP, { "aria-label": M, hoverLabel: { label: F }, icon: a.createElement(S.default, null), onPress: u, size: "small", style: O.buttonRight, type: "onMediaDominantColorFilled" }) : null);
+                        return a.createElement(r.Z, { "aria-label": e || U, onLayout: this._handleMediaPreviewLayout, role: h, style: [g, O.cursor, R && O.gifPlayButton, A] }, this._renderPreview(), R && !T && a.createElement(o.Z, { "aria-label": x, onPress: this._handleGifClick, size: "small" }), P ? a.createElement(B.ZP, { type: B.AM }) : null, _ && !Z ? a.createElement(s.Z, { align: "left", altLabel: e }) : null, a.createElement(r.Z, { style: O.editMedia }, C ? a.createElement(d.ZP, { "aria-label": V, hoverLabel: { label: V }, icon: a.createElement(p.default, null), size: "small", type: "onMediaDominantColorFilled" }) : null, E && v ? a.createElement(d.ZP, { "aria-label": L, icon: a.createElement(b.default, { style: O.editSensitiveWarningIcon }), onPress: c, size: "small", type: "onMediaDominantColorFilled" }) : null, E ? a.createElement(d.ZP, { "aria-label": I, icon: i ? a.createElement(m.default, null) : void 0, onPress: l, size: i ? "xSmall" : "small", type: "onMediaDominantColorFilled" }, i ? void 0 : k) : null), w ? a.createElement(d.ZP, { "aria-label": M, hoverLabel: { label: F }, icon: a.createElement(S.default, null), onPress: u, size: "small", style: O.buttonRight, type: "onMediaDominantColorFilled" }) : null);
                     });
                 }
                 _renderPreview() {
@@ -646,8 +644,8 @@
             }
             const Z = new P(p().b01ed2db, p().i83e29e1, 5280),
                 I = new P(p().d4b7cff7, p().b211849f, 1e3),
-                k = ["lr", "mm", "uk", "us"],
-                L = p().b772cd66,
+                L = ["lr", "mm", "uk", "us"],
+                k = p().b772cd66,
                 x = p().e7c766ee,
                 M = p().ab68727a,
                 F = p().ae4057a2,
@@ -747,7 +745,7 @@
                                         o.ZP,
                                         null,
                                         ((e, t = "us") => {
-                                            if (k.find((e) => e === t.toLowerCase())) return Z.format(e);
+                                            if (L.find((e) => e === t.toLowerCase())) return Z.format(e);
                                             {
                                                 const t = 1.609344 * e;
                                                 return I.format(t);
@@ -771,7 +769,7 @@
                                 i = this._selectResults();
                             return a.createElement(r.Z, null, this._renderPlaces(i), t ? a.createElement(s.Z, { actionText: z({ query: e }), onClick: this._handleSubmit, textColor: "primary" }) : null, this._renderAttributionIfNeeded());
                         }),
-                        (this._renderRightControl = () => a.createElement(r.Z, { style: Q.actionButtonContainer }, a.createElement(d.ZP, { onPress: this._handleRemove, size: "small", style: Q.actionButton, type: "primaryText" }, O), a.createElement(d.ZP, { onPress: this._handleDone, size: "small", style: Q.actionButton, type: "primaryFilled" }, L))),
+                        (this._renderRightControl = () => a.createElement(r.Z, { style: Q.actionButtonContainer }, a.createElement(d.ZP, { onPress: this._handleRemove, size: "small", style: Q.actionButton, type: "primaryText" }, O), a.createElement(d.ZP, { onPress: this._handleDone, size: "small", style: Q.actionButton, type: "primaryFilled" }, k))),
                         (this._renderGeoPicker = () => {
                             const { history: e, initialFetchStatus: t, lastSearchFetchStatus: i } = this.props,
                                 { activeResultSet: r } = this.state,
@@ -800,7 +798,7 @@
                 j = R(q);
         },
         122421: (e, t, i) => {
-            i.r(t), i.d(t, { Recipients: () => k, default: () => L });
+            i.r(t), i.d(t, { Recipients: () => L, default: () => k });
             var a = i(202784),
                 r = i(325686),
                 n = i(420412),
@@ -839,7 +837,7 @@
                 P = u().caca3102,
                 Z = u().c6a6dc2f,
                 I = { page: "compose", section: "recipients" },
-                k = ({ history: e, inReplyToStatus: t, initialExcludedRecipients: i, recipientIds: c, updateExcludedRecipientsV2: u }) => {
+                L = ({ history: e, inReplyToStatus: t, initialExcludedRecipients: i, recipientIds: c, updateExcludedRecipientsV2: u }) => {
                     const [y, _] = a.useState(i);
                     if (!t) return a.createElement(g.Z, { to: "/compose/post" });
                     const { user: w } = t.retweeted_status || t,
@@ -865,7 +863,7 @@
                         };
                     return a.createElement(f.nO, { namespace: I }, a.createElement(p.Z, { backLocation: "/compose/post", history: e, onBackClick: D, rightControl: a.createElement(l.ZP, { onPress: D, size: "xSmall", type: "brandFilled" }, R), title: T }, B(w.id_str), c.length ? a.createElement(r.Z, null, a.createElement(n.Z, null), a.createElement(o.Z, { rightControl: v(), text: P }), a.createElement(m.Z, { renderUserCell: B, userIds: c })) : null));
                 },
-                L = B(k);
+                k = B(L);
         },
         379069: (e, t, i) => {
             i.r(t), i.d(t, { Compose: () => Ne, default: () => Ge });
@@ -922,8 +920,8 @@
                 P = i(704279),
                 Z = i(346789),
                 I = i(24949),
-                k = i(370751),
-                L = i(71620),
+                L = i(370751),
+                k = i(71620),
                 x = i(646522),
                 M = i(668214),
                 F = i(492057),
@@ -1011,7 +1009,7 @@
                         broadcastCommunityTweet: K,
                         composerData: (0, I.P1)(j, ne, se, N.gz, ae, (e, t, i, a, r) =>
                             e.map((e, n) => {
-                                const o = (0, k.Z)(e.mediaIds || []),
+                                const o = (0, L.Z)(e.mediaIds || []),
                                     s = a.filter((e) => o.has(e.id));
                                 return { ...de(e), media: s, quotedStatus: 0 === n ? i : void 0, text: 0 === n && t && !r ? t : e.text };
                             }),
@@ -1036,7 +1034,7 @@
                         shouldShowCommunityAudienceEducation: _e,
                         title: he,
                     }))
-                    .propsFromActions(() => ({ createDraftTweetApiErrorHandler: (0, L.zr)(U.CA), createScheduledTweetApiErrorHandler: (0, L.zr)(H.Hf), fetchScheduledTweets: H.FP, fetchDraftTweets: U.Le, addCommunityAudienceEducationFlag: () => (0, V.pj)(V.xH), updateAudienceControlsValue: z.sU, setActiveParentKey: z.jr }));
+                    .propsFromActions(() => ({ createDraftTweetApiErrorHandler: (0, k.zr)(U.CA), createScheduledTweetApiErrorHandler: (0, k.zr)(H.Hf), fetchScheduledTweets: H.FP, fetchDraftTweets: U.Le, addCommunityAudienceEducationFlag: () => (0, V.pj)(V.xH), updateAudienceControlsValue: z.sU, setActiveParentKey: z.jr }));
             var Ce = i(837880);
             const Ee = m().e6042757,
                 De = m().a4e39717,
@@ -1052,8 +1050,8 @@
                 Pe = m().a609edbe,
                 Ze = m().d4ebc798,
                 Ie = m().j24c37b2,
-                ke = m().dc295bb0,
-                Le = m().e536de22,
+                Le = m().dc295bb0,
+                ke = m().e536de22,
                 xe = m().cb817dae,
                 Me = "compose",
                 Fe = { page: Me },
@@ -1163,7 +1161,7 @@
                         a.createElement(c.ZP, null, ({ containerWidth: o }) => {
                             const c = A.Z.shouldRenderAsModal(o),
                                 m = (p && c) || this.showCommunityNonMemberPrompt;
-                            return a.createElement(a.Fragment, null, this.showCommunityNonMemberPrompt ? a.createElement(u.Z, { actionLabel: Ie, graphicDisplayMode: "none", headline: ke, onAction: this._handleCloseModal, subtext: Le }) : null, p && a.createElement(E.Z, { history: r, location: s }), m ? null : a.createElement(C.Z, { appBarRef: this._setAppBarRef, documentTitle: Pe, hideBackButton: !1, history: r, onBackClick: this._handleBackClick, renderHeader: this._renderHeaderWithProgressBar, rightControl: this._renderAppBarRightControl(), subtitle: l, title: n ? xe : h }, a.createElement(D.Z, { activeUser: e, composeHeader: t, composeSemanticCoreId: i, containerWidth: o, history: r, isModal: b, location: s, onCloseComposer: this._handleCloseComposer, onHandleAppBarHeight: this._handleAppBarHeight, onRef: this._handleComposeContainerRef, quotedStatus: d, setValidity: this._setValidity })));
+                            return a.createElement(a.Fragment, null, this.showCommunityNonMemberPrompt ? a.createElement(u.Z, { actionLabel: Ie, graphicDisplayMode: "none", headline: Le, onAction: this._handleCloseModal, subtext: ke }) : null, p && a.createElement(E.Z, { history: r, location: s }), m ? null : a.createElement(C.Z, { appBarRef: this._setAppBarRef, documentTitle: Pe, hideBackButton: !1, history: r, onBackClick: this._handleBackClick, renderHeader: this._renderHeaderWithProgressBar, rightControl: this._renderAppBarRightControl(), subtitle: l, title: n ? xe : h }, a.createElement(D.Z, { activeUser: e, composeHeader: t, composeSemanticCoreId: i, containerWidth: o, history: r, isModal: b, location: s, onCloseComposer: this._handleCloseComposer, onHandleAppBarHeight: this._handleAppBarHeight, onRef: this._handleComposeContainerRef, quotedStatus: d, setValidity: this._setValidity })));
                         }),
                     );
                 }
@@ -1309,4 +1307,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Compose.8417c38a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Compose.8861316a.js.map

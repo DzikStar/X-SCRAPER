@@ -123,31 +123,28 @@
                     const e = Ve.length > 0;
                     e !== ue && Ce(e);
                 }, [Ve, ue, Ce]);
-                const at = a.useMemo(() => {
-                        const e = Ve.trim().length > 0,
-                            t = Ke.length > 0,
-                            n = !t || Object.values(Oe).every((e) => e && !e.isUploading);
-                        return (e || t) && n && !je;
-                    }, [Ve, Ke, je, Oe]),
-                    ot = a.useMemo(() => Ke.map((e) => Oe[e]?.remote).filter(Boolean), [Ke, Oe]),
-                    rt = a.useMemo(() => Ke.map((e) => Oe[e]?.local).filter(Boolean), [Ke, Oe]),
-                    lt = a.useCallback(() => {
+                const at = Ke.length > 0,
+                    ot = a.useMemo(() => Object.values(Oe).every((e) => e && !e.isUploading), [Oe]),
+                    rt = a.useMemo(() => (Ve.trim().length > 0 || at) && ot && !je, [Ve, at, ot, je]),
+                    lt = a.useMemo(() => Ke.map((e) => Oe[e]?.remote).filter(Boolean), [Ke, Oe]),
+                    dt = a.useMemo(() => Ke.map((e) => Oe[e]?.local).filter(Boolean), [Ke, Oe]),
+                    it = a.useCallback(() => {
                         Fe.current?.focus(), De(!0);
                     }, [De]),
-                    dt = a.useCallback(() => {
+                    st = a.useCallback(() => {
                         Fe.current?.blur(), De(!1);
                     }, [De]),
-                    it = (0, x.Z)("grok_input"),
-                    st = (function (e, t) {
+                    ct = (0, x.Z)("grok_input"),
+                    ut = (function (e, t) {
                         const n = {};
                         return t && e.length ? { promptMetadata: { promptSource: "IMAGE_EDIT", action: "INPUT", properties: { imageUrl: e[0].url } } } : n;
-                    })(ot, pe),
-                    ct = (0, h.r)(async () => {
+                    })(lt, pe),
+                    mt = (0, h.r)(async () => {
                         try {
                             if (ne)
                                 ne({
                                     text: Ve,
-                                    attachments: ot,
+                                    attachments: lt,
                                     mode: Q,
                                     returnCitations: Re,
                                     onStart: () => {
@@ -159,7 +156,7 @@
                                             tt(""),
                                             Te && (me || pe) && se();
                                     },
-                                    imageGenerationCount: it,
+                                    imageGenerationCount: ct,
                                     isReasoning: ke,
                                     isDeepsearch: we,
                                 });
@@ -173,10 +170,10 @@
                                           (0, E.X)({ analytics: de, conversationKey: t })({
                                               editingMessageId: xe,
                                               text: Ve,
-                                              fileAttachments: ot,
+                                              fileAttachments: lt,
                                               returnCitations: Re,
                                               mode: Q,
-                                              imageGenerationCount: it,
+                                              imageGenerationCount: ct,
                                               onStart: () => {
                                                   $e(!1),
                                                       Ke.forEach((e) => {
@@ -192,11 +189,11 @@
                                       await le(
                                           (0, M.u)({ analytics: de, conversationKey: t })({
                                               text: Ve,
-                                              attachments: ot,
+                                              attachments: lt,
                                               mode: Q,
                                               returnCitations: Re,
                                               isGrokDrawer: Me,
-                                              promptMetadata: st.promptMetadata,
+                                              promptMetadata: ut.promptMetadata,
                                               onStart: () => {
                                                   $e(!1),
                                                       Ke.forEach((e) => {
@@ -205,7 +202,7 @@
                                                       Xe(""),
                                                       Te && (me || pe) && se();
                                               },
-                                              imageGenerationCount: it,
+                                              imageGenerationCount: ct,
                                               isReasoning: ke,
                                               isDeepsearch: we,
                                               isImageGen: me,
@@ -230,46 +227,46 @@
                                     ze(e);
                                 }),
                             setTimeout(() => {
-                                lt();
+                                it();
                             }, 0));
                 }, [Se]);
-                const ut = a.useCallback(
+                const ht = a.useCallback(
                     (e) => {
                         e?.preventDefault(), e?.stopPropagation(), $e(!0);
                     },
                     [$e],
                 );
                 a.useEffect(() => {
-                    !_e || Ue || je || ct();
-                }, [_e, Ue, ct, je]);
-                const mt = a.useCallback(
+                    !_e || Ue || je || mt();
+                }, [_e, Ue, mt, je]);
+                const pt = a.useCallback(
                         (0, m.Z)(() => {
                             le((0, D.I)({ analytics: de, conversationKey: t })), e && e.abort(), (0, I.DE)(de);
                         }, 50),
                         [qe, e],
                     ),
-                    ht = a.useCallback(
+                    bt = a.useCallback(
                         (e) => {
                             Be && (We(e[0]), (0, I.dP)(de, "clipboard"));
                         },
                         [We, de, Be],
                     ),
-                    pt = a.useCallback(
+                    ft = a.useCallback(
                         (e) => {
-                            ge || "Enter" !== e.key || e.shiftKey || (e.preventDefault(), at && ut());
+                            ge || "Enter" !== e.key || e.shiftKey || (e.preventDefault(), rt && ht());
                         },
-                        [ge, at, ut],
+                        [ge, rt, ht],
                     ),
-                    bt = a.useCallback(
+                    gt = a.useCallback(
                         (e) => {
                             "Backspace" === e.key && 0 === Ve.length && (me || pe) && se();
                         },
                         [se, me, pe, Ve.length],
                     ),
-                    ft = a.useCallback(() => {
-                        lt();
-                    }, [lt]),
-                    gt = a.useMemo(() => {
+                    yt = a.useCallback(() => {
+                        it();
+                    }, [it]),
+                    kt = a.useMemo(() => {
                         if (0 !== Ke.length)
                             return a.createElement(
                                 r.Z,
@@ -280,28 +277,28 @@
                                         ? a.createElement(B.L, {
                                               key: `attachment_${e}`,
                                               onRemove: () => {
-                                                  pe && 1 === Ke.length && se(), Ne(e), ft();
+                                                  pe && 1 === Ke.length && se(), Ne(e), yt();
                                               },
                                               selectedFile: n,
                                           })
                                         : a.createElement(B.L, {
                                               key: `attachment_${e}`,
                                               onRemove: () => {
-                                                  Ne(e), ft();
+                                                  Ne(e), yt();
                                               },
                                               selectedFile: n,
                                           });
                                 }),
                             );
-                    }, [Oe, Ke, Ne, ft, pe, se]),
-                    yt = !Le,
-                    kt = u && (!ye || !_e) && !je,
-                    wt = { color: Ve ? d.default.theme.colors.brandColor : d.default.theme.colors.gray700 };
+                    }, [Oe, Ke, Ne, yt, pe, se]),
+                    wt = !Le,
+                    Dt = u && (!ye || !_e) && !je,
+                    Ct = { color: Ve ? d.default.theme.colors.brandColor : d.default.theme.colors.gray700 };
                 a.useEffect(() => {
-                    kt || dt();
-                }, [kt, dt]);
-                const Dt = a.useMemo(() => a.createElement(W.Z, { fadeIn: He.current, isInProgress: !J, isInputCompact: be, isLoading: _e || je, isSendEnabled: at, onSend: ut, onStop: mt, useMagicWandIcon: oe }), [J, _e, je, at, ut, mt, oe, be]),
-                    Ct = a.useMemo(
+                    Dt || st();
+                }, [Dt, st]);
+                const Et = a.useMemo(() => a.createElement(W.Z, { fadeIn: He.current, isInProgress: !J, isInputCompact: be, isLoading: _e || je, isSendEnabled: rt, onSend: ht, onStop: pt, useMagicWandIcon: oe }), [J, _e, je, rt, ht, pt, oe, be]),
+                    Mt = a.useMemo(
                         () =>
                             a.createElement(
                                 r.Z,
@@ -309,7 +306,7 @@
                                 a.createElement(
                                     r.Z,
                                     { style: Me || be ? X.contentBelowLeftCompact : X.contentBelowLeft },
-                                    yt &&
+                                    wt &&
                                         a.createElement(
                                             a.Fragment,
                                             null,
@@ -326,18 +323,18 @@
                                             }),
                                         ),
                                 ),
-                                a.createElement(r.Z, { style: Me || be ? X.contentBelowRightCompact : X.contentBelowRight }, Pe && a.createElement(N.t, { conversationKey: t, disabled: q, fadeIn: He.current, focused: fe, inputAtBottom: V, inputAtHome: Y }), !1, be && !Me ? (0 === Ve.length && J ? a.createElement(P.Z, { fadeIn: He.current, isInputCompact: be }) : Dt) : a.createElement(a.Fragment, null, a.createElement(P.Z, { fadeIn: He.current, isInputCompact: be }), Dt)),
+                                a.createElement(r.Z, { style: Me || be ? X.contentBelowRightCompact : X.contentBelowRight }, Pe && a.createElement(N.t, { conversationKey: t, disabled: q, fadeIn: He.current, focused: fe, inputAtBottom: V, inputAtHome: Y }), !1, be && !Me ? (0 === Ve.length && J && !at ? a.createElement(P.Z, { fadeIn: He.current, isInputCompact: be }) : Et) : a.createElement(a.Fragment, null, a.createElement(P.Z, { fadeIn: He.current, isInputCompact: be }), Et)),
                             ),
-                        [Me, be, yt, !0, he, fe, ce.length, Je, Pe, t, q, V, Y, Ve, Dt, J],
+                        [Me, be, wt, !0, he, fe, ce.length, Je, Pe, t, q, V, Y, Ve, Et, J, at],
                     );
                 return (
                     a.useEffect(() => {
-                        rt.length > 0 && lt();
-                    }, [lt, rt]),
+                        dt.length > 0 && it();
+                    }, [it, dt]),
                     a.useEffect(() => {
                         if ((Ie.text.length > 0 && Xe(Ie.text), Ie.attachments.length > 0)) for (const e of Ie.attachments) ze(e);
-                        Ie.modeButtonFilterKey && (Ee(Ie.modeButtonFilterKey), ft()), (Ie.text.length > 0 || Ie.attachments.length > 0 || Ie.modeButtonFilterKey) && le((0, w.Uo)(t, { text: "", attachments: [] }));
-                    }, [Ie, t, le, ze, ft, Ee]),
+                        Ie.modeButtonFilterKey && (Ee(Ie.modeButtonFilterKey), yt()), (Ie.text.length > 0 || Ie.attachments.length > 0 || Ie.modeButtonFilterKey) && le((0, w.Uo)(t, { text: "", attachments: [] }));
+                    }, [Ie, t, le, ze, yt, Ee]),
                     re
                         ? a.createElement(
                               r.Z,
@@ -352,22 +349,22 @@
                                       Te && a.createElement(_.Z, null),
                                       a.createElement(s.Z, {
                                           autoFocus: !ye,
-                                          contentAbove: gt,
+                                          contentAbove: kt,
                                           editable: u && (!ye || !_e) && !je,
-                                          inputStyle: [X.inputStyle, wt],
+                                          inputStyle: [X.inputStyle, Ct],
                                           leftAligned: !0,
                                           leftContent: n ? void 0 : a.createElement($.Z, { disabled: he, isInputCompact: be, label: U }),
                                           maxNumberOfLines: 15,
                                           multiline: !0,
                                           numberOfLines: 1,
                                           onChange: nt,
-                                          onFilesAdded: ht,
-                                          onKeyPress: pt,
+                                          onFilesAdded: bt,
+                                          onKeyPress: ft,
                                           placeholder: te,
                                           ref: (e) => {
                                               (Fe.current = e), e && ee?.(e);
                                           },
-                                          rightContent: Dt,
+                                          rightContent: Et,
                                           style: X.deprecatedInputContainer,
                                           styleType: "selection",
                                           value: Ve,
@@ -377,7 +374,7 @@
                           )
                         : a.createElement(
                               r.Z,
-                              { onClick: ft, style: X.container },
+                              { onClick: yt, style: X.container },
                               a.createElement(
                                   Z.P,
                                   { direction: i.Z.getTextDirection(Ve) },
@@ -388,20 +385,20 @@
                                       Te && a.createElement(_.Z, null),
                                       a.createElement(s.Z, {
                                           autoFocus: !ye,
-                                          contentAbove: gt,
-                                          contentBelow: Ct,
-                                          editable: kt,
-                                          inputStyle: [X.inputStyle, wt],
+                                          contentAbove: kt,
+                                          contentBelow: Mt,
+                                          editable: Dt,
+                                          inputStyle: [X.inputStyle, Ct],
                                           leftAligned: !0,
                                           maxNumberOfLines: 15,
                                           multiline: !0,
                                           numberOfLines: 1,
                                           onBlur: () => De(!1),
                                           onChange: nt,
-                                          onFilesAdded: ht,
+                                          onFilesAdded: bt,
                                           onFocus: () => De(!0),
-                                          onKeyDown: bt,
-                                          onKeyPress: pt,
+                                          onKeyDown: gt,
+                                          onKeyPress: ft,
                                           placeholder: te,
                                           ref: (e) => {
                                               (Fe.current = e), e && ee?.(e);
@@ -1069,4 +1066,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-78699f4a.8787113a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-78699f4a.8085e9ca.js.map

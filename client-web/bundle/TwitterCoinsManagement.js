@@ -471,8 +471,8 @@
                 B = t.n(Z);
             const v = Object.freeze({ Beta: "Beta", Live: "Live", Sandbox: "Sandbox", Test: "Test" });
             var x = t(980407),
-                S = t(879101),
-                P = t(443781),
+                P = t(879101),
+                S = t(443781),
                 L = t(301410),
                 F = t(782642),
                 D = t(97882),
@@ -483,8 +483,8 @@
                 A = t(668214),
                 W = t(390387);
             const N = (0, A.Z)().propsFromState(() => ({ currentCountry: W.GG }));
-            var z = t(264226),
-                O =
+            var O = t(264226),
+                H =
                     (t(571372),
                     (function () {
                         var e = [
@@ -515,11 +515,11 @@
                             ];
                         return { fragment: { argumentDefinitions: e, kind: "Fragment", metadata: null, name: "useCoinPurchaseSessionUrlMutation", selections: a, type: "Mutation", abstractKey: null }, kind: "Request", operation: { argumentDefinitions: e, kind: "Operation", name: "useCoinPurchaseSessionUrlMutation", selections: a }, params: { id: "QP5WVTrpvWikhlKybPX5jQ", metadata: {}, name: "useCoinPurchaseSessionUrlMutation", operationKind: "mutation", text: null } };
                     })());
-            O.hash = "7daebd17bb1245b0e462caffc307fe76";
-            const H = O;
-            var V = t(351743),
-                q = t.n(V);
-            const U = H,
+            H.hash = "7daebd17bb1245b0e462caffc307fe76";
+            const V = H;
+            var z = t(351743),
+                q = t.n(z);
+            const U = V,
                 G = ({ cancelUrl: e, successUrl: a }) => {
                     const [t, n] = q()(U);
                     return [
@@ -554,7 +554,7 @@
                 re = p,
                 le = (0, L.z)(re, { errorConfig: { context: "TWITTER_COINS_MANAGEMENT_CONTEXT" } }),
                 ie = (e) => {
-                    const { featureSwitches: a } = m.useContext(P.rC),
+                    const { featureSwitches: a } = m.useContext(S.rC),
                         { currentCountry: t, history: n } = e,
                         r = (0, K.z)(),
                         [l, i] = m.useState(""),
@@ -567,7 +567,7 @@
                         Z = m.useCallback(() => {
                             r.scribe({ element: "twitter_coins", component: "dismiss_button", action: "click" }), n.goBack();
                         }, [r, n]),
-                        B = m.useCallback((e) => m.createElement(y.Z, { style: oe.header }, m.createElement(h.ZP, { size: "title4", weight: "bold" }, Q), m.createElement(z.ZP, { coinBalance: e })), []),
+                        B = m.useCallback((e) => m.createElement(y.Z, { style: oe.header }, m.createElement(h.ZP, { size: "title4", weight: "bold" }, Q), m.createElement(O.ZP, { coinBalance: e })), []),
                         L = m.useCallback(() => {
                             s(!0),
                                 g(l)
@@ -580,7 +580,7 @@
                             (e) => {
                                 const a = o || T,
                                     t = !l || e || a;
-                                return m.createElement(y.Z, { style: oe.footer }, m.createElement(S.Z, { style: oe.disclaimer }), m.createElement(k.ZP, { disabled: t, onPress: L, type: "primaryFilled" }, a ? m.createElement(f.Z, null) : te));
+                                return m.createElement(y.Z, { style: oe.footer }, m.createElement(P.Z, { style: oe.disclaimer }), m.createElement(k.ZP, { disabled: t, onPress: L, type: "primaryFilled" }, a ? m.createElement(f.Z, null) : te));
                             },
                             [l, L, T, o],
                         ),
@@ -591,7 +591,7 @@
                             [i],
                         ),
                         N = m.useCallback((e) => ({ uri: e }), []),
-                        O = m.useCallback(
+                        H = m.useCallback(
                             ({ data: e, fetchStatus: a, retry: t }) => {
                                 if (a === M.ZP.FAILED) return m.createElement(C.Z, { onRequestRetry: t, retryMessage: Y });
                                 const n = (e?.viewer_v2?.in_app_purchase_products_slice.items || []).map(({ external_identifier: e, external_product: a, metadata: { bonus_coin_value: t, coin_value: n, label_keys: r, thumbnail_url: l } }) => {
@@ -605,19 +605,19 @@
                             },
                             [N, l, W],
                         ),
-                        H = m.useCallback(
+                        V = m.useCallback(
                             ({ data: e, fetchStatus: a, retry: t }) => {
                                 if (a === M.ZP.FAILED) return m.createElement(C.Z, { onRequestRetry: t, retryMessage: Y });
                                 if (a === M.ZP.LOADED) {
                                     const a = e?.viewer_v2?.account_balance.amount || 0,
                                         t = !!e?.viewer_v2?.account_balance.at_limit;
-                                    return m.createElement(x.Z, { backButtonType: "close", bottomBar: A(t), history: n, onBackClick: Z, secondaryBar: B(a) }, m.createElement(y.Z, { style: oe.root }, m.createElement(h.ZP, { color: "gray700", size: "body", style: oe.subtext }, X), t ? m.createElement(E.Z.Attention, { text: ee, withIcon: !0 }) : m.createElement(le, { render: O, variables: u })));
+                                    return m.createElement(x.Z, { backButtonType: "close", bottomBar: A(t), history: n, onBackClick: Z, secondaryBar: B(a) }, m.createElement(y.Z, { style: oe.root }, m.createElement(h.ZP, { color: "gray700", size: "body", style: oe.subtext }, X), t ? m.createElement(E.Z.Attention, { text: ee, withIcon: !0 }) : m.createElement(le, { render: H, variables: u })));
                                 }
                                 return null;
                             },
-                            [A, u, B, O, Z, n],
+                            [A, u, B, H, Z, n],
                         );
-                    return m.createElement(I.nO, { namespace: ne }, m.createElement(z.XB, { render: H, variables: b() }));
+                    return m.createElement(I.nO, { namespace: ne }, m.createElement(O.XB, { render: V, variables: b() }));
                 },
                 oe = T.default.create((e) => ({ root: { marginHorizontal: e.spaces.space32, marginVertical: e.spaces.space8 }, header: { flexDirection: "row", justifyContent: "space-between", marginHorizontal: e.spaces.space32, marginTop: e.spaces.space16, marginBottom: e.spaces.space8 }, subtext: { marginBottom: e.spaces.space16 }, footer: { marginHorizontal: e.spaces.space32, marginVertical: e.spaces.space16 }, disclaimer: { marginBottom: e.spaces.space8, marginHorizontal: "auto", maxWidth: "500px", textAlign: "center" }, image: { height: e.spaces.space40, width: e.spaces.space40 }, iconTwitter: { color: e.colors.primary } })),
                 se = N(ie);
@@ -637,7 +637,7 @@
                 m = t(392237);
             const g = m.default.create((e) => ({ backgroundGrey: { backgroundColor: e.colors.gray100 }, backgroundDefault: { backgroundColor: e.colors.cellBackground }, root: { overflow: "hidden", flexDirection: "row", justifyContent: "space-between", gap: e.spaces.space16, flexGrow: 1, borderColor: e.colors.transparent, borderWidth: e.borderWidths.medium }, alignCenter: { alignItems: "center" }, padding16: { padding: e.spaces.space16 }, padding8: { paddingHorizontal: e.spaces.space8, paddingVertical: e.spaces.space4 }, boxShadow: { boxShadow: e.boxShadows.medium }, withMarginTop: { marginTop: e.spaces.space20 }, borderRadiusLarge: { borderRadius: e.borderRadii.large }, borderRadiusInfinite: { borderRadius: e.borderRadii.infinite }, checked: { borderColor: e.colors.primary }, interactive: { cursor: "pointer" }, withMarginEnd: { marginEnd: e.spaces.space20 }, grow: { flexGrow: 1 }, iconContainer: { alignSelf: "flex-start", flexDirection: "column", justifyContent: "center", width: e.spaces.space40, height: e.spaces.space40 }, labelContainer: { flexDirection: "column", justifyContent: "center", flex: 1 }, inlineCalloutContainer: { marginTop: e.spaces.space8 }, description: { marginTop: e.spaces.space4 }, descriptionWithPill: { marginTop: e.spaces.space2 }, endContentContainer: { justifyContent: "center", flexDirection: "column" }, row: { flexDirection: "row", alignItems: "center" }, marginTop4: { marginTop: e.spaces.space4 }, marginBottom8: { marginBottom: e.spaces.space8 }, info: { flexDirection: "row", justifyContent: "space-between", marginBottom: e.spaces.space8 }, infoIcon: { fontSize: ".74em", color: e.colors.gray700 }, backgroundTransparent: { backgroundColor: e.colors.transparent }, pill: { marginBottom: e.spaces.space4 }, inlinePill: { marginStart: e.spaces.space4 } })),
                 b = { ...m.default.absoluteFillObject, cursor: "inherit", height: "100%", margin: 0, opacity: 0, padding: 0, width: "100%" },
-                y = ({ "aria-label": e, "aria-posinset": a, "aria-setsize": t, checked: n, dedicatedPillRow: l, description: m, disabled: y, disabledInlineCallout: h, endContent: k, horizontal: f, illustration: C, infoLabel: _, infoLabelType: w, inlineCallout: E, label: T, name: Z, onChange: B, pillText: v, pillType: x, reverseLabels: S, secondaryContent: P, secondaryDescription: L, switchStyle: F, testID: D }) => {
+                y = ({ "aria-label": e, "aria-posinset": a, "aria-setsize": t, checked: n, dedicatedPillRow: l, description: m, disabled: y, disabledInlineCallout: h, endContent: k, horizontal: f, illustration: C, infoLabel: _, infoLabelType: w, inlineCallout: E, label: T, name: Z, onChange: B, pillText: v, pillType: x, reverseLabels: P, secondaryContent: S, secondaryDescription: L, switchStyle: F, testID: D }) => {
                     const R = (0, p.b)(),
                         I = (0, p.b)(),
                         K = (0, p.b)(),
@@ -645,29 +645,16 @@
                         A = !!m && r.createElement(c.ZP, { color: "gray700", id: I, size: "subtext1", style: v ? g.descriptionWithPill : g.description, testID: "description-label" }, m),
                         W = r.createElement(c.ZP, { color: "gray700", role: "label", size: "subtext2", style: g.description }, L),
                         N = v ? r.createElement(d.ZP, { style: l ? g.pill : g.inlinePill, type: x }, v) : null,
-                        z = r.createElement(r.Fragment, null, l ? N : null, r.createElement(i.Z, { style: [g.row, _ && g.marginBottom8] }, S ? A : M, l ? null : N), r.createElement(i.Z, { style: [g.row, S && g.marginTop4] }, S ? M : A), P || (L ? W : void 0)),
-                        O = F ? "unset" : (t ? 100 / t : 100) + "%",
-                        H = F ? [g.padding8, g.borderRadiusInfinite, n ? g.backgroundDefault : g.backgroundTransparent] : [g.padding16, g.boxShadow, g.borderRadiusLarge, n ? g.checked : null, g.backgroundDefault];
-                    return r.createElement(r.Fragment, null, r.createElement(u.Z, { disabled: y, style: [g.root, ...H, f ? { maxWidth: O, ...g.grow } : null, 1 === a || f ? null : g.withMarginTop, a !== t && f && !F && g.withMarginEnd, !y && g.interactive], testID: D, withInteractiveStyling: !F }, !!C && r.createElement(i.Z, { style: g.iconContainer, testID: "illustration" }, C), r.createElement(i.Z, { style: [g.labelContainer, F && g.alignCenter] }, !!_ && r.createElement(i.Z, { style: g.info }, r.createElement(d.ZP, { background: "green" === w ? "green500" : "red" === w ? "magenta500" : "yellow" === w ? "orange50" : "gray500" }, r.createElement(c.ZP, { color: "yellow" === w ? "orange900" : "whiteOnColor", size: "subtext3", weight: "bold" }, _)), "red" !== w && "yellow" !== w && r.createElement(o.default, { style: g.infoIcon, testID: "infoIcon" })), z, n && !!E && r.createElement(i.Z, { style: g.inlineCalloutContainer, testID: "inlineCallout" }, E)), !!k && r.createElement(i.Z, { style: g.endContentContainer, testID: "endContent" }, r.createElement(c.ZP, { id: K, size: "subtext1", weight: "bold" }, k)), r.createElement("input", { "aria-describedby": `${I} ${K}`, "aria-label": e, "aria-labelledby": R, "aria-posinset": a, "aria-setsize": t, checked: n, disabled: y, name: Z, onChange: n ? s.Z : B, style: b, type: "radio" })), y && h ? h : null);
+                        O = r.createElement(r.Fragment, null, l ? N : null, r.createElement(i.Z, { style: [g.row, _ && g.marginBottom8] }, P ? A : M, l ? null : N), r.createElement(i.Z, { style: [g.row, P && g.marginTop4] }, P ? M : A), S || (L ? W : void 0)),
+                        H = F ? "unset" : (t ? 100 / t : 100) + "%",
+                        V = F ? [g.padding8, g.borderRadiusInfinite, n ? g.backgroundDefault : g.backgroundTransparent] : [g.padding16, g.boxShadow, g.borderRadiusLarge, n ? g.checked : null, g.backgroundDefault];
+                    return r.createElement(r.Fragment, null, r.createElement(u.Z, { disabled: y, style: [g.root, ...V, f ? { maxWidth: H, ...g.grow } : null, 1 === a || f ? null : g.withMarginTop, a !== t && f && !F && g.withMarginEnd, !y && g.interactive], testID: D, withInteractiveStyling: !F }, !!C && r.createElement(i.Z, { style: g.iconContainer, testID: "illustration" }, C), r.createElement(i.Z, { style: [g.labelContainer, F && g.alignCenter] }, !!_ && r.createElement(i.Z, { style: g.info }, r.createElement(d.ZP, { background: "green" === w ? "green500" : "red" === w ? "magenta500" : "yellow" === w ? "orange50" : "gray500" }, r.createElement(c.ZP, { color: "yellow" === w ? "orange900" : "whiteOnColor", size: "subtext3", weight: "bold" }, _)), "red" !== w && "yellow" !== w && r.createElement(o.default, { style: g.infoIcon, testID: "infoIcon" })), O, n && !!E && r.createElement(i.Z, { style: g.inlineCalloutContainer, testID: "inlineCallout" }, E)), !!k && r.createElement(i.Z, { style: g.endContentContainer, testID: "endContent" }, r.createElement(c.ZP, { id: K, size: "subtext1", weight: "bold" }, k)), r.createElement("input", { "aria-describedby": `${I} ${K}`, "aria-label": e, "aria-labelledby": R, "aria-posinset": a, "aria-setsize": t, checked: n, disabled: y, name: Z, onChange: n ? s.Z : B, style: b, type: "radio" })), y && h ? h : null);
                 },
                 h = (e) => {
                     const a = r.useCallback(({ value: e, ...a }) => r.createElement(y, (0, n.Z)({}, a, { key: e })), []);
                     return r.createElement(l.Z, (0, n.Z)({}, e, { renderSelector: a }));
                 };
         },
-        41065: (e, a, t) => {
-            t.r(a), t.d(a, { default: () => s });
-            var n = t(202784),
-                r = t(890601),
-                l = t(783427),
-                i = t(347101);
-            const o = (e = {}) => {
-                const { direction: a } = (0, l.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M6.866 18H.846l.075-1.069C1.33 11.083 4.335 9 7.011 9c1.457 0 2.734.576 3.743 1.615-.515.378-1.003.826-1.45 1.355-.562-.569-1.305-.97-2.293-.97-2.074 0-3.522 1.847-3.981 5h4.225c-.169.616-.295 1.288-.389 2zM4 5c0-1.654 1.343-3 3-3s3 1.346 3 3-1.343 3-3 3-3-1.346-3-3zm2 0c0 .551.448 1 1 1s1-.449 1-1-.448-1-1-1-1 .449-1 1zm9.5 5c-.778 0-1.49-.263-2.071-.693C12.566 8.669 12 7.653 12 6.5 12 4.57 13.567 3 15.5 3S19 4.57 19 6.5c0 1.111-.53 2.092-1.34 2.733-.596.472-1.341.767-2.16.767zM14 6.5c0 .827.673 1.5 1.5 1.5S17 7.327 17 6.5 16.327 5 15.5 5 14 5.673 14 6.5zm1.5 4.496c3.264 0 6.816 2.358 7 8.977L22.529 21H8.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977zm0 2c-2.767 0-4.57 2.223-4.938 6.004h9.875c-.367-3.781-2.17-6.004-4.938-6.004z" })) }, { writingDirection: a });
-            };
-            o.metadata = { width: 24, height: 24 };
-            const s = o;
-        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterCoinsManagement.ddd406da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterCoinsManagement.85a7f6fa.js.map

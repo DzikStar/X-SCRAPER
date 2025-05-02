@@ -601,7 +601,7 @@
                 t("e0cb0c72", "Annoncer"),
                 t("e2eef3c2", "Verificerede org."),
                 t("b55d8a78", "Opret dit Rum"),
-                t("e5323e36", "Go Live"),
+                t("e5323e36", "Gå på direkte"),
                 t("a5a30af0", "Artikler"),
                 t("d13d697c", "Nye"),
                 t("j0e2cfa8", "Erhverv"),
@@ -2960,10 +2960,15 @@
                 t("d83f18d2", "Oversigt"),
                 t("hc5aa17c", "Hent X-appen"),
                 t("j0693948", "Hent Grok-appen"),
-                t("fbf83158", "Advarsel: Betalingen mislykkedes"),
-                t("jadeb4da", "Opdater snarest muligt din betalingsmetode, før du mister dine abonnementsfordele.");
-            t("bce3726a", "Opdater fakturering"),
+                t("af781666", "What do people think?"),
+                t("ad35153e", "beta");
+            t("fbf83158", "Advarsel: Betalingen mislykkedes"),
+                t("jadeb4da", "Opdater snarest muligt din betalingsmetode, før du mister dine abonnementsfordele."),
+                t("bce3726a", "Opdater fakturering"),
                 t("fce9ecce", "Foreslåede videoer"),
+                t("dc954b88", "Try the full news experience"),
+                t("j66b95a2", "In-Depth News"),
+                t("b58d2bd2", "Relevante posts"),
                 t("efe6ef9e", "Vis post"),
                 t("b3d183ce", "Post med svar"),
                 t("c299a6c0", "Tråd"),
@@ -3872,15 +3877,15 @@
                 t("b90eb348", "Inviter til at tale"),
                 t("d9a63e82", "Fjern fra talere"),
                 t("bd917b26", "Inviter som medvært"),
-                t("d7357e7e", "Fjern fra medværter"),
-                t("bf307fc0", "Bloker og fjern"),
+                t("d7357e7e", "Fjern fra medværter");
+            t("bf307fc0", "Bloker og fjern"),
                 t("ccf2f24e", "Indberetning"),
                 t("i22835de", "Godkend"),
                 t("cb59a0fe", "Afvis"),
-                t("c2376960", "Anmoder om at tale");
-            t("aba7dcdd", function (e) {
-                return "Inviter " + e.name;
-            }),
+                t("c2376960", "Anmoder om at tale"),
+                t("aba7dcdd", function (e) {
+                    return "Inviter " + e.name;
+                }),
                 t("f5c7aaa7", function (e) {
                     return "vært" + i(e.count, "", "er");
                 }),
@@ -4312,7 +4317,6 @@
                 t("aa7c96bb", function (e) {
                     return "Se " + e.numResults + " mere";
                 }),
-                t("b58d2bd2", "Relevante posts"),
                 t("f5a2377e", "Tænker i "),
                 t("g3ce0132", "Tænkte i"),
                 t("f8007364", "Udvid for detaljer"),
@@ -4334,7 +4338,7 @@
                 t("e02694e0", "Svar 2"),
                 t("h6867fcc", "Jeg foretrækker dette svar"),
                 t("d07488a6", "Get the Android app"),
-                t("d9cfe70c", "Access advanced Grok features"),
+                t("d9cfe70c", "Få adgang til avancerede Grok-funktioner"),
                 t("hf9afab0", "Gør det muligt for DeepSearch at scanne internettet og X, analysere oplysninger og levere detaljerede, velbegrundede svar med hurtig, agentbaseret søgning."),
                 t("ef3b3f04", 'Gør det muligt for Tænk at bruge vores ræsonneringsmodel. Det er bedst til matematik, videnskab og kodning. Du kan også bede Grok om at "tænke dybere" i forbindelse med spørgsmål, der kræver lidt mere hjernekraft. '),
                 t("b43636b8", "Vi introducerer Grok 3"),
@@ -4905,12 +4909,12 @@
                 t("j8ee77c4", '"ai startup"'),
                 t("d0480758", 'indeholder enten "ai" eller "startup" (eller begge dele)'),
                 t("f0048fa2", "ai OR startup"),
-                t("da0df186", 'indeholder "ai", men ikke "startup"'),
-                t("f2f463ea", "ai -startup"),
+                t("da0df186", 'indeholder "ai", men ikke "startup"');
+            t("f2f463ea", "ai -startup"),
                 t("a10a357e", 'indeholder "ai" og har mindst 50 likes'),
                 t("ca8ed1e8", "ai min_faves:50"),
-                t("i945a3f2", 'indeholder "ai" og en URL med ordet "grok"');
-            t("a9348088", "ai url:grok"),
+                t("i945a3f2", 'indeholder "ai" og en URL med ordet "grok"'),
+                t("a9348088", "ai url:grok"),
                 t("b5c3cdbc", 'omtaler X-kontoen "grok"'),
                 t("e2634592", "@grok"),
                 t("i88ba038", "Underretning deaktiveret"),
@@ -5871,12 +5875,12 @@
                 t("e50e1bb0", "Velkommen til Fællesskaber"),
                 t("i6829daa", "Fællesskaber er modererede diskussionsgrupper, hvor folk på X kan komme i kontakt og dele."),
                 t("fc5c6914", "Mød andre med dine interesser"),
-                t("aa1a9820", "Deltag i Fællesskaber for at få kontakt med folk, som deler dine interesser."),
-                t("edef4c82", "Post direkte til et Fællesskab"),
+                t("aa1a9820", "Deltag i Fællesskaber for at få kontakt med folk, som deler dine interesser.");
+            t("edef4c82", "Post direkte til et Fællesskab"),
                 t("a7640df6", "Dine posts deles med medlemmer af Fællesskabet og dine følgere."),
                 t("h3bb8068", "Få hjælp, når du har brug for det"),
-                t("a709f8f8", "Administratorer og moderatorer hjælper med at administrere Fællesskaber og holder samtalen på sporet.");
-            t("c8d33380", "Nye elementer"),
+                t("a709f8f8", "Administratorer og moderatorer hjælper med at administrere Fællesskaber og holder samtalen på sporet."),
+                t("c8d33380", "Nye elementer"),
                 t("cb6adb10", "Opdag Fællesskaber"),
                 t("df362964", "Find Fællesskaber"),
                 t("dfd5031f", function (e) {
@@ -6428,6 +6432,7 @@
                 t("f7d1a8e0", "Android-app"),
                 t("aab2fae0", "iOS-app"),
                 t("a35d9c9a", "Ressourcer"),
+                t("ic61c5fc", "Rul til toppen"),
                 t("i6671128", "Du har låst op for mere på X"),
                 t("d5e4d0a6", "Du kan deltage i samtalen og nemmere komme i kontakt med andre. Nu kan du gøre følgende:"),
                 t("a97bc07e", "Lås op for mere på X"),
@@ -6868,13 +6873,13 @@
                 t("fa006202", "Afspilning af video i baggrunden"),
                 t("jf389778", "Se med, mens du browser eller bruger andre apps"),
                 t("f2977d80", "Bogmærkemapper"),
-                t("j1d3d910", "Organisér dine gemte posts, så du nemt kan finde dem"),
-                t("f0f48668", "Premium-support"),
+                t("j1d3d910", "Organisér dine gemte posts, så du nemt kan finde dem");
+            t("f0f48668", "Premium-support"),
                 t("c3148608", "Få hurtigere hjælp, når du har brug for det"),
                 t("b485ca6e", "Fanen Højdepunkter"),
                 t("d438955e", "Vis dine bedste posts frem"),
-                t("f373a352", "Krypterede direkte beskeder");
-            t("g7405aca", "Chat sikkert med end-to-end-kryptering"),
+                t("f373a352", "Krypterede direkte beskeder"),
+                t("g7405aca", "Chat sikkert med end-to-end-kryptering"),
                 t("j659fa0c", "Det bedste fra Grok 3"),
                 t("ibff5694", "Lås op for de højeste brugsgrænser, DeepSearch og Tænk, plus tidlig adgang til nye funktioner"),
                 t("i824f4da", "Færre annoncer"),
@@ -7844,16 +7849,7 @@
                 t("ff0edac0", "Er du sikker på, at du vil annullere dit abonnement?"),
                 t("h2ac0348", "Nej, gå tilbage"),
                 t("dbf9667e", "Jeg er sikker"),
-                t("j7592572", "U-vending"),
-                t("ee778942", "Trafiklys"),
-                t("fdd57981", function (e) {
-                    return "Vi vil gerne tilbyde dig en gratis engangsannoncekredit på " + e.totalAmount + " USD.";
-                }),
-                t("i032a231", function (e) {
-                    return "Jeg bliver og gør brug af annoncekreditten på " + e.totalAmount;
-                }),
-                t("hd7d278c", "Nej tak"),
-                t("jf8a0dea", "Super! Din nye gratis annoncekredit vil blive vist på din konto i den næste faktureringsperiode.");
+                t("j7592572", "U-vending");
             function d(e, r) {
                 for (var n = 0; n < r.length; n++) {
                     var t = r[n];
@@ -7892,7 +7888,16 @@
                     a(e, r)
                 );
             }
-            t("ebbb3154", "Luk og vend tilbage til X"),
+            t("ee778942", "Trafiklys"),
+                t("fdd57981", function (e) {
+                    return "Vi vil gerne tilbyde dig en gratis engangsannoncekredit på " + e.totalAmount + " USD.";
+                }),
+                t("i032a231", function (e) {
+                    return "Jeg bliver og gør brug af annoncekreditten på " + e.totalAmount;
+                }),
+                t("hd7d278c", "Nej tak"),
+                t("jf8a0dea", "Super! Din nye gratis annoncekredit vil blive vist på din konto i den næste faktureringsperiode."),
+                t("ebbb3154", "Luk og vend tilbage til X"),
                 t("j1f68dda", "Sidste trin: Er du sikker på, at du vil opsige?"),
                 t("c9c3464c", "Annullering af abonnement i gang"),
                 t("dd3a293c", "Dit abonnement på Verificerede organisationer er ophørt."),
@@ -8399,7 +8404,6 @@
                 t("h9659832", "Se dine post-udkast."),
                 t("f1b6535e", "Post-udkast"),
                 t("a24add8a", "Se bogmærkede posts."),
-                t("ic61c5fc", "Rul til toppen"),
                 t("gb19f215", function (e) {
                     return "Kolonne - " + e.title;
                 }),
@@ -8915,10 +8919,10 @@
                 }),
                 t("d0e7b11b", function (e) {
                     return e.date + " kl. " + e.time;
-                }),
-                t("b4349cbc", function (e) {
-                    return "" + e.relativeDay;
-                }),
+                });
+            t("b4349cbc", function (e) {
+                return "" + e.relativeDay;
+            }),
                 t("ebe41367", function (e) {
                     return "Tid " + e.time;
                 }),
@@ -8927,10 +8931,10 @@
                 }),
                 t("d925a4f9", function (e) {
                     return e.formattedCount + " minut" + i(e.count, "", "ter") + " tilbage";
-                });
-            t("ib15cddb", function (e) {
-                return e.formattedCount + " time" + i(e.count, "", "r") + " tilbage";
-            }),
+                }),
+                t("ib15cddb", function (e) {
+                    return e.formattedCount + " time" + i(e.count, "", "r") + " tilbage";
+                }),
                 t("db9ed19f", function (e) {
                     return e.formattedCount + " dag" + i(e.count, "", "e") + " tilbage";
                 }),
@@ -13185,4 +13189,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/da.f8c9971a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/da.40a335da.js.map

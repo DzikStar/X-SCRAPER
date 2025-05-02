@@ -8,20 +8,19 @@
             const o = (0, a(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        a.e("icons.0"),
-                        a.e("icons.13"),
-                        a.e("icons.22"),
-                        a.e("icons.29"),
-                        a.e("icons.5"),
-                        a.e("icons.15"),
-                        a.e("icons.7"),
-                        a.e("icons.1"),
-                        a.e("icons.20"),
-                        a.e("icons.11"),
+                        a.e("icons.23"),
+                        a.e("icons.16"),
+                        a.e("icons.2"),
+                        a.e("icons.10"),
+                        a.e("icons.19"),
+                        a.e("icons.24"),
                         a.e("modules.common-e907d115"),
                         a.e("modules.common-e019dbda"),
-                        a.e("icons.25"),
-                        a.e("icons.24"),
+                        a.e("icons.13"),
+                        a.e("icons.27"),
+                        a.e("icons.22"),
+                        a.e("icons.17"),
+                        a.e("icons.7"),
                         a.e("modules.audio-6107ac1a"),
                         a.e("modules.audio-b953418a"),
                         a.e("modules.audio-7c51e6a7"),
@@ -32,16 +31,16 @@
                         a.e("modules.audio-e019dbda"),
                         a.e("modules.audio-262c94d4"),
                         a.e("modules.audio-c6fe4ea4"),
-                        a.e("icons.6"),
-                        a.e("icons.10"),
-                        a.e("icons.17"),
-                        a.e("icons.14"),
-                        a.e("icons.16"),
-                        a.e("icons.23"),
-                        a.e("icons.26"),
-                        a.e("icons.3"),
+                        a.e("icons.4"),
                         a.e("icons.8"),
+                        a.e("icons.14"),
+                        a.e("icons.26"),
                         a.e("icons.28"),
+                        a.e("icons.21"),
+                        a.e("icons.11"),
+                        a.e("icons.3"),
+                        a.e("icons.1"),
+                        a.e("icons.18"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -72,8 +71,7 @@
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                         a.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
                         a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                        a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-209b0896"),
-                        a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-ce92c4ef"),
+                        a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2d1eb5e2"),
                         a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                         a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                         a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -139,25 +137,25 @@
                         a.e("shared~loader.DMDrawer~bundle.Birdwatch~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompos-8d7085c2"),
                         a.e("shared~loader.DMDrawer~bundle.Birdwatch~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompos-53f39e22"),
                         a.e("shared~loader.DMDrawer~bundle.Birdwatch~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompos-167a4ae5"),
-                        a.e("shared~bundle.AccountAnalytics~bundle.Grok~ondemand.News~bundle.Ocf~ondemand.Insights~bundle.TV~bundle.Accoun"),
-                        a.e("shared~bundle.Birdwatch~bundle.Grok~ondemand.News~loader.inlineTombstoneHandler~loader.tweetHandler"),
-                        a.e("shared~bundle.AccountAnalytics~bundle.Grok~bundle.Payments~ondemand.News~ondemand.Insights"),
-                        a.e("shared~bundle.AccountAnalytics~bundle.Grok~ondemand.News~ondemand.Insights-5c163be3"),
-                        a.e("shared~bundle.AccountAnalytics~bundle.Grok~ondemand.News~ondemand.Insights-306954a6"),
-                        a.e("shared~bundle.AccountAnalytics~bundle.Grok~ondemand.News~ondemand.Insights-0ec68f8f"),
-                        a.e("shared~bundle.AccountAnalytics~bundle.Grok~ondemand.News~ondemand.Insights-536eaa00"),
-                        a.e("shared~bundle.AccountAnalytics~bundle.Grok~ondemand.News~ondemand.Insights-0786ae68"),
-                        a.e("shared~bundle.AccountAnalytics~bundle.Grok~ondemand.News~ondemand.Insights-f82e0cd2"),
-                        a.e("shared~bundle.AccountAnalytics~bundle.Grok~ondemand.News~ondemand.Insights-f5b13972"),
-                        a.e("shared~bundle.AccountAnalytics~bundle.Grok~ondemand.News~ondemand.Insights-8584f0c3"),
-                        a.e("shared~bundle.AccountAnalytics~bundle.Grok~ondemand.News~ondemand.Insights-01309e43"),
-                        a.e("shared~bundle.AccountAnalytics~bundle.Grok~ondemand.News~ondemand.Insights-398ef225"),
-                        a.e("shared~bundle.AccountAnalytics~bundle.Grok~ondemand.News~ondemand.Insights-fc70f967"),
-                        a.e("shared~bundle.AccountAnalytics~bundle.Grok~ondemand.News~ondemand.Insights-e43b6c88"),
-                        a.e("shared~bundle.AccountAnalytics~bundle.Grok~ondemand.News~ondemand.Insights-b08eb7a4"),
-                        a.e("shared~bundle.AccountAnalytics~bundle.Grok~ondemand.News~ondemand.Insights-5ba759f7"),
-                        a.e("shared~bundle.AccountAnalytics~bundle.Grok~ondemand.News~ondemand.Insights-ae3eee7f"),
-                        a.e("shared~bundle.AccountAnalytics~bundle.Grok~ondemand.News~ondemand.Insights-27545368"),
+                        a.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~bundle.Ocf~ondemand.Insights~bundle.TV~l"),
+                        a.e("shared~bundle.Birdwatch~bundle.News~bundle.Grok~ondemand.News~loader.inlineTombstoneHandler~loader.tweetHandl"),
+                        a.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~bundle.Payments~ondemand.News~ondemand.Insights~loader"),
+                        a.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.NewsSe-df6c0f5f"),
+                        a.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.NewsSe-962a9654"),
+                        a.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.NewsSe-d35c1f9c"),
+                        a.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.NewsSe-ff8476c2"),
+                        a.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.NewsSe-6e668ce9"),
+                        a.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.NewsSe-9fd4b2af"),
+                        a.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.NewsSe-ad2ef762"),
+                        a.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.NewsSe-b67eba62"),
+                        a.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.NewsSe-ad6d127d"),
+                        a.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.NewsSe-829eb18b"),
+                        a.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.NewsSe-4fec5af7"),
+                        a.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.NewsSe-898c8d51"),
+                        a.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.NewsSe-b92a6472"),
+                        a.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.NewsSe-67dc3650"),
+                        a.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.NewsSe-ed7b0ce8"),
+                        a.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.NewsSe-7ba852e1"),
                         a.e("shared~bundle.TwitterArticles~bundle.Grok~loader.Markdown~loader.TexBlock"),
                         a.e("shared~bundle.TwitterArticles~bundle.Grok~loader.Markdown"),
                         a.e("bundle.Grok-e907d115"),
@@ -204,18 +202,17 @@
             const n = (0, a(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        a.e("icons.0"),
-                        a.e("icons.13"),
-                        a.e("icons.22"),
-                        a.e("icons.29"),
-                        a.e("icons.5"),
-                        a.e("icons.15"),
-                        a.e("icons.7"),
-                        a.e("icons.1"),
-                        a.e("icons.20"),
-                        a.e("icons.11"),
-                        a.e("icons.25"),
+                        a.e("icons.23"),
+                        a.e("icons.16"),
+                        a.e("icons.2"),
+                        a.e("icons.10"),
+                        a.e("icons.19"),
                         a.e("icons.24"),
+                        a.e("icons.13"),
+                        a.e("icons.27"),
+                        a.e("icons.22"),
+                        a.e("icons.17"),
+                        a.e("icons.7"),
                         a.e("modules.audio-6107ac1a"),
                         a.e("modules.audio-b953418a"),
                         a.e("modules.audio-7c51e6a7"),
@@ -226,19 +223,18 @@
                         a.e("modules.audio-e019dbda"),
                         a.e("modules.audio-262c94d4"),
                         a.e("modules.audio-c6fe4ea4"),
-                        a.e("icons.6"),
-                        a.e("icons.10"),
-                        a.e("icons.17"),
-                        a.e("icons.14"),
-                        a.e("icons.16"),
-                        a.e("icons.23"),
-                        a.e("icons.26"),
-                        a.e("icons.3"),
+                        a.e("icons.4"),
                         a.e("icons.8"),
+                        a.e("icons.14"),
+                        a.e("icons.26"),
                         a.e("icons.28"),
+                        a.e("icons.21"),
+                        a.e("icons.11"),
+                        a.e("icons.3"),
+                        a.e("icons.1"),
+                        a.e("icons.18"),
                         a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                        a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-209b0896"),
-                        a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-ce92c4ef"),
+                        a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2d1eb5e2"),
                         a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                         a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                         a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -342,14 +338,14 @@
             };
         },
         847607: (e, d, a) => {
-            a.d(d, { Aq: () => c, FK: () => A, GS: () => i, N1: () => h, PY: () => b, X6: () => w, cm: () => s });
+            a.d(d, { Aq: () => c, FK: () => A, GS: () => s, N1: () => h, PY: () => b, X6: () => w, cm: () => i });
             a(202784);
             var n = a(674132),
                 o = a.n(n),
                 r = a(391366),
                 l = a(40904);
-            const i = o().hb568af4,
-                s = o().bb1cbeb6,
+            const s = o().hb568af4,
+                i = o().bb1cbeb6,
                 t = (o().h2f62206, o().e67b2d65),
                 u = o().f05597b3,
                 c = (e) => t({ screenName: e }),
@@ -372,23 +368,23 @@
                 o = a.n(n),
                 r = a(224823);
             const l = o().b3036480,
-                i = o().b3036480,
-                s = o().e68b09b4,
+                s = o().b3036480,
+                i = o().e68b09b4,
                 t = o().h27b7407,
                 u = ({ removeFollowerAction: e, user: d }) => {
                     const a = c(d);
                     return { Icon: r.default, text: l, onClick: () => e(a) };
                 },
-                c = (e) => ({ confirmButtonType: "destructiveFilled", headline: i, label: s, text: t({ screenName: e.screen_name }) });
+                c = (e) => ({ confirmButtonType: "destructiveFilled", headline: s, label: i, text: t({ screenName: e.screen_name }) });
         },
         518966: (e, d, a) => {
-            a.d(d, { h: () => s });
+            a.d(d, { h: () => i });
             var n = a(674132),
                 o = a.n(n),
                 r = a(615656);
             const l = o().ef504d80,
-                i = o().cef96d5a,
-                s = { defaultToast: { text: o().b2542f56 }, [r.ZP.DuplicateBookmark]: { toast: { text: i } }, [r.ZP.ProtectedTweetBookmarkError]: { toast: { text: l } }, showToast: !0 };
+                s = o().cef96d5a,
+                i = { defaultToast: { text: o().b2542f56 }, [r.ZP.DuplicateBookmark]: { toast: { text: s } }, [r.ZP.ProtectedTweetBookmarkError]: { toast: { text: l } }, showToast: !0 };
         },
         200770: (e, d, a) => {
             a.d(d, { o: () => t });
@@ -396,9 +392,9 @@
                 o = a.n(n),
                 r = a(615656);
             const l = o().fe3b9942,
-                i = o().c2a6dc5c,
-                s = o().b57f01b8,
-                t = { defaultToast: { text: i }, [r.ZP.BlockedUserError]: { toast: { text: l } }, [r.ZP.ProtectedStatusFavoriteError]: { toast: { text: s } }, showToast: !0 };
+                s = o().c2a6dc5c,
+                i = o().b57f01b8,
+                t = { defaultToast: { text: s }, [r.ZP.BlockedUserError]: { toast: { text: l } }, [r.ZP.ProtectedStatusFavoriteError]: { toast: { text: i } }, showToast: !0 };
         },
         48886: (e, d, a) => {
             a.d(d, { q: () => o });
@@ -433,8 +429,8 @@
                 o = a.n(n),
                 r = a(674132),
                 l = a.n(r);
-            const i = l().c3f04d9c,
-                s = l().cbdddb0a,
+            const s = l().c3f04d9c,
+                i = l().cbdddb0a,
                 t = { HEADER: "header", ASSISTANT: "assistant", DECISION: "decision", RAW_FUNCTION_RESULT: "raw_function_result", FUNCTION: "function", SUMMARY: "summary", FINAL: "final", SOFT_STOP: "softstop", FINAL_LONG: "final_long" },
                 u = { IN_PROGRESS: "IN_PROGRESS", COMPLETED: "COMPLETED", FAILED: "FAILED" },
                 c = l().b0d1e205,
@@ -446,7 +442,7 @@
                     (this.initiateFromHistoryResponses = (e, d = !1) => {
                         this.lastStreamedDataTimestamp = Date.now();
                         for (const d of e) {
-                            const e = { id: o().v4(), state: u.COMPLETED, header: d.header || i, subSteps: [] };
+                            const e = { id: o().v4(), state: u.COMPLETED, header: d.header || s, subSteps: [] };
                             for (let a = 0; a < d.steps.length; a++) {
                                 const n = d.steps[a];
                                 this.addWebResults(n.webResults || []), this.addXPostIds(n.xPostIds || []);
@@ -468,35 +464,35 @@
                                 a = e.messageTag === t.HEADER,
                                 n = a || this.steps.length <= 0;
                             if ((this.addDebugMessageTagCount(e.messageTag), (this.lastStreamedDataTimestamp = Date.now()), "PENDING" === this.state && ((this.streamStartTimestamp = Date.now()), (this.state = "STARTED")), n)) {
-                                const n = { id: o().v4(), state: u.IN_PROGRESS, header: a ? e.message : i, subSteps: [] };
+                                const n = { id: o().v4(), state: u.IN_PROGRESS, header: a ? e.message : s, subSteps: [] };
                                 if (a) {
-                                    if (1 === this.steps.length && this.steps[0].header === i) return void (this.steps = [{ ...this.steps[0], header: n.header }]);
+                                    if (1 === this.steps.length && this.steps[0].header === s) return void (this.steps = [{ ...this.steps[0], header: n.header }]);
                                     this.steps = [...this.steps, n];
                                 } else e.messageTag === t.ASSISTANT && ((this.accumulatedTrace += e.message), (this.traceEnabled = !0), (this.steps = [...this.steps, n]));
                                 return void (d >= 0 && this.completeStep(d));
                             }
                             const r = this.steps[d],
                                 l = r.subSteps.findLastIndex((d) => (e.messageTag === t.RAW_FUNCTION_RESULT ? d.messageStepId === e.messageStepId && (d.messageTag === e.messageTag || d.messageTag === t.DECISION) : d.messageStepId === e.messageStepId && d.messageTag === e.messageTag)),
-                                s = l > -1 ? r.subSteps[l] : void 0;
+                                i = l > -1 ? r.subSteps[l] : void 0;
                             let c = !1;
-                            if (s) {
+                            if (i) {
                                 switch (e.messageTag) {
                                     case t.ASSISTANT:
                                         (this.accumulatedTrace += e.message), (this.traceEnabled = !0);
                                         break;
                                     case t.SUMMARY:
-                                        (s.summary = (s.summary || "") + e.message), (c = !0), (this.accumulatedSummary += e.message);
+                                        (i.summary = (i.summary || "") + e.message), (c = !0), (this.accumulatedSummary += e.message);
                                         break;
                                     case t.DECISION: {
                                         const d = this.parseMessageJSON(e.message);
-                                        (s.actionIcon = this.getIconForDecisionAction(d)), (s.actionType = d?.action), (s.actionSummary = this.getContentForDecisionAction(d)), (c = !0);
+                                        (i.actionIcon = this.getIconForDecisionAction(d)), (i.actionType = d?.action), (i.actionSummary = this.getContentForDecisionAction(d)), (c = !0);
                                         break;
                                     }
                                     case t.RAW_FUNCTION_RESULT:
                                         if (!((e.webResults && e.webResults.length) || (e.xPostIds && e.xPostIds.length))) break;
-                                        e.webResults && ((s.webResults = e.webResults), this.addWebResults(e.webResults || [])), e.xPostIds && ((s.xPostIds = e.xPostIds), this.addXPostIds(e.xPostIds || [])), s.actionState, (c = !0);
+                                        e.webResults && ((i.webResults = e.webResults), this.addWebResults(e.webResults || [])), e.xPostIds && ((i.xPostIds = e.xPostIds), this.addXPostIds(e.xPostIds || [])), i.actionState, (c = !0);
                                 }
-                                c && ((r.subSteps[l] = { ...s }), (r.subSteps = [...r.subSteps]));
+                                c && ((r.subSteps[l] = { ...i }), (r.subSteps = [...r.subSteps]));
                             } else {
                                 let d = null;
                                 switch (e.messageTag) {
@@ -585,7 +581,7 @@
                                             e.actionState = "COMPLETED";
                                         });
                                 }),
-                                this.steps.push({ id: o().v4(), state: u.COMPLETED, header: s, subSteps: [], isCompleteHeader: !0 }),
+                                this.steps.push({ id: o().v4(), state: u.COMPLETED, header: i, subSteps: [], isCompleteHeader: !0 }),
                                 (this.steps = [...this.steps]));
                         }),
                         (this.onAbort = () => {
@@ -625,31 +621,31 @@
             }
         },
         943245: (e, d, a) => {
-            a.d(d, { It: () => u, mD: () => t, sE: () => i });
+            a.d(d, { It: () => u, mD: () => t, sE: () => s });
             var n = a(899492),
                 o = a(733357);
             const r = ["da", "de", "en", "en-gb", "es", "et", "eu", "fi", "fil", "fr", "ga", "gl", "ht", "hu", "id", "it", "lt", "lv", "nl", "no", "ms", "pl", "pt", "sk", "sl", "sv", "tr", "vi"],
                 l = { "en-gb": "en", "en-ss": "en", fil: "tl", he: "iw", id: "in", msa: "ms", "xx-lc": "en" },
-                i = (e) => {
+                s = (e) => {
                     const d = e.toLowerCase();
                     return l[d] || d;
                 },
-                s = (e, d) => {
-                    const a = i(e);
+                i = (e, d) => {
+                    const a = s(e);
                     return !(r.indexOf(a) > -1 && d < 20) && !("und" === e);
                 },
                 t = ({ displayTextRange: e, entities: d, language: a, text: r }) => {
-                    if (!e || !s(a, e[1] - e[0])) return !1;
+                    if (!e || !i(a, e[1] - e[0])) return !1;
                     const l = ((e, d) => {
                             let a = n.Z.getTwemojiEntities(e).map((e) => e.indices);
                             for (const e in d) a = a.concat(d[e].map((e) => e.indices));
                             return a.sort((e, d) => e[0] - d[0]), a;
                         })(r, d),
-                        i = ((e, d, a) => {
+                        s = ((e, d, a) => {
                             const { accText: n, lastIndex: o } = a.reduce(({ accText: a, lastIndex: n }, o) => (o[1] <= n || d[1] <= o[0] ? { lastIndex: n, accText: a } : { accText: a + e.slice(n, o[0]), lastIndex: o[1] }), { accText: "", lastIndex: d[0] });
                             return n + e.slice(o, d[1]);
                         })(r, e, l);
-                    return !(0, o.Z)(i) && s(a, i.length);
+                    return !(0, o.Z)(s) && i(a, s.length);
                 },
                 u = (e) => {
                     if (e.includes("-")) return e;
@@ -692,14 +688,14 @@
             var n = a(793211);
         },
         793211: (e, d, a) => {
-            a.d(d, { B$: () => p, K7: () => h, Si: () => c, W5: () => u, kf: () => b, tY: () => s });
+            a.d(d, { B$: () => p, K7: () => h, Si: () => c, W5: () => u, kf: () => b, tY: () => i });
             a(136728);
             var n = a(392237),
                 o = a(122375),
                 r = a(967262);
             const l = { BOLD: "Bold", ITALIC: "Italic", STRIKETHROUGH: "Strikethrough" },
-                i = { IMMUTABLE: "Immutable", MUTABLE: "Mutable", SEGMENTED: "Segmented" },
-                s = (e) => {
+                s = { IMMUTABLE: "Immutable", MUTABLE: "Mutable", SEGMENTED: "Segmented" },
+                i = (e) => {
                     if ("ApiImage" === e?.media_info?.__typename) return { height: e?.media_info?.original_img_height, url: e?.media_info?.original_img_url, width: e?.media_info?.original_img_width };
                 },
                 t = (e, d) => (a) => (a && d && e ? `/${d}/article/${e}/media/${a}` : null),
@@ -714,7 +710,7 @@
                         a = e.blocks.map((e) => ({ data: e.data, text: e.text, key: e.key || void 0, type: e.type, entity_ranges: e.entityRanges?.map((e) => ({ key: e.key, offset: e.offset, length: e.length })), inline_style_ranges: e.inlineStyleRanges?.map((e) => ({ length: e.length, offset: e.offset, style: l[e.style] || e.style })) }));
                     Object.keys(e.entityMap).forEach((a) => {
                         const n = e.entityMap[a];
-                        d.push({ key: a, value: { data: { caption: n.data?.caption || void 0, entity_key: n.data?.entityKey || void 0, media_items: n.data?.mediaItems?.map((e) => ({ local_media_id: e.localMediaId, media_category: e.mediaCategory, media_id: e.mediaId })), tweet_id: n.data?.tweetId, url: n.data?.url, markdown: n.data?.markdown }, type: n.type, mutability: i[n.mutability] } });
+                        d.push({ key: a, value: { data: { caption: n.data?.caption || void 0, entity_key: n.data?.entityKey || void 0, media_items: n.data?.mediaItems?.map((e) => ({ local_media_id: e.localMediaId, media_category: e.mediaCategory, media_id: e.mediaId })), tweet_id: n.data?.tweetId, url: n.data?.url, markdown: n.data?.markdown }, type: n.type, mutability: s[n.mutability] } });
                     });
                     return { blocks: a, entity_map: d };
                 },
@@ -745,8 +741,8 @@
                 o = a(161821),
                 r = a(2138),
                 l = a(516951),
-                i = a(774717),
-                s = a(4463);
+                s = a(774717),
+                i = a(4463);
             let t = {},
                 u = 0;
             const c = { mount: ["didMount", "willMount"], update: ["didUpdate", "willUpdate"] },
@@ -756,17 +752,17 @@
                             l = r.length;
                         r.forEach((d) => {
                             (0, n.Z)(c).map(([a, [n, o]]) => {
-                                ((e) => 1 === e || Math.random() <= 0.01)(l) && n in d && o in d && (0, i.IM)(((e, d) => `lifecycle:${e.toLowerCase()}:${d}`)(e, a), { duration_ms: d[n] - d[o] });
+                                ((e) => 1 === e || Math.random() <= 0.01)(l) && n in d && o in d && (0, s.IM)(((e, d) => `lifecycle:${e.toLowerCase()}:${d}`)(e, a), { duration_ms: d[n] - d[o] });
                             });
                         });
                     }),
-                        (0, i.yl)(),
+                        (0, s.yl)(),
                         (t = {});
                 },
                 h = (0, r.Z)(b, 2e4) || b,
                 p = (e, d = !1) => {
                     const a = e.constructor.displayName;
-                    (0, s.Z)(a, `${e.constructor.name} component has "displayName" set.`);
+                    (0, i.Z)(a, `${e.constructor.name} component has "displayName" set.`);
                     let n = e.__lifecycleIdentifier;
                     return !n && d && ((u += 1), (n = e.__lifecycleIdentifier = u)), (t[a] && t[a][n]) || (t[a] = { ...t[a], [n]: {} }), [a, n];
                 },
@@ -801,4 +797,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-743779ef.7ff07e6a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-743779ef.fd64498a.js.map

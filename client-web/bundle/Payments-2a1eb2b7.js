@@ -30,6 +30,7 @@
                     settingHeader: { paddingHorizontal: e.spaces.space2, gap: e.spaces.space8 },
                     spinner: { alignSelf: "center", flex: 1 },
                     centeredIcon: { alignSelf: "center", color: e.colors.text },
+                    alignStart: { alignSelf: "start" },
                     actionsContainer: { flexDirection: "row", gap: e.spaces.space16, justifyContent: "space-evenly" },
                     actionsContainerNarrow: { flexWrap: "wrap" },
                     action: { backgroundColor: e.colors.gray0, padding: e.spaces.space16, textAlign: "center" },
@@ -53,7 +54,7 @@
                 l = s;
         },
         727384: (e, t, n) => {
-            n.d(t, { BC: () => Ce, BR: () => xe, Bj: () => gt, Bl: () => De, DK: () => Te, DO: () => nt, Dc: () => Z, EQ: () => Ve, FW: () => at, Fs: () => He, GU: () => se, Gl: () => Se, Gs: () => Le, H_: () => Ee, Ix: () => ut, J$: () => Me, M9: () => he, MO: () => tt, Oc: () => Ke, Ou: () => Ue, Q1: () => ge, QE: () => je, Qu: () => ct, Se: () => Be, So: () => Qe, T3: () => be, Tp: () => Re, UM: () => Pe, UV: () => st, XT: () => ve, _T: () => Ae, aY: () => Ge, ab: () => Je, bI: () => Ze, dN: () => L, fq: () => ft, gh: () => it, gx: () => H, i7: () => me, iv: () => Ye, jm: () => Xe, lD: () => re, lw: () => Y, nV: () => G, p2: () => M, pQ: () => Q, qK: () => X, qQ: () => _e, qU: () => Ie, qc: () => dt, uG: () => rt, uN: () => ze, ve: () => $e, vw: () => K, wu: () => ot, yH: () => et, zK: () => Oe, zx: () => J });
+            n.d(t, { BC: () => Ce, BR: () => xe, Bj: () => gt, Bl: () => De, DK: () => Te, DO: () => nt, Dc: () => Z, EQ: () => Ve, FW: () => at, Fs: () => He, GU: () => se, Gl: () => Ae, Gs: () => Le, H_: () => Ee, Ix: () => ut, J$: () => Me, M9: () => he, MO: () => tt, Oc: () => Ke, Ou: () => Ue, Q1: () => ge, QE: () => je, Qu: () => ct, Se: () => Be, So: () => Qe, T3: () => be, Tp: () => Re, UM: () => Pe, UV: () => st, XT: () => ve, _T: () => Se, aY: () => Ge, ab: () => Je, bI: () => Ze, dN: () => L, fq: () => ft, gh: () => it, gx: () => H, i7: () => me, iv: () => Ye, jm: () => Xe, lD: () => re, lw: () => Y, nV: () => G, p2: () => M, pQ: () => Q, qK: () => X, qQ: () => _e, qU: () => Ie, qc: () => dt, uG: () => rt, uN: () => ze, ve: () => $e, vw: () => K, wu: () => ot, yH: () => et, zK: () => Oe, zx: () => J });
             n(543673), n(240753), n(128399);
             var a = n(617374),
                 i = n.n(a),
@@ -79,8 +80,8 @@
                 T = n(539660),
                 v = n(724983),
                 D = n(297679),
-                A = n(217995),
-                S = n(183276),
+                S = n(217995),
+                A = n(183276),
                 k = n(703325),
                 N = n(215285),
                 U = n(258074),
@@ -268,11 +269,11 @@
             function De({ status: e }) {
                 return [P.g.Cancelled, P.g.Failed, P.g.Expired, P.g.RejectedByRecipient, P.g.RequestRejected].includes(e);
             }
-            function Ae({ status: e }) {
+            function Se({ status: e }) {
                 return [P.g.Settled, P.g.SoftSettled, P.g.AuthorizationClosed].includes(e);
             }
-            function Se({ status: e }) {
-                return !Ae({ status: e });
+            function Ae({ status: e }) {
+                return !Se({ status: e });
             }
             const ke = (e) => (e ? `data:image/png;base64,${e}` : ""),
                 Ne = Object.freeze({ [f.U.AmericanExpress]: "https://abs.twimg.com/responsive-web/client-web/payment-method-amex.b2cd046a.svg", [f.U.Mastercard]: "https://abs.twimg.com/responsive-web/client-web/payment-method-mastercard.f126316a.svg", [f.U.Visa]: "https://abs.twimg.com/responsive-web/client-web/payment-method-visa.c768170a.svg" }),
@@ -328,7 +329,7 @@
                     We(e, a);
                 },
                 Fe = (e) => {
-                    const t = (0, c.getStorageKey)(S.Z.fragment.selections[0], {});
+                    const t = (0, c.getStorageKey)(A.Z.fragment.selections[0], {});
                     qe({ store: e, key: t });
                 },
                 Be = (e, t) => {
@@ -351,7 +352,7 @@
                 Me = (e) => {
                     s()(e, (e) => {
                         ((e) => {
-                            const t = (0, c.getStorageKey)(A.Z.fragment.selections[0], {});
+                            const t = (0, c.getStorageKey)(S.Z.fragment.selections[0], {});
                             We(e, t);
                         })(e),
                             _e(e),
@@ -416,4 +417,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-2a1eb2b7.9461e56a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-2a1eb2b7.dc06707a.js.map
