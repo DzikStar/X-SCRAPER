@@ -295,17 +295,17 @@
             const g = p.default.create((e) => ({ root: { paddingVertical: e.spacesPx.space32 }, rootWithImage: { paddingTop: 0 }, graphic: { marginBottom: e.spacesPx.space20 }, icon: { alignSelf: "center", height: e.spacesPx.space64, width: e.spacesPx.space64 }, container: { paddingHorizontal: e.spacesPx.space32 }, description: { marginTop: e.spacesPx.space8, marginBottom: e.spacesPx.space4 }, actionButton: { marginTop: e.spacesPx.space16 } })),
                 _ = ({ actionPrimary: e, actionSecondary: t, children: n, headline: _, icon: y, iconColor: b, image: k, onDismiss: h, shouldDisplay: f, text: w, withMask: v = !0 }) => {
                     const [T, x] = a.useState(!1),
-                        F = (e) => a.createElement(u.Z, { onDismiss: E, renderContent: () => C(E), switchOnlyOnXSmallBreakpoint: !0, visibilityBehavior: i.J.forceVisible, withArrow: !0, withFixedPosition: !0, withMask: v }, e),
-                        L = () => a.createElement(m.Z, { onMaskClick: () => E(), type: "center", withMask: !0 }, C(E)),
-                        C = (n) => a.createElement(l.Z, { style: [g.root, k && g.rootWithImage] }, K(), a.createElement(l.Z, { style: g.container }, S(), R(), Z({ action: e, dismiss: n, type: t && "primaryFilled" }), Z({ action: t, dismiss: n }))),
+                        F = (e) => a.createElement(u.Z, { onDismiss: R, renderContent: () => C(R), switchOnlyOnXSmallBreakpoint: !0, visibilityBehavior: i.J.forceVisible, withArrow: !0, withFixedPosition: !0, withMask: v }, e),
+                        L = () => a.createElement(m.Z, { onMaskClick: () => R(), type: "center", withMask: !0 }, C(R)),
+                        C = (n) => a.createElement(l.Z, { style: [g.root, k && g.rootWithImage] }, K(), a.createElement(l.Z, { style: g.container }, S(), Z(), E({ action: e, dismiss: n, type: t && "primaryFilled" }), E({ action: t, dismiss: n }))),
                         K = () => {
                             let e = y && a.createElement(y, { style: b ? [g.icon, { color: p.default.theme.colors[b] }] : g.icon });
                             return k && !d.Z.isEnabled && (e = a.createElement(s.Z, { "aria-label": "", aspectMode: o.Z.exact(2), image: k })), e && a.createElement(l.Z, { style: g.graphic }, e);
                         },
                         S = () => a.createElement(r.ZP, { size: "title3", weight: "heavy" }, _),
-                        R = () => a.createElement(r.ZP, { color: "gray700", style: g.description }, w),
-                        Z = ({ action: e, dismiss: t, type: n }) => e && a.createElement(c.ZP, { link: e.link && e.link, onPress: e.onClick ? e.onClick : t, size: "large", style: g.actionButton, type: n }, e.text),
-                        E = () => {
+                        Z = () => a.createElement(r.ZP, { color: "gray700", style: g.description }, w),
+                        E = ({ action: e, dismiss: t, type: n }) => e && a.createElement(c.ZP, { link: e.link && e.link, onPress: e.onClick ? e.onClick : t, size: "large", style: g.actionButton, type: n }, e.text),
+                        R = () => {
                             h && h(), x(!0);
                         };
                     return f && !T ? (n ? F(n) : L()) : n || null;
@@ -479,10 +479,23 @@
             n.d(t, { Z: () => a });
             const a = n(202784).createContext({ refsMap: {} });
         },
+        314948: (e, t, n) => {
+            n.r(t), n.d(t, { default: () => o });
+            var a = n(202784),
+                l = n(890601),
+                i = n(783427),
+                s = n(347101);
+            const r = (e = {}) => {
+                const { direction: t } = (0, i.Z)();
+                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M12 3.75c-4.55 0-8.25 3.69-8.25 8.25 0 1.92.66 3.68 1.75 5.08l2.8-2.79 1.41 1.42-2.79 2.79c1.4 1.1 3.16 1.75 5.08 1.75 4.56 0 8.25-3.69 8.25-8.25 0-1.92-.65-3.68-1.75-5.08l-2.79 2.79-1.41-1.42 2.79-2.79C15.68 4.4 13.92 3.75 12 3.75zM1.75 12C1.75 6.34 6.34 1.75 12 1.75S22.25 6.34 22.25 12 17.66 22.25 12 22.25 1.75 17.66 1.75 12z" })) }, { writingDirection: t });
+            };
+            r.metadata = { width: 24, height: 24 };
+            const o = r;
+        },
         490359: (e, t, n) => {
             n.d(t, { Z: () => a });
             const a = (e) => (Array.isArray(e) ? e[0] : void 0);
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Articles-6107ac1a.c98ffc1a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Articles-6107ac1a.5c12c0ba.js.map

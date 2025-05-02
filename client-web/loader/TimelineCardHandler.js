@@ -30,7 +30,7 @@
         },
         403911: (e, t, n) => {
             "use strict";
-            n.d(t, { Z: () => Z });
+            n.d(t, { Z: () => F });
             var o = n(506899),
                 r = n(163889),
                 i = n(414742),
@@ -42,39 +42,39 @@
                 m = n.n(c),
                 u = n(342459),
                 _ = n.n(u),
-                f = n(503225),
-                p = n.n(f),
-                h = n(745735),
-                b = n.n(h),
+                h = n(503225),
+                f = n.n(h),
+                p = n(745735),
+                b = n.n(p),
                 g = n(485018),
                 w = n.n(g),
                 k = n(615626),
-                y = n.n(k),
-                v = n(182247),
-                E = n.n(v),
+                v = n.n(k),
+                y = n(182247),
+                E = n.n(y),
                 D = n(974829),
                 T = n.n(D),
                 S = n(934309);
-            const $ = { result: [], entities: {}, slice_info: {} },
-                x = (e, t) => {
+            const z = { result: [], entities: {}, slice_info: {} },
+                $ = (e, t) => {
                     const n = t?.bookmark_all_delete,
                         o = "Done" === n;
                     return o || (0, r.ZP)("GQL Bookmarks: Failed to delete all bookmarks"), (0, i.jB)(e) || !o;
                 },
-                z = (0, i.kj)((e) => {
+                x = (0, i.kj)((e) => {
                     const t = e?.viewer?.user_results?.result,
                         n = "User" === t?.__typename ? t : void 0,
                         o = n?.bookmark_collections_slice?.items;
                     return !o;
                 }, "GQL Bookmark Folders: Failed to render Bookmark Folders timeline"),
-                F = (0, i.kj)((e) => {
+                Z = (0, i.kj)((e) => {
                     const t = e?.bookmark_collection_timeline?.timeline;
                     return !t;
                 }, "GQL Bookmark Folders: Failed to render Bookmark Folders timeline"),
-                Z = ({ apiClient: e, featureSwitches: t }) => ({
+                F = ({ apiClient: e, featureSwitches: t }) => ({
                     bookmarkTweetToFolder: (t) =>
                         e.graphQL(
-                            p(),
+                            f(),
                             { ...t },
                             (0, i.kj)((e) => !e.bookmark_collection_tweet_put, "GQL Bookmark Folders: failed to Add Tweet to Bookmark Folder"),
                         ),
@@ -84,10 +84,10 @@
                             { ...t },
                             (0, i.kj)((e) => !e.bookmark_collection_create, "GQL Bookmark Folders: failed to Create Bookmark Folder"),
                         ),
-                    deleteAll: () => e.graphQL(w(), {}, x).then((e) => e),
+                    deleteAll: () => e.graphQL(w(), {}, $).then((e) => e),
                     deleteBookmarkFolder(t) {
                         const { bookmarkFolderId: n } = t;
-                        return e.graphQL(y(), { bookmark_collection_id: n });
+                        return e.graphQL(v(), { bookmark_collection_id: n });
                     },
                     editBookmarkFolder(t) {
                         const { bookmarkFolderId: n, name: o } = t;
@@ -98,10 +98,10 @@
                         return e.graphQL(T(), { bookmark_collection_id: n, tweet_id: o });
                     },
                     fetchBookmarksTimeline: ({ count: n, cursor: o }) => e.graphQL(_(), { count: n, cursor: o, includePromotedContent: !0, ...(0, a.d)(t) }, (e, t) => !t?.bookmark_timeline_v2?.timeline).then((e) => e?.bookmark_timeline_v2?.timeline || S.cY),
-                    fetchBookmarkFolderTimeline: ({ bookmark_collection_id: n, cursor: o }) => e.graphQL(m(), { bookmark_collection_id: n, cursor: o, includePromotedContent: !0, ...(0, a.d)(t) }, F).then((e) => e?.bookmark_collection_timeline?.timeline || S.cY),
+                    fetchBookmarkFolderTimeline: ({ bookmark_collection_id: n, cursor: o }) => e.graphQL(m(), { bookmark_collection_id: n, cursor: o, includePromotedContent: !0, ...(0, a.d)(t) }, Z).then((e) => e?.bookmark_collection_timeline?.timeline || S.cY),
                     fetchBookmarkFoldersSlice: (t) =>
                         t
-                            ? e.graphQL(d(), t, z).then((e) => {
+                            ? e.graphQL(d(), t, x).then((e) => {
                                   const t = e?.viewer?.user_results?.result,
                                       n = "User" === t?.__typename ? t : void 0,
                                       r = n?.bookmark_collections_slice;
@@ -109,14 +109,14 @@
                                       const { entities: e, result: t } = (0, o.Fv)(r.items, [l]);
                                       return { entities: e, result: t, slice_info: r.slice_info };
                                   }
-                                  return $;
+                                  return z;
                               })
-                            : Promise.resolve($),
+                            : Promise.resolve(z),
                 });
         },
         138896: (e, t, n) => {
             "use strict";
-            n.r(t), n.d(t, { default: () => f });
+            n.r(t), n.d(t, { default: () => h });
             var o = n(459643),
                 r = n(351322),
                 i = n(202784),
@@ -131,7 +131,7 @@
                     return t ? i.createElement(a.default, { card: t, cardContext: m }) : null;
                 },
                 _ = c(i.memo(u)),
-                f = r.iH({ component: _, shouldDisplayBorder: (0, o.Z)(!1), isFocusable: (0, o.Z)(!0) }).getHandler();
+                h = r.iH({ component: _, shouldDisplayBorder: (0, o.Z)(!1), isFocusable: (0, o.Z)(!0) }).getHandler();
         },
         518966: (e, t, n) => {
             "use strict";
@@ -151,7 +151,7 @@
         },
         694180: (e, t, n) => {
             "use strict";
-            n.d(t, { cM: () => h, dS: () => p, iY: () => b });
+            n.d(t, { cM: () => p, dS: () => f, iY: () => b });
             var o = n(370751),
                 r = n(399896),
                 i = n(663550),
@@ -163,28 +163,28 @@
                 m = (0, o.Z)([i.dx.IMPRESSION, i.dx.DWELL]),
                 u = (0, o.Z)([i.AJ.TREND_VIEW, i.AJ.SPOTLIGHT_IMPRESSION]),
                 _ = (e) => ({ payload: { eventKey: e }, type: c });
-            const f = (e, t) => !!e.promotedContent[t],
-                p =
+            const h = (e, t) => !!e.promotedContent[t],
+                f =
                     (e) =>
                     (t, n, { api: o }) => {
                         const { event: i, impression_id: a, promoted_trend_id: s } = e,
                             c = `trend-${s}-${i}`;
-                        if (u.has(i) && f(n(), c)) return Promise.resolve();
+                        if (u.has(i) && h(n(), c)) return Promise.resolve();
                         const m = { promoted_trend_id: s, event: i, impression_id: a };
                         return (0, l._O)(t, { params: m, request: o.withEndpoint(r.Z).log })({ actionTypes: d, context: "APP_PROMOTED_CONTENT_LOG", meta: m }, (e, t) => {
                             if (!t && u.has(i)) return [_(c)];
                         });
                     },
-                h =
+                p =
                     ({ disclosureType: e, itemId: t, itemType: n, params: o }) =>
                     (i, a, { api: s }) => {
                         const { event: c, impression_id: u } = o,
-                            p = `${n}-${t ?? "undefined"}-${u ?? "undefined"}-${c ?? "undefined"}`;
-                        if (m.has(c) && f(a(), p)) return Promise.resolve();
-                        const h = e && "earned" === e.toLowerCase() ? "1" : null,
-                            b = { ...o, earned: h, epoch_ms: Date.now() };
+                            f = `${n}-${t ?? "undefined"}-${u ?? "undefined"}-${c ?? "undefined"}`;
+                        if (m.has(c) && h(a(), f)) return Promise.resolve();
+                        const p = e && "earned" === e.toLowerCase() ? "1" : null,
+                            b = { ...o, earned: p, epoch_ms: Date.now() };
                         return (0, l._O)(i, { params: b, request: s.withEndpoint(r.Z).log })({ actionTypes: d, context: "APP_PROMOTED_CONTENT_LOG", meta: b }, (e, t) => {
-                            if (!t && m.has(c)) return [_(p)];
+                            if (!t && m.has(c)) return [_(f)];
                         });
                     },
                 b =
@@ -225,7 +225,7 @@
         },
         529509: (e, t, n) => {
             "use strict";
-            n.d(t, { Z: () => p });
+            n.d(t, { Z: () => f });
             var o = n(202784),
                 r = n(325686),
                 i = n(674132),
@@ -237,34 +237,34 @@
                 m = n(392237);
             const u = a().a35a5b10,
                 _ = a().fc8cd112,
-                f = (e) => o.createElement(s.ZP, null, e);
-            class p extends o.Component {
+                h = (e) => o.createElement(s.ZP, null, e);
+            class f extends o.Component {
                 render() {
                     const { displayFacepileInline: e, knownFollowersAvatarUrls: t, knownFollowersCount: n, textStyle: i, userScreenName: a, withFacepile: m } = this.props,
                         _ = this._renderMessage();
-                    return o.createElement(l.Z, { duration: "long", show: void 0 !== n, type: "fade" }, n ? o.createElement(c.Z, { "aria-label": u, interactiveStyles: null, link: a ? ((f = a), `/${f}/followers_you_follow`) : void 0 }, ({ isHovered: n, isPressed: l }) => o.createElement(r.Z, { style: h.content }, !e && m ? o.createElement(d.Z, { userAvatarUrls: t }) : null, o.createElement(s.ZP, { color: "gray700", size: "subtext2", style: [!e && h.message, (n || l) && !!a && h.underline, i] }, e && m ? o.createElement(d.Z, { style: h.inlineFacepile, userAvatarUrls: t }) : null, _))) : o.createElement(r.Z, { style: h.content }, o.createElement(s.ZP, { color: "gray700", size: "subtext2" }, _)));
-                    var f;
+                    return o.createElement(l.Z, { duration: "long", show: void 0 !== n, type: "fade" }, n ? o.createElement(c.Z, { "aria-label": u, interactiveStyles: null, link: a ? ((h = a), `/${h}/followers_you_follow`) : void 0 }, ({ isHovered: n, isPressed: l }) => o.createElement(r.Z, { style: p.content }, !e && m ? o.createElement(d.Z, { userAvatarUrls: t }) : null, o.createElement(s.ZP, { color: "gray700", size: "subtext2", style: [!e && p.message, (n || l) && !!a && p.underline, i] }, e && m ? o.createElement(d.Z, { style: p.inlineFacepile, userAvatarUrls: t }) : null, _))) : o.createElement(r.Z, { style: p.content }, o.createElement(s.ZP, { color: "gray700", size: "subtext2" }, _)));
+                    var h;
                 }
                 _renderMessage() {
                     const { knownFollowersCount: e = 0, knownFollowersNames: t } = this.props;
                     return e > 3 ? this._renderUsernamesWithOthers(t, e) : 3 === e ? this._renderThreeUsernames(t) : 2 === e ? this._renderTwoUsernames(t) : 1 === e ? this._renderOneUsername(t) : _;
                 }
                 _renderOneUsername(e) {
-                    return o.createElement(a().I18NFormatMessage, { $i18n: "c9e6167d" }, f(e[0]));
+                    return o.createElement(a().I18NFormatMessage, { $i18n: "c9e6167d" }, h(e[0]));
                 }
                 _renderTwoUsernames(e) {
-                    return o.createElement(a().I18NFormatMessage, { $i18n: "ha91d1eb" }, f(e[0]), f(e[1]));
+                    return o.createElement(a().I18NFormatMessage, { $i18n: "ha91d1eb" }, h(e[0]), h(e[1]));
                 }
                 _renderThreeUsernames(e) {
-                    return o.createElement(a().I18NFormatMessage, { $i18n: "f1069f9b" }, f(e[0]), f(e[1]), f(e[2]));
+                    return o.createElement(a().I18NFormatMessage, { $i18n: "f1069f9b" }, h(e[0]), h(e[1]), h(e[2]));
                 }
                 _renderUsernamesWithOthers(e, t) {
                     const n = t - 2;
-                    return o.createElement(a().I18NFormatMessage, { $i18n: "e8404c1f" }, f(e[0]), f(e[1]), n);
+                    return o.createElement(a().I18NFormatMessage, { $i18n: "e8404c1f" }, h(e[0]), h(e[1]), n);
                 }
             }
-            p.defaultProps = { displayFacepileInline: !1, withFacepile: !0 };
-            const h = m.default.create((e) => ({ content: { flexDirection: "row" }, message: { flexShrink: 1, marginStart: e.spaces.space12 }, underline: { textDecorationLine: "underline" }, inlineFacepile: { verticalAlign: "middle", marginEnd: e.spaces.space4 } }));
+            f.defaultProps = { displayFacepileInline: !1, withFacepile: !0 };
+            const p = m.default.create((e) => ({ content: { flexDirection: "row" }, message: { flexShrink: 1, marginStart: e.spaces.space12 }, underline: { textDecorationLine: "underline" }, inlineFacepile: { verticalAlign: "middle", marginEnd: e.spaces.space4 } }));
         },
         135904: (e, t, n) => {
             "use strict";
@@ -288,20 +288,20 @@
                 m = n(989272),
                 u = n(925873),
                 _ = n(202253),
-                f = n(786475),
-                p = n(392237),
-                h = n(135904);
+                h = n(786475),
+                f = n(392237),
+                p = n(135904);
             const b = { [d.P7.atomic]: { element: "section" }, [d.P7.header1]: { element: "h1", wrapper: o.createElement(s.ZP, null) }, [d.P7.header2]: { element: "h2", wrapper: o.createElement(s.ZP, null) } },
                 g = (0, a.Z)(b).reduce((e, [t, n]) => e.set(t, n), r.DefaultDraftBlockRenderMap);
             let w = !1;
             const k = o.memo(function (e) {
                     const { componentByType: t, contentState: n, onScribeEvent: a, paragraphFontSizeOverride: s } = e;
                     o.useEffect(() => {
-                        w || (m.fH(h.c, h.n), (w = !0));
+                        w || (m.fH(p.c, p.n), (w = !0));
                     }, []);
-                    const p = [(0, _.ez)(a, s), _.aF, _.RU];
-                    e.disable_entityLinkDecorator || p.push((0, _.NA)(a, s));
-                    const b = u.Z.initEditorState(n, { decorators: p });
+                    const f = [(0, _.ez)(a, s), _.aF, _.RU];
+                    e.disable_entityLinkDecorator || f.push((0, _.NA)(a, s));
+                    const b = u.Z.initEditorState(n, { decorators: f });
                     let k = l.Z;
                     return (
                         t &&
@@ -309,14 +309,14 @@
                                 const n = e.getType();
                                 return t[n] || null;
                             }),
-                        o.createElement(c.ZP, null, ({ containerWidth: e }) => o.createElement(i.Z, { style: y.fontFamily }, o.createElement(r.Editor, { blockRenderMap: g, blockRendererFn: k, blockStyleFn: (0, d.su)(f.Z.isNarrowScreenWidth(e)), editorState: b, onChange: l.Z, readOnly: !0, webDriverTestID: "longformRichTextComponent" })))
+                        o.createElement(c.ZP, null, ({ containerWidth: e }) => o.createElement(i.Z, { style: v.fontFamily }, o.createElement(r.Editor, { blockRenderMap: g, blockRendererFn: k, blockStyleFn: (0, d.su)(h.Z.isNarrowScreenWidth(e)), editorState: b, onChange: l.Z, readOnly: !0, webDriverTestID: "longformRichTextComponent" })))
                     );
                 }),
-                y = p.default.create((e) => ({ fontFamily: { fontFamily: e.fontFamilies.normal } }));
+                v = f.default.create((e) => ({ fontFamily: { fontFamily: e.fontFamilies.normal } }));
         },
         779802: (e, t, n) => {
             "use strict";
-            n.d(t, { $u: () => D, Ak: () => z, KJ: () => k, LI: () => T, P7: () => h, PW: () => E, QF: () => b, Qm: () => w, Tr: () => S, b$: () => p, db: () => Z, et: () => v, fR: () => f, iH: () => $, lD: () => g, su: () => y, u4: () => F, wX: () => x });
+            n.d(t, { $u: () => D, Ak: () => x, KJ: () => k, LI: () => T, P7: () => p, PW: () => E, QF: () => b, Qm: () => w, Tr: () => S, b$: () => f, db: () => F, et: () => y, fR: () => h, iH: () => z, lD: () => g, su: () => v, u4: () => Z, wX: () => $ });
             var o = n(202784),
                 r = n(674132),
                 i = n.n(r),
@@ -328,49 +328,49 @@
                 m = n(89085),
                 u = n(630715),
                 _ = n(731708);
-            const f = { bold: "BOLD", italic: "ITALIC", strikethrough: "STRIKETHROUGH" },
-                p = (e) => [
-                    { buttonTestId: "btn-bold", Icon: a.default, key: f.bold, onPress: e(f.bold) },
-                    { buttonTestId: "btn-italic", Icon: l.default, key: f.italic, onPress: e(f.italic) },
-                    { buttonTestId: "btn-strikethrough", Icon: s.default, key: f.strikethrough, onPress: e(f.strikethrough) },
+            const h = { bold: "BOLD", italic: "ITALIC", strikethrough: "STRIKETHROUGH" },
+                f = (e) => [
+                    { buttonTestId: "btn-bold", Icon: a.default, key: h.bold, onPress: e(h.bold) },
+                    { buttonTestId: "btn-italic", Icon: l.default, key: h.italic, onPress: e(h.italic) },
+                    { buttonTestId: "btn-strikethrough", Icon: s.default, key: h.strikethrough, onPress: e(h.strikethrough) },
                 ],
-                h = { atomic: "atomic", blockquote: "blockquote", bulleted: "unordered-list-item", header1: "header-one", header2: "header-two", numbered: "ordered-list-item", paragraph: "unstyled" },
-                b = (e) => [{ buttonTestId: "btn-blockquote", Icon: d.default, key: h.blockquote, onPress: e(h.blockquote) }],
+                p = { atomic: "atomic", blockquote: "blockquote", bulleted: "unordered-list-item", header1: "header-one", header2: "header-two", numbered: "ordered-list-item", paragraph: "unstyled" },
+                b = (e) => [{ buttonTestId: "btn-blockquote", Icon: d.default, key: p.blockquote, onPress: e(p.blockquote) }],
                 g = (e) => [
-                    { buttonTestId: "btn-ul", Icon: c.default, key: h.bulleted, onPress: e(h.bulleted) },
-                    { buttonTestId: "btn-ol", Icon: m.default, key: h.numbered, onPress: e(h.numbered) },
+                    { buttonTestId: "btn-ul", Icon: c.default, key: p.bulleted, onPress: e(p.bulleted) },
+                    { buttonTestId: "btn-ol", Icon: m.default, key: p.numbered, onPress: e(p.numbered) },
                 ],
                 w = "LINK",
                 k = (e) => [{ buttonTestId: "btn-link", Icon: u.default, key: w, onPress: e }],
-                y = (e, t) => (n) => {
+                v = (e, t) => (n) => {
                     const o = (t) => (e ? `${t}-narrow` : t);
                     switch (n.getType()) {
-                        case h.bulleted:
+                        case p.bulleted:
                             return o("longform-unordered-list-item");
-                        case h.blockquote:
+                        case p.blockquote:
                             return o("longform-blockquote");
-                        case h.header1:
+                        case p.header1:
                             return o("longform-header-one");
-                        case h.header2:
+                        case p.header2:
                             return o("longform-header-two");
-                        case h.numbered:
+                        case p.numbered:
                             return o("longform-ordered-list-item");
-                        case h.paragraph:
+                        case p.paragraph:
                             return o("longform-unstyled");
                         default:
                             return t?.(n) || "";
                     }
                 },
-                v = i().d5a48014,
+                y = i().d5a48014,
                 E = i().b92b6156,
                 D = i().ec5ed598,
                 T = ({ children: e, extendedWidth: t, size: n, weight: r }) => o.createElement(_.ZP, { extendedWidth: t, size: n, weight: r }, e),
-                S = { blockType: h.paragraph, label: D, component: T({ size: "body", children: D }) },
-                $ = [{ blockType: h.header1, label: v, component: T({ size: "title1", extendedWidth: !0, children: v }) }, { blockType: h.header2, label: E, component: T({ size: "title3", weight: "heavy", children: E }) }, S],
-                x = ["backspace", "backspace-word", "backspace-to-start-of-line"],
-                z = ["delete", "delete-word", "delete-to-start-of-line"],
-                F = "increase-text-size",
-                Z = "decrease-text-size";
+                S = { blockType: p.paragraph, label: D, component: T({ size: "body", children: D }) },
+                z = [{ blockType: p.header1, label: y, component: T({ size: "title1", extendedWidth: !0, children: y }) }, { blockType: p.header2, label: E, component: T({ size: "title3", weight: "heavy", children: E }) }, S],
+                $ = ["backspace", "backspace-word", "backspace-to-start-of-line"],
+                x = ["delete", "delete-word", "delete-to-start-of-line"],
+                Z = "increase-text-size",
+                F = "decrease-text-size";
         },
         989272: (e, t, n) => {
             "use strict";
@@ -439,7 +439,7 @@
             l.metadata = { width: 24, height: 24 };
             const s = l;
         },
-        262754: (e, t, n) => {
+        394123: (e, t, n) => {
             "use strict";
             n.r(t), n.d(t, { default: () => s });
             var o = n(202784),
@@ -448,12 +448,12 @@
                 a = n(347101);
             const l = (e = {}) => {
                 const { direction: t } = (0, i.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M4.496 9.25c0-4.14 3.358-7.5 7.5-7.5s7.5 3.36 7.5 7.5-3.358 7.5-7.5 7.5-7.5-3.36-7.5-7.5zm7.5 9.5c-1.63 0-3.164-.41-4.505-1.13v5.82l4.498-1.87 4.502 1.87v-5.82c-1.338.72-2.869 1.13-4.495 1.13z" })) }, { writingDirection: t });
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M15.636 11.671c2.079-.583 3.093-2.18 3.093-3.929 0-2.307-1.471-4.741-5.983-4.741H5.623V21h7.579c4.411 0 6.008-2.484 6.008-4.994 0-2.383-1.343-3.955-3.574-4.335zm-3.295-6.287c2.535 0 3.27 1.319 3.27 2.662 0 1.242-.583 2.611-3.27 2.611H8.69V5.384h3.651zM8.69 18.617v-5.628h4.208c2.231 0 3.194 1.166 3.194 2.738 0 1.547-.887 2.89-3.397 2.89H8.69z" })) }, { writingDirection: t });
             };
             l.metadata = { width: 24, height: 24 };
             const s = l;
         },
-        818088: (e, t, n) => {
+        894023: (e, t, n) => {
             "use strict";
             n.r(t), n.d(t, { default: () => s });
             var o = n(202784),
@@ -462,12 +462,12 @@
                 a = n(347101);
             const l = (e = {}) => {
                 const { direction: t } = (0, i.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M17 3V0h2v3h3v2h-3v3h-2V5h-3V3h3zM6.5 4c-.276 0-.5.22-.5.5v14.56l6-4.29 6 4.29V11h2v11.94l-8-5.71-8 5.71V4.5C4 3.12 5.119 2 6.5 2h4.502v2H6.5z" })) }, { writingDirection: t });
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M4 7h3v2H4v2h3v2H4v2h3v2H4v2h3v2H2V3h13v5h-2V5H4v2zm18 4v10H10V11h12zm-2 2h-8v2h3v2h-3v2h8v-6z" })) }, { writingDirection: t });
             };
             l.metadata = { width: 24, height: 24 };
             const s = l;
         },
-        971657: (e, t, n) => {
+        856661: (e, t, n) => {
             "use strict";
             n.r(t), n.d(t, { default: () => s });
             var o = n(202784),
@@ -476,12 +476,12 @@
                 a = n(347101);
             const l = (e = {}) => {
                 const { direction: t } = (0, i.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M7.501 19.917L7.471 21H.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977.963 0 1.95.212 2.87.672-.444.478-.851 1.03-1.212 1.656-.507-.204-1.054-.329-1.658-.329-2.767 0-4.57 2.223-4.938 6.004H7.56c-.023.302-.05.599-.059.917zm8.999-8.921c-3.264 0-6.816 2.358-7 8.977L9.471 21h4.528v-2h-2.438c.367-3.781 2.17-6.004 4.938-6.004 1.089 0 2.022.356 2.784 1.004h2.632c-1.376-2.136-3.446-3.004-5.415-3.004zm0-.996c-.799 0-1.527-.279-2.116-.73C13.548 8.63 13 7.632 13 6.5 13 4.57 14.567 3 16.5 3S20 4.57 20 6.5c0 1.132-.548 2.13-1.384 2.77-.589.451-1.317.73-2.116.73zM15 6.5c0 .827.673 1.5 1.5 1.5S18 7.327 18 6.5 17.327 5 16.5 5 15 5.673 15 6.5zm-11 0C4 4.57 5.567 3 7.5 3S11 4.57 11 6.5 9.433 10 7.5 10 4 8.43 4 6.5zm2 0C6 7.327 6.673 8 7.5 8S9 7.327 9 6.5 8.327 5 7.5 5 6 5.673 6 6.5zM21 21h3v-2h-3v-3h-2v3h-3v2h3v3h2v-3z" })) }, { writingDirection: t });
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M9 6h3.731L9.184 18H5v2h10v-2h-3.731l3.547-12H19V4H9v2z" })) }, { writingDirection: t });
             };
             l.metadata = { width: 24, height: 24 };
             const s = l;
         },
-        69893: (e, t, n) => {
+        748138: (e, t, n) => {
             "use strict";
             n.r(t), n.d(t, { default: () => s });
             var o = n(202784),
@@ -490,12 +490,12 @@
                 a = n(347101);
             const l = (e = {}) => {
                 const { direction: t } = (0, i.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M17.879 15c.079.323.121.658.121 1 0 2.757-2.691 5-6 5s-6-2.243-6-5h2c0 1.654 1.794 3 4 3s4-1.346 4-3c0-.352-.096-.686-.246-1h2.125zM12 11c-2.206 0-4-1.346-4-3s1.794-3 4-3 4 1.346 4 3h2c0-2.757-2.691-5-6-5S6 5.243 6 8c0 1.126.455 2.163 1.211 3H3v2h18v-2h-9z" })) }, { writingDirection: t });
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
             };
             l.metadata = { width: 24, height: 24 };
             const s = l;
         },
-        47286: (e, t, n) => {
+        784732: (e, t, n) => {
             "use strict";
             n.r(t), n.d(t, { default: () => s });
             var o = n(202784),
@@ -504,11 +504,25 @@
                 a = n(347101);
             const l = (e = {}) => {
                 const { direction: t } = (0, i.Z)();
-                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M5 5c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2H5zm2.5 5.75c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5zM11 13h7v-2h-7v2zm0 4h4v-2h-4v2zm8.5-10C20.88 7 22 8.12 22 9.5v9c0 1.38-1.12 2.5-2.5 2.5h-15C3.12 21 2 19.88 2 18.5v-9C2 8.12 3.12 7 4.5 7h15zM4 18.5c0 .28.22.5.5.5h15c.28 0 .5-.22.5-.5v-9c0-.28-.22-.5-.5-.5h-15c-.28 0-.5.22-.5.5v9z" })) }, { writingDirection: t });
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M1.998 5.5c0-1.38 1.119-2.5 2.5-2.5h15c1.381 0 2.5 1.12 2.5 2.5v13c0 1.38-1.119 2.5-2.5 2.5h-15c-1.381 0-2.5-1.12-2.5-2.5v-13zm2.5-.5c-.276 0-.5.22-.5.5v13c0 .28.224.5.5.5h15c.276 0 .5-.22.5-.5v-13c0-.28-.224-.5-.5-.5h-15zM6 7h6v6H6V7zm2 2v2h2V9H8zm10 0h-4V7h4v2zm0 4h-4v-2h4v2zm-.002 4h-12v-2h12v2z" })) }, { writingDirection: t });
+            };
+            l.metadata = { width: 24, height: 24 };
+            const s = l;
+        },
+        474761: (e, t, n) => {
+            "use strict";
+            n.r(t), n.d(t, { default: () => s });
+            var o = n(202784),
+                r = n(890601),
+                i = n(783427),
+                a = n(347101);
+            const l = (e = {}) => {
+                const { direction: t } = (0, i.Z)();
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M10.883 4H2v8.5h2.255c-.643 1.14-1.66 1.83-2.735 2.51l3.224 5.06c3.139-2 5.335-4.63 6.084-8.37.444-2.21.405-4.55.154-6.81L10.883 4zM4 10.5V6h5.081c.151 1.84.121 3.64-.213 5.31-.466 2.32-1.519 4.39-3.537 5.96l-1.083-1.7c1.43-1.18 2.662-3.14 2.662-5.07H4zM21.876 4h-8.882v8.5h2.255c-.644 1.14-1.66 1.83-2.735 2.51l3.224 5.06c3.138-2 5.334-4.63 6.083-8.37.444-2.21.406-4.55.154-6.81L21.876 4zm-6.883 6.5V6h5.082c.151 1.84.121 3.64-.214 5.31-.466 2.32-1.519 4.39-3.537 5.96l-1.083-1.7c1.43-1.18 2.663-3.14 2.663-5.07h-2.911z" })) }, { writingDirection: t });
             };
             l.metadata = { width: 24, height: 24 };
             const s = l;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TimelineCardHandler.5efe5a9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TimelineCardHandler.7f8075ca.js.map

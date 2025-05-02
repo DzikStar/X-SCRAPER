@@ -156,25 +156,22 @@
         },
         695356: (e, t, n) => {
             function a(e, t) {
-                c(e)({ element: "news-open-article", action: "click", data: { event_info: JSON.stringify(t) } });
+                l(e)({ element: "news-open-article", action: "click", data: { event_info: JSON.stringify(t) } });
             }
             function o(e, t) {
-                c(e)({ element: "news-article-card-impression", action: "view", data: { impression_id: t.articleId } });
+                l(e)({ element: "news-article-card-impression", action: "view", data: { impression_id: t.articleId } });
             }
             function r(e, t) {
-                c(e)({ element: "news-page-session-duration", action: "focus", data: { duration_ms: t.durationMs, url: t.url, event_info: t.sessionId } });
+                l(e)({ element: "news-page-session-duration", action: "focus", data: { duration_ms: t.durationMs, url: t.url, event_info: t.sessionId } });
             }
             function i(e, t) {
-                c(e)({ element: "news-open-website-source", action: "click", data: { event_info: JSON.stringify(t) } });
+                l(e)({ element: "news-open-post-source", action: "click", data: { event_info: JSON.stringify(t) } });
             }
             function s(e, t) {
-                c(e)({ element: "news-open-post-source", action: "click", data: { event_info: JSON.stringify(t) } });
+                l(e)({ element: "news-article-section-impression", action: "view", data: { impression_id: t.articleId, event_info: JSON.stringify({ sectionIdx: t.sectionIdx, totalNumSections: t.totalNumSections }) } });
             }
-            function l(e, t) {
-                c(e)({ element: "news-article-section-impression", action: "view", data: { impression_id: t.articleId, event_info: JSON.stringify({ sectionIdx: t.sectionIdx, totalNumSections: t.totalNumSections }) } });
-            }
-            n.d(t, { E7: () => r, Ib: () => a, U8: () => s, _$: () => o, sq: () => i, xi: () => l });
-            const c = (e) => (t) => {
+            n.d(t, { E7: () => r, Ib: () => a, U8: () => i, _$: () => o, xi: () => s });
+            const l = (e) => (t) => {
                 e.scribe({ ...t, data: { url: window.location.href, ...t.data } });
             };
         },
@@ -536,8 +533,8 @@
                 );
             }
             const B = r.default.create((e) => ({ container: { width: "100%" }, blur: { filter: "blur(5px)" }, types: { width: "100%" }, typesContent: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space8, marginVertical: e.spaces.space12 }, typeContainer: { width: "max-content", display: "flex", justifyContent: "center", alignItems: "center", paddingVertical: e.spaces.space4, paddingHorizontal: e.spaces.space8, borderRadius: e.borderRadii.xLarge, transition: "all 0.2s ease" }, type: { fontSize: e.fontSizes.subtext2 }, lineChart: { flex: 1, marginTop: e.spaces.space16 }, tick: { fontSize: e.fontSizes.subtext3, lineHeight: e.fontSizes.subtext3, color: e.colors.gray900, fontFamily: e.fontFamilies.normal } })),
-                O = [r.default.theme.colors.blue300, r.default.theme.colors.yellow300, r.default.theme.colors.orange300, r.default.theme.colors.green300, r.default.theme.colors.magenta300, r.default.theme.colors.plum300, r.default.theme.colors.red300, r.default.theme.colors.purple300, r.default.theme.colors.teal300];
-            const H = "What do people think?";
+                H = [r.default.theme.colors.blue300, r.default.theme.colors.yellow300, r.default.theme.colors.orange300, r.default.theme.colors.green300, r.default.theme.colors.magenta300, r.default.theme.colors.plum300, r.default.theme.colors.red300, r.default.theme.colors.purple300, r.default.theme.colors.teal300];
+            const O = "What do people think?";
             function A({ containerStyle: e, hoveredContainerStyle: t, onClick: n, percentageScoreContainerStyle: c, percentageScoreStyle: p, questionStyle: h, sentiment: y, showPercentages: f, style: g, typeStyle: b }) {
                 const C = (0, d.v9)(m.Qb),
                     { chartData: x, typeMetadata: v } = (function ({ sentiment: e }) {
@@ -546,7 +543,7 @@
                                 n = {};
                             return (
                                 e.sentiment_types.forEach((t, a) => {
-                                    n[t] = { idx: a, label: t, color: O[a % e.sentiment_types.length] };
+                                    n[t] = { idx: a, label: t, color: H[a % e.sentiment_types.length] };
                                 }),
                                 [...(e.sentiment_scores ?? [])].forEach((e) => {
                                     const a = Number(e.timestamp),
@@ -596,7 +593,7 @@
                         ),
                     );
                 }
-                return a.createElement(o.Z, { style: [F.container, g] }, a.createElement(o.Z, { style: F.headerContainer }, a.createElement(o.Z, { style: F.questionContainer }, a.createElement(s.ZP, { style: F.title, weight: "bold" }, H), a.createElement(s.ZP, { style: F.question }, y.question))), a.createElement(o.Z, { style: F.visibilityContainer }, a.createElement(L, { chartData: x, isBlurred: !C, typeMetadata: v }), !C && a.createElement(o.Z, { style: F.loggedOutContainer }, a.createElement(l.ZP, { backgroundColor: "gray50", borderColor: "transparent", link: "/login" }, "Login to view"))));
+                return a.createElement(o.Z, { style: [F.container, g] }, a.createElement(o.Z, { style: F.headerContainer }, a.createElement(o.Z, { style: F.questionContainer }, a.createElement(s.ZP, { style: F.title, weight: "bold" }, O), a.createElement(s.ZP, { style: F.question }, y.question))), a.createElement(o.Z, { style: F.visibilityContainer }, a.createElement(L, { chartData: x, isBlurred: !C, typeMetadata: v }), !C && a.createElement(o.Z, { style: F.loggedOutContainer }, a.createElement(l.ZP, { backgroundColor: "gray50", borderColor: "transparent", link: "/login" }, "Login to view"))));
             }
             const F = r.default.create((e) => ({ interactivePercentageContainer: { flex: 1 }, compactInteractivePercentageContainer: { width: "100%", flex: 1 }, percentagesContainer: { padding: e.spaces.space12, backgroundColor: "transparent", borderRadius: e.borderRadii.medium, borderStyle: "solid", borderWidth: 1, borderColor: e.colors.gray100, width: "100%", display: "flex", flexDirection: "column", transition: "background-color 0.2s ease", gap: e.spaces.space8 }, compactPercentagesContainer: { width: "100%" }, hoveredPercentagesContainer: { backgroundColor: e.colors.gray50, cursor: "pointer" }, percentageQuestion: { color: e.colors.gray700, fontSize: e.fontSizes.subtext1 }, percentageScoresContainer: { display: "flex", flexDirection: "row", gap: e.spaces.space32, width: "100%", maxWidth: "100%" }, compactPercentageScoresContainer: { width: "100%", gap: "unset", justifyContent: "space-between" }, percentageScore: { display: "flex", flexDirection: "column" }, percentageType: { color: e.colors.gray700, fontSize: e.fontSizes.subtext1 }, percentagePercentage: { fontSize: e.fontSizes.title4 }, percentageTotalPosts: { color: e.colors.gray700, fontSize: e.fontSizes.subtext2 }, container: { width: "100%", padding: e.spaces.space16, backgroundColor: e.colors.gray0, transition: "background-color 0.2s ease", borderRadius: e.borderRadii.medium, borderStyle: "solid", borderWidth: 1, borderColor: e.colors.gray200 }, hoveredContainer: { backgroundColor: e.colors.gray400, cursor: "pointer" }, headerContainer: { display: "flex", flexDirection: "row", width: "100%", gap: e.spaces.space16 }, questionContainer: { display: "flex", flexDirection: "column", gap: e.spaces.space8, width: "100%" }, title: {}, question: {}, visibilityContainer: { position: "relative" }, loggedOutContainer: { position: "absolute", start: 0, top: 0, width: "100%", height: "100%", backgroundColor: c.Z.hexToCss(e.colors.gray0, 0.5), display: "flex", justifyContent: "center", alignItems: "center" } }));
         },
@@ -714,4 +711,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.News~ondemand.News~loader.ExploreNews.f67f36aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.News~ondemand.News~loader.ExploreNews.13fb418a.js.map

@@ -54,7 +54,7 @@
                 l = s;
         },
         727384: (e, t, n) => {
-            n.d(t, { BC: () => Ce, BR: () => xe, Bj: () => gt, Bl: () => De, DK: () => Te, DO: () => nt, Dc: () => Z, EQ: () => Ve, FW: () => at, Fs: () => He, GU: () => se, Gl: () => Ae, Gs: () => Le, H_: () => Ee, Ix: () => ut, J$: () => Me, M9: () => he, MO: () => tt, Oc: () => Ke, Ou: () => Ue, Q1: () => ge, QE: () => je, Qu: () => ct, Se: () => Be, So: () => Qe, T3: () => be, Tp: () => Re, UM: () => Pe, UV: () => st, XT: () => ve, _T: () => Se, aY: () => Ge, ab: () => Je, bI: () => Ze, dN: () => L, fq: () => ft, gh: () => it, gx: () => H, i7: () => me, iv: () => Ye, jm: () => Xe, lD: () => re, lw: () => Y, nV: () => G, p2: () => M, pQ: () => Q, qK: () => X, qQ: () => _e, qU: () => Ie, qc: () => dt, uG: () => rt, uN: () => ze, ve: () => $e, vw: () => K, wu: () => ot, yH: () => et, zK: () => Oe, zx: () => J });
+            n.d(t, { BC: () => Ce, BR: () => xe, Bj: () => ft, Bl: () => De, DK: () => Te, DO: () => at, Dc: () => Z, EQ: () => Ve, FW: () => it, Fs: () => Le, GU: () => se, Gl: () => Ae, Gs: () => Ge, H_: () => Me, Ix: () => lt, J$: () => Ke, M9: () => he, MO: () => nt, Oc: () => Ze, Ou: () => Ue, Q1: () => ge, QE: () => je, Qu: () => ot, Se: () => Ee, So: () => Xe, T3: () => be, Tp: () => Re, Ts: () => ze, UM: () => Pe, UV: () => ct, XT: () => ve, _T: () => Se, aY: () => Qe, ab: () => et, bI: () => He, dN: () => L, fq: () => mt, gh: () => rt, gx: () => H, i7: () => me, iv: () => Je, jm: () => Ye, lD: () => re, lw: () => Y, nV: () => G, p2: () => M, pQ: () => Q, qK: () => X, qQ: () => Fe, qU: () => Ie, qc: () => pt, uG: () => st, uN: () => $e, ve: () => _e, vw: () => K, wu: () => dt, yH: () => tt, zK: () => Oe, zx: () => J });
             n(543673), n(240753), n(128399);
             var a = n(617374),
                 i = n.n(a),
@@ -308,19 +308,20 @@
                     qe({ store: e, key: t, handleEmptyList: !0 });
                 },
                 ze = (e) => {
-                    s()(e, (e) => {
-                        ((e) => {
-                            const t = (0, c.getStorageKey)(k.Z.fragment.selections[0], { filter: x.U.PaymentMethodFilterSpending, withIssuedSpend: !0 });
-                            qe({ store: e, key: t, handleEmptyList: !0 });
-                        })(e);
-                    });
+                    const t = (0, c.getStorageKey)(k.Z.fragment.selections[0], { filter: x.U.PaymentMethodFilterSpending, withIssuedSpend: !0 });
+                    qe({ store: e, key: t, handleEmptyList: !0 });
                 },
                 $e = (e) => {
+                    s()(e, (e) => {
+                        ze(e);
+                    });
+                },
+                _e = (e) => {
                     s()(e, (e) => {
                         je(e);
                     });
                 },
-                _e = (e) => {
+                Fe = (e) => {
                     const t = (0, c.getStorageKey)(U.Z.fragment.selections[0], { search_filter_id: q.$W });
                     We(e, t);
                     const n = (0, c.getStorageKey)(v.Z.fragment.selections[0], {});
@@ -328,93 +329,93 @@
                     const a = (0, c.getStorageKey)(D.Z.fragment.selections[0], {});
                     We(e, a);
                 },
-                Fe = (e) => {
+                Be = (e) => {
                     const t = (0, c.getStorageKey)(A.Z.fragment.selections[0], {});
                     qe({ store: e, key: t });
                 },
-                Be = (e, t) => {
+                Ee = (e, t) => {
                     s()(e, (e) => {
                         t &&
                             ((e, t) => {
                                 const n = e.get(t);
                                 n && n.invalidateRecord();
                             })(e, t),
-                            _e(e),
-                            Fe(e);
+                            Fe(e),
+                            Be(e);
                     });
                 },
-                Ee = (e, { reasonCode: t, recordId: n, status: a }) => {
-                    if ((me({ status: a }) || (_e(e), Fe(e)), n && a)) {
+                Me = (e, { reasonCode: t, recordId: n, status: a }) => {
+                    if ((me({ status: a }) || (Fe(e), Be(e)), n && a)) {
                         const i = e.get(n);
                         i && (i.setValue(a, "transaction_status"), i.setValue(t, "reason_code"));
                     }
                 },
-                Me = (e) => {
+                Ke = (e) => {
                     s()(e, (e) => {
                         ((e) => {
                             const t = (0, c.getStorageKey)(S.Z.fragment.selections[0], {});
                             We(e, t);
                         })(e),
-                            _e(e),
-                            Fe(e);
+                            Fe(e),
+                            Be(e);
                     });
                 },
-                Ke = (e) => {
+                Ze = (e) => {
                     const t = (0, c.getStorageKey)(N.Z.fragment.selections[0], {});
                     We(e, t);
                 },
-                Ze = () => l.ZP.isMobileOS(),
-                He = ({ permission: e, permissions: t }) => !!t?.includes(e),
-                Le = (e) => He({ permissions: e, permission: y.d.VerifyIdentity }),
-                Ge = (e) => He({ permissions: e, permission: y.d.UpdateCustomerPreferences }),
-                Qe = ({ roles: e }) => !!e?.includes(w.N.Ineligible),
-                Xe = ({ roles: e }) => !!e?.includes(w.N.PendingBalanceAutoClaim),
-                Ye = ({ roles: e }) => !!e?.includes(w.N.RestrictedGeolocationUsState) || !!e?.includes(w.N.RestrictedOnboardingUsState),
-                Je = ({ roles: e }) => !!e?.includes(w.N.KycFailed) || !!e?.includes(w.N.PendingReview),
-                et = ({ roles: e }) => !!e?.includes(w.N.PendingKycUnverifiedLimitExceeded),
-                tt = ({ permissions: e }) => He({ permissions: e, permission: y.d.RequestTransfer }),
-                nt = ({ actionPermission: e, permissions: t, roles: n }) => (Le(t) && !He({ permissions: t, permission: e }) ? at({ roles: n }) : null),
-                at = ({ roles: e }) => {
+                He = () => l.ZP.isMobileOS(),
+                Le = ({ permission: e, permissions: t }) => !!t?.includes(e),
+                Ge = (e) => Le({ permissions: e, permission: y.d.VerifyIdentity }),
+                Qe = (e) => Le({ permissions: e, permission: y.d.UpdateCustomerPreferences }),
+                Xe = ({ roles: e }) => !!e?.includes(w.N.Ineligible),
+                Ye = ({ roles: e }) => !!e?.includes(w.N.PendingBalanceAutoClaim),
+                Je = ({ roles: e }) => !!e?.includes(w.N.RestrictedGeolocationUsState) || !!e?.includes(w.N.RestrictedOnboardingUsState),
+                et = ({ roles: e }) => !!e?.includes(w.N.KycFailed) || !!e?.includes(w.N.PendingReview),
+                tt = ({ roles: e }) => !!e?.includes(w.N.PendingKycUnverifiedLimitExceeded),
+                nt = ({ permissions: e }) => Le({ permissions: e, permission: y.d.RequestTransfer }),
+                at = ({ actionPermission: e, permissions: t, roles: n }) => (Ge(t) && !Le({ permissions: t, permission: e }) ? it({ roles: n }) : null),
+                it = ({ roles: e }) => {
                     const t = e?.includes(w.N.PendingSelfieVerification) || e?.includes(w.N.KycDocumentsVerified),
                         n = e?.includes(w.N.KycPendingDocumentUpload) || e?.includes(w.N.KycVerified);
                     return t ? V.AU.selfie.verifyIdentityPath : n ? V.AU.tier3.verifyIdentityPath : V.AU.tier2.verifyIdentityPath;
                 },
-                it = () => {
+                rt = () => {
                     if (l.ZP.isTwitterApp()) return window?.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
                     return { [o.default.ThemePaletteNames.light]: "light", [o.default.ThemePaletteNames.dark]: "dim", [o.default.ThemePaletteNames.darker]: "dark", [o.default.ThemePaletteNames.business]: "dark" }[d.default.theme.paletteName] || "light";
                 },
-                rt = ({ basePath: e, moreSearchParams: t, paymentsOrigin: n, providerToken: a, theme: i, xPaymentsSession: r }) => {
+                st = ({ basePath: e, moreSearchParams: t, paymentsOrigin: n, providerToken: a, theme: i, xPaymentsSession: r }) => {
                     if (!n || !r || !a) return null;
                     const s = new URL(`${n}${e}`);
                     if ((s.searchParams.set("sessionId", r), s.searchParams.set("providerToken", a), s.searchParams.set("theme", i), t)) for (const [e, n] of t) s.searchParams.set(e, n);
                     return s.href;
                 },
-                st = ({ amount: e, balanceAmountMicro: t }) => {
+                ct = ({ amount: e, balanceAmountMicro: t }) => {
                     const n = parseFloat(t);
                     return parseFloat(e) <= L({ amount: n });
                 },
-                ct = (e) => new Date(e.year, e.month - 1, e.day),
-                ot = ({ challengeId: e, status: t }) => (me({ status: t }) && e ? V.vw : null),
-                dt = ({ challengeInitiator: e, closePath: t, environment: n, history: a }) => {
-                    switch ((Me(n), e)) {
+                ot = (e) => new Date(e.year, e.month - 1, e.day),
+                dt = ({ challengeId: e, status: t }) => (me({ status: t }) && e ? V.vw : null),
+                pt = ({ challengeInitiator: e, closePath: t, environment: n, history: a }) => {
+                    switch ((Ke(n), e)) {
                         case V.kW.auth:
                             O.Z.closeChallenge();
                             break;
                         case V.kW.preference:
                             ((e) => {
                                 s()(e, (e) => {
-                                    Ke(e);
+                                    Ze(e);
                                 });
                             })(n);
                     }
                     t ? a.replace(t) : a.goBack();
                 },
-                pt = { [V.kW.forgotPin]: V.jR, [V.kW.changeCardPin]: V.SR },
-                ut = ({ challengeInitiator: e }) => (e ? pt[e] : void 0) ?? V.vw,
-                lt = (e) => parseInt(e, 10) / 100,
-                gt = ({ apy: e }) => `${lt(e)}% APY`,
-                ft = ({ rate: e }) => `${lt(e)}% Everywhere`;
+                ut = { [V.kW.forgotPin]: V.jR, [V.kW.changeCardPin]: V.SR },
+                lt = ({ challengeInitiator: e }) => (e ? ut[e] : void 0) ?? V.vw,
+                gt = (e) => parseInt(e, 10) / 100,
+                ft = ({ apy: e }) => `${gt(e)}% APY`,
+                mt = ({ rate: e }) => `${gt(e)}% Everywhere`;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-2a1eb2b7.dc06707a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-2a1eb2b7.f439b98a.js.map

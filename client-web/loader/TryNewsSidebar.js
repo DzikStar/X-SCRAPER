@@ -369,25 +369,22 @@
         },
         695356: (e, t, n) => {
             function a(e, t) {
-                c(e)({ element: "news-open-article", action: "click", data: { event_info: JSON.stringify(t) } });
+                o(e)({ element: "news-open-article", action: "click", data: { event_info: JSON.stringify(t) } });
             }
             function l(e, t) {
-                c(e)({ element: "news-article-card-impression", action: "view", data: { impression_id: t.articleId } });
+                o(e)({ element: "news-article-card-impression", action: "view", data: { impression_id: t.articleId } });
             }
             function s(e, t) {
-                c(e)({ element: "news-page-session-duration", action: "focus", data: { duration_ms: t.durationMs, url: t.url, event_info: t.sessionId } });
+                o(e)({ element: "news-page-session-duration", action: "focus", data: { duration_ms: t.durationMs, url: t.url, event_info: t.sessionId } });
             }
             function r(e, t) {
-                c(e)({ element: "news-open-website-source", action: "click", data: { event_info: JSON.stringify(t) } });
+                o(e)({ element: "news-open-post-source", action: "click", data: { event_info: JSON.stringify(t) } });
             }
             function i(e, t) {
-                c(e)({ element: "news-open-post-source", action: "click", data: { event_info: JSON.stringify(t) } });
+                o(e)({ element: "news-article-section-impression", action: "view", data: { impression_id: t.articleId, event_info: JSON.stringify({ sectionIdx: t.sectionIdx, totalNumSections: t.totalNumSections }) } });
             }
-            function o(e, t) {
-                c(e)({ element: "news-article-section-impression", action: "view", data: { impression_id: t.articleId, event_info: JSON.stringify({ sectionIdx: t.sectionIdx, totalNumSections: t.totalNumSections }) } });
-            }
-            n.d(t, { E7: () => s, Ib: () => a, U8: () => i, _$: () => l, sq: () => r, xi: () => o });
-            const c = (e) => (t) => {
+            n.d(t, { E7: () => s, Ib: () => a, U8: () => r, _$: () => l, xi: () => i });
+            const o = (e) => (t) => {
                 e.scribe({ ...t, data: { url: window.location.href, ...t.data } });
             };
         },
@@ -522,4 +519,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TryNewsSidebar.2cace02a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TryNewsSidebar.d390f4ea.js.map

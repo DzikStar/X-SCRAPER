@@ -3,7 +3,7 @@
     ["loader.VerticalGridItemHandler"],
     {
         395267: (e, t, r) => {
-            r.r(t), r.d(t, { default: () => U });
+            r.r(t), r.d(t, { default: () => D });
             var o = r(459643),
                 l = r(942893),
                 a = r(351322),
@@ -26,38 +26,38 @@
                     return n.createElement(d.Z, { style: g.wrapper }, n.createElement(f.Z, { "aria-label": e, containerStyle: g.mainContainer, link: r, onClick: o, upper: c, withInteractiveStyling: !0 }));
                 },
                 w = h.default.create((e) => ({ base: { flexGrow: 1, backgroundColor: e.colors.primary, justifyContent: "center" }, centerTile: { margin: e.spaces.space8 }, container: { padding: 0, borderRadius: e.borderRadii.large }, wrapper: { padding: e.spaces.space4, borderRadius: e.borderRadii.large } })),
-                C = ({ "aria-label": e, link: t, onClick: r, text: o }) => {
+                v = ({ "aria-label": e, link: t, onClick: r, text: o }) => {
                     const l = u.Z.generate({ backgroundColor: h.default.theme.colors.primary, color: h.default.theme.colors.white }),
                         a = n.createElement(b.Z, { "aria-label": e, interactiveStyles: l, style: w.base }, n.createElement(m.ZP, { align: "center", color: "whiteOnColor", numberOfLines: 3, size: "headline2", style: w.centerTile, weight: "bold" }, o));
                     return n.createElement(d.Z, { style: w.wrapper }, n.createElement(f.Z, { "aria-label": e, containerStyle: w.container, link: t, onClick: r, upper: a, withInteractiveStyling: !0 }));
                 };
-            var v = r(674132),
-                k = r.n(v),
+            var C = r(674132),
+                k = r.n(C),
                 Z = r(324688),
                 E = r(233391),
                 S = r(288955),
                 x = r(71620),
-                R = r(668214),
-                I = r(466380);
-            const T = (0, R.Z)()
-                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, x.zr)("TOPIC_TILE_CONTEXT"), follow: I.Z.follow, unfollow: I.Z.unfollow }))
+                z = r(668214),
+                R = r(466380);
+            const I = (0, z.Z)()
+                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, x.zr)("TOPIC_TILE_CONTEXT"), follow: R.Z.follow, unfollow: R.Z.unfollow }))
                     .withAnalytics(),
-                z = k().je808a17,
-                L = k().ge8f3043,
-                F = k().aa576cbf,
-                H = T((e) => {
+                T = k().je808a17,
+                H = k().ge8f3043,
+                L = k().aa576cbf,
+                F = I((e) => {
                     const { analytics: t, createLocalApiErrorHandler: r, follow: o, isRecommended: l, style: a, topic: c, unfollow: d, url: p } = e,
                         { following: m, id: u, name: b } = c,
-                        h = m ? F({ topicName: b }) : L({ topicName: b }),
+                        h = m ? L({ topicName: b }) : H({ topicName: b }),
                         f = n.useRef(!1),
-                        g = (e, t, r) => (c.following ? e(v(r)) : e(w(t))),
+                        g = (e, t, r) => (c.following ? e(C(r)) : e(w(t))),
                         w = (e) => (l) => {
                             o(c.id)
                                 .catch(r())
                                 .then(e && e(c.id)),
                                 t.scribeAction("follow");
                         },
-                        v = (e) => (o) => {
+                        C = (e) => (o) => {
                             d(c.id)
                                 .catch(r())
                                 .then(e && e(c.id)),
@@ -72,17 +72,17 @@
                             const c = l
                                 ? ((e, t, r) => ({ "aria-label": h, onClick: g(e, t, r), text: b }))(e, t, o)
                                 : ((e) => {
-                                      return { "aria-label": z({ topicName: b }), onClick: e(k), link: p?.url || ((t = u), `/i/topics/${t}`), text: b };
+                                      return { "aria-label": T({ topicName: b }), onClick: e(k), link: p?.url || ((t = u), `/i/topics/${t}`), text: b };
                                       var t;
                                   })(e);
-                            return n.createElement(n.Fragment, null, a === i.pI.DoubleStateDefault ? n.createElement(y, (0, s.Z)({}, c, { isSelected: m })) : n.createElement(C, c));
+                            return n.createElement(n.Fragment, null, a === i.pI.DoubleStateDefault ? n.createElement(y, (0, s.Z)({}, c, { isSelected: m })) : n.createElement(v, c));
                         }),
                     );
                 }),
                 A = (e, t) => {
-                    if (t.entry.content.content.topicTile) return I.Z.select(e, t.entry.content.content?.topicTile.topicId);
+                    if (t.entry.content.content.topicTile) return R.Z.select(e, t.entry.content.content?.topicTile.topicId);
                 },
-                _ = ({ entry: e, feedbackItems: t, module: r, topic: o }) => {
+                M = ({ entry: e, feedbackItems: t, module: r, topic: o }) => {
                     const l = (0, c.z)(),
                         { functionalityType: a, style: s, url: d } = e.content.content.topicTile,
                         p = a === i.sv.Recommendation;
@@ -90,15 +90,15 @@
                         n.useEffect(() => {
                             l.scribe({ action: "impression" });
                         }, [l]),
-                        o ? n.createElement(H, { isRecommended: p, style: s, topic: o, url: d }) : null
+                        o ? n.createElement(F, { isRecommended: p, style: s, topic: o, url: d }) : null
                     );
                 },
-                D = (0, R.Z)()
+                _ = (0, z.Z)()
                     .propsFromState(() => ({ topic: A }))
-                    .withAnalytics()(n.memo(_)),
-                U = a
+                    .withAnalytics()(n.memo(M)),
+                D = a
                     .iH({
-                        component: D,
+                        component: _,
                         shouldDisplayBorder: (0, o.Z)(!1),
                         isFocusable: (0, o.Z)(!0),
                         getScribeDataItem(e) {
@@ -126,7 +126,7 @@
                     return o.createElement(n.Z, { "aria-label": e, disabled: r, interactive: g, interactiveStyles: g ? y : void 0, link: d, onClick: m, style: [c.root, t] }, w);
                 };
         },
-        971657: (e, t, r) => {
+        748138: (e, t, r) => {
             r.r(t), r.d(t, { default: () => c });
             var o = r(202784),
                 l = r(890601),
@@ -134,12 +134,12 @@
                 n = r(347101);
             const i = (e = {}) => {
                 const { direction: t } = (0, a.Z)();
-                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M7.501 19.917L7.471 21H.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977.963 0 1.95.212 2.87.672-.444.478-.851 1.03-1.212 1.656-.507-.204-1.054-.329-1.658-.329-2.767 0-4.57 2.223-4.938 6.004H7.56c-.023.302-.05.599-.059.917zm8.999-8.921c-3.264 0-6.816 2.358-7 8.977L9.471 21h4.528v-2h-2.438c.367-3.781 2.17-6.004 4.938-6.004 1.089 0 2.022.356 2.784 1.004h2.632c-1.376-2.136-3.446-3.004-5.415-3.004zm0-.996c-.799 0-1.527-.279-2.116-.73C13.548 8.63 13 7.632 13 6.5 13 4.57 14.567 3 16.5 3S20 4.57 20 6.5c0 1.132-.548 2.13-1.384 2.77-.589.451-1.317.73-2.116.73zM15 6.5c0 .827.673 1.5 1.5 1.5S18 7.327 18 6.5 17.327 5 16.5 5 15 5.673 15 6.5zm-11 0C4 4.57 5.567 3 7.5 3S11 4.57 11 6.5 9.433 10 7.5 10 4 8.43 4 6.5zm2 0C6 7.327 6.673 8 7.5 8S9 7.327 9 6.5 8.327 5 7.5 5 6 5.673 6 6.5zM21 21h3v-2h-3v-3h-2v3h-3v2h3v3h2v-3z" })) }, { writingDirection: t });
+                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
             };
             i.metadata = { width: 24, height: 24 };
             const c = i;
         },
-        98440: (e, t, r) => {
+        452693: (e, t, r) => {
             r.r(t), r.d(t, { default: () => c });
             var o = r(202784),
                 l = r(890601),
@@ -147,11 +147,11 @@
                 n = r(347101);
             const i = (e = {}) => {
                 const { direction: t } = (0, a.Z)();
-                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" })) }, { writingDirection: t });
+                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [n.Z.root, e.style], viewBox: "0 0 24 24", children: o.createElement("g", null, o.createElement("path", { d: "M12 1.75c-5.11 0-9.25 4.14-9.25 9.25 0 4.77 3.61 8.7 8.25 9.2v2.96l1.15-.17c1.88-.29 4.11-1.56 5.87-3.5 1.79-1.96 3.17-4.69 3.23-7.97.09-5.54-4.14-9.77-9.25-9.77zM13 14H9v-2h4v2zm2-4H9V8h6v2z" })) }, { writingDirection: t });
             };
             i.metadata = { width: 24, height: 24 };
             const c = i;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.VerticalGridItemHandler.9411f95a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.VerticalGridItemHandler.6f71d11a.js.map

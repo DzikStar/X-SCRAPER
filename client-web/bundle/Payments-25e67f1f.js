@@ -27,7 +27,7 @@
                 P = n(698478),
                 v = n(293115),
                 _ = n(312771),
-                w = n(847347),
+                w = n(803263),
                 x = n(634455),
                 I = n(575123),
                 S = n(452275),
@@ -705,4 +705,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-25e67f1f.3b8136fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-25e67f1f.0148e2aa.js.map

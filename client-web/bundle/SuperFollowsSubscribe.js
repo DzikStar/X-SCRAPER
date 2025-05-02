@@ -26,7 +26,7 @@
             }
         },
         767508: (e, a, l) => {
-            l.r(a), l.d(a, { default: () => S });
+            l.r(a), l.d(a, { default: () => h });
             var n = l(807896),
                 r = l(202784),
                 t = l(669406),
@@ -37,8 +37,8 @@
                 u = l.n(c),
                 d = l(980407),
                 m = l(569778),
-                p = l(293115);
-            const g = u().a0b4541c,
+                g = l(293115);
+            const p = u().a0b4541c,
                 _ = u().a5634d9a,
                 b = u().a893d602,
                 y = { page: "super_follows_subscription_failure" },
@@ -47,9 +47,9 @@
                     const { history: a, match: l } = e,
                         n = l.params.screenName,
                         t = n ? `/${n}/superfollows/subscribe` : "/home";
-                    return r.createElement(p.nO, { namespace: y }, r.createElement(d.Z, { backButtonType: "close", backLocation: t, history: a }, r.createElement(s.Z, { style: k.wrapper }, r.createElement(m.Z, { headline: g, illustration: m.j.ConfusedDog, subtext: _ }), r.createElement(i.ZP, { onPress: () => a.replace(t), size: "xLarge", style: k.button, type: "primaryFilled" }, b))));
+                    return r.createElement(g.nO, { namespace: y }, r.createElement(d.Z, { backButtonType: "close", backLocation: t, history: a }, r.createElement(s.Z, { style: k.wrapper }, r.createElement(m.Z, { headline: p, illustration: m.j.ConfusedDog, subtext: _ }), r.createElement(i.ZP, { onPress: () => a.replace(t), size: "xLarge", style: k.button, type: "primaryFilled" }, b))));
                 },
-                S = (e) => r.createElement(t.Z, (0, n.Z)({}, e, { component: f }));
+                h = (e) => r.createElement(t.Z, (0, n.Z)({}, e, { component: f }));
         },
         518983: (e, a, l) => {
             l.r(a), l.d(a, { default: () => qe });
@@ -63,8 +63,8 @@
                 u,
                 d,
                 m,
-                p,
                 g,
+                p,
                 _ = l(807896),
                 b = l(202784),
                 y = l(669406),
@@ -122,7 +122,7 @@
                                                     s,
                                                     i,
                                                     { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "following", storageKey: null }, (c = { alias: null, args: null, kind: "ScalarField", name: "id_str", storageKey: null }), (u = { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }), (d = { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null }), (m = { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null })], storageKey: null },
-                                                    (p = { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" }),
+                                                    (g = { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" }),
                                                     {
                                                         alias: null,
                                                         args: null,
@@ -164,7 +164,7 @@
                                                         ],
                                                         storageKey: null,
                                                     },
-                                                    (g = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }),
+                                                    (p = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }),
                                                 ],
                                                 type: "User",
                                                 abstractKey: null,
@@ -172,11 +172,11 @@
                                         ],
                                         storageKey: null,
                                     },
-                                    g,
+                                    p,
                                 ],
                                 storageKey: null,
                             },
-                            { alias: "viewer", args: o, concreteType: "Viewer", kind: "LinkedField", name: "viewer_v2", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [t, { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [c, m, { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }, d, u], storageKey: null }, p, { alias: null, args: null, kind: "ScalarField", name: "is_blue_verified", storageKey: null }, g], type: "User", abstractKey: null }], storageKey: null }, g], storageKey: null }], storageKey: 'viewer_v2(s:"4721")' },
+                            { alias: "viewer", args: o, concreteType: "Viewer", kind: "LinkedField", name: "viewer_v2", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [t, { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [c, m, { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }, d, u], storageKey: null }, g, { alias: null, args: null, kind: "ScalarField", name: "is_blue_verified", storageKey: null }, p], type: "User", abstractKey: null }], storageKey: null }, p], storageKey: null }], storageKey: 'viewer_v2(s:"4721")' },
                         ],
                     },
                     params: { id: "VU-9k-bJdiGJL-z9bU3QQQ", metadata: { features: ["creator_subscriptions_email_share_enabled", "super_follow_subscriptions_tax_calculation_enabled"] }, name: "SuperFollowsSubscribeQuery", operationKind: "query", text: null },
@@ -184,21 +184,21 @@
             k.hash = "b5ca6f3d0c226d006500f7a642421be5";
             const f = k;
             l(585488);
-            var S = l(107267),
-                h = l(154003),
-                F = l(392237),
-                w = l(674132),
-                v = l.n(w),
+            var h = l(107267),
+                S = l(154003),
+                v = l(392237),
+                F = l(674132),
+                w = l.n(F),
                 K = l(980407),
                 E = l(724345),
                 Z = l(783373),
                 L = l(883229),
                 C = l(943914),
-                T = l(293115),
-                x = l(28557),
-                N = l(535338),
-                U = l(615027),
-                V =
+                x = l(293115),
+                T = l(28557),
+                V = l(535338),
+                N = l(615027),
+                U =
                     (l(136728),
                     {
                         argumentDefinitions: [],
@@ -213,8 +213,8 @@
                         abstractKey: null,
                         hash: "2346846c87f6b76cd76ea9b834745cff",
                     });
-            const P = V;
-            var B = {
+            const P = U;
+            var z = {
                 argumentDefinitions: [],
                 kind: "Fragment",
                 metadata: null,
@@ -257,11 +257,11 @@
                 abstractKey: null,
                 hash: "8cc9851e7df50c2a31cb138abffb7743",
             };
-            const R = B;
-            var A = l(576648),
-                M = l(325686),
-                I = l(277660),
-                z = l.n(I),
+            const B = z;
+            var M = l(576648),
+                R = l(325686),
+                A = l(277660),
+                I = l.n(A),
                 D = l(811176),
                 H = l(167630),
                 $ = l(708852),
@@ -279,11 +279,11 @@
                 le = l(96083),
                 ne = l(855488),
                 re = l(725405);
-            const te = v().be03ecca,
+            const te = w().be03ecca,
                 se = (0, ee.ju)("https://help.x.com/using-x/creator-email-sharing"),
                 ie = (0, ee.ju)("https://legal.x.com/creator-email-sharing-terms.html"),
-                oe = v().i859a9d4,
-                ce = F.default.create((e) => ({ learnMore: { marginStart: e.spaces.space4 }, row: { flexDirection: "row", gap: e.spaces.space16 }, noSpacing: { paddingHorizontal: "0" } })),
+                oe = w().i859a9d4,
+                ce = v.default.create((e) => ({ learnMore: { marginStart: e.spaces.space4 }, row: { flexDirection: "row", gap: e.spaces.space16 }, noSpacing: { paddingHorizontal: "0" } })),
                 ue = ({ consented: e, creatorName: a, setConsented: l, setSubscriptionEmail: n, subscriptionEmail: r }) => {
                     const [t, s] = b.useState(),
                         i = (0, re.Z)(),
@@ -298,7 +298,7 @@
                             [i, l, n],
                         ),
                         d = b.useMemo(() => ({ elements: { link: b.createElement(ae.ZP, { color: "plum500", link: ie }) }, variables: { creatorName: a } }), [a]);
-                    return b.createElement(M.Z, null, b.createElement(M.Z, { style: ce.row }, b.createElement(le.Z, { checked: e, onChange: u }), b.createElement(ae.ZP, { color: "gray700" }, b.createElement(v().I18NFormatMessage, { $i18n: "fca299bb", creatorName: d.variables.creatorName }, b.cloneElement(d.elements.link, null, v().e6c72234)), b.createElement(ae.ZP, { color: "plum500", link: se, style: ce.learnMore }, oe))), b.createElement(ne.Z, { editable: e, errorText: t, invalid: !!t, label: te, name: "subscriptionEmailAddress", onBlur: o, onChange: c, style: ce.noSpacing, testID: "subscriptionEmailAddress", value: r }));
+                    return b.createElement(R.Z, null, b.createElement(R.Z, { style: ce.row }, b.createElement(le.Z, { checked: e, onChange: u }), b.createElement(ae.ZP, { color: "gray700" }, b.createElement(w().I18NFormatMessage, { $i18n: "fca299bb", creatorName: d.variables.creatorName }, b.cloneElement(d.elements.link, null, w().e6c72234)), b.createElement(ae.ZP, { color: "plum500", link: se, style: ce.learnMore }, oe))), b.createElement(ne.Z, { editable: e, errorText: t, invalid: !!t, label: te, name: "subscriptionEmailAddress", onBlur: o, onChange: c, style: ce.noSpacing, testID: "subscriptionEmailAddress", value: r }));
                 };
             var de = {
                 argumentDefinitions: [],
@@ -329,7 +329,7 @@
                 hash: "c0b095939892a751da866980235d0119",
             };
             const me = de;
-            var pe = {
+            var ge = {
                 argumentDefinitions: [],
                 kind: "Fragment",
                 metadata: null,
@@ -380,32 +380,32 @@
                 abstractKey: null,
                 hash: "6d5d948a571d822cae9ae0b570ac834d",
             };
-            const ge = pe;
+            const pe = ge;
             var _e = l(879101),
                 be = l(8685);
-            const ye = ge,
+            const ye = pe,
                 ke = me,
                 fe = (e) => {
                     const { children: a, emailShareElement: l, isWide: n, user: r, viewer: t } = e,
-                        s = z()(ye, r),
-                        i = z()(ke, t),
+                        s = I()(ye, r),
+                        i = I()(ke, t),
                         o = s.legacy?.name ?? void 0,
                         c = s.legacy?.profile_image_url_https ?? void 0,
                         u = s.legacy?.screen_name ?? void 0,
                         d = s.super_follow_creator_benefits?.creator_intro ?? void 0,
                         m = (s.super_follow_creator_benefits?.benefits_data ?? []).find((e) => "ExclusiveContent" === e.benefit_type),
-                        p = m?.description ?? void 0,
-                        g = i.legacy?.profile_image_url_https ?? void 0,
+                        g = m?.description ?? void 0,
+                        p = i.legacy?.profile_image_url_https ?? void 0,
                         _ = i.legacy?.name ?? void 0,
                         y = i.legacy?.screen_name ?? void 0,
                         k = i.legacy?.protected ?? void 0,
                         f = i.legacy?.verified ?? void 0,
-                        S = i?.is_blue_verified ?? void 0,
-                        h = b.useMemo(() => [Se.subscribeButtonContainer, n && Se.subscribeButtonContainerWide], [n]);
-                    return b.createElement(b.Fragment, null, b.createElement(be.Z, { badgeImageUrl: g, badgeName: _, badgeScreenName: y, descriptionValue: p, imageUrl: c, introValue: d, isBlueVerified: S, isProtected: k, isVerified: f, name: o, screenName: u }), b.createElement(M.Z, { style: h }, l, b.createElement(_e.Z, { recurring: !0, style: Se.disclaimer }), a));
+                        h = i?.is_blue_verified ?? void 0,
+                        S = b.useMemo(() => [he.subscribeButtonContainer, n && he.subscribeButtonContainerWide], [n]);
+                    return b.createElement(b.Fragment, null, b.createElement(be.Z, { badgeImageUrl: p, badgeName: _, badgeScreenName: y, descriptionValue: g, imageUrl: c, introValue: d, isBlueVerified: h, isProtected: k, isVerified: f, name: o, screenName: u }), b.createElement(R.Z, { style: S }, l, b.createElement(_e.Z, { recurring: !0, style: he.disclaimer }), a));
                 },
-                Se = F.default.create((e) => ({ disclaimer: { marginVertical: e.spaces.space24 }, subscribeButtonContainer: { alignItems: "center", flexGrow: 1, marginBottom: e.spaces.space40, marginTop: e.spaces.space48, paddingHorizontal: e.spaces.space32 }, subscribeButtonContainerWide: { paddingHorizontal: e.spaces.space48 } }));
-            var he = (function () {
+                he = v.default.create((e) => ({ disclaimer: { marginVertical: e.spaces.space24 }, subscribeButtonContainer: { alignItems: "center", flexGrow: 1, marginBottom: e.spaces.space40, marginTop: e.spaces.space48, paddingHorizontal: e.spaces.space32 }, subscribeButtonContainerWide: { paddingHorizontal: e.spaces.space48 } }));
+            var Se = (function () {
                 var e = { defaultValue: null, kind: "LocalArgument", name: "consented" },
                     a = { defaultValue: null, kind: "LocalArgument", name: "creator_id" },
                     l = { defaultValue: null, kind: "LocalArgument", name: "email" },
@@ -442,11 +442,11 @@
                     ];
                 return { fragment: { argumentDefinitions: [e, a, l], kind: "Fragment", metadata: null, name: "useEmailShareConsentUpdateMutation", selections: n, type: "Mutation", abstractKey: null }, kind: "Request", operation: { argumentDefinitions: [l, a, e], kind: "Operation", name: "useEmailShareConsentUpdateMutation", selections: n }, params: { id: "cpdX3u0AUkdRb5mc3LpVpg", metadata: {}, name: "useEmailShareConsentUpdateMutation", operationKind: "mutation", text: null } };
             })();
-            he.hash = "c3538b09e6ebfaf72cfafe1dcdd48251";
-            const Fe = he;
-            var we = l(351743),
-                ve = l.n(we);
-            const Ke = Fe;
+            Se.hash = "c3538b09e6ebfaf72cfafe1dcdd48251";
+            const ve = Se;
+            var Fe = l(351743),
+                we = l.n(Fe);
+            const Ke = ve;
             l(571372);
             var Ee = (function () {
                 var e = [
@@ -475,13 +475,13 @@
             })();
             Ee.hash = "759d9c15b4318f3e6cf9204063fd8da0";
             const Ze = Ee,
-                Le = v().d2613123,
-                Ce = v().ef4602ec,
-                Te = v().c4640fc0,
-                xe = v().a72064a8,
-                Ne = v().f88553c8,
-                Ue = R,
-                Ve = P,
+                Le = w().d2613123,
+                Ce = w().ef4602ec,
+                xe = w().c4640fc0,
+                Te = w().a72064a8,
+                Ve = w().f88553c8,
+                Ne = B,
+                Ue = P,
                 Pe = (e) => {
                     const { screenName: a, user: l, viewer: n } = e,
                         r = (0, Q.hC)("subscriptions_marketing_page_include_tax_enabled"),
@@ -491,25 +491,25 @@
                         [c, u] = b.useState(!1),
                         d = b.useRef(),
                         m = (0, q.R)(d, { threshold: 0.5 }),
-                        p = (0, Y.z)(),
-                        g = z()(Ue, l),
-                        y = z()(Ve, n),
-                        k = (0, S.useHistory)(),
+                        g = (0, Y.z)(),
+                        p = I()(Ne, l),
+                        y = I()(Ue, n),
+                        k = (0, h.useHistory)(),
                         f = (0, W.p)(),
-                        F = g.legacy?.id_str ?? void 0,
-                        w = g.legacy?.screen_name ?? void 0,
-                        v = ((e, a, l, n) => {
+                        v = p.legacy?.id_str ?? void 0,
+                        F = p.legacy?.screen_name ?? void 0,
+                        w = ((e, a, l, n) => {
                             let r = e;
                             return l && n && (r += a), r;
-                        })(g.super_follow_creator_product_metadata?.amount ?? 0, g.super_follow_creator_product_metadata?.tax_amount ?? 0, r, t),
-                        E = g.super_follow_creator_product_metadata?.currency_code ?? void 0,
-                        Z = g.super_follow_creator_product_metadata?.product_id ?? void 0,
+                        })(p.super_follow_creator_product_metadata?.amount ?? 0, p.super_follow_creator_product_metadata?.tax_amount ?? 0, r, t),
+                        E = p.super_follow_creator_product_metadata?.currency_code ?? void 0,
+                        Z = p.super_follow_creator_product_metadata?.product_id ?? void 0,
                         L = y.legacy?.id_str ?? void 0,
-                        { href: C, origin: T } = J.ZP.get(),
-                        x = w ? `${T}/${w}/creator-subscriptions/subscribe/success` : T,
-                        N = w ? `${T}/${w}/creator-subscriptions/subscribe/failure` : T,
-                        [U, V] = (({ cancelUrl: e, productId: a, successUrl: l }) => {
-                            const [n, r] = ve()(Ze);
+                        { href: C, origin: x } = J.ZP.get(),
+                        T = F ? `${x}/${F}/creator-subscriptions/subscribe/success` : x,
+                        V = F ? `${x}/${F}/creator-subscriptions/subscribe/failure` : x,
+                        [N, U] = (({ cancelUrl: e, productId: a, successUrl: l }) => {
+                            const [n, r] = we()(Ze);
                             return [
                                 b.useCallback(
                                     () =>
@@ -529,9 +529,9 @@
                                 ),
                                 r,
                             ];
-                        })({ productId: Z, successUrl: x, cancelUrl: N }),
+                        })({ productId: Z, successUrl: T, cancelUrl: V }),
                         [P] = (() => {
-                            const [e, a] = ve()(Ke);
+                            const [e, a] = we()(Ke);
                             return [
                                 b.useCallback(
                                     ({ consented: a, creatorId: l, email: n }) =>
@@ -549,92 +549,92 @@
                                 a,
                             ];
                         })(),
-                        B = b.useMemo(() => {
+                        z = b.useMemo(() => {
                             let e = (0, J.G3)(k.location);
                             const a = k.getLastNonModalLocationPathname() || "";
-                            !(0, J.d)(k.location) && w && a.includes(`${w}/status`) && (e = "tweet");
-                            const l = g.legacy?.id_str ? { creator_user_id: g.legacy.id_str, referring_page: e } : void 0;
-                            return { items: [{ is_viewer_follows_user: !!g.legacy?.following, super_follow_details: l }] };
-                        }, [w, g, k]);
+                            !(0, J.d)(k.location) && F && a.includes(`${F}/status`) && (e = "tweet");
+                            const l = p.legacy?.id_str ? { creator_user_id: p.legacy.id_str, referring_page: e } : void 0;
+                            return { items: [{ is_viewer_follows_user: !!p.legacy?.following, super_follow_details: l }] };
+                        }, [F, p, k]);
                     b.useEffect(() => {
-                        p.scribe({ element: "subscribe_screen", action: "impression", data: B });
-                    }, [B, p]);
-                    const R = s && !!g.verified_program_creator_features?.email_sharing_from_subscribers_enabled,
-                        I = R && c,
-                        ee = I && (!i || !!(0, X.Z)(i)),
-                        ae = g.legacy?.name ?? "",
-                        le = R ? b.createElement(ue, { consented: c, creatorName: ae, setConsented: u, setSubscriptionEmail: o, subscriptionEmail: i }) : null,
-                        ne = Te,
-                        re = xe,
+                        g.scribe({ element: "subscribe_screen", action: "impression", data: z });
+                    }, [z, g]);
+                    const B = s && !!p.verified_program_creator_features?.email_sharing_from_subscribers_enabled,
+                        A = B && c,
+                        ee = A && (!i || !!(0, X.Z)(i)),
+                        ae = p.legacy?.name ?? "",
+                        le = B ? b.createElement(ue, { consented: c, creatorName: ae, setConsented: u, setSubscriptionEmail: o, subscriptionEmail: i }) : null,
+                        ne = xe,
+                        re = Te,
                         te = b.useCallback(() => {
-                            p.scribe({ element: "subscribe_button", action: "click", data: B });
+                            g.scribe({ element: "subscribe_button", action: "click", data: z });
                             const e =
-                                    I && !ee && F
-                                        ? P({ email: i, creatorId: F, consented: c })
+                                    A && !ee && v
+                                        ? P({ email: i, creatorId: v, consented: c })
                                               .then((e) => {
-                                                  p.scribe({ element: "email_share_consent_update", action: e ? "success" : "error", data: B });
+                                                  g.scribe({ element: "email_share_consent_update", action: e ? "success" : "error", data: z });
                                               })
                                               .catch(() => {
-                                                  p.scribe({ element: "email_share_consent_update", action: "error", data: B });
+                                                  g.scribe({ element: "email_share_consent_update", action: "error", data: z });
                                               })
                                         : null,
-                                a = U().catch(() => {
+                                a = N().catch(() => {
                                     f({ text: Ce });
                                 });
                             Promise.all([a, e]).then(([e]) => {
                                 e && J.ZP.navigateTo(e);
                             });
-                        }, [p, F, B, I, ee, U, P, i, c, f]),
+                        }, [g, v, z, A, ee, N, P, i, c, f]),
                         se = b.useCallback(() => {
-                            A.Z.setString(C), f({ text: Ne }), p.scribe({ action: "share", data: B });
-                        }, [f, p, C, B]),
+                            M.Z.setString(C), f({ text: Ve }), g.scribe({ action: "share", data: z });
+                        }, [f, g, C, z]),
                         ie = b.useCallback(
                             (e) => {
                                 const a = [];
-                                return a.push({ text: re, Icon: O.default, onClick: se }), p.scribe({ element: "share", action: "click", data: B }), b.createElement(D.Z, { items: a, onCloseRequested: e });
+                                return a.push({ text: re, Icon: O.default, onClick: se }), g.scribe({ element: "share", action: "click", data: z }), b.createElement(D.Z, { items: a, onCloseRequested: e });
                             },
-                            [p, re, se, B],
+                            [g, re, se, z],
                         ),
-                        oe = E && v ? ((e, a) => G.T[e.toUpperCase()](parseInt(a, 10) / 1e6))(E, v) : void 0,
-                        ce = { disabled: (F && L && F === L) || V || !Z || ee, onPress: te },
-                        de = b.createElement(h.ZP, (0, _.Z)({}, ce, { backgroundColor: "plum500", borderColor: "transparent", color: "white", ref: d, size: "xLarge", style: Be.bigSubscribeButton }), V ? b.createElement(H.Z, null) : Le({ price: oe })),
-                        me = b.createElement(h.ZP, (0, _.Z)({}, ce, { disabled: ce.disabled && !m, size: "small", style: [Be.transitionOpacity, m ? Be.opacityNone : void 0], type: "primaryFilled" }), V ? b.createElement(H.Z, { size: "small" }) : Le({ price: oe })),
-                        pe = b.createElement(h.ZP, { "aria-label": ne, hoverLabel: { label: ne }, icon: b.createElement(j.default, null), renderMenu: ie, size: "small", style: Be.shareButton, type: "primaryText" }),
-                        ge = b.createElement(M.Z, { style: Be.rightControl }, me, pe),
+                        oe = E && w ? ((e, a) => G.T[e.toUpperCase()](parseInt(a, 10) / 1e6))(E, w) : void 0,
+                        ce = { disabled: (v && L && v === L) || U || !Z || ee, onPress: te },
+                        de = b.createElement(S.ZP, (0, _.Z)({}, ce, { backgroundColor: "plum500", borderColor: "transparent", color: "white", ref: d, size: "xLarge", style: ze.bigSubscribeButton }), U ? b.createElement(H.Z, null) : Le({ price: oe })),
+                        me = b.createElement(S.ZP, (0, _.Z)({}, ce, { disabled: ce.disabled && !m, size: "small", style: [ze.transitionOpacity, m ? ze.opacityNone : void 0], type: "primaryFilled" }), U ? b.createElement(H.Z, { size: "small" }) : Le({ price: oe })),
+                        ge = b.createElement(S.ZP, { "aria-label": ne, hoverLabel: { label: ne }, icon: b.createElement(j.default, null), renderMenu: ie, size: "small", style: ze.shareButton, type: "primaryText" }),
+                        pe = b.createElement(R.Z, { style: ze.rightControl }, me, ge),
                         _e = (0, $.$u)();
-                    return b.createElement(K.Z, { backButtonType: "back", backLocation: `/${a}/superfollows`, children: b.createElement(fe, { children: de, emailShareElement: le, isWide: _e, user: g, viewer: y }), history: k, rightControl: ge });
+                    return b.createElement(K.Z, { backButtonType: "back", backLocation: `/${a}/superfollows`, children: b.createElement(fe, { children: de, emailShareElement: le, isWide: _e, user: p, viewer: y }), history: k, rightControl: pe });
                 },
-                Be = F.default.create((e) => ({ bigSubscribeButton: { width: "100%" }, opacityNone: { opacity: 0 }, rightControl: { flexDirection: "row" }, shareButton: { marginStart: e.spaces.space16 }, transitionOpacity: { transition: "opacity 0.2s 0s ease-in-out" } })),
-                Re = v().g61ed8a4,
-                Ae = v().c3d23f10,
-                Me = v().d338f53e,
-                Ie = f,
-                ze = { context: "SuperFollowsSubscribe" },
+                ze = v.default.create((e) => ({ bigSubscribeButton: { width: "100%" }, opacityNone: { opacity: 0 }, rightControl: { flexDirection: "row" }, shareButton: { marginStart: e.spaces.space16 }, transitionOpacity: { transition: "opacity 0.2s 0s ease-in-out" } })),
+                Be = w().g61ed8a4,
+                Me = w().c3d23f10,
+                Re = w().d338f53e,
+                Ae = f,
+                Ie = { context: "SuperFollowsSubscribe" },
                 De = { page: "super_follows_marketing" },
                 He = ({ screenName: e }) => {
-                    const a = { screenName: (0, x.Z)(e) },
-                        l = (0, N.p)(Ie, a),
+                    const a = { screenName: (0, T.Z)(e) },
+                        l = (0, V.p)(Ae, a),
                         n = l?.user?.result,
                         r = l?.viewer?.user_results?.result;
-                    return n && r ? (n.super_following ? b.createElement(U.Z, { to: `/${e}/creator-subscriptions/manage` }) : n.super_follow_eligible ? b.createElement(T.nO, { namespace: De }, b.createElement(Pe, { screenName: e, user: n, viewer: r })) : b.createElement(U.Z, { to: `/${e}` })) : null;
+                    return n && r ? (n.super_following ? b.createElement(N.Z, { to: `/${e}/creator-subscriptions/manage` }) : n.super_follow_eligible ? b.createElement(x.nO, { namespace: De }, b.createElement(Pe, { screenName: e, user: n, viewer: r })) : b.createElement(N.Z, { to: `/${e}` })) : null;
                 },
                 $e = () => {
-                    const e = (0, S.useHistory)(),
-                        a = (0, S.useParams)().screenName || "",
+                    const e = (0, h.useHistory)(),
+                        a = (0, h.useParams)().screenName || "",
                         l = b.useMemo(
                             () => ({
                                 type: "CustomRetry",
                                 content: (l) => {
-                                    const n = b.createElement(E.Z, { style: je.error }, b.createElement(Z.Z, { description: Ae, title: Re }), b.createElement(h.ZP, { onPress: l, style: je.errorButton, type: "brandFilled" }, Me));
+                                    const n = b.createElement(E.Z, { style: je.error }, b.createElement(Z.Z, { description: Me, title: Be }), b.createElement(S.ZP, { onPress: l, style: je.errorButton, type: "brandFilled" }, Re));
                                     return b.createElement(K.Z, { backButtonType: "close", backLocation: `/${a}`, children: n, history: e });
                                 },
                             }),
                             [e, a],
                         );
-                    return b.createElement(L.N, { errorConfig: ze, fallback: l }, b.createElement(C.B, null, b.createElement(He, { screenName: a })));
+                    return b.createElement(L.N, { errorConfig: Ie, fallback: l }, b.createElement(C.B, null, b.createElement(He, { screenName: a })));
                 },
                 Oe = b.memo($e),
-                je = F.default.create((e) => ({ error: { marginTop: e.spaces.space12, marginBottom: e.spaces.space40, width: "100%" }, errorButton: { marginTop: e.spaces.space32 } })),
+                je = v.default.create((e) => ({ error: { marginTop: e.spaces.space12, marginBottom: e.spaces.space40, width: "100%" }, errorButton: { marginTop: e.spaces.space32 } })),
                 qe = (e) => b.createElement(y.Z, (0, _.Z)({}, e, { component: Oe }));
         },
         273961: (e, a, l) => {
@@ -649,8 +649,8 @@
                 u = l.n(c),
                 d = l(980407),
                 m = l(569778),
-                p = l(293115);
-            const g = u().b17f0c4b,
+                g = l(293115);
+            const p = u().b17f0c4b,
                 _ = u().a893d602,
                 b = { page: "super_follows_subscription_success" },
                 y = o.default.create((e) => ({ button: { marginTop: e.spaces.space36, width: "100%" }, wrapper: { flexBasis: 0, flexGrow: 1, flexShrink: 1, overflow: "auto", marginHorizontal: e.spaces.space80, alignItems: "center", justifyContent: "center" } })),
@@ -658,7 +658,7 @@
                     const { history: a, match: l } = e,
                         n = l.params.screenName,
                         t = n ? `/${n}` : "/home";
-                    return r.createElement(p.nO, { namespace: b }, r.createElement(d.Z, { backButtonType: "close", backLocation: t, history: a }, r.createElement(s.Z, { style: y.wrapper }, r.createElement(m.Z, { headline: g({ screenName: n }), illustration: m.j.Success }), r.createElement(i.ZP, { onPress: () => a.replace(t), size: "xLarge", style: y.button, type: "primaryFilled" }, _))));
+                    return r.createElement(g.nO, { namespace: b }, r.createElement(d.Z, { backButtonType: "close", backLocation: t, history: a }, r.createElement(s.Z, { style: y.wrapper }, r.createElement(m.Z, { headline: p({ screenName: n }), illustration: m.j.Success }), r.createElement(i.ZP, { onPress: () => a.replace(t), size: "xLarge", style: y.button, type: "primaryFilled" }, _))));
                 },
                 f = (e) => r.createElement(t.Z, (0, n.Z)({}, e, { component: k }));
         },
@@ -675,11 +675,37 @@
                 d = l(390387);
             const m = (0, u.Z)().propsFromState(() => ({ isLoggedIn: d.Qb }))(({ component: e, isLoggedIn: a, ...l }) => {
                     const s = (0, t.useParams)().screenName || "",
-                        u = n.createElement(i.Z, { backLocation: `/${s}`, history: l.history }, n.createElement(r.Z, { style: p.wrapper }, n.createElement(c.Z, { history: l.history, location: l.location, match: l.match }))),
+                        u = n.createElement(i.Z, { backLocation: `/${s}`, history: l.history }, n.createElement(r.Z, { style: g.wrapper }, n.createElement(c.Z, { history: l.history, location: l.location, match: l.match }))),
                         d = (0, o.hC)("super_follow_android_web_subscription_enabled");
                     return !a || !d ? u : n.createElement(e, l);
                 }),
-                p = s.default.create((e) => ({ modalContainerStyle: { flexBasis: 0, flexGrow: 1, flexShrink: 1, overflow: "auto", alignItems: "center", justifyContent: "center" }, wrapper: { alignItems: "center", justifyContent: "center" } }));
+                g = s.default.create((e) => ({ modalContainerStyle: { flexBasis: 0, flexGrow: 1, flexShrink: 1, overflow: "auto", alignItems: "center", justifyContent: "center" }, wrapper: { alignItems: "center", justifyContent: "center" } }));
+        },
+        988227: (e, a, l) => {
+            l.r(a), l.d(a, { default: () => o });
+            var n = l(202784),
+                r = l(890601),
+                t = l(783427),
+                s = l(347101);
+            const i = (e = {}) => {
+                const { direction: a } = (0, t.Z)();
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M12 21c-7.605 0-10.804-8.296-10.937-8.648L.932 12l.131-.352C1.196 11.295 4.394 3 12 3s10.804 8.296 10.937 8.648l.131.352-.131.352C22.804 12.705 19.606 21 12 21zm-8.915-9c.658 1.467 3.5 7 8.915 7s8.257-5.533 8.915-7c-.658-1.467-3.5-7-8.915-7s-8.257 5.533-8.915 7zM12 16c-2.206 0-4-1.794-4-4s1.794-4 4-4 4 1.794 4 4-1.794 4-4 4zm0-6c-1.103 0-2 .897-2 2s.897 2 2 2 2-.897 2-2-.897-2-2-2z" })) }, { writingDirection: a });
+            };
+            i.metadata = { width: 24, height: 24 };
+            const o = i;
+        },
+        748138: (e, a, l) => {
+            l.r(a), l.d(a, { default: () => o });
+            var n = l(202784),
+                r = l(890601),
+                t = l(783427),
+                s = l(347101);
+            const i = (e = {}) => {
+                const { direction: a } = (0, t.Z)();
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: a });
+            };
+            i.metadata = { width: 24, height: 24 };
+            const o = i;
         },
         155353: (e, a, l) => {
             l.r(a), l.d(a, { default: () => o });
@@ -696,4 +722,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SuperFollowsSubscribe.d431f3ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SuperFollowsSubscribe.76ccc10a.js.map

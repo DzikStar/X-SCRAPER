@@ -945,7 +945,7 @@
                     ),
                     T = r.useCallback(
                         (t, o) => {
-                            d.scribe({ element: "grok-home-preset", action: "click", data: { event_info: o.id } }), "external-link" === o.type && o.url ? window.open(o.url, "_blank") : o.onClick && (o.onClick?.(), t.preventDefault(), e?.());
+                            d.scribe({ element: "grok-home-preset", action: "click", data: { event_info: o.id } }), "external-link" === o.type && o.url ? (window.location.href = o.url) : o.onClick && (o.onClick?.(), t.preventDefault(), e?.());
                         },
                         [e, d],
                     ),
@@ -1044,4 +1044,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-cebf58fc.dfee27ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-cebf58fc.196ae2da.js.map
