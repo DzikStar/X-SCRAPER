@@ -15,14 +15,14 @@
                 f = n(502909),
                 u = n(600823);
             const m = (0, f.ZP)({ namespace: "jobs" }),
-                p = u.Z.register(m);
-            var h = n(386619);
+                h = u.Z.register(m);
+            var p = n(386619);
             const g = (e, { entry: t }) => t.itemMetadata?.clientEventInfo?.component,
-                b = (e, { entry: t }) => p.select(e, t.content.rest_id),
+                b = (e, { entry: t }) => h.select(e, t.content.rest_id),
                 y = (e, t) => {
                     const n = b(e, t),
                         r = n?.recruitingOrganization;
-                    return r ? h.Z.select(e, r) : void 0;
+                    return r ? p.Z.select(e, r) : void 0;
                 },
                 w = (0, d.Z)().propsFromState(() => ({ component: g, job: b, recruitingOrganization: y })),
                 D = ({ component: e, job: t, recruitingOrganization: n }) => {
@@ -68,8 +68,8 @@
                 f = n(524496),
                 u = n(392237),
                 m = n(823161),
-                p = n(366635),
-                h = n(89217),
+                h = n(366635),
+                p = n(89217),
                 g = n(457458);
             const b = ({ displayType: e }) => {
                     switch (e) {
@@ -89,8 +89,8 @@
                     const { is_blue_verified: o, name: l, profile_image_url_https: a, screen_name: i, verified: c, verified_type: d } = n,
                         f = "carousel" === t ? "medium" : void 0,
                         u = !!i,
-                        h = r.createElement(p.Z, { isBlueVerified: o, isVerified: c, name: l, screenName: i || "<none>", verifiedType: d, weight: f, withScreenName: u });
-                    return (({ displayType: e }) => "carousel" === e)(e) && a ? r.createElement(s.Z, { avatarCell: r.createElement(m.default, { shape: "square", size: "small", uri: a }), avatarCellStyle: S.avatarCell, avatarSize: "small", style: S.avatarRow }, h) : h;
+                        p = r.createElement(h.Z, { isBlueVerified: o, isVerified: c, name: l, screenName: i || "<none>", verifiedType: d, weight: f, withScreenName: u });
+                    return (({ displayType: e }) => "carousel" === e)(e) && a ? r.createElement(s.Z, { avatarCell: r.createElement(m.default, { shape: "square", size: "small", uri: a }), avatarCellStyle: S.avatarCell, avatarSize: "small", style: S.avatarRow }, p) : p;
                 },
                 v = (e) => {
                     const { location: t } = e;
@@ -98,7 +98,7 @@
                 },
                 k = (e) => {
                     const { employmentType: t, formattedSalary: n, salaryInterval: l } = e;
-                    return n || t ? r.createElement(o.Z, { style: S.metaRow }, n ? r.createElement(o.Z, { style: S.withIcon }, y(e) ? r.createElement(c.ZP, { color: "gray700", size: "body" }, r.createElement(a.default, null)) : null, r.createElement(c.ZP, { color: "gray700" }, (0, g.M)(n, l))) : null, t ? r.createElement(o.Z, { style: S.withIcon }, y(e) ? r.createElement(c.ZP, { color: "gray700", size: "body" }, r.createElement(i.default, null)) : null, r.createElement(c.ZP, { color: "gray700" }, h.eo[t])) : null) : null;
+                    return n || t ? r.createElement(o.Z, { style: S.metaRow }, n ? r.createElement(o.Z, { style: S.withIcon }, y(e) ? r.createElement(c.ZP, { color: "gray700", size: "body" }, r.createElement(a.default, null)) : null, r.createElement(c.ZP, { color: "gray700" }, (0, g.M)(n, l))) : null, t ? r.createElement(o.Z, { style: S.withIcon }, y(e) ? r.createElement(c.ZP, { color: "gray700", size: "body" }, r.createElement(i.default, null)) : null, r.createElement(c.ZP, { color: "gray700" }, p.eo[t])) : null) : null;
                 },
                 E = ({ shortDescription: e }) => {
                     const t = (0, g.G)(e);
@@ -169,8 +169,8 @@
                 f = n(989272),
                 u = n(925873),
                 m = n(202253),
-                p = n(786475),
-                h = n(392237),
+                h = n(786475),
+                p = n(392237),
                 g = n(135904);
             const b = { [s.P7.atomic]: { element: "section" }, [s.P7.header1]: { element: "h1", wrapper: r.createElement(c.ZP, null) }, [s.P7.header2]: { element: "h2", wrapper: r.createElement(c.ZP, null) } },
                 y = (0, a.Z)(b).reduce((e, [t, n]) => e.set(t, n), o.DefaultDraftBlockRenderMap);
@@ -180,9 +180,9 @@
                     r.useEffect(() => {
                         w || (f.fH(g.c, g.n), (w = !0));
                     }, []);
-                    const h = [(0, m.ez)(a, c), m.aF, m.RU];
-                    e.disable_entityLinkDecorator || h.push((0, m.NA)(a, c));
-                    const b = u.Z.initEditorState(n, { decorators: h });
+                    const p = [(0, m.ez)(a, c), m.aF, m.RU];
+                    e.disable_entityLinkDecorator || p.push((0, m.NA)(a, c));
+                    const b = u.Z.initEditorState(n, { decorators: p });
                     let D = i.Z;
                     return (
                         t &&
@@ -190,13 +190,13 @@
                                 const n = e.getType();
                                 return t[n] || null;
                             }),
-                        r.createElement(d.ZP, null, ({ containerWidth: e }) => r.createElement(l.Z, { style: v.fontFamily }, r.createElement(o.Editor, { blockRenderMap: y, blockRendererFn: D, blockStyleFn: (0, s.su)(p.Z.isNarrowScreenWidth(e)), editorState: b, onChange: i.Z, readOnly: !0, webDriverTestID: "longformRichTextComponent" })))
+                        r.createElement(d.ZP, null, ({ containerWidth: e }) => r.createElement(l.Z, { style: v.fontFamily }, r.createElement(o.Editor, { blockRenderMap: y, blockRendererFn: D, blockStyleFn: (0, s.su)(h.Z.isNarrowScreenWidth(e)), editorState: b, onChange: i.Z, readOnly: !0, webDriverTestID: "longformRichTextComponent" })))
                     );
                 }),
-                v = h.default.create((e) => ({ fontFamily: { fontFamily: e.fontFamilies.normal } }));
+                v = p.default.create((e) => ({ fontFamily: { fontFamily: e.fontFamilies.normal } }));
         },
         779802: (e, t, n) => {
-            n.d(t, { $u: () => S, Ak: () => Z, KJ: () => D, LI: () => z, P7: () => g, PW: () => E, QF: () => b, Qm: () => w, Tr: () => $, b$: () => h, db: () => I, et: () => k, fR: () => p, iH: () => x, lD: () => y, su: () => v, u4: () => T, wX: () => _ });
+            n.d(t, { $u: () => S, Ak: () => Z, KJ: () => D, LI: () => z, P7: () => g, PW: () => E, QF: () => b, Qm: () => w, Tr: () => $, b$: () => p, db: () => I, et: () => k, fR: () => h, iH: () => x, lD: () => y, su: () => v, u4: () => T, wX: () => _ });
             var r = n(202784),
                 o = n(674132),
                 l = n.n(o),
@@ -208,11 +208,11 @@
                 f = n(89085),
                 u = n(630715),
                 m = n(731708);
-            const p = { bold: "BOLD", italic: "ITALIC", strikethrough: "STRIKETHROUGH" },
-                h = (e) => [
-                    { buttonTestId: "btn-bold", Icon: a.default, key: p.bold, onPress: e(p.bold) },
-                    { buttonTestId: "btn-italic", Icon: i.default, key: p.italic, onPress: e(p.italic) },
-                    { buttonTestId: "btn-strikethrough", Icon: c.default, key: p.strikethrough, onPress: e(p.strikethrough) },
+            const h = { bold: "BOLD", italic: "ITALIC", strikethrough: "STRIKETHROUGH" },
+                p = (e) => [
+                    { buttonTestId: "btn-bold", Icon: a.default, key: h.bold, onPress: e(h.bold) },
+                    { buttonTestId: "btn-italic", Icon: i.default, key: h.italic, onPress: e(h.italic) },
+                    { buttonTestId: "btn-strikethrough", Icon: c.default, key: h.strikethrough, onPress: e(h.strikethrough) },
                 ],
                 g = { atomic: "atomic", blockquote: "blockquote", bulleted: "unordered-list-item", header1: "header-one", header2: "header-two", numbered: "ordered-list-item", paragraph: "unstyled" },
                 b = (e) => [{ buttonTestId: "btn-blockquote", Icon: s.default, key: g.blockquote, onPress: e(g.blockquote) }],
@@ -317,19 +317,6 @@
             i.metadata = { width: 24, height: 24 };
             const c = i;
         },
-        856661: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => c });
-            var r = n(202784),
-                o = n(890601),
-                l = n(783427),
-                a = n(347101);
-            const i = (e = {}) => {
-                const { direction: t } = (0, l.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M9 6h3.731L9.184 18H5v2h10v-2h-3.731l3.547-12H19V4H9v2z" })) }, { writingDirection: t });
-            };
-            i.metadata = { width: 24, height: 24 };
-            const c = i;
-        },
         474761: (e, t, n) => {
             n.r(t), n.d(t, { default: () => c });
             var r = n(202784),
@@ -343,6 +330,19 @@
             i.metadata = { width: 24, height: 24 };
             const c = i;
         },
+        69893: (e, t, n) => {
+            n.r(t), n.d(t, { default: () => c });
+            var r = n(202784),
+                o = n(890601),
+                l = n(783427),
+                a = n(347101);
+            const i = (e = {}) => {
+                const { direction: t } = (0, l.Z)();
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M17.879 15c.079.323.121.658.121 1 0 2.757-2.691 5-6 5s-6-2.243-6-5h2c0 1.654 1.794 3 4 3s4-1.346 4-3c0-.352-.096-.686-.246-1h2.125zM12 11c-2.206 0-4-1.346-4-3s1.794-3 4-3 4 1.346 4 3h2c0-2.757-2.691-5-6-5S6 5.243 6 8c0 1.126.455 2.163 1.211 3H3v2h18v-2h-9z" })) }, { writingDirection: t });
+            };
+            i.metadata = { width: 24, height: 24 };
+            const c = i;
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.jobLoader.2c6d1f8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.jobLoader.854b81ca.js.map

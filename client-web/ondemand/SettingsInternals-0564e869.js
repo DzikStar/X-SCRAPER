@@ -58,14 +58,14 @@
                 w = d(652904),
                 M = d(264922),
                 g = d(396634),
-                v = d(71620),
-                _ = d(668214),
+                _ = d(71620),
+                v = d(668214),
                 E = d(948985);
             const k = (e, a) => a.match.params.appId,
                 P = (e, a) => E.$q.selectAppsById(e, k(0, a)),
-                Z = (0, _.Z)()
+                Z = (0, v.Z)()
                     .propsFromState(() => ({ appId: k, fetchStatus: E.UD, details: P }))
-                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, v.zr)("APPLICATION_DETAIL"), fetchApplication: E.zw, revokeApplication: E.$q.revokeApplication, revokeOauth2Token: E.$q.revokeOauth2Token }))
+                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, _.zr)("APPLICATION_DETAIL"), fetchApplication: E.zw, revokeApplication: E.$q.revokeApplication, revokeOauth2Token: E.$q.revokeOauth2Token }))
                     .withAnalytics({ page: "settings", section: "application_detail" }),
                 I = S().g8d1b99b,
                 B = S().eafcc76a,
@@ -73,9 +73,9 @@
                 T = S().a6845663,
                 x = S().b2347f7c,
                 L = S().e1fda16e,
-                R = S().b8f3ed46,
-                N = S().gb8d09ba,
-                F = S().g6dc09a0,
+                N = S().b8f3ed46,
+                F = S().gb8d09ba,
+                R = S().g6dc09a0,
                 z = S().a6e6e898,
                 H = S().cde3b9ae,
                 O = S().g0d7813a,
@@ -103,7 +103,7 @@
                         (this._render = () => {
                             const { details: e } = this.props,
                                 a = e[0];
-                            if (!a) return n.createElement(l.Z, { header: L, message: R });
+                            if (!a) return n.createElement(l.Z, { header: L, message: N });
                             const d = { app_id: a.app_id, app_name: a.name },
                                 t = n.createElement(o.Z, { style: K.itemContainer }, n.createElement(i.ZP, { color: "gray700", size: "subtext2" }, this._renderApprovalDate(a.approved)));
                             return n.createElement(
@@ -113,7 +113,7 @@
                                 a.organization_url ? n.createElement(u.Z, { color: "primary", label: a.organization_url, link: a.organization_url }) : null,
                                 n.createElement(o.Z, { style: K.itemContainer }, n.createElement(i.ZP, { color: "gray700", size: "subtext2" }, a.description)),
                                 t,
-                                n.createElement(b.Z, { text: F }),
+                                n.createElement(b.Z, { text: R }),
                                 e.map((e) => n.createElement(o.Z, { key: e.token }, this._renderPermissions(e), e.ios ? null : n.createElement(g.Z, { onRevoke: this._handleRevokeApp, reportApplicationHref: `${q}?${(0, r.stringify)(d)}`, revoked: !!e.revoked, token: e.token, tokenType: e.token_type || "oauth1" }))),
                                 a.ios ? n.createElement(p.Z, { link: V, style: [K.itemContainer, K.center] }, n.createElement(i.ZP, { color: "link" }, $)) : null,
                             );
@@ -142,7 +142,7 @@
                     return e.can_read_dms ? (a = O) : e.can_write ? (a = H) : e.can_read && (a = z), a ? n.createElement(h.Z, { label: a }) : null;
                 }
                 _renderEmailPermission(e) {
-                    return e.email_access ? n.createElement(h.Z, { label: N }) : null;
+                    return e.email_access ? n.createElement(h.Z, { label: F }) : null;
                 }
                 _renderAdsPermission(e) {
                     let a = null;
@@ -206,8 +206,8 @@
                 w = d(962741),
                 M = d(154003),
                 g = d(712816),
-                v = d(879596),
-                _ = d(942893),
+                _ = d(879596),
+                v = d(942893),
                 E = d(71620),
                 k = d(601576),
                 P = d(919022);
@@ -228,7 +228,7 @@
                             r?.blocking
                                 ? n(o).then((a) => {
                                       e({ text: T }), this._scribeAction("unblock");
-                                  }, d(v.D))
+                                  }, d(_.D))
                                 : a(o).then((a) => {
                                       e({ text: x }), this._scribeAction("block");
                                   }, d(g.d));
@@ -244,13 +244,13 @@
                 }
                 _scribeAction(e) {
                     const { analytics: a, user: d } = this.props,
-                        n = d ? [_.Z.getUserItem(d)] : [];
+                        n = d ? [v.Z.getUserItem(d)] : [];
                     a.scribe({ action: e, data: { items: n } });
                 }
             }
-            const R = I(L),
-                N = { ...(0, f.G)({}), [w.ZP.User]: (0, y.Z)({ decoration: ({ userId: e }) => r.createElement(R, { userId: e }) }) },
-                F = s().a5f32aa2,
+            const N = I(L),
+                F = { ...(0, f.G)({}), [w.ZP.User]: (0, y.Z)({ decoration: ({ userId: e }) => r.createElement(N, { userId: e }) }) },
+                R = s().a5f32aa2,
                 z = s().ef731b14,
                 H = s().i859a9d4,
                 O = r.createElement(s().I18NFormatMessage, { $i18n: "ab3bf5a7" }, r.createElement(o.ZP, { link: (0, t.ju)("https://support.x.com/articles/117063") }, s().e554ba83));
@@ -276,7 +276,7 @@
                     e(this._getLegacyModule());
                 }
                 render() {
-                    return r.createElement(b.Z, null, r.createElement("div", null, r.createElement(D.Z, null, O), r.createElement(i.Z, null)), r.createElement(p.Z, { entryConfiguration: N, loadingAccessibilityLabel: z, module: this._getLegacyModule(), renderEmptyState: this._getEmptyStateRenderer(), title: F }));
+                    return r.createElement(b.Z, null, r.createElement("div", null, r.createElement(D.Z, null, O), r.createElement(i.Z, null)), r.createElement(p.Z, { entryConfiguration: F, loadingAccessibilityLabel: z, module: this._getLegacyModule(), renderEmptyState: this._getEmptyStateRenderer(), title: R }));
                 }
             }
             const j = ({ blockType: e, emptyStateMessage: a, emptyStateTitle: d, scribeNamespace: o, supportUrl: t }) => A((l) => r.createElement(h.nO, { namespace: o }, r.createElement(U, (0, n.Z)({}, l, { blockType: e, emptyStateMessage: a, emptyStateTitle: d, supportUrl: t }))));
@@ -315,16 +315,25 @@
                     () =>
                         Promise.all([
                             d.e("icons.5"),
-                            d.e("icons.12"),
-                            d.e("icons.20"),
-                            d.e("icons.0"),
-                            d.e("icons.21"),
-                            d.e("icons.28"),
-                            d.e("icons.17"),
-                            d.e("modules.common-e907d115"),
-                            d.e("modules.common-e019dbda"),
+                            d.e("icons.6"),
+                            d.e("icons.25"),
                             d.e("icons.22"),
                             d.e("icons.9"),
+                            d.e("icons.4"),
+                            d.e("icons.15"),
+                            d.e("icons.2"),
+                            d.e("icons.20"),
+                            d.e("modules.common-e907d115"),
+                            d.e("modules.common-e019dbda"),
+                            d.e("icons.7"),
+                            d.e("icons.0"),
+                            d.e("icons.11"),
+                            d.e("icons.27"),
+                            d.e("icons.17"),
+                            d.e("icons.12"),
+                            d.e("icons.3"),
+                            d.e("icons.13"),
+                            d.e("icons.18"),
                             d.e("modules.audio-6107ac1a"),
                             d.e("modules.audio-b953418a"),
                             d.e("modules.audio-7c51e6a7"),
@@ -335,14 +344,7 @@
                             d.e("modules.audio-e019dbda"),
                             d.e("modules.audio-262c94d4"),
                             d.e("modules.audio-c6fe4ea4"),
-                            d.e("icons.6"),
-                            d.e("icons.10"),
                             d.e("icons.24"),
-                            d.e("icons.14"),
-                            d.e("icons.23"),
-                            d.e("icons.3"),
-                            d.e("icons.13"),
-                            d.e("icons.8"),
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -373,7 +375,7 @@
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                             d.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-34cda585"),
+                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2f4a3d25"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -411,15 +413,15 @@
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-6cde809e"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-708dfafd"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-af3d50e9"),
-                            d.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Articles~bundle.AudioSpacePeek~bundle.Birdwatch~bundle.Brande"),
                             d.e("shared~loader.Typeahead~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSpacePeek~bundle.Bir"),
                             d.e("shared~bundle.AccountAnalytics~ondemand.SettingsInternals~ondemand.SettingsRevamp~bundle.Payments~bundle.Prem"),
                             d.e("shared~loader.DashMenu~loader.DashModal~ondemand.CommandCenter~bundle.Account~ondemand.SettingsInternals~onde"),
                             d.e("shared~ondemand.SettingsInternals~bundle.SettingsRevamp~bundle.SettingsTransparency"),
-                            d.e("shared~ondemand.SettingsInternals~ondemand.SettingsRevamp"),
-                            d.e("ondemand.SettingsInternals-6107ac1a"),
+                            d.e("ondemand.SettingsInternals-2c5e6a0d"),
+                            d.e("ondemand.SettingsInternals-e96e9bea"),
                             d.e("ondemand.SettingsInternals-5b7ef534"),
                             d.e("ondemand.SettingsInternals-9f4db315"),
+                            d.e("ondemand.SettingsInternals-e019dbda"),
                             d.e("ondemand.SettingsInternals-8ed0fac5"),
                             d.e("ondemand.SettingsInternals-0564e869"),
                             d.e("ondemand.SettingsInternals-71f5c63d"),
@@ -432,16 +434,25 @@
                     () =>
                         Promise.all([
                             d.e("icons.5"),
-                            d.e("icons.12"),
-                            d.e("icons.20"),
-                            d.e("icons.0"),
-                            d.e("icons.21"),
-                            d.e("icons.28"),
-                            d.e("icons.17"),
-                            d.e("modules.common-e907d115"),
-                            d.e("modules.common-e019dbda"),
+                            d.e("icons.6"),
+                            d.e("icons.25"),
                             d.e("icons.22"),
                             d.e("icons.9"),
+                            d.e("icons.4"),
+                            d.e("icons.15"),
+                            d.e("icons.2"),
+                            d.e("icons.20"),
+                            d.e("modules.common-e907d115"),
+                            d.e("modules.common-e019dbda"),
+                            d.e("icons.7"),
+                            d.e("icons.0"),
+                            d.e("icons.11"),
+                            d.e("icons.27"),
+                            d.e("icons.17"),
+                            d.e("icons.12"),
+                            d.e("icons.3"),
+                            d.e("icons.13"),
+                            d.e("icons.18"),
                             d.e("modules.audio-6107ac1a"),
                             d.e("modules.audio-b953418a"),
                             d.e("modules.audio-7c51e6a7"),
@@ -452,14 +463,7 @@
                             d.e("modules.audio-e019dbda"),
                             d.e("modules.audio-262c94d4"),
                             d.e("modules.audio-c6fe4ea4"),
-                            d.e("icons.6"),
-                            d.e("icons.10"),
                             d.e("icons.24"),
-                            d.e("icons.14"),
-                            d.e("icons.23"),
-                            d.e("icons.3"),
-                            d.e("icons.13"),
-                            d.e("icons.8"),
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -490,7 +494,7 @@
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                             d.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-34cda585"),
+                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2f4a3d25"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -528,15 +532,15 @@
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-6cde809e"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-708dfafd"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-af3d50e9"),
-                            d.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Articles~bundle.AudioSpacePeek~bundle.Birdwatch~bundle.Brande"),
                             d.e("shared~loader.Typeahead~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSpacePeek~bundle.Bir"),
                             d.e("shared~bundle.AccountAnalytics~ondemand.SettingsInternals~ondemand.SettingsRevamp~bundle.Payments~bundle.Prem"),
                             d.e("shared~loader.DashMenu~loader.DashModal~ondemand.CommandCenter~bundle.Account~ondemand.SettingsInternals~onde"),
                             d.e("shared~ondemand.SettingsInternals~bundle.SettingsRevamp~bundle.SettingsTransparency"),
-                            d.e("shared~ondemand.SettingsInternals~ondemand.SettingsRevamp"),
-                            d.e("ondemand.SettingsInternals-6107ac1a"),
+                            d.e("ondemand.SettingsInternals-2c5e6a0d"),
+                            d.e("ondemand.SettingsInternals-e96e9bea"),
                             d.e("ondemand.SettingsInternals-5b7ef534"),
                             d.e("ondemand.SettingsInternals-9f4db315"),
+                            d.e("ondemand.SettingsInternals-e019dbda"),
                             d.e("ondemand.SettingsInternals-8ed0fac5"),
                             d.e("ondemand.SettingsInternals-0564e869"),
                             d.e("ondemand.SettingsInternals-71f5c63d"),
@@ -587,11 +591,11 @@
                 w = d(668214),
                 M = d(257166),
                 g = d(38562),
-                v = d(673110),
-                _ = d(601576);
+                _ = d(673110),
+                v = d(601576);
             const E = (0, w.Z)()
                     .propsFromState(() => ({ userEmail: M.selectFirstEmail, fetchStatus: g.UD, ssoConnections: g.An }))
-                    .propsFromActions(() => ({ addToast: _.fz, createLocalApiErrorHandler: (0, f.zr)("SETTINGS_CONNECTED_APPS_SCREEN_CONTEXT"), deleteSSOConnection: g.O5, fetchDevicesIfNeeded: M.fetchDevicesIfNeeded, fetchSettingsIfNeeded: g.Sb, fetchSettings: g.wv, verifyPassword: v.Gv }))
+                    .propsFromActions(() => ({ addToast: v.fz, createLocalApiErrorHandler: (0, f.zr)("SETTINGS_CONNECTED_APPS_SCREEN_CONTEXT"), deleteSSOConnection: g.O5, fetchDevicesIfNeeded: M.fetchDevicesIfNeeded, fetchSettingsIfNeeded: g.Sb, fetchSettings: g.wv, verifyPassword: _.Gv }))
                     .withAnalytics({ page: "settings", section: "connected_accounts", component: "delete_sso_connection" }),
                 k = h().h1abfbce,
                 P = h().f8e46b90,
@@ -691,8 +695,8 @@
                 w = u().c69b4798,
                 M = u().eca117e6,
                 g = u().acd36386,
-                v = u().gd8511ca,
-                _ = u().eca935ec,
+                _ = u().gd8511ca,
+                v = u().eca935ec,
                 E = (0, r.ju)("https://help.x.com/safety-and-security/email-and-phone-discoverability-settings"),
                 k = u().ac77c66c,
                 P = u().bbcafbda,
@@ -707,12 +711,12 @@
                         },
                         [a, u],
                     );
-                return n.createElement(b.Z, null, n.createElement(p.Z, { location: s, title: A }, n.createElement(o.Z, { description: y }), n.createElement(t.Z, { text: f }), n.createElement(o.Z, { description: w }), n.createElement(l.Z, { checked: d, helpText: g, label: M, learnMoreLink: E, name: "discoverable_by_email", onChange: h }), n.createElement(l.Z, { checked: r, helpText: _, label: v, learnMoreLink: E, name: "discoverable_by_mobile_phone", onChange: h }), n.createElement(i.Z, null), n.createElement(t.Z, { text: k }), n.createElement(o.Z, { description: Z, learnMoreLabel: B, learnMoreLink: I }), n.createElement(c.Z, { label: P, link: "/settings/contacts_dashboard" })));
+                return n.createElement(b.Z, null, n.createElement(p.Z, { location: s, title: A }, n.createElement(o.Z, { description: y }), n.createElement(t.Z, { text: f }), n.createElement(o.Z, { description: w }), n.createElement(l.Z, { checked: d, helpText: g, label: M, learnMoreLink: E, name: "discoverable_by_email", onChange: h }), n.createElement(l.Z, { checked: r, helpText: v, label: _, learnMoreLink: E, name: "discoverable_by_mobile_phone", onChange: h }), n.createElement(i.Z, null), n.createElement(t.Z, { text: k }), n.createElement(o.Z, { description: Z, learnMoreLabel: B, learnMoreLink: I }), n.createElement(c.Z, { label: P, link: "/settings/contacts_dashboard" })));
             }
             const T = S(C);
         },
         221930: (e, a, d) => {
-            d.r(a), d.d(a, { SettingsContactsDashboardScreen: () => F, default: () => H });
+            d.r(a), d.d(a, { SettingsContactsDashboardScreen: () => R, default: () => H });
             var n = d(202784),
                 r = d(325686),
                 o = d(731708),
@@ -734,8 +738,8 @@
                 w = d(312771),
                 M = d(170069),
                 g = d(609848),
-                v = d(264922),
-                _ = d(267966),
+                _ = d(264922),
+                v = d(267966),
                 E = d(71620),
                 k = d(668214),
                 P = d(38562),
@@ -748,22 +752,22 @@
                 T = n.createElement(u().I18NFormatMessage, { $i18n: "g66a254b" }, n.createElement(o.ZP, { link: (0, t.ju)("https://help.x.com/using-twitter/upload-your-contacts-to-search-for-friends") }, u().d439b1c1)),
                 x = u().b864be7a,
                 L = { headline: u().g5fa1090, text: u().h3e420fc, confirmButtonLabel: u().e68b09b4 },
-                R = u().ca24589e,
-                N = (e) => e.id_str;
-            class F extends n.Component {
+                N = u().ca24589e,
+                F = (e) => e.id_str;
+            class R extends n.Component {
                 constructor(...e) {
                     super(...e),
                         (this.state = { verificationRequired: !1 }),
                         (this._renderTimeline = () => {
                             const { contacts: e, fetchStatus: a } = this.props;
-                            return n.createElement(S.Z, { assumedItemHeight: 70, cacheKey: "CONTACTS_DASHBOARD", footer: this._renderFooter(a), identityFunction: N, items: e, onNearEnd: this._handleFetchMoreContacts, renderer: this._renderContact });
+                            return n.createElement(S.Z, { assumedItemHeight: 70, cacheKey: "CONTACTS_DASHBOARD", footer: this._renderFooter(a), identityFunction: F, items: e, onNearEnd: this._handleFetchMoreContacts, renderer: this._renderContact });
                         }),
                         (this._renderContact = (e) => {
                             const { id_str: a, import_source: d, vcard: t } = e,
-                                i = this._getContactProp(t.get("fn")) || R,
+                                i = this._getContactProp(t.get("fn")) || N,
                                 c = this._getContactProperties(t.get("tel")),
                                 s = [...this._getContactProperties(t.get("email")), ...c];
-                            return n.createElement(r.Z, { key: a, style: [[_.Z.infoText, _.Z.bottomBorder], z.contactContainer] }, n.createElement(l.Z, { Icon: b.default, color: "neutral", style: z.personIcon }), n.createElement(r.Z, null, n.createElement(o.ZP, null, i), s ? s.map((e) => n.createElement(o.ZP, { color: "gray700", key: e, size: "subtext2" }, e)) : null, d ? n.createElement(o.ZP, { color: "gray700", size: "subtext2" }, `Imported from ${d}`) : null));
+                            return n.createElement(r.Z, { key: a, style: [[v.Z.infoText, v.Z.bottomBorder], z.contactContainer] }, n.createElement(l.Z, { Icon: b.default, color: "neutral", style: z.personIcon }), n.createElement(r.Z, null, n.createElement(o.ZP, null, i), s ? s.map((e) => n.createElement(o.ZP, { color: "gray700", key: e, size: "subtext2" }, e)) : null, d ? n.createElement(o.ZP, { color: "gray700", size: "subtext2" }, `Imported from ${d}`) : null));
                         }),
                         (this._renderFooter = (e) => (e === w.ZP.LOADING ? n.createElement(r.Z, { style: z.loadingContainer }, n.createElement(D.Z, { fetchStatus: e, render: p.Z })) : null)),
                         (this._handleRemoveContacts = () => {
@@ -779,12 +783,12 @@
                 }
                 render() {
                     const { contacts: e, fetchContactsIfNeeded: a, fetchStatus: d, location: r } = this.props;
-                    return n.createElement(f.nO, { namespace: B }, n.createElement(y.Z, null, n.createElement(v.Z, { location: r, title: C }, n.createElement(m.Z, { confirmationSheetConfirmButtonLabel: L.confirmButtonLabel, confirmationSheetConfirmButtonType: "destructiveFilled", confirmationSheetHeadline: L.headline, confirmationSheetText: L.text, label: x, onConfirmationSheetConfirm: this._handleRemoveContacts }), n.createElement(M.Z, null, T), n.createElement(i.Z, null), n.createElement(g.Z, { fetch: a, fetchStatus: e.length > 0 ? w.ZP.LOADED : d, render: () => this._renderTimeline() }))));
+                    return n.createElement(f.nO, { namespace: B }, n.createElement(y.Z, null, n.createElement(_.Z, { location: r, title: C }, n.createElement(m.Z, { confirmationSheetConfirmButtonLabel: L.confirmButtonLabel, confirmationSheetConfirmButtonType: "destructiveFilled", confirmationSheetHeadline: L.headline, confirmationSheetText: L.text, label: x, onConfirmationSheetConfirm: this._handleRemoveContacts }), n.createElement(M.Z, null, T), n.createElement(i.Z, null), n.createElement(g.Z, { fetch: a, fetchStatus: e.length > 0 ? w.ZP.LOADED : d, render: () => this._renderTimeline() }))));
                 }
             }
-            F.contextType = A.rC;
+            R.contextType = A.rC;
             const z = c.default.create((e) => ({ contactContainer: { flexDirection: "row", flexWrap: "wrap" }, personIcon: { marginEnd: e.spaces.space12 }, loadingContainer: { paddingVertical: e.spaces.space16, justifyContent: "center" } })),
-                H = I(F);
+                H = I(R);
         },
         412483: (e, a, d) => {
             d.r(a), d.d(a, { ContentPreferencesPage: () => Z, default: () => I });
@@ -811,8 +815,8 @@
                 w = c().d495680e,
                 M = c().f350f0c0,
                 g = c().fd3369a2,
-                v = c().h1ef00dc,
-                _ = c().e8f57e08,
+                _ = c().h1ef00dc,
+                v = c().e8f57e08,
                 E = c().e8f57e08,
                 k = c().hfc86556,
                 P = c().a5f32aa2;
@@ -827,7 +831,7 @@
                 render() {
                     const { location: e } = this.props,
                         a = this.context.featureSwitches.isTrue("responsive_web_trends_setting_new_endpoints") ? "/settings/explore" : "/settings/trends";
-                    return n.createElement(u.Z, null, n.createElement(b.Z, { location: e, screenType: "primaryDetail", title: A }, n.createElement(r.Z, { testID: S, text: y }), n.createElement(o.Z, { label: v, link: "/settings/search" }), n.createElement(o.Z, { label: this._trendsLabel, link: a }), n.createElement(t.Z, null), n.createElement(r.Z, { text: w }), n.createElement(o.Z, { label: M, link: "/i/flow/language_selector" }), n.createElement(l.Z, { description: g }), n.createElement(t.Z, null), n.createElement(r.Z, { text: f }), n.createElement(o.Z, { label: k, link: "/settings/mute" }), n.createElement(o.Z, { label: P, link: "/settings/blocked/all" }), n.createElement(t.Z, null), n.createElement(r.Z, { text: _ }), n.createElement(o.Z, { description: this._renderPersonalizationDescription(), label: E, link: "/settings/account/personalization" })));
+                    return n.createElement(u.Z, null, n.createElement(b.Z, { location: e, screenType: "primaryDetail", title: A }, n.createElement(r.Z, { testID: S, text: y }), n.createElement(o.Z, { label: _, link: "/settings/search" }), n.createElement(o.Z, { label: this._trendsLabel, link: a }), n.createElement(t.Z, null), n.createElement(r.Z, { text: w }), n.createElement(o.Z, { label: M, link: "/i/flow/language_selector" }), n.createElement(l.Z, { description: g }), n.createElement(t.Z, null), n.createElement(r.Z, { text: f }), n.createElement(o.Z, { label: k, link: "/settings/mute" }), n.createElement(o.Z, { label: P, link: "/settings/blocked/all" }), n.createElement(t.Z, null), n.createElement(r.Z, { text: v }), n.createElement(o.Z, { description: this._renderPersonalizationDescription(), label: E, link: "/settings/account/personalization" })));
                 }
             }
             Z.contextType = s.rC;
@@ -875,8 +879,8 @@
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, y.zr)("DEACTIVATE"), deactivate: w.Z }))
                     .withAnalytics({ page: "settings", section: "deactivate" }),
                 g = p().j035733c,
-                v = p().j4a29d52,
-                _ = p().ea989810,
+                _ = p().j4a29d52,
+                v = p().ea989810,
                 E = p().f6e73faa,
                 k = p().c3743328,
                 P = p().a20cd24e,
@@ -905,7 +909,7 @@
                     const { location: e } = this.props,
                         { viewerUserId: a } = this.context,
                         { showPasswordDialog: d } = this.state;
-                    return o()(!!a, "viewerUserId must be defined"), n.createElement(m.Z, null, n.createElement(S.Z, { location: e, onPasswordSubmit: this._handlePasswordSubmit, promptForPassword: d, reenterPasswordLabel: I, saveChangesHeaderLabel: Z, submitLabel: E, submitType: "destructiveFilled", title: _ }, n.createElement(t.Z, null, n.createElement(D.ZP, { key: a, userId: a, withLink: !1 }), n.createElement(c.Z, { text: k }), n.createElement(T, { withBottomBorder: !1 }, g), n.createElement(c.Z, { text: P }), n.createElement(T, null, v), n.createElement(T, null, n.createElement(p().I18NFormatMessage, { $i18n: "g124fce9" }, n.createElement(i.ZP, { link: C }, p().fc025d1d))), n.createElement(T, null, n.createElement(p().I18NFormatMessage, { $i18n: "d9ef8fbb" }, n.createElement(i.ZP, { link: B }, p().bb5e039c))), n.createElement(T, null, n.createElement(p().I18NFormatMessage, { $i18n: "b7a3adc1" }, n.createElement(i.ZP, { link: B }, p().j37efff6))), n.createElement(T, { withBottomBorder: !1 }, n.createElement(p().I18NFormatMessage, { $i18n: "f3613d0b" }, n.createElement(i.ZP, { link: "/settings/download_your_data" }, p().ce5bfe12))), n.createElement(s.Z, null), n.createElement(u.Z, { color: "red500", label: E, onPress: this._handleDeactivateRequest }))));
+                    return o()(!!a, "viewerUserId must be defined"), n.createElement(m.Z, null, n.createElement(S.Z, { location: e, onPasswordSubmit: this._handlePasswordSubmit, promptForPassword: d, reenterPasswordLabel: I, saveChangesHeaderLabel: Z, submitLabel: E, submitType: "destructiveFilled", title: v }, n.createElement(t.Z, null, n.createElement(D.ZP, { key: a, userId: a, withLink: !1 }), n.createElement(c.Z, { text: k }), n.createElement(T, { withBottomBorder: !1 }, g), n.createElement(c.Z, { text: P }), n.createElement(T, null, _), n.createElement(T, null, n.createElement(p().I18NFormatMessage, { $i18n: "g124fce9" }, n.createElement(i.ZP, { link: C }, p().fc025d1d))), n.createElement(T, null, n.createElement(p().I18NFormatMessage, { $i18n: "d9ef8fbb" }, n.createElement(i.ZP, { link: B }, p().bb5e039c))), n.createElement(T, null, n.createElement(p().I18NFormatMessage, { $i18n: "b7a3adc1" }, n.createElement(i.ZP, { link: B }, p().j37efff6))), n.createElement(T, { withBottomBorder: !1 }, n.createElement(p().I18NFormatMessage, { $i18n: "f3613d0b" }, n.createElement(i.ZP, { link: "/settings/download_your_data" }, p().ce5bfe12))), n.createElement(s.Z, null), n.createElement(u.Z, { color: "red500", label: E, onPress: this._handleDeactivateRequest }))));
                 }
             }
             x.contextType = h.rC;
@@ -913,4 +917,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsInternals-0564e869.9ec3580a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsInternals-0564e869.599e2bfa.js.map
