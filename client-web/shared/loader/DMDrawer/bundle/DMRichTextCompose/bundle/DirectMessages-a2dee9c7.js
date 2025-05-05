@@ -2,7 +2,7 @@
     ["shared~loader.DMDrawer~bundle.DMRichTextCompose~bundle.DirectMessages-a2dee9c7"],
     {
         525279: (e) => {
-            e.exports = { queryId: "0fuIC8EW-1jNA9IqiGgB7Q", operationName: "BookmarkFolderTimeline", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
+            e.exports = { queryId: "1Je5Be_uR9dbcLSSN6ooRw", operationName: "BookmarkFolderTimeline", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
         },
         527154: (e) => {
             e.exports = { queryId: "i78YDd0Tza-dV4SYs58kRg", operationName: "BookmarkFoldersSlice", operationType: "query", metadata: { featureSwitches: [], fieldToggles: [] } };
@@ -11,7 +11,7 @@
             e.exports = { queryId: "4KHZvvNbHNf07bsgnL9gWA", operationName: "bookmarkTweetToFolder", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
         342459: (e) => {
-            e.exports = { queryId: "x6Qk_1nACXELbfKOkON7uA", operationName: "Bookmarks", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
+            e.exports = { queryId: "2neUNDqrrFzbLui8yallcQ", operationName: "Bookmarks", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
         },
         745735: (e) => {
             e.exports = { queryId: "6Xxqpq8TM_CREYiuof_h5w", operationName: "createBookmarkFolder", operationType: "mutation", metadata: { featureSwitches: [], fieldToggles: [] } };
@@ -237,12 +237,12 @@
                 w = a.n(g),
                 y = a(615626),
                 v = a.n(y),
-                k = a(182247),
-                S = a.n(k),
+                S = a(182247),
+                k = a.n(S),
                 A = a(974829),
                 D = a.n(A),
-                I = a(934309);
-            const F = { result: [], entities: {}, slice_info: {} },
+                F = a(934309);
+            const I = { result: [], entities: {}, slice_info: {} },
                 P = (e, t) => {
                     const a = t?.bookmark_all_delete,
                         n = "Done" === a;
@@ -278,14 +278,14 @@
                     },
                     editBookmarkFolder(t) {
                         const { bookmarkFolderId: a, name: n } = t;
-                        return e.graphQL(S(), { bookmark_collection_id: a, name: n });
+                        return e.graphQL(k(), { bookmark_collection_id: a, name: n });
                     },
                     removeTweetFromBookmarkFolder(t) {
                         const { bookmarkFolderId: a, tweetId: n } = t;
                         return e.graphQL(D(), { bookmark_collection_id: a, tweet_id: n });
                     },
-                    fetchBookmarksTimeline: ({ count: a, cursor: n }) => e.graphQL(m(), { count: a, cursor: n, includePromotedContent: !0, ...(0, o.d)(t) }, (e, t) => !t?.bookmark_timeline_v2?.timeline).then((e) => e?.bookmark_timeline_v2?.timeline || I.cY),
-                    fetchBookmarkFolderTimeline: ({ bookmark_collection_id: a, cursor: n }) => e.graphQL(u(), { bookmark_collection_id: a, cursor: n, includePromotedContent: !0, ...(0, o.d)(t) }, E).then((e) => e?.bookmark_collection_timeline?.timeline || I.cY),
+                    fetchBookmarksTimeline: ({ count: a, cursor: n }) => e.graphQL(m(), { count: a, cursor: n, includePromotedContent: !0, ...(0, o.d)(t) }, (e, t) => !t?.bookmark_timeline_v2?.timeline).then((e) => e?.bookmark_timeline_v2?.timeline || F.cY),
+                    fetchBookmarkFolderTimeline: ({ bookmark_collection_id: a, cursor: n }) => e.graphQL(u(), { bookmark_collection_id: a, cursor: n, includePromotedContent: !0, ...(0, o.d)(t) }, E).then((e) => e?.bookmark_collection_timeline?.timeline || F.cY),
                     fetchBookmarkFoldersSlice: (t) =>
                         t
                             ? e.graphQL(d(), t, Z).then((e) => {
@@ -296,14 +296,14 @@
                                       const { entities: e, result: t } = (0, n.Fv)(i.items, [l]);
                                       return { entities: e, result: t, slice_info: i.slice_info };
                                   }
-                                  return F;
+                                  return I;
                               })
-                            : Promise.resolve(F),
+                            : Promise.resolve(I),
                 });
         },
         333241: (e, t, a) => {
             "use strict";
-            a.d(t, { Z: () => k });
+            a.d(t, { Z: () => S });
             a(136728);
             var n = a(202784),
                 i = a(638236),
@@ -324,10 +324,10 @@
                 w = "share",
                 y = l().j7bb1a43,
                 v = l().hef5960c,
-                k = (0, b.M)((e) => {
+                S = (0, b.M)((e) => {
                     const { featureSwitches: t } = (0, c.QZ)(),
-                        { onBlock: a, onClose: o, onMute: l, onRemoveFollower: b, onReportUser: k, onShare: S, onUnblock: A, onUnmute: D, user: I } = e,
-                        F = [],
+                        { onBlock: a, onClose: o, onMute: l, onRemoveFollower: b, onReportUser: S, onShare: k, onUnblock: A, onUnmute: D, user: F } = e,
+                        I = [],
                         P = (t, a) => {
                             const { confirm: n, onClose: i } = e;
                             if (t) {
@@ -338,21 +338,21 @@
                             } else a();
                         };
                     !!window.navigator.share &&
-                        !I.protected &&
-                        !I.blocking &&
-                        !I.blocked_by &&
-                        F.push({
+                        !F.protected &&
+                        !F.blocking &&
+                        !F.blocked_by &&
+                        I.push({
                             Icon: i.Z,
                             onClick: () => {
-                                o(), S();
+                                o(), k();
                             },
                             testID: w,
                             text: v,
                         });
-                    !I.blocking &&
-                        F.push({
+                    !F.blocking &&
+                        I.push({
                             ...(0, p.N1)(
-                                I,
+                                F,
                                 () => {
                                     o(), l();
                                 },
@@ -362,26 +362,26 @@
                             ),
                             testID: h,
                         });
-                    I.followed_by &&
-                        F.push({
+                    F.followed_by &&
+                        I.push({
                             ...(0, m.l)({
                                 removeFollowerAction: (e) => {
                                     P(e, b);
                                 },
-                                user: I,
+                                user: F,
                             }),
                             testID: f,
                         }),
-                        F.push((0, u.op)({ blockAction: (e) => P(e, a), isSoftBlockEnabled: t.isTrue("xprofile_blocked_by_view_enabled"), source: u.SC.FOLLOWERS_LIST, testID: _, unblockAction: (e) => P(e, A), user: I })),
-                        F.push({
+                        I.push((0, u.op)({ blockAction: (e) => P(e, a), isSoftBlockEnabled: t.isTrue("xprofile_blocked_by_view_enabled"), source: u.SC.FOLLOWERS_LIST, testID: _, unblockAction: (e) => P(e, A), user: F })),
+                        I.push({
                             Icon: s.default,
                             onClick: () => {
-                                o(), k();
+                                o(), S();
                             },
                             testID: g,
-                            text: y({ screenName: I.screen_name }),
+                            text: y({ screenName: F.screen_name }),
                         });
-                    const Z = F.map(({ Icon: e, onClick: t, testID: a, text: n }) => ({ text: n, onClick: t, Icon: e, testID: a }));
+                    const Z = I.map(({ Icon: e, onClick: t, testID: a, text: n }) => ({ text: n, onClick: t, Icon: e, testID: a }));
                     return n.createElement(r.Z, { items: Z, onCloseRequested: o });
                 });
         },
@@ -508,11 +508,11 @@
                 w = a(10656),
                 y = a(716233),
                 v = a(946208),
-                k = a(540387),
-                S = a(950822),
+                S = a(540387),
+                k = a(950822),
                 A = a(303186),
                 D = a(954300);
-            class I extends n.Component {
+            class F extends n.Component {
                 constructor(...e) {
                     super(...e),
                         (this._setVideoRef = (e) => {
@@ -523,24 +523,23 @@
                 render() {
                     const { children: e, dataSaverMode: t, getVideoRef: a, style: i, variants: r, ...o } = this.props,
                         l = (0, A.IM)((0, D.rD)(r), t);
-                    return (0, S.Z)("video", { ...o, children: [l.map((e) => n.createElement("source", { key: e.src, src: e.src, type: e.type })), e], ref: this._setVideoRef, style: i });
+                    return (0, k.Z)("video", { ...o, children: [l.map((e) => n.createElement("source", { key: e.src, src: e.src, type: e.type })), e], ref: this._setVideoRef, style: i });
                 }
             }
-            I.defaultProps = { dataSaverMode: !1, variants: [] };
-            var F = a(959587),
+            F.defaultProps = { dataSaverMode: !1, variants: [] };
+            var I = a(959587),
                 P = a(751170),
                 Z = a(523561),
                 E = a(195560);
             const C = (0, Z.Z)({
                     loader: () =>
                         Promise.all([
-                            a.e("icons.6"),
-                            a.e("icons.25"),
-                            a.e("icons.22"),
-                            a.e("icons.2"),
+                            a.e("icons.16"),
+                            a.e("icons.10"),
                             a.e("modules.common-e907d115"),
                             a.e("modules.common-e019dbda"),
-                            a.e("icons.0"),
+                            a.e("icons.13"),
+                            a.e("icons.22"),
                             a.e("modules.audio-6107ac1a"),
                             a.e("modules.audio-b953418a"),
                             a.e("modules.audio-7c51e6a7"),
@@ -551,8 +550,10 @@
                             a.e("modules.audio-e019dbda"),
                             a.e("modules.audio-262c94d4"),
                             a.e("modules.audio-c6fe4ea4"),
+                            a.e("icons.4"),
+                            a.e("icons.26"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2f4a3d25"),
+                            a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2d1eb5e2"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                             a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -650,14 +651,14 @@
                         });
                 }
                 render() {
-                    const { "aria-label": e, enableGif: t, mediaItem: a, onEdit: d, onEditSensitiveWarning: c, onRemove: u, role: p, style: g, withAltTextLabel: y, withCloseButton: v, withDragAndDropIndicator: k, withEditButton: S, withEditIcon: A, withEditSensitiveWarningButton: D } = this.props,
-                        { mediaContainerSizeStyle: I, playGif: P } = this.state,
+                    const { "aria-label": e, enableGif: t, mediaItem: a, onEdit: d, onEditSensitiveWarning: c, onRemove: u, role: p, style: g, withAltTextLabel: y, withCloseButton: v, withDragAndDropIndicator: S, withEditButton: k, withEditIcon: A, withEditSensitiveWarningButton: D } = this.props,
+                        { mediaContainerSizeStyle: F, playGif: P } = this.state,
                         Z = a.externalMediaDetails && a.externalMediaDetails.mediaType === f.Re,
                         E = Z || (t && a.mediaFile && a.mediaFile.isGif),
                         C = !!a.mediaFile?.isVideo;
                     return n.createElement(r.ZP, null, ({ windowWidth: t }) => {
                         const a = void 0 !== A ? A : !w.Z.isTwoColumnLayout(t);
-                        return n.createElement(i.Z, { "aria-label": e || x, onLayout: this._handleMediaPreviewLayout, role: p, style: [g, O.cursor, Z && O.gifPlayButton, I] }, this._renderPreview(), Z && !P && n.createElement(o.Z, { "aria-label": B, onPress: this._handleGifClick, size: "small" }), E ? n.createElement(F.ZP, { type: F.AM }) : null, y && !C ? n.createElement(l.Z, { align: "left", altLabel: e }) : null, n.createElement(i.Z, { style: O.editMedia }, k ? n.createElement(s.ZP, { "aria-label": U, hoverLabel: { label: U }, icon: n.createElement(m.default, null), size: "small", type: "onMediaDominantColorFilled" }) : null, S && D ? n.createElement(s.ZP, { "aria-label": L, icon: n.createElement(b.default, { style: O.editSensitiveWarningIcon }), onPress: c, size: "small", type: "onMediaDominantColorFilled" }) : null, S ? n.createElement(s.ZP, { "aria-label": T, icon: a ? n.createElement(_.default, null) : void 0, onPress: d, size: a ? "xSmall" : "small", type: "onMediaDominantColorFilled" }, a ? void 0 : M) : null), v ? n.createElement(s.ZP, { "aria-label": N, hoverLabel: { label: R }, icon: n.createElement(h.default, null), onPress: u, size: "small", style: O.buttonRight, type: "onMediaDominantColorFilled" }) : null);
+                        return n.createElement(i.Z, { "aria-label": e || x, onLayout: this._handleMediaPreviewLayout, role: p, style: [g, O.cursor, Z && O.gifPlayButton, F] }, this._renderPreview(), Z && !P && n.createElement(o.Z, { "aria-label": B, onPress: this._handleGifClick, size: "small" }), E ? n.createElement(I.ZP, { type: I.AM }) : null, y && !C ? n.createElement(l.Z, { align: "left", altLabel: e }) : null, n.createElement(i.Z, { style: O.editMedia }, S ? n.createElement(s.ZP, { "aria-label": U, hoverLabel: { label: U }, icon: n.createElement(m.default, null), size: "small", type: "onMediaDominantColorFilled" }) : null, k && D ? n.createElement(s.ZP, { "aria-label": L, icon: n.createElement(b.default, { style: O.editSensitiveWarningIcon }), onPress: c, size: "small", type: "onMediaDominantColorFilled" }) : null, k ? n.createElement(s.ZP, { "aria-label": T, icon: a ? n.createElement(_.default, null) : void 0, onPress: d, size: a ? "xSmall" : "small", type: "onMediaDominantColorFilled" }, a ? void 0 : M) : null), v ? n.createElement(s.ZP, { "aria-label": N, hoverLabel: { label: R }, icon: n.createElement(h.default, null), onPress: u, size: "small", style: O.buttonRight, type: "onMediaDominantColorFilled" }) : null);
                     });
                 }
                 _renderPreview() {
@@ -681,7 +682,7 @@
                 _renderVideoPreview(e, t, a, i) {
                     const { mediaItem: r } = this.props,
                         o = r.mediaMetadata?.subtitles;
-                    if (this.context.featureSwitches.isTrue("responsive_web_composer_configurable_video_player_enabled") && i instanceof k.ZP) {
+                    if (this.context.featureSwitches.isTrue("responsive_web_composer_configurable_video_player_enabled") && i instanceof S.ZP) {
                         let o = [];
                         (0, y.TO)(i.fileHandle) && (o = [{ src: t, type: e }]);
                         const l = r.mediaMetadata?.subtitles,
@@ -690,7 +691,7 @@
                     }
                     {
                         const a = (0, y.TO)(i.fileHandle) ? [{ content_type: e, url: t }] : [];
-                        return n.createElement(I, { autoPlay: !1, controls: !0, getVideoRef: this._setVideoRef, loop: !0, muted: !0, onPause: this._handleVideoOnPause, onPlay: this._handleVideoOnPlay, playsInline: !0, poster: i instanceof k.ZP ? i.thumbnail : "", style: O.video, variants: a }, o?.upload?.mediaFile instanceof v.ZP ? n.createElement("track", { default: !0, kind: "subtitles", label: o.displayName, src: o.upload.mediaFile.vtt, srcLang: o.lang }) : null);
+                        return n.createElement(F, { autoPlay: !1, controls: !0, getVideoRef: this._setVideoRef, loop: !0, muted: !0, onPause: this._handleVideoOnPause, onPlay: this._handleVideoOnPlay, playsInline: !0, poster: i instanceof S.ZP ? i.thumbnail : "", style: O.video, variants: a }, o?.upload?.mediaFile instanceof v.ZP ? n.createElement("track", { default: !0, kind: "subtitles", label: o.displayName, src: o.upload.mediaFile.vtt, srcLang: o.lang }) : null);
                     }
                 }
             }
@@ -845,23 +846,23 @@
                 w = a(798538),
                 y = a(465814),
                 v = a(632960);
-            function k(e, t, a) {
+            function S(e, t, a) {
                 const { urls: n } = t,
                     i = [...n];
                 let r;
                 for (const t of i.reverse()) if (((r = a(e, t)), r)) break;
                 return r;
             }
-            const S = (e, t) => k(e, t, g.Z.select),
-                A = (e, t) => k(e, t, y.Z.select),
+            const k = (e, t) => S(e, t, g.Z.select),
+                A = (e, t) => S(e, t, y.Z.select),
                 D = (0, f.Z)()
-                    .propsFromState(() => ({ card: S, legacyAndUnifiedCard: A }))
+                    .propsFromState(() => ({ card: k, legacyAndUnifiedCard: A }))
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, h.zr)("COMPOSER_CARD_PREVIEW"), fetchCardPreviewIfNeeded: g.Z.fetchCardPreviewIfNeeded, updateDMComposer: w.G6, updateTweetComposer: v.zi })),
-                I = d().f6fec9f6,
-                F = /^https?:\/\//i,
+                F = d().f6fec9f6,
+                I = /^https?:\/\//i,
                 P = (e) => {
                     const t = (0, m.Z)(e);
-                    if (t.length) return t.map((e) => (!F.test(e) && `http://${e}`) || e);
+                    if (t.length) return t.map((e) => (!I.test(e) && `http://${e}`) || e);
                 };
             class Z extends n.Component {
                 constructor(e, t) {
@@ -896,7 +897,7 @@
                         { viewerUserId: a } = this.context;
                     if (e || !a) return null;
                     const i = this._getCards();
-                    return i ? n.createElement(r.Z, { style: t }, n.createElement(_.default, { card: i.legacyCard, cardContext: { tweetUserId: a, tweetId: "0" }, isInteractive: !1, preventVideoPlayback: !0, unifiedCard: i.unifiedCard }), n.createElement(o.ZP, { "aria-label": I, icon: n.createElement(c.default, null), onPress: this._handleCardPreviewDismissal, size: "xSmall", style: E.closeButton, type: "onMediaDominantColorFilled" })) : null;
+                    return i ? n.createElement(r.Z, { style: t }, n.createElement(_.default, { card: i.legacyCard, cardContext: { tweetUserId: a, tweetId: "0" }, isInteractive: !1, preventVideoPlayback: !0, unifiedCard: i.unifiedCard }), n.createElement(o.ZP, { "aria-label": F, icon: n.createElement(c.default, null), onPress: this._handleCardPreviewDismissal, size: "xSmall", style: E.closeButton, type: "onMediaDominantColorFilled" })) : null;
                 }
                 _getCards() {
                     const { card: e, legacyAndUnifiedCard: t } = this.props,
@@ -963,7 +964,7 @@
         },
         293988: (e, t, a) => {
             "use strict";
-            a.d(t, { Z: () => S });
+            a.d(t, { Z: () => k });
             var n = a(202784),
                 i = a(154003),
                 r = a(674132),
@@ -986,7 +987,7 @@
                 w = o().j87c21f4,
                 y = o().iebc30ca,
                 v = o().dc740eb2;
-            class k extends n.PureComponent {
+            class S extends n.PureComponent {
                 constructor(e) {
                     super(e),
                         (this._renderButton = () => {
@@ -1020,7 +1021,7 @@
                     t.scribeAction(e);
                 }
             }
-            const S = h(k);
+            const k = h(S);
         },
         490834: (e, t, a) => {
             "use strict";
@@ -1057,16 +1058,16 @@
                 w = f,
                 y = u().e05c00b4,
                 v = u().eabf2209,
-                k = u().a613e720,
-                S = u().f88553c8,
+                S = u().a613e720,
+                k = u().f88553c8,
                 A = { riffsy: "https://abs.twimg.com/a/1501527574/img/t1/icon_riffsy.png", giphy: "https://abs.twimg.com/a/1501527574/img/t1/icon_giphy.png" };
             class D extends n.PureComponent {
                 constructor(e) {
                     super(e),
-                        (this._renderMenu = (e) => n.createElement(r.Z, { items: [{ text: k, Icon: p.default, onClick: this._handleCopyGifLinkButtonClick }], onCloseRequested: e })),
+                        (this._renderMenu = (e) => n.createElement(r.Z, { items: [{ text: S, Icon: p.default, onClick: this._handleCopyGifLinkButtonClick }], onCloseRequested: e })),
                         (this._handleCopyGifLinkButtonClick = (e) => {
                             const { addToast: t, gifUrl: a } = this.props;
-                            i.Z.isAvailable() ? (i.Z.setString(a), t({ text: S })) : this.setState({ showCopyLinkSheet: !0 }), e && e();
+                            i.Z.isAvailable() ? (i.Z.setString(a), t({ text: k })) : this.setState({ showCopyLinkSheet: !0 }), e && e();
                         }),
                         (this._handleCopyLinkSheetCancel = () => {
                             this.setState({ showCopyLinkSheet: !1 });
@@ -1078,17 +1079,17 @@
                         { gifUrl: t, provider: a } = this.props,
                         { display_name: i, name: r } = a,
                         l = A[r];
-                    return l ? n.createElement(n.Fragment, null, e ? n.createElement(w, { description: v({ providerName: i }), headerText: y, link: t, onCancel: this._handleCopyLinkSheetCancel }) : null, n.createElement(o.ZP, { align: "center", color: "gray700", style: [I.root, I.verticalAlign] }, n.createElement(u().I18NFormatMessage, { $i18n: "e2e6ea0d" }, this._renderAttribution(i, l)))) : null;
+                    return l ? n.createElement(n.Fragment, null, e ? n.createElement(w, { description: v({ providerName: i }), headerText: y, link: t, onCancel: this._handleCopyLinkSheetCancel }) : null, n.createElement(o.ZP, { align: "center", color: "gray700", style: [F.root, F.verticalAlign] }, n.createElement(u().I18NFormatMessage, { $i18n: "e2e6ea0d" }, this._renderAttribution(i, l)))) : null;
                 }
                 _renderAttribution(e, t) {
-                    return n.createElement(l.Z, { interactiveStyles: null, renderMenu: this._renderMenu }, n.createElement(o.ZP, { style: I.verticalAlign, weight: "bold", withInteractiveStyling: !0 }, n.createElement(s.Z, { source: { uri: t }, style: I.image }), n.createElement(o.ZP, null, e.toUpperCase())));
+                    return n.createElement(l.Z, { interactiveStyles: null, renderMenu: this._renderMenu }, n.createElement(o.ZP, { style: F.verticalAlign, weight: "bold", withInteractiveStyling: !0 }, n.createElement(s.Z, { source: { uri: t }, style: F.image }), n.createElement(o.ZP, null, e.toUpperCase())));
                 }
             }
-            const I = d.default.create((e) => ({ button: { marginStart: e.spaces.space12 }, image: { display: "inline-block", height: e.spaces.space16, marginHorizontal: e.spaces.space4, width: e.spaces.space16 }, root: { marginHorizontal: e.spaces.space8 }, verticalAlign: { display: "flex", alignItems: "center", flexDirection: "row" }, alignLeft: { textAlign: "start" } })),
-                F = D;
+            const F = d.default.create((e) => ({ button: { marginStart: e.spaces.space12 }, image: { display: "inline-block", height: e.spaces.space16, marginHorizontal: e.spaces.space4, width: e.spaces.space16 }, root: { marginHorizontal: e.spaces.space8 }, verticalAlign: { display: "flex", alignItems: "center", flexDirection: "row" }, alignLeft: { textAlign: "start" } })),
+                I = D;
             var P = a(668214),
                 Z = a(601576);
-            const E = (0, P.Z)().propsFromActions(() => ({ addToast: Z.fz }))(({ addToast: e, gifUrl: t, provider: a }) => n.createElement(F, { addToast: e, gifUrl: t, provider: a }));
+            const E = (0, P.Z)().propsFromActions(() => ({ addToast: Z.fz }))(({ addToast: e, gifUrl: t, provider: a }) => n.createElement(I, { addToast: e, gifUrl: t, provider: a }));
         },
         170371: (e, t, a) => {
             "use strict";
@@ -1175,7 +1176,7 @@
         },
         62857: (e, t, a) => {
             "use strict";
-            a.d(t, { Z: () => F });
+            a.d(t, { Z: () => I });
             var n = a(807896),
                 i = a(202784),
                 r = a(476984),
@@ -1200,14 +1201,14 @@
                 w = a(668214),
                 y = a(919022);
             const v = (e, t) => t.userIds,
-                k = (e, t) => {
+                S = (e, t) => {
                     const { filterPredicate: a = (e) => !!e, userIds: n } = t;
                     return n.filter((t) => {
                         const n = y.ZP.select(e, t);
                         return !!n && a(n);
                     });
                 },
-                S = (e, t) => {
+                k = (e, t) => {
                     const { userIds: a } = t;
                     return a.reduce((t, a) => {
                         const n = y.ZP.selectFetchStatus(e, a);
@@ -1216,8 +1217,8 @@
                 },
                 A = (0, w.Z)()
                     .propsFromState(() => ({
-                        availableUserIds: (0, g.Z)(k, (e) => e),
-                        fetchStatus: (0, g.Z)(k, S, v, (e, t, a) => {
+                        availableUserIds: (0, g.Z)(S, (e) => e),
+                        fetchStatus: (0, g.Z)(S, k, v, (e, t, a) => {
                             let n = h.ZP.LOADED;
                             for (let i = 0; i < a.length; i++) {
                                 const r = a[i];
@@ -1232,7 +1233,7 @@
                     }))
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, f.zr)("USERS_LIST_CONTAINER"), fetchUsersIfNeeded: y.ZP.fetchManyIfNeeded })),
                 D = s().f5b426c2;
-            class I extends i.Component {
+            class F extends i.Component {
                 constructor(...e) {
                     super(...e),
                         (this.state = { allUsersUnavailable: !1 }),
@@ -1274,7 +1275,7 @@
                     );
                 }
             }
-            const F = A(I);
+            const I = A(F);
         },
         246851: (e, t, a) => {
             "use strict";
@@ -1292,4 +1293,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.DMRichTextCompose~bundle.DirectMessages-a2dee9c7.565880ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.DMRichTextCompose~bundle.DirectMessages-a2dee9c7.167fa89a.js.map

@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
-    ["shared~bundle.AccountVerification~bundle.SettingsProfile~loader.MediaPickerWithPreview~bundle.RichTextCompose"],
+    ["shared~bundle.AccountVerification~bundle.SettingsProfile~bundle.UserLists~loader.MediaPickerWithPreview~bundl"],
     {
         373554: (e, a, i) => {
             i.d(a, { Z: () => f, h: () => S });
@@ -80,7 +80,7 @@
                 v = S;
         },
         304059: (e, a, i) => {
-            i.d(a, { Z: () => U });
+            i.d(a, { Z: () => N });
             var t = i(202784),
                 d = i(325686),
                 r = i(537392),
@@ -126,13 +126,12 @@
             const M = (0, C.Z)({
                     loader: () =>
                         Promise.all([
-                            i.e("icons.6"),
-                            i.e("icons.25"),
-                            i.e("icons.22"),
-                            i.e("icons.2"),
+                            i.e("icons.16"),
+                            i.e("icons.10"),
                             i.e("modules.common-e907d115"),
                             i.e("modules.common-e019dbda"),
-                            i.e("icons.0"),
+                            i.e("icons.13"),
+                            i.e("icons.22"),
                             i.e("modules.audio-6107ac1a"),
                             i.e("modules.audio-b953418a"),
                             i.e("modules.audio-7c51e6a7"),
@@ -143,8 +142,10 @@
                             i.e("modules.audio-e019dbda"),
                             i.e("modules.audio-262c94d4"),
                             i.e("modules.audio-c6fe4ea4"),
+                            i.e("icons.4"),
+                            i.e("icons.26"),
                             i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                            i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2f4a3d25"),
+                            i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2d1eb5e2"),
                             i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                             i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                             i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -192,12 +193,12 @@
                 V = b().gd80afba,
                 R = b().j322caee,
                 F = b().abd845fe,
-                x = b().df1b0708,
-                G = b().cd959e5c,
+                G = b().df1b0708,
+                x = b().cd959e5c,
                 z = b().e68b09b4,
                 k = b().add55c98,
-                O = b().f350cf46;
-            class L extends t.Component {
+                L = b().f350cf46;
+            class O extends t.Component {
                 constructor(...e) {
                     super(...e),
                         (this.state = { isVideoPaused: !0, playGif: !1 }),
@@ -249,7 +250,7 @@
                         M = !!i.mediaFile?.isVideo;
                     return t.createElement(r.ZP, null, ({ windowWidth: a }) => {
                         const i = void 0 !== _ ? _ : !D.Z.isTwoColumnLayout(a);
-                        return t.createElement(d.Z, { "aria-label": e || k, onLayout: this._handleMediaPreviewLayout, role: b, style: [v, T.cursor, C && T.gifPlayButton, E] }, this._renderPreview(), C && !B && t.createElement(n.Z, { "aria-label": x, onPress: this._handleGifClick, size: "small" }), Z ? t.createElement(I.ZP, { type: I.AM }) : null, A && !M ? t.createElement(l.Z, { align: "left", altLabel: e }) : null, t.createElement(d.Z, { style: T.editMedia }, g ? t.createElement(o.ZP, { "aria-label": O, hoverLabel: { label: O }, icon: t.createElement(p.default, null), size: "small", type: "onMediaDominantColorFilled" }) : null, w && P ? t.createElement(o.ZP, { "aria-label": R, icon: t.createElement(h.default, { style: T.editSensitiveWarningIcon }), onPress: c, size: "small", type: "onMediaDominantColorFilled" }) : null, w ? t.createElement(o.ZP, { "aria-label": V, icon: i ? t.createElement(S.default, null) : void 0, onPress: s, size: i ? "xSmall" : "small", type: "onMediaDominantColorFilled" }, i ? void 0 : F) : null), y ? t.createElement(o.ZP, { "aria-label": G, hoverLabel: { label: z }, icon: t.createElement(m.default, null), onPress: u, size: "small", style: T.buttonRight, type: "onMediaDominantColorFilled" }) : null);
+                        return t.createElement(d.Z, { "aria-label": e || k, onLayout: this._handleMediaPreviewLayout, role: b, style: [v, U.cursor, C && U.gifPlayButton, E] }, this._renderPreview(), C && !B && t.createElement(n.Z, { "aria-label": G, onPress: this._handleGifClick, size: "small" }), Z ? t.createElement(I.ZP, { type: I.AM }) : null, A && !M ? t.createElement(l.Z, { align: "left", altLabel: e }) : null, t.createElement(d.Z, { style: U.editMedia }, g ? t.createElement(o.ZP, { "aria-label": L, hoverLabel: { label: L }, icon: t.createElement(p.default, null), size: "small", type: "onMediaDominantColorFilled" }) : null, w && P ? t.createElement(o.ZP, { "aria-label": R, icon: t.createElement(h.default, { style: U.editSensitiveWarningIcon }), onPress: c, size: "small", type: "onMediaDominantColorFilled" }) : null, w ? t.createElement(o.ZP, { "aria-label": V, icon: i ? t.createElement(S.default, null) : void 0, onPress: s, size: i ? "xSmall" : "small", type: "onMediaDominantColorFilled" }, i ? void 0 : F) : null), y ? t.createElement(o.ZP, { "aria-label": x, hoverLabel: { label: z }, icon: t.createElement(m.default, null), onPress: u, size: "small", style: U.buttonRight, type: "onMediaDominantColorFilled" }) : null);
                     });
                 }
                 _renderPreview() {
@@ -264,7 +265,7 @@
                 _renderGifPreview(e, a) {
                     const { playGif: i } = this.state,
                         r = { uri: i ? e : a };
-                    return t.createElement(d.Z, { onClick: this._handleGifClick, style: s.default.absoluteFill }, t.createElement(c.Z, { resizeMode: "cover", source: r, style: T.video }));
+                    return t.createElement(d.Z, { onClick: this._handleGifClick, style: s.default.absoluteFill }, t.createElement(c.Z, { resizeMode: "cover", source: r, style: U.video }));
                 }
                 _renderImagePreview() {
                     const { borderRadius: e, enableGif: a, imageResizeMode: i, mediaItem: d, onClick: r } = this.props;
@@ -282,13 +283,13 @@
                     }
                     {
                         const i = (0, A.TO)(d.fileHandle) ? [{ content_type: e, url: a }] : [];
-                        return t.createElement(E, { autoPlay: !1, controls: !0, getVideoRef: this._setVideoRef, loop: !0, muted: !0, onPause: this._handleVideoOnPause, onPlay: this._handleVideoOnPlay, playsInline: !0, poster: d instanceof g.ZP ? d.thumbnail : "", style: T.video, variants: i }, n?.upload?.mediaFile instanceof y.ZP ? t.createElement("track", { default: !0, kind: "subtitles", label: n.displayName, src: n.upload.mediaFile.vtt, srcLang: n.lang }) : null);
+                        return t.createElement(E, { autoPlay: !1, controls: !0, getVideoRef: this._setVideoRef, loop: !0, muted: !0, onPause: this._handleVideoOnPause, onPlay: this._handleVideoOnPlay, playsInline: !0, poster: d instanceof g.ZP ? d.thumbnail : "", style: U.video, variants: i }, n?.upload?.mediaFile instanceof y.ZP ? t.createElement("track", { default: !0, kind: "subtitles", label: n.displayName, src: n.upload.mediaFile.vtt, srcLang: n.lang }) : null);
                     }
                 }
             }
-            (L.contextType = v.rC), (L.defaultProps = { enableGif: !0, withCloseButton: !0, withAltTextLabel: !1, withEditButton: !1, withEditSensitiveWarningButton: !1 });
-            const T = s.default.create((e) => ({ buttonLeft: { position: "absolute", start: e.spaces.space4, top: e.spaces.space4 }, buttonRight: { position: "absolute", end: e.spaces.space4, top: e.spaces.space4 }, cursor: { cursor: "pointer" }, editSensitiveWarningIcon: { color: e.colors.primary }, editMedia: { display: "flex", start: e.spaces.space4, top: e.spaces.space4, gap: e.spaces.space4, flexDirection: "row", position: "absolute" }, editImage: { bottom: e.spaces.space4 }, editVideo: { top: e.spaces.space4 }, gifPlayButton: { alignItems: "center", justifyContent: "center" }, video: { height: "100%", width: "100%" } })),
-                U = L;
+            (O.contextType = v.rC), (O.defaultProps = { enableGif: !0, withCloseButton: !0, withAltTextLabel: !1, withEditButton: !1, withEditSensitiveWarningButton: !1 });
+            const U = s.default.create((e) => ({ buttonLeft: { position: "absolute", start: e.spaces.space4, top: e.spaces.space4 }, buttonRight: { position: "absolute", end: e.spaces.space4, top: e.spaces.space4 }, cursor: { cursor: "pointer" }, editSensitiveWarningIcon: { color: e.colors.primary }, editMedia: { display: "flex", start: e.spaces.space4, top: e.spaces.space4, gap: e.spaces.space4, flexDirection: "row", position: "absolute" }, editImage: { bottom: e.spaces.space4 }, editVideo: { top: e.spaces.space4 }, gifPlayButton: { alignItems: "center", justifyContent: "center" }, video: { height: "100%", width: "100%" } })),
+                N = O;
         },
         959587: (e, a, i) => {
             i.d(a, { AM: () => o, ZP: () => b, pX: () => s });
@@ -398,4 +399,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AccountVerification~bundle.SettingsProfile~loader.MediaPickerWithPreview~bundle.RichTextCompose.c304a4ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AccountVerification~bundle.SettingsProfile~bundle.UserLists~loader.MediaPickerWithPreview~bundl.8007ae6a.js.map

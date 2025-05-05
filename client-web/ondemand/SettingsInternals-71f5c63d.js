@@ -72,7 +72,7 @@
             }
         },
         788325: (e, t, n) => {
-            n.r(t), n.d(t, { EmailScreen: () => x, default: () => I });
+            n.r(t), n.d(t, { EmailScreen: () => x, default: () => k });
             var i = n(202784),
                 a = n(325686),
                 r = n(855488),
@@ -96,9 +96,9 @@
                     .propsFromActions(() => ({ addToast: b.fz, createLocalApiErrorHandler: (0, _.zr)("SETTINGS_EMAIL_SCREEN"), fetchDevices: E.fetchDevices, fetchSettings: y.wv, resendConfirmationEmail: E.resendConfirmationEmail, updateEmail: E.updateEmail }))
                     .withAnalytics({ page: "settings", section: "email" }),
                 C = d().i2209530,
-                Z = d().ebeeac1a,
-                v = d().dc013356,
-                w = d().ea28c7ce,
+                w = d().ebeeac1a,
+                Z = d().dc013356,
+                v = d().ea28c7ce,
                 L = d().f3f66252,
                 A = d().i5107de4,
                 P = d().d19fd42a,
@@ -111,7 +111,7 @@
                                 [t, n] = (0, m.Z)(e, (e) => e.email_verified),
                                 c = t[0]?.email,
                                 l = n[0]?.email;
-                            return i.createElement(a.Z, null, c ? i.createElement(r.Z, { defaultValue: c, editable: !1, label: v, name: "current_email", type: "email" }) : null, l ? this._renderUnverifiedEmailMessage(l) : null, i.createElement(o.Z, null), i.createElement(s.Z, { color: "primary", label: e.length ? A : L, link: "/i/flow/add_email" }));
+                            return i.createElement(a.Z, null, c ? i.createElement(r.Z, { defaultValue: c, editable: !1, label: Z, name: "current_email", type: "email" }) : null, l ? this._renderUnverifiedEmailMessage(l) : null, i.createElement(o.Z, null), i.createElement(s.Z, { color: "primary", label: e.length ? A : L, link: "/i/flow/add_email" }));
                         }),
                         (this._renderUnverifiedEmailMessage = (e) => i.createElement(c.Z, null, i.createElement(l.ZP, { color: "gray700" }, i.createElement(d().I18NFormatMessage, { $i18n: "f3c4e2c5", unverifiedEmail: e }, i.createElement(l.ZP, { color: "link", onClick: this._handleResendVerification, role: "button" }, d().h021352f({ resendConfirmationLabel: P })))))),
                         (this._handleResendVerification = () => {
@@ -132,13 +132,13 @@
                 }
                 render() {
                     const { fetchStatus: e, location: t } = this.props;
-                    return i.createElement(f.Z, { location: t, submitDisabled: !this.state.email, submitLabel: C, title: Z }, i.createElement(p.Z, null, i.createElement(u.Z, { "aria-label": w, fetchStatus: e, onRequestRetry: this._handleFetchDevices, render: this._render })));
+                    return i.createElement(f.Z, { location: t, submitDisabled: !this.state.email, submitLabel: C, title: w }, i.createElement(p.Z, null, i.createElement(u.Z, { "aria-label": v, fetchStatus: e, onRequestRetry: this._handleFetchDevices, render: this._render })));
                 }
             }
-            const I = S(x);
+            const k = S(x);
         },
         359477: (e, t, n) => {
-            n.r(t), n.d(t, { FeatureSwitchesScreen: () => D, default: () => M });
+            n.r(t), n.d(t, { FeatureSwitchesScreen: () => M, default: () => D });
             var i = n(202784),
                 a = n(840590),
                 r = n(382880),
@@ -159,8 +159,8 @@
                 b = n(595088),
                 S = n(267966),
                 C = n(855488),
-                Z = n(392237);
-            class v extends i.Component {
+                w = n(392237);
+            class Z extends i.Component {
                 constructor(...e) {
                     super(...e),
                         (this._handleChange = (e) => {
@@ -173,11 +173,11 @@
                 render() {
                     const { disabled: e, helpText: t, label: n, type: a, value: r, withBottomBorder: o } = this.props,
                         s = !!e;
-                    return i.createElement(h.Z, { style: [o && w.bottomBorder, s && w.disabled] }, i.createElement(C.Z, { editable: !s, helperText: t, label: n, maxLength: "number" === a ? 5 : void 0, name: n, onChange: this._handleChange, type: a, value: r }));
+                    return i.createElement(h.Z, { style: [o && v.bottomBorder, s && v.disabled] }, i.createElement(C.Z, { editable: !s, helperText: t, label: n, maxLength: "number" === a ? 5 : void 0, name: n, onChange: this._handleChange, type: a, value: r }));
                 }
             }
-            v.defaultProps = { type: "text", withBottomBorder: !0 };
-            const w = Z.default.create((e) => ({ bottomBorder: { borderBottomColor: e.colors.borderColor, borderBottomStyle: "solid", borderBottomWidth: e.borderWidths.small }, disabled: { opacity: 0.5 } })),
+            Z.defaultProps = { type: "text", withBottomBorder: !0 };
+            const v = w.default.create((e) => ({ bottomBorder: { borderBottomColor: e.colors.borderColor, borderBottomStyle: "solid", borderBottomWidth: e.borderWidths.small }, disabled: { opacity: 0.5 } })),
                 L = i.memo((e) => {
                     const { enumerationValues: t, helpText: n, name: a, onChange: r, value: o } = e;
                     switch (e.type) {
@@ -186,7 +186,7 @@
                         case "experiment":
                             return i.createElement(m.Z, { description: n, label: a, name: a, onChange: r, options: t?.map((e) => ({ label: e, value: e })) ?? [], value: String(o) });
                         default:
-                            return Array.isArray(o) ? i.createElement(h.Z, { style: [S.Z.viewItem, S.Z.bottomBorder] }, i.createElement(u.ZP, null, a), i.createElement(u.ZP, { color: "gray700" }, "Array value type editing not supported yet"), i.createElement("br", null), i.createElement(u.ZP, null, o.join(", "))) : i.createElement(v, { helpText: n, label: a, name: a, onChange: r, type: "number" === e.type ? "number" : "text", value: String(o) });
+                            return Array.isArray(o) ? i.createElement(h.Z, { style: [S.Z.viewItem, S.Z.bottomBorder] }, i.createElement(u.ZP, null, a), i.createElement(u.ZP, { color: "gray700" }, "Array value type editing not supported yet"), i.createElement("br", null), i.createElement(u.ZP, null, o.join(", "))) : i.createElement(Z, { helpText: n, label: a, name: a, onChange: r, type: "number" === e.type ? "number" : "text", value: String(o) });
                     }
                 });
             function A({ debugConfig: e, featureSwitches: t, onFeatureSwitchChange: n, onlyDDGs: a, overrides: r, search: o }) {
@@ -230,18 +230,18 @@
                         u = i.useCallback((e) => s(e.target.value), []),
                         _ = i.useCallback(() => s(""), []),
                         C = p.b(),
-                        Z = p.b(),
-                        v = i.useMemo(() => (0, b.Z)(e).map(([e, { value: t }]) => ({ name: e, value: t })), [e]);
-                    return i.createElement(h.Z, null, Object.keys(r).length > 0 ? i.createElement(P, { config: e, onClear: n, overrides: r }) : null, i.createElement(h.Z, { "aria-labelledby": C, role: "region" }, i.createElement(f.Z, { id: C, text: "Filters" }), i.createElement(d.Z, { checked: c, label: "Only DDGs", name: "onlyDDGs", onChange: m }), i.createElement(g.Z, { Icon: y.default, onChange: u, onClear: _, placeholder: "Search feature switches", style: S.Z.searchBox, withClearButton: !0 })), i.createElement(E.Z, null), i.createElement(h.Z, { "aria-labelledby": Z, role: "region" }, i.createElement(f.Z, { id: Z, text: "Feature switches" }), i.createElement(A, { debugConfig: t, featureSwitches: v, onFeatureSwitchChange: a, onlyDDGs: c, overrides: r, search: o })));
+                        w = p.b(),
+                        Z = i.useMemo(() => (0, b.Z)(e).map(([e, { value: t }]) => ({ name: e, value: t })), [e]);
+                    return i.createElement(h.Z, null, Object.keys(r).length > 0 ? i.createElement(P, { config: e, onClear: n, overrides: r }) : null, i.createElement(h.Z, { "aria-labelledby": C, role: "region" }, i.createElement(f.Z, { id: C, text: "Filters" }), i.createElement(d.Z, { checked: c, label: "Only DDGs", name: "onlyDDGs", onChange: m }), i.createElement(g.Z, { Icon: y.default, onChange: u, onClear: _, placeholder: "Search feature switches", style: S.Z.searchBox, withClearButton: !0 })), i.createElement(E.Z, null), i.createElement(h.Z, { "aria-labelledby": w, role: "region" }, i.createElement(f.Z, { id: w, text: "Feature switches" }), i.createElement(A, { debugConfig: t, featureSwitches: Z, onFeatureSwitchChange: a, onlyDDGs: c, overrides: r, search: o })));
                 });
             var x = n(668214),
-                I = n(558369);
-            const k = (0, x.Z)()
-                    .propsFromState(() => ({ featureSwitches: I.RI }))
+                k = n(558369);
+            const I = (0, x.Z)()
+                    .propsFromState(() => ({ featureSwitches: k.RI }))
                     .adjustStateProps(({ featureSwitches: e }) => ({ allSwitches: e.debug, config: e.user.config }))
                     .withAnalytics({ page: "settings", section: "feature_switches" }),
                 F = (e) => JSON.parse((0, c.ej)({ cookieName: "ab_decider", featureSwitches: e }) || "{}");
-            class D extends i.Component {
+            class M extends i.Component {
                 constructor(e, t) {
                     super(e, t),
                         (this._handleItemChanged = (e, t) => {
@@ -270,8 +270,8 @@
                     return i.createElement(s.Z, null, i.createElement(l.Z, { location: n, title: "Feature switches" }, i.createElement(T, { config: t, debugConfig: e, onClear: this._handleClearOverrides, onFeatureSwitchChange: this._handleItemChanged, overrides: a })));
                 }
             }
-            D.contextType = o.rC;
-            const M = k(D);
+            M.contextType = o.rC;
+            const D = I(M);
         },
         777559: (e, t, n) => {
             n.r(t), n.d(t, { default: () => f, getFlowParam: () => p });
@@ -310,7 +310,7 @@
             }
         },
         18216: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => X });
+            n.r(t), n.d(t, { default: () => Q });
             n(136728);
             var i = n(202784),
                 a = n(360917),
@@ -329,53 +329,53 @@
                 g = n.n(_),
                 E = n(293723),
                 y = n(323265),
-                b = n(940289),
+                b = n(284430),
                 S = n(130919),
                 C = n(980407),
-                Z = n(443781),
-                v = n(782642),
-                w = n(782826),
+                w = n(443781),
+                Z = n(782642),
+                v = n(782826),
                 L = n(725516),
                 A = n(312771),
                 P = n(615027),
                 T = n(915566),
                 x = n(762815),
-                I = (n(585488), n(712696)),
-                k = n.n(I);
+                k = (n(585488), n(712696)),
+                I = n.n(k);
             const F = x.Z,
-                D = () => {
-                    const e = k()(F, {});
+                M = () => {
+                    const e = I()(F, {});
                     return e.viewer.user_results.result.verification_info?.identity_verification_process_info?.vendor?.identifier;
                 };
-            var M = n(431890);
-            const V = g().afe4a358,
-                R = g().cdc65e89,
-                N = g().h05c1f28,
+            var D = n(431890);
+            const N = g().afe4a358,
+                V = g().cdc65e89,
+                R = g().h05c1f28,
                 O = g().j8cfcc62,
                 B = g().c4930cb6,
                 H = Object.freeze({ Persona: i.createElement(g().I18NFormatMessage, { $i18n: "d3543217" }, i.createElement(c.ZP, { link: T.Jf, withInteractiveStyling: !0 }, g().e4fed511)), Au10tix: O }),
                 U = [{ title: g().ac7bb0fe }, { title: g().c12ce69c }, { title: g().c5bfe94a }],
                 K = g().e5b7dd84,
-                z = g().cfd2f35e,
-                G = g().abfaa528,
-                j = g().ef4602ec,
-                q = g().i859a9d4,
+                G = g().cfd2f35e,
+                j = g().abfaa528,
+                z = g().ef4602ec,
+                Y = g().i859a9d4,
                 $ = i.createElement(g().I18NFormatMessage, { $i18n: "j7963df1" }, i.createElement(c.ZP, { link: "https://legal.x.com/subscriptions-creator-terms.html", withInteractiveStyling: !0, withUnderline: !0 }, g().def518fa), i.createElement(c.ZP, { link: "https://legal.x.com/creator-ads-revenue-sharing-terms.html", withInteractiveStyling: !0, withUnderline: !0 }, g().f61cda83)),
-                Y = i.createElement(g().I18NFormatMessage, { $i18n: "f8f20041" }, i.createElement(c.ZP, { link: "https://legal.x.com/subscriptions-creator-terms.html", withInteractiveStyling: !0, withUnderline: !0 }, g().g1952008), i.createElement(c.ZP, { link: "https://legal.x.com/creator-revenue-sharing-terms", withInteractiveStyling: !0, withUnderline: !0 }, g().e5d0419c)),
+                q = i.createElement(g().I18NFormatMessage, { $i18n: "f8f20041" }, i.createElement(c.ZP, { link: "https://legal.x.com/subscriptions-creator-terms.html", withInteractiveStyling: !0, withUnderline: !0 }, g().g1952008), i.createElement(c.ZP, { link: "https://legal.x.com/creator-revenue-sharing-terms", withInteractiveStyling: !0, withUnderline: !0 }, g().e5d0419c)),
                 J = i.createElement(g().I18NFormatMessage, { $i18n: "dd49801f" }, i.createElement(c.ZP, { link: "https://legal.x.com/subscriptions-creator-terms.html", withInteractiveStyling: !0, withUnderline: !0 }, g().g3723480), i.createElement(c.ZP, { link: "https://legal.x.com/creator-ads-revenue-sharing-terms.html", withInteractiveStyling: !0, withUnderline: !0 }, g().c776f523)),
-                Q = i.createElement(g().I18NFormatMessage, { $i18n: "c5cee667" }, i.createElement(c.ZP, { link: "https://legal.x.com/subscriptions-creator-terms.html", withInteractiveStyling: !0, withUnderline: !0 }, g().ab9f38f8), i.createElement(c.ZP, { link: "https://legal.x.com/creator-revenue-sharing-terms", withInteractiveStyling: !0, withUnderline: !0 }, g().d5cab8b0)),
-                W = f.default.create((e) => ({ content: { paddingHorizontal: e.spaces.space40, paddingVertical: e.spaces.space16 }, subtext: { marginTop: e.spaces.space8, marginBottom: e.spaces.space16 }, footer: { marginHorizontal: e.spaces.space40, marginVertical: e.spaces.space16, gap: e.spaces.space12 }, learnMore: { marginStart: e.spaces.space4 }, disclaimer: { marginHorizontal: "auto", maxWidth: "484px" }, list: { gap: e.spaces.space24, marginTop: e.spaces.space24 }, row: { flexDirection: "row", gap: e.spaces.space16 }, iconCheck: { color: e.colors.text, minWidth: e.spaces.space20 } })),
-                X = i.memo(
+                W = i.createElement(g().I18NFormatMessage, { $i18n: "c5cee667" }, i.createElement(c.ZP, { link: "https://legal.x.com/subscriptions-creator-terms.html", withInteractiveStyling: !0, withUnderline: !0 }, g().ab9f38f8), i.createElement(c.ZP, { link: "https://legal.x.com/creator-revenue-sharing-terms", withInteractiveStyling: !0, withUnderline: !0 }, g().d5cab8b0)),
+                X = f.default.create((e) => ({ content: { paddingHorizontal: e.spaces.space40, paddingVertical: e.spaces.space16 }, subtext: { marginTop: e.spaces.space8, marginBottom: e.spaces.space16 }, footer: { marginHorizontal: e.spaces.space40, marginVertical: e.spaces.space16, gap: e.spaces.space12 }, learnMore: { marginStart: e.spaces.space4 }, disclaimer: { marginHorizontal: "auto", maxWidth: "484px" }, list: { gap: e.spaces.space24, marginTop: e.spaces.space24 }, row: { flexDirection: "row", gap: e.spaces.space16 }, iconCheck: { color: e.colors.text, minWidth: e.spaces.space20 } })),
+                Q = i.memo(
                     (0, L.Z)(
                         ({ analytics: e, history: t, location: n }) => {
-                            const { featureSwitches: a } = i.useContext(Z.rC),
+                            const { featureSwitches: a } = i.useContext(w.rC),
                                 f = a.isTrue("identity_verification_consent_opt_in_by_default_enabled"),
                                 _ = a.getStringValue("identity_verification_creator_processor"),
                                 g = a.isTrue("identity_verification_vendor_idv_migration_enabled"),
                                 L = a.isTrue("responsive_web_ad_revenue_sharing_url_update_enabled"),
-                                x = D(),
-                                I = i.useMemo(() => "id_verification" + (x ? `_${x}` : ""), [x]),
-                                k = i.useMemo(() => {
+                                x = M(),
+                                k = i.useMemo(() => "id_verification" + (x ? `_${x}` : ""), [x]),
+                                I = i.useMemo(() => {
                                     if (y.ZP.isWebView()) {
                                         const e = n.query?.flow;
                                         if (!e || Array.isArray(e)) return;
@@ -384,57 +384,57 @@
                                     return n.state?.flow;
                                 }, [n.query?.flow, n.state?.flow]);
                             i.useEffect(() => {
-                                e.scribe({ page: I, section: "consent-screen", component: k, action: "impression" });
-                            }, [e, k, I]);
+                                e.scribe({ page: k, section: "consent-screen", component: I, action: "impression" });
+                            }, [e, I, k]);
                             const F = n.state?.redirectPath,
-                                O = k === T.MQ.premiumSubscription,
-                                X = k === T.MQ.creator,
+                                O = I === T.MQ.premiumSubscription,
+                                Q = I === T.MQ.creator,
                                 ee = i.useMemo(() => (x && x in H ? H[x] : H.Au10tix), [x]),
-                                [te] = (0, M.Z)(),
-                                ne = (0, v.p)(),
+                                [te] = (0, D.Z)(),
+                                ne = (0, Z.p)(),
                                 [ie, ae] = i.useState(!1),
                                 [re, oe] = i.useState(f),
                                 se = i.useCallback(
                                     (t) => {
-                                        e.scribe({ page: I, section: "consent-screen", component: k, element: "consent_checkbox", action: t ? "accept" : "clear" }), oe(t);
+                                        e.scribe({ page: k, section: "consent-screen", component: I, element: "consent_checkbox", action: t ? "accept" : "clear" }), oe(t);
                                     },
-                                    [e, k, I],
+                                    [e, I, k],
                                 ),
                                 ce = i.useCallback(() => {
-                                    e.scribe({ page: I, section: "consent-screen", component: k, element: O ? "skip" : "cancel", action: "click" }), F ? t.push(F) : t.goBack();
-                                }, [e, k, t, O, F, I]),
+                                    e.scribe({ page: k, section: "consent-screen", component: I, element: O ? "skip" : "cancel", action: "click" }), F ? t.push(F) : t.goBack();
+                                }, [e, I, t, O, F, k]),
                                 le = i.useCallback(() => {
                                     ae(!0),
-                                        e.scribe({ page: I, section: "consent-screen", component: k, element: "start", action: "click" }),
-                                        te({ redirectPath: X ? T.zV : F || T.hJ, errorPath: "/settings/account/id_verification/error" + (O ? `?flow=${T.MQ.premiumSubscription}` : ""), verificationFlow: X ? "CreatorIdv" : void 0 })
-                                            .then((t) => (e.scribe({ page: I, section: "consent-screen", component: k, element: "start", action: "success" }), w.ZP.navigateTo(t)))
+                                        e.scribe({ page: k, section: "consent-screen", component: I, element: "start", action: "click" }),
+                                        te({ redirectPath: Q ? T.zV : F || T.hJ, errorPath: "/settings/account/id_verification/error" + (O ? `?flow=${T.MQ.premiumSubscription}` : ""), verificationFlow: Q ? "CreatorIdv" : void 0 })
+                                            .then((t) => (e.scribe({ page: k, section: "consent-screen", component: I, element: "start", action: "success" }), v.ZP.navigateTo(t)))
                                             .catch(() => {
-                                                e.scribe({ page: I, section: "consent-screen", component: k, element: "start", action: "error" }), ne({ text: j, withClearButton: !0, withAutoDismiss: !0 }), ae(!1);
+                                                e.scribe({ page: k, section: "consent-screen", component: I, element: "start", action: "error" }), ne({ text: z, withClearButton: !0, withAutoDismiss: !0 }), ae(!1);
                                             });
-                                }, [e, k, te, F, I, O, ne, X]),
-                                he = i.useMemo(() => (X && "Stripe" === (g ? x : _) ? (L ? Q : J) : L ? Y : $), [L, g, _, x, X]),
-                                de = i.useMemo(() => i.createElement(o.Z, { style: W.footer }, i.createElement(o.Z, { style: W.row }, i.createElement(l.Z, { checked: re, onChange: se }), i.createElement(c.ZP, { color: "gray700", size: "subtext2", style: W.disclaimer }, X ? he : ee, i.createElement(c.ZP, { link: T.LT, style: W.learnMore }, q))), i.createElement(h.ZP, { disabled: ie || !re, onPress: le, type: "primaryFilled" }, ie ? i.createElement(d.Z, null) : K), i.createElement(h.ZP, { onPress: ce, type: "primaryOutlined" }, O ? G : z)), [re, se, ie, le, ce, O, he, X, ee]),
+                                }, [e, I, te, F, k, O, ne, Q]),
+                                he = i.useMemo(() => (Q && "Stripe" === (g ? x : _) ? (L ? W : J) : L ? q : $), [L, g, _, x, Q]),
+                                de = i.useMemo(() => i.createElement(o.Z, { style: X.footer }, i.createElement(o.Z, { style: X.row }, i.createElement(l.Z, { checked: re, onChange: se }), i.createElement(c.ZP, { color: "gray700", size: "subtext2", style: X.disclaimer }, Q ? he : ee, i.createElement(c.ZP, { link: T.LT, style: X.learnMore }, Y))), i.createElement(h.ZP, { disabled: ie || !re, onPress: le, type: "primaryFilled" }, ie ? i.createElement(d.Z, null) : K), i.createElement(h.ZP, { onPress: ce, type: "primaryOutlined" }, O ? j : G)), [re, se, ie, le, ce, O, he, Q, ee]),
                                 me = i.useCallback(
                                     ({ data: e, fetchStatus: n, retry: a }) => {
                                         if (n === A.ZP.FAILED) return i.createElement(m.Z, { onRequestRetry: a });
                                         if (n === A.ZP.LOADED && e) {
                                             const n = e.viewer.user_results.result.verification_info;
                                             if (!n) return i.createElement(m.Z, { onRequestRetry: a });
-                                            return X || n.identity_verification_status === S.t.CanVerifyIdentity
+                                            return Q || n.identity_verification_status === S.t.CanVerifyIdentity
                                                 ? i.createElement(
                                                       C.Z,
                                                       { backButtonType: "close", bottomBar: de, history: t, onBackClick: ce },
-                                                      i.createElement(u.Z, { "aria-label": V, aspectMode: p.Z.exact(3.5), image: "https://abs.twimg.com/responsive-web/client-web/ID_Verification_Illo.da61d80a.png" }),
+                                                      i.createElement(u.Z, { "aria-label": N, aspectMode: p.Z.exact(3.5), image: "https://abs.twimg.com/responsive-web/client-web/ID_Verification_Illo.da61d80a.png" }),
                                                       i.createElement(
                                                           o.Z,
-                                                          { style: W.content },
-                                                          i.createElement(c.ZP, { size: "title4", weight: "bold" }, O ? R({ title: V }) : V),
-                                                          i.createElement(c.ZP, { color: "gray700", size: "body", style: W.subtext }, N),
+                                                          { style: X.content },
+                                                          i.createElement(c.ZP, { size: "title4", weight: "bold" }, O ? V({ title: N }) : N),
+                                                          i.createElement(c.ZP, { color: "gray700", size: "body", style: X.subtext }, R),
                                                           i.createElement(c.ZP, { weight: "bold" }, B),
                                                           i.createElement(
                                                               o.Z,
-                                                              { role: "list", style: W.list },
-                                                              U.map((e) => i.createElement(o.Z, { key: e.title, role: "listitem", style: W.row }, i.createElement(E.default, { style: W.iconCheck }), i.createElement(c.ZP, { weight: "medium" }, e.title))),
+                                                              { role: "list", style: X.list },
+                                                              U.map((e) => i.createElement(o.Z, { key: e.title, role: "listitem", style: X.row }, i.createElement(E.default, { style: X.iconCheck }), i.createElement(c.ZP, { weight: "medium" }, e.title))),
                                                           ),
                                                       ),
                                                   )
@@ -442,129 +442,9 @@
                                         }
                                         return i.createElement(d.Z, null);
                                     },
-                                    [de, t, ce, O, F, X],
+                                    [de, t, ce, O, F, Q],
                                 );
                             return i.createElement(b.IDVerificationQueryRenderer, { render: me, variables: r() });
-                        },
-                        { page: "id_verification", section: "settings" },
-                    ),
-                );
-        },
-        915566: (e, t, n) => {
-            n.d(t, { Jb: () => o, Jf: () => d, LT: () => h, MQ: () => r, NC: () => l, hJ: () => s, zV: () => c });
-            var i = n(688715),
-                a = n(130919);
-            const r = Object.freeze({ premiumSubscription: "premiumSubscription", premiumSettings: "premiumSettings", securitySettings: "securitySettings", creator: "creator" }),
-                o = { [r.premiumSubscription]: "/i/flow/premium_signup_nux_flow", [r.premiumSettings]: "/settings/premium", [r.securitySettings]: "/settings/security", [r.creator]: "/settings/monetization" },
-                s = `/settings/account/id_verification?status=${a.t.PendingResult}`,
-                c = `/settings/monetization?status=${a.t.PendingResult}`,
-                l = "/settings/account/id_verification",
-                h = (0, i.ju)("https://help.x.com/rules-and-policies/verification-policy"),
-                d = (0, i.ju)("https://help.x.com/using-x/x-premium");
-        },
-        940289: (e, t, n) => {
-            n.r(t), n.d(t, { IDVerificationQueryRenderer: () => j, IDVerificationQueryRequest: () => z, default: () => Y, isPendingStatus: () => K });
-            var i = n(993770),
-                a = n(629928),
-                r = n(202784),
-                o = n(360917),
-                s = n.n(o),
-                c = n(614983),
-                l = n.n(c),
-                h = n(325686),
-                d = (n(585488), n(351743)),
-                m = n.n(d),
-                u = n(107267),
-                p = n(750410),
-                f = n(943401),
-                _ = n(954110),
-                g = n(167630),
-                E = n(392237),
-                y = n(731708),
-                b = n(674132),
-                S = n.n(b),
-                C = n(750442),
-                Z = n(130919),
-                v = n(727828),
-                w = n(534763),
-                L = n(443781),
-                A = n(652904),
-                P = n(301410),
-                T = n(725516),
-                x = n(312771),
-                I = n(615027),
-                k = n(466441),
-                F = n(264922),
-                D = n(915566);
-            const M = S().afe4a358,
-                V = S().g268fbb8,
-                R = S().f66d24be,
-                N = S().c8255462,
-                O = S().c6e731ee,
-                B = S().be582166,
-                H = { [Z.t.PendingResult]: S().b496bc94, [Z.t.RequestLocked]: S().d8f5cce4, [Z.t.IdentityNonVerifiable]: S().i8427a1e, [Z.t.CanVerifyIdentity]: B },
-                U = r.createElement(w.b, { label: R, link: D.LT }),
-                K = (e) => {
-                    const t = e.query?.status;
-                    return !(!t || Array.isArray(t)) && t === Z.t.PendingResult;
-                },
-                z = a.Z,
-                G = i.Z,
-                j = (0, P.z)(z, { errorConfig: { context: "ID_VERIFICATION_CONTEXT" } }),
-                q = E.default.create((e) => ({ layoutDimensions: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical }, iconTheme: { color: e.colors.text }, idLabel: { alignItems: "center", flexDirection: "row", gap: e.spaces.space8 } })),
-                $ = r.createElement(h.Z, { style: q.idLabel }, r.createElement(C.default, { style: q.iconTheme }), r.createElement(y.ZP, { color: "gray700" }, V)),
-                Y = r.memo(
-                    (0, T.Z)(
-                        ({ analytics: e, ...t }) => {
-                            const { featureSwitches: n } = r.useContext(L.rC),
-                                i = n.isTrue("identity_verification_hide_verified_label_settings_enabled"),
-                                a = (0, u.useLocation)(),
-                                [o] = m()(G),
-                                c = r.useCallback(
-                                    (e, t) => (n, i) => {
-                                        e &&
-                                            t &&
-                                            o({
-                                                variables: { is_identity_verified_label_hidden: i, user_id: e },
-                                                updater: (e, n) => {
-                                                    const a = e.get(t);
-                                                    l()(a, "userRecord must be specified"), a.setValue(i, "is_identity_verified_label_hidden");
-                                                },
-                                            });
-                                    },
-                                    [o],
-                                ),
-                                d = r.useCallback(
-                                    ({ data: n, fetchStatus: o, retry: s }) => {
-                                        if (o === x.ZP.FAILED) return r.createElement(p.Z, { onRequestRetry: s });
-                                        if (o === x.ZP.LOADED && n) {
-                                            const o = n.viewer.user_results.result,
-                                                l = o.rest_id,
-                                                d = o.verification_info;
-                                            if (!d) return r.createElement(p.Z, { onRequestRetry: s });
-                                            const m = !!d.is_identity_verified_label_hidden,
-                                                g = d.identity_verification_status,
-                                                E = g === Z.t.CanVerifyIdentity && K(a) ? Z.t.PendingResult : g,
-                                                y = E === Z.t.UnavailableMissingBlueSubscription;
-                                            switch ((e.scribe({ page: "identity_verification_settings", section: E, action: "impression" }), E)) {
-                                                case Z.t.RequestLocked:
-                                                case Z.t.PendingResult:
-                                                case Z.t.IdentityNonVerifiable:
-                                                    return r.createElement(r.Fragment, null, r.createElement(f.Z, { description: H[E] }), U);
-                                                case Z.t.IdentityVerified:
-                                                case Z.t.UnavailableMissingBlueSubscription:
-                                                    return r.createElement(h.Z, null, r.createElement(f.Z, { description: B }), r.createElement(h.Z, { style: q.layoutDimensions }, y ? r.createElement(v.Z, { variant: "IdVerification", withColoredIcon: !0 }) : $), i ? r.createElement(h.Z, null, r.createElement(_.Z, { checked: m, disabled: y, helpText: O, label: N, name: "is_identity_verified_label_hidden", onChange: c(l, d.__id) })) : null, U);
-                                                case Z.t.CanVerifyIdentity:
-                                                    return r.createElement(h.Z, null, r.createElement(f.Z, { description: H[E] }), r.createElement(u.Switch, null, r.createElement(u.Route, null, r.createElement(I.Z, { to: "/settings/account/id_verification/start" }))));
-                                                default:
-                                                    return r.createElement(k.default, t);
-                                            }
-                                        }
-                                        return r.createElement(g.Z, null);
-                                    },
-                                    [e, i, a, c, t],
-                                );
-                            return r.createElement(A.Z, null, r.createElement(F.Z, { location: a, title: M }, r.createElement(j, { render: d, variables: s() })));
                         },
                         { page: "id_verification", section: "settings" },
                     ),
@@ -605,7 +485,7 @@
                 };
         },
         407202: (e, t, n) => {
-            n.r(t), n.d(t, { SettingsLocationScreen: () => T, default: () => x, locDisabledLabel: () => Z, locationLabel: () => b });
+            n.r(t), n.d(t, { SettingsLocationScreen: () => T, default: () => x, locDisabledLabel: () => w, locationLabel: () => b });
             var i = n(202784),
                 a = n(325686),
                 r = n(688715),
@@ -628,9 +508,9 @@
                 b = l().fcb6a5b8,
                 S = l().fcb6a5b8,
                 C = l().df1ddda4,
-                Z = l().ed7fa034,
-                v = l().e80e4288,
-                w = l().b0ee8ab6,
+                w = l().ed7fa034,
+                Z = l().e80e4288,
+                v = l().b0ee8ab6,
                 L = l().d96cf7ce,
                 A = (0, r.ju)("https://help.x.com/safety-and-security/tweet-location-settings"),
                 P = { page: "settings", section: "location" };
@@ -649,7 +529,7 @@
                             a.Z,
                             null,
                             i.createElement(m.Z, null, i.createElement(l().I18NFormatMessage, { $i18n: "ffa48331" }, i.createElement(o.ZP, { link: A }, l().e23b2991))),
-                            c === d.S.denied ? i.createElement(m.Z, null, Z) : null,
+                            c === d.S.denied ? i.createElement(m.Z, null, w) : null,
                             i.createElement(s.Z, {
                                 checked: f.geo_enabled,
                                 label: S,
@@ -664,9 +544,9 @@
                             i.createElement(h.Z, {
                                 confirmationSheetConfirmButtonLabel: L,
                                 confirmationSheetConfirmButtonType: "destructiveFilled",
-                                confirmationSheetHeadline: w,
+                                confirmationSheetHeadline: v,
                                 confirmationSheetText: C,
-                                label: v,
+                                label: Z,
                                 onConfirmationSheetConfirm: function () {
                                     t().catch(e({ showToast: !0 }));
                                 },
@@ -703,9 +583,9 @@
                     .withAnalytics({ page: "settings", section: "backup_code" }),
                 S = d().i3bb3f78,
                 C = d().ec6a76e0,
-                Z = d().f2c3c31c,
-                v = d().f88553c8,
-                w = d().e8016b64,
+                w = d().f2c3c31c,
+                Z = d().f88553c8,
+                v = d().e8016b64,
                 L = d().c4ca22bc,
                 A = (0, o.ju)("https://help.x.com/managing-your-account/two-factor-authentication"),
                 P = i.createElement(s.ZP, { link: A });
@@ -714,12 +594,12 @@
                     super(...e),
                         (this._renderContent = () => {
                             const { backupCode: e } = this.props;
-                            return i.createElement(i.Fragment, null, i.createElement(r.Z, { style: f.Z.centeredContainer }, i.createElement(s.ZP, { align: "center", size: "title2", weight: "bold" }, e ? ((t = e).match(/.{1,4}/g) || [t]).join(" ") : null)), a.Z.isAvailable() ? i.createElement(r.Z, { style: f.Z.centeredContainer }, i.createElement(c.ZP, { alignContent: "center", onPress: this._handleCopy, type: "brandFilled" }, Z)) : null, i.createElement(r.Z, { style: f.Z.centeredContainer }, i.createElement(c.ZP, { alignContent: "center", onPress: this._handleGenerate, type: "brandText" }, C)));
+                            return i.createElement(i.Fragment, null, i.createElement(r.Z, { style: f.Z.centeredContainer }, i.createElement(s.ZP, { align: "center", size: "title2", weight: "bold" }, e ? ((t = e).match(/.{1,4}/g) || [t]).join(" ") : null)), a.Z.isAvailable() ? i.createElement(r.Z, { style: f.Z.centeredContainer }, i.createElement(c.ZP, { alignContent: "center", onPress: this._handleCopy, type: "brandFilled" }, w)) : null, i.createElement(r.Z, { style: f.Z.centeredContainer }, i.createElement(c.ZP, { alignContent: "center", onPress: this._handleGenerate, type: "brandText" }, C)));
                             var t;
                         }),
                         (this._handleCopy = () => {
                             const { addToast: e, backupCode: t } = this.props;
-                            t && (a.Z.setString(t), e({ text: v }));
+                            t && (a.Z.setString(t), e({ text: Z }));
                         }),
                         (this._handleGenerate = () => {
                             const { createLocalApiErrorHandler: e, fetchNewBackupCode: t } = this.props;
@@ -735,7 +615,7 @@
                 }
                 render() {
                     const { fetchStatus: e, location: t } = this.props;
-                    return i.createElement(u.Z, null, i.createElement(p.Z, { location: t, title: S }, i.createElement(l.Z, null, i.createElement(s.ZP, { color: "gray700" }, L)), i.createElement(l.Z, null, i.createElement(s.ZP, { color: "gray700" }, i.createElement(d().I18NFormatMessage, { $i18n: "a4455c05" }, i.cloneElement(P, null, d().f20ff69f)))), i.createElement(m.Z, { "aria-label": w, fetchStatus: e, onRequestRetry: this._handleRetry, render: this._renderContent })));
+                    return i.createElement(u.Z, null, i.createElement(p.Z, { location: t, title: S }, i.createElement(l.Z, null, i.createElement(s.ZP, { color: "gray700" }, L)), i.createElement(l.Z, null, i.createElement(s.ZP, { color: "gray700" }, i.createElement(d().I18NFormatMessage, { $i18n: "a4455c05" }, i.cloneElement(P, null, d().f20ff69f)))), i.createElement(m.Z, { "aria-label": v, fetchStatus: e, onRequestRetry: this._handleRetry, render: this._renderContent })));
                 }
             }
             const x = b(T);
@@ -831,9 +711,9 @@
                 b = d().g6d0f0b6,
                 S = d().b894f68a,
                 C = d().g2601bb6,
-                Z = d().b464b726,
-                v = d().a4101e1b,
-                w = d().a9f397f3,
+                w = d().b464b726,
+                Z = d().a4101e1b,
+                v = d().a9f397f3,
                 L = d().a8ef2b64;
             class A extends i.Component {
                 constructor(...e) {
@@ -852,7 +732,7 @@
                                 } = this.props,
                                 l = Array.isArray(t) && t.find((e) => e.id === n),
                                 h = l && this._getSecurityKeyAddedDate(l.createdAtMs);
-                            return l ? i.createElement(p.Z, { location: e, title: b }, i.createElement(a.Z, null, i.createElement(r.Z, { defaultValue: l.name || `(${L})`, editable: !1, label: y, name: "current_security_key", style: P.formTextInput }), i.createElement(a.Z, { style: P.settingDescriptionCellContainer }, i.createElement(o.Z, { description: v({ securityKeyAddedDate: h }) })), i.createElement(s.Z, null), i.createElement(c.Z, { color: "primary", label: C, link: { pathname: "/i/flow/rename-security-key", query: { input_flow_data: JSON.stringify({ requested_variant: l.id }) } } }), i.createElement(c.Z, { color: "red500", label: Z, link: { pathname: "/i/flow/delete-security-key", query: { input_flow_data: JSON.stringify({ requested_variant: l.id }) } } }))) : i.createElement(u.Z, { to: "/settings/account/login_verification" });
+                            return l ? i.createElement(p.Z, { location: e, title: b }, i.createElement(a.Z, null, i.createElement(r.Z, { defaultValue: l.name || `(${L})`, editable: !1, label: y, name: "current_security_key", style: P.formTextInput }), i.createElement(a.Z, { style: P.settingDescriptionCellContainer }, i.createElement(o.Z, { description: Z({ securityKeyAddedDate: h }) })), i.createElement(s.Z, null), i.createElement(c.Z, { color: "primary", label: C, link: { pathname: "/i/flow/rename-security-key", query: { input_flow_data: JSON.stringify({ requested_variant: l.id }) } } }), i.createElement(c.Z, { color: "red500", label: w, link: { pathname: "/i/flow/delete-security-key", query: { input_flow_data: JSON.stringify({ requested_variant: l.id }) } } }))) : i.createElement(u.Z, { to: "/settings/account/login_verification" });
                         }),
                         (this._fetchLoginVerificationSettings = () => {
                             const { createLocalApiErrorHandler: e, fetchLoginVerificationSettings: t } = this.props;
@@ -861,7 +741,7 @@
                         (this._getSecurityKeyAddedDate = (e) => {
                             if (e) {
                                 const t = new Date(parseInt(e, 10));
-                                return w(t);
+                                return v(t);
                             }
                             return "";
                         }),
@@ -882,7 +762,7 @@
                 T = E(A);
         },
         713391: (e, t, n) => {
-            n.r(t), n.d(t, { SecurityKeysScreen: () => x, default: () => I });
+            n.r(t), n.d(t, { SecurityKeysScreen: () => x, default: () => k });
             n(136728);
             var i = n(202784),
                 a = n(943401),
@@ -906,9 +786,9 @@
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, g.zr)("SETTINGS_SECURITY_KEYS_SCREEN"), enrollIn2FA: y.DY, fetchLoginVerificationSettings: y.zl })),
                 S = h().j24c37b2,
                 C = h().c1d96d6a,
-                Z = h().gf91694e,
-                v = h().b1686800,
-                w = h().f7954a0c,
+                w = h().gf91694e,
+                Z = h().b1686800,
+                v = h().f7954a0c,
                 L = h().h69986c2,
                 A = h().i5896ba2,
                 P = h().a8ef2b64,
@@ -923,9 +803,9 @@
                                 location: e,
                                 loginVerificationSettings: { methods: t },
                             } = this.props;
-                            return !(!t[T] || !t[T].length) ? i.createElement(f.Z, { location: e, title: v }, i.createElement(a.Z, { description: L }), this._renderU2fSecurityKeys(), this.state.showMaxKeyLimitConfirmation ? this._renderMaxKeyLimitConfirmation() : null) : i.createElement(p.Z, { to: "/settings/account/login_verification" });
+                            return !(!t[T] || !t[T].length) ? i.createElement(f.Z, { location: e, title: Z }, i.createElement(a.Z, { description: L }), this._renderU2fSecurityKeys(), this.state.showMaxKeyLimitConfirmation ? this._renderMaxKeyLimitConfirmation() : null) : i.createElement(p.Z, { to: "/settings/account/login_verification" });
                         }),
-                        (this._renderMaxKeyLimitConfirmation = () => i.createElement(r.Z, { confirmButtonLabel: S, headline: C, onConfirm: this._handleCloseConfirmation, text: Z, withCancelButton: !1 })),
+                        (this._renderMaxKeyLimitConfirmation = () => i.createElement(r.Z, { confirmButtonLabel: S, headline: C, onConfirm: this._handleCloseConfirmation, text: w, withCancelButton: !1 })),
                         (this._fetchLoginVerificationSettings = () => {
                             const { createLocalApiErrorHandler: e, fetchLoginVerificationSettings: t } = this.props;
                             t().catch(e());
@@ -956,7 +836,7 @@
                 }
                 render() {
                     const { fetchStatus: e } = this.props;
-                    return i.createElement(m.Z, { "aria-label": w, fetchStatus: e, onRequestRetry: this._handleFetchRetry, render: this._renderContent });
+                    return i.createElement(m.Z, { "aria-label": v, fetchStatus: e, onRequestRetry: this._handleFetchRetry, render: this._renderContent });
                 }
                 _renderU2fSecurityKeys() {
                     const {
@@ -983,7 +863,7 @@
                 }
             }
             x.contextType = u.rC;
-            const I = b(x);
+            const k = b(x);
         },
         123807: (e, t, n) => {
             n.r(t), n.d(t, { TemporaryPasswordScreen: () => P, default: () => T });
@@ -1010,9 +890,9 @@
                     .withAnalytics({ page: "settings", section: "temporary_password" }),
                 S = h().j2327f80,
                 C = h().fbfeaf8e,
-                Z = h().h4a8bd12,
-                v = h().f88553c8,
-                w = h().g247dc1c,
+                w = h().h4a8bd12,
+                Z = h().f88553c8,
+                v = h().g247dc1c,
                 L = h().h3a32f52,
                 A = h().d70fceac;
             class P extends i.Component {
@@ -1020,11 +900,11 @@
                     super(...e),
                         (this._renderContent = () => {
                             const { temporaryPassword: e } = this.props;
-                            return i.createElement(i.Fragment, null, i.createElement(r.Z, { style: p.Z.centeredContainer }, i.createElement(o.ZP, { align: "center", size: "title2", weight: "bold" }, e ? (0, f.X)(e) : null)), a.Z.isAvailable() ? i.createElement(r.Z, { style: p.Z.centeredContainer }, i.createElement(s.ZP, { alignContent: "center", onPress: this._handleCopy, type: "brandFilled" }, Z)) : null, i.createElement(r.Z, { style: p.Z.centeredContainer }, i.createElement(s.ZP, { alignContent: "center", onPress: this._handleGenerate, type: "brandText" }, C)));
+                            return i.createElement(i.Fragment, null, i.createElement(r.Z, { style: p.Z.centeredContainer }, i.createElement(o.ZP, { align: "center", size: "title2", weight: "bold" }, e ? (0, f.X)(e) : null)), a.Z.isAvailable() ? i.createElement(r.Z, { style: p.Z.centeredContainer }, i.createElement(s.ZP, { alignContent: "center", onPress: this._handleCopy, type: "brandFilled" }, w)) : null, i.createElement(r.Z, { style: p.Z.centeredContainer }, i.createElement(s.ZP, { alignContent: "center", onPress: this._handleGenerate, type: "brandText" }, C)));
                         }),
                         (this._handleCopy = () => {
                             const { addToast: e, temporaryPassword: t } = this.props;
-                            t && (a.Z.setString(t), e({ text: v }));
+                            t && (a.Z.setString(t), e({ text: Z }));
                         }),
                         (this._handleGenerate = () => {
                             const { createLocalApiErrorHandler: e, fetchTemporaryPassword: t } = this.props;
@@ -1036,7 +916,7 @@
                 }
                 render() {
                     const { fetchStatus: e, location: t } = this.props;
-                    return i.createElement(m.Z, null, i.createElement(u.Z, { location: t, title: S }, i.createElement(c.Z, null, i.createElement(o.ZP, { color: "gray700" }, L)), i.createElement(c.Z, null, i.createElement(o.ZP, { color: "gray700" }, A)), i.createElement(d.Z, { "aria-label": w, fetchStatus: e, onRequestRetry: this._handleGenerate, render: this._renderContent })));
+                    return i.createElement(m.Z, null, i.createElement(u.Z, { location: t, title: S }, i.createElement(c.Z, null, i.createElement(o.ZP, { color: "gray700" }, L)), i.createElement(c.Z, null, i.createElement(o.ZP, { color: "gray700" }, A)), i.createElement(d.Z, { "aria-label": v, fetchStatus: e, onRequestRetry: this._handleGenerate, render: this._renderContent })));
                 }
             }
             const T = b(P);
@@ -1067,37 +947,37 @@
                 .propsFromActions(() => ({ createLocalApiErrorHandler: (0, E.zr)("SETTINGS_LOGIN_VERIFICATION_SCREEN"), deleteSecurityKey: b.J2, disableLoginVerification: b.DG, disableLoginVerificationMethod: b.aX, enrollIn2FA: b.DY, fetchLoginVerificationSettings: b.zl }))
                 .withAnalytics({ page: "settings", section: "loginVerification" });
             var C = n(40293);
-            const Z = m().bc262c2e,
-                v = m().hc1a91da,
-                w = m().e4fed8f0,
+            const w = m().bc262c2e,
+                Z = m().hc1a91da,
+                v = m().e4fed8f0,
                 L = m().b39c7b14,
                 A = m().a923fce6,
                 P = m().ff781e0a,
                 T = m().c557ac30,
                 x = m().d133464a,
-                I = m().ee3a7bfa,
-                k = m().aa9139cc,
+                k = m().ee3a7bfa,
+                I = m().aa9139cc,
                 F = m().jc22dd42,
-                D = m().a219e218,
-                M = m().e0d79de8,
-                V = m().ja6bbfa0,
-                R = m().dd703318,
-                N = (0, a.ju)("https://help.x.com/managing-your-account/two-factor-authentication"),
+                M = m().a219e218,
+                D = m().e0d79de8,
+                N = m().ja6bbfa0,
+                V = m().dd703318,
+                R = (0, a.ju)("https://help.x.com/managing-your-account/two-factor-authentication"),
                 O = m().i859a9d4,
                 B = m().c2570922,
                 H = m().fba9483c,
                 U = m().ab61b41a,
                 K = m().a67c7d68,
-                z = m().h6d0d89c,
-                G = m().b3e5c946,
-                j = m().cd195528,
-                q = m().b1686800,
+                G = m().h6d0d89c,
+                j = m().b3e5c946,
+                z = m().cd195528,
+                Y = m().b1686800,
                 $ = m().a1860ee8,
-                Y = m().j45a2856,
+                q = m().j45a2856,
                 J = m().d8612d9c,
-                Q = m().e13d4468,
-                W = m().j24c37b2,
-                X = m().c1d96d6a,
+                W = m().e13d4468,
+                X = m().j24c37b2,
+                Q = m().c1d96d6a,
                 ee = m().gf91694e,
                 te = m().a219e218,
                 ne = (0, a.ju)("https://help.x.com/managing-your-account/cant-confirm-my-email-address"),
@@ -1129,19 +1009,19 @@
                             const { confirmationType: e } = this.state;
                             switch (e) {
                                 case fe.ROOT_SETTING:
-                                    return i.createElement(r.Z, { confirmButtonLabel: I, headline: P, onCancel: this._handleCloseConfirmation, onConfirm: this._handleConfirmDisableLoginVerification, text: A });
+                                    return i.createElement(r.Z, { confirmButtonLabel: k, headline: P, onCancel: this._handleCloseConfirmation, onConfirm: this._handleConfirmDisableLoginVerification, text: A });
                                 case fe.METHOD:
-                                    return i.createElement(r.Z, { confirmButtonLabel: I, headline: P, onCancel: this._handleCloseConfirmation, onConfirm: this._handleConfirmDisableMethod, text: x });
+                                    return i.createElement(r.Z, { confirmButtonLabel: k, headline: P, onCancel: this._handleCloseConfirmation, onConfirm: this._handleConfirmDisableMethod, text: x });
                                 case fe.VERIFY_EMAIL:
                                     return i.createElement(r.Z, { cancelButtonLabel: O, cancelButtonLink: ne, confirmButtonLabel: te, headline: ie, onCancel: this._handleCloseConfirmation, onConfirm: this._handleCloseConfirmation, text: ae });
                                 case fe.ENABLE_LOGIN_VERIFICATION:
-                                    return i.createElement(r.Z, { confirmButtonLabel: W, headline: J, onConfirm: this._handleCloseConfirmation, text: Q, withCancelButton: !1 });
+                                    return i.createElement(r.Z, { confirmButtonLabel: X, headline: J, onConfirm: this._handleCloseConfirmation, text: W, withCancelButton: !1 });
                                 case fe.MAX_SECURITY_KEY_LIMIT_REACHED:
-                                    return i.createElement(r.Z, { confirmButtonLabel: W, headline: X, onConfirm: this._handleCloseConfirmation, text: ee, withCancelButton: !1 });
+                                    return i.createElement(r.Z, { confirmButtonLabel: X, headline: Q, onConfirm: this._handleCloseConfirmation, text: ee, withCancelButton: !1 });
                                 case fe.STANDALONE_SECURITY_KEY:
-                                    return i.createElement(r.Z, { confirmButtonLabel: D, onConfirm: this._handleCloseConfirmation, text: M, withCancelButton: !1 });
+                                    return i.createElement(r.Z, { confirmButtonLabel: M, onConfirm: this._handleCloseConfirmation, text: D, withCancelButton: !1 });
                                 case fe.SUSPENDED:
-                                    return i.createElement(r.Z, { confirmButtonLabel: W, headline: re, learnMoreLink: se, learnMoreText: O, onConfirm: this._handleCloseConfirmation, text: oe, withCancelButton: !1 });
+                                    return i.createElement(r.Z, { confirmButtonLabel: X, headline: re, learnMoreLink: se, learnMoreText: O, onConfirm: this._handleCloseConfirmation, text: oe, withCancelButton: !1 });
                                 default:
                                     return null;
                             }
@@ -1272,28 +1152,28 @@
                 }
                 render() {
                     const { fetchStatus: e, location: t } = this.props;
-                    return i.createElement(_.Z, null, i.createElement(g.Z, { location: t, title: R }, i.createElement(p.Z, { "aria-label": V, fetchStatus: e, onRequestRetry: this._handleRetry, render: this._render })));
+                    return i.createElement(_.Z, null, i.createElement(g.Z, { location: t, title: V }, i.createElement(p.Z, { "aria-label": N, fetchStatus: e, onRequestRetry: this._handleRetry, render: this._render })));
                 }
                 _render2FASettings() {
                     const {
                         loginVerificationSettings: { twoFactorAuthEnabled: e },
                     } = this.props;
-                    return i.createElement(i.Fragment, null, i.createElement(o.Z, { text: R }), i.createElement(s.Z, { checked: e && this._isChecked(le), helpText: H, label: B, name: le, onChange: this._handleTwoFactorMethodsChange }), i.createElement(s.Z, { checked: e && this._isChecked(he), helpText: K, label: U, name: he, onChange: this._handleTwoFactorMethodsChange }), i.createElement(s.Z, { checked: e && this._isChecked(de), helpText: G, label: z, learnMoreLink: N, name: de, onChange: this._handleTwoFactorMethodsChange }), e ? this._renderU2fSecurityKeyLinks() : null, e ? this._renderAdditionalMethods() : null);
+                    return i.createElement(i.Fragment, null, i.createElement(o.Z, { text: V }), i.createElement(s.Z, { checked: e && this._isChecked(le), helpText: H, label: B, name: le, onChange: this._handleTwoFactorMethodsChange }), i.createElement(s.Z, { checked: e && this._isChecked(he), helpText: K, label: U, name: he, onChange: this._handleTwoFactorMethodsChange }), i.createElement(s.Z, { checked: e && this._isChecked(de), helpText: j, label: G, learnMoreLink: R, name: de, onChange: this._handleTwoFactorMethodsChange }), e ? this._renderU2fSecurityKeyLinks() : null, e ? this._renderAdditionalMethods() : null);
                 }
                 _renderU2fSecurityKeyLinks() {
                     const {
                         loginVerificationSettings: { methods: e },
                     } = this.props;
-                    return e[de]?.length ? (this._isOcf2faEnrollmentEnabled ? i.createElement(c.Z, { align: "left", color: "primary", label: q, link: { pathname: "/settings/account/login_verification/security_keys" } }) : i.createElement(i.Fragment, null, i.createElement(l.Z, { label: q, link: { pathname: "/settings/account/login_verification/security_keys" } }), i.createElement(c.Z, { align: "left", color: "primary", label: j, onPress: this._handleAddSecurityKey }))) : null;
+                    return e[de]?.length ? (this._isOcf2faEnrollmentEnabled ? i.createElement(c.Z, { align: "left", color: "primary", label: Y, link: { pathname: "/settings/account/login_verification/security_keys" } }) : i.createElement(i.Fragment, null, i.createElement(l.Z, { label: Y, link: { pathname: "/settings/account/login_verification/security_keys" } }), i.createElement(c.Z, { align: "left", color: "primary", label: z, onPress: this._handleAddSecurityKey }))) : null;
                 }
                 _renderLegacyPush2FASettings() {
                     const {
                         loginVerificationSettings: { twoFactorAuthEnabled: e },
                     } = this.props;
-                    return i.createElement(i.Fragment, null, i.createElement(s.Z, { checked: e, helpText: F, label: k, name: "legacy_push", onChange: this._handleTwoFactorEnrollmentChange }), this._renderAdditionalMethods());
+                    return i.createElement(i.Fragment, null, i.createElement(s.Z, { checked: e, helpText: F, label: I, name: "legacy_push", onChange: this._handleTwoFactorEnrollmentChange }), this._renderAdditionalMethods());
                 }
                 _renderAdditionalMethods() {
-                    return i.createElement(i.Fragment, null, i.createElement(h.Z, null), i.createElement(o.Z, { text: Z }), i.createElement(l.Z, { description: w, label: v, link: "/settings/account/login_verification/backup_code" }), this.context.featureSwitches.isTrue("2fa_temporary_password_enabled") && i.createElement(l.Z, { description: Y, label: $, link: "/settings/account/login_verification/temporary_password" }));
+                    return i.createElement(i.Fragment, null, i.createElement(h.Z, null), i.createElement(o.Z, { text: w }), i.createElement(l.Z, { description: v, label: Z, link: "/settings/account/login_verification/backup_code" }), this.context.featureSwitches.isTrue("2fa_temporary_password_enabled") && i.createElement(l.Z, { description: q, label: $, link: "/settings/account/login_verification/temporary_password" }));
                 }
             }
             _e.contextType = f.rC;
@@ -1310,4 +1190,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsInternals-71f5c63d.1bfc69fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsInternals-71f5c63d.d7315a3a.js.map

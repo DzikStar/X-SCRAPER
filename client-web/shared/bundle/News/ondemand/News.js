@@ -417,7 +417,7 @@
                                               sources: e.sources,
                                           }),
                                       ),
-                                      e.sentiment && !t && l.createElement(se.Z, { sentiment: e.sentiment, style: ce.sentimentContainer }),
+                                      e.sentiment && !t && l.createElement(se.Z, { articleId: e.id, sentiment: e.sentiment, style: ce.sentimentContainer }),
                                       l.createElement(m, null),
                                   ),
                                   p && v.length > 0 ? l.createElement(a.Z, { style: [ce.rightSideComponents, f] }, (0, k.ZW)(e) && l.createElement(R.Z, { article: e, hideTitle: !0, style: ce.rightSideTimeline })) : l.createElement(a.Z, { style: f }),
@@ -670,4 +670,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.News~ondemand.News.09f107ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.News~ondemand.News.c03bb78a.js.map

@@ -2,18 +2,18 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["i18n/it"],
     {
-        200888: (e, i, a) => {
+        200888: (i, e, a) => {
             var o = a(292426)._register("it", {
                 get emoji() {
                     return a.e("i18n/emoji-it").then(a.t.bind(a, 218038, 23));
                 },
             });
-            function t(e, i, a) {
-                return "one" == ((o = e), (t = !String(o).split(".")[1]), 1 == o && t ? "one" : "other") ? i : a;
+            function t(i, e, a) {
+                return "one" == ((o = i), (t = !String(o).split(".")[1]), 1 == o && t ? "one" : "other") ? e : a;
                 var o, t;
             }
-            function n(e, i, a) {
-                return "one" == ((o = e), (t = !String(o).split(".")[1]), 1 == o && t ? "one" : "other") ? i : a;
+            function n(i, e, a) {
+                return "one" == ((o = i), (t = !String(o).split(".")[1]), 1 == o && t ? "one" : "other") ? e : a;
                 var o, t;
             }
             o("c39b0e24", "X"),
@@ -37,11 +37,11 @@
                 o("c8cb0b4c", "La password che hai inserito non è corretta."),
                 o("b1b54f9e", "Il contenuto che hai provato a caricare non è valido."),
                 o("i859a9d4", "Scopri di più"),
-                o("d6e72ce1", function (e) {
-                    return "La password deve contenere meno di " + e.count + " caratteri. Indicane una più corta.";
+                o("d6e72ce1", function (i) {
+                    return "La password deve contenere meno di " + i.count + " caratteri. Indicane una più corta.";
                 }),
-                o("a34dccd7", function (e) {
-                    return "La password deve contenere almeno " + e.count + " caratteri. Indicane una più lunga.";
+                o("a34dccd7", function (i) {
+                    return "La password deve contenere almeno " + i.count + " caratteri. Indicane una più lunga.";
                 }),
                 o("jea2ff04", "Questa password è troppo facile da indovinare. Scegline una più difficile."),
                 o("ce482c36", "Uno o più campi non sono validi. Per favore, controlla i dati inseriti e riprova."),
@@ -64,8 +64,8 @@
                 o("bcd6bb0e", "Membro"),
                 o("hd8c22d2", "Mod"),
                 o("c3153100", "Amministratore"),
-                o("fa9adac1", function (e) {
-                    return 'Cerca "' + e.query + '"';
+                o("fa9adac1", function (i) {
+                    return 'Cerca "' + i.query + '"';
                 }),
                 o("jcec6620", "Risposta del post nascosta"),
                 o("f75d1806", "Premium"),
@@ -76,8 +76,8 @@
                 o("c64e46f8", "Questo membro è stato rimosso dalla community, pertanto i suoi post sono nascosti."),
                 o("b3f1cb42", "Un moderatore ha nascosto questo post per violazione di una regola della community."),
                 o("cbd2dc9c", "Hai segnalato questo post."),
-                o("cfbea177", function (e) {
-                    return "Spazio di " + e.name;
+                o("cfbea177", function (i) {
+                    return "Spazio di " + i.name;
                 }),
                 o("ab4fc8bc", "Spazio"),
                 o("jd859c9c", "È stata eseguita la tua rimozione da questo spazio."),
@@ -156,18 +156,18 @@
                 o("a990900c", "Bio"),
                 o("h02a6fe6", "Community"),
                 o("a15648a4", "Note della collettività"),
-                o("j359a2a9", function (e) {
-                    return e.handle + " • " + e.itemName;
+                o("j359a2a9", function (i) {
+                    return i.handle + " • " + i.itemName;
                 }),
-                o("j5ec9765", function (e) {
-                    return e.handle + " • Cartella di segnalibri";
+                o("j5ec9765", function (i) {
+                    return i.handle + " • Cartella di segnalibri";
                 }),
-                o("ce5deee7", function (e) {
-                    return e.handle + " • Messaggi";
+                o("ce5deee7", function (i) {
+                    return i.handle + " • Messaggi";
                 }),
                 o("d80c77dc", "Hai nascosto queste risposte"),
-                o("ef939f4b", function (e) {
-                    return "Risposte nascoste da @" + e.screenName;
+                o("ef939f4b", function (i) {
+                    return "Risposte nascoste da @" + i.screenName;
                 }),
                 o("g40ff2b4", "Impossibile ridimensionare il contenuto che è troppo grande da caricare."),
                 o("b8098028", "Una o più immagini superano le dimensioni limite e non possono essere ridimensionate."),
@@ -177,25 +177,25 @@
                 o("g0af3dd2", "Il tuo file GIF non è compatibile. Vedi i suggerimenti per il caricamento delle GIF."),
                 o("b8c8b0be", "Il file video non può essere elaborato. Consulta i consigli per il caricamento dei video."),
                 o("ica6d718", "Il file video non è compatibile. Consulta i consigli per il caricamento dei video."),
-                o("b28d44f7", function (e) {
-                    return "La GIF supera la dimensione massima consentita. Le GIF non possono superare i " + e.limit + " MB";
+                o("b28d44f7", function (i) {
+                    return "La GIF supera la dimensione massima consentita. Le GIF non possono superare i " + i.limit + " MB";
                 }),
-                o("i1db7d13", function (e) {
-                    return "Il video supera la dimensione massima consentita. I video non possono superare i " + e.limit + " MB.";
+                o("i1db7d13", function (i) {
+                    return "Il video supera la dimensione massima consentita. I video non possono superare i " + i.limit + " MB.";
                 }),
-                o("baac0ed7", function (e) {
-                    return "Il video supera la dimensione massima consentita. I video non possono superare i " + e.limit + " GB.";
+                o("baac0ed7", function (i) {
+                    return "Il video supera la dimensione massima consentita. I video non possono superare i " + i.limit + " GB.";
                 }),
-                o("a22385bb", function (e) {
-                    return "Il video è troppo lungo. Prova con una durata di " + e.limit + " secondi o meno.";
+                o("a22385bb", function (i) {
+                    return "Il video è troppo lungo. Prova con una durata di " + i.limit + " secondi o meno.";
                 }),
-                o("be0440bf", function (e) {
-                    return "Il video è troppo lungo. Prova con una durata di " + e.limit + " minuti o meno.";
+                o("be0440bf", function (i) {
+                    return "Il video è troppo lungo. Prova con una durata di " + i.limit + " minuti o meno.";
                 }),
                 o("feeba512", "Non è stato possibile elaborare il tuo file immagine. Vedi i suggerimenti per il caricamento delle immagini."),
                 o("db123c02", "Il tuo file immagine non è compatibile. Vedi i suggerimenti per il caricamento delle immagini."),
-                o("db6001e7", function (e) {
-                    return "L'immagine supera la dimensione massima consentita. Le immagini non possono superare i " + e.limit + " MB";
+                o("db6001e7", function (i) {
+                    return "L'immagine supera la dimensione massima consentita. Le immagini non possono superare i " + i.limit + " MB";
                 }),
                 o("eb96d952", "La tua immagine non è abbastanza alta e larga"),
                 o("b3880588", "La sessione di caricamento è scaduta."),
@@ -205,29 +205,29 @@
                 o("aaa798fc", "Esegui l'upgrade"),
                 o("f13bb672", "Abbonati a Premium"),
                 o("ab0decc0", "Abbonati"),
-                o("e4e92f35", function (e) {
-                    return "Esegui l'upgrade a " + e.tier;
+                o("e4e92f35", function (i) {
+                    return "Esegui l'upgrade a " + i.tier;
                 }),
-                o("c2831f07", function (e) {
-                    return "Abbonati a " + e.tier;
+                o("c2831f07", function (i) {
+                    return "Abbonati a " + i.tier;
                 }),
                 o("fd425414", "Ottieni Radar"),
                 o("g6320792", "Ottieni le statistiche di Premium"),
                 o("f09be7f8", "Ottieni la verifica"),
                 o("j34ad558", "Ottieni Premium"),
-                o("a73d39fb", function (e) {
-                    return "Inizia la prova gratuita di " + e.numberOfDays + " giorni";
+                o("a73d39fb", function (i) {
+                    return "Inizia la prova gratuita di " + i.numberOfDays + " giorni";
                 }),
-                o("i4fb96c7", function (e) {
-                    return "Ottieni fino a un " + e.percentage + "% di sconto su X " + e.premiumTierName;
+                o("i4fb96c7", function (i) {
+                    return "Ottieni fino a un " + i.percentage + "% di sconto su X " + i.premiumTierName;
                 }),
-                o("c1c98165", function (e) {
-                    return "Sconto del " + e.percentage + "%";
+                o("c1c98165", function (i) {
+                    return "Sconto del " + i.percentage + "%";
                 }),
                 o("c5546038", "Sconto in scadenza!"),
                 o("e9a47564", "Ultima occasione"),
-                o("f65e7e91", function (e) {
-                    return e.percentage + "% in meno su " + e.tier + " " + e.plan;
+                o("f65e7e91", function (i) {
+                    return i.percentage + "% in meno su " + i.tier + " " + i.plan;
                 }),
                 o("a84a736e", "Ottieni un credito pubblicitario in regalo"),
                 o("a0713d76", "Esegui l'upgrade a Organizzazioni verificate per ottenere crediti pubblicitari in regalo e una suite di strumenti per la crescita business."),
@@ -238,12 +238,12 @@
                 o("h8a3525e", "Aggiungi agli highlight sul tuo profilo"),
                 o("c0f7a722", "Per aggiungere dei post agli highlight sul tuo profilo devi disporre dell'abbonamento Premium."),
                 o("i3b31136", "Scrivi articoli su X"),
-                o("b6a41c5f", function (e) {
-                    return "Per scrivere articoli su X devi disporre di un abbonamento a " + e.tier;
+                o("b6a41c5f", function (i) {
+                    return "Per scrivere articoli su X devi disporre di un abbonamento a " + i.tier;
                 }),
                 o("ae2c4afc", "Vuoi pubblicare il tuo articolo?"),
-                o("d300e29b", function (e) {
-                    return "Esegui l'upgrade a " + e.tier + " per scrivere post e articoli più lunghi.";
+                o("d300e29b", function (i) {
+                    return "Esegui l'upgrade a " + i.tier + " per scrivere post e articoli più lunghi.";
                 }),
                 o("f614e2bc", "Esegui l'upgrade a Premium per scrivere post più lunghi e formattare il testo (ad es. aggiungendo il grassetto o il corsivo)."),
                 o("c9772e6e", "Esegui l'upgrade a Premium"),
@@ -278,8 +278,8 @@
                 o("aeaf14a6", "Ottieni un 40% di sconto su Premium. Scade presto!"),
                 o("ca8cbf78", "Ottieni uno sconto del 40% su Premium e Premium+"),
                 o("j88ba18e", "Riscatta l'offerta"),
-                o("f4dc8ea3", function (e) {
-                    return "Ottieni un " + e.percentage + "% di sconto su X Premium. Sblocca il meglio di X.";
+                o("f4dc8ea3", function (i) {
+                    return "Ottieni un " + i.percentage + "% di sconto su X Premium. Sblocca il meglio di X.";
                 }),
                 o("db6a5d54", "Non hai ancora la verifica"),
                 o("edf7f57e", "Ottieni la verifica per mettere in risalto le risposte, consultare le statistiche, navigare senza annunci e altro ancora. Esegui ora l'upgrade del tuo profilo."),
@@ -287,8 +287,8 @@
                 o("ib79d0c2", "Sblocca le funzioni VIP: verifica il tuo account"),
                 o("bebc5f12", "Stai facendo pubblicità su X ma non hai un abbonamento a Organizzazioni verificate"),
                 o("d7836d1e", "Abbonati per ottenere un credito pubblicitario in regalo da 12.000 USD, la verifica oro, l'assistenza VIP e una suite di strumenti per la crescita."),
-                o("f528e369", function (e) {
-                    return "Per scrivere articoli, abbonati a " + e.tier;
+                o("f528e369", function (i) {
+                    return "Per scrivere articoli, abbonati a " + i.tier;
                 }),
                 o("c5a8022a", "Con gli articoli puoi pubblicare i tuoi contenuti più lunghi direttamente su X includendo testo formattato e contenuti multimediali integrati."),
                 o("d77899b6", "Per scrivere post più lunghi, abbonati a Premium"),
@@ -371,11 +371,11 @@
                 o("d35c9eec", "Statistiche account"),
                 o("b5b7fb94", "Gruppo"),
                 o("g755fcde", "Tu"),
-                o("f6b1ff81", function (e) {
-                    return "Tu e " + e.name;
+                o("f6b1ff81", function (i) {
+                    return "Tu e " + i.name;
                 }),
-                o("j652293d", function (e) {
-                    return e.listOfParticipants + " e altri " + e.count;
+                o("j652293d", function (i) {
+                    return i.listOfParticipants + " e altri " + i.count;
                 }),
                 o("fb4ee2f6", "Richieste di messaggi eliminate"),
                 o("j607bf02", "Scarica l'app X"),
@@ -548,16 +548,16 @@
                 o("h63a5c3c", "Altro"),
                 o("a4fc1872", "Ultima settimana"),
                 o("e14bb1da", "Ultimo giorno"),
-                o("d86bbf0f", function (e) {
-                    return e.count + " elementi da leggere";
+                o("d86bbf0f", function (i) {
+                    return i.count + " elementi da leggere";
                 }),
-                o("h6beb5fb", function (e) {
-                    return e.count + "+";
+                o("h6beb5fb", function (i) {
+                    return i.count + "+";
                 }),
                 o("i5f7b6b8", "Account"),
                 o("da4691aa", "Visualizza tutti gli account"),
-                o("c7e55ccf", function (e) {
-                    return "Passa a @" + e.screenname;
+                o("c7e55ccf", function (i) {
+                    return "Passa a @" + i.screenname;
                 }),
                 o("b20a3894", "L'account a cui stai tentando di passare è stato eliminato."),
                 o("daffabde", "per conto di..."),
@@ -579,18 +579,18 @@
                 o("he5ecf52", "Il testo del post supera il limite massimo consentito."),
                 o("ac78e602", "Il contenuto del post non è valido."),
                 o("i251c738", "La frequenza fotogrammi del video che hai provato a caricare è troppo alta."),
-                o("ed3ac7ef", function (e) {
-                    return "La frequenza fotogrammi del video che hai provato a caricare corrisponde a " + e.frameRate + ", quindi è troppo alta. La frequenza fotogrammi massima è 60.";
+                o("ed3ac7ef", function (i) {
+                    return "La frequenza fotogrammi del video che hai provato a caricare corrisponde a " + i.frameRate + ", quindi è troppo alta. La frequenza fotogrammi massima è 60.";
                 }),
                 o("e23fe0cc", "Le proporzioni del video che hai provato a caricare sono troppo grandi."),
                 o("ca4514c0", "Le proporzioni del video che hai provato a caricare sono troppo piccole."),
                 o("fb4a459c", "Il video che hai provato a caricare ha una durata troppo corta."),
                 o("ca1afa98", "Il video che hai provato a caricare ha una durata troppo lunga."),
-                o("b2e94283", function (e) {
-                    return "via @" + e.viaScreenName;
+                o("b2e94283", function (i) {
+                    return "via @" + i.viaScreenName;
                 }),
-                o("ee69d769", function (e) {
-                    return "Posta" + e.verb;
+                o("ee69d769", function (i) {
+                    return "Posta" + i.verb;
                 }),
                 o("ge8e4a38", "Posta tutto"),
                 o("h735a98e", "Programma"),
@@ -605,18 +605,18 @@
                 o("e0cb0c72", "Ads"),
                 o("e2eef3c2", "Organizzazioni verificate"),
                 o("b55d8a78", "Crea il tuo spazio"),
-                o("e5323e36", "Passa alla diretta"),
+                o("e5323e36", "Vai in diretta"),
                 o("a5a30af0", "Articoli"),
                 o("d13d697c", "Nuovo"),
                 o("j0e2cfa8", "Per le attività"),
                 o("h5e38204", "Chat"),
                 o("h7d5d9fa", "Beta"),
-                o("ga169e1b", function (e) {
-                    return "Messaggi Diretti (" + e.count + " conversazion" + t(e.count, "e", "i") + " da leggere)";
+                o("ga169e1b", function (i) {
+                    return "Messaggi Diretti (" + i.count + " conversazion" + t(i.count, "e", "i") + " da leggere)";
                 }),
                 o("d83682ec", "Home (nuovi post da leggere)"),
-                o("e1249849", function (e) {
-                    return "Notifiche (" + e.count + " notific" + t(e.count, "a", "he") + " da leggere)";
+                o("e1249849", function (i) {
+                    return "Notifiche (" + i.count + " notific" + t(i.count, "a", "he") + " da leggere)";
                 }),
                 o("c0b786ee", "Cerca ed esplora"),
                 o("bb967f9e", "Video"),
@@ -624,17 +624,17 @@
                 o("hec711c0", "Scopri nuovi post"),
                 o("j0a8da6e", "Aggiungi un account esistente"),
                 o("c6f2bf00", "Gestisci account"),
-                o("a58e0e51", function (e) {
-                    return "Esci da @" + e.screenName;
+                o("a58e0e51", function (i) {
+                    return "Esci da @" + i.screenName;
                 }),
                 o("j62f43a6", "Visualizza account con delega"),
-                o("d4c52015", function (e) {
-                    return e.count + " invit" + t(e.count, "o", "i") + " in sospeso per account con delega";
+                o("d4c52015", function (i) {
+                    return i.count + " invit" + t(i.count, "o", "i") + " in sospeso per account con delega";
                 }),
                 o("b8e1d524", "Account"),
                 o("gef27c4c", "Menu Account"),
-                o("b7dc3885", function (e) {
-                    return "Passa a @" + e.screenName;
+                o("b7dc3885", function (i) {
+                    return "Passa a @" + i.screenName;
                 }),
                 o("c61eea74", "Account personali"),
                 o("g6d42fea", "Attiva/Disattiva navigazione"),
@@ -645,27 +645,27 @@
                 o("f2f787a0", "Termini di servizio"),
                 o("e1099fd6", "Informativa sulla privacy"),
                 o("c1df1ae0", "Utilizzo dei cookie"),
-                o("cdc1bff7", function (e) {
-                    return "Menu del profilo per " + e.loggedInUserName;
+                o("cdc1bff7", function (i) {
+                    return "Menu del profilo per " + i.loggedInUserName;
                 }),
-                o("fd48249b", function (e) {
-                    return e.count + " utenti";
+                o("fd48249b", function (i) {
+                    return i.count + " utenti";
                 }),
-                o("b93ba92d", function (e) {
-                    return e.peopleCount + " utent" + t(e.peopleCount, "e", "i");
+                o("b93ba92d", function (i) {
+                    return i.peopleCount + " utent" + t(i.peopleCount, "e", "i");
                 }),
                 o("ae2205d2", "Vi seguite a vicenda"),
-                o("fd06b02f", function (e) {
-                    return "Attualmente @" + e.screenName + " è in uno spazio attivo, clicca tramite il suo profilo per unirti";
+                o("fd06b02f", function (i) {
+                    return "Attualmente @" + i.screenName + " è in uno spazio attivo, clicca tramite il suo profilo per unirti";
                 }),
                 o("f2b3fe06", "Caricamento risultati in corso"),
                 o("fc9dd578", "Cerca persone"),
-                o("gdb7bc25", function (e) {
-                    return e.name + " - seleziona per rimuovere";
+                o("gdb7bc25", function (i) {
+                    return i.name + " - seleziona per rimuovere";
                 }),
                 o("f065ba8c", "Termine di ricerca"),
-                o("hbc99b03", function (e) {
-                    return "Visualizza il profilo di @" + e.screenName;
+                o("hbc99b03", function (i) {
+                    return "Visualizza il profilo di @" + i.screenName;
                 }),
                 o("a2c1b222", "Prova a cercare utenti, liste o parole chiave"),
                 o("f45c4250", "Vuoi cancellare tutte le ricerche recenti?"),
@@ -679,8 +679,8 @@
                 o("hffea05c", "Eliminare la ricerca salvata?"),
                 o("j037e374", "L'azione non potrà essere annullata e perderai la ricerca salvata."),
                 o("d96cf7ce", "Elimina"),
-                o("hbe4feb5", function (e) {
-                    return "Una richiesta di follow è stata inviata a @" + e.screenName + " ed è in attesa di approvazione.";
+                o("hbe4feb5", function (i) {
+                    return "Una richiesta di follow è stata inviata a @" + i.screenName + " ed è in attesa di approvazione.";
                 }),
                 o("df4c86b0", "Aggiorna prima il tuo profilo"),
                 o("bba40ffa", "Non puoi seguire questo account"),
@@ -785,8 +785,8 @@
                 o("feadd98c", "Aggiungi riferimenti su testate giornalistiche verificate"),
                 o("j7ae97aa", "Riferimenti su testate giornalistiche verificate"),
                 o("c368aa8e", "Almeno tre articoli di agenzie di stampa verificate che ti citano."),
-                o("ded0edad", function (e) {
-                    return e.n + "° articolo";
+                o("ded0edad", function (i) {
+                    return i.n + "° articolo";
                 }),
                 o("bebae55a", "Borsa"),
                 o("c5571610", "Un link in cui viene indicata chiaramente la tua presenza in borsa."),
@@ -978,8 +978,8 @@
                 o("ff1d68f8", "Carica una foto del tuo documento"),
                 o("bdada5a6", "Fronte"),
                 o("edfed0f6", "Carica fronte del documento"),
-                o("def5015d", function (e) {
-                    return "Indietro" + e.back_of_document;
+                o("def5015d", function (i) {
+                    return "Indietro" + i.back_of_document;
                 }),
                 o("b09aade6", "Carica retro del documento"),
                 o("b40ed190", "Documento"),
@@ -1043,8 +1043,8 @@
                 o("dd82312a", "Sessioni"),
                 o("e5e8a89a", "Caricamento app in corso"),
                 o("hfa9a2c8", "Gestisci in un lampo le app collegate"),
-                o("dd1b86f9", function (e) {
-                    return "di " + e.name;
+                o("dd1b86f9", function (i) {
+                    return "di " + i.name;
                 }),
                 o("cf461930", "Qui verranno mostrate le app di terze parti a cui hai concesso di accedere al tuo account X."),
                 o("b63b0b1d", "Scopri di più"),
@@ -1055,13 +1055,13 @@
                 o("b850cbd0", "Hai effettuato l'accesso a questi account Twitter su questi dispositivi e attualmente li stai utilizzando. "),
                 o("cf3e3164", "Disconnetti tutte le altre sessioni"),
                 o("f810f27a", "Vuoi terminare le altre sessioni?"),
-                o("gbb5cec5", function (e) {
-                    return "Se procedi con la disconnessione, tutte le " + e.num + " sessioni X attive, tranne quella attualmente attiva, verranno terminate.";
+                o("gbb5cec5", function (i) {
+                    return "Se procedi con la disconnessione, tutte le " + i.num + " sessioni X attive, tranne quella attualmente attiva, verranno terminate.";
                 }),
                 o("fcbd4904", "Procedendo verrà terminata la sessione X attiva."),
                 o("ab78d946", "Stai per terminare le tue altre sessioni X attive. Per avviarne di nuove dovrai riaccedere su questi dispositivi."),
-                o("e186a3d6", function (e) {
-                    return "" + e.learnMoreLabel;
+                o("e186a3d6", function (i) {
+                    return "" + i.learnMoreLabel;
                 }),
                 o("ed5ab16a", "In uso"),
                 o("c9bc33fa", "Dispositivi"),
@@ -1200,30 +1200,30 @@
                 o("bed6a87c", "Il link ai tuoi dati di X è scaduto."),
                 o("b24b4768", "Passa ai miei dati di X"),
                 o("a0c3f812", "Per ottenere un altro link, invia una nuova richiesta."),
-                o("eea30bb5", function (e) {
-                    return "Generato il: " + e.date;
+                o("eea30bb5", function (i) {
+                    return "Generato il: " + i.date;
                 }),
-                o("f2cde471", function (e) {
-                    return "Scade il: " + e.date;
+                o("f2cde471", function (i) {
+                    return "Scade il: " + i.date;
                 }),
-                o("b7ce9dbf", function (e) {
-                    return "Dimensione stimata: " + e.size;
+                o("b7ce9dbf", function (i) {
+                    return "Dimensione stimata: " + i.size;
                 }),
-                o("d3de4c97", function (e) {
-                    return "Dati di X (" + e.currentIndex + " di " + e.count + ")";
+                o("d3de4c97", function (i) {
+                    return "Dati di X (" + i.currentIndex + " di " + i.count + ")";
                 }),
                 o("fc5bfd96", "Inizia"),
                 o("gee8110e", "Scarica archivio"),
                 o("c326f156", "Archivio scaricato"),
                 o("c9fe9b56", "Stai per scaricare l'archivio"),
-                o("j54b679b", function (e) {
-                    return "Si aprirà in una nuova finestra e il completamento potrebbe richiedere qualche minuto. Non appena sarà pronto, il file da scaricare sarà da " + e.size + " e in formato ZIP.";
+                o("j54b679b", function (i) {
+                    return "Si aprirà in una nuova finestra e il completamento potrebbe richiedere qualche minuto. Non appena sarà pronto, il file da scaricare sarà da " + i.size + " e in formato ZIP.";
                 }),
-                o("ac63840d", function (e) {
-                    return e.size + " KB";
+                o("ac63840d", function (i) {
+                    return i.size + " KB";
                 }),
-                o("bcd9b0ed", function (e) {
-                    return e.size + " MB";
+                o("bcd9b0ed", function (i) {
+                    return i.size + " MB";
                 }),
                 o("ce494bb4", "Dimensione del testo"),
                 o("c783d45e", "Colore"),
@@ -1244,12 +1244,12 @@
                 o("cbed7fb2", "Viola"),
                 o("g697ec02", "Arancione"),
                 o("a7c2204a", "Verde"),
-                o("gde8fdd7", function (e) {
-                    return "Al centro di X ci sono brevi messaggi chiamati post (come questo) che possono contenere testo, foto, video, link, hashtag e menzioni come @" + e.mention + ".";
+                o("gde8fdd7", function (i) {
+                    return "Al centro di X ci sono brevi messaggi chiamati post (come questo) che possono contenere testo, foto, video, link, hashtag e menzioni come @" + i.mention + ".";
                 }),
                 o("f277e94a", "Visualizza"),
-                o("ee79367b", function (e) {
-                    return "Livello " + e.conversationTreeDepth + ":";
+                o("ee79367b", function (i) {
+                    return "Livello " + i.conversationTreeDepth + ":";
                 }),
                 o("ec6907ba", "Annuncio"),
                 o("d9587114", "Visualizza il post più recente"),
@@ -1258,39 +1258,39 @@
                 o("i46ee3f0", "Questa è la versione più recente del post."),
                 o("e18cb87c", "Spiega questo post"),
                 o("ffe16626", "Il filtro risposte è attivo."),
-                o("jc81f6a7", function (e) {
-                    return e.count + " visualizzazion" + t(e.count, "e", "i");
+                o("jc81f6a7", function (i) {
+                    return i.count + " visualizzazion" + t(i.count, "e", "i");
                 }),
                 o("g521abc6", "Grok, dai un'occhiata!"),
                 o("a09331e0", "Articoli correlati"),
                 o("e3eceda6", "Azioni di Grok"),
-                o("a653f08f", function (e) {
-                    return "Leggi " + e.replyCount + " risposte";
+                o("a653f08f", function (i) {
+                    return "Leggi " + i.replyCount + " risposte";
                 }),
                 o("dc0c8266", "Chiedi a Grok"),
                 o("i7ac410e", "Mostra originale"),
                 o("c67f09e8", "Mostra traduzione"),
-                o("f396c105", function (e) {
-                    return "" + e.displayCount;
+                o("f396c105", function (i) {
+                    return "" + i.displayCount;
                 }),
-                o("aa037e65", function (e) {
-                    return "visualizzazion" + t(e.count, "e", "i");
+                o("aa037e65", function (i) {
+                    return "visualizzazion" + t(i.count, "e", "i");
                 }),
                 o("b8f3500a", "Visualizza discussione nell'aggregatore"),
                 o("fc7db594", "Riepilogo del profilo"),
                 o("c3f04d9c", "Fammici pensare..."),
                 o("cbdddb0a", "Conclusa"),
-                o("b0d1e205", function (e) {
-                    return 'Ricerca di **"' + e.query + '"** in corso';
+                o("b0d1e205", function (i) {
+                    return 'Ricerca di **"' + i.query + '"** in corso';
                 }),
-                o("acb9b845", function (e) {
-                    return "Consultazione di " + e.url + ' per **"' + e.query + '"** in corso';
+                o("acb9b845", function (i) {
+                    return "Consultazione di " + i.url + ' per **"' + i.query + '"** in corso';
                 }),
-                o("ef261d8d", function (e) {
-                    return "Ricerca post di @" + e.username + " in corso";
+                o("ef261d8d", function (i) {
+                    return "Ricerca post di @" + i.username + " in corso";
                 }),
-                o("bec7eb11", function (e) {
-                    return "Ricerca post di @" + e.username + ' per **"' + e.query + '"** in corso';
+                o("bec7eb11", function (i) {
+                    return "Ricerca post di @" + i.username + ' per **"' + i.query + '"** in corso';
                 }),
                 o("ead81122", "Qualcosa è andato storto. Aggiorna per riconnetterti o riprova."),
                 o("f808a13a", "Limite di frequenza superato. Riprova tra qualche istante."),
@@ -1299,47 +1299,47 @@
                 o("ef674976", "Non disponi dell'autorizzazione per utilizzare questo servizio."),
                 o("c74e87e0", "Questo file è troppo grande. Selezionane uno più piccolo."),
                 o("bea50a2a", "Questo formato file non è supportato."),
-                o("j77292b7", function (e) {
-                    return "Seleziona fino a " + e.count + " file";
+                o("j77292b7", function (i) {
+                    return "Seleziona fino a " + i.count + " file";
                 }),
                 o("d4d35bea", "Traduzione in corso..."),
                 o("he9c9634", "Impossibile recuperare la traduzione"),
                 o("j2198c98", "Nascondi post tradotto"),
                 o("i73a7d48", "Traduzione di Google"),
-                o("eeadb767", function (e) {
-                    return "Lingua originale: " + e.originLanguage + ". Traduzione di Google.";
+                o("eeadb767", function (i) {
+                    return "Lingua originale: " + i.originLanguage + ". Traduzione di Google.";
                 }),
                 o("be9b9fb8", "Traduzione di Grok"),
-                o("d9c6f69d", function (e) {
-                    return "Lingua originale: " + e.originLanguage + ". Traduzione di Grok.";
+                o("d9c6f69d", function (i) {
+                    return "Lingua originale: " + i.originLanguage + ". Traduzione di Grok.";
                 }),
                 o("dc445f82", "Traduzione di Papago"),
-                o("he9803d3", function (e) {
-                    return "Lingua originale: " + e.originLanguage + ". Traduzione di Papago.";
+                o("he9803d3", function (i) {
+                    return "Lingua originale: " + i.originLanguage + ". Traduzione di Papago.";
                 }),
                 o("f8264fc0", "Traduzione di X"),
-                o("caa5ba3d", function (e) {
-                    return "Lingua originale: " + e.originLanguage + ". Traduzione di X.";
+                o("caa5ba3d", function (i) {
+                    return "Lingua originale: " + i.originLanguage + ". Traduzione di X.";
                 }),
                 o("e0f81ff3", "Traduzione:"),
-                o("j2862695", function (e) {
-                    return "Lingua originale: " + e.originLanguage + ". Traduzione di";
+                o("j2862695", function (i) {
+                    return "Lingua originale: " + i.originLanguage + ". Traduzione di";
                 }),
                 o("b7cb4fab", "Traduzione di"),
                 o("cbc8fed4", "La traduzione è corretta? Aiutaci a migliorare condividendo il tuo feedback:"),
                 o("d56779a2", "comprensione facile"),
                 o("b6fe8a56", "poco chiara"),
                 o("a66d80d0", "Traduci post"),
-                o("d4c339b9", function (e) {
-                    return "Post di " + e.fullName + " (@" + e.screenName + ")";
+                o("d4c339b9", function (i) {
+                    return "Post di " + i.fullName + " (@" + i.screenName + ")";
                 }),
-                o("db0cb64f", function (e) {
-                    return e.fullName + " (@" + e.screenName + ") ha postato:\n" + e.tweet;
+                o("db0cb64f", function (i) {
+                    return i.fullName + " (@" + i.screenName + ") ha postato:\n" + i.tweet;
                 }),
                 o("h6f99ac4", "Salvataggio nei segnalibri eseguito"),
                 o("g1c463f6", "Rimozione dai segnalibri eseguita"),
-                o("a2e7377f", function (e) {
-                    return "Rimozione da " + e.bookmarkFolderName + " avvenuta";
+                o("a2e7377f", function (i) {
+                    return "Rimozione da " + i.bookmarkFolderName + " avvenuta";
                 }),
                 o("i47ad24c", "Continua così! Più Mi piace metti ai post, migliore sarà la tua cronologia."),
                 o("def4a37c", "Ben fatto. La tua cronologia sta migliorando. Maggiore è il tuo numero di Mi piace, migliore sarà la tua cronologia. Continua a mettere Mi piace a ciò che ti interessa."),
@@ -1415,28 +1415,28 @@
                 o("fbfab656", "Condividi nello spazio"),
                 o("e668112c", "Post condiviso con lo spazio"),
                 o("g5775e46", "Visualizza citazioni"),
-                o("bb192c6b", function (e) {
-                    return "" + e.displayCount;
+                o("bb192c6b", function (i) {
+                    return "" + i.displayCount;
                 }),
-                o("f23d99b0", function (e) {
-                    return "segnalibr" + t(e.count, "o", "i");
+                o("f23d99b0", function (i) {
+                    return "segnalibr" + t(i.count, "o", "i");
                 }),
-                o("e8866a55", function (e) {
-                    return "" + e.displayCount;
+                o("e8866a55", function (i) {
+                    return "" + i.displayCount;
                 }),
-                o("eb3abe45", function (e) {
+                o("eb3abe45", function (i) {
                     return "Mi piace";
                 }),
-                o("eff958fb", function (e) {
-                    return "" + e.displayCount;
+                o("eff958fb", function (i) {
+                    return "" + i.displayCount;
                 }),
-                o("i5a8c515", function (e) {
-                    return "citazion" + t(e.count, "e", "i");
+                o("i5a8c515", function (i) {
+                    return "citazion" + t(i.count, "e", "i");
                 }),
-                o("dd77f9fb", function (e) {
-                    return "" + e.displayCount;
+                o("dd77f9fb", function (i) {
+                    return "" + i.displayCount;
                 }),
-                o("a755b81b", function (e) {
+                o("a755b81b", function (i) {
                     return "repost";
                 }),
                 o("e9f1fbcc", "Non c'è niente da vedere qui (per ora)"),
@@ -1444,8 +1444,8 @@
                 o("d93b360a", "Questa colonna era stata eliminata. Altri post appariranno qui sopra non appena verranno creati."),
                 o("d6e2f9be", "Caricamento cronologia in corso"),
                 o("afb4c24a", "Nessun elemento"),
-                o("e5b0063d", function (e) {
-                    return "Cronologia: " + e.title;
+                o("e5b0063d", function (i) {
+                    return "Cronologia: " + i.title;
                 }),
                 o("ib65b1c6", "Iscriviti con Apple"),
                 o("f55cebb8", "Accedi con Apple"),
@@ -1453,41 +1453,41 @@
                 o("e0870f26", "Iscriviti con Google"),
                 o("gfeffd6a", "Accedi con Google"),
                 o("gf5e9ea6", "Annulla"),
-                o("e43138c5", function (e) {
-                    return "Segui " + e.name;
+                o("e43138c5", function (i) {
+                    return "Segui " + i.name;
                 }),
-                o("be65f2e7", function (e) {
-                    return "Smetti di seguire " + e.name;
+                o("be65f2e7", function (i) {
+                    return "Smetti di seguire " + i.name;
                 }),
-                o("a649d337", function (e) {
-                    return e.name + " non è di mio interesse";
+                o("a649d337", function (i) {
+                    return i.name + " non è di mio interesse";
                 }),
                 o("e2f2b658", "Non ti suggeriremo più questo argomento."),
-                o("b51f7edf", function (e) {
-                    return "Hai smesso di seguire " + e.name;
+                o("b51f7edf", function (i) {
+                    return "Hai smesso di seguire " + i.name;
                 }),
-                o("gac366b3", function (e) {
-                    return "Hai iniziato a seguire " + e.name;
+                o("gac366b3", function (i) {
+                    return "Hai iniziato a seguire " + i.name;
                 }),
-                o("f9e45cfb", function (e) {
-                    return "Vuoi bloccare @" + e.screenName + "?";
+                o("f9e45cfb", function (i) {
+                    return "Vuoi bloccare @" + i.screenName + "?";
                 }),
-                o("fcd4d489", function (e) {
-                    return "Blocca @" + e.screenName;
+                o("fcd4d489", function (i) {
+                    return "Blocca @" + i.screenName;
                 }),
                 o("a6450e84", "Blocca"),
-                o("g353ad73", function (e) {
-                    return "Non potrà seguirti né vedere i tuoi post e tu non vedrai i post né le notifiche di @" + e.screenName + ".";
+                o("g353ad73", function (i) {
+                    return "Non potrà seguirti né vedere i tuoi post e tu non vedrai i post né le notifiche di @" + i.screenName + ".";
                 }),
-                o("ad00a739", function (e) {
-                    return "Vedrà i tuoi post pubblici ma non potrà più interagirvi. Inoltre, @" + e.screenName + " non potrà seguirti o inviarti messaggi e non riceverai notifiche da parte sua.";
+                o("ad00a739", function (i) {
+                    return "Vedrà i tuoi post pubblici ma non potrà più interagirvi. Inoltre, @" + i.screenName + " non potrà seguirti o inviarti messaggi e non riceverai notifiche da parte sua.";
                 }),
                 o("a9fd20be", "Bloccato correttamente."),
-                o("j546fb79", function (e) {
-                    return "Vuoi sbloccare @" + e.screenName + "?";
+                o("j546fb79", function (i) {
+                    return "Vuoi sbloccare @" + i.screenName + "?";
                 }),
-                o("c9623eeb", function (e) {
-                    return "Sblocca @" + e.screenName;
+                o("c9623eeb", function (i) {
+                    return "Sblocca @" + i.screenName;
                 }),
                 o("e133be4e", "Sblocca"),
                 o("he43bca4", "Potrà seguirti e visualizzare i tuoi post."),
@@ -1515,17 +1515,17 @@
                 o("c3e7f572", "Impossibile staccare la risposta dal post"),
                 o("d058316c", "Grazie, ne terremo conto al fine di migliorare la tua cronologia."),
                 o("afb7e8f8", "Leggi l'articolo"),
-                o("jb0429b1", function (e) {
-                    return "Di " + e.name + " @" + e.screenName;
+                o("jb0429b1", function (i) {
+                    return "Di " + i.name + " @" + i.screenName;
                 }),
                 o("gfdad702", "18+"),
                 o("c5d23126", "Fissa"),
                 o("j44ec610", "Stacca"),
-                o("ibd0106e", function (e) {
-                    return "" + e.formattedCount;
+                o("ibd0106e", function (i) {
+                    return "" + i.formattedCount;
                 }),
-                o("cface2d1", function (e) {
-                    return "membr" + t(e.count, "o", "i");
+                o("cface2d1", function (i) {
+                    return "membr" + t(i.count, "o", "i");
                 }),
                 o("b5334780", "In sospeso"),
                 o("b171d7c4", "Partecipa"),
@@ -1533,15 +1533,15 @@
                 o("bb1d57b6", "Abbandona"),
                 o("h4fbfa58", "Accetta e partecipa"),
                 o("ea8cfb1e", "Accetta e richiedi unione"),
-                o("dc1b14a1", function (e) {
-                    return "Consulta e accetta le regole di " + e.communityName;
+                o("dc1b14a1", function (i) {
+                    return "Consulta e accetta le regole di " + i.communityName;
                 }),
                 o("c966ac64", "Impossibile richiedere l'unione alla community. Riprova più tardi."),
                 o("g690e07e", "La tua risposta (facoltativa)"),
                 o("a5d21bf4", "La risposta è facoltativa, però ricorda che aiuta i moderatori ad accettare la tua richiesta."),
                 o("h9526e03", "Regole di X"),
-                o("c00c234f", function (e) {
-                    return "Regole di " + e.communityName;
+                o("c00c234f", function (i) {
+                    return "Regole di " + i.communityName;
                 }),
                 o("hafa07f2", "La partecipazione è soggetta a limitazioni"),
                 o("c15bee32", "È stata eseguita la tua rimozione da questa community"),
@@ -1552,17 +1552,17 @@
                 o("b02360f6", "L'ultimo amministratore o moderatore non può abbandonare la community a meno che questa non sia vuota."),
                 o("fe832999", "rendere pubblici i tuoi post"),
                 o("bc7a7af4", "I tuoi post nella community verranno nascosti e non potrai unirti nuovamente."),
-                o("a0e0a52c", function (e) {
-                    return "" + e.offendingRule;
+                o("a0e0a52c", function (i) {
+                    return "" + i.offendingRule;
                 }),
                 o("fe76cacc", "Mostra altri post"),
                 o("aebb6546", "Caricamento altri post in corso"),
                 o("a3484d22", "pareggio"),
-                o("aab2efa9", function (e) {
-                    return "vincitore " + e.winner;
+                o("aab2efa9", function (i) {
+                    return "vincitore " + i.winner;
                 }),
-                o("ba21c289", function (e) {
-                    return "Segnapunti, " + e.gameCategory + ", " + e.gameState + ", " + e.accessibleGameClockPeriod + ", " + e.teamOneLabel + ", " + e.teamTwoLabel;
+                o("ba21c289", function (i) {
+                    return "Segnapunti, " + i.gameCategory + ", " + i.gameState + ", " + i.accessibleGameClockPeriod + ", " + i.teamOneLabel + ", " + i.teamTwoLabel;
                 }),
                 o("f178e38c", "Imminente"),
                 o("b6da6b02", "In diretta"),
@@ -1574,29 +1574,29 @@
                 o("fcf51fe6", "Aggiungi ai preferiti"),
                 o("e9a90d72", "Nei preferiti"),
                 o("bf403716", "Rimuovi dai preferiti"),
-                o("c9f08e29", function (e) {
-                    return "Vuoi rimuovere " + e.title + " dai preferiti?";
+                o("c9f08e29", function (i) {
+                    return "Vuoi rimuovere " + i.title + " dai preferiti?";
                 }),
                 o("hed4dcd0", "Anche se rimuovi questo argomento dai preferiti, potresti ancora vedere post correlati in base agli account che segui."),
                 o("cd876e02", "Aggiungi ai preferiti"),
                 o("f2816e02", "Nei preferiti"),
                 o("f5b04fbc", "Rimuovi dai preferiti"),
-                o("c481ae3f", function (e) {
-                    return "Vuoi rimuovere " + e.title + " dai preferiti?";
+                o("c481ae3f", function (i) {
+                    return "Vuoi rimuovere " + i.title + " dai preferiti?";
                 }),
                 o("c94116de", "Anche se rimuovi questo argomento dai preferiti, potresti ancora vedere post correlati in base agli account che segui."),
                 o("e0e730b0", "Di mio interesse"),
                 o("b1850062", "Non di mio interesse"),
-                o("gd3f996f", function (e) {
-                    return "L'argomento " + e.title + " non è di tuo interesse?";
+                o("gd3f996f", function (i) {
+                    return "L'argomento " + i.title + " non è di tuo interesse?";
                 }),
                 o("jdd65aac", "Anche se questo argomento non è di tuo interesse, potresti ancora vedere post correlati in base agli account che segui."),
                 o("f93bb3ee", "Carica immagine"),
-                o("cc37768d", function (e) {
-                    return e.mediaFileSize + " KB";
+                o("cc37768d", function (i) {
+                    return i.mediaFileSize + " KB";
                 }),
-                o("f19d78d7", function (e) {
-                    return e.mediaFileSize + " MB";
+                o("f19d78d7", function (i) {
+                    return i.mediaFileSize + " MB";
                 }),
                 o("c75bf00e", "Carica GIF"),
                 o("d3ac405c", "Carica video"),
@@ -1617,46 +1617,46 @@
                 o("ac832ae4", "Fissa lista"),
                 o("cdb33880", "Stacca lista"),
                 o("ca5d0a82", "Modifica lista"),
-                o("ec08efe4", function (e) {
-                    return "" + e.formattedCount;
+                o("ec08efe4", function (i) {
+                    return "" + i.formattedCount;
                 }),
-                o("h9f711f0", function (e) {
+                o("h9f711f0", function (i) {
                     return "follower";
                 }),
                 o("jceadc3e", "Senza titolo"),
                 o("a1d5303c", "In modalità privata"),
                 o("cc8f8a80", "Non elencato"),
                 o("c33a97d6", "Pubblica"),
-                o("i73fff1b", function (e) {
-                    return "Mostra " + e.count + " " + t(e.count, "", "nuovi ") + "post";
+                o("i73fff1b", function (i) {
+                    return "Mostra " + i.count + " " + t(i.count, "", "nuovi ") + "post";
                 }),
-                o("a682906d", function (e) {
-                    return "Ancora " + e.count + "  Mi piace";
+                o("a682906d", function (i) {
+                    return "Ancora " + i.count + "  Mi piace";
                 }),
-                o("g566e973", function (e) {
-                    return e.jobCount + " offerte in corso" + e.tcc_organization_open_job_count;
+                o("g566e973", function (i) {
+                    return i.jobCount + " offerte in corso" + i.tcc_organization_open_job_count;
                 }),
-                o("ccc45ee7", function (e) {
-                    return "Squadra vincitrice: " + e.team;
+                o("ccc45ee7", function (i) {
+                    return "Squadra vincitrice: " + i.team;
                 }),
-                o("f81a95d7", function (e) {
-                    return "" + e.date;
+                o("f81a95d7", function (i) {
+                    return "" + i.date;
                 }),
                 o("ed4bea2e", "Oggi"),
-                o("j3e0ae78", function (e) {
-                    return "・" + e.formattedTime;
+                o("j3e0ae78", function (i) {
+                    return "・" + i.formattedTime;
                 }),
                 o("cabfdd06", "Domani"),
-                o("abd0f804", function (e) {
-                    return "・" + e.formattedTime;
+                o("abd0f804", function (i) {
+                    return "・" + i.formattedTime;
                 }),
                 o("df45f564", "Aggiungi un altro post"),
                 o("i569ff3e", "Mostra questa discussione"),
-                o("je5502eb", function (e) {
-                    return 'Sono inclusi i risultati per "' + e.suggestion + '"';
+                o("je5502eb", function (i) {
+                    return 'Sono inclusi i risultati per "' + i.suggestion + '"';
                 }),
-                o("bc4628a1", function (e) {
-                    return 'Risultati relativi a "' + e.suggestion + '"';
+                o("bc4628a1", function (i) {
+                    return 'Risultati relativi a "' + i.suggestion + '"';
                 }),
                 o("a1979464", "Caricamento video in corso"),
                 o("ic1e826e", "Riproduci"),
@@ -1671,19 +1671,19 @@
                 o("b0e322cc", "Inviaci un messaggio privato"),
                 o("cb8bddc8", "Inviami un messaggio privato"),
                 o("cb8c547e", "Invia un messaggio privato"),
-                o("d980e29f", function (e) {
-                    return "Inizio: " + e.date;
+                o("d980e29f", function (i) {
+                    return "Inizio: " + i.date;
                 }),
                 o("fdd81500", "Carosello"),
                 o("i0db46e6", "GIF"),
                 o("faf745fa", "Nudità"),
                 o("e1b4e672", "Contenuti sensibili"),
-                o("acc48c15", function (e) {
-                    return "Attenzione: " + e.formattedWarningList;
+                o("acc48c15", function (i) {
+                    return "Attenzione: " + i.formattedWarningList;
                 }),
                 o("a0e81a2e", "Mostra"),
-                o("g034e6f1", function (e) {
-                    return "Puoi allegare fino a un massimo di " + e.count + " post a questa segnalazione.";
+                o("g034e6f1", function (i) {
+                    return "Puoi allegare fino a un massimo di " + i.count + " post a questa segnalazione.";
                 }),
                 o("i2e0d584", "Promoted Post"),
                 o("b52a940c", "Questo post non è disponibile."),
@@ -1711,29 +1711,29 @@
                 o("f5b3dc1e", "Magari dopo"),
                 o("ae0c5fbe", "Errore durante la modifica di chi può rispondere"),
                 o("bae0cbc0", "Modifica chi può rispondere"),
-                o("d78131b9", function (e) {
-                    return "Aggiungi @" + e.screenName + " alle liste o rimuovi";
+                o("d78131b9", function (i) {
+                    return "Aggiungi @" + i.screenName + " alle liste o rimuovi";
                 }),
                 o("fb4ee11c", "Perché questo annuncio?"),
-                o("ad50e7d9", function (e) {
-                    return "Visualizza statistiche " + e.entity;
+                o("ad50e7d9", function (i) {
+                    return "Visualizza statistiche " + i.entity;
                 }),
                 o("ef1042f8", "Scrivi una nota della collettività"),
                 o("h3edf7a6", "Richiedi nota della collettività"),
                 o("bf8d98f4", "Solo gli abbonati possono rispondere"),
                 o("e69ada9e", "Solo gli abbonati a Premium possono rispondere"),
-                o("ae04c4dd", function (e) {
-                    return "Vuoi procedere all'eliminazione " + e.entity + "?";
+                o("ae04c4dd", function (i) {
+                    return "Vuoi procedere all'eliminazione " + i.entity + "?";
                 }),
                 o("d9442996", "L'azione non può annullata e la rimozione avverrà dal tuo profilo, dalla cronologia di qualsiasi account che segui e dai risultati di ricerca."),
-                o("dad785a7", function (e) {
-                    return "Procedendo eliminerai tutte le versioni " + e.entity + " dal tuo profilo, dalla cronologia di qualsiasi account che segui e dai risultati di ricerca. L'azione non può essere annullata.";
+                o("dad785a7", function (i) {
+                    return "Procedendo eliminerai tutte le versioni " + i.entity + " dal tuo profilo, dalla cronologia di qualsiasi account che segui e dai risultati di ricerca. L'azione non può essere annullata.";
                 }),
-                o("jda253ab", function (e) {
-                    return "Eliminazione " + e.entity + " eseguita correttamente";
+                o("jda253ab", function (i) {
+                    return "Eliminazione " + i.entity + " eseguita correttamente";
                 }),
-                o("j49c2f85", function (e) {
-                    return "Qualcosa è andato storto. Procedi nuovamente all'eliminazione " + e.entity + " tra un minuto.";
+                o("j49c2f85", function (i) {
+                    return "Qualcosa è andato storto. Procedi nuovamente all'eliminazione " + i.entity + " tra un minuto.";
                 }),
                 o("f9fa0390", "L'articolo diventerà una bozza e potrà essere eliminato dalla pagina Articoli."),
                 o("dad450ec", "Modifica articolo"),
@@ -1743,57 +1743,57 @@
                 o("j26481e6", "La pubblicazione dell'articolo è stata annullata e l'articolo è stato spostato nelle bozze per la modifica."),
                 o("b360ac7c", "Navigazione della sezione"),
                 o("adc81042", "Dettagli della sezione"),
-                o("bede965c", function (e) {
-                    return "" + e.count;
+                o("bede965c", function (i) {
+                    return "" + i.count;
                 }),
                 o("g345246c", "Questo è un articolo pubblicato, ovvero un nuovo modo per scrivere su X."),
                 o("b14efa0a", "Copertina dell'articolo"),
-                o("afdccedb", function (e) {
-                    return "Mostra " + e.displayCount + " rispost" + t(e.count, "a", "e");
+                o("afdccedb", function (i) {
+                    return "Mostra " + i.displayCount + " rispost" + t(i.count, "a", "e");
                 }),
                 o("bdba3e1a", "Attiva le notifiche post"),
                 o("c4da7d28", "Disattiva le notifiche post"),
                 o("j87c21f4", "Notifica"),
                 o("iebc30ca", "Disattiva notifiche"),
                 o("dc740eb2", "Vedrai le notifiche per i post di questo account nella cronologia Notifiche. Per non perdere alcun post, puoi anche abilitare le notifiche push sul tuo dispositivo."),
-                o("dca669ad", function (e) {
-                    return "I repost di " + e.name + " non appariranno più nella tua cronologia";
+                o("dca669ad", function (i) {
+                    return "I repost di " + i.name + " non appariranno più nella tua cronologia";
                 }),
-                o("ce6da5d7", function (e) {
-                    return "I repost di " + e.name + " appariranno nella tua cronologia";
+                o("ce6da5d7", function (i) {
+                    return "I repost di " + i.name + " appariranno nella tua cronologia";
                 }),
-                o("c6ea308b", function (e) {
-                    return e.fullName + " (@" + e.screenName + ")";
+                o("c6ea308b", function (i) {
+                    return i.fullName + " (@" + i.screenName + ")";
                 }),
-                o("a1fef729", function (e) {
-                    return "Dai un'occhiata a " + e.fullName + " su X\n" + e.bio;
+                o("a1fef729", function (i) {
+                    return "Dai un'occhiata a " + i.fullName + " su X\n" + i.bio;
                 }),
-                o("c32a3d03", function (e) {
-                    return "@" + e.screenName + " non ti segue più";
+                o("c32a3d03", function (i) {
+                    return "@" + i.screenName + " non ti segue più";
                 }),
-                o("j7bb1a43", function (e) {
-                    return "Segnala @" + e.screenName;
+                o("j7bb1a43", function (i) {
+                    return "Segnala @" + i.screenName;
                 }),
                 o("hef5960c", "Condividi profilo via..."),
                 o("bb1cbeb6", "Riattiva"),
                 o("h2f62206", "Silenziamento utente"),
-                o("e67b2d65", function (e) {
-                    return "Silenzia @" + e.screenName;
+                o("e67b2d65", function (i) {
+                    return "Silenzia @" + i.screenName;
                 }),
-                o("f05597b3", function (e) {
-                    return "Riattiva @" + e.screenName;
+                o("f05597b3", function (i) {
+                    return "Riattiva @" + i.screenName;
                 }),
                 o("h59f52ee", "Silenziato correttamente."),
                 o("eea0cbee", "Riattivazione effettuata."),
-                o("i29533b3", function (e) {
-                    return "Hai silenziato @" + e.screenName + ".";
+                o("i29533b3", function (i) {
+                    return "Hai silenziato @" + i.screenName + ".";
                 }),
-                o("h129c3c3", function (e) {
-                    return "Hai riattivato @" + e.screenName + ".";
+                o("h129c3c3", function (i) {
+                    return "Hai riattivato @" + i.screenName + ".";
                 }),
                 o("b3036480", "Rimuovi questo follower"),
-                o("h27b7407", function (e) {
-                    return "Rimuoveremo @" + e.screenName + " dai tuoi follower e la rimozione non gli verrà comunicata. L'account potrà iniziare a seguirti nuovamente in futuro.";
+                o("h27b7407", function (i) {
+                    return "Rimuoveremo @" + i.screenName + " dai tuoi follower e la rimozione non gli verrà comunicata. L'account potrà iniziare a seguirti nuovamente in futuro.";
                 }),
                 o("ibd0b842", "Copia link del profilo"),
                 o("b9c26480", "Visualizza argomenti"),
@@ -1801,8 +1801,8 @@
                 o("ge54bb8c", "Disattiva repost"),
                 o("h5ef9bc8", "Vedi liste"),
                 o("e9eef4c6", "Segnala contenuti illegali in UE"),
-                o("e28ba0bb", function (e) {
-                    return "Segnala @" + e.screenName + " per contenuti illegali in UE";
+                o("e28ba0bb", function (i) {
+                    return "Segnala @" + i.screenName + " per contenuti illegali in UE";
                 }),
                 o("a30b63da", "Qualcosa è andato storto. Prova a rimuovere nuovamente il follower tra un minuto."),
                 o("gd11f228", "Senza titolo"),
@@ -1839,8 +1839,8 @@
                 o("eebff22c", "Ritaglia foto"),
                 o("hf6f2914", "Anteprima"),
                 o("be4a00c2", "Aggiungi il codice qui"),
-                o("i3128619", function (e) {
-                    return "I blocchi non possono superare i " + e.count + " caratteri";
+                o("i3128619", function (i) {
+                    return "I blocchi non possono superare i " + i.count + " caratteri";
                 }),
                 o("dbb02ec4", "Seleziona un linguaggio di programmazione"),
                 o("d942865e", "Cerca un linguaggio di programmazione"),
@@ -1849,15 +1849,15 @@
                 o("d4ab68e2", "Cestina"),
                 o("a50ba822", "Cerca GIF"),
                 o("c6f5ac52", "Categorie - Ricerca GIF"),
-                o("ab468379", function (e) {
-                    return e.query + " - Ricerca GIF";
+                o("ab468379", function (i) {
+                    return i.query + " - Ricerca GIF";
                 }),
                 o("j7fc4f9c", "Riproduci GIF in automatico"),
                 o("a66b7760", "GIF non etichettata"),
                 o("a723aefa", "Nessuna GIF trovata"),
                 o("a6ecfa0a", "In alternativa, prova a cercare qualcos'altro."),
-                o("f5ff0d6f", function (e) {
-                    return e.category + " - Ricerca GIF";
+                o("f5ff0d6f", function (i) {
+                    return i.category + " - Ricerca GIF";
                 }),
                 o("effe1ca6", "Aggiungi qui un'espressione LaTeX"),
                 o("c46c3c62", "L'espressione include un errore. Sistemala e riprova."),
@@ -1883,18 +1883,18 @@
                 o("cafdefb2", "Azioni"),
                 o("dda42cf2", "Colonne e deck"),
                 o("e8a12604", "Indica una didascalia (facoltativo)"),
-                o("eabf2209", function (e) {
-                    return "GIF fornita da " + e.providerName;
+                o("eabf2209", function (i) {
+                    return "GIF fornita da " + i.providerName;
                 }),
                 o("a613e720", "Copia link della GIF"),
-                o("aeca1239", function (e) {
-                    return "Grassetto" + e.ttc_rich_text_composer;
+                o("aeca1239", function (i) {
+                    return "Grassetto" + i.ttc_rich_text_composer;
                 }),
-                o("i7dc66dd", function (e) {
-                    return "Corsivo" + e.ttc_rich_text_composer;
+                o("i7dc66dd", function (i) {
+                    return "Corsivo" + i.ttc_rich_text_composer;
                 }),
-                o("ad89b831", function (e) {
-                    return "attiva" + e.ttc_rich_text_composer;
+                o("ad89b831", function (i) {
+                    return "attiva" + i.ttc_rich_text_composer;
                 }),
                 o("jcd5ee8a", "Modifica blocco"),
                 o("a8f09fb8", "Elimina blocco"),
@@ -1928,8 +1928,8 @@
                 o("a1bc8e6c", "Visualizza articolo"),
                 o("b6f72a22", "La pubblicazione dell'articolo verrà annullata. Di conseguenza, l'articolo verrà spostato nelle bozze e non sarà pubblicamente visibile."),
                 o("f558d2e0", "Annulla pubbl. e abbozza"),
-                o("e9473589", function (e) {
-                    return "" + e.articleTitle;
+                o("e9473589", function (i) {
+                    return "" + i.articleTitle;
                 }),
                 o("ib067d6a", "Scegli una GIF o fino a 4 foto."),
                 o("eb7ab862", "Scegli fino a 4 foto, video o GIF."),
@@ -1956,14 +1956,14 @@
                 o("ic110f68", "L'ultima bozza non è stata salvata perché è troppo lunga."),
                 o("ifea3114", "Condividi"),
                 o("b384f696", "Consigliamo un titolo da 50 a 70 caratteri"),
-                o("a7da0adb", function (e) {
-                    return e.count + " parol" + t(e.count, "a", "e");
+                o("a7da0adb", function (i) {
+                    return i.count + " parol" + t(i.count, "a", "e");
                 }),
-                o("aea1d455", function (e) {
-                    return e.count + " minut" + t(e.count, "o", "i");
+                o("aea1d455", function (i) {
+                    return i.count + " minut" + t(i.count, "o", "i");
                 }),
-                o("df898d71", function (e) {
-                    return "Tempo di lettura: " + e.readingTimeValue;
+                o("df898d71", function (i) {
+                    return "Tempo di lettura: " + i.readingTimeValue;
                 }),
                 o("i9aadf4a", "Il link potrebbe non essere corretto. Clicca su uno degli articoli nella barra laterale di sinistra per leggerlo, modificarlo o pubblicarlo."),
                 o("hfdce46e", "Hai annullato la pubblicazione dell'articolo"),
@@ -1996,8 +1996,8 @@
                 o("g5e1668a", "Download consentito"),
                 o("fdc6a52a", "Quando l'opzione è abilitata, il tuo video potrà essere scaricato."),
                 o("fe09fde2", "Modifica le impostazioni"),
-                o("cd5cba97", function (e) {
-                    return "Avviso sui contenuti - " + e.formattedWarningList;
+                o("cd5cba97", function (i) {
+                    return "Avviso sui contenuti - " + i.formattedWarningList;
                 }),
                 o("h7215a76", "L'autore del post ha indicato che il post include contenuti sensibili."),
                 o("j32d345e", "Il seguente contenuto potrebbe includere materiale sensibile"),
@@ -2018,11 +2018,11 @@
                 o("bec9cff8", "Iscriviti a X"),
                 o("c150ba68", "Ti diamo il benvenuto!"),
                 o("f8e2163e", "Vuoi prima accedere?"),
-                o("a108c147", function (e) {
-                    return "Vuoi iniziare a seguire @" + e.screenName + "?";
+                o("a108c147", function (i) {
+                    return "Vuoi iniziare a seguire @" + i.screenName + "?";
                 }),
-                o("c66afdc3", function (e) {
-                    return "Segui @" + e.screenName;
+                o("c66afdc3", function (i) {
+                    return "Segui @" + i.screenName;
                 }),
                 o("feccfd6e", "Per seguire qualcuno devi prima effettuare l'accesso."),
                 o("dedce756", "Ora puoi mettere Mi piace al post."),
@@ -2034,19 +2034,19 @@
                 o("h19f38de", "Per inviare questo post devi prima effettuare l'accesso."),
                 o("e289d950", "Per condividere questo post devi prima effettuare l'accesso."),
                 o("d28215f0", "Spiacenti, i sondaggi non sono ammessi nelle community."),
-                o("ec2fc089", function (e) {
-                    return "I" + t(e.numOfTweets, "l post è stato inviato", " post sono stati inviati") + " su " + e.communityName;
+                o("ec2fc089", function (i) {
+                    return "I" + t(i.numOfTweets, "l post è stato inviato", " post sono stati inviati") + " su " + i.communityName;
                 }),
-                o("c7152355", function (e) {
-                    return "Non dimenticare di garantire l'accessibilità dell" + t(e.numberOfImages, "''immagine", "e immagini");
+                o("c7152355", function (i) {
+                    return "Non dimenticare di garantire l'accessibilità dell" + t(i.numberOfImages, "''immagine", "e immagini");
                 }),
                 o("ffa5562a", "Le descrizioni immagini ideali sono concise ma dettagliate. Assicurati di riassumere e trascrivere il testo incluso nell'immagine."),
-                o("a2d3facd", function (e) {
-                    return "L" + t(e.numberOfImages, "a descrizione rende", "e descrizioni rendono") + " X accessibile agli utenti con disabilità e a chiunque voglia più informazioni contestuali.";
+                o("a2d3facd", function (i) {
+                    return "L" + t(i.numberOfImages, "a descrizione rende", "e descrizioni rendono") + " X accessibile agli utenti con disabilità e a chiunque voglia più informazioni contestuali.";
                 }),
                 o("cc6d0a48", "Puoi disattivare questo promemoria dalle impostazioni di accessibilità."),
-                o("j499fbcb", function (e) {
-                    return "Aggiungi descrizion" + t(e.numberOfImages, "e", "i");
+                o("j499fbcb", function (i) {
+                    return "Aggiungi descrizion" + t(i.numberOfImages, "e", "i");
                 }),
                 o("bb8170da", "Non ora"),
                 o("h4dd544e", "Il tuo post è stato inviato."),
@@ -2076,13 +2076,13 @@
                 o("a3483f1c", "I post possono essere modificati solo entro 1 ora dalla loro pubblicazione."),
                 o("g4bcc5f4", "Si tratta della tua ultima modifica"),
                 o("g922bf14", "Il tuo post non può essere aggiornato nuovamente."),
-                o("f58b5009", function (e) {
-                    return "Il tuo post verrà inviato il " + e.scheduleDate + " alle " + e.scheduleTime;
+                o("f58b5009", function (i) {
+                    return "Il tuo post verrà inviato il " + i.scheduleDate + " alle " + i.scheduleTime;
                 }),
                 o("fa97f508", "Dopo aver inviato questi post, potrai aggiungerne altri alla discussione."),
                 o("c091760c", "La modifica non è stata salvata. Puoi procedere di nuovo all'aggiornamento oppure cestinarla e ricominciare."),
-                o("d38504ad", function (e) {
-                    return "Scegli fino a " + e.maxMediaCap + " foto, video o GIF.";
+                o("d38504ad", function (i) {
+                    return "Scegli fino a " + i.maxMediaCap + " foto, video o GIF.";
                 }),
                 o("dd6734c2", "Leggi di più"),
                 o("g589c2e2", "Scelta 1"),
@@ -2107,15 +2107,15 @@
                 o("ec10ee02", "Sondaggio"),
                 o("cce30dcc", "Tagga la posizione"),
                 o("ee016dd6", "Il caricamento di video lunghi potrebbe richiedere del tempo. Per evitare che il caricamento venga interrotto, assicurati di non chiudere la scheda del browser."),
-                o("b7d8e3f1", function (e) {
-                    return e.numberOfAltTextEntries + " descrizion" + t(e.numberOfAltTextEntries, "e", "i") + " immagine";
+                o("b7d8e3f1", function (i) {
+                    return i.numberOfAltTextEntries + " descrizion" + t(i.numberOfAltTextEntries, "e", "i") + " immagine";
                 }),
                 o("d1175c78", "Tagga persone"),
-                o("b2943227", function (e) {
+                o("b2943227", function (i) {
                     return "Carica file sottotitoli (.SRT)";
                 }),
-                o("d0afbb37", function (e) {
-                    return e.numberOfSubtitles + " file sottotitoli";
+                o("d0afbb37", function (i) {
+                    return i.numberOfSubtitles + " file sottotitoli";
                 }),
                 o("e349147c", "Che c'è di nuovo?"),
                 o("b4481d6c", "Condividi le tue opinioni..."),
@@ -2130,11 +2130,11 @@
                 o("e815fc34", "Scegli pubblico"),
                 o("cf44066a", "Circle"),
                 o("c6992b94", "Esclusiva di Premium"),
-                o("a5f7b700", function (e) {
-                    return "" + e.formattedCount;
+                o("a5f7b700", function (i) {
+                    return "" + i.formattedCount;
                 }),
-                o("a7daec1e", function (e) {
-                    return "utent" + t(e.count, "e", "i");
+                o("a7daec1e", function (i) {
+                    return "utent" + t(i.count, "e", "i");
                 }),
                 o("f0598964", "Vuoi condividere con un pubblico più ristretto?"),
                 o("e1ae1c0a", "La Circle ti consente di inviare post esclusivamente a chi scegli."),
@@ -2150,11 +2150,11 @@
                 o("g46f363e", "Consulta le regole della community prima di partecipare alla conversazione"),
                 o("f6fec9f6", "Rimuovi l'anteprima della Card"),
                 o("b2df0574", "Condividi anche con i follower"),
-                o("ccfc7453", function (e) {
-                    return "Chi ti segue e fa parte della Circle di @" + e.screenName + " può rispondere";
+                o("ccfc7453", function (i) {
+                    return "Chi ti segue e fa parte della Circle di @" + i.screenName + " può rispondere";
                 }),
-                o("d4d17205", function (e) {
-                    return "Chi fa parte della Circle di @" + e.screenName + " può rispondere";
+                o("d4d17205", function (i) {
+                    return "Chi fa parte della Circle di @" + i.screenName + " può rispondere";
                 }),
                 o("df961844", "Solo chi fa parte della tua Circle e ti segue può rispondere"),
                 o("ce958ec8", "Solo la tua Circle può rispondere"),
@@ -2169,25 +2169,25 @@
                 o("b121464a", "Solo gli account verificati possono rispondere"),
                 o("aa65a44a", "Ricorderemo la tua preferenza su questo dispositivo"),
                 o("a4993fa2", "Aggiungi una GIF"),
-                o("bfb895b1", function (e) {
-                    return "Verrà inviato " + e.date + " alle " + e.time;
+                o("bfb895b1", function (i) {
+                    return "Verrà inviato " + i.date + " alle " + i.time;
                 }),
-                o("hb36f723", function (e) {
-                    return "Solo i primi " + e.count + " caratteri saranno visibili nella cronologia.";
+                o("hb36f723", function (i) {
+                    return "Solo i primi " + i.count + " caratteri saranno visibili nella cronologia.";
                 }),
                 o("d759c09e", "prova"),
-                o("e4472565", function (e) {
-                    return "Caricamento completato (" + e.percent + "%)";
+                o("e4472565", function (i) {
+                    return "Caricamento completato (" + i.percent + "%)";
                 }),
-                o("a06fa8fd", function (e) {
-                    return "Elaborazione in corso (" + e.percent + "%)";
+                o("a06fa8fd", function (i) {
+                    return "Elaborazione in corso (" + i.percent + "%)";
                 }),
-                o("h7f340e5", function (e) {
-                    return "Caricamento in corso (" + e.percent + "%)";
+                o("h7f340e5", function (i) {
+                    return "Caricamento in corso (" + i.percent + "%)";
                 }),
                 o("daad8822", "Caricamento non riuscito"),
-                o("i8ff6261", function (e) {
-                    return "Il video supera la dimensione massima di caricamento consentita (" + e.human_readable_max_size + " GB).";
+                o("i8ff6261", function (i) {
+                    return "Il video supera la dimensione massima di caricamento consentita (" + i.human_readable_max_size + " GB).";
                 }),
                 o("cba4fdde", "Mostra contenuti in 1080p agli spettatori su X"),
                 o("ef8f5d90", "Suggeriti"),
@@ -2195,87 +2195,87 @@
                 o("acf3ecf4", "Aggiungi contenuto"),
                 o("bdbcdd94", "Aggiungi foto"),
                 o("f2c8c04d", "rendere pubblici i tuoi post"),
-                o("b50e199a", function (e) {
-                    return "" + e.userName;
+                o("b50e199a", function (i) {
+                    return "" + i.userName;
                 }),
-                o("c3033e8a", function (e) {
-                    return e.replyUserName + " e " + e.otherUserName;
+                o("c3033e8a", function (i) {
+                    return i.replyUserName + " e " + i.otherUserName;
                 }),
-                o("e50dae2a", function (e) {
-                    return e.userOneName + ", " + e.userTwoName + " e " + e.userThreeName;
+                o("e50dae2a", function (i) {
+                    return i.userOneName + ", " + i.userTwoName + " e " + i.userThreeName;
                 }),
-                o("h758cd23", function (e) {
-                    return e.userOneName + " " + e.userTwoName + " e " + t(e.othersCount, "1 altro", "altri " + e.othersCount);
+                o("h758cd23", function (i) {
+                    return i.userOneName + " " + i.userTwoName + " e " + t(i.othersCount, "1 altro", "altri " + i.othersCount);
                 }),
-                o("fba61ad6", function (e) {
-                    return "" + e.userName;
+                o("fba61ad6", function (i) {
+                    return "" + i.userName;
                 }),
-                o("ce87c872", function (e) {
-                    return e.replyUserName + " e " + e.otherUserName;
+                o("ce87c872", function (i) {
+                    return i.replyUserName + " e " + i.otherUserName;
                 }),
-                o("b45fa506", function (e) {
-                    return e.userOneName + ", " + e.userTwoName + " e " + e.userThreeName;
+                o("b45fa506", function (i) {
+                    return i.userOneName + ", " + i.userTwoName + " e " + i.userThreeName;
                 }),
-                o("b8168f25", function (e) {
-                    return ", " + e.userOneName + " " + e.userTwoName + " e " + t(e.othersCount, "1 altro", "altri " + e.othersCount);
+                o("b8168f25", function (i) {
+                    return ", " + i.userOneName + " " + i.userTwoName + " e " + t(i.othersCount, "1 altro", "altri " + i.othersCount);
                 }),
-                o("ab67a7ac", function (e) {
-                    return "" + e.userName;
+                o("ab67a7ac", function (i) {
+                    return "" + i.userName;
                 }),
                 o("g571ef41", "abbonati"),
-                o("d48d6476", function (e) {
-                    return e.replyUserName + " e " + e.otherUserName;
+                o("d48d6476", function (i) {
+                    return i.replyUserName + " e " + i.otherUserName;
                 }),
                 o("i9451241", "abbonati"),
-                o("hdf48104", function (e) {
-                    return e.userOneName + ", " + e.userTwoName + " e " + e.userThreeName;
+                o("hdf48104", function (i) {
+                    return i.userOneName + ", " + i.userTwoName + " e " + i.userThreeName;
                 }),
                 o("dcbb6a0b", "abbonati"),
-                o("ba74e38b", function (e) {
-                    return e.userOneName + " " + e.userTwoName + " e " + t(e.othersCount, "1 altro", "altri " + e.othersCount);
+                o("ba74e38b", function (i) {
+                    return i.userOneName + " " + i.userTwoName + " e " + t(i.othersCount, "1 altro", "altri " + i.othersCount);
                 }),
                 o("c65916af", "abbonati"),
-                o("g5c5ebb8", function (e) {
-                    return "" + e.userName;
+                o("g5c5ebb8", function (i) {
+                    return "" + i.userName;
                 }),
-                o("b86ff336", function (e) {
-                    return "" + e.userName;
+                o("b86ff336", function (i) {
+                    return "" + i.userName;
                 }),
-                o("e0af5609", function (e) {
-                    return e.userOneName + " e " + e.userTwoName;
+                o("e0af5609", function (i) {
+                    return i.userOneName + " e " + i.userTwoName;
                 }),
-                o("ae834d19", function (e) {
-                    return "" + e.trustedFriendsTweetOwner;
+                o("ae834d19", function (i) {
+                    return "" + i.trustedFriendsTweetOwner;
                 }),
-                o("g3d6f043", function (e) {
-                    return e.userOneName + " e " + e.userTwoName;
+                o("g3d6f043", function (i) {
+                    return i.userOneName + " e " + i.userTwoName;
                 }),
-                o("ade845a5", function (e) {
-                    return "" + e.trustedFriendsTweetOwner;
+                o("ade845a5", function (i) {
+                    return "" + i.trustedFriendsTweetOwner;
                 }),
-                o("ef5386dc", function (e) {
-                    return e.userOneName + ", " + e.userTwoName + " e " + e.userThreeName;
+                o("ef5386dc", function (i) {
+                    return i.userOneName + ", " + i.userTwoName + " e " + i.userThreeName;
                 }),
-                o("acd17e4b", function (e) {
-                    return "" + e.trustedFriendsTweetOwner;
+                o("acd17e4b", function (i) {
+                    return "" + i.trustedFriendsTweetOwner;
                 }),
-                o("g1ee3d90", function (e) {
-                    return e.userOneName + ", " + e.userTwoName + " e " + e.userThreeName;
+                o("g1ee3d90", function (i) {
+                    return i.userOneName + ", " + i.userTwoName + " e " + i.userThreeName;
                 }),
-                o("f6da070f", function (e) {
-                    return "" + e.trustedFriendsTweetOwner;
+                o("f6da070f", function (i) {
+                    return "" + i.trustedFriendsTweetOwner;
                 }),
-                o("a035ba65", function (e) {
-                    return e.userOneName + " " + e.userTwoName + " e " + t(e.othersCount, "1 altro", "altri " + e.othersCount);
+                o("a035ba65", function (i) {
+                    return i.userOneName + " " + i.userTwoName + " e " + t(i.othersCount, "1 altro", "altri " + i.othersCount);
                 }),
-                o("e4c52c45", function (e) {
-                    return "" + e.trustedFriendsTweetOwner;
+                o("e4c52c45", function (i) {
+                    return "" + i.trustedFriendsTweetOwner;
                 }),
-                o("baf2c639", function (e) {
-                    return e.userOneName + " " + e.userTwoName + " e " + t(e.othersCount, "1 altro", "altri " + e.othersCount);
+                o("baf2c639", function (i) {
+                    return i.userOneName + " " + i.userTwoName + " e " + t(i.othersCount, "1 altro", "altri " + i.othersCount);
                 }),
-                o("j8e134e5", function (e) {
-                    return "" + e.trustedFriendsTweetOwner;
+                o("j8e134e5", function (i) {
+                    return "" + i.trustedFriendsTweetOwner;
                 }),
                 o("c14cdb18", "Promuovi"),
                 o("f11264ac", "Aggiungi metodo di pagamento"),
@@ -2284,41 +2284,41 @@
                 o("fd22cfe0", "termini e condizioni di Ads"),
                 o("i3656b52", "Quanto desideri spendere?"),
                 o("h7c29de6", "Copertura stimata"),
-                o("hd435bf1", function (e) {
-                    return "Da " + e.audienceLow + " a " + e.audienceHigh + " utenti";
+                o("hd435bf1", function (i) {
+                    return "Da " + i.audienceLow + " a " + i.audienceHigh + " utenti";
                 }),
                 o("i976aff4", "Aggiorna i dettagli del budget giornaliero affinché la valuta di fatturazione corrisponda alla tua."),
                 o("e1e912f2", "Il tuo post è stato pubblicato ma non è stato possibile amplificarlo. Non riceverai l'addebito."),
                 o("fe26420a", "Aggiungi parole chiave"),
-                o("aacfbe55", function (e) {
-                    return "Stai postando per conto di @" + e.screenName + ".";
+                o("aacfbe55", function (i) {
+                    return "Stai postando per conto di @" + i.screenName + ".";
                 }),
-                o("ga8627cd", function (e) {
-                    return "Stai rispondendo per conto di @" + e.screenName + ".";
+                o("ga8627cd", function (i) {
+                    return "Stai rispondendo per conto di @" + i.screenName + ".";
                 }),
-                o("e6d2573f", function (e) {
-                    return "Stai inviando messaggi per conto di @" + e.screenName + ".";
+                o("e6d2573f", function (i) {
+                    return "Stai inviando messaggi per conto di @" + i.screenName + ".";
                 }),
-                o("d37a3e15", function (e) {
-                    return "Stai creando questa lista per conto di @" + e.screenName + ".";
+                o("d37a3e15", function (i) {
+                    return "Stai creando questa lista per conto di @" + i.screenName + ".";
                 }),
                 o("ceb1ad26", "Ecco i video scaricabili"),
                 o("ea97bc08", "Semplice download o montaggio? Adesso gli utenti di Premium possono scaricare e reimmaginare i tuoi contenuti. Se preferisci che un video non possa essere scaricato, tocca Modifica sul video. I tuoi contenuti, le tue regole."),
-                o("e6042757", function (e) {
-                    return e.minutes + " minut" + t(e.minutes, "o", "i") + " e " + e.seconds + " second" + t(e.seconds, "o", "i") + " rimanenti per la modifica del post";
+                o("e6042757", function (i) {
+                    return i.minutes + " minut" + t(i.minutes, "o", "i") + " e " + i.seconds + " second" + t(i.seconds, "o", "i") + " rimanenti per la modifica del post";
                 }),
-                o("a4e39717", function (e) {
-                    return e.minutes + " minut" + t(e.minutes, "o", "i") + " rimanenti per la modifica del post";
+                o("a4e39717", function (i) {
+                    return i.minutes + " minut" + t(i.minutes, "o", "i") + " rimanenti per la modifica del post";
                 }),
                 o("c55eed72", "In risposta a"),
                 o("caca3102", "Altri in questa conversazione"),
-                o("c6a6dc2f", function (e) {
-                    return "Hai bloccato @" + e.screenName + ", perciò questo utente non riceverà una notifica quando rispondi.";
+                o("c6a6dc2f", function (i) {
+                    return "Hai bloccato @" + i.screenName + ", perciò questo utente non riceverà una notifica quando rispondi.";
                 }),
                 o("f5b426c2", "Caricamento utenti in corso"),
                 o("c20dc654", "Puoi taggare fino a 10 utenti."),
-                o("ae0831ab", function (e) {
-                    return "Non è possibile taggare @" + e.screenName + " nelle foto";
+                o("ae0831ab", function (i) {
+                    return "Non è possibile taggare @" + i.screenName + " nelle foto";
                 }),
                 o("cca7fa72", "Il post programmato non può essere eliminato."),
                 o("c5dd0190", "Ora"),
@@ -2340,8 +2340,8 @@
                 o("f9f69d32", "Errore durante l'invio"),
                 o("j74e5dd4", "Il post a cui stai provando a rispondere è stato eliminato"),
                 o("c5ceafc8", "Risposta"),
-                o("f501ba43", function (e) {
-                    return t(e.count, e.count + " altro", "Altri " + e.count) + " post";
+                o("f501ba43", function (i) {
+                    return t(i.count, i.count + " altro", "Altri " + i.count) + " post";
                 }),
                 o("b321d0cc", "Carica immagini"),
                 o("abd649ce", "Cestina post non inviato"),
@@ -2355,31 +2355,31 @@
                 o("a893d602", "Ok"),
                 o("be6cc44e", "Cerca località"),
                 o("d8ef3232", "Impossibile recuperare le località"),
-                o("b01ed2db", function (e) {
-                    return e.distance + " mi";
+                o("b01ed2db", function (i) {
+                    return i.distance + " mi";
                 }),
-                o("i83e29e1", function (e) {
-                    return e.distance + " ft";
+                o("i83e29e1", function (i) {
+                    return i.distance + " ft";
                 }),
-                o("d4b7cff7", function (e) {
-                    return e.distance + " km";
+                o("d4b7cff7", function (i) {
+                    return i.distance + " km";
                 }),
-                o("b211849f", function (e) {
-                    return e.distance + " m";
+                o("b211849f", function (i) {
+                    return i.distance + " m";
                 }),
-                o("fd391b9f", function (e) {
-                    return "Incorpora " + e.entity;
+                o("fd391b9f", function (i) {
+                    return "Incorpora " + i.entity;
                 }),
-                o("e1618e49", function (e) {
-                    return "Hai iniziato a seguire @" + e.screenName;
+                o("e1618e49", function (i) {
+                    return "Hai iniziato a seguire @" + i.screenName;
                 }),
                 o("ge5067bc", "Nascondi risposta"),
                 o("j136c720", "Risposta nascosta dal post"),
                 o("d66f0338", "Nascondi le risposte ai tuoi post"),
                 o("cfc8cb50", "Per darti maggiore controllo sulle conversazioni che avvii, ti permettiamo di nascondere le risposte ai tuoi post."),
                 o("if8dc5f0", "Le risposte nascoste vengono trasferite in una pagina a parte che è possibile visualizzare selezionando l'icona delle risposte nascoste del post."),
-                o("b2615c6d", function (e) {
-                    return "Vuoi anche bloccare @" + e.screenName + "?";
+                o("b2615c6d", function (i) {
+                    return "Vuoi anche bloccare @" + i.screenName + "?";
                 }),
                 o("i62a03aa", "No"),
                 o("f9f27fa2", "Nascondi post"),
@@ -2427,22 +2427,22 @@
                 o("c2e276e4", "Banna autore dalla community"),
                 o("a95f04ba", "Vuoi davvero rimuovere il tag nella foto di questo post?"),
                 o("jfc76958", "Rimuovi tag dalla foto"),
-                o("j4e43d8b", function (e) {
-                    return "Segnala " + e.entity;
+                o("j4e43d8b", function (i) {
+                    return "Segnala " + i.entity;
                 }),
                 o("e3fd237e", "Segnala annuncio"),
                 o("d1e21610", "Segnala violazione NetzDG"),
-                o("d7513755", function (e) {
-                    return "Cerca i post di @" + e.screenName + " nella community";
+                o("d7513755", function (i) {
+                    return "Cerca i post di @" + i.screenName + " nella community";
                 }),
-                o("d7dbb71b", function (e) {
-                    return e.followType + " a " + e.screenName;
+                o("d7dbb71b", function (i) {
+                    return i.followType + " a " + i.screenName;
                 }),
-                o("ja66a2b5", function (e) {
-                    return "Smetti di seguire @" + e.screenName;
+                o("ja66a2b5", function (i) {
+                    return "Smetti di seguire @" + i.screenName;
                 }),
-                o("c2423b7b", function (e) {
-                    return "Hai smesso di seguire @" + e.screenName;
+                o("c2423b7b", function (i) {
+                    return "Hai smesso di seguire @" + i.screenName;
                 }),
                 o("i31dfa4c", "Ripristina visibilità risposta"),
                 o("j8e56ba2", "Visibilità della risposta ripristinata"),
@@ -2453,8 +2453,8 @@
                 o("cac6a24a", "Rimuovi post fissato"),
                 o("i642edc4", "Questo post non verrà più visualizzato in cima nella cronologia della community."),
                 o("f9478972", "Visualizza risposte nascoste"),
-                o("c5491b5d", function (e) {
-                    return "Visualizza interazioni " + e.entity;
+                o("c5491b5d", function (i) {
+                    return "Visualizza interazioni " + i.entity;
                 }),
                 o("haebcf52", "Gli altri non possono menzionarti nuovamente in questa conversazione e non riceverai ulteriori notifiche."),
                 o("c837fcaa", "Mostra altre risposte"),
@@ -2462,18 +2462,18 @@
                 o("g0b48670", "Questa conversazione contiene troppe risposte per mostrartele tutte."),
                 o("d9b417c4", "Classificato come non interessante"),
                 o("c29d6806", "Non ricevere più suggerimenti"),
-                o("ge8f3043", function (e) {
-                    return "Segui l'argomento " + e.topicName;
+                o("ge8f3043", function (i) {
+                    return "Segui l'argomento " + i.topicName;
                 }),
-                o("aa576cbf", function (e) {
-                    return "Smetti di seguire l'argomento " + e.topicName;
+                o("aa576cbf", function (i) {
+                    return "Smetti di seguire l'argomento " + i.topicName;
                 }),
-                o("i77347d1", function (e) {
-                    return "Rimuovi l'argomento " + e.topicName;
+                o("i77347d1", function (i) {
+                    return "Rimuovi l'argomento " + i.topicName;
                 }),
                 o("d69b2d90", "Questo argomento non è di tuo interesse."),
-                o("je808a17", function (e) {
-                    return "Argomento " + e.topicName;
+                o("je808a17", function (i) {
+                    return "Argomento " + i.topicName;
                 }),
                 o("ic6aa5f4", "Autenticazione eseguita."),
                 o("c02e7e3c", "Caricamento in corso..."),
@@ -2504,17 +2504,17 @@
                 o("jdfba2dc", "7 apr"),
                 o("b7c6bc12", "Da stabilire"),
                 o("c373612c", "Pronostico:"),
-                o("e8b3cab9", function (e) {
-                    return "" + e.winner;
+                o("e8b3cab9", function (i) {
+                    return "" + i.winner;
                 }),
                 o("j5db9ddd", " contro "),
-                o("a638617d", function (e) {
-                    return "" + e.loser;
+                o("a638617d", function (i) {
+                    return "" + i.loser;
                 }),
                 o("j4c40da4", "Invia ora"),
                 o("b23688c8", "Timer di annullamento"),
-                o("cca5d499", function (e) {
-                    return "Parlami a proposito di " + e.selectedText + " in 1 o 2 frasi.";
+                o("cca5d499", function (i) {
+                    return "Parlami a proposito di " + i.selectedText + " in 1 o 2 frasi.";
                 }),
                 o("d231a76a", "100.000 USD al miglior girone 🏀"),
                 o("heaba5d8", "Organizza il tuo girone di basket universitario su X. Quello perfetto vincerà un viaggio su Marte!"),
@@ -2522,11 +2522,11 @@
                 o("a0440af6", "Crea un girone"),
                 o("aaad27c8", "Autore"),
                 o("eb748f7e", "Visualizza statistiche post"),
-                o("b7cff250", function (e) {
-                    return "" + e.displayCoins;
+                o("b7cff250", function (i) {
+                    return "" + i.displayCoins;
                 }),
-                o("g62dcfbc", function (e) {
-                    return "getton" + t(e.count, "e", "i");
+                o("g62dcfbc", function (i) {
+                    return "getton" + t(i.count, "e", "i");
                 }),
                 o("be059f7e", "Raggiungi subito fino a 100.000 nuovi utenti"),
                 o("c34f845e", "Prova ad amplificare questo post"),
@@ -2552,8 +2552,8 @@
                 o("i5107de4", "Aggiorna email"),
                 o("d19fd42a", "Reinvia email di conferma"),
                 o("g4da3246", "Email inviata. Controlla la tua posta in arrivo a breve per un link di conferma."),
-                o("h021352f", function (e) {
-                    return "" + e.resendConfirmationLabel;
+                o("h021352f", function (i) {
+                    return "" + i.resendConfirmationLabel;
                 }),
                 o("d241169c", "Password attuale"),
                 o("a9bc3044", "Nuova password"),
@@ -2561,8 +2561,8 @@
                 o("b731d32c", "La password è stata aggiornata correttamente."),
                 o("d555d7e0", "La nuova password non può essere uguale a quella esistente."),
                 o("fa8af9ae", "Le password non corrispondono."),
-                o("a03f5c73", function (e) {
-                    return e.applicationCount + " applicazion" + t(e.applicationCount, "e", "i");
+                o("a03f5c73", function (i) {
+                    return i.applicationCount + " applicazion" + t(i.applicationCount, "e", "i");
                 }),
                 o("j25601d9", "Scopri di più"),
                 o("cb841d56", "Modifica numero"),
@@ -2612,8 +2612,8 @@
                 o("b496bc94", "Stiamo esaminando il tuo documento d'identità. Ti aggiorneremo tramite notifiche!\n\nUna volta ricevuta l'approvazione, riceverai l'etichetta di identità verificata sul tuo profilo, così gli altri sapranno che l'identità del tuo account è verificata."),
                 o("d8f5cce4", "Hai superato il limite di richieste per la verifica. Attendi 24 ore prima di riprovare."),
                 o("i8427a1e", "L'account non è idoneo alla verifica dell'identità. Attualmente solo gli abbonati a Premium sono idonee alla verifica dell'identità."),
-                o("cdc65e89", function (e) {
-                    return e.title + " (facoltativa)";
+                o("cdc65e89", function (i) {
+                    return i.title + " (facoltativa)";
                 }),
                 o("h05c1f28", "Verifica il tuo account fornendo un documento d'identità. In genere, servono circa 5 minuti."),
                 o("j8cfcc62", "Fornisco il mio consenso affinché X e AU10TIX possano utilizzare le immagini del mio documento d'identità e il mio selfie, inclusi i dati biometrici ricavati, per confermare la mia identità e per fini di X correlati alla sicurezza, comprese le misure per la prevenzione del furto d'identità. AU10TIX potrebbe memorizzare tali dati per un massimo di 30 giorni."),
@@ -2644,8 +2644,8 @@
                 o("b894f68a", "Caricamento dei dati per il token di sicurezza"),
                 o("g2601bb6", "Rinomina token"),
                 o("b464b726", "Elimina token"),
-                o("a4101e1b", function (e) {
-                    return "Data di aggiunta: " + e.securityKeyAddedDate;
+                o("a4101e1b", function (i) {
+                    return "Data di aggiunta: " + i.securityKeyAddedDate;
                 }),
                 o("i3bb3f78", "Codice di backup"),
                 o("ec6a76e0", "Genera un nuovo codice"),
@@ -2662,8 +2662,8 @@
                 o("j924d222", "Modifica Paese"),
                 o("e9310157", "Scopri di più"),
                 o("bd5ac12e", "Seleziona la lingua che preferisci per titoli, pulsanti e altri testi di X per questo account. Questa impostazione non ha alcun effetto sulla lingua dei contenuti mostrati nella tua cronologia."),
-                o("cef33711", function (e) {
-                    return e.languageName + " (beta)";
+                o("cef33711", function (i) {
+                    return i.languageName + " (beta)";
                 }),
                 o("b033248c", "Reperibilità"),
                 o("c69b4798", "Scegli se consentire agli utenti che hanno il tuo indirizzo email o numero di telefono di trovarti e connettersi con te su X."),
@@ -2709,42 +2709,42 @@
                 o("ede134f2", "Seleziona se i video e le GIF devono essere riprodotti automaticamente su questo dispositivo."),
                 o("b3aab6d4", "Località"),
                 o("e53e05e4", "Caricamento località in corso"),
-                o("d5c9174f", function (e) {
-                    return e.location + ", " + e.country;
+                o("d5c9174f", function (i) {
+                    return i.location + ", " + i.country;
                 }),
-                o("b47d123d", function (e) {
-                    return e.percentage + "% IN MENO";
+                o("b47d123d", function (i) {
+                    return i.percentage + "% IN MENO";
                 }),
                 o("c6614cc0", "più eventuali imposte applicabili"),
                 o("f8d3b50a", "IVA inclusa"),
-                o("i2c32253", function (e) {
-                    return e.price + " al mese";
+                o("i2c32253", function (i) {
+                    return i.price + " al mese";
                 }),
-                o("c41e1023", function (e) {
-                    return e.price + " all'anno";
+                o("c41e1023", function (i) {
+                    return i.price + " all'anno";
                 }),
-                o("i57aeafb", function (e) {
-                    return "Per i" + t(e.duration, "l primo mese", " primi " + e.duration + " mesi") + ", poi " + e.standardPrice + " con fatturazione mensile";
+                o("i57aeafb", function (i) {
+                    return "Per i" + t(i.duration, "l primo mese", " primi " + i.duration + " mesi") + ", poi " + i.standardPrice + " con fatturazione mensile";
                 }),
-                o("ae3e3723", function (e) {
-                    return "Per i" + t(e.duration, "l primo anno", " primi " + e.duration + " anni") + ", poi " + e.standardPrice + " con fatturazione annuale";
+                o("ae3e3723", function (i) {
+                    return "Per i" + t(i.duration, "l primo anno", " primi " + i.duration + " anni") + ", poi " + i.standardPrice + " con fatturazione annuale";
                 }),
-                o("ade4c757", function (e) {
-                    return "Poi " + e.price + " al mese";
+                o("ade4c757", function (i) {
+                    return "Poi " + i.price + " al mese";
                 }),
-                o("f7798e11", function (e) {
-                    return "Poi " + e.price + " all'anno";
+                o("f7798e11", function (i) {
+                    return "Poi " + i.price + " all'anno";
                 }),
                 o("e0b39888", "Fatturazione mensile"),
                 o("b67c37de", "Fatturazione annuale"),
-                o("a8363765", function (e) {
-                    return e.price + " con fatturazione annuale";
+                o("a8363765", function (i) {
+                    return i.price + " con fatturazione annuale";
                 }),
-                o("df3ed1c8", function (e) {
-                    return "" + e.standardPrice;
+                o("df3ed1c8", function (i) {
+                    return "" + i.standardPrice;
                 }),
-                o("g261b098", function (e) {
-                    return "" + e.standardPrice;
+                o("g261b098", function (i) {
+                    return "" + i.standardPrice;
                 }),
                 o("af66a072", "Ma prima, ecco a cosa rinuncerai"),
                 o("a092f1ba", "Procedi con la disdetta"),
@@ -2758,31 +2758,31 @@
                 o("faaec212", "Guadagni in base ai post"),
                 o("fb3c7168", "Cartelle di segnalibri"),
                 o("b346bc12", "Spunta"),
-                o("je8143e1", function (e) {
-                    return e.percentage + "% di sconto su X " + e.productName + " per " + t(e.duration, "1 mese", e.duration + " mesi");
+                o("je8143e1", function (i) {
+                    return i.percentage + "% di sconto su X " + i.productName + " per " + t(i.duration, "1 mese", i.duration + " mesi");
                 }),
-                o("j5847735", function (e) {
-                    return e.percentage + "% di sconto su X " + e.productName + " per " + t(e.duration, "1 anno", e.duration + " anni");
+                o("j5847735", function (i) {
+                    return i.percentage + "% di sconto su X " + i.productName + " per " + t(i.duration, "1 anno", i.duration + " anni");
                 }),
-                o("da3431f9", function (e) {
-                    return "Questo sconto è un piccolo regalo da parte nostra, qualora volessi continuare a usufruire di X " + e.productName + " per un altro po'.";
+                o("da3431f9", function (i) {
+                    return "Questo sconto è un piccolo regalo da parte nostra, qualora volessi continuare a usufruire di X " + i.productName + " per un altro po'.";
                 }),
                 o("i6fbfc72", "Offerta esclusiva e irripetibile"),
-                o("f1bc6309", function (e) {
-                    return "Potrai continuare a usufruire di tutte le funzioni di X " + e.productName;
+                o("f1bc6309", function (i) {
+                    return "Potrai continuare a usufruire di tutte le funzioni di X " + i.productName;
                 }),
                 o("fdb7b52a", "Lo sconto verrà applicato a partire dal prossimo ciclo di fatturazione."),
-                o("af283938", function (e) {
-                    return "" + e.standardPrice;
+                o("af283938", function (i) {
+                    return "" + i.standardPrice;
                 }),
-                o("c284b365", function (e) {
-                    return "" + e.discountedPrice;
+                o("c284b365", function (i) {
+                    return "" + i.discountedPrice;
                 }),
-                o("e2673372", function (e) {
-                    return "" + e.standardPrice;
+                o("e2673372", function (i) {
+                    return "" + i.standardPrice;
                 }),
-                o("jd2dc103", function (e) {
-                    return "" + e.discountedPrice;
+                o("jd2dc103", function (i) {
+                    return "" + i.discountedPrice;
                 }),
                 o("c6150942", "Tutto fatto"),
                 o("a905eac6", "Esplora Premium"),
@@ -2792,31 +2792,31 @@
                 o("f5b352ec", "Disdici abbonamento"),
                 o("j317d958", "Attenzione! Perderai il tuo sconto in sospeso"),
                 o("a46e42d2", "Mantieni il mio abbonamento"),
-                o("e122fb3f", function (e) {
-                    return "La prova gratuità terminerà il giorno " + e.endDate + ".";
+                o("e122fb3f", function (i) {
+                    return "La prova gratuità terminerà il giorno " + i.endDate + ".";
                 }),
                 o("be103b84", "Attiva"),
                 o("ace43720", "In scadenza"),
                 o("c8f18aa4", "Disponi di Premium+ in quanto hai un abbonamento a Organizzazioni verificate."),
-                o("a341d1f7", function (e) {
-                    return "Disponi di Premium+ in quanto la tua organizzazione è abbonata a Organizzazioni verificate tramite @" + e.organization + ". Per ulteriori dettagli, contatta la tua organizzazione.";
+                o("a341d1f7", function (i) {
+                    return "Disponi di Premium+ in quanto la tua organizzazione è abbonata a Organizzazioni verificate tramite @" + i.organization + ". Per ulteriori dettagli, contatta la tua organizzazione.";
                 }),
                 o("e4aaf0f8", "Per disdire il tuo abbonamento a Premium omaggio, contatta l'assistenza"),
                 o("e5170220", "Questo account ha ricevuto un abbonamento omaggio a Premium per via della spesa pubblicitaria."),
                 o("j6d6b66e", "Questo account ha ricevuto un abbonamento in regalo. Per disdire l'abbonamento, contatta l'assistenza."),
-                o("fae1751f", function (e) {
-                    return "Ci risulta che l'abbonamento sia stato acquistato dall'app X per " + e.mobilePlatform + ". Devi gestire o disdire l'abbonamento da lì.";
+                o("fae1751f", function (i) {
+                    return "Ci risulta che l'abbonamento sia stato acquistato dall'app X per " + i.mobilePlatform + ". Devi gestire o disdire l'abbonamento da lì.";
                 }),
                 o("fecebd4c", "qui"),
                 o("h201c4c2", "iOS"),
                 o("i8385a2c", "Android"),
                 o("h80834de", "altro"),
                 o("baf97716", "Le funzioni resteranno disponibili fino alla fine del periodo di fatturazione."),
-                o("ae864b69", function (e) {
-                    return "Passerai al piano di abbonamento " + e.tierName + " dal prossimo ciclo di fatturazione, che inizia il giorno " + e.date;
+                o("ae864b69", function (i) {
+                    return "Passerai al piano di abbonamento " + i.tierName + " dal prossimo ciclo di fatturazione, che inizia il giorno " + i.date;
                 }),
-                o("edbb700f", function (e) {
-                    return "A partire dal prossimo ciclo di fatturazione con data " + e.date;
+                o("edbb700f", function (i) {
+                    return "A partire dal prossimo ciclo di fatturazione con data " + i.date;
                 }),
                 o("e9884540", "Sconto attivo"),
                 o("bfb879aa", "Sconto in sospeso"),
@@ -2852,11 +2852,11 @@
                 o("e1f76978", "Modifica il profilo professionale"),
                 o("ic04a6f6", "L'azione non potrà essere annullata e perderai le modifiche."),
                 o("addbe8e8", "Valuta l'idea di utilizzare un nome senza caratteri speciali affinché sia accessibile a un numero maggiore di persone, tra cui persone non vedenti e ipovedenti."),
-                o("a46f80ab", function (e) {
-                    return "Data di nascita: " + e.birthdate;
+                o("a46f80ab", function (i) {
+                    return "Data di nascita: " + i.birthdate;
                 }),
-                o("c7905f89", function (e) {
-                    return "Del " + e.year;
+                o("c7905f89", function (i) {
+                    return "Del " + i.year;
                 }),
                 o("bfe8d1a2", "Modifica bio dettagliata"),
                 o("e1ec926e", "Crea bio dettagliata"),
@@ -2890,32 +2890,32 @@
                 o("g3f251f2", "Trasmissione privata"),
                 o("d08666ba", "Spazio privato"),
                 o("eadb5a46", "Sii tra i primi a unirti allo"),
-                o("f9629a8f", function (e) {
-                    return "Trasmissione di " + e.hostName;
+                o("f9629a8f", function (i) {
+                    return "Trasmissione di " + i.hostName;
                 }),
-                o("ia3c0ab7", function (e) {
-                    return "spazio di " + e.hostName;
+                o("ia3c0ab7", function (i) {
+                    return "spazio di " + i.hostName;
                 }),
-                o("hd552761", function (e) {
-                    return "Ospitato da " + e.hostName;
+                o("hd552761", function (i) {
+                    return "Ospitato da " + i.hostName;
                 }),
-                o("c3ea19a5", function (e) {
-                    return e.index + " di " + e.total;
+                o("c3ea19a5", function (i) {
+                    return i.index + " di " + i.total;
                 }),
-                o("a5235305", function (e) {
-                    return "In " + e.listOfPeople + " qui";
+                o("a5235305", function (i) {
+                    return "In " + i.listOfPeople + " qui";
                 }),
-                o("df9f8243", function (e) {
-                    return e.name + " sta ascoltando";
+                o("df9f8243", function (i) {
+                    return i.name + " sta ascoltando";
                 }),
-                o("g2445c2f", function (e) {
-                    return e.name + " sta parlando";
+                o("g2445c2f", function (i) {
+                    return i.name + " sta parlando";
                 }),
-                o("fcfd5a67", function (e) {
-                    return e.name + " sta ospitando";
+                o("fcfd5a67", function (i) {
+                    return i.name + " sta ospitando";
                 }),
-                o("f7882829", function (e) {
-                    return e.name + " sta coospitando";
+                o("f7882829", function (i) {
+                    return i.name + " sta coospitando";
                 }),
                 o("d961a4a0", "In diretta su X"),
                 o("g2c0144a", "Organizzazioni verificate"),
@@ -2930,13 +2930,13 @@
                 o("ed4759a6", "Riceverai l'esito della tua richiesta entro qualche giorno. Se ci serviranno ulteriori informazioni, ti contatteremo via email."),
                 o("dad69faa", "Aggiorna il tuo metodo di pagamento"),
                 o("daf3248a", "Richiesta da completare"),
-                o("eb71036f", function (e) {
-                    return "Carica e verifica i documenti dell'organizzazione entro la seguente data: " + e.date;
+                o("eb71036f", function (i) {
+                    return "Carica e verifica i documenti dell'organizzazione entro la seguente data: " + i.date;
                 }),
                 o("a1d3f1f2", "Collaboriamo con Persona al fine di verificare i documenti personali e aziendali per fini di X correlati alla sicurezza. Persona potrebbe conservare i tuoi dati fino a un massimo di 30 giorni."),
                 o("ea8c295a", "Avvia verifica documenti"),
-                o("da1aa48f", function (e) {
-                    return "La verifica rafforza la tua credibilità e aumenta la visibilità che ti viene data, come @" + e.screenName + ".";
+                o("da1aa48f", function (i) {
+                    return "La verifica rafforza la tua credibilità e aumenta la visibilità che ti viene data, come @" + i.screenName + ".";
                 }),
                 o("e4a7a968", "Non disponi della verifica (per ora)"),
                 o("id9c1e82", "Questo profilo è verificato"),
@@ -2964,14 +2964,14 @@
                 o("d83f18d2", "Elenco"),
                 o("hc5aa17c", "Scarica l'app X"),
                 o("j0693948", "Scarica l'app Grok"),
-                o("af781666", "What do people think?"),
+                o("af781666", "Cosa pensano gli altri?"),
                 o("ad35153e", "beta");
             o("fbf83158", "Avviso: pagamento non riuscito"),
                 o("jadeb4da", "Aggiorna al più presto il metodo di pagamento prima di perdere i benefici dell'abbonamento."),
                 o("bce3726a", "Aggiorna la fatturazione"),
                 o("fce9ecce", "Video suggeriti"),
-                o("dc954b88", "Try the full news experience"),
-                o("j66b95a2", "In-Depth News"),
+                o("dc954b88", "Prova l'esperienza di cronaca completa"),
+                o("j66b95a2", "Cronaca dettagliata"),
                 o("b58d2bd2", "Post pertinenti"),
                 o("efe6ef9e", "Visualizza post"),
                 o("b3d183ce", "Post con risposte"),
@@ -2989,11 +2989,11 @@
                 o("b2311b70", "Contenuto non disponibile per te"),
                 o("j88f27d8", "Persone pertinenti"),
                 o("i31dcd22", "Articolo"),
-                o("e3de2f6f", function (e) {
-                    return "Salvataggio " + e.entity + " nei segnalibri eseguito";
+                o("e3de2f6f", function (i) {
+                    return "Salvataggio " + i.entity + " nei segnalibri eseguito";
                 }),
-                o("e64de8a9", function (e) {
-                    return "Rimozione " + e.entity + " dai segnalibri eseguita";
+                o("e64de8a9", function (i) {
+                    return "Rimozione " + i.entity + " dai segnalibri eseguita";
                 }),
                 o("d6d9aab6", "Aggiungi segnalibro"),
                 o("bb89cf46", "Rimuovi segnalibro"),
@@ -3002,11 +3002,11 @@
                 o("ac85c6b2", "Si è verificato un errore durante il caricamento di questa immagine"),
                 o("b327c12a", "Immagine"),
                 o("ic76bdf0", "Ricrea con Grok"),
-                o("a4d3eb67", function (e) {
-                    return e.fullName + ' su X: "' + e.tweetText + '"';
+                o("a4d3eb67", function (i) {
+                    return i.fullName + ' su X: "' + i.tweetText + '"';
                 }),
-                o("f0701753", function (e) {
-                    return "Nascondi per " + e.number + " giorni";
+                o("f0701753", function (i) {
+                    return "Nascondi per " + i.number + " giorni";
                 }),
                 o("j7d0e836", "Espandi"),
                 o("d227d19e", "Riduci"),
@@ -3019,16 +3019,16 @@
                 o("a1c93d74", "Stiamo riscontrando problemi con il salvataggio delle modifiche. Riprova più tardi."),
                 o("b956c04a", "Vuoi davvero eliminare la bio dettagliata?"),
                 o("ifb23caa", "Una volta eliminata, la bio dettagliata verrà rimossa dal tuo profilo."),
-                o("c2333081", function (e) {
-                    return e.count + " caratter" + t(e.count, "e", "i");
+                o("c2333081", function (i) {
+                    return i.count + " caratter" + t(i.count, "e", "i");
                 }),
                 o("a2b8c54c", "Eliminata"),
                 o("a9cc8f96", "Hai superato il limite di caratteri"),
-                o("eb7710f1", function (e) {
-                    return e.years + " ann" + t(e.years, "o", "i");
+                o("eb7710f1", function (i) {
+                    return i.years + " ann" + t(i.years, "o", "i");
                 }),
-                o("bfc38bb5", function (e) {
-                    return e.months + " mes" + t(e.months, "e", "i");
+                o("bfc38bb5", function (i) {
+                    return i.months + " mes" + t(i.months, "e", "i");
                 }),
                 o("h6a724ac", "Vuoi davvero procedere all'eliminazione?"),
                 o("f94aacae", "L'operazione rimuoverà questo elemento dal tuo profilo."),
@@ -3050,8 +3050,8 @@
                 o("debb6abe", "La data di inizio non può essere futura"),
                 o("j7d08ada", "La data di fine non può essere futura"),
                 o("a8c7d3fc", "La data di fine deve essere successiva a quella di inizio"),
-                o("b335d507", function (e) {
-                    return "Il limite massimo di caratteri è stato superato di " + e.maxChars;
+                o("b335d507", function (i) {
+                    return "Il limite massimo di caratteri è stato superato di " + i.maxChars;
                 }),
                 o("j29ab120", "Silenzia notifiche da chi:"),
                 o("jdfc82f6", "Non segui"),
@@ -3112,19 +3112,19 @@
                 o("cc7bedfc", 'Puoi modificare il lasso di tempo in cui questa parola viene silenziata. Se in precedenza hai selezionato "Per sempre", il nuovo periodo di tempo verrà applicato da subito.'),
                 o("d768049c", "Aggiungi parola o frase silenziata"),
                 o("c6203da8", "Opzioni per le parole silenziate"),
-                o("e3f0d3db", function (e) {
-                    return '"' + e.keyword + '" è stata silenziata';
+                o("e3f0d3db", function (i) {
+                    return '"' + i.keyword + '" è stata silenziata';
                 }),
-                o("h5746cf7", function (e) {
-                    return '"' + e.keyword + '" aggiornata';
+                o("h5746cf7", function (i) {
+                    return '"' + i.keyword + '" aggiornata';
                 }),
                 o("d2693eb8", "Assicurati che la frase silenziata non sia formata da più di 140 caratteri."),
                 o("f8488024", "Questa è una parola piuttosto comune che viene usata in numerosi post, ma puoi silenziarla se lo desideri."),
                 o("deb4924d", "Scopri di più"),
                 o("aa09e528", "Aggiungi parole silenziate"),
                 o("e506aa92", "Aggiungi parola o frase da silenziare"),
-                o("cbd04965", function (e) {
-                    return '"' + e.keyword + '" è stata riattivata';
+                o("cbd04965", function (i) {
+                    return '"' + i.keyword + '" è stata riattivata';
                 }),
                 o("eb4e810a", "Scaduta"),
                 o("cabeb6c2", "Per sempre"),
@@ -3136,11 +3136,11 @@
                 o("bcf6ad9a", "I post degli account silenziati non appariranno nella tua cronologia principale. Silenzia gli account direttamente dal loro profilo o post."),
                 o("b8e49590", "Quando silenzi un account, i relativi messaggi vengono filtrati e spostati in fondo all'elenco delle richieste di messaggi."),
                 o("ec202165", "Scopri di più"),
-                o("gde6b425", function (e) {
-                    return "L'account " + e.name + " è stato silenziato";
+                o("gde6b425", function (i) {
+                    return "L'account " + i.name + " è stato silenziato";
                 }),
-                o("e308019b", function (e) {
-                    return "L'account " + e.name + " è stato riattivato";
+                o("e308019b", function (i) {
+                    return "L'account " + i.name + " è stato riattivato";
                 }),
                 o("hfb77cf6", "Sicurezza"),
                 o("f350f0c0", "Suggerimenti"),
@@ -3159,14 +3159,14 @@
                 o("b9c91524", "In futuro non riceverai inviti per altre deleghe. Le tue deleghe esistenti saranno preservate."),
                 o("c349b958", "Invita un membro"),
                 o("e177f72a", "Invita terzi a fare le veci del tuo account e gestire i suoi ruoli. I membri possono inviare Messaggi Diretti, pubblicare post e creare liste, nonché procedere alla loro visualizzazione."),
-                o("cd5c5e73", function (e) {
-                    return "Puoi avere un massimo di " + e.numDelegatesLabel + " delegat" + t(e.numDelegates, "o", "i");
+                o("cd5c5e73", function (i) {
+                    return "Puoi avere un massimo di " + i.numDelegatesLabel + " delegat" + t(i.numDelegates, "o", "i");
                 }),
                 o("efee0a50", "Invita un membro in questo account"),
                 o("ja0a1aa6", "Invita un collaboratore in questo account"),
                 o("db4f623a", "Assegna un ruolo a questo membro"),
-                o("be7350e3", function (e) {
-                    return "Vuoi rendere @" + e.screenName + " amministratore?";
+                o("be7350e3", function (i) {
+                    return "Vuoi rendere @" + i.screenName + " amministratore?";
                 }),
                 o("b7aa7642", "Invito spedito"),
                 o("edbca224", "Manda invito"),
@@ -3175,8 +3175,8 @@
                 o("d4b3abde", "I collaboratori possono inviare Messaggi Diretti, pubblicare post e creare liste, nonché visualizzare i Messaggi Diretti, i post e le liste dell'account."),
                 o("b92e2700", "Gli amministratori hanno gli stessi permessi dei collaboratori e possono anche invitare collaboratori o rimuoverli, nonché visualizzare le statistiche post."),
                 o("hbbbf908", "Gli amministratori possono invitare altri collaboratori in questo account e visualizzare le statistiche post. Ricontrolla di aver assegnato il ruolo all'utente corretto."),
-                o("d8eda249", function (e) {
-                    return "Non appena @" + e.screenName + " accetterà il suo invito, potrà contribuire a questo account tramite i suoi permessi aggiornati.";
+                o("d8eda249", function (i) {
+                    return "Non appena @" + i.screenName + " accetterà il suo invito, potrà contribuire a questo account tramite i suoi permessi aggiornati.";
                 }),
                 o("b5faf216", "Questo membro non accetta inviti come delegato."),
                 o("hcc3b4ce", "Il tuo account ha bloccato questo membro."),
@@ -3189,8 +3189,8 @@
                 o("e4133790", "Ruolo aggiornato"),
                 o("a1a27c26", "Modifica ruolo"),
                 o("fd7b1b1c", "Torna indietro"),
-                o("ec67d021", function (e) {
-                    return "Attraverso i suoi nuovi permessi, @" + e.screenName + " può fare le veci di questo account.";
+                o("ec67d021", function (i) {
+                    return "Attraverso i suoi nuovi permessi, @" + i.screenName + " può fare le veci di questo account.";
                 }),
                 o("h502484e", "Invito in sospeso"),
                 o("a171ca7c", "Annulla invito per il membro"),
@@ -3199,17 +3199,17 @@
                 o("gca83d6a", "Non sarà più amministratore di questo account."),
                 o("b8cac21c", "Non sarà più collaboratore di questo account."),
                 o("hd67c2e8", "Annulla invito"),
-                o("f0bd8ca9", function (e) {
-                    return "Vuoi rimuovere @" + e.screenName + "?";
+                o("f0bd8ca9", function (i) {
+                    return "Vuoi rimuovere @" + i.screenName + "?";
                 }),
-                o("a33eba47", function (e) {
-                    return "Vuoi annullare l'invito per @" + e.screenName + "?";
+                o("a33eba47", function (i) {
+                    return "Vuoi annullare l'invito per @" + i.screenName + "?";
                 }),
-                o("d472c9eb", function (e) {
-                    return "Rimozione di @" + e.screenName + " dal gruppo avvenuta correttamente";
+                o("d472c9eb", function (i) {
+                    return "Rimozione di @" + i.screenName + " dal gruppo avvenuta correttamente";
                 }),
-                o("h5951997", function (e) {
-                    return "L'invito per @" + e.screenName + " è stato annullato";
+                o("h5951997", function (i) {
+                    return "L'invito per @" + i.screenName + " è stato annullato";
                 }),
                 o("a44c6034", "Inviti in sospeso"),
                 o("e39bc936", "In quanto membro, puoi inviare Messaggi Diretti, pubblicare post e creare liste, nonché procedere alla loro visualizzazione. Gli amministratori possono anche invitare collaboratori nell'account o rimuoverli e visualizzare le statistiche post."),
@@ -3220,23 +3220,23 @@
                 o("bfbe9620", "Visualizza membri"),
                 o("d52a2b36", "Non sarai più amministratore di questo account."),
                 o("df515932", "Non sarai più collaboratore di questo account."),
-                o("cd00ea21", function (e) {
-                    return "Vuoi abbandonare @" + e.screenName + "?";
+                o("cd00ea21", function (i) {
+                    return "Vuoi abbandonare @" + i.screenName + "?";
                 }),
-                o("efa88ab1", function (e) {
-                    return "Hai abbandonato @" + e.screenName;
+                o("efa88ab1", function (i) {
+                    return "Hai abbandonato @" + i.screenName;
                 }),
                 o("c6dae164", "Accetta invito"),
                 o("f8376170", "Rifiuta invito"),
                 o("a68c45e4", "Rifiuta"),
-                o("aa35b48d", function (e) {
-                    return "Vuoi rifiutare l'invito di @" + e.screenName + "?";
+                o("aa35b48d", function (i) {
+                    return "Vuoi rifiutare l'invito di @" + i.screenName + "?";
                 }),
-                o("ed2a4b05", function (e) {
-                    return "Hai respinto l'invito per diventare membro di @" + e.screenName;
+                o("ed2a4b05", function (i) {
+                    return "Hai respinto l'invito per diventare membro di @" + i.screenName;
                 }),
-                o("e73f9635", function (e) {
-                    return "Hai accettato l'invito per diventare membro di @" + e.screenName;
+                o("e73f9635", function (i) {
+                    return "Hai accettato l'invito per diventare membro di @" + i.screenName;
                 }),
                 o("d2da668c", "Delega membri"),
                 o("ddf27b8e", "Invita un collaboratore"),
@@ -3244,8 +3244,8 @@
                 o("af59527e", "Visualizza i ruoli dei membri per l'account e invitali come collaboratori. I membri possono inviare Messaggi Diretti, pubblicare post e creare liste, nonché procedere alla loro visualizzazione."),
                 o("eafcc76a", "Cose che può vedere questa app..."),
                 o("j3998a16", "Cose che può fare questa app..."),
-                o("a6845663", function (e) {
-                    return "Hai approvato questi permessi dell'app il " + e.date;
+                o("a6845663", function (i) {
+                    return "Hai approvato questi permessi dell'app il " + i.date;
                 }),
                 o("b2347f7c", "Caricamento dati app in corso"),
                 o("e1fda16e", "Questa app non è collegata"),
@@ -3259,8 +3259,8 @@
                 o("e0191264", "Leggere, creare e gestire i tuoi dati pubblicitari"),
                 o("b73e1e8a", "Scopri come revocare l'accesso"),
                 o("c174e46e", "Mostra meno"),
-                o("a39075ff", function (e) {
-                    return e.n + " in più";
+                o("a39075ff", function (i) {
+                    return i.n + " in più";
                 }),
                 o("da6cdba8", "Revoca permessi dell'app"),
                 o("ef1d3dcc", "Segnala applicazione"),
@@ -3304,8 +3304,8 @@
                 o("acf63cd2", "Seleziona la dimensione del testo che preferisci per leggere le discussioni. Attiva la funzione Aggregatore da qualsiasi post di una discussione selezionando il pulsante a forma di libro."),
                 o("e5fff0c8", "Il tuo abbonamento è attivo."),
                 o("ac057b4e", "Per disdire il tuo abbonamento omaggio per l'interazione su X, contatta l'assistenza"),
-                o("ib8ebf3b", function (e) {
-                    return "Ci risulta che l'abbonamento sia stato acquistato da un dispositivo " + e.mobilePlatform + ". Devi gestire o disdire l'abbonamento da tale piattaforma.";
+                o("ib8ebf3b", function (i) {
+                    return "Ci risulta che l'abbonamento sia stato acquistato da un dispositivo " + i.mobilePlatform + ". Devi gestire o disdire l'abbonamento da tale piattaforma.";
                 }),
                 o("i8132774", "Contenuti bonus per i tuoi follower più partecipi"),
                 o("a1222584", "Genera guadagni direttamente dai tuoi contenuti"),
@@ -3366,8 +3366,8 @@
                 o("ca516a66", "Visualizza tutte le attività"),
                 o("ee9ea930", "Diamanti"),
                 o("cf3b535e", "I diamanti vengono accumulati quando ricevi gettoni sui post idonei. I guadagni provenienti dai diamanti che vengono aggiunti alla stima del tuo ricavato."),
-                o("fbb7764b", function (e) {
-                    return e.count + " getton" + t(e.count, "e", "i");
+                o("fbb7764b", function (i) {
+                    return i.count + " getton" + t(i.count, "e", "i");
                 }),
                 o("e70a07b2", "Anonimo"),
                 o("c76972f0", "Dall'ultimo versamento"),
@@ -3387,8 +3387,8 @@
                 o("d59dbf8a", "Riepilogo"),
                 o("g652fc4c", "Non è presente alcuna cronologia versamenti per il mese corrente."),
                 o("d55e017a", "Nel mese corrente"),
-                o("f883322d", function (e) {
-                    return "ID transazione " + e.transactionId;
+                o("f883322d", function (i) {
+                    return "ID transazione " + i.transactionId;
                 }),
                 o("d978f43e", "Nuovi abbonamenti"),
                 o("d113fc10", "Attualmente non hai nuovi abbonamenti."),
@@ -3409,8 +3409,8 @@
                 o("e261e6e6", "Procedendo alla disattivazione, ti rimuoveremo dal programma relativo agli abbonamenti e perderai tutti i tuoi abbonati."),
                 o("ca5ca5ee", "Visualizza anteprima"),
                 o("a329ce88", "Aggiungi una descrizione..."),
-                o("f0c99eff", function (e) {
-                    return "- @" + e.screenName;
+                o("f0c99eff", function (i) {
+                    return "- @" + i.screenName;
                 }),
                 o("g40b2b30", "Abilita anteprime post"),
                 o("c1521804", "Le anteprime dei tuoi post per abbonati verranno mostrate a chi non dispone di un abbonamento."),
@@ -3418,8 +3418,8 @@
                 o("c6c27fc8", "La disattivazione degli abbonamenti è definitiva. Ti rimuoveremo dal programma relativo agli abbonamenti e per parteciparvi nuovamente dovrai inviare una nuova richiesta."),
                 o("f82a23ec", "Hai disattivato gli abbonamenti"),
                 o("a4c6e458", "La tariffa di abbonamento mensile che hai indicato è:"),
-                o("be54a313", function (e) {
-                    return e.price + " al mese";
+                o("be54a313", function (i) {
+                    return i.price + " al mese";
                 }),
                 o("hadd463a", "Richiedi modifica del prezzo"),
                 o("b0728b5c", "Annulla modifica del prezzo"),
@@ -3468,13 +3468,13 @@
                 o("d92c1d0a", "Procedi alla richiesta"),
                 o("fde27650", "termini per il programma relativo agli abbonamenti"),
                 o("c5f89b06", "Ottieni la verifica abbondandoti a Premium"),
-                o("ff9f4475", function (e) {
-                    return e.minFollowersCount + " follower verificati";
+                o("ff9f4475", function (i) {
+                    return i.minFollowersCount + " follower verificati";
                 }),
                 o("b747ce3a", "Account attivo negli ultimi 30 giorni"),
                 o("c27f57ac", "Avere almeno 18 anni"),
-                o("h63d2973", function (e) {
-                    return e.count + " visualizzazioni organiche negli ultimi 3 mesi";
+                o("h63d2973", function (i) {
+                    return i.count + " visualizzazioni organiche negli ultimi 3 mesi";
                 }),
                 o("ef606fca", "Abbonamenti a pagamento per i tuoi follower più attivi e partecipi"),
                 o("e533715e", "Verifica idoneità"),
@@ -3496,8 +3496,8 @@
                 o("f98e5fd4", "Crei contenuti a pagamento su altre piattaforme? Perché credi che gli utenti si abboneranno?"),
                 o("c41b01be", "Aggiungi una spiegazione"),
                 o("e2aad0fe", "Non posterò contenuti espliciti o per adulti riservati agli abbonati"),
-                o("d1b983ef", function (e) {
-                    return "Deve avere una lunghezza minima di " + e.count + " caratteri";
+                o("d1b983ef", function (i) {
+                    return "Deve avere una lunghezza minima di " + i.count + " caratteri";
                 }),
                 o("d3d6c52c", "La tua richiesta è stata inviata"),
                 o("cb27c0ba", "Il prezzo da te indicato è stato approvato. La tua richiesta verrà esaminata e, se riceverai l'approvazione, ti invieremo una notifica non appena tutto sarà pronto."),
@@ -3519,14 +3519,14 @@
                 o("be76dc34", "Aggiungi descrizione"),
                 o("ef5406e4", "Aggiungi introduzione"),
                 o("ea8a3d2e", "Assegnazione prezzo"),
-                o("f77bb179", function (e) {
-                    return "Conferma la scelta da " + e.price;
+                o("f77bb179", function (i) {
+                    return "Conferma la scelta da " + i.price;
                 }),
                 o("g2a6f160", "Ricontrolla e conferma il prezzo di abbonamento. Una volta impostato, non potrai tornare qui e cambiarlo."),
                 o("g767d1c9", "Nota: non potrai cambiarlo"),
                 o("df057690", "Scegli quanto far pagare ai tuoi abbonati"),
-                o("g5923869", function (e) {
-                    return e.price + " al mese";
+                o("g5923869", function (i) {
+                    return i.price + " al mese";
                 }),
                 o("f025ab3a", "Creazione di un seguito più grande"),
                 o("c962df0e", "Pubblicazione e interazione con gli abbonati in modo poco frequente"),
@@ -3534,8 +3534,8 @@
                 o("fc04f3a6", "Pubblicazione e interazione con gli abbonati a cadenza moderata"),
                 o("c246656e", "Creazione di un piccolo seguito di privilegiati"),
                 o("h0c5405c", "Pubblicazione e interazione con gli abbonati a cadenza regolare"),
-                o("f2d2153d", function (e) {
-                    return "La maggior parte dei creator indica " + e.price + " come prezzo, ma l'importo è a tua completa discrezione";
+                o("f2d2153d", function (i) {
+                    return "La maggior parte dei creator indica " + i.price + " come prezzo, ma l'importo è a tua completa discrezione";
                 }),
                 o("f1cb36b8", "Configurazione versamenti"),
                 o("e20f6662", "Tutto fatto!"),
@@ -3584,8 +3584,8 @@
                 o("bf214f48", "Ok"),
                 o("b2b4d592", "Abbonati a Organizzazioni verificate o Premium"),
                 o("fbb03ba6", "500 follower con Premium"),
-                o("hb4c5169", function (e) {
-                    return "Avere almeno " + e.impression_number + " milioni di visualizzazioni per i tuoi post negli ultimi 3 mesi";
+                o("hb4c5169", function (i) {
+                    return "Avere almeno " + i.impression_number + " milioni di visualizzazioni per i tuoi post negli ultimi 3 mesi";
                 }),
                 o("f91685ba", "Disponi automaticamente dell'idoneità per guadagnare dai tuoi post."),
                 o("a9f0e0fa", "Poiché disponi di un abbonamento a Organizzazioni verificate o Premium, disponi automaticamente dell'idoneità per la ripartizione del ricavato pubblicitario. I tuoi versamenti sono basati sul numero di visualizzazioni verificate degli annunci inclusi nelle risposte ai tuoi post."),
@@ -3597,8 +3597,8 @@
                 o("a249ce04", "termini per la ripartizione del ricavato pubblicitario"),
                 o("d085a144", "Dashboard dei guadagni per creator"),
                 o("a5204850", "Totale ricavato"),
-                o("ada650cf", function (e) {
-                    return "Periodo di pagamento: tra " + e.fromDate + " e " + e.toDate;
+                o("ada650cf", function (i) {
+                    return "Periodo di pagamento: tra " + i.fromDate + " e " + i.toDate;
                 }),
                 o("aa732c0a", "Ripartizione del ricavato generato dagli annunci video"),
                 o("g88c1108", "Informazioni sulla ripartizione del ricavato generato dagli annunci video"),
@@ -3705,47 +3705,47 @@
                 o("cf0daa24", "Potrebbe volerci un po' per raccogliere queste informazioni. Riprova più tardi."),
                 o("ea522535", "Scopri di più"),
                 o("hf5ca8f8", "profilo"),
-                o("d9cbe351", function (e) {
-                    return e.count + " event" + t(e.count, "o", "i") + " di accesso";
+                o("d9cbe351", function (i) {
+                    return i.count + " event" + t(i.count, "o", "i") + " di accesso";
                 }),
                 o("de90b04a", "Posti visitati"),
-                o("cbd2ef59", function (e) {
-                    return e.count + " località";
+                o("cbd2ef59", function (i) {
+                    return i.count + " località";
                 }),
                 o("a4441bb8", "Interessi da X"),
                 o("e1c6b2d6", "Tailored audience"),
-                o("ed19d10d", function (e) {
-                    return e.audienceCount + " " + t(e.audienceCount, "", "segmenti di ") + "pubblico di " + e.advertiserCount + " inserzionist" + t(e.advertiserCount, "a", "i");
+                o("ed19d10d", function (i) {
+                    return i.audienceCount + " " + t(i.audienceCount, "", "segmenti di ") + "pubblico di " + i.advertiserCount + " inserzionist" + t(i.advertiserCount, "a", "i");
                 }),
-                o("f00d0d03", function (e) {
-                    return e.count + " interess" + t(e.count, "e", "i");
+                o("f00d0d03", function (i) {
+                    return i.count + " interess" + t(i.count, "e", "i");
                 }),
                 o("hf9c2caa", "Vuoi richiedere la lista inserzionisti?"),
-                o("c29b7971", function (e) {
-                    return "L'invio verrà effettuato a " + e.primaryEmail + ".";
+                o("c29b7971", function (i) {
+                    return "L'invio verrà effettuato a " + i.primaryEmail + ".";
                 }),
                 o("b9e1cf02", "Richiedi"),
                 o("a8276fac", "Richiedi lista inserzionisti"),
                 o("g7912a84", "Ricevuto. Ti manderemo la lista via email non appena sarà pronta."),
                 o("d6104de0", "Puoi disattivare la pubblicità basata sugli interessi nelle impostazioni relative a personalizzazione e dati. In questo modo cambieranno gli annunci che vedi su X, però resterai nei segmenti di pubblico degli inserzionisti."),
                 o("ed8c03f5", "Scopri di più"),
-                o("e1a4daac", function (e) {
-                    return e.num_audiences + " segmenti di pubblico";
+                o("e1a4daac", function (i) {
+                    return i.num_audiences + " segmenti di pubblico";
                 }),
-                o("acb25e32", function (e) {
-                    return e.num_advertisers + " inserzionisti";
+                o("acb25e32", function (i) {
+                    return i.num_advertisers + " inserzionisti";
                 }),
                 o("j4fa776e", "Telefoni"),
                 o("i7acdb36", "Tablet"),
                 o("c112dfc8", "Desktop"),
                 o("jd8607ba", "Attivato il"),
                 o("ea4f6c9e", "Browser"),
-                o("d750b93f", function (e) {
-                    return e.count + " browser";
+                o("d750b93f", function (i) {
+                    return i.count + " browser";
                 }),
                 o("a9783602", "Dispositivi mobili"),
-                o("j043aa31", function (e) {
-                    return e.count + " dispositiv" + t(e.count, "o mobile", "i mobili");
+                o("j043aa31", function (i) {
+                    return i.count + " dispositiv" + t(i.count, "o mobile", "i mobili");
                 }),
                 o("ae415fd2", "Questa opzione è disabilitata."),
                 o("a90be7b4", "Indirizzi email"),
@@ -3775,8 +3775,8 @@
                 o("e5a4a539", "Scopri di più"),
                 o("gc8f2e14", "Puoi disattivare la pubblicità basata sugli interessi nelle impostazioni relative a personalizzazione e dati."),
                 o("e6dbe66b", "Scopri di più"),
-                o("d3310e49", function (e) {
-                    return "Invieremo un file con tutte le informazioni associate al tuo account all'indirizzo " + e.primaryEmail + ".";
+                o("d3310e49", function (i) {
+                    return "Invieremo un file con tutte le informazioni associate al tuo account all'indirizzo " + i.primaryEmail + ".";
                 }),
                 o("ib03e8c8", "Vuoi scaricare su questo dispositivo un file con tutte le informazioni associate al tuo account?"),
                 o("g49741e8", "Scarica"),
@@ -3811,14 +3811,14 @@
                 o("ff1739ae", "Etichetta profilo"),
                 o("h70c602c", "Impossibile aggiornare l'etichetta profilo"),
                 o("c818c60c", "Analytics"),
-                o("ha9f14b1", function (e) {
-                    return "Data e ora di inizio dello spazio: " + e.scheduleDate + ", " + e.scheduleTime;
+                o("ha9f14b1", function (i) {
+                    return "Data e ora di inizio dello spazio: " + i.scheduleDate + ", " + i.scheduleTime;
                 }),
                 o("jafbef80", "Non disponi dell'autorizzazione per programmare questo spazio"),
                 o("e5d26f84", "Abilita le notifiche per non perdere niente di ciò che c'è di nuovo. Ai fini della personalizzazione delle tue notifiche, ci verranno comunicati il Paese di riferimento e la lingua del tuo dispositivo."),
                 o("f91f00ba", "Crea clip"),
-                o("f9b2d343", function (e) {
-                    return e.count + " " + t(e.count, "", "nuovi ") + "post";
+                o("f9b2d343", function (i) {
+                    return i.count + " " + t(i.count, "", "nuovi ") + "post";
                 }),
                 o("jcc8306e", "Chiedi di partecipare attivamente"),
                 o("j41fd45a", "Richiesta inviata"),
@@ -3829,8 +3829,8 @@
                 o("e49a1f42", "Attualmente stai ascoltando anonimamente e l'host né gli altri partecipanti possono vederti."),
                 o("jf01aea4", "Per partecipare, devi uscire e unirti nuovamente senza l'ascolto anonimo."),
                 o("cac1482a", "Invia reazione"),
-                o("fc0e94b7", function (e) {
-                    return "Invia " + e.emoji + " come reazione";
+                o("fc0e94b7", function (i) {
+                    return "Invia " + i.emoji + " come reazione";
                 }),
                 o("jf9f3e54", "Vai avanti di 15 secondi"),
                 o("hdd1aba0", "Vai indietro di 15 secondi"),
@@ -3838,8 +3838,8 @@
                 o("e674c120", "Mostra sottotitoli"),
                 o("f45bace4", "Nascondi didascalie"),
                 o("ce96f1dc", "Sottotitoli non disponibili"),
-                o("e07f6e7d", function (e) {
-                    return "Velocità " + e.rate + "x";
+                o("e07f6e7d", function (i) {
+                    return "Velocità " + i.rate + "x";
                 }),
                 o("jd04fc66", "Velocità 0,5x"),
                 o("f03848b8", "Normale"),
@@ -3854,8 +3854,8 @@
                 o("c958c6c8", "Posta"),
                 o("if23a252", "Condividi via..."),
                 o("c0530da6", "Menu Condivisione"),
-                o("gb5851d7", function (e) {
-                    return e.prefix + " " + e.url;
+                o("gb5851d7", function (i) {
+                    return i.prefix + " " + i.url;
                 }),
                 o("j78ad1ca", "Vuoi terminare lo spazio?"),
                 o("db684264", "Sì, termina"),
@@ -3867,11 +3867,11 @@
                 o("b5d88f0c", "Solo per dipendenti"),
                 o("c855ab8e", "Solo per abbonati"),
                 o("ddeb0a3c", "Ecco la community. Ti piacciono gli utenti? Dai un'occhiata."),
-                o("e111f531", function (e) {
-                    return e.count + " sintonizzat" + t(e.count, "o", "i");
+                o("e111f531", function (i) {
+                    return i.count + " sintonizzat" + t(i.count, "o", "i");
                 }),
-                o("cbef820f", function (e) {
-                    return e.screenName + " ha ripostato la trasmissione";
+                o("cbef820f", function (i) {
+                    return i.screenName + " ha ripostato la trasmissione";
                 }),
                 o("e3275464", "Invia"),
                 o("cededf2a", "Host"),
@@ -3887,26 +3887,26 @@
                 o("i22835de", "Approva"),
                 o("cb59a0fe", "Respingi"),
                 o("c2376960", "Richieste per partecipare attivamente"),
-                o("aba7dcdd", function (e) {
-                    return "Invita " + e.name;
+                o("aba7dcdd", function (i) {
+                    return "Invita " + i.name;
                 }),
-                o("f5c7aaa7", function (e) {
+                o("f5c7aaa7", function (i) {
                     return "host";
                 }),
-                o("fc56c8b1", function (e) {
+                o("fc56c8b1", function (i) {
                     return "cohost";
                 }),
-                o("iba0f45d", function (e) {
-                    return "partecipant" + t(e.count, "e attivo", "i attivi");
+                o("iba0f45d", function (i) {
+                    return "partecipant" + t(i.count, "e attivo", "i attivi");
                 }),
-                o("dc066955", function (e) {
-                    return "ascoltator" + t(e.count, "e", "i");
+                o("dc066955", function (i) {
+                    return "ascoltator" + t(i.count, "e", "i");
                 }),
-                o("b53ed9ab", function (e) {
-                    return e.participantCount + " " + e.title + " · " + e.remainingCapacityCount + " post" + t(e.remainingCapacityCount, "o libero", " liberi");
+                o("b53ed9ab", function (i) {
+                    return i.participantCount + " " + i.title + " · " + i.remainingCapacityCount + " post" + t(i.remainingCapacityCount, "o libero", " liberi");
                 }),
-                o("c3b5b829", function (e) {
-                    return e.count + " " + t(e.count, "richiesta", "nuove richieste");
+                o("c3b5b829", function (i) {
+                    return i.count + " " + t(i.count, "richiesta", "nuove richieste");
                 }),
                 o("fe7a1910", "Spedisci inviti"),
                 o("ic3c757e", "Cerca utenti"),
@@ -3916,15 +3916,15 @@
                 o("f77997b0", "Cohost"),
                 o("i48f4ed8", "Partecipante attivo"),
                 o("a77c8e02", "Ascoltatore"),
-                o("bdfa93eb", function (e) {
-                    return "Condiviso da " + e.name;
+                o("bdfa93eb", function (i) {
+                    return "Condiviso da " + i.name;
                 }),
                 o("d8cc6ada", "Chi può parlare? Nulla cambierà per gli attuali partecipanti attivi. Le modifiche potrebbero richiedere qualche secondo."),
                 o("e3a87142", "Solo gli utenti che inviti a partecipare attivamente"),
                 o("db3de1d2", "Unisciti come partecipante attivo"),
                 o("d7f4bc44", "Unisciti come cohost"),
-                o("edcf15e9", function (e) {
-                    return "Richieste (" + e.count + ")";
+                o("edcf15e9", function (i) {
+                    return "Richieste (" + i.count + ")";
                 }),
                 o("h13957aa", "Silenzia lo spazio"),
                 o("ge6372fa", "Non silenziare più lo spazio"),
@@ -3944,8 +3944,8 @@
                 o("af71ef68", "Audio"),
                 o("fc64990e", "Video"),
                 o("ca0ce0e4", "Scrivi un nuovo messaggio"),
-                o("e18e6a63", function (e) {
-                    return "Ottieni X Premium per scrivere a @" + e.username;
+                o("e18e6a63", function (i) {
+                    return "Ottieni X Premium per scrivere a @" + i.username;
                 }),
                 o("c3752568", "Qualcosa è andato storto. Prova a rimandare il messaggio tra un minuto."),
                 o("f78aa3ea", "Attualmente non è possibile inviare alcuni dei tuoi messaggi. Riprova più tardi."),
@@ -3958,8 +3958,8 @@
                 o("hf383be4", "L'account a cui stai tentando di inviare un messaggio è stato eliminato."),
                 o("c4fdbd16", "Non puoi inviare messaggi agli utenti che hai bloccato."),
                 o("hf3e7e38", "Il tuo messaggio non può essere inviato."),
-                o("dd8272fd", function (e) {
-                    return e.count + " nuov" + t(e.count, "o messaggio", "i messaggi") + ".";
+                o("dd8272fd", function (i) {
+                    return i.count + " nuov" + t(i.count, "o messaggio", "i messaggi") + ".";
                 }),
                 o("e2cd3b7c", "Chiamata terminata"),
                 o("f42f365a", "Videochiamata terminata"),
@@ -3967,14 +3967,14 @@
                 o("jd9831b2", "Videochiamata senza risposta"),
                 o("f0985268", "Chiamata"),
                 o("ca397a48", "Videochiamata"),
-                o("bb7e2143", function (e) {
-                    return e.seconds + "s";
+                o("bb7e2143", function (i) {
+                    return i.seconds + "s";
                 }),
                 o("c1d4ac84", "Hai cambiato la foto del gruppo"),
                 o("abc7b032", "La foto del gruppo è stata cambiata"),
                 o("i263b294", "Hai iniziato a partecipare alla conversazione"),
-                o("i8d5e62b", function (e) {
-                    return "altri " + e.count + " utenti";
+                o("i8d5e62b", function (i) {
+                    return "altri " + i.count + " utenti";
                 }),
                 o("f7204380", "Questo Fleet è scaduto"),
                 o("d9de7b58", "Questo contenuto è nascosto poiché è di qualcuno che non segui."),
@@ -3982,8 +3982,8 @@
                 o("b518221e", "Apri immagine"),
                 o("eeaa9f90", "Apri video"),
                 o("g2b43664", "Apri GIF"),
-                o("d99de549", function (e) {
-                    return "In risposta a " + e.name;
+                o("d99de549", function (i) {
+                    return "In risposta a " + i.name;
                 }),
                 o("f5a07f7c", "Allegato"),
                 o("fd079470", "È spam"),
@@ -4001,8 +4001,8 @@
                 o("i202bd22", "Segnala messaggio"),
                 o("f2e5491a", "Copia messaggio"),
                 o("bf2d08ca", "Altre reazioni"),
-                o("ca7a2215", function (e) {
-                    return "La tua attuale reazione: " + e.emoji;
+                o("ca7a2215", function (i) {
+                    return "La tua attuale reazione: " + i.emoji;
                 }),
                 o("j4bfee22", "Vuoi eliminare il messaggio?"),
                 o("faddd3a2", "Questo messaggio sarà eliminato per te. Gli altri membri della conversazione continueranno a vederlo."),
@@ -4010,31 +4010,31 @@
                 o("ad5a8e8e", "Spiacenti! Non hai il permesso per eliminare questo messaggio."),
                 o("fad48eea", "Invio in corso..."),
                 o("ae7d7a24", "Errore nell'invio del messaggio"),
-                o("bbe74f3f", function (e) {
-                    return "Ieri, " + e.time;
+                o("bbe74f3f", function (i) {
+                    return "Ieri, " + i.time;
                 }),
-                o("h95f9e77", function (e) {
-                    return e.reactionCount + " reazion" + t(e.reactionCount, "e", "i");
+                o("h95f9e77", function (i) {
+                    return i.reactionCount + " reazion" + t(i.reactionCount, "e", "i");
                 }),
                 o("c0098d4a", "Reazioni"),
                 o("j85999ec", "Elenco reazioni degli utenti"),
-                o("a2d48779", function (e) {
-                    return "Rimuovi la tua attuale reazione: " + e.emoji;
+                o("a2d48779", function (i) {
+                    return "Rimuovi la tua attuale reazione: " + i.emoji;
                 }),
                 o("icd0bf34", "Visualizzato"),
                 o("e8bd8fec", "Inviato"),
                 o("b2d32fae", "Visualizzato da tutti"),
-                o("a763d33f", function (e) {
-                    return "Visualizzato da " + e.count + " utent" + t(e.count, "e", "i");
+                o("a763d33f", function (i) {
+                    return "Visualizzato da " + i.count + " utent" + t(i.count, "e", "i");
                 }),
                 o("d84b485e", "Hai iniziato a seguire questo account"),
                 o("be0c83d8", "Hai accettato la richiesta"),
                 o("bcc13060", "Accesso in anteprima"),
-                o("e535cae9", function (e) {
-                    return e.count + " follower";
+                o("e535cae9", function (i) {
+                    return i.count + " follower";
                 }),
-                o("cf249089", function (e) {
-                    return "Iscrizione: " + e.joinDate;
+                o("cf249089", function (i) {
+                    return "Iscrizione: " + i.joinDate;
                 }),
                 o("g1f972d7", "Scopri di più"),
                 o("bb0e37c3", "Scopri di più"),
@@ -4046,8 +4046,8 @@
                 o("ffde2fdc", "Caricamento conversazione in corso"),
                 o("da878dc0", "Accetta"),
                 o("hc52446c", "Vuoi partecipare a questo gruppo? Non sapranno che hai visto la loro richiesta finché non accetti."),
-                o("f7e1ad65", function (e) {
-                    return "Vuoi consentire a " + e.senderName + " di inviarti messaggi? Non saprà che hai visto il suo messaggio finché non accetti.";
+                o("f7e1ad65", function (i) {
+                    return "Vuoi consentire a " + i.senderName + " di inviarti messaggi? Non saprà che hai visto il suo messaggio finché non accetti.";
                 }),
                 o("gdf4b790", "Vuoi abbandonare la conversazione?"),
                 o("bbf83d84", "L'azione non potrà essere annullata e la conversazione sarà eliminata dalla tua casella dei messaggi."),
@@ -4082,8 +4082,8 @@
                 o("a4939874", "Hai condiviso un post"),
                 o("a30a206e", "Ho capito"),
                 o("ib4b1b86", "Ti presentiamo le conversazioni fissate"),
-                o("bd3ca2ef", function (e) {
-                    return "Seleziona il menu delle azioni di una conversazione per fissarla in cima e, quindi, accedervi facilmente. Puoi fissare un massimo di " + e.count + " conversazion" + t(e.count, "e", "i") + " contemporaneamente.";
+                o("bd3ca2ef", function (i) {
+                    return "Seleziona il menu delle azioni di una conversazione per fissarla in cima e, quindi, accedervi facilmente. Puoi fissare un massimo di " + i.count + " conversazion" + t(i.count, "e", "i") + " contemporaneamente.";
                 }),
                 o("e1c9ec9c", "Fissa conversazione"),
                 o("e3cfff7c", "Silenzia temporaneamente la conversazione"),
@@ -4102,8 +4102,8 @@
                 o("ie9a7e48", "Impossibile fissare la conversazione. Controlla la connessione e riprova."),
                 o("hd3927c6", "Impossibile staccare la conversazione. Riprova."),
                 o("f1ac0968", "Impossibile staccare la conversazione. Controlla la connessione e riprova."),
-                o("d571e4f9", function (e) {
-                    return "Puoi fissare solo " + e.count + "  conversazion" + t(e.count, "e", "i");
+                o("d571e4f9", function (i) {
+                    return "Puoi fissare solo " + i.count + "  conversazion" + t(i.count, "e", "i");
                 }),
                 o("a551bf7e", "Devi staccare una conversazione per fissarne un'altra."),
                 o("a676a876", "Ecco la tua casella dei messaggi"),
@@ -4111,8 +4111,8 @@
                 o("efe8fda0", "Scrivi un messaggio"),
                 o("b9dae4f4", "Prova un altro termine di ricerca"),
                 o("e7fb2028", "Nessun altro risultato"),
-                o("ae111c99", function (e) {
-                    return 'Nessun risultato per  "' + e.query + '"';
+                o("ae111c99", function (i) {
+                    return 'Nessun risultato per  "' + i.query + '"';
                 }),
                 o("e8581cce", "Nessun risultato per il termine indicato"),
                 o("f08940ac", "Scrivi nuovo messaggio"),
@@ -4123,17 +4123,17 @@
                 o("c7e8a9ee", "Informativa sulla privacy"),
                 o("bece84b4", "Non hai richieste di messaggi"),
                 o("e51be7c1", "Scopri di più"),
-                o("f041be05", function (e) {
-                    return e.stringCount + " pending request" + t(e.count, "", "s");
+                o("f041be05", function (i) {
+                    return i.stringCount + " pending request" + t(i.count, "", "s");
                 }),
-                o("a2fad0f3", function (e) {
-                    return e.stringCount + " new pe" + t(e.count, "rson", "ople") + " you may know";
+                o("a2fad0f3", function (i) {
+                    return i.stringCount + " new pe" + t(i.count, "rson", "ople") + " you may know";
                 }),
-                o("cbddf365", function (e) {
-                    return e.stringCount + " pe" + t(e.count, "rson", "ople") + " you may know";
+                o("cbddf365", function (i) {
+                    return i.stringCount + " pe" + t(i.count, "rson", "ople") + " you may know";
                 }),
-                o("fac945ad", function (e) {
-                    return e.stringCount + " new request" + t(e.count, "", "s");
+                o("fac945ad", function (i) {
+                    return i.stringCount + " new request" + t(i.count, "", "s");
                 }),
                 o("ed93de0c", "Analisi post in corso"),
                 o("ba44f4ea", "Altri dettagli da Grok"),
@@ -4171,8 +4171,8 @@
                 o("e9b6d404", "A quali strumenti di ricerca dovrebbe ricorrere Grok?"),
                 o("h15dce2e", "Impostazioni avanzate"),
                 o("ff9dc268", "Modifica il prompt"),
-                o("acb2baa0", "Create Images"),
-                o("h30fd372", "Try Voice Mode"),
+                o("acb2baa0", "Crea immagini"),
+                o("h30fd372", "Prova la modalità vocale"),
                 o("e9fcdd0c", "Chiedi a Grok di cercare minuziosamente nel Web"),
                 o("fc4e8aba", "Chiedi a Grok di ragionare passo dopo passo"),
                 o("e4ae6abe", "Chiedi a Grok di trasformare la tua immagine"),
@@ -4237,32 +4237,32 @@
                 o("j5dcf1b2", "Aggiornamento effettuato"),
                 o("a50aaa10", "Pre-mercato"),
                 o("dd614d10", "After hours"),
-                o("d6b0b0d5", function (e) {
-                    return "Apertura" + e.ttc_stock_details;
+                o("d6b0b0d5", function (i) {
+                    return "Apertura" + i.ttc_stock_details;
                 }),
-                o("e85f8b65", function (e) {
-                    return "Capitalizzazione di mercato" + e.ttc_stock_details;
+                o("e85f8b65", function (i) {
+                    return "Capitalizzazione di mercato" + i.ttc_stock_details;
                 }),
-                o("f92bf10f", function (e) {
-                    return "Massimo dell'anno" + e.ttc_stock_details;
+                o("f92bf10f", function (i) {
+                    return "Massimo dell'anno" + i.ttc_stock_details;
                 }),
-                o("d679b09f", function (e) {
-                    return "Massimo" + e.ttc_stock_details;
+                o("d679b09f", function (i) {
+                    return "Massimo" + i.ttc_stock_details;
                 }),
-                o("be7b9409", function (e) {
-                    return "Rapporto P/E" + e.ttc_stock_details;
+                o("be7b9409", function (i) {
+                    return "Rapporto P/E" + i.ttc_stock_details;
                 }),
-                o("a81f5fb9", function (e) {
-                    return "Minimo dell'anno" + e.ttc_stock_details;
+                o("a81f5fb9", function (i) {
+                    return "Minimo dell'anno" + i.ttc_stock_details;
                 }),
-                o("e68d4f21", function (e) {
-                    return "Minimo" + e.ttc_stock_details;
+                o("e68d4f21", function (i) {
+                    return "Minimo" + i.ttc_stock_details;
                 }),
-                o("bc9c96f9", function (e) {
-                    return "Massimo di sempre" + e.ttc_stock_details;
+                o("bc9c96f9", function (i) {
+                    return "Massimo di sempre" + i.ttc_stock_details;
                 }),
-                o("dd679fb1", function (e) {
-                    return "Minimo di sempre" + e.ttc_stock_details;
+                o("dd679fb1", function (i) {
+                    return "Minimo di sempre" + i.ttc_stock_details;
                 }),
                 o("a22063d2", "Per una maggiore precisione, condividi la tua posizione."),
                 o("db3248a8", "Caricamento posizione in corso"),
@@ -4276,8 +4276,8 @@
                 o("j1361724", "Intervallo"),
                 o("fa0f1262", "Pausa"),
                 o("c2cac618", "Attualmente Grok ha accesso ai dati per LaLiga, Premier League, Bundesliga, Serie A e Ligue 1."),
-                o("acae223d", function (e) {
-                    return 'Risultati per "' + e.prompt + '"';
+                o("acae223d", function (i) {
+                    return 'Risultati per "' + i.prompt + '"';
                 }),
                 o("bed99fe2", "Vedi meno"),
                 o("f7b57ac0", "Statistiche"),
@@ -4299,8 +4299,8 @@
                 o("j310a2d6", "Sab"),
                 o("eaf55eb4", "Mostra l'elaborazione del ragionamento"),
                 o("j1ab5f40", "Tocca per consultare"),
-                o("ee000b0d", function (e) {
-                    return e.numSources + " fonti";
+                o("ee000b0d", function (i) {
+                    return i.numSources + " fonti";
                 }),
                 o("b1ac6016", "DeepSearch completata"),
                 o("f766feca", "DeepSearch completata"),
@@ -4311,15 +4311,15 @@
                 o("db832e38", "Abilita le notifiche nelle impostazioni del browser"),
                 o("a910cac6", "Si è verificato un problema durante l'abilitazione delle notifiche"),
                 o("g4b3a3e6", "DeepSearch completata"),
-                o("bf780b13", function (e) {
-                    return e.minutes + " min e " + e.seconds + " sec";
+                o("bf780b13", function (i) {
+                    return i.minutes + " min e " + i.seconds + " sec";
                 }),
                 o("c2745fa4", "Interrotto"),
                 o("be30b6ee", "Connessione non stabile"),
                 o("a4d9dbfa", "Ragionamenti"),
                 o("d7cb5408", "Pagine Web rilevanti"),
-                o("aa7c96bb", function (e) {
-                    return "Consulta " + e.numResults + " in più";
+                o("aa7c96bb", function (i) {
+                    return "Consulta " + i.numResults + " in più";
                 }),
                 o("f5a2377e", "Pensiero in elaborazione da "),
                 o("g3ce0132", "Pensiero elaborato in"),
@@ -4333,15 +4333,15 @@
                 o("jf9363b8", "Esegui l'upgrade a X Premium+ per continuare la conversazione oppure riprova più tardi"),
                 o("ef018bf6", "Analizza più immagini con Premium"),
                 o("cdace6d2", "Esegui l'upgrade ora"),
-                o("a3186bff", function (e) {
-                    return e.count + " pagin" + t(e.count, "a", "e") + " Web";
+                o("a3186bff", function (i) {
+                    return i.count + " pagin" + t(i.count, "a", "e") + " Web";
                 }),
                 o("f4146dda", "Quale risposta preferisci?"),
                 o("a2c2be32", "Contribuirà a migliorare Grok."),
                 o("g01599b6", "Risposta 1"),
                 o("e02694e0", "Risposta 2"),
                 o("h6867fcc", "Preferisco questa risposta"),
-                o("d07488a6", "Get the Android app"),
+                o("d07488a6", "Scarica l'app per Android"),
                 o("d9cfe70c", "Accesso alle funzioni avanzate di Grok"),
                 o("hf9afab0", "Abilita DeepSearch per consultare Internet e X, analizzare informazioni e fornire risposte dettagliate e supportate da solide argomentazioni grazie alla rapida ricerca agentica."),
                 o("ef3b3f04", "Per utilizzare il nostro modello di ragionamento, abilita Ragionamento. È l'ideale per la matematica, la scienza e la programmazione. Puoi anche chiedere a Grok di ragionare più a fondo su ogni quesito che potrebbe richiedere un po' più di impegno. "),
@@ -4350,7 +4350,7 @@
                 o("e3584f8e", "Quali sono le 10 strategie di trading opzioni più efficaci usate dagli hedge fund"),
                 o("d91b7b8a", "Quanto costava costruire un'università nel 1885?"),
                 o("ia5bef3e", "Dimmi pure, come posso aiutarti?"),
-                o("ebea5880", "Recent Conversations"),
+                o("ebea5880", "Conversazioni recenti"),
                 o("e13591c0", "Esempi di conversazioni con Grok"),
                 o("c27ca452", "Adesso gli abbonati a Premium possono utilizzare la nostra IA più avanzata, Grok, su X."),
                 o("b6abc25a", "Ti presentiamo Grok 2"),
@@ -4374,30 +4374,30 @@
                 o("ecca11ac", "Nascondi timestamp"),
                 o("e358a9f8", "Mostra timestamp"),
                 o("fca62374", "Separa chat"),
-                o("fe20f01b", function (e) {
-                    return "Silenziare " + e.name + "?";
+                o("fe20f01b", function (i) {
+                    return "Silenziare " + i.name + "?";
                 }),
                 o("f5dc372a", "Se procedi, tutti i suoi messaggi verranno rimossi e non potrà scrivere per il resto della trasmissione."),
                 o("e91dd1fa", "Il messaggio è stato eliminato da un moderatore."),
-                o("d1da3709", function (e) {
-                    return "In risposta a " + e.username + ": " + e.body;
+                o("d1da3709", function (i) {
+                    return "In risposta a " + i.username + ": " + i.body;
                 }),
                 o("fc82a896", "Questa trasmissione è terminata"),
                 o("ea58dbd0", "La trasmissione non è iniziata"),
                 o("cb5b6784", "Limitazione dall'autore"),
                 o("eba27300", "Solo gli account seguiti dall'autore possono chattare"),
-                o("f28984fb", function (e) {
-                    return "Solo gli account seguiti da " + e.screenName + " possono chattare";
+                o("f28984fb", function (i) {
+                    return "Solo gli account seguiti da " + i.screenName + " possono chattare";
                 }),
                 o("a3fec810", "Abbonati a Premium per chattare"),
-                o("dbf0b235", function (e) {
-                    return "Abbonati a " + e.screenName + " per chattare";
+                o("dbf0b235", function (i) {
+                    return "Abbonati a " + i.screenName + " per chattare";
                 }),
                 o("ifbd8342", "Apri diretta"),
                 o("f935d3ce", "Apri chat"),
                 o("abbe8212", "Chiudi chat"),
-                o("hdf040dd", function (e) {
-                    return e.percentage + "% completato";
+                o("hdf040dd", function (i) {
+                    return i.percentage + "% completato";
                 }),
                 o("e4f6bd9e", "Ops, qualcosa è andato storto. Riprova più tardi."),
                 o("ac966f94", "Browser non supportato"),
@@ -4412,48 +4412,48 @@
                 o("f1b5048a", "Si è verificato un errore durante la rimozione dei contatti."),
                 o("hc72e1fc", "Inserisci un'email valida."),
                 o("bc0ad88a", 'Gli indirizzi email che includono il più (simbolo "+") non sono ammessi. Inserisci un indirizzo email valido.'),
-                o("f134915f", function (e) {
-                    return e.count + " elementi selezionati";
+                o("f134915f", function (i) {
+                    return i.count + " elementi selezionati";
                 }),
                 o("b8fb87e0", "Visualizza argomenti selezionati"),
-                o("e854ad27", function (e) {
-                    return "Argomento - " + e.title;
+                o("e854ad27", function (i) {
+                    return "Argomento - " + i.title;
                 }),
                 o("e4ff75aa", "Qualcosa è andato storto. Controlla la tua connessione e riprova."),
                 o("b60eba9e", "Controlliamo prima una cosa: supera la verifica reCAPTCHA di Google per confermare di non essere un robot."),
                 o("ba939778", "Sei un robot?"),
                 o("d44efc66", "Come ti chiami?"),
                 o("b4867a18", 'Il tuo nome non può includere la parola "Twitter".'),
-                o("j1c3f4b9", function (e) {
-                    return "Modifica " + e.birthdate + " come data di nascita";
+                o("j1c3f4b9", function (i) {
+                    return "Modifica " + i.birthdate + " come data di nascita";
                 }),
                 o("j231d352", "Segui tutti"),
-                o("c203db71", function (e) {
-                    return "Caricamento post di @" + e.screenName + " in corso";
+                o("c203db71", function (i) {
+                    return "Caricamento post di @" + i.screenName + " in corso";
                 }),
                 o("c9a1cb5e", "Questo account non esiste"),
                 o("e7b201de", "Prova a cercarne un altro."),
                 o("ica87fde", "Sei stato bloccato"),
                 o("c7ec6faf", "Scopri di più"),
-                o("e79ed125", function (e) {
-                    return "L'account @" + e.screenName + " è bloccato";
+                o("e79ed125", function (i) {
+                    return "L'account @" + i.screenName + " è bloccato";
                 }),
                 o("gba95028", "Visualizza post"),
                 o("a2216a79", "Scopri di più"),
                 o("a2811f96", "Cronologie del profilo"),
                 o("d25805fa", "Abb."),
                 o("b05be0c8", "Highlight"),
-                o("b9891db3", function (e) {
-                    return "Post con risposte di " + e.fullName + " (@" + e.screenName + ")";
+                o("b9891db3", function (i) {
+                    return "Post con risposte di " + i.fullName + " (@" + i.screenName + ")";
                 }),
-                o("e1ab545d", function (e) {
-                    return "Caricamento post di @" + e.screenName + " per abbonati in corso";
+                o("e1ab545d", function (i) {
+                    return "Caricamento post di @" + i.screenName + " per abbonati in corso";
                 }),
-                o("ac3f4be9", function (e) {
-                    return "Caricamento highlight di @" + e.screenName + " in corso";
+                o("ac3f4be9", function (i) {
+                    return "Caricamento highlight di @" + i.screenName + " in corso";
                 }),
-                o("da38f955", function (e) {
-                    return "Caricamento articoli di @" + e.screenName + " in corso";
+                o("da38f955", function (i) {
+                    return "Caricamento articoli di @" + i.screenName + " in corso";
                 }),
                 o("b7363b66", "Invia un post"),
                 o("ce659062", "Non lasciare i tuoi abbonati sulle spine"),
@@ -4463,11 +4463,11 @@
                 o("hb26a1fe", "Procedi iniziando a postare contenuti esclusivi. Tutti i post per abbonati verranno visualizzati qui."),
                 o("b7c3572e", "Per aggiungere highlight al tuo profilo:\n\n1. Apri uno dei post che hai creato\n2. Tocca il pulsante del menu …\n3. Tocca Aggiungi agli highlight o rimuovi"),
                 o("i8123550", "Quando pubblicherai un articolo, apparirà qui."),
-                o("b786a77d", function (e) {
-                    return "@" + e.screenName + " non ha postato";
+                o("b786a77d", function (i) {
+                    return "@" + i.screenName + " non ha postato";
                 }),
-                o("j7b80397", function (e) {
-                    return "@" + e.screenName + " non ha ancora pubblicato alcun post per abbonati";
+                o("j7b80397", function (i) {
+                    return "@" + i.screenName + " non ha ancora pubblicato alcun post per abbonati";
                 }),
                 o("jbae8c54", "Nessun post è stato aggiunto agli highlight."),
                 o("g8fb219e", "Nessun articolo disponibile."),
@@ -4475,84 +4475,84 @@
                 o("h9346040", "Una volta pubblicati, i post per abbonati appariranno qui."),
                 o("i4c3ddc6", "Gli articoli appariranno qui una volta pubblicati."),
                 o("e0118142", "Posta ora"),
-                o("e0c1d871", function (e) {
-                    return "Post di " + e.fullName;
+                o("e0c1d871", function (i) {
+                    return "Post di " + i.fullName;
                 }),
-                o("c575828f", function (e) {
-                    return "Post di " + e.fullName + " per abbonati";
+                o("c575828f", function (i) {
+                    return "Post di " + i.fullName + " per abbonati";
                 }),
-                o("e8300dbb", function (e) {
-                    return "Highlight di " + e.fullName;
+                o("e8300dbb", function (i) {
+                    return "Highlight di " + i.fullName;
                 }),
-                o("c46b420d", function (e) {
-                    return "Articoli di " + e.fullName;
+                o("c46b420d", function (i) {
+                    return "Articoli di " + i.fullName;
                 }),
-                o("h5a65db7", function (e) {
-                    return "Post di " + e.fullName + " (@" + e.screenName + ") per abbonati";
+                o("h5a65db7", function (i) {
+                    return "Post di " + i.fullName + " (@" + i.screenName + ") per abbonati";
                 }),
-                o("g7ccac9d", function (e) {
-                    return "Highlight di " + e.fullName + " (@" + e.screenName + ")";
+                o("g7ccac9d", function (i) {
+                    return "Highlight di " + i.fullName + " (@" + i.screenName + ")";
                 }),
-                o("ja6e5d35", function (e) {
-                    return "Articoli di " + e.fullName + " (@" + e.screenName + ")";
+                o("ja6e5d35", function (i) {
+                    return "Articoli di " + i.fullName + " (@" + i.screenName + ")";
                 }),
                 o("h088ae72", "Post del profilo"),
-                o("hbf64b75", function (e) {
-                    return "Post a cui " + e.fullName + " (@" + e.screenName + ") ha messo Mi piace";
+                o("hbf64b75", function (i) {
+                    return "Post a cui " + i.fullName + " (@" + i.screenName + ") ha messo Mi piace";
                 }),
-                o("a64da953", function (e) {
-                    return "Caricamento Mi piace di @" + e.screenName + " in corso";
+                o("a64da953", function (i) {
+                    return "Caricamento Mi piace di @" + i.screenName + " in corso";
                 }),
-                o("be3d5b9f", function (e) {
-                    return "@" + e.screenName + " non ha ancora messo Mi piace a un post";
+                o("be3d5b9f", function (i) {
+                    return "@" + i.screenName + " non ha ancora messo Mi piace a un post";
                 }),
                 o("d34b5306", "Quando lo farà, vedrai qui i post in questione."),
                 o("bb0e41bc", "Non hai ancora messo Mi piace"),
                 o("d3d4a21c", "Tocca il cuore presente su ogni post per mostrare il tuo apprezzamento. Quando lo farai, i post in questione verranno mostrati qui."),
-                o("d95c3d31", function (e) {
-                    return "Post a cui " + e.fullName + " ha messo Mi piace";
+                o("d95c3d31", function (i) {
+                    return "Post a cui " + i.fullName + " ha messo Mi piace";
                 }),
                 o("eeb7d696", "I tuoi Mi piace sono privati. Solo tu puoi vederli."),
-                o("h6e91bb1", function (e) {
-                    return "Post di " + e.fullName + " (@" + e.screenName + ") con contenuti";
+                o("h6e91bb1", function (i) {
+                    return "Post di " + i.fullName + " (@" + i.screenName + ") con contenuti";
                 }),
-                o("fe38901b", function (e) {
-                    return "Caricamento contenuti multimediali di @" + e.screenName + " in corso";
+                o("fe38901b", function (i) {
+                    return "Caricamento contenuti multimediali di @" + i.screenName + " in corso";
                 }),
-                o("bc4223a3", function (e) {
-                    return "@" + e.screenName + " non ha postato contenuti multimediali";
+                o("bc4223a3", function (i) {
+                    return "@" + i.screenName + " non ha postato contenuti multimediali";
                 }),
                 o("ccc363f6", "Quando lo farà, vedrai qui i post in questione."),
                 o("d1614228", "Luci, motore... allegati!"),
                 o("d7dc8d0a", "Quando posterai foto o video, appariranno qui."),
-                o("hf761abf", function (e) {
-                    return "Contenuti multimediali di " + e.fullName;
+                o("hf761abf", function (i) {
+                    return "Contenuti multimediali di " + i.fullName;
                 }),
-                o("je5311d3", function (e) {
-                    return "Affiliati di " + e.fullName + " (@" + e.screenName + ")";
+                o("je5311d3", function (i) {
+                    return "Affiliati di " + i.fullName + " (@" + i.screenName + ")";
                 }),
-                o("fd0772eb", function (e) {
-                    return "Caricamento affiliati di @" + e.screenName + " in corso";
+                o("fd0772eb", function (i) {
+                    return "Caricamento affiliati di @" + i.screenName + " in corso";
                 }),
-                o("ccf03833", function (e) {
-                    return "Affiliati di " + e.fullName;
+                o("ccf03833", function (i) {
+                    return "Affiliati di " + i.fullName;
                 }),
                 o("ba5a88e4", "Suggerito"),
                 o("ddee8ae2", "Vedi tutte le offerte"),
                 o("d2a04c68", "Stiamo assumendo"),
                 o("dc12a126", "Ottieni indicazioni"),
                 o("e2acb642", "Contatti"),
-                o("ha9b8035", function (e) {
-                    return "Chiama il " + e.phoneCode + " " + e.phoneNumber;
+                o("ha9b8035", function (i) {
+                    return "Chiama il " + i.phoneCode + " " + i.phoneNumber;
                 }),
-                o("g2244521", function (e) {
-                    return "Invia SMS al " + e.phoneCode + " " + e.phoneNumber;
+                o("g2244521", function (i) {
+                    return "Invia SMS al " + i.phoneCode + " " + i.phoneNumber;
                 }),
-                o("b44c0205", function (e) {
-                    return e.day + " alle " + e.time;
+                o("b44c0205", function (i) {
+                    return i.day + " alle " + i.time;
                 }),
-                o("de1123f5", function (e) {
-                    return "alle " + e.time;
+                o("de1123f5", function (i) {
+                    return "alle " + i.time;
                 }),
                 o("e2a5bd50", "Sempre aperto"),
                 o("e0d7da6c", "Chiude"),
@@ -4564,25 +4564,25 @@
                 o("dda5d96a", "Segnala prodotto"),
                 o("fca46f40", "Centro assistenza"),
                 o("c71a053b", "clicca qui"),
-                o("d7f8a117", function (e) {
-                    return "Statistiche per " + e.days + " giorni";
+                o("d7f8a117", function (i) {
+                    return "Statistiche per " + i.days + " giorni";
                 }),
-                o("cae20e93", function (e) {
-                    return e.days + " giorni";
+                o("cae20e93", function (i) {
+                    return i.days + " giorni";
                 }),
                 o("gc767fda", "Solo per te"),
                 o("c7c85e0c", "Sblocca le statistiche"),
                 o("b15df4b4", "Volte in cui i tuoi post sono stati visti su X"),
                 o("e5fe61e0", "Visualizzazioni"),
-                o("d1018321", function (e) {
-                    return e.value + " visualizzazioni dei tuoi post negli ultimi " + e.period;
+                o("d1018321", function (i) {
+                    return i.value + " visualizzazioni dei tuoi post negli ultimi " + i.period;
                 }),
                 o("e623137c", "Tasso di interazione"),
                 o("d9d34182", "Interazioni post divise per le visualizzazioni."),
                 o("aeee0182", "Visite al profilo"),
                 o("b2bde01a", "Numero di visualizzazioni del profilo originate dai tuoi post"),
-                o("faf4c1f5", function (e) {
-                    return e.value + " visite al tuo profilo negli ultimi " + e.period;
+                o("faf4c1f5", function (i) {
+                    return i.value + " visite al tuo profilo negli ultimi " + i.period;
                 }),
                 o("d5f1e554", "Clic su link"),
                 o("cf573986", "Numero di clic su qualsiasi URL incluso nei tuoi post"),
@@ -4590,8 +4590,8 @@
                 o("e1a87d14", "Numero di nuovi follower che hai guadagnato (escludendo chi ha smesso di seguirti)"),
                 o("j590577e", "Numero di risposte che hai ricevuto per i tuoi post"),
                 o("ia1da622", "Numero di Mi piace che hai ricevuto per i tuoi post"),
-                o("cfd1036b", function (e) {
-                    return e.value + " Mi piace ai tuoi post negli ultimi " + e.period;
+                o("cfd1036b", function (i) {
+                    return i.value + " Mi piace ai tuoi post negli ultimi " + i.period;
                 }),
                 o("ja42739e", "Repost"),
                 o("ca6e8de0", "Numero di volte in cui i tuoi post sono stati ripostati"),
@@ -4631,13 +4631,13 @@
                 o("gd7acb84", "Completa profilo"),
                 o("b7636014", "Messaggio"),
                 o("haad225c", "Regala Premium"),
-                o("b63c46ed", function (e) {
-                    return "Abbonati a @" + e.screenName;
+                o("b63c46ed", function (i) {
+                    return "Abbonati a @" + i.screenName;
                 }),
                 o("j33d8902", "Invia una mancia"),
                 o("a8ab3d08", "Invia a"),
-                o("d740d2d9", function (e) {
-                    return "Link " + e.service + " copiato negli appunti";
+                o("d740d2d9", function (i) {
+                    return "Link " + i.service + " copiato negli appunti";
                 }),
                 o("a7cf1e98", "Bandcamp"),
                 o("d876e67e", "Indirizzo Bitcoin"),
@@ -4656,8 +4656,8 @@
                 o("c1b819ba", "Oggi qui troverai i palloncini di compleanno"),
                 o("ad7a451e", "Traduci bio"),
                 o("f543dbf6", "Numero convalidato"),
-                o("cef4e8cf", function (e) {
-                    return "Vuoi riattivare @" + e.screenName + "?";
+                o("cef4e8cf", function (i) {
+                    return "Vuoi riattivare @" + i.screenName + "?";
                 }),
                 o("h03a094a", "I post di questo account verranno visualizzati nella tua cronologia principale."),
                 o("a6e94418", "Hai silenziato i post di questo account."),
@@ -4670,21 +4670,21 @@
                 o("eb5d72e4", "I post di questo account sono protetti. Solo i suoi follower possono vederli."),
                 o("g776ca50", "Account verificato"),
                 o("ad465ee8", "Imposta affiliazione principale"),
-                o("d01612d3", function (e) {
-                    return "Data di verifica: " + e.date + ".";
+                o("d01612d3", function (i) {
+                    return "Data di verifica: " + i.date + ".";
                 }),
-                o("e14d8719", function (e) {
-                    return e.year + " a.e.v.";
+                o("e14d8719", function (i) {
+                    return i.year + " a.e.v.";
                 }),
-                o("b7caffb7", function (e) {
-                    return "" + e.name;
+                o("b7caffb7", function (i) {
+                    return "" + i.name;
                 }),
-                o("ea8c425f", function (e) {
-                    return "@" + e.viewerScreenName + ", non hai ancora la verifica";
+                o("ea8c425f", function (i) {
+                    return "@" + i.viewerScreenName + ", non hai ancora la verifica";
                 }),
                 o("b2d0c0f4", "Ottieni la verifica come "),
-                o("f464d54d", function (e) {
-                    return "@" + e.profileScreenName;
+                o("f464d54d", function (i) {
+                    return "@" + i.profileScreenName;
                 }),
                 o("g47cdc0e", " per farti notare e sfruttare la copertura delle risposte in risalto."),
                 o("d834ab9c", "Sì, mostra il profilo"),
@@ -4703,17 +4703,17 @@
                 o("defba9a4", "Ti diamo il benvenuto su X"),
                 o("d11934ec", "Ricevi notifiche"),
                 o("a2cd2b0a", "Segui e ricevi notifiche"),
-                o("a70bae53", function (e) {
-                    return "Adesso puoi ricevere una notifica ogni volta che " + e.fullName + " posta.";
+                o("a70bae53", function (i) {
+                    return "Adesso puoi ricevere una notifica ogni volta che " + i.fullName + " posta.";
                 }),
-                o("f51a4c29", function (e) {
-                    return "Adesso puoi seguire " + e.fullName + " e ricevere una notifica ogni volta che posta.";
+                o("f51a4c29", function (i) {
+                    return "Adesso puoi seguire " + i.fullName + " e ricevere una notifica ogni volta che posta.";
                 }),
-                o("cfa5e58d", function (e) {
-                    return "Stai seguendo " + e.fullName + " e riceverai una notifica quando posta.";
+                o("cfa5e58d", function (i) {
+                    return "Stai seguendo " + i.fullName + " e riceverai una notifica quando posta.";
                 }),
-                o("be3a652d", function (e) {
-                    return "Riceverai una notifica quando " + e.fullName + " posta.";
+                o("be3a652d", function (i) {
+                    return "Riceverai una notifica quando " + i.fullName + " posta.";
                 }),
                 o("f089620c", "La tua cronologia principale"),
                 o("a1ab9c80", "Per ora questa community non include alcun post"),
@@ -4724,17 +4724,17 @@
                 o("je23cdb2", "I post degli utenti di questa lista appariranno qui."),
                 o("e69b7e02", "Gestisci account"),
                 o("b6bd6ae4", "Account attuale"),
-                o("d577bccd", function (e) {
-                    return "Se hai più account X, puoi aggiungerli e passare facilmente da uno all'altro. Puoi aggiungere fino a " + e.maxAccounts + " account.";
+                o("d577bccd", function (i) {
+                    return "Se hai più account X, puoi aggiungerli e passare facilmente da uno all'altro. Puoi aggiungere fino a " + i.maxAccounts + " account.";
                 }),
-                o("dc65b3e5", function (e) {
-                    return "Hai raggiunto il limite di " + e.maxAccounts + " account.";
+                o("dc65b3e5", function (i) {
+                    return "Hai raggiunto il limite di " + i.maxAccounts + " account.";
                 }),
-                o("b8045b33", function (e) {
-                    return "Hai raggiunto il limite di " + e.maxAccounts + " account.";
+                o("b8045b33", function (i) {
+                    return "Hai raggiunto il limite di " + i.maxAccounts + " account.";
                 }),
-                o("d075dc89", function (e) {
-                    return "Hai raggiunto il limite di " + e.maxAccounts + " account personali.";
+                o("d075dc89", function (i) {
+                    return "Hai raggiunto il limite di " + i.maxAccounts + " account personali.";
                 }),
                 o("bade139e", "Esci da tutti gli account"),
                 o("ae33b982", "Vuoi uscire da tutti gli account?"),
@@ -4742,28 +4742,28 @@
                 o("f7865ab6", "Non è il tuo account?"),
                 o("a35248e4", "Non è il mio account"),
                 o("f794a67c", "È il mio account"),
-                o("j79c0ff7", function (e) {
-                    return "Abbiamo rimosso " + e.emailAddress + " da questo account";
+                o("j79c0ff7", function (i) {
+                    return "Abbiamo rimosso " + i.emailAddress + " da questo account";
                 }),
                 o("fb46383c", "Non puoi rimuovere l'indirizzo email associato al tuo account."),
-                o("gcfdbc2b", function (e) {
-                    return "L'indirizzo email non è più associato all'account X " + e.screenName + ".";
+                o("gcfdbc2b", function (i) {
+                    return "L'indirizzo email non è più associato all'account X " + i.screenName + ".";
                 }),
-                o("f351663c", function (e) {
-                    return "@" + e.screenName;
+                o("f351663c", function (i) {
+                    return "@" + i.screenName;
                 }),
-                o("baaa89c4", function (e) {
-                    return "" + e.emailAddress;
+                o("baaa89c4", function (i) {
+                    return "" + i.emailAddress;
                 }),
-                o("h75b475c", function (e) {
-                    return "@" + e.screenName;
+                o("h75b475c", function (i) {
+                    return "@" + i.screenName;
                 }),
                 o("a8f0e157", "impostazioni per le notifiche"),
-                o("h1732cde", function (e) {
-                    return "" + e.emailAddress;
+                o("h1732cde", function (i) {
+                    return "" + i.emailAddress;
                 }),
-                o("d374a600", function (e) {
-                    return "@" + e.screenName;
+                o("d374a600", function (i) {
+                    return "@" + i.screenName;
                 }),
                 o("c1d75571", "Perché il tuo indirizzo email era associato a un account X che non ti appartiene?"),
                 o("ac71e82f", "Scopri di più"),
@@ -4790,26 +4790,26 @@
                 o("j3cb12ea", "Ascoltatori in contemporanea"),
                 o("b93931ee", "Il numero di volte in cui i tuoi contenuti sono stati postati."),
                 o("a1814798", "Il numero di volte in cui hai risposto a un post."),
-                o("addd5575", function (e) {
-                    return "Ve" + e.date;
+                o("addd5575", function (i) {
+                    return "Ve" + i.date;
                 }),
-                o("a92e62bd", function (e) {
-                    return "Lu" + e.date;
+                o("a92e62bd", function (i) {
+                    return "Lu" + i.date;
                 }),
-                o("g7450c57", function (e) {
-                    return "Sa" + e.date;
+                o("g7450c57", function (i) {
+                    return "Sa" + i.date;
                 }),
-                o("h08883e7", function (e) {
-                    return "Do" + e.date;
+                o("h08883e7", function (i) {
+                    return "Do" + i.date;
                 }),
-                o("ddb16777", function (e) {
-                    return "Gi" + e.date;
+                o("ddb16777", function (i) {
+                    return "Gi" + i.date;
                 }),
-                o("h8f395b3", function (e) {
-                    return "Ma" + e.date;
+                o("h8f395b3", function (i) {
+                    return "Ma" + i.date;
                 }),
-                o("b8710b43", function (e) {
-                    return "Me" + e.date;
+                o("b8710b43", function (i) {
+                    return "Me" + i.date;
                 }),
                 o("d9c70840", "Dispositivo"),
                 o("ba55e824", "Terminato"),
@@ -4928,11 +4928,11 @@
                 o("g096d0cc", "Tutte le ricerche"),
                 o("e77035aa", "Cancella la ricerca"),
                 o("a895ec64", "Vuoi davvero eliminare la ricerca?"),
-                o("a4f5e431", function (e) {
-                    return 'Eliminazione di "' + e.name + '" completata';
+                o("a4f5e431", function (i) {
+                    return 'Eliminazione di "' + i.name + '" completata';
                 }),
-                o("db28b535", function (e) {
-                    return 'Elimina "' + e.name + '"';
+                o("db28b535", function (i) {
+                    return 'Elimina "' + i.name + '"';
                 }),
                 o("bcf89b8a", "Modifica la ricerca"),
                 o("f0002e72", "Esplora i risultati"),
@@ -5009,14 +5009,14 @@
                 o("a51acce8", "Esegui il downgrade a Basic"),
                 o("ie132f40", "Mantieni Full access"),
                 o("b0d26232", "RISPARMIA"),
-                o("f563b353", function (e) {
-                    return "SCADENZA OFFERTE: " + e.endDate;
+                o("f563b353", function (i) {
+                    return "SCADENZA OFFERTE: " + i.endDate;
                 }),
-                o("b29b2e69", function (e) {
-                    return "Sconto del " + e.percentOff + "%. Scadenza: " + e.endDate + ".";
+                o("b29b2e69", function (i) {
+                    return "Sconto del " + i.percentOff + "%. Scadenza: " + i.endDate + ".";
                 }),
-                o("j3cfae29", function (e) {
-                    return e.discountedCost + " all'anno per il primo anno, poi " + e.baseCost + ".";
+                o("j3cfae29", function (i) {
+                    return i.discountedCost + " all'anno per il primo anno, poi " + i.baseCost + ".";
                 }),
                 o("jb74aea4", "Ciascun account aggiuntivo che viene affiliato ha un costo di 50 USD per identificativo al mese e i crediti pubblicitari sono soggetti a limitazioni."),
                 o("fc9fc856", "Ciascun account aggiuntivo che viene affiliato ha un costo di 600 USD per identificativo all'anno e i crediti pubblicitari sono soggetti a limitazioni."),
@@ -5032,8 +5032,8 @@
                 o("e1669560", "Credito pubblicitario gratis da 12.000 USD"),
                 o("hb973da4", "Radar (Full access)"),
                 o("g444c82e", "Accesso in anteprima alle funzioni Enterprise"),
-                o("a1bc0bcf", function (e) {
-                    return e.cost + " con fatturazione annuale";
+                o("a1bc0bcf", function (i) {
+                    return i.cost + " con fatturazione annuale";
                 }),
                 o("i0f58dac", "Tutti i piani sono soggetti a commissioni e imposte applicabili."),
                 o("je182d8a", "Enterprise"),
@@ -5081,22 +5081,22 @@
                 o("c237b78e", "Affiliazioni per il tuo team di reclutamento"),
                 o("fc3d58fe", "Crediti pubblicitari fino a 12.000 USD per sponsorizzare offerte di lavoro"),
                 o("eb5f060c", "Segui"),
-                o("a19cf46f", function (e) {
-                    return "Vuoi smettere di seguire @" + e.screenName + "?";
+                o("a19cf46f", function (i) {
+                    return "Vuoi smettere di seguire @" + i.screenName + "?";
                 }),
                 o("e4c91b70", "Non vedrai più i suoi post nella cronologia Per te. A meno che non decida di proteggere i propri post, potrai ancora visualizzare il suo profilo."),
                 o("j650c8dc", "Vuoi annullare la richiesta di follow?"),
-                o("c02f8de1", function (e) {
-                    return "Così annullerai la richiesta di follow e @" + e.screenName + " non la vedrà più.";
+                o("c02f8de1", function (i) {
+                    return "Così annullerai la richiesta di follow e @" + i.screenName + " non la vedrà più.";
                 }),
-                o("e2ee95a1", function (e) {
-                    return "Iscrizione: " + e.date;
+                o("e2ee95a1", function (i) {
+                    return "Iscrizione: " + i.date;
                 }),
                 o("d64fef58", "Non hai ancora postato"),
                 o("e2a098dc", "Ordina per"),
                 o("c5709148", "Viene mostrato un massimo di 1000 post"),
-                o("ca5e57bd", function (e) {
-                    return "Post" + e.noun;
+                o("ca5e57bd", function (i) {
+                    return "Post" + i.noun;
                 }),
                 o("d16c1ab6", "Più recenti"),
                 o("f0a28956", "Meno recenti"),
@@ -5116,23 +5116,23 @@
                 o("b1f77a7c", "Esporta dati"),
                 o("j62d2af4", "Panoramica post"),
                 o("dc70a568", "Analisi post"),
-                o("j9f65603", function (e) {
-                    return "00:00" + e.date;
+                o("j9f65603", function (i) {
+                    return "00:00" + i.date;
                 }),
-                o("d6ad20d7", function (e) {
-                    return "04:00" + e.date;
+                o("d6ad20d7", function (i) {
+                    return "04:00" + i.date;
                 }),
-                o("d9bcb257", function (e) {
-                    return "08:00" + e.date;
+                o("d9bcb257", function (i) {
+                    return "08:00" + i.date;
                 }),
-                o("b83b49f1", function (e) {
-                    return "12:00" + e.date;
+                o("b83b49f1", function (i) {
+                    return "12:00" + i.date;
                 }),
-                o("h52ae229", function (e) {
-                    return "16:00" + e.date;
+                o("h52ae229", function (i) {
+                    return "16:00" + i.date;
                 }),
-                o("i07e47b9", function (e) {
-                    return "20:00" + e.date;
+                o("i07e47b9", function (i) {
+                    return "20:00" + i.date;
                 }),
                 o("h7cd94fe", "Un grafico a linee sfocate"),
                 o("b10621d4", "Consulta tutte le tue statistiche"),
@@ -5145,8 +5145,8 @@
                 o("i02166f6", "Scopri le caratteristiche del tuo pubblico"),
                 o("cef977e4", "Esporta i tuoi dati"),
                 o("f88e624e", "Conversazione aggiornata"),
-                o("e15e5637", function (e) {
-                    return "Ultim" + t(e.count, "a ora", "e " + e.count + " ore");
+                o("e15e5637", function (i) {
+                    return "Ultim" + t(i.count, "a ora", "e " + i.count + " ore");
                 }),
                 o("h5ab8b0e", "Utenti che seguono"),
                 o("a0f01bca", "Clicca per modificare il periodo"),
@@ -5169,69 +5169,69 @@
                 o("c5d40fe2", "Chiunque"),
                 o("a8df1d34", "Abilita video"),
                 o("if410292", "Scopri gli spazi"),
-                o("i43fdce9", function (e) {
-                    return "Aggiungi argomenti (" + e.count + " di " + e.total + ")";
+                o("i43fdce9", function (i) {
+                    return "Aggiungi argomenti (" + i.count + " di " + i.total + ")";
                 }),
                 o("e32e99ec", "Di cosa vuoi parlare?"),
                 o("e93f3c2a", "Registra spazio"),
                 o("b701d610", "Hai eliminato lo spazio programmato"),
-                o("b028792d", function (e) {
-                    return "Gestisci gli spazi programmati (" + e.count + ")";
+                o("b028792d", function (i) {
+                    return "Gestisci gli spazi programmati (" + i.count + ")";
                 }),
                 o("e9b73da8", "Programma lo spazio"),
                 o("cdf630be", "Inizia adesso"),
                 o("acd1bcb0", "Chi può partecipare?"),
                 o("h07146a2", "Chi può partecipare attivamente?"),
                 o("h61d92b0", "Elimina spazio programmato"),
-                o("a488f2eb", function (e) {
-                    return "Nella selezione: " + e.count + " di " + e.total;
+                o("a488f2eb", function (i) {
+                    return "Nella selezione: " + i.count + " di " + i.total;
                 }),
-                o("d2dfe80d", function (e) {
-                    return "Data e ora di inizio dello spazio: " + e.date + ", " + e.time;
+                o("d2dfe80d", function (i) {
+                    return "Data e ora di inizio dello spazio: " + i.date + ", " + i.time;
                 }),
-                o("aef95393", function (e) {
-                    return "Hai già programmato uno spazio per il giorno " + e.date + " alle ore " + e.time;
+                o("aef95393", function (i) {
+                    return "Hai già programmato uno spazio per il giorno " + i.date + " alle ore " + i.time;
                 }),
                 o("a7069f2e", "Modifica dettagli"),
                 o("a15f06fc", "Spazi programmati"),
                 o("f6cfa3fe", "Gli spazi non possono essere programmati nel passato."),
-                o("a8f71a2b", function (e) {
-                    return "Uno spazio non può essere programmato con una data successiva ai prossimi " + e.days + " giorni.";
+                o("a8f71a2b", function (i) {
+                    return "Uno spazio non può essere programmato con una data successiva ai prossimi " + i.days + " giorni.";
                 }),
                 o("ae092f6c", "Lo spazio programmato non può essere eliminato."),
                 o("jd7f0030", "Spazio programmato aggiornato"),
                 o("a26da034", "Salva modifiche"),
                 o("b3633046", "Scegli community"),
-                o("ce447fcb", function (e) {
-                    return e.count + " ascoltator" + t(e.count, "e", "i");
+                o("ce447fcb", function (i) {
+                    return i.count + " ascoltator" + t(i.count, "e", "i");
                 }),
-                o("ef7da97f", function (e) {
-                    return e.count + " in ascolto";
+                o("ef7da97f", function (i) {
+                    return i.count + " in ascolto";
                 }),
-                o("a065e7e7", function (e) {
-                    return "In corso: " + e.spaceTitle;
+                o("a065e7e7", function (i) {
+                    return "In corso: " + i.spaceTitle;
                 }),
-                o("hd5e7b21", function (e) {
-                    return e.date + ": " + e.spaceTitle;
+                o("hd5e7b21", function (i) {
+                    return i.date + ": " + i.spaceTitle;
                 }),
-                o("f651e375", function (e) {
-                    return "Questo spazio è terminato: " + e.spaceTitle;
+                o("f651e375", function (i) {
+                    return "Questo spazio è terminato: " + i.spaceTitle;
                 }),
-                o("i8478ae7", function (e) {
-                    return "Riproduci registrazione: " + e.spaceTitle;
+                o("i8478ae7", function (i) {
+                    return "Riproduci registrazione: " + i.spaceTitle;
                 }),
-                o("b2a94e93", function (e) {
-                    return e.hostSpace + " · " + e.descriptionListening + " · " + e.descriptionGeneric;
+                o("b2a94e93", function (i) {
+                    return i.hostSpace + " · " + i.descriptionListening + " · " + i.descriptionGeneric;
                 }),
-                o("f6432ce5", function (e) {
-                    return e.hostSpace + " · " + e.descriptionGeneric;
+                o("f6432ce5", function (i) {
+                    return i.hostSpace + " · " + i.descriptionGeneric;
                 }),
                 o("e4e811fc", "Collegamento in corso..."),
-                o("aadbc747", function (e) {
+                o("aadbc747", function (i) {
                     return "Cohost";
                 }),
-                o("hbd6035f", function (e) {
-                    return "partecipant" + t(e.speakerCount, "e attivo", "i attivi");
+                o("hbd6035f", function (i) {
+                    return "partecipant" + t(i.speakerCount, "e attivo", "i attivi");
                 }),
                 o("if420852", "Riproduci registrazione"),
                 o("f7dc3b1c", "Questo spazio è terminato"),
@@ -5250,17 +5250,17 @@
                 o("d782b808", "Abbonarsi ha i suoi vantaggi"),
                 o("i7f83b8d", "Scopri di più"),
                 o("fc962610", "Cerca in base al nome di uno spazio o un host"),
-                o("e5b5f091", function (e) {
-                    return 'Nessuno spazio trovato per "' + e.searchQuery + '"';
+                o("e5b5f091", function (i) {
+                    return 'Nessuno spazio trovato per "' + i.searchQuery + '"';
                 }),
                 o("g5812140", "Perché non avviarne uno?"),
-                o("e8fe1ecb", function (e) {
-                    return "Nessuno spazio " + e.section + ' per "' + e.searchQuery + '"';
+                o("e8fe1ecb", function (i) {
+                    return "Nessuno spazio " + i.section + ' per "' + i.searchQuery + '"';
                 }),
                 o("c432d2b2", "Cerca uno spazio"),
                 o("d39e8b30", "Aggiungi una nota"),
-                o("dc7a6625", function (e) {
-                    return "Pubblicazione come " + e.displayAlias;
+                o("dc7a6625", function (i) {
+                    return "Pubblicazione come " + i.displayAlias;
                 }),
                 o("g17e4064", "La nota verrà pubblicata utilizzando il tuo pseudonimo per Note della collettività. Non ci sarà alcun riferimento al tuo profilo X."),
                 o("d9b09ee8", "Chiediamo massima precisione. È necessario indicare i link alle fonti esterne."),
@@ -5380,17 +5380,17 @@
                 o("a1fb516c", "La nota è scritta in modo da essere utile in tutti i post che includono il video."),
                 o("be46a61e", "La nota è scritta in modo da essere utile in tutti i post che includono il contenuto multimediale."),
                 o("ied1c2c2", "La nota è piuttosto specifica per questo post e potrebbe non essere pertinente in altri post."),
-                o("gb2433df", function (e) {
-                    return "" + e.noteMatchUrl;
+                o("gb2433df", function (i) {
+                    return "" + i.noteMatchUrl;
                 }),
-                o("gdfbdd93", function (e) {
-                    return e.matchCount + " post";
+                o("gdfbdd93", function (i) {
+                    return i.matchCount + " post";
                 }),
-                o("d7959c4d", function (e) {
-                    return e.matchCount + " post";
+                o("d7959c4d", function (i) {
+                    return i.matchCount + " post";
                 }),
-                o("ff5be16d", function (e) {
-                    return e.matchCount + " post";
+                o("ff5be16d", function (i) {
+                    return i.matchCount + " post";
                 }),
                 o("abdd8d0a", "Modifica nota"),
                 o("c097608e", "La tua nota non ha una spiegazione"),
@@ -5516,101 +5516,101 @@
                 o("f7427d6f", "questo post"),
                 o("aa94541d", "questo post"),
                 o("fe821ebb", "questo post"),
-                o("c5cc74e5", function (e) {
-                    return "" + e.urlNoteDisplayUrl;
+                o("c5cc74e5", function (i) {
+                    return "" + i.urlNoteDisplayUrl;
                 }),
                 o("ff14b6b8", "un altro post"),
-                o("b5cc9c47", function (e) {
-                    return "" + e.urlNoteDisplayUrl;
+                o("b5cc9c47", function (i) {
+                    return "" + i.urlNoteDisplayUrl;
                 }),
-                o("hb90fe9a", function (e) {
-                    return e.matches + " post";
+                o("hb90fe9a", function (i) {
+                    return i.matches + " post";
                 }),
-                o("i23a64ea", function (e) {
-                    return e.matches + " post";
+                o("i23a64ea", function (i) {
+                    return i.matches + " post";
                 }),
-                o("h6c5af52", function (e) {
-                    return e.matches + " post";
+                o("h6c5af52", function (i) {
+                    return i.matches + " post";
                 }),
-                o("c2584f58", function (e) {
-                    return e.matches + " post";
+                o("c2584f58", function (i) {
+                    return i.matches + " post";
                 }),
                 o("a0dec723", "questo post"),
-                o("f20fa57c", function (e) {
-                    return e.matches + " post";
+                o("f20fa57c", function (i) {
+                    return i.matches + " post";
                 }),
-                o("bd60b152", function (e) {
-                    return e.matches + " post";
+                o("bd60b152", function (i) {
+                    return i.matches + " post";
                 }),
                 o("b95920ef", "questo post"),
-                o("f8dcced2", function (e) {
-                    return e.matches + " post";
+                o("f8dcced2", function (i) {
+                    return i.matches + " post";
                 }),
-                o("iaf626c0", function (e) {
-                    return e.matches + " post";
+                o("iaf626c0", function (i) {
+                    return i.matches + " post";
                 }),
                 o("e3002eab", "questo post"),
-                o("df3f2d52", function (e) {
-                    return e.matches + " post";
+                o("df3f2d52", function (i) {
+                    return i.matches + " post";
                 }),
-                o("cd83d952", function (e) {
-                    return e.matches + " post";
+                o("cd83d952", function (i) {
+                    return i.matches + " post";
                 }),
                 o("ia35cd39", "questo post"),
-                o("a499228a", function (e) {
-                    return e.matches + " post";
+                o("a499228a", function (i) {
+                    return i.matches + " post";
                 }),
-                o("cf9ac658", function (e) {
-                    return e.matches + " post";
+                o("cf9ac658", function (i) {
+                    return i.matches + " post";
                 }),
                 o("fa56f7cb", "questo post"),
-                o("b826c19c", function (e) {
-                    return e.matches + " post";
+                o("b826c19c", function (i) {
+                    return i.matches + " post";
                 }),
-                o("c4618eb8", function (e) {
-                    return e.matches + " post";
+                o("c4618eb8", function (i) {
+                    return i.matches + " post";
                 }),
                 o("i56af3fd", "questo post"),
-                o("g1f275b6", function (e) {
-                    return e.matches + " post";
+                o("g1f275b6", function (i) {
+                    return i.matches + " post";
                 }),
-                o("i2cac82c", function (e) {
-                    return e.matches + " post";
+                o("i2cac82c", function (i) {
+                    return i.matches + " post";
                 }),
-                o("a2ae91f1", function (e) {
-                    return "" + e.urlNoteDisplayUrl;
+                o("a2ae91f1", function (i) {
+                    return "" + i.urlNoteDisplayUrl;
                 }),
-                o("d3205ee4", function (e) {
-                    return e.matches + " post";
+                o("d3205ee4", function (i) {
+                    return i.matches + " post";
                 }),
-                o("daeff73b", function (e) {
-                    return "" + e.urlNoteDisplayUrl;
+                o("daeff73b", function (i) {
+                    return "" + i.urlNoteDisplayUrl;
                 }),
-                o("fc546c2e", function (e) {
-                    return e.matches + " post";
+                o("fc546c2e", function (i) {
+                    return i.matches + " post";
                 }),
-                o("i1df5f5d", function (e) {
-                    return "" + e.urlNoteDisplayUrl;
+                o("i1df5f5d", function (i) {
+                    return "" + i.urlNoteDisplayUrl;
                 }),
                 o("g03f5337", "questo post"),
-                o("f5b30b8a", function (e) {
-                    return e.matches + " post";
+                o("f5b30b8a", function (i) {
+                    return i.matches + " post";
                 }),
-                o("e0a49d5b", function (e) {
-                    return "" + e.urlNoteDisplayUrl;
+                o("e0a49d5b", function (i) {
+                    return "" + i.urlNoteDisplayUrl;
                 }),
-                o("e25f9fd4", function (e) {
-                    return e.matches + " post";
+                o("e25f9fd4", function (i) {
+                    return i.matches + " post";
                 }),
-                o("bae49ec3", function (e) {
-                    return "" + e.urlNoteDisplayUrl;
+                o("bae49ec3", function (i) {
+                    return "" + i.urlNoteDisplayUrl;
                 }),
                 o("d595bffd", "questo post"),
-                o("ef8a55a6", function (e) {
-                    return e.matches + " post";
+                o("ef8a55a6", function (i) {
+                    return i.matches + " post";
                 }),
-                o("a3aa3cb1", function (e) {
-                    return "" + e.urlNoteDisplayUrl;
+                o("a3aa3cb1", function (i) {
+                    return "" + i.urlNoteDisplayUrl;
                 }),
                 o("d5061d00", "Non visibile su X"),
                 o("e272836c", "Eliminare la nota?"),
@@ -5639,23 +5639,23 @@
                 o("d39720d3", "utile"),
                 o("i7d91dc9", "piuttosto utile"),
                 o("c75b7fb4", "non utile"),
-                o("d9025c46", function (e) {
-                    return e.matches + " post";
+                o("d9025c46", function (i) {
+                    return i.matches + " post";
                 }),
-                o("ce1c95d6", function (e) {
-                    return "" + e.noteDisplayUrl;
+                o("ce1c95d6", function (i) {
+                    return "" + i.noteDisplayUrl;
                 }),
-                o("jd7c58d8", function (e) {
-                    return e.matches + " post";
+                o("jd7c58d8", function (i) {
+                    return i.matches + " post";
                 }),
-                o("ebb0b116", function (e) {
-                    return e.matches + " post";
+                o("ebb0b116", function (i) {
+                    return i.matches + " post";
                 }),
-                o("f9005c24", function (e) {
-                    return e.matches + " post";
+                o("f9005c24", function (i) {
+                    return i.matches + " post";
                 }),
-                o("a4886e54", function (e) {
-                    return "" + e.noteDisplayUrl;
+                o("a4886e54", function (i) {
+                    return "" + i.noteDisplayUrl;
                 }),
                 o("h8335712", "La tua nota"),
                 o("b9f18eec", "Attualmente valutata come utile"),
@@ -5685,8 +5685,8 @@
                 o("bd31adde", "Hai abbandonato il programma Note della collettività."),
                 o("a796c19c", "Unisciti nuovamente"),
                 o("h837a96c", "Ti unirai nuovamente al programma Note della collettività."),
-                o("a4d4bcb9", function (e) {
-                    return "Se vorrai unirti nuovamente, potrai farlo da qui tra " + e.numDaysToRejoin + " giorn" + t(e.numDaysToRejoin, "o", "i") + ".";
+                o("a4d4bcb9", function (i) {
+                    return "Se vorrai unirti nuovamente, potrai farlo da qui tra " + i.numDaysToRejoin + " giorn" + t(i.numDaysToRejoin, "o", "i") + ".";
                 }),
                 o("a490bc51", "Scopri di più"),
                 o("c94ad3e8", "inviaci un feedback"),
@@ -5825,15 +5825,15 @@
                 o("f8fc0b48", "Crea una cartella"),
                 o("c14bcdde", "Cerca nei segnalibri"),
                 o("e9c65c4a", "Ricerca nei segnalibri"),
-                o("b92a21d9", function (e) {
-                    return "Nessun risultato per " + e.query;
+                o("b92a21d9", function (i) {
+                    return "Nessun risultato per " + i.query;
                 }),
                 o("f191a2ba", "impostazioni di ricerca"),
                 o("a068008a", "Attualmente non è possibile caricare le cartelle"),
                 o("f075b0e8", "Modifica cartella"),
                 o("beba2a0e", "Crea una nuova cartella di segnalibri"),
-                o("e41c9b4f", function (e) {
-                    return "Saved to " + e.bookmarkFolderName;
+                o("e41c9b4f", function (i) {
+                    return "Saved to " + i.bookmarkFolderName;
                 }),
                 o("h18f86a4", "Elimina cartella"),
                 o("f4ea967a", "La cartella è stata eliminata"),
@@ -5850,21 +5850,21 @@
                 o("fce0c59e", "Impossibile convertire l'animazione JSON. Controlla il formato JSON nel file dell'animazione e riprova."),
                 o("g0eea6c2", "Impossibile leggere il file dell'animazione JSON. Prova a riaprirlo."),
                 o("ae58026a", "Apri un file .JSON di Mi piace brandizzato e visualizzane l'anteprima"),
-                o("hd0bc1eb", function (e) {
-                    return e.name + " è in diretta";
+                o("hd0bc1eb", function (i) {
+                    return i.name + " è in diretta";
                 }),
-                o("bea1f26b", function (e) {
-                    return e.name + " era in diretta";
+                o("bea1f26b", function (i) {
+                    return i.name + " era in diretta";
                 }),
-                o("ab3ee97f", function (e) {
-                    return e.screenName + " non è in diretta";
+                o("ab3ee97f", function (i) {
+                    return i.screenName + " non è in diretta";
                 }),
                 o("d39d46c4", "Titolo aggiornato. Potrebbero volerci fino a 30 secondi prima che le modifiche siano visibili."),
-                o("e44095a5", function (e) {
-                    return "Inizio: " + e.timestamp;
+                o("e44095a5", function (i) {
+                    return "Inizio: " + i.timestamp;
                 }),
-                o("j83f29dd", function (e) {
-                    return "Termine: " + e.timestamp;
+                o("j83f29dd", function (i) {
+                    return "Termine: " + i.timestamp;
                 }),
                 o("daca8a2c", "Apri nel dock"),
                 o("e3aac82a", "Caricamento trasmissione in corso"),
@@ -5887,14 +5887,14 @@
                 o("c8d33380", "Nuovi elementi"),
                 o("cb6adb10", "Scopri le community"),
                 o("df362964", "Trova community"),
-                o("dfd5031f", function (e) {
-                    return e.newTweets + " nuov" + t(e.newTweets, "o", "i") + " post.";
+                o("dfd5031f", function (i) {
+                    return i.newTweets + " nuov" + t(i.newTweets, "o", "i") + " post.";
                 }),
-                o("ha4bb8a9", function (e) {
-                    return e.reportedTweets + " segnalazion" + t(e.reportedTweets, "e", "i");
+                o("ha4bb8a9", function (i) {
+                    return i.reportedTweets + " segnalazion" + t(i.reportedTweets, "e", "i");
                 }),
-                o("caf003b3", function (e) {
-                    return e.memberRequests + " " + t(e.memberRequests, "richiesta", "nuove richieste");
+                o("caf003b3", function (i) {
+                    return i.memberRequests + " " + t(i.memberRequests, "richiesta", "nuove richieste");
                 }),
                 o("a2118086", "Ordina post"),
                 o("hb01fe46", "Quando lo farai, li vedrai qui."),
@@ -5909,27 +5909,27 @@
                 o("ga2aa43c", "Moderatori"),
                 o("b139b54a", "Invita membri"),
                 o("cf4898a0", "Cerca utenti"),
-                o("g30bc699", function (e) {
-                    return "Visualizza il profilo di @" + e.screenName;
+                o("g30bc699", function (i) {
+                    return "Visualizza il profilo di @" + i.screenName;
                 }),
                 o("e585d844", "Aggiungi al team di moderazione"),
                 o("cab7c6f8", "Vuoi aggiungere al team?"),
-                o("e96d5255", function (e) {
-                    return "@" + e.screenName + " fa ora parte dei moderatori.";
+                o("e96d5255", function (i) {
+                    return "@" + i.screenName + " fa ora parte dei moderatori.";
                 }),
-                o("f348a395", function (e) {
-                    return "Attualmente non possiamo aggiungere @" + e.screenName + " al team di moderazione. Riprova più tardi.";
+                o("f348a395", function (i) {
+                    return "Attualmente non possiamo aggiungere @" + i.screenName + " al team di moderazione. Riprova più tardi.";
                 }),
                 o("c3a1aebe", "Rimuovi dal team di moderazione"),
                 o("c273c8a6", "Vuoi rimuovere dal team?"),
-                o("c0eb2a53", function (e) {
-                    return "@" + e.screenName + " non è più moderatore.";
+                o("c0eb2a53", function (i) {
+                    return "@" + i.screenName + " non è più moderatore.";
                 }),
-                o("a5808125", function (e) {
-                    return "Attualmente non possiamo rimuovere @" + e.screenName + " dal team di moderazione. Riprova più tardi.";
+                o("a5808125", function (i) {
+                    return "Attualmente non possiamo rimuovere @" + i.screenName + " dal team di moderazione. Riprova più tardi.";
                 }),
-                o("a51d671b", function (e) {
-                    return "Banna @" + e.screenName + " dalla community";
+                o("a51d671b", function (i) {
+                    return "Banna @" + i.screenName + " dalla community";
                 }),
                 o("cdd87524", "Qui non c'è ancora nessuno"),
                 o("cca51910", "Quando gli utenti si uniranno a questa community, li vedrai qui."),
@@ -5944,22 +5944,22 @@
                 o("ca373cd2", "Gli utenti invitati dai membri esistenti vengono approvati automaticamente."),
                 o("dfdcc6b4", "Gestisci chi può unirsi alla tua community. Ricorda che tutte le community sono pubblicamente visibili su X."),
                 o("h3e55b40", "Nome della community"),
-                o("dd71d9c9", function (e) {
-                    return "Il nome deve includere da " + e.minCharacterCount + " a " + e.maxCharacterCount + " caratteri e non può contenere hashtag o @nomiutente";
+                o("dd71d9c9", function (i) {
+                    return "Il nome deve includere da " + i.minCharacterCount + " a " + i.maxCharacterCount + " caratteri e non può contenere hashtag o @nomiutente";
                 }),
-                o("cf65e56b", function (e) {
-                    return "Il nome deve includere da " + e.minCharacterCount + " a " + e.maxCharacterCount + " caratteri";
+                o("cf65e56b", function (i) {
+                    return "Il nome deve includere da " + i.minCharacterCount + " a " + i.maxCharacterCount + " caratteri";
                 }),
                 o("d936eeca", "I nomi non possono includere hashtag o @nomiutente."),
                 o("e2df7cf2", "Scopo della community"),
                 o("be9bb312", "Uno scopo dettagliato descrive la community e permette agli altri di sapere cosa aspettarsi"),
-                o("e988475f", function (e) {
-                    return "Lo scopo deve includere da " + e.minCharacterCount + " a " + e.maxCharacterCount + " caratteri";
+                o("e988475f", function (i) {
+                    return "Lo scopo deve includere da " + i.minCharacterCount + " a " + i.maxCharacterCount + " caratteri";
                 }),
                 o("gcddfba8", "Domanda di approvazione"),
                 o("hf86d862", "Quando inviano la loro richiesta per unirsi, gli utenti possono rispondere a questa domanda. La risposta sarà inclusa nella richiesta. Per rimuovere la domanda, non aggiungere la risposta."),
-                o("i88b7305", function (e) {
-                    return "La domanda non deve superare i " + e.maxCharacterCount + " caratteri";
+                o("i88b7305", function (i) {
+                    return "La domanda non deve superare i " + i.maxCharacterCount + " caratteri";
                 }),
                 o("dce5e1b4", "Strumenti per amministratori"),
                 o("c5d8c93e", "Strumenti per moderatori"),
@@ -5967,11 +5967,11 @@
                 o("a87df2ee", "Gestione community"),
                 o("ee609174", "Impostazioni generali"),
                 o("ab19cdaa", "Impostazioni sullo spam"),
-                o("d755f47d", function (e) {
-                    return e.count + " nuov" + t(e.count, "o", "i") + " post da esaminare";
+                o("d755f47d", function (i) {
+                    return i.count + " nuov" + t(i.count, "o", "i") + " post da esaminare";
                 }),
-                o("efc26607", function (e) {
-                    return e.memberCount + " membr" + t(e.memberCount, "o", "i");
+                o("efc26607", function (i) {
+                    return i.memberCount + " membr" + t(i.memberCount, "o", "i");
                 }),
                 o("adfcc3ce", "Aggiungi, elimina o modifica regole"),
                 o("d0330d9c", "Consulta le regole"),
@@ -5981,8 +5981,8 @@
                 o("g0cbfc50", "Guida utile per la moderazione di community"),
                 o("h6ebcfca", "Mostra questa community sul tuo profilo"),
                 o("c0fa0634", "Metti in evidenza la tua community"),
-                o("da035fd5", function (e) {
-                    return "Novità" + e.ttc_c9s_spotlight_header;
+                o("da035fd5", function (i) {
+                    return "Novità" + i.ttc_c9s_spotlight_header;
                 }),
                 o("h41224f8", "Metti in evidenza la tua community sul profilo"),
                 o("b18e94b2", "Passa a un profilo professionale per mostrare una community sul tuo profilo, accedere alle statistiche sul pubblico e non solo."),
@@ -5993,8 +5993,8 @@
                 o("a6e13fac", "Vuoi davvero abbandonare il team di moderazione?"),
                 o("e538848c", "Non avrai più accesso agli strumenti di moderazione. Se cambi idea, dovrai ricevere un nuovo invito in qualità di moderatore."),
                 o("j49e6aa2", "Sì, voglio abbandonare"),
-                o("dde5f323", function (e) {
-                    return e.count + " nuov" + t(e.count, "a richiesta", "e richieste") + " membri da esaminare";
+                o("dde5f323", function (i) {
+                    return i.count + " nuov" + t(i.count, "a richiesta", "e richieste") + " membri da esaminare";
                 }),
                 o("f5e0332a", "Contenuti per adulti (espliciti)"),
                 o("e983404a", "Hashtag fissati"),
@@ -6005,8 +6005,8 @@
                 o("a43bed28", "Se la tua community include contenuti per adulti e/o sensibili, devi abilitare questa opzione. Se questo step viene omesso, verrà applicato un filtro automatico su tutti i contenuti per adulti nella community."),
                 o("ab1069de", "Elimina community"),
                 o("bbc91896", "L'azione non può essere annullata. Gli autori dei post possono ancora vedere i propri post."),
-                o("i27eb0b7", function (e) {
-                    return "" + e.communityName;
+                o("i27eb0b7", function (i) {
+                    return "" + i.communityName;
                 }),
                 o("a49f884e", "Banner della community"),
                 o("ea965b82", "Modifica banner della community"),
@@ -6040,8 +6040,8 @@
                 o("cc961258", "Hai raggiunto il numero massimo di termini di ricerca consentiti"),
                 o("df4aca88", "I termini di ricerca devono includere da 1 a 30 caratteri"),
                 o("ie58fa58", "I termini di ricerca non devono includere spazi o caratteri speciali"),
-                o("hd176a01", function (e) {
-                    return "Argomento salvato! Ora l'argomento community è " + e.newTopicName;
+                o("hd176a01", function (i) {
+                    return "Argomento salvato! Ora l'argomento community è " + i.newTopicName;
                 }),
                 o("i39a43cc", "Argomento community rimosso"),
                 o("e81b196e", "Non è stato possibile salvare il nuovo argomento"),
@@ -6074,19 +6074,19 @@
                 o("ee8c43a0", "Più le regole sono chiare dall'inizio e meno dovrai intervenire in seguito."),
                 o("gaa3239a", "Stiamo riscontrando problemi con il salvataggio della nuova regola. Riprova più tardi."),
                 o("a67445d6", "Limite raggiunto"),
-                o("fcbe0993", function (e) {
-                    return "Le community possono avere fino a " + e.maxRuleCount + " regole. Per aggiungere una nuova regola, eliminane una tra quelle esistenti.";
+                o("fcbe0993", function (i) {
+                    return "Le community possono avere fino a " + i.maxRuleCount + " regole. Per aggiungere una nuova regola, eliminane una tra quelle esistenti.";
                 }),
                 o("c66769a4", "Regola"),
-                o("ef02695b", function (e) {
-                    return "I nomi delle regole possono includere da " + e.minCharacterCount + " a " + e.maxCharacterCount + " caratteri";
+                o("ef02695b", function (i) {
+                    return "I nomi delle regole possono includere da " + i.minCharacterCount + " a " + i.maxCharacterCount + " caratteri";
                 }),
                 o("c8242020", "Descrizione (facoltativa)"),
-                o("d32cf5e7", function (e) {
-                    return "Le descrizioni possono includere fino a " + e.maxCharacterCount + " caratteri";
+                o("d32cf5e7", function (i) {
+                    return "Le descrizioni possono includere fino a " + i.maxCharacterCount + " caratteri";
                 }),
-                o("f8fa00c7", function (e) {
-                    return "Descriptions can’t exceed " + e.maxCharacterCount + " characters";
+                o("f8fa00c7", function (i) {
+                    return "Descriptions can’t exceed " + i.maxCharacterCount + " characters";
                 }),
                 o("d45ae5e0", "Non dimenticare di comunicarla alla community"),
                 o("c1631260", "In caso di modifiche alle regole, ti suggeriamo di informare i membri in modo da consolidare la fiducia tra di voi."),
@@ -6105,18 +6105,18 @@
                 o("fcda89f4", "Crea una nuova lista con gli account X che postano contenuti pertinenti per la tua community. Lascia pubblica la lista affinché sia visibile alla community."),
                 o("c09609d8", "Crea una lista"),
                 o("dfddd842", "Inviato tramite Messaggio Diretto"),
-                o("a3b3939b", function (e) {
-                    return "È già stato mandato un invito a @" + e.screen_name;
+                o("a3b3939b", function (i) {
+                    return "È già stato mandato un invito a @" + i.screen_name;
                 }),
-                o("db4f0cc9", function (e) {
-                    return "@" + e.screen_name + " fa già parte della community";
+                o("db4f0cc9", function (i) {
+                    return "@" + i.screen_name + " fa già parte della community";
                 }),
                 o("h252ede6", "Hai già terminato tutti gli inviti"),
-                o("a5cd93f9", function (e) {
-                    return "Attualmente non è possibile invitare @" + e.screen_name;
+                o("a5cd93f9", function (i) {
+                    return "Attualmente non è possibile invitare @" + i.screen_name;
                 }),
-                o("i6568549", function (e) {
-                    return "Inviti restanti: " + e.remaining_invite_count + " ";
+                o("i6568549", function (i) {
+                    return "Inviti restanti: " + i.remaining_invite_count + " ";
                 }),
                 o("b4f16d00", "Cerca utenti da invitare"),
                 o("ja1387a8", "I risultati di ricerca includeranno solo i tuoi follower e gli utenti che hanno abilitato la ricezione di Messaggi Diretti da chiunque."),
@@ -6142,17 +6142,17 @@
                 o("i314218e", "Le metriche mostrate riguardano gli ultimi 7 giorni. Aggiornamento: "),
                 o("addbb11e", "Nessuna nuova richiesta di adesione"),
                 o("c38131de", "Qui non c'è altro. Quando arriveranno nuove richieste, le vedrai qui."),
-                o("d7f13fb9", function (e) {
-                    return "@" + e.screenName + " ha ricevuto l'approvazione e adesso fa parte della tua community";
+                o("d7f13fb9", function (i) {
+                    return "@" + i.screenName + " ha ricevuto l'approvazione e adesso fa parte della tua community";
                 }),
-                o("a340df67", function (e) {
-                    return "@" + e.screenName + " non ha ricevuto l'approvazione quindi non può unirsi alla community";
+                o("a340df67", function (i) {
+                    return "@" + i.screenName + " non ha ricevuto l'approvazione quindi non può unirsi alla community";
                 }),
-                o("jd8aae9d", function (e) {
-                    return "Attualmente non possiamo approvare @" + e.screenName + ". Riprova più tardi.";
+                o("jd8aae9d", function (i) {
+                    return "Attualmente non possiamo approvare @" + i.screenName + ". Riprova più tardi.";
                 }),
-                o("i580e149", function (e) {
-                    return "Attualmente non possiamo respingere @" + e.screenName + ". Riprova più tardi.";
+                o("i580e149", function (i) {
+                    return "Attualmente non possiamo respingere @" + i.screenName + ". Riprova più tardi.";
                 }),
                 o("b4a38e4e", "Hai bloccato questo utente. Se la sua adesione sarà approvata, dovrai sbloccarlo per vedere i suoi post."),
                 o("f0956736", "Hai silenziato questo utente. Se la sua adesione sarà approvata, dovrai riattivarlo per vedere i suoi post."),
@@ -6162,80 +6162,80 @@
                 o("b8171558", "Bannati"),
                 o("e32e7e1a", "Moderatore"),
                 o("b53fb7c6", "Attualmente non possiamo annullare questa azione. Riprova più tardi."),
-                o("c546ba07", function (e) {
-                    return "Visualizza il profilo di " + e.userName;
+                o("c546ba07", function (i) {
+                    return "Visualizza il profilo di " + i.userName;
                 }),
-                o("h4516e4f", function (e) {
-                    return "Cerca i post di " + e.userName + " nella community";
+                o("h4516e4f", function (i) {
+                    return "Cerca i post di " + i.userName + " nella community";
                 }),
-                o("j4d4a809", function (e) {
-                    return e.moderatorName + " ha nascosto un post";
+                o("j4d4a809", function (i) {
+                    return i.moderatorName + " ha nascosto un post";
                 }),
-                o("ja589ea5", function (e) {
-                    return e.revertedModeratorName + " ha ripristinato la visibilità di un post";
+                o("ja589ea5", function (i) {
+                    return i.revertedModeratorName + " ha ripristinato la visibilità di un post";
                 }),
-                o("c904a2ff", function (e) {
-                    return e.moderatorName + " ha fissato un post";
+                o("c904a2ff", function (i) {
+                    return i.moderatorName + " ha fissato un post";
                 }),
-                o("b43358cf", function (e) {
-                    return e.moderatorName + " ha staccato un post";
+                o("b43358cf", function (i) {
+                    return i.moderatorName + " ha staccato un post";
                 }),
-                o("bb6299a7", function (e) {
-                    return "" + e.moderatorName;
+                o("bb6299a7", function (i) {
+                    return "" + i.moderatorName;
                 }),
-                o("f0347599", function (e) {
-                    return "" + e.moderatorName;
+                o("f0347599", function (i) {
+                    return "" + i.moderatorName;
                 }),
-                o("e33d133b", function (e) {
-                    return "" + e.moderatorName;
+                o("e33d133b", function (i) {
+                    return "" + i.moderatorName;
                 }),
-                o("c29ec092", function (e) {
-                    return "" + e.revertedModeratorName;
+                o("c29ec092", function (i) {
+                    return "" + i.revertedModeratorName;
                 }),
                 o("f6530972", "Ripristina visibilità post"),
                 o("j68fc824", "Visibilità ripristinata"),
                 o("j9541e18", "Cerca post"),
-                o("j10903d7", function (e) {
-                    return e.moderatorName + " ha rimosso un membro";
+                o("j10903d7", function (i) {
+                    return i.moderatorName + " ha rimosso un membro";
                 }),
-                o("e38bf285", function (e) {
-                    return e.revertedModeratorName + " ha ripristinato un membro";
+                o("e38bf285", function (i) {
+                    return i.revertedModeratorName + " ha ripristinato un membro";
                 }),
-                o("dea0d437", function (e) {
-                    return e.userName + " ha eseguito l'unione alla community";
+                o("dea0d437", function (i) {
+                    return i.userName + " ha eseguito l'unione alla community";
                 }),
-                o("j10346f5", function (e) {
-                    return e.userName + " ha abbandonato la community";
+                o("j10346f5", function (i) {
+                    return i.userName + " ha abbandonato la community";
                 }),
-                o("jb159607", function (e) {
-                    return e.moderatorName + " ha approvato la richiesta di un membro";
+                o("jb159607", function (i) {
+                    return i.moderatorName + " ha approvato la richiesta di un membro";
                 }),
-                o("af7a63eb", function (e) {
-                    return e.moderatorName + " ha rifiutato la richiesta di un membro";
+                o("af7a63eb", function (i) {
+                    return i.moderatorName + " ha rifiutato la richiesta di un membro";
                 }),
-                o("i717dfc3", function (e) {
-                    return e.revertedModeratorName + " ha riapprovato la richiesta di un membro";
+                o("i717dfc3", function (i) {
+                    return i.revertedModeratorName + " ha riapprovato la richiesta di un membro";
                 }),
-                o("ce5ac32b", function (e) {
-                    return "" + e.moderatorName;
+                o("ce5ac32b", function (i) {
+                    return "" + i.moderatorName;
                 }),
-                o("a7f869a4", function (e) {
-                    return "" + e.revertedModeratorName;
+                o("a7f869a4", function (i) {
+                    return "" + i.revertedModeratorName;
                 }),
-                o("efad949a", function (e) {
-                    return "" + e.userName;
+                o("efad949a", function (i) {
+                    return "" + i.userName;
                 }),
-                o("d0ae5998", function (e) {
-                    return "" + e.userName;
+                o("d0ae5998", function (i) {
+                    return "" + i.userName;
                 }),
-                o("ef020751", function (e) {
-                    return "" + e.moderatorName;
+                o("ef020751", function (i) {
+                    return "" + i.moderatorName;
                 }),
-                o("a46c5a63", function (e) {
-                    return "" + e.moderatorName;
+                o("a46c5a63", function (i) {
+                    return "" + i.moderatorName;
                 }),
-                o("h55401a4", function (e) {
-                    return "" + e.revertedModeratorName;
+                o("h55401a4", function (i) {
+                    return "" + i.revertedModeratorName;
                 }),
                 o("d31e695c", "Riapprova richiesta"),
                 o("i9a18ce0", "Riapprovata"),
@@ -6245,12 +6245,12 @@
                 o("hb21cdb6", "Banna"),
                 o("dc7a9436", "Segnala post a X"),
                 o("e2bc5db0", "@X"),
-                o("d0a1b248", function (e) {
-                    return e.formattedCount + " membr" + t(e.count, "o", "i");
+                o("d0a1b248", function (i) {
+                    return i.formattedCount + " membr" + t(i.count, "o", "i");
                 }),
                 o("cd4d48d2", "@X"),
-                o("ff0f742a", function (e) {
-                    return e.formattedCount + " membr" + t(e.count, "o", "i");
+                o("ff0f742a", function (i) {
+                    return i.formattedCount + " membr" + t(i.count, "o", "i");
                 }),
                 o("dca19c06", "Hai nascosto questo post"),
                 o("dd641764", "Hai preservato questo post"),
@@ -6258,8 +6258,8 @@
                 o("bbd69672", "Questo post è stato nascosto da un moderatore per violazione delle regole della community"),
                 o("c730a21c", "Ecco la regola vìolata:"),
                 o("a5baa7d2", "Prenditi un minuto per rivedere le regole. Sono utili a garantire che le conversazioni restino sicure e costruttive."),
-                o("icc32e3d", function (e) {
-                    return "Un moderatore ha eseguito la tua rimozione da " + e.communityName + " poiché hai violato la seguente regola della community:";
+                o("icc32e3d", function (i) {
+                    return "Un moderatore ha eseguito la tua rimozione da " + i.communityName + " poiché hai violato la seguente regola della community:";
                 }),
                 o("d7d9be8a", "Scopri community e post"),
                 o("cae9962e", "Al momento non è possibile trovare alcuna community."),
@@ -6271,8 +6271,8 @@
                 o("a1c41fe8", "Post della community con hashtag"),
                 o("f27a2232", "Cerca nella community"),
                 o("ie2efe36", "Risultati di ricerca per la community"),
-                o("a7c2e06d", function (e) {
-                    return e.communityName + " community";
+                o("a7c2e06d", function (i) {
+                    return i.communityName + " community";
                 }),
                 o("a94092a2", "Adesso hai accesso agli strumenti di moderazione"),
                 o("be6dfbae", "In quanto moderatore della community, puoi aggiungere e rimuovere membri."),
@@ -6330,8 +6330,8 @@
                 o("f47b48f6", "utente"),
                 o("b2ca74aa", "Stai per passare a un account con delega"),
                 o("ba77b438", "Cambia account"),
-                o("g5261e91", function (e) {
-                    return "Stai navigando come @" + e.screenName + ".";
+                o("g5261e91", function (i) {
+                    return "Stai navigando come @" + i.screenName + ".";
                 }),
                 o("cc15a3ea", "Ricorda che questo account non è di tua proprietà. In quanto amministratore, puoi inviare Messaggi Diretti, pubblicare post e creare liste, nonché procedere alla loro visualizzazione. Puoi anche invitare collaboratori nell'account o rimuoverli e visualizzare le statistiche post."),
                 o("e406250c", "Ricorda che questo account non è di tua proprietà. In quanto collaboratore, puoi inviare Messaggi Diretti, pubblicare post e creare liste, nonché procedere alla loro visualizzazione."),
@@ -6357,8 +6357,8 @@
                 o("f906f464", "Post condiviso con il gruppo."),
                 o("i8a99aae", "Post condiviso separatamente."),
                 o("hbbc401c", "Invia a un gruppo"),
-                o("e1bde73f", function (e) {
-                    return "Non è possibile inviare messaggi a @" + e.screenName;
+                o("e1bde73f", function (i) {
+                    return "Non è possibile inviare messaggi a @" + i.screenName;
                 }),
                 o("f7289cd6", "Hai selezionato una conversazione di gruppo"),
                 o("e6cced4e", "Solo le conversazioni tra due utenti possono essere inviate a un gruppo. Puoi comunque inviare il tuo messaggio in privato."),
@@ -6373,14 +6373,14 @@
                 o("cabb453e", "Nome del gruppo"),
                 o("eb1bb5a2", "Visualizza tutte le persone"),
                 o("a70436ac", "Scrivi un messaggio crittografato"),
-                o("a7f20223", function (e) {
-                    return "Silenzia temporaneamente le notifiche di " + e.name;
+                o("a7f20223", function (i) {
+                    return "Silenzia temporaneamente le notifiche di " + i.name;
                 }),
-                o("g2f04a6b", function (e) {
-                    return "Hai riattivato " + e.name;
+                o("g2f04a6b", function (i) {
+                    return "Hai riattivato " + i.name;
                 }),
-                o("i453fedf", function (e) {
-                    return "Silenzia fino alle " + e.expiration;
+                o("i453fedf", function (i) {
+                    return "Silenzia fino alle " + i.expiration;
                 }),
                 o("b3dfd51a", "Silenzia temporaneamente le menzioni"),
                 o("cc7c8ce6", "Non ricevere notifiche quando qualcuno ti menziona in questa conversazione."),
@@ -6389,41 +6389,41 @@
                 o("f33ef58a", "Segnala conversazione come contenuto illegale in UE "),
                 o("d1a6dbe6", "Blocca tutto"),
                 o("f24af200", "Blocca MD"),
-                o("a30e1677", function (e) {
-                    return "Se blocchi @" + e.screenName + ", @" + e.screenName + " non potrà più seguirti o inviarti messaggi, mentre tu non riceverai più notifiche da @" + e.screenName;
+                o("a30e1677", function (i) {
+                    return "Se blocchi @" + i.screenName + ", @" + i.screenName + " non potrà più seguirti o inviarti messaggi, mentre tu non riceverai più notifiche da @" + i.screenName;
                 }),
-                o("iae09949", function (e) {
-                    return "Vuoi bloccare i MD da @" + e.screenName + "?";
+                o("iae09949", function (i) {
+                    return "Vuoi bloccare i MD da @" + i.screenName + "?";
                 }),
                 o("e778e3d8", "MD bloccati correttamente"),
                 o("b7867912", "Sblocca tutto"),
                 o("gaddb872", "Sblocca MD"),
-                o("d83414a1", function (e) {
-                    return "Vuoi sbloccare @" + e.screenName + "? Potrà seguirti e vedere i tuoi post.";
+                o("d83414a1", function (i) {
+                    return "Vuoi sbloccare @" + i.screenName + "? Potrà seguirti e vedere i tuoi post.";
                 }),
-                o("a5bbfecd", function (e) {
-                    return "Vuoi sbloccare @" + e.screenName + "? Potrà seguirti e interagire con i tuoi post pubblici.";
+                o("a5bbfecd", function (i) {
+                    return "Vuoi sbloccare @" + i.screenName + "? Potrà seguirti e interagire con i tuoi post pubblici.";
                 }),
-                o("cde6e1ff", function (e) {
-                    return "Vuoi sbloccare i MD da @" + e.screenName + "?";
+                o("cde6e1ff", function (i) {
+                    return "Vuoi sbloccare i MD da @" + i.screenName + "?";
                 }),
                 o("j37c4674", "1 ora"),
-                o("je7e1fed", function (e) {
-                    return "Hai silenziato " + e.name + " per 1 ora";
+                o("je7e1fed", function (i) {
+                    return "Hai silenziato " + i.name + " per 1 ora";
                 }),
                 o("hf94a2d6", "Silenziato per 1 ora"),
                 o("fb7a43c6", "8 ore"),
-                o("e95c8f8b", function (e) {
-                    return "Hai silenziato " + e.name + " per 8 ore";
+                o("e95c8f8b", function (i) {
+                    return "Hai silenziato " + i.name + " per 8 ore";
                 }),
                 o("bd54fad2", "Silenziato per 8 ore"),
                 o("cb5bf56e", "1 settimana"),
-                o("gb7a130b", function (e) {
-                    return "Hai silenziato " + e.name + " per 1 settimana";
+                o("gb7a130b", function (i) {
+                    return "Hai silenziato " + i.name + " per 1 settimana";
                 }),
                 o("f6fce0fe", "Silenziato per 1 settimana"),
-                o("i78153dd", function (e) {
-                    return "Hai silenziato " + e.name + " per sempre";
+                o("i78153dd", function (i) {
+                    return "Hai silenziato " + i.name + " per sempre";
                 }),
                 o("je9455da", "I messaggi vengono protetti con crittografia"),
                 o("b5b0afa4", "Personalizza l'aspetto"),
@@ -6497,11 +6497,11 @@
                 o("cc2c2eca", "Vedi l'ultima partita di calcio"),
                 o("bcdeae66", "Portale dei Gran Premi di F1"),
                 o("e30e4bea", "Lasciati travolgere dall'adrenalina del Gran Premio su X."),
-                o("be548ecb", function (e) {
-                    return e.teamName1 + " contro " + e.teamName2;
+                o("be548ecb", function (i) {
+                    return i.teamName1 + " contro " + i.teamName2;
                 }),
-                o("b23bb579", function (e) {
-                    return e.teamName1 + " contro " + e.teamName2 + ": gli aggiornamenti su X";
+                o("b23bb579", function (i) {
+                    return i.teamName1 + " contro " + i.teamName2 + ": gli aggiornamenti su X";
                 }),
                 o("b72c924c", "Ricerca di lavoro"),
                 o("f4da95a0", "Suggerimenti di offerte di lavoro"),
@@ -6547,21 +6547,21 @@
                 o("c2b3f0da", "Metti in evidenza sul profilo"),
                 o("c791d3fc", "Condividi offerta"),
                 o("eb517058", "Aziende IA"),
-                o("b677cb9b", function (e) {
-                    return e.count + " filtri azienda";
+                o("b677cb9b", function (i) {
+                    return i.count + " filtri azienda";
                 }),
                 o("ja04d37c", "Inserisci i nomi delle aziende"),
-                o("a1876045", function (e) {
-                    return e.count + " filtri tipo di lavoro";
+                o("a1876045", function (i) {
+                    return i.count + " filtri tipo di lavoro";
                 }),
                 o("fb146dd2", "Tipo di lavoro"),
                 o("a7090408", "Parola chiave"),
-                o("f16e9a15", function (e) {
-                    return e.count + " filtri tipo località";
+                o("f16e9a15", function (i) {
+                    return i.count + " filtri tipo località";
                 }),
                 o("fa7d455a", "Tipo di posizione"),
-                o("caa606db", function (e) {
-                    return e.count + " filtri anzianità";
+                o("caa606db", function (i) {
+                    return i.count + " filtri anzianità";
                 }),
                 o("jda06238", "Anzianità di servizio"),
                 o("j595df68", "Aggiorna le preferenze sui suggerimenti:"),
@@ -6582,29 +6582,29 @@
                 o("d204515c", "Aggiungi sul tuo profilo le offerte di lavoro, basta un clic."),
                 o("ecb3df70", "Post dell'evento"),
                 o("a01d5a7c", "Questo contenuto non è disponibile perché l'autore ti ha bloccato"),
-                o("cab51f93", function (e) {
-                    return "Non puoi vederlo perché @" + e.screenName + " ti ha bloccato.";
+                o("cab51f93", function (i) {
+                    return "Non puoi vederlo perché @" + i.screenName + " ti ha bloccato.";
                 }),
                 o("eaaca5dc", "Punteggio"),
                 o("abdcd68a", "Caricamento evento in corso"),
-                o("cfb57adb", function (e) {
-                    return "Posta a proposito di " + e.hashtag;
+                o("cfb57adb", function (i) {
+                    return "Posta a proposito di " + i.hashtag;
                 }),
                 o("b1037710", "Condividi le tue idee"),
                 o("bb980db0", "Cronologia evento"),
-                o("ffd929c1", function (e) {
-                    return "NOVITÀ" + e.ttc_live_event;
+                o("ffd929c1", function (i) {
+                    return "NOVITÀ" + i.ttc_live_event;
                 }),
                 o("c9b302f8", "Per gli ultimi prodotti, ricontrolla più tardi."),
-                o("cfe836d1", function (e) {
-                    return "Sconto del " + e.percent + "%";
+                o("cfe836d1", function (i) {
+                    return "Sconto del " + i.percent + "%";
                 }),
-                o("efb132c3", function (e) {
-                    return e.title + " - " + e.description + " a soli " + e.price;
+                o("efb132c3", function (i) {
+                    return i.title + " - " + i.description + " a soli " + i.price;
                 }),
                 o("f27deeea", "Blocco prodotto commerciale"),
-                o("e8166cee", function (e) {
-                    return "" + e.formattedPrice;
+                o("e8166cee", function (i) {
+                    return "" + i.formattedPrice;
                 }),
                 o("g66c8348", "REPLAY"),
                 o("j1d352d8", "Promemoria impostato"),
@@ -6614,8 +6614,8 @@
                 o("cfadb00e", "In ascolto"),
                 o("db4620aa", "SPAZIO IN DIRETTA"),
                 o("c958e692", "SPAZIO REGISTRATO"),
-                o("i2c2bfb7", function (e) {
-                    return e.count + " in ascolto";
+                o("i2c2bfb7", function (i) {
+                    return i.count + " in ascolto";
                 }),
                 o("i3f7ff00", "Miniatura contenuto"),
                 o("h400d7c2", "UNISCITI ALLO SPAZIO"),
@@ -6625,19 +6625,19 @@
                 o("ea885dec", "Vincita"),
                 o("cde48000", "Problemi con il gioco d'azzardo? Chiama l'1-800-GAMBLER"),
                 o("g53d5df6", "Focus attivo"),
-                o("d1e0a75f", function (e) {
-                    return "Per te" + e.noun;
+                o("d1e0a75f", function (i) {
+                    return "Per te" + i.noun;
                 }),
-                o("dafd69e9", function (e) {
-                    return "Seguiti" + e.noun;
+                o("dafd69e9", function (i) {
+                    return "Seguiti" + i.noun;
                 }),
-                o("d80a1c37", function (e) {
-                    return "Abbonati" + e.noun;
+                o("d80a1c37", function (i) {
+                    return "Abbonati" + i.noun;
                 }),
                 o("d3619250", "Maggiore numero di Mi piace"),
                 o("f5edfbde", "Vuoi uscire da X?"),
-                o("f12b4db5", function (e) {
-                    return "Vuoi disconnetterti da @" + e.screenName + "?";
+                o("f12b4db5", function (i) {
+                    return "Vuoi disconnetterti da @" + i.screenName + "?";
                 }),
                 o("ia5ff8b6", "Potrai sempre accedere di nuovo in qualsiasi istante. Se vuoi solo passare da un account all'altro, puoi farlo aggiungendo un account esistente."),
                 o("ea3750c4", "L'operazione sarà valida solo per questo account e l'accesso ai tuoi altri account verrà mantenuto."),
@@ -6683,8 +6683,8 @@
                 o("j745b8a6", "Utilizza il menu delle azioni (i tre puntini nei post) per rimuovere il tuo tag e abbandonare una conversazione."),
                 o("c380d684", "La tua segnalazione"),
                 o("da7cf0d8", "Abbiamo contrassegnato questi post come materiale sensibile"),
-                o("a6da21a1", function (e) {
-                    return e.appName + " vuole accedere al tuo account X";
+                o("a6da21a1", function (i) {
+                    return i.appName + " vuole accedere al tuo account X";
                 }),
                 o("f4392d00", "Autorizza app"),
                 o("ee4dca3c", "link di annullamento"),
@@ -6712,20 +6712,20 @@
                 o("e957c20e", "Prova gratuita di Full access"),
                 o("a1436e70", "Adesso puoi aggiungere le offerte di lavoro sul tuo profilo e renderle così visibili alla tua rete. Non appena la richiesta sarà approvata, le offerte di lavoro diventeranno reperibili da milioni di utenti nella ricerca delle offerte di lavoro."),
                 o("f9c85cec", "Azione obbligatoria: carica e verifica i documenti"),
-                o("f178f393", function (e) {
-                    return "Invia i documenti richiesti entro la seguente data: " + e.date + ". In genere ci vogliono 10 minuti.";
+                o("f178f393", function (i) {
+                    return "Invia i documenti richiesti entro la seguente data: " + i.date + ". In genere ci vogliono 10 minuti.";
                 }),
                 o("f9fbeabc", "I documenti costitutivi dell'organizzazione"),
                 o("b4c80f5c", "Un documento d'identità ufficiale"),
                 o("f0915094", "Una fotocamera funzionante"),
-                o("f259d3f3", function (e) {
-                    return "Importante: i documenti devono essere inviati entro la seguente data: " + e.date + ". In caso contrario, la richiesta sarà respinta e non verrà emesso alcun rimborso.";
+                o("f259d3f3", function (i) {
+                    return "Importante: i documenti devono essere inviati entro la seguente data: " + i.date + ". In caso contrario, la richiesta sarà respinta e non verrà emesso alcun rimborso.";
                 }),
-                o("d35f645b", function (e) {
-                    return "Aperte (" + e.count + ")";
+                o("d35f645b", function (i) {
+                    return "Aperte (" + i.count + ")";
                 }),
-                o("bf534b31", function (e) {
-                    return "In evidenza (" + e.count + ")";
+                o("bf534b31", function (i) {
+                    return "In evidenza (" + i.count + ")";
                 }),
                 o("c35aded2", "Archiviate"),
                 o("b97e952a", "Sembra che tu non abbia ancora aggiunto alcuna offerta di lavoro."),
@@ -6738,8 +6738,8 @@
                 o("d523cd74", "Vuoi archiviare l'offerta?"),
                 o("jfd0b34a", "L'archiviazione comporterà la rimozione dell'offerta di lavoro dal tuo profilo."),
                 o("e2247e08", "ATS"),
-                o("b737c0b5", function (e) {
-                    return "" + e.ats;
+                o("b737c0b5", function (i) {
+                    return "" + i.ats;
                 }),
                 o("e0ce628e", "Si è verificato un errore durante l'invio di un invito. Riprova più tardi."),
                 o("ddf35536", "Si è verificato un errore durante l'eliminazione dell'invito. Riprova più tardi."),
@@ -6765,8 +6765,8 @@
                 o("i00355d0", "Annulla condivisione"),
                 o("h0481bba", "Vuoi annullare la condivisione dell'offerta?"),
                 o("b9dfdc7a", "Se annulli la condivisione, l'offerta verrà rimossa dal tuo spotlight."),
-                o("h4847fa2", function (e) {
-                    return "" + e.userName;
+                o("h4847fa2", function (i) {
+                    return "" + i.userName;
                 }),
                 o("e46cd68e", "Offerte che hai condiviso"),
                 o("ea7f1a42", "Le tue offerte"),
@@ -6843,11 +6843,11 @@
                 o("d6fa2944", "L'eliminazione dell'integrazione non comporterà l'eliminazione delle offerte di lavoro importate."),
                 o("h99f11fa", "Elimina integrazione"),
                 o("eef1ae76", "Collegamento attivo"),
-                o("a915f5c1", function (e) {
-                    return "Collegamento a " + e.ats + " attivo";
+                o("a915f5c1", function (i) {
+                    return "Collegamento a " + i.ats + " attivo";
                 }),
-                o("af7286b7", function (e) {
-                    return e.percentage + "% di sconto su Premium annuale";
+                o("af7286b7", function (i) {
+                    return i.percentage + "% di sconto su Premium annuale";
                 }),
                 o("c924ad84", "Continua a riprodurre i video"),
                 o("de750a3c", "Godine anche quando lo smartphone è bloccato"),
@@ -6953,15 +6953,15 @@
                 o("ef94bbd4", "Ottieni Premium+"),
                 o("dcd830ce", "Inoltre, tutto ciò che trovi in Premium..."),
                 o("b7dde622", "Felice giorno del Ringraziamento! L'offerta scade tra:"),
-                o("i0180ca1", function (e) {
-                    return "Fine offerta: " + e.date + ". Felice giorno del Ringraziamento!";
+                o("i0180ca1", function (i) {
+                    return "Fine offerta: " + i.date + ". Felice giorno del Ringraziamento!";
                 }),
                 o("hb9d0e00", "L'offerta del nostro 2° anniversario scade tra:"),
-                o("d2b23e0d", function (e) {
-                    return "È il compleanno di Premium! Termina il giorno " + e.date + ".";
+                o("d2b23e0d", function (i) {
+                    return "È il compleanno di Premium! Termina il giorno " + i.date + ".";
                 }),
-                o("bb4998fb", function (e) {
-                    return "Fine offerta: " + e.date;
+                o("bb4998fb", function (i) {
+                    return "Fine offerta: " + i.date;
                 }),
                 o("c0847ebc", "Tutti gli upgdrade di Basic più:"),
                 o("ed672bfa", "Tutti gli upgdrade di Basic e Premium più:"),
@@ -6978,11 +6978,11 @@
                 o("f36b8e14", "Qualcosa è andato storto durante il recupero del prodotto. Prova ad aggiornare la pagina."),
                 o("f1756574", "al mese"),
                 o("i650ff14", "all'anno"),
-                o("dbcd25db", function (e) {
-                    return "per i primi " + e.numberOfDays + " giorni";
+                o("dbcd25db", function (i) {
+                    return "per i primi " + i.numberOfDays + " giorni";
                 }),
-                o("bd40d5b5", function (e) {
-                    return "Abbonati e paga per " + e.title;
+                o("bd40d5b5", function (i) {
+                    return "Abbonati e paga per " + i.title;
                 }),
                 o("i36a0b6e", "Puoi abbonarti solo dall'app X per iOS (al momento)."),
                 o("c906ad94", "Esegui il downgrade"),
@@ -6990,18 +6990,18 @@
                 o("h77ef73e", "Passa al piano mensile"),
                 o("d723d44a", "Passa al piano annuale"),
                 o("gf6b66b8", "Conferma la modifica dell'abbonamento in vigore da oggi"),
-                o("e83daf87", function (e) {
-                    return "Conferma la modifica dell'abbonamento in vigore dal giorno " + e.date;
+                o("e83daf87", function (i) {
+                    return "Conferma la modifica dell'abbonamento in vigore dal giorno " + i.date;
                 }),
                 o("f27022d6", "Piano attuale"),
                 o("i9d5f4b6", "Nuovo piano"),
                 o("ia390d8a", "Come funzionerà il downgrade"),
-                o("fd80b875", function (e) {
-                    return "Il piano attuale resterà attivo fino al termine del ciclo di fatturazione. A partire dal giorno " + e.nextBillingDate + ", passerai a " + e.newTierName + " e ti verrà addebitata la nuova tariffa.";
+                o("fd80b875", function (i) {
+                    return "Il piano attuale resterà attivo fino al termine del ciclo di fatturazione. A partire dal giorno " + i.nextBillingDate + ", passerai a " + i.newTierName + " e ti verrà addebitata la nuova tariffa.";
                 }),
                 o("c8fb177a", "Come verrà adeguato il tuo pagamento"),
-                o("df776505", function (e) {
-                    return "Stai eseguendo l'upgrade a " + e.newTierName + " dalla nuova fatturazione. Il nuovo piano ti verrà addebitato oggi ma dall'importo verrà dedotto il credito residuo. Il passaggio avviene immediatamente e la fatturazione sarà adeguata di conseguenza.";
+                o("df776505", function (i) {
+                    return "Stai eseguendo l'upgrade a " + i.newTierName + " dalla nuova fatturazione. Il nuovo piano ti verrà addebitato oggi ma dall'importo verrà dedotto il credito residuo. Il passaggio avviene immediatamente e la fatturazione sarà adeguata di conseguenza.";
                 }),
                 o("d7efb6ba", "Stai passando dalla fatturazione mensile a quella annuale. Il piano annuale ti verrà addebitato oggi e il saldo mensile residuo sarà calcolato in modo proporzionale per poi essere sottratto dal totale dell'addebito. Il passaggio avviene immediatamente, pertanto adesso la fatturazione sarà annuale."),
                 o("a5f2cf70", "Stai passando dalla fatturazione annuale a quella mensile. Il credito annuale residuo verrà utilizzato per i pagamenti mensili fino al suo esaurimento. Il passaggio avviene immediatamente, pertanto adesso la fatturazione sarà mensile."),
@@ -7023,11 +7023,11 @@
                 o("abaa4274", "DeepSearch e Ragionamento"),
                 o("e0d53864", "Nuove funzioni in anteprima"),
                 o("g1be3530", "PROVA GRATUITA"),
-                o("b10b4f1f", function (e) {
-                    return "RISPARMIA IL " + e.percentOff + "%! SCADE GIORNO " + e.date;
+                o("b10b4f1f", function (i) {
+                    return "RISPARMIA IL " + i.percentOff + "%! SCADE GIORNO " + i.date;
                 }),
-                o("b8d0bd19", function (e) {
-                    return "Prova " + e.productName + " gratis";
+                o("b8d0bd19", function (i) {
+                    return "Prova " + i.productName + " gratis";
                 }),
                 o("f89dfa74", "Miglior prezzo"),
                 o("b9a4d8c6", "Annuale"),
@@ -7035,33 +7035,33 @@
                 o("i527045e", "Spunta, Grok più potente, messa in risalto di risposte, statistiche e molto altro"),
                 o("ga482a88", "Piano annuale"),
                 o("hc64d5b0", "Piano mensile"),
-                o("de7db957", function (e) {
-                    return e.price + " all'anno con fatturazione annuale";
+                o("de7db957", function (i) {
+                    return i.price + " all'anno con fatturazione annuale";
                 }),
-                o("d8982437", function (e) {
-                    return e.price + " all'anno con fatturazione mensile";
+                o("d8982437", function (i) {
+                    return i.price + " all'anno con fatturazione mensile";
                 }),
                 o("f0ad5cc8", "anno"),
                 o("a0dc6e4c", "Attualmente non disponibile"),
                 o("jd8b2e66", "Abbonati e paga"),
-                o("aa5df29f", function (e) {
-                    return "" + e.oldPrice;
+                o("aa5df29f", function (i) {
+                    return "" + i.oldPrice;
                 }),
-                o("g1c4f7a1", function (e) {
-                    return "" + e.oldPrice;
+                o("g1c4f7a1", function (i) {
+                    return "" + i.oldPrice;
                 }),
                 o("i7fbacc4", "Passa a uno degli altri abbonamenti"),
-                o("c9cc122b", function (e) {
-                    return e.feature + ": disponibile con " + e.title;
+                o("c9cc122b", function (i) {
+                    return i.feature + ": disponibile con " + i.title;
                 }),
-                o("bff35771", function (e) {
-                    return e.feature + ": non disponibile con " + e.title;
+                o("bff35771", function (i) {
+                    return i.feature + ": non disponibile con " + i.title;
                 }),
-                o("a69fd369", function (e) {
-                    return "A partire da " + e.price;
+                o("a69fd369", function (i) {
+                    return "A partire da " + i.price;
                 }),
-                o("e563a5d1", function (e) {
-                    return "Abbonati per uno sconto del " + e.percentage + "% (a tempo limitato)";
+                o("e563a5d1", function (i) {
+                    return "Abbonati per uno sconto del " + i.percentage + "% (a tempo limitato)";
                 }),
                 o("dfc5f972", "E molto altro..."),
                 o("fb8453c8", "Sblocca le richieste di ragionamento e DeepSearch"),
@@ -7069,8 +7069,8 @@
                 o("aaebdc2e", "Accesso nettamente superiore a Grok 3 mini e Grok 3"),
                 o("ddf8a412", "Accesso alle nuove funzioni prima degli altri"),
                 o("gfb04ef4", "Tutte le funzioni di Premium+ su X"),
-                o("b601cfbb", function (e) {
-                    return "Provalo per " + e.price + " al mese";
+                o("b601cfbb", function (i) {
+                    return "Provalo per " + i.price + " al mese";
                 }),
                 o("i3e90e20", "Attualmente non disponibile"),
                 o("d9e9ce26", "Abbonati e paga:"),
@@ -7236,18 +7236,18 @@
                 o("a4298bc0", "X: ciò che c'è di nuovo"),
                 o("j3f49ff6", "Dalle notizie dell'ultima ora allo spettacolo, alla politica e allo sport, segui tutte le vicende con i commenti in diretta."),
                 o("d65555c2", "O"),
-                o("e75df5c9", function (e) {
-                    return e.query + " - Ricerca";
+                o("e75df5c9", function (i) {
+                    return i.query + " - Ricerca";
                 }),
                 o("ac4fb0f4", "Foto"),
                 o("aea62568", "Filtri di ricerca"),
                 o("gfcfbf8c", "La ricerca è stata salvata."),
                 o("a4645d92", "La ricerca salvata è stata eliminata."),
-                o("b11805af", function (e) {
-                    return "Guarda i post a proposito di " + e.query + " su X. Guarda cosa dicono gli altri e partecipa alla conversazione.";
+                o("b11805af", function (i) {
+                    return "Guarda i post a proposito di " + i.query + " su X. Guarda cosa dicono gli altri e partecipa alla conversazione.";
                 }),
-                o("d610e8c3", function (e) {
-                    return "Gli ultimi post a proposito di " + e.query + ". Leggi cosa dicono gli altri e partecipa alla conversazione.";
+                o("d610e8c3", function (i) {
+                    return "Gli ultimi post a proposito di " + i.query + ". Leggi cosa dicono gli altri e partecipa alla conversazione.";
                 }),
                 o("j622effe", "Ricerca avanzata"),
                 o("i5045e74", "Ovunque"),
@@ -7299,20 +7299,20 @@
                 o("bd05add8", "Non sono un bot"),
                 o("d94f12b6", "Prova a cercare notifiche, privacy, ecc."),
                 o("ba8f6f82", "Cerca nelle impostazioni"),
-                o("g931a6e5", function (e) {
-                    return "Stai seguendo " + e.topic;
+                o("g931a6e5", function (i) {
+                    return "Stai seguendo " + i.topic;
                 }),
                 o("h3f9027a", "I post su questo argomento saranno disponibili nella tua cronologia principale. L'argomento in questione contribuirà a personalizzare la tua esperienza su X."),
                 o("e241095e", "I tuoi argomenti"),
                 o("f8bc75e2", "I tuoi argomenti"),
                 o("ed827af6", "Argomento non disponibile."),
                 o("d094c720", "Tutti gli argomenti"),
-                o("g3e87c61", function (e) {
-                    return e.topicName + " | Argomenti";
+                o("g3e87c61", function (i) {
+                    return i.topicName + " | Argomenti";
                 }),
                 o("g02269ba", "Segui gli argomenti su X. Gli argomenti ti permettono di vedere i post pubblicati da una serie di account appartenenti a esperti o, semplicemente, fan di svariati argomenti su X."),
-                o("e80d2509", function (e) {
-                    return "Segui l'argomento " + e.topicName + " su X. Vedrai i post popolari pubblicati da una serie di account appartenenti a esperti, fan o, semplicemente, utenti che parlano di " + e.topicName + " su X.";
+                o("e80d2509", function (i) {
+                    return "Segui l'argomento " + i.topicName + " su X. Vedrai i post popolari pubblicati da una serie di account appartenenti a esperti, fan o, semplicemente, utenti che parlano di " + i.topicName + " su X.";
                 }),
                 o("e44b4256", "Cronologia storia"),
                 o("a74af3f8", "Non è stata trovata alcuna cronologia della storia."),
@@ -7347,8 +7347,8 @@
                 o("fe62cfec", "Ripostato da"),
                 o("h1c5d6aa", "Da parte tua"),
                 o("h6d45054", "Da tutti"),
-                o("da68fff1", function (e) {
-                    return e.count + " getton" + t(e.count, "e", "i") + " (visibile solo a te)";
+                o("da68fff1", function (i) {
+                    return i.count + " getton" + t(i.count, "e", "i") + " (visibile solo a te)";
                 }),
                 o("e35f2534", "Caricamento interazioni post in corso"),
                 o("i60dfa72", "Interazioni post"),
@@ -7364,8 +7364,8 @@
                 o("fd67deaa", "Condividi post correlati"),
                 o("f9183bb6", "Copia link dei post correlati"),
                 o("fc4e5d96", "Puoi visualizzare solo le statistiche dei tuoi post."),
-                o("ab0da59f", function (e) {
-                    return "Statistiche " + e.entity;
+                o("ab0da59f", function (i) {
+                    return "Statistiche " + i.entity;
                 }),
                 o("ae32e7de", "Si tratta di un post sponsorizzato. Il numero di volte in cui questo post è stato visto è segreto."),
                 o("a10aa36c", "Centro assistenza"),
@@ -7390,11 +7390,11 @@
                 o("a4da7724", "Volte in cui gli altri hanno consultato i dettagli di questo post"),
                 o("c5d4d3a8", "Costo per follow"),
                 o("f56e24f2", "Spesa complessiva divisa per il numero di follower, inclusi quelli guadagnati. Paghi solo quando qualcuno inizia a seguirti."),
-                o("g33fd6b1", function (e) {
-                    return e.percentage + " dalla sponsorizzazione";
+                o("g33fd6b1", function (i) {
+                    return i.percentage + " dalla sponsorizzazione";
                 }),
-                o("b71059c3", function (e) {
-                    return e.percentage + " da chi non ti segue";
+                o("b71059c3", function (i) {
+                    return i.percentage + " da chi non ti segue";
                 }),
                 o("h4cbba3e", "<5%"),
                 o("h1cdac12", "<5% dalla sponsorizzazione"),
@@ -7403,30 +7403,30 @@
                 o("h142a79c", "Numero di visualizzazioni uniche per questo post"),
                 o("de4def4e", "% per tutte le sponsorizzazioni finora"),
                 o("e3390c1e", "Prime 48 ore"),
-                o("aead0975", function (e) {
-                    return "Fa riferimento al numero di volte in cui questo post è stato letto nelle 48 ore successive alla sua pubblicazione. Il valore massimo è di " + e.maxValue + " visualizzazioni.";
+                o("aead0975", function (i) {
+                    return "Fa riferimento al numero di volte in cui questo post è stato letto nelle 48 ore successive alla sua pubblicazione. Il valore massimo è di " + i.maxValue + " visualizzazioni.";
                 }),
-                o("ib1f8491", function (e) {
-                    return e.likeCount + " Mi piace";
+                o("ib1f8491", function (i) {
+                    return i.likeCount + " Mi piace";
                 }),
-                o("dc0e7f37", function (e) {
-                    return e.retweetCount + " repost";
+                o("dc0e7f37", function (i) {
+                    return i.retweetCount + " repost";
                 }),
-                o("d0eeb127", function (e) {
-                    return e.replyCount + " rispost" + t(e.replyCount, "a", "e");
+                o("d0eeb127", function (i) {
+                    return i.replyCount + " rispost" + t(i.replyCount, "a", "e");
                 }),
                 o("db6efeb8", "La tua sponsorizzazione è in corso"),
                 o("j6daea86", "La tua sponsorizzazione è in pausa"),
-                o("hf9ed10f", function (e) {
-                    return e.endTimeString + " · " + e.endDateString;
+                o("hf9ed10f", function (i) {
+                    return i.endTimeString + " · " + i.endDateString;
                 }),
-                o("f42a198d", function (e) {
-                    return e.spentBudget + " di " + e.totalBudget + " spesi";
+                o("f42a198d", function (i) {
+                    return i.spentBudget + " di " + i.totalBudget + " spesi";
                 }),
                 o("e8adeec8", "Promuovi di nuovo"),
                 o("fbb5c37e", "Amplifica nuovamente"),
-                o("ccffb487", function (e) {
-                    return "Il tuo post ha guadagnato " + e.impressions + "  nuov" + t(e.impressions, "a visualizzazione", "e visualizzazioni") + " finora. Per espandere la copertura, passa a un account professionale.";
+                o("ccffb487", function (i) {
+                    return "Il tuo post ha guadagnato " + i.impressions + "  nuov" + t(i.impressions, "a visualizzazione", "e visualizzazioni") + " finora. Per espandere la copertura, passa a un account professionale.";
                 }),
                 o("ha13fd94", "Amplifica post"),
                 o("jede3014", "Stiamo esaminando la tua sponsorizzazione"),
@@ -7443,51 +7443,51 @@
                 o("i92754c2", "Visione al 50%"),
                 o("be8ddcc2", "Visione al 75%"),
                 o("b01410d6", "Visione al 100%"),
-                o("gfb3d8af", function (e) {
-                    return "Guardato fino a " + e.timeLabel;
+                o("gfb3d8af", function (i) {
+                    return "Guardato fino a " + i.timeLabel;
                 }),
                 o("fc6cbba2", "Non c'è niente da vedere qui. Per ora."),
                 o("b80a53c8", "Non appena verranno raccolti più dati, tali informazioni saranno disponibili qui."),
                 o("d25dccb6", "Le statistiche non sono disponibili per i post indirizzati alle Circle."),
                 o("g61ac32a", "Gli utenti con maggiore probabilità di interagire con i tuoi contenuti vengono definiti automaticamente come target."),
-                o("e8702feb", function (e) {
-                    return e.couponAmount + " a carico nostro!";
+                o("e8702feb", function (i) {
+                    return i.couponAmount + " a carico nostro!";
                 }),
-                o("e44dc579", function (e) {
-                    return "Inizia adesso e ricevi uno sconto del valore di " + e.couponAmount + " sulla tua prima sponsorizzazione entro il " + e.date + ".";
+                o("e44dc579", function (i) {
+                    return "Inizia adesso e ricevi uno sconto del valore di " + i.couponAmount + " sulla tua prima sponsorizzazione entro il " + i.date + ".";
                 }),
-                o("hd8df545", function (e) {
-                    return "Inizia adesso e ricevi uno sconto del valore di " + e.couponAmount + " sulla tua prossima sponsorizzazione entro il " + e.date + ".";
+                o("hd8df545", function (i) {
+                    return "Inizia adesso e ricevi uno sconto del valore di " + i.couponAmount + " sulla tua prossima sponsorizzazione entro il " + i.date + ".";
                 }),
-                o("f1d32e41", function (e) {
-                    return "Spendi " + e.spendAmount + " e ricevi un credito pubblicitario del valore di " + e.couponAmount + ".";
+                o("f1d32e41", function (i) {
+                    return "Spendi " + i.spendAmount + " e ricevi un credito pubblicitario del valore di " + i.couponAmount + ".";
                 }),
-                o("c4d0434b", function (e) {
-                    return e.dailyBudget + " al giorno per " + e.durationLabel;
+                o("c4d0434b", function (i) {
+                    return i.dailyBudget + " al giorno per " + i.durationLabel;
                 }),
-                o("dc4a9413", function (e) {
-                    return e.totalBudget + " in " + e.durationLabel;
+                o("dc4a9413", function (i) {
+                    return i.totalBudget + " in " + i.durationLabel;
                 }),
-                o("bad70c09", function (e) {
+                o("bad70c09", function (i) {
                     return "località";
                 }),
-                o("c133a39b", function (e) {
-                    return e.minAge + " - " + e.maxAge;
+                o("c133a39b", function (i) {
+                    return i.minAge + " - " + i.maxAge;
                 }),
-                o("ee5da8f5", function (e) {
-                    return "Dai " + e.minAge + " in su";
+                o("ee5da8f5", function (i) {
+                    return "Dai " + i.minAge + " in su";
                 }),
-                o("g4bf9cb7", function (e) {
-                    return e.durationDays + " giorn" + t(e.durationDays, "o", "i");
+                o("g4bf9cb7", function (i) {
+                    return i.durationDays + " giorn" + t(i.durationDays, "o", "i");
                 }),
-                o("gc3ce5d9", function (e) {
-                    return "Copertura stimata: da " + e.audienceLow + " a " + e.audienceHigh + " persone al giorno";
+                o("gc3ce5d9", function (i) {
+                    return "Copertura stimata: da " + i.audienceLow + " a " + i.audienceHigh + " persone al giorno";
                 }),
-                o("c1778029", function (e) {
-                    return e.locationsHeading + ": " + e.locations + e.newlinePlaceholder + "Fascia d'età: " + e.formattedAge + e.newlinePlaceholder + "Genere: " + e.gender;
+                o("c1778029", function (i) {
+                    return i.locationsHeading + ": " + i.locations + i.newlinePlaceholder + "Fascia d'età: " + i.formattedAge + i.newlinePlaceholder + "Genere: " + i.gender;
                 }),
-                o("a4ab12b9", function (e) {
-                    return "In seguito a una spesa di " + e.spendAmount + " in una o più campagne, aggiungeremo direttamente al tuo account Ads un credito del valore di " + e.couponAmount + ". L'aggiunta del credito potrebbe richiedere diversi giorni.";
+                o("a4ab12b9", function (i) {
+                    return "In seguito a una spesa di " + i.spendAmount + " in una o più campagne, aggiungeremo direttamente al tuo account Ads un credito del valore di " + i.couponAmount + ". L'aggiunta del credito potrebbe richiedere diversi giorni.";
                 }),
                 o("cb51c854", "Qualsiasi genere"),
                 o("bb7b39e2", "Uomini"),
@@ -7557,11 +7557,11 @@
                 o("i8b90688", "le linee guida sulla pubblicità e i termini"),
                 o("a93bd26d", "i termini per i coupon"),
                 o("d31dc460", "le linee guida sulla pubblicità e i termini"),
-                o("ga845597", function (e) {
-                    return "Totale su " + e.durationLabel;
+                o("ga845597", function (i) {
+                    return "Totale su " + i.durationLabel;
                 }),
-                o("e1945a89", function (e) {
-                    return "Da " + e.audienceLow + " a " + e.audienceHigh;
+                o("e1945a89", function (i) {
+                    return "Da " + i.audienceLow + " a " + i.audienceHigh;
                 }),
                 o("b21c2549", "Scopri di più"),
                 o("j9f78b42", "Non ci sono utenti taggati in questo post."),
@@ -7577,8 +7577,8 @@
                 o("h2fcc532", "Caricamento cronologia in corso"),
                 o("a74821a0", "Sembra che il tuo pagamento non sia andato a buon fine o che sia prossimo alla scadenza. Per preservare il tuo abbonamento a Premium, aggiorna i dettagli di pagamento."),
                 o("bb55752e", "I gettoni ti permettono di sostenere i creator che postano contenuti degni di nota. I gettoni inutilizzati restano nel tuo saldo."),
-                o("ea7ce65f", function (e) {
-                    return e.count + " getton" + t(e.count, "e", "i") + " bonus in regalo.";
+                o("ea7ce65f", function (i) {
+                    return i.count + " getton" + t(i.count, "e", "i") + " bonus in regalo.";
                 }),
                 o("e557f9d2", "Hai raggiunto il limite del saldo gettoni."),
                 o("e2beba5e", "Più popolare"),
@@ -7586,8 +7586,8 @@
                 o("bc42db1c", "Il rinnovo avviene automaticamente su base mensile e puoi disdire in qualsiasi istante."),
                 o("f1561b06", "Termini per gli acquirenti"),
                 o("fe93ed4a", "Acquisto completato"),
-                o("bcb90375", function (e) {
-                    return "Il tuo saldo gettoni aggiornato è di " + e.balance + ".";
+                o("bcb90375", function (i) {
+                    return "Il tuo saldo gettoni aggiornato è di " + i.balance + ".";
                 }),
                 o("ia2eb0c0", "Acquisto non riuscito"),
                 o("c7e11484", "Le tue liste sono vuote"),
@@ -7610,14 +7610,14 @@
                 o("def8ff62", "Vuoi eliminare la lista?"),
                 o("j8b9cde8", "L'azione non potrà essere annullata e perderai la lista."),
                 o("e9f3dec4", "Ricerca liste"),
-                o("b9192d55", function (e) {
-                    return e.query + " - Ricerca liste";
+                o("b9192d55", function (i) {
+                    return i.query + " - Ricerca liste";
                 }),
                 o("d6a23192", "Crea nuova lista"),
                 o("ie256518", "Cronologia di ricerca liste"),
                 o("j57a2568", "Ricerca liste"),
-                o("hc76e8cd", function (e) {
-                    return 'Nessuna lista trovata per "' + e.query + '"';
+                o("hc76e8cd", function (i) {
+                    return 'Nessuna lista trovata per "' + i.query + '"';
                 }),
                 o("d872881a", "Perché non crearne una?"),
                 o("j177067a", "Cerca nelle liste"),
@@ -7625,8 +7625,8 @@
                 o("d1461f1e", "Questa lista è sola"),
                 o("bcbd3416", "Gli utenti che seguono questa lista appariranno qui."),
                 o("b197a56c", "Follower della lista"),
-                o("f0ab07f5", function (e) {
-                    return "Membri (" + e.memberCount + ")";
+                o("f0ab07f5", function (i) {
+                    return "Membri (" + i.memberCount + ")";
                 }),
                 o("h9ce3406", "Membri della lista"),
                 o("dfeaeb26", "Aggiungi alla lista"),
@@ -7646,70 +7646,70 @@
                 o("g6340998", "L'operazione non ti riaggiungerà automaticamente alle liste di questo account."),
                 o("i6da4f7a", "Condividi lista"),
                 o("a062ff80", "Copia link della lista"),
-                o("dcdc75a3", function (e) {
-                    return "@" + e.screenName + "/" + e.listName;
+                o("dcdc75a3", function (i) {
+                    return "@" + i.screenName + "/" + i.listName;
                 }),
-                o("d2004da3", function (e) {
-                    return "Non stai seguendo @" + e.screenName;
+                o("d2004da3", function (i) {
+                    return "Non stai seguendo @" + i.screenName;
                 }),
                 o("a64512a4", "Cronologia liste"),
                 o("i0bcc456", "Quando lo farai, potrai vedere le sue liste."),
                 o("d8315ca0", "Liste di cui fai parte"),
                 o("e74be9ac", "Liste di cui fa parte"),
                 o("c80cb4e4", "Nuova lista"),
-                o("bbcaa24b", function (e) {
-                    return "Liste create da @" + e.screenName;
+                o("bbcaa24b", function (i) {
+                    return "Liste create da @" + i.screenName;
                 }),
-                o("b081cdf7", function (e) {
-                    return "@" + e.screenName + " non ha creato alcuna lista";
+                o("b081cdf7", function (i) {
+                    return "@" + i.screenName + " non ha creato alcuna lista";
                 }),
                 o("f5978664", "Quando lo farà, mostreremo qui l'elenco pertinente."),
                 o("h243711c", "Non hai ancora creato alcuna lista"),
-                o("b69e2f71", function (e) {
-                    return "@" + e.screenName + " non fa parte di alcuna lista";
+                o("b69e2f71", function (i) {
+                    return "@" + i.screenName + " non fa parte di alcuna lista";
                 }),
                 o("e05568cc", "Quando lo farà, la mostreremo qui."),
                 o("b86a098a", "Nessuno ti ha ancora aggiunto a una lista"),
                 o("h06e09a2", "Quando qualcuno ti aggiungerà a delle liste, te le mostreremo qui."),
-                o("gbaa5489", function (e) {
-                    return "Appartenenza di @" + e.screenName + " alle liste";
+                o("gbaa5489", function (i) {
+                    return "Appartenenza di @" + i.screenName + " alle liste";
                 }),
                 o("g6b54ff6", "Sei al passo"),
                 o("ec5fd35a", "Quando qualcuno richiederà di seguirti, te lo mostreremo qui affinché tu possa accettarlo o rifiutarlo."),
                 o("ec2d8342", "Rifiuta"),
                 o("j85d8d90", "Nessuna richiesta di follow in sospeso per questo utente."),
                 o("c3d23f10", "Sembra ci sia un problemino, ma non preoccuparti perché non è colpa tua. Clicca qui sotto per riprovare."),
-                o("d2613123", function (e) {
-                    return "Abbonati a soli " + e.price + " al mese";
+                o("d2613123", function (i) {
+                    return "Abbonati a soli " + i.price + " al mese";
                 }),
                 o("c4640fc0", "Condividi il profilo degli abbonamenti"),
                 o("a72064a8", "Copia link del profilo degli abbonamenti"),
                 o("e6c72234", "termini sulla condivisione email"),
-                o("b17f0c4b", function (e) {
-                    return "Ora hai un abbonamento a @" + e.screenName;
+                o("b17f0c4b", function (i) {
+                    return "Ora hai un abbonamento a @" + i.screenName;
                 }),
                 o("a5634d9a", "Si è verificato un problema durante l'elaborazione dell'abbonamento. Chiudi questo prompt e riprova."),
                 o("fe9d3afa", "Caricamento follower in corso"),
-                o("ab7fc3ef", function (e) {
-                    return "Utenti che superseguono " + e.fullName + " (@" + e.screenName + ")";
+                o("ab7fc3ef", function (i) {
+                    return "Utenti che superseguono " + i.fullName + " (@" + i.screenName + ")";
                 }),
-                o("j0d17377", function (e) {
-                    return "Account di tua conoscenza che seguono " + e.fullName + " (@" + e.screenName + ")";
+                o("j0d17377", function (i) {
+                    return "Account di tua conoscenza che seguono " + i.fullName + " (@" + i.screenName + ")";
                 }),
-                o("fa9e827f", function (e) {
-                    return "Account che seguono " + e.fullName + " (@" + e.screenName + ")";
+                o("fa9e827f", function (i) {
+                    return "Account che seguono " + i.fullName + " (@" + i.screenName + ")";
                 }),
-                o("ha979be5", function (e) {
-                    return "Account seguiti da " + e.fullName + " (@" + e.screenName + ")";
+                o("ha979be5", function (i) {
+                    return "Account seguiti da " + i.fullName + " (@" + i.screenName + ")";
                 }),
-                o("d28be573", function (e) {
-                    return "Utenti abbonati a " + e.fullName + " (@" + e.screenName + ")";
+                o("d28be573", function (i) {
+                    return "Utenti abbonati a " + i.fullName + " (@" + i.screenName + ")";
                 }),
-                o("g9da3853", function (e) {
-                    return "Utenti per cui " + e.fullName + " (@" + e.screenName + ") ha un abbonamento";
+                o("g9da3853", function (i) {
+                    return "Utenti per cui " + i.fullName + " (@" + i.screenName + ") ha un abbonamento";
                 }),
-                o("cfd952a1", function (e) {
-                    return "Account verificati che seguono " + e.fullName + " (@" + e.screenName + ")";
+                o("cfd952a1", function (i) {
+                    return "Account verificati che seguono " + i.fullName + " (@" + i.screenName + ")";
                 }),
                 o("fecc696e", "Follower verificati"),
                 o("g0a2fbbe", "Non hai ancora alcun abbonato"),
@@ -7722,34 +7722,34 @@
                 o("cb1a15c8", "L'aggiunta di account ai tuoi following è un modo facile per personalizzare la tua cronologia, nonché per apprendere le novità sugli argomenti e sulle persone che ti interessano."),
                 o("i967b954", "Qui troverai l'elenco di tutti i tuoi abbonamenti."),
                 o("a44e403e", "Quando un account verificato inizia a seguirti, lo vedrai qui."),
-                o("d74ee2e3", function (e) {
-                    return "@" + e.screenName + " non ha ancora nessun follower che conosci";
+                o("d74ee2e3", function (i) {
+                    return "@" + i.screenName + " non ha ancora nessun follower che conosci";
                 }),
-                o("ae5749c7", function (e) {
-                    return "@" + e.screenName + " non sta seguendo nessuno";
+                o("ae5749c7", function (i) {
+                    return "@" + i.screenName + " non sta seguendo nessuno";
                 }),
-                o("b5099e33", function (e) {
-                    return "@" + e.screenName + " non ha alcun follower verificato.";
+                o("b5099e33", function (i) {
+                    return "@" + i.screenName + " non ha alcun follower verificato.";
                 }),
                 o("ec251f36", "Quando qualcuno che conosci inizierà a seguire l'account, verrà elencato qui."),
                 o("f8af4f48", "Una volta che seguirà account, appariranno qui."),
                 o("fd0aad94", "Quando qualcuno con la verifica segue l'account, lo mostreremo qui."),
-                o("b84f6df1", function (e) {
-                    return "Regala Premium con un " + e.percentage + "% di sconto per un periodo limitato";
+                o("b84f6df1", function (i) {
+                    return "Regala Premium con un " + i.percentage + "% di sconto per un periodo limitato";
                 }),
-                o("cfcac293", function (e) {
-                    return "Regala e paga " + e.price;
+                o("cfcac293", function (i) {
+                    return "Regala e paga " + i.price;
                 }),
                 o("d7a73450", "Piano"),
                 o("hbd2c24e", "Attualmente questo account non è idoneo ai regali."),
                 o("f3fddc98", "Termini per gli acquirenti"),
                 o("cff9c889", "Scopri di più"),
                 o("c65dda96", "Il regalo è stato inviato."),
-                o("f6e2a407", function (e) {
-                    return "Consenti a tutti di vedere il tuo badge di abbonamento quando rispondi ai post di @" + e.screenName;
+                o("f6e2a407", function (i) {
+                    return "Consenti a tutti di vedere il tuo badge di abbonamento quando rispondi ai post di @" + i.screenName;
                 }),
-                o("j8dedddd", function (e) {
-                    return "Quando lo disattivi, @" + e.screenName + " e i suoi abbonati continueranno a vedere il tuo badge quando rispondi ai post di @" + e.screenName + " riservati agli abbonati. @" + e.screenName + " vedrà sempre il tuo badge.";
+                o("j8dedddd", function (i) {
+                    return "Quando lo disattivi, @" + i.screenName + " e i suoi abbonati continueranno a vedere il tuo badge quando rispondi ai post di @" + i.screenName + " riservati agli abbonati. @" + i.screenName + " vedrà sempre il tuo badge.";
                 }),
                 o("c8a513f6", "Disdici abbonamento"),
                 o("ea000ec8", "Hai già disdetto il tuo abbonamento?"),
@@ -7760,8 +7760,8 @@
                 o("c5d9c77a", "Sembra ci sia un problemino, ma non preoccuparti perché non è colpa tua. Chiudi questa finestra e riprova."),
                 o("jda53c24", "Puoi disdire il tuo abbonamento tramite App Store di Apple."),
                 o("g0a7a53e", "Puoi disdire il tuo abbonamento tramite Google Play Store."),
-                o("i5f14be7", function (e) {
-                    return "È bello rivederti, " + e.displayName;
+                o("i5f14be7", function (i) {
+                    return "È bello rivederti, " + i.displayName;
                 }),
                 o("a76d58ba", "Statistiche annunci"),
                 o("g512ddcc", "Statistiche organiche"),
@@ -7772,20 +7772,20 @@
                 o("h75e3618", "Includi organizzazione"),
                 o("h24a8862", "Info su questa casella"),
                 o("c29e3a88", "Seleziona affiliati"),
-                o("j8318d57", function (e) {
-                    return e.number + " affiliat" + t(e.number, "o", "i");
+                o("j8318d57", function (i) {
+                    return i.number + " affiliat" + t(i.number, "o", "i");
                 }),
                 o("bf809ec0", "Seleziona affiliati"),
                 o("b719e224", "Nessun risultato"),
                 o("c9938100", "Risultati di ricerca"),
                 o("d1a35ec6", "Aggiungi account"),
                 o("b437adda", "Esegui l'upgrade alla versione a pagamento"),
-                o("f1f6c88b", function (e) {
-                    return "Account (" + e.count + ")";
+                o("f1f6c88b", function (i) {
+                    return "Account (" + i.count + ")";
                 }),
                 o("b02156b8", "Inviti"),
-                o("gd67d29b", function (e) {
-                    return "Inviti (" + e.count + ")";
+                o("gd67d29b", function (i) {
+                    return "Inviti (" + i.count + ")";
                 }),
                 o("daf646e6", "Nota: devi etichettare il tuo account correttamente."),
                 o("i3895c32", "Stiamo esaminando il tuo account in quanto hai cambiato @identificativo X"),
@@ -7794,8 +7794,8 @@
                 o("c3ddd22c", "termini"),
                 o("c9729d8a", "termini"),
                 o("cdcd1d2c", "Aggiungi affiliazioni alla tua organizzazione"),
-                o("d30ea6f3", function (e) {
-                    return "Vuoi davvero rimuovere @" + e.name + "?";
+                o("d30ea6f3", function (i) {
+                    return "Vuoi davvero rimuovere @" + i.name + "?";
                 }),
                 o("c2dfbb86", "Sì, procedi"),
                 o("ba047f76", "Procedendo alla rimozione dell'affiliazione, l'affiliato perderà la sua spunta e il suo badge di account affiliato. L'addebito terminerà con la fine del mese."),
@@ -7803,19 +7803,19 @@
                 o("e30cbdf0", "Questo affiliato è abbonato a Organizzazioni verificate e deve continuare a essere contrassegnato come organizzazione, pertanto adesso non può essere considerato come persona."),
                 o("j3115ce8", "Persona"),
                 o("d8bb1d84", "Organizzazione"),
-                o("e970bdbd", function (e) {
-                    return e.count + " inviti rimanenti";
+                o("e970bdbd", function (i) {
+                    return i.count + " inviti rimanenti";
                 }),
-                o("id67d953", function (e) {
-                    return "Qualcosa è andato storto durante il recupero dei dettagli di pagamento relativi a Stripe. Se il problema persiste, scrivi all'indirizzo email " + e.supportEmail + ".";
+                o("id67d953", function (i) {
+                    return "Qualcosa è andato storto durante il recupero dei dettagli di pagamento relativi a Stripe. Se il problema persiste, scrivi all'indirizzo email " + i.supportEmail + ".";
                 }),
                 o("f323d314", "Reinvia"),
                 o("ac645cde", "Puoi procedere nuovamente all'aggiunta quando vuoi."),
-                o("d12af2dd", function (e) {
-                    return "Vuoi davvero rimuovere l'invito per @" + e.screenName + "?";
+                o("d12af2dd", function (i) {
+                    return "Vuoi davvero rimuovere l'invito per @" + i.screenName + "?";
                 }),
-                o("ib60b2d5", function (e) {
-                    return "Vuoi davvero reinviare l'invito a @" + e.screenName + "?";
+                o("ib60b2d5", function (i) {
+                    return "Vuoi davvero reinviare l'invito a @" + i.screenName + "?";
                 }),
                 o("ec6e7d9a", "Finché il cambiamento in sospeso del piano non sarà completato, il tuo account resterà in sola lettura. Per garantire che il cambiamento del piano avvenga correttamente, controlla il pagamento su Stripe."),
                 o("b33d1518", "Sincronizza le offerte tramite un'integrazione supportata o un feed XML personalizzato"),
@@ -7854,26 +7854,26 @@
                 o("h2ac0348", "No, torna indietro"),
                 o("dbf9667e", "Sì, voglio procedere"),
                 o("j7592572", "Curva a gomito");
-            function r(e, i) {
-                for (var a = 0; a < i.length; a++) {
-                    var o = i[a];
+            function r(i, e) {
+                for (var a = 0; a < e.length; a++) {
+                    var o = e[a];
                     (o.enumerable = o.enumerable || !1),
                         (o.configurable = !0),
                         "value" in o && (o.writable = !0),
                         Object.defineProperty(
-                            e,
+                            i,
                             ((t = o.key),
                             (n = void 0),
                             "symbol" ==
-                            typeof (n = (function (e, i) {
-                                if ("object" != typeof e || null === e) return e;
-                                var a = e[Symbol.toPrimitive];
+                            typeof (n = (function (i, e) {
+                                if ("object" != typeof i || null === i) return i;
+                                var a = i[Symbol.toPrimitive];
                                 if (void 0 !== a) {
-                                    var o = a.call(e, i || "default");
+                                    var o = a.call(i, e || "default");
                                     if ("object" != typeof o) return o;
                                     throw new TypeError("@@toPrimitive must return a primitive value.");
                                 }
-                                return ("string" === i ? String : Number)(e);
+                                return ("string" === e ? String : Number)(i);
                             })(t, "string"))
                                 ? n
                                 : String(n)),
@@ -7882,22 +7882,22 @@
                 }
                 var t, n;
             }
-            function c(e, i) {
+            function c(i, e) {
                 return (
                     (c = Object.setPrototypeOf
                         ? Object.setPrototypeOf.bind()
-                        : function (e, i) {
-                              return (e.__proto__ = i), e;
+                        : function (i, e) {
+                              return (i.__proto__ = e), i;
                           }),
-                    c(e, i)
+                    c(i, e)
                 );
             }
             o("ee778942", "Semaforo"),
-                o("fdd57981", function (e) {
-                    return "Ti regaliamo un credito pubblicitario una tantum di " + e.totalAmount + " USD.";
+                o("fdd57981", function (i) {
+                    return "Ti regaliamo un credito pubblicitario una tantum di " + i.totalAmount + " USD.";
                 }),
-                o("i032a231", function (e) {
-                    return "Rimango e voglio riscattare il credito pubblicitario di " + e.totalAmount;
+                o("i032a231", function (i) {
+                    return "Rimango e voglio riscattare il credito pubblicitario di " + i.totalAmount;
                 }),
                 o("hd7d278c", "No, grazie"),
                 o("jf8a0dea", "Ottimo! Troverai il credito pubblicitario in regalo nel tuo account al prossimo ciclo di fatturazione."),
@@ -7911,8 +7911,8 @@
                 o("b2297a4a", "Hai un problema? Programma una telefonata con noi."),
                 o("h3bdbc54", "Sì, desidero programmare una chiamata"),
                 o("i135d64e", "Procedi con la disdetta"),
-                o("g275882d", function (e) {
-                    return "Importante: hai un credito pubblicitario in regalo da " + e.creditAmount + " non riscattato";
+                o("g275882d", function (i) {
+                    return "Importante: hai un credito pubblicitario in regalo da " + i.creditAmount + " non riscattato";
                 }),
                 o("ib085ed6", "Rimango e voglio riscattare il credito pubblicitario"),
                 o("b5447710", "Utente non trovato"),
@@ -7928,8 +7928,8 @@
                 o("af7293cc", "Invita degli account X nella tua organizzazione. Se accettano, riceveranno una spunta e l'affiliazione a te verrà mostrata sul loro profilo."),
                 o("ec0f203e", "Non appena l'affiliato avrà accettato l'invito, assicurati di aggiornare la sua spunta affinché sia del colore giusto."),
                 o("cec08784", "Hai raggiunto il limite relativo agli affiliati in questa fattura."),
-                o("ab70828f", function (e) {
-                    return "Aggiungi @" + e.screenName;
+                o("ab70828f", function (i) {
+                    return "Aggiungi @" + i.screenName;
                 }),
                 o("d49b389f", "qui"),
                 o("b9e4bf55", "Scopri di più"),
@@ -7942,8 +7942,8 @@
                 o("fa2a280a", "Aggiorna fattura"),
                 o("i7b2f08e", "Ti diamo il benvenuto in Organizzazioni verificate"),
                 o("g4e18b84", "Hai raggiunto il limite di affiliati"),
-                o("cbe23239", function (e) {
-                    return "Per gli ordini di acquisto che includono più di " + e.affiliatesCount + " affiliati.";
+                o("cbe23239", function (i) {
+                    return "Per gli ordini di acquisto che includono più di " + i.affiliatesCount + " affiliati.";
                 }),
                 o("fc1f43d0", "Genera fattura"),
                 o("g8881c78", "Procedi al pagamento"),
@@ -7956,30 +7956,30 @@
                 o("f5a1c6ac", "Gli abbonamenti non sono disponibili nella tua zona"),
                 o("ef7ae9cd", "Scopri di più"),
                 o("d3c6b8c9", "Scopri di più"),
-                o("fafe5b9f", function (e) {
-                    return "Abbonati · " + e.price + " ogni " + e.interval;
+                o("fafe5b9f", function (i) {
+                    return "Abbonati · " + i.price + " ogni " + i.interval;
                 }),
                 o("f2ae1d63", "Termini di servizio per gli acquirenti"),
                 o("ie8759c5", "Termini di servizio per gli acquirenti"),
-                o("d842dd7b", function (e) {
-                    return "Cresci più velocemente su X e ottieni un credito pubblicitario in regalo da " + e.credit;
+                o("d842dd7b", function (i) {
+                    return "Cresci più velocemente su X e ottieni un credito pubblicitario in regalo da " + i.credit;
                 }),
                 o("fcfb696e", "* L'offerta relativa al credito pubblicitario è a tempo limitato."),
-                o("f5b98d62", function (e) {
-                    return "ogni " + e.interval;
+                o("f5b98d62", function (i) {
+                    return "ogni " + i.interval;
                 }),
-                o("ed7b9984", function (e) {
-                    return "ogni " + e.interval;
+                o("ed7b9984", function (i) {
+                    return "ogni " + i.interval;
                 }),
-                o("da11a2d7", function (e) {
-                    return "Crediti pubblicitari fino a " + e.creditAmount + "⁺";
+                o("da11a2d7", function (i) {
+                    return "Crediti pubblicitari fino a " + i.creditAmount + "⁺";
                 }),
                 o("a6c45ede", "Include:"),
                 o("e9aa43dc", "Offerte di lavoro organiche"),
                 o("i1266238", "Sponsorizzazioni offerte di lavoro"),
                 o("e8a4ea7a", "Assistenza prioritaria"),
-                o("j99e2f4d", function (e) {
-                    return e.price + " ogni " + e.interval;
+                o("j99e2f4d", function (i) {
+                    return i.price + " ogni " + i.interval;
                 }),
                 o("ieafe1c6", "Conferma la modifica di abbonamento"),
                 o("bb21a170", "Modifica abbonamento"),
@@ -8010,8 +8010,8 @@
                 o("c4c1b600", "Indirizzo email dell'organizzazione"),
                 o("b1e0aec0", "@identificativo dell'organizzazione"),
                 o("c42d5f4a", "Numero di affiliati"),
-                o("fca5f04b", function (e) {
-                    return "Puoi acquistare fino a " + e.affiliatesCount + " affiliati. Il costo che ti verrà addebitato sarà proporzionato al numero di affiliati.";
+                o("fca5f04b", function (i) {
+                    return "Puoi acquistare fino a " + i.affiliatesCount + " affiliati. Il costo che ti verrà addebitato sarà proporzionato al numero di affiliati.";
                 }),
                 o("dca6b3ac", "Predisponi una fattura"),
                 o("c97ad52a", "Aggiorna fattura"),
@@ -8029,8 +8029,8 @@
                 o("b13e9454", "La richiesta non è ancora completa. Invia i documenti richiesti, in genere ci vogliono 10 minuti."),
                 o("e6b0965a", "Il tuo ordine"),
                 o("a1b58798", "Controlla l'ordine qui sotto"),
-                o("b651c7d7", function (e) {
-                    return "affiliat" + t(e.count, "o", "i") + " x " + e.count;
+                o("b651c7d7", function (i) {
+                    return "affiliat" + t(i.count, "o", "i") + " x " + i.count;
                 }),
                 o("ec5e9c54", "Abbonamento base"),
                 o("e16093fc", "Totale al mese"),
@@ -8039,8 +8039,8 @@
                 o("b9e0d614", "Il limite di affiliati nella fattura è stato aggiornato."),
                 o("a45c9596", "La tua fattura è stata generata correttamente."),
                 o("e4e5532a", "Sconto applicato"),
-                o("b557f073", function (e) {
-                    return "Qualcosa è andato storto durante il recupero dei dettagli di fatturazione da Stripe. Se il problema persiste, scrivi all'indirizzo email " + e.supportEmail + ".";
+                o("b557f073", function (i) {
+                    return "Qualcosa è andato storto durante il recupero dei dettagli di fatturazione da Stripe. Se il problema persiste, scrivi all'indirizzo email " + i.supportEmail + ".";
                 }),
                 o("e8c366ce", "Termini per gli acquirenti su X"),
                 o("ee86d380", "Informazioni organizzazione"),
@@ -8048,8 +8048,8 @@
                 o("c7e818de", "Il tuo indirizzo email professionale"),
                 o("i60d7542", "Sito Web dell'organizzazione"),
                 o("b92f9dee", "Tipo di organizzazione"),
-                o("f14d7866", function (e) {
-                    return "" + e.screenName;
+                o("f14d7866", function (i) {
+                    return "" + i.screenName;
                 }),
                 o("e63bf39d", "Scopri di più"),
                 o("f09630ff", "qui"),
@@ -8065,14 +8065,14 @@
                 o("gd7d051c", "Attiva"),
                 o("f391c800", "L'ID account Ads è obbligatorio"),
                 o("ja116d2c", "L'ID account Ads non è valido"),
-                o("hf037537", function (e) {
-                    return "Riceverai questo credito in data " + e.startDate;
+                o("hf037537", function (i) {
+                    return "Riceverai questo credito in data " + i.startDate;
                 }),
-                o("d0b58c01", function (e) {
-                    return "" + e.days;
+                o("d0b58c01", function (i) {
+                    return "" + i.days;
                 }),
-                o("e49cb8a7", function (e) {
-                    return "" + e.remainingAmount;
+                o("e49cb8a7", function (i) {
+                    return "" + i.remainingAmount;
                 }),
                 o("gd03b494", "Come utilizzare il credito pubblicitario"),
                 o("h1f36d3e", "Per utilizzare il credito pubblicitario di Organizzazioni verificate devi seguire questi passaggi:"),
@@ -8090,32 +8090,32 @@
                 o("dd0f3b08", "annunci"),
                 o("c9fad534", "Nessun credito"),
                 o("a211b11e", "Non ci sono crediti disponibili da attivare"),
-                o("f2011db1", function (e) {
-                    return e.usedAmount + " spesi di " + e.couponAmount;
+                o("f2011db1", function (i) {
+                    return i.usedAmount + " spesi di " + i.couponAmount;
                 }),
                 o("ae37e25c", "importo sconosciuto"),
-                o("i1407e15", function (e) {
-                    return "Utilizzato sull'account Ads " + e.accountId;
+                o("i1407e15", function (i) {
+                    return "Utilizzato sull'account Ads " + i.accountId;
                 }),
-                o("id4359bf", function (e) {
-                    return "Scadenza passata per l'account Ads " + e.accountId + ": " + e.when;
+                o("id4359bf", function (i) {
+                    return "Scadenza passata per l'account Ads " + i.accountId + ": " + i.when;
                 }),
-                o("f89af915", function (e) {
-                    return "Scadenza passata: " + e.when;
+                o("f89af915", function (i) {
+                    return "Scadenza passata: " + i.when;
                 }),
-                o("c1b5e1ed", function (e) {
-                    return "Scadenza per l'account Ads " + e.accountId + ": " + e.when;
+                o("c1b5e1ed", function (i) {
+                    return "Scadenza per l'account Ads " + i.accountId + ": " + i.when;
                 }),
-                o("e8d8a2a9", function (e) {
-                    return "Scadenza: " + e.when;
+                o("e8d8a2a9", function (i) {
+                    return "Scadenza: " + i.when;
                 }),
-                o("i3884c1f", function (e) {
-                    return "Disponibilità: " + e.when;
+                o("i3884c1f", function (i) {
+                    return "Disponibilità: " + i.when;
                 }),
                 o("b070acf4", "Presto disponibile"),
                 o("ace946c4", "Attiva il coupon"),
-                o("b0b02e37", function (e) {
-                    return "Questo coupon è stato applicato correttamente all'account Ads con il seguente ID: " + e.accountId;
+                o("b0b02e37", function (i) {
+                    return "Questo coupon è stato applicato correttamente all'account Ads con il seguente ID: " + i.accountId;
                 }),
                 o("f520ee22", "ID account Ads"),
                 o("df96ca56", "Altro account"),
@@ -8142,26 +8142,26 @@
                 o("ged51d2e", "Crea un account Ads"),
                 o("gcfa25e6", "La tua organizzazione non dispone di alcun account Ads da utilizzare. Per crearne uno, visita il sito ads.x.com."),
                 o("g76fb922", "Nuovo account"),
-                o("db0a69e7", function (e) {
-                    return "Il tuo account Ads (ID: " + e.adAccountId + ") è nuovo. Per attivarlo, completa la configurazione iniziale in Ads Manager.";
+                o("db0a69e7", function (i) {
+                    return "Il tuo account Ads (ID: " + i.adAccountId + ") è nuovo. Per attivarlo, completa la configurazione iniziale in Ads Manager.";
                 }),
                 o("c7bad5cc", "Configura account"),
                 o("g8c563c0", "Ti serve l'accesso"),
-                o("f6f29b17", function (e) {
-                    return "Non hai accesso all'account Ads (ID: " + e.adAccountId + "). Chiedi all'amministratore del team di aggiungere il tuo account in Ads Manager.";
+                o("f6f29b17", function (i) {
+                    return "Non hai accesso all'account Ads (ID: " + i.adAccountId + "). Chiedi all'amministratore del team di aggiungere il tuo account in Ads Manager.";
                 }),
                 o("a15bb840", "Metodo di pagamento richiesto"),
-                o("j4e981d9", function (e) {
-                    return "Il tuo account Ads (ID: " + e.adAccountId + ") è configurato parzialmente. Per attivarlo, aggiungi un metodo di pagamento all'account. Eventuali crediti applicati all'account verranno azzerati prima dell'addebito.";
+                o("j4e981d9", function (i) {
+                    return "Il tuo account Ads (ID: " + i.adAccountId + ") è configurato parzialmente. Per attivarlo, aggiungi un metodo di pagamento all'account. Eventuali crediti applicati all'account verranno azzerati prima dell'addebito.";
                 }),
                 o("af142910", "Pagamento non riuscito"),
-                o("a9635acf", function (e) {
-                    return "Il tuo account Ads (ID: " + e.adAccountId + ") è stato attivato ma l'ultimo pagamento non è andato a buon fine. Per attivarlo nuovamente, modifica il metodo di pagamento per l'account.";
+                o("a9635acf", function (i) {
+                    return "Il tuo account Ads (ID: " + i.adAccountId + ") è stato attivato ma l'ultimo pagamento non è andato a buon fine. Per attivarlo nuovamente, modifica il metodo di pagamento per l'account.";
                 }),
                 o("d1cca474", "Modifica metodo di pagamento"),
                 o("fe8b969a", "L'assistenza clienti può aiutarti"),
-                o("i8aa0b91", function (e) {
-                    return "Per attivare questo account Ads (ID: " + e.adAccountId + ") è necessario l'aiuto dell'assistenza clienti. Accertati di includere l'ID account Ads nel messaggio. La tua richiesta verrà gestita con la massima priorità.";
+                o("i8aa0b91", function (i) {
+                    return "Per attivare questo account Ads (ID: " + i.adAccountId + ") è necessario l'aiuto dell'assistenza clienti. Accertati di includere l'ID account Ads nel messaggio. La tua richiesta verrà gestita con la massima priorità.";
                 }),
                 o("d82c2074", "Ricevi assistenza"),
                 o("ad37d536", "Termini per il trasferimento degli identificativi"),
@@ -8215,17 +8215,17 @@
                 o("c15802be", "Invio post in corso…"),
                 o("e5506950", "Deck"),
                 o("b1bd9a8a", "Crea deck"),
-                o("cf1a138f", function (e) {
-                    return "Modificata in deck - " + e.title;
+                o("cf1a138f", function (i) {
+                    return "Modificata in deck - " + i.title;
                 }),
                 o("g9c2da24", "Apre la finestra di dialogo per la creazione di un nuovo deck"),
                 o("hcef6b72", "Apre la finestra di dialogo per la gestione dei deck"),
                 o("a77dbc7a", "Modifica deck"),
-                o("a154a293", function (e) {
-                    return "Il deck " + e.deckName + " è stato selezionato";
+                o("a154a293", function (i) {
+                    return "Il deck " + i.deckName + " è stato selezionato";
                 }),
-                o("a77bbe9d", function (e) {
-                    return "Il deck " + e.deckName + " è stato deselezionato";
+                o("a77bbe9d", function (i) {
+                    return "Il deck " + i.deckName + " è stato deselezionato";
                 }),
                 o("ha2aae72", "Apre la finestra di dialogo per gestire il deck selezionato"),
                 o("hf59ffc8", "Barra di navigazione"),
@@ -8240,8 +8240,8 @@
                 o("fce3c5ce", "Invia feedback"),
                 o("ha39df38", "Personale"),
                 o("ja7b7d1a", "Stiamo riscontrando problemi in fase di connessione. Le modifiche effettuate potrebbero non essere salvate."),
-                o("ad5df1d7", function (e) {
-                    return "Modificato in colonna - " + e.title;
+                o("ad5df1d7", function (i) {
+                    return "Modificato in colonna - " + i.title;
                 }),
                 o("ba7bd92e", "Impostazioni per le colonne"),
                 o("cc4ff736", "Condivisione colonna"),
@@ -8282,8 +8282,8 @@
                 o("e920e6dc", "Mostra citazioni"),
                 o("g9580526", "Mostra risposte"),
                 o("i73cbb5c", "Puoi aggiungere una sola lista per ciascuna ricerca. Solamente la prima lista verrà applicata a questa ricerca."),
-                o("c765315d", function (e) {
-                    return "Inserisci " + e.listHandleListNameFormat + " or l'ID lista";
+                o("c765315d", function (i) {
+                    return "Inserisci " + i.listHandleListNameFormat + " or l'ID lista";
                 }),
                 o("a153fbf2", "Come utilizzare una lista in una ricerca"),
                 o("bf0d5a7c", "Puoi aggiungere una lista per ciascuna ricerca."),
@@ -8304,14 +8304,14 @@
                 o("cf260344", "Post in"),
                 o("j5805302", "Raggio"),
                 o("e592ab3c", "Per risultati migliori, includi nella tua ricerca la località e il Paese."),
-                o("e8843b5d", function (e) {
-                    return e.meters + " m";
+                o("e8843b5d", function (i) {
+                    return i.meters + " m";
                 }),
-                o("g9e6a4e5", function (e) {
-                    return e.kilometers + " km";
+                o("g9e6a4e5", function (i) {
+                    return i.kilometers + " km";
                 }),
-                o("ec688a09", function (e) {
-                    return "Questa operazione impedisce a @" + e.screenName + " di includerti nelle sue liste, compresa questa.";
+                o("ec688a09", function (i) {
+                    return "Questa operazione impedisce a @" + i.screenName + " di includerti nelle sue liste, compresa questa.";
                 }),
                 o("iad54d54", "Cancella i segnalibri"),
                 o("g4d581a2", "Svuota questa e tutte le cartelle di segnalibri"),
@@ -8343,8 +8343,8 @@
                 o("c9b39e70", "Sposta"),
                 o("b9ea5f7c", "Sposta colonna su un altro deck."),
                 o("g8b6d450", "Opzioni di notifica"),
-                o("dd703fbd", function (e) {
-                    return "Elimina colonna - " + e.title;
+                o("dd703fbd", function (i) {
+                    return "Elimina colonna - " + i.title;
                 }),
                 o("d9d11fc6", "Vuoi eliminare la colonna pubblica?"),
                 o("h17ada6c", "Procedendo all'eliminazione della colonna pubblica, tutti i follower perderanno accesso definitivamente alla colonna."),
@@ -8369,8 +8369,8 @@
                 o("f59f87dc", "Trova le liste altrui"),
                 o("a5d70676", "Liste di cui fai parte"),
                 o("e377790a", "Torna alle liste"),
-                o("e952b8c3", function (e) {
-                    return "Liste di @" + e.userScreenName;
+                o("e952b8c3", function (i) {
+                    return "Liste di @" + i.userScreenName;
                 }),
                 o("bc24f834", "Torna alla scoperta delle liste altrui"),
                 o("ee11d084", "Cerca profili"),
@@ -8408,28 +8408,28 @@
                 o("h9659832", "Visualizza le tue bozze di post."),
                 o("f1b6535e", "Bozze di post"),
                 o("a24add8a", "Visualizza i post salvati nei segnalibri."),
-                o("gb19f215", function (e) {
-                    return "Colonna - " + e.title;
+                o("gb19f215", function (i) {
+                    return "Colonna - " + i.title;
                 }),
                 o("g7751b34", "Chiudi stack"),
                 o("b94fa48c", "Cancella stack"),
                 o("dd3dc3cc", "Torna allo stack"),
                 o("bc7acfd0", "Colonna condivisa"),
-                o("a6587d95", function (e) {
-                    return "Riordina colonna - " + e.title;
+                o("a6587d95", function (i) {
+                    return "Riordina colonna - " + i.title;
                 }),
                 o("fb071dea", "Sposta colonna"),
-                o("c77a6327", function (e) {
-                    return "Apri opzioni colonna - " + e.title;
+                o("c77a6327", function (i) {
+                    return "Apri opzioni colonna - " + i.title;
                 }),
                 o("h53c41f0", "Opzioni colonna"),
-                o("f7bbbb6d", function (e) {
-                    return "Chiudi opzioni colonna - " + e.title;
+                o("f7bbbb6d", function (i) {
+                    return "Chiudi opzioni colonna - " + i.title;
                 }),
                 o("eee9f83e", "Chiudi opzioni colonna"),
                 o("a443bbc0", "Chiudi la ricerca"),
-                o("c8b12c8f", function (e) {
-                    return "Imposta contenuti colonna - " + e.title;
+                o("c8b12c8f", function (i) {
+                    return "Imposta contenuti colonna - " + i.title;
                 }),
                 o("fe048090", "Mostra riepilogo"),
                 o("e57560b4", "Nascondi riepilogo"),
@@ -8481,8 +8481,8 @@
                 o("g9df1984", "Aggiungi un deck"),
                 o("df77af70", "Scegli un'emoji per il deck"),
                 o("ee7765ba", "Seleziona l'emoji"),
-                o("e0127c83", function (e) {
-                    return "Modifica emoji " + e.emoji;
+                o("e0127c83", function (i) {
+                    return "Modifica emoji " + i.emoji;
                 }),
                 o("hb8b6254", "Chiunque può accedere al deck pubblico dal tuo profilo. Puoi anche condividere i suoi link. Se cambi idea puoi sempre renderlo privato di nuovo. Scopri di più"),
                 o("gfbaf4e8", "Attualmente non è possibile rendere pubblico questo deck"),
@@ -8491,17 +8491,17 @@
                 o("h95cb00e", "Il deck verrà eliminato definitivamente. L'azione non può essere annullata."),
                 o("f50c9834", "Il deck verrà eliminato definitivamente. Se lo elimini non potrai recuperarlo in seguito."),
                 o("cb861826", "Riordina il deck"),
-                o("i5896b2b", function (e) {
-                    return "Modifica il deck " + e.title;
+                o("i5896b2b", function (i) {
+                    return "Modifica il deck " + i.title;
                 }),
-                o("ef602cab", function (e) {
-                    return "Elimina il deck " + e.title;
+                o("ef602cab", function (i) {
+                    return "Elimina il deck " + i.title;
                 }),
-                o("b44b9d83", function (e) {
-                    return "Stacca il deck " + e.title;
+                o("b44b9d83", function (i) {
+                    return "Stacca il deck " + i.title;
                 }),
-                o("je4a847f", function (e) {
-                    return "Fissa il deck " + e.title;
+                o("je4a847f", function (i) {
+                    return "Fissa il deck " + i.title;
                 }),
                 o("ad41be88", "Sposta colonna sul deck"),
                 o("cb82860a", "Colonna non trovata"),
@@ -8514,15 +8514,15 @@
                 o("j4d54f1e", "Uno strumento efficace e in tempo reale per chi vive su X."),
                 o("je0526a0", "Consulta diverse cronologie da un'unica schermata, monitora e organizza i contenuti e interagisci in tempo reale con le tue community."),
                 o("d128af54", "Abbonati a X Premium"),
-                o("bacd7195", function (e) {
-                    return e.fullName + " (@" + e.screenName + ") su X";
+                o("bacd7195", function (i) {
+                    return i.fullName + " (@" + i.screenName + ") su X";
                 }),
                 o("e5b4aafa", "La tua connessione a Internet si è interrotta."),
                 o("g43c3b36", "Riconnettiti a Internet per continuare."),
                 o("hafe83ec", "Premi Chiudi per uscire dall'applicazione."),
                 o("b2ec74fe", "chiudi"),
-                o("hf836e5f", function (e) {
-                    return e.tweetText + " " + e.username + " " + e.screenName + " " + e.views + " visualizzazioni " + e.timeAgo;
+                o("hf836e5f", function (i) {
+                    return i.tweetText + " " + i.username + " " + i.screenName + " " + i.views + " visualizzazioni " + i.timeAgo;
                 }),
                 o("a7a90902", "Premi Seleziona per visualizzare"),
                 o("cb0a3b5e", "Questo post potrebbe includere materiale sensibile. Vuoi davvero visualizzarlo?"),
@@ -8537,30 +8537,30 @@
                 o("ebc1accc", "Scansiona questo codice QR"),
                 o("a4742bc0", "Visita da computer o dispositivo mobile l'URL riportato di seguito e inserisci il codice che vedi qui."),
                 o("f260dea2", "x.com/tvlogin"),
-                o("h797e380", function (e) {
-                    return "" + e.url;
+                o("h797e380", function (i) {
+                    return "" + i.url;
                 }),
-                o("cf8eec84", function (e) {
-                    return "" + e.url;
+                o("cf8eec84", function (i) {
+                    return "" + i.url;
                 }),
-                o("g7ee7019", function (e) {
-                    return "Accedi per vedere i video di " + e.name + ".";
+                o("g7ee7019", function (i) {
+                    return "Accedi per vedere i video di " + i.name + ".";
                 }),
                 o("fb83778c", "Accedi per vedere i video di questo utente."),
                 o("dd4bbaea", "Non hai video da mostrare."),
-                o("i71d6193", function (e) {
-                    return "Nessun video di " + e.name + " da mostrare.";
+                o("i71d6193", function (i) {
+                    return "Nessun video di " + i.name + " da mostrare.";
                 }),
                 o("adb512f0", "Video recenti"),
-                o("bef78294", function (e) {
-                    return "" + e.formattedCount;
+                o("bef78294", function (i) {
+                    return "" + i.formattedCount;
                 }),
-                o("hda3bb87", function (e) {
+                o("hda3bb87", function (i) {
                     return "following";
                 }),
                 o("cd3f5206", "In coda:"),
-                o("c930299f", function (e) {
-                    return "In riproduzione tra " + e.count + ":";
+                o("c930299f", function (i) {
+                    return "In riproduzione tra " + i.count + ":";
                 }),
                 o("b2e9f19c", "Riproduci ancora l'ultimo video"),
                 o("de906774", "Velocità"),
@@ -8568,8 +8568,8 @@
                 o("b049f56c", "Qualità"),
                 o("fa7169d8", "Per segnalare questo contenuto, apri l'URL qui sotto dal tuo laptop o dispositivo mobile"),
                 o("c973ec9c", "Nome utente dell'account"),
-                o("e9670a81", function (e) {
-                    return "@" + e.screenName;
+                o("e9670a81", function (i) {
+                    return "@" + i.screenName;
                 }),
                 o("d0e1b720", "URL contenuto"),
                 o("a4ee9394", "Bianca"),
@@ -8636,22 +8636,22 @@
                 o("c388d026", "Ok"),
                 o("ha20397c", "Funzioni di accessibilità"),
                 o("baf7a43c", "Accessibilità"),
-                o("e8f674ab", function (e) {
-                    return "Questo è un grafico a barre " + e.chartType + ". Il titolo del grafico è " + e.chartTitle + ". Sono incluse " + e.noOfCategories + " categorie in totale. Il valore minimo è " + e.minValue + " mentre quello massimo è " + e.maxValue + ". Consulta il grafico attraverso i controlli di navigazione.";
+                o("e8f674ab", function (i) {
+                    return "Questo è un grafico a barre " + i.chartType + ". Il titolo del grafico è " + i.chartTitle + ". Sono incluse " + i.noOfCategories + " categorie in totale. Il valore minimo è " + i.minValue + " mentre quello massimo è " + i.maxValue + ". Consulta il grafico attraverso i controlli di navigazione.";
                 }),
                 o("d969327c", "Riproduci la versione audio"),
                 o("d8cbbcd4", "Riproduci audio del grafico. Premi per riprodurre la versione audio del grafico oppure premi il pulsante A su ciascun punto dati per riprodurre la relativa versione audio."),
-                o("dec1d7ef", function (e) {
-                    return e.label + ", " + e.group + " e " + e.value;
+                o("dec1d7ef", function (i) {
+                    return i.label + ", " + i.group + " e " + i.value;
                 }),
-                o("f765bead", function (e) {
-                    return "dati senza etichetta, " + e.group + ", " + e.value;
+                o("f765bead", function (i) {
+                    return "dati senza etichetta, " + i.group + ", " + i.value;
                 }),
-                o("idea1817", function (e) {
-                    return e.label + ", " + e.value;
+                o("idea1817", function (i) {
+                    return i.label + ", " + i.value;
                 }),
-                o("fe94be6b", function (e) {
-                    return "dati senza etichetta, " + e.value;
+                o("fe94be6b", function (i) {
+                    return "dati senza etichetta, " + i.value;
                 }),
                 o("b15c0a18", "Vuoi cestinare le modifiche?"),
                 o("aebf81c8", "Qualsiasi modifica apportata non sarà salvata."),
@@ -8669,51 +8669,51 @@
                 o("b05a39b2", "Visualizza"),
                 o("a7cd5cf4", "Video"),
                 o("b6eb8f6a", "Trasmissione"),
-                o("dcc2b9b3", function (e) {
-                    return "Riproduci " + e.locVideoType;
+                o("dcc2b9b3", function (i) {
+                    return "Riproduci " + i.locVideoType;
                 }),
-                o("hf4ffd4d", function (e) {
-                    return "Riproduci " + e.locVideoType + " in diretta";
+                o("hf4ffd4d", function (i) {
+                    return "Riproduci " + i.locVideoType + " in diretta";
                 }),
-                o("f6e90cd7", function (e) {
-                    return "Dura " + e.hoursWord + ", " + e.minutesWord + " e " + e.secondsWord;
+                o("f6e90cd7", function (i) {
+                    return "Dura " + i.hoursWord + ", " + i.minutesWord + " e " + i.secondsWord;
                 }),
-                o("e7d191ed", function (e) {
-                    return "Inizierà tra " + e.hoursWord + ", " + e.minutesWord + " e " + e.secondsWord;
+                o("e7d191ed", function (i) {
+                    return "Inizierà tra " + i.hoursWord + ", " + i.minutesWord + " e " + i.secondsWord;
                 }),
-                o("daa73df1", function (e) {
-                    return e.viewerCount + " visualizzazion" + t(e.viewerCount, "e", "i");
+                o("daa73df1", function (i) {
+                    return i.viewerCount + " visualizzazion" + t(i.viewerCount, "e", "i");
                 }),
-                o("b4f19b97", function (e) {
-                    return e.listItem1 + " e " + e.listItem2;
+                o("b4f19b97", function (i) {
+                    return i.listItem1 + " e " + i.listItem2;
                 }),
-                o("i0135403", function (e) {
-                    return e.listItem1 + " e " + e.listItem2;
+                o("i0135403", function (i) {
+                    return i.listItem1 + " e " + i.listItem2;
                 }),
-                o("f1574a4b", function (e) {
-                    return e.listItem1 + " e " + e.listItem2;
+                o("f1574a4b", function (i) {
+                    return i.listItem1 + " e " + i.listItem2;
                 }),
                 o("ec72e2f8", "Segui"),
-                o("d9d2a865", function (e) {
-                    return "Riproduci" + e.ttc_card_cta_play;
+                o("d9d2a865", function (i) {
+                    return "Riproduci" + i.ttc_card_cta_play;
                 }),
-                o("a8422cd5", function (e) {
-                    return "Acquista" + e.ttc_card_cta_shop;
+                o("a8422cd5", function (i) {
+                    return "Acquista" + i.ttc_card_cta_shop;
                 }),
-                o("ff1b8c17", function (e) {
-                    return "Compra ora" + e.ttc_card_cta_shop_now;
+                o("ff1b8c17", function (i) {
+                    return "Compra ora" + i.ttc_card_cta_shop_now;
                 }),
-                o("d04488ef", function (e) {
-                    return "Prenota" + e.ttc_card_cta_book;
+                o("d04488ef", function (i) {
+                    return "Prenota" + i.ttc_card_cta_book;
                 }),
-                o("b0b0cfb7", function (e) {
-                    return "Connetti" + e.ttc_card_cta_connect;
+                o("b0b0cfb7", function (i) {
+                    return "Connetti" + i.ttc_card_cta_connect;
                 }),
-                o("ea5247d5", function (e) {
-                    return "Ordina" + e.ttc_card_cta_order;
+                o("ea5247d5", function (i) {
+                    return "Ordina" + i.ttc_card_cta_order;
                 }),
-                o("b7b58677", function (e) {
-                    return "Apri" + e.ttc_card_cta_open;
+                o("b7b58677", function (i) {
+                    return "Apri" + i.ttc_card_cta_open;
                 }),
                 o("g15f6870", "Scopri di più"),
                 o("d1ff55d8", "Installa"),
@@ -8721,14 +8721,14 @@
                 o("j393e386", "Inviaci un messaggio privato"),
                 o("a771d32e", "Inviami un messaggio privato"),
                 o("d8e9c24c", "Invia un messaggio privato"),
-                o("h2f9258f", function (e) {
-                    return e.appStarRating + "/5 stelle - " + e.appNumRatings + " valutazioni";
+                o("h2f9258f", function (i) {
+                    return i.appStarRating + "/5 stelle - " + i.appNumRatings + " valutazioni";
                 }),
-                o("cc5508a9", function (e) {
-                    return "Inizio: " + e.timestampUTC;
+                o("cc5508a9", function (i) {
+                    return "Inizio: " + i.timestampUTC;
                 }),
-                o("f4520a5d", function (e) {
-                    return "Posta " + e.action;
+                o("f4520a5d", function (i) {
+                    return "Posta " + i.action;
                 }),
                 o("f17dfdb6", "Riproduci"),
                 o("j836de8a", "Account protetto"),
@@ -8765,14 +8765,14 @@
                 o("j25d7cca", "Nascondi didascalie"),
                 o("a858b25c", "Mostra sottotitoli"),
                 o("faf9f484", "Annuncio"),
-                o("ae2ea9e7", function (e) {
-                    return "Annuncio di " + e.advertiserName;
+                o("ae2ea9e7", function (i) {
+                    return "Annuncio di " + i.advertiserName;
                 }),
                 o("hea01798", "Cursore di ricerca"),
                 o("f8a09386", "Visualizza su Periscope"),
                 o("gf2b6eee", "Picture in Picture"),
-                o("b3160a69", function (e) {
-                    return e.volumePercent + " per cento";
+                o("b3160a69", function (i) {
+                    return i.volumePercent + " per cento";
                 }),
                 o("fb236728", "Pausa"),
                 o("e9bd453e", "Replay"),
@@ -8782,23 +8782,23 @@
                 o("c9a642fa", "Regolatore del volume"),
                 o("c27e60b0", "Schermo intero"),
                 o("d2969f10", "Esci dalla modalità a schermo intero"),
-                o("f06f2e53", function (e) {
-                    return e.currentTime + " di " + e.durationTime;
+                o("f06f2e53", function (i) {
+                    return i.currentTime + " di " + i.durationTime;
                 }),
-                o("eeb64451", function (e) {
-                    return "Guarda " + e.advertiserName;
+                o("eeb64451", function (i) {
+                    return "Guarda " + i.advertiserName;
                 }),
-                o("f3c268a5", function (e) {
-                    return "Compra da " + e.advertiserName;
+                o("f3c268a5", function (i) {
+                    return "Compra da " + i.advertiserName;
                 }),
-                o("g60001bb", function (e) {
-                    return "Visualizza " + e.advertiserName;
+                o("g60001bb", function (i) {
+                    return "Visualizza " + i.advertiserName;
                 }),
-                o("dff1ddd9", function (e) {
-                    return "Passa a " + e.advertiserName;
+                o("dff1ddd9", function (i) {
+                    return "Passa a " + i.advertiserName;
                 }),
-                o("b0b22805", function (e) {
-                    return "Visita " + e.advertiserName;
+                o("b0b22805", function (i) {
+                    return "Visita " + i.advertiserName;
                 }),
                 o("c67e71aa", "Guarda ora"),
                 o("a6ada13e", "Compra ora"),
@@ -8808,16 +8808,16 @@
                 o("f73003aa", "Il video sarà riprodotto dopo l'annuncio"),
                 o("b3112b8a", "Salta"),
                 o("h6333ad0", "Salta annuncio"),
-                o("c59da417", function (e) {
-                    return "Salta annuncio tra " + e.seconds;
+                o("c59da417", function (i) {
+                    return "Salta annuncio tra " + i.seconds;
                 }),
-                o("c3c147cf", function (e) {
-                    return "Salta " + e.seconds;
+                o("c3c147cf", function (i) {
+                    return "Salta " + i.seconds;
                 }),
                 o("h9b3104e", "Impostazioni video"),
                 o("ha3efce4", "Automatica"),
-                o("hd8d044d", function (e) {
-                    return "Automatica (" + e.quality + ")";
+                o("hd8d044d", function (i) {
+                    return "Automatica (" + i.quality + ")";
                 }),
                 o("a7bf9962", "Scarica video"),
                 o("ccc97152", "Velocità di riproduzione"),
@@ -8830,21 +8830,21 @@
                 o("e9eeed9e", "1,5x"),
                 o("fe45dc84", "1,75x"),
                 o("e791190a", "2x"),
-                o("dc5df829", function (e) {
-                    return e.resolution + "p" + e.frameRate;
+                o("dc5df829", function (i) {
+                    return i.resolution + "p" + i.frameRate;
                 }),
                 o("c4d66d2e", "La qualità è subottimale a causa del tuo browser. Ti consigliamo di utilizzare un browser che supporta HEVC."),
-                o("a681babd", function (e) {
-                    return "Guarda ora su " + e.trimmedHostname;
+                o("a681babd", function (i) {
+                    return "Guarda ora su " + i.trimmedHostname;
                 }),
-                o("db3cd325", function (e) {
-                    return "Visita " + e.trimmedHostname;
+                o("db3cd325", function (i) {
+                    return "Visita " + i.trimmedHostname;
                 }),
-                o("f1ad0df1", function (e) {
-                    return "Annuncio · " + e.timeRemaining;
+                o("f1ad0df1", function (i) {
+                    return "Annuncio · " + i.timeRemaining;
                 }),
-                o("ef16ab2b", function (e) {
-                    return "Annuncio di " + e.advertiserName + " · " + e.timeRemaining;
+                o("ef16ab2b", function (i) {
+                    return "Annuncio di " + i.advertiserName + " · " + i.timeRemaining;
                 }),
                 o("a15adf2c", "questo modulo"),
                 o("c1658fc6", "Il contenuto multimediale non può essere riprodotto."),
@@ -8852,12 +8852,12 @@
                 o("ce871584", "Questa trasmissione è terminata."),
                 o("c101eb96", "Questa trasmissione non è disponibile."),
                 o("gb24a514", "Questo contenuto è stato disabilitato in seguito a una segnalazione da parte del titolare del copyright."),
-                o("hcaf3e63", function (e) {
-                    return "Questo contenuto è stato disabilitato in seguito a un reclamo in materia di copyright da parte di " + e.holder + ".";
+                o("hcaf3e63", function (i) {
+                    return "Questo contenuto è stato disabilitato in seguito a un reclamo in materia di copyright da parte di " + i.holder + ".";
                 }),
                 o("if05c038", "Questa trasmissione non è disponibile nella tua zona."),
-                o("d420171b", function (e) {
-                    return "Il video non è disponibile a causa di un reclamo in materia di copyright da parte di " + e.holder;
+                o("d420171b", function (i) {
+                    return "Il video non è disponibile a causa di un reclamo in materia di copyright da parte di " + i.holder;
                 }),
                 o("b1eb72fa", "Spiacenti, questo video non è disponibile in determinate zone. Attendi alcuni istanti mentre otteniamo la tua posizione. Assicurati che le impostazioni di localizzazione siano attive nel browser."),
                 o("c057680c", "Il video non può essere riprodotto su questo browser. Prova da un altro browser."),
@@ -8876,77 +8876,77 @@
                 o("a423473c", "Avviso obbligatorio per legge"),
                 o("b3296688", "Visibilità limitata"),
                 o("ccd32094", "Ora"),
-                o("abfcce0d", function (e) {
-                    return e.amountOfTime + " fa";
+                o("abfcce0d", function (i) {
+                    return i.amountOfTime + " fa";
                 }),
                 o("ae408b76", "Repost da parte tua"),
                 o("j355f008", "Post fissato"),
                 o("habf9678", "Fissato dall'autore"),
-                o("db0798ed", function (e) {
-                    return "Argomento " + e.topicName;
+                o("db0798ed", function (i) {
+                    return "Argomento " + i.topicName;
                 }),
-                o("dc716ec9", function (e) {
-                    return "Argomento suggerito: " + e.topicName;
+                o("dc716ec9", function (i) {
+                    return "Argomento suggerito: " + i.topicName;
                 }),
                 o("fbc2003c", "Terminato"),
                 o("h5051dd8", "Annullato"),
-                o("bb5f91a3", function (e) {
-                    return e.count + " in questo spazio";
+                o("bb5f91a3", function (i) {
+                    return i.count + " in questo spazio";
                 }),
-                o("c83eea99", function (e) {
-                    return e.participant + " + " + e.count + " in ascolto";
+                o("c83eea99", function (i) {
+                    return i.participant + " + " + i.count + " in ascolto";
                 }),
-                o("cdff6cd3", function (e) {
-                    return e.speaker + " sta parlando + " + e.count + " in ascolto";
+                o("cdff6cd3", function (i) {
+                    return i.speaker + " sta parlando + " + i.count + " in ascolto";
                 }),
-                o("df006f4f", function (e) {
-                    return e.count + " interessat" + t(e.count, "o", "i");
+                o("df006f4f", function (i) {
+                    return i.count + " interessat" + t(i.count, "o", "i");
                 }),
-                o("c889af33", function (e) {
-                    return e.count + " " + t(e.count, "è", "sono") + " qui";
+                o("c889af33", function (i) {
+                    return i.count + " " + t(i.count, "è", "sono") + " qui";
                 }),
-                o("d6f2056f", function (e) {
-                    return e.count + " sintonizzat" + t(e.count, "o", "i");
+                o("d6f2056f", function (i) {
+                    return i.count + " sintonizzat" + t(i.count, "o", "i");
                 }),
                 o("jbc5f47a", "Dock degli spazi"),
-                o("gfe2830f", function (e) {
-                    return "" + t(e.count, e.count + " altro", "altri " + e.count);
+                o("gfe2830f", function (i) {
+                    return "" + t(i.count, i.count + " altro", "altri " + i.count);
                 }),
-                o("dbeae6cf", function (e) {
-                    return "" + t(e.count, e.count + " altro ascoltatore", "altri " + e.count + " ascoltatori");
+                o("dbeae6cf", function (i) {
+                    return "" + t(i.count, i.count + " altro ascoltatore", "altri " + i.count + " ascoltatori");
                 }),
-                o("d2543d97", function (e) {
-                    return "+" + e.count;
+                o("d2543d97", function (i) {
+                    return "+" + i.count;
                 }),
-                o("dc718e53", function (e) {
-                    return "+ " + t(e.count, e.count + " altro", "altri " + e.count);
+                o("dc718e53", function (i) {
+                    return "+ " + t(i.count, i.count + " altro", "altri " + i.count);
                 }),
-                o("d0e7b11b", function (e) {
-                    return e.date + " alle " + e.time;
+                o("d0e7b11b", function (i) {
+                    return i.date + " alle " + i.time;
                 });
-            o("b4349cbc", function (e) {
-                return "" + e.relativeDay;
+            o("b4349cbc", function (i) {
+                return "" + i.relativeDay;
             }),
-                o("ebe41367", function (e) {
-                    return "Ora: " + e.time;
+                o("ebe41367", function (i) {
+                    return "Ora: " + i.time;
                 }),
-                o("efce3d9b", function (e) {
-                    return e.hours + " " + e.minutes + " " + e.seconds;
+                o("efce3d9b", function (i) {
+                    return i.hours + " " + i.minutes + " " + i.seconds;
                 }),
-                o("d925a4f9", function (e) {
-                    return e.formattedCount + " minut" + t(e.count, "o rimasto", "i rimasti");
+                o("d925a4f9", function (i) {
+                    return i.formattedCount + " minut" + t(i.count, "o rimasto", "i rimasti");
                 }),
-                o("ib15cddb", function (e) {
-                    return e.formattedCount + " or" + t(e.count, "a rimasta", "e rimaste");
+                o("ib15cddb", function (i) {
+                    return i.formattedCount + " or" + t(i.count, "a rimasta", "e rimaste");
                 }),
-                o("db9ed19f", function (e) {
-                    return e.formattedCount + " giorn" + t(e.count, "o rimasto", "i rimasti");
+                o("db9ed19f", function (i) {
+                    return i.formattedCount + " giorn" + t(i.count, "o rimasto", "i rimasti");
                 }),
-                o("e1ebcecb", function (e) {
-                    return e.formattedDays + " giorn" + t(e.days, "o", "i") + " " + e.formattedHours + " or" + t(e.hours, "a rimasta", "e rimaste");
+                o("e1ebcecb", function (i) {
+                    return i.formattedDays + " giorn" + t(i.days, "o", "i") + " " + i.formattedHours + " or" + t(i.hours, "a rimasta", "e rimaste");
                 }),
-                o("cc1da1fd", function (e) {
-                    return e.formattedHours + " or" + t(e.hours, "a", "e") + " " + e.formattedMins + " minut" + t(e.mins, "o rimasto", "i rimasti");
+                o("cc1da1fd", function (i) {
+                    return i.formattedHours + " or" + t(i.hours, "a", "e") + " " + i.formattedMins + " minut" + t(i.mins, "o rimasto", "i rimasti");
                 }),
                 o("f89a5d60", "Host"),
                 o("ce2cfb36", "Solo per abbonati"),
@@ -8959,32 +8959,32 @@
                 o("f7b6346a", "Inizia adesso"),
                 o("cc1f75ac", "Spazi"),
                 o("bd08d1b2", "Dettagli non disponibili"),
-                o("j8b01b27", function (e) {
-                    return "Lo spazio " + e.title + " ospitato da " + e.host + " è stato annullato";
+                o("j8b01b27", function (i) {
+                    return "Lo spazio " + i.title + " ospitato da " + i.host + " è stato annullato";
                 }),
                 o("fda9f48c", "Lo spazio è stato annullato"),
-                o("jf7853f7", function (e) {
-                    return "Lo spazio " + e.title + " ospitato da " + e.host + " è terminato";
+                o("jf7853f7", function (i) {
+                    return "Lo spazio " + i.title + " ospitato da " + i.host + " è terminato";
                 }),
                 o("i1a29920", "Lo spazio è terminato"),
                 o("db467ffe", "Unisciti a uno spazio"),
-                o("i8dc3993", function (e) {
-                    return "Ospitato da " + e.host;
+                o("i8dc3993", function (i) {
+                    return "Ospitato da " + i.host;
                 }),
-                o("eb0b05b9", function (e) {
-                    return "con " + e.count + " altri";
+                o("eb0b05b9", function (i) {
+                    return "con " + i.count + " altri";
                 }),
-                o("d19b9f77", function (e) {
-                    return e.action + " per " + e.title + " ospitato da " + e.host + ", " + e.scheduledStart;
+                o("d19b9f77", function (i) {
+                    return i.action + " per " + i.title + " ospitato da " + i.host + ", " + i.scheduledStart;
                 }),
-                o("e679d5d7", function (e) {
-                    return 'Avvia ora "' + e.title + '" (programmazione attuale: ' + e.scheduledStart + ")";
+                o("e679d5d7", function (i) {
+                    return 'Avvia ora "' + i.title + '" (programmazione attuale: ' + i.scheduledStart + ")";
                 }),
-                o("ea4258b7", function (e) {
-                    return e.action + " per uno spazio, " + e.scheduledStart;
+                o("ea4258b7", function (i) {
+                    return i.action + " per uno spazio, " + i.scheduledStart;
                 }),
-                o("dcbcaa23", function (e) {
-                    return "Riproduci registrazione di " + e.title;
+                o("dcbcaa23", function (i) {
+                    return "Riproduci registrazione di " + i.title;
                 }),
                 o("gaeb997e", "Altro"),
                 o("f8b21226", "Partecipa"),
@@ -8994,54 +8994,54 @@
                 o("b74bf8b8", "Immagine"),
                 o("ha9ed08c", "Creazione tramite"),
                 o("bff61470", "Clicca qui per modificare"),
-                o("f4393d0f", function (e) {
-                    return "Attribuito a " + e.name;
+                o("f4393d0f", function (i) {
+                    return "Attribuito a " + i.name;
                 }),
                 o("f8e8e32e", "Tu"),
                 o("df6703d3", "Tu"),
-                o("c20f7e9f", function (e) {
-                    return t(e.otherUsersCount, l.createElement(l.Fragment, null, "", e.secondName), "altri " + e.otherUsersCount);
+                o("c20f7e9f", function (i) {
+                    return t(i.otherUsersCount, l.createElement(l.Fragment, null, "", i.secondName), "altri " + i.otherUsersCount);
                 }),
-                o("he26f627", function (e) {
-                    return t(e.otherUsersCount, l.createElement(l.Fragment, null, "", e.secondName), "altri " + e.otherUsersCount);
+                o("he26f627", function (i) {
+                    return t(i.otherUsersCount, l.createElement(l.Fragment, null, "", i.secondName), "altri " + i.otherUsersCount);
                 }),
                 o("gea7aa3c", "Avanti"),
                 o("b6462b32", "Precedente"),
                 o("caddb529", "e"),
-                o("ff31714c", function (e) {
-                    return "e " + t(e.othersCount, "1 altro", "altri " + e.othersCount);
+                o("ff31714c", function (i) {
+                    return "e " + t(i.othersCount, "1 altro", "altri " + i.othersCount);
                 }),
                 o("e06c99b7", "e"),
-                o("i4e2f96c", function (e) {
-                    return "e " + t(e.othersCount, "1 altro", "altri " + e.othersCount);
+                o("i4e2f96c", function (i) {
+                    return "e " + t(i.othersCount, "1 altro", "altri " + i.othersCount);
                 }),
                 o("ga629a8c", "Visualizza utenti nella conversazione"),
                 o("d6f781e4", "Quando ti abboni ai creator X che preferisci, tu ricevi contenuti bonus e, allo stesso tempo, loro guadagnano qualche centesimo."),
                 o("dab106f8", "Membro"),
                 o("a46e92c2", "Mod"),
                 o("f9633e62", "Amministratore"),
-                o("a3dfd0cb", function (e) {
-                    return "post" + e.noun;
+                o("a3dfd0cb", function (i) {
+                    return "post" + i.noun;
                 }),
-                o("d7580651", function (e) {
-                    return "Post" + e.noun;
+                o("d7580651", function (i) {
+                    return "Post" + i.noun;
                 }),
-                o("c68b6367", function (e) {
-                    return "Articolo" + e.noun;
+                o("c68b6367", function (i) {
+                    return "Articolo" + i.noun;
                 }),
                 o("h13ffc88", "Audio"),
                 o("c8c4600e", "Post audio"),
                 o("de8c5eb2", "Riproduci audio"),
                 o("ec286028", "Metti audio in pausa"),
                 o("ad77feb6", "Sottotitoli non disponibili"),
-                o("e82adfeb", function (e) {
-                    return e.count + " pagin" + t(e.count, "a", "e") + " Web";
+                o("e82adfeb", function (i) {
+                    return i.count + " pagin" + t(i.count, "a", "e") + " Web";
                 }),
-                o("cfb8c1f7", function (e) {
-                    return e.count + " " + t(e.count, "", "nuovi ") + "post";
+                o("cfb8c1f7", function (i) {
+                    return i.count + " " + t(i.count, "", "nuovi ") + "post";
                 }),
-                o("g78032d5", function (e) {
-                    return e.count + " pagine Web e post";
+                o("g78032d5", function (i) {
+                    return i.count + " pagine Web e post";
                 }),
                 o("j3de54a8", "NOTA"),
                 o("a6a6ced4", "Leggi nota"),
@@ -9056,63 +9056,63 @@
                 o("b2214572", "Prova con possibilità di assunzione"),
                 o("f8337bd6", "all'anno"),
                 o("i935bf88", "all'ora"),
-                o("b75b8ffd", function (e) {
-                    return e.salary + " " + e.interval;
+                o("b75b8ffd", function (i) {
+                    return i.salary + " " + i.interval;
                 }),
                 o("c5954d30", "Lista"),
                 o("fe64170c", "Una volta effettuata la scelta non potrai modificarla"),
                 o("g10ace38", "Opzioni sondaggio"),
                 o("a3edf99a", "Risultati finali"),
-                o("c2b81e9d", function (e) {
-                    return e.formattedCount + " vot" + t(e.count, "o", "i");
+                o("c2b81e9d", function (i) {
+                    return i.formattedCount + " vot" + t(i.count, "o", "i");
                 }),
                 o("e86732e4", "Selezionata"),
                 o("a35a5b10", "Follower che conosci"),
                 o("fc8cd112", "Nessuno dei tuoi following segue questo account"),
-                o("df8cd2af", function (e) {
-                    return "Slide " + e.currentSlide + " di " + e.itemCount + " - Carosello. " + e.type + ". " + e.altText;
+                o("df8cd2af", function (i) {
+                    return "Slide " + i.currentSlide + " di " + i.itemCount + " - Carosello. " + i.type + ". " + i.altText;
                 }),
                 o("d70740da", "Slide successiva"),
                 o("c4d53ba2", "Slide precedente"),
-                o("h6405c17", function (e) {
-                    return "Slide " + e.currentSlide + " di " + e.itemCount + " - Carosello";
+                o("h6405c17", function (i) {
+                    return "Slide " + i.currentSlide + " di " + i.itemCount + " - Carosello";
                 }),
                 o("a3efd2c4", "Argomento"),
-                o("b91c8e53", function (e) {
-                    return "Card per l'argomento " + e.title + ".";
+                o("b91c8e53", function (i) {
+                    return "Card per l'argomento " + i.title + ".";
                 }),
-                o("b3826295", function (e) {
-                    return "Card per l'argomento " + e.title + ", " + e.description + ".";
+                o("b3826295", function (i) {
+                    return "Card per l'argomento " + i.title + ", " + i.description + ".";
                 }),
-                o("c9bb65db", function (e) {
-                    return "Raccolta di " + e.slidesLength + " immagini. " + e.heroVanityContent + ". " + e.heroTitleContent;
+                o("c9bb65db", function (i) {
+                    return "Raccolta di " + i.slidesLength + " immagini. " + i.heroVanityContent + ". " + i.heroTitleContent;
                 }),
                 o("e1bddf52", "Trascina per ruotare"),
                 o("f0e1fb48", "Non è stato possibile generare un'anteprima in questo browser per questo formato video. Il caricamento del video potrebbe comunque essere supportato."),
-                o("c2fc878d", function (e) {
-                    return "Il limite di caratteri è stato superato di " + e.count;
+                o("c2fc878d", function (i) {
+                    return "Il limite di caratteri è stato superato di " + i.count;
                 }),
-                o("db11b27f", function (e) {
-                    return e.count + " caratter" + t(e.count, "e rimanente", "i rimanenti") + " remaining";
+                o("db11b27f", function (i) {
+                    return i.count + " caratter" + t(i.count, "e rimanente", "i rimanenti") + " remaining";
                 }),
                 o("bb7b821a", "Puoi rispondere"),
-                o("fc41217b", function (e) {
-                    return "Gli account seguiti o menzionati da @" + e.screenName + " possono rispondere";
+                o("fc41217b", function (i) {
+                    return "Gli account seguiti o menzionati da @" + i.screenName + " possono rispondere";
                 }),
                 o("e5dc76d0", "Puoi rispondere a questa conversazione"),
                 o("ab105904", "Chi può rispondere?"),
                 o("fd1cda7a", "Non puoi rispondere a questa conversazione"),
-                o("f064f477", function (e) {
-                    return "Gli account seguiti o menzionati da @" + e.screenName + " possono rispondere";
+                o("f064f477", function (i) {
+                    return "Gli account seguiti o menzionati da @" + i.screenName + " possono rispondere";
                 }),
-                o("ea9ac5c9", function (e) {
-                    return "Gli account menzionati da @" + e.screenName + " possono rispondere";
+                o("ea9ac5c9", function (i) {
+                    return "Gli account menzionati da @" + i.screenName + " possono rispondere";
                 }),
-                o("d2ae1499", function (e) {
-                    return "Gli account menzionati da @" + e.screenName + " e i suoi abbonati possono rispondere";
+                o("d2ae1499", function (i) {
+                    return "Gli account menzionati da @" + i.screenName + " e i suoi abbonati possono rispondere";
                 }),
-                o("a4e254ff", function (e) {
-                    return "Gli account verificati o quelli menzionati da @" + e.screenName + " possono rispondere";
+                o("a4e254ff", function (i) {
+                    return "Gli account verificati o quelli menzionati da @" + i.screenName + " possono rispondere";
                 }),
                 o("j1b02fd8", "Ottieni la verifica"),
                 o("daba4484", "Solo l'autore e i moderatori possono vedere questo post"),
@@ -9120,50 +9120,50 @@
                 o("cc17f408", "Quando qualcuno viene rimosso, i suoi post vengono nascosti al resto della community."),
                 o("j620ce06", "Chi può vedere questo post?"),
                 o("bd414b44", "Solo per i tuoi abbonati"),
-                o("dd0da5d9", function (e) {
-                    return "@" + e.screenName + " e i suoi abbonati possono vedere il tuo post";
+                o("dd0da5d9", function (i) {
+                    return "@" + i.screenName + " e i suoi abbonati possono vedere il tuo post";
                 }),
                 o("g1c6a77e", "Stai usufruendo di contenuti per abbonati"),
-                o("d3b143d7", function (e) {
-                    return "Puoi vederlo e rispondere poiché hai un abbonamento a @" + e.screenName;
+                o("d3b143d7", function (i) {
+                    return "Puoi vederlo e rispondere poiché hai un abbonamento a @" + i.screenName;
                 }),
-                o("f6337117", function (e) {
-                    return "Puoi vedere questo post poiché hai un abbonamento a @" + e.screenName;
+                o("f6337117", function (i) {
+                    return "Puoi vedere questo post poiché hai un abbonamento a @" + i.screenName;
                 }),
-                o("g766a06d", function (e) {
-                    return "Solo chi fa parte della Circle di @" + e.screenName + " può vedere questo post";
+                o("g766a06d", function (i) {
+                    return "Solo chi fa parte della Circle di @" + i.screenName + " può vedere questo post";
                 }),
                 o("j040a368", "Link disabilitati nelle risposte"),
-                o("b31d0af7", function (e) {
-                    return e.screenName + " non ammette link nelle risposte di questo post";
+                o("b31d0af7", function (i) {
+                    return i.screenName + " non ammette link nelle risposte di questo post";
                 }),
                 o("eab0f780", "Non puoi postare o citare link esterni nelle risposte di questo post."),
                 o("f17a1f54", "Esclusiva di Premium"),
                 o("a0953370", "Abbonamento"),
-                o("d9687d23", function (e) {
-                    return "Giù del " + e.trendValueNegativePercent;
+                o("d9687d23", function (i) {
+                    return "Giù del " + i.trendValueNegativePercent;
                 }),
                 o("ac73eb5a", "Nessuna modifica"),
-                o("c5a9f921", function (e) {
-                    return "Su del " + e.trendValuePositivePercent;
+                o("c5a9f921", function (i) {
+                    return "Su del " + i.trendValuePositivePercent;
                 }),
-                o("e3098e07", function (e) {
-                    return e.minutes + " minut" + t(e.minutes, "o", "i") + " fa";
+                o("e3098e07", function (i) {
+                    return i.minutes + " minut" + t(i.minutes, "o", "i") + " fa";
                 }),
-                o("fea16a51", function (e) {
-                    return e.hours + " or" + t(e.hours, "a", "e") + " fa";
+                o("fea16a51", function (i) {
+                    return i.hours + " or" + t(i.hours, "a", "e") + " fa";
                 }),
-                o("a4f2d94d", function (e) {
-                    return e.days + " giorn" + t(e.days, "o", "i") + " fa";
+                o("a4f2d94d", function (i) {
+                    return i.days + " giorn" + t(i.days, "o", "i") + " fa";
                 }),
-                o("hf9bc787", function (e) {
-                    return e.weeks + " settiman" + t(e.weeks, "a", "e") + " fa";
+                o("hf9bc787", function (i) {
+                    return i.weeks + " settiman" + t(i.weeks, "a", "e") + " fa";
                 }),
-                o("efcd5885", function (e) {
-                    return e.months + " mes" + t(e.months, "e", "i") + " fa";
+                o("efcd5885", function (i) {
+                    return i.months + " mes" + t(i.months, "e", "i") + " fa";
                 }),
-                o("c37228b5", function (e) {
-                    return e.years + " ann" + t(e.years, "o", "i") + " fa";
+                o("c37228b5", function (i) {
+                    return i.years + " ann" + t(i.years, "o", "i") + " fa";
                 }),
                 o("jf83d092", "Giorno"),
                 o("af4abf20", "Mese"),
@@ -9182,8 +9182,8 @@
                 o("i6c1e4b2", "Dicembre"),
                 o("de540c32", "Mostra password"),
                 o("b4abfdb4", "Nascondi password"),
-                o("f06ae5d3", function (e) {
-                    return e.standardTweetCount + " caratter" + t(e.standardTweetCount, "e rimanente", "i rimanenti") + " per un post standard e " + e.totalCount + " caratter" + t(e.totalCount, "e rimanente", "i rimanenti") + " in totale";
+                o("f06ae5d3", function (i) {
+                    return i.standardTweetCount + " caratter" + t(i.standardTweetCount, "e rimanente", "i rimanenti") + " per un post standard e " + i.totalCount + " caratter" + t(i.totalCount, "e rimanente", "i rimanenti") + " in totale";
                 }),
                 o("fee0a8bc", "Salva"),
                 o("ae7f7656", "Cancella"),
@@ -9197,42 +9197,42 @@
                 o("b4397192", "Gestisci"),
                 o("i8cfb6e6", "Bloccato"),
                 o("ea100d6a", "Sblocca"),
-                o("fe40537f", function (e) {
-                    return "Vuoi sbloccare @" + e.screenName + "?";
+                o("fe40537f", function (i) {
+                    return "Vuoi sbloccare @" + i.screenName + "?";
                 }),
                 o("ab7c3460", "Potrà seguirti e visualizzare i tuoi post."),
                 o("i58d8718", "Potrà seguirti e interagire con i tuoi post pubblici."),
-                o("cda66545", function (e) {
-                    return "Clicca per " + e.followType + " " + e.screenName;
+                o("cda66545", function (i) {
+                    return "Clicca per " + i.followType + " " + i.screenName;
                 }),
-                o("ee05e96b", function (e) {
-                    return "Clicca per " + e.followType + " a " + e.screenName;
+                o("ee05e96b", function (i) {
+                    return "Clicca per " + i.followType + " a " + i.screenName;
                 }),
-                o("a8d77a25", function (e) {
-                    return "Clicca per abbandonare " + e.screenName;
+                o("a8d77a25", function (i) {
+                    return "Clicca per abbandonare " + i.screenName;
                 }),
-                o("d0f4f3d9", function (e) {
-                    return e.followType + " " + e.screenName;
+                o("d0f4f3d9", function (i) {
+                    return i.followType + " " + i.screenName;
                 }),
-                o("f238ba1d", function (e) {
-                    return e.followType + " a " + e.screenName;
+                o("f238ba1d", function (i) {
+                    return i.followType + " a " + i.screenName;
                 }),
-                o("j6161cab", function (e) {
-                    return "Vuoi smettere di seguire @" + e.screenName + "?";
+                o("j6161cab", function (i) {
+                    return "Vuoi smettere di seguire @" + i.screenName + "?";
                 }),
-                o("i4bb9ef7", function (e) {
-                    return "Vuoi smettere di seguire " + e.title + "?";
+                o("i4bb9ef7", function (i) {
+                    return "Vuoi smettere di seguire " + i.title + "?";
                 }),
                 o("ge753264", "Non vedrai più i suoi post nella cronologia Per te. A meno che non decida di proteggere i propri post, potrai ancora visualizzare il suo profilo."),
                 o("b837c0e8", "Anche se smetti di seguire questo argomento, potresti ancora vedere post correlati in base agli account che segui."),
-                o("ddac1f1d", function (e) {
-                    return "Vuoi davvero abbandonare " + e.communityName + "?";
+                o("ddac1f1d", function (i) {
+                    return "Vuoi davvero abbandonare " + i.communityName + "?";
                 }),
                 o("j8e33c40", "Perderai l'acceso alla community e non potrai più parteciparvi, ma i tuoi post precedenti saranno ancora visibili."),
                 o("f305840e", "In sospeso"),
                 o("i036327c", "Vuoi annullare la richiesta di follow?"),
-                o("j95e3097", function (e) {
-                    return "Così annullerai la richiesta in sospeso e @" + e.screenName + " non la vedrà più.";
+                o("j95e3097", function (i) {
+                    return "Così annullerai la richiesta in sospeso e @" + i.screenName + " non la vedrà più.";
                 }),
                 o("d85bc1b8", "Ingrandisci o riduci l'immagine."),
                 o("f596ace8", "Formato: originale"),
@@ -9241,78 +9241,78 @@
                 o("e547b368", "Originale"),
                 o("f7571204", "Ampia"),
                 o("e6e16812", "Quadrato"),
-                o("hdd29d51", function (e) {
-                    return "" + e.sponsorshipOrganization;
+                o("hdd29d51", function (i) {
+                    return "" + i.sponsorshipOrganization;
                 }),
-                o("b97f7079", function (e) {
-                    return "" + e.sponsorshipOrganization;
+                o("b97f7079", function (i) {
+                    return "" + i.sponsorshipOrganization;
                 }),
-                o("b02627a9", function (e) {
-                    return "" + e.sponsorshipOrganization;
+                o("b02627a9", function (i) {
+                    return "" + i.sponsorshipOrganization;
                 }),
-                o("f1a1b791", function (e) {
-                    return "Sponsorizzato da " + e.fullName;
+                o("f1a1b791", function (i) {
+                    return "Sponsorizzato da " + i.fullName;
                 }),
                 o("if2bf8b4", "Sponsorizzato"),
                 o("f3624b5c", "Sponsorizzato (campagna politica)"),
-                o("b4b3b113", function (e) {
-                    return "Sponsorizzato (campagna politica) da " + e.fullName;
+                o("b4b3b113", function (i) {
+                    return "Sponsorizzato (campagna politica) da " + i.fullName;
                 }),
                 o("be222050", "Sponsorizzato (campagna su questioni politiche)"),
-                o("hcbbe447", function (e) {
-                    return "Sponsorizzato (campagna su questioni politiche) da " + e.fullName;
+                o("hcbbe447", function (i) {
+                    return "Sponsorizzato (campagna su questioni politiche) da " + i.fullName;
                 }),
                 o("jcf3e7a2", "Avanzamento fotogrammi per le animazioni Lottie"),
                 o("a0af935c", "Ti piace"),
                 o("b8c465e2", "Ripostato"),
                 o("c7a989ce", "Salva nei segnalibri"),
-                o("b03835c7", function (e) {
-                    return e.replyCount + " rispost" + t(e.replyCount, "a", "e");
+                o("b03835c7", function (i) {
+                    return i.replyCount + " rispost" + t(i.replyCount, "a", "e");
                 }),
-                o("g4a195e7", function (e) {
-                    return e.retweetCount + " repost";
+                o("g4a195e7", function (i) {
+                    return i.retweetCount + " repost";
                 }),
-                o("e089b42d", function (e) {
-                    return e.likeCount + " Mi piace";
+                o("e089b42d", function (i) {
+                    return i.likeCount + " Mi piace";
                 }),
-                o("e0a8fe39", function (e) {
-                    return e.bookmarkCount + " segnalibr" + t(e.bookmarkCount, "o", "i");
+                o("e0a8fe39", function (i) {
+                    return i.bookmarkCount + " segnalibr" + t(i.bookmarkCount, "o", "i");
                 }),
-                o("c58b2ab7", function (e) {
-                    return e.viewCount + " visualizzazion" + t(e.viewCount, "e", "i");
+                o("c58b2ab7", function (i) {
+                    return i.viewCount + " visualizzazion" + t(i.viewCount, "e", "i");
                 }),
                 o("f2849136", "Analytics"),
                 o("f206e970", "Visualizza statistiche post"),
-                o("c7073f5b", function (e) {
-                    return e.count + " visualizzazion" + t(e.count, "e", "i") + ". Visualizza statistiche post";
+                o("c7073f5b", function (i) {
+                    return i.count + " visualizzazion" + t(i.count, "e", "i") + ". Visualizza statistiche post";
                 }),
                 o("hf417cf0", "Rimuovi dai segnalibri"),
-                o("febd30ed", function (e) {
-                    return e.count + " segnalibr" + t(e.count, "o", "i") + ". Salva nei segnalibri";
+                o("febd30ed", function (i) {
+                    return i.count + " segnalibr" + t(i.count, "o", "i") + ". Salva nei segnalibri";
                 }),
-                o("a8dc9587", function (e) {
-                    return e.count + " segnalibr" + t(e.count, "o", "i") + ". Salvato nei segnalibri";
+                o("a8dc9587", function (i) {
+                    return i.count + " segnalibr" + t(i.count, "o", "i") + ". Salvato nei segnalibri";
                 }),
                 o("d636ebc6", "Metti Mi piace"),
                 o("eb3a8b0c", "Togli Mi piace"),
                 o("j472ecfc", "Metti Mi piace a questo post"),
-                o("dac92b0d", function (e) {
-                    return e.count + " Mi piace. Metti Mi piace";
+                o("dac92b0d", function (i) {
+                    return i.count + " Mi piace. Metti Mi piace";
                 }),
-                o("aa650427", function (e) {
-                    return e.count + " Mi piace. Hai messo Mi piace";
+                o("aa650427", function (i) {
+                    return i.count + " Mi piace. Hai messo Mi piace";
                 }),
                 o("hdf7226a", "Rispondi"),
-                o("c9940955", function (e) {
-                    return e.count + " rispost" + t(e.count, "a", "e") + ". Rispondi";
+                o("c9940955", function (i) {
+                    return i.count + " rispost" + t(i.count, "a", "e") + ". Rispondi";
                 }),
                 o("f2919fb8", "Repost"),
                 o("fd1e5446", "Annulla repost"),
-                o("dfad425d", function (e) {
-                    return e.count + " repost. Riposta";
+                o("dfad425d", function (i) {
+                    return i.count + " repost. Riposta";
                 }),
-                o("a386dc55", function (e) {
-                    return e.count + " repost. Ripostato";
+                o("a386dc55", function (i) {
+                    return i.count + " repost. Ripostato";
                 }),
                 o("f65198c2", "Visualizza citazioni"),
                 o("dc63da16", "Condividi"),
@@ -9322,29 +9322,29 @@
                 o("c33d3a84", "Quello che accade nella Circle rimane nella Circle"),
                 o("c4f10e71", "Scopri di più"),
                 o("b09adb0c", "Leggi conversazione"),
-                o("e4f1e6e4", function (e) {
-                    return "" + e.formattedCount;
+                o("e4f1e6e4", function (i) {
+                    return "" + i.formattedCount;
                 }),
-                o("daf8a75f", function (e) {
+                o("daf8a75f", function (i) {
                     return "following";
                 }),
-                o("ef1f4fc6", function (e) {
-                    return "" + e.formattedCount;
+                o("ef1f4fc6", function (i) {
+                    return "" + i.formattedCount;
                 }),
-                o("ad9b5988", function (e) {
+                o("ad9b5988", function (i) {
                     return "follower";
                 }),
-                o("a9980948", function (e) {
-                    return "" + e.formattedCount;
+                o("a9980948", function (i) {
+                    return "" + i.formattedCount;
                 }),
-                o("ce44a35c", function (e) {
-                    return "iscritt" + t(e.count, "o", "i");
+                o("ce44a35c", function (i) {
+                    return "iscritt" + t(i.count, "o", "i");
                 }),
-                o("id949f68", function (e) {
-                    return "" + e.formattedCount;
+                o("id949f68", function (i) {
+                    return "" + i.formattedCount;
                 }),
-                o("hb608cfc", function (e) {
-                    return "abbonament" + t(e.count, "o", "i");
+                o("hb608cfc", function (i) {
+                    return "abbonament" + t(i.count, "o", "i");
                 }),
                 o("ef633578", "Account sospeso"),
                 o("a6a3d496", "Inserisci link"),
@@ -9356,17 +9356,17 @@
                 o("d5d57678", "Inserisci"),
                 o("ec822028", "Compila questo campo"),
                 o("ebc5d2cc", "L'URL ha qualcosa che non va. Controlla lo spelling e la formattazione del link."),
-                o("h30a19bb", function (e) {
-                    return "Questo è un grafico a torta. Il titolo del grafico è " + e.chartTitle + ". Sono incluse " + e.noOfCategories + " categorie in totale. Il valore minimo è " + e.minValue + " mentre quello massimo è " + e.maxValue + ". Consulta il grafico attraverso i controlli di navigazione.";
+                o("h30a19bb", function (i) {
+                    return "Questo è un grafico a torta. Il titolo del grafico è " + i.chartTitle + ". Sono incluse " + i.noOfCategories + " categorie in totale. Il valore minimo è " + i.minValue + " mentre quello massimo è " + i.maxValue + ". Consulta il grafico attraverso i controlli di navigazione.";
                 }),
-                o("h39fbf33", function (e) {
-                    return "Un grafico a barre orizzontale con valori dei dati compresi tra " + e.minValue + " e " + e.maxValue;
+                o("h39fbf33", function (i) {
+                    return "Un grafico a barre orizzontale con valori dei dati compresi tra " + i.minValue + " e " + i.maxValue;
                 }),
                 o("gdd51574", "Trascina per aggiornare"),
                 o("e557ad8e", "Attiva"),
                 o("e3a58c28", "Espandi"),
-                o("db355331", function (e) {
-                    return "Squadra vincitrice: " + e.team;
+                o("db355331", function (i) {
+                    return "Squadra vincitrice: " + i.team;
                 }),
                 o("a8428d5e", "Imminente"),
                 o("a7aad8ba", "In diretta"),
@@ -9375,39 +9375,39 @@
                 o("d2dbfa92", "Annullata"),
                 o("cd734f66", "Oggi"),
                 o("c8891d06", "Domani"),
-                o("d2414d31", function (e) {
-                    return e.count + " elementi da leggere";
+                o("d2414d31", function (i) {
+                    return i.count + " elementi da leggere";
                 }),
                 o("ce4e85ae", "Elementi da leggere"),
-                o("fb9f6f39", function (e) {
-                    return e.count + "+";
+                o("fb9f6f39", function (i) {
+                    return i.count + "+";
                 }),
                 o("eb124f96", "Mattino/Pomeriggio"),
                 o("i7a6f114", "Ora"),
                 o("ccc99ff2", "Minuto"),
-                o("g5662c95", function (e) {
-                    return "Livello " + e.conversationTreeDepth + ":";
+                o("g5662c95", function (i) {
+                    return "Livello " + i.conversationTreeDepth + ":";
                 }),
                 o("b3688156", "Attualmente questo utente è in uno spazio attivo, clicca per unirti"),
-                o("c0eb8825", function (e) {
-                    return "Attualmente @" + e.screenName + " è in uno spazio attivo, clicca per unirti";
+                o("c0eb8825", function (i) {
+                    return "Attualmente @" + i.screenName + " è in uno spazio attivo, clicca per unirti";
                 }),
-                o("d068dc6d", function (e) {
-                    return "Attualmente @" + e.screenName + " è in una trasmissione in diretta attiva, clicca per guardare";
+                o("d068dc6d", function (i) {
+                    return "Attualmente @" + i.screenName + " è in una trasmissione in diretta attiva, clicca per guardare";
                 }),
                 o("d9fd5570", "Risposte nascoste"),
                 o("c566d3a6", "Nascondi"),
                 o("a897c4d6", "Apre la cronologia modifiche"),
                 o("e07a85a2", "Post non disponibile"),
                 o("ffeb2fc6", "Prossimo"),
-                o("af2a65d9", function (e) {
-                    return e.timestamp + " selezionato";
+                o("af2a65d9", function (i) {
+                    return i.timestamp + " selezionato";
                 }),
-                o("j3d49e93", function (e) {
-                    return e.timestamp + "m";
+                o("j3d49e93", function (i) {
+                    return i.timestamp + "m";
                 }),
-                o("a394f905", function (e) {
-                    return e.seconds + " secondi";
+                o("a394f905", function (i) {
+                    return i.seconds + " secondi";
                 }),
                 o("f42c0c80", "Fine della sezione selezionata, utilizza i tasti freccia per modificare la selezione"),
                 o("i667afe8", "Inizio della sezione selezionata, utilizza i tasti freccia per modificare la selezione"),
@@ -9426,19 +9426,19 @@
             var l = a(202784),
                 u = [],
                 s = {};
-            function d(e) {
-                return e;
+            function d(i) {
+                return i;
             }
-            var p = (function (e) {
-                var i, a, o, p, f;
+            var p = (function (i) {
+                var e, a, o, p, f;
                 function m() {
-                    return e.apply(this, arguments) || this;
+                    return i.apply(this, arguments) || this;
                 }
                 return (
-                    (a = e),
-                    ((i = m).prototype = Object.create(a.prototype)),
-                    (i.prototype.constructor = i),
-                    c(i, a),
+                    (a = i),
+                    ((e = m).prototype = Object.create(a.prototype)),
+                    (e.prototype.constructor = e),
+                    c(e, a),
                     (m.prototype.render = function () {
                         return l.createElement.apply(l, this[this.props.$i18n].reduce(this.templateReducer, [l.Fragment, null]));
                     }),
@@ -12825,11 +12825,11 @@
                         {
                             key: "templateReducer",
                             get: function () {
-                                var e,
-                                    i = l.Children.toArray(this.props.children),
-                                    a = ((e = this.props.$i18n), u[s[e]] || d);
-                                return function (e, o, t) {
-                                    return e.concat(o, i[a(t)]);
+                                var i,
+                                    e = l.Children.toArray(this.props.children),
+                                    a = ((i = this.props.$i18n), u[s[i]] || d);
+                                return function (i, o, t) {
+                                    return i.concat(o, e[a(t)]);
                                 };
                             },
                         },
@@ -12840,8 +12840,8 @@
                 );
             })(a(674132)._ActualI18NFormatMessage || l.Component);
             o("_ActualI18NFormatMessage", p),
-                o("I18NFormatMessage", function (e) {
-                    return l.createElement(p, e);
+                o("I18NFormatMessage", function (i) {
+                    return l.createElement(p, i);
                 });
             var f = a(495075);
             a(800694), a(556829), a(530152), a(658610), a(492344), a(663823);
@@ -12938,9 +12938,9 @@
                 (f.a2096538793 = b(["", , 1, 0, 0, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", m(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }, , { 3: { one: "0", other: "0" }, 4: { one: "0", other: "0" }, 5: { one: "0", other: "0" }, 6: { one: "0 Mln", other: "0 Mln" }, 7: { one: "00 Mln", other: "00 Mln" }, 8: { one: "000 Mln", other: "000 Mln" }, 9: { one: "0 Mld", other: "0 Mld" }, 10: { one: "00 Mld", other: "00 Mld" }, 11: { one: "000 Mld", other: "000 Mld" }, 12: { one: "0 Bln", other: "0 Bln" }, 13: { one: "00 Bln", other: "00 Bln" }, 14: { one: "000 Bln", other: "000 Bln" }, maxExponent: 14 }], f("it").pluralGenerator({}))),
                 (f.a1541807083 = b(["", , 1, 0, 2, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", m(), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }, , { 3: { one: "0", other: "0" }, 4: { one: "0", other: "0" }, 5: { one: "0", other: "0" }, 6: { one: "0 Mln", other: "0 Mln" }, 7: { one: "00 Mln", other: "00 Mln" }, 8: { one: "000 Mln", other: "000 Mln" }, 9: { one: "0 Mld", other: "0 Mld" }, 10: { one: "00 Mld", other: "00 Mld" }, 11: { one: "000 Mld", other: "000 Mld" }, 12: { one: "0 Bln", other: "0 Bln" }, 13: { one: "00 Bln", other: "00 Bln" }, 14: { one: "000 Bln", other: "000 Bln" }, maxExponent: 14 }], f("it").pluralGenerator({}))),
                 (f.b1127633396 = b(["", , 1, 0, 0, , , , 3, , "", "#,##0.###", "-#,##0.###", "-", "", m("round"), "∞", "NaN", { ".": ",", ",": ".", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }])),
-                (f.a1782403866 = g(function (e) {
-                    var i = !String(e).split(".")[1];
-                    return 1 == e && i ? "one" : "other";
+                (f.a1782403866 = g(function (i) {
+                    var e = !String(i).split(".")[1];
+                    return 1 == i && e ? "one" : "other";
                 })),
                 (f.a1359692252 = v(f("it").numberFormatter({ raw: "#,##0.00 'AED'" }))),
                 (f.b788683365 = v(f("it").numberFormatter({ raw: "#,##0 'ALL'" }))),
@@ -13191,4 +13191,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/it.159e637a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/it.dc377c1a.js.map

@@ -76,7 +76,16 @@
                               a.createElement(
                                   l.Z,
                                   { style: F.articlesContainer },
-                                  t.map((e) => a.createElement(_, { article: e, key: `${e.id}-try-news-sidebar`, style: F.articleCard })),
+                                  t.map((t) =>
+                                      a.createElement(_, {
+                                          article: t,
+                                          key: `${t.id}-try-news-sidebar`,
+                                          onClick: () => {
+                                              e.scribe({ element: "try_news_sidebar_article", action: "click", data: { event_info: t.id } });
+                                          },
+                                          style: F.articleCard,
+                                      }),
+                                  ),
                               ),
                               a.createElement(r.Z, { link: E, text: v, withBottomRadius: !0, withDarkerInteractiveBackground: !0 }),
                           ),
@@ -369,22 +378,25 @@
         },
         695356: (e, t, n) => {
             function a(e, t) {
-                o(e)({ element: "news-open-article", action: "click", data: { event_info: JSON.stringify(t) } });
+                c(e)({ element: "news-open-article", action: "click", data: { event_info: JSON.stringify(t) } });
             }
             function l(e, t) {
-                o(e)({ element: "news-article-card-impression", action: "view", data: { impression_id: t.articleId } });
+                c(e)({ element: "news-article-card", action: "impression", data: { impression_id: t.articleId } });
             }
             function s(e, t) {
-                o(e)({ element: "news-page-session-duration", action: "focus", data: { duration_ms: t.durationMs, url: t.url, event_info: t.sessionId } });
+                c(e)({ element: "news-article-sentiment", action: "impression", data: { impression_id: t.articleId } });
             }
             function r(e, t) {
-                o(e)({ element: "news-open-post-source", action: "click", data: { event_info: JSON.stringify(t) } });
+                c(e)({ element: "news-page-session-duration", action: "focus", data: { duration_ms: t.durationMs, url: t.url, event_info: t.sessionId } });
             }
             function i(e, t) {
-                o(e)({ element: "news-article-section-impression", action: "view", data: { impression_id: t.articleId, event_info: JSON.stringify({ sectionIdx: t.sectionIdx, totalNumSections: t.totalNumSections }) } });
+                c(e)({ element: "news-open-post-source", action: "click", data: { event_info: JSON.stringify(t) } });
             }
-            n.d(t, { E7: () => s, Ib: () => a, U8: () => r, _$: () => l, xi: () => i });
-            const o = (e) => (t) => {
+            function o(e, t) {
+                c(e)({ element: "news-article-section", action: "impression", data: { impression_id: t.articleId, event_info: JSON.stringify({ sectionIdx: t.sectionIdx, totalNumSections: t.totalNumSections }) } });
+            }
+            n.d(t, { E7: () => r, Ib: () => a, U8: () => i, XB: () => s, _$: () => l, xi: () => o });
+            const c = (e) => (t) => {
                 e.scribe({ ...t, data: { url: window.location.href, ...t.data } });
             };
         },
@@ -519,4 +531,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TryNewsSidebar.d390f4ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TryNewsSidebar.81f0796a.js.map

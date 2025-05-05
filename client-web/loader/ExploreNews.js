@@ -204,10 +204,10 @@
             const S = w;
             t(585488);
             var L = t(712696),
-                T = t.n(L);
-            const I = S;
+                I = t.n(L);
+            const T = S;
             const F = function ({ limit: e }) {
-                const l = T()(I, { limit: e }).deepsearchArticlesHomePageResult || [],
+                const l = I()(T, { limit: e }).deepsearchArticlesHomePageResult || [],
                     t = [];
                 return (
                     l.forEach((e) => {
@@ -242,7 +242,7 @@
             var _ = t(477575),
                 w = t(2025),
                 S = t(978086);
-            function L({ article: e, commentsStyle: l, containerStyle: t, headerImgStyle: s, hideDefaultImg: y, hideImg: f, hideReactions: C, hideSummary: L, hoveredBgColor: I, infoContainerStyle: F, layout: x = "imageTop", onClick: v, reactionsContainerStyle: K, routeToExploreNews: E, sentimentStyle: b, showSentiment: A, size: H = "normal", style: Z, summaryNumLines: N, titleNumLines: R, titleStyle: z, useRowReactions: D }) {
+            function L({ article: e, commentsStyle: l, containerStyle: t, headerImgStyle: s, hideDefaultImg: y, hideImg: f, hideReactions: C, hideSummary: L, hoveredBgColor: T, infoContainerStyle: F, layout: x = "imageTop", onClick: v, reactionsContainerStyle: K, routeToExploreNews: E, sentimentStyle: b, showSentiment: A, size: H = "normal", style: Z, summaryNumLines: N, titleNumLines: R, titleStyle: z, useRowReactions: D }) {
                 const B = (0, c.Z)(),
                     P = (0, u.I0)(),
                     $ = (0, i.useHistory)(),
@@ -266,8 +266,8 @@
                 n.useEffect(() => {
                     P(d.Z.fetchMultipleIfNeeded(U));
                 }, [P, U]);
-                const q = { full: { container: T.fullContainer, headerImgContainer: T.fullHeaderImgContainer }, imageLeft: { container: T.imageLeftContainer, headerImgContainer: T.imageLeftHeaderImgContainer }, imageTop: { container: T.imageTopContainer, headerImgContainer: T.imageTopHeaderImgContainer }, imageBelowTitle: { container: T.imageBelowTitleContainer, headerImgContainer: T.imageBelowTitleHeaderImgContainer } },
-                    O = { normal: {}, large: { container: T.largeContainer, title: T.largeTitle, summary: T.largeSummary, lastUpdated: T.largeLastUpdated, comments: T.largeComments } },
+                const q = { full: { container: I.fullContainer, headerImgContainer: I.fullHeaderImgContainer }, imageLeft: { container: I.imageLeftContainer, headerImgContainer: I.imageLeftHeaderImgContainer }, imageTop: { container: I.imageTopContainer, headerImgContainer: I.imageTopHeaderImgContainer }, imageBelowTitle: { container: I.imageBelowTitleContainer, headerImgContainer: I.imageBelowTitleHeaderImgContainer } },
+                    O = { normal: {}, large: { container: I.largeContainer, title: I.largeTitle, summary: I.largeSummary, lastUpdated: I.largeLastUpdated, comments: I.largeComments } },
                     V = n.useCallback(() => {
                         v && v(), E ? $.push(`/i/news/a/${e.id}`) : $.push(`/i/news/article/${e.id}`);
                     }, [$, e, v, E]),
@@ -278,11 +278,11 @@
                     X = O[H],
                     Y = e.header_img_url || "",
                     j = !f && Y,
-                    J = n.createElement(a.Z, { style: [T.infoContainer, M ? T.compactInfoContainer : void 0, F] }, n.createElement(S.Z, { numberOfLines: R, text: e.title, textStyle: [X.title, z] }), "imageBelowTitle" === x && j && n.createElement(k, { onClick: V, style: [W.headerImgContainer, s], url: Y }), n.createElement(_.Z, { isLive: !!e.live_article, textStyle: X.lastUpdated, timestamp: e.last_updated_at }), !!e.summary && !L && n.createElement(p.Z, { numberOfLines: N, sources: [], style: [T.summary, X.summary], text: e.summary }), !C && n.createElement(a.Z, { style: [T.reactionsContainer, D ? T.rowReactionsContainer : void 0, K] }, e.sentiment && A && n.createElement(w.Z, { sentiment: e.sentiment, showPercentages: !0, style: b }), n.createElement(h.Z, { disableClick: !0, numPosts: Number(e.total_trend_posts), postIds: Q, style: [X.comments, l], textStyle: T.commentsText, variant: "outline" })));
-                return n.createElement(r.Z, { onClick: V, style: [T.interactiveContainer, t], withoutInteractiveStyles: !0 }, ({ isHovered: e }) => n.createElement(a.Z, { style: [T.container, W.container, X.container, e ? T.hoveredContainer : void 0, e && I ? { backgroundColor: I } : void 0, Z] }, n.createElement(o.D, { id: "news_article_card", onFullyVisible: G, position: "top", testID: "news_article_card" }), J, j && "imageBelowTitle" !== x && n.createElement(k, { hideDefault: y, hovered: e, onClick: V, style: [W.headerImgContainer, s], url: Y })));
+                    J = n.createElement(a.Z, { style: [I.infoContainer, M ? I.compactInfoContainer : void 0, F] }, n.createElement(S.Z, { numberOfLines: R, text: e.title, textStyle: [X.title, z] }), "imageBelowTitle" === x && j && n.createElement(k, { onClick: V, style: [W.headerImgContainer, s], url: Y }), n.createElement(_.Z, { isLive: !!e.live_article, textStyle: X.lastUpdated, timestamp: e.last_updated_at }), !!e.summary && !L && n.createElement(p.Z, { numberOfLines: N, sources: [], style: [I.summary, X.summary], text: e.summary }), !C && n.createElement(a.Z, { style: [I.reactionsContainer, D ? I.rowReactionsContainer : void 0, K] }, e.sentiment && A && n.createElement(w.Z, { articleId: e.id, sentiment: e.sentiment, showPercentages: !0, style: b }), n.createElement(h.Z, { disableClick: !0, numPosts: Number(e.total_trend_posts), postIds: Q, style: [X.comments, l], textStyle: I.commentsText, variant: "outline" })));
+                return n.createElement(r.Z, { onClick: V, style: [I.interactiveContainer, t], withoutInteractiveStyles: !0 }, ({ isHovered: e }) => n.createElement(a.Z, { style: [I.container, W.container, X.container, e ? I.hoveredContainer : void 0, e && T ? { backgroundColor: T } : void 0, Z] }, n.createElement(o.D, { id: "news_article_card", onFullyVisible: G, position: "top", testID: "news_article_card" }), J, j && "imageBelowTitle" !== x && n.createElement(k, { hideDefault: y, hovered: e, onClick: V, style: [W.headerImgContainer, s], url: Y })));
             }
-            const T = s.default.create((e) => ({ interactiveContainer: { display: "flex", width: "100%" }, container: { flex: 1, display: "flex", width: "100%", gap: e.spaces.space16, backgroundColor: "transparent", borderRadius: e.borderRadii.large, transition: "all 0.2s ease", padding: e.spaces.space12 }, hoveredContainer: { backgroundColor: "light" === e.paletteName ? e.colors.gray0 : "transparent", cursor: "pointer" }, largeContainer: { gap: e.spaces.space36 }, fullContainer: { flexDirection: "row" }, imageLeftContainer: { flexDirection: "row-reverse" }, imageTopContainer: { flexDirection: "column-reverse" }, imageBelowTitleContainer: { flexDirection: "column" }, fullHeaderImgContainer: { flex: 1, width: "100%", height: "100%", minHeight: 350 }, imageLeftHeaderImgContainer: { flex: 1, width: "100%", height: "100%" }, imageTopHeaderImgContainer: { flex: 1, width: "100%", minHeight: 200 }, imageBelowTitleHeaderImgContainer: { flex: 1, width: "100%", height: "100%", minHeight: 350 }, infoContainer: { flex: 1, display: "flex", flexDirection: "column", gap: e.spaces.space4 }, compactInfoContainer: { padding: e.spaces.space8 }, summary: { color: e.colors.gray900 }, largeSummary: {}, headerImgContainer: { flex: 1 }, headerImgInteractiveContainer: { width: "100%", flex: 1 }, reactionsContainer: { display: "flex", flexDirection: "column", gap: e.spaces.space8 }, rowReactionsContainer: { flexDirection: "row" }, largeTitle: { fontSize: e.fontSizes.title1, lineHeight: 40 }, largeLastUpdated: { fontSize: e.fontSizes.subtext1 }, largeComments: { fontSize: e.fontSizes.subtext2 }, commentsText: { color: e.colors.gray900 } }));
+            const I = s.default.create((e) => ({ interactiveContainer: { display: "flex", width: "100%" }, container: { flex: 1, display: "flex", width: "100%", gap: e.spaces.space16, backgroundColor: "transparent", borderRadius: e.borderRadii.large, transition: "all 0.2s ease", padding: e.spaces.space12 }, hoveredContainer: { backgroundColor: "light" === e.paletteName ? e.colors.gray0 : "transparent", cursor: "pointer" }, largeContainer: { gap: e.spaces.space36 }, fullContainer: { flexDirection: "row" }, imageLeftContainer: { flexDirection: "row-reverse" }, imageTopContainer: { flexDirection: "column-reverse" }, imageBelowTitleContainer: { flexDirection: "column" }, fullHeaderImgContainer: { flex: 1, width: "100%", height: "100%", minHeight: 350 }, imageLeftHeaderImgContainer: { flex: 1, width: "100%", height: "100%" }, imageTopHeaderImgContainer: { flex: 1, width: "100%", minHeight: 200 }, imageBelowTitleHeaderImgContainer: { flex: 1, width: "100%", height: "100%", minHeight: 350 }, infoContainer: { flex: 1, display: "flex", flexDirection: "column", gap: e.spaces.space8 }, compactInfoContainer: { padding: e.spaces.space8 }, summary: { color: e.colors.gray900 }, largeSummary: {}, headerImgContainer: { flex: 1 }, headerImgInteractiveContainer: { width: "100%", flex: 1 }, reactionsContainer: { display: "flex", flexDirection: "column", gap: e.spaces.space8 }, rowReactionsContainer: { flexDirection: "row" }, largeTitle: { fontSize: e.fontSizes.title1, lineHeight: 40 }, largeLastUpdated: { fontSize: e.fontSizes.subtext1 }, largeComments: { fontSize: e.fontSizes.subtext2 }, commentsText: { color: e.colors.gray900 } }));
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.ExploreNews.133982ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.ExploreNews.48f214ca.js.map

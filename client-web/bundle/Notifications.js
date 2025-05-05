@@ -2,7 +2,7 @@
     ["bundle.Notifications"],
     {
         715551: (e) => {
-            e.exports = { queryId: "3L-e1o67sOYxl8xVrZ0W5g", operationName: "NotificationsTimeline", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
+            e.exports = { queryId: "GquVPn-SKYxKLgLsRPpJ6g", operationName: "NotificationsTimeline", operationType: "query", metadata: { featureSwitches: ["rweb_video_screen_enabled", "profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "creator_subscriptions_tweet_preview_api_enabled", "responsive_web_graphql_timeline_navigation_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "premium_content_api_read_enabled", "communities_web_enable_tweet_community_results_fetch", "c9s_tweet_anatomy_moderator_badge_enabled", "responsive_web_grok_analyze_button_fetch_trends_enabled", "responsive_web_grok_analyze_post_followups_enabled", "responsive_web_jetfuel_frame", "responsive_web_grok_share_attachment_enabled", "articles_preview_enabled", "responsive_web_edit_tweet_api_enabled", "graphql_is_translatable_rweb_tweet_is_translatable_enabled", "view_counts_everywhere_api_enabled", "longform_notetweets_consumption_enabled", "responsive_web_twitter_article_tweet_consumption_enabled", "tweet_awards_web_tipping_enabled", "responsive_web_grok_show_grok_translated_post", "responsive_web_grok_analysis_button_from_backend", "creator_subscriptions_quote_tweet_preview_enabled", "freedom_of_speech_not_reach_fetch_enabled", "standardized_nudges_misinfo", "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled", "longform_notetweets_rich_text_read_enabled", "longform_notetweets_inline_media_enabled", "responsive_web_grok_image_annotation_enabled", "responsive_web_enhance_cards_enabled"], fieldToggles: ["withAuxiliaryUserLabels", "withArticleRichContentState", "withArticlePlainText", "withGrokAnalyze", "withDisallowedReplyControls"] } };
         },
         233935: (e, d, a) => {
             "use strict";
@@ -13,25 +13,25 @@
                 l = a(674132),
                 i = a.n(l),
                 t = a(698891);
-            const s = "settingsAppBar",
-                c = i().bb081ea2,
-                u = n.memo(({ onPress: e, pullRight: d, to: a }) => n.createElement(o.ZP, { "aria-label": c, hoverLabel: { label: c }, icon: n.createElement(t.default, null), link: a, onPress: e, pullRight: d, style: b.button, testID: s, type: "primaryText" })),
+            const u = "settingsAppBar",
+                s = i().bb081ea2,
+                c = n.memo(({ onPress: e, pullRight: d, to: a }) => n.createElement(o.ZP, { "aria-label": s, hoverLabel: { label: s }, icon: n.createElement(t.default, null), link: a, onPress: e, pullRight: d, style: b.button, testID: u, type: "primaryText" })),
                 b = r.default.create((e) => ({ button: { marginVertical: `calc(-${e.spaces.space12})` } })),
-                p = u;
+                p = c;
         },
         789831: (e, d, a) => {
             "use strict";
-            a.d(d, { Z: () => s });
+            a.d(d, { Z: () => u });
             var n = a(807896),
                 o = a(202784),
                 r = a(325686),
                 l = a(392237),
                 i = a(655352);
             const t = l.default.create((e) => ({ root: { paddingBottom: `calc(${e.spaces.space64} + ${e.spaces.space20} * 2)` } })),
-                s = ({ children: e, component: d, fab: a, shouldRenderFab: l = !0, style: s, withoutBottomPadding: c, ...u }) => {
+                u = ({ children: e, component: d, fab: a, shouldRenderFab: l = !0, style: u, withoutBottomPadding: s, ...c }) => {
                     const b = d || r.Z,
                         p = l && !(0, i.ZP)();
-                    return o.createElement(b, (0, n.Z)({}, u, { style: [p && !c && t.root, s] }), e, p ? a : null);
+                    return o.createElement(b, (0, n.Z)({}, c, { style: [p && !s && t.root, u] }), e, p ? a : null);
                 };
         },
         817682: (e, d, a) => {
@@ -43,26 +43,26 @@
                 l = a(731708),
                 i = a(529356),
                 t = a(392237),
-                s = a(674132),
-                c = a.n(s),
-                u = a(890899),
+                u = a(674132),
+                s = a.n(u),
+                c = a(890899),
                 b = a(616894),
                 p = a(165243),
                 h = a(725516);
-            const D = c().aed79c54,
-                m = c().h12044a4,
-                S = c().f100e566,
-                A = c().a0d68f4e,
-                w = c().b00255b6,
-                y = c().geea29ee,
-                M = c().c54678e8,
-                f = c().ga4fa180,
-                g = c().h8dde772,
-                _ = c().i859a9d4,
-                v = (0, r.ju)("https://help.x.com/using-twitter/mentions-and-replies#mention-control"),
-                B = () => n.createElement(n.Fragment, null, n.createElement(l.ZP, null, m), n.createElement(o.Z, { style: C.details }, n.createElement(u.default, { style: C.icon }), n.createElement(o.Z, null, n.createElement(l.ZP, { style: C.title }, S), n.createElement(l.ZP, null, A)), n.createElement(b.default, { style: C.icon }), n.createElement(o.Z, null, n.createElement(l.ZP, { style: C.title }, w), n.createElement(l.ZP, null, y)), n.createElement(p.default, { style: C.icon }), n.createElement(o.Z, null, n.createElement(l.ZP, { style: C.title }, M), n.createElement(l.ZP, null, f)))),
-                k = () => n.createElement(o.Z, { style: C.footerContainer }, n.createElement(l.ZP, { align: "center" }, g, " ", n.createElement(l.ZP, { color: "text", link: v, style: C.footerLearnMoreLink, withUnderline: !0 }, _))),
-                P = () => n.createElement(l.ZP, { style: C.headline }, D),
+            const D = s().aed79c54,
+                m = s().h12044a4,
+                S = s().f100e566,
+                A = s().a0d68f4e,
+                w = s().b00255b6,
+                y = s().geea29ee,
+                M = s().c54678e8,
+                f = s().ga4fa180,
+                g = s().h8dde772,
+                _ = s().i859a9d4,
+                B = (0, r.ju)("https://help.x.com/using-twitter/mentions-and-replies#mention-control"),
+                v = () => n.createElement(n.Fragment, null, n.createElement(l.ZP, null, m), n.createElement(o.Z, { style: C.details }, n.createElement(c.default, { style: C.icon }), n.createElement(o.Z, null, n.createElement(l.ZP, { style: C.title }, S), n.createElement(l.ZP, null, A)), n.createElement(b.default, { style: C.icon }), n.createElement(o.Z, null, n.createElement(l.ZP, { style: C.title }, w), n.createElement(l.ZP, null, y)), n.createElement(p.default, { style: C.icon }), n.createElement(o.Z, null, n.createElement(l.ZP, { style: C.title }, M), n.createElement(l.ZP, null, f)))),
+                P = () => n.createElement(o.Z, { style: C.footerContainer }, n.createElement(l.ZP, { align: "center" }, g, " ", n.createElement(l.ZP, { color: "text", link: B, style: C.footerLearnMoreLink, withUnderline: !0 }, _))),
+                k = () => n.createElement(l.ZP, { style: C.headline }, D),
                 C = t.default.create((e) => ({ details: { display: "grid", gridTemplateColumns: "auto auto", gridColumnGap: e.spaces.space24, gridRowGap: e.spaces.space24, paddingTop: e.spaces.space32 }, footerContainer: { display: "flex", alignItems: "center" }, footerLearnMoreLink: { whiteSpace: "nowrap" }, headline: { fontSize: e.fontSizes.title2 }, icon: { color: e.colors.text, width: e.spaces.space24, height: e.spacesPx.space24 }, image: { width: "100%" }, title: { color: e.colors.text, fontSize: e.fontSizes.headline2, fontWeight: e.fontWeights.medium, paddingBottom: e.spaces.space4 } })),
                 I = (e) => {
                     const { actionLabel: d, onAction: a, onClose: o, onSecondaryAction: r, secondaryActionLabel: l } = e,
@@ -70,36 +70,36 @@
                     n.useEffect(() => {
                         t.scribeAction("impression");
                     }, [t]);
-                    const s = r
+                    const u = r
                             ? (e) => {
                                   t.scribeAction("secondary_cta"), r?.(e);
                               }
                             : void 0,
-                        c = o
+                        s = o
                             ? () => {
                                   t.scribeAction("close"), o();
                               }
                             : void 0;
                     return n.createElement(i.Z, {
                         actionLabel: d,
-                        footer: n.createElement(k, null),
+                        footer: n.createElement(P, null),
                         graphicDisplayMode: "none",
-                        headline: n.createElement(P, null),
+                        headline: n.createElement(k, null),
                         isFullHeightOnMobile: !0,
                         onAction: (e) => {
                             t.scribeAction("primary_cta"), a(e);
                         },
-                        onClose: c,
-                        onSecondaryAction: s,
+                        onClose: s,
+                        onSecondaryAction: u,
                         secondaryActionLabel: l,
-                        subtext: n.createElement(B, null),
+                        subtext: n.createElement(v, null),
                         withBottomPadding: !0,
                     });
                 };
         },
         507651: (e, d, a) => {
             "use strict";
-            a.d(d, { Z: () => s });
+            a.d(d, { Z: () => u });
             var n = a(807896),
                 o = a(202784),
                 r = a(107267),
@@ -109,7 +109,7 @@
                     const d = (0, r.useHistory)();
                     return o.createElement(l.Z, (0, n.Z)({}, e, { isCompact: (0, i.HD)(d) }));
                 },
-                s = o.memo(t);
+                u = o.memo(t);
         },
         387524: (e, d, a) => {
             "use strict";
@@ -120,12 +120,12 @@
                 l = a(292627),
                 i = a(537392),
                 t = a(392237),
-                s = a(365023),
-                c = a(392027),
-                u = a(774654),
+                u = a(365023),
+                s = a(392027),
+                c = a(774654),
                 b = a(725516),
                 p = a(443781);
-            const h = t.default.create((e) => ({ root: { marginHorizontal: "auto", width: "100%" }, rootMedium: { position: "absolute", bottom: 0, start: 0, end: 0 }, rootLarge: { maxWidth: 1e3 }, fabStaysAboveSafeArea: { top: `calc(${t.default.iPhoneOffsetBottom} - ${u.ZM.getAppBarHeight()} - ${e.spaces.space20})` }, fab: { bottom: e.spaces.space20, alignSelf: "flex-end", end: e.spaces.space20 }, fabLarge: { end: e.spaces.space20 }, fabMicro: { bottom: e.spaces.space16, end: e.spaces.space16 }, buttonMicro: { height: e.spaces.space40, width: e.spaces.space40 } })),
+            const h = t.default.create((e) => ({ root: { marginHorizontal: "auto", width: "100%" }, rootMedium: { position: "absolute", bottom: 0, start: 0, end: 0 }, rootLarge: { maxWidth: 1e3 }, fabStaysAboveSafeArea: { top: `calc(${t.default.iPhoneOffsetBottom} - ${c.ZM.getAppBarHeight()} - ${e.spaces.space20})` }, fab: { bottom: e.spaces.space20, alignSelf: "flex-end", end: e.spaces.space20 }, fabLarge: { end: e.spaces.space20 }, fabMicro: { bottom: e.spaces.space16, end: e.spaces.space16 }, buttonMicro: { height: e.spaces.space40, width: e.spaces.space40 } })),
                 D = (e) => {
                     const { "aria-label": d, label: a, onPress: D, scribeComponent: m, ...S } = e,
                         { loggedInUserId: A } = o.useContext(p.rC),
@@ -136,8 +136,8 @@
                             },
                             [w, D, m],
                         ),
-                        M = u.ZM.useCollapsibleNavBars(),
-                        f = [...u.Ah({ elementPosition: "bottom" }), M && h.fabStaysAboveSafeArea];
+                        M = c.ZM.useCollapsibleNavBars(),
+                        f = [...c.Ah({ elementPosition: "bottom" }), M && h.fabStaysAboveSafeArea];
                     return A
                         ? o.createElement(
                               l.Z.FloatingAction,
@@ -145,13 +145,13 @@
                               o.createElement(i.ZP, null, ({ windowWidth: e }) => {
                                   const l = e > t.default.theme.breakpoints.large,
                                       i = e > t.default.theme.breakpoints.medium,
-                                      u = e < t.default.theme.breakpoints.micro,
+                                      c = e < t.default.theme.breakpoints.micro,
                                       b = [h.root, i && h.rootMedium, l && h.rootLarge],
-                                      p = [h.fab, l && h.fabLarge, u && h.fabMicro, f];
+                                      p = [h.fab, l && h.fabLarge, c && h.fabMicro, f];
                                   return o.createElement(
                                       r.Z,
                                       { "aria-label": d, pointerEvents: "box-none", role: "complementary", style: b },
-                                      o.createElement(s.Z, { id: "FloatingActionButtonBase" }, (e, i) => o.createElement(r.Z, (0, n.Z)({ ref: e() }, i({ style: p })), o.createElement(c.Z, (0, n.Z)({}, S, { "aria-label": d, label: l ? a : void 0, onPress: y, style: u && h.buttonMicro })))),
+                                      o.createElement(u.Z, { id: "FloatingActionButtonBase" }, (e, i) => o.createElement(r.Z, (0, n.Z)({ ref: e() }, i({ style: p })), o.createElement(s.Z, (0, n.Z)({}, S, { "aria-label": d, label: l ? a : void 0, onPress: y, style: c && h.buttonMicro })))),
                                   );
                               }),
                           )
@@ -185,16 +185,16 @@
         },
         32677: (e, d, a) => {
             "use strict";
-            a.d(d, { Z: () => u });
+            a.d(d, { Z: () => c });
             var n = a(202784),
                 o = a(674132),
                 r = a.n(o),
                 l = a(186444),
                 i = a(355883);
             const t = r().j0179e90,
-                s = r().ee69d769({ verb: "" }),
-                c = n.createElement(l.default, null),
-                u = ({ getLocationState: e, history: d }) => n.createElement(i.Z, { "aria-label": t, getLocationState: e, history: d, icon: c, label: s, scribeComponent: "floating_compose_button" });
+                u = r().ee69d769({ verb: "" }),
+                s = n.createElement(l.default, null),
+                c = ({ getLocationState: e, history: d }) => n.createElement(i.Z, { "aria-label": t, getLocationState: e, history: d, icon: s, label: u, scribeComponent: "floating_compose_button" });
         },
         635510: (e, d, a) => {
             "use strict";
@@ -203,7 +203,7 @@
         },
         652904: (e, d, a) => {
             "use strict";
-            a.d(d, { Z: () => c });
+            a.d(d, { Z: () => s });
             var n = a(202784),
                 o = a(500002),
                 r = a(668214),
@@ -212,7 +212,7 @@
             const t = (0, r.Z)()
                 .propsFromActions(() => ({ updateLocation: i.YF, updateTweetDetailNav: l.NH }))
                 .withAnalytics();
-            class s extends n.Component {
+            class u extends n.Component {
                 componentDidMount() {
                     this._performPageUpdates(this.props);
                 }
@@ -228,8 +228,8 @@
                         } = e;
                     let t = !1;
                     d.pathname !== a ? (this._isInBackground = !0) : this._isInBackground && d.pathname === a && ((this._isInBackground = !1), (t = !0));
-                    const s = o || i;
-                    ((s && o !== i) || (!s && a !== r) || n !== l || t) && this._performPageUpdates(this.props);
+                    const u = o || i;
+                    ((u && o !== i) || (!u && a !== r) || n !== l || t) && this._performPageUpdates(this.props);
                 }
                 render() {
                     return this.props.children;
@@ -239,24 +239,24 @@
                     d.scribePageImpression(), a(d.contextualScribeNamespace, d.contextualScribeData), n(d.contextualScribeNamespace);
                 }
             }
-            s.defaultProps = { children: null };
-            const c = (0, o.ZP)(t(s));
+            u.defaultProps = { children: null };
+            const s = (0, o.ZP)(t(u));
         },
         927389: (e, d, a) => {
             "use strict";
-            a.d(d, { Z: () => c });
+            a.d(d, { Z: () => s });
             var n = a(202784),
                 o = a(247056),
                 r = a(392237);
             const l = (0, a(523561).Z)({ loader: () => a.e("loader.FeedbackSheet").then(a.bind(a, 774426)) });
             var i = a(725516),
                 t = a(851623);
-            const s = r.default.create((e) => ({ curationControl: { marginStart: e.spaces.space20 } })),
-                c = (0, i.Z)((e) => {
+            const u = r.default.create((e) => ({ curationControl: { marginStart: e.spaces.space20 } })),
+                s = (0, i.Z)((e) => {
                     const { analytics: d, feedbackItems: a, isDisplayedOnMedia: r } = e,
                         i = n.useCallback((e) => (a ? n.createElement(l, { actionItems: a, onClose: e }) : null), [a]),
-                        c = n.useCallback(() => d.scribe({ element: "caret", action: "click" }), [d]);
-                    return a && a.length > 0 ? n.createElement(o.Z, { onClick: c, renderActionMenu: i, style: s.curationControl, testID: t.Z.caret, withDarkBackground: r }) : null;
+                        s = n.useCallback(() => d.scribe({ element: "caret", action: "click" }), [d]);
+                    return a && a.length > 0 ? n.createElement(o.Z, { onClick: s, renderActionMenu: i, style: u.curationControl, testID: t.Z.caret, withDarkBackground: r }) : null;
                 });
         },
         337455: (e, d, a) => {
@@ -333,7 +333,7 @@
                 l = a.n(r),
                 i = a(934309);
             const t = (0, o.kj)((e) => !!!e?.viewer_v2?.user_results?.result?.notification_timeline?.timeline, "GQL Notifications: Failed to query for Notifications timeline"),
-                s = ({ apiClient: e, featureSwitches: d }) => ({
+                u = ({ apiClient: e, featureSwitches: d }) => ({
                     fetchNotifications: ({ count: d, cursor: a, timelineType: n, userId: o }) => {
                         const r = { timeline_type: n, cursor: a, count: d };
                         return e.graphQL(l(), r, t).then((e) => {
@@ -342,8 +342,8 @@
                         });
                     },
                 });
-            var c = a(644829),
-                u = a(750085),
+            var s = a(644829),
+                c = a(750085),
                 b = a(615656),
                 p = a(71620),
                 h = a(192337),
@@ -360,7 +360,7 @@
                 ]),
                 M = (e = S.l.All, d = void 0) => {
                     const a = y.get(e) || "All";
-                    return (0, D.Z)({ timelineId: `notifications-${e}-${d ?? ""}`, network: { getEndpoint: (e) => e.withEndpoint(s).fetchNotifications, getEndpointParams: ({ count: e, cursor: n, polling: o }) => ({ count: e, cursor: "string" == typeof n ? n : void 0, timelineType: a, userId: d }) }, formatResponse: u.Z, postFetchAction: m.Z, context: "FETCH_NOTIFICATIONS_TIMELINE", perfKey: "notifications", staleIntervalMs: 5e3, actAsUserId: d });
+                    return (0, D.Z)({ timelineId: `notifications-${e}-${d ?? ""}`, network: { getEndpoint: (e) => e.withEndpoint(u).fetchNotifications, getEndpointParams: ({ count: e, cursor: n, polling: o }) => ({ count: e, cursor: "string" == typeof n ? n : void 0, timelineType: a, userId: d }) }, formatResponse: c.Z, postFetchAction: m.Z, context: "FETCH_NOTIFICATIONS_TIMELINE", perfKey: "notifications", staleIntervalMs: 5e3, actAsUserId: d });
                 },
                 f =
                     (e = S.l.All, d = void 0) =>
@@ -370,7 +370,7 @@
                         if (i) {
                             const d = { cursor: h.NA(i), type: e },
                                 o = a((0, p.zr)("APP_UPDATE_NOTIFICATION_LAST_READ")({ [b.ZP.AppInReadOnlyMode]: { customAction: n.Z } }));
-                            r.withEndpoint(c.Z).updateNotificationsLastSeenCursor(d).catch(o);
+                            r.withEndpoint(s.Z).updateNotificationsLastSeenCursor(d).catch(o);
                         }
                     },
                 g = M(S.l.All).fetchInitialOrTop,
@@ -407,9 +407,9 @@
                 l = a(674132),
                 i = a.n(l),
                 t = a(233935),
-                s = a(718e3),
-                c = a(789831),
-                u = a(252021),
+                u = a(718e3),
+                s = a(789831),
+                c = a(252021),
                 b = a(507651),
                 p = a(443781),
                 h = a(32677),
@@ -425,38 +425,31 @@
                 .propsFromState(() => ({ allNotificationsUnreadCount: M.pm, isLoggedInUserActiveCreator: f.WM }))
                 .withAnalytics({ page: "ntab" });
             var _ = a(198368);
-            const v = i().eb75875e,
-                B = i().f8321d82,
-                k = i().cdb53d7a,
-                P = i().h3290872,
+            const B = i().eb75875e,
+                v = i().f8321d82,
+                P = i().cdb53d7a,
+                k = i().h3290872,
                 C = i().bc8baa08,
                 I = i().a98ba778,
                 T = n.createElement(t.Z, { pullRight: !0, to: "/settings/notifications" }),
                 E = i().eb75875e,
-                Z = (0, S.Z)(
+                R = (0, S.Z)(
                     (0, w.p)(
                         () =>
                             Promise.all([
-                                a.e("icons.5"),
-                                a.e("icons.6"),
-                                a.e("icons.25"),
-                                a.e("icons.22"),
-                                a.e("icons.9"),
-                                a.e("icons.4"),
-                                a.e("icons.15"),
+                                a.e("icons.23"),
+                                a.e("icons.16"),
                                 a.e("icons.2"),
-                                a.e("icons.20"),
+                                a.e("icons.10"),
+                                a.e("icons.19"),
+                                a.e("icons.24"),
                                 a.e("modules.common-e907d115"),
                                 a.e("modules.common-e019dbda"),
-                                a.e("icons.7"),
-                                a.e("icons.0"),
-                                a.e("icons.11"),
-                                a.e("icons.27"),
-                                a.e("icons.17"),
-                                a.e("icons.12"),
-                                a.e("icons.3"),
                                 a.e("icons.13"),
-                                a.e("icons.18"),
+                                a.e("icons.27"),
+                                a.e("icons.22"),
+                                a.e("icons.17"),
+                                a.e("icons.7"),
                                 a.e("modules.audio-6107ac1a"),
                                 a.e("modules.audio-b953418a"),
                                 a.e("modules.audio-7c51e6a7"),
@@ -467,11 +460,16 @@
                                 a.e("modules.audio-e019dbda"),
                                 a.e("modules.audio-262c94d4"),
                                 a.e("modules.audio-c6fe4ea4"),
-                                a.e("icons.24"),
-                                a.e("icons.10"),
+                                a.e("icons.4"),
                                 a.e("icons.8"),
+                                a.e("icons.14"),
                                 a.e("icons.26"),
-                                a.e("icons.19"),
+                                a.e("icons.28"),
+                                a.e("icons.21"),
+                                a.e("icons.11"),
+                                a.e("icons.3"),
+                                a.e("icons.1"),
+                                a.e("icons.18"),
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -502,7 +500,7 @@
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                                 a.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2f4a3d25"),
+                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2d1eb5e2"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -540,6 +538,7 @@
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-6cde809e"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-708dfafd"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-af3d50e9"),
+                                a.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Articles~bundle.AudioSpacePeek~bundle.Birdwatch~bundle.Brande"),
                                 a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be"),
                                 a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-7a04a44b"),
                                 a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-db6b2e3a"),
@@ -561,30 +560,23 @@
                         { shouldMigrateToX: !1 },
                     ),
                 ),
-                R = (0, S.Z)(
+                Z = (0, S.Z)(
                     (0, w.p)(
                         () =>
                             Promise.all([
-                                a.e("icons.5"),
-                                a.e("icons.6"),
-                                a.e("icons.25"),
-                                a.e("icons.22"),
-                                a.e("icons.9"),
-                                a.e("icons.4"),
-                                a.e("icons.15"),
+                                a.e("icons.23"),
+                                a.e("icons.16"),
                                 a.e("icons.2"),
-                                a.e("icons.20"),
+                                a.e("icons.10"),
+                                a.e("icons.19"),
+                                a.e("icons.24"),
                                 a.e("modules.common-e907d115"),
                                 a.e("modules.common-e019dbda"),
-                                a.e("icons.7"),
-                                a.e("icons.0"),
-                                a.e("icons.11"),
-                                a.e("icons.27"),
-                                a.e("icons.17"),
-                                a.e("icons.12"),
-                                a.e("icons.3"),
                                 a.e("icons.13"),
-                                a.e("icons.18"),
+                                a.e("icons.27"),
+                                a.e("icons.22"),
+                                a.e("icons.17"),
+                                a.e("icons.7"),
                                 a.e("modules.audio-6107ac1a"),
                                 a.e("modules.audio-b953418a"),
                                 a.e("modules.audio-7c51e6a7"),
@@ -595,11 +587,16 @@
                                 a.e("modules.audio-e019dbda"),
                                 a.e("modules.audio-262c94d4"),
                                 a.e("modules.audio-c6fe4ea4"),
-                                a.e("icons.24"),
-                                a.e("icons.10"),
+                                a.e("icons.4"),
                                 a.e("icons.8"),
+                                a.e("icons.14"),
                                 a.e("icons.26"),
-                                a.e("icons.19"),
+                                a.e("icons.28"),
+                                a.e("icons.21"),
+                                a.e("icons.11"),
+                                a.e("icons.3"),
+                                a.e("icons.1"),
+                                a.e("icons.18"),
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -630,7 +627,7 @@
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                                 a.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2f4a3d25"),
+                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2d1eb5e2"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -668,6 +665,7 @@
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-6cde809e"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-708dfafd"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-af3d50e9"),
+                                a.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Articles~bundle.AudioSpacePeek~bundle.Birdwatch~bundle.Brande"),
                                 a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be"),
                                 a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-7a04a44b"),
                                 a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-db6b2e3a"),
@@ -693,26 +691,19 @@
                     (0, w.p)(
                         () =>
                             Promise.all([
-                                a.e("icons.5"),
-                                a.e("icons.6"),
-                                a.e("icons.25"),
-                                a.e("icons.22"),
-                                a.e("icons.9"),
-                                a.e("icons.4"),
-                                a.e("icons.15"),
+                                a.e("icons.23"),
+                                a.e("icons.16"),
                                 a.e("icons.2"),
-                                a.e("icons.20"),
+                                a.e("icons.10"),
+                                a.e("icons.19"),
+                                a.e("icons.24"),
                                 a.e("modules.common-e907d115"),
                                 a.e("modules.common-e019dbda"),
-                                a.e("icons.7"),
-                                a.e("icons.0"),
-                                a.e("icons.11"),
-                                a.e("icons.27"),
-                                a.e("icons.17"),
-                                a.e("icons.12"),
-                                a.e("icons.3"),
                                 a.e("icons.13"),
-                                a.e("icons.18"),
+                                a.e("icons.27"),
+                                a.e("icons.22"),
+                                a.e("icons.17"),
+                                a.e("icons.7"),
                                 a.e("modules.audio-6107ac1a"),
                                 a.e("modules.audio-b953418a"),
                                 a.e("modules.audio-7c51e6a7"),
@@ -723,11 +714,16 @@
                                 a.e("modules.audio-e019dbda"),
                                 a.e("modules.audio-262c94d4"),
                                 a.e("modules.audio-c6fe4ea4"),
-                                a.e("icons.24"),
-                                a.e("icons.10"),
+                                a.e("icons.4"),
                                 a.e("icons.8"),
+                                a.e("icons.14"),
                                 a.e("icons.26"),
-                                a.e("icons.19"),
+                                a.e("icons.28"),
+                                a.e("icons.21"),
+                                a.e("icons.11"),
+                                a.e("icons.3"),
+                                a.e("icons.1"),
+                                a.e("icons.18"),
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -758,7 +754,7 @@
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                                 a.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2f4a3d25"),
+                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2d1eb5e2"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -796,6 +792,7 @@
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-6cde809e"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-708dfafd"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-af3d50e9"),
+                                a.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Articles~bundle.AudioSpacePeek~bundle.Birdwatch~bundle.Brande"),
                                 a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be"),
                                 a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-7a04a44b"),
                                 a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-db6b2e3a"),
@@ -821,26 +818,19 @@
                     (0, w.p)(
                         () =>
                             Promise.all([
-                                a.e("icons.5"),
-                                a.e("icons.6"),
-                                a.e("icons.25"),
-                                a.e("icons.22"),
-                                a.e("icons.9"),
-                                a.e("icons.4"),
-                                a.e("icons.15"),
+                                a.e("icons.23"),
+                                a.e("icons.16"),
                                 a.e("icons.2"),
-                                a.e("icons.20"),
+                                a.e("icons.10"),
+                                a.e("icons.19"),
+                                a.e("icons.24"),
                                 a.e("modules.common-e907d115"),
                                 a.e("modules.common-e019dbda"),
-                                a.e("icons.7"),
-                                a.e("icons.0"),
-                                a.e("icons.11"),
-                                a.e("icons.27"),
-                                a.e("icons.17"),
-                                a.e("icons.12"),
-                                a.e("icons.3"),
                                 a.e("icons.13"),
-                                a.e("icons.18"),
+                                a.e("icons.27"),
+                                a.e("icons.22"),
+                                a.e("icons.17"),
+                                a.e("icons.7"),
                                 a.e("modules.audio-6107ac1a"),
                                 a.e("modules.audio-b953418a"),
                                 a.e("modules.audio-7c51e6a7"),
@@ -851,11 +841,16 @@
                                 a.e("modules.audio-e019dbda"),
                                 a.e("modules.audio-262c94d4"),
                                 a.e("modules.audio-c6fe4ea4"),
-                                a.e("icons.24"),
-                                a.e("icons.10"),
+                                a.e("icons.4"),
                                 a.e("icons.8"),
+                                a.e("icons.14"),
                                 a.e("icons.26"),
-                                a.e("icons.19"),
+                                a.e("icons.28"),
+                                a.e("icons.21"),
+                                a.e("icons.11"),
+                                a.e("icons.3"),
+                                a.e("icons.1"),
+                                a.e("icons.18"),
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -886,7 +881,7 @@
                                 a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                                 a.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2f4a3d25"),
+                                a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2d1eb5e2"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -924,6 +919,7 @@
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-6cde809e"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-708dfafd"),
                                 a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-af3d50e9"),
+                                a.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Articles~bundle.AudioSpacePeek~bundle.Birdwatch~bundle.Brande"),
                                 a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be"),
                                 a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-7a04a44b"),
                                 a.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-db6b2e3a"),
@@ -945,11 +941,11 @@
                         { shouldMigrateToX: !1 },
                     ),
                 ),
-                N = { to: _._N, key: B, label: B, retainScrollPosition: !1 },
-                F = { to: _.JV, key: k, label: k, retainScrollPosition: !1 },
-                z = { to: _.JK, key: P, label: P, retainScrollPosition: !1 },
-                W = { to: _.ag, key: C, label: C, retainScrollPosition: !1 },
-                H = () => n.createElement(A.Z, { to: _._N }),
+                N = { to: _._N, key: v, label: v, retainScrollPosition: !1 },
+                F = { to: _.JV, key: P, label: P, retainScrollPosition: !1 },
+                z = { to: _.JK, key: k, label: k, retainScrollPosition: !1 },
+                H = { to: _.ag, key: C, label: C, retainScrollPosition: !1 },
+                W = () => n.createElement(A.Z, { to: _._N }),
                 O = (e) => {
                     const { featureSwitches: d } = n.useContext(p.rC),
                         { history: a, isLoggedInUserActiveCreator: l } = e,
@@ -957,24 +953,24 @@
                         t = l && i,
                         S = n.useMemo(() => {
                             const e = [N, z, F];
-                            return t && e.splice(2, 0, W), e;
+                            return t && e.splice(2, 0, H), e;
                         }, [t]),
-                        A = t ? L : H,
-                        w = n.createElement(o.Switch, null, n.createElement(o.Route, { component: Z, exact: !0, path: _._N }), n.createElement(o.Route, { component: R, exact: !0, path: _.JV }), n.createElement(o.Route, { component: x, exact: !0, path: _.JK }), n.createElement(o.Route, { component: A, exact: !0, path: _.ag }), n.createElement(o.Route, { component: H, exact: !0, path: _.Im })),
+                        A = t ? L : W,
+                        w = n.createElement(o.Switch, null, n.createElement(o.Route, { component: R, exact: !0, path: _._N }), n.createElement(o.Route, { component: Z, exact: !0, path: _.JV }), n.createElement(o.Route, { component: x, exact: !0, path: _.JK }), n.createElement(o.Route, { component: A, exact: !0, path: _.ag }), n.createElement(o.Route, { component: W, exact: !0, path: _.Im })),
                         y = n.useMemo(() => n.createElement(b.Z, { alignFirstItem: (0, m.ZP)(), "aria-label": I, links: S }), [S]);
                     return n.createElement(
                         D.Z,
                         null,
-                        n.createElement(u.Z, {
-                            documentTitle: v,
+                        n.createElement(c.Z, {
+                            documentTitle: B,
                             history: a,
                             primaryContent: (() => {
                                 const e = n.createElement(h.Z, { history: a });
-                                return n.createElement(c.Z, { component: r.Z, fab: e }, w);
+                                return n.createElement(s.Z, { component: r.Z, fab: e }, w);
                             })(),
                             rightControl: T,
                             secondaryBar: y,
-                            sidebarContent: n.createElement(s.Z, null),
+                            sidebarContent: n.createElement(u.Z, null),
                             title: E,
                         }),
                     );
@@ -990,9 +986,9 @@
                 l = a(457311),
                 i = a(674132),
                 t = a.n(i),
-                s = a(325686),
-                c = a(913309),
-                u = a(392237),
+                u = a(325686),
+                s = a(913309),
+                c = a(392237),
                 b = a(927389),
                 p = a(293115),
                 h = a(725516);
@@ -1013,10 +1009,10 @@
                 f = t().j24c37b2,
                 g = t().e839db3a,
                 _ = t().eba8b1c8,
-                v = t().i859a9d4,
-                B = t().j745b8a6,
-                k = ({ onClose: e }) => n.createElement(p.nO, { namespace: { element: "leave_this_conversation_education_sheet" } }, n.createElement(y.Z, { actionLabel: f, onAction: e, onClose: e })),
-                P = u.default.create((e) => ({ footerLearnMoreLink: { whiteSpace: "nowrap" }, wrapper: { borderBottomColor: e.colors.borderColor, borderBottomWidth: e.borderWidths.small } })),
+                B = t().i859a9d4,
+                v = t().j745b8a6,
+                P = ({ onClose: e }) => n.createElement(p.nO, { namespace: { element: "leave_this_conversation_education_sheet" } }, n.createElement(y.Z, { actionLabel: f, onAction: e, onClose: e })),
+                k = c.default.create((e) => ({ footerLearnMoreLink: { whiteSpace: "nowrap" }, wrapper: { borderBottomColor: e.colors.borderColor, borderBottomWidth: e.borderWidths.small } })),
                 C = (e) => {
                     const { onDismiss: d } = e,
                         [a, r] = n.useState(!1),
@@ -1036,15 +1032,15 @@
                         n.Fragment,
                         null,
                         a &&
-                            n.createElement(k, {
+                            n.createElement(P, {
                                 onClose: () => {
                                     r(!1);
                                 },
                             }),
                         n.createElement(
-                            s.Z,
-                            { style: P.wrapper },
-                            n.createElement(c.Z, {
+                            u.Z,
+                            { style: k.wrapper },
+                            n.createElement(s.Z, {
                                 headline: _,
                                 image: w.image,
                                 imageVariants: w.customVariants,
@@ -1052,7 +1048,7 @@
                                 subtext: n.createElement(
                                     n.Fragment,
                                     null,
-                                    B,
+                                    v,
                                     " ",
                                     n.createElement(
                                         o.ZP,
@@ -1062,12 +1058,12 @@
                                                 r(!0);
                                             },
                                             size: "subtext1",
-                                            style: P.footerLearnMoreLink,
+                                            style: k.footerLearnMoreLink,
                                             weight: "bold",
                                             withInteractiveStyling: !0,
                                             withUnderline: !0,
                                         },
-                                        v,
+                                        B,
                                     ),
                                 ),
                             }),
@@ -1077,11 +1073,11 @@
             var I = a(443781),
                 T = a(652904),
                 E = a(810641),
-                Z = a(900062);
+                R = a(900062);
             a(571372);
-            const R = Object.freeze({ VerificationCheck: "VerificationCheck" }),
+            const Z = Object.freeze({ VerificationCheck: "VerificationCheck" }),
                 x = Object.freeze({
-                    [R.VerificationCheck]: (function (e) {
+                    [Z.VerificationCheck]: (function (e) {
                         if (3 !== e.length) throw new Error("url list must be 3 urls for each variant (400x200, 800x400, 1200x600)");
                         const [d, a, n] = e;
                         return [
@@ -1095,8 +1091,8 @@
                 N = a(525202),
                 F = a(912021),
                 z = a(962741),
-                W = a(668214),
-                H = a(806960),
+                H = a(668214),
+                W = a(806960),
                 O = a(175856),
                 U = a(5849);
             const V = (0, F.Z)((e, d) => d && d.notificationsModule(e, void 0));
@@ -1104,10 +1100,10 @@
                 j = a(801184),
                 G = a(335632),
                 q = a(263863);
-            const Q = { ...(0, G.G)({ tweetDismissable: !0, withMuteConversation: !0 }), [z.ZP.Tweet]: $.ov({ selectDisplayType: (e) => e.content.displayType, handlers: { [q.Z.Tweet]: (0, j.Cw)({ withMuteConversation: !0, withUnreadStyles: !0 }), [q.Z.QuotedTweet]: (0, j.$Q)({ isCondensed: !0 }) } }) },
-                K = t().eb75875e,
-                X = t().e9f1fbcc,
-                J = t().j887d006,
+            const K = { ...(0, G.G)({ tweetDismissable: !0, withMuteConversation: !0 }), [z.ZP.Tweet]: $.ov({ selectDisplayType: (e) => e.content.displayType, handlers: { [q.Z.Tweet]: (0, j.Cw)({ withMuteConversation: !0, withUnreadStyles: !0 }), [q.Z.QuotedTweet]: (0, j.$Q)({ isCondensed: !0 }) } }) },
+                Q = t().eb75875e,
+                J = t().e9f1fbcc,
+                X = t().j887d006,
                 Y = t().c06d4306,
                 ee = n.createElement(t().I18NFormatMessage, { $i18n: "d39ad44d" }, n.createElement(o.ZP, { color: "text", link: (0, r.ju)("https://help.x.com/managing-your-account/about-twitter-verified-accounts"), weight: "bold", withUnderline: !0 }, t().e3f9838d)),
                 de = t().ge7c661a,
@@ -1124,12 +1120,12 @@
                                 case N.l.Subscribers:
                                     return ae;
                                 default:
-                                    return J;
+                                    return X;
                             }
                         }),
-                        (this._getEmptyMessageHeader = () => X),
-                        (this._renderTwitterBlueVerifiedEmptyState = () => n.createElement(l.Z, { header: X, imageVariants: x.VerificationCheck, message: ee, onButtonPress: this._handleEmptyTimelineButtonPress, onImpression: this._handleEmptyTimelineImpression })),
-                        (this._renderSubscribersEmptyState = () => n.createElement(l.Z, { header: X, message: ae, onButtonPress: this._handleEmptyTimelineButtonPress, onImpression: this._handleEmptyTimelineImpression })),
+                        (this._getEmptyMessageHeader = () => J),
+                        (this._renderTwitterBlueVerifiedEmptyState = () => n.createElement(l.Z, { header: J, imageVariants: x.VerificationCheck, message: ee, onButtonPress: this._handleEmptyTimelineButtonPress, onImpression: this._handleEmptyTimelineImpression })),
+                        (this._renderSubscribersEmptyState = () => n.createElement(l.Z, { header: J, message: ae, onButtonPress: this._handleEmptyTimelineButtonPress, onImpression: this._handleEmptyTimelineImpression })),
                         (this._renderEmptyTimeline = () => {
                             const { notificationsType: e } = this.props;
                             return e === N.l.Verified && this.context.featureSwitches.isTrue("responsive_web_twitter_blue_verified_badge_ntab_empty_state_enabled") ? this._renderTwitterBlueVerifiedEmptyState() : e === N.l.Subscribers ? this._renderSubscribersEmptyState() : n.createElement(l.Z, { header: this._getEmptyMessageHeader(), message: this._getEmptyMessageBody(), onButtonPress: this._handleEmptyTimelineButtonPress, onImpression: this._handleEmptyTimelineImpression });
@@ -1160,7 +1156,7 @@
                 }
                 render() {
                     const { notificationsModule: e } = this.props;
-                    return e ? n.createElement(T.Z, null, n.createElement(E.Z, { entryConfiguration: Q, header: this._renderTimelineHeader(), key: "notification-timeline", module: e, onAtTop: this._handleAtTop, renderEmptyState: this._renderEmptyTimeline, title: K })) : null;
+                    return e ? n.createElement(T.Z, null, n.createElement(E.Z, { entryConfiguration: K, header: this._renderTimelineHeader(), key: "notification-timeline", module: e, onAtTop: this._handleAtTop, renderEmptyState: this._renderEmptyTimeline, title: Q })) : null;
                 }
                 _updateLastReadIfNeeded() {
                     const { notificationsType: e, unreadCount: d, updateLastRead: a } = this.props;
@@ -1172,7 +1168,7 @@
                     (0, L.C)(
                         ((e) => {
                             const d = (0, F.Z)(V);
-                            return (0, W.Z)()
+                            return (0, H.Z)()
                                 .propsFromState(() => ({
                                     shouldShowUnmentionEducation: (e) => (0, O.t5)(e, O.QV),
                                     unreadCount: (a, { history: n, ntabData: o }) => d(e, o)?.selectUnreadEntriesCount(a),
@@ -1185,20 +1181,20 @@
                                 }))
                                 .propsFromActions(({ history: a, ntabData: n }) => ({
                                     setNotificationsPageLoaded: (e) => (d) => {
-                                        d((0, H.Wl)(e));
+                                        d((0, W.Wl)(e));
                                     },
                                     addLeaveThisConversationEducationFlag: () => (0, O.pj)(O.QV),
                                     markAllAsRead: d(e, n)?.markAllAsRead,
                                     updateLastRead: (e) => (d, a) => {
                                         const o = n?.updateLastSeenCursor;
-                                        o && d(o(e)), d((0, H.SE)(0));
+                                        o && d(o(e)), d((0, W.SE)(0));
                                     },
                                     setNotificationsType: U.BZ,
                                 }))
                                 .adjustStateProps(({ shouldShowUnmentionEducation: a, timelineHasTweets: n, unreadCount: o }, { history: r, ntabData: l }) => ({ ntabData: null, notificationsModule: d(e, l), notificationsType: e, shouldShowUnmentionEducation: a, timelineHasTweets: n, unreadCount: o }))
                                 .withAnalytics({ page: "ntab", section: e });
                         })(e)(ne),
-                        { ntabData: Z.Z },
+                        { ntabData: R.Z },
                     ),
                 re = (e) => oe(e);
         },
@@ -1232,9 +1228,9 @@
                 r = a(392237);
             class l extends n.PureComponent {
                 render() {
-                    const { "aria-label": e, backgroundColor: d, color: a, disabled: r, href: l, icon: t, label: s, onPress: c, renderMenu: u, style: b, testID: p } = this.props,
+                    const { "aria-label": e, backgroundColor: d, color: a, disabled: r, href: l, icon: t, label: u, onPress: s, renderMenu: c, style: b, testID: p } = this.props,
                         h = ((e, d) => ("primary" === e && "white" === d ? "whiteOnColor" : "white" === e && "primary" === d ? "primaryOnWhite" : d))(d, a);
-                    return n.createElement(o.ZP, { "aria-label": e, backgroundColor: d, color: h, disabled: r, icon: t, link: l, onPress: c, renderMenu: u, size: "xLarge", style: [i.root, !s && i.iconOnly, b], testID: p }, s);
+                    return n.createElement(o.ZP, { "aria-label": e, backgroundColor: d, color: h, disabled: r, icon: t, link: l, onPress: s, renderMenu: c, size: "xLarge", style: [i.root, !u && i.iconOnly, b], testID: p }, u);
                 }
             }
             l.defaultProps = { backgroundColor: "primary", color: "white", disabled: !1 };
@@ -1250,9 +1246,9 @@
                 l = a(731708),
                 i = a(439592),
                 t = a(154003),
-                s = a(392237),
-                c = a(444178);
-            const u = "inlinePrompt",
+                u = a(392237),
+                s = a(444178);
+            const c = "inlinePrompt",
                 b = "inlinePrompt-primaryAction",
                 p = "inlinePrompt-secondaryAction",
                 h = "inlinePrompt-centeredImageContainer";
@@ -1261,7 +1257,7 @@
                     super(...e),
                         (this._renderImage = (e, d, a) => {
                             let l = n.createElement(r.Z, { "aria-label": "", aspectMode: i.Z.exact(e.width / e.height), backgroundColor: e.backgroundColor, customVariants: d, image: e });
-                            return a && (l = n.createElement(c.Z, { link: a, role: "" }, " ", l)), e.isCentered ? n.createElement(o.Z, { style: m.centeredImage, testID: h }, n.createElement(o.Z, { style: { width: `${e.width}px`, height: `${e.height}px`, ...e.style } }, l)) : e.style ? n.createElement(o.Z, { style: e.style }, l) : l;
+                            return a && (l = n.createElement(s.Z, { link: a, role: "" }, " ", l)), e.isCentered ? n.createElement(o.Z, { style: m.centeredImage, testID: h }, n.createElement(o.Z, { style: { width: `${e.width}px`, height: `${e.height}px`, ...e.style } }, l)) : e.style ? n.createElement(o.Z, { style: e.style }, l) : l;
                         }),
                         (this._renderTitle = () => {
                             const { headline: e } = this.props;
@@ -1273,49 +1269,49 @@
                         }),
                         (this._renderAction = ({ action: e, buttonSize: d, buttonType: a, style: r, testID: l }) => {
                             const { secondaryAction: i } = this.props,
-                                { link: s, onClick: c, text: u } = e;
-                            return n.createElement(o.Z, { style: [this.styles.actionContainer, r, { justifyContent: "flex-start" }], testID: l }, n.createElement(t.ZP, { link: s, onPress: c, size: d, style: { width: i ? "100%" : "auto" }, type: a }, u));
+                                { link: u, onClick: s, text: c } = e;
+                            return n.createElement(o.Z, { style: [this.styles.actionContainer, r, { justifyContent: "flex-start" }], testID: l }, n.createElement(t.ZP, { link: u, onPress: s, size: d, style: { width: i ? "100%" : "auto" }, type: a }, c));
                         });
                 }
                 render() {
-                    const { headline: e, image: d, imageActionUrl: a, imageVariants: r, primaryAction: l, rightControl: i, secondaryAction: t, shouldRenderBorder: s, subtext: c } = this.props;
-                    return n.createElement(o.Z, { style: s ? [S.root, S.rootMargin] : m.root }, n.createElement(n.Fragment, null, d ? this._renderImage(d, r, a) : null, e || c || l || t ? n.createElement(o.Z, { style: this.styles.rootPadding, testID: u }, this._renderTitle(), this._renderBodyText(), l ? this._renderAction({ action: l, buttonType: "primaryFilled", style: this.styles.primaryAction, buttonSize: "large", testID: b }) : null, t ? this._renderAction({ action: t, buttonType: "primaryOutlined", style: this.styles.secondaryAction, buttonSize: "large", testID: p }) : null) : null), i ? n.createElement(o.Z, { style: m.rightControl }, i) : null);
+                    const { headline: e, image: d, imageActionUrl: a, imageVariants: r, primaryAction: l, rightControl: i, secondaryAction: t, shouldRenderBorder: u, subtext: s } = this.props;
+                    return n.createElement(o.Z, { style: u ? [S.root, S.rootMargin] : m.root }, n.createElement(n.Fragment, null, d ? this._renderImage(d, r, a) : null, e || s || l || t ? n.createElement(o.Z, { style: this.styles.rootPadding, testID: c }, this._renderTitle(), this._renderBodyText(), l ? this._renderAction({ action: l, buttonType: "primaryFilled", style: this.styles.primaryAction, buttonSize: "large", testID: b }) : null, t ? this._renderAction({ action: t, buttonType: "primaryOutlined", style: this.styles.secondaryAction, buttonSize: "large", testID: p }) : null) : null), i ? n.createElement(o.Z, { style: m.rightControl }, i) : null);
                 }
                 get styles() {
                     return this.props.isCompact ? w : A;
                 }
             }
             D.defaultProps = { shouldRenderBorder: !1 };
-            const m = s.default.create((e) => ({ root: { backgroundColor: e.colors.cellBackground }, flexGrow: { flexGrow: 1 }, centeredImage: { display: "flex", flexDirection: "row", justifyContent: "center" }, rightControl: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical, position: "absolute", end: 0, top: 0 } })),
-                S = s.default.create((e) => ({ root: { borderColor: e.colors.nestedBorderColor, borderWidth: e.borderWidths.small, borderRadius: e.borderRadii.xLarge, overflow: "hidden" }, rootMargin: { marginStart: e.spaces.space16, marginEnd: e.spaces.space16 } })),
-                A = s.default.create((e) => ({ rootPadding: { padding: e.spaces.space32 }, body: { marginTop: e.spaces.space8 }, actionContainer: { flexDirection: "row" }, primaryAction: { marginTop: e.spaces.space28 }, secondaryAction: { marginTop: e.spaces.space16 } })),
-                w = s.default.create((e) => ({ rootPadding: { padding: e.spaces.space16 }, body: { marginTop: e.spaces.space2 }, actionContainer: { flexDirection: "row" }, primaryAction: { marginTop: e.spaces.space4 }, secondaryAction: { marginTop: e.spaces.space2 } }));
+            const m = u.default.create((e) => ({ root: { backgroundColor: e.colors.cellBackground }, flexGrow: { flexGrow: 1 }, centeredImage: { display: "flex", flexDirection: "row", justifyContent: "center" }, rightControl: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical, position: "absolute", end: 0, top: 0 } })),
+                S = u.default.create((e) => ({ root: { borderColor: e.colors.nestedBorderColor, borderWidth: e.borderWidths.small, borderRadius: e.borderRadii.xLarge, overflow: "hidden" }, rootMargin: { marginStart: e.spaces.space16, marginEnd: e.spaces.space16 } })),
+                A = u.default.create((e) => ({ rootPadding: { padding: e.spaces.space32 }, body: { marginTop: e.spaces.space8 }, actionContainer: { flexDirection: "row" }, primaryAction: { marginTop: e.spaces.space28 }, secondaryAction: { marginTop: e.spaces.space16 } })),
+                w = u.default.create((e) => ({ rootPadding: { padding: e.spaces.space16 }, body: { marginTop: e.spaces.space2 }, actionContainer: { flexDirection: "row" }, primaryAction: { marginTop: e.spaces.space4 }, secondaryAction: { marginTop: e.spaces.space2 } }));
         },
         403556: (e, d, a) => {
             "use strict";
-            a.d(d, { Z: () => v });
+            a.d(d, { Z: () => B });
             var n = a(807896),
                 o = a(202784),
                 r = a(194504),
                 l = a(235902),
                 i = a(392237),
                 t = a(325686),
-                s = a(674132),
-                c = a.n(s),
-                u = a(912021),
+                u = a(674132),
+                s = a.n(u),
+                c = a(912021),
                 b = a(516951),
                 p = a(731708),
                 h = a(310088),
                 D = a(175993),
                 m = a(58881),
                 S = a(530732);
-            const A = c().d2414d31,
-                w = () => c().ce4e85ae,
-                y = c().fb9f6f39;
+            const A = s().d2414d31,
+                w = () => s().ce4e85ae,
+                y = s().fb9f6f39;
             class M extends o.Component {
                 constructor(...e) {
                     super(...e),
-                        (this._getMemoizedLink = (0, u.Z)((e, d) => {
+                        (this._getMemoizedLink = (0, c.Z)((e, d) => {
                             const { pathname: a, query: n, state: o } = "string" == typeof e ? { pathname: e, state: {}, query: {} } : e;
                             return { pathname: a, query: n, method: "push", state: { ...o, lockScroll: d } };
                         })),
@@ -1347,13 +1343,13 @@
                     this._unlisten && this._unlisten();
                 }
                 render() {
-                    const { Icon: e, "aria-label": d, badgeCount: a, badgePip: n, children: r, color: l, isActive: s, isCompact: c, isPillLink: u, isRoundedRect: b, isWebRedesign: D, retainScrollPosition: M, style: g, to: _ } = this.props,
-                        { location: v } = this.state,
-                        B = _ ? this._getMemoizedLink(_, M) : void 0,
-                        k = s ? s(_) : v?.pathname === B?.pathname,
-                        P = m.Z.generate({ backgroundColor: "transparent", color: i.default.theme.colors.text, insetFocusRing: !0 }),
-                        C = D ? "medium" : k ? "bold" : "medium";
-                    return o.createElement(S.Z, { "aria-label": d, "aria-selected": k, focusable: !!k, interactiveStyles: P, link: B, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [u ? f.pill : f.link, u && k ? f.active : null, c ? (u ? f.compactPill : f.compactLink) : null, b ? f.roundedRect : null, g], withoutInteractiveStyles: D || u }, ({ isFocused: d, isHovered: s }) => o.createElement(t.Z, { style: u && f.flexGrow }, o.createElement(p.ZP, { size: D ? "headline2" : void 0, style: [f.text, { color: this._getTextColor(k, s, D, u) }, c && f.compactText, D && d && f.focusedText], weight: C }, e && o.createElement(e, { style: f.icon }), r, D || u ? null : o.createElement(t.Z, { style: k && [f.border, { backgroundColor: i.default.theme.colors[l] }] })), a ? o.createElement(h.Z, { count: a, standalone: !0, style: [f.badge, a >= 10 && f.multiDigitBadge, a >= 20 && f.truncatedCountBadge], truncatedCountFormatter: y, unreadCountLabel: A, withBorder: !1 }) : n ? o.createElement(h.Z, { pip: !0, standalone: !0, style: f.badgePip, textColor: "red500", unreadCountLabel: w, withBorder: !1 }) : null));
+                    const { Icon: e, "aria-label": d, badgeCount: a, badgePip: n, children: r, color: l, isActive: u, isCompact: s, isPillLink: c, isRoundedRect: b, isWebRedesign: D, retainScrollPosition: M, style: g, to: _ } = this.props,
+                        { location: B } = this.state,
+                        v = _ ? this._getMemoizedLink(_, M) : void 0,
+                        P = u ? u(_) : B?.pathname === v?.pathname,
+                        k = m.Z.generate({ backgroundColor: "transparent", color: i.default.theme.colors.text, insetFocusRing: !0 }),
+                        C = D ? "medium" : P ? "bold" : "medium";
+                    return o.createElement(S.Z, { "aria-label": d, "aria-selected": P, focusable: !!P, interactiveStyles: k, link: v, onPress: this._handleClick, ref: this._setRef, role: "tab", style: [c ? f.pill : f.link, c && P ? f.active : null, s ? (c ? f.compactPill : f.compactLink) : null, b ? f.roundedRect : null, g], withoutInteractiveStyles: D || c }, ({ isFocused: d, isHovered: u }) => o.createElement(t.Z, { style: c && f.flexGrow }, o.createElement(p.ZP, { size: D ? "headline2" : void 0, style: [f.text, { color: this._getTextColor(P, u, D, c) }, s && f.compactText, D && d && f.focusedText], weight: C }, e && o.createElement(e, { style: f.icon }), r, D || c ? null : o.createElement(t.Z, { style: P && [f.border, { backgroundColor: i.default.theme.colors[l] }] })), a ? o.createElement(h.Z, { count: a, standalone: !0, style: [f.badge, a >= 10 && f.multiDigitBadge, a >= 20 && f.truncatedCountBadge], truncatedCountFormatter: y, unreadCountLabel: A, withBorder: !1 }) : n ? o.createElement(h.Z, { pip: !0, standalone: !0, style: f.badgePip, textColor: "red500", unreadCountLabel: w, withBorder: !1 }) : null));
                 }
             }
             (M.contextType = D.Z), (M.defaultProps = { children: [], color: "primary", retainScrollPosition: !0 });
@@ -1377,8 +1373,8 @@
                 })),
                 g = M,
                 _ = i.default.create((e) => ({ segmentedControl: { borderBottomWidth: e.borderWidths.small, borderBottomStyle: "solid", borderBottomColor: e.colors.borderColor }, leftAligned: { alignContent: "start", justifyContent: "start" }, flexGrow: { flexGrow: 1 }, gap: { gap: e.spaces.space8 }, linkRedesign: { paddingHorizontal: e.spaces.space12, alignItems: "start", minWidth: e.spaces.space24 }, firstLinkRedesign: { paddingStart: e.spaces.space16 }, withNoPaddingStart: { paddingStart: 0 } })),
-                v = ({ alignFirstItem: e, "aria-label": d, isCompact: a, isPillLink: i, isRoundedRect: t, links: s, style: c, visibleItemIndex: u }) => {
-                    const b = s
+                B = ({ alignFirstItem: e, "aria-label": d, isCompact: a, isPillLink: i, isRoundedRect: t, links: u, style: s, visibleItemIndex: c }) => {
+                    const b = u
                             .filter(Boolean)
                             .map((e) => e.key)
                             .join("-"),
@@ -1386,15 +1382,15 @@
                         h = p() && !i,
                         D = o.useMemo(
                             () =>
-                                s.filter(Boolean).map(({ label: d, viewType: r, ...l }, s) => {
-                                    const c = h ? [_.linkRedesign, 0 === s && _.firstLinkRedesign, e && 0 === s && _.withNoPaddingStart] : void 0;
-                                    return o.createElement(g, (0, n.Z)({ viewType: r }, l, { isCompact: a, isPillLink: i, isRoundedRect: t, isWebRedesign: h, style: c }), d);
+                                u.filter(Boolean).map(({ label: d, viewType: r, ...l }, u) => {
+                                    const s = h ? [_.linkRedesign, 0 === u && _.firstLinkRedesign, e && 0 === u && _.withNoPaddingStart] : void 0;
+                                    return o.createElement(g, (0, n.Z)({ viewType: r }, l, { isCompact: a, isPillLink: i, isRoundedRect: t, isWebRedesign: h, style: s }), d);
                                 }),
-                            [e, a, i, t, h, s],
+                            [e, a, i, t, h, u],
                         );
-                    return o.createElement(r.Z, { "aria-label": d, buttonsContainerStyle: i && _.gap, childrenStyle: !h && _.flexGrow, key: b, style: [i ? null : _.segmentedControl, h && _.leftAligned, c], visibleItemIndex: u }, D);
+                    return o.createElement(r.Z, { "aria-label": d, buttonsContainerStyle: i && _.gap, childrenStyle: !h && _.flexGrow, key: b, style: [i ? null : _.segmentedControl, h && _.leftAligned, s], visibleItemIndex: c }, D);
                 };
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Notifications.6556917a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Notifications.67194daa.js.map

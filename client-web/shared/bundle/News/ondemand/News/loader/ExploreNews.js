@@ -156,22 +156,25 @@
         },
         695356: (e, t, n) => {
             function a(e, t) {
-                l(e)({ element: "news-open-article", action: "click", data: { event_info: JSON.stringify(t) } });
+                c(e)({ element: "news-open-article", action: "click", data: { event_info: JSON.stringify(t) } });
             }
             function o(e, t) {
-                l(e)({ element: "news-article-card-impression", action: "view", data: { impression_id: t.articleId } });
+                c(e)({ element: "news-article-card", action: "impression", data: { impression_id: t.articleId } });
             }
             function r(e, t) {
-                l(e)({ element: "news-page-session-duration", action: "focus", data: { duration_ms: t.durationMs, url: t.url, event_info: t.sessionId } });
+                c(e)({ element: "news-article-sentiment", action: "impression", data: { impression_id: t.articleId } });
             }
             function i(e, t) {
-                l(e)({ element: "news-open-post-source", action: "click", data: { event_info: JSON.stringify(t) } });
+                c(e)({ element: "news-page-session-duration", action: "focus", data: { duration_ms: t.durationMs, url: t.url, event_info: t.sessionId } });
             }
             function s(e, t) {
-                l(e)({ element: "news-article-section-impression", action: "view", data: { impression_id: t.articleId, event_info: JSON.stringify({ sectionIdx: t.sectionIdx, totalNumSections: t.totalNumSections }) } });
+                c(e)({ element: "news-open-post-source", action: "click", data: { event_info: JSON.stringify(t) } });
             }
-            n.d(t, { E7: () => r, Ib: () => a, U8: () => i, _$: () => o, xi: () => s });
-            const l = (e) => (t) => {
+            function l(e, t) {
+                c(e)({ element: "news-article-section", action: "impression", data: { impression_id: t.articleId, event_info: JSON.stringify({ sectionIdx: t.sectionIdx, totalNumSections: t.totalNumSections }) } });
+            }
+            n.d(t, { E7: () => i, Ib: () => a, U8: () => s, XB: () => r, _$: () => o, xi: () => l });
+            const c = (e) => (t) => {
                 e.scribe({ ...t, data: { url: window.location.href, ...t.data } });
             };
         },
@@ -297,9 +300,9 @@
                 l = n(448301),
                 c = n(206411);
             function d({ isLive: e, style: t, textStyle: n, timestamp: i }) {
-                return a.createElement(o.Z, { style: [m.container, t] }, e ? a.createElement(c.Z, null) : a.createElement(s.default, { style: m.icon }), a.createElement(r.ZP, { style: [m.date, n] }, `Last updated ${(0, l.pi)(new Date(Number(i)), !0)}`));
+                return a.createElement(o.Z, { style: [m.container, t] }, e ? a.createElement(c.Z, null) : a.createElement(s.default, { style: m.icon }), a.createElement(r.ZP, { style: [m.date, n] }, `Updated ${(0, l.pi)(new Date(Number(i)), !0)}`));
             }
-            const m = i.default.create((e) => ({ container: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space4, color: e.colors.gray700 }, date: { color: "inherit", fontSize: e.fontSizes.subtext2 }, icon: { color: "inherit", width: e.spaces.space12, height: e.spaces.space12 } }));
+            const m = i.default.create((e) => ({ container: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space4, color: e.colors.gray700 }, date: { color: "inherit", fontSize: e.fontSizes.subtext2, lineHeight: e.fontSizes.subtext2 }, icon: { color: "inherit", width: e.spaces.space12, height: e.spaces.space12 } }));
         },
         206411: (e, t, n) => {
             n.d(t, { Z: () => c });
@@ -369,26 +372,29 @@
                 s = n(731708),
                 l = n(154003),
                 c = n(757483),
-                d = n(125363),
-                m = n(390387),
-                u = n(246728),
-                p = n(807896),
-                h = n(18205),
-                y = n(632908),
-                f = n(755484),
-                g = n(725556),
-                b = n(103131),
-                C = n(735081),
-                x = n(663004),
-                v = n(815045),
-                w = n(194504),
-                k = n(187669),
-                E = n(949626);
-            function S(e, t) {
+                d = n(306677),
+                m = n(725405),
+                u = n(125363),
+                p = n(390387),
+                h = n(246728),
+                y = n(695356),
+                f = n(807896),
+                g = n(18205),
+                b = n(632908),
+                C = n(755484),
+                x = n(725556),
+                v = n(103131),
+                w = n(735081),
+                k = n(663004),
+                E = n(815045),
+                S = n(194504),
+                Z = n(187669),
+                _ = n(949626);
+            function P(e, t) {
                 const { timeZone: n } = window.Intl.DateTimeFormat().resolvedOptions();
                 return new Intl.DateTimeFormat("en-US", { month: t && t.month ? "short" : void 0, day: t && t.day ? "numeric" : void 0, hour: t && t.hour ? "numeric" : void 0, minute: t && t.minute ? "numeric" : void 0, year: t && t.year ? "numeric" : void 0, timeZoneName: t && t.timeZoneName ? "short" : void 0, timeZone: t && t.timeZoneName ? n : void 0 }).format(e);
             }
-            function Z({ active: e, label: t, payload: n }) {
+            function D({ active: e, label: t, payload: n }) {
                 if ((a.useEffect(() => {}, []), e && n && n.length)) {
                     const e = [];
                     n.forEach((t) => {
@@ -396,39 +402,37 @@
                         e.push({ label: t.payload[`${n}-label`], percentage: Number(t.payload[`${n}-value`]), color: t.payload[`${n}-color`], postId: t.payload[`${n}-post`], numPosts: Number(t.payload[`${n}-num-posts`]) });
                     });
                     const t = n[0].payload.timestamp,
-                        r = S(new Date(t), { year: !0, month: !0, day: !0, hour: !0, minute: !0 }),
+                        r = P(new Date(t), { year: !0, month: !0, day: !0, hour: !0, minute: !0 }),
                         i = e.sort((e, t) => t.percentage - e.percentage);
                     return a.createElement(
                         o.Z,
-                        { style: _.tooltip },
-                        a.createElement(s.ZP, { style: _.tooltipDate }, r),
+                        { style: I.tooltip },
+                        a.createElement(s.ZP, { style: I.tooltipDate }, r),
                         a.createElement(
                             o.Z,
-                            { style: _.percentages },
+                            { style: I.percentages },
                             i.map((e) => {
                                 const t = `${e.percentage}%`;
-                                return a.createElement(o.Z, { key: e.label, style: _.tooltipType }, a.createElement(o.Z, { style: { ..._.tooltipTypeColor, backgroundColor: e.color } }), a.createElement(s.ZP, { style: _.tooltipTypeLabel, weight: "bold" }, e.label), a.createElement(o.Z, null), a.createElement(s.ZP, { style: _.tooltipValue }, t), a.createElement(s.ZP, { style: _.tooltipDate }, `(${e.numPosts} post${e.numPosts > 1 ? "s" : ""})`));
+                                return a.createElement(o.Z, { key: e.label, style: I.tooltipType }, a.createElement(o.Z, { style: { ...I.tooltipTypeColor, backgroundColor: e.color } }), a.createElement(s.ZP, { style: I.tooltipTypeLabel, weight: "bold" }, e.label), a.createElement(o.Z, null), a.createElement(s.ZP, { style: I.tooltipValue }, t), a.createElement(s.ZP, { style: I.tooltipDate }, `(${e.numPosts} post${e.numPosts > 1 ? "s" : ""})`));
                             }),
                         ),
                     );
                 }
                 return null;
             }
-            const _ = r.default.create((e) => ({ tooltip: { backgroundColor: e.colors.gray100, borderRadius: e.borderRadii.medium, padding: e.spaces.space8, display: "flex", flexDirection: "column", alignItems: "flex-start", gap: e.spaces.space8, fontSize: e.fontSizes.subtext3, lineHeight: e.fontSizes.subtext3 }, percentages: { display: " flex", flexDirection: "column", alignItems: "flex-start", gap: e.spaces.space8 }, tooltipType: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space4 }, tooltipTypeColor: { width: e.spaces.space8, height: e.spaces.space8, borderRadius: e.spaces.space8 }, tooltipTypeLabel: { fontSize: "inherit", lineHeight: "inherit" }, tooltipValue: { fontSize: "inherit", lineHeight: "inherit" }, tooltipDate: { color: e.colors.gray700, fontSize: "inherit", lineHeight: "inherit" } }));
-            var P = n(818199),
-                D = n(823161),
-                I = n(725405),
-                z = n(836255),
-                T = n(695356),
-                M = n(931173);
-            function $({ cx: e, cy: t, postId: n }) {
-                const o = (0, I.Z)(),
-                    r = a.useMemo(() => z.Z.createHydratorForTweet(n), [n]),
-                    s = (0, d.v9)(r);
+            const I = r.default.create((e) => ({ tooltip: { backgroundColor: e.colors.gray100, borderRadius: e.borderRadii.medium, padding: e.spaces.space8, display: "flex", flexDirection: "column", alignItems: "flex-start", gap: e.spaces.space8, fontSize: e.fontSizes.subtext3, lineHeight: e.fontSizes.subtext3 }, percentages: { display: " flex", flexDirection: "column", alignItems: "flex-start", gap: e.spaces.space8 }, tooltipType: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space4 }, tooltipTypeColor: { width: e.spaces.space8, height: e.spaces.space8, borderRadius: e.spaces.space8 }, tooltipTypeLabel: { fontSize: "inherit", lineHeight: "inherit" }, tooltipValue: { fontSize: "inherit", lineHeight: "inherit" }, tooltipDate: { color: e.colors.gray700, fontSize: "inherit", lineHeight: "inherit" } }));
+            var z = n(818199),
+                T = n(823161),
+                M = n(836255),
+                $ = n(931173);
+            function R({ cx: e, cy: t, postId: n }) {
+                const o = (0, m.Z)(),
+                    r = a.useMemo(() => M.Z.createHydratorForTweet(n), [n]),
+                    s = (0, u.v9)(r);
                 if (!s) return null;
                 const { user: l } = s,
                     c = () => {
-                        (0, T.U8)(o, { postId: n });
+                        (0, y.U8)(o, { postId: n });
                     };
                 return a.createElement(
                     "g",
@@ -437,51 +441,51 @@
                         "foreignObject",
                         { height: 40, width: 40, x: e - 20, y: t - 20 },
                         a.createElement(
-                            P.Z,
-                            { renderContent: () => a.createElement(M.Z, { containerStyle: R.referencePostContainer, isPreview: !0, numberOfLines: 3, onClick: c, postId: n }), wrapperStyle: R.referenceHoverWrapper },
+                            z.Z,
+                            { renderContent: () => a.createElement($.Z, { containerStyle: N.referencePostContainer, isPreview: !0, numberOfLines: 3, onClick: c, postId: n }), wrapperStyle: N.referenceHoverWrapper },
                             a.createElement(
                                 i.Z,
                                 {
                                     onClick: () => {
                                         c(), window.open(`https://x.com${s.permalink}`, "_blank");
                                     },
-                                    style: R.referenceDotPost,
+                                    style: N.referenceDotPost,
                                     withoutInteractiveStyles: !0,
                                 },
-                                ({ isHovered: e }) => a.createElement(D.default, { screenName: l?.screen_name, shape: "circle", size: "small", style: [R.userAvatar, e ? R.hoveredUserAvatar : void 0], uri: l?.profile_image_url_https, withLink: !1 }),
+                                ({ isHovered: e }) => a.createElement(T.default, { screenName: l?.screen_name, shape: "circle", size: "small", style: [N.userAvatar, e ? N.hoveredUserAvatar : void 0], uri: l?.profile_image_url_https, withLink: !1 }),
                             ),
                         ),
                     ),
                 );
             }
-            const R = r.default.create((e) => ({ referenceHoverWrapper: { width: "100%", height: "100%" }, referencePostContainer: { width: 300 }, referenceDotPost: { display: "flex", justifyContent: "center", alignItems: "center", width: "100%", height: "100%" }, userAvatar: { transition: "all 0.2s ease", transform: "scale(1)", animationDuration: "0.3s", animationKeyframes: [{ "0%": { opacity: 0, transform: "scale(0.8)" }, "60%": { opacity: 1, transform: "scale(1.2)" }, "100%": { opacity: 1, transform: "scale(1)" } }], animationTimingFunction: "ease-out" }, hoveredUserAvatar: { cursor: "pointer", transform: "scale(1.2)" } })),
-                N = "news-sentiment-recharts";
+            const N = r.default.create((e) => ({ referenceHoverWrapper: { width: "100%", height: "100%" }, referencePostContainer: { width: 300 }, referenceDotPost: { display: "flex", justifyContent: "center", alignItems: "center", width: "100%", height: "100%" }, userAvatar: { transition: "all 0.2s ease", transform: "scale(1)", animationDuration: "0.3s", animationKeyframes: [{ "0%": { opacity: 0, transform: "scale(0.8)" }, "60%": { opacity: 1, transform: "scale(1.2)" }, "100%": { opacity: 1, transform: "scale(1)" } }], animationTimingFunction: "ease-out" }, hoveredUserAvatar: { cursor: "pointer", transform: "scale(1.2)" } })),
+                B = "news-sentiment-recharts";
             function L({ chartData: e, isBlurred: t, typeMetadata: n }) {
                 const [l, d] = a.useState({}),
                     m = `line-chart-${Object.keys(l).join("-")}`,
                     u = t ? 100 : 200;
-                (0, k.q)(() => {
-                    if (document.getElementById(N)) return;
+                (0, Z.q)(() => {
+                    if (document.getElementById(B)) return;
                     const e = document.createElement("style");
-                    e.setAttribute("id", N), (e.textContent = `\n      .${N} .recharts-responsive-container {\n        width: 102% !important;\n      }\n\n      .${N} .recharts-surface {\n        overflow: visible;\n      }\n    `);
+                    e.setAttribute("id", B), (e.textContent = `\n      .${B} .recharts-responsive-container {\n        width: 102% !important;\n      }\n\n      .${B} .recharts-surface {\n        overflow: visible;\n      }\n    `);
                     const t = document.head;
                     return (
                         t && t.appendChild(e),
                         () => {
-                            const e = document.getElementById(N);
+                            const e = document.getElementById(B);
                             e && e.remove();
                         }
                     );
                 });
-                const _ = a.useCallback(
+                const p = a.useCallback(
                         (e) => {
                             const t = { ...l };
                             l[e] ? delete t[e] : (t[e] = !0), d(t);
                         },
                         [l],
                     ),
-                    P = a.useCallback((e) => S(new Date(e), { month: !0, day: !0, hour: !0 }), []),
-                    D = Object.keys(l),
+                    h = a.useCallback((e) => P(new Date(e), { month: !0, day: !0, hour: !0 }), []),
+                    y = Object.keys(l),
                     I = a.useMemo(() => {
                         if (!e.length) return [];
                         const t = [];
@@ -492,58 +496,59 @@
                                     const e = Number(o.split("-post")[0]),
                                         r = Object.values(n).find((t) => t.idx === e)?.label || "",
                                         i = a[o].toString();
-                                    (D.length && !l[r]) || !i || t.push({ timestamp: a.timestamp, value: Number(a[`${e}-value`]), type: r || "", postId: i });
+                                    (y.length && !l[r]) || !i || t.push({ timestamp: a.timestamp, value: Number(a[`${e}-value`]), type: r || "", postId: i });
                                 }
                         }
                         return t;
-                    }, [e, n, D, l]);
+                    }, [e, n, y, l]);
                 return a.createElement(
                     o.Z,
-                    { style: [B.container, t ? B.blur : void 0] },
+                    { style: [H.container, t ? H.blur : void 0] },
                     a.createElement(
-                        w.Z,
-                        { buttonsContainerStyle: B.typesContent, style: B.types },
+                        S.Z,
+                        { buttonsContainerStyle: H.typesContent, style: H.types },
                         Object.keys(n).map((e) => {
                             const t = n[e];
-                            return a.createElement(i.Z, { key: `${e}-toggle`, onClick: () => _(e), withoutInteractiveStyles: !0 }, ({ isHovered: n }) => a.createElement(o.Z, { style: [B.typeContainer, { backgroundColor: c.Z.hexToCss(t.color, 0.5), color: t.color }, n ? { backgroundColor: c.Z.hexToCss(t.color, 0.3) } : void 0, D.length > 0 && !D.includes(e) ? { opacity: 0.5 } : void 0] }, a.createElement(s.ZP, { style: B.type }, t.label)));
+                            return a.createElement(i.Z, { key: `${e}-toggle`, onClick: () => p(e), withoutInteractiveStyles: !0 }, ({ isHovered: n }) => a.createElement(o.Z, { style: [H.typeContainer, { backgroundColor: c.Z.hexToCss(t.color, 0.5), color: t.color }, n ? { backgroundColor: c.Z.hexToCss(t.color, 0.3) } : void 0, y.length > 0 && !y.includes(e) ? { opacity: 0.5 } : void 0] }, a.createElement(s.ZP, { style: H.type }, t.label)));
                         }),
                     ),
                     a.createElement(
                         o.Z,
-                        { style: B.lineChart },
+                        { style: H.lineChart },
                         a.createElement(
-                            E.Z,
-                            { className: N },
+                            _.Z,
+                            { className: B },
                             a.createElement(
-                                h.h,
+                                g.h,
                                 { height: u },
                                 a.createElement(
-                                    y.w,
+                                    b.w,
                                     { data: e, height: u, key: m },
-                                    a.createElement(f.q, { fillOpacity: 0.6, horizontal: !0, stroke: r.default.theme.colors.hoverBlack, strokeDasharray: "1 0", vertical: !1 }),
-                                    a.createElement(g.K, { axisLine: !1, dataKey: "timestamp", domain: ["dataMin", "dataMax"], tick: B.tick, tickFormatter: P, tickLine: !1, type: "number" }),
-                                    a.createElement(b.B, { axisLine: !1, domain: [0, 100], orientation: "right", tick: B.tick, tickFormatter: (e) => `${e}%`, tickLine: !1 }),
-                                    a.createElement(C.u, { content: a.createElement(Z, null), cursor: { stroke: r.default.theme.colors.gray200, strokeDasharray: "1 0" }, isAnimationActive: !1 }),
-                                    Object.keys(n).map((e) => (l[e] || 0 === D.length ? a.createElement(x.x, { activeDot: !0, connectNulls: !0, dataKey: `${n[e].idx}-value`, dot: !1, isAnimationActive: !1, key: `line-chart-${e}`, stroke: n[e].color, strokeWidth: 2, type: "monotone" }) : null)),
-                                    I.map((e) => a.createElement(v.q, { alwaysShow: !0, isFront: !0, key: `reference-post-${e.postId}`, shape: (t) => a.createElement($, (0, p.Z)({}, t, { postId: e.postId })), x: e.timestamp, y: e.value })),
+                                    a.createElement(C.q, { fillOpacity: 0.6, horizontal: !0, stroke: r.default.theme.colors.hoverBlack, strokeDasharray: "1 0", vertical: !1 }),
+                                    a.createElement(x.K, { axisLine: !1, dataKey: "timestamp", domain: ["dataMin", "dataMax"], tick: H.tick, tickFormatter: h, tickLine: !1, type: "number" }),
+                                    a.createElement(v.B, { axisLine: !1, domain: [0, 100], orientation: "right", tick: H.tick, tickFormatter: (e) => `${e}%`, tickLine: !1 }),
+                                    a.createElement(w.u, { content: a.createElement(D, null), cursor: { stroke: r.default.theme.colors.gray200, strokeDasharray: "1 0" }, isAnimationActive: !1 }),
+                                    Object.keys(n).map((e) => (l[e] || 0 === y.length ? a.createElement(k.x, { activeDot: !0, connectNulls: !0, dataKey: `${n[e].idx}-value`, dot: !1, isAnimationActive: !1, key: `line-chart-${e}`, stroke: n[e].color, strokeWidth: 2, type: "monotone" }) : null)),
+                                    I.map((e) => a.createElement(E.q, { alwaysShow: !0, isFront: !0, key: `reference-post-${e.postId}`, shape: (t) => a.createElement(R, (0, f.Z)({}, t, { postId: e.postId })), x: e.timestamp, y: e.value })),
                                 ),
                             ),
                         ),
                     ),
                 );
             }
-            const B = r.default.create((e) => ({ container: { width: "100%" }, blur: { filter: "blur(5px)" }, types: { width: "100%" }, typesContent: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space8, marginVertical: e.spaces.space12 }, typeContainer: { width: "max-content", display: "flex", justifyContent: "center", alignItems: "center", paddingVertical: e.spaces.space4, paddingHorizontal: e.spaces.space8, borderRadius: e.borderRadii.xLarge, transition: "all 0.2s ease" }, type: { fontSize: e.fontSizes.subtext2 }, lineChart: { flex: 1, marginTop: e.spaces.space16 }, tick: { fontSize: e.fontSizes.subtext3, lineHeight: e.fontSizes.subtext3, color: e.colors.gray900, fontFamily: e.fontFamilies.normal } })),
-                H = [r.default.theme.colors.blue300, r.default.theme.colors.yellow300, r.default.theme.colors.orange300, r.default.theme.colors.green300, r.default.theme.colors.magenta300, r.default.theme.colors.plum300, r.default.theme.colors.red300, r.default.theme.colors.purple300, r.default.theme.colors.teal300];
-            const O = "What do people think?";
-            function A({ containerStyle: e, hoveredContainerStyle: t, onClick: n, percentageScoreContainerStyle: c, percentageScoreStyle: p, questionStyle: h, sentiment: y, showPercentages: f, style: g, typeStyle: b }) {
-                const C = (0, d.v9)(m.Qb),
-                    { chartData: x, typeMetadata: v } = (function ({ sentiment: e }) {
+            const H = r.default.create((e) => ({ container: { width: "100%" }, blur: { filter: "blur(5px)" }, types: { width: "100%" }, typesContent: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space8, marginVertical: e.spaces.space12 }, typeContainer: { width: "max-content", display: "flex", justifyContent: "center", alignItems: "center", paddingVertical: e.spaces.space4, paddingHorizontal: e.spaces.space8, borderRadius: e.borderRadii.xLarge, transition: "all 0.2s ease" }, type: { fontSize: e.fontSizes.subtext2 }, lineChart: { flex: 1, marginTop: e.spaces.space16 }, tick: { fontSize: e.fontSizes.subtext3, lineHeight: e.fontSizes.subtext3, color: e.colors.gray900, fontFamily: e.fontFamilies.normal } })),
+                O = [r.default.theme.colors.blue300, r.default.theme.colors.yellow300, r.default.theme.colors.orange300, r.default.theme.colors.green300, r.default.theme.colors.magenta300, r.default.theme.colors.plum300, r.default.theme.colors.red300, r.default.theme.colors.purple300, r.default.theme.colors.teal300];
+            const F = "What do people think?";
+            function A({ articleId: e, containerStyle: t, hoveredContainerStyle: n, onClick: c, percentageScoreContainerStyle: f, percentageScoreStyle: g, questionStyle: b, sentiment: C, showPercentages: x, style: v, typeStyle: w }) {
+                const k = (0, m.Z)(),
+                    E = (0, u.v9)(p.Qb),
+                    { chartData: S, typeMetadata: Z } = (function ({ sentiment: e }) {
                         return a.useMemo(() => {
                             const t = {},
                                 n = {};
                             return (
                                 e.sentiment_types.forEach((t, a) => {
-                                    n[t] = { idx: a, label: t, color: H[a % e.sentiment_types.length] };
+                                    n[t] = { idx: a, label: t, color: O[a % e.sentiment_types.length] };
                                 }),
                                 [...(e.sentiment_scores ?? [])].forEach((e) => {
                                     const a = Number(e.timestamp),
@@ -553,49 +558,53 @@
                                 { chartData: Object.values(t).sort((e, t) => e.timestamp - t.timestamp), typeMetadata: n }
                             );
                         }, [e]);
-                    })({ sentiment: y }),
-                    { isCompactLayout: w } = (0, u.Z)(),
-                    k = a.useMemo(() => {
-                        if (!x.length) return [];
-                        const e = x[x.length - 1],
+                    })({ sentiment: C }),
+                    { isCompactLayout: _ } = (0, h.Z)(),
+                    P = a.useMemo(() => {
+                        if (!S.length) return [];
+                        const e = S[S.length - 1],
                             t = [];
                         return (
-                            Object.keys(v).forEach((n) => {
-                                const a = `${v[n].idx}-value`,
-                                    o = `${v[n].idx}-num-posts`;
-                                void 0 !== e[a] && t.push({ type: n, value: Number(e[a]), color: v[n].color, numPosts: Number(e[o]) });
+                            Object.keys(Z).forEach((n) => {
+                                const a = `${Z[n].idx}-value`,
+                                    o = `${Z[n].idx}-num-posts`;
+                                void 0 !== e[a] && t.push({ type: n, value: Number(e[a]), color: Z[n].color, numPosts: Number(e[o]) });
                             }),
                             t
                         );
-                    }, [x, v]);
-                if (!x.length) return null;
-                if (f && k.length > 0) {
-                    const l = 3,
-                        d = {},
-                        m = [...k].sort((e, t) => t.value - e.value),
+                    }, [S, Z]),
+                    D = a.useCallback(() => {
+                        (0, y.XB)(k, { articleId: e });
+                    }, [e, k]);
+                if (!S.length) return null;
+                if (x && P.length > 0) {
+                    const e = 3,
+                        l = {},
+                        m = [...P].sort((e, t) => t.value - e.value),
                         u = [r.default.theme.colors.blue700, r.default.theme.colors.blue500, r.default.theme.colors.blue300];
                     m.forEach((e, t) => {
-                        d[e.value] = u[t];
+                        l[e.value] = u[t];
                     });
-                    const f = k.slice(0, l),
-                        C = f.reduce((e, t) => e + t.numPosts, 0);
-                    return a.createElement(i.Z, { interactive: !!n, onClick: n, style: [F.interactivePercentageContainer, w ? F.compactInteractivePercentageContainer : void 0, e], withoutInteractiveStyles: !0 }, ({ isHovered: e }) =>
+                    const p = P.slice(0, e),
+                        h = p.reduce((e, t) => e + t.numPosts, 0);
+                    return a.createElement(i.Z, { interactive: !!c, onClick: c, style: [W.interactivePercentageContainer, _ ? W.compactInteractivePercentageContainer : void 0, t], withoutInteractiveStyles: !0 }, ({ isHovered: e }) =>
                         a.createElement(
                             o.Z,
-                            { style: [F.percentagesContainer, w ? F.compactPercentagesContainer : void 0, e && n ? F.hoveredPercentagesContainer : void 0, g, e && n && t] },
-                            a.createElement(s.ZP, { style: [F.percentageQuestion, h] }, y.question),
+                            { style: [W.percentagesContainer, _ ? W.compactPercentagesContainer : void 0, e && c ? W.hoveredPercentagesContainer : void 0, v, e && c && n] },
+                            a.createElement(d.D, { id: "news_article_sentiment", onFullyVisible: D, position: "top", testID: "news_article_sentiment" }),
+                            a.createElement(s.ZP, { style: [W.percentageQuestion, b] }, C.question),
                             a.createElement(
                                 o.Z,
-                                { style: [F.percentageScoresContainer, w ? F.compactPercentageScoresContainer : void 0, c] },
-                                f.map((e) => a.createElement(o.Z, { key: `score-${e.type}`, style: F.percentageScore }, a.createElement(s.ZP, { style: [F.percentageType, b] }, e.type), a.createElement(s.ZP, { style: [F.percentagePercentage, { color: d[e.value] }, p], weight: "bold" }, `${e.value}%`))),
+                                { style: [W.percentageScoresContainer, _ ? W.compactPercentageScoresContainer : void 0, f] },
+                                p.map((e) => a.createElement(o.Z, { key: `score-${e.type}`, style: W.percentageScore }, a.createElement(s.ZP, { style: [W.percentageType, w] }, e.type), a.createElement(s.ZP, { style: [W.percentagePercentage, { color: l[e.value] }, g], weight: "bold" }, `${e.value}%`))),
                             ),
-                            a.createElement(s.ZP, { style: F.percentageTotalPosts, weight: "normal" }, `${C} posts`),
+                            a.createElement(s.ZP, { style: W.percentageTotalPosts, weight: "normal" }, `${h} posts`),
                         ),
                     );
                 }
-                return a.createElement(o.Z, { style: [F.container, g] }, a.createElement(o.Z, { style: F.headerContainer }, a.createElement(o.Z, { style: F.questionContainer }, a.createElement(s.ZP, { style: F.title, weight: "bold" }, O), a.createElement(s.ZP, { style: F.question }, y.question))), a.createElement(o.Z, { style: F.visibilityContainer }, a.createElement(L, { chartData: x, isBlurred: !C, typeMetadata: v }), !C && a.createElement(o.Z, { style: F.loggedOutContainer }, a.createElement(l.ZP, { backgroundColor: "gray50", borderColor: "transparent", link: "/login" }, "Login to view"))));
+                return a.createElement(o.Z, { style: [W.container, v] }, a.createElement(o.Z, { style: W.headerContainer }, a.createElement(o.Z, { style: W.questionContainer }, a.createElement(s.ZP, { style: W.title, weight: "bold" }, F), a.createElement(s.ZP, { style: W.question }, C.question))), a.createElement(o.Z, { style: W.visibilityContainer }, a.createElement(L, { chartData: S, isBlurred: !E, typeMetadata: Z }), !E && a.createElement(o.Z, { style: W.loggedOutContainer }, a.createElement(l.ZP, { backgroundColor: "gray50", borderColor: "transparent", link: "/login" }, "Login to view"))));
             }
-            const F = r.default.create((e) => ({ interactivePercentageContainer: { flex: 1 }, compactInteractivePercentageContainer: { width: "100%", flex: 1 }, percentagesContainer: { padding: e.spaces.space12, backgroundColor: "transparent", borderRadius: e.borderRadii.medium, borderStyle: "solid", borderWidth: 1, borderColor: e.colors.gray100, width: "100%", display: "flex", flexDirection: "column", transition: "background-color 0.2s ease", gap: e.spaces.space8 }, compactPercentagesContainer: { width: "100%" }, hoveredPercentagesContainer: { backgroundColor: e.colors.gray50, cursor: "pointer" }, percentageQuestion: { color: e.colors.gray700, fontSize: e.fontSizes.subtext1 }, percentageScoresContainer: { display: "flex", flexDirection: "row", gap: e.spaces.space32, width: "100%", maxWidth: "100%" }, compactPercentageScoresContainer: { width: "100%", gap: "unset", justifyContent: "space-between" }, percentageScore: { display: "flex", flexDirection: "column" }, percentageType: { color: e.colors.gray700, fontSize: e.fontSizes.subtext1 }, percentagePercentage: { fontSize: e.fontSizes.title4 }, percentageTotalPosts: { color: e.colors.gray700, fontSize: e.fontSizes.subtext2 }, container: { width: "100%", padding: e.spaces.space16, backgroundColor: e.colors.gray0, transition: "background-color 0.2s ease", borderRadius: e.borderRadii.medium, borderStyle: "solid", borderWidth: 1, borderColor: e.colors.gray200 }, hoveredContainer: { backgroundColor: e.colors.gray400, cursor: "pointer" }, headerContainer: { display: "flex", flexDirection: "row", width: "100%", gap: e.spaces.space16 }, questionContainer: { display: "flex", flexDirection: "column", gap: e.spaces.space8, width: "100%" }, title: {}, question: {}, visibilityContainer: { position: "relative" }, loggedOutContainer: { position: "absolute", start: 0, top: 0, width: "100%", height: "100%", backgroundColor: c.Z.hexToCss(e.colors.gray0, 0.5), display: "flex", justifyContent: "center", alignItems: "center" } }));
+            const W = r.default.create((e) => ({ interactivePercentageContainer: { flex: 1 }, compactInteractivePercentageContainer: { width: "100%", flex: 1 }, percentagesContainer: { padding: e.spaces.space12, backgroundColor: "transparent", borderRadius: e.borderRadii.medium, borderStyle: "solid", borderWidth: 1, borderColor: e.colors.gray100, width: "100%", display: "flex", flexDirection: "column", transition: "background-color 0.2s ease", gap: e.spaces.space8 }, compactPercentagesContainer: { width: "100%" }, hoveredPercentagesContainer: { backgroundColor: e.colors.gray50, cursor: "pointer" }, percentageQuestion: { color: e.colors.gray700, fontSize: e.fontSizes.subtext1 }, percentageScoresContainer: { display: "flex", flexDirection: "row", gap: e.spaces.space32, width: "100%", maxWidth: "100%" }, compactPercentageScoresContainer: { width: "100%", gap: "unset", justifyContent: "space-between" }, percentageScore: { display: "flex", flexDirection: "column" }, percentageType: { color: e.colors.gray700, fontSize: e.fontSizes.subtext1 }, percentagePercentage: { fontSize: e.fontSizes.title4 }, percentageTotalPosts: { color: e.colors.gray700, fontSize: e.fontSizes.subtext2 }, container: { width: "100%", padding: e.spaces.space16, backgroundColor: e.colors.gray0, transition: "background-color 0.2s ease", borderRadius: e.borderRadii.medium, borderStyle: "solid", borderWidth: 1, borderColor: e.colors.gray200 }, hoveredContainer: { backgroundColor: e.colors.gray400, cursor: "pointer" }, headerContainer: { display: "flex", flexDirection: "row", width: "100%", gap: e.spaces.space16 }, questionContainer: { display: "flex", flexDirection: "column", gap: e.spaces.space8, width: "100%" }, title: {}, question: {}, visibilityContainer: { position: "relative" }, loggedOutContainer: { position: "absolute", start: 0, top: 0, width: "100%", height: "100%", backgroundColor: c.Z.hexToCss(e.colors.gray0, 0.5), display: "flex", justifyContent: "center", alignItems: "center" } }));
         },
         978086: (e, t, n) => {
             n.d(t, { Z: () => i });
@@ -711,4 +720,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.News~ondemand.News~loader.ExploreNews.13fb418a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.News~ondemand.News~loader.ExploreNews.ce2cac0a.js.map
