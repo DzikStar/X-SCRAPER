@@ -730,11 +730,13 @@
                 E = (0, M.p)(
                     () =>
                         Promise.all([
-                            t.e("icons.23"),
-                            t.e("icons.16"),
-                            t.e("icons.2"),
-                            t.e("icons.10"),
-                            t.e("icons.19"),
+                            t.e("icons.5"),
+                            t.e("icons.6"),
+                            t.e("icons.25"),
+                            t.e("icons.22"),
+                            t.e("icons.9"),
+                            t.e("icons.4"),
+                            t.e("icons.15"),
                             t.e("modules.common-e907d115"),
                             t.e("modules.common-e019dbda"),
                             t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
@@ -780,11 +782,13 @@
                 x = (0, M.p)(
                     () =>
                         Promise.all([
-                            t.e("icons.23"),
-                            t.e("icons.16"),
-                            t.e("icons.2"),
-                            t.e("icons.10"),
-                            t.e("icons.19"),
+                            t.e("icons.5"),
+                            t.e("icons.6"),
+                            t.e("icons.25"),
+                            t.e("icons.22"),
+                            t.e("icons.9"),
+                            t.e("icons.4"),
+                            t.e("icons.15"),
                             t.e("modules.common-e907d115"),
                             t.e("modules.common-e019dbda"),
                             t.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
@@ -998,4 +1002,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.GifSearch.7484d35a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.GifSearch.ea6ddbba.js.map

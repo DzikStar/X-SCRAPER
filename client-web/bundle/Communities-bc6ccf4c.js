@@ -3,102 +3,271 @@
     ["bundle.Communities-bc6ccf4c"],
     {
         738545: (e, t, r) => {
-            r.d(t, { ZP: () => Z });
-            var a = r(202784),
-                n = r(325686),
+            r.d(t, { ZP: () => v });
+            var n = r(202784),
+                a = r(325686),
                 o = r(674132),
-                s = r.n(o),
-                l = r(212145),
-                i = r(568320),
+                i = r.n(o),
+                s = r(212145),
+                l = r(568320),
                 c = r(123588),
                 d = r(731708),
-                m = r(280278),
-                u = r(392237),
+                u = r(280278),
+                m = r(392237),
                 p = r(635998);
-            const g = s().i2785009,
-                h = s().c778d80b,
-                y = s().d9687d23,
-                b = s().ac73eb5a,
-                f = s().c5a9f921,
+            const h = i().i2785009,
+                g = i().c778d80b,
+                f = i().d9687d23,
+                b = i().ac73eb5a,
+                y = i().c5a9f921,
                 E = (e) => {
                     const { label: t, popover: r } = e;
-                    return t ? a.createElement(n.Z, { style: S.labelBar }, a.createElement(d.ZP, { color: "gray700", size: "subtext2", weight: "medium" }, t), r ? a.createElement(p.Z, { label: t, popover: r }) : null) : null;
-                },
-                w = (e) => {
-                    const { style: t, unit: r } = e;
-                    return r ? a.createElement(d.ZP, { color: "gray700", style: [S.unitText, t], weight: "medium" }, r) : null;
+                    return t ? n.createElement(a.Z, { style: w.labelBar }, n.createElement(d.ZP, { color: "gray700", size: "subtext2", weight: "medium" }, t), r ? n.createElement(p.Z, { label: t, popover: r }) : null) : null;
                 },
                 C = (e) => {
+                    const { style: t, unit: r } = e;
+                    return r ? n.createElement(d.ZP, { color: "gray700", style: [w.unitText, t], weight: "medium" }, r) : null;
+                },
+                S = (e) => {
                     let t,
                         r,
                         { trendValue: o } = e;
-                    return void 0 === o ? null : (Math.abs(o) < 0.1 ? ((o = Math.round(1e3 * o) / 1e3), (t = h(o))) : ((o = Math.round(100 * o) / 100), (t = g(o))), (r = ((e, t) => (e < 0 ? y({ trendValueNegativePercent: t }) : 0 === e ? b : f({ trendValuePositivePercent: t })))(o, t)), o < 0 ? a.createElement(n.Z, { style: S.trendBar, testID: "trendLabel" }, a.createElement(l.default, { "aria-label": r, style: S.trendIconNeg }), a.createElement(d.ZP, { "aria-hidden": !0, color: "red500", size: "body", weight: "medium" }, t)) : 0 === o ? a.createElement(n.Z, { style: S.trendBar, testID: "trendLabel" }, a.createElement(i.default, { "aria-label": r, style: S.trendIconZero }), a.createElement(d.ZP, { "aria-hidden": !0, color: "gray700", size: "body", weight: "medium" }, t)) : a.createElement(n.Z, { style: S.trendBar, testID: "trendLabel" }, a.createElement(c.default, { "aria-label": r, style: S.trendIconPos }), a.createElement(d.ZP, { "aria-hidden": !0, color: "green500", size: "body", weight: "medium" }, t)));
+                    return void 0 === o ? null : (Math.abs(o) < 0.1 ? ((o = Math.round(1e3 * o) / 1e3), (t = g(o))) : ((o = Math.round(100 * o) / 100), (t = h(o))), (r = ((e, t) => (e < 0 ? f({ trendValueNegativePercent: t }) : 0 === e ? b : y({ trendValuePositivePercent: t })))(o, t)), o < 0 ? n.createElement(a.Z, { style: w.trendBar, testID: "trendLabel" }, n.createElement(s.default, { "aria-label": r, style: w.trendIconNeg }), n.createElement(d.ZP, { "aria-hidden": !0, color: "red500", size: "body", weight: "medium" }, t)) : 0 === o ? n.createElement(a.Z, { style: w.trendBar, testID: "trendLabel" }, n.createElement(l.default, { "aria-label": r, style: w.trendIconZero }), n.createElement(d.ZP, { "aria-hidden": !0, color: "gray700", size: "body", weight: "medium" }, t)) : n.createElement(a.Z, { style: w.trendBar, testID: "trendLabel" }, n.createElement(c.default, { "aria-label": r, style: w.trendIconPos }), n.createElement(d.ZP, { "aria-hidden": !0, color: "green500", size: "body", weight: "medium" }, t)));
                 },
-                S = u.default.create((e) => ({ dataPoint: { display: "flex", flexDirection: "column", alignItems: "flex-start" }, labelBar: { display: "flex", flexDirection: "row", alignItems: "center", marginBottom: e.spaces.space2 }, valueBar: { display: "flex", flexDirection: "row", flexWrap: "wrap", alignItems: "flex-end", marginBottom: e.spaces.space4 }, unitText: { flexDirection: "column" }, trendBar: { flexDirection: "row" }, textWithMargin: { marginEnd: e.spaces.space4 }, trendIconPos: { marginTop: e.spaces.space1, marginBottom: e.spaces.space1, marginEnd: e.spaces.space2, height: e.spaces.space16, color: e.colors.green500 }, trendIconZero: { marginTop: e.spaces.space1, marginBottom: e.spaces.space1, marginEnd: e.spaces.space2, height: e.spaces.space16, color: e.colors.gray700 }, trendIconNeg: { marginTop: e.spaces.space1, marginBottom: e.spaces.space1, marginEnd: e.spaces.space2, height: e.spaces.space16, color: e.colors.red500 } })),
-                Z = (e) => {
-                    const { animated: t, count: r, label: o, popover: s, size: l, subTextList: i, trendValue: c, unit: u, value: p } = e,
-                        g = u || void 0 !== c ? S.textWithMargin : void 0,
-                        h = void 0 !== c ? S.textWithMargin : void 0;
-                    return a.createElement(n.Z, { style: S.dataPoint }, a.createElement(E, { label: o, popover: s }), a.createElement(n.Z, { style: S.valueBar }, t ? a.createElement(m.ZP, { count: r, size: l, style: g, weight: "bold" }, p) : a.createElement(d.ZP, { size: l, style: g, weight: "bold" }, p), a.createElement(w, { style: h, unit: u }), a.createElement(C, { trendValue: c })), i);
+                w = m.default.create((e) => ({ dataPoint: { display: "flex", flexDirection: "column", alignItems: "flex-start" }, labelBar: { display: "flex", flexDirection: "row", alignItems: "center", marginBottom: e.spaces.space2 }, valueBar: { display: "flex", flexDirection: "row", flexWrap: "wrap", alignItems: "flex-end", marginBottom: e.spaces.space4 }, unitText: { flexDirection: "column" }, trendBar: { flexDirection: "row" }, textWithMargin: { marginEnd: e.spaces.space4 }, trendIconPos: { marginTop: e.spaces.space1, marginBottom: e.spaces.space1, marginEnd: e.spaces.space2, height: e.spaces.space16, color: e.colors.green500 }, trendIconZero: { marginTop: e.spaces.space1, marginBottom: e.spaces.space1, marginEnd: e.spaces.space2, height: e.spaces.space16, color: e.colors.gray700 }, trendIconNeg: { marginTop: e.spaces.space1, marginBottom: e.spaces.space1, marginEnd: e.spaces.space2, height: e.spaces.space16, color: e.colors.red500 } })),
+                v = (e) => {
+                    const { animated: t, count: r, label: o, popover: i, size: s, subTextList: l, trendValue: c, unit: m, value: p } = e,
+                        h = m || void 0 !== c ? w.textWithMargin : void 0,
+                        g = void 0 !== c ? w.textWithMargin : void 0;
+                    return n.createElement(a.Z, { style: w.dataPoint }, n.createElement(E, { label: o, popover: i }), n.createElement(a.Z, { style: w.valueBar }, t ? n.createElement(u.ZP, { count: r, size: s, style: h, weight: "bold" }, p) : n.createElement(d.ZP, { size: s, style: h, weight: "bold" }, p), n.createElement(C, { style: g, unit: m }), n.createElement(S, { trendValue: c })), l);
                 };
         },
         635998: (e, t, r) => {
-            r.d(t, { Z: () => h });
-            var a = r(202784),
-                n = r(325686),
+            r.d(t, { Z: () => g });
+            var n = r(202784),
+                a = r(325686),
                 o = r(674132),
-                s = r.n(o),
-                l = r(711223),
-                i = r(731708),
+                i = r.n(o),
+                s = r(711223),
+                l = r(731708),
                 c = r(154003),
                 d = r(157130),
-                m = r(392237);
-            const u = s().affbaf62,
-                p = s().c388d026,
-                g = m.default.create((e) => ({ popover: { padding: e.spaces.space32 }, popoverTitle: { marginBottom: e.spaces.space8 }, popoverText: { marginBottom: e.spaces.space24 }, iconInformation: { color: e.colors.gray700, fontSize: e.fontSizes.subtext3, cursor: "pointer", marginStart: e.spaces.space4 } })),
-                h = (e) => {
+                u = r(392237);
+            const m = i().affbaf62,
+                p = i().c388d026,
+                h = u.default.create((e) => ({ popover: { padding: e.spaces.space32 }, popoverTitle: { marginBottom: e.spaces.space8 }, popoverText: { marginBottom: e.spaces.space24 }, iconInformation: { color: e.colors.gray700, fontSize: e.fontSizes.subtext3, cursor: "pointer", marginStart: e.spaces.space4 } })),
+                g = (e) => {
                     const { label: t, popover: r } = e;
-                    return a.createElement(n.Z, null, a.createElement(d.Z, { enableEnterKeyToggle: !0, preferredVerticalOrientation: "up", renderContent: (e) => a.createElement(n.Z, { role: "dialog", style: g.popover }, a.createElement(n.Z, { style: g.popoverTitle }, a.createElement(i.ZP, { size: "title3", weight: "heavy" }, t)), a.createElement(n.Z, { style: g.popoverText }, r), a.createElement(c.ZP, { onPress: e, type: "primaryOutlined" }, p)), withArrow: !0 }, a.createElement(n.Z, { role: "button" }, a.createElement(l.default, { "aria-label": u, style: g.iconInformation }))));
+                    return n.createElement(a.Z, null, n.createElement(d.Z, { enableEnterKeyToggle: !0, preferredVerticalOrientation: "up", renderContent: (e) => n.createElement(a.Z, { role: "dialog", style: h.popover }, n.createElement(a.Z, { style: h.popoverTitle }, n.createElement(l.ZP, { size: "title3", weight: "heavy" }, t)), n.createElement(a.Z, { style: h.popoverText }, r), n.createElement(c.ZP, { onPress: e, type: "primaryOutlined" }, p)), withArrow: !0 }, n.createElement(a.Z, { role: "button" }, n.createElement(s.default, { "aria-label": m, style: h.iconInformation }))));
                 };
         },
+        941978: (e, t, r) => {
+            r.d(t, { C: () => n });
+            class n {
+                constructor() {
+                    this._cache = {};
+                }
+                get(e) {
+                    return this._cache[e];
+                }
+                check(e) {
+                    const t = this._load(e);
+                    return !(t instanceof Promise) && !!t;
+                }
+                reset() {
+                    this._cache = {};
+                }
+                _loadCache(e, t) {
+                    if (this._cache[e]) return this._cache[e];
+                    const r = t().then((t) => {
+                        this._cache[e] = t;
+                    });
+                    return this._cache[e] || (this._cache[e] = r), this._cache[e];
+                }
+                _load(e) {
+                    return this._loadCache(
+                        e,
+                        () =>
+                            new Promise((t) => {
+                                window.fetch
+                                    ? fetch(e)
+                                          .then((e) => e.json())
+                                          .then(t)
+                                          .catch(() => t(!1))
+                                    : t(!0);
+                            }),
+                    );
+                }
+            }
+            new n();
+        },
+        491915: (e, t, r) => {
+            r.d(t, { ZP: () => f });
+            r(571372);
+            var n = r(202784),
+                a = r(325686),
+                o = r(392237),
+                i = r(674132),
+                s = r.n(i),
+                l = r(643442),
+                c = r(466445),
+                d = r(731708),
+                u = r(154003),
+                m = r(173739);
+            const p = s().jcf3e7a2;
+            function h({ animation: e, autoplay: t }) {
+                const [r, o] = n.useState(t),
+                    [i, s] = n.useState(0);
+                return (
+                    n.useEffect(() => {
+                        e.addEventListener("enterFrame", (e) => {
+                            e && s(Math.round(e.currentTime));
+                        });
+                    }, [e]),
+                    n.createElement(
+                        a.Z,
+                        { style: g.container },
+                        n.createElement(u.ZP, {
+                            "aria-label": r ? "Pause" : "Play",
+                            icon: r ? n.createElement(l.default, null) : n.createElement(c.default, null),
+                            onClick: function () {
+                                r ? (e.pause(), o(!1)) : (e.play(), o(!0));
+                            },
+                            type: "primaryText",
+                        }),
+                        n.createElement(d.ZP, { style: g.frames }, `${i}/${e.totalFrames}`),
+                        n.createElement(
+                            a.Z,
+                            { style: g.slider },
+                            n.createElement(m.Z, {
+                                "aria-label": p,
+                                max: e.totalFrames,
+                                min: 0,
+                                onChange: function (t) {
+                                    e.goToAndStop(t, !0), o(!1);
+                                },
+                                value: i,
+                            }),
+                        ),
+                    )
+                );
+            }
+            const g = o.default.create((e) => ({ container: { width: "100%", flexDirection: "row", alignItems: "center" }, frames: { marginStart: e.spaces.space12 }, slider: { flex: 1, marginStart: e.spaces.space12 } }));
+            function f(e) {
+                const { autoplay: t = !0, loop: r = !1, onAnimationEnd: o, onAnimationStart: i, onError: s, withControls: l } = e,
+                    c = n.useRef(void 0),
+                    d = n.useRef({ animationLoaded: !1 }),
+                    u = n.useRef(null),
+                    [m, p] = n.useState(!1);
+                return (
+                    n.useEffect(() => {
+                        function n(e, t) {
+                            "function" == typeof o && o(t), e && e.destroy();
+                        }
+                        const { animationLoaded: a } = d.current;
+                        a ||
+                            ((d.current.animationLoaded = !0),
+                            b.load().then((a) => {
+                                if (a && u.current) {
+                                    const o = { container: u.current, renderer: "svg", loop: r, autoplay: !1, ...("object" == typeof e.animation ? { animationData: e.animation } : { path: e.animation }) },
+                                        l = a.loadAnimation(o);
+                                    (c.current = l),
+                                        (l.onError = (e) => {
+                                            const t = new y(e);
+                                            "function" == typeof s && s(t), n(l, t);
+                                        }),
+                                        l.addEventListener("DOMLoaded", () => {
+                                            p(!0), t && (l.play(), i && i());
+                                        }),
+                                        l.addEventListener("complete", () => {
+                                            n(l);
+                                        });
+                                }
+                            }));
+                    }, [e.animation, t, r, o, i, s, l]),
+                    n.useEffect(
+                        () =>
+                            function () {
+                                c.current && c.current.destroy();
+                            },
+                        [c],
+                    ),
+                    n.createElement(a.Z, null, n.createElement(a.Z, { style: [e.animationContainerStyle, E.centerAnimation] }, n.createElement("div", { ref: u, style: e.animationStyle }), l && c.current && m && n.createElement(h, { animation: c.current, autoplay: t })))
+                );
+            }
+            f.Prepare = function () {
+                return (
+                    n.useEffect(() => {
+                        b.load();
+                    }, []),
+                    null
+                );
+            };
+            const b = { load: () => r.e("ondemand.LottieWeb").then(r.t.bind(r, 548888, 23)) };
+            class y extends Error {
+                constructor(e, ...t) {
+                    super(...t), Error.captureStackTrace && Error.captureStackTrace(this, y), (this.name = "LottieAnimationError"), (this.lottieError = e);
+                }
+            }
+            const E = o.default.create((e) => ({ centerAnimation: { alignItems: "center", justifyContent: "center" } }));
+        },
+        247056: (e, t, r) => {
+            r.d(t, { Z: () => c });
+            var n = r(202784),
+                a = r(674132),
+                o = r.n(a),
+                i = r(149170),
+                s = r(40644);
+            const l = o().gaeb997e;
+            const c = function ({ activeColor: e, label: t = l, Icon: r = i.default, iconSize: a = "normal", isDisabled: o, onClick: c, preventFocusShift: d, renderActionMenu: u, style: m, testID: p, withDarkBackground: h = !1 }) {
+                const g = n.useCallback(
+                        (e) => {
+                            e && e.preventDefault(), c && c(e);
+                        },
+                        [c],
+                    ),
+                    f = n.useMemo(() => ({ label: t }), [t]);
+                return n.createElement(s.ZP, { Icon: r, activeColor: e || (h ? "white" : void 0), "aria-label": t, backgroundColor: h ? "translucentBlack77" : "transparent", color: h ? "white" : "gray700", hoverLabel: f, iconSize: a, isDisabled: o, onPress: g, preventFocusShift: d, renderMenu: u, style: m, testID: p });
+            };
+        },
         30183: (e, t, r) => {
-            r.d(t, { Z: () => l });
-            var a = r(202784),
-                n = r(731708),
+            r.d(t, { Z: () => s });
+            var n = r(202784),
+                a = r(731708),
                 o = r(952428);
-            const s = r(392237).default.create((e) => ({ root: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.spaces.space16 }, withBottomRadius: { borderBottomStartRadius: e.borderRadii.xLarge, borderBottomEndRadius: e.borderRadii.xLarge } })),
-                l = function ({ align: e, link: t, onPress: r, text: l, weight: i, withBottomRadius: c, withDarkerInteractiveBackground: d }) {
-                    return a.createElement(o.Z, { link: t, onPress: r, style: [s.root, c && s.withBottomRadius], withDarkerInteractiveBackground: d }, a.createElement(n.ZP, { align: e, color: "primary", weight: i }, l));
+            const i = r(392237).default.create((e) => ({ root: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.spaces.space16 }, withBottomRadius: { borderBottomStartRadius: e.borderRadii.xLarge, borderBottomEndRadius: e.borderRadii.xLarge } })),
+                s = function ({ align: e, link: t, onPress: r, text: s, weight: l, withBottomRadius: c, withDarkerInteractiveBackground: d }) {
+                    return n.createElement(o.Z, { link: t, onPress: r, style: [i.root, c && i.withBottomRadius], withDarkerInteractiveBackground: d }, n.createElement(a.ZP, { align: e, color: "primary", weight: l }, s));
                 };
         },
         165822: (e, t, r) => {
             r.d(t, { Z: () => c });
-            var a = r(202784),
-                n = r(325686),
+            var n = r(202784),
+                a = r(325686),
                 o = r(58881),
-                s = r(530732),
-                l = r(392237);
-            const i = l.default.create((e) => ({ root: { padding: e.spaces.space12, borderRadius: e.borderRadii.large }, defaultLowerContainerStyle: { marginTop: e.spaces.space12, justifyContent: "flex-end" }, defaultUpperContainerStyle: { height: `calc(${e.spaces.space48}*2)`, overflow: "hidden", borderRadius: e.borderRadii.large } })),
-                c = ({ "aria-label": e, containerStyle: t, disabled: r, isCompact: c, link: d, lower: m, onClick: u, stackLayoutLowerStyle: p, stackLayoutUpperStyle: g, upper: h, withInsetFocusRing: y = !0, withInteractiveStyling: b = !1 }) => {
-                    const f = o.Z.generate({ backgroundColor: l.default.theme.colors.transparent, color: l.default.theme.colors.primary, insetFocusRing: y }),
-                        E = a.createElement(a.Fragment, null, a.createElement(n.Z, { style: [i.defaultUpperContainerStyle, g, c && { height: "auto" }] }, h), m ? a.createElement(n.Z, { style: [i.defaultLowerContainerStyle, p] }, m) : null);
-                    return a.createElement(s.Z, { "aria-label": e, disabled: r, interactive: b, interactiveStyles: b ? f : void 0, link: d, onClick: u, style: [i.root, t] }, E);
+                i = r(530732),
+                s = r(392237);
+            const l = s.default.create((e) => ({ root: { padding: e.spaces.space12, borderRadius: e.borderRadii.large }, defaultLowerContainerStyle: { marginTop: e.spaces.space12, justifyContent: "flex-end" }, defaultUpperContainerStyle: { height: `calc(${e.spaces.space48}*2)`, overflow: "hidden", borderRadius: e.borderRadii.large } })),
+                c = ({ "aria-label": e, containerStyle: t, disabled: r, isCompact: c, link: d, lower: u, onClick: m, stackLayoutLowerStyle: p, stackLayoutUpperStyle: h, upper: g, withInsetFocusRing: f = !0, withInteractiveStyling: b = !1 }) => {
+                    const y = o.Z.generate({ backgroundColor: s.default.theme.colors.transparent, color: s.default.theme.colors.primary, insetFocusRing: f }),
+                        E = n.createElement(n.Fragment, null, n.createElement(a.Z, { style: [l.defaultUpperContainerStyle, h, c && { height: "auto" }] }, g), u ? n.createElement(a.Z, { style: [l.defaultLowerContainerStyle, p] }, u) : null);
+                    return n.createElement(i.Z, { "aria-label": e, disabled: r, interactive: b, interactiveStyles: b ? y : void 0, link: d, onClick: m, style: [l.root, t] }, E);
                 };
         },
         745185: (e, t, r) => {
-            r.d(t, { Z: () => f });
-            var a = r(202784),
-                n = r(165822),
+            r.d(t, { Z: () => y });
+            var n = r(202784),
+                a = r(165822),
                 o = r(854582),
-                s = r(325686),
-                l = r(530525),
-                i = r(731708),
+                i = r(325686),
+                s = r(530525),
+                l = r(731708),
                 c = r(439592),
                 d = r(626202),
-                m = r(392237),
-                u = r(615084);
+                u = r(392237),
+                m = r(615084);
             const p = Object.freeze({ SCORE: "score", SECONDARY_SCORE: "secondaryScore" });
-            class g extends a.Component {
+            class h extends n.Component {
                 constructor(...e) {
                     super(...e),
                         (this.state = { imageError: !1 }),
@@ -106,32 +275,32 @@
                             const {
                                 team: { color: e, shortName: t },
                             } = this.props;
-                            return a.createElement(s.Z, { style: y.teamNameContainer }, a.createElement(i.ZP, { color: h(e), numberOfLines: 1, style: { textOverflow: "ellipsis" }, weight: "heavy" }, t));
+                            return n.createElement(i.Z, { style: f.teamNameContainer }, n.createElement(l.ZP, { color: g(e), numberOfLines: 1, style: { textOverflow: "ellipsis" }, weight: "heavy" }, t));
                         }),
                         (this._renderImage = () => {
                             const {
                                     isCompact: e,
                                     team: { imageUrl: t, logo: r },
                                 } = this.props,
-                                { imageError: n } = this.state,
-                                o = (!r && !t) || n ? y.translucent : {},
-                                i = r ? c.Z.exact(r.width / r.height) : c.Z.SQUARE;
-                            return a.createElement(s.Z, { style: [y.imageContainer, o, e && y.compactImageContainer] }, a.createElement(l.Z, { "aria-label": "", aspectMode: i, image: r || t || "", onError: this._handleImageError, rounded: !r }));
+                                { imageError: a } = this.state,
+                                o = (!r && !t) || a ? f.translucent : {},
+                                l = r ? c.Z.exact(r.width / r.height) : c.Z.SQUARE;
+                            return n.createElement(i.Z, { style: [f.imageContainer, o, e && f.compactImageContainer] }, n.createElement(s.Z, { "aria-label": "", aspectMode: l, image: r || t || "", onError: this._handleImageError, rounded: !r }));
                         }),
                         (this._handleImageError = () => {
                             this.setState({ imageError: !0 });
                         }),
                         (this._renderScore = () => {
-                            const { category: e, gameState: t, team: r, winnerId: n } = this.props,
-                                { color: o, id: l, score: c, secondaryScore: d } = r,
-                                m = l === n,
-                                g = !n,
-                                b = t === u.D.Completed && !m && !g,
-                                f = this._shouldRenderScore(),
+                            const { category: e, gameState: t, team: r, winnerId: a } = this.props,
+                                { color: o, id: s, score: c, secondaryScore: d } = r,
+                                u = s === a,
+                                h = !a,
+                                b = t === m.D.Completed && !u && !h,
+                                y = this._shouldRenderScore(),
                                 E = this._getTeamScoreSize(p.SCORE),
-                                w = d ? this._getTeamScoreSize(p.SECONDARY_SCORE) : void 0,
-                                C = "Cricket" === e ? c?.split(" ")[0] : c;
-                            return f ? a.createElement(s.Z, { style: [y.teamScore, b && y.losingTeamScore] }, a.createElement(i.ZP, { color: h(o), numberOfLines: 1, size: E, weight: "heavy" }, C), d ? a.createElement(i.ZP, { color: h(o), numberOfLines: 1, size: w, weight: "bold" }, d) : null) : null;
+                                C = d ? this._getTeamScoreSize(p.SECONDARY_SCORE) : void 0,
+                                S = "Cricket" === e ? c?.split(" ")[0] : c;
+                            return y ? n.createElement(i.Z, { style: [f.teamScore, b && f.losingTeamScore] }, n.createElement(l.ZP, { color: g(o), numberOfLines: 1, size: E, weight: "heavy" }, S), d ? n.createElement(l.ZP, { color: g(o), numberOfLines: 1, size: C, weight: "bold" }, d) : null) : null;
                         }),
                         (this._getTeamScoreSize = (e) => {
                             const {
@@ -150,7 +319,7 @@
                         }),
                         (this._shouldRenderScore = () => {
                             const { gameState: e } = this.props;
-                            return e === u.D.Completed || e === u.D.InProgress;
+                            return e === m.D.Completed || e === m.D.InProgress;
                         });
                 }
                 render() {
@@ -159,71 +328,71 @@
                             isCompact: t,
                             team: { color: r },
                         } = this.props,
-                        n = { backgroundColor: (r && `rgb(${r.red}, ${r.green}, ${r.blue})`) || m.default.theme.colors[e] },
+                        a = { backgroundColor: (r && `rgb(${r.red}, ${r.green}, ${r.blue})`) || u.default.theme.colors[e] },
                         o = this._shouldRenderScore(),
-                        l = !t || !o;
-                    return a.createElement(s.Z, { style: [y.root, n, t && y.compactRoot] }, this._renderImage(), l ? this._renderTeamName() : null, this._renderScore());
+                        s = !t || !o;
+                    return n.createElement(i.Z, { style: [f.root, a, t && f.compactRoot] }, this._renderImage(), s ? this._renderTeamName() : null, this._renderScore());
                 }
             }
-            function h(e) {
+            function g(e) {
                 return e
                     ? (function (e) {
                           return (0, d.vm)(e) > 0.5 ? "alwaysBaseGray1100" : "white";
                       })(e)
                     : "white";
             }
-            g.defaultProps = { isCompact: !1 };
-            const y = m.default.create((e) => ({ root: { flexDirection: "row", height: e.spaces.space48, paddingHorizontal: e.spaces.space12 }, imageContainer: { alignSelf: "center", width: e.spaces.space32, marginEnd: e.spaces.space12 }, compactImageContainer: { width: e.spaces.space20 }, compactRoot: { height: `calc(${e.spaces.space48} - (${m.default.theme.spaces.space1} + ${m.default.theme.spaces.space2}))` }, losingTeamScore: { opacity: 0.5 }, teamNameContainer: { alignSelf: "center", flexShrink: 1 }, teamScore: { flexGrow: 2, alignItems: "flex-end", alignSelf: "center" }, translucent: { borderRadius: e.borderRadii.infinite, backgroundColor: e.colors.white, opacity: 0.4 } })),
-                b = g;
-            class f extends a.Component {
+            h.defaultProps = { isCompact: !1 };
+            const f = u.default.create((e) => ({ root: { flexDirection: "row", height: e.spaces.space48, paddingHorizontal: e.spaces.space12 }, imageContainer: { alignSelf: "center", width: e.spaces.space32, marginEnd: e.spaces.space12 }, compactImageContainer: { width: e.spaces.space20 }, compactRoot: { height: `calc(${e.spaces.space48} - (${u.default.theme.spaces.space1} + ${u.default.theme.spaces.space2}))` }, losingTeamScore: { opacity: 0.5 }, teamNameContainer: { alignSelf: "center", flexShrink: 1 }, teamScore: { flexGrow: 2, alignItems: "flex-end", alignSelf: "center" }, translucent: { borderRadius: e.borderRadii.infinite, backgroundColor: e.colors.white, opacity: 0.4 } })),
+                b = h;
+            class y extends n.Component {
                 constructor(...e) {
                     super(...e),
                         (this._renderGameStatus = () => {
-                            const { category: e, gameClock: t, gameClockPeriod: r, gameState: n, isCompact: s, startTimeMillis: l, teams: i, winnerId: c } = this.props;
-                            return a.createElement(o.Z, { category: e, gameClock: t, gameClockPeriod: r, gameState: n, startTimeMillis: l, teams: i, winnerId: c, withCategory: !s });
+                            const { category: e, gameClock: t, gameClockPeriod: r, gameState: a, isCompact: i, startTimeMillis: s, teams: l, winnerId: c } = this.props;
+                            return n.createElement(o.Z, { category: e, gameClock: t, gameClockPeriod: r, gameState: a, startTimeMillis: s, teams: l, winnerId: c, withCategory: !i });
                         }),
                         (this._renderTeamRow = (e, t) => {
-                            const { category: r, gameState: n, isCompact: o, winnerId: s } = this.props,
-                                { id: l } = e;
-                            return a.createElement(b, { category: r, fallbackColor: t % 2 == 0 ? "gray300" : "gray700", gameState: n, isCompact: o, key: l, team: e, winnerId: s });
+                            const { category: r, gameState: a, isCompact: o, winnerId: i } = this.props,
+                                { id: s } = e;
+                            return n.createElement(b, { category: r, fallbackColor: t % 2 == 0 ? "gray300" : "gray700", gameState: a, isCompact: o, key: s, team: e, winnerId: i });
                         });
                 }
                 render() {
-                    const { "aria-label": e, containerStyle: t, isCompact: r, link: o, onClick: s, teams: l } = this.props;
-                    if (l) {
-                        const i = l && l.map(this._renderTeamRow);
-                        return a.createElement(n.Z, { "aria-label": e, containerStyle: t, isCompact: r, link: o, lower: r ? void 0 : this._renderGameStatus(), onClick: s, upper: i, withInteractiveStyling: !0 });
+                    const { "aria-label": e, containerStyle: t, isCompact: r, link: o, onClick: i, teams: s } = this.props;
+                    if (s) {
+                        const l = s && s.map(this._renderTeamRow);
+                        return n.createElement(a.Z, { "aria-label": e, containerStyle: t, isCompact: r, link: o, lower: r ? void 0 : this._renderGameStatus(), onClick: i, upper: l, withInteractiveStyling: !0 });
                     }
                     return null;
                 }
             }
-            f.defaultProps = { isCompact: !1 };
+            y.defaultProps = { isCompact: !1 };
         },
         854582: (e, t, r) => {
-            r.d(t, { Z: () => w });
-            var a = r(202784),
-                n = r(674132),
-                o = r.n(n),
-                s = r(731708),
-                l = r(470397),
-                i = r(615084);
+            r.d(t, { Z: () => C });
+            var n = r(202784),
+                a = r(674132),
+                o = r.n(a),
+                i = r(731708),
+                s = r(470397),
+                l = r(615084);
             const c = 864e5,
                 d = o().ccaa970f,
-                m = o().d725a289,
-                u = o().db355331,
+                u = o().d725a289,
+                m = o().db355331,
                 p = o().a8428d5e,
-                g = o().a7aad8ba,
-                h = o().e431f1aa,
-                y = o().a7391708,
+                h = o().a7aad8ba,
+                g = o().e431f1aa,
+                f = o().a7391708,
                 b = o().d2dbfa92,
-                f = o().cd734f66,
+                y = o().cd734f66,
                 E = o().c8891d06;
-            class w extends a.Component {
+            class C extends n.Component {
                 constructor(...e) {
                     super(...e),
                         (this._renderCategory = () => {
                             const { category: e } = this.props;
-                            return e ? a.createElement(s.ZP, { align: "left", numberOfLines: 1, size: "subtext2", weight: "bold" }, e) : null;
+                            return e ? n.createElement(i.ZP, { align: "left", numberOfLines: 1, size: "subtext2", weight: "bold" }, e) : null;
                         }),
                         (this._renderGameScheduledDateTime = () => {
                             const { startTimeMillis: e } = this.props;
@@ -239,19 +408,19 @@
                             return null;
                         }),
                         (this._renderTodayTomorrow = (e, t) => {
-                            const r = m(t);
-                            return a.createElement(l.Z, null, a.createElement(s.ZP, { color: "gray700", size: "subtext2", weight: "bold" }, 0 === e ? f : E), a.createElement(s.ZP, { color: "gray700", size: "subtext2" }, r));
+                            const r = u(t);
+                            return n.createElement(s.Z, null, n.createElement(i.ZP, { color: "gray700", size: "subtext2", weight: "bold" }, 0 === e ? y : E), n.createElement(i.ZP, { color: "gray700", size: "subtext2" }, r));
                         }),
                         (this._renderDateTime = (e) => {
-                            const t = m(e),
+                            const t = u(e),
                                 r = d(e);
-                            return a.createElement(l.Z, null, a.createElement(s.ZP, { color: "gray700", size: "subtext2", weight: "bold" }, r), a.createElement(s.ZP, { color: "gray700", size: "subtext2" }, t));
+                            return n.createElement(s.Z, null, n.createElement(i.ZP, { color: "gray700", size: "subtext2", weight: "bold" }, r), n.createElement(i.ZP, { color: "gray700", size: "subtext2" }, t));
                         }),
                         (this._renderGameStateValue = (e, t) => {
                             const { gameClockPeriod: r } = this.props,
-                                n = this._getWinnerName(),
-                                o = e && n ? u({ team: n }) : t && r ? r : void 0;
-                            return o ? a.createElement(s.ZP, { color: "gray700", numberOfLines: 1, size: "subtext2" }, o) : null;
+                                a = this._getWinnerName(),
+                                o = e && a ? m({ team: a }) : t && r ? r : void 0;
+                            return o ? n.createElement(i.ZP, { color: "gray700", numberOfLines: 1, size: "subtext2" }, o) : null;
                         }),
                         (this._getWinnerName = () => {
                             const { teams: e, winnerId: t } = this.props,
@@ -261,57 +430,152 @@
                 }
                 render() {
                     const { gameState: e, withCategory: t } = this.props,
-                        r = e === i.D.Scheduled,
-                        n = e === i.D.InProgress,
-                        o = e === i.D.Completed;
-                    return a.createElement(
-                        a.Fragment,
+                        r = e === l.D.Scheduled,
+                        a = e === l.D.InProgress,
+                        o = e === l.D.Completed;
+                    return n.createElement(
+                        n.Fragment,
                         null,
                         r
                             ? this._renderGameScheduledDateTime()
-                            : a.createElement(
-                                  l.Z,
+                            : n.createElement(
+                                  s.Z,
                                   null,
-                                  a.createElement(
-                                      s.ZP,
-                                      { color: n ? "magenta500" : "gray700", numberOfLines: 1, size: "subtext2", weight: "bold" },
+                                  n.createElement(
+                                      i.ZP,
+                                      { color: a ? "magenta500" : "gray700", numberOfLines: 1, size: "subtext2", weight: "bold" },
                                       ((e) => {
                                           switch (e) {
-                                              case i.D.Scheduled:
+                                              case l.D.Scheduled:
                                                   return p;
-                                              case i.D.InProgress:
-                                                  return g;
-                                              case i.D.Completed:
+                                              case l.D.InProgress:
                                                   return h;
-                                              case i.D.Postponed:
-                                                  return y;
-                                              case i.D.Cancelled:
+                                              case l.D.Completed:
+                                                  return g;
+                                              case l.D.Postponed:
+                                                  return f;
+                                              case l.D.Cancelled:
                                                   return b;
                                               default:
                                                   return null;
                                           }
                                       })(e),
                                   ),
-                                  this._renderGameStateValue(o, n),
+                                  this._renderGameStateValue(o, a),
                               ),
                         t ? this._renderCategory() : null,
                     );
                 }
             }
-            w.defaultProps = { withCategory: !0 };
+            C.defaultProps = { withCategory: !0 };
         },
         615084: (e, t, r) => {
-            r.d(t, { D: () => a });
-            const a = Object.freeze({ Scheduled: "Scheduled", InProgress: "InProgress", Completed: "Completed", Postponed: "Postponed", Cancelled: "Cancelled", Unused6: "_Unused6", Unused7: "_Unused7" });
+            r.d(t, { D: () => n });
+            const n = Object.freeze({ Scheduled: "Scheduled", InProgress: "InProgress", Completed: "Completed", Postponed: "Postponed", Cancelled: "Cancelled", Unused6: "_Unused6", Unused7: "_Unused7" });
+        },
+        40644: (e, t, r) => {
+            r.d(t, { ZP: () => S });
+            var n = r(202784),
+                a = r(325686),
+                o = r(461756),
+                i = r(731708),
+                s = r(58881),
+                l = r(530732),
+                c = r(224162),
+                d = r(491915),
+                u = r(392237),
+                m = r(551611),
+                p = r(674132),
+                h = r.n(p),
+                g = r(891198),
+                f = r(537392),
+                b = r(280278);
+            const y = h().e8d93005,
+                E = u.default.create((e) => ({ count: { paddingHorizontal: e.spacesPx.space4, minWidth: `calc(1em + 2 * ${e.spaces.space12})` }, narrowCount: { paddingEnd: 0, paddingStart: e.spacesPx.space4, minWidth: `calc(1em + ${e.spaces.space4})` } })),
+                C = ({ color: e, count: t }) => {
+                    const r = (0, g.wl)(t, !0);
+                    return n.createElement(f.ZP, null, ({ containerWidth: a }) => {
+                        return n.createElement(b.ZP, { color: e, count: t, size: "subtext2", style: [E.count, ((o = a), o < u.default.theme.breakpoints.small && E.narrowCount)] }, t > 0 ? (((e) => e < u.default.theme.breakpoints.xxSmall)(a) || r.length >= 5 ? y(t) : r) : void 0);
+                        var o;
+                    });
+                };
+            class S extends n.PureComponent {
+                constructor(...e) {
+                    super(...e),
+                        (this._renderContent = (e, t) => {
+                            const { activeColor: r, color: o, decoration: s } = this.props;
+                            return n.createElement(c.ZP.Consumer, null, ({ direction: l }) => n.createElement(i.ZP, { color: e ? r : o, dir: l, style: [Z.inner, e && "blue500" === r && Z.blue500] }, n.createElement(a.Z, { ref: this.props.actionIconContainerRef }, t ? this._renderButton(t) : null, this._renderIcon()), s, this._renderCount()));
+                        }),
+                        (this._renderButton = (e) => {
+                            const { activeColor: t, backgroundColor: r, hoverLabel: a, iconSize: o, isActive: i, isDisabled: c, showBackgroundWhenActive: d } = this.props,
+                                m = s.Z.generate({ backgroundColor: u.default.theme.colors[r], color: u.default.theme.colors[t], insetFocusRing: !0 }),
+                                p = d && i && !e?.isHovered;
+                            return n.createElement(l.Z, { hoverLabel: a, interactiveStyles: m, interactivityState: e, style: [u.default.absoluteFill, v[p ? "haloBackground" : r], !c && Z.iconBackground, "small" === o && Z.iconSmallBoundingBox, p && Z.haloBoundingBox] });
+                        }),
+                        (this._renderIcon = () => {
+                            const { ActiveIcon: e, iconSize: t, isActive: r, isDisabled: a, isFaded: i, onAnimationEnd: s, onAnimationStart: l, onError: c, showAnimation: p, transitionAnimationUrl: h } = this.props;
+                            if (!u.default.theme.highContrastEnabled && !o.Z.reducedMotionEnabled && e && p) return n.createElement(d.ZP, { animation: h || m.Bf, animationContainerStyle: w[t], animationStyle: k, onAnimationEnd: s, onAnimationStart: l, onError: c });
+                            {
+                                const o = r && e ? e : this.props.Icon;
+                                return n.createElement(o, { style: [w[t], !a && i && Z.iconFaded] });
+                            }
+                        }),
+                        (this._renderCount = () => {
+                            const { count: e, withCount: t } = this.props;
+                            return t ? n.createElement(C, { count: e }) : null;
+                        }),
+                        (this._handlePress = (e) => {
+                            const { onPress: t, renderWrapper: r } = this.props;
+                            r || (e.stopPropagation(), t && t(e));
+                        });
+                }
+                render() {
+                    const { "aria-label": e, focusable: t, enableKeyboardShortcuts: r, isActive: i, isDisabled: s, isPresentational: c, keyboardShortcut: m, link: p, preventFocusShift: h, renderMenu: g, renderWrapper: f = n.Fragment, style: b, testID: y } = this.props,
+                        E = !u.default.theme.highContrastEnabled && !o.Z.reducedMotionEnabled;
+                    return n.createElement(
+                        a.Z,
+                        { style: [Z.root, b] },
+                        n.createElement(
+                            f,
+                            null,
+                            c
+                                ? this._renderContent(i)
+                                : n.createElement(l.Z, { "aria-haspopup": g ? "menu" : void 0, "aria-label": e, disabled: s, enableKeyboardShortcuts: r, focusable: t, interactiveStyles: null, keyboardShortcut: m, link: p, onClick: this._handlePress, preventFocusShift: h, renderMenu: g, style: [Z.triggerAreaRoot, Z.outlineNone], testID: y }, (e) => {
+                                      const { isFocused: t, isHovered: r, isPressed: n } = e,
+                                          a = i || r || n || t;
+                                      return this._renderContent(a, e);
+                                  }),
+                        ),
+                        E ? n.createElement(d.ZP.Prepare, null) : null,
+                    );
+                }
+            }
+            S.defaultProps = { activeColor: "blue500", backgroundColor: "transparent", color: "gray700", count: 0, isDisabled: !1, iconSize: "normal" };
+            const w = u.default.create((e) => ({ small: { height: "1em", width: "1em" }, normal: { height: "1.25em", width: "1.25em" }, large: { height: "1.5em", width: "1.5em" } })),
+                v = u.default.create((e) => ({ transparent: { backgroundColor: e.colors.transparent }, translucentBlack77: { backgroundColor: e.colors.translucentBlack77 }, haloBackground: { backgroundColor: e.colors.activeBlack } })),
+                Z = u.default.create((e) => ({ root: { flexDirection: "row", justifyContent: "flex-start" }, triggerAreaRoot: { justifyContent: "center", minHeight: e.lineHeights.body, overflow: "visible", userSelect: "none" }, inner: { alignItems: "center", display: "flex", justifyContent: "flex-start", transitionProperty: "color", transitionDuration: "0.2s", whiteSpace: "nowrap" }, iconFaded: { opacity: 0.4 }, iconBackground: { borderRadius: e.borderRadii.infinite, margin: -8 }, iconSmallBoundingBox: { margin: -6 }, outlineNone: { outlineStyle: "none" }, blue500: { color: e.colors.blue500 }, white: { color: e.colors.white }, haloBoundingBox: { margin: -6 } })),
+                P = "224.5%",
+                k = { width: P, height: P };
+        },
+        551611: (e, t, r) => {
+            r.d(t, { Bf: () => a, ZP: () => i });
+            var n = r(941978);
+            const a = "https://abs.twimg.com/sticky/animations/like.4.json";
+            class o extends n.C {
+                check(e) {
+                    return super.check(e ?? a);
+                }
+            }
+            const i = new o();
         },
         143095: (e, t, r) => {
-            r.d(t, { O: () => n });
-            var a = r(202784);
-            function n(e) {
-                const [t, r] = a.useState(e);
+            r.d(t, { O: () => a });
+            var n = r(202784);
+            function a(e) {
+                const [t, r] = n.useState(e);
                 return [
                     t,
-                    a.useMemo(() => {
+                    n.useMemo(() => {
                         const e = (e) => {
                             if ("boolean" == typeof e) return r(e);
                             r((e) => !e);
@@ -322,19 +586,19 @@
             }
         },
         338940: (e, t, r) => {
-            r.d(t, { Z: () => n });
+            r.d(t, { Z: () => a });
             r(136728);
-            var a = r(688356);
-            function n(e) {
+            var n = r(688356);
+            function a(e) {
                 const t = [],
-                    r = (0, a.Z)(e);
+                    r = (0, n.Z)(e);
                 for (let e = 0; e < r.length; e++) {
-                    const a = r[e].screenName;
-                    t.push(a);
+                    const n = r[e].screenName;
+                    t.push(n);
                 }
                 return t;
             }
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Communities-bc6ccf4c.85286f2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Communities-bc6ccf4c.f9b34b1a.js.map

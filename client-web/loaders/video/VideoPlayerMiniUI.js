@@ -341,7 +341,7 @@
                 k = a(38660),
                 I = a(804455),
                 M = a(472238);
-            const O = (0, a(523561).Z)({ loader: () => Promise.all([a.e("icons.10"), a.e("modules.common-e907d115"), a.e("modules.common-e019dbda"), a.e("icons.13"), a.e("icons.17"), a.e("icons.4"), a.e("shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerPrerollUI~loaders.video.VideoPlayerEventsU"), a.e("shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerPrerollUI"), a.e("loaders.video.VideoPlayerPrerollUI")]).then(a.bind(a, 463371)), renderPlaceholder: () => r.createElement("div", { "data-testid": "videoPlayer" }) }),
+            const O = (0, a(523561).Z)({ loader: () => Promise.all([a.e("icons.6"), a.e("icons.25"), a.e("icons.9"), a.e("modules.common-e907d115"), a.e("modules.common-e019dbda"), a.e("icons.0"), a.e("shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerPrerollUI~loaders.video.VideoPlayerEventsU"), a.e("shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerPrerollUI"), a.e("loaders.video.VideoPlayerPrerollUI")]).then(a.bind(a, 463371)), renderPlaceholder: () => r.createElement("div", { "data-testid": "videoPlayer" }) }),
                 B = ({ "aria-label": e, containerRef: t, id: a, includeDisputeLinkInCopyrightErrorMessage: i, liveBroadcastRewindEnabled: d, onClick: u, onScribeEvent: y, playerApi: h, playerDisplayOptions: m, playerState: b, poster: g, shouldShowAltLabel: f, showWatchAgain: E, useKeyboardShortcuts: S }) => {
                     const v = r.useCallback(() => {
                         u?.({ playerState: b, playerApi: h });
@@ -372,7 +372,7 @@
                 D = i.default.create((e) => ({ base: { ...i.default.absoluteFillObject, cursor: "pointer" } })),
                 F = r.memo(B);
         },
-        355830: (e, t, a) => {
+        466445: (e, t, a) => {
             a.r(t), a.d(t, { default: () => o });
             var r = a(202784),
                 n = a(890601),
@@ -380,11 +380,11 @@
                 i = a(347101);
             const s = (e = {}) => {
                 const { direction: t } = (0, l.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M12 1.5c1.808 0 3.51.46 4.995 1.26l-1.491 1.49C14.435 3.77 13.249 3.5 12 3.5c-4.694 0-8.5 3.81-8.5 8.5 0 1.25.269 2.44.753 3.5L2.762 17C1.957 15.51 1.5 13.81 1.5 12 1.5 6.2 6.201 1.5 12 1.5zm0 19c-1.249 0-2.435-.27-3.504-.75l-1.491 1.49c1.485.8 3.187 1.26 4.995 1.26 5.799 0 10.5-4.7 10.5-10.5 0-1.81-.457-3.51-1.262-5l-1.491 1.5c.484 1.06.753 2.25.753 3.5 0 4.69-3.806 8.5-8.5 8.5zm8.5-18.41L15.086 7.5 16.5 8.91l5.414-5.41L20.5 2.09zm-4 9.91l-7-4.45v8.9l7-4.45zm-13 9.91L8.414 17 7 15.59 2.086 20.5 3.5 21.91z" })) }, { writingDirection: t });
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M21 12L4 2v20l17-10z" })) }, { writingDirection: t });
             };
             s.metadata = { width: 24, height: 24 };
             const o = s;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loaders.video.VideoPlayerMiniUI.6342cb3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loaders.video.VideoPlayerMiniUI.83903cfa.js.map

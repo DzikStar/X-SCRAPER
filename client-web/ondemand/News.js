@@ -244,47 +244,40 @@
                 const t = (0, d.Z)(),
                     { height: a } = (0, _.Z)(),
                     i = Math.max(550, 0.95 * (a - b)),
-                    l = a > 750,
-                    r = n.useMemo(() => [k.scroller, { height: a - b }], [a]);
+                    l = n.useMemo(() => [k.scroller, { height: a - b }], [a]);
                 return e.length
                     ? n.createElement(
                           c.Z,
-                          { style: r },
+                          { style: l },
                           n.createElement(w.Z, {
                               data: e,
                               decelerationRate: "fast",
                               keyExtractor: (e, t) => `news-article-${e.id}`,
                               removeClippedSubviews: !0,
-                              renderItem: ({ index: r, item: s }) => {
-                                  const o = !!s.sentiment && !!s.sentiment.sentiment_scores && s.sentiment.sentiment_scores.length > 0;
-                                  let m = 4;
-                                  return (
-                                      !l && o && (m = 2),
-                                      n.createElement(
-                                          c.Z,
-                                          { style: [k.articleContainer, { height: a - b - 0.1 * a, maxHeight: i }] },
-                                          n.createElement(u.Z, {
-                                              article: s,
-                                              containerStyle: k.articleCardContainer,
-                                              infoContainerStyle: k.articleCardInfoContainer,
-                                              key: `small-article-${s.id}`,
-                                              onClick: () => {
-                                                  var a;
-                                                  (a = s.id), (0, y.Ib)(t, { articleId: a, allArticleIds: e.map((e) => e.id) });
-                                              },
-                                              reactionsContainerStyle: k.articleCardReactionsContainer,
-                                              showSentiment: !0,
-                                              size: "large",
-                                              style: k.articleCard,
-                                              summaryNumLines: m,
-                                              titleNumLines: 4,
-                                              titleStyle: k.articleCardTitle,
-                                          }),
-                                      )
-                                  );
-                              },
+                              renderItem: ({ index: l, item: r }) =>
+                                  n.createElement(
+                                      c.Z,
+                                      { style: [k.articleContainer, { height: a - b - 0.1 * a, maxHeight: i }] },
+                                      n.createElement(u.Z, {
+                                          article: r,
+                                          containerStyle: k.articleCardContainer,
+                                          infoContainerStyle: k.articleCardInfoContainer,
+                                          key: `small-article-${r.id}`,
+                                          onClick: () => {
+                                              var a;
+                                              (a = r.id), (0, y.Ib)(t, { articleId: a, allArticleIds: e.map((e) => e.id) });
+                                          },
+                                          reactionsContainerStyle: k.articleCardReactionsContainer,
+                                          showSentiment: !1,
+                                          size: "large",
+                                          style: k.articleCard,
+                                          summaryNumLines: 4,
+                                          titleNumLines: 4,
+                                          titleStyle: k.articleCardTitle,
+                                      }),
+                                  ),
                               showsVerticalScrollIndicator: !1,
-                              style: r,
+                              style: l,
                           }),
                       )
                     : null;
@@ -733,4 +726,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.News.a3bccdda.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.News.ae5a5e4a.js.map

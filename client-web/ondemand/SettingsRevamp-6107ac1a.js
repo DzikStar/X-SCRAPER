@@ -221,6 +221,101 @@
             };
             const i = l;
         },
+        629928: (e, n, a) => {
+            a.d(n, { Z: () => c });
+            var l,
+                i,
+                t,
+                r,
+                s,
+                o,
+                u,
+                d = {
+                    fragment: { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "IDVerificationQuery", selections: [{ kind: "RequiredField", field: { alias: "viewer", args: (l = [{ kind: "Literal", name: "s", value: "4721" }]), concreteType: "Viewer", kind: "LinkedField", name: "viewer_v2", plural: !1, selections: [{ kind: "RequiredField", field: { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ kind: "RequiredField", field: { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ kind: "InlineFragment", selections: [(i = { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }), { alias: null, args: null, concreteType: "UserVerificationInfo", kind: "LinkedField", name: "verification_info", plural: !1, selections: [(t = { alias: null, args: null, kind: "ScalarField", name: "is_identity_verified", storageKey: null }), (r = { alias: null, args: null, kind: "ScalarField", name: "is_identity_verified_label_hidden", storageKey: null }), { kind: "RequiredField", field: (s = { alias: null, args: null, kind: "ScalarField", name: "identity_verification_status", storageKey: null }), action: "THROW" }, (o = { kind: "ClientExtension", selections: [{ alias: null, args: null, kind: "ScalarField", name: "__id", storageKey: null }] })], storageKey: null }], type: "User", abstractKey: null }], storageKey: null }, action: "THROW" }], storageKey: null }, action: "THROW" }], storageKey: 'viewer_v2(s:"4721")' }, action: "THROW" }], type: "Query", abstractKey: null },
+                    kind: "Request",
+                    operation: {
+                        argumentDefinitions: [],
+                        kind: "Operation",
+                        name: "IDVerificationQuery",
+                        selections: [
+                            {
+                                alias: "viewer",
+                                args: l,
+                                concreteType: "Viewer",
+                                kind: "LinkedField",
+                                name: "viewer_v2",
+                                plural: !1,
+                                selections: [
+                                    {
+                                        alias: null,
+                                        args: null,
+                                        concreteType: "UserResults",
+                                        kind: "LinkedField",
+                                        name: "user_results",
+                                        plural: !1,
+                                        selections: [
+                                            {
+                                                alias: null,
+                                                args: null,
+                                                concreteType: null,
+                                                kind: "LinkedField",
+                                                name: "result",
+                                                plural: !1,
+                                                selections: [
+                                                    { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null },
+                                                    { kind: "InlineFragment", selections: [i, { alias: null, args: null, concreteType: "UserVerificationInfo", kind: "LinkedField", name: "verification_info", plural: !1, selections: [t, r, s, (u = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }), o], storageKey: null }, u], type: "User", abstractKey: null },
+                                                ],
+                                                storageKey: null,
+                                            },
+                                            u,
+                                        ],
+                                        storageKey: null,
+                                    },
+                                ],
+                                storageKey: 'viewer_v2(s:"4721")',
+                            },
+                        ],
+                    },
+                    params: { id: "3Wx7dsynDTSI0LO52L8L8A", metadata: { features: ["identity_verification_hide_verified_label_settings_enabled"] }, name: "IDVerificationQuery", operationKind: "query", text: null },
+                };
+            d.hash = "6269adea05f11011ee2eec87df25951d";
+            const c = d;
+        },
+        993770: (e, n, a) => {
+            a.d(n, { Z: () => r });
+            var l,
+                i,
+                t = {
+                    fragment: {
+                        argumentDefinitions: (l = [
+                            { defaultValue: null, kind: "LocalArgument", name: "is_identity_verified_label_hidden" },
+                            { defaultValue: null, kind: "LocalArgument", name: "user_id" },
+                        ]),
+                        kind: "Fragment",
+                        metadata: null,
+                        name: "IDVerificationUpdateHideLabelMutation",
+                        selections: (i = [
+                            {
+                                alias: null,
+                                args: [
+                                    { kind: "Variable", name: "is_identity_verified_label_hidden", variableName: "is_identity_verified_label_hidden" },
+                                    { kind: "Variable", name: "user_id", variableName: "user_id" },
+                                ],
+                                kind: "ScalarField",
+                                name: "userverificationinfo_is_identity_verified_label_hidden_put",
+                                storageKey: null,
+                            },
+                        ]),
+                        type: "Mutation",
+                        abstractKey: null,
+                    },
+                    kind: "Request",
+                    operation: { argumentDefinitions: l, kind: "Operation", name: "IDVerificationUpdateHideLabelMutation", selections: i },
+                    params: { id: "lqIzyQL1p3XCZg77zekzZA", metadata: {}, name: "IDVerificationUpdateHideLabelMutation", operationKind: "mutation", text: null },
+                };
+            t.hash = "6b62958a6368974d13a27b8fe59103e0";
+            const r = t;
+        },
         143543: (e, n, a) => {
             a.d(n, { Z: () => u });
             var l,
@@ -676,6 +771,10 @@
             };
             const i = l;
         },
+        130919: (e, n, a) => {
+            a.d(n, { t: () => l });
+            const l = Object.freeze({ CanVerifyIdentity: "CanVerifyIdentity", IdentityNonVerifiable: "IdentityNonVerifiable", IdentityVerified: "IdentityVerified", PendingResult: "PendingResult", RequestLocked: "RequestLocked", UnavailableMissingBlueSubscription: "UnavailableMissingBlueSubscription" });
+        },
         667218: (e, n, a) => {
             a.d(n, { n: () => l });
             const l = Object.freeze({ Ads: "Ads", AppleAppStore: "AppleAppStore", Gift: "Gift", GooglePlay: "GooglePlay", Stripe: "Stripe", TPay: "TPay", Twitter: "Twitter", Unknown: "Unknown" });
@@ -982,13 +1081,13 @@
                 o = a(952428),
                 u = a(392237);
             const d = (e) => {
-                    const { decoration: n, description: a, disabled: d = !1, isActive: m = !1, label: g, link: p, onPress: y, paddingHorizontal: k, renderRightContent: f, role: _ = "tab", styleOverride: b, testID: F = "pivot", thumbnail: K, thumbnailSize: S, withoutArrow: h = !1 } = e,
-                        v = [c.thumbnailContainer, "medium" === S && c.thumbnailContainerMedium],
+                    const { decoration: n, description: a, disabled: d = !1, isActive: m = !1, label: g, link: p, onPress: y, paddingHorizontal: k, renderRightContent: f, role: _ = "tab", styleOverride: b, testID: F = "pivot", thumbnail: K, thumbnailSize: v, withoutArrow: S = !1 } = e,
+                        h = [c.thumbnailContainer, "medium" === v && c.thumbnailContainerMedium],
                         w = "string" == typeof g ? l.createElement(s.ZP, null, g) : g,
                         T = "object" == typeof p && p.external && !p.openInSameFrame,
                         L = a ? ("string" == typeof a ? l.createElement(s.ZP, { color: "gray700", size: "subtext2", testID: `${F}-description` }, a) : a) : null,
                         R = l.useMemo(() => ("space0" === k ? { paddingHorizontal: 0 } : { paddingHorizontal: k ? u.default.theme.spaces[k] : u.default.theme.componentDimensions.gutterHorizontal }), [k]);
-                    return l.createElement(o.Z, { "aria-selected": "tab" === _ ? m : null, disabled: d, link: d ? void 0 : p, onPress: y, role: _, style: [c.root, R, d && c.disabled, b], testID: F, withInteractiveStyling: !!p || !!y }, l.createElement(i.Z, { style: c.contentContainer }, K ? l.createElement(i.Z, { style: v }, K) : null, l.createElement(i.Z, { style: c.content }, w, L), f ? f() : null, (!p && !y) || d || h ? null : T ? l.createElement(t.default, { style: c.icon }) : l.createElement(r.default, { style: c.icon })), n);
+                    return l.createElement(o.Z, { "aria-selected": "tab" === _ ? m : null, disabled: d, link: d ? void 0 : p, onPress: y, role: _, style: [c.root, R, d && c.disabled, b], testID: F, withInteractiveStyling: !!p || !!y }, l.createElement(i.Z, { style: c.contentContainer }, K ? l.createElement(i.Z, { style: h }, K) : null, l.createElement(i.Z, { style: c.content }, w, L), f ? f() : null, (!p && !y) || d || S ? null : T ? l.createElement(t.default, { style: c.icon }) : l.createElement(r.default, { style: c.icon })), n);
                 },
                 c = u.default.create((e) => ({ root: { justifyContent: "space-between", minHeight: `calc(${u.default.theme.lineHeights.headline1} + 2 * ${e.componentDimensions.gutterVertical})`, paddingVertical: e.componentDimensions.gutterVertical }, disabled: { opacity: 0.5 }, contentContainer: { alignItems: "center", flexDirection: "row", flexGrow: 1 }, content: { flexGrow: 1, flexShrink: 1 }, icon: { color: e.colors.gray700, paddingStart: e.spaces.space12, flexShrink: 0 }, thumbnailContainer: { alignItems: "center", justifyContent: "center", height: e.spaces.space48, width: e.spaces.space48, marginEnd: e.spaces.space16 }, thumbnailContainerMedium: { height: e.spaces.space32, width: e.spaces.space32 } }));
         },
@@ -1038,6 +1137,15 @@
             }
             const s = t.default.create((e) => ({ root: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical } })),
                 o = r;
+        },
+        928088: (e, n, a) => {
+            a.d(n, { Z: () => r });
+            var l = a(202784),
+                i = a(325686);
+            const t = a(392237).default.create((e) => ({ root: { paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical } })),
+                r = function ({ children: e }) {
+                    return l.createElement(i.Z, { style: t.root }, e);
+                };
         },
         280278: (e, n, a) => {
             a.d(n, { ZP: () => y });
@@ -1160,4 +1268,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsRevamp-6107ac1a.8fe3d2ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsRevamp-6107ac1a.9d73ba2a.js.map
