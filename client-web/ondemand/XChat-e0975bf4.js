@@ -3,15 +3,15 @@
     ["ondemand.XChat-e0975bf4"],
     {
         547334: (e, t, n) => {
-            n.d(t, { P: () => I });
+            n.d(t, { P: () => E });
             var s = n(552322),
                 i = n(425522),
-                a = n(332161),
-                o = n(472275),
-                r = n(193686),
+                a = n(941204),
+                o = n(335944),
+                r = n(702024),
                 l = n(202784),
-                c = n(286689),
-                d = n(615014);
+                c = n(59463),
+                d = n(192576);
             function m({ src: e, type: t, dimensions: n }) {
                 const { width: i, height: a } = h(n),
                     [r, c] = (0, l.useState)(!1),
@@ -45,7 +45,7 @@
                 return s > 400 && ((s = 400), (n = s * t)), { width: n, height: s };
             }
             var p = n(812115),
-                v = n(871885),
+                v = n(89195),
                 f = n(517922),
                 g = n(556160);
             const j = i.com.x.models.dm.PostLoadingState,
@@ -62,14 +62,14 @@
             }
             const k = i.com.x.dms.model.MessageItemAttachment,
                 S = i.com.x.dms.chat.DmEvent,
-                E = i.com.x.dms.model.MediaUriState;
-            function I({ attachment: e, isReceived: t, onEvent: n, className: i }) {
+                I = i.com.x.dms.model.MediaUriState;
+            function E({ attachment: e, isReceived: t, onEvent: n, className: i }) {
                 if (e instanceof k.Post) return (0, s.jsx)(C, { isReceived: t, post: e, onEvent: n, className: i });
                 if (e instanceof k.UrlCard) return (0, s.jsx)(N, { urlCard: e, onEvent: n });
                 if (e instanceof k.Media && e instanceof k.Media.FromServer) {
-                    if ((e.uriState instanceof E.AttachmentNeedsResolving && n(new S.ResolveAttachment(e.uriState)), e.uriState instanceof E.ResolvedMedia)) return (0, s.jsx)(m, { src: e.uriState.uri, type: e.type, dimensions: e.dimensions });
-                    if (e.uriState instanceof E.Resolving) return (0, s.jsx)(x, { dimensions: e.dimensions });
-                    if (e.uriState === E.FailedToLoad) return (0, s.jsx)(u, { dimensions: e.dimensions });
+                    if ((e.uriState instanceof I.AttachmentNeedsResolving && n(new S.ResolveAttachment(e.uriState)), e.uriState instanceof I.ResolvedMedia)) return (0, s.jsx)(m, { src: e.uriState.uri, type: e.type, dimensions: e.dimensions });
+                    if (e.uriState instanceof I.Resolving) return (0, s.jsx)(x, { dimensions: e.dimensions });
+                    if (e.uriState === I.FailedToLoad) return (0, s.jsx)(u, { dimensions: e.dimensions });
                 }
                 return (0, s.jsx)(a.x, { color: t ? "text" : "white", children: "Attachment" });
             }
@@ -96,7 +96,7 @@
         759746: (e, t, n) => {
             n.d(t, { M: () => r });
             var s = n(552322),
-                i = n(789764),
+                i = n(475694),
                 a = n(350311);
             const o = ({ firstUrl: e, resolution: t, secondUrl: n, size: i = "xxLarge" }) => {
                     const o = ((e) => {
@@ -137,19 +137,19 @@
                         if (r.length >= 2) return (0, s.jsx)(o, { size: l, firstUrl: r[0]?.profileImageUrl, resolution: n, secondUrl: r[1]?.profileImageUrl });
                         if (1 === r.length) return (0, s.jsx)(a.s, { url: r[0]?.profileImageUrl, size: e, resolution: n });
                     }
-                    const c = r.slice(0, 4).map((e) => e.profileImageUrl ?? "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png");
+                    const c = r.slice(0, 4).map((e) => e?.profileImageUrl ?? "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png");
                     return (0, s.jsx)(i.o, { urls: c, size: e, resolution: n });
                 };
         },
         350311: (e, t, n) => {
             n.d(t, { j: () => a, s: () => o });
             var s = n(552322),
-                i = n(378364);
+                i = n(26429);
             const a = "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
                 o = ({ url: e, size: t, resolution: n = "200x200" }) => (0, s.jsx)(i.q, { url: e || a, size: t, resolution: n });
         },
         611463: (e, t, n) => {
-            n.d(t, { U: () => E, n: () => k });
+            n.d(t, { U: () => I, n: () => k });
             var s = n(552322),
                 i = n(425522),
                 a = n(202784),
@@ -221,7 +221,7 @@
                     !1,
                 );
             }
-            function E({ children: e }) {
+            function I({ children: e }) {
                 if (b) return;
                 const t = (0, g.useRelayEnvironment)(),
                     n = (0, j.z$)();
@@ -231,29 +231,29 @@
         200012: (e, t, n) => {
             n.d(t, { p: () => $e });
             var s = n(552322),
-                i = n(305399),
+                i = n(469745),
                 a = n(727071),
                 o = n(425522),
-                r = n(332161),
-                l = n(193686),
-                c = n(993165),
-                d = n(589259),
-                m = n(350311);
-            const x = ({ avatar: e, avatarSize: t, onCustomAvatarNeedsResolving: n }) => (e instanceof o.com.x.dms.model.MediaUriState.ResolvedMedia ? (0, s.jsx)(m.s, { url: e.uri, size: t }) : (e instanceof o.com.x.dms.model.MediaUriState.AvatarNeedsResolving && n(e), (0, s.jsx)(m.s, { size: t })));
-            var u = n(759746);
-            const h = ({ avatarSize: e, isInlineFacepile: t, onCustomAvatarNeedsResolving: n, titleState: i }) => {
-                if (i instanceof o.com.x.dms.model.DmTitleState.OneToOne) return (0, s.jsx)(m.s, { url: i.otherUser.profileImageUrl, size: e });
+                r = n(941204),
+                l = n(702024),
+                c = n(436059),
+                d = n(703612),
+                m = n(129558),
+                x = n(242782),
+                u = n(169355),
+                h = n(14269),
+                p = n(350311);
+            const v = ({ avatar: e, avatarSize: t, onCustomAvatarNeedsResolving: n }) => (e instanceof o.com.x.dms.model.MediaUriState.ResolvedMedia ? (0, s.jsx)(p.s, { url: e.uri, size: t }) : (e instanceof o.com.x.dms.model.MediaUriState.AvatarNeedsResolving && n(e), (0, s.jsx)(p.s, { size: t })));
+            var f = n(759746);
+            const g = ({ avatarSize: e, isInlineFacepile: t, onCustomAvatarNeedsResolving: n, titleState: i }) => {
+                if (i instanceof o.com.x.dms.model.DmTitleState.OneToOne) return (0, s.jsx)(p.s, { url: i.otherUser?.profileImageUrl, size: e });
                 if (i instanceof o.com.x.dms.model.DmTitleState.Group) {
-                    if (i.avatarType instanceof o.com.x.dms.model.DmTitleGroupAvatarType.CustomAvatar) return (0, s.jsx)(x, { avatar: i.avatarType.image, avatarSize: e, onCustomAvatarNeedsResolving: n });
-                    if (i.avatarType instanceof o.com.x.dms.model.DmTitleGroupAvatarType.Facepile) return (0, s.jsx)(u.M, { avatarSize: e, isInlineFacepile: t, users: i.avatarType.users.asJsReadonlyArrayView() });
+                    if (i.avatarType instanceof o.com.x.dms.model.DmTitleGroupAvatarType.CustomAvatar) return (0, s.jsx)(v, { avatar: i.avatarType.image, avatarSize: e, onCustomAvatarNeedsResolving: n });
+                    if (i.avatarType instanceof o.com.x.dms.model.DmTitleGroupAvatarType.Facepile) return (0, s.jsx)(f.M, { avatarSize: e, isInlineFacepile: t, users: i.avatarType.users.asJsReadonlyArrayView() });
                 }
-                return (0, s.jsx)(m.s, { size: e });
+                return (0, s.jsx)(p.s, { size: e });
             };
-            var p = n(80208),
-                v = n(38375),
-                f = n(817614),
-                g = n(332476),
-                j = n(537335),
+            var j = n(537335),
                 w = n(336984);
             const C = ({ previewWithMetadata: e }) => {
                     if (!e.preview) return null;
@@ -301,12 +301,12 @@
                 b = ({ onEvent: e, previewWithMetadata: t, isSelected: n }) => {
                     const i = t.preview?.timestampValue,
                         a = t.metadata.title instanceof o.com.x.dms.model.DmTitleState.OneToOne;
-                    return (0, s.jsxs)("div", { className: "flex flex-row", children: [(0, s.jsxs)("div", { className: `flex items-start grow p-2 mr-2 gap-5 rounded-lg hover:bg-gray-100 ${n && "bg-gray-0"} transition-colors cursor-pointer`, children: [(0, s.jsx)(h, { avatarSize: "xxLarge", titleState: t.metadata.title, onCustomAvatarNeedsResolving: (n) => e(new o.com.x.dms.convlist.ConversationListEvent.CustomAvatarNeedsResolving(t.conversationId, n)), isInlineFacepile: !0 }), (0, s.jsxs)("div", { className: "flex-1 gap-5", children: [(0, s.jsx)(d.R, { name: t.metadata.title.title, badges: a ? (0, w.r)(t.metadata.title.otherUser) : void 0 }), (0, s.jsx)(r.x, { color: "gray700", weight: t.isUnreadByMe ? "bold" : "normal", numberOfLines: 1, className: "break-all", children: (0, s.jsx)(C, { previewWithMetadata: t }) })] }), (0, s.jsxs)("div", { className: "flex flex-col items-end", children: [(0, s.jsxs)("div", { className: "flex flex-row gap-1 items-center h-5", children: [(0, s.jsx)(r.x, { size: "subtext3", children: i && (0, s.jsx)(j.Q, { timestamp: i }) }), t.isMuted && (0, s.jsx)(p.Z, { width: "14", height: "14", className: "text-gray-700" })] }), (0, s.jsxs)("div", { className: "flex flex-row gap-1 items-center h-5", children: [t.showReadByOthersIndicator === y.Read && (0, s.jsx)(v.Z, { width: "14", height: "14", className: "text-gray-700" }), t.showReadByOthersIndicator === y.Unread && (0, s.jsx)(f.Z, { width: "14", height: "14", className: "text-gray-700" }), t.isUnreadByMe && (0, s.jsx)(g.Z, { width: "14", height: "14", className: "text-blue-500" })] })] })] }), (0, s.jsx)("div", { className: `w-1 ${n ? "bg-text" : "bg-background"} justify-self-end rounded-lg` })] });
+                    return (0, s.jsxs)("div", { className: "flex flex-row", children: [(0, s.jsxs)("div", { style: { transitionTimingFunction: "cubic-bezier(0, 0.5, 0.6, 1)" }, className: `flex items-start grow p-2 mr-2 gap-5 rounded-lg hover:bg-gray-100 ${n && "bg-gray-0"} transition-colors duration-100 cursor-pointer`, children: [(0, s.jsx)(g, { avatarSize: "xxLarge", titleState: t.metadata.title, onCustomAvatarNeedsResolving: (n) => e(new o.com.x.dms.convlist.ConversationListEvent.CustomAvatarNeedsResolving(t.conversationId, n)), isInlineFacepile: !0 }), (0, s.jsxs)("div", { className: "flex-1 gap-5", children: [(0, s.jsx)(d.R, { name: t.metadata.title.title, badges: a ? (0, w.r)(t.metadata.title.otherUser) : void 0 }), (0, s.jsx)(r.x, { color: "gray700", weight: t.isUnreadByMe ? "bold" : "normal", numberOfLines: 1, className: "break-all", children: (0, s.jsx)(C, { previewWithMetadata: t }) })] }), (0, s.jsxs)("div", { className: "flex flex-col items-end", children: [(0, s.jsxs)("div", { className: "flex flex-row gap-1 items-center h-5", children: [(0, s.jsx)(r.x, { size: "subtext3", children: i && (0, s.jsx)(j.Q, { timestamp: i }) }), t.isMuted && (0, s.jsx)(m.Z, { width: "14", height: "14", className: "text-gray-700" })] }), (0, s.jsxs)("div", { className: "flex flex-row gap-1 items-center h-5", children: [t.showReadByOthersIndicator === y.Read && (0, s.jsx)(x.Z, { width: "14", height: "14", className: "text-gray-700" }), t.showReadByOthersIndicator === y.Unread && (0, s.jsx)(u.Z, { width: "14", height: "14", className: "text-gray-700" }), t.isUnreadByMe && (0, s.jsx)(h.Z, { width: "14", height: "14", className: "text-blue-500" })] })] })] }), (0, s.jsx)("div", { className: `w-1 ${n ? "bg-text" : "bg-background"} justify-self-end rounded-lg` })] });
                 };
             var N = n(202784),
                 k = n(110241),
-                S = n(983706);
-            const E = ({ component: e, conversations: t }) => {
+                S = n(921879);
+            const I = ({ component: e, conversations: t }) => {
                 const n = (0, k.a)(),
                     i = (0, N.useRef)(null),
                     a = (0, N.useRef)({ start: 0, end: 0 }),
@@ -344,14 +344,14 @@
                     );
                 return (0, s.jsx)(S.T, { api: i, onScroll: r, items: t, renderItem: c });
             };
-            var I = n(533476),
-                P = n(219622);
+            var E = n(533476),
+                P = n(138179);
             function M() {
                 return (0, s.jsxs)("div", { children: [(0, s.jsx)(r.x, { weight: "bold", children: "No chats yet" }), (0, s.jsx)(r.x, { color: "gray700", children: "Start chatting with end-to-end encryption" })] });
             }
             var R = n(984713),
-                A = n(741064);
-            const T = ({ component: e, shouldRegister: t }) =>
+                A = n(887491);
+            const T = ({ component: e, dialogParams: t }) =>
                     (0, s.jsxs)("div", {
                         className: "p-5 rounded-2xl border-2 border-gray-100 bg-gray-0 absolute bottom-4 left-4 right-4 flex flex-col gap-2 z-10",
                         children: [
@@ -390,13 +390,13 @@
                     return t ? (0, s.jsxs)("div", { className: "flex items-center gap-2", children: [(0, s.jsx)("div", { children: (0, s.jsx)(l.P, {}) }), (0, s.jsx)(r.x, { weight: "medium", children: t })] }) : null;
                 };
             var D = n(334038),
-                L = n(264531);
-            const U = o.com.x.dms.convlist,
+                U = n(264531);
+            const L = o.com.x.dms.convlist,
                 B = o.com.x.dms.InboxBottomDialog;
             function _({ component: e, setShowNewDM: t, showNewDM: n }) {
-                const i = (0, I._)(e.state),
+                const i = (0, E._)(e.state),
                     a = i.previews?.asJsReadonlyArrayView(),
-                    { showDebugOptions: o } = (0, L.XE)();
+                    { showDebugOptions: o } = (0, U.XE)();
                 return (0, s.jsxs)(s.Fragment, {
                     children: [
                         (0, s.jsxs)("div", {
@@ -415,15 +415,15 @@
                                                 (0, s.jsx)(c.z, {
                                                     icon: (0, s.jsx)(P.Z, { className: "h-5 w-5" }),
                                                     onClick: () => {
-                                                        e.onEvent(U.ConversationListEvent.FloatingActionButtonClicked);
+                                                        e.onEvent(L.ConversationListEvent.FloatingActionButtonClicked);
                                                     },
                                                 }),
                                             ],
                                         }),
                                     ],
                                 }),
-                                a && a.length > 0 ? (0, s.jsx)(E, { conversations: a, component: e }) : (0, s.jsx)(M, {}),
-                                i.showBottomDialog instanceof B.PinReminder && (0, s.jsx)(T, { component: e, shouldRegister: i.showBottomDialog.shouldRegister }),
+                                a && a.length > 0 ? (0, s.jsx)(I, { conversations: a, component: e }) : (0, s.jsx)(M, {}),
+                                i.showBottomDialog instanceof B.PinReminder && (0, s.jsx)(T, { component: e, dialogParams: i.showBottomDialog.params }),
                             ],
                         }),
                         n && (0, s.jsx)(R.x, { onVisibilityChange: t }),
@@ -434,12 +434,12 @@
                 V = n(787395),
                 Z = n(611463),
                 O = n(369962),
-                $ = n(782879),
-                F = n(468208);
+                $ = n(458872),
+                F = n(22199);
             const J = o.com.x.dms.chat.DmEvent.ResolveCustomGroupAvatar,
                 W = o.com.x.dms.model.DmTitleState,
                 X = ({ component: e }) => {
-                    const t = (0, I._)(e.state),
+                    const t = (0, E._)(e.state),
                         n = (0, i.a)("(max-width: 768px)"),
                         a = t.toolbarState instanceof o.com.x.dms.model.DmTitleState.OneToOne;
                     return (0, s.jsxs)("div", {
@@ -457,7 +457,7 @@
                                       variant: "primaryText",
                                   })
                                 : null,
-                            (0, s.jsx)(h, { avatarSize: "large", titleState: t.toolbarState, onCustomAvatarNeedsResolving: (t) => e.onEvent(new J(t)), isInlineFacepile: !1 }),
+                            (0, s.jsx)(g, { avatarSize: "large", titleState: t.toolbarState, onCustomAvatarNeedsResolving: (t) => e.onEvent(new J(t)), isInlineFacepile: !1 }),
                             (0, s.jsxs)("div", { className: "flex flex-col max-w-[60%]", children: [(0, s.jsx)(d.R, { name: t.toolbarState.title, badges: a ? (0, w.r)(t.toolbarState.otherUser) : void 0 }), (0, s.jsx)(q, { toolbarState: t.toolbarState })] }),
                         ],
                     });
@@ -467,18 +467,18 @@
             var H = n(617588),
                 Q = n(628047),
                 Y = n(853582),
-                ee = n(351417),
-                te = n(123848),
-                ne = n(662375),
+                ee = n(898100),
+                te = n(52053),
+                ne = n(543005),
                 se = n(379342),
                 ie = n(455091),
-                ae = n(653748),
-                oe = n(423011),
-                re = n(772669),
+                ae = n(844098),
+                oe = n(130629),
+                re = n(816828),
                 le = n(658358),
                 ce = n(466285),
                 de = n(620134),
-                me = n(353561);
+                me = n(875515);
             const xe = ({ conversationId: e, onVisibilityChange: t }) => {
                     const [n, i] = (0, N.useState)(null),
                         a = (0, Z.n)();
@@ -503,7 +503,7 @@
                     );
                 },
                 ue = ({ component: e }) => {
-                    const t = (0, I._)(e.state);
+                    const t = (0, E._)(e.state);
                     (0, le.e)(e.toasts);
                     const n = o.com.x.dms.mapToValueList(t.selectedUserIds).asJsReadonlyArrayView(),
                         i = (t) => () => {
@@ -559,11 +559,11 @@
                         ],
                     });
                 };
-            var he = n(527735),
-                pe = n(117113),
-                ve = n(791010),
-                fe = n(162807),
-                ge = n(89616);
+            var he = n(776604),
+                pe = n(429804),
+                ve = n(951671),
+                fe = n(384226),
+                ge = n(421018);
             const je = ({ handleParticipantClicked: e, handleParticipantMenuButtonClicked: t, menuItems: n, participant: i }) => {
                     if (!n || 0 === n.length) return null;
                     const a = n
@@ -584,16 +584,16 @@
                             })(e, i, t),
                         )
                         .filter((e) => !!e);
-                    return (0, s.jsx)(he.P, { items: a, trigger: (0, s.jsx)(c.z, { className: "justify-self-end", icon: (0, s.jsx)(ge.Z, { className: "text-gray-700" }), variant: "primaryText", color: "gray700", backgroundColor: "gray700", onClick: () => e(i.user) }) });
+                    return (0, s.jsx)(he.P, { items: a, trigger: (0, s.jsx)(c.z, { className: "justify-self-end", icon: (0, s.jsx)(ge.Z, { className: "text-gray-700" }), variant: "primaryText", color: "gray700", backgroundColor: "gray700", onClick: () => e(i.userId) }) });
                 },
                 we = ({ handleParticipantClicked: e, handleParticipantMenuButtonClicked: t, participants: n, menuItemsMap: i }) =>
                     (0, s.jsx)(s.Fragment, {
                         children: n.map((n) => {
-                            const a = i.get(n.user.id)?.asJsReadonlyArrayView();
-                            return (0, s.jsxs)("div", { className: "flex flex-row w-full gap-2 py-2 items-center", children: [(0, s.jsx)(m.s, { url: n.user.profileImageUrl, size: "large" }), (0, s.jsx)("div", { className: "flex-1", children: (0, s.jsx)(d.R, { name: n.user.displayName, screenName: n.user.screenName, badges: (0, w.r)(n.user), isStacked: !0 }) }), (0, s.jsx)(je, { participant: n, menuItems: a, handleParticipantClicked: e, handleParticipantMenuButtonClicked: t })] }, n.user.screenName);
+                            const a = i.get(n.userId)?.asJsReadonlyArrayView();
+                            return (0, s.jsxs)("div", { className: "flex flex-row w-full gap-2 py-2 items-center", children: [(0, s.jsx)(p.s, { url: n.user?.profileImageUrl, size: "large" }), (0, s.jsx)("div", { className: "flex-1", children: (0, s.jsx)(d.R, { name: n.user?.displayName || "", screenName: n.user?.screenName, badges: (0, w.r)(n.user), isStacked: !0 }) }), (0, s.jsx)(je, { participant: n, menuItems: a, handleParticipantClicked: e, handleParticipantMenuButtonClicked: t })] }, n.userId.userIdString);
                         }),
                     });
-            var Ce = n(568366);
+            var Ce = n(145731);
             function ye({ icon: e, destructive: t, onClick: n, title: i, value: a, showChevron: o = !1 }) {
                 return (0, s.jsx)("div", { className: "my-2 rounded-xl bg-gray-0 cursor-pointer w-full", onClick: n, children: (0, s.jsxs)("div", { className: "flex flex-row items-center justify-between p-4", children: [(0, s.jsxs)("div", { className: `flex items-center gap-2 ${t && "text-red-500"}`, children: [e, (0, s.jsx)(r.x, { size: "body", weight: "medium", color: t ? "red500" : "text", children: i })] }), (0, s.jsxs)("div", { className: "flex items-center gap-2", children: [a && (0, s.jsx)(r.x, { size: "body", color: "gray500", children: a }), o && (0, s.jsx)(te.Z, { className: "text-gray-500" })] })] }) });
             }
@@ -624,8 +624,8 @@
                     : null;
             }
             const Se = ({ title: e, onBackClicked: t }) => (0, s.jsxs)("div", { className: "flex flex-shrink-0 items-center h-16 border-b border-border w-full relative", children: [(0, s.jsx)("div", { className: "absolute left-2", children: (0, s.jsx)(c.z, { icon: (0, s.jsx)($.Z, {}), onClick: t, variant: "primaryText" }) }), (0, s.jsx)(r.x, { size: "headline1", weight: "bold", className: "flex-1 text-center", children: e })] }),
-                Ee = ({ onEvent: e, ttl: t }) => (0, s.jsx)(ye, { icon: (0, s.jsx)(F.Z, {}), title: "Vanishing Mode", showChevron: !0, value: t ? (0, O.L)(t) : "Off", onClick: e }),
-                Ie = o.com.x.dms.convinfo;
+                Ie = ({ onEvent: e, ttl: t }) => (0, s.jsx)(ye, { icon: (0, s.jsx)(F.Z, {}), title: "Vanishing Mode", showChevron: !0, value: t ? (0, O.L)(t) : "Off", onClick: e }),
+                Ee = o.com.x.dms.convinfo;
             function Pe({ id: e }) {
                 const [t, n] = (0, N.useState)(null),
                     i = (0, Z.n)(),
@@ -637,7 +637,7 @@
                             s = i.convInfoComponent(
                                 t,
                                 o.com.x.models.dm.XConversationId.Companion.fromStringRequired(e),
-                                new Ie.ConversationInfoCallbacks(
+                                new Ee.ConversationInfoCallbacks(
                                     () => {
                                         a.toConversation(e);
                                     },
@@ -655,6 +655,7 @@
                                     () => {
                                         a.toVanishingMode(e);
                                     },
+                                    () => {},
                                 ),
                             );
                         return (
@@ -669,72 +670,72 @@
             }
             function Me({ component: e, setShowAddGroupParticipants: t, showAddGroupParticipants: n }) {
                 const { t: i } = (0, ie.$G)(),
-                    a = (0, I._)(e.state);
+                    a = (0, E._)(e.state);
                 (0, le.e)(e.toasts);
                 const m = (0, N.useCallback)(
                         (t) => {
-                            e.onEvent(new Ie.ConversationInfoEvent.ParticipantClicked(t));
+                            e.onEvent(new Ee.ConversationInfoEvent.ParticipantClicked(t));
                         },
                         [e],
                     ),
                     x = (0, N.useCallback)(
                         (t, n) => {
-                            e.onEvent(new Ie.ConversationInfoEvent.ParticipantMenuButtonClicked(t, n));
+                            e.onEvent(new Ee.ConversationInfoEvent.ParticipantMenuButtonClicked(t, n));
                         },
                         [e],
                     );
-                if (a.contents === Ie.ConversationInfoContents.Loading) return (0, s.jsx)(l.P, {});
-                if (!(a.contents instanceof Ie.ConversationInfoContents.Loaded)) return null;
-                const h = a.contents.convId instanceof o.com.x.models.dm.XConversationId.Group,
-                    p = a.contents.metadata.title instanceof o.com.x.dms.model.DmTitleState.OneToOne,
-                    v = a.contents.peopleSection,
-                    f = (t) => {
+                if (a.contents === Ee.ConversationInfoContents.Loading) return (0, s.jsx)(l.P, {});
+                if (!(a.contents instanceof Ee.ConversationInfoContents.Loaded)) return null;
+                const u = a.contents.convId instanceof o.com.x.models.dm.XConversationId.Group,
+                    h = a.contents.metadata.title instanceof o.com.x.dms.model.DmTitleState.OneToOne,
+                    p = a.contents.peopleSection,
+                    v = (t) => {
                         e.onEvent(t);
                     };
                 return (0, s.jsxs)("div", {
                     className: "flex flex-col w-full items-center self-center h-screen",
                     children: [
-                        n && h && (0, s.jsx)(xe, { conversationId: a.contents.convId, onVisibilityChange: t }),
+                        n && u && (0, s.jsx)(xe, { conversationId: a.contents.convId, onVisibilityChange: t }),
                         (0, s.jsx)(Se, {
                             onBackClicked: (t) => {
-                                t.stopPropagation(), e.onEvent(Ie.ConversationInfoEvent.BackButtonClicked);
+                                t.stopPropagation(), e.onEvent(Ee.ConversationInfoEvent.BackButtonClicked);
                             },
                             title: a.toolbarTitle === o.com.x.dms.convinfo.ConversationInfoTitle.Group ? i("Group info") : i("Conversation info"),
                         }),
                         (0, s.jsxs)("div", {
                             className: "w-full overflow-y-auto pb-3",
                             children: [
-                                (0, s.jsxs)("div", { className: "flex flex-col items-center py-6 gap-2", children: [(0, s.jsx)("div", { className: "w-28 h-28 mb-4", children: (0, s.jsx)(u.M, { avatarSize: "fill", isInlineFacepile: !0, resolution: "400x400", users: a.contents.metadata.otherUsersOrSelf.asJsReadonlyArrayView() }) }), (0, s.jsx)(d.R, { name: a.contents.metadata.title.title, badges: p ? (0, w.r)(a.contents.metadata.title.otherUser) : void 0 }), p && (0, s.jsx)(ee.Q, { screenName: a.contents.metadata.title.otherUser.screenName }), a.contents.showEditGroupAction && (0, s.jsx)(c.z, { variant: "brandText", children: i("Edit") })] }),
+                                (0, s.jsxs)("div", { className: "flex flex-col items-center py-6 gap-2", children: [(0, s.jsx)("div", { className: "w-28 h-28 mb-4", children: (0, s.jsx)(f.M, { avatarSize: "fill", isInlineFacepile: !0, resolution: "400x400", users: a.contents.metadata.otherUsersOrSelf?.asJsReadonlyArrayView() }) }), (0, s.jsx)(d.R, { name: a.contents.metadata.title.title, badges: h ? (0, w.r)(a.contents.metadata.title.otherUser) : void 0 }), h && a.contents.metadata.title.otherUser && (0, s.jsx)(ee.Q, { screenName: a.contents.metadata.title.otherUser.screenName }), a.contents.showEditGroupAction && (0, s.jsx)(c.z, { variant: "brandText", children: i("Edit") })] }),
                                 !a.contents.metadata.isReadOnly &&
                                     (0, s.jsx)("div", {
                                         className: "w-full px-4",
-                                        children: (0, s.jsx)(Ee, {
+                                        children: (0, s.jsx)(Ie, {
                                             ttl: a.contents.metadata.attributes?.defaultTtl?.inWholeMilliseconds,
                                             onEvent: () => {
-                                                e.onEvent(Ie.ConversationInfoEvent.DisappearingMessagesClicked);
+                                                e.onEvent(Ee.ConversationInfoEvent.DisappearingMessagesClicked);
                                             },
                                         }),
                                     }),
-                                v
+                                p
                                     ? (0, s.jsxs)("div", {
                                           className: "w-full px-4 mt-4",
                                           children: [
-                                              (0, s.jsxs)("div", { className: "w-full ps-4", children: [(0, s.jsx)(r.x, { size: "headline2", weight: "bold", className: "mb-2", children: i("People") }), (0, s.jsx)(we, { handleParticipantClicked: m, handleParticipantMenuButtonClicked: x, participants: v.participants.asJsReadonlyArrayView(), menuItemsMap: v.menuItems.asJsReadonlyMapView() })] }),
-                                              v.showMoreUsersLink
+                                              (0, s.jsxs)("div", { className: "w-full ps-4", children: [(0, s.jsx)(r.x, { size: "headline2", weight: "bold", className: "mb-2", children: i("People") }), (0, s.jsx)(we, { handleParticipantClicked: m, handleParticipantMenuButtonClicked: x, participants: p.participants.asJsReadonlyArrayView(), menuItemsMap: p.menuItems.asJsReadonlyMapView() })] }),
+                                              p.showMoreUsersLink
                                                   ? (0, s.jsx)(c.z, {
                                                         className: "w-full pe-0",
                                                         variant: "primaryText",
                                                         onClick: () => {
-                                                            e.onEvent(Ie.ConversationInfoEvent.TotalNumMembersClicked);
+                                                            e.onEvent(Ee.ConversationInfoEvent.TotalNumMembersClicked);
                                                         },
-                                                        children: (0, s.jsxs)("div", { className: "flex flex-row justify-between items-center py-2 w-full", children: [(0, s.jsx)(r.x, { size: "body", weight: "medium", children: i("View all {number} members", { number: v.showMoreUsersLink + v.participants.asJsReadonlyArrayView().length }) }), (0, s.jsx)(te.Z, { className: "me-1.5", width: "24", height: "24" })] }),
+                                                        children: (0, s.jsxs)("div", { className: "flex flex-row justify-between items-center py-2 w-full", children: [(0, s.jsx)(r.x, { size: "body", weight: "medium", children: i("View all {number} members", { number: p.showMoreUsersLink + p.participants.asJsReadonlyArrayView().length }) }), (0, s.jsx)(te.Z, { className: "me-1.5", width: "24", height: "24" })] }),
                                                     })
                                                   : null,
                                               a.contents.peopleSection.canAddPeople
                                                   ? (0, s.jsx)(ye, {
                                                         icon: (0, s.jsx)(ne.Z, {}),
                                                         onClick: () => {
-                                                            e.onEvent(Ie.ConversationInfoEvent.AddPeopleClicked);
+                                                            e.onEvent(Ee.ConversationInfoEvent.AddPeopleClicked);
                                                         },
                                                         title: i("Add people"),
                                                         showChevron: !0,
@@ -743,14 +744,14 @@
                                           ],
                                       })
                                     : null,
-                                (0, s.jsx)("div", { className: "mt-6 px-4 space-y-2 w-full", children: a.contents.bottomButtons.asJsReadonlyArrayView().map((e) => (0, s.jsx)(ke, { button: e, onEvent: f }, e.name)) }),
+                                (0, s.jsx)("div", { className: "mt-6 px-4 space-y-2 w-full", children: a.contents.bottomButtons.asJsReadonlyArrayView().map((e) => (0, s.jsx)(ke, { button: e, onEvent: v }, e.name)) }),
                             ],
                         }),
                     ],
                 });
             }
             var Re = n(463341),
-                Ae = n(994120),
+                Ae = n(699416),
                 Te = n(167285);
             const ze = o.com.x.dms.vanishingmode,
                 De = ({ id: e }) => {
@@ -784,14 +785,14 @@
                                         e.stopPropagation(), n?.handleEvent(ze.VanishingModeEvent.BackButtonClicked);
                                     },
                                 }),
-                                n ? (0, s.jsx)(Le, { component: n }) : (0, s.jsx)("div", { className: "flex items-center h-full", children: (0, s.jsx)(l.P, {}) }),
+                                n ? (0, s.jsx)(Ue, { component: n }) : (0, s.jsx)("div", { className: "flex items-center h-full", children: (0, s.jsx)(l.P, {}) }),
                             ],
                         })
                     );
                 },
-                Le = ({ component: e }) => {
+                Ue = ({ component: e }) => {
                     const { t } = (0, ie.$G)(),
-                        n = (0, I._)(e.state);
+                        n = (0, E._)(e.state);
                     return (0, s.jsxs)("div", {
                         className: "flex flex-col items-center w-full px-4 overflow-y-auto gap-6 py-6",
                         children: [
@@ -817,7 +818,7 @@
                         ],
                     });
                 },
-                Ue = o.com.x.dms.participantlist,
+                Le = o.com.x.dms.participantlist,
                 Be = ({ id: e }) => {
                     const { t } = (0, ie.$G)(),
                         [n, i] = (0, N.useState)(null),
@@ -829,7 +830,7 @@
                                 n = a.participantListComponent(
                                     t,
                                     o.com.x.models.dm.XConversationId.Companion.fromStringRequired(e),
-                                    new Ue.ParticipantListCallbacks(
+                                    new Le.ParticipantListCallbacks(
                                         () => {
                                             r.toConversationInfo(e);
                                         },
@@ -849,7 +850,7 @@
                                 (0, s.jsx)(Se, {
                                     title: t("All participants"),
                                     onBackClicked: (e) => {
-                                        e.stopPropagation(), n?.handleEvent(Ue.ParticipantListEvent.BackButtonClicked);
+                                        e.stopPropagation(), n?.handleEvent(Le.ParticipantListEvent.BackButtonClicked);
                                     },
                                 }),
                                 n ? (0, s.jsx)(_e, { component: n }) : (0, s.jsx)("div", { className: "flex items-center h-full", children: (0, s.jsx)(l.P, {}) }),
@@ -858,17 +859,17 @@
                     );
                 },
                 _e = ({ component: e }) => {
-                    const t = (0, I._)(e.state);
+                    const t = (0, E._)(e.state);
                     (0, le.e)(e.toasts);
                     const n = (0, N.useCallback)(
                             (t) => {
-                                e.handleEvent(new Ue.ParticipantListEvent.ParticipantClicked(t));
+                                e.handleEvent(new Le.ParticipantListEvent.ParticipantClicked(t));
                             },
                             [e],
                         ),
                         i = (0, N.useCallback)(
                             (t, n) => {
-                                e.handleEvent(new Ue.ParticipantListEvent.ParticipantMenuButtonClicked(t, n));
+                                e.handleEvent(new Le.ParticipantListEvent.ParticipantMenuButtonClicked(t, n));
                             },
                             [e],
                         );
@@ -938,7 +939,7 @@
                 );
             }
             function Ze({ component: e }) {
-                const t = (0, I._)(e.state);
+                const t = (0, E._)(e.state);
                 return (0, s.jsxs)("div", { className: "flex flex-col h-screen flex-grow", children: [(0, s.jsx)(X, { component: e }), (0, s.jsx)("div", { className: "flex-1 overflow-hidden", children: (0, s.jsx)(Re.Bu, { children: (0, s.jsx)(V.r, { component: e }) }) }), !t.isReadOnly && (0, s.jsx)(G.R, { component: e })] });
             }
             var Oe = n(607499);
@@ -983,9 +984,9 @@
                     const o = (0, i.a)("(max-width: 768px)"),
                         r = (0, a.U)().id,
                         c = void 0 === r || "" === r;
-                    return (0, I._)(e.state).isInitializing ? (0, s.jsx)("div", { className: "flex flex-col justify-center h-screen w-full", children: (0, s.jsx)(l.P, {}) }) : o ? (0, s.jsx)("div", { className: "flex w-full", children: c ? (0, s.jsx)(_, { component: e, setShowNewDM: t, showNewDM: n }) : (0, s.jsx)(Ge, {}) }) : (0, s.jsxs)("div", { className: "flex w-full", children: [(0, s.jsx)("div", { className: "w-[35%]", children: (0, s.jsx)(_, { component: e, setShowNewDM: t, showNewDM: n }) }), (0, s.jsx)("div", { className: "w-[65%]", children: (0, s.jsx)(Ge, {}) })] });
+                    return (0, E._)(e.state).isInitializing ? (0, s.jsx)("div", { className: "flex flex-col justify-center h-screen w-full", children: (0, s.jsx)(l.P, {}) }) : o ? (0, s.jsx)("div", { className: "flex w-full", children: c ? (0, s.jsx)(_, { component: e, setShowNewDM: t, showNewDM: n }) : (0, s.jsx)(Ge, {}) }) : (0, s.jsxs)("div", { className: "flex w-full", children: [(0, s.jsx)("div", { className: "w-[35%]", children: (0, s.jsx)(_, { component: e, setShowNewDM: t, showNewDM: n }) }), (0, s.jsx)("div", { className: "w-[65%]", children: (0, s.jsx)(Ge, {}) })] });
                 };
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-e0975bf4.ebfba34a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-e0975bf4.73db476a.js.map

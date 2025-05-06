@@ -1710,6 +1710,7 @@
                 e("d78131b9", function (a) {
                     return "Lisää/poista @" + a.screenName + " listoihin/listoista";
                 }),
+                e("b3b642fc", "Why this post?"),
                 e("fb4ee11c", "Miksi tämä mainos?"),
                 e("ad50e7d9", function (a) {
                     return "Näytä " + a.entity + "tilastot";
@@ -1908,9 +1909,9 @@
                 e("b6510e68", "Kopioi artikkelin URL jakoa varten."),
                 e("e4a6e006", "Jokin meni pieleen. Yritä uudelleen."),
                 e("eff483e0", "Kun olet julkaissut, poimi artikkelin jakolinkki."),
-                e("ca15dd4e", "Luonnos"),
-                e("bb40bf66", "Julkaistu");
-            e("h107935c", "Tallennettu viimeksi nyt"),
+                e("ca15dd4e", "Luonnos");
+            e("bb40bf66", "Julkaistu"),
+                e("h107935c", "Tallennettu viimeksi nyt"),
                 e("a753a870", "Käytä"),
                 e("afccc67e", "Kopioi linkki artikkeliin"),
                 e("beb24e9e", "URL kopioitu leikepöydälle"),
@@ -2427,6 +2428,7 @@
                     return "Ilmianna " + a.entity;
                 }),
                 e("e3fd237e", "Ilmianna mainos"),
+                e("ebb7662a", "Ilmianna julkaisu"),
                 e("d1e21610", "Ilmoita NetzDG-lain rikkomisesta"),
                 e("d7513755", function (a) {
                     return "Hae käyttäjän @" + a.screenName + " julkaisuista tässä Yhteisössä";
@@ -2959,10 +2961,10 @@
                 e("c6f58084", "Kehittäjät"),
                 e("d83f18d2", "Hakemisto"),
                 e("hc5aa17c", "Hanki X-sovellus"),
-                e("j0693948", "Hanki Grok-sovellus"),
-                e("af781666", "Mitä ihmiset miettivät?"),
-                e("ad35153e", "beta");
-            e("fbf83158", "Varoitus: maksu epäonnistui"),
+                e("j0693948", "Hanki Grok-sovellus");
+            e("af781666", "Mitä ihmiset miettivät?"),
+                e("ad35153e", "beta"),
+                e("fbf83158", "Varoitus: maksu epäonnistui"),
                 e("jadeb4da", "Päivitä maksutapatietosi viipymättä, jotta et menetä tilausetujasi."),
                 e("bce3726a", "Päivitä laskutustiedot"),
                 e("fce9ecce", "Ehdotetut videot"),
@@ -3875,10 +3877,10 @@
                 e("j245c654", "Puhujat"),
                 e("eda23a02", "Kuuntelijat"),
                 e("b90eb348", "Kutsu puhumaan"),
-                e("d9a63e82", "Poista puhujista"),
-                e("bd917b26", "Kutsu co-hostiksi"),
-                e("d7357e7e", "Poista co-hosteista");
-            e("bf307fc0", "Estä ja poista"),
+                e("d9a63e82", "Poista puhujista");
+            e("bd917b26", "Kutsu co-hostiksi"),
+                e("d7357e7e", "Poista co-hosteista"),
+                e("bf307fc0", "Estä ja poista"),
                 e("ccf2f24e", "Ilmianto"),
                 e("i22835de", "Hyväksy"),
                 e("cb59a0fe", "Epää"),
@@ -4152,7 +4154,6 @@
                 e("bcbf5b6e", "Jaetaan"),
                 e("j7b5c844", "Olet itse vastuussa keskusteluista, jotka jaat julkisesti. Vältä kertomasta arkaluonteista ja luottamuksellista tietoa itsestäsi tai muista keskustellessasi Grokin kanssa (lisätietoa ohjekeskuksesta)."),
                 e("c9f7c196", "Ohjekeskus"),
-                e("b63d3d36", "Liitä"),
                 e("c65f7308", "Palvelimilla pitää kiirettä"),
                 e("f2a8655e", "Grokin edistynyt malli ei ole saatavilla juuri nyt."),
                 e("c26b9b9c", "Tiedosto"),
@@ -4908,9 +4909,9 @@
                 e("jb6f9292", 'sisältää koko fraasin "ai startup"'),
                 e("j8ee77c4", '"ai startup"'),
                 e("d0480758", 'sisältää joko termin "ai" tai "startup" (tai molemmat)'),
-                e("f0048fa2", "ai OR startup"),
-                e("da0df186", 'sisältää termin "ai", mutta ei termiä "startup"');
-            e("f2f463ea", "ai -startup"),
+                e("f0048fa2", "ai OR startup");
+            e("da0df186", 'sisältää termin "ai", mutta ei termiä "startup"'),
+                e("f2f463ea", "ai -startup"),
                 e("a10a357e", 'sisältää termin "ai" ja on saanut ainakin 50 tykkäystä'),
                 e("ca8ed1e8", "ai min_faves:50"),
                 e("i945a3f2", 'sisältää termin "ai" ja URL-osoitteen, jossa esiintyy sana "grok"'),
@@ -5874,9 +5875,9 @@
                 e("hb52cc4a", "Yritä myöhemmin uudelleen."),
                 e("e50e1bb0", "Tervetuloa Yhteisöihin"),
                 e("i6829daa", "Yhteisöt ovat moderoituja keskusteluryhmiä, joista X:n käyttäjät löytävät samanhenkistä väkeä."),
-                e("fc5c6914", "Tapaa muita samoista asioista kiinnostuneita"),
-                e("aa1a9820", "Liity yhteisöihin, niin voit pitää yhteyttä ihmisiin, jotka ovat kiinnostuneista samoista asioista kuin sinä.");
-            e("edef4c82", "Julkaise suoraan Yhteisöön"),
+                e("fc5c6914", "Tapaa muita samoista asioista kiinnostuneita");
+            e("aa1a9820", "Liity yhteisöihin, niin voit pitää yhteyttä ihmisiin, jotka ovat kiinnostuneista samoista asioista kuin sinä."),
+                e("edef4c82", "Julkaise suoraan Yhteisöön"),
                 e("a7640df6", "Yhteisön jäsenet ja seuraajasi näkevät julkaisusi."),
                 e("h3bb8068", "Löydä samanhenkistä väkeä"),
                 e("a709f8f8", "Järjestelmänvalvojat ja moderaattorit auttavat hallitsemaan Yhteisöjä ja pitämään keskustelut raiteillaan."),
@@ -6872,9 +6873,9 @@
                 e("g337328e", "Saa vastauksillesi paras näkyvyys."),
                 e("fa006202", "Videon toisto taustalla"),
                 e("jf389778", "Katsele selatessasi tai käyttäessäsi muita sovelluksia"),
-                e("f2977d80", "Kirjanmerkkikansiot"),
-                e("j1d3d910", "Pidä tallennetut julkaisut helposti tallessa");
-            e("f0f48668", "Premium-tuki"),
+                e("f2977d80", "Kirjanmerkkikansiot");
+            e("j1d3d910", "Pidä tallennetut julkaisut helposti tallessa"),
+                e("f0f48668", "Premium-tuki"),
                 e("c3148608", "Saa apu nopeammin sitä tarvitessasi"),
                 e("b485ca6e", "Kohokohdat-välilehti"),
                 e("d438955e", "Nosta suosituimpia julkaisujasi"),
@@ -7848,8 +7849,7 @@
                 e("c80160d3", "mainontasivulta"),
                 e("ff0edac0", "Haluatko varmasti perua tilauksesi?"),
                 e("h2ac0348", "En, palaan takaisin"),
-                e("dbf9667e", "Olen varma"),
-                e("j7592572", "U-käännös");
+                e("dbf9667e", "Olen varma");
             function s(a, t) {
                 for (var i = 0; i < t.length; i++) {
                     var e = t[i];
@@ -7888,7 +7888,8 @@
                     u(a, t)
                 );
             }
-            e("ee778942", "Liikennevalot"),
+            e("j7592572", "U-käännös"),
+                e("ee778942", "Liikennevalot"),
                 e("fdd57981", function (a) {
                     return "Saat meiltä " + a.totalAmount + " dollaria mainoskrediittiä.";
                 }),
@@ -8916,13 +8917,13 @@
                 }),
                 e("dc718e53", function (a) {
                     return "+" + a.count + " muu" + n(a.count, "", "ta");
-                }),
-                e("d0e7b11b", function (a) {
-                    return a.date + " klo " + a.time;
                 });
-            e("b4349cbc", function (a) {
-                return "" + a.relativeDay;
+            e("d0e7b11b", function (a) {
+                return a.date + " klo " + a.time;
             }),
+                e("b4349cbc", function (a) {
+                    return "" + a.relativeDay;
+                }),
                 e("ebe41367", function (a) {
                     return "Aika " + a.time;
                 }),
@@ -13200,4 +13201,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.524083da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.ffdb184a.js.map

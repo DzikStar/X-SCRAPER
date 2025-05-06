@@ -1710,6 +1710,7 @@
                 t("d78131b9", function (e) {
                     return "Lägg till/ta bort @" + e.screenName + " från listor";
                 }),
+                t("b3b642fc", "Why this post?"),
                 t("fb4ee11c", "Varför visas denna annons?"),
                 t("ad50e7d9", function (e) {
                     return "Visa statistik om " + e.entity;
@@ -1908,9 +1909,9 @@
                 t("b6510e68", "Kopiera webbadressen till artikeln så att du kan dela den."),
                 t("e4a6e006", "Något gick snett. Försök igen."),
                 t("eff483e0", "Få en länk för att dela artikeln efter att ha publicerat den."),
-                t("ca15dd4e", "Utkast"),
-                t("bb40bf66", "Publicerat");
-            t("h107935c", "Senast sparat nyss"),
+                t("ca15dd4e", "Utkast");
+            t("bb40bf66", "Publicerat"),
+                t("h107935c", "Senast sparat nyss"),
                 t("a753a870", "Tillämpa"),
                 t("afccc67e", "Kopiera länken till artikeln"),
                 t("beb24e9e", "Webbadressen har kopierats till Urklipp"),
@@ -2427,6 +2428,7 @@
                     return "Anmäl " + e.entity;
                 }),
                 t("e3fd237e", "Anmäl annons"),
+                t("ebb7662a", "Rapportera inlägget"),
                 t("d1e21610", "Anmäl NetzDG-överträdelse"),
                 t("d7513755", function (e) {
                     return "Sök inlägg av @" + e.screenName + " i denna grupp";
@@ -2959,10 +2961,10 @@
                 t("c6f58084", "Utvecklare"),
                 t("d83f18d2", "Katalog"),
                 t("hc5aa17c", "Skaffa X-appen"),
-                t("j0693948", "Skaffa Grok-appen"),
-                t("af781666", "Vad tänker folk?"),
-                t("ad35153e", "beta");
-            t("fbf83158", "Varning: Betalningen misslyckades"),
+                t("j0693948", "Skaffa Grok-appen");
+            t("af781666", "Vad tänker folk?"),
+                t("ad35153e", "beta"),
+                t("fbf83158", "Varning: Betalningen misslyckades"),
                 t("jadeb4da", "Uppdatera din betalningsmetod innan du förlorar dina prenumerationsförmåner."),
                 t("bce3726a", "Uppdatera faktureringsuppgifterna"),
                 t("fce9ecce", "Föreslagna videor"),
@@ -3875,10 +3877,10 @@
                 t("j245c654", "Talare"),
                 t("eda23a02", "Åhörare"),
                 t("b90eb348", "Bjud in att prata"),
-                t("d9a63e82", "Ta bort från talare"),
-                t("bd917b26", "Bjud in som medvärd"),
-                t("d7357e7e", "Ta bort från medvärdar");
-            t("bf307fc0", "Blockera och ta bort"),
+                t("d9a63e82", "Ta bort från talare");
+            t("bd917b26", "Bjud in som medvärd"),
+                t("d7357e7e", "Ta bort från medvärdar"),
+                t("bf307fc0", "Blockera och ta bort"),
                 t("ccf2f24e", "Rapport"),
                 t("i22835de", "Godkänn"),
                 t("cb59a0fe", "Neka"),
@@ -4152,7 +4154,6 @@
                 t("bcbf5b6e", "Delning"),
                 t("j7b5c844", "Du är ansvarig för samtalen du delar offentligt. Undvik att dela känslig och konfidentiell information om dig eller andra i dina samtal med Grok (se vårt hjälpcenter)."),
                 t("c9f7c196", "Hjälp"),
-                t("b63d3d36", "Bifoga"),
                 t("c65f7308", "Servrarna går för högtryck"),
                 t("f2a8655e", "Avancerade Grok-verktyg är inte tillgängliga nu."),
                 t("c26b9b9c", "Fil"),
@@ -4908,9 +4909,9 @@
                 t("jb6f9292", "innehåller den exakta frasen ”nystartat ai-bolag”"),
                 t("j8ee77c4", "”nystartat ai-bolag”"),
                 t("d0480758", "innehåller antingen ”ai” eller ”nystartat” (eller båda)"),
-                t("f0048fa2", "ai eller nystartat"),
-                t("da0df186", "innehåller ”ai” men inte ”nystartat”");
-            t("f2f463ea", "ai -nystartat"),
+                t("f0048fa2", "ai eller nystartat");
+            t("da0df186", "innehåller ”ai” men inte ”nystartat”"),
+                t("f2f463ea", "ai -nystartat"),
                 t("a10a357e", "innehåller ”ai” och har minst 50 gilla-markeringar"),
                 t("ca8ed1e8", "ai min_faves:50"),
                 t("i945a3f2", "innehåller ”ai” och en webbadress med ordet ”grok” i"),
@@ -5874,9 +5875,9 @@
                 t("hb52cc4a", "Försök igen senare."),
                 t("e50e1bb0", "Välkommen till Grupper"),
                 t("i6829daa", "Grupper är modererade diskussionsgrupper som folk på X kan ansluta och bidra till."),
-                t("fc5c6914", "Träffa andra med dina intressen"),
-                t("aa1a9820", "Gå med i grupper och få kontakt med personer med samma intressen.");
-            t("edef4c82", "Gör inlägg direkt till en grupp"),
+                t("fc5c6914", "Träffa andra med dina intressen");
+            t("aa1a9820", "Gå med i grupper och få kontakt med personer med samma intressen."),
+                t("edef4c82", "Gör inlägg direkt till en grupp"),
                 t("a7640df6", "Dina inlägg delas med gruppmedlemmar och dina följare."),
                 t("h3bb8068", "Få hjälp när du behöver det"),
                 t("a709f8f8", "Administratörer och moderatorer hanterar grupper och håller ordning på samtalen."),
@@ -6872,9 +6873,9 @@
                 t("g337328e", "Gör dina svar så synliga det bara går"),
                 t("fa006202", "Videouppspelning i bakgrunden"),
                 t("jf389778", "Titta medan du surfar eller använder andra appar"),
-                t("f2977d80", "Mappar med bokmärken"),
-                t("j1d3d910", "Håll dina sparade inlägg ordnade så att de är lätta att hitta");
-            t("f0f48668", "Premiumsupport"),
+                t("f2977d80", "Mappar med bokmärken");
+            t("j1d3d910", "Håll dina sparade inlägg ordnade så att de är lätta att hitta"),
+                t("f0f48668", "Premiumsupport"),
                 t("c3148608", "Få hjälp snabbare när du behöver det"),
                 t("b485ca6e", "Fliken Höjdpunkter"),
                 t("d438955e", "Visa upp dina främsta inlägg"),
@@ -7848,8 +7849,7 @@
                 t("c80160d3", "Annonsering"),
                 t("ff0edac0", "Vill du verkligen säga upp prenumerationen?"),
                 t("h2ac0348", "Nej, ta mig tillbaka"),
-                t("dbf9667e", "Jag är säker"),
-                t("j7592572", "U-sväng");
+                t("dbf9667e", "Jag är säker");
             function i(e, a) {
                 for (var n = 0; n < a.length; n++) {
                     var t = a[n];
@@ -7888,7 +7888,8 @@
                     d(e, a)
                 );
             }
-            t("ee778942", "Trafikljus"),
+            t("j7592572", "U-sväng"),
+                t("ee778942", "Trafikljus"),
                 t("fdd57981", function (e) {
                     return "Vi vill erbjuda dig en annonskredit på " + e.totalAmount + " USD som ett engångserbjudande.";
                 }),
@@ -8916,13 +8917,13 @@
                 }),
                 t("dc718e53", function (e) {
                     return e.count + " till+";
-                }),
-                t("d0e7b11b", function (e) {
-                    return e.date + " kl " + e.time;
                 });
-            t("b4349cbc", function (e) {
-                return "" + e.relativeDay;
+            t("d0e7b11b", function (e) {
+                return e.date + " kl " + e.time;
             }),
+                t("b4349cbc", function (e) {
+                    return "" + e.relativeDay;
+                }),
                 t("ebe41367", function (e) {
                     return "Tid " + e.time;
                 }),
@@ -13187,4 +13188,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sv.076c134a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sv.ede23f1a.js.map

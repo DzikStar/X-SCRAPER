@@ -1713,6 +1713,7 @@
                 o("d78131b9", function (e) {
                     return "Gehitu/kendu @" + e.screenName + " zerrendetatik";
                 }),
+                o("b3b642fc", "Why this post?"),
                 o("fb4ee11c", "Zergatik agertzen zait iragarki hau?"),
                 o("ad50e7d9", function (e) {
                     return "View " + e.entity + " analytics";
@@ -1911,9 +1912,9 @@
                 o("b6510e68", "Copy your Article’s URL so you can share it."),
                 o("e4a6e006", "Arazoren bat izan da. Saiatu berriro."),
                 o("eff483e0", "After you publish, get a link to share the Article."),
-                o("ca15dd4e", "Zirriborroa"),
-                o("bb40bf66", "Argitaratuta");
-            o("h107935c", "Last saved just now"),
+                o("ca15dd4e", "Zirriborroa");
+            o("bb40bf66", "Argitaratuta"),
+                o("h107935c", "Last saved just now"),
                 o("a753a870", "Aplikatu"),
                 o("afccc67e", "Copy link to Article"),
                 o("beb24e9e", "URL copied to the clipboard"),
@@ -2430,6 +2431,7 @@
                     return "Report " + e.entity;
                 }),
                 o("e3fd237e", "Salatu iragarkia"),
+                o("ebb7662a", "Report post"),
                 o("d1e21610", "Salatu NetzDG urratzea"),
                 o("d7513755", function (e) {
                     return "Search @" + e.screenName + "’s posts in this Community";
@@ -2962,10 +2964,10 @@
                 o("c6f58084", "Developers"),
                 o("d83f18d2", "Directory"),
                 o("hc5aa17c", "Get the X app"),
-                o("j0693948", "Get the Grok app"),
-                o("af781666", "What do people think?"),
-                o("ad35153e", "beta");
-            o("fbf83158", "Warning: Payment failed"),
+                o("j0693948", "Get the Grok app");
+            o("af781666", "What do people think?"),
+                o("ad35153e", "beta"),
+                o("fbf83158", "Warning: Payment failed"),
                 o("jadeb4da", "Please urgently update your payment method before you lose your subscription benefits."),
                 o("bce3726a", "Update Billing"),
                 o("fce9ecce", "Suggested Videos"),
@@ -3878,10 +3880,10 @@
                 o("j245c654", "Speakers"),
                 o("eda23a02", "Listeners"),
                 o("b90eb348", "Invite to Speak"),
-                o("d9a63e82", "Remove from Speakers"),
-                o("bd917b26", "Invite to Co-host"),
-                o("d7357e7e", "Remove from Co-hosts");
-            o("bf307fc0", "Block and Remove"),
+                o("d9a63e82", "Remove from Speakers");
+            o("bd917b26", "Invite to Co-host"),
+                o("d7357e7e", "Remove from Co-hosts"),
+                o("bf307fc0", "Block and Remove"),
                 o("ccf2f24e", "Salatu"),
                 o("i22835de", "Onartu"),
                 o("cb59a0fe", "Ukatu"),
@@ -4155,7 +4157,6 @@
                 o("bcbf5b6e", "Partekatzen"),
                 o("j7b5c844", "You are responsible for the conversations you share publicly. Avoid sharing sensitive and confidential information about yourself or others in your conversations with Grok (see our Help Center)."),
                 o("c9f7c196", "Laguntza-zentroa"),
-                o("b63d3d36", "Attach"),
                 o("c65f7308", "Servers are cooking right now"),
                 o("f2a8655e", "Grok Advanced tooling is currently unavailable."),
                 o("c26b9b9c", "File"),
@@ -4911,9 +4912,9 @@
                 o("jb6f9292", 'contains the exact phrase "ai startup"'),
                 o("j8ee77c4", '"ai startup"'),
                 o("d0480758", 'contains either "ai" or "startup" (or both)'),
-                o("f0048fa2", "ai OR startup"),
-                o("da0df186", 'contains "ai", but not "startup"');
-            o("f2f463ea", "ai -startup"),
+                o("f0048fa2", "ai OR startup");
+            o("da0df186", 'contains "ai", but not "startup"'),
+                o("f2f463ea", "ai -startup"),
                 o("a10a357e", 'contains "ai" and has at least 50 likes'),
                 o("ca8ed1e8", "ai min_faves:50"),
                 o("i945a3f2", 'contains "ai" and a URL with the word "grok" in it'),
@@ -5877,9 +5878,9 @@
                 o("hb52cc4a", "Saiatu berriro geroago."),
                 o("e50e1bb0", "Welcome to Communities"),
                 o("i6829daa", "Communities are moderated discussion groups where people on X can connect and share."),
-                o("fc5c6914", "Meet others with your interests"),
-                o("aa1a9820", "Join Communities to connect with people who share your interests.");
-            o("edef4c82", "Post directly to a Community"),
+                o("fc5c6914", "Meet others with your interests");
+            o("aa1a9820", "Join Communities to connect with people who share your interests."),
+                o("edef4c82", "Post directly to a Community"),
                 o("a7640df6", "Your posts are shared with Community members and your followers."),
                 o("h3bb8068", "Get backup when you need it"),
                 o("a709f8f8", "Admins and moderators help manage Communities and keep conversations on track."),
@@ -6875,9 +6876,9 @@
                 o("g337328e", "Get the highest visibility for your replies."),
                 o("fa006202", "Background video playback"),
                 o("jf389778", "Watch while browsing or using other apps"),
-                o("f2977d80", "Bookmark folders"),
-                o("j1d3d910", "Keep your saved posts organized for easy access");
-            o("f0f48668", "Premium support"),
+                o("f2977d80", "Bookmark folders");
+            o("j1d3d910", "Keep your saved posts organized for easy access"),
+                o("f0f48668", "Premium support"),
                 o("c3148608", "Get faster assistance when you need help"),
                 o("b485ca6e", "Highlights tab"),
                 o("d438955e", "Showcase your top posts"),
@@ -7851,8 +7852,7 @@
                 o("c80160d3", "Advertising"),
                 o("ff0edac0", "Are you sure you want to cancel your subscription?"),
                 o("h2ac0348", "No, take me back"),
-                o("dbf9667e", "I’m sure"),
-                o("j7592572", "U-turn");
+                o("dbf9667e", "I’m sure");
             function n(e, a) {
                 for (var t = 0; t < a.length; t++) {
                     var o = a[t];
@@ -7891,7 +7891,8 @@
                     u(e, a)
                 );
             }
-            o("ee778942", "Traffic lights"),
+            o("j7592572", "U-turn"),
+                o("ee778942", "Traffic lights"),
                 o("fdd57981", function (e) {
                     return "We’d like to offer you a free one-time " + e.totalAmount + " USD ad credit.";
                 }),
@@ -8919,13 +8920,13 @@
                 }),
                 o("dc718e53", function (e) {
                     return e.count + " beste erabiltzailetik gora";
-                }),
-                o("d0e7b11b", function (e) {
-                    return e.date + " (" + e.time + ")";
                 });
-            o("b4349cbc", function (e) {
-                return "" + e.relativeDay;
+            o("d0e7b11b", function (e) {
+                return e.date + " (" + e.time + ")";
             }),
+                o("b4349cbc", function (e) {
+                    return "" + e.relativeDay;
+                }),
                 o("ebe41367", function (e) {
                     return "Ordua: " + e.time;
                 }),
@@ -13193,4 +13194,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/eu.125a69fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/eu.60d05ffa.js.map

@@ -264,7 +264,7 @@
                             const { tweet: e } = this.props,
                                 { featureSwitches: t, viewerUserId: i } = this.context;
                             if (!e) return !1;
-                            return i && !(0, ue.$y)(t, e, ue.d.Reply) && ((0, Ce.ZP)() || !1);
+                            return !!i && !(0, ue.$y)(t, e, ue.d.Reply) && ((0, Ce.ZP)() || !1);
                         }),
                         (this._handleLayout = (e) => {
                             this._isMounted && this.setState({ width: e.nativeEvent.layout.width });
@@ -390,8 +390,9 @@
                         (this._transformUrl = (e) => (0, ye.b)(e, this.props.promotedContent?.click_tracking_info)),
                         (this._shouldShowAdLabel = () => {
                             const { promotedContent: e } = this.props,
-                                t = c.Z.shouldShowAdDisclosure(e);
-                            return c.Z.isPromoted(e) && t && this._withAdLabel;
+                                t = c.Z.shouldShowAdDisclosure(e),
+                                i = this.context.featureSwitches.isTrue("responsive_web_remove_qp_ad_label_enabled") && c.Z.isQuickPromote(e);
+                            return c.Z.isPromoted(e) && !i && t && this._withAdLabel;
                         }),
                         (this._getActionMenuRenderer = ({ promotedContentA11yId: e, withViews: t }) => {
                             const { isFocal: i, renderCurationActionMenu: n, tweet: o } = this.props,
@@ -898,4 +899,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-757f3ab2.b9eb99da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-757f3ab2.e11fd91a.js.map

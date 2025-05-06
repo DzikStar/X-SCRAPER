@@ -5,7 +5,7 @@
         718278: (e, s, t) => {
             t.d(s, { o: () => i });
             var n = t(552322),
-                a = t(993165),
+                a = t(436059),
                 o = t(425522);
             const r = o.com.x.logger.XLog,
                 i = () =>
@@ -34,13 +34,13 @@
             t.d(s, { R: () => E });
             var n = t(552322),
                 a = t(425522),
-                o = t(332161),
-                r = t(993165),
-                i = t(772669),
-                l = t(314300),
-                c = t(741064),
-                d = t(242749),
-                m = t(445178),
+                o = t(941204),
+                r = t(436059),
+                i = t(816828),
+                l = t(436995),
+                c = t(887491),
+                d = t(25457),
+                m = t(14313),
                 u = t(202784),
                 x = t(533476),
                 h = t(658358),
@@ -57,7 +57,7 @@
                 if (!e.shouldRender) return null;
                 let t = "Attachment",
                     i = null;
-                return e instanceof a.com.x.models.dm.ChatComposerAttachment.Media ? (t = "Media") : e instanceof a.com.x.models.dm.ChatComposerAttachment.Post ? ((t = ""), (i = e.post instanceof a.com.x.models.dm.PostLoadingState.ResolvedPost ? (0, n.jsx)(j.K, { post: e.post, url: e.url, className: "rounded-2xl" }) : (0, n.jsx)(w.C, {}))) : e instanceof a.com.x.models.dm.ChatComposerAttachment.UrlCard ? (t = "URL") : e instanceof a.com.x.models.dm.ChatComposerAttachment.File && (t = "File"), (0, n.jsxs)("div", { className: "flex px-1 w-full justify-between", children: [(0, n.jsxs)("div", { className: "flex flex-col gap-1", children: [t && (0, n.jsx)(o.x, { size: "subtext2", weight: "medium", color: "gray900", children: t }), i] }), e.showRemoveButton && (0, n.jsx)("div", { className: "flex items-center", children: (0, n.jsx)(r.z, { variant: "primaryFilled", size: "xSmall", icon: (0, n.jsx)(c.Z, {}), onClick: s }) })] });
+                return e instanceof a.com.x.models.dm.ChatComposerAttachment.Media ? (t = "Media") : e instanceof a.com.x.models.dm.ChatComposerAttachment.Post ? ((t = ""), (i = e.post ? (0, n.jsx)(j.K, { post: e.post, url: e.url, className: "rounded-2xl" }) : (0, n.jsx)(w.C, {}))) : e instanceof a.com.x.models.dm.ChatComposerAttachment.UrlCard ? (t = "URL") : e instanceof a.com.x.models.dm.ChatComposerAttachment.File && (t = "File"), (0, n.jsxs)("div", { className: "flex px-1 w-full justify-between", children: [(0, n.jsxs)("div", { className: "flex flex-col gap-1", children: [t && (0, n.jsx)(o.x, { size: "subtext2", weight: "medium", color: "gray900", children: t }), i] }), e.showRemoveButton && (0, n.jsx)("div", { className: "flex items-center", children: (0, n.jsx)(r.z, { variant: "primaryFilled", size: "xSmall", icon: (0, n.jsx)(c.Z, {}), onClick: s }) })] });
             }
             const N = a.com.x.dms.composer.composer.RightButtonState,
                 b = a.com.x.dms.composer.composer.ChatComposerEvent,
@@ -86,7 +86,7 @@
                                 t.replyingTo ? (0, n.jsx)(y, { replyingTo: t.replyingTo, onRemoveReply: () => e.composer.onEvent(a.com.x.dms.composer.composer.ChatComposerEvent.RemoveReplyClicked) }) : null,
                                 t.attachment ? (0, n.jsx)(C, { attachment: t.attachment, onRemoveAttachment: () => e.composer.onEvent(a.com.x.dms.composer.composer.ChatComposerEvent.DiscardAttachmentClicked) }) : null,
                                 (0, n.jsxs)("div", {
-                                    className: "flex items-center gap-2 w-full backdrop-blur-md bg-white/80",
+                                    className: "flex items-center gap-2 w-full backdrop-blur-md bg-background/80",
                                     children: [
                                         (0, n.jsx)("input", {
                                             type: "file",
@@ -145,13 +145,13 @@
         787395: (e, s, t) => {
             t.d(s, { r: () => Ee });
             var n = t(552322),
-                a = t(983706),
-                o = t(193686),
+                a = t(921879),
+                o = t(702024),
                 r = t(533476),
                 i = t(425522),
-                l = t(378364),
-                c = t(332161),
-                d = t(789764),
+                l = t(26429),
+                c = t(941204),
+                d = t(475694),
                 m = t(369962);
             const u = i.com.x.dms.model.InformationalItemContents;
             function x({ avatarUrl: e }) {
@@ -239,14 +239,14 @@
                 return (0, n.jsx)(g, { children: s instanceof u.AddedGroupMembers ? (0, n.jsx)(p, { contents: s }) : s instanceof u.RemovedGroupMembers ? (0, n.jsx)(f, { contents: s }) : s instanceof u.AddedGroupAdmins ? (0, n.jsx)(v, { contents: s }) : s instanceof u.RemovedGroupAdmins ? (0, n.jsx)(y, { contents: s }) : s instanceof u.ChangedGroupTitle ? (0, n.jsx)(j, { contents: s }) : s instanceof u.ChangedGroupAvatar ? (0, n.jsx)(w, { contents: s }) : s instanceof u.DefaultTtlChanged ? (0, n.jsx)(C, { contents: s }) : s instanceof u.DateChanged ? (0, n.jsx)(N, { contents: s }) : null });
             }
             var I = t(202784),
-                E = t(527735),
-                k = t(993165),
-                R = t(731106),
-                D = t(578950),
-                A = t(747632),
-                S = t(314300),
-                $ = t(568366),
-                M = t(89616);
+                E = t(776604),
+                k = t(436059),
+                R = t(553453),
+                D = t(611105),
+                A = t(147602),
+                S = t(436995),
+                $ = t(145731),
+                M = t(421018);
             const U = i.com.x.dms.model.ChatMessageAction,
                 z = i.com.x.dms.chat.DmEvent,
                 F = i.com.x.models.KMPRect;
@@ -287,9 +287,9 @@
             var Z = t(455091),
                 V = t(607499),
                 L = t(547334),
-                J = t(42630),
-                _ = t(38375),
-                B = t(468208);
+                J = t(461222),
+                _ = t(242782),
+                B = t(22199);
             function G(e) {
                 const s = Math.round(e / 60),
                     t = s > 60 ? Math.ceil(s / 60) : 0,
@@ -315,11 +315,11 @@
                 );
             }
             function O({ messageInfo: e, isReceived: s }) {
-                const t = e.showReadUsers?.asJsReadonlyArrayView().map((e) => e.profileImageUrl || "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png") || [],
+                const t = e.showReadUsers?.asJsReadonlyArrayView().map((e) => e.user?.profileImageUrl || "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png") || [],
                     a = t.length > 1;
                 return (0, n.jsxs)("div", { className: `flex gap-1 items-center ${s ? "justify-start" : "justify-end"} mx-1 `, children: [e.timeToLive && (0, n.jsx)(K, { ttlInfo: e.timeToLive, isReceived: s }), e.timeToLive && (e.showEdited || (e.showReadUsers && !a)) ? (0, n.jsx)(J.A, {}) : null, e.showEdited && (0, n.jsx)(c.x, { size: "subtext3", color: "gray700", children: "Edited" }), e.showEdited && e.showReadUsers && !a ? (0, n.jsx)(J.A, {}) : null, e.showReadUsers && (0, n.jsxs)(n.Fragment, { children: [a ? (0, n.jsx)(d.o, { urls: t, size: "small", spacing: 6, stackOrder: "ascending" }) : (0, n.jsx)(c.x, { size: "subtext3", color: "gray700", children: "Read" }), (0, n.jsx)("div", { className: "p-0.5 bg-background rounded-full z-20 " + (a ? "-ms-[12px]" : "-ms-[2px]"), children: (0, n.jsx)(_.Z, { width: "16", height: "16", viewBox: "1.75 1.75 20.5 20.5", className: "text-gray-700" }) })] })] });
             }
-            var q = t(983955);
+            var q = t(862399);
             const Y = ({ isReceived: e, textContent: s, textEntities: t }) => {
                     const a = {};
                     return t.forEach((e) => W(e, a)), (0, n.jsx)(q.W, { color: e ? "text" : "white", entities: a, linkColor: e ? void 0 : "white", text: s, underlineLinks: !e || void 0 });
@@ -334,13 +334,13 @@
             function X(e) {
                 return /^mailto:/i.test(e) ? e : `mailto:${e}`;
             }
-            var Q = t(31674);
+            var Q = t(796309);
             const ee = ({ emoji: e, count: s }) => (0, n.jsxs)("div", { className: "flex items-center bg-gray-50 rounded-full px-2 shadow-sm gap-1 border border-background", children: [(0, n.jsx)(c.x, { size: "headline2", children: e }), s > 1 && (0, n.jsx)(c.x, { size: "subtext3", weight: "bold", color: "gray700", children: s })] }),
                 se = ({ reaction: e }) => (0, n.jsx)(ee, { emoji: e.reaction, count: e.users.asJsReadonlyArrayView().length }),
                 te = ({ className: e, reactions: s }) => (0, n.jsxs)("div", { className: (0, Q.cn)("flex flex-row gap-1", e), children: [s.slice(0, 5).map((e) => (0, n.jsx)(se, { reaction: e }, e.reaction)), s.length > 5 && (0, n.jsx)(ee, { emoji: "…", count: 0 })] });
             var ne = t(167285),
-                ae = t(99402),
-                oe = t(437712),
+                ae = t(407602),
+                oe = t(86781),
                 re = t(840489);
             const ie = i.com.x.dms.chat.DmEvent,
                 le = i.com.x.models.KMPRect,
@@ -393,7 +393,7 @@
                         }),
                     });
                 };
-            var de = t(977648);
+            var de = t(784344);
             const me = ({ isReceived: e, replyPreview: s, replierInfo: t }) => {
                 const a = t.id,
                     { senderId: o } = s,
@@ -408,7 +408,7 @@
                     g = a.equals(o) ? (s.senderIsCurrentUser ? x : u) : s.senderIsCurrentUser ? d : e ? m : h;
                 return (0, n.jsxs)("div", { className: "flex flex-col mt-0.5 " + (e ? "items-start" : "items-end"), children: [s.showReplyNames && (0, n.jsxs)("div", { className: "flex gap-1 px-2 " + (e ? "text-start" : "text-end"), children: [(0, n.jsx)(de.Z, { className: "inline-block text-text/70" }), (0, n.jsx)(c.x, { as: "span", className: "text-text/40", size: "subtext2", children: g })] }), (0, n.jsx)("div", { className: "flex flex-col px-3 py-1.5 rounded-2xl gap-3 border " + (s.senderIsCurrentUser ? "border-primary/50" : "border-gray-400"), children: (0, n.jsx)(c.x, { color: s.senderIsCurrentUser ? "primary" : "gray900", size: "subtext1", numberOfLines: 1, children: s.previewText }) })] });
             };
-            var ue = t(305399);
+            var ue = t(469745);
             function xe({ messageItem: e, messageFocusedDialog: s, onEvent: t }) {
                 const { t: a } = (0, Z.$G)(),
                     o = (0, ue.a)("(max-width: 768px)"),
@@ -442,7 +442,7 @@
                     }),
                 });
             }
-            var he = t(996762);
+            var he = t(668631);
             function ge({ sendingStatusItem: e }) {
                 return "Failed" === e.status.name ? (0, n.jsxs)("div", { className: "flex justify-end py-1 px-4 gap-1 me-2", children: [(0, n.jsx)(c.x, { size: "subtext2", color: "red500", children: "Failed" }), (0, n.jsx)(he.Z, { width: "14", height: "14", className: "text-red-500" })] }) : null;
             }
@@ -455,7 +455,7 @@
                 return e instanceof i.com.x.dms.model.MessageItemReceived || e instanceof i.com.x.dms.model.MessageItemSent || e instanceof i.com.x.dms.model.MessageItemPending ? (0, n.jsx)(xe, { messageItem: e, messageFocusedDialog: s, onEvent: t }) : e instanceof i.com.x.dms.model.SendingStatusItem ? (0, n.jsx)(ge, { sendingStatusItem: e }) : e instanceof i.com.x.dms.model.InformationalItem ? (0, n.jsx)(b, { informationalItem: e }) : e instanceof i.com.x.dms.model.TypingIndicatorItem ? (0, n.jsx)(fe, { typingIndicatorItem: e }) : null;
             }
             const ye = (0, I.memo)(ve);
-            var je = t(960384),
+            var je = t(97759),
                 we = t(463341);
             const Ce = ({ component: e, numItems: s }) => {
                     const { apiRef: t, addOnScrollListener: a } = (0, we.Nb)(),
@@ -601,7 +601,7 @@
                     this.router.push(`${this.path}/new`);
                 }
                 toPinScreen(e, s) {
-                    this.router.push(`${this.path}/pin/${e}${s ? "/register" : ""}`);
+                    this.router.push(`${this.path}/pin/${e}${s?.shouldRegister ? "/register" : ""}`);
                 }
             }
             function l() {
@@ -642,21 +642,21 @@
             t.d(s, { x: () => b });
             var n = t(552322),
                 a = t(202784),
-                o = t(653748),
-                r = t(193686),
-                i = t(332161),
-                l = t(423011),
-                c = t(993165),
-                d = t(772669),
-                m = t(983706),
+                o = t(844098),
+                r = t(702024),
+                i = t(941204),
+                l = t(130629),
+                c = t(436059),
+                d = t(816828),
+                m = t(921879),
                 u = t(425522),
                 x = t(611463),
                 h = t(379342),
                 g = t(533476),
                 p = t(658358),
-                f = t(341333),
-                v = t(782879),
-                y = t(353561),
+                f = t(555814),
+                v = t(458872),
+                y = t(875515),
                 j = t(272795),
                 w = t(620134);
             const C = u.com.x.dms.newdm,
@@ -739,4 +739,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-eca6a814.498d93ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-eca6a814.aca99c6a.js.map

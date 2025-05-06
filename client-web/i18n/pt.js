@@ -1710,6 +1710,7 @@
                 s("d78131b9", function (e) {
                     return "Adicionar/remover @" + e.screenName + " das Listas";
                 }),
+                s("b3b642fc", "Why this post?"),
                 s("fb4ee11c", "Por que estou vendo este anúncio?"),
                 s("ad50e7d9", function (e) {
                     return "Ver estatísticas de " + e.entity;
@@ -1908,9 +1909,9 @@
                 s("b6510e68", "Copie o URL do seu Artigo para compartilhá-lo."),
                 s("e4a6e006", "Algo deu errado. Tente novamente."),
                 s("eff483e0", "Depois de publicar, receba um link para compartilhar o Artigo."),
-                s("ca15dd4e", "Rascunho"),
-                s("bb40bf66", "Publicados");
-            s("h107935c", "Salvo pela última vez agora"),
+                s("ca15dd4e", "Rascunho");
+            s("bb40bf66", "Publicados"),
+                s("h107935c", "Salvo pela última vez agora"),
                 s("a753a870", "Aplicar"),
                 s("afccc67e", "Copiar link para Artigo"),
                 s("beb24e9e", "URL copiado para a área de transferência"),
@@ -2427,6 +2428,7 @@
                     return "Denunciar " + e.entity;
                 }),
                 s("e3fd237e", "Denunciar anúncio"),
+                s("ebb7662a", "Denunciar post"),
                 s("d1e21610", "Denunciar uma violação da NetzDG (Lei Aplicável a Redes)"),
                 s("d7513755", function (e) {
                     return "Pesquise pelos posts de @" + e.screenName + " nesta Comunidade";
@@ -2959,15 +2961,15 @@
                 s("c6f58084", "Desenvolvedores"),
                 s("d83f18d2", "Diretório"),
                 s("hc5aa17c", "Baixar o aplicativo X"),
-                s("j0693948", "Baixar o aplicativo Grok"),
-                s("af781666", "What do people think?"),
-                s("ad35153e", "beta");
-            s("fbf83158", "Aviso: o pagamento falhou"),
+                s("j0693948", "Baixar o aplicativo Grok");
+            s("af781666", "O que as pessoas acham?"),
+                s("ad35153e", "beta"),
+                s("fbf83158", "Aviso: o pagamento falhou"),
                 s("jadeb4da", "Atualize o quanto antes sua forma de pagamento para não perder os benefícios da sua assinatura."),
                 s("bce3726a", "Atualizar dados de cobrança"),
                 s("fce9ecce", "Vídeos sugeridos"),
-                s("dc954b88", "Try the full news experience"),
-                s("j66b95a2", "In-Depth News"),
+                s("dc954b88", "Experimente a experiência de notícias completa"),
+                s("j66b95a2", "Notícias detalhadas"),
                 s("b58d2bd2", "Posts Relevantes"),
                 s("efe6ef9e", "Visualizar post"),
                 s("b3d183ce", "Post com respostas"),
@@ -3875,10 +3877,10 @@
                 s("j245c654", "Oradores"),
                 s("eda23a02", "Ouvintes"),
                 s("b90eb348", "Convidar para falar"),
-                s("d9a63e82", "Remover dos oradores"),
-                s("bd917b26", "Convidar para co-host"),
-                s("d7357e7e", "Remover dos co-hosts");
-            s("bf307fc0", "Bloquear e remover"),
+                s("d9a63e82", "Remover dos oradores");
+            s("bd917b26", "Convidar para co-host"),
+                s("d7357e7e", "Remover dos co-hosts"),
+                s("bf307fc0", "Bloquear e remover"),
                 s("ccf2f24e", "Denunciar"),
                 s("i22835de", "Aprovar"),
                 s("cb59a0fe", "Negar"),
@@ -4152,7 +4154,6 @@
                 s("bcbf5b6e", "Compartilhamento"),
                 s("j7b5c844", "Você é responsável pelas conversas que compartilha publicamente. Evite compartilhar informações sensíveis e confidenciais sobre você ou outras pessoas em suas conversas com o Grok (consulte nossa Central de Ajuda)."),
                 s("c9f7c196", "Central de Ajuda"),
-                s("b63d3d36", "Anexar"),
                 s("c65f7308", "Os servidores estão processando neste momento."),
                 s("f2a8655e", "As ferramentas avançadas do Grok não estão disponíveis no momento."),
                 s("c26b9b9c", "Arquivo"),
@@ -4167,8 +4168,8 @@
                 s("e9b6d404", "A quais ferramentas de busca o Grok deve ter acesso?"),
                 s("h15dce2e", "Configurações avançadas"),
                 s("ff9dc268", "Editar prompt"),
-                s("acb2baa0", "Create Images"),
-                s("h30fd372", "Try Voice Mode"),
+                s("acb2baa0", "Criar imagens"),
+                s("h30fd372", "Experimente o Modo de Voz"),
                 s("e9fcdd0c", "Pedir ao Grok para fazer uma pesquisa profunda na web"),
                 s("fc4e8aba", "Pedir ao Grok para explicar as instruções"),
                 s("e4ae6abe", "Peça ao Grok para transformar sua imagem"),
@@ -4337,7 +4338,7 @@
                 s("g01599b6", "Resposta 1"),
                 s("e02694e0", "Resposta 2"),
                 s("h6867fcc", "Eu prefiro esta resposta"),
-                s("d07488a6", "Get the Android app"),
+                s("d07488a6", "Baixar o aplicativo para Android"),
                 s("d9cfe70c", "Acessar recursos avançados do Grok"),
                 s("hf9afab0", "Habilite a DeepSearch para explorar a Internet e o X, analisar informações e fornecer respostas detalhadas e bem fundamentadas com uma pesquisa rápida e dinâmica."),
                 s("ef3b3f04", 'Habilite o Pensamento para usar nosso modelo de raciocínio. Ele é ideal para matemática, ciências e codificação. Você também pode pedir ao Grok para "Pensar mais" sobre qualquer questão que exija um pouco mais de capacidade intelectual. '),
@@ -4346,7 +4347,7 @@
                 s("e3584f8e", "Quais são as 10 estratégias de negociação de opções de maior sucesso usadas pelos fundos de hedge"),
                 s("d91b7b8a", "Quanto custaria construir uma universidade em 1885?"),
                 s("ia5bef3e", "Como posso ajudar você hoje?"),
-                s("ebea5880", "Recent Conversations"),
+                s("ebea5880", "Conversas recentes"),
                 s("e13591c0", "Exemplo de conversa do Grok"),
                 s("c27ca452", "Os assinantes do Premium agora podem usar nossa IA mais avançada, Grok, no X."),
                 s("b6abc25a", "Apresentando o Grok2"),
@@ -4908,9 +4909,9 @@
                 s("jb6f9292", 'contém a frase exata "ai startup"'),
                 s("j8ee77c4", '"ai startup"'),
                 s("d0480758", 'contém "ai" ou "startup" (ou ambos)'),
-                s("f0048fa2", "ai OU startup"),
-                s("da0df186", 'contém "ai", mas não "startup"');
-            s("f2f463ea", "ai -startup"),
+                s("f0048fa2", "ai OU startup");
+            s("da0df186", 'contém "ai", mas não "startup"'),
+                s("f2f463ea", "ai -startup"),
                 s("a10a357e", 'contém "ai" e tem pelo menos 50 curtidas'),
                 s("ca8ed1e8", "ai min_faves:50"),
                 s("i945a3f2", 'contém "ai" e uma URL com a palavra "grok"'),
@@ -5874,9 +5875,9 @@
                 s("hb52cc4a", "Por favor, tente novamente mais tarde."),
                 s("e50e1bb0", "Bem-vindo a Comunidades"),
                 s("i6829daa", "Comunidades são grupos de discussão com moderação em que as pessoas do X podem se conectar e compartilhar."),
-                s("fc5c6914", "Conheça outras pessoas com seus interesses"),
-                s("aa1a9820", "Participe de Comunidades para se conectar com pessoas que compartilham seus interesses.");
-            s("edef4c82", "Poste diretamente em uma Comunidade"),
+                s("fc5c6914", "Conheça outras pessoas com seus interesses");
+            s("aa1a9820", "Participe de Comunidades para se conectar com pessoas que compartilham seus interesses."),
+                s("edef4c82", "Poste diretamente em uma Comunidade"),
                 s("a7640df6", "Seus posts são compartilhados com os membros da Comunidade e com seus seguidores."),
                 s("h3bb8068", "Receba reforço quando precisar"),
                 s("a709f8f8", "Os administradores e moderadores ajudam a gerenciar Comunidades e manter as conversas nos trilhos."),
@@ -6872,9 +6873,9 @@
                 s("g337328e", "Garanta maior visibilidade para as suas respostas."),
                 s("fa006202", "Reprodução de vídeo em segundo plano"),
                 s("jf389778", "Assista enquanto navega ou usa outros aplicativos"),
-                s("f2977d80", "Pastas de itens salvos"),
-                s("j1d3d910", "Mantenha seus posts salvos e organizados para acessar com facilidade");
-            s("f0f48668", "Suporte Premium"),
+                s("f2977d80", "Pastas de itens salvos");
+            s("j1d3d910", "Mantenha seus posts salvos e organizados para acessar com facilidade"),
+                s("f0f48668", "Suporte Premium"),
                 s("c3148608", "Garanta assistência mais rápida quando precisar de ajuda."),
                 s("b485ca6e", "Aba Destaques"),
                 s("d438955e", "Mostre seus principais posts"),
@@ -7848,8 +7849,7 @@
                 s("c80160d3", "Publicidade"),
                 s("ff0edac0", "Tem certeza de que deseja cancelar a assinatura?"),
                 s("h2ac0348", "Não, quero voltar"),
-                s("dbf9667e", "Sim, tenho certeza"),
-                s("j7592572", "Retorno");
+                s("dbf9667e", "Sim, tenho certeza");
             function i(e, a) {
                 for (var o = 0; o < a.length; o++) {
                     var s = a[o];
@@ -7888,7 +7888,8 @@
                     n(e, a)
                 );
             }
-            s("ee778942", "Semáforo"),
+            s("j7592572", "Retorno"),
+                s("ee778942", "Semáforo"),
                 s("fdd57981", function (e) {
                     return "Gostaríamos de oferecer a você um crédito de anúncios de US$ " + e.totalAmount + " único e exclusivo.";
                 }),
@@ -8916,13 +8917,13 @@
                 }),
                 s("dc718e53", function (e) {
                     return "+mais " + e.count;
-                }),
-                s("d0e7b11b", function (e) {
-                    return e.date + " às " + e.time;
                 });
-            s("b4349cbc", function (e) {
-                return "" + e.relativeDay;
+            s("d0e7b11b", function (e) {
+                return e.date + " às " + e.time;
             }),
+                s("b4349cbc", function (e) {
+                    return "" + e.relativeDay;
+                }),
                 s("ebe41367", function (e) {
                     return "Hora " + e.time;
                 }),
@@ -13187,4 +13188,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pt.2942637a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pt.1cdc0d5a.js.map

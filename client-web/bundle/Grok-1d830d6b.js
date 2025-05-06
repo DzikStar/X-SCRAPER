@@ -5,8 +5,8 @@
         204162: (e, t, a) => {
             a.d(t, { Z: () => h });
             var n = a(202784),
-                o = a(154003),
-                s = a(721266),
+                o = a(325686),
+                s = a(466792),
                 r = a(731708),
                 c = a(392237),
                 l = a(664345),
@@ -18,37 +18,33 @@
                 b = a(327597),
                 g = a(448781),
                 f = a(928831);
-            function h({ conversationKey: e, isCompactLayout: t, onClick: a, suggestion: c }) {
-                const h = (0, m.z)(),
-                    k = (0, u.I0)(),
-                    [I, _] = n.useState(!1),
-                    y = "SEARCH" === c?.mode || "DEEPERSEARCH" === c?.mode ? l.default : i.default,
-                    v = (0, p.bD)(e),
-                    w = n.useMemo(() => (t ? c.mobile : c.web), [t, c]),
-                    { isReasoningEnabled: E, isResearchEnabled: x, selectDeepsearchFilterKey: Z, selectReasoningFilterKey: D, setDeepersearchAdvancedSettings: M, setDeepsearchAdvancedSettings: S } = (0, f.w)(),
-                    P = (0, u.v9)(v.selectLastHumanMessage);
-                n.useEffect(() => {
-                    _(!0);
-                }, []);
-                const R = n.useCallback(() => {
-                        h.scribe({ component: `follow_up_suggested_mode_${c.mode}`, action: "impression" });
-                    }, [h, c.mode]),
-                    T = n.useCallback(
+            function h({ conversationKey: e, isAnimated: t, isCompactLayout: a, onClick: c, suggestion: h }) {
+                const C = (0, m.z)(),
+                    I = (0, u.I0)(),
+                    _ = "SEARCH" === h?.mode || "DEEPERSEARCH" === h?.mode ? l.default : i.default,
+                    y = (0, p.bD)(e),
+                    v = n.useMemo(() => (a ? h.mobile : h.web), [a, h]),
+                    { isReasoningEnabled: w, isResearchEnabled: E, selectDeepsearchFilterKey: x, selectReasoningFilterKey: Z, setDeepersearchAdvancedSettings: D, setDeepsearchAdvancedSettings: M } = (0, f.w)(),
+                    S = (0, u.v9)(y.selectLastHumanMessage),
+                    P = n.useCallback(() => {
+                        C.scribe({ component: `follow_up_suggested_mode_${h.mode}`, action: "impression" });
+                    }, [C, h.mode]),
+                    R = n.useCallback(
                         (t) => {
-                            h.scribe({ component: `follow_up_suggested_mode_${t.mode}`, action: "click" });
-                            const n = "SEARCH" === t.mode,
-                                o = "DEEPERSEARCH" === t.mode,
-                                s = "THINK" === t.mode;
-                            n || o ? (o ? M() : S(), x || Z()) : s && !E && D(), k((0, b.u)({ analytics: h, conversationKey: e })({ text: P?.message?.message, returnCitations: !0, isDeepsearch: n || o, isReasoning: s, deepsearchArgsOverride: o ? { mode: g.z_ } : void 0 })), a && a();
+                            C.scribe({ component: `follow_up_suggested_mode_${t.mode}`, action: "click" });
+                            const a = "SEARCH" === t.mode,
+                                n = "DEEPERSEARCH" === t.mode,
+                                o = "THINK" === t.mode;
+                            a || n ? (n ? D() : M(), E || x()) : o && !w && Z(), I((0, b.u)({ analytics: C, conversationKey: e })({ text: S?.message?.message, returnCitations: !0, isDeepsearch: a || n, isReasoning: o, deepsearchArgsOverride: n ? { mode: g.z_ } : void 0 })), c && c();
                         },
-                        [P, h, e, k, a, E, x, Z, D, M, S],
+                        [S, C, e, I, c, w, E, x, Z, D, M],
                     );
-                return n.createElement(o.ZP, { onClick: () => T(c), style: [C.buttonContainer, t && C.buttonContainerCompact, { opacity: I ? 1 : 0, transition: "opacity 0.3s ease-in" }] }, n.createElement(d.D, { id: `follow_up_mode_button_${c.mode}`, onFullyVisible: R, position: "bottom", testID: `follow_up_mode_button_${c.mode}` }), n.createElement(y, { style: C.icon }), n.createElement(s.Z, { size: "space8" }), n.createElement(r.ZP, { size: "subtext2", style: [C.suggestedModeText, t && C.suggestedModeTextCompact], weight: "medium" }, w));
+                return n.createElement(s.Z, null, ({ isHovered: e }) => n.createElement(o.Z, { onClick: () => R(h), style: [k.container, e ? k.hovered : void 0, t ? k.animation : void 0] }, n.createElement(d.D, { id: `follow_up_mode_button_${h.mode}`, onFullyVisible: P, position: "bottom", testID: `follow_up_mode_button_${h.mode}` }), n.createElement(_, { style: k.icon }), n.createElement(r.ZP, { size: "subtext2", style: [k.suggestedModeText, a && k.suggestedModeTextCompact], weight: "medium" }, v)));
             }
-            const C = c.default.create((e) => ({ buttonContainer: { alignItems: "center", padding: e.spaces.space2, borderRadius: e.spaces.space20, backgroundColor: e.colors.gray50, marginTop: e.spaces.space1, flexDirection: "row", border: "none" }, buttonContainerCompact: { border: "none", backgroundColor: e.colors.gray50, marginTop: e.spaces.space1, padding: e.spaces.space1 }, iconContainer: { flexDirection: "row", alignItems: "center", justifyContent: "center" }, icon: { width: e.spaces.space16, height: e.spaces.space16, color: e.colors.gray900 }, suggestedModeText: { color: e.colors.gray900 }, suggestedModeTextCompact: { color: e.colors.gray900 } }));
+            const k = c.default.create((e) => ({ container: { flexDirection: "row", padding: e.spaces.space12, alignItems: "center", borderRadius: e.borderRadii.infinite, overflow: "hidden", cursor: "pointer", gap: e.spaces.space8, backgroundColor: e.colors.gray0, transition: "background-color 0.2s" }, animation: { opacity: 1, animationDuration: "0.2s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }] }, hovered: { backgroundColor: e.colors.gray100 }, icon: { width: e.spaces.space16, height: e.spaces.space16, color: e.colors.gray900 }, suggestedModeText: { color: e.colors.gray900 }, suggestedModeTextCompact: { color: e.colors.gray900 } }));
         },
         811085: (e, t, a) => {
-            a.d(t, { W: () => C });
+            a.d(t, { W: () => k });
             var n = a(202784),
                 o = a(325686),
                 s = a(351743),
@@ -64,12 +60,12 @@
                 g = a(975617);
             const f = d().a0428662,
                 h = d().fe4fd310;
-            function C({ conversationKey: e, messageId: t }) {
+            function k({ conversationKey: e, messageId: t }) {
                 const a = (0, m.z)(),
                     s = (0, u.I0)(),
                     l = (0, p.bD)(e),
                     i = (0, u.v9)(p.t5),
-                    [d, C] = n.useState(),
+                    [d, k] = n.useState(),
                     [I] = r()(b.Z),
                     _ = (0, u.v9)(l.selectConversationId),
                     y = (0, u.v9)((e) => l.selectMetadataForMessageId(e, t)),
@@ -80,7 +76,7 @@
                                 I({
                                     variables: { basicFeedback: { feedback_button: e }, conversationId: _, conversationItemId: y.agentChatItemId, modelVersion: i },
                                     onCompleted: (t) => {
-                                        t.create_grok_conversation_feedback?.grok_feedback_error ? (0, g.J)(s) : C(e);
+                                        t.create_grok_conversation_feedback?.grok_feedback_error ? (0, g.J)(s) : k(e);
                                     },
                                 });
                         },
@@ -92,9 +88,9 @@
                     E = n.useCallback(() => {
                         a.scribe({ action: "click", component: "thumbs_down" }), v("Dislike");
                     }, [a, v]);
-                return n.createElement(o.Z, { style: k.root }, n.createElement(o.Z, { style: k.buttonsContainer }, n.createElement(c.ZP, { disabled: !!d, onPress: w, size: "medium", style: [k.button, k.leftControl], type: "Like" === d ? "primaryFilled" : "primaryOutlined" }, h), n.createElement(c.ZP, { disabled: !!d, onPress: E, size: "medium", style: [k.button, k.rightControl], type: "Dislike" === d ? "primaryFilled" : "primaryOutlined" }, f)));
+                return n.createElement(o.Z, { style: C.root }, n.createElement(o.Z, { style: C.buttonsContainer }, n.createElement(c.ZP, { disabled: !!d, onPress: w, size: "medium", style: [C.button, C.leftControl], type: "Like" === d ? "primaryFilled" : "primaryOutlined" }, h), n.createElement(c.ZP, { disabled: !!d, onPress: E, size: "medium", style: [C.button, C.rightControl], type: "Dislike" === d ? "primaryFilled" : "primaryOutlined" }, f)));
             }
-            const k = l.default.create((e) => ({ root: { backgroundColor: e.colors.navigationBackground, borderRadius: e.borderRadii.small, overflow: "hidden" }, buttonsContainer: { flexDirection: "row", justifyContent: "space-between" }, button: { flexGrow: 1, marginTop: e.spaces.space12, marginBottom: e.spaces.space12 }, leftControl: { marginStart: e.spaces.space12, marginEnd: e.spaces.space4 }, rightControl: { marginEnd: e.spaces.space12, marginStart: e.spaces.space4 } }));
+            const C = l.default.create((e) => ({ root: { backgroundColor: e.colors.navigationBackground, borderRadius: e.borderRadii.small, overflow: "hidden" }, buttonsContainer: { flexDirection: "row", justifyContent: "space-between" }, button: { flexGrow: 1, marginTop: e.spaces.space12, marginBottom: e.spaces.space12 }, leftControl: { marginStart: e.spaces.space12, marginEnd: e.spaces.space4 }, rightControl: { marginEnd: e.spaces.space12, marginStart: e.spaces.space4 } }));
         },
         276522: (e, t, a) => {
             a.d(t, { Z: () => r });
@@ -128,8 +124,8 @@
                 g = a.n(b),
                 f = a(720526),
                 h = a(725516),
-                C = a(601576),
-                k = a(730372),
+                k = a(601576),
+                C = a(730372),
                 I = a(276522);
             const _ = g().b8c06820,
                 y = g().f88553c8;
@@ -137,7 +133,7 @@
                 const a = (0, i.I0)(),
                     o = (0, h.z)(),
                     s = n.useCallback(() => {
-                        (0, k.OR)(t.current, e), o.scribe({ element: "grok_response_copy_button", action: "click" }), a((0, C.fz)({ text: y, withAutoDismiss: !0 }));
+                        (0, C.OR)(t.current, e), o.scribe({ element: "grok_response_copy_button", action: "click" }), a((0, k.fz)({ text: y, withAutoDismiss: !0 }));
                     }, [t, e, a, o]);
                 return n.createElement(I.Z, { icon: n.createElement(f.default, null), label: _, onPress: s });
             }
@@ -150,9 +146,9 @@
                 S = a(908118),
                 P = a(393261),
                 R = a(430506),
-                T = a(975617);
-            const z = g().ca0f5894,
-                A = g().fe731016;
+                A = a(975617);
+            const T = g().ca0f5894,
+                z = g().fe731016;
             function O({ allMediaIds: e, allMediaUrls: t, conversationKey: a, messageId: s }) {
                 const r = (0, h.z)(),
                     c = (0, i.I0)(),
@@ -160,11 +156,11 @@
                     u = (0, i.v9)(d.t5),
                     [b, g] = n.useState(),
                     [f] = E()(P.Z),
-                    { isCompactLayout: C } = (0, p.ZP)();
+                    { isCompactLayout: k } = (0, p.ZP)();
                 n.useEffect(() => {
                     s || g(void 0);
                 }, [s]);
-                const k = (0, i.v9)(m.selectConversationId),
+                const C = (0, i.v9)(m.selectConversationId),
                     _ = (0, i.v9)((e) => m.selectMetadataForMessageId(e, s)),
                     y = (0, l.hC)("responsive_web_grok_feedback_label_dropdown"),
                     v = {};
@@ -172,16 +168,16 @@
                 const w = Object.keys(v).length > 0 ? JSON.stringify(v) : void 0,
                     O = n.useCallback(
                         (e) => {
-                            k &&
+                            C &&
                                 _?.agentChatItemId &&
                                 f({
-                                    variables: { basicFeedback: { feedback_button: e }, conversationId: k, conversationItemId: _.agentChatItemId, modelVersion: u },
+                                    variables: { basicFeedback: { feedback_button: e }, conversationId: C, conversationItemId: _.agentChatItemId, modelVersion: u },
                                     onCompleted: (t) => {
-                                        t.create_grok_conversation_feedback?.grok_feedback_error ? (0, T.J)(c) : g(e);
+                                        t.create_grok_conversation_feedback?.grok_feedback_error ? (0, A.J)(c) : g(e);
                                     },
                                 });
                         },
-                        [k, _?.agentChatItemId, u, c, f],
+                        [C, _?.agentChatItemId, u, c, f],
                     ),
                     [F, K] = n.useState(!1),
                     [G, H] = n.useState(!1),
@@ -191,29 +187,29 @@
                     U = n.useCallback(() => {
                         r.scribe({ action: "click", component: "thumbs_down", data: { event_info: w } }), O("Dislike"), K(!0);
                     }, [r, O, w]),
-                    j = n.useCallback(() => {
-                        k && _?.agentChatItemId && (r.scribe({ action: "click", component: "feedback_comment", data: { event_info: w } }), H(!0), K(!1));
-                    }, [r, k, _, w]),
-                    V = n.useCallback(
+                    V = n.useCallback(() => {
+                        C && _?.agentChatItemId && (r.scribe({ action: "click", component: "feedback_comment", data: { event_info: w } }), H(!0), K(!1));
+                    }, [r, C, _, w]),
+                    $ = n.useCallback(
                         (e) => {
-                            k &&
+                            C &&
                                 _?.agentChatItemId &&
                                 (r.scribe({ action: "click", component: "feedback_label", data: { event_info: w } }),
                                 K(!1),
                                 f({
-                                    variables: { contextualFeedback: { label_id: e }, conversationId: k, conversationItemId: _.agentChatItemId ?? "", modelVersion: u },
+                                    variables: { contextualFeedback: { label_id: e }, conversationId: C, conversationItemId: _.agentChatItemId ?? "", modelVersion: u },
                                     onCompleted: (e) => {
-                                        e.create_grok_conversation_feedback?.grok_feedback_error ? (0, T.J)(c) : (0, T.P)(c);
+                                        e.create_grok_conversation_feedback?.grok_feedback_error ? (0, A.J)(c) : (0, A.P)(c);
                                     },
                                 }));
                         },
-                        [k, _?.agentChatItemId, u, c, f, r, w],
+                        [C, _?.agentChatItemId, u, c, f, r, w],
                     );
-                return k && _?.agentChatItemId
+                return C && _?.agentChatItemId
                     ? n.createElement(
                           o.Z,
-                          { style: [L.container, C ? void 0 : L.noGap] },
-                          b ? n.createElement(I.Z, { color: "primary", disabled: !0, icon: "Like" === b ? n.createElement(x.default, null) : n.createElement(Z.default, null), label: "Like" === b ? A : z }) : n.createElement(n.Fragment, null, n.createElement(I.Z, { icon: n.createElement(D.default, null), label: A, onPress: B }), n.createElement(I.Z, { icon: n.createElement(M.default, null), label: z, onPress: U })),
+                          { style: [L.container, k ? void 0 : L.noGap] },
+                          b ? n.createElement(I.Z, { color: "primary", disabled: !0, icon: "Like" === b ? n.createElement(x.default, null) : n.createElement(Z.default, null), label: "Like" === b ? z : T }) : n.createElement(n.Fragment, null, n.createElement(I.Z, { icon: n.createElement(D.default, null), label: z, onPress: B }), n.createElement(I.Z, { icon: n.createElement(M.default, null), label: T, onPress: U })),
                           y &&
                               F &&
                               n.createElement(S.Z, {
@@ -221,13 +217,13 @@
                                   onClose: () => {
                                       K(!1);
                                   },
-                                  onSelect: V,
-                                  onSelectOtherOption: j,
+                                  onSelect: $,
+                                  onSelectOtherOption: V,
                               }),
                           y &&
                               G &&
                               n.createElement(R.Z, {
-                                  conversationId: k,
+                                  conversationId: C,
                                   conversationItemId: _.agentChatItemId,
                                   modelVersion: u,
                                   onClose: () => {
@@ -253,9 +249,9 @@
             var H = a(807896),
                 B = (a(136728), a(797553)),
                 U = a(143670),
-                j = a(837020),
-                V = a(737691),
-                $ = a(14284),
+                V = a(837020),
+                $ = a(737691),
+                j = a(14284),
                 J = a(97369),
                 W = a(725405),
                 q = a(530326);
@@ -265,7 +261,7 @@
                 Y = { imageGen: !0 },
                 ee = { webSearch: !1, xSearch: !1 },
                 te = { webSearch: !0, xSearch: !0, imageGen: !1 },
-                ae = (e) => () => n.createElement(o.Z, { style: ne.container }, n.createElement(e, null), n.createElement(j.default, { style: ne.strike })),
+                ae = (e) => () => n.createElement(o.Z, { style: ne.container }, n.createElement(e, null), n.createElement(V.default, { style: ne.strike })),
                 ne = s.default.create((e) => ({ container: { flex: 1, position: "relative" }, strike: { position: "absolute", bottom: 0, right: -2, width: e.spaces.space12, height: e.spaces.space12, backgroundColor: e.colors.navigationBackground } }));
             function oe({ analysisEntityId: e, conversationKey: t, hasImages: a, hasSearch: s, imageGenerationCount: r, promptSource: c, userChatItemId: d }) {
                 const m = (0, i.I0)(),
@@ -284,10 +280,10 @@
                     h = n.useCallback(() => {
                         g(ee);
                     }, [g]),
-                    C = n.useCallback(() => {
+                    k = n.useCallback(() => {
                         g(Y);
                     }, [g]),
-                    k = n.useCallback(() => {
+                    C = n.useCallback(() => {
                         g(te);
                     }, [g]),
                     _ = n.useCallback(() => {
@@ -299,12 +295,12 @@
                     }, [y]),
                     E = n.useMemo(() => {
                         const e = [];
-                        return b ? (e.push({ Icon: V.default, actionText: N, onClick: g }), s ? e.push({ Icon: ae($.default), actionText: Q.withoutSearch, onClick: h }) : e.push({ Icon: $.default, actionText: Q.withSearch, onClick: k }), a ? e.push({ Icon: ae(J.default), actionText: Q.withoutImage, onClick: f }) : e.push({ Icon: J.default, actionText: Q.withImage, onClick: C }), e) : e;
-                    }, [s, a, b, g, C, f, k, h]);
+                        return b ? (e.push({ Icon: $.default, actionText: N, onClick: g }), s ? e.push({ Icon: ae(j.default), actionText: Q.withoutSearch, onClick: h }) : e.push({ Icon: j.default, actionText: Q.withSearch, onClick: C }), a ? e.push({ Icon: ae(J.default), actionText: Q.withoutImage, onClick: f }) : e.push({ Icon: J.default, actionText: Q.withImage, onClick: k }), e) : e;
+                    }, [s, a, b, g, k, f, C, h]);
                 return n.createElement(
                     o.Z,
                     null,
-                    n.createElement(I.Z, { icon: n.createElement(V.default, null), label: N, onPress: E.length ? w : _ }),
+                    n.createElement(I.Z, { icon: n.createElement($.default, null), label: N, onPress: E.length ? w : _ }),
                     y &&
                         n.createElement(
                             B.default,
@@ -336,8 +332,8 @@
                 ge = g().f61c4bb0,
                 fe = g().ifea3114,
                 he = g().f88553c8,
-                Ce = g().be37ecd4,
-                ke = g().h708a4c0,
+                ke = g().be37ecd4,
+                Ce = g().h708a4c0,
                 Ie = g().g06a67e2;
             function _e({ allMediaIds: e, allMediaUrls: t, conversationKey: a, messageId: s }) {
                 const c = (0, i.I0)(),
@@ -349,33 +345,33 @@
                     g = {};
                 e && (g.allMediaIds = e), t && (g.allMediaUrls = t);
                 const f = Object.keys(g).length > 0 ? JSON.stringify(g) : void 0,
-                    k = (0, ue.Z)({ conversationId: b, metadata: p }),
+                    C = (0, ue.Z)({ conversationId: b, metadata: p }),
                     _ = n.useCallback(async () => {
                         try {
                             const e = new Promise((e, t) => {
-                                k((t) => e(t), t);
+                                C((t) => e(t), t);
                             });
-                            await navigator.clipboard.write([new ClipboardItem({ "text/plain": e.then((e) => new Blob([e], { type: "text/plain" })) })]), m.scribe({ element: "grok_response_copy_share_link_button", action: "click", data: { event_info: f } }), c((0, C.fz)({ text: he, withAutoDismiss: !0 }));
+                            await navigator.clipboard.write([new ClipboardItem({ "text/plain": e.then((e) => new Blob([e], { type: "text/plain" })) })]), m.scribe({ element: "grok_response_copy_share_link_button", action: "click", data: { event_info: f } }), c((0, k.fz)({ text: he, withAutoDismiss: !0 }));
                         } catch (e) {
-                            m.scribe({ element: "grok_response_copy_share_link", action: "fail", data: { event_info: f } }), c((0, C.fz)({ text: Ce, withAutoDismiss: !0 }));
+                            m.scribe({ element: "grok_response_copy_share_link", action: "fail", data: { event_info: f } }), c((0, k.fz)({ text: ke, withAutoDismiss: !0 }));
                         }
-                    }, [k, c, m, f]),
+                    }, [C, c, m, f]),
                     y = n.useCallback(() => {
-                        k(
+                        C(
                             (e) => {
                                 m.scribe({ element: "grok_response_post_button", action: "click", data: { event_info: f } }), r.ZP.isTwitterApp() ? (window.location.href = `https://x.com/compose/tweet?text=${e}`) : l.push({ pathname: "/compose/post", query: { text: e } });
                             },
                             () => {},
                         );
-                    }, [k, l, m, f]),
+                    }, [C, l, m, f]),
                     v = n.useCallback(() => {
-                        k(
+                        C(
                             (e) => {
                                 m.scribe({ element: "grok_response_share_dm_button", action: "click", data: { event_info: f } }), r.ZP.isTwitterApp() ? (window.location.href = `https://x.com/messages/compose?text=${e}`) : l.push({ pathname: "/messages/compose", query: { text: e } });
                             },
                             () => {},
                         );
-                    }, [k, l, m, f]),
+                    }, [C, l, m, f]),
                     w = n.useMemo(
                         () => [
                             {
@@ -390,26 +386,26 @@
                         ],
                         [_, y, v],
                     );
-                return b && p ? n.createElement(I.Z, { icon: n.createElement(me.default, null), label: fe, renderMenu: (e) => n.createElement(re.Z, { description: n.createElement(o.Z, { style: ye.container }, n.createElement(ce.ZP, { weight: "bold" }, ke), n.createElement(ce.ZP, { color: "gray700", size: "subtext1", style: ye.description }, Ie)), items: w, onCloseRequested: e, preferredHorizontalOrientation: "right", shouldCloseOnClick: !0 }) }) : null;
+                return b && p ? n.createElement(I.Z, { icon: n.createElement(me.default, null), label: fe, renderMenu: (e) => n.createElement(re.Z, { description: n.createElement(o.Z, { style: ye.container }, n.createElement(ce.ZP, { weight: "bold" }, Ce), n.createElement(ce.ZP, { color: "gray700", size: "subtext1", style: ye.description }, Ie)), items: w, onCloseRequested: e, preferredHorizontalOrientation: "right", shouldCloseOnClick: !0 }) }) : null;
             }
             const ye = s.default.create((e) => ({ container: { gap: e.spaces.space8, padding: e.spaces.space16, paddingBottom: e.spaces.space12, borderBottomWidth: e.spaces.space1, borderBottomColor: e.colors.borderColor, maxWidth: 300 }, description: { lineHeight: "140%" } })),
                 ve = r.ZP.isTwitterApp();
             function we({ analysisEntityId: e, conversationKey: t, customLeftContent: a, customRightContent: s, messageId: r, promptSource: b, showPostButton: g, textContainer: f }) {
                 const h = (0, d.bD)(t),
-                    C = (0, i.v9)(h.selectFirstMessage),
-                    k = (0, i.v9)((e) => h.selectMessageById(e, r)),
+                    k = (0, i.v9)(h.selectFirstMessage),
+                    C = (0, i.v9)((e) => h.selectMessageById(e, r)),
                     I = (0, u.Z)("regenerate"),
-                    _ = b && -1 !== b.indexOf("post_analysis") && (0, c.I)((C && C.message) || ""),
+                    _ = b && -1 !== b.indexOf("post_analysis") && (0, c.I)((k && k.message) || ""),
                     y = (0, l.hC)("responsive_web_grok_show_message_reply_button"),
                     w = !ve && y && _,
                     { isCompactLayout: E } = (0, p.ZP)(),
-                    x = k.fileAttachments && k.fileAttachments.length > 0 && k.fileAttachments.every((e) => e.mimeType.startsWith("image")),
-                    { mediaIds: Z, mediaUrls: D } = (0, m.VU)(k),
-                    M = k.memoryReferences && k.memoryReferences.length;
-                return n.createElement(o.Z, { style: Ee.expandedDrawer }, n.createElement(o.Z, { style: [Ee.expandedDrawerLeft, E ? Ee.smallerGap : null] }, r ? n.createElement(oe, { analysisEntityId: e, conversationKey: t, hasImages: !!k.fileAttachments?.length, hasSearch: !!k.webResults?.length, imageGenerationCount: I, promptSource: b, userChatItemId: k.userChatItemId }) : null, !r || !k.message || k.isDeleted || w || x ? null : n.createElement(v, { text: k.message, textContainer: f }), k.isDeleted ? null : n.createElement(_e, { allMediaIds: Z, allMediaUrls: D, conversationKey: t, messageId: r }), M && n.createElement(G, { memoryReferences: k.memoryReferences || [] }), k.isDeleted ? null : n.createElement(O, { allMediaIds: Z, allMediaUrls: D, conversationKey: t, messageId: r }), !!a && a));
+                    x = C.fileAttachments && C.fileAttachments.length > 0 && C.fileAttachments.every((e) => e.mimeType.startsWith("image")),
+                    { mediaIds: Z, mediaUrls: D } = (0, m.VU)(C),
+                    M = C.memoryReferences && C.memoryReferences.length;
+                return n.createElement(o.Z, { style: Ee.expandedDrawer }, n.createElement(o.Z, { style: [Ee.expandedDrawerLeft, E ? Ee.smallerGap : null] }, r ? n.createElement(oe, { analysisEntityId: e, conversationKey: t, hasImages: !!C.fileAttachments?.length, hasSearch: !!C.webResults?.length, imageGenerationCount: I, promptSource: b, userChatItemId: C.userChatItemId }) : null, !r || !C.message || C.isDeleted || w || x ? null : n.createElement(v, { text: C.message, textContainer: f }), C.isDeleted ? null : n.createElement(_e, { allMediaIds: Z, allMediaUrls: D, conversationKey: t, messageId: r }), M && n.createElement(G, { memoryReferences: C.memoryReferences || [] }), C.isDeleted ? null : n.createElement(O, { allMediaIds: Z, allMediaUrls: D, conversationKey: t, messageId: r }), !!a && a));
             }
             const Ee = s.default.create((e) => ({ expandedDrawer: { flexDirection: "row", justifyContent: "space-between", width: "100%", alignItems: "center" }, expandedDrawerLeft: { flexDirection: "row", alignItems: "center" }, expandedDrawerRight: { flexDirection: "row", gap: e.spaces.space16, alignItems: "center" }, smallerGap: { gap: e.spaces.space8 } }));
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-1d830d6b.c02bceea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-1d830d6b.a63aa29a.js.map

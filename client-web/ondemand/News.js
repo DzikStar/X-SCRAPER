@@ -71,7 +71,7 @@
                 const { isCompactLayout: a } = (0, c.Z)();
                 return n.createElement(o.nO, { namespace: { page: t } }, n.createElement(s.Z, null, n.createElement(i.Z, { style: T.root }, a ? n.createElement(i.Z, { style: T.compactLayout }, n.createElement(C, null), n.createElement(i.Z, { style: T.compactContent }, e)) : n.createElement(i.Z, { style: T.layout }, n.createElement(i.Z, { style: T.topNavBarContainer }, n.createElement(C, null), n.createElement(i.Z, { style: T.content }, e))))));
             }
-            const T = l.default.create((e) => ({ root: { height: "100%", width: "100%", flex: 1, animationDuration: "0.2s", animationDelay: "0.5s", animationTimingFunction: "ease", animationFillMode: "both", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }] }, layout: { display: "flex", flexDirection: "row", flex: 1 }, compactLayout: { display: "flex", flexDirection: "column", flex: 1 }, topNavBarContainer: { display: "flex", flexDirection: "column", flex: 1, width: "100%", maxWidth: 1500, marginHorizontal: "auto" }, content: { overflow: "hidden", flex: 1, flexDirection: "column", alignItems: "center" }, compactContent: { overflow: "hidden", flex: 1, width: "100%", maxWidth: 600, marginHorizontal: "auto" } }));
+            const T = l.default.create((e) => ({ root: { height: "100%", width: "100%", flex: 1, animationDuration: "0.2s", animationDelay: "0.2s", animationTimingFunction: "ease", animationFillMode: "both", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }] }, layout: { display: "flex", flexDirection: "row", flex: 1 }, compactLayout: { display: "flex", flexDirection: "column", flex: 1 }, topNavBarContainer: { display: "flex", flexDirection: "column", flex: 1, width: "100%", maxWidth: 1500, marginHorizontal: "auto" }, content: { overflow: "hidden", flex: 1, flexDirection: "column", alignItems: "center" }, compactContent: { overflow: "hidden", flex: 1, width: "100%", maxWidth: 600, marginHorizontal: "auto" } }));
         },
         507504: (e, t, a) => {
             a.d(t, { Z: () => T });
@@ -726,4 +726,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.News.ae5a5e4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.News.dff4c36a.js.map

@@ -3,7 +3,7 @@
     ["bundle.Grok-78699f4a"],
     {
         791786: (e, t, n) => {
-            n.d(t, { Z: () => V });
+            n.d(t, { Z: () => j });
             n(136728);
             var a = n(202784),
                 o = n(400752),
@@ -33,8 +33,8 @@
                 I = n(623494),
                 Z = n(976021),
                 A = n(246277),
-                B = n(335785),
-                R = n(988290),
+                R = n(335785),
+                B = n(988290),
                 P = n(186794),
                 T = n(3144),
                 _ = n(276411),
@@ -48,46 +48,45 @@
             const O = "new_prompt",
                 K = "rweb.grok.prompt";
             const G = u().ef4602ec,
-                U = u().b63d3d36,
-                j = { title: u().c65f7308, subtitle: u().f2a8655e };
-            function V({ abortController: e, conversationKey: t, disableFileUploads: n, grokShare: c, hasAccess: u, inputAtBottom: V, inputAtHome: Y, insideConversation: q, isIdle: J, mode: Q, onFieldTextInputRef: ee, placeholder: te, promptSender: ne, useDraftPersistence: ae, useMagicWandIcon: oe, useNonExpanded: re }) {
-                const le = (0, k.I0)(),
-                    de = (0, y.z)(),
-                    ie = (0, l.useHistory)(),
-                    { clearFilterKey: se, grokModeButtons: ce, hasValue: ue, isCreateImageEnabled: me, isFileInputDisabled: he, isImageEditEnabled: pe, isInputCompact: be, isInputFocused: fe, isInputMobile: ge, isInputMobileSize: ye, isReasoningEnabled: ke, isResearchEnabled: we, setFocused: De, setHasValue: Ce, setPendingModeButtonFilterKey: Ee } = (0, L.w)(),
-                    { isGrokDrawer: Me } = (0, R.ZP)(),
-                    ve = (0, w.bD)(t),
-                    xe = (0, k.v9)(ve.selectEditingMessageId);
-                let Se = (0, k.v9)(ve.selectEditingMessage);
-                const Ie = (0, k.v9)(ve.selectInputPrefill),
-                    Ze = a.useRef(null),
-                    { showInputEdit: Ae } = (0, z.u)();
-                Se = Ae ? Se : void 0;
-                const Be = (0, b.hC)("responsive_web_grok_file_upload_enabled"),
-                    Re = (0, b.hC)("responsive_web_grok_show_citations"),
-                    Pe = (0, b.hC)("responsive_web_grok_personality_button_enabled"),
-                    Te = (0, b.hC)("responsive_web_grok_new_home_layout"),
-                    [_e, $e] = a.useState(!1),
-                    { loading: Le } = (0, S.Z)(),
-                    He = a.useRef(Le),
-                    Fe = a.useRef(null),
-                    { clearSelectedFile: Ne, onFileSelected: We, onGrokFileSelected: ze, selectedFiles: Oe } = (0, v.ZP)(),
-                    Ke = a.useMemo(() => Object.keys(Oe), [Oe]),
-                    Ge = (0, g.p)(),
-                    Ue = Object.keys(Oe).some((e) => Oe[e]?.isUploading),
-                    je = Object.keys(Oe).some((e) => Oe[e]?.isPendingAutomaticPromptSend),
-                    [Ve, Xe] = a.useState(""),
-                    Ye = (0, o.Dv)(p.dd),
-                    qe = 0 === Ve.length,
-                    [Je, Qe] = a.useState(null);
+                U = { title: u().c65f7308, subtitle: u().f2a8655e };
+            function j({ abortController: e, conversationKey: t, disableFileUploads: n, grokShare: c, hasAccess: u, inputAtBottom: j, inputAtHome: X, insideConversation: Y, isIdle: q, mode: J, onFieldTextInputRef: Q, placeholder: ee, promptSender: te, useDraftPersistence: ne, useMagicWandIcon: ae, useNonExpanded: oe }) {
+                const re = (0, k.I0)(),
+                    le = (0, y.z)(),
+                    de = (0, l.useHistory)(),
+                    { clearFilterKey: ie, hasValue: se, isCreateImageEnabled: ce, isFileInputDisabled: ue, isImageEditEnabled: me, isInputCompact: he, isInputFocused: pe, isInputMobile: be, isInputMobileSize: fe, isReasoningEnabled: ge, isResearchEnabled: ye, setFocused: ke, setHasValue: we, setPendingModeButtonFilterKey: De } = (0, L.w)(),
+                    { isGrokDrawer: Ce } = (0, B.ZP)(),
+                    Ee = (0, w.bD)(t),
+                    Me = (0, k.v9)(Ee.selectEditingMessageId);
+                let ve = (0, k.v9)(Ee.selectEditingMessage);
+                const xe = (0, k.v9)(Ee.selectInputPrefill),
+                    Se = a.useRef(null),
+                    { showInputEdit: Ie } = (0, z.u)();
+                ve = Ie ? ve : void 0;
+                const Ze = (0, b.hC)("responsive_web_grok_file_upload_enabled"),
+                    Ae = (0, b.hC)("responsive_web_grok_show_citations"),
+                    Re = (0, b.hC)("responsive_web_grok_personality_button_enabled"),
+                    Be = (0, b.hC)("responsive_web_grok_new_home_layout"),
+                    [Pe, Te] = a.useState(!1),
+                    { loading: _e } = (0, S.Z)(),
+                    $e = a.useRef(_e),
+                    Le = a.useRef(null),
+                    { clearSelectedFile: He, onFileSelected: Fe, onGrokFileSelected: Ne, selectedFiles: We } = (0, v.ZP)(),
+                    ze = a.useMemo(() => Object.keys(We), [We]),
+                    Oe = (0, g.p)(),
+                    Ke = Object.keys(We).some((e) => We[e]?.isUploading),
+                    Ge = Object.keys(We).some((e) => We[e]?.isPendingAutomaticPromptSend),
+                    [Ue, je] = a.useState(""),
+                    Ve = (0, o.Dv)(p.dd),
+                    Xe = 0 === Ue.length,
+                    [Ye, qe] = a.useState(null);
                 a.useEffect(() => {
-                    Je && de.scribe({ action: "impression", component: "grok-input", element: "degraded-modal", data: { event_info: JSON.stringify(Je) } });
-                }, [de, Je]);
-                const et = (0, f.Z)(Y);
+                    Ye && le.scribe({ action: "impression", component: "grok-input", element: "degraded-modal", data: { event_info: JSON.stringify(Ye) } });
+                }, [le, Ye]);
+                const Je = (0, f.Z)(X);
                 a.useEffect(() => {
-                    !et && Y && pe && se();
-                }, [et, Y, pe, se]);
-                const tt = (function (e, t, n) {
+                    !Je && X && me && ie();
+                }, [Je, X, me, ie]);
+                const Qe = (function (e, t, n) {
                         const r = (0, o.Dv)(p.lZ),
                             l = (0, k.v9)(t.selectConversationId),
                             d = a.useMemo(() => l || (n ? "" : O), [l, n]),
@@ -111,309 +110,309 @@
                             }, [r, e, d]),
                             i
                         );
-                    })(Xe, ve, !ae || !!xe || !!c),
-                    nt = a.useCallback(
+                    })(je, Ee, !ne || !!Me || !!c),
+                    et = a.useCallback(
                         (e) => {
                             let t = e.target.value;
-                            e.target.value.length > Ve.length + 1 && (t = t.replace(/\r?\n+$/, "")), tt(t), Xe(t);
+                            e.target.value.length > Ue.length + 1 && (t = t.replace(/\r?\n+$/, "")), Qe(t), je(t);
                         },
-                        [tt, Ve],
+                        [Qe, Ue],
                     );
                 a.useEffect(() => {
-                    const e = Ve.length > 0;
-                    e !== ue && Ce(e);
-                }, [Ve, ue, Ce]);
-                const at = Ke.length > 0,
-                    ot = a.useMemo(() => Object.values(Oe).every((e) => e && !e.isUploading), [Oe]),
-                    rt = a.useMemo(() => (Ve.trim().length > 0 || at) && ot && !je, [Ve, at, ot, je]),
-                    lt = a.useMemo(() => Ke.map((e) => Oe[e]?.remote).filter(Boolean), [Ke, Oe]),
-                    dt = a.useMemo(() => Ke.map((e) => Oe[e]?.local).filter(Boolean), [Ke, Oe]),
-                    it = a.useCallback(() => {
-                        Fe.current?.focus(), De(!0);
-                    }, [De]),
-                    st = a.useCallback(() => {
-                        Fe.current?.blur(), De(!1);
-                    }, [De]),
-                    ct = (0, x.Z)("grok_input"),
-                    ut = (function (e, t) {
+                    const e = Ue.length > 0;
+                    e !== se && we(e);
+                }, [Ue, se, we]);
+                const tt = ze.length > 0,
+                    nt = a.useMemo(() => Object.values(We).every((e) => e && !e.isUploading), [We]),
+                    at = a.useMemo(() => (Ue.trim().length > 0 || tt) && nt && !Ge, [Ue, tt, nt, Ge]),
+                    ot = a.useMemo(() => ze.map((e) => We[e]?.remote).filter(Boolean), [ze, We]),
+                    rt = a.useMemo(() => ze.map((e) => We[e]?.local).filter(Boolean), [ze, We]),
+                    lt = a.useCallback(() => {
+                        Le.current?.focus(), ke(!0);
+                    }, [ke]),
+                    dt = a.useCallback(() => {
+                        Le.current?.blur(), ke(!1);
+                    }, [ke]),
+                    it = (0, x.Z)("grok_input"),
+                    st = (function (e, t) {
                         const n = {};
                         return t && e.length ? { promptMetadata: { promptSource: "IMAGE_EDIT", action: "INPUT", properties: { imageUrl: e[0].url } } } : n;
-                    })(lt, pe),
-                    mt = (0, h.r)(async () => {
+                    })(ot, me),
+                    ct = (0, h.r)(async () => {
                         try {
-                            if (ne)
-                                ne({
-                                    text: Ve,
-                                    attachments: lt,
-                                    mode: Q,
-                                    returnCitations: Re,
+                            if (te)
+                                te({
+                                    text: Ue,
+                                    attachments: ot,
+                                    mode: J,
+                                    returnCitations: Ae,
                                     onStart: () => {
-                                        $e(!1),
-                                            Ke.forEach((e) => {
-                                                Ne(e);
+                                        Te(!1),
+                                            ze.forEach((e) => {
+                                                He(e);
                                             }),
-                                            Xe(""),
-                                            tt(""),
-                                            Te && (me || pe) && se();
+                                            je(""),
+                                            Qe(""),
+                                            Be && (ce || me) && ie();
                                     },
-                                    imageGenerationCount: ct,
-                                    isReasoning: ke,
-                                    isDeepsearch: we,
+                                    imageGenerationCount: it,
+                                    isReasoning: ge,
+                                    isDeepsearch: ye,
                                 });
                             else if (c) {
-                                const e = await (0, C.X)({ analytics: de, api: Ye, dispatch: le, grokModule: ve, fromShareId: c });
-                                e ? ($e(!1), Ke.forEach((e) => Ne(e)), Xe(""), ie.push(`/i/grok?conversation=${e}&text=${encodeURIComponent(Ve)}`)) : Ge({ text: G });
+                                const e = await (0, C.X)({ analytics: le, api: Ve, dispatch: re, grokModule: Ee, fromShareId: c });
+                                e ? (Te(!1), ze.forEach((e) => He(e)), je(""), de.push(`/i/grok?conversation=${e}&text=${encodeURIComponent(Ue)}`)) : Oe({ text: G });
                             } else
-                                xe
-                                    ? Se &&
-                                      (await le(
-                                          (0, E.X)({ analytics: de, conversationKey: t })({
-                                              editingMessageId: xe,
-                                              text: Ve,
-                                              fileAttachments: lt,
-                                              returnCitations: Re,
-                                              mode: Q,
-                                              imageGenerationCount: ct,
+                                Me
+                                    ? ve &&
+                                      (await re(
+                                          (0, E.X)({ analytics: le, conversationKey: t })({
+                                              editingMessageId: Me,
+                                              text: Ue,
+                                              fileAttachments: ot,
+                                              returnCitations: Ae,
+                                              mode: J,
+                                              imageGenerationCount: it,
                                               onStart: () => {
-                                                  $e(!1),
-                                                      Ke.forEach((e) => {
-                                                          Ne(e);
+                                                  Te(!1),
+                                                      ze.forEach((e) => {
+                                                          He(e);
                                                       }),
-                                                      Xe("");
+                                                      je("");
                                               },
-                                              isReasoning: ke,
-                                              isDeepsearch: we,
+                                              isReasoning: ge,
+                                              isDeepsearch: ye,
                                           }),
                                       ))
-                                    : (tt(""),
-                                      await le(
-                                          (0, M.u)({ analytics: de, conversationKey: t })({
-                                              text: Ve,
-                                              attachments: lt,
-                                              mode: Q,
-                                              returnCitations: Re,
-                                              isGrokDrawer: Me,
-                                              promptMetadata: ut.promptMetadata,
+                                    : (Qe(""),
+                                      await re(
+                                          (0, M.u)({ analytics: le, conversationKey: t })({
+                                              text: Ue,
+                                              attachments: ot,
+                                              mode: J,
+                                              returnCitations: Ae,
+                                              isGrokDrawer: Ce,
+                                              promptMetadata: st.promptMetadata,
                                               onStart: () => {
-                                                  $e(!1),
-                                                      Ke.forEach((e) => {
-                                                          Ne(e);
+                                                  Te(!1),
+                                                      ze.forEach((e) => {
+                                                          He(e);
                                                       }),
-                                                      Xe(""),
-                                                      Te && (me || pe) && se();
+                                                      je(""),
+                                                      Be && (ce || me) && ie();
                                               },
-                                              imageGenerationCount: ct,
-                                              isReasoning: ke,
-                                              isDeepsearch: we,
-                                              isImageGen: me,
+                                              imageGenerationCount: it,
+                                              isReasoning: ge,
+                                              isDeepsearch: ye,
+                                              isImageGen: ce,
                                           }),
                                       ));
                         } catch (e) {
-                            Ge({ text: G });
+                            Oe({ text: G });
                         } finally {
-                            $e(!1);
+                            Te(!1);
                         }
                     });
                 a.useEffect(() => {
-                    Se || Xe(""),
-                        Se &&
-                            (Xe(Se.message ?? ""),
-                            Ke.forEach((e) => {
-                                Ne(e);
+                    ve || je(""),
+                        ve &&
+                            (je(ve.message ?? ""),
+                            ze.forEach((e) => {
+                                He(e);
                             }),
-                            Se.fileAttachments &&
-                                Se.fileAttachments.length > 0 &&
-                                Se.fileAttachments.forEach((e) => {
-                                    ze(e);
+                            ve.fileAttachments &&
+                                ve.fileAttachments.length > 0 &&
+                                ve.fileAttachments.forEach((e) => {
+                                    Ne(e);
                                 }),
                             setTimeout(() => {
-                                it();
+                                lt();
                             }, 0));
-                }, [Se]);
-                const ht = a.useCallback(
+                }, [ve]);
+                const ut = a.useCallback(
                     (e) => {
-                        e?.preventDefault(), e?.stopPropagation(), $e(!0);
+                        e?.preventDefault(), e?.stopPropagation(), Te(!0);
                     },
-                    [$e],
+                    [Te],
                 );
                 a.useEffect(() => {
-                    !_e || Ue || je || mt();
-                }, [_e, Ue, mt, je]);
-                const pt = a.useCallback(
+                    !Pe || Ke || Ge || ct();
+                }, [Pe, Ke, ct, Ge]);
+                const mt = a.useCallback(
                         (0, m.Z)(() => {
-                            le((0, D.I)({ analytics: de, conversationKey: t })), e && e.abort(), (0, I.DE)(de);
+                            re((0, D.I)({ analytics: le, conversationKey: t })), e && e.abort(), (0, I.DE)(le);
                         }, 50),
-                        [qe, e],
+                        [Xe, e],
+                    ),
+                    ht = a.useCallback(
+                        (e) => {
+                            Ze && (Fe(e[0]), (0, I.dP)(le, "clipboard"));
+                        },
+                        [Fe, le, Ze],
+                    ),
+                    pt = a.useCallback(
+                        (e) => {
+                            be || "Enter" !== e.key || e.shiftKey || (e.preventDefault(), at && ut());
+                        },
+                        [be, at, ut],
                     ),
                     bt = a.useCallback(
                         (e) => {
-                            Be && (We(e[0]), (0, I.dP)(de, "clipboard"));
+                            "Backspace" === e.key && 0 === Ue.length && (ce || me) && ie();
                         },
-                        [We, de, Be],
+                        [ie, ce, me, Ue.length],
                     ),
-                    ft = a.useCallback(
-                        (e) => {
-                            ge || "Enter" !== e.key || e.shiftKey || (e.preventDefault(), rt && ht());
-                        },
-                        [ge, rt, ht],
-                    ),
-                    gt = a.useCallback(
-                        (e) => {
-                            "Backspace" === e.key && 0 === Ve.length && (me || pe) && se();
-                        },
-                        [se, me, pe, Ve.length],
-                    ),
-                    yt = a.useCallback(() => {
-                        it();
-                    }, [it]),
-                    kt = a.useMemo(() => {
-                        if (0 !== Ke.length)
+                    ft = a.useCallback(() => {
+                        lt();
+                    }, [lt]),
+                    gt = a.useMemo(() => {
+                        if (0 !== ze.length)
                             return a.createElement(
                                 r.Z,
-                                { style: X.fileAttachments },
-                                Ke.map((e, t) => {
-                                    const n = Oe[e];
+                                { style: V.fileAttachments },
+                                ze.map((e, t) => {
+                                    const n = We[e];
                                     return A.$.includes(n?.local?.type) || A.$.includes(n?.remote?.mimeType)
-                                        ? a.createElement(B.L, {
+                                        ? a.createElement(R.L, {
                                               key: `attachment_${e}`,
                                               onRemove: () => {
-                                                  pe && 1 === Ke.length && se(), Ne(e), yt();
+                                                  me && 1 === ze.length && ie(), He(e), ft();
                                               },
                                               selectedFile: n,
                                           })
-                                        : a.createElement(B.L, {
+                                        : a.createElement(R.L, {
                                               key: `attachment_${e}`,
                                               onRemove: () => {
-                                                  Ne(e), yt();
+                                                  He(e), ft();
                                               },
                                               selectedFile: n,
                                           });
                                 }),
                             );
-                    }, [Oe, Ke, Ne, yt, pe, se]),
-                    wt = !Le,
-                    Dt = u && (!ye || !_e) && !je,
-                    Ct = { color: Ve ? d.default.theme.colors.brandColor : d.default.theme.colors.gray700 };
+                    }, [We, ze, He, ft, me, ie]),
+                    yt = !_e,
+                    kt = u && (!fe || !Pe) && !Ge,
+                    wt = { color: Ue ? d.default.theme.colors.brandColor : d.default.theme.colors.gray700 };
                 a.useEffect(() => {
-                    Dt || st();
-                }, [Dt, st]);
-                const Et = a.useMemo(() => a.createElement(W.Z, { fadeIn: He.current, isInProgress: !J, isInputCompact: be, isLoading: _e || je, isSendEnabled: rt, onSend: ht, onStop: pt, useMagicWandIcon: oe }), [J, _e, je, rt, ht, pt, oe, be]),
-                    Mt = a.useMemo(
+                    kt || dt();
+                }, [kt, dt]);
+                const Dt = a.useMemo(() => a.createElement(W.Z, { fadeIn: $e.current, isInProgress: !q, isInputCompact: he, isLoading: Pe || Ge, isSendEnabled: at, onSend: ut, onStop: mt, useMagicWandIcon: ae }), [q, Pe, Ge, at, ut, mt, ae, he]),
+                    Ct = a.useMemo(
                         () =>
                             a.createElement(
                                 r.Z,
-                                { style: X.contentBelowContainer },
+                                { style: V.contentBelowContainer },
                                 a.createElement(
                                     r.Z,
-                                    { style: Me || be ? X.contentBelowLeftCompact : X.contentBelowLeft },
-                                    wt &&
+                                    { style: Ce || he ? V.contentBelowLeftCompact : V.contentBelowLeft },
+                                    yt &&
                                         a.createElement(
                                             a.Fragment,
                                             null,
-                                            a.createElement($.Z, { disabled: he, fadeIn: He.current, focused: fe, isInputCompact: be, label: be || ce.length >= 2 ? "" : U, useButtonsForExpandedInput: !0 }),
+                                            a.createElement($.Z, { disabled: ue, fadeIn: $e.current, focused: pe, isInputCompact: he, label: "", useButtonsForExpandedInput: !0 }),
                                             a.createElement(H.Z, {
-                                                disabled: null !== Je,
-                                                fadeIn: He.current,
-                                                focused: fe,
-                                                onClick: () => clearTimeout(Ze.current),
-                                                onHomeScreen: Y,
+                                                disabled: null !== Ye,
+                                                fadeIn: $e.current,
+                                                focused: pe,
+                                                onClick: () => clearTimeout(Se.current),
+                                                onHomeScreen: X,
                                                 onShowDegradedModal: (e) => {
-                                                    Je || Qe(e || j);
+                                                    Ye || qe(e || U);
                                                 },
                                             }),
                                         ),
                                 ),
-                                a.createElement(r.Z, { style: Me || be ? X.contentBelowRightCompact : X.contentBelowRight }, Pe && a.createElement(N.t, { conversationKey: t, disabled: q, fadeIn: He.current, focused: fe, inputAtBottom: V, inputAtHome: Y }), !1, be && !Me ? (0 === Ve.length && J && !at ? a.createElement(P.Z, { fadeIn: He.current, isInputCompact: be }) : Et) : a.createElement(a.Fragment, null, a.createElement(P.Z, { fadeIn: He.current, isInputCompact: be }), Et)),
+                                a.createElement(r.Z, { style: Ce || he ? V.contentBelowRightCompact : V.contentBelowRight }, Re && a.createElement(N.t, { conversationKey: t, disabled: Y, fadeIn: $e.current, focused: pe, inputAtBottom: j, inputAtHome: X }), !1, he && !Ce ? (0 === Ue.length && q && !tt ? a.createElement(P.Z, { fadeIn: $e.current, isInputCompact: he }) : Dt) : a.createElement(a.Fragment, null, a.createElement(P.Z, { fadeIn: $e.current, isInputCompact: he }), Dt)),
                             ),
-                        [Me, be, wt, !0, he, fe, ce.length, Je, Pe, t, q, V, Y, Ve, Et, J, at],
+                        [Ce, he, yt, !0, ue, pe, Ye, Re, t, Y, j, X, Ue, Dt, q, tt],
                     );
                 return (
                     a.useEffect(() => {
-                        dt.length > 0 && it();
-                    }, [it, dt]),
+                        rt.length > 0 && lt();
+                    }, [lt, rt]),
                     a.useEffect(() => {
-                        if ((Ie.text.length > 0 && Xe(Ie.text), Ie.attachments.length > 0)) for (const e of Ie.attachments) ze(e);
-                        Ie.modeButtonFilterKey && (Ee(Ie.modeButtonFilterKey), yt()), (Ie.text.length > 0 || Ie.attachments.length > 0 || Ie.modeButtonFilterKey) && le((0, w.Uo)(t, { text: "", attachments: [] }));
-                    }, [Ie, t, le, ze, yt, Ee]),
-                    re
+                        if ((xe.text.length > 0 && je(xe.text), xe.attachments.length > 0)) for (const e of xe.attachments) Ne(e);
+                        xe.modeButtonFilterKey && (De(xe.modeButtonFilterKey), ft()), (xe.text.length > 0 || xe.attachments.length > 0 || xe.modeButtonFilterKey) && re((0, w.Uo)(t, { text: "", attachments: [] }));
+                    }, [xe, t, re, Ne, ft, De]),
+                    oe
                         ? a.createElement(
                               r.Z,
-                              { style: X.deprecatedContainer },
+                              { style: V.deprecatedContainer },
                               a.createElement(
                                   Z.P,
-                                  { direction: i.Z.getTextDirection(Ve) },
+                                  { direction: i.Z.getTextDirection(Ue) },
                                   a.createElement(T.z, null),
                                   a.createElement(
                                       r.Z,
-                                      { style: X.inputOuterContainer },
-                                      Te && a.createElement(_.Z, null),
+                                      { style: V.inputOuterContainer },
+                                      Be && a.createElement(_.Z, null),
                                       a.createElement(s.Z, {
-                                          autoFocus: !ye,
-                                          contentAbove: kt,
-                                          editable: u && (!ye || !_e) && !je,
-                                          inputStyle: [X.inputStyle, Ct],
+                                          autoFocus: !fe,
+                                          contentAbove: gt,
+                                          editable: u && (!fe || !Pe) && !Ge,
+                                          inputStyle: [V.inputStyle, wt],
                                           leftAligned: !0,
-                                          leftContent: n ? void 0 : a.createElement($.Z, { disabled: he, isInputCompact: be, label: U }),
+                                          leftContent: n ? void 0 : a.createElement($.Z, { disabled: ue, isInputCompact: he, label: "" }),
                                           maxNumberOfLines: 15,
                                           multiline: !0,
                                           numberOfLines: 1,
-                                          onChange: nt,
-                                          onFilesAdded: bt,
-                                          onKeyPress: ft,
-                                          placeholder: te,
+                                          onChange: et,
+                                          onFilesAdded: ht,
+                                          onKeyPress: pt,
+                                          placeholder: ee,
                                           ref: (e) => {
-                                              (Fe.current = e), e && ee?.(e);
+                                              (Le.current = e), e && Q?.(e);
                                           },
-                                          rightContent: Et,
-                                          style: X.deprecatedInputContainer,
+                                          rightContent: Dt,
+                                          style: V.deprecatedInputContainer,
                                           styleType: "selection",
-                                          value: Ve,
+                                          value: Ue,
                                       }),
                                   ),
                               ),
                           )
                         : a.createElement(
                               r.Z,
-                              { onClick: yt, style: X.container },
+                              { onClick: ft, style: V.container },
                               a.createElement(
                                   Z.P,
-                                  { direction: i.Z.getTextDirection(Ve) },
+                                  { direction: i.Z.getTextDirection(Ue) },
                                   a.createElement(T.z, null),
                                   a.createElement(
                                       r.Z,
-                                      { style: X.inputOuterContainer },
-                                      Te && a.createElement(_.Z, null),
+                                      { style: V.inputOuterContainer },
+                                      Be && a.createElement(_.Z, null),
                                       a.createElement(s.Z, {
-                                          autoFocus: !ye,
-                                          contentAbove: kt,
-                                          contentBelow: Mt,
-                                          editable: Dt,
-                                          inputStyle: [X.inputStyle, Ct],
+                                          autoFocus: !fe,
+                                          contentAbove: gt,
+                                          contentBelow: Ct,
+                                          editable: kt,
+                                          inputStyle: [V.inputStyle, wt],
                                           leftAligned: !0,
                                           maxNumberOfLines: 15,
                                           multiline: !0,
                                           numberOfLines: 1,
-                                          onBlur: () => De(!1),
-                                          onChange: nt,
-                                          onFilesAdded: bt,
-                                          onFocus: () => De(!0),
-                                          onKeyDown: gt,
-                                          onKeyPress: ft,
-                                          placeholder: te,
+                                          onBlur: () => ke(!1),
+                                          onChange: et,
+                                          onFilesAdded: ht,
+                                          onFocus: () => ke(!0),
+                                          onKeyDown: bt,
+                                          onKeyPress: pt,
+                                          placeholder: ee,
                                           ref: (e) => {
-                                              (Fe.current = e), e && ee?.(e);
+                                              (Le.current = e), e && Q?.(e);
                                           },
-                                          style: X.inputContainer,
+                                          style: V.inputContainer,
                                           styleType: "selection",
-                                          value: Ve,
+                                          value: Ue,
                                       }),
                                   ),
                               ),
-                              Je && a.createElement(F.Z, { arrowXStart: "50%", onAnimationEnd: () => Qe(null), subtitle: Je.title, title: Je.subtitle }),
+                              Ye && a.createElement(F.Z, { arrowXStart: "50%", onAnimationEnd: () => qe(null), subtitle: Ye.title, title: Ye.subtitle }),
                           )
                 );
             }
-            const X = d.default.create((e) => ({ container: { width: "100%", borderRadius: e.spaces.space16, backgroundColor: e.colors.gray50, borderStyle: "solid", borderWidth: 1, borderColor: "transparent", transition: "all 0.2s" }, contentBelowContainer: { width: "100%", paddingHorizontal: e.spaces.space8, paddingBottom: e.spaces.space8, flexDirection: "row", justifyContent: "space-between", alignItems: "center" }, contentBelowLeft: { flexDirection: "row", alignItems: "center", justifyContent: "flex-start", gap: e.spaces.space8, flex: 1 }, contentBelowRight: { flexDirection: "row", alignItems: "center", justifyContent: "flex-end", gap: e.spaces.space8, paddingStart: e.spaces.space16 }, contentBelowLeftCompact: { flexDirection: "row", alignItems: "center", justifyContent: "flex-start", gap: e.spaces.space8, paddingEnd: e.spaces.space8 }, contentBelowRightCompact: { flexDirection: "row", alignItems: "center", justifyContent: "flex-end", flex: 1, gap: e.spaces.space8 }, inputOuterContainer: { position: "relative", flex: 1 }, inputStyle: { flex: 1, fontSize: 16, paddingTop: 20, paddingBottom: 20 }, inputContainer: { width: "100%", paddingStart: e.spaces.space4, backgroundColor: e.colors.gray50, borderRadius: e.spaces.space24, height: 300, fontSize: 16, flex: 1, justifyContent: "space-between" }, deprecatedContainer: { width: "100%" }, deprecatedInputContainer: { backgroundColor: e.colors.gray50, borderRadius: e.spaces.space32, paddingHorizontal: e.spaces.space8, paddingVertical: e.spaces.space4, width: "100%", borderColor: e.colors.gray50, borderWidth: e.spaces.space1, borderStyle: "solid" }, fileAttachments: { flex: 1, display: "flex", flexDirection: "row", gap: e.spaces.space8, paddingHorizontal: e.spaces.space12, paddingTop: 14, paddingBottom: 0, flexWrap: "wrap" } }));
+            const V = d.default.create((e) => ({ container: { width: "100%", borderRadius: e.spaces.space16, backgroundColor: e.colors.gray50, borderStyle: "solid", borderWidth: 1, borderColor: "transparent", transition: "all 0.2s" }, contentBelowContainer: { width: "100%", paddingHorizontal: e.spaces.space8, paddingBottom: e.spaces.space8, flexDirection: "row", justifyContent: "space-between", alignItems: "center" }, contentBelowLeft: { flexDirection: "row", alignItems: "center", justifyContent: "flex-start", gap: e.spaces.space8, flex: 1 }, contentBelowRight: { flexDirection: "row", alignItems: "center", justifyContent: "flex-end", gap: e.spaces.space8, paddingStart: e.spaces.space16 }, contentBelowLeftCompact: { flexDirection: "row", alignItems: "center", justifyContent: "flex-start", gap: e.spaces.space8, paddingEnd: e.spaces.space8 }, contentBelowRightCompact: { flexDirection: "row", alignItems: "center", justifyContent: "flex-end", flex: 1, gap: e.spaces.space8 }, inputOuterContainer: { position: "relative", flex: 1 }, inputStyle: { flex: 1, fontSize: 16, paddingTop: 20, paddingBottom: 20 }, inputContainer: { width: "100%", paddingStart: e.spaces.space4, backgroundColor: e.colors.gray50, borderRadius: e.spaces.space24, height: 300, fontSize: 16, flex: 1, justifyContent: "space-between" }, deprecatedContainer: { width: "100%" }, deprecatedInputContainer: { backgroundColor: e.colors.gray50, borderRadius: e.spaces.space32, paddingHorizontal: e.spaces.space8, paddingVertical: e.spaces.space4, width: "100%", borderColor: e.colors.gray50, borderWidth: e.spaces.space1, borderStyle: "solid" }, fileAttachments: { flex: 1, display: "flex", flexDirection: "row", gap: e.spaces.space8, paddingHorizontal: e.spaces.space12, paddingTop: 14, paddingBottom: 0, flexWrap: "wrap" } }));
         },
         764326: (e, t, n) => {
             n.d(t, { DP: () => r, Qs: () => l, il: () => a, u$: () => o });
@@ -509,20 +508,20 @@
                     n = [];
                 e.items?.length &&
                     e.items.forEach((e, o) => {
-                        n.push(a.createElement(Z.Provider, { key: `li-${o.toString()}`, value: { level: t + 1 } }, a.createElement(B, { isFirst: 0 === o, item: e, level: t })));
+                        n.push(a.createElement(Z.Provider, { key: `li-${o.toString()}`, value: { level: t + 1 } }, a.createElement(R, { isFirst: 0 === o, item: e, level: t })));
                     });
                 const o = a.useMemo(
                     () =>
                         [
-                            { ...R.list, ...R.level1 },
-                            { ...R.list, ...R.level2 },
-                            { ...R.list, ...R.level3 },
-                        ][t] ?? { ...R.list, ...R.level4 },
+                            { ...B.list, ...B.level1 },
+                            { ...B.list, ...B.level2 },
+                            { ...B.list, ...B.level3 },
+                        ][t] ?? { ...B.list, ...B.level4 },
                     [t],
                 );
                 return e.ordered ? a.createElement(Z.Provider, { value: { level: t + 1 } }, a.createElement("ol", { dir: e.direction, start: e.start, style: o }, n)) : a.createElement(Z.Provider, { value: { level: t + 1 } }, a.createElement("ul", { dir: e.direction, style: o }, n));
             }
-            const B = ({ isFirst: e, item: t, level: n }) => {
+            const R = ({ isFirst: e, item: t, level: n }) => {
                     const o = [];
                     t.tokens?.length &&
                         t.tokens.forEach((e, t) => {
@@ -532,9 +531,9 @@
                         let t = "0.8em";
                         return 1 === n && (t = "0.4em"), 2 === n && (t = "0.2em"), n >= 3 && (t = "0em"), { marginTop: t, ...(e ? { marginTop: 0 } : {}) };
                     }, [e, n]);
-                    return a.createElement("li", { style: { ...R.listItem, ...r } }, o);
+                    return a.createElement("li", { style: { ...B.listItem, ...r } }, o);
                 },
-                R = h.default.create((e) => ({ list: { display: "block", paddingInlineStart: "2em", listStyleType: "disc" }, level1: { marginBlockStart: 0, marginBlockEnd: "1.25em" }, level2: { marginBlockStart: "0.75em", marginBlockEnd: "0.75em" }, level3: { marginBlockStart: "0.75em", marginBlockEnd: "0.75em" }, level4: { marginBlockStart: "0.75em", marginBlockEnd: "0.75em" }, listItem: { fontFamily: e.fontFamilies.normal, marginTop: "0.8em" }, firstListItem: { marginTop: 0 } }));
+                B = h.default.create((e) => ({ list: { display: "block", paddingInlineStart: "2em", listStyleType: "disc" }, level1: { marginBlockStart: 0, marginBlockEnd: "1.25em" }, level2: { marginBlockStart: "0.75em", marginBlockEnd: "0.75em" }, level3: { marginBlockStart: "0.75em", marginBlockEnd: "0.75em" }, level4: { marginBlockStart: "0.75em", marginBlockEnd: "0.75em" }, listItem: { fontFamily: e.fontFamilies.normal, marginTop: "0.8em" }, firstListItem: { marginTop: 0 } }));
             var P = n(444342);
             function T({ children: e, isRootLevel: t, style: n, token: o }) {
                 return a.createElement(i.P, { direction: o.direction }, a.createElement(m.ZP, { style: [t && _.paragraph, n] }, a.createElement(P.Z, { token: o }, e)));
@@ -796,7 +795,7 @@
                 I = n(301758),
                 Z = n(836255);
             const A = "grok_citation_post",
-                B = ({ postId: e }) => {
+                R = ({ postId: e }) => {
                     const t = (0, u.oR)(),
                         n = (0, u.I0)(),
                         { isAnimated: o } = a.useContext(p.$),
@@ -813,12 +812,12 @@
                         e && n(Z.Z.fetchOneIfNeeded(e));
                     }, [n, e]);
                     const m = Z.Z.selectHydrated(t.getState(), e),
-                        h = a.useCallback(() => a.createElement(R, { postId: e }), [e]);
+                        h = a.useCallback(() => a.createElement(B, { postId: e }), [e]);
                     if (!m) return null;
                     const b = m?.user?.profile_image_url_https;
                     return a.createElement("div", { className: "omit-from-copy", style: P.inlineContainer }, a.createElement(g.Z, { style: [P.inlineContainer, o ? P.animation : null] }, a.createElement(y.Z, { renderContent: h }, a.createElement(k.Z, { link: m.permalink, onMouseEnter: i, onMouseLeave: s, onPress: c, style: [P.content, b ? P.avatarContainer : P.iconContainer, r ? P.containerHovered : void 0], withoutInteractiveStyles: !0 }, b ? a.createElement(f.Z, { source: b, style: P.avatar }) : a.createElement(w.default, { style: P.linkIcon })))));
                 },
-                R = ({ postId: e }) =>
+                B = ({ postId: e }) =>
                     a.createElement(
                         g.Z,
                         { style: P.hoverCardContainer },
@@ -887,7 +886,7 @@
                 if (!e.text && e.href) {
                     if (y) return a.createElement(M, { link: y });
                     const t = T(e.href);
-                    if (t) return a.createElement(B, { postId: t });
+                    if (t) return a.createElement(R, { postId: t });
                 }
                 return g ? a.createElement(o.ZP, { hoverLabel: _, link: e.href, onClick: D, onMouseEnter: () => i(!0), onMouseLeave: () => i(!1), style: [W.expandedLineHeight, W.promptLink, d && W.hoverStyle], withInteractiveStyling: !1 }, e.text) : f ? a.createElement(r.Z, { screenName: f }, a.createElement(o.ZP, { link: e.href }, e.text)) : a.createElement(o.ZP, { link: e.href, ref: F }, e.text);
             }
@@ -1066,4 +1065,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-78699f4a.8085e9ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-78699f4a.14091fea.js.map

@@ -16,12 +16,13 @@
                             (t.previousPlaybackState = t.playbackState), (t.playbackState = e), this._updatePlayerStateForDocking(t, e);
                         }),
                         (this._updatePlayerStateForDocking = (t, e) => {
-                            if (e === n.q.USER_PLAYING)
-                                if (this._updateDockedVideo && t.registerDockElement) {
+                            if (e === n.q.USER_PLAYING) {
+                                const e = t.previousPlaybackState === n.q.USER_PAUSED;
+                                if (this._updateDockedVideo && "function" == typeof t.registerDockElement && !e) {
                                     const e = t.registerDockElement();
                                     this._updateDockedVideo(e, t.id);
                                 } else this._updateIsUserPaused && this._updateIsUserPaused(!1);
-                            else e === n.q.USER_PAUSED ? this._updateIsUserPaused && this._updateIsUserPaused(!0) : e === n.q.AUTO_PLAYING && this._updateIsUserPaused && this._updateIsUserPaused(!1);
+                            } else e === n.q.USER_PAUSED ? this._updateIsUserPaused && this._updateIsUserPaused(!0) : e === n.q.AUTO_PLAYING && this._updateIsUserPaused && this._updateIsUserPaused(!1);
                             this._updateInlinePlayerState && this._updateInlinePlayerState(this._players);
                         }),
                         (this._updatePlaybackStates = () => {
@@ -374,8 +375,8 @@
                 g = s("".charAt),
                 m = s("".charCodeAt),
                 _ = s("".replace),
-                b = s((1).toString),
-                P = /[\uD800-\uDFFF]/g,
+                P = s((1).toString),
+                b = /[\uD800-\uDFFF]/g,
                 A = /^[\uD800-\uDBFF]$/,
                 E = /^[\uDC00-\uDFFF]$/,
                 S =
@@ -401,7 +402,7 @@
                 k = function (t, e, r) {
                     var n = g(r, e - 1),
                         a = g(r, e + 1);
-                    return (v(A, t) && !v(E, a)) || (v(E, t) && !v(A, n)) ? "\\u" + b(m(t, 0), 16) : t;
+                    return (v(A, t) && !v(E, a)) || (v(E, t) && !v(A, n)) ? "\\u" + P(m(t, 0), 16) : t;
                 };
             y &&
                 n(
@@ -410,7 +411,7 @@
                         stringify: function (t, e, r) {
                             var n = p(arguments),
                                 a = i(S ? N : y, null, n);
-                            return I && "string" == typeof a ? _(a, P, k) : a;
+                            return I && "string" == typeof a ? _(a, b, k) : a;
                         },
                     },
                 );
@@ -433,10 +434,10 @@
                 g = r(997933).f,
                 m = r(931787).f,
                 _ = r(890143),
-                b = r(1017).trim,
-                P = "Number",
-                A = o[P],
-                E = s[P],
+                P = r(1017).trim,
+                b = "Number",
+                A = o[b],
+                E = s[b],
                 S = A.prototype,
                 I = o.TypeError,
                 N = c("".slice),
@@ -453,7 +454,7 @@
                         u = h(t, "number");
                     if (d(u)) throw new I("Cannot convert a Symbol value to a number");
                     if ("string" == typeof u && u.length > 2)
-                        if (((u = b(u)), 43 === (e = k(u, 0)) || 45 === e)) {
+                        if (((u = P(u)), 43 === (e = k(u, 0)) || 45 === e)) {
                             if (88 === (r = k(u, 2)) || 120 === r) return NaN;
                         } else if (48 === e) {
                             switch (k(u, 1)) {
@@ -473,8 +474,8 @@
                         }
                     return +u;
                 },
-                T = u(P, !A(" 0o1") || !A("0b1") || A("+0x1")),
-                O = function (t) {
+                T = u(b, !A(" 0o1") || !A("0b1") || A("+0x1")),
+                U = function (t) {
                     var e,
                         r =
                             arguments.length < 1
@@ -489,14 +490,14 @@
                         y(function () {
                             _(e);
                         })
-                        ? p(Object(r), this, O)
+                        ? p(Object(r), this, U)
                         : r;
                 };
-            (O.prototype = S), T && !a && (S.constructor = O), n({ global: !0, constructor: !0, wrap: !0, forced: T }, { Number: O });
-            var U = function (t, e) {
+            (U.prototype = S), T && !a && (S.constructor = U), n({ global: !0, constructor: !0, wrap: !0, forced: T }, { Number: U });
+            var O = function (t, e) {
                 for (var r, n = i ? v(e) : "MAX_VALUE,MIN_VALUE,NaN,NEGATIVE_INFINITY,POSITIVE_INFINITY,EPSILON,MAX_SAFE_INTEGER,MIN_SAFE_INTEGER,isFinite,isInteger,isNaN,isSafeInteger,parseFloat,parseInt,fromString,range".split(","), a = 0; n.length > a; a++) l(e, (r = n[a])) && !l(t, r) && m(t, r, g(e, r));
             };
-            a && E && U(s[P], E), (T || a) && U(s[P], A);
+            a && E && O(s[b], E), (T || a) && O(s[b], A);
         },
         414586: (t, e, r) => {
             r(23103)(
@@ -642,8 +643,8 @@
                 g = r(685052),
                 m = r(557728),
                 _ = r(137942),
-                b = r(155795).set,
-                P = r(124794),
+                P = r(155795).set,
+                b = r(124794),
                 A = r(214665),
                 E = r(664624),
                 S = r(193358),
@@ -652,14 +653,14 @@
                 k = r(338321),
                 F = r(916485),
                 T = "Promise",
-                O = k.CONSTRUCTOR,
-                U = k.REJECTION_EVENT,
+                U = k.CONSTRUCTOR,
+                O = k.REJECTION_EVENT,
                 w = k.SUBCLASSING,
-                C = I.getterFor(T),
-                R = I.set,
-                L = N && N.prototype,
-                D = N,
-                q = L,
+                R = I.getterFor(T),
+                C = I.set,
+                D = N && N.prototype,
+                L = N,
+                q = D,
                 G = u.TypeError,
                 x = u.document,
                 j = u.process,
@@ -690,17 +691,17 @@
                 X = function (t, e) {
                     t.notified ||
                         ((t.notified = !0),
-                        P(function () {
+                        b(function () {
                             for (var r, n = t.reactions; (r = n.get()); ) H(r, t);
                             (t.notified = !1), e && !t.rejection && Z(t);
                         }));
                 },
                 z = function (t, e, r) {
                     var n, a;
-                    M ? (((n = x.createEvent("Event")).promise = e), (n.reason = r), n.initEvent(t, !1, !0), u.dispatchEvent(n)) : (n = { promise: e, reason: r }), !U && (a = u["on" + t]) ? a(n) : t === W && A("Unhandled promise rejection", r);
+                    M ? (((n = x.createEvent("Event")).promise = e), (n.reason = r), n.initEvent(t, !1, !0), u.dispatchEvent(n)) : (n = { promise: e, reason: r }), !O && (a = u["on" + t]) ? a(n) : t === W && A("Unhandled promise rejection", r);
                 },
                 Z = function (t) {
-                    l(b, u, function () {
+                    l(P, u, function () {
                         var e,
                             r = t.facade,
                             n = t.value;
@@ -719,7 +720,7 @@
                     return 1 !== t.rejection && !t.parent;
                 },
                 J = function (t) {
-                    l(b, u, function () {
+                    l(P, u, function () {
                         var e = t.facade;
                         c ? j.emit("rejectionHandled", e) : z("rejectionhandled", e, t.value);
                     });
@@ -739,7 +740,7 @@
                             if (t.facade === e) throw new G("Promise can't be resolved itself");
                             var n = B(e);
                             n
-                                ? P(function () {
+                                ? b(function () {
                                       var r = { done: !1 };
                                       try {
                                           l(n, e, Q(tt, r, t), Q(K, r, t));
@@ -754,10 +755,10 @@
                     }
                 };
             if (
-                O &&
-                ((q = (D = function (t) {
+                U &&
+                ((q = (L = function (t) {
                     m(this, q), y(t), l(n, this);
-                    var e = C(this);
+                    var e = R(this);
                     try {
                         t(Q(tt, e), Q(K, e));
                     } catch (t) {
@@ -765,10 +766,10 @@
                     }
                 }).prototype),
                 ((n = function (t) {
-                    R(this, { type: T, done: !1, notified: !1, parent: !1, reactions: new S(), rejection: !1, state: 0, value: void 0 });
+                    C(this, { type: T, done: !1, notified: !1, parent: !1, reactions: new S(), rejection: !1, state: 0, value: void 0 });
                 }).prototype = p(q, "then", function (t, e) {
-                    var r = C(this),
-                        n = V(_(this, D));
+                    var r = R(this),
+                        n = V(_(this, L));
                     return (
                         (r.parent = !0),
                         (n.ok = !v(t) || t),
@@ -776,7 +777,7 @@
                         (n.domain = c ? j.domain : void 0),
                         0 === r.state
                             ? r.reactions.add(n)
-                            : P(function () {
+                            : b(function () {
                                   H(n, r);
                               }),
                         n.promise
@@ -784,34 +785,34 @@
                 })),
                 (a = function () {
                     var t = new n(),
-                        e = C(t);
+                        e = R(t);
                     (this.promise = t), (this.resolve = Q(tt, e)), (this.reject = Q(K, e));
                 }),
                 (F.f = V =
                     function (t) {
-                        return t === D || undefined === t ? new a(t) : Y(t);
+                        return t === L || undefined === t ? new a(t) : Y(t);
                     }),
-                !s && v(N) && L !== Object.prototype)
+                !s && v(N) && D !== Object.prototype)
             ) {
-                (i = L.then),
+                (i = D.then),
                     w ||
                         p(
-                            L,
+                            D,
                             "then",
                             function (t, e) {
                                 var r = this;
-                                return new D(function (t, e) {
+                                return new L(function (t, e) {
                                     l(i, r, t, e);
                                 }).then(t, e);
                             },
                             { unsafe: !0 },
                         );
                 try {
-                    delete L.constructor;
+                    delete D.constructor;
                 } catch (t) {}
-                f && f(L, q);
+                f && f(D, q);
             }
-            o({ global: !0, constructor: !0, wrap: !0, forced: O }, { Promise: D }), d(D, T, !1, !0), h(T);
+            o({ global: !0, constructor: !0, wrap: !0, forced: U }, { Promise: L }), d(L, T, !1, !0), h(T);
         },
         73439: (t, e, r) => {
             r(486087), r(256032), r(806135), r(726767), r(939320), r(852047);
@@ -944,8 +945,8 @@
                 g = r(665358),
                 m = r(822391),
                 _ = r(765632),
-                b = r(778151),
-                P = r(310166),
+                P = r(778151),
+                b = r(310166),
                 A = r(110894),
                 E = r(997933),
                 S = r(931787),
@@ -954,17 +955,17 @@
                 k = r(914768),
                 F = r(396616),
                 T = r(933036),
-                O = r(944399),
-                U = r(995977),
+                U = r(944399),
+                O = r(995977),
                 w = r(581441),
-                C = r(670095),
-                R = r(355391),
-                L = r(863524),
-                D = r(566481),
+                R = r(670095),
+                C = r(355391),
+                D = r(863524),
+                L = r(566481),
                 q = r(954555),
                 G = r(856407),
                 x = r(689996).forEach,
-                j = O("hidden"),
+                j = U("hidden"),
                 V = "Symbol",
                 Y = "prototype",
                 M = G.set,
@@ -977,7 +978,7 @@
                 $ = a.QObject,
                 J = E.f,
                 Q = S.f,
-                K = P.f,
+                K = b.f,
                 tt = N.f,
                 et = o([].push),
                 rt = T("symbols"),
@@ -1042,7 +1043,7 @@
                         r = [];
                     return (
                         x(e, function (t) {
-                            p(rt, t) || p(U, t) || et(r, t);
+                            p(rt, t) || p(O, t) || et(r, t);
                         }),
                         r
                     );
@@ -1088,10 +1089,10 @@
                 (S.f = ut),
                 (I.f = lt),
                 (E.f = ft),
-                (b.f = P.f = dt),
+                (P.f = b.f = dt),
                 (A.f = ht),
-                (R.f = function (t) {
-                    return ct(C(t), t);
+                (C.f = function (t) {
+                    return ct(R(t), t);
                 }),
                 c &&
                     (F(X, "description", {
@@ -1103,7 +1104,7 @@
                     s || k(B, "propertyIsEnumerable", pt, { unsafe: !0 }))),
                 n({ global: !0, constructor: !0, wrap: !0, forced: !u, sham: !u }, { Symbol: H }),
                 x(_(at), function (t) {
-                    L(t);
+                    D(t);
                 }),
                 n(
                     { target: V, stat: !0, forced: !u },
@@ -1128,9 +1129,9 @@
                     },
                 ),
                 n({ target: "Object", stat: !0, forced: !u }, { getOwnPropertyNames: dt }),
-                D(),
+                L(),
                 q(H, V),
-                (U[j] = !0);
+                (O[j] = !0);
         },
         200634: (t, e, r) => {
             var n = r(23103),
@@ -1156,8 +1157,8 @@
                 var g = "Symbol(description detection)" === String(d("description detection")),
                     m = o(h.valueOf),
                     _ = o(h.toString),
-                    b = /^Symbol\((.*)\)[^)]+$/,
-                    P = o("".replace),
+                    P = /^Symbol\((.*)\)[^)]+$/,
+                    b = o("".replace),
                     A = o("".slice);
                 p(h, "description", {
                     configurable: !0,
@@ -1165,7 +1166,7 @@
                         var t = m(this);
                         if (s(y, t)) return "";
                         var e = _(t),
-                            r = g ? A(e, 7, -1) : P(e, b, "$1");
+                            r = g ? A(e, 7, -1) : b(e, P, "$1");
                         return "" === r ? void 0 : r;
                     },
                 }),
@@ -1282,4 +1283,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.AudioOnlyVideoPlayer-e96e9bea.01e3046a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.AudioOnlyVideoPlayer-e96e9bea.cafe165a.js.map

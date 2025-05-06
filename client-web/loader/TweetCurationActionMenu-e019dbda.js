@@ -59,7 +59,7 @@
                     };
         },
         713842: (e, t, i) => {
-            i.r(t), i.d(t, { default: () => Hn });
+            i.r(t), i.d(t, { default: () => Ln });
             var n = i(807896),
                 o = (i(136728), i(202784)),
                 s = i(325686),
@@ -131,86 +131,86 @@
                 G = "unpin",
                 X = "report",
                 K = "edit",
-                Y = "editWithPremium",
-                J = "whyThisAd",
-                Q = "highlight",
+                Q = "editWithPremium",
+                Y = "whyThisAd",
+                J = "highlight",
                 ee = "highlightUpsell",
                 te = "subscribe",
                 ie = "highlighOnPin",
                 ne = "tweetEngagements",
                 oe = "reportEUIllegalContentDSA",
                 se = "editArticle",
-                re = _().fb4ee11c,
-                ae = ({ promotedContent: e, scribeAction: t }) => {
-                    if (!e || !e.impression_id) return;
-                    const { impression_id: i } = e;
+                re = ({ featureSwitches: e, promotedContent: t, scribeAction: i }) => {
+                    if (!t || !t.impression_id) return;
+                    const { impression_id: n } = t,
+                        o = e.isTrue("responsive_web_remove_qp_ad_label_enabled");
                     return {
-                        text: re,
+                        text: ((e) => (o && a.Z.isQuickPromote(e) ? _().b3b642fc : _().fb4ee11c))(t),
                         Icon: j.default,
-                        link: { pathname: `/i/about-this-ad/${i}` },
+                        link: { pathname: `/i/about-this-ad/${n}` },
                         onClick: () => {
-                            t && t({ element: "whythisad" });
+                            i && i({ element: "whythisad" });
                         },
-                        testID: J,
+                        testID: Y,
                     };
                 };
-            var le = i(53674);
-            const ce = _().ad50e7d9;
-            var de = i(625271);
-            const ue = _().ef1042f8,
-                he = (e, { scribeAction: t, tweetId: i }) => ({
-                    text: ue,
+            var ae = i(53674);
+            const le = _().ad50e7d9;
+            var ce = i(625271);
+            const de = _().ef1042f8,
+                ue = (e, { scribeAction: t, tweetId: i }) => ({
+                    text: de,
                     onClick: () => {
                         t({ element: "contribute_to_birdwatch" });
                     },
                     link: { pathname: `/i/communitynotes/contribute/${i}` },
-                    Icon: de.default,
+                    Icon: ce.default,
                 });
-            var me = i(730873);
-            const _e = _().h3edf7a6,
-                pe = (e, { scribeAction: t, tweetId: i }) => ({
-                    text: _e,
+            var he = i(730873);
+            const me = _().h3edf7a6,
+                _e = (e, { scribeAction: t, tweetId: i }) => ({
+                    text: me,
                     onClick: () => {
                         t({ element: "noterequest_to_birdwatch" });
                     },
                     link: { pathname: `/i/communitynotes/noterequest/${i}` },
-                    Icon: me.default,
+                    Icon: he.default,
                 });
-            var we = i(194661);
-            const be = _().bae0cbc0,
-                fe = _().bf8d98f4,
-                ge = _().e69ada9e;
-            var Ce = i(607127);
-            const ye = _().d96cf7ce,
-                Te = _().ae04c4dd,
-                Ae = _().d9442996,
-                ve = _().dad785a7,
-                Ee = _().jda253ab,
-                ke = _().j49c2f85,
-                Ie = _().f9fa0390,
-                xe = h.default.create((e) => ({ additionalInfo: { marginTop: e.spaces.space8 } }));
-            var Se = i(72591);
-            const De = _().d9a2bd78;
-            var Pe = i(376021),
-                Ue = i(689985);
-            const Ze = _().dad450ec,
-                Le = _().g9677c6e,
-                He = _().b57bfe70,
-                Re = _().bd3da7be,
-                Oe = _().j26481e6;
-            var Fe = i(310452),
-                Be = i(354149),
-                Me = i(507824);
-            const Ne = _().cb817dae,
-                $e = (e) => parseInt(e, 10);
-            function We(e) {
+            var pe = i(194661);
+            const we = _().bae0cbc0,
+                be = _().bf8d98f4,
+                fe = _().e69ada9e;
+            var ge = i(607127);
+            const Ce = _().d96cf7ce,
+                ye = _().ae04c4dd,
+                Te = _().d9442996,
+                Ae = _().dad785a7,
+                ve = _().jda253ab,
+                Ee = _().j49c2f85,
+                ke = _().f9fa0390,
+                Ie = h.default.create((e) => ({ additionalInfo: { marginTop: e.spaces.space8 } }));
+            var xe = i(72591);
+            const Se = _().d9a2bd78;
+            var De = i(376021),
+                Pe = i(689985);
+            const Ue = _().dad450ec,
+                Ze = _().g9677c6e,
+                Le = _().b57bfe70,
+                He = _().bd3da7be,
+                Re = _().j26481e6;
+            var Oe = i(310452),
+                Fe = i(354149),
+                Be = i(507824);
+            const Me = _().cb817dae,
+                Ne = (e) => parseInt(e, 10);
+            function $e(e) {
                 switch (e.entityType) {
                     case "cashtag":
                     case "emoji":
                     case "hashtag":
                     case "mention":
                     case "text":
-                        return `${e.prefix || ""}${(0, Be.Tz)(e.text)}`;
+                        return `${e.prefix || ""}${(0, Fe.Tz)(e.text)}`;
                     case "media":
                     case "url":
                         return e.expandedUrl;
@@ -218,85 +218,85 @@
                         return "";
                 }
             }
-            const je = _().abd845fe;
-            var qe = i(498720);
-            const ze = _().fd391b9f;
-            var Ve = i(911373),
-                Ge = i(757953);
-            const Xe = _().c66afdc3,
-                Ke = _().hbe4feb5,
-                Ye = _().e1618e49;
-            var Je = i(688715),
-                Qe = i(529356),
-                et = i(190286),
-                tt = i(520913),
-                it = i(648539);
-            const nt = _().ge5067bc,
-                ot = _().j136c720,
-                st = _().d66f0338,
-                rt = `${_().cfc8cb50}\n\n${_().if8dc5f0}`,
-                at = (0, Je.ju)("https://help.x.com/using-twitter/mentions-and-replies?lang=browser#hidden-reply"),
-                lt = _().b2615c6d,
-                ct = _().i62a03aa,
-                dt = _().cfd2f35e,
-                ut = _().a6450e84,
-                ht = _().g353ad73,
-                mt = _().ad00a739,
-                _t = ({ addFlag: e, addToast: t, createLocalApiErrorHandler: i, hideReply: n, isSoftBlockEnabled: s, onBlock: r, onTweetDismiss: a, scribeAction: l, shouldShowHideReplyTip: c, tweet: d }) => {
+            const We = _().abd845fe;
+            var je = i(498720);
+            const qe = _().fd391b9f;
+            var ze = i(911373),
+                Ve = i(757953);
+            const Ge = _().c66afdc3,
+                Xe = _().hbe4feb5,
+                Ke = _().e1618e49;
+            var Qe = i(688715),
+                Ye = i(529356),
+                Je = i(190286),
+                et = i(520913),
+                tt = i(648539);
+            const it = _().ge5067bc,
+                nt = _().j136c720,
+                ot = _().d66f0338,
+                st = `${_().cfc8cb50}\n\n${_().if8dc5f0}`,
+                rt = (0, Qe.ju)("https://help.x.com/using-twitter/mentions-and-replies?lang=browser#hidden-reply"),
+                at = _().b2615c6d,
+                lt = _().i62a03aa,
+                ct = _().cfd2f35e,
+                dt = _().a6450e84,
+                ut = _().g353ad73,
+                ht = _().ad00a739,
+                mt = ({ addFlag: e, addToast: t, createLocalApiErrorHandler: i, hideReply: n, isSoftBlockEnabled: s, onBlock: r, onTweetDismiss: a, scribeAction: l, shouldShowHideReplyTip: c, tweet: d }) => {
                     const u = () => {
                         l({ element: "moderated_replies_prompt", action: "impression" });
                     };
                     return {
                         confirmation: c
-                            ? { render: (e, t) => (({ onConfirm: e, onCancel: t, onHideReplyImpression: i = () => {} }) => o.createElement(Qe.Z, { actionLabel: nt, graphic: tt.default, headline: st, onAction: e, onClose: t, onImpression: i, onTertiaryAction: t, subtext: rt, supportUrl: at, tertiaryActionLabel: dt }))({ onConfirm: e, onCancel: t, onHideReplyImpression: u }) }
+                            ? { render: (e, t) => (({ onConfirm: e, onCancel: t, onHideReplyImpression: i = () => {} }) => o.createElement(Ye.Z, { actionLabel: it, graphic: et.default, headline: ot, onAction: e, onClose: t, onImpression: i, onTertiaryAction: t, subtext: st, supportUrl: rt, tertiaryActionLabel: ct }))({ onConfirm: e, onCancel: t, onHideReplyImpression: u }) }
                             : {
                                   render: (e, t) => {
                                       const {
                                           user: { screen_name: i },
                                       } = d;
-                                      return o.createElement(et.Z, {
-                                          cancelButtonLabel: ct,
-                                          confirmButtonLabel: ut,
+                                      return o.createElement(Je.Z, {
+                                          cancelButtonLabel: lt,
+                                          confirmButtonLabel: dt,
                                           confirmButtonType: "destructiveFilled",
-                                          headline: lt({ screenName: i }),
+                                          headline: at({ screenName: i }),
                                           onCancel: e,
                                           onConfirm: () => {
                                               r(), e();
                                           },
-                                          text: s ? mt({ screenName: i }) : ht({ screenName: i }),
+                                          text: s ? ht({ screenName: i }) : ut({ screenName: i }),
                                       });
                                   },
                               },
-                        text: nt,
+                        text: it,
                         onClick: () => {
                             e(P.f8),
                                 n(d.id_str, { conversation_id: d.conversation_id_str }).then(
                                     (e) => {
-                                        a && a(), t({ text: ot });
+                                        a && a(), t({ text: nt });
                                     },
                                     i({ showToast: !0 }),
                                 ),
                                 l({ element: "moderate_reply" });
                         },
-                        Icon: it.default,
+                        Icon: tt.default,
                     };
                 };
-            var pt = i(161335),
-                wt = i(395067);
-            const bt = _().f9f27fa2;
-            var ft = i(487606),
-                gt = i(545334),
-                Ct = i(350968),
-                yt = i(337653),
-                Tt = (i(585488), i(138099)),
-                At = i(750410),
-                vt = i(167630),
-                Et = i(312771),
-                kt = i(301410);
-            const It = _().cfd2f35e,
-                xt = yt.Z,
-                St = (0, kt.z)(xt, { errorConfig: { context: "TWITTER_HIGHLIGHT_TWEET_CONFIRMATION_CONTEXT" } }),
-                Dt = o.memo(({ onCancel: e, onConfirm: t, onHighlight: i, onUndohighlight: n, tweetId: s }) => {
+            var _t = i(161335),
+                pt = i(395067);
+            const wt = _().f9f27fa2;
+            var bt = i(487606),
+                ft = i(545334),
+                gt = i(350968),
+                Ct = i(337653),
+                yt = (i(585488), i(138099)),
+                Tt = i(750410),
+                At = i(167630),
+                vt = i(312771),
+                Et = i(301410);
+            const kt = _().cfd2f35e,
+                It = Ct.Z,
+                xt = (0, Et.z)(It, { errorConfig: { context: "TWITTER_HIGHLIGHT_TWEET_CONFIRMATION_CONTEXT" } }),
+                St = o.memo(({ onCancel: e, onConfirm: t, onHighlight: i, onUndohighlight: n, tweetId: s }) => {
                     const r = o.useMemo(() => ({ tweet_id: s }), [s]),
                         a = o.useCallback(
                             (e) => () => {
@@ -306,35 +306,35 @@
                         ),
                         l = o.useCallback(
                             ({ data: t, fetchStatus: s, retry: r }) => {
-                                if (s === Et.ZP.LOADED) {
+                                if (s === vt.ZP.LOADED) {
                                     const s = !!t?.tweet_result_by_rest_id?.result?.highlights_info?.highlighted,
-                                        { confirmLabel: r, onAction: l, subtext: c, title: d } = (0, Ct.rg)(s, i, n);
-                                    return o.createElement(et.Z, { cancelButtonLabel: It, confirmButtonLabel: r, confirmButtonType: "primary", headline: d, onCancel: e, onConfirm: a(l), text: c });
+                                        { confirmLabel: r, onAction: l, subtext: c, title: d } = (0, gt.rg)(s, i, n);
+                                    return o.createElement(Je.Z, { cancelButtonLabel: kt, confirmButtonLabel: r, confirmButtonType: "primary", headline: d, onCancel: e, onConfirm: a(l), text: c });
                                 }
-                                return o.createElement(Tt.Z, { allowBackNavigation: !1, enableMaskForDismiss: !1, role: "alertdialog", style: Pt.loadingSheet, type: "center", withMask: !0 }, s === Et.ZP.FAILED ? o.createElement(At.Z, { onRequestRetry: r }) : o.createElement(vt.Z, null));
+                                return o.createElement(yt.Z, { allowBackNavigation: !1, enableMaskForDismiss: !1, role: "alertdialog", style: Dt.loadingSheet, type: "center", withMask: !0 }, s === vt.ZP.FAILED ? o.createElement(Tt.Z, { onRequestRetry: r }) : o.createElement(At.Z, null));
                             },
                             [i, n, a, e],
                         );
-                    return o.createElement(St, { fetchPolicy: "network-only", render: l, variables: r });
+                    return o.createElement(xt, { fetchPolicy: "network-only", render: l, variables: r });
                 }),
-                Pt = h.default.create((e) => ({ loadingSheet: { paddingVertical: e.spaces.space20 } })),
-                Ut = o.memo(Dt),
-                Zt = _().ce87916a,
-                Lt = _().ef4602ec,
-                Ht = _().h8a3525e;
-            var Rt = i(833057),
-                Ot = i(40610);
-            const Ft = _().i419d136,
-                Bt = _().c1b9714a,
-                Mt = _().c5d23126,
-                Nt = _().fe4d099a,
-                $t = _().cfd2f35e,
-                Wt = _().e8d4c1cc,
-                jt = { label: _().b68c3784, link: { pathname: "/i/verified-choose", state: { referring_page: "get_verified_highlight_on_pin" } } },
-                qt = o.memo(({ isBlueUpsellEligible: e, onCancel: t, onConfirm: i, onHighlight: n, onPinTweet: s, onUndohighlight: r, tweetId: a }) => {
+                Dt = h.default.create((e) => ({ loadingSheet: { paddingVertical: e.spaces.space20 } })),
+                Pt = o.memo(St),
+                Ut = _().ce87916a,
+                Zt = _().ef4602ec,
+                Lt = _().h8a3525e;
+            var Ht = i(833057),
+                Rt = i(40610);
+            const Ot = _().i419d136,
+                Ft = _().c1b9714a,
+                Bt = _().c5d23126,
+                Mt = _().fe4d099a,
+                Nt = _().cfd2f35e,
+                $t = _().e8d4c1cc,
+                Wt = { label: _().b68c3784, link: { pathname: "/i/verified-choose", state: { referring_page: "get_verified_highlight_on_pin" } } },
+                jt = o.memo(({ isBlueUpsellEligible: e, onCancel: t, onConfirm: i, onHighlight: n, onPinTweet: s, onUndohighlight: r, tweetId: a }) => {
                     const [l, c] = o.useState(!1),
                         d = o.useMemo(() => ({ tweet_id: a }), [a]),
-                        u = o.useMemo(() => (l ? o.createElement(Ot.Z.Primary, { action: jt, headline: Wt, onAction: i, style: zt.callout, withIcon: !1 }) : null), [l, i]),
+                        u = o.useMemo(() => (l ? o.createElement(Rt.Z.Primary, { action: Wt, headline: $t, onAction: i, style: qt.callout, withIcon: !1 }) : null), [l, i]),
                         h = o.useCallback(() => {
                             e ? c(!0) : (n(), i());
                         }, [c, n, i, e]),
@@ -343,72 +343,72 @@
                         }, [s, i]),
                         _ = o.useCallback(
                             ({ data: e, fetchStatus: i, retry: n }) => {
-                                if (i === Et.ZP.LOADED) {
-                                    return !!e?.tweet_result_by_rest_id?.result?.highlights_info?.highlighted ? o.createElement(et.Z, { confirmButtonLabel: Mt, confirmButtonType: "primary", headline: Ft, onCancel: t, onConfirm: m, text: Bt }) : o.createElement(Qe.Z, { actionLabel: Nt, footer: u, graphicDisplayMode: "none", headline: "Highlight your best content instead", onAction: h, onClose: t, onSecondaryAction: m, onTertiaryAction: t, secondaryActionLabel: Mt, subtext: "With Highlights, you can curate all your best posts on your profile.", tertiaryActionLabel: $t, withCloseButton: !0 });
+                                if (i === vt.ZP.LOADED) {
+                                    return !!e?.tweet_result_by_rest_id?.result?.highlights_info?.highlighted ? o.createElement(Je.Z, { confirmButtonLabel: Bt, confirmButtonType: "primary", headline: Ot, onCancel: t, onConfirm: m, text: Ft }) : o.createElement(Ye.Z, { actionLabel: Mt, footer: u, graphicDisplayMode: "none", headline: "Highlight your best content instead", onAction: h, onClose: t, onSecondaryAction: m, onTertiaryAction: t, secondaryActionLabel: Bt, subtext: "With Highlights, you can curate all your best posts on your profile.", tertiaryActionLabel: Nt, withCloseButton: !0 });
                                 }
-                                return o.createElement(Tt.Z, { allowBackNavigation: !1, enableMaskForDismiss: !1, role: "alertdialog", style: zt.loadingSheet, type: "center", withMask: !0 }, i === Et.ZP.FAILED ? o.createElement(At.Z, { onRequestRetry: n }) : o.createElement(vt.Z, null));
+                                return o.createElement(yt.Z, { allowBackNavigation: !1, enableMaskForDismiss: !1, role: "alertdialog", style: qt.loadingSheet, type: "center", withMask: !0 }, i === vt.ZP.FAILED ? o.createElement(Tt.Z, { onRequestRetry: n }) : o.createElement(At.Z, null));
                             },
                             [h, m, t, u],
                         );
-                    return o.createElement(St, { fetchPolicy: "network-only", render: _, variables: d });
+                    return o.createElement(xt, { fetchPolicy: "network-only", render: _, variables: d });
                 }),
-                zt = h.default.create((e) => ({ loadingSheet: { backgroundColor: "transparent" }, callout: { fontSize: e.fontSizes.body, color: e.colors.text, fontWeight: e.fontWeights.medium } })),
-                Vt = o.memo(qt),
-                Gt = _().ha35a1d2,
-                Xt = _().d04f95c0,
-                Kt = _().ef4602ec;
-            const Yt = function ({ addToast: e, createLocalApiErrorHandler: t, highlight: i, isBlueUpsellEligible: n, pin: s, scribeAction: r, tweetId: a, undoHighlight: l }) {
+                qt = h.default.create((e) => ({ loadingSheet: { backgroundColor: "transparent" }, callout: { fontSize: e.fontSizes.body, color: e.colors.text, fontWeight: e.fontWeights.medium } })),
+                zt = o.memo(jt),
+                Vt = _().ha35a1d2,
+                Gt = _().d04f95c0,
+                Xt = _().ef4602ec;
+            const Kt = function ({ addToast: e, createLocalApiErrorHandler: t, highlight: i, isBlueUpsellEligible: n, pin: s, scribeAction: r, tweetId: a, undoHighlight: l }) {
                 const c = () => {
                         l(a).then((t) => {
-                            e(t?.tweet_highlights_delete?.success ? { text: Ct.sp, withClearButton: !0 } : { text: Kt, withClearButton: !0, withAutoDismiss: !0 });
+                            e(t?.tweet_highlights_delete?.success ? { text: gt.sp, withClearButton: !0 } : { text: Xt, withClearButton: !0, withAutoDismiss: !0 });
                         }),
                             r({ element: "undoHighlight" });
                     },
                     d = () => {
                         i(a).then((t) => {
-                            e(t?.tweet_highlights_put?.success ? { action: { label: gt.d, onAction: c }, text: Ct.I9, withClearButton: !0 } : { text: Kt, withClearButton: !0, withAutoDismiss: !0 });
+                            e(t?.tweet_highlights_put?.success ? { action: { label: ft.d, onAction: c }, text: gt.I9, withClearButton: !0 } : { text: Xt, withClearButton: !0, withAutoDismiss: !0 });
                         }),
                             r({ element: "highlight" });
                     },
                     u = () => {
                         s(a).then(
                             () => {
-                                e({ text: Xt });
+                                e({ text: Gt });
                             },
                             t({ showToast: !0 }),
                         ),
                             r({ element: "pin" });
                     };
-                return { confirmation: { render: (e, t) => o.createElement(Vt, { isBlueUpsellEligible: n, onCancel: t, onConfirm: e, onHighlight: d, onPinTweet: u, onUndohighlight: c, tweetId: a }) }, testID: ie, text: Gt, Icon: Rt.default, onClick() {} };
+                return { confirmation: { render: (e, t) => o.createElement(zt, { isBlueUpsellEligible: n, onCancel: t, onConfirm: e, onHighlight: d, onPinTweet: u, onUndohighlight: c, tweetId: a }) }, testID: ie, text: Vt, Icon: Ht.default, onClick() {} };
             };
-            var Jt = i(883437),
-                Qt = i(523561);
-            const ei = (0, Qt.Z)({ loader: () => Promise.all([i.e("icons.22"), i.e("icons.13"), i.e("ondemand.LeaveThisConversation")]).then(i.bind(i, 265008)) }),
-                ti = _().bb16cc76,
-                ii = _().de21174c,
-                ni = (e, t) => o.createElement(ei, { onCancel: t, onConfirm: e });
-            var oi = i(383494),
-                si = i(232130),
-                ri = i(40904),
-                ai = i(391366);
-            const li = _().e2d6c17e,
-                ci = _().cd1942f4,
-                di = _().bbd8bed6,
-                ui = _().c13af432,
-                hi = _().gf5e9ea6,
-                mi = _().df744bda,
-                _i = _().j9552760,
-                pi = _().cfd2f35e,
-                wi = _().d751694c,
-                bi = (0, Je.ju)("https://support.x.com/articles/20175032"),
-                fi = ({ addFlag: e, addToast: t, createLocalApiErrorHandler: i, muteTweet: n, scribeAction: s, shouldShowMuteEducationTip: r, tweet: a, unmuteTweet: l }) => {
+            var Qt = i(883437),
+                Yt = i(523561);
+            const Jt = (0, Yt.Z)({ loader: () => Promise.all([i.e("icons.16"), i.e("icons.25"), i.e("ondemand.LeaveThisConversation")]).then(i.bind(i, 265008)) }),
+                ei = _().bb16cc76,
+                ti = _().de21174c,
+                ii = (e, t) => o.createElement(Jt, { onCancel: t, onConfirm: e });
+            var ni = i(383494),
+                oi = i(232130),
+                si = i(40904),
+                ri = i(391366);
+            const ai = _().e2d6c17e,
+                li = _().cd1942f4,
+                ci = _().bbd8bed6,
+                di = _().c13af432,
+                ui = _().gf5e9ea6,
+                hi = _().df744bda,
+                mi = _().j9552760,
+                _i = _().cfd2f35e,
+                pi = _().d751694c,
+                wi = (0, Qe.ju)("https://support.x.com/articles/20175032"),
+                bi = ({ addFlag: e, addToast: t, createLocalApiErrorHandler: i, muteTweet: n, scribeAction: s, shouldShowMuteEducationTip: r, tweet: a, unmuteTweet: l }) => {
                     const c = () => {
                             e(P.EM);
                         },
                         d = () => {
                             l(a.id_str).then(
                                 () => {
-                                    t({ text: ui });
+                                    t({ text: di });
                                 },
                                 (e) => {
                                     i({ showToast: !0 })(e), s({ element: "tweet", action: "unmute_conversation_error" });
@@ -417,11 +417,11 @@
                                 s({ element: "tweet", action: "unmute_conversation" });
                         },
                         u = {
-                            text: li,
+                            text: ai,
                             onClick: () => {
                                 n(a.id_str).then(
                                     () => {
-                                        t({ action: { label: hi, onAction: d }, text: di });
+                                        t({ action: { label: ui, onAction: d }, text: ci });
                                     },
                                     (e) => {
                                         i({ showToast: !0 })(e), s({ element: "tweet", action: "mute_conversation_error" });
@@ -429,23 +429,23 @@
                                 ),
                                     s({ element: "tweet", action: "mute_conversation" });
                             },
-                            confirmation: r ? { render: (e, t) => o.createElement(Qe.Z, { actionLabel: mi, graphic: si.default, graphicDisplayMode: "illustration", headline: _i, onAction: e, onClose: t, onImpression: c, onTertiaryAction: t, subtext: wi, supportUrl: bi, tertiaryActionLabel: pi }) } : void 0,
-                            Icon: ri.default,
+                            confirmation: r ? { render: (e, t) => o.createElement(Ye.Z, { actionLabel: hi, graphic: oi.default, graphicDisplayMode: "illustration", headline: mi, onAction: e, onClose: t, onImpression: c, onTertiaryAction: t, subtext: pi, supportUrl: wi, tertiaryActionLabel: _i }) } : void 0,
+                            Icon: si.default,
                         },
-                        h = { text: ci, onClick: d, Icon: ai.default };
+                        h = { text: li, onClick: d, Icon: ri.default };
                     return a.conversation_muted ? h : u;
                 },
-                gi = _().ha35a1d2,
-                Ci = _().i419d136,
-                yi = _().c1b9714a,
-                Ti = _().c5d23126,
-                Ai = _().d04f95c0,
-                vi = _().a50c911e,
-                Ei = _().d1c1e2c2,
-                ki = (0, Qt.Z)({ loader: () => i.e("ondemand.CommunityTweetPinning").then(i.bind(i, 828856)) }),
-                Ii = _().f5cdcc2c,
-                xi = ({ hasPremiumPlus: e, history: t, onTweetDismiss: i, promotedDismissUpsellEnabled: n }) => ({
-                    text: Ii,
+                fi = _().ha35a1d2,
+                gi = _().i419d136,
+                Ci = _().c1b9714a,
+                yi = _().c5d23126,
+                Ti = _().d04f95c0,
+                Ai = _().a50c911e,
+                vi = _().d1c1e2c2,
+                Ei = (0, Yt.Z)({ loader: () => i.e("ondemand.CommunityTweetPinning").then(i.bind(i, 828856)) }),
+                ki = _().f5cdcc2c,
+                Ii = ({ hasPremiumPlus: e, history: t, onTweetDismiss: i, promotedDismissUpsellEnabled: n }) => ({
+                    text: ki,
                     onClick: () => {
                         if ((i?.(), !e && n)) {
                             const e = { variant: "DismissAd" };
@@ -454,104 +454,105 @@
                     },
                     Icon: j.default,
                 }),
-                Si = _().hea3f8ac,
-                Di = _().a09331e0;
-            var Pi = i(530813);
-            const Ui = _().c2e276e4;
-            var Zi = i(310700),
-                Li = i(712881);
-            const Hi = _().e68b09b4,
-                Ri = _().a95f04ba,
-                Oi = _().jfc76958;
-            var Fi = i(85375),
-                Bi = i(415506),
-                Mi = i(711223);
-            function Ni(e) {
+                xi = _().hea3f8ac,
+                Si = _().a09331e0;
+            var Di = i(530813);
+            const Pi = _().c2e276e4;
+            var Ui = i(310700),
+                Zi = i(712881);
+            const Li = _().e68b09b4,
+                Hi = _().a95f04ba,
+                Ri = _().jfc76958;
+            var Oi = i(85375),
+                Fi = i(415506),
+                Bi = i(711223);
+            function Mi(e) {
                 const { featureSwitches: t, isAppealTweetWarning: i = !1, promotedContent: n, tweet: o } = e,
                     s = t.isTrue("responsive_web_twitter_article_seed_tweet_enabled"),
-                    r = l.Z.getLocalizedEntityName({ tweet: o, articlesEnabled: s });
-                let c = { element: "report_tweet" },
-                    d = "/i/report/status",
-                    u = wt.C2.Tweet,
-                    h = Bi.default,
-                    m = a.Z.shouldShowAdDisclosure(n) ? $i.reportAd : $i.reportTweet({ entity: r });
-                i && ((c = { element: "appeal_tweet_warning" }), (d = "/i/report/appeal_tweet_warning"), (u = wt.C2.AppealTweetWarning), (h = Mi.default), (m = $i.appealTweetWarning));
+                    r = t.isTrue("responsive_web_remove_qp_ad_label_enabled"),
+                    c = l.Z.getLocalizedEntityName({ tweet: o, articlesEnabled: s });
+                let d = { element: "report_tweet" },
+                    u = "/i/report/status",
+                    h = pt.C2.Tweet,
+                    m = Fi.default,
+                    _ = r && a.Z.isQuickPromote(n) ? Ni.reportPost : a.Z.shouldShowAdDisclosure(n) ? Ni.reportAd : Ni.reportTweet({ entity: c });
+                i && ((d = { element: "appeal_tweet_warning" }), (u = "/i/report/appeal_tweet_warning"), (h = pt.C2.AppealTweetWarning), (m = Bi.default), (_ = Ni.appealTweetWarning));
                 return {
-                    Icon: h,
+                    Icon: m,
                     onClick: () => {
                         const t = e.analytics.contextualScribeData,
                             i = o?.extended_entities?.media?.length || 0,
                             s = o?.article?.media_entities?.length || 0,
                             r = (o?.entities?.urls?.length || 0) > 0 || i > 0 || s > 0 || void 0 !== o.card,
                             a = t.items && t.items[0] && t.items[0].conversation_details?.conversation_section;
-                        e.scribeAction(c);
-                        if (!(o.community_id_str || o.card?.name === Fi.sj.BROADCAST || o.card?.name === Fi.sj.PERISCOPE_BROADCAST || (n && !e.featureSwitches.isTrue("responsive_web_ocf_reportflow_promoted_enabled"))) && (0, wt.Yw)(e.featureSwitches, u)) {
-                            const t = (0, wt.j_)({ clientReferer: window.location.pathname, conversationSection: a, isMedia: r, isPromoted: void 0 !== n, reportType: u, reportedTweet: o, reportedUser: o.user.id_str, scribeNamespace: e.analytics.contextualScribeNamespace });
+                        e.scribeAction(d);
+                        if (!(o.community_id_str || o.card?.name === Oi.sj.BROADCAST || o.card?.name === Oi.sj.PERISCOPE_BROADCAST || (n && !e.featureSwitches.isTrue("responsive_web_ocf_reportflow_promoted_enabled"))) && (0, pt.Yw)(e.featureSwitches, h)) {
+                            const t = (0, pt.j_)({ clientReferer: window.location.pathname, conversationSection: a, isMedia: r, isPromoted: void 0 !== n, reportType: h, reportedTweet: o, reportedUser: o.user.id_str, scribeNamespace: e.analytics.contextualScribeNamespace });
                             e.history.push({ pathname: "/i/safety/report_story_start", state: { input: { requested_variant: JSON.stringify(t) } } });
-                        } else e.history.push({ pathname: `${d}/${o.id_str}`, state: { clientReferer: window.location.pathname, conversationSection: a, isMedia: r, promotedContent: n, scribeNamespace: e.analytics.contextualScribeNamespace } });
+                        } else e.history.push({ pathname: `${u}/${o.id_str}`, state: { clientReferer: window.location.pathname, conversationSection: a, isMedia: r, promotedContent: n, scribeNamespace: e.analytics.contextualScribeNamespace } });
                     },
                     testID: X,
-                    text: m,
+                    text: _,
                 };
             }
-            const $i = { appealTweetWarning: _().f1824804, reportTweet: _().j4e43d8b, reportAd: _().e3fd237e };
-            var Wi = i(946099),
-                ji = i(782826);
-            var qi = i(928875),
-                zi = i(297938);
-            const Vi = _().d7513755;
-            var Gi = i(646677);
-            const Xi = _().ab0decc0,
-                Ki = _().d7dbb71b;
-            var Yi = i(224823),
-                Ji = i(323683);
-            const Qi = _().ja66a2b5,
-                en = _().c2423b7b;
-            var tn = i(659306);
-            const nn = _().i31dfa4c,
-                on = _().j8e56ba2,
-                sn = _().ic030338,
-                rn = _().gfcea3f4,
-                an = _().eb2d59f4,
-                ln = _().j44ec610,
-                cn = _().a2dd7414;
-            var dn = i(963879);
-            const un = _().cac6a24a,
-                hn = (0, Qt.Z)({ loader: () => i.e("ondemand.CommunityTweetPinning").then(i.bind(i, 760844)) }),
-                mn = _().f9478972,
-                _n = _().c5491b5d;
-            var pn = i(71620),
-                wn = i(143322),
-                bn = i(491963),
-                fn = i(80890),
-                gn = i(629196),
-                Cn = i(390387),
-                yn = i(601576),
-                Tn = i(836255),
-                An = i(360142),
-                vn = i(919022);
-            const En = (e, t) => (0, P.t5)(e, P.EM),
-                kn = (e, t) => (0, P.t5)(e, P.f8),
-                In = (e) => (0, P.t5)(e, P.FX),
-                xn = (e, t) => (0, bn.n9)(e, t.tweet),
-                Sn = (e, t) => (0, bn.z0)(e, t.tweet),
-                Dn =
+            const Ni = { appealTweetWarning: _().f1824804, reportTweet: _().j4e43d8b, reportAd: _().e3fd237e, reportPost: _().ebb7662a };
+            var $i = i(946099),
+                Wi = i(782826);
+            var ji = i(928875),
+                qi = i(297938);
+            const zi = _().d7513755;
+            var Vi = i(646677);
+            const Gi = _().ab0decc0,
+                Xi = _().d7dbb71b;
+            var Ki = i(224823),
+                Qi = i(323683);
+            const Yi = _().ja66a2b5,
+                Ji = _().c2423b7b;
+            var en = i(659306);
+            const tn = _().i31dfa4c,
+                nn = _().j8e56ba2,
+                on = _().ic030338,
+                sn = _().gfcea3f4,
+                rn = _().eb2d59f4,
+                an = _().j44ec610,
+                ln = _().a2dd7414;
+            var cn = i(963879);
+            const dn = _().cac6a24a,
+                un = (0, Yt.Z)({ loader: () => i.e("ondemand.CommunityTweetPinning").then(i.bind(i, 760844)) }),
+                hn = _().f9478972,
+                mn = _().c5491b5d;
+            var _n = i(71620),
+                pn = i(143322),
+                wn = i(491963),
+                bn = i(80890),
+                fn = i(629196),
+                gn = i(390387),
+                Cn = i(601576),
+                yn = i(836255),
+                Tn = i(360142),
+                An = i(919022);
+            const vn = (e, t) => (0, P.t5)(e, P.EM),
+                En = (e, t) => (0, P.t5)(e, P.f8),
+                kn = (e) => (0, P.t5)(e, P.FX),
+                In = (e, t) => (0, wn.n9)(e, t.tweet),
+                xn = (e, t) => (0, wn.z0)(e, t.tweet),
+                Sn =
                     (e) =>
                     (t, i, { featureSwitches: n }) =>
-                        Promise.all([t(Tn.Z.delete(e)), t((0, An.ZP)({ focalTweetId: e }).deleteTimeline())]),
-                Pn = (0, H.Z)()
-                    .propsFromState(() => ({ userCountry: Cn.GG, userLanguage: Cn.VT, shouldShowMuteEducationTip: En, shouldShowHideReplyTip: kn, shouldShowConversationControlsTip: In, disableRemoveFromCommunity: xn, community: Sn }))
-                    .propsFromActions(() => ({ addFlag: P.pj, addToast: yn.fz, block: vn.ZP.block, changeConversationControls: Tn.Z.changeConversationControls, createLocalApiErrorHandler: (0, pn.zr)("TWEET_CURATION_ACTION_SHEET_CONTAINER"), deleteTweet: Dn, dismissUserFromConversation: An.f0, follow: vn.ZP.follow, hideReply: Tn.Z.hideReply, unmentionUserFromConversation: Tn.Z.unmentionUserFromConversation, mute: gn.r, muteTweet: Tn.Z.mute, pin: fn.Yd, removeConversationControls: Tn.Z.removeConversationControls, removeTag: Tn.Z.removeTag, unblock: vn.ZP.unblock, unfollow: vn.ZP.unfollow, unhideReply: Tn.Z.unhideReply, unmute: vn.ZP.unmute, unmuteTweet: Tn.Z.unmute, unpin: fn.oc, highlight: Tn.Z.highlight, undoHighlight: Tn.Z.undoHighlight, unpublishArticleEntity: wn.ZP.unpublish }))
+                        Promise.all([t(yn.Z.delete(e)), t((0, Tn.ZP)({ focalTweetId: e }).deleteTimeline())]),
+                Dn = (0, H.Z)()
+                    .propsFromState(() => ({ userCountry: gn.GG, userLanguage: gn.VT, shouldShowMuteEducationTip: vn, shouldShowHideReplyTip: En, shouldShowConversationControlsTip: kn, disableRemoveFromCommunity: In, community: xn }))
+                    .propsFromActions(() => ({ addFlag: P.pj, addToast: Cn.fz, block: An.ZP.block, changeConversationControls: yn.Z.changeConversationControls, createLocalApiErrorHandler: (0, _n.zr)("TWEET_CURATION_ACTION_SHEET_CONTAINER"), deleteTweet: Sn, dismissUserFromConversation: Tn.f0, follow: An.ZP.follow, hideReply: yn.Z.hideReply, unmentionUserFromConversation: yn.Z.unmentionUserFromConversation, mute: fn.r, muteTweet: yn.Z.mute, pin: bn.Yd, removeConversationControls: yn.Z.removeConversationControls, removeTag: yn.Z.removeTag, unblock: An.ZP.unblock, unfollow: An.ZP.unfollow, unhideReply: yn.Z.unhideReply, unmute: An.ZP.unmute, unmuteTweet: yn.Z.unmute, unpin: bn.oc, highlight: yn.Z.highlight, undoHighlight: yn.Z.undoHighlight, unpublishArticleEntity: pn.ZP.unpublish }))
                     .withAnalytics(),
-                Un = /\/mediaViewer$/;
-            class Zn extends o.Component {
+                Pn = /\/mediaViewer$/;
+            class Un extends o.Component {
                 constructor(...e) {
                     super(...e),
                         (this.state = { showModerationBlockConfirmation: !1, showEditWithPremiumUpsell: !1 }),
                         (this._hasPremiumPlus = this.context.userClaims.isVerifiedOrg() || this.context.userClaims.isVerifiedOrgAffiliate() || this.context.userClaims.hasSubscription("premium_plus")),
                         (this._shouldDisable = N.$y.bind(null, this.context.featureSwitches)),
-                        (this._birdwatchAction = he.bind(null, this.context.featureSwitches)),
-                        (this._birdwatchRequestAction = pe.bind(null, this.context.featureSwitches)),
+                        (this._birdwatchAction = ue.bind(null, this.context.featureSwitches)),
+                        (this._birdwatchRequestAction = _e.bind(null, this.context.featureSwitches)),
                         (this._editTweetCompositionEligible = this.context.featureSwitches.isTrue("responsive_web_edit_tweet_composition_enabled")),
                         (this._editTweetCompositionEnabledForUser = () => {
                             const { featureSwitches: e, userClaims: t } = this.context,
@@ -578,11 +579,11 @@
                             e === g.k.all
                                 ? s &&
                                   s(r.id_str).then(() => {
-                                      t({ text: a }), i.scribe({ element: Bn.all, action: "click", data: { items: [x.Z.getChangeConversationControlsItem(r, e)] } });
+                                      t({ text: a }), i.scribe({ element: Fn.all, action: "click", data: { items: [x.Z.getChangeConversationControlsItem(r, e)] } });
                                   }, o(E.w))
                                 : n &&
                                   n(r.id_str, { policy: e, screenName: r.user?.screen_name }).then(() => {
-                                      t({ text: a }), i.scribe({ element: Bn[e], action: "click", data: { items: [x.Z.getChangeConversationControlsItem(r, e)] } });
+                                      t({ text: a }), i.scribe({ element: Fn[e], action: "click", data: { items: [x.Z.getChangeConversationControlsItem(r, e)] } });
                                   }, o(E.w));
                         }),
                         (this._renderCurationActionMenu = (e) => (t) =>
@@ -598,10 +599,10 @@
                                 u = [],
                                 h = a.Z.isPromoted(n);
                             return (
-                                (d.promotedTweetDismiss = xi({ onTweetDismiss: () => i?.(!1), hasPremiumPlus: this._hasPremiumPlus, promotedDismissUpsellEnabled: l.isTrue("subscriptions_hide_ad_upsell_enabled"), history: t })),
-                                h && (d.adInfo = ae({ promotedContent: n, scribeAction: c })),
-                                (d.report = Ni({ analytics: e, history: t, promotedContent: n, scribeAction: c, tweet: o, featureSwitches: l, reporterCountry: s, reporterLanguage: r })),
-                                On.forEach((e) => {
+                                (d.promotedTweetDismiss = Ii({ onTweetDismiss: () => i?.(!1), hasPremiumPlus: this._hasPremiumPlus, promotedDismissUpsellEnabled: l.isTrue("subscriptions_hide_ad_upsell_enabled"), history: t })),
+                                h && (d.adInfo = re({ featureSwitches: l, promotedContent: n, scribeAction: c })),
+                                (d.report = Mi({ analytics: e, history: t, promotedContent: n, scribeAction: c, tweet: o, featureSwitches: l, reporterCountry: s, reporterLanguage: r })),
+                                Rn.forEach((e) => {
                                     const t = d[e];
                                     if (t) {
                                         const e = { Icon: t.Icon, disabled: t.disabled, isEmphasized: t.isEmphasized, onClick: t.onClick, testID: t.testID, text: t.text };
@@ -616,7 +617,7 @@
                                 { user: l } = r,
                                 c = { addToast: e, createLocalApiErrorHandler: t, scribeAction: this._scribeAction },
                                 d = this.context.featureSwitches.isTrue("subscriptions_mute_ad_upsell_enabled");
-                            return (0, oi.Z)({ ...c, mute: o, unmute: a, user: l, dismissUserFromConversation: i, promotedContent: s, muteAdUpsellEnabled: d, history: n, hasPremiumPlus: this._hasPremiumPlus });
+                            return (0, ni.Z)({ ...c, mute: o, unmute: a, user: l, dismissUserFromConversation: i, promotedContent: s, muteAdUpsellEnabled: d, history: n, hasPremiumPlus: this._hasPremiumPlus });
                         }),
                         (this._getHighlightOrUndoAction = () => {
                             const { addToast: e, highlight: t, tweet: i, undoHighlight: n } = this.props,
@@ -629,26 +630,26 @@
                                     ? (({ addToast: e, highlight: t, scribeAction: i, tweetId: n, undoHighlight: s }) => {
                                           const r = () => {
                                                   s(n).then((t) => {
-                                                      e(t?.tweet_highlights_delete?.success ? { text: Ct.sp, withClearButton: !0 } : { text: Lt, withClearButton: !0, withAutoDismiss: !0 });
+                                                      e(t?.tweet_highlights_delete?.success ? { text: gt.sp, withClearButton: !0 } : { text: Zt, withClearButton: !0, withAutoDismiss: !0 });
                                                   }),
                                                       i({ element: "undoHighlight" });
                                               },
                                               a = () => {
                                                   t(n).then((t) => {
-                                                      e(t?.tweet_highlights_put?.success ? { action: { label: gt.d, onAction: r }, text: Ct.I9, withClearButton: !0 } : { text: Lt, withClearButton: !0, withAutoDismiss: !0 });
+                                                      e(t?.tweet_highlights_put?.success ? { action: { label: ft.d, onAction: r }, text: gt.I9, withClearButton: !0 } : { text: Zt, withClearButton: !0, withAutoDismiss: !0 });
                                                   }),
                                                       i({ element: "highlight" });
                                               };
-                                          return { confirmation: { render: (e, t) => o.createElement(Ut, { onCancel: t, onConfirm: e, onHighlight: a, onUndohighlight: r, tweetId: n }) }, onClick() {}, Icon: ft.default, text: Zt, testID: Q };
+                                          return { confirmation: { render: (e, t) => o.createElement(Pt, { onCancel: t, onConfirm: e, onHighlight: a, onUndohighlight: r, tweetId: n }) }, onClick() {}, Icon: bt.default, text: Ut, testID: J };
                                       })({ addToast: e, scribeAction: s, tweetId: i.id_str, undoHighlight: n, highlight: t })
                                     : c
                                       ? (({ scribeAction: e }) => ({
-                                            text: Ht,
+                                            text: Lt,
                                             onClick: () => {
                                                 e({ element: "highlight-upsell" });
                                             },
                                             link: { pathname: "/i/verified-choose", state: { referring_page: "tweet_highlight_action_upsell" } },
-                                            Icon: ft.default,
+                                            Icon: bt.default,
                                             testID: ee,
                                         }))({ scribeAction: s })
                                       : null;
@@ -663,21 +664,21 @@
                                 u = a.isTrue("highlights_tweets_action_enabled") && !this._shouldDisable(o, N.d.Highlight),
                                 h = l.isTrueAndEnabled("subscriptions_feature_highlights");
                             return u && c && d && !h
-                                ? Yt({ addToast: e, scribeAction: r, tweetId: o.id_str, undoHighlight: s, highlight: i, pin: n, createLocalApiErrorHandler: t, isBlueUpsellEligible: d && !h })
+                                ? Kt({ addToast: e, scribeAction: r, tweetId: o.id_str, undoHighlight: s, highlight: i, pin: n, createLocalApiErrorHandler: t, isBlueUpsellEligible: d && !h })
                                 : (({ addToast: e, createLocalApiErrorHandler: t, pin: i, scribeAction: n, tweetId: o }) => ({
-                                      confirmation: { text: yi, headline: Ci, label: Ti },
+                                      confirmation: { text: Ci, headline: gi, label: yi },
                                       testID: V,
-                                      text: gi,
+                                      text: fi,
                                       onClick: () => {
                                           i(o).then(
                                               ({ addedToHighlights: t }) => {
-                                                  e({ text: t ? vi : Ai });
+                                                  e({ text: t ? Ai : Ti });
                                               },
                                               t({ showToast: !0 }),
                                           ),
                                               n({ element: "pin" });
                                       },
-                                      Icon: Rt.default,
+                                      Icon: Ht.default,
                                   }))({ addToast: e, scribeAction: r, pin: n, createLocalApiErrorHandler: t, tweetId: o.id_str });
                         }),
                         (this._getEditTweetAction = () => {
@@ -689,7 +690,7 @@
                                 (function (e, t) {
                                     let i = !0;
                                     if (e.edit_control?.editable_until_msecs) {
-                                        const t = $e(e.edit_control.editable_until_msecs);
+                                        const t = Ne(e.edit_control.editable_until_msecs);
                                         i = Date.now() > new Date(t);
                                     }
                                     const n = "0" === e.edit_control?.edits_remaining,
@@ -707,16 +708,16 @@
                                         let n = "";
                                         if (i.note_tweet || i.full_text) {
                                             const e = { featureSwitches: t, forceEnabled: !0 },
-                                                o = Me.Bq(i, e);
-                                            n = Fe.ZP.tweetTextParts(o.text, o.display_text_range, o.entities).map(We).join("");
+                                                o = Be.Bq(i, e);
+                                            n = Oe.ZP.tweetTextParts(o.text, o.display_text_range, o.entities).map($e).join("");
                                         }
                                         return {
                                             testID: K,
                                             onClick: () => {
                                                 e.scribeAction({ element: "edit" });
                                             },
-                                            text: Ne,
-                                            Icon: Pe.default,
+                                            text: Me,
+                                            Icon: De.default,
                                             link: { pathname: "/compose/post", state: { previousTweetId: i.id_str, defaultText: n, quotedStatusId: i.quoted_status?.id_str, hideUnsentTweetsButton: !0, editableUntil: i.edit_control?.editable_until_msecs, isLastEdit: "1" === i.edit_control?.edits_remaining } },
                                         };
                                     })({ scribeAction: s, tweet: e, featureSwitches: t });
@@ -725,9 +726,9 @@
                                         onClick: () => {
                                             t({ element: "edit-upsell" }), e();
                                         },
-                                        text: je,
-                                        Icon: Pe.default,
-                                        testID: Y,
+                                        text: We,
+                                        Icon: De.default,
+                                        testID: Q,
                                     }))({ tweet: e, scribeAction: s, onClick: this._openEditWithPremiumUpsell });
                             }
                             return null;
@@ -740,19 +741,19 @@
                                 c = a.id_str === r && !(0, N.$y)(s, n, N.d.EditTweet);
                             return n.article && c
                                 ? (({ addToast: e, articleEnttiyId: t, createLocalApiErrorHandler: i, history: n, scribeAction: o, unpublishArticleEntity: s }) => ({
-                                      confirmation: { text: Re, headline: He, label: Le },
+                                      confirmation: { text: He, headline: Le, label: Ze },
                                       testID: se,
-                                      text: Ze,
+                                      text: Ue,
                                       onClick: () => {
                                           s(t).then(
                                               () => {
-                                                  n.push({ pathname: (0, Ue.lU)(t) }), e({ text: Oe });
+                                                  n.push({ pathname: (0, Pe.lU)(t) }), e({ text: Re });
                                               },
                                               i({ showToast: !0 }),
                                           ),
                                               o({ element: "editArticle" });
                                       },
-                                      Icon: Pe.default,
+                                      Icon: De.default,
                                   }))({ createLocalApiErrorHandler: t, scribeAction: l, addToast: e, unpublishArticleEntity: o, articleEnttiyId: n.article.rest_id, history: i })
                                 : null;
                         }),
@@ -765,22 +766,22 @@
                                 j = a.Z.isPromoted(k) && a.Z.shouldShowAdDisclosure(k),
                                 V = {},
                                 K = this._scribeAction,
-                                Y = { addToast: p, createLocalApiErrorHandler: b, scribeAction: K },
-                                J = M.id_str === B;
+                                Q = { addToast: p, createLocalApiErrorHandler: b, scribeAction: K },
+                                Y = M.id_str === B;
                             Object.assign(V, this._getCommunityActions()),
-                                j && (V.adInfo = ae({ promotedContent: k, scribeAction: K })),
-                                J &&
+                                j && (V.adInfo = re({ featureSwitches: O, promotedContent: k, scribeAction: K })),
+                                Y &&
                                     !this._shouldDisable(S, N.d.ViewTweetActivity) &&
                                     (V.analytics = (({ featureSwitches: e, scribeAction: t, tweet: i }) => {
                                         const n = e.isTrue("responsive_web_twitter_article_seed_tweet_enabled"),
                                             o = l.Z.getLocalizedEntityName({ tweet: i, articlesEnabled: n });
                                         return {
-                                            text: ce({ entity: o }),
+                                            text: le({ entity: o }),
                                             onClick: () => {
                                                 t({ element: "analytics" });
                                             },
                                             link: `/${i.user.screen_name}/status/${i.id_str}/analytics`,
-                                            Icon: le.default,
+                                            Icon: ae.default,
                                             testID: q,
                                         };
                                     })({ tweet: S, scribeAction: K, featureSwitches: O })),
@@ -789,8 +790,8 @@
                                         const n = e.isTrue("responsive_web_twitter_article_seed_tweet_enabled"),
                                             o = l.Z.getLocalizedEntityName({ tweet: i, articlesEnabled: n });
                                         return {
-                                            text: _n({ entity: o }),
-                                            Icon: le.default,
+                                            text: mn({ entity: o }),
+                                            Icon: ae.default,
                                             link: `${i.permalink}/quotes`,
                                             onClick: () => {
                                                 t && t({ element: "tweet_engagements" });
@@ -805,16 +806,16 @@
                                         const o = e.isTrue("responsive_web_twitter_article_seed_tweet_enabled"),
                                             s = l.Z.getLocalizedEntityName({ tweet: n, articlesEnabled: o });
                                         return {
-                                            text: ze({ entity: s }),
+                                            text: qe({ entity: s }),
                                             onClick: () => {
                                                 const e = `https://publish.twitter.com/?url=https://twitter.com${t}`;
                                                 window.open(e, "_blank"), i({ element: "embed_tweet" });
                                             },
-                                            Icon: qe.default,
+                                            Icon: je.default,
                                         };
                                     })({ permalink: S.permalink, scribeAction: K, tweet: S, featureSwitches: O }));
-                            const Q = l.Z.isArticlePost(S) && O.isTrue("responsive_web_twitter_article_seed_tweet_enabled") && F.isTrueAndEnabled("subscriptions_feature_article_composer");
-                            if (Q) {
+                            const J = l.Z.isArticlePost(S) && O.isTrue("responsive_web_twitter_article_seed_tweet_enabled") && F.isTrueAndEnabled("subscriptions_feature_article_composer");
+                            if (J) {
                                 const e = this._getEditArticleAction();
                                 e && (V.edit = e);
                             } else {
@@ -826,36 +827,36 @@
                                     "ShowSimilarPosts" === g &&
                                     C &&
                                     (V.relatedPosts = (({ isArticle: e, landingUrl: t, scribeAction: i }) => ({
-                                        text: e ? Di : Si,
+                                        text: e ? Si : xi,
                                         link: t,
                                         onClick: () => {
                                             i({ element: "similar_posts_action" });
                                         },
-                                        Icon: ft.default,
-                                    }))({ landingUrl: C.url, isArticle: Q, scribeAction: K })),
+                                        Icon: bt.default,
+                                    }))({ landingUrl: C.url, isArticle: J, scribeAction: K })),
                                 R &&
                                     S.conversation_id_str === S.id_str &&
                                     !this._shouldDisable(S, N.d.ViewHiddenReplies) &&
                                     (V.viewHiddenReplies = (({ permalink: e, scribeAction: t }) => ({
-                                        text: mn,
+                                        text: hn,
                                         link: `${e}/hidden`,
                                         onClick: () => {
                                             t({ element: "view_moderated_replies" });
                                         },
-                                        Icon: it.default,
+                                        Icon: tt.default,
                                     }))({ permalink: S.permalink, scribeAction: K })),
                                 ((e, t) => {
                                     const i = t.extended_entities?.media && t.extended_entities.media[0] && t.extended_entities.media[0].features?.all?.tags;
-                                    return !!i && (0, Li.Z)(i, (t) => t.user_id === e);
+                                    return !!i && (0, Zi.Z)(i, (t) => t.user_id === e);
                                 })(B, S) &&
                                     (V.removeTag = (({ createLocalApiErrorHandler: e, removeTag: t, tweet: i, viewerUserId: n }) => ({
-                                        confirmation: { label: Hi, headline: Ri },
-                                        text: Oi,
+                                        confirmation: { label: Li, headline: Hi },
+                                        text: Ri,
                                         onClick: () => {
                                             const o = i.extended_entities?.media?.map((e) => e.id_str).join(",");
                                             t(i.id_str, { status_id: i.id_str, media_ids: o, tagged_user_ids: n }).catch(e({ showToast: !0 }));
                                         },
-                                        Icon: Zi.default,
+                                        Icon: Ui.default,
                                     }))({ createLocalApiErrorHandler: b, viewerUserId: B, removeTag: d, tweet: S })),
                                 ((e, t) => {
                                     if (!e) return !1;
@@ -867,60 +868,60 @@
                                 })(B, S) &&
                                     O.isTrue("dont_mention_me_enabled") &&
                                     (V.leaveConversation = (({ addToast: e, createLocalApiErrorHandler: t, scribeAction: i, tweet: n, unmentionUserFromConversation: o }) => ({
-                                        confirmation: { render: ni },
-                                        text: ti,
+                                        confirmation: { render: ii },
+                                        text: ei,
                                         onClick: () => {
                                             o(n.id_str).then(
                                                 () => {
-                                                    e({ text: ii });
+                                                    e({ text: ti });
                                                 },
                                                 t({ showToast: !0 }),
                                             ),
                                                 i({ element: "leave_conversation" });
                                         },
-                                        Icon: Jt.default,
-                                    }))({ ...Y, unmentionUserFromConversation: u, tweet: S })),
+                                        Icon: Qt.default,
+                                    }))({ ...Q, unmentionUserFromConversation: u, tweet: S })),
                                 B)
                             )
                                 if (
                                     (M.blocking ||
-                                        this._shouldDisable(S, N.d.ListsAddRemove, void 0, void 0, J) ||
+                                        this._shouldDisable(S, N.d.ListsAddRemove, void 0, void 0, Y) ||
                                         (V.addOrRemoveFromList = (({ scribeAction: e, user: t }) =>
                                             (0, W.k)(t, () => {
                                                 e({ element: "add_to_list" });
                                             }))({ user: M, scribeAction: K })),
                                     this._birdwatchNoteWritingEnabled && !S.isStaleEdit && (V.birdwatch = this._birdwatchAction({ scribeAction: K, tweetId: S.id_str })),
                                     this._birdwatchNoteRequestEnabled && !S.isStaleEdit && (V.birdwatchRequest = this._birdwatchRequestAction({ scribeAction: K, tweetId: S.id_str })),
-                                    J)
+                                    Y)
                                 ) {
                                     T
                                         ? (V.pinOrUnpin = (({ addToast: e, createLocalApiErrorHandler: t, scribeAction: i, tweetId: n, unpin: o }) => ({
-                                              confirmation: { text: an, headline: rn, label: ln },
+                                              confirmation: { text: rn, headline: sn, label: an },
                                               testID: G,
-                                              text: sn,
+                                              text: on,
                                               onClick: () => {
                                                   o(n).then(
                                                       () => {
-                                                          e({ text: cn });
+                                                          e({ text: ln });
                                                       },
                                                       t({ showToast: !0 }),
                                                   ),
                                                       i({ element: "unpin" });
                                               },
-                                              Icon: Rt.default,
-                                          }))({ ...Y, tweetId: S.id_str, unpin: m }))
+                                              Icon: Ht.default,
+                                          }))({ ...Q, tweetId: S.id_str, unpin: m }))
                                         : this._shouldDisable(S, N.d.PinToProfile) || (V.pinOrUnpin = this._getHighlightUpsellOnPinAction());
                                     const t = this._getHighlightOrUndoAction();
                                     t && (V.highlightOrUndo = t),
-                                        this._shouldIncludeTweetAppealOption() && (V.appealTweetWarning = Ni({ analytics: w, history: y, isAppealTweetWarning: !0, promotedContent: k, scribeAction: K, tweet: S, featureSwitches: O, reporterCountry: D, reporterLanguage: P })),
-                                        L && !this._shouldDisable(S, N.d.MuteConversation) && (V.muteOrUnmuteConversation = fi({ ...Y, addFlag: _, muteTweet: c, shouldShowMuteEducationTip: x, tweet: S, unmuteTweet: h })),
+                                        this._shouldIncludeTweetAppealOption() && (V.appealTweetWarning = Mi({ analytics: w, history: y, isAppealTweetWarning: !0, promotedContent: k, scribeAction: K, tweet: S, featureSwitches: O, reporterCountry: D, reporterLanguage: P })),
+                                        L && !this._shouldDisable(S, N.d.MuteConversation) && (V.muteOrUnmuteConversation = bi({ ...Q, addFlag: _, muteTweet: c, shouldShowMuteEducationTip: x, tweet: S, unmuteTweet: h })),
                                         U &&
                                             !this._shouldDisable(S, N.d.ConversationControls) &&
                                             (V.changeConversationControls = (({ onChangeConversationControls: e, tweet: t }) => {
                                                 const i = !!t.exclusivity_info,
                                                     n = !!t.premium_info,
                                                     o = i || n;
-                                                return { disabled: o, onClick: o ? void 0 : e, subText: i ? fe : n ? ge : void 0, text: be, Icon: we.default };
+                                                return { disabled: o, onClick: o ? void 0 : e, subText: i ? be : n ? fe : void 0, text: we, Icon: pe.default };
                                             })({ tweet: S, onChangeConversationControls: e })),
                                         this._shouldDisable(S, N.d.Delete) ||
                                             (V.delete = (({ addToast: e, createLocalApiErrorHandler: t, deleteTweet: i, featureSwitches: n, onDeleteTweet: r, scribeAction: a, tweet: c, userClaims: d }) => {
@@ -929,82 +930,82 @@
                                                     m = n.isTrue("responsive_web_twitter_article_seed_tweet_enabled"),
                                                     _ = l.Z.postEntityName;
                                                 return {
-                                                    confirmation: { label: ye, headline: Te({ entity: _ }), text: l.Z.getOriginalTweet(c).isEdited && (u || h) ? ve({ entity: _ }) : m && l.Z.isArticlePost(c) ? o.createElement(o.Fragment, null, Ae, o.createElement(s.Z, { style: xe.additionalInfo }, Ie)) : Ae, confirmButtonType: "destructiveFilled" },
+                                                    confirmation: { label: Ce, headline: ye({ entity: _ }), text: l.Z.getOriginalTweet(c).isEdited && (u || h) ? Ae({ entity: _ }) : m && l.Z.isArticlePost(c) ? o.createElement(o.Fragment, null, Te, o.createElement(s.Z, { style: Ie.additionalInfo }, ke)) : Te, confirmButtonType: "destructiveFilled" },
                                                     isEmphasized: !0,
-                                                    text: ye,
+                                                    text: Ce,
                                                     onClick: () => {
                                                         i(c.id_str).then(
                                                             () => {
-                                                                e({ text: Ee({ entity: _ }) });
+                                                                e({ text: ve({ entity: _ }) });
                                                             },
-                                                            t({ defaultToast: { text: ke({ entity: _ }) }, showToast: !0 }),
+                                                            t({ defaultToast: { text: Ee({ entity: _ }) }, showToast: !0 }),
                                                         ),
                                                             a({ element: "delete" }),
                                                             r && r(c.id_str);
                                                     },
-                                                    Icon: Ce.default,
+                                                    Icon: ge.default,
                                                 };
-                                            })({ ...Y, deleteTweet: i, onDeleteTweet: v, tweet: S, featureSwitches: O, userClaims: F }));
+                                            })({ ...Q, deleteTweet: i, onDeleteTweet: v, tweet: S, featureSwitches: O, userClaims: F }));
                                 } else
-                                    E && j && (V.promotedTweetDismiss = xi({ onTweetDismiss: E, hasPremiumPlus: this._hasPremiumPlus, promotedDismissUpsellEnabled: this.context.featureSwitches.isTrue("subscriptions_hide_ad_upsell_enabled"), history: y })),
+                                    E && j && (V.promotedTweetDismiss = Ii({ onTweetDismiss: E, hasPremiumPlus: this._hasPremiumPlus, promotedDismissUpsellEnabled: this.context.featureSwitches.isTrue("subscriptions_hide_ad_upsell_enabled"), history: y })),
                                         M.blocking ||
                                             this._shouldDisable(S, N.d.Follow) ||
                                             ((V.followOrUnfollow = M.following
                                                 ? (({ addToast: e, createLocalApiErrorHandler: t, promotedContent: i, scribeAction: n, unfollow: o, user: s }) => ({
-                                                      text: Qi({ screenName: s.screen_name }),
+                                                      text: Yi({ screenName: s.screen_name }),
                                                       onClick: () => {
                                                           o(s.id_str, { promotedContent: i }).then((t) => {
-                                                              e({ text: en({ screenName: s.screen_name }) });
-                                                          }, t(Ji.X)),
+                                                              e({ text: Ji({ screenName: s.screen_name }) });
+                                                          }, t(Qi.X)),
                                                               n({ element: "unfollow" }),
                                                               n({ action: "unfollow", element: "tweet_curation_action_menu" });
                                                       },
-                                                      Icon: Yi.default,
-                                                  }))({ ...Y, unfollow: this.props.unfollow, promotedContent: k, user: M })
+                                                      Icon: Ki.default,
+                                                  }))({ ...Q, unfollow: this.props.unfollow, promotedContent: k, user: M })
                                                 : (({ addToast: e, createLocalApiErrorHandler: t, follow: i, promotedContent: n, scribeAction: o, user: s }) => ({
-                                                      text: Xe({ screenName: s.screen_name }),
+                                                      text: Ge({ screenName: s.screen_name }),
                                                       onClick: () => {
                                                           i(s.id_str, { promotedContent: n }).then(
                                                               () => {
-                                                                  o({ element: "follow" }), o({ action: "follow", element: "tweet_curation_action_menu" }), s.protected ? e({ text: Ke({ screenName: s.screen_name }) }) : e({ text: Ye({ screenName: s.screen_name }) });
+                                                                  o({ element: "follow" }), o({ action: "follow", element: "tweet_curation_action_menu" }), s.protected ? e({ text: Xe({ screenName: s.screen_name }) }) : e({ text: Ke({ screenName: s.screen_name }) });
                                                               },
-                                                              t({ ...Ge.H, showToast: !0 }),
+                                                              t({ ...Ve.H, showToast: !0 }),
                                                           ),
                                                               o({ element: "follow_attempt" });
                                                       },
-                                                      Icon: Ve.default,
-                                                  }))({ ...Y, follow: n, promotedContent: k, user: M })),
+                                                      Icon: ze.default,
+                                                  }))({ ...Q, follow: n, promotedContent: k, user: M })),
                                             O.allTrue(["super_follow_android_web_subscription_enabled", "creator_subscriptions_subscribe_action_tweet_menu_enabled"]) &&
                                                 M.super_follow_eligible &&
                                                 !M.super_following &&
                                                 (V.subscribe = (({ history: e, scribeAction: t, user: i }) => ({
-                                                    text: Ki({ followType: Xi, screenName: `@${i.screen_name}` }),
+                                                    text: Xi({ followType: Gi, screenName: `@${i.screen_name}` }),
                                                     onClick: () => {
                                                         e.push(`/${i.screen_name}/creator-subscriptions/subscribe`, { referring_page: "profile_action_menu" }), t({ element: "subscribe" });
                                                     },
-                                                    Icon: Gi.default,
+                                                    Icon: Vi.default,
                                                     testID: te,
                                                 }))({ scribeAction: K, history: y, user: M })),
                                             (V.muteOrUnmute = this._getMuteOrUnmuteAction())),
-                                        L && (V.muteOrUnmuteConversation = fi({ ...Y, addFlag: _, muteTweet: c, shouldShowMuteEducationTip: x, tweet: S, unmuteTweet: h })),
-                                        Z && (V.hideReply = _t({ ...Y, addFlag: _, hideReply: r, isSoftBlockEnabled: O.isTrue("xprofile_blocked_by_view_enabled"), onBlock: this._handleBlock, onTweetDismiss: E, shouldShowHideReplyTip: I, tweet: S })),
+                                        L && (V.muteOrUnmuteConversation = bi({ ...Q, addFlag: _, muteTweet: c, shouldShowMuteEducationTip: x, tweet: S, unmuteTweet: h })),
+                                        Z && (V.hideReply = mt({ ...Q, addFlag: _, hideReply: r, isSoftBlockEnabled: O.isTrue("xprofile_blocked_by_view_enabled"), onBlock: this._handleBlock, onTweetDismiss: E, shouldShowHideReplyTip: I, tweet: S })),
                                         H &&
                                             (V.unhideReply = (({ addToast: e, createLocalApiErrorHandler: t, scribeAction: i, tweet: n, unhideReply: o }) => ({
-                                                text: nn,
+                                                text: tn,
                                                 onClick: () => {
                                                     o(n.id_str, { conversation_id: n.conversation_id_str }).then(
                                                         (t) => {
-                                                            e({ ariaOnly: !0, text: on });
+                                                            e({ ariaOnly: !0, text: nn });
                                                         },
                                                         t({ showToast: !0 }),
                                                     ),
                                                         i({ element: "unmoderate_reply" });
                                                 },
-                                                Icon: tn.default,
-                                            }))({ ...Y, tweet: S, unhideReply: this.props.unhideReply })),
+                                                Icon: en.default,
+                                            }))({ ...Q, tweet: S, unhideReply: this.props.unhideReply })),
                                         (V.blockOrUnblock = (0, A.op)({ blockAction: this._handleBlock, isSoftBlockEnabled: O.isTrue("xprofile_blocked_by_view_enabled"), source: A.SC.TWEET_CARET, testID: z, unblockAction: this._handleUnblock, user: M }));
-                            B && !J && !S.isPreviewDisplay
-                                ? (V.report = Ni({ analytics: w, history: y, promotedContent: k, scribeAction: K, tweet: S, featureSwitches: O, reporterCountry: D, reporterLanguage: P }))
+                            B && !Y && !S.isPreviewDisplay
+                                ? (V.report = Mi({ analytics: w, history: y, promotedContent: k, scribeAction: K, tweet: S, featureSwitches: O, reporterCountry: D, reporterLanguage: P }))
                                 : !B &&
                                   D &&
                                   (function (e) {
@@ -1014,24 +1015,24 @@
                                       const t = e.featureSwitches.isTrue("responsive_web_twitter_article_seed_tweet_enabled"),
                                           i = l.Z.getLocalizedEntityName({ tweet: e.tweet, articlesEnabled: t });
                                       return {
-                                          Icon: Bi.default,
-                                          link: (0, Je.ju)("https://help.x.com/forms"),
+                                          Icon: Fi.default,
+                                          link: (0, Qe.ju)("https://help.x.com/forms"),
                                           onClick: () => {
                                               e.scribeAction({ element: "report_tweet" });
                                           },
                                           testID: X,
-                                          text: e.promotedContent ? $i.reportAd : $i.reportTweet({ entity: i }),
+                                          text: e.promotedContent ? Ni.reportAd : Ni.reportTweet({ entity: i }),
                                       };
                                   })({ promotedContent: k, scribeAction: K, tweet: S, featureSwitches: O })),
-                                  O.isTrue("netzdg_in_loggedout_posts_enabled") && (V.reportNetzDG = qi.t({ tweet: S })));
+                                  O.isTrue("netzdg_in_loggedout_posts_enabled") && (V.reportNetzDG = ji.t({ tweet: S })));
                             const ee = O.getStringValue("dsa_report_illegal_content_url");
                             return (
-                                !J &&
+                                !Y &&
                                     O.isTrue("dsa_report_flow_enabled") &&
                                     ee &&
                                     (V.reportEUIllegalContentDSA = (function (e) {
-                                        const t = (0, Wi.MS)(e.reportUrl),
-                                            { origin: i } = ji.ZP.get(),
+                                        const t = (0, $i.MS)(e.reportUrl),
+                                            { origin: i } = Wi.ZP.get(),
                                             { id_str: n, permalink: o, user: s } = e.tweet,
                                             r = e.promotedContent ? "ad" : "post";
                                         return (
@@ -1039,28 +1040,28 @@
                                             t.searchParams.set("content_type", r),
                                             s?.screen_name && t.searchParams.set("content_author", `@${s?.screen_name}`),
                                             {
-                                                Icon: Bi.default,
+                                                Icon: Fi.default,
                                                 link: t.href,
                                                 onClick: () => {
                                                     e.scribeAction({ element: `report_eu_illegal_content_${r}` });
                                                 },
-                                                text: Wi.yh,
+                                                text: $i.yh,
                                                 testID: oe,
                                             }
                                         );
                                     })({ tweet: S, promotedContent: k, scribeAction: K, reportUrl: ee })),
                                 t &&
-                                    y.location.pathname.match(Un) &&
+                                    y.location.pathname.match(Pn) &&
                                     (V.downloadVideo = (({ downloadVideoLink: e, scribeAction: t }) => ({
-                                        text: De,
+                                        text: Se,
                                         onClick: () => {
                                             t({ element: "download-video" });
                                         },
                                         link: e,
-                                        Icon: Se.default,
+                                        Icon: xe.default,
                                         testID: te,
                                     }))({ downloadVideoLink: t, scribeAction: K })),
-                                On.forEach((e) => {
+                                Rn.forEach((e) => {
                                     if ("feedbackOptions" !== e || S.isStaleEdit) V[e] && $.push(V[e]);
                                     else {
                                         const e = f ? f.filter((e) => !e.excludeFromActionMenu) : [];
@@ -1078,7 +1079,7 @@
                                 [, i] = this._getActionItems(w.Z),
                                 n = [];
                             return (
-                                Fn.forEach((o) => {
+                                On.forEach((o) => {
                                     if ("followOrUnfollow" !== o || t.following)
                                         if ("feedbackOptions" === o) {
                                             const t = e ? e.filter((e) => !e.excludeFromActionMenu) : [];
@@ -1091,7 +1092,7 @@
                         (this._handleBlock = () => {
                             const { addToast: e, block: t, createLocalApiErrorHandler: i, dismissUserFromConversation: n, history: o, promotedContent: s, tweet: r } = this.props;
                             t(r.user.id_str, { promotedContent: s }).then(() => {
-                                n({ userId: r.user.id_str, feedbackKeys: ["UnfollowEntity"] }), e({ action: { label: Rn.unblock, onAction: this._handleUnblock }, text: Rn.blockedSuccess });
+                                n({ userId: r.user.id_str, feedbackKeys: ["UnfollowEntity"] }), e({ action: { label: Hn.unblock, onAction: this._handleUnblock }, text: Hn.blockedSuccess });
                                 const t = !!r.promoted_content?.impression_id;
                                 if (this.context.featureSwitches.isTrue("subscriptions_block_ad_upsell_enabled") && t && !this._hasPremiumPlus) {
                                     const e = { variant: "BlockAd" };
@@ -1120,12 +1121,12 @@
                     const { isActiveCreator: e, isDisabled: t, isForPreroll: i, menuControlProps: r, tweet: a, withChangeConversationControlsTooltip: l, withImmediateDismiss: h } = this.props,
                         m = a.conversation_control?.policy || g.k.all;
                     return i
-                        ? o.createElement(c.ZP, { icon: o.createElement(p.default, { style: { height: "18px" } }), renderMenu: (e) => o.createElement(d.Z, { items: this._getPrerollActionItems(), onCloseRequested: e, shouldCloseOnClick: !0 }), size: "smallCompact", style: Ln.prerollDismissButton, type: "onMediaDominantColorFilled" })
+                        ? o.createElement(c.ZP, { icon: o.createElement(p.default, { style: { height: "18px" } }), renderMenu: (e) => o.createElement(d.Z, { items: this._getPrerollActionItems(), onCloseRequested: e, shouldCloseOnClick: !0 }), size: "smallCompact", style: Zn.prerollDismissButton, type: "onMediaDominantColorFilled" })
                         : h
-                          ? o.createElement(s.Z, { style: Ln.dismissButton }, o.createElement(y.Z, { onClick: this._handleImmediateDismissClick }))
+                          ? o.createElement(s.Z, { style: Zn.dismissButton }, o.createElement(y.Z, { onClick: this._handleImmediateDismissClick }))
                           : o.createElement(
                                 s.Z,
-                                { style: Ln.overflowMenu },
+                                { style: Zn.overflowMenu },
                                 l ? o.createElement(M, null) : null,
                                 o.createElement(b.Z, { controlled: !0, disallowedReplyControls: [], isActiveCreator: e, midConversationTweet: a, onChange: this._handleOnChangeConversationControls, setDisallowedReplyControls: () => {}, value: m }, ({ openPopover: e }) => o.createElement(u.Z, (0, n.Z)({}, r, { isDisabled: t, onClick: this._onMenuClick, renderActionMenu: this._renderCurationActionMenu(e), testID: $.Z.caret }))),
                                 l ? o.createElement(M, null) : null,
@@ -1146,11 +1147,11 @@
                         } = this.props,
                         { community_relationship: d, user: u } = t,
                         h = !l && c;
-                    if ((u.id_str !== s && h && (this._shouldDisable(t, N.d.HideCommunityTweet) || (e.hideTweet = ((e, t) => ({ text: bt, Icon: pt.default, link: { pathname: `/i/report/${wt.C2.HideCommunityTweet}/${e}`, state: { scribeNamespace: t } } }))(n, { ...r, element: "hide_tweet" })), this._shouldDisable(t, N.d.RemoveFromCommunity) || (e.removeCommunityMember = ((e, t, i) => ({ text: Ui, Icon: Pi.default, link: { pathname: `/i/report/${wt.C2.RemoveCommunityMember}/${e.id_str}?community_id=${t}`, state: { scribeNamespace: i } } }))(u, i, { ...r, element: "remove_community_member" }))), this._shouldDisable(t, N.d.SearchUsersPost) || (e.searchUsersPost = ((e, t, i) => ({ text: Vi({ screenName: e.screen_name }), Icon: zi.default, link: { pathname: `/i/communities/${t}/search/?q=(from:${e.screen_name})`, state: { scribeNamespace: i } } }))(u, i, { ...r, element: "search_users_post" })), I.X7.includes(d?.actions.pin_action_result.__typename) && !this._shouldDisable(t, N.d.PinCommunityTweet))) {
+                    if ((u.id_str !== s && h && (this._shouldDisable(t, N.d.HideCommunityTweet) || (e.hideTweet = ((e, t) => ({ text: wt, Icon: _t.default, link: { pathname: `/i/report/${pt.C2.HideCommunityTweet}/${e}`, state: { scribeNamespace: t } } }))(n, { ...r, element: "hide_tweet" })), this._shouldDisable(t, N.d.RemoveFromCommunity) || (e.removeCommunityMember = ((e, t, i) => ({ text: Pi, Icon: Di.default, link: { pathname: `/i/report/${pt.C2.RemoveCommunityMember}/${e.id_str}?community_id=${t}`, state: { scribeNamespace: i } } }))(u, i, { ...r, element: "remove_community_member" }))), this._shouldDisable(t, N.d.SearchUsersPost) || (e.searchUsersPost = ((e, t, i) => ({ text: zi({ screenName: e.screen_name }), Icon: qi.default, link: { pathname: `/i/communities/${t}/search/?q=(from:${e.screen_name})`, state: { scribeNamespace: i } } }))(u, i, { ...r, element: "search_users_post" })), I.X7.includes(d?.actions.pin_action_result.__typename) && !this._shouldDisable(t, N.d.PinCommunityTweet))) {
                         const t = "CommunityTweetPinActionReplace" === a?.actions?.pin_action_result?.__typename;
-                        e.pinCommunityTweet = ((e, t, i) => ({ text: Ei, Icon: Rt.default, onClick() {}, confirmation: { render: (n, s) => o.createElement(ki, { communityId: t, isReplacing: i, onCancel: s, onConfirm: n, tweetId: e }) } }))(n, i, t);
+                        e.pinCommunityTweet = ((e, t, i) => ({ text: vi, Icon: Ht.default, onClick() {}, confirmation: { render: (n, s) => o.createElement(Ei, { communityId: t, isReplacing: i, onCancel: s, onConfirm: n, tweetId: e }) } }))(n, i, t);
                     }
-                    return I.Gd.includes(d?.actions.unpin_action_result.__typename) && !this._shouldDisable(t, N.d.UnpinCommunityTweet) && (e.unpinCommunityTweet = ((e, t) => ({ text: un, Icon: dn.default, onClick() {}, confirmation: { render: (i, n) => o.createElement(hn, { communityId: t, onCancel: n, onConfirm: i, tweetId: e }) } }))(n, i)), e;
+                    return I.Gd.includes(d?.actions.unpin_action_result.__typename) && !this._shouldDisable(t, N.d.UnpinCommunityTweet) && (e.unpinCommunityTweet = ((e, t) => ({ text: dn, Icon: cn.default, onClick() {}, confirmation: { render: (i, n) => o.createElement(un, { communityId: t, onCancel: n, onConfirm: i, tweetId: e }) } }))(n, i)), e;
                 }
                 _shouldIncludeTweetAppealOption() {
                     const { forwardPivotDisplayType: e, isNsfwUser: t, tweet: i, userCountry: n, userLanguage: o } = this.props,
@@ -1158,14 +1159,14 @@
                     return (0, S.rT)({ viewerUserId: r, featureSwitches: s, forwardPivotDisplayType: e, tweet: i, userCountry: n, userLanguage: o }) || (0, S.V4)({ viewerUserId: r, featureSwitches: s, isNsfwUser: t, tweet: i, userCountry: n, userLanguage: o });
                 }
             }
-            (Zn.defaultProps = { withRemoveFromBookmarks: !1 }), (Zn.contextType = U.rC);
-            const Ln = h.default.create((e) => ({ overflowMenu: { display: "flex", flexDirection: "row", alignItems: "center" }, dismissButton: { flexDirection: "row", alignItems: "center", marginTop: e.spaces.space8 }, prerollDismissButton: { width: "2rem", height: "1rem", backgroundColor: "rgba(0,0,0,.5)", borderRadius: "4px" } })),
-                Hn = (0, D.ZP)(Pn(Zn)),
-                Rn = { unblock: _().e133be4e, blockedSuccess: _().a9fd20be },
-                On = ["searchUsersPost", "hideTweet", "removeCommunityMember", "delete", "edit", "appealTweetWarning", "pinOrUnpin", "highlightOrUndo", "promotedTweetDismiss", "adInfo", "removeTag", "feedbackOptions", "followOrUnfollow", "subscribe", "addOrRemoveFromList", "muteOrUnmute", "muteOrUnmuteConversation", "leaveConversation", "changeConversationControls", "blockOrUnblock", "viewTweetEngagements", "downloadVideo", "hideReply", "unhideReply", "embed", "report", "reportNetzDG", "reportEUIllegalContentDSA", "analytics", "relatedPosts", "viewHiddenReplies", "birdwatch", "birdwatchRequest", "pinCommunityTweet", "unpinCommunityTweet"],
-                Fn = ["feedbackOptions", "followOrUnfollow", "muteOrUnmute", "blockOrUnblock", "report", "reportEUIllegalContentDSA"];
-            const Bn = Object.freeze({ all: "change_conversation_control_to_everyone", community: "change_conversation_control_to_community", by_invitation: "change_conversation_control_to_mentioned", followers: "change_conversation_control_to_followers", subscribers: "change_conversation_control_to_subscribers", community_members: "community_members", community_hidden_tweet: "community_hidden_tweet", super_followers_exclusive: "super_followers_exclusive", community_tweet_member_removed: "community_tweet_member_removed", trusted_friends_tweet: "trusted_friends_tweet", verified: "change_conversation_control_to_verified", premium: "change_conversation_control_to_premium" });
+            (Un.defaultProps = { withRemoveFromBookmarks: !1 }), (Un.contextType = U.rC);
+            const Zn = h.default.create((e) => ({ overflowMenu: { display: "flex", flexDirection: "row", alignItems: "center" }, dismissButton: { flexDirection: "row", alignItems: "center", marginTop: e.spaces.space8 }, prerollDismissButton: { width: "2rem", height: "1rem", backgroundColor: "rgba(0,0,0,.5)", borderRadius: "4px" } })),
+                Ln = (0, D.ZP)(Dn(Un)),
+                Hn = { unblock: _().e133be4e, blockedSuccess: _().a9fd20be },
+                Rn = ["searchUsersPost", "hideTweet", "removeCommunityMember", "delete", "edit", "appealTweetWarning", "pinOrUnpin", "highlightOrUndo", "promotedTweetDismiss", "adInfo", "removeTag", "feedbackOptions", "followOrUnfollow", "subscribe", "addOrRemoveFromList", "muteOrUnmute", "muteOrUnmuteConversation", "leaveConversation", "changeConversationControls", "blockOrUnblock", "viewTweetEngagements", "downloadVideo", "hideReply", "unhideReply", "embed", "report", "reportNetzDG", "reportEUIllegalContentDSA", "analytics", "relatedPosts", "viewHiddenReplies", "birdwatch", "birdwatchRequest", "pinCommunityTweet", "unpinCommunityTweet"],
+                On = ["feedbackOptions", "followOrUnfollow", "muteOrUnmute", "blockOrUnblock", "report", "reportEUIllegalContentDSA"];
+            const Fn = Object.freeze({ all: "change_conversation_control_to_everyone", community: "change_conversation_control_to_community", by_invitation: "change_conversation_control_to_mentioned", followers: "change_conversation_control_to_followers", subscribers: "change_conversation_control_to_subscribers", community_members: "community_members", community_hidden_tweet: "community_hidden_tweet", super_followers_exclusive: "super_followers_exclusive", community_tweet_member_removed: "community_tweet_member_removed", trusted_friends_tweet: "trusted_friends_tweet", verified: "change_conversation_control_to_verified", premium: "change_conversation_control_to_premium" });
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TweetCurationActionMenu-e019dbda.6f1dc2ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TweetCurationActionMenu-e019dbda.112766fa.js.map

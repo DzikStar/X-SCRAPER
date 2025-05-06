@@ -1710,6 +1710,7 @@
                 t("d78131b9", function (e) {
                     return "Tilføj/fjern @" + e.screenName + " fra Lister";
                 }),
+                t("b3b642fc", "Why this post?"),
                 t("fb4ee11c", "Hvorfor vises denne annonce?"),
                 t("ad50e7d9", function (e) {
                     return "Vis statistik for " + e.entity;
@@ -1908,9 +1909,9 @@
                 t("b6510e68", "Kopier din Artikels URL-adresse, så du kan dele den."),
                 t("e4a6e006", "Noget gik galt. Prøv igen."),
                 t("eff483e0", "Når du har udgivet Artiklen, får du et link til at dele den."),
-                t("ca15dd4e", "Udkast"),
-                t("bb40bf66", "Udgivet");
-            t("h107935c", "Sidst gemt lige nu"),
+                t("ca15dd4e", "Udkast");
+            t("bb40bf66", "Udgivet"),
+                t("h107935c", "Sidst gemt lige nu"),
                 t("a753a870", "Anvend"),
                 t("afccc67e", "Kopier link til Artikel"),
                 t("beb24e9e", "URL-adresse kopieret til udklipsholder"),
@@ -2427,6 +2428,7 @@
                     return "Indberet " + e.entity;
                 }),
                 t("e3fd237e", "Indberet annoncen"),
+                t("ebb7662a", "Indberet post"),
                 t("d1e21610", "Indberet overtrædelse af NetzDG"),
                 t("d7513755", function (e) {
                     return "Søg efter @" + e.screenName + "s posts i dette Fællesskab";
@@ -2959,15 +2961,15 @@
                 t("c6f58084", "Udviklere"),
                 t("d83f18d2", "Oversigt"),
                 t("hc5aa17c", "Hent X-appen"),
-                t("j0693948", "Hent Grok-appen"),
-                t("af781666", "What do people think?"),
-                t("ad35153e", "beta");
-            t("fbf83158", "Advarsel: Betalingen mislykkedes"),
+                t("j0693948", "Hent Grok-appen");
+            t("af781666", "Hvad synes folk?"),
+                t("ad35153e", "beta"),
+                t("fbf83158", "Advarsel: Betalingen mislykkedes"),
                 t("jadeb4da", "Opdater snarest muligt din betalingsmetode, før du mister dine abonnementsfordele."),
                 t("bce3726a", "Opdater fakturering"),
                 t("fce9ecce", "Foreslåede videoer"),
-                t("dc954b88", "Try the full news experience"),
-                t("j66b95a2", "In-Depth News"),
+                t("dc954b88", "Prøv den komplette nyhedsoplevelse"),
+                t("j66b95a2", "Dybdegående nyheder "),
                 t("b58d2bd2", "Relevante posts"),
                 t("efe6ef9e", "Vis post"),
                 t("b3d183ce", "Post med svar"),
@@ -3875,10 +3877,10 @@
                 t("j245c654", "Talere"),
                 t("eda23a02", "Lyttere"),
                 t("b90eb348", "Inviter til at tale"),
-                t("d9a63e82", "Fjern fra talere"),
-                t("bd917b26", "Inviter som medvært"),
-                t("d7357e7e", "Fjern fra medværter");
-            t("bf307fc0", "Bloker og fjern"),
+                t("d9a63e82", "Fjern fra talere");
+            t("bd917b26", "Inviter som medvært"),
+                t("d7357e7e", "Fjern fra medværter"),
+                t("bf307fc0", "Bloker og fjern"),
                 t("ccf2f24e", "Indberetning"),
                 t("i22835de", "Godkend"),
                 t("cb59a0fe", "Afvis"),
@@ -4152,7 +4154,6 @@
                 t("bcbf5b6e", "Deling"),
                 t("j7b5c844", "Du er ansvarlig for de samtaler, du deler offentligt. Undgå at dele følsomme og fortrolige oplysninger om dig selv eller andre i dine samtaler med Grok (se vores hjælpecenter)."),
                 t("c9f7c196", "Hjælpecenter"),
-                t("b63d3d36", "Vedhæft"),
                 t("c65f7308", "Serverne koger lige nu "),
                 t("f2a8655e", "Groks avancerede værktøjer er ikke tilgængelige i øjeblikket. "),
                 t("c26b9b9c", "Fil"),
@@ -4167,8 +4168,8 @@
                 t("e9b6d404", "Hvilke søgeværktøjer skal Grok have adgang til?"),
                 t("h15dce2e", "Avancerede indstillinger"),
                 t("ff9dc268", "Rediger prompt"),
-                t("acb2baa0", "Create Images"),
-                t("h30fd372", "Try Voice Mode"),
+                t("acb2baa0", "Skab billeder"),
+                t("h30fd372", "Prøv Stemme-tilstand"),
                 t("e9fcdd0c", "Bed Grok om at søge aggressivt på nettet"),
                 t("fc4e8aba", "Bed Grok om at ræsonnere trin for trin"),
                 t("e4ae6abe", "Bed Grok om at forandre dit billede"),
@@ -4337,7 +4338,7 @@
                 t("g01599b6", "Svar 1"),
                 t("e02694e0", "Svar 2"),
                 t("h6867fcc", "Jeg foretrækker dette svar"),
-                t("d07488a6", "Get the Android app"),
+                t("d07488a6", "Hent Android-appen"),
                 t("d9cfe70c", "Få adgang til avancerede Grok-funktioner"),
                 t("hf9afab0", "Gør det muligt for DeepSearch at scanne internettet og X, analysere oplysninger og levere detaljerede, velbegrundede svar med hurtig, agentbaseret søgning."),
                 t("ef3b3f04", 'Gør det muligt for Tænk at bruge vores ræsonneringsmodel. Det er bedst til matematik, videnskab og kodning. Du kan også bede Grok om at "tænke dybere" i forbindelse med spørgsmål, der kræver lidt mere hjernekraft. '),
@@ -4346,7 +4347,7 @@
                 t("e3584f8e", "Hvad er de 10 mest succesfulde strategier for optionshandel, der bruges af hedgefonde"),
                 t("d91b7b8a", "Hvad ville det koste at bygge et universitet i 1885?"),
                 t("ia5bef3e", "Hvordan kan jeg hjælpe dig i dag?"),
-                t("ebea5880", "Recent Conversations"),
+                t("ebea5880", "Seneste samtaler"),
                 t("e13591c0", "Eksempel på Grok-samtale"),
                 t("c27ca452", "Brugere, der abonnerer på Premium, kan nu bruge vores mest avancerede AI, Grok, på X."),
                 t("b6abc25a", "Vi introducerer Grok 2"),
@@ -4908,9 +4909,9 @@
                 t("jb6f9292", 'indeholder den eksakte sætning "ai startup"'),
                 t("j8ee77c4", '"ai startup"'),
                 t("d0480758", 'indeholder enten "ai" eller "startup" (eller begge dele)'),
-                t("f0048fa2", "ai OR startup"),
-                t("da0df186", 'indeholder "ai", men ikke "startup"');
-            t("f2f463ea", "ai -startup"),
+                t("f0048fa2", "ai OR startup");
+            t("da0df186", 'indeholder "ai", men ikke "startup"'),
+                t("f2f463ea", "ai -startup"),
                 t("a10a357e", 'indeholder "ai" og har mindst 50 likes'),
                 t("ca8ed1e8", "ai min_faves:50"),
                 t("i945a3f2", 'indeholder "ai" og en URL med ordet "grok"'),
@@ -5874,9 +5875,9 @@
                 t("hb52cc4a", "Prøv igen senere."),
                 t("e50e1bb0", "Velkommen til Fællesskaber"),
                 t("i6829daa", "Fællesskaber er modererede diskussionsgrupper, hvor folk på X kan komme i kontakt og dele."),
-                t("fc5c6914", "Mød andre med dine interesser"),
-                t("aa1a9820", "Deltag i Fællesskaber for at få kontakt med folk, som deler dine interesser.");
-            t("edef4c82", "Post direkte til et Fællesskab"),
+                t("fc5c6914", "Mød andre med dine interesser");
+            t("aa1a9820", "Deltag i Fællesskaber for at få kontakt med folk, som deler dine interesser."),
+                t("edef4c82", "Post direkte til et Fællesskab"),
                 t("a7640df6", "Dine posts deles med medlemmer af Fællesskabet og dine følgere."),
                 t("h3bb8068", "Få hjælp, når du har brug for det"),
                 t("a709f8f8", "Administratorer og moderatorer hjælper med at administrere Fællesskaber og holder samtalen på sporet."),
@@ -6872,9 +6873,9 @@
                 t("g337328e", "Få størst mulig synlighed for dine svar."),
                 t("fa006202", "Afspilning af video i baggrunden"),
                 t("jf389778", "Se med, mens du browser eller bruger andre apps"),
-                t("f2977d80", "Bogmærkemapper"),
-                t("j1d3d910", "Organisér dine gemte posts, så du nemt kan finde dem");
-            t("f0f48668", "Premium-support"),
+                t("f2977d80", "Bogmærkemapper");
+            t("j1d3d910", "Organisér dine gemte posts, så du nemt kan finde dem"),
+                t("f0f48668", "Premium-support"),
                 t("c3148608", "Få hurtigere hjælp, når du har brug for det"),
                 t("b485ca6e", "Fanen Højdepunkter"),
                 t("d438955e", "Vis dine bedste posts frem"),
@@ -7848,8 +7849,7 @@
                 t("c80160d3", "Annoncering"),
                 t("ff0edac0", "Er du sikker på, at du vil annullere dit abonnement?"),
                 t("h2ac0348", "Nej, gå tilbage"),
-                t("dbf9667e", "Jeg er sikker"),
-                t("j7592572", "U-vending");
+                t("dbf9667e", "Jeg er sikker");
             function d(e, r) {
                 for (var n = 0; n < r.length; n++) {
                     var t = r[n];
@@ -7888,7 +7888,8 @@
                     a(e, r)
                 );
             }
-            t("ee778942", "Trafiklys"),
+            t("j7592572", "U-vending"),
+                t("ee778942", "Trafiklys"),
                 t("fdd57981", function (e) {
                     return "Vi vil gerne tilbyde dig en gratis engangsannoncekredit på " + e.totalAmount + " USD.";
                 }),
@@ -8916,13 +8917,13 @@
                 }),
                 t("dc718e53", function (e) {
                     return "+" + e.count + " and" + i(e.count, "en", "re");
-                }),
-                t("d0e7b11b", function (e) {
-                    return e.date + " kl. " + e.time;
                 });
-            t("b4349cbc", function (e) {
-                return "" + e.relativeDay;
+            t("d0e7b11b", function (e) {
+                return e.date + " kl. " + e.time;
             }),
+                t("b4349cbc", function (e) {
+                    return "" + e.relativeDay;
+                }),
                 t("ebe41367", function (e) {
                     return "Tid " + e.time;
                 }),
@@ -13189,4 +13190,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/da.40a335da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/da.5967b80a.js.map

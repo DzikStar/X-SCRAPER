@@ -1709,6 +1709,7 @@
                 n("d78131b9", function (e) {
                     return "@" + e.screenName + " kullanıcısını listelere ekle / listelerden kaldır";
                 }),
+                n("b3b642fc", "Why this post?"),
                 n("fb4ee11c", "Neden bu reklamı görüyorum?"),
                 n("ad50e7d9", function (e) {
                     return e.entity + " istatistiklerini görüntüle";
@@ -1907,9 +1908,9 @@
                 n("b6510e68", "Makaleyi paylaşabilmek için Makalenin URL'sini kopyala."),
                 n("e4a6e006", "Bir hata oluştu. Lütfen yeniden dene."),
                 n("eff483e0", "Makaleni yayınladıktan sonra paylaşman için bir bağlantı verilir."),
-                n("ca15dd4e", "Taslak"),
-                n("bb40bf66", "Yayınlananlar");
-            n("h107935c", "Az önce kaydedildi"),
+                n("ca15dd4e", "Taslak");
+            n("bb40bf66", "Yayınlananlar"),
+                n("h107935c", "Az önce kaydedildi"),
                 n("a753a870", "Uygula"),
                 n("afccc67e", "Makale bağlantısını kopyala"),
                 n("beb24e9e", "URL panoya kopyalandı"),
@@ -2426,6 +2427,7 @@
                     return e.entity + " öğesini bildir";
                 }),
                 n("e3fd237e", "Reklamı bildir"),
+                n("ebb7662a", "Gönderiyi bildir"),
                 n("d1e21610", "NetzDG İhlali bildir"),
                 n("d7513755", function (e) {
                     return "Bu Toplulukta @" + e.screenName + " adlı kişinin gönderilerini ara";
@@ -2958,15 +2960,15 @@
                 n("c6f58084", "Geliştiriciler"),
                 n("d83f18d2", "Dizin"),
                 n("hc5aa17c", "X uygulamasını indir"),
-                n("j0693948", "Grok uygulamasını indir"),
-                n("af781666", "What do people think?"),
-                n("ad35153e", "beta");
-            n("fbf83158", "Uyarı: Ödeme başarısız oldu"),
+                n("j0693948", "Grok uygulamasını indir");
+            n("af781666", "İnsanlar ne düşünüyor?"),
+                n("ad35153e", "beta"),
+                n("fbf83158", "Uyarı: Ödeme başarısız oldu"),
                 n("jadeb4da", "Abonelik avantajlarını kaybetmemek için lütfen ödeme yöntemini hemen güncelle."),
                 n("bce3726a", "Faturalandırma Ayarlarını Güncelle"),
                 n("fce9ecce", "Önerilen Videolar"),
-                n("dc954b88", "Try the full news experience"),
-                n("j66b95a2", "In-Depth News"),
+                n("dc954b88", "Tam haber deneyimini inceleyin"),
+                n("j66b95a2", "Ayrıntılı Haberler"),
                 n("b58d2bd2", "Alakalı Gönderiler"),
                 n("efe6ef9e", "Gönderiyi görüntüle"),
                 n("b3d183ce", "Yanıtları olan gönderi"),
@@ -3874,10 +3876,10 @@
                 n("j245c654", "Konuşmacılar"),
                 n("eda23a02", "Dinleyiciler"),
                 n("b90eb348", "Konuşmaya Davet Et"),
-                n("d9a63e82", "Konuşmacılardan çıkar"),
-                n("bd917b26", "Yardımcılığa davet et"),
-                n("d7357e7e", "Yardımcılardan kaldır");
-            n("bf307fc0", "Engelle ve Çıkar"),
+                n("d9a63e82", "Konuşmacılardan çıkar");
+            n("bd917b26", "Yardımcılığa davet et"),
+                n("d7357e7e", "Yardımcılardan kaldır"),
+                n("bf307fc0", "Engelle ve Çıkar"),
                 n("ccf2f24e", "Bildirim"),
                 n("i22835de", "Onayla"),
                 n("cb59a0fe", "Reddet"),
@@ -4151,7 +4153,6 @@
                 n("bcbf5b6e", "Paylaşım"),
                 n("j7b5c844", "Herkese açık olarak paylaştığın sohbetlerin sorumluluğu sana aittir. Grok ile yaptığın sohbetlerde kendinle ya da başkalarıyla ilgili hassas ve gizli bilgiler paylaşmaktan kaçın (Yardım Merkezimize bak)."),
                 n("c9f7c196", "Yardım merkezi"),
-                n("b63d3d36", "Ekle"),
                 n("c65f7308", "Şu anda sunucularda bir sorun yaşanıyor"),
                 n("f2a8655e", "Grok Advanced araçları şu anda kullanılamıyor."),
                 n("c26b9b9c", "Dosya"),
@@ -4166,8 +4167,8 @@
                 n("e9b6d404", "Grok hangi arama araçlarına erişmeli?"),
                 n("h15dce2e", "Gelişmiş Ayarlar"),
                 n("ff9dc268", "İstemi düzenle"),
-                n("acb2baa0", "Create Images"),
-                n("h30fd372", "Try Voice Mode"),
+                n("acb2baa0", "Resimler Oluştur"),
+                n("h30fd372", "Ses Modunu Dene"),
                 n("e9fcdd0c", "Grok'tan web'de agresif bir şekilde arama yapmasını iste"),
                 n("fc4e8aba", "Grok'tan adım adım düşünmeyi göstermesini iste"),
                 n("e4ae6abe", "Grok'tan resminizi dönüştürmesini iste"),
@@ -4336,7 +4337,7 @@
                 n("g01599b6", "1. Yanıt"),
                 n("e02694e0", "2. Yanıt"),
                 n("h6867fcc", "Bu yanıtı tercih ederim"),
-                n("d07488a6", "Get the Android app"),
+                n("d07488a6", "Android uygulamasını indir"),
                 n("d9cfe70c", "Gelişmiş Grok özelliklerine eriş"),
                 n("hf9afab0", "İnterneti ve X'i taramak, bilgileri analiz etmek ve hızlı, aracılı arama ile ayrıntılı, iyi gerekçelendirilmiş yanıtlar sunmak için DeepSearch'ü etkinleştir."),
                 n("ef3b3f04", "Akıl yürütme modelimizi kullanmak için Düşünme'yi etkinleştir. Matematik, bilim ve kodlama için en iyisidir. Ayrıca Grok'tan biraz daha fazla düşünülmesi gereken sorular için \"daha iyi düşünmesini\" isteyebilirsin. "),
@@ -4345,7 +4346,7 @@
                 n("e3584f8e", "Hedge fonları tarafından kullanılan en başarılı 10 opsiyon ticaret stratejisi nedir?"),
                 n("d91b7b8a", "1885'te üniversite kurmak ne kadara mal oluyordu?"),
                 n("ia5bef3e", "Bugün size nasıl yardımcı olabilirim?"),
-                n("ebea5880", "Recent Conversations"),
+                n("ebea5880", "Son Sohbetler"),
                 n("e13591c0", "Örnek Grok sohbeti"),
                 n("c27ca452", "Premium aboneleri artık en gelişmiş yapay zeka aracımız olan Grok'u X uygulamasında kullanabilir."),
                 n("b6abc25a", "Grok 2 ile tanış"),
@@ -4907,9 +4908,9 @@
                 n("jb6f9292", '"ai girişimi" ifadesini tam olarak içerir'),
                 n("j8ee77c4", '"ai girişimi"'),
                 n("d0480758", '"ai" veya "girişimi" ifadesini (ya da her ikisi) içerir'),
-                n("f0048fa2", "ai OR girişimi"),
-                n("da0df186", '"ai" ifadesini içerir fakat "girişimi" ifadesini içermez');
-            n("f2f463ea", "ai -girişimi"),
+                n("f0048fa2", "ai OR girişimi");
+            n("da0df186", '"ai" ifadesini içerir fakat "girişimi" ifadesini içermez'),
+                n("f2f463ea", "ai -girişimi"),
                 n("a10a357e", '"ai" ifadesini içerir ve en az 50 beğenisi vardır'),
                 n("ca8ed1e8", "ai min_faves:50"),
                 n("i945a3f2", '"ai" ifadesini ve içinde "grok" kelimesinin olduğu bir URL\'yi içerir'),
@@ -5873,9 +5874,9 @@
                 n("hb52cc4a", "Lütfen daha sonra tekrar dene."),
                 n("e50e1bb0", "Topluluklara hoş geldin"),
                 n("i6829daa", "Topluluklar, kişilerin X'te bağlantı kurup paylaşım yapabileceği yönetilen tartışma gruplarıdır."),
-                n("fc5c6914", "Ortak ilgi alanlarına sahip kişilerle tanış"),
-                n("aa1a9820", "Seninle aynı ilgi alanlarına odaklanan kişilerle bağlantı kurmak için Topluluklara katıl.");
-            n("edef4c82", "Direkt olarak Topluluğa yayınla"),
+                n("fc5c6914", "Ortak ilgi alanlarına sahip kişilerle tanış");
+            n("aa1a9820", "Seninle aynı ilgi alanlarına odaklanan kişilerle bağlantı kurmak için Topluluklara katıl."),
+                n("edef4c82", "Direkt olarak Topluluğa yayınla"),
                 n("a7640df6", "Gönderilerin Topluluk üyeleriyle ve takipçilerinle paylaşılır."),
                 n("h3bb8068", "İhtiyacın olduğunda destek al"),
                 n("a709f8f8", "Yöneticiler ve moderatörler, Toplulukların yönetilmesine ve sohbetlerin düzgün işlemesine yardımcı olur."),
@@ -6871,9 +6872,9 @@
                 n("g337328e", "Yanıtların için en yüksek görünürlükten yararlan."),
                 n("fa006202", "Arka planda video oynatma"),
                 n("jf389778", "Gezinirken veya diğer uygulamaları kullanırken izle"),
-                n("f2977d80", "Yer işareti klasörleri"),
-                n("j1d3d910", "Kayıtlı gönderilerini kolay erişim için düzenli tut");
-            n("f0f48668", "Premium destek"),
+                n("f2977d80", "Yer işareti klasörleri");
+            n("j1d3d910", "Kayıtlı gönderilerini kolay erişim için düzenli tut"),
+                n("f0f48668", "Premium destek"),
                 n("c3148608", "Yardıma ihtiyacın olduğunda daha hızlı destek al"),
                 n("b485ca6e", "Öne Çıkanlar sekmesi"),
                 n("d438955e", "Popüler gönderilerini sergile"),
@@ -7847,8 +7848,7 @@
                 n("c80160d3", "Reklam"),
                 n("ff0edac0", "Aboneliğini iptal etmek istediğinden emin misin?"),
                 n("h2ac0348", "Hayır, beni geri götür"),
-                n("dbf9667e", "Eminim"),
-                n("j7592572", "U dönüşü");
+                n("dbf9667e", "Eminim");
             function l(e, a) {
                 for (var i = 0; i < a.length; i++) {
                     var n = a[i];
@@ -7887,7 +7887,8 @@
                     t(e, a)
                 );
             }
-            n("ee778942", "Trafik ışıkları"),
+            n("j7592572", "U dönüşü"),
+                n("ee778942", "Trafik ışıkları"),
                 n("fdd57981", function (e) {
                     return "Sana " + e.totalAmount + " ABD doları değerinde tek seferlik, ücretsiz reklam kredisi sunmak istiyoruz.";
                 }),
@@ -8915,13 +8916,13 @@
                 }),
                 n("dc718e53", function (e) {
                     return "+diğer " + e.count + " kişi";
-                }),
-                n("d0e7b11b", function (e) {
-                    return e.date + ", " + e.time;
                 });
-            n("b4349cbc", function (e) {
-                return "" + e.relativeDay;
+            n("d0e7b11b", function (e) {
+                return e.date + ", " + e.time;
             }),
+                n("b4349cbc", function (e) {
+                    return "" + e.relativeDay;
+                }),
                 n("ebe41367", function (e) {
                     return "Saat " + e.time;
                 }),
@@ -13195,4 +13196,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/tr.9e36f03a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/tr.02ecc11a.js.map

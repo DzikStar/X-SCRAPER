@@ -33,12 +33,13 @@
                             (e.previousPlaybackState = e.playbackState), (e.playbackState = t), this._updatePlayerStateForDocking(e, t);
                         }),
                         (this._updatePlayerStateForDocking = (e, t) => {
-                            if (t === a.q.USER_PLAYING)
-                                if (this._updateDockedVideo && e.registerDockElement) {
+                            if (t === a.q.USER_PLAYING) {
+                                const t = e.previousPlaybackState === a.q.USER_PAUSED;
+                                if (this._updateDockedVideo && "function" == typeof e.registerDockElement && !t) {
                                     const t = e.registerDockElement();
                                     this._updateDockedVideo(t, e.id);
                                 } else this._updateIsUserPaused && this._updateIsUserPaused(!1);
-                            else t === a.q.USER_PAUSED ? this._updateIsUserPaused && this._updateIsUserPaused(!0) : t === a.q.AUTO_PLAYING && this._updateIsUserPaused && this._updateIsUserPaused(!1);
+                            } else t === a.q.USER_PAUSED ? this._updateIsUserPaused && this._updateIsUserPaused(!0) : t === a.q.AUTO_PLAYING && this._updateIsUserPaused && this._updateIsUserPaused(!1);
                             this._updateInlinePlayerState && this._updateInlinePlayerState(this._players);
                         }),
                         (this._updatePlaybackStates = () => {
@@ -877,4 +878,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.InlinePlayer-9f4db315.02de6afa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.InlinePlayer-9f4db315.96976f8a.js.map

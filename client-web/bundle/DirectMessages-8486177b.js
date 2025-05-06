@@ -3,7 +3,7 @@
     ["bundle.DirectMessages-8486177b", "bundle.UserAvatar-8486177b", "shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-29ff9b73"],
     {
         389071: (e, t, s) => {
-            s.d(t, { BU: () => D, Es: () => E, F0: () => se, F9: () => $, JE: () => U, JU: () => L, Ki: () => z, NV: () => N, OR: () => H, Pl: () => ae, Pt: () => P, SJ: () => ne, SL: () => Q, Tu: () => O, UM: () => k, Uo: () => oe, V$: () => w, X4: () => ee, YJ: () => W, bD: () => b, bv: () => x, en: () => te, f: () => S, hi: () => K, j1: () => q, jP: () => V, lo: () => re, ni: () => X, pZ: () => Z, t5: () => G, uF: () => F, uX: () => T, uz: () => j, v0: () => J, vf: () => B, zO: () => M });
+            s.d(t, { BU: () => D, Es: () => E, F0: () => te, F9: () => $, JE: () => U, JU: () => L, Ki: () => V, NV: () => w, OR: () => x, Pl: () => re, Pt: () => P, SJ: () => se, SL: () => Q, Tu: () => O, UM: () => k, Uo: () => ae, V$: () => N, X4: () => X, YJ: () => W, bD: () => b, bv: () => H, en: () => ee, f: () => S, hi: () => K, j1: () => q, lo: () => ne, ni: () => z, pZ: () => Z, t5: () => G, uF: () => F, uX: () => T, uz: () => j, v0: () => J, vf: () => B, zO: () => M });
             s(136728), s(571372), s(574858);
             var n = s(726426),
                 r = s.n(n),
@@ -510,16 +510,16 @@
             function P(e) {
                 return e[m.Yf].fetchHomeStatus;
             }
-            function x(e) {
+            function H(e) {
                 return e[m.Yf].conversationHistory.items;
             }
-            function H(e) {
+            function x(e) {
                 return e[m.Yf].pinnedConversations.items;
             }
-            function w(e) {
+            function N(e) {
                 return e[m.Yf].conversationHistory.cursor;
             }
-            function N(e) {
+            function w(e) {
                 return e[m.Yf].pinnedConversations.cursor;
             }
             function U(e) {
@@ -581,33 +581,30 @@
                 return { type: m.Jt, payload: e };
             }
             function V(e) {
-                return { type: m.wG, payload: e };
-            }
-            function z(e) {
                 return { type: m.$t, payload: e };
             }
-            function X(e) {
+            function z(e) {
                 return { type: m._i, payload: e };
             }
-            function ee(e) {
+            function X(e) {
                 return { type: m.z2, payload: e };
             }
-            function te(e) {
+            function ee(e) {
                 return e[m.Yf].grokInput.advancedSettings;
             }
-            function se(e) {
+            function te(e) {
                 return { type: m.j$, payload: e };
             }
-            function ne(e) {
+            function se(e) {
                 return { type: m.Yb, payload: e };
             }
-            function re(e, t) {
+            function ne(e, t) {
                 return { type: m.vi, payload: { conversationId: e, title: t } };
             }
-            function ae(e) {
+            function re(e) {
                 return { type: m.dw, payload: { mediaId: e } };
             }
-            function oe(e, t) {
+            function ae(e, t) {
                 return { type: m.Qh, payload: { conversationId: e, inputPrefill: t } };
             }
             d.Z.register(
@@ -701,7 +698,7 @@
                             case m.Yx.FAILURE:
                                 return { ...e, fetchHomeStatus: p.ZP.FAILED };
                             case m.Yx.SUCCESS:
-                                return { ...e, fetchHomeStatus: p.ZP.LOADED, prompts: t.payload?.grok_home?.prompts?.map((e) => ({ header: e.header, text: e.text, value: e.value, trendPromptIdStr: e.prompt_id ?? "", imageUrl: e.image_url ?? "" })) ?? [], version: t.payload?.grok_home?.grok_version ?? "", modelOptions: t.payload?.grok_home?.grok_model_options?.map((e) => ({ id: e.id, description: e.description, isEnabled: e.is_enabled, name: e.name })) ?? [], layout: t.payload?.grok_home?.layout ? { name: t.payload?.grok_home?.layout.name, sections: t.payload?.grok_home?.layout.sections.map((e) => ({ title: e.title, section_type: e.section_type, subtitle: e.subtitle, prompts: e.prompts ? e.prompts.map((e) => ({ display_label: e.display_label, icon_name: e.icon_name, image_url: e.image_url, prompt: e.prompt, prompt_id: e.prompt_id, display_body: e.display_body, action: e.action, filter_key: e.filter_key, tool_overrides: { imageGen: e.tool_overrides?.image_gen, webSearch: e.tool_overrides?.web_search, xSearch: e.tool_overrides?.x_search, xMediaSearch: e.tool_overrides?.x_media_search, xPostAnalyze: e.tool_overrides?.x_post_analyze, trendsSearch: e.tool_overrides?.trends_search } })) : [] })), mode_buttons: [...(t.payload?.grok_home?.layout?.mode_buttons || []).map((e) => ({ filter_key: e.filter_key, free_status: e.free_status, icon_name: e.icon_name, label: e.label, premium_status: e.premium_status, premium_plus_status: e.premium_plus_status, supported_models: (e.supported_models || []).map((e) => e) }))] } : null };
+                                return { ...e, fetchHomeStatus: p.ZP.LOADED, version: t.payload?.grok_home?.grok_version ?? "", modelOptions: t.payload?.grok_home?.grok_model_options?.map((e) => ({ id: e.id, description: e.description, isEnabled: e.is_enabled, name: e.name })) ?? [], layout: t.payload?.grok_home?.layout ? { name: t.payload?.grok_home?.layout.name, sections: t.payload?.grok_home?.layout.sections.map((e) => ({ title: e.title, section_type: e.section_type, subtitle: e.subtitle, prompts: e.prompts ? e.prompts.map((e) => ({ display_label: e.display_label, icon_name: e.icon_name, image_url: e.image_url, prompt: e.prompt, prompt_id: e.prompt_id, display_body: e.display_body, action: e.action, filter_key: e.filter_key, tool_overrides: { imageGen: e.tool_overrides?.image_gen, webSearch: e.tool_overrides?.web_search, xSearch: e.tool_overrides?.x_search, xMediaSearch: e.tool_overrides?.x_media_search, xPostAnalyze: e.tool_overrides?.x_post_analyze, trendsSearch: e.tool_overrides?.trends_search } })) : [] })), mode_buttons: [...(t.payload?.grok_home?.layout?.mode_buttons || []).map((e) => ({ filter_key: e.filter_key, free_status: e.free_status, icon_name: e.icon_name, label: e.label, premium_status: e.premium_status, premium_plus_status: e.premium_plus_status, supported_models: (e.supported_models || []).map((e) => e) }))] } : null };
                             case m.Lc.REQUEST:
                                 return { ...e, fetchConversationStatus: p.ZP.LOADING };
                             case m.Lc.FAILURE:
@@ -776,4 +773,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.DirectMessages-8486177b.3db717fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.DirectMessages-8486177b.2f97834a.js.map

@@ -1710,6 +1710,7 @@
                 i("d78131b9", function (a) {
                     return "Idagdag/alisin si @" + a.screenName + " sa Mga Listahan";
                 }),
+                i("b3b642fc", "Why this post?"),
                 i("fb4ee11c", "Bakit ang ad na ito?"),
                 i("ad50e7d9", function (a) {
                     return "Tingnan ang analytics ng " + a.entity;
@@ -1908,9 +1909,9 @@
                 i("b6510e68", "Kopyahin ang URL ng Article mo para maibahagi mo ito."),
                 i("e4a6e006", "Nagkaroon ng problema. Pakisubukang muli."),
                 i("eff483e0", "Pagkatapos mong mag-publish, kunin ang link para ibahagi ang Article."),
-                i("ca15dd4e", "Draft"),
-                i("bb40bf66", "Na-publish");
-            i("h107935c", "Huling na-save ngayon lang"),
+                i("ca15dd4e", "Draft");
+            i("bb40bf66", "Na-publish"),
+                i("h107935c", "Huling na-save ngayon lang"),
                 i("a753a870", "I-apply"),
                 i("afccc67e", "Kopyahin ang link sa Article"),
                 i("beb24e9e", "Nakopya na ang URL sa clipboard"),
@@ -2427,6 +2428,7 @@
                     return "I-report ang " + a.entity;
                 }),
                 i("e3fd237e", "Iulat ang ad"),
+                i("ebb7662a", "I-report ang post"),
                 i("d1e21610", "Mag-ulat ng Paglabag sa NetzDG"),
                 i("d7513755", function (a) {
                     return "I-search ang post ni @" + a.screenName + " sa Komunidad na ito.";
@@ -2959,15 +2961,15 @@
                 i("c6f58084", "Mga developer"),
                 i("d83f18d2", "Direktoryo"),
                 i("hc5aa17c", "Kunin ang X app"),
-                i("j0693948", "Kunin ang Grok app"),
-                i("af781666", "What do people think?"),
-                i("ad35153e", "beta");
-            i("fbf83158", "Babala: Hindi naproseso ang pagbabayad"),
+                i("j0693948", "Kunin ang Grok app");
+            i("af781666", "Ano ang palagay ng mga tao?"),
+                i("ad35153e", "beta"),
+                i("fbf83158", "Babala: Hindi naproseso ang pagbabayad"),
                 i("jadeb4da", "Paki-update agad ang paraan mo ng pagbabayad bago mawala ang mga benepisyo mo sa subscription."),
                 i("bce3726a", "I-update ang Billing"),
                 i("fce9ecce", "Mga Iminumungkahing Video"),
-                i("dc954b88", "Try the full news experience"),
-                i("j66b95a2", "In-Depth News"),
+                i("dc954b88", "Subukan ang buong news experience"),
+                i("j66b95a2", "Mga Detalyadong Balita"),
                 i("b58d2bd2", "Mga nauugnay na Post"),
                 i("efe6ef9e", "Tingnan ang post"),
                 i("b3d183ce", "Post na may mga reply"),
@@ -3875,10 +3877,10 @@
                 i("j245c654", "Mga Tagapagsalita"),
                 i("eda23a02", "Mga Tagapakinig"),
                 i("b90eb348", "Imbitahang Magsalita"),
-                i("d9a63e82", "Alisin sa Mga Tagapagsalita"),
-                i("bd917b26", "Imbitahang maging Co-host"),
-                i("d7357e7e", "Alisin sa mga Co-host");
-            i("bf307fc0", "I-block at Alisin"),
+                i("d9a63e82", "Alisin sa Mga Tagapagsalita");
+            i("bd917b26", "Imbitahang maging Co-host"),
+                i("d7357e7e", "Alisin sa mga Co-host"),
+                i("bf307fc0", "I-block at Alisin"),
                 i("ccf2f24e", "Ulat"),
                 i("i22835de", "Aprubahan"),
                 i("cb59a0fe", "Tanggihan"),
@@ -4152,7 +4154,6 @@
                 i("bcbf5b6e", "Pagbabahagi"),
                 i("j7b5c844", "Responsibilidad mo ang mga usapan na ibinabahagi mo sa publiko. Iwasan ang pagbabahagi ng sensitibo at kumpidensyal na impormasyon tungkol sa sarili mo o tungkol sa ibang tao sa mga usapan sa Grok."),
                 i("c9f7c196", "Help center"),
-                i("b63d3d36", "Mag-attach"),
                 i("c65f7308", "Nagkakaproblema ang mga server namin ngayon"),
                 i("f2a8655e", "Kasalukuyang hindi available ang Advanced tooling ng Grok."),
                 i("c26b9b9c", "File"),
@@ -4167,8 +4168,8 @@
                 i("e9b6d404", "Anong mga tool sa paghahanap ang dapat may access ang Grok?"),
                 i("h15dce2e", "Mga Advanced na Setting"),
                 i("ff9dc268", "I-edit ang prompt"),
-                i("acb2baa0", "Create Images"),
-                i("h30fd372", "Try Voice Mode"),
+                i("acb2baa0", "Gumawa ng mga Larawan"),
+                i("h30fd372", "Subukan ang Voice Mode"),
                 i("e9fcdd0c", "Hilingin sa Grok na agresibong maghanap sa web"),
                 i("fc4e8aba", "Hilingin sa Grok na mangatuwiran nang step-by-step"),
                 i("e4ae6abe", "Hilingin sa Grok na i-transform ang larawan mo"),
@@ -4337,7 +4338,7 @@
                 i("g01599b6", "Tugon 1"),
                 i("e02694e0", "Tugon 2"),
                 i("h6867fcc", "Gusto ko ang tugon na ito"),
-                i("d07488a6", "Get the Android app"),
+                i("d07488a6", "Kunin ang Android app"),
                 i("d9cfe70c", "I-access ang mga advanced na feature ng Grok"),
                 i("hf9afab0", "I-enable ang DeepSearch para ma-scan ang internet at X, mag-analyze ng impormasyon, at magbigay sa detalyado at malinaw na sagot gamit ang mabilis at makapangyarihang paghahanap."),
                 i("ef3b3f04", 'I-enable ang Mag-isip para magamit ang reasoning model namin. Pinakamahusay ito sa math, science, at coding. Puwede mo ring utusan si Grok na "Mag-isip pa" tungkol sa anumang tanong na nangangailangan pa ng mas malalim na pag-iisip. '),
@@ -4346,7 +4347,7 @@
                 i("e3584f8e", "Ano ang 10 pinaka-successful na options trading strategy na ginagamit ng mga hedge fund"),
                 i("d91b7b8a", "Magkano kaya ang magagastos sa pagtatayo ng university noong 1885?"),
                 i("ia5bef3e", "Paano kita matutulungan ngayon?"),
-                i("ebea5880", "Recent Conversations"),
+                i("ebea5880", "Mga Kamakailang Usapan"),
                 i("e13591c0", "Halimbawa usapan sa Grok"),
                 i("c27ca452", "Puwede na ngayong gamitin ng mga subscriber ng Premium ang aming pinaka-advanced na AI sa loob ng X app, ang Grok."),
                 i("b6abc25a", "Ipinapakilala ang Grok 2"),
@@ -4908,9 +4909,9 @@
                 i("jb6f9292", 'naglalaman ng exact phrase na "ai startup"'),
                 i("j8ee77c4", '"ai startup"'),
                 i("d0480758", 'naglalaman ng "ai" o "startup" (o pareho)'),
-                i("f0048fa2", "ai O startup"),
-                i("da0df186", 'naglalaman ng "ai", pero hindi "startup"');
-            i("f2f463ea", "ai -startup"),
+                i("f0048fa2", "ai O startup");
+            i("da0df186", 'naglalaman ng "ai", pero hindi "startup"'),
+                i("f2f463ea", "ai -startup"),
                 i("a10a357e", 'naglalaman ng "ai" at may hindi bababa sa 50 like'),
                 i("ca8ed1e8", "ai min_faves:50"),
                 i("i945a3f2", 'naglalaman ng "ai" at URL na may salitang "grok" dito'),
@@ -5874,9 +5875,9 @@
                 i("hb52cc4a", "Subukan ulit mamaya."),
                 i("e50e1bb0", "Welcome sa Mga Komunidad"),
                 i("i6829daa", "Mga mino-moderate na grupo ng talakayan ang Mga Komunidad kung saan puwedeng kumonekta at magbahagi ang mga tao sa X."),
-                i("fc5c6914", "Kilalanin ang ibang tao na kapareho mo ng mga interes"),
-                i("aa1a9820", "Sumali sa Mga Komunidad para kumonekta sa mga tao na may mga interes na tulad ng sa iyo.");
-            i("edef4c82", "Direktang mag-post sa isang Komunidad"),
+                i("fc5c6914", "Kilalanin ang ibang tao na kapareho mo ng mga interes");
+            i("aa1a9820", "Sumali sa Mga Komunidad para kumonekta sa mga tao na may mga interes na tulad ng sa iyo."),
+                i("edef4c82", "Direktang mag-post sa isang Komunidad"),
                 i("a7640df6", "Ibinahagi ang mga post mo sa mga member ng Komunidad at sa mga follower mo."),
                 i("h3bb8068", "Mag-back up kung kailangan mo"),
                 i("a709f8f8", "Tumutulong ang mga admin at moderator na pamahalaan ang Mga Komunidad at panatilihing nakatuon ang mga usapan."),
@@ -6872,9 +6873,9 @@
                 i("g337328e", "Makakuha ng pinakamataas na visibility para sa mga reply mo."),
                 i("fa006202", "Pag-playback ng video sa background"),
                 i("jf389778", "Manood habang nagba-browse o gamitin ang ibang app"),
-                i("f2977d80", "Mga folder ng bookmark"),
-                i("j1d3d910", "Panatilihing maayos ang mga naka-save na post mo para sa madaling pag-access");
-            i("f0f48668", "Premium na suporta"),
+                i("f2977d80", "Mga folder ng bookmark");
+            i("j1d3d910", "Panatilihing maayos ang mga naka-save na post mo para sa madaling pag-access"),
+                i("f0f48668", "Premium na suporta"),
                 i("c3148608", "Makakuha nang mas mabilis na tulong kapag kailangan mo"),
                 i("b485ca6e", "Mga Highlight tab"),
                 i("d438955e", "I-showcase ang mga top post mo"),
@@ -7848,8 +7849,7 @@
                 i("c80160d3", "Advertising"),
                 i("ff0edac0", "Sigurado ka bang gusto mong kanselahin ang subscription mo?"),
                 i("h2ac0348", "Hindi, ibalik ako"),
-                i("dbf9667e", "Sigurado ako"),
-                i("j7592572", "Mag-U turn");
+                i("dbf9667e", "Sigurado ako");
             function t(a, n) {
                 for (var g = 0; g < n.length; g++) {
                     var i = n[g];
@@ -7888,7 +7888,8 @@
                     o(a, n)
                 );
             }
-            i("ee778942", "Mga ilaw ng trapiko"),
+            i("j7592572", "Mag-U turn"),
+                i("ee778942", "Mga ilaw ng trapiko"),
                 i("fdd57981", function (a) {
                     return "Gusto ka naming alukin ng libreng one-time " + a.totalAmount + " na USD ad credit.";
                 }),
@@ -8916,13 +8917,13 @@
                 }),
                 i("dc718e53", function (a) {
                     return "+" + a.count + " pang iba";
-                }),
-                i("d0e7b11b", function (a) {
-                    return a.date + " nang " + a.time;
                 });
-            i("b4349cbc", function (a) {
-                return "" + a.relativeDay;
+            i("d0e7b11b", function (a) {
+                return a.date + " nang " + a.time;
             }),
+                i("b4349cbc", function (a) {
+                    return "" + a.relativeDay;
+                }),
                 i("ebe41367", function (a) {
                     return "Oras " + a.time;
                 }),
@@ -13199,4 +13200,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fil.043b8b3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fil.221c019a.js.map

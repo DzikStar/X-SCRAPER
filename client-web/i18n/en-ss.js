@@ -1710,6 +1710,7 @@
                 a("d78131b9", function (e) {
                     return "[[229376]] Add/remove @" + e.screenName + " from Lists";
                 }),
+                a("b3b642fc", "[[294702]] Why this post?"),
                 a("fb4ee11c", "[[229082]] Why this ad?"),
                 a("ad50e7d9", function (e) {
                     return "[[282292]] View " + e.entity + " analytics";
@@ -1908,9 +1909,9 @@
                 a("b6510e68", "[[284899]] Copy your Article’s URL so you can share it."),
                 a("e4a6e006", "[[243272]] Something went wrong. Please try again."),
                 a("eff483e0", "[[284886]] After you publish, get a link to share the Article."),
-                a("ca15dd4e", "[[209399]] Draft"),
-                a("bb40bf66", "[[224076]] Published");
-            a("h107935c", "[[284908]] Last saved just now"),
+                a("ca15dd4e", "[[209399]] Draft");
+            a("bb40bf66", "[[224076]] Published"),
+                a("h107935c", "[[284908]] Last saved just now"),
                 a("a753a870", "[[188695]] Apply"),
                 a("afccc67e", "[[284898]] Copy link to Article"),
                 a("beb24e9e", "[[284938]] URL copied to the clipboard"),
@@ -2427,6 +2428,7 @@
                     return "[[282524]] Report " + e.entity;
                 }),
                 a("e3fd237e", "[[208519]] Report ad"),
+                a("ebb7662a", "[[280534]] Report post"),
                 a("d1e21610", "[[217828]] Report NetzDG Violation"),
                 a("d7513755", function (e) {
                     return "[[288764]] Search @" + e.screenName + "’s posts in this Community";
@@ -2959,10 +2961,10 @@
                 a("c6f58084", "[[180900]] Developers"),
                 a("d83f18d2", "[[180901]] Directory"),
                 a("hc5aa17c", "[[294380]] Get the X app"),
-                a("j0693948", "[[294379]] Get the Grok app"),
-                a("af781666", "[[294695]] What do people think?"),
-                a("ad35153e", "[[294696]] beta");
-            a("fbf83158", "[[293517]] Warning: Payment failed"),
+                a("j0693948", "[[294379]] Get the Grok app");
+            a("af781666", "[[294695]] What do people think?"),
+                a("ad35153e", "[[294696]] beta"),
+                a("fbf83158", "[[293517]] Warning: Payment failed"),
                 a("jadeb4da", "[[294150]] Please urgently update your payment method before you lose your subscription benefits."),
                 a("bce3726a", "[[293518]] Update Billing"),
                 a("fce9ecce", "[[291414]] Suggested Videos"),
@@ -3875,10 +3877,10 @@
                 a("j245c654", "[[237272]] Speakers"),
                 a("eda23a02", "[[281004]] Listeners"),
                 a("b90eb348", "[[281663]] Invite to Speak"),
-                a("d9a63e82", "[[281204]] Remove from Speakers"),
-                a("bd917b26", "[[285861]] Invite to Co-host"),
-                a("d7357e7e", "[[285863]] Remove from Co-hosts");
-            a("bf307fc0", "[[281203]] Block and Remove"),
+                a("d9a63e82", "[[281204]] Remove from Speakers");
+            a("bd917b26", "[[285861]] Invite to Co-host"),
+                a("d7357e7e", "[[285863]] Remove from Co-hosts"),
+                a("bf307fc0", "[[281203]] Block and Remove"),
                 a("ccf2f24e", "[[143027]] Report"),
                 a("i22835de", "[[242576]] Approve"),
                 a("cb59a0fe", "[[242588]] Deny"),
@@ -4152,7 +4154,6 @@
                 a("bcbf5b6e", "[[221093]] Sharing"),
                 a("j7b5c844", "[[291532]] You are responsible for the conversations you share publicly. Avoid sharing sensitive and confidential information about yourself or others in your conversations with Grok (see our Help Center)."),
                 a("c9f7c196", "[[246442]] Help center"),
-                a("b63d3d36", "[[292497]] Attach"),
                 a("c65f7308", "[[292909]] Servers are cooking right now"),
                 a("f2a8655e", "[[292904]] Grok Advanced tooling is currently unavailable."),
                 a("c26b9b9c", "[[292956]] File"),
@@ -4908,9 +4909,9 @@
                 a("jb6f9292", '[[289740]] contains the exact phrase "ai startup"'),
                 a("j8ee77c4", '[[289700]] "ai startup"'),
                 a("d0480758", '[[289748]] contains either "ai" or "startup" (or both)'),
-                a("f0048fa2", "[[289746]] ai OR startup"),
-                a("da0df186", '[[289745]] contains "ai", but not "startup"');
-            a("f2f463ea", "[[289750]] ai -startup"),
+                a("f0048fa2", "[[289746]] ai OR startup");
+            a("da0df186", '[[289745]] contains "ai", but not "startup"'),
+                a("f2f463ea", "[[289750]] ai -startup"),
                 a("a10a357e", '[[289742]] contains "ai" and has at least 50 likes'),
                 a("ca8ed1e8", "[[289743]] ai min_faves:50"),
                 a("i945a3f2", '[[289749]] contains "ai" and a URL with the word "grok" in it'),
@@ -5874,9 +5875,9 @@
                 a("hb52cc4a", "[[233832]] Please try again later."),
                 a("e50e1bb0", "[[282302]] Welcome to Communities"),
                 a("i6829daa", "[[282172]] Communities are moderated discussion groups where people on X can connect and share."),
-                a("fc5c6914", "[[238877]] Meet others with your interests"),
-                a("aa1a9820", "[[291941]] Join Communities to connect with people who share your interests.");
-            a("edef4c82", "[[282179]] Post directly to a Community"),
+                a("fc5c6914", "[[238877]] Meet others with your interests");
+            a("aa1a9820", "[[291941]] Join Communities to connect with people who share your interests."),
+                a("edef4c82", "[[282179]] Post directly to a Community"),
                 a("a7640df6", "[[291947]] Your posts are shared with Community members and your followers."),
                 a("h3bb8068", "[[238885]] Get backup when you need it"),
                 a("a709f8f8", "[[238880]] Admins and moderators help manage Communities and keep conversations on track."),
@@ -6872,9 +6873,9 @@
                 a("g337328e", "[[293229]] Get the highest visibility for your replies."),
                 a("fa006202", "[[290021]] Background video playback"),
                 a("jf389778", "[[293153]] Watch while browsing or using other apps"),
-                a("f2977d80", "[[270600]] Bookmark folders"),
-                a("j1d3d910", "[[293232]] Keep your saved posts organized for easy access");
-            a("f0f48668", "[[275532]] Premium support"),
+                a("f2977d80", "[[270600]] Bookmark folders");
+            a("j1d3d910", "[[293232]] Keep your saved posts organized for easy access"),
+                a("f0f48668", "[[275532]] Premium support"),
                 a("c3148608", "[[293228]] Get faster assistance when you need help"),
                 a("b485ca6e", "[[290025]] Highlights tab"),
                 a("d438955e", "[[293238]] Showcase your top posts"),
@@ -7848,8 +7849,7 @@
                 a("c80160d3", "Advertising"),
                 a("ff0edac0", "[[275003]] Are you sure you want to cancel your subscription?"),
                 a("h2ac0348", "[[275009]] No, take me back"),
-                a("dbf9667e", "[[275008]] I’m sure"),
-                a("j7592572", "[[287997]] U-turn");
+                a("dbf9667e", "[[275008]] I’m sure");
             function i(e, t) {
                 for (var o = 0; o < t.length; o++) {
                     var a = t[o];
@@ -7888,7 +7888,8 @@
                     r(e, t)
                 );
             }
-            a("ee778942", "[[287999]] Traffic lights"),
+            a("j7592572", "[[287997]] U-turn"),
+                a("ee778942", "[[287999]] Traffic lights"),
                 a("fdd57981", function (e) {
                     return "[[287998]] We’d like to offer you a free one-time " + e.totalAmount + " USD ad credit.";
                 }),
@@ -8916,13 +8917,13 @@
                 }),
                 a("dc718e53", function (e) {
                     return "[[231311]] +" + e.count + " other" + n(e.count, "", "s");
-                }),
-                a("d0e7b11b", function (e) {
-                    return "[[231671]] " + e.date + " at " + e.time;
                 });
-            a("b4349cbc", function (e) {
-                return "" + e.relativeDay;
+            a("d0e7b11b", function (e) {
+                return "[[231671]] " + e.date + " at " + e.time;
             }),
+                a("b4349cbc", function (e) {
+                    return "" + e.relativeDay;
+                }),
                 a("ebe41367", function (e) {
                     return "[[226070]] Time " + e.time;
                 }),
@@ -13187,4 +13188,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-ss.06006f9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-ss.af488eaa.js.map

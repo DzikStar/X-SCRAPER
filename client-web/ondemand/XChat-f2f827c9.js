@@ -1,392 +1,392 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["ondemand.XChat-f2f827c9"],
     {
-        625470: (t, s, i) => {
-            !(function (t, s, i) {
+        625470: (t, a, i) => {
+            !(function (t, a, i) {
                 "use strict";
                 var n,
-                    a,
                     e,
-                    r,
-                    _ = s.$_$.ke,
-                    h = s.$_$.id,
-                    c = s.$_$.l6,
-                    u = s.$_$.mi,
-                    o = s.$_$.hd,
-                    f = s.$_$.g,
-                    $ = s.$_$.yi,
-                    w = s.$_$.y2,
-                    l = s.$_$.pc,
-                    v = s.$_$.pf,
-                    q = i.$_$.g,
-                    d = s.$_$.si,
-                    p = s.$_$.ne,
-                    b = s.$_$.le,
-                    x = s.$_$.tf,
-                    E = s.$_$.me,
-                    g = (s.$_$.t5, s.$_$.xc),
-                    N = i.$_$.c,
-                    z = i.$_$.f,
-                    T = s.$_$.ld,
-                    y = s.$_$.nd,
-                    I = i.$_$.h,
-                    O = i.$_$.a;
-                function m() {}
-                function R(t, s, i) {
-                    u.call(this, t, s), (this.paq_1 = i);
+                    s,
+                    _,
+                    h = a.$_$.oe,
+                    r = a.$_$.md,
+                    u = a.$_$.n6,
+                    o = a.$_$.si,
+                    f = a.$_$.ld,
+                    $ = a.$_$.g,
+                    c = a.$_$.ej,
+                    z = a.$_$.y2,
+                    w = a.$_$.tc,
+                    y = a.$_$.uf,
+                    v = i.$_$.g,
+                    l = a.$_$.yi,
+                    x = a.$_$.re,
+                    d = a.$_$.pe,
+                    p = a.$_$.yf,
+                    q = a.$_$.qe,
+                    m = (a.$_$.u5, a.$_$.bd),
+                    b = i.$_$.c,
+                    E = i.$_$.f,
+                    g = a.$_$.pd,
+                    N = a.$_$.rd,
+                    T = i.$_$.h,
+                    I = i.$_$.a;
+                function O() {}
+                function R(t, a, i) {
+                    o.call(this, t, a), (this.max_1 = i);
                 }
-                function j() {}
-                function A(t, s) {
-                    w(s, this), l(this, A), (this.qaq_1 = t);
+                function A() {}
+                function M(t, a) {
+                    z(a, this), w(this, M), (this.nax_1 = t);
                 }
-                function M(t) {
-                    this.zaq_1 = t;
+                function S(t) {
+                    this.wax_1 = t;
                 }
-                function S(t, s, i) {
-                    for (var n = i, a = 0; n > 0; ) {
-                        var e = t.zaq_1.vu(s, a, n);
-                        if (-1 === e) throw new q("Expected " + i + " bytes; got " + a);
-                        (n = (n - e) | 0), (a = (a + e) | 0);
+                function C(t, a, i) {
+                    for (var n = i, e = 0; n > 0; ) {
+                        var s = t.wax_1.yu(a, e, n);
+                        if (-1 === s) throw new v("Expected " + i + " bytes; got " + e);
+                        (n = (n - s) | 0), (e = (e + s) | 0);
                     }
                 }
-                function k() {
-                    (e = this), (this.war_1 = -65536), (this.xar_1 = -2147418112), (this.yar_1 = new G(""));
+                function U() {
+                    (s = this), (this.uay_1 = -65536), (this.vay_1 = -2147418112), (this.way_1 = new G(""));
                 }
-                function C() {
-                    return null == e && new k(), e;
+                function P() {
+                    return null == s && new U(), s;
                 }
-                function U(t, s, i) {
-                    C(), (s = s === f ? new d(-1, -1) : s), (i = i === f ? new d(-1, -1) : i), M.call(this, t), (this.aas_1 = s), (this.bas_1 = i), (this.cas_1 = new Int8Array(8)), (this.das_1 = !1), (this.eas_1 = !1);
+                function k(t, a, i) {
+                    P(), (a = a === $ ? new l(-1, -1) : a), (i = i === $ ? new l(-1, -1) : i), S.call(this, t), (this.yay_1 = a), (this.zay_1 = i), (this.aaz_1 = new Int8Array(8)), (this.baz_1 = !1), (this.caz_1 = !1);
                 }
-                function P(t, s, i) {
-                    (this.has_1 = t), (this.ias_1 = s), (this.jas_1 = i);
+                function D(t, a, i) {
+                    (this.faz_1 = t), (this.gaz_1 = a), (this.haz_1 = i);
                 }
-                function D(t, s) {
-                    (this.kas_1 = t), (this.las_1 = s);
+                function L(t, a) {
+                    (this.iaz_1 = t), (this.jaz_1 = a);
                 }
-                function L(t, s, i) {
-                    (this.mas_1 = t), (this.nas_1 = s), (this.oas_1 = i);
+                function j(t, a, i) {
+                    (this.kaz_1 = t), (this.laz_1 = a), (this.maz_1 = i);
                 }
-                function B(t, s) {
-                    (this.pas_1 = t), (this.qas_1 = s);
+                function B(t, a) {
+                    (this.naz_1 = t), (this.oaz_1 = a);
                 }
                 function G(t) {
-                    this.ras_1 = t;
+                    this.paz_1 = t;
                 }
                 function K(t) {
-                    (t = t === f ? new z() : t), (this.sas_1 = t);
+                    (t = t === $ ? new E() : t), (this.qaz_1 = t);
                 }
                 function V() {}
                 function W() {}
                 function F(t) {
-                    O(t, this), l(this, F);
+                    I(t, this), w(this, F);
                 }
-                h(m),
-                    o(R, "Kind", f, u),
-                    h(j),
-                    o(A, "ThriftException", f, $),
-                    o(M, "BaseProtocol"),
-                    h(k),
-                    o(U, "BinaryProtocol", f, M),
-                    o(P, "FieldMetadata"),
-                    o(D, "ListMetadata"),
-                    o(L, "MapMetadata"),
-                    o(B, "SetMetadata"),
-                    o(G, "StructMetadata"),
-                    T(V, "Transport"),
-                    o(K, "BufferTransport", K, f, [V]),
-                    y(W, "ProtocolUtil"),
-                    o(F, "ProtocolException", f, I),
-                    (_(A).raq = function (t) {
-                        t.saq("TApplicationException");
-                        var s = this.message;
-                        null == s || (t.taq("message", 1, 11), t.uaq(s), t.vaq()), t.taq("type", 2, 8), t.waq(this.qaq_1.paq_1), t.vaq(), t.xaq(), t.yaq();
+                r(O),
+                    f(R, "Kind", $, o),
+                    r(A),
+                    f(M, "ThriftException", $, c),
+                    f(S, "BaseProtocol"),
+                    r(U),
+                    f(k, "BinaryProtocol", $, S),
+                    f(D, "FieldMetadata"),
+                    f(L, "ListMetadata"),
+                    f(j, "MapMetadata"),
+                    f(B, "SetMetadata"),
+                    f(G, "StructMetadata"),
+                    g(V, "Transport"),
+                    f(K, "BufferTransport", K, $, [V]),
+                    N(W, "ProtocolUtil"),
+                    f(F, "ProtocolException", $, T),
+                    (h(M).oax = function (t) {
+                        t.pax("TApplicationException");
+                        var a = this.message;
+                        null == a || (t.qax("message", 1, 11), t.rax(a), t.sax()), t.qax("type", 2, 8), t.tax(this.nax_1.max_1), t.sax(), t.uax(), t.vax();
                     }),
-                    (_(M).x4 = function () {
-                        this.zaq_1.x4();
+                    (h(S).x4 = function () {
+                        this.wax_1.x4();
                     }),
-                    (_(U).saq = function (t) {}),
-                    (_(U).yaq = function () {}),
-                    (_(U).taq = function (t, s, i) {
-                        this.b3b(i), this.fas(p(s));
+                    (h(k).pax = function (t) {}),
+                    (h(k).vax = function () {}),
+                    (h(k).qax = function (t, a, i) {
+                        this.e3b(i), this.daz(x(a));
                     }),
-                    (_(U).vaq = function () {}),
-                    (_(U).xaq = function () {
-                        this.b3b(0);
+                    (h(k).sax = function () {}),
+                    (h(k).uax = function () {
+                        this.e3b(0);
                     }),
-                    (_(U).aar = function (t, s) {
-                        this.b3b(t), this.waq(s);
+                    (h(k).xax = function (t, a) {
+                        this.e3b(t), this.tax(a);
                     }),
-                    (_(U).bar = function () {}),
-                    (_(U).car = function (t) {
-                        this.b3b(t ? 1 : 0);
+                    (h(k).yax = function () {}),
+                    (h(k).zax = function (t) {
+                        this.e3b(t ? 1 : 0);
                     }),
-                    (_(U).b3b = function (t) {
-                        (this.cas_1[0] = t), this.zaq_1.x3a(this.cas_1, 0, 1);
+                    (h(k).e3b = function (t) {
+                        (this.aaz_1[0] = t), this.wax_1.a3b(this.aaz_1, 0, 1);
                     }),
-                    (_(U).fas = function (t) {
-                        (this.cas_1[0] = b((t >> 8) & 255)), (this.cas_1[1] = b(255 & t)), this.zaq_1.x3a(this.cas_1, 0, 2);
+                    (h(k).daz = function (t) {
+                        (this.aaz_1[0] = d((t >> 8) & 255)), (this.aaz_1[1] = d(255 & t)), this.wax_1.a3b(this.aaz_1, 0, 2);
                     }),
-                    (_(U).waq = function (t) {
-                        (this.cas_1[0] = b((t >> 24) & 255)), (this.cas_1[1] = b((t >> 16) & 255)), (this.cas_1[2] = b((t >> 8) & 255)), (this.cas_1[3] = b(255 & t)), this.zaq_1.x3a(this.cas_1, 0, 4);
+                    (h(k).tax = function (t) {
+                        (this.aaz_1[0] = d((t >> 24) & 255)), (this.aaz_1[1] = d((t >> 16) & 255)), (this.aaz_1[2] = d((t >> 8) & 255)), (this.aaz_1[3] = d(255 & t)), this.wax_1.a3b(this.aaz_1, 0, 4);
                     }),
-                    (_(U).dar = function (t) {
-                        (this.cas_1[0] = t.q3(56).s3(new d(255, 0)).v3()), (this.cas_1[1] = t.q3(48).s3(new d(255, 0)).v3()), (this.cas_1[2] = t.q3(40).s3(new d(255, 0)).v3()), (this.cas_1[3] = t.q3(32).s3(new d(255, 0)).v3()), (this.cas_1[4] = t.q3(24).s3(new d(255, 0)).v3()), (this.cas_1[5] = t.q3(16).s3(new d(255, 0)).v3()), (this.cas_1[6] = t.q3(8).s3(new d(255, 0)).v3()), (this.cas_1[7] = t.s3(new d(255, 0)).v3()), this.zaq_1.x3a(this.cas_1, 0, 8);
+                    (h(k).aay = function (t) {
+                        (this.aaz_1[0] = t.q3(56).s3(new l(255, 0)).v3()), (this.aaz_1[1] = t.q3(48).s3(new l(255, 0)).v3()), (this.aaz_1[2] = t.q3(40).s3(new l(255, 0)).v3()), (this.aaz_1[3] = t.q3(32).s3(new l(255, 0)).v3()), (this.aaz_1[4] = t.q3(24).s3(new l(255, 0)).v3()), (this.aaz_1[5] = t.q3(16).s3(new l(255, 0)).v3()), (this.aaz_1[6] = t.q3(8).s3(new l(255, 0)).v3()), (this.aaz_1[7] = t.s3(new l(255, 0)).v3()), this.wax_1.a3b(this.aaz_1, 0, 8);
                     }),
-                    (_(U).uaq = function (t) {
-                        var s = x(t);
-                        this.waq(s.length), this.zaq_1.gas(s);
+                    (h(k).rax = function (t) {
+                        var a = p(t);
+                        this.tax(a.length), this.wax_1.eaz(a);
                     }),
-                    (_(U).ear = function (t) {
-                        this.waq(t.s()), this.zaq_1.gas(t.rt());
+                    (h(k).bay = function (t) {
+                        this.tax(t.s()), this.wax_1.eaz(t.ut());
                     }),
-                    (_(U).far = function () {
-                        return C().yar_1;
+                    (h(k).cay = function () {
+                        return P().way_1;
                     }),
-                    (_(U).gar = function () {}),
-                    (_(U).har = function () {
-                        var t = this.ju();
-                        return new P("", t, 0 === t ? 0 : this.qar());
+                    (h(k).eay = function () {}),
+                    (h(k).fay = function () {
+                        var t = this.mu();
+                        return new D("", t, 0 === t ? 0 : this.oay());
                     }),
-                    (_(U).iar = function () {}),
-                    (_(U).jar = function () {
-                        var t = this.ju(),
-                            s = this.ju(),
-                            i = this.rar();
-                        if (!this.bas_1.equals(new d(-1, -1)) && E(i).d1(this.bas_1) > 0) throw new F("Container size limit exceeded");
-                        return new L(t, s, i);
+                    (h(k).gay = function () {}),
+                    (h(k).hay = function () {
+                        var t = this.mu(),
+                            a = this.mu(),
+                            i = this.pay();
+                        if (!this.zay_1.equals(new l(-1, -1)) && q(i).d1(this.zay_1) > 0) throw new F("Container size limit exceeded");
+                        return new j(t, a, i);
                     }),
-                    (_(U).kar = function () {}),
-                    (_(U).lar = function () {
-                        var t = this.ju(),
-                            s = this.rar();
-                        if (!this.bas_1.equals(new d(-1, -1)) && E(s).d1(this.bas_1) > 0) throw new F("Container size limit exceeded");
-                        return new D(t, s);
+                    (h(k).iay = function () {}),
+                    (h(k).jay = function () {
+                        var t = this.mu(),
+                            a = this.pay();
+                        if (!this.zay_1.equals(new l(-1, -1)) && q(a).d1(this.zay_1) > 0) throw new F("Container size limit exceeded");
+                        return new L(t, a);
                     }),
-                    (_(U).mar = function () {}),
-                    (_(U).nar = function () {
-                        var t = this.ju(),
-                            s = this.rar();
-                        if (!this.bas_1.equals(new d(-1, -1)) && E(s).d1(this.bas_1) > 0) throw new F("Container size limit exceeded");
-                        return new B(t, s);
+                    (h(k).kay = function () {}),
+                    (h(k).lay = function () {
+                        var t = this.mu(),
+                            a = this.pay();
+                        if (!this.zay_1.equals(new l(-1, -1)) && q(a).d1(this.zay_1) > 0) throw new F("Container size limit exceeded");
+                        return new B(t, a);
                     }),
-                    (_(U).oar = function () {}),
-                    (_(U).par = function () {
-                        return 1 === this.ju();
+                    (h(k).may = function () {}),
+                    (h(k).nay = function () {
+                        return 1 === this.mu();
                     }),
-                    (_(U).ju = function () {
-                        return S(this, this.cas_1, 1), this.cas_1[0];
+                    (h(k).mu = function () {
+                        return C(this, this.aaz_1, 1), this.aaz_1[0];
                     }),
-                    (_(U).qar = function () {
-                        return S(this, this.cas_1, 2), p(((255 & this.cas_1[0]) << 8) | (255 & this.cas_1[1]));
+                    (h(k).oay = function () {
+                        return C(this, this.aaz_1, 2), x(((255 & this.aaz_1[0]) << 8) | (255 & this.aaz_1[1]));
                     }),
-                    (_(U).rar = function () {
-                        return S(this, this.cas_1, 4), ((255 & this.cas_1[0]) << 24) | ((255 & this.cas_1[1]) << 16) | ((255 & this.cas_1[2]) << 8) | (255 & this.cas_1[3]);
+                    (h(k).pay = function () {
+                        return C(this, this.aaz_1, 4), ((255 & this.aaz_1[0]) << 24) | ((255 & this.aaz_1[1]) << 16) | ((255 & this.aaz_1[2]) << 8) | (255 & this.aaz_1[3]);
                     }),
-                    (_(U).sar = function () {
+                    (h(k).qay = function () {
                         return (
-                            S(this, this.cas_1, 8),
-                            E(this.cas_1[0])
-                                .s3(new d(255, 0))
+                            C(this, this.aaz_1, 8),
+                            q(this.aaz_1[0])
+                                .s3(new l(255, 0))
                                 .p3(56)
-                                .t3(E(this.cas_1[1]).s3(new d(255, 0)).p3(48))
-                                .t3(E(this.cas_1[2]).s3(new d(255, 0)).p3(40))
-                                .t3(E(this.cas_1[3]).s3(new d(255, 0)).p3(32))
-                                .t3(E(this.cas_1[4]).s3(new d(255, 0)).p3(24))
-                                .t3(E(this.cas_1[5]).s3(new d(255, 0)).p3(16))
-                                .t3(E(this.cas_1[6]).s3(new d(255, 0)).p3(8))
-                                .t3(E(this.cas_1[7]).s3(new d(255, 0)))
+                                .t3(q(this.aaz_1[1]).s3(new l(255, 0)).p3(48))
+                                .t3(q(this.aaz_1[2]).s3(new l(255, 0)).p3(40))
+                                .t3(q(this.aaz_1[3]).s3(new l(255, 0)).p3(32))
+                                .t3(q(this.aaz_1[4]).s3(new l(255, 0)).p3(24))
+                                .t3(q(this.aaz_1[5]).s3(new l(255, 0)).p3(16))
+                                .t3(q(this.aaz_1[6]).s3(new l(255, 0)).p3(8))
+                                .t3(q(this.aaz_1[7]).s3(new l(255, 0)))
                         );
                     }),
-                    (_(U).tar = function () {
-                        var t = this.sar();
-                        return g(t);
+                    (h(k).ray = function () {
+                        var t = this.qay();
+                        return m(t);
                     }),
-                    (_(U).uar = function () {
+                    (h(k).say = function () {
                         var t,
-                            s,
+                            a,
                             i,
-                            n = this.rar();
-                        if (!this.aas_1.equals(new d(-1, -1)) && E(n).d1(this.aas_1) > 0) throw new F("String size limit exceeded");
-                        return (t = this), (s = n), (i = new Int8Array(s)), S(t, i, s), v(i);
+                            n = this.pay();
+                        if (!this.yay_1.equals(new l(-1, -1)) && q(n).d1(this.yay_1) > 0) throw new F("String size limit exceeded");
+                        return (t = this), (a = n), (i = new Int8Array(a)), C(t, i, a), y(i);
                     }),
-                    (_(U).var = function () {
-                        var t = this.rar();
-                        if (!this.aas_1.equals(new d(-1, -1)) && E(t).d1(this.aas_1) > 0) throw new F("Binary size limit exceeded");
-                        var s = new Int8Array(t);
-                        return S(this, s, s.length), N().it(s);
+                    (h(k).tay = function () {
+                        var t = this.pay();
+                        if (!this.yay_1.equals(new l(-1, -1)) && q(t).d1(this.yay_1) > 0) throw new F("Binary size limit exceeded");
+                        var a = new Int8Array(t);
+                        return C(this, a, a.length), b().lt(a);
                     }),
-                    (_(K).vu = function (t, s, i) {
-                        return this.sas_1.vu(t, s, i);
+                    (h(K).yu = function (t, a, i) {
+                        return this.qaz_1.yu(t, a, i);
                     }),
-                    (_(K).x3a = function (t, s, i) {
-                        this.sas_1.at(t, s, i);
+                    (h(K).a3b = function (t, a, i) {
+                        this.qaz_1.dt(t, a, i);
                     }),
-                    (_(K).x4 = function () {
-                        return this.sas_1.x4();
+                    (h(K).x4 = function () {
+                        return this.qaz_1.x4();
                     }),
-                    (_(W).tas = function (t, s) {
-                        if (2 === s) t.par();
-                        else if (3 === s) t.ju();
-                        else if (6 === s) t.qar();
-                        else if (8 === s) t.rar();
-                        else if (10 === s) t.sar();
-                        else if (4 === s) t.tar();
-                        else if (11 === s) t.uar();
-                        else if (12 === s) {
-                            t.far();
+                    (h(W).raz = function (t, a) {
+                        if (2 === a) t.nay();
+                        else if (3 === a) t.mu();
+                        else if (6 === a) t.oay();
+                        else if (8 === a) t.pay();
+                        else if (10 === a) t.qay();
+                        else if (4 === a) t.ray();
+                        else if (11 === a) t.say();
+                        else if (12 === a) {
+                            t.cay();
                             t: for (;;) {
-                                var i = t.har();
-                                if (0 === i.ias_1) break t;
-                                this.tas(t, i.ias_1), t.iar();
+                                var i = t.fay();
+                                if (0 === i.gaz_1) break t;
+                                this.raz(t, i.gaz_1), t.gay();
                             }
-                            t.gar();
-                        } else if (15 === s) {
-                            var n = t.lar(),
-                                a = 0,
-                                e = n.las_1;
-                            if (a < e)
+                            t.eay();
+                        } else if (15 === a) {
+                            var n = t.jay(),
+                                e = 0,
+                                s = n.jaz_1;
+                            if (e < s)
                                 do {
-                                    (a = (a + 1) | 0), this.tas(t, n.kas_1);
-                                } while (a < e);
-                            t.mar();
-                        } else if (14 === s) {
-                            var r = t.nar(),
-                                _ = 0,
-                                h = r.qas_1;
-                            if (_ < h)
+                                    (e = (e + 1) | 0), this.raz(t, n.iaz_1);
+                                } while (e < s);
+                            t.kay();
+                        } else if (14 === a) {
+                            var _ = t.lay(),
+                                h = 0,
+                                r = _.oaz_1;
+                            if (h < r)
                                 do {
-                                    (_ = (_ + 1) | 0), this.tas(t, r.pas_1);
-                                } while (_ < h);
-                            t.oar();
+                                    (h = (h + 1) | 0), this.raz(t, _.naz_1);
+                                } while (h < r);
+                            t.may();
                         } else {
-                            if (13 !== s) throw new F("Unrecognized TType value: " + s);
-                            var c = t.jar(),
-                                u = 0,
-                                o = c.oas_1;
-                            if (u < o)
+                            if (13 !== a) throw new F("Unrecognized TType value: " + a);
+                            var u = t.hay(),
+                                o = 0,
+                                f = u.maz_1;
+                            if (o < f)
                                 do {
-                                    (u = (u + 1) | 0), this.tas(t, c.mas_1), this.tas(t, c.nas_1);
-                                } while (u < o);
-                            t.kar();
+                                    (o = (o + 1) | 0), this.raz(t, u.kaz_1), this.raz(t, u.laz_1);
+                                } while (o < f);
+                            t.iay();
                         }
                     }),
-                    (_(K).gas = function (t) {
-                        this.x3a(t, 0, t.length);
+                    (h(K).eaz = function (t) {
+                        this.a3b(t, 0, t.length);
                     }),
-                    new m(),
-                    new j(),
-                    (r = new W()),
+                    new O(),
+                    new A(),
+                    (_ = new W()),
                     (t.$_$ = t.$_$ || {}),
-                    (t.$_$.a = U),
+                    (t.$_$.a = k),
                     (t.$_$.b = K),
-                    (t.$_$.c = A),
+                    (t.$_$.c = M),
                     (t.$_$.d = function () {
                         return (
                             (function () {
-                                if (a) return c;
-                                (a = !0), new R("UNKNOWN", 0, 0), new R("UNKNOWN_METHOD", 1, 1), new R("INVALID_MESSAGE_TYPE", 2, 2), new R("WRONG_METHOD_NAME", 3, 3), new R("BAD_SEQUENCE_ID", 4, 4), new R("MISSING_RESULT", 5, 5), new R("INTERNAL_ERROR", 6, 6), (n = new R("PROTOCOL_ERROR", 7, 7)), new R("INVALID_TRANSFORM", 8, 8), new R("INVALID_PROTOCOL", 9, 9), new R("UNSUPPORTED_CLIENT_TYPE", 10, 10);
+                                if (e) return u;
+                                (e = !0), new R("UNKNOWN", 0, 0), new R("UNKNOWN_METHOD", 1, 1), new R("INVALID_MESSAGE_TYPE", 2, 2), new R("WRONG_METHOD_NAME", 3, 3), new R("BAD_SEQUENCE_ID", 4, 4), new R("MISSING_RESULT", 5, 5), new R("INTERNAL_ERROR", 6, 6), (n = new R("PROTOCOL_ERROR", 7, 7)), new R("INVALID_TRANSFORM", 8, 8), new R("INVALID_PROTOCOL", 9, 9), new R("UNSUPPORTED_CLIENT_TYPE", 10, 10);
                             })(),
                             n
                         );
                     }),
-                    (t.$_$.e = r);
+                    (t.$_$.e = _);
             })(t.exports, i(519039), i(222818));
         },
-        937455: (t, s, i) => {
-            !(function (t, s) {
+        937455: (t, a, i) => {
+            !(function (t, a) {
                 "use strict";
                 var i,
                     n,
-                    a,
-                    e = s.$_$.ef,
-                    r = s.$_$.u9,
-                    _ = s.$_$.n3,
-                    h = s.$_$.s3,
-                    c = s.$_$.ja,
-                    u = s.$_$.z5,
-                    o = s.$_$.ke,
-                    f = s.$_$.id,
-                    $ = s.$_$.oe,
-                    w = s.$_$.h2,
-                    l = (s.$_$.l6, s.$_$.rc),
-                    v = s.$_$.lf,
-                    q = s.$_$.a8,
-                    d = s.$_$.b8,
-                    p = s.$_$.vc,
-                    b = s.$_$.zi,
-                    x = s.$_$.ii,
-                    E = s.$_$.hd,
-                    g = s.$_$.g,
-                    N = s.$_$.le;
-                function z() {
-                    return n || ((n = !0), r([e(0, 8), e(9, 13), e(14, 18), e(19, 23), e(24, 36)]), r([8, 13, 18, 23]), (i = c(h(_(48), _(57)), h(_(97), _(102))))), i;
+                    e,
+                    s = a.$_$.jf,
+                    _ = a.$_$.w9,
+                    h = a.$_$.o3,
+                    r = a.$_$.t3,
+                    u = a.$_$.la,
+                    o = a.$_$.a6,
+                    f = a.$_$.oe,
+                    $ = a.$_$.md,
+                    c = a.$_$.se,
+                    z = a.$_$.h2,
+                    w = (a.$_$.n6, a.$_$.vc),
+                    y = a.$_$.qf,
+                    v = a.$_$.c8,
+                    l = a.$_$.d8,
+                    x = a.$_$.zc,
+                    d = a.$_$.fj,
+                    p = a.$_$.oi,
+                    q = a.$_$.ld,
+                    m = a.$_$.g,
+                    b = a.$_$.pe;
+                function E() {
+                    return n || ((n = !0), _([s(0, 8), s(9, 13), s(14, 18), s(19, 23), s(24, 36)]), _([8, 13, 18, 23]), (i = u(r(h(48), h(57)), r(h(97), h(102))))), i;
                 }
-                function T() {
-                    (a = this), (this.rv_1 = r([e(0, 4), e(4, 6), e(6, 8), e(8, 10), e(10, 16)]));
+                function g() {
+                    (e = this), (this.uv_1 = _([s(0, 4), s(4, 6), s(6, 8), s(8, 10), s(10, 16)]));
                 }
-                function y() {
-                    return null == a && new T(), a;
+                function N() {
+                    return null == e && new g(), e;
                 }
-                function I(t) {
-                    if ((y(), (this.sv_1 = t), 16 !== this.sv_1.length)) {
-                        var s = "Invalid UUID bytes. Expected 16 bytes; found " + this.sv_1.length;
-                        throw w($(s));
+                function T(t) {
+                    if ((N(), (this.vv_1 = t), 16 !== this.vv_1.length)) {
+                        var a = "Invalid UUID bytes. Expected 16 bytes; found " + this.vv_1.length;
+                        throw z(c(a));
                     }
                 }
-                f(T),
-                    E(I, "Uuid", g, g, [x]),
-                    (o(I).toString = function () {
-                        for (var t = l(36), s = 0, i = y().rv_1.p(); i.q(); ) {
+                $(g),
+                    q(T, "Uuid", m, m, [p]),
+                    (f(T).toString = function () {
+                        for (var t = w(36), a = 0, i = N().uv_1.p(); i.q(); ) {
                             var n = i.r(),
-                                a = n.e1_1,
-                                e = n.f1_1;
-                            if (a <= e)
+                                e = n.e1_1,
+                                s = n.f1_1;
+                            if (e <= s)
                                 do {
-                                    var r = a;
-                                    a = (a + 1) | 0;
-                                    var h = this.sv_1[r],
-                                        c = (h >> 4) & 15,
-                                        u = 15 & h,
-                                        o = s;
-                                    (s = (o + 1) | 0), (t[o] = z().t(c).p1_1);
-                                    var f = s;
-                                    (s = (f + 1) | 0), (t[f] = z().t(u).p1_1);
-                                } while (r !== e);
-                            if (s < 36) {
-                                var $ = s;
-                                (s = ($ + 1) | 0), (t[$] = _(45));
+                                    var _ = e;
+                                    e = (e + 1) | 0;
+                                    var r = this.vv_1[_],
+                                        u = (r >> 4) & 15,
+                                        o = 15 & r,
+                                        f = a;
+                                    (a = (f + 1) | 0), (t[f] = E().t(u).p1_1);
+                                    var $ = a;
+                                    (a = ($ + 1) | 0), (t[$] = E().t(o).p1_1);
+                                } while (_ !== s);
+                            if (a < 36) {
+                                var c = a;
+                                (a = (c + 1) | 0), (t[c] = h(45));
                             }
                         }
-                        return v(t);
+                        return y(t);
                     }),
-                    (o(I).equals = function (t) {
-                        return t instanceof I && q(this.sv_1, t.sv_1);
+                    (f(T).equals = function (t) {
+                        return t instanceof T && v(this.vv_1, t.vv_1);
                     }),
-                    (o(I).hashCode = function () {
-                        return d(this.sv_1);
+                    (f(T).hashCode = function () {
+                        return l(this.vv_1);
                     }),
-                    (o(I).tv = function (t) {
-                        var s = 0;
-                        if (s < 16)
+                    (f(T).wv = function (t) {
+                        var a = 0;
+                        if (a < 16)
                             do {
-                                var i = s;
-                                s = (s + 1) | 0;
-                                var n = p(this.sv_1[i], t.sv_1[i]);
+                                var i = a;
+                                a = (a + 1) | 0;
+                                var n = x(this.vv_1[i], t.vv_1[i]);
                                 if (0 !== n) return n;
-                            } while (s < 16);
+                            } while (a < 16);
                         return 0;
                     }),
-                    (o(I).d = function (t) {
-                        return this.tv(t instanceof I ? t : b());
+                    (f(T).d = function (t) {
+                        return this.wv(t instanceof T ? t : d());
                     }),
                     (t.$_$ = t.$_$ || {}),
                     (t.$_$.a = function () {
-                        var t = u().el(16);
-                        return (t[6] = N((15 & t[6]) | 64)), (t[8] = N((63 & t[8]) | 128)), new I(t);
+                        var t = o().hl(16);
+                        return (t[6] = b((15 & t[6]) | 64)), (t[8] = b((63 & t[8]) | 128)), new T(t);
                     });
             })(t.exports, i(519039));
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-f2f827c9.eb21881a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-f2f827c9.73362d1a.js.map

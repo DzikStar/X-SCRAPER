@@ -1721,6 +1721,7 @@
                 t("d78131b9", function (e) {
                     return "Adaugă/elimină @" + e.screenName + " din liste";
                 }),
+                t("b3b642fc", "Why this post?"),
                 t("fb4ee11c", "De ce această reclamă?"),
                 t("ad50e7d9", function (e) {
                     return "Vezi analiza " + e.entity;
@@ -1919,9 +1920,9 @@
                 t("b6510e68", "Copiază URL-ul articolului pentru a-l putea distribui."),
                 t("e4a6e006", "Ceva nu a mers bine. Încearcă din nou."),
                 t("eff483e0", "După publicare, obține un link pentru a distribui articolul."),
-                t("ca15dd4e", "Schiță"),
-                t("bb40bf66", "Publicate");
-            t("h107935c", "Salvată ultima dată chiar acum"),
+                t("ca15dd4e", "Schiță");
+            t("bb40bf66", "Publicate"),
+                t("h107935c", "Salvată ultima dată chiar acum"),
                 t("a753a870", "Aplică"),
                 t("afccc67e", "Copiază linkul către articol"),
                 t("beb24e9e", "URL copiat pe clipboard"),
@@ -2438,6 +2439,7 @@
                     return "Raportează " + e.entity;
                 }),
                 t("e3fd237e", "Raportează reclama"),
+                t("ebb7662a", "Raportează postarea"),
                 t("d1e21610", "Raportează încălcarea NetzDG"),
                 t("d7513755", function (e) {
                     return "Caută postările utilizatorului @" + e.screenName + " în această Comunitate";
@@ -2970,15 +2972,15 @@
                 t("c6f58084", "Dezvoltatori"),
                 t("d83f18d2", "Director"),
                 t("hc5aa17c", "Obţine aplicația X"),
-                t("j0693948", "Obține aplicația Grok"),
-                t("af781666", "What do people think?"),
-                t("ad35153e", "beta");
-            t("fbf83158", "Avertisment: plata a eșuat"),
+                t("j0693948", "Obține aplicația Grok");
+            t("af781666", "Ce spun oamenii?"),
+                t("ad35153e", "beta"),
+                t("fbf83158", "Avertisment: plata a eșuat"),
                 t("jadeb4da", "Actualizează-ți urgent metoda de plată pentru a nu-ți pierde beneficiile abonamentului."),
                 t("bce3726a", "Actualizare informații de facturare"),
                 t("fce9ecce", "Videoclipuri sugerate"),
-                t("dc954b88", "Try the full news experience"),
-                t("j66b95a2", "In-Depth News"),
+                t("dc954b88", "Încearcă experiența știrilor complete"),
+                t("j66b95a2", "Știri detaliate"),
                 t("b58d2bd2", "Postări relevante"),
                 t("efe6ef9e", "Vizualizează postarea"),
                 t("b3d183ce", "Postare cu răspunsuri"),
@@ -3886,10 +3888,10 @@
                 t("j245c654", "Vorbitori"),
                 t("eda23a02", "Ascultători"),
                 t("b90eb348", "Invită să vorbească"),
-                t("d9a63e82", "Elimină din rândul vorbitorilor"),
-                t("bd917b26", "Invită să fie co-gazdă"),
-                t("d7357e7e", "Elimină din co-gazde");
-            t("bf307fc0", "Blochează și elimină"),
+                t("d9a63e82", "Elimină din rândul vorbitorilor");
+            t("bd917b26", "Invită să fie co-gazdă"),
+                t("d7357e7e", "Elimină din co-gazde"),
+                t("bf307fc0", "Blochează și elimină"),
                 t("ccf2f24e", "Raport"),
                 t("i22835de", "Aprobă"),
                 t("cb59a0fe", "Refuză"),
@@ -4163,7 +4165,6 @@
                 t("bcbf5b6e", "Distribuirea"),
                 t("j7b5c844", "Conversațiile pe care le distribui public sunt responsabilitatea ta. Evită partajarea informațiilor sensibile sau confidențiale despre tine sau alții în conversațiile cu Grok (vezi Centrul nostru de ajutor)."),
                 t("c9f7c196", "Centru de ajutor"),
-                t("b63d3d36", "Atașează"),
                 t("c65f7308", "Serverele sunt foarte ocupate acum"),
                 t("f2a8655e", "Instrumentele avansate ale lui Grok nu sunt momentan disponibile."),
                 t("c26b9b9c", "Fișier"),
@@ -4178,8 +4179,8 @@
                 t("e9b6d404", "La ce instrumente de căutare ar trebui să aibă acces Grok?"),
                 t("h15dce2e", "Setări avansate"),
                 t("ff9dc268", "Editează promptul"),
-                t("acb2baa0", "Create Images"),
-                t("h30fd372", "Try Voice Mode"),
+                t("acb2baa0", "Creează imagini"),
+                t("h30fd372", "Încearcă modul Voce"),
                 t("e9fcdd0c", "Cere-i lui Grok să caute intens pe internet"),
                 t("fc4e8aba", "Cere-i lui Grok un raționament pas cu pas"),
                 t("e4ae6abe", "Cere-i lui Grok să-ți transforme imaginea"),
@@ -4348,7 +4349,7 @@
                 t("g01599b6", "Răspunsul 1"),
                 t("e02694e0", "Răspunsul 2"),
                 t("h6867fcc", "Prefer acest răspuns"),
-                t("d07488a6", "Get the Android app"),
+                t("d07488a6", "Obține aplicația Android"),
                 t("d9cfe70c", "Accesează caracteristici Grok avansate"),
                 t("hf9afab0", "Activează DeepSearch pentru a căuta pe internet și pe X, analiza informații și oferi răspunsuri detaliate, bine argumentate, cu ajutorul unei căutări rapide și autonome."),
                 t("ef3b3f04", "Activează modul Gândire pentru a utiliza modelul nostru de argumentare. Este ideal pentru matematică, știință și scriere de cod. De asemenea, poți folosi opțiunea „Gândește-te mai bine” pentru orice întrebare care are nevoie de mai multă capacitate intelectuală de la Grok. "),
@@ -4357,7 +4358,7 @@
                 t("e3584f8e", "Care sunt cele mai de succes 10 strategii de tranzacționare utilizate de fondurile de acoperire"),
                 t("d91b7b8a", "Cât costa să construiești o universitate în 1885?"),
                 t("ia5bef3e", "Cum te pot ajuta astăzi?"),
-                t("ebea5880", "Recent Conversations"),
+                t("ebea5880", "Conversații recente"),
                 t("e13591c0", "Exemplu de conversație cu Grok"),
                 t("c27ca452", "Abonații Premium pot utiliza acum pe X cea mai avansată inteligență artificială a noastră, denumită Grok."),
                 t("b6abc25a", "Îți prezentăm Grok 2"),
@@ -4919,9 +4920,9 @@
                 t("jb6f9292", "conține exact structura „start-up ai”"),
                 t("j8ee77c4", "„start-up ai”"),
                 t("d0480758", "conține ori „ai” ori „start-up” (sau ambele)"),
-                t("f0048fa2", "ai SAU start-up"),
-                t("da0df186", "conține „ai”, dar nu „start-up”");
-            t("f2f463ea", "ai -start-up"),
+                t("f0048fa2", "ai SAU start-up");
+            t("da0df186", "conține „ai”, dar nu „start-up”"),
+                t("f2f463ea", "ai -start-up"),
                 t("a10a357e", "conține „ai” și are cel puțin 50 de aprecieri"),
                 t("ca8ed1e8", "ai min_faves:50"),
                 t("i945a3f2", "conține „ai” și un URL care include cuvântul „grok”"),
@@ -5885,9 +5886,9 @@
                 t("hb52cc4a", "Te rugăm să încerci din nou mai târziu."),
                 t("e50e1bb0", "Bun venit la Comunități"),
                 t("i6829daa", "Comunitățile sunt grupuri de discuții moderate, unde persoanele de pe X se pot conecta și pot distribui conținut."),
-                t("fc5c6914", "Întâlnește alte persoane care au aceleași interese ca tine"),
-                t("aa1a9820", "Alătură-te Comunităților pentru a intra în contact cu persoane care au aceleași interese ca tine.");
-            t("edef4c82", "Postează direct într-o Comunitate"),
+                t("fc5c6914", "Întâlnește alte persoane care au aceleași interese ca tine");
+            t("aa1a9820", "Alătură-te Comunităților pentru a intra în contact cu persoane care au aceleași interese ca tine."),
+                t("edef4c82", "Postează direct într-o Comunitate"),
                 t("a7640df6", "Postările tale sunt distribuite membrilor Comunității și urmăritorilor tăi."),
                 t("h3bb8068", "Cere ajutor când ai nevoie"),
                 t("a709f8f8", "Administratorii și moderatorii ajută la gestionarea Comunităților și mențin conversațiile pe drumul cel bun."),
@@ -6883,9 +6884,9 @@
                 t("g337328e", "Obține cea mai mare vizibilitate pentru răspunsurile tale."),
                 t("fa006202", "Redare videoclip în fundal"),
                 t("jf389778", "Vizionează în timp ce navighezi sau folosești alte aplicații"),
-                t("f2977d80", "Foldere cu marcaje"),
-                t("j1d3d910", "Organizează-ți postările salvate pentru acces ușor");
-            t("f0f48668", "Asistență premium"),
+                t("f2977d80", "Foldere cu marcaje");
+            t("j1d3d910", "Organizează-ți postările salvate pentru acces ușor"),
+                t("f0f48668", "Asistență premium"),
                 t("c3148608", "Obține asistență mai repede atunci când ai nevoie de ajutor"),
                 t("b485ca6e", "Fila Evidențieri"),
                 t("d438955e", "Evidențiază-ți postările de top"),
@@ -7859,8 +7860,7 @@
                 t("c80160d3", "Publicitate"),
                 t("ff0edac0", "Sigur vrei să îți anulezi abonamentul?"),
                 t("h2ac0348", "Nu, vreau să mă întorc"),
-                t("dbf9667e", "Sunt sigur"),
-                t("j7592572", "Întoarcere");
+                t("dbf9667e", "Sunt sigur");
             function c(e, a) {
                 for (var i = 0; i < a.length; i++) {
                     var t = a[i];
@@ -7899,7 +7899,8 @@
                     u(e, a)
                 );
             }
-            t("ee778942", "Semafor"),
+            t("j7592572", "Întoarcere"),
+                t("ee778942", "Semafor"),
                 t("fdd57981", function (e) {
                     return "Vrem să-ți oferim un credit gratuit pentru reclame, în valoare de " + e.totalAmount + ", disponibil o singură dată.";
                 }),
@@ -8927,13 +8928,13 @@
                 }),
                 t("dc718e53", function (e) {
                     return "+încă " + e.count;
-                }),
-                t("d0e7b11b", function (e) {
-                    return e.date + ", la " + e.time;
                 });
-            t("b4349cbc", function (e) {
-                return "" + e.relativeDay;
+            t("d0e7b11b", function (e) {
+                return e.date + ", la " + e.time;
             }),
+                t("b4349cbc", function (e) {
+                    return "" + e.relativeDay;
+                }),
                 t("ebe41367", function (e) {
                     return "Ora " + e.time;
                 }),
@@ -13200,4 +13201,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ro.4ae3b6ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ro.81f1d48a.js.map

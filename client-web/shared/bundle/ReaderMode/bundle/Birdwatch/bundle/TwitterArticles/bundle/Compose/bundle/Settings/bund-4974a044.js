@@ -44,7 +44,7 @@
             e.exports = { queryId: "9Hyh5D4-WXLnExZkONSkZg", operationName: "GrokHistory", operationType: "query", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
         369111: (e) => {
-            e.exports = { queryId: "i8RyUtwTC_hp0bFeYNyCOQ", operationName: "GrokHome", operationType: "query", metadata: { featureSwitches: [], fieldToggles: [] } };
+            e.exports = { queryId: "IGHBZzBjkQ0I7TA4WKv32A", operationName: "GrokHome", operationType: "query", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
         551632: (e) => {
             e.exports = { queryId: "azn3Sg0APPjb2Jtd7gqxsw", operationName: "GrokMediaHistory", operationType: "query", metadata: { featureSwitches: [], fieldToggles: [] } };
@@ -151,12 +151,12 @@
                 F = o.n(q),
                 S = o(934309);
             const x = { result: [], entities: {}, slice_info: {} },
-                C = (e, t) => {
+                I = (e, t) => {
                     const o = t?.bookmark_all_delete,
                         a = "Done" === o;
                     return a || (0, r.ZP)("GQL Bookmarks: Failed to delete all bookmarks"), (0, n.jB)(e) || !a;
                 },
-                I = (0, n.kj)((e) => {
+                C = (0, n.kj)((e) => {
                     const t = e?.viewer?.user_results?.result,
                         o = "User" === t?.__typename ? t : void 0,
                         a = o?.bookmark_collections_slice?.items;
@@ -179,7 +179,7 @@
                             { ...t },
                             (0, n.kj)((e) => !e.bookmark_collection_create, "GQL Bookmark Folders: failed to Create Bookmark Folder"),
                         ),
-                    deleteAll: () => e.graphQL(k(), {}, C).then((e) => e),
+                    deleteAll: () => e.graphQL(k(), {}, I).then((e) => e),
                     deleteBookmarkFolder(t) {
                         const { bookmarkFolderId: o } = t;
                         return e.graphQL(v(), { bookmark_collection_id: o });
@@ -196,7 +196,7 @@
                     fetchBookmarkFolderTimeline: ({ bookmark_collection_id: o, cursor: a }) => e.graphQL(p(), { bookmark_collection_id: o, cursor: a, includePromotedContent: !0, ...(0, i.d)(t) }, L).then((e) => e?.bookmark_collection_timeline?.timeline || S.cY),
                     fetchBookmarkFoldersSlice: (t) =>
                         t
-                            ? e.graphQL(l(), t, I).then((e) => {
+                            ? e.graphQL(l(), t, C).then((e) => {
                                   const t = e?.viewer?.user_results?.result,
                                       o = "User" === t?.__typename ? t : void 0,
                                       r = o?.bookmark_collections_slice;
@@ -237,8 +237,8 @@
                 F = o.n(q),
                 S = o(204114),
                 x = o.n(S),
-                C = o(790427),
-                I = o.n(C),
+                I = o(790427),
+                C = o.n(I),
                 L = o(220843),
                 Q = o.n(L);
             function A({ apiClient: e }) {
@@ -253,7 +253,7 @@
                     fetchMediaHistory: ({ cursor: t }) => e.graphQL(g(), { cursor: t }).then((e) => e),
                     searchConversations: ({ keyword: t }) => e.graphQL(T(), { keyword: t }).then((e) => (e.grok_conversation_search_timeline?.items ?? []).map((e) => ({ chatItemId: e.chat_item_id, conversation: { id: e.grokConversation?.rest_id }, message: e.chat_item?.message, createdAt: e.chat_item?.created_at_ms, title: e.conversation_title })).filter((e) => e.chatItemId && e.conversation.id)),
                     deleteMessage: ({ chat_item_id: t, conversation_id: o }) => e.graphQL(l(), { conversation_id: o, chat_item_id: t }).then((e) => e),
-                    logUserEventGrok: ({ action_type: t, group_id: o, object_id: a }) => e.graphQL(I(), { group_id: o, object_id: a, action_type: t }).then((e) => e),
+                    logUserEventGrok: ({ action_type: t, group_id: o, object_id: a }) => e.graphQL(C(), { group_id: o, object_id: a, action_type: t }).then((e) => e),
                     grokPinConversation: ({ conversationId: t }) => e.graphQL(k(), { conversationId: t }).then((e) => e),
                     grokUnpinConversation: ({ conversationId: t }) => e.graphQL(x(), { conversationId: t }).then((e) => e),
                     uploadFile: ({ abortController: t, file: o }) => {
@@ -331,4 +331,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-4974a044.89e0179a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-4974a044.f27b83aa.js.map

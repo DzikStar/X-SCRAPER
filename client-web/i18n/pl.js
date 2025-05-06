@@ -1719,6 +1719,7 @@
                 i("d78131b9", function (e) {
                     return "Dodaj/usuń użytkownika @" + e.screenName + " do/z List";
                 }),
+                i("b3b642fc", "Why this post?"),
                 i("fb4ee11c", "Dlaczego ta reklama?"),
                 i("ad50e7d9", function (e) {
                     return "Zobacz statystyki dla wpisu " + e.entity;
@@ -1917,9 +1918,9 @@
                 i("b6510e68", "Skopiuj adres URL artykułu, co umożliwi Ci udostępnienie go."),
                 i("e4a6e006", "Coś poszło nie tak. Spróbuj ponownie."),
                 i("eff483e0", "Po opublikowaniu pobierz link, aby udostępnić artykuł."),
-                i("ca15dd4e", "Szkic"),
-                i("bb40bf66", "Opublikowano");
-            i("h107935c", "Ostatnio zapisano przed chwilą"),
+                i("ca15dd4e", "Szkic");
+            i("bb40bf66", "Opublikowano"),
+                i("h107935c", "Ostatnio zapisano przed chwilą"),
                 i("a753a870", "Zastosuj"),
                 i("afccc67e", "Kopiuj link do artykułu"),
                 i("beb24e9e", "Adres URL został skopiowany do schowka"),
@@ -2436,6 +2437,7 @@
                     return "Zgłoś " + e.entity;
                 }),
                 i("e3fd237e", "Zgłoś reklamę"),
+                i("ebb7662a", "Zgłoś wpis"),
                 i("d1e21610", "Zgłoś naruszenie przepisów ustawy Prawo internetowe (NetzDG)"),
                 i("d7513755", function (e) {
                     return "Wyszukaj wpisy użytkownika @" + e.screenName + " w tej grupie dyskusyjnej";
@@ -2968,15 +2970,15 @@
                 i("c6f58084", "Deweloperzy"),
                 i("d83f18d2", "Ścieżka"),
                 i("hc5aa17c", "Pobierz aplikację X"),
-                i("j0693948", "Pobierz aplikację Grok"),
-                i("af781666", "Co myślą ludzie?"),
-                i("ad35153e", "beta");
-            i("fbf83158", "Ostrzeżenie: realizacja płatności nie powiodła się"),
+                i("j0693948", "Pobierz aplikację Grok");
+            i("af781666", "Co myślą ludzie?"),
+                i("ad35153e", "beta"),
+                i("fbf83158", "Ostrzeżenie: realizacja płatności nie powiodła się"),
                 i("jadeb4da", "Jak najszybciej zaktualizuj swoją metodę płatności, zanim stracisz korzyści związane z subskrypcją."),
                 i("bce3726a", "Aktualizuj rozliczenie"),
                 i("fce9ecce", "Sugerowane filmy"),
                 i("dc954b88", "Wypróbuj pełne środowisko wiadomości"),
-                i("j66b95a2", "Dogłębne wiadomości"),
+                i("j66b95a2", "Dokładne wiadomości"),
                 i("b58d2bd2", "Odpowiednie wpisy"),
                 i("efe6ef9e", "Wyświetl wpis"),
                 i("b3d183ce", "Wpis z odpowiedziami"),
@@ -3884,10 +3886,10 @@
                 i("j245c654", "Mówcy"),
                 i("eda23a02", "Słuchacze"),
                 i("b90eb348", "Udziel głosu"),
-                i("d9a63e82", "Usuń z grona mówców"),
-                i("bd917b26", "Zaproś do współhostowania"),
-                i("d7357e7e", "Usuń z grona współhostów");
-            i("bf307fc0", "Zablokuj i usuń"),
+                i("d9a63e82", "Usuń z grona mówców");
+            i("bd917b26", "Zaproś do współhostowania"),
+                i("d7357e7e", "Usuń z grona współhostów"),
+                i("bf307fc0", "Zablokuj i usuń"),
                 i("ccf2f24e", "Zgłoszenie"),
                 i("i22835de", "Akceptuj"),
                 i("cb59a0fe", "Odrzuć"),
@@ -4161,7 +4163,6 @@
                 i("bcbf5b6e", "Udostępnianie"),
                 i("j7b5c844", "Ponosisz odpowiedzialność za rozmowy, które udostępniasz publicznie. Unikaj podawania wrażliwych oraz poufnych informacji o sobie lub innych osobach podczas rozmów z Grokiem (zobacz nasze Centrum pomocy)."),
                 i("c9f7c196", "Centrum Pomocy"),
-                i("b63d3d36", "Dołącz"),
                 i("c65f7308", "Serwery są aktualnie przeciążone"),
                 i("f2a8655e", "Zaawansowane narzędzia Groka są aktualnie niedostępne."),
                 i("c26b9b9c", "Plik"),
@@ -4176,7 +4177,7 @@
                 i("e9b6d404", "Do jakich narzędzi wyszukiwania Grok ma mieć dostęp?"),
                 i("h15dce2e", "Ustawienia zaawansowane"),
                 i("ff9dc268", "Edytuj podpowiedź"),
-                i("acb2baa0", "Utwórz obrazy"),
+                i("acb2baa0", "Tworzenie obrazów"),
                 i("h30fd372", "Wypróbuj tryb głosowy"),
                 i("e9fcdd0c", "Poproś Groka, aby agresywnie przeszukiwał Internet"),
                 i("fc4e8aba", "Poproś Groka, aby rozumował krok po kroku"),
@@ -4917,9 +4918,9 @@
                 i("jb6f9292", "zawiera dokładną frazę „startup ai”"),
                 i("j8ee77c4", '"startup ai"'),
                 i("d0480758", 'zawiera wyraz „startup" lub „ai” (albo oba te wyrazy)'),
-                i("f0048fa2", "startup OR ai"),
-                i("da0df186", "zawiera wyraz „ai”, ale nie „startup”");
-            i("f2f463ea", "-startup ai"),
+                i("f0048fa2", "startup OR ai");
+            i("da0df186", "zawiera wyraz „ai”, ale nie „startup”"),
+                i("f2f463ea", "-startup ai"),
                 i("a10a357e", "zawiera wyraz „ai” i ma co najmniej 50 polubień"),
                 i("ca8ed1e8", "ai min_faves:50"),
                 i("i945a3f2", "zawiera wyraz „ai” oraz adres URL, w którym znajduje się wyraz „grok”"),
@@ -5883,9 +5884,9 @@
                 i("hb52cc4a", "Spróbuj ponownie później."),
                 i("e50e1bb0", "Zapraszamy do korzystania z grup dyskusyjnych"),
                 i("i6829daa", "Grupy dyskusyjne to moderowane grupy na X, w ramach których użytkownicy mogą rozmawiać i udostępniać treści."),
-                i("fc5c6914", "Poznaj osoby o podobnych zainteresowaniach"),
-                i("aa1a9820", "Dołącz do grup dyskusyjnych, aby łączyć się z osobami, które mają takie same zainteresowania, jak Ty.");
-            i("edef4c82", "Publikuj wpisy bezpośrednio w grupie dyskusyjnej"),
+                i("fc5c6914", "Poznaj osoby o podobnych zainteresowaniach");
+            i("aa1a9820", "Dołącz do grup dyskusyjnych, aby łączyć się z osobami, które mają takie same zainteresowania, jak Ty."),
+                i("edef4c82", "Publikuj wpisy bezpośrednio w grupie dyskusyjnej"),
                 i("a7640df6", "Twoje wpisy są udostępniane członkom grupy dyskusyjnej oraz Twoim obserwującym."),
                 i("h3bb8068", "Ciekawe rozmowy"),
                 i("a709f8f8", "Administratorzy i moderatorzy pomagają zarządzać Grupami dyskusyjnymi i dbać o produktywność rozmów."),
@@ -6881,9 +6882,9 @@
                 i("g337328e", "Uzyskaj największą widoczność swoich odpowiedzi."),
                 i("fa006202", "Odtwarzanie filmów w tle"),
                 i("jf389778", "Oglądaj w trakcie przeglądania lub używania innych aplikacji"),
-                i("f2977d80", "Foldery Zakładek"),
-                i("j1d3d910", "Organizuj zapisane wpisy, aby mieć do nich łatwiejszy dostęp");
-            i("f0f48668", "Pomoc techniczna premium"),
+                i("f2977d80", "Foldery Zakładek");
+            i("j1d3d910", "Organizuj zapisane wpisy, aby mieć do nich łatwiejszy dostęp"),
+                i("f0f48668", "Pomoc techniczna premium"),
                 i("c3148608", "Szybciej otrzymuj potrzebną pomoc"),
                 i("b485ca6e", "Karta Najciekawsze"),
                 i("d438955e", "Prezentuj swoje najpopularniejsze wpisy"),
@@ -7857,8 +7858,7 @@
                 i("c80160d3", "Reklama"),
                 i("ff0edac0", "Czy na pewno chcesz anulować subskrypcję?"),
                 i("h2ac0348", "No, wróć"),
-                i("dbf9667e", "Tak"),
-                i("j7592572", "Twój ruch");
+                i("dbf9667e", "Tak");
             function t(e, a) {
                 for (var o = 0; o < a.length; o++) {
                     var i = a[o];
@@ -7897,7 +7897,8 @@
                     c(e, a)
                 );
             }
-            i("ee778942", "Sygnalizacja świetlna"),
+            i("j7592572", "Twój ruch"),
+                i("ee778942", "Sygnalizacja świetlna"),
                 i("fdd57981", function (e) {
                     return "Chcemy zaoferować Ci jednorazowy bezpłatny kredyt reklamowy w wysokości " + e.totalAmount + " USD.";
                 }),
@@ -8925,13 +8926,13 @@
                 }),
                 i("dc718e53", function (e) {
                     return "+" + n(e.count, e.count + " innych użytkowników", e.count + " innych użytkowników", "jeszcze " + e.count + " użytkownik", e.count + " innych użytkowników");
-                }),
-                i("d0e7b11b", function (e) {
-                    return e.date + " o " + e.time;
                 });
-            i("b4349cbc", function (e) {
-                return "" + e.relativeDay;
+            i("d0e7b11b", function (e) {
+                return e.date + " o " + e.time;
             }),
+                i("b4349cbc", function (e) {
+                    return "" + e.relativeDay;
+                }),
                 i("ebe41367", function (e) {
                     return "Czas " + e.time;
                 }),
@@ -13200,4 +13201,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.9546289a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.fca960ca.js.map

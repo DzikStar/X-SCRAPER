@@ -97,7 +97,7 @@
         },
         810088: (e, n, a) => {
             a.d(n, { g: () => l });
-            const l = Object.freeze({ AuthorizationClosed: "AuthorizationClosed", AuthorizationOpen: "AuthorizationOpen", AwaitingRequestAcceptance: "AwaitingRequestAcceptance", AwaitingUnrecognizedConfirmation: "AwaitingUnrecognizedConfirmation", Cancelled: "Cancelled", Expired: "Expired", Failed: "Failed", Hold: "Hold", Pending: "Pending", PendingRecipientAcceptance: "PendingRecipientAcceptance", PendingRecipientAction: "PendingRecipientAction", PendingRecipientOnboarding: "PendingRecipientOnboarding", PendingRequestAcceptance: "PendingRequestAcceptance", PendingReview: "PendingReview", PinVerificationRequired: "PinVerificationRequired", RejectedByRecipient: "RejectedByRecipient", RequestRejected: "RequestRejected", RequestVerificationRequired: "RequestVerificationRequired", Settled: "Settled", SoftSettled: "SoftSettled", Unspecified: "Unspecified", VerificationRequired: "VerificationRequired" });
+            const l = Object.freeze({ AuthorizationClosed: "AuthorizationClosed", AuthorizationOpen: "AuthorizationOpen", AwaitingRequestAcceptance: "AwaitingRequestAcceptance", AwaitingUnrecognizedConfirmation: "AwaitingUnrecognizedConfirmation", Cancelled: "Cancelled", CreditedAwaitingSettlement: "CreditedAwaitingSettlement", Expired: "Expired", Failed: "Failed", Hold: "Hold", Pending: "Pending", PendingFundingTransactionSettlement: "PendingFundingTransactionSettlement", PendingRecipientAcceptance: "PendingRecipientAcceptance", PendingRecipientAction: "PendingRecipientAction", PendingRecipientOnboarding: "PendingRecipientOnboarding", PendingRequestAcceptance: "PendingRequestAcceptance", PendingReview: "PendingReview", PinVerificationRequired: "PinVerificationRequired", RejectedByRecipient: "RejectedByRecipient", RequestRejected: "RequestRejected", RequestVerificationRequired: "RequestVerificationRequired", Settled: "Settled", SoftSettled: "SoftSettled", Unspecified: "Unspecified", VerificationRequired: "VerificationRequired" });
         },
         357818: (e, n, a) => {
             a.d(n, { x: () => l });
@@ -787,4 +787,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-17a1c92a.6cd8584a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-17a1c92a.b966707a.js.map

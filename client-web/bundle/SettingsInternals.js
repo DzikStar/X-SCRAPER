@@ -28,13 +28,13 @@
                         });
                 }
                 _renderContent() {
-                    const { backButtonType: e, centerTitle: t, centeredLogo: n, fixed: o, hideBackButton: a, isFullWidth: s, isLarge: c, leftControl: d, middleControl: h, position: p, rightControl: m, secondaryBar: g, style: b, subtitle: f, title: C, titleDomId: y, titleIconCell: E, titleIconCellSize: S, withBackground: _, withWideContainer: w } = this.props,
+                    const { backButtonType: e, centerTitle: t, centeredLogo: n, fixed: o, hideBackButton: a, isFullWidth: s, isLarge: c, leftControl: d, middleControl: h, position: p, rightControl: m, secondaryBar: g, style: b, subtitle: C, title: f, titleDomId: y, titleIconCell: E, titleIconCellSize: S, withBackground: _, withWideContainer: w } = this.props,
                         { isModal: Z } = this.context,
                         L = a ? d : r.createElement(i.Z, { backButtonType: e, onClick: this._handleBackClick }),
                         B = (function (e, t, n) {
                             return e && !(t && n);
                         })(!!_, Z, !!g);
-                    return r.createElement(r.Fragment, null, r.createElement(l.Z, { centerTitle: t, centeredLogo: n, isFullWidth: s, isLarge: c, leftControl: L, middleControl: h, position: u(p, Z, o), rightControl: m, style: b, subtitle: f, title: C, titleDomId: y, titleIconCell: E, titleIconCellSize: S, withBackground: B, withWideContainer: w }), g || null);
+                    return r.createElement(r.Fragment, null, r.createElement(l.Z, { centerTitle: t, centeredLogo: n, isFullWidth: s, isLarge: c, leftControl: L, middleControl: h, position: u(p, Z, o), rightControl: m, style: b, subtitle: C, title: f, titleDomId: y, titleIconCell: E, titleIconCellSize: S, withBackground: B, withWideContainer: w }), g || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
@@ -79,13 +79,13 @@
                 m = n(655543),
                 g = n(715601),
                 b = n(392237);
-            const f = b.default.create((e) => ({ fill: { flex: 1, alignSelf: "stretch" }, viewportView: { ...b.default.absoluteFillObject, overflowY: "auto" }, appBarContainer: { position: "sticky", top: 0, backfaceVisibility: "hidden", zIndex: e.componentZIndices.appBarZIndex } }));
-            class C extends r.Component {
+            const C = b.default.create((e) => ({ fill: { flex: 1, alignSelf: "stretch" }, viewportView: { ...b.default.absoluteFillObject, overflowY: "auto" }, appBarContainer: { position: "sticky", top: 0, backfaceVisibility: "hidden", zIndex: e.componentZIndices.appBarZIndex } }));
+            class f extends r.Component {
                 constructor(...e) {
                     super(...e),
                         (this._renderChildren = () => {
                             const { children: e } = this.props;
-                            return this.context.rootDetailPerColumnScroll ? r.createElement(s.Z, { style: f.fill }, r.createElement(g.Z, { style: f.viewportView }, this._renderInlineNav({ isTwoColumnLayout: !0 }), e)) : e;
+                            return this.context.rootDetailPerColumnScroll ? r.createElement(s.Z, { style: C.fill }, r.createElement(g.Z, { style: C.viewportView }, this._renderInlineNav({ isTwoColumnLayout: !0 }), e)) : e;
                         });
                 }
                 render() {
@@ -100,20 +100,20 @@
                     return r.createElement(r.Fragment, null, !e && this._renderInlineNav({ isTwoColumnLayout: !0 }), this._renderChildren());
                 }
                 _renderInlineNav({ isTwoColumnLayout: e }) {
-                    const { SideNavButton: t, TabBar: n, appBarStyle: o, backLocation: a, documentTitle: i, headerless: l, history: c, leftControl: u, middleControl: m, onBackClick: g, rightControl: b, screenType: C, searchBoxOptions: y, secondaryBar: E, showSubtitleOnRoot: S, showSubtitleOnWideDetail: _, subtitle: w, title: Z, titleIconCell: L, titleIconCellSize: B, withDetailOpen: v, withSearchBox: k, withTweetButton: T, withWideContainer: I } = this.props,
-                        x = "root" === C,
-                        F = "secondaryRoot" === C,
-                        A = "primaryDetail" === C,
+                    const { SideNavButton: t, TabBar: n, appBarStyle: o, backLocation: a, documentTitle: i, headerless: l, history: c, leftControl: u, middleControl: m, onBackClick: g, rightControl: b, screenType: f, searchBoxOptions: y, secondaryBar: E, showSubtitleOnRoot: S, showSubtitleOnWideDetail: _, subtitle: w, title: Z, titleIconCell: L, titleIconCellSize: B, withDetailOpen: k, withSearchBox: T, withTweetButton: v, withWideContainer: I } = this.props,
+                        x = "root" === f,
+                        F = "secondaryRoot" === f,
+                        A = "primaryDetail" === f,
                         D = (A && _) || (x && S),
                         P = x || (A && e),
                         R = x ? d.ey : A ? d.vX : void 0,
-                        N = r.createElement(s.Z, { style: f.appBarContainer }, r.createElement(h.ZP, { backLocation: a, fixed: !1, hideBackButton: P, history: c, leftControl: u, middleControl: m, onBackClick: g, rightControl: b, secondaryBar: E, style: o, subtitle: D ? w : void 0, title: Z, titleDomId: R, titleIconCell: L, titleIconCellSize: B, withWideContainer: I })),
-                        U = x || (F && v) ? null : r.createElement(p.Z.Configure, { SideNavButton: t, TabBar: n, backLocation: a, documentTitle: i, headerless: l, middleControl: m, onBackClick: g, rightControl: b, searchBoxOptions: y, subtitle: w, title: Z, withSearchBox: k, withTweetButton: T });
+                        N = r.createElement(s.Z, { style: C.appBarContainer }, r.createElement(h.ZP, { backLocation: a, fixed: !1, hideBackButton: P, history: c, leftControl: u, middleControl: m, onBackClick: g, rightControl: b, secondaryBar: E, style: o, subtitle: D ? w : void 0, title: Z, titleDomId: R, titleIconCell: L, titleIconCellSize: B, withWideContainer: I })),
+                        U = x || (F && k) ? null : r.createElement(p.Z.Configure, { SideNavButton: t, TabBar: n, backLocation: a, documentTitle: i, headerless: l, middleControl: m, onBackClick: g, rightControl: b, searchBoxOptions: y, subtitle: w, title: Z, withSearchBox: T, withTweetButton: v });
                     return r.createElement(r.Fragment, null, U, N);
                 }
             }
-            (C.contextType = m.Z), (C.defaultProps = { screenType: "secondaryDetail", showSubtitleOnWideDetail: !0 });
-            const y = (0, u.ZP)(C),
+            (f.contextType = m.Z), (f.defaultProps = { screenType: "secondaryDetail", showSubtitleOnWideDetail: !0 });
+            const y = (0, u.ZP)(f),
                 E = (e) => {
                     const t = (0, o.useHistory)();
                     return (0, a.HD)(t) ? e.children || null : r.createElement(y, e);
@@ -377,26 +377,26 @@
                 m = n(71620),
                 g = n(224504),
                 b = n(668214),
-                f = n(576025),
-                C = n(558369),
+                C = n(576025),
+                f = n(558369),
                 y = n(390387),
                 E = n(38562);
             const S = [],
                 _ = (e) => {
-                    const t = (0, C.FG)(e, "account_country_setting_countries_whitelist"),
-                        n = (0, f.Lf)(e);
+                    const t = (0, f.FG)(e, "account_country_setting_countries_whitelist"),
+                        n = (0, C.Lf)(e);
                     return Array.isArray(t) ? (0, g.t)(t, n) : S;
                 },
                 w = (e, t) => t.location?.query?.flow_status,
                 Z = (0, b.Z)()
                     .propsFromState(() => ({ countryCode: E.eV, countryList: _, changeCountryFlowStatus: w, lang: y.VT }))
-                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, m.zr)("SETTINGS_COUNTRY_SCREEN"), fetchCountryNamesIfNeeded: f.Po, updateSettings: E.VP, fetchSettings: E.wv }))
+                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, m.zr)("SETTINGS_COUNTRY_SCREEN"), fetchCountryNamesIfNeeded: C.Po, updateSettings: E.VP, fetchSettings: E.wv }))
                     .withAnalytics({ page: "settings", section: "country" }),
                 L = "Settings_Country_Selector",
                 B = d().c21037d0,
-                v = d().i2209530,
-                k = d().j924d222,
-                T = (0, a.ju)("https://support.x.com/articles/20169220");
+                k = d().i2209530,
+                T = d().j924d222,
+                v = (0, a.ju)("https://support.x.com/articles/20169220");
             class I extends r.Component {
                 constructor(...e) {
                     super(...e),
@@ -415,8 +415,8 @@
                 }
                 render() {
                     const { countryCode: e, countryList: t, location: n } = this.props,
-                        a = r.createElement(d().I18NFormatMessage, { $i18n: "cd68cf4b" }, r.createElement(s.ZP, { link: T }, d().e9310157));
-                    return r.createElement(u.Z, null, r.createElement(p.Z, { location: n, submitLabel: v, title: k }, r.createElement(o.Z, { style: x.countrySelector }, r.createElement(i.ZP, { helperText: a, label: B, onChange: this._handleCountryChange, options: t, testID: L, value: e || "" }))));
+                        a = r.createElement(d().I18NFormatMessage, { $i18n: "cd68cf4b" }, r.createElement(s.ZP, { link: v }, d().e9310157));
+                    return r.createElement(u.Z, null, r.createElement(p.Z, { location: n, submitLabel: k, title: T }, r.createElement(o.Z, { style: x.countrySelector }, r.createElement(i.ZP, { helperText: a, label: B, onChange: this._handleCountryChange, options: t, testID: L, value: e || "" }))));
                 }
             }
             const x = l.default.create((e) => ({ countrySelector: { margin: e.spaces.space20 } })),
@@ -438,14 +438,14 @@
                 m = n(661461),
                 g = n(390387),
                 b = n(38562);
-            const f = l().cef33711,
-                C = (0, p.Z)()
+            const C = l().cef33711,
+                f = (0, p.Z)()
                     .propsFromState(() => ({ languageCode: g.VT, languageList: m.Nr }))
                     .adjustStateProps(({ languageCode: e, languageList: t }) => ({
                         languageCode: (0, u.o)(e).toLowerCase(),
                         languageList: t.map((e) => {
                             const { code: t, local_name: n, name: r, status: o } = e,
-                                a = "beta" === o ? f({ languageName: r }) : r;
+                                a = "beta" === o ? C({ languageName: r }) : r;
                             return { label: r === n ? a : `${a} - ${n}`, value: t };
                         }),
                     }))
@@ -487,7 +487,7 @@
                     );
                 },
                 Z = s.default.create((e) => ({ languageSelector: { margin: e.spaces.space20 } })),
-                L = C(w);
+                L = f(w);
         },
         264922: (e, t, n) => {
             n.d(t, { Z: () => S });
@@ -507,8 +507,8 @@
             const b = (0, p.Z)()
                     .propsFromState(() => ({ fetchStatus: m.UD, viewerUser: g.ZP.selectViewerUser }))
                     .propsFromActions(() => ({ fetchSettingsIfNeeded: m.Sb, createLocalApiErrorHandler: (0, h.zr)("SETTINGS_LOADER") })),
-                f = "settingsDetailSave",
-                C = c().i2209530;
+                C = "settingsDetailSave",
+                f = c().i2209530;
             class y extends r.Component {
                 constructor(...e) {
                     super(...e),
@@ -518,7 +518,7 @@
                         }),
                         (this._render = () => {
                             const { children: e, onSubmit: t, submitDisabled: n, submitLabel: i, submitType: l, withMarginBottom: c } = this.props;
-                            return r.createElement(o.Z, { style: [E.contentRoot, c && E.withMarginBottom] }, e, t ? r.createElement(r.Fragment, null, r.createElement(a.Z, null), r.createElement(o.Z, { style: E.buttonContainer }, r.createElement(s.ZP, { disabled: n, onPress: t, style: E.button, testID: f, type: l }, i))) : null);
+                            return r.createElement(o.Z, { style: [E.contentRoot, c && E.withMarginBottom] }, e, t ? r.createElement(r.Fragment, null, r.createElement(a.Z, null), r.createElement(o.Z, { style: E.buttonContainer }, r.createElement(s.ZP, { disabled: n, onPress: t, style: E.button, testID: C, type: l }, i))) : null);
                         }),
                         (this._handleFetch = () => {
                             const { createLocalApiErrorHandler: e, fetchSettingsIfNeeded: t } = this.props;
@@ -540,7 +540,7 @@
                     return r.createElement(u.Z, { backLocation: l, onBackClick: e, rightControl: t, screenType: n, secondaryBar: o, showSubtitleOnWideDetail: !1, subtitle: c, title: a, withBottomBorder: i }, s ? this._renderWithFetchSettings() : this._render());
                 }
             }
-            y.defaultProps = { submitLabel: C, submitType: "brandFilled", withMarginBottom: !0 };
+            y.defaultProps = { submitLabel: f, submitType: "brandFilled", withMarginBottom: !0 };
             const E = i.default.create((e) => ({ contentRoot: { backgroundColor: e.colors.cellBackground, backgroundClip: "content-box", justifyContent: "flex-start" }, buttonContainer: { backgroundColor: e.colors.cellBackground, flexDirection: "row", justifyContent: "flex-end", marginVertical: 0, marginHorizontal: "auto", paddingVertical: e.spaces.space12, paddingHorizontal: 0 }, button: { marginVertical: 0, marginHorizontal: e.spaces.space12 }, withMarginBottom: { marginBottom: `calc(${e.spaces.space64} + ${i.default.iPhoneOffsetBottom})` } })),
                 S = b(y);
         },
@@ -610,7 +610,7 @@
                 c = i;
         },
         466818: (e, t, n) => {
-            n.d(t, { ZP: () => f });
+            n.d(t, { ZP: () => C });
             var r = n(202784),
                 o = n(325686),
                 a = n(487552),
@@ -651,7 +651,7 @@
                     this.props.autofocus && this._selectRef && this._selectRef.current && this._selectRef.current.focus();
                 }
                 render() {
-                    const { "aria-describedby": e, disabled: t, errorText: n, hasError: c, helperText: m, options: g, style: f, testID: C, value: y, withEmptyOption: E } = this.props,
+                    const { "aria-describedby": e, disabled: t, errorText: n, hasError: c, helperText: m, options: g, style: C, testID: f, value: y, withEmptyOption: E } = this.props,
                         { isFocused: S } = this.state,
                         _ = l.ZP.getLanguage(),
                         w = void 0 === c ? !!n : c,
@@ -665,11 +665,11 @@
                             const l = "ja" === _ ? u.default.theme.fontFamilies.japan : "rtl" === e || s.Z.isLocaleRTL(_) ? u.default.theme.fontFamilies.rtl : u.default.theme.fontFamilies.normal;
                             return r.createElement(
                                 o.Z,
-                                { style: [i.Z.border, b.container, t && i.Z.disabled, S && i.Z.focusedBorderValid, w && i.Z.invalidBorderColor, S && w && i.Z.focusedBorderInvalid, f] },
+                                { style: [i.Z.border, b.container, t && i.Z.disabled, S && i.Z.focusedBorderValid, w && i.Z.invalidBorderColor, S && w && i.Z.focusedBorderInvalid, C] },
                                 this._renderLabel(),
                                 r.createElement(
                                     h,
-                                    { "aria-describedby": L, "aria-invalid": w, "aria-labelledby": this._labelID, disabled: t, id: this._id, onBlur: this._handleBlur, onChange: this._handleChange, onFocus: this._handleFocus, ref: this._selectRef, style: [b.select, { fontFamily: l }, t && i.Z.disabled], testID: C || "", value: y },
+                                    { "aria-describedby": L, "aria-invalid": w, "aria-labelledby": this._labelID, disabled: t, id: this._id, onBlur: this._handleBlur, onChange: this._handleChange, onFocus: this._handleFocus, ref: this._selectRef, style: [b.select, { fontFamily: l }, t && i.Z.disabled], testID: f || "", value: y },
                                     E ? r.createElement(p, { disabled: !0, style: b.option, value: "" }) : null,
                                     g.map((e) => {
                                         const { disabled: t, label: n, value: o } = e;
@@ -697,25 +697,12 @@
             }
             g.defaultProps = { disabled: !1, autofocus: !1, withEmptyOption: !1 };
             const b = u.default.create((e) => ({ container: { backgroundColor: e.colors.cellBackground }, dropdownCaret: { color: e.colors.gray700, height: "1.5em", pointerEvents: "none", position: "absolute", marginTop: "-0.75em", top: "50%", end: e.spaces.space12 }, label: { position: "absolute", fontSize: e.fontSizes.subtext2, paddingHorizontal: e.spaces.space8, paddingTop: e.spaces.space8, pointerEvents: "none", lineHeight: e.lineHeights.subtext2 }, option: { backgroundColor: e.colors.navigationBackground }, select: { appearance: "none", backgroundColor: "transparent", borderRadius: e.borderRadii.none, borderWidth: e.borderWidths.none, color: e.colors.text, cursor: "pointer", fontSize: e.fontSizes.headline2, lineHeight: e.lineHeights.headline2, margin: 0, marginTop: e.spaces.space16, outlineStyle: "none", padding: 0, paddingTop: e.spaces.space12, paddingBottom: e.spaces.space8, paddingHorizontal: e.spaces.space8 }, helperText: { fontSize: e.fontSizes.subtext2, paddingHorizontal: e.spaces.space8, paddingTop: e.spaces.space2 } })),
-                f = g;
+                C = g;
         },
         183806: (e, t, n) => {
             n.d(t, { Z: () => r });
             const r = n(392237).default.create((e) => ({ border: { borderRadius: e.borderRadii.small, borderWidth: e.borderWidths.small, borderColor: e.colors.gray200 }, focusedBorderValid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.primary}`, borderColor: e.colors.primary }, focusedBorderInvalid: { boxShadow: `0 0 0 ${e.borderWidths.small} ${e.colors.red500}` }, invalidBorderColor: { borderColor: e.colors.red500 }, invalidColor: { color: e.colors.red500 }, validColor: { color: e.colors.primary }, validIconColor: { color: e.colors.green500 }, disabled: { cursor: "default", opacity: 0.5, backgroundColor: e.colors.gray50, borderColor: e.colors.gray50 } }));
         },
-        487552: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => l });
-            var r = n(202784),
-                o = n(890601),
-                a = n(783427),
-                s = n(347101);
-            const i = (e = {}) => {
-                const { direction: t } = (0, a.Z)();
-                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M3.543 8.96l1.414-1.42L12 14.59l7.043-7.05 1.414 1.42L12 17.41 3.543 8.96z" })) }, { writingDirection: t });
-            };
-            i.metadata = { width: 24, height: 24 };
-            const l = i;
-        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsInternals.f9ff143a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SettingsInternals.2b49790a.js.map

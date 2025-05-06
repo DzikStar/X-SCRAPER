@@ -1710,6 +1710,7 @@
                 n("d78131b9", function (e) {
                     return "@" + e.screenName + "-কে সূচী থেকে যোগ করুন/অপসারণ করুন";
                 }),
+                n("b3b642fc", "Why this post?"),
                 n("fb4ee11c", "এই বিজ্ঞাপনটি কেন?"),
                 n("ad50e7d9", function (e) {
                     return e.entity + " অ্যানালিটিক্স দেখুন";
@@ -1908,9 +1909,9 @@
                 n("b6510e68", "আপনার নিবন্ধের লিঙ্ক কপি করুন যাতে আপনি এটিকে শেয়ার করতে পারেন।"),
                 n("e4a6e006", "কোন একটা সমস্যা হয়েছে। অনুগ্রহ করে আবার চেষ্টা করুন।"),
                 n("eff483e0", "আপনি নিবন্ধটি পাবলিশ করার পর সেটিকে শেয়ার করার জন্য একটি লিঙ্ক পান।"),
-                n("ca15dd4e", "পূর্বলেখ"),
-                n("bb40bf66", "প্রকাশিত");
-            n("h107935c", "এই মুহুর্তে শেষবার সেভ করা হয়েছে"),
+                n("ca15dd4e", "পূর্বলেখ");
+            n("bb40bf66", "প্রকাশিত"),
+                n("h107935c", "এই মুহুর্তে শেষবার সেভ করা হয়েছে"),
                 n("a753a870", "প্রয়োগ করুন"),
                 n("afccc67e", "নিবন্ধের লিঙ্ককপি করুন"),
                 n("beb24e9e", "URL ক্লিপবোর্ডে কপি করা হয়েছে"),
@@ -2427,6 +2428,7 @@
                     return e.entity + " সম্পর্কে রিপোর্ট করুন";
                 }),
                 n("e3fd237e", "বিজ্ঞপ্তি সম্পর্কে রিপোর্ট করুন"),
+                n("ebb7662a", "পোস্টের বিষয়ে রিপোর্ট করুন"),
                 n("d1e21610", "NetzDG লঙ্ঘনের রিপোর্ট করুন"),
                 n("d7513755", function (e) {
                     return "এই কমিউনিটিতে @" + e.screenName + "-এর পোস্ট অনুসন্ধান করুন";
@@ -2959,15 +2961,15 @@
                 n("c6f58084", "বিকাশকারীগণ"),
                 n("d83f18d2", "ডিরেক্টরি"),
                 n("hc5aa17c", "X অ্যাপ পান"),
-                n("j0693948", "Grok অ্যাপ পান"),
-                n("af781666", "What do people think?"),
-                n("ad35153e", "বিটা");
-            n("fbf83158", "সতর্কতা: পেমেন্ট ব্যর্থ হয়েছে"),
+                n("j0693948", "Grok অ্যাপ পান");
+            n("af781666", "লোকজন কী মনে ভাববেন?"),
+                n("ad35153e", "বিটা"),
+                n("fbf83158", "সতর্কতা: পেমেন্ট ব্যর্থ হয়েছে"),
                 n("jadeb4da", "আপনার সাবস্ক্রিপশনের সুযোগ-সুবিধা হারানোর আগে অনুগ্রহ করে জরুরি ভিত্তিতে আপনার পেমেন্ট পদ্ধতি আপডেট করুন।"),
                 n("bce3726a", "বিলিং আপডেট করুন"),
                 n("fce9ecce", "প্রস্তাবিত ভিডিও"),
-                n("dc954b88", "Try the full news experience"),
-                n("j66b95a2", "In-Depth News"),
+                n("dc954b88", "সম্পূর্ণ খবরের অভিজ্ঞতা ব্যবহার করে দেখুন"),
+                n("j66b95a2", "খবরের গভীরতায়"),
                 n("b58d2bd2", "প্রাসঙ্গিক পোস্টসমূহ"),
                 n("efe6ef9e", "পোস্ট দেখুন"),
                 n("b3d183ce", "উত্তর সহ পোস্ট"),
@@ -3875,10 +3877,10 @@
                 n("j245c654", "বক্তা"),
                 n("eda23a02", "শ্রোতা"),
                 n("b90eb348", "বলার জন্য আমন্ত্রণ জানান"),
-                n("d9a63e82", "বক্তা হিসেবে তাকে সরিয়ে দিন"),
-                n("bd917b26", "কো-হোস্টে আমন্ত্রণ জানান"),
-                n("d7357e7e", "কো-হোস্ট থেকে সরান");
-            n("bf307fc0", "ব্লক করুন এবং সরিয়ে দিন"),
+                n("d9a63e82", "বক্তা হিসেবে তাকে সরিয়ে দিন");
+            n("bd917b26", "কো-হোস্টে আমন্ত্রণ জানান"),
+                n("d7357e7e", "কো-হোস্ট থেকে সরান"),
+                n("bf307fc0", "ব্লক করুন এবং সরিয়ে দিন"),
                 n("ccf2f24e", "রিপোর্ট"),
                 n("i22835de", "অনুমোদন দিন"),
                 n("cb59a0fe", "অস্বীকার"),
@@ -4152,7 +4154,6 @@
                 n("bcbf5b6e", "শেয়ার করা হচ্ছে"),
                 n("j7b5c844", "আপনি সর্বজনীনভাবে যেসব কথোপকথনের শেয়ার করেন সেগুলির জন্য নিজেই দায়বদ্ধ থাকবেন। Grok-এর সাথে আপনার কথোপকথনে আপনার বা অন্যদের সম্পর্কে সংবেদনশীল এবং গোপনীয় তথ্য শেয়ার করা এড়িয়ে চলুন (আমাদের সহায়তা কেন্দ্র দেখুন)।"),
                 n("c9f7c196", "সহায়তা কেন্দ্র"),
-                n("b63d3d36", "অ্যাটাচ করুন"),
                 n("c65f7308", "সার্ভার এখন প্রস্তুত হচ্ছে"),
                 n("f2a8655e", "Grok Advanced টুলিং বর্তমানে উপলব্ধ নেই।"),
                 n("c26b9b9c", "ফাইল"),
@@ -4167,8 +4168,8 @@
                 n("e9b6d404", "কোন কোন অনুসন্ধানের টুলে Grok-এর অ্যাক্সেস থাকা উচিত?"),
                 n("h15dce2e", "অ্যাডভান্সড সেটিংস"),
                 n("ff9dc268", "প্রম্পট এডিট করুন"),
-                n("acb2baa0", "Create Images"),
-                n("h30fd372", "Try Voice Mode"),
+                n("acb2baa0", "ছবি তৈরি করুন"),
+                n("h30fd372", "ভয়েস মোড ব্যবহার করে দেখুন"),
                 n("e9fcdd0c", "Grok-কে খুব তীব্রতার সাথে ওয়েবে অনুসন্ধান করতে বলুন"),
                 n("fc4e8aba", "Grok-কে ধাপে ধাপে যুক্তি দিতে বলুন"),
                 n("e4ae6abe", "Grok-কে আপনার ছবি রূপান্তর করতে বলুন"),
@@ -4337,7 +4338,7 @@
                 n("g01599b6", "উত্তর 1"),
                 n("e02694e0", "উত্তর 2"),
                 n("h6867fcc", "আমি এই উত্তরটি পচ্ছন্দ করছি"),
-                n("d07488a6", "Get the Android app"),
+                n("d07488a6", "Android অ্যাপ পান"),
                 n("d9cfe70c", "অ্যাডভান্সড Grok বৈশিষ্ট্যগুলি অ্যাক্সেস করুন"),
                 n("hf9afab0", "দ্রুত, এজেন্টিক অনুসন্ধানের মাধ্যমে ইন্টারনেট এবং X স্ক্যান করতে, তথ্য বিশ্লেষণ করতে এবং বিস্তারিত, যুক্তিসঙ্গত উত্তর প্রদান করতে DeepSearch সক্ষম করুন।"),
                 n("ef3b3f04", 'আমাদের যুক্তিসঙ্গত মডেল ব্যবহার করার জন্য চিন্তা-ভাবনা সক্ষম করুন। এটি অঙ্ক, বিজ্ঞান এবং কোডিংয়ের জন্য সবচেয়ে ভালো। আপনি Grok কে যেকোনো প্রশ্ন সম্পর্কে "আরও ভালোভাবে চিন্তা করতে" বলতে পারেন যার জন্য একটু বেশি মস্তিষ্কের শক্তির প্রয়োজন হতে পারে। '),
@@ -4346,7 +4347,7 @@
                 n("e3584f8e", "হেজ ফান্ড দ্বারা ব্যবহৃত 10টি সবচেয়ে সফল অপশন ট্রেডিং কৌশল কী কী?"),
                 n("d91b7b8a", "1885 সালে একটি বিশ্ববিদ্যালয় তৈরি করতে কত খরচ হতে পারতো?"),
                 n("ia5bef3e", "আজ আমি কীভাবে আপনাকে সহায়তা করতে পারি?"),
-                n("ebea5880", "Recent Conversations"),
+                n("ebea5880", "সাম্প্রতিক কথা-বার্তা"),
                 n("e13591c0", "উদাহরণ Grok কথা-বার্তা"),
                 n("c27ca452", "Premium সাবস্ক্রাইবাররা এখন X-এ আমাদের সবচেয়ে অ্যাডভান্সড AI, Grok ব্যবহার করতে পারবেন।"),
                 n("b6abc25a", "Grok 2 নিয়ে আসা হচ্ছে"),
@@ -4908,9 +4909,9 @@
                 n("jb6f9292", 'যথাযথভাবে "ai স্টার্টআপ" শব্দাবলী আছে'),
                 n("j8ee77c4", '"ai স্টার্টআপ"'),
                 n("d0480758", 'হয় "ai" বা "স্টার্টআপ" (বা দুটিই) আছে'),
-                n("f0048fa2", "ai স্টার্টআপai বা স্টার্টআপ"),
-                n("da0df186", '"ai" আছে কিন্তু "স্টার্টআপ" নেই');
-            n("f2f463ea", "ai -স্টার্টআপ"),
+                n("f0048fa2", "ai স্টার্টআপai বা স্টার্টআপ");
+            n("da0df186", '"ai" আছে কিন্তু "স্টার্টআপ" নেই'),
+                n("f2f463ea", "ai -স্টার্টআপ"),
                 n("a10a357e", '"ai" শব্দ এবং সেটিতে 50টি লাইক আছে'),
                 n("ca8ed1e8", "ai min_faves:50"),
                 n("i945a3f2", '"ai" এবং URL আছে তার সাথে "grok" আছে'),
@@ -5874,9 +5875,9 @@
                 n("hb52cc4a", "অনুগ্রহ করে পরে আবার চেষ্টা করুন।"),
                 n("e50e1bb0", "কমিউনিটিতে স্বাগত"),
                 n("i6829daa", "কমিউনিটি হলো সংযত আলোচনার গ্রুপ, যেখানে X-এর লোকজন সংযোগ ও শেয়ার করতে পারে"),
-                n("fc5c6914", "আপনার পছন্দসই বিষয়গুলোর সাহায্যে অন্যদের সঙ্গে দেখা করুন"),
-                n("aa1a9820", "আপনার আগ্রহগুলির সাথে মেলে এমন লোকজনের সাথে মিশতে কমিউনিটিগুলিতে যোগদান করুন।");
-            n("edef4c82", "একটি কমিউনিটিতে সরাসরি পোস্ট করুন"),
+                n("fc5c6914", "আপনার পছন্দসই বিষয়গুলোর সাহায্যে অন্যদের সঙ্গে দেখা করুন");
+            n("aa1a9820", "আপনার আগ্রহগুলির সাথে মেলে এমন লোকজনের সাথে মিশতে কমিউনিটিগুলিতে যোগদান করুন।"),
+                n("edef4c82", "একটি কমিউনিটিতে সরাসরি পোস্ট করুন"),
                 n("a7640df6", "আপনার পোস্টগুলি কমিউনিটির সদস্যদের এবং আপনার অনুসরণকারীদের সাথে শেয়ার করা হয়।"),
                 n("h3bb8068", "আপনার যখন প্রয়োজন তখন ফিরে আসুন"),
                 n("a709f8f8", "অ্যাডমিন এবং মডারেটর কমিউনিটি পরিচালনা করতে সাহায্য করে এবং কথা-বার্তাগুলো সঠিক পথে রাখে।"),
@@ -6872,9 +6873,9 @@
                 n("g337328e", "আপনার উত্তরের জন্য সর্বোচ্চ ভিজিবিলিটি পান।"),
                 n("fa006202", "ব্যাকগ্রাউন্ড ভিডিও প্লেব্যাক"),
                 n("jf389778", "ব্রাউজ করা বা অন্যান্য অ্যাপ ব্যবহার করার সময় দেখুন"),
-                n("f2977d80", "বুকমার্ক ফোল্ডার"),
-                n("j1d3d910", "সহজ অ্যাক্সেসের জন্য আপনার সংরক্ষিত পোস্টগুলি সাজিয়ে রাখুন");
-            n("f0f48668", "প্রিমিয়াম সহায়তা"),
+                n("f2977d80", "বুকমার্ক ফোল্ডার");
+            n("j1d3d910", "সহজ অ্যাক্সেসের জন্য আপনার সংরক্ষিত পোস্টগুলি সাজিয়ে রাখুন"),
+                n("f0f48668", "প্রিমিয়াম সহায়তা"),
                 n("c3148608", "কোনও সহায়তার প্রয়োজন হলে দ্রুত সাহায্য পান"),
                 n("b485ca6e", "হাইলাইট ট্যাব"),
                 n("d438955e", "আপনার সেরা পোস্টগুলি প্রদর্শন করুন"),
@@ -7848,8 +7849,7 @@
                 n("c80160d3", "বিজ্ঞাপনের"),
                 n("ff0edac0", "আপনি কী আপনার সাবস্ক্রিপশনটি বাতিল করার বিষয়ে নিশ্চিত?"),
                 n("h2ac0348", "না, আমাকে ফেরত নিয়ে যান "),
-                n("dbf9667e", "আমি নিশ্চিত"),
-                n("j7592572", "ইউ-টার্ন");
+                n("dbf9667e", "আমি নিশ্চিত");
             function t(e, c) {
                 for (var a = 0; a < c.length; a++) {
                     var n = c[a];
@@ -7888,7 +7888,8 @@
                     r(e, c)
                 );
             }
-            n("ee778942", "ট্রাফিক লাইট"),
+            n("j7592572", "ইউ-টার্ন"),
+                n("ee778942", "ট্রাফিক লাইট"),
                 n("fdd57981", function (e) {
                     return "আমরা আপনাকে বিনামূল্যে এককালীন " + e.totalAmount + " USD বিজ্ঞাপন ক্রেডিট অফার করতে চাই।";
                 }),
@@ -8916,13 +8917,13 @@
                 }),
                 n("dc718e53", function (e) {
                     return "+অন্য " + e.count + " জন";
-                }),
-                n("d0e7b11b", function (e) {
-                    return e.date + " " + e.time + " -এ";
                 });
-            n("b4349cbc", function (e) {
-                return "" + e.relativeDay;
+            n("d0e7b11b", function (e) {
+                return e.date + " " + e.time + " -এ";
             }),
+                n("b4349cbc", function (e) {
+                    return "" + e.relativeDay;
+                }),
                 n("ebe41367", function (e) {
                     return "সময় " + e.time;
                 }),
@@ -12865,7 +12866,7 @@
                 p = (m._validateParameterTypeDate, m._dateToPartsFormat, m._dateToPartsFormatterFn),
                 k = (m._dateFormat, m._dateFormatterFn),
                 N = m._relativeTimeFormatterFn,
-                l = m._unitFormatterFn;
+                X = m._unitFormatterFn;
             (m.a1243793601 = s(["", , 1, 0, 1, , , , 3, 2, "", "#,##,##0.###", "-#,##,##0.###", "-", "", g("truncate"), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }, "০১২৩৪৫৬৭৮৯", { 3: { one: "0 হাজার", other: "0 হাজার" }, 4: { one: "00 হাজার", other: "00 হাজার" }, 5: { one: "0 লাখ", other: "0 লাখ" }, 6: { one: "0M", other: "0M" }, 7: { one: "00M", other: "00M" }, 8: { one: "000M", other: "000M" }, 9: { one: "0B", other: "0B" }, 10: { one: "00B", other: "00B" }, 11: { one: "000B", other: "000B" }, 12: { one: "0T", other: "0T" }, 13: { one: "00T", other: "00T" }, 14: { one: "000T", other: "000T" }, maxExponent: 14 }], m("bn").pluralGenerator({}))),
                 (m.b554273779 = s(["", , 1, 0, 3, , , , 3, 2, "", "#,##,##0.###", "-#,##,##0.###", "-", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }, "০১২৩৪৫৬৭৮৯"])),
                 (m.b923134963 = s(["", , 1, 0, 2, , , , 3, 2, "", "#,##,##0.###", "-#,##,##0.###", "-", "", g("round"), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }, "০১২৩৪৫৬৭৮৯"])),
@@ -13063,22 +13064,22 @@
                 (m.a1438407935 = k(m("bn").dateToPartsFormatter({ skeleton: "MMMM" }))),
                 (m.b1603313921 = k(m("bn").dateToPartsFormatter({ skeleton: "EEEE" }))),
                 (m.b1074409575 = N(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { "relativeTime-type-future": { "relativeTimePattern-count-one": "{0} দিনের মধ্যে", "relativeTimePattern-count-other": "{0} দিনের মধ্যে" }, "relativeTime-type-past": { "relativeTimePattern-count-one": "{0} দিন আগে", "relativeTimePattern-count-other": "{0} দিন আগে" }, "relative-type--2": "গত পরশু", "relative-type--1": "গতকাল", "relative-type-0": "আজ", "relative-type-1": "আগামীকাল", "relative-type-2": "আগামী পরশু" })),
-                (m.b1420048002 = l(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{1} প্রতি {0}", unitProperties: { displayName: "সেকেন্ড", one: "{0} সেকেন্ড", other: "{0} সেকেন্ড", perUnitPattern: "{0} প্রতি সেকেন্ড" } })),
-                (m.a987955998 = l(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{1} প্রতি {0}", unitProperties: { displayName: "মিনিট", one: "{0} মিনিট", other: "{0} মিনিট", perUnitPattern: "{0} প্রতি মিনিট" } })),
-                (m.a2084942126 = l(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{1} প্রতি {0}", unitProperties: { displayName: "ঘন্টা", one: "{0} ঘন্টা", other: "{0} ঘন্টা", perUnitPattern: "{0} প্রতি ঘন্টা" } })),
-                (m.b1470131905 = l(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "সেকেন্ড", one: "{0} সেঃ", other: "{0} সেঃ", perUnitPattern: "{0}/সে:" } })),
-                (m.a1929306847 = l(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "মিনিট", one: "{0} মিঃ", other: "{0} মিঃ", perUnitPattern: "{0}/মি:" } })),
-                (m.b428978961 = l(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "ঘন্টা", one: "{0} ঘঃ", other: "{0} ঘঃ", perUnitPattern: "{0}/ঘ:" } })),
-                (m.a277603157 = l(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "দিন", one: "{0} দিন", other: "{0} দিন", perUnitPattern: "{0}/দিন" } })),
-                (m.a92383508 = l(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{1} প্রতি {0}", unitProperties: { displayName: "দিন", one: "{0} দিন", other: "{0} দিন", perUnitPattern: "{0} প্রতি দিন" } })),
-                (m.a81498745 = l(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "মাস", one: "{0} মাস", other: "{0} মাস", perUnitPattern: "{0}/মাস" } })),
-                (m.b1820667592 = l(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{1} প্রতি {0}", unitProperties: { displayName: "মাস", one: "{0} মাস", other: "{0} মাস", perUnitPattern: "{0} প্রতি মাস" } })),
-                (m.a975583432 = l(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "বছর", one: "{0} বছর", other: "{0} বছর", perUnitPattern: "{0}/বছর" } })),
-                (m.b729235641 = l(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{1} প্রতি {0}", unitProperties: { displayName: "বছর", one: "{0} বছর", other: "{0} বছর", perUnitPattern: "{0} প্রতি বছর" } })),
-                (m.a661508558 = l(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "সেকেন্ড", one: "{0} সেকেন্ড", other: "{0} সেকেন্ড", perUnitPattern: "{0} প্রতি সেকেন্ড" } })),
-                (m.b1999778770 = l(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "মিনিট", one: "{0} মিনিট", other: "{0} মিনিট", perUnitPattern: "{0} প্রতি মিনিট" } })),
-                (m.a1942020126 = l(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "ঘন্টা", one: "{0} ঘন্টা", other: "{0} ঘন্টা", perUnitPattern: "{0} প্রতি ঘন্টা" } })),
-                (m.a1393778542 = l(m("bn").numberFormatter({ minimumFractionDigits: 1, maximumFractionDigits: 1, round: "truncate" }), m("bn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "সেকেন্ড", one: "{0} সেঃ", other: "{0} সেঃ", perUnitPattern: "{0}/সে:" } })),
+                (m.b1420048002 = X(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{1} প্রতি {0}", unitProperties: { displayName: "সেকেন্ড", one: "{0} সেকেন্ড", other: "{0} সেকেন্ড", perUnitPattern: "{0} প্রতি সেকেন্ড" } })),
+                (m.a987955998 = X(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{1} প্রতি {0}", unitProperties: { displayName: "মিনিট", one: "{0} মিনিট", other: "{0} মিনিট", perUnitPattern: "{0} প্রতি মিনিট" } })),
+                (m.a2084942126 = X(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{1} প্রতি {0}", unitProperties: { displayName: "ঘন্টা", one: "{0} ঘন্টা", other: "{0} ঘন্টা", perUnitPattern: "{0} প্রতি ঘন্টা" } })),
+                (m.b1470131905 = X(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "সেকেন্ড", one: "{0} সেঃ", other: "{0} সেঃ", perUnitPattern: "{0}/সে:" } })),
+                (m.a1929306847 = X(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "মিনিট", one: "{0} মিঃ", other: "{0} মিঃ", perUnitPattern: "{0}/মি:" } })),
+                (m.b428978961 = X(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "ঘন্টা", one: "{0} ঘঃ", other: "{0} ঘঃ", perUnitPattern: "{0}/ঘ:" } })),
+                (m.a277603157 = X(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "দিন", one: "{0} দিন", other: "{0} দিন", perUnitPattern: "{0}/দিন" } })),
+                (m.a92383508 = X(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{1} প্রতি {0}", unitProperties: { displayName: "দিন", one: "{0} দিন", other: "{0} দিন", perUnitPattern: "{0} প্রতি দিন" } })),
+                (m.a81498745 = X(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "মাস", one: "{0} মাস", other: "{0} মাস", perUnitPattern: "{0}/মাস" } })),
+                (m.b1820667592 = X(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{1} প্রতি {0}", unitProperties: { displayName: "মাস", one: "{0} মাস", other: "{0} মাস", perUnitPattern: "{0} প্রতি মাস" } })),
+                (m.a975583432 = X(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "বছর", one: "{0} বছর", other: "{0} বছর", perUnitPattern: "{0}/বছর" } })),
+                (m.b729235641 = X(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{1} প্রতি {0}", unitProperties: { displayName: "বছর", one: "{0} বছর", other: "{0} বছর", perUnitPattern: "{0} প্রতি বছর" } })),
+                (m.a661508558 = X(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "সেকেন্ড", one: "{0} সেকেন্ড", other: "{0} সেকেন্ড", perUnitPattern: "{0} প্রতি সেকেন্ড" } })),
+                (m.b1999778770 = X(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "মিনিট", one: "{0} মিনিট", other: "{0} মিনিট", perUnitPattern: "{0} প্রতি মিনিট" } })),
+                (m.a1942020126 = X(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "ঘন্টা", one: "{0} ঘন্টা", other: "{0} ঘন্টা", perUnitPattern: "{0} প্রতি ঘন্টা" } })),
+                (m.a1393778542 = X(m("bn").numberFormatter({ minimumFractionDigits: 1, maximumFractionDigits: 1, round: "truncate" }), m("bn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "সেকেন্ড", one: "{0} সেঃ", other: "{0} সেঃ", perUnitPattern: "{0}/সে:" } })),
                 n("d58baa7f", m.a1243793601),
                 n("ia24dc8d", m.b554273779),
                 n("iab73d4b", m.b923134963),
@@ -13202,4 +13203,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/bn.e5673faa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/bn.145c9faa.js.map

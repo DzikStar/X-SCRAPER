@@ -17,7 +17,7 @@
             e.exports = { queryId: "9Hyh5D4-WXLnExZkONSkZg", operationName: "GrokHistory", operationType: "query", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
         369111: (e) => {
-            e.exports = { queryId: "i8RyUtwTC_hp0bFeYNyCOQ", operationName: "GrokHome", operationType: "query", metadata: { featureSwitches: [], fieldToggles: [] } };
+            e.exports = { queryId: "IGHBZzBjkQ0I7TA4WKv32A", operationName: "GrokHome", operationType: "query", metadata: { featureSwitches: [], fieldToggles: [] } };
         },
         551632: (e) => {
             e.exports = { queryId: "azn3Sg0APPjb2Jtd7gqxsw", operationName: "GrokMediaHistory", operationType: "query", metadata: { featureSwitches: [], fieldToggles: [] } };
@@ -247,7 +247,7 @@
                         { height: k, width: x } = r.original_info || {},
                         { height: S, width: T } = b,
                         I = (0, y.hC)("rweb_video_vertical_aspect_ratio_enabled"),
-                        D = I || C || o ? (0, w.I5)({ mediaWidth: x, mediaHeight: k, containerWidth: T, containerHeight: S }, o) : Y.mediaItem;
+                        D = I || C || o ? (0, w.I5)({ mediaWidth: x, mediaHeight: k, containerWidth: T, containerHeight: S }, o) : W.mediaItem;
                     return n.createElement(
                         Z,
                         {
@@ -263,14 +263,14 @@
                                           (o === b.width && t === b.height) || v({ width: o, height: t });
                                       }
                                     : void 0,
-                            style: Y.root,
+                            style: W.root,
                         },
                         p
                             ? n.createElement(g.Z, {
                                   onRetry: () => {
                                       f(null);
                                   },
-                                  style: Y.errorDetail,
+                                  style: W.errorDetail,
                                   title: V,
                                   withLightOnDarkColorScheme: !0,
                               })
@@ -289,7 +289,7 @@
                                       ? n.createElement(
                                             M,
                                             (0, u.Z)({}, c, {
-                                                imageStyle: o && !t && Y.avatarImage,
+                                                imageStyle: o && !t && W.avatarImage,
                                                 onError: (e) => {
                                                     f(e.nativeEvent.error);
                                                 },
@@ -298,19 +298,19 @@
                                                 },
                                                 onTap: d,
                                                 photo: r,
-                                                style: Y.container,
+                                                style: W.container,
                                                 zoomable: !0,
                                             }),
                                         )
                                       : s.Z.isVideo(r) && _
-                                        ? n.createElement(A, { isCurrentlyDisplayed: a, isVerticalVideoNoBlackBars: I, promotedContent: h, style: Y.container, video: r, videoId: _ })
+                                        ? n.createElement(A, { isCurrentlyDisplayed: a, isVerticalVideoNoBlackBars: I, promotedContent: h, style: W.container, video: r, videoId: _ })
                                         : null,
                               ),
                     );
                 },
-                Y = l.default.create((e) => ({ root: { flexGrow: 1, justifyContent: "center", alignItems: "center", flexShrink: 1 }, mediaItem: { flexGrow: 1, width: "100%", height: "100%" }, container: { height: "100%", position: "absolute", width: "100%" }, errorDetail: { alignItems: "center", alignSelf: "center", justifyContent: "center", position: "absolute", height: "100%", maxWidth: 400 }, avatarImage: { borderRadius: e.borderRadii.infinite, margin: e.spaces.space16 } })),
-                R = n.memo(N, (e, t) => (0, d.Z)(e, t));
-            class W extends n.Component {
+                W = l.default.create((e) => ({ root: { flexGrow: 1, justifyContent: "center", alignItems: "center", flexShrink: 1 }, mediaItem: { flexGrow: 1, width: "100%", height: "100%" }, container: { height: "100%", position: "absolute", width: "100%" }, errorDetail: { alignItems: "center", alignSelf: "center", justifyContent: "center", position: "absolute", height: "100%", maxWidth: 400 }, avatarImage: { borderRadius: e.borderRadii.infinite, margin: e.spaces.space16 } })),
+                Y = n.memo(N, (e, t) => (0, d.Z)(e, t));
+            class R extends n.Component {
                 constructor(e, t) {
                     super(e, t),
                         (this._getV2Key = () => {
@@ -361,7 +361,7 @@
                             const c = s.Z.isVideo(i),
                                 p = this._getItemVideoId(i),
                                 u = o === _;
-                            return c && !p ? null : n.createElement(R, { businessAvatar: e, dataSaver: t, isAvatar: this.props.isAvatar, isCurrentlyDisplayed: u, key: _, mediaDetail: a[_], onDismiss: h ? void 0 : r, onTap: l, onZoomed: u ? this._handleMediaDetailZoomed : void 0, promotedContent: d, resetZoom: o !== _, videoId: p });
+                            return c && !p ? null : n.createElement(Y, { businessAvatar: e, dataSaver: t, isAvatar: this.props.isAvatar, isCurrentlyDisplayed: u, key: _, mediaDetail: a[_], onDismiss: h ? void 0 : r, onTap: l, onZoomed: u ? this._handleMediaDetailZoomed : void 0, promotedContent: d, resetZoom: o !== _, videoId: p });
                         });
                     return n.createElement(i.Z, { style: X.root }, a.length > 1 ? this._renderCarousel(_) : _);
                 }
@@ -372,9 +372,9 @@
                     return this.context.featureSwitches.isTrue("responsive_web_carousel_v2_media_detail_enabled") ? n.createElement(a.Z, { childrenStyle: [X.dimensions, X.scrollSnap], dominantButtonColor: t, isLocked: d, key: this._getV2Key(), onVisibleRangeChange: this._handleChangeV2, scrollToCenter: !0, style: X.dimensions, swipeablePaddingLeft: 0, swipeablePaddingRight: 0, visibleItemIndex: o, withAddedNavButtonClickArea: !h, withGlobalKeyboardNavigation: !0, withWraparound: !1 }, e) : n.createElement(r.ZP, { currentSlide: o, dominantColor: t, locked: d, onChange: l, shouldAlwaysEnableKeyboardNavigation: !0 }, e);
                 }
             }
-            (W.contextType = c.rC), (W.defaultProps = { mediaIndex: 0, onMediaDetailZoomed: h.Z, onMediaItemChanged: h.Z });
+            (R.contextType = c.rC), (R.defaultProps = { mediaIndex: 0, onMediaDetailZoomed: h.Z, onMediaItemChanged: h.Z });
             const X = l.default.create((e) => ({ root: { flex: 1, zIndex: 1 }, dimensions: { height: "100%", width: "100%" }, scrollSnap: { scrollSnapAlign: "center", scrollSnapStop: "always" } })),
-                O = p(W);
+                O = p(R);
         },
         827094: (e, t, o) => {
             "use strict";
@@ -664,4 +664,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserAvatar-6107ac1a.ca4b962a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserAvatar-6107ac1a.7e173d1a.js.map

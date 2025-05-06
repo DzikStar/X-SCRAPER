@@ -1709,6 +1709,7 @@
                 i("d78131b9", function (a) {
                     return "Tambah/alih keluar @" + a.screenName + " daripada Senarai";
                 }),
+                i("b3b642fc", "Why this post?"),
                 i("fb4ee11c", "Mengapakah iklan ini?"),
                 i("ad50e7d9", function (a) {
                     return "Lihat " + a.entity + " analitis";
@@ -1907,9 +1908,9 @@
                 i("b6510e68", "Salin URL Artikel anda supaya boleh dikongsi."),
                 i("e4a6e006", "Ada sesuatu yang tidak kena. Sila cuba lagi."),
                 i("eff483e0", "Selepas diterbitkan, dapatkan pautan untuk berkongsi Artikel anda."),
-                i("ca15dd4e", "Draf"),
-                i("bb40bf66", "Diterbitkan");
-            i("h107935c", "Kali terakhir disimpan sebentar tadi"),
+                i("ca15dd4e", "Draf");
+            i("bb40bf66", "Diterbitkan"),
+                i("h107935c", "Kali terakhir disimpan sebentar tadi"),
                 i("a753a870", "Gunakan"),
                 i("afccc67e", "Salin pautan kepada Artikel"),
                 i("beb24e9e", "URL disalin pada papan klip"),
@@ -2426,6 +2427,7 @@
                     return "Laporkan " + a.entity;
                 }),
                 i("e3fd237e", "Laporkan iklan"),
+                i("ebb7662a", "Laporkan siaran"),
                 i("d1e21610", "Laporkan Pelanggaran NetzDG"),
                 i("d7513755", function (a) {
                     return "Cari siaran @" + a.screenName + " dalam Komuniti ini";
@@ -2958,10 +2960,10 @@
                 i("c6f58084", "Pembangun"),
                 i("d83f18d2", "Direktori"),
                 i("hc5aa17c", "Dapatkan aplikasi X"),
-                i("j0693948", "Dapatkan aplikasi Grok"),
-                i("af781666", "Apakah pandangan orang ramai?"),
-                i("ad35153e", "beta");
-            i("fbf83158", "Amaran: Pembayaran gagal"),
+                i("j0693948", "Dapatkan aplikasi Grok");
+            i("af781666", "Apakah pandangan orang ramai?"),
+                i("ad35153e", "beta"),
+                i("fbf83158", "Amaran: Pembayaran gagal"),
                 i("jadeb4da", "Sila kemas kini kaedah pembayaran anda dengan segera sebelum anda kehilangan manfaat langganan anda."),
                 i("bce3726a", "Kemas Kini Pengebilan"),
                 i("fce9ecce", "Video yang Dicadangkan"),
@@ -3874,10 +3876,10 @@
                 i("j245c654", "Pembicara"),
                 i("eda23a02", "Pendengar"),
                 i("b90eb348", "Jemput untuk Berbicara"),
-                i("d9a63e82", "Alih keluar daripada Pembicara"),
-                i("bd917b26", "Jemput untuk menjadi Hos lain"),
-                i("d7357e7e", "Alih keluar daripada menjadi Hos lain");
-            i("bf307fc0", "Sekat dan Alih keluar"),
+                i("d9a63e82", "Alih keluar daripada Pembicara");
+            i("bd917b26", "Jemput untuk menjadi Hos lain"),
+                i("d7357e7e", "Alih keluar daripada menjadi Hos lain"),
+                i("bf307fc0", "Sekat dan Alih keluar"),
                 i("ccf2f24e", "Laporan"),
                 i("i22835de", "Luluskan"),
                 i("cb59a0fe", "Tolak"),
@@ -4151,7 +4153,6 @@
                 i("bcbf5b6e", "Perkongsian"),
                 i("j7b5c844", "Anda bertanggungjawab untuk perbualan yang anda kongsikan secara umum. Elakkan daripada berkongsi maklumat sensitif dan sulit tentang diri anda atau orang lain dalam perbualan anda dengan Grok (lihat Pusat Bantuan kami)."),
                 i("c9f7c196", "Pusat bantuan"),
-                i("b63d3d36", "Lampirkan"),
                 i("c65f7308", "Pelayan sedang memasak sekarang"),
                 i("f2a8655e", "Alatan lanjutan Grok tidak tersedia pada masa ini."),
                 i("c26b9b9c", "Fail"),
@@ -4907,9 +4908,9 @@
                 i("jb6f9292", 'mengandungi frasa tepat "pemula ai"'),
                 i("j8ee77c4", '"pemula ai"'),
                 i("d0480758", 'mengandungi sama ada "ai" atau "pemula" (atau kedua-duanya)'),
-                i("f0048fa2", "ai ATAU pemula"),
-                i("da0df186", 'mengandungi "ai", tetapi tidak mengandungi "pemula"');
-            i("f2f463ea", "ai -pemula"),
+                i("f0048fa2", "ai ATAU pemula");
+            i("da0df186", 'mengandungi "ai", tetapi tidak mengandungi "pemula"'),
+                i("f2f463ea", "ai -pemula"),
                 i("a10a357e", 'mengandungi "ai" dan mempunyai sekurang-kurangnya 50 sukaan'),
                 i("ca8ed1e8", "ai min_faves:50"),
                 i("i945a3f2", 'mengandungi "ai" dan URL yang mengandungi perkataan "grok"'),
@@ -5873,9 +5874,9 @@
                 i("hb52cc4a", "Sila cuba lagi kemudian."),
                 i("e50e1bb0", "Selamat datang ke Komuniti"),
                 i("i6829daa", "Komuniti ialah kumpulan perbincangan yang dikendalikan dan merupakan tempat untuk pengguna di X berhubung dan berkongsi."),
-                i("fc5c6914", "Temui orang lain yang mempunyai minat yang sama seperti anda"),
-                i("aa1a9820", "Sertai Komuniti untuk berhubung dengan orang yang berkongsi minat yang sama seperti anda.");
-            i("edef4c82", "Buat siaran secara terus kepada Komuniti"),
+                i("fc5c6914", "Temui orang lain yang mempunyai minat yang sama seperti anda");
+            i("aa1a9820", "Sertai Komuniti untuk berhubung dengan orang yang berkongsi minat yang sama seperti anda."),
+                i("edef4c82", "Buat siaran secara terus kepada Komuniti"),
                 i("a7640df6", "Siaran anda dikongsi dengan ahli Komuniti dan pengikut anda."),
                 i("h3bb8068", "Dapatkan sandaran apabila diperlukan"),
                 i("a709f8f8", "Pentadbir dan moderator membantu dalam mengurus Komuniti dan memastikan perbualan menepati tujuan."),
@@ -6871,9 +6872,9 @@
                 i("g337328e", "Dapatkan keterlihatan yang tertinggi untuk balasan anda."),
                 i("fa006202", "Main semula video latar belakang"),
                 i("jf389778", "Tonton sambil menyemak imbas atau menggunakan aplikasi lain"),
-                i("f2977d80", "Folder Bookmark"),
-                i("j1d3d910", "Kekalkan siaran yang anda simpan dalam keadaan teratur agar dapat diakses dengan mudah");
-            i("f0f48668", "Sokongan premium"),
+                i("f2977d80", "Folder Bookmark");
+            i("j1d3d910", "Kekalkan siaran yang anda simpan dalam keadaan teratur agar dapat diakses dengan mudah"),
+                i("f0f48668", "Sokongan premium"),
                 i("c3148608", "Dapatkan bantuan dengan lebih pantas apabila anda memerlukan bantuan"),
                 i("b485ca6e", "Tab Sorotan"),
                 i("d438955e", "Tampilkan siaran teratas anda"),
@@ -7847,8 +7848,7 @@
                 i("c80160d3", "Pengiklanan"),
                 i("ff0edac0", "Adakah anda pasti anda ingin membatalkan langganan anda?"),
                 i("h2ac0348", "Tidak, bawa saya kembali"),
-                i("dbf9667e", "Saya pasti"),
-                i("j7592572", "Pusingan U");
+                i("dbf9667e", "Saya pasti");
             function d(a, n) {
                 for (var e = 0; e < n.length; e++) {
                     var i = n[e];
@@ -7887,7 +7887,8 @@
                     u(a, n)
                 );
             }
-            i("ee778942", "Lampu isyarat"),
+            i("j7592572", "Pusingan U"),
+                i("ee778942", "Lampu isyarat"),
                 i("fdd57981", function (a) {
                     return "Kami ingin menawarkan kredit iklan percuma sebanyak " + a.totalAmount + " USD satu kali kepada anda.";
                 }),
@@ -8915,13 +8916,13 @@
                 }),
                 i("dc718e53", function (a) {
                     return "+" + a.count + " yang lain";
-                }),
-                i("d0e7b11b", function (a) {
-                    return a.date + " pada pukul " + a.time;
                 });
-            i("b4349cbc", function (a) {
-                return "" + a.relativeDay;
+            i("d0e7b11b", function (a) {
+                return a.date + " pada pukul " + a.time;
             }),
+                i("b4349cbc", function (a) {
+                    return "" + a.relativeDay;
+                }),
                 i("ebe41367", function (a) {
                     return "Masa " + a.time;
                 }),
@@ -13185,4 +13186,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.815fc0ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.4989a77a.js.map

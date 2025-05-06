@@ -24,8 +24,8 @@
                 f = r(655352),
                 A = r(485785),
                 y = r(125363),
-                v = r(936572),
-                M = r(909622),
+                M = r(936572),
+                v = r(909622),
                 _ = r(919022),
                 E = r(788994),
                 x = r(727828),
@@ -34,8 +34,8 @@
                 C = r(941799),
                 I = r(411052),
                 B = r(293605),
-                T = r(703572),
-                P = r(902821),
+                P = r(703572),
+                T = r(902821),
                 R = r(61261),
                 N = r(736063),
                 O = r(904658);
@@ -51,26 +51,23 @@
             const H = (0, r(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        r.e("icons.5"),
-                        r.e("icons.6"),
-                        r.e("icons.25"),
-                        r.e("icons.22"),
-                        r.e("icons.9"),
-                        r.e("icons.4"),
-                        r.e("icons.15"),
+                        r.e("icons.10"),
+                        r.e("icons.21"),
+                        r.e("icons.16"),
+                        r.e("icons.1"),
+                        r.e("icons.19"),
+                        r.e("icons.0"),
+                        r.e("icons.8"),
+                        r.e("icons.23"),
                         r.e("icons.2"),
-                        r.e("icons.20"),
                         r.e("modules.common-e907d115"),
                         r.e("modules.common-e019dbda"),
                         r.e("icons.7"),
-                        r.e("icons.0"),
-                        r.e("icons.11"),
-                        r.e("icons.27"),
-                        r.e("icons.17"),
-                        r.e("icons.12"),
+                        r.e("icons.9"),
+                        r.e("icons.15"),
+                        r.e("icons.24"),
                         r.e("icons.3"),
-                        r.e("icons.13"),
-                        r.e("icons.18"),
+                        r.e("icons.28"),
                         r.e("modules.audio-6107ac1a"),
                         r.e("modules.audio-b953418a"),
                         r.e("modules.audio-7c51e6a7"),
@@ -81,11 +78,13 @@
                         r.e("modules.audio-e019dbda"),
                         r.e("modules.audio-262c94d4"),
                         r.e("modules.audio-c6fe4ea4"),
-                        r.e("icons.24"),
-                        r.e("icons.10"),
-                        r.e("icons.8"),
                         r.e("icons.26"),
-                        r.e("icons.19"),
+                        r.e("icons.4"),
+                        r.e("icons.13"),
+                        r.e("icons.18"),
+                        r.e("icons.25"),
+                        r.e("icons.29"),
+                        r.e("icons.27"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -116,7 +115,7 @@
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                         r.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
                         r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                        r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2f4a3d25"),
+                        r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-ee359ff7"),
                         r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                         r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                         r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -161,6 +160,7 @@
                         r.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-6cce8a9f"),
                         r.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-ff0fc217"),
                         r.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-93606ba8"),
+                        r.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Articles~bundle.AudioSpacePeek~bundle.Birdwatch~bundle.Brande"),
                         r.e("shared~loader.Typeahead~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSpacePeek~bundle.Bir"),
                         r.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be"),
                         r.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-7a04a44b"),
@@ -292,7 +292,7 @@
             const fe = n.memo(function (e) {
                 const a = { ...ge, ...e },
                     r = (0, U.Ct)();
-                return n.createElement(d.Z, { ref: r, style: [Re.root, e.withMaxHeight && Re.rootWithMaxHeight], testID: a.testID }, n.createElement(ye, a), n.createElement(ve, a), e.withRadarUpsell && n.createElement(d.Z, { style: Re.paddedContainer }, n.createElement(x.Z, { variant: "RadarUpsell" })), n.createElement(Me, a), n.createElement(Ae, a), n.createElement(Pe, a));
+                return n.createElement(d.Z, { ref: r, style: [Re.root, e.withMaxHeight && Re.rootWithMaxHeight], testID: a.testID }, n.createElement(ye, a), n.createElement(Me, a), e.withRadarUpsell && n.createElement(d.Z, { style: Re.paddedContainer }, n.createElement(x.Z, { variant: "RadarUpsell" })), n.createElement(ve, a), n.createElement(Ae, a), n.createElement(Te, a));
             });
             function Ae(e) {
                 const { featureSwitches: a, userClaims: r } = (0, s.QZ)(),
@@ -308,12 +308,12 @@
                     f = a.isTrue("march_madness_brackets_enabled_loggedin_sidebar_popup"),
                     A = l && !i && "/home" === location.pathname;
                 if (e.profileUserId) return n.createElement(n.Fragment, null, D && n.createElement(L, null), n.createElement(c.B, null), e.profileScreenName ? n.createElement(h.Z, { screenName: e.profileScreenName }) : null, n.createElement(b.O, null), o && m && n.createElement(Ee, e), e.isOwnProfile ? n.createElement(B.Z, { entryPoint: "profile" }) : null, S && n.createElement(d.Z, { style: Re.paddedContainer, testID: "profileAnalyticsUpsell" }, n.createElement(x.Z, { variant: "ProfileSidebarAnalyticsUpsell" })), n.createElement(xe, e), n.createElement(_e, e), n.createElement(ke, e));
-                let v = n.createElement(n.Fragment, null, e.withNews && n.createElement(Ze, e), e.withFullNews && n.createElement(Ce, e), e.withNewsLiveTimeline && n.createElement(Te, e), e.withNewsSentiment && n.createElement(Be, e), n.createElement(_e, e), n.createElement(xe, e));
-                return a.isTrue("rweb_sidebar_lower_whats_happening_enabled") && (v = n.createElement(n.Fragment, null, n.createElement(xe, e), e.withNews && n.createElement(Ze, e), e.withFullNews && n.createElement(Ce, e), e.withNewsLiveTimeline && n.createElement(Te, e), e.withNewsSentiment && n.createElement(Be, e), n.createElement(_e, e))), o && (v = n.createElement(n.Fragment, null, m && n.createElement(Ee, e), e.withNews && n.createElement(Ze, e), e.withFullNews && n.createElement(Ce, e), e.withNewsLiveTimeline && n.createElement(Te, e), e.withNewsSentiment && n.createElement(Be, e), n.createElement(_e, e), n.createElement(xe, e))), n.createElement(n.Fragment, null, "/home" === location.pathname ? n.createElement(De, null) : null, D && n.createElement(L, null), A && n.createElement(B.Z, { entryPoint: "home" }), n.createElement(c.B, { userProfileId: e.profileUserId, userProfileScreenName: e.profileScreenName }), n.createElement(u.Z, null), i && a.isTrue("blue_business_admin_sidebar_module_enabled") ? n.createElement(p.Z, null) : null, "/home" === location.pathname && f && n.createElement(F.Z, { link: { pathname: "/i/jf/brackets/welcome" }, occasion: F.c.MarchMadness, withBackgroundImage: !0 }), n.createElement(b.O, null), v, g && n.createElement(d.Z, { style: Re.paddedContainer, testID: "exploreAnalyticsUpsell" }, n.createElement(x.Z, { variant: "ExploreSidebarAnalyticsUpsell" })), n.createElement(ke, e));
+                let M = n.createElement(n.Fragment, null, e.withNews && n.createElement(Ze, e), e.withFullNews && n.createElement(Ce, e), e.withNewsLiveTimeline && n.createElement(Pe, e), e.withNewsSentiment && n.createElement(Be, e), n.createElement(_e, e), n.createElement(xe, e));
+                return a.isTrue("rweb_sidebar_lower_whats_happening_enabled") && (M = n.createElement(n.Fragment, null, n.createElement(xe, e), e.withNews && n.createElement(Ze, e), e.withFullNews && n.createElement(Ce, e), e.withNewsLiveTimeline && n.createElement(Pe, e), e.withNewsSentiment && n.createElement(Be, e), n.createElement(_e, e))), o && (M = n.createElement(n.Fragment, null, m && n.createElement(Ee, e), e.withNews && n.createElement(Ze, e), e.withFullNews && n.createElement(Ce, e), e.withNewsLiveTimeline && n.createElement(Pe, e), e.withNewsSentiment && n.createElement(Be, e), n.createElement(_e, e), n.createElement(xe, e))), n.createElement(n.Fragment, null, "/home" === location.pathname ? n.createElement(De, null) : null, D && n.createElement(L, null), A && n.createElement(B.Z, { entryPoint: "home" }), n.createElement(c.B, { userProfileId: e.profileUserId, userProfileScreenName: e.profileScreenName }), n.createElement(u.Z, null), i && a.isTrue("blue_business_admin_sidebar_module_enabled") ? n.createElement(p.Z, null) : null, "/home" === location.pathname && f && n.createElement(F.Z, { link: { pathname: "/i/jf/brackets/welcome" }, occasion: F.c.MarchMadness, withBackgroundImage: !0 }), n.createElement(b.O, null), M, g && n.createElement(d.Z, { style: Re.paddedContainer, testID: "exploreAnalyticsUpsell" }, n.createElement(x.Z, { variant: "ExploreSidebarAnalyticsUpsell" })), n.createElement(ke, e));
             }
             function ye(e) {
                 const { featureSwitches: a, viewerUserId: r } = (0, s.QZ)(),
-                    t = (0, y.v9)(v.op);
+                    t = (0, y.v9)(M.op);
                 if (!r && !a.isTrue("rweb_enable_logged_out_search_search_bar_enabled")) return null;
                 if (!(0, f.ZP)() || !e.withSearchBox) return null;
                 const i = a.isTrue("rweb_sourcemap_migration"),
@@ -325,7 +325,7 @@
                     n.createElement(d.Z, { style: Re.searchPlaceholder }),
                 );
             }
-            function ve(e) {
+            function Me(e) {
                 const { featureSwitches: a, viewerUserId: r } = (0, s.QZ)(),
                     d = (0, t.useLocation)();
                 if (r) return null;
@@ -333,7 +333,7 @@
                 const l = a.isTrue("march_madness_brackets_enabled_logout_popup");
                 return n.createElement(i.Z, { hideOnError: !0 }, n.createElement(z.g, null, n.createElement(w.Z, null)), l && n.createElement(F.Z, { link: { pathname: "/i/jf/brackets/welcome" }, occasion: F.c.MarchMadness, styleOverrides: { backgroundcolor: "gray0", headercolor: "white", textcolor: "gray900" } }));
             }
-            function Me(e) {
+            function ve(e) {
                 return e.children ? n.Children.map(e.children, (e) => (e ? n.createElement(i.Z, { hideOnError: !0 }, n.createElement(z.g, null, e)) : null)) : null;
             }
             function _e(e) {
@@ -343,7 +343,7 @@
             function Ee(e) {
                 const { viewerUserId: a } = (0, s.QZ)(),
                     r = e.profileUserId || a;
-                return e.withSuggestedVideos && r ? n.createElement(i.Z, { hideOnError: !0 }, n.createElement(z.g, null, n.createElement(T.O, null))) : null;
+                return e.withSuggestedVideos && r ? n.createElement(i.Z, { hideOnError: !0 }, n.createElement(z.g, null, n.createElement(P.O, null))) : null;
             }
             function xe(e) {
                 const { viewerUserId: a } = (0, s.QZ)(),
@@ -354,7 +354,7 @@
                 const { featureSwitches: a, isRestrictedSession: r, viewerUserId: d } = (0, s.QZ)(),
                     t = e.profileUserId || d,
                     l = n.useMemo(() => {
-                        if (t) return (0, M.Z)(t);
+                        if (t) return (0, v.Z)(t);
                     }, [t]);
                 return !r && e.withTopicsToFollow && l && a.isTrue("responsive_web_sidebar_ttf_enabled") ? n.createElement(i.Z, { hideOnError: !0 }, n.createElement(z.g, null, n.createElement(m.Z, { module: l }))) : null;
             }
@@ -366,7 +366,7 @@
                 return d && l ? n.createElement(i.Z, { hideOnError: !0 }, n.createElement(R.Z, null)) : null;
             }
             function Ce(e) {
-                return n.createElement(i.Z, { hideOnError: !0 }, n.createElement(P.Z, null));
+                return n.createElement(i.Z, { hideOnError: !0 }, n.createElement(T.Z, null));
             }
             function Ie(e) {
                 return e.pathname.startsWith("/i/news/a/") || e.pathname.startsWith("/i/news/article/") ? e.pathname.split("/").pop() : null;
@@ -375,11 +375,11 @@
                 const a = Ie((0, t.useLocation)());
                 return n.createElement(i.Z, { hideOnError: !0 }, a ? n.createElement(I.Z, { articleId: a }) : n.createElement(C.Z, null));
             }
-            function Te(e) {
+            function Pe(e) {
                 const a = Ie((0, t.useLocation)());
                 return a ? n.createElement(i.Z, { hideOnError: !0 }, n.createElement(Z.Z, { articleId: a })) : null;
             }
-            function Pe(e) {
+            function Te(e) {
                 return n.createElement(z.g, { type: "transparent" }, n.createElement(E.Z, { textColor: "gray700", withOverflow: !0 }));
             }
             const Re = o.default.create((e) => ({ root: { paddingBottom: e.spaces.space64, paddingTop: e.spaces.space12 }, rootWithMaxHeight: { height: "100vh", overflowX: "hidden", overflowY: "auto" }, searchContainer: { alignItems: "center", backfaceVisibility: "hidden", backgroundColor: e.colors.cellBackground, flexDirection: "row", height: e.componentDimensions.appBarHeight, marginBottom: e.spaces.space12, minHeight: e.spaces.space32, position: "fixed", top: 0, zIndex: e.componentZIndices.appBarZIndex }, withHorizontalPadding: { paddingHorizontal: e.spaces.space16 }, paddedContainer: { paddingBottom: e.spaces.space16 }, searchPlaceholder: { height: e.componentDimensions.appBarHeight } }));
@@ -410,10 +410,10 @@
                     const S = () => {
                             m.scribe({ component: w, action: "click", element: "card" });
                         },
-                        { backgroundcolor: f, buttonSize: A, cardWidth: y, marginbottom: v, textcolor: M } = u ?? {},
+                        { backgroundcolor: f, buttonSize: A, cardWidth: y, marginbottom: M, textcolor: v } = u ?? {},
                         _ = f ? t.default.theme.colors[f] : t.default.theme.colors.gray0,
-                        E = M ? t.default.theme.colors[M] : t.default.theme.colors.gray900,
-                        x = v ? t.default.theme.spaces[v] : t.default.theme.spaces.space16,
+                        E = v ? t.default.theme.colors[v] : t.default.theme.colors.gray900,
+                        x = M ? t.default.theme.spaces[M] : t.default.theme.spaces.space16,
                         k = { [D.MarchMadness]: { header: h.header, description: h.description, legalDisclaimer: h.legalDisclaimer, buttonText: h.buttonText, image: h.image } }[r];
                     return b ? n.createElement(l.Z, { interactiveStyles: null, link: a, onPress: S, style: g.bannerContainer }, n.createElement(i.Z, { resizeMode: "contain", source: { uri: "light" === t.default.theme.paletteName ? k.image.lightMode : k.image.darkMode }, style: { height: 85 } })) : n.createElement(d.Z, { style: [g.card, { backgroundColor: _ }, { maxWidth: y }, { marginBottom: x }], testID: "popupCard" }, n.createElement(d.Z, { style: e ? g.horizontalContent : g.verticalContent }, n.createElement(d.Z, { style: e ? g.textContainer : null }, n.createElement(o.ZP, { size: "headline2", style: [g.popupTitle, { alignSelf: "flex-start" }], weight: "bold" }, k.header), n.createElement(o.ZP, { size: "subtext1", style: [g.popupDescription, { color: E }] }, k.description, " ", e ? null : k.legalDisclaimer)), n.createElement(d.Z, { style: g.buttonContainer }, n.createElement(s.ZP, { backgroundColor: "light" === t.default.theme.paletteName ? "orange300" : "orange600", borderColor: "transparent", link: a, onClick: S, size: "medium", style: [g.popupButton, { width: A }] }, k.buttonText), e && n.createElement(o.ZP, { size: "subtext3", style: [g.legalDisclaimer, { color: E }] }, k.legalDisclaimer))));
                 },
@@ -463,10 +463,10 @@
                 f = { id: "advertising", text: t().a4cf866e, link: (0, n.ju)("https://ads.x.com/?ref=gl-tw-tw-twitter-advertise") },
                 A = { id: "marketing", text: t().df1b7550, link: (0, n.ju)("https://marketing.x.com") },
                 y = { id: "xForBusiness", text: t().he258678, visibleLoggedIn: !0, link: (0, n.ju)("https://business.x.com/?ref=web-twc-ao-gbl-twitterforbusiness&utm_source=twc&utm_medium=web&utm_campaign=ao&utm_content=twitterforbusiness") },
-                v = { id: "developers", text: t().c6f58084, visibleLoggedIn: !0, link: (0, n.ju)("https://developer.x.com") },
-                M = { id: "directory", text: t().d83f18d2, link: (0, n.ju)("https://x.com/i/directory/profiles") },
+                M = { id: "developers", text: t().c6f58084, visibleLoggedIn: !0, link: (0, n.ju)("https://developer.x.com") },
+                v = { id: "directory", text: t().d83f18d2, link: (0, n.ju)("https://x.com/i/directory/profiles") },
                 _ = { id: "settings", text: t().bb081ea2, internal: !0, link: "/settings", excludeOnSettingsPage: !0 },
-                E = (e) => (e ? ((i.text = t().hc5aa17c), (D.text = t().j0693948), [l, i, D, g, s, c, u, v, f, b, m, _]) : [l, i, D, o, s, c, u, b, m, p, h, w, g, S, f, A, y, v, M, _]);
+                E = (e) => (e ? ((i.text = t().hc5aa17c), (D.text = t().j0693948), [l, i, D, g, s, c, u, M, f, b, m, _]) : [l, i, D, o, s, c, u, b, m, p, h, w, g, S, f, A, y, M, v, _]);
         },
         788994: (e, a, r) => {
             r.d(a, { Z: () => f });
@@ -544,4 +544,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1b6af858.119fa0da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1b6af858.c9a24d3a.js.map

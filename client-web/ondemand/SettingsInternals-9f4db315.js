@@ -21,7 +21,7 @@
                 c = new n.fK.Entity("vcards", {}, { idAttribute: (e) => ((0, r.Z)(e.id) ? e.id : e.id_str), processStrategy: s });
         },
         229333: (e, t, o) => {
-            o.d(t, { Z: () => h });
+            o.d(t, { Z: () => u });
             var n = o(202784),
                 r = o(466999),
                 l = o(325686),
@@ -39,7 +39,7 @@
                     return n.createElement(l.Z, { "aria-labelledby": this._listDomId, role: "region" }, n.createElement(r.Z, { "aria-level": 1, id: this._listDomId, role: "heading", style: i.default.visuallyHidden }, t), n.createElement(l.Z, { "aria-label": o }, e));
                 }
             }
-            const h = d;
+            const u = d;
         },
         917009: (e, t, o) => {
             o.d(t, { Z: () => c });
@@ -55,7 +55,7 @@
                 };
         },
         625661: (e, t, o) => {
-            o.d(t, { ZP: () => u });
+            o.d(t, { ZP: () => h });
             var n = o(202784),
                 r = o(614983),
                 l = o.n(r),
@@ -64,10 +64,10 @@
                 s = o(786998),
                 c = o(929028),
                 d = o(386802);
-            function h(e, t, o) {
+            function u(e, t, o) {
                 return e || (!t && o ? "fixed" : void 0);
             }
-            class u extends n.Component {
+            class h extends n.Component {
                 constructor(...e) {
                     super(...e),
                         (this._handleBackClick = () => {
@@ -80,13 +80,13 @@
                         });
                 }
                 _renderContent() {
-                    const { backButtonType: e, centerTitle: t, centeredLogo: o, fixed: r, hideBackButton: l, isFullWidth: i, isLarge: c, leftControl: d, middleControl: u, position: m, rightControl: p, secondaryBar: b, style: f, subtitle: k, title: C, titleDomId: g, titleIconCell: y, titleIconCellSize: B, withBackground: Z, withWideContainer: E } = this.props,
+                    const { backButtonType: e, centerTitle: t, centeredLogo: o, fixed: r, hideBackButton: l, isFullWidth: i, isLarge: c, leftControl: d, middleControl: h, position: m, rightControl: p, secondaryBar: b, style: C, subtitle: y, title: f, titleDomId: k, titleIconCell: B, titleIconCellSize: g, withBackground: Z, withWideContainer: w } = this.props,
                         { isModal: x } = this.context,
-                        w = l ? d : n.createElement(a.Z, { backButtonType: e, onClick: this._handleBackClick }),
+                        E = l ? d : n.createElement(a.Z, { backButtonType: e, onClick: this._handleBackClick }),
                         I = (function (e, t, o) {
                             return e && !(t && o);
                         })(!!Z, x, !!b);
-                    return n.createElement(n.Fragment, null, n.createElement(s.Z, { centerTitle: t, centeredLogo: o, isFullWidth: i, isLarge: c, leftControl: w, middleControl: u, position: h(m, x, r), rightControl: p, style: f, subtitle: k, title: C, titleDomId: g, titleIconCell: y, titleIconCellSize: B, withBackground: I, withWideContainer: E }), b || null);
+                    return n.createElement(n.Fragment, null, n.createElement(s.Z, { centerTitle: t, centeredLogo: o, isFullWidth: i, isLarge: c, leftControl: E, middleControl: h, position: u(m, x, r), rightControl: p, style: C, subtitle: y, title: f, titleDomId: k, titleIconCell: B, titleIconCellSize: g, withBackground: I, withWideContainer: w }), b || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
@@ -95,7 +95,7 @@
                     return t ? n.createElement(i.Z, { style: !!e && o }, this._renderContent()) : this._renderContent();
                 }
             }
-            (u.contextType = d.Z), (u.defaultProps = { fixed: !0, backLocation: "/", isFullWidth: !1, isLarge: !1, withBackground: !0 });
+            (h.contextType = d.Z), (h.defaultProps = { fixed: !0, backLocation: "/", isFullWidth: !1, isLarge: !1, withBackground: !0 });
         },
         947135: (e, t, o) => {
             o.d(t, { Z: () => i });
@@ -150,21 +150,21 @@
                 s = o(415506),
                 c = o(516951),
                 d = o(443781),
-                h = o(376293),
-                u = o(847607),
+                u = o(376293),
+                h = o(847607),
                 m = o(417714),
                 p = o(988823);
             const b = "block",
-                f = "mute",
-                k = "removeFollower",
-                C = "report",
-                g = "share",
-                y = a().j7bb1a43,
-                B = a().hef5960c,
+                C = "mute",
+                y = "removeFollower",
+                f = "report",
+                k = "share",
+                B = a().j7bb1a43,
+                g = a().hef5960c,
                 Z = (0, p.M)((e) => {
                     const { featureSwitches: t } = (0, d.QZ)(),
-                        { onBlock: o, onClose: i, onMute: a, onRemoveFollower: p, onReportUser: Z, onShare: E, onUnblock: x, onUnmute: w, user: I } = e,
-                        _ = [],
+                        { onBlock: o, onClose: i, onMute: a, onRemoveFollower: p, onReportUser: Z, onShare: w, onUnblock: x, onUnmute: E, user: I } = e,
+                        S = [],
                         v = (t, o) => {
                             const { confirm: n, onClose: r } = e;
                             if (t) {
@@ -178,47 +178,47 @@
                         !I.protected &&
                         !I.blocking &&
                         !I.blocked_by &&
-                        _.push({
+                        S.push({
                             Icon: r.Z,
                             onClick: () => {
-                                i(), E();
+                                i(), w();
                             },
-                            testID: g,
-                            text: B,
+                            testID: k,
+                            text: g,
                         });
                     !I.blocking &&
-                        _.push({
-                            ...(0, u.N1)(
+                        S.push({
+                            ...(0, h.N1)(
                                 I,
                                 () => {
                                     i(), a();
                                 },
                                 () => {
-                                    i(), w();
+                                    i(), E();
                                 },
                             ),
-                            testID: f,
+                            testID: C,
                         });
                     I.followed_by &&
-                        _.push({
+                        S.push({
                             ...(0, m.l)({
                                 removeFollowerAction: (e) => {
                                     v(e, p);
                                 },
                                 user: I,
                             }),
-                            testID: k,
+                            testID: y,
                         }),
-                        _.push((0, h.op)({ blockAction: (e) => v(e, o), isSoftBlockEnabled: t.isTrue("xprofile_blocked_by_view_enabled"), source: h.SC.FOLLOWERS_LIST, testID: b, unblockAction: (e) => v(e, x), user: I })),
-                        _.push({
+                        S.push((0, u.op)({ blockAction: (e) => v(e, o), isSoftBlockEnabled: t.isTrue("xprofile_blocked_by_view_enabled"), source: u.SC.FOLLOWERS_LIST, testID: b, unblockAction: (e) => v(e, x), user: I })),
+                        S.push({
                             Icon: s.default,
                             onClick: () => {
                                 i(), Z();
                             },
-                            testID: C,
-                            text: y({ screenName: I.screen_name }),
+                            testID: f,
+                            text: B({ screenName: I.screen_name }),
                         });
-                    const L = _.map(({ Icon: e, onClick: t, testID: o, text: n }) => ({ text: n, onClick: t, Icon: e, testID: o }));
+                    const L = S.map(({ Icon: e, onClick: t, testID: o, text: n }) => ({ text: n, onClick: t, Icon: e, testID: o }));
                     return n.createElement(l.Z, { items: L, onCloseRequested: i });
                 });
         },
@@ -232,15 +232,15 @@
                 s = o(652904),
                 c = o(555079),
                 d = o(625661),
-                h = o(449067),
-                u = o(715601);
+                u = o(449067),
+                h = o(715601);
             class m extends n.Component {
                 constructor(...e) {
                     super(...e),
                         (this._renderChildViewAppBar = () => {
-                            const { appBarRef: e, appBarStyle: t, backButtonType: o, backLocation: l, centerTitle: i, hideBackButton: a, history: s, isFullWidth: h, isLarge: u, middleControl: m, onBackClick: b, rightControl: f, secondaryBar: k, subtitle: C, title: g } = this.props,
-                                { isModal: y } = this.context;
-                            return n.createElement(r.Z, { style: y ? [p.childViewAppBarRoot, p.appBarZindex] : p.appBarZindex }, n.createElement(d.ZP, { backButtonType: o || (y ? "close" : "back"), backLocation: l, centerTitle: i, fixed: !y, hideBackButton: a, history: s, isFullWidth: h, isLarge: u, middleControl: m, onBackClick: b, ref: e, rightControl: f, secondaryBar: k, style: [y && p.appBarModal, t], subtitle: C, title: g, titleDomId: c.Q_ }));
+                            const { appBarRef: e, appBarStyle: t, backButtonType: o, backLocation: l, centerTitle: i, hideBackButton: a, history: s, isFullWidth: u, isLarge: h, middleControl: m, onBackClick: b, rightControl: C, secondaryBar: y, subtitle: f, title: k } = this.props,
+                                { isModal: B } = this.context;
+                            return n.createElement(r.Z, { style: B ? [p.childViewAppBarRoot, p.appBarZindex] : p.appBarZindex }, n.createElement(d.ZP, { backButtonType: o || (B ? "close" : "back"), backLocation: l, centerTitle: i, fixed: !B, hideBackButton: a, history: s, isFullWidth: u, isLarge: h, middleControl: m, onBackClick: b, ref: e, rightControl: C, secondaryBar: y, style: [B && p.appBarModal, t], subtitle: f, title: k, titleDomId: c.Q_ }));
                         }),
                         (this._handleLayout = (e) => {
                             const { onLayout: t } = this.props,
@@ -249,10 +249,10 @@
                         });
                 }
                 render() {
-                    const { "aria-hidden": e, bottomBar: t, children: o, containerStyle: i, documentTitle: a, isFullWidth: c, isLarge: d, renderHeader: m, title: b, withoutBottomBarMobile: f } = this.props,
-                        { isModal: k } = this.context,
-                        C = m ? m(this._renderChildViewAppBar()) : this._renderChildViewAppBar();
-                    return n.createElement(s.Z, null, n.createElement(h.Z.Configure, { documentTitle: a, headerless: !0, title: b }), n.createElement(r.Z, { "aria-hidden": e, onLayout: this._handleLayout, style: [p.root, k && p.rootModal] }, !k && C, n.createElement(l.Z, { isFullWidth: c, isLarge: d, style: [p.container, k && p.containerModal, i] }, k ? n.createElement(u.Z, { style: p.viewport }, C, o) : o), t ? n.createElement(r.Z, { style: [p.bottomBarModal, !k && !f && p.bottomBarMobile] }, n.createElement(l.Z, { isFullWidth: c, isLarge: d }, t)) : null));
+                    const { "aria-hidden": e, bottomBar: t, children: o, containerStyle: i, documentTitle: a, isFullWidth: c, isLarge: d, renderHeader: m, title: b, withoutBottomBarMobile: C } = this.props,
+                        { isModal: y } = this.context,
+                        f = m ? m(this._renderChildViewAppBar()) : this._renderChildViewAppBar();
+                    return n.createElement(s.Z, null, n.createElement(u.Z.Configure, { documentTitle: a, headerless: !0, title: b }), n.createElement(r.Z, { "aria-hidden": e, onLayout: this._handleLayout, style: [p.root, y && p.rootModal] }, !y && f, n.createElement(l.Z, { isFullWidth: c, isLarge: d, style: [p.container, y && p.containerModal, i] }, y ? n.createElement(h.Z, { style: p.viewport }, f, o) : o), t ? n.createElement(r.Z, { style: [p.bottomBarModal, !y && !C && p.bottomBarMobile] }, n.createElement(l.Z, { isFullWidth: c, isLarge: d }, t)) : null));
                 }
             }
             (m.defaultProps = { isFullWidth: !1, isLarge: !1 }), (m.contextType = i.Z);
@@ -271,8 +271,64 @@
                 return e ? r.createElement(l.Z, { title: e }, s) : s;
             };
         },
+        253493: (e, t, o) => {
+            o.d(t, { Z: () => B });
+            var n = o(202784),
+                r = o(107267),
+                l = o(791632),
+                i = o(325686),
+                a = o(537392),
+                s = o(10656),
+                c = o(655352),
+                d = o(555079),
+                u = o(500002),
+                h = o(625661),
+                m = o(449067),
+                p = o(655543),
+                b = o(715601),
+                C = o(392237);
+            const y = C.default.create((e) => ({ fill: { flex: 1, alignSelf: "stretch" }, viewportView: { ...C.default.absoluteFillObject, overflowY: "auto" }, appBarContainer: { position: "sticky", top: 0, backfaceVisibility: "hidden", zIndex: e.componentZIndices.appBarZIndex } }));
+            class f extends n.Component {
+                constructor(...e) {
+                    super(...e),
+                        (this._renderChildren = () => {
+                            const { children: e } = this.props;
+                            return this.context.rootDetailPerColumnScroll ? n.createElement(i.Z, { style: y.fill }, n.createElement(b.Z, { style: y.viewportView }, this._renderInlineNav({ isTwoColumnLayout: !0 }), e)) : e;
+                        });
+                }
+                render() {
+                    return n.createElement(a.ZP, null, ({ containerWidth: e }) => (s.Z.isTwoColumnLayout(e) ? this._renderForTwoColumnLayout() : this._renderForOneColumnLayout()));
+                }
+                _renderForOneColumnLayout() {
+                    const { appBarStyle: e, children: t, leftControl: o, screenType: r, showSubtitleOnRoot: l, showSubtitleOnWideDetail: i, withBottomBorder: a, withDetailOpen: s, ...d } = this.props;
+                    return n.createElement(n.Fragment, null, (0, c.ZP)() ? this._renderInlineNav({ isTwoColumnLayout: !1 }) : n.createElement(m.Z.Configure, d), t);
+                }
+                _renderForTwoColumnLayout() {
+                    const e = this.context.rootDetailPerColumnScroll;
+                    return n.createElement(n.Fragment, null, !e && this._renderInlineNav({ isTwoColumnLayout: !0 }), this._renderChildren());
+                }
+                _renderInlineNav({ isTwoColumnLayout: e }) {
+                    const { SideNavButton: t, TabBar: o, appBarStyle: r, backLocation: l, documentTitle: a, headerless: s, history: c, leftControl: u, middleControl: p, onBackClick: b, rightControl: C, screenType: f, searchBoxOptions: k, secondaryBar: B, showSubtitleOnRoot: g, showSubtitleOnWideDetail: Z, subtitle: w, title: x, titleIconCell: E, titleIconCellSize: I, withDetailOpen: S, withSearchBox: v, withTweetButton: L, withWideContainer: _ } = this.props,
+                        T = "root" === f,
+                        D = "secondaryRoot" === f,
+                        F = "primaryDetail" === f,
+                        P = (F && Z) || (T && g),
+                        M = T || (F && e),
+                        R = T ? d.ey : F ? d.vX : void 0,
+                        W = n.createElement(i.Z, { style: y.appBarContainer }, n.createElement(h.ZP, { backLocation: l, fixed: !1, hideBackButton: M, history: c, leftControl: u, middleControl: p, onBackClick: b, rightControl: C, secondaryBar: B, style: r, subtitle: P ? w : void 0, title: x, titleDomId: R, titleIconCell: E, titleIconCellSize: I, withWideContainer: _ })),
+                        O = T || (D && S) ? null : n.createElement(m.Z.Configure, { SideNavButton: t, TabBar: o, backLocation: l, documentTitle: a, headerless: s, middleControl: p, onBackClick: b, rightControl: C, searchBoxOptions: k, subtitle: w, title: x, withSearchBox: v, withTweetButton: L });
+                    return n.createElement(n.Fragment, null, O, W);
+                }
+            }
+            (f.contextType = p.Z), (f.defaultProps = { screenType: "secondaryDetail", showSubtitleOnWideDetail: !0 });
+            const k = (0, u.ZP)(f),
+                B = (e) => {
+                    const t = (0, r.useHistory)();
+                    return (0, l.HD)(t) ? e.children || null : n.createElement(k, e);
+                };
+        },
         811105: (e, t, o) => {
-            o.d(t, { Z: () => u });
+            o.d(t, { Z: () => h });
             var n = o(202784),
                 r = o(325686),
                 l = o(731708),
@@ -281,11 +337,11 @@
                 s = o.n(a);
             const c = s().c174e46e,
                 d = s().a39075ff,
-                h = i.default.create((e) => ({ listItem: { display: "list-item", listStyleType: "disc", marginBottom: e.spaces.space12, marginStart: e.spaces.space12 }, scopesHeader: { marginBottom: e.spaces.space12, marginTop: e.spaces.space12 }, toggleMoreLink: { color: e.colors.link, weight: "bold" } })),
-                u = (e) => {
+                u = i.default.create((e) => ({ listItem: { display: "list-item", listStyleType: "disc", marginBottom: e.spaces.space12, marginStart: e.spaces.space12 }, scopesHeader: { marginBottom: e.spaces.space12, marginTop: e.spaces.space12 }, toggleMoreLink: { color: e.colors.link, weight: "bold" } })),
+                h = (e) => {
                     const { scopes: t, size: o, title: i } = e,
                         [a, s] = n.useState(!1),
-                        u = n.useCallback(() => {
+                        h = n.useCallback(() => {
                             s((e) => !e);
                         }, []),
                         m = a ? t : t.slice(0, 3),
@@ -293,14 +349,14 @@
                     return n.createElement(
                         n.Fragment,
                         null,
-                        n.createElement(l.ZP, { style: h.scopesHeader, weight: "bold" }, i),
+                        n.createElement(l.ZP, { style: u.scopesHeader, weight: "bold" }, i),
                         n.createElement(
                             r.Z,
                             { role: "list" },
-                            m.map((e) => n.createElement(l.ZP, { color: "subtext2" === o ? "gray700" : void 0, key: e.name, role: "listitem", size: o, style: h.listItem }, e.description)),
+                            m.map((e) => n.createElement(l.ZP, { color: "subtext2" === o ? "gray700" : void 0, key: e.name, role: "listitem", size: o, style: u.listItem }, e.description)),
                         ),
-                        p && a ? n.createElement(l.ZP, { onPress: u, style: h.toggleMoreLink }, c) : null,
-                        p && !a ? n.createElement(l.ZP, { onPress: u, style: h.toggleMoreLink }, d({ n: t.length - 3 })) : null,
+                        p && a ? n.createElement(l.ZP, { onPress: h, style: u.toggleMoreLink }, c) : null,
+                        p && !a ? n.createElement(l.ZP, { onPress: h, style: u.toggleMoreLink }, d({ n: t.length - 3 })) : null,
                     );
                 };
         },
@@ -346,4 +402,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsInternals-9f4db315.840f4f2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsInternals-9f4db315.4b3ee72a.js.map

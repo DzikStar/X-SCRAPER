@@ -1719,6 +1719,7 @@
                 a("d78131b9", function (e) {
                     return "Přidat uživatele @" + e.screenName + " do seznamů nebo ho odebrat";
                 }),
+                a("b3b642fc", "Why this post?"),
                 a("fb4ee11c", "Proč tato reklama?"),
                 a("ad50e7d9", function (e) {
                     return "Zobrazit " + e.entity + " analýz";
@@ -1917,9 +1918,9 @@
                 a("b6510e68", "Kopírujte URL adresu svého článku, abyste ho mohli sdílet."),
                 a("e4a6e006", "Něco se pokazilo. Zkuste to prosím znovu."),
                 a("eff483e0", "Po zveřejnění obdržíte odkaz na sdílení článku."),
-                a("ca15dd4e", "Koncept"),
-                a("bb40bf66", "Publikováno");
-            a("h107935c", "Naposledy uloženo právě teď"),
+                a("ca15dd4e", "Koncept");
+            a("bb40bf66", "Publikováno"),
+                a("h107935c", "Naposledy uloženo právě teď"),
                 a("a753a870", "Použít"),
                 a("afccc67e", "Kopírujte odkaz na článek"),
                 a("beb24e9e", "Adresa URL zkopírována do schránky"),
@@ -2436,6 +2437,7 @@
                     return "Nahlásit " + e.entity;
                 }),
                 a("e3fd237e", "Nahlásit reklamu"),
+                a("ebb7662a", "Nahlásit post"),
                 a("d1e21610", "Nahlásit porušení NetzDG"),
                 a("d7513755", function (e) {
                     return "Hledejte posty @" + e.screenName + " v této komunitě";
@@ -2968,15 +2970,15 @@
                 a("c6f58084", "Vývojáři"),
                 a("d83f18d2", "Adresář"),
                 a("hc5aa17c", "Získejte aplikaci X"),
-                a("j0693948", "Získejte aplikaci Grok"),
-                a("af781666", "What do people think?"),
-                a("ad35153e", "betaverze");
-            a("fbf83158", "Varování: Platba selhala"),
+                a("j0693948", "Získejte aplikaci Grok");
+            a("af781666", "Co si lidé myslí?"),
+                a("ad35153e", "betaverze"),
+                a("fbf83158", "Varování: Platba selhala"),
                 a("jadeb4da", "Než ztratíte výhody ověření a předplatného, urychleně aktualizujte svou platební metodu."),
                 a("bce3726a", "Aktualizujte vyúčtování"),
                 a("fce9ecce", "Navržená videa"),
-                a("dc954b88", "Try the full news experience"),
-                a("j66b95a2", "In-Depth News"),
+                a("dc954b88", "Vyzkoušejte si prostředí zpráv naplno"),
+                a("j66b95a2", "Podrobné zprávy"),
                 a("b58d2bd2", "Relevantní posty"),
                 a("efe6ef9e", "Zobrazit post"),
                 a("b3d183ce", "Post s odpověďmi"),
@@ -3884,10 +3886,10 @@
                 a("j245c654", "Mluvčí"),
                 a("eda23a02", "Posluchači"),
                 a("b90eb348", "Pozvat jako mluvčího"),
-                a("d9a63e82", "Odebrat z mluvčích"),
-                a("bd917b26", "Pozvat spoluhostitele"),
-                a("d7357e7e", "Odebrat ze spoluhostitelů");
-            a("bf307fc0", "Zablokovat a odebrat"),
+                a("d9a63e82", "Odebrat z mluvčích");
+            a("bd917b26", "Pozvat spoluhostitele"),
+                a("d7357e7e", "Odebrat ze spoluhostitelů"),
+                a("bf307fc0", "Zablokovat a odebrat"),
                 a("ccf2f24e", "Hlášení"),
                 a("i22835de", "Schválit"),
                 a("cb59a0fe", "Zamítnout"),
@@ -4161,7 +4163,6 @@
                 a("bcbf5b6e", "Sdílení"),
                 a("j7b5c844", "Jste odpovědní za konverzace, které veřejně sdílíte. Vyhněte se sdílení citlivých a důvěrných informací o sobě nebo o ostatních ve svých konverzacích s funkcí Grok (viz naše centrum nápovědy)."),
                 a("c9f7c196", "Centrum nápovědy"),
-                a("b63d3d36", "Připojit"),
                 a("c65f7308", "Servery jsou momentálně vytížené"),
                 a("f2a8655e", "Nástroj Grok Advanced je momentálně nedostupný."),
                 a("c26b9b9c", "Soubor"),
@@ -4176,8 +4177,8 @@
                 a("e9b6d404", "K jakým vyhledávacím nástrojům by měl mít Grok přístup?"),
                 a("h15dce2e", "Pokročilé nastavení"),
                 a("ff9dc268", "Upravit výzvu"),
-                a("acb2baa0", "Create Images"),
-                a("h30fd372", "Try Voice Mode"),
+                a("acb2baa0", "Vytvořit obrázky"),
+                a("h30fd372", "Vyzkoušet hlasový režim"),
                 a("e9fcdd0c", "Zeptejte se funkce Grok, jak agresivně prohledat web"),
                 a("fc4e8aba", "Zeptejte se funkce Grok, jak můžete uvažovat krok za krokem"),
                 a("e4ae6abe", "Požádejte Groka, aby upravil váš obrázek"),
@@ -4346,7 +4347,7 @@
                 a("g01599b6", "Odpověď 1"),
                 a("e02694e0", "Odpověď 2"),
                 a("h6867fcc", "Dávám přednost této odpovědi"),
-                a("d07488a6", "Get the Android app"),
+                a("d07488a6", "Získat aplikaci Android"),
                 a("d9cfe70c", "Funkce při přístupu k vylepšené funkci Grok"),
                 a("hf9afab0", "Povolte DeepSearch pro skenování internetu a X, analýzu informací a poskytování podrobných, dobře odůvodněných odpovědí s rychlým, agentním vyhledáváním."),
                 a("ef3b3f04", "Povolte funkci Přemýšlet používat náš model uvažování. Je to nejlepší pro oblast matematiky, vědy a kódování. Můžete také požádat Groka, aby „přemýšlel usilovněji“ o jakékoli otázce, která by mohla vyžadovat trochu více mozkové aktivity. "),
@@ -4355,7 +4356,7 @@
                 a("e3584f8e", "Jakých 10 nejúspěšnějších opčních strategií obchodování používají hedgeové fondy"),
                 a("d91b7b8a", "Kolik by stálo vybudování univerzity v roce 1885?"),
                 a("ia5bef3e", "Jak vám dnes můžu pomoct?"),
-                a("ebea5880", "Recent Conversations"),
+                a("ebea5880", "Nedávné konverzace"),
                 a("e13591c0", "Příklad konverzace s Grok"),
                 a("c27ca452", "Předplatitelé Premium mohou nyní používat naši nejpokročilejší umělou inteligenci Grok na platformě X."),
                 a("b6abc25a", "Představujeme Grok 2"),
@@ -4917,9 +4918,9 @@
                 a("jb6f9292", "obsahuje přesně frázi „ai startup“"),
                 a("j8ee77c4", "„ai startup“"),
                 a("d0480758", "obsahuje „ai“ nebo „startup“ (nebo oboje)"),
-                a("f0048fa2", "ai NEBO startup"),
-                a("da0df186", "obsahuje „ai“, ale ne „startup“");
-            a("f2f463ea", "ai -startup"),
+                a("f0048fa2", "ai NEBO startup");
+            a("da0df186", "obsahuje „ai“, ale ne „startup“"),
+                a("f2f463ea", "ai -startup"),
                 a("a10a357e", "obsahuje „ai“ a má nejméně 50 lajků"),
                 a("ca8ed1e8", "ai min_faves:50"),
                 a("i945a3f2", "obsahuje „ai“ a URL adresu, která obsahuje slovo „grok“"),
@@ -5883,9 +5884,9 @@
                 a("hb52cc4a", "Zkuste to za chvíli."),
                 a("e50e1bb0", "Vítají vás komunity"),
                 a("i6829daa", "Komunity představují moderované diskusní skupiny, ve kterých můžou lidé na platformě X konverzovat a sdílet obsah."),
-                a("fc5c6914", "Setkejte se s dalšími lidmi s podobnými zájmy"),
-                a("aa1a9820", "Přidejte se ke Komunitám a spojte se s lidmi, kteří mají stejné zájmy.");
-            a("edef4c82", "Postujte přímo do komunity"),
+                a("fc5c6914", "Setkejte se s dalšími lidmi s podobnými zájmy");
+            a("aa1a9820", "Přidejte se ke Komunitám a spojte se s lidmi, kteří mají stejné zájmy."),
+                a("edef4c82", "Postujte přímo do komunity"),
                 a("a7640df6", "Vaše posty jsou sdíleny s lidmi z komunity a s vašimi sledujícími."),
                 a("h3bb8068", "Vždycky za vámi někdo stojí"),
                 a("a709f8f8", "Správci a moderátoři pomáhají řídit komunity a zajišťovat, aby se konverzace držely tématu."),
@@ -6881,9 +6882,9 @@
                 a("g337328e", "Získejte nejvyšší viditelnost svých odpovědí."),
                 a("fa006202", "Přehrávání videa na pozadí"),
                 a("jf389778", "Sledujte zatímco budete prohlížet nebo používat jiné aplikace"),
-                a("f2977d80", "Složky pro záložky"),
-                a("j1d3d910", "Udržujte své uložené posty uspořádané pro snadný přístup");
-            a("f0f48668", "Prémiová podpora"),
+                a("f2977d80", "Složky pro záložky");
+            a("j1d3d910", "Udržujte své uložené posty uspořádané pro snadný přístup"),
+                a("f0f48668", "Prémiová podpora"),
                 a("c3148608", "Získejte rychlejší pomoc, když ji potřebujete"),
                 a("b485ca6e", "Karta Nejzajímavější"),
                 a("d438955e", "Předveďte své nejlepší posty"),
@@ -7857,8 +7858,7 @@
                 a("c80160d3", "Reklama"),
                 a("ff0edac0", "Opravdu chcete zrušit předplatné?"),
                 a("h2ac0348", "Ne, chci se vrátit"),
-                a("dbf9667e", "Ano"),
-                a("j7592572", "Obrat do protisměru");
+                a("dbf9667e", "Ano");
             function r(e, o) {
                 for (var t = 0; t < o.length; t++) {
                     var a = o[t];
@@ -7897,7 +7897,8 @@
                     i(e, o)
                 );
             }
-            a("ee778942", "Semafor"),
+            a("j7592572", "Obrat do protisměru"),
+                a("ee778942", "Semafor"),
                 a("fdd57981", function (e) {
                     return "Rádi bychom vám nabídli jednorázový kredit na reklamu v hodnotě " + e.totalAmount + " USD.";
                 }),
@@ -8925,13 +8926,13 @@
                 }),
                 a("dc718e53", function (e) {
                     return "+" + e.count + " další" + n(e.count, "", "ch", "", "ch");
-                }),
-                a("d0e7b11b", function (e) {
-                    return e.date + " v " + e.time;
                 });
-            a("b4349cbc", function (e) {
-                return "" + e.relativeDay;
+            a("d0e7b11b", function (e) {
+                return e.date + " v " + e.time;
             }),
+                a("b4349cbc", function (e) {
+                    return "" + e.relativeDay;
+                }),
                 a("ebe41367", function (e) {
                     return "Čas " + e.time;
                 }),
@@ -13198,4 +13199,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/cs.5b00535a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/cs.1fee4b7a.js.map

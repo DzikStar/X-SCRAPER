@@ -1709,6 +1709,7 @@
                 t("d78131b9", function (n) {
                     return "Thêm/xóa @" + n.screenName + " từ Danh sách";
                 }),
+                t("b3b642fc", "Why this post?"),
                 t("fb4ee11c", "Tại sao lại là quảng cáo này?"),
                 t("ad50e7d9", function (n) {
                     return "Xem số liệu phân tích của " + n.entity;
@@ -1907,9 +1908,9 @@
                 t("b6510e68", "Sao chép URL Bài viết để bạn có thể chia sẻ Bài viết này."),
                 t("e4a6e006", "Đã xảy ra lỗi. Hãy thử lại."),
                 t("eff483e0", "Sau khi xuất bản, hãy sao chép liên kết để chia sẻ Bài viết."),
-                t("ca15dd4e", "Bản thảo"),
-                t("bb40bf66", "Đã đăng");
-            t("h107935c", "Lần lưu gần nhất: vừa xong"),
+                t("ca15dd4e", "Bản thảo");
+            t("bb40bf66", "Đã đăng"),
+                t("h107935c", "Lần lưu gần nhất: vừa xong"),
                 t("a753a870", "Áp dụng"),
                 t("afccc67e", "Sao chép liên kết đến Bài viết"),
                 t("beb24e9e", "Đã sao chép URL vào bảng nhớ tạm"),
@@ -2426,6 +2427,7 @@
                     return "Báo cáo " + n.entity;
                 }),
                 t("e3fd237e", "Báo cáo quảng cáo"),
+                t("ebb7662a", "Báo cáo bài đăng"),
                 t("d1e21610", "Báo cáo vi phạm NetzDG"),
                 t("d7513755", function (n) {
                     return "Tìm kiếm bài đăng của @" + n.screenName + " trong Cộng đồng này";
@@ -2958,10 +2960,10 @@
                 t("c6f58084", "Nhà phát triển"),
                 t("d83f18d2", "Danh mục"),
                 t("hc5aa17c", "Tải ứng dụng X"),
-                t("j0693948", "Tải ứng dụng Grok"),
-                t("af781666", "Moi người nghĩ gì?"),
-                t("ad35153e", "bản thử nghiệm");
-            t("fbf83158", "Cảnh báo: Thanh toán không thành công"),
+                t("j0693948", "Tải ứng dụng Grok");
+            t("af781666", "Moi người nghĩ gì?"),
+                t("ad35153e", "bản thử nghiệm"),
+                t("fbf83158", "Cảnh báo: Thanh toán không thành công"),
                 t("jadeb4da", "Vui lòng cập nhật gấp phương thức thanh toán trước khi mất lợi ích của gói thuê bao."),
                 t("bce3726a", "Cập nhật thông tin thanh toán"),
                 t("fce9ecce", "Các video được đề xuất"),
@@ -3874,10 +3876,10 @@
                 t("j245c654", "Người nói"),
                 t("eda23a02", "Người nghe"),
                 t("b90eb348", "Mời phát biểu"),
-                t("d9a63e82", "Xóa người nói"),
-                t("bd917b26", "Mời làm Đồng chủ phòng"),
-                t("d7357e7e", "Xóa khỏi danh sách Đồng chủ phòng");
-            t("bf307fc0", "Chặn và xóa"),
+                t("d9a63e82", "Xóa người nói");
+            t("bd917b26", "Mời làm Đồng chủ phòng"),
+                t("d7357e7e", "Xóa khỏi danh sách Đồng chủ phòng"),
+                t("bf307fc0", "Chặn và xóa"),
                 t("ccf2f24e", "Báo cáo"),
                 t("i22835de", "Chấp thuận"),
                 t("cb59a0fe", "Từ chối"),
@@ -4151,7 +4153,6 @@
                 t("bcbf5b6e", "Chia sẻ"),
                 t("j7b5c844", "Bạn chịu trách nhiệm đối với cuộc trò chuyện bạn chia sẻ công khai. Hãy tránh đề cập đến thông tin nhạy cảm hoặc bí mật của bản thân hoặc người khác trong cuộc trò chuyện của bạn với Grok. (xem Trung tâm trợ giúp của chúng tôi)"),
                 t("c9f7c196", "Trung tâm trợ giúp"),
-                t("b63d3d36", "Đính kèm"),
                 t("c65f7308", "Máy chủ đang xử lý một khối lượng lớn dữ liệu"),
                 t("f2a8655e", "Công cụ nâng cao của Grok hiện không sẵn dùng."),
                 t("c26b9b9c", "Tệp"),
@@ -4907,9 +4908,9 @@
                 t("jb6f9292", 'chứa chính xác cụm từ "công ty khởi nghiệp ai"'),
                 t("j8ee77c4", '"công ty khởi nghiệp ai"'),
                 t("d0480758", 'chứa "ai" hoặc "công ty khởi nghiệp" (hoặc cả hai)'),
-                t("f0048fa2", "ai HOẶC công ty khởi nghiệp"),
-                t("da0df186", 'chứa "ai" nhưng không chứa "công ty khởi nghiệp"');
-            t("f2f463ea", "ai -công ty khởi nghiệp"),
+                t("f0048fa2", "ai HOẶC công ty khởi nghiệp");
+            t("da0df186", 'chứa "ai" nhưng không chứa "công ty khởi nghiệp"'),
+                t("f2f463ea", "ai -công ty khởi nghiệp"),
                 t("a10a357e", 'chứa "ai" và có ít nhất 50 lượt thích'),
                 t("ca8ed1e8", "ai min_faves:50"),
                 t("i945a3f2", 'chứa "ai" và URL kèm theo từ "grok" trong đó'),
@@ -5873,9 +5874,9 @@
                 t("hb52cc4a", "Vui lòng thử lại sau."),
                 t("e50e1bb0", "Chào mừng bạn đến với Cộng đồng"),
                 t("i6829daa", "Cộng đồng là các nhóm thảo luận được kiểm duyệt, nơi mọi người trên X có thể kết nối và chia sẻ."),
-                t("fc5c6914", "Gặp gỡ những người khác có cùng mối quan tâm của bạn"),
-                t("aa1a9820", "Tham gia Cộng đồng để kết nối với những người có cùng mối quan tâm với bạn.");
-            t("edef4c82", "Đăng trực tiếp lên Cộng đồng"),
+                t("fc5c6914", "Gặp gỡ những người khác có cùng mối quan tâm của bạn");
+            t("aa1a9820", "Tham gia Cộng đồng để kết nối với những người có cùng mối quan tâm với bạn."),
+                t("edef4c82", "Đăng trực tiếp lên Cộng đồng"),
                 t("a7640df6", "Bài đăng của bạn được chia sẻ với các thành viên trong Cộng đồng và những người theo dõi bạn."),
                 t("h3bb8068", "Nhận bản sao lưu khi cần"),
                 t("a709f8f8", "Quản trị viên và người kiểm duyệt giúp quản lý Cộng đồng và giữ cho cuộc trò chuyện đi đúng hướng."),
@@ -6871,9 +6872,9 @@
                 t("g337328e", "Nhận mức độ hiển thị cao nhất cho câu trả lời của bạn."),
                 t("fa006202", "Phát video trong nền"),
                 t("jf389778", "Xem trong khi duyệt nội dung hoặc sử dụng ứng dụng khác"),
-                t("f2977d80", "Thư mục dấu trang"),
-                t("j1d3d910", "Sắp xếp khoa học các bài đăng đã lưu để dễ dàng truy cập");
-            t("f0f48668", "Hỗ trợ cao cấp"),
+                t("f2977d80", "Thư mục dấu trang");
+            t("j1d3d910", "Sắp xếp khoa học các bài đăng đã lưu để dễ dàng truy cập"),
+                t("f0f48668", "Hỗ trợ cao cấp"),
                 t("c3148608", "Nhận trợ giúp nhanh hơn khi bạn cần hỗ trợ"),
                 t("b485ca6e", "Tab Sự kiện nổi bật"),
                 t("d438955e", "Quảng bá các bài đăng hàng đầu của bạn"),
@@ -7847,8 +7848,7 @@
                 t("c80160d3", "Quảng cáo"),
                 t("ff0edac0", "Bạn có chắc chắn muốn hủy thuê bao của mình không?"),
                 t("h2ac0348", "Không, tôi muốn quay lại"),
-                t("dbf9667e", "Tôi chắc chắn"),
-                t("j7592572", "Vòng ngược lại");
+                t("dbf9667e", "Tôi chắc chắn");
             function g(n, h) {
                 for (var c = 0; c < h.length; c++) {
                     var t = h[c];
@@ -7887,7 +7887,8 @@
                     a(n, h)
                 );
             }
-            t("ee778942", "Đèn giao thông"),
+            t("j7592572", "Vòng ngược lại"),
+                t("ee778942", "Đèn giao thông"),
                 t("fdd57981", function (n) {
                     return "Chúng tôi muốn tặng bạn ưu đãi một lần trị giá " + n.totalAmount + " USD tín dụng quảng cáo miễn phí.";
                 }),
@@ -8915,13 +8916,13 @@
                 }),
                 t("dc718e53", function (n) {
                     return "+" + n.count + " người khác";
-                }),
-                t("d0e7b11b", function (n) {
-                    return n.date + " vào lúc " + n.time;
                 });
-            t("b4349cbc", function (n) {
-                return "" + n.relativeDay;
+            t("d0e7b11b", function (n) {
+                return n.date + " vào lúc " + n.time;
             }),
+                t("b4349cbc", function (n) {
+                    return "" + n.relativeDay;
+                }),
                 t("ebe41367", function (n) {
                     return "Thời gian " + n.time;
                 }),
@@ -13185,4 +13186,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.b6ec003a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.1df1287a.js.map

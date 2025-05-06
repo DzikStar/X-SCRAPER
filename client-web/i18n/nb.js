@@ -600,7 +600,7 @@
                 t("e0cb0c72", "Annonser"),
                 t("e2eef3c2", "Verifiserte organisasjoner"),
                 t("b55d8a78", "Opprett området ditt"),
-                t("e5323e36", "Se direkte"),
+                t("e5323e36", "Send direkte"),
                 t("a5a30af0", "Artikler"),
                 t("d13d697c", "Ny"),
                 t("j0e2cfa8", "Bedrift"),
@@ -1709,6 +1709,7 @@
                 t("d78131b9", function (e) {
                     return "Legg til / fjern @" + e.screenName + " fra Lister";
                 }),
+                t("b3b642fc", "Why this post?"),
                 t("fb4ee11c", "Hvorfor vises denne annonsen?"),
                 t("ad50e7d9", function (e) {
                     return "Se statistikk for " + e.entity;
@@ -1907,9 +1908,9 @@
                 t("b6510e68", "Kopier nettadressen til artikkelen din for å dele den."),
                 t("e4a6e006", "Noe gikk galt. Prøv på nytt."),
                 t("eff483e0", "Etter at du har publisert, kan du dele artikkelen med en lenke."),
-                t("ca15dd4e", "Utkast"),
-                t("bb40bf66", "Publisert");
-            t("h107935c", "Sist lagret akkurat nå"),
+                t("ca15dd4e", "Utkast");
+            t("bb40bf66", "Publisert"),
+                t("h107935c", "Sist lagret akkurat nå"),
                 t("a753a870", "Ta i bruk"),
                 t("afccc67e", "Kopier lenke til artikkel"),
                 t("beb24e9e", "Nettadressen er kopiert til utklippstavlen"),
@@ -2426,6 +2427,7 @@
                     return "Rapporter " + e.entity;
                 }),
                 t("e3fd237e", "Rapporter annonse"),
+                t("ebb7662a", "Rapporter innlegg"),
                 t("d1e21610", "Rapporter NetzDG-overtredelse"),
                 t("d7513755", function (e) {
                     return "Søk i innleggene til @" + e.screenName + " i dette fellesskapet";
@@ -2958,15 +2960,15 @@
                 t("c6f58084", "Utviklere"),
                 t("d83f18d2", "Katalog"),
                 t("hc5aa17c", "Last ned X-appen"),
-                t("j0693948", "Last ned Grok-appen"),
-                t("af781666", "What do people think?"),
-                t("ad35153e", "beta");
-            t("fbf83158", "Advarsel: Betalingen mislyktes"),
+                t("j0693948", "Last ned Grok-appen");
+            t("af781666", "Hva tenker brukerne?"),
+                t("ad35153e", "beta"),
+                t("fbf83158", "Advarsel: Betalingen mislyktes"),
                 t("jadeb4da", "Oppdater betalingsmåten snarest før du mister abonnementsfordelene."),
                 t("bce3726a", "Oppdater faktureringsopplysningene"),
                 t("fce9ecce", "Foreslåtte videoer"),
-                t("dc954b88", "Try the full news experience"),
-                t("j66b95a2", "In-Depth News"),
+                t("dc954b88", "Prøv den fullstendige nyhetsopplevelsen"),
+                t("j66b95a2", "Dyptgående nyheter"),
                 t("b58d2bd2", "Relevante innlegg"),
                 t("efe6ef9e", "Se innlegg"),
                 t("b3d183ce", "Innlegg med svar"),
@@ -3874,10 +3876,10 @@
                 t("j245c654", "Talere"),
                 t("eda23a02", "Lyttere"),
                 t("b90eb348", "Inviter til å snakke"),
-                t("d9a63e82", "Fjern fra talere"),
-                t("bd917b26", "Inviter som medvert"),
-                t("d7357e7e", "Fjern som medvert");
-            t("bf307fc0", "Blokker og fjern"),
+                t("d9a63e82", "Fjern fra talere");
+            t("bd917b26", "Inviter som medvert"),
+                t("d7357e7e", "Fjern som medvert"),
+                t("bf307fc0", "Blokker og fjern"),
                 t("ccf2f24e", "Rapport"),
                 t("i22835de", "Godkjenn"),
                 t("cb59a0fe", "Avslå"),
@@ -4151,7 +4153,6 @@
                 t("bcbf5b6e", "Deling"),
                 t("j7b5c844", "Du er ansvarlig for samtalene du deler offentlig. Ikke del sensitiv og konfidensiell informasjon om deg selv eller andre i samtaler med Grok (se hjelpesenteret vårt)."),
                 t("c9f7c196", "Hjelpesenter"),
-                t("b63d3d36", "Legg ved"),
                 t("c65f7308", "Serverne har mye å gjøre akkurat nå"),
                 t("f2a8655e", "Avanserte Grok-verktøy er utilgjengelige akkurat nå."),
                 t("c26b9b9c", "Fil"),
@@ -4166,8 +4167,8 @@
                 t("e9b6d404", "Hvilke søkeverktøy skal Grok ha tilgang til?"),
                 t("h15dce2e", "Avanserte innstillinger"),
                 t("ff9dc268", "Rediger instruksjon"),
-                t("acb2baa0", "Create Images"),
-                t("h30fd372", "Try Voice Mode"),
+                t("acb2baa0", "Lag bilder"),
+                t("h30fd372", "Prøv talemodus"),
                 t("e9fcdd0c", "Be Grok om å søke aggressivt på nettet"),
                 t("fc4e8aba", "Bruk tenking for å resonnere trinn for trinn"),
                 t("e4ae6abe", "Be Grok om å transformere bildet"),
@@ -4336,16 +4337,16 @@
                 t("g01599b6", "Svar 1"),
                 t("e02694e0", "Svar 2"),
                 t("h6867fcc", "Jeg foretrekker dette svaret"),
-                t("d07488a6", "Get the Android app"),
+                t("d07488a6", "Skaff deg Android-appen"),
                 t("d9cfe70c", "Få tilgang til avanserte Grok-funksjoner"),
                 t("hf9afab0", "Aktiver DeepSearch for å søke på internett og X, analysere opplysninger og gi detaljerte, velbegrunnede svar med raskt, agentisk søk."),
-                t("ef3b3f04", "Aktiver Tenk for å bruke resonneringsmodellen vår. Den er best for matematikk, vitenskap og koding. Du kan også be Grok om å «tenke hardere» på et spørsmål som trenger litt mer hjernekraft. "),
+                t("ef3b3f04", "Aktiver tenkemodus for å bruke resonneringsmodellen vår. Den er best for matematikk, vitenskap og koding. Du kan også be Grok om å «tenke hardere» på et spørsmål som trenger litt mer hjernekraft. "),
                 t("b43636b8", "Vi presenterer Grok 3"),
-                t("j376298c", "Grok 3 innfører to nye moduser som samhandler med vår kraftigste modell: DeepSearch og Tenk."),
+                t("j376298c", "Grok 3 innfører to nye moduser som samhandler med vår kraftigste modell: Dypsøk- og tenkemodus."),
                 t("e3584f8e", "Hva er de ti mest vellykkede opsjonshandelsstrategiene som brukes av hedgefond"),
                 t("d91b7b8a", "Hva kostet det å bygge et universitet i 1885?"),
                 t("ia5bef3e", "Hva kan jeg hjelpe deg med i dag?"),
-                t("ebea5880", "Recent Conversations"),
+                t("ebea5880", "Nylige samtaler"),
                 t("e13591c0", "Eksempel på Grok-samtale"),
                 t("c27ca452", "Abonnenter på Premium kan nå bruke Grok, vår mest avanserte KI, på X."),
                 t("b6abc25a", "La oss presentere Grok 2"),
@@ -4907,9 +4908,9 @@
                 t("jb6f9292", "inneholder den nøyaktige frasen «ki-oppstartsselskap»"),
                 t("j8ee77c4", '"ki-oppstartsselskap"'),
                 t("d0480758", "inneholder enten «ki» eller «oppstartsselskap» (eller begge)"),
-                t("f0048fa2", "ki OR oppstartsselskap"),
-                t("da0df186", "inneholder «ki», men ikke «oppstartsselskap»");
-            t("f2f463ea", "ki -oppstartsselskap"),
+                t("f0048fa2", "ki OR oppstartsselskap");
+            t("da0df186", "inneholder «ki», men ikke «oppstartsselskap»"),
+                t("f2f463ea", "ki -oppstartsselskap"),
                 t("a10a357e", "inneholder «ki» og har minst 50 likerklikk"),
                 t("ca8ed1e8", "ki min_faves:50"),
                 t("i945a3f2", "inneholder «ki» og en nettadresse med ordet «grok»"),
@@ -5873,9 +5874,9 @@
                 t("hb52cc4a", "Prøv på nytt senere."),
                 t("e50e1bb0", "Velkommen til Fellesskaper"),
                 t("i6829daa", "Fellesskaper er modererte diskusjonsgrupper der X-brukere kan komme sammen og dele informasjon."),
-                t("fc5c6914", "Møt andre med samme interesser som deg"),
-                t("aa1a9820", "Bli med i fellesskaper for å møte andre med samme interesser som deg.");
-            t("edef4c82", "Publiser direkte til et fellesskap"),
+                t("fc5c6914", "Møt andre med samme interesser som deg");
+            t("aa1a9820", "Bli med i fellesskaper for å møte andre med samme interesser som deg."),
+                t("edef4c82", "Publiser direkte til et fellesskap"),
                 t("a7640df6", "Innleggene dine deles med medlemmer av fellesskapet og følgerne dine."),
                 t("h3bb8068", "Få hjelp når du trenger det"),
                 t("a709f8f8", "Administratorer og moderatorer hjelper til i Fellesskaper og holder samtalene på rett spor."),
@@ -6859,7 +6860,7 @@
                 t("f15bc24e", "Økte Grok-grenser"),
                 t("c4666e1c", "Mer bruk av Grok 3, vår nyeste modell"),
                 t("he74ae7a", "Høyeste forbruksgrenser for Grok"),
-                t("f5732cd4", "Pluss utvidet tilgang til DeepSearch og tenking"),
+                t("f5732cd4", "Pluss utvidet tilgang til dypsøk- og tenkemodus"),
                 t("e0198956", "Få en andel av inntektene som genereres av verifiserte kontoers engasjement i innhold du publiserer på X."),
                 t("iadf78e2", "Last ned videoer"),
                 t("ee54c3de", "Lagre videoer rett på enheten din"),
@@ -6871,9 +6872,9 @@
                 t("g337328e", "Få størst synlighet for svarene dine."),
                 t("fa006202", "Avspilling av bakgrunnsvideo"),
                 t("jf389778", "Se mens du søker på nettet eller bruker andre apper"),
-                t("f2977d80", "Bokmerkemapper"),
-                t("j1d3d910", "Hold lagrede innlegg organisert for enkel tilgang");
-            t("f0f48668", "Brukerstøtte for Premium"),
+                t("f2977d80", "Bokmerkemapper");
+            t("j1d3d910", "Hold lagrede innlegg organisert for enkel tilgang"),
+                t("f0f48668", "Brukerstøtte for Premium"),
                 t("c3148608", "Få raskere hjelp når du trenger det"),
                 t("b485ca6e", "Høydepunkter-fane"),
                 t("d438955e", "Fremhev toppinnleggene dine"),
@@ -6912,7 +6913,7 @@
                 t("bf7614d4", "Innholdsskaperabonnementer"),
                 t("gadc9f4a", "Høyeste svarprioritering"),
                 t("c127c5c2", "Fjern alle annonser"),
-                t("c1e0f3c8", "Få tilgang til Grok DeepSearch og tenking"),
+                t("c1e0f3c8", "Få tilgang til Grok dypsøk og tenkemodus"),
                 t("aac0bbb6", "Bruk radar"),
                 t("a6722922", "Annonser fjernet"),
                 t("ba016532", "Svarfremming"),
@@ -7015,7 +7016,7 @@
                 t("i4db5c92", "Avslutt når du vil"),
                 t("ae095fe8", "Grok med kunstig intelligens"),
                 t("d4e60288", "Høyeste forbruksgrenser"),
-                t("abaa4274", "Få tilgang til DeepSearch og tenking"),
+                t("abaa4274", "Få tilgang til dypsøk- og tenkemodus"),
                 t("e0d53864", "Tidlig tilgang til nye funksjoner"),
                 t("g1be3530", "PRØV GRATIS"),
                 t("b10b4f1f", function (e) {
@@ -7059,7 +7060,7 @@
                     return "Abonner for å få " + e.percentage + " % rabatt (begrenset tid)";
                 }),
                 t("dfc5f972", "Og mye mer ..."),
-                t("fb8453c8", "Få tilgang til DeepSearch- og tenkeforespørsler"),
+                t("fb8453c8", "Få tilgang til dypsøk- og tenkemodus"),
                 t("e45b3f30", "Få undersøkelses- og resonneringsforespørsler"),
                 t("aaebdc2e", "Mye større tilgang til Grok 3 mini og Grok 3"),
                 t("ddf8a412", "Tilgang til nye funksjoner før andre"),
@@ -7847,8 +7848,7 @@
                 t("c80160d3", "Annonsering"),
                 t("ff0edac0", "Er du sikker på at du vil avslutte abonnementet?"),
                 t("h2ac0348", "Nei, gå tilbake"),
-                t("dbf9667e", "Jeg er sikker"),
-                t("j7592572", "U-sving");
+                t("dbf9667e", "Jeg er sikker");
             function a(e, n) {
                 for (var r = 0; r < n.length; r++) {
                     var t = n[r];
@@ -7887,7 +7887,8 @@
                     d(e, n)
                 );
             }
-            t("ee778942", "Trafikklys"),
+            t("j7592572", "U-sving"),
+                t("ee778942", "Trafikklys"),
                 t("fdd57981", function (e) {
                     return "Vi vil gjerne gi deg et engangstilbud om $ " + e.totalAmount + " i gratis annonsekreditt.";
                 }),
@@ -8915,13 +8916,13 @@
                 }),
                 t("dc718e53", function (e) {
                     return "+ " + e.count + " an" + i(e.count, "nen", "dre");
-                }),
-                t("d0e7b11b", function (e) {
-                    return e.date + " kl. " + e.time;
                 });
-            t("b4349cbc", function (e) {
-                return "" + e.relativeDay;
+            t("d0e7b11b", function (e) {
+                return e.date + " kl. " + e.time;
             }),
+                t("b4349cbc", function (e) {
+                    return "" + e.relativeDay;
+                }),
                 t("ebe41367", function (e) {
                     return "Tid: " + e.time;
                 }),
@@ -13185,4 +13186,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nb.20037d8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nb.6deac0ca.js.map

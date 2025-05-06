@@ -2,14 +2,14 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["i18n/th"],
     {
-        743834: (e, a, c) => {
-            var n = c(292426)._register("th", {
+        743834: (e, c, a) => {
+            var n = a(292426)._register("th", {
                 get emoji() {
-                    return c.e("i18n/emoji-th").then(c.t.bind(c, 953899, 23));
+                    return a.e("i18n/emoji-th").then(a.t.bind(a, 953899, 23));
                 },
             });
-            function f(e, a) {
-                return a;
+            function f(e, c) {
+                return c;
             }
             n("c39b0e24", "X"),
                 n("jb38600c", "ไม่มี"),
@@ -1709,6 +1709,7 @@
                 n("d78131b9", function (e) {
                     return "เพิ่ม/ลบ @" + e.screenName + " ออกจากรายชื่อ";
                 }),
+                n("b3b642fc", "Why this post?"),
                 n("fb4ee11c", "ทำไมต้องเป็นโฆษณานี้"),
                 n("ad50e7d9", function (e) {
                     return "ดูการวิเคราะห์ " + e.entity;
@@ -1907,9 +1908,9 @@
                 n("b6510e68", "คัดลอก URL ของบทความเพื่อให้คุณสามารถแชร์ได้"),
                 n("e4a6e006", "มีบางอย่างผิดพลาด โปรดลองอีกครั้ง"),
                 n("eff483e0", "หลังจากที่คุณเผยแพร่แล้ว รับลิงก์เพื่อแชร์บทความ"),
-                n("ca15dd4e", "ร่าง"),
-                n("bb40bf66", "เผยแพร่แล้ว");
-            n("h107935c", "บันทึกล่าสุดเมื่อสักครู่นี้"),
+                n("ca15dd4e", "ร่าง");
+            n("bb40bf66", "เผยแพร่แล้ว"),
+                n("h107935c", "บันทึกล่าสุดเมื่อสักครู่นี้"),
                 n("a753a870", "ใช้"),
                 n("afccc67e", "คัดลอกลิงก์ไปยังบทความ"),
                 n("beb24e9e", "คัดลอก URL ไปยังคลิปบอร์ดแล้ว"),
@@ -2426,6 +2427,7 @@
                     return "รายงาน " + e.entity;
                 }),
                 n("e3fd237e", "รายงานโฆษณา"),
+                n("ebb7662a", "รายงานโพสต์"),
                 n("d1e21610", "รายงานการละเมิด NetzDG"),
                 n("d7513755", function (e) {
                     return "ค้นหาโพสต์ของ @" + e.screenName + " ในชุมชนนี้";
@@ -2958,15 +2960,15 @@
                 n("c6f58084", "นักพัฒนา"),
                 n("d83f18d2", "ไดเรกทอรี"),
                 n("hc5aa17c", "รับแอพ X"),
-                n("j0693948", "รับแอพ Grok"),
-                n("af781666", "What do people think?"),
-                n("ad35153e", "เบต้า");
-            n("fbf83158", "คำเตือน: การชำระเงินล้มเหลว"),
+                n("j0693948", "รับแอพ Grok");
+            n("af781666", "ผู้คนคิดยังไง"),
+                n("ad35153e", "เบต้า"),
+                n("fbf83158", "คำเตือน: การชำระเงินล้มเหลว"),
                 n("jadeb4da", "อัปเดตวิธีการชำระเงินของคุณโดยทันทีก่อนที่จะสูญเสียสิทธิประโยชน์ของระบบสมาชิก"),
                 n("bce3726a", "อัปเดตการเรียกเก็บเงิน"),
                 n("fce9ecce", "วิดีโอแนะนำ"),
-                n("dc954b88", "Try the full news experience"),
-                n("j66b95a2", "In-Depth News"),
+                n("dc954b88", "ลองสัมผัสประสบการณ์ข่าวสารเต็มรูปแบบ"),
+                n("j66b95a2", "ข่าวเจาะลึก"),
                 n("b58d2bd2", "โพสต์ที่เกี่ยวข้อง"),
                 n("efe6ef9e", "ดูโพสต์"),
                 n("b3d183ce", "โพสต์พร้อมตอบกลับ"),
@@ -3874,10 +3876,10 @@
                 n("j245c654", "ผู้พูด"),
                 n("eda23a02", "ผู้ฟัง"),
                 n("b90eb348", "เชิญให้พูด"),
-                n("d9a63e82", "ลบออกจากผู้พูด"),
-                n("bd917b26", "เชิญให้เป็นโฮสต์ร่วม"),
-                n("d7357e7e", "ลบออกจากโฮสต์ร่วม");
-            n("bf307fc0", "บล็อคและลบ"),
+                n("d9a63e82", "ลบออกจากผู้พูด");
+            n("bd917b26", "เชิญให้เป็นโฮสต์ร่วม"),
+                n("d7357e7e", "ลบออกจากโฮสต์ร่วม"),
+                n("bf307fc0", "บล็อคและลบ"),
                 n("ccf2f24e", "รายงาน"),
                 n("i22835de", "อนุมัติ"),
                 n("cb59a0fe", "ปฎิเสธ"),
@@ -4151,7 +4153,6 @@
                 n("bcbf5b6e", "กำลังแบ่งปัน"),
                 n("j7b5c844", "คุณต้องรับผิดชอบต่อบทสนทนาที่คุณแชร์ต่อสาธารณะ หลีกเลี่ยงการแชร์ข้อมูลที่ละเอียดอ่อนและเป็นความลับเกี่ยวกับตัวคุณเองหรือผู้อื่นในการสนทนากับ Grok (ดูศูนย์ช่วยเหลือของเรา)"),
                 n("c9f7c196", "ศูนย์ช่วยเหลือ"),
-                n("b63d3d36", "แนบ"),
                 n("c65f7308", "เซิร์ฟเวอร์กำลังทำงานหนักอยู่ในขณะนี้"),
                 n("f2a8655e", "เครื่องมือขั้นสูงของ Grok ไม่พร้อมใช้งานในขณะนี้"),
                 n("c26b9b9c", "ไฟล์"),
@@ -4166,8 +4167,8 @@
                 n("e9b6d404", "Grok ควรเข้าถึงเครื่องมือค้นหาใดบ้าง"),
                 n("h15dce2e", "การตั้งค่าขั้นสูง"),
                 n("ff9dc268", "แก้ไขข้อความแจ้ง"),
-                n("acb2baa0", "Create Images"),
-                n("h30fd372", "Try Voice Mode"),
+                n("acb2baa0", "สร้างรูปภาพ"),
+                n("h30fd372", "ลองใช้โหมดเสียง"),
                 n("e9fcdd0c", "ขอให้ Grok ค้นหาบนเว็บอย่างจริงจัง"),
                 n("fc4e8aba", "ขอให้ Grok อธิบายเหตุผลทีละขั้นตอน"),
                 n("e4ae6abe", "ขอให้ Grok เปลี่ยนรูปภาพของคุณ"),
@@ -4336,7 +4337,7 @@
                 n("g01599b6", "คำตอบ 1"),
                 n("e02694e0", "คำตอบ 2"),
                 n("h6867fcc", "ฉันชอบคำตอบนี้มากกว่า"),
-                n("d07488a6", "Get the Android app"),
+                n("d07488a6", "รับแอป Android"),
                 n("d9cfe70c", "เข้าถึงคุณสมบัติขั้นสูงของ Grok"),
                 n("hf9afab0", "เปิดใช้งาน DeepSearch เพื่อสแกนอินเทอร์เน็ตและ X วิเคราะห์ข้อมูล และส่งมอบคำตอบที่ละเอียดและมีเหตุผลด้วยการค้นหาแบบมีตัวแทนที่รวดเร็ว"),
                 n("ef3b3f04", 'เปิดใช้งานการคิดเพื่อใช้โมเดลการให้เหตุผลของเรา เหมาะสำหรับวิชาคณิตศาสตร์ วิทยาศาสตร์ และการเขียนโค้ดมากที่สุด คุณยังสามารถขอให้ Grok "คิดให้มากขึ้น" เกี่ยวกับคำถามที่อาจต้องใช้พลังสมองเพิ่มขึ้นอีกเล็กน้อย '),
@@ -4345,7 +4346,7 @@
                 n("e3584f8e", "10 ตัวเลือกกลยุทธ์การซื้อขายที่ประสบความสำเร็จมากที่สุดที่ใช้โดยกองทุนป้องกันความเสี่ยงคืออะไร"),
                 n("d91b7b8a", "การสร้างมหาวิทยาลัยในปี 1885 ต้องใช้เงินลงทุนเท่าใด"),
                 n("ia5bef3e", "วันนี้ฉันจะช่วยคุณได้อย่างไรบ้าง"),
-                n("ebea5880", "Recent Conversations"),
+                n("ebea5880", "บทสนทนาล่าสุด"),
                 n("e13591c0", "ตัวอย่างบทสนทนา Grok"),
                 n("c27ca452", "สมาชิก Premium สามารถใช้ Grok ซึ่งเป็น AI ที่ทันสมัยที่สุดบน X ได้แล้ว"),
                 n("b6abc25a", "ขอแนะนำ Grok 2"),
@@ -4907,9 +4908,9 @@
                 n("jb6f9292", 'มีวลี "ai startup" ที่คำตรงกันทั้งหมด'),
                 n("j8ee77c4", '"ai startup"'),
                 n("d0480758", 'มีทั้ง "ai" หรือ "startup" (หรือทั้งสองอย่าง)'),
-                n("f0048fa2", "ai หรือ startup"),
-                n("da0df186", 'มี "ai" แต่ไม่มี "startup"');
-            n("f2f463ea", "ai -startup"),
+                n("f0048fa2", "ai หรือ startup");
+            n("da0df186", 'มี "ai" แต่ไม่มี "startup"'),
+                n("f2f463ea", "ai -startup"),
                 n("a10a357e", 'มีคำว่า "ai" และมีการกดชื่นชอบอย่างน้อย 50 ครั้ง'),
                 n("ca8ed1e8", "ai min_faves:50"),
                 n("i945a3f2", 'มี "ai" และ URL ที่มีคำว่า "grok" อยู่ด้วย'),
@@ -5873,9 +5874,9 @@
                 n("hb52cc4a", "โปรดลองใหม่อีกครั้งในภายหลัง"),
                 n("e50e1bb0", "ยินดีต้อนรับสู่ชุมชน"),
                 n("i6829daa", "ชุมชนเป็นกลุ่มสนทนาที่มีการดูแลซึ่งผู้คนบน X สามารถเชื่อมต่อและแชร์เรื่องราวกันได้"),
-                n("fc5c6914", "พบคนอื่นๆ ที่สนใจเรื่องเดียวกับคุณ"),
-                n("aa1a9820", "เข้าร่วมชุมชนเพื่อเชื่อมต่อกับผู้คนที่มีความสนใจเหมือนกับคุณ");
-            n("edef4c82", "โพสต์ไปยังชุมชนโดยตรง"),
+                n("fc5c6914", "พบคนอื่นๆ ที่สนใจเรื่องเดียวกับคุณ");
+            n("aa1a9820", "เข้าร่วมชุมชนเพื่อเชื่อมต่อกับผู้คนที่มีความสนใจเหมือนกับคุณ"),
+                n("edef4c82", "โพสต์ไปยังชุมชนโดยตรง"),
                 n("a7640df6", "โพสต์ของคุณจะถูกแชร์กับสมาชิกชุมชนและผู้ติดตามของคุณ"),
                 n("h3bb8068", "ดูข้อมูลสำรองเมื่อคุณต้องการ"),
                 n("a709f8f8", "ผู้ดูแลระบบและผู้ดูแลช่วยจัดการชุมชนและติดตามการสนทนา"),
@@ -6871,9 +6872,9 @@
                 n("g337328e", "รับการมองเห็นสูงสุดสำหรับการตอบกลับของคุณ"),
                 n("fa006202", "การเล่นวิดีโอในพื้นหลัง"),
                 n("jf389778", "รับชมขณะเรียกดูหรือใช้แอปอื่น"),
-                n("f2977d80", "โฟลเดอร์บุ๊คมาร์ก"),
-                n("j1d3d910", "จัดระเบียบโพสต์ที่บันทึกไว้เพื่อให้เข้าถึงได้ง่าย");
-            n("f0f48668", "ฝ่ายสนับสนุนระดับพรีเมียม"),
+                n("f2977d80", "โฟลเดอร์บุ๊คมาร์ก");
+            n("j1d3d910", "จัดระเบียบโพสต์ที่บันทึกไว้เพื่อให้เข้าถึงได้ง่าย"),
+                n("f0f48668", "ฝ่ายสนับสนุนระดับพรีเมียม"),
                 n("c3148608", "รับความช่วยเหลือรวดเร็วยิ่งขึ้นเมื่อคุณต้องการ"),
                 n("b485ca6e", "แท็บไฮไลต์"),
                 n("d438955e", "แสดงโพสต์ยอดนิยมของคุณ"),
@@ -7847,11 +7848,10 @@
                 n("c80160d3", "การโฆษณา"),
                 n("ff0edac0", "คุณแน่ใจหรือไม่ว่าต้องการยกเลิกระบบสมาชิก"),
                 n("h2ac0348", "ไม่ นำฉันกลับไป"),
-                n("dbf9667e", "ฉันแน่ใจ"),
-                n("j7592572", "ยูเทิร์น");
-            function t(e, a) {
-                for (var c = 0; c < a.length; c++) {
-                    var n = a[c];
+                n("dbf9667e", "ฉันแน่ใจ");
+            function t(e, c) {
+                for (var a = 0; a < c.length; a++) {
+                    var n = c[a];
                     (n.enumerable = n.enumerable || !1),
                         (n.configurable = !0),
                         "value" in n && (n.writable = !0),
@@ -7860,15 +7860,15 @@
                             ((f = n.key),
                             (t = void 0),
                             "symbol" ==
-                            typeof (t = (function (e, a) {
+                            typeof (t = (function (e, c) {
                                 if ("object" != typeof e || null === e) return e;
-                                var c = e[Symbol.toPrimitive];
-                                if (void 0 !== c) {
-                                    var n = c.call(e, a || "default");
+                                var a = e[Symbol.toPrimitive];
+                                if (void 0 !== a) {
+                                    var n = a.call(e, c || "default");
                                     if ("object" != typeof n) return n;
                                     throw new TypeError("@@toPrimitive must return a primitive value.");
                                 }
-                                return ("string" === a ? String : Number)(e);
+                                return ("string" === c ? String : Number)(e);
                             })(f, "string"))
                                 ? t
                                 : String(t)),
@@ -7877,17 +7877,18 @@
                 }
                 var f, t;
             }
-            function r(e, a) {
+            function r(e, c) {
                 return (
                     (r = Object.setPrototypeOf
                         ? Object.setPrototypeOf.bind()
-                        : function (e, a) {
-                              return (e.__proto__ = a), e;
+                        : function (e, c) {
+                              return (e.__proto__ = c), e;
                           }),
-                    r(e, a)
+                    r(e, c)
                 );
             }
-            n("ee778942", "สัญญาณไฟจราจร"),
+            n("j7592572", "ยูเทิร์น"),
+                n("ee778942", "สัญญาณไฟจราจร"),
                 n("fdd57981", function (e) {
                     return "เราต้องการเสนอเครดิตโฆษณา " + e.totalAmount + " USD ฟรีแบบครั้งเดียวให้กับคุณ";
                 }),
@@ -8915,13 +8916,13 @@
                 }),
                 n("dc718e53", function (e) {
                     return "+อีก " + e.count + " คน";
-                }),
-                n("d0e7b11b", function (e) {
-                    return e.date + " เวลา " + e.time;
                 });
-            n("b4349cbc", function (e) {
-                return "" + e.relativeDay;
+            n("d0e7b11b", function (e) {
+                return e.date + " เวลา " + e.time;
             }),
+                n("b4349cbc", function (e) {
+                    return "" + e.relativeDay;
+                }),
                 n("ebe41367", function (e) {
                     return "เวลา " + e.time;
                 }),
@@ -9418,22 +9419,22 @@
                 n("acddd4d4", "สีแดง"),
                 n("cef9b062", "สีน้ำเงินอมเขียว"),
                 n("d9daefca", "สีเทาเข้ม");
-            var d = c(202784),
+            var d = a(202784),
                 b = [],
                 u = {};
             function i(e) {
                 return e;
             }
             var o = (function (e) {
-                var a, c, n, f, o;
+                var c, a, n, f, o;
                 function m() {
                     return e.apply(this, arguments) || this;
                 }
                 return (
-                    (c = e),
-                    ((a = m).prototype = Object.create(c.prototype)),
-                    (a.prototype.constructor = a),
-                    r(a, c),
+                    (a = e),
+                    ((c = m).prototype = Object.create(a.prototype)),
+                    (c.prototype.constructor = c),
+                    r(c, a),
                     (m.prototype.render = function () {
                         return d.createElement.apply(d, this[this.props.$i18n].reduce(this.templateReducer, [d.Fragment, null]));
                     }),
@@ -12821,10 +12822,10 @@
                             key: "templateReducer",
                             get: function () {
                                 var e,
-                                    a = d.Children.toArray(this.props.children),
-                                    c = ((e = this.props.$i18n), b[u[e]] || i);
+                                    c = d.Children.toArray(this.props.children),
+                                    a = ((e = this.props.$i18n), b[u[e]] || i);
                                 return function (e, n, f) {
-                                    return e.concat(n, a[c(f)]);
+                                    return e.concat(n, c[a(f)]);
                                 };
                             },
                         },
@@ -12833,13 +12834,13 @@
                     Object.defineProperty(n, "prototype", { writable: !1 }),
                     m
                 );
-            })(c(674132)._ActualI18NFormatMessage || d.Component);
+            })(a(674132)._ActualI18NFormatMessage || d.Component);
             n("_ActualI18NFormatMessage", o),
                 n("I18NFormatMessage", function (e) {
                     return d.createElement(o, e);
                 });
-            var m = c(495075);
-            c(800694), c(556829), c(530152), c(658610), c(492344), c(663823);
+            var m = a(495075);
+            a(800694), a(556829), a(530152), a(658610), a(492344), a(663823);
             m._validateParameterTypeNumber, m._validateParameterPresence;
             var g = m._numberRound,
                 h = (m._numberFormat, m._numberFormatterFn),
@@ -13185,4 +13186,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/th.0906068a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/th.d85fd60a.js.map

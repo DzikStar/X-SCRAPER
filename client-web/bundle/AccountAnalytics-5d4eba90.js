@@ -349,14 +349,14 @@
         438885: (e, l, a) => {
             a.d(l, { J: () => I });
             var n = a(552322),
-                s = a(993165),
+                s = a(436059),
                 t = a(739219),
                 i = a(202784),
                 r = a(430962),
                 d = a(968025),
                 u = a(72100),
-                o = a(615014),
-                c = a(782879),
+                o = a(192576),
+                c = a(458872),
                 m = a(777301),
                 g = a(52277),
                 y = a(598705),
@@ -388,9 +388,9 @@
                     s = 0 === a.length || a.every((e) => 0 === e.value);
                 return (0, n.jsxs)("div", { className: "bg-gray-0 flex flex-col rounded-xl p-4 border border-gray-200", children: [(0, n.jsx)("h2", { className: "font-medium text-gray-900 pb-4 md:text-headline2 md:font-bold", children: e.videoCompletion }), s ? (0, n.jsx)("p", { className: "text-gray-600 mt-2", children: e.noDataAvailable }) : (0, n.jsx)("div", { className: "h-[250px] -ml-7", children: (0, n.jsx)(k.y, { data: a }) })] });
             }
-            var _ = a(917317),
-                j = a(287326),
-                F = a(583429);
+            var _ = a(407250),
+                j = a(669833),
+                F = a(288894);
             function K({ estimatedRevenueVideoDetails: e = !1 }) {
                 const { analytics: l } = (0, r.M1)(),
                     { formattedVideo: a } = (0, g.Mh)(),
@@ -402,8 +402,8 @@
             var w = a(86982),
                 T = a(707326),
                 N = a(326600),
-                L = a(193686),
-                V = a(815225),
+                L = a(702024),
+                V = a(422821),
                 S = a(840489),
                 R = a(970430);
             function M({ estimatedRevenueVideoDetails: e = !1 }) {
@@ -555,4 +555,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-5d4eba90.271aa76a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-5d4eba90.ba60e3ca.js.map

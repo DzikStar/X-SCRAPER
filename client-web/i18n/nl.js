@@ -1710,6 +1710,7 @@
                 a("d78131b9", function (e) {
                     return "@" + e.screenName + " toevoegen aan/verwijderen uit Lijsten";
                 }),
+                a("b3b642fc", "Why this post?"),
                 a("fb4ee11c", "Waarom krijg je deze advertentie te zien?"),
                 a("ad50e7d9", function (e) {
                     return "Analyses van " + e.entity + " bekijken";
@@ -1908,9 +1909,9 @@
                 a("b6510e68", "Kopieer de URL van je artikel zodat je die kan delen."),
                 a("e4a6e006", "Er ging iets mis. Probeer het opnieuw."),
                 a("eff483e0", "Krijg een link om je Artikel te delen nadat je het hebt gepubliceerd."),
-                a("ca15dd4e", "Concept"),
-                a("bb40bf66", "Gepubliceerd");
-            a("h107935c", "Zojuist voor het laatst opgeslagen"),
+                a("ca15dd4e", "Concept");
+            a("bb40bf66", "Gepubliceerd"),
+                a("h107935c", "Zojuist voor het laatst opgeslagen"),
                 a("a753a870", "Toepassen"),
                 a("afccc67e", "Link naar Artikel kopiëren"),
                 a("beb24e9e", "URL gekopieerd naar klembord"),
@@ -2427,6 +2428,7 @@
                     return e.entity + " rapporteren";
                 }),
                 a("e3fd237e", "Advertentie rapporteren"),
+                a("ebb7662a", "Post melden"),
                 a("d1e21610", "Een schending van de NetzDG melden"),
                 a("d7513755", function (e) {
                     return "Posts van @" + e.screenName + " zoeken in deze Community";
@@ -2959,10 +2961,10 @@
                 a("c6f58084", "Ontwikkelaars"),
                 a("d83f18d2", "Overzicht"),
                 a("hc5aa17c", "Download de app van X"),
-                a("j0693948", "Download de Grok-app"),
-                a("af781666", "Wat vinden mensen?"),
-                a("ad35153e", "bèta");
-            a("fbf83158", "Waarschuwing: betaling mislukt"),
+                a("j0693948", "Download de Grok-app");
+            a("af781666", "Wat vinden mensen?"),
+                a("ad35153e", "bèta"),
+                a("fbf83158", "Waarschuwing: betaling mislukt"),
                 a("jadeb4da", "Update zo snel mogelijk je betalingsmethode voordat je abonnementsvoordelen kwijtraakt."),
                 a("bce3726a", "Factureringsgegevens"),
                 a("fce9ecce", "Aanbevolen video's"),
@@ -3875,10 +3877,10 @@
                 a("j245c654", "Sprekers"),
                 a("eda23a02", "Luisteraars"),
                 a("b90eb348", "Uitnodigen om mee te praten"),
-                a("d9a63e82", "Verwijderen uit sprekers"),
-                a("bd917b26", "Uitnodigen als co-host"),
-                a("d7357e7e", "Uit co-hosts verwijderen");
-            a("bf307fc0", "Blokkeren en verwijderen"),
+                a("d9a63e82", "Verwijderen uit sprekers");
+            a("bd917b26", "Uitnodigen als co-host"),
+                a("d7357e7e", "Uit co-hosts verwijderen"),
+                a("bf307fc0", "Blokkeren en verwijderen"),
                 a("ccf2f24e", "Rapport"),
                 a("i22835de", "Goedkeuren"),
                 a("cb59a0fe", "Weigeren"),
@@ -4152,7 +4154,6 @@
                 a("bcbf5b6e", "Delen"),
                 a("j7b5c844", "Jij bent verantwoordelijk voor de gesprekken die je publiekelijk deelt. Vermijd het delen van gevoelige en vertrouwelijke informatie over jezelf of anderen in je gesprekken met Grok (zie ons Helpcentrum)."),
                 a("c9f7c196", "Helpcentrum"),
-                a("b63d3d36", "Toevoegen"),
                 a("c65f7308", "Servers zijn nu aan het werk"),
                 a("f2a8655e", "Grok Geavanceerd-tools zijn momenteel niet beschikbaar."),
                 a("c26b9b9c", "Bestand"),
@@ -4908,9 +4909,9 @@
                 a("jb6f9292", "bevat de exacte tekst 'ai start-up'"),
                 a("j8ee77c4", '"ai start-up"'),
                 a("d0480758", "bevat 'ai' of 'start-up' (of beide)"),
-                a("f0048fa2", "ai OR start-up"),
-                a("da0df186", "bevat 'ai, maar niet 'start-up'");
-            a("f2f463ea", "ai -start-up"),
+                a("f0048fa2", "ai OR start-up");
+            a("da0df186", "bevat 'ai, maar niet 'start-up'"),
+                a("f2f463ea", "ai -start-up"),
                 a("a10a357e", "bevat 'ai' en heeft minimaal 50 vind-ik-leuks"),
                 a("ca8ed1e8", "ai min_faves:50"),
                 a("i945a3f2", "bevat 'ai' en een URL met daarin het woord 'grok'"),
@@ -5874,9 +5875,9 @@
                 a("hb52cc4a", "Probeer het later nog eens."),
                 a("e50e1bb0", "Welkom bij Community's"),
                 a("i6829daa", "Community's zijn gemodereerde discussiegroepen waar mensen op X met elkaar in contact kunnen komen en dingen kunnen delen."),
-                a("fc5c6914", "Ontmoet anderen met dezelfde interesses"),
-                a("aa1a9820", "Word lid van Community's om in contact te komen met mensen met dezelfde interesses.");
-            a("edef4c82", "Rechtstreeks posts plaatsen in een Community"),
+                a("fc5c6914", "Ontmoet anderen met dezelfde interesses");
+            a("aa1a9820", "Word lid van Community's om in contact te komen met mensen met dezelfde interesses."),
+                a("edef4c82", "Rechtstreeks posts plaatsen in een Community"),
                 a("a7640df6", "Je posts worden gedeeld met Community-leden en met je volgers."),
                 a("h3bb8068", "Krijg hulp wanneer dat nodig is"),
                 a("a709f8f8", "Beheerders en moderators helpen Community's te beheren en zorgen dat gesprekken goed verlopen."),
@@ -6872,9 +6873,9 @@
                 a("g337328e", "Krijg de meeste zichtbaarheid van je antwoorden"),
                 a("fa006202", "Video afspelen in de achtergrond"),
                 a("jf389778", "Kijk terwijl je browset of andere apps gebruikt"),
-                a("f2977d80", "Bladwijzermappen"),
-                a("j1d3d910", "Hou je opgeslagen posts georganiseerd zodat je ze eenvoudig kan raadplegen");
-            a("f0f48668", "Premium ondersteuning"),
+                a("f2977d80", "Bladwijzermappen");
+            a("j1d3d910", "Hou je opgeslagen posts georganiseerd zodat je ze eenvoudig kan raadplegen"),
+                a("f0f48668", "Premium ondersteuning"),
                 a("c3148608", "Krijg sneller ondersteuning wanneer je hulp nodig hebt"),
                 a("b485ca6e", "Tabblad Hoogtepunten"),
                 a("d438955e", "Zet je topposts in de schijnwerpers"),
@@ -7848,8 +7849,7 @@
                 a("c80160d3", "Adverteren"),
                 a("ff0edac0", "Weet je zeker dat je je abonnement wil opzeggen?"),
                 a("h2ac0348", "Nee, ga terug"),
-                a("dbf9667e", "Ik weet het zeker"),
-                a("j7592572", "U-bocht");
+                a("dbf9667e", "Ik weet het zeker");
             function i(e, n) {
                 for (var t = 0; t < n.length; t++) {
                     var a = n[t];
@@ -7888,7 +7888,8 @@
                     o(e, n)
                 );
             }
-            a("ee778942", "Verkeerslichten"),
+            a("j7592572", "U-bocht"),
+                a("ee778942", "Verkeerslichten"),
                 a("fdd57981", function (e) {
                     return "We willen je graag eenmalig een gratis advertentietegoed van USD " + e.totalAmount + " aanbieden.";
                 }),
@@ -8916,13 +8917,13 @@
                 }),
                 a("dc718e53", function (e) {
                     return "+ " + e.count + " ander" + r(e.count, "", "en");
-                }),
-                a("d0e7b11b", function (e) {
-                    return e.date + " om " + e.time;
                 });
-            a("b4349cbc", function (e) {
-                return "" + e.relativeDay;
+            a("d0e7b11b", function (e) {
+                return e.date + " om " + e.time;
             }),
+                a("b4349cbc", function (e) {
+                    return "" + e.relativeDay;
+                }),
                 a("ebe41367", function (e) {
                     return "Tijdsduur " + e.time;
                 }),
@@ -13200,4 +13201,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.8cdc669a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.088517ba.js.map

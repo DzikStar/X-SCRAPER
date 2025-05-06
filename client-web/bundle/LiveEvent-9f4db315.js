@@ -186,8 +186,8 @@
                 E = n(782642);
             const k = d().ed54bc32,
                 I = d().f89bcc50,
-                w = d().ed54bc32,
-                S = (e) => {
+                S = d().ed54bc32,
+                w = (e) => {
                     const { trendId: t } = e,
                         [n, a] = i.useState(!1),
                         [r, o] = i.useState(!1),
@@ -213,7 +213,7 @@
                                 }),
                             n
                                 ? i.createElement(P.Z, {
-                                      headline: w,
+                                      headline: S,
                                       onCancel: () => {
                                           a(!1);
                                       },
@@ -227,7 +227,7 @@
                     );
                 },
                 T = l.default.create((e) => ({ button: { color: e.colors.text } })),
-                C = i.memo(S);
+                C = i.memo(w);
             var A = n(73416),
                 Z = n(883069),
                 x = n(148843);
@@ -250,14 +250,14 @@
                     });
                 },
                 L = l.default.create((e) => ({ button: { marginEnd: e.spaces.space4, color: e.colors.text } })),
-                F = i.memo(D);
-            var U = n(688715),
+                U = i.memo(D);
+            var F = n(688715),
                 O = n(907552);
             const R = { page: "trending_event_timeline", section: "trending_event_header" },
                 B = l.default.create((e) => ({ button: { marginEnd: e.spaces.space8 } })),
                 G = (e) => {
                     const { hashtag: t, id: n } = e,
-                        r = (0, U.ju)(`https://x.com/i/trending/${n}`);
+                        r = (0, F.ju)(`https://x.com/i/trending/${n}`);
                     return i.createElement(a.Z, { style: B.button }, i.createElement(O.ZP, { scribeNamespace: R, shareText: t, url: r }));
                 },
                 z = { page: "trending_event_timeline", section: "trending_event_header", element: "contribute_to_birdwatch" },
@@ -271,15 +271,15 @@
                         I = i.useCallback(() => {
                             v.push(`/i/trending/${c}/history`);
                         }, [v, c]),
-                        w = i.useCallback(
+                        S = i.useCallback(
                             (e) => {
                                 k((0, g.V)(c, e)), (0, f.fz)({ text: "Your input has been submitted." });
                             },
                             [c, k],
                         ),
-                        S = d().ef1042f8,
+                        w = d().ef1042f8,
                         T = () => {
-                            const e = [{ Icon: u.default, onClick: I, text: V }, ...n.map((e) => ({ Icon: p.default, onClick: () => w(e.action_value), text: e.name }))];
+                            const e = [{ Icon: u.default, onClick: I, text: V }, ...n.map((e) => ({ Icon: p.default, onClick: () => S(e.action_value), text: e.name }))];
                             return (
                                 E.isTrue("responsive_web_trends_ui_community_notes_enabled") &&
                                     E.isTrue("responsive_web_birdwatch_note_writing_enabled") &&
@@ -289,13 +289,13 @@
                                         onClick: () => {
                                             t.scribe({ ...z, action: "click" });
                                         },
-                                        text: S,
+                                        text: w,
                                         link: { pathname: l },
                                     }),
                                 e
                             );
                         };
-                    return i.createElement(a.Z, { style: H.headerRoot }, i.createElement(F, { isSaved: P, trendId: c }), i.createElement(C, { trendId: c }), i.createElement(G, { id: c }), i.createElement(s.ZP, { icon: i.createElement(m.default, { style: H.button }), renderMenu: (e) => i.createElement(o.Z, { items: T(), onCloseRequested: e, shouldCloseOnClick: !0 }), size: "medium", style: H.button, type: "onMediaText" }));
+                    return i.createElement(a.Z, { style: H.headerRoot }, i.createElement(U, { isSaved: P, trendId: c }), i.createElement(C, { trendId: c }), i.createElement(G, { id: c }), i.createElement(s.ZP, { icon: i.createElement(m.default, { style: H.button }), renderMenu: (e) => i.createElement(o.Z, { items: T(), onCloseRequested: e, shouldCloseOnClick: !0 }), size: "medium", style: H.button, type: "onMediaText" }));
                 },
                 M = i.memo(Y),
                 H = l.default.create((e) => ({ root: { flexDirection: "row", end: -e.spacesPx.space2 }, headerRoot: { flexDirection: "row" }, button: { marginEnd: e.spaces.space4, color: e.colors.text } }));
@@ -359,7 +359,7 @@
         },
         162246: (e, t, n) => {
             "use strict";
-            n.d(t, { Z: () => w });
+            n.d(t, { Z: () => S });
             var i = n(202784),
                 a = n(325686),
                 r = n(786998),
@@ -444,7 +444,7 @@
             }
             k.defaultProps = { placeholder: i.createElement(o.Z, { ratio: l.default.theme.aspectRatios.landscape }), visibleThreshold: 0 };
             const I = l.default.create((e) => ({ root: { zIndex: 1 }, dockedContainer: { bottom: 0, end: 0, marginEnd: e.spaces.space20, boxShadow: e.boxShadows.small, maxWidth: _.Z.columnWidths.secondary.normal, position: "fixed", width: _.Z.columnWidths.secondary.normal }, dockingControls: { flexDirection: "row", alignItems: "baseline" } })),
-                w = k;
+                S = k;
         },
         414939: (e, t, n) => {
             "use strict";
@@ -556,12 +556,13 @@
                             (e.previousPlaybackState = e.playbackState), (e.playbackState = t), this._updatePlayerStateForDocking(e, t);
                         }),
                         (this._updatePlayerStateForDocking = (e, t) => {
-                            if (t === i.q.USER_PLAYING)
-                                if (this._updateDockedVideo && e.registerDockElement) {
+                            if (t === i.q.USER_PLAYING) {
+                                const t = e.previousPlaybackState === i.q.USER_PAUSED;
+                                if (this._updateDockedVideo && "function" == typeof e.registerDockElement && !t) {
                                     const t = e.registerDockElement();
                                     this._updateDockedVideo(t, e.id);
                                 } else this._updateIsUserPaused && this._updateIsUserPaused(!1);
-                            else t === i.q.USER_PAUSED ? this._updateIsUserPaused && this._updateIsUserPaused(!0) : t === i.q.AUTO_PLAYING && this._updateIsUserPaused && this._updateIsUserPaused(!1);
+                            } else t === i.q.USER_PAUSED ? this._updateIsUserPaused && this._updateIsUserPaused(!0) : t === i.q.AUTO_PLAYING && this._updateIsUserPaused && this._updateIsUserPaused(!1);
                             this._updateInlinePlayerState && this._updateInlinePlayerState(this._players);
                         }),
                         (this._updatePlaybackStates = () => {
@@ -779,4 +780,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.LiveEvent-9f4db315.171070ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.LiveEvent-9f4db315.cebb9c6a.js.map

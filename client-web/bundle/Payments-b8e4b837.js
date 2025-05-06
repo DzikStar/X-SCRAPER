@@ -428,7 +428,7 @@
             const y = n.memo(h);
         },
         292949: (e, t, a) => {
-            a.r(t), a.d(t, { default: () => M });
+            a.r(t), a.d(t, { default: () => j });
             var n = a(807896),
                 r = a(202784),
                 c = a(107267),
@@ -446,33 +446,28 @@
                     const e = (0, c.useHistory)(),
                         t = (0, h.jh)(),
                         a = (0, o.z)(),
-                        { activeCards: n } = (0, p.Z)(),
-                        s = r.useCallback(() => {
+                        { activeCards: n, inactivePhysicalCards: s } = (0, p.Z)(),
+                        k = r.useCallback(() => {
                             e.goBack();
                         }, [e]),
-                        k = r.useCallback(
+                        g = r.useCallback(
                             ({ cardId: t, cardType: n }) =>
                                 () => {
                                     a.scribe({ page: "money", component: "card-replace", element: `${n}-${t}`, action: "click" }), e.push(m.zI, { cardId: t, cardType: n });
                                 },
                             [a, e],
-                        );
-                    return r.createElement(
-                        d.Z,
-                        { backButtonType: "back", history: e, onBackClick: s, withoutBottomBarMobile: !0 },
-                        r.createElement(i.Z, { style: t.container }, r.createElement(l.ZP, { size: "title2", style: h.ZP.title, weight: "heavy" }, "Which card do you have a problem with?")),
-                        r.createElement(
-                            i.Z,
-                            { style: t.footer },
-                            n?.map((e) => {
+                        ),
+                        b = r.useCallback(
+                            (e) => {
                                 const t = (0, y.Ou)(e),
                                     a = e.rest_id,
                                     n = e.core?.details?.issued_card_type,
                                     c = t?.issuedCardAccountName;
-                                return a && n && c ? r.createElement(u.Z, { key: a, onClick: k({ cardType: n, cardId: a }), title: c }) : null;
-                            }),
-                        ),
-                    );
+                                return a && n && c ? r.createElement(u.Z, { key: a, onClick: g({ cardType: n, cardId: a }), title: c }) : null;
+                            },
+                            [g],
+                        );
+                    return r.createElement(d.Z, { backButtonType: "back", history: e, onBackClick: k, withoutBottomBarMobile: !0 }, r.createElement(i.Z, { style: t.container }, r.createElement(l.ZP, { size: "title2", style: h.ZP.title, weight: "heavy" }, "Which card do you have a problem with?")), r.createElement(i.Z, { style: t.footer }, n?.map(b), s?.map(b)));
                 },
                 g = { context: "CardOnboard" };
             function b() {
@@ -496,15 +491,16 @@
                     [C.W.IssuedCardTypeVirtual]: { successTitle: "We’ve replaced your Virtual Card", successDescription: "It’s now ready to use. Your existing subscriptions and recurring payments will continue to work.", defaultReason: f.k.IssuedCardReplacementReasonStolen, replaceTitle: "Replace your card", replaceDescription: "We’ll deactivate your current card, and create a new virtual card for you to use for online purchases." },
                 }),
                 _ = Object.freeze({ successPane: "successPane" });
-            var v = a(782642),
-                I = a(413713),
-                P = a(805322),
-                w = a(414350),
-                S = (a(585488), a(351743)),
-                T = a.n(S);
-            const B = w.Z,
-                x = () => {
-                    const [e, t] = T()(B);
+            var v = a(167630),
+                I = a(782642),
+                P = a(413713),
+                w = a(805322),
+                S = a(414350),
+                T = (a(585488), a(351743)),
+                B = a.n(T);
+            const x = S.Z,
+                R = () => {
+                    const [e, t] = B()(x);
                     return [
                         r.useCallback(
                             ({ cardId: t, reason: a }) =>
@@ -525,46 +521,46 @@
                         t,
                     ];
                 },
-                R = ({ cardId: e, cardType: t, ...a }) => {
-                    const s = (0, v.p)(),
+                A = ({ cardId: e, cardType: t, ...a }) => {
+                    const s = (0, I.p)(),
                         p = (0, h.jh)(),
                         y = (0, c.useHistory)(),
                         k = (0, o.z)(),
                         { defaultReason: g, reasons: b, replaceDescription: E, replaceTitle: f } = Z[t],
-                        [C, w] = r.useState(),
-                        [S, T] = r.useState(),
-                        [B, R] = x(),
-                        A = r.useCallback(
+                        [C, S] = r.useState(),
+                        [T, B] = r.useState(),
+                        [x, A] = R(),
+                        D = r.useCallback(
                             (a) => {
                                 k.scribe({ page: "money", section: "confirm-payment", element: "approve", action: "click" }),
-                                    B({ cardId: e, reason: a })
+                                    x({ cardId: e, reason: a })
                                         .then(({ challengeId: a }) => {
-                                            a ? T(a) : y.push(m.zI, { cardId: e, cardType: t, step: _.successPane });
+                                            a ? B(a) : y.push(m.zI, { cardId: e, cardType: t, step: _.successPane });
                                         })
                                         .catch((e) => {
-                                            s({ text: (0, I.kJ)({ errors: e }).message });
+                                            s({ text: (0, P.kJ)({ errors: e }).message });
                                         });
                             },
-                            [s, k, e, t, B, y],
+                            [s, k, e, t, x, y],
                         ),
-                        D = r.useCallback(() => {
-                            T(null);
+                        L = r.useCallback(() => {
+                            B(null);
                             const e = C ?? g;
-                            e && A(e);
-                        }, [g, A, C]),
-                        L = r.useCallback(
+                            e && D(e);
+                        }, [g, D, C]),
+                        z = r.useCallback(
                             (e) => () => {
-                                w(e), A(e);
+                                S(e), D(e);
                             },
-                            [A],
+                            [D],
                         ),
-                        z = r.useCallback(() => {
+                        H = r.useCallback(() => {
                             y.goBack();
                         }, [y]);
-                    return S ? r.createElement(P.Z, (0, n.Z)({}, a, { challengeId: S, challengeInitiator: m.kW.replaceCard, onSuccess: D })) : r.createElement(d.Z, { backButtonType: "back", history: y, onBackClick: z, withoutBottomBarMobile: !0 }, r.createElement(i.Z, { style: p.container }, r.createElement(l.ZP, { size: "title2", style: h.ZP.title, weight: "heavy" }, f), r.createElement(l.ZP, { color: "gray700", size: "subtext1" }, E)), r.createElement(i.Z, { style: p.footer }, b ? b.map(({ key: e, label: t }) => r.createElement(u.Z, { disabled: R, key: e, onClick: L(e), title: t })) : g ? r.createElement(u.Z, { disabled: R, onClick: L(g), title: "Replace card" }) : null));
+                    return T ? r.createElement(w.Z, (0, n.Z)({}, a, { challengeId: T, challengeInitiator: m.kW.replaceCard, onSuccess: L })) : r.createElement(d.Z, { backButtonType: "back", history: y, onBackClick: H, withoutBottomBarMobile: !0 }, r.createElement(i.Z, { style: p.container }, r.createElement(l.ZP, { size: "title2", style: h.ZP.title, weight: "heavy" }, f), r.createElement(l.ZP, { color: "gray700", size: "subtext1" }, E)), r.createElement(i.Z, { style: p.footer }, b ? b.map(({ key: e, label: t }) => r.createElement(u.Z, { disabled: A, key: e, onClick: z(e), title: t })) : g ? r.createElement(u.Z, { disabled: A, onClick: z(g), title: "Replace card" }) : null, A ? r.createElement(v.Z, null) : null));
                 },
-                A = r.memo(R),
-                D = ({ cardType: e }) => {
+                D = r.memo(A),
+                L = ({ cardType: e }) => {
                     const t = (0, o.z)(),
                         a = (0, c.useHistory)(),
                         n = (0, h.jh)(),
@@ -578,9 +574,9 @@
                         g = r.createElement(i.Z, { style: n.footer }, r.createElement(u.Z, { link: m.Tb, onClick: y, title: "Done" }));
                     return r.createElement(d.Z, { backButtonType: "close", bottomBar: g, history: a, onBackClick: k, withoutBottomBarMobile: !0 }, r.createElement(i.Z, { style: n.container }, r.createElement(l.ZP, { size: "title2", style: h.ZP.title, weight: "heavy" }, p), r.createElement(l.ZP, null, s)));
                 },
-                L = r.memo(D),
-                z = { context: "CardReplace" },
-                H = (e) => {
+                z = r.memo(L),
+                H = { context: "CardReplace" },
+                M = (e) => {
                     const t = (0, o.z)(),
                         a = (0, c.useHistory)(),
                         i = a.location?.state,
@@ -591,10 +587,10 @@
                         r.useEffect(() => {
                             t && t.scribe({ page: "money", component: l, section: "replace-card", action: "impression" });
                         }, [t, l]),
-                        r.createElement(s.H, { errorConfig: z }, m && l === _.successPane ? r.createElement(L, { cardType: m }) : m && d ? r.createElement(A, (0, n.Z)({}, e, { cardId: d, cardType: m })) : r.createElement(E, null))
+                        r.createElement(s.H, { errorConfig: H }, m && l === _.successPane ? r.createElement(z, { cardType: m }) : m && d ? r.createElement(D, (0, n.Z)({}, e, { cardId: d, cardType: m })) : r.createElement(E, null))
                     );
                 },
-                M = r.memo(H);
+                j = r.memo(M);
         },
         188885: (e, t, a) => {
             a.r(t), a.d(t, { default: () => $e });
@@ -982,4 +978,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-b8e4b837.0b5404fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-b8e4b837.c09f3d3a.js.map

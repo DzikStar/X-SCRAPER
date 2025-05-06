@@ -56,7 +56,7 @@
             };
         },
         189953: (e, t, s) => {
-            s.d(t, { $t: () => ae, A0: () => Re, BA: () => se, BS: () => U, CH: () => L, CR: () => z, Cr: () => _, DX: () => j, Dh: () => S, Dn: () => k, En: () => u, FF: () => Q, FV: () => N, Gy: () => b, HF: () => E, IK: () => r, JO: () => V, Jt: () => ne, KH: () => C, L0: () => X, Lc: () => a, OW: () => w, Oj: () => O, P9: () => Z, Q_: () => o, Qg: () => K, Qh: () => J, Sv: () => i, TY: () => D, Tv: () => B, UN: () => h, VK: () => c, WK: () => te, Ws: () => d, Xg: () => $, Xi: () => G, Y8: () => p, Yb: () => y, Yf: () => n, Yx: () => m, ZN: () => W, _i: () => ce, ar: () => x, cA: () => Ee, cw: () => oe, dK: () => l, dO: () => I, dZ: () => M, dw: () => me, f1: () => pe, j$: () => ge, k$: () => F, lQ: () => ee, lh: () => R, lm: () => g, mq: () => Se, my: () => A, nK: () => T, o$: () => P, px: () => ie, qd: () => Y, ru: () => le, ub: () => v, vc: () => H, vi: () => f, wG: () => re, x5: () => q, yB: () => de, z2: () => ue });
+            s.d(t, { $t: () => ae, A0: () => Re, BA: () => se, BS: () => U, CH: () => L, CR: () => z, Cr: () => _, DX: () => j, Dh: () => S, Dn: () => k, En: () => u, FF: () => Q, FV: () => N, Gy: () => b, HF: () => E, IK: () => r, JO: () => V, Jt: () => ne, KH: () => C, L0: () => X, Lc: () => a, OW: () => w, Oj: () => O, P9: () => Z, Q_: () => o, Qg: () => K, Qh: () => J, Sv: () => i, TY: () => D, Tv: () => B, UN: () => h, VK: () => c, WK: () => te, Ws: () => d, Xg: () => $, Xi: () => H, Y8: () => p, Yb: () => y, Yf: () => n, Yx: () => m, ZN: () => W, _i: () => ce, ar: () => x, cA: () => Ee, cw: () => oe, dK: () => l, dO: () => I, dZ: () => M, dw: () => me, f1: () => pe, j$: () => ge, k$: () => F, lQ: () => ee, lh: () => R, lm: () => g, mq: () => Se, my: () => A, nK: () => T, o$: () => P, px: () => ie, qd: () => Y, ru: () => le, ub: () => v, vc: () => G, vi: () => f, wG: () => re, x5: () => q, yB: () => de, z2: () => ue });
             const n = "grok",
                 r = Object.freeze({ FUN: "fun", REGULAR: "" }),
                 o = Object.freeze({ IDLE: "idle", TYPING: "typing", WAITING: "waiting", FAILED: "failed" }),
@@ -92,8 +92,8 @@
                 M = "rweb/grok/GROK_RESPONSE_FOLLOWUP_SUGGESTED_MODE",
                 D = "rweb/grok/GROK_RESPONSE_CHAT_RESPONSE_ANNOTATIONS",
                 K = "rweb/grok/GROK_RESPONSE_UPSELL",
-                G = "rweb/grok/GROK_RESPONSE_CARD_ATTACHMENT",
-                H = "rweb/grok/GROK_RESPONSE_CARD_ATTACHMENTS",
+                H = "rweb/grok/GROK_RESPONSE_CARD_ATTACHMENT",
+                G = "rweb/grok/GROK_RESPONSE_CARD_ATTACHMENTS",
                 F = "rweb/grok/GROK_RESPONSE_DEEPSEARCH_UPDATE",
                 Q = "rweb/grok/GROK_RESPONSE_MEMORY_REFERENCES",
                 x = "rweb/grok/GROK_WEB_RESULTS",
@@ -128,7 +128,7 @@
                 Se = "rweb/grok/SET_IS_PAST_THINKING_TRACE";
         },
         389071: (e, t, s) => {
-            s.d(t, { BU: () => K, Es: () => T, F0: () => se, F9: () => j, JE: () => D, JU: () => w, Ki: () => q, NV: () => M, OR: () => L, Pl: () => oe, Pt: () => U, SJ: () => ne, SL: () => F, Tu: () => H, UM: () => O, Uo: () => ae, V$: () => P, X4: () => ee, YJ: () => Z, bD: () => h, bv: () => k, en: () => te, f: () => _, hi: () => G, j1: () => B, jP: () => X, lo: () => re, ni: () => J, pZ: () => Q, t5: () => V, uF: () => x, uX: () => N, uz: () => $, v0: () => z, vf: () => W, zO: () => b });
+            s.d(t, { BU: () => K, Es: () => T, F0: () => te, F9: () => j, JE: () => D, JU: () => w, Ki: () => X, NV: () => M, OR: () => L, Pl: () => re, Pt: () => U, SJ: () => se, SL: () => F, Tu: () => G, UM: () => O, Uo: () => oe, V$: () => P, X4: () => J, YJ: () => Z, bD: () => h, bv: () => k, en: () => ee, f: () => _, hi: () => H, j1: () => B, lo: () => ne, ni: () => q, pZ: () => Q, t5: () => V, uF: () => x, uX: () => N, uz: () => $, v0: () => z, vf: () => W, zO: () => b });
             s(136728), s(571372), s(574858);
             var n = s(726426),
                 r = s.n(n),
@@ -653,10 +653,10 @@
             function K(e) {
                 return e[m.Yf].fetchHistoryStatus;
             }
-            function G(e) {
+            function H(e) {
                 return e[m.Yf].mediaHistory.status;
             }
-            function H(e) {
+            function G(e) {
                 return e[m.Yf].mediaHistory.cursor;
             }
             function F(e) {
@@ -706,33 +706,30 @@
                 return { type: m.Jt, payload: e };
             }
             function X(e) {
-                return { type: m.wG, payload: e };
-            }
-            function q(e) {
                 return { type: m.$t, payload: e };
             }
-            function J(e) {
+            function q(e) {
                 return { type: m._i, payload: e };
             }
-            function ee(e) {
+            function J(e) {
                 return { type: m.z2, payload: e };
             }
-            function te(e) {
+            function ee(e) {
                 return e[m.Yf].grokInput.advancedSettings;
             }
-            function se(e) {
+            function te(e) {
                 return { type: m.j$, payload: e };
             }
-            function ne(e) {
+            function se(e) {
                 return { type: m.Yb, payload: e };
             }
-            function re(e, t) {
+            function ne(e, t) {
                 return { type: m.vi, payload: { conversationId: e, title: t } };
             }
-            function oe(e) {
+            function re(e) {
                 return { type: m.dw, payload: { mediaId: e } };
             }
-            function ae(e, t) {
+            function oe(e, t) {
                 return { type: m.Qh, payload: { conversationId: e, inputPrefill: t } };
             }
             d.Z.register(
@@ -826,7 +823,7 @@
                             case m.Yx.FAILURE:
                                 return { ...e, fetchHomeStatus: p.ZP.FAILED };
                             case m.Yx.SUCCESS:
-                                return { ...e, fetchHomeStatus: p.ZP.LOADED, prompts: t.payload?.grok_home?.prompts?.map((e) => ({ header: e.header, text: e.text, value: e.value, trendPromptIdStr: e.prompt_id ?? "", imageUrl: e.image_url ?? "" })) ?? [], version: t.payload?.grok_home?.grok_version ?? "", modelOptions: t.payload?.grok_home?.grok_model_options?.map((e) => ({ id: e.id, description: e.description, isEnabled: e.is_enabled, name: e.name })) ?? [], layout: t.payload?.grok_home?.layout ? { name: t.payload?.grok_home?.layout.name, sections: t.payload?.grok_home?.layout.sections.map((e) => ({ title: e.title, section_type: e.section_type, subtitle: e.subtitle, prompts: e.prompts ? e.prompts.map((e) => ({ display_label: e.display_label, icon_name: e.icon_name, image_url: e.image_url, prompt: e.prompt, prompt_id: e.prompt_id, display_body: e.display_body, action: e.action, filter_key: e.filter_key, tool_overrides: { imageGen: e.tool_overrides?.image_gen, webSearch: e.tool_overrides?.web_search, xSearch: e.tool_overrides?.x_search, xMediaSearch: e.tool_overrides?.x_media_search, xPostAnalyze: e.tool_overrides?.x_post_analyze, trendsSearch: e.tool_overrides?.trends_search } })) : [] })), mode_buttons: [...(t.payload?.grok_home?.layout?.mode_buttons || []).map((e) => ({ filter_key: e.filter_key, free_status: e.free_status, icon_name: e.icon_name, label: e.label, premium_status: e.premium_status, premium_plus_status: e.premium_plus_status, supported_models: (e.supported_models || []).map((e) => e) }))] } : null };
+                                return { ...e, fetchHomeStatus: p.ZP.LOADED, version: t.payload?.grok_home?.grok_version ?? "", modelOptions: t.payload?.grok_home?.grok_model_options?.map((e) => ({ id: e.id, description: e.description, isEnabled: e.is_enabled, name: e.name })) ?? [], layout: t.payload?.grok_home?.layout ? { name: t.payload?.grok_home?.layout.name, sections: t.payload?.grok_home?.layout.sections.map((e) => ({ title: e.title, section_type: e.section_type, subtitle: e.subtitle, prompts: e.prompts ? e.prompts.map((e) => ({ display_label: e.display_label, icon_name: e.icon_name, image_url: e.image_url, prompt: e.prompt, prompt_id: e.prompt_id, display_body: e.display_body, action: e.action, filter_key: e.filter_key, tool_overrides: { imageGen: e.tool_overrides?.image_gen, webSearch: e.tool_overrides?.web_search, xSearch: e.tool_overrides?.x_search, xMediaSearch: e.tool_overrides?.x_media_search, xPostAnalyze: e.tool_overrides?.x_post_analyze, trendsSearch: e.tool_overrides?.trends_search } })) : [] })), mode_buttons: [...(t.payload?.grok_home?.layout?.mode_buttons || []).map((e) => ({ filter_key: e.filter_key, free_status: e.free_status, icon_name: e.icon_name, label: e.label, premium_status: e.premium_status, premium_plus_status: e.premium_plus_status, supported_models: (e.supported_models || []).map((e) => e) }))] } : null };
                             case m.Lc.REQUEST:
                                 return { ...e, fetchConversationStatus: p.ZP.LOADING };
                             case m.Lc.FAILURE:
@@ -901,4 +898,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.GrokDrawer-bfd49e49.4345857a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.GrokDrawer-bfd49e49.5aa976ba.js.map
