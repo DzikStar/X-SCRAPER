@@ -4161,7 +4161,7 @@
                 t("a9325f10", "Kopier bilde"),
                 t("g0b12442", "Kunne ikke kopiere bildet"),
                 t("edd0c172", "Publiser bilde"),
-                t("d1d3a41a", "Rediger bilde"),
+                t("d1d3a41a", "Bilderedigering"),
                 t("a2697040", "Beskriv hva som skal endres i bildet"),
                 t("ge1cefc4", "Verktøy"),
                 t("e9b6d404", "Hvilke søkeverktøy skal Grok ha tilgang til?"),
@@ -4342,7 +4342,7 @@
                 t("hf9afab0", "Aktiver DeepSearch for å søke på internett og X, analysere opplysninger og gi detaljerte, velbegrunnede svar med raskt, agentisk søk."),
                 t("ef3b3f04", "Aktiver tenkemodus for å bruke resonneringsmodellen vår. Den er best for matematikk, vitenskap og koding. Du kan også be Grok om å «tenke hardere» på et spørsmål som trenger litt mer hjernekraft. "),
                 t("b43636b8", "Vi presenterer Grok 3"),
-                t("j376298c", "Grok 3 innfører to nye moduser som samhandler med vår kraftigste modell: Dypsøk- og tenkemodus."),
+                t("j376298c", "Grok 3 innfører to nye moduser som samhandler med vår kraftigste modell: DeepSearch og tenkemodus."),
                 t("e3584f8e", "Hva er de ti mest vellykkede opsjonshandelsstrategiene som brukes av hedgefond"),
                 t("d91b7b8a", "Hva kostet det å bygge et universitet i 1885?"),
                 t("ia5bef3e", "Hva kan jeg hjelpe deg med i dag?"),
@@ -7016,7 +7016,7 @@
                 t("i4db5c92", "Avslutt når du vil"),
                 t("ae095fe8", "Grok med kunstig intelligens"),
                 t("d4e60288", "Høyeste forbruksgrenser"),
-                t("abaa4274", "Få tilgang til dypsøk- og tenkemodus"),
+                t("abaa4274", "Få tilgang til DeepSearch og tenkemodus"),
                 t("e0d53864", "Tidlig tilgang til nye funksjoner"),
                 t("g1be3530", "PRØV GRATIS"),
                 t("b10b4f1f", function (e) {
@@ -7060,7 +7060,7 @@
                     return "Abonner for å få " + e.percentage + " % rabatt (begrenset tid)";
                 }),
                 t("dfc5f972", "Og mye mer ..."),
-                t("fb8453c8", "Få tilgang til dypsøk- og tenkemodus"),
+                t("fb8453c8", "Få tilgang til DeepSearch og tenkemodus"),
                 t("e45b3f30", "Få undersøkelses- og resonneringsforespørsler"),
                 t("aaebdc2e", "Mye større tilgang til Grok 3 mini og Grok 3"),
                 t("ddf8a412", "Tilgang til nye funksjoner før andre"),
@@ -13186,4 +13186,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nb.6deac0ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nb.8caebbba.js.map

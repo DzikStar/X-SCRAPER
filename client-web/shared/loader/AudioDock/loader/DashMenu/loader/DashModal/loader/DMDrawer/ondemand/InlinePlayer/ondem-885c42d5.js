@@ -43,8 +43,8 @@
             const S = d().f027fed8,
                 I = { label: S },
                 Z = (0, h.v)((e, n) => {
-                    const { remove: t } = f.a.addEventListener("change", (e) => {
-                        e === f.$.active && n(w);
+                    const { remove: t } = f.aB.addEventListener("change", (e) => {
+                        e === f.$7.active && n(w);
                     });
                     return () => t();
                 }),
@@ -64,8 +64,8 @@
                 }),
                 E = (0, h.v)((e, n) => (e(v.mb) && n(P), u.Z)),
                 P = (0, i.cn)(null, (e, n) => {
-                    const { remove: t } = f.a.addEventListener("change", (e) => {
-                        e === f.$.background && n(A), t();
+                    const { remove: t } = f.aB.addEventListener("change", (e) => {
+                        e === f.$7.background && n(A), t();
                     });
                     setTimeout(() => {
                         t();
@@ -243,8 +243,8 @@
                 z = t(582129),
                 Y = t(625555),
                 G = t(139613),
-                U = t(835515),
-                B = t(405070),
+                B = t(835515),
+                U = t(405070),
                 O = t(94751),
                 V = t(41931),
                 $ = t(176559),
@@ -297,7 +297,7 @@
                         n(jt),
                         n(bt.add, n(O._$)),
                         n(bt.add, () => n(V.S, !1)),
-                        n(bt.add, () => n(U.lV, 1)),
+                        n(bt.add, () => n(B.lV, 1)),
                         await n(be, s);
                 }),
                 ve = (0, s.cn)(null, async (e, n, t) => {
@@ -412,7 +412,7 @@
                         const n = a.mid,
                             t = e(He),
                             s = d ? "presentation" : "";
-                        e(te.Zd).log({ description: s }), e(Be).enqueue(() => t.configure({ descriptions: [{ mid: n, description: s }] }));
+                        e(te.Zd).log({ description: s }), e(Ue).enqueue(() => t.configure({ descriptions: [{ mid: n, description: s }] }));
                     }
                     return r.Z;
                 }),
@@ -438,7 +438,7 @@
                         () => {
                             const t = e(q.mb),
                                 s = e($.Z),
-                                i = e(Ue),
+                                i = e(Be),
                                 c = i && (i === t || i === s),
                                 o = e(Ye);
                             if (!o && i) {
@@ -451,18 +451,18 @@
                                 const n = o.mid,
                                     t = e(He),
                                     s = c ? "presentation" : "";
-                                e(te.Zd).log({ description: s }), e(Be).enqueue(() => t.configure({ descriptions: [{ mid: n, description: s }] }));
+                                e(te.Zd).log({ description: s }), e(Ue).enqueue(() => t.configure({ descriptions: [{ mid: n, description: s }] }));
                             }
                         },
                         100,
                         { leading: !1 },
                     );
                     t();
-                    const s = e(g.zE).sub(Ue, t);
+                    const s = e(g.zE).sub(Be, t);
                     n(bt.add, s);
                 }),
-                Ue = (0, s.cn)((e) => e(J.eN)?.[0]?.track ?? e(B.U)),
-                Be = (0, s.cn)(() => new L.z()),
+                Be = (0, s.cn)((e) => e(J.eN)?.[0]?.track ?? e(U.U)),
+                Ue = (0, s.cn)(() => new L.z()),
                 Oe = (0, s.cn)([]),
                 Ve = (0, s.cn)(null, (e, n) => {
                     e(Oe).forEach((e) => e()), n(Oe, []);
@@ -487,7 +487,7 @@
                                     if (!n) return;
                                     const t = e(He),
                                         s = "presentation";
-                                    e(te.Zd).log({ description: s }), e(Be).enqueue(() => t.configure({ descriptions: [{ mid: n, description: s }] }));
+                                    e(te.Zd).log({ description: s }), e(Ue).enqueue(() => t.configure({ descriptions: [{ mid: n, description: s }] }));
                                 }),
                             ),
                         o
@@ -581,7 +581,7 @@
                         const s = t.transceiver.mid;
                         if (!s) return;
                         const i = t.track;
-                        n(En(s), i), "audio" !== i.kind || e(V.v) || n(U.sq, { track: i, mid: s });
+                        n(En(s), i), "audio" !== i.kind || e(V.v) || n(B.sq, { track: i, mid: s });
                         const c = e(b.rm);
                         c && n((0, W.A5)((0, H.Rq)(c)).finish);
                     }),
@@ -761,13 +761,13 @@
                     if (e(qn(t))) return;
                     n(qn(t), !0);
                     const i = e(Rn(t));
-                    i?.forEach((e) => n(U.S$, e, s)), n(xe, (e) => (0, x.Z)(e, s, 0));
+                    i?.forEach((e) => n(B.S$, e, s)), n(xe, (e) => (0, x.Z)(e, s, 0));
                 }),
                 Yn = (0, s.cn)(),
                 Gn = (0, s.cn)(),
-                Un = (0, s.cn)({}),
-                Bn = (0, s.cn)(new Map()),
-                On = (0, c.xu)((e) => (0, s.cn)((n) => n(Bn).get(e))),
+                Bn = (0, s.cn)({}),
+                Un = (0, s.cn)(new Map()),
+                On = (0, c.xu)((e) => (0, s.cn)((n) => n(Un).get(e))),
                 Vn = (0, s.cn)([]),
                 $n = (0, s.cn)(null, (e, n, t) => {
                     const s = {},
@@ -788,7 +788,7 @@
                                 s[n] = 1 - r.lvl / 255;
                             }
                         }
-                    n(Vn, o), n(Un, s), n(Bn, i);
+                    n(Vn, o), n(Bn, s), n(Un, i);
                 }),
                 Qn = (0, A.G)(
                     () => Vn,
@@ -802,14 +802,14 @@
                     t && (await n(yt, { spaceId: t }));
                 }),
                 Fn = (0, I.v)((e, n) => {
-                    e(U.Z4);
+                    e(B.Z4);
                     const t = e(nt);
                     if (!t) return r.Z;
                     const s = e(Rn(t));
-                    return s?.filter((n) => "audio" === e(En(n))?.kind).forEach((e, t) => n(U.S$, e, t)), r.Z;
+                    return s?.filter((n) => "audio" === e(En(n))?.kind).forEach((e, t) => n(B.S$, e, t)), r.Z;
                 }),
                 Kn = (0, s.cn)((e) => new Set(e(ke))),
-                Jn = (0, c.xu)((e) => (0, s.cn)((n) => n(Un)[e])),
+                Jn = (0, c.xu)((e) => (0, s.cn)((n) => n(Bn)[e])),
                 Hn = (0, s.cn)(null, async (e, n, t) => {
                     if ("answer" === t.type) {
                         const s = e(ce.bP);
@@ -1031,7 +1031,7 @@
                                 for (const n of e) t.has(n) || s.push(n);
                                 return s;
                             })(t, s);
-                        for (const e of i) n(U.zb, e);
+                        for (const e of i) n(B.zb, e);
                         t = s;
                     });
                     n(bt.add, s);
@@ -1070,4 +1070,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-885c42d5.91b98afa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-885c42d5.1db71b8a.js.map

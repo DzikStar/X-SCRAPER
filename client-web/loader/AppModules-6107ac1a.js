@@ -186,40 +186,41 @@
         },
         417144: (t, e, i) => {
             "use strict";
-            function s(t) {
-                let e = 1;
-                const i = new Map();
-                let s = 0,
-                    n = 0,
+            function s(t, e = 1) {
+                let i = e;
+                const s = new Map();
+                let n = 0,
                     o = 0,
-                    r = null;
-                function a() {
-                    i.clear(), (s = 0), (n = 0), (o = 0);
+                    r = 0,
+                    a = null;
+                function c() {
+                    s.clear(), (n = 0), (o = 0), (r = 0);
                 }
                 return {
                     uploadStart: function (t, e) {
-                        i.set(t, { time: Date.now(), bytes: e }), n || (n = Date.now());
+                        s.set(t, { time: Date.now(), bytes: e }), o || (o = Date.now());
                     },
-                    uploadFinish: function (c, h) {
-                        const u = i.get(c);
-                        u &&
-                            ((s += h - u.bytes),
-                            i.delete(c),
-                            ++o === e &&
+                    uploadFinish: function (h, u) {
+                        const l = s.get(h);
+                        l &&
+                            ((n += u - l.bytes),
+                            s.delete(h),
+                            ++r === i &&
                                 (function () {
-                                    if (!n) return;
-                                    const i = Date.now() - n;
-                                    if (i <= 0) return;
-                                    const o = s / i;
-                                    if (o < 5e3 && 1 === e) return;
-                                    !r || r.byterate < o ? ((e += 1), t(), (r = { byterate: o, poolSize: e })) : ((e -= 2), (e = Math.max(e, 1)), (r = null));
-                                    a();
+                                    if (!o) return;
+                                    const s = Date.now() - o;
+                                    if (s <= 0) return;
+                                    if (1 !== e) return;
+                                    const r = n / s;
+                                    if (r < 5e3 && 1 === i) return;
+                                    !a || a.byterate < r ? ((i += 1), t(), (a = { byterate: r, poolSize: i })) : ((i -= 2), (i = Math.max(i, 1)), (a = null));
+                                    c();
                                 })());
                     },
-                    reset: a,
-                    getPoolSize: () => e,
+                    reset: c,
+                    getPoolSize: () => i,
                     start: function () {
-                        t();
+                        for (let e = 0; e < i; ++e) t();
                     },
                 };
             }
@@ -253,7 +254,7 @@
                         (this._bitrateMonitor = t.withMultiRequests
                             ? s(() => {
                                   this._startNextAppendSegment();
-                              })
+                              }, t.withMultiRequestsDefaultPoolSize)
                             : void 0),
                         this._notifyResult(),
                         this._notifyProgress(this._uploadProgress());
@@ -768,4 +769,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.AppModules-6107ac1a.51eb0dfa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.AppModules-6107ac1a.d344c22a.js.map

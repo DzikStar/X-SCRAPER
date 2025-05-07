@@ -189,8 +189,8 @@
                 y = o(199481);
             const f = b().c14cdb18,
                 x = b().be059f7e,
-                E = b().c34f845e,
-                k = b().c37102aa,
+                k = b().c34f845e,
+                E = b().c37102aa,
                 Z = b().ac245c4c,
                 C = b().e4db6326,
                 T = (e) => {
@@ -235,8 +235,8 @@
                             n.createElement(
                                 a.Z,
                                 { style: P.contentContainer },
-                                n.createElement(a.Z, { style: P.popupTitle }, n.createElement(s.ZP, { align: "left", role: "heading", size: "title4", weight: "heavy" }, E)),
-                                n.createElement(s.ZP, null, k),
+                                n.createElement(a.Z, { style: P.popupTitle }, n.createElement(s.ZP, { align: "left", role: "heading", size: "title4", weight: "heavy" }, k)),
+                                n.createElement(s.ZP, null, E),
                                 n.createElement(
                                     m.ZP,
                                     {
@@ -406,7 +406,7 @@
                 w = (0, m.Z)(_);
         },
         131133: (e, t, o) => {
-            o.d(t, { cN: () => S, eM: () => k, pZ: () => Z });
+            o.d(t, { cN: () => S, eM: () => E, pZ: () => Z });
             var n = o(202784),
                 r = o(325686),
                 a = o(124964),
@@ -426,9 +426,9 @@
                 y = o(725516);
             const f = s().gf5e9ea6,
                 x = s().e2f2b658,
-                E = Object.freeze({ see_more: s().ffd9cfe6, discover_more: s().d172116a, more: s().h63a5c3c, more_tweets: s().be5df69e, more_suggestions: s().g11ebd34, browse: s().g4a6901a, browse_tweets: s().h6453e74 });
-            function k({ featureSwitches: e, isExpanded: t, topic: o, topicContext: n }) {
-                return (0, w.SJ)(n) && t && o.not_interested && (!(e.getStringValue("topics_context_controls_implicit_variation") in E) || e.isTrue("topics_context_controls_implicit_context_x_enabled"));
+                k = Object.freeze({ see_more: s().ffd9cfe6, discover_more: s().d172116a, more: s().h63a5c3c, more_tweets: s().be5df69e, more_suggestions: s().g11ebd34, browse: s().g4a6901a, browse_tweets: s().h6453e74 });
+            function E({ featureSwitches: e, isExpanded: t, topic: o, topicContext: n }) {
+                return (0, w.SJ)(n) && t && o.not_interested && (!(e.getStringValue("topics_context_controls_implicit_variation") in k) || e.isTrue("topics_context_controls_implicit_context_x_enabled"));
             }
             const Z = ({ onUndoTopicNotInterestedClick: e }) => n.createElement(r.Z, { style: v.tombstone }, n.createElement(h.Z, { actionText: f, children: x, inline: !0, onClick: e })),
                 C = (0, y.Z)((e) => {
@@ -473,20 +473,20 @@
                     y = p && (0, w.SJ)(p),
                     f = t.isTrue("media_edge_to_edge_content_enabled"),
                     x = f ? g.Z.TextOnly : g.Z.Topic,
-                    k = r?.markNotInterestedTopic?.onClick,
+                    E = r?.markNotInterestedTopic?.onClick,
                     Z = p ? (0, _.P)(p) : void 0,
                     S = p?.bannerText ? n.createElement(m.Z, p.bannerText) : i.text;
-                if (h && t.getStringValue("topics_context_controls_followed_variation") in E) {
-                    const e = E[t.getStringValue("topics_context_controls_followed_variation")];
+                if (h && t.getStringValue("topics_context_controls_followed_variation") in k) {
+                    const e = k[t.getStringValue("topics_context_controls_followed_variation")];
                     return { iconSize: o, contextType: x, rightControl: n.createElement(C, { bannerText: i.topicContext && i.topicContext.bannerText, label: e, link: u, linkText: i.topicContext && i.topicContext.linkText, topic: l }), withBottomBorder: !1, withLeftPadding: !(t.isTrue("social_context_and_topic_context_refresh_alignment_enabled") || f), topicData: Z, text: S };
                 }
                 if (y) {
-                    if (t.getStringValue("topics_context_controls_implicit_variation") in E) {
-                        const e = E[t.getStringValue("topics_context_controls_implicit_variation")];
-                        return { iconSize: o, contextType: x, rightControl: n.createElement(C, { bannerText: i.topicContext && i.topicContext.bannerText, label: e, link: u, linkText: i.topicContext?.linkText, onNotInterestedPress: k, topic: l, withRightControl: t.isTrue("topics_context_controls_implicit_context_x_enabled") }), topicData: Z, text: S, withBottomBorder: !1, withLeftPadding: !(t.isTrue("social_context_and_topic_context_refresh_alignment_enabled") || f) };
+                    if (t.getStringValue("topics_context_controls_implicit_variation") in k) {
+                        const e = k[t.getStringValue("topics_context_controls_implicit_variation")];
+                        return { iconSize: o, contextType: x, rightControl: n.createElement(C, { bannerText: i.topicContext && i.topicContext.bannerText, label: e, link: u, linkText: i.topicContext?.linkText, onNotInterestedPress: E, topic: l, withRightControl: t.isTrue("topics_context_controls_implicit_context_x_enabled") }), topicData: Z, text: S, withBottomBorder: !1, withLeftPadding: !(t.isTrue("social_context_and_topic_context_refresh_alignment_enabled") || f) };
                     }
                     {
-                        const e = n.createElement(T, { isExpanded: a, onNotInterestedPress: k, topic: l });
+                        const e = n.createElement(T, { isExpanded: a, onNotInterestedPress: E, topic: l });
                         return a ? { bottomControl: e, contextType: s, iconSize: "xLarge", iconStyle: v.iconStyle, textColor: "text", textSize: "headline1", text: i.text, topicData: void 0, withBottomBorder: !0, withLeftPadding: c } : { contextType: s, iconSize: o, iconStyle: v.iconStyle, rightControl: e, topicData: Z, text: i.text, withBottomBorder: !0, withLeftPadding: c };
                     }
                 }
@@ -553,11 +553,11 @@
             const p = a.Z.createLayoutCache(),
                 u = s.default.create((e) => ({ avatar: { display: "block" }, avatarWrapper: { flexShrink: 1, flexGrow: 0, width: "100%" } })),
                 m = (e) => {
-                    const { avatarRef: t, id: o, onClick: a, onHoverCardScreenNameClick: s, promotedContent: m, screenName: h, uri: b, userAvatarLabel: _, userId: g, withHoverCard: w = !0, withLink: y = !0, withUserPresence: f = !1 } = e;
+                    const { avatarRef: t, id: o, link: a, onClick: s, onHoverCardScreenNameClick: m, promotedContent: h, screenName: b, uri: _, userAvatarLabel: g, userId: w, withHoverCard: y = !0, withLink: f = !0, withUserPresence: x = !1 } = e;
                     return n.createElement(
                         r.Z,
                         { style: u.avatarWrapper },
-                        n.createElement(i.Z.Consumer, null, ({ avatarSize: e }) => (f ? n.createElement(d.Z, { avatarRef: t, id: o, imageLayoutCache: p, onClick: a, onHoverCardScreenNameClick: s, promotedContent: m, screenName: h, size: e, style: u.avatar, uri: b, userAvatarLabel: _, userId: g, withHoverCard: w, withLink: y }) : n.createElement(l.ZP.Provider, { value: { userAvatarLabel: () => _ } }, n.createElement(c.default, { avatarRef: t, id: o, imageLayoutCache: p, onClick: a, onHoverCardScreenNameClick: s, promotedContent: m, screenName: h, size: e, style: u.avatar, uri: b, userId: g, withHoverCard: w, withLink: y })))),
+                        n.createElement(i.Z.Consumer, null, ({ avatarSize: e }) => (x ? n.createElement(d.Z, { avatarRef: t, id: o, imageLayoutCache: p, onClick: s, onHoverCardScreenNameClick: m, promotedContent: h, screenName: b, size: e, style: u.avatar, uri: _, userAvatarLabel: g, userId: w, withHoverCard: y, withLink: f }) : n.createElement(l.ZP.Provider, { value: { userAvatarLabel: () => g } }, n.createElement(c.default, { avatarRef: t, id: o, imageLayoutCache: p, link: a, onClick: s, onHoverCardScreenNameClick: m, promotedContent: h, screenName: b, size: e, style: u.avatar, uri: _, userId: w, withHoverCard: y, withLink: f })))),
                     );
                 };
         },
@@ -587,4 +587,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-012d0d8f.14e5d91a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-012d0d8f.9a2524aa.js.map

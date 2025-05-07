@@ -3,40 +3,41 @@
     ["shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"],
     {
         417144: (t, e, s) => {
-            function i(t) {
-                let e = 1;
-                const s = new Map();
-                let i = 0,
-                    a = 0,
+            function i(t, e = 1) {
+                let s = e;
+                const i = new Map();
+                let a = 0,
                     o = 0,
-                    r = null;
-                function n() {
-                    s.clear(), (i = 0), (a = 0), (o = 0);
+                    r = 0,
+                    n = null;
+                function d() {
+                    i.clear(), (a = 0), (o = 0), (r = 0);
                 }
                 return {
                     uploadStart: function (t, e) {
-                        s.set(t, { time: Date.now(), bytes: e }), a || (a = Date.now());
+                        i.set(t, { time: Date.now(), bytes: e }), o || (o = Date.now());
                     },
-                    uploadFinish: function (d, h) {
-                        const l = s.get(d);
-                        l &&
-                            ((i += h - l.bytes),
-                            s.delete(d),
-                            ++o === e &&
+                    uploadFinish: function (h, l) {
+                        const u = i.get(h);
+                        u &&
+                            ((a += l - u.bytes),
+                            i.delete(h),
+                            ++r === s &&
                                 (function () {
-                                    if (!a) return;
-                                    const s = Date.now() - a;
-                                    if (s <= 0) return;
-                                    const o = i / s;
-                                    if (o < 5e3 && 1 === e) return;
-                                    !r || r.byterate < o ? ((e += 1), t(), (r = { byterate: o, poolSize: e })) : ((e -= 2), (e = Math.max(e, 1)), (r = null));
-                                    n();
+                                    if (!o) return;
+                                    const i = Date.now() - o;
+                                    if (i <= 0) return;
+                                    if (1 !== e) return;
+                                    const r = a / i;
+                                    if (r < 5e3 && 1 === s) return;
+                                    !n || n.byterate < r ? ((s += 1), t(), (n = { byterate: r, poolSize: s })) : ((s -= 2), (s = Math.max(s, 1)), (n = null));
+                                    d();
                                 })());
                     },
-                    reset: n,
-                    getPoolSize: () => e,
+                    reset: d,
+                    getPoolSize: () => s,
                     start: function () {
-                        t();
+                        for (let e = 0; e < s; ++e) t();
                     },
                 };
             }
@@ -70,7 +71,7 @@
                         (this._bitrateMonitor = t.withMultiRequests
                             ? i(() => {
                                   this._startNextAppendSegment();
-                              })
+                              }, t.withMultiRequestsDefaultPoolSize)
                             : void 0),
                         this._notifyResult(),
                         this._notifyProgress(this._uploadProgress());
@@ -393,4 +394,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481.cc29ea8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481.6f273fca.js.map

@@ -276,10 +276,10 @@
                     return !(!t && !i) || !a()(e, this.props);
                 }
                 render() {
-                    const { "aria-label": e, color: t, failureMessage: i, fetchStatus: n, icon: a, loadingMessage: r, onRequestRetry: u, render: g, renderFailure: m, retryMessage: p, retryable: _ } = this.props;
+                    const { "aria-label": e, color: t, failureMessage: i, fetchStatus: n, icon: a, loadingMessage: r, onRequestRetry: u, render: g, renderFailure: m, retryMessage: p, retryable: f } = this.props;
                     switch (n) {
                         case d:
-                            return _ ? s.createElement(l.Z, { icon: a, onRequestRetry: u, retryMessage: p }) : i ? s.createElement(o.m, { failureMessage: i }) : m();
+                            return f ? s.createElement(l.Z, { icon: a, onRequestRetry: u, retryMessage: p }) : i ? s.createElement(o.m, { failureMessage: i }) : m();
                         case h:
                             return s.createElement(o.J, { "aria-label": e, color: t, loadingMessage: r });
                         case c:
@@ -691,16 +691,16 @@
                     const { height: s, size: n, width: a } = e;
                     return a > i || s > i || n > t;
                 },
-                _ = (e, t) => t || { top: 0, left: 0, width: e.width, height: e.height },
-                f = (e, t) => {
-                    const { height: i, left: s, top: n, width: a } = _(e, t);
+                f = (e, t) => t || { top: 0, left: 0, width: e.width, height: e.height },
+                _ = (e, t) => {
+                    const { height: i, left: s, top: n, width: a } = f(e, t);
                     return !(0 === n && 0 === s && a === e.width && i === e.height);
                 };
             function y(e, t) {
                 const { maxFileSize: i = u, maxDimension: s = h, cropData: n, jpgPixelsPerByteForResize: a } = t || {},
                     r = "image/jpeg" === e.type,
                     l = (e.width * e.height) / e.size;
-                return m(e) || p(e, i, s) || f(e, n) || (r && !!a && l < a);
+                return m(e) || p(e, i, s) || _(e, n) || (r && !!a && l < a);
             }
             const w = (e, t) => {
                     const { height: i, width: s } = e;
@@ -709,7 +709,7 @@
                 S = (e) => ("function" == typeof e.decode ? e.decode() : Promise.resolve());
             function E(e, t) {
                 const { maxFileSize: i = u, maxDimension: n = h, targetQuality: l = c, cropData: d } = t || {},
-                    m = _(e, d);
+                    m = f(e, d);
                 if (!y(e, t)) return Promise.resolve(e.fileHandle);
                 if (!(0, r.DS)(e)) {
                     const e = new a.Z("The provided file is not a valid image", g.FILE_IS_NOT_AN_IMAGE);
@@ -735,40 +735,41 @@
             }
         },
         417144: (e, t, i) => {
-            function s(e) {
-                let t = 1;
-                const i = new Map();
-                let s = 0,
-                    n = 0,
+            function s(e, t = 1) {
+                let i = t;
+                const s = new Map();
+                let n = 0,
                     a = 0,
-                    r = null;
-                function l() {
-                    i.clear(), (s = 0), (n = 0), (a = 0);
+                    r = 0,
+                    l = null;
+                function o() {
+                    s.clear(), (n = 0), (a = 0), (r = 0);
                 }
                 return {
                     uploadStart: function (e, t) {
-                        i.set(e, { time: Date.now(), bytes: t }), n || (n = Date.now());
+                        s.set(e, { time: Date.now(), bytes: t }), a || (a = Date.now());
                     },
-                    uploadFinish: function (o, d) {
-                        const u = i.get(o);
-                        u &&
-                            ((s += d - u.bytes),
-                            i.delete(o),
-                            ++a === t &&
+                    uploadFinish: function (d, u) {
+                        const h = s.get(d);
+                        h &&
+                            ((n += u - h.bytes),
+                            s.delete(d),
+                            ++r === i &&
                                 (function () {
-                                    if (!n) return;
-                                    const i = Date.now() - n;
-                                    if (i <= 0) return;
-                                    const a = s / i;
-                                    if (a < 5e3 && 1 === t) return;
-                                    !r || r.byterate < a ? ((t += 1), e(), (r = { byterate: a, poolSize: t })) : ((t -= 2), (t = Math.max(t, 1)), (r = null));
-                                    l();
+                                    if (!a) return;
+                                    const s = Date.now() - a;
+                                    if (s <= 0) return;
+                                    if (1 !== t) return;
+                                    const r = n / s;
+                                    if (r < 5e3 && 1 === i) return;
+                                    !l || l.byterate < r ? ((i += 1), e(), (l = { byterate: r, poolSize: i })) : ((i -= 2), (i = Math.max(i, 1)), (l = null));
+                                    o();
                                 })());
                     },
-                    reset: l,
-                    getPoolSize: () => t,
+                    reset: o,
+                    getPoolSize: () => i,
                     start: function () {
-                        e();
+                        for (let t = 0; t < i; ++t) e();
                     },
                 };
             }
@@ -802,7 +803,7 @@
                         (this._bitrateMonitor = e.withMultiRequests
                             ? s(() => {
                                   this._startNextAppendSegment();
-                              })
+                              }, e.withMultiRequestsDefaultPoolSize)
                             : void 0),
                         this._notifyResult(),
                         this._notifyProgress(this._uploadProgress());
@@ -1019,7 +1020,7 @@
                                 const a = [h, r].join("-");
                                 this.timeoutIdMap[a] = setTimeout(() => {
                                     this._sendXhr(e, t, i, s, n, r - 1, l, d, u);
-                                }, f);
+                                }, _);
                             } else w(a);
                         },
                         w = (e) => {
@@ -1044,7 +1045,7 @@
                         E ? e.loaded === e.total && this._bitrateMonitor?.uploadFinish(h, e.total) : ((E = !0), this._bitrateMonitor?.uploadStart(h, e.loaded));
                         const t = e.loaded,
                             i = ((this.uploadedBytes + t) / this.totalBytes) * 100;
-                        if ((this._notifyProgress(i, this.mediaId), t / e.total > _ && !c && ((c = !0), l))) {
+                        if ((this._notifyProgress(i, this.mediaId), t / e.total > f && !c && ((c = !0), l))) {
                             const e = Math.max(1, new Date().getTime() - m.getTime()),
                                 i = this.minSegmentBytes,
                                 s = this.sruParameterOverrides?.maxSegmentBytes;
@@ -1065,8 +1066,8 @@
                 g = 45e3,
                 m = (window.location.host.includes("twitter.com") ? "https://upload.twitter.com" : "https://upload.x.com") + "/i/media/upload.json",
                 p = 2,
-                _ = 0.95,
-                f = 1e3,
+                f = 0.95,
+                _ = 1e3,
                 y = Object.freeze({ FILE_TOO_LARGE: 2, INTERNAL_ERROR: 131, INVALID_MEDIA: 1, RATE_LIMIT: 88, TIMEOUT: 67, UNSUPPORTED_MEDIA: 3, ZERO_FILE_LENGTH: 4, CANCELED: 999, INVALID_RES_STATUS: -1 }),
                 w = Object.freeze({ 0: y.INTERNAL_ERROR, 1: y.INVALID_MEDIA, 2: y.FILE_TOO_LARGE, 3: y.UNSUPPORTED_MEDIA, 4: y.TIMEOUT }),
                 S = Object.freeze({ RESET: 0, PENDING: 1, PAUSED: 2, SUCCEEDED: 3, FAILED: 4 }),
@@ -1089,4 +1090,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Logout-6107ac1a.6b2d105a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Logout-6107ac1a.2fcff3aa.js.map

@@ -1,5 +1,5 @@
 var manifest = {
-    feature_set_token: "d59e4676e2fbafa3e2ae0981255209c359cbda23",
+    feature_set_token: "e8a556c6da4a5727ee0559a69fdb60f568593bac",
     config: {
         "2fa_temporary_password_enabled": { value: !1 },
         Arkose_rweb_hosted_page: { value: !0 },
@@ -849,7 +849,6 @@ var manifest = {
         spaces_2022_h2_clipping: { value: !0 },
         spaces_2022_h2_clipping_consumption: { value: !0 },
         spaces_2022_h2_clipping_duration_seconds: { value: 30 },
-        spaces_2022_h2_spacebar_use_mock_data: { value: !1 },
         spaces_2022_h2_spaces_communities: { value: !0 },
         spaces_conference_enabled: { value: !1 },
         spaces_conference_opus_dtx_enabled: { value: !1 },
@@ -2566,10 +2565,6 @@ var manifest = {
         spaces_2022_h2_clipping_duration_seconds: { name: "spaces_2022_h2_clipping_duration_seconds", type: "number", defaultValue: 30 },
         spaces_2022_h2_clipping_holdback_canary: { name: "spaces_2022_h2_clipping_holdback_canary", type: "string" },
         spaces_2022_h2_holdback_13972: { name: "spaces_2022_h2_holdback_13972", type: "experiment", enumeration_values: [] },
-        spaces_2022_h2_spacebar_holdback_canary: { name: "spaces_2022_h2_spacebar_holdback_canary", type: "string" },
-        spaces_2022_h2_spacebar_use_mock_data: { name: "spaces_2022_h2_spacebar_use_mock_data", type: "boolean", defaultValue: !1 },
-        spaces_2022_h2_spacebar_web_sidebar: { name: "spaces_2022_h2_spacebar_web_sidebar", type: "string" },
-        spaces_2022_h2_spacebar_web_topnavbar: { name: "spaces_2022_h2_spacebar_web_topnavbar", type: "string" },
         spaces_2022_h2_spaces_communities_scheduling_enabled: { name: "spaces_2022_h2_spaces_communities_scheduling_enabled", type: "string" },
         spaces_2022_h2_spaces_communities: { name: "spaces_2022_h2_spaces_communities", type: "boolean", defaultValue: !0 },
         spaces_2022_h2_spaces_communities_creation_enabled: { name: "spaces_2022_h2_spaces_communities_creation_enabled", type: "string" },

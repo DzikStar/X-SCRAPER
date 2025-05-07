@@ -67,7 +67,7 @@
                 o = () => new Date().getFullYear() - 120;
         },
         166677: (e, t, i) => {
-            i.d(t, { $r: () => K, O9: () => W, ZP: () => J, vK: () => q });
+            i.d(t, { $r: () => K, O9: () => W, ZP: () => q, vK: () => J });
             var a = i(688715),
                 r = i(674132),
                 o = i.n(r),
@@ -136,14 +136,14 @@
                 K = (e) => {
                     if (W(e)) return e;
                 };
-            function J(e, t = L) {
+            function q(e, t = L) {
                 const i = K(e);
                 if (i) {
                     const a = e.message ? `${t} ${e.message}` : t;
                     return Y(i) || N(a);
                 }
             }
-            function q(e, t = U) {
+            function J(e, t = U) {
                 return e.type === n.gK.type && e.code === n.gK.NO_DIMENSIONS ? N(x) : e.type === c.hb.type && e.code === c.hb.NO_DIMENSIONS ? V(g) : N(t);
             }
         },
@@ -517,7 +517,7 @@
                 h = a.Z;
         },
         497294: (e, t, i) => {
-            i.d(t, { $i: () => me, C4: () => Y, G$: () => K, Q6: () => H, TU: () => q, WU: () => Q, _B: () => re, _J: () => ie, _T: () => R, dD: () => ae, gz: () => Z, m3: () => G, o6: () => ne, oZ: () => pe, pJ: () => ue, rA: () => $ });
+            i.d(t, { $i: () => me, C4: () => Y, G$: () => K, Q6: () => H, TU: () => J, WU: () => Q, _B: () => re, _J: () => ie, _T: () => R, dD: () => ae, gz: () => Z, m3: () => G, o6: () => ne, oZ: () => pe, pJ: () => ue, rA: () => $ });
             i(571372), i(136728);
             var a = i(99107),
                 r = i(411916),
@@ -770,15 +770,15 @@
                         n(e);
                     });
                 },
-                J = "rweb/mediaUpload/REMOVE_MEDIA",
-                q = (e) => ({ payload: Array.isArray(e) ? e : [e], type: J });
+                q = "rweb/mediaUpload/REMOVE_MEDIA",
+                J = (e) => ({ payload: Array.isArray(e) ? e : [e], type: q });
             function Q(e) {
                 return (t, i) => {
                     G(i(), e).forEach((e) => {
                         const { abortController: t, mediaFile: i, originalMediaFile: a, reporter: r, uploader: o } = e;
                         t?.abort(), o && o.cancel && o.cancel(), r?.reportOperationComplete(v.BX.Full, v.Uk.Cancel), i && i.dispose(), a && a.dispose();
                     }),
-                        t(q(e));
+                        t(J(e));
                 };
             }
             const ee = "rweb/mediaUpload/UPDATE_MEDIA",
@@ -867,7 +867,7 @@
                                                                   m = d && d.size > 1e8 && t.isTrue("rweb_media_multi_requests_enabled"),
                                                                   p = he(a, i, { featureSwitches: t, userClaims: n }),
                                                                   _ = p ? `&media_category=${p}` : "";
-                                                              c?.reportOperationStart(v.BX.SruUpload), a.uploader?.upload({ success: h, progress: f, pause: g, error: w, extraInitParams: e + _, extraFinalizeParams: l ? `&original_md5=${l}` : void 0, trimRanges: ce(a), pauseBeforeFinalize: r, withMultiRequests: m, enable_1080p_variant: !u || o, mediaItem: a });
+                                                              c?.reportOperationStart(v.BX.SruUpload), a.uploader?.upload({ success: h, progress: f, pause: g, error: w, extraInitParams: e + _, extraFinalizeParams: l ? `&original_md5=${l}` : void 0, trimRanges: ce(a), pauseBeforeFinalize: r, withMultiRequests: m, withMultiRequestsDefaultPoolSize: t.getNumberValue("rweb_media_multi_requests_default_pool_size", 1), enable_1080p_variant: !u || o, mediaItem: a });
                                                           }
                                                       });
                                                   return r({ id: u, uploading: !0, uploadFailed: !1, uploadProgress: 0, uploadPromise: p }), p;
@@ -944,7 +944,7 @@
                     switch (t.type) {
                         case k:
                             return t.payload ? e.concat(t.payload) : e;
-                        case J: {
+                        case q: {
                             const i = t.payload;
                             return i && i.length ? e.filter((e) => -1 === i.indexOf(e.id)) : e;
                         }
@@ -974,4 +974,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.SideNav~loader.SideNavRedesign-9f4db315.f40b19aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.SideNav~loader.SideNavRedesign-9f4db315.6fa34cba.js.map

@@ -466,8 +466,8 @@
                 Z = (0, u.v)((e, t) => {
                     if (!e(w)) return s.Z;
                     const n = e((0, y.u)()),
-                        { remove: r } = g.a.addEventListener("change", (e) => {
-                            e === g.$.active && n();
+                        { remove: r } = g.aB.addEventListener("change", (e) => {
+                            e === g.$7.active && n();
                         }),
                         l = e(E.zE).get(b);
                     return (
@@ -538,4 +538,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Conferences-39a9bfe0.7e6cf3aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Conferences-39a9bfe0.b801a54a.js.map

@@ -88,7 +88,7 @@
                 o = () => new Date().getFullYear() - 120;
         },
         166677: (e, t, i) => {
-            i.d(t, { $r: () => Y, O9: () => K, ZP: () => q, vK: () => J });
+            i.d(t, { $r: () => W, O9: () => q, ZP: () => Y, vK: () => J });
             var a = i(688715),
                 r = i(674132),
                 o = i.n(r),
@@ -134,8 +134,8 @@
                 H = Object.freeze({ RESIZE: "resize", UPLOAD: "upload", METADATA: "metadata", MAXDURATION: "maxduration", MAXSIZE: "maxsize" }),
                 X = 1048576,
                 $ = 1073741824,
-                K = (e) => Object.values(H).includes(e.type),
-                W = (e) => {
+                q = (e) => Object.values(H).includes(e.type),
+                K = (e) => {
                     const { code: t, limit: i, type: a } = e;
                     if (t)
                         switch (a) {
@@ -154,14 +154,14 @@
                                 return z(F);
                         }
                 },
-                Y = (e) => {
-                    if (K(e)) return e;
+                W = (e) => {
+                    if (q(e)) return e;
                 };
-            function q(e, t = U) {
-                const i = Y(e);
+            function Y(e, t = U) {
+                const i = W(e);
                 if (i) {
                     const a = e.message ? `${t} ${e.message}` : t;
-                    return W(i) || z(a);
+                    return K(i) || z(a);
                 }
             }
             function J(e, t = x) {
@@ -538,7 +538,7 @@
                 h = a.Z;
         },
         497294: (e, t, i) => {
-            i.d(t, { $i: () => pe, C4: () => W, G$: () => Y, Q6: () => $, TU: () => J, WU: () => Q, _B: () => re, _J: () => ie, _T: () => G, dD: () => ae, gz: () => V, m3: () => R, o6: () => ne, oZ: () => me, pJ: () => ue, rA: () => X });
+            i.d(t, { $i: () => pe, C4: () => K, G$: () => W, Q6: () => $, TU: () => J, WU: () => Q, _B: () => re, _J: () => ie, _T: () => G, dD: () => ae, gz: () => V, m3: () => R, o6: () => ne, oZ: () => me, pJ: () => ue, rA: () => X });
             i(571372), i(136728);
             var a = i(99107),
                 r = i(411916),
@@ -681,7 +681,7 @@
                                                                 _ = (0, b.SB)({ featureSwitches: r, userClaims: o }),
                                                                 h = { useLongVideoEndpoint: e.isVideo && _ >= 1, actAsUserId: (0, D.dY)(a()) },
                                                                 S = m ? void 0 : B(e.fileHandle, r, h),
-                                                                y = K({ originalMediaFile: e, mediaFile: e, mediaFileHash: g ? void 0 : null, needsProcessing: m, location: t.location, uploadId: s[d] ?? "", reporter: f, uploader: S, mediaMetadata: { altText: n[d] }, abortController: g ? new AbortController() : void 0 });
+                                                                y = q({ originalMediaFile: e, mediaFile: e, mediaFileHash: g ? void 0 : null, needsProcessing: m, location: t.location, uploadId: s[d] ?? "", reporter: f, uploader: S, mediaMetadata: { altText: n[d] }, abortController: g ? new AbortController() : void 0 });
                                                             return g && fe(i, a, y.id, e.fileHandle, y.reporter, y.abortController), y;
                                                         })
                                                     );
@@ -713,14 +713,14 @@
                     const c = u.isTrue("responsive_web_media_upload_metrics_enabled") && t ? new S.ZP({ isExternal: !0, mediaCategory: t }) : void 0;
                     c?.reportOperationStart(S.BX.Full, !0);
                     const p = { actAsUserId: (0, D.dY)(d()) },
-                        m = K({ externalMediaDetails: { mediaCategory: t, mediaType: i, previewUrl: r || o, previewMediaType: a || i, sourceUrl: o, stillMediaUrl: s, width: n, height: e }, reporter: c, uploader: B(null, u, p) });
+                        m = q({ externalMediaDetails: { mediaCategory: t, mediaType: i, previewUrl: r || o, previewMediaType: a || i, sourceUrl: o, stillMediaUrl: s, width: n, height: e }, reporter: c, uploader: B(null, u, p) });
                     return l(j(m)), c?.toggleOperationPaused(S.BX.Full, !0), [m];
                 };
-            function K(e) {
+            function q(e) {
                 const t = { ...e, id: H, uploadFailed: !1, uploading: !1, uploadProgress: 1, mediaMetadata: void 0 };
                 return (H += 1), t.uploadId || ((t.uploadId = ""), (t.uploadProgress = 0)), t;
             }
-            const W =
+            const K =
                     (e) =>
                     (t, i, { featureSwitches: a, userClaims: r }) => {
                         const [o] = R(i(), e);
@@ -762,7 +762,7 @@
                             return Promise.resolve(o);
                         });
                     },
-                Y = (e, t) => (i, a) => {
+                W = (e, t) => (i, a) => {
                     const { onFailure: r } = t,
                         s = [];
                     return new Promise((t, a) => {
@@ -773,7 +773,7 @@
                                 a.reporter?.reportOperationStart(S.BX.Full, !0),
                                     a.reporter?.reportOperationStart([S.BX.Processing, S.BX.Metadata]),
                                     a.reporter?.reportOperationComplete(S.BX.Metadata, S.Uk.Complete),
-                                    i(W(a.id)).then(
+                                    i(K(a.id)).then(
                                         (t) => {
                                             s.push(t), t?.reporter?.reportOperationComplete(S.BX.Processing, S.Uk.Success), t?.reporter?.toggleOperationPaused(S.BX.Full, !0), n(e.slice(1));
                                         },
@@ -791,8 +791,8 @@
                         n(e);
                     });
                 },
-                q = "rweb/mediaUpload/REMOVE_MEDIA",
-                J = (e) => ({ payload: Array.isArray(e) ? e : [e], type: q });
+                Y = "rweb/mediaUpload/REMOVE_MEDIA",
+                J = (e) => ({ payload: Array.isArray(e) ? e : [e], type: Y });
             function Q(e) {
                 return (t, i) => {
                     R(i(), e).forEach((e) => {
@@ -888,7 +888,7 @@
                                                                   p = l && l.size > 1e8 && t.isTrue("rweb_media_multi_requests_enabled"),
                                                                   m = he(a, i, { featureSwitches: t, userClaims: n }),
                                                                   _ = m ? `&media_category=${m}` : "";
-                                                              c?.reportOperationStart(S.BX.SruUpload), a.uploader?.upload({ success: h, progress: f, pause: g, error: w, extraInitParams: e + _, extraFinalizeParams: d ? `&original_md5=${d}` : void 0, trimRanges: ce(a), pauseBeforeFinalize: r, withMultiRequests: p, enable_1080p_variant: !u || o, mediaItem: a });
+                                                              c?.reportOperationStart(S.BX.SruUpload), a.uploader?.upload({ success: h, progress: f, pause: g, error: w, extraInitParams: e + _, extraFinalizeParams: d ? `&original_md5=${d}` : void 0, trimRanges: ce(a), pauseBeforeFinalize: r, withMultiRequests: p, withMultiRequestsDefaultPoolSize: t.getNumberValue("rweb_media_multi_requests_default_pool_size", 1), enable_1080p_variant: !u || o, mediaItem: a });
                                                           }
                                                       });
                                                   return r({ id: u, uploading: !0, uploadFailed: !1, uploadProgress: 0, uploadPromise: m }), m;
@@ -965,7 +965,7 @@
                     switch (t.type) {
                         case k:
                             return t.payload ? e.concat(t.payload) : e;
-                        case q: {
+                        case Y: {
                             const i = t.payload;
                             return i && i.length ? e.filter((e) => -1 === i.indexOf(e.id)) : e;
                         }
@@ -1119,4 +1119,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Logout-9f4db315.d653da2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Logout-9f4db315.0d4b33ba.js.map

@@ -256,9 +256,9 @@
                 u = _(730916),
                 g = _.n(u),
                 h = _(161282),
-                v = _.n(h),
-                f = _(833881),
-                y = _.n(f),
+                f = _.n(h),
+                v = _(833881),
+                y = _.n(v),
                 k = _(158233),
                 L = _.n(k),
                 q = _(656990),
@@ -270,27 +270,27 @@
                 Q = _(894079),
                 z = _.n(Q),
                 F = _(269268),
-                R = _.n(F),
-                j = _(295818),
-                C = _.n(j),
+                C = _.n(F),
+                R = _(295818),
+                j = _.n(R),
                 U = _(66816),
                 N = _.n(U),
                 M = _(580116),
                 Z = _.n(M),
                 G = _(251454),
-                V = _.n(G),
-                P = _(197050),
-                K = _.n(P),
+                P = _.n(G),
+                K = _(197050),
+                E = _.n(K),
                 D = _(66549),
-                E = _.n(D),
-                H = _(184429),
-                B = _.n(H),
-                O = _(772248),
-                J = _.n(O),
-                Y = _(776998),
-                X = _.n(Y),
-                W = _(706236),
-                $ = _.n(W),
+                V = _.n(D),
+                B = _(184429),
+                O = _.n(B),
+                J = _(772248),
+                Y = _.n(J),
+                X = _(776998),
+                W = _.n(X),
+                H = _(706236),
+                $ = _.n(H),
                 ee = _(890596),
                 te = _.n(ee),
                 _e = _(153791),
@@ -340,11 +340,11 @@
                     const t = e?.list?.subscribers_timeline?.timeline;
                     return !t;
                 }, "GQL List: Failed to fetch Subscribers timeline"),
-                ve = (0, a.kj)((e) => {
+                fe = (0, a.kj)((e) => {
                     const t = e?.list?.members_timeline?.timeline;
                     return !t;
                 }, "GQL List: Failed to fetch Members timeline"),
-                fe = (0, a.kj)((e) => {
+                ve = (0, a.kj)((e) => {
                     const t = e?.list?.recommended_users?.timeline;
                     return !t;
                 }, "GQL List: Failed to fetch Recommended Users timeline"),
@@ -355,7 +355,7 @@
                     },
                     createList(_, i) {
                         const { description: a, mode: l, name: o } = _;
-                        return e.graphQL(v(), { isPrivate: "private" === l.toLowerCase(), name: o, description: a, ...(0, r.S)(t) }).then((e) => (0, n.Fv)(e.list, s.Z));
+                        return e.graphQL(f(), { isPrivate: "private" === l.toLowerCase(), name: o, description: a, ...(0, r.S)(t) }).then((e) => (0, n.Fv)(e.list, s.Z));
                     },
                     editBannerImage(_, i) {
                         const { listId: a, mediaId: l } = _;
@@ -379,7 +379,7 @@
                     },
                     fetchCombinedLists: ({ count: _, cursor: n, userId: i }) => e.graphQL(o(), { userId: i, count: _, cursor: n, ...(0, r.d)(t) }, le).then(ie.k7),
                     fetchListsManagementPageTimeline: ({ count: _, cursor: n }) =>
-                        e.graphQL(E(), { count: _, cursor: n, ...(0, r.d)(t) }, de).then((e) => {
+                        e.graphQL(V(), { count: _, cursor: n, ...(0, r.d)(t) }, de).then((e) => {
                             const t = e.viewer?.list_management_timeline?.timeline;
                             return t || ne.cY;
                         }),
@@ -394,7 +394,7 @@
                     },
                     fetchMembersGraphQL(_, n) {
                         const { count: i, cursor: a, listId: s } = _;
-                        return e.graphQL(A(), { listId: s, count: i, cursor: a, ...(0, r.d)(t) }, ve).then((e) => {
+                        return e.graphQL(A(), { listId: s, count: i, cursor: a, ...(0, r.d)(t) }, fe).then((e) => {
                             const t = e.list.members_timeline?.timeline;
                             return t || ne.cY;
                         });
@@ -403,22 +403,22 @@
                         const { count: a, cursor: s, displayLocation: l, listId: o } = _,
                             d = l === i.O.Creation ? y() : T(),
                             p = { listId: o, count: a, cursor: s, ...(0, r.d)(t) };
-                        return e.graphQL(d, p, fe).then((e) => {
+                        return e.graphQL(d, p, ve).then((e) => {
                             const t = e.list.recommended_users?.timeline;
                             return t || ne.cY;
                         });
                     },
                     fetchSubscribersGraphQL(_, n) {
                         const { count: i, cursor: a, listId: s } = _;
-                        return e.graphQL(J(), { listId: s, count: i, cursor: a, ...(0, r.d)(t) }, he).then((e) => {
+                        return e.graphQL(Y(), { listId: s, count: i, cursor: a, ...(0, r.d)(t) }, he).then((e) => {
                             const t = e.list.subscribers_timeline?.timeline;
                             return t || ne.cY;
                         });
                     },
-                    fetchSuggestedLists: ({ count: _, cursor: n }) => e.graphQL(K(), { count: _, cursor: n, ...(0, r.d)(t) }, oe).then((e) => e.list_discovery_list_mixer_timeline?.timeline || ne.cY),
+                    fetchSuggestedLists: ({ count: _, cursor: n }) => e.graphQL(E(), { count: _, cursor: n, ...(0, r.d)(t) }, oe).then((e) => e.list_discovery_list_mixer_timeline?.timeline || ne.cY),
                     fetchOwnershipsGraphQL(_, n) {
                         const { count: i, cursor: a, targetUserId: s, userId: l } = _;
-                        return e.graphQL(C(), { userId: l, isListMemberTargetUserId: s, count: i, cursor: a, ...(0, r.d)(t) }, le).then(ie.k7);
+                        return e.graphQL(j(), { userId: l, isListMemberTargetUserId: s, count: i, cursor: a, ...(0, r.d)(t) }, le).then(ie.k7);
                     },
                     fetchMemberships: (_, i) => e.get("lists/memberships", { ...se(t), ..._ }, i || {}).then((e) => (0, n.Fv)(e, _e.kD)),
                     fetchMembershipsGraphQL(_, n) {
@@ -427,11 +427,11 @@
                     },
                     removeFromList(_, i) {
                         const { list_id: a, user_id: l } = _;
-                        return e.graphQL(V(), { listId: a, userId: l, ...(0, r.S)(t) }, me).then((e) => (0, n.Fv)(e.list, s.Z));
+                        return e.graphQL(P(), { listId: a, userId: l, ...(0, r.S)(t) }, me).then((e) => (0, n.Fv)(e.list, s.Z));
                     },
                     createSubscribers(_, i) {
                         const { list_id: a } = _;
-                        return e.graphQL(B(), { listId: a, ...(0, r.S)(t) }, pe).then((e) => (0, n.Fv)(e.list_subscribe_v3, s.Z));
+                        return e.graphQL(O(), { listId: a, ...(0, r.S)(t) }, pe).then((e) => (0, n.Fv)(e.list_subscribe_v3, s.Z));
                     },
                     destroySubscribers(_, i) {
                         const { list_id: a } = _;
@@ -439,7 +439,7 @@
                     },
                     toggleMute(t, _) {
                         const { listId: n, mute: i } = t;
-                        return i ? e.graphQL(R(), { listId: n }) : e.graphQL(X(), { listId: n });
+                        return i ? e.graphQL(C(), { listId: n }) : e.graphQL(W(), { listId: n });
                     },
                     editList(_, i) {
                         const { description: a, list_id: l, mode: o, name: d } = _;
@@ -543,7 +543,7 @@
             _.d(t, { Z: () => n });
             const n = _(202784).createContext({ refsMap: {} });
         },
-        648539: (e, t, _) => {
+        833458: (e, t, _) => {
             "use strict";
             _.r(t), _.d(t, { default: () => l });
             var n = _(202784),
@@ -552,11 +552,25 @@
                 r = _(347101);
             const s = (e = {}) => {
                 const { direction: t } = (0, a.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M19 14h2v3h-2v-3zM3 14H1v3h2v-3zm.5 7c-.276 0-.5-.225-.5-.5V19H1v1.5C1 21.879 2.122 23 3.5 23H5v-2H3.5zM10 5V3H7v2h3zm-7 .5c0-.275.224-.5.5-.5H5V3H3.5C2.122 3 1 4.121 1 5.5V7h2V5.5zM12 21v2h3v-2h-3zm-5 0v2h3v-2H7zm12-.5c0 .275-.224.5-.5.5H17v2h1.5c1.378 0 2.5-1.121 2.5-2.5V19h-2v1.5zM3 9H1v3h2V9zm3 9h5v-2H6v2zM18-.1c3.364 0 6.1 2.736 6.1 6.1s-2.736 6.1-6.1 6.1-6.1-2.736-6.1-6.1S14.636-.1 18-.1zm0 2c-2.261 0-4.1 1.839-4.1 4.1s1.839 4.1 4.1 4.1 4.1-1.839 4.1-4.1-1.839-4.1-4.1-4.1zm.5 3.1H15v2h6V5h-2.5zM6 10h4V8H6v2zm0 4h7v-2H6v2z" })) }, { writingDirection: t });
+                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M12 3.75c-4.56 0-8.25 3.69-8.25 8.25s3.69 8.25 8.25 8.25 8.25-3.69 8.25-8.25S16.56 3.75 12 3.75zM1.75 12C1.75 6.34 6.34 1.75 12 1.75S22.25 6.34 22.25 12 17.66 22.25 12 22.25 1.75 17.66 1.75 12zM16.4 9.28l-5.21 7.15-4.1-3.27 1.25-1.57 2.47 1.98 3.97-5.47 1.62 1.18z" })) }, { writingDirection: t });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const l = s;
+        },
+        609980: (e, t, _) => {
+            "use strict";
+            _.r(t), _.d(t, { default: () => l });
+            var n = _(202784),
+                i = _(890601),
+                a = _(783427),
+                r = _(347101);
+            const s = (e = {}) => {
+                const { direction: t } = (0, a.Z)();
+                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M9.5 7c.828 0 1.5 1.119 1.5 2.5S10.328 12 9.5 12 8 10.881 8 9.5 8.672 7 9.5 7zm5 0c.828 0 1.5 1.119 1.5 2.5s-.672 2.5-1.5 2.5S13 10.881 13 9.5 13.672 7 14.5 7zM12 22.25C6.348 22.25 1.75 17.652 1.75 12S6.348 1.75 12 1.75 22.25 6.348 22.25 12 17.652 22.25 12 22.25zm0-18.5c-4.549 0-8.25 3.701-8.25 8.25s3.701 8.25 8.25 8.25 8.25-3.701 8.25-8.25S16.549 3.75 12 3.75zM8.947 17.322l-1.896-.638C7.101 16.534 8.322 13 12 13s4.898 3.533 4.949 3.684l-1.897.633c-.031-.09-.828-2.316-3.051-2.316s-3.021 2.227-3.053 2.322z" })) }, { writingDirection: t });
             };
             s.metadata = { width: 24, height: 24 };
             const l = s;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.VideoScreen-6107ac1a.ffba1f3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.VideoScreen-6107ac1a.2e63ad1a.js.map

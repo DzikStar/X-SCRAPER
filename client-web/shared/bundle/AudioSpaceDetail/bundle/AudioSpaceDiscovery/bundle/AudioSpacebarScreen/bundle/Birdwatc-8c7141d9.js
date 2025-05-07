@@ -672,7 +672,7 @@
                 }
                 render() {
                     const { initialFetchStatus: e, livePipelineTopic: t, loadingAccessibilityLabel: i, prerollDisplayLocation: n, renderUnavailable: s, unavailableReason: o } = this.props;
-                    return r.createElement(r.Fragment, null, t ? r.createElement(f._, { callback: this._foregroundPollAction, topic: t }) : null, r.createElement(re.D, { fetch: this._handleNearBottom, prerollDisplayLocation: n }, r.createElement(u.Z, { "aria-label": i, fetchStatus: e, onRequestRetry: this._handleInitialRetry, render: this._render, renderFailure: o && s ? this._renderUnavailable : void 0, retryable: !o })));
+                    return r.createElement(r.Fragment, null, t ? r.createElement(f._W, { callback: this._foregroundPollAction, topic: t }) : null, r.createElement(re.D, { fetch: this._handleNearBottom, prerollDisplayLocation: n }, r.createElement(u.Z, { "aria-label": i, fetchStatus: e, onRequestRetry: this._handleInitialRetry, render: this._render, renderFailure: o && s ? this._renderUnavailable : void 0, retryable: !o })));
                 }
                 _initialize() {
                     const { history: e, initialFetchStatus: t, isSingleDirection: i } = this.props,
@@ -1111,4 +1111,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8c7141d9.7a7f206a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8c7141d9.4349176a.js.map

@@ -320,40 +320,41 @@
             const a = s;
         },
         417144: (e, t, i) => {
-            function s(e) {
-                let t = 1;
-                const i = new Map();
-                let s = 0,
-                    a = 0,
+            function s(e, t = 1) {
+                let i = t;
+                const s = new Map();
+                let a = 0,
                     n = 0,
-                    l = null;
-                function r() {
-                    i.clear(), (s = 0), (a = 0), (n = 0);
+                    l = 0,
+                    r = null;
+                function o() {
+                    s.clear(), (a = 0), (n = 0), (l = 0);
                 }
                 return {
                     uploadStart: function (e, t) {
-                        i.set(e, { time: Date.now(), bytes: t }), a || (a = Date.now());
+                        s.set(e, { time: Date.now(), bytes: t }), n || (n = Date.now());
                     },
-                    uploadFinish: function (o, d) {
-                        const u = i.get(o);
-                        u &&
-                            ((s += d - u.bytes),
-                            i.delete(o),
-                            ++n === t &&
+                    uploadFinish: function (d, u) {
+                        const c = s.get(d);
+                        c &&
+                            ((a += u - c.bytes),
+                            s.delete(d),
+                            ++l === i &&
                                 (function () {
-                                    if (!a) return;
-                                    const i = Date.now() - a;
-                                    if (i <= 0) return;
-                                    const n = s / i;
-                                    if (n < 5e3 && 1 === t) return;
-                                    !l || l.byterate < n ? ((t += 1), e(), (l = { byterate: n, poolSize: t })) : ((t -= 2), (t = Math.max(t, 1)), (l = null));
-                                    r();
+                                    if (!n) return;
+                                    const s = Date.now() - n;
+                                    if (s <= 0) return;
+                                    if (1 !== t) return;
+                                    const l = a / s;
+                                    if (l < 5e3 && 1 === i) return;
+                                    !r || r.byterate < l ? ((i += 1), e(), (r = { byterate: l, poolSize: i })) : ((i -= 2), (i = Math.max(i, 1)), (r = null));
+                                    o();
                                 })());
                     },
-                    reset: r,
-                    getPoolSize: () => t,
+                    reset: o,
+                    getPoolSize: () => i,
                     start: function () {
-                        e();
+                        for (let t = 0; t < i; ++t) e();
                     },
                 };
             }
@@ -387,7 +388,7 @@
                         (this._bitrateMonitor = e.withMultiRequests
                             ? s(() => {
                                   this._startNextAppendSegment();
-                              })
+                              }, e.withMultiRequestsDefaultPoolSize)
                             : void 0),
                         this._notifyResult(),
                         this._notifyProgress(this._uploadProgress());
@@ -674,4 +675,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.SideNav~loader.SideNavRedesign-6107ac1a.8ff48cfa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.SideNav~loader.SideNavRedesign-6107ac1a.3dc1f09a.js.map

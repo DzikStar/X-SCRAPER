@@ -611,7 +611,7 @@
                 _renderUserName(e) {
                     const { tweet: t, withHeaderLinks: r, withUserHoverCard: n } = this.props,
                         a = t.author_community_relationship?.role;
-                    return i.createElement(o.Z, { style: $.userNameRoot }, i.createElement(o.Z, { style: $.userNameWrapper }, i.createElement(L.Z, { onClick: this.props.onAvatarClick, onHoverCardScreenNameClick: this.props.onScreenNameClick, screenName: e.screen_name, size: "medium", style: $.userAvatar, uri: e.profile_image_url_https, withHoverCard: n, withLink: r }), i.createElement(R.Z, { onLinkClick: this.props.onScreenNameClick, onScreenNameClick: this.props.onScreenNameClick, screenNameSuffix: (() => i.createElement(_.Z, null, this._renderTimestamp(t.created_at)))(), userData: { affiliateBadgeInfo: e.highlightedLabel, communityModeratorStatus: a, isBlueVerified: e.is_blue_verified, isProtected: e.protected, isVerified: e.verified, name: e.name, screenName: e.screen_name, userId: e.id_str, verifiedType: e.verified_type }, withHoverCard: n, withLink: r })), e.highlightedLabel ? i.createElement(w.Z, { label: e.highlightedLabel }) : null);
+                    return i.createElement(o.Z, { style: $.userNameRoot }, i.createElement(o.Z, { style: $.userNameWrapper }, i.createElement(L.Z, { onClick: this.props.onAvatarClick, onHoverCardScreenNameClick: this.props.onScreenNameClick, screenName: e.screen_name, size: "medium", style: $.userAvatar, uri: e.profile_image_url_https, withHoverCard: n, withLink: r }), i.createElement(R.Z, { onLinkClick: this.props.onScreenNameClick, onScreenNameClick: this.props.onScreenNameClick, screenNameSuffix: (() => i.createElement(_.Z, null, this._renderTimestamp(t.created_at)))(), tweetId: t.id_str, userData: { affiliateBadgeInfo: e.highlightedLabel, communityModeratorStatus: a, isBlueVerified: e.is_blue_verified, isProtected: e.protected, isVerified: e.verified, name: e.name, screenName: e.screen_name, userId: e.id_str, verifiedType: e.verified_type }, withHoverCard: n, withLink: r })), e.highlightedLabel ? i.createElement(w.Z, { label: e.highlightedLabel }) : null);
                 }
                 _renderArticleContent() {
                     const { renderArticleCardInTweet: e, tweet: t } = this.props;
@@ -709,4 +709,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1.c17642fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1.5e0d5b5a.js.map

@@ -160,7 +160,7 @@
                         },
                         renderUserAvatar: (e) => I({ id: se.avatar, promotedContent: M, screenName: oe.user.screen_name, uri: oe.user.profile_image_url_https, withLink: !0, ...e }),
                         renderUserFollowIndicator: (e) => null,
-                        renderUserName: (e) => k({ userData: { isProtected: oe.user.protected, isBlueVerified: oe.user.is_blue_verified, isVerified: oe.user.verified, name: oe.user.name, screenName: oe.user.screen_name, userId: oe.user.id_str, verifiedType: oe.user.verified_type, isSubscriber: oe.has_super_follower, affiliateBadgeInfo: oe.user.highlightedLabel, communityModeratorStatus: oe.author_community_relationship?.role }, id: se.username, promotedContent: M, ...e }),
+                        renderUserName: (e) => k({ userData: { isProtected: oe.user.protected, isBlueVerified: oe.user.is_blue_verified, isVerified: oe.user.verified, name: oe.user.name, screenName: oe.user.screen_name, userId: oe.user.id_str, verifiedType: oe.user.verified_type, isSubscriber: oe.has_super_follower, affiliateBadgeInfo: oe.user.highlightedLabel, communityModeratorStatus: oe.author_community_relationship?.role }, id: se.username, promotedContent: M, tweetId: oe.id_str, ...e }),
                     };
                 return { LinkConfigProvider: R(U), a11yIds: se, a11yIdList: de, props: { ...pe, tweet: ie, promotedContent: M, socialContext: S, quotedTweetTombstoneInfo: P, ...ae } };
             }
@@ -455,4 +455,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.BrandedLikesPreview-2aa5c1ed.bf3a7bba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.BrandedLikesPreview-2aa5c1ed.0813d1fa.js.map

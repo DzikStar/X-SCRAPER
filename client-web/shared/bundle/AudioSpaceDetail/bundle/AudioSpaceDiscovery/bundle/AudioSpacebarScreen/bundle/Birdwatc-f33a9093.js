@@ -15,14 +15,14 @@
                 c = r(462775),
                 u = r(182495),
                 D = r(601798),
-                m = r(500002),
-                h = r(443781),
+                h = r(500002),
+                m = r(443781),
                 p = r(406837),
                 M = r(950570),
                 f = r(911318);
             const b = i().ib65b1c6,
-                _ = i().f55cebb8,
-                w = i().dcc304d6,
+                w = i().f55cebb8,
+                _ = i().dcc304d6,
                 y = i().g61ed8a4,
                 P = { clientId: f.fp, scope: "name email", usePopup: !0 };
             class I extends o.PureComponent {
@@ -35,9 +35,9 @@
                             const { buttonState: e } = this.props;
                             switch (e) {
                                 case u.yX.LogIn:
-                                    return _;
-                                case u.yX.ContinueWith:
                                     return w;
+                                case u.yX.ContinueWith:
+                                    return _;
                                 default:
                                     return b;
                             }
@@ -86,8 +86,8 @@
                     return this._is3rdPartyIntegrationDisabled ? null : o.createElement(l.ZP, { backgroundColor: "white", borderColor: "gray200", children: d, color: "alwaysBaseGray1100", disabled: !r, fontWeight: "normal", icon: o.createElement(t.default, null), onPress: this._handleOnPress, size: e, style: a, testID: M.Z.apple });
                 }
             }
-            (I.contextType = h.rC), (I.defaultProps = { buttonSize: "xLarge", buttonState: "signup" });
-            const A = (0, m.ZP)((0, p.Z)(I));
+            (I.contextType = m.rC), (I.defaultProps = { buttonSize: "xLarge", buttonState: "signup" });
+            const A = (0, h.ZP)((0, p.Z)(I));
         },
         791983: (e, a, r) => {
             r.d(a, { O: () => u, c: () => s });
@@ -101,9 +101,9 @@
             const i = (0, n.Z)({
                 loader: () =>
                     Promise.all([
+                        r.e("icons.24"),
                         r.e("modules.common-e907d115"),
                         r.e("modules.common-e019dbda"),
-                        r.e("icons.15"),
                         r.e("modules.audio-6107ac1a"),
                         r.e("modules.audio-b953418a"),
                         r.e("modules.audio-7c51e6a7"),
@@ -121,6 +121,7 @@
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-64ffe41f"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-5517db7c"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-58d4ab8e"),
@@ -159,9 +160,9 @@
             const D = (0, n.Z)({
                 loader: () =>
                     Promise.all([
+                        r.e("icons.24"),
                         r.e("modules.common-e907d115"),
                         r.e("modules.common-e019dbda"),
-                        r.e("icons.15"),
                         r.e("modules.audio-6107ac1a"),
                         r.e("modules.audio-b953418a"),
                         r.e("modules.audio-7c51e6a7"),
@@ -179,6 +180,7 @@
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-64ffe41f"),
+                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-5517db7c"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-58d4ab8e"),
@@ -208,7 +210,7 @@
             });
         },
         450006: (e, a, r) => {
-            r.d(a, { Z: () => h });
+            r.d(a, { Z: () => m });
             var o = r(202784),
                 d = r(680961),
                 n = r(293115),
@@ -222,11 +224,11 @@
                     return r?.scribeConfig;
                 },
                 D = (0, i.Z)().propsFromState(() => ({ initialFetchStatus: c, isTimelineEmpty: t, scribeNamespace: u }));
-            const m = { ...(0, r(335632).G)({ isInSidebar: !0 }) },
-                h = D((e) => {
+            const h = { ...(0, r(335632).G)({ isInSidebar: !0 }) },
+                m = D((e) => {
                     const { initialFetchStatus: a, isTimelineEmpty: r, module: i, scribeNamespace: t } = e;
                     if ((a === l.ZP.LOADED || a === l.ZP.FAILED) && r) return null;
-                    const c = o.createElement(s.Z, { entryConfiguration: m, module: i, scroller: d.Z, showLoadingFooter: !1, title: "", withKeyboardShortcuts: !1 });
+                    const c = o.createElement(s.Z, { entryConfiguration: h, module: i, scroller: d.Z, showLoadingFooter: !1, title: "", withKeyboardShortcuts: !1 });
                     return t ? o.createElement(n.nO, { namespace: t }, c) : c;
                 });
         },
@@ -248,21 +250,21 @@
                 c = r(392237),
                 u = r(674132),
                 D = r.n(u),
-                m = r(837020),
-                h = r(144251),
+                h = r(837020),
+                m = r(144251),
                 p = r(187669),
                 M = r(399398),
                 f = r(88660),
                 b = r(293115),
-                _ = r(725405),
-                w = r(125363),
+                w = r(725405),
+                _ = r(125363),
                 y = r(919022),
                 P = r(443781);
             const I = D().da1aa48f,
                 A = D().b68c3784,
                 k = "get_verified_profile_sidebar",
                 v = ({ dismiss: e, profileUser: { screen_name: a }, viewerUser: { name: r, profile_image_url_https: o } }) => {
-                    const c = (0, _.Z)(),
+                    const c = (0, w.Z)(),
                         { featureSwitches: u } = (0, P.QZ)(),
                         f = u.getStringValue("subscriptions_upsells_verified_profile_sidebar_variant"),
                         b = d.useMemo(() => {
@@ -285,7 +287,7 @@
                     (0, p.q)(() => {
                         c.scribeAction("impression");
                     });
-                    const { description: w, header: y, withAnimatedBadge: v, withAvatar: g, withUsername: S } = ((e, a) => ({ variant_a: { header: D().e4a7a968, description: I({ screenName: a }), withAnimatedBadge: !0 }, variant_b: { header: D().id9c1e82, description: I({ screenName: a }), withAnimatedBadge: !0 }, variant_c: { header: D().d43b0edc, description: I({ screenName: a }), withAnimatedBadge: !0 }, variant_d: { header: D().d4ea0ed4, description: I({ screenName: a }), withAnimatedBadge: !0 }, variant_e: { header: D().cffeaeae, description: I({ screenName: a }), withAvatar: !0 }, variant_f: { header: D().cffeaeae, description: I({ screenName: a }), withUsername: !0 } })[e])(b, a);
+                    const { description: _, header: y, withAnimatedBadge: v, withAvatar: g, withUsername: S } = ((e, a) => ({ variant_a: { header: D().e4a7a968, description: I({ screenName: a }), withAnimatedBadge: !0 }, variant_b: { header: D().id9c1e82, description: I({ screenName: a }), withAnimatedBadge: !0 }, variant_c: { header: D().d43b0edc, description: I({ screenName: a }), withAnimatedBadge: !0 }, variant_d: { header: D().d4ea0ed4, description: I({ screenName: a }), withAnimatedBadge: !0 }, variant_e: { header: D().cffeaeae, description: I({ screenName: a }), withAvatar: !0 }, variant_f: { header: D().cffeaeae, description: I({ screenName: a }), withUsername: !0 } })[e])(b, a);
                     return d.createElement(
                         M.g,
                         { testID: "verified_profile_upsell" },
@@ -293,7 +295,7 @@
                             n.Z,
                             { role: "complementary", style: Z.root },
                             d.createElement(l.ZP, {
-                                icon: d.createElement(m.default, null),
+                                icon: d.createElement(h.default, null),
                                 onPress: () => {
                                     e(), c.scribeAction("dismiss");
                                 },
@@ -301,14 +303,14 @@
                                 style: Z.closeButton,
                                 type: "primaryText",
                             }),
-                            S ? d.createElement(n.Z, { style: Z.displayName }, d.createElement(s.default, { hasAdaptiveImage: !0, uri: o }), d.createElement(n.Z, { style: Z.userName }, d.createElement(i.ZP, { size: "headline2", weight: "medium" }, r), d.createElement(h.default, { style: Z.iconVerified }))) : null,
+                            S ? d.createElement(n.Z, { style: Z.displayName }, d.createElement(s.default, { hasAdaptiveImage: !0, uri: o }), d.createElement(n.Z, { style: Z.userName }, d.createElement(i.ZP, { size: "headline2", weight: "medium" }, r), d.createElement(m.default, { style: Z.iconVerified }))) : null,
                             d.createElement(
                                 n.Z,
                                 { style: Z.inner },
                                 v ? d.createElement(n.Z, { style: Z.image }, d.createElement(t.Z, { "aria-label": A, image: "https://abs.twimg.com/responsive-web/client-web/verification-card-v2@3x.8ebee019.png" })) : null,
-                                g ? d.createElement(n.Z, { style: Z.userAvatar }, d.createElement(s.default, { hasAdaptiveImage: !0, uri: o }), d.createElement(h.default, { style: [Z.iconVerified, Z.iconOverlap] })) : null,
+                                g ? d.createElement(n.Z, { style: Z.userAvatar }, d.createElement(s.default, { hasAdaptiveImage: !0, uri: o }), d.createElement(m.default, { style: [Z.iconVerified, Z.iconOverlap] })) : null,
                                 d.createElement(i.ZP, { size: "headline1", weight: "heavy" }, y),
-                                d.createElement(i.ZP, null, w),
+                                d.createElement(i.ZP, null, _),
                                 d.createElement(
                                     l.ZP,
                                     {
@@ -335,9 +337,9 @@
                 },
                 S = ({ screenName: e }) => {
                     const { featureSwitches: a, userClaims: r } = (0, P.QZ)(),
-                        o = (0, w.I0)(),
-                        n = (0, w.v9)(y.ZP.selectViewerUser),
-                        l = (0, w.v9)((a) => y.ZP.selectByScreenName(a, e));
+                        o = (0, _.I0)(),
+                        n = (0, _.v9)(y.ZP.selectViewerUser),
+                        l = (0, _.v9)((a) => y.ZP.selectByScreenName(a, e));
                     d.useEffect(() => {
                         o(y.ZP.fetchOneByScreenNameIfNeeded(e));
                     }, [o, e]);
@@ -401,7 +403,7 @@
             }
         },
         385322: (e, a, r) => {
-            r.d(a, { _: () => s });
+            r.d(a, { Cg: () => i, _W: () => s });
             var o = r(202784),
                 d = r(403808),
                 n = r(443781),
@@ -410,31 +412,29 @@
                 return (
                     (function (e, a) {
                         const { featureSwitches: r } = (0, n.QZ)(),
-                            s = o.useRef(!0),
-                            i = (0, d.r)(a);
-                        o.useEffect(
-                            () => () => {
-                                s.current = !1;
-                            },
-                            [],
-                        ),
-                            o.useEffect(() => {
-                                if (!i) return;
-                                let a = () => {};
-                                return (
-                                    (0, l.ZP)().then(({ LivePipeline: o }) => {
-                                        if (s.current && o.isSupportedAndReady(r)) {
-                                            const { teardown: r } = o.get().subscribeTopic(e, i);
-                                            a = r;
-                                        }
-                                    }),
-                                    () => {
-                                        a();
-                                    }
-                                );
-                            }, [r, i, e]);
+                            l = (0, d.r)(a);
+                        o.useEffect(() => {
+                            if (l) return i({ featureSwitches: r, topic: e, onTopic: l });
+                        }, [r, l, e]);
                     })(a, e),
                     null
+                );
+            }
+            function i(e) {
+                let a,
+                    r = !0;
+                return (
+                    (0, l.ZP)().then(({ LivePipeline: o }) => {
+                        if (!r) return;
+                        const { featureSwitches: d, onTopic: n, topic: l } = e;
+                        if (o.isSupportedAndReady(d)) {
+                            const { teardown: e } = o.get().subscribeTopic(l, n);
+                            a = e;
+                        }
+                    }),
+                    () => {
+                        (r = !1), a?.();
+                    }
                 );
             }
         },
@@ -478,4 +478,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-f33a9093.6d0183da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-f33a9093.c5fb092a.js.map

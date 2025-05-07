@@ -735,7 +735,7 @@
                             onHoverCardScreenNameClick: o,
                             renderUserAvatar: (e) => {
                                 const i = !t && this._shouldRenderAuthorLabel() && u.isTrue("responsive_web_author_labels_avatar_label_enabled");
-                                return r.createElement(ze.Z, { avatarRef: this._defaultInlinePromptRef, onClick: e.onClick, onHoverCardScreenNameClick: e.onHoverCardScreenNameClick, promotedContent: e.promotedContent, screenName: e.screenName, uri: e.uri, userAvatarLabel: i && r.createElement(qe.C, null), userId: e.userId || p.user.id_str, withHoverCard: l && !p.user.blocking, withLink: this.props.withAvatarLink, withUserPresence: c });
+                                return r.createElement(ze.Z, { avatarRef: this._defaultInlinePromptRef, link: { pathname: `https://x.com/${e.screenName || ""}`, state: { contextTweetId: p.id_str, ...(e.promotedContent && { promotedTweetState: e.promotedContent }) } }, onClick: e.onClick, onHoverCardScreenNameClick: e.onHoverCardScreenNameClick, promotedContent: e.promotedContent, screenName: e.screenName, uri: e.uri, userAvatarLabel: i && r.createElement(qe.C, null), userId: e.userId || p.user.id_str, withHoverCard: l && !p.user.blocking, withLink: this.props.withAvatarLink, withUserPresence: c });
                             },
                         }),
                     );
@@ -899,4 +899,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-757f3ab2.e11fd91a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-757f3ab2.b17caf4a.js.map

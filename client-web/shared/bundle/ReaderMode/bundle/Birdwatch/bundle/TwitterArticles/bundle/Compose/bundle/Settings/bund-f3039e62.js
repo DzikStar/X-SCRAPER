@@ -196,18 +196,18 @@
                 u = o(624479);
             const f = (e, t) => (0, u.cY)(e, t.userId),
                 h = (e) => {
-                    const { avatarRef: t, id: o, imageLayoutCache: d, onClick: u, onHoverCardScreenNameClick: f, promotedContent: h, screenName: w, size: m, style: p, uri: b, userAvatarLabel: _, userId: g, userSpace: v, withHoverCard: y, withLink: C } = e;
+                    const { avatarRef: t, id: o, imageLayoutCache: d, link: u, onClick: f, onHoverCardScreenNameClick: h, promotedContent: w, screenName: m, size: p, style: b, uri: _, userAvatarLabel: g, userId: v, userSpace: y, withHoverCard: C, withLink: E } = e;
                     l.useEffect(
                         () => (
-                            s.Z.registerUserInApp(g),
+                            s.Z.registerUserInApp(v),
                             () => {
-                                s.Z.deregisterUserInApp(g);
+                                s.Z.deregisterUserInApp(v);
                             }
                         ),
-                        [g],
+                        [v],
                     );
-                    const E = (v && v.spaceId) || "";
-                    return (0, c.R)(E), v ? l.createElement(r.Z, (0, n.Z)({ avatarRef: t, id: o, imageLayoutCache: d, onClick: u, onHoverCardScreenNameClick: f, promotedContent: h, screenName: w, size: m, style: p, uri: b, withHoverCard: y, withLink: C }, v)) : l.createElement(i.ZP.Provider, { value: { userAvatarLabel: () => _ } }, l.createElement(a.default, { avatarRef: t, id: o, imageLayoutCache: d, onClick: u, onHoverCardScreenNameClick: f, promotedContent: h, screenName: w, size: m, style: p, uri: b, withHoverCard: y, withLink: C }));
+                    const Z = (y && y.spaceId) || "";
+                    return (0, c.R)(Z), y ? l.createElement(r.Z, (0, n.Z)({ avatarRef: t, id: o, imageLayoutCache: d, link: u, onClick: f, onHoverCardScreenNameClick: h, promotedContent: w, screenName: m, size: p, style: b, uri: _, withHoverCard: C, withLink: E }, y)) : l.createElement(i.ZP.Provider, { value: { userAvatarLabel: () => g } }, l.createElement(a.default, { avatarRef: t, id: o, imageLayoutCache: d, link: u, onClick: f, onHoverCardScreenNameClick: h, promotedContent: w, screenName: m, size: p, style: b, uri: _, withHoverCard: C, withLink: E }));
                 },
                 w = (0, d.Z)().propsFromState(() => ({ userSpace: f }))(l.memo(h));
         },
@@ -313,4 +313,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-f3039e62.30ffe74a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-f3039e62.56417eea.js.map

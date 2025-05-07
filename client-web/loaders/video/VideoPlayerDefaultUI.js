@@ -68,12 +68,12 @@
                 }
                 render() {
                     const { guestsState: e, playerApi: t, playerState: r, stablePlayerState: l } = this.state,
-                        { additionalBadges: s, aspectRatio: p, basePlayerClass: d, children: u, includeDisputeLinkInCopyrightErrorMessage: h, isFullScreen: g, objectFitVideo: S, onApiReady: b, onScroll: E, onStateUpdate: f, playerId: C, size: v, ...P } = this.props,
+                        { additionalBadges: s, aspectRatio: p, basePlayerClass: d, children: u, includeDisputeLinkInCopyrightErrorMessage: h, isFullScreen: g, objectFitVideo: S, onApiReady: b, onScroll: v, onStateUpdate: E, playerId: f, size: C, ...P } = this.props,
                         _ = { aspectRatio: this.props.aspectRatio, guestsState: e, playerApi: t, playerState: r, containerRef: this._containerRef },
                         A = { ..._, playerState: l };
                     return n.createElement(
                         i.Z,
-                        { isFullScreen: g, onScroll: E, ratio: p, style: [m.root, m[v]] },
+                        { isFullScreen: g, onScroll: v, ratio: p, style: [m.root, m[C]] },
                         this.state.hasError
                             ? n.createElement(o.Z, { onReloadPress: this._handleReload })
                             : n.createElement(
@@ -225,10 +225,10 @@
                 g = r(523319),
                 S = r(38660),
                 b = r(971765),
-                E = r(916692),
-                f = r(804455),
-                C = r(162317),
-                v = r(472238),
+                v = r(916692),
+                E = r(804455),
+                f = r(162317),
+                C = r(472238),
                 P = r(272879);
             class _ extends a.PureComponent {
                 constructor(...e) {
@@ -252,28 +252,28 @@
                                   : a.createElement(u.Z, { enabled: !p && !!l, playerApi: t, playerState: r }, a.createElement(o.Z, { playerState: r }, this._renderVideo(e, !1)));
                         }),
                         (this._renderVideo = (e, t) => {
-                            const { additionalBadges: r, "aria-label": i, containerRef: s, customControlBarIcon: o, enablePiP: p, fullscreenAdsDisabledOnIOS: u, guestsState: _, includeDisputeLinkInCopyrightErrorMessage: A, liveBroadcastRewindEnabled: Z, onClickBackground: R, onScribeEvent: w, playerApi: k, playerDisplayOptions: x, playerState: I, poster: O, renderPrerollActionMenu: D, shouldShowAltLabel: M, showWatchAgain: F } = this.props;
-                            if (!k || !I) return null;
-                            const { Observer: T, observed: B } = e,
-                                z = (0, P.JN)(I, B, P.i2),
-                                U = !!I.error,
-                                V = (0, h.Ci)(I),
+                            const { additionalBadges: r, "aria-label": i, containerRef: s, customControlBarIcon: o, enablePiP: p, fullscreenAdsDisabledOnIOS: u, guestsState: _, includeDisputeLinkInCopyrightErrorMessage: A, liveBroadcastRewindEnabled: Z, onClickBackground: w, onScribeEvent: R, playerApi: k, playerDisplayOptions: x, playerState: M, poster: I, renderPrerollActionMenu: D, shouldShowAltLabel: O, showWatchAgain: B } = this.props;
+                            if (!k || !M) return null;
+                            const { Observer: F, observed: T } = e,
+                                z = (0, P.JN)(M, T, P.i2),
+                                U = !!M.error,
+                                V = (0, h.Ci)(M),
                                 L = V?.contentType === y.wF.GIF,
-                                j = "PLAY_REQUESTED" !== I.controls?.playState,
-                                H = F && I.tracksFinished,
-                                G = z && I.isPreview,
+                                j = "PLAY_REQUESTED" !== M.controls?.playState,
+                                H = B && M.tracksFinished,
+                                G = z && M.isPreview,
                                 W = !(!z || !V?.isLive),
-                                N = M ? i : void 0,
+                                N = O ? i : void 0,
                                 K = !x?.hideLeftBadges && (!!N || L || G || W),
                                 J = !x?.hideRightBadges && z,
                                 Y = G || !z,
                                 Q = !x?.hidePosterImage,
-                                q = I.controls?.isPosterShown;
+                                q = M.controls?.isPosterShown;
                             return a.createElement(
-                                T,
+                                F,
                                 { click: !0, interactionKey: P.IG.Root, mousemove: !0, mouseover: !0 },
-                                U ? null : a.createElement(a.Fragment, null, a.createElement(E.Z, { hideControls: z, isTouchOnlyUI: P.i2, liveBroadcastRewindEnabled: Z, onClick: R, playerApi: k, playerDisplayOptions: x, playerState: I }), Q && !H && a.createElement(f.Z, { imageSrc: O, playerApi: k, playerState: I, withPlayButton: j }), a.createElement(g.Z, { playerState: I }), t ? a.createElement(C.Z, { containerRef: s, onSkip: this._handleSkip, playerApi: k, playerState: I, renderPrerollActionMenu: D }) : a.createElement(a.Fragment, null, !L && F && a.createElement(v.Z, { onScribeEvent: w, playerApi: k, playerState: I }), a.createElement(b.Z, { guestsState: _, playerState: I }), !L && a.createElement(T, { focus: !0, interactionKey: P.IG.VideoCTA, mouseover: !0 }, a.createElement(l.Z, { show: !z }, a.createElement(d.Z, { playerApi: k, playerState: I }))), !L && !q && a.createElement(a.Fragment, null, a.createElement(T, { focus: !0, interactionKey: P.IG.A11YHook }, a.createElement(n.Z, { focusable: !0 })), a.createElement(T, { focus: !0, interactionKey: P.IG.ControlBar, mouseover: !0, touch: !0 }, a.createElement(c.Z, { containerRef: s, customControlBarIcon: o, enablePiP: p, fullscreenAdsDisabledOnIOS: u, hideControls: z, liveBroadcastRewindEnabled: Z, playerApi: k, playerState: I, publisherDisplayName: V?.publisherDisplayName, publisherProfileImageUrl: V?.publisherProfileImageUrl, showScrubber: "ad" !== V?.displayType && (!V?.isLive || Z) }))), a.createElement(l.Z, { show: K }, a.createElement(m.Z, { additionalBadges: r, mediaAccessibilityLabel: N, playerApi: k, playerDisplayOptions: x, playerState: I, position: "left" })), a.createElement(l.Z, { show: J }, a.createElement(m.Z, { playerApi: k, playerDisplayOptions: x, playerState: I, position: "right" })), a.createElement(l.Z, { show: Y }, a.createElement(m.Z, { playerApi: k, playerDisplayOptions: x, playerState: I, position: "topRight" })))),
-                                a.createElement(l.Z, { show: U }, U && a.createElement(S.Z, { imageSrc: O, includeDisputeLinkInCopyrightErrorMessage: A, playerApi: k, playerState: I })),
+                                U ? null : a.createElement(a.Fragment, null, a.createElement(v.Z, { hideControls: z, isTouchOnlyUI: P.i2, liveBroadcastRewindEnabled: Z, onClick: w, playerApi: k, playerDisplayOptions: x, playerState: M }), Q && !H && a.createElement(E.Z, { imageSrc: I, playerApi: k, playerState: M, withPlayButton: j }), a.createElement(g.Z, { playerState: M }), t ? a.createElement(f.Z, { containerRef: s, onSkip: this._handleSkip, playerApi: k, playerState: M, renderPrerollActionMenu: D }) : a.createElement(a.Fragment, null, !L && B && a.createElement(C.Z, { onScribeEvent: R, playerApi: k, playerState: M }), a.createElement(b.Z, { guestsState: _, playerState: M }), !L && a.createElement(F, { focus: !0, interactionKey: P.IG.VideoCTA, mouseover: !0 }, a.createElement(l.Z, { show: !z }, a.createElement(d.Z, { playerApi: k, playerState: M }))), !L && !q && a.createElement(a.Fragment, null, a.createElement(F, { focus: !0, interactionKey: P.IG.A11YHook }, a.createElement(n.Z, { focusable: !0 })), a.createElement(F, { focus: !0, interactionKey: P.IG.ControlBar, mouseover: !0, touch: !0 }, a.createElement(c.Z, { containerRef: s, customControlBarIcon: o, enablePiP: p, fullscreenAdsDisabledOnIOS: u, hideControls: z, liveBroadcastRewindEnabled: Z, playerApi: k, playerState: M, publisherDisplayName: V?.publisherDisplayName, publisherProfileImageUrl: V?.publisherProfileImageUrl, showScrubber: "ad" !== V?.displayType && (!V?.isLive || Z) }))), a.createElement(l.Z, { show: K }, a.createElement(m.Z, { additionalBadges: r, mediaAccessibilityLabel: N, playerApi: k, playerDisplayOptions: x, playerState: M, position: "left" })), a.createElement(l.Z, { show: J }, a.createElement(m.Z, { playerApi: k, playerDisplayOptions: x, playerState: M, position: "right" })), a.createElement(l.Z, { show: Y }, a.createElement(m.Z, { playerApi: k, playerDisplayOptions: x, playerState: M, position: "topRight" })))),
+                                a.createElement(l.Z, { show: U }, U && a.createElement(S.Z, { imageSrc: I, includeDisputeLinkInCopyrightErrorMessage: A, playerApi: k, playerState: M })),
                             );
                         }),
                         (this._handleSkip = () => {
@@ -291,6 +291,19 @@
                 }
             }
             const A = _;
+        },
+        38502: (e, t, r) => {
+            r.r(t), r.d(t, { default: () => o });
+            var a = r(202784),
+                n = r(890601),
+                l = r(783427),
+                i = r(347101);
+            const s = (e = {}) => {
+                const { direction: t } = (0, l.Z)();
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M3 5.5C3 4.12 4.119 3 5.5 3h13C19.881 3 21 4.12 21 5.5v13c0 1.38-1.119 2.5-2.5 2.5h-13C4.119 21 3 19.88 3 18.5v-13zm2.746 6.52c0 1.85 1.421 3.2 3.187 3.2v-.01h.003c1.369 0 2.154-.59 2.737-1.39l-1.22-.87c-.303.44-.812.73-1.39.73-.93 0-1.685-.75-1.685-1.68s.754-1.68 1.684-1.68c.559 0 1.051.27 1.357.69l1.207-.93c-.545-.76-1.36-1.29-2.62-1.29-1.872 0-3.26 1.41-3.26 3.21v.02zm6.584 0c0 1.85 1.421 3.2 3.185 3.2 1.368 0 2.154-.6 2.738-1.4l-1.22-.87c-.304.44-.813.74-1.39.74-.93 0-1.684-.76-1.684-1.69s.755-1.68 1.685-1.68c.559 0 1.051.27 1.356.69l1.21-.93c-.547-.76-1.36-1.29-2.622-1.29-1.872 0-3.258 1.41-3.258 3.21v.02z" })) }, { writingDirection: t });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const o = s;
         },
         804579: (e, t, r) => {
             r.r(t), r.d(t, { default: () => o });
@@ -318,6 +331,19 @@
             s.metadata = { width: 24, height: 24 };
             const o = s;
         },
+        234558: (e, t, r) => {
+            r.r(t), r.d(t, { default: () => o });
+            var a = r(202784),
+                n = r(890601),
+                l = r(783427),
+                i = r(347101);
+            const s = (e = {}) => {
+                const { direction: t } = (0, l.Z)();
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: a.createElement("g", null, a.createElement("path", { d: "M9.5 16.45v-8.9l7 4.45-7 4.45zM22.25 12c0 5.66-4.589 10.25-10.25 10.25S1.75 17.66 1.75 12 6.339 1.75 12 1.75 22.25 6.34 22.25 12zM12 20.25c4.556 0 8.25-3.69 8.25-8.25S16.556 3.75 12 3.75 3.75 7.44 3.75 12s3.694 8.25 8.25 8.25z" })) }, { writingDirection: t });
+            };
+            s.metadata = { width: 24, height: 24 };
+            const o = s;
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loaders.video.VideoPlayerDefaultUI.fb26ad4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loaders.video.VideoPlayerDefaultUI.334c0fba.js.map

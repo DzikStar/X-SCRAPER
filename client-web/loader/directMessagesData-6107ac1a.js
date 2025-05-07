@@ -619,7 +619,7 @@
                         });
         },
         653843: (e, t, i) => {
-            i.d(t, { Y7: () => g, ZP: () => T, m2: () => f });
+            i.d(t, { Y7: () => g, ZP: () => T, m2: () => y });
             var s = i(19697),
                 n = i(790187),
                 a = i(549755),
@@ -658,15 +658,15 @@
                     return a > i || s > i || n > t;
                 },
                 _ = (e, t) => t || { top: 0, left: 0, width: e.width, height: e.height },
-                y = (e, t) => {
+                f = (e, t) => {
                     const { height: i, left: s, top: n, width: a } = _(e, t);
                     return !(0 === n && 0 === s && a === e.width && i === e.height);
                 };
-            function f(e, t) {
+            function y(e, t) {
                 const { maxFileSize: i = u, maxDimension: s = h, cropData: n, jpgPixelsPerByteForResize: a } = t || {},
                     r = "image/jpeg" === e.type,
                     l = (e.width * e.height) / e.size;
-                return m(e) || p(e, i, s) || y(e, n) || (r && !!a && l < a);
+                return m(e) || p(e, i, s) || f(e, n) || (r && !!a && l < a);
             }
             const w = (e, t) => {
                     const { height: i, width: s } = e;
@@ -676,7 +676,7 @@
             function T(e, t) {
                 const { maxFileSize: i = u, maxDimension: n = h, targetQuality: l = c, cropData: d } = t || {},
                     m = _(e, d);
-                if (!f(e, t)) return Promise.resolve(e.fileHandle);
+                if (!y(e, t)) return Promise.resolve(e.fileHandle);
                 if (!(0, r.DS)(e)) {
                     const e = new a.Z("The provided file is not a valid image", g.FILE_IS_NOT_AN_IMAGE);
                     return Promise.reject(e);
@@ -701,44 +701,45 @@
             }
         },
         417144: (e, t, i) => {
-            function s(e) {
-                let t = 1;
-                const i = new Map();
-                let s = 0,
-                    n = 0,
+            function s(e, t = 1) {
+                let i = t;
+                const s = new Map();
+                let n = 0,
                     a = 0,
-                    r = null;
-                function l() {
-                    i.clear(), (s = 0), (n = 0), (a = 0);
+                    r = 0,
+                    l = null;
+                function o() {
+                    s.clear(), (n = 0), (a = 0), (r = 0);
                 }
                 return {
                     uploadStart: function (e, t) {
-                        i.set(e, { time: Date.now(), bytes: t }), n || (n = Date.now());
+                        s.set(e, { time: Date.now(), bytes: t }), a || (a = Date.now());
                     },
-                    uploadFinish: function (o, d) {
-                        const u = i.get(o);
-                        u &&
-                            ((s += d - u.bytes),
-                            i.delete(o),
-                            ++a === t &&
+                    uploadFinish: function (d, u) {
+                        const h = s.get(d);
+                        h &&
+                            ((n += u - h.bytes),
+                            s.delete(d),
+                            ++r === i &&
                                 (function () {
-                                    if (!n) return;
-                                    const i = Date.now() - n;
-                                    if (i <= 0) return;
-                                    const a = s / i;
-                                    if (a < 5e3 && 1 === t) return;
-                                    !r || r.byterate < a ? ((t += 1), e(), (r = { byterate: a, poolSize: t })) : ((t -= 2), (t = Math.max(t, 1)), (r = null));
-                                    l();
+                                    if (!a) return;
+                                    const s = Date.now() - a;
+                                    if (s <= 0) return;
+                                    if (1 !== t) return;
+                                    const r = n / s;
+                                    if (r < 5e3 && 1 === i) return;
+                                    !l || l.byterate < r ? ((i += 1), e(), (l = { byterate: r, poolSize: i })) : ((i -= 2), (i = Math.max(i, 1)), (l = null));
+                                    o();
                                 })());
                     },
-                    reset: l,
-                    getPoolSize: () => t,
+                    reset: o,
+                    getPoolSize: () => i,
                     start: function () {
-                        e();
+                        for (let t = 0; t < i; ++t) e();
                     },
                 };
             }
-            i.d(t, { Z: () => u, d: () => f });
+            i.d(t, { Z: () => u, d: () => y });
             i(543673), i(240753), i(128399);
             function n(e) {
                 const t = new URLSearchParams();
@@ -768,13 +769,13 @@
                         (this._bitrateMonitor = e.withMultiRequests
                             ? s(() => {
                                   this._startNextAppendSegment();
-                              })
+                              }, e.withMultiRequestsDefaultPoolSize)
                             : void 0),
                         this._notifyResult(),
                         this._notifyProgress(this._uploadProgress());
                 }
                 cancel() {
-                    "function" == typeof this.uploadOptions.error && this.uploadOptions.error({ code: f.CANCELED }), this._clearState();
+                    "function" == typeof this.uploadOptions.error && this.uploadOptions.error({ code: y.CANCELED }), this._clearState();
                 }
                 pollStatusOfExistingMediaId(e, t) {
                     (this.mediaId = e), (this.uploadOptions = t || T), (this.state = S.PENDING), this._getStatus();
@@ -839,7 +840,7 @@
                                 (...e) => this._uploadError(...e),
                                 c,
                             );
-                    } else this._uploadError({ code: f.ZERO_FILE_LENGTH });
+                    } else this._uploadError({ code: y.ZERO_FILE_LENGTH });
                 }
                 _initSuccess(e) {
                     this.state === S.PENDING && ((this.mediaId = e.media_id_string), (this.mediaKey = e.media_key), this._setSessionTimeout(e.expires_after_secs), this._bitrateMonitor ? this._bitrateMonitor.start() : this._startNextAppendSegment());
@@ -848,7 +849,7 @@
                     if ((this.timeoutIdMap.session && (clearTimeout(this.timeoutIdMap.session), delete this.timeoutIdMap.session), e)) {
                         const t = Math.min(h, 1e3 * e);
                         this.timeoutIdMap.session = setTimeout(() => {
-                            this._uploadError({ code: f.TIMEOUT }), this._stats("NONE", "timeout"), this._clearState();
+                            this._uploadError({ code: y.TIMEOUT }), this._stats("NONE", "timeout"), this._clearState();
                         }, t);
                     }
                 }
@@ -922,7 +923,7 @@
                         case "failed": {
                             const e = t.error;
                             let i;
-                            return (i = e?.code ? w[String(e.code)] : f.INTERNAL_ERROR), void this._uploadError({ ...e, code: i });
+                            return (i = e?.code ? w[String(e.code)] : y.INTERNAL_ERROR), void this._uploadError({ ...e, code: i });
                         }
                         default:
                             return void this._uploadError();
@@ -952,8 +953,8 @@
                     const t = e.error?.match(/{ "message": "maxFileSizeExceeded", "maxFileSizeBytes": \d+ }/);
                     if (t) {
                         const e = JSON.parse(t[0]);
-                        this.error = { code: f.FILE_TOO_LARGE, message: e.message, maxSizeBytes: e.maxFileSizeBytes };
-                    } else e && e.code ? (this.error = e) : (this.error = { code: f.INTERNAL_ERROR, message: e?.error });
+                        this.error = { code: y.FILE_TOO_LARGE, message: e.message, maxSizeBytes: e.maxFileSizeBytes };
+                    } else e && e.code ? (this.error = e) : (this.error = { code: y.INTERNAL_ERROR, message: e?.error });
                     (this.state = S.FAILED), this._notifyResult();
                 }
                 _uploadProgress() {
@@ -985,11 +986,11 @@
                                 const a = [h, r].join("-");
                                 this.timeoutIdMap[a] = setTimeout(() => {
                                     this._sendXhr(e, t, i, s, n, r - 1, l, d, u);
-                                }, y);
+                                }, f);
                             } else w(a);
                         },
                         w = (e) => {
-                            this._stats(t, e || "unknown-error", { requestStartTime: m, segmentBytes: u }), "function" == typeof n && n(I(S) || { code: f.INVALID_RES_STATUS, mediaId: this.mediaId });
+                            this._stats(t, e || "unknown-error", { requestStartTime: m, segmentBytes: u }), "function" == typeof n && n(I(S) || { code: y.INVALID_RES_STATUS, mediaId: this.mediaId });
                         },
                         S = new XMLHttpRequest();
                     S.open(e, h, !0),
@@ -1032,9 +1033,9 @@
                 m = (window.location.host.includes("twitter.com") ? "https://upload.twitter.com" : "https://upload.x.com") + "/i/media/upload.json",
                 p = 2,
                 _ = 0.95,
-                y = 1e3,
-                f = Object.freeze({ FILE_TOO_LARGE: 2, INTERNAL_ERROR: 131, INVALID_MEDIA: 1, RATE_LIMIT: 88, TIMEOUT: 67, UNSUPPORTED_MEDIA: 3, ZERO_FILE_LENGTH: 4, CANCELED: 999, INVALID_RES_STATUS: -1 }),
-                w = Object.freeze({ 0: f.INTERNAL_ERROR, 1: f.INVALID_MEDIA, 2: f.FILE_TOO_LARGE, 3: f.UNSUPPORTED_MEDIA, 4: f.TIMEOUT }),
+                f = 1e3,
+                y = Object.freeze({ FILE_TOO_LARGE: 2, INTERNAL_ERROR: 131, INVALID_MEDIA: 1, RATE_LIMIT: 88, TIMEOUT: 67, UNSUPPORTED_MEDIA: 3, ZERO_FILE_LENGTH: 4, CANCELED: 999, INVALID_RES_STATUS: -1 }),
+                w = Object.freeze({ 0: y.INTERNAL_ERROR, 1: y.INVALID_MEDIA, 2: y.FILE_TOO_LARGE, 3: y.UNSUPPORTED_MEDIA, 4: y.TIMEOUT }),
                 S = Object.freeze({ RESET: 0, PENDING: 1, PAUSED: 2, SUCCEEDED: 3, FAILED: 4 }),
                 T = {};
             function I(e) {
@@ -1047,4 +1048,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.directMessagesData-6107ac1a.d27fefba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.directMessagesData-6107ac1a.b6860f2a.js.map

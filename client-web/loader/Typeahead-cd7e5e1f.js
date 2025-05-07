@@ -112,7 +112,7 @@
                 h = i.Z;
         },
         497294: (e, t, r) => {
-            r.d(t, { $i: () => pe, C4: () => q, G$: () => Y, Q6: () => $, TU: () => W, WU: () => K, _B: () => ae, _J: () => re, _T: () => H, dD: () => ie, gz: () => Z, m3: () => N, o6: () => ne, oZ: () => me, pJ: () => ce, rA: () => j });
+            r.d(t, { $i: () => pe, C4: () => q, G$: () => Y, Q6: () => $, TU: () => W, WU: () => K, _B: () => ae, _J: () => re, _T: () => H, dD: () => ie, gz: () => N, m3: () => Z, o6: () => ne, oZ: () => me, pJ: () => ce, rA: () => j });
             r(571372), r(136728);
             var i = r(99107),
                 a = r(411916),
@@ -142,8 +142,8 @@
                 U = r(38562),
                 T = r(601576),
                 x = r(111531),
-                F = r(537052);
-            const D = l().g40ff2b4,
+                D = r(537052);
+            const F = l().g40ff2b4,
                 M = "mediaUpload",
                 O = (window.location.host.includes("twitter.com") ? "https://upload.twitter.com" : "https://upload.x.com") + "/i/media/upload2.json",
                 R = `rweb/${M}`,
@@ -183,13 +183,13 @@
                     }
                 );
             }
-            const Z = (e) => e[M],
-                N = (e, t) => {
+            const N = (e) => e[M],
+                Z = (e, t) => {
                     const r = Array.isArray(t) ? t : [t];
                     return e[M].filter((e) => r.some((t) => t === e.id));
                 },
                 H = (e, t) => {
-                    const r = N(e, t);
+                    const r = Z(e, t);
                     if (!r.length) return 0;
                     const i = r.reduce((e, t) => e + (t.uploadProgress || 0), 0) / r.length;
                     return Math.min(i, 1);
@@ -297,7 +297,7 @@
             const q =
                     (e) =>
                     (t, r, { featureSwitches: i, userClaims: a }) => {
-                        const [o] = N(r(), e);
+                        const [o] = Z(r(), e);
                         if (!o) return Promise.reject(new Error("media item not found"));
                         const { abortController: s, cropData: n, id: d, location: l, mediaFile: p, needsProcessing: m, originalMediaFile: _ } = o;
                         if (!_) return Promise.reject(new Error("media item not found"));
@@ -352,7 +352,7 @@
                                             s.push(t), t?.reporter?.reportOperationComplete(w.BX.Processing, w.Uk.Success), t?.reporter?.toggleOperationPaused(w.BX.Full, !0), n(e.slice(1));
                                         },
                                         (t) => {
-                                            const o = (0, E.ZP)(t, D);
+                                            const o = (0, E.ZP)(t, F);
                                             o && r((0, T.fz)(o));
                                             const { code: s, message: d, name: l, type: c } = t;
                                             i.reporter?.setMetadata({ reason: { name: l, message: d, code: s } });
@@ -369,7 +369,7 @@
                 W = (e) => ({ payload: Array.isArray(e) ? e : [e], type: J });
             function K(e) {
                 return (t, r) => {
-                    N(r(), e).forEach((e) => {
+                    Z(r(), e).forEach((e) => {
                         const { abortController: t, mediaFile: r, originalMediaFile: i, reporter: a, uploader: o } = e;
                         t?.abort(), o && o.cancel && o.cancel(), a?.reportOperationComplete(w.BX.Full, w.Uk.Cancel), r && r.dispose(), i && i.dispose();
                     }),
@@ -381,13 +381,13 @@
             function re(e) {
                 return (t, r) => {
                     t(te(e));
-                    const [i] = N(r(), e.id);
+                    const [i] = Z(r(), e.id);
                     return i;
                 };
             }
             function ie(e) {
                 return (t, r) => {
-                    const [i] = N(r(), e);
+                    const [i] = Z(r(), e);
                     i.uploader?.cancel(), t(pe(e));
                 };
             }
@@ -416,7 +416,7 @@
             const pe =
                     (e, t = Object.freeze({})) =>
                     (r, i, { featureSwitches: a, userClaims: o }) => {
-                        const s = N(i(), e),
+                        const s = Z(i(), e),
                             n = (e) => r(re(e));
                         function d(e, r = !1) {
                             const i = a.isTrue("responsive_web_media_upload_md5_hashing_enabled"),
@@ -439,7 +439,7 @@
                                                                   u?.setMetadata({ mediaId: t }), u?.reportOperationComplete([w.BX.Full, w.BX.UploadSubmitUntilSruFinish], w.Uk.Success), e(a({ id: c, uploadId: t, uploadProgress: 1, uploading: !1 }));
                                                               },
                                                               f = (e, t, r) => {
-                                                                  u?.setMetadata({ mediaId: r }), "uploading" === t ? (a({ id: c, uploadProgress: F.OA("uploading", e) }), 100 === e && u?.reportOperationComplete(w.BX.SruUpload, w.Uk.Success)) : "processing" === t && a({ id: c, uploadProgress: F.OA("processing", e) });
+                                                                  u?.setMetadata({ mediaId: r }), "uploading" === t ? (a({ id: c, uploadProgress: D.OA("uploading", e) }), 100 === e && u?.reportOperationComplete(w.BX.SruUpload, w.Uk.Success)) : "processing" === t && a({ id: c, uploadProgress: D.OA("processing", e) });
                                                               },
                                                               S = () => {
                                                                   u?.toggleOperationPaused(w.BX.Full, !0);
@@ -462,7 +462,7 @@
                                                                   p = d && d.size > 1e8 && t.isTrue("rweb_media_multi_requests_enabled"),
                                                                   m = he(i, r, { featureSwitches: t, userClaims: n }),
                                                                   _ = m ? `&media_category=${m}` : "";
-                                                              u?.reportOperationStart(w.BX.SruUpload), i.uploader?.upload({ success: h, progress: f, pause: S, error: E, extraInitParams: e + _, extraFinalizeParams: l ? `&original_md5=${l}` : void 0, trimRanges: ue(i), pauseBeforeFinalize: a, withMultiRequests: p, enable_1080p_variant: !c || o, mediaItem: i });
+                                                              u?.reportOperationStart(w.BX.SruUpload), i.uploader?.upload({ success: h, progress: f, pause: S, error: E, extraInitParams: e + _, extraFinalizeParams: l ? `&original_md5=${l}` : void 0, trimRanges: ue(i), pauseBeforeFinalize: a, withMultiRequests: p, withMultiRequestsDefaultPoolSize: t.getNumberValue("rweb_media_multi_requests_default_pool_size", 1), enable_1080p_variant: !c || o, mediaItem: i });
                                                           }
                                                       });
                                                   return a({ id: c, uploading: !0, uploadFailed: !1, uploadProgress: 0, uploadPromise: m }), m;
@@ -520,7 +520,7 @@
                     a?.setMetadata({ hashState: w.Xj.InProgress }),
                     (0, p.Q)(i, o)
                         .then((i) => {
-                            const [o] = N(t(), r);
+                            const [o] = Z(t(), r);
                             if (!o) {
                                 throw new L("Media item was removed", { code: p.S.HASHING_ABORTED, type: B, isGif: !1, isImage: !0, isVideo: !1 });
                             }
@@ -529,7 +529,7 @@
                             s && d && n && n.amendUpload({ extraFinalizeParams: i ? `&original_md5=${i}` : void 0 }), a?.setMetadata({ hashState: w.Xj.Complete }), a?.reportOperationComplete(w.BX.Hash, w.Uk.Success);
                         })
                         .catch((i) => {
-                            const [o] = N(t(), r);
+                            const [o] = Z(t(), r);
                             o && e(re({ id: r, mediaFileHash: null, abortController: void 0 })), i.code === p.S.HASHING_ABORTED ? (a?.setMetadata({ hashState: w.Xj.Canceled }), a?.reportOperationComplete(w.BX.Hash, w.Uk.Cancel)) : (a?.setMetadata({ hashState: w.Xj.Failure }), a?.reportOperationComplete(w.BX.Hash, w.Uk.Failure));
                         });
             };
@@ -748,4 +748,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.Typeahead-cd7e5e1f.a512314a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.Typeahead-cd7e5e1f.0963c0ca.js.map

@@ -142,9 +142,9 @@
             const y = (0, a(523561).Z)({
                 loader: () =>
                     Promise.all([
+                        a.e("icons.24"),
                         a.e("modules.common-e907d115"),
                         a.e("modules.common-e019dbda"),
-                        a.e("icons.15"),
                         a.e("modules.audio-6107ac1a"),
                         a.e("modules.audio-b953418a"),
                         a.e("modules.audio-7c51e6a7"),
@@ -162,6 +162,7 @@
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-64ffe41f"),
+                        a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-5517db7c"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-58d4ab8e"),
@@ -235,14 +236,14 @@
                     ]).then(a.bind(a, 568527)),
             });
             var F = a(810641);
-            const B = (e, t) => t.initialModule.selectPageConfiguration && t.initialModule.selectPageConfiguration(e),
-                P = (e, t) => {
+            const P = (e, t) => t.initialModule.selectPageConfiguration && t.initialModule.selectPageConfiguration(e),
+                B = (e, t) => {
                     const a = t.selectedTabId,
-                        n = B(e, t);
+                        n = P(e, t);
                     return n && n.tabs && n.tabs.tabs.find((e) => e.id === a);
                 },
                 Z = (0, A.Z)()
-                    .propsFromState(() => ({ pageConfiguration: B, selectedTab: P }))
+                    .propsFromState(() => ({ pageConfiguration: P, selectedTab: B }))
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, C.zr)("RICH_SEGMENTED_TIMELINE") }))
                     .withAnalytics();
             class v extends n.Component {
@@ -356,7 +357,7 @@
                 pe = i().e9f1fbcc,
                 me = n.createElement(c.Z, null),
                 we = (e) => {
-                    const { TabBar: t, backLocation: a, documentTitle: o, entryConfiguration: s, fab: i, getTabLink: c, hasTabNavigation: p, history: m, initialFetchStatus: w, initialPageNamespace: T, logoButton: C, module: A, onBackClick: I, pageConfiguration: N, prerollDisplayLocation: D, renderEmptyState: f, renderUnavailable: R, rightControl: g, selectedTabId: U, sidebarContent: L, timelinePrefix: M, title: y, withAppLinks: F, withBottomLoginSignupBar: B, withDeferredView: P, withOpenGraphMeta: Z, withSearchBox: v, withTweetButton: G } = e,
+                    const { TabBar: t, backLocation: a, documentTitle: o, entryConfiguration: s, fab: i, getTabLink: c, hasTabNavigation: p, history: m, initialFetchStatus: w, initialPageNamespace: T, logoButton: C, module: A, onBackClick: I, pageConfiguration: N, prerollDisplayLocation: D, renderEmptyState: f, renderUnavailable: R, rightControl: g, selectedTabId: U, sidebarContent: L, timelinePrefix: M, title: y, withAppLinks: F, withBottomLoginSignupBar: P, withDeferredView: B, withOpenGraphMeta: Z, withSearchBox: v, withTweetButton: G } = e,
                         x = (0, r.tj)(),
                         Q = n.useMemo(() => ({ ...s, ...(0, k.Z)({ isLegacy: !0, isWide: x }) }), [s, x]),
                         [W, q] = n.useState(!0),
@@ -373,11 +374,11 @@
                         })(U, N, T),
                         X = z ? n.createElement(K, { header: z, onHeaderVisible: q }) : null,
                         ee = V ? n.createElement(Se, { isHeaderOffscreen: !W, navBar: V, pageNamespace: J, withAppLinks: F, withOpenGraphMeta: Z }) : null,
-                        te = P ? u.Z : n.Fragment,
+                        te = B ? u.Z : n.Fragment,
                         ae = n.createElement(n.Fragment, null, X, n.createElement(te, null, n.createElement(H, { entryConfiguration: Q, initialModule: A, prerollDisplayLocation: D, renderEmptyState: f, renderUnavailable: R, selectedTabId: U, timelinePrefix: M, title: y, withoutHeadroom: !0 }))),
                         ne = i ? n.createElement(E.Z, { component: d.Z, fab: i }, ae) : ae,
                         oe = c && p ? n.createElement(O, { getTabLink: c, module: A, selectedTabId: U }) : void 0;
-                    return n.createElement(_.nO, { namespace: J }, n.createElement(S.Z, null, n.createElement(b.Z, { TabBar: t, backLocation: a, documentTitle: o, history: m, logoButton: C, onBackClick: I, primaryContent: ne, rightControl: ee || g, secondaryBar: oe, sidebarContent: L, subtitle: j, title: X && W ? y : $, withBottomLoginSignupBar: B, withSearchBox: v, withTweetButton: G })));
+                    return n.createElement(_.nO, { namespace: J }, n.createElement(S.Z, null, n.createElement(b.Z, { TabBar: t, backLocation: a, documentTitle: o, history: m, logoButton: C, onBackClick: I, primaryContent: ne, rightControl: ee || g, secondaryBar: oe, sidebarContent: L, subtitle: j, title: X && W ? y : $, withBottomLoginSignupBar: P, withSearchBox: v, withTweetButton: G })));
                 };
             we.defaultProps = { entryConfiguration: (0, G.G)({}), renderEmptyState: () => n.createElement(o.Z, { header: pe }), sidebarContent: me, withDeferredView: !1, withAppLinks: !1, withOpenGraphMeta: !1 };
             const Te = te(we);
@@ -518,7 +519,7 @@
             const r = (e) => (0, o.Z)({ contextSuffix: "BIRDWATCH_CONTRIBUTOR_NOTES_SLICE", getFetchApiEndpoint: (e) => e.withEndpoint(n.Z).fetchBirdwatchContributorNotesSlice, getEndpointParams: (t) => ({ ...t, alias: e }), sliceKey: `birdwatchContributorNotesSlice-${e}` });
         },
         979090: (e, t, a) => {
-            a.d(t, { $e: () => Ae, BG: () => ee, Bb: () => Me, Bs: () => ae, EW: () => Te, HO: () => ce, JL: () => de, Jn: () => be, Kc: () => fe, Ld: () => Le, Lt: () => Y, OV: () => X, PL: () => ne, Pi: () => he, Qg: () => x, SZ: () => Be, V0: () => ge, Wk: () => $, X3: () => Re, _T: () => He, _b: () => Fe, aZ: () => Ne, ap: () => re, cS: () => te, dw: () => j, eD: () => oe, eY: () => pe, et: () => z, f3: () => ue, f_: () => Oe, gH: () => le, gP: () => Ze, jm: () => W, kT: () => Ue, kX: () => Pe, lC: () => Ie, lW: () => se, lw: () => Ce, mZ: () => ve, mv: () => Se, oV: () => ke, pN: () => we, qm: () => De, r9: () => Q, sz: () => K, tk: () => V, vF: () => _e, w6: () => ie, wK: () => ye, wd: () => Ee, ww: () => me });
+            a.d(t, { $e: () => Ae, BG: () => ee, Bb: () => Me, Bs: () => ae, EW: () => Te, HO: () => ce, JL: () => de, Jn: () => be, Kc: () => fe, Ld: () => Le, Lt: () => Y, OV: () => X, PL: () => ne, Pi: () => he, Qg: () => x, SZ: () => Pe, V0: () => ge, Wk: () => $, X3: () => Re, _T: () => He, _b: () => Fe, aZ: () => Ne, ap: () => re, cS: () => te, dw: () => j, eD: () => oe, eY: () => pe, et: () => z, f3: () => ue, f_: () => Oe, gH: () => le, gP: () => Ze, jm: () => W, kT: () => Ue, kX: () => Be, lC: () => Ie, lW: () => se, lw: () => Ce, mZ: () => ve, mv: () => Se, oV: () => ke, pN: () => we, qm: () => De, r9: () => Q, sz: () => K, tk: () => V, vF: () => _e, w6: () => ie, wK: () => ye, wd: () => Ee, ww: () => me });
             var n = a(744531),
                 o = a(401388),
                 r = a(106067),
@@ -551,8 +552,8 @@
                 M = Object.freeze({ REQUEST: "rweb/birdwatchNotes/CREATE_NOTE_REQUEST", SUCCESS: "rweb/birdwatchNotes/CREATE_NOTE_SUCCESS", FAILURE: "rweb/birdwatchNotes/CREATE_NOTE_FAILURE" }),
                 y = Object.freeze({ REQUEST: "rweb/birdwatchNotes/FETCH_TWEET_NOTES_REQUEST", SUCCESS: "rweb/birdwatchNotes/FETCH_TWEET_NOTES_SUCCESS", FAILURE: "rweb/birdwatchNotes/FETCH_TWEET_NOTES_FAILURE" }),
                 F = Object.freeze({ REQUEST: "rweb/birdwatchNotes/FETCH_BIRDWATCH_PROFILE_REQUEST", SUCCESS: "rweb/birdwatchNotes/FETCH_BIRDWATCH_PROFILE_SUCCESS", FAILURE: "rweb/birdwatchNotes/FETCH_BIRDWATCH_PROFILE_FAILURE" }),
-                B = Object.freeze({ REQUEST: "rweb/birdwatchNotes/FETCH_SHOW_ALIAS_SELECT_REQUEST", SUCCESS: "rweb/birdwatchNotes/FETCH_SHOW_ALIAS_SELECT_SUCCESS", FAILURE: "rweb/birdwatchNotes/FETCH_SHOW_ALIAS_SELECT_FAILURE" }),
-                P = Object.freeze({ REQUEST: "rweb/birdwatchNotes/FETCH_NOTE_REQUEST", SUCCESS: "rweb/birdwatchNotes/FETCH_NOTE_SUCCESS", FAILURE: "rweb/birdwatchNotes/FETCH_NOTE_FAILURE" }),
+                P = Object.freeze({ REQUEST: "rweb/birdwatchNotes/FETCH_SHOW_ALIAS_SELECT_REQUEST", SUCCESS: "rweb/birdwatchNotes/FETCH_SHOW_ALIAS_SELECT_SUCCESS", FAILURE: "rweb/birdwatchNotes/FETCH_SHOW_ALIAS_SELECT_FAILURE" }),
+                B = Object.freeze({ REQUEST: "rweb/birdwatchNotes/FETCH_NOTE_REQUEST", SUCCESS: "rweb/birdwatchNotes/FETCH_NOTE_SUCCESS", FAILURE: "rweb/birdwatchNotes/FETCH_NOTE_FAILURE" }),
                 Z = Object.freeze({ REQUEST: "rweb/birdwatchNotes/PROFILE_ACKNOWLEDGE_EARN_OUT_REQUEST", SUCCESS: "rweb/birdwatchNotes/PROFILE_ACKNOWLEDGE_EARN_OUT_SUCCESS", FAILURE: "rweb/birdwatchNotes/PROFILE_ACKNOWLEDGE_EARN_OUT_FAILURE" }),
                 v = "rweb/birdwatchNotes/SAVE_FORM_DRAFT",
                 H = "rweb/birdwatchNotes/SAVE_BIRDWATCH_PATH",
@@ -688,7 +689,7 @@
                             const a = t.payload;
                             return { ...e, contributor: { ...e.contributor, notificationSettings: a?.notification_settings?.needs_your_help_frequency, ownAlias: a?.alias, canWriteNotes: a?.can_write_notes, enrollmentStatus: a?.user_enrollment, isTopWriter: a?.is_top_writer, showMobileNavigationSettings: a?.user_settings?.show_in_app_navigation } };
                         }
-                        case B.SUCCESS: {
+                        case P.SUCCESS: {
                             const a = t.payload;
                             return { ...e, contributor: { ...e.contributor, showAliasSelfSelect: a?.can_select && !a?.has_selected } };
                         }
@@ -696,16 +697,16 @@
                             const a = t.payload;
                             return { ...e, contributor: { ...e.contributor, aliasSelfSelectOptions: a } };
                         }
-                        case P.SUCCESS: {
+                        case B.SUCCESS: {
                             const a = t.payload,
                                 n = a?.result;
                             return n ? { ...e, notes: { ...e.notes, [n]: { ...a?.entities?.birdwatchNotes[n], fetchStatus: c.ZP.LOADED } } } : e;
                         }
-                        case P.REQUEST: {
+                        case B.REQUEST: {
                             const a = t.meta?.note_id;
                             return { ...e, notes: { ...e.notes, [a]: { ...(e.notes && e.notes[a]), fetchStatus: c.ZP.LOADING } } };
                         }
-                        case P.FAILURE: {
+                        case B.FAILURE: {
                             const a = t.meta?.note_id;
                             return { ...e, notes: { ...e.notes, [a]: { ...e.notes[a], fetchStatus: c.ZP.FAILED } } };
                         }
@@ -910,7 +911,7 @@
                                   (
                                       (e) =>
                                       (t, a, { api: n }) =>
-                                          (0, l._O)(t, { request: n.withEndpoint(r.Z).fetchOneNote, params: { note_id: e } })({ actionTypes: P, context: "FETCH_NOTE", meta: { note_id: e } })
+                                          (0, l._O)(t, { request: n.withEndpoint(r.Z).fetchOneNote, params: { note_id: e } })({ actionTypes: B, context: "FETCH_NOTE", meta: { note_id: e } })
                                   )(e),
                               );
                     },
@@ -937,7 +938,7 @@
                 Ne =
                     () =>
                     (e, t, { api: a }) =>
-                        (0, l._O)(e, { request: a.withEndpoint(r.Z).fetchAliasSelfSelectStatus, params: {} })({ actionTypes: B, context: "FETCH_SHOW_ALIAS_SELECT", meta: {} }),
+                        (0, l._O)(e, { request: a.withEndpoint(r.Z).fetchAliasSelfSelectStatus, params: {} })({ actionTypes: P, context: "FETCH_SHOW_ALIAS_SELECT", meta: {} }),
                 De =
                     () =>
                     (e, t, { api: a }) =>
@@ -973,11 +974,11 @@
                     (e) =>
                     (t, a, { api: n }) =>
                         (0, l._O)(t, { request: n.withEndpoint(r.Z).deleteRating, params: { note_id: e } })({ actionTypes: S, context: "DELETE_RATING", meta: { note_id: e } }),
-                Be =
+                Pe =
                     (e, t) =>
                     (a, n, { api: o }) =>
                         (0, l._O)(a, { request: o.withEndpoint(r.Z).admitUser, params: { admit_date: e, user_id: t } })({ actionTypes: f, context: "ADMIT_USER", meta: { admit_date: e, user_id: t } }),
-                Pe =
+                Be =
                     () =>
                     (e, t, { api: a }) =>
                         (0, l._O)(e, { request: a.withEndpoint(r.Z).removeUser, params: {} })({ actionTypes: R, context: "REMOVE_USER", meta: {} }),
@@ -1080,4 +1081,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Birdwatch-e019dbda.4a1326fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Birdwatch-e019dbda.01fc60fa.js.map

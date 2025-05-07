@@ -136,7 +136,7 @@
                 );
             }
             function u(e) {
-                if ("background" === c.a.currentState)
+                if ("background" === c.aB.currentState)
                     return (function ({ body: e, title: t }) {
                         if (
                             "granted" !==
@@ -375,7 +375,7 @@
                 c = (0, r.cn)((e) => e(o) || e(s));
         },
         838859: (e, t, n) => {
-            n.d(t, { AE: () => R, CN: () => D, Kn: () => N, az: () => Z, c: () => C });
+            n.d(t, { AE: () => R, CN: () => D, Kn: () => K, az: () => Z, c: () => C });
             n(136728);
             var r = n(202784),
                 s = n(565058),
@@ -405,7 +405,7 @@
                 k.useLayoutEffect(r.useCallback(() => (e && u.ZP.isChromeOS() ? t() : a.Z), [e, t]));
             }
             const I = (0, f.v)((e, t) => {
-                    const n = [t(E), t(M), t(j), t(P), t(L), t(T), t(O), t(Y), t(F), t(K), t(z), t(A)];
+                    const n = [t(E), t(M), t(j), t(P), t(L), t(T), t(O), t(Y), t(B), t(F), t(N), t(z)];
                     return () => {
                         n.forEach((e) => e());
                     };
@@ -507,21 +507,21 @@
                     const n = e(v.fx)?.deviceId;
                     return n && e(y).postMessage("mic", n), a.Z;
                 }),
-                F = (0, f.v)((e, t) => {
+                B = (0, f.v)((e, t) => {
                     if (!e(S.lY)) return a.Z;
                     const n = e(b.Dy);
                     return e(y).postMessage("micMuted", n), a.Z;
                 }),
-                K = (0, f.v)((e, t) => {
+                F = (0, f.v)((e, t) => {
                     if (!e(S.p_)) return a.Z;
                     return e(y).sub("reload", () => {
                         location.reload();
                     });
                 }),
-                N = (0, s.cn)(null, (e, t, n) => {
+                K = (0, s.cn)(null, (e, t, n) => {
                     e(S.lY) && e(y).postMessage("reload", { ttsToken: n });
                 }),
-                z = (0, f.v)((e, t) => {
+                N = (0, f.v)((e, t) => {
                     if (e(S.lY)) {
                         const t = e(w.lV);
                         return e(y).postMessage("volume", t), a.Z;
@@ -533,7 +533,7 @@
                     }
                     return a.Z;
                 }),
-                A = (0, f.v)((e, t) => {
+                z = (0, f.v)((e, t) => {
                     if (e(S.lY)) {
                         const t = e(g.fJ);
                         return e(y).postMessage("isJoined", t), a.Z;
@@ -701,7 +701,7 @@
                 });
         },
         509599: (e, t, n) => {
-            n.d(t, { C: () => T, CP: () => J, F$: () => z, FG: () => B, Go: () => F, Ix: () => C, PO: () => q, RS: () => N, Xn: () => G, ZO: () => O, cS: () => A, d3: () => E, jQ: () => W, jm: () => H, lw: () => D, of: () => V, p5: () => U, qH: () => X, qx: () => R, sJ: () => Y, tq: () => k, zX: () => Z });
+            n.d(t, { C: () => T, CP: () => J, F$: () => N, FG: () => A, Go: () => B, Ix: () => C, PO: () => q, RS: () => K, Xn: () => G, ZO: () => O, cS: () => z, d3: () => E, jQ: () => W, jm: () => H, lw: () => D, of: () => V, p5: () => U, qH: () => X, qx: () => R, sJ: () => Y, tq: () => k, zX: () => Z });
             n(571372);
             var r = n(202784),
                 s = n(961111),
@@ -814,7 +814,7 @@
                             .then((e) => e.chatToken);
                     }),
                 ),
-                F = (0, a.xu)((e) =>
+                B = (0, a.xu)((e) =>
                     (0, _.O)(async (t) => {
                         const n = t(S.yj);
                         if (t(x.MG)) {
@@ -827,25 +827,25 @@
                         return n;
                     }),
                 ),
-                K = (0, a.xu)((e) => (0, w.K9)((t) => t(F(e)).then((n) => n.getCallStatus(e, t(m.fU))))),
-                N = (0, i.cn)((e) => {
+                F = (0, a.xu)((e) => (0, w.K9)((t) => t(B(e)).then((n) => n.getCallStatus(e, t(m.fU))))),
+                K = (0, i.cn)((e) => {
                     const t = e(m.rm);
-                    return t ? (e(K(t).resolved)?.guest_sessions ?? []) : [];
+                    return t ? (e(F(t).resolved)?.guest_sessions ?? []) : [];
                 }),
-                z = (0, i.cn)((e) => new Set(e(N).map(({ twitter_user_id: e }) => e))),
-                A = (0, i.cn)((e) => {
+                N = (0, i.cn)((e) => new Set(e(K).map(({ twitter_user_id: e }) => e))),
+                z = (0, i.cn)((e) => {
                     const t = new Map();
                     return (
-                        e(N).forEach((e) => {
+                        e(K).forEach((e) => {
                             void 0 !== e.guest_participant_id && t.set(e.guest_participant_id, e);
                         }),
                         t
                     );
                 }),
-                B = (0, i.cn)((e) => {
+                A = (0, i.cn)((e) => {
                     const t = new Map();
                     return (
-                        e(N).forEach((e) => {
+                        e(K).forEach((e) => {
                             void 0 !== e.guest_user_id && t.set(e.guest_user_id, e);
                         }),
                         t
@@ -854,7 +854,7 @@
                 $ = (0, i.cn)((e) => {
                     const t = new Map();
                     return (
-                        e(N).forEach((e) => {
+                        e(K).forEach((e) => {
                             t.set(e.session_uuid, e);
                         }),
                         t
@@ -862,12 +862,12 @@
                 }),
                 q = (0, a.xu)((e) => (0, i.cn)((t) => t($).get(e)?.guest_participant_id)),
                 U = (0, i.cn)((e) => {
-                    const t = e(N).find((t) => t.guest_user_id === e(S.t9));
+                    const t = e(K).find((t) => t.guest_user_id === e(S.t9));
                     return t?.is_employee ?? !1;
                 }),
                 J = (0, a.xu)((e) =>
                     (0, w.K9)((t) =>
-                        t(K(e)).then(({ guest_sessions: e }) => {
+                        t(F(e)).then(({ guest_sessions: e }) => {
                             const n = (0, h._h)(t(v.qc).getState());
                             if (e) return (0, d.Z)(e, ({ session_uuid: e, twitter_user_id: t }) => (t === n ? e : void 0));
                         }),
@@ -880,7 +880,7 @@
                 }),
                 V = (e) => {
                     const t = (0, c.Dv)(m.lR),
-                        n = (0, c.b9)(K(e)),
+                        n = (0, c.b9)(F(e)),
                         s = !!(0, c.Dv)(k(e)),
                         o = (0, c.oR)();
                     r.useEffect(() => {
@@ -1073,4 +1073,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-c977f3f0.54f11f8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-c977f3f0.acd80c2a.js.map

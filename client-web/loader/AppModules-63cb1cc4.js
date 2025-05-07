@@ -3,7 +3,7 @@
     ["loader.AppModules-63cb1cc4", "loader.directMessagesData-63cb1cc4"],
     {
         922481: (e, t, r) => {
-            r.r(t), r.d(t, { PromptStatus: () => f, SET_PROMPT_STATUS: () => S, default: () => w, fetchLoggedOutNotificationsDataTypes: () => h, loadLoggedOutNotificationData: () => F, pushSubscribeLoggedOut: () => R, resetLoggedOutNotificationState: () => N, selectArkosePromptStatus: () => C, selectBrowserPromptStatus: () => I, selectFetchStatus: () => O, selectInAppPromptStatus: () => b, selectIsEligibleForPushPrompt: () => v, selectLastSeenTimeStamp: () => U, selectPushNotificationsPromptIsSeen: () => A, setLastSeenTimeStamp: () => P, setPromptStatus: () => E, updatePromptStatus: () => D, verifyArkoseTokenAndSavePushToken: () => k, verifyArkoseTokenAndSavePushTokenActionTypes: () => g });
+            r.r(t), r.d(t, { PromptStatus: () => f, SET_PROMPT_STATUS: () => S, default: () => w, fetchLoggedOutNotificationsDataTypes: () => h, loadLoggedOutNotificationData: () => F, pushSubscribeLoggedOut: () => R, resetLoggedOutNotificationState: () => N, selectArkosePromptStatus: () => C, selectBrowserPromptStatus: () => I, selectFetchStatus: () => O, selectInAppPromptStatus: () => y, selectIsEligibleForPushPrompt: () => v, selectLastSeenTimeStamp: () => U, selectPushNotificationsPromptIsSeen: () => A, setLastSeenTimeStamp: () => P, setPromptStatus: () => E, updatePromptStatus: () => D, verifyArkoseTokenAndSavePushToken: () => k, verifyArkoseTokenAndSavePushTokenActionTypes: () => g });
             r(571372);
             var i = r(6613),
                 o = r(689048),
@@ -43,13 +43,13 @@
                 }
                 return e;
             }
-            const y = (e) => ({ type: h.SUCCESS, payload: e }),
-                b = (e) => e[p].inAppPrompt,
+            const b = (e) => ({ type: h.SUCCESS, payload: e }),
+                y = (e) => e[p].inAppPrompt,
                 I = (e) => e[p].browserPrompt,
                 C = (e) => e[p].arkosePrompt,
                 U = (e) => e[p].lastSeenTimestamp,
                 O = (e) => e[p].fetchStatus,
-                A = (e) => b(e) !== f.NOT_SEEN,
+                A = (e) => y(e) !== f.NOT_SEEN,
                 v = (e) => !A(e),
                 F =
                     () =>
@@ -68,11 +68,11 @@
                                           }
                                           return !1;
                                       })({ featureSwitches: i, lastSeenTimestamp: t.lastSeenTimestamp, browserPrompt: t.browserPrompt })
-                                          ? e(y(T))
-                                          : e(y(t)),
+                                          ? e(b(T))
+                                          : e(b(t)),
                                   )
                                   .catch(() => e({ type: h.FAILURE }))),
-                N = () => (e, t) => e(y(T)),
+                N = () => (e, t) => e(b(T)),
                 D =
                     (e, t) =>
                     (r, i, { devicePersistence: o }) => {
@@ -262,8 +262,8 @@
                 P = r(221562),
                 T = r(755296),
                 w = r(946208),
-                y = r(540387),
-                b = r(653798),
+                b = r(540387),
+                y = r(653798),
                 I = r(499627),
                 C = r(917799),
                 U = r(390387),
@@ -328,8 +328,8 @@
             function j(e, t) {
                 return (r, i, { featureSwitches: o, relayEnvironment: a }) => {
                     const s = Array.from(e, (e) => {
-                            if ((0, y.Wv)(e)) {
-                                const r = new y.ZP(e, t.isAmplify);
+                            if ((0, b.Wv)(e)) {
+                                const r = new b.ZP(e, t.isAmplify);
                                 if ((0, g.TO)(e)) {
                                     const e = o.isTrue("responsive_web_hevc_upload_preview_enabled") && o.isTrue("responsive_web_composer_configurable_video_player_enabled");
                                     return r.withDimensionsAndOrientation(e);
@@ -339,7 +339,7 @@
                             return (0, w.h_)(e) ? Promise.resolve(new w.ZP(e)) : new d.ZP(e).withDimensionsAndOrientation();
                         }),
                         c = r((e, t, { relayEnvironment: r }) =>
-                            n()(r, b.S, {}, { fetchPolicy: "store-or-network" })
+                            n()(r, y.S, {}, { fetchPolicy: "store-or-network" })
                                 .toPromise()
                                 .then((e) => {
                                     const t = e?.viewer?.user_results?.result;
@@ -359,13 +359,13 @@
                                                     const p = o.isTrue("responsive_web_media_upload_metrics_enabled");
                                                     let m;
                                                     t.location && (m = Se(t.location, e, !1, { featureSwitches: o, userClaims: a }));
-                                                    const S = e instanceof y.ZP ? e.duration : void 0,
+                                                    const S = e instanceof b.ZP ? e.duration : void 0,
                                                         _ = e instanceof d.ZP ? e.orientation : void 0,
                                                         f = p && m ? new P.ZP({ isExternal: !1, mediaCategory: m, videoDuration: S }, c) : void 0,
                                                         h = o.isTrue("responsive_web_media_upload_md5_hashing_enabled") && e.isImage && e instanceof d.ZP,
                                                         E = o.getNumberValue("responsive_web_media_upload_target_jpg_pixels_per_byte");
                                                     return (
-                                                        e instanceof y.ZP &&
+                                                        e instanceof b.ZP &&
                                                             (function (e) {
                                                                 const { video: t } = e;
                                                                 t &&
@@ -457,7 +457,7 @@
                                 const e = Error("Exceeds size limit");
                                 return ([e.type, e.code, e.limit] = ["maxsize", S.isGif ? g.BW.GIF_IS_TOO_LARGE : g.BW.VIDEO_IS_TOO_LARGE, l]), Promise.reject(e);
                             }
-                            if (S.isVideo && S instanceof y.ZP && S.duration > f) {
+                            if (S.isVideo && S instanceof b.ZP && S.duration > f) {
                                 const e = Error("Exceeds duration limit");
                                 return ([e.type, e.code, e.limit] = ["maxduration", g.ff.VIDEO_IS_TOO_LONG, f]), Promise.reject(e);
                             }
@@ -577,7 +577,7 @@
                                                                   if (i.mediaFile?.isGif && !r && s === g.Tz.INVALID_MEDIA_CODE) p?.amendUpload({ pauseBeforeFinalize: !1 }), o({ id: d, uploadProgress: 0, uploading: !1, uploadFailed: !1, uploadPromise: void 0 }), a(i, !0).then(e).catch(m);
                                                                   else {
                                                                       c?.abort(), o({ id: d, uploadProgress: 0, uploading: !1, uploadFailed: !0, uploadError: { code: s, message: f, detail_message: n, maxSizeBytes: l }, uploadPromise: void 0 });
-                                                                      const e = new L(f ? `${f}` : `Media upload failed [Error code: ${s}]${_ ? ` ${_}` : ""}`, { code: s, type: Z, isGif: !!i.externalMediaDetails || (i.mediaFile && i.mediaFile.isGif), isImage: i.mediaFile && i.mediaFile.isImage, isVideo: i.mediaFile && i.mediaFile instanceof y.ZP && i.mediaFile.isVideo }),
+                                                                      const e = new L(f ? `${f}` : `Media upload failed [Error code: ${s}]${_ ? ` ${_}` : ""}`, { code: s, type: Z, isGif: !!i.externalMediaDetails || (i.mediaFile && i.mediaFile.isGif), isImage: i.mediaFile && i.mediaFile.isImage, isVideo: i.mediaFile && i.mediaFile instanceof b.ZP && i.mediaFile.isVideo }),
                                                                           t = s === S.d.CANCELED ? P.Uk.Cancel : P.Uk.Failure;
                                                                       u?.setMetadata({ reason: { name: h, message: f, code: s } }), u?.reportOperationComplete([P.BX.Full, P.BX.SruUpload, P.BX.UploadSubmitUntilSruFinish], t), m(e);
                                                                   }
@@ -590,7 +590,7 @@
                                                                   p = c && c.size > 1e8 && t.isTrue("rweb_media_multi_requests_enabled"),
                                                                   m = _e(i, r, { featureSwitches: t, userClaims: n }),
                                                                   S = m ? `&media_category=${m}` : "";
-                                                              u?.reportOperationStart(P.BX.SruUpload), i.uploader?.upload({ success: _, progress: f, pause: h, error: E, extraInitParams: e + S, extraFinalizeParams: l ? `&original_md5=${l}` : void 0, trimRanges: ue(i), pauseBeforeFinalize: o, withMultiRequests: p, enable_1080p_variant: !d || a, mediaItem: i });
+                                                              u?.reportOperationStart(P.BX.SruUpload), i.uploader?.upload({ success: _, progress: f, pause: h, error: E, extraInitParams: e + S, extraFinalizeParams: l ? `&original_md5=${l}` : void 0, trimRanges: ue(i), pauseBeforeFinalize: o, withMultiRequests: p, withMultiRequestsDefaultPoolSize: t.getNumberValue("rweb_media_multi_requests_default_pool_size", 1), enable_1080p_variant: !d || a, mediaItem: i });
                                                           }
                                                       });
                                                   return o({ id: d, uploading: !0, uploadFailed: !1, uploadProgress: 0, uploadPromise: m }), m;
@@ -690,7 +690,7 @@
             });
         },
         365265: (e, t, r) => {
-            r.d(t, { $B: () => h, F$: () => g, Ne: () => y, RC: () => w, VR: () => E, dF: () => T, h9: () => f, hu: () => I, pC: () => P, qB: () => b, tF: () => _, v1: () => C, xN: () => U });
+            r.d(t, { $B: () => h, F$: () => g, Ne: () => b, RC: () => w, VR: () => E, dF: () => T, h9: () => f, hu: () => I, pC: () => P, qB: () => y, tF: () => _, v1: () => C, xN: () => U });
             var i = r(372551),
                 o = r(147595),
                 a = r(499627),
@@ -729,14 +729,14 @@
                     const t = e[c].switchTier;
                     return t?.fetchStatus || n.ZP.NONE;
                 },
-                y =
+                b =
                     (e) =>
                     (t, r, { api: o }) => {
                         const a = (0, s._O)(t, { params: { id: e }, request: o.withEndpoint(i.Z).fetchSubscriptionProductDetails }),
                             c = _(r(), e);
                         return c !== n.ZP.NONE && c !== n.ZP.FAILED ? Promise.resolve() : a({ actionTypes: d, context: "FETCH_SUBSCRIPTION_PRODUCT_DETAILS", meta: { id: e } });
                     },
-                b =
+                y =
                     (e) =>
                     (t, r, { api: o }) => {
                         const a = (0, s._O)(t, { params: { external_product_id: e.externalProductId, success_url: e.successUrl, cancel_url: e.cancelUrl, external_price_id: e.externalPriceId, promotion_data: e.promotion_data }, request: o.withEndpoint(i.Z).fetchSubscriptionProductCheckoutUrl }),
@@ -918,7 +918,7 @@
                                     break;
                                 case "challenge-complete": {
                                     f.Z.completeChallenge(v, ee, q, k, x), D.current?.end({ endMessage: `mobile key:${k}, web key:${x}, challenge type: ${q}` }), (D.current = null);
-                                    const t = `${y}?access_token=${r.payload.sessionToken}`,
+                                    const t = `${b}?access_token=${r.payload.sessionToken}`,
                                         i = r.payload.sessionToken;
                                     B
                                         ? e
@@ -952,7 +952,7 @@
                     }, []);
                 const ie = i.useRef(() => {});
                 (ie.current = function () {
-                    f.Z.loadIframeFailed(v, ee, k, x), V ? u.Z.openApp(b) : r(b);
+                    f.Z.loadIframeFailed(v, ee, k, x), V ? u.Z.openApp(y) : r(y);
                 }),
                     i.useEffect(() => {
                         if (E) return;
@@ -1001,8 +1001,8 @@
                     if (e) return e;
                 }
             }
-            const y = "twitter://onboarding/web_modal/next_link",
-                b = "twitter://onboarding/web_modal/fail_link",
+            const b = "twitter://onboarding/web_modal/next_link",
+                y = "twitter://onboarding/web_modal/fail_link",
                 I = 327,
                 C = 558,
                 U = 500,
@@ -1016,4 +1016,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.AppModules-63cb1cc4.2cf4595a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.AppModules-63cb1cc4.e76cd5ba.js.map

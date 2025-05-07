@@ -13,7 +13,7 @@
                 c = a(774654),
                 o = a(952188),
                 p = a(530568),
-                d = a(782394);
+                d = a(109808);
             function u() {
                 const e = c.ZM.useVisibilityPercent(),
                     t = c.ZM.useTopNavHeight(),
@@ -66,4 +66,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.Spacebar.08ac034a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.Spacebar.bc18b26a.js.map

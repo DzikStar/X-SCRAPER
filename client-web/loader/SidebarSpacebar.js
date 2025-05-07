@@ -12,7 +12,7 @@
                 c = r(399398),
                 d = r(771099),
                 l = r(530568),
-                u = r(782394);
+                u = r(109808);
             const h = s().d961a4a0,
                 m = s().d228a9a0;
             function g({ maxThreads: e = 5 }) {
@@ -53,4 +53,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.SidebarSpacebar.d516a53a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.SidebarSpacebar.5a8ed19a.js.map
