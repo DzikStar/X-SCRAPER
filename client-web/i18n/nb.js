@@ -7044,12 +7044,14 @@
                 t("f0ad5cc8", "år"),
                 t("a0dc6e4c", "Ikke tilgjengelig nå"),
                 t("jd8b2e66", "Abonner og betal"),
+                t("ca784c0c", "Subscribe & pay with Apple"),
                 t("aa5df29f", function (e) {
                     return "" + e.oldPrice;
                 }),
                 t("g1c4f7a1", function (e) {
                     return "" + e.oldPrice;
                 }),
+                t("afd61c76", "Or, save up to 30%"),
                 t("i7fbacc4", "Bytt mellom de tilgjengelige abonnementsnivåene"),
                 t("c9cc122b", function (e) {
                     return e.feature + " er inkludert i " + e.title;
@@ -7848,9 +7850,7 @@
                 t("id720215", "Rekruttering"),
                 t("dd59f146", "Annonsekonto med jobbpromotering"),
                 t("e7e36818", "Annonsekontoer kvalifiserer til jobbpromotering når de er fullt konfigurert med en finansieringskilde."),
-                t("c28566e0", "Annonsekonto"),
-                t("c80160d3", "Annonsering"),
-                t("ff0edac0", "Er du sikker på at du vil avslutte abonnementet?");
+                t("c28566e0", "Annonsekonto");
             function a(e, n) {
                 for (var r = 0; r < n.length; r++) {
                     var t = n[r];
@@ -7889,7 +7889,9 @@
                     d(e, n)
                 );
             }
-            t("h2ac0348", "Nei, gå tilbake"),
+            t("c80160d3", "Annonsering"),
+                t("ff0edac0", "Er du sikker på at du vil avslutte abonnementet?"),
+                t("h2ac0348", "Nei, gå tilbake"),
                 t("dbf9667e", "Jeg er sikker"),
                 t("j7592572", "U-sving"),
                 t("ee778942", "Trafikklys"),
@@ -8908,16 +8910,16 @@
                 t("d6f2056f", function (e) {
                     return e.count + " lytter(e)";
                 }),
-                t("jbc5f47a", "Områdeforankring"),
-                t("gfe2830f", function (e) {
-                    return e.count + " an" + i(e.count, "nen", "dre");
-                }),
+                t("jbc5f47a", "Områdeforankring");
+            t("gfe2830f", function (e) {
+                return e.count + " an" + i(e.count, "nen", "dre");
+            }),
                 t("dbeae6cf", function (e) {
                     return e.count + " an" + i(e.count, "nen lytter", "dre lyttere");
-                });
-            t("d2543d97", function (e) {
-                return "+" + e.count;
-            }),
+                }),
+                t("d2543d97", function (e) {
+                    return "+" + e.count;
+                }),
                 t("dc718e53", function (e) {
                     return "+ " + e.count + " an" + i(e.count, "nen", "dre");
                 }),
@@ -13190,4 +13192,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nb.686b90da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nb.459d76aa.js.map

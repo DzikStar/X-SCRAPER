@@ -196,8 +196,8 @@
                 k,
                 p,
                 _,
-                F,
                 S,
+                F,
                 f,
                 K = {
                     fragment: {
@@ -270,6 +270,8 @@
                                                     (u = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }),
                                                     (o = { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null }),
                                                     { alias: null, args: null, kind: "ScalarField", name: "amount_local_micro", storageKey: null },
+                                                    { alias: null, args: null, kind: "ScalarField", name: "base_amount_micro", storageKey: null },
+                                                    { alias: null, args: null, kind: "ScalarField", name: "total_fees_micro", storageKey: null },
                                                     { alias: null, args: null, kind: "ScalarField", name: "currency", storageKey: null },
                                                     { alias: null, args: null, kind: "ScalarField", name: "product_code", storageKey: null },
                                                     { alias: null, args: null, kind: "ScalarField", name: "reason_code", storageKey: null },
@@ -304,7 +306,7 @@
                                                                         kind: "LinkedField",
                                                                         name: "receiver_results",
                                                                         plural: !1,
-                                                                        selections: (F = [
+                                                                        selections: (S = [
                                                                             {
                                                                                 alias: null,
                                                                                 args: null,
@@ -335,7 +337,7 @@
                                                                         ]),
                                                                         storageKey: null,
                                                                     },
-                                                                    { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "sender_results", plural: !1, selections: F, storageKey: null },
+                                                                    { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "sender_results", plural: !1, selections: S, storageKey: null },
                                                                 ],
                                                                 type: "XPaymentsTransferDetails",
                                                                 abstractKey: null,
@@ -343,7 +345,7 @@
                                                             {
                                                                 kind: "InlineFragment",
                                                                 selections: (f = [
-                                                                    (S = {
+                                                                    (F = {
                                                                         alias: null,
                                                                         args: null,
                                                                         concreteType: "XPaymentsMerchantDetails",
@@ -393,8 +395,8 @@
                                                                 abstractKey: null,
                                                             },
                                                             { kind: "InlineFragment", selections: f, type: "XPaymentsBankingWithdrawalDetails", abstractKey: null },
-                                                            { kind: "InlineFragment", selections: [S, y], type: "XPaymentsPaymentDetails", abstractKey: null },
-                                                            { kind: "InlineFragment", selections: [S, y, { alias: null, args: null, kind: "ScalarField", name: "reference_transaction_id", storageKey: null }], type: "XPaymentsRefundDetails", abstractKey: null },
+                                                            { kind: "InlineFragment", selections: [F, y], type: "XPaymentsPaymentDetails", abstractKey: null },
+                                                            { kind: "InlineFragment", selections: [F, y, { alias: null, args: null, kind: "ScalarField", name: "reference_transaction_id", storageKey: null }], type: "XPaymentsRefundDetails", abstractKey: null },
                                                         ],
                                                         storageKey: null,
                                                     },
@@ -416,7 +418,7 @@
                             { alias: null, args: d, filters: ["s"], handle: "slice", key: "useActionableItemsQuery_TransactionActions_slice", kind: "LinkedHandle", name: "get_payments_customer_actions" },
                         ],
                     },
-                    params: { id: "0mvm7cq-ekjCFUEKyAiVEg", metadata: { sliceInfoPath: ["get_payments_customer_actions", "slice_info"] }, name: "useActionableItemsQuery", operationKind: "query", text: null },
+                    params: { id: "av6L4O_Rane45GvRntf45w", metadata: { sliceInfoPath: ["get_payments_customer_actions", "slice_info"] }, name: "useActionableItemsQuery", operationKind: "query", text: null },
                 };
             K.hash = "a6a8f048d1caef1c671f17a2b72cb546";
             const h = K;
@@ -883,4 +885,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-17a1c92a.26d6163a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-17a1c92a.87b85b9a.js.map

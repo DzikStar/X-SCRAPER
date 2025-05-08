@@ -1709,7 +1709,7 @@
                 n("d78131b9", function (e) {
                     return "Добавяне/премахване на @" + e.screenName + " от списъци";
                 }),
-                n("b3b642fc", "Why this post?"),
+                n("b3b642fc", "Защо тази публикация?"),
                 n("fb4ee11c", "Защо тази реклама?"),
                 n("ad50e7d9", function (e) {
                     return "Преглед на статистика за " + e.entity;
@@ -7044,12 +7044,14 @@
                 n("f0ad5cc8", "година"),
                 n("a0dc6e4c", "В момента не е налично"),
                 n("jd8b2e66", "Абониране и плащане"),
+                n("ca784c0c", "Subscribe & pay with Apple"),
                 n("aa5df29f", function (e) {
                     return "" + e.oldPrice;
                 }),
                 n("g1c4f7a1", function (e) {
                     return "" + e.oldPrice;
                 }),
+                n("afd61c76", "Or, save up to 30%"),
                 n("i7fbacc4", "Превключване между налични нива на абонамент"),
                 n("c9cc122b", function (e) {
                     return e.feature + " е включена в " + e.title;
@@ -7848,9 +7850,7 @@
                 n("id720215", "наемане"),
                 n("dd59f146", "Профил за реклама за рекламиране на работна позиция"),
                 n("e7e36818", "Профилите за реклама отговарят на условията за рекламиране на работни позиции, когато за тях е посочен източник на финансиране."),
-                n("c28566e0", "Профил за реклама"),
-                n("c80160d3", "рекламиране"),
-                n("ff0edac0", "Наистина ли искаш да анулираш абонамента си?");
+                n("c28566e0", "Профил за реклама");
             function f(e, c) {
                 for (var a = 0; a < c.length; a++) {
                     var n = c[a];
@@ -7889,7 +7889,9 @@
                     r(e, c)
                 );
             }
-            n("h2ac0348", "Не, върни ме обратно"),
+            n("c80160d3", "рекламиране"),
+                n("ff0edac0", "Наистина ли искаш да анулираш абонамента си?"),
+                n("h2ac0348", "Не, върни ме обратно"),
                 n("dbf9667e", "Искам"),
                 n("j7592572", "Обрат"),
                 n("ee778942", "Светофари"),
@@ -8908,16 +8910,16 @@
                 n("d6f2056f", function (e) {
                     return e.count + " се включи" + t(e.count, "", "ха");
                 }),
-                n("jbc5f47a", "Прикрепена лента за Зали"),
-                n("gfe2830f", function (e) {
-                    return e.count + " " + t(e.count, "човек", "души");
-                }),
+                n("jbc5f47a", "Прикрепена лента за Зали");
+            n("gfe2830f", function (e) {
+                return e.count + " " + t(e.count, "човек", "души");
+            }),
                 n("dbeae6cf", function (e) {
                     return "още " + e.count + " слушател" + t(e.count, "", "и");
-                });
-            n("d2543d97", function (e) {
-                return "+" + e.count;
-            }),
+                }),
+                n("d2543d97", function (e) {
+                    return "+" + e.count;
+                }),
                 n("dc718e53", function (e) {
                     return "+" + e.count + " " + t(e.count, "човек", "души");
                 }),
@@ -13190,4 +13192,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/bg.9104c9fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/bg.19f7808a.js.map

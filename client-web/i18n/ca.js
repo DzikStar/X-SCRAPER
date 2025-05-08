@@ -7045,12 +7045,14 @@
                 t("f0ad5cc8", "any"),
                 t("a0dc6e4c", "Actualment no està disponible"),
                 t("jd8b2e66", "Subscriu-te i paga"),
+                t("ca784c0c", "Subscribe & pay with Apple"),
                 t("aa5df29f", function (e) {
                     return "" + e.oldPrice;
                 }),
                 t("g1c4f7a1", function (e) {
                     return "" + e.oldPrice;
                 }),
+                t("afd61c76", "Or, save up to 30%"),
                 t("i7fbacc4", "Alterna entre els nivells de subscripció disponibles"),
                 t("c9cc122b", function (e) {
                     return "La característica " + e.feature + " està inclosa a " + e.title;
@@ -7849,9 +7851,7 @@
                 t("id720215", "Contractació"),
                 t("dd59f146", "Compte d'anuncis per patrocinar feines"),
                 t("e7e36818", "Els comptes publicitaris poden promocionar feines quan s'han configurat completament amb una font financera."),
-                t("c28566e0", "Afegeix el compte"),
-                t("c80160d3", "Publicitat"),
-                t("ff0edac0", "Segur que vols cancel·lar la subscripció?");
+                t("c28566e0", "Afegeix el compte");
             function s(e, a) {
                 for (var i = 0; i < a.length; i++) {
                     var t = a[i];
@@ -7890,7 +7890,9 @@
                     n(e, a)
                 );
             }
-            t("h2ac0348", "No, vull tornar enrere"),
+            t("c80160d3", "Publicitat"),
+                t("ff0edac0", "Segur que vols cancel·lar la subscripció?"),
+                t("h2ac0348", "No, vull tornar enrere"),
                 t("dbf9667e", "N'estic segur"),
                 t("j7592572", "Gir de 180 graus"),
                 t("ee778942", "Semàfors"),
@@ -8909,16 +8911,16 @@
                 t("d6f2056f", function (e) {
                     return e.count + " estan escoltant";
                 }),
-                t("jbc5f47a", "Acoblament dels Espais"),
-                t("gfe2830f", function (e) {
-                    return e.count + " usuari" + r(e.count, "", "s") + " més";
-                }),
+                t("jbc5f47a", "Acoblament dels Espais");
+            t("gfe2830f", function (e) {
+                return e.count + " usuari" + r(e.count, "", "s") + " més";
+            }),
                 t("dbeae6cf", function (e) {
                     return e.count + " oient" + r(e.count, "", "s") + " més";
-                });
-            t("d2543d97", function (e) {
-                return "+" + e.count;
-            }),
+                }),
+                t("d2543d97", function (e) {
+                    return "+" + e.count;
+                }),
                 t("dc718e53", function (e) {
                     return "+" + e.count + " usuari" + r(e.count, "", "s") + " més";
                 }),
@@ -13192,4 +13194,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ca.38fa36fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ca.ec78dcfa.js.map

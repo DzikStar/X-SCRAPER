@@ -7048,12 +7048,14 @@
                 n("f0ad5cc8", "년"),
                 n("a0dc6e4c", "현재 이용할 수 없음"),
                 n("jd8b2e66", "구독 및 결제"),
+                n("ca784c0c", "Subscribe & pay with Apple"),
                 n("aa5df29f", function (e) {
                     return "" + e.oldPrice;
                 }),
                 n("g1c4f7a1", function (e) {
                     return "" + e.oldPrice;
                 }),
+                n("afd61c76", "Or, save up to 30%"),
                 n("i7fbacc4", "이용 가능한 구독 등급 간에 전환하기"),
                 n("c9cc122b", function (e) {
                     return e.title + "에는 " + e.feature + " 기능이 포함되어 있습니다";
@@ -7852,9 +7854,7 @@
                 n("id720215", "채용"),
                 n("dd59f146", "채용 프로모션 광고 계정"),
                 n("e7e36818", "광고 계정은 자금 출처가 완전히 설정된 경우에만 채용 공고를 프로모션할 수 있습니다."),
-                n("c28566e0", "광고 계정"),
-                n("c80160d3", "광고"),
-                n("ff0edac0", "구독을 취소하시겠어요?");
+                n("c28566e0", "광고 계정");
             function r(e, c) {
                 for (var a = 0; a < c.length; a++) {
                     var n = c[a];
@@ -7893,7 +7893,9 @@
                     d(e, c)
                 );
             }
-            n("h2ac0348", "아니요, 돌아갑니다"),
+            n("c80160d3", "광고"),
+                n("ff0edac0", "구독을 취소하시겠어요?"),
+                n("h2ac0348", "아니요, 돌아갑니다"),
                 n("dbf9667e", "해지합니다"),
                 n("j7592572", "되돌아가기"),
                 n("ee778942", "교통 신호등"),
@@ -8912,16 +8914,16 @@
                 n("d6f2056f", function (e) {
                     return e.count + " 청취";
                 }),
-                n("jbc5f47a", "스페이스 도킹"),
-                n("gfe2830f", function (e) {
-                    return "기타 " + e.count + "명";
-                }),
+                n("jbc5f47a", "스페이스 도킹");
+            n("gfe2830f", function (e) {
+                return "기타 " + e.count + "명";
+            }),
                 n("dbeae6cf", function (e) {
                     return "다른 청취자 " + e.count + "명";
-                });
-            n("d2543d97", function (e) {
-                return "+" + e.count;
-            }),
+                }),
+                n("d2543d97", function (e) {
+                    return "+" + e.count;
+                }),
                 n("dc718e53", function (e) {
                     return "+기타 " + e.count + "명";
                 }),
@@ -13210,4 +13212,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ko.a514a94a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ko.351e1e9a.js.map

@@ -7044,12 +7044,14 @@
                 f("f0ad5cc8", "年"),
                 f("a0dc6e4c", "当前不可用"),
                 f("jd8b2e66", "订阅并支付"),
+                f("ca784c0c", "Subscribe & pay with Apple"),
                 f("aa5df29f", function (e) {
                     return "" + e.oldPrice;
                 }),
                 f("g1c4f7a1", function (e) {
                     return "" + e.oldPrice;
                 }),
+                f("afd61c76", "Or, save up to 30%"),
                 f("i7fbacc4", "在可选订购级别之间切换"),
                 f("c9cc122b", function (e) {
                     return e.feature + " 包括在 " + e.title + " 中";
@@ -7848,9 +7850,7 @@
                 f("id720215", "招聘"),
                 f("dd59f146", "职位推广广告账号"),
                 f("e7e36818", "在完全设置资金来源后，广告账号才有资格进行职位推广。"),
-                f("c28566e0", "广告账号"),
-                f("c80160d3", "广告"),
-                f("ff0edac0", "你确定要取消订阅服务吗？");
+                f("c28566e0", "广告账号");
             function t(e, c) {
                 for (var a = 0; a < c.length; a++) {
                     var f = c[a];
@@ -7889,7 +7889,9 @@
                     r(e, c)
                 );
             }
-            f("h2ac0348", "不，我要返回"),
+            f("c80160d3", "广告"),
+                f("ff0edac0", "你确定要取消订阅服务吗？"),
+                f("h2ac0348", "不，我要返回"),
                 f("dbf9667e", "我确定"),
                 f("j7592572", "U 形弯"),
                 f("ee778942", "交通灯"),
@@ -8908,16 +8910,16 @@
                 f("d6f2056f", function (e) {
                     return e.count + " 已收听";
                 }),
-                f("jbc5f47a", "空间剪短"),
-                f("gfe2830f", function (e) {
-                    return "另外 " + e.count + " 个人";
-                }),
+                f("jbc5f47a", "空间剪短");
+            f("gfe2830f", function (e) {
+                return "另外 " + e.count + " 个人";
+            }),
                 f("dbeae6cf", function (e) {
                     return e.count + " 位其他听众";
-                });
-            f("d2543d97", function (e) {
-                return "+" + e.count;
-            }),
+                }),
+                f("d2543d97", function (e) {
+                    return "+" + e.count;
+                }),
                 f("dc718e53", function (e) {
                     return "+另外 " + e.count + " 个人";
                 }),
@@ -13206,4 +13208,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh.bed2443a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh.96e2422a.js.map

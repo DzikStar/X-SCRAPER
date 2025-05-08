@@ -7044,12 +7044,14 @@
                 i("f0ad5cc8", "tahun"),
                 i("a0dc6e4c", "Saat ini tidak tersedia"),
                 i("jd8b2e66", "Berlangganan & bayar"),
+                i("ca784c0c", "Subscribe & pay with Apple"),
                 i("aa5df29f", function (a) {
                     return "" + a.oldPrice;
                 }),
                 i("g1c4f7a1", function (a) {
                     return "" + a.oldPrice;
                 }),
+                i("afd61c76", "Or, save up to 30%"),
                 i("i7fbacc4", "Beralih antara tingkatan langganan yang tersedia"),
                 i("c9cc122b", function (a) {
                     return a.feature + " disertakan dalam " + a.title;
@@ -7848,9 +7850,7 @@
                 i("id720215", "Hiring"),
                 i("dd59f146", "Akun iklan promosi lowongan kerja"),
                 i("e7e36818", "Akun iklan memenuhi syarat untuk mempromosikan lowongan kerja ketika sudah sepenuhnya menyiapkan sumber pendanaan."),
-                i("c28566e0", "Akun Iklan"),
-                i("c80160d3", "Iklan"),
-                i("ff0edac0", "Ingin membatalkan langganan?");
+                i("c28566e0", "Akun Iklan");
             function r(a, n) {
                 for (var e = 0; e < n.length; e++) {
                     var i = n[e];
@@ -7889,7 +7889,9 @@
                     d(a, n)
                 );
             }
-            i("h2ac0348", "Tidak jadi"),
+            i("c80160d3", "Iklan"),
+                i("ff0edac0", "Ingin membatalkan langganan?"),
+                i("h2ac0348", "Tidak jadi"),
                 i("dbf9667e", "Batalkan saja"),
                 i("j7592572", "Putar Balik"),
                 i("ee778942", "Lampu lalu lintas"),
@@ -8908,16 +8910,16 @@
                 i("d6f2056f", function (a) {
                     return a.count + " mendengarkan";
                 }),
-                i("jbc5f47a", "Sematan Spaces"),
-                i("gfe2830f", function (a) {
-                    return a.count + " lainnya";
-                }),
+                i("jbc5f47a", "Sematan Spaces");
+            i("gfe2830f", function (a) {
+                return a.count + " lainnya";
+            }),
                 i("dbeae6cf", function (a) {
                     return a.count + " pendengar lainnya";
-                });
-            i("d2543d97", function (a) {
-                return "+" + a.count;
-            }),
+                }),
+                i("d2543d97", function (a) {
+                    return "+" + a.count;
+                }),
                 i("dc718e53", function (a) {
                     return "+" + a.count + " lainnya";
                 }),
@@ -13190,4 +13192,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/id.b865a73a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/id.42470dda.js.map

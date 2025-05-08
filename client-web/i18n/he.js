@@ -7054,12 +7054,14 @@
                 n("f0ad5cc8", "שנה"),
                 n("a0dc6e4c", "לא זמין כעת"),
                 n("jd8b2e66", "להרשמה ותשלום"),
+                n("ca784c0c", "Subscribe & pay with Apple"),
                 n("aa5df29f", function (e) {
                     return "" + e.oldPrice;
                 }),
                 n("g1c4f7a1", function (e) {
                     return "" + e.oldPrice;
                 }),
+                n("afd61c76", "Or, save up to 30%"),
                 n("i7fbacc4", "אפשר להחליף בין דרגות מינוי"),
                 n("c9cc122b", function (e) {
                     return e.feature + " כלול ב-" + e.title;
@@ -7858,9 +7860,7 @@
                 n("id720215", "גיוס"),
                 n("dd59f146", "קידום משרות בחשבון מודעות פרסום"),
                 n("e7e36818", "חשבונות מודעות פרסום עומדים בתנאים לקידום משרות לאחר הוספה של מקור מימון."),
-                n("c28566e0", "חשבון מודעות פרסום"),
-                n("c80160d3", "פרסום"),
-                n("ff0edac0", "האם אתה בטוח שברצונך לבטל את המנוי שלך?");
+                n("c28566e0", "חשבון מודעות פרסום");
             function f(e, a) {
                 for (var c = 0; c < a.length; c++) {
                     var n = a[c];
@@ -7899,7 +7899,9 @@
                     r(e, a)
                 );
             }
-            n("h2ac0348", "לא, קח אותי בחזרה"),
+            n("c80160d3", "פרסום"),
+                n("ff0edac0", "האם אתה בטוח שברצונך לבטל את המנוי שלך?"),
+                n("h2ac0348", "לא, קח אותי בחזרה"),
                 n("dbf9667e", "אני בטוח"),
                 n("j7592572", "פניית פרסה"),
                 n("ee778942", "רמזורים"),
@@ -8918,16 +8920,16 @@
                 n("d6f2056f", function (e) {
                     return e.count + " צפו";
                 }),
-                n("jbc5f47a", "תחנת עגינה של מקומות"),
-                n("gfe2830f", function (e) {
-                    return e.count + " " + t(e.count, "נוספים", "נוסף", "משתמשים נוספים", "נוספים");
-                }),
+                n("jbc5f47a", "תחנת עגינה של מקומות");
+            n("gfe2830f", function (e) {
+                return e.count + " " + t(e.count, "נוספים", "נוסף", "משתמשים נוספים", "נוספים");
+            }),
                 n("dbeae6cf", function (e) {
                     return "" + t(e.count, e.count + " מאזינים נוספים", "מאזין " + e.count + " נוסף", e.count + " מאזינים נוספים", e.count + " מאזינים נוספים");
-                });
-            n("d2543d97", function (e) {
-                return "+" + e.count;
-            }),
+                }),
+                n("d2543d97", function (e) {
+                    return "+" + e.count;
+                }),
                 n("dc718e53", function (e) {
                     return "+" + e.count + " " + t(e.count, "נוספים", "נוסף", "משתמשים נוספים", "נוספים");
                 }),
@@ -13205,4 +13207,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/he.9847be9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/he.bc0b44aa.js.map

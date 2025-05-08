@@ -681,7 +681,11 @@
             t.d(a, { T: () => i });
             var r = t(97882),
                 n = t(685731);
-            const i = ({ annualPriceMonthly: e, includeTax: a, percentOff: t, price: i }) => (0, r.x)({ amount: (0, n.aU)(i, a, t) / (e ? 12 : 1), currencyCode: i?.currency_code.toUpperCase(), removeTrailingZeros: !0 });
+            const i = ({ annualPriceMonthly: e, includeTax: a, monthlyPriceAnnual: t, percentOff: i, price: l }) => {
+                const s = (0, n.aU)(l, a, i),
+                    o = e ? s / 12 : t ? 12 * s : s;
+                return (0, r.x)({ amount: o, currencyCode: l?.currency_code.toUpperCase(), removeTrailingZeros: !0 });
+            };
         },
         862695: (e, a, t) => {
             t.d(a, { V: () => _, f: () => b });
@@ -815,4 +819,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.PremiumGifting.64dad92a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.PremiumGifting.39d5533a.js.map

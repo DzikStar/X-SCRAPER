@@ -7044,12 +7044,14 @@
                 t("f0ad5cc8", "năm"),
                 t("a0dc6e4c", "Hiện không có"),
                 t("jd8b2e66", "Đăng ký và thanh toán"),
+                t("ca784c0c", "Subscribe & pay with Apple"),
                 t("aa5df29f", function (n) {
                     return "" + n.oldPrice;
                 }),
                 t("g1c4f7a1", function (n) {
                     return "" + n.oldPrice;
                 }),
+                t("afd61c76", "Or, save up to 30%"),
                 t("i7fbacc4", "Chuyển đổi giữa các cấp thuê bao hiện có"),
                 t("c9cc122b", function (n) {
                     return n.feature + " có trong gói " + n.title;
@@ -7848,9 +7850,7 @@
                 t("id720215", "Tuyển dụng"),
                 t("dd59f146", "Tài khoản quảng cáo quảng bá việc làm"),
                 t("e7e36818", "Tài khoản quảng cáo đủ điều kiện quảng bá việc làm khi tài khoản được thiết lập đầy đủ nguồn tiền."),
-                t("c28566e0", "Tài khoản quảng cáo"),
-                t("c80160d3", "Quảng cáo"),
-                t("ff0edac0", "Bạn có chắc chắn muốn hủy thuê bao của mình không?");
+                t("c28566e0", "Tài khoản quảng cáo");
             function g(n, h) {
                 for (var c = 0; c < h.length; c++) {
                     var t = h[c];
@@ -7889,7 +7889,9 @@
                     a(n, h)
                 );
             }
-            t("h2ac0348", "Không, tôi muốn quay lại"),
+            t("c80160d3", "Quảng cáo"),
+                t("ff0edac0", "Bạn có chắc chắn muốn hủy thuê bao của mình không?"),
+                t("h2ac0348", "Không, tôi muốn quay lại"),
                 t("dbf9667e", "Tôi chắc chắn"),
                 t("j7592572", "Vòng ngược lại"),
                 t("ee778942", "Đèn giao thông"),
@@ -8908,16 +8910,16 @@
                 t("d6f2056f", function (n) {
                     return n.count + " đã nghe";
                 }),
-                t("jbc5f47a", "Thanh dock Spaces"),
-                t("gfe2830f", function (n) {
-                    return n.count + " người khác";
-                }),
+                t("jbc5f47a", "Thanh dock Spaces");
+            t("gfe2830f", function (n) {
+                return n.count + " người khác";
+            }),
                 t("dbeae6cf", function (n) {
                     return n.count + " người nghe khác";
-                });
-            t("d2543d97", function (n) {
-                return "+" + n.count;
-            }),
+                }),
+                t("d2543d97", function (n) {
+                    return "+" + n.count;
+                }),
                 t("dc718e53", function (n) {
                     return "+" + n.count + " người khác";
                 }),
@@ -13190,4 +13192,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.6c44880a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.08a4916a.js.map

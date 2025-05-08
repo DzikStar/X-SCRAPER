@@ -7044,12 +7044,14 @@
                 f("f0ad5cc8", "年"),
                 f("a0dc6e4c", "現在ご利用いただけません"),
                 f("jd8b2e66", "サブスクライブして支払う"),
+                f("ca784c0c", "Subscribe & pay with Apple"),
                 f("aa5df29f", function (e) {
                     return "" + e.oldPrice;
                 }),
                 f("g1c4f7a1", function (e) {
                     return "" + e.oldPrice;
                 }),
+                f("afd61c76", "Or, save up to 30%"),
                 f("i7fbacc4", "サブスクリプションレベルを切り替える"),
                 f("c9cc122b", function (e) {
                     return e.feature + "は" + e.title + "に含まれています";
@@ -7848,9 +7850,7 @@
                 f("id720215", "人材募集"),
                 f("dd59f146", "求人プロモーション広告アカウント"),
                 f("e7e36818", "広告アカウントは、お支払い方法の設定をすべて完了すると求人プロモーションを行えます。"),
-                f("c28566e0", "広告アカウント"),
-                f("c80160d3", "広告"),
-                f("ff0edac0", "サブスクリプションをキャンセルしてもよろしいですか？");
+                f("c28566e0", "広告アカウント");
             function t(e, a) {
                 for (var c = 0; c < a.length; c++) {
                     var f = a[c];
@@ -7889,7 +7889,9 @@
                     r(e, a)
                 );
             }
-            f("h2ac0348", "キャンセルしない"),
+            f("c80160d3", "広告"),
+                f("ff0edac0", "サブスクリプションをキャンセルしてもよろしいですか？"),
+                f("h2ac0348", "キャンセルしない"),
                 f("dbf9667e", "はい"),
                 f("j7592572", "Uターン"),
                 f("ee778942", "信号機"),
@@ -8908,16 +8910,16 @@
                 f("d6f2056f", function (e) {
                     return e.count + " 人がリスニング/リプレイ";
                 }),
-                f("jbc5f47a", "スペースドック"),
-                f("gfe2830f", function (e) {
-                    return "他" + e.count + "人";
-                }),
+                f("jbc5f47a", "スペースドック");
+            f("gfe2830f", function (e) {
+                return "他" + e.count + "人";
+            }),
                 f("dbeae6cf", function (e) {
                     return "他" + e.count + "人のリスナー";
-                });
-            f("d2543d97", function (e) {
-                return "+" + e.count;
-            }),
+                }),
+                f("d2543d97", function (e) {
+                    return "+" + e.count;
+                }),
                 f("dc718e53", function (e) {
                     return "+他" + e.count + "人";
                 }),
@@ -13197,4 +13199,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ja.47fb0eaa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ja.271c361a.js.map

@@ -7048,12 +7048,14 @@
                 t("f0ad5cc8", "year"),
                 t("a0dc6e4c", "Currently unavailable"),
                 t("jd8b2e66", "Subscribe & pay"),
+                t("ca784c0c", "Subscribe & pay with Apple"),
                 t("aa5df29f", function (a) {
                     return "" + a.oldPrice;
                 }),
                 t("g1c4f7a1", function (a) {
                     return "" + a.oldPrice;
                 }),
+                t("afd61c76", "Or, save up to 30%"),
                 t("i7fbacc4", "Switch between the available subscription tiers"),
                 t("c9cc122b", function (a) {
                     return a.feature + " is included in " + a.title;
@@ -7852,9 +7854,7 @@
                 t("id720215", "Hiring"),
                 t("dd59f146", "Job promotion ad account"),
                 t("e7e36818", "Ad accounts are eligible for job promotion when they are fully set up with a funding source."),
-                t("c28566e0", "Ad Account"),
-                t("c80160d3", "Advertising"),
-                t("ff0edac0", "Are you sure you want to cancel your subscription?");
+                t("c28566e0", "Ad Account");
             function r(a, e) {
                 for (var n = 0; n < e.length; n++) {
                     var t = e[n];
@@ -7893,7 +7893,9 @@
                     u(a, e)
                 );
             }
-            t("h2ac0348", "No, take me back"),
+            t("c80160d3", "Advertising"),
+                t("ff0edac0", "Are you sure you want to cancel your subscription?"),
+                t("h2ac0348", "No, take me back"),
                 t("dbf9667e", "I’m sure"),
                 t("j7592572", "U-turn"),
                 t("ee778942", "Traffic lights"),
@@ -8912,16 +8914,16 @@
                 t("d6f2056f", function (a) {
                     return a.count + " na sauraro";
                 }),
-                t("jbc5f47a", "Spaces dock"),
-                t("gfe2830f", function (a) {
-                    return a.count + " other" + o(a.count, "", "s");
-                }),
+                t("jbc5f47a", "Spaces dock");
+            t("gfe2830f", function (a) {
+                return a.count + " other" + o(a.count, "", "s");
+            }),
                 t("dbeae6cf", function (a) {
                     return a.count + " other listener" + o(a.count, "", "s");
-                });
-            t("d2543d97", function (a) {
-                return "+" + a.count;
-            }),
+                }),
+                t("d2543d97", function (a) {
+                    return "+" + a.count;
+                }),
                 t("dc718e53", function (a) {
                     return "+" + a.count + " other" + o(a.count, "", "s");
                 }),
@@ -13194,4 +13196,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ha.bfa29b8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ha.c2d3251a.js.map

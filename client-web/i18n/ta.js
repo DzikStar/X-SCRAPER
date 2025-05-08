@@ -7044,12 +7044,14 @@
                 n("f0ad5cc8", "ஆண்டு"),
                 n("a0dc6e4c", "தற்சமயம் கிடைக்கவில்லை"),
                 n("jd8b2e66", "சப்ஸ்கிரைப் செய்து, பணம் செலுத்துக"),
+                n("ca784c0c", "Subscribe & pay with Apple"),
                 n("aa5df29f", function (e) {
                     return "" + e.oldPrice;
                 }),
                 n("g1c4f7a1", function (e) {
                     return "" + e.oldPrice;
                 }),
+                n("afd61c76", "Or, save up to 30%"),
                 n("i7fbacc4", "கிடைக்கக்கூடிய சப்ஸ்கிர்ப்ஷன் அடுக்குகளுக்கு இடையில் மாறவும்"),
                 n("c9cc122b", function (e) {
                     return e.feature + ", " + e.title + " -இல் சேர்க்கப்பட்டுள்ளது";
@@ -7848,9 +7850,7 @@
                 n("id720215", "பணியமர்த்தல்"),
                 n("dd59f146", "பணி வாய்ப்பு விளம்பரப்படுத்துதல் விளம்பரக் கணக்கு"),
                 n("e7e36818", "விளம்பரக் கணக்குகள் நிதி ஆதாரத்துடன் முழுமையாக அமைக்கப்பட்டால், அவை பணி வாய்ப்பு விளம்பரப்படுத்தலுக்குத் தகுதி பெறும்."),
-                n("c28566e0", "விளம்பரக் கணக்கு"),
-                n("c80160d3", "விளம்பரப்படுத்தல்"),
-                n("ff0edac0", "உங்கள் சப்ஸ்கிர்ப்ஷனை ரத்துசெய்ய விரும்புகிறீர்களா?");
+                n("c28566e0", "விளம்பரக் கணக்கு");
             function f(e, a) {
                 for (var c = 0; c < a.length; c++) {
                     var n = a[c];
@@ -7889,7 +7889,9 @@
                     r(e, a)
                 );
             }
-            n("h2ac0348", "வேண்டாம், திரும்பிச் செல்"),
+            n("c80160d3", "விளம்பரப்படுத்தல்"),
+                n("ff0edac0", "உங்கள் சப்ஸ்கிர்ப்ஷனை ரத்துசெய்ய விரும்புகிறீர்களா?"),
+                n("h2ac0348", "வேண்டாம், திரும்பிச் செல்"),
                 n("dbf9667e", "நிச்சயமாக"),
                 n("j7592572", "U-டர்ன்"),
                 n("ee778942", "போக்குவரத்து விளக்குகள்"),
@@ -8908,16 +8910,16 @@
                 n("d6f2056f", function (e) {
                     return e.count + " " + t(e.count, "கேட்டுக் கொண்டிருக்கின்றா", "பேர் கேட்டுக் கொண்டிருக்கின்றன") + "ர்";
                 }),
-                n("jbc5f47a", "ஸ்பேசஸ் டாக்"),
-                n("gfe2830f", function (e) {
-                    return e.count + " நபர்" + t(e.count, "", "கள்");
-                }),
+                n("jbc5f47a", "ஸ்பேசஸ் டாக்");
+            n("gfe2830f", function (e) {
+                return e.count + " நபர்" + t(e.count, "", "கள்");
+            }),
                 n("dbeae6cf", function (e) {
                     return "பிற " + t(e.count, e.count + " கேட்பவர", " " + e.count + " கேட்பவர்கள") + "்";
-                });
-            n("d2543d97", function (e) {
-                return "+" + e.count;
-            }),
+                }),
+                n("d2543d97", function (e) {
+                    return "+" + e.count;
+                }),
                 n("dc718e53", function (e) {
                     return "+" + e.count + " நபர்" + t(e.count, "", "கள்");
                 }),
@@ -13209,4 +13211,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ta.2f82531a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ta.3fd85ffa.js.map

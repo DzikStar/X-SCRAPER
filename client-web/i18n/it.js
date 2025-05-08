@@ -7049,12 +7049,14 @@
                 o("f0ad5cc8", "anno"),
                 o("a0dc6e4c", "Attualmente non disponibile"),
                 o("jd8b2e66", "Abbonati e paga"),
+                o("ca784c0c", "Subscribe & pay with Apple"),
                 o("aa5df29f", function (i) {
                     return "" + i.oldPrice;
                 }),
                 o("g1c4f7a1", function (i) {
                     return "" + i.oldPrice;
                 }),
+                o("afd61c76", "Or, save up to 30%"),
                 o("i7fbacc4", "Passa a uno degli altri abbonamenti"),
                 o("c9cc122b", function (i) {
                     return i.feature + ": disponibile con " + i.title;
@@ -7853,9 +7855,7 @@
                 o("id720215", "Hiring"),
                 o("dd59f146", "Account Ads per la sponsorizzazione offerte di lavoro"),
                 o("e7e36818", "Una volta configurata completamente la fonte di finanziamento, gli account Ads possono promuovere le offerte di lavoro."),
-                o("c28566e0", "Account Ads"),
-                o("c80160d3", "Pubblicità"),
-                o("ff0edac0", "Vuoi davvero disdire l'abbonamento?");
+                o("c28566e0", "Account Ads");
             function r(i, e) {
                 for (var a = 0; a < e.length; a++) {
                     var o = e[a];
@@ -7894,7 +7894,9 @@
                     c(i, e)
                 );
             }
-            o("h2ac0348", "No, torna indietro"),
+            o("c80160d3", "Pubblicità"),
+                o("ff0edac0", "Vuoi davvero disdire l'abbonamento?"),
+                o("h2ac0348", "No, torna indietro"),
                 o("dbf9667e", "Sì, voglio procedere"),
                 o("j7592572", "Curva a gomito"),
                 o("ee778942", "Semaforo"),
@@ -8913,16 +8915,16 @@
                 o("d6f2056f", function (i) {
                     return i.count + " sintonizzat" + t(i.count, "o", "i");
                 }),
-                o("jbc5f47a", "Dock degli spazi"),
-                o("gfe2830f", function (i) {
-                    return "" + t(i.count, i.count + " altro", "altri " + i.count);
-                }),
+                o("jbc5f47a", "Dock degli spazi");
+            o("gfe2830f", function (i) {
+                return "" + t(i.count, i.count + " altro", "altri " + i.count);
+            }),
                 o("dbeae6cf", function (i) {
                     return "" + t(i.count, i.count + " altro ascoltatore", "altri " + i.count + " ascoltatori");
-                });
-            o("d2543d97", function (i) {
-                return "+" + i.count;
-            }),
+                }),
+                o("d2543d97", function (i) {
+                    return "+" + i.count;
+                }),
                 o("dc718e53", function (i) {
                     return "+ " + t(i.count, i.count + " altro", "altri " + i.count);
                 }),
@@ -13196,4 +13198,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/it.7910b6ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/it.7b26be9a.js.map

@@ -7056,12 +7056,14 @@
                 t("f0ad5cc8", "an"),
                 t("a0dc6e4c", "Indisponibil momentan"),
                 t("jd8b2e66", "Abonare și plată"),
+                t("ca784c0c", "Subscribe & pay with Apple"),
                 t("aa5df29f", function (e) {
                     return "" + e.oldPrice;
                 }),
                 t("g1c4f7a1", function (e) {
                     return "" + e.oldPrice;
                 }),
+                t("afd61c76", "Or, save up to 30%"),
                 t("i7fbacc4", "Comută între nivelurile de abonare disponibile"),
                 t("c9cc122b", function (e) {
                     return e.feature + " este inclus în " + e.title;
@@ -7860,9 +7862,7 @@
                 t("id720215", "pentru angajări"),
                 t("dd59f146", "Contul de reclame pentru promovarea locurilor de muncă"),
                 t("e7e36818", "Conturile pentru reclame sunt eligibile pentru promovarea locurilor de muncă atunci când sunt complet configurate cu o sursă de finanțare."),
-                t("c28566e0", "Cont pentru reclame"),
-                t("c80160d3", "Publicitate"),
-                t("ff0edac0", "Sigur vrei să îți anulezi abonamentul?");
+                t("c28566e0", "Cont pentru reclame");
             function c(e, a) {
                 for (var i = 0; i < a.length; i++) {
                     var t = a[i];
@@ -7901,7 +7901,9 @@
                     u(e, a)
                 );
             }
-            t("h2ac0348", "Nu, vreau să mă întorc"),
+            t("c80160d3", "Publicitate"),
+                t("ff0edac0", "Sigur vrei să îți anulezi abonamentul?"),
+                t("h2ac0348", "Nu, vreau să mă întorc"),
                 t("dbf9667e", "Sunt sigur"),
                 t("j7592572", "Întoarcere"),
                 t("ee778942", "Semafor"),
@@ -8920,16 +8922,16 @@
                 t("d6f2056f", function (e) {
                     return e.count + " a" + r(e.count, "u", "", "u") + " urmărit";
                 }),
-                t("jbc5f47a", "Setul Spații"),
-                t("gfe2830f", function (e) {
-                    return "încă " + e.count;
-                }),
+                t("jbc5f47a", "Setul Spații");
+            t("gfe2830f", function (e) {
+                return "încă " + e.count;
+            }),
                 t("dbeae6cf", function (e) {
                     return e.count + " al" + r(e.count, "ți ascultători", "t ascultător", "ți ascultători");
-                });
-            t("d2543d97", function (e) {
-                return "+" + e.count;
-            }),
+                }),
+                t("d2543d97", function (e) {
+                    return "+" + e.count;
+                }),
                 t("dc718e53", function (e) {
                     return "+încă " + e.count;
                 }),
@@ -13205,4 +13207,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ro.9b3b2b6a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ro.3191288a.js.map

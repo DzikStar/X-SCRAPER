@@ -7045,12 +7045,14 @@
                 t("f0ad5cc8", "år"),
                 t("a0dc6e4c", "Ikke tilgængelig i øjeblikket"),
                 t("jd8b2e66", "Abonner og betal"),
+                t("ca784c0c", "Subscribe & pay with Apple"),
                 t("aa5df29f", function (e) {
                     return "" + e.oldPrice;
                 }),
                 t("g1c4f7a1", function (e) {
                     return "" + e.oldPrice;
                 }),
+                t("afd61c76", "Or, save up to 30%"),
                 t("i7fbacc4", "Skift mellem de tilgængelige abonnementsniveauer"),
                 t("c9cc122b", function (e) {
                     return e.feature + " er inkluderet i " + e.title;
@@ -7849,9 +7851,7 @@
                 t("id720215", "ansættelsesportalen"),
                 t("dd59f146", "Annoncekonto til promovering af stillinger"),
                 t("e7e36818", "Annoncekonti er kvalificeret til promovering af stillinger, når de er fuldstændigt oprettet med en finansieringskilde."),
-                t("c28566e0", "Annoncekonto"),
-                t("c80160d3", "Annoncering"),
-                t("ff0edac0", "Er du sikker på, at du vil annullere dit abonnement?");
+                t("c28566e0", "Annoncekonto");
             function d(e, r) {
                 for (var n = 0; n < r.length; n++) {
                     var t = r[n];
@@ -7890,7 +7890,9 @@
                     a(e, r)
                 );
             }
-            t("h2ac0348", "Nej, gå tilbage"),
+            t("c80160d3", "Annoncering"),
+                t("ff0edac0", "Er du sikker på, at du vil annullere dit abonnement?"),
+                t("h2ac0348", "Nej, gå tilbage"),
                 t("dbf9667e", "Jeg er sikker"),
                 t("j7592572", "U-vending"),
                 t("ee778942", "Trafiklys"),
@@ -8909,16 +8911,16 @@
                 t("d6f2056f", function (e) {
                     return e.count + " følger med";
                 }),
-                t("jbc5f47a", "Rum-dock"),
-                t("gfe2830f", function (e) {
-                    return e.count + " and" + i(e.count, "en", "re");
-                }),
+                t("jbc5f47a", "Rum-dock");
+            t("gfe2830f", function (e) {
+                return e.count + " and" + i(e.count, "en", "re");
+            }),
                 t("dbeae6cf", function (e) {
                     return e.count + " and" + i(e.count, "en lytter", "re lyttere");
-                });
-            t("d2543d97", function (e) {
-                return "+" + e.count;
-            }),
+                }),
+                t("d2543d97", function (e) {
+                    return "+" + e.count;
+                }),
                 t("dc718e53", function (e) {
                     return "+" + e.count + " and" + i(e.count, "en", "re");
                 }),
@@ -13194,4 +13196,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/da.268a18fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/da.050a7fca.js.map

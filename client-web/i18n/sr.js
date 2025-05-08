@@ -7052,12 +7052,14 @@
                 n("f0ad5cc8", "години"),
                 n("a0dc6e4c", "Тренутно недоступно"),
                 n("jd8b2e66", "Претплати се и плати"),
+                n("ca784c0c", "Subscribe & pay with Apple"),
                 n("aa5df29f", function (e) {
                     return "" + e.oldPrice;
                 }),
                 n("g1c4f7a1", function (e) {
                     return "" + e.oldPrice;
                 }),
+                n("afd61c76", "Or, save up to 30%"),
                 n("i7fbacc4", "Пребацуј се између доступних нивоа услуге"),
                 n("c9cc122b", function (e) {
                     return "Функција " + e.feature + " је укључена у " + e.title;
@@ -7856,9 +7858,7 @@
                 n("id720215", "запошљавање"),
                 n("dd59f146", "Налог за огласе и промовисање послова"),
                 n("e7e36818", "Налози за огласе испуњавају услове за промовисање послова када су у потпуности подешени са извором финансирања."),
-                n("c28566e0", "Налог за огласе"),
-                n("c80160d3", "оглашавање"),
-                n("ff0edac0", "Желиш ли заиста да откажеш претплату?");
+                n("c28566e0", "Налог за огласе");
             function t(e, c) {
                 for (var a = 0; a < c.length; a++) {
                     var n = c[a];
@@ -7897,7 +7897,9 @@
                     r(e, c)
                 );
             }
-            n("h2ac0348", "Не, врати ме назад"),
+            n("c80160d3", "оглашавање"),
+                n("ff0edac0", "Желиш ли заиста да откажеш претплату?"),
+                n("h2ac0348", "Не, врати ме назад"),
                 n("dbf9667e", "Сигуран/на сам"),
                 n("j7592572", "Полукружно скретање"),
                 n("ee778942", "Саобраћајна светла"),
@@ -8916,16 +8918,16 @@
                 n("d6f2056f", function (e) {
                     return e.count + " (count) (count, plural, one (подешен) other (подешени))";
                 }),
-                n("jbc5f47a", "Прикључак за Просторе"),
-                n("gfe2830f", function (e) {
-                    return "" + f(e.count, e.count + " других", "још " + e.count + " корисник", e.count + " других");
-                }),
+                n("jbc5f47a", "Прикључак за Просторе");
+            n("gfe2830f", function (e) {
+                return "" + f(e.count, e.count + " других", "још " + e.count + " корисник", e.count + " других");
+            }),
                 n("dbeae6cf", function (e) {
                     return "" + f(e.count, e.count + " друга слушаоца", "још " + e.count + " слушалац", e.count + " других слушалаца");
-                });
-            n("d2543d97", function (e) {
-                return "+" + e.count;
-            }),
+                }),
+                n("d2543d97", function (e) {
+                    return "+" + e.count;
+                }),
                 n("dc718e53", function (e) {
                     return "+" + f(e.count, e.count + " других", "још " + e.count + " корисник", e.count + " других");
                 }),
@@ -13206,4 +13208,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sr.942a989a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sr.b477670a.js.map

@@ -525,6 +525,8 @@
                         (n = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }),
                         { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null },
                         { alias: null, args: null, kind: "ScalarField", name: "amount_local_micro", storageKey: null },
+                        { alias: null, args: null, kind: "ScalarField", name: "base_amount_micro", storageKey: null },
+                        { alias: null, args: null, kind: "ScalarField", name: "total_fees_micro", storageKey: null },
                         { alias: null, args: null, kind: "ScalarField", name: "currency", storageKey: null },
                         { alias: null, args: null, kind: "ScalarField", name: "product_code", storageKey: null },
                         { alias: null, args: null, kind: "ScalarField", name: "reason_code", storageKey: null },
@@ -632,7 +634,7 @@
                     type: "XPaymentsTransaction",
                     abstractKey: null,
                 };
-            y.hash = "3e24610c0bc28a1c95f1bf743cf297cc";
+            y.hash = "87c68ff1182f06ac8d46bfc98ff3f6f3";
             const k = y;
         },
         860648: (e, l, a) => {
@@ -684,4 +686,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-960914ab.3a7c6caa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-960914ab.7f406cfa.js.map

@@ -7045,12 +7045,14 @@
                 n("f0ad5cc8", "বছর"),
                 n("a0dc6e4c", "বর্তমানে অনুপলব্ধ"),
                 n("jd8b2e66", "সাবস্ক্রাইব করুন এবং পেমেন্ট করুন"),
+                n("ca784c0c", "Subscribe & pay with Apple"),
                 n("aa5df29f", function (e) {
                     return "" + e.oldPrice;
                 }),
                 n("g1c4f7a1", function (e) {
                     return "" + e.oldPrice;
                 }),
+                n("afd61c76", "Or, save up to 30%"),
                 n("i7fbacc4", "উপলব্ধ সাবস্ক্রিপশনের টায়ারের মধ্যে পরিবর্তন করুন"),
                 n("c9cc122b", function (e) {
                     return e.feature + "-কে " + e.title + "-তে অন্তর্ভুক্ত করা হয়েছে";
@@ -7849,9 +7851,7 @@
                 n("id720215", "নিয়োগের"),
                 n("dd59f146", "চাকরির প্রমোশনের বিজ্ঞাপন অ্যাকাউন্ট"),
                 n("e7e36818", "বিজ্ঞাপন অ্যাকাউন্টগুলি চাকরির প্রচারের জন্য যোগ্য হয় যখন সেগুলি একটি তহবিল উৎসের সাথে সম্পূর্ণরূপে সেট আপ করা হয়।"),
-                n("c28566e0", "বিজ্ঞাপনের অ্যাকাউন্ট"),
-                n("c80160d3", "বিজ্ঞাপনের"),
-                n("ff0edac0", "আপনি কী আপনার সাবস্ক্রিপশনটি বাতিল করার বিষয়ে নিশ্চিত?");
+                n("c28566e0", "বিজ্ঞাপনের অ্যাকাউন্ট");
             function t(e, c) {
                 for (var a = 0; a < c.length; a++) {
                     var n = c[a];
@@ -7890,7 +7890,9 @@
                     r(e, c)
                 );
             }
-            n("h2ac0348", "না, আমাকে ফেরত নিয়ে যান "),
+            n("c80160d3", "বিজ্ঞাপনের"),
+                n("ff0edac0", "আপনি কী আপনার সাবস্ক্রিপশনটি বাতিল করার বিষয়ে নিশ্চিত?"),
+                n("h2ac0348", "না, আমাকে ফেরত নিয়ে যান "),
                 n("dbf9667e", "আমি নিশ্চিত"),
                 n("j7592572", "ইউ-টার্ন"),
                 n("ee778942", "ট্রাফিক লাইট"),
@@ -8909,16 +8911,16 @@
                 n("d6f2056f", function (e) {
                     return e.count + " টিউন ইন করেছেন";
                 }),
-                n("jbc5f47a", "Spaces ডক"),
-                n("gfe2830f", function (e) {
-                    return "অন্য" + f(e.count, "", "ান্য") + " " + e.count + " জন";
-                }),
+                n("jbc5f47a", "Spaces ডক");
+            n("gfe2830f", function (e) {
+                return "অন্য" + f(e.count, "", "ান্য") + " " + e.count + " জন";
+            }),
                 n("dbeae6cf", function (e) {
                     return "আরও " + e.count + " জন শ্রোতা";
-                });
-            n("d2543d97", function (e) {
-                return "+" + e.count;
-            }),
+                }),
+                n("d2543d97", function (e) {
+                    return "+" + e.count;
+                }),
                 n("dc718e53", function (e) {
                     return "+অন্য " + e.count + " জন";
                 }),
@@ -13207,4 +13209,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/bn.d472386a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/bn.b581169a.js.map

@@ -7060,12 +7060,14 @@
                 n("f0ad5cc8", "year"),
                 n("a0dc6e4c", "Currently unavailable"),
                 n("jd8b2e66", "Subscribe & pay"),
+                n("ca784c0c", "Subscribe & pay with Apple"),
                 n("aa5df29f", function (e) {
                     return "" + e.oldPrice;
                 }),
                 n("g1c4f7a1", function (e) {
                     return "" + e.oldPrice;
                 }),
+                n("afd61c76", "Or, save up to 30%"),
                 n("i7fbacc4", "Switch between the available subscription tiers"),
                 n("c9cc122b", function (e) {
                     return e.feature + " is included in " + e.title;
@@ -7864,9 +7866,7 @@
                 n("id720215", "Hiring"),
                 n("dd59f146", "Job promotion ad account"),
                 n("e7e36818", "Ad accounts are eligible for job promotion when they are fully set up with a funding source."),
-                n("c28566e0", "Ad Account"),
-                n("c80160d3", "Advertising"),
-                n("ff0edac0", "Are you sure you want to cancel your subscription?");
+                n("c28566e0", "Ad Account");
             function r(e, a) {
                 for (var t = 0; t < a.length; t++) {
                     var n = a[t];
@@ -7905,7 +7905,9 @@
                     c(e, a)
                 );
             }
-            n("h2ac0348", "No, take me back"),
+            n("c80160d3", "Advertising"),
+                n("ff0edac0", "Are you sure you want to cancel your subscription?"),
+                n("h2ac0348", "No, take me back"),
                 n("dbf9667e", "I’m sure"),
                 n("j7592572", "U-turn"),
                 n("ee778942", "Traffic lights"),
@@ -8924,16 +8926,16 @@
                 n("d6f2056f", function (e) {
                     return e.count + " tiúnáilte isteach";
                 }),
-                n("jbc5f47a", "Nasc spásanna"),
-                n("gfe2830f", function (e) {
-                    return e.count + " eile";
-                }),
+                n("jbc5f47a", "Nasc spásanna");
+            n("gfe2830f", function (e) {
+                return e.count + " eile";
+            }),
                 n("dbeae6cf", function (e) {
                     return e.count + " other listener" + o(e.count, "", "s");
-                });
-            n("d2543d97", function (e) {
-                return "+" + e.count;
-            }),
+                }),
+                n("d2543d97", function (e) {
+                    return "+" + e.count;
+                }),
                 n("dc718e53", function (e) {
                     return "+" + e.count + " eile";
                 }),
@@ -13208,4 +13210,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ga.de00590a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ga.88ffcf8a.js.map

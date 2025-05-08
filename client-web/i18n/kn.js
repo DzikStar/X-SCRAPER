@@ -7045,12 +7045,14 @@
                 n("f0ad5cc8", "ವರ್ಷ"),
                 n("a0dc6e4c", "ಪ್ರಸ್ತುತ ಲಭ್ಯವಿಲ್ಲ"),
                 n("jd8b2e66", "ಸಬ್‌ಸ್ಕ್ರೈಬ್ ಮಾಡಿ ಮತ್ತು ಪಾವತಿಸಿ"),
+                n("ca784c0c", "Subscribe & pay with Apple"),
                 n("aa5df29f", function (e) {
                     return "" + e.oldPrice;
                 }),
                 n("g1c4f7a1", function (e) {
                     return "" + e.oldPrice;
                 }),
+                n("afd61c76", "Or, save up to 30%"),
                 n("i7fbacc4", "ಲಭ್ಯವಿರುವ ಸಬ್‌ಸ್ಕ್ರಿಪ್ಷನ್ ಶ್ರೇಣಿಗಳ ನಡುವೆ ಬದಲಿಸಿ"),
                 n("c9cc122b", function (e) {
                     return e.feature + " ಅನ್ನು " + e.title + " ರಲ್ಲಿ ಸೇರಿಸಲಾಗಿದೆ";
@@ -7849,9 +7851,7 @@
                 n("id720215", "ನೇಮಕಾತಿ"),
                 n("dd59f146", "ಉದ್ಯೋಗ ಪ್ರಚಾರದ ಜಾಹೀರಾತು ಖಾತೆ"),
                 n("e7e36818", "ಜಾಹೀರಾತು ಖಾತೆಗಳು ನಿಧಿಯ ಮೂಲದೊಂದಿಗೆ ಸಂಪೂರ್ಣವಾಗಿ ಹೊಂದಿಸಲ್ಪಟ್ಟಾಗ ಉದ್ಯೋಗ ಪ್ರಚಾರಕ್ಕೆ ಅರ್ಹವಾಗಿರುತ್ತವೆ."),
-                n("c28566e0", "ಜಾಹೀರಾತು ಖಾತೆ"),
-                n("c80160d3", "ಜಾಹೀರಾತು"),
-                n("ff0edac0", "ನಿಮ್ಮ ಸಬ್‌ಸ್ಕ್ರಿಪ್ಷನ್ ಅನ್ನು ರದ್ದುಗೊಳಿಸಲು ನೀವು ಖಚಿತವಾಗಿ ಬಯಸುವಿರಾ?");
+                n("c28566e0", "ಜಾಹೀರಾತು ಖಾತೆ");
             function t(e, c) {
                 for (var a = 0; a < c.length; a++) {
                     var n = c[a];
@@ -7890,7 +7890,9 @@
                     r(e, c)
                 );
             }
-            n("h2ac0348", "ಇಲ್ಲ, ನನ್ನನ್ನು ಹಿಂದಕ್ಕೆ ತೆಗೆದುಕೊಳ್ಳಿ"),
+            n("c80160d3", "ಜಾಹೀರಾತು"),
+                n("ff0edac0", "ನಿಮ್ಮ ಸಬ್‌ಸ್ಕ್ರಿಪ್ಷನ್ ಅನ್ನು ರದ್ದುಗೊಳಿಸಲು ನೀವು ಖಚಿತವಾಗಿ ಬಯಸುವಿರಾ?"),
+                n("h2ac0348", "ಇಲ್ಲ, ನನ್ನನ್ನು ಹಿಂದಕ್ಕೆ ತೆಗೆದುಕೊಳ್ಳಿ"),
                 n("dbf9667e", "ನನಗೆ ಖಚಿತವಾಗಿದೆ"),
                 n("j7592572", "U-ಟರ್ನ್"),
                 n("ee778942", "ಟ್ರಾಫಿಕ್ ದೀಪಗಳು"),
@@ -8909,16 +8911,16 @@
                 n("d6f2056f", function (e) {
                     return e.count + " ಟ್ಯೂನ್‌ ಇನ್ ಮಾಡಲಾಗಿದೆ";
                 }),
-                n("jbc5f47a", "ಸ್ಪೇಸಸ್‌ ಡಾಕ್‌"),
-                n("gfe2830f", function (e) {
-                    return e.count + " ಇತರೆ";
-                }),
+                n("jbc5f47a", "ಸ್ಪೇಸಸ್‌ ಡಾಕ್‌");
+            n("gfe2830f", function (e) {
+                return e.count + " ಇತರೆ";
+            }),
                 n("dbeae6cf", function (e) {
                     return e.count + " ಇತರ ಶ್ರೋತೃ" + f(e.count, "", "ಗಳು");
-                });
-            n("d2543d97", function (e) {
-                return "+" + e.count;
-            }),
+                }),
+                n("d2543d97", function (e) {
+                    return "+" + e.count;
+                }),
                 n("dc718e53", function (e) {
                     return "+" + e.count + " ಇತರೆ";
                 }),
@@ -13204,4 +13206,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/kn.c2c4434a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/kn.6def69aa.js.map

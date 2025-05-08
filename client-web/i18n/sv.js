@@ -7045,12 +7045,14 @@
                 t("f0ad5cc8", "år"),
                 t("a0dc6e4c", "Inte tillgängligt just nu"),
                 t("jd8b2e66", "Prenumerera och betala"),
+                t("ca784c0c", "Subscribe & pay with Apple"),
                 t("aa5df29f", function (e) {
                     return "" + e.oldPrice;
                 }),
                 t("g1c4f7a1", function (e) {
                     return "" + e.oldPrice;
                 }),
+                t("afd61c76", "Or, save up to 30%"),
                 t("i7fbacc4", "Växla mellan de tillgängliga prenumerationsnivåerna"),
                 t("c9cc122b", function (e) {
                     return e.feature + " ingår i " + e.title;
@@ -7849,9 +7851,7 @@
                 t("id720215", "Lediga platser"),
                 t("dd59f146", "Annonskonto för marknadsföring av jobb"),
                 t("e7e36818", "Annonskonton kan marknadsföra jobb om de konfigureras med en finansieringskälla."),
-                t("c28566e0", "Annonskonto"),
-                t("c80160d3", "Annonsering"),
-                t("ff0edac0", "Vill du verkligen säga upp prenumerationen?");
+                t("c28566e0", "Annonskonto");
             function i(e, a) {
                 for (var n = 0; n < a.length; n++) {
                     var t = a[n];
@@ -7890,7 +7890,9 @@
                     d(e, a)
                 );
             }
-            t("h2ac0348", "Nej, ta mig tillbaka"),
+            t("c80160d3", "Annonsering"),
+                t("ff0edac0", "Vill du verkligen säga upp prenumerationen?"),
+                t("h2ac0348", "Nej, ta mig tillbaka"),
                 t("dbf9667e", "Jag är säker"),
                 t("j7592572", "U-sväng"),
                 t("ee778942", "Trafikljus"),
@@ -8909,16 +8911,16 @@
                 t("d6f2056f", function (e) {
                     return e.count + " lyssnar";
                 }),
-                t("jbc5f47a", "Områdendocka"),
-                t("gfe2830f", function (e) {
-                    return e.count + " till";
-                }),
+                t("jbc5f47a", "Områdendocka");
+            t("gfe2830f", function (e) {
+                return e.count + " till";
+            }),
                 t("dbeae6cf", function (e) {
                     return e.count + " lyssnare till";
-                });
-            t("d2543d97", function (e) {
-                return "+" + e.count;
-            }),
+                }),
+                t("d2543d97", function (e) {
+                    return "+" + e.count;
+                }),
                 t("dc718e53", function (e) {
                     return e.count + " till+";
                 }),
@@ -13192,4 +13194,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sv.24a1286a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sv.18f1423a.js.map

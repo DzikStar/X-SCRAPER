@@ -7044,12 +7044,14 @@
                 n("f0ad5cc8", "年"),
                 n("a0dc6e4c", "目前無法使用"),
                 n("jd8b2e66", "訂閱並付費"),
+                n("ca784c0c", "Subscribe & pay with Apple"),
                 n("aa5df29f", function (e) {
                     return "" + e.oldPrice;
                 }),
                 n("g1c4f7a1", function (e) {
                     return "" + e.oldPrice;
                 }),
+                n("afd61c76", "Or, save up to 30%"),
                 n("i7fbacc4", "在可用的訂閱等級之間切換"),
                 n("c9cc122b", function (e) {
                     return e.feature + " 已包含在 " + e.title + " 中";
@@ -7848,9 +7850,7 @@
                 n("id720215", "僱用"),
                 n("dd59f146", "工作推廣廣告帳戶"),
                 n("e7e36818", "當廣告帳戶的撥款來源設定完成後，就有資格使用工作推廣。"),
-                n("c28566e0", "廣告帳戶"),
-                n("c80160d3", "廣告"),
-                n("ff0edac0", "你確定要取消訂閱嗎？");
+                n("c28566e0", "廣告帳戶");
             function t(e, c) {
                 for (var a = 0; a < c.length; a++) {
                     var n = c[a];
@@ -7889,7 +7889,9 @@
                     r(e, c)
                 );
             }
-            n("h2ac0348", "否，請返回"),
+            n("c80160d3", "廣告"),
+                n("ff0edac0", "你確定要取消訂閱嗎？"),
+                n("h2ac0348", "否，請返回"),
                 n("dbf9667e", "我確定"),
                 n("j7592572", "迴轉"),
                 n("ee778942", "紅綠燈"),
@@ -8908,16 +8910,16 @@
                 n("d6f2056f", function (e) {
                     return e.count + " 人已收聽";
                 }),
-                n("jbc5f47a", "音訊空間停駐列"),
-                n("gfe2830f", function (e) {
-                    return "其他 " + e.count + " 人";
-                }),
+                n("jbc5f47a", "音訊空間停駐列");
+            n("gfe2830f", function (e) {
+                return "其他 " + e.count + " 人";
+            }),
                 n("dbeae6cf", function (e) {
                     return "其他 " + e.count + " 位聆聽者";
-                });
-            n("d2543d97", function (e) {
-                return "+" + e.count;
-            }),
+                }),
+                n("d2543d97", function (e) {
+                    return "+" + e.count;
+                }),
                 n("dc718e53", function (e) {
                     return "+ 其他 " + e.count + " 人";
                 }),
@@ -13200,4 +13202,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh-Hant.31e6da7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh-Hant.7db9a20a.js.map

@@ -7045,12 +7045,14 @@
                 n("f0ad5cc8", "वर्षे"),
                 n("a0dc6e4c", "सध्या उपलब्ध नाही"),
                 n("jd8b2e66", "सबस्क्राईब करा आणि पैसे द्या"),
+                n("ca784c0c", "Subscribe & pay with Apple"),
                 n("aa5df29f", function (e) {
                     return "" + e.oldPrice;
                 }),
                 n("g1c4f7a1", function (e) {
                     return "" + e.oldPrice;
                 }),
+                n("afd61c76", "Or, save up to 30%"),
                 n("i7fbacc4", "उपलब्ध सबस्क्रिप्शन स्तरांमध्ये स्विच करा"),
                 n("c9cc122b", function (e) {
                     return e.title + " मध्ये " + e.feature + " समाविष्ट आहे";
@@ -7849,9 +7851,7 @@
                 n("id720215", "हायरिंग"),
                 n("dd59f146", "जॉब प्रमोशन जाहिरात खाते"),
                 n("e7e36818", "जाहिरात खाती नोकरीच्या जाहिरातीसाठी पात्र असतात जेव्हा ते निधी स्त्रोतासह पूर्णपणे सेट केले जातात."),
-                n("c28566e0", "जाहिरात खाते"),
-                n("c80160d3", "जाहिरातीकरण"),
-                n("ff0edac0", "आपल्याला खात्री आहे की आपले सबस्क्रीप्शन रद्द करायचे आहे?");
+                n("c28566e0", "जाहिरात खाते");
             function t(e, c) {
                 for (var a = 0; a < c.length; a++) {
                     var n = c[a];
@@ -7890,7 +7890,9 @@
                     r(e, c)
                 );
             }
-            n("h2ac0348", "नाही, मला मागे घेऊन जा"),
+            n("c80160d3", "जाहिरातीकरण"),
+                n("ff0edac0", "आपल्याला खात्री आहे की आपले सबस्क्रीप्शन रद्द करायचे आहे?"),
+                n("h2ac0348", "नाही, मला मागे घेऊन जा"),
                 n("dbf9667e", "मला खात्री आहे"),
                 n("j7592572", "यू-टर्न"),
                 n("ee778942", "ट्राफिक लाइट्स"),
@@ -8909,16 +8911,16 @@
                 n("d6f2056f", function (e) {
                     return e.count + " ऐकत आहेत";
                 }),
-                n("jbc5f47a", "स्पेसेस डॉक"),
-                n("gfe2830f", function (e) {
-                    return "अन्य " + e.count + " जण";
-                }),
+                n("jbc5f47a", "स्पेसेस डॉक");
+            n("gfe2830f", function (e) {
+                return "अन्य " + e.count + " जण";
+            }),
                 n("dbeae6cf", function (e) {
                     return "अन्य " + e.count + " श्रोत" + f(e.count, "ा", "े");
-                });
-            n("d2543d97", function (e) {
-                return "+" + e.count;
-            }),
+                }),
+                n("d2543d97", function (e) {
+                    return "+" + e.count;
+                }),
                 n("dc718e53", function (e) {
                     return "+अन्य " + e.count + f(e.count, "", " जण");
                 }),
@@ -13198,4 +13200,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/mr.8e4f97da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/mr.84e4c25a.js.map

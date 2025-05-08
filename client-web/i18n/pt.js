@@ -7045,12 +7045,14 @@
                 s("f0ad5cc8", "ano"),
                 s("a0dc6e4c", "Atualmente indisponível"),
                 s("jd8b2e66", "Assinar e pagar"),
+                s("ca784c0c", "Subscribe & pay with Apple"),
                 s("aa5df29f", function (e) {
                     return "" + e.oldPrice;
                 }),
                 s("g1c4f7a1", function (e) {
                     return "" + e.oldPrice;
                 }),
+                s("afd61c76", "Or, save up to 30%"),
                 s("i7fbacc4", "Alternar entre os níveis de assinatura disponíveis"),
                 s("c9cc122b", function (e) {
                     return e.feature + " está incluído em " + e.title;
@@ -7849,9 +7851,7 @@
                 s("id720215", "Contratação"),
                 s("dd59f146", "Conta de anúncio da promoção de vagas"),
                 s("e7e36818", "As contas de anúncios têm direito a promoção de vagas se estiverem totalmente configuradas com uma fonte de financiamento."),
-                s("c28566e0", "Conta de anúncios"),
-                s("c80160d3", "Publicidade"),
-                s("ff0edac0", "Tem certeza de que deseja cancelar a assinatura?");
+                s("c28566e0", "Conta de anúncios");
             function i(e, a) {
                 for (var o = 0; o < a.length; o++) {
                     var s = a[o];
@@ -7890,7 +7890,9 @@
                     n(e, a)
                 );
             }
-            s("h2ac0348", "Não, quero voltar"),
+            s("c80160d3", "Publicidade"),
+                s("ff0edac0", "Tem certeza de que deseja cancelar a assinatura?"),
+                s("h2ac0348", "Não, quero voltar"),
                 s("dbf9667e", "Sim, tenho certeza"),
                 s("j7592572", "Retorno"),
                 s("ee778942", "Semáforo"),
@@ -8909,16 +8911,16 @@
                 s("d6f2056f", function (e) {
                     return e.count + " sintoniz" + r(e.count, "ou", "aram");
                 }),
-                s("jbc5f47a", "Dock do Espaços"),
-                s("gfe2830f", function (e) {
-                    return "mais " + e.count;
-                }),
+                s("jbc5f47a", "Dock do Espaços");
+            s("gfe2830f", function (e) {
+                return "mais " + e.count;
+            }),
                 s("dbeae6cf", function (e) {
                     return e.count + " outro" + r(e.count, " ouvinte", "s ouvintes");
-                });
-            s("d2543d97", function (e) {
-                return "+" + e.count;
-            }),
+                }),
+                s("d2543d97", function (e) {
+                    return "+" + e.count;
+                }),
                 s("dc718e53", function (e) {
                     return "+mais " + e.count;
                 }),
@@ -13192,4 +13194,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pt.82d87f0a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pt.69eb641a.js.map

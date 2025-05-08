@@ -7045,12 +7045,14 @@
                 n("f0ad5cc8", "વર્ષ"),
                 n("a0dc6e4c", "હાલમાં ઉપલબ્ધ નથી"),
                 n("jd8b2e66", "સબ્સ્ક્રાઇબ કરો અને ચૂકવો"),
+                n("ca784c0c", "Subscribe & pay with Apple"),
                 n("aa5df29f", function (e) {
                     return "" + e.oldPrice;
                 }),
                 n("g1c4f7a1", function (e) {
                     return "" + e.oldPrice;
                 }),
+                n("afd61c76", "Or, save up to 30%"),
                 n("i7fbacc4", "સબ્સ્ક્રિપ્શનના ઉપલબ્ધ ટિઅરો વચ્ચે ફેરબદલ કરો"),
                 n("c9cc122b", function (e) {
                     return e.title + "માં " + e.feature + "નો સમાવેશ છે";
@@ -7849,9 +7851,7 @@
                 n("id720215", "હાયરિંગ"),
                 n("dd59f146", "જોબ પ્રમોશન એડ એકાઉન્ટ"),
                 n("e7e36818", "જાહેરાત એકાઉન્ટ્સ નોકરીના પ્રમોશન માટે લાયક હોય છે જ્યારે તેઓ ભંડોળના સ્રોત સાથે સંપૂર્ણ રીતે સેટ થયા હોય."),
-                n("c28566e0", "જાહેરાત એકાઉન્ટ"),
-                n("c80160d3", "જાહેરાત"),
-                n("ff0edac0", "શું તમારે ખરેખર તમારું સબ્સ્ક્રિપ્શન રદ કરવું છે?");
+                n("c28566e0", "જાહેરાત એકાઉન્ટ");
             function t(e, c) {
                 for (var a = 0; a < c.length; a++) {
                     var n = c[a];
@@ -7890,7 +7890,9 @@
                     r(e, c)
                 );
             }
-            n("h2ac0348", "ના, મને ફરી ઉમેરો"),
+            n("c80160d3", "જાહેરાત"),
+                n("ff0edac0", "શું તમારે ખરેખર તમારું સબ્સ્ક્રિપ્શન રદ કરવું છે?"),
+                n("h2ac0348", "ના, મને ફરી ઉમેરો"),
                 n("dbf9667e", "મને ખાતરી છે"),
                 n("j7592572", "યુ-ટર્ન"),
                 n("ee778942", "ટ્રાફિક લાઇટો"),
@@ -8909,16 +8911,16 @@
                 n("d6f2056f", function (e) {
                     return e.count + " જોડાયા";
                 }),
-                n("jbc5f47a", "Spaces ડોક"),
-                n("gfe2830f", function (e) {
-                    return e.count + " અન્ય";
-                }),
+                n("jbc5f47a", "Spaces ડોક");
+            n("gfe2830f", function (e) {
+                return e.count + " અન્ય";
+            }),
                 n("dbeae6cf", function (e) {
                     return "અન્ય " + e.count + " શ્રોતા" + f(e.count, "", "ઓ");
-                });
-            n("d2543d97", function (e) {
-                return "+" + e.count;
-            }),
+                }),
+                n("d2543d97", function (e) {
+                    return "+" + e.count;
+                }),
                 n("dc718e53", function (e) {
                     return "+" + e.count + " અન્ય";
                 }),
@@ -13207,4 +13209,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/gu.27b1dcda.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/gu.868f2d2a.js.map

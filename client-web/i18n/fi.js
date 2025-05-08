@@ -7045,12 +7045,14 @@
                 e("f0ad5cc8", "vuosi"),
                 e("a0dc6e4c", "Ei saatavilla tällä hetkellä"),
                 e("jd8b2e66", "Tilaa ja maksa"),
+                e("ca784c0c", "Subscribe & pay with Apple"),
                 e("aa5df29f", function (a) {
                     return "" + a.oldPrice;
                 }),
                 e("g1c4f7a1", function (a) {
                     return "" + a.oldPrice;
                 }),
+                e("afd61c76", "Or, save up to 30%"),
                 e("i7fbacc4", "Vaihda tarjolla olevien tilaustasojen välillä"),
                 e("c9cc122b", function (a) {
                     return a.feature + " sisältyy tilaukseen " + a.title;
@@ -7849,9 +7851,7 @@
                 e("id720215", "Hiring"),
                 e("dd59f146", "Mainostili työpaikkailmoituksia varten"),
                 e("e7e36818", "Työpaikkailmoituksia voi hyödyntää mainostileillä, kun niiden rahoituslähde on kokonaan määritetty."),
-                e("c28566e0", "Mainostili"),
-                e("c80160d3", "mainontasivulta"),
-                e("ff0edac0", "Haluatko varmasti perua tilauksesi?");
+                e("c28566e0", "Mainostili");
             function s(a, t) {
                 for (var i = 0; i < t.length; i++) {
                     var e = t[i];
@@ -7890,7 +7890,9 @@
                     u(a, t)
                 );
             }
-            e("h2ac0348", "En, palaan takaisin"),
+            e("c80160d3", "mainontasivulta"),
+                e("ff0edac0", "Haluatko varmasti perua tilauksesi?"),
+                e("h2ac0348", "En, palaan takaisin"),
                 e("dbf9667e", "Olen varma"),
                 e("j7592572", "U-käännös"),
                 e("ee778942", "Liikennevalot"),
@@ -8909,16 +8911,16 @@
                 e("d6f2056f", function (a) {
                     return a.count + " linjoille saapunut" + n(a.count, "", "ta");
                 }),
-                e("jbc5f47a", "Huoneet-telakka"),
-                e("gfe2830f", function (a) {
-                    return a.count + " muu" + n(a.count, "", "ta");
-                }),
+                e("jbc5f47a", "Huoneet-telakka");
+            e("gfe2830f", function (a) {
+                return a.count + " muu" + n(a.count, "", "ta");
+            }),
                 e("dbeae6cf", function (a) {
                     return a.count + " muu" + n(a.count, " kuuntelij", "ta kuuntelija") + "a";
-                });
-            e("d2543d97", function (a) {
-                return "+" + a.count;
-            }),
+                }),
+                e("d2543d97", function (a) {
+                    return "+" + a.count;
+                }),
                 e("dc718e53", function (a) {
                     return "+" + a.count + " muu" + n(a.count, "", "ta");
                 }),
@@ -13205,4 +13207,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.5e7f1d4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.97a3e90a.js.map

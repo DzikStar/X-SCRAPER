@@ -7058,12 +7058,14 @@
                 n("f0ad5cc8", "سنة"),
                 n("a0dc6e4c", "غير متوفر حاليًا"),
                 n("jd8b2e66", "الاشتراك والدفع"),
+                n("ca784c0c", "Subscribe & pay with Apple"),
                 n("aa5df29f", function (e) {
                     return "" + e.oldPrice;
                 }),
                 n("g1c4f7a1", function (e) {
                     return "" + e.oldPrice;
                 }),
+                n("afd61c76", "Or, save up to 30%"),
                 n("i7fbacc4", "التبديل بين مستويات الاشتراك المتاحة"),
                 n("c9cc122b", function (e) {
                     return "تم تضمين " + e.feature + " في " + e.title;
@@ -7862,9 +7864,7 @@
                 n("id720215", "التوظيف"),
                 n("dd59f146", "حساب الإعلانات الخاص بالترويج للوظائف"),
                 n("e7e36818", "تكون حسابات الإعلانات مؤهَّلة للترويج للوظائف عندما يتم إعدادها بالكامل باستخدام مصدر تمويل."),
-                n("c28566e0", "حساب الإعلانات"),
-                n("c80160d3", "الإعلان"),
-                n("ff0edac0", "هل تريدين بالفعل إلغاء اشتراككِ؟");
+                n("c28566e0", "حساب الإعلانات");
             function f(e, a) {
                 for (var c = 0; c < a.length; c++) {
                     var n = a[c];
@@ -7903,7 +7903,9 @@
                     r(e, a)
                 );
             }
-            n("h2ac0348", "لا، أريد الرجوع"),
+            n("c80160d3", "الإعلان"),
+                n("ff0edac0", "هل تريدين بالفعل إلغاء اشتراككِ؟"),
+                n("h2ac0348", "لا، أريد الرجوع"),
                 n("dbf9667e", "أنا متأكدة"),
                 n("j7592572", "دوران للخلف"),
                 n("ee778942", "إشارات مرور"),
@@ -8922,16 +8924,16 @@
                 n("d6f2056f", function (e) {
                     return e.count + " تفاعَل" + t(e.count, "وا", "وا", "", "وا", "ا", "");
                 }),
-                n("jbc5f47a", "إرساء المساحات"),
-                n("gfe2830f", function (e) {
-                    return e.count + " آخر" + t(e.count, "ون", "", "", "", "ان", "");
-                }),
+                n("jbc5f47a", "إرساء المساحات");
+            n("gfe2830f", function (e) {
+                return e.count + " آخر" + t(e.count, "ون", "", "", "", "ان", "");
+            }),
                 n("dbeae6cf", function (e) {
                     return "" + e.count + t(e.count, " مستمعات أخريات", " مستمعةً أخرى", "مستمعة أخرى", " مستمعةٍ أخرى", "مستمعتان آخريان", "لا توجد أي مستمعة أخرى");
-                });
-            n("d2543d97", function (e) {
-                return e.count + "+";
-            }),
+                }),
+                n("d2543d97", function (e) {
+                    return e.count + "+";
+                }),
                 n("dc718e53", function (e) {
                     return e.count + " آخر" + t(e.count, "ون", "", "", "ون", "ان", "") + "+";
                 }),
@@ -13206,4 +13208,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ar-x-fm.583c986a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ar-x-fm.ab4b1d8a.js.map

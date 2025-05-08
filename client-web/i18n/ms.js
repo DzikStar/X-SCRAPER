@@ -7044,12 +7044,14 @@
                 i("f0ad5cc8", "tahun"),
                 i("a0dc6e4c", "Tidak tersedia pada masa ini"),
                 i("jd8b2e66", "Langgan & bayar"),
+                i("ca784c0c", "Subscribe & pay with Apple"),
                 i("aa5df29f", function (a) {
                     return "" + a.oldPrice;
                 }),
                 i("g1c4f7a1", function (a) {
                     return "" + a.oldPrice;
                 }),
+                i("afd61c76", "Or, save up to 30%"),
                 i("i7fbacc4", "Bertukar antara peringkat langganan yang tersedia"),
                 i("c9cc122b", function (a) {
                     return a.feature + " disertakan dalam " + a.title;
@@ -7848,9 +7850,7 @@
                 i("id720215", "Pengambilan Pekerja"),
                 i("dd59f146", "Akaun iklan promosi pekerjaan"),
                 i("e7e36818", "Akaun iklan adalah layak untuk promosi pekerjaan apabila akaun tersebut ditetapkan sepenuhnya dengan sumber pembiayaan."),
-                i("c28566e0", "Akaun Iklan"),
-                i("c80160d3", "Pengiklanan"),
-                i("ff0edac0", "Adakah anda pasti anda ingin membatalkan langganan anda?");
+                i("c28566e0", "Akaun Iklan");
             function d(a, n) {
                 for (var e = 0; e < n.length; e++) {
                     var i = n[e];
@@ -7889,7 +7889,9 @@
                     u(a, n)
                 );
             }
-            i("h2ac0348", "Tidak, bawa saya kembali"),
+            i("c80160d3", "Pengiklanan"),
+                i("ff0edac0", "Adakah anda pasti anda ingin membatalkan langganan anda?"),
+                i("h2ac0348", "Tidak, bawa saya kembali"),
                 i("dbf9667e", "Saya pasti"),
                 i("j7592572", "Pusingan U"),
                 i("ee778942", "Lampu isyarat"),
@@ -8908,16 +8910,16 @@
                 i("d6f2056f", function (a) {
                     return a.count + " turut serta";
                 }),
-                i("jbc5f47a", "Dok Spaces"),
-                i("gfe2830f", function (a) {
-                    return a.count + " yang lain";
-                }),
+                i("jbc5f47a", "Dok Spaces");
+            i("gfe2830f", function (a) {
+                return a.count + " yang lain";
+            }),
                 i("dbeae6cf", function (a) {
                     return a.count + " pendengar lain";
-                });
-            i("d2543d97", function (a) {
-                return "+" + a.count;
-            }),
+                }),
+                i("d2543d97", function (a) {
+                    return "+" + a.count;
+                }),
                 i("dc718e53", function (a) {
                     return "+" + a.count + " yang lain";
                 }),
@@ -13190,4 +13192,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.4a32a96a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.10bc1eda.js.map

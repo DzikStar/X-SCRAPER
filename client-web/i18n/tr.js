@@ -7044,12 +7044,14 @@
                 n("f0ad5cc8", "yıl"),
                 n("a0dc6e4c", "Şu anda kullanılamıyor"),
                 n("jd8b2e66", "Abone ol ve ödeme yap"),
+                n("ca784c0c", "Subscribe & pay with Apple"),
                 n("aa5df29f", function (e) {
                     return "" + e.oldPrice;
                 }),
                 n("g1c4f7a1", function (e) {
                     return "" + e.oldPrice;
                 }),
+                n("afd61c76", "Or, save up to 30%"),
                 n("i7fbacc4", "Kullanılabilir abonelik katmanları arasında geçiş yap"),
                 n("c9cc122b", function (e) {
                     return e.feature + ", " + e.title + " kapsamına dahildir";
@@ -7848,9 +7850,7 @@
                 n("id720215", "Hiring"),
                 n("dd59f146", "İş ilanı tanıtımı reklam hesabı"),
                 n("e7e36818", "Bir ödeme yöntemiyle tamamen ayarlandığında reklam hesapları iş ilanlarını tanıtabilir."),
-                n("c28566e0", "Reklam Hesabı"),
-                n("c80160d3", "Reklam"),
-                n("ff0edac0", "Aboneliğini iptal etmek istediğinden emin misin?");
+                n("c28566e0", "Reklam Hesabı");
             function l(e, a) {
                 for (var i = 0; i < a.length; i++) {
                     var n = a[i];
@@ -7889,7 +7889,9 @@
                     t(e, a)
                 );
             }
-            n("h2ac0348", "Hayır, beni geri götür"),
+            n("c80160d3", "Reklam"),
+                n("ff0edac0", "Aboneliğini iptal etmek istediğinden emin misin?"),
+                n("h2ac0348", "Hayır, beni geri götür"),
                 n("dbf9667e", "Eminim"),
                 n("j7592572", "U dönüşü"),
                 n("ee778942", "Trafik ışıkları"),
@@ -8908,16 +8910,16 @@
                 n("d6f2056f", function (e) {
                     return e.count + " katıldı";
                 }),
-                n("jbc5f47a", "Sohbet Odaları dock'u"),
-                n("gfe2830f", function (e) {
-                    return "diğer " + e.count + " kişi";
-                }),
+                n("jbc5f47a", "Sohbet Odaları dock'u");
+            n("gfe2830f", function (e) {
+                return "diğer " + e.count + " kişi";
+            }),
                 n("dbeae6cf", function (e) {
                     return e.count + " dinleyici daha";
-                });
-            n("d2543d97", function (e) {
-                return "+" + e.count;
-            }),
+                }),
+                n("d2543d97", function (e) {
+                    return "+" + e.count;
+                }),
                 n("dc718e53", function (e) {
                     return "+diğer " + e.count + " kişi";
                 }),
@@ -13200,4 +13202,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/tr.80256cda.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/tr.9a8665ea.js.map

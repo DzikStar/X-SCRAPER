@@ -6,7 +6,11 @@
             n.d(t, { T: () => l });
             var a = n(97882),
                 r = n(685731);
-            const l = ({ annualPriceMonthly: e, includeTax: t, percentOff: n, price: l }) => (0, a.x)({ amount: (0, r.aU)(l, t, n) / (e ? 12 : 1), currencyCode: l?.currency_code.toUpperCase(), removeTrailingZeros: !0 });
+            const l = ({ annualPriceMonthly: e, includeTax: t, monthlyPriceAnnual: n, percentOff: l, price: i }) => {
+                const o = (0, r.aU)(i, t, l),
+                    s = e ? o / 12 : n ? 12 * o : o;
+                return (0, a.x)({ amount: s, currencyCode: i?.currency_code.toUpperCase(), removeTrailingZeros: !0 });
+            };
         },
         862695: (e, t, n) => {
             n.d(t, { V: () => h, f: () => E });
@@ -1075,4 +1079,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Verified-964cff98.430b327a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Verified-964cff98.eb16db9a.js.map

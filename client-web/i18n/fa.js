@@ -7045,12 +7045,14 @@
                 n("f0ad5cc8", "سال"),
                 n("a0dc6e4c", "فعلاً دردسترس نیست"),
                 n("jd8b2e66", "مشترک شدن و پرداخت هزینه"),
+                n("ca784c0c", "Subscribe & pay with Apple"),
                 n("aa5df29f", function (e) {
                     return "" + e.oldPrice;
                 }),
                 n("g1c4f7a1", function (e) {
                     return "" + e.oldPrice;
                 }),
+                n("afd61c76", "Or, save up to 30%"),
                 n("i7fbacc4", "تعویض به یکی‌از سطوح اشتراک موجود"),
                 n("c9cc122b", function (e) {
                     return e.feature + " در " + e.title + " وجود دارد";
@@ -7849,9 +7851,7 @@
                 n("id720215", "استخدام"),
                 n("dd59f146", "حساب کاربری آگهی برای تبلیغ شغل"),
                 n("e7e36818", "حساب‌های آگهی برای تبلیغ شغل وقتی واجدشرایط است که با منبع مالی کاملاً راه‌اندازی شده باشد."),
-                n("c28566e0", "حساب کاربری آگهی"),
-                n("c80160d3", "تبلیغات"),
-                n("ff0edac0", "مطمئنید می‌خواهید اشتراکتان را لغو کنید؟");
+                n("c28566e0", "حساب کاربری آگهی");
             function t(e, a) {
                 for (var c = 0; c < a.length; c++) {
                     var n = a[c];
@@ -7890,7 +7890,9 @@
                     r(e, a)
                 );
             }
-            n("h2ac0348", "نه، برگشت به مرحله پیشین"),
+            n("c80160d3", "تبلیغات"),
+                n("ff0edac0", "مطمئنید می‌خواهید اشتراکتان را لغو کنید؟"),
+                n("h2ac0348", "نه، برگشت به مرحله پیشین"),
                 n("dbf9667e", "مطمئن هستم"),
                 n("j7592572", "محل دور زدن"),
                 n("ee778942", "چراغ‌های راهنمایی و رانندگی"),
@@ -8909,16 +8911,16 @@
                 n("d6f2056f", function (e) {
                     return e.count + " نفر شنونده‌اند";
                 }),
-                n("jbc5f47a", "سکوی اتاق گفت‌وگو"),
-                n("gfe2830f", function (e) {
-                    return e.count + " مورد دیگر";
-                }),
+                n("jbc5f47a", "سکوی اتاق گفت‌وگو");
+            n("gfe2830f", function (e) {
+                return e.count + " مورد دیگر";
+            }),
                 n("dbeae6cf", function (e) {
                     return e.count + " شنوند" + f(e.count, "ه", "گان") + " دیگر";
-                });
-            n("d2543d97", function (e) {
-                return "+" + e.count;
-            }),
+                }),
+                n("d2543d97", function (e) {
+                    return "+" + e.count;
+                }),
                 n("dc718e53", function (e) {
                     return "+" + e.count + " مورد دیگر";
                 }),
@@ -13198,4 +13200,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fa.49ed2eaa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fa.d39862ca.js.map

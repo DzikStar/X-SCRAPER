@@ -7044,12 +7044,14 @@
                 o("f0ad5cc8", "año"),
                 o("a0dc6e4c", "No disponible en este momento"),
                 o("jd8b2e66", "Suscribirse y pagar"),
+                o("ca784c0c", "Subscribe & pay with Apple"),
                 o("aa5df29f", function (e) {
                     return "" + e.oldPrice;
                 }),
                 o("g1c4f7a1", function (e) {
                     return "" + e.oldPrice;
                 }),
+                o("afd61c76", "Or, save up to 30%"),
                 o("i7fbacc4", "Cambiar entre los niveles de suscripción disponibles"),
                 o("c9cc122b", function (e) {
                     return e.feature + " se incluye en " + e.title;
@@ -7848,9 +7850,7 @@
                 o("id720215", "Empleos"),
                 o("dd59f146", "Cuenta de anuncios para promocionar empleos"),
                 o("e7e36818", "Las cuentas de anuncios pueden acceder a la promoción de empleos cuando están totalmente configuradas con una fuente de financiación."),
-                o("c28566e0", "Cuenta de anuncios"),
-                o("c80160d3", "Anuncios"),
-                o("ff0edac0", "¿Seguro que quieres cancelar tu suscripción?");
+                o("c28566e0", "Cuenta de anuncios");
             function s(e, a) {
                 for (var n = 0; n < a.length; n++) {
                     var o = a[n];
@@ -7889,7 +7889,9 @@
                     i(e, a)
                 );
             }
-            o("h2ac0348", "No, quiero volver"),
+            o("c80160d3", "Anuncios"),
+                o("ff0edac0", "¿Seguro que quieres cancelar tu suscripción?"),
+                o("h2ac0348", "No, quiero volver"),
                 o("dbf9667e", "Estoy seguro"),
                 o("j7592572", "Giro en U"),
                 o("ee778942", "Semáforos"),
@@ -8908,16 +8910,16 @@
                 o("d6f2056f", function (e) {
                     return e.count + " conectado" + r(e.count, "", "s");
                 }),
-                o("jbc5f47a", "Panel de Espacios"),
-                o("gfe2830f", function (e) {
-                    return e.count + " más";
-                }),
+                o("jbc5f47a", "Panel de Espacios");
+            o("gfe2830f", function (e) {
+                return e.count + " más";
+            }),
                 o("dbeae6cf", function (e) {
                     return e.count + " oyente" + r(e.count, "", "s") + " más";
-                });
-            o("d2543d97", function (e) {
-                return "+" + e.count;
-            }),
+                }),
+                o("d2543d97", function (e) {
+                    return "+" + e.count;
+                }),
                 o("dc718e53", function (e) {
                     return e.count + " más+";
                 }),
@@ -13203,4 +13205,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/es.89a1edaa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/es.be811c1a.js.map

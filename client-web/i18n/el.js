@@ -7044,12 +7044,14 @@
                 n("f0ad5cc8", "έτος"),
                 n("a0dc6e4c", "Προς το παρόν μη διαθέσιμο"),
                 n("jd8b2e66", "Εγγραφή & πληρωμή"),
+                n("ca784c0c", "Subscribe & pay with Apple"),
                 n("aa5df29f", function (e) {
                     return "" + e.oldPrice;
                 }),
                 n("g1c4f7a1", function (e) {
                     return "" + e.oldPrice;
                 }),
+                n("afd61c76", "Or, save up to 30%"),
                 n("i7fbacc4", "Εναλλαγή μεταξύ των διαθέσιμων επιπέδων συνδρομής"),
                 n("c9cc122b", function (e) {
                     return e.feature + " περιλαμβάνεται στο " + e.title;
@@ -7848,9 +7850,7 @@
                 n("id720215", "Hiring"),
                 n("dd59f146", "Λογαριασμός αγγελίας προώθησης θέσης εργασίας"),
                 n("e7e36818", "Οι λογαριασμοί διαφημίσεων είναι επιλέξιμοι για προώθηση θέσεων εργασίας όταν είναι πλήρως διαμορφωμένοι με μια πηγή χρηματοδότησης."),
-                n("c28566e0", "Λογαριασμός διαφήμισης"),
-                n("c80160d3", "διαφήμισης"),
-                n("ff0edac0", "Είστε βέβαιοι ότι θέλετε να ακυρώσετε τη συνδρομή σας;");
+                n("c28566e0", "Λογαριασμός διαφήμισης");
             function t(e, c) {
                 for (var a = 0; a < c.length; a++) {
                     var n = c[a];
@@ -7889,7 +7889,9 @@
                     r(e, c)
                 );
             }
-            n("h2ac0348", "Όχι, πήγαινέ με πίσω."),
+            n("c80160d3", "διαφήμισης"),
+                n("ff0edac0", "Είστε βέβαιοι ότι θέλετε να ακυρώσετε τη συνδρομή σας;"),
+                n("h2ac0348", "Όχι, πήγαινέ με πίσω."),
                 n("dbf9667e", "Είμαι βέβαιος"),
                 n("j7592572", "Αναστροφή"),
                 n("ee778942", "Φωτεινοί σηματοδότες"),
@@ -8908,16 +8910,16 @@
                 n("d6f2056f", function (e) {
                     return e.count + " συντονίστηκ" + f(e.count, "ε", "αν");
                 }),
-                n("jbc5f47a", "Πλαίσιο Χώρων"),
-                n("gfe2830f", function (e) {
-                    return e.count + " ακόμη";
-                }),
+                n("jbc5f47a", "Πλαίσιο Χώρων");
+            n("gfe2830f", function (e) {
+                return e.count + " ακόμη";
+            }),
                 n("dbeae6cf", function (e) {
                     return e.count + " ακόμα ακροατ" + f(e.count, "ή", "έ") + "ς";
-                });
-            n("d2543d97", function (e) {
-                return "+" + e.count;
-            }),
+                }),
+                n("d2543d97", function (e) {
+                    return "+" + e.count;
+                }),
                 n("dc718e53", function (e) {
                     return "+" + e.count + " ακόμη";
                 }),
@@ -13190,4 +13192,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/el.e4ad9f6a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/el.6b45d1aa.js.map

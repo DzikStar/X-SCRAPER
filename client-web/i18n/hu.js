@@ -7044,12 +7044,14 @@
                 s("f0ad5cc8", "év"),
                 s("a0dc6e4c", "Jelenleg nem elérhető"),
                 s("jd8b2e66", "Előfizetés és fizetés"),
+                s("ca784c0c", "Subscribe & pay with Apple"),
                 s("aa5df29f", function (e) {
                     return "" + e.oldPrice;
                 }),
                 s("g1c4f7a1", function (e) {
                     return "" + e.oldPrice;
                 }),
+                s("afd61c76", "Or, save up to 30%"),
                 s("i7fbacc4", "Válts az elérhető előfizetési csomag között"),
                 s("c9cc122b", function (e) {
                     return "A(z) " + e.feature + " a(z) " + e.title + " előfizetés része";
@@ -7848,9 +7850,7 @@
                 s("id720215", "Toborzási"),
                 s("dd59f146", "Álláshirdetéseket ajánló hirdetési fiók"),
                 s("e7e36818", "A hirdetési fiókok jogosultak az álláshirdetések ajánlására, amikor minden be van állítva fizetési lehetőséggel."),
-                s("c28566e0", "Hirdetési fiók"),
-                s("c80160d3", "Hirdetések"),
-                s("ff0edac0", "Biztosan le szeretnéd mondani az előfizetésedet?");
+                s("c28566e0", "Hirdetési fiók");
             function n(e, t) {
                 for (var a = 0; a < t.length; a++) {
                     var s = t[a];
@@ -7889,7 +7889,9 @@
                     z(e, t)
                 );
             }
-            s("h2ac0348", "Nem, visszalépek"),
+            s("c80160d3", "Hirdetések"),
+                s("ff0edac0", "Biztosan le szeretnéd mondani az előfizetésedet?"),
+                s("h2ac0348", "Nem, visszalépek"),
                 s("dbf9667e", "Biztos vagyok benne"),
                 s("j7592572", "Visszafordulás"),
                 s("ee778942", "Közlekedési lámpák"),
@@ -8908,16 +8910,16 @@
                 s("d6f2056f", function (e) {
                     return e.count + " ember hallgatta";
                 }),
-                s("jbc5f47a", "Terek lap"),
-                s("gfe2830f", function (e) {
-                    return e.count + " másik felhasználó";
-                }),
+                s("jbc5f47a", "Terek lap");
+            s("gfe2830f", function (e) {
+                return e.count + " másik felhasználó";
+            }),
                 s("dbeae6cf", function (e) {
                     return e.count + " másik hallgató";
-                });
-            s("d2543d97", function (e) {
-                return "+" + e.count;
-            }),
+                }),
+                s("d2543d97", function (e) {
+                    return "+" + e.count;
+                }),
                 s("dc718e53", function (e) {
                     return "+" + e.count + " másik felhasználó";
                 }),
@@ -13200,4 +13202,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hu.7949511a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hu.b8e4082a.js.map

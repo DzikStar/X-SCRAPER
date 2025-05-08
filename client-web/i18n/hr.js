@@ -7052,12 +7052,14 @@
                 o("f0ad5cc8", "godišnje"),
                 o("a0dc6e4c", "Trenutačno nedostupno"),
                 o("jd8b2e66", "Pretplati se i plati"),
+                o("ca784c0c", "Subscribe & pay with Apple"),
                 o("aa5df29f", function (a) {
                     return "" + a.oldPrice;
                 }),
                 o("g1c4f7a1", function (a) {
                     return "" + a.oldPrice;
                 }),
+                o("afd61c76", "Or, save up to 30%"),
                 o("i7fbacc4", "Prebacujte između dostupnih razina pretplate"),
                 o("c9cc122b", function (a) {
                     return "Značajka " + a.feature + " uključena je u " + a.title;
@@ -7856,9 +7858,7 @@
                 o("id720215", "Zapošljavanje"),
                 o("dd59f146", "Račun za oglase i promoviranje posla"),
                 o("e7e36818", "Računi za oglase ispunjavaju uvjete za promoviranje poslova kada su u potpunosti postavljeni i imaju izvor financiranja."),
-                o("c28566e0", "Račun za oglase"),
-                o("c80160d3", "Oglašavanje"),
-                o("ff0edac0", "Sigurno želite otkazati pretplatu?");
+                o("c28566e0", "Račun za oglase");
             function t(a, e) {
                 for (var i = 0; i < e.length; i++) {
                     var o = e[i];
@@ -7897,7 +7897,9 @@
                     r(a, e)
                 );
             }
-            o("h2ac0348", "Ne, vrati se"),
+            o("c80160d3", "Oglašavanje"),
+                o("ff0edac0", "Sigurno želite otkazati pretplatu?"),
+                o("h2ac0348", "Ne, vrati se"),
                 o("dbf9667e", "Da"),
                 o("j7592572", "Polukružni okret"),
                 o("ee778942", "Semafor"),
@@ -8916,16 +8918,16 @@
                 o("d6f2056f", function (a) {
                     return a.count + " slušatelj" + n(a.count, "a", "", "a");
                 }),
-                o("jbc5f47a", "Okno Prostori"),
-                o("gfe2830f", function (a) {
-                    return "još " + n(a.count, "njih ", "", "njih ") + a.count;
-                }),
+                o("jbc5f47a", "Okno Prostori");
+            o("gfe2830f", function (a) {
+                return "još " + n(a.count, "njih ", "", "njih ") + a.count;
+            }),
                 o("dbeae6cf", function (a) {
                     return "još " + a.count + " slušatelj" + n(a.count, "a", "", "a");
-                });
-            o("d2543d97", function (a) {
-                return "+" + a.count;
-            }),
+                }),
+                o("d2543d97", function (a) {
+                    return "+" + a.count;
+                }),
                 o("dc718e53", function (a) {
                     return "+još " + n(a.count, "njih ", "", "njih ") + a.count;
                 }),
@@ -13213,4 +13215,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hr.cf803f0a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hr.867274ca.js.map

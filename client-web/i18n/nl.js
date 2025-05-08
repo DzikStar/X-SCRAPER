@@ -7045,12 +7045,14 @@
                 a("f0ad5cc8", "jaar"),
                 a("a0dc6e4c", "Momenteel niet beschikbaar"),
                 a("jd8b2e66", "Abonneren en betalen"),
+                a("ca784c0c", "Subscribe & pay with Apple"),
                 a("aa5df29f", function (e) {
                     return "" + e.oldPrice;
                 }),
                 a("g1c4f7a1", function (e) {
                     return "" + e.oldPrice;
                 }),
+                a("afd61c76", "Or, save up to 30%"),
                 a("i7fbacc4", "Switchen tussen de beschikbare abonnementsniveaus"),
                 a("c9cc122b", function (e) {
                     return e.feature + " is inbegrepen in " + e.title;
@@ -7849,9 +7851,7 @@
                 a("id720215", "Hiring"),
                 a("dd59f146", "Advertentieaccount voor het uitlichten van vacatures"),
                 a("e7e36818", "Advertentieaccounts komen in aanmerking voor het uitlichten van vacatures als ze volledig zijn ingesteld, inclusief een financieringsbron."),
-                a("c28566e0", "Advertentieaccount"),
-                a("c80160d3", "Adverteren"),
-                a("ff0edac0", "Weet je zeker dat je je abonnement wil opzeggen?");
+                a("c28566e0", "Advertentieaccount");
             function i(e, n) {
                 for (var t = 0; t < n.length; t++) {
                     var a = n[t];
@@ -7890,7 +7890,9 @@
                     o(e, n)
                 );
             }
-            a("h2ac0348", "Nee, ga terug"),
+            a("c80160d3", "Adverteren"),
+                a("ff0edac0", "Weet je zeker dat je je abonnement wil opzeggen?"),
+                a("h2ac0348", "Nee, ga terug"),
                 a("dbf9667e", "Ik weet het zeker"),
                 a("j7592572", "U-bocht"),
                 a("ee778942", "Verkeerslichten"),
@@ -8909,16 +8911,16 @@
                 a("d6f2056f", function (e) {
                     return e.count + " beluisterd";
                 }),
-                a("jbc5f47a", "Spaces-dock"),
-                a("gfe2830f", function (e) {
-                    return e.count + " ander" + r(e.count, "", "en");
-                }),
+                a("jbc5f47a", "Spaces-dock");
+            a("gfe2830f", function (e) {
+                return e.count + " ander" + r(e.count, "", "en");
+            }),
                 a("dbeae6cf", function (e) {
                     return e.count + " andere luisteraar" + r(e.count, "", "s");
-                });
-            a("d2543d97", function (e) {
-                return "+ " + e.count;
-            }),
+                }),
+                a("d2543d97", function (e) {
+                    return "+ " + e.count;
+                }),
                 a("dc718e53", function (e) {
                     return "+ " + e.count + " ander" + r(e.count, "", "en");
                 }),
@@ -13205,4 +13207,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.8d36f26a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.7831b6aa.js.map

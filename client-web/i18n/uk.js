@@ -7054,12 +7054,14 @@
                 n("f0ad5cc8", "рік"),
                 n("a0dc6e4c", "Наразі недоступно"),
                 n("jd8b2e66", "Передплатити"),
+                n("ca784c0c", "Subscribe & pay with Apple"),
                 n("aa5df29f", function (e) {
                     return "" + e.oldPrice;
                 }),
                 n("g1c4f7a1", function (e) {
                     return "" + e.oldPrice;
                 }),
+                n("afd61c76", "Or, save up to 30%"),
                 n("i7fbacc4", "Перейти на інший план"),
                 n("c9cc122b", function (e) {
                     return e.feature + " входить у план " + e.title;
@@ -7858,9 +7860,7 @@
                 n("id720215", "Підбір персоналу"),
                 n("dd59f146", "Рекламний профіль для просування вакансій"),
                 n("e7e36818", "Рекламні профілі стають доступні для просування вакансій після їх повного налаштування із зазначенням джерела фінансування."),
-                n("c28566e0", "Рекламний профіль"),
-                n("c80160d3", "Реклама"),
-                n("ff0edac0", "Ви дійсно хочете скасувати свою передплату?");
+                n("c28566e0", "Рекламний профіль");
             function t(e, c) {
                 for (var a = 0; a < c.length; a++) {
                     var n = c[a];
@@ -7899,7 +7899,9 @@
                     r(e, c)
                 );
             }
-            n("h2ac0348", "Ні, поверніть мене назад"),
+            n("c80160d3", "Реклама"),
+                n("ff0edac0", "Ви дійсно хочете скасувати свою передплату?"),
+                n("h2ac0348", "Ні, поверніть мене назад"),
                 n("dbf9667e", "Так"),
                 n("j7592572", "Розворот"),
                 n("ee778942", "Світлофор"),
@@ -8918,16 +8920,16 @@
                 n("d6f2056f", function (e) {
                     return e.count + " ос" + f(e.count, "оби підключили", "іб підключили", "оба підключила", "оби підключило") + "ся";
                 }),
-                n("jbc5f47a", "Панель просторів"),
-                n("gfe2830f", function (e) {
-                    return e.count + " ос" + f(e.count, "оби", "іб", "оба", "оби");
-                }),
+                n("jbc5f47a", "Панель просторів");
+            n("gfe2830f", function (e) {
+                return e.count + " ос" + f(e.count, "оби", "іб", "оба", "оби");
+            }),
                 n("dbeae6cf", function (e) {
                     return e.count + " слухач" + f(e.count, "і", "ів", "", "а");
-                });
-            n("d2543d97", function (e) {
-                return "+" + e.count;
-            }),
+                }),
+                n("d2543d97", function (e) {
+                    return "+" + e.count;
+                }),
                 n("dc718e53", function (e) {
                     return "Ще " + e.count;
                 }),
@@ -13205,4 +13207,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/uk.5bdd2daa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/uk.690e6e7a.js.map

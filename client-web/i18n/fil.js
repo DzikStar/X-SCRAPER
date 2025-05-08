@@ -7045,12 +7045,14 @@
                 i("f0ad5cc8", "taon"),
                 i("a0dc6e4c", "Hindi available sa ngayon"),
                 i("jd8b2e66", "Mag-subscribe at magbayad"),
+                i("ca784c0c", "Subscribe & pay with Apple"),
                 i("aa5df29f", function (a) {
                     return "" + a.oldPrice;
                 }),
                 i("g1c4f7a1", function (a) {
                     return "" + a.oldPrice;
                 }),
+                i("afd61c76", "Or, save up to 30%"),
                 i("i7fbacc4", "Magpalipat-lipat sa mga available na subscription tier"),
                 i("c9cc122b", function (a) {
                     return "Kasama ang " + a.feature + " sa " + a.title;
@@ -7849,9 +7851,7 @@
                 i("id720215", "Hiring"),
                 i("dd59f146", "Ad account para sa pag-promote ng trabaho"),
                 i("e7e36818", "Kuwalipikado ang mga ad account para sa pag-promote ng trabaho kapag ganap nang naka-set up ang mga ito na may mapagkukunan ng pondo."),
-                i("c28566e0", "Ad Account"),
-                i("c80160d3", "Advertising"),
-                i("ff0edac0", "Sigurado ka bang gusto mong kanselahin ang subscription mo?");
+                i("c28566e0", "Ad Account");
             function t(a, n) {
                 for (var g = 0; g < n.length; g++) {
                     var i = n[g];
@@ -7890,7 +7890,9 @@
                     o(a, n)
                 );
             }
-            i("h2ac0348", "Hindi, ibalik ako"),
+            i("c80160d3", "Advertising"),
+                i("ff0edac0", "Sigurado ka bang gusto mong kanselahin ang subscription mo?"),
+                i("h2ac0348", "Hindi, ibalik ako"),
                 i("dbf9667e", "Sigurado ako"),
                 i("j7592572", "Mag-U turn"),
                 i("ee778942", "Mga ilaw ng trapiko"),
@@ -8909,16 +8911,16 @@
                 i("d6f2056f", function (a) {
                     return a.count + " nakatutok";
                 }),
-                i("jbc5f47a", "Dock ng Spaces"),
-                i("gfe2830f", function (a) {
-                    return a.count + " pa";
-                }),
+                i("jbc5f47a", "Dock ng Spaces");
+            i("gfe2830f", function (a) {
+                return a.count + " pa";
+            }),
                 i("dbeae6cf", function (a) {
                     return a.count + " pang tagapakinig";
-                });
-            i("d2543d97", function (a) {
-                return "+" + a.count;
-            }),
+                }),
+                i("d2543d97", function (a) {
+                    return "+" + a.count;
+                }),
                 i("dc718e53", function (a) {
                     return "+" + a.count + " pang iba";
                 }),
@@ -13204,4 +13206,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fil.2a6cfd1a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fil.1759b7fa.js.map

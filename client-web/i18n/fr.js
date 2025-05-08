@@ -7049,12 +7049,14 @@
                 n("f0ad5cc8", "an"),
                 n("a0dc6e4c", "Actuellement indisponible"),
                 n("jd8b2e66", "S'abonner et payer"),
+                n("ca784c0c", "Subscribe & pay with Apple"),
                 n("aa5df29f", function (e) {
                     return "" + e.oldPrice;
                 }),
                 n("g1c4f7a1", function (e) {
                     return "" + e.oldPrice;
                 }),
+                n("afd61c76", "Or, save up to 30%"),
                 n("i7fbacc4", "Changer de type d'abonnement"),
                 n("c9cc122b", function (e) {
                     return "La fonctionnalité " + e.feature + " est comprise dans " + e.title + ".";
@@ -7853,9 +7855,7 @@
                 n("id720215", "Recrutement"),
                 n("dd59f146", "Compte d'annonceur permettant la promotion d'offres d'emploi"),
                 n("e7e36818", "Les comptes d'annonceur peuvent promouvoir des offres d'emploi quand leur configuration est complète, source de financement comprise."),
-                n("c28566e0", "Compte d'annonceur"),
-                n("c80160d3", "Publicité"),
-                n("ff0edac0", "Vous voulez annuler votre abonnement ?");
+                n("c28566e0", "Compte d'annonceur");
             function a(e, t) {
                 for (var s = 0; s < t.length; s++) {
                     var n = t[s];
@@ -7894,7 +7894,9 @@
                     i(e, t)
                 );
             }
-            n("h2ac0348", "Non, j'ai changé d'avis"),
+            n("c80160d3", "Publicité"),
+                n("ff0edac0", "Vous voulez annuler votre abonnement ?"),
+                n("h2ac0348", "Non, j'ai changé d'avis"),
                 n("dbf9667e", "Je suis sûr"),
                 n("j7592572", "Demi‑tour"),
                 n("ee778942", "Feux tricolores"),
@@ -8913,16 +8915,16 @@
                 n("d6f2056f", function (e) {
                     return e.count + " " + r(e.count, "a", "ont") + " écouté";
                 }),
-                n("jbc5f47a", "Ancrage des Spaces"),
-                n("gfe2830f", function (e) {
-                    return e.count + " autre" + r(e.count, " personne", "s personnes");
-                }),
+                n("jbc5f47a", "Ancrage des Spaces");
+            n("gfe2830f", function (e) {
+                return e.count + " autre" + r(e.count, " personne", "s personnes");
+            }),
                 n("dbeae6cf", function (e) {
                     return e.count + " autre" + r(e.count, " auditeur", "s auditeurs");
-                });
-            n("d2543d97", function (e) {
-                return "+" + e.count;
-            }),
+                }),
+                n("d2543d97", function (e) {
+                    return "+" + e.count;
+                }),
                 n("dc718e53", function (e) {
                     return "+" + e.count + " autre" + r(e.count, " personne", "s personnes");
                 }),
@@ -13195,4 +13197,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.5c8e4b5a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.e9e551ba.js.map

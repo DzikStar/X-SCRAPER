@@ -7045,12 +7045,14 @@
                 t("f0ad5cc8", "Jahr"),
                 t("a0dc6e4c", "Derzeit nicht verfügbar"),
                 t("jd8b2e66", "Abonnieren und bezahlen"),
+                t("ca784c0c", "Subscribe & pay with Apple"),
                 t("aa5df29f", function (e) {
                     return "" + e.oldPrice;
                 }),
                 t("g1c4f7a1", function (e) {
                     return "" + e.oldPrice;
                 }),
+                t("afd61c76", "Or, save up to 30%"),
                 t("i7fbacc4", "Zwischen den verfügbaren Abonnementstufen wechseln"),
                 t("c9cc122b", function (e) {
                     return e.feature + " ist in " + e.title + " enthalten";
@@ -7849,9 +7851,7 @@
                 t("id720215", "Hiring-"),
                 t("dd59f146", "Werbe-Account für Job-Promotionen"),
                 t("e7e36818", "Werbe-Accounts kommen für Job-Promotionen in Frage, wenn sie vollständig mit einer Finanzierungsquelle eingerichtet wurden."),
-                t("c28566e0", "Werbe-Account"),
-                t("c80160d3", "Werbung"),
-                t("ff0edac0", "Möchtest du dein Abonnement wirklich kündigen?");
+                t("c28566e0", "Werbe-Account");
             function a(e, n) {
                 for (var i = 0; i < n.length; i++) {
                     var t = n[i];
@@ -7890,7 +7890,9 @@
                     d(e, n)
                 );
             }
-            t("h2ac0348", "Nein, ich möchte zurück"),
+            t("c80160d3", "Werbung"),
+                t("ff0edac0", "Möchtest du dein Abonnement wirklich kündigen?"),
+                t("h2ac0348", "Nein, ich möchte zurück"),
                 t("dbf9667e", "Ich bin sicher"),
                 t("j7592572", "Kehrtwendung"),
                 t("ee778942", "Ampel"),
@@ -8909,16 +8911,16 @@
                 t("d6f2056f", function (e) {
                     return e.count + " ha" + r(e.count, "t", "ben") + " zugehört";
                 }),
-                t("jbc5f47a", "Spaces-Dock"),
-                t("gfe2830f", function (e) {
-                    return e.count + " weitere Person" + r(e.count, "", "en");
-                }),
+                t("jbc5f47a", "Spaces-Dock");
+            t("gfe2830f", function (e) {
+                return e.count + " weitere Person" + r(e.count, "", "en");
+            }),
                 t("dbeae6cf", function (e) {
                     return e.count + " weitere" + r(e.count, "*r Zuhörer*i", " Zuhörer*inne") + "n";
-                });
-            t("d2543d97", function (e) {
-                return "+" + e.count;
-            }),
+                }),
+                t("d2543d97", function (e) {
+                    return "+" + e.count;
+                }),
                 t("dc718e53", function (e) {
                     return "+" + e.count + " weitere Person" + r(e.count, "", "en");
                 }),
@@ -13205,4 +13207,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/de.6b78845a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/de.6d8c8b0a.js.map

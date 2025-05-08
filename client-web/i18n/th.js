@@ -7044,12 +7044,14 @@
                 n("f0ad5cc8", "ปี"),
                 n("a0dc6e4c", "ไม่สามารถใช้งานได้ในขณะนี้"),
                 n("jd8b2e66", "สมัครสมาชิกและชำระเงิน"),
+                n("ca784c0c", "Subscribe & pay with Apple"),
                 n("aa5df29f", function (e) {
                     return "" + e.oldPrice;
                 }),
                 n("g1c4f7a1", function (e) {
                     return "" + e.oldPrice;
                 }),
+                n("afd61c76", "Or, save up to 30%"),
                 n("i7fbacc4", "สลับระหว่างระดับของระบบสมัครสมาชิกที่มีอยู่"),
                 n("c9cc122b", function (e) {
                     return e.feature + " รวมอยู่ใน " + e.title;
@@ -7848,9 +7850,7 @@
                 n("id720215", "การจ้างงาน"),
                 n("dd59f146", "บัญชีโฆษณาการประชาสัมพันธ์ตำแหน่งงาน"),
                 n("e7e36818", "บัญชีโฆษณามีสิทธิ์ประชาสัมพันธ์ตำแหน่งงานเมื่อมีแหล่งเงินทุนครบถ้วน"),
-                n("c28566e0", "บัญชีโฆษณา"),
-                n("c80160d3", "การโฆษณา"),
-                n("ff0edac0", "คุณแน่ใจหรือไม่ว่าต้องการยกเลิกระบบสมาชิก");
+                n("c28566e0", "บัญชีโฆษณา");
             function t(e, c) {
                 for (var a = 0; a < c.length; a++) {
                     var n = c[a];
@@ -7889,7 +7889,9 @@
                     r(e, c)
                 );
             }
-            n("h2ac0348", "ไม่ นำฉันกลับไป"),
+            n("c80160d3", "การโฆษณา"),
+                n("ff0edac0", "คุณแน่ใจหรือไม่ว่าต้องการยกเลิกระบบสมาชิก"),
+                n("h2ac0348", "ไม่ นำฉันกลับไป"),
                 n("dbf9667e", "ฉันแน่ใจ"),
                 n("j7592572", "ยูเทิร์น"),
                 n("ee778942", "สัญญาณไฟจราจร"),
@@ -8908,16 +8910,16 @@
                 n("d6f2056f", function (e) {
                     return e.count + " รับฟัง";
                 }),
-                n("jbc5f47a", "ด็อคพื้นที่สนทนา"),
-                n("gfe2830f", function (e) {
-                    return "อีก " + e.count + " คน";
-                }),
+                n("jbc5f47a", "ด็อคพื้นที่สนทนา");
+            n("gfe2830f", function (e) {
+                return "อีก " + e.count + " คน";
+            }),
                 n("dbeae6cf", function (e) {
                     return "ผู้ฟังอีก " + e.count + " คน";
-                });
-            n("d2543d97", function (e) {
-                return "+" + e.count;
-            }),
+                }),
+                n("d2543d97", function (e) {
+                    return "+" + e.count;
+                }),
                 n("dc718e53", function (e) {
                     return "+อีก " + e.count + " คน";
                 }),
@@ -13190,4 +13192,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/th.9f7c792a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/th.2f957b1a.js.map

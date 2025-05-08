@@ -7054,12 +7054,14 @@
                 a("f0ad5cc8", "rok"),
                 a("a0dc6e4c", "Aktuálně nedostupné"),
                 a("jd8b2e66", "Odebírat a zaplatit"),
+                a("ca784c0c", "Subscribe & pay with Apple"),
                 a("aa5df29f", function (e) {
                     return "" + e.oldPrice;
                 }),
                 a("g1c4f7a1", function (e) {
                     return "" + e.oldPrice;
                 }),
+                a("afd61c76", "Or, save up to 30%"),
                 a("i7fbacc4", "Přepínejte mezi dostupnými úrovněmi předplatného"),
                 a("c9cc122b", function (e) {
                     return e.feature + " je zahrnut v " + e.title;
@@ -7858,9 +7860,7 @@
                 a("id720215", "Nábor"),
                 a("dd59f146", "Reklamní účet pro propagaci pracovní pozice"),
                 a("e7e36818", "Reklamní účty jsou způsobilé pro propagaci pracovní pozice, pokud jsou plně vybaveny zdrojem financování."),
-                a("c28566e0", "Reklamní účet"),
-                a("c80160d3", "Reklama"),
-                a("ff0edac0", "Opravdu chcete zrušit předplatné?");
+                a("c28566e0", "Reklamní účet");
             function r(e, o) {
                 for (var t = 0; t < o.length; t++) {
                     var a = o[t];
@@ -7899,7 +7899,9 @@
                     i(e, o)
                 );
             }
-            a("h2ac0348", "Ne, chci se vrátit"),
+            a("c80160d3", "Reklama"),
+                a("ff0edac0", "Opravdu chcete zrušit předplatné?"),
+                a("h2ac0348", "Ne, chci se vrátit"),
                 a("dbf9667e", "Ano"),
                 a("j7592572", "Obrat do protisměru"),
                 a("ee778942", "Semafor"),
@@ -8918,16 +8920,16 @@
                 a("d6f2056f", function (e) {
                     return e.count + " slyšel" + n(e.count, "i", "o", "", "o") + " živě či ze záznamu";
                 }),
-                a("jbc5f47a", "Dok funkce Prostory"),
-                a("gfe2830f", function (e) {
-                    return e.count + " další" + n(e.count, "", "ch", "", "ch");
-                }),
+                a("jbc5f47a", "Dok funkce Prostory");
+            a("gfe2830f", function (e) {
+                return e.count + " další" + n(e.count, "", "ch", "", "ch");
+            }),
                 a("dbeae6cf", function (e) {
                     return e.count + " další" + n(e.count, " posluchači", "ch posluchačů", " posluchač", "ch posluchačů");
-                });
-            a("d2543d97", function (e) {
-                return "+" + e.count;
-            }),
+                }),
+                a("d2543d97", function (e) {
+                    return "+" + e.count;
+                }),
                 a("dc718e53", function (e) {
                     return "+" + e.count + " další" + n(e.count, "", "ch", "", "ch");
                 }),
@@ -13203,4 +13205,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/cs.c86c218a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/cs.7c1db7fa.js.map

@@ -7045,12 +7045,14 @@
                 s("f0ad5cc8", "[yéêåär]"),
                 s("a0dc6e4c", "[Cürréêntly ünåävåäïílåäbléê]"),
                 s("jd8b2e66", "[Sübscrïíbéê & påäy]"),
+                s("ca784c0c", "[Sübscrïíbéê & påäy wïíth Appléê]"),
                 s("aa5df29f", function (t) {
                     return "" + t.oldPrice;
                 }),
                 s("g1c4f7a1", function (t) {
                     return "" + t.oldPrice;
                 }),
+                s("afd61c76", "[Or, såävéê üp töø 30%]"),
                 s("i7fbacc4", "[Swïítch béêtwéêéên théê åävåäïílåäbléê sübscrïíptïíöøn tïíéêrs]"),
                 s("c9cc122b", function (t) {
                     return "[" + t.feature + " ïís ïínclüdéêd ïín " + t.title + "]";
@@ -7849,9 +7851,7 @@
                 s("id720215", "Hïírïíng"),
                 s("dd59f146", "[Jöøb pröømöøtïíöøn åäd åäccöøünt]"),
                 s("e7e36818", "[Ad åäccöøünts åäréê éêlïígïíbléê föør jöøb pröømöøtïíöøn whéên théêy åäréê fülly séêt üp wïíth åä fündïíng söøürcéê.]"),
-                s("c28566e0", "[Ad Accöøünt]"),
-                s("c80160d3", "Advéêrtïísïíng"),
-                s("ff0edac0", "[Aréê yöøü süréê yöøü wåänt töø cåäncéêl yöøür sübscrïíptïíöøn?]");
+                s("c28566e0", "[Ad Accöøünt]");
             function d(t, n) {
                 for (var r = 0; r < n.length; r++) {
                     var s = n[r];
@@ -7890,7 +7890,9 @@
                     e(t, n)
                 );
             }
-            s("h2ac0348", "[Nöø, tåäkéê méê båäck]"),
+            s("c80160d3", "Advéêrtïísïíng"),
+                s("ff0edac0", "[Aréê yöøü süréê yöøü wåänt töø cåäncéêl yöøür sübscrïíptïíöøn?]"),
+                s("h2ac0348", "[Nöø, tåäkéê méê båäck]"),
                 s("dbf9667e", "[I’m süréê]"),
                 s("j7592572", "[U-türn]"),
                 s("ee778942", "[Tråäffïíc lïíghts]"),
@@ -8909,16 +8911,16 @@
                 s("d6f2056f", function (t) {
                     return "[" + t.count + " tünéêd ïín]";
                 }),
-                s("jbc5f47a", "[Spåäcéês döøck]"),
-                s("gfe2830f", function (t) {
-                    return "[" + t.count + " öøthéêr" + c(t.count, "", "s") + "]";
-                }),
+                s("jbc5f47a", "[Spåäcéês döøck]");
+            s("gfe2830f", function (t) {
+                return "[" + t.count + " öøthéêr" + c(t.count, "", "s") + "]";
+            }),
                 s("dbeae6cf", function (t) {
                     return "[" + t.count + " öøthéêr lïístéênéêr" + c(t.count, "", "s") + "]";
-                });
-            s("d2543d97", function (t) {
-                return "[+" + t.count + "]";
-            }),
+                }),
+                s("d2543d97", function (t) {
+                    return "[+" + t.count + "]";
+                }),
                 s("dc718e53", function (t) {
                     return "[+" + t.count + " öøthéêr" + c(t.count, "", "s") + "]";
                 }),
@@ -13192,4 +13194,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-xx.38945fea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-xx.5f61af2a.js.map

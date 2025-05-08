@@ -7054,12 +7054,14 @@
                 n("f0ad5cc8", "rok"),
                 n("a0dc6e4c", "Momentálne nedostupné"),
                 n("jd8b2e66", "Predplatiť a zaplatiť"),
+                n("ca784c0c", "Subscribe & pay with Apple"),
                 n("aa5df29f", function (e) {
                     return "" + e.oldPrice;
                 }),
                 n("g1c4f7a1", function (e) {
                     return "" + e.oldPrice;
                 }),
+                n("afd61c76", "Or, save up to 30%"),
                 n("i7fbacc4", "Prepínanie medzi dostupnými úrovňami predplatného"),
                 n("c9cc122b", function (e) {
                     return "Funkcia " + e.feature + " je zahrnutá v predplatnom " + e.title;
@@ -7858,9 +7860,7 @@
                 n("id720215", "portálu pracovných ponúk"),
                 n("dd59f146", "Reklamný účet na sponzorovanie pracovných miest"),
                 n("e7e36818", "Reklamné účty majú nárok na sponzorovanie pracovných miest, keď majú nastavený zdroj financovania."),
-                n("c28566e0", "Pridať účet"),
-                n("c80160d3", "Reklama"),
-                n("ff0edac0", "Ste si istí, že chcete zrušiť svoje predplatné?");
+                n("c28566e0", "Pridať účet");
             function i(e, a) {
                 for (var o = 0; o < a.length; o++) {
                     var n = a[o];
@@ -7899,7 +7899,9 @@
                     r(e, a)
                 );
             }
-            n("h2ac0348", "Nie, chcem sa vrátiť."),
+            n("c80160d3", "Reklama"),
+                n("ff0edac0", "Ste si istí, že chcete zrušiť svoje predplatné?"),
+                n("h2ac0348", "Nie, chcem sa vrátiť."),
                 n("dbf9667e", "Určite."),
                 n("j7592572", "Zmena názoru"),
                 n("ee778942", "Semafor"),
@@ -8918,16 +8920,16 @@
                 n("d6f2056f", function (e) {
                     return e.count + " naladen" + t(e.count, "í", "ých", "ý/-á", "ých");
                 }),
-                n("jbc5f47a", "Dok Priestorov"),
-                n("gfe2830f", function (e) {
-                    return "" + t(e.count, e.count + " ďalší používatelia", "niekoľkých ďalších používateľov (" + e.count + ")", e.count + " ďalší používateľ", e.count + " ďalších používateľov");
-                }),
+                n("jbc5f47a", "Dok Priestorov");
+            n("gfe2830f", function (e) {
+                return "" + t(e.count, e.count + " ďalší používatelia", "niekoľkých ďalších používateľov (" + e.count + ")", e.count + " ďalší používateľ", e.count + " ďalších používateľov");
+            }),
                 n("dbeae6cf", function (e) {
                     return "" + t(e.count, e.count + " ďalší poslucháči", "niekoľko ďalších poslucháčov (" + e.count + ")", e.count + " ďalší poslucháč", e.count + " ďalších poslucháčov");
-                });
-            n("d2543d97", function (e) {
-                return "+" + e.count;
-            }),
+                }),
+                n("d2543d97", function (e) {
+                    return "+" + e.count;
+                }),
                 n("dc718e53", function (e) {
                     return "+" + t(e.count, e.count + " ďalší používatelia", "niekoľkých ďalších používateľov (" + e.count + ")", e.count + " ďalší používateľ", e.count + " ďalších používateľov");
                 }),
@@ -13207,4 +13209,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sk.923c718a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sk.9a6ab4da.js.map

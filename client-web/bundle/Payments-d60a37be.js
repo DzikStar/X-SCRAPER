@@ -387,8 +387,8 @@
                         T = (0, v.gh)(),
                         [q, F] = a.useState(!1),
                         A = o()(),
-                        { allowClipboardWrite: R, defaultClosePath: x, isInlineFrame: H, path: N, redirectOnCompletion: z } = g.QU[n],
-                        M = a.useCallback(
+                        { allowClipboardWrite: R, defaultClosePath: x, invalidateOnClose: H, isInlineFrame: N, path: z, redirectOnCompletion: M } = g.QU[n],
+                        D = a.useCallback(
                             (e) => {
                                 const { errors: t, message: n, url: a } = e.data;
                                 switch (n) {
@@ -401,10 +401,10 @@
                                         P.push("/settings/phone");
                                         break;
                                     case C.success:
-                                        z && F(!0);
+                                        M && F(!0);
                                         break;
                                     case C.failure:
-                                        z && P.replace(s ?? g.D$, { errors: t });
+                                        M && P.replace(s ?? g.D$, { errors: t });
                                         break;
                                     case C.ineligible:
                                         (0, v.J$)(A), P.replace(g.H0);
@@ -416,14 +416,14 @@
                                         k && (window.location.href = a);
                                         break;
                                     case C.close:
-                                        (0, v.J$)(A), P.replace(l ?? x);
+                                        H && (0, v.J$)(A), P.replace(l ?? x);
                                 }
                                 d?.(e);
                             },
-                            [d, P, z, A, l, x, u, s],
+                            [d, P, M, A, H, l, x, u, s],
                         );
-                    w({ allowedOrigin: Z, handler: M, linkType: n });
-                    const D = a.useMemo(() => {
+                    w({ allowedOrigin: Z, handler: D, linkType: n });
+                    const O = a.useMemo(() => {
                         if (!E || !Z || !S) return;
                         const e = new Map();
                         return (
@@ -438,10 +438,10 @@
                                         return e && n.searchParams.set("challengeId", e), t && n.searchParams.set("challengeInitiator", t), n.href;
                                     })({ challengeId: b, challengeInitiator: p }),
                                 ),
-                            (0, v.uG)({ basePath: `/${N}`, xPaymentsSession: E, theme: T, paymentsOrigin: Z, moreSearchParams: e, providerToken: S })
+                            (0, v.uG)({ basePath: `/${z}`, xPaymentsSession: E, theme: T, paymentsOrigin: Z, moreSearchParams: e, providerToken: S })
                         );
-                    }, [E, Z, S, t, N, T, b, p]);
-                    return q ? a.createElement(y.default, { challengeId: b, challengeInitiator: p, linkType: n, redirectPath: r, redirectState: i }) : a.createElement(I, { allowClipboardWrite: R, iframeUrl: D, isBackgroundHidden: h, isInlineFrame: H, isNonModalScreen: m });
+                    }, [E, Z, S, t, z, T, b, p]);
+                    return q ? a.createElement(y.default, { challengeId: b, challengeInitiator: p, linkType: n, redirectPath: r, redirectState: i }) : a.createElement(I, { allowClipboardWrite: R, iframeUrl: O, isBackgroundHidden: h, isInlineFrame: N, isNonModalScreen: m });
                 },
                 E = (e) => {
                     const t = a.createElement(i.Z, { size: "small", style: b.ZP.spinner, testID: "loading-spinner" });
@@ -983,4 +983,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-d60a37be.c6b6667a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-d60a37be.9d89eb2a.js.map

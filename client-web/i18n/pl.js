@@ -7054,12 +7054,14 @@
                 i("f0ad5cc8", "rok"),
                 i("a0dc6e4c", "Aktualnie niedostępne"),
                 i("jd8b2e66", "Subskrybuj i dokonaj płatności"),
+                i("ca784c0c", "Subscribe & pay with Apple"),
                 i("aa5df29f", function (e) {
                     return "" + e.oldPrice;
                 }),
                 i("g1c4f7a1", function (e) {
                     return "" + e.oldPrice;
                 }),
+                i("afd61c76", "Or, save up to 30%"),
                 i("i7fbacc4", "Przełączaj się między dostępnymi poziomami subskrypcji"),
                 i("c9cc122b", function (e) {
                     return "Funkcja " + e.feature + " jest dostępna w ramach subskrypcji " + e.title;
@@ -7858,9 +7860,7 @@
                 i("id720215", "Rekrutacja"),
                 i("dd59f146", "Konto do promowania ofert pracy"),
                 i("e7e36818", "Konta reklamowe kwalifikują się do promocji ofert pracy, gdy są w pełni skonfigurowane i mają ustawione źródło finansowania."),
-                i("c28566e0", "Konto reklamowe"),
-                i("c80160d3", "Reklama"),
-                i("ff0edac0", "Czy na pewno chcesz anulować subskrypcję?");
+                i("c28566e0", "Konto reklamowe");
             function t(e, a) {
                 for (var o = 0; o < a.length; o++) {
                     var i = a[o];
@@ -7899,7 +7899,9 @@
                     c(e, a)
                 );
             }
-            i("h2ac0348", "No, wróć"),
+            i("c80160d3", "Reklama"),
+                i("ff0edac0", "Czy na pewno chcesz anulować subskrypcję?"),
+                i("h2ac0348", "No, wróć"),
                 i("dbf9667e", "Tak"),
                 i("j7592572", "Twój ruch"),
                 i("ee778942", "Sygnalizacja świetlna"),
@@ -8918,16 +8920,16 @@
                 i("d6f2056f", function (e) {
                     return e.count + " dołączy" + n(e.count, "li/ły", "ło", "ł/a", "ło");
                 }),
-                i("jbc5f47a", "Panel pokoi"),
-                i("gfe2830f", function (e) {
-                    return "" + n(e.count, e.count + " innych użytkowników", e.count + " innych użytkowników", "jeszcze " + e.count + " użytkownik", e.count + " innych użytkowników");
-                }),
+                i("jbc5f47a", "Panel pokoi");
+            i("gfe2830f", function (e) {
+                return "" + n(e.count, e.count + " innych użytkowników", e.count + " innych użytkowników", "jeszcze " + e.count + " użytkownik", e.count + " innych użytkowników");
+            }),
                 i("dbeae6cf", function (e) {
                     return e.count + " inny" + n(e.count, "ch słuchaczy", "ch słuchaczy", " słuchacz", "ch słuchaczy");
-                });
-            i("d2543d97", function (e) {
-                return "+" + e.count;
-            }),
+                }),
+                i("d2543d97", function (e) {
+                    return "+" + e.count;
+                }),
                 i("dc718e53", function (e) {
                     return "+" + n(e.count, e.count + " innych użytkowników", e.count + " innych użytkowników", "jeszcze " + e.count + " użytkownik", e.count + " innych użytkowników");
                 }),
@@ -13205,4 +13207,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.8d2ffe3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.08d5312a.js.map

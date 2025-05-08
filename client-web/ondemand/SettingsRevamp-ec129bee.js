@@ -15,7 +15,11 @@
             n.d(t, { T: () => r });
             var a = n(97882),
                 s = n(685731);
-            const r = ({ annualPriceMonthly: e, includeTax: t, percentOff: n, price: r }) => (0, a.x)({ amount: (0, s.aU)(r, t, n) / (e ? 12 : 1), currencyCode: r?.currency_code.toUpperCase(), removeTrailingZeros: !0 });
+            const r = ({ annualPriceMonthly: e, includeTax: t, monthlyPriceAnnual: n, percentOff: r, price: i }) => {
+                const l = (0, s.aU)(i, t, r),
+                    c = e ? l / 12 : n ? 12 * l : l;
+                return (0, a.x)({ amount: c, currencyCode: i?.currency_code.toUpperCase(), removeTrailingZeros: !0 });
+            };
         },
         862695: (e, t, n) => {
             n.d(t, { V: () => _, f: () => h });
@@ -69,8 +73,8 @@
                 E = c().f2b23062,
                 w = c().fa76d7dc,
                 Z = c().e3719c16,
-                k = c().j7a15010,
-                y = c().c4881c66,
+                y = c().j7a15010,
+                k = c().c4881c66,
                 S = c().a257ecae,
                 C = c().d495680e,
                 v = c().jc3fa0e2,
@@ -78,8 +82,8 @@
                 P = c().cc2973a8,
                 T = c().h54e6138,
                 D = [
-                    { label: Z, description: k, link: "/settings/accessibility", Icon: o.default },
-                    { label: y, description: S, link: "/settings/display", Icon: d.default },
+                    { label: Z, description: y, link: "/settings/accessibility", Icon: o.default },
+                    { label: k, description: S, link: "/settings/display", Icon: d.default },
                     { label: C, description: v, link: "/settings/languages", Icon: p.default },
                     { label: A, description: P, link: "/settings/data", Icon: m.default },
                     { label: T, link: "/i/keyboard_shortcuts", Icon: u.default },
@@ -131,8 +135,8 @@
                 E = o().d035a8d0,
                 w = o().e338a794,
                 Z = o().ib3357a6,
-                k = o().f2f9628e,
-                y = o().h1f01a24,
+                y = o().f2f9628e,
+                k = o().h1f01a24,
                 S = o().da202f9a,
                 C = { page: "settings", section: "ads_preferences" };
             function v(e) {
@@ -150,7 +154,7 @@
                             a.createElement(s.Z, { description: w }),
                             a.createElement(r.Z, {
                                 checked: t,
-                                helpText: k,
+                                helpText: y,
                                 label: Z,
                                 learnMoreLink: (0, i.ju)("https://support.x.com/articles/20170405"),
                                 name: "allowPersonalization",
@@ -159,7 +163,7 @@
                                 },
                             }),
                             a.createElement(d.Z, null),
-                            a.createElement(l.Z, { label: y, link: "/settings/your_twitter_data/twitter_interests" }),
+                            a.createElement(l.Z, { label: k, link: "/settings/your_twitter_data/twitter_interests" }),
                             a.createElement(l.Z, { label: S, link: "/settings/your_twitter_data/audiences" }),
                         ),
                     ),
@@ -212,8 +216,8 @@
                 E = n(293115),
                 w = n(725405),
                 Z = n(111531),
-                k = n(264922),
-                y = n(71620),
+                y = n(264922),
+                k = n(71620),
                 S = n(668214),
                 C = n(172497),
                 v = n(38562),
@@ -221,7 +225,7 @@
             const P = (0, S.Z)()
                     .propsFromState(() => ({ settings: v.l4, hasCommunityMemberships: C.fn }))
                     .adjustStateProps(({ hasCommunityMemberships: e, settings: t }) => ({ protectedEnabled: t.protected, allowMediaTagging: t.allow_media_tagging, hasCommunityMemberships: e }))
-                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, y.zr)("AUDIENCE_AND_TAGGING_SCREEN"), patchUser: A.ZP.patchUser, updateSettings: v.VP })),
+                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, k.zr)("AUDIENCE_AND_TAGGING_SCREEN"), patchUser: A.ZP.patchUser, updateSettings: v.VP })),
                 T = g().fd807e78,
                 D = g().a9ff473c,
                 F = g().b5c85d2c,
@@ -266,7 +270,7 @@
                     o = j(n, 0, i, c),
                     f = R[t],
                     g = a ? $ : I;
-                return r.createElement(E.nO, { namespace: U }, r.createElement(_.Z, null, r.createElement(k.Z, { location: s, screenType: "secondaryDetail", title: T }, r.createElement(d.Z, { description: D }), r.createElement(p.Z, { checked: l, helpText: L, label: F, learnMoreLink: (0, m.ju)("https://help.x.com/safety-and-security/public-and-protected-tweets"), name: "protected", onChange: o._handleChanged }), r.createElement(B, null), r.createElement(u.Z, { description: f, label: N, link: "/settings/tagging" })), o.showConfirmation ? r.createElement(b.Z, { confirmButtonLabel: g.confirmButtonLabel, confirmButtonType: "primary", headline: g.headline, onCancel: o._handleConfirmationCancel, onConfirm: o._handleConfirmationConfirm, text: g.text }) : null));
+                return r.createElement(E.nO, { namespace: U }, r.createElement(_.Z, null, r.createElement(y.Z, { location: s, screenType: "secondaryDetail", title: T }, r.createElement(d.Z, { description: D }), r.createElement(p.Z, { checked: l, helpText: L, label: F, learnMoreLink: (0, m.ju)("https://help.x.com/safety-and-security/public-and-protected-tweets"), name: "protected", onChange: o._handleChanged }), r.createElement(B, null), r.createElement(u.Z, { description: f, label: N, link: "/settings/tagging" })), o.showConfirmation ? r.createElement(b.Z, { confirmButtonLabel: g.confirmButtonLabel, confirmButtonType: "primary", headline: g.headline, onCancel: o._handleConfirmationCancel, onConfirm: o._handleConfirmationConfirm, text: g.text }) : null));
             }
             const z = s.Z,
                 O = a.Z;
@@ -314,9 +318,9 @@
                 E = n(668214),
                 w = n(948985),
                 Z = n(312771);
-            const k = (e, t) => (0, Z.h1)(w.UD(e)),
-                y = (0, E.Z)()
-                    .propsFromState(() => ({ fetchStatus: k, applications: w.$q.selectUniqUnrevokedApps }))
+            const y = (e, t) => (0, Z.h1)(w.UD(e)),
+                k = (0, E.Z)()
+                    .propsFromState(() => ({ fetchStatus: y, applications: w.$q.selectUniqUnrevokedApps }))
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, _.zr)("APPLICATIONS"), fetchApplications: w.wz })),
                 S = "connectedAppsScreen",
                 C = u().jc02ae68,
@@ -360,7 +364,7 @@
             }
             L.defaultProps = { applications: [] };
             const x = p.default.create((e) => ({ avatar: { borderRadius: e.borderRadii.small, height: "100%", width: "100%" } })),
-                M = y(L);
+                M = k(L);
         },
         720823: (e, t, n) => {
             n.r(t), n.d(t, { ContentYouSee: () => T, default: () => D });
@@ -386,8 +390,8 @@
                     .propsFromActions(() => ({ updateSettings: h.VP, createLocalApiErrorHandler: (0, f.zr)("CONTENT_YOU_SEE_SCREEN") })),
                 w = c().f2bd9c48,
                 Z = c().c4afe0e6,
-                k = c().fc1d217c,
-                y = c().b8533bac,
+                y = c().fc1d217c,
+                k = c().b8533bac,
                 S = c().h1f01a24,
                 C = c().j018f2a2,
                 v = c().h1ef00dc,
@@ -412,13 +416,13 @@
                                       ? null
                                       : a.createElement(r.Z, {
                                             checked: t,
-                                            label: k,
+                                            label: y,
                                             name: "display_sensitive_media",
                                             onChange: function (t, n) {
                                                 f.scribe({ ...P, element: t, action: n ? "enable" : "disable" }), l({ [t]: n }).catch(e({ showToast: !0 }));
                                             },
                                         }),
-                                  a.createElement(i.Z, { label: y, link: `/${c}/topics` }),
+                                  a.createElement(i.Z, { label: k, link: `/${c}/topics` }),
                                   a.createElement(i.Z, { label: S, link: "/settings/your_twitter_data/twitter_interests" }),
                                   a.createElement(i.Z, { label: C, link: "/settings/explore" }),
                                   a.createElement(i.Z, { label: v, link: "/settings/search" }),
@@ -432,7 +436,7 @@
             const D = E(T);
         },
         481444: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => y });
+            n.r(t), n.d(t, { default: () => k });
             n(571372);
             var a = n(202784),
                 s = n(943401),
@@ -456,8 +460,8 @@
                     { label: h, value: o.fD.AcceptAllCookies, helpText: E },
                     { label: _, value: o.fD.RefuseNonEssentialCookies, helpText: w },
                 ],
-                k = { page: "settings", section: "cookie_preferences" };
-            function y(e) {
+                y = { page: "settings", section: "cookie_preferences" };
+            function k(e) {
                 const { location: t } = e,
                     n = (0, u.Z)(),
                     { cookiePreference: i, setCookiePreference: l } = (function () {
@@ -479,7 +483,7 @@
                     })();
                 return a.createElement(
                     p.nO,
-                    { namespace: k },
+                    { namespace: y },
                     a.createElement(
                         d.Z,
                         null,
@@ -490,7 +494,7 @@
                             a.createElement(r.Z, {
                                 name: "cookie_preferences",
                                 onChange: (e, t) => {
-                                    n.scribe({ ...k, action: "change", element: t === o.fD.AcceptAllCookies ? "accept_all" : "refuse_non_essential" }), l(t), t === o.fD.RefuseNonEssentialCookies && (m.Z.flushHTMLCache(), window.location.reload());
+                                    n.scribe({ ...y, action: "change", element: t === o.fD.AcceptAllCookies ? "accept_all" : "refuse_non_essential" }), l(t), t === o.fD.RefuseNonEssentialCookies && (m.Z.flushHTMLCache(), window.location.reload());
                                 },
                                 options: Z,
                                 value: i,
@@ -501,7 +505,7 @@
             }
         },
         661422: (e, t, n) => {
-            n.r(t), n.d(t, { DataSharingWithBusinessPartners: () => y, default: () => S });
+            n.r(t), n.d(t, { DataSharingWithBusinessPartners: () => k, default: () => S });
             var a = n(202784),
                 s = n(688715),
                 r = n(943401),
@@ -524,13 +528,13 @@
                 E = c().d3c20d80,
                 w = c().f1c0d09c,
                 Z = (0, s.ju)("https://support.x.com/articles/20175379"),
-                k = { page: "settings", section: "data_sharing_with_business_partners" };
-            function y(e) {
+                y = { page: "settings", section: "data_sharing_with_business_partners" };
+            function k(e) {
                 const { allowPartnerships: t, createLocalApiErrorHandler: n, location: s, updateSettings: l } = e,
                     c = (0, p.Z)();
                 return a.createElement(
                     d.nO,
-                    { namespace: k },
+                    { namespace: y },
                     a.createElement(
                         o.Z,
                         null,
@@ -545,14 +549,14 @@
                                 learnMoreLink: Z,
                                 name: "allowPartnerships",
                                 onChange: function (e, t) {
-                                    c.scribe({ ...k, element: e, action: t ? "enable" : "disable" }), l({ [e]: t }).catch(n({ showToast: !0 }));
+                                    c.scribe({ ...y, element: e, action: t ? "enable" : "disable" }), l({ [e]: t }).catch(n({ showToast: !0 }));
                                 },
                             }),
                         ),
                     ),
                 );
             }
-            const S = g(y);
+            const S = g(k);
         },
         847286: (e, t, n) => {
             n.r(t), n.d(t, { DirectMessages: () => z, allowDMsFromName: () => $, alwaysAllowMessageRequestsFromSubscribersLabel: () => T, default: () => O, dmFromAnyoneLabel: () => v, dmFromPeopleYouFollowLabel: () => S, dmFromVerifiedLabel: () => C, dmGraphicMediaLabel: () => F, dmQualityFilterLabel: () => A, dmReceiptsLabel: () => M });
@@ -575,12 +579,12 @@
                 E = n(668214),
                 w = n(38562),
                 Z = n(919022);
-            const k = (0, E.Z)()
+            const y = (0, E.Z)()
                     .propsFromState(() => ({ nsfwMediaFilter: w.a5, settings: w.l4, loggedInUser: Z.ZP.selectLoggedInUser }))
                     .adjustStateProps(({ loggedInUser: e, nsfwMediaFilter: t, settings: n }) => ({ allowDmsFrom: n.allow_dms_from, alwaysAllowDmsFromSubscribers: n.always_allow_dms_from_subscribers, dmQualityFilter: n.dm_quality_filter, dmReceiptSetting: n.dm_receipt_setting, nsfwMediaFilter: t, loggedInUser: e }))
                     .propsFromActions(() => ({ updateSettings: w.VP, updateDmNsfwMediaFilter: w.Ob, createLocalApiErrorHandler: (0, _.zr)("DIRECT_MESSAGES_SCREEN") }))
                     .withAnalytics({ page: "settings" }),
-                y = p().d4986f86,
+                k = p().d4986f86,
                 S = p().ee4592ca,
                 C = p().da813d22,
                 v = p().baffe39a,
@@ -604,7 +608,7 @@
                     { label: v, value: "all" },
                 ];
             function z(e) {
-                const { allowDmsFrom: t, alwaysAllowDmsFromSubscribers: n, createLocalApiErrorHandler: s, dmQualityFilter: d, dmReceiptSetting: p, location: _, loggedInUser: E, nsfwMediaFilter: w, updateDmNsfwMediaFilter: Z, updateSettings: k } = e,
+                const { allowDmsFrom: t, alwaysAllowDmsFromSubscribers: n, createLocalApiErrorHandler: s, dmQualityFilter: d, dmReceiptSetting: p, location: _, loggedInUser: E, nsfwMediaFilter: w, updateDmNsfwMediaFilter: Z, updateSettings: y } = e,
                     S = (0, g.Z)(),
                     { featureSwitches: C } = a.useContext(m.rC),
                     v = (0, b.hC)("dm_settings_info_page_allow_subscriber_messages_setting_enabled"),
@@ -612,7 +616,7 @@
                     z = (0, b.hC)("dm_settings_info_page_device_list_enabled");
                 function O(t, n) {
                     const a = "/messages/settings" === e.location.pathname ? "dm_tab" : "global_settings_menu";
-                    S.scribe({ ...N, element: t, data: { entry_point: a }, action: n }), k({ [t]: n }).catch(s({ showToast: !0 }));
+                    S.scribe({ ...N, element: t, data: { entry_point: a }, action: n }), y({ [t]: n }).catch(s({ showToast: !0 }));
                 }
                 const B = C.isTrue("dm_conversations_nsfw_media_filter_enabled");
                 return a.createElement(
@@ -623,7 +627,7 @@
                         null,
                         a.createElement(
                             h.Z,
-                            { location: _, screenType: "secondaryDetail", title: y },
+                            { location: _, screenType: "secondaryDetail", title: k },
                             a.createElement(
                                 a.Fragment,
                                 null,
@@ -648,7 +652,7 @@
                                       learnMoreLink: (0, r.ju)("https://help.x.com/using-twitter/direct-messages"),
                                       name: "always_allow_dms_from_subscribers",
                                       onChange: function (e, t) {
-                                          S.scribe({ ...N, element: e, action: t ? "enabled" : "disabled" }), k({ [e]: t }).catch(s({ showToast: !0 }));
+                                          S.scribe({ ...N, element: e, action: t ? "enabled" : "disabled" }), y({ [e]: t }).catch(s({ showToast: !0 }));
                                       },
                                   })
                                 : a.createElement(a.Fragment, null),
@@ -690,8 +694,8 @@
                     ),
                 );
             }
-            const O = k(z);
+            const O = y(z);
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsRevamp-ec129bee.0136f37a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsRevamp-ec129bee.ee827b9a.js.map

@@ -7049,12 +7049,14 @@
                 o("f0ad5cc8", "year"),
                 o("a0dc6e4c", "Currently unavailable"),
                 o("jd8b2e66", "Subscribe & pay"),
+                o("ca784c0c", "Subscribe & pay with Apple"),
                 o("aa5df29f", function (e) {
                     return "" + e.oldPrice;
                 }),
                 o("g1c4f7a1", function (e) {
                     return "" + e.oldPrice;
                 }),
+                o("afd61c76", "Or, save up to 30%"),
                 o("i7fbacc4", "Switch between the available subscription tiers"),
                 o("c9cc122b", function (e) {
                     return e.feature + " is included in " + e.title;
@@ -7853,9 +7855,7 @@
                 o("id720215", "Hiring"),
                 o("dd59f146", "Job promotion ad account"),
                 o("e7e36818", "Ad accounts are eligible for job promotion when they are fully set up with a funding source."),
-                o("c28566e0", "Ad Account"),
-                o("c80160d3", "Advertising"),
-                o("ff0edac0", "Are you sure you want to cancel your subscription?");
+                o("c28566e0", "Ad Account");
             function i(e, t) {
                 for (var a = 0; a < t.length; a++) {
                     var o = t[a];
@@ -7894,7 +7894,9 @@
                     c(e, t)
                 );
             }
-            o("h2ac0348", "No, take me back"),
+            o("c80160d3", "Advertising"),
+                o("ff0edac0", "Are you sure you want to cancel your subscription?"),
+                o("h2ac0348", "No, take me back"),
                 o("dbf9667e", "I’m sure"),
                 o("j7592572", "U-turn"),
                 o("ee778942", "Traffic lights"),
@@ -8913,16 +8915,16 @@
                 o("d6f2056f", function (e) {
                     return e.count + " میں  ہم آہنگ";
                 }),
-                o("jbc5f47a", "Spaces Dock"),
-                o("gfe2830f", function (e) {
-                    return e.count + " دوسر" + n(e.count, "ا", "ے");
-                }),
+                o("jbc5f47a", "Spaces Dock");
+            o("gfe2830f", function (e) {
+                return e.count + " دوسر" + n(e.count, "ا", "ے");
+            }),
                 o("dbeae6cf", function (e) {
                     return e.count + " other listener" + r(e.count, "", "s");
-                });
-            o("d2543d97", function (e) {
-                return e.count + "+";
-            }),
+                }),
+                o("d2543d97", function (e) {
+                    return e.count + "+";
+                }),
                 o("dc718e53", function (e) {
                     return e.count + " دوسر" + n(e.count, "ا", "ے") + "+";
                 }),
@@ -13200,4 +13202,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ur.ccceda4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ur.6c9a697a.js.map

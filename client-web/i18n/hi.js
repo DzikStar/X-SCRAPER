@@ -7049,12 +7049,14 @@
                 n("f0ad5cc8", "साल"),
                 n("a0dc6e4c", "फ़िलहाल उपलब्ध नहीं है"),
                 n("jd8b2e66", "सब्सक्राइब करें और भुगतान करें"),
+                n("ca784c0c", "Subscribe & pay with Apple"),
                 n("aa5df29f", function (e) {
                     return "" + e.oldPrice;
                 }),
                 n("g1c4f7a1", function (e) {
                     return "" + e.oldPrice;
                 }),
+                n("afd61c76", "Or, save up to 30%"),
                 n("i7fbacc4", "उपलब्ध सब्सक्रिप्शन स्तरों के बीच स्विच करें"),
                 n("c9cc122b", function (e) {
                     return e.feature + " " + e.title + " में शामिल है";
@@ -7853,9 +7855,7 @@
                 n("id720215", "हायरिंग पोर्टल"),
                 n("dd59f146", "जॉब प्रचार विज्ञापन खाता"),
                 n("e7e36818", "विज्ञापन खाते जॉब प्रचारित करने के लिए तभी पात्र होते हैं, जब वे पूरी तरह से फंडिंग स्रोत के साथ स्थापित हो जाते हैं."),
-                n("c28566e0", "विज्ञापन खाता"),
-                n("c80160d3", "विज्ञापन"),
-                n("ff0edac0", "क्या आप वाकई अपना सब्सक्रिप्शन रद्द करना चाहते हैं?");
+                n("c28566e0", "विज्ञापन खाता");
             function r(e, c) {
                 for (var a = 0; a < c.length; a++) {
                     var n = c[a];
@@ -7894,7 +7894,9 @@
                     d(e, c)
                 );
             }
-            n("h2ac0348", "नहीं, मुझे वापस ले जाएं"),
+            n("c80160d3", "विज्ञापन"),
+                n("ff0edac0", "क्या आप वाकई अपना सब्सक्रिप्शन रद्द करना चाहते हैं?"),
+                n("h2ac0348", "नहीं, मुझे वापस ले जाएं"),
                 n("dbf9667e", "मुझे यकीन है"),
                 n("j7592572", "यू-टर्न"),
                 n("ee778942", "ट्रैफ़िक लाइट"),
@@ -8913,16 +8915,16 @@
                 n("d6f2056f", function (e) {
                     return e.count + " ट्यून इन हुए";
                 }),
-                n("jbc5f47a", "Spaces डॉक"),
-                n("gfe2830f", function (e) {
-                    return e.count + " अन्य";
-                }),
+                n("jbc5f47a", "Spaces डॉक");
+            n("gfe2830f", function (e) {
+                return e.count + " अन्य";
+            }),
                 n("dbeae6cf", function (e) {
                     return e.count + " अन्य श्रोता";
-                });
-            n("d2543d97", function (e) {
-                return "+" + e.count;
-            }),
+                }),
+                n("d2543d97", function (e) {
+                    return "+" + e.count;
+                }),
                 n("dc718e53", function (e) {
                     return "+" + e.count + " अन्य";
                 }),
@@ -13199,4 +13201,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hi.f8a4508a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hi.bd7f4e4a.js.map

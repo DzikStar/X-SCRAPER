@@ -1856,6 +1856,7 @@ var manifest = {
         premium_webview_paywall_subscriptions_journey_paywall_display_type_gate_fs_name_5: { name: "premium_webview_paywall_subscriptions_journey_paywall_display_type_gate_fs_name_5", type: "string" },
         premium_webview_paywall_debug_mode_enabled: { name: "premium_webview_paywall_debug_mode_enabled", type: "string" },
         premium_webview_paywall_stripe_enabled: { name: "premium_webview_paywall_stripe_enabled", type: "string" },
+        premium_webview_paywall_stripe_management_enabled: { name: "premium_webview_paywall_stripe_management_enabled", type: "string" },
         professional_launchpad_m1_enabled: { name: "professional_launchpad_m1_enabled", type: "boolean", defaultValue: !0 },
         professional_launchpad_mobile_promotable_timeline: { name: "professional_launchpad_mobile_promotable_timeline", type: "boolean", defaultValue: !1 },
         professional_launchpad_upload_address_book: { name: "professional_launchpad_upload_address_book", type: "boolean", defaultValue: !0 },
