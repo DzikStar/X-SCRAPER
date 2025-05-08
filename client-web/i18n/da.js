@@ -4143,6 +4143,7 @@
                 t("f388a7ec", "DeepSearch"),
                 t("ab1eb384", "Vælg den ønskede søgetilstand"),
                 t("i330e54c", "Avanceret søgning og begrundelse"),
+                t("fdcce108", "DeeperSearch"),
                 t("ac64b674", "Udvidet søgning, yderligere begrundelse"),
                 t("j22655f2", "Spørg om hvad som helst"),
                 t("h0681e3e", "Tal med Grok, vores AI-assistent"),
@@ -4169,6 +4170,9 @@
                 t("h15dce2e", "Avancerede indstillinger"),
                 t("ff9dc268", "Rediger prompt"),
                 t("acb2baa0", "Skab billeder"),
+                t("fe9ad897", function (e) {
+                    return "Edit Image" + e.ttc_grok_preset;
+                }),
                 t("h30fd372", "Prøv Stemme-tilstand"),
                 t("e9fcdd0c", "Bed Grok om at søge aggressivt på nettet"),
                 t("fc4e8aba", "Bed Grok om at ræsonnere trin for trin"),
@@ -4907,10 +4911,10 @@
                 t("d2a43a7a", 'indeholder både "ai" og "startup"'),
                 t("a8584698", "ai startup"),
                 t("jb6f9292", 'indeholder den eksakte sætning "ai startup"'),
-                t("j8ee77c4", '"ai startup"'),
-                t("d0480758", 'indeholder enten "ai" eller "startup" (eller begge dele)'),
-                t("f0048fa2", "ai OR startup");
-            t("da0df186", 'indeholder "ai", men ikke "startup"'),
+                t("j8ee77c4", '"ai startup"');
+            t("d0480758", 'indeholder enten "ai" eller "startup" (eller begge dele)'),
+                t("f0048fa2", "ai OR startup"),
+                t("da0df186", 'indeholder "ai", men ikke "startup"'),
                 t("f2f463ea", "ai -startup"),
                 t("a10a357e", 'indeholder "ai" og har mindst 50 likes'),
                 t("ca8ed1e8", "ai min_faves:50"),
@@ -5873,10 +5877,10 @@
                 t("b732a4cc", "Når du har, vises deres posts her."),
                 t("hff48914", "Ingen posts blev fundet på dette tidspunkt."),
                 t("hb52cc4a", "Prøv igen senere."),
-                t("e50e1bb0", "Velkommen til Fællesskaber"),
-                t("i6829daa", "Fællesskaber er modererede diskussionsgrupper, hvor folk på X kan komme i kontakt og dele."),
-                t("fc5c6914", "Mød andre med dine interesser");
-            t("aa1a9820", "Deltag i Fællesskaber for at få kontakt med folk, som deler dine interesser."),
+                t("e50e1bb0", "Velkommen til Fællesskaber");
+            t("i6829daa", "Fællesskaber er modererede diskussionsgrupper, hvor folk på X kan komme i kontakt og dele."),
+                t("fc5c6914", "Mød andre med dine interesser"),
+                t("aa1a9820", "Deltag i Fællesskaber for at få kontakt med folk, som deler dine interesser."),
                 t("edef4c82", "Post direkte til et Fællesskab"),
                 t("a7640df6", "Dine posts deles med medlemmer af Fællesskabet og dine følgere."),
                 t("h3bb8068", "Få hjælp, når du har brug for det"),
@@ -6871,10 +6875,10 @@
                 t("c2059276", "Få dine svar boostet."),
                 t("b023ec20", "Maks. svar-boost"),
                 t("g337328e", "Få størst mulig synlighed for dine svar."),
-                t("fa006202", "Afspilning af video i baggrunden"),
-                t("jf389778", "Se med, mens du browser eller bruger andre apps"),
-                t("f2977d80", "Bogmærkemapper");
-            t("j1d3d910", "Organisér dine gemte posts, så du nemt kan finde dem"),
+                t("fa006202", "Afspilning af video i baggrunden");
+            t("jf389778", "Se med, mens du browser eller bruger andre apps"),
+                t("f2977d80", "Bogmærkemapper"),
+                t("j1d3d910", "Organisér dine gemte posts, så du nemt kan finde dem"),
                 t("f0f48668", "Premium-support"),
                 t("c3148608", "Få hurtigere hjælp, når du har brug for det"),
                 t("b485ca6e", "Fanen Højdepunkter"),
@@ -7847,9 +7851,7 @@
                 t("e7e36818", "Annoncekonti er kvalificeret til promovering af stillinger, når de er fuldstændigt oprettet med en finansieringskilde."),
                 t("c28566e0", "Annoncekonto"),
                 t("c80160d3", "Annoncering"),
-                t("ff0edac0", "Er du sikker på, at du vil annullere dit abonnement?"),
-                t("h2ac0348", "Nej, gå tilbage"),
-                t("dbf9667e", "Jeg er sikker");
+                t("ff0edac0", "Er du sikker på, at du vil annullere dit abonnement?");
             function d(e, r) {
                 for (var n = 0; n < r.length; n++) {
                     var t = r[n];
@@ -7888,7 +7890,9 @@
                     a(e, r)
                 );
             }
-            t("j7592572", "U-vending"),
+            t("h2ac0348", "Nej, gå tilbage"),
+                t("dbf9667e", "Jeg er sikker"),
+                t("j7592572", "U-vending"),
                 t("ee778942", "Trafiklys"),
                 t("fdd57981", function (e) {
                     return "Vi vil gerne tilbyde dig en gratis engangsannoncekredit på " + e.totalAmount + " USD.";
@@ -8911,16 +8915,16 @@
                 }),
                 t("dbeae6cf", function (e) {
                     return e.count + " and" + i(e.count, "en lytter", "re lyttere");
-                }),
-                t("d2543d97", function (e) {
-                    return "+" + e.count;
-                }),
+                });
+            t("d2543d97", function (e) {
+                return "+" + e.count;
+            }),
                 t("dc718e53", function (e) {
                     return "+" + e.count + " and" + i(e.count, "en", "re");
-                });
-            t("d0e7b11b", function (e) {
-                return e.date + " kl. " + e.time;
-            }),
+                }),
+                t("d0e7b11b", function (e) {
+                    return e.date + " kl. " + e.time;
+                }),
                 t("b4349cbc", function (e) {
                     return "" + e.relativeDay;
                 }),
@@ -13190,4 +13194,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/da.5967b80a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/da.268a18fa.js.map

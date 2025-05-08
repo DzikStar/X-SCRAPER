@@ -1709,7 +1709,7 @@
                 i("d78131b9", function (a) {
                     return "Tambah/alih keluar @" + a.screenName + " daripada Senarai";
                 }),
-                i("b3b642fc", "Why this post?"),
+                i("b3b642fc", "Mengapa siaran ini?"),
                 i("fb4ee11c", "Mengapakah iklan ini?"),
                 i("ad50e7d9", function (a) {
                     return "Lihat " + a.entity + " analitis";
@@ -4142,6 +4142,7 @@
                 i("f388a7ec", "DeepSearch"),
                 i("ab1eb384", "Pilih mod carian yang anda mahu"),
                 i("i330e54c", "Carian dan pertimbangan lanjutan"),
+                i("fdcce108", "DeeperSearch"),
                 i("ac64b674", "Cari lanjut, lebih pertimbangan"),
                 i("j22655f2", "Tanya apa-apa saja"),
                 i("h0681e3e", "Bercakap dengan Grok, pembantu AI kami"),
@@ -4168,6 +4169,9 @@
                 i("h15dce2e", "Tetapan Lanjutan"),
                 i("ff9dc268", "Edit gesaan"),
                 i("acb2baa0", "Cipta Imej"),
+                i("fe9ad897", function (a) {
+                    return "Edit Image" + a.ttc_grok_preset;
+                }),
                 i("h30fd372", "Cuba Mod Suara"),
                 i("e9fcdd0c", "Tanya Grok untuk membuat carian di web secara agresif"),
                 i("fc4e8aba", "Tanya Grok untuk membuat pertimbangan langkah demi langkah"),
@@ -4906,10 +4910,10 @@
                 i("d2a43a7a", 'mengandungi "ai" dan juga "pemula"'),
                 i("a8584698", "pemula ai"),
                 i("jb6f9292", 'mengandungi frasa tepat "pemula ai"'),
-                i("j8ee77c4", '"pemula ai"'),
-                i("d0480758", 'mengandungi sama ada "ai" atau "pemula" (atau kedua-duanya)'),
-                i("f0048fa2", "ai ATAU pemula");
-            i("da0df186", 'mengandungi "ai", tetapi tidak mengandungi "pemula"'),
+                i("j8ee77c4", '"pemula ai"');
+            i("d0480758", 'mengandungi sama ada "ai" atau "pemula" (atau kedua-duanya)'),
+                i("f0048fa2", "ai ATAU pemula"),
+                i("da0df186", 'mengandungi "ai", tetapi tidak mengandungi "pemula"'),
                 i("f2f463ea", "ai -pemula"),
                 i("a10a357e", 'mengandungi "ai" dan mempunyai sekurang-kurangnya 50 sukaan'),
                 i("ca8ed1e8", "ai min_faves:50"),
@@ -5872,10 +5876,10 @@
                 i("b732a4cc", "Apabila anda berbuat demikian, anda akan dapat melihat siaran mereka di sini."),
                 i("hff48914", "Tiada siaran dapat ditemukan pada masa ini."),
                 i("hb52cc4a", "Sila cuba lagi kemudian."),
-                i("e50e1bb0", "Selamat datang ke Komuniti"),
-                i("i6829daa", "Komuniti ialah kumpulan perbincangan yang dikendalikan dan merupakan tempat untuk pengguna di X berhubung dan berkongsi."),
-                i("fc5c6914", "Temui orang lain yang mempunyai minat yang sama seperti anda");
-            i("aa1a9820", "Sertai Komuniti untuk berhubung dengan orang yang berkongsi minat yang sama seperti anda."),
+                i("e50e1bb0", "Selamat datang ke Komuniti");
+            i("i6829daa", "Komuniti ialah kumpulan perbincangan yang dikendalikan dan merupakan tempat untuk pengguna di X berhubung dan berkongsi."),
+                i("fc5c6914", "Temui orang lain yang mempunyai minat yang sama seperti anda"),
+                i("aa1a9820", "Sertai Komuniti untuk berhubung dengan orang yang berkongsi minat yang sama seperti anda."),
                 i("edef4c82", "Buat siaran secara terus kepada Komuniti"),
                 i("a7640df6", "Siaran anda dikongsi dengan ahli Komuniti dan pengikut anda."),
                 i("h3bb8068", "Dapatkan sandaran apabila diperlukan"),
@@ -6870,10 +6874,10 @@
                 i("c2059276", "Tingkatkan balasan anda."),
                 i("b023ec20", "Peningkatan Balasan Maksimum"),
                 i("g337328e", "Dapatkan keterlihatan yang tertinggi untuk balasan anda."),
-                i("fa006202", "Main semula video latar belakang"),
-                i("jf389778", "Tonton sambil menyemak imbas atau menggunakan aplikasi lain"),
-                i("f2977d80", "Folder Bookmark");
-            i("j1d3d910", "Kekalkan siaran yang anda simpan dalam keadaan teratur agar dapat diakses dengan mudah"),
+                i("fa006202", "Main semula video latar belakang");
+            i("jf389778", "Tonton sambil menyemak imbas atau menggunakan aplikasi lain"),
+                i("f2977d80", "Folder Bookmark"),
+                i("j1d3d910", "Kekalkan siaran yang anda simpan dalam keadaan teratur agar dapat diakses dengan mudah"),
                 i("f0f48668", "Sokongan premium"),
                 i("c3148608", "Dapatkan bantuan dengan lebih pantas apabila anda memerlukan bantuan"),
                 i("b485ca6e", "Tab Sorotan"),
@@ -7846,9 +7850,7 @@
                 i("e7e36818", "Akaun iklan adalah layak untuk promosi pekerjaan apabila akaun tersebut ditetapkan sepenuhnya dengan sumber pembiayaan."),
                 i("c28566e0", "Akaun Iklan"),
                 i("c80160d3", "Pengiklanan"),
-                i("ff0edac0", "Adakah anda pasti anda ingin membatalkan langganan anda?"),
-                i("h2ac0348", "Tidak, bawa saya kembali"),
-                i("dbf9667e", "Saya pasti");
+                i("ff0edac0", "Adakah anda pasti anda ingin membatalkan langganan anda?");
             function d(a, n) {
                 for (var e = 0; e < n.length; e++) {
                     var i = n[e];
@@ -7887,7 +7889,9 @@
                     u(a, n)
                 );
             }
-            i("j7592572", "Pusingan U"),
+            i("h2ac0348", "Tidak, bawa saya kembali"),
+                i("dbf9667e", "Saya pasti"),
+                i("j7592572", "Pusingan U"),
                 i("ee778942", "Lampu isyarat"),
                 i("fdd57981", function (a) {
                     return "Kami ingin menawarkan kredit iklan percuma sebanyak " + a.totalAmount + " USD satu kali kepada anda.";
@@ -8910,16 +8914,16 @@
                 }),
                 i("dbeae6cf", function (a) {
                     return a.count + " pendengar lain";
-                }),
-                i("d2543d97", function (a) {
-                    return "+" + a.count;
-                }),
+                });
+            i("d2543d97", function (a) {
+                return "+" + a.count;
+            }),
                 i("dc718e53", function (a) {
                     return "+" + a.count + " yang lain";
-                });
-            i("d0e7b11b", function (a) {
-                return a.date + " pada pukul " + a.time;
-            }),
+                }),
+                i("d0e7b11b", function (a) {
+                    return a.date + " pada pukul " + a.time;
+                }),
                 i("b4349cbc", function (a) {
                     return "" + a.relativeDay;
                 }),
@@ -13186,4 +13190,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.4989a77a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.4a32a96a.js.map

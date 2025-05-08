@@ -1709,7 +1709,7 @@
                 f("d78131b9", function (e) {
                     return "从列表添加/移除 @" + e.screenName;
                 }),
-                f("b3b642fc", "Why this post?"),
+                f("b3b642fc", "为什么推荐这个帖子？"),
                 f("fb4ee11c", "为什么播放这条广告？"),
                 f("ad50e7d9", function (e) {
                     return "查看 " + e.entity + " 分析";
@@ -4142,6 +4142,7 @@
                 f("f388a7ec", "DeepSearch"),
                 f("ab1eb384", "选择所需的搜索模式"),
                 f("i330e54c", "高级搜索和推理"),
+                f("fdcce108", "DeeperSearch"),
                 f("ac64b674", "拓展搜索，更多推理"),
                 f("j22655f2", "随便问点什么"),
                 f("h0681e3e", "与我们的 AI 助手 Grok 交谈"),
@@ -4168,6 +4169,9 @@
                 f("h15dce2e", "高级设置"),
                 f("ff9dc268", "编辑提示语"),
                 f("acb2baa0", "创建图片"),
+                f("fe9ad897", function (e) {
+                    return "Edit Image" + e.ttc_grok_preset;
+                }),
                 f("h30fd372", "尝试语音模式"),
                 f("e9fcdd0c", "让 Grok 在网上广泛搜索"),
                 f("fc4e8aba", "让 Grok 进行逐步推理"),
@@ -4906,10 +4910,10 @@
                 f("d2a43a7a", '同时包含 "ai" 和 "startup"'),
                 f("a8584698", "ai startup"),
                 f("jb6f9292", "完整包含“ai startup”"),
-                f("j8ee77c4", '"ai startup"'),
-                f("d0480758", '包含 "ai" 或 "startup"（或两者）'),
-                f("f0048fa2", "ai 或 startup");
-            f("da0df186", '包含 "ai"，但不包含 "startup"'),
+                f("j8ee77c4", '"ai startup"');
+            f("d0480758", '包含 "ai" 或 "startup"（或两者）'),
+                f("f0048fa2", "ai 或 startup"),
+                f("da0df186", '包含 "ai"，但不包含 "startup"'),
                 f("f2f463ea", '"ai startup"'),
                 f("a10a357e", '包含 "ai" 并至少有 50 个点赞'),
                 f("ca8ed1e8", "ai min_faves:50"),
@@ -5872,10 +5876,10 @@
                 f("b732a4cc", "当你这样做时，就会在这里看到他们的帖子。"),
                 f("hff48914", "目前未找到任何帖子。"),
                 f("hb52cc4a", "请稍后再试。"),
-                f("e50e1bb0", "欢迎来到社群"),
-                f("i6829daa", "社群是由版主管理的讨论群组，X 用户可以在这里沟通和分享。"),
-                f("fc5c6914", "认识其他兴趣相投的人");
-            f("aa1a9820", "加入社群，与志同道合的人沟通。"),
+                f("e50e1bb0", "欢迎来到社群");
+            f("i6829daa", "社群是由版主管理的讨论群组，X 用户可以在这里沟通和分享。"),
+                f("fc5c6914", "认识其他兴趣相投的人"),
+                f("aa1a9820", "加入社群，与志同道合的人沟通。"),
                 f("edef4c82", "直接发帖到社群"),
                 f("a7640df6", "你的帖子会与社群成员和你的关注者分享。"),
                 f("h3bb8068", "在需要时调取备份"),
@@ -6870,10 +6874,10 @@
                 f("c2059276", "让你的回复得到推广。"),
                 f("b023ec20", "最大化回复推广"),
                 f("g337328e", "让你的回复获得最高的关注度。"),
-                f("fa006202", "背景视频播放"),
-                f("jf389778", "在浏览或使用其他应用时观看"),
-                f("f2977d80", "为文件夹添加书签");
-            f("j1d3d910", "让你保存的帖子井井有条，以方便访问"),
+                f("fa006202", "背景视频播放");
+            f("jf389778", "在浏览或使用其他应用时观看"),
+                f("f2977d80", "为文件夹添加书签"),
+                f("j1d3d910", "让你保存的帖子井井有条，以方便访问"),
                 f("f0f48668", "高级支持"),
                 f("c3148608", "在需要时更快地寻求帮助"),
                 f("b485ca6e", "“亮点”标签"),
@@ -7846,9 +7850,7 @@
                 f("e7e36818", "在完全设置资金来源后，广告账号才有资格进行职位推广。"),
                 f("c28566e0", "广告账号"),
                 f("c80160d3", "广告"),
-                f("ff0edac0", "你确定要取消订阅服务吗？"),
-                f("h2ac0348", "不，我要返回"),
-                f("dbf9667e", "我确定");
+                f("ff0edac0", "你确定要取消订阅服务吗？");
             function t(e, c) {
                 for (var a = 0; a < c.length; a++) {
                     var f = c[a];
@@ -7887,7 +7889,9 @@
                     r(e, c)
                 );
             }
-            f("j7592572", "U 形弯"),
+            f("h2ac0348", "不，我要返回"),
+                f("dbf9667e", "我确定"),
+                f("j7592572", "U 形弯"),
                 f("ee778942", "交通灯"),
                 f("fdd57981", function (e) {
                     return "我们将为你提供一次性 " + e.totalAmount + " 美元的免费广告积分。";
@@ -8910,16 +8914,16 @@
                 }),
                 f("dbeae6cf", function (e) {
                     return e.count + " 位其他听众";
-                }),
-                f("d2543d97", function (e) {
-                    return "+" + e.count;
-                }),
+                });
+            f("d2543d97", function (e) {
+                return "+" + e.count;
+            }),
                 f("dc718e53", function (e) {
                     return "+另外 " + e.count + " 个人";
-                });
-            f("d0e7b11b", function (e) {
-                return e.date + "，时间 " + e.time;
-            }),
+                }),
+                f("d0e7b11b", function (e) {
+                    return e.date + "，时间 " + e.time;
+                }),
                 f("b4349cbc", function (e) {
                     return "" + e.relativeDay;
                 }),
@@ -13202,4 +13206,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh.18db520a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh.bed2443a.js.map

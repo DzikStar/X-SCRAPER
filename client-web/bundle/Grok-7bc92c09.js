@@ -654,7 +654,7 @@
                         N?.length && Y ? n.createElement(xe.e, { isAnimated: ae, mediaIds: N }) : null,
                         n.createElement(s.Z, { ref: ce, style: Ie.textContainer }, pe ? null : c ? n.createElement(o.ZP, { style: Ie.deletedText }, ke) : "" !== ne && void 0 !== ne ? n.createElement(h.default, { chatResponseAnnotations: F, citations: de, disableLinks: d.ZP.isWebView(), isAnimated: ae, key: "normal-answer", markdownText: ne }) : w && _e ? n.createElement(s.Z, { style: Ie.spinnerContainer }, n.createElement(y.Z, null), !!T && n.createElement(s.Z, { style: Ie.searchingLabelContainer }, n.createElement(o.ZP, { style: Ie.searchingLabel }, n.createElement("span", null, ve)))) : null),
                     ),
-                    !w && n.createElement(Ee.U, { postIds: I ?? [], style: Ie.embeddedContent, webResults: D ?? [] }),
+                    !w && n.createElement(Ee.U, { postIds: I ?? [], response: ne, style: Ie.embeddedContent, webResults: D ?? [] }),
                     (!ge && !Ze) || w
                         ? null
                         : n.createElement(
@@ -708,4 +708,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-7bc92c09.c9dc654a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-7bc92c09.ed41f86a.js.map

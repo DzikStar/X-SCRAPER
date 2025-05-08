@@ -1710,7 +1710,7 @@
                 a("d78131b9", function (e) {
                     return "@" + e.screenName + " toevoegen aan/verwijderen uit Lijsten";
                 }),
-                a("b3b642fc", "Why this post?"),
+                a("b3b642fc", "Waarom deze post?"),
                 a("fb4ee11c", "Waarom krijg je deze advertentie te zien?"),
                 a("ad50e7d9", function (e) {
                     return "Analyses van " + e.entity + " bekijken";
@@ -4143,6 +4143,7 @@
                 a("f388a7ec", "DeepSearch"),
                 a("ab1eb384", "Selecteer je gewenste zoekmodus"),
                 a("i330e54c", "Geavanceerd zoeken en redeneren"),
+                a("fdcce108", "DeeperSearch"),
                 a("ac64b674", "Uitgebreider zoeken, meer redeneren"),
                 a("j22655f2", "Vraag wat je maar wil"),
                 a("h0681e3e", "Praat met Grok, onze AI-assistent"),
@@ -4169,6 +4170,9 @@
                 a("h15dce2e", "Geavanceerde instellingen"),
                 a("ff9dc268", "Prompt bewerken"),
                 a("acb2baa0", "Maak afbeeldingen"),
+                a("fe9ad897", function (e) {
+                    return "Edit Image" + e.ttc_grok_preset;
+                }),
                 a("h30fd372", "Probeer de Spraakmodus"),
                 a("e9fcdd0c", "Vraag Grok om het web agressief te doorzoeken"),
                 a("fc4e8aba", "Vraag Grok om stap voor stap te redeneren"),
@@ -4907,10 +4911,10 @@
                 a("d2a43a7a", "bevat zowel 'ai' als 'start-up'"),
                 a("a8584698", "ai start-up"),
                 a("jb6f9292", "bevat de exacte tekst 'ai start-up'"),
-                a("j8ee77c4", '"ai start-up"'),
-                a("d0480758", "bevat 'ai' of 'start-up' (of beide)"),
-                a("f0048fa2", "ai OR start-up");
-            a("da0df186", "bevat 'ai, maar niet 'start-up'"),
+                a("j8ee77c4", '"ai start-up"');
+            a("d0480758", "bevat 'ai' of 'start-up' (of beide)"),
+                a("f0048fa2", "ai OR start-up"),
+                a("da0df186", "bevat 'ai, maar niet 'start-up'"),
                 a("f2f463ea", "ai -start-up"),
                 a("a10a357e", "bevat 'ai' en heeft minimaal 50 vind-ik-leuks"),
                 a("ca8ed1e8", "ai min_faves:50"),
@@ -5873,10 +5877,10 @@
                 a("b732a4cc", "Als je dat doet, zie je zijn of haar post hier."),
                 a("hff48914", "We kunnen nu geen posts vinden."),
                 a("hb52cc4a", "Probeer het later nog eens."),
-                a("e50e1bb0", "Welkom bij Community's"),
-                a("i6829daa", "Community's zijn gemodereerde discussiegroepen waar mensen op X met elkaar in contact kunnen komen en dingen kunnen delen."),
-                a("fc5c6914", "Ontmoet anderen met dezelfde interesses");
-            a("aa1a9820", "Word lid van Community's om in contact te komen met mensen met dezelfde interesses."),
+                a("e50e1bb0", "Welkom bij Community's");
+            a("i6829daa", "Community's zijn gemodereerde discussiegroepen waar mensen op X met elkaar in contact kunnen komen en dingen kunnen delen."),
+                a("fc5c6914", "Ontmoet anderen met dezelfde interesses"),
+                a("aa1a9820", "Word lid van Community's om in contact te komen met mensen met dezelfde interesses."),
                 a("edef4c82", "Rechtstreeks posts plaatsen in een Community"),
                 a("a7640df6", "Je posts worden gedeeld met Community-leden en met je volgers."),
                 a("h3bb8068", "Krijg hulp wanneer dat nodig is"),
@@ -6871,10 +6875,10 @@
                 a("c2059276", "Zorg dat je antwoorden worden geboost."),
                 a("b023ec20", "Maximale Antwoordboost"),
                 a("g337328e", "Krijg de meeste zichtbaarheid van je antwoorden"),
-                a("fa006202", "Video afspelen in de achtergrond"),
-                a("jf389778", "Kijk terwijl je browset of andere apps gebruikt"),
-                a("f2977d80", "Bladwijzermappen");
-            a("j1d3d910", "Hou je opgeslagen posts georganiseerd zodat je ze eenvoudig kan raadplegen"),
+                a("fa006202", "Video afspelen in de achtergrond");
+            a("jf389778", "Kijk terwijl je browset of andere apps gebruikt"),
+                a("f2977d80", "Bladwijzermappen"),
+                a("j1d3d910", "Hou je opgeslagen posts georganiseerd zodat je ze eenvoudig kan raadplegen"),
                 a("f0f48668", "Premium ondersteuning"),
                 a("c3148608", "Krijg sneller ondersteuning wanneer je hulp nodig hebt"),
                 a("b485ca6e", "Tabblad Hoogtepunten"),
@@ -7847,9 +7851,7 @@
                 a("e7e36818", "Advertentieaccounts komen in aanmerking voor het uitlichten van vacatures als ze volledig zijn ingesteld, inclusief een financieringsbron."),
                 a("c28566e0", "Advertentieaccount"),
                 a("c80160d3", "Adverteren"),
-                a("ff0edac0", "Weet je zeker dat je je abonnement wil opzeggen?"),
-                a("h2ac0348", "Nee, ga terug"),
-                a("dbf9667e", "Ik weet het zeker");
+                a("ff0edac0", "Weet je zeker dat je je abonnement wil opzeggen?");
             function i(e, n) {
                 for (var t = 0; t < n.length; t++) {
                     var a = n[t];
@@ -7888,7 +7890,9 @@
                     o(e, n)
                 );
             }
-            a("j7592572", "U-bocht"),
+            a("h2ac0348", "Nee, ga terug"),
+                a("dbf9667e", "Ik weet het zeker"),
+                a("j7592572", "U-bocht"),
                 a("ee778942", "Verkeerslichten"),
                 a("fdd57981", function (e) {
                     return "We willen je graag eenmalig een gratis advertentietegoed van USD " + e.totalAmount + " aanbieden.";
@@ -8911,16 +8915,16 @@
                 }),
                 a("dbeae6cf", function (e) {
                     return e.count + " andere luisteraar" + r(e.count, "", "s");
-                }),
-                a("d2543d97", function (e) {
-                    return "+ " + e.count;
-                }),
+                });
+            a("d2543d97", function (e) {
+                return "+ " + e.count;
+            }),
                 a("dc718e53", function (e) {
                     return "+ " + e.count + " ander" + r(e.count, "", "en");
-                });
-            a("d0e7b11b", function (e) {
-                return e.date + " om " + e.time;
-            }),
+                }),
+                a("d0e7b11b", function (e) {
+                    return e.date + " om " + e.time;
+                }),
                 a("b4349cbc", function (e) {
                     return "" + e.relativeDay;
                 }),
@@ -13201,4 +13205,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.088517ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.8d36f26a.js.map

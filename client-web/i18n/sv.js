@@ -1710,7 +1710,7 @@
                 t("d78131b9", function (e) {
                     return "Lägg till/ta bort @" + e.screenName + " från listor";
                 }),
-                t("b3b642fc", "Why this post?"),
+                t("b3b642fc", "Varför detta inlägg?"),
                 t("fb4ee11c", "Varför visas denna annons?"),
                 t("ad50e7d9", function (e) {
                     return "Visa statistik om " + e.entity;
@@ -4143,6 +4143,7 @@
                 t("f388a7ec", "DeepSearch"),
                 t("ab1eb384", "Välj ditt önskade sökläge"),
                 t("i330e54c", "Avancerad sökning och tankegångar"),
+                t("fdcce108", "DeeperSearch"),
                 t("ac64b674", "Utökade sökningar, fler tankegångar"),
                 t("j22655f2", "Fråga vad du vill"),
                 t("h0681e3e", "Prata med Grok, vår AI-assistent"),
@@ -4169,6 +4170,9 @@
                 t("h15dce2e", "Avancerade inställningar"),
                 t("ff9dc268", "Redigera beskrivningen"),
                 t("acb2baa0", "Skapa bilder"),
+                t("fe9ad897", function (e) {
+                    return "Edit Image" + e.ttc_grok_preset;
+                }),
                 t("h30fd372", "Testa röstläget"),
                 t("e9fcdd0c", "Be Grok att söka aggressivt på webben"),
                 t("fc4e8aba", "Be  Grok resonera steg för steg"),
@@ -4907,10 +4911,10 @@
                 t("d2a43a7a", "innehåller både ”ai” och ”nystartat”"),
                 t("a8584698", "nystartat ai-bolag"),
                 t("jb6f9292", "innehåller den exakta frasen ”nystartat ai-bolag”"),
-                t("j8ee77c4", "”nystartat ai-bolag”"),
-                t("d0480758", "innehåller antingen ”ai” eller ”nystartat” (eller båda)"),
-                t("f0048fa2", "ai eller nystartat");
-            t("da0df186", "innehåller ”ai” men inte ”nystartat”"),
+                t("j8ee77c4", "”nystartat ai-bolag”");
+            t("d0480758", "innehåller antingen ”ai” eller ”nystartat” (eller båda)"),
+                t("f0048fa2", "ai eller nystartat"),
+                t("da0df186", "innehåller ”ai” men inte ”nystartat”"),
                 t("f2f463ea", "ai -nystartat"),
                 t("a10a357e", "innehåller ”ai” och har minst 50 gilla-markeringar"),
                 t("ca8ed1e8", "ai min_faves:50"),
@@ -5873,10 +5877,10 @@
                 t("b732a4cc", "När du gör det visas hens inlägg här."),
                 t("hff48914", "Det gick inte att hitta några inlägg nu."),
                 t("hb52cc4a", "Försök igen senare."),
-                t("e50e1bb0", "Välkommen till Grupper"),
-                t("i6829daa", "Grupper är modererade diskussionsgrupper som folk på X kan ansluta och bidra till."),
-                t("fc5c6914", "Träffa andra med dina intressen");
-            t("aa1a9820", "Gå med i grupper och få kontakt med personer med samma intressen."),
+                t("e50e1bb0", "Välkommen till Grupper");
+            t("i6829daa", "Grupper är modererade diskussionsgrupper som folk på X kan ansluta och bidra till."),
+                t("fc5c6914", "Träffa andra med dina intressen"),
+                t("aa1a9820", "Gå med i grupper och få kontakt med personer med samma intressen."),
                 t("edef4c82", "Gör inlägg direkt till en grupp"),
                 t("a7640df6", "Dina inlägg delas med gruppmedlemmar och dina följare."),
                 t("h3bb8068", "Få hjälp när du behöver det"),
@@ -6871,10 +6875,10 @@
                 t("c2059276", "Låt dina svar boostas."),
                 t("b023ec20", "Maximal svarsboost"),
                 t("g337328e", "Gör dina svar så synliga det bara går"),
-                t("fa006202", "Videouppspelning i bakgrunden"),
-                t("jf389778", "Titta medan du surfar eller använder andra appar"),
-                t("f2977d80", "Mappar med bokmärken");
-            t("j1d3d910", "Håll dina sparade inlägg ordnade så att de är lätta att hitta"),
+                t("fa006202", "Videouppspelning i bakgrunden");
+            t("jf389778", "Titta medan du surfar eller använder andra appar"),
+                t("f2977d80", "Mappar med bokmärken"),
+                t("j1d3d910", "Håll dina sparade inlägg ordnade så att de är lätta att hitta"),
                 t("f0f48668", "Premiumsupport"),
                 t("c3148608", "Få hjälp snabbare när du behöver det"),
                 t("b485ca6e", "Fliken Höjdpunkter"),
@@ -7847,9 +7851,7 @@
                 t("e7e36818", "Annonskonton kan marknadsföra jobb om de konfigureras med en finansieringskälla."),
                 t("c28566e0", "Annonskonto"),
                 t("c80160d3", "Annonsering"),
-                t("ff0edac0", "Vill du verkligen säga upp prenumerationen?"),
-                t("h2ac0348", "Nej, ta mig tillbaka"),
-                t("dbf9667e", "Jag är säker");
+                t("ff0edac0", "Vill du verkligen säga upp prenumerationen?");
             function i(e, a) {
                 for (var n = 0; n < a.length; n++) {
                     var t = a[n];
@@ -7888,7 +7890,9 @@
                     d(e, a)
                 );
             }
-            t("j7592572", "U-sväng"),
+            t("h2ac0348", "Nej, ta mig tillbaka"),
+                t("dbf9667e", "Jag är säker"),
+                t("j7592572", "U-sväng"),
                 t("ee778942", "Trafikljus"),
                 t("fdd57981", function (e) {
                     return "Vi vill erbjuda dig en annonskredit på " + e.totalAmount + " USD som ett engångserbjudande.";
@@ -8911,16 +8915,16 @@
                 }),
                 t("dbeae6cf", function (e) {
                     return e.count + " lyssnare till";
-                }),
-                t("d2543d97", function (e) {
-                    return "+" + e.count;
-                }),
+                });
+            t("d2543d97", function (e) {
+                return "+" + e.count;
+            }),
                 t("dc718e53", function (e) {
                     return e.count + " till+";
-                });
-            t("d0e7b11b", function (e) {
-                return e.date + " kl " + e.time;
-            }),
+                }),
+                t("d0e7b11b", function (e) {
+                    return e.date + " kl " + e.time;
+                }),
                 t("b4349cbc", function (e) {
                     return "" + e.relativeDay;
                 }),
@@ -13188,4 +13192,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sv.ede23f1a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sv.24a1286a.js.map

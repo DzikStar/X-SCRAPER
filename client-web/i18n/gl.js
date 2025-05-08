@@ -4147,6 +4147,7 @@
                 t("f388a7ec", "DeepSearch"),
                 t("ab1eb384", "Select your desired search mode"),
                 t("i330e54c", "Advanced search and reasoning"),
+                t("fdcce108", "DeeperSearch"),
                 t("ac64b674", "Extended search, more reasoning"),
                 t("j22655f2", "Ask anything"),
                 t("h0681e3e", "Talk to Grok, our AI assistant"),
@@ -4173,6 +4174,9 @@
                 t("h15dce2e", "Advanced Settings"),
                 t("ff9dc268", "Edit prompt"),
                 t("acb2baa0", "Create Images"),
+                t("fe9ad897", function (e) {
+                    return "Edit Image" + e.ttc_grok_preset;
+                }),
                 t("h30fd372", "Try Voice Mode"),
                 t("e9fcdd0c", "Ask Grok to aggressively search the web"),
                 t("fc4e8aba", "Ask Grok to reason step-by-step"),
@@ -4911,10 +4915,10 @@
                 t("d2a43a7a", 'contains both "ai" and "startup"'),
                 t("a8584698", "ai startup"),
                 t("jb6f9292", 'contains the exact phrase "ai startup"'),
-                t("j8ee77c4", '"ai startup"'),
-                t("d0480758", 'contains either "ai" or "startup" (or both)'),
-                t("f0048fa2", "ai OR startup");
-            t("da0df186", 'contains "ai", but not "startup"'),
+                t("j8ee77c4", '"ai startup"');
+            t("d0480758", 'contains either "ai" or "startup" (or both)'),
+                t("f0048fa2", "ai OR startup"),
+                t("da0df186", 'contains "ai", but not "startup"'),
                 t("f2f463ea", "ai -startup"),
                 t("a10a357e", 'contains "ai" and has at least 50 likes'),
                 t("ca8ed1e8", "ai min_faves:50"),
@@ -5877,10 +5881,10 @@
                 t("b732a4cc", "When you do, you’ll see their posts here."),
                 t("hff48914", "No posts could be found at this time."),
                 t("hb52cc4a", "Téntao de novo máis tarde."),
-                t("e50e1bb0", "Welcome to Communities"),
-                t("i6829daa", "Communities are moderated discussion groups where people on X can connect and share."),
-                t("fc5c6914", "Meet others with your interests");
-            t("aa1a9820", "Join Communities to connect with people who share your interests."),
+                t("e50e1bb0", "Welcome to Communities");
+            t("i6829daa", "Communities are moderated discussion groups where people on X can connect and share."),
+                t("fc5c6914", "Meet others with your interests"),
+                t("aa1a9820", "Join Communities to connect with people who share your interests."),
                 t("edef4c82", "Post directly to a Community"),
                 t("a7640df6", "Your posts are shared with Community members and your followers."),
                 t("h3bb8068", "Get backup when you need it"),
@@ -6875,10 +6879,10 @@
                 t("c2059276", "Have your replies boosted."),
                 t("b023ec20", "Max Reply Boost"),
                 t("g337328e", "Get the highest visibility for your replies."),
-                t("fa006202", "Background video playback"),
-                t("jf389778", "Watch while browsing or using other apps"),
-                t("f2977d80", "Bookmark folders");
-            t("j1d3d910", "Keep your saved posts organized for easy access"),
+                t("fa006202", "Background video playback");
+            t("jf389778", "Watch while browsing or using other apps"),
+                t("f2977d80", "Bookmark folders"),
+                t("j1d3d910", "Keep your saved posts organized for easy access"),
                 t("f0f48668", "Premium support"),
                 t("c3148608", "Get faster assistance when you need help"),
                 t("b485ca6e", "Highlights tab"),
@@ -7851,9 +7855,7 @@
                 t("e7e36818", "Ad accounts are eligible for job promotion when they are fully set up with a funding source."),
                 t("c28566e0", "Ad Account"),
                 t("c80160d3", "Advertising"),
-                t("ff0edac0", "Are you sure you want to cancel your subscription?"),
-                t("h2ac0348", "No, take me back"),
-                t("dbf9667e", "I’m sure");
+                t("ff0edac0", "Are you sure you want to cancel your subscription?");
             function r(e, a) {
                 for (var o = 0; o < a.length; o++) {
                     var t = a[o];
@@ -7892,7 +7894,9 @@
                     s(e, a)
                 );
             }
-            t("j7592572", "U-turn"),
+            t("h2ac0348", "No, take me back"),
+                t("dbf9667e", "I’m sure"),
+                t("j7592572", "U-turn"),
                 t("ee778942", "Traffic lights"),
                 t("fdd57981", function (e) {
                     return "We’d like to offer you a free one-time " + e.totalAmount + " USD ad credit.";
@@ -8915,16 +8919,16 @@
                 }),
                 t("dbeae6cf", function (e) {
                     return e.count + " other listener" + i(e.count, "", "s");
-                }),
-                t("d2543d97", function (e) {
-                    return "+" + e.count;
-                }),
+                });
+            t("d2543d97", function (e) {
+                return "+" + e.count;
+            }),
                 t("dc718e53", function (e) {
                     return "+" + e.count + " máis";
-                });
-            t("d0e7b11b", function (e) {
-                return e.date + " ás " + e.time;
-            }),
+                }),
+                t("d0e7b11b", function (e) {
+                    return e.date + " ás " + e.time;
+                }),
                 t("b4349cbc", function (e) {
                     return "" + e.relativeDay;
                 }),
@@ -13192,4 +13196,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/gl.fa1606fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/gl.4bcbe87a.js.map

@@ -241,7 +241,7 @@
                         I = x.Z.reducedMotionEnabled ? null : w;
                     return a.createElement(_.Z.Modal, null, a.createElement(B.Z, null, a.createElement(D.Z, null, a.createElement(o.Z, { onClick: f, style: [H.wrapper, H.mask, k, I, H.backgroundBlur] }, (0, P.Z)("div", { role: "dialog", onTransitionEnd: g, ref: b, onClick: h, style: [H.root, l ? H.compactRoot : void 0, H.backgroundRootBlur, C, I], children: a.createElement(L, { analytics: s, isCompact: l, menuItems: e, onClose: y, selectedMenuItem: d, setSelectedMenuItem: p }) })))));
                 },
-                K = l.default.create((e) => ({ buttonContainer: { position: "relative", borderColor: e.colors.gray300, borderWidth: 1, borderRadius: 25 }, fadeIn: { ...m.DP }, disabledButtonInteractiveStyle: { backgroundColor: "transparent" }, button: { ...m.il }, compactButton: { ...m.u$ }, disabledButton: { borderColor: "light" === e.paletteName ? e.colors.gray100 : e.colors.gray200, color: e.colors.gray600, backgroundColor: "transparent" }, icon: { ...m.Qs }, indicator: { position: "absolute", top: 0, end: 0, width: e.spaces.space8, height: e.spaces.space8, borderRadius: e.spaces.space8, backgroundColor: e.colors.primary } })),
+                K = l.default.create((e) => ({ buttonContainer: { position: "relative", borderColor: e.colors.gray300, borderWidth: 1, borderRadius: e.borderRadii.infinite }, fadeIn: { ...m.DP }, disabledButtonInteractiveStyle: { backgroundColor: "transparent" }, button: { ...m.il }, compactButton: { ...m.u$ }, disabledButton: { borderColor: "light" === e.paletteName ? e.colors.gray100 : e.colors.gray200, color: e.colors.gray600, backgroundColor: "transparent" }, icon: { ...m.Qs }, indicator: { position: "absolute", top: 0, end: 0, width: e.spaces.space8, height: e.spaces.space8, borderRadius: e.spaces.space8, backgroundColor: e.colors.primary } })),
                 A = ({ disabled: e, fadeIn: t, isGrokDrawer: n, isInputCompact: l }) => {
                     const m = (0, u.z)(),
                         { advancedSettings: g } = (0, p.w)(),
@@ -300,10 +300,10 @@
             const g = u().g7b1c574,
                 h = u().f388a7ec,
                 y = u().ab1eb384,
-                f = "DeepSearch",
+                f = u().f388a7ec,
                 C = u().i330e54c,
                 E = "default",
-                k = "DeeperSearch",
+                k = u().fdcce108,
                 w = u().ac64b674,
                 I = "deeper",
                 v = [
@@ -388,7 +388,7 @@
             function p() {
                 const { clearFilterKey: e, isCreateImageEnabled: t, isImageEditEnabled: n } = (0, u.w)(),
                     i = t || n,
-                    p = a.useCallback(() => (t ? d.y3 : n ? d.mC : ""), [t, n]),
+                    p = a.useCallback(() => (t ? d.y3 : n ? (0, d.zF)({ ttc_grok_preset: "" }) : ""), [t, n]),
                     m = a.useCallback(
                         (t) => {
                             t.preventDefault(), e();
@@ -424,7 +424,7 @@
             function w({ disabled: e, fadeIn: t, focused: n, isInputCompact: i, label: c, useButtonsForExpandedInput: d }) {
                 const { onFileSelected: C } = (0, h.ZP)(),
                     w = (0, g.Z)(),
-                    Z = (0, b.hC)("responsive_web_grok_pdf_upload_enabled"),
+                    v = (0, b.hC)("responsive_web_grok_pdf_upload_enabled"),
                     S = (0, b.hC)("responsive_web_grok_text_upload_enabled"),
                     x = (0, h.x9)(),
                     { clearFilterKey: _, isImageEditEnabled: B } = (0, f.w)(),
@@ -436,12 +436,13 @@
                     ),
                     P = (0, b.hC)("responsive_web_grok_file_upload_enabled"),
                     T = (0, b.hC)("responsive_web_grok_webview_file_upload_enabled");
-                return !P || (m.ZP.isWebView() && !T) ? null : d ? a.createElement(o.Z, { style: v.buttonContainer }, a.createElement(r.Z, { accept: x.join(","), "aria-label": E, backgroundColor: "transparent", borderColor: "transparent", color: "gray900", disabled: e, hoverLabel: k, multiple: !0, onChange: D, onPressIn: I, size: "smallCompact", style: [v.button, i ? v.compactButton : null, t ? v.fadeIn : null] }, a.createElement(u.default, { style: v.icon }), c && a.createElement(a.Fragment, null, a.createElement(l.Z, { size: "space4" }), a.createElement(s.ZP, { color: "gray900", size: "subtext2", weight: "medium" }, c)))) : a.createElement(o.Z, { style: v.buttonContainer }, a.createElement(r.Z, { accept: x.join(","), "aria-label": E, color: "gray900", hoverLabel: k, icon: Z || S ? a.createElement(u.default, null) : a.createElement(p.default, null), multiple: !0, onChange: D, onPressIn: I, size: "smallCompact", style: v.deprecatedButton }));
+                return !P || (m.ZP.isWebView() && !T) ? null : d ? a.createElement(o.Z, { style: Z.buttonContainer }, a.createElement(r.Z, { accept: x.join(","), "aria-label": E, backgroundColor: "transparent", borderColor: "transparent", color: "gray900", disabled: e, hoverLabel: k, multiple: !0, onChange: D, onPressIn: I, size: "smallCompact", style: [Z.button, i ? Z.compactButton : null, t ? Z.fadeIn : null] }, a.createElement(u.default, { style: Z.icon }), c && a.createElement(a.Fragment, null, a.createElement(l.Z, { size: "space4" }), a.createElement(s.ZP, { color: "gray900", size: "subtext2", weight: "medium" }, c)))) : a.createElement(o.Z, { style: Z.buttonContainer }, a.createElement(r.Z, { accept: x.join(","), "aria-label": E, color: "gray900", hoverLabel: k, icon: v || S ? a.createElement(u.default, { style: Z.icon }) : a.createElement(p.default, { style: Z.icon }), multiple: !0, onChange: D, onPressIn: I, size: "smallCompact", style: Z.deprecatedButton }));
             }
             const I = (e) => {
                     e.preventDefault(), e.stopPropagation();
                 },
-                v = i.default.create((e) => ({ buttonContainer: { borderColor: e.colors.gray300, borderWidth: 1, borderRadius: 25 }, button: { ...C.il }, compactButton: { ...C.u$ }, fadeIn: { ...C.DP }, deprecatedButton: { marginStart: e.spaces.space4 }, icon: { ...C.Qs } }));
+                v = 0.5,
+                Z = i.default.create((e) => ({ buttonContainer: { borderColor: e.colors.gray300, borderWidth: 1, borderRadius: e.borderRadii.infinite }, button: { ...C.il, padding: C.il.padding - v, paddingStart: C.il.paddingStart - v, paddingEnd: C.il.paddingEnd - v }, compactButton: { ...C.u$, padding: C.u$.padding - v, paddingStart: C.u$.paddingStart - v, paddingEnd: C.u$.paddingEnd - v }, fadeIn: { ...C.DP }, deprecatedButton: { marginStart: e.spaces.space4 }, icon: { ...C.Qs } }));
         },
         928831: (e, t, n) => {
             n.d(t, { w: () => h });
@@ -482,7 +483,7 @@
                                 { advancedSettings: t } = e;
                             return a.useMemo(() => {
                                 const e = { Research: {}, Reasoning: {}, ImageEdit: { enabledOnClickBehavior: "FileInput" } };
-                                return t?.deepsearchArgs?.mode === b.z_ && (e.Research.label = "DeeperSearch"), e;
+                                return t?.deepsearchArgs?.mode === b.z_ && (e.Research.label = b.p9), e;
                             }, [t]);
                         })(),
                         [v, Z] = a.useState(""),
@@ -547,15 +548,15 @@
                         j = "ImageEdit" === f,
                         G = "CreateImage" === f,
                         N = (0, r.yu)(),
-                        X = N && l.ZP.isWebView(),
-                        $ = H || !!C,
+                        $ = N && l.ZP.isWebView(),
+                        X = H || !!C,
                         Q = h.focused,
                         Y = (A && !S) || (V && !x);
                     return (
                         a.useEffect(() => {
                             k.every((e) => "Hidden" === e[w]) || k.length <= 0 ? M() : v && ("Research" !== v || A ? ("Reasoning" !== v || V ? "ImageEdit" !== v || j || L() : F()) : R(), Z(""));
                         }, [k, w, M, j, V, A, v, R, L, F]),
-                        { grokInput: h, setFocused: B, isResearchEnabled: A, isReasoningEnabled: V, isImageEditEnabled: j, isCreateImageEnabled: G, isDefault: O, isInputFocused: Q, hasSelectedFilterKey: K, isInputMobileSize: N, isInputMobile: X, isInputCompact: $, grokModeButtons: k, grokModeButtonStatusKey: w, filterKey: f, isFileInputDisabled: Y, setAdvancedSettings: D, setDeepsearchAdvancedSettings: P, setDeepersearchAdvancedSettings: T, advancedSettings: y, grokModeButtonOverrides: I, selectDeepsearchFilterKey: R, selectReasoningFilterKey: F, selectImageEditFilterKey: L, clearFilterKey: M, setPendingModeButtonFilterKey: Z, setFilterKey: W, hasValue: e, setHasValue: t }
+                        { grokInput: h, setFocused: B, isResearchEnabled: A, isReasoningEnabled: V, isImageEditEnabled: j, isCreateImageEnabled: G, isDefault: O, isInputFocused: Q, hasSelectedFilterKey: K, isInputMobileSize: N, isInputMobile: $, isInputCompact: X, grokModeButtons: k, grokModeButtonStatusKey: w, filterKey: f, isFileInputDisabled: Y, setAdvancedSettings: D, setDeepsearchAdvancedSettings: P, setDeepersearchAdvancedSettings: T, advancedSettings: y, grokModeButtonOverrides: I, selectDeepsearchFilterKey: R, selectReasoningFilterKey: F, selectImageEditFilterKey: L, clearFilterKey: M, setPendingModeButtonFilterKey: Z, setFilterKey: W, hasValue: e, setHasValue: t }
                     );
                 };
         },
@@ -625,11 +626,11 @@
                     [A, V] = a.useState(!1),
                     [j, G] = a.useState(!1),
                     N = n[t.filter_key || ""],
-                    X = N?.status || t[_],
-                    $ = R[t.filter_key || ""],
+                    $ = N?.status || t[_],
+                    X = R[t.filter_key || ""],
                     Q = M.width < 350 || (s && D && D.length >= 3),
-                    Y = "Disabled" === X,
-                    J = "Hidden" === X;
+                    Y = "Disabled" === $,
+                    J = "Hidden" === $;
                 let U = t.icon_name ? (0, I.wG)(t.icon_name) : null;
                 "IconLightbulbGrokStrokeOff" === t.icon_name && i && (U = (0, I.wG)("IconLightbulbGrokStrokeOn") || null);
                 const q = a.useCallback(
@@ -695,10 +696,10 @@
                 return Y
                     ? a.createElement(L, { handleMouseEnter: void 0, handleMouseLeave: void 0, isHoveringButton: !1, isToggled: !1, showTooltip: !1, style: W.disabledButtonContainer }, a.createElement(y.Z, { disabled: l, key: t.label, onClick: E, style: [W.button, s ? W.compactButton : null, W.disabledButton], withoutInteractiveStyles: !0 }, re))
                     : i || "FileInput" !== N.enabledOnClickBehavior
-                      ? a.createElement(L, { dropdownMenuItems: ae, handleMouseEnter: ee, handleMouseLeave: te, hideTooltip: () => V(!1), isHoveringButton: j, isInputCompact: s, isToggled: i, showTooltip: A, tooltipText: $ }, a.createElement(C.ZP, oe, re))
+                      ? a.createElement(L, { dropdownMenuItems: ae, handleMouseEnter: ee, handleMouseLeave: te, hideTooltip: () => V(!1), isHoveringButton: j, isInputCompact: s, isToggled: i, showTooltip: A, tooltipText: X }, a.createElement(C.ZP, oe, re))
                       : a.createElement(
                             L,
-                            { handleMouseEnter: ee, handleMouseLeave: te, isHoveringButton: j, isToggled: i, showTooltip: A, tooltipText: $ },
+                            { handleMouseEnter: ee, handleMouseLeave: te, isHoveringButton: j, isToggled: i, showTooltip: A, tooltipText: X },
                             a.createElement(
                                 f.Z,
                                 (0, b.Z)({}, oe, {
@@ -707,7 +708,9 @@
                                     onChange: (e) => {
                                         q(e);
                                     },
-                                    onClick: void 0,
+                                    onClick: () => {
+                                        e.scribe({ action: "click", component: "grok-input", element: t.filter_key });
+                                    },
                                 }),
                                 re,
                             ),
@@ -762,10 +765,9 @@
                     ),
                     A = a.useCallback(
                         (e) => {
-                            const t = g[e.filter_key || ""];
-                            P.scribe({ action: "click", component: "grok-input", element: t?.label || e.label }), (("Research" === e.filter_key && !x) || ("Reasoning" === e.filter_key && !_)) && H(), n && n(), E(b === e.filter_key ? null : e.filter_key || null);
+                            P.scribe({ action: "click", component: "grok-input", element: e.filter_key }), (("Research" === e.filter_key && !x) || ("Reasoning" === e.filter_key && !_)) && H(), n && n(), E(b === e.filter_key ? null : e.filter_key || null);
                         },
-                        [P, x, _, H, n, E, b, g],
+                        [P, x, _, H, n, E, b],
                     );
                 return a.createElement(
                     r.Z,
@@ -776,7 +778,7 @@
                     }),
                 );
             }
-            const O = s.default.create((e) => ({ fadeIn: { ...m.DP }, container: { flexDirection: "row", gap: e.spaces.space8 }, compactContainer: { gap: e.spaces.space8 } }));
+            const O = s.default.create((e) => ({ fadeIn: { ...m.DP }, container: { flexDirection: "row", gap: e.spaces.space8, flex: 1, overflowX: "auto", scrollbarWidth: "none", "::-webkit-scrollbar": { display: "none" } }, compactContainer: { gap: e.spaces.space4 } }));
         },
         40247: (e, t, n) => {
             n.d(t, { Z: () => i });
@@ -897,4 +899,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-bf286bb5.c3323dea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-bf286bb5.1e20308a.js.map

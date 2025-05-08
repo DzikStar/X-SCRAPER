@@ -1709,7 +1709,7 @@
                 t("d78131b9", function (n) {
                     return "Thêm/xóa @" + n.screenName + " từ Danh sách";
                 }),
-                t("b3b642fc", "Why this post?"),
+                t("b3b642fc", "Vì sao bạn thấy bài đăng này?"),
                 t("fb4ee11c", "Tại sao lại là quảng cáo này?"),
                 t("ad50e7d9", function (n) {
                     return "Xem số liệu phân tích của " + n.entity;
@@ -4142,6 +4142,7 @@
                 t("f388a7ec", "DeepSearch"),
                 t("ab1eb384", "Chọn chế độ tìm kiếm bạn muốn"),
                 t("i330e54c", "Tìm kiếm và lập luận nâng cao"),
+                t("fdcce108", "DeeperSearch"),
                 t("ac64b674", "Tìm kiếm mở rộng, lập luận sâu hơn"),
                 t("j22655f2", "Yêu cầu bất kỳ điều gì"),
                 t("h0681e3e", "Trò chuyện với Grok, trợ lý AI của chúng tôi"),
@@ -4168,6 +4169,9 @@
                 t("h15dce2e", "Cài đặt nâng cao"),
                 t("ff9dc268", "Chỉnh sửa câu lệnh"),
                 t("acb2baa0", "Tạo hình ảnh"),
+                t("fe9ad897", function (n) {
+                    return "Edit Image" + n.ttc_grok_preset;
+                }),
                 t("h30fd372", "Dùng thử Chế độ thoại"),
                 t("e9fcdd0c", "Yêu cầu Grok tăng cường tìm kiếm trên web"),
                 t("fc4e8aba", "Yêu cầu Grok lập luận từng bước"),
@@ -4906,10 +4910,10 @@
                 t("d2a43a7a", 'chứa cả "ai" và "công ty khởi nghiệp"'),
                 t("a8584698", "công ty khởi nghiệp ai"),
                 t("jb6f9292", 'chứa chính xác cụm từ "công ty khởi nghiệp ai"'),
-                t("j8ee77c4", '"công ty khởi nghiệp ai"'),
-                t("d0480758", 'chứa "ai" hoặc "công ty khởi nghiệp" (hoặc cả hai)'),
-                t("f0048fa2", "ai HOẶC công ty khởi nghiệp");
-            t("da0df186", 'chứa "ai" nhưng không chứa "công ty khởi nghiệp"'),
+                t("j8ee77c4", '"công ty khởi nghiệp ai"');
+            t("d0480758", 'chứa "ai" hoặc "công ty khởi nghiệp" (hoặc cả hai)'),
+                t("f0048fa2", "ai HOẶC công ty khởi nghiệp"),
+                t("da0df186", 'chứa "ai" nhưng không chứa "công ty khởi nghiệp"'),
                 t("f2f463ea", "ai -công ty khởi nghiệp"),
                 t("a10a357e", 'chứa "ai" và có ít nhất 50 lượt thích'),
                 t("ca8ed1e8", "ai min_faves:50"),
@@ -5872,10 +5876,10 @@
                 t("b732a4cc", "Khi làm vậy, bạn sẽ thấy bài đăng của họ ở đây."),
                 t("hff48914", "Hiện không tìm được bài đăng nào."),
                 t("hb52cc4a", "Vui lòng thử lại sau."),
-                t("e50e1bb0", "Chào mừng bạn đến với Cộng đồng"),
-                t("i6829daa", "Cộng đồng là các nhóm thảo luận được kiểm duyệt, nơi mọi người trên X có thể kết nối và chia sẻ."),
-                t("fc5c6914", "Gặp gỡ những người khác có cùng mối quan tâm của bạn");
-            t("aa1a9820", "Tham gia Cộng đồng để kết nối với những người có cùng mối quan tâm với bạn."),
+                t("e50e1bb0", "Chào mừng bạn đến với Cộng đồng");
+            t("i6829daa", "Cộng đồng là các nhóm thảo luận được kiểm duyệt, nơi mọi người trên X có thể kết nối và chia sẻ."),
+                t("fc5c6914", "Gặp gỡ những người khác có cùng mối quan tâm của bạn"),
+                t("aa1a9820", "Tham gia Cộng đồng để kết nối với những người có cùng mối quan tâm với bạn."),
                 t("edef4c82", "Đăng trực tiếp lên Cộng đồng"),
                 t("a7640df6", "Bài đăng của bạn được chia sẻ với các thành viên trong Cộng đồng và những người theo dõi bạn."),
                 t("h3bb8068", "Nhận bản sao lưu khi cần"),
@@ -6870,10 +6874,10 @@
                 t("c2059276", "Ưu tiên câu trả lời của bạn."),
                 t("b023ec20", "Ưu tiên câu trả lời loại tối đa"),
                 t("g337328e", "Nhận mức độ hiển thị cao nhất cho câu trả lời của bạn."),
-                t("fa006202", "Phát video trong nền"),
-                t("jf389778", "Xem trong khi duyệt nội dung hoặc sử dụng ứng dụng khác"),
-                t("f2977d80", "Thư mục dấu trang");
-            t("j1d3d910", "Sắp xếp khoa học các bài đăng đã lưu để dễ dàng truy cập"),
+                t("fa006202", "Phát video trong nền");
+            t("jf389778", "Xem trong khi duyệt nội dung hoặc sử dụng ứng dụng khác"),
+                t("f2977d80", "Thư mục dấu trang"),
+                t("j1d3d910", "Sắp xếp khoa học các bài đăng đã lưu để dễ dàng truy cập"),
                 t("f0f48668", "Hỗ trợ cao cấp"),
                 t("c3148608", "Nhận trợ giúp nhanh hơn khi bạn cần hỗ trợ"),
                 t("b485ca6e", "Tab Sự kiện nổi bật"),
@@ -7846,9 +7850,7 @@
                 t("e7e36818", "Tài khoản quảng cáo đủ điều kiện quảng bá việc làm khi tài khoản được thiết lập đầy đủ nguồn tiền."),
                 t("c28566e0", "Tài khoản quảng cáo"),
                 t("c80160d3", "Quảng cáo"),
-                t("ff0edac0", "Bạn có chắc chắn muốn hủy thuê bao của mình không?"),
-                t("h2ac0348", "Không, tôi muốn quay lại"),
-                t("dbf9667e", "Tôi chắc chắn");
+                t("ff0edac0", "Bạn có chắc chắn muốn hủy thuê bao của mình không?");
             function g(n, h) {
                 for (var c = 0; c < h.length; c++) {
                     var t = h[c];
@@ -7887,7 +7889,9 @@
                     a(n, h)
                 );
             }
-            t("j7592572", "Vòng ngược lại"),
+            t("h2ac0348", "Không, tôi muốn quay lại"),
+                t("dbf9667e", "Tôi chắc chắn"),
+                t("j7592572", "Vòng ngược lại"),
                 t("ee778942", "Đèn giao thông"),
                 t("fdd57981", function (n) {
                     return "Chúng tôi muốn tặng bạn ưu đãi một lần trị giá " + n.totalAmount + " USD tín dụng quảng cáo miễn phí.";
@@ -8910,16 +8914,16 @@
                 }),
                 t("dbeae6cf", function (n) {
                     return n.count + " người nghe khác";
-                }),
-                t("d2543d97", function (n) {
-                    return "+" + n.count;
-                }),
+                });
+            t("d2543d97", function (n) {
+                return "+" + n.count;
+            }),
                 t("dc718e53", function (n) {
                     return "+" + n.count + " người khác";
-                });
-            t("d0e7b11b", function (n) {
-                return n.date + " vào lúc " + n.time;
-            }),
+                }),
+                t("d0e7b11b", function (n) {
+                    return n.date + " vào lúc " + n.time;
+                }),
                 t("b4349cbc", function (n) {
                     return "" + n.relativeDay;
                 }),
@@ -13186,4 +13190,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.1df1287a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.6c44880a.js.map

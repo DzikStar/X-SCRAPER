@@ -57,15 +57,15 @@
                 S = t(684869),
                 x = t(717160),
                 L = t(707570),
-                z = t(1753),
-                F = t(625271),
-                K = t(883069),
-                A = t(279849),
+                F = t(1753),
+                K = t(625271),
+                A = t(883069),
+                z = t(279849),
                 N = t(197318),
                 $ = t(689582),
-                H = t(256260),
-                U = t(511323),
-                q = t(80361),
+                U = t(256260),
+                q = t(511323),
+                H = t(80361),
                 j = t(856151),
                 V = t(53674),
                 P = t(520913),
@@ -122,28 +122,28 @@
                         u = { icon: S.default, label: Ee, link: "/notifications", id: "notifications" },
                         m = { icon: x.default, label: Te, link: "/messages", id: "messages" },
                         f = s.isTrue("voice_rooms_discovery_page_enabled") ? { icon: L.default, label: Ze, link: "/i/spaces", id: "spaces" } : void 0,
-                        p = { icon: z.default, label: we, link: "/compose/articles", id: "article_composer" },
-                        b = { icon: F.default, label: se, link: "/i/communitynotes", id: "birdwatch" },
-                        _ = { icon: K.default, label: re, link: "/i/bookmarks", id: "bookmarks_overflow_item" },
-                        v = { icon: A.default, label: oe, link: "/i/branded_likes_preview", id: "branded_likes_preview_overflow_item" },
+                        p = { icon: F.default, label: we, link: "/compose/articles", id: "article_composer" },
+                        b = { icon: K.default, label: se, link: "/i/communitynotes", id: "birdwatch" },
+                        _ = { icon: A.default, label: re, link: "/i/bookmarks", id: "bookmarks_overflow_item" },
+                        v = { icon: z.default, label: oe, link: "/i/branded_likes_preview", id: "branded_likes_preview_overflow_item" },
                         g = (N.default, t ? { icon: $.default, label: ce, link: `/${t}/lists`, id: "lists_overflow_item" } : void 0),
-                        h = { badgeCount: a, icon: H.default, label: de, link: "/follower_requests", id: "follower_requests_overflow_item" },
-                        k = t ? { icon: U.default, label: fe, link: `/${t}`, id: "profile_overflow_item" } : void 0,
-                        y = { icon: q.default, label: "Money", link: "/i/xpayments", id: "payments_overflow_item" },
+                        h = { badgeCount: a, icon: U.default, label: de, link: "/follower_requests", id: "follower_requests_overflow_item" },
+                        k = t ? { icon: q.default, label: fe, link: `/${t}`, id: "profile_overflow_item" } : void 0,
+                        y = { icon: H.default, label: "Money", link: "/i/xpayments", id: "payments_overflow_item" },
                         w = { icon: j.default, label: _e, link: "/i/coins", id: "twitter_coins" },
                         D = { icon: P.default, label: ke, link: "/i/premium", id: "premium_hub" },
                         C = { label: ue, link: "/logout", icon: O.default, id: "logout_overflow_item" },
                         xe = { icon: Q.default, label: be, link: (0, E.ju)("https://ads.x.com/?ref=gl-tw-tw-twitter-ads-rweb"), id: "twitter_ads_item" },
                         Le = s.isTrue("subscriptions_upsells_monetization_redesign_enabled"),
-                        ze = { icon: B.default, label: me, link: Le ? "/i/monetization" : "/settings/monetization", id: "monetization" },
-                        Fe = { icon: I.default, label: pe, link: "/settings", id: "settings_overflow_item" },
-                        Ke = { label: s.isTrue("subscriptions_upsells_vo_nav_decoration_enabled") ? Se : ve, id: "verified_organization_signup_item", link: "/i/verified-orgs-signup", icon: W.default },
-                        Ae = { label: ve, id: "verified_organization_dashboard_item", link: "/i/verified", icon: W.default },
+                        Fe = { icon: B.default, label: me, link: Le ? "/i/monetization" : "/settings/monetization", id: "monetization" },
+                        Ke = { icon: I.default, label: pe, link: "/settings", id: "settings_overflow_item" },
+                        Ae = { label: s.isTrue("subscriptions_upsells_vo_nav_decoration_enabled") ? Se : ve, id: "verified_organization_signup_item", link: "/i/verified-orgs-signup", icon: W.default },
+                        ze = { label: ve, id: "verified_organization_dashboard_item", link: "/i/verified", icon: W.default },
                         Ne = { label: ge, id: "create_space_item", link: "/i/spaces/start", icon: L.default },
                         $e = t ? { label: he, id: "communities_item", link: `/${t}/communities`, icon: X.default } : void 0,
-                        He = (0, ae.eY)(n),
-                        Ue = s.isTrue("spaces_conference_enabled") || !!He,
-                        qe = { label: "Conferences", id: "conferences_item", link: "/i/conferences", icon: Y.default },
+                        Ue = (0, ae.eY)(n),
+                        qe = s.isTrue("spaces_conference_enabled") || !!Ue,
+                        He = { label: "Conferences", id: "conferences_item", link: "/i/conferences", icon: Y.default },
                         je = { label: Ie, id: "jobs_item", link: "/jobs", icon: G.default },
                         Ve = r.isAnyPremiumSubscriber(),
                         Pe = Ve,
@@ -182,17 +182,17 @@
                         g,
                         _,
                         Be ? p : void 0,
-                        We ? (Xe ? Ae : Ke) : void 0,
+                        We ? (Xe ? ze : Ae) : void 0,
                         Ye ? w : void 0,
                         Je ? b : void 0,
                         a || en ? h : void 0,
                         nn ? { icon: V.default, label: De, link: "/i/account_analytics", id: "analytics" } : void 0,
-                        ze,
+                        Fe,
                         xe,
                         tn ? je : void 0,
-                        Ue ? qe : void 0,
+                        qe ? He : void 0,
                         sn ? Ne : void 0,
-                        Fe,
+                        Ke,
                         C,
                         rn ? $e : void 0,
                         void 0,
@@ -200,21 +200,21 @@
                     ].filter(Boolean);
                 }),
                 Le = (0, s.cn)(""),
-                ze = (0, s.cn)((e) => [...e(Ke), ...e(Ae), ...e(je), ...e(Oe)]),
-                Fe = (0, s.cn)((e) =>
+                Fe = (0, s.cn)((e) => [...e(Ae), ...e(ze), ...e(je), ...e(Oe)]),
+                Ke = (0, s.cn)((e) =>
                     e(Le)
                         .split(/ +/g)
                         .filter(Boolean)
                         .map((e) => Ne(e.toLowerCase())),
                 ),
-                Ke = (0, s.cn)((e) => {
+                Ae = (0, s.cn)((e) => {
                     const n = e(xe),
-                        t = e(Fe);
+                        t = e(Ke);
                     return (0, D.Z)(n, ({ icon: e, id: n, label: i, link: l }) => (t.every((e) => Ne(i.toLowerCase()).includes(e)) ? { id: `nav-${n}`, label: i, path: l, Icon: e } : void 0));
                 }),
-                Ae = (0, s.cn)((e) => {
+                ze = (0, s.cn)((e) => {
                     const n = e($e),
-                        t = e(Fe);
+                        t = e(Ke);
                     return (0, D.Z)(n, (e) => {
                         const n = (0, D.Z)(e.items, (e) => {
                             if (t.every((n) => e.terms.some((e) => e.includes(n)))) return { id: `settings-${e.id}-${e.title}`, label: e.title, path: e.path, Icon: I.default };
@@ -226,7 +226,7 @@
                 return e.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
             }
             const $e = (0, s.cn)((e) => {
-                    const n = e(He);
+                    const n = e(Ue);
                     return (0, D.Z)(n, (e) => {
                         if (e.isSearchable)
                             return {
@@ -240,7 +240,7 @@
                             };
                     });
                 }),
-                He = (0, s.cn)((e) => {
+                Ue = (0, s.cn)((e) => {
                     const n = e(M.qc).getState(),
                         t = (0, T.Lz)(n),
                         i = (0, T.vd)(n),
@@ -248,17 +248,17 @@
                         a = e(M.TD);
                     return (0, C.VA)({ isDelegate: t, delegateRole: i, featureSwitches: l, userClaims: a });
                 });
-            const Ue = (0, g.K9)((e) =>
+            const qe = (0, g.K9)((e) =>
                     Promise.all([t.e("modules.audio-6107ac1a"), t.e("modules.audio-b953418a"), t.e("modules.audio-7c51e6a7"), t.e("modules.audio-04db59e9"), t.e("modules.audio-76583d6c"), t.e("modules.audio-b7a8a5fb"), t.e("modules.audio-51f6e793"), t.e("modules.audio-e019dbda"), t.e("modules.audio-262c94d4"), t.e("modules.audio-c6fe4ea4"), t.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-b2e830dd"), t.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-01ad0730"), t.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-bf625406"), t.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-ab949d70"), t.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-6cce8a9f"), t.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-ff0fc217"), t.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-93606ba8"), t.e("ondemand.devItems")])
                         .then(t.bind(t, 825630))
                         .then(({ devItemsAtom: e }) => e),
                 ),
-                qe = (0, s.cn)((e) => (e(Ue), e(e(Ue.resolved) ?? (0, s.cn)(() => [])))),
+                He = (0, s.cn)((e) => (e(qe), e(e(qe.resolved) ?? (0, s.cn)(() => [])))),
                 je =
-                    ((Ve = () => qe),
+                    ((Ve = () => He),
                     (0, s.cn)((e) => {
                         const n = e(Ve()),
-                            t = e(Fe);
+                            t = e(Ke);
                         return n.filter((e) => t.every((n) => Ne(e.label.toLowerCase()).includes(n)));
                     }));
             var Ve;
@@ -286,7 +286,7 @@
                         void 0 !== i && i >= 0 && i < l.length && t(n(Be), i);
                     }),
                 ),
-                en = (0, s.cn)((e) => e(ze).flatMap((e) => (e.subItems ? (e.path ? [e, ...e.subItems] : e.subItems) : e)));
+                en = (0, s.cn)((e) => e(Fe).flatMap((e) => (e.subItems ? (e.path ? [e, ...e.subItems] : e.subItems) : e)));
             var nn = t(187669);
             const tn = (0, s.cn)(null, (e, n, t, i) => {
                 t.scribe(
@@ -325,7 +325,7 @@
                 }),
                 dn = "Results";
             function cn({ id: e }) {
-                const n = (0, a.Dv)(ze);
+                const n = (0, a.Dv)(Fe);
                 return l.createElement(
                     r.Z,
                     { "aria-label": dn, id: e, role: "listbox", style: _n.results },
@@ -489,7 +489,7 @@
                 }, [e.affiliations?.affiliated_account_ids_results, n]);
             }
         },
-        279849: (e, n, t) => {
+        839: (e, n, t) => {
             t.r(n), t.d(n, { default: () => o });
             var i = t(202784),
                 l = t(890601),
@@ -497,7 +497,7 @@
                 s = t(347101);
             const r = (e = {}) => {
                 const { direction: n } = (0, a.Z)();
-                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M18.037 13.084c-.918 1.685-2.719 3.479-5.694 5.212l-.342.204-.343-.204c-2.976-1.733-4.777-3.527-5.696-5.212-.924-1.699-.958-3.303-.349-4.533.603-1.216 1.799-1.978 3.127-2.046 1.122-.061 2.289.381 3.261 1.366.971-.985 2.138-1.427 3.259-1.366 1.328.068 2.524.829 3.127 2.046.609 1.23.575 2.834-.349 4.533zM19.42 3.16l1.42 1.42-1.77 1.76-1.41-1.41 1.76-1.77zM13 .5h-2V3h2V.5zM.5 13H3v-2H.5v2zm2.66 6.42l1.42 1.42 1.76-1.77-1.41-1.41-1.77 1.76zM21 11v2h2.5v-2H21zM11 23.5h2V21h-2v2.5zm6.66-4.43l1.76 1.77 1.42-1.42-1.77-1.76-1.41 1.41zM6.34 4.93L4.58 3.16 3.16 4.58l1.77 1.76 1.41-1.41z" })) }, { writingDirection: n });
+                return (0, l.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M2.008 6.5c0-1.381 1.119-2.5 2.5-2.5h11c1.381 0 2.5 1.119 2.5 2.5v1.882l4-2v11.236l-4-2V17.5c0 1.381-1.119 2.5-2.5 2.5h-11c-1.381 0-2.5-1.119-2.5-2.5v-11zm16 6.882l2 1V9.618l-2 1v2.764zM4.508 6c-.276 0-.5.224-.5.5v11c0 .276.224.5.5.5h11c.276 0 .5-.224.5-.5v-11c0-.276-.224-.5-.5-.5h-11zm5.5 4c-1.105 0-2 .895-2 2s.895 2 2 2 2-.895 2-2-.896-2-2-2zm-4 2c0-2.209 1.791-4 4-4s4 1.791 4 4-1.791 4-4 4-4-1.791-4-4z" })) }, { writingDirection: n });
             };
             r.metadata = { width: 24, height: 24 };
             const o = r;
@@ -520,4 +520,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.CommandCenter.8f08adda.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.CommandCenter.db8ccc4a.js.map

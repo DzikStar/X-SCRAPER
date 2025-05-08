@@ -3,7 +3,7 @@
     ["loader.Markdown"],
     {
         312778: (e, t, n) => {
-            n.r(t), n.d(t, { Markdown: () => H, default: () => M });
+            n.r(t), n.d(t, { Markdown: () => H, default: () => D });
             var r = n(202784),
                 o = n(719870),
                 a = n(325686);
@@ -214,7 +214,7 @@
                         i = r.useMemo(() => l.map((t, n) => r.createElement(I, { disableLinks: !!e, isRootLevel: !0, key: `parsedToken-${n}`, token: t })), [l, e]);
                     return r.createElement(a.Z, { style: n }, i);
                 }),
-                M = H;
+                D = H;
         },
         301758: (e, t, n) => {
             n.d(t, { Z: () => b });
@@ -336,10 +336,10 @@
                 return r.createElement(s.P, { direction: o.direction }, r.createElement(u.ZP, { style: [t && H.paragraph, n] }, r.createElement(B.Z, { token: o }, e)));
             }
             const H = p.default.create((e) => ({ paragraph: { display: "block", marginBottom: "1.25em" } }));
-            function M({ children: e, isRootLevel: t, token: n }) {
-                return r.createElement(a.Z, { style: D.container }, r.createElement(u.ZP, { style: D.quoteText }, e));
+            function D({ children: e, isRootLevel: t, token: n }) {
+                return r.createElement(a.Z, { style: M.container }, r.createElement(u.ZP, { style: M.quoteText }, e));
             }
-            const D = p.default.create((e) => ({ container: { borderStartWidth: e.borderWidths.large, borderColor: e.colors.gray100, paddingStart: "1em", paddingVertical: e.spaces.space4, marginBottom: "1.25em" }, quoteText: { fontStyle: "italic" } }));
+            const M = p.default.create((e) => ({ container: { borderStartWidth: e.borderWidths.large, borderColor: e.colors.gray100, paddingStart: "1em", paddingVertical: e.spaces.space4, marginBottom: "1.25em" }, quoteText: { fontStyle: "italic" } }));
             var W = n(5741);
             function z({ token: e }) {
                 const t = e.header
@@ -407,7 +407,7 @@
                             case "list":
                                 return r.createElement(P, { token: n });
                             case "blockquote":
-                                return r.createElement(M, { token: n }, a);
+                                return r.createElement(D, { token: n }, a);
                             case "table":
                                 return r.createElement(z, { token: n });
                             case "space":
@@ -547,81 +547,82 @@
             const d = i.default.create((e) => ({ block: { flex: 1, flexDirection: "row", justifyContent: "center", width: "100%", paddingTop: "0.75rem", paddingBottom: "1.75rem" }, animation: { opacity: 1, animationDuration: "1s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }] } }));
         },
         910594: (e, t, n) => {
-            n.d(t, { Z: () => A });
+            n.d(t, { Z: () => O });
             n(543673), n(240753), n(128399);
             var r = n(202784),
                 o = n(731708),
                 a = n(488684),
-                l = n(392237),
-                i = n(674132),
-                s = n.n(i),
-                c = n(952793),
-                d = n(725516),
-                m = n(125363),
-                u = n(327597),
-                p = n(654917),
-                h = n(595080),
-                k = n(5741),
-                y = n(45843),
-                b = n(325686),
-                g = n(818199),
-                f = n(530732),
-                E = n(630715),
-                C = n(725405),
-                w = n(809311);
-            const v = "grok_citation_web_result",
-                x = ({ link: e }) => {
-                    const { isAnimated: t } = r.useContext(h.$),
+                l = n(466792),
+                i = n(392237),
+                s = n(674132),
+                c = n.n(s),
+                d = n(952793),
+                m = n(725516),
+                u = n(125363),
+                p = n(327597),
+                h = n(654917),
+                k = n(595080),
+                y = n(5741),
+                b = n(45843),
+                g = n(325686),
+                f = n(818199),
+                E = n(530732),
+                C = n(630715),
+                w = n(725405),
+                v = n(809311);
+            const x = "grok_citation_web_result",
+                Z = ({ link: e }) => {
+                    const { isAnimated: t } = r.useContext(k.$),
                         [n, o] = r.useState(!1),
-                        a = (0, C.Z)(),
+                        a = (0, w.Z)(),
                         l = r.useCallback(() => {
-                            o(!0), a.scribe({ action: "hover", component: v, data: { url: e.url } });
+                            o(!0), a.scribe({ action: "hover", component: x, data: { url: e.url } });
                         }, [o, a, e.url]),
                         i = r.useCallback(() => o(!1), [o]),
                         s = r.useCallback(() => {
-                            a.scribe({ action: "click", component: v, data: { url: e.url } });
+                            a.scribe({ action: "click", component: x, data: { url: e.url } });
                         }, [a, e.url]);
                     let c = new URL(e.url).hostname;
                     c.startsWith("www.") && (c = c.slice(4));
-                    const d = r.useCallback(() => r.createElement(Z, { webResult: e }), [e]);
-                    return r.createElement("div", { className: "omit-from-copy", style: S.inlineContainer }, r.createElement(b.Z, { style: [S.inlineContainer, t ? S.animation : null] }, r.createElement(g.Z, { renderContent: d }, r.createElement(f.Z, { link: e.url, onMouseEnter: l, onMouseLeave: i, onPress: s, style: [S.content, e.favicon_base64 ? S.faviconContainer : S.iconContainer, n ? S.containerHovered : void 0], withoutInteractiveStyles: !0 }, e.favicon_base64 ? r.createElement(y.Z, { source: e.favicon_base64, style: S.favicon }) : r.createElement(E.default, { style: S.linkIcon })))));
+                    const d = r.useCallback(() => r.createElement(S, { webResult: e }), [e]);
+                    return r.createElement("div", { className: "omit-from-copy", style: $.inlineContainer }, r.createElement(g.Z, { style: [$.inlineContainer, t ? $.animation : null] }, r.createElement(f.Z, { renderContent: d }, r.createElement(E.Z, { link: e.url, onMouseEnter: l, onMouseLeave: i, onPress: s, style: [$.content, e.favicon_base64 ? $.faviconContainer : $.iconContainer, n ? $.containerHovered : void 0], withoutInteractiveStyles: !0 }, e.favicon_base64 ? r.createElement(b.Z, { source: e.favicon_base64, style: $.favicon }) : r.createElement(C.default, { style: $.linkIcon })))));
                 },
-                Z = ({ webResult: e }) => r.createElement(b.Z, { style: S.hoverCardContainer }, r.createElement(w.p, { item: e })),
-                S = l.default.create((e) => ({ inlineContainer: { alignItems: "center", justifyContent: "center", display: "inline-flex", marginStart: e.spaces.space2, verticalAlign: "middle" }, animation: { opacity: 1, animationDuration: "1s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }] }, content: { transition: "filter 0.3s, transform 0.3s", filter: "grayscale(100%) opacity(0.7)", position: "relative", bottom: "0.1em" }, hoverCardContainer: { width: 350, maxWidth: "100%", pointerEvents: "none" }, faviconContainer: { backgroundColor: e.colors.whiteOnColor, borderRadius: e.borderRadii.small, borderWidth: e.spaces.space1, borderColor: e.colors.borderColor, overflow: "hidden" }, iconContainer: { backgroundColor: e.colors.gray100, borderRadius: e.borderRadii.small, padding: e.spaces.space1 }, containerHovered: { filter: "none", transform: "scale(1.2)" }, favicon: { width: 15, height: 15 }, linkIcon: { color: e.colors.gray800, width: 15, height: 15 } }));
-            var $ = n(323265),
-                L = n(301758),
-                _ = n(836255);
-            const P = "grok_citation_post",
-                R = ({ postId: e }) => {
-                    const t = (0, m.oR)(),
-                        n = (0, m.I0)(),
-                        { isAnimated: o } = r.useContext(h.$),
+                S = ({ webResult: e }) => r.createElement(g.Z, { style: $.hoverCardContainer }, r.createElement(v.p, { item: e })),
+                $ = i.default.create((e) => ({ inlineContainer: { alignItems: "center", justifyContent: "center", display: "inline-flex", marginStart: e.spaces.space2, verticalAlign: "middle" }, animation: { opacity: 1, animationDuration: "1s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }] }, content: { transition: "filter 0.3s, transform 0.3s", filter: "grayscale(100%) opacity(0.7)", position: "relative", bottom: "0.1em" }, hoverCardContainer: { width: 350, maxWidth: "100%", pointerEvents: "none" }, faviconContainer: { backgroundColor: e.colors.whiteOnColor, borderRadius: e.borderRadii.small, borderWidth: e.spaces.space1, borderColor: e.colors.borderColor, overflow: "hidden" }, iconContainer: { backgroundColor: e.colors.gray100, borderRadius: e.borderRadii.small, padding: e.spaces.space1 }, containerHovered: { filter: "none", transform: "scale(1.2)" }, favicon: { width: 15, height: 15 }, linkIcon: { color: e.colors.gray800, width: 15, height: 15 } }));
+            var L = n(323265),
+                _ = n(301758),
+                P = n(836255);
+            const R = "grok_citation_post",
+                T = ({ postId: e }) => {
+                    const t = (0, u.oR)(),
+                        n = (0, u.I0)(),
+                        { isAnimated: o } = r.useContext(k.$),
                         [a, l] = r.useState(!1),
-                        i = (0, C.Z)(),
+                        i = (0, w.Z)(),
                         s = r.useCallback(() => {
-                            l(!0), i.scribe({ action: "hover", component: P, data: { tweet_id: e } });
+                            l(!0), i.scribe({ action: "hover", component: R, data: { tweet_id: e } });
                         }, [l, i, e]),
                         c = r.useCallback(() => l(!1), [l]),
                         d = r.useCallback(() => {
-                            l(!0), i.scribe({ action: "click", component: P, data: { tweet_id: e } });
+                            l(!0), i.scribe({ action: "click", component: R, data: { tweet_id: e } });
                         }, [l, i, e]);
                     r.useEffect(() => {
-                        e && n(_.Z.fetchOneIfNeeded(e));
+                        e && n(P.Z.fetchOneIfNeeded(e));
                     }, [n, e]);
-                    const u = _.Z.selectHydrated(t.getState(), e),
-                        p = r.useCallback(() => r.createElement(T, { postId: e }), [e]);
-                    if (!u) return null;
-                    const k = u?.user?.profile_image_url_https;
-                    return r.createElement("div", { className: "omit-from-copy", style: B.inlineContainer }, r.createElement(b.Z, { style: [B.inlineContainer, o ? B.animation : null] }, r.createElement(g.Z, { renderContent: p }, r.createElement(f.Z, { link: u.permalink, onMouseEnter: s, onMouseLeave: c, onPress: d, style: [B.content, k ? B.avatarContainer : B.iconContainer, a ? B.containerHovered : void 0], withoutInteractiveStyles: !0 }, k ? r.createElement(y.Z, { source: k, style: B.avatar }) : r.createElement(E.default, { style: B.linkIcon })))));
+                    const m = P.Z.selectHydrated(t.getState(), e),
+                        p = r.useCallback(() => r.createElement(B, { postId: e }), [e]);
+                    if (!m) return null;
+                    const h = m?.user?.profile_image_url_https;
+                    return r.createElement("div", { className: "omit-from-copy", style: I.inlineContainer }, r.createElement(g.Z, { style: [I.inlineContainer, o ? I.animation : null] }, r.createElement(f.Z, { renderContent: p }, r.createElement(E.Z, { link: m.permalink, onMouseEnter: s, onMouseLeave: c, onPress: d, style: [I.content, h ? I.avatarContainer : I.iconContainer, a ? I.containerHovered : void 0], withoutInteractiveStyles: !0 }, h ? r.createElement(b.Z, { source: h, style: I.avatar }) : r.createElement(C.default, { style: I.linkIcon })))));
                 },
-                T = ({ postId: e }) =>
+                B = ({ postId: e }) =>
                     r.createElement(
-                        b.Z,
-                        { style: B.hoverCardContainer },
-                        r.createElement(L.Z, {
+                        g.Z,
+                        { style: I.hoverCardContainer },
+                        r.createElement(_.Z, {
                             isCondensed: !0,
                             onPress: (e) => {
-                                $.ZP.isTwitterApp();
+                                L.ZP.isTwitterApp();
                             },
                             tweetId: e,
                             withBirdwatchPivot: !1,
@@ -629,67 +630,75 @@
                             withUserHoverCard: !1,
                         }),
                     ),
-                B = l.default.create((e) => ({ inlineContainer: { alignItems: "center", justifyContent: "center", display: "inline-flex", marginStart: e.spaces.space2, verticalAlign: "middle" }, animation: { opacity: 1, animationDuration: "1s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }] }, content: { transition: "filter 0.3s, transform 0.3s", filter: "grayscale(100%) opacity(0.7)", position: "relative", bottom: "0.1em" }, hoverCardContainer: { width: 350, maxWidth: "100%", pointerEvents: "none" }, avatarContainer: { backgroundColor: e.colors.whiteOnColor, borderRadius: e.borderRadii.infinite, borderWidth: e.spaces.space1, borderColor: e.colors.borderColor, overflow: "hidden" }, iconContainer: { backgroundColor: e.colors.gray100, borderRadius: e.borderRadii.small, padding: e.spaces.space1 }, containerHovered: { filter: "none", transform: "scale(1.2)" }, avatar: { width: 15, height: 15 }, linkIcon: { color: e.colors.gray800, width: 15, height: 15 } })),
-                I = (e) => {
+                I = i.default.create((e) => ({ inlineContainer: { alignItems: "center", justifyContent: "center", display: "inline-flex", marginStart: e.spaces.space2, verticalAlign: "middle" }, animation: { opacity: 1, animationDuration: "1s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }] }, content: { transition: "filter 0.3s, transform 0.3s", filter: "grayscale(100%) opacity(0.7)", position: "relative", bottom: "0.1em" }, hoverCardContainer: { width: 350, maxWidth: "100%", pointerEvents: "none" }, avatarContainer: { backgroundColor: e.colors.whiteOnColor, borderRadius: e.borderRadii.infinite, borderWidth: e.spaces.space1, borderColor: e.colors.borderColor, overflow: "hidden" }, iconContainer: { backgroundColor: e.colors.gray100, borderRadius: e.borderRadii.small, padding: e.spaces.space1 }, containerHovered: { filter: "none", transform: "scale(1.2)" }, avatar: { width: 15, height: 15 }, linkIcon: { color: e.colors.gray800, width: 15, height: 15 } })),
+                H = (e) => {
                     const t = e.match(/https:\/\/x\.com(?:\/[^\/]+)*\/status\/(\d+)/);
                     return t ? t[1] : void 0;
                 },
-                H = { label: s().dc0c8266 },
+                D = { label: c().dc0c8266 },
                 M = /^https?:\/\/x\.com\/(?!home|explore|notifications|messages|bookmarks|lists|more)(\w+[-\w]*)?\/?$/,
-                D = /https:\/\/x\.com\/.*\?text=([^&]*)/;
-            const W = ["http:", "https:"],
-                z = (e) => {
+                W = /https:\/\/x\.com\/.*\?text=([^&]*)/;
+            const z = ["http:", "https:"],
+                A = (e) => {
                     e && e._textRef && e._textRef && (e._textRef.dataset.copyPreserve = "1");
                 };
-            function A({ token: e }) {
-                const { citations: t } = r.useContext(h.$),
-                    n = (0, d.z)(),
-                    l = (0, m.I0)(),
-                    [i, s] = r.useState(!1),
-                    k = e.href || "",
-                    y = r.useMemo(
+            function O({ token: e }) {
+                const { citations: t } = r.useContext(k.$),
+                    n = (0, m.z)(),
+                    i = (0, u.I0)(),
+                    [s, c] = r.useState(!1),
+                    y = e.href || "",
+                    b = r.useMemo(
                         () =>
                             (function (e) {
                                 const t = e.match(M);
                                 return t ? t[1] : void 0;
-                            })(k),
-                        [k],
+                            })(y),
+                        [y],
                     ),
-                    b = r.useMemo(
+                    g = r.useMemo(
                         () =>
                             (function (e) {
-                                const t = e.match(D);
+                                const t = e.match(W);
                                 return t ? t[1] : void 0;
-                            })(k),
-                        [k],
+                            })(y),
+                        [y],
                     ),
-                    g = t.find((t) => t.url === e.href),
-                    f = (0, c.hC)("responsive_web_grok_show_citations"),
-                    E = (0, p.eX)(),
-                    C = r.useCallback(
+                    f = t.find((t) => t.url === e.href),
+                    E = (0, d.hC)("responsive_web_grok_show_citations"),
+                    C = (0, h.eX)(),
+                    w = r.useCallback(
                         (e) => {
-                            e.preventDefault(), b && (n.scribe({ element: "annotation_text_link", action: "click" }), l((0, u.u)({ analytics: n, conversationKey: E })({ text: decodeURIComponent(b), returnCitations: f })));
+                            e.preventDefault(), g && (n.scribe({ element: "annotation_text_link", action: "click" }), i((0, p.u)({ analytics: n, conversationKey: C })({ text: decodeURIComponent(g), returnCitations: E })));
                         },
-                        [b, E, n, l, f],
+                        [g, C, n, i, E],
                     );
-                let w;
+                let v;
                 try {
-                    e.href && (w = new URL(e.href));
+                    e.href && (v = new URL(e.href));
                 } catch (e) {}
-                if (!w || !W.includes(w.protocol)) {
+                if (!v || !z.includes(v.protocol)) {
                     let t;
-                    return (t = e.text === e.href ? e.text : !e.text && e.href && g ? `(${e.href})` : `${e.text} ${e.href ? `(${e.href})` : ""}`), r.createElement(o.ZP, null, t);
+                    return (t = e.text === e.href ? e.text : !e.text && e.href && f ? `(${e.href})` : `${e.text} ${e.href ? `(${e.href})` : ""}`), r.createElement(o.ZP, null, t);
                 }
                 if (!e.text && e.href) {
-                    if (g) return r.createElement(x, { link: g });
-                    const t = I(e.href);
-                    if (t) return r.createElement(R, { postId: t });
+                    if (f) return r.createElement(Z, { link: f });
+                    const t = H(e.href);
+                    if (t) return r.createElement(T, { postId: t });
                 }
-                return b ? r.createElement(o.ZP, { hoverLabel: H, link: e.href, onClick: C, onMouseEnter: () => s(!0), onMouseLeave: () => s(!1), style: [O.expandedLineHeight, O.promptLink, i && O.hoverStyle], withInteractiveStyling: !1 }, e.text) : y ? r.createElement(a.Z, { screenName: y }, r.createElement(o.ZP, { link: e.href }, e.text)) : r.createElement(o.ZP, { link: e.href, ref: z }, e.text);
+                return g
+                    ? r.createElement(o.ZP, { hoverLabel: D, link: e.href, onClick: w, onMouseEnter: () => c(!0), onMouseLeave: () => c(!1), style: [F.expandedLineHeight, F.promptLink, s && F.hoverStyle], withInteractiveStyling: !1 }, e.text)
+                    : b
+                      ? r.createElement(
+                            a.Z,
+                            { screenName: b },
+                            r.createElement(l.Z, null, ({ isHovered: t }) => r.createElement(o.ZP, { link: e.href, style: [F.link, t && F.hoveredLink], withInteractiveStyling: !1 }, e.text)),
+                        )
+                      : r.createElement(l.Z, null, ({ isHovered: t }) => r.createElement(o.ZP, { link: e.href, ref: A, style: [F.link, t && F.hoveredLink], withInteractiveStyling: !1 }, e.text));
             }
-            const O = l.default.create((e) => {
-                const t = "light" === l.default.theme.paletteName ? 0.2 : 0.33;
-                return { expandedLineHeight: { lineHeight: k.Y }, hoverStyle: { color: e.colors.blue600, shadowColor: e.colors.blue600, animationKeyframes: [{ "0%": { shadowOpacity: t, color: e.colors.gray900, shadowColor: e.colors.gray900 }, "100%": { color: e.colors.blue600, shadowColor: e.colors.blue600, shadowOpacity: 1 } }], textDecorationLine: "none", shadowOffset: { width: 0, height: 1 }, animationDuration: "0.25s", shadowOpacity: 1, shadowRadius: 0 }, promptLink: { animationKeyframes: [{ "0%": { color: e.colors.text, shadowColor: "transparent" }, "100%": { color: e.colors.gray900, shadowColor: e.colors.gray900, shadowOpacity: t } }], animationDuration: "2s", color: e.colors.gray900, cursor: "pointer", textDecorationLine: "none", shadowColor: e.colors.gray900, shadowOffset: { width: 0, height: 1 }, shadowOpacity: t, shadowRadius: 0 } };
+            const F = i.default.create((e) => {
+                const t = "light" === i.default.theme.paletteName ? 0.2 : 0.33;
+                return { expandedLineHeight: { lineHeight: y.Y }, hoverStyle: { color: e.colors.blue600, shadowColor: e.colors.blue600, animationKeyframes: [{ "0%": { shadowOpacity: t, color: e.colors.gray900, shadowColor: e.colors.gray900 }, "100%": { color: e.colors.blue600, shadowColor: e.colors.blue600, shadowOpacity: 1 } }], textDecorationLine: "none", shadowOffset: { width: 0, height: 1 }, animationDuration: "0.25s", shadowOpacity: 1, shadowRadius: 0 }, promptLink: { animationKeyframes: [{ "0%": { color: e.colors.text, shadowColor: "transparent" }, "100%": { color: e.colors.gray900, shadowColor: e.colors.gray900, shadowOpacity: t } }], animationDuration: "2s", color: e.colors.gray900, cursor: "pointer", textDecorationLine: "none", shadowColor: e.colors.gray900, shadowOffset: { width: 0, height: 1 }, shadowOpacity: t, shadowRadius: 0 }, link: { color: e.colors.brandColor, textDecorationLine: "underline", textDecorationColor: e.colors.gray600 }, hoveredLink: { textDecorationColor: e.colors.brandColor } };
             });
         },
         444342: (e, t, n) => {
@@ -855,4 +864,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.Markdown.9a8a90aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.Markdown.71e2a71a.js.map

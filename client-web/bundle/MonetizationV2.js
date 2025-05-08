@@ -200,8 +200,8 @@
                 z = i(727828),
                 P = i(725405),
                 I = i(423488),
-                F = i(299690),
-                $ = i(228477);
+                $ = i(299690),
+                F = i(228477);
             function A({ children: e, description: t, title: i }) {
                 const n = (0, h.LX)(),
                     a = r.useMemo(() => ({ width: n ? "100%" : 440 }), [n]);
@@ -209,10 +209,10 @@
             }
             const D = a.default.create((e) => ({ content: { marginTop: e.spaces.space16, width: "100%" } })),
                 q = o().bfb6be8a,
-                T = o().ed6c6da2,
-                j = o().bee20918,
-                V = o().h93b6580,
-                B = o().eea6d8f8,
+                B = o().ed6c6da2,
+                T = o().bee20918,
+                j = o().h93b6580,
+                V = o().eea6d8f8,
                 U = o().a0e8811e,
                 H = o().e1a74ac0,
                 L = o().cd3a6f9a,
@@ -229,7 +229,7 @@
                         i = w.ZP.isWebView(),
                         [n, a] = r.useState(!1),
                         [l, s] = r.useState(!1),
-                        { revShareFailedRequirements: c, subscriptionsFailedRequirements: d } = (0, F.Z)(),
+                        { revShareFailedRequirements: c, subscriptionsFailedRequirements: d } = (0, $.Z)(),
                         p = r.useMemo(() => ({ width: t ? "100%" : 920 }), [t]),
                         u = r.useMemo(() => r.createElement(z.Z, { variant: "MonetizationPromoPage" }), []),
                         m = r.useCallback(() => {
@@ -253,18 +253,18 @@
                                     r.createElement(
                                         b.Z,
                                         { style: p },
-                                        r.createElement(b.Z, { style: O.header }, r.createElement(f.ZP, { align: t ? "left" : "center", size: t ? "title2" : "title1", weight: t ? "bold" : "medium" }, q), r.createElement(y.Z, { size: "space8" }), r.createElement(f.ZP, { align: t ? "left" : "center", color: "gray700", size: t ? "headline2" : "headline1" }, T), t ? null : r.createElement(r.Fragment, null, r.createElement(y.Z, { size: "space36" }), r.createElement(b.Z, { style: O.upsellButtonContainer }, u))),
-                                        r.createElement(y.Z, { size: t ? "space40" : "space80" }),
-                                        r.createElement(b.Z, { style: O.upsellBlocks }, r.createElement(A, { description: V, title: j }, r.createElement(b.Z, { style: O.imageContainer }, r.createElement(_.Z, { "aria-label": j, aspectMode: v.Z.exact(2), image: S })), r.createElement(k.Z, { renderContent: () => r.createElement(I.Z, { failedRequirements: c }), wrapperStyle: O.popoverContent }, r.createElement(E.Z, { label: B, onPress: m, paddingHorizontal: "space0", styleOverride: O.pivot }))), r.createElement(A, { description: H, title: U }, r.createElement(b.Z, { style: O.imageContainer }, r.createElement(_.Z, { "aria-label": U, aspectMode: v.Z.exact(2), image: x })), r.createElement(k.Z, { renderContent: () => r.createElement($.Z, { failedRequirements: d }), wrapperStyle: O.popoverContent }, r.createElement(E.Z, { label: L, onPress: g, styleOverride: O.pivot }))), r.createElement(A, { description: G, title: W }, r.createElement(b.Z, { style: O.imageContainer }, r.createElement(_.Z, { "aria-label": W, aspectMode: v.Z.exact(2), image: Z }))), r.createElement(A, { description: K, title: M }, r.createElement(b.Z, { style: O.imageContainer }, r.createElement(_.Z, { "aria-label": M, aspectMode: v.Z.exact(2), image: C })))),
+                                        r.createElement(b.Z, { style: O.header }, r.createElement(f.ZP, { align: t ? "left" : "center", size: t ? "title2" : "title1", weight: t ? "bold" : "medium" }, q), r.createElement(y.Z, { size: "space8" }), r.createElement(f.ZP, { align: t ? "left" : "center", color: "gray700", size: t ? "headline2" : "headline1" }, B), t ? null : r.createElement(r.Fragment, null, r.createElement(y.Z, { size: "space36" }), r.createElement(b.Z, { style: O.upsellButtonContainer }, u))),
+                                        r.createElement(y.Z, { size: t ? "space32" : "space80" }),
+                                        r.createElement(b.Z, { style: O.upsellBlocks }, r.createElement(A, { description: j, title: T }, r.createElement(b.Z, { style: O.imageContainer }, r.createElement(_.Z, { "aria-label": T, aspectMode: v.Z.exact(2), image: S })), r.createElement(k.Z, { renderContent: () => r.createElement(I.Z, { failedRequirements: c }), wrapperStyle: O.popoverContent }, r.createElement(E.Z, { label: V, onPress: m, paddingHorizontal: "space0", styleOverride: O.pivot }))), r.createElement(A, { description: H, title: U }, r.createElement(b.Z, { style: O.imageContainer }, r.createElement(_.Z, { "aria-label": U, aspectMode: v.Z.exact(2), image: x })), r.createElement(k.Z, { renderContent: () => r.createElement(F.Z, { failedRequirements: d }), wrapperStyle: O.popoverContent }, r.createElement(E.Z, { label: L, onPress: g, styleOverride: O.pivot }))), r.createElement(A, { description: G, title: W }, r.createElement(b.Z, { style: O.imageContainer }, r.createElement(_.Z, { "aria-label": W, aspectMode: v.Z.exact(2), image: Z }))), r.createElement(A, { description: K, title: M }, r.createElement(b.Z, { style: O.imageContainer }, r.createElement(_.Z, { "aria-label": M, aspectMode: v.Z.exact(2), image: C })))),
                                         r.createElement(f.ZP, { color: "gray700", style: O.disclaimer }, r.createElement(o().I18NFormatMessage, { $i18n: "gbef9649" }, r.createElement(f.ZP, { link: "https://help.x.com/using-x/x-premium-faq#item2" }, o().i3e4955d))),
                                     ),
                                 ),
                             ),
                         ),
-                        t ? r.createElement(b.Z, { style: [O.footer, i ? O.footerWebview : O.footerDefault] }, u) : null,
+                        t ? r.createElement(b.Z, { style: [O.footer, i ? O.footerWebview : O.footerDefault] }, r.createElement(b.Z, { style: O.gradient }), u) : null,
                     );
                 },
-                O = a.default.create((e) => ({ container: { display: "grid", width: "100%", position: "relative" }, popoverContent: { margin: 0, pointer: "cursor" }, body: { width: "100%", height: "100%", maxHeight: "100%", flexDirection: "column" }, topGrid: { width: "100%", height: 200, position: "absolute", start: 0, top: 0, zIndex: 1, transform: "rotate(180deg)" }, bottomGrid: { width: "100%", height: 150, position: "absolute", start: 0, bottom: 0, zIndex: 1 }, header: { width: "100%", flexDirection: "column" }, scrollable: { width: "100%", flex: 1, flexGrow: 1, overflow: "auto", minHeight: "100%", height: "100%", alignItems: "center" }, content: { position: "relative", zIndex: 10, paddingTop: e.spaces.space48, boxSizing: "border-box", paddingHorizontal: a.default.theme.spaces.space16, paddingBottom: 144 }, contentContainer: { minWidth: "100%", minHeight: "100%", alignItems: "center" }, upsellButtonContainer: { width: "min-content", alignSelf: "center" }, upsellBlocks: { marginVertical: e.spaces.space16, flexDirection: "row", flexWrap: "wrap", justifyContent: "center", alignItems: "flex-start", gap: e.spaces.space40, rowGap: e.spaces.space56 }, imageContainer: { borderRadius: e.borderRadii.large, overflow: "hidden", boxShadow: "0 20px 50px rgba(136,153,166,0.15)", borderColor: e.colors.gray50, borderWidth: e.borderWidths.small }, pivot: { marginTop: e.spaces.space8, pointer: "cursor", paddingStart: 0 }, disclaimer: { marginTop: e.spaces.space32, textAlign: "center" }, footer: { position: "fixed", width: "100%", paddingHorizontal: e.spaces.space32, paddingVertical: e.spaces.space16 }, footerWebview: { bottom: 0 }, footerDefault: { bottom: R.h$ } })),
+                O = a.default.create((e) => ({ container: { display: "grid", width: "100%", position: "relative" }, popoverContent: { margin: 0, pointer: "cursor" }, body: { width: "100%", height: "100%", maxHeight: "100%", flexDirection: "column" }, topGrid: { width: "100%", height: 200, position: "absolute", start: 0, top: 0, zIndex: 1, transform: "rotate(180deg)" }, bottomGrid: { width: "100%", height: 150, position: "absolute", start: 0, bottom: 0, zIndex: 1 }, header: { width: "100%", flexDirection: "column" }, scrollable: { width: "100%", flex: 1, flexGrow: 1, overflow: "auto", minHeight: "100%", height: "100%", alignItems: "center" }, content: { position: "relative", zIndex: 10, paddingTop: e.spaces.space36, boxSizing: "border-box", paddingHorizontal: a.default.theme.spaces.space16, paddingBottom: 180 }, contentContainer: { minWidth: "100%", minHeight: "100%", alignItems: "center" }, upsellButtonContainer: { width: "min-content", alignSelf: "center" }, upsellBlocks: { marginVertical: e.spaces.space16, flexDirection: "row", flexWrap: "wrap", justifyContent: "center", alignItems: "flex-start", gap: e.spaces.space32, rowGap: e.spaces.space56 }, imageContainer: { borderRadius: e.borderRadii.large, overflow: "hidden", boxShadow: "0 20px 50px rgba(136,153,166,0.15)", borderColor: e.colors.gray50, borderWidth: e.borderWidths.small }, pivot: { marginTop: e.spaces.space8, pointer: "cursor", paddingStart: 0 }, disclaimer: { marginTop: e.spaces.space32, textAlign: "center" }, footer: { position: "fixed", width: "100%", paddingHorizontal: e.spaces.space28, paddingVertical: e.spaces.space20, backgroundColor: e.colors.cellBackground }, gradient: { position: "absolute", height: 28, backgroundImage: `linear-gradient(${e.colors.transparent} 0%, ${e.colors.navigationBackground} 100%)`, width: "100%", top: -28, start: 0, pointerEvents: "none" }, footerWebview: { bottom: 0 }, footerDefault: { bottom: R.h$ } })),
                 Q = o().d299431c,
                 X = (e) => {
                     const { featureSwitches: t, userClaims: i } = (0, d.QZ)(),
@@ -282,7 +282,7 @@
                 Y = a.default.create((e) => ({ helpCenterButton: { border: "none" } }));
         },
         698579: (e, t, i) => {
-            i.d(t, { F9: () => $, Fx: () => C, XS: () => p, Xb: () => F, j0: () => k });
+            i.d(t, { F9: () => F, Fx: () => C, XS: () => p, Xb: () => $, j0: () => k });
             var r = i(688715),
                 n = i(674132),
                 a = i.n(n),
@@ -324,7 +324,7 @@
             function I(e, t) {
                 return { label: t || (e ? g : b), color: t ? "orange50" : e ? "green500" : "magenta500" };
             }
-            function F({ applicationStatus: e, eligibility: t, id: i, idvStatus: r, isActive: n, isPayoutSetupIncomplete: l = !1, pendingIdv: o = !1, rejectedCreatorCanReapply: s, revShareUpdateEnabled: c = !1 }) {
+            function $({ applicationStatus: e, eligibility: t, id: i, idvStatus: r, isActive: n, isPayoutSetupIncomplete: l = !1, pendingIdv: o = !1, rejectedCreatorCanReapply: s, revShareUpdateEnabled: c = !1 }) {
                 const d = { ...S(i, c) },
                     g = 0 === t.length || (1 === t.length && "id_verified" === t[0]);
                 if (n && !o) return d;
@@ -344,7 +344,7 @@
                 }
                 return i === p.adRev && ((d.link = o || l ? void 0 : g ? R(i) : x(i)), (d.description = o ? b : l ? m : z(i, c)), (d.disabled = t.includes("generic_violation") || t.includes("do_not_charge") || t.includes("verified_type")), (d.pill = I(g, l || o ? h : void 0)), (d.scribeComponent = P(i))), i === p.preRollAds && ((d.link = l ? k : g ? R(i) : x(i)), (d.description = l ? m : z(i, c)), (d.disabled = t.includes("generic_violation") || t.includes("do_not_charge") || t.includes("verified_type")), (d.pill = I(g, l ? h : void 0)), (d.scribeComponent = P(i))), d;
             }
-            const $ = (e) => "NotStarted" === e.subscriptionsApplicationStatus && "NotStarted" === e.revShareApplicationStatus && !e.revShareActive && !e.subscriptionsActive && !e.revShareActive && !e.subscriptionsActive && !e.isAnyPremiumSubscriber && e.monetizationUpsellEnabled;
+            const F = (e) => "NotStarted" === e.subscriptionsApplicationStatus && "NotStarted" === e.revShareApplicationStatus && !e.revShareActive && !e.subscriptionsActive && !e.revShareActive && !e.subscriptionsActive && !e.isAnyPremiumSubscriber && e.monetizationUpsellEnabled;
         },
         228477: (e, t, i) => {
             i.d(t, { Z: () => v });
@@ -465,4 +465,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.MonetizationV2.9a00ee7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.MonetizationV2.acc6398a.js.map

@@ -1719,7 +1719,7 @@
                 a("d78131b9", function (e) {
                     return "Přidat uživatele @" + e.screenName + " do seznamů nebo ho odebrat";
                 }),
-                a("b3b642fc", "Why this post?"),
+                a("b3b642fc", "Proč toto postovat?"),
                 a("fb4ee11c", "Proč tato reklama?"),
                 a("ad50e7d9", function (e) {
                     return "Zobrazit " + e.entity + " analýz";
@@ -4152,6 +4152,7 @@
                 a("f388a7ec", "DeepSearch"),
                 a("ab1eb384", "Vyberte si požadovaný režim vyhledávání"),
                 a("i330e54c", "Pokročilé vyhledávání a uvažování"),
+                a("fdcce108", "DeeperSearch"),
                 a("ac64b674", "Rozšířené vyhledávání, hlubší uvažování"),
                 a("j22655f2", "Zeptejte se na cokoli"),
                 a("h0681e3e", "Promluvte si s Grokem, naším asistentem s umělou inteligencí"),
@@ -4178,6 +4179,9 @@
                 a("h15dce2e", "Pokročilé nastavení"),
                 a("ff9dc268", "Upravit výzvu"),
                 a("acb2baa0", "Vytvořit obrázky"),
+                a("fe9ad897", function (e) {
+                    return "Edit Image" + e.ttc_grok_preset;
+                }),
                 a("h30fd372", "Vyzkoušet hlasový režim"),
                 a("e9fcdd0c", "Zeptejte se funkce Grok, jak agresivně prohledat web"),
                 a("fc4e8aba", "Zeptejte se funkce Grok, jak můžete uvažovat krok za krokem"),
@@ -4916,10 +4920,10 @@
                 a("d2a43a7a", "obsahuje jak „ai“, tak i „startup“"),
                 a("a8584698", "ai startup"),
                 a("jb6f9292", "obsahuje přesně frázi „ai startup“"),
-                a("j8ee77c4", "„ai startup“"),
-                a("d0480758", "obsahuje „ai“ nebo „startup“ (nebo oboje)"),
-                a("f0048fa2", "ai NEBO startup");
-            a("da0df186", "obsahuje „ai“, ale ne „startup“"),
+                a("j8ee77c4", "„ai startup“");
+            a("d0480758", "obsahuje „ai“ nebo „startup“ (nebo oboje)"),
+                a("f0048fa2", "ai NEBO startup"),
+                a("da0df186", "obsahuje „ai“, ale ne „startup“"),
                 a("f2f463ea", "ai -startup"),
                 a("a10a357e", "obsahuje „ai“ a má nejméně 50 lajků"),
                 a("ca8ed1e8", "ai min_faves:50"),
@@ -5882,10 +5886,10 @@
                 a("b732a4cc", "Až to uděláte, uvidíte jejich posty tady."),
                 a("hff48914", "Nepodařilo se najít žádné posty."),
                 a("hb52cc4a", "Zkuste to za chvíli."),
-                a("e50e1bb0", "Vítají vás komunity"),
-                a("i6829daa", "Komunity představují moderované diskusní skupiny, ve kterých můžou lidé na platformě X konverzovat a sdílet obsah."),
-                a("fc5c6914", "Setkejte se s dalšími lidmi s podobnými zájmy");
-            a("aa1a9820", "Přidejte se ke Komunitám a spojte se s lidmi, kteří mají stejné zájmy."),
+                a("e50e1bb0", "Vítají vás komunity");
+            a("i6829daa", "Komunity představují moderované diskusní skupiny, ve kterých můžou lidé na platformě X konverzovat a sdílet obsah."),
+                a("fc5c6914", "Setkejte se s dalšími lidmi s podobnými zájmy"),
+                a("aa1a9820", "Přidejte se ke Komunitám a spojte se s lidmi, kteří mají stejné zájmy."),
                 a("edef4c82", "Postujte přímo do komunity"),
                 a("a7640df6", "Vaše posty jsou sdíleny s lidmi z komunity a s vašimi sledujícími."),
                 a("h3bb8068", "Vždycky za vámi někdo stojí"),
@@ -6880,10 +6884,10 @@
                 a("c2059276", "Nechte si své odpovědi boostovat."),
                 a("b023ec20", "Maximální zvýšení odpovědi"),
                 a("g337328e", "Získejte nejvyšší viditelnost svých odpovědí."),
-                a("fa006202", "Přehrávání videa na pozadí"),
-                a("jf389778", "Sledujte zatímco budete prohlížet nebo používat jiné aplikace"),
-                a("f2977d80", "Složky pro záložky");
-            a("j1d3d910", "Udržujte své uložené posty uspořádané pro snadný přístup"),
+                a("fa006202", "Přehrávání videa na pozadí");
+            a("jf389778", "Sledujte zatímco budete prohlížet nebo používat jiné aplikace"),
+                a("f2977d80", "Složky pro záložky"),
+                a("j1d3d910", "Udržujte své uložené posty uspořádané pro snadný přístup"),
                 a("f0f48668", "Prémiová podpora"),
                 a("c3148608", "Získejte rychlejší pomoc, když ji potřebujete"),
                 a("b485ca6e", "Karta Nejzajímavější"),
@@ -7856,9 +7860,7 @@
                 a("e7e36818", "Reklamní účty jsou způsobilé pro propagaci pracovní pozice, pokud jsou plně vybaveny zdrojem financování."),
                 a("c28566e0", "Reklamní účet"),
                 a("c80160d3", "Reklama"),
-                a("ff0edac0", "Opravdu chcete zrušit předplatné?"),
-                a("h2ac0348", "Ne, chci se vrátit"),
-                a("dbf9667e", "Ano");
+                a("ff0edac0", "Opravdu chcete zrušit předplatné?");
             function r(e, o) {
                 for (var t = 0; t < o.length; t++) {
                     var a = o[t];
@@ -7897,7 +7899,9 @@
                     i(e, o)
                 );
             }
-            a("j7592572", "Obrat do protisměru"),
+            a("h2ac0348", "Ne, chci se vrátit"),
+                a("dbf9667e", "Ano"),
+                a("j7592572", "Obrat do protisměru"),
                 a("ee778942", "Semafor"),
                 a("fdd57981", function (e) {
                     return "Rádi bychom vám nabídli jednorázový kredit na reklamu v hodnotě " + e.totalAmount + " USD.";
@@ -8920,16 +8924,16 @@
                 }),
                 a("dbeae6cf", function (e) {
                     return e.count + " další" + n(e.count, " posluchači", "ch posluchačů", " posluchač", "ch posluchačů");
-                }),
-                a("d2543d97", function (e) {
-                    return "+" + e.count;
-                }),
+                });
+            a("d2543d97", function (e) {
+                return "+" + e.count;
+            }),
                 a("dc718e53", function (e) {
                     return "+" + e.count + " další" + n(e.count, "", "ch", "", "ch");
-                });
-            a("d0e7b11b", function (e) {
-                return e.date + " v " + e.time;
-            }),
+                }),
+                a("d0e7b11b", function (e) {
+                    return e.date + " v " + e.time;
+                }),
                 a("b4349cbc", function (e) {
                     return "" + e.relativeDay;
                 }),
@@ -13199,4 +13203,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/cs.1fee4b7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/cs.c86c218a.js.map

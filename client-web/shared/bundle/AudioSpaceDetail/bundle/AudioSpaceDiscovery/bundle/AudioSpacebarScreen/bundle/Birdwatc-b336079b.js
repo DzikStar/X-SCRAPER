@@ -30,12 +30,11 @@
             const o = (0, n.Z)({
                 loader: () =>
                     Promise.all([
-                        r.e("icons.20"),
+                        r.e("icons.25"),
                         r.e("modules.common-e907d115"),
                         r.e("modules.common-e019dbda"),
-                        r.e("icons.22"),
                         r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                        r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-7af5e2f7"),
+                        r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2f4a3d25"),
                         r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                         r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                         r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -86,23 +85,27 @@
             const d = (0, r(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        r.e("icons.8"),
-                        r.e("icons.21"),
-                        r.e("icons.13"),
+                        r.e("icons.5"),
+                        r.e("icons.6"),
+                        r.e("icons.25"),
+                        r.e("icons.22"),
+                        r.e("icons.9"),
+                        r.e("icons.4"),
+                        r.e("icons.15"),
+                        r.e("icons.2"),
                         r.e("icons.20"),
-                        r.e("icons.14"),
-                        r.e("icons.1"),
-                        r.e("icons.3"),
-                        r.e("icons.24"),
                         r.e("modules.common-e907d115"),
                         r.e("modules.common-e019dbda"),
+                        r.e("icons.7"),
+                        r.e("icons.0"),
                         r.e("icons.11"),
-                        r.e("icons.28"),
-                        r.e("icons.10"),
+                        r.e("icons.27"),
                         r.e("icons.17"),
-                        r.e("icons.4"),
                         r.e("icons.12"),
-                        r.e("icons.22"),
+                        r.e("icons.3"),
+                        r.e("icons.13"),
+                        r.e("icons.24"),
+                        r.e("icons.26"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -110,7 +113,6 @@
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-64ffe41f"),
-                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-5517db7c"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-58d4ab8e"),
@@ -134,7 +136,7 @@
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                         r.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
                         r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                        r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-7af5e2f7"),
+                        r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2f4a3d25"),
                         r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                         r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                         r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -172,10 +174,10 @@
                         r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-6cde809e"),
                         r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-708dfafd"),
                         r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-af3d50e9"),
-                        r.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Articles~bundle.AudioSpacePeek~bundle.Birdwatch~bundle.Brande"),
                         r.e("shared~loader.Typeahead~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSpacePeek~bundle.Bir"),
-                        r.e("shared~bundle.JobSearch~bundle.UserJobs~loader.WideLayout"),
-                        r.e("loader.WideLayout"),
+                        r.e("loader.WideLayout-752e56d7"),
+                        r.e("loader.WideLayout-2e365fe7"),
+                        r.e("loader.WideLayout-9f4db315"),
                     ]).then(r.bind(r, 912937)),
             });
         },
@@ -275,7 +277,7 @@
         },
         996223: (e, a, r) => {
             "use strict";
-            r.d(a, { J: () => E });
+            r.d(a, { J: () => P });
             var d = r(202784),
                 n = r(244448),
                 t = r(400752),
@@ -293,50 +295,51 @@
                 f = r(725102),
                 A = r(421855),
                 m = r(854785),
-                y = r(552619),
-                v = r(736230),
-                w = r(333010),
-                k = r(39182),
-                M = r(313129),
-                g = r(355335);
+                y = r(716727),
+                v = r(552619),
+                w = r(736230),
+                k = r(333010),
+                M = r(39182),
+                g = r(313129),
+                B = r(355335);
             r(631673);
-            const B = "/i/jf";
-            function E({ path: e, systemActionHandlers: a }) {
+            const E = "/i/jf";
+            function P({ path: e, systemActionHandlers: a }) {
                 const [r] = (0, t.KO)(i.f0);
-                return "undefined" == typeof window ? null : r.isTrue("rweb_jetfuel_sdkv2_with_x_web") ? d.createElement(w.E7, { systemActionHandlers: a }, d.createElement(d.Suspense, { fallback: d.createElement(c.J, null) }, d.createElement(_, { isHighlights: !1, key: `${location.pathname.slice(B.length) + location.search}`, path: location.pathname.slice(B.length) + location.search, renderEmptyState: () => null }))) : d.createElement(w.E7, { systemActionHandlers: a }, d.createElement(d.Suspense, { fallback: d.createElement(c.J, null) }, d.createElement(P, { path: e })));
+                return "undefined" == typeof window ? null : r.isTrue("rweb_jetfuel_sdkv2_with_x_web") ? d.createElement(k.E7, { systemActionHandlers: a }, d.createElement(d.Suspense, { fallback: d.createElement(c.J, null) }, d.createElement(T, { isHighlights: !1, key: `${location.pathname.slice(E.length) + location.search}`, path: location.pathname.slice(E.length) + location.search, renderEmptyState: () => null }))) : d.createElement(k.E7, { systemActionHandlers: a }, d.createElement(d.Suspense, { fallback: d.createElement(c.J, null) }, d.createElement(_, { path: e })));
             }
-            function P({ path: e }) {
+            function _({ path: e }) {
                 const a = (0, o.useLocation)(),
-                    r = e ?? a.pathname.slice(B.length) + a.search;
-                (0, k.E)();
-                const n = (0, M._3)(r, { refreshTimeMs: 1e4 });
+                    r = e ?? a.pathname.slice(E.length) + a.search;
+                (0, M.E)();
+                const n = (0, g._3)(r, { refreshTimeMs: 1e4 });
                 return n ? (n.jfResponse ? d.createElement(h.Z, { key: r, payload: n.jfResponse.root.value }) : d.createElement(l.Z, { onRetry: null, title: n.error })) : d.createElement(s.Z, null);
             }
-            const _ = ({ isHighlights: e, path: a, renderEmptyState: r }) => {
+            const T = ({ isHighlights: e, path: a, renderEmptyState: r }) => {
                 const [c, l] = d.useState(!1),
                     s = (0, o.useHistory)(),
-                    h = (0, k.E)(),
-                    [w] = (0, t.KO)(i.dd),
-                    M = w.apiClient,
-                    [E] = (0, t.KO)(i.qc),
-                    P = E.getState(),
-                    _ = (0, p.F5)(P),
-                    T = {},
+                    h = (0, M.E)(),
+                    [k] = (0, t.KO)(i.dd),
+                    g = k.apiClient,
+                    [P] = (0, t.KO)(i.qc),
+                    _ = P.getState(),
+                    T = (0, p.F5)(_),
+                    j = {},
                     I = Intl.DateTimeFormat().resolvedOptions().timeZone,
-                    j = (0, S.Z)(),
-                    [O] = (0, t.KO)(g.k),
-                    [C] = (0, t.KO)(i.f0),
-                    x = location.host.includes("x.com") && C.isTrue("x_jetfuel_enable_test_cluster"),
-                    Z = "darker" === u.default.theme.paletteName ? "dark" : "dark" === u.default.theme.paletteName ? "dim" : u.default.theme.paletteName;
-                (T["x-jf-client-theme"] = Z), (T["x-jf-v"] = "JP-4"), I && (T.timezone = I), _ && (T["accept-language"] = (0, b.o)(_));
-                const L = ((e, a) => (e ? v.mH : a ? v.OG : v.CP))(O, x),
-                    R = {
+                    O = (0, S.Z)(),
+                    [C] = (0, t.KO)(B.k),
+                    [x] = (0, t.KO)(i.f0),
+                    Z = location.host.includes("x.com") && x.isTrue("x_jetfuel_enable_test_cluster"),
+                    L = "darker" === u.default.theme.paletteName ? "dark" : "dark" === u.default.theme.paletteName ? "dim" : u.default.theme.paletteName;
+                (j["x-jf-client-theme"] = L), (j["x-jf-v"] = "JP-4"), I && (j.timezone = I), T && (j["accept-language"] = (0, b.o)(T));
+                const R = ((e, a) => (e ? w.mH : a ? w.OG : w.CP))(C, Z),
+                    N = {
                         httpPOST: async (e, a) => {
                             let r,
                                 d = !1;
                             const n = e.startsWith("/") ? e : `/${e}`;
                             try {
-                                (r = await M.jetfuelForm(n, T, Object.fromEntries(a.entries()), L)), (d = !0);
+                                (r = await g.jetfuelForm(n, j, Object.fromEntries(a.entries()), R)), (d = !0);
                             } catch (e) {
                                 (d = !1), l(!0);
                             }
@@ -347,19 +350,19 @@
                                 r = !1;
                             const d = e.startsWith("/") ? e : `/${e}`;
                             try {
-                                (a = await M.jetfuel(d, T, L)), (r = !0);
+                                (a = await g.jetfuel(d, j, R)), (r = !0);
                             } catch (e) {
                                 (r = !1), l(!0);
                             }
                             return { ok: r, data: a };
                         },
                     },
-                    N = { "x.com.GenericURT": D.Z, "x.com.Video": y.Z, StoryPager: A.Z, "StoryPager.Story": m.Z, SignupArkoseSecurityChallenge: f.Z };
+                    H = { "x.com.GenericURT": D.Z, "x.com.Video": v.Z, "x.com.Broadcast": y.Z, StoryPager: A.Z, "StoryPager.Story": m.Z, SignupArkoseSecurityChallenge: f.Z };
                 d.useEffect(() => {
-                    document.body.setAttribute("data-theme", Z ?? "light");
-                }, [Z]);
-                const H = (0, n.GZ)("svelte", { net: R, history: s, analytics: j });
-                return H.addComponentOverride(N), d.createElement(d.Fragment, null, c && r ? r() : d.createElement(n.mQ, { analytics: j, jfPath: location.pathname.startsWith(B) ? location.pathname.slice(B.length) + location.search : "", key: `${location.pathname.startsWith(B) ? location.pathname.slice(B.length) + location.search : ""}-${h}`, r: H }));
+                    document.body.setAttribute("data-theme", L ?? "light");
+                }, [L]);
+                const F = (0, n.GZ)("svelte", { net: N, history: s, analytics: O });
+                return F.addComponentOverride(H), d.createElement(d.Fragment, null, c && r ? r() : d.createElement(n.mQ, { analytics: O, jfPath: location.pathname.startsWith(E) ? location.pathname.slice(E.length) + location.search : "", key: `${location.pathname.startsWith(E) ? location.pathname.slice(E.length) + location.search : ""}-${h}`, r: F }));
             };
         },
         996568: (e, a, r) => {
@@ -1005,8 +1008,8 @@
                                                 P = t(D(r, p, o(p))),
                                                 _ = S({ 0: b(0, p), 1: b(1, l), 3: b(3, E), 25: b(25, t(h(E, B))), 4: b(4, m), 5: b(5, i), 6: b(6, s), 7: b(7, A), 8: b(8, t(A)), 10: b(10, d), 11: b(11, p), 12: b(12, P), 14: b(14, u), 15: b(15, A), 16: b(16, n(c, A)), 17: b(17, n(p, p)), 18: b(18, w), 19: b(19, g), 21: b(21, t(A)), 22: b(22, B), 24: b(24, t(A)), 26: b(26, t(p)), 27: b(27, t(l)), 28: b(28, t(i)), 29: b(29, t(s)), 13: b(13, f(void 0)) }),
                                                 T = a({ els: t(y), props: t(_), ts: l }),
-                                                I = a({ ref: A, t: o(l) });
-                                            return S({ 0: b(0, T), 1: b(1, I), 2: b(2, g) });
+                                                j = a({ ref: A, t: o(l) });
+                                            return S({ 0: b(0, T), 1: b(1, j), 2: b(2, g) });
                                         })([
                                             (e) => (a) => {
                                                 let r = {};
@@ -1162,7 +1165,7 @@
         },
         313129: (e, a, r) => {
             "use strict";
-            r.d(a, { wR: () => I, kp: () => j, $P: () => P, Ng: () => E, _3: () => v, Q_: () => w });
+            r.d(a, { wR: () => j, kp: () => I, $P: () => P, Ng: () => E, _3: () => v, Q_: () => w });
             r(694898), r(38857), r(540171), r(157093), r(265688), r(270315), r(592529), r(86943), r(691157), r(875640);
             var d = r(202784),
                 n = r(400752),
@@ -1257,7 +1260,7 @@
                     return (r["x-jf-client-theme"] = n), (r["x-jf-v"] = "JP-3"), d && (r.timezone = d), a && (r["accept-language"] = (0, s.o)(a)), r;
                 },
                 T = (e, a) => (e ? D.mH : a ? D.OG : D.CP),
-                I = async (e, a, r, d, n, t, o) => {
+                j = async (e, a, r, d, n, t, o) => {
                     if (!e) return {};
                     const c = _(r),
                         i = T(n, t),
@@ -1304,7 +1307,7 @@
                         return (0, p.ZP)(e), e instanceof u.Z && 404 === e.status ? (b.record("not-found"), {}) : (b.record("error"), { error: D.TT });
                     }
                 },
-                j = async (e, a, r, d, n, t) => {
+                I = async (e, a, r, d, n, t) => {
                     if (!e) return {};
                     const o = _(r),
                         c = T(n, t),
@@ -1336,7 +1339,7 @@
                                     t = r(i.f0),
                                     o = r(i.qc).getState(),
                                     c = location.host.includes("x.com") && t.isTrue("x_jetfuel_enable_test_cluster");
-                                return await I(e, void 0, o, n, d, c, a);
+                                return await j(e, void 0, o, n, d, c, a);
                             }),
                         )),
                         e);
@@ -1420,4 +1423,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-b336079b.7f30861a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-b336079b.ec333f9a.js.map

@@ -3,7 +3,7 @@
     ["shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1b6af858"],
     {
         125890: (e, a, r) => {
-            r.d(a, { B: () => Se });
+            r.d(a, { B: () => ge });
             var n = r(202784),
                 d = r(325686),
                 t = r(107267),
@@ -19,13 +19,13 @@
                 h = r(355768),
                 D = r(19975),
                 w = r(416775),
-                g = r(597496),
-                S = r(710396),
+                S = r(597496),
+                g = r(710396),
                 f = r(655352),
                 A = r(485785),
-                M = r(125363),
-                y = r(936572),
-                v = r(909622),
+                y = r(125363),
+                v = r(936572),
+                M = r(909622),
                 _ = r(919022),
                 E = r(788994),
                 x = r(727828),
@@ -34,38 +34,42 @@
                 C = r(941799),
                 I = r(411052),
                 B = r(293605),
-                P = r(703572),
-                T = r(902821),
+                T = r(703572),
+                P = r(902821),
                 R = r(61261),
                 N = r(736063),
-                O = r(904658);
-            function j() {
+                j = r(904658);
+            function O() {
                 const { featureSwitches: e } = (0, s.QZ)();
-                return (0, O.Z)() > 0 && e.isTrue("vo_upsell_enabled") ? n.createElement(x.Z, { testID: "vo-ad-credit-upsell", variant: "VerifiedOrgsAdCredit" }) : null;
+                return (0, j.Z)() > 0 && e.isTrue("vo_upsell_enabled") ? n.createElement(x.Z, { testID: "vo-ad-credit-upsell", variant: "VerifiedOrgsAdCredit" }) : null;
             }
             const L = function () {
-                return n.createElement(N.H, { errorConfig: { context: "AD_CREDIT_UPSELL" } }, n.createElement(j, null));
+                return n.createElement(N.H, { errorConfig: { context: "AD_CREDIT_UPSELL" } }, n.createElement(O, null));
             };
             var z = r(399398),
                 F = r(975753);
             const H = (0, r(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        r.e("icons.8"),
-                        r.e("icons.21"),
-                        r.e("icons.13"),
+                        r.e("icons.5"),
+                        r.e("icons.6"),
+                        r.e("icons.25"),
+                        r.e("icons.22"),
+                        r.e("icons.9"),
+                        r.e("icons.4"),
+                        r.e("icons.15"),
+                        r.e("icons.2"),
                         r.e("icons.20"),
-                        r.e("icons.14"),
-                        r.e("icons.1"),
-                        r.e("icons.3"),
-                        r.e("icons.24"),
                         r.e("modules.common-e907d115"),
                         r.e("modules.common-e019dbda"),
+                        r.e("icons.7"),
+                        r.e("icons.0"),
                         r.e("icons.11"),
-                        r.e("icons.28"),
-                        r.e("icons.10"),
+                        r.e("icons.27"),
                         r.e("icons.17"),
-                        r.e("icons.4"),
+                        r.e("icons.12"),
+                        r.e("icons.3"),
+                        r.e("icons.13"),
                         r.e("icons.18"),
                         r.e("modules.audio-6107ac1a"),
                         r.e("modules.audio-b953418a"),
@@ -77,13 +81,11 @@
                         r.e("modules.audio-e019dbda"),
                         r.e("modules.audio-262c94d4"),
                         r.e("modules.audio-c6fe4ea4"),
-                        r.e("icons.12"),
-                        r.e("icons.29"),
-                        r.e("icons.22"),
-                        r.e("icons.7"),
-                        r.e("icons.0"),
-                        r.e("icons.19"),
+                        r.e("icons.24"),
+                        r.e("icons.10"),
+                        r.e("icons.8"),
                         r.e("icons.26"),
+                        r.e("icons.19"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -91,7 +93,6 @@
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-64ffe41f"),
-                        r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-5517db7c"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-58d4ab8e"),
@@ -115,7 +116,7 @@
                         r.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                         r.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
                         r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                        r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-7af5e2f7"),
+                        r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2f4a3d25"),
                         r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                         r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                         r.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -160,7 +161,6 @@
                         r.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-6cce8a9f"),
                         r.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-ff0fc217"),
                         r.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-93606ba8"),
-                        r.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Articles~bundle.AudioSpacePeek~bundle.Birdwatch~bundle.Brande"),
                         r.e("shared~loader.Typeahead~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSpacePeek~bundle.Bir"),
                         r.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be"),
                         r.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-7a04a44b"),
@@ -199,8 +199,8 @@
                 q = r(674132),
                 Y = r.n(q),
                 $ = r(841972),
-                G = r(647174),
-                J = r(530813),
+                J = r(647174),
+                G = r(530813),
                 K = r(420182),
                 ee = r(231035),
                 ae = r(88660),
@@ -254,8 +254,8 @@
                                   l
                                       ? n.createElement(V.Z, {
                                             items: [
-                                                { onClick: D, text: c.isCollapsed ? ce : ue, Icon: c.isCollapsed ? $.default : G.default },
-                                                { onClick: h, text: se({ number: 7 }), Icon: J.default },
+                                                { onClick: D, text: c.isCollapsed ? ce : ue, Icon: c.isCollapsed ? $.default : J.default },
+                                                { onClick: h, text: se({ number: 7 }), Icon: G.default },
                                             ],
                                             onCloseRequested: p,
                                         })
@@ -285,36 +285,36 @@
                     return a.isAnyPremiumSubscriber() && e.isTrue("subscriptions_premium_module_creator_gate_enabled") ? n.createElement(N.H, { errorConfig: { context: "premium_module" } }, n.createElement(he, null)) : null;
                 },
                 we = o.default.create((e) => ({ container: { marginBottom: e.spaces.space12 }, containerRedesign: { paddingHorizontal: e.spaces.space16, marginBottom: e.spaces.space12 } })),
-                ge = { withSuggestedVideos: !0, withSearchBox: !0, withTopicsToFollow: !0, withTrends: !0, withNews: !0, withNewsSentiment: !1, withNewsLiveTimeline: !1, withWhoToFollow: !0, withFullNews: !1 };
-            function Se(e) {
+                Se = { withSuggestedVideos: !0, withSearchBox: !0, withTopicsToFollow: !0, withTrends: !0, withNews: !0, withNewsSentiment: !1, withNewsLiveTimeline: !1, withWhoToFollow: !0, withFullNews: !1 };
+            function ge(e) {
                 return (0, U.x2)() ? n.createElement(H, null) : n.createElement(fe, e);
             }
             const fe = n.memo(function (e) {
-                const a = { ...ge, ...e },
+                const a = { ...Se, ...e },
                     r = (0, U.Ct)();
-                return n.createElement(d.Z, { ref: r, style: [Re.root, e.withMaxHeight && Re.rootWithMaxHeight], testID: a.testID }, n.createElement(Me, a), n.createElement(ye, a), e.withRadarUpsell && n.createElement(d.Z, { style: Re.paddedContainer }, n.createElement(x.Z, { variant: "RadarUpsell" })), n.createElement(ve, a), n.createElement(Ae, a), n.createElement(Te, a));
+                return n.createElement(d.Z, { ref: r, style: [Re.root, e.withMaxHeight && Re.rootWithMaxHeight], testID: a.testID }, n.createElement(ye, a), n.createElement(ve, a), e.withRadarUpsell && n.createElement(d.Z, { style: Re.paddedContainer }, n.createElement(x.Z, { variant: "RadarUpsell" })), n.createElement(Me, a), n.createElement(Ae, a), n.createElement(Pe, a));
             });
             function Ae(e) {
                 const { featureSwitches: a, userClaims: r } = (0, s.QZ)(),
-                    l = (0, M.v9)(_.ZP.selectViewerUser),
+                    l = (0, y.v9)(_.ZP.selectViewerUser),
                     i = r.isAnyPremiumSubscriber(),
                     o = r.isPaidVerifiedOrg(),
                     m = a.isTrue("rweb_sourcemap_migration"),
                     D = a.isTrue("rweb_sourcemap_migration_enable_suggested_video"),
                     w = (0, t.useLocation)(),
-                    g = "/home" === w.pathname && a.isTrue("user_ad_accounts_config_enabled") && r.isAnyPremiumSubscriber() && !r.isVerifiedOrg() && !r.isVerifiedOrgAffiliate() && !r.isLegacyVerifiedOrg() && !r.isGovVerifiedOrg() && "business" !== l?.verified_type?.toLowerCase() && "government" !== l?.verified_type?.toLowerCase(),
-                    S = (0, k.Z)(),
-                    f = !e.withSearchBox && !e.withTrends && S && a.isTrue("subscriptions_upsells_explore_sidebar_analytics_upsell_enabled"),
-                    A = e.isOwnProfile && S && a.isTrue("subscriptions_upsells_profile_sidebar_analytics_upsell_enabled"),
-                    y = a.isTrue("march_madness_brackets_enabled_loggedin_sidebar_popup"),
-                    v = i && !o && "/home" === w.pathname;
-                if (e.profileUserId) return n.createElement(n.Fragment, null, g && n.createElement(L, null), n.createElement(c.B, null), e.profileScreenName ? n.createElement(h.Z, { screenName: e.profileScreenName }) : null, n.createElement(b.O, null), m && D && n.createElement(Ee, e), e.isOwnProfile ? n.createElement(B.Z, { entryPoint: "profile" }) : null, A && n.createElement(d.Z, { style: Re.paddedContainer, testID: "profileAnalyticsUpsell" }, n.createElement(x.Z, { variant: "ProfileSidebarAnalyticsUpsell" })), n.createElement(xe, e), n.createElement(_e, e), n.createElement(ke, e));
-                let E = n.createElement(n.Fragment, null, e.withNews && n.createElement(Ze, e), e.withFullNews && n.createElement(Ce, e), e.withNewsLiveTimeline && n.createElement(Pe, e), e.withNewsSentiment && n.createElement(Be, e), n.createElement(_e, e), n.createElement(xe, e));
-                return a.isTrue("rweb_sidebar_lower_whats_happening_enabled") && (E = n.createElement(n.Fragment, null, n.createElement(xe, e), e.withNews && n.createElement(Ze, e), e.withFullNews && n.createElement(Ce, e), e.withNewsLiveTimeline && n.createElement(Pe, e), e.withNewsSentiment && n.createElement(Be, e), n.createElement(_e, e))), m && (E = n.createElement(n.Fragment, null, D && n.createElement(Ee, e), e.withNews && n.createElement(Ze, e), e.withFullNews && n.createElement(Ce, e), e.withNewsLiveTimeline && n.createElement(Pe, e), e.withNewsSentiment && n.createElement(Be, e), n.createElement(_e, e), n.createElement(xe, e))), n.createElement(n.Fragment, null, "/home" === w.pathname ? n.createElement(De, null) : null, g && n.createElement(L, null), v && n.createElement(B.Z, { entryPoint: "home" }), n.createElement(c.B, { userProfileId: e.profileUserId, userProfileScreenName: e.profileScreenName }), n.createElement(u.Z, null), o && a.isTrue("blue_business_admin_sidebar_module_enabled") ? n.createElement(p.Z, null) : null, "/home" === w.pathname && y && n.createElement(F.Z, { link: { pathname: "/i/jf/brackets/welcome" }, occasion: F.c.MarchMadness, withBackgroundImage: !0 }), n.createElement(b.O, null), E, f && n.createElement(d.Z, { style: Re.paddedContainer, testID: "exploreAnalyticsUpsell" }, n.createElement(x.Z, { variant: "ExploreSidebarAnalyticsUpsell" })), n.createElement(ke, e));
+                    S = "/home" === w.pathname && a.isTrue("user_ad_accounts_config_enabled") && r.isAnyPremiumSubscriber() && !r.isAnyVerifiedOrgOrAffiliate() && "business" !== l?.verified_type?.toLowerCase() && "government" !== l?.verified_type?.toLowerCase(),
+                    g = (0, k.Z)(),
+                    f = !e.withSearchBox && !e.withTrends && g && a.isTrue("subscriptions_upsells_explore_sidebar_analytics_upsell_enabled"),
+                    A = e.isOwnProfile && g && a.isTrue("subscriptions_upsells_profile_sidebar_analytics_upsell_enabled"),
+                    v = a.isTrue("march_madness_brackets_enabled_loggedin_sidebar_popup"),
+                    M = i && !o && "/home" === w.pathname;
+                if (e.profileUserId) return n.createElement(n.Fragment, null, S && n.createElement(L, null), n.createElement(c.B, null), e.profileScreenName ? n.createElement(h.Z, { screenName: e.profileScreenName }) : null, n.createElement(b.O, null), m && D && n.createElement(Ee, e), e.isOwnProfile ? n.createElement(B.Z, { entryPoint: "profile" }) : null, A && n.createElement(d.Z, { style: Re.paddedContainer, testID: "profileAnalyticsUpsell" }, n.createElement(x.Z, { variant: "ProfileSidebarAnalyticsUpsell" })), n.createElement(xe, e), n.createElement(_e, e), n.createElement(ke, e));
+                let E = n.createElement(n.Fragment, null, e.withNews && n.createElement(Ze, e), e.withFullNews && n.createElement(Ce, e), e.withNewsLiveTimeline && n.createElement(Te, e), e.withNewsSentiment && n.createElement(Be, e), n.createElement(_e, e), n.createElement(xe, e));
+                return a.isTrue("rweb_sidebar_lower_whats_happening_enabled") && (E = n.createElement(n.Fragment, null, n.createElement(xe, e), e.withNews && n.createElement(Ze, e), e.withFullNews && n.createElement(Ce, e), e.withNewsLiveTimeline && n.createElement(Te, e), e.withNewsSentiment && n.createElement(Be, e), n.createElement(_e, e))), m && (E = n.createElement(n.Fragment, null, D && n.createElement(Ee, e), e.withNews && n.createElement(Ze, e), e.withFullNews && n.createElement(Ce, e), e.withNewsLiveTimeline && n.createElement(Te, e), e.withNewsSentiment && n.createElement(Be, e), n.createElement(_e, e), n.createElement(xe, e))), n.createElement(n.Fragment, null, "/home" === w.pathname ? n.createElement(De, null) : null, S && n.createElement(L, null), M && n.createElement(B.Z, { entryPoint: "home" }), n.createElement(c.B, { userProfileId: e.profileUserId, userProfileScreenName: e.profileScreenName }), n.createElement(u.Z, null), o && a.isTrue("blue_business_admin_sidebar_module_enabled") ? n.createElement(p.Z, null) : null, "/home" === w.pathname && v && n.createElement(F.Z, { link: { pathname: "/i/jf/brackets/welcome" }, occasion: F.c.MarchMadness, withBackgroundImage: !0 }), n.createElement(b.O, null), E, f && n.createElement(d.Z, { style: Re.paddedContainer, testID: "exploreAnalyticsUpsell" }, n.createElement(x.Z, { variant: "ExploreSidebarAnalyticsUpsell" })), n.createElement(ke, e));
             }
-            function Me(e) {
+            function ye(e) {
                 const { featureSwitches: a, viewerUserId: r } = (0, s.QZ)(),
-                    t = (0, M.v9)(y.op);
+                    t = (0, y.v9)(v.op);
                 if (!r && !a.isTrue("rweb_enable_logged_out_search_search_bar_enabled")) return null;
                 if (!(0, f.ZP)() || !e.withSearchBox) return null;
                 const i = a.isTrue("rweb_sourcemap_migration"),
@@ -322,11 +322,11 @@
                 return n.createElement(
                     n.Fragment,
                     null,
-                    n.createElement(l.ZP, null, ({ windowWidth: e }) => n.createElement(d.Z, { style: [Re.searchContainer, i ? A.Z.getSidebarWidthStyleRedesign(e, t ?? o) : A.Z.getSidebarWidthStyle(e), i && Re.withHorizontalPadding] }, n.createElement(g.Rj, { shouldHandleSearchShortcut: !0 }))),
+                    n.createElement(l.ZP, null, ({ windowWidth: e }) => n.createElement(d.Z, { style: [Re.searchContainer, i ? A.Z.getSidebarWidthStyleRedesign(e, t ?? o) : A.Z.getSidebarWidthStyle(e), i && Re.withHorizontalPadding] }, n.createElement(S.Rj, { shouldHandleSearchShortcut: !0 }))),
                     n.createElement(d.Z, { style: Re.searchPlaceholder }),
                 );
             }
-            function ye(e) {
+            function ve(e) {
                 const { featureSwitches: a, viewerUserId: r } = (0, s.QZ)(),
                     d = (0, t.useLocation)();
                 if (r) return null;
@@ -334,7 +334,7 @@
                 const l = a.isTrue("march_madness_brackets_enabled_logout_popup");
                 return n.createElement(i.Z, { hideOnError: !0 }, n.createElement(z.g, null, n.createElement(w.Z, null)), l && n.createElement(F.Z, { link: { pathname: "/i/jf/brackets/welcome" }, occasion: F.c.MarchMadness, styleOverrides: { backgroundcolor: "gray0", headercolor: "white", textcolor: "gray900" } }));
             }
-            function ve(e) {
+            function Me(e) {
                 return e.children ? n.Children.map(e.children, (e) => (e ? n.createElement(i.Z, { hideOnError: !0 }, n.createElement(z.g, null, e)) : null)) : null;
             }
             function _e(e) {
@@ -344,18 +344,18 @@
             function Ee(e) {
                 const { viewerUserId: a } = (0, s.QZ)(),
                     r = e.profileUserId || a;
-                return e.withSuggestedVideos && r ? n.createElement(i.Z, { hideOnError: !0 }, n.createElement(z.g, null, n.createElement(P.O, null))) : null;
+                return e.withSuggestedVideos && r ? n.createElement(i.Z, { hideOnError: !0 }, n.createElement(z.g, null, n.createElement(T.O, null))) : null;
             }
             function xe(e) {
                 const { viewerUserId: a } = (0, s.QZ)(),
                     r = e.profileUserId || a;
-                return e.withWhoToFollow && r ? n.createElement(i.Z, { hideOnError: !0 }, n.createElement(z.g, null, n.createElement(S.Z, { userId: r, withProfileHeaderText: !!e.profileUserId }))) : null;
+                return e.withWhoToFollow && r ? n.createElement(i.Z, { hideOnError: !0 }, n.createElement(z.g, null, n.createElement(g.Z, { userId: r, withProfileHeaderText: !!e.profileUserId }))) : null;
             }
             function ke(e) {
                 const { featureSwitches: a, isRestrictedSession: r, viewerUserId: d } = (0, s.QZ)(),
                     t = e.profileUserId || d,
                     l = n.useMemo(() => {
-                        if (t) return (0, v.Z)(t);
+                        if (t) return (0, M.Z)(t);
                     }, [t]);
                 return !r && e.withTopicsToFollow && l && a.isTrue("responsive_web_sidebar_ttf_enabled") ? n.createElement(i.Z, { hideOnError: !0 }, n.createElement(z.g, null, n.createElement(m.Z, { module: l }))) : null;
             }
@@ -367,7 +367,7 @@
                 return d && l ? n.createElement(i.Z, { hideOnError: !0 }, n.createElement(R.Z, null)) : null;
             }
             function Ce(e) {
-                return n.createElement(i.Z, { hideOnError: !0 }, n.createElement(T.Z, null));
+                return n.createElement(i.Z, { hideOnError: !0 }, n.createElement(P.Z, null));
             }
             function Ie(e) {
                 return e.pathname.startsWith("/i/news/a/") || e.pathname.startsWith("/i/news/article/") ? e.pathname.split("/").pop() : null;
@@ -376,11 +376,11 @@
                 const a = Ie((0, t.useLocation)());
                 return n.createElement(i.Z, { hideOnError: !0 }, a ? n.createElement(I.Z, { articleId: a }) : n.createElement(C.Z, null));
             }
-            function Pe(e) {
+            function Te(e) {
                 const a = Ie((0, t.useLocation)());
                 return a ? n.createElement(i.Z, { hideOnError: !0 }, n.createElement(Z.Z, { articleId: a })) : null;
             }
-            function Te(e) {
+            function Pe(e) {
                 return n.createElement(z.g, { type: "transparent" }, n.createElement(E.Z, { textColor: "gray700", withOverflow: !0 }));
             }
             const Re = o.default.create((e) => ({ root: { paddingBottom: e.spaces.space64, paddingTop: e.spaces.space12 }, rootWithMaxHeight: { height: "100vh", overflowX: "hidden", overflowY: "auto" }, searchContainer: { alignItems: "center", backfaceVisibility: "hidden", backgroundColor: e.colors.cellBackground, flexDirection: "row", height: e.componentDimensions.appBarHeight, marginBottom: e.spaces.space12, minHeight: e.spaces.space32, position: "fixed", top: 0, zIndex: e.componentZIndices.appBarZIndex }, withHorizontalPadding: { paddingHorizontal: e.spaces.space16 }, paddedContainer: { paddingBottom: e.spaces.space16 }, searchPlaceholder: { height: e.componentDimensions.appBarHeight } }));
@@ -408,17 +408,17 @@
                     n.useEffect(() => {
                         m.scribe({ component: w, action: "impression" });
                     }, [m, w]);
-                    const S = () => {
+                    const g = () => {
                             m.scribe({ component: w, action: "click", element: "card" });
                         },
-                        { backgroundcolor: f, buttonSize: A, cardWidth: M, marginbottom: y, textcolor: v } = u ?? {},
+                        { backgroundcolor: f, buttonSize: A, cardWidth: y, marginbottom: v, textcolor: M } = u ?? {},
                         _ = f ? t.default.theme.colors[f] : t.default.theme.colors.gray0,
-                        E = v ? t.default.theme.colors[v] : t.default.theme.colors.gray900,
-                        x = y ? t.default.theme.spaces[y] : t.default.theme.spaces.space16,
+                        E = M ? t.default.theme.colors[M] : t.default.theme.colors.gray900,
+                        x = v ? t.default.theme.spaces[v] : t.default.theme.spaces.space16,
                         k = { [D.MarchMadness]: { header: h.header, description: h.description, legalDisclaimer: h.legalDisclaimer, buttonText: h.buttonText, image: h.image } }[r];
-                    return b ? n.createElement(l.Z, { interactiveStyles: null, link: a, onPress: S, style: g.bannerContainer }, n.createElement(i.Z, { resizeMode: "contain", source: { uri: "light" === t.default.theme.paletteName ? k.image.lightMode : k.image.darkMode }, style: { height: 85 } })) : n.createElement(d.Z, { style: [g.card, { backgroundColor: _ }, { maxWidth: M }, { marginBottom: x }], testID: "popupCard" }, n.createElement(d.Z, { style: e ? g.horizontalContent : g.verticalContent }, n.createElement(d.Z, { style: e ? g.textContainer : null }, n.createElement(o.ZP, { size: "headline2", style: [g.popupTitle, { alignSelf: "flex-start" }], weight: "bold" }, k.header), n.createElement(o.ZP, { size: "subtext1", style: [g.popupDescription, { color: E }] }, k.description, " ", e ? null : k.legalDisclaimer)), n.createElement(d.Z, { style: g.buttonContainer }, n.createElement(s.ZP, { backgroundColor: "light" === t.default.theme.paletteName ? "orange300" : "orange600", borderColor: "transparent", link: a, onClick: S, size: "medium", style: [g.popupButton, { width: A }] }, k.buttonText), e && n.createElement(o.ZP, { size: "subtext3", style: [g.legalDisclaimer, { color: E }] }, k.legalDisclaimer))));
+                    return b ? n.createElement(l.Z, { interactiveStyles: null, link: a, onPress: g, style: S.bannerContainer }, n.createElement(i.Z, { resizeMode: "contain", source: { uri: "light" === t.default.theme.paletteName ? k.image.lightMode : k.image.darkMode }, style: { height: 85 } })) : n.createElement(d.Z, { style: [S.card, { backgroundColor: _ }, { maxWidth: y }, { marginBottom: x }], testID: "popupCard" }, n.createElement(d.Z, { style: e ? S.horizontalContent : S.verticalContent }, n.createElement(d.Z, { style: e ? S.textContainer : null }, n.createElement(o.ZP, { size: "headline2", style: [S.popupTitle, { alignSelf: "flex-start" }], weight: "bold" }, k.header), n.createElement(o.ZP, { size: "subtext1", style: [S.popupDescription, { color: E }] }, k.description, " ", e ? null : k.legalDisclaimer)), n.createElement(d.Z, { style: S.buttonContainer }, n.createElement(s.ZP, { backgroundColor: "light" === t.default.theme.paletteName ? "orange300" : "orange600", borderColor: "transparent", link: a, onClick: g, size: "medium", style: [S.popupButton, { width: A }] }, k.buttonText), e && n.createElement(o.ZP, { size: "subtext3", style: [S.legalDisclaimer, { color: E }] }, k.legalDisclaimer))));
                 },
-                g = t.default.create((e) => ({ card: { backgroundColor: e.colors.gray0, borderRadius: e.spaces.space16, padding: e.spaces.space16, alignItems: "center", maxWidth: 350, width: "100%" }, transparent: { backgroundColor: "transparent" }, popupTitle: { marginBottom: e.spaces.space8, textAlign: "start" }, popupDescription: { textAlign: "start", marginEnd: e.spaces.space12 }, legalDisclaimer: { position: "absolute", top: "60px", end: "50%", transform: "translateX(50%)", textAlign: "center", minWidth: 100, opacity: 0.7 }, popupButton: { width: "100%", borderRadius: e.spaces.space24, marginTop: e.spaces.space12, height: e.spaces.space40 }, buttonContainer: { position: "relative" }, horizontalContent: { flexDirection: "row", justifyContent: "space-between", alignItems: "center", width: "100%", paddingBottom: e.spaces.space8 }, verticalContent: { width: "100%" }, textContainer: { flex: 1 }, bannerContainer: { marginBottom: e.spaces.space16 } }));
+                S = t.default.create((e) => ({ card: { backgroundColor: e.colors.gray0, borderRadius: e.spaces.space16, padding: e.spaces.space16, alignItems: "center", maxWidth: 350, width: "100%" }, transparent: { backgroundColor: "transparent" }, popupTitle: { marginBottom: e.spaces.space8, textAlign: "start" }, popupDescription: { textAlign: "start", marginEnd: e.spaces.space12 }, legalDisclaimer: { position: "absolute", top: "60px", end: "50%", transform: "translateX(50%)", textAlign: "center", minWidth: 100, opacity: 0.7 }, popupButton: { width: "100%", borderRadius: e.spaces.space24, marginTop: e.spaces.space12, height: e.spaces.space40 }, buttonContainer: { position: "relative" }, horizontalContent: { flexDirection: "row", justifyContent: "space-between", alignItems: "center", width: "100%", paddingBottom: e.spaces.space8 }, verticalContent: { width: "100%" }, textContainer: { flex: 1 }, bannerContainer: { marginBottom: e.spaces.space16 } }));
         },
         718e3: (e, a, r) => {
             r.d(a, { Z: () => n.B });
@@ -459,15 +459,15 @@
                 h = { id: "adsInfo", text: t().a7de64de, visibleLoggedIn: !0, legal: !0, link: (0, n.ju)("https://business.x.com/en/help/troubleshooting/how-twitter-ads-work.html?ref=web-twc-ao-gbl-adsinfo&utm_source=twc&utm_medium=web&utm_campaign=ao&utm_content=adsinfo") },
                 D = { id: "grok", text: t().h5860a68, link: (0, n.ju)("https://grok.com/"), mobileLink: "https://grok.com/download" },
                 w = { id: "blog", text: t().jb0a4c36, link: (0, n.ju)("https://blog.x.com") },
-                g = { id: "careers", text: t().ce6d095a, link: (0, n.ju)("https://careers.x.com") },
-                S = { id: "brandResources", text: t().e0adec82, link: (0, n.ju)("https://about.x.com/press/brand-assets") },
+                S = { id: "careers", text: t().ce6d095a, link: (0, n.ju)("https://careers.x.com") },
+                g = { id: "brandResources", text: t().e0adec82, link: (0, n.ju)("https://about.x.com/press/brand-assets") },
                 f = { id: "advertising", text: t().a4cf866e, link: (0, n.ju)("https://ads.x.com/?ref=gl-tw-tw-twitter-advertise") },
                 A = { id: "marketing", text: t().df1b7550, link: (0, n.ju)("https://marketing.x.com") },
-                M = { id: "xForBusiness", text: t().he258678, visibleLoggedIn: !0, link: (0, n.ju)("https://business.x.com/?ref=web-twc-ao-gbl-twitterforbusiness&utm_source=twc&utm_medium=web&utm_campaign=ao&utm_content=twitterforbusiness") },
-                y = { id: "developers", text: t().c6f58084, visibleLoggedIn: !0, link: (0, n.ju)("https://developer.x.com") },
-                v = { id: "directory", text: t().d83f18d2, link: (0, n.ju)("https://x.com/i/directory/profiles") },
+                y = { id: "xForBusiness", text: t().he258678, visibleLoggedIn: !0, link: (0, n.ju)("https://business.x.com/?ref=web-twc-ao-gbl-twitterforbusiness&utm_source=twc&utm_medium=web&utm_campaign=ao&utm_content=twitterforbusiness") },
+                v = { id: "developers", text: t().c6f58084, visibleLoggedIn: !0, link: (0, n.ju)("https://developer.x.com") },
+                M = { id: "directory", text: t().d83f18d2, link: (0, n.ju)("https://x.com/i/directory/profiles") },
                 _ = { id: "settings", text: t().bb081ea2, internal: !0, link: "/settings", excludeOnSettingsPage: !0 },
-                E = (e) => (e ? ((i.text = t().hc5aa17c), (D.text = t().j0693948), [l, i, D, g, s, c, u, y, f, b, m, _]) : [l, i, D, o, s, c, u, b, m, p, h, w, g, S, f, A, M, y, v, _]);
+                E = (e) => (e ? ((i.text = t().hc5aa17c), (D.text = t().j0693948), [l, i, D, S, s, c, u, v, f, b, m, _]) : [l, i, D, o, s, c, u, b, m, p, h, w, S, g, f, A, y, v, M, _]);
         },
         788994: (e, a, r) => {
             r.d(a, { Z: () => f });
@@ -486,7 +486,7 @@
             const h = s().b7388a56,
                 D = s().h63a5c3c,
                 w = `© ${String(new Date().getFullYear())} X Corp.`;
-            class g extends n.Component {
+            class S extends n.Component {
                 constructor(...e) {
                     super(...e),
                         (this._renderMenu = (e) => (a) => n.createElement(t.Z, { isFixed: !0, items: this._renderOverflowItems(e), onCloseRequested: a })),
@@ -502,7 +502,7 @@
                             s && t && (u = t ? { pathname: t, external: !a } : void 0);
                             return n.createElement(
                                 d.Z,
-                                { key: i, style: [S.item, this._getItemAlignStyle(), S.inline] },
+                                { key: i, style: [g.item, this._getItemAlignStyle(), g.inline] },
                                 n.createElement(
                                     l.ZP,
                                     {
@@ -515,16 +515,16 @@
                                     },
                                     i,
                                 ),
-                                n.createElement(l.ZP, { style: S.separator }, " ", "|"),
+                                n.createElement(l.ZP, { style: g.separator }, " ", "|"),
                             );
                         }),
                         (this._getItemAlignStyle = () => {
                             const { align: e } = this.props;
                             switch (e) {
                                 case "center":
-                                    return S.itemAlignCenter;
+                                    return g.itemAlignCenter;
                                 case "right":
-                                    return S.itemAlignRight;
+                                    return g.itemAlignRight;
                                 default:
                                     return null;
                             }
@@ -535,14 +535,14 @@
                         i = this.context.featureSwitches.isTrue("responsive_web_logged_out_redesign_enabled"),
                         o = (0, p.ZP)(i).filter(this._filterFeatureSwitch),
                         s = t ? o.filter(({ visibleLoggedIn: e }) => e) : o,
-                        [b, g] = (0, u.Z)(s, ({ legal: e, neverHidden: a }) => e || a || !t);
-                    return n.createElement(d.Z, { "aria-label": h, role: "navigation", style: [S.root, "center" === e && S.alignCenter, "vertical" === a && S.itemLayoutVertical] }, b.map(this._renderItem), g.length > 0 ? n.createElement(m.Z, { renderMenu: this._renderMenu(g), style: [S.item, this._getItemAlignStyle()] }, n.createElement(l.ZP, { color: r, size: "subtext2", withInteractiveStyling: !0 }, D, n.createElement(c.default, { style: S.icon }))) : null, n.createElement(l.ZP, { color: r, size: "subtext3", style: [S.item, this._getItemAlignStyle()] }, w));
+                        [b, S] = (0, u.Z)(s, ({ legal: e, neverHidden: a }) => e || a || !t);
+                    return n.createElement(d.Z, { "aria-label": h, role: "navigation", style: [g.root, "center" === e && g.alignCenter, "vertical" === a && g.itemLayoutVertical] }, b.map(this._renderItem), S.length > 0 ? n.createElement(m.Z, { renderMenu: this._renderMenu(S), style: [g.item, this._getItemAlignStyle()] }, n.createElement(l.ZP, { color: r, size: "subtext2", withInteractiveStyling: !0 }, D, n.createElement(c.default, { style: g.icon }))) : null, n.createElement(l.ZP, { color: r, size: "subtext3", style: [g.item, this._getItemAlignStyle()] }, w));
                 }
             }
-            (g.contextType = b.rC), (g.defaultProps = { textColor: "gray700" });
-            const S = i.default.create((e) => ({ root: { flexDirection: "row", flexWrap: "wrap", paddingHorizontal: e.componentDimensions.gutterHorizontal }, alignCenter: { justifyContent: "center", paddingVertical: e.componentDimensions.gutterVertical }, itemLayoutVertical: { flexDirection: "column" }, item: { marginVertical: e.spaces.space2, paddingEnd: e.spaces.space12, alignSelf: "center" }, itemAlignCenter: { marginVertical: e.spaces.space4, paddingEnd: e.spaces.space8 }, itemAlignRight: { textAlign: "end", paddingEnd: e.spaces.space4 }, icon: { height: "1em", paddingHorizontal: e.spaces.space2 }, inline: { flexDirection: "row", alignItems: "center" }, separator: { paddingStart: e.spaces.space4, color: i.default.theme.colors.gray500 } })),
-                f = g;
+            (S.contextType = b.rC), (S.defaultProps = { textColor: "gray700" });
+            const g = i.default.create((e) => ({ root: { flexDirection: "row", flexWrap: "wrap", paddingHorizontal: e.componentDimensions.gutterHorizontal }, alignCenter: { justifyContent: "center", paddingVertical: e.componentDimensions.gutterVertical }, itemLayoutVertical: { flexDirection: "column" }, item: { marginVertical: e.spaces.space2, paddingEnd: e.spaces.space12, alignSelf: "center" }, itemAlignCenter: { marginVertical: e.spaces.space4, paddingEnd: e.spaces.space8 }, itemAlignRight: { textAlign: "end", paddingEnd: e.spaces.space4 }, icon: { height: "1em", paddingHorizontal: e.spaces.space2 }, inline: { flexDirection: "row", alignItems: "center" }, separator: { paddingStart: e.spaces.space4, color: i.default.theme.colors.gray500 } })),
+                f = S;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1b6af858.bcfb771a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1b6af858.1a0d488a.js.map

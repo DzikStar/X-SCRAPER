@@ -1709,7 +1709,7 @@
                 n("d78131b9", function (e) {
                     return "從列表加入/移除 @" + e.screenName;
                 }),
-                n("b3b642fc", "Why this post?"),
+                n("b3b642fc", "為什麼看到此貼文？"),
                 n("fb4ee11c", "為什麼顯示這則廣告？"),
                 n("ad50e7d9", function (e) {
                     return "查看" + e.entity + "分析";
@@ -4142,6 +4142,7 @@
                 n("f388a7ec", "DeepSearch"),
                 n("ab1eb384", "選取你想要的搜尋模式"),
                 n("i330e54c", "進階的搜尋和推理"),
+                n("fdcce108", "DeeperSearch"),
                 n("ac64b674", "擴大範圍的搜尋，進一步的推理"),
                 n("j22655f2", "提出任何問題"),
                 n("h0681e3e", "與我們的 AI 助理 Grok 交談"),
@@ -4168,6 +4169,9 @@
                 n("h15dce2e", "進階設定"),
                 n("ff9dc268", "編輯提示"),
                 n("acb2baa0", "創作圖片"),
+                n("fe9ad897", function (e) {
+                    return "Edit Image" + e.ttc_grok_preset;
+                }),
                 n("h30fd372", "嘗試語音模式"),
                 n("e9fcdd0c", "要求 Grok 積極搜尋網路"),
                 n("fc4e8aba", "要求 Grok 進行逐步推理"),
@@ -4906,10 +4910,10 @@
                 n("d2a43a7a", '同時包含 "ai" 和 "啟動"'),
                 n("a8584698", "ai 啟動"),
                 n("jb6f9292", '包含確切詞組 "ai 啟動"'),
-                n("j8ee77c4", '"ai 啟動"'),
-                n("d0480758", '包含 "ai" 或 "啟動" (或兩者)'),
-                n("f0048fa2", "ai OR 啟動");
-            n("da0df186", '包含 "ai"，但不包含 "啟動"'),
+                n("j8ee77c4", '"ai 啟動"');
+            n("d0480758", '包含 "ai" 或 "啟動" (或兩者)'),
+                n("f0048fa2", "ai OR 啟動"),
+                n("da0df186", '包含 "ai"，但不包含 "啟動"'),
                 n("f2f463ea", "ai -啟動"),
                 n("a10a357e", '包含 "ai" 且至少有 50 個喜歡'),
                 n("ca8ed1e8", "ai min_faves:50"),
@@ -5872,10 +5876,10 @@
                 n("b732a4cc", "如果有，你將在這裡看到他們的貼文。"),
                 n("hff48914", "目前找不到任何貼文。"),
                 n("hb52cc4a", "請稍後再試。"),
-                n("e50e1bb0", "歡迎使用社群"),
-                n("i6829daa", "社群是有人監管的討論群組，X 上的人可以在這裡相互連繫和分享。"),
-                n("fc5c6914", "認識與你志同道合的人");
-            n("aa1a9820", "加入社群，與志同道合的人建立聯繫。"),
+                n("e50e1bb0", "歡迎使用社群");
+            n("i6829daa", "社群是有人監管的討論群組，X 上的人可以在這裡相互連繫和分享。"),
+                n("fc5c6914", "認識與你志同道合的人"),
+                n("aa1a9820", "加入社群，與志同道合的人建立聯繫。"),
                 n("edef4c82", "將貼文直接發佈至社群"),
                 n("a7640df6", "你的貼文會與社群成員和你的跟隨者分享。"),
                 n("h3bb8068", "在需要時取得協助"),
@@ -6870,10 +6874,10 @@
                 n("c2059276", "提升你的回覆優先等級。"),
                 n("b023ec20", "最大的回覆提升"),
                 n("g337328e", "讓你的回覆獲得最高的可見度。"),
-                n("fa006202", "背景影片播放 "),
-                n("jf389778", "在瀏覽或使用其他應用程式時觀看"),
-                n("f2977d80", "書籤資料夾");
-            n("j1d3d910", "將你儲存的貼文保持井然有序，以方便存取"),
+                n("fa006202", "背景影片播放 ");
+            n("jf389778", "在瀏覽或使用其他應用程式時觀看"),
+                n("f2977d80", "書籤資料夾"),
+                n("j1d3d910", "將你儲存的貼文保持井然有序，以方便存取"),
                 n("f0f48668", "進階支援"),
                 n("c3148608", "在你需要幫助時，獲得更快的協助"),
                 n("b485ca6e", "精選內容標籤"),
@@ -7846,9 +7850,7 @@
                 n("e7e36818", "當廣告帳戶的撥款來源設定完成後，就有資格使用工作推廣。"),
                 n("c28566e0", "廣告帳戶"),
                 n("c80160d3", "廣告"),
-                n("ff0edac0", "你確定要取消訂閱嗎？"),
-                n("h2ac0348", "否，請返回"),
-                n("dbf9667e", "我確定");
+                n("ff0edac0", "你確定要取消訂閱嗎？");
             function t(e, c) {
                 for (var a = 0; a < c.length; a++) {
                     var n = c[a];
@@ -7887,7 +7889,9 @@
                     r(e, c)
                 );
             }
-            n("j7592572", "迴轉"),
+            n("h2ac0348", "否，請返回"),
+                n("dbf9667e", "我確定"),
+                n("j7592572", "迴轉"),
                 n("ee778942", "紅綠燈"),
                 n("fdd57981", function (e) {
                     return "我們想為你提供 " + e.totalAmount + " 美元的一次性免費廣告抵用金。";
@@ -8910,16 +8914,16 @@
                 }),
                 n("dbeae6cf", function (e) {
                     return "其他 " + e.count + " 位聆聽者";
-                }),
-                n("d2543d97", function (e) {
-                    return "+" + e.count;
-                }),
+                });
+            n("d2543d97", function (e) {
+                return "+" + e.count;
+            }),
                 n("dc718e53", function (e) {
                     return "+ 其他 " + e.count + " 人";
-                });
-            n("d0e7b11b", function (e) {
-                return e.date + " " + e.time;
-            }),
+                }),
+                n("d0e7b11b", function (e) {
+                    return e.date + " " + e.time;
+                }),
                 n("b4349cbc", function (e) {
                     return "" + e.relativeDay;
                 }),
@@ -13196,4 +13200,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh-Hant.6558237a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh-Hant.31e6da7a.js.map

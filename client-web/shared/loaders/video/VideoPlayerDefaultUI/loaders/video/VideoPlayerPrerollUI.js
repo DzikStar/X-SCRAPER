@@ -170,14 +170,14 @@
                 A = n(516951),
                 k = n(154003),
                 Z = n(992942),
-                B = n(530732),
-                L = n(879891),
+                L = n(530732),
+                B = n(879891),
                 M = n(251478),
                 D = n(870373);
             const F = d.default.create((e) => ({ thumbnail: { backgroundColor: e.colors.translucentBlack77, borderRadius: e.borderRadii.small, display: "flex", overflow: "hidden", opacity: 1 }, thumbnailFocused: { boxShadow: `0 0 0 ${e.borderWidths.medium} ${e.colors.white}`, outlineStyle: "none" }, countdownTime: { paddingHorizontal: e.spaces.space4, minWidth: "1em", display: "flex", alignItems: "center", justifyContent: "center", fontVariant: "tabular-nums" }, iconMargin: { marginStart: "0.5em" }, iconMarginRtl: { marginEnd: "0.5em" } })),
                 I = ({ onClick: e }) => {
                     const { aspectRatio: t, playerState: n } = r.useContext(m.Z.PeriodicContext),
-                        { direction: s } = (0, L.Z)(),
+                        { direction: s } = (0, B.Z)(),
                         l = "rtl" === s;
                     if (!n) return null;
                     const c = (0, b.Ci)(n);
@@ -191,7 +191,7 @@
                         v = (0, b.us)(c) || 0,
                         y = (d ? v : 5) - S,
                         C = (0, f.bl)({ seconds: (0, f.Cf)(y) });
-                    return r.createElement(B.Z, { "aria-label": g ? f.DP : C, focusable: !0, interactive: !0, interactiveStyles: null, onClick: g && e ? e : A.Z, role: "button", testID: "ControlBar-containerView" }, (e) => r.createElement(r.Fragment, null, !g && r.createElement(i.Z, { show: p }, r.createElement(a.Z, { style: [F.thumbnail, { flexDirection: l ? "row-reverse" : "row" }, e.isFocused && F.thumbnailFocused], testID: "ControlBar-videoThumbnail" }, r.createElement(o.ZP, { color: "white", size: "subtext2", style: F.countdownTime }, y), r.createElement(Z.Z, { source: n.posterImage, style: (0, D.K)(t) }))), r.createElement(i.Z, { show: g }, r.createElement(k.ZP, { focusable: !1, interactivityState: e, pointerEvents: "auto", size: "small", testID: "ControlBar-skipButton", type: "onMediaDominantColorFilled" }, r.createElement(o.ZP, { dir: "ltr", weight: "normal" }, f.Be, r.createElement(P.default, { style: l ? F.iconMarginRtl : F.iconMargin }))))));
+                    return r.createElement(L.Z, { "aria-label": g ? f.DP : C, focusable: !0, interactive: !0, interactiveStyles: null, onClick: g && e ? e : A.Z, role: "button", testID: "ControlBar-containerView" }, (e) => r.createElement(r.Fragment, null, !g && r.createElement(i.Z, { show: p }, r.createElement(a.Z, { style: [F.thumbnail, { flexDirection: l ? "row-reverse" : "row" }, e.isFocused && F.thumbnailFocused], testID: "ControlBar-videoThumbnail" }, r.createElement(o.ZP, { color: "white", size: "subtext2", style: F.countdownTime }, y), r.createElement(Z.Z, { source: n.posterImage, style: (0, D.K)(t) }))), r.createElement(i.Z, { show: g }, r.createElement(k.ZP, { focusable: !1, interactivityState: e, pointerEvents: "auto", size: "small", testID: "ControlBar-skipButton", type: "onMediaDominantColorFilled" }, r.createElement(o.ZP, { dir: "ltr", weight: "normal" }, f.Be, r.createElement(P.default, { style: l ? F.iconMarginRtl : F.iconMargin }))))));
                 },
                 O = "PrerollControlBar-",
                 N = { CAPTIONS: `${O}Captions`, FULLSCREEN: `${O}Fullscreen` };
@@ -246,12 +246,12 @@
             }
             const W = d.default.create((e) => ({ root: { writingDirection: "ltr", cursor: "auto", width: "100%" }, skipAffordance: { marginStart: e.spaces.space12, pointEvents: "none", visibility: "hidden" } }));
             function U({ isFullscreen: e, style: t }) {
-                const { hidden: n, shown: a } = G;
+                const { hidden: n, shown: a } = z;
                 return r.createElement(r.Fragment, null, r.createElement(y.default, { style: e ? n : a }), r.createElement(C.default, { style: e ? a : n }));
             }
-            const G = { hidden: { display: "none", height: "1.5em" }, shown: { display: "block", height: "1.5em" } },
-                z = H;
-            class V extends r.PureComponent {
+            const z = { hidden: { display: "none", height: "1.5em" }, shown: { display: "block", height: "1.5em" } },
+                G = H;
+            class Y extends r.PureComponent {
                 constructor(...e) {
                     super(...e),
                         (this._buildMessage = (e, t) => {
@@ -284,7 +284,7 @@
                     return r.createElement(k.ZP, { "aria-label": i, icon: t ? r.createElement(h.default, { borderColor: "white", borderWidth: "small", size: "medium", uri: t }) : void 0, link: a, onPress: this._handlePress(o), size: "xSmall", type: "onMediaDominantColorFilled" }, i);
                 }
             }
-            const Y = V;
+            const V = Y;
             class X extends r.Component {
                 constructor(...e) {
                     super(...e),
@@ -310,7 +310,7 @@
                                 h = s.fullscreen.isFullscreen;
                             return r.createElement(c.ZP.Consumer, null, ({ direction: e }) => {
                                 const c = "rtl" === e;
-                                return r.createElement(a.Z, { style: $.bottomContentContainer }, r.createElement(a.Z, { style: [$.bottomContentRow, { flexDirection: c ? "row-reverse" : "row" }] }, r.createElement(a.Z, { style: [$.forceFullWidth, { flexDirection: c ? "row-reverse" : "row" }] }, r.createElement(l, { focus: !0, interactionKey: g.IG.A11YHook }, r.createElement(a.Z, { focusable: !0 })), r.createElement(a.Z, { style: $.flexExpand }, r.createElement(a.Z, { style: [$.labelOuterContainerBase, c ? $.labelOuterContainerRtl : $.labelOuterContainerLtr] }, r.createElement(i.Z, { show: d }, r.createElement(a.Z, { style: [$.bottomContentRow, { flexDirection: c ? "row-reverse" : "row" }, $.rowBottomSpace] }, this._renderLabels(c)))), h ? null : r.createElement(a.Z, { style: [$.bottomContentRow, { flexDirection: c ? "row-reverse" : "row" }] }, r.createElement(a.Z, { style: [$.skipThumbnail, c ? $.skipThumbnailAbsoluteRtl : $.skipThumbnailAbsolute], testID: q.floatSkipThumbnail }, r.createElement(I, { onClick: n }))), r.createElement(l, { focus: !0, interactionKey: g.IG.ControlBar, mouseover: !0, touch: !0 }, r.createElement(z, { containerRef: t, displayDismissableControls: !d, playerApi: o, playerState: s, skipButton: h ? r.createElement(a.Z, { style: [$.skipThumbnail, c ? $.skipThumbnailRelativeRtl : $.skipThumbnailRelative], testID: q.inlineSkipThumbnail }, r.createElement(I, { onClick: n })) : null }))))));
+                                return r.createElement(a.Z, { style: $.bottomContentContainer }, r.createElement(a.Z, { style: [$.bottomContentRow, { flexDirection: c ? "row-reverse" : "row" }] }, r.createElement(a.Z, { style: [$.forceFullWidth, { flexDirection: c ? "row-reverse" : "row" }] }, r.createElement(l, { focus: !0, interactionKey: g.IG.A11YHook }, r.createElement(a.Z, { focusable: !0 })), r.createElement(a.Z, { style: $.flexExpand }, r.createElement(a.Z, { style: [$.labelOuterContainerBase, c ? $.labelOuterContainerRtl : $.labelOuterContainerLtr] }, r.createElement(i.Z, { show: d }, r.createElement(a.Z, { style: [$.bottomContentRow, { flexDirection: c ? "row-reverse" : "row" }, $.rowBottomSpace] }, this._renderLabels(c)))), h ? null : r.createElement(a.Z, { style: [$.bottomContentRow, { flexDirection: c ? "row-reverse" : "row" }] }, r.createElement(a.Z, { style: [$.skipThumbnail, c ? $.skipThumbnailAbsoluteRtl : $.skipThumbnailAbsolute], testID: q.floatSkipThumbnail }, r.createElement(I, { onClick: n }))), r.createElement(l, { focus: !0, interactionKey: g.IG.ControlBar, mouseover: !0, touch: !0 }, r.createElement(G, { containerRef: t, displayDismissableControls: !d, playerApi: o, playerState: s, skipButton: h ? r.createElement(a.Z, { style: [$.skipThumbnail, c ? $.skipThumbnailRelativeRtl : $.skipThumbnailRelative], testID: q.inlineSkipThumbnail }, r.createElement(I, { onClick: n })) : null }))))));
                             });
                         }),
                         (this._renderWithIntentionContext = (e) => {
@@ -320,7 +320,7 @@
                                 c = s?.advertiserProfileImageUrl,
                                 u = s?.advertiserName,
                                 m = s?.cta;
-                            return r.createElement(r.Fragment, null, r.createElement(l.Z, { colors: [m ? d.default.theme.colors.transparent : d.default.theme.colors.translucentBlack77, d.default.theme.colors.transparent], style: $.header }, r.createElement(a.Z, { style: $.profileContainer }, m ? r.createElement(Y, { advertiserName: u, avatarUri: c, ctaType: m.type, ctaUrl: m.url, playerApi: t }) : r.createElement(r.Fragment, null, c && r.createElement(h.default, { "aria-hidden": !0, borderColor: "white", borderWidth: "small", focusable: !1, size: "medium", uri: c }), u && r.createElement(o.ZP, { color: "white", style: $.profileText, weight: "bold" }, u))), i?.()), this._renderPrerollControlBar(e));
+                            return r.createElement(r.Fragment, null, r.createElement(l.Z, { colors: [m ? d.default.theme.colors.transparent : d.default.theme.colors.translucentBlack77, d.default.theme.colors.transparent], style: $.header }, r.createElement(a.Z, { style: $.profileContainer }, m ? r.createElement(V, { advertiserName: u, avatarUri: c, ctaType: m.type, ctaUrl: m.url, playerApi: t }) : r.createElement(r.Fragment, null, c && r.createElement(h.default, { "aria-hidden": !0, borderColor: "white", borderWidth: "small", focusable: !1, size: "medium", uri: c }), u && r.createElement(o.ZP, { color: "white", style: $.profileText, weight: "bold" }, u))), i?.()), this._renderPrerollControlBar(e));
                         }),
                         (this._renderLabels = (e) =>
                             r.createElement(m.o, { periodic: !0 }, ({ playerState: t }) => {
@@ -453,18 +453,20 @@
             var r = n(157396);
             const a = (0, n(587878).Z)({ palette: r.CV.light, key: "light-blue-normal", highContrastEnabled: !1, chirpFontEnabled: !1, scale: "normal" });
         },
-        590901: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => l });
+        647174: (e, t, n) => {
+            n.r(t), n.d(t, { default: () => c });
             var r = n(202784),
                 a = n(890601),
                 o = n(783427),
-                i = n(347101);
-            const s = (e = {}) => {
-                const { direction: t } = (0, o.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [i.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M17 13.76V22h4V2h-4v8.24L3 2v20l14-8.24z" })) }, { writingDirection: t });
+                i = n(717683),
+                s = n(347101);
+            const l = (e = {}) => {
+                const t = r.useContext(i.Z),
+                    { direction: n } = (0, o.Z)();
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style, t && s.Z.iconRTL], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M21.457 3.96L16.414 9H21v2h-8V3h2v4.59l5.043-5.05 1.414 1.42zM3 13h8v8H9v-4.59l-5.043 5.05-1.414-1.42L7.586 15H3v-2z" })) }, { writingDirection: n });
             };
-            s.metadata = { width: 24, height: 24 };
-            const l = s;
+            l.metadata = { width: 24, height: 24 };
+            const c = l;
         },
         151624: (e, t, n) => {
             n.d(t, { Z: () => r });
@@ -604,4 +606,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerPrerollUI.540cbeba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loaders.video.VideoPlayerDefaultUI~loaders.video.VideoPlayerPrerollUI.b630313a.js.map

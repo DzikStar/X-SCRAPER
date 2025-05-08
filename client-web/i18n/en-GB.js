@@ -4147,6 +4147,7 @@
                 a("f388a7ec", "DeepSearch"),
                 a("ab1eb384", "Select your desired search mode"),
                 a("i330e54c", "Advanced search and reasoning"),
+                a("fdcce108", "DeeperSearch"),
                 a("ac64b674", "Extended search, more reasoning"),
                 a("j22655f2", "Ask anything"),
                 a("h0681e3e", "Talk to Grok, our AI assistant"),
@@ -4173,6 +4174,9 @@
                 a("h15dce2e", "Advanced Settings"),
                 a("ff9dc268", "Edit prompt"),
                 a("acb2baa0", "Create Images"),
+                a("fe9ad897", function (e) {
+                    return "Edit Image" + e.ttc_grok_preset;
+                }),
                 a("h30fd372", "Try Voice Mode"),
                 a("e9fcdd0c", "Ask Grok to aggressively search the web"),
                 a("fc4e8aba", "Ask Grok to reason step-by-step"),
@@ -4911,10 +4915,10 @@
                 a("d2a43a7a", 'contains both "ai" and "startup"'),
                 a("a8584698", "ai startup"),
                 a("jb6f9292", 'contains the exact phrase "ai startup"'),
-                a("j8ee77c4", '"ai startup"'),
-                a("d0480758", 'contains either "ai" or "startup" (or both)'),
-                a("f0048fa2", "ai OR startup");
-            a("da0df186", 'contains "ai", but not "startup"'),
+                a("j8ee77c4", '"ai startup"');
+            a("d0480758", 'contains either "ai" or "startup" (or both)'),
+                a("f0048fa2", "ai OR startup"),
+                a("da0df186", 'contains "ai", but not "startup"'),
                 a("f2f463ea", "ai -startup"),
                 a("a10a357e", 'contains "ai" and has at least 50 likes'),
                 a("ca8ed1e8", "ai min_faves:50"),
@@ -5877,10 +5881,10 @@
                 a("b732a4cc", "When you do, you’ll see their posts here."),
                 a("hff48914", "No posts could be found at this time."),
                 a("hb52cc4a", "Please try again later."),
-                a("e50e1bb0", "Welcome to Communities"),
-                a("i6829daa", "Communities are moderated discussion groups where people on X can connect and share."),
-                a("fc5c6914", "Meet others with your interests");
-            a("aa1a9820", "Join Communities to connect with people who share your interests."),
+                a("e50e1bb0", "Welcome to Communities");
+            a("i6829daa", "Communities are moderated discussion groups where people on X can connect and share."),
+                a("fc5c6914", "Meet others with your interests"),
+                a("aa1a9820", "Join Communities to connect with people who share your interests."),
                 a("edef4c82", "Post directly to a Community"),
                 a("a7640df6", "Your posts are shared with Community members and your followers."),
                 a("h3bb8068", "Get backup when you need it"),
@@ -6875,10 +6879,10 @@
                 a("c2059276", "Have your replies boosted."),
                 a("b023ec20", "Max Reply Boost"),
                 a("g337328e", "Get the highest visibility for your replies."),
-                a("fa006202", "Background video playback"),
-                a("jf389778", "Watch while browsing or using other apps"),
-                a("f2977d80", "Bookmark Folders");
-            a("j1d3d910", "Keep your saved posts organised for easy access"),
+                a("fa006202", "Background video playback");
+            a("jf389778", "Watch while browsing or using other apps"),
+                a("f2977d80", "Bookmark Folders"),
+                a("j1d3d910", "Keep your saved posts organised for easy access"),
                 a("f0f48668", "Premium support"),
                 a("c3148608", "Get faster assistance when you need help"),
                 a("b485ca6e", "Highlights tab"),
@@ -7851,9 +7855,7 @@
                 a("e7e36818", "Ad accounts are eligible for job promotion when they are fully set up with a funding source."),
                 a("c28566e0", "Ad Account"),
                 a("c80160d3", "Advertising"),
-                a("ff0edac0", "Are you sure you want to cancel your subscription?"),
-                a("h2ac0348", "No, take me back"),
-                a("dbf9667e", "I’m sure");
+                a("ff0edac0", "Are you sure you want to cancel your subscription?");
             function r(e, t) {
                 for (var o = 0; o < t.length; o++) {
                     var a = t[o];
@@ -7892,7 +7894,9 @@
                     s(e, t)
                 );
             }
-            a("j7592572", "U-turn"),
+            a("h2ac0348", "No, take me back"),
+                a("dbf9667e", "I’m sure"),
+                a("j7592572", "U-turn"),
                 a("ee778942", "Traffic lights"),
                 a("fdd57981", function (e) {
                     return "We’d like to offer you a free one-time " + e.totalAmount + " USD ad credit.";
@@ -8915,16 +8919,16 @@
                 }),
                 a("dbeae6cf", function (e) {
                     return e.count + " other listener" + n(e.count, "", "s");
-                }),
-                a("d2543d97", function (e) {
-                    return "+" + e.count;
-                }),
+                });
+            a("d2543d97", function (e) {
+                return "+" + e.count;
+            }),
                 a("dc718e53", function (e) {
                     return "+" + e.count + " other" + n(e.count, "", "s");
-                });
-            a("d0e7b11b", function (e) {
-                return e.date + " at " + e.time;
-            }),
+                }),
+                a("d0e7b11b", function (e) {
+                    return e.date + " at " + e.time;
+                }),
                 a("b4349cbc", function (e) {
                     return "" + e.relativeDay;
                 }),
@@ -13205,4 +13209,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-GB.c51ca9aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-GB.ab79a58a.js.map

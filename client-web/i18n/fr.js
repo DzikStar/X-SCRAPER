@@ -4147,6 +4147,7 @@
                 n("f388a7ec", "DeepSearch"),
                 n("ab1eb384", "Sélectionnez le mode de recherche souhaité."),
                 n("i330e54c", "Recherche avancée et raisonnement"),
+                n("fdcce108", "DeeperSearch"),
                 n("ac64b674", "Recherche élargie, raisonnement poussé"),
                 n("j22655f2", "Posez une question"),
                 n("h0681e3e", "Parlez à Grok, notre assistant IA"),
@@ -4173,6 +4174,9 @@
                 n("h15dce2e", "Paramètres avancés"),
                 n("ff9dc268", "Éditer le message"),
                 n("acb2baa0", "Créer des images"),
+                n("fe9ad897", function (e) {
+                    return "Edit Image" + e.ttc_grok_preset;
+                }),
                 n("h30fd372", "Essayer le mode Voix"),
                 n("e9fcdd0c", "Demandez à Grok de faire des recherches agressives sur le Web."),
                 n("fc4e8aba", "Demandez à Grok de raisonner étape par étape."),
@@ -4911,10 +4915,10 @@
                 n("d2a43a7a", 'contient à la fois "ia" et "startup"'),
                 n("a8584698", "startup ia"),
                 n("jb6f9292", 'contient exactement le groupe de mots "startup ia"'),
-                n("j8ee77c4", '"startup ia"'),
-                n("d0480758", 'contient "ia" ou "startup" (ou les deux)'),
-                n("f0048fa2", "ia OR startup");
-            n("da0df186", 'contient "ia", mais pas "startup"'),
+                n("j8ee77c4", '"startup ia"');
+            n("d0480758", 'contient "ia" ou "startup" (ou les deux)'),
+                n("f0048fa2", "ia OR startup"),
+                n("da0df186", 'contient "ia", mais pas "startup"'),
                 n("f2f463ea", "ia -startup"),
                 n("a10a357e", 'contient "ia" et compte au moins 50 J\'aime'),
                 n("ca8ed1e8", "ia min_faves:50"),
@@ -5877,10 +5881,10 @@
                 n("b732a4cc", "Quand vous le ferez, vous verrez ses posts ici."),
                 n("hff48914", "Aucun post n'a pu être trouvé pour le moment."),
                 n("hb52cc4a", "Veuillez réessayer plus tard."),
-                n("e50e1bb0", "Bienvenue dans les Communautés"),
-                n("i6829daa", "Les Communautés sont des groupes de discussion faisant l'objet d'une modération, au sein desquels les utilisateurs de X peuvent interagir et partager des informations."),
-                n("fc5c6914", "Rencontrez d'autres personnes qui partagent vos centres d'intérêt");
-            n("aa1a9820", "Rejoignez des Communautés pour entrer en lien avec des personnes qui partagent vos centres d'intérêt."),
+                n("e50e1bb0", "Bienvenue dans les Communautés");
+            n("i6829daa", "Les Communautés sont des groupes de discussion faisant l'objet d'une modération, au sein desquels les utilisateurs de X peuvent interagir et partager des informations."),
+                n("fc5c6914", "Rencontrez d'autres personnes qui partagent vos centres d'intérêt"),
+                n("aa1a9820", "Rejoignez des Communautés pour entrer en lien avec des personnes qui partagent vos centres d'intérêt."),
                 n("edef4c82", "Postez directement à l'attention d'une Communauté"),
                 n("a7640df6", "Vos posts sont partagés avec les membres de la Communauté et avec vos abonnés."),
                 n("h3bb8068", "Obtenez de l'aide quand vous en avez besoin"),
@@ -6875,10 +6879,10 @@
                 n("c2059276", "Boostez vos réponses."),
                 n("b023ec20", "Boostage maximum des réponses"),
                 n("g337328e", "Bénéficiez de la meilleure visibilité possible pour vos réponses."),
-                n("fa006202", "Lecture des vidéos en arrière‑plan"),
-                n("jf389778", "Regardez des vidéos tout en naviguant ou en utilisant d'autres applications."),
-                n("f2977d80", "Dossiers de signets");
-            n("j1d3d910", "Organisez vos posts enregistrés pour pouvoir y accéder facilement."),
+                n("fa006202", "Lecture des vidéos en arrière‑plan");
+            n("jf389778", "Regardez des vidéos tout en naviguant ou en utilisant d'autres applications."),
+                n("f2977d80", "Dossiers de signets"),
+                n("j1d3d910", "Organisez vos posts enregistrés pour pouvoir y accéder facilement."),
                 n("f0f48668", "Assistance premium"),
                 n("c3148608", "Profitez d'une assistance plus rapide en cas de besoin."),
                 n("b485ca6e", "Onglet Posts marquants"),
@@ -7851,9 +7855,7 @@
                 n("e7e36818", "Les comptes d'annonceur peuvent promouvoir des offres d'emploi quand leur configuration est complète, source de financement comprise."),
                 n("c28566e0", "Compte d'annonceur"),
                 n("c80160d3", "Publicité"),
-                n("ff0edac0", "Vous voulez annuler votre abonnement ?"),
-                n("h2ac0348", "Non, j'ai changé d'avis"),
-                n("dbf9667e", "Je suis sûr");
+                n("ff0edac0", "Vous voulez annuler votre abonnement ?");
             function a(e, t) {
                 for (var s = 0; s < t.length; s++) {
                     var n = t[s];
@@ -7892,7 +7894,9 @@
                     i(e, t)
                 );
             }
-            n("j7592572", "Demi‑tour"),
+            n("h2ac0348", "Non, j'ai changé d'avis"),
+                n("dbf9667e", "Je suis sûr"),
+                n("j7592572", "Demi‑tour"),
                 n("ee778942", "Feux tricolores"),
                 n("fdd57981", function (e) {
                     return "Nous aimerions vous offrir un crédit publicitaire ponctuel de " + e.totalAmount + " USD";
@@ -8915,16 +8919,16 @@
                 }),
                 n("dbeae6cf", function (e) {
                     return e.count + " autre" + r(e.count, " auditeur", "s auditeurs");
-                }),
-                n("d2543d97", function (e) {
-                    return "+" + e.count;
-                }),
+                });
+            n("d2543d97", function (e) {
+                return "+" + e.count;
+            }),
                 n("dc718e53", function (e) {
                     return "+" + e.count + " autre" + r(e.count, " personne", "s personnes");
-                });
-            n("d0e7b11b", function (e) {
-                return e.date + " à " + e.time;
-            }),
+                }),
+                n("d0e7b11b", function (e) {
+                    return e.date + " à " + e.time;
+                }),
                 n("b4349cbc", function (e) {
                     return "" + e.relativeDay;
                 }),
@@ -13191,4 +13195,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.d74b625a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.5c8e4b5a.js.map

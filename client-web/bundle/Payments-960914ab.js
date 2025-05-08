@@ -307,8 +307,8 @@
                 d,
                 c,
                 o,
-                m,
-                g = {
+                g,
+                m = {
                     fragment: { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "RecentParticipantsQuery", selections: [{ alias: null, args: (n = [{ kind: "Literal", name: "s", value: "8cce" }]), concreteType: "User", kind: "LinkedField", name: "get_payments_recent_participants", plural: !0, selections: [{ args: null, kind: "FragmentSpread", name: "UserCell_user" }, (i = { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }), { args: null, kind: "FragmentSpread", name: "UserDetails_user" }, (s = { kind: "ClientExtension", selections: [{ alias: null, args: null, kind: "ScalarField", name: "__id", storageKey: null }] })], storageKey: 'get_payments_recent_participants(s:"8cce")' }], type: "Query", abstractKey: null },
                     kind: "Request",
                     operation: {
@@ -405,7 +405,7 @@
                                                     (d = { alias: null, args: null, concreteType: "BadgeInfo", kind: "LinkedField", name: "badge", plural: !1, selections: [r], storageKey: null }),
                                                     (c = { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null }),
                                                     (o = { alias: "userLabelType", args: null, kind: "ScalarField", name: "user_label_type", storageKey: null }),
-                                                    (m = { alias: "userLabelDisplayType", args: null, kind: "ScalarField", name: "user_label_display_type", storageKey: null }),
+                                                    (g = { alias: "userLabelDisplayType", args: null, kind: "ScalarField", name: "user_label_display_type", storageKey: null }),
                                                 ],
                                                 storageKey: null,
                                             },
@@ -415,7 +415,7 @@
                                     i,
                                     { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null },
                                     { alias: null, args: null, kind: "ScalarField", name: "profile_image_shape", storageKey: null },
-                                    { alias: "affiliates_highlighted_label", args: null, concreteType: "HighlightedUserLabelResponse", kind: "LinkedField", name: "identity_profile_labels_highlighted_label", plural: !1, selections: [{ alias: null, args: null, concreteType: "HighlightedUserLabel", kind: "LinkedField", name: "label", plural: !1, selections: [{ alias: null, args: null, concreteType: "TimelineUrl", kind: "LinkedField", name: "url", plural: !1, selections: [r, t], storageKey: null }, d, c, o, m], storageKey: null }], storageKey: null },
+                                    { alias: "affiliates_highlighted_label", args: null, concreteType: "HighlightedUserLabelResponse", kind: "LinkedField", name: "identity_profile_labels_highlighted_label", plural: !1, selections: [{ alias: null, args: null, concreteType: "HighlightedUserLabel", kind: "LinkedField", name: "label", plural: !1, selections: [{ alias: null, args: null, concreteType: "TimelineUrl", kind: "LinkedField", name: "url", plural: !1, selections: [r, t], storageKey: null }, d, c, o, g], storageKey: null }], storageKey: null },
                                     u,
                                     s,
                                 ],
@@ -425,8 +425,8 @@
                     },
                     params: { id: "xvZnXh4_2Bi2wZkMH18DHw", metadata: { features: ["responsive_web_graphql_timeline_navigation_enabled"] }, name: "RecentParticipantsQuery", operationKind: "query", text: null },
                 };
-            g.hash = "098d419144f289b29c1421123e7cfb25";
-            const y = g;
+            m.hash = "098d419144f289b29c1421123e7cfb25";
+            const y = m;
         },
         73863: (e, l, a) => {
             a.d(l, { Z: () => u });
@@ -514,8 +514,8 @@
                 d,
                 c,
                 o,
-                m,
                 g,
+                m,
                 y = {
                     argumentDefinitions: [],
                     kind: "Fragment",
@@ -530,6 +530,7 @@
                         { alias: null, args: null, kind: "ScalarField", name: "reason_code", storageKey: null },
                         { alias: null, args: null, kind: "ScalarField", name: "transaction_type", storageKey: null },
                         { alias: null, args: null, kind: "ScalarField", name: "created_at", storageKey: null },
+                        { alias: null, args: null, kind: "ScalarField", name: "availability_date", storageKey: null },
                         { alias: null, args: null, kind: "ScalarField", name: "transaction_status", storageKey: null },
                         { alias: null, args: null, kind: "ScalarField", name: "challenge_id", storageKey: null },
                         {
@@ -568,10 +569,61 @@
                                     type: "XPaymentsTransferDetails",
                                     abstractKey: null,
                                 },
-                                { kind: "InlineFragment", selections: (g = [(m = { alias: null, args: null, concreteType: "XPaymentsMerchantDetails", kind: "LinkedField", name: "merchant_details", plural: !1, selections: [n, t, { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "website", storageKey: null }], storageKey: null })]), type: "XPaymentsBankingDepositDetails", abstractKey: null },
-                                { kind: "InlineFragment", selections: g, type: "XPaymentsBankingWithdrawalDetails", abstractKey: null },
-                                { kind: "InlineFragment", selections: [m, d], type: "XPaymentsPaymentDetails", abstractKey: null },
-                                { kind: "InlineFragment", selections: [m, d, { alias: null, args: null, kind: "ScalarField", name: "reference_transaction_id", storageKey: null }], type: "XPaymentsRefundDetails", abstractKey: null },
+                                {
+                                    kind: "InlineFragment",
+                                    selections: (m = [
+                                        (g = {
+                                            alias: null,
+                                            args: null,
+                                            concreteType: "XPaymentsMerchantDetails",
+                                            kind: "LinkedField",
+                                            name: "merchant_details",
+                                            plural: !1,
+                                            selections: [
+                                                n,
+                                                t,
+                                                { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
+                                                { alias: null, args: null, kind: "ScalarField", name: "website", storageKey: null },
+                                                {
+                                                    alias: null,
+                                                    args: null,
+                                                    concreteType: "XPaymentsLocation",
+                                                    kind: "LinkedField",
+                                                    name: "location",
+                                                    plural: !1,
+                                                    selections: [
+                                                        {
+                                                            alias: null,
+                                                            args: null,
+                                                            concreteType: "XPaymentsAddress",
+                                                            kind: "LinkedField",
+                                                            name: "address",
+                                                            plural: !1,
+                                                            selections: [
+                                                                { alias: null, args: null, kind: "ScalarField", name: "city", storageKey: null },
+                                                                { alias: null, args: null, kind: "ScalarField", name: "country_code", storageKey: null },
+                                                                { alias: null, args: null, kind: "ScalarField", name: "postal_code", storageKey: null },
+                                                                { alias: null, args: null, kind: "ScalarField", name: "region", storageKey: null },
+                                                                { alias: null, args: null, kind: "ScalarField", name: "street", storageKey: null },
+                                                                { alias: null, args: null, kind: "ScalarField", name: "street2", storageKey: null },
+                                                            ],
+                                                            storageKey: null,
+                                                        },
+                                                        { alias: null, args: null, kind: "ScalarField", name: "latitude", storageKey: null },
+                                                        { alias: null, args: null, kind: "ScalarField", name: "longitude", storageKey: null },
+                                                    ],
+                                                    storageKey: null,
+                                                },
+                                            ],
+                                            storageKey: null,
+                                        }),
+                                    ]),
+                                    type: "XPaymentsBankingDepositDetails",
+                                    abstractKey: null,
+                                },
+                                { kind: "InlineFragment", selections: m, type: "XPaymentsBankingWithdrawalDetails", abstractKey: null },
+                                { kind: "InlineFragment", selections: [g, d], type: "XPaymentsPaymentDetails", abstractKey: null },
+                                { kind: "InlineFragment", selections: [g, d, { alias: null, args: null, kind: "ScalarField", name: "reference_transaction_id", storageKey: null }], type: "XPaymentsRefundDetails", abstractKey: null },
                             ],
                             storageKey: null,
                         },
@@ -580,7 +632,7 @@
                     type: "XPaymentsTransaction",
                     abstractKey: null,
                 };
-            y.hash = "5c2725be2c85d17b7805d90b468e617c";
+            y.hash = "3e24610c0bc28a1c95f1bf743cf297cc";
             const k = y;
         },
         860648: (e, l, a) => {
@@ -632,4 +684,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-960914ab.b2c9261a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-960914ab.3a7c6caa.js.map

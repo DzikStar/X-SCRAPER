@@ -33,20 +33,20 @@
                             g(!1);
                         }, []),
                         E = (0, m.x)({ postIds: t }),
-                        C = a.useMemo(() => (0, l.Z)(n.map((e) => e.favicon_base64).filter(Boolean)), [n]),
-                        k = a.useRef([]),
-                        v = "postIds",
+                        k = a.useMemo(() => (0, l.Z)(n.map((e) => e.favicon_base64).filter(Boolean)), [n]),
+                        v = a.useRef([]),
+                        C = "postIds",
                         S = "webResults";
                     return (
-                        t.length > 0 && !k.current.includes(v) && k.current.push(v),
-                        n.length > 0 && !k.current.includes(S) && k.current.push(S),
+                        t.length > 0 && !v.current.includes(C) && v.current.push(C),
+                        n.length > 0 && !v.current.includes(S) && v.current.push(S),
                         a.createElement(
                             a.Fragment,
                             null,
                             a.createElement(
                                 s.Z,
                                 { style: f.container },
-                                k.current.map((s) => (s === v ? a.createElement(d.a, { images: E, key: "post_ids_button", label: h({ count: t.length }), onClick: y, withAnimation: e }) : s === S ? a.createElement(d.a, { images: C, key: "web_results_button", label: p({ count: n.length }), onClick: x, withAnimation: e }) : void 0)),
+                                v.current.map((s) => (s === C ? a.createElement(d.a, { images: E, key: "post_ids_button", label: h({ count: t.length }), onClick: y, withAnimation: e }) : s === S ? a.createElement(d.a, { images: k, key: "web_results_button", label: p({ count: n.length }), onClick: x, withAnimation: e }) : void 0)),
                             ),
                             r ? a.createElement(u.a, { onDrawerDismiss: b, paginationOptions: { numResultsPerPage: 15 }, postIds: t }) : null,
                             o ? a.createElement(c.E, { onDrawerDismiss: w, paginationOptions: { numResultsPerPage: 25 }, webResults: n }) : null,
@@ -397,95 +397,111 @@
                 f = i.default.create((e) => ({ container: { width: "100%", maxWidth: 500, marginBottom: e.spaces.space12 }, post: { borderBottomWidth: 1, borderBottomColor: e.colors.borderColor }, mediaContent: { marginHorizontal: e.spaces.space16, marginBottom: e.spaces.space8, borderRadius: e.borderRadii.large, overflow: "hidden" } }));
         },
         30827: (e, t, n) => {
-            n.d(t, { U: () => v });
+            n.d(t, { U: () => S });
             var a = n(202784),
                 s = n(325686),
                 r = n(392237),
                 i = n(952793),
                 o = n(988290);
             n(543673), n(240753), n(128399), n(136728);
-            var l = n(194504),
-                c = n(530732),
-                u = n(823161),
-                d = n(366635),
-                m = n(966886),
-                p = n(650028),
-                h = n(451051),
-                g = n(103737),
-                f = n(125363),
-                y = n(836255);
-            function b({ containerStyle: e, isPreview: t = !1, numberOfLines: n, onClick: i, postId: o, style: l, tweetTextStyle: b }) {
-                const w = a.useMemo(() => y.Z.createHydratorForTweet(o), [o]),
-                    E = (0, f.v9)(w);
+            const l = /^(https?:\/\/)(?:www\.)?(x|twitter)\.com\/([A-Za-z0-9_]+)\/status\/([0-9]+)/;
+            function c(e, t, n, a) {
+                const { allowXPostEmbeds: s, allowYoutubeEmbeds: r } = a,
+                    i = (function (e) {
+                        const t = /\[.*?\]\((.*?)\)/g,
+                            n = e.matchAll(t);
+                        return Array.from(n, (e) => e[1]).filter((e) => {
+                            try {
+                                return new URL(e), !0;
+                            } catch (e) {
+                                return !1;
+                            }
+                        });
+                    })(e),
+                    o = [];
+                if (r) {
+                    i.filter((e) => {
+                        const t = new URL(e);
+                        return "www.youtube.com" === t.hostname && t.searchParams.get("v");
+                    }).forEach((e) => {
+                        const n = new URL(e),
+                            a = n.searchParams.get("v"),
+                            s = t.find((t) => t.url === e);
+                        "www.youtube.com" === n.hostname && a && s && o.push(`https://www.youtube.com/embed/${a}`);
+                    });
+                }
+                const c = [];
+                if (s) {
+                    i.filter((e) => l.test(e)).forEach((e) => {
+                        const t = (function (e) {
+                            try {
+                                const t = e.match(l);
+                                return t ? t[4] : null;
+                            } catch (e) {
+                                return null;
+                            }
+                        })(e);
+                        t && n.includes(t) && !c.includes(t) && c.push(t);
+                    });
+                }
+                return { embeddedYoutubeVideoURLs: o.slice(0, 1), embeddedPostIds: c.slice(0, 3) };
+            }
+            var u = n(530732),
+                d = n(823161),
+                m = n(366635),
+                p = n(966886),
+                h = n(650028),
+                g = n(451051),
+                f = n(103737),
+                y = n(125363),
+                b = n(836255);
+            function x({ containerStyle: e, isPreview: t = !1, numberOfLines: n, onClick: i, postId: o, style: l, tweetTextStyle: c }) {
+                const x = a.useMemo(() => b.Z.createHydratorForTweet(o), [o]),
+                    E = (0, y.v9)(x);
                 if (!E) return null;
-                const { created_at: C, text: k, user: v } = E;
+                const { created_at: k, text: v, user: C } = E;
                 return a.createElement(
-                    c.Z,
+                    u.Z,
                     {
                         onClick: () => {
                             i && i(), window.open(`https://x.com${E.permalink}`, "_blank");
                         },
-                        style: [x.interactiveContainer, e],
+                        style: [w.interactiveContainer, e],
                         withoutInteractiveStyles: !0,
                     },
                     ({ isHovered: e }) =>
                         a.createElement(
                             s.Z,
-                            { style: [x.container, e ? x.hoveredContainer : void 0, l] },
-                            a.createElement(s.Z, { style: x.headerContainer }, a.createElement(s.Z, { style: x.nameContainer }, a.createElement(u.default, { "aria-label": v.name, borderColor: "gray700", borderWidth: "small", screenName: v.screen_name, size: t ? "medium" : "large", uri: v.profile_image_url_https, withHoverCard: !0, withLink: !0 }), a.createElement(d.Z, { affiliateBadgeInfo: v.highlightedLabel, isBlueVerified: v.is_blue_verified, isVerified: v.verified, name: v.name, nameSize: t ? "subtext2" : "subtext1", screenName: v.screen_name, screenNameSize: t ? "subtext3" : "subtext2", screenNameStyle: x.screenName, screenNameSuffixContainerStyle: { marginStart: 0 }, style: { display: "flex", flexDirection: "column", alignItems: "flex-start" }, verifiedType: v.verified_type, withHoverCard: !0, withLink: !0, withStackedLayout: !0 })), a.createElement(m.Z, { humanReadable: !1, style: [x.timestamp, { fontSize: t ? r.default.theme.fontSizes.subtext3 : r.default.theme.fontSizes.subtext2, lineHeight: t ? r.default.theme.fontSizes.subtext3 : r.default.theme.fontSizes.subtext2 }], timestamp: C })),
-                            E.in_reply_to_screen_name && a.createElement(p.ZP, { displayTextRange: E.display_text_range, inReplyToName: E.in_reply_to_name, inReplyToScreenName: E.in_reply_to_screen_name, inReplyToUserIdStr: E.in_reply_to_user_id_str, linkType: p.ZP.ReplyContextLinkTypes.none, size: t ? "subtext2" : "subtext1", tweetPermalink: E.permalink }),
-                            a.createElement(h.Z, { displayTextRange: E.display_text_range, entities: E.entities, isCondensed: t, numberOfLines: n, style: [x.tweetText, b], text: k }),
-                            (!t || !k) &&
+                            { style: [w.container, e ? w.hoveredContainer : void 0, l] },
+                            a.createElement(s.Z, { style: w.headerContainer }, a.createElement(s.Z, { style: w.nameContainer }, a.createElement(d.default, { "aria-label": C.name, borderColor: "gray700", borderWidth: "small", screenName: C.screen_name, size: t ? "medium" : "large", uri: C.profile_image_url_https, withHoverCard: !0, withLink: !0 }), a.createElement(m.Z, { affiliateBadgeInfo: C.highlightedLabel, isBlueVerified: C.is_blue_verified, isVerified: C.verified, name: C.name, nameSize: t ? "subtext2" : "subtext1", screenName: C.screen_name, screenNameSize: t ? "subtext3" : "subtext2", screenNameStyle: w.screenName, screenNameSuffixContainerStyle: { marginStart: 0 }, style: { display: "flex", flexDirection: "column", alignItems: "flex-start" }, verifiedType: C.verified_type, withHoverCard: !0, withLink: !0, withStackedLayout: !0 })), a.createElement(p.Z, { humanReadable: !1, style: [w.timestamp, { fontSize: t ? r.default.theme.fontSizes.subtext3 : r.default.theme.fontSizes.subtext2, lineHeight: t ? r.default.theme.fontSizes.subtext3 : r.default.theme.fontSizes.subtext2 }], timestamp: k })),
+                            E.in_reply_to_screen_name && a.createElement(h.ZP, { displayTextRange: E.display_text_range, inReplyToName: E.in_reply_to_name, inReplyToScreenName: E.in_reply_to_screen_name, inReplyToUserIdStr: E.in_reply_to_user_id_str, linkType: h.ZP.ReplyContextLinkTypes.none, size: t ? "subtext2" : "subtext1", tweetPermalink: E.permalink }),
+                            a.createElement(g.Z, { displayTextRange: E.display_text_range, entities: E.entities, isCondensed: t, numberOfLines: n, style: [w.tweetText, c], text: v }),
+                            (!t || !v) &&
                                 (E.extended_entities?.media ?? []).map((e) => {
                                     const n = { ...e, ext_alt_text: void 0 };
-                                    return a.createElement(g.Z, { displayMediaTags: !1, hasSensitiveMedia: E.possibly_sensitive, isCondensed: t, key: `media_${E.id_str}_${e.id_str}`, mediaContentStyles: x.media, mediaDetails: [n], mediaVisibilityResults: E.mediaVisibilityResults, preventPlayback: !0, shouldShowAltLabelAlways: !1, showAltTranslation: !1, showBorder: !1, singleImageMaxAspectRatio: 2, singleImageMinAspectRatio: 2, tweetId: E.id_str, videoAspectRatio: 2, videoOptions: { displayOptions: { badgeConfiguration: { hideDataSize: !0, hideViewCount: !0, hideDuration: !0 } }, hidePreviewPlayButton: !0 }, withCenterCrop: !0, withMediaTagsIcon: !t });
+                                    return a.createElement(f.Z, { displayMediaTags: !1, hasSensitiveMedia: E.possibly_sensitive, isCondensed: t, key: `media_${E.id_str}_${e.id_str}`, mediaContentStyles: w.media, mediaDetails: [n], mediaVisibilityResults: E.mediaVisibilityResults, preventPlayback: !0, shouldShowAltLabelAlways: !1, showAltTranslation: !1, showBorder: !1, singleImageMaxAspectRatio: 2, singleImageMinAspectRatio: 2, tweetId: E.id_str, videoAspectRatio: 2, videoOptions: { displayOptions: { badgeConfiguration: { hideDataSize: !0, hideViewCount: !0, hideDuration: !0 } }, hidePreviewPlayButton: !0 }, withCenterCrop: !0, withMediaTagsIcon: !t });
                                 }),
                         ),
                 );
             }
-            const x = r.default.create((e) => ({ interactiveContainer: { height: "100%", flex: 1 }, container: { borderStyle: "solid", borderWidth: 1, borderColor: e.colors.gray100, borderRadius: e.borderRadii.medium, backgroundColor: e.colors.gray0, padding: e.spaces.space12, textOverflow: "ellipsis", cursor: "pointer", transition: "background-color 0.2s ease", display: "flex", flexDirection: "column", gap: e.spaces.space8, height: "100%", flex: 1 }, hoveredContainer: { backgroundColor: e.colors.gray100 }, headerContainer: { display: "flex", flexDirection: "row", justifyContent: "space-between", gap: e.spaces.space8, textOverflow: "ellipsis", overflow: "hidden" }, nameContainer: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space8, textOverflow: "ellipsis" }, screenName: { color: e.colors.gray700 }, timestamp: { color: e.colors.gray700, fontSize: e.fontSizes.subtext3, lineHeight: e.fontSizes.subtext3, textOverflow: "ellipsis", position: "relative", top: 3 }, tweetText: { fontSize: e.fontSizes.subtext2 }, media: {} })),
-                w = ({ numberOfLines: e, postIds: t, postsCarouselContentStyle: n, postsCarouselStyle: r, style: i }) =>
+            const w = r.default.create((e) => ({ interactiveContainer: { height: "100%", flex: 1 }, container: { borderStyle: "solid", borderWidth: 1, borderColor: e.colors.gray100, borderRadius: e.borderRadii.medium, backgroundColor: e.colors.gray0, padding: e.spaces.space12, textOverflow: "ellipsis", cursor: "pointer", transition: "background-color 0.2s ease", display: "flex", flexDirection: "column", gap: e.spaces.space8, height: "100%", flex: 1 }, hoveredContainer: { backgroundColor: e.colors.gray100 }, headerContainer: { display: "flex", flexDirection: "row", justifyContent: "space-between", gap: e.spaces.space8, textOverflow: "ellipsis", overflow: "hidden" }, nameContainer: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space8, textOverflow: "ellipsis" }, screenName: { color: e.colors.gray700 }, timestamp: { color: e.colors.gray700, fontSize: e.fontSizes.subtext3, lineHeight: e.fontSizes.subtext3, textOverflow: "ellipsis", position: "relative", top: 3 }, tweetText: { fontSize: e.fontSizes.subtext2 }, media: {} })),
+                E = ({ numberOfLines: e, postIds: t, style: n }) =>
                     a.createElement(
                         s.Z,
-                        { style: [E.container, i] },
-                        a.createElement(
-                            l.Z,
-                            { buttonsContainerStyle: { ...E.carouselContent, ...(n || {}) }, style: [E.carousel, r] },
-                            t.map((t, n) => a.createElement(b, { containerStyle: E.postContainer, isPreview: !0, key: t, numberOfLines: e || 5, postId: t, style: [E.post, { animationDelay: 0.1 * n + "s" }], tweetTextStyle: E.postText })),
-                        ),
+                        { style: [k.container, n] },
+                        t.map((t, n) => a.createElement(x, { containerStyle: k.postContainer, isPreview: !0, key: t, numberOfLines: e || 5, postId: t, style: [k.post, { animationDelay: 0.1 * n + "s" }], tweetTextStyle: k.postText })),
                     ),
-                E = r.default.create((e) => ({ container: { width: "100%" }, carousel: { width: "100%", flex: 1 }, carouselContent: { display: "flex", flexDirection: "row", flex: 1, gap: e.spaces.space12 }, postContainer: { width: 250, flex: "unset" }, post: { animationDuration: "0.2s", animationTimingFunction: "ease", animationKeyframes: [{ "0%": { opacity: 0, transform: "translateX(-10px)" }, "100%": { opacity: 1, transform: "translateX(0px)" } }], animationFillMode: "both" }, postText: { fontSize: e.fontSizes.subtext1 } })),
-                C = ({ style: e, url: t }) => a.createElement(s.Z, { style: k.embeddedYoutubeVideoContainer }, a.createElement("iframe", { allow: "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share", allowFullScreen: !0, height: "100%", referrerPolicy: "strict-origin-when-cross-origin", src: t, style: k.embeddedYoutubeVideo, title: "YouTube video player", width: "100%" })),
-                k = r.default.create((e) => ({ embeddedYoutubeVideoContainer: { width: "100%", aspectRatio: 16 / 9, borderRadius: e.borderRadii.medium, overflow: "hidden" }, embeddedYoutubeVideo: { border: "none" } })),
-                v = ({ postIds: e, style: t, webResults: n }) => {
-                    const { isCompactLayout: r, isGrokDrawer: l } = (0, o.ZP)(),
-                        c = (0, i.hC)("responsive_web_grok_allow_youtube_embeds"),
-                        u = (0, i.hC)("responsive_web_grok_allow_x_post_embeds"),
-                        d = a.useMemo(
-                            () =>
-                                (function (e, t, n) {
-                                    const { allowXPostEmbeds: a, allowYoutubeEmbeds: s } = n,
-                                        r = [];
-                                    s &&
-                                        e.forEach((e) => {
-                                            const t = new URL(e.url),
-                                                n = t.searchParams.get("v");
-                                            "www.youtube.com" === t.hostname && n && r.push(`https://www.youtube.com/embed/${n}`);
-                                        });
-                                    const i = [];
-                                    return (
-                                        a &&
-                                            t.forEach((e) => {
-                                                i.push(e);
-                                            }),
-                                        { embeddedYoutubeVideoURLs: r.slice(0, 1), embeddedPostIds: i.slice(0, 10) }
-                                    );
-                                })(n, e, { allowXPostEmbeds: u, allowYoutubeEmbeds: c }),
-                            [n, e, u, c],
-                        );
-                    return 0 === d.embeddedPostIds.length && 0 === d.embeddedYoutubeVideoURLs.length ? null : a.createElement(s.Z, { style: [S.container, t] }, u && d.embeddedPostIds.length > 0 && a.createElement(w, { numberOfLines: l || r ? 3 : void 0, postIds: d.embeddedPostIds, style: S.embeddedXPosts }), c && d.embeddedYoutubeVideoURLs.map((e) => a.createElement(C, { key: e, url: e })));
+                k = r.default.create((e) => ({ container: { width: "100%", display: "flex", flexDirection: "row", flex: 1, gap: e.spaces.space12 }, postContainer: { flex: 1 }, post: { animationDuration: "0.2s", animationTimingFunction: "ease", animationKeyframes: [{ "0%": { opacity: 0, transform: "translateX(-10px)" }, "100%": { opacity: 1, transform: "translateX(0px)" } }], animationFillMode: "both" }, postText: { fontSize: e.fontSizes.subtext1 } })),
+                v = ({ style: e, url: t }) => a.createElement(s.Z, { style: C.embeddedYoutubeVideoContainer }, a.createElement("iframe", { allow: "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share", allowFullScreen: !0, height: "100%", referrerPolicy: "strict-origin-when-cross-origin", src: t, style: C.embeddedYoutubeVideo, title: "YouTube video player", width: "100%" })),
+                C = r.default.create((e) => ({ embeddedYoutubeVideoContainer: { width: "100%", aspectRatio: 16 / 9, borderRadius: e.borderRadii.medium, overflow: "hidden" }, embeddedYoutubeVideo: { border: "none" } })),
+                S = ({ postIds: e, response: t, style: n, webResults: r }) => {
+                    const { isCompactLayout: l, isGrokDrawer: u } = (0, o.ZP)(),
+                        d = (0, i.hC)("responsive_web_grok_allow_youtube_embeds"),
+                        m = (0, i.hC)("responsive_web_grok_allow_x_post_embeds"),
+                        p = a.useMemo(() => c(t, r, e, { allowXPostEmbeds: m, allowYoutubeEmbeds: d }), [t, r, e, m, d]);
+                    return 0 === p.embeddedPostIds.length && 0 === p.embeddedYoutubeVideoURLs.length ? null : a.createElement(s.Z, { style: [_.container, n] }, m && p.embeddedPostIds.length > 0 && a.createElement(E, { numberOfLines: u || l ? 3 : void 0, postIds: p.embeddedPostIds, style: _.embeddedXPosts }), d && p.embeddedYoutubeVideoURLs.map((e) => a.createElement(v, { key: e, url: e })));
                 },
-                S = r.default.create((e) => ({ container: { display: "flex", flexDirection: "column", gap: e.spaces.space12 }, embeddedXPosts: { width: "100%" } }));
+                _ = r.default.create((e) => ({ container: { display: "flex", flexDirection: "column", gap: e.spaces.space12 }, embeddedXPosts: { width: "100%" } }));
         },
         263160: (e, t, n) => {
             n.d(t, { Z: () => l });
@@ -598,7 +614,7 @@
             };
         },
         413145: (e, t, n) => {
-            n.d(t, { y: () => v });
+            n.d(t, { y: () => C });
             var a = n(202784),
                 s = n(325686),
                 r = n(721266),
@@ -618,27 +634,27 @@
                 x = n(667945),
                 w = n(848957);
             const E = i.default.create((e) => ({ container: { width: "100%", alignItems: "center" } })),
-                C = function ({ analysisEntityId: e, containerRef: t, conversationKey: n, id: r, isLastResponse: i, isLoading: o, onLayout: u }) {
+                k = function ({ analysisEntityId: e, containerRef: t, conversationKey: n, id: r, isLastResponse: i, isLoading: o, onLayout: u }) {
                     const d = (0, c.bD)(n),
                         m = (0, h.Z)(),
-                        C = (0, l.v9)((e) => d?.selectUsingExperiment(e)),
-                        k = (0, l.v9)((e) => d?.selectExperiments(e)),
-                        v = (0, l.v9)((e) => d.selectMessageById(e, r, !1)),
+                        k = (0, l.v9)((e) => d?.selectUsingExperiment(e)),
+                        v = (0, l.v9)((e) => d?.selectExperiments(e)),
+                        C = (0, l.v9)((e) => d.selectMessageById(e, r, !1)),
                         S = (0, l.v9)((e) => d?.selectConversationId(e)) ?? "",
                         _ = (0, l.v9)((e) => d.selectMessageById(e, r, !0)),
                         I = (0, l.v9)((e) => d.selectPromptSourceForMessageId(e, r)),
                         P = (0, l.v9)(f.ZP.selectViewerUser),
-                        Z = (0, l.v9)((e) => f.ZP.select(e, y.c0)),
-                        R = v?.sender === g.CI.ASSISTANT,
-                        T = R ? Z : P,
-                        M = a.useMemo(() => v?.bannerMessages ?? [], [v?.bannerMessages]),
-                        D = a.useMemo(() => ({ grok_details: { ...(m.contextualScribeData.grok_details ?? {}), chat_item_id: v?.agentChatItemId } }), [m, v?.agentChatItemId]);
-                    return P && v && T ? (C && R && (v?.message === (k[0]?.message ?? null) || null == r) ? a.createElement(s.Z, { onLayout: u, ref: t, style: E.container }, a.createElement(p.nO, { data: D }, a.createElement(w.Z, { conversationId: S, grokModule: d, isLoading: o, message1: k[0] ?? v, message2: k[1] ?? _ }))) : a.createElement(s.Z, { onLayout: u, ref: t, style: E.container }, R ? a.createElement(p.nO, { data: D }, a.createElement(x.Z, { analysisEntityId: e, bannerMessages: M, cardAttachments: v.cardAttachments, chatItemId: v.agentChatItemId, chatResponseAnnotations: v.chatResponseAnnotations, citedWebResults: v.citedWebResults, conversationKey: n, deepSearchSummaryAccumulator: v.deepSearchSummaryAccumulator, disclaimer: v.disclaimer, expectedImageAspectRatio: v.expectedImageAspectRatio, fileAttachments: v.fileAttachments, followUpSuggestedMode: v.followUpSuggestedMode, id: r, intermediateImageResults: v.intermediateImageResults, isAborted: v.isAborted, isDeleted: v.isDeleted, isLastResponse: i, isLoading: o, isPastThinkingTrace: v.isPastThinkingTrace, mediaTweetIds: v.xMediaPostIds, memoryReferences: v.memoryReferences, performanceMetrics: v.performanceMetrics, promptSource: I, query: v.query, sender: v.sender, text: v.message, trace: v.thinkingTrace, tweetIds: v.postIds, upsell: v.upsell, userChatItemId: v.userChatItemId || "", webResults: v.webResults })) : a.createElement(b.Z, { bannerMessages: M, conversationKey: n, fileAttachments: v.fileAttachments, hideAttachments: v.hideAttachments, id: r, isDeepsearch: v.isDeepsearch, isReasoning: v.isReasoning, text: v.message, user: { profile_image_shape: T.profile_image_shape, profile_image_url_https: T.profile_image_url_https } }))) : null;
+                        R = (0, l.v9)((e) => f.ZP.select(e, y.c0)),
+                        Z = C?.sender === g.CI.ASSISTANT,
+                        T = Z ? R : P,
+                        M = a.useMemo(() => C?.bannerMessages ?? [], [C?.bannerMessages]),
+                        D = a.useMemo(() => ({ grok_details: { ...(m.contextualScribeData.grok_details ?? {}), chat_item_id: C?.agentChatItemId } }), [m, C?.agentChatItemId]);
+                    return P && C && T ? (k && Z && (C?.message === (v[0]?.message ?? null) || null == r) ? a.createElement(s.Z, { onLayout: u, ref: t, style: E.container }, a.createElement(p.nO, { data: D }, a.createElement(w.Z, { conversationId: S, grokModule: d, isLoading: o, message1: v[0] ?? C, message2: v[1] ?? _ }))) : a.createElement(s.Z, { onLayout: u, ref: t, style: E.container }, Z ? a.createElement(p.nO, { data: D }, a.createElement(x.Z, { analysisEntityId: e, bannerMessages: M, cardAttachments: C.cardAttachments, chatItemId: C.agentChatItemId, chatResponseAnnotations: C.chatResponseAnnotations, citedWebResults: C.citedWebResults, conversationKey: n, deepSearchSummaryAccumulator: C.deepSearchSummaryAccumulator, disclaimer: C.disclaimer, expectedImageAspectRatio: C.expectedImageAspectRatio, fileAttachments: C.fileAttachments, followUpSuggestedMode: C.followUpSuggestedMode, id: r, intermediateImageResults: C.intermediateImageResults, isAborted: C.isAborted, isDeleted: C.isDeleted, isLastResponse: i, isLoading: o, isPastThinkingTrace: C.isPastThinkingTrace, mediaTweetIds: C.xMediaPostIds, memoryReferences: C.memoryReferences, performanceMetrics: C.performanceMetrics, promptSource: I, query: C.query, sender: C.sender, text: C.message, trace: C.thinkingTrace, tweetIds: C.postIds, upsell: C.upsell, userChatItemId: C.userChatItemId || "", webResults: C.webResults })) : a.createElement(b.Z, { bannerMessages: M, conversationKey: n, fileAttachments: C.fileAttachments, hideAttachments: C.hideAttachments, id: r, isDeepsearch: C.isDeepsearch, isReasoning: C.isReasoning, text: C.message, user: { profile_image_shape: T.profile_image_shape, profile_image_url_https: T.profile_image_url_https } }))) : null;
                 };
-            var k = n(988290);
-            const v = ({ contentPadding: e }) => {
+            var v = n(988290);
+            const C = ({ contentPadding: e }) => {
                     const { analysisEntityId: t, conversationKey: n, messageIds: i, status: p } = (0, d.ZP)(),
-                        { isPagedScroll: h, scrollable: g } = (0, k.ZP)(),
+                        { isPagedScroll: h, scrollable: g } = (0, v.ZP)(),
                         f = (0, c.bD)(n),
                         y = (0, l.v9)(f.selectEditingMessage);
                     (0, m.$E)();
@@ -653,9 +669,9 @@
                         return window.addEventListener("resize", e), e(), () => window.removeEventListener("resize", e);
                     }, [g]);
                     const E = p === u.Q_.IDLE ? void 0 : b[b.length - 2],
-                        v = a.useRef(),
+                        C = a.useRef(),
                         [_, I] = a.useState(!1),
-                        [P, Z] = a.useState(0);
+                        [P, R] = a.useState(0);
                     a.useLayoutEffect(() => {
                         if (!_ || (!y && E && h && P > 0)) {
                             I(!0);
@@ -663,13 +679,13 @@
                             g?.scroll({ top: e, behavior: "smooth" });
                         }
                     }, [E, y, _, h, P, g]);
-                    const R = a.useCallback(
+                    const Z = a.useCallback(
                             (t) => {
                                 const n = t.nativeEvent.layout.height;
                                 let a = g === window ? g.innerHeight : (g?.clientHeight ?? 0);
                                 x && (a = Math.max(w.current, a));
                                 const s = n > 0.6 * a ? Math.max(0, a - e - 50) : Math.max(0, a - n - e);
-                                Z(s);
+                                R(s);
                             },
                             [g, x, e],
                         ),
@@ -678,13 +694,13 @@
                             ({ index: e, item: r }) => {
                                 const i = b.length,
                                     o = r === E;
-                                return o || e < i - 1 ? a.createElement(s.Z, { key: `message_${e}` }, a.createElement(C, { analysisEntityId: t, conversationKey: n, id: r, onLayout: o ? R : void 0 })) : a.createElement(s.Z, { key: `message_${e}`, style: [S.lastResponse, T] }, a.createElement(C, { analysisEntityId: t, conversationKey: n, id: r, isLastResponse: !0, isLoading: p === u.Q_.TYPING || p === u.Q_.WAITING }));
+                                return o || e < i - 1 ? a.createElement(s.Z, { key: `message_${e}` }, a.createElement(k, { analysisEntityId: t, conversationKey: n, id: r, onLayout: o ? Z : void 0 })) : a.createElement(s.Z, { key: `message_${e}`, style: [S.lastResponse, T] }, a.createElement(k, { analysisEntityId: t, conversationKey: n, id: r, isLastResponse: !0, isLoading: p === u.Q_.TYPING || p === u.Q_.WAITING }));
                             },
-                            [E, n, T, t, R, p, b],
+                            [E, n, T, t, Z, p, b],
                         );
                     return a.createElement(
                         s.Z,
-                        { ref: v, style: [S.content, h ? void 0 : S.bottomScroll] },
+                        { ref: C, style: [S.content, h ? void 0 : S.bottomScroll] },
                         a.createElement(r.Z, { size: "space8" }),
                         a.createElement(
                             s.Z,
@@ -715,4 +731,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-7a6ce5c4.b4227afa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-7a6ce5c4.df55a75a.js.map

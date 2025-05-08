@@ -2,146 +2,64 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["loader.CommunityHandler"],
     {
-        812190: (n, t, e) => {
-            e.d(t, { Z: () => p });
-            var i = e(202784),
-                o = e(544239),
-                r = e(872788),
-                a = e(71620),
-                l = e(668214),
-                c = e(491963),
-                s = e(709318);
-            const u = (n, { communityId: t }) => (t ? c.ZP.select(n, t) : void 0),
-                d = (n, { communityId: t }) => !!t && (0, s.H4)(n, t),
-                m = ({ community: n, communityId: t, createLocalApiErrorHandler: e, isPinned: a, onActionButtonJoinClick: l, onPress: c, pinTimeline: s, shouldDisplayPin: u, style: d, thumbnailSize: m, unpinTimeline: p, withActionButton: g }) => {
-                    const y = i.useMemo(() => n && { isPinned: a, handlePinOrUnpin: () => (a ? p({ id: t, name: n.name, type: r.FO.COMMUNITY }).catch(e) : s({ id: t, name: n.name, type: r.FO.COMMUNITY }).catch(e)) }, [n, t, e, a, s, p]),
-                        f = u ? y : void 0;
-                    if (n) {
-                        const { is_nsfw: e, media: r, member_count: a, membersFacepileUrls: s, name: u, primary_community_topic: p } = n;
-                        return i.createElement(o.Z, { communityId: t, isNsfw: e, media: r, memberCount: a, membersFacepile: s, name: u, onActionButtonJoinClick: l, onPress: c, style: d, thumbnailSize: m, topic: p?.topic_name, withActionButton: g, withPinAction: f });
+        812190: (e, i, n) => {
+            n.d(i, { Z: () => p });
+            var t = n(202784),
+                o = n(544239),
+                r = n(872788),
+                a = n(71620),
+                m = n(668214),
+                s = n(491963),
+                l = n(709318);
+            const c = (e, { communityId: i }) => (i ? s.ZP.select(e, i) : void 0),
+                d = (e, { communityId: i }) => !!i && (0, l.H4)(e, i),
+                u = ({ community: e, communityId: i, createLocalApiErrorHandler: n, isPinned: a, onActionButtonJoinClick: m, onPress: s, pinTimeline: l, shouldDisplayPin: c, style: d, thumbnailSize: u, unpinTimeline: p, withActionButton: h }) => {
+                    const y = t.useMemo(() => e && { isPinned: a, handlePinOrUnpin: () => (a ? p({ id: i, name: e.name, type: r.FO.COMMUNITY }).catch(n) : l({ id: i, name: e.name, type: r.FO.COMMUNITY }).catch(n)) }, [e, i, n, a, l, p]),
+                        v = c ? y : void 0;
+                    if (e) {
+                        const { is_nsfw: n, media: r, member_count: a, membersFacepileUrls: l, name: c, primary_community_topic: p } = e;
+                        return t.createElement(o.Z, { communityId: i, isNsfw: n, media: r, memberCount: a, membersFacepile: l, name: c, onActionButtonJoinClick: m, onPress: s, style: d, thumbnailSize: u, topic: p?.topic_name, withActionButton: h, withPinAction: v });
                     }
                     return null;
                 },
-                p = (0, l.Z)()
-                    .propsFromState(() => ({ community: u, isPinned: d }))
-                    .propsFromActions(() => ({ pinTimeline: s.qM, unpinTimeline: s.bK, createLocalApiErrorHandler: (0, a.zr)("TOGGLE_PIN_COMMUNITY") }))(i.memo(m));
+                p = (0, m.Z)()
+                    .propsFromState(() => ({ community: c, isPinned: d }))
+                    .propsFromActions(() => ({ pinTimeline: l.qM, unpinTimeline: l.bK, createLocalApiErrorHandler: (0, a.zr)("TOGGLE_PIN_COMMUNITY") }))(t.memo(u));
         },
-        325800: (n, t, e) => {
-            e.r(t), e.d(t, { default: () => s });
-            var i = e(459643),
-                o = e(351322),
-                r = e(202784),
-                a = e(812190);
-            const l = ({ entry: n, shouldDisplayPin: t }) => {
-                    const e = n.content.id;
-                    return r.createElement(a.Z, { communityId: e, shouldDisplayPin: t });
+        325800: (e, i, n) => {
+            n.r(i), n.d(i, { default: () => l });
+            var t = n(459643),
+                o = n(351322),
+                r = n(202784),
+                a = n(812190);
+            const m = ({ entry: e, shouldDisplayPin: i }) => {
+                    const n = e.content.id;
+                    return r.createElement(a.Z, { communityId: n, shouldDisplayPin: i });
                 },
-                c = r.memo(l),
-                s = (n) => o.iH({ component: c, shouldDisplayBorder: (0, i.Z)(!1), isFocusable: (0, i.Z)(!0) }).getHandler(() => n);
+                s = r.memo(m),
+                l = (e) => o.iH({ component: s, shouldDisplayBorder: (0, t.Z)(!1), isFocusable: (0, t.Z)(!0) }).getHandler(() => e);
         },
-        280278: (n, t, e) => {
-            e.d(t, { ZP: () => y });
-            var i = e(202784),
-                o = e(325686),
-                r = e(827515),
-                a = e(461756),
-                l = e(731708),
-                c = e(392237);
-            const s = "up",
-                u = "down",
-                d = (n, t, e) => {
-                    e((e) => {
-                        const i = (0, r.Z)(n) ? (n > (e.count || 0) ? s : u) : s;
-                        return { ...e, count: n, oldText: e.text, pendingCount: null, pendingText: null, text: t, transitionDirection: i };
-                    });
-                },
-                m = {};
-            [s, u].forEach((n) => {
-                const t = "0.3s";
-                m[n] = { active: { transitionProperty: "transform", transitionDuration: t, transform: "translate3d(0, 0, 0)" }, pre: { transform: `translate3d(0, ${n === s ? "100%" : "-100%"}, 0)` }, post: { transform: `translate3d(0, ${n === s ? "-100%" : "100%"}, 0)`, transitionProperty: "transform", transitionDuration: t } };
-            });
-            const p = { position: "absolute" },
-                g = c.default.create({ root: { overflow: "hidden" } }),
-                y = (n) => {
-                    const { children: t, containerStyle: e, count: c, ...u } = n,
-                        [y, f] = i.useState({ animating: !1, count: n.count, pendingCount: null, text: n.children, oldText: null, pendingText: null, transitionDirection: s }),
-                        h = i.useRef(!1);
-                    return (
-                        i.useEffect(
-                            () => (
-                                (h.current = !0),
-                                function () {
-                                    h.current = !1;
-                                }
-                            ),
-                            [],
-                        ),
-                        i.useEffect(() => {
-                            if (h.current)
-                                if (a.Z.reducedMotionEnabled) f((e) => ({ ...e, oldText: null, text: t, pendingText: null, pendingCount: null, count: n.count }));
-                                else if (t !== y.pendingText) {
-                                    t === y.text || ((0, r.Z)(n.count) && y.count === n.count) ? f((n) => ({ ...n, pendingCount: null, pendingText: null })) : (f((e) => ({ ...e, pendingCount: n.count, pendingText: t })), y.animating || d(n.count, t, f));
-                                }
-                        }, [t]),
-                        i.useEffect(() => {
-                            h.current &&
-                                !1 === y.animating &&
-                                (y.oldText
-                                    ? window.requestAnimationFrame(() =>
-                                          window.requestAnimationFrame(() => {
-                                              h.current && f((n) => ({ ...n, animating: !0 }));
-                                          }),
-                                      )
-                                    : y.pendingText && d(y.pendingCount, y.pendingText, f));
-                        }, [y.animating, y.oldText]),
-                        i.useMemo(() => {
-                            const n = m[y.transitionDirection],
-                                t = y.oldText && !a.Z.reducedMotionEnabled,
-                                r = !y.animating && y.oldText && !a.Z.reducedMotionEnabled,
-                                c = { ...p, ...(y.animating ? n.post : n.active) },
-                                s = { ...(r ? n.pre : n.active) };
-                            return i.createElement(
-                                o.Z,
-                                { style: [g.root, e] },
-                                t ? i.createElement("span", { style: c }, i.createElement(l.ZP, u, y.oldText)) : null,
-                                i.createElement(
-                                    "span",
-                                    {
-                                        "data-testid": "app-text-transition-container",
-                                        onTransitionEnd: () =>
-                                            ((n, t) => {
-                                                n && t((n) => ({ ...n, animating: !1, oldText: null }));
-                                            })(h.current, f),
-                                        style: s,
-                                    },
-                                    i.createElement(l.ZP, u, y.text),
-                                ),
-                            );
-                        }, [e, u, y, h, f])
-                    );
-                };
-        },
-        988227: (n, t, e) => {
-            e.r(t), e.d(t, { default: () => c });
-            var i = e(202784),
-                o = e(890601),
-                r = e(783427),
-                a = e(347101);
-            const l = (n = {}) => {
-                const { direction: t } = (0, r.Z)();
-                return (0, o.Z)("svg", { ...n, role: n["aria-label"] ? n.role || "img" : void 0, "aria-hidden": void 0 === n["aria-label"], style: [a.Z.root, n.style], viewBox: "0 0 24 24", children: i.createElement("g", null, i.createElement("path", { d: "M12 21c-7.605 0-10.804-8.296-10.937-8.648L.932 12l.131-.352C1.196 11.295 4.394 3 12 3s10.804 8.296 10.937 8.648l.131.352-.131.352C22.804 12.705 19.606 21 12 21zm-8.915-9c.658 1.467 3.5 7 8.915 7s8.257-5.533 8.915-7c-.658-1.467-3.5-7-8.915-7s-8.257 5.533-8.915 7zM12 16c-2.206 0-4-1.794-4-4s1.794-4 4-4 4 1.794 4 4-1.794 4-4 4zm0-6c-1.103 0-2 .897-2 2s.897 2 2 2 2-.897 2-2-.897-2-2-2z" })) }, { writingDirection: t });
+        678773: (e, i, n) => {
+            n.r(i), n.d(i, { default: () => s });
+            var t = n(202784),
+                o = n(890601),
+                r = n(783427),
+                a = n(347101);
+            const m = (e = {}) => {
+                const { direction: i } = (0, r.Z)();
+                return (0, o.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: t.createElement("g", null, t.createElement("path", { d: "M19.996 10h-16V8h16v2zm0 6h-16v-2h16v2z" })) }, { writingDirection: i });
             };
-            l.metadata = { width: 24, height: 24 };
-            const c = l;
+            m.metadata = { width: 24, height: 24 };
+            const s = m;
         },
-        730895: (n, t, e) => {
-            var i = e(821176);
-            n.exports = function () {
-                var n = i(this),
-                    t = "";
-                return n.hasIndices && (t += "d"), n.global && (t += "g"), n.ignoreCase && (t += "i"), n.multiline && (t += "m"), n.dotAll && (t += "s"), n.unicode && (t += "u"), n.unicodeSets && (t += "v"), n.sticky && (t += "y"), t;
+        730895: (e, i, n) => {
+            var t = n(821176);
+            e.exports = function () {
+                var e = t(this),
+                    i = "";
+                return e.hasIndices && (i += "d"), e.global && (i += "g"), e.ignoreCase && (i += "i"), e.multiline && (i += "m"), e.dotAll && (i += "s"), e.unicode && (i += "u"), e.unicodeSets && (i += "v"), e.sticky && (i += "y"), i;
             };
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.CommunityHandler.472d323a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.CommunityHandler.67d3f9ba.js.map

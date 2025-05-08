@@ -4158,6 +4158,7 @@
                 n("f388a7ec", "DeepSearch"),
                 n("ab1eb384", "Select your desired search mode"),
                 n("i330e54c", "Advanced search and reasoning"),
+                n("fdcce108", "DeeperSearch"),
                 n("ac64b674", "Extended search, more reasoning"),
                 n("j22655f2", "Ask anything"),
                 n("h0681e3e", "Talk to Grok, our AI assistant"),
@@ -4184,6 +4185,9 @@
                 n("h15dce2e", "Advanced Settings"),
                 n("ff9dc268", "Edit prompt"),
                 n("acb2baa0", "Create Images"),
+                n("fe9ad897", function (e) {
+                    return "Edit Image" + e.ttc_grok_preset;
+                }),
                 n("h30fd372", "Try Voice Mode"),
                 n("e9fcdd0c", "Ask Grok to aggressively search the web"),
                 n("fc4e8aba", "Ask Grok to reason step-by-step"),
@@ -4922,10 +4926,10 @@
                 n("d2a43a7a", 'contains both "ai" and "startup"'),
                 n("a8584698", "ai startup"),
                 n("jb6f9292", 'contains the exact phrase "ai startup"'),
-                n("j8ee77c4", '"ai startup"'),
-                n("d0480758", 'contains either "ai" or "startup" (or both)'),
-                n("f0048fa2", "ai OR startup");
-            n("da0df186", 'contains "ai", but not "startup"'),
+                n("j8ee77c4", '"ai startup"');
+            n("d0480758", 'contains either "ai" or "startup" (or both)'),
+                n("f0048fa2", "ai OR startup"),
+                n("da0df186", 'contains "ai", but not "startup"'),
                 n("f2f463ea", "ai -startup"),
                 n("a10a357e", 'contains "ai" and has at least 50 likes'),
                 n("ca8ed1e8", "ai min_faves:50"),
@@ -5888,10 +5892,10 @@
                 n("b732a4cc", "When you do, you’ll see their posts here."),
                 n("hff48914", "No posts could be found at this time."),
                 n("hb52cc4a", "Bain triail as arís níos déanaí."),
-                n("e50e1bb0", "Welcome to Communities"),
-                n("i6829daa", "Communities are moderated discussion groups where people on X can connect and share."),
-                n("fc5c6914", "Meet others with your interests");
-            n("aa1a9820", "Join Communities to connect with people who share your interests."),
+                n("e50e1bb0", "Welcome to Communities");
+            n("i6829daa", "Communities are moderated discussion groups where people on X can connect and share."),
+                n("fc5c6914", "Meet others with your interests"),
+                n("aa1a9820", "Join Communities to connect with people who share your interests."),
                 n("edef4c82", "Post directly to a Community"),
                 n("a7640df6", "Your posts are shared with Community members and your followers."),
                 n("h3bb8068", "Get backup when you need it"),
@@ -6886,10 +6890,10 @@
                 n("c2059276", "Have your replies boosted."),
                 n("b023ec20", "Max Reply Boost"),
                 n("g337328e", "Get the highest visibility for your replies."),
-                n("fa006202", "Background video playback"),
-                n("jf389778", "Watch while browsing or using other apps"),
-                n("f2977d80", "Bookmark folders");
-            n("j1d3d910", "Keep your saved posts organized for easy access"),
+                n("fa006202", "Background video playback");
+            n("jf389778", "Watch while browsing or using other apps"),
+                n("f2977d80", "Bookmark folders"),
+                n("j1d3d910", "Keep your saved posts organized for easy access"),
                 n("f0f48668", "Premium support"),
                 n("c3148608", "Get faster assistance when you need help"),
                 n("b485ca6e", "Highlights tab"),
@@ -7862,9 +7866,7 @@
                 n("e7e36818", "Ad accounts are eligible for job promotion when they are fully set up with a funding source."),
                 n("c28566e0", "Ad Account"),
                 n("c80160d3", "Advertising"),
-                n("ff0edac0", "Are you sure you want to cancel your subscription?"),
-                n("h2ac0348", "No, take me back"),
-                n("dbf9667e", "I’m sure");
+                n("ff0edac0", "Are you sure you want to cancel your subscription?");
             function r(e, a) {
                 for (var t = 0; t < a.length; t++) {
                     var n = a[t];
@@ -7903,7 +7905,9 @@
                     c(e, a)
                 );
             }
-            n("j7592572", "U-turn"),
+            n("h2ac0348", "No, take me back"),
+                n("dbf9667e", "I’m sure"),
+                n("j7592572", "U-turn"),
                 n("ee778942", "Traffic lights"),
                 n("fdd57981", function (e) {
                     return "We’d like to offer you a free one-time " + e.totalAmount + " USD ad credit.";
@@ -8926,16 +8930,16 @@
                 }),
                 n("dbeae6cf", function (e) {
                     return e.count + " other listener" + o(e.count, "", "s");
-                }),
-                n("d2543d97", function (e) {
-                    return "+" + e.count;
-                }),
+                });
+            n("d2543d97", function (e) {
+                return "+" + e.count;
+            }),
                 n("dc718e53", function (e) {
                     return "+" + e.count + " eile";
-                });
-            n("d0e7b11b", function (e) {
-                return e.date + " ag " + e.time;
-            }),
+                }),
+                n("d0e7b11b", function (e) {
+                    return e.date + " ag " + e.time;
+                }),
                 n("b4349cbc", function (e) {
                     return "" + e.relativeDay;
                 }),
@@ -13204,4 +13208,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ga.8c2751da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ga.de00590a.js.map

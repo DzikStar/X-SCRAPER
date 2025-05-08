@@ -885,7 +885,7 @@
                 D = i.default.create((e) => ({ container: { width: "100%", overflowX: "hidden", overflowY: "auto", alignItems: "center", paddingBottom: e.spaces.space64, gap: e.spaces.space24, paddingHorizontal: e.spaces.space12 }, logoContainer: { display: "flex", flexDirection: "column", flex: 1, justifyContent: "center", alignItems: "center", paddingBottom: "5vh", width: "100%", animationDuration: "0.2s", animationKeyframes: [{ "0%": { opacity: 0, transform: "translateY(-20px)" }, "100%": { opacity: 1, transform: "translateY(0)" } }], animationTimingFunction: "ease", animationFillMode: "both" }, logo: { height: 100, width: 100, color: e.colors.gray50 }, bottomContainer: { position: "sticky", backgroundColor: e.colors.appBarBackground, paddingVertical: e.spaces.space8, paddingBottom: 14, bottom: z ? 0 : e.componentDimensions.appBarHeightPx, width: "100%", borderTopStartRadius: e.spaces.space24, borderTopEndRadius: e.spaces.space24, paddingHorizontal: e.spaces.space12 }, idleContent: { width: "100%" }, recentConversations: { width: "100%", marginBottom: e.spaces.space12 }, presets: { width: "100%", marginBottom: e.spaces.space12 } }));
         },
         796064: (e, t, o) => {
-            o.d(t, { ZP: () => I, mC: () => Z, y3: () => _ });
+            o.d(t, { ZP: () => I, y3: () => _, zF: () => Z });
             var a = o(807896),
                 r = (o(136728), o(202784)),
                 n = o(214997),
@@ -908,7 +908,7 @@
                 k = o(246277),
                 v = o(928831);
             const _ = u().acb2baa0,
-                Z = u().d1d3a41a,
+                Z = u().fe9ad897,
                 x = u().h30fd372;
             function I({ focusInput: e, isMobile: t, style: o }) {
                 const d = (0, C.Z)(),
@@ -924,7 +924,7 @@
                             },
                             type: "prefill",
                         },
-                        { id: "edit-image", text: Z, icon: r.createElement(y.default, { style: [P.icon, t ? P.mobileIcon : null] }), onClick: () => {}, type: "file-input" },
+                        { id: "edit-image", text: Z({ ttc_grok_preset: "" }), icon: r.createElement(y.default, { style: [P.icon, t ? P.mobileIcon : null] }), onClick: () => {}, type: "file-input" },
                     ];
                 f.ZP.isAndroid() && z.push({ id: "try-voice-mode", text: x, icon: r.createElement(h.default, { style: [P.icon, t ? P.mobileIcon : null] }), onClick: () => {}, type: "external-link", url: "https://play.google.com/store/apps/details?id=ai.x.grok" });
                 const D = r.useCallback(
@@ -973,7 +973,9 @@
                                             onChange: (e) => {
                                                 D(e);
                                             },
-                                            onClick: void 0,
+                                            onClick: () => {
+                                                d.scribe({ element: "grok-home-preset", action: "click", data: { event_info: e.id } });
+                                            },
                                         }),
                                         r.createElement(i.Z, { style: P.mobileButtonContent }, e.icon, r.createElement(l.ZP, { style: P.text }, e.text)),
                                     )
@@ -994,7 +996,9 @@
                                             onChange: (e) => {
                                                 D(e);
                                             },
-                                            onClick: void 0,
+                                            onClick: () => {
+                                                d.scribe({ element: "grok-home-preset", action: "click", data: { event_info: e.id } });
+                                            },
                                         }),
                                         e.icon,
                                         r.createElement(p.Z, { size: "space4" }),
@@ -1044,4 +1048,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-cebf58fc.c4a898da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-cebf58fc.45f7be6a.js.map

@@ -4147,6 +4147,7 @@
                 o("f388a7ec", "DeepSearch"),
                 o("ab1eb384", "Select your desired search mode"),
                 o("i330e54c", "Advanced search and reasoning"),
+                o("fdcce108", "DeeperSearch"),
                 o("ac64b674", "Extended search, more reasoning"),
                 o("j22655f2", "Ask anything"),
                 o("h0681e3e", "Talk to Grok, our AI assistant"),
@@ -4173,6 +4174,9 @@
                 o("h15dce2e", "Advanced Settings"),
                 o("ff9dc268", "Edit prompt"),
                 o("acb2baa0", "Create Images"),
+                o("fe9ad897", function (e) {
+                    return "Edit Image" + e.ttc_grok_preset;
+                }),
                 o("h30fd372", "Try Voice Mode"),
                 o("e9fcdd0c", "Ask Grok to aggressively search the web"),
                 o("fc4e8aba", "Ask Grok to reason step-by-step"),
@@ -4911,10 +4915,10 @@
                 o("d2a43a7a", 'contains both "ai" and "startup"'),
                 o("a8584698", "ai startup"),
                 o("jb6f9292", 'contains the exact phrase "ai startup"'),
-                o("j8ee77c4", '"ai startup"'),
-                o("d0480758", 'contains either "ai" or "startup" (or both)'),
-                o("f0048fa2", "ai OR startup");
-            o("da0df186", 'contains "ai", but not "startup"'),
+                o("j8ee77c4", '"ai startup"');
+            o("d0480758", 'contains either "ai" or "startup" (or both)'),
+                o("f0048fa2", "ai OR startup"),
+                o("da0df186", 'contains "ai", but not "startup"'),
                 o("f2f463ea", "ai -startup"),
                 o("a10a357e", 'contains "ai" and has at least 50 likes'),
                 o("ca8ed1e8", "ai min_faves:50"),
@@ -5877,10 +5881,10 @@
                 o("b732a4cc", "When you do, you’ll see their posts here."),
                 o("hff48914", "No posts could be found at this time."),
                 o("hb52cc4a", "براہ کرم بعد میں دوبارہ کوشش کریں۔"),
-                o("e50e1bb0", "Welcome to Communities"),
-                o("i6829daa", "Communities are moderated discussion groups where people on X can connect and share."),
-                o("fc5c6914", "اپنی جیسی دلچسپیوں والے دیگر افراد سے ملیں");
-            o("aa1a9820", "Join Communities to connect with people who share your interests."),
+                o("e50e1bb0", "Welcome to Communities");
+            o("i6829daa", "Communities are moderated discussion groups where people on X can connect and share."),
+                o("fc5c6914", "اپنی جیسی دلچسپیوں والے دیگر افراد سے ملیں"),
+                o("aa1a9820", "Join Communities to connect with people who share your interests."),
                 o("edef4c82", "Post directly to a Community"),
                 o("a7640df6", "Your posts are shared with Community members and your followers."),
                 o("h3bb8068", "حسبِ ضرورت بیک اپ حاصل کریں"),
@@ -6875,10 +6879,10 @@
                 o("c2059276", "Have your replies boosted."),
                 o("b023ec20", "Max Reply Boost"),
                 o("g337328e", "Get the highest visibility for your replies."),
-                o("fa006202", "Background video playback"),
-                o("jf389778", "Watch while browsing or using other apps"),
-                o("f2977d80", "فولڈرز کو بک مارک کریں");
-            o("j1d3d910", "Keep your saved posts organized for easy access"),
+                o("fa006202", "Background video playback");
+            o("jf389778", "Watch while browsing or using other apps"),
+                o("f2977d80", "فولڈرز کو بک مارک کریں"),
+                o("j1d3d910", "Keep your saved posts organized for easy access"),
                 o("f0f48668", "Premium support"),
                 o("c3148608", "Get faster assistance when you need help"),
                 o("b485ca6e", "Highlights tab"),
@@ -7851,9 +7855,7 @@
                 o("e7e36818", "Ad accounts are eligible for job promotion when they are fully set up with a funding source."),
                 o("c28566e0", "Ad Account"),
                 o("c80160d3", "Advertising"),
-                o("ff0edac0", "Are you sure you want to cancel your subscription?"),
-                o("h2ac0348", "No, take me back"),
-                o("dbf9667e", "I’m sure");
+                o("ff0edac0", "Are you sure you want to cancel your subscription?");
             function i(e, t) {
                 for (var a = 0; a < t.length; a++) {
                     var o = t[a];
@@ -7892,7 +7894,9 @@
                     c(e, t)
                 );
             }
-            o("j7592572", "U-turn"),
+            o("h2ac0348", "No, take me back"),
+                o("dbf9667e", "I’m sure"),
+                o("j7592572", "U-turn"),
                 o("ee778942", "Traffic lights"),
                 o("fdd57981", function (e) {
                     return "We’d like to offer you a free one-time " + e.totalAmount + " USD ad credit.";
@@ -8915,16 +8919,16 @@
                 }),
                 o("dbeae6cf", function (e) {
                     return e.count + " other listener" + r(e.count, "", "s");
-                }),
-                o("d2543d97", function (e) {
-                    return e.count + "+";
-                }),
+                });
+            o("d2543d97", function (e) {
+                return e.count + "+";
+            }),
                 o("dc718e53", function (e) {
                     return e.count + " دوسر" + n(e.count, "ا", "ے") + "+";
-                });
-            o("d0e7b11b", function (e) {
-                return e.date + " بوقت " + e.time;
-            }),
+                }),
+                o("d0e7b11b", function (e) {
+                    return e.date + " بوقت " + e.time;
+                }),
                 o("b4349cbc", function (e) {
                     return "" + e.relativeDay;
                 }),
@@ -13196,4 +13200,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ur.1ec03dea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ur.ccceda4a.js.map

@@ -145,7 +145,7 @@
             }
         },
         161648: (e, t, a) => {
-            a.d(t, { Z: () => _e, Y: () => Ae });
+            a.d(t, { Z: () => Ae, Y: () => ze });
             var n = a(202784),
                 o = a(325686),
                 r = a(392237),
@@ -153,114 +153,115 @@
                 i = a.n(s),
                 l = a(187669),
                 c = a(725516),
-                m = a(744610),
-                d = a(721266),
-                p = a(154003),
-                u = a(647174),
-                y = a(841972),
-                f = a(19197),
-                g = a(952793),
-                h = a(557707),
-                b = a(165243),
-                C = a(74514),
-                w = a(405303),
-                S = a(125363),
-                E = a(654917);
-            const x = i().e258000e,
-                k = i().d591a772,
-                v = i().bc49b728,
-                T = i().d8aadeba,
-                Z = i().db832e38,
-                I = i().a910cac6,
-                D = i().g4b3a3e6;
-            function P({ completed: e }) {
+                m = a(448781),
+                d = a(744610),
+                p = a(721266),
+                u = a(154003),
+                y = a(647174),
+                f = a(841972),
+                g = a(19197),
+                h = a(952793),
+                b = a(557707),
+                C = a(165243),
+                w = a(74514),
+                S = a(405303),
+                E = a(125363),
+                x = a(654917);
+            const k = i().e258000e,
+                v = i().d591a772,
+                T = i().bc49b728,
+                Z = i().d8aadeba,
+                I = i().db832e38,
+                D = i().a910cac6,
+                P = i().g4b3a3e6;
+            function R({ completed: e }) {
                 const t = (0, c.z)(),
-                    a = (0, E.uf)(),
-                    r = (0, S.v9)(a.selectLastHumanMessage),
+                    a = (0, x.uf)(),
+                    r = (0, E.v9)(a.selectLastHumanMessage),
                     [s, i] = n.useState(!1),
                     [l, m] = n.useState(!1),
-                    [d, u] = n.useState(!1),
+                    [d, p] = n.useState(!1),
                     [y, f] = n.useState(!1),
-                    [g, P] = n.useState(!1);
+                    [g, h] = n.useState(!1);
                 n.useEffect(() => {
-                    e && g && "granted" === Notification.permission && (P(!1), new Notification(D, { body: r?.message.message || "" }));
+                    e && g && "granted" === Notification.permission && (h(!1), new Notification(P, { body: r?.message.message || "" }));
                 }, [e, g, r]);
                 return n.createElement(
                     o.Z,
                     null,
                     !e &&
                         ("denied" === Notification.permission
-                            ? n.createElement(p.ZP, {
+                            ? n.createElement(u.ZP, {
                                   borderColor: "transparent",
                                   color: "gray700",
-                                  hoverLabel: { label: k },
-                                  icon: n.createElement(b.default, { style: R.icon }),
+                                  hoverLabel: { label: v },
+                                  icon: n.createElement(C.default, { style: z.icon }),
                                   onClick: () => {
-                                      u(!0), t.scribe({ element: "grok-deepsearch-notification-denied", action: "click" });
+                                      p(!0), t.scribe({ element: "grok-deepsearch-notification-denied", action: "click" });
                                   },
                                   size: "small",
-                                  style: R.button,
+                                  style: z.button,
                               })
                             : g
-                              ? n.createElement(p.ZP, {
+                              ? n.createElement(u.ZP, {
                                     borderColor: "transparent",
                                     color: "gray700",
-                                    hoverLabel: { label: x },
-                                    icon: n.createElement(C.default, { style: R.icon }),
+                                    hoverLabel: { label: k },
+                                    icon: n.createElement(w.default, { style: z.icon }),
                                     onClick: () => {
-                                        P(!1), m(!0), t.scribe({ element: "grok-deepsearch-notification-off", action: "click" });
+                                        h(!1), m(!0), t.scribe({ element: "grok-deepsearch-notification-off", action: "click" });
                                     },
                                     size: "small",
-                                    style: R.button,
+                                    style: z.button,
                                 })
-                              : n.createElement(p.ZP, {
+                              : n.createElement(u.ZP, {
                                     borderColor: "transparent",
                                     color: "gray700",
-                                    hoverLabel: { label: x },
-                                    icon: n.createElement(w.default, { style: R.icon }),
+                                    hoverLabel: { label: k },
+                                    icon: n.createElement(S.default, { style: z.icon }),
                                     onClick: () => {
                                         (async () => {
-                                            "granted" === Notification.permission ? (P(!0), i(!0)) : "default" === Notification.permission && ("granted" === (await Notification.requestPermission()) ? (P(!0), i(!0)) : (P(!1), f(!0)));
+                                            "granted" === Notification.permission ? (h(!0), i(!0)) : "default" === Notification.permission && ("granted" === (await Notification.requestPermission()) ? (h(!0), i(!0)) : (h(!1), f(!0)));
                                         })(),
                                             t.scribe({ element: "grok-deepsearch-notification-on", action: "click" });
                                     },
                                     size: "small",
-                                    style: R.button,
+                                    style: z.button,
                                 })),
-                    s && n.createElement(h.ZP, { autoDismissDelay: 2e3, onClose: () => i(!1), style: R.toast, text: v, withAutoDismiss: !0, withClearButton: !0 }),
-                    l && n.createElement(h.ZP, { autoDismissDelay: 2e3, onClose: () => m(!1), style: R.toast, text: T, withAutoDismiss: !0, withClearButton: !0 }),
-                    d && n.createElement(h.ZP, { autoDismissDelay: 2e3, onClose: () => u(!1), style: R.toast, text: Z, withAutoDismiss: !0, withClearButton: !0 }),
-                    y && n.createElement(h.ZP, { autoDismissDelay: 2e3, onClose: () => f(!1), style: R.toast, text: I, withAutoDismiss: !0, withClearButton: !0 }),
+                    s && n.createElement(b.ZP, { autoDismissDelay: 2e3, onClose: () => i(!1), style: z.toast, text: T, withAutoDismiss: !0, withClearButton: !0 }),
+                    l && n.createElement(b.ZP, { autoDismissDelay: 2e3, onClose: () => m(!1), style: z.toast, text: Z, withAutoDismiss: !0, withClearButton: !0 }),
+                    d && n.createElement(b.ZP, { autoDismissDelay: 2e3, onClose: () => p(!1), style: z.toast, text: I, withAutoDismiss: !0, withClearButton: !0 }),
+                    y && n.createElement(b.ZP, { autoDismissDelay: 2e3, onClose: () => f(!1), style: z.toast, text: D, withAutoDismiss: !0, withClearButton: !0 }),
                 );
             }
-            const R = r.default.create((e) => ({ button: { borderRadius: e.borderRadii.xLarge }, icon: {}, toast: { opacity: 1, transform: [{ translateY: 0 }], animationDuration: "0.5s", animationKeyframes: [{ "0%": { opacity: 0, transform: [{ translateY: 5 }] }, "100%": { opacity: 1, transform: [{ translateY: 0 }] } }] } }));
-            var z = a(731708),
-                A = a(664345),
-                _ = a(378471),
-                B = a(961609);
-            const V = i().ee000b0d;
-            function L({ aborted: e, completed: t, completedTimestamp: a, fromTimestamp: r, isPast: s, numSources: i, title: l }) {
+            const z = r.default.create((e) => ({ button: { borderRadius: e.borderRadii.xLarge }, icon: {}, toast: { opacity: 1, transform: [{ translateY: 0 }], animationDuration: "0.5s", animationKeyframes: [{ "0%": { opacity: 0, transform: [{ translateY: 5 }] }, "100%": { opacity: 1, transform: [{ translateY: 0 }] } }] } }));
+            var A = a(731708),
+                _ = a(664345),
+                B = a(378471),
+                V = a(961609);
+            const L = i().ee000b0d;
+            function M({ aborted: e, completed: t, completedTimestamp: a, fromTimestamp: r, isPast: s, numSources: i, title: l }) {
                 const c = 0 !== r;
-                return n.createElement(o.Z, { style: M.container }, n.createElement(o.Z, { style: M.iconContainer }, t || e ? n.createElement(A.default, { style: M.searchIcon }) : n.createElement(_.Z, { style: M.loadingIcon })), n.createElement(o.Z, { style: M.headerContainer }, n.createElement(z.ZP, { style: M.header, weight: "medium" }, l), n.createElement(o.Z, { style: M.subHeaderContainer }, s || !c ? n.createElement(n.Fragment, null, n.createElement(z.ZP, { style: M.sources }, V({ numSources: i }))) : n.createElement(n.Fragment, null, n.createElement(B.Z, { aborted: e, completed: t, completedTimestamp: a, fromTimestamp: r }), void 0 !== i && i > 0 && n.createElement(n.Fragment, null, n.createElement(o.Z, { style: M.dot }), n.createElement(z.ZP, { style: M.sources }, V({ numSources: i })))))));
+                return n.createElement(o.Z, { style: H.container }, n.createElement(o.Z, { style: H.iconContainer }, t || e ? n.createElement(_.default, { style: H.searchIcon }) : n.createElement(B.Z, { style: H.loadingIcon })), n.createElement(o.Z, { style: H.headerContainer }, n.createElement(A.ZP, { style: H.header, weight: "medium" }, l), n.createElement(o.Z, { style: H.subHeaderContainer }, s || !c ? n.createElement(n.Fragment, null, n.createElement(A.ZP, { style: H.sources }, L({ numSources: i }))) : n.createElement(n.Fragment, null, n.createElement(V.Z, { aborted: e, completed: t, completedTimestamp: a, fromTimestamp: r }), void 0 !== i && i > 0 && n.createElement(n.Fragment, null, n.createElement(o.Z, { style: H.dot }), n.createElement(A.ZP, { style: H.sources }, L({ numSources: i })))))));
             }
-            const M = r.default.create((e) => ({ container: { display: "flex", flexDirection: "row", gap: e.spaces.space8 }, iconContainer: { width: e.spaces.space20, display: "flex", flexDirection: "column", alignItems: "center" }, searchIcon: { position: "relative", width: e.spaces.space16, height: e.spaces.space16, top: 2 }, loadingIcon: { position: "relative", top: -3 }, headerContainer: { display: "flex", flexDirection: "column" }, header: {}, subHeaderContainer: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space8 }, dot: { width: e.spaces.space4, height: e.spaces.space4, borderRadius: e.spaces.space4, backgroundColor: e.colors.gray700 }, sources: { color: e.colors.gray700, fontSize: e.fontSizes.subtext2 } })),
-                H = (e, t) => e.completed === t.completed && e.aborted === t.aborted && e.numSources === t.numSources && e.title === t.title && e.fromTimestamp === t.fromTimestamp && e.completedTimestamp === t.completedTimestamp,
-                O = n.memo(L, H);
-            var N = a(214997),
-                $ = a(757483),
-                F = a(215337);
-            function K({ children: e, gradientColor: t, onCancelAutoScroll: a, onRestartAutoScroll: s, scrollViewContentContainerStyle: i, scrollViewRef: l, scrollViewStyle: c, stickyHeaderIndices: m, style: d }) {
-                const p = n.useCallback(() => [$.Z.hexToCss(t || r.default.theme.colors.gray50, 0), $.Z.hexToCss(t || r.default.theme.colors.gray50, 0.8), $.Z.hexToCss(t || r.default.theme.colors.gray50, 1)], [t]),
+            const H = r.default.create((e) => ({ container: { display: "flex", flexDirection: "row", gap: e.spaces.space8 }, iconContainer: { width: e.spaces.space20, display: "flex", flexDirection: "column", alignItems: "center" }, searchIcon: { position: "relative", width: e.spaces.space16, height: e.spaces.space16, top: 2 }, loadingIcon: { position: "relative", top: -3 }, headerContainer: { display: "flex", flexDirection: "column" }, header: {}, subHeaderContainer: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space8 }, dot: { width: e.spaces.space4, height: e.spaces.space4, borderRadius: e.spaces.space4, backgroundColor: e.colors.gray700 }, sources: { color: e.colors.gray700, fontSize: e.fontSizes.subtext2 } })),
+                O = (e, t) => e.completed === t.completed && e.aborted === t.aborted && e.numSources === t.numSources && e.title === t.title && e.fromTimestamp === t.fromTimestamp && e.completedTimestamp === t.completedTimestamp,
+                N = n.memo(M, O);
+            var $ = a(214997),
+                F = a(757483),
+                K = a(215337);
+            function W({ children: e, gradientColor: t, onCancelAutoScroll: a, onRestartAutoScroll: s, scrollViewContentContainerStyle: i, scrollViewRef: l, scrollViewStyle: c, stickyHeaderIndices: m, style: d }) {
+                const p = n.useCallback(() => [F.Z.hexToCss(t || r.default.theme.colors.gray50, 0), F.Z.hexToCss(t || r.default.theme.colors.gray50, 0.8), F.Z.hexToCss(t || r.default.theme.colors.gray50, 1)], [t]),
                     u = n.useRef(0);
                 return n.createElement(
                     o.Z,
-                    { style: [W.container, d] },
-                    n.createElement(F.Z, { angle: 0, colors: p(), style: W.traceGradientTop }),
-                    n.createElement(F.Z, { colors: p(), style: W.traceGradientBottom }),
+                    { style: [G.container, d] },
+                    n.createElement(K.Z, { angle: 0, colors: p(), style: G.traceGradientTop }),
+                    n.createElement(K.Z, { colors: p(), style: G.traceGradientBottom }),
                     n.createElement(
-                        N.Z,
+                        $.Z,
                         {
-                            contentContainerStyle: [W.scrollViewContentContainer, i],
+                            contentContainerStyle: [G.scrollViewContentContainer, i],
                             onScroll: (e) => {
                                 const { contentOffset: t, contentSize: n, layoutMeasurement: o } = e.nativeEvent,
                                     r = t.y;
@@ -270,102 +271,102 @@
                             scrollEventThrottle: 16,
                             showsVerticalScrollIndicator: !1,
                             stickyHeaderIndices: m,
-                            style: [W.scrollView, c],
+                            style: [G.scrollView, c],
                         },
                         e,
                     ),
                 );
             }
-            const W = r.default.create((e) => ({ container: { flex: 1, position: "relative" }, scrollView: {}, scrollViewContentContainer: { position: "relative" }, traceGradientTop: { position: "absolute", width: "100%", height: "5%", top: 0, zIndex: 1 }, traceGradientBottom: { position: "absolute", width: "100%", height: "5%", bottom: 0, zIndex: 1 } }));
-            var G = a(25825),
-                j = a(530732),
-                Y = a(293723),
-                q = a(227674),
-                J = a(303157);
-            const U = i().c2745fa4;
-            function X({ active: e, header: t, onStepClick: a, style: s }) {
-                const i = t.state === J.Fi.IN_PROGRESS,
-                    l = t.state === J.Fi.COMPLETED,
-                    c = t.state === J.Fi.FAILED;
+            const G = r.default.create((e) => ({ container: { flex: 1, position: "relative" }, scrollView: {}, scrollViewContentContainer: { position: "relative" }, traceGradientTop: { position: "absolute", width: "100%", height: "5%", top: 0, zIndex: 1 }, traceGradientBottom: { position: "absolute", width: "100%", height: "5%", bottom: 0, zIndex: 1 } }));
+            var j = a(25825),
+                Y = a(530732),
+                q = a(293723),
+                J = a(227674),
+                U = a(303157);
+            const X = i().c2745fa4;
+            function Q({ active: e, header: t, onStepClick: a, style: s }) {
+                const i = t.state === U.Fi.IN_PROGRESS,
+                    l = t.state === U.Fi.COMPLETED,
+                    c = t.state === U.Fi.FAILED;
                 return n.createElement(
-                    j.Z,
+                    Y.Z,
                     {
-                        interactiveStyles: Q.stepInteractiveStyle,
+                        interactiveStyles: ee.stepInteractiveStyle,
                         onClick: () => {
                             c || a(t.id);
                         },
-                        style: [Q.step, s],
+                        style: [ee.step, s],
                     },
-                    ({ isHovered: a }) => n.createElement(n.Fragment, null, n.createElement(o.Z, { style: Q.statusIconContainer }, n.createElement(G.Z, { color: r.default.theme.colors.gray900, size: "small", style: [Q.statusIcon, i ? Q.statusIconVisible : void 0, i ? void 0 : Q.statusIconHide] }), n.createElement(Y.default, { style: [Q.statusIcon, Q.completeFailedIcon, l ? Q.completeFailedIconVisible : void 0, t.isCompleteHeader ? Q.isSpecialCompleteIcon : void 0] }), n.createElement(q.default, { style: [Q.statusIcon, Q.completeFailedIcon, c ? Q.completeFailedIconVisible : void 0] })), c ? n.createElement(z.ZP, { style: Q.title }, U) : n.createElement(z.ZP, { style: [Q.title, l ? Q.completedTitle : void 0, a ? Q.hoveredTitle : void 0, e ? Q.hoveredTitle : void 0] }, t.label)),
+                    ({ isHovered: a }) => n.createElement(n.Fragment, null, n.createElement(o.Z, { style: ee.statusIconContainer }, n.createElement(j.Z, { color: r.default.theme.colors.gray900, size: "small", style: [ee.statusIcon, i ? ee.statusIconVisible : void 0, i ? void 0 : ee.statusIconHide] }), n.createElement(q.default, { style: [ee.statusIcon, ee.completeFailedIcon, l ? ee.completeFailedIconVisible : void 0, t.isCompleteHeader ? ee.isSpecialCompleteIcon : void 0] }), n.createElement(J.default, { style: [ee.statusIcon, ee.completeFailedIcon, c ? ee.completeFailedIconVisible : void 0] })), c ? n.createElement(A.ZP, { style: ee.title }, X) : n.createElement(A.ZP, { style: [ee.title, l ? ee.completedTitle : void 0, a ? ee.hoveredTitle : void 0, e ? ee.hoveredTitle : void 0] }, t.label)),
                 );
             }
-            const Q = r.default.create((e) => ({ stepInteractiveStyle: { backgroundColor: "transparent" }, step: { display: "flex", flexDirection: "row", gap: e.spaces.space8 }, statusIconContainer: { position: "relative", width: e.spaces.space20, height: e.spaces.space20, backgroundColor: e.colors.gray50 }, statusIcon: { position: "absolute", top: "50%", start: "50%", transform: "translate(-50%, -50%)", opacity: 0, width: "100%", height: "100%" }, statusIconVisible: { opacity: 1, animationDuration: "0.5s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }] }, statusIconHide: { opacity: 0, animationDuration: "0.5s", animationKeyframes: [{ "0%": { opacity: 1 }, "100%": { opacity: 0 } }] }, completeFailedIcon: { color: e.colors.gray900, width: e.spaces.space16, height: e.spaces.space16 }, completeFailedIconVisible: { opacity: 1, transform: "translate(-50%, -50%) scale(1)", animationDuration: "0.5s", animationKeyframes: [{ "0%": { opacity: 0, transform: "translate(-50%, -50%) scale(0.8)" }, "50%": { opacity: 0.8, transform: "translate(-50%, -50%) scale(1.2)" }, "75%": { opacity: 0.9, transform: "translate(-50%, -50%) scale(0.95)" }, "100%": { opacity: 1, transform: "translate(-50%, -50%) scale(1)" } }] }, isSpecialCompleteIcon: { color: e.colors.green500 }, title: { fontSize: e.fontSizes.subtext1, color: e.colors.gray700, transition: "color 0.2s ease" }, completedTitle: {}, hoveredTitle: { color: e.colors.brandColor } })),
-                ee = i().j7d0e836,
-                te = i().eaf55eb4;
-            function ae({ aborted: e, activeStepId: t, completed: a, completedTimestamp: s, expanded: i, finalAnswerStreamCompleted: l, fromTimestamp: h, headers: b, isPast: C, numSources: w, onCancelAutoScroll: S, onOpenTrace: E, onRestartAutoScroll: x, onStepClick: k, rawTraceEnabled: v, scrollViewRef: T, setExpanded: Z, style: I, title: D }) {
-                const R = (0, c.z)(),
-                    z = n.useRef(new m.Z.Value(0)).current,
+            const ee = r.default.create((e) => ({ stepInteractiveStyle: { backgroundColor: "transparent" }, step: { display: "flex", flexDirection: "row", gap: e.spaces.space8 }, statusIconContainer: { position: "relative", width: e.spaces.space20, height: e.spaces.space20, backgroundColor: e.colors.gray50 }, statusIcon: { position: "absolute", top: "50%", start: "50%", transform: "translate(-50%, -50%)", opacity: 0, width: "100%", height: "100%" }, statusIconVisible: { opacity: 1, animationDuration: "0.5s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }] }, statusIconHide: { opacity: 0, animationDuration: "0.5s", animationKeyframes: [{ "0%": { opacity: 1 }, "100%": { opacity: 0 } }] }, completeFailedIcon: { color: e.colors.gray900, width: e.spaces.space16, height: e.spaces.space16 }, completeFailedIconVisible: { opacity: 1, transform: "translate(-50%, -50%) scale(1)", animationDuration: "0.5s", animationKeyframes: [{ "0%": { opacity: 0, transform: "translate(-50%, -50%) scale(0.8)" }, "50%": { opacity: 0.8, transform: "translate(-50%, -50%) scale(1.2)" }, "75%": { opacity: 0.9, transform: "translate(-50%, -50%) scale(0.95)" }, "100%": { opacity: 1, transform: "translate(-50%, -50%) scale(1)" } }] }, isSpecialCompleteIcon: { color: e.colors.green500 }, title: { fontSize: e.fontSizes.subtext1, color: e.colors.gray700, transition: "color 0.2s ease" }, completedTitle: {}, hoveredTitle: { color: e.colors.brandColor } })),
+                te = i().j7d0e836,
+                ae = i().eaf55eb4;
+            function ne({ aborted: e, activeStepId: t, completed: a, completedTimestamp: s, expanded: i, finalAnswerStreamCompleted: l, fromTimestamp: m, headers: b, isPast: C, numSources: w, onCancelAutoScroll: S, onOpenTrace: E, onRestartAutoScroll: x, onStepClick: k, rawTraceEnabled: v, scrollViewRef: T, setExpanded: Z, style: I, title: D }) {
+                const P = (0, c.z)(),
+                    z = n.useRef(new d.Z.Value(0)).current,
                     A = n.useMemo(() => b.slice(void 0, -1), [b]),
                     _ = n.useMemo(() => b[b.length - 1], [b]),
-                    B = (0, g.hC)("responsive_web_grok_enable_deepsearch_notifications"),
+                    B = (0, h.hC)("responsive_web_grok_enable_deepsearch_notifications"),
                     V = n.useCallback(
                         (e) => {
-                            m.Z.spring(z, { toValue: e.nativeEvent.layout.height, useNativeDriver: !1, speed: 5 }).start();
+                            d.Z.spring(z, { toValue: e.nativeEvent.layout.height, useNativeDriver: !1, speed: 5 }).start();
                         },
                         [z],
                     );
                 return n.createElement(
                     o.Z,
-                    { style: [ne.container, I] },
-                    n.createElement(O, { aborted: e, completed: a, completedTimestamp: s, fromTimestamp: h, isPast: C, numSources: w, title: D }),
+                    { style: [oe.container, I] },
+                    n.createElement(N, { aborted: e, completed: a, completedTimestamp: s, fromTimestamp: m, isPast: C, numSources: w, title: D }),
                     n.createElement(
-                        K,
-                        { gradientColor: r.default.theme.colors.gray50, onCancelAutoScroll: S, onRestartAutoScroll: x, scrollViewContentContainerStyle: ne.scrollViewContentContainerStyle, scrollViewRef: T },
-                        n.createElement(d.Z, { size: "space8" }),
+                        W,
+                        { gradientColor: r.default.theme.colors.gray50, onCancelAutoScroll: S, onRestartAutoScroll: x, scrollViewContentContainerStyle: oe.scrollViewContentContainerStyle, scrollViewRef: T },
+                        n.createElement(p.Z, { size: "space8" }),
                         n.createElement(
                             o.Z,
-                            { onLayout: V, style: ne.headerSteps },
-                            n.createElement(m.Z.View, { style: [ne.lineContainer, { height: z }] }, n.createElement(o.Z, { style: ne.line })),
-                            A.map((e, a) => n.createElement(X, { active: t === e.id, header: e, key: e.id, onStepClick: k, style: ne.stepHeaderStatusContainer })),
+                            { onLayout: V, style: oe.headerSteps },
+                            n.createElement(d.Z.View, { style: [oe.lineContainer, { height: z }] }, n.createElement(o.Z, { style: oe.line })),
+                            A.map((e, a) => n.createElement(Q, { active: t === e.id, header: e, key: e.id, onStepClick: k, style: oe.stepHeaderStatusContainer })),
                         ),
-                        _ && n.createElement(X, { header: _, key: _.id, onStepClick: k, style: ne.stepHeaderStatusContainer }),
-                        n.createElement(d.Z, { size: "space8" }),
+                        _ && n.createElement(Q, { header: _, key: _.id, onStepClick: k, style: oe.stepHeaderStatusContainer }),
+                        n.createElement(p.Z, { size: "space8" }),
                     ),
                     n.createElement(
                         o.Z,
-                        { style: ne.buttonsContainer },
-                        n.createElement(p.ZP, {
+                        { style: oe.buttonsContainer },
+                        n.createElement(u.ZP, {
                             borderColor: "transparent",
                             color: "gray700",
-                            hoverLabel: { label: ee },
-                            icon: i ? n.createElement(u.default, { style: ne.icon }) : n.createElement(y.default, { style: ne.icon }),
+                            hoverLabel: { label: te },
+                            icon: i ? n.createElement(y.default, { style: oe.icon }) : n.createElement(f.default, { style: oe.icon }),
                             onClick: () => {
-                                Z(!i), R.scribe({ element: "grok-deepsearch-expand", action: "click", data: { event_info: (!i).toString() } });
+                                Z(!i), P.scribe({ element: "grok-deepsearch-expand", action: "click", data: { event_info: (!i).toString() } });
                             },
                             size: "small",
-                            style: ne.button,
+                            style: oe.button,
                         }),
                         v &&
-                            n.createElement(p.ZP, {
+                            n.createElement(u.ZP, {
                                 borderColor: "transparent",
                                 color: "gray700",
-                                hoverLabel: { label: te },
-                                icon: n.createElement(f.default, { style: ne.icon }),
+                                hoverLabel: { label: ae },
+                                icon: n.createElement(g.default, { style: oe.icon }),
                                 onClick: () => {
-                                    E(), R.scribe({ element: "grok-deepsearch-open-trace", action: "click" });
+                                    E(), P.scribe({ element: "grok-deepsearch-open-trace", action: "click" });
                                 },
                                 size: "small",
-                                style: ne.button,
+                                style: oe.button,
                             }),
-                        !C && B && n.createElement(P, { completed: a && l, completedBody: "" }),
+                        !C && B && n.createElement(R, { completed: a && l, completedBody: "" }),
                     ),
                 );
             }
-            const ne = r.default.create((e) => ({ container: { display: "flex", flexDirection: "column", gap: e.spaces.space4, backgroundColor: e.colors.gray50, padding: e.spaces.space20, paddingBottom: e.spaces.space8 }, scrollViewContentContainerStyle: { paddingEnd: e.spaces.space12 }, headerSteps: { position: "relative" }, lineContainer: { display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", width: e.spaces.space20, position: "absolute", start: 0, top: 0, height: "100%", paddingTop: e.spaces.space8 }, line: { width: 1, height: "100%", backgroundColor: e.colors.gray900 }, step: { marginBottom: e.spaces.space16 }, buttonsContainer: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space8 }, button: { borderRadius: e.borderRadii.xLarge }, icon: {}, stepHeaderStatusContainer: { paddingBottom: e.spaces.space16 } })),
-                oe = n.memo(ae),
-                re = i().be30b6ee,
-                se = i().a5077d3e;
-            function ie({ deepSearchSummaryAccumulator: e }) {
+            const oe = r.default.create((e) => ({ container: { display: "flex", flexDirection: "column", gap: e.spaces.space4, backgroundColor: e.colors.gray50, padding: e.spaces.space20, paddingBottom: e.spaces.space8 }, scrollViewContentContainerStyle: { paddingEnd: e.spaces.space12 }, headerSteps: { position: "relative" }, lineContainer: { display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", width: e.spaces.space20, position: "absolute", start: 0, top: 0, height: "100%", paddingTop: e.spaces.space8 }, line: { width: 1, height: "100%", backgroundColor: e.colors.gray900 }, step: { marginBottom: e.spaces.space16 }, buttonsContainer: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space8 }, button: { borderRadius: e.borderRadii.xLarge }, icon: {}, stepHeaderStatusContainer: { paddingBottom: e.spaces.space16 } })),
+                re = n.memo(ne),
+                se = i().be30b6ee,
+                ie = i().a5077d3e;
+            function le({ deepSearchSummaryAccumulator: e }) {
                 const t = (0, c.z)(),
                     a = n.useRef(null),
                     [o, r] = n.useState(!1),
@@ -390,9 +391,9 @@
                         !i || d || s || y();
                     }, [i, y, d, s]),
                     o &&
-                        n.createElement(h.ZP, {
+                        n.createElement(b.ZP, {
                             action: {
-                                label: se,
+                                label: ie,
                                 onAction: () => {
                                     window.location.reload();
                                 },
@@ -400,22 +401,22 @@
                             onClose: () => {
                                 r(!1), t.scribe({ component: "grok-deepsearch-refresh-toast", action: "click" });
                             },
-                            style: le.toast,
-                            text: re,
+                            style: ce.toast,
+                            text: se,
                             withClearButton: !0,
                         })
                 );
             }
-            const le = r.default.create((e) => ({ toast: { opacity: 1, transform: [{ translateY: 0 }], animationDuration: "0.5s", animationKeyframes: [{ "0%": { opacity: 0, transform: [{ translateY: 5 }] }, "100%": { opacity: 1, transform: [{ translateY: 0 }] } }] } }));
-            var ce = a(311826),
-                me = a(525271),
-                de = a(323265),
-                pe = a(465086),
-                ue = a(721270);
-            const ye = i().a4d9dbfa;
-            function fe({ completed: e, gradientColor: t, isPastSummary: a, onDismissed: s, style: i, trace: c }) {
+            const ce = r.default.create((e) => ({ toast: { opacity: 1, transform: [{ translateY: 0 }], animationDuration: "0.5s", animationKeyframes: [{ "0%": { opacity: 0, transform: [{ translateY: 5 }] }, "100%": { opacity: 1, transform: [{ translateY: 0 }] } }] } }));
+            var me = a(311826),
+                de = a(525271),
+                pe = a(323265),
+                ue = a(465086),
+                ye = a(721270);
+            const fe = i().a4d9dbfa;
+            function ge({ completed: e, gradientColor: t, isPastSummary: a, onDismissed: s, style: i, trace: c }) {
                 const [m, d] = n.useState(null),
-                    [p] = (0, pe.h)({ scrollingFrame: m?.getScrollableNode(), enabled: !a && !e, autoStart: !a && !e });
+                    [p] = (0, ue.h)({ scrollingFrame: m?.getScrollableNode(), enabled: !a && !e, autoStart: !a && !e });
                 return (
                     (0, l.q)(() => {
                         const e = "deep-search-summary-card-sub-step";
@@ -431,22 +432,22 @@
                             }
                         );
                     }),
-                    n.createElement(me.Z, { align: "right", buttonType: "primaryText", onDismissed: s, title: ye }, n.createElement(o.Z, { style: ge.traceScrollViewContainer }, n.createElement(N.Z, { automaticallyAdjustKeyboardInsets: !0, contentContainerStyle: ge.traceScrollViewContentContainer, ref: d, style: ge.traceScrollView }, n.createElement("div", { className: "deep-search-summary-card-sub-step-markdown-text" }, n.createElement(ue.default, { disableLinks: de.ZP.isWebView(), isAnimated: !1, markdownText: c })), n.createElement(o.Z, { ref: p, style: { position: "relative", top: -250, width: 100, height: 1 } }), n.createElement(o.Z, { style: { position: "relative", width: 100, height: 300 } }))))
+                    n.createElement(de.Z, { align: "right", buttonType: "primaryText", onDismissed: s, title: fe }, n.createElement(o.Z, { style: he.traceScrollViewContainer }, n.createElement($.Z, { automaticallyAdjustKeyboardInsets: !0, contentContainerStyle: he.traceScrollViewContentContainer, ref: d, style: he.traceScrollView }, n.createElement("div", { className: "deep-search-summary-card-sub-step-markdown-text" }, n.createElement(ye.default, { disableLinks: pe.ZP.isWebView(), isAnimated: !1, markdownText: c })), n.createElement(o.Z, { ref: p, style: { position: "relative", top: -250, width: 100, height: 1 } }), n.createElement(o.Z, { style: { position: "relative", width: 100, height: 300 } }))))
                 );
             }
-            const ge = r.default.create((e) => ({ thinkingTraceLabel: { color: e.colors.gray800, fontSize: e.fontSizes.subtext3 }, markdownText: { position: "relative", fontSize: e.fontSizes.subtext2, lineHeight: e.fontSizes.subtext2 }, traceScrollViewContainer: { flex: 1, width: "100%", maxWidth: 500, position: "relative" }, traceScrollView: { flex: 1, width: "100%" }, traceScrollViewContentContainer: { flexGrow: 1, padding: e.spaces.space16 }, traceGradientBottom: { position: "absolute", width: "100%", height: "20%", bottom: 0 }, interactivePinButton: { backgroundColor: "transparent" }, pinButtonContainer: { position: "absolute", bottom: e.spaces.space16, start: "50%", transform: "translateX(-50%)" }, pinButton: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space8, borderRadius: e.borderRadii.xLarge, backgroundColor: "transparent", transition: "background-color 0.2s ease", paddingVertical: e.spaces.space8, paddingHorizontal: e.spaces.space12 }, hoveredPinButton: { backgroundColor: e.colors.gray0 }, pinIcon: { width: e.spaces.space16, height: e.spaces.space16, color: e.colors.gray900 }, pinText: { fontSize: e.fontSizes.subtext1, color: e.colors.gray900 } })),
-                he = n.memo(fe);
+            const he = r.default.create((e) => ({ thinkingTraceLabel: { color: e.colors.gray800, fontSize: e.fontSizes.subtext3 }, markdownText: { position: "relative", fontSize: e.fontSizes.subtext2, lineHeight: e.fontSizes.subtext2 }, traceScrollViewContainer: { flex: 1, width: "100%", maxWidth: 500, position: "relative" }, traceScrollView: { flex: 1, width: "100%" }, traceScrollViewContentContainer: { flexGrow: 1, padding: e.spaces.space16 }, traceGradientBottom: { position: "absolute", width: "100%", height: "20%", bottom: 0 }, interactivePinButton: { backgroundColor: "transparent" }, pinButtonContainer: { position: "absolute", bottom: e.spaces.space16, start: "50%", transform: "translateX(-50%)" }, pinButton: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space8, borderRadius: e.borderRadii.xLarge, backgroundColor: "transparent", transition: "background-color 0.2s ease", paddingVertical: e.spaces.space8, paddingHorizontal: e.spaces.space12 }, hoveredPinButton: { backgroundColor: e.colors.gray0 }, pinIcon: { width: e.spaces.space16, height: e.spaces.space16, color: e.colors.gray900 }, pinText: { fontSize: e.fontSizes.subtext1, color: e.colors.gray900 } })),
+                be = n.memo(ge);
             a(136728);
-            var be = a(956272),
-                Ce = a(20716),
-                we = a(868489),
-                Se = a(5323);
-            function Ee({ handleStepLayout: e, isAnimated: t, step: a, style: s }) {
+            var Ce = a(956272),
+                we = a(20716),
+                Se = a(868489),
+                Ee = a(5323);
+            function xe({ handleStepLayout: e, isAnimated: t, step: a, style: s }) {
                 const i = n.useCallback(
                         (e) => {
                             if (e.summary) {
                                 const a = e.summary;
-                                return n.createElement(o.Z, { style: ve.subStepContainer }, n.createElement(o.Z, { style: ve.subStepIconContainer }), n.createElement(o.Z, { style: ve.summaryOffset }, n.createElement("div", { className: "search-card-sub-step-markdown-text" }, n.createElement(ue.default, { disableLinks: de.ZP.isWebView(), isAnimated: t, markdownText: a }))));
+                                return n.createElement(o.Z, { style: Te.subStepContainer }, n.createElement(o.Z, { style: Te.subStepIconContainer }), n.createElement(o.Z, { style: Te.summaryOffset }, n.createElement("div", { className: "search-card-sub-step-markdown-text" }, n.createElement(ye.default, { disableLinks: pe.ZP.isWebView(), isAnimated: t, markdownText: a }))));
                             }
                         },
                         [t],
@@ -456,24 +457,24 @@
                             const t = e.actionIcon,
                                 a = e.actionSummary,
                                 s = e.actionState,
-                                i = (t && (0, Ce.wG)(t)) || be.default;
-                            return n.createElement(o.Z, { style: ve.subStepContainer }, n.createElement(o.Z, { style: ve.subStepIconContainer }, n.createElement(G.Z, { color: r.default.theme.colors.gray900, size: "small", style: [ve.decisionIcon, "STARTED" === s ? ve.showActivityDecisionIcon : void 0, "STARTED" !== s ? ve.hideActivityDecisionIcon : void 0] }), n.createElement(i, { style: [ve.subStepIcon, ve.decisionIcon, "COMPLETED" === s ? ve.showDecisionIcon : void 0] })), n.createElement("div", { className: "search-card-sub-step-markdown-text" }, n.createElement(ue.default, { disableLinks: de.ZP.isWebView(), isAnimated: !1, markdownText: a })));
+                                i = (t && (0, we.wG)(t)) || Ce.default;
+                            return n.createElement(o.Z, { style: Te.subStepContainer }, n.createElement(o.Z, { style: Te.subStepIconContainer }, n.createElement(j.Z, { color: r.default.theme.colors.gray900, size: "small", style: [Te.decisionIcon, "STARTED" === s ? Te.showActivityDecisionIcon : void 0, "STARTED" !== s ? Te.hideActivityDecisionIcon : void 0] }), n.createElement(i, { style: [Te.subStepIcon, Te.decisionIcon, "COMPLETED" === s ? Te.showDecisionIcon : void 0] })), n.createElement("div", { className: "search-card-sub-step-markdown-text" }, n.createElement(ye.default, { disableLinks: pe.ZP.isWebView(), isAnimated: !1, markdownText: a })));
                         }
                     }, []),
-                    c = n.useCallback((e) => (e.webResults && e.webResults.length > 0 ? n.createElement(o.Z, { style: ve.subStepContainer }, n.createElement(o.Z, { style: ve.subStepIconContainer }), n.createElement(we.Z, { isAnimated: t, style: ve.resultsContainer, webResults: e.webResults })) : e.xPostIds && e.xPostIds.length > 0 ? n.createElement(Se.Z, { isAnimated: t, scrollViewContentContainerStyle: ve.xPostsScrollViewContentContainer, seeMoreButtonStyle: ve.xPostsSeeMoreButton, style: ve.resultsContainer, xPostIds: e.xPostIds }) : void 0), [t]);
+                    c = n.useCallback((e) => (e.webResults && e.webResults.length > 0 ? n.createElement(o.Z, { style: Te.subStepContainer }, n.createElement(o.Z, { style: Te.subStepIconContainer }), n.createElement(Se.Z, { isAnimated: t, style: Te.resultsContainer, webResults: e.webResults })) : e.xPostIds && e.xPostIds.length > 0 ? n.createElement(Ee.Z, { isAnimated: t, scrollViewContentContainerStyle: Te.xPostsScrollViewContentContainer, seeMoreButtonStyle: Te.xPostsSeeMoreButton, style: Te.resultsContainer, xPostIds: e.xPostIds }) : void 0), [t]);
                 return n.createElement(
                     o.Z,
-                    { onLayout: e && e(a.id), style: [ve.step, s] },
-                    a.subSteps.map((e, t) => n.createElement(o.Z, { key: `${a.id}-${e.messageTag}-${e.messageStepId}-${t}` }, e.messageTag === J.iS.SUMMARY && i(e), e.messageTag === J.iS.DECISION && n.createElement(n.Fragment, null, l(e), c(e)))),
+                    { onLayout: e && e(a.id), style: [Te.step, s] },
+                    a.subSteps.map((e, t) => n.createElement(o.Z, { key: `${a.id}-${e.messageTag}-${e.messageStepId}-${t}` }, e.messageTag === U.iS.SUMMARY && i(e), e.messageTag === U.iS.DECISION && n.createElement(n.Fragment, null, l(e), c(e)))),
                 );
             }
-            const xe = r.default.theme.spacesPx.space20,
-                ke = r.default.theme.spacesPx.space16,
-                ve = r.default.create((e) => ({ step: { display: "flex", flexDirection: "column", gap: e.spaces.space12 }, subStepContainer: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space8, paddingHorizontal: xe }, subStepIconContainer: { width: ke, display: "flex", alignItems: "center", justifyContent: "center", position: "relative" }, subStepIcon: { width: e.spaces.space16, height: e.spaces.space16, color: e.colors.gray900 }, decisionIcon: { position: "absolute", top: "50%", start: "50%", transform: "translate(-50%, -50%) scale(0)", opacity: 0 }, showDecisionIcon: { opacity: 1, transform: "translate(-50%, -50%) scale(1)", animationDuration: "0.5s", animationKeyframes: [{ "0%": { opacity: 0, transform: "translate(-50%, -50%) scale(0)" }, "50%": { opacity: 0.5, transform: "translate(-50%, -50%) scale(1.1)" }, "100%": { opacity: 1, transform: "translate(-50%, -50%) scale(1)" } }] }, showActivityDecisionIcon: { opacity: 1, transform: "translate(-50%, -50%) scale(0.7)", animationDuration: "0.5s", animationKeyframes: [{ "0%": { opacity: 0, transform: "translate(-50%, -50%) scale(0)" }, "50%": { opacity: 0.5, transform: "translate(-50%, -50%) scale(0.8)" }, "100%": { opacity: 1, transform: "translate(-50%, -50%) scale(0.7)" } }] }, hideActivityDecisionIcon: { opacity: 0, transform: "translate(-50%, -50%) scale(0)", animationDuration: "0.2s", animationKeyframes: [{ "0%": { opacity: 1, transform: "translate(-50%, -50%) scale(0.7)" }, "100%": { opacity: 0, transform: "translate(-50%, -50%) scale(0)" } }] }, summaryOffset: { flex: 1, position: "relative", start: -35 }, resultsContainer: { marginTop: e.spaces.space12 }, xPostsScrollViewContentContainer: { paddingHorizontal: xe + ke + e.spacesPx.space8 }, xPostsSeeMoreButton: { marginStart: xe + ke + e.spacesPx.space8 } })),
-                Te = n.memo(Ee);
-            function Ze({ deepsearchSummaryAccumulator: e, handleStepLayout: t, onCancelAutoScroll: a, onRestartAutoScroll: s, scrollViewRef: i, style: l }) {
+            const ke = r.default.theme.spacesPx.space20,
+                ve = r.default.theme.spacesPx.space16,
+                Te = r.default.create((e) => ({ step: { display: "flex", flexDirection: "column", gap: e.spaces.space12 }, subStepContainer: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space8, paddingHorizontal: ke }, subStepIconContainer: { width: ve, display: "flex", alignItems: "center", justifyContent: "center", position: "relative" }, subStepIcon: { width: e.spaces.space16, height: e.spaces.space16, color: e.colors.gray900 }, decisionIcon: { position: "absolute", top: "50%", start: "50%", transform: "translate(-50%, -50%) scale(0)", opacity: 0 }, showDecisionIcon: { opacity: 1, transform: "translate(-50%, -50%) scale(1)", animationDuration: "0.5s", animationKeyframes: [{ "0%": { opacity: 0, transform: "translate(-50%, -50%) scale(0)" }, "50%": { opacity: 0.5, transform: "translate(-50%, -50%) scale(1.1)" }, "100%": { opacity: 1, transform: "translate(-50%, -50%) scale(1)" } }] }, showActivityDecisionIcon: { opacity: 1, transform: "translate(-50%, -50%) scale(0.7)", animationDuration: "0.5s", animationKeyframes: [{ "0%": { opacity: 0, transform: "translate(-50%, -50%) scale(0)" }, "50%": { opacity: 0.5, transform: "translate(-50%, -50%) scale(0.8)" }, "100%": { opacity: 1, transform: "translate(-50%, -50%) scale(0.7)" } }] }, hideActivityDecisionIcon: { opacity: 0, transform: "translate(-50%, -50%) scale(0)", animationDuration: "0.2s", animationKeyframes: [{ "0%": { opacity: 1, transform: "translate(-50%, -50%) scale(0.7)" }, "100%": { opacity: 0, transform: "translate(-50%, -50%) scale(0)" } }] }, summaryOffset: { flex: 1, position: "relative", start: -35 }, resultsContainer: { marginTop: e.spaces.space12 }, xPostsScrollViewContentContainer: { paddingHorizontal: ke + ve + e.spacesPx.space8 }, xPostsSeeMoreButton: { marginStart: ke + ve + e.spacesPx.space8 } })),
+                Ze = n.memo(xe);
+            function Ie({ deepsearchSummaryAccumulator: e, handleStepLayout: t, onCancelAutoScroll: a, onRestartAutoScroll: s, scrollViewRef: i, style: l }) {
                 const { isPastSummary: c, steps: m } = e,
-                    p = (0, g.hC)("responsive_web_grok_animated_text_enabled") && !c,
+                    d = (0, h.hC)("responsive_web_grok_animated_text_enabled") && !c,
                     u = n.useMemo(() => {
                         const e = [];
                         for (let t = 0; t < 3 * m.length; t += 3) e.push(t);
@@ -481,25 +482,23 @@
                     }, [m]);
                 return n.createElement(
                     o.Z,
-                    { style: [Ie.container, l] },
-                    n.createElement(d.Z, { size: "space8" }),
+                    { style: [De.container, l] },
+                    n.createElement(p.Z, { size: "space8" }),
                     n.createElement(
-                        K,
-                        { gradientColor: r.default.theme.colors.gray0, onCancelAutoScroll: a, onRestartAutoScroll: s, scrollViewContentContainerStyle: Ie.scrollViewContentContainerStyle, scrollViewRef: i, stickyHeaderIndices: u },
-                        m.flatMap((e, a) => [n.createElement(o.Z, { key: `${e.id}-header`, style: [Ie.headerContainer, { zIndex: a + 1 }] }, n.createElement(z.ZP, { style: Ie.header, weight: "bold" }, e.header)), n.createElement(Te, { handleStepLayout: t, isAnimated: p, key: `${e.id}-step`, step: e }), n.createElement(d.Z, { key: `${e.id}-spacer`, size: "space20" })]),
-                        n.createElement(d.Z, { size: "space48" }),
+                        W,
+                        { gradientColor: r.default.theme.colors.gray0, onCancelAutoScroll: a, onRestartAutoScroll: s, scrollViewContentContainerStyle: De.scrollViewContentContainerStyle, scrollViewRef: i, stickyHeaderIndices: u },
+                        m.flatMap((e, a) => [n.createElement(o.Z, { key: `${e.id}-header`, style: [De.headerContainer, { zIndex: a + 1 }] }, n.createElement(A.ZP, { style: De.header, weight: "bold" }, e.header)), n.createElement(Ze, { handleStepLayout: t, isAnimated: d, key: `${e.id}-step`, step: e }), n.createElement(p.Z, { key: `${e.id}-spacer`, size: "space20" })]),
+                        n.createElement(p.Z, { size: "space48" }),
                     ),
                 );
             }
-            const Ie = r.default.create((e) => ({ container: { flex: 1 }, scrollViewContentContainerStyle: { display: "flex", flexDirection: "column" }, headerContainer: { paddingHorizontal: e.spacesPx.space20, backgroundColor: e.colors.gray0, paddingVertical: e.spaces.space12, opacity: 1, animationDuration: "0.2s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }] }, header: {} })),
-                De = "DeepSearch",
-                Pe = "DeeperSearch",
-                Re = i().b1ac6016,
-                ze = i().f766feca;
-            function Ae(e, t, a) {
-                return t && e ? (a ? ze : Re) : a ? Pe : De;
+            const De = r.default.create((e) => ({ container: { flex: 1 }, scrollViewContentContainerStyle: { display: "flex", flexDirection: "column" }, headerContainer: { paddingHorizontal: e.spacesPx.space20, backgroundColor: e.colors.gray0, paddingVertical: e.spaces.space12, opacity: 1, animationDuration: "0.2s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }] }, header: {} })),
+                Pe = i().b1ac6016,
+                Re = i().f766feca;
+            function ze(e, t, a) {
+                return t && e ? (a ? Re : Pe) : a ? m.p9 : m.XD;
             }
-            function _e({ completedTimestamp: e, deepSearchSummaryAccumulator: t, fromTimestamp: a, isLoading: s }) {
+            function Ae({ completedTimestamp: e, deepSearchSummaryAccumulator: t, fromTimestamp: a, isLoading: s }) {
                 const i = (0, c.z)(),
                     m = n.useRef(null),
                     d = n.useRef(null),
@@ -553,8 +552,8 @@
                     B = n.useMemo(() => Z.map((e) => ({ id: e.id, label: e.header, state: e.state, isCompleteHeader: e.isCompleteHeader })), [Z]);
                 return n.createElement(
                     o.Z,
-                    { style: [Be.container, S ? Be.expandedContainer : void 0] },
-                    n.createElement(oe, {
+                    { style: [_e.container, S ? _e.expandedContainer : void 0] },
+                    n.createElement(re, {
                         aborted: P,
                         activeStepId: h,
                         completed: D,
@@ -576,10 +575,10 @@
                         rawTraceEnabled: I,
                         scrollViewRef: m,
                         setExpanded: E,
-                        style: Be.leftPanel,
-                        title: Ae(D, !1, R),
+                        style: _e.leftPanel,
+                        title: ze(D, !1, R),
                     }),
-                    n.createElement(Ze, {
+                    n.createElement(Ie, {
                         deepsearchSummaryAccumulator: t,
                         handleStepLayout: (e) => (t) => {
                             if (e) {
@@ -594,10 +593,10 @@
                             g(!1);
                         },
                         scrollViewRef: d,
-                        style: Be.rightPanel,
+                        style: _e.rightPanel,
                     }),
                     C &&
-                        n.createElement(he, {
+                        n.createElement(be, {
                             completed: D,
                             isPastSummary: v,
                             onDismissed: () => {
@@ -605,11 +604,11 @@
                             },
                             trace: x,
                         }),
-                    n.createElement(ce.Z, { completedTimestamp: e, deepSearchSummaryAccumulator: t, fromTimestamp: a }),
-                    n.createElement(ie, { deepSearchSummaryAccumulator: t }),
+                    n.createElement(me.Z, { completedTimestamp: e, deepSearchSummaryAccumulator: t, fromTimestamp: a }),
+                    n.createElement(le, { deepSearchSummaryAccumulator: t }),
                 );
             }
-            const Be = r.default.create((e) => ({ container: { marginBottom: e.spaces.space16, opacity: 1, animationDuration: "0.5s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }], overflow: "hidden", borderWidth: 1, borderStyle: "solid", borderColor: e.colors.gray300, borderRadius: e.spaces.space24, marginHorizontal: e.spaces.space16, display: "flex", flexDirection: "row", height: 400, backgroundColor: e.colors.gray0, transition: "all 0.2s ease", start: 0 }, expandedContainer: { height: 500, width: "110%", start: -40 }, leftPanel: { width: 200 }, rightPanel: { flex: 1 } }));
+            const _e = r.default.create((e) => ({ container: { marginBottom: e.spaces.space16, opacity: 1, animationDuration: "0.5s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }], overflow: "hidden", borderWidth: 1, borderStyle: "solid", borderColor: e.colors.gray300, borderRadius: e.spaces.space24, marginHorizontal: e.spaces.space16, display: "flex", flexDirection: "row", height: 400, backgroundColor: e.colors.gray0, transition: "all 0.2s ease", start: 0 }, expandedContainer: { height: 500, width: "110%", start: -40 }, leftPanel: { width: 200 }, rightPanel: { flex: 1 } }));
         },
         311826: (e, t, a) => {
             a.d(t, { Z: () => s });
@@ -908,4 +907,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-0f78f5a6.b7cc1f5a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-0f78f5a6.0646ca5a.js.map

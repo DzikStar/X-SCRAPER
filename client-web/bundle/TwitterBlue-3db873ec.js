@@ -345,10 +345,10 @@
                         t.scribe({ page: E, section: k, action: "impression", data: { referer: f, referring_page: f } });
                     }, [t, b, f, E, s, k]);
                     const B = { content: v, selectedProduct: w, setSelectedProduct: j, referringPage: f };
-                    return l.createElement(n.nO, { namespace: { page: E, section: k } }, s ? l.createElement(g.Z, B) : l.createElement(h.Z, (0, i.Z)({}, B, { isTierSwitching: b })));
+                    return l.createElement(n.nO, { namespace: { page: E, section: k } }, s && !b ? l.createElement(g.Z, B) : l.createElement(h.Z, (0, i.Z)({}, B, { isTierSwitching: b })));
                 },
                 _ = l.memo(v);
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterBlue-3db873ec.5b1d0b4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterBlue-3db873ec.0424876a.js.map

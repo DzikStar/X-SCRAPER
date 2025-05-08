@@ -4143,6 +4143,7 @@
                 a("f388a7ec", "[[293047]] DeepSearch"),
                 a("ab1eb384", "[[293500]] Select your desired search mode"),
                 a("i330e54c", "[[293662]] Advanced search and reasoning"),
+                a("fdcce108", "DeeperSearch"),
                 a("ac64b674", "[[293663]] Extended search, more reasoning"),
                 a("j22655f2", "[[288852]] Ask anything"),
                 a("h0681e3e", "[[291529]] Talk to Grok, our AI assistant"),
@@ -4169,6 +4170,9 @@
                 a("h15dce2e", "[[293473]] Advanced Settings"),
                 a("ff9dc268", "[[289210]] Edit prompt"),
                 a("acb2baa0", "[[294660]] Create Images"),
+                a("fe9ad897", function (e) {
+                    return "Edit Image" + e.ttc_grok_preset;
+                }),
                 a("h30fd372", "[[294663]] Try Voice Mode"),
                 a("e9fcdd0c", "[[293613]] Ask Grok to aggressively search the web"),
                 a("fc4e8aba", "[[293612]] Ask Grok to reason step-by-step"),
@@ -4907,10 +4911,10 @@
                 a("d2a43a7a", '[[289747]] contains both "ai" and "startup"'),
                 a("a8584698", "[[289739]] ai startup"),
                 a("jb6f9292", '[[289740]] contains the exact phrase "ai startup"'),
-                a("j8ee77c4", '[[289700]] "ai startup"'),
-                a("d0480758", '[[289748]] contains either "ai" or "startup" (or both)'),
-                a("f0048fa2", "[[289746]] ai OR startup");
-            a("da0df186", '[[289745]] contains "ai", but not "startup"'),
+                a("j8ee77c4", '[[289700]] "ai startup"');
+            a("d0480758", '[[289748]] contains either "ai" or "startup" (or both)'),
+                a("f0048fa2", "[[289746]] ai OR startup"),
+                a("da0df186", '[[289745]] contains "ai", but not "startup"'),
                 a("f2f463ea", "[[289750]] ai -startup"),
                 a("a10a357e", '[[289742]] contains "ai" and has at least 50 likes'),
                 a("ca8ed1e8", "[[289743]] ai min_faves:50"),
@@ -5873,10 +5877,10 @@
                 a("b732a4cc", "[[280509]] When you do, you’ll see their posts here."),
                 a("hff48914", "[[287368]] No posts could be found at this time."),
                 a("hb52cc4a", "[[233832]] Please try again later."),
-                a("e50e1bb0", "[[282302]] Welcome to Communities"),
-                a("i6829daa", "[[282172]] Communities are moderated discussion groups where people on X can connect and share."),
-                a("fc5c6914", "[[238877]] Meet others with your interests");
-            a("aa1a9820", "[[291941]] Join Communities to connect with people who share your interests."),
+                a("e50e1bb0", "[[282302]] Welcome to Communities");
+            a("i6829daa", "[[282172]] Communities are moderated discussion groups where people on X can connect and share."),
+                a("fc5c6914", "[[238877]] Meet others with your interests"),
+                a("aa1a9820", "[[291941]] Join Communities to connect with people who share your interests."),
                 a("edef4c82", "[[282179]] Post directly to a Community"),
                 a("a7640df6", "[[291947]] Your posts are shared with Community members and your followers."),
                 a("h3bb8068", "[[238885]] Get backup when you need it"),
@@ -6871,10 +6875,10 @@
                 a("c2059276", "[[291025]] Have your replies boosted."),
                 a("b023ec20", "[[291026]] Max Reply Boost"),
                 a("g337328e", "[[293229]] Get the highest visibility for your replies."),
-                a("fa006202", "[[290021]] Background video playback"),
-                a("jf389778", "[[293153]] Watch while browsing or using other apps"),
-                a("f2977d80", "[[270600]] Bookmark folders");
-            a("j1d3d910", "[[293232]] Keep your saved posts organized for easy access"),
+                a("fa006202", "[[290021]] Background video playback");
+            a("jf389778", "[[293153]] Watch while browsing or using other apps"),
+                a("f2977d80", "[[270600]] Bookmark folders"),
+                a("j1d3d910", "[[293232]] Keep your saved posts organized for easy access"),
                 a("f0f48668", "[[275532]] Premium support"),
                 a("c3148608", "[[293228]] Get faster assistance when you need help"),
                 a("b485ca6e", "[[290025]] Highlights tab"),
@@ -7847,9 +7851,7 @@
                 a("e7e36818", "[[289182]] Ad accounts are eligible for job promotion when they are fully set up with a funding source."),
                 a("c28566e0", "[[288944]] Ad Account"),
                 a("c80160d3", "Advertising"),
-                a("ff0edac0", "[[275003]] Are you sure you want to cancel your subscription?"),
-                a("h2ac0348", "[[275009]] No, take me back"),
-                a("dbf9667e", "[[275008]] I’m sure");
+                a("ff0edac0", "[[275003]] Are you sure you want to cancel your subscription?");
             function i(e, t) {
                 for (var o = 0; o < t.length; o++) {
                     var a = t[o];
@@ -7888,7 +7890,9 @@
                     r(e, t)
                 );
             }
-            a("j7592572", "[[287997]] U-turn"),
+            a("h2ac0348", "[[275009]] No, take me back"),
+                a("dbf9667e", "[[275008]] I’m sure"),
+                a("j7592572", "[[287997]] U-turn"),
                 a("ee778942", "[[287999]] Traffic lights"),
                 a("fdd57981", function (e) {
                     return "[[287998]] We’d like to offer you a free one-time " + e.totalAmount + " USD ad credit.";
@@ -8911,16 +8915,16 @@
                 }),
                 a("dbeae6cf", function (e) {
                     return "[[276462]] " + e.count + " other listener" + n(e.count, "", "s");
-                }),
-                a("d2543d97", function (e) {
-                    return "[[230212]] +" + e.count;
-                }),
+                });
+            a("d2543d97", function (e) {
+                return "[[230212]] +" + e.count;
+            }),
                 a("dc718e53", function (e) {
                     return "[[231311]] +" + e.count + " other" + n(e.count, "", "s");
-                });
-            a("d0e7b11b", function (e) {
-                return "[[231671]] " + e.date + " at " + e.time;
-            }),
+                }),
+                a("d0e7b11b", function (e) {
+                    return "[[231671]] " + e.date + " at " + e.time;
+                }),
                 a("b4349cbc", function (e) {
                     return "" + e.relativeDay;
                 }),
@@ -13188,4 +13192,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-ss.af488eaa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-ss.1de1c55a.js.map

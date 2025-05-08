@@ -142,7 +142,7 @@
                                                       break;
                                                   case g.P_.updateName:
                                                   case g.P_.updateAddress:
-                                                      r && c && (clearInterval(n), (0, P.J$)(w), C.replace(s ? g.Xy : g.iE.personal));
+                                                      r && c && (clearInterval(n), (0, P.J$)(w), C.replace(s ? g.Xy : (o ?? g.iE.personal), u));
                                               }
                                           })
                                           .catch(() => {
@@ -236,4 +236,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-6cc66b21.db8908ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-6cc66b21.fcfd99fa.js.map

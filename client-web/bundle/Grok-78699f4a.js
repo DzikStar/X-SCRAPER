@@ -304,7 +304,7 @@
                                 { style: V.contentBelowContainer },
                                 a.createElement(
                                     r.Z,
-                                    { style: Ce || he ? V.contentBelowLeftCompact : V.contentBelowLeft },
+                                    { style: [V.contentBelowLeft, (he || Ce) && V.compactContentBelowLeft] },
                                     yt &&
                                         a.createElement(
                                             a.Fragment,
@@ -322,7 +322,7 @@
                                             }),
                                         ),
                                 ),
-                                a.createElement(r.Z, { style: Ce || he ? V.contentBelowRightCompact : V.contentBelowRight }, Re && a.createElement(N.t, { conversationKey: t, disabled: Y, fadeIn: $e.current, focused: pe, inputAtBottom: j, inputAtHome: X }), !1, he && !Ce ? (0 === Ue.length && q && !tt ? a.createElement(P.Z, { fadeIn: $e.current, isInputCompact: he }) : Dt) : a.createElement(a.Fragment, null, a.createElement(P.Z, { fadeIn: $e.current, isInputCompact: he }), Dt)),
+                                a.createElement(r.Z, { style: [V.contentBelowRight, (he || Ce) && V.compactContentBelowRight] }, Re && a.createElement(N.t, { conversationKey: t, disabled: Y, fadeIn: $e.current, focused: pe, inputAtBottom: j, inputAtHome: X }), !1, he && !Ce ? (0 === Ue.length && q && !tt ? a.createElement(P.Z, { fadeIn: $e.current, isInputCompact: he }) : Dt) : a.createElement(a.Fragment, null, a.createElement(P.Z, { fadeIn: $e.current, isInputCompact: he }), Dt)),
                             ),
                         [Ce, he, yt, !0, ue, pe, Ye, Re, t, Y, j, X, Ue, Dt, q, tt],
                     );
@@ -412,7 +412,7 @@
                           )
                 );
             }
-            const V = d.default.create((e) => ({ container: { width: "100%", borderRadius: e.spaces.space16, backgroundColor: e.colors.gray50, borderStyle: "solid", borderWidth: 1, borderColor: "transparent", transition: "all 0.2s" }, contentBelowContainer: { width: "100%", paddingHorizontal: e.spaces.space8, paddingBottom: e.spaces.space8, flexDirection: "row", justifyContent: "space-between", alignItems: "center" }, contentBelowLeft: { flexDirection: "row", alignItems: "center", justifyContent: "flex-start", gap: e.spaces.space8, flex: 1 }, contentBelowRight: { flexDirection: "row", alignItems: "center", justifyContent: "flex-end", gap: e.spaces.space8, paddingStart: e.spaces.space16 }, contentBelowLeftCompact: { flexDirection: "row", alignItems: "center", justifyContent: "flex-start", gap: e.spaces.space8, paddingEnd: e.spaces.space8 }, contentBelowRightCompact: { flexDirection: "row", alignItems: "center", justifyContent: "flex-end", flex: 1, gap: e.spaces.space8 }, inputOuterContainer: { position: "relative", flex: 1 }, inputStyle: { flex: 1, fontSize: 16, paddingTop: 20, paddingBottom: 20 }, inputContainer: { width: "100%", paddingStart: e.spaces.space4, backgroundColor: e.colors.gray50, borderRadius: e.spaces.space24, height: 300, fontSize: 16, flex: 1, justifyContent: "space-between" }, deprecatedContainer: { width: "100%" }, deprecatedInputContainer: { backgroundColor: e.colors.gray50, borderRadius: e.spaces.space32, paddingHorizontal: e.spaces.space8, paddingVertical: e.spaces.space4, width: "100%", borderColor: e.colors.gray50, borderWidth: e.spaces.space1, borderStyle: "solid" }, fileAttachments: { flex: 1, display: "flex", flexDirection: "row", gap: e.spaces.space8, paddingHorizontal: e.spaces.space12, paddingTop: 14, paddingBottom: 0, flexWrap: "wrap" } }));
+            const V = d.default.create((e) => ({ container: { width: "100%", borderRadius: e.spaces.space16, backgroundColor: e.colors.gray50, borderStyle: "solid", borderWidth: 1, borderColor: "transparent", transition: "all 0.2s" }, contentBelowContainer: { width: "100%", paddingHorizontal: e.spaces.space8, paddingBottom: e.spaces.space8, flexDirection: "row", justifyContent: "space-between", alignItems: "center" }, contentBelowLeft: { flexDirection: "row", alignItems: "center", justifyContent: "flex-start", gap: e.spaces.space8, flex: 1 }, compactContentBelowLeft: { gap: e.spaces.space4 }, contentBelowRight: { flexDirection: "row", alignItems: "center", justifyContent: "flex-end", gap: e.spaces.space8, paddingStart: e.spaces.space8 }, compactContentBelowRight: { gap: e.spaces.space4 }, inputOuterContainer: { position: "relative", flex: 1 }, inputStyle: { flex: 1, fontSize: 16, paddingTop: 20, paddingBottom: 20 }, inputContainer: { width: "100%", paddingStart: e.spaces.space4, backgroundColor: e.colors.gray50, borderRadius: e.spaces.space24, height: 300, fontSize: 16, flex: 1, justifyContent: "space-between" }, deprecatedContainer: { width: "100%" }, deprecatedInputContainer: { backgroundColor: e.colors.gray50, borderRadius: e.spaces.space32, paddingHorizontal: e.spaces.space8, paddingVertical: e.spaces.space4, width: "100%", borderColor: e.colors.gray50, borderWidth: e.spaces.space1, borderStyle: "solid" }, fileAttachments: { flex: 1, display: "flex", flexDirection: "row", gap: e.spaces.space8, paddingHorizontal: e.spaces.space12, paddingTop: 14, paddingBottom: 0, flexWrap: "wrap" } }));
         },
         764326: (e, t, n) => {
             n.d(t, { DP: () => r, Qs: () => l, il: () => a, u$: () => o });
@@ -750,81 +750,82 @@
             const c = d.default.create((e) => ({ block: { flex: 1, flexDirection: "row", justifyContent: "center", width: "100%", paddingTop: "0.75rem", paddingBottom: "1.75rem" }, animation: { opacity: 1, animationDuration: "1s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }] } }));
         },
         910594: (e, t, n) => {
-            n.d(t, { Z: () => N });
+            n.d(t, { Z: () => W });
             n(543673), n(240753), n(128399);
             var a = n(202784),
                 o = n(731708),
                 r = n(488684),
-                l = n(392237),
-                d = n(674132),
-                i = n.n(d),
-                s = n(952793),
-                c = n(725516),
-                u = n(125363),
-                m = n(327597),
-                h = n(654917),
-                p = n(595080),
-                b = n(5741),
-                f = n(45843),
-                g = n(325686),
-                y = n(818199),
-                k = n(530732),
-                w = n(630715),
-                D = n(725405),
-                C = n(809311);
-            const E = "grok_citation_web_result",
-                M = ({ link: e }) => {
-                    const { isAnimated: t } = a.useContext(p.$),
+                l = n(466792),
+                d = n(392237),
+                i = n(674132),
+                s = n.n(i),
+                c = n(952793),
+                u = n(725516),
+                m = n(125363),
+                h = n(327597),
+                p = n(654917),
+                b = n(595080),
+                f = n(5741),
+                g = n(45843),
+                y = n(325686),
+                k = n(818199),
+                w = n(530732),
+                D = n(630715),
+                C = n(725405),
+                E = n(809311);
+            const M = "grok_citation_web_result",
+                v = ({ link: e }) => {
+                    const { isAnimated: t } = a.useContext(b.$),
                         [n, o] = a.useState(!1),
-                        r = (0, D.Z)(),
+                        r = (0, C.Z)(),
                         l = a.useCallback(() => {
-                            o(!0), r.scribe({ action: "hover", component: E, data: { url: e.url } });
+                            o(!0), r.scribe({ action: "hover", component: M, data: { url: e.url } });
                         }, [o, r, e.url]),
                         d = a.useCallback(() => o(!1), [o]),
                         i = a.useCallback(() => {
-                            r.scribe({ action: "click", component: E, data: { url: e.url } });
+                            r.scribe({ action: "click", component: M, data: { url: e.url } });
                         }, [r, e.url]);
                     let s = new URL(e.url).hostname;
                     s.startsWith("www.") && (s = s.slice(4));
-                    const c = a.useCallback(() => a.createElement(v, { webResult: e }), [e]);
-                    return a.createElement("div", { className: "omit-from-copy", style: x.inlineContainer }, a.createElement(g.Z, { style: [x.inlineContainer, t ? x.animation : null] }, a.createElement(y.Z, { renderContent: c }, a.createElement(k.Z, { link: e.url, onMouseEnter: l, onMouseLeave: d, onPress: i, style: [x.content, e.favicon_base64 ? x.faviconContainer : x.iconContainer, n ? x.containerHovered : void 0], withoutInteractiveStyles: !0 }, e.favicon_base64 ? a.createElement(f.Z, { source: e.favicon_base64, style: x.favicon }) : a.createElement(w.default, { style: x.linkIcon })))));
+                    const c = a.useCallback(() => a.createElement(x, { webResult: e }), [e]);
+                    return a.createElement("div", { className: "omit-from-copy", style: S.inlineContainer }, a.createElement(y.Z, { style: [S.inlineContainer, t ? S.animation : null] }, a.createElement(k.Z, { renderContent: c }, a.createElement(w.Z, { link: e.url, onMouseEnter: l, onMouseLeave: d, onPress: i, style: [S.content, e.favicon_base64 ? S.faviconContainer : S.iconContainer, n ? S.containerHovered : void 0], withoutInteractiveStyles: !0 }, e.favicon_base64 ? a.createElement(g.Z, { source: e.favicon_base64, style: S.favicon }) : a.createElement(D.default, { style: S.linkIcon })))));
                 },
-                v = ({ webResult: e }) => a.createElement(g.Z, { style: x.hoverCardContainer }, a.createElement(C.p, { item: e })),
-                x = l.default.create((e) => ({ inlineContainer: { alignItems: "center", justifyContent: "center", display: "inline-flex", marginStart: e.spaces.space2, verticalAlign: "middle" }, animation: { opacity: 1, animationDuration: "1s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }] }, content: { transition: "filter 0.3s, transform 0.3s", filter: "grayscale(100%) opacity(0.7)", position: "relative", bottom: "0.1em" }, hoverCardContainer: { width: 350, maxWidth: "100%", pointerEvents: "none" }, faviconContainer: { backgroundColor: e.colors.whiteOnColor, borderRadius: e.borderRadii.small, borderWidth: e.spaces.space1, borderColor: e.colors.borderColor, overflow: "hidden" }, iconContainer: { backgroundColor: e.colors.gray100, borderRadius: e.borderRadii.small, padding: e.spaces.space1 }, containerHovered: { filter: "none", transform: "scale(1.2)" }, favicon: { width: 15, height: 15 }, linkIcon: { color: e.colors.gray800, width: 15, height: 15 } }));
-            var S = n(323265),
-                I = n(301758),
-                Z = n(836255);
-            const A = "grok_citation_post",
-                R = ({ postId: e }) => {
-                    const t = (0, u.oR)(),
-                        n = (0, u.I0)(),
-                        { isAnimated: o } = a.useContext(p.$),
+                x = ({ webResult: e }) => a.createElement(y.Z, { style: S.hoverCardContainer }, a.createElement(E.p, { item: e })),
+                S = d.default.create((e) => ({ inlineContainer: { alignItems: "center", justifyContent: "center", display: "inline-flex", marginStart: e.spaces.space2, verticalAlign: "middle" }, animation: { opacity: 1, animationDuration: "1s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }] }, content: { transition: "filter 0.3s, transform 0.3s", filter: "grayscale(100%) opacity(0.7)", position: "relative", bottom: "0.1em" }, hoverCardContainer: { width: 350, maxWidth: "100%", pointerEvents: "none" }, faviconContainer: { backgroundColor: e.colors.whiteOnColor, borderRadius: e.borderRadii.small, borderWidth: e.spaces.space1, borderColor: e.colors.borderColor, overflow: "hidden" }, iconContainer: { backgroundColor: e.colors.gray100, borderRadius: e.borderRadii.small, padding: e.spaces.space1 }, containerHovered: { filter: "none", transform: "scale(1.2)" }, favicon: { width: 15, height: 15 }, linkIcon: { color: e.colors.gray800, width: 15, height: 15 } }));
+            var I = n(323265),
+                Z = n(301758),
+                A = n(836255);
+            const R = "grok_citation_post",
+                B = ({ postId: e }) => {
+                    const t = (0, m.oR)(),
+                        n = (0, m.I0)(),
+                        { isAnimated: o } = a.useContext(b.$),
                         [r, l] = a.useState(!1),
-                        d = (0, D.Z)(),
+                        d = (0, C.Z)(),
                         i = a.useCallback(() => {
-                            l(!0), d.scribe({ action: "hover", component: A, data: { tweet_id: e } });
+                            l(!0), d.scribe({ action: "hover", component: R, data: { tweet_id: e } });
                         }, [l, d, e]),
                         s = a.useCallback(() => l(!1), [l]),
                         c = a.useCallback(() => {
-                            l(!0), d.scribe({ action: "click", component: A, data: { tweet_id: e } });
+                            l(!0), d.scribe({ action: "click", component: R, data: { tweet_id: e } });
                         }, [l, d, e]);
                     a.useEffect(() => {
-                        e && n(Z.Z.fetchOneIfNeeded(e));
+                        e && n(A.Z.fetchOneIfNeeded(e));
                     }, [n, e]);
-                    const m = Z.Z.selectHydrated(t.getState(), e),
-                        h = a.useCallback(() => a.createElement(B, { postId: e }), [e]);
-                    if (!m) return null;
-                    const b = m?.user?.profile_image_url_https;
-                    return a.createElement("div", { className: "omit-from-copy", style: P.inlineContainer }, a.createElement(g.Z, { style: [P.inlineContainer, o ? P.animation : null] }, a.createElement(y.Z, { renderContent: h }, a.createElement(k.Z, { link: m.permalink, onMouseEnter: i, onMouseLeave: s, onPress: c, style: [P.content, b ? P.avatarContainer : P.iconContainer, r ? P.containerHovered : void 0], withoutInteractiveStyles: !0 }, b ? a.createElement(f.Z, { source: b, style: P.avatar }) : a.createElement(w.default, { style: P.linkIcon })))));
+                    const u = A.Z.selectHydrated(t.getState(), e),
+                        h = a.useCallback(() => a.createElement(P, { postId: e }), [e]);
+                    if (!u) return null;
+                    const p = u?.user?.profile_image_url_https;
+                    return a.createElement("div", { className: "omit-from-copy", style: T.inlineContainer }, a.createElement(y.Z, { style: [T.inlineContainer, o ? T.animation : null] }, a.createElement(k.Z, { renderContent: h }, a.createElement(w.Z, { link: u.permalink, onMouseEnter: i, onMouseLeave: s, onPress: c, style: [T.content, p ? T.avatarContainer : T.iconContainer, r ? T.containerHovered : void 0], withoutInteractiveStyles: !0 }, p ? a.createElement(g.Z, { source: p, style: T.avatar }) : a.createElement(D.default, { style: T.linkIcon })))));
                 },
-                B = ({ postId: e }) =>
+                P = ({ postId: e }) =>
                     a.createElement(
-                        g.Z,
-                        { style: P.hoverCardContainer },
-                        a.createElement(I.Z, {
+                        y.Z,
+                        { style: T.hoverCardContainer },
+                        a.createElement(Z.Z, {
                             isCondensed: !0,
                             onPress: (e) => {
-                                S.ZP.isTwitterApp();
+                                I.ZP.isTwitterApp();
                             },
                             tweetId: e,
                             withBirdwatchPivot: !1,
@@ -832,67 +833,75 @@
                             withUserHoverCard: !1,
                         }),
                     ),
-                P = l.default.create((e) => ({ inlineContainer: { alignItems: "center", justifyContent: "center", display: "inline-flex", marginStart: e.spaces.space2, verticalAlign: "middle" }, animation: { opacity: 1, animationDuration: "1s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }] }, content: { transition: "filter 0.3s, transform 0.3s", filter: "grayscale(100%) opacity(0.7)", position: "relative", bottom: "0.1em" }, hoverCardContainer: { width: 350, maxWidth: "100%", pointerEvents: "none" }, avatarContainer: { backgroundColor: e.colors.whiteOnColor, borderRadius: e.borderRadii.infinite, borderWidth: e.spaces.space1, borderColor: e.colors.borderColor, overflow: "hidden" }, iconContainer: { backgroundColor: e.colors.gray100, borderRadius: e.borderRadii.small, padding: e.spaces.space1 }, containerHovered: { filter: "none", transform: "scale(1.2)" }, avatar: { width: 15, height: 15 }, linkIcon: { color: e.colors.gray800, width: 15, height: 15 } })),
-                T = (e) => {
+                T = d.default.create((e) => ({ inlineContainer: { alignItems: "center", justifyContent: "center", display: "inline-flex", marginStart: e.spaces.space2, verticalAlign: "middle" }, animation: { opacity: 1, animationDuration: "1s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }] }, content: { transition: "filter 0.3s, transform 0.3s", filter: "grayscale(100%) opacity(0.7)", position: "relative", bottom: "0.1em" }, hoverCardContainer: { width: 350, maxWidth: "100%", pointerEvents: "none" }, avatarContainer: { backgroundColor: e.colors.whiteOnColor, borderRadius: e.borderRadii.infinite, borderWidth: e.spaces.space1, borderColor: e.colors.borderColor, overflow: "hidden" }, iconContainer: { backgroundColor: e.colors.gray100, borderRadius: e.borderRadii.small, padding: e.spaces.space1 }, containerHovered: { filter: "none", transform: "scale(1.2)" }, avatar: { width: 15, height: 15 }, linkIcon: { color: e.colors.gray800, width: 15, height: 15 } })),
+                _ = (e) => {
                     const t = e.match(/https:\/\/x\.com(?:\/[^\/]+)*\/status\/(\d+)/);
                     return t ? t[1] : void 0;
                 },
-                _ = { label: i().dc0c8266 },
-                $ = /^https?:\/\/x\.com\/(?!home|explore|notifications|messages|bookmarks|lists|more)(\w+[-\w]*)?\/?$/,
-                L = /https:\/\/x\.com\/.*\?text=([^&]*)/;
-            const H = ["http:", "https:"],
-                F = (e) => {
+                $ = { label: s().dc0c8266 },
+                L = /^https?:\/\/x\.com\/(?!home|explore|notifications|messages|bookmarks|lists|more)(\w+[-\w]*)?\/?$/,
+                H = /https:\/\/x\.com\/.*\?text=([^&]*)/;
+            const F = ["http:", "https:"],
+                N = (e) => {
                     e && e._textRef && e._textRef && (e._textRef.dataset.copyPreserve = "1");
                 };
-            function N({ token: e }) {
-                const { citations: t } = a.useContext(p.$),
-                    n = (0, c.z)(),
-                    l = (0, u.I0)(),
-                    [d, i] = a.useState(!1),
-                    b = e.href || "",
-                    f = a.useMemo(
-                        () =>
-                            (function (e) {
-                                const t = e.match($);
-                                return t ? t[1] : void 0;
-                            })(b),
-                        [b],
-                    ),
+            function W({ token: e }) {
+                const { citations: t } = a.useContext(b.$),
+                    n = (0, u.z)(),
+                    d = (0, m.I0)(),
+                    [i, s] = a.useState(!1),
+                    f = e.href || "",
                     g = a.useMemo(
                         () =>
                             (function (e) {
                                 const t = e.match(L);
                                 return t ? t[1] : void 0;
-                            })(b),
-                        [b],
+                            })(f),
+                        [f],
                     ),
-                    y = t.find((t) => t.url === e.href),
-                    k = (0, s.hC)("responsive_web_grok_show_citations"),
-                    w = (0, h.eX)(),
-                    D = a.useCallback(
+                    y = a.useMemo(
+                        () =>
+                            (function (e) {
+                                const t = e.match(H);
+                                return t ? t[1] : void 0;
+                            })(f),
+                        [f],
+                    ),
+                    k = t.find((t) => t.url === e.href),
+                    w = (0, c.hC)("responsive_web_grok_show_citations"),
+                    D = (0, p.eX)(),
+                    C = a.useCallback(
                         (e) => {
-                            e.preventDefault(), g && (n.scribe({ element: "annotation_text_link", action: "click" }), l((0, m.u)({ analytics: n, conversationKey: w })({ text: decodeURIComponent(g), returnCitations: k })));
+                            e.preventDefault(), y && (n.scribe({ element: "annotation_text_link", action: "click" }), d((0, h.u)({ analytics: n, conversationKey: D })({ text: decodeURIComponent(y), returnCitations: w })));
                         },
-                        [g, w, n, l, k],
+                        [y, D, n, d, w],
                     );
-                let C;
+                let E;
                 try {
-                    e.href && (C = new URL(e.href));
+                    e.href && (E = new URL(e.href));
                 } catch (e) {}
-                if (!C || !H.includes(C.protocol)) {
+                if (!E || !F.includes(E.protocol)) {
                     let t;
-                    return (t = e.text === e.href ? e.text : !e.text && e.href && y ? `(${e.href})` : `${e.text} ${e.href ? `(${e.href})` : ""}`), a.createElement(o.ZP, null, t);
+                    return (t = e.text === e.href ? e.text : !e.text && e.href && k ? `(${e.href})` : `${e.text} ${e.href ? `(${e.href})` : ""}`), a.createElement(o.ZP, null, t);
                 }
                 if (!e.text && e.href) {
-                    if (y) return a.createElement(M, { link: y });
-                    const t = T(e.href);
-                    if (t) return a.createElement(R, { postId: t });
+                    if (k) return a.createElement(v, { link: k });
+                    const t = _(e.href);
+                    if (t) return a.createElement(B, { postId: t });
                 }
-                return g ? a.createElement(o.ZP, { hoverLabel: _, link: e.href, onClick: D, onMouseEnter: () => i(!0), onMouseLeave: () => i(!1), style: [W.expandedLineHeight, W.promptLink, d && W.hoverStyle], withInteractiveStyling: !1 }, e.text) : f ? a.createElement(r.Z, { screenName: f }, a.createElement(o.ZP, { link: e.href }, e.text)) : a.createElement(o.ZP, { link: e.href, ref: F }, e.text);
+                return y
+                    ? a.createElement(o.ZP, { hoverLabel: $, link: e.href, onClick: C, onMouseEnter: () => s(!0), onMouseLeave: () => s(!1), style: [z.expandedLineHeight, z.promptLink, i && z.hoverStyle], withInteractiveStyling: !1 }, e.text)
+                    : g
+                      ? a.createElement(
+                            r.Z,
+                            { screenName: g },
+                            a.createElement(l.Z, null, ({ isHovered: t }) => a.createElement(o.ZP, { link: e.href, style: [z.link, t && z.hoveredLink], withInteractiveStyling: !1 }, e.text)),
+                        )
+                      : a.createElement(l.Z, null, ({ isHovered: t }) => a.createElement(o.ZP, { link: e.href, ref: N, style: [z.link, t && z.hoveredLink], withInteractiveStyling: !1 }, e.text));
             }
-            const W = l.default.create((e) => {
-                const t = "light" === l.default.theme.paletteName ? 0.2 : 0.33;
-                return { expandedLineHeight: { lineHeight: b.Y }, hoverStyle: { color: e.colors.blue600, shadowColor: e.colors.blue600, animationKeyframes: [{ "0%": { shadowOpacity: t, color: e.colors.gray900, shadowColor: e.colors.gray900 }, "100%": { color: e.colors.blue600, shadowColor: e.colors.blue600, shadowOpacity: 1 } }], textDecorationLine: "none", shadowOffset: { width: 0, height: 1 }, animationDuration: "0.25s", shadowOpacity: 1, shadowRadius: 0 }, promptLink: { animationKeyframes: [{ "0%": { color: e.colors.text, shadowColor: "transparent" }, "100%": { color: e.colors.gray900, shadowColor: e.colors.gray900, shadowOpacity: t } }], animationDuration: "2s", color: e.colors.gray900, cursor: "pointer", textDecorationLine: "none", shadowColor: e.colors.gray900, shadowOffset: { width: 0, height: 1 }, shadowOpacity: t, shadowRadius: 0 } };
+            const z = d.default.create((e) => {
+                const t = "light" === d.default.theme.paletteName ? 0.2 : 0.33;
+                return { expandedLineHeight: { lineHeight: f.Y }, hoverStyle: { color: e.colors.blue600, shadowColor: e.colors.blue600, animationKeyframes: [{ "0%": { shadowOpacity: t, color: e.colors.gray900, shadowColor: e.colors.gray900 }, "100%": { color: e.colors.blue600, shadowColor: e.colors.blue600, shadowOpacity: 1 } }], textDecorationLine: "none", shadowOffset: { width: 0, height: 1 }, animationDuration: "0.25s", shadowOpacity: 1, shadowRadius: 0 }, promptLink: { animationKeyframes: [{ "0%": { color: e.colors.text, shadowColor: "transparent" }, "100%": { color: e.colors.gray900, shadowColor: e.colors.gray900, shadowOpacity: t } }], animationDuration: "2s", color: e.colors.gray900, cursor: "pointer", textDecorationLine: "none", shadowColor: e.colors.gray900, shadowOffset: { width: 0, height: 1 }, shadowOpacity: t, shadowRadius: 0 }, link: { color: e.colors.brandColor, textDecorationLine: "underline", textDecorationColor: e.colors.gray600 }, hoveredLink: { textDecorationColor: e.colors.brandColor } };
             });
         },
         444342: (e, t, n) => {
@@ -948,7 +957,6 @@
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-a8f633cf"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-3357bcf2"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-64ffe41f"),
-                        n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-5517db7c"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-6a872481"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-58d4ab8e"),
@@ -1066,4 +1074,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-78699f4a.85400e0a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-78699f4a.4155372a.js.map

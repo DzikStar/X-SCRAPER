@@ -1717,7 +1717,7 @@
                 o("d78131b9", function (a) {
                     return "Dodaj/ukloni korisnika/cu @" + a.screenName + " s popisa";
                 }),
-                o("b3b642fc", "Why this post?"),
+                o("b3b642fc", "Zašto ova objava?"),
                 o("fb4ee11c", "Zašto se taj oglas pojavljuje?"),
                 o("ad50e7d9", function (a) {
                     return "Prikaz " + a.entity + " analitike";
@@ -4150,6 +4150,7 @@
                 o("f388a7ec", "DeepSearch"),
                 o("ab1eb384", "Odaberite željeni način pretraživanja"),
                 o("i330e54c", "Napredno pretraživanje i rasuđivanje"),
+                o("fdcce108", "DeeperSearch"),
                 o("ac64b674", "Prošireno pretraživanje, više rasuđivanja"),
                 o("j22655f2", "Pitajte bilo što"),
                 o("h0681e3e", "Razgovarajte s Grokom, našim pomoćnikom umjetne inteligencije"),
@@ -4176,6 +4177,9 @@
                 o("h15dce2e", "Napredne postavke"),
                 o("ff9dc268", "Uredi upit"),
                 o("acb2baa0", "Stvarajte slike"),
+                o("fe9ad897", function (a) {
+                    return "Edit Image" + a.ttc_grok_preset;
+                }),
                 o("h30fd372", "Isprobajte glasovni način rada"),
                 o("e9fcdd0c", "Pitajte značajku Grok da agresivno pretraži web"),
                 o("fc4e8aba", "Pitajte značajku Grok da navede razloge korak po korak"),
@@ -4914,10 +4918,10 @@
                 o("d2a43a7a", "sadrži i „ai” i „pokretanje”"),
                 o("a8584698", "AI pokretanje"),
                 o("jb6f9292", "sadrži točan izraz „ai pokretanje”"),
-                o("j8ee77c4", "„ai pokretanje”"),
-                o("d0480758", "sadrži ili „ai” ili „pokretanje” (ili oboje)"),
-                o("f0048fa2", "ai ILI pokretanje");
-            o("da0df186", "sadrži „ai”, ali ne „pokretanje”"),
+                o("j8ee77c4", "„ai pokretanje”");
+            o("d0480758", "sadrži ili „ai” ili „pokretanje” (ili oboje)"),
+                o("f0048fa2", "ai ILI pokretanje"),
+                o("da0df186", "sadrži „ai”, ali ne „pokretanje”"),
                 o("f2f463ea", "ai-pokretanje"),
                 o("a10a357e", "sadrži „ai” i ima najmanje 50 oznaka „sviđa mi se”"),
                 o("ca8ed1e8", "ai min_faves:50"),
@@ -5880,10 +5884,10 @@
                 o("b732a4cc", "Kada to učinite, vidjet ćete njegove/njezine objave ovdje."),
                 o("hff48914", "Trenutačno nije moguće pronaći nijednu objavu."),
                 o("hb52cc4a", "Pokušajte ponovno kasnije."),
-                o("e50e1bb0", "Dobro došli u Zajednice"),
-                o("i6829daa", "Zajednice su moderirane grupe za raspravu u kojima se korisnici platforme X mogu povezivati i dijeliti sadržaj."),
-                o("fc5c6914", "Upoznajte druge osobe koje dijele vaše interese");
-            o("aa1a9820", "Uključite se u Zajednice i povežite se s osobama koje dijele vaše interese."),
+                o("e50e1bb0", "Dobro došli u Zajednice");
+            o("i6829daa", "Zajednice su moderirane grupe za raspravu u kojima se korisnici platforme X mogu povezivati i dijeliti sadržaj."),
+                o("fc5c6914", "Upoznajte druge osobe koje dijele vaše interese"),
+                o("aa1a9820", "Uključite se u Zajednice i povežite se s osobama koje dijele vaše interese."),
                 o("edef4c82", "Objava izravno u Zajednicu"),
                 o("a7640df6", "Vaše se objave dijele s članovima Zajednice i osobama koje vas prate."),
                 o("h3bb8068", "Zatražite pojačanje kada vam je potrebno"),
@@ -6878,10 +6882,10 @@
                 o("c2059276", "Neka vaši odgovori budu istaknuti."),
                 o("b023ec20", "Maksimalno isticanje odgovora"),
                 o("g337328e", "Ostvarite najveću vidljivost svojih odgovora."),
-                o("fa006202", "Pozadinska reprodukcija videozapisa"),
-                o("jf389778", "Gledajte dok pregledavate ili upotrebljavate druge aplikacije"),
-                o("f2977d80", "Mape s knjižnim oznakama");
-            o("j1d3d910", "Neka vaše spremljene objave budu organizirane kako biste im mogli jednostavno pristupiti"),
+                o("fa006202", "Pozadinska reprodukcija videozapisa");
+            o("jf389778", "Gledajte dok pregledavate ili upotrebljavate druge aplikacije"),
+                o("f2977d80", "Mape s knjižnim oznakama"),
+                o("j1d3d910", "Neka vaše spremljene objave budu organizirane kako biste im mogli jednostavno pristupiti"),
                 o("f0f48668", "Premium podrška"),
                 o("c3148608", "Brže dobijte pomoć kada vam je potrebna"),
                 o("b485ca6e", "Kartica Istaknuto"),
@@ -7854,9 +7858,7 @@
                 o("e7e36818", "Računi za oglase ispunjavaju uvjete za promoviranje poslova kada su u potpunosti postavljeni i imaju izvor financiranja."),
                 o("c28566e0", "Račun za oglase"),
                 o("c80160d3", "Oglašavanje"),
-                o("ff0edac0", "Sigurno želite otkazati pretplatu?"),
-                o("h2ac0348", "Ne, vrati se"),
-                o("dbf9667e", "Da");
+                o("ff0edac0", "Sigurno želite otkazati pretplatu?");
             function t(a, e) {
                 for (var i = 0; i < e.length; i++) {
                     var o = e[i];
@@ -7895,7 +7897,9 @@
                     r(a, e)
                 );
             }
-            o("j7592572", "Polukružni okret"),
+            o("h2ac0348", "Ne, vrati se"),
+                o("dbf9667e", "Da"),
+                o("j7592572", "Polukružni okret"),
                 o("ee778942", "Semafor"),
                 o("fdd57981", function (a) {
                     return "Želimo vam ponuditi besplatan jednokratan kredit za oglase u iznosu od " + a.totalAmount + " USD.";
@@ -8918,16 +8922,16 @@
                 }),
                 o("dbeae6cf", function (a) {
                     return "još " + a.count + " slušatelj" + n(a.count, "a", "", "a");
-                }),
-                o("d2543d97", function (a) {
-                    return "+" + a.count;
-                }),
+                });
+            o("d2543d97", function (a) {
+                return "+" + a.count;
+            }),
                 o("dc718e53", function (a) {
                     return "+još " + n(a.count, "njih ", "", "njih ") + a.count;
-                });
-            o("d0e7b11b", function (a) {
-                return a.date + " u " + a.time;
-            }),
+                }),
+                o("d0e7b11b", function (a) {
+                    return a.date + " u " + a.time;
+                }),
                 o("b4349cbc", function (a) {
                     return "" + a.relativeDay;
                 }),
@@ -13209,4 +13213,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hr.b58554ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hr.cf803f0a.js.map

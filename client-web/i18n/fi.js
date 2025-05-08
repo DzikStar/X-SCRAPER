@@ -1710,7 +1710,7 @@
                 e("d78131b9", function (a) {
                     return "Lisää/poista @" + a.screenName + " listoihin/listoista";
                 }),
-                e("b3b642fc", "Why this post?"),
+                e("b3b642fc", "Miksi tämä julkaisu?"),
                 e("fb4ee11c", "Miksi tämä mainos?"),
                 e("ad50e7d9", function (a) {
                     return "Näytä " + a.entity + "tilastot";
@@ -4143,6 +4143,7 @@
                 e("f388a7ec", "DeepSearch"),
                 e("ab1eb384", "Valitse haluamasi hakumoodi"),
                 e("i330e54c", "Edistynyt haku ja päättely"),
+                e("fdcce108", "DeeperSearch"),
                 e("ac64b674", "Laajennettu haku, enemmän päättelyä"),
                 e("j22655f2", "Kysy mitä vain"),
                 e("h0681e3e", "Juttele tekoälyapuri Grokin kanssa"),
@@ -4169,6 +4170,9 @@
                 e("h15dce2e", "Lisäasetukset"),
                 e("ff9dc268", "Muokkaa kehotetta"),
                 e("acb2baa0", "Luo kuvia"),
+                e("fe9ad897", function (a) {
+                    return "Edit Image" + a.ttc_grok_preset;
+                }),
                 e("h30fd372", "Kokeile puhemoodia"),
                 e("e9fcdd0c", "Pyydä Grokia tekemään aggressiivinen verkkohaku"),
                 e("fc4e8aba", "Pyydä Grokia päättelemään vaiheittaisesti"),
@@ -4907,10 +4911,10 @@
                 e("d2a43a7a", 'sisältää sekä termit "ai" että "startup"'),
                 e("a8584698", "ai startup"),
                 e("jb6f9292", 'sisältää koko fraasin "ai startup"'),
-                e("j8ee77c4", '"ai startup"'),
-                e("d0480758", 'sisältää joko termin "ai" tai "startup" (tai molemmat)'),
-                e("f0048fa2", "ai OR startup");
-            e("da0df186", 'sisältää termin "ai", mutta ei termiä "startup"'),
+                e("j8ee77c4", '"ai startup"');
+            e("d0480758", 'sisältää joko termin "ai" tai "startup" (tai molemmat)'),
+                e("f0048fa2", "ai OR startup"),
+                e("da0df186", 'sisältää termin "ai", mutta ei termiä "startup"'),
                 e("f2f463ea", "ai -startup"),
                 e("a10a357e", 'sisältää termin "ai" ja on saanut ainakin 50 tykkäystä'),
                 e("ca8ed1e8", "ai min_faves:50"),
@@ -5873,10 +5877,10 @@
                 e("b732a4cc", "Kun teet sen, ne näkyvät täällä."),
                 e("hff48914", "Julkaisuja ei löydy tällä hetkellä."),
                 e("hb52cc4a", "Yritä myöhemmin uudelleen."),
-                e("e50e1bb0", "Tervetuloa Yhteisöihin"),
-                e("i6829daa", "Yhteisöt ovat moderoituja keskusteluryhmiä, joista X:n käyttäjät löytävät samanhenkistä väkeä."),
-                e("fc5c6914", "Tapaa muita samoista asioista kiinnostuneita");
-            e("aa1a9820", "Liity yhteisöihin, niin voit pitää yhteyttä ihmisiin, jotka ovat kiinnostuneista samoista asioista kuin sinä."),
+                e("e50e1bb0", "Tervetuloa Yhteisöihin");
+            e("i6829daa", "Yhteisöt ovat moderoituja keskusteluryhmiä, joista X:n käyttäjät löytävät samanhenkistä väkeä."),
+                e("fc5c6914", "Tapaa muita samoista asioista kiinnostuneita"),
+                e("aa1a9820", "Liity yhteisöihin, niin voit pitää yhteyttä ihmisiin, jotka ovat kiinnostuneista samoista asioista kuin sinä."),
                 e("edef4c82", "Julkaise suoraan Yhteisöön"),
                 e("a7640df6", "Yhteisön jäsenet ja seuraajasi näkevät julkaisusi."),
                 e("h3bb8068", "Löydä samanhenkistä väkeä"),
@@ -6871,10 +6875,10 @@
                 e("c2059276", "Vastaustesi tehostus."),
                 e("b023ec20", "Suurin vastausten tehostus"),
                 e("g337328e", "Saa vastauksillesi paras näkyvyys."),
-                e("fa006202", "Videon toisto taustalla"),
-                e("jf389778", "Katsele selatessasi tai käyttäessäsi muita sovelluksia"),
-                e("f2977d80", "Kirjanmerkkikansiot");
-            e("j1d3d910", "Pidä tallennetut julkaisut helposti tallessa"),
+                e("fa006202", "Videon toisto taustalla");
+            e("jf389778", "Katsele selatessasi tai käyttäessäsi muita sovelluksia"),
+                e("f2977d80", "Kirjanmerkkikansiot"),
+                e("j1d3d910", "Pidä tallennetut julkaisut helposti tallessa"),
                 e("f0f48668", "Premium-tuki"),
                 e("c3148608", "Saa apu nopeammin sitä tarvitessasi"),
                 e("b485ca6e", "Kohokohdat-välilehti"),
@@ -7847,9 +7851,7 @@
                 e("e7e36818", "Työpaikkailmoituksia voi hyödyntää mainostileillä, kun niiden rahoituslähde on kokonaan määritetty."),
                 e("c28566e0", "Mainostili"),
                 e("c80160d3", "mainontasivulta"),
-                e("ff0edac0", "Haluatko varmasti perua tilauksesi?"),
-                e("h2ac0348", "En, palaan takaisin"),
-                e("dbf9667e", "Olen varma");
+                e("ff0edac0", "Haluatko varmasti perua tilauksesi?");
             function s(a, t) {
                 for (var i = 0; i < t.length; i++) {
                     var e = t[i];
@@ -7888,7 +7890,9 @@
                     u(a, t)
                 );
             }
-            e("j7592572", "U-käännös"),
+            e("h2ac0348", "En, palaan takaisin"),
+                e("dbf9667e", "Olen varma"),
+                e("j7592572", "U-käännös"),
                 e("ee778942", "Liikennevalot"),
                 e("fdd57981", function (a) {
                     return "Saat meiltä " + a.totalAmount + " dollaria mainoskrediittiä.";
@@ -8911,16 +8915,16 @@
                 }),
                 e("dbeae6cf", function (a) {
                     return a.count + " muu" + n(a.count, " kuuntelij", "ta kuuntelija") + "a";
-                }),
-                e("d2543d97", function (a) {
-                    return "+" + a.count;
-                }),
+                });
+            e("d2543d97", function (a) {
+                return "+" + a.count;
+            }),
                 e("dc718e53", function (a) {
                     return "+" + a.count + " muu" + n(a.count, "", "ta");
-                });
-            e("d0e7b11b", function (a) {
-                return a.date + " klo " + a.time;
-            }),
+                }),
+                e("d0e7b11b", function (a) {
+                    return a.date + " klo " + a.time;
+                }),
                 e("b4349cbc", function (a) {
                     return "" + a.relativeDay;
                 }),
@@ -13201,4 +13205,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.ffdb184a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.5e7f1d4a.js.map

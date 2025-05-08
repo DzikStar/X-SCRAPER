@@ -4152,6 +4152,7 @@
                 n("f388a7ec", "DeepSearch"),
                 n("ab1eb384", "Vyberte požadovaný režim vyhľadávania"),
                 n("i330e54c", "Pokročilé vyhľadávanie a uvažovanie"),
+                n("fdcce108", "DeeperSearch"),
                 n("ac64b674", "Rozšírené vyhľadávanie, viac uvažovania"),
                 n("j22655f2", "Spýtajte sa čokoľvek"),
                 n("h0681e3e", "Rozprávajte sa s Grokom, naším asistentom s AI"),
@@ -4178,6 +4179,9 @@
                 n("h15dce2e", "Rozšírené nastavenia"),
                 n("ff9dc268", "Upraviť pokyn"),
                 n("acb2baa0", "Vytvárajte obrázky"),
+                n("fe9ad897", function (e) {
+                    return "Edit Image" + e.ttc_grok_preset;
+                }),
                 n("h30fd372", "Vyskúšajte hlasový režim"),
                 n("e9fcdd0c", "Spýtajte sa Groka na intenzívnejšie prehľadávanie webu"),
                 n("fc4e8aba", "Spýtajte sa Groka na systematické uvažovanie"),
@@ -4916,10 +4920,10 @@
                 n("d2a43a7a", "obsahuje „ai“ aj „startup“"),
                 n("a8584698", "ai startup"),
                 n("jb6f9292", "obsahuje presnú frázu „ai startup“"),
-                n("j8ee77c4", '"ai startup"'),
-                n("d0480758", "obsahuje „ai“ alebo „startup“ (alebo obidve slová)"),
-                n("f0048fa2", "ai OR startup");
-            n("da0df186", "obsahuje „ai“, ale nie „startup“"),
+                n("j8ee77c4", '"ai startup"');
+            n("d0480758", "obsahuje „ai“ alebo „startup“ (alebo obidve slová)"),
+                n("f0048fa2", "ai OR startup"),
+                n("da0df186", "obsahuje „ai“, ale nie „startup“"),
                 n("f2f463ea", "ai -startup"),
                 n("a10a357e", "obsahuje „ai“ a má aspoň 50 označení Páči sa"),
                 n("ca8ed1e8", "ai min_faves:50"),
@@ -5882,10 +5886,10 @@
                 n("b732a4cc", "Keď tak urobíte, uvidíte tu ich príspevky."),
                 n("hff48914", "Momentálne sa nepodarilo nájsť žiadne príspevky"),
                 n("hb52cc4a", "Skúste to neskôr znova."),
-                n("e50e1bb0", "Vitajte v Komunitách"),
-                n("i6829daa", "Komunity sú moderované diskusné skupiny, kde môžu používatelia služby X komunikovať a zdieľať obsah."),
-                n("fc5c6914", "Spoznajte ďalších používateľov s rovnakými záujmami");
-            n("aa1a9820", "Pripojte sa ku komunitám a spojte sa s ľuďmi, ktorí s vami zdieľajú záujmy."),
+                n("e50e1bb0", "Vitajte v Komunitách");
+            n("i6829daa", "Komunity sú moderované diskusné skupiny, kde môžu používatelia služby X komunikovať a zdieľať obsah."),
+                n("fc5c6914", "Spoznajte ďalších používateľov s rovnakými záujmami"),
+                n("aa1a9820", "Pripojte sa ku komunitám a spojte sa s ľuďmi, ktorí s vami zdieľajú záujmy."),
                 n("edef4c82", "Uverejniť priamo v komunite"),
                 n("a7640df6", "Vaše príspevky sa zdieľajú s členmi komunity a vašimi sledujúcimi."),
                 n("h3bb8068", "Získajte zálohu, keď ju potrebujete"),
@@ -6880,10 +6884,10 @@
                 n("c2059276", "Podporte svoje odpovede."),
                 n("b023ec20", "Maximálna podpora odpovedí"),
                 n("g337328e", "Zvýšte viditeľnosť svojich odpovedí na maximum"),
-                n("fa006202", "Prehrávanie videa na pozadí"),
-                n("jf389778", "Sledujte videá pri prehliadaní alebo používaní iných aplikácií"),
-                n("f2977d80", "Označenie priečinkov záložkami");
-            n("j1d3d910", "Majte v uložených príspevkoch poriadok, aby ste sa k nim vedeli ľahko dostať"),
+                n("fa006202", "Prehrávanie videa na pozadí");
+            n("jf389778", "Sledujte videá pri prehliadaní alebo používaní iných aplikácií"),
+                n("f2977d80", "Označenie priečinkov záložkami"),
+                n("j1d3d910", "Majte v uložených príspevkoch poriadok, aby ste sa k nim vedeli ľahko dostať"),
                 n("f0f48668", "Prémiová podpora"),
                 n("c3148608", "Získajte rýchlejšiu pomoc, keď ju potrebujete"),
                 n("b485ca6e", "Karta Výber"),
@@ -7856,9 +7860,7 @@
                 n("e7e36818", "Reklamné účty majú nárok na sponzorovanie pracovných miest, keď majú nastavený zdroj financovania."),
                 n("c28566e0", "Pridať účet"),
                 n("c80160d3", "Reklama"),
-                n("ff0edac0", "Ste si istí, že chcete zrušiť svoje predplatné?"),
-                n("h2ac0348", "Nie, chcem sa vrátiť."),
-                n("dbf9667e", "Určite.");
+                n("ff0edac0", "Ste si istí, že chcete zrušiť svoje predplatné?");
             function i(e, a) {
                 for (var o = 0; o < a.length; o++) {
                     var n = a[o];
@@ -7897,7 +7899,9 @@
                     r(e, a)
                 );
             }
-            n("j7592572", "Zmena názoru"),
+            n("h2ac0348", "Nie, chcem sa vrátiť."),
+                n("dbf9667e", "Určite."),
+                n("j7592572", "Zmena názoru"),
                 n("ee778942", "Semafor"),
                 n("fdd57981", function (e) {
                     return "Radi by sme vám ponúkli bezplatný jednorazový reklamný kredit vo výške " + e.totalAmount + " USD.";
@@ -8920,16 +8924,16 @@
                 }),
                 n("dbeae6cf", function (e) {
                     return "" + t(e.count, e.count + " ďalší poslucháči", "niekoľko ďalších poslucháčov (" + e.count + ")", e.count + " ďalší poslucháč", e.count + " ďalších poslucháčov");
-                }),
-                n("d2543d97", function (e) {
-                    return "+" + e.count;
-                }),
+                });
+            n("d2543d97", function (e) {
+                return "+" + e.count;
+            }),
                 n("dc718e53", function (e) {
                     return "+" + t(e.count, e.count + " ďalší používatelia", "niekoľkých ďalších používateľov (" + e.count + ")", e.count + " ďalší používateľ", e.count + " ďalších používateľov");
-                });
-            n("d0e7b11b", function (e) {
-                return e.date + " o " + e.time;
-            }),
+                }),
+                n("d0e7b11b", function (e) {
+                    return e.date + " o " + e.time;
+                }),
                 n("b4349cbc", function (e) {
                     return "" + e.relativeDay;
                 }),
@@ -13203,4 +13207,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sk.29691c7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sk.923c718a.js.map

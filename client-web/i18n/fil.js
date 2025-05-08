@@ -1710,7 +1710,7 @@
                 i("d78131b9", function (a) {
                     return "Idagdag/alisin si @" + a.screenName + " sa Mga Listahan";
                 }),
-                i("b3b642fc", "Why this post?"),
+                i("b3b642fc", "Bakit ang post na ito?"),
                 i("fb4ee11c", "Bakit ang ad na ito?"),
                 i("ad50e7d9", function (a) {
                     return "Tingnan ang analytics ng " + a.entity;
@@ -4143,6 +4143,7 @@
                 i("f388a7ec", "DeepSearch"),
                 i("ab1eb384", "Pindutin ang gusto mong mode ng paghahanap"),
                 i("i330e54c", "Advanced na paghahanap at pangangatuwiran"),
+                i("fdcce108", "DeeperSearch"),
                 i("ac64b674", "Pinalawak na paghahanap, mas malalim na pangangatuwiran"),
                 i("j22655f2", "Magtanong ng kahit ano"),
                 i("h0681e3e", "Makipag-usap sa Grok, ang aming AI Assistant"),
@@ -4169,6 +4170,9 @@
                 i("h15dce2e", "Mga Advanced na Setting"),
                 i("ff9dc268", "I-edit ang prompt"),
                 i("acb2baa0", "Gumawa ng mga Larawan"),
+                i("fe9ad897", function (a) {
+                    return "Edit Image" + a.ttc_grok_preset;
+                }),
                 i("h30fd372", "Subukan ang Voice Mode"),
                 i("e9fcdd0c", "Hilingin sa Grok na agresibong maghanap sa web"),
                 i("fc4e8aba", "Hilingin sa Grok na mangatuwiran nang step-by-step"),
@@ -4907,10 +4911,10 @@
                 i("d2a43a7a", 'naglalaman ng "ai" at "startup"'),
                 i("a8584698", "ai startup"),
                 i("jb6f9292", 'naglalaman ng exact phrase na "ai startup"'),
-                i("j8ee77c4", '"ai startup"'),
-                i("d0480758", 'naglalaman ng "ai" o "startup" (o pareho)'),
-                i("f0048fa2", "ai O startup");
-            i("da0df186", 'naglalaman ng "ai", pero hindi "startup"'),
+                i("j8ee77c4", '"ai startup"');
+            i("d0480758", 'naglalaman ng "ai" o "startup" (o pareho)'),
+                i("f0048fa2", "ai O startup"),
+                i("da0df186", 'naglalaman ng "ai", pero hindi "startup"'),
                 i("f2f463ea", "ai -startup"),
                 i("a10a357e", 'naglalaman ng "ai" at may hindi bababa sa 50 like'),
                 i("ca8ed1e8", "ai min_faves:50"),
@@ -5873,10 +5877,10 @@
                 i("b732a4cc", "Kapag sumali ka, makikita mo ang mga iyon dito."),
                 i("hff48914", "Walang mahanap na post sa ngayon."),
                 i("hb52cc4a", "Subukan ulit mamaya."),
-                i("e50e1bb0", "Welcome sa Mga Komunidad"),
-                i("i6829daa", "Mga mino-moderate na grupo ng talakayan ang Mga Komunidad kung saan puwedeng kumonekta at magbahagi ang mga tao sa X."),
-                i("fc5c6914", "Kilalanin ang ibang tao na kapareho mo ng mga interes");
-            i("aa1a9820", "Sumali sa Mga Komunidad para kumonekta sa mga tao na may mga interes na tulad ng sa iyo."),
+                i("e50e1bb0", "Welcome sa Mga Komunidad");
+            i("i6829daa", "Mga mino-moderate na grupo ng talakayan ang Mga Komunidad kung saan puwedeng kumonekta at magbahagi ang mga tao sa X."),
+                i("fc5c6914", "Kilalanin ang ibang tao na kapareho mo ng mga interes"),
+                i("aa1a9820", "Sumali sa Mga Komunidad para kumonekta sa mga tao na may mga interes na tulad ng sa iyo."),
                 i("edef4c82", "Direktang mag-post sa isang Komunidad"),
                 i("a7640df6", "Ibinahagi ang mga post mo sa mga member ng Komunidad at sa mga follower mo."),
                 i("h3bb8068", "Mag-back up kung kailangan mo"),
@@ -6871,10 +6875,10 @@
                 i("c2059276", "I-boost ang mga reply mo."),
                 i("b023ec20", "Max na Pag-boost ng Reply"),
                 i("g337328e", "Makakuha ng pinakamataas na visibility para sa mga reply mo."),
-                i("fa006202", "Pag-playback ng video sa background"),
-                i("jf389778", "Manood habang nagba-browse o gamitin ang ibang app"),
-                i("f2977d80", "Mga folder ng bookmark");
-            i("j1d3d910", "Panatilihing maayos ang mga naka-save na post mo para sa madaling pag-access"),
+                i("fa006202", "Pag-playback ng video sa background");
+            i("jf389778", "Manood habang nagba-browse o gamitin ang ibang app"),
+                i("f2977d80", "Mga folder ng bookmark"),
+                i("j1d3d910", "Panatilihing maayos ang mga naka-save na post mo para sa madaling pag-access"),
                 i("f0f48668", "Premium na suporta"),
                 i("c3148608", "Makakuha nang mas mabilis na tulong kapag kailangan mo"),
                 i("b485ca6e", "Mga Highlight tab"),
@@ -7847,9 +7851,7 @@
                 i("e7e36818", "Kuwalipikado ang mga ad account para sa pag-promote ng trabaho kapag ganap nang naka-set up ang mga ito na may mapagkukunan ng pondo."),
                 i("c28566e0", "Ad Account"),
                 i("c80160d3", "Advertising"),
-                i("ff0edac0", "Sigurado ka bang gusto mong kanselahin ang subscription mo?"),
-                i("h2ac0348", "Hindi, ibalik ako"),
-                i("dbf9667e", "Sigurado ako");
+                i("ff0edac0", "Sigurado ka bang gusto mong kanselahin ang subscription mo?");
             function t(a, n) {
                 for (var g = 0; g < n.length; g++) {
                     var i = n[g];
@@ -7888,7 +7890,9 @@
                     o(a, n)
                 );
             }
-            i("j7592572", "Mag-U turn"),
+            i("h2ac0348", "Hindi, ibalik ako"),
+                i("dbf9667e", "Sigurado ako"),
+                i("j7592572", "Mag-U turn"),
                 i("ee778942", "Mga ilaw ng trapiko"),
                 i("fdd57981", function (a) {
                     return "Gusto ka naming alukin ng libreng one-time " + a.totalAmount + " na USD ad credit.";
@@ -8911,16 +8915,16 @@
                 }),
                 i("dbeae6cf", function (a) {
                     return a.count + " pang tagapakinig";
-                }),
-                i("d2543d97", function (a) {
-                    return "+" + a.count;
-                }),
+                });
+            i("d2543d97", function (a) {
+                return "+" + a.count;
+            }),
                 i("dc718e53", function (a) {
                     return "+" + a.count + " pang iba";
-                });
-            i("d0e7b11b", function (a) {
-                return a.date + " nang " + a.time;
-            }),
+                }),
+                i("d0e7b11b", function (a) {
+                    return a.date + " nang " + a.time;
+                }),
                 i("b4349cbc", function (a) {
                     return "" + a.relativeDay;
                 }),
@@ -13200,4 +13204,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fil.221c019a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fil.2a6cfd1a.js.map

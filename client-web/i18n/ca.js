@@ -4143,6 +4143,7 @@
                 t("f388a7ec", "DeepSearch"),
                 t("ab1eb384", "Selecciona el mode de cerca que vulguis"),
                 t("i330e54c", "Cerca avançada i raonament"),
+                t("fdcce108", "DeeperSearch"),
                 t("ac64b674", "Cerca ampliada, més raonament"),
                 t("j22655f2", "Pregunta qualsevol cosa"),
                 t("h0681e3e", "Parla amb Grok, el nostre assistent d'IA"),
@@ -4169,6 +4170,9 @@
                 t("h15dce2e", "Configuració avançada"),
                 t("ff9dc268", "Edita la sol·licitud"),
                 t("acb2baa0", "Crea imatges"),
+                t("fe9ad897", function (e) {
+                    return "Edit Image" + e.ttc_grok_preset;
+                }),
                 t("h30fd372", "Prova el mode de veu"),
                 t("e9fcdd0c", "Demana-li a Grok que cerqui de manera enèrgica al web"),
                 t("fc4e8aba", "Demana-li a Grok que raoni pas a pas"),
@@ -4907,10 +4911,10 @@
                 t("d2a43a7a", 'conté "ia" i "empresa emergent"'),
                 t("a8584698", "empresa emergent d'ia"),
                 t("jb6f9292", 'conté la frase exacta "empresa emergent d\'ia"'),
-                t("j8ee77c4", '"empresa emergent d\'ia"'),
-                t("d0480758", 'conté "ia" o "empresa emergent" (o ambdós)'),
-                t("f0048fa2", "ia O empresa emergent");
-            t("da0df186", 'conté "ia", però no "empresa emergent"'),
+                t("j8ee77c4", '"empresa emergent d\'ia"');
+            t("d0480758", 'conté "ia" o "empresa emergent" (o ambdós)'),
+                t("f0048fa2", "ia O empresa emergent"),
+                t("da0df186", 'conté "ia", però no "empresa emergent"'),
                 t("f2f463ea", "ia -empresa emergent"),
                 t("a10a357e", 'conté "ia" i té almenys 50 m\'agrada'),
                 t("ca8ed1e8", "ai min_faves:50"),
@@ -5873,10 +5877,10 @@
                 t("b732a4cc", "Si ho fas, veuràs les seves publicacions aquí."),
                 t("hff48914", "En aquest moment, no s'ha trobat cap publicació."),
                 t("hb52cc4a", "Torna-ho a provar més tard."),
-                t("e50e1bb0", "Et donem la benvinguda a les comunitats"),
-                t("i6829daa", "Les comunitats són grups de debat moderats on els usuaris de X poden connectar i compartir continguts."),
-                t("fc5c6914", "Coneix altres usuaris amb els teus interessos");
-            t("aa1a9820", "Uneix-te a les comunitats i connecta amb persones amb qui comparteixes interessos."),
+                t("e50e1bb0", "Et donem la benvinguda a les comunitats");
+            t("i6829daa", "Les comunitats són grups de debat moderats on els usuaris de X poden connectar i compartir continguts."),
+                t("fc5c6914", "Coneix altres usuaris amb els teus interessos"),
+                t("aa1a9820", "Uneix-te a les comunitats i connecta amb persones amb qui comparteixes interessos."),
                 t("edef4c82", "Publica directament a una Comunitat"),
                 t("a7640df6", "Les teves publicacions es comparteixen amb els membres de la comunitat i els teus seguidors."),
                 t("h3bb8068", "Obtén suport quan el necessitis"),
@@ -6871,10 +6875,10 @@
                 t("c2059276", "Dona ressò a les teves respostes."),
                 t("b023ec20", "Màxima priorització de respostes"),
                 t("g337328e", "Aconsegueix màxima visibilitat per a les teves respostes."),
-                t("fa006202", "Reproducció de vídeo en segon pla"),
-                t("jf389778", "Mira'ls mentre navegues o utilitzes altres aplicacions"),
-                t("f2977d80", "Carpetes de preferits");
-            t("j1d3d910", "Desa i organitza publicacions per accedir-hi fàcilment"),
+                t("fa006202", "Reproducció de vídeo en segon pla");
+            t("jf389778", "Mira'ls mentre navegues o utilitzes altres aplicacions"),
+                t("f2977d80", "Carpetes de preferits"),
+                t("j1d3d910", "Desa i organitza publicacions per accedir-hi fàcilment"),
                 t("f0f48668", "Assistència prèmium"),
                 t("c3148608", "Rep ajuda més ràpidament quan la necessitis"),
                 t("b485ca6e", "Pestanya Destacats"),
@@ -7847,9 +7851,7 @@
                 t("e7e36818", "Els comptes publicitaris poden promocionar feines quan s'han configurat completament amb una font financera."),
                 t("c28566e0", "Afegeix el compte"),
                 t("c80160d3", "Publicitat"),
-                t("ff0edac0", "Segur que vols cancel·lar la subscripció?"),
-                t("h2ac0348", "No, vull tornar enrere"),
-                t("dbf9667e", "N'estic segur");
+                t("ff0edac0", "Segur que vols cancel·lar la subscripció?");
             function s(e, a) {
                 for (var i = 0; i < a.length; i++) {
                     var t = a[i];
@@ -7888,7 +7890,9 @@
                     n(e, a)
                 );
             }
-            t("j7592572", "Gir de 180 graus"),
+            t("h2ac0348", "No, vull tornar enrere"),
+                t("dbf9667e", "N'estic segur"),
+                t("j7592572", "Gir de 180 graus"),
                 t("ee778942", "Semàfors"),
                 t("fdd57981", function (e) {
                     return "Et volem oferir " + e.totalAmount + " $ de crèdit gratuït per a publicitat d'un sol ús.";
@@ -8911,16 +8915,16 @@
                 }),
                 t("dbeae6cf", function (e) {
                     return e.count + " oient" + r(e.count, "", "s") + " més";
-                }),
-                t("d2543d97", function (e) {
-                    return "+" + e.count;
-                }),
+                });
+            t("d2543d97", function (e) {
+                return "+" + e.count;
+            }),
                 t("dc718e53", function (e) {
                     return "+" + e.count + " usuari" + r(e.count, "", "s") + " més";
-                });
-            t("d0e7b11b", function (e) {
-                return e.date + " a les " + e.time;
-            }),
+                }),
+                t("d0e7b11b", function (e) {
+                    return e.date + " a les " + e.time;
+                }),
                 t("b4349cbc", function (e) {
                     return "" + e.relativeDay;
                 }),
@@ -13188,4 +13192,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ca.b426b3aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ca.38fa36fa.js.map

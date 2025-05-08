@@ -1721,7 +1721,7 @@
                 t("d78131b9", function (e) {
                     return "Adaugă/elimină @" + e.screenName + " din liste";
                 }),
-                t("b3b642fc", "Why this post?"),
+                t("b3b642fc", "De ce această postare?"),
                 t("fb4ee11c", "De ce această reclamă?"),
                 t("ad50e7d9", function (e) {
                     return "Vezi analiza " + e.entity;
@@ -4154,6 +4154,7 @@
                 t("f388a7ec", "DeepSearch"),
                 t("ab1eb384", "Selectează modul de căutare dorit"),
                 t("i330e54c", "Căutare avansată și argumentare"),
+                t("fdcce108", "DeeperSearch"),
                 t("ac64b674", "Căutare extinsă, mai multă argumentare"),
                 t("j22655f2", "Întreabă orice"),
                 t("h0681e3e", "Vorbește cu Grok, asistentul nostru AI"),
@@ -4180,6 +4181,9 @@
                 t("h15dce2e", "Setări avansate"),
                 t("ff9dc268", "Editează promptul"),
                 t("acb2baa0", "Creează imagini"),
+                t("fe9ad897", function (e) {
+                    return "Edit Image" + e.ttc_grok_preset;
+                }),
                 t("h30fd372", "Încearcă modul Voce"),
                 t("e9fcdd0c", "Cere-i lui Grok să caute intens pe internet"),
                 t("fc4e8aba", "Cere-i lui Grok un raționament pas cu pas"),
@@ -4918,10 +4922,10 @@
                 t("d2a43a7a", "conține atât „ai”, cât și „start-up”"),
                 t("a8584698", "start-up ai"),
                 t("jb6f9292", "conține exact structura „start-up ai”"),
-                t("j8ee77c4", "„start-up ai”"),
-                t("d0480758", "conține ori „ai” ori „start-up” (sau ambele)"),
-                t("f0048fa2", "ai SAU start-up");
-            t("da0df186", "conține „ai”, dar nu „start-up”"),
+                t("j8ee77c4", "„start-up ai”");
+            t("d0480758", "conține ori „ai” ori „start-up” (sau ambele)"),
+                t("f0048fa2", "ai SAU start-up"),
+                t("da0df186", "conține „ai”, dar nu „start-up”"),
                 t("f2f463ea", "ai -start-up"),
                 t("a10a357e", "conține „ai” și are cel puțin 50 de aprecieri"),
                 t("ca8ed1e8", "ai min_faves:50"),
@@ -5884,10 +5888,10 @@
                 t("b732a4cc", "Odată ce faci acest lucru, le vei vedea postările aici."),
                 t("hff48914", "În acest moment, nu s-au putut găsi postări."),
                 t("hb52cc4a", "Te rugăm să încerci din nou mai târziu."),
-                t("e50e1bb0", "Bun venit la Comunități"),
-                t("i6829daa", "Comunitățile sunt grupuri de discuții moderate, unde persoanele de pe X se pot conecta și pot distribui conținut."),
-                t("fc5c6914", "Întâlnește alte persoane care au aceleași interese ca tine");
-            t("aa1a9820", "Alătură-te Comunităților pentru a intra în contact cu persoane care au aceleași interese ca tine."),
+                t("e50e1bb0", "Bun venit la Comunități");
+            t("i6829daa", "Comunitățile sunt grupuri de discuții moderate, unde persoanele de pe X se pot conecta și pot distribui conținut."),
+                t("fc5c6914", "Întâlnește alte persoane care au aceleași interese ca tine"),
+                t("aa1a9820", "Alătură-te Comunităților pentru a intra în contact cu persoane care au aceleași interese ca tine."),
                 t("edef4c82", "Postează direct într-o Comunitate"),
                 t("a7640df6", "Postările tale sunt distribuite membrilor Comunității și urmăritorilor tăi."),
                 t("h3bb8068", "Cere ajutor când ai nevoie"),
@@ -6882,10 +6886,10 @@
                 t("c2059276", "Dă boost răspunsurilor tale."),
                 t("b023ec20", "Prioritizare maximă a răspunsurilor"),
                 t("g337328e", "Obține cea mai mare vizibilitate pentru răspunsurile tale."),
-                t("fa006202", "Redare videoclip în fundal"),
-                t("jf389778", "Vizionează în timp ce navighezi sau folosești alte aplicații"),
-                t("f2977d80", "Foldere cu marcaje");
-            t("j1d3d910", "Organizează-ți postările salvate pentru acces ușor"),
+                t("fa006202", "Redare videoclip în fundal");
+            t("jf389778", "Vizionează în timp ce navighezi sau folosești alte aplicații"),
+                t("f2977d80", "Foldere cu marcaje"),
+                t("j1d3d910", "Organizează-ți postările salvate pentru acces ușor"),
                 t("f0f48668", "Asistență premium"),
                 t("c3148608", "Obține asistență mai repede atunci când ai nevoie de ajutor"),
                 t("b485ca6e", "Fila Evidențieri"),
@@ -7858,9 +7862,7 @@
                 t("e7e36818", "Conturile pentru reclame sunt eligibile pentru promovarea locurilor de muncă atunci când sunt complet configurate cu o sursă de finanțare."),
                 t("c28566e0", "Cont pentru reclame"),
                 t("c80160d3", "Publicitate"),
-                t("ff0edac0", "Sigur vrei să îți anulezi abonamentul?"),
-                t("h2ac0348", "Nu, vreau să mă întorc"),
-                t("dbf9667e", "Sunt sigur");
+                t("ff0edac0", "Sigur vrei să îți anulezi abonamentul?");
             function c(e, a) {
                 for (var i = 0; i < a.length; i++) {
                     var t = a[i];
@@ -7899,7 +7901,9 @@
                     u(e, a)
                 );
             }
-            t("j7592572", "Întoarcere"),
+            t("h2ac0348", "Nu, vreau să mă întorc"),
+                t("dbf9667e", "Sunt sigur"),
+                t("j7592572", "Întoarcere"),
                 t("ee778942", "Semafor"),
                 t("fdd57981", function (e) {
                     return "Vrem să-ți oferim un credit gratuit pentru reclame, în valoare de " + e.totalAmount + ", disponibil o singură dată.";
@@ -8922,16 +8926,16 @@
                 }),
                 t("dbeae6cf", function (e) {
                     return e.count + " al" + r(e.count, "ți ascultători", "t ascultător", "ți ascultători");
-                }),
-                t("d2543d97", function (e) {
-                    return "+" + e.count;
-                }),
+                });
+            t("d2543d97", function (e) {
+                return "+" + e.count;
+            }),
                 t("dc718e53", function (e) {
                     return "+încă " + e.count;
-                });
-            t("d0e7b11b", function (e) {
-                return e.date + ", la " + e.time;
-            }),
+                }),
+                t("d0e7b11b", function (e) {
+                    return e.date + ", la " + e.time;
+                }),
                 t("b4349cbc", function (e) {
                     return "" + e.relativeDay;
                 }),
@@ -13201,4 +13205,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ro.81f1d48a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ro.9b3b2b6a.js.map

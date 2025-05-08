@@ -1719,7 +1719,7 @@
                 i("d78131b9", function (e) {
                     return "Dodaj/usuń użytkownika @" + e.screenName + " do/z List";
                 }),
-                i("b3b642fc", "Why this post?"),
+                i("b3b642fc", "Dlaczego ten wpis?"),
                 i("fb4ee11c", "Dlaczego ta reklama?"),
                 i("ad50e7d9", function (e) {
                     return "Zobacz statystyki dla wpisu " + e.entity;
@@ -4152,6 +4152,7 @@
                 i("f388a7ec", "DeepSearch"),
                 i("ab1eb384", "Wybierz odpowiedni tryb wyszukiwania"),
                 i("i330e54c", "Zaawansowane wyszukiwanie i rozumowanie"),
+                i("fdcce108", "DeeperSearch"),
                 i("ac64b674", "Rozszerzone wyszukiwanie, głębsze rozumowanie"),
                 i("j22655f2", "Zapytaj, o co chcesz"),
                 i("h0681e3e", "Porozmawiaj z Grokiem, naszym asystentem AI"),
@@ -4178,6 +4179,9 @@
                 i("h15dce2e", "Ustawienia zaawansowane"),
                 i("ff9dc268", "Edytuj podpowiedź"),
                 i("acb2baa0", "Tworzenie obrazów"),
+                i("fe9ad897", function (e) {
+                    return "Edit Image" + e.ttc_grok_preset;
+                }),
                 i("h30fd372", "Wypróbuj tryb głosowy"),
                 i("e9fcdd0c", "Poproś Groka, aby agresywnie przeszukiwał Internet"),
                 i("fc4e8aba", "Poproś Groka, aby rozumował krok po kroku"),
@@ -4916,10 +4920,10 @@
                 i("d2a43a7a", 'zawiera oba wyrazy „startup" i „ai”'),
                 i("a8584698", "startup ai"),
                 i("jb6f9292", "zawiera dokładną frazę „startup ai”"),
-                i("j8ee77c4", '"startup ai"'),
-                i("d0480758", 'zawiera wyraz „startup" lub „ai” (albo oba te wyrazy)'),
-                i("f0048fa2", "startup OR ai");
-            i("da0df186", "zawiera wyraz „ai”, ale nie „startup”"),
+                i("j8ee77c4", '"startup ai"');
+            i("d0480758", 'zawiera wyraz „startup" lub „ai” (albo oba te wyrazy)'),
+                i("f0048fa2", "startup OR ai"),
+                i("da0df186", "zawiera wyraz „ai”, ale nie „startup”"),
                 i("f2f463ea", "-startup ai"),
                 i("a10a357e", "zawiera wyraz „ai” i ma co najmniej 50 polubień"),
                 i("ca8ed1e8", "ai min_faves:50"),
@@ -5882,10 +5886,10 @@
                 i("b732a4cc", "Gdy to zrobisz, wpisy tego użytkownika będa widoczne w tym miejscu."),
                 i("hff48914", "W tej chwili nie można znaleźć żadnego wpisu."),
                 i("hb52cc4a", "Spróbuj ponownie później."),
-                i("e50e1bb0", "Zapraszamy do korzystania z grup dyskusyjnych"),
-                i("i6829daa", "Grupy dyskusyjne to moderowane grupy na X, w ramach których użytkownicy mogą rozmawiać i udostępniać treści."),
-                i("fc5c6914", "Poznaj osoby o podobnych zainteresowaniach");
-            i("aa1a9820", "Dołącz do grup dyskusyjnych, aby łączyć się z osobami, które mają takie same zainteresowania, jak Ty."),
+                i("e50e1bb0", "Zapraszamy do korzystania z grup dyskusyjnych");
+            i("i6829daa", "Grupy dyskusyjne to moderowane grupy na X, w ramach których użytkownicy mogą rozmawiać i udostępniać treści."),
+                i("fc5c6914", "Poznaj osoby o podobnych zainteresowaniach"),
+                i("aa1a9820", "Dołącz do grup dyskusyjnych, aby łączyć się z osobami, które mają takie same zainteresowania, jak Ty."),
                 i("edef4c82", "Publikuj wpisy bezpośrednio w grupie dyskusyjnej"),
                 i("a7640df6", "Twoje wpisy są udostępniane członkom grupy dyskusyjnej oraz Twoim obserwującym."),
                 i("h3bb8068", "Ciekawe rozmowy"),
@@ -6880,10 +6884,10 @@
                 i("c2059276", "Korzystaj z możliwości dodawania boosta do odpowiedzi."),
                 i("b023ec20", "Maksymalne wzmocnienie odpowiedzi"),
                 i("g337328e", "Uzyskaj największą widoczność swoich odpowiedzi."),
-                i("fa006202", "Odtwarzanie filmów w tle"),
-                i("jf389778", "Oglądaj w trakcie przeglądania lub używania innych aplikacji"),
-                i("f2977d80", "Foldery Zakładek");
-            i("j1d3d910", "Organizuj zapisane wpisy, aby mieć do nich łatwiejszy dostęp"),
+                i("fa006202", "Odtwarzanie filmów w tle");
+            i("jf389778", "Oglądaj w trakcie przeglądania lub używania innych aplikacji"),
+                i("f2977d80", "Foldery Zakładek"),
+                i("j1d3d910", "Organizuj zapisane wpisy, aby mieć do nich łatwiejszy dostęp"),
                 i("f0f48668", "Pomoc techniczna premium"),
                 i("c3148608", "Szybciej otrzymuj potrzebną pomoc"),
                 i("b485ca6e", "Karta Najciekawsze"),
@@ -7856,9 +7860,7 @@
                 i("e7e36818", "Konta reklamowe kwalifikują się do promocji ofert pracy, gdy są w pełni skonfigurowane i mają ustawione źródło finansowania."),
                 i("c28566e0", "Konto reklamowe"),
                 i("c80160d3", "Reklama"),
-                i("ff0edac0", "Czy na pewno chcesz anulować subskrypcję?"),
-                i("h2ac0348", "No, wróć"),
-                i("dbf9667e", "Tak");
+                i("ff0edac0", "Czy na pewno chcesz anulować subskrypcję?");
             function t(e, a) {
                 for (var o = 0; o < a.length; o++) {
                     var i = a[o];
@@ -7897,7 +7899,9 @@
                     c(e, a)
                 );
             }
-            i("j7592572", "Twój ruch"),
+            i("h2ac0348", "No, wróć"),
+                i("dbf9667e", "Tak"),
+                i("j7592572", "Twój ruch"),
                 i("ee778942", "Sygnalizacja świetlna"),
                 i("fdd57981", function (e) {
                     return "Chcemy zaoferować Ci jednorazowy bezpłatny kredyt reklamowy w wysokości " + e.totalAmount + " USD.";
@@ -8920,16 +8924,16 @@
                 }),
                 i("dbeae6cf", function (e) {
                     return e.count + " inny" + n(e.count, "ch słuchaczy", "ch słuchaczy", " słuchacz", "ch słuchaczy");
-                }),
-                i("d2543d97", function (e) {
-                    return "+" + e.count;
-                }),
+                });
+            i("d2543d97", function (e) {
+                return "+" + e.count;
+            }),
                 i("dc718e53", function (e) {
                     return "+" + n(e.count, e.count + " innych użytkowników", e.count + " innych użytkowników", "jeszcze " + e.count + " użytkownik", e.count + " innych użytkowników");
-                });
-            i("d0e7b11b", function (e) {
-                return e.date + " o " + e.time;
-            }),
+                }),
+                i("d0e7b11b", function (e) {
+                    return e.date + " o " + e.time;
+                }),
                 i("b4349cbc", function (e) {
                     return "" + e.relativeDay;
                 }),
@@ -13201,4 +13205,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.fca960ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.8d2ffe3a.js.map
