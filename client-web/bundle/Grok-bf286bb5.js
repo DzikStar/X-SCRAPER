@@ -119,50 +119,50 @@
                     t
                         ? a.createElement(
                               o.Z,
-                              { style: H.compactContentLayout },
+                              { style: O.compactContentLayout },
                               s
                                   ? a.createElement(
                                         a.Fragment,
                                         null,
                                         a.createElement(
                                             o.Z,
-                                            { style: H.compactHeaderContainer },
+                                            { style: O.compactHeaderContainer },
                                             a.createElement(r.ZP, {
                                                 borderColor: "transparent",
-                                                icon: a.createElement(z.default, { style: H.backButtonIcon }),
+                                                icon: a.createElement(z.default, { style: O.backButtonIcon }),
                                                 onClick: () => {
                                                     i(null);
                                                 },
                                                 size: "small",
-                                                style: H.backButton,
+                                                style: O.backButton,
                                             }),
-                                            a.createElement(r.ZP, { borderColor: "transparent", icon: a.createElement(M.default, { style: H.closeButtonIcon }), onClick: l, size: "small", style: H.closeButton }),
+                                            a.createElement(r.ZP, { borderColor: "transparent", icon: a.createElement(M.default, { style: O.closeButtonIcon }), onClick: l, size: "small", style: O.closeButton }),
                                         ),
                                         s.content,
                                     )
-                                  : a.createElement(a.Fragment, null, a.createElement(o.Z, { style: H.compactHeaderContainer }, a.createElement(h.ZP, { style: H.title, weight: "bold" }, F), a.createElement(r.ZP, { borderColor: "transparent", icon: a.createElement(M.default, { style: H.closeButtonIcon }), onClick: l, size: "small", style: H.closeButton })), a.createElement(W, { analytics: e, isCompact: t, menuItems: n, selectedMenuItem: s, setSelectedMenuItem: i })),
+                                  : a.createElement(a.Fragment, null, a.createElement(o.Z, { style: O.compactHeaderContainer }, a.createElement(h.ZP, { style: O.title, weight: "bold" }, F), a.createElement(r.ZP, { borderColor: "transparent", icon: a.createElement(M.default, { style: O.closeButtonIcon }), onClick: l, size: "small", style: O.closeButton })), a.createElement(W, { analytics: e, isCompact: t, menuItems: n, selectedMenuItem: s, setSelectedMenuItem: i })),
                           )
-                        : a.createElement(o.Z, { style: H.contentLayout }, a.createElement(o.Z, { style: H.menuWrapper }, a.createElement(o.Z, { style: H.headerContainer }, a.createElement(h.ZP, { style: H.title, weight: "bold" }, F)), a.createElement(W, { analytics: e, isCompact: t, menuItems: n, selectedMenuItem: s, setSelectedMenuItem: i })), a.createElement(o.Z, { style: H.contentWrapper }, a.createElement(o.Z, { style: H.closeButtonContainer }, a.createElement(r.ZP, { borderColor: "transparent", icon: a.createElement(M.default, { style: H.closeButtonIcon }), onClick: l, size: "small", style: H.closeButton })), s?.content)),
+                        : a.createElement(o.Z, { style: O.contentLayout }, a.createElement(o.Z, { style: O.menuWrapper }, a.createElement(o.Z, { style: O.headerContainer }, a.createElement(h.ZP, { style: O.title, weight: "bold" }, F)), a.createElement(W, { analytics: e, isCompact: t, menuItems: n, selectedMenuItem: s, setSelectedMenuItem: i })), a.createElement(o.Z, { style: O.contentWrapper }, a.createElement(o.Z, { style: O.closeButtonContainer }, a.createElement(r.ZP, { borderColor: "transparent", icon: a.createElement(M.default, { style: O.closeButtonIcon }), onClick: l, size: "small", style: O.closeButton })), s?.content)),
                 W = ({ analytics: e, isCompact: t, menuItems: n, selectedMenuItem: r, setSelectedMenuItem: l }) =>
                     a.createElement(
                         o.Z,
-                        { style: H.menu },
+                        { style: O.menu },
                         n.map((n) => {
                             const s = n.menuLabel === r?.menuLabel;
                             return a.createElement(
                                 T.Z,
                                 {
-                                    interactiveStyles: H.interactiveMenuItem,
+                                    interactiveStyles: O.interactiveMenuItem,
                                     key: n.menuLabel,
                                     onClick: () => {
                                         e.scribe({ action: "click", component: "grok-input-advanced-setting-menu", element: n.menuLabel }), l(n);
                                     },
                                 },
-                                ({ isHovered: e }) => a.createElement(o.Z, { style: [H.menuItem, e ? H.hoveredMenuItem : void 0] }, a.createElement(o.Z, { style: H.menuItemContent }, n.menuIcon, a.createElement(o.Z, { style: H.menuItemLabel }, a.createElement(h.ZP, null, n.menuLabel), n.hasCustomSettings && a.createElement(o.Z, { style: H.menuIndicator })), a.createElement(R.default, { style: H.menuItemChevron })), s && !t && a.createElement(o.Z, { style: H.menuItemSelectedBar })),
+                                ({ isHovered: e }) => a.createElement(o.Z, { style: [O.menuItem, e ? O.hoveredMenuItem : void 0] }, a.createElement(o.Z, { style: O.menuItemContent }, n.menuIcon, a.createElement(o.Z, { style: O.menuItemLabel }, a.createElement(h.ZP, null, n.menuLabel), n.hasCustomSettings && a.createElement(o.Z, { style: O.menuIndicator })), a.createElement(R.default, { style: O.menuItemChevron })), s && !t && a.createElement(o.Z, { style: O.menuItemSelectedBar })),
                             );
                         }),
                     ),
-                H = l.default.create((e) => ({
+                O = l.default.create((e) => ({
                     backgroundRootBlur: { boxShadow: "light" === e.paletteName ? e.boxShadows.small : "0 0 5px rgba(80,80,80,0.2), 0 1px 4px 1px rgba(80,80,80,0.25)" },
                     backgroundBlur: { backdropFilter: "blur(2px)" },
                     wrapper: { display: "flex", justifyContent: "center", alignItems: "center" },
@@ -197,7 +197,7 @@
                     backButton: { borderRadius: e.borderRadii.xLarge, width: "max-content" },
                     backButtonIcon: { width: e.spaces.space24, height: e.spaces.space24 },
                 })),
-                O = ({ menuItems: e, onClose: t }) => {
+                H = ({ menuItems: e, onClose: t }) => {
                     const { isCompactLayout: n, isGrokDrawer: r } = (0, E.ZP)(),
                         l = n && !r,
                         s = (0, u.z)(),
@@ -235,11 +235,11 @@
                             }
                         );
                     }, []);
-                    const C = i ? H.visible : H.hidden,
-                        k = i ? H.maskWithBg : H.maskTransparent,
-                        w = i ? H.animateOpen : H.animateClose,
+                    const C = i ? O.visible : O.hidden,
+                        k = i ? O.maskWithBg : O.maskTransparent,
+                        w = i ? O.animateOpen : O.animateClose,
                         I = x.Z.reducedMotionEnabled ? null : w;
-                    return a.createElement(_.Z.Modal, null, a.createElement(B.Z, null, a.createElement(D.Z, null, a.createElement(o.Z, { onClick: f, style: [H.wrapper, H.mask, k, I, H.backgroundBlur] }, (0, P.Z)("div", { role: "dialog", onTransitionEnd: g, ref: b, onClick: h, style: [H.root, l ? H.compactRoot : void 0, H.backgroundRootBlur, C, I], children: a.createElement(L, { analytics: s, isCompact: l, menuItems: e, onClose: y, selectedMenuItem: d, setSelectedMenuItem: p }) })))));
+                    return a.createElement(_.Z.Modal, null, a.createElement(B.Z, null, a.createElement(D.Z, null, a.createElement(o.Z, { onClick: f, style: [O.wrapper, O.mask, k, I, O.backgroundBlur] }, (0, P.Z)("div", { role: "dialog", onTransitionEnd: g, ref: b, onClick: h, style: [O.root, l ? O.compactRoot : void 0, O.backgroundRootBlur, C, I], children: a.createElement(L, { analytics: s, isCompact: l, menuItems: e, onClose: y, selectedMenuItem: d, setSelectedMenuItem: p }) })))));
                 },
                 K = l.default.create((e) => ({ buttonContainer: { position: "relative", borderColor: e.colors.gray300, borderWidth: 1, borderRadius: e.borderRadii.infinite }, fadeIn: { ...m.DP }, disabledButtonInteractiveStyle: { backgroundColor: "transparent" }, button: { ...m.il }, compactButton: { ...m.u$ }, disabledButton: { borderColor: "light" === e.paletteName ? e.colors.gray100 : e.colors.gray200, color: e.colors.gray600, backgroundColor: "transparent" }, icon: { ...m.Qs }, indicator: { position: "absolute", top: 0, end: 0, width: e.spaces.space8, height: e.spaces.space8, borderRadius: e.spaces.space8, backgroundColor: e.colors.primary } })),
                 A = ({ disabled: e, fadeIn: t, isGrokDrawer: n, isInputCompact: l }) => {
@@ -279,7 +279,7 @@
                             }),
                             w && a.createElement(o.Z, { style: K.indicator }),
                         ),
-                        k.length > 0 && h && a.createElement(O, { isGrokDrawer: n, menuItems: k, onClose: () => y(!1) }),
+                        k.length > 0 && h && a.createElement(H, { isGrokDrawer: n, menuItems: k, onClose: () => y(!1) }),
                     );
                 };
         },
@@ -540,8 +540,8 @@
                             },
                             [z],
                         ),
-                        H = (0, r.Mv)(),
-                        O = !f,
+                        O = (0, r.Mv)(),
+                        H = !f,
                         K = !!f,
                         A = "Research" === f,
                         V = "Reasoning" === f,
@@ -549,19 +549,19 @@
                         G = "CreateImage" === f,
                         N = (0, r.yu)(),
                         $ = N && l.ZP.isWebView(),
-                        X = H || !!C,
+                        X = O || !!C,
                         Q = h.focused,
                         Y = (A && !S) || (V && !x);
                     return (
                         a.useEffect(() => {
-                            k.every((e) => "Hidden" === e[w]) || k.length <= 0 ? M() : v && ("Research" !== v || A ? ("Reasoning" !== v || V ? "ImageEdit" !== v || j || L() : F()) : R(), Z(""));
+                            v && ("Research" !== v || A ? ("Reasoning" !== v || V ? "ImageEdit" !== v || j || L() : F()) : R(), Z(""));
                         }, [k, w, M, j, V, A, v, R, L, F]),
-                        { grokInput: h, setFocused: B, isResearchEnabled: A, isReasoningEnabled: V, isImageEditEnabled: j, isCreateImageEnabled: G, isDefault: O, isInputFocused: Q, hasSelectedFilterKey: K, isInputMobileSize: N, isInputMobile: $, isInputCompact: X, grokModeButtons: k, grokModeButtonStatusKey: w, filterKey: f, isFileInputDisabled: Y, setAdvancedSettings: D, setDeepsearchAdvancedSettings: P, setDeepersearchAdvancedSettings: T, advancedSettings: y, grokModeButtonOverrides: I, selectDeepsearchFilterKey: R, selectReasoningFilterKey: F, selectImageEditFilterKey: L, clearFilterKey: M, setPendingModeButtonFilterKey: Z, setFilterKey: W, hasValue: e, setHasValue: t }
+                        { grokInput: h, setFocused: B, isResearchEnabled: A, isReasoningEnabled: V, isImageEditEnabled: j, isCreateImageEnabled: G, isDefault: H, isInputFocused: Q, hasSelectedFilterKey: K, isInputMobileSize: N, isInputMobile: $, isInputCompact: X, grokModeButtons: k, grokModeButtonStatusKey: w, filterKey: f, isFileInputDisabled: Y, setAdvancedSettings: D, setDeepsearchAdvancedSettings: P, setDeepersearchAdvancedSettings: T, advancedSettings: y, grokModeButtonOverrides: I, selectDeepsearchFilterKey: R, selectReasoningFilterKey: F, selectImageEditFilterKey: L, clearFilterKey: M, setPendingModeButtonFilterKey: Z, setFilterKey: W, hasValue: e, setHasValue: t }
                     );
                 };
         },
         795388: (e, t, n) => {
-            n.d(t, { Z: () => H });
+            n.d(t, { Z: () => O });
             n(136728);
             var a = n(202784),
                 o = n(858440),
@@ -621,7 +621,7 @@
             function F({ analytics: e, button: t, buttonOverrides: n, disabled: l, isInputCompact: s, isToggled: i, onButtonEnter: d, onButtonLeave: m, onDisabledClick: E, onEnabledClick: k, onHomeScreen: x, statusKey: _ }) {
                 const { advancedSettings: B, grokModeButtons: D, selectImageEditFilterKey: P, setAdvancedSettings: T, setFilterKey: z } = (0, p.w)(),
                     M = (0, o.Z)(),
-                    { clearSelectedFile: F, onFileSelected: H, selectedFiles: O } = (0, u.ZP)(),
+                    { clearSelectedFile: F, onFileSelected: O, selectedFiles: H } = (0, u.ZP)(),
                     { markAsClicked: K } = (0, S.M)(t.filter_key ?? ""),
                     [A, V] = a.useState(!1),
                     [j, G] = a.useState(!1),
@@ -636,18 +636,18 @@
                 const q = a.useCallback(
                         (t) => {
                             if (t.length <= 0) return;
-                            const n = Object.keys(O);
+                            const n = Object.keys(H);
                             n.length > 0 &&
                                 n.forEach((e) => {
                                     F(e);
                                 });
                             const a = t[0];
-                            H(a).then(() => {
+                            O(a).then(() => {
                                 P();
                             }),
                                 (0, w.dP)(e, "button");
                         },
-                        [H, e, P, O, F],
+                        [O, e, P, H, F],
                     ),
                     ee = () => {
                         d(), G(!0), s || i || !x || V(!0);
@@ -718,7 +718,7 @@
             }
             const L = ({ children: e, dropdownMenuItems: t, handleMouseEnter: n, handleMouseLeave: o, hideTooltip: l, isHoveringButton: s, isInputCompact: i, isToggled: c, showTooltip: d, style: u, tooltipText: p }) => a.createElement(r.Z, { onMouseEnter: n, onMouseLeave: o, style: [W.buttonContainer, c ? W.buttonContainerSelected : null, s ? W.hoveredButtonContainer : null, u] }, e, !i && t && t.length > 0 && a.createElement(D, { menuItems: t, onDismiss: l }), d && a.createElement(z, { text: p })),
                 W = s.default.create((e) => ({ buttonContainer: { position: "relative", borderColor: e.colors.gray300, borderWidth: 1, borderRadius: 25, flexDirection: "row", alignItems: "center", transition: "background-color 0.2s ease, width 0.2s ease", backgroundColor: "transparent" }, hoveredButtonContainer: { backgroundColor: "light" === s.default.theme.paletteName ? s.default.theme.colors.gray50 : s.default.theme.colors.gray100 }, buttonContainerSelected: { borderColor: "rgba(29, 155, 240, 0.2)" }, disabledButtonContainer: { borderColor: e.colors.gray300 }, button: { ...m.il, position: "relative", height: "100%" }, compactButton: { ...m.u$ }, buttonContent: { display: "flex", flex: 1, flexDirection: "row", alignItems: "center" }, disabledButton: { color: e.colors.gray400, borderColor: "transparent", backgroundColor: "transparent" }, buttonSelected: { backgroundColor: "rgba(29, 155, 240, 0.2)" }, icon: { ...m.Qs }, appText: { color: "inherit", lineHeight: e.fontSizes.subtext2 } }));
-            function H({ disabled: e, fadeIn: t, onClick: n, onHomeScreen: s = !1, onShowDegradedModal: m }) {
+            function O({ disabled: e, fadeIn: t, onClick: n, onHomeScreen: s = !1, onShowDegradedModal: m }) {
                 const { filterKey: b, grokModeButtonOverrides: g, grokModeButtonStatusKey: h, grokModeButtons: y, isInputCompact: f, isInputFocused: C, setFilterKey: E } = (0, p.w)(),
                     { userClaims: k } = (0, i.QZ)(),
                     w = (0, l.useHistory)(),
@@ -751,7 +751,7 @@
                             );
                         });
                     },
-                    H = a.useCallback(() => {
+                    O = a.useCallback(() => {
                         Object.keys(Z).forEach((e) => {
                             v(e);
                         });
@@ -765,20 +765,20 @@
                     ),
                     A = a.useCallback(
                         (e) => {
-                            P.scribe({ action: "click", component: "grok-input", element: e.filter_key }), (("Research" === e.filter_key && !x) || ("Reasoning" === e.filter_key && !_)) && H(), n && n(), E(b === e.filter_key ? null : e.filter_key || null);
+                            P.scribe({ action: "click", component: "grok-input", element: e.filter_key }), (("Research" === e.filter_key && !x) || ("Reasoning" === e.filter_key && !_)) && O(), n && n(), E(b === e.filter_key ? null : e.filter_key || null);
                         },
-                        [P, x, _, H, n, E, b],
+                        [P, x, _, O, n, E, b],
                     );
                 return a.createElement(
                     r.Z,
-                    { style: [O.container, f ? O.compactContainer : null, t ? O.fadeIn : null] },
+                    { style: [H.container, f ? H.compactContainer : null, t ? H.fadeIn : null] },
                     y.map((t) => {
                         const n = b === t.filter_key;
                         return a.createElement(F, { analytics: P, button: t, buttonOverrides: g, disabled: e, enableDelay: z, isInputCompact: D, isInputFocused: C, isToggled: n, key: t.label, onButtonEnter: L, onButtonLeave: W, onDisabledClick: () => K(t), onEnabledClick: () => A(t), onHomeScreen: s, statusKey: h });
                     }),
                 );
             }
-            const O = s.default.create((e) => ({ fadeIn: { ...m.DP }, container: { flexDirection: "row", gap: e.spaces.space8, flex: 1, overflowX: "auto", scrollbarWidth: "none", "::-webkit-scrollbar": { display: "none" } }, compactContainer: { gap: e.spaces.space4 } }));
+            const H = s.default.create((e) => ({ fadeIn: { ...m.DP }, container: { flexDirection: "row", gap: e.spaces.space8, flex: 1, overflowX: "auto", scrollbarWidth: "none", "::-webkit-scrollbar": { display: "none" } }, compactContainer: { gap: e.spaces.space4 } }));
         },
         40247: (e, t, n) => {
             n.d(t, { Z: () => i });
@@ -844,10 +844,10 @@
                         W = () => {
                             D(!1), T((e) => !e);
                         },
-                        H = a.useCallback(() => {
+                        O = a.useCallback(() => {
                             u || (x && !_) ? W() : L();
                         }, [u, _, x]),
-                        O = a.useMemo(
+                        H = a.useMemo(
                             () => (t) => {
                                 if (t) {
                                     S();
@@ -855,20 +855,20 @@
                                         a = n?.personality.initial_user_prompt;
                                     n && a && p && w((0, f.u)({ analytics: v, conversationKey: e })({ text: a, attachments: [], returnCitations: !1, isGrokDrawer: !1, onStart: () => {}, personalityId: t }));
                                 }
-                                R(t), H();
+                                R(t), O();
                             },
-                            [v, e, w, M, H, p, S, R],
+                            [v, e, w, M, O, p, S, R],
                         ),
                         K = a.useMemo(() => M(z), [z, M]),
                         A = a.useMemo(() => {
                             const e = F.map((e, t) => {
                                 const { personality: n, personality_id: s } = e;
-                                return a.createElement(r.Z, { actionText: a.createElement(o.Z, { style: Z.menuItem }, a.createElement(o.Z, { style: Z.nameContainer }, a.createElement(l.ZP, null, n.name)), a.createElement(m.default, { style: K?.personality_id === s ? Z.checkIcon : Z.invisible })), key: s, onClick: () => O(s) });
+                                return a.createElement(r.Z, { actionText: a.createElement(o.Z, { style: Z.menuItem }, a.createElement(o.Z, { style: Z.nameContainer }, a.createElement(l.ZP, null, n.name)), a.createElement(m.default, { style: K?.personality_id === s ? Z.checkIcon : Z.invisible })), key: s, onClick: () => H(s) });
                             });
-                            return [a.createElement(r.Z, { actionText: a.createElement(o.Z, { style: Z.menuItem }, a.createElement(l.ZP, null, "Default Grok"), a.createElement(m.default, { style: void 0 === K ? Z.checkIcon : Z.invisible })), key: "0", onClick: () => O() }), ...e];
-                        }, [K, O, F]),
+                            return [a.createElement(r.Z, { actionText: a.createElement(o.Z, { style: Z.menuItem }, a.createElement(l.ZP, null, "Default Grok"), a.createElement(m.default, { style: void 0 === K ? Z.checkIcon : Z.invisible })), key: "0", onClick: () => H() }), ...e];
+                        }, [K, H, F]),
                         V = K?.personality;
-                    return a.createElement(o.Z, { style: [Z.container, x ? { alignItems: "flex-end" } : { alignItems: "flex-start" }] }, a.createElement(s.ZP, { borderColor: V ? "blue600" : "transparent", color: V ? "blue600" : "gray900", disabled: t, onClick: H, size: "smallCompact", style: [Z.button, d ? Z.buttonOverFocusedInput : null, n ? Z.fadeIn : null] }, a.createElement(o.Z, { style: Z.buttonContent }, a.createElement(b.default, { style: Z.icon }), a.createElement(l.ZP, { numberOfLines: 1, size: "subtext2", weight: "medium" }, K?.personality?.name ?? "Personalities"), a.createElement(g.default, { style: Z.icon }))), a.createElement(o.Z, { style: [Z.dropdownContainer, u ? { top: -8 } : { top: 36 }] }, B && a.createElement(i.default, { onDismiss: L, preferredHorizontalOrientation: "right" }, a.createElement(o.Z, { style: Z.menuItemContainer }, A))), P && a.createElement(c.Z, { align: "right", buttonType: "primaryText", onDismissed: W, title: I }, A));
+                    return a.createElement(o.Z, { style: [Z.container, x ? { alignItems: "flex-end" } : { alignItems: "flex-start" }] }, a.createElement(s.ZP, { borderColor: V ? "blue600" : "transparent", color: V ? "blue600" : "gray900", disabled: t, onClick: O, size: "smallCompact", style: [Z.button, d ? Z.buttonOverFocusedInput : null, n ? Z.fadeIn : null] }, a.createElement(o.Z, { style: Z.buttonContent }, a.createElement(b.default, { style: Z.icon }), a.createElement(l.ZP, { numberOfLines: 1, size: "subtext2", weight: "medium" }, K?.personality?.name ?? "Personalities"), a.createElement(g.default, { style: Z.icon }))), a.createElement(o.Z, { style: [Z.dropdownContainer, u ? { top: -8 } : { top: 36 }] }, B && a.createElement(i.default, { onDismiss: L, preferredHorizontalOrientation: "right" }, a.createElement(o.Z, { style: Z.menuItemContainer }, A))), P && a.createElement(c.Z, { align: "right", buttonType: "primaryText", onDismissed: W, title: I }, A));
                 },
                 Z = d.default.create((e) => ({ container: { position: "relative", flex: 1 }, button: { ...w.il, borderWidth: e.spaces.space2, backgroundColor: "light" === e.paletteName ? e.colors.gray50 : e.colors.gray100, maxWidth: "100%" }, fadeIn: { ...w.DP }, buttonOverFocusedInput: { backgroundColor: "light" === e.paletteName ? e.colors.gray100 : e.colors.gray200 }, dropdownContainer: { position: "absolute" }, menuItemContainer: { maxHeight: "35vh", overflowY: "auto", alignItems: "stretch" }, icon: { height: 14, width: 14, flexShrink: 0 }, menuItem: { flexDirection: "row", width: "100%", alignItems: "center", justifyContent: "space-between", gap: e.spaces.space12 }, nameContainer: { flexGrow: 1, flexShrink: 1, whiteSpace: "normal", wordWrap: "break-word" }, checkIcon: { opacity: 0.8, flexShrink: 0 }, invisible: { opacity: 0 }, buttonContent: { flexGrow: 1, maxWidth: "100%", display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space4 } }));
         },
@@ -899,4 +899,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-bf286bb5.1e20308a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-bf286bb5.3bd52d6a.js.map

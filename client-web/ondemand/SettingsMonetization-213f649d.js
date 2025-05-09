@@ -97,8 +97,6 @@
                                                                     { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
                                                                     { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
                                                                     { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null },
-                                                                    { alias: null, args: null, kind: "ScalarField", name: "verified_type", storageKey: null },
-                                                                    { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null },
                                                                     { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null },
                                                                     { alias: null, args: null, kind: "ScalarField", name: "follow_request_sent", storageKey: null },
                                                                     { alias: null, args: null, kind: "ScalarField", name: "following", storageKey: null },
@@ -107,6 +105,19 @@
                                                                 storageKey: null,
                                                             },
                                                             { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" },
+                                                            {
+                                                                alias: null,
+                                                                args: null,
+                                                                concreteType: "UserVerification",
+                                                                kind: "LinkedField",
+                                                                name: "verification",
+                                                                plural: !1,
+                                                                selections: [
+                                                                    { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null },
+                                                                    { alias: null, args: null, kind: "ScalarField", name: "verified_type", storageKey: null },
+                                                                ],
+                                                                storageKey: null,
+                                                            },
                                                             {
                                                                 alias: null,
                                                                 args: null,
@@ -197,7 +208,7 @@
                             },
                         ],
                     },
-                    params: { id: "38GXcQ1vYCiUp10agkZAQw", metadata: { features: ["responsive_web_graphql_timeline_navigation_enabled"] }, name: "MonetizationSuperFollowsTransactionDetailsQuery", operationKind: "query", text: null },
+                    params: { id: "V9hbFYKunciKDK3XS4mMKQ", metadata: { features: ["responsive_web_graphql_timeline_navigation_enabled"] }, name: "MonetizationSuperFollowsTransactionDetailsQuery", operationKind: "query", text: null },
                 };
             g.hash = "b3a3da30429069de6ce258edaa91d161";
             const m = g;
@@ -565,4 +576,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsMonetization-213f649d.310f8f0a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsMonetization-213f649d.8000a5da.js.map

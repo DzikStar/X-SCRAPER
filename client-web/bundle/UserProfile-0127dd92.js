@@ -117,39 +117,6 @@
                     );
                 };
         },
-        151730: (e, t, n) => {
-            n.d(t, { Z: () => d });
-            var r = n(777722),
-                o = n(202784),
-                a = n(10622),
-                s = n.n(a),
-                i = (n(585488), n(437429)),
-                c = n.n(i),
-                l = n(443781);
-            const u = r.Z,
-                d = () => {
-                    const [e, t] = o.useState(!1),
-                        n = c()(),
-                        { featureSwitches: r, userClaims: a } = (0, l.QZ)(),
-                        i = a.isAnyPremiumSubscriber() && !a.isAnyVerifiedOrgOrAffiliate();
-                    return (
-                        o.useEffect(() => {
-                            r.isTrue("active_ad_campaigns_query_enabled") &&
-                                i &&
-                                s()(n, u, {})
-                                    .toPromise()
-                                    .then((e) => {
-                                        const n = (e?.quick_promote_advertiser_accounts?.items ?? []).reduce((e, t) => e + (t?.campaigns?.total_count ?? 0), 0);
-                                        t(n > 0);
-                                    })
-                                    .catch(() => {
-                                        t(!1);
-                                    });
-                        }, [n, r, i]),
-                        e
-                    );
-                };
-        },
         898948: (e, t, n) => {
             n.d(t, { Z: () => s });
             var r = n(202784),
@@ -222,16 +189,16 @@
                     const t = e?.is_open;
                     if (null == t) return null;
                     const n = t ? e?.closes : e?.opens;
-                    return null == n ? null : { elements: [{ text: t ? b.open : b.closed, color: t ? "green500" : "red500" }, { text: " · " }, { text: `${t ? b.closes : b.opens} ${E(n.day, n.time.hour, n.time.minute)}` }] };
+                    return null == n ? null : { elements: [{ text: t ? b.open : b.closed, color: t ? "green500" : "red500" }, { text: " · " }, { text: `${t ? b.closes : b.opens} ${Z(n.day, n.time.hour, n.time.minute)}` }] };
                 },
                 _ = () => ({ elements: [{ text: b.noHours }] }),
                 y = (e) => (e ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(e)}` : void 0),
-                k = (e) => C(e) || w(e) || v(e) || Z(e),
+                k = (e) => C(e) || w(e) || E(e) || v(e),
                 C = (e) => !!e.config.enable_dm,
                 w = (e) => !(!e.config.enable_email || !e.data.contact?.email?.email_address),
-                v = (e) => !!(e.config.enable_call && e.data.contact?.phone?.country_code && e.data.contact?.phone?.number),
-                Z = (e) => !!(e.config.enable_sms && e.data.contact?.phone?.country_code && e.data.contact?.phone?.number),
-                E = (e, t, n) => {
+                E = (e) => !!(e.config.enable_call && e.data.contact?.phone?.country_code && e.data.contact?.phone?.number),
+                v = (e) => !!(e.config.enable_sms && e.data.contact?.phone?.country_code && e.data.contact?.phone?.number),
+                Z = (e, t, n) => {
                     const r = ((e, t) => {
                         const n = new Date();
                         return n.setHours(e), n.setMinutes(t), (0, a().d725a289)(n);
@@ -251,11 +218,11 @@
                             c = (e, t) => () => {
                                 a.scribe((0, l.dm)(e, t));
                             };
-                        return C(t) && i.push({ text: x.directMessage, link: `/messages/compose?recipient_id=${encodeURIComponent(o.rest_id)}`, onClick: c("click", "dm") }), w(t) && n && i.push({ text: x.email, link: `mailto:${n}`, onClick: c("click", "email") }), v(t) && r && s && i.push({ text: x.callFormatter({ phoneCode: r, phoneNumber: s }), link: `tel:${r}${s}`, onClick: c("click", "phone_call") }), Z(t) && r && s && i.push({ text: x.textFormatter({ phoneCode: r, phoneNumber: s }), link: `sms:${r}${s}`, onClick: c("click", "text_message") }), i;
+                        return C(t) && i.push({ text: x.directMessage, link: `/messages/compose?recipient_id=${encodeURIComponent(o.rest_id)}`, onClick: c("click", "dm") }), w(t) && n && i.push({ text: x.email, link: `mailto:${n}`, onClick: c("click", "email") }), E(t) && r && s && i.push({ text: x.callFormatter({ phoneCode: r, phoneNumber: s }), link: `tel:${r}${s}`, onClick: c("click", "phone_call") }), v(t) && r && s && i.push({ text: x.textFormatter({ phoneCode: r, phoneNumber: s }), link: `sms:${r}${s}`, onClick: c("click", "text_message") }), i;
                     }, [a, t, o.rest_id]);
                 return (
                     (0, s.q)(() => {
-                        a.scribe((0, l.dm)("click", "contact")), C(t) && a.scribe((0, l.dm)("impression", "dm")), w(t) && a.scribe((0, l.dm)("impression", "email")), v(t) && a.scribe((0, l.dm)("impression", "phone_call")), Z(t) && a.scribe((0, l.dm)("impression", "text_message"));
+                        a.scribe((0, l.dm)("click", "contact")), C(t) && a.scribe((0, l.dm)("impression", "dm")), w(t) && a.scribe((0, l.dm)("impression", "email")), E(t) && a.scribe((0, l.dm)("impression", "phone_call")), v(t) && a.scribe((0, l.dm)("impression", "text_message"));
                     }),
                     r.createElement(d.Z, { items: i, onCloseRequested: n })
                 );
@@ -269,7 +236,7 @@
                     return r.createElement(S.Z, { link: t, onClick: n, role: "img", style: [M.root, o] }, e ? null : r.createElement(I.default, { style: M.iconLocation, testID: "iconLocation" }));
                 },
                 B = a().dc12a126,
-                O = a().e2acb642;
+                L = a().e2acb642;
             function T(e) {
                 const { label: t, location: n, showUpdatedHours: o, user: a } = e,
                     { featureSwitches: d } = r.useContext(i.rC),
@@ -290,7 +257,7 @@
                                         e?.preventDefault(), m.scribe((0, l.dm)("click", "directions"));
                                     },
                                 }),
-                            k(n) && e.push({ label: O, renderMenu: (e) => r.createElement(P, { location: n, onClose: e, user: a }) }),
+                            k(n) && e.push({ label: L, renderMenu: (e) => r.createElement(P, { location: n, onClose: e, user: a }) }),
                             e
                         );
                     })(),
@@ -496,4 +463,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-0127dd92.311bc9aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-0127dd92.537f4aba.js.map

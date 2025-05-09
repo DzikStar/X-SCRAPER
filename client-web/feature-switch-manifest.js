@@ -1,5 +1,5 @@
 var manifest = {
-    feature_set_token: "81b0061a50dedabf4317bd4accb2c752a910c90b",
+    feature_set_token: "b88996ba652a7627d95336039a3796a8c2a2f8d4",
     config: {
         "2fa_temporary_password_enabled": { value: !1 },
         Arkose_rweb_hosted_page: { value: !0 },
@@ -970,7 +970,7 @@ var manifest = {
         subscriptions_upsells_right_sidebar_variant: { value: "" },
         subscriptions_upsells_rweb_analytics_fallback_destination: { value: "" },
         subscriptions_upsells_settings_analytics_upsell_enabled: { value: !1 },
-        subscriptions_upsells_track_interactions_enabled: { value: !1 },
+        subscriptions_upsells_track_interactions_enabled: { value: !0 },
         subscriptions_upsells_verified_profile_sidebar_enabled: { value: !1 },
         subscriptions_upsells_verified_profile_sidebar_variant: { value: "variant_d" },
         subscriptions_upsells_verified_profile_visitor_upsell_enabled: { value: !1 },
@@ -1857,6 +1857,7 @@ var manifest = {
         premium_webview_paywall_debug_mode_enabled: { name: "premium_webview_paywall_debug_mode_enabled", type: "string" },
         premium_webview_paywall_stripe_enabled: { name: "premium_webview_paywall_stripe_enabled", type: "string" },
         premium_webview_paywall_stripe_management_enabled: { name: "premium_webview_paywall_stripe_management_enabled", type: "string" },
+        premium_webview_paywall_stripe_management_all_sources_enabled: { name: "premium_webview_paywall_stripe_management_all_sources_enabled", type: "string" },
         professional_launchpad_m1_enabled: { name: "professional_launchpad_m1_enabled", type: "boolean", defaultValue: !0 },
         professional_launchpad_mobile_promotable_timeline: { name: "professional_launchpad_mobile_promotable_timeline", type: "boolean", defaultValue: !1 },
         professional_launchpad_upload_address_book: { name: "professional_launchpad_upload_address_book", type: "boolean", defaultValue: !0 },
@@ -2851,7 +2852,7 @@ var manifest = {
         subscriptions_upsells_api_enabled: { name: "subscriptions_upsells_api_enabled", type: "boolean", defaultValue: !0 },
         subscriptions_upsells_home_nav_migration_enabled: { name: "subscriptions_upsells_home_nav_migration_enabled", type: "boolean", defaultValue: !0 },
         subscriptions_upsells_home_sidebar_migration_enabled: { name: "subscriptions_upsells_home_sidebar_migration_enabled", type: "boolean", defaultValue: !0 },
-        subscriptions_upsells_track_interactions_enabled: { name: "subscriptions_upsells_track_interactions_enabled", type: "boolean", defaultValue: !1 },
+        subscriptions_upsells_track_interactions_enabled: { name: "subscriptions_upsells_track_interactions_enabled", type: "boolean", defaultValue: !0 },
         subscriptions_upsells_verified_profile_visitor_upsell_enabled: { name: "subscriptions_upsells_verified_profile_visitor_upsell_enabled", type: "boolean", defaultValue: !1 },
         subscriptions_upsells_verified_profile_visitor_upsell_variant: { name: "subscriptions_upsells_verified_profile_visitor_upsell_variant", type: "string", defaultValue: "" },
         subscriptions_upsells_post_analytics_enabled: { name: "subscriptions_upsells_post_analytics_enabled", type: "string" },

@@ -36,7 +36,7 @@
             const s = i;
         },
         346489: (e, l, a) => {
-            a.d(l, { Z: () => _ });
+            a.d(l, { Z: () => K });
             var n,
                 i,
                 s,
@@ -501,7 +501,7 @@
                     params: { id: "-0XdHI-mrHWBQd8-oLo1aA", metadata: {}, name: "ProfileSpotlightsQuery", operationKind: "query", text: null },
                 };
             F.hash = "63e29ef0bb520445ada0b0d42a1ef0b2";
-            const _ = F;
+            const K = F;
         },
         833772: (e, l, a) => {
             a.d(l, { Z: () => i });
@@ -1003,17 +1003,17 @@
                             { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }, action: "LOG" },
                             { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null }, action: "THROW" },
                             { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }, action: "THROW" },
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }, action: "THROW" },
                             { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
                         ],
                         storageKey: null,
                     },
+                    { alias: null, args: null, concreteType: "UserVerification", kind: "LinkedField", name: "verification", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }], storageKey: null },
                     { args: null, kind: "FragmentSpread", name: "useTranslatorType_user" },
                     { args: null, kind: "FragmentSpread", name: "UserProfileHighlightedUserLabel_user" },
                 ],
                 type: "User",
                 abstractKey: null,
-                hash: "5821fd908630df887a02b3413190f8ae",
+                hash: "9d9f6b782d37f2d2fe7de5d677a3cce7",
             };
             const i = n;
         },
@@ -1305,17 +1305,6 @@
                     params: { id: "BuWF9hiwmUyFdGo3J4DqbA", metadata: {}, name: "isEligibleForVoButtonUpsellQuery", operationKind: "query", text: null },
                 };
             u.hash = "bb3c6372d2d5f22d5000ce2f3076777b";
-            const d = u;
-        },
-        777722: (e, l, a) => {
-            a.d(l, { Z: () => d });
-            var n,
-                i,
-                s,
-                r,
-                t,
-                u = { fragment: { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "isEligibleForVoUpsellQuery", selections: [{ alias: null, args: (n = [{ kind: "Literal", name: "cursor", value: "" }]), concreteType: "AdvertiserAccountsSlice", kind: "LinkedField", name: "quick_promote_advertiser_accounts", plural: !1, selections: [{ alias: null, args: null, concreteType: "AdvertiserAccount", kind: "LinkedField", name: "items", plural: !0, selections: [(i = { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }), { alias: null, args: (s = [{ kind: "Literal", name: "filter_by_status", value: "Running" }]), concreteType: "CampaignView", kind: "LinkedField", name: "campaigns", plural: !1, selections: [(r = { alias: null, args: null, kind: "ScalarField", name: "total_count", storageKey: null })], storageKey: 'campaigns(filter_by_status:"Running")' }], storageKey: null }], storageKey: 'quick_promote_advertiser_accounts(cursor:"")' }], type: "Query", abstractKey: null }, kind: "Request", operation: { argumentDefinitions: [], kind: "Operation", name: "isEligibleForVoUpsellQuery", selections: [{ alias: null, args: n, concreteType: "AdvertiserAccountsSlice", kind: "LinkedField", name: "quick_promote_advertiser_accounts", plural: !1, selections: [{ alias: null, args: null, concreteType: "AdvertiserAccount", kind: "LinkedField", name: "items", plural: !0, selections: [i, { alias: null, args: s, concreteType: "CampaignView", kind: "LinkedField", name: "campaigns", plural: !1, selections: [r, (t = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null })], storageKey: 'campaigns(filter_by_status:"Running")' }, t], storageKey: null }], storageKey: 'quick_promote_advertiser_accounts(cursor:"")' }] }, params: { id: "ok05atRslr4j-rLB4yxbQw", metadata: {}, name: "isEligibleForVoUpsellQuery", operationKind: "query", text: null } };
-            u.hash = "6bd6d1820c3ff3c0aa54363f1010b8b0";
             const d = u;
         },
         720672: (e, l, a) => {
@@ -1746,4 +1735,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-00c74bbe.cf0ced1a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserProfile-00c74bbe.380ff90a.js.map

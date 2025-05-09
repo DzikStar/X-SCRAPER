@@ -40,14 +40,14 @@
                 p = l(293115);
             const g = u().a0b4541c,
                 _ = u().a5634d9a,
-                b = u().a893d602,
-                y = { page: "super_follows_subscription_failure" },
+                y = u().a893d602,
+                b = { page: "super_follows_subscription_failure" },
                 k = o.default.create((e) => ({ button: { marginTop: e.spaces.space36, width: "100%" }, wrapper: { flexBasis: 0, flexGrow: 1, flexShrink: 1, overflow: "auto", marginHorizontal: e.spaces.space80, alignItems: "center", justifyContent: "center" } })),
                 f = (e) => {
                     const { history: a, match: l } = e,
                         n = l.params.screenName,
                         t = n ? `/${n}/superfollows/subscribe` : "/home";
-                    return r.createElement(p.nO, { namespace: y }, r.createElement(d.Z, { backButtonType: "close", backLocation: t, history: a }, r.createElement(s.Z, { style: k.wrapper }, r.createElement(m.Z, { headline: g, illustration: m.j.ConfusedDog, subtext: _ }), r.createElement(i.ZP, { onPress: () => a.replace(t), size: "xLarge", style: k.button, type: "primaryFilled" }, b))));
+                    return r.createElement(p.nO, { namespace: b }, r.createElement(d.Z, { backButtonType: "close", backLocation: t, history: a }, r.createElement(s.Z, { style: k.wrapper }, r.createElement(m.Z, { headline: g, illustration: m.j.ConfusedDog, subtext: _ }), r.createElement(i.ZP, { onPress: () => a.replace(t), size: "xLarge", style: k.button, type: "primaryFilled" }, y))));
                 },
                 S = (e) => r.createElement(t.Z, (0, n.Z)({}, e, { component: f }));
         },
@@ -66,8 +66,8 @@
                 p,
                 g,
                 _ = l(807896),
-                b = l(202784),
-                y = l(669406),
+                y = l(202784),
+                b = l(669406),
                 k = {
                     fragment: {
                         argumentDefinitions: (n = [{ defaultValue: null, kind: "LocalArgument", name: "screenName" }]),
@@ -176,19 +176,19 @@
                                 ],
                                 storageKey: null,
                             },
-                            { alias: "viewer", args: o, concreteType: "Viewer", kind: "LinkedField", name: "viewer_v2", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [t, { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [c, m, { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }, d, u], storageKey: null }, p, { alias: null, args: null, kind: "ScalarField", name: "is_blue_verified", storageKey: null }, g], type: "User", abstractKey: null }], storageKey: null }, g], storageKey: null }], storageKey: 'viewer_v2(s:"4721")' },
+                            { alias: "viewer", args: o, concreteType: "Viewer", kind: "LinkedField", name: "viewer_v2", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [t, { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [c, m, { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }, d, u], storageKey: null }, p, { alias: null, args: null, kind: "ScalarField", name: "is_blue_verified", storageKey: null }, { alias: null, args: null, concreteType: "UserVerification", kind: "LinkedField", name: "verification", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }], storageKey: null }, g], type: "User", abstractKey: null }], storageKey: null }, g], storageKey: null }], storageKey: 'viewer_v2(s:"4721")' },
                         ],
                     },
-                    params: { id: "VU-9k-bJdiGJL-z9bU3QQQ", metadata: { features: ["creator_subscriptions_email_share_enabled", "super_follow_subscriptions_tax_calculation_enabled"] }, name: "SuperFollowsSubscribeQuery", operationKind: "query", text: null },
+                    params: { id: "BDZY01rA92hc4jVy5VL6zA", metadata: { features: ["creator_subscriptions_email_share_enabled", "super_follow_subscriptions_tax_calculation_enabled"] }, name: "SuperFollowsSubscribeQuery", operationKind: "query", text: null },
                 };
             k.hash = "b5ca6f3d0c226d006500f7a642421be5";
             const f = k;
             l(585488);
             var S = l(107267),
-                F = l(154003),
-                h = l(392237),
-                w = l(674132),
-                v = l.n(w),
+                h = l(154003),
+                F = l(392237),
+                v = l(674132),
+                w = l.n(v),
                 K = l(980407),
                 E = l(724345),
                 Z = l(783373),
@@ -196,9 +196,9 @@
                 C = l(943914),
                 T = l(293115),
                 x = l(28557),
-                N = l(535338),
-                U = l(615027),
-                P =
+                V = l(535338),
+                N = l(615027),
+                U =
                     (l(136728),
                     {
                         argumentDefinitions: [],
@@ -213,8 +213,8 @@
                         abstractKey: null,
                         hash: "2346846c87f6b76cd76ea9b834745cff",
                     });
-            const V = P;
-            var R = {
+            const P = U;
+            var B = {
                 argumentDefinitions: [],
                 kind: "Fragment",
                 metadata: null,
@@ -257,48 +257,48 @@
                 abstractKey: null,
                 hash: "8cc9851e7df50c2a31cb138abffb7743",
             };
-            const B = R;
-            var A = l(576648),
-                I = l(325686),
-                M = l(277660),
-                D = l.n(M),
+            const A = B;
+            var R = l(576648),
+                M = l(325686),
+                I = l(277660),
+                D = l.n(I),
                 z = l(811176),
                 $ = l(167630),
                 H = l(708852),
-                O = l(630715),
-                j = l(786272),
+                j = l(630715),
+                O = l(786272),
                 q = l(73664),
-                Q = l(952793),
-                W = l(782642),
+                W = l(952793),
+                Q = l(782642),
                 G = l(97882),
-                J = l(782826),
-                X = l(359870),
-                Y = l(725516),
+                X = l(782826),
+                Y = l(359870),
+                J = l(725516),
                 ee = l(688715),
                 ae = l(731708),
                 le = l(96083),
                 ne = l(855488),
                 re = l(725405);
-            const te = v().be03ecca,
+            const te = w().be03ecca,
                 se = (0, ee.ju)("https://help.x.com/using-x/creator-email-sharing"),
                 ie = (0, ee.ju)("https://legal.x.com/creator-email-sharing-terms.html"),
-                oe = v().i859a9d4,
-                ce = h.default.create((e) => ({ learnMore: { marginStart: e.spaces.space4 }, row: { flexDirection: "row", gap: e.spaces.space16 }, noSpacing: { paddingHorizontal: "0" } })),
+                oe = w().i859a9d4,
+                ce = F.default.create((e) => ({ learnMore: { marginStart: e.spaces.space4 }, row: { flexDirection: "row", gap: e.spaces.space16 }, noSpacing: { paddingHorizontal: "0" } })),
                 ue = ({ consented: e, creatorName: a, setConsented: l, setSubscriptionEmail: n, subscriptionEmail: r }) => {
-                    const [t, s] = b.useState(),
+                    const [t, s] = y.useState(),
                         i = (0, re.Z)(),
-                        o = b.useCallback(() => {
-                            r && s((0, X.Z)(r));
+                        o = y.useCallback(() => {
+                            r && s((0, Y.Z)(r));
                         }, [s, r]),
-                        c = b.useCallback((e) => n(e.currentTarget.value), [n]),
-                        u = b.useCallback(
+                        c = y.useCallback((e) => n(e.currentTarget.value), [n]),
+                        u = y.useCallback(
                             (e) => {
                                 i.scribe({ section: "email_share_consent", element: "consent_checkbox", action: e ? "accept" : "clear" }), l(e), e || (n(""), s(""));
                             },
                             [i, l, n],
                         ),
-                        d = b.useMemo(() => ({ elements: { link: b.createElement(ae.ZP, { color: "plum500", link: ie }) }, variables: { creatorName: a } }), [a]);
-                    return b.createElement(I.Z, null, b.createElement(I.Z, { style: ce.row }, b.createElement(le.Z, { checked: e, onChange: u }), b.createElement(ae.ZP, { color: "gray700" }, b.createElement(v().I18NFormatMessage, { $i18n: "fca299bb", creatorName: d.variables.creatorName }, b.cloneElement(d.elements.link, null, v().e6c72234)), b.createElement(ae.ZP, { color: "plum500", link: se, style: ce.learnMore }, oe))), b.createElement(ne.Z, { editable: e, errorText: t, invalid: !!t, label: te, name: "subscriptionEmailAddress", onBlur: o, onChange: c, style: ce.noSpacing, testID: "subscriptionEmailAddress", value: r }));
+                        d = y.useMemo(() => ({ elements: { link: y.createElement(ae.ZP, { color: "plum500", link: ie }) }, variables: { creatorName: a } }), [a]);
+                    return y.createElement(M.Z, null, y.createElement(M.Z, { style: ce.row }, y.createElement(le.Z, { checked: e, onChange: u }), y.createElement(ae.ZP, { color: "gray700" }, y.createElement(w().I18NFormatMessage, { $i18n: "fca299bb", creatorName: d.variables.creatorName }, y.cloneElement(d.elements.link, null, w().e6c72234)), y.createElement(ae.ZP, { color: "plum500", link: se, style: ce.learnMore }, oe))), y.createElement(ne.Z, { editable: e, errorText: t, invalid: !!t, label: te, name: "subscriptionEmailAddress", onBlur: o, onChange: c, style: ce.noSpacing, testID: "subscriptionEmailAddress", value: r }));
                 };
             var de = {
                 argumentDefinitions: [],
@@ -317,16 +317,16 @@
                         selections: [
                             { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null },
                             { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }, action: "THROW" },
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }, action: "THROW" },
                             { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
                             { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
                         ],
                         storageKey: null,
                     },
+                    { alias: null, args: null, concreteType: "UserVerification", kind: "LinkedField", name: "verification", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }], storageKey: null },
                 ],
                 type: "User",
                 abstractKey: null,
-                hash: "c0b095939892a751da866980235d0119",
+                hash: "72643e92665ad020b030f3f68515d153",
             };
             const me = de;
             var pe = {
@@ -382,12 +382,12 @@
             };
             const ge = pe;
             var _e = l(879101),
-                be = l(8685);
-            const ye = ge,
+                ye = l(8685);
+            const be = ge,
                 ke = me,
                 fe = (e) => {
                     const { children: a, emailShareElement: l, isWide: n, user: r, viewer: t } = e,
-                        s = D()(ye, r),
+                        s = D()(be, r),
                         i = D()(ke, t),
                         o = s.legacy?.name ?? void 0,
                         c = s.legacy?.profile_image_url_https ?? void 0,
@@ -397,15 +397,15 @@
                         p = m?.description ?? void 0,
                         g = i.legacy?.profile_image_url_https ?? void 0,
                         _ = i.legacy?.name ?? void 0,
-                        y = i.legacy?.screen_name ?? void 0,
+                        b = i.legacy?.screen_name ?? void 0,
                         k = i.legacy?.protected ?? void 0,
-                        f = i.legacy?.verified ?? void 0,
+                        f = i.verification?.verified ?? void 0,
                         S = i?.is_blue_verified ?? void 0,
-                        F = b.useMemo(() => [Se.subscribeButtonContainer, n && Se.subscribeButtonContainerWide], [n]);
-                    return b.createElement(b.Fragment, null, b.createElement(be.Z, { badgeImageUrl: g, badgeName: _, badgeScreenName: y, descriptionValue: p, imageUrl: c, introValue: d, isBlueVerified: S, isProtected: k, isVerified: f, name: o, screenName: u }), b.createElement(I.Z, { style: F }, l, b.createElement(_e.Z, { recurring: !0, style: Se.disclaimer }), a));
+                        h = y.useMemo(() => [Se.subscribeButtonContainer, n && Se.subscribeButtonContainerWide], [n]);
+                    return y.createElement(y.Fragment, null, y.createElement(ye.Z, { badgeImageUrl: g, badgeName: _, badgeScreenName: b, descriptionValue: p, imageUrl: c, introValue: d, isBlueVerified: S, isProtected: k, isVerified: f, name: o, screenName: u }), y.createElement(M.Z, { style: h }, l, y.createElement(_e.Z, { recurring: !0, style: Se.disclaimer }), a));
                 },
-                Se = h.default.create((e) => ({ disclaimer: { marginVertical: e.spaces.space24 }, subscribeButtonContainer: { alignItems: "center", flexGrow: 1, marginBottom: e.spaces.space40, marginTop: e.spaces.space48, paddingHorizontal: e.spaces.space32 }, subscribeButtonContainerWide: { paddingHorizontal: e.spaces.space48 } }));
-            var Fe = (function () {
+                Se = F.default.create((e) => ({ disclaimer: { marginVertical: e.spaces.space24 }, subscribeButtonContainer: { alignItems: "center", flexGrow: 1, marginBottom: e.spaces.space40, marginTop: e.spaces.space48, paddingHorizontal: e.spaces.space32 }, subscribeButtonContainerWide: { paddingHorizontal: e.spaces.space48 } }));
+            var he = (function () {
                 var e = { defaultValue: null, kind: "LocalArgument", name: "consented" },
                     a = { defaultValue: null, kind: "LocalArgument", name: "creator_id" },
                     l = { defaultValue: null, kind: "LocalArgument", name: "email" },
@@ -442,11 +442,11 @@
                     ];
                 return { fragment: { argumentDefinitions: [e, a, l], kind: "Fragment", metadata: null, name: "useEmailShareConsentUpdateMutation", selections: n, type: "Mutation", abstractKey: null }, kind: "Request", operation: { argumentDefinitions: [l, a, e], kind: "Operation", name: "useEmailShareConsentUpdateMutation", selections: n }, params: { id: "cpdX3u0AUkdRb5mc3LpVpg", metadata: {}, name: "useEmailShareConsentUpdateMutation", operationKind: "mutation", text: null } };
             })();
-            Fe.hash = "c3538b09e6ebfaf72cfafe1dcdd48251";
-            const he = Fe;
-            var we = l(351743),
-                ve = l.n(we);
-            const Ke = he;
+            he.hash = "c3538b09e6ebfaf72cfafe1dcdd48251";
+            const Fe = he;
+            var ve = l(351743),
+                we = l.n(ve);
+            const Ke = Fe;
             l(571372);
             var Ee = (function () {
                 var e = [
@@ -475,43 +475,43 @@
             })();
             Ee.hash = "759d9c15b4318f3e6cf9204063fd8da0";
             const Ze = Ee,
-                Le = v().d2613123,
-                Ce = v().ef4602ec,
-                Te = v().c4640fc0,
-                xe = v().a72064a8,
-                Ne = v().f88553c8,
-                Ue = B,
-                Pe = V,
-                Ve = (e) => {
+                Le = w().d2613123,
+                Ce = w().ef4602ec,
+                Te = w().c4640fc0,
+                xe = w().a72064a8,
+                Ve = w().f88553c8,
+                Ne = A,
+                Ue = P,
+                Pe = (e) => {
                     const { screenName: a, user: l, viewer: n } = e,
-                        r = (0, Q.hC)("subscriptions_marketing_page_include_tax_enabled"),
-                        t = (0, Q.hC)("super_follow_subscriptions_tax_calculation_enabled"),
-                        s = (0, Q.hC)("creator_subscriptions_email_share_enabled"),
-                        [i, o] = b.useState(""),
-                        [c, u] = b.useState(!1),
-                        d = b.useRef(),
+                        r = (0, W.hC)("subscriptions_marketing_page_include_tax_enabled"),
+                        t = (0, W.hC)("super_follow_subscriptions_tax_calculation_enabled"),
+                        s = (0, W.hC)("creator_subscriptions_email_share_enabled"),
+                        [i, o] = y.useState(""),
+                        [c, u] = y.useState(!1),
+                        d = y.useRef(),
                         m = (0, q.R)(d, { threshold: 0.5 }),
-                        p = (0, Y.z)(),
-                        g = D()(Ue, l),
-                        y = D()(Pe, n),
+                        p = (0, J.z)(),
+                        g = D()(Ne, l),
+                        b = D()(Ue, n),
                         k = (0, S.useHistory)(),
-                        f = (0, W.p)(),
-                        h = g.legacy?.id_str ?? void 0,
-                        w = g.legacy?.screen_name ?? void 0,
-                        v = ((e, a, l, n) => {
+                        f = (0, Q.p)(),
+                        F = g.legacy?.id_str ?? void 0,
+                        v = g.legacy?.screen_name ?? void 0,
+                        w = ((e, a, l, n) => {
                             let r = e;
                             return l && n && (r += a), r;
                         })(g.super_follow_creator_product_metadata?.amount ?? 0, g.super_follow_creator_product_metadata?.tax_amount ?? 0, r, t),
                         E = g.super_follow_creator_product_metadata?.currency_code ?? void 0,
                         Z = g.super_follow_creator_product_metadata?.product_id ?? void 0,
-                        L = y.legacy?.id_str ?? void 0,
-                        { href: C, origin: T } = J.ZP.get(),
-                        x = w ? `${T}/${w}/creator-subscriptions/subscribe/success` : T,
-                        N = w ? `${T}/${w}/creator-subscriptions/subscribe/failure` : T,
-                        [U, P] = (({ cancelUrl: e, productId: a, successUrl: l }) => {
-                            const [n, r] = ve()(Ze);
+                        L = b.legacy?.id_str ?? void 0,
+                        { href: C, origin: T } = X.ZP.get(),
+                        x = v ? `${T}/${v}/creator-subscriptions/subscribe/success` : T,
+                        V = v ? `${T}/${v}/creator-subscriptions/subscribe/failure` : T,
+                        [N, U] = (({ cancelUrl: e, productId: a, successUrl: l }) => {
+                            const [n, r] = we()(Ze);
                             return [
-                                b.useCallback(
+                                y.useCallback(
                                     () =>
                                         a
                                             ? new Promise((r, t) => {
@@ -529,11 +529,11 @@
                                 ),
                                 r,
                             ];
-                        })({ productId: Z, successUrl: x, cancelUrl: N }),
-                        [V] = (() => {
-                            const [e, a] = ve()(Ke);
+                        })({ productId: Z, successUrl: x, cancelUrl: V }),
+                        [P] = (() => {
+                            const [e, a] = we()(Ke);
                             return [
-                                b.useCallback(
+                                y.useCallback(
                                     ({ consented: a, creatorId: l, email: n }) =>
                                         new Promise((r, t) => {
                                             e({
@@ -549,93 +549,93 @@
                                 a,
                             ];
                         })(),
-                        R = b.useMemo(() => {
-                            let e = (0, J.G3)(k.location);
+                        B = y.useMemo(() => {
+                            let e = (0, X.G3)(k.location);
                             const a = k.getLastNonModalLocationPathname() || "";
-                            !(0, J.d)(k.location) && w && a.includes(`${w}/status`) && (e = "tweet");
+                            !(0, X.d)(k.location) && v && a.includes(`${v}/status`) && (e = "tweet");
                             const l = g.legacy?.id_str ? { creator_user_id: g.legacy.id_str, referring_page: e } : void 0;
                             return { items: [{ is_viewer_follows_user: !!g.legacy?.following, super_follow_details: l }] };
-                        }, [w, g, k]);
-                    b.useEffect(() => {
-                        p.scribe({ element: "subscribe_screen", action: "impression", data: R });
-                    }, [R, p]);
-                    const B = s && !!g.verified_program_creator_features?.email_sharing_from_subscribers_enabled,
-                        M = B && c,
-                        ee = M && (!i || !!(0, X.Z)(i)),
+                        }, [v, g, k]);
+                    y.useEffect(() => {
+                        p.scribe({ element: "subscribe_screen", action: "impression", data: B });
+                    }, [B, p]);
+                    const A = s && !!g.verified_program_creator_features?.email_sharing_from_subscribers_enabled,
+                        I = A && c,
+                        ee = I && (!i || !!(0, Y.Z)(i)),
                         ae = g.legacy?.name ?? "",
-                        le = B ? b.createElement(ue, { consented: c, creatorName: ae, setConsented: u, setSubscriptionEmail: o, subscriptionEmail: i }) : null,
+                        le = A ? y.createElement(ue, { consented: c, creatorName: ae, setConsented: u, setSubscriptionEmail: o, subscriptionEmail: i }) : null,
                         ne = Te,
                         re = xe,
-                        te = b.useCallback(() => {
-                            p.scribe({ element: "subscribe_button", action: "click", data: R });
+                        te = y.useCallback(() => {
+                            p.scribe({ element: "subscribe_button", action: "click", data: B });
                             const e =
-                                    M && !ee && h
-                                        ? V({ email: i, creatorId: h, consented: c })
+                                    I && !ee && F
+                                        ? P({ email: i, creatorId: F, consented: c })
                                               .then((e) => {
-                                                  p.scribe({ element: "email_share_consent_update", action: e ? "success" : "error", data: R });
+                                                  p.scribe({ element: "email_share_consent_update", action: e ? "success" : "error", data: B });
                                               })
                                               .catch(() => {
-                                                  p.scribe({ element: "email_share_consent_update", action: "error", data: R });
+                                                  p.scribe({ element: "email_share_consent_update", action: "error", data: B });
                                               })
                                         : null,
-                                a = U().catch(() => {
+                                a = N().catch(() => {
                                     f({ text: Ce });
                                 });
                             Promise.all([a, e]).then(([e]) => {
-                                e && J.ZP.navigateTo(e);
+                                e && X.ZP.navigateTo(e);
                             });
-                        }, [p, h, R, M, ee, U, V, i, c, f]),
-                        se = b.useCallback(() => {
-                            A.Z.setString(C), f({ text: Ne }), p.scribe({ action: "share", data: R });
-                        }, [f, p, C, R]),
-                        ie = b.useCallback(
+                        }, [p, F, B, I, ee, N, P, i, c, f]),
+                        se = y.useCallback(() => {
+                            R.Z.setString(C), f({ text: Ve }), p.scribe({ action: "share", data: B });
+                        }, [f, p, C, B]),
+                        ie = y.useCallback(
                             (e) => {
                                 const a = [];
-                                return a.push({ text: re, Icon: O.default, onClick: se }), p.scribe({ element: "share", action: "click", data: R }), b.createElement(z.Z, { items: a, onCloseRequested: e });
+                                return a.push({ text: re, Icon: j.default, onClick: se }), p.scribe({ element: "share", action: "click", data: B }), y.createElement(z.Z, { items: a, onCloseRequested: e });
                             },
-                            [p, re, se, R],
+                            [p, re, se, B],
                         ),
-                        oe = E && v ? ((e, a) => G.T[e.toUpperCase()](parseInt(a, 10) / 1e6))(E, v) : void 0,
-                        ce = { disabled: (h && L && h === L) || P || !Z || ee, onPress: te },
-                        de = b.createElement(F.ZP, (0, _.Z)({}, ce, { backgroundColor: "plum500", borderColor: "transparent", color: "white", ref: d, size: "xLarge", style: Re.bigSubscribeButton }), P ? b.createElement($.Z, null) : Le({ price: oe })),
-                        me = b.createElement(F.ZP, (0, _.Z)({}, ce, { disabled: ce.disabled && !m, size: "small", style: [Re.transitionOpacity, m ? Re.opacityNone : void 0], type: "primaryFilled" }), P ? b.createElement($.Z, { size: "small" }) : Le({ price: oe })),
-                        pe = b.createElement(F.ZP, { "aria-label": ne, hoverLabel: { label: ne }, icon: b.createElement(j.default, null), renderMenu: ie, size: "small", style: Re.shareButton, type: "primaryText" }),
-                        ge = b.createElement(I.Z, { style: Re.rightControl }, me, pe),
+                        oe = E && w ? ((e, a) => G.T[e.toUpperCase()](parseInt(a, 10) / 1e6))(E, w) : void 0,
+                        ce = { disabled: (F && L && F === L) || U || !Z || ee, onPress: te },
+                        de = y.createElement(h.ZP, (0, _.Z)({}, ce, { backgroundColor: "plum500", borderColor: "transparent", color: "white", ref: d, size: "xLarge", style: Be.bigSubscribeButton }), U ? y.createElement($.Z, null) : Le({ price: oe })),
+                        me = y.createElement(h.ZP, (0, _.Z)({}, ce, { disabled: ce.disabled && !m, size: "small", style: [Be.transitionOpacity, m ? Be.opacityNone : void 0], type: "primaryFilled" }), U ? y.createElement($.Z, { size: "small" }) : Le({ price: oe })),
+                        pe = y.createElement(h.ZP, { "aria-label": ne, hoverLabel: { label: ne }, icon: y.createElement(O.default, null), renderMenu: ie, size: "small", style: Be.shareButton, type: "primaryText" }),
+                        ge = y.createElement(M.Z, { style: Be.rightControl }, me, pe),
                         _e = (0, H.$u)();
-                    return b.createElement(K.Z, { backButtonType: "back", backLocation: `/${a}/superfollows`, children: b.createElement(fe, { children: de, emailShareElement: le, isWide: _e, user: g, viewer: y }), history: k, rightControl: ge });
+                    return y.createElement(K.Z, { backButtonType: "back", backLocation: `/${a}/superfollows`, children: y.createElement(fe, { children: de, emailShareElement: le, isWide: _e, user: g, viewer: b }), history: k, rightControl: ge });
                 },
-                Re = h.default.create((e) => ({ bigSubscribeButton: { width: "100%" }, opacityNone: { opacity: 0 }, rightControl: { flexDirection: "row" }, shareButton: { marginStart: e.spaces.space16 }, transitionOpacity: { transition: "opacity 0.2s 0s ease-in-out" } })),
-                Be = v().g61ed8a4,
-                Ae = v().c3d23f10,
-                Ie = v().d338f53e,
-                Me = f,
+                Be = F.default.create((e) => ({ bigSubscribeButton: { width: "100%" }, opacityNone: { opacity: 0 }, rightControl: { flexDirection: "row" }, shareButton: { marginStart: e.spaces.space16 }, transitionOpacity: { transition: "opacity 0.2s 0s ease-in-out" } })),
+                Ae = w().g61ed8a4,
+                Re = w().c3d23f10,
+                Me = w().d338f53e,
+                Ie = f,
                 De = { context: "SuperFollowsSubscribe" },
                 ze = { page: "super_follows_marketing" },
                 $e = ({ screenName: e }) => {
                     const a = { screenName: (0, x.Z)(e) },
-                        l = (0, N.p)(Me, a),
+                        l = (0, V.p)(Ie, a),
                         n = l?.user?.result,
                         r = l?.viewer?.user_results?.result;
-                    return n && r ? (n.super_following ? b.createElement(U.Z, { to: `/${e}/creator-subscriptions/manage` }) : n.super_follow_eligible ? b.createElement(T.nO, { namespace: ze }, b.createElement(Ve, { screenName: e, user: n, viewer: r })) : b.createElement(U.Z, { to: `/${e}` })) : null;
+                    return n && r ? (n.super_following ? y.createElement(N.Z, { to: `/${e}/creator-subscriptions/manage` }) : n.super_follow_eligible ? y.createElement(T.nO, { namespace: ze }, y.createElement(Pe, { screenName: e, user: n, viewer: r })) : y.createElement(N.Z, { to: `/${e}` })) : null;
                 },
                 He = () => {
                     const e = (0, S.useHistory)(),
                         a = (0, S.useParams)().screenName || "",
-                        l = b.useMemo(
+                        l = y.useMemo(
                             () => ({
                                 type: "CustomRetry",
                                 content: (l) => {
-                                    const n = b.createElement(E.Z, { style: je.error }, b.createElement(Z.Z, { description: Ae, title: Be }), b.createElement(F.ZP, { onPress: l, style: je.errorButton, type: "brandFilled" }, Ie));
-                                    return b.createElement(K.Z, { backButtonType: "close", backLocation: `/${a}`, children: n, history: e });
+                                    const n = y.createElement(E.Z, { style: Oe.error }, y.createElement(Z.Z, { description: Re, title: Ae }), y.createElement(h.ZP, { onPress: l, style: Oe.errorButton, type: "brandFilled" }, Me));
+                                    return y.createElement(K.Z, { backButtonType: "close", backLocation: `/${a}`, children: n, history: e });
                                 },
                             }),
                             [e, a],
                         );
-                    return b.createElement(L.N, { errorConfig: De, fallback: l }, b.createElement(C.B, null, b.createElement($e, { screenName: a })));
+                    return y.createElement(L.N, { errorConfig: De, fallback: l }, y.createElement(C.B, null, y.createElement($e, { screenName: a })));
                 },
-                Oe = b.memo(He),
-                je = h.default.create((e) => ({ error: { marginTop: e.spaces.space12, marginBottom: e.spaces.space40, width: "100%" }, errorButton: { marginTop: e.spaces.space32 } })),
-                qe = (e) => b.createElement(y.Z, (0, _.Z)({}, e, { component: Oe }));
+                je = y.memo(He),
+                Oe = F.default.create((e) => ({ error: { marginTop: e.spaces.space12, marginBottom: e.spaces.space40, width: "100%" }, errorButton: { marginTop: e.spaces.space32 } })),
+                qe = (e) => y.createElement(b.Z, (0, _.Z)({}, e, { component: je }));
         },
         273961: (e, a, l) => {
             l.r(a), l.d(a, { default: () => f });
@@ -652,13 +652,13 @@
                 p = l(293115);
             const g = u().b17f0c4b,
                 _ = u().a893d602,
-                b = { page: "super_follows_subscription_success" },
-                y = o.default.create((e) => ({ button: { marginTop: e.spaces.space36, width: "100%" }, wrapper: { flexBasis: 0, flexGrow: 1, flexShrink: 1, overflow: "auto", marginHorizontal: e.spaces.space80, alignItems: "center", justifyContent: "center" } })),
+                y = { page: "super_follows_subscription_success" },
+                b = o.default.create((e) => ({ button: { marginTop: e.spaces.space36, width: "100%" }, wrapper: { flexBasis: 0, flexGrow: 1, flexShrink: 1, overflow: "auto", marginHorizontal: e.spaces.space80, alignItems: "center", justifyContent: "center" } })),
                 k = (e) => {
                     const { history: a, match: l } = e,
                         n = l.params.screenName,
                         t = n ? `/${n}` : "/home";
-                    return r.createElement(p.nO, { namespace: b }, r.createElement(d.Z, { backButtonType: "close", backLocation: t, history: a }, r.createElement(s.Z, { style: y.wrapper }, r.createElement(m.Z, { headline: g({ screenName: n }), illustration: m.j.Success }), r.createElement(i.ZP, { onPress: () => a.replace(t), size: "xLarge", style: y.button, type: "primaryFilled" }, _))));
+                    return r.createElement(p.nO, { namespace: y }, r.createElement(d.Z, { backButtonType: "close", backLocation: t, history: a }, r.createElement(s.Z, { style: b.wrapper }, r.createElement(m.Z, { headline: g({ screenName: n }), illustration: m.j.Success }), r.createElement(i.ZP, { onPress: () => a.replace(t), size: "xLarge", style: b.button, type: "primaryFilled" }, _))));
                 },
                 f = (e) => r.createElement(t.Z, (0, n.Z)({}, e, { component: k }));
         },
@@ -681,6 +681,19 @@
                 }),
                 p = s.default.create((e) => ({ modalContainerStyle: { flexBasis: 0, flexGrow: 1, flexShrink: 1, overflow: "auto", alignItems: "center", justifyContent: "center" }, wrapper: { alignItems: "center", justifyContent: "center" } }));
         },
+        155353: (e, a, l) => {
+            l.r(a), l.d(a, { default: () => o });
+            var n = l(202784),
+                r = l(890601),
+                t = l(783427),
+                s = l(347101);
+            const i = (e = {}) => {
+                const { direction: a } = (0, t.Z)();
+                return (0, r.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z" })) }, { writingDirection: a });
+            };
+            i.metadata = { width: 24, height: 24 };
+            const o = i;
+        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SuperFollowsSubscribe.2128294a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.SuperFollowsSubscribe.912d868a.js.map

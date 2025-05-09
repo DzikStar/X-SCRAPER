@@ -403,14 +403,25 @@
                                                         selections: [
                                                             { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
                                                             { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null },
-                                                            { alias: null, args: null, kind: "ScalarField", name: "verified_type", storageKey: null },
                                                             { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null },
-                                                            { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null },
                                                             { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
                                                         ],
                                                         storageKey: null,
                                                     },
                                                     { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" },
+                                                    {
+                                                        alias: null,
+                                                        args: null,
+                                                        concreteType: "UserVerification",
+                                                        kind: "LinkedField",
+                                                        name: "verification",
+                                                        plural: !1,
+                                                        selections: [
+                                                            { alias: null, args: null, kind: "ScalarField", name: "verified_type", storageKey: null },
+                                                            { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null },
+                                                        ],
+                                                        storageKey: null,
+                                                    },
                                                     { alias: null, args: null, kind: "ScalarField", name: "profile_image_shape", storageKey: null },
                                                     { alias: null, args: null, kind: "ScalarField", name: "is_blue_verified", storageKey: null },
                                                     {
@@ -455,7 +466,7 @@
                             },
                         ],
                     },
-                    params: { id: "1l69l_17caIoKHypMFrLlg", metadata: {}, name: "PremiumGiftingQuery", operationKind: "query", text: null },
+                    params: { id: "F_zv_0V94f6Vr-WjC1mrmA", metadata: {}, name: "PremiumGiftingQuery", operationKind: "query", text: null },
                 };
             u.hash = "caf409d10c6b5285a1c3838176d735ad";
             const p = u;
@@ -473,8 +484,8 @@
                 S = t(674132),
                 F = t.n(S),
                 C = t(310456),
-                Z = t(615656),
-                T = t(980407),
+                T = t(615656),
+                Z = t(980407),
                 E = t(736063),
                 x = t(952793),
                 L = t(782642),
@@ -556,11 +567,11 @@
                 O = t(412876),
                 U = t(553660),
                 W = t(615027),
-                H = t(688715),
-                z = t(847579);
-            const G = (0, H.ju)("https://legal.x.com/purchaser-terms"),
-                $ = (0, H.ju)("https://help.x.com/using-x/x-premium/gifting"),
-                Q = () => m.createElement(z.Z, { withoutBorder: !0 }, m.createElement(F().I18NFormatMessage, { $i18n: "h7f3e309" }, m.createElement(v.ZP, { link: G }, F().f3fddc98), m.createElement(v.ZP, { link: $ }, F().cff9c889)));
+                z = t(688715),
+                H = t(847579);
+            const G = (0, z.ju)("https://legal.x.com/purchaser-terms"),
+                $ = (0, z.ju)("https://help.x.com/using-x/x-premium/gifting"),
+                Q = () => m.createElement(H.Z, { withoutBorder: !0 }, m.createElement(F().I18NFormatMessage, { $i18n: "h7f3e309" }, m.createElement(v.ZP, { link: G }, F().f3fddc98), m.createElement(v.ZP, { link: $ }, F().cff9c889)));
             t(571372);
             var j = (function () {
                 var e = { defaultValue: null, kind: "LocalArgument", name: "cancel_url" },
@@ -642,8 +653,8 @@
                         I = m.useMemo(() => E?.prices?.find((e) => "OneTime" === e.price_type), [E?.prices]),
                         R = (0, x.hC)("subscriptions_marketing_page_include_tax_enabled"),
                         A = (0, x.hC)("subscriptions_gifting_premium_intro_copy_enabled"),
-                        H = I ? (0, w.x)({ amount: (0, V.aU)(I, R), currencyCode: I.currency_code.toUpperCase(), removeTrailingZeros: !0 }) : null,
-                        z = m.useCallback(() => {
+                        z = I ? (0, w.x)({ amount: (0, V.aU)(I, R), currencyCode: I.currency_code.toUpperCase(), removeTrailingZeros: !0 }) : null,
+                        H = m.useCallback(() => {
                             r.scribe({ component: "dismiss_button", action: "click" }), n.goBack();
                         }, [r, n]),
                         G = d?.user?.result,
@@ -657,7 +668,7 @@
                                     .then((e) => D.ZP.navigateTo(e))
                                     .catch((e) => {
                                         const a = e?.errors?.[0]?.code,
-                                            t = a === Z.ZP.GenericAccessDenied ? oe : se;
+                                            t = a === T.ZP.GenericAccessDenied ? oe : se;
                                         p({ text: t, withClearButton: !0, withAutoDismiss: !0 }), c(!1);
                                     }));
                         }, [p, h, $, S, r]),
@@ -665,12 +676,12 @@
                         Y = m.useMemo(() => {
                             const e = o || P,
                                 a = !l || e;
-                            return m.createElement(g.Z, { style: [me.footer, q] }, m.createElement(y.ZP, { disabled: a, onPress: j, type: "primaryFilled" }, e ? m.createElement(k.Z, null) : ne({ price: H })), m.createElement(Q, null));
-                        }, [H, j, P, o, q, l]),
+                            return m.createElement(g.Z, { style: [me.footer, q] }, m.createElement(y.ZP, { disabled: a, onPress: j, type: "primaryFilled" }, e ? m.createElement(k.Z, null) : ne({ price: z })), m.createElement(Q, null));
+                        }, [z, j, P, o, q, l]),
                         J = m.useCallback((e) => s(C.p[e]), [s]),
                         X = d?.blue_marketing_page_config?.products?.map(({ product_category: e, title: a }) => (e && a && "PremiumBasic" !== e ? { label: a, value: e } : null)).filter(Boolean),
                         le = K.St[l];
-                    return X && a && G && H && G?.premium_gifting_eligible ? m.createElement(T.Z, { backButtonType: "close", bottomBar: Y, history: n, onBackClick: z }, m.createElement(g.Z, { style: [me.root, q] }, m.createElement(g.Z, { style: me.content }, m.createElement(v.ZP, { align: "center", size: "title2", weight: "heavy" }, A ? re({ percentage: 40 }) : te), "User" === G.__typename ? m.createElement(g.Z, { style: me.alignCenter }, m.createElement(O.Z, { size: "custom", style: me.userAvatar, user: G, withLink: !1 }), m.createElement(U.Z, { style: me.alignCenter, user: G, withLink: !1, withStackedLayout: !0 })) : null, m.createElement(B.ZP, { label: ie, onChange: J, options: X, testID: "tier", value: l }), m.createElement(v.ZP, null, m.createElement(F().I18NFormatMessage, { $i18n: "ccd45e5f", tier: le, screenName: a, price: H }))))) : m.createElement(W.Z, { to: "/home" });
+                    return X && a && G && z && G?.premium_gifting_eligible ? m.createElement(Z.Z, { backButtonType: "close", bottomBar: Y, history: n, onBackClick: H }, m.createElement(g.Z, { style: [me.root, q] }, m.createElement(g.Z, { style: me.content }, m.createElement(v.ZP, { align: "center", size: "title2", weight: "heavy" }, A ? re({ percentage: 40 }) : te), "User" === G.__typename ? m.createElement(g.Z, { style: me.alignCenter }, m.createElement(O.Z, { size: "custom", style: me.userAvatar, user: G, withLink: !1 }), m.createElement(U.Z, { style: me.alignCenter, user: G, withLink: !1, withStackedLayout: !0 })) : null, m.createElement(B.ZP, { label: ie, onChange: J, options: X, testID: "tier", value: l }), m.createElement(v.ZP, null, m.createElement(F().I18NFormatMessage, { $i18n: "ccd45e5f", tier: le, screenName: a, price: z }))))) : m.createElement(W.Z, { to: "/home" });
                 },
                 ue = { context: "PremiumGifting" },
                 pe = (e) => m.createElement(A.nO, { namespace: le }, m.createElement(E.H, { errorConfig: ue }, m.createElement(de, e))),
@@ -819,4 +830,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.PremiumGifting.39d5533a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.PremiumGifting.2f05599a.js.map

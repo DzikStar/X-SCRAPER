@@ -166,16 +166,16 @@
                         selections: [
                             { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null },
                             { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }, action: "THROW" },
-                            { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }, action: "THROW" },
                             { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
                             { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
                         ],
                         storageKey: null,
                     },
+                    { alias: null, args: null, concreteType: "UserVerification", kind: "LinkedField", name: "verification", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }], storageKey: null },
                 ],
                 type: "User",
                 abstractKey: null,
-                hash: "843cf22b44fe99e85fe85fe765a0d867",
+                hash: "0bad215d260a8d1885bdd2321514e864",
             };
             const l = r;
         },
@@ -615,13 +615,13 @@
                 g = a(655543),
                 f = a(715601),
                 b = a(392237);
-            const h = b.default.create((e) => ({ fill: { flex: 1, alignSelf: "stretch" }, viewportView: { ...b.default.absoluteFillObject, overflowY: "auto" }, appBarContainer: { position: "sticky", top: 0, backfaceVisibility: "hidden", zIndex: e.componentZIndices.appBarZIndex } }));
-            class y extends r.Component {
+            const y = b.default.create((e) => ({ fill: { flex: 1, alignSelf: "stretch" }, viewportView: { ...b.default.absoluteFillObject, overflowY: "auto" }, appBarContainer: { position: "sticky", top: 0, backfaceVisibility: "hidden", zIndex: e.componentZIndices.appBarZIndex } }));
+            class h extends r.Component {
                 constructor(...e) {
                     super(...e),
                         (this._renderChildren = () => {
                             const { children: e } = this.props;
-                            return this.context.rootDetailPerColumnScroll ? r.createElement(s.Z, { style: h.fill }, r.createElement(f.Z, { style: h.viewportView }, this._renderInlineNav({ isTwoColumnLayout: !0 }), e)) : e;
+                            return this.context.rootDetailPerColumnScroll ? r.createElement(s.Z, { style: y.fill }, r.createElement(f.Z, { style: y.viewportView }, this._renderInlineNav({ isTwoColumnLayout: !0 }), e)) : e;
                         });
                 }
                 render() {
@@ -636,20 +636,20 @@
                     return r.createElement(r.Fragment, null, !e && this._renderInlineNav({ isTwoColumnLayout: !0 }), this._renderChildren());
                 }
                 _renderInlineNav({ isTwoColumnLayout: e }) {
-                    const { SideNavButton: n, TabBar: a, appBarStyle: l, backLocation: t, documentTitle: i, headerless: o, history: d, leftControl: c, middleControl: g, onBackClick: f, rightControl: b, screenType: y, searchBoxOptions: F, secondaryBar: k, showSubtitleOnRoot: _, showSubtitleOnWideDetail: w, subtitle: S, title: v, titleIconCell: C, titleIconCellSize: D, withDetailOpen: Z, withSearchBox: K, withTweetButton: E, withWideContainer: O } = this.props,
-                        P = "root" === y,
-                        B = "secondaryRoot" === y,
-                        I = "primaryDetail" === y,
+                    const { SideNavButton: n, TabBar: a, appBarStyle: l, backLocation: t, documentTitle: i, headerless: o, history: d, leftControl: c, middleControl: g, onBackClick: f, rightControl: b, screenType: h, searchBoxOptions: F, secondaryBar: k, showSubtitleOnRoot: _, showSubtitleOnWideDetail: w, subtitle: S, title: v, titleIconCell: C, titleIconCellSize: D, withDetailOpen: Z, withSearchBox: K, withTweetButton: E, withWideContainer: O } = this.props,
+                        P = "root" === h,
+                        B = "secondaryRoot" === h,
+                        I = "primaryDetail" === h,
                         T = (I && w) || (P && _),
                         x = P || (I && e),
-                        R = P ? u.ey : I ? u.vX : void 0,
-                        L = r.createElement(s.Z, { style: h.appBarContainer }, r.createElement(m.ZP, { backLocation: t, fixed: !1, hideBackButton: x, history: d, leftControl: c, middleControl: g, onBackClick: f, rightControl: b, secondaryBar: k, style: l, subtitle: T ? S : void 0, title: v, titleDomId: R, titleIconCell: C, titleIconCellSize: D, withWideContainer: O })),
+                        L = P ? u.ey : I ? u.vX : void 0,
+                        R = r.createElement(s.Z, { style: y.appBarContainer }, r.createElement(m.ZP, { backLocation: t, fixed: !1, hideBackButton: x, history: d, leftControl: c, middleControl: g, onBackClick: f, rightControl: b, secondaryBar: k, style: l, subtitle: T ? S : void 0, title: v, titleDomId: L, titleIconCell: C, titleIconCellSize: D, withWideContainer: O })),
                         V = P || (B && Z) ? null : r.createElement(p.Z.Configure, { SideNavButton: n, TabBar: a, backLocation: t, documentTitle: i, headerless: o, middleControl: g, onBackClick: f, rightControl: b, searchBoxOptions: F, subtitle: S, title: v, withSearchBox: K, withTweetButton: E });
-                    return r.createElement(r.Fragment, null, V, L);
+                    return r.createElement(r.Fragment, null, V, R);
                 }
             }
-            (y.contextType = g.Z), (y.defaultProps = { screenType: "secondaryDetail", showSubtitleOnWideDetail: !0 });
-            const F = (0, c.ZP)(y),
+            (h.contextType = g.Z), (h.defaultProps = { screenType: "secondaryDetail", showSubtitleOnWideDetail: !0 });
+            const F = (0, c.ZP)(h),
                 k = (e) => {
                     const n = (0, l.useHistory)();
                     return (0, t.HD)(n) ? e.children || null : r.createElement(F, e);
@@ -790,9 +790,9 @@
                 g = a(351743),
                 f = a.n(g),
                 b = a(420412),
-                h = a(954110),
-                y = a(674132),
-                F = a.n(y),
+                y = a(954110),
+                h = a(674132),
+                F = a.n(h),
                 k = a(125363),
                 _ = a(390387);
             const w = F().g40b2b30,
@@ -820,7 +820,7 @@
                                 variables: { previewsEnabled: !t, userId: e },
                             });
                     }, [a, t, e, n]);
-                return d.createElement(d.Fragment, null, d.createElement(b.Z, null), d.createElement(h.Z, { checked: t, disabled: !1, helpText: S, label: w, name: "previewsEnabledTabCustomization", onChange: i }), d.createElement(b.Z, null));
+                return d.createElement(d.Fragment, null, d.createElement(b.Z, null), d.createElement(y.Z, { checked: t, disabled: !1, helpText: S, label: w, name: "previewsEnabledTabCustomization", onChange: i }), d.createElement(b.Z, null));
             }
         },
         865721: (e, n, a) => {
@@ -839,9 +839,9 @@
                 g = a(601576);
             const f = (0, p.Z)().propsFromActions(() => ({ addToast: g.fz }));
             var b,
-                h = { fragment: { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "useSuperFollowsDeactivateMutation", selections: (b = [{ alias: null, args: [{ kind: "Literal", name: "s", value: "4721" }], kind: "ScalarField", name: "deactivate_super_follows_creator", storageKey: 'deactivate_super_follows_creator(s:"4721")' }]), type: "Mutation", abstractKey: null }, kind: "Request", operation: { argumentDefinitions: [], kind: "Operation", name: "useSuperFollowsDeactivateMutation", selections: b }, params: { id: "K5_KjMpjdtjQXzKGLqyFXw", metadata: {}, name: "useSuperFollowsDeactivateMutation", operationKind: "mutation", text: null } };
-            h.hash = "c33de27607da73145e2d32d5855eaa27";
-            const y = h;
+                y = { fragment: { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "useSuperFollowsDeactivateMutation", selections: (b = [{ alias: null, args: [{ kind: "Literal", name: "s", value: "4721" }], kind: "ScalarField", name: "deactivate_super_follows_creator", storageKey: 'deactivate_super_follows_creator(s:"4721")' }]), type: "Mutation", abstractKey: null }, kind: "Request", operation: { argumentDefinitions: [], kind: "Operation", name: "useSuperFollowsDeactivateMutation", selections: b }, params: { id: "K5_KjMpjdtjQXzKGLqyFXw", metadata: {}, name: "useSuperFollowsDeactivateMutation", operationKind: "mutation", text: null } };
+            y.hash = "c33de27607da73145e2d32d5855eaa27";
+            const h = y;
             var F = { argumentDefinitions: [], kind: "Fragment", metadata: null, name: "useSuperFollowsDeactivate_viewer", selections: [{ kind: "ClientExtension", selections: [{ alias: null, args: null, kind: "ScalarField", name: "__id", storageKey: null }] }], type: "Viewer", abstractKey: null, hash: "be30a750d32c634903dac132ededc4bf" };
             const k = F;
             var _ = a(614983),
@@ -849,7 +849,7 @@
                 S = a(351743),
                 v = a.n(S);
             const C = k,
-                D = y,
+                D = h,
                 Z = (e) => {
                     const n = o()(C, e),
                         [a, r] = v()(D);
@@ -885,8 +885,8 @@
                     const { addToast: n, disabled: a, label: l, onCancel: t, onConfirm: i, viewer: c, ...m } = e,
                         p = o()(T, c),
                         [g, f] = s.useState(!1),
-                        [b, h] = Z(p),
-                        y = s.useCallback(() => {
+                        [b, y] = Z(p),
+                        h = s.useCallback(() => {
                             f(!0);
                         }, []),
                         F = s.useCallback(() => {
@@ -901,7 +901,7 @@
                         k = s.useCallback(() => {
                             f(!1), t?.();
                         }, [t]);
-                    return s.createElement(s.Fragment, null, s.createElement(d.ZP, (0, r.Z)({}, m, { disabled: h || a, onPress: y, type: "destructiveOutlined" }), l), g && s.createElement(u.Z, { cancelButtonLabel: O, confirmButtonLabel: P, confirmButtonType: "destructiveFilled", headline: K, onCancel: k, onConfirm: F, text: E }));
+                    return s.createElement(s.Fragment, null, s.createElement(d.ZP, (0, r.Z)({}, m, { disabled: y || a, onPress: h, type: "destructiveOutlined" }), l), g && s.createElement(u.Z, { cancelButtonLabel: O, confirmButtonLabel: P, confirmButtonType: "destructiveFilled", headline: K, onCancel: k, onConfirm: F, text: E }));
                 });
         },
         420412: (e, n, a) => {
@@ -936,7 +936,7 @@
                 d = i;
         },
         466818: (e, n, a) => {
-            a.d(n, { ZP: () => h });
+            a.d(n, { ZP: () => y });
             var r = a(202784),
                 l = a(325686),
                 t = a(487552),
@@ -977,7 +977,7 @@
                     this.props.autofocus && this._selectRef && this._selectRef.current && this._selectRef.current.focus();
                 }
                 render() {
-                    const { "aria-describedby": e, disabled: n, errorText: a, hasError: d, helperText: g, options: f, style: h, testID: y, value: F, withEmptyOption: k } = this.props,
+                    const { "aria-describedby": e, disabled: n, errorText: a, hasError: d, helperText: g, options: f, style: y, testID: h, value: F, withEmptyOption: k } = this.props,
                         { isFocused: _ } = this.state,
                         w = o.ZP.getLanguage(),
                         S = void 0 === d ? !!a : d,
@@ -991,11 +991,11 @@
                             const o = "ja" === w ? c.default.theme.fontFamilies.japan : "rtl" === e || s.Z.isLocaleRTL(w) ? c.default.theme.fontFamilies.rtl : c.default.theme.fontFamilies.normal;
                             return r.createElement(
                                 l.Z,
-                                { style: [i.Z.border, b.container, n && i.Z.disabled, _ && i.Z.focusedBorderValid, S && i.Z.invalidBorderColor, _ && S && i.Z.focusedBorderInvalid, h] },
+                                { style: [i.Z.border, b.container, n && i.Z.disabled, _ && i.Z.focusedBorderValid, S && i.Z.invalidBorderColor, _ && S && i.Z.focusedBorderInvalid, y] },
                                 this._renderLabel(),
                                 r.createElement(
                                     m,
-                                    { "aria-describedby": C, "aria-invalid": S, "aria-labelledby": this._labelID, disabled: n, id: this._id, onBlur: this._handleBlur, onChange: this._handleChange, onFocus: this._handleFocus, ref: this._selectRef, style: [b.select, { fontFamily: o }, n && i.Z.disabled], testID: y || "", value: F },
+                                    { "aria-describedby": C, "aria-invalid": S, "aria-labelledby": this._labelID, disabled: n, id: this._id, onBlur: this._handleBlur, onChange: this._handleChange, onFocus: this._handleFocus, ref: this._selectRef, style: [b.select, { fontFamily: o }, n && i.Z.disabled], testID: h || "", value: F },
                                     k ? r.createElement(p, { disabled: !0, style: b.option, value: "" }) : null,
                                     f.map((e) => {
                                         const { disabled: n, label: a, value: l } = e;
@@ -1023,8 +1023,8 @@
             }
             f.defaultProps = { disabled: !1, autofocus: !1, withEmptyOption: !1 };
             const b = c.default.create((e) => ({ container: { backgroundColor: e.colors.cellBackground }, dropdownCaret: { color: e.colors.gray700, height: "1.5em", pointerEvents: "none", position: "absolute", marginTop: "-0.75em", top: "50%", end: e.spaces.space12 }, label: { position: "absolute", fontSize: e.fontSizes.subtext2, paddingHorizontal: e.spaces.space8, paddingTop: e.spaces.space8, pointerEvents: "none", lineHeight: e.lineHeights.subtext2 }, option: { backgroundColor: e.colors.navigationBackground }, select: { appearance: "none", backgroundColor: "transparent", borderRadius: e.borderRadii.none, borderWidth: e.borderWidths.none, color: e.colors.text, cursor: "pointer", fontSize: e.fontSizes.headline2, lineHeight: e.lineHeights.headline2, margin: 0, marginTop: e.spaces.space16, outlineStyle: "none", padding: 0, paddingTop: e.spaces.space12, paddingBottom: e.spaces.space8, paddingHorizontal: e.spaces.space8 }, helperText: { fontSize: e.fontSizes.subtext2, paddingHorizontal: e.spaces.space8, paddingTop: e.spaces.space2 } })),
-                h = f;
+                y = f;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~ondemand.SettingsMonetization~ondemand.SettingsSuperFollows-6107ac1a.e4e472da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~ondemand.SettingsMonetization~ondemand.SettingsSuperFollows-6107ac1a.3b384afa.js.map

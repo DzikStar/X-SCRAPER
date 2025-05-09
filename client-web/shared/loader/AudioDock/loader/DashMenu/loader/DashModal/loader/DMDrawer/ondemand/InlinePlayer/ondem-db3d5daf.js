@@ -7,13 +7,13 @@
             var r = n(807896),
                 a = n(164282),
                 o = n(202784),
-                c = (n(585488), n(277660)),
-                i = n.n(c),
+                i = (n(585488), n(277660)),
+                c = n.n(i),
                 s = n(823161);
             const l = a.Z,
                 u = ({ user: e, ...t }) => {
-                    const n = i()(l, e),
-                        a = "Business" === n.legacy?.verified_type || "Square" === n.profile_image_shape ? "square" : "circle";
+                    const n = c()(l, e),
+                        a = "Business" === n.verification?.verified_type || "Square" === n.profile_image_shape ? "square" : "circle";
                     return o.createElement(s.default, (0, r.Z)({}, t, { screenName: n.legacy?.screen_name, shape: a, uri: n.legacy?.profile_image_url_https }));
                 },
                 d = o.memo(u);
@@ -23,15 +23,15 @@
             var r = n(807896),
                 a = n(547666),
                 o = n(202784),
-                c = (n(585488), n(277660)),
-                i = n.n(c),
+                i = (n(585488), n(277660)),
+                c = n.n(i),
                 s = n(366635);
             const l = a.Z,
                 u = ({ user: e, ...t }) => {
-                    const { affiliates_highlighted_label: n, is_blue_verified: a, legacy: c } = i()(l, e),
-                        { badge: u, description: d, url: m, userLabelDisplayType: f, userLabelType: p } = n?.label || {},
-                        v = { badge: u || void 0, description: d || "", url: m || void 0, userLabelType: p || void 0, userLabelDisplayType: f || void 0 };
-                    return o.createElement(s.Z, (0, r.Z)({}, t, { affiliateBadgeInfo: v, isBlueVerified: a || !1, isProtected: c?.protected, isVerified: c?.verified, name: c?.name, screenName: c?.screen_name, verifiedType: c?.verified_type || "" }));
+                    const { affiliates_highlighted_label: n, is_blue_verified: a, legacy: i, verification: u } = c()(l, e),
+                        { badge: d, description: m, url: f, userLabelDisplayType: p, userLabelType: v } = n?.label || {},
+                        E = { badge: d || void 0, description: m || "", url: f || void 0, userLabelType: v || void 0, userLabelDisplayType: p || void 0 };
+                    return o.createElement(s.Z, (0, r.Z)({}, t, { affiliateBadgeInfo: E, isBlueVerified: a || !1, isProtected: i?.protected, isVerified: u?.verified ?? !1, name: i?.name, screenName: i?.screen_name, verifiedType: u?.verified_type || "" }));
                 },
                 d = o.memo(u);
         },
@@ -40,15 +40,15 @@
             var r = n(202784),
                 a = n(400752),
                 o = n(565058),
-                c = n(987809),
-                i = n(325686),
+                i = n(987809),
+                c = n(325686),
                 s = n(731708),
                 l = n(790997),
                 u = n(480599);
             function d() {
                 const e = (0, a.Dv)(h),
                     t = (0, a.Dv)(g);
-                return (0, a.Dv)(p) ? r.createElement(i.Z, null, r.createElement(s.ZP, null, "Total: ⇩", m(e), " · ⇧", m(t))) : null;
+                return (0, a.Dv)(p) ? r.createElement(c.Z, null, r.createElement(s.ZP, null, "Total: ⇩", m(e), " · ⇧", m(t))) : null;
             }
             function m(e) {
                 return `${e.toLocaleString(void 0, { notation: "compact", compactDisplay: "short" })}b/s`;
@@ -66,8 +66,8 @@
                 }, [n, e, t]);
             }
             const p = (0, o.cn)(!1),
-                v = (0, c.xu)((e) => (0, o.cn)((t) => t((0, u.n)(e)).receivingBitrate)),
-                E = (0, c.xu)((e) => (0, o.cn)((t) => t((0, u.n)(e)).sendingBitrate)),
+                v = (0, i.xu)((e) => (0, o.cn)((t) => t((0, u.n)(e)).receivingBitrate)),
+                E = (0, i.xu)((e) => (0, o.cn)((t) => t((0, u.n)(e)).sendingBitrate)),
                 h = (0, o.cn)((e) => e(l.qx).reduce((t, n) => t + e(v(n)), 0)),
                 g = (0, o.cn)((e) => e(l.qx).reduce((t, n) => t + e(E(n)), 0));
         },
@@ -76,8 +76,8 @@
             var r = n(551394),
                 a = n(202784),
                 o = n(325686),
-                c = (n(585488), n(731708)),
-                i = n(638009),
+                i = (n(585488), n(731708)),
+                c = n(638009),
                 s = n(392237),
                 l = n(335923),
                 u = n(535338),
@@ -88,7 +88,7 @@
                     s = (0, u.p)(v, { userId: r });
                 if (!s.user.result) return null;
                 const f = s.user.result;
-                return a.createElement(o.Z, { style: E.container }, a.createElement(d.Y, { size: "xLarge", user: f }), a.createElement(o.Z, { style: E.messageContainer }, a.createElement(o.Z, { style: E.header }, a.createElement(m.v, { user: f, withScreenName: !1 }), a.createElement(c.ZP, { color: "gray500", size: "subtext2", style: E.time }, p(n))), a.createElement(i.zt, { isExternal: () => !0 }, a.createElement(l.Z, { markdownText: t }))));
+                return a.createElement(o.Z, { style: E.container }, a.createElement(d.Y, { size: "xLarge", user: f }), a.createElement(o.Z, { style: E.messageContainer }, a.createElement(o.Z, { style: E.header }, a.createElement(m.v, { user: f, withScreenName: !1 }), a.createElement(i.ZP, { color: "gray500", size: "subtext2", style: E.time }, p(n))), a.createElement(c.zt, { isExternal: () => !0 }, a.createElement(l.Z, { markdownText: t }))));
             }
             const p = (e) => new Date(e).toLocaleTimeString(void 0, { hour: "numeric", minute: "numeric" }),
                 v = r.Z,
@@ -99,8 +99,8 @@
             var r = n(202784),
                 a = n(400752),
                 o = n(325686),
-                c = n(731708),
-                i = n(392237),
+                i = n(731708),
+                c = n(392237),
                 s = n(736063),
                 l = n(94751),
                 u = n(535338),
@@ -121,9 +121,9 @@
             function E({ notification: e }) {
                 const t = (0, u.p)(m.i, { userId: e.userId }).user.result,
                     n = (0, a.Dv)((0, l.ce)(e));
-                return t ? r.createElement(o.Z, { style: n ? h.notificationItemFaded : h.notificationItem }, r.createElement(o.Z, null, r.createElement(d.v, { user: t, withScreenName: !1 })), r.createElement(c.ZP, { numberOfLines: 2, size: "subtext1" }, e.text)) : null;
+                return t ? r.createElement(o.Z, { style: n ? h.notificationItemFaded : h.notificationItem }, r.createElement(o.Z, null, r.createElement(d.v, { user: t, withScreenName: !1 })), r.createElement(i.ZP, { numberOfLines: 2, size: "subtext1" }, e.text)) : null;
             }
-            const h = i.default.create((e) => {
+            const h = c.default.create((e) => {
                 const t = { backgroundColor: e.colors.gray100, borderRadius: e.borderRadii.large, paddingHorizontal: e.componentDimensions.gutterHorizontal, paddingVertical: e.componentDimensions.gutterVertical };
                 return { notificationContainer: { position: "absolute", width: 300 * e.scaleMultiplier, end: e.spaces.space12, bottom: e.spaces.space12, gap: e.spaces.space8 }, notificationItem: t, notificationItemFaded: { ...t, opacity: 0, transition: "opacity 0.3s ease-in-out" } };
             });
@@ -133,8 +133,8 @@
             var r = n(202784),
                 a = n(400752),
                 o = n(214997),
-                c = n(325686),
-                i = n(844685),
+                i = n(325686),
+                c = n(844685),
                 s = n(392237),
                 l = n(869508),
                 u = n(736063),
@@ -161,9 +161,9 @@
             function _({ onSend: e }) {
                 const [t, n] = (0, a.KO)(m.Pm),
                     o = (0, a.b9)(D.hc),
-                    c = r.useRef(null);
+                    i = r.useRef(null);
                 r.useEffect(() => {
-                    c.current && c.current.focus();
+                    i.current && i.current.focus();
                 }, []);
                 return r.createElement(h.Z, {
                     leftAligned: !0,
@@ -177,7 +177,7 @@
                         "Enter" !== t.key || t.shiftKey ? (("c" === t.key && t.ctrlKey && t.metaKey) || ("c" === t.key && t.ctrlKey && t.altKey)) && (o(), t.preventDefault()) : (e(), t.preventDefault());
                     },
                     placeholder: k,
-                    ref: c,
+                    ref: i,
                     rightContent: r.createElement(S, { onSend: e }),
                     style: R.input,
                     styleType: "pill",
@@ -198,23 +198,23 @@
                             const a = n.createChatPayload(t, { roomId: e, participantIndex: 0 });
                             (0, l.lW)(JSON.stringify(a));
                             const o = JSON.parse(a.payload),
-                                c = JSON.parse(o.body),
-                                i = { id: c.uuid, text: c.body, timeSent: Date.now(), userId: r?.id_str };
-                            return i;
+                                i = JSON.parse(o.body),
+                                c = { id: i.uuid, text: i.body, timeSent: Date.now(), userId: r?.id_str };
+                            return c;
                         })(g, n, b, h);
                         s(""), t((t) => [...t, e]);
                     }, [g, n, s, t, b, h]),
                     Z = r.useRef(null);
                 return r.createElement(
-                    c.Z,
+                    i.Z,
                     { style: z.container },
-                    r.createElement(i.Z, { text: "Chat" }),
+                    r.createElement(c.Z, { text: "Chat" }),
                     r.createElement(
                         o.Z,
                         { onContentSizeChange: () => Z.current?.scrollToEnd({ animated: !1 }), ref: Z, style: z.messageContainer },
                         e.map((e) => r.createElement(u.H, { errorConfig: P, key: e.id }, r.createElement(E.u, { message: e }))),
                     ),
-                    r.createElement(c.Z, { style: z.draftContainer }, r.createElement(_, { onSend: y })),
+                    r.createElement(i.Z, { style: z.draftContainer }, r.createElement(_, { onSend: y })),
                 );
             }
             const P = { context: "ConferenceChatSidebar" };
@@ -228,7 +228,7 @@
                 const e = (0, a.Dv)(O.wM),
                     t = (0, a.Dv)(O.Wj),
                     n = (0, a.b9)(N);
-                return r.createElement(c.Z, null, r.createElement(i.Z, { text: A }), r.createElement(M.Z, { checked: t, disabled: !e, label: H, name: "suppression", onChange: n, type: "switch" }));
+                return r.createElement(i.Z, null, r.createElement(c.Z, { text: A }), r.createElement(M.Z, { checked: t, disabled: !e, label: H, name: "suppression", onChange: n, type: "switch" }));
             }
             const N = (0, L.cn)(null, (e, t, n, r) => {
                 t(O.bU, r);
@@ -252,9 +252,9 @@
                 const e = (0, a.Dv)(ue);
                 return e?.length
                     ? r.createElement(
-                          c.Z,
+                          i.Z,
                           null,
-                          r.createElement(i.Z, { text: te }),
+                          r.createElement(c.Z, { text: te }),
                           e.map((e) => r.createElement(u.H, { errorConfig: re, key: e }, r.createElement(ae, { userId: e }))),
                       )
                     : null;
@@ -263,11 +263,11 @@
             function ae({ userId: e }) {
                 const t = (0, Y.$)(e),
                     n = r.useCallback((t) => r.createElement(le, { onClose: t, userId: e }), [e]);
-                return t ? r.createElement(G.P, { renderAtom: de }, (e) => r.createElement(ee.H, { decoration: r.createElement(g.ZP, { "aria-label": ce, disabled: e, hoverLabel: ie, icon: oe, renderMenu: n, size: "medium", type: "primaryText" }), displayMode: "UserCompact", isDisabled: e, user: t, withLink: !1 })) : null;
+                return t ? r.createElement(G.P, { renderAtom: de }, (e) => r.createElement(ee.H, { decoration: r.createElement(g.ZP, { "aria-label": ie, disabled: e, hoverLabel: ce, icon: oe, renderMenu: n, size: "medium", type: "primaryText" }), displayMode: "UserCompact", isDisabled: e, user: t, withLink: !1 })) : null;
             }
             const oe = r.createElement(j.default, null),
-                ce = y().h16eeb42,
-                ie = { label: ce },
+                ie = y().h16eeb42,
+                ce = { label: ie },
                 se = y().e68b09b4;
             function le({ onClose: e, userId: t }) {
                 const n = (function (e) {
@@ -309,7 +309,7 @@
             function he() {
                 const e = (0, a.b9)(ye),
                     t = (0, a.b9)(Ze);
-                return r.createElement(c.Z, { style: ge.invite }, r.createElement(i.Z, { text: Ee }), r.createElement(me.default, { disableClearButton: !0, filter: be, getItemIsDisabled: t, isModal: !0, onItemClick: e, placeholder: ve, renderUserDecoration: fe.ib, shouldFocusOnClear: !0, source: pe._4.ConferencesInvite, withSectionDivider: !1 }));
+                return r.createElement(i.Z, { style: ge.invite }, r.createElement(c.Z, { text: Ee }), r.createElement(me.default, { disableClearButton: !0, filter: be, getItemIsDisabled: t, isModal: !0, onItemClick: e, placeholder: ve, renderUserDecoration: fe.ib, shouldFocusOnClear: !0, source: pe._4.ConferencesInvite, withSectionDivider: !1 }));
             }
             const ge = s.default.create((e) => ({ invite: { height: 500 * e.scaleMultiplier } })),
                 be = [pe.my.Users],
@@ -348,8 +348,8 @@
             var r = n(202784),
                 a = n(400752),
                 o = n(325686),
-                c = n(392237),
-                i = n(502608),
+                i = n(392237),
+                c = n(502608),
                 s = n(807896),
                 l = n(666305),
                 u = n(757483),
@@ -375,8 +375,8 @@
                 );
             }
             function v({ containerRef: e, type: t }) {
-                const [n, c] = r.useState(!1),
-                    i = (0, a.oR)();
+                const [n, i] = r.useState(!1),
+                    c = (0, a.oR)();
                 r.useEffect(() => {
                     const n = e.current;
                     if (!n) return;
@@ -386,56 +386,56 @@
                             (r = requestAnimationFrame(() => {
                                 if ("top" === t) {
                                     const e = n.scrollTop > 1;
-                                    c(e);
+                                    i(e);
                                 } else if ("bottom" === t) {
                                     const e = Math.abs(n.scrollHeight - n.scrollTop - n.clientHeight) > 1;
-                                    c(e);
+                                    i(e);
                                 }
                             }));
                     };
                     a(), n.addEventListener("scroll", a), l.Z.observe(n, a);
-                    const o = i.sub(d.Mh, a);
+                    const o = c.sub(d.Mh, a);
                     return () => {
                         n.removeEventListener("scroll", a), l.Z.unobserve(n, a), o(), cancelAnimationFrame(r);
                     };
-                }, [e, i, t]);
+                }, [e, c, t]);
                 const s = "top" === t ? (n ? h.fadeIn : h.fadeInOff) : "bottom" === t ? (n ? h.fadeOut : h.fadeOutOff) : void 0;
                 return r.createElement(o.Z, { style: s });
             }
             function E(e) {
                 const { feedId: t } = e,
                     n = (0, f.Ou)(t),
-                    c = (0, f.CO)(t),
-                    i = (0, a.Dv)((0, d.bq)(t));
-                return r.createElement(o.Z, { style: h.videoContainer }, r.createElement(m.nA, (0, s.Z)({}, e, { isListSafe: !0, userAvatar: n, userName: c ?? i ?? t.toString() })));
+                    i = (0, f.CO)(t),
+                    c = (0, a.Dv)((0, d.bq)(t));
+                return r.createElement(o.Z, { style: h.videoContainer }, r.createElement(m.nA, (0, s.Z)({}, e, { isListSafe: !0, userAvatar: n, userName: i ?? c ?? t.toString() })));
             }
-            const h = c.default.create((e) => {
+            const h = i.default.create((e) => {
                 const t = u.Z.hexToCss(e.colors.navigationBackground, 0),
                     n = u.Z.hexToCss(e.colors.navigationBackground, 0.8),
                     r = { position: "absolute", start: 0, width: "100%", height: e.spaces.space64, pointerEvents: "none", zIndex: 1, transition: "opacity 0.3s" },
                     a = { ...r, top: 0, backgroundImage: e.highContrastEnabled ? void 0 : `linear-gradient(to top, ${t}, ${n})` },
                     o = { ...r, bottom: 0, backgroundImage: e.highContrastEnabled ? void 0 : `linear-gradient(to bottom, ${t}, ${n})` },
-                    c = { ...a, opacity: 0 },
-                    i = { ...o, opacity: 0 };
-                return { videoContainer: { maxWidth: "100%" }, listview: { overflowY: "auto", position: "absolute", inset: 0, gap: e.spaces.space8, padding: e.spaces.space8 }, fadeIn: a, fadeOut: o, fadeInOff: c, fadeOutOff: i };
+                    i = { ...a, opacity: 0 },
+                    c = { ...o, opacity: 0 };
+                return { videoContainer: { maxWidth: "100%" }, listview: { overflowY: "auto", position: "absolute", inset: 0, gap: e.spaces.space8, padding: e.spaces.space8 }, fadeIn: a, fadeOut: o, fadeInOff: i, fadeOutOff: c };
             });
             var g = n(23425);
             function b() {
                 return r.createElement(o.Z, { style: Z.listviewPlaceholder }, r.createElement(p, null));
             }
             function y() {
-                return (0, a.Dv)(g.eX) ? null : r.createElement(o.Z, { style: Z.sidebar }, r.createElement(i.k, null));
+                return (0, a.Dv)(g.eX) ? null : r.createElement(o.Z, { style: Z.sidebar }, r.createElement(c.k, null));
             }
-            const Z = c.default.create((e) => ({ sidebar: { width: 348 * e.scaleMultiplier }, listviewPlaceholder: { width: "20%", minWidth: 200 * e.scaleMultiplier } }));
+            const Z = i.default.create((e) => ({ sidebar: { width: 348 * e.scaleMultiplier }, listviewPlaceholder: { width: "20%", minWidth: 200 * e.scaleMultiplier } }));
         },
         23425: (e, t, n) => {
-            n.d(t, { SR: () => c, T1: () => s, X6: () => p, XQ: () => u, eX: () => i, em: () => m, hc: () => d, xK: () => l, yu: () => f });
+            n.d(t, { SR: () => i, T1: () => s, X6: () => p, XQ: () => u, eX: () => c, em: () => m, hc: () => d, xK: () => l, yu: () => f });
             var r = n(565058);
             const a = Object.freeze({ Speakers: "Speakers", Chat: "Chat", Settings: "Settings", Participants: "Participants" }),
                 o = (0, r.cn)(a.Speakers),
-                c = (0, r.cn)((e) => e(o)),
-                i = (0, r.cn)((e) => e(o) === a.Speakers),
-                s = (0, r.cn)((e) => !e(i)),
+                i = (0, r.cn)((e) => e(o)),
+                c = (0, r.cn)((e) => e(o) === a.Speakers),
+                s = (0, r.cn)((e) => !e(c)),
                 l = (0, r.cn)((e) => e(o) === a.Chat),
                 u = (0, r.cn)((e) => e(o) === a.Participants),
                 d =
@@ -458,11 +458,11 @@
             var r = n(807896),
                 a = n(202784),
                 o = n(325686),
-                c = n(392237),
-                i = n(666305);
+                i = n(392237),
+                c = n(666305);
             const s = a.memo(function ({ defaultAspectRatio: e, ...t }) {
                     const n = d.useContext(),
-                        c = n?.value ?? e,
+                        i = n?.value ?? e,
                         { ref: s, style: m } = (function (e) {
                             const t = a.useRef(null),
                                 [n, r] = a.useState(!0);
@@ -476,20 +476,20 @@
                                     r(a >= t);
                                 };
                                 return (
-                                    i.Z.observe(e, a),
-                                    i.Z.observe(n, a),
+                                    c.Z.observe(e, a),
+                                    c.Z.observe(n, a),
                                     () => {
-                                        i.Z.unobserve(e, a), i.Z.unobserve(n, a);
+                                        c.Z.unobserve(e, a), c.Z.unobserve(n, a);
                                     }
                                 );
                             }, [t]);
                             const o = a.useMemo(() => (n ? [l.widthConstrained, { aspectRatio: e }] : [l.heightConstrained, { aspectRatio: e }]), [e, n]);
                             return { ref: t, style: o };
-                        })(c),
+                        })(i),
                         f = a.useMemo(() => [m, t.style], [m, t.style]);
                     return a.createElement(o.Z, (0, r.Z)({ ref: s }, t, { style: f }));
                 }),
-                l = c.default.create((e) => {
+                l = i.default.create((e) => {
                     const t = { position: "absolute", inset: 0, margin: "auto" };
                     return { widthConstrained: { ...t, width: "100%", height: "auto" }, heightConstrained: { ...t, height: "100%", width: "auto" } };
                 });
@@ -515,8 +515,8 @@
             var r = n(807896),
                 a = n(202784),
                 o = n(400752),
-                c = n(565058),
-                i = n(325686),
+                i = n(565058),
+                c = n(325686),
                 s = n(708852),
                 l = n(292627),
                 u = n(392237),
@@ -539,7 +539,7 @@
                 const e = (0, o.Dv)(f.Lv),
                     t = (0, s.Ji)(),
                     n = (0, d.rx)();
-                return a.createElement(i.Z, { style: T.focalView }, a.createElement(i.Z, { style: T.focalItem }, a.createElement(i.Z, { style: T.focalItem }, a.createElement(y.W.Provider, null, a.createElement(y.X, { defaultAspectRatio: 16 / 9, style: T.focalVideo }, a.createElement(i.Z, null, a.createElement(I, null)))), a.createElement(C.W, null), a.createElement(l.Z.Modal, null, a.createElement(Z.F, null))), a.createElement(D, null), n && a.createElement(m.Z, { audioSpaceId: n, height: 150 })), t && !e && a.createElement(g.L, null), t && !e && a.createElement(g.C, null), a.createElement(b.h, null), a.createElement(i.Z, { style: T.bottomStart }, a.createElement(h.xG, null)));
+                return a.createElement(c.Z, { style: T.focalView }, a.createElement(c.Z, { style: T.focalItem }, a.createElement(c.Z, { style: T.focalItem }, a.createElement(y.W.Provider, null, a.createElement(y.X, { defaultAspectRatio: 16 / 9, style: T.focalVideo }, a.createElement(c.Z, null, a.createElement(I, null)))), a.createElement(C.W, null), a.createElement(l.Z.Modal, null, a.createElement(Z.F, null))), a.createElement(D, null), n && a.createElement(m.Z, { audioSpaceId: n, height: 150 })), t && !e && a.createElement(g.L, null), t && !e && a.createElement(g.C, null), a.createElement(b.h, null), a.createElement(c.Z, { style: T.bottomStart }, a.createElement(h.xG, null)));
             }
             function I() {
                 const e = (0, o.Dv)(R);
@@ -549,10 +549,10 @@
                 return !(0, s.Ji)() && a.createElement(k, null);
             }
             function k() {
-                return (0, o.Dv)(_) && a.createElement(i.Z, { style: T.hover }, a.createElement(x.Ou, { isListSafe: !0 }));
+                return (0, o.Dv)(_) && a.createElement(c.Z, { style: T.hover }, a.createElement(x.Ou, { isListSafe: !0 }));
             }
-            const _ = (0, c.cn)((e) => !!e(p.xZ).length && !!e(v.eN)?.length && !!e(R)),
-                R = (0, c.cn)((e) => {
+            const _ = (0, i.cn)((e) => !!e(p.xZ).length && !!e(v.eN)?.length && !!e(R)),
+                R = (0, i.cn)((e) => {
                     const t = e(p.Q6);
                     if (!t || e((0, p.Z8)(t))) return;
                     const n = e((0, p.f)(t)),
@@ -566,8 +566,8 @@
             var r = n(202784),
                 a = n(400752),
                 o = n(565058),
-                c = n(325686),
-                i = n(731708),
+                i = n(325686),
+                c = n(731708),
                 s = n(392237),
                 l = n(585454),
                 u = n(526250),
@@ -581,7 +581,7 @@
             function g() {
                 const e = (0, a.Dv)(k),
                     t = (0, a.Dv)(D);
-                return (0, u.N)(Z), (0, u.N)(x), r.createElement(c.Z, { style: b.animationBox }, r.createElement(c.Z, { style: e ? b.show : b.hide }, r.createElement(c.Z, { style: b.container }, r.createElement(i.ZP, null, t))));
+                return (0, u.N)(Z), (0, u.N)(x), r.createElement(i.Z, { style: b.animationBox }, r.createElement(i.Z, { style: e ? b.show : b.hide }, r.createElement(i.Z, { style: b.container }, r.createElement(c.ZP, null, t))));
             }
             const b = s.default.create((e) => {
                 const t = { paddingBottom: e.spaces.space16, paddingStart: e.spaces.space16, transition: "transform 0.2s" };
@@ -645,8 +645,8 @@
             var r = n(807896),
                 a = n(202784),
                 o = n(251067),
-                c = n(400752),
-                i = n(325686),
+                i = n(400752),
+                c = n(325686),
                 s = n(466792),
                 l = n(393058),
                 u = n(731708),
@@ -670,13 +670,13 @@
                 k = n(103978);
             function _({ feedId: e }) {
                 const t = a.useRef(null),
-                    n = (0, c.b9)(T);
+                    n = (0, i.b9)(T);
                 return (
                     a.useEffect(() => {
                         const r = t.current;
                         if (r) return n(e, r);
                     }, [n, e]),
-                    a.createElement(i.Z, { ref: t, style: P.border })
+                    a.createElement(c.Z, { ref: t, style: P.border })
                 );
             }
             const R = (0, S.xu)((e) =>
@@ -692,8 +692,8 @@
                             t = r.offsetHeight,
                             n = d.default.theme.spacesPx.space8,
                             o = 1 + (a * n) / e,
-                            c = 1 + (a * n) / t;
-                        r.style.transform = `scale(${o}, ${c})`;
+                            i = 1 + (a * n) / t;
+                        r.style.transform = `scale(${o}, ${i})`;
                     } else r.style.transform = "scale(0.99)";
                     return (r.style.opacity = null == a ? "0" : ""), I.Z;
                 }),
@@ -705,11 +705,11 @@
                 H = n(952793),
                 A = n(396963);
             function B(e) {
-                const t = (0, c.Dv)(h.gu),
-                    n = (0, c.Dv)(h.kw);
+                const t = (0, i.Dv)(h.gu),
+                    n = (0, i.Dv)(h.kw);
                 if (!t) return null;
-                const { feedId: o, videoTrack: i } = e;
-                return o === n ? (i ? a.createElement(N, { videoTrack: i }) : null) : a.createElement(V, (0, r.Z)({}, e, { feedId: o }));
+                const { feedId: o, videoTrack: c } = e;
+                return o === n ? (c ? a.createElement(N, { videoTrack: c }) : null) : a.createElement(V, (0, r.Z)({}, e, { feedId: o }));
             }
             function N({ videoTrack: e }) {
                 const t = (0, h.d4)(e);
@@ -737,22 +737,22 @@
             }
             function V(e) {
                 const { feedId: t, feedMid: n } = e,
-                    r = (0, c.Dv)((0, g.A8)(t)(n)),
-                    o = (0, c.Dv)((0, h.My)(t)(n));
+                    r = (0, i.Dv)((0, g.A8)(t)(n)),
+                    o = (0, i.Dv)((0, h.My)(t)(n));
                 return r ? (o ? a.createElement($, null) : a.createElement(j, e)) : a.createElement(O.default, null);
             }
             function $() {
-                const e = (0, c.Dv)(h.u1),
-                    t = (0, c.Dv)(h.E3);
+                const e = (0, i.Dv)(h.u1),
+                    t = (0, i.Dv)(h.E3);
                 if ((0, H.hC)("rweb_conf_dev_enabled")) return e.map((e, n) => a.createElement(F, { feedId: e, track: t?.[n] }));
             }
             function F({ feedId: e, track: t }) {
-                const n = (0, c.Dv)(e ? (0, A.Kz)(e) : (0, v.J)("<unknown>"));
-                return a.createElement(i.Z, { style: X.row }, a.createElement(u.ZP, null, n), t ? a.createElement(C.d, { track: t }) : a.createElement(u.ZP, null, "none"));
+                const n = (0, i.Dv)(e ? (0, A.Kz)(e) : (0, v.J)("<unknown>"));
+                return a.createElement(c.Z, { style: X.row }, a.createElement(u.ZP, null, n), t ? a.createElement(C.d, { track: t }) : a.createElement(u.ZP, null, "none"));
             }
             function j({ feedId: e, feedMid: t, videoTrack: n }) {
-                const r = (0, c.b9)(K),
-                    o = (0, c.Dv)(q(e)(t));
+                const r = (0, i.b9)(K),
+                    o = (0, i.Dv)(q(e)(t));
                 return a.useEffect(() => r({ feedId: e, feedMid: t, videoTrack: n }), [r, e, n, t]), o ? a.createElement(M.default, { title: "no data received" }) : null;
             }
             const q = (0, S.xu)((e) => (0, S.xu)((e) => (0, w.cn)(!1))),
@@ -775,12 +775,12 @@
                 J = n(359127),
                 U = n(645708);
             function Y() {
-                const e = (0, c.Dv)(U.Lv);
+                const e = (0, i.Dv)(U.Lv);
                 return !J.zI || e ? null : a.createElement(Q, null);
             }
             function Q() {
                 const { handlers: e, interactivityState: t } = (0, s.x)({});
-                return a.createElement(i.Z, (0, r.Z)({ style: ee.hoverTile }, e), t.isHovered ? a.createElement(U.x0, null) : a.createElement(i.Z, { style: ee.placeholderButton }));
+                return a.createElement(c.Z, (0, r.Z)({ style: ee.hoverTile }, e), t.isHovered ? a.createElement(U.x0, null) : a.createElement(c.Z, { style: ee.placeholderButton }));
             }
             const ee = d.default.create((e) => ({ hoverTile: { padding: e.spaces.space16, borderRadius: e.borderRadii.infinite }, placeholderButton: { width: e.spaces.space32, height: e.spaces.space32 } }));
             var te = n(154003),
@@ -788,11 +788,11 @@
                 re = n(492140);
             const ae = "Unpin",
                 oe = { label: "Pin" },
-                ce = { label: ae };
-            function ie({ feedId: e }) {
-                const t = (0, c.Dv)(se(e)),
-                    n = (0, c.b9)(le(e));
-                return a.createElement(te.ZP, { "aria-label": t ? ae : "Pin", hoverLabel: t ? ce : oe, icon: t ? de : ue, onClick: n, type: "primaryText" });
+                ie = { label: ae };
+            function ce({ feedId: e }) {
+                const t = (0, i.Dv)(se(e)),
+                    n = (0, i.b9)(le(e));
+                return a.createElement(te.ZP, { "aria-label": t ? ae : "Pin", hoverLabel: t ? ie : oe, icon: t ? de : ue, onClick: n, type: "primaryText" });
             }
             const se = (0, S.xu)((e) => (0, w.cn)((t) => t(h.B$) === e)),
                 le = (0, S.xu)((e) =>
@@ -832,7 +832,7 @@
                 );
             }
             function ge({ containerRef: e, feedId: t, rightVariant: n }) {
-                const r = (0, c.Dv)((0, h.bq)(t)),
+                const r = (0, i.Dv)((0, h.bq)(t)),
                     o = (0, me.Gf)(r),
                     s = (0, me.DP)(),
                     l = he(e),
@@ -840,7 +840,7 @@
                     m = (0, fe.Mg)(t);
                 if (u)
                     return a.createElement(
-                        i.Z,
+                        c.Z,
                         { style: [n ? [be.rightReaction, { end: d.default.theme.spaces.space64 }] : be.centeredReaction, u] },
                         m ? a.createElement(pe.Z, { emoji: m, persistAfterAnimation: !0, size: u.width }) : null,
                         o?.map((e) => a.createElement(pe.Z, { emoji: e.emoji, key: e.id, onAnimationEnd: () => s(e), size: u.width })),
@@ -848,19 +848,19 @@
             }
             const be = d.default.create((e) => ({ centeredReaction: { position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)", pointerEvents: "none" }, rightReaction: { position: "absolute", top: e.spaces.space32, end: e.spaces.space32, pointerEvents: "none" } })),
                 ye = a.memo((e) => {
-                    const { feedId: t, isFocal: n, isListSafe: o, ...i } = e,
-                        s = (0, c.Dv)(n ? (0, h.Cr)(t) : (0, h.Yq)(t));
-                    if (0 === s.length) return a.createElement(Ce, (0, r.Z)({}, i, { feedId: t }));
-                    if (o) return s.map(({ feedMid: e, track: n }) => a.createElement(xe, (0, r.Z)({}, i, { feedId: t, feedMid: e, key: e, mediaStreamTrack: n })));
+                    const { feedId: t, isFocal: n, isListSafe: o, ...c } = e,
+                        s = (0, i.Dv)(n ? (0, h.Cr)(t) : (0, h.Yq)(t));
+                    if (0 === s.length) return a.createElement(Ce, (0, r.Z)({}, c, { feedId: t }));
+                    if (o) return s.map(({ feedMid: e, track: n }) => a.createElement(xe, (0, r.Z)({}, c, { feedId: t, feedMid: e, key: e, mediaStreamTrack: n })));
                     {
                         const { feedMid: e, track: n } = s[0];
-                        return a.createElement(xe, (0, r.Z)({}, i, { feedId: t, feedMid: e, mediaStreamTrack: n }));
+                        return a.createElement(xe, (0, r.Z)({}, c, { feedId: t, feedMid: e, mediaStreamTrack: n }));
                     }
                 }),
                 Ze = a.memo(({ isListSafe: e }) => {
-                    const t = (0, c.Dv)(b.eN),
+                    const t = (0, i.Dv)(b.eN),
                         n = (0, Z.v9)(x.ZP.selectViewerUser),
-                        r = (0, c.Dv)(h.kw);
+                        r = (0, i.Dv)(h.kw);
                     if (!t?.length) return a.createElement(Ce, { feedId: r, userAvatar: n?.profile_image_url_https, userName: n?.name ?? "" });
                     if (e) return t.map(({ isMirror: e, track: t }, o) => a.createElement(Ce, { feedId: r, isMirror: e, key: o, mediaStreamTrack: t, userAvatar: n?.profile_image_url_https, userName: n?.name ?? "" }));
                     {
@@ -869,14 +869,14 @@
                     }
                 });
             function xe(e) {
-                const { feedId: t, feedMid: n, mediaStreamTrack: o, ...i } = e,
+                const { feedId: t, feedMid: n, mediaStreamTrack: o, ...c } = e,
                     s = a.useRef(null);
                 (0, y.Zn)(t, n, s);
                 const l = a.useRef(null);
                 (0, g.tF)(l, t, n);
-                const u = (0, c.Dv)((0, h.Gz)(t)),
-                    d = (0, c.Dv)(t ? (0, h.f)(t) : (0, v.J)(!1));
-                return a.createElement(Ce, (0, r.Z)({}, i, { containerRef: l, feedId: t, feedMid: n, mediaStreamTrack: u ? o : void 0, videoRef: s, withHoverTile: d }));
+                const u = (0, i.Dv)((0, h.Gz)(t)),
+                    d = (0, i.Dv)(t ? (0, h.f)(t) : (0, v.J)(!1));
+                return a.createElement(Ce, (0, r.Z)({}, c, { containerRef: l, feedId: t, feedMid: n, mediaStreamTrack: u ? o : void 0, videoRef: s, withHoverTile: d }));
             }
             function Ce({ containerRef: e, feedId: t, feedMid: n, isMirror: g, mediaStreamTrack: b, userAvatar: y, userName: Z, videoRef: x, withHoverTile: w }) {
                 const S = a.useRef(null);
@@ -914,8 +914,8 @@
                         handlers: { ref: T, ...P },
                         interactivityState: z,
                     } = (0, s.x)(),
-                    L = (0, c.Dv)(t ? (0, h.f)(t) : (0, v.J)(!1)),
-                    M = (0, c.Dv)((0, h.Z8)(t));
+                    L = (0, i.Dv)(t ? (0, h.f)(t) : (0, v.J)(!1)),
+                    M = (0, i.Dv)((0, h.Z8)(t));
                 !(function (e, t, n) {
                     const r = G.W.useContext();
                     a.useEffect(() => {
@@ -923,20 +923,20 @@
                             o = t.current;
                         if (!a || !o || n) return void r?.setValue();
                         if (!r) return;
-                        const c = () => {
+                        const i = () => {
                             a.videoHeight ? ((o.style.aspectRatio = "" + a.videoWidth / a.videoHeight), r?.setValue(a.videoWidth / a.videoHeight)) : ((o.style.aspectRatio = null), r?.setValue());
                         };
                         return (
-                            c(),
-                            a.addEventListener("loadedmetadata", c),
-                            a.addEventListener("resize", c),
+                            i(),
+                            a.addEventListener("loadedmetadata", i),
+                            a.addEventListener("resize", i),
                             () => {
-                                a.removeEventListener("loadedmetadata", c), a.removeEventListener("resize", c), (o.style.aspectRatio = null);
+                                a.removeEventListener("loadedmetadata", i), a.removeEventListener("resize", i), (o.style.aspectRatio = null);
                             }
                         );
                     }, [r, t, n, e]);
                 })(S, I, !D);
-                const O = (0, c.Dv)(E.MG),
+                const O = (0, i.Dv)(E.MG),
                     H = (function (e) {
                         const [t, n] = a.useState(!1);
                         return (
@@ -958,13 +958,13 @@
                             t
                         );
                     })(I),
-                    A = (0, c.Dv)(p.bZ) && R;
+                    A = (0, i.Dv)(p.bZ) && R;
                 return a.createElement(
                     a.Fragment,
                     null,
                     O && a.createElement(_, { feedId: t }),
                     a.createElement(
-                        i.Z,
+                        c.Z,
                         (0, r.Z)({}, P, {
                             ref: (t) => {
                                 (I.current = t), e && (e.current = t), (T.current = t);
@@ -980,8 +980,8 @@
                             },
                             style: { maxWidth: "100%", maxHeight: "100%", transform: g ? "scaleX(-1)" : void 0 },
                         }),
-                        R ? a.createElement(i.Z, { style: we.videoOverlayCover }, a.createElement(Ee, { containerRef: S, uri: y }), !!t && a.createElement(ge, { containerRef: S, feedId: t })) : a.createElement(i.Z, { style: we.videoOverlay }, w ? a.createElement(Y, null) : null, !!t && a.createElement(ge, { containerRef: S, feedId: t, rightVariant: !0 })),
-                        H && a.createElement(a.Fragment, null, a.createElement(i.Z, { style: we.overlayTopEnd }, a.createElement(C.X, { feedId: t }), !(0, o.fH)(o.vw.prod) && !R && t && n && a.createElement(B, { feedId: t, feedMid: n, videoTrack: D })), a.createElement(i.Z, { style: we.overlayTopStart }, !!t && !M && !L && (z.isHovered || l.Z.isTouchSupported()) && a.createElement(ie, { feedId: t })), a.createElement(i.Z, { style: we.overlayBottomStart }, a.createElement(i.Z, { style: we.nameRow }, L && a.createElement(f.default, null), a.createElement(u.ZP, null, Z)))),
+                        R ? a.createElement(c.Z, { style: we.videoOverlayCover }, a.createElement(Ee, { containerRef: S, uri: y }), !!t && a.createElement(ge, { containerRef: S, feedId: t })) : a.createElement(c.Z, { style: we.videoOverlay }, w ? a.createElement(Y, null) : null, !!t && a.createElement(ge, { containerRef: S, feedId: t, rightVariant: !0 })),
+                        H && a.createElement(a.Fragment, null, a.createElement(c.Z, { style: we.overlayTopEnd }, a.createElement(C.X, { feedId: t }), !(0, o.fH)(o.vw.prod) && !R && t && n && a.createElement(B, { feedId: t, feedMid: n, videoTrack: D })), a.createElement(c.Z, { style: we.overlayTopStart }, !!t && !M && !L && (z.isHovered || l.Z.isTouchSupported()) && a.createElement(ce, { feedId: t })), a.createElement(c.Z, { style: we.overlayBottomStart }, a.createElement(c.Z, { style: we.nameRow }, L && a.createElement(f.default, null), a.createElement(u.ZP, null, Z)))),
                     ),
                 );
             }
@@ -997,8 +997,8 @@
             var r = n(202784),
                 a = n(400752),
                 o = n(565058),
-                c = n(987809),
-                i = n(154003),
+                i = n(987809),
+                c = n(154003),
                 s = n(529356),
                 l = n(674132),
                 u = n.n(l),
@@ -1017,19 +1017,19 @@
                 C = (e) => `You will mute ${e}'s mic. They can unmute it again.`;
             function w({ feedId: e, icon: t }) {
                 const [n, o] = r.useState(!1),
-                    c = (0, a.b9)(I(e)),
+                    i = (0, a.b9)(I(e)),
                     l = (0, b.CO)(e);
                 return r.createElement(
                     r.Fragment,
                     null,
-                    r.createElement(i.ZP, { hoverLabel: x, icon: t, onPress: () => o(!0), type: "primaryText" }),
+                    r.createElement(c.ZP, { hoverLabel: x, icon: t, onPress: () => o(!0), type: "primaryText" }),
                     n &&
                         r.createElement(s.Z, {
                             actionLabel: Z,
                             enableMaskForDismiss: !0,
                             headline: y,
                             onAction: (e) => {
-                                c(e), o(!1);
+                                i(e), o(!1);
                             },
                             onClose: () => o(!1),
                             subtext: C(l),
@@ -1037,8 +1037,8 @@
                         }),
                 );
             }
-            const S = (0, c.xu)((e) => (0, o.cn)((t) => t(h.cS).get(e)?.session_uuid)),
-                I = (0, c.xu)((e) =>
+            const S = (0, i.xu)((e) => (0, o.cn)((t) => t(h.cS).get(e)?.session_uuid)),
+                I = (0, i.xu)((e) =>
                     (0, o.cn)(null, (t, n, r) => {
                         if (t((0, v.Z8)(e))) return void n(E.Dy, (e) => !e);
                         const a = t(S(e)),
@@ -1049,22 +1049,22 @@
                 D = (0, o.cn)(null, (e, t, n, r) => {
                     const { dispatch: a } = e(d.qc),
                         o = e((0, v.Bz)(n)),
-                        c = e((0, h.PO)(r));
-                    if (!o || !c) return;
-                    const i = e((0, b.Kz)(o));
-                    if (e((0, v.Z8)(c))) return void a((0, g.fz)({ text: `${i} muted your microphone` }));
-                    const s = e((0, b.Kz)(c));
-                    a((0, g.fz)({ text: `${i} muted ${s}` }));
+                        i = e((0, h.PO)(r));
+                    if (!o || !i) return;
+                    const c = e((0, b.Kz)(o));
+                    if (e((0, v.Z8)(i))) return void a((0, g.fz)({ text: `${c} muted your microphone` }));
+                    const s = e((0, b.Kz)(i));
+                    a((0, g.fz)({ text: `${c} muted ${s}` }));
                 }),
-                k = (0, c.xu)((e) => (0, o.cn)((t) => !(t((0, v.Z8)(e)) || !e || t((0, v.f)(e)) || !t(f.gc) || !t(h.p5))));
+                k = (0, i.xu)((e) => (0, o.cn)((t) => !(t((0, v.Z8)(e)) || !e || t((0, v.f)(e)) || !t(f.gc) || !t(h.p5))));
         },
         826868: (e, t, n) => {
             n.d(t, { W: () => v });
             var r = n(202784),
                 a = n(400752),
                 o = n(565058),
-                c = n(325686),
-                i = n(731708),
+                i = n(325686),
+                c = n(731708),
                 s = n(392237),
                 l = n(459679),
                 u = n(113788),
@@ -1076,10 +1076,10 @@
                 const e = (0, a.Dv)(h),
                     t = (0, a.Dv)(E);
                 return r.createElement(
-                    c.Z,
+                    i.Z,
                     { style: g.raisedHandsAbsolute },
-                    t.map(({ emoji: e, id: t, userAvatar: n, userName: a }) => r.createElement(c.Z, { key: t, style: g.raisedHandPill }, r.createElement(i.ZP, { color: "buttonWhite", size: "headline1" }, e, " ", a))),
-                    e.map(({ emoji: e, id: t, userAvatar: n, userName: a }) => r.createElement(c.Z, { key: t, style: g.raisedHandPill }, r.createElement(i.ZP, { color: "buttonWhite", size: "headline1" }, e, " ", a))),
+                    t.map(({ emoji: e, id: t, userAvatar: n, userName: a }) => r.createElement(i.Z, { key: t, style: g.raisedHandPill }, r.createElement(c.ZP, { color: "buttonWhite", size: "headline1" }, e, " ", a))),
+                    e.map(({ emoji: e, id: t, userAvatar: n, userName: a }) => r.createElement(i.Z, { key: t, style: g.raisedHandPill }, r.createElement(c.ZP, { color: "buttonWhite", size: "headline1" }, e, " ", a))),
                 );
             }
             const E = (0, o.cn)((e) => {
@@ -1089,8 +1089,8 @@
                         const r = e(m.r1),
                             a = e((0, m.De)(n.participantId)),
                             o = e((0, p.Kz)(a)),
-                            c = e((0, p.pB)(a));
-                        return o && c && r.includes(a) ? { id: n.id, emoji: n.emoji, userName: o, userAvatar: c } : void 0;
+                            i = e((0, p.pB)(a));
+                        return o && i && r.includes(a) ? { id: n.id, emoji: n.emoji, userName: o, userAvatar: i } : void 0;
                     }).reverse();
                 }),
                 h = (0, o.cn)((e) => {
@@ -1110,8 +1110,8 @@
             var r = n(202784),
                 a = n(400752),
                 o = n(565058),
-                c = n(325686),
-                i = n(154003),
+                i = n(325686),
+                c = n(154003),
                 s = n(811176),
                 l = n(392237),
                 u = n(899667),
@@ -1120,7 +1120,7 @@
                 f = n(254810);
             function p({ itemsAtom: e }) {
                 function t({ children: t }) {
-                    return (0, a.Dv)(e).length < 2 ? t : r.createElement(c.Z, { style: b.row }, t, r.createElement(i.ZP, { icon: r.createElement(u.default, null), renderMenu: n, style: b.button, type: "primaryText" }));
+                    return (0, a.Dv)(e).length < 2 ? t : r.createElement(i.Z, { style: b.row }, t, r.createElement(c.ZP, { icon: r.createElement(u.default, null), renderMenu: n, style: b.button, type: "primaryText" }));
                 }
                 function n(e) {
                     return r.createElement(o, { dismiss: e });
@@ -1164,11 +1164,11 @@
                 b = l.default.create((e) => ({ row: { flexDirection: "row" }, button: { marginStart: -e.spacesPx.space24, paddingStart: e.spacesPx.space28, paddingEnd: e.spacesPx.space4, zIndex: -1, borderTopStartRadius: 0, borderBottomStartRadius: 0 } }));
         },
         253547: (e, t, n) => {
-            n.d(t, { f: () => c, g: () => o });
+            n.d(t, { f: () => i, g: () => o });
             var r = n(202784),
                 a = n(400752);
             function o() {
-                const e = (0, a.b9)(c);
+                const e = (0, a.b9)(i);
                 r.useEffect(
                     () => (
                         e(!0),
@@ -1179,15 +1179,15 @@
                     [e],
                 );
             }
-            const c = (0, n(565058).cn)(!1);
+            const i = (0, n(565058).cn)(!1);
         },
         396963: (e, t, n) => {
             n.d(t, { CO: () => w, Kz: () => b, L1: () => E, Ou: () => C, aQ: () => v, nY: () => p, pB: () => g });
             var r = n(614983),
                 a = n.n(r),
                 o = n(565058),
-                c = n(400752),
-                i = n(987809),
+                i = n(400752),
+                c = n(987809),
                 s = n(107267),
                 l = n(42134),
                 u = n(610214),
@@ -1203,7 +1203,7 @@
                 return (0, d.pv)(e);
             }
             const E = "dummy_periscope_user_id",
-                h = (0, i.xu)((e) =>
+                h = (0, c.xu)((e) =>
                     (0, o.cn)((t) => {
                         const n = t(f.cS).get(e);
                         if (n) return n;
@@ -1211,9 +1211,9 @@
                         return r ? t(f.FG).get(r) : void 0;
                     }),
                 ),
-                g = (0, i.xu)((e) => (0, o.cn)((t) => t(h(e))?.guest_avatar_url ?? (t(u.gc) ? void 0 : t(x(e))))),
-                b = (0, i.xu)((e) => (0, o.cn)((t) => t(h(e))?.guest_display_name ?? (t(u.gc) ? void 0 : t(Z(e))) ?? t((0, m.bq)(e)) ?? e.toString())),
-                y = (0, i.xu)((e) =>
+                g = (0, c.xu)((e) => (0, o.cn)((t) => t(h(e))?.guest_avatar_url ?? (t(u.gc) ? void 0 : t(x(e))))),
+                b = (0, c.xu)((e) => (0, o.cn)((t) => t(h(e))?.guest_display_name ?? (t(u.gc) ? void 0 : t(Z(e))) ?? t((0, m.bq)(e)) ?? e.toString())),
+                y = (0, c.xu)((e) =>
                     (0, o.cn)((t) => {
                         const n = t(l.rm);
                         if (!n) return;
@@ -1223,13 +1223,13 @@
                         return r && o ? a : void 0;
                     }),
                 ),
-                Z = (0, i.xu)((e) => (0, o.cn)((t) => t(y(e))?.display_name)),
-                x = (0, i.xu)((e) => (0, o.cn)((t) => t(y(e))?.avatar_url));
+                Z = (0, c.xu)((e) => (0, o.cn)((t) => t(y(e))?.display_name)),
+                x = (0, c.xu)((e) => (0, o.cn)((t) => t(y(e))?.avatar_url));
             function C(e) {
-                return (0, c.Dv)(g(e));
+                return (0, i.Dv)(g(e));
             }
             function w(e) {
-                return (0, c.Dv)(b(e));
+                return (0, i.Dv)(b(e));
             }
             (0, o.cn)((e) => {
                 const t = e(m.Dg);
@@ -1245,11 +1245,11 @@
             var r = n(202784),
                 a = n(565058),
                 o = n(400752),
-                c = n(987809),
-                i = n(107267),
+                i = n(987809),
+                c = n(107267),
                 s = n(516951);
             function l() {
-                return u((0, i.useLocation)());
+                return u((0, c.useLocation)());
             }
             function u(e) {
                 return e.pathname.startsWith("/i/conferences-room");
@@ -1257,11 +1257,11 @@
             const d = (0, a.cn)(!1),
                 m = d,
                 f = (0, a.cn)((e) => (e(d) ? "/i/conferences-room" : "/i/conferences")),
-                p = (0, c.xu)((e) => (0, a.cn)((t) => (t(d) ? `/i/conferences-room/${e}` : `/i/conferences/${e}`)));
+                p = (0, i.xu)((e) => (0, a.cn)((t) => (t(d) ? `/i/conferences-room/${e}` : `/i/conferences/${e}`)));
             function v() {
                 const e = l(),
                     t = (0, o.b9)(d),
-                    n = (0, i.useHistory)();
+                    n = (0, c.useHistory)();
                 r.useLayoutEffect(
                     () =>
                         e
@@ -1276,4 +1276,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf.9592fa4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf.7a18133a.js.map

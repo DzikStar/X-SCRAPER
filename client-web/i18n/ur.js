@@ -285,7 +285,7 @@
                 o("edf7f57e", "Get verified for boosted replies, analytics, ad-free browsing, and more. Upgrade your profile now."),
                 o("ba920d68", "Boost your influence with verification"),
                 o("ib79d0c2", "Unlock VIP features: verify your account"),
-                o("bebc5f12", "You’re advertising on X, but don’t have a Verified Organizations subscription"),
+                o("c0d3bd82", "You’ve advertised on X, but don’t have a Verified Organizations subscription"),
                 o("d7836d1e", "Subscribe to get up to $12,000 free ad credit, gold verification, VIP support, and a suite of tools to grow."),
                 o("f528e369", function (e) {
                     return "Subscribe to " + e.tier + " to write your own Articles";
@@ -1279,15 +1279,23 @@
                 o("b8f3500a", "ریڈر میں تھریڈ دیکھیں"),
                 o("fc7db594", "Profile Summary"),
                 o("c3f04d9c", "Thinking"),
-                o("cbdddb0a", "مکمل"),
+                o("e98cc293", function (e) {
+                    return "Searching for " + e.query;
+                }),
                 o("b0d1e205", function (e) {
                     return 'Searching for **"' + e.query + '"**';
+                }),
+                o("i2e0f4d7", function (e) {
+                    return "Browsing " + e.url + " for " + e.query;
                 }),
                 o("acb9b845", function (e) {
                     return "Browsing " + e.url + ' for **"' + e.query + '"**';
                 }),
                 o("ef261d8d", function (e) {
                     return "Searching posts by @" + e.username;
+                }),
+                o("f7d9cfb9", function (e) {
+                    return "Searching posts by @" + e.username + " for " + e.query;
                 }),
                 o("bec7eb11", function (e) {
                     return "Searching posts by @" + e.username + ' for **"' + e.query + '"**';
@@ -1911,10 +1919,10 @@
                 o("hff1b97a", "Only Subscribed can reply."),
                 o("a330771e", "Copy link to your clipboard"),
                 o("b6510e68", "Copy your Article’s URL so you can share it."),
-                o("e4a6e006", "کچھ نقص واقع ہوگیا- براہِ کرم دوبارہ کوشش کریں۔"),
-                o("eff483e0", "After you publish, get a link to share the Article."),
-                o("ca15dd4e", "مسودہ");
-            o("bb40bf66", "شائع ہوا"),
+                o("e4a6e006", "کچھ نقص واقع ہوگیا- براہِ کرم دوبارہ کوشش کریں۔");
+            o("eff483e0", "After you publish, get a link to share the Article."),
+                o("ca15dd4e", "مسودہ"),
+                o("bb40bf66", "شائع ہوا"),
                 o("h107935c", "Last saved just now"),
                 o("a753a870", "لاگو کریں"),
                 o("afccc67e", "Copy link to Article"),
@@ -2963,10 +2971,10 @@
                 o("df1b7550", "مارکیٹنگ"),
                 o("he258678", "X for Business"),
                 o("c6f58084", "ڈویلپرز"),
-                o("d83f18d2", "ڈائریکٹری"),
-                o("hc5aa17c", "Get the X app"),
-                o("j0693948", "Get the Grok app");
-            o("af781666", "What do people think?"),
+                o("d83f18d2", "ڈائریکٹری");
+            o("hc5aa17c", "Get the X app"),
+                o("j0693948", "Get the Grok app"),
+                o("af781666", "What do people think?"),
                 o("ad35153e", "beta"),
                 o("fbf83158", "Warning: Payment failed"),
                 o("jadeb4da", "Please urgently update your payment method before you lose your subscription benefits."),
@@ -3879,10 +3887,10 @@
                 o("cededf2a", "ہوسٹ"),
                 o("i2caef48", "ساتھی میزبان"),
                 o("j245c654", "مقررین"),
-                o("eda23a02", "Listeners"),
-                o("b90eb348", "Invite to Speak"),
-                o("d9a63e82", "Remove from Speakers");
-            o("bd917b26", "Invite to Co-host"),
+                o("eda23a02", "Listeners");
+            o("b90eb348", "Invite to Speak"),
+                o("d9a63e82", "Remove from Speakers"),
+                o("bd917b26", "Invite to Co-host"),
                 o("d7357e7e", "Remove from Co-hosts"),
                 o("bf307fc0", "Block and Remove"),
                 o("ccf2f24e", "رپورٹ کریں"),
@@ -4185,7 +4193,6 @@
                 o("b5df32b0", "Grok something"),
                 o("fb3b9776", "Grok’s output has been customized by this user."),
                 o("ca93f2ee", "This message has been deleted."),
-                o("b52484b6", "Searching..."),
                 o("b8c06820", "Copy text"),
                 o("ca0f5894", "Dislike"),
                 o("ja8d189e", "Wanted text answer"),
@@ -4277,6 +4284,7 @@
                 o("e2811afc", "Games"),
                 o("j081fa34", "Standings"),
                 o("i7c7f156", "آئندہ کل"),
+                o("cbdddb0a", "مکمل"),
                 o("b134ba52", "In Progress"),
                 o("j1361724", "Halftime"),
                 o("fa0f1262", "Break"),
@@ -4303,29 +4311,35 @@
                 o("dc17968a", "Fri"),
                 o("j310a2d6", "Sat"),
                 o("eaf55eb4", "Show thinking"),
-                o("j1ab5f40", "Tap to read"),
+                o("b1ac6016", "Completed DeepSearch"),
+                o("f766feca", "Completed DeeperSearch"),
                 o("ee000b0d", function (e) {
                     return e.numSources + " sources";
                 }),
-                o("b1ac6016", "Completed DeepSearch"),
-                o("f766feca", "Completed DeeperSearch"),
+                o("bf780b13", function (e) {
+                    return e.minutes + "m " + e.seconds + "s";
+                }),
+                o("c2745fa4", "Aborted"),
                 o("e258000e", "اطلاع"),
                 o("d591a772", "Notification unavailable"),
                 o("bc49b728", "You will be notified when the answer is ready"),
                 o("d8aadeba", "Notification turned off"),
                 o("db832e38", "Please enable notifications in browser settings"),
                 o("a910cac6", "There was an issue enabling notifications"),
-                o("g4b3a3e6", "DeepSearch Complete"),
-                o("bf780b13", function (e) {
-                    return e.minutes + "m " + e.seconds + "s";
-                }),
-                o("c2745fa4", "Aborted"),
                 o("be30b6ee", "Unstable connection"),
+                o("b52484b6", "Searching..."),
                 o("a4d9dbfa", "Thoughts"),
+                o("ib1c5475", function (e) {
+                    return "Thought for " + e.minutes + "m " + e.seconds + "s";
+                }),
+                o("a15d62db", function (e) {
+                    return "Thought for " + e.seconds + "s";
+                }),
                 o("d7cb5408", "Relevant Web Pages"),
                 o("aa7c96bb", function (e) {
                     return "See " + e.numResults + " more";
                 }),
+                o("j1ab5f40", "Tap to read"),
                 o("f5a2377e", "Thinking for"),
                 o("g3ce0132", "Thought for"),
                 o("f8007364", "Expand for details"),
@@ -4911,12 +4925,12 @@
                 o("if2909ba", "Watch Time"),
                 o("i0e5bf4c", "Your videos"),
                 o("ed99baea", "Early Beta Access"),
-                o("gf898b70", "Advanced Search"),
-                o("d2a43a7a", 'contains both "ai" and "startup"'),
+                o("gf898b70", "Advanced Search");
+            o("d2a43a7a", 'contains both "ai" and "startup"'),
                 o("a8584698", "ai startup"),
                 o("jb6f9292", 'contains the exact phrase "ai startup"'),
-                o("j8ee77c4", '"ai startup"');
-            o("d0480758", 'contains either "ai" or "startup" (or both)'),
+                o("j8ee77c4", '"ai startup"'),
+                o("d0480758", 'contains either "ai" or "startup" (or both)'),
                 o("f0048fa2", "ai OR startup"),
                 o("da0df186", 'contains "ai", but not "startup"'),
                 o("f2f463ea", "ai -startup"),
@@ -5877,12 +5891,12 @@
                 o("cbae35fa", "نشریہ کی رپورٹ کریں"),
                 o("fd12ab58", "Collection posts"),
                 o("a226497c", "ایک نئی کمیونٹی بنائيں"),
-                o("d7346632", "آپ ابھی تک کسی کمیونٹی میں شامل نہیں ہوئے ہیں"),
-                o("b732a4cc", "When you do, you’ll see their posts here."),
+                o("d7346632", "آپ ابھی تک کسی کمیونٹی میں شامل نہیں ہوئے ہیں");
+            o("b732a4cc", "When you do, you’ll see their posts here."),
                 o("hff48914", "No posts could be found at this time."),
                 o("hb52cc4a", "براہ کرم بعد میں دوبارہ کوشش کریں۔"),
-                o("e50e1bb0", "Welcome to Communities");
-            o("i6829daa", "Communities are moderated discussion groups where people on X can connect and share."),
+                o("e50e1bb0", "Welcome to Communities"),
+                o("i6829daa", "Communities are moderated discussion groups where people on X can connect and share."),
                 o("fc5c6914", "اپنی جیسی دلچسپیوں والے دیگر افراد سے ملیں"),
                 o("aa1a9820", "Join Communities to connect with people who share your interests."),
                 o("edef4c82", "Post directly to a Community"),
@@ -6875,12 +6889,12 @@
                 o("ee54c3de", "Save videos straight to your device"),
                 o("ae03594c", "Small reply boost"),
                 o("e6bb08c0", "Increase the visibility of your replies"),
-                o("bf2a6acc", "Large Reply Boost"),
-                o("c2059276", "Have your replies boosted."),
+                o("bf2a6acc", "Large Reply Boost");
+            o("c2059276", "Have your replies boosted."),
                 o("b023ec20", "Max Reply Boost"),
                 o("g337328e", "Get the highest visibility for your replies."),
-                o("fa006202", "Background video playback");
-            o("jf389778", "Watch while browsing or using other apps"),
+                o("fa006202", "Background video playback"),
+                o("jf389778", "Watch while browsing or using other apps"),
                 o("f2977d80", "فولڈرز کو بک مارک کریں"),
                 o("j1d3d910", "Keep your saved posts organized for easy access"),
                 o("f0f48668", "Premium support"),
@@ -7851,11 +7865,7 @@
                 o("c674f5b4", "Setup invoice payments"),
                 o("i8237e66", "Switch from credit card payments to invoicing via bank transfers."),
                 o("hebd348a", "Configure how ads are used to promote jobs from the Hiring portal."),
-                o("ib5e6f90", "Job Promotion"),
-                o("id720215", "Hiring"),
-                o("dd59f146", "Job promotion ad account"),
-                o("e7e36818", "Ad accounts are eligible for job promotion when they are fully set up with a funding source."),
-                o("c28566e0", "Ad Account");
+                o("ib5e6f90", "Job Promotion");
             function i(e, t) {
                 for (var a = 0; a < t.length; a++) {
                     var o = t[a];
@@ -7894,7 +7904,11 @@
                     c(e, t)
                 );
             }
-            o("c80160d3", "Advertising"),
+            o("id720215", "Hiring"),
+                o("dd59f146", "Job promotion ad account"),
+                o("e7e36818", "Ad accounts are eligible for job promotion when they are fully set up with a funding source."),
+                o("c28566e0", "Ad Account"),
+                o("c80160d3", "Advertising"),
                 o("ff0edac0", "Are you sure you want to cancel your subscription?"),
                 o("h2ac0348", "No, take me back"),
                 o("dbf9667e", "I’m sure"),
@@ -8756,12 +8770,10 @@
                 o("gdd173da", "Answer by Grok in Fun Mode"),
                 o("dfd6eeac", "Answer by Grok"),
                 o("deceb214", "Image by Grok"),
-                o("j05496ce", "DeepSearch by Grok"),
                 o("befddd48", "دکھائیں"),
                 o("hf3f8e3a", "مزید دکھائیں"),
                 o("h504ea5e", "Create your version with Grok"),
                 o("eb722de2", "Ask Grok yourself"),
-                o("ib5110be", "Try Grok DeepSearch yourself"),
                 o("bb5c5864", "نقل کریں"),
                 o("a8b58cf4", "یہ تھریڈ دکھائیں"),
                 o("i5f742fe", "یہ پول دکھائیں"),
@@ -8911,14 +8923,14 @@
                 }),
                 o("c889af33", function (e) {
                     return e.count + " شامل ہوا";
-                }),
-                o("d6f2056f", function (e) {
-                    return e.count + " میں  ہم آہنگ";
-                }),
-                o("jbc5f47a", "Spaces Dock");
-            o("gfe2830f", function (e) {
-                return e.count + " دوسر" + n(e.count, "ا", "ے");
+                });
+            o("d6f2056f", function (e) {
+                return e.count + " میں  ہم آہنگ";
             }),
+                o("jbc5f47a", "Spaces Dock"),
+                o("gfe2830f", function (e) {
+                    return e.count + " دوسر" + n(e.count, "ا", "ے");
+                }),
                 o("dbeae6cf", function (e) {
                     return e.count + " other listener" + r(e.count, "", "s");
                 }),
@@ -13202,4 +13214,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ur.6c9a697a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ur.9ad759ca.js.map

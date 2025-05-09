@@ -3,18 +3,18 @@
     ["ondemand.XChat-6db2a8a8"],
     {
         700931: (e, l, a) => {
-            a.d(l, { H: () => t });
+            a.d(l, { H: () => s });
             var n = a(552322),
                 r = a(139802),
-                s = a(200012);
-            const t = ({ settings: e }) => (0, n.jsx)(r.A, { settings: e, children: (0, n.jsx)(s.p, {}) });
+                t = a(853874);
+            const s = ({ settings: e }) => (0, n.jsx)(r.A, { settings: e, children: (0, n.jsx)(t.p, {}) });
         },
         139802: (e, l, a) => {
             a.d(l, { A: () => p });
             var n = a(552322),
                 r = a(668781),
-                s = a(202784),
-                t = a(107267),
+                t = a(202784),
+                s = a(107267),
                 i = a(607499),
                 o = a(968025),
                 u = a(727071),
@@ -24,50 +24,50 @@
                 m = a(455091),
                 y = a(446368);
             const p = ({ children: e, settings: l }) => {
-                const a = (0, t.useLocation)(),
-                    p = (0, t.useHistory)(),
-                    [f, _] = (0, s.useState)(new URLSearchParams(a.search)),
-                    h = (0, t.useParams)(),
+                const a = (0, s.useLocation)(),
+                    p = (0, s.useHistory)(),
+                    [f, h] = (0, t.useState)(new URLSearchParams(a.search)),
+                    _ = (0, s.useParams)(),
                     { t: b } = (0, m.$G)();
-                (0, s.useEffect)(() => {
-                    _(new URLSearchParams(a.search));
+                (0, t.useEffect)(() => {
+                    h(new URLSearchParams(a.search));
                 }, [a.search]);
-                const k = (0, s.useMemo)(() => ({ push: (e, l) => p.push(e, l) }), [p]);
-                return (0, n.jsx)(i.S, { message: b("Something went wrong while loading Chat. Please try again later."), children: (0, n.jsx)(o.p, { router: k, children: (0, n.jsx)(y.ng, { children: (0, n.jsx)(u.d, { useParams: () => h, children: (0, n.jsx)(c.x, { searchParams: f, children: (0, n.jsx)(d.mp, { settings: l, children: (0, n.jsxs)(g.U, { children: [e, (0, n.jsx)(r.x, {})] }) }) }) }) }) }) });
+                const k = (0, t.useMemo)(() => ({ push: (e, l) => p.push(e, l) }), [p]);
+                return (0, n.jsx)(i.S, { message: b("Something went wrong while loading Chat. Please try again later."), children: (0, n.jsx)(o.p, { router: k, children: (0, n.jsx)(y.ng, { children: (0, n.jsx)(u.d, { useParams: () => _, children: (0, n.jsx)(c.x, { searchParams: f, children: (0, n.jsx)(d.mp, { settings: l, children: (0, n.jsxs)(g.U, { children: [e, (0, n.jsx)(r.x, {})] }) }) }) }) }) }) });
             };
         },
         954713: (e, l, a) => {
             a.d(l, { x: () => i });
             var n = a(552322),
                 r = a(139802),
-                s = a(922150);
-            const t = ["recovery", "new", "forgot", "verify"],
-                i = ({ mode: e, shouldRegister: l, shouldGenerate: a, settings: i }) => (t.includes(e) ? (0, n.jsx)(r.A, { settings: i, children: (0, n.jsx)(s.G, { mode: e, shouldRegister: l, shouldGenerate: a }) }) : null);
+                t = a(922150);
+            const s = ["recovery", "new", "forgot", "verify"],
+                i = ({ mode: e, shouldRegister: l, shouldGenerate: a, settings: i }) => (s.includes(e) ? (0, n.jsx)(r.A, { settings: i, children: (0, n.jsx)(t.G, { mode: e, shouldRegister: l, shouldGenerate: a }) }) : null);
         },
         524098: (e, l, a) => {
             a.d(l, { F: () => i });
             var n = a(552322),
                 r = a(718278),
-                s = a(664147),
-                t = a(549862);
+                t = a(664147),
+                s = a(549862);
             function i() {
-                return (0, n.jsx)("div", { className: "bg-background text-text rounded-full shadow-lg border px-3 py-1.5 flex items-center gap-3 z-50", children: (0, n.jsxs)("div", { className: "flex items-center gap-1.5", children: [(0, n.jsx)(t.J, {}), (0, n.jsx)(s.i, {}), (0, n.jsx)(r.o, {})] }) });
+                return (0, n.jsx)("div", { className: "bg-background text-text rounded-full shadow-lg border px-3 py-1.5 flex items-center gap-3 z-50", children: (0, n.jsxs)("div", { className: "flex items-center gap-1.5", children: [(0, n.jsx)(s.J, {}), (0, n.jsx)(t.i, {}), (0, n.jsx)(r.o, {})] }) });
             }
         },
         664147: (e, l, a) => {
             a.d(l, { e: () => i, i: () => o });
             var n = a(552322),
                 r = a(941204),
-                s = a(849335),
-                t = a(202784);
+                t = a(849335),
+                s = a(202784);
             const i = "top_cursor",
                 o = () => {
-                    const [e, l] = (0, t.useState)("true" === localStorage.getItem(i) || !1);
+                    const [e, l] = (0, s.useState)("true" === localStorage.getItem(i) || !1);
                     return (0, n.jsxs)("div", {
                         className: "flex flex-row items-center gap-1 border border-solid rounded-lg p-2",
                         children: [
                             (0, n.jsx)(r.x, { weight: "bold", color: "gray700", children: "Top cursor" }),
-                            (0, n.jsx)(s.r, {
+                            (0, n.jsx)(t.r, {
                                 checked: e,
                                 onCheckedChange: (e) => {
                                     l(e), localStorage.setItem(i, e ? "true" : "false");
@@ -88,7 +88,7 @@
                     selections: [
                         {
                             alias: null,
-                            args: (s = [
+                            args: (t = [
                                 { kind: "Variable", name: "rest_id", variableName: "id" },
                                 { kind: "Literal", name: "safety_level", value: "ForDevelopmentOnly" },
                             ]),
@@ -105,7 +105,7 @@
                                     name: "result",
                                     plural: !1,
                                     selections: [
-                                        (t = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }),
+                                        (s = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }),
                                         {
                                             kind: "InlineFragment",
                                             selections: [
@@ -264,10 +264,10 @@
                     abstractKey: null,
                 },
                 kind: "Request",
-                operation: { argumentDefinitions: r, kind: "Operation", name: "fetchPostQuery", selections: [{ alias: null, args: s, concreteType: "TweetResults", kind: "LinkedField", name: "tweet_result_by_rest_id", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [t, { kind: "InlineFragment", selections: [o, u, c, { alias: null, args: null, concreteType: "TweetCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [t, { kind: "InlineFragment", selections: [c, d, g, m, y, u], type: "User", abstractKey: null }], storageKey: null }, u], storageKey: null }], storageKey: null }], type: "Tweet", abstractKey: null }], storageKey: null }, u], storageKey: null }] },
+                operation: { argumentDefinitions: r, kind: "Operation", name: "fetchPostQuery", selections: [{ alias: null, args: t, concreteType: "TweetResults", kind: "LinkedField", name: "tweet_result_by_rest_id", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [s, { kind: "InlineFragment", selections: [o, u, c, { alias: null, args: null, concreteType: "TweetCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [s, { kind: "InlineFragment", selections: [c, d, g, m, y, u], type: "User", abstractKey: null }], storageKey: null }, u], storageKey: null }], storageKey: null }], type: "Tweet", abstractKey: null }], storageKey: null }, u], storageKey: null }] },
                 params: { id: "BrdmgaNbXWZa4D4KLY-hCA", metadata: {}, name: "fetchPostQuery", operationKind: "query", text: null },
             };
-            var r, s, t, i, o, u, c, d, g, m, y;
+            var r, t, s, i, o, u, c, d, g, m, y;
             n.hash = "6b931e47d1ab528a8de40a76cc4aef9e";
             const p = n;
         },
@@ -283,7 +283,7 @@
             a.d(l, { S: () => r });
             var n = a(889906);
             async function r(e, l) {
-                return (0, n.fetchQuery)(l, s, { id: e }, { fetchPolicy: "store-or-network" })
+                return (0, n.fetchQuery)(l, t, { id: e }, { fetchPolicy: "store-or-network" })
                     .toPromise()
                     .then((l) => {
                         const a = l?.tweet_result_by_rest_id?.result;
@@ -305,10 +305,10 @@
                         return { id: e, text: a.legacy?.full_text, author: { id: a.core?.user_results?.result?.rest_id, name: a.core?.user_results?.result?.legacy?.name, screenName: a.core?.user_results?.result?.legacy?.screen_name, avatar: a.core?.user_results?.result?.legacy?.profile_image_url_https, badges: { affiliation: n, verifiedType: r }, profileImageUrl: a.core?.user_results?.result?.legacy?.profile_image_url_https, profileImageShape: a.core?.user_results?.result?.profile_image_shape?.toLowerCase() }, displayTextRange: a.legacy?.display_text_range, entities: a.legacy?.entities, createdAt: a.legacy?.created_at };
                     });
             }
-            const s = a(686524);
+            const t = a(686524);
         },
         336984: (e, l, a) => {
-            a.d(l, { r: () => s });
+            a.d(l, { r: () => t });
             var n = a(425522);
             const r = (e) => {
                     switch (e) {
@@ -322,16 +322,16 @@
                             return;
                     }
                 },
-                s = (e) => {
+                t = (e) => {
                     if (!e) return;
                     return { affiliation: e.userLabel?.shouldDisplayBadge() && e.userLabel.description && e.userLabel.badgeImageUrl ? { label: e.userLabel.description, url: e.userLabel.badgeImageUrl } : void 0, isProtected: e.isProtected, isSubscriber: e.friendship.isSuperFollowingMe, verifiedType: r(e.verifiedType) };
                 };
         },
         173399: (e, l, a) => {
-            a.d(l, { O: () => s });
+            a.d(l, { O: () => t });
             var n = a(84504);
             const r = "xchat";
-            async function s() {
+            async function t() {
                 const e = (0, n.n5)();
                 await (async function (e) {
                     try {
@@ -359,8 +359,8 @@
             a.d(l, { H: () => c, S: () => u });
             const n = 3600,
                 r = 86400,
-                s = 604800,
-                t = 2592e3,
+                t = 604800,
+                s = 2592e3,
                 i = { minute: { narrow: "m", long: "minute" }, hour: { narrow: "h", long: "hour" }, day: { narrow: "d", long: "day" }, week: { narrow: "w", long: "week" }, month: { narrow: "mo", long: "month" } },
                 o = (e, l, a) => {
                     switch (a) {
@@ -382,16 +382,16 @@
                         const l = Math.floor(e / n);
                         return `${l}${o(l, "hour", a)}`;
                     }
-                    if (e < s) {
+                    if (e < t) {
                         const l = Math.floor(e / r);
                         return `${l}${o(l, "day", a)}`;
                     }
-                    if (e < t) {
-                        const l = Math.floor(e / s);
+                    if (e < s) {
+                        const l = Math.floor(e / t);
                         return `${l}${o(l, "week", a)}`;
                     }
                     if (!l || e < 31536e3) {
-                        const l = Math.floor(e / t);
+                        const l = Math.floor(e / s);
                         return `${l}${o(l, "month", a)}`;
                     }
                     return new Date(1e3 * l).toLocaleDateString("en-US");
@@ -405,13 +405,13 @@
                     a = Math.floor(l / 60),
                     n = Math.floor(a / 60),
                     r = Math.floor(n / 24),
-                    s = Math.floor(r / 7),
-                    t = (e, l) => `${e} ${l}${1 !== e ? "s" : ""}`;
-                return s > 0 ? t(s, "week") : r > 0 ? t(r, "day") : n > 0 ? t(n, "hour") : a > 0 ? t(a, "minute") : t(l, "second");
+                    t = Math.floor(r / 7),
+                    s = (e, l) => `${e} ${l}${1 !== e ? "s" : ""}`;
+                return t > 0 ? s(t, "week") : r > 0 ? s(r, "day") : n > 0 ? s(n, "hour") : a > 0 ? s(a, "minute") : s(l, "second");
             };
         },
         595117: (e, l, a) => {
-            a.d(l, { l: () => r });
+            a.d(l, { $: () => t });
             const n = "temp-files";
             async function r(e) {
                 const l = await navigator.storage.getDirectory(),
@@ -419,9 +419,15 @@
                     r = (function (e) {
                         return `${Date.now()}-${e}`;
                     })(e.name),
-                    s = await a.getFileHandle(r, { create: !0 }),
-                    t = await s.createWritable();
-                return await t.write(e), await t.close(), `${n}/${r}`;
+                    t = await a.getFileHandle(r, { create: !0 }),
+                    s = await t.createWritable();
+                return await s.write(e), await s.close(), `${n}/${r}`;
+            }
+            async function t(e, l, a) {
+                try {
+                    l();
+                    a(await r(e));
+                } catch (e) {}
             }
         },
         950849: (e, l, a) => {
@@ -435,6 +441,34 @@
                     };
                 }, [e, l]);
             };
+        },
+        748055: (e, l, a) => {
+            a.d(l, { F: () => t });
+            var n = a(202784),
+                r = a(595117);
+            function t({ onFileDrop: e, onFileAttached: l, isEnabled: a }) {
+                const [t, s] = (0, n.useState)(!1);
+                return {
+                    isDragging: t,
+                    handleDragOver: (0, n.useCallback)(
+                        (e) => {
+                            e.preventDefault(), e.stopPropagation(), a && s(!0);
+                        },
+                        [a],
+                    ),
+                    handleDragLeave: (0, n.useCallback)((e) => {
+                        e.preventDefault(), e.stopPropagation(), s(!1);
+                    }, []),
+                    handleDrop: (0, n.useCallback)(
+                        async (n) => {
+                            if ((n.preventDefault(), n.stopPropagation(), s(!1), !a)) return;
+                            const t = n.dataTransfer.files[0];
+                            t && (await (0, r.$)(t, e, l));
+                        },
+                        [a, e, l],
+                    ),
+                };
+            }
         },
         533476: (e, l, a) => {
             a.d(l, { _: () => r });
@@ -456,20 +490,20 @@
             a.d(l, { e: () => d });
             var n = a(425522),
                 r = a(256958),
-                s = a(202784);
-            const t = n.com.x.dms.composer.composer.ComposerToastType,
+                t = a(202784);
+            const s = n.com.x.dms.composer.composer.ComposerToastType,
                 i = n.com.x.dms.convinfo.ConversationInfoToast,
                 o = n.com.x.dms.ParticipantMenuItem,
                 u = n.com.x.dms.newdm.NewDmToast,
                 c = n.com.x.dms.addparticipants.AddGroupParticipantsToastType;
             function d(e) {
-                (0, s.useEffect)(() => {
+                (0, t.useEffect)(() => {
                     const l = e.subscribe((e) => {
                         const l = (function (e) {
                             switch (e) {
-                                case t.ATTACHMENT_FAILED:
+                                case s.ATTACHMENT_FAILED:
                                     return "Unable to load attachment";
-                                case t.EDIT_MESSAGE_FAILED:
+                                case s.EDIT_MESSAGE_FAILED:
                                     return "Edit failed. Please try again later.";
                                 case i.ResignAdminFailed:
                                     return "Unable to resign as Admin";
@@ -514,4 +548,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-6db2a8a8.4ab5eeba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-6db2a8a8.bd06195a.js.map

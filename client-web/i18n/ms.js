@@ -280,7 +280,7 @@
                 i("edf7f57e", "Dapatkan pengesahan untuk balasan yang ditingkatkan, analitis, semak imbas bebas iklan, dan banyak lagi. Naik taraf profil anda sekarang."),
                 i("ba920d68", "Tingkatkan pengaruh anda dengan pengesahan"),
                 i("ib79d0c2", "Peroleh ciri VIP: sahkan akaun anda"),
-                i("bebc5f12", "Anda mengiklan di X, tetapi tidak mempunyai langganan Organisasi Disahkan"),
+                i("c0d3bd82", "You’ve advertised on X, but don’t have a Verified Organizations subscription"),
                 i("d7836d1e", "Langgan untuk mendapatkan sehingga $12,000 dalam bentuk kredit iklan percuma, pengesahan emas, sokongan VIP dan kumpulan alatan untuk berkembang."),
                 i("f528e369", function (a) {
                     return "Langgan " + a.tier + " untuk menulis Artikel anda sendiri";
@@ -1274,15 +1274,23 @@
                 i("b8f3500a", "Lihat thread dalam Pembaca"),
                 i("fc7db594", "Ringkasan Profil"),
                 i("c3f04d9c", "Berfikir"),
-                i("cbdddb0a", "Selesai"),
+                i("e98cc293", function (a) {
+                    return "Searching for " + a.query;
+                }),
                 i("b0d1e205", function (a) {
                     return 'Mencari tentang **"' + a.query + '"**';
+                }),
+                i("i2e0f4d7", function (a) {
+                    return "Browsing " + a.url + " for " + a.query;
                 }),
                 i("acb9b845", function (a) {
                     return "Menyemak imbas " + a.url + ' untuk **"' + a.query + '"**';
                 }),
                 i("ef261d8d", function (a) {
                     return "Mencari siaran mengikut @" + a.username;
+                }),
+                i("f7d9cfb9", function (a) {
+                    return "Searching posts by @" + a.username + " for " + a.query;
                 }),
                 i("bec7eb11", function (a) {
                     return "Mencari siaran daripada @" + a.username + ' untuk **"' + a.query + '"**';
@@ -1906,10 +1914,10 @@
                 i("hff1b97a", "Hanya yang Melanggan boleh membalas."),
                 i("a330771e", "Salin pautan pada papan klip anda"),
                 i("b6510e68", "Salin URL Artikel anda supaya boleh dikongsi."),
-                i("e4a6e006", "Ada sesuatu yang tidak kena. Sila cuba lagi."),
-                i("eff483e0", "Selepas diterbitkan, dapatkan pautan untuk berkongsi Artikel anda."),
-                i("ca15dd4e", "Draf");
-            i("bb40bf66", "Diterbitkan"),
+                i("e4a6e006", "Ada sesuatu yang tidak kena. Sila cuba lagi.");
+            i("eff483e0", "Selepas diterbitkan, dapatkan pautan untuk berkongsi Artikel anda."),
+                i("ca15dd4e", "Draf"),
+                i("bb40bf66", "Diterbitkan"),
                 i("h107935c", "Kali terakhir disimpan sebentar tadi"),
                 i("a753a870", "Gunakan"),
                 i("afccc67e", "Salin pautan kepada Artikel"),
@@ -2958,10 +2966,10 @@
                 i("df1b7550", "Pemasaran"),
                 i("he258678", "X untuk Perniagaan"),
                 i("c6f58084", "Pembangun"),
-                i("d83f18d2", "Direktori"),
-                i("hc5aa17c", "Dapatkan aplikasi X"),
-                i("j0693948", "Dapatkan aplikasi Grok");
-            i("af781666", "Apakah pandangan orang ramai?"),
+                i("d83f18d2", "Direktori");
+            i("hc5aa17c", "Dapatkan aplikasi X"),
+                i("j0693948", "Dapatkan aplikasi Grok"),
+                i("af781666", "Apakah pandangan orang ramai?"),
                 i("ad35153e", "beta"),
                 i("fbf83158", "Amaran: Pembayaran gagal"),
                 i("jadeb4da", "Sila kemas kini kaedah pembayaran anda dengan segera sebelum anda kehilangan manfaat langganan anda."),
@@ -3874,10 +3882,10 @@
                 i("cededf2a", "Hos"),
                 i("i2caef48", "Hos lain"),
                 i("j245c654", "Pembicara"),
-                i("eda23a02", "Pendengar"),
-                i("b90eb348", "Jemput untuk Berbicara"),
-                i("d9a63e82", "Alih keluar daripada Pembicara");
-            i("bd917b26", "Jemput untuk menjadi Hos lain"),
+                i("eda23a02", "Pendengar");
+            i("b90eb348", "Jemput untuk Berbicara"),
+                i("d9a63e82", "Alih keluar daripada Pembicara"),
+                i("bd917b26", "Jemput untuk menjadi Hos lain"),
                 i("d7357e7e", "Alih keluar daripada menjadi Hos lain"),
                 i("bf307fc0", "Sekat dan Alih keluar"),
                 i("ccf2f24e", "Laporan"),
@@ -4170,7 +4178,7 @@
                 i("ff9dc268", "Edit gesaan"),
                 i("acb2baa0", "Cipta Imej"),
                 i("fe9ad897", function (a) {
-                    return "Edit Image" + a.ttc_grok_preset;
+                    return "Edit Imej" + a.ttc_grok_preset;
                 }),
                 i("h30fd372", "Cuba Mod Suara"),
                 i("e9fcdd0c", "Tanya Grok untuk membuat carian di web secara agresif"),
@@ -4180,7 +4188,6 @@
                 i("b5df32b0", "Grok sesuatu"),
                 i("fb3b9776", "Output Grok telah disesuaikan oleh pengguna ini."),
                 i("ca93f2ee", "Mesej ini telah dipadamkan."),
-                i("b52484b6", "Mencari..."),
                 i("b8c06820", "Salin teks"),
                 i("ca0f5894", "Tidak suka"),
                 i("ja8d189e", "Inginkan jawapan teks"),
@@ -4272,6 +4279,7 @@
                 i("e2811afc", "Permainan"),
                 i("j081fa34", "Kedudukan"),
                 i("i7c7f156", "Esok"),
+                i("cbdddb0a", "Selesai"),
                 i("b134ba52", "Sedang Berjalan"),
                 i("j1361724", "Separuh masa"),
                 i("fa0f1262", "Rehat"),
@@ -4298,29 +4306,35 @@
                 i("dc17968a", "Jum"),
                 i("j310a2d6", "Sab"),
                 i("eaf55eb4", "Tunjukkan berfikir"),
-                i("j1ab5f40", "Ketik untuk baca"),
+                i("b1ac6016", "DeepSearch selesai dilakukan"),
+                i("f766feca", "DeeperSearch selesai dilakukan"),
                 i("ee000b0d", function (a) {
                     return a.numSources + " sumber";
                 }),
-                i("b1ac6016", "DeepSearch selesai dilakukan"),
-                i("f766feca", "DeeperSearch selesai dilakukan"),
+                i("bf780b13", function (a) {
+                    return a.minutes + "m " + a.seconds + "s";
+                }),
+                i("c2745fa4", "Dihenti paksa"),
                 i("e258000e", "Pemberitahuan"),
                 i("d591a772", "Pemberitahuan tidak tersedia"),
                 i("bc49b728", "Anda akan dimaklumkan apabila jawapan sudah tersedia"),
                 i("d8aadeba", "Pemberitahuan dimatikan"),
                 i("db832e38", "Sila dayakan pemberitahuan dalam tetapan pelayar"),
                 i("a910cac6", "Terdapat isu semasa mendayakan pemberitahuan"),
-                i("g4b3a3e6", "DeepSearch Selesai"),
-                i("bf780b13", function (a) {
-                    return a.minutes + "m " + a.seconds + "s";
-                }),
-                i("c2745fa4", "Dihenti paksa"),
                 i("be30b6ee", "Sambungan tidak stabil"),
+                i("b52484b6", "Mencari..."),
                 i("a4d9dbfa", "Fikiran"),
+                i("ib1c5475", function (a) {
+                    return "Thought for " + a.minutes + "m " + a.seconds + "s";
+                }),
+                i("a15d62db", function (a) {
+                    return "Thought for " + a.seconds + "s";
+                }),
                 i("d7cb5408", "Halaman Web Berkaitan"),
                 i("aa7c96bb", function (a) {
                     return "Lihat " + a.numResults + " lagi";
                 }),
+                i("j1ab5f40", "Ketik untuk baca"),
                 i("f5a2377e", "Berfikir selama "),
                 i("g3ce0132", "Difikirkan selama"),
                 i("f8007364", "Kembangkan untuk mendapatkan butiran"),
@@ -4906,12 +4920,12 @@
                 i("if2909ba", "Masa Tontonan"),
                 i("i0e5bf4c", "Video anda"),
                 i("ed99baea", "Akses Beta Awal"),
-                i("gf898b70", "Carian Lanjutan"),
-                i("d2a43a7a", 'mengandungi "ai" dan juga "pemula"'),
+                i("gf898b70", "Carian Lanjutan");
+            i("d2a43a7a", 'mengandungi "ai" dan juga "pemula"'),
                 i("a8584698", "pemula ai"),
                 i("jb6f9292", 'mengandungi frasa tepat "pemula ai"'),
-                i("j8ee77c4", '"pemula ai"');
-            i("d0480758", 'mengandungi sama ada "ai" atau "pemula" (atau kedua-duanya)'),
+                i("j8ee77c4", '"pemula ai"'),
+                i("d0480758", 'mengandungi sama ada "ai" atau "pemula" (atau kedua-duanya)'),
                 i("f0048fa2", "ai ATAU pemula"),
                 i("da0df186", 'mengandungi "ai", tetapi tidak mengandungi "pemula"'),
                 i("f2f463ea", "ai -pemula"),
@@ -5872,12 +5886,12 @@
                 i("cbae35fa", "Laporkan Siaran"),
                 i("fd12ab58", "Siaran koleksi"),
                 i("a226497c", "Cipta Komuniti baharu"),
-                i("d7346632", "Anda belum menyertai mana-mana Komuniti lagi"),
-                i("b732a4cc", "Apabila anda berbuat demikian, anda akan dapat melihat siaran mereka di sini."),
+                i("d7346632", "Anda belum menyertai mana-mana Komuniti lagi");
+            i("b732a4cc", "Apabila anda berbuat demikian, anda akan dapat melihat siaran mereka di sini."),
                 i("hff48914", "Tiada siaran dapat ditemukan pada masa ini."),
                 i("hb52cc4a", "Sila cuba lagi kemudian."),
-                i("e50e1bb0", "Selamat datang ke Komuniti");
-            i("i6829daa", "Komuniti ialah kumpulan perbincangan yang dikendalikan dan merupakan tempat untuk pengguna di X berhubung dan berkongsi."),
+                i("e50e1bb0", "Selamat datang ke Komuniti"),
+                i("i6829daa", "Komuniti ialah kumpulan perbincangan yang dikendalikan dan merupakan tempat untuk pengguna di X berhubung dan berkongsi."),
                 i("fc5c6914", "Temui orang lain yang mempunyai minat yang sama seperti anda"),
                 i("aa1a9820", "Sertai Komuniti untuk berhubung dengan orang yang berkongsi minat yang sama seperti anda."),
                 i("edef4c82", "Buat siaran secara terus kepada Komuniti"),
@@ -6870,12 +6884,12 @@
                 i("ee54c3de", "Simpan video terus ke peranti anda"),
                 i("ae03594c", "Peningkatan balasan yang kecil"),
                 i("e6bb08c0", "Tingkatkan keterlihatan balasan anda"),
-                i("bf2a6acc", "Peningkatan Balasan yang Besar"),
-                i("c2059276", "Tingkatkan balasan anda."),
+                i("bf2a6acc", "Peningkatan Balasan yang Besar");
+            i("c2059276", "Tingkatkan balasan anda."),
                 i("b023ec20", "Peningkatan Balasan Maksimum"),
                 i("g337328e", "Dapatkan keterlihatan yang tertinggi untuk balasan anda."),
-                i("fa006202", "Main semula video latar belakang");
-            i("jf389778", "Tonton sambil menyemak imbas atau menggunakan aplikasi lain"),
+                i("fa006202", "Main semula video latar belakang"),
+                i("jf389778", "Tonton sambil menyemak imbas atau menggunakan aplikasi lain"),
                 i("f2977d80", "Folder Bookmark"),
                 i("j1d3d910", "Kekalkan siaran yang anda simpan dalam keadaan teratur agar dapat diakses dengan mudah"),
                 i("f0f48668", "Sokongan premium"),
@@ -7846,12 +7860,8 @@
                 i("c674f5b4", "Sediakan pembayaran invois"),
                 i("i8237e66", "Bertukar daripada pembayaran kad kredit kepada penginvoisan melalui pemindahan bank."),
                 i("hebd348a", "Konfigurasikan cara iklan digunakan untuk mempromosikan pekerjaan daripada portal Pengambilan Pekerja."),
-                i("ib5e6f90", "Promosi Pekerjaan"),
-                i("id720215", "Pengambilan Pekerja"),
-                i("dd59f146", "Akaun iklan promosi pekerjaan"),
-                i("e7e36818", "Akaun iklan adalah layak untuk promosi pekerjaan apabila akaun tersebut ditetapkan sepenuhnya dengan sumber pembiayaan."),
-                i("c28566e0", "Akaun Iklan");
-            function d(a, n) {
+                i("ib5e6f90", "Promosi Pekerjaan");
+            function u(a, n) {
                 for (var e = 0; e < n.length; e++) {
                     var i = n[e];
                     (i.enumerable = i.enumerable || !1),
@@ -7860,9 +7870,9 @@
                         Object.defineProperty(
                             a,
                             ((t = i.key),
-                            (d = void 0),
+                            (u = void 0),
                             "symbol" ==
-                            typeof (d = (function (a, n) {
+                            typeof (u = (function (a, n) {
                                 if ("object" != typeof a || null === a) return a;
                                 var e = a[Symbol.toPrimitive];
                                 if (void 0 !== e) {
@@ -7872,24 +7882,28 @@
                                 }
                                 return ("string" === n ? String : Number)(a);
                             })(t, "string"))
-                                ? d
-                                : String(d)),
+                                ? u
+                                : String(u)),
                             i,
                         );
                 }
-                var t, d;
+                var t, u;
             }
-            function u(a, n) {
+            function d(a, n) {
                 return (
-                    (u = Object.setPrototypeOf
+                    (d = Object.setPrototypeOf
                         ? Object.setPrototypeOf.bind()
                         : function (a, n) {
                               return (a.__proto__ = n), a;
                           }),
-                    u(a, n)
+                    d(a, n)
                 );
             }
-            i("c80160d3", "Pengiklanan"),
+            i("id720215", "Pengambilan Pekerja"),
+                i("dd59f146", "Akaun iklan promosi pekerjaan"),
+                i("e7e36818", "Akaun iklan adalah layak untuk promosi pekerjaan apabila akaun tersebut ditetapkan sepenuhnya dengan sumber pembiayaan."),
+                i("c28566e0", "Akaun Iklan"),
+                i("c80160d3", "Pengiklanan"),
                 i("ff0edac0", "Adakah anda pasti anda ingin membatalkan langganan anda?"),
                 i("h2ac0348", "Tidak, bawa saya kembali"),
                 i("dbf9667e", "Saya pasti"),
@@ -8751,12 +8765,10 @@
                 i("gdd173da", "Jawapan daripada Grok dalam Mod Seronok"),
                 i("dfd6eeac", "Jawapan daripada Grok"),
                 i("deceb214", "Imej oleh Grok"),
-                i("j05496ce", "DeepSearch oleh Grok"),
                 i("befddd48", "Tunjukkan"),
                 i("hf3f8e3a", "Tunjukkan lagi"),
                 i("h504ea5e", "Cipta versi anda dengan Grok"),
                 i("eb722de2", "Tanya sendiri kepada Grok"),
-                i("ib5110be", "Cuba Grok DeepSearch sendiri"),
                 i("bb5c5864", "Petikan"),
                 i("a8b58cf4", "Tunjukkan thread ini"),
                 i("i5f742fe", "Tunjukkan undian ini"),
@@ -8906,14 +8918,14 @@
                 }),
                 i("c889af33", function (a) {
                     return a.count + " menyertai";
-                }),
-                i("d6f2056f", function (a) {
-                    return a.count + " turut serta";
-                }),
-                i("jbc5f47a", "Dok Spaces");
-            i("gfe2830f", function (a) {
-                return a.count + " yang lain";
+                });
+            i("d6f2056f", function (a) {
+                return a.count + " turut serta";
             }),
+                i("jbc5f47a", "Dok Spaces"),
+                i("gfe2830f", function (a) {
+                    return a.count + " yang lain";
+                }),
                 i("dbeae6cf", function (a) {
                     return a.count + " pendengar lain";
                 }),
@@ -9440,7 +9452,7 @@
                     (e = a),
                     ((n = s).prototype = Object.create(e.prototype)),
                     (n.prototype.constructor = n),
-                    u(n, e),
+                    d(n, e),
                     (s.prototype.render = function () {
                         return r.createElement.apply(r, this[this.props.$i18n].reduce(this.templateReducer, [r.Fragment, null]));
                     }),
@@ -12835,8 +12847,8 @@
                                 };
                             },
                         },
-                    ]) && d(i.prototype, t),
-                    g && d(i, g),
+                    ]) && u(i.prototype, t),
+                    g && u(i, g),
                     Object.defineProperty(i, "prototype", { writable: !1 }),
                     s
                 );
@@ -13192,4 +13204,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.10bc1eda.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.6d28cb9a.js.map

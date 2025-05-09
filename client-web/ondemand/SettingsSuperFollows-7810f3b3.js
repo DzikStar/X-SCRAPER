@@ -39,9 +39,9 @@
                 E = r(865559),
                 Z = r(277660),
                 w = r.n(Z),
-                y = r(615027),
-                _ = r(823508),
-                h = r(628073),
+                _ = r(615027),
+                h = r(823508),
+                y = r(628073),
                 v = r(226445),
                 k = r(540769),
                 P = r(899382),
@@ -76,8 +76,8 @@
                         o = w()(D, r),
                         u = w()(j, l),
                         m = O(o, u),
-                        p = a.useCallback(() => (m === R.LI ? c() : a.createElement(y.Z, { to: m })), [m, c]);
-                    return a.createElement(s.Switch, null, a.createElement(s.Route, { path: R.wU.root }, a.createElement(_.Z, { subscriptionsPriceOfferings: i, user: o, viewer: u })), a.createElement(s.Route, { path: R.NW.root }, a.createElement(v.Z, { priceOfferings: n, subscriptionsPriceOfferings: i, user: o, viewer: u })), a.createElement(s.Route, { path: R.D1.root }, a.createElement(h.Z, { priceOfferings: n, subscriptionsPriceOfferings: i, user: o, viewer: u })), a.createElement(s.Route, { exact: !0, path: R.o5 }, a.createElement(P.Z, null)), a.createElement(s.Route, { exact: !0, path: R.$w }, a.createElement(k.Z, null)), a.createElement(s.Route, { exact: !0, path: R.Km }, a.createElement(C.Z, null)), a.createElement(s.Route, { exact: !0, path: R.Jz }, p()));
+                        p = a.useCallback(() => (m === R.LI ? c() : a.createElement(_.Z, { to: m })), [m, c]);
+                    return a.createElement(s.Switch, null, a.createElement(s.Route, { path: R.wU.root }, a.createElement(h.Z, { subscriptionsPriceOfferings: i, user: o, viewer: u })), a.createElement(s.Route, { path: R.NW.root }, a.createElement(v.Z, { priceOfferings: n, subscriptionsPriceOfferings: i, user: o, viewer: u })), a.createElement(s.Route, { path: R.D1.root }, a.createElement(y.Z, { priceOfferings: n, subscriptionsPriceOfferings: i, user: o, viewer: u })), a.createElement(s.Route, { exact: !0, path: R.o5 }, a.createElement(P.Z, null)), a.createElement(s.Route, { exact: !0, path: R.$w }, a.createElement(k.Z, null)), a.createElement(s.Route, { exact: !0, path: R.Km }, a.createElement(C.Z, null)), a.createElement(s.Route, { exact: !0, path: R.Jz }, p()));
                 },
                 W = l.Z,
                 $ = () => {
@@ -150,7 +150,7 @@
                 m = n.default.create((e) => ({ root: { marginVertical: e.spaces.space16, backgroundColor: e.colors.gray0, padding: e.spaces.space12, borderRadius: e.borderRadii.medium, gap: e.spaces.space8 }, gap: { gap: e.spaces.space24 }, item: { flexDirection: "row" }, label: { flex: 1 }, iconChecked: { color: e.colors.green500 }, iconUnchecked: { color: e.colors.gray200 } }));
         },
         228477: (e, t, r) => {
-            r.d(t, { Z: () => y });
+            r.d(t, { Z: () => _ });
             var l = r(202784),
                 a = r(325686),
                 s = r(891198),
@@ -168,28 +168,28 @@
                 E = u().b747ce3a,
                 Z = u().c27f57ac,
                 w = u().h63d2973,
-                y = ({ failedRequirements: e }) => {
+                _ = ({ failedRequirements: e }) => {
                     const { featureSwitches: t } = (0, d.QZ)(),
                         r = t.isTrue("subscriptions_upsells_monetization_redesign_enabled"),
                         i = t.getNumberValue("creator_subscriptions_eligibility_verified_followers", 2e3),
                         o = t.getNumberValue("creator_subscriptions_eligibility_impressions", 5e6),
                         u = s.ZP.getTruncatedCount(i),
-                        y = s.ZP.getTruncatedCount(o),
-                        h = b({ minFollowersCount: u }),
+                        _ = s.ZP.getTruncatedCount(o),
+                        y = b({ minFollowersCount: u }),
                         v = [
                             { label: r ? f : g, checked: !e.includes("blue_subscription") },
-                            { label: h, checked: !e.includes("followers") },
-                            { label: w({ count: y }), checked: !e.includes("impressions") },
+                            { label: y, checked: !e.includes("followers") },
+                            { label: w({ count: _ }), checked: !e.includes("impressions") },
                             { label: E, checked: !e.includes("tweets") },
                             { label: Z, checked: !e.includes("age") },
                         ];
                     return l.createElement(
                         a.Z,
-                        { style: _.root },
-                        v.map((e, t, r) => l.createElement(l.Fragment, { key: t }, l.createElement(a.Z, { key: e.label, style: _.item }, l.createElement(c.ZP, { style: _.label, weight: "bold" }, e.label), e.checked ? l.createElement(m.default, { style: _.iconChecked }) : l.createElement(p.default, { style: _.iconUnchecked })), r.length !== t + 1 && l.createElement(n.Z, null))),
+                        { style: h.root },
+                        v.map((e, t, r) => l.createElement(l.Fragment, { key: t }, l.createElement(a.Z, { key: e.label, style: h.item }, l.createElement(c.ZP, { style: h.label, weight: "bold" }, e.label), e.checked ? l.createElement(m.default, { style: h.iconChecked }) : l.createElement(p.default, { style: h.iconUnchecked })), r.length !== t + 1 && l.createElement(n.Z, null))),
                     );
                 },
-                _ = i.default.create((e) => ({ root: { backgroundColor: e.colors.gray0, padding: e.spaces.space12, borderRadius: e.borderRadii.medium, gap: e.spaces.space8 }, gap: { gap: e.spaces.space24 }, item: { flexDirection: "row" }, label: { flex: 1, marginEnd: e.spaces.space8 }, iconChecked: { color: e.colors.green500 }, iconUnchecked: { color: e.colors.gray200 } }));
+                h = i.default.create((e) => ({ root: { backgroundColor: e.colors.gray0, padding: e.spaces.space12, borderRadius: e.borderRadii.medium, gap: e.spaces.space8 }, gap: { gap: e.spaces.space24 }, item: { flexDirection: "row" }, label: { flex: 1, marginEnd: e.spaces.space8 }, iconChecked: { color: e.colors.green500 }, iconUnchecked: { color: e.colors.gray200 } }));
         },
         409771: (e, t, r) => {
             r.d(t, { Z: () => i });
@@ -222,14 +222,14 @@
                     const t = c()(Z, e),
                         r = t?.legacy?.profile_image_url_https ?? void 0,
                         l = t?.legacy?.protected ?? !1,
-                        s = t?.legacy?.verified ?? !1,
+                        s = t?.verification?.verified ?? !1,
                         i = t?.is_blue_verified,
                         o = t?.legacy?.name ?? void 0,
                         u = t?.legacy?.screen_name ?? void 0;
-                    return a.createElement(a.Fragment, null, a.createElement(p.Z, { style: y.interstitial }, a.createElement(d.Z, { headline: b, subtext: E })), a.createElement(n.Z, null), a.createElement(p.Z, { style: y.previewCallout }, a.createElement(f.Z, { path: g.Km })), a.createElement(m.Z, { imageUrl: r, isBlueVerified: i || !1, isProtected: l, isVerified: s, name: o, screenName: u, style: y.preview, withBackgroundTweets: !0 }));
+                    return a.createElement(a.Fragment, null, a.createElement(p.Z, { style: _.interstitial }, a.createElement(d.Z, { headline: b, subtext: E })), a.createElement(n.Z, null), a.createElement(p.Z, { style: _.previewCallout }, a.createElement(f.Z, { path: g.Km })), a.createElement(m.Z, { imageUrl: r, isBlueVerified: i || !1, isProtected: l, isVerified: s, name: o, screenName: u, style: _.preview, withBackgroundTweets: !0 }));
                 },
-                y = i.default.create((e) => ({ interstitial: { marginBottom: e.spaces.space28, marginTop: e.spaces.space32 }, previewCallout: { marginBottom: e.spaces.space4, marginTop: e.spaces.space20 }, preview: { margin: e.spaces.space16 } }));
+                _ = i.default.create((e) => ({ interstitial: { marginBottom: e.spaces.space28, marginTop: e.spaces.space32 }, previewCallout: { marginBottom: e.spaces.space4, marginTop: e.spaces.space20 }, preview: { margin: e.spaces.space16 } }));
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsSuperFollows-7810f3b3.d32f3e2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsSuperFollows-7810f3b3.df7cc4ea.js.map

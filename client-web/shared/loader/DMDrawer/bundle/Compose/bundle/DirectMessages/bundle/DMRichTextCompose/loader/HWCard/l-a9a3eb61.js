@@ -17,8 +17,8 @@
                 h = a(731708),
                 m = a(154003),
                 _ = a(447986),
-                g = a(661810),
-                C = a(530732),
+                C = a(661810),
+                g = a(530732),
                 D = a(366635);
             const E = Object.freeze({ FILL: "Fill", FIXED: "Fixed" }),
                 v = "developerBuiltCard",
@@ -164,10 +164,10 @@
                         case "DeveloperBuiltCardContainer":
                             return Y({ component: e, key: t, layoutCacheKey: a });
                         case "DeveloperBuiltCardHorizontalLineComponent":
-                            return i.createElement(g.Z, { key: t, spacing: "space8" });
+                            return i.createElement(C.Z, { key: t, spacing: "space8" });
                         case "DeveloperBuiltCardUserComponent": {
                             const a = e.user_component_results.result;
-                            return "User" === a?.__typename ? i.createElement(d.Z, { componentType: "dev_built_card", destinationData: { type: n._g.PROFILE, data: { user_id: a.id, scribe: s.bQ.PROFILE_CLICK, promoted_log: s.YE.SCREEN_NAME_CLICK } }, key: t }, ({ onClick: e }) => i.createElement(D.Z, { isProtected: a.legacy?.protected, isVerified: a.legacy?.verified, name: a.legacy?.name, onAvatarClick: e, onLinkClick: e, onScreenNameClick: e, profileImageUrl: a.legacy?.profile_image_url_https, screenName: a.legacy?.screen_name, withHoverCard: !0, withLink: !0 })) : null;
+                            return "User" === a?.__typename ? i.createElement(d.Z, { componentType: "dev_built_card", destinationData: { type: n._g.PROFILE, data: { user_id: a.id, scribe: s.bQ.PROFILE_CLICK, promoted_log: s.YE.SCREEN_NAME_CLICK } }, key: t }, ({ onClick: e }) => i.createElement(D.Z, { isProtected: a.legacy?.protected, isVerified: a.verification?.verified, name: a.legacy?.name, onAvatarClick: e, onLinkClick: e, onScreenNameClick: e, profileImageUrl: a.legacy?.profile_image_url_https, screenName: a.legacy?.screen_name, withHoverCard: !0, withLink: !0 })) : null;
                         }
                         default:
                             return null;
@@ -178,7 +178,7 @@
                     i.createElement(d.Z, { componentType: "dev_built_card", destinationData: e.component_action?.url ? { type: n._g.BROWSER, data: { url_data: { url: e.component_action?.url }, scribe: s.bQ.OPEN_LINK, promoted_log: s.YE.UNIFIED_CARD_COMPONENT_URL_CLICK } } : void 0, key: t }, ({ link: t, onClick: r }) =>
                         i.createElement(l.ZP.Consumer, null, (o) => {
                             return i.createElement(
-                                C.Z,
+                                g.Z,
                                 { interactive: !1, link: t ? o.withAnchorless(t) : void 0, onClick: r, style: [j.container, ((n = e.layout_behavior), { alignItems: F(n.container_alignment), flexDirection: q(n.axis), ...z(n.layout_margins) }), { borderWidth: e.border_color && u.default.theme.borderWidths.small, borderColor: u.default.theme.colors[$(e.border_color)], borderRadius: u.default.theme.borderRadii[K(e.corner_radius)] }], testID: S },
                                 e.components.map((e, t) => H({ component: e, key: t, layoutCacheKey: a })),
                             );
@@ -255,7 +255,7 @@
                 }
                 render() {
                     const { card: e, cardState: t, carouselIndex: a, promotedLogData: o } = this.state,
-                        { cardContext: n, dmSentOrReceived: d, id: s, isDataSaverEnabled: l, isInteractive: c, isPromoted: u, onCardLinkClick: p, onEventReminderClick: h, onPollVote: m, onScribeEvent: _, promotedContent: g, requestCardUpdate: C, testIDs: D, transformUrl: E, withBorder: v, withBorderShadow: y, withDetail: b, withRoundBorder: S, withSquareBottomBorderRadius: f } = this.props,
+                        { cardContext: n, dmSentOrReceived: d, id: s, isDataSaverEnabled: l, isInteractive: c, isPromoted: u, onCardLinkClick: p, onEventReminderClick: h, onPollVote: m, onScribeEvent: _, promotedContent: C, requestCardUpdate: g, testIDs: D, transformUrl: E, withBorder: v, withBorderShadow: y, withDetail: b, withRoundBorder: S, withSquareBottomBorderRadius: f } = this.props,
                         { collectionAdsEnabled: I, continueInGrokEnabled: R, explorerAdsEnabled: w, grokShareEnabled: B, openGrok: L } = this.context;
                     if (!e) return null;
                     if ((0, ie.h$)(e.card_name)) {
@@ -283,7 +283,7 @@
                         { get_fetch_interval_for_updates: V } = e,
                         $ = this.props.withInteractiveStyling && !!((k && k.destination) || (A && A.destination) || (T && T.destination) || (U && U.destination) || (O && O.destination) || (M && M.destination)),
                         H = { locationKey: n.locationKey, onLikelyInteraction: this._handleLikelyInteraction, id: s, testIDs: D, withInteractiveStyling: $ },
-                        Y = C && V?.[t]?.(),
+                        Y = g && V?.[t]?.(),
                         { shouldAutoAdvance: j } = e.displayOptions || {},
                         X = n.viewerUserId === n.tweetUserId,
                         ee = Z && Z.mediaEntity && "photo" === Z.mediaEntity.type,
@@ -291,10 +291,10 @@
                         he = "small" === x.size || (l && k && !W && ee && !u),
                         me = U || k;
                     let _e = null;
-                    const ge = e?.components_data?.[e?.components?.default?.[0] || ""];
-                    if ("grok_share" === ge?.type) {
+                    const Ce = e?.components_data?.[e?.components?.default?.[0] || ""];
+                    if ("grok_share" === Ce?.type) {
                         if (!B?.()) return null;
-                        const e = ge;
+                        const e = Ce;
                         n.grokShareAttachment && (e.data.conversation_preview = n.grokShareAttachment), (_e = i.createElement(te.Z, { continueInGrokEnabled: R?.(), conversation: e.data.conversation_preview, destination: e.data.destination, grokUser: e.data.grok_user, mediaVisibilityResults: n.mediaVisibilityResults, metadata: e.data.metadata, openGrok: L, profileUser: e.data.profile_user }));
                     } else if (F) _e = i.createElement(J, (0, r.Z)({}, H, { developerBuiltCard: F, withSquareBottomBorderRadius: f }));
                     else if (re) A && (_e = i.createElement(le.Z, (0, r.Z)({}, H, { button: W && W.length > 0 ? W[0] : void 0, detailsWithMiddotGroup: A, media: Z || void 0 })));
@@ -309,8 +309,8 @@
                             if (!w?.()) return null;
                             _e = i.createElement(pe.ZP, null);
                         }
-                    } else _e = i.createElement(de.ZP, (0, r.Z)({}, H, { attribution: P || void 0, backgroundColor: G || void 0, buttonLayout: Q, buttons: W || void 0, chromeless: x.chromeless, communityDetails: O || void 0, details: k, detailsWithMiddotGroup: A, dmSentOrReceived: d, followButtonData: q || void 0, initialCarouselIndex: a, isAuthor: X, jobDetails: M || void 0, listDetails: T || void 0, media: Z, poll: N || void 0, promotedContent: g, renderVideoPlayer: this.props.renderVideoPlayer, socialContextData: z || void 0, swipeableMedia: K, withActionsDisabled: n.withActionsDisabled, withBorder: v, withBorderShadow: y, withDetail: b, withRoundBorder: S, withSquareBottomBorderRadius: f }));
-                    return i.createElement(oe.Z.Provider, { value: { card: e, cardContext: n, carouselIndex: a, isDataSaverEnabled: l, isInteractive: c, isPromoted: u, media: Z, promotedContent: g, onEventReminderClick: h, onCardLinkClick: p, onPollVote: m, onPromotedLogEvent: this._onPromotedLogEvent, onScribeEvent: _, scribeCardAction: this._scribeCardAction, shouldAutoAdvance: j, slideDetails: this._slideDetails, transformUrl: E, promotedLogData: o, updateCardState: this._updateCardState, updatePromotedLogState: this._updatePromotedLogState, updateCarouselEventDetailsState: this._updateCarouselEventDetailsState } }, this._renderPreconnectTags(), Y ? i.createElement(ne.ZP, { fetchIntervalConfig: Y, requestCardUpdate: this._requestCardUpdate }) : null, _e);
+                    } else _e = i.createElement(de.ZP, (0, r.Z)({}, H, { attribution: P || void 0, backgroundColor: G || void 0, buttonLayout: Q, buttons: W || void 0, chromeless: x.chromeless, communityDetails: O || void 0, details: k, detailsWithMiddotGroup: A, dmSentOrReceived: d, followButtonData: q || void 0, initialCarouselIndex: a, isAuthor: X, jobDetails: M || void 0, listDetails: T || void 0, media: Z, poll: N || void 0, promotedContent: C, renderVideoPlayer: this.props.renderVideoPlayer, socialContextData: z || void 0, swipeableMedia: K, withActionsDisabled: n.withActionsDisabled, withBorder: v, withBorderShadow: y, withDetail: b, withRoundBorder: S, withSquareBottomBorderRadius: f }));
+                    return i.createElement(oe.Z.Provider, { value: { card: e, cardContext: n, carouselIndex: a, isDataSaverEnabled: l, isInteractive: c, isPromoted: u, media: Z, promotedContent: C, onEventReminderClick: h, onCardLinkClick: p, onPollVote: m, onPromotedLogEvent: this._onPromotedLogEvent, onScribeEvent: _, scribeCardAction: this._scribeCardAction, shouldAutoAdvance: j, slideDetails: this._slideDetails, transformUrl: E, promotedLogData: o, updateCardState: this._updateCardState, updatePromotedLogState: this._updatePromotedLogState, updateCarouselEventDetailsState: this._updateCarouselEventDetailsState } }, this._renderPreconnectTags(), Y ? i.createElement(ne.ZP, { fetchIntervalConfig: Y, requestCardUpdate: this._requestCardUpdate }) : null, _e);
                 }
                 _getCurrentLayout() {
                     const { cardState: e, layout: t } = this.state,
@@ -438,4 +438,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompose~loader.HWCard~l-a9a3eb61.017723ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompose~loader.HWCard~l-a9a3eb61.50152e2a.js.map

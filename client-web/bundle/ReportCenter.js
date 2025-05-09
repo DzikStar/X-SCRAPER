@@ -80,7 +80,7 @@
             const u = (0, t.ZP)(o(c));
         },
         657137: (e, l, a) => {
-            a.r(l), a.d(l, { default: () => Te });
+            a.r(l), a.d(l, { default: () => Ke });
             var n,
                 t,
                 r,
@@ -99,8 +99,8 @@
                 b,
                 F,
                 _,
-                K,
                 T,
+                K,
                 f,
                 w,
                 S,
@@ -193,8 +193,8 @@
                                                                                                         kind: "LinkedField",
                                                                                                         name: "tweet",
                                                                                                         plural: !1,
-                                                                                                        selections: (K = [
-                                                                                                            { alias: null, args: null, concreteType: "TweetCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [g, { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [(y = { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null }), (k = { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null }), { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }, (h = { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }), (b = { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null }), { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }], storageKey: null }, (F = { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" }), (_ = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null })], type: "User", abstractKey: null }], storageKey: null }, _], storageKey: null }], storageKey: null },
+                                                                                                        selections: (T = [
+                                                                                                            { alias: null, args: null, concreteType: "TweetCore", kind: "LinkedField", name: "core", plural: !1, selections: [{ alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [g, { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [(y = { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null }), (k = { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null }), { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }, (h = { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }), (b = { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null })], storageKey: null }, (F = { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" }), { alias: null, args: null, concreteType: "UserVerification", kind: "LinkedField", name: "verification", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }], storageKey: null }, (_ = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null })], type: "User", abstractKey: null }], storageKey: null }, _], storageKey: null }], storageKey: null },
                                                                                                             {
                                                                                                                 alias: null,
                                                                                                                 args: null,
@@ -219,7 +219,7 @@
                                                                                                 type: "TweetWithVisibilityResults",
                                                                                                 abstractKey: null,
                                                                                             },
-                                                                                            { kind: "InlineFragment", selections: K, type: "Tweet", abstractKey: null },
+                                                                                            { kind: "InlineFragment", selections: T, type: "Tweet", abstractKey: null },
                                                                                             {
                                                                                                 kind: "InlineFragment",
                                                                                                 selections: [
@@ -263,7 +263,7 @@
                                                                                                                                         selections: [
                                                                                                                                             g,
                                                                                                                                             { kind: "TypeDiscriminator", abstractKey: "__isTimelineReferenceObject" },
-                                                                                                                                            { kind: "InlineFragment", selections: (f = [(T = { alias: null, args: null, kind: "ScalarField", name: "text", storageKey: null })]), type: "TimelineRichTextCashtag", abstractKey: null },
+                                                                                                                                            { kind: "InlineFragment", selections: (f = [(K = { alias: null, args: null, kind: "ScalarField", name: "text", storageKey: null })]), type: "TimelineRichTextCashtag", abstractKey: null },
                                                                                                                                             { kind: "InlineFragment", selections: [_, (w = { alias: null, args: null, kind: "ScalarField", name: "url", storageKey: null })], type: "TimelineRichTextList", abstractKey: null },
                                                                                                                                             { kind: "InlineFragment", selections: f, type: "TimelineRichTextHashtag", abstractKey: null },
                                                                                                                                             { kind: "InlineFragment", selections: [(S = { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [g, { kind: "InlineFragment", selections: [{ alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }, _], type: "User", abstractKey: null }], storageKey: null }, _], storageKey: null })], type: "TimelineRichTextUser", abstractKey: null },
@@ -313,7 +313,7 @@
                                                                                                                                 storageKey: null,
                                                                                                                             },
                                                                                                                             { alias: null, args: null, kind: "ScalarField", name: "rtl", storageKey: null },
-                                                                                                                            T,
+                                                                                                                            K,
                                                                                                                             { alias: null, args: null, kind: "ScalarField", name: "alignment", storageKey: null },
                                                                                                                         ],
                                                                                                                         storageKey: null,
@@ -364,7 +364,7 @@
                             },
                         ],
                     },
-                    params: { id: "iDoo9-T00DI2oypZ0YmRNQ", metadata: {}, name: "ReportDetailQuery", operationKind: "query", text: null },
+                    params: { id: "p_25S7FUTca-Ls6hT2Wu_Q", metadata: {}, name: "ReportDetailQuery", operationKind: "query", text: null },
                 };
             E.hash = "e9eed8d592e76b49f0c5ac5b9791f86b";
             const x = E;
@@ -377,41 +377,41 @@
                 P = a(470397),
                 C = a(386802),
                 U = a(392237),
-                D = a(674132),
-                M = a.n(D),
-                V = a(189700),
+                M = a(674132),
+                V = a.n(M),
+                D = a(189700),
                 z = a(200112),
                 A = a(450681),
                 H = a(143778),
-                N = a(323265),
-                W = a(980407),
+                W = a(323265),
+                N = a(980407),
                 O = a(430759),
                 q = a(443781),
                 Q = a(736063),
                 G = a(725516),
                 $ = a(535338),
-                Y = a(17164);
-            const j = M().e37836f8,
-                J = M().ccf2f24e,
-                X = M().fb35e52a,
-                ee = M().e238c590,
-                le = M().if218e60,
-                ae = M().b6dc1984,
-                ne = M().b0a16894,
-                te = [M().d4716820, M().e899a534, M().d9c4e7ae],
-                re = M().afb51066,
+                j = a(17164);
+            const Y = V().e37836f8,
+                J = V().ccf2f24e,
+                X = V().fb35e52a,
+                ee = V().e238c590,
+                le = V().if218e60,
+                ae = V().b6dc1984,
+                ne = V().b0a16894,
+                te = [V().d4716820, V().e899a534, V().d9c4e7ae],
+                re = V().afb51066,
                 ie = "gray700",
-                se = M().b7ba712a,
-                oe = M().d90b8c04,
-                ce = M().c2d0494a,
-                ue = M().be46e000,
-                de = M().e846ae32,
-                pe = M().e3647d08,
-                me = M().gad89c4a,
-                ge = M().h7fa9240,
-                ye = M().fb2ff552,
-                ke = M().bb57e8c0,
-                he = M().b9ce59ba,
+                se = V().b7ba712a,
+                oe = V().d90b8c04,
+                ce = V().c2d0494a,
+                ue = V().be46e000,
+                de = V().e846ae32,
+                pe = V().e3647d08,
+                me = V().gad89c4a,
+                ge = V().h7fa9240,
+                ye = V().fb2ff552,
+                ke = V().bb57e8c0,
+                he = V().b9ce59ba,
                 be = x,
                 Fe = (e) => {
                     const l = e?.verdict,
@@ -419,7 +419,7 @@
                         n = a ? a.replace(/\\n/g, "\n") : "",
                         t = e?.actioned_report_type,
                         r = [
-                            { decoration: L.createElement(V.default, { style: fe.icon }), label: ue, description: de },
+                            { decoration: L.createElement(D.default, { style: fe.icon }), label: ue, description: de },
                             { decoration: L.createElement(z.default, { style: fe.icon }), label: pe, description: me },
                         ];
                     return L.createElement(
@@ -458,7 +458,7 @@
                                     "\n\n",
                                     L.createElement("strong", null, ke, " "),
                                     (() => {
-                                        const e = () => L.createElement(M().I18NFormatMessage, { $i18n: "ef72b01b" }, L.createElement(R.ZP, { link: "https://findahelpline.com/i/iasp" }, M().d42899ad));
+                                        const e = () => L.createElement(V().I18NFormatMessage, { $i18n: "ef72b01b" }, L.createElement(R.ZP, { link: "https://findahelpline.com/i/iasp" }, V().d42899ad));
                                         return L.createElement(R.ZP, { style: fe.selfHarmLabel }, L.createElement(e, null));
                                     })(),
                                     "\n\n",
@@ -493,14 +493,14 @@
                             return null;
                     }
                 },
-                Ke = () => {
+                Te = () => {
                     const e = (0, Z.useParams)(),
                         l = (0, $.p)(be, { reportId: e.reportId || "" }, { fetchPolicy: "network-only" });
                     if (!l) return null;
                     const a = l?.viewer_v2?.user_results?.result?.report_detail,
                         n = a?.last_update_time
                             ? ((e) => {
-                                  const l = M().ba2e82a1,
+                                  const l = V().ba2e82a1,
                                       a = parseInt(e, 10);
                                   return l(new Date(a));
                               })(a?.last_update_time)
@@ -510,17 +510,17 @@
                         i = a?.rule_link;
                     return L.createElement(L.Fragment, null, L.createElement(P.Z, { color: ie }, L.createElement(R.ZP, { color: ie, weight: "bold" }, J), L.createElement(R.ZP, { color: ie }, n)), L.createElement(R.ZP, { size: "title4", style: fe.header, weight: "heavy" }, t), L.createElement(R.ZP, { link: i }, X), r ? L.createElement(O.Z, { report: (0, A.Z)(r) }) : null, _e(a));
                 },
-                Te = (0, G.Z)(
+                Ke = (0, G.Z)(
                     () => {
                         const e = (0, Z.useHistory)(),
                             { isModal: l } = L.useContext(C.Z),
                             a = H.Z,
-                            n = N.ZP.isTwitterApp(),
+                            n = W.ZP.isTwitterApp(),
                             t = (0, Z.useParams)(),
                             { featureSwitches: r } = L.useContext(q.rC),
                             i = r.isTrue("sc_r4_enabled"),
                             s = L.useMemo(() => (n ? a : void 0), [n, a]);
-                        return i && t.reportId ? L.createElement(Y.Z, { to: `/i/safety_center/reports/${t.reportId}` }) : L.createElement(W.Z, { backButtonType: "close", containerStyle: fe.root, documentTitle: j, history: e, renderHeader: s }, L.createElement(B.Z, { style: [fe.contentBody, l ? fe.wideScreen : fe.narrowScreen] }, L.createElement(Q.H, { errorConfig: { context: "REPORT_DETAIL" } }, L.createElement(Ke, null))));
+                        return i && t.reportId ? L.createElement(j.Z, { to: `/i/safety_center/reports/${t.reportId}` }) : L.createElement(N.Z, { backButtonType: "close", containerStyle: fe.root, documentTitle: Y, history: e, renderHeader: s }, L.createElement(B.Z, { style: [fe.contentBody, l ? fe.wideScreen : fe.narrowScreen] }, L.createElement(Q.H, { errorConfig: { context: "REPORT_DETAIL" } }, L.createElement(Te, null))));
                     },
                     { page: "report_center", component: "report_detail" },
                 ),
@@ -528,4 +528,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ReportCenter.7a116a2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ReportCenter.2c884b9a.js.map

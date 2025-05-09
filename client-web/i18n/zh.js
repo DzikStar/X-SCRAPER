@@ -280,7 +280,7 @@
                 f("edf7f57e", "通过认证即可获得推广回复、分析、免广告浏览等功能。立即升级你的个人资料。"),
                 f("ba920d68", "通过认证来提升你的影响力"),
                 f("ib79d0c2", "解锁 VIP 功能：认证你的账号"),
-                f("bebc5f12", "你在 X 上投放广告，但尚未订阅“认证组织”"),
+                f("c0d3bd82", "You’ve advertised on X, but don’t have a Verified Organizations subscription"),
                 f("d7836d1e", "订阅即可获得最高 12,000 美元的免费广告积分、黄金认证、VIP 支持和一整套发展工具。"),
                 f("f528e369", function (e) {
                     return "订阅 " + e.tier + "，撰写自己的文章";
@@ -1274,15 +1274,23 @@
                 f("b8f3500a", "在阅读模式下查看主题帖"),
                 f("fc7db594", "个人资料概要"),
                 f("c3f04d9c", "思考中"),
-                f("cbdddb0a", "已结束"),
+                f("e98cc293", function (e) {
+                    return "Searching for " + e.query;
+                }),
                 f("b0d1e205", function (e) {
                     return "正在搜索**“" + e.query + "”**";
+                }),
+                f("i2e0f4d7", function (e) {
+                    return "Browsing " + e.url + " for " + e.query;
                 }),
                 f("acb9b845", function (e) {
                     return "浏览 " + e.url + " 以搜索**“" + e.query + "”**";
                 }),
                 f("ef261d8d", function (e) {
                     return "正在搜索 @" + e.username + " 的帖子";
+                }),
+                f("f7d9cfb9", function (e) {
+                    return "Searching posts by @" + e.username + " for " + e.query;
                 }),
                 f("bec7eb11", function (e) {
                     return "正在搜索 @" + e.username + ' 的帖子中的 **"' + e.query + '"**';
@@ -1906,10 +1914,10 @@
                 f("hff1b97a", "只有“已订阅”用户才能回复。"),
                 f("a330771e", "将链接复制到剪贴板"),
                 f("b6510e68", "复制文章的 URL 以便分享。"),
-                f("e4a6e006", "出错了。请重试。"),
-                f("eff483e0", "发布后，获取分享文章的链接。"),
-                f("ca15dd4e", "草稿");
-            f("bb40bf66", "已发布"),
+                f("e4a6e006", "出错了。请重试。");
+            f("eff483e0", "发布后，获取分享文章的链接。"),
+                f("ca15dd4e", "草稿"),
+                f("bb40bf66", "已发布"),
                 f("h107935c", "刚刚最后保存"),
                 f("a753a870", "应用"),
                 f("afccc67e", "复制文章链接"),
@@ -2958,10 +2966,10 @@
                 f("df1b7550", "市场营销"),
                 f("he258678", "企业版 X"),
                 f("c6f58084", "开发者"),
-                f("d83f18d2", "目录"),
-                f("hc5aa17c", "获取 X 应用"),
-                f("j0693948", "获取 Grok 应用");
-            f("af781666", "人们怎么看？"),
+                f("d83f18d2", "目录");
+            f("hc5aa17c", "获取 X 应用"),
+                f("j0693948", "获取 Grok 应用"),
+                f("af781666", "人们怎么看？"),
                 f("ad35153e", "测试版"),
                 f("fbf83158", "警告：付款失败"),
                 f("jadeb4da", "请立即更新你的付款方式，以免失去你的订阅特权。"),
@@ -3874,10 +3882,10 @@
                 f("cededf2a", "主持人"),
                 f("i2caef48", "共同主持人"),
                 f("j245c654", "发言人"),
-                f("eda23a02", "听众"),
-                f("b90eb348", "邀请发言"),
-                f("d9a63e82", "从发言人中移除");
-            f("bd917b26", "邀请共同主持"),
+                f("eda23a02", "听众");
+            f("b90eb348", "邀请发言"),
+                f("d9a63e82", "从发言人中移除"),
+                f("bd917b26", "邀请共同主持"),
                 f("d7357e7e", "从共同主持人中移除"),
                 f("bf307fc0", "屏蔽并移除"),
                 f("ccf2f24e", "举报"),
@@ -4170,7 +4178,7 @@
                 f("ff9dc268", "编辑提示语"),
                 f("acb2baa0", "创建图片"),
                 f("fe9ad897", function (e) {
-                    return "Edit Image" + e.ttc_grok_preset;
+                    return "编辑图片" + e.ttc_grok_preset;
                 }),
                 f("h30fd372", "尝试语音模式"),
                 f("e9fcdd0c", "让 Grok 在网上广泛搜索"),
@@ -4180,7 +4188,6 @@
                 f("b5df32b0", "问 Grok 问题"),
                 f("fb3b9776", "此用户对 Grok 的输出结果进行了定制。"),
                 f("ca93f2ee", "私信已被删除。"),
-                f("b52484b6", "正在搜索..."),
                 f("b8c06820", "复制文本"),
                 f("ca0f5894", "不喜欢"),
                 f("ja8d189e", "想要文字答案"),
@@ -4272,6 +4279,7 @@
                 f("e2811afc", "比赛"),
                 f("j081fa34", "积分榜"),
                 f("i7c7f156", "明天"),
+                f("cbdddb0a", "已结束"),
                 f("b134ba52", "进行中"),
                 f("j1361724", "半场"),
                 f("fa0f1262", "休息"),
@@ -4298,29 +4306,35 @@
                 f("dc17968a", "星期五"),
                 f("j310a2d6", "星期六"),
                 f("eaf55eb4", "显示思考过程"),
-                f("j1ab5f40", "点击阅读"),
+                f("b1ac6016", "已完成 DeepSearch"),
+                f("f766feca", "完成的 DeeperSearch"),
                 f("ee000b0d", function (e) {
                     return e.numSources + " 个来源";
                 }),
-                f("b1ac6016", "已完成 DeepSearch"),
-                f("f766feca", "完成的 DeeperSearch"),
+                f("bf780b13", function (e) {
+                    return e.minutes + " 分 " + e.seconds + " 秒";
+                }),
+                f("c2745fa4", "已中止"),
                 f("e258000e", "通知"),
                 f("d591a772", "通知不可用"),
                 f("bc49b728", "答案准备好后，你将收到通知"),
                 f("d8aadeba", "通知已关闭"),
                 f("db832e38", "请在浏览器设置中启用通知"),
                 f("a910cac6", "启用通知时遇到问题"),
-                f("g4b3a3e6", "DeepSearch 完成"),
-                f("bf780b13", function (e) {
-                    return e.minutes + " 分 " + e.seconds + " 秒";
-                }),
-                f("c2745fa4", "已中止"),
                 f("be30b6ee", "连接不稳定"),
+                f("b52484b6", "正在搜索..."),
                 f("a4d9dbfa", "想法"),
+                f("ib1c5475", function (e) {
+                    return "Thought for " + e.minutes + "m " + e.seconds + "s";
+                }),
+                f("a15d62db", function (e) {
+                    return "Thought for " + e.seconds + "s";
+                }),
                 f("d7cb5408", "相关网页"),
                 f("aa7c96bb", function (e) {
                     return "查看另外 " + e.numResults + " 条";
                 }),
+                f("j1ab5f40", "点击阅读"),
                 f("f5a2377e", "正在思考 "),
                 f("g3ce0132", "已经思考"),
                 f("f8007364", "展开详情"),
@@ -4906,12 +4920,12 @@
                 f("if2909ba", "观看时间"),
                 f("i0e5bf4c", "您的视频"),
                 f("ed99baea", "抢先体验测试版"),
-                f("gf898b70", "高级搜索"),
-                f("d2a43a7a", '同时包含 "ai" 和 "startup"'),
+                f("gf898b70", "高级搜索");
+            f("d2a43a7a", '同时包含 "ai" 和 "startup"'),
                 f("a8584698", "ai startup"),
                 f("jb6f9292", "完整包含“ai startup”"),
-                f("j8ee77c4", '"ai startup"');
-            f("d0480758", '包含 "ai" 或 "startup"（或两者）'),
+                f("j8ee77c4", '"ai startup"'),
+                f("d0480758", '包含 "ai" 或 "startup"（或两者）'),
                 f("f0048fa2", "ai 或 startup"),
                 f("da0df186", '包含 "ai"，但不包含 "startup"'),
                 f("f2f463ea", '"ai startup"'),
@@ -5872,12 +5886,12 @@
                 f("cbae35fa", "举报播客"),
                 f("fd12ab58", "贴文集"),
                 f("a226497c", "创建新社群"),
-                f("d7346632", "你尚未加入任何社群"),
-                f("b732a4cc", "当你这样做时，就会在这里看到他们的帖子。"),
+                f("d7346632", "你尚未加入任何社群");
+            f("b732a4cc", "当你这样做时，就会在这里看到他们的帖子。"),
                 f("hff48914", "目前未找到任何帖子。"),
                 f("hb52cc4a", "请稍后再试。"),
-                f("e50e1bb0", "欢迎来到社群");
-            f("i6829daa", "社群是由版主管理的讨论群组，X 用户可以在这里沟通和分享。"),
+                f("e50e1bb0", "欢迎来到社群"),
+                f("i6829daa", "社群是由版主管理的讨论群组，X 用户可以在这里沟通和分享。"),
                 f("fc5c6914", "认识其他兴趣相投的人"),
                 f("aa1a9820", "加入社群，与志同道合的人沟通。"),
                 f("edef4c82", "直接发帖到社群"),
@@ -6870,12 +6884,12 @@
                 f("ee54c3de", "将视频直接保存到设备"),
                 f("ae03594c", "小范围的回复推广"),
                 f("e6bb08c0", "提高回复的关注度"),
-                f("bf2a6acc", "较大范围的回复推广"),
-                f("c2059276", "让你的回复得到推广。"),
+                f("bf2a6acc", "较大范围的回复推广");
+            f("c2059276", "让你的回复得到推广。"),
                 f("b023ec20", "最大化回复推广"),
                 f("g337328e", "让你的回复获得最高的关注度。"),
-                f("fa006202", "背景视频播放");
-            f("jf389778", "在浏览或使用其他应用时观看"),
+                f("fa006202", "背景视频播放"),
+                f("jf389778", "在浏览或使用其他应用时观看"),
                 f("f2977d80", "为文件夹添加书签"),
                 f("j1d3d910", "让你保存的帖子井井有条，以方便访问"),
                 f("f0f48668", "高级支持"),
@@ -7846,11 +7860,7 @@
                 f("c674f5b4", "设置发票付款"),
                 f("i8237e66", "从信用卡付款改为通过银行转账开票。"),
                 f("hebd348a", "配置如何通过广告在招聘门户网站上推广职位。"),
-                f("ib5e6f90", "职位推广"),
-                f("id720215", "招聘"),
-                f("dd59f146", "职位推广广告账号"),
-                f("e7e36818", "在完全设置资金来源后，广告账号才有资格进行职位推广。"),
-                f("c28566e0", "广告账号");
+                f("ib5e6f90", "职位推广");
             function t(e, c) {
                 for (var a = 0; a < c.length; a++) {
                     var f = c[a];
@@ -7889,7 +7899,11 @@
                     r(e, c)
                 );
             }
-            f("c80160d3", "广告"),
+            f("id720215", "招聘"),
+                f("dd59f146", "职位推广广告账号"),
+                f("e7e36818", "在完全设置资金来源后，广告账号才有资格进行职位推广。"),
+                f("c28566e0", "广告账号"),
+                f("c80160d3", "广告"),
                 f("ff0edac0", "你确定要取消订阅服务吗？"),
                 f("h2ac0348", "不，我要返回"),
                 f("dbf9667e", "我确定"),
@@ -8751,12 +8765,10 @@
                 f("gdd173da", "由 Grok 在趣味模式下回答"),
                 f("dfd6eeac", "由 Grok 回答"),
                 f("deceb214", "图片由 Grok 生成"),
-                f("j05496ce", "Grok 的 DeepSearch"),
                 f("befddd48", "显示"),
                 f("hf3f8e3a", "显示更多"),
                 f("h504ea5e", "使用 Grok 创建你的版本"),
                 f("eb722de2", "自己去问 Grok"),
-                f("ib5110be", "亲自尝试 Grok DeepSearch"),
                 f("bb5c5864", "引用"),
                 f("a8b58cf4", "显示这个主题帖"),
                 f("i5f742fe", "显示投票"),
@@ -8906,14 +8918,14 @@
                 }),
                 f("c889af33", function (e) {
                     return e.count + " 已加入";
-                }),
-                f("d6f2056f", function (e) {
-                    return e.count + " 已收听";
-                }),
-                f("jbc5f47a", "空间剪短");
-            f("gfe2830f", function (e) {
-                return "另外 " + e.count + " 个人";
+                });
+            f("d6f2056f", function (e) {
+                return e.count + " 已收听";
             }),
+                f("jbc5f47a", "空间剪短"),
+                f("gfe2830f", function (e) {
+                    return "另外 " + e.count + " 个人";
+                }),
                 f("dbeae6cf", function (e) {
                     return e.count + " 位其他听众";
                 }),
@@ -13208,4 +13220,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh.96e2422a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh.7300b7ea.js.map

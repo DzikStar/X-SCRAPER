@@ -2,6 +2,60 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28"],
     {
+        568320: (e, t, i) => {
+            i.r(t), i.d(t, { default: () => s });
+            var r = i(202784),
+                n = i(890601),
+                o = i(783427),
+                a = i(717683),
+                l = i(347101);
+            const c = (e = {}) => {
+                const t = r.useContext(a.Z),
+                    { direction: i } = (0, o.Z)();
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style, t && l.Z.iconRTL], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M12.957 4.54L20.414 12l-7.457 7.46-1.414-1.42L16.586 13H3v-2h13.586l-5.043-5.04 1.414-1.42z" })) }, { writingDirection: i });
+            };
+            c.metadata = { width: 24, height: 24 };
+            const s = c;
+        },
+        806143: (e, t, i) => {
+            i.r(t), i.d(t, { default: () => c });
+            var r = i(202784),
+                n = i(890601),
+                o = i(783427),
+                a = i(347101);
+            const l = (e = {}) => {
+                const { direction: t } = (0, o.Z)();
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M18.425 10.77h.001c.182.372.025.82-.348 1-.372.182-.822.025-1.002-.348-.78-1.61-2.878-1.556-3.575.124l-.306.74c-.116.281-.391.463-.694.463s-.577-.184-.693-.464l-.308-.74c-.697-1.679-2.795-1.733-3.575-.123-.182.373-.629.529-1.002.347-.373-.18-.528-.628-.348-1 1.23-2.542 4.46-2.648 5.925-.495 1.465-2.154 4.695-2.047 5.925.496zM22 2.439v14.205l-.579.269c-1.803.837-3.466 1.11-5.015 1.11-1.561 0-3.005-.278-4.359-.539-2.443-.471-4.581-.863-7.047.17V22H3V2h2v1.514c2.705-.89 5.1-.443 7.425.005 2.633.509 5.12.988 8.154-.422L22 2.438zM20 5.47c-3.009.967-5.616.464-7.953.014-2.443-.471-4.581-.863-7.047.17v9.86c2.705-.891 5.1-.442 7.425.005 2.462.475 4.798.925 7.575-.173V5.47z" })) }, { writingDirection: t });
+            };
+            l.metadata = { width: 24, height: 24 };
+            const c = l;
+        },
+        213279: (e, t, i) => {
+            i.r(t), i.d(t, { default: () => c });
+            var r = i(202784),
+                n = i(890601),
+                o = i(783427),
+                a = i(347101);
+            const l = (e = {}) => {
+                const { direction: t } = (0, o.Z)();
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M2.008 6.5c0-1.381 1.119-2.5 2.5-2.5h11c1.381 0 2.5 1.119 2.5 2.5v1.882l4-2v11.236l-4-2V17.5c0 1.381-1.119 2.5-2.5 2.5h-11c-1.381 0-2.5-1.119-2.5-2.5v-11zm7.992 9c1.933 0 3.5-1.567 3.5-3.5S11.933 8.5 10 8.5 6.5 10.067 6.5 12s1.567 3.5 3.5 3.5z" })) }, { writingDirection: t });
+            };
+            l.metadata = { width: 24, height: 24 };
+            const c = l;
+        },
+        899667: (e, t, i) => {
+            i.r(t), i.d(t, { default: () => c });
+            var r = i(202784),
+                n = i(890601),
+                o = i(783427),
+                a = i(347101);
+            const l = (e = {}) => {
+                const { direction: t } = (0, o.Z)();
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M12 6.59l8.457 8.45-1.414 1.42L12 9.41l-7.043 7.05-1.414-1.42L12 6.59z" })) }, { writingDirection: t });
+            };
+            l.metadata = { width: 24, height: 24 };
+            const c = l;
+        },
         263272: (e, t, i) => {
             i.r(t), i.d(t, { default: () => c });
             var r = i(202784),
@@ -15,7 +69,7 @@
             l.metadata = { width: 24, height: 24 };
             const c = l;
         },
-        597237: (e, t, i) => {
+        804417: (e, t, i) => {
             i.r(t), i.d(t, { default: () => c });
             var r = i(202784),
                 n = i(890601),
@@ -23,12 +77,12 @@
                 a = i(347101);
             const l = (e = {}) => {
                 const { direction: t } = (0, o.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M21.61 2H3v20h2v-6h16.61l-3.5-7 3.5-7z" })) }, { writingDirection: t });
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M23.367 8.254l-3.455-2.878c-.73-.608-1.763-.751-2.63-.358L12.471 7.19c-.895.403-1.472 1.298-1.472 2.279v.692l-1.771-.8c.492-.673.771-1.496.771-2.361 0-2.206-1.794-4-4-4S2 4.794 2 7s1.794 4 4 4c.486 0 .969-.089 1.421-.261L10.212 12l-2.791 1.261C6.968 13.089 6.485 13 6 13c-2.206 0-4 1.794-4 4s1.794 4 4 4 4-1.794 4-4c0-.865-.278-1.688-.771-2.361l1.771-.8v.692c0 .981.578 1.876 1.471 2.278l4.812 2.173c.869.393 1.9.25 2.629-.357l3.455-2.879L15.073 12l8.294-3.746zm-16.42.509C6.654 8.92 6.335 9 6 9c-1.103 0-2-.897-2-2s.897-2 2-2 2 .897 2 2c0 .736-.403 1.412-1.053 1.763zM6 19c-1.103 0-2-.897-2-2s.897-2 2-2c.335 0 .654.08.947.237C7.596 15.588 8 16.263 8 17c0 1.103-.897 2-2 2zm7-9.531c0-.196.115-.375.294-.456l4.812-2.173c.065-.029.135-.044.205-.044.116 0 .23.04.321.116l1.001.834L13 10.741V9.469zm6.633 6.785l-1.001.835c-.146.121-.352.149-.525.071l-4.812-2.174c-.178-.08-.293-.259-.293-.455v-1.272l6.633 2.995z" })) }, { writingDirection: t });
             };
             l.metadata = { width: 24, height: 24 };
             const c = l;
         },
-        488746: (e, t, i) => {
+        498844: (e, t, i) => {
             i.r(t), i.d(t, { default: () => c });
             var r = i(202784),
                 n = i(890601),
@@ -36,12 +90,12 @@
                 a = i(347101);
             const l = (e = {}) => {
                 const { direction: t } = (0, o.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M15.96 1.54L21.41 7l-5.45 5.46-1.42-1.42L17.59 8H3V6h14.59l-3.05-3.04 1.42-1.42zM6.41 18l3.05 3.04-1.42 1.42L2.59 17l5.45-5.46 1.42 1.42L6.41 16H21v2H6.41z" })) }, { writingDirection: t });
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M16.043 6.54l4.75-4.75 1.414 1.42-4.75 4.75-1.414-1.42zM3.207 22.21l4.75-4.75-1.414-1.42-4.75 4.75 1.414 1.42zm5.727-7h.002c1.369 0 2.154-.59 2.737-1.39l-1.22-.87c-.303.44-.812.73-1.39.73-.93 0-1.685-.75-1.685-1.68s.754-1.69 1.684-1.69c.559 0 1.051.28 1.357.7l1.207-.94c-.545-.76-1.36-1.29-2.62-1.29-1.872 0-3.26 1.42-3.26 3.22v.02c0 1.84 1.421 3.19 3.187 3.19zm9.319-1.39l-1.22-.87c-.304.44-.813.73-1.39.73-.93 0-1.684-.75-1.684-1.68s.755-1.68 1.685-1.68c.559 0 1.051.27 1.356.69l1.21-.94c-.547-.76-1.36-1.29-2.622-1.29-1.872 0-3.258 1.42-3.258 3.22v.02c0 1.84 1.421 3.19 3.185 3.19 1.368 0 2.154-.59 2.738-1.39zM3 5.74V15h2V5.74c0-.27.224-.5.5-.5h9.258l2-2H5.5C4.119 3.24 3 4.36 3 5.74zM18.5 19H9.243l-2 2H18.5c1.381 0 2.5-1.12 2.5-2.5V9h-2v9.5c0 .28-.224.5-.5.5z" })) }, { writingDirection: t });
             };
             l.metadata = { width: 24, height: 24 };
             const c = l;
         },
-        76388: (e, t, i) => {
+        790093: (e, t, i) => {
             i.r(t), i.d(t, { default: () => c });
             var r = i(202784),
                 n = i(890601),
@@ -49,12 +103,12 @@
                 a = i(347101);
             const l = (e = {}) => {
                 const { direction: t } = (0, o.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M14 6c0 2.21-1.791 4-4 4S6 8.21 6 6s1.791-4 4-4 4 1.79 4 4zm-4 5c-2.352 0-4.373.85-5.863 2.44-1.477 1.58-2.366 3.8-2.632 6.46l-.11 1.1h17.21l-.11-1.1c-.266-2.66-1.155-4.88-2.632-6.46C14.373 11.85 12.352 11 10 11zm12.223-5.89l-2.969 4.46L17.3 8.1l-1.2 1.6 3.646 2.73 4.141-6.21-1.664-1.11z" })) }, { writingDirection: t });
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M19.5 3h-15C3.119 3 2 4.119 2 5.5v11C2 17.881 3.119 19 4.5 19h4.15l3.34 2.793L15.37 19h4.13c1.381 0 2.5-1.119 2.5-2.5v-11C22 4.119 20.881 3 19.5 3zM8 12.25c-.69 0-1.25-.56-1.25-1.25S7.31 9.75 8 9.75s1.25.56 1.25 1.25-.56 1.25-1.25 1.25zm4 0c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25zm4 0c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25z" })) }, { writingDirection: t });
             };
             l.metadata = { width: 24, height: 24 };
             const c = l;
         },
-        774447: (e, t, i) => {
+        410547: (e, t, i) => {
             i.r(t), i.d(t, { default: () => c });
             var r = i(202784),
                 n = i(890601),
@@ -62,35 +116,7 @@
                 a = i(347101);
             const l = (e = {}) => {
                 const { direction: t } = (0, o.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M17 12v3h-2.998v2h3v3h2v-3h3v-2h-3.001v-3H17zm-5 6.839c-3.871-2.34-6.053-4.639-7.127-6.609-1.112-2.04-1.031-3.7-.479-4.82.561-1.13 1.667-1.84 2.91-1.91 1.222-.06 2.68.51 3.892 2.16l.806 1.09.805-1.09c1.211-1.65 2.668-2.22 3.89-2.16 1.242.07 2.347.78 2.908 1.91.334.677.49 1.554.321 2.59h2.011c.153-1.283-.039-2.469-.539-3.48-.887-1.79-2.647-2.91-4.601-3.01-1.65-.09-3.367.56-4.796 2.01-1.43-1.45-3.147-2.1-4.798-2.01-1.954.1-3.714 1.22-4.601 3.01-.896 1.81-.846 4.17.514 6.67 1.353 2.48 4.003 5.12 8.382 7.67l.502.299v-2.32z" })) }, { writingDirection: t });
-            };
-            l.metadata = { width: 24, height: 24 };
-            const c = l;
-        },
-        360816: (e, t, i) => {
-            i.r(t), i.d(t, { default: () => s });
-            var r = i(202784),
-                n = i(890601),
-                o = i(783427),
-                a = i(717683),
-                l = i(347101);
-            const c = (e = {}) => {
-                const t = r.useContext(a.Z),
-                    { direction: i } = (0, o.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [l.Z.root, e.style, t && l.Z.iconRTL], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M3.457 2.04L9 7.59V3h2v8H3V9h4.586L2.043 3.46l1.414-1.42zM19.5 8H14V6h5.5C20.881 6 22 7.12 22 8.5v11c0 1.38-1.119 2.5-2.5 2.5h-11C7.119 22 6 20.88 6 19.5V14h2v5.5c0 .28.224.5.5.5h11c.276 0 .5-.22.5-.5v-11c0-.28-.224-.5-.5-.5z" })) }, { writingDirection: i });
-            };
-            c.metadata = { width: 24, height: 24 };
-            const s = c;
-        },
-        315951: (e, t, i) => {
-            i.r(t), i.d(t, { default: () => c });
-            var r = i(202784),
-                n = i(890601),
-                o = i(783427),
-                a = i(347101);
-            const l = (e = {}) => {
-                const { direction: t } = (0, o.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M13 2v4h-2V2h2zm-2 16v4h2v-4h-2zm6.294-14.54l-2.435 3.17 1.587 1.22 2.435-3.17-1.587-1.22zm-9.74 12.69l-2.435 3.17 1.587 1.22 2.435-3.17-1.587-1.22zm-1-6.86L2.729 8.12l-.584 1.91L5.97 11.2l.584-1.91zm15.301 4.68L18.03 12.8l-.585 1.91 3.826 1.17.584-1.91zm-.584-5.85l-3.826 1.17.585 1.91 3.825-1.17-.584-1.91zM5.97 12.8l-3.825 1.17.584 1.91 3.825-1.17-.584-1.91zm3.171-6.17L6.706 3.46 5.119 4.67l2.435 3.18 1.587-1.22zm9.74 12.69l-2.435-3.17-1.587 1.22 2.435 3.17 1.587-1.22z" })) }, { writingDirection: t });
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M6 3v1.5S7.504 4 8.5 4c3 0 4.5 2 7 2 1.782 0 4.5-.75 4.5-.75v11s-2.7.75-4.5.75c-3 0-4.756-2-7-2-1 0-2.5.75-2.5.75V21H4V3h2z" })) }, { writingDirection: t });
             };
             l.metadata = { width: 24, height: 24 };
             const c = l;
@@ -108,7 +134,7 @@
             l.metadata = { width: 24, height: 24 };
             const c = l;
         },
-        119232: (e, t, i) => {
+        131907: (e, t, i) => {
             i.r(t), i.d(t, { default: () => c });
             var r = i(202784),
                 n = i(890601),
@@ -116,12 +142,12 @@
                 a = i(347101);
             const l = (e = {}) => {
                 const { direction: t } = (0, o.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M12 5c-.83 0-1.5.67-1.5 1.5S11.17 8 12 8s1.5-.67 1.5-1.5S12.83 5 12 5zM8.5 6.5C8.5 4.57 10.07 3 12 3s3.5 1.57 3.5 3.5S13.93 10 12 10 8.5 8.43 8.5 6.5zm-3.25 1c-.41 0-.75.34-.75.75s.34.75.75.75.75-.34.75-.75-.34-.75-.75-.75zm-2.75.75c0-1.52 1.23-2.75 2.75-2.75S8 6.73 8 8.25 6.77 11 5.25 11 2.5 9.77 2.5 8.25zm16.25-.75c-.41 0-.75.34-.75.75s.34.75.75.75.75-.34.75-.75-.34-.75-.75-.75zM16 8.25c0-1.52 1.23-2.75 2.75-2.75s2.75 1.23 2.75 2.75S20.27 11 18.75 11 16 9.77 16 8.25zM12 13c-1.29 0-2.37.54-3.22 1.61C8 15.6 7.4 17.07 7.12 19h9.76c-.27-1.85-.83-3.28-1.57-4.28C14.45 13.58 13.34 13 12 13zm-4.78.36C8.41 11.86 10.06 11 12 11c2.02 0 3.7.92 4.91 2.53 1.18 1.57 1.88 3.77 2.09 6.39l.08 1.08H4.92L5 19.92c.22-2.7.96-4.97 2.22-6.56zM2.95 16c.16-.55.39-.97.66-1.28.4-.46.94-.72 1.64-.72v-2c-1.26 0-2.35.49-3.15 1.4-.78.89-1.22 2.11-1.35 3.51L.65 18H4v-2H2.95zm18.95-2.6c.78.89 1.22 2.11 1.35 3.51l.1 1.09H20v-2h1.05c-.16-.55-.39-.97-.66-1.28-.4-.46-.94-.72-1.64-.72v-2c1.26 0 2.35.49 3.15 1.4z" })) }, { writingDirection: t });
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M22.236 12L2.503 2.133l.527 2.109.002.008.007.031.03.126c.026.112.064.278.109.49.091.425.213 1.035.335 1.767.203 1.216.403 2.752.466 4.336h6.02v2H3.98c-.063 1.583-.263 3.12-.466 4.336-.122.733-.244 1.342-.335 1.767-.046.212-.083.378-.109.49l-.03.126-.007.031-.002.007-.527 2.11L22.236 12z" }), r.createElement("path", { d: "M2.502 2.133l.527 2.109c.009.035.808 3.277.947 6.757h6.023v2H3.977c-.14 3.473-.938 6.722-.947 6.758l-.526 2.108L22.236 12 2.502 2.133z" })) }, { writingDirection: t });
             };
             l.metadata = { width: 24, height: 24 };
             const c = l;
         },
-        466445: (e, t, i) => {
+        98440: (e, t, i) => {
             i.r(t), i.d(t, { default: () => c });
             var r = i(202784),
                 n = i(890601),
@@ -129,22 +155,9 @@
                 a = i(347101);
             const l = (e = {}) => {
                 const { direction: t } = (0, o.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M21 12L4 2v20l17-10z" })) }, { writingDirection: t });
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01z" })) }, { writingDirection: t });
             };
             l.metadata = { width: 24, height: 24 };
-            const c = l;
-        },
-        264398: (e, t, i) => {
-            i.r(t), i.d(t, { default: () => c });
-            var r = i(202784),
-                n = i(890601),
-                o = i(783427),
-                a = i(347101);
-            const l = (e = {}) => {
-                const { direction: t } = (0, o.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 21 21", children: r.createElement("g", null, r.createElement("path", { d: "M9.094 3.095c-3.314 0-6 2.686-6 6s2.686 6 6 6c1.657 0 3.155-.67 4.243-1.757 1.087-1.088 1.757-2.586 1.757-4.243 0-3.314-2.686-6-6-6zm-9 6c0-4.971 4.029-9 9-9s9 4.029 9 9c0 1.943-.617 3.744-1.664 5.215l4.475 4.474-2.122 2.122-4.474-4.475c-1.471 1.047-3.272 1.664-5.215 1.664-4.97-.001-8.999-4.03-9-9z" })) }, { writingDirection: t });
-            };
-            l.metadata = { width: 21, height: 21 };
             const c = l;
         },
         415269: (e, t, i) => {
@@ -160,7 +173,7 @@
             l.metadata = { width: 24, height: 24 };
             const c = l;
         },
-        398170: (e, t, i) => {
+        262009: (e, t, i) => {
             i.r(t), i.d(t, { default: () => c });
             var r = i(202784),
                 n = i(890601),
@@ -168,12 +181,12 @@
                 a = i(347101);
             const l = (e = {}) => {
                 const { direction: t } = (0, o.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M8.414 3H12c5.247 0 9.5 4.25 9.5 9.5S17.247 22 12 22s-9.5-4.25-9.5-9.5v-1h2v1c0 4.14 3.358 7.5 7.5 7.5s7.5-3.36 7.5-7.5S16.142 5 12 5H8.414l1.543 1.54-1.414 1.42L4.586 4 8.543.04l1.414 1.42L8.414 3zm.632 6.5c-.245.65-.659.91-1.394.94H7.5v1.3h.228c.414 0 .811-.11 1.048-.31v3.94h1.454V9.5H9.046zm5.005 1.84c-.6 0-1.048.19-1.31.54l.152-1.25h2.738V9.5h-3.803l-.363 3.35 1.284.11c.135-.38.431-.59.879-.59.549 0 .87.41.87 1.03 0 .61-.329.98-.887.98-.473 0-.786-.26-.879-.66l-1.394.28c.177.93 1.039 1.5 2.29 1.5 1.445 0 2.324-.81 2.324-2.14 0-1.25-.718-2.02-1.901-2.02z" })) }, { writingDirection: t });
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M14 2c0 3.35.74 5.53 2.1 6.9 1.36 1.36 3.55 2.1 6.9 2.1v2c-3.35 0-5.54.74-6.9 2.1-1.36 1.37-2.1 3.55-2.1 6.9h-2c0-3.35-.74-5.53-2.11-6.9C8.53 13.74 6.35 13 3 13v-2c3.35 0 5.53-.74 6.89-2.1C11.26 7.53 12 5.35 12 2h2zM5 1c0 1.66-1.34 3-3 3v1c1.66 0 3 1.34 3 3h1c0-1.66 1.34-3 3-3V4C7.34 4 6 2.66 6 1H5z" })) }, { writingDirection: t });
             };
             l.metadata = { width: 24, height: 24 };
             const c = l;
         },
-        797681: (e, t, i) => {
+        17412: (e, t, i) => {
             i.r(t), i.d(t, { default: () => c });
             var r = i(202784),
                 n = i(890601),
@@ -181,7 +194,7 @@
                 a = i(347101);
             const l = (e = {}) => {
                 const { direction: t } = (0, o.Z)();
-                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M22 17H2L12 6l10 11z" })) }, { writingDirection: t });
+                return (0, n.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [a.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M16.81 1.11l1.39 4.78 4.73 1.57-4.11 2.8-.03 4.98-3.94-3.05-4.74 1.52 1.68-4.69-2.91-4.04 4.98.15 2.95-4.02zM7.05 9.54l-4.5 4.5 1.41 1.42 4.5-4.5-1.41-1.42zm1 5l-5.5 5.5 1.41 1.42 5.5-5.5-1.41-1.42zm5 1l-4.5 4.5 1.41 1.42 4.5-4.5-1.41-1.42z" })) }, { writingDirection: t });
             };
             l.metadata = { width: 24, height: 24 };
             const c = l;
@@ -208,7 +221,7 @@
                                 u = 0,
                                 g = 0,
                                 m = i,
-                                f = n;
+                                w = n;
                             switch ((e.save(), o)) {
                                 case r.Z.TOP_RIGHT:
                                     e.scale(-1, 1), (c = t.width - l.width - l.left), (u = -i);
@@ -220,18 +233,18 @@
                                     e.scale(1, -1), (s = t.height - l.height - l.top), (g = -n);
                                     break;
                                 case r.Z.LEFT_TOP:
-                                    e.translate(i / 2, n / 2), e.rotate(-Math.PI / 2), e.scale(-1, 1), (c = l.top), (s = l.left), (h = l.height), (d = l.width), (u = -n / 2), (g = -i / 2), (m = n), (f = i);
+                                    e.translate(i / 2, n / 2), e.rotate(-Math.PI / 2), e.scale(-1, 1), (c = l.top), (s = l.left), (h = l.height), (d = l.width), (u = -n / 2), (g = -i / 2), (m = n), (w = i);
                                     break;
                                 case r.Z.LEFT_BOTTOM:
-                                    e.translate(i / 2, n / 2), e.rotate(Math.PI / 2), (c = l.top), (s = t.height - l.width - l.left), (h = l.height), (d = l.width), (u = -n / 2), (g = -i / 2), (m = n), (f = i);
+                                    e.translate(i / 2, n / 2), e.rotate(Math.PI / 2), (c = l.top), (s = t.height - l.width - l.left), (h = l.height), (d = l.width), (u = -n / 2), (g = -i / 2), (m = n), (w = i);
                                     break;
                                 case r.Z.RIGHT_BOTTOM:
-                                    e.translate(i / 2, n / 2), e.rotate(Math.PI / 2), e.scale(-1, 1), (c = t.width - l.height - l.top), (s = t.height - l.width - l.left), (h = l.height), (d = l.width), (u = -n / 2), (g = -i / 2), (m = n), (f = i);
+                                    e.translate(i / 2, n / 2), e.rotate(Math.PI / 2), e.scale(-1, 1), (c = t.width - l.height - l.top), (s = t.height - l.width - l.left), (h = l.height), (d = l.width), (u = -n / 2), (g = -i / 2), (m = n), (w = i);
                                     break;
                                 case r.Z.RIGHT_TOP:
-                                    e.translate(i / 2, n / 2), e.rotate(-Math.PI / 2), (c = t.width - l.height - l.top), (s = l.left), (h = l.height), (d = l.width), (u = -n / 2), (g = -i / 2), (m = n), (f = i);
+                                    e.translate(i / 2, n / 2), e.rotate(-Math.PI / 2), (c = t.width - l.height - l.top), (s = l.left), (h = l.height), (d = l.width), (u = -n / 2), (g = -i / 2), (m = n), (w = i);
                             }
-                            e.drawImage(t, c, s, h, d, u, g, m, f), e.restore();
+                            e.drawImage(t, c, s, h, d, u, g, m, w), e.restore();
                         })(t.getContext("2d"), e, t.width, t.height, n, o),
                         t
                     ),
@@ -612,20 +625,20 @@
                 u = 0.85,
                 g = { GIF_IS_TOO_LARGE: 1, CANNOT_BE_PROCESSED: 2, FILE_IS_NOT_AN_IMAGE: 3 },
                 m = (e) => e.orientation !== n.Z.TOP_LEFT && e.orientation !== n.Z.UNKNOWN,
-                f = (e, t = h, i = d) => {
+                w = (e, t = h, i = d) => {
                     const { height: r, size: n, width: o } = e;
                     return o > i || r > i || n > t;
                 },
-                w = (e, t) => t || { top: 0, left: 0, width: e.width, height: e.height },
+                f = (e, t) => t || { top: 0, left: 0, width: e.width, height: e.height },
                 v = (e, t) => {
-                    const { height: i, left: r, top: n, width: o } = w(e, t);
+                    const { height: i, left: r, top: n, width: o } = f(e, t);
                     return !(0 === n && 0 === r && o === e.width && i === e.height);
                 };
             function p(e, t) {
                 const { maxFileSize: i = h, maxDimension: r = d, cropData: n, jpgPixelsPerByteForResize: o } = t || {},
                     a = "image/jpeg" === e.type,
                     l = (e.width * e.height) / e.size;
-                return m(e) || f(e, i, r) || v(e, n) || (a && !!o && l < o);
+                return m(e) || w(e, i, r) || v(e, n) || (a && !!o && l < o);
             }
             const Z = (e, t) => {
                     const { height: i, width: r } = e;
@@ -634,7 +647,7 @@
                 E = (e) => ("function" == typeof e.decode ? e.decode() : Promise.resolve());
             function y(e, t) {
                 const { maxFileSize: i = h, maxDimension: n = d, targetQuality: l = u, cropData: s } = t || {},
-                    m = w(e, s);
+                    m = f(e, s);
                 if (!p(e, t)) return Promise.resolve(e.fileHandle);
                 if (!(0, a.DS)(e)) {
                     const e = new o.Z("The provided file is not a valid image", g.FILE_IS_NOT_AN_IMAGE);
@@ -644,14 +657,14 @@
                     const e = new o.Z("Gifs cannot be processed.", g.GIF_IS_TOO_LARGE);
                     return Promise.reject(e);
                 }
-                const f = (e) => c(e, { maxFileSize: i, maxDimension: n, targetQuality: l });
+                const w = (e) => c(e, { maxFileSize: i, maxDimension: n, targetQuality: l });
                 return e
                     .withDimensionsAndOrientation()
                     .then(({ img: e, orientation: t }) => {
                         const i = ({ height: i, width: n }) => (0, r.$i)(e, n, i, t, m);
                         return E(e)
                             .then(() => ((e) => e(Z(m, n)))(i))
-                            .then(f);
+                            .then(w);
                     })
                     .catch(() => {
                         const e = new o.Z("Image cannot be processed", g.CANNOT_BE_PROCESSED);
@@ -838,4 +851,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28.b391e1aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-4514ff28.4372660a.js.map

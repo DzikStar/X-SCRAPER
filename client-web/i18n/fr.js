@@ -285,7 +285,7 @@
                 n("edf7f57e", "Obtenez la certification et profitez du boostage des réponses, des statistiques, d'une navigation sans publicités et de bien plus encore. Mettez votre profil à niveau."),
                 n("ba920d68", "Boostez votre influence grâce à la certification"),
                 n("ib79d0c2", "Profitez de fonctionnalités VIP : certifiez votre compte"),
-                n("bebc5f12", "Vous faites de la publicité sur X, mais n'avez pas de d'abonnement au service Organisations certifiées"),
+                n("c0d3bd82", "You’ve advertised on X, but don’t have a Verified Organizations subscription"),
                 n("d7836d1e", "Abonnez‑vous pour profiter de jusqu'à 12 000 USD de crédit publicitaire offert, de la certification avec une coche dorée, d'une assistance VIP et d'une suite d'outils pour développer votre activité."),
                 n("f528e369", function (e) {
                     return "Abonnez-vous à " + e.tier + " pour écrire vos propres articles";
@@ -1279,15 +1279,23 @@
                 n("b8f3500a", "Voir la discussion en mode Lecture"),
                 n("fc7db594", "Résumé du profil"),
                 n("c3f04d9c", "Réflexion"),
-                n("cbdddb0a", "Terminé"),
+                n("e98cc293", function (e) {
+                    return "Searching for " + e.query;
+                }),
                 n("b0d1e205", function (e) {
                     return 'Recherche de **"' + e.query + '"**';
+                }),
+                n("i2e0f4d7", function (e) {
+                    return "Browsing " + e.url + " for " + e.query;
                 }),
                 n("acb9b845", function (e) {
                     return "Navigation sur " + e.url + ' pour répondre à la requête **"' + e.query + '"**';
                 }),
                 n("ef261d8d", function (e) {
                     return "Recherche de posts de @" + e.username;
+                }),
+                n("f7d9cfb9", function (e) {
+                    return "Searching posts by @" + e.username + " for " + e.query;
                 }),
                 n("bec7eb11", function (e) {
                     return "Recherche de posts de @" + e.username + ' pour la requête **"' + e.query + '"**';
@@ -1714,7 +1722,7 @@
                 n("d78131b9", function (e) {
                     return "Ajouter @" + e.screenName + " à des Listes/le retirer de Listes";
                 }),
-                n("b3b642fc", "Why this post?"),
+                n("b3b642fc", "Pourquoi voyez-vous cette publication ?"),
                 n("fb4ee11c", "Pourquoi cette publicité ?"),
                 n("ad50e7d9", function (e) {
                     return "Voir les statistiques du " + e.entity;
@@ -1911,10 +1919,10 @@
                 n("hff1b97a", "Seules les personnes abonnées peuvent répondre."),
                 n("a330771e", "Copier le lien dans mon Presse‑papiers"),
                 n("b6510e68", "Copiez l'URL de votre Article pour pouvoir le partager."),
-                n("e4a6e006", "Une erreur est survenue. Veuillez réessayer."),
-                n("eff483e0", "Une fois que vous avez publié un Article, obtenez un lien pour le partager."),
-                n("ca15dd4e", "Brouillon");
-            n("bb40bf66", "Publiés"),
+                n("e4a6e006", "Une erreur est survenue. Veuillez réessayer.");
+            n("eff483e0", "Une fois que vous avez publié un Article, obtenez un lien pour le partager."),
+                n("ca15dd4e", "Brouillon"),
+                n("bb40bf66", "Publiés"),
                 n("h107935c", "Dernier enregistrement : à l'instant"),
                 n("a753a870", "Appliquer"),
                 n("afccc67e", "Copier le lien de l'Article"),
@@ -2963,10 +2971,10 @@
                 n("df1b7550", "Marketing"),
                 n("he258678", "X pour les professionnels"),
                 n("c6f58084", "Développeurs"),
-                n("d83f18d2", "Répertoire"),
-                n("hc5aa17c", "Télécharger l'application X"),
-                n("j0693948", "Télécharger l'application Grok");
-            n("af781666", "Quelles sont les opinions à ce sujet ?"),
+                n("d83f18d2", "Répertoire");
+            n("hc5aa17c", "Télécharger l'application X"),
+                n("j0693948", "Télécharger l'application Grok"),
+                n("af781666", "Quelles sont les opinions à ce sujet ?"),
                 n("ad35153e", "bêta"),
                 n("fbf83158", "Avertissement : échec du paiement"),
                 n("jadeb4da", "Veuillez rapidement mettre votre moyen de paiement à jour avant de perdre les avantages liés à votre abonnement."),
@@ -3879,10 +3887,10 @@
                 n("cededf2a", "Hôte"),
                 n("i2caef48", "Cohôtes"),
                 n("j245c654", "Intervenants"),
-                n("eda23a02", "Auditeurs"),
-                n("b90eb348", "Inviter à parler"),
-                n("d9a63e82", "Supprimer des intervenants");
-            n("bd917b26", "Inviter à coanimer"),
+                n("eda23a02", "Auditeurs");
+            n("b90eb348", "Inviter à parler"),
+                n("d9a63e82", "Supprimer des intervenants"),
+                n("bd917b26", "Inviter à coanimer"),
                 n("d7357e7e", "Supprimer des cohôtes"),
                 n("bf307fc0", "Bloquer et supprimer"),
                 n("ccf2f24e", "Signaler"),
@@ -4175,7 +4183,7 @@
                 n("ff9dc268", "Éditer le message"),
                 n("acb2baa0", "Créer des images"),
                 n("fe9ad897", function (e) {
-                    return "Edit Image" + e.ttc_grok_preset;
+                    return "Édition d'images" + e.ttc_grok_preset;
                 }),
                 n("h30fd372", "Essayer le mode Voix"),
                 n("e9fcdd0c", "Demandez à Grok de faire des recherches agressives sur le Web."),
@@ -4185,7 +4193,6 @@
                 n("b5df32b0", "Demander quelque chose à Grok"),
                 n("fb3b9776", "Le résultat de Grok a été personnalisé par cet utilisateur."),
                 n("ca93f2ee", "Ce message a été supprimé."),
-                n("b52484b6", "Recherche en cours…"),
                 n("b8c06820", "Copier le texte"),
                 n("ca0f5894", "Ne pas aimer"),
                 n("ja8d189e", "Réponse textuelle souhaitée"),
@@ -4277,6 +4284,7 @@
                 n("e2811afc", "Matchs"),
                 n("j081fa34", "Classements"),
                 n("i7c7f156", "Demain"),
+                n("cbdddb0a", "Terminé"),
                 n("b134ba52", "En cours"),
                 n("j1361724", "Mi‑temps"),
                 n("fa0f1262", "Arrêt"),
@@ -4303,29 +4311,35 @@
                 n("dc17968a", "Ven"),
                 n("j310a2d6", "Sam"),
                 n("eaf55eb4", "Montrer la réflexion"),
-                n("j1ab5f40", "Appuyez pour lire"),
+                n("b1ac6016", "DeepSearch effectuée"),
+                n("f766feca", "DeeperSearch effectuée"),
                 n("ee000b0d", function (e) {
                     return e.numSources + " sources";
                 }),
-                n("b1ac6016", "DeepSearch effectuée"),
-                n("f766feca", "DeeperSearch effectuée"),
+                n("bf780b13", function (e) {
+                    return e.minutes + " m " + e.seconds + " s";
+                }),
+                n("c2745fa4", "Abandon"),
                 n("e258000e", "Notification"),
                 n("d591a772", "Notification indisponible"),
                 n("bc49b728", "Vous recevrez une notification quand la réponse sera prête."),
                 n("d8aadeba", "Notification désactivée"),
                 n("db832e38", "Veuillez activer les notifications dans les paramètres du navigateur."),
                 n("a910cac6", "Une erreur s'est produite lors de l'activation des notifications."),
-                n("g4b3a3e6", "DeepSearch terminée"),
-                n("bf780b13", function (e) {
-                    return e.minutes + " m " + e.seconds + " s";
-                }),
-                n("c2745fa4", "Abandon"),
                 n("be30b6ee", "Connexion instable"),
+                n("b52484b6", "Recherche en cours…"),
                 n("a4d9dbfa", "Réflexions"),
+                n("ib1c5475", function (e) {
+                    return "Thought for " + e.minutes + "m " + e.seconds + "s";
+                }),
+                n("a15d62db", function (e) {
+                    return "Thought for " + e.seconds + "s";
+                }),
                 n("d7cb5408", "pages Web pertinentes"),
                 n("aa7c96bb", function (e) {
                     return "Voir " + e.numResults + " résultats de plus";
                 }),
+                n("j1ab5f40", "Appuyez pour lire"),
                 n("f5a2377e", "Réflexion en cours : "),
                 n("g3ce0132", "Réflexion d'une durée de"),
                 n("f8007364", "Développer pour voir les détails"),
@@ -4911,12 +4925,12 @@
                 n("if2909ba", "Temps de visionnage"),
                 n("i0e5bf4c", "Vos vidéos"),
                 n("ed99baea", "Accès anticipé à la version bêta"),
-                n("gf898b70", "Recherche avancée"),
-                n("d2a43a7a", 'contient à la fois "ia" et "startup"'),
+                n("gf898b70", "Recherche avancée");
+            n("d2a43a7a", 'contient à la fois "ia" et "startup"'),
                 n("a8584698", "startup ia"),
                 n("jb6f9292", 'contient exactement le groupe de mots "startup ia"'),
-                n("j8ee77c4", '"startup ia"');
-            n("d0480758", 'contient "ia" ou "startup" (ou les deux)'),
+                n("j8ee77c4", '"startup ia"'),
+                n("d0480758", 'contient "ia" ou "startup" (ou les deux)'),
                 n("f0048fa2", "ia OR startup"),
                 n("da0df186", 'contient "ia", mais pas "startup"'),
                 n("f2f463ea", "ia -startup"),
@@ -5877,12 +5891,12 @@
                 n("cbae35fa", "Signaler la diffusion"),
                 n("fd12ab58", "Posts de la collection"),
                 n("a226497c", "Créer une Communauté"),
-                n("d7346632", "Vous n'avez encore rejoint aucune Communauté"),
-                n("b732a4cc", "Quand vous le ferez, vous verrez ses posts ici."),
+                n("d7346632", "Vous n'avez encore rejoint aucune Communauté");
+            n("b732a4cc", "Quand vous le ferez, vous verrez ses posts ici."),
                 n("hff48914", "Aucun post n'a pu être trouvé pour le moment."),
                 n("hb52cc4a", "Veuillez réessayer plus tard."),
-                n("e50e1bb0", "Bienvenue dans les Communautés");
-            n("i6829daa", "Les Communautés sont des groupes de discussion faisant l'objet d'une modération, au sein desquels les utilisateurs de X peuvent interagir et partager des informations."),
+                n("e50e1bb0", "Bienvenue dans les Communautés"),
+                n("i6829daa", "Les Communautés sont des groupes de discussion faisant l'objet d'une modération, au sein desquels les utilisateurs de X peuvent interagir et partager des informations."),
                 n("fc5c6914", "Rencontrez d'autres personnes qui partagent vos centres d'intérêt"),
                 n("aa1a9820", "Rejoignez des Communautés pour entrer en lien avec des personnes qui partagent vos centres d'intérêt."),
                 n("edef4c82", "Postez directement à l'attention d'une Communauté"),
@@ -6875,12 +6889,12 @@
                 n("ee54c3de", "Enregistrez des vidéos directement sur votre appareil."),
                 n("ae03594c", "Léger boostage des réponses"),
                 n("e6bb08c0", "Augmentez la visibilité de vos réponses."),
-                n("bf2a6acc", "Boostage des réponses important"),
-                n("c2059276", "Boostez vos réponses."),
+                n("bf2a6acc", "Boostage des réponses important");
+            n("c2059276", "Boostez vos réponses."),
                 n("b023ec20", "Boostage maximum des réponses"),
                 n("g337328e", "Bénéficiez de la meilleure visibilité possible pour vos réponses."),
-                n("fa006202", "Lecture des vidéos en arrière‑plan");
-            n("jf389778", "Regardez des vidéos tout en naviguant ou en utilisant d'autres applications."),
+                n("fa006202", "Lecture des vidéos en arrière‑plan"),
+                n("jf389778", "Regardez des vidéos tout en naviguant ou en utilisant d'autres applications."),
                 n("f2977d80", "Dossiers de signets"),
                 n("j1d3d910", "Organisez vos posts enregistrés pour pouvoir y accéder facilement."),
                 n("f0f48668", "Assistance premium"),
@@ -7851,11 +7865,7 @@
                 n("c674f5b4", "Configurez le paiement des factures"),
                 n("i8237e66", "Passez de paiements par carte à une facturation via virements bancaires."),
                 n("hebd348a", "Configurez la manière dont des publicités sont utilisées pour promouvoir des offres d'emploi depuis le portail Recrutement."),
-                n("ib5e6f90", "Promotion d'offres d'emploi"),
-                n("id720215", "Recrutement"),
-                n("dd59f146", "Compte d'annonceur permettant la promotion d'offres d'emploi"),
-                n("e7e36818", "Les comptes d'annonceur peuvent promouvoir des offres d'emploi quand leur configuration est complète, source de financement comprise."),
-                n("c28566e0", "Compte d'annonceur");
+                n("ib5e6f90", "Promotion d'offres d'emploi");
             function a(e, t) {
                 for (var s = 0; s < t.length; s++) {
                     var n = t[s];
@@ -7894,7 +7904,11 @@
                     i(e, t)
                 );
             }
-            n("c80160d3", "Publicité"),
+            n("id720215", "Recrutement"),
+                n("dd59f146", "Compte d'annonceur permettant la promotion d'offres d'emploi"),
+                n("e7e36818", "Les comptes d'annonceur peuvent promouvoir des offres d'emploi quand leur configuration est complète, source de financement comprise."),
+                n("c28566e0", "Compte d'annonceur"),
+                n("c80160d3", "Publicité"),
                 n("ff0edac0", "Vous voulez annuler votre abonnement ?"),
                 n("h2ac0348", "Non, j'ai changé d'avis"),
                 n("dbf9667e", "Je suis sûr"),
@@ -8756,12 +8770,10 @@
                 n("gdd173da", "Réponse de Grok en mode Fun"),
                 n("dfd6eeac", "Réponse de Grok"),
                 n("deceb214", "Image de Grok"),
-                n("j05496ce", "DeepSearch par Grok"),
                 n("befddd48", "Afficher"),
                 n("hf3f8e3a", "Voir plus"),
                 n("h504ea5e", "Créer ma version avec Grok"),
                 n("eb722de2", "Demander à Grok"),
-                n("ib5110be", "Essayez le mode DeepSearch de Grok."),
                 n("bb5c5864", "Citation"),
                 n("a8b58cf4", "Afficher cette discussion"),
                 n("i5f742fe", "Afficher cette question"),
@@ -8911,14 +8923,14 @@
                 }),
                 n("c889af33", function (e) {
                     return e.count + " " + r(e.count, "a", "ont") + " rejoint";
-                }),
-                n("d6f2056f", function (e) {
-                    return e.count + " " + r(e.count, "a", "ont") + " écouté";
-                }),
-                n("jbc5f47a", "Ancrage des Spaces");
-            n("gfe2830f", function (e) {
-                return e.count + " autre" + r(e.count, " personne", "s personnes");
+                });
+            n("d6f2056f", function (e) {
+                return e.count + " " + r(e.count, "a", "ont") + " écouté";
             }),
+                n("jbc5f47a", "Ancrage des Spaces"),
+                n("gfe2830f", function (e) {
+                    return e.count + " autre" + r(e.count, " personne", "s personnes");
+                }),
                 n("dbeae6cf", function (e) {
                     return e.count + " autre" + r(e.count, " auditeur", "s auditeurs");
                 }),
@@ -13197,4 +13209,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.e9e551ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.21c758da.js.map

@@ -566,7 +566,7 @@
         },
         738310: (e, n, a) => {
             "use strict";
-            a.d(n, { Z: () => w });
+            a.d(n, { Z: () => I });
             var t,
                 l,
                 r,
@@ -589,8 +589,7 @@
                 _,
                 K,
                 S,
-                L,
-                I = {
+                L = {
                     fragment: {
                         argumentDefinitions: (t = [{ defaultValue: null, kind: "LocalArgument", name: "cursor" }]),
                         kind: "Fragment",
@@ -633,7 +632,49 @@
                                                             (s = { alias: null, args: null, kind: "ScalarField", name: "image_url", storageKey: null }),
                                                             (o = { alias: null, args: null, kind: "ScalarField", name: "original_share_id", storageKey: null }),
                                                             { alias: null, args: null, concreteType: "TweetResults", kind: "LinkedField", name: "original_post_id_results", plural: !1, selections: [(u = { alias: null, args: null, kind: "ScalarField", name: "rest_id", storageKey: null }), { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "LegacyTweet", kind: "LinkedField", name: "legacy", plural: !1, selections: [(c = { alias: null, args: null, kind: "ScalarField", name: "full_text", storageKey: null }), { kind: "RequiredField", field: (d = { alias: null, args: null, kind: "ScalarField", name: "favorited", storageKey: null }), action: "THROW" }], storageKey: null }], type: "Tweet", abstractKey: null }], storageKey: null }], storageKey: null },
-                                                            { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_id_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [(m = { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }), (g = { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null }), { kind: "RequiredField", field: (p = { alias: null, args: null, kind: "ScalarField", name: "following", storageKey: null }), action: "THROW" }, (y = { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null }), { kind: "RequiredField", field: (f = { alias: null, args: null, kind: "ScalarField", name: "followers_count", storageKey: null }), action: "THROW" }, (k = { alias: null, args: null, kind: "ScalarField", name: "default_profile_image", storageKey: null }), { kind: "RequiredField", field: (b = { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null }), action: "THROW" }, { kind: "RequiredField", field: (h = { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }), action: "THROW" }, (v = { alias: null, args: null, kind: "ScalarField", name: "verified_type", storageKey: null })], storageKey: null }], type: "User", abstractKey: null }], storageKey: null }], storageKey: null },
+                                                            {
+                                                                alias: null,
+                                                                args: null,
+                                                                concreteType: "UserResults",
+                                                                kind: "LinkedField",
+                                                                name: "user_id_results",
+                                                                plural: !1,
+                                                                selections: [
+                                                                    {
+                                                                        alias: null,
+                                                                        args: null,
+                                                                        concreteType: null,
+                                                                        kind: "LinkedField",
+                                                                        name: "result",
+                                                                        plural: !1,
+                                                                        selections: [
+                                                                            {
+                                                                                kind: "InlineFragment",
+                                                                                selections: [
+                                                                                    { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [(m = { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }), (g = { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null }), { kind: "RequiredField", field: (p = { alias: null, args: null, kind: "ScalarField", name: "following", storageKey: null }), action: "THROW" }, (y = { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null }), { kind: "RequiredField", field: (f = { alias: null, args: null, kind: "ScalarField", name: "followers_count", storageKey: null }), action: "THROW" }, (k = { alias: null, args: null, kind: "ScalarField", name: "default_profile_image", storageKey: null }), { kind: "RequiredField", field: (b = { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null }), action: "THROW" }], storageKey: null },
+                                                                                    (h = {
+                                                                                        alias: null,
+                                                                                        args: null,
+                                                                                        concreteType: "UserVerification",
+                                                                                        kind: "LinkedField",
+                                                                                        name: "verification",
+                                                                                        plural: !1,
+                                                                                        selections: [
+                                                                                            { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null },
+                                                                                            { alias: null, args: null, kind: "ScalarField", name: "verified_type", storageKey: null },
+                                                                                        ],
+                                                                                        storageKey: null,
+                                                                                    }),
+                                                                                ],
+                                                                                type: "User",
+                                                                                abstractKey: null,
+                                                                            },
+                                                                        ],
+                                                                        storageKey: null,
+                                                                    },
+                                                                ],
+                                                                storageKey: null,
+                                                            },
                                                         ],
                                                         type: "GrokFeedImageItem",
                                                         abstractKey: null,
@@ -641,12 +682,12 @@
                                                 ],
                                                 storageKey: null,
                                             },
-                                            (F = { alias: null, args: null, concreteType: "GrokFeedItemPrompt", kind: "LinkedField", name: "prompt", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "prompt", storageKey: null }], storageKey: null }),
-                                            (_ = { alias: null, args: null, concreteType: "GrokFeedItemStats", kind: "LinkedField", name: "stats", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "likes", storageKey: null }], storageKey: null }),
+                                            (v = { alias: null, args: null, concreteType: "GrokFeedItemPrompt", kind: "LinkedField", name: "prompt", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "prompt", storageKey: null }], storageKey: null }),
+                                            (F = { alias: null, args: null, concreteType: "GrokFeedItemStats", kind: "LinkedField", name: "stats", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "likes", storageKey: null }], storageKey: null }),
                                         ],
                                         storageKey: null,
                                     },
-                                    (K = { alias: null, args: null, kind: "ScalarField", name: "next_cursor", storageKey: null }),
+                                    (_ = { alias: null, args: null, kind: "ScalarField", name: "next_cursor", storageKey: null }),
                                 ],
                                 storageKey: null,
                             },
@@ -655,11 +696,11 @@
                         abstractKey: null,
                     },
                     kind: "Request",
-                    operation: { argumentDefinitions: t, kind: "Operation", name: "grokTokFeedQuery", selections: [{ alias: null, args: l, concreteType: "GrokFeed", kind: "LinkedField", name: "grok_feed", plural: !1, selections: [{ alias: null, args: null, concreteType: "GrokFeedItemWithPrompt", kind: "LinkedField", name: "items", plural: !0, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "item", plural: !1, selections: [r, { kind: "InlineFragment", selections: [i, s, o, { alias: null, args: null, concreteType: "TweetResults", kind: "LinkedField", name: "original_post_id_results", plural: !1, selections: [u, { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [r, { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "LegacyTweet", kind: "LinkedField", name: "legacy", plural: !1, selections: [c, d], storageKey: null }, (S = { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" }), (L = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null })], type: "Tweet", abstractKey: null }], storageKey: null }, L], storageKey: null }, { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_id_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [r, { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [m, g, p, y, f, k, b, h, v], storageKey: null }, S, L], type: "User", abstractKey: null }], storageKey: null }, L], storageKey: null }], type: "GrokFeedImageItem", abstractKey: null }], storageKey: null }, F, _], storageKey: null }, K], storageKey: null }] },
-                    params: { id: "Xm45rqEIHhgc6J7MnTMDbw", metadata: {}, name: "grokTokFeedQuery", operationKind: "query", text: null },
+                    operation: { argumentDefinitions: t, kind: "Operation", name: "grokTokFeedQuery", selections: [{ alias: null, args: l, concreteType: "GrokFeed", kind: "LinkedField", name: "grok_feed", plural: !1, selections: [{ alias: null, args: null, concreteType: "GrokFeedItemWithPrompt", kind: "LinkedField", name: "items", plural: !0, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "item", plural: !1, selections: [r, { kind: "InlineFragment", selections: [i, s, o, { alias: null, args: null, concreteType: "TweetResults", kind: "LinkedField", name: "original_post_id_results", plural: !1, selections: [u, { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [r, { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "LegacyTweet", kind: "LinkedField", name: "legacy", plural: !1, selections: [c, d], storageKey: null }, (K = { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" }), (S = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null })], type: "Tweet", abstractKey: null }], storageKey: null }, S], storageKey: null }, { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_id_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [r, { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [m, g, p, y, f, k, b], storageKey: null }, K, h, S], type: "User", abstractKey: null }], storageKey: null }, S], storageKey: null }], type: "GrokFeedImageItem", abstractKey: null }], storageKey: null }, v, F], storageKey: null }, _], storageKey: null }] },
+                    params: { id: "ruqAbqHcJ34n0zvmOZrlfg", metadata: {}, name: "grokTokFeedQuery", operationKind: "query", text: null },
                 };
-            I.hash = "6b41eecc7b2d1f2219b6774cdc4f80ba";
-            const w = I;
+            L.hash = "e262d04cf923d1f1b3c0116472b35915";
+            const I = L;
         },
         927974: (e, n, a) => {
             "use strict";
@@ -1313,4 +1354,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-e96e9bea.6397247a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-e96e9bea.93cbae2a.js.map

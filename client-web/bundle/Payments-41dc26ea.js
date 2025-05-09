@@ -471,7 +471,7 @@
                         ee = (0, C.Z)({ senderId: G?.rest_id }),
                         te = (0, S.p6)(F),
                         ne = (0, A.JU)(),
-                        ae = $ && R !== O,
+                        ae = $ && "0" !== $ && R !== O,
                         re = N === m.x.Interest,
                         le = re && X === u.x.Deposit,
                         ie = re && X === u.x.Transfer,
@@ -519,8 +519,8 @@
                                     a.createElement(r.Z, { style: [A.YP.gap, A.YP.marginTop] }, R ? a.createElement(E.Z, { amount: R, currency: z, hasCompleted: Ze, type: he.amountType }) : null, se ? (he.description ? a.createElement(k.Z, { color: "gray700", note: he.description }) : null) : a.createElement(o.ZP, { color: "gray700" }, ae ? "Total" : D)),
                                     a.createElement(c.Z, { spacing: "space12" }),
                                     a.createElement(r.Z, { style: A.ZP.rowSpaceBetween }, a.createElement(Z.Z, { description: he.status, title: "Status" }), te ? a.createElement(a.Fragment, null, a.createElement(s.default, { style: A.YP.arrow }), a.createElement(Z.Z, { description: te, title: "Funds available on" })) : null),
-                                    ae && $ && a.createElement(Z.Z, { description: a.createElement(E.Z, { amount: $, currency: z, size: "body", weight: "normal" }), title: "Fee" }),
-                                    ae && O && a.createElement(Z.Z, { description: a.createElement(E.Z, { amount: O, currency: z, size: "body", weight: "normal" }), title: D }),
+                                    ae && $ && "0" !== $ && a.createElement(Z.Z, { description: a.createElement(E.Z, { amount: $, currency: z, size: "body", weight: "normal" }), title: "Fee" }),
+                                    ae && O && "0" !== O && a.createElement(Z.Z, { description: a.createElement(E.Z, { amount: O, currency: z, size: "body", weight: "normal" }), title: D }),
                                     be && a.createElement(Z.Z, { description: a.createElement(P.Z, { account: be, testId: "source" }), title: "Source" }),
                                     _e && a.createElement(Z.Z, { description: a.createElement(P.Z, { account: _e, testId: "destination" }), title: "Destination" }),
                                     ue ? a.createElement(Z.Z, { description: a.createElement(o.ZP, { color: "text", link: ue }, J), title: "Original transaction" }) : null,
@@ -575,4 +575,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-41dc26ea.89a369ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-41dc26ea.81c9fdda.js.map

@@ -68,14 +68,25 @@
                                                         plural: !1,
                                                         selections: [
                                                             { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null },
-                                                            { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null },
-                                                            { alias: null, args: null, kind: "ScalarField", name: "verified_type", storageKey: null },
                                                             { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
                                                             { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
                                                         ],
                                                         storageKey: null,
                                                     },
                                                     { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" },
+                                                    {
+                                                        alias: null,
+                                                        args: null,
+                                                        concreteType: "UserVerification",
+                                                        kind: "LinkedField",
+                                                        name: "verification",
+                                                        plural: !1,
+                                                        selections: [
+                                                            { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null },
+                                                            { alias: null, args: null, kind: "ScalarField", name: "verified_type", storageKey: null },
+                                                        ],
+                                                        storageKey: null,
+                                                    },
                                                     {
                                                         alias: "affiliates_highlighted_label",
                                                         args: null,
@@ -117,7 +128,7 @@
                             },
                         ],
                     },
-                    params: { id: "hu1pHaOxY_02h4QKZ01xWQ", metadata: {}, name: "RelayUserNameQuery", operationKind: "query", text: null },
+                    params: { id: "VJgXk4wLC3zovEof51tFcA", metadata: {}, name: "RelayUserNameQuery", operationKind: "query", text: null },
                 };
             i.hash = "a80538e0fb22a0432d8e5d59383cd848";
             const o = i;
@@ -325,7 +336,7 @@
             };
         },
         965728: (e, l, n) => {
-            n.d(l, { C_: () => k, I5: () => f, K2: () => y, L$: () => u, Rb: () => p, nk: () => g, sI: () => _, xr: () => h });
+            n.d(l, { C_: () => k, I5: () => f, K2: () => p, L$: () => u, Rb: () => y, nk: () => g, sI: () => _, xr: () => h });
             var a = n(202784),
                 t = n(483677),
                 r = n(782578),
@@ -349,11 +360,11 @@
                         g = !o && t <= u ? c(n, u) : n;
                     return r.Z.getContainDimensions({ width: m, height: g }, i);
                 },
-                p = (e) => {
+                y = (e) => {
                     const l = e && e.ext_media_color && e.ext_media_color.palette;
                     return u(l);
                 },
-                y = (e) => {
+                p = (e) => {
                     const l = e && e.profile_image_extensions_media_color && e.profile_image_extensions_media_color.palette;
                     return u(l);
                 },
@@ -478,4 +489,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Conferences-6107ac1a.91e0e09a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Conferences-6107ac1a.27ea96ca.js.map

@@ -182,9 +182,22 @@
                                                         kind: "InlineFragment",
                                                         selections: [
                                                             { alias: "id_str", args: null, kind: "ScalarField", name: "rest_id", storageKey: null },
-                                                            { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [(u = { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null }), (d = { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null }), { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "id_str", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "verified_type", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null }], storageKey: null },
+                                                            { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [(u = { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null }), (d = { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null }), { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "id_str", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null }], storageKey: null },
                                                             { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" },
                                                             { alias: null, args: null, kind: "ScalarField", name: "is_blue_verified", storageKey: null },
+                                                            {
+                                                                alias: null,
+                                                                args: null,
+                                                                concreteType: "UserVerification",
+                                                                kind: "LinkedField",
+                                                                name: "verification",
+                                                                plural: !1,
+                                                                selections: [
+                                                                    { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null },
+                                                                    { alias: null, args: null, kind: "ScalarField", name: "verified_type", storageKey: null },
+                                                                ],
+                                                                storageKey: null,
+                                                            },
                                                             {
                                                                 alias: null,
                                                                 args: null,
@@ -275,7 +288,7 @@
                             },
                         ],
                     },
-                    params: { id: "NV_VnbCGt0UB-_GkUoOtdQ", metadata: { features: ["responsive_web_graphql_timeline_navigation_enabled"] }, name: "controlsCommunityMemberRemoveRevertMutation", operationKind: "mutation", text: null },
+                    params: { id: "jDt8kJlIatEbkNBB1h_pYw", metadata: { features: ["responsive_web_graphql_timeline_navigation_enabled"] }, name: "controlsCommunityMemberRemoveRevertMutation", operationKind: "mutation", text: null },
                 };
             c.hash = "65bbdcf3a983ac1366992f595926a67c";
             const g = c;
@@ -354,9 +367,22 @@
                                                         kind: "InlineFragment",
                                                         selections: [
                                                             { alias: "id_str", args: null, kind: "ScalarField", name: "rest_id", storageKey: null },
-                                                            { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [(u = { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null }), (d = { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null }), { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "id_str", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "verified_type", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null }], storageKey: null },
+                                                            { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [(u = { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null }), (d = { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null }), { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "id_str", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null }], storageKey: null },
                                                             { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" },
                                                             { alias: null, args: null, kind: "ScalarField", name: "is_blue_verified", storageKey: null },
+                                                            {
+                                                                alias: null,
+                                                                args: null,
+                                                                concreteType: "UserVerification",
+                                                                kind: "LinkedField",
+                                                                name: "verification",
+                                                                plural: !1,
+                                                                selections: [
+                                                                    { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null },
+                                                                    { alias: null, args: null, kind: "ScalarField", name: "verified_type", storageKey: null },
+                                                                ],
+                                                                storageKey: null,
+                                                            },
                                                             {
                                                                 alias: null,
                                                                 args: null,
@@ -447,7 +473,7 @@
                             },
                         ],
                     },
-                    params: { id: "rRM0lcgYuCNdKGsNGEzyCg", metadata: { features: ["responsive_web_graphql_timeline_navigation_enabled"] }, name: "controlsCommunityReapproveJoinRequestMutation", operationKind: "mutation", text: null },
+                    params: { id: "fxYyifv7ZoTcT_fgyvdI0Q", metadata: { features: ["responsive_web_graphql_timeline_navigation_enabled"] }, name: "controlsCommunityReapproveJoinRequestMutation", operationKind: "mutation", text: null },
                 };
             c.hash = "9aee34678f06d2c361a4172b2c2434d7";
             const g = c;
@@ -641,7 +667,7 @@
                                                             { alias: "mode", args: null, kind: "ScalarField", name: "accessibility", storageKey: null },
                                                             { alias: null, args: null, kind: "ScalarField", name: "member_count", storageKey: null },
                                                             { alias: null, args: null, kind: "ScalarField", name: "members_context", storageKey: null },
-                                                            { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "owner_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [s, { kind: "InlineFragment", selections: [{ alias: "author", args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "id_str", storageKey: null }, t, { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }], storageKey: null }, { alias: "author", args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" }, (u = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null })], type: "User", abstractKey: null }], storageKey: null }, u], storageKey: null },
+                                                            { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "owner_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [s, { kind: "InlineFragment", selections: [{ alias: "author", args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "id_str", storageKey: null }, t, { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }], storageKey: null }, { alias: "author", args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" }, { alias: null, args: null, concreteType: "UserVerification", kind: "LinkedField", name: "verification", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }], storageKey: null }, (u = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null })], type: "User", abstractKey: null }], storageKey: null }, u], storageKey: null },
                                                             {
                                                                 alias: null,
                                                                 args: null,
@@ -730,7 +756,7 @@
                             },
                         ],
                     },
-                    params: { id: "XQu8kFnWXgamYTQoxvKnUQ", metadata: {}, name: "lists_CommunityListQuery", operationKind: "query", text: null },
+                    params: { id: "2P6OnlBNwbJ84YSB-ivH8g", metadata: {}, name: "lists_CommunityListQuery", operationKind: "query", text: null },
                 };
             o.hash = "3aaa7bf9469646a533bc3212f273b8d2";
             const m = o;
@@ -801,7 +827,7 @@
                                             { alias: "mode", args: null, kind: "ScalarField", name: "accessibility", storageKey: null },
                                             { alias: null, args: null, kind: "ScalarField", name: "member_count", storageKey: null },
                                             { alias: null, args: null, kind: "ScalarField", name: "members_context", storageKey: null },
-                                            { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "owner_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [(t = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }), { kind: "InlineFragment", selections: [{ alias: "author", args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "id_str", storageKey: null }, r, { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }], storageKey: null }, { alias: "author", args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" }, (u = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null })], type: "User", abstractKey: null }], storageKey: null }, u], storageKey: null },
+                                            { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "owner_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [(t = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }), { kind: "InlineFragment", selections: [{ alias: "author", args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "id_str", storageKey: null }, r, { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }], storageKey: null }, { alias: "author", args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" }, { alias: null, args: null, concreteType: "UserVerification", kind: "LinkedField", name: "verification", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }], storageKey: null }, (u = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null })], type: "User", abstractKey: null }], storageKey: null }, u], storageKey: null },
                                             {
                                                 alias: null,
                                                 args: null,
@@ -882,7 +908,7 @@
                             },
                         ],
                     },
-                    params: { id: "CCFKfJGspJjO0-C_Xd_nyA", metadata: {}, name: "lists_DeleteCommunityListMutation", operationKind: "mutation", text: null },
+                    params: { id: "c-Y-xhwnngIq6QCBiDW3rQ", metadata: {}, name: "lists_DeleteCommunityListMutation", operationKind: "mutation", text: null },
                 };
             o.hash = "aa4f953d4c24c1a0b17ba1130553fba6";
             const m = o;
@@ -957,7 +983,7 @@
                                             { alias: "mode", args: null, kind: "ScalarField", name: "accessibility", storageKey: null },
                                             { alias: null, args: null, kind: "ScalarField", name: "member_count", storageKey: null },
                                             { alias: null, args: null, kind: "ScalarField", name: "members_context", storageKey: null },
-                                            { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "owner_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [(t = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }), { kind: "InlineFragment", selections: [{ alias: "author", args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "id_str", storageKey: null }, r, { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }], storageKey: null }, { alias: "author", args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" }, (u = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null })], type: "User", abstractKey: null }], storageKey: null }, u], storageKey: null },
+                                            { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "owner_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [(t = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }), { kind: "InlineFragment", selections: [{ alias: "author", args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "id_str", storageKey: null }, r, { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }], storageKey: null }, { alias: "author", args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" }, { alias: null, args: null, concreteType: "UserVerification", kind: "LinkedField", name: "verification", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }], storageKey: null }, (u = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null })], type: "User", abstractKey: null }], storageKey: null }, u], storageKey: null },
                                             {
                                                 alias: null,
                                                 args: null,
@@ -1038,7 +1064,7 @@
                             },
                         ],
                     },
-                    params: { id: "NHCB6Qdrnz5Z6xSuMnJgQA", metadata: {}, name: "lists_PutCommunityListMutation", operationKind: "mutation", text: null },
+                    params: { id: "K9nfMeb4CBEQmMtLvnTCKA", metadata: {}, name: "lists_PutCommunityListMutation", operationKind: "mutation", text: null },
                 };
             o.hash = "a30b272bc634633feefa5a0b473ea05c";
             const m = o;
@@ -1121,7 +1147,7 @@
                                                             { alias: "mode", args: null, kind: "ScalarField", name: "accessibility", storageKey: null },
                                                             { alias: null, args: null, kind: "ScalarField", name: "member_count", storageKey: null },
                                                             { alias: null, args: null, kind: "ScalarField", name: "members_context", storageKey: null },
-                                                            { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "owner_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [s, { kind: "InlineFragment", selections: [{ alias: "author", args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "id_str", storageKey: null }, t, { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }], storageKey: null }, { alias: "author", args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" }, (u = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null })], type: "User", abstractKey: null }], storageKey: null }, u], storageKey: null },
+                                                            { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "owner_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [s, { kind: "InlineFragment", selections: [{ alias: "author", args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "id_str", storageKey: null }, t, { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }], storageKey: null }, { alias: "author", args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" }, { alias: null, args: null, concreteType: "UserVerification", kind: "LinkedField", name: "verification", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }], storageKey: null }, (u = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null })], type: "User", abstractKey: null }], storageKey: null }, u], storageKey: null },
                                                             {
                                                                 alias: null,
                                                                 args: null,
@@ -1210,11 +1236,11 @@
                             },
                         ],
                     },
-                    params: { id: "Y1sylSofBYuqWr-pPpBGyw", metadata: {}, name: "lists_UsersListsQuery", operationKind: "query", text: null },
+                    params: { id: "2BktKwXN8L4JlwNqPwQqKQ", metadata: {}, name: "lists_UsersListsQuery", operationKind: "query", text: null },
                 };
             o.hash = "bd065b4370d2f8bd887ab65566fe6066";
             const m = o;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Communities-8825d936.ea457aba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Communities-8825d936.51ac4f3a.js.map

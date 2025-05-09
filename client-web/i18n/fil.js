@@ -281,7 +281,7 @@
                 i("edf7f57e", "Maging verified para sa mga naka-boost na reply, analytics, pagba-browse na walang ads, at marami pang iba. I-upgrade ang profile mo ngayon."),
                 i("ba920d68", "I-boost ang influence mo gamit ang verification"),
                 i("ib79d0c2", "I-unlock ang mga feature ng VIP: i-verify ang account mo"),
-                i("bebc5f12", "Nag-a-advertise ka sa X, pero wala kang subscription sa Mga Beripikadong Organisasyon."),
+                i("c0d3bd82", "You’ve advertised on X, but don’t have a Verified Organizations subscription"),
                 i("d7836d1e", "Mag-subscribe para makakuha ng hanggang $12,000 na libreng ad credit, gold verification, VIP support, at isang suite ng mga tool para sa pagpapalago."),
                 i("f528e369", function (a) {
                     return "Mag-subscribe sa " + a.tier + " para sumulat ng sarili mong Mga Article";
@@ -1275,15 +1275,23 @@
                 i("b8f3500a", "Basahin ang thread sa Reader"),
                 i("fc7db594", "Buod ng Profile"),
                 i("c3f04d9c", "Nag-iisip"),
-                i("cbdddb0a", "Nakumpleto"),
+                i("e98cc293", function (a) {
+                    return "Searching for " + a.query;
+                }),
                 i("b0d1e205", function (a) {
                     return 'Naghahanap para sa **"' + a.query + '"**';
+                }),
+                i("i2e0f4d7", function (a) {
+                    return "Browsing " + a.url + " for " + a.query;
                 }),
                 i("acb9b845", function (a) {
                     return "Nagba-browse sa " + a.url + ' para sa **"' + a.query + '"**';
                 }),
                 i("ef261d8d", function (a) {
                     return "Naghahanap ng mga post ni @" + a.username;
+                }),
+                i("f7d9cfb9", function (a) {
+                    return "Searching posts by @" + a.username + " for " + a.query;
                 }),
                 i("bec7eb11", function (a) {
                     return "Naghahanap ng mga post ni @" + a.username + ' para sa **"' + a.query + '"**';
@@ -1907,10 +1915,10 @@
                 i("hff1b97a", "Mga Subscriber lang ang puwedeng mag-reply."),
                 i("a330771e", "Kopyahin ang link sa clipboard mo"),
                 i("b6510e68", "Kopyahin ang URL ng Article mo para maibahagi mo ito."),
-                i("e4a6e006", "Nagkaroon ng problema. Pakisubukang muli."),
-                i("eff483e0", "Pagkatapos mong mag-publish, kunin ang link para ibahagi ang Article."),
-                i("ca15dd4e", "Draft");
-            i("bb40bf66", "Na-publish"),
+                i("e4a6e006", "Nagkaroon ng problema. Pakisubukang muli.");
+            i("eff483e0", "Pagkatapos mong mag-publish, kunin ang link para ibahagi ang Article."),
+                i("ca15dd4e", "Draft"),
+                i("bb40bf66", "Na-publish"),
                 i("h107935c", "Huling na-save ngayon lang"),
                 i("a753a870", "I-apply"),
                 i("afccc67e", "Kopyahin ang link sa Article"),
@@ -2959,10 +2967,10 @@
                 i("df1b7550", "Marketing"),
                 i("he258678", "X para sa Negosyo"),
                 i("c6f58084", "Mga developer"),
-                i("d83f18d2", "Direktoryo"),
-                i("hc5aa17c", "Kunin ang X app"),
-                i("j0693948", "Kunin ang Grok app");
-            i("af781666", "Ano ang palagay ng mga tao?"),
+                i("d83f18d2", "Direktoryo");
+            i("hc5aa17c", "Kunin ang X app"),
+                i("j0693948", "Kunin ang Grok app"),
+                i("af781666", "Ano ang palagay ng mga tao?"),
                 i("ad35153e", "beta"),
                 i("fbf83158", "Babala: Hindi naproseso ang pagbabayad"),
                 i("jadeb4da", "Paki-update agad ang paraan mo ng pagbabayad bago mawala ang mga benepisyo mo sa subscription."),
@@ -3875,10 +3883,10 @@
                 i("cededf2a", "Host"),
                 i("i2caef48", "Mga Co-host"),
                 i("j245c654", "Mga Tagapagsalita"),
-                i("eda23a02", "Mga Tagapakinig"),
-                i("b90eb348", "Imbitahang Magsalita"),
-                i("d9a63e82", "Alisin sa Mga Tagapagsalita");
-            i("bd917b26", "Imbitahang maging Co-host"),
+                i("eda23a02", "Mga Tagapakinig");
+            i("b90eb348", "Imbitahang Magsalita"),
+                i("d9a63e82", "Alisin sa Mga Tagapagsalita"),
+                i("bd917b26", "Imbitahang maging Co-host"),
                 i("d7357e7e", "Alisin sa mga Co-host"),
                 i("bf307fc0", "I-block at Alisin"),
                 i("ccf2f24e", "Ulat"),
@@ -4171,7 +4179,7 @@
                 i("ff9dc268", "I-edit ang prompt"),
                 i("acb2baa0", "Gumawa ng mga Larawan"),
                 i("fe9ad897", function (a) {
-                    return "Edit Image" + a.ttc_grok_preset;
+                    return "I-edit ang Larawan" + a.ttc_grok_preset;
                 }),
                 i("h30fd372", "Subukan ang Voice Mode"),
                 i("e9fcdd0c", "Hilingin sa Grok na agresibong maghanap sa web"),
@@ -4181,7 +4189,6 @@
                 i("b5df32b0", "Alamin ang isang bagay gamit ang Grok"),
                 i("fb3b9776", "Na-customize ng user na ito ang output ng Grok."),
                 i("ca93f2ee", "Na-delete na ang message na ito."),
-                i("b52484b6", "Naghahanap..."),
                 i("b8c06820", "Kopyahin ang text"),
                 i("ca0f5894", "I-dislike"),
                 i("ja8d189e", "Gusto ng text na sagot"),
@@ -4273,6 +4280,7 @@
                 i("e2811afc", "Mga Laro"),
                 i("j081fa34", "Mga Standing"),
                 i("i7c7f156", "Bukas"),
+                i("cbdddb0a", "Nakumpleto"),
                 i("b134ba52", "Kasalukuyang Pinoproseso"),
                 i("j1361724", "Halftime"),
                 i("fa0f1262", "Break"),
@@ -4299,29 +4307,35 @@
                 i("dc17968a", "Biyernes"),
                 i("j310a2d6", "Sabado"),
                 i("eaf55eb4", "Ipakitang nag-iisip"),
-                i("j1ab5f40", "I-tap ang basahin ang iniisip ko"),
+                i("b1ac6016", "Kumpleto na ang DeepSearch"),
+                i("f766feca", "Kumpleto na ang DeepSearch"),
                 i("ee000b0d", function (a) {
                     return a.numSources + " (na) source";
                 }),
-                i("b1ac6016", "Kumpleto na ang DeepSearch"),
-                i("f766feca", "Kumpleto na ang DeepSearch"),
+                i("bf780b13", function (a) {
+                    return a.minutes + "m " + a.seconds + "s";
+                }),
+                i("c2745fa4", "Hindi itinuloy"),
                 i("e258000e", "Notification"),
                 i("d591a772", "Hindi available ang notification"),
                 i("bc49b728", "Aabisuhan ka kapag handa na ang sagot"),
                 i("d8aadeba", "Naka-off ang notification"),
                 i("db832e38", "I-enable ang mga notification sa mga setting ng browser"),
                 i("a910cac6", "May isyu sa pag-enable ng mga notification"),
-                i("g4b3a3e6", "Kumpleto na ang DeepSearch"),
-                i("bf780b13", function (a) {
-                    return a.minutes + "m " + a.seconds + "s";
-                }),
-                i("c2745fa4", "Hindi itinuloy"),
                 i("be30b6ee", "Hindi stable na koneksyon"),
+                i("b52484b6", "Naghahanap..."),
                 i("a4d9dbfa", "Mga Pananaw"),
+                i("ib1c5475", function (a) {
+                    return "Thought for " + a.minutes + "m " + a.seconds + "s";
+                }),
+                i("a15d62db", function (a) {
+                    return "Thought for " + a.seconds + "s";
+                }),
                 i("d7cb5408", "Mga nauugnay na Web Page"),
                 i("aa7c96bb", function (a) {
                     return "Tingnan ang " + a.numResults + " pa";
                 }),
+                i("j1ab5f40", "I-tap ang basahin ang iniisip ko"),
                 i("f5a2377e", "Nag-iisip sa loob ng "),
                 i("g3ce0132", "Nag-isip sa loob ng"),
                 i("f8007364", "I-expand para sa mga detalye"),
@@ -4907,12 +4921,12 @@
                 i("if2909ba", "Tagal ng Panonood"),
                 i("i0e5bf4c", "Mga video mo"),
                 i("ed99baea", "Maagang Beta Access"),
-                i("gf898b70", "Advanced na Paghahanap"),
-                i("d2a43a7a", 'naglalaman ng "ai" at "startup"'),
+                i("gf898b70", "Advanced na Paghahanap");
+            i("d2a43a7a", 'naglalaman ng "ai" at "startup"'),
                 i("a8584698", "ai startup"),
                 i("jb6f9292", 'naglalaman ng exact phrase na "ai startup"'),
-                i("j8ee77c4", '"ai startup"');
-            i("d0480758", 'naglalaman ng "ai" o "startup" (o pareho)'),
+                i("j8ee77c4", '"ai startup"'),
+                i("d0480758", 'naglalaman ng "ai" o "startup" (o pareho)'),
                 i("f0048fa2", "ai O startup"),
                 i("da0df186", 'naglalaman ng "ai", pero hindi "startup"'),
                 i("f2f463ea", "ai -startup"),
@@ -5873,12 +5887,12 @@
                 i("cbae35fa", "Iulat ang Broadcast"),
                 i("fd12ab58", "Mga post ng Koleksyon"),
                 i("a226497c", "Gumawa ng bagong Komunidad"),
-                i("d7346632", "Wala ka pang sinasalihang anumang Komunidad"),
-                i("b732a4cc", "Kapag sumali ka, makikita mo ang mga iyon dito."),
+                i("d7346632", "Wala ka pang sinasalihang anumang Komunidad");
+            i("b732a4cc", "Kapag sumali ka, makikita mo ang mga iyon dito."),
                 i("hff48914", "Walang mahanap na post sa ngayon."),
                 i("hb52cc4a", "Subukan ulit mamaya."),
-                i("e50e1bb0", "Welcome sa Mga Komunidad");
-            i("i6829daa", "Mga mino-moderate na grupo ng talakayan ang Mga Komunidad kung saan puwedeng kumonekta at magbahagi ang mga tao sa X."),
+                i("e50e1bb0", "Welcome sa Mga Komunidad"),
+                i("i6829daa", "Mga mino-moderate na grupo ng talakayan ang Mga Komunidad kung saan puwedeng kumonekta at magbahagi ang mga tao sa X."),
                 i("fc5c6914", "Kilalanin ang ibang tao na kapareho mo ng mga interes"),
                 i("aa1a9820", "Sumali sa Mga Komunidad para kumonekta sa mga tao na may mga interes na tulad ng sa iyo."),
                 i("edef4c82", "Direktang mag-post sa isang Komunidad"),
@@ -6871,12 +6885,12 @@
                 i("ee54c3de", "I-save ang mga video sa mismong device mo"),
                 i("ae03594c", "Kaunting pag-boost ng reply"),
                 i("e6bb08c0", "Pataasin ang visibilty ng mga reply mo"),
-                i("bf2a6acc", "Malaking Pag-boost ng Reply"),
-                i("c2059276", "I-boost ang mga reply mo."),
+                i("bf2a6acc", "Malaking Pag-boost ng Reply");
+            i("c2059276", "I-boost ang mga reply mo."),
                 i("b023ec20", "Max na Pag-boost ng Reply"),
                 i("g337328e", "Makakuha ng pinakamataas na visibility para sa mga reply mo."),
-                i("fa006202", "Pag-playback ng video sa background");
-            i("jf389778", "Manood habang nagba-browse o gamitin ang ibang app"),
+                i("fa006202", "Pag-playback ng video sa background"),
+                i("jf389778", "Manood habang nagba-browse o gamitin ang ibang app"),
                 i("f2977d80", "Mga folder ng bookmark"),
                 i("j1d3d910", "Panatilihing maayos ang mga naka-save na post mo para sa madaling pag-access"),
                 i("f0f48668", "Premium na suporta"),
@@ -7847,11 +7861,7 @@
                 i("c674f5b4", "I-set up ang mga pagbabayad ng invoice"),
                 i("i8237e66", "Lumipat mula sa mga pagbabayad gamit ang credit card papunta sa pag-invoice gamit ang mga bank transfer."),
                 i("hebd348a", "I-configure kung paano ginagamit ang ads sa pag-promote ng mga trabaho mula sa Hiring portal."),
-                i("ib5e6f90", "Pag-promote ng Trabaho"),
-                i("id720215", "Hiring"),
-                i("dd59f146", "Ad account para sa pag-promote ng trabaho"),
-                i("e7e36818", "Kuwalipikado ang mga ad account para sa pag-promote ng trabaho kapag ganap nang naka-set up ang mga ito na may mapagkukunan ng pondo."),
-                i("c28566e0", "Ad Account");
+                i("ib5e6f90", "Pag-promote ng Trabaho");
             function t(a, n) {
                 for (var g = 0; g < n.length; g++) {
                     var i = n[g];
@@ -7890,7 +7900,11 @@
                     o(a, n)
                 );
             }
-            i("c80160d3", "Advertising"),
+            i("id720215", "Hiring"),
+                i("dd59f146", "Ad account para sa pag-promote ng trabaho"),
+                i("e7e36818", "Kuwalipikado ang mga ad account para sa pag-promote ng trabaho kapag ganap nang naka-set up ang mga ito na may mapagkukunan ng pondo."),
+                i("c28566e0", "Ad Account"),
+                i("c80160d3", "Advertising"),
                 i("ff0edac0", "Sigurado ka bang gusto mong kanselahin ang subscription mo?"),
                 i("h2ac0348", "Hindi, ibalik ako"),
                 i("dbf9667e", "Sigurado ako"),
@@ -8752,12 +8766,10 @@
                 i("gdd173da", "Sinagot ng Grok sa Fun Mode"),
                 i("dfd6eeac", "Sinagot ng Grok "),
                 i("deceb214", "Larawang ginawa ni Grok"),
-                i("j05496ce", "DeepSearch ng Grok"),
                 i("befddd48", "Ipakita"),
                 i("hf3f8e3a", "Magpakita pa"),
                 i("h504ea5e", "Gumawa ng bersyon mo gamit ang Grok"),
                 i("eb722de2", "Ikaw ang mismong magtanong sa Grok"),
-                i("ib5110be", "Ikaw mismo ang sumubok sa DeepSearch ng Grok"),
                 i("bb5c5864", "Quote"),
                 i("a8b58cf4", "Ipakita ang thread na ito"),
                 i("i5f742fe", "Ipakita ang poll na ito"),
@@ -8907,14 +8919,14 @@
                 }),
                 i("c889af33", function (a) {
                     return a.count + " sumali";
-                }),
-                i("d6f2056f", function (a) {
-                    return a.count + " nakatutok";
-                }),
-                i("jbc5f47a", "Dock ng Spaces");
-            i("gfe2830f", function (a) {
-                return a.count + " pa";
+                });
+            i("d6f2056f", function (a) {
+                return a.count + " nakatutok";
             }),
+                i("jbc5f47a", "Dock ng Spaces"),
+                i("gfe2830f", function (a) {
+                    return a.count + " pa";
+                }),
                 i("dbeae6cf", function (a) {
                     return a.count + " pang tagapakinig";
                 }),
@@ -13206,4 +13218,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fil.1759b7fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fil.6c7a62fa.js.map

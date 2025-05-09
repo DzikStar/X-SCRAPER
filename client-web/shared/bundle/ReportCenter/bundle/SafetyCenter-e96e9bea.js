@@ -260,10 +260,10 @@
                                                                                         { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }, action: "THROW" },
                                                                                         { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
                                                                                         { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
-                                                                                        { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }, action: "THROW" },
                                                                                     ],
                                                                                     storageKey: null,
                                                                                 },
+                                                                                { alias: null, args: null, concreteType: "UserVerification", kind: "LinkedField", name: "verification", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }], storageKey: null },
                                                                             ],
                                                                             type: "User",
                                                                             abstractKey: null,
@@ -309,7 +309,7 @@
                     type: "TweetResults",
                     abstractKey: null,
                 };
-            m.hash = "6ca7b30df98086509a3ad250e68ff073";
+            m.hash = "05f44578823fa0b83bc1372e3093d318";
             const g = m;
             var y = n(325686),
                 p = n(386802),
@@ -346,9 +346,10 @@
                     return ((l) => {
                         if (l?.core?.user_results.result?.legacy && l.legacy) {
                             const n = l.core.user_results.result.legacy,
-                                a = { richText: { text: "abc", entities: [] }, richRevealText: { rtl: !1, text: "View", entities: [] }, text: "abc" },
-                                i = { tweet: { ...E, id_str: l.legacy.id_str || "", created_at: l.legacy.created_at || "", text: e ? "" : l.legacy.full_text || "", tombstoneInfo: a, user: { ...v, description: n.description || "", profile_image_url_https: n.profile_image_url_https || "", protected: n.protected || !1, screen_name: n.screen_name || "", name: n.name || "", verified: n.verified || !1 } } };
-                            return o.createElement(y.Z, { style: [I.tweet, t && I.wideScreen] }, r ? o.createElement(_.Z, (0, d.Z)({}, i, { renderActionsBar: w.Z, renderTimestamp: w.Z, renderTombstone: b, renderUserAvatar: w.Z, renderUserName: (e) => o.createElement(y.Z, { style: I.avatarContainer }, o.createElement(F.default, { screenName: i.tweet.user.screen_name, size: "small", uri: i.tweet.user.profile_image_url_https }), o.createElement(_.Z.UserName, e)), staticLinkConfig: null })) : o.createElement(_.Z, (0, d.Z)({}, i, { renderActionsBar: w.Z, renderTimestamp: (e) => o.createElement(_.Z.Timestamp, (0, d.Z)({}, e, { link: void 0 })), renderTombstone: b, renderUserAvatar: T, staticLinkConfig: null })));
+                                a = l.core.user_results.result.verification,
+                                i = { richText: { text: "abc", entities: [] }, richRevealText: { rtl: !1, text: "View", entities: [] }, text: "abc" },
+                                s = { tweet: { ...E, id_str: l.legacy.id_str || "", created_at: l.legacy.created_at || "", text: e ? "" : l.legacy.full_text || "", tombstoneInfo: i, user: { ...v, description: n.description || "", profile_image_url_https: n.profile_image_url_https || "", protected: n.protected || !1, screen_name: n.screen_name || "", name: n.name || "", verified: a?.verified || !1 } } };
+                            return o.createElement(y.Z, { style: [I.tweet, t && I.wideScreen] }, r ? o.createElement(_.Z, (0, d.Z)({}, s, { renderActionsBar: w.Z, renderTimestamp: w.Z, renderTombstone: b, renderUserAvatar: w.Z, renderUserName: (e) => o.createElement(y.Z, { style: I.avatarContainer }, o.createElement(F.default, { screenName: s.tweet.user.screen_name, size: "small", uri: s.tweet.user.profile_image_url_https }), o.createElement(_.Z.UserName, e)), staticLinkConfig: null })) : o.createElement(_.Z, (0, d.Z)({}, s, { renderActionsBar: w.Z, renderTimestamp: (e) => o.createElement(_.Z.Timestamp, (0, d.Z)({}, e, { link: void 0 })), renderTombstone: b, renderUserAvatar: T, staticLinkConfig: null })));
                         }
                         return null;
                     })(s);
@@ -404,8 +405,8 @@
             const B = U;
             var D = n(673510);
             const W = K().a23e724a,
-                H = [],
-                A = ({ userResults: e }) => {
+                A = [],
+                H = ({ userResults: e }) => {
                     const { featureSwitches: l } = o.useContext(S.rC),
                         n = l.isTrue("report_center_mvp_r2_enabled"),
                         t = c()(B, e),
@@ -415,7 +416,7 @@
                         s = r?.name || "",
                         u = r?.profile_image_url_https || "",
                         d = r?.screen_name || "";
-                    return i ? o.createElement(y.Z, { style: [z.userCellContainer, a && z.wideScreen] }, o.createElement(D.ZP, { avatarUri: u, displayMode: "UserDetailed", entities: {}, name: s, screenName: d, userId: i })) : n ? o.createElement(f.Z, { indents: H }, W) : null;
+                    return i ? o.createElement(y.Z, { style: [z.userCellContainer, a && z.wideScreen] }, o.createElement(D.ZP, { avatarUri: u, displayMode: "UserDetailed", entities: {}, name: s, screenName: d, userId: i })) : n ? o.createElement(f.Z, { indents: A }, W) : null;
                 },
                 z = T.default.create((e) => ({ userCellContainer: { borderWidth: e.borderWidths.small, borderColor: e.colors.gray100, borderStyle: "solid", borderRadius: e.borderRadii.xLarge }, wideScreen: { marginHorizontal: e.spaces.space32 } })),
                 P = ({ removeTweetContent: e, report_entity_results: l }) => {
@@ -424,7 +425,7 @@
                         case "TweetResults":
                             return o.createElement(L, { removeTweetContent: e, tweet_results: n });
                         case "UserResults":
-                            return o.createElement(A, { userResults: n });
+                            return o.createElement(H, { userResults: n });
                         default:
                             return null;
                     }
@@ -463,4 +464,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReportCenter~bundle.SafetyCenter-e96e9bea.f634438a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReportCenter~bundle.SafetyCenter-e96e9bea.d3ca8d4a.js.map

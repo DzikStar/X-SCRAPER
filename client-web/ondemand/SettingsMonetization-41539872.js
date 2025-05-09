@@ -6,13 +6,13 @@
             n.d(l, { Z: () => c });
             var a,
                 i,
-                s,
                 r,
+                s,
                 u,
                 t,
                 o,
                 d = {
-                    fragment: { argumentDefinitions: (a = [{ defaultValue: !1, kind: "LocalArgument", name: "awardsEnabled" }]), kind: "Fragment", metadata: null, name: "MonetizationEarningsQuery", selections: [{ kind: "RequiredField", field: { alias: "viewer", args: (i = [{ kind: "Literal", name: "s", value: "4721" }]), concreteType: "Viewer", kind: "LinkedField", name: "viewer_v2", plural: !1, selections: [(s = { alias: null, args: null, kind: "ScalarField", name: "is_active_creator", storageKey: null }), { kind: "RequiredField", field: { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ kind: "RequiredField", field: { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ kind: "InlineFragment", selections: [(r = { alias: null, args: null, kind: "ScalarField", name: "stripe_account_status", storageKey: null }), { args: (u = [{ kind: "Variable", name: "awardsEnabled", variableName: "awardsEnabled" }]), kind: "FragmentSpread", name: "EstimatedRevenueTile_user" }, { args: u, kind: "FragmentSpread", name: "PayoutThresholdProgress_user" }, { args: u, kind: "FragmentSpread", name: "SuperFollowsSettingsInternalLinkPivot_user" }, { args: u, kind: "FragmentSpread", name: "AwardsSettingsInternalLinkPivot_user" }], type: "User", abstractKey: null }], storageKey: null }, action: "THROW" }], storageKey: null }, action: "THROW" }, { args: null, kind: "FragmentSpread", name: "SuperFollowsApplicationStatusDescription_viewer" }], storageKey: 'viewer_v2(s:"4721")' }, action: "THROW" }], type: "Query", abstractKey: null },
+                    fragment: { argumentDefinitions: (a = [{ defaultValue: !1, kind: "LocalArgument", name: "awardsEnabled" }]), kind: "Fragment", metadata: null, name: "MonetizationEarningsQuery", selections: [{ kind: "RequiredField", field: { alias: "viewer", args: (i = [{ kind: "Literal", name: "s", value: "4721" }]), concreteType: "Viewer", kind: "LinkedField", name: "viewer_v2", plural: !1, selections: [(r = { alias: null, args: null, kind: "ScalarField", name: "is_active_creator", storageKey: null }), { kind: "RequiredField", field: { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ kind: "RequiredField", field: { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ kind: "InlineFragment", selections: [(s = { alias: null, args: null, kind: "ScalarField", name: "stripe_account_status", storageKey: null }), { args: (u = [{ kind: "Variable", name: "awardsEnabled", variableName: "awardsEnabled" }]), kind: "FragmentSpread", name: "EstimatedRevenueTile_user" }, { args: u, kind: "FragmentSpread", name: "PayoutThresholdProgress_user" }, { args: u, kind: "FragmentSpread", name: "SuperFollowsSettingsInternalLinkPivot_user" }, { args: u, kind: "FragmentSpread", name: "AwardsSettingsInternalLinkPivot_user" }], type: "User", abstractKey: null }], storageKey: null }, action: "THROW" }], storageKey: null }, action: "THROW" }, { args: null, kind: "FragmentSpread", name: "SuperFollowsApplicationStatusDescription_viewer" }], storageKey: 'viewer_v2(s:"4721")' }, action: "THROW" }], type: "Query", abstractKey: null },
                     kind: "Request",
                     operation: {
                         argumentDefinitions: a,
@@ -27,7 +27,7 @@
                                 name: "viewer_v2",
                                 plural: !1,
                                 selections: [
-                                    s,
+                                    r,
                                     {
                                         alias: null,
                                         args: null,
@@ -48,7 +48,7 @@
                                                     {
                                                         kind: "InlineFragment",
                                                         selections: [
-                                                            r,
+                                                            s,
                                                             {
                                                                 alias: null,
                                                                 args: null,
@@ -93,8 +93,8 @@
             n.d(l, { Z: () => g });
             var a,
                 i,
-                s,
                 r,
+                s,
                 u,
                 t,
                 o,
@@ -139,13 +139,13 @@
                                                             name: "result",
                                                             plural: !1,
                                                             selections: [
-                                                                (s = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }),
+                                                                (r = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }),
                                                                 {
                                                                     kind: "InlineFragment",
                                                                     selections: [
                                                                         {
                                                                             alias: "creator_payouts_slice",
-                                                                            args: [(r = { kind: "Variable", name: "limit", variableName: "limit" })],
+                                                                            args: [(s = { kind: "Variable", name: "limit", variableName: "limit" })],
                                                                             concreteType: "CreatorPayoutSlice",
                                                                             kind: "LinkedField",
                                                                             name: "__MonetizationPayoutHistoryQuery_creator_payouts_slice_slice",
@@ -222,13 +222,13 @@
                                                 name: "result",
                                                 plural: !1,
                                                 selections: [
-                                                    s,
+                                                    r,
                                                     {
                                                         kind: "InlineFragment",
                                                         selections: [
                                                             {
                                                                 alias: null,
-                                                                args: (t = [{ kind: "Variable", name: "cursor", variableName: "cursor" }, r]),
+                                                                args: (t = [{ kind: "Variable", name: "cursor", variableName: "cursor" }, s]),
                                                                 concreteType: "CreatorPayoutSlice",
                                                                 kind: "LinkedField",
                                                                 name: "creator_payouts_slice",
@@ -294,8 +294,8 @@
             n.d(l, { Z: () => p });
             var a,
                 i,
-                s,
                 r,
+                s,
                 u,
                 t,
                 o,
@@ -341,13 +341,13 @@
                                                             name: "result",
                                                             plural: !1,
                                                             selections: [
-                                                                (s = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }),
+                                                                (r = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }),
                                                                 {
                                                                     kind: "InlineFragment",
                                                                     selections: [
                                                                         {
                                                                             alias: "superfollows_new_subscribers_slice",
-                                                                            args: [(r = { kind: "Variable", name: "limit", variableName: "limit" })],
+                                                                            args: [(s = { kind: "Variable", name: "limit", variableName: "limit" })],
                                                                             concreteType: "SuperfollowsSubscriptionSlice",
                                                                             kind: "LinkedField",
                                                                             name: "__MonetizationSuperFollowsNewSubscriptionsQuery_superfollows_new_subscribers_slice_slice",
@@ -424,13 +424,13 @@
                                                 name: "result",
                                                 plural: !1,
                                                 selections: [
-                                                    s,
+                                                    r,
                                                     {
                                                         kind: "InlineFragment",
                                                         selections: [
                                                             {
                                                                 alias: null,
-                                                                args: (t = [{ kind: "Variable", name: "cursor", variableName: "cursor" }, r]),
+                                                                args: (t = [{ kind: "Variable", name: "cursor", variableName: "cursor" }, s]),
                                                                 concreteType: "SuperfollowsSubscriptionSlice",
                                                                 kind: "LinkedField",
                                                                 name: "superfollows_new_subscribers_slice",
@@ -463,7 +463,7 @@
                                                                                         name: "result",
                                                                                         plural: !1,
                                                                                         selections: [
-                                                                                            s,
+                                                                                            r,
                                                                                             {
                                                                                                 kind: "InlineFragment",
                                                                                                 selections: [
@@ -477,14 +477,25 @@
                                                                                                         selections: [
                                                                                                             { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
                                                                                                             { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null },
-                                                                                                            { alias: null, args: null, kind: "ScalarField", name: "verified_type", storageKey: null },
                                                                                                             { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null },
-                                                                                                            { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null },
                                                                                                             { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
                                                                                                         ],
                                                                                                         storageKey: null,
                                                                                                     },
                                                                                                     { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" },
+                                                                                                    {
+                                                                                                        alias: null,
+                                                                                                        args: null,
+                                                                                                        concreteType: "UserVerification",
+                                                                                                        kind: "LinkedField",
+                                                                                                        name: "verification",
+                                                                                                        plural: !1,
+                                                                                                        selections: [
+                                                                                                            { alias: null, args: null, kind: "ScalarField", name: "verified_type", storageKey: null },
+                                                                                                            { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null },
+                                                                                                        ],
+                                                                                                        storageKey: null,
+                                                                                                    },
                                                                                                     { alias: null, args: null, kind: "ScalarField", name: "profile_image_shape", storageKey: null },
                                                                                                     { alias: null, args: null, kind: "ScalarField", name: "is_blue_verified", storageKey: null },
                                                                                                     {
@@ -566,7 +577,7 @@
                             },
                         ],
                     },
-                    params: { id: "oDwDolKDS4GwnN9hXMk4mQ", metadata: { sliceInfoPath: ["viewer", "user_results", "result", "superfollows_new_subscribers_slice", "slice_info"] }, name: "MonetizationSuperFollowsNewSubscriptionsQuery", operationKind: "query", text: null },
+                    params: { id: "5nzT_1AlfWgeh3Rf4X9wNg", metadata: { sliceInfoPath: ["viewer", "user_results", "result", "superfollows_new_subscribers_slice", "slice_info"] }, name: "MonetizationSuperFollowsNewSubscriptionsQuery", operationKind: "query", text: null },
                 };
             g.hash = "fda748159d926bbcf2813be9b16516a0";
             const p = g;
@@ -575,8 +586,8 @@
             n.d(l, { Z: () => g });
             var a,
                 i,
-                s,
                 r,
+                s,
                 u,
                 t,
                 o,
@@ -629,7 +640,7 @@
                                                     {
                                                         kind: "InlineFragment",
                                                         selections: [
-                                                            { alias: null, args: null, concreteType: "AudienceRewardsBenefitsData", kind: "LinkedField", name: "super_follow_creator_benefits", plural: !1, selections: [(s = { alias: null, args: null, kind: "ScalarField", name: "creator_intro", storageKey: null }), { alias: null, args: null, concreteType: "AudienceRewardsBenefitInfo", kind: "LinkedField", name: "benefits_data", plural: !0, selections: [{ alias: null, args: null, kind: "ScalarField", name: "benefit_type", storageKey: null }, (r = { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null })], storageKey: null }, (t = { kind: "ClientExtension", selections: [(u = { alias: null, args: null, kind: "ScalarField", name: "__id", storageKey: null })] })], storageKey: null },
+                                                            { alias: null, args: null, concreteType: "AudienceRewardsBenefitsData", kind: "LinkedField", name: "super_follow_creator_benefits", plural: !1, selections: [(r = { alias: null, args: null, kind: "ScalarField", name: "creator_intro", storageKey: null }), { alias: null, args: null, concreteType: "AudienceRewardsBenefitInfo", kind: "LinkedField", name: "benefits_data", plural: !0, selections: [{ alias: null, args: null, kind: "ScalarField", name: "benefit_type", storageKey: null }, (s = { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null })], storageKey: null }, (t = { kind: "ClientExtension", selections: [(u = { alias: null, args: null, kind: "ScalarField", name: "__id", storageKey: null })] })], storageKey: null },
                                                             { alias: null, args: null, concreteType: "SuperFollowsSelectedPrice", kind: "LinkedField", name: "super_follow_creator_price_metadata", plural: !1, selections: [(o = { alias: null, args: null, kind: "ScalarField", name: "selected_price", storageKey: null })], storageKey: null },
                                                             {
                                                                 alias: null,
@@ -643,12 +654,12 @@
                                                                     { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
                                                                     { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
                                                                     { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null },
-                                                                    { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null },
                                                                 ],
                                                                 storageKey: null,
                                                             },
                                                             { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" },
                                                             { alias: null, args: null, kind: "ScalarField", name: "is_blue_verified", storageKey: null },
+                                                            { alias: null, args: null, concreteType: "UserVerification", kind: "LinkedField", name: "verification", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }], storageKey: null },
                                                             { alias: null, args: null, concreteType: "PendingPriceChange", kind: "LinkedField", name: "super_follow_pending_price_change", plural: !1, selections: [t], storageKey: null },
                                                             (d = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }),
                                                         ],
@@ -662,7 +673,7 @@
                                         ],
                                         storageKey: null,
                                     },
-                                    { kind: "ClientExtension", selections: [u, { alias: null, args: null, concreteType: "SuperFollowsOnboardingDraft", kind: "LinkedField", name: "super_follows_onboarding_draft", plural: !1, selections: [s, r, o], storageKey: null }] },
+                                    { kind: "ClientExtension", selections: [u, { alias: null, args: null, concreteType: "SuperFollowsOnboardingDraft", kind: "LinkedField", name: "super_follows_onboarding_draft", plural: !1, selections: [r, s, o], storageKey: null }] },
                                 ],
                                 storageKey: 'viewer_v2(s:"4721")',
                             },
@@ -693,7 +704,7 @@
                             },
                         ],
                     },
-                    params: { id: "ahLks3LKLl0p3w-_jDZMsQ", metadata: {}, name: "MonetizationSuperFollowsPerksQuery", operationKind: "query", text: null },
+                    params: { id: "WTEm9FzsORgWtyVNpSbTdg", metadata: {}, name: "MonetizationSuperFollowsPerksQuery", operationKind: "query", text: null },
                 };
             c.hash = "01638e138b66b2fb6c0b34598c1553af";
             const g = c;
@@ -751,8 +762,8 @@
             n.d(l, { Z: () => p });
             var a,
                 i,
-                s,
                 r,
+                s,
                 u,
                 t,
                 o,
@@ -798,13 +809,13 @@
                                                             name: "result",
                                                             plural: !1,
                                                             selections: [
-                                                                (s = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }),
+                                                                (r = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }),
                                                                 {
                                                                     kind: "InlineFragment",
                                                                     selections: [
                                                                         {
                                                                             alias: "superfollows_renewals_slice",
-                                                                            args: [(r = { kind: "Variable", name: "limit", variableName: "limit" })],
+                                                                            args: [(s = { kind: "Variable", name: "limit", variableName: "limit" })],
                                                                             concreteType: "SuperfollowsSubscriptionSlice",
                                                                             kind: "LinkedField",
                                                                             name: "__MonetizationSuperFollowsRenewalsQuery_superfollows_renewals_slice_slice",
@@ -881,13 +892,13 @@
                                                 name: "result",
                                                 plural: !1,
                                                 selections: [
-                                                    s,
+                                                    r,
                                                     {
                                                         kind: "InlineFragment",
                                                         selections: [
                                                             {
                                                                 alias: null,
-                                                                args: (t = [{ kind: "Variable", name: "cursor", variableName: "cursor" }, r]),
+                                                                args: (t = [{ kind: "Variable", name: "cursor", variableName: "cursor" }, s]),
                                                                 concreteType: "SuperfollowsSubscriptionSlice",
                                                                 kind: "LinkedField",
                                                                 name: "superfollows_renewals_slice",
@@ -920,7 +931,7 @@
                                                                                         name: "result",
                                                                                         plural: !1,
                                                                                         selections: [
-                                                                                            s,
+                                                                                            r,
                                                                                             {
                                                                                                 kind: "InlineFragment",
                                                                                                 selections: [
@@ -934,14 +945,25 @@
                                                                                                         selections: [
                                                                                                             { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
                                                                                                             { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null },
-                                                                                                            { alias: null, args: null, kind: "ScalarField", name: "verified_type", storageKey: null },
                                                                                                             { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null },
-                                                                                                            { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null },
                                                                                                             { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
                                                                                                         ],
                                                                                                         storageKey: null,
                                                                                                     },
                                                                                                     { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" },
+                                                                                                    {
+                                                                                                        alias: null,
+                                                                                                        args: null,
+                                                                                                        concreteType: "UserVerification",
+                                                                                                        kind: "LinkedField",
+                                                                                                        name: "verification",
+                                                                                                        plural: !1,
+                                                                                                        selections: [
+                                                                                                            { alias: null, args: null, kind: "ScalarField", name: "verified_type", storageKey: null },
+                                                                                                            { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null },
+                                                                                                        ],
+                                                                                                        storageKey: null,
+                                                                                                    },
                                                                                                     { alias: null, args: null, kind: "ScalarField", name: "profile_image_shape", storageKey: null },
                                                                                                     { alias: null, args: null, kind: "ScalarField", name: "is_blue_verified", storageKey: null },
                                                                                                     {
@@ -1023,7 +1045,7 @@
                             },
                         ],
                     },
-                    params: { id: "hu8-2WbJu3mnli9ReDDA6A", metadata: { sliceInfoPath: ["viewer", "user_results", "result", "superfollows_renewals_slice", "slice_info"] }, name: "MonetizationSuperFollowsRenewalsQuery", operationKind: "query", text: null },
+                    params: { id: "9KF8cfGNCfnbHt7ySpNa7A", metadata: { sliceInfoPath: ["viewer", "user_results", "result", "superfollows_renewals_slice", "slice_info"] }, name: "MonetizationSuperFollowsRenewalsQuery", operationKind: "query", text: null },
                 };
             g.hash = "93621813893adb0100be5b58e47806f3";
             const p = g;
@@ -1032,8 +1054,8 @@
             n.d(l, { Z: () => _ });
             var a,
                 i,
-                s,
                 r,
+                s,
                 u,
                 t,
                 o,
@@ -1052,7 +1074,7 @@
                         kind: "Fragment",
                         metadata: null,
                         name: "MonetizationSuperFollowsRevenueQuery",
-                        selections: [{ kind: "RequiredField", field: { alias: "viewer", args: (i = [{ kind: "Literal", name: "s", value: "5551" }]), concreteType: "Viewer", kind: "LinkedField", name: "viewer_v2", plural: !1, selections: [{ kind: "RequiredField", field: { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ kind: "RequiredField", field: { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ kind: "InlineFragment", selections: [(s = { alias: null, args: null, kind: "ScalarField", name: "stripe_account_status", storageKey: null }), (r = { alias: null, args: null, kind: "ScalarField", name: "award_eligible", storageKey: null }), { alias: null, args: (u = [{ kind: "Variable", name: "limit", variableName: "new_subscribers_limit" }]), concreteType: "SuperfollowsSubscriptionSlice", kind: "LinkedField", name: "superfollows_new_subscribers_slice", plural: !1, selections: (t = [{ args: null, kind: "FragmentSpread", name: "useMonetizationHistory_superfollowsSubscriptionSlice" }]), storageKey: null }, { alias: null, args: (o = [{ kind: "Variable", name: "limit", variableName: "renewals_limit" }]), concreteType: "SuperfollowsSubscriptionSlice", kind: "LinkedField", name: "superfollows_renewals_slice", plural: !1, selections: t, storageKey: null }, { args: (d = [{ kind: "Literal", name: "awardsEnabled", value: !1 }]), kind: "FragmentSpread", name: "EstimatedRevenueTile_user" }, { args: d, kind: "FragmentSpread", name: "PayoutThresholdProgress_user" }], type: "User", abstractKey: null }], storageKey: null }, action: "THROW" }], storageKey: null }, action: "THROW" }], storageKey: 'viewer_v2(s:"5551")' }, action: "THROW" }],
+                        selections: [{ kind: "RequiredField", field: { alias: "viewer", args: (i = [{ kind: "Literal", name: "s", value: "5551" }]), concreteType: "Viewer", kind: "LinkedField", name: "viewer_v2", plural: !1, selections: [{ kind: "RequiredField", field: { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "user_results", plural: !1, selections: [{ kind: "RequiredField", field: { alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ kind: "InlineFragment", selections: [(r = { alias: null, args: null, kind: "ScalarField", name: "stripe_account_status", storageKey: null }), (s = { alias: null, args: null, kind: "ScalarField", name: "award_eligible", storageKey: null }), { alias: null, args: (u = [{ kind: "Variable", name: "limit", variableName: "new_subscribers_limit" }]), concreteType: "SuperfollowsSubscriptionSlice", kind: "LinkedField", name: "superfollows_new_subscribers_slice", plural: !1, selections: (t = [{ args: null, kind: "FragmentSpread", name: "useMonetizationHistory_superfollowsSubscriptionSlice" }]), storageKey: null }, { alias: null, args: (o = [{ kind: "Variable", name: "limit", variableName: "renewals_limit" }]), concreteType: "SuperfollowsSubscriptionSlice", kind: "LinkedField", name: "superfollows_renewals_slice", plural: !1, selections: t, storageKey: null }, { args: (d = [{ kind: "Literal", name: "awardsEnabled", value: !1 }]), kind: "FragmentSpread", name: "EstimatedRevenueTile_user" }, { args: d, kind: "FragmentSpread", name: "PayoutThresholdProgress_user" }], type: "User", abstractKey: null }], storageKey: null }, action: "THROW" }], storageKey: null }, action: "THROW" }], storageKey: 'viewer_v2(s:"5551")' }, action: "THROW" }],
                         type: "Query",
                         abstractKey: null,
                     },
@@ -1090,8 +1112,8 @@
                                                     {
                                                         kind: "InlineFragment",
                                                         selections: [
-                                                            s,
                                                             r,
+                                                            s,
                                                             {
                                                                 alias: null,
                                                                 args: u,
@@ -1141,14 +1163,25 @@
                                                                                                         selections: [
                                                                                                             { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
                                                                                                             { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null },
-                                                                                                            { alias: null, args: null, kind: "ScalarField", name: "verified_type", storageKey: null },
                                                                                                             { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null },
-                                                                                                            { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null },
                                                                                                             { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
                                                                                                         ],
                                                                                                         storageKey: null,
                                                                                                     },
                                                                                                     { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" },
+                                                                                                    {
+                                                                                                        alias: null,
+                                                                                                        args: null,
+                                                                                                        concreteType: "UserVerification",
+                                                                                                        kind: "LinkedField",
+                                                                                                        name: "verification",
+                                                                                                        plural: !1,
+                                                                                                        selections: [
+                                                                                                            { alias: null, args: null, kind: "ScalarField", name: "verified_type", storageKey: null },
+                                                                                                            { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null },
+                                                                                                        ],
+                                                                                                        storageKey: null,
+                                                                                                    },
                                                                                                     { alias: null, args: null, kind: "ScalarField", name: "profile_image_shape", storageKey: null },
                                                                                                     { alias: null, args: null, kind: "ScalarField", name: "is_blue_verified", storageKey: null },
                                                                                                     {
@@ -1230,7 +1263,7 @@
                             },
                         ],
                     },
-                    params: { id: "lQxEoln7Xul4ElAtFi1qAQ", metadata: {}, name: "MonetizationSuperFollowsRevenueQuery", operationKind: "query", text: null },
+                    params: { id: "71YSRlvbL-rzMZ47l21GeA", metadata: {}, name: "MonetizationSuperFollowsRevenueQuery", operationKind: "query", text: null },
                 };
             k.hash = "3e33f885dd213dcf81617b3990a3aca2";
             const _ = k;
@@ -1239,8 +1272,8 @@
             n.d(l, { Z: () => t });
             var a,
                 i,
-                s,
                 r,
+                s,
                 u = {
                     fragment: {
                         argumentDefinitions: [],
@@ -1316,7 +1349,7 @@
                                                                 storageKey: null,
                                                             },
                                                             { alias: null, args: null, concreteType: "SuperFollowsSelectedPrice", kind: "LinkedField", name: "super_follow_creator_price_metadata", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "selected_price", storageKey: null }], storageKey: null },
-                                                            { alias: null, args: null, concreteType: "PendingPriceChange", kind: "LinkedField", name: "super_follow_pending_price_change", plural: !1, selections: [(s = { kind: "ClientExtension", selections: [{ alias: null, args: null, kind: "ScalarField", name: "__id", storageKey: null }] }), { alias: null, args: null, kind: "ScalarField", name: "new_price", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "price_change", storageKey: null }], storageKey: null },
+                                                            { alias: null, args: null, concreteType: "PendingPriceChange", kind: "LinkedField", name: "super_follow_pending_price_change", plural: !1, selections: [(r = { kind: "ClientExtension", selections: [{ alias: null, args: null, kind: "ScalarField", name: "__id", storageKey: null }] }), { alias: null, args: null, kind: "ScalarField", name: "new_price", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "price_change", storageKey: null }], storageKey: null },
                                                             {
                                                                 alias: null,
                                                                 args: null,
@@ -1331,7 +1364,7 @@
                                                                 storageKey: null,
                                                             },
                                                             { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" },
-                                                            (r = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }),
+                                                            (s = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }),
                                                         ],
                                                         type: "User",
                                                         abstractKey: null,
@@ -1339,11 +1372,11 @@
                                                 ],
                                                 storageKey: null,
                                             },
-                                            r,
+                                            s,
                                         ],
                                         storageKey: null,
                                     },
-                                    s,
+                                    r,
                                 ],
                                 storageKey: 'viewer_v2(s:"4721")',
                             },
@@ -1382,4 +1415,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsMonetization-41539872.132c27aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsMonetization-41539872.1f6b32da.js.map

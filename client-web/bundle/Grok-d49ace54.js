@@ -550,7 +550,7 @@
                 const { isCompactLayout: r } = (0, i.ZP)();
                 return n.createElement(o.Z, { style: [l.container, r ? l.compactContainer : void 0, t ? l.animated : void 0, a] }, e);
             }
-            const l = r.default.create((e) => ({ container: { backgroundColor: e.colors.gray0, marginHorizontal: e.spaces.space12, marginBottom: e.spaces.space12, paddingVertical: e.spaces.space16, paddingHorizontal: e.spaces.space16, borderRadius: e.borderRadii.medium, borderStyle: "solid", borderWidth: 1, borderColor: e.colors.gray200 }, compactContainer: { paddingVertical: e.spaces.space12, paddingHorizontal: e.spaces.space12 }, animated: { opacity: 1, animationDuration: "2s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }] } }));
+            const l = r.default.create((e) => ({ container: { backgroundColor: e.colors.gray0, marginHorizontal: e.spaces.space12, marginBottom: e.spaces.space12, paddingVertical: e.spaces.space16, paddingHorizontal: e.spaces.space16, borderRadius: e.spaces.space24, borderStyle: "solid", borderWidth: 1, borderColor: e.colors.gray200 }, compactContainer: { paddingVertical: e.spaces.space12, paddingHorizontal: e.spaces.space12, borderRadius: e.borderRadii.medium }, animated: { opacity: 1, animationDuration: "2s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }] } }));
         },
         339838: (e, t, a) => {
             a.d(t, { Z: () => d });
@@ -649,4 +649,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-d49ace54.2b7e797a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-d49ace54.4951e29a.js.map

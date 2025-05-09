@@ -3,7 +3,7 @@
     ["shared~loader.DMDrawer~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompose~loader.HWCard~l-0657330d"],
     {
         705048: (e, t, a) => {
-            a.d(t, { Z: () => O });
+            a.d(t, { Z: () => B });
             var r = a(202784),
                 s = a(325686),
                 l = a(674132),
@@ -19,8 +19,8 @@
                 h = a(530732),
                 f = a(521288),
                 b = a(336373),
-                y = a(392237),
-                w = a(47286),
+                w = a(392237),
+                y = a(47286),
                 E = a(642153);
             const x = function (e, t = {}) {
                 const a = { listUnicodeChar: t.listUnicodeChar ?? void 0, stripListLeaders: t.stripListLeaders ?? !0, gfm: t.gfm ?? !0, useImgAltText: t.useImgAltText ?? !0, abbr: t.abbr ?? !1, replaceLinksWithURL: t.replaceLinksWithURL ?? !1, htmlTagsToSkip: t.htmlTagsToSkip ?? [], throwError: t.throwError ?? !1 };
@@ -88,9 +88,9 @@
                     if (l <= 0) return null;
                     let n = "";
                     t.length > 0 && a.length > 0 ? (n = I({ count: l })) : t.length > 0 ? (n = _({ count: l })) : a.length > 0 && (n = Z({ count: l }));
-                    return r.createElement(s.Z, { style: P.sourcesPill }, e.length > 0 ? r.createElement(E.Z, { userAvatarSize: "medium", userAvatarUrls: e.slice(0, 6), withIncreasedSpacing: e.length < 5 }) : a.length > 0 && r.createElement(w.default, { style: P.xPostsIcon }), r.createElement(c.ZP, { color: "gray900", size: "subtext2" }, n));
+                    return r.createElement(s.Z, { style: P.sourcesPill }, e.length > 0 ? r.createElement(E.Z, { userAvatarSize: "medium", userAvatarUrls: e.slice(0, 6), withIncreasedSpacing: e.length < 5 }) : a.length > 0 && r.createElement(y.default, { style: P.xPostsIcon }), r.createElement(c.ZP, { color: "gray900", size: "subtext2" }, n));
                 },
-                P = y.default.create((e) => ({ sourcesPill: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space8, marginBottom: e.spaces.space8 }, xPostsIcon: { color: e.colors.gray900, width: e.spaces.space16, height: e.spaces.space16 }, bulletPoints: {}, bulletItem: { flexDirection: "row", marginBottom: e.spaces.space8, alignItems: "flex-start" }, bullet: { marginEnd: e.spaces.space8 }, bulletText: { flex: 1 } })),
+                P = w.default.create((e) => ({ sourcesPill: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space8, marginBottom: e.spaces.space8 }, xPostsIcon: { color: e.colors.gray900, width: e.spaces.space16, height: e.spaces.space16 }, bulletPoints: {}, bulletItem: { flexDirection: "row", marginBottom: e.spaces.space8, alignItems: "flex-start" }, bullet: { marginEnd: e.spaces.space8 }, bulletText: { flex: 1 } })),
                 k = ({ deepsearch_headers: e, deepsearchHeaders: t, rawResponse: a }) => {
                     const {
                         formattedResponse: l,
@@ -129,15 +129,13 @@
                     );
                 },
                 R = n().gdd173da,
-                S = n().dfd6eeac,
-                T = n().deceb214,
-                $ = n().j05496ce,
-                M = n().befddd48,
-                W = n().hf3f8e3a,
-                D = n().h504ea5e,
+                T = n().dfd6eeac,
+                S = n().deceb214,
+                $ = n().befddd48,
+                M = n().hf3f8e3a,
+                W = n().h504ea5e,
                 L = n().eb722de2,
-                z = n().ib5110be,
-                B = y.default.create((e) => ({
+                z = w.default.create((e) => ({
                     root: { backgroundColor: e.colors.cellBackground, borderColor: e.colors.borderColor, borderRadius: e.borderRadii.large, borderStyle: "solid", borderWidth: e.borderWidths.small, overflow: "hidden", width: "100%", cursor: "pointer" },
                     rootImage: { width: "100%" },
                     labelBtnPadding: { paddingStart: e.spaces.space4 },
@@ -164,10 +162,10 @@
                     blurIcon: { color: e.colors.whiteOnColor, width: e.spaces.space24, height: e.spaces.space24 },
                     blurContainer: { height: "100%", maxHeight: 50, aspectRatio: 1.5, borderRadius: e.borderRadii.small, overflow: "hidden" },
                     blur: { filter: "blur(3px)" },
-                    quoteTweetContainer: { flex: 1, marginStart: `calc(${y.default.theme.spaces.space12} * -1)`, marginTop: `calc(${y.default.theme.spaces.space12} * -1)`, marginBottom: `calc(${y.default.theme.spaces.space4} * -1)`, pointerEvents: "none" },
+                    quoteTweetContainer: { flex: 1, marginStart: `calc(${w.default.theme.spaces.space12} * -1)`, marginTop: `calc(${w.default.theme.spaces.space12} * -1)`, marginBottom: `calc(${w.default.theme.spaces.space4} * -1)`, pointerEvents: "none" },
                 })),
-                O = ({ continueInGrokEnabled: e, conversation: t, destination: a, mediaVisibilityResults: l, metadata: n, openGrok: y }) => {
-                    const [w, E] = r.useState(!!l),
+                B = ({ continueInGrokEnabled: e, conversation: t, destination: a, mediaVisibilityResults: l, metadata: n, openGrok: w }) => {
+                    const [y, E] = r.useState(!!l),
                         v = r.useCallback(
                             (e) => {
                                 e.stopPropagation(), e.preventDefault(), E(!1);
@@ -178,69 +176,69 @@
                         Z = r.useContext(p.Z).cardContext,
                         I = Z ? Z.tweetId : "",
                         C = Z ? Z.locationKey : "",
-                        [P, O] = r.useState(!1),
-                        [U, H] = r.useState(8),
-                        F = t.length - 2,
-                        j = t.length - 1;
+                        [P, B] = r.useState(!1),
+                        [D, O] = r.useState(8),
+                        U = t.length - 2,
+                        H = t.length - 1;
                     if (t.length < 2) return null;
-                    const J = (t[j].deepsearch_headers && t[j].deepsearch_headers.length > 0) || (t[j].deepsearchHeaders && t[j].deepsearchHeaders.length > 0),
-                        N = x(t[F].message),
-                        A = x(t[j].message),
-                        G = t[F].mediaUrls[0],
-                        V = t[j].mediaUrls[0],
-                        q = l?.blurred_image_interstitial?.title.text,
-                        K = l?.blurred_image_interstitial?.text.text,
-                        Q = () => (J ? $ : V ? n?.text || T : n?.text ? n.text : "FUN" === t[F].grokMode ? R : S);
+                    const F = (t[H].deepsearch_headers && t[H].deepsearch_headers.length > 0) || (t[H].deepsearchHeaders && t[H].deepsearchHeaders.length > 0),
+                        j = x(t[U].message),
+                        A = x(t[H].message),
+                        J = t[U].mediaUrls[0],
+                        N = t[H].mediaUrls[0],
+                        G = l?.blurred_image_interstitial?.title.text,
+                        V = l?.blurred_image_interstitial?.text.text,
+                        q = () => (N ? n?.text || S : n?.text ? n.text : "FUN" === t[U].grokMode ? R : T);
                     return r.createElement(u.Z, { componentType: "grok_share", destinationKey: a }, ({ link: a, onClick: l }) =>
                         r.createElement(
                             r.Fragment,
                             null,
                             r.createElement(
                                 s.Z,
-                                { style: V ? B.rootImage : B.root },
+                                { style: N ? z.rootImage : z.root },
                                 r.createElement(
                                     h.Z,
                                     {
                                         interactive: !1,
                                         link: a,
                                         onClick: () => {
-                                            _.scribe({ element: "grok_share_card", action: "click", data: { event_source: C, tweet_id: I, ...(J ? { event_info: JSON.stringify({ isDeepsearch: !0 }) } : {}) } }), l && l();
+                                            _.scribe({ element: "grok_share_card", action: "click", data: { event_source: C, tweet_id: I } }), l && l();
                                         },
                                     },
-                                    V ? null : r.createElement(s.Z, { style: [V ? B.paddingImage : B.padding, B.header] }, r.createElement(s.Z, { style: B.headerContent }, G ? r.createElement(s.Z, { style: B.blurContainer }, r.createElement(m.Z, { source: { uri: G }, style: [B.headerImage, w ? B.blur : void 0] })) : null, r.createElement(s.Z, { style: B.headerTextContent }, t[0] && t[0].analysis_post ? r.createElement(s.Z, { style: B.quoteTweetContainer }, r.createElement(f.Z, { isCondensed: !0, shouldShowBorder: !1, tweet: t[0].analysis_post, withLink: !1 })) : r.createElement(c.ZP, { numberOfLines: 1, size: "headline2", style: B.headerText, weight: "bold" }, N), r.createElement(c.ZP, { color: "gray900", size: "subtext2" }, Q())))),
+                                    N ? null : r.createElement(s.Z, { style: [N ? z.paddingImage : z.padding, z.header] }, r.createElement(s.Z, { style: z.headerContent }, J ? r.createElement(s.Z, { style: z.blurContainer }, r.createElement(m.Z, { source: { uri: J }, style: [z.headerImage, y ? z.blur : void 0] })) : null, r.createElement(s.Z, { style: z.headerTextContent }, t[0] && t[0].analysis_post ? r.createElement(s.Z, { style: z.quoteTweetContainer }, r.createElement(f.Z, { isCondensed: !0, shouldShowBorder: !1, tweet: t[0].analysis_post, withLink: !1 })) : r.createElement(c.ZP, { numberOfLines: 1, size: "headline2", style: z.headerText, weight: "bold" }, j), r.createElement(c.ZP, { color: "gray900", size: "subtext2" }, q())))),
                                     r.createElement(
                                         s.Z,
-                                        { style: V ? B.contentImage : B.content },
-                                        V
-                                            ? r.createElement(r.Fragment, null, r.createElement(m.Z, { source: { uri: V }, style: B.image }), r.createElement(s.Z, { style: B.imageOverlay }, r.createElement(c.ZP, { color: "white", numberOfLines: 1, size: "headline2", weight: "bold" }, N), r.createElement(c.ZP, { color: "white", size: "subtext2" }, Q())), w ? r.createElement(s.Z, { style: B.sensitiveContent }, r.createElement(o.default, { style: B.blurIcon }), r.createElement(s.Z, { style: B.sensitiveLabels }, q ? r.createElement(c.ZP, { color: "whiteOnColor", size: "body", weight: "bold" }, q) : null, K ? r.createElement(c.ZP, { color: "whiteOnColor", size: "body" }, K) : null), r.createElement(d.ZP, { onPress: v, type: "onMediaLightFilled" }, M)) : null)
+                                        { style: N ? z.contentImage : z.content },
+                                        N
+                                            ? r.createElement(r.Fragment, null, r.createElement(m.Z, { source: { uri: N }, style: z.image }), r.createElement(s.Z, { style: z.imageOverlay }, r.createElement(c.ZP, { color: "white", numberOfLines: 1, size: "headline2", weight: "bold" }, j), r.createElement(c.ZP, { color: "white", size: "subtext2" }, q())), y ? r.createElement(s.Z, { style: z.sensitiveContent }, r.createElement(o.default, { style: z.blurIcon }), r.createElement(s.Z, { style: z.sensitiveLabels }, G ? r.createElement(c.ZP, { color: "whiteOnColor", size: "body", weight: "bold" }, G) : null, V ? r.createElement(c.ZP, { color: "whiteOnColor", size: "body" }, V) : null), r.createElement(d.ZP, { onPress: v, type: "onMediaLightFilled" }, $)) : null)
                                             : r.createElement(g.Z, null, ({ isHovered: e }) =>
                                                   r.createElement(
                                                       s.Z,
-                                                      { style: B.paddingBody },
-                                                      J
-                                                          ? r.createElement(k, { deepsearchHeaders: t[j].deepsearchHeaders, deepsearch_headers: t[j].deepsearch_headers, rawResponse: t[j].message })
+                                                      { style: z.paddingBody },
+                                                      F
+                                                          ? r.createElement(k, { deepsearchHeaders: t[H].deepsearchHeaders, deepsearch_headers: t[H].deepsearch_headers, rawResponse: t[H].message })
                                                           : r.createElement(
                                                                 c.ZP,
                                                                 {
                                                                     getTextOverflow: (e) => {
-                                                                        e && !P && (O(!0), H(7));
+                                                                        e && !P && (B(!0), O(7));
                                                                     },
-                                                                    numberOfLines: U,
+                                                                    numberOfLines: D,
                                                                 },
                                                                 A,
                                                             ),
-                                                      P || J
+                                                      P || F
                                                           ? r.createElement(
                                                                 c.ZP,
                                                                 {
                                                                     color: "link",
                                                                     onClick: (e) => {
-                                                                        !J && U <= 8 && (e.stopPropagation(), e.preventDefault(), H(U + 24));
+                                                                        !F && D <= 8 && (e.stopPropagation(), e.preventDefault(), O(D + 24));
                                                                     },
                                                                     style: { padding: 0, margin: 0 },
                                                                     withUnderline: e,
                                                                 },
-                                                                W,
+                                                                M,
                                                             )
                                                           : null,
                                                   ),
@@ -254,12 +252,12 @@
                                       {
                                           icon: r.createElement(i.default, null),
                                           onPress: () => {
-                                              _.scribe({ element: "grok_create_your_version", action: "click", data: { event_source: C, tweet_id: I, ...(J ? { event_info: JSON.stringify({ isDeepsearch: !0 }) } : {}) } }), y?.({ text: N, imageUrl: G, autoSubmit: !0, source: "grok_share_card" + (V ? "_image" : "_text"), isDeepsearch: J });
+                                              _.scribe({ element: "grok_create_your_version", action: "click", data: { event_source: C, tweet_id: I } }), w?.({ text: j, imageUrl: J, autoSubmit: !0, source: "grok_share_card" + (N ? "_image" : "_text") });
                                           },
-                                          style: B.footer,
+                                          style: z.footer,
                                           type: "primaryFilled",
                                       },
-                                      r.createElement(c.ZP, { size: "body", style: B.labelBtnPadding, weight: "bold" }, J ? z : V ? D : L),
+                                      r.createElement(c.ZP, { size: "body", style: z.labelBtnPadding, weight: "bold" }, N ? W : L),
                                   )
                                 : null,
                         ),
@@ -344,8 +342,8 @@
                             return Z.fullMeta;
                     }
                 },
-                y = ({ displayType: e }) => "carousel" !== e,
                 w = ({ displayType: e }) => "carousel" !== e,
+                y = ({ displayType: e }) => "carousel" !== e,
                 E = (e) => {
                     const { displayType: t, recruitingOrganization: a } = e;
                     if (!a) return null;
@@ -357,11 +355,11 @@
                 },
                 x = (e) => {
                     const { location: t } = e;
-                    return t ? r.createElement(s.Z, { style: Z.locationWithIcon }, y(e) ? r.createElement(i.ZP, { color: "gray700", size: "body", style: Z.dontShrinkMeBro }, r.createElement(l.default, null)) : null, r.createElement(i.ZP, { color: "gray700", style: Z.elidedText }, t)) : null;
+                    return t ? r.createElement(s.Z, { style: Z.locationWithIcon }, w(e) ? r.createElement(i.ZP, { color: "gray700", size: "body", style: Z.dontShrinkMeBro }, r.createElement(l.default, null)) : null, r.createElement(i.ZP, { color: "gray700", style: Z.elidedText }, t)) : null;
                 },
                 v = (e) => {
                     const { employmentType: t, formattedSalary: a, salaryInterval: l } = e;
-                    return a || t ? r.createElement(s.Z, { style: Z.metaRow }, a ? r.createElement(s.Z, { style: Z.withIcon }, y(e) ? r.createElement(i.ZP, { color: "gray700", size: "body" }, r.createElement(n.default, null)) : null, r.createElement(i.ZP, { color: "gray700" }, (0, f.M)(a, l))) : null, t ? r.createElement(s.Z, { style: Z.withIcon }, y(e) ? r.createElement(i.ZP, { color: "gray700", size: "body" }, r.createElement(o.default, null)) : null, r.createElement(i.ZP, { color: "gray700" }, h.eo[t])) : null) : null;
+                    return a || t ? r.createElement(s.Z, { style: Z.metaRow }, a ? r.createElement(s.Z, { style: Z.withIcon }, w(e) ? r.createElement(i.ZP, { color: "gray700", size: "body" }, r.createElement(n.default, null)) : null, r.createElement(i.ZP, { color: "gray700" }, (0, f.M)(a, l))) : null, t ? r.createElement(s.Z, { style: Z.withIcon }, w(e) ? r.createElement(i.ZP, { color: "gray700", size: "body" }, r.createElement(o.default, null)) : null, r.createElement(i.ZP, { color: "gray700" }, h.eo[t])) : null) : null;
                 },
                 _ = ({ shortDescription: e }) => {
                     const t = (0, f.G)(e);
@@ -373,7 +371,7 @@
                         n = "carousel" === t,
                         o = "full" === t,
                         c = "full" !== t;
-                    return r.createElement(s.Z, { style: n ? Z.carouselJob : Z.job }, r.createElement(i.ZP, { size: l, style: c ? Z.elidedText : void 0, weight: "bold" }, a), r.createElement(E, e), r.createElement(s.Z, { style: b(e) }, r.createElement(x, e), w(e) ? r.createElement(v, e) : null), o ? r.createElement(r.Fragment, null, r.createElement(_, e), r.createElement(d.ZP, { "aria-label": "Apply", size: "small", type: "primaryFilled" }, "View job")) : null);
+                    return r.createElement(s.Z, { style: n ? Z.carouselJob : Z.job }, r.createElement(i.ZP, { size: l, style: c ? Z.elidedText : void 0, weight: "bold" }, a), r.createElement(E, e), r.createElement(s.Z, { style: b(e) }, r.createElement(x, e), y(e) ? r.createElement(v, e) : null), o ? r.createElement(r.Fragment, null, r.createElement(_, e), r.createElement(d.ZP, { "aria-label": "Apply", size: "small", type: "primaryFilled" }, "View job")) : null);
                 };
         },
         89217: (e, t, a) => {
@@ -414,4 +412,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompose~loader.HWCard~l-0657330d.2aed6dca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.Compose~bundle.DirectMessages~bundle.DMRichTextCompose~loader.HWCard~l-0657330d.8d977fea.js.map

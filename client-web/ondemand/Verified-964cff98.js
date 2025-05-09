@@ -3,21 +3,21 @@
     ["ondemand.Verified-964cff98"],
     {
         336629: (e, t, n) => {
-            n.d(t, { T: () => l });
+            n.d(t, { T: () => i });
             var a = n(97882),
                 r = n(685731);
-            const l = ({ annualPriceMonthly: e, includeTax: t, monthlyPriceAnnual: n, percentOff: l, price: i }) => {
-                const o = (0, r.aU)(i, t, l),
+            const i = ({ annualPriceMonthly: e, includeTax: t, monthlyPriceAnnual: n, percentOff: i, price: l }) => {
+                const o = (0, r.aU)(l, t, i),
                     s = e ? o / 12 : n ? 12 * o : o;
-                return (0, a.x)({ amount: s, currencyCode: i?.currency_code.toUpperCase(), removeTrailingZeros: !0 });
+                return (0, a.x)({ amount: s, currencyCode: l?.currency_code.toUpperCase(), removeTrailingZeros: !0 });
             };
         },
         862695: (e, t, n) => {
             n.d(t, { V: () => h, f: () => E });
             var a = n(202784),
                 r = n(325686),
-                l = n(731708),
-                i = n(392237),
+                i = n(731708),
+                l = n(392237),
                 o = n(674132),
                 s = n.n(o),
                 c = n(336629);
@@ -28,40 +28,40 @@
                 g = s().e0b39888,
                 b = s().b67c37de,
                 f = s().a8363765,
-                E = ({ activeDiscountInfo: e, discountInfo: t, formattedPrice: n, includeTax: a, isFreeTrial: r, isTierSwitching: l, price: i, selectedInterval: o, shouldRemoveExtraStep: s, withAnnualPriceMonthly: d }) => (r ? ("Month" === o ? m({ price: n }) : p({ price: n })) : t || e ? h({ formattedPrice: n, selectedInterval: o, includeDiscountedPrice: "Year" === o && d, discountedFormattedPrice: (0, c.T)({ price: i, includeTax: a, percentOff: l ? e?.promotion_metadata?.percent_off : t?.metadata.percent_off, annualPriceMonthly: !1 }), duration: l ? e?.promotion_metadata?.duration_in_interval : t?.metadata.duration_in_interval, includeThenLabel: !1 }) : d && "Year" === o && s ? f({ price: n }) : "Month" === o ? g : b),
-                h = ({ discountedFormattedPrice: e, duration: t, formattedPrice: n, includeDiscountedPrice: i, includeThenLabel: o, selectedInterval: c }) => {
+                E = ({ activeDiscountInfo: e, discountInfo: t, formattedPrice: n, includeTax: a, isFreeTrial: r, isTierSwitching: i, price: l, selectedInterval: o, shouldRemoveExtraStep: s, withAnnualPriceMonthly: d }) => (r ? ("Month" === o ? m({ price: n }) : p({ price: n })) : t || e ? h({ formattedPrice: n, selectedInterval: o, includeDiscountedPrice: "Year" === o && d, discountedFormattedPrice: (0, c.T)({ price: l, includeTax: a, percentOff: i ? e?.promotion_metadata?.percent_off : t?.metadata.percent_off, annualPriceMonthly: !1 }), duration: i ? e?.promotion_metadata?.duration_in_interval : t?.metadata.duration_in_interval, includeThenLabel: !1 }) : d && "Year" === o && s ? f({ price: n }) : "Month" === o ? g : b),
+                h = ({ discountedFormattedPrice: e, duration: t, formattedPrice: n, includeDiscountedPrice: l, includeThenLabel: o, selectedInterval: c }) => {
                     let g;
-                    return (g = "Month" === c ? (i ? a.createElement(s().I18NFormatMessage, { $i18n: "a629c16f", discountedPrice: e ?? "", duration: t ?? "" }, a.createElement(l.ZP, { style: { textDecorationLine: "line-through" } }, s().df3ed1c8({ standardPrice: n }))) : d({ duration: t, standardPrice: n })) : i ? a.createElement(s().I18NFormatMessage, { $i18n: "c142e70f", discountedPrice: e ?? "", duration: t ?? "" }, a.createElement(l.ZP, { style: { textDecorationLine: "line-through" } }, s().g261b098({ standardPrice: n }))) : u({ duration: t, standardPrice: n })), o && (g = a.createElement(r.Z, null, a.createElement(l.ZP, { style: y.marginBottom }, g), a.createElement(l.ZP, null, "Year" === c ? p({ price: n }) : m({ price: n })))), g;
+                    return (g = "Month" === c ? (l ? a.createElement(s().I18NFormatMessage, { $i18n: "a629c16f", discountedPrice: e ?? "", duration: t ?? "" }, a.createElement(i.ZP, { style: { textDecorationLine: "line-through" } }, s().df3ed1c8({ standardPrice: n }))) : d({ duration: t, standardPrice: n })) : l ? a.createElement(s().I18NFormatMessage, { $i18n: "c142e70f", discountedPrice: e ?? "", duration: t ?? "" }, a.createElement(i.ZP, { style: { textDecorationLine: "line-through" } }, s().g261b098({ standardPrice: n }))) : u({ duration: t, standardPrice: n })), o && (g = a.createElement(r.Z, null, a.createElement(i.ZP, { style: y.marginBottom }, g), a.createElement(i.ZP, null, "Year" === c ? p({ price: n }) : m({ price: n })))), g;
                 },
-                y = i.default.create((e) => ({ marginBottom: { marginBottom: e.spaces.space8 } }));
+                y = l.default.create((e) => ({ marginBottom: { marginBottom: e.spaces.space8 } }));
         },
         955010: (e, t, n) => {
             n.d(t, { B: () => u });
             var a = n(265433),
                 r = n(202784),
-                l = (n(585488), n(351743)),
-                i = n.n(l),
+                i = (n(585488), n(351743)),
+                l = n.n(i),
                 o = n(468811),
                 s = n.n(o),
                 c = n(71620);
             const d = a.Z;
             function u(e, t, n) {
-                const [a] = i()(d),
-                    l = (0, c.po)();
+                const [a] = l()(d),
+                    i = (0, c.po)();
                 return r.useCallback(
-                    (r, i) => {
+                    (r, l) => {
                         a({
-                            variables: { module_id: i, enabled_for_display: r },
-                            optimisticResponse: { user_update_module_visibility: { user_results: { id: s().v4(), result: { __typename: "User", id: e, editable_profilemodules: { modules_for_display: r ? [{ module_id: i }] : [] } } } } },
+                            variables: { module_id: l, enabled_for_display: r },
+                            optimisticResponse: { user_update_module_visibility: { user_results: { id: s().v4(), result: { __typename: "User", id: e, editable_profilemodules: { modules_for_display: r ? [{ module_id: l }] : [] } } } } },
                             onError: (e) => {
-                                l(e);
+                                i(e);
                             },
                             onCompleted: () => {
                                 t && n && (t(!1), n());
                             },
                         });
                     },
-                    [l, n, t, e, a],
+                    [i, n, t, e, a],
                 );
             }
         },
@@ -69,8 +69,8 @@
             n.d(t, { Z: () => v });
             var a = n(202784),
                 r = n(108362),
-                l = n(420412),
-                i = n(154003),
+                i = n(420412),
+                l = n(154003),
                 o = n(392237),
                 s = n(674132),
                 c = n.n(s),
@@ -94,7 +94,7 @@
                         }),
                         (this._render = () => {
                             const { children: e, onSubmit: t, submitDisabled: n, submitLabel: o, submitType: s, withMarginBottom: c } = this.props;
-                            return a.createElement(r.Z, { style: [Z.contentRoot, c && Z.withMarginBottom] }, e, t ? a.createElement(a.Fragment, null, a.createElement(l.Z, null), a.createElement(r.Z, { style: Z.buttonContainer }, a.createElement(i.ZP, { disabled: n, onPress: t, style: Z.button, testID: E, type: s }, o))) : null);
+                            return a.createElement(r.Z, { style: [Z.contentRoot, c && Z.withMarginBottom] }, e, t ? a.createElement(a.Fragment, null, a.createElement(i.Z, null), a.createElement(r.Z, { style: Z.buttonContainer }, a.createElement(l.ZP, { disabled: n, onPress: t, style: Z.button, testID: E, type: s }, o))) : null);
                         }),
                         (this._handleFetch = () => {
                             const { createLocalApiErrorHandler: e, fetchSettingsIfNeeded: t } = this.props;
@@ -110,10 +110,10 @@
                     return e && e.pathname === n ? "/" : n;
                 }
                 render() {
-                    const { onBackClick: e, rightControl: t, screenType: n, secondaryBar: r, title: l, viewerUser: i, withBottomBorder: o } = this.props,
+                    const { onBackClick: e, rightControl: t, screenType: n, secondaryBar: r, title: i, viewerUser: l, withBottomBorder: o } = this.props,
                         s = this.getBackLocation(),
-                        c = i ? `@${i.screen_name}` : void 0;
-                    return a.createElement(u.Z, { backLocation: s, onBackClick: e, rightControl: t, screenType: n, secondaryBar: r, showSubtitleOnWideDetail: !1, subtitle: c, title: l, withBottomBorder: o }, i ? this._renderWithFetchSettings() : this._render());
+                        c = l ? `@${l.screen_name}` : void 0;
+                    return a.createElement(u.Z, { backLocation: s, onBackClick: e, rightControl: t, screenType: n, secondaryBar: r, showSubtitleOnWideDetail: !1, subtitle: c, title: i, withBottomBorder: o }, l ? this._renderWithFetchSettings() : this._render());
                 }
             }
             y.defaultProps = { submitLabel: h, submitType: "brandFilled", withMarginBottom: !0 };
@@ -124,8 +124,8 @@
             n.r(t), n.d(t, { default: () => S });
             var a = n(807896),
                 r = (n(136728), n(719681)),
-                l = n(934562),
-                i = n(202784),
+                i = n(934562),
+                l = n(202784),
                 o = n(614983),
                 s = n.n(o),
                 c = (n(585488), n(351743)),
@@ -140,7 +140,7 @@
                 h = n(454104),
                 y = n(406098),
                 Z = n(358981);
-            const v = l.Z,
+            const v = i.Z,
                 I = r.Z,
                 C = m().g2c0144a,
                 _ = m().b12424fc,
@@ -148,20 +148,20 @@
                 w = (e) => {
                     const { history: t } = e,
                         n = (0, f.p)(I, {}),
-                        { basePath: r, isVerifiedOrg: l } = (0, h.Z)(),
+                        { basePath: r, isVerifiedOrg: i } = (0, h.Z)(),
                         o = n?.viewer?.user_results?.result?.rest_id || "",
                         s = n?.viewer?.user_results?.result?.recruiting_organization_results?.result?.__id;
-                    return o && s ? (!l && (n?.viewer?.user_results?.result?.recruiting_organization_results?.result?.job_count?.total_count || 0) >= 3 && t.push(r), i.createElement(T, (0, a.Z)({}, e, { basePath: r, isVerifiedOrg: l, orgQueryId: s, viewerUserId: o }))) : null;
+                    return o && s ? (!i && (n?.viewer?.user_results?.result?.recruiting_organization_results?.result?.job_count?.total_count || 0) >= 3 && t.push(r), l.createElement(T, (0, a.Z)({}, e, { basePath: r, isVerifiedOrg: i, orgQueryId: s, viewerUserId: o }))) : null;
                 },
                 T = (e) => {
-                    const { basePath: t, history: n, isVerifiedOrg: a, orgQueryId: r, viewerUserId: l } = e,
+                    const { basePath: t, history: n, isVerifiedOrg: a, orgQueryId: r, viewerUserId: i } = e,
                         [o, c] = d()(v),
-                        u = i.useCallback(
+                        u = l.useCallback(
                             (e) => {
                                 "number" == typeof e?.salary_min && e.salary_min < 0 && (e.salary_min = null),
                                     "number" == typeof e?.salary_max && e.salary_max < 0 && (e.salary_max = null),
                                     o({
-                                        variables: { userId: l, ...e },
+                                        variables: { userId: i, ...e },
                                         updater: (e, t) => {
                                             const n = e.get(r);
                                             s()(n, "orgRecord must be specified"), n.invalidateRecord();
@@ -174,16 +174,16 @@
                                         },
                                     });
                             },
-                            [o, l, r, n, t],
+                            [o, i, r, n, t],
                         ),
-                        m = i.useCallback(() => {
+                        m = l.useCallback(() => {
                             n.push(t);
                         }, [t, n]);
-                    return i.createElement(g.Z, { TabBar: a ? Z.Z : void 0, history: n, isFullWidth: !0, primaryContent: i.createElement(y.Z, { description: k, formTitle: _, isMutationInFlight: c, onCancel: m, onSubmit: u }), sidebarContent: null, title: a ? C : null, withTweetButton: !1 });
+                    return l.createElement(g.Z, { TabBar: a ? Z.Z : void 0, history: n, isFullWidth: !0, primaryContent: l.createElement(y.Z, { description: k, formTitle: _, isMutationInFlight: c, onCancel: m, onSubmit: u }), sidebarContent: null, title: a ? C : null, withTweetButton: !1 });
                 },
                 P = { context: "AddJobList" },
-                x = (e) => ((0, p.ph)(), i.createElement(b.H, { errorConfig: P }, i.createElement(w, e))),
-                S = i.memo(x);
+                x = (e) => ((0, p.ph)(), l.createElement(b.H, { errorConfig: P }, l.createElement(w, e))),
+                S = l.memo(x);
         },
         336678: (e, t, n) => {
             n.d(t, { Z: () => r });
@@ -195,9 +195,9 @@
             n.r(t), n.d(t, { default: () => yn });
             var a = n(202784),
                 r = n(952793),
-                l = n(325686),
-                i = n(10622),
-                o = n.n(i),
+                i = n(325686),
+                l = n(10622),
+                o = n.n(l),
                 s = n(712696),
                 c = n.n(s),
                 d = n(437429),
@@ -229,12 +229,12 @@
                 z = E().b3ca0108,
                 N = a.createElement(m.ZP, { link: P.accountSelect });
             function $(e) {
-                const t = a.createElement(l.Z, { style: U.section }, a.createElement(m.ZP, { size: "headline2", style: U.howToHeadline, weight: "bold" }, x), a.createElement(m.ZP, null, S), a.createElement(m.ZP, null, a.createElement("ol", { style: U.list }, a.createElement("li", null, a.createElement(E().I18NFormatMessage, { $i18n: "a5f1d09f" }, a.cloneElement(N, null, E().g3754d57))), a.createElement("li", null, a.createElement(E().I18NFormatMessage, { $i18n: "e3a90717" })), a.createElement("li", null, a.createElement(E().I18NFormatMessage, { $i18n: "b743c7b7" })), a.createElement("li", null, a.createElement(E().I18NFormatMessage, { $i18n: "d5128627" }))))),
-                    n = a.createElement(l.Z, { style: U.section }, a.createElement(m.ZP, { size: "headline2", style: U.howToHeadline, weight: "bold" }, M), a.createElement(m.ZP, null, a.createElement("ul", { style: U.list }, a.createElement("li", null, a.createElement(E().I18NFormatMessage, { $i18n: "a5f1d09f" }, a.cloneElement(N, null, E().g3754d57))), a.createElement("li", null, a.createElement(E().I18NFormatMessage, { $i18n: "ecd5d325" })), a.createElement("li", null, a.createElement(E().I18NFormatMessage, { $i18n: "b743c7b7" })), a.createElement("li", null, a.createElement(E().I18NFormatMessage, { $i18n: "d523367f" }))))),
-                    r = a.createElement(l.Z, { style: U.section }, a.createElement(m.ZP, { size: "headline2", style: U.howToHeadline, weight: "bold" }, A), a.createElement(m.ZP, null, a.createElement("ul", { style: U.list }, a.createElement("li", null, a.createElement(E().I18NFormatMessage, { $i18n: "c10a3649" })), a.createElement("li", null, a.createElement(E().I18NFormatMessage, { $i18n: "fab86f55" }, a.cloneElement(N, null, E().i615ad63))), a.createElement("li", null, a.createElement(E().I18NFormatMessage, { $i18n: "b743c7b7" })), a.createElement("li", null, a.createElement(E().I18NFormatMessage, { $i18n: "h9fe1a6d" })), a.createElement("li", null, a.createElement(E().I18NFormatMessage, { $i18n: "d523367f" }))))),
-                    i = a.createElement(l.Z, { style: U.section }, a.createElement(m.ZP, { size: "headline2", style: U.howToHeadline, weight: "bold" }, F), a.createElement(m.ZP, null, a.createElement("ul", { style: U.list }, a.createElement("li", null, a.createElement(E().I18NFormatMessage, { $i18n: "a4087047" })), a.createElement("li", null, a.createElement(E().I18NFormatMessage, { $i18n: "ca18299b" })), a.createElement("li", null, a.createElement(E().I18NFormatMessage, { $i18n: "b83bc371" }, a.cloneElement(N, null, E().a3ba48b9))), a.createElement("li", null, a.createElement(E().I18NFormatMessage, { $i18n: "b743c7b7" })), a.createElement("li", null, a.createElement(E().I18NFormatMessage, { $i18n: "d523367f" }))))),
-                    o = a.createElement(l.Z, { style: U.adsHowToCard }, a.createElement(w.Z, { description: D, linkLabel: B, onClick: () => window.open(P.home, "_blank"), secondaryDescription: z }));
-                return a.createElement(l.Z, { style: U.howToSection }, o, t, n, r, i);
+                const t = a.createElement(i.Z, { style: U.section }, a.createElement(m.ZP, { size: "headline2", style: U.howToHeadline, weight: "bold" }, x), a.createElement(m.ZP, null, S), a.createElement(m.ZP, null, a.createElement("ol", { style: U.list }, a.createElement("li", null, a.createElement(E().I18NFormatMessage, { $i18n: "a5f1d09f" }, a.cloneElement(N, null, E().g3754d57))), a.createElement("li", null, a.createElement(E().I18NFormatMessage, { $i18n: "e3a90717" })), a.createElement("li", null, a.createElement(E().I18NFormatMessage, { $i18n: "b743c7b7" })), a.createElement("li", null, a.createElement(E().I18NFormatMessage, { $i18n: "d5128627" }))))),
+                    n = a.createElement(i.Z, { style: U.section }, a.createElement(m.ZP, { size: "headline2", style: U.howToHeadline, weight: "bold" }, M), a.createElement(m.ZP, null, a.createElement("ul", { style: U.list }, a.createElement("li", null, a.createElement(E().I18NFormatMessage, { $i18n: "a5f1d09f" }, a.cloneElement(N, null, E().g3754d57))), a.createElement("li", null, a.createElement(E().I18NFormatMessage, { $i18n: "ecd5d325" })), a.createElement("li", null, a.createElement(E().I18NFormatMessage, { $i18n: "b743c7b7" })), a.createElement("li", null, a.createElement(E().I18NFormatMessage, { $i18n: "d523367f" }))))),
+                    r = a.createElement(i.Z, { style: U.section }, a.createElement(m.ZP, { size: "headline2", style: U.howToHeadline, weight: "bold" }, A), a.createElement(m.ZP, null, a.createElement("ul", { style: U.list }, a.createElement("li", null, a.createElement(E().I18NFormatMessage, { $i18n: "c10a3649" })), a.createElement("li", null, a.createElement(E().I18NFormatMessage, { $i18n: "fab86f55" }, a.cloneElement(N, null, E().i615ad63))), a.createElement("li", null, a.createElement(E().I18NFormatMessage, { $i18n: "b743c7b7" })), a.createElement("li", null, a.createElement(E().I18NFormatMessage, { $i18n: "h9fe1a6d" })), a.createElement("li", null, a.createElement(E().I18NFormatMessage, { $i18n: "d523367f" }))))),
+                    l = a.createElement(i.Z, { style: U.section }, a.createElement(m.ZP, { size: "headline2", style: U.howToHeadline, weight: "bold" }, F), a.createElement(m.ZP, null, a.createElement("ul", { style: U.list }, a.createElement("li", null, a.createElement(E().I18NFormatMessage, { $i18n: "a4087047" })), a.createElement("li", null, a.createElement(E().I18NFormatMessage, { $i18n: "ca18299b" })), a.createElement("li", null, a.createElement(E().I18NFormatMessage, { $i18n: "b83bc371" }, a.cloneElement(N, null, E().a3ba48b9))), a.createElement("li", null, a.createElement(E().I18NFormatMessage, { $i18n: "b743c7b7" })), a.createElement("li", null, a.createElement(E().I18NFormatMessage, { $i18n: "d523367f" }))))),
+                    o = a.createElement(i.Z, { style: U.adsHowToCard }, a.createElement(w.Z, { description: D, linkLabel: B, onClick: () => window.open(P.home, "_blank"), secondaryDescription: z }));
+                return a.createElement(i.Z, { style: U.howToSection }, o, t, n, r, l);
             }
             const U = b.default.create((e) => ({ howToSection: { marginBottom: e.spaces.space16 }, section: { marginTop: e.spaces.space40 }, howToHeadline: { marginBottom: e.spaces.space8 }, adsHowToCard: { width: "50%", marginTop: e.spaces.space20 }, list: { marginBottom: 0 } })),
                 L = a.memo($);
@@ -249,7 +249,7 @@
                 Y = (e) => {
                     const { history: t, location: n } = e,
                         r = (0, p.Zz)(),
-                        i = u()(),
+                        l = u()(),
                         s = c()(O.Z, {}),
                         { interval: d, tier: b } = (0, C.Z)();
                     window.history.replaceState({ verifiedOrgAdminError: null }, document.title);
@@ -268,7 +268,7 @@
                         },
                         y = a.useCallback((e) => [...f(e)].sort((e, t) => h(e.status) - h(t.status)), [f]),
                         Z = a.useCallback(() => {
-                            o()(i, O.Z, {})
+                            o()(l, O.Z, {})
                                 .toPromise()
                                 .then((e) => {
                                     w(y(e));
@@ -276,7 +276,7 @@
                                 .catch(() => {
                                     t.replace(n.pathname, { verifiedOrgAdminError: I.F.adsPromoActivation });
                                 });
-                        }, [i, y, t, n]),
+                        }, [l, y, t, n]),
                         [k, w] = a.useState(y(s)),
                         T = a.useMemo(() => {
                             const e = f(s),
@@ -289,28 +289,28 @@
                         a.Fragment,
                         null,
                         a.createElement(
-                            l.Z,
+                            i.Z,
                             { style: [Q.header, r ? Q.marginBottom64 : null] },
                             a.createElement(_.Z, null),
                             a.createElement(m.ZP, { size: "title2", weight: "bold" }, j),
                             a.createElement(m.ZP, { style: Q.pageDescription, testID: "pageDescription" }, x),
                             a.createElement(m.ZP, { size: "subtext3", style: Q.pageSubtext, testID: "pageSubtext" }, "*", R),
                             a.createElement(
-                                l.Z,
+                                i.Z,
                                 { style: Q.section },
                                 a.createElement(m.ZP, { size: "headline2", style: Q.creditsSubtitle, testID: "creditsSubtitle", weight: "bold" }, G),
                                 a.createElement(m.ZP, { testID: "creditsDescription" }, a.createElement(E().I18NFormatMessage, { $i18n: "i3781135" }, a.cloneElement(J, null, E().af6704d7))),
                                 a.createElement(I.Z, null),
                                 T && a.createElement(g.Z.Primary, { headline: W, style: Q.noCouponsLabel, withIcon: !1 }),
                                 a.createElement(
-                                    l.Z,
+                                    i.Z,
                                     { style: Q.couponsContainer },
                                     k.map((e, t) => a.createElement(v.Z, { item: e, key: t, onSuccessfulActivation: Z })),
                                 ),
                             ),
                             a.createElement(L, null),
                         ),
-                        a.createElement(l.Z, { style: [Q.stickySection, r ? Q.bottomMobile : Q.bottomDesktop] }, a.createElement(m.ZP, null, a.createElement(E().I18NFormatMessage, { $i18n: "ff1cc953" }, a.createElement(m.ZP, { link: { pathname: "mailto:verified-premium-support@x.com", external: !0 } }, E().b293c6b4)))),
+                        a.createElement(i.Z, { style: [Q.stickySection, r ? Q.bottomMobile : Q.bottomDesktop] }, a.createElement(m.ZP, null, a.createElement(E().I18NFormatMessage, { $i18n: "ff1cc953" }, a.createElement(m.ZP, { link: { pathname: "mailto:verified-premium-support@x.com", external: !0 } }, E().b293c6b4)))),
                     );
                 },
                 Q = b.default.create((e) => ({ header: { flexDirection: "column", justifyContent: "space-between", alignItems: "flex-start", flexWrap: "wrap", paddingHorizontal: e.spaces.space16, marginVertical: e.spaces.space16 }, marginBottom64: { marginBottom: e.spaces.space64 }, pageDescription: { marginTop: e.spaces.space16 }, pageSubtext: { marginTop: e.spaces.space24 }, section: { width: "100%", marginTop: e.spaces.space40 }, creditsSubtitle: { marginBottom: e.spaces.space8 }, couponsContainer: { width: "100%", flexDirection: "row", gap: e.spaces.space24, marginTop: e.spaces.space16, paddingStart: e.spaces.space2, flexWrap: "wrap" }, stickySection: { display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", position: "sticky", start: 0, bottom: 0, end: 0, width: "100%", backgroundColor: e.colors.cellBackground, padding: e.spaces.space16, borderTopColor: e.colors.borderColor, borderTopStyle: "solid", borderTopWidth: e.borderWidths.small }, bottomDesktop: { bottom: 0 }, bottomMobile: { bottom: h.h$ }, noCouponsLabel: { marginTop: e.spaces.space16 } })),
@@ -322,8 +322,8 @@
                 ne = n(897571),
                 ae = n(948927),
                 re = n(630887),
-                le = (n(278945), n(530732)),
-                ie = n(154003),
+                ie = (n(278945), n(530732)),
+                le = n(154003),
                 oe = n(868634),
                 se = n(593385),
                 ce = n(656474);
@@ -333,7 +333,7 @@
                 pe = ({ promotions: e, showPromotionModal: t }) => {
                     const n = a.useMemo(() => e.toSorted(be), [e]);
                     return a.createElement(
-                        l.Z,
+                        i.Z,
                         null,
                         n.map((e) => a.createElement(Ee, { key: e.__id, promotion: e, showPromotionModal: t })),
                     );
@@ -343,20 +343,20 @@
                     const n = ge[e.isCouponDone ? "Expired" : e.status],
                         a = ge[t.isCouponDone ? "Expired" : t.status],
                         r = e.validUntil ?? e.expires,
-                        l = r ? r.getTime() : 0,
-                        i = t.validUntil ?? t.expires,
-                        o = i ? i.getTime() : 0,
+                        i = r ? r.getTime() : 0,
+                        l = t.validUntil ?? t.expires,
+                        o = l ? l.getTime() : 0,
                         s = "Expired" === e.status ? -1 : 1;
-                    return n - a || s * (l - o);
+                    return n - a || s * (i - o);
                 },
                 fe = E().gd7d051c,
                 Ee = ({ promotion: e, showPromotionModal: t }) => {
                     const n = Ze(e),
                         r = Te(e),
-                        i = Pe(e),
+                        l = Pe(e),
                         o = "Redeemable" === e.status,
                         s = a.useCallback(() => t(e), [e, t]);
-                    return a.createElement(le.Z, { role: "adscredititem", style: Ue.adsCreditItem }, a.createElement(l.Z, { style: Ue.adsCreditItemContent }, a.createElement(l.Z, { style: Ue.labeledAction }, a.createElement(m.ZP, { size: "body", weight: "bold" }, n), i), r ? a.createElement(m.ZP, { color: "gray700", size: "subtext1", style: Ue.subText, weight: "normal" }, r) : null), o ? a.createElement(ie.ZP, { onClick: s }, fe) : null);
+                    return a.createElement(ie.Z, { role: "adscredititem", style: Ue.adsCreditItem }, a.createElement(i.Z, { style: Ue.adsCreditItemContent }, a.createElement(i.Z, { style: Ue.labeledAction }, a.createElement(m.ZP, { size: "body", weight: "bold" }, n), l), r ? a.createElement(m.ZP, { color: "gray700", size: "subtext1", style: Ue.subText, weight: "normal" }, r) : null), o ? a.createElement(le.ZP, { onClick: s }, fe) : null);
                 },
                 he = E().f2011db1,
                 ye = E().ae37e25c,
@@ -373,14 +373,14 @@
                 Te = (e) => {
                     const { expires: t, starts: n, validUntil: a } = e,
                         r = a ?? t,
-                        l = e.forAdsAccountId;
-                    if (e.isCouponDone) return ve({ accountId: l });
+                        i = e.forAdsAccountId;
+                    if (e.isCouponDone) return ve({ accountId: i });
                     switch (e.status) {
                         case "Expired":
-                            return t && r ? (l ? Ie({ when: (0, ce.B)(r), accountId: l }) : Ce({ when: (0, ce.B)(r) })) : null;
+                            return t && r ? (i ? Ie({ when: (0, ce.B)(r), accountId: i }) : Ce({ when: (0, ce.B)(r) })) : null;
                         case "Redeemable":
                         case "Active":
-                            return t && r ? (l ? _e({ when: (0, ce.B)(r), accountId: l }) : ke({ when: (0, ce.B)(r) })) : null;
+                            return t && r ? (i ? _e({ when: (0, ce.B)(r), accountId: i }) : ke({ when: (0, ce.B)(r) })) : null;
                         case "Scheduled":
                             return n ? we({ when: (0, ce.B)(n) }) : null;
                         default:
@@ -416,8 +416,8 @@
                 Le = ({ user: e }) => {
                     const [t, n] = a.useState(),
                         r = a.useCallback(() => n(void 0), [n]),
-                        i = (0, ce.C)(e);
-                    return a.createElement(l.Z, null, i.length > 0 ? a.createElement(pe, { promotions: i, showPromotionModal: n }) : a.createElement(me, null), t ? a.createElement(se.Z, { coupon: t, onDismiss: r }) : null);
+                        l = (0, ce.C)(e);
+                    return a.createElement(i.Z, null, l.length > 0 ? a.createElement(pe, { promotions: l, showPromotionModal: n }) : a.createElement(me, null), t ? a.createElement(se.Z, { coupon: t, onDismiss: r }) : null);
                 };
             var Oe = n(24410),
                 He = n(277660),
@@ -431,12 +431,12 @@
                             n = t?.status;
                         return "Pending" === n;
                     })(e)
-                        ? a.createElement(l.Z, { style: Je.callouts }, a.createElement(g.Z.Attention, { headline: Re, text: Ge, withIcon: !0 }))
+                        ? a.createElement(i.Z, { style: Je.callouts }, a.createElement(g.Z.Attention, { headline: Re, text: Ge, withIcon: !0 }))
                         : null,
                 Je = b.default.create((e) => ({ callouts: {} })),
                 Ye = ({ user: e }) => a.createElement(We, { user: Ve()(je, e) }),
-                Qe = ({ children: e }) => a.createElement(l.Z, { style: Ke.group }, e),
-                qe = ({ children: e, intro: t, title: n }) => a.createElement(l.Z, { style: Ke.section }, n ? a.createElement(m.ZP, { size: "headline1", style: Ke.title, weight: "bold" }, n) : null, t ? a.createElement(m.ZP, { style: Ke.intro }, t) : null, e),
+                Qe = ({ children: e }) => a.createElement(i.Z, { style: Ke.group }, e),
+                qe = ({ children: e, intro: t, title: n }) => a.createElement(i.Z, { style: Ke.section }, n ? a.createElement(m.ZP, { size: "headline1", style: Ke.title, weight: "bold" }, n) : null, t ? a.createElement(m.ZP, { style: Ke.intro }, t) : null, e),
                 Ke = b.default.create((e) => ({ group: { gap: e.spaces.space32 }, section: {}, title: { marginBottom: e.spaces.space8 }, intro: {} }));
             n(571372);
             var Xe = n(716980),
@@ -445,8 +445,8 @@
                 nt = n(143670),
                 at = n(293723),
                 rt = n(263272),
-                lt = n(913973),
-                it = n(390587),
+                it = n(913973),
+                lt = n(390587),
                 ot = n(17412),
                 st = n(529356),
                 ct = n(854219);
@@ -507,7 +507,7 @@
                 Ft = E().d82c2074,
                 Dt = ({ account: e, onDismiss: t }) => {
                     const n = e.id;
-                    return a.createElement(st.Z, { actionType: "primaryFilled", graphicDisplayMode: "none", headline: At, onAction: t, onClose: t, role: "dialog", subtext: Mt({ adAccountId: n }), withPassthroughEvents: !0 }, a.createElement(ct.Z, null, a.createElement(ie.ZP, { size: "medium", type: "primaryFilled" }, Ft)));
+                    return a.createElement(st.Z, { actionType: "primaryFilled", graphicDisplayMode: "none", headline: At, onAction: t, onClose: t, role: "dialog", subtext: Mt({ adAccountId: n }), withPassthroughEvents: !0 }, a.createElement(ct.Z, null, a.createElement(le.ZP, { size: "medium", type: "primaryFilled" }, Ft)));
                 },
                 Bt = Xe.Z,
                 zt = (e) => {
@@ -518,9 +518,9 @@
                 $t = b.default.theme.colors.gray600,
                 Ut = ({ advertiserAccounts: e, org: t }) => {
                     const [n, r] = a.useState(),
-                        l = (0, re.zK)(),
-                        i = [a.useMemo(() => jt(e, r), [e, r]), a.useMemo(() => (l ? Xt(e, t, r) : null), [e, t, l, r])].filter(Boolean);
-                    return a.createElement(a.Fragment, null, a.createElement(et.Z, { allowMultipleToggles: !1 }, i), n);
+                        i = (0, re.zK)(),
+                        l = [a.useMemo(() => jt(e, r), [e, r]), a.useMemo(() => (i ? Xt(e, t, r) : null), [e, t, i, r])].filter(Boolean);
+                    return a.createElement(a.Fragment, null, a.createElement(et.Z, { allowMultipleToggles: !1 }, l), n);
                 },
                 Lt = (e) => ({ isComplete: !0, task: e }),
                 Ot = (e) => ({ isComplete: !1, task: e }),
@@ -541,12 +541,12 @@
                         r = () => {
                             t();
                         },
-                        l = () => {
+                        i = () => {
                             t(a.createElement(dt, { account: e, onDismiss: r }));
                         };
                     switch (n) {
                         case "EligibleHasPaymentMethod":
-                            return Lt(a.createElement(nt.Z, { Icon: lt.default, actionSubText: Gt[n], actionText: qt(e), key: e.id, style: rn.subTaskMenuItem }));
+                            return Lt(a.createElement(nt.Z, { Icon: it.default, actionSubText: Gt[n], actionText: qt(e), key: e.id, style: rn.subTaskMenuItem }));
                         case "IneligibleLastPaymentFailed":
                         case "EligibleNeedsPaymentMethod":
                         case "IneligibleLockedOut":
@@ -556,14 +556,14 @@
                         case "IneligibleUnsupportedServiceLevel":
                         case "IneligiblePreAdvertiserMissingCountryCode":
                         case "IneligibleUnauthorized":
-                            return Ot(a.createElement(nt.Z, { Icon: it.default, actionSubText: Gt[n], actionText: qt(e), key: e.id, onClick: l, style: rn.subTaskMenuItem }));
+                            return Ot(a.createElement(nt.Z, { Icon: lt.default, actionSubText: Gt[n], actionText: qt(e), key: e.id, onClick: i, style: rn.subTaskMenuItem }));
                         default:
                             throw new Error(`unexpected AdvertiserAccountEligibility: '${n}'`);
                     }
                 },
                 Jt = E().d637962c,
                 Yt = E().dd087ae0,
-                Qt = () => Ot(a.createElement(nt.Z, { Icon: it.default, actionSubText: Yt, actionText: Jt, key: "makeNoAdAccountsSetupTask", link: { pathname: "https://ads.x.com/", external: !0 }, style: rn.subTaskMenuItem })),
+                Qt = () => Ot(a.createElement(nt.Z, { Icon: lt.default, actionSubText: Yt, actionText: Jt, key: "makeNoAdAccountsSetupTask", link: { pathname: "https://ads.x.com/", external: !0 }, style: rn.subTaskMenuItem })),
                 qt = (e) => {
                     if (e && null != e.name) return e && `${e.name} (id: ${e.id})`;
                 },
@@ -576,25 +576,25 @@
                 en = { EligibleJobPromotionAvailable: E().i3d7dd02, IneligibleAdsAccountMissing: E().cc8f8516, IneligibleUnauthorized: E().b4f117b8, IneligibleAdsAccountNeedsAttention: E().b7347cf4 },
                 tn = (e, t) => {
                     const { jobPromotionAccount: n, jobPromotionEligibility: r } = e,
-                        l = () => {
+                        i = () => {
                             t();
                         },
-                        i = () => {
-                            t(a.createElement(dt, { account: n, onDismiss: l }));
+                        l = () => {
+                            t(a.createElement(dt, { account: n, onDismiss: i }));
                         };
                     switch (r) {
                         case "EligibleJobPromotionAvailable":
-                            return Lt(a.createElement(nt.Z, { Icon: lt.default, actionSubText: qt(n), actionText: en[r], key: r, style: rn.subTaskMenuItem }));
+                            return Lt(a.createElement(nt.Z, { Icon: it.default, actionSubText: qt(n), actionText: en[r], key: r, style: rn.subTaskMenuItem }));
                         case "IneligibleAdsAccountMissing":
                         case "IneligibleUnauthorized":
                         case "IneligibleAdsAccountNeedsAttention":
-                            return Ot(a.createElement(nt.Z, { Icon: it.default, actionSubText: qt(n), actionText: en[r], key: r, onClick: i, style: rn.subTaskMenuItem }));
+                            return Ot(a.createElement(nt.Z, { Icon: lt.default, actionSubText: qt(n), actionText: en[r], key: r, onClick: l, style: rn.subTaskMenuItem }));
                         default:
                             throw new Error(`unexpected JobPromotionEligibility: '${r}'`);
                     }
                 },
                 nn = E().h7d03a2a,
-                an = (e) => (e > 0 ? Lt(a.createElement(nt.Z, { Icon: lt.default, actionText: a.createElement(E().I18NFormatMessage, { $i18n: "b17ac597" }, a.createElement(ot.default, null)), key: "makePostJobsSetupTask", link: "/i/verified/jobs", style: rn.subTaskMenuItem })) : Ot(a.createElement(nt.Z, { Icon: it.default, actionSubText: a.createElement(E().I18NFormatMessage, { $i18n: "ga44a2f9" }, a.createElement(ot.default, null)), actionText: nn, key: "makePostJobsSetupTask", link: "/i/verified/jobs", style: rn.subTaskMenuItem }))),
+                an = (e) => (e > 0 ? Lt(a.createElement(nt.Z, { Icon: it.default, actionText: a.createElement(E().I18NFormatMessage, { $i18n: "b17ac597" }, a.createElement(ot.default, null)), key: "makePostJobsSetupTask", link: "/i/verified/jobs", style: rn.subTaskMenuItem })) : Ot(a.createElement(nt.Z, { Icon: lt.default, actionSubText: a.createElement(E().I18NFormatMessage, { $i18n: "ga44a2f9" }, a.createElement(ot.default, null)), actionText: nn, key: "makePostJobsSetupTask", link: "/i/verified/jobs", style: rn.subTaskMenuItem }))),
                 rn = b.default.create((e) => ({ subTaskMenuItem: { marginStart: e.spaces.space16 } })),
                 ln = ({ user: e }) => a.createElement(Ut, { advertiserAccounts: ae.kb(e), org: zt(e) });
             var on = n(481326);
@@ -602,7 +602,7 @@
                 cn = () => {
                     const e = (0, p.Zz)(),
                         t = (0, r.hC)("responsive_web_verified_organizations_intercom_enabled") ? a.createElement(ct.Z, { style: sn.link }) : a.createElement(m.ZP, { link: on.A9 });
-                    return a.createElement(l.Z, { style: [sn.stickySection, e ? sn.bottomMobile : sn.bottomDesktop] }, a.createElement(m.ZP, null, a.createElement(E().I18NFormatMessage, { $i18n: "ff1cc953" }, a.cloneElement(t, null, E().b293c6b4))));
+                    return a.createElement(i.Z, { style: [sn.stickySection, e ? sn.bottomMobile : sn.bottomDesktop] }, a.createElement(m.ZP, null, a.createElement(E().I18NFormatMessage, { $i18n: "ff1cc953" }, a.cloneElement(t, null, E().b293c6b4))));
                 },
                 dn = X.Z,
                 un = (e) => {
@@ -620,7 +620,7 @@
                 bn = ({ user: e }) => {
                     const t = (0, p.Zz)(),
                         n = (0, re.zK)();
-                    return a.createElement(a.Fragment, null, a.createElement(l.Z, { style: [fn.screen, t ? fn.mobileBottom64 : null] }, a.createElement(Ye, { user: e }), a.createElement(l.Z, { style: fn.content }, a.createElement(m.ZP, { size: "title2", weight: "bold" }, pn), a.createElement(l.Z, null, a.createElement(m.ZP, null, n ? a.createElement(E().I18NFormatMessage, { $i18n: "ba6442ef" }, a.createElement(m.ZP, { link: { pathname: "https://ads.x.com/" } }, E().ha843c96)) : a.createElement(E().I18NFormatMessage, { $i18n: "e52e0c73" }, a.createElement(m.ZP, { link: { pathname: "https://ads.x.com/" } }, E().dd0f3b08)))), a.createElement(ln, { user: e }), a.createElement(Qe, null, a.createElement(qe, { title: gn }, a.createElement(Le, { user: e }))))), a.createElement(cn, null));
+                    return a.createElement(a.Fragment, null, a.createElement(i.Z, { style: [fn.screen, t ? fn.mobileBottom64 : null] }, a.createElement(Ye, { user: e }), a.createElement(i.Z, { style: fn.content }, a.createElement(m.ZP, { size: "title2", weight: "bold" }, pn), a.createElement(i.Z, null, a.createElement(m.ZP, null, n ? a.createElement(E().I18NFormatMessage, { $i18n: "ba6442ef" }, a.createElement(m.ZP, { link: { pathname: "https://ads.x.com/" } }, E().ha843c96)) : a.createElement(E().I18NFormatMessage, { $i18n: "e52e0c73" }, a.createElement(m.ZP, { link: { pathname: "https://ads.x.com/" } }, E().dd0f3b08)))), a.createElement(ln, { user: e }), a.createElement(Qe, null, a.createElement(qe, { title: gn }, a.createElement(Le, { user: e }))))), a.createElement(cn, null));
                 },
                 fn = b.default.create((e) => ({ screen: { flexDirection: "column", paddingHorizontal: e.spaces.space16, gap: e.spaces.space16, marginVertical: e.spaces.space16 }, mobileBottom64: { marginBottom: e.spaces.space64 }, content: { gap: e.spaces.space16 } })),
                 En = { context: "AdvertisingScreen" },
@@ -631,8 +631,8 @@
             n.d(t, { Z: () => m });
             var a = n(202784),
                 r = n(325686),
-                l = n(952428),
-                i = n(731708),
+                i = n(952428),
+                l = n(731708),
                 o = n(96083),
                 s = n(673510),
                 c = n(392237),
@@ -643,7 +643,7 @@
                         m = a.useCallback(() => {
                             t(u ? [] : [...e]);
                         }, [e, t, u]),
-                        g = a.useMemo(() => a.createElement(l.Z, { onClick: m, style: p.selectAllCell }, a.createElement(i.ZP, null, "Select all"), a.createElement(o.Z, { checked: u, onClick: m })), [m, u]),
+                        g = a.useMemo(() => a.createElement(i.Z, { onClick: m, style: p.selectAllCell }, a.createElement(l.ZP, null, "Select all"), a.createElement(o.Z, { checked: u, onClick: m })), [m, u]),
                         b = a.useCallback(
                             (e, a) => {
                                 const r = a ? [...n, e] : n.filter((t) => t.result?.legacy?.id_str !== e.result?.legacy?.id_str);
@@ -657,10 +657,10 @@
                               null,
                               c ? g : null,
                               e?.map((e, t) => {
-                                  const { id_str: r, name: l, profile_image_url_https: i, screen_name: c } = e.result?.legacy || {},
+                                  const { id_str: r, name: i, profile_image_url_https: l, screen_name: c } = e.result?.legacy || {},
                                       d = !!n.find((e) => e.result.legacy?.id_str === r),
                                       u = () => b(e, !d);
-                                  return l && i && c && r ? a.createElement(s.ZP, { avatarUri: i, decoration: a.createElement(o.Z, { checked: d, onClick: u }), displayMode: "UserCompact", key: `affiliate-filter-${t}`, name: l, onAvatarClick: u, onCellClick: u, onScreenNameClick: u, screenName: c, userId: r, withLink: !1 }) : null;
+                                  return i && l && c && r ? a.createElement(s.ZP, { avatarUri: l, decoration: a.createElement(o.Z, { checked: d, onClick: u }), displayMode: "UserCompact", key: `affiliate-filter-${t}`, name: i, onAvatarClick: u, onCellClick: u, onScreenNameClick: u, screenName: c, userId: r, withLink: !1 }) : null;
                               }),
                           )
                         : null;
@@ -673,8 +673,8 @@
             n(136728);
             var a = n(849333),
                 r = n(202784),
-                l = n(325686),
-                i = (n(585488), n(731708)),
+                i = n(325686),
+                l = (n(585488), n(731708)),
                 o = n(688715),
                 s = n(154003),
                 c = n(40610),
@@ -719,9 +719,9 @@
             const J = d.default.create((e) => ({ badgePicker: { marginEnd: 10, textAlign: "end" }, dropdownIcon: { marginStart: e.spaces.space4 } })),
                 Y = function (e) {
                     const { affiliateType: t, disabled: n, onChange: a } = e,
-                        [l, i] = r.useState(!1);
+                        [i, l] = r.useState(!1);
                     function o() {
-                        i(!1);
+                        l(!1);
                     }
                     function c(e) {
                         a(e), o();
@@ -737,7 +737,7 @@
                             {
                                 disabled: n,
                                 onPress: function () {
-                                    i(!0);
+                                    l(!0);
                                 },
                                 style: J.badgePicker,
                                 testID: "badgePickerButton",
@@ -746,7 +746,7 @@
                             d[t],
                             r.createElement(R.default, { style: J.dropdownIcon }),
                         ),
-                        l && r.createElement(V.default, { onDismiss: o }, r.createElement(j.Z, { actionText: G, onClick: () => c(u), testID: `${u}_MenuItem` }), r.createElement(j.Z, { actionText: W, onClick: () => c(m), testID: `${m}_MenuItem` })),
+                        i && r.createElement(V.default, { onDismiss: o }, r.createElement(j.Z, { actionText: G, onClick: () => c(u), testID: `${u}_MenuItem` }), r.createElement(j.Z, { actionText: W, onClick: () => c(m), testID: `${m}_MenuItem` })),
                     );
                 };
             var Q = n(762522);
@@ -758,8 +758,8 @@
                 ne = p().ba047f76,
                 ae = p().cfd2f35e,
                 re = r.createElement(U.default, { testID: "closeIcon" }),
-                le = { label: p().j26dee0e, preferredHorizontalOrientation: "start" },
-                ie = p().e30cbdf0,
+                ie = { label: p().j26dee0e, preferredHorizontalOrientation: "start" },
+                le = p().e30cbdf0,
                 oe = ({ adminId: e, currentUserId: t, disabled: n = !1, item: a, refetch: o, refetchStatus: c }) => {
                     const d = (0, Z.z)(),
                         u = (0, B.useHistory)(),
@@ -814,29 +814,29 @@
                         }
                     }
                     function x() {
-                        return r.createElement(l.Z, { style: ce.VOSubscriberPopover }, r.createElement(i.ZP, null, ie));
+                        return r.createElement(i.Z, { style: ce.VOSubscriberPopover }, r.createElement(l.ZP, null, le));
                     }
                     return (
-                        "Business" === E.legacy?.verified_type ? (w = "Business") : "Government" === E.legacy?.verified_type && ("Circle" === E.profile_image_shape ? (w = "GovernmentIndividual") : "Square" === E.profile_image_shape && (w = "GovernmentOrganization")),
+                        "Business" === E.verification?.verified_type ? (w = "Business") : "Government" === E.verification?.verified_type && ("Circle" === E.profile_image_shape ? (w = "GovernmentIndividual") : "Square" === E.profile_image_shape && (w = "GovernmentOrganization")),
                         r.createElement(
                             r.Fragment,
                             null,
                             m ? r.createElement(N.Z, { actionLabel: te, actionType: "primaryFilled", enableMaskForDismiss: !0, graphicDisplayMode: "none", headline: ee({ name: E.legacy?.screen_name }), onAction: k, onClose: _, onSecondaryAction: _, secondaryActionLabel: ae, secondaryActionType: "primaryOutlined", subtext: ne }) : null,
                             r.createElement(
-                                l.Z,
+                                i.Z,
                                 { role: "listitem" },
                                 r.createElement(
                                     $.Z,
                                     { style: ce.root },
-                                    r.createElement(l.Z, { style: ce.user }, r.createElement(O.Z, { size: "xLarge", user: E }), r.createElement(H.Z, { style: ce.userName, user: E, withLink: !0, withStackedLayout: !0 })),
+                                    r.createElement(i.Z, { style: ce.user }, r.createElement(O.Z, { size: "xLarge", user: E }), r.createElement(H.Z, { style: ce.userName, user: E, withLink: !0, withStackedLayout: !0 })),
                                     r.createElement(
-                                        l.Z,
+                                        i.Z,
                                         { style: ce.rightControls },
                                         (function () {
-                                            const e = r.createElement(Y, { affiliateType: w, disabled: g || h || n, onChange: P, verifiedType: E.legacy?.verified_type || void 0 });
-                                            return h ? r.createElement(l.Z, { testID: "voSubscriberPopover" }, r.createElement(z.Z, { enableHover: !0, renderContent: x }, e)) : e;
+                                            const e = r.createElement(Y, { affiliateType: w, disabled: g || h || n, onChange: P, verifiedType: E.verification?.verified_type || void 0 });
+                                            return h ? r.createElement(i.Z, { testID: "voSubscriberPopover" }, r.createElement(z.Z, { enableHover: !0, renderContent: x }, e)) : e;
                                         })(),
-                                        r.createElement(s.ZP, { disabled: v || n, hoverLabel: le, icon: re, onClick: C, testID: "removeButton", type: "destructiveOutlined" }),
+                                        r.createElement(s.ZP, { disabled: v || n, hoverLabel: ie, icon: re, onClick: C, testID: "removeButton", type: "destructiveOutlined" }),
                                     ),
                                 ),
                             ),
@@ -852,14 +852,14 @@
                 return e.id;
             }
             function ge(e) {
-                const { disabled: t = !1, refetch: n, refetchStatus: a, slice: i, userIds: o } = e,
+                const { disabled: t = !1, refetch: n, refetchStatus: a, slice: l, userIds: o } = e,
                     s = (0, Z.z)();
                 r.useEffect(() => {
                     s.scribe({ component: "accounts", action: "impression" });
                 }, [s]);
                 const c = r.useCallback((e) => (o ? r.createElement(se, { adminId: o.adminId, currentUserId: o.currentUserId, disabled: t, item: e, refetch: n, refetchStatus: a }) : null), [o, n, a, t]),
-                    d = T()(me, i).items_results;
-                return d ? r.createElement(l.Z, { style: fe.wrapper }, d.length ? r.createElement(x.Z, { assumedItemHeight: 64, cacheKey: "accountList", footer: null, identityFunction: pe, items: d, renderer: c, withoutHeadroom: !0 }) : r.createElement(P.Z, (0, _.Z)({}, t ? null : ue, { header: de }))) : null;
+                    d = T()(me, l).items_results;
+                return d ? r.createElement(i.Z, { style: fe.wrapper }, d.length ? r.createElement(x.Z, { assumedItemHeight: 64, cacheKey: "accountList", footer: null, identityFunction: pe, items: d, renderer: c, withoutHeadroom: !0 }) : r.createElement(P.Z, (0, _.Z)({}, t ? null : ue, { header: de }))) : null;
             }
             const be = r.memo(ge),
                 fe = d.default.create((e) => ({ wrapper: { paddingBottom: e.spaces.space64 } }));
@@ -892,7 +892,7 @@
                 Le = p().e9e663ac,
                 { origin: Oe } = y.ZP.get(),
                 He = `${Oe}/i/verified`,
-                Ve = { link: r.createElement(i.ZP, { link: (0, o.ju)("https://legal.x.com/purchaser-terms.html"), withInteractiveStyling: !1 }) };
+                Ve = { link: r.createElement(l.ZP, { link: (0, o.ju)("https://legal.x.com/purchaser-terms.html"), withInteractiveStyling: !1 }) };
             function je({ currentTab: e, isDelegateStore: t, location: n, updateCurrentTab: a, verifiedConfigFetchStatus: o }) {
                 const d = (0, Z.z)(),
                     { featureSwitches: u, userClaims: m } = (0, f.QZ)(),
@@ -934,7 +934,7 @@
                     R = r.createElement(p().I18NFormatMessage, { $i18n: "j1b50481" }, r.cloneElement(Ve.link, null, p().c9729d8a)),
                     G = m.isGovVerifiedOrg() ? R : j,
                     W = [{ key: v.p.ACCOUNTS, label: H ? De({ count: H }) : Fe, isActive: () => V(v.p.ACCOUNTS), to: n.pathname, onClick: () => A(v.p.ACCOUNTS) }];
-                return O ? W.push({ key: v.p.INVITATIONS, label: O ? ze({ count: O }) : Be, isActive: () => V(v.p.INVITATIONS), to: n.pathname, onClick: () => A(v.p.INVITATIONS) }) : e === v.p.INVITATIONS && A(v.p.ACCOUNTS), r.createElement(r.Fragment, null, r.createElement(l.Z, { style: Re.header }, r.createElement(Ie.Z, null), r.createElement(i.ZP, { size: "title2", weight: "bold" }, Se), r.createElement(l.Z, { style: Re.buttonContainer }, r.createElement(he.Z, { affiliatesCount: H, invitesCount: O }), !_ || t || x ? null : r.createElement(ye.Z, { buttonLabel: Me, buttonType: "brandOutlined", cancelUrl: He, scribeElement: "vo-upgrade", shouldShowToast: !0, successUrl: He, tierInterval: "Month" }), r.createElement(s.ZP, { disabled: S, link: S ? void 0 : "/i/verified/invite", onClick: z, size: "medium", type: "brandFilled" }, Ae)), r.createElement(c.Z.Primary, { headline: Ne, style: Re.calloutSpace, text: G }), k ? r.createElement(c.Z.Danger, { headline: $e, style: Re.calloutSpace, text: Ue }) : null, w ? r.createElement(c.Z.Danger, { headline: Le, style: Re.calloutSpace, text: "To avoid your account losing verification, update your payment details. You will not be able to access features until payment is made." }) : null, r.createElement(Q.Z, null)), r.createElement(b.Z, { links: W, style: Re.tabs }), e === v.p.ACCOUNTS && U ? r.createElement(be, { disabled: S, refetch: D, refetchStatus: B, slice: U, userIds: $ }) : null, e === v.p.INVITATIONS && L ? r.createElement(ve.Z, { disabled: S, slice: L, userIds: $ }) : null);
+                return O ? W.push({ key: v.p.INVITATIONS, label: O ? ze({ count: O }) : Be, isActive: () => V(v.p.INVITATIONS), to: n.pathname, onClick: () => A(v.p.INVITATIONS) }) : e === v.p.INVITATIONS && A(v.p.ACCOUNTS), r.createElement(r.Fragment, null, r.createElement(i.Z, { style: Re.header }, r.createElement(Ie.Z, null), r.createElement(l.ZP, { size: "title2", weight: "bold" }, Se), r.createElement(i.Z, { style: Re.buttonContainer }, r.createElement(he.Z, { affiliatesCount: H, invitesCount: O }), !_ || t || x ? null : r.createElement(ye.Z, { buttonLabel: Me, buttonType: "brandOutlined", cancelUrl: He, scribeElement: "vo-upgrade", shouldShowToast: !0, successUrl: He, tierInterval: "Month" }), r.createElement(s.ZP, { disabled: S, link: S ? void 0 : "/i/verified/invite", onClick: z, size: "medium", type: "brandFilled" }, Ae)), r.createElement(c.Z.Primary, { headline: Ne, style: Re.calloutSpace, text: G }), k ? r.createElement(c.Z.Danger, { headline: $e, style: Re.calloutSpace, text: Ue }) : null, w ? r.createElement(c.Z.Danger, { headline: Le, style: Re.calloutSpace, text: "To avoid your account losing verification, update your payment details. You will not be able to access features until payment is made." }) : null, r.createElement(Q.Z, null)), r.createElement(b.Z, { links: W, style: Re.tabs }), e === v.p.ACCOUNTS && U ? r.createElement(be, { disabled: S, refetch: D, refetchStatus: B, slice: U, userIds: $ }) : null, e === v.p.INVITATIONS && L ? r.createElement(ve.Z, { disabled: S, slice: L, userIds: $ }) : null);
             }
             const Re = d.default.create((e) => ({ errorCallout: { margin: 16 }, buttonContainer: { flexDirection: "row", gap: e.spaces.space8, alignItems: "center", justifyContent: "center" }, header: { flexDirection: "row", justifyContent: "space-between", alignItems: "flex-start", flexWrap: "wrap", paddingHorizontal: 16, marginTop: e.spaces.space16 }, tabs: { marginTop: e.spaces.space4 }, calloutSpace: { marginTop: e.spaces.space16 }, loadingIndicator: { marginHorizontal: e.spaces.space12, marginVertical: e.spaces.space4 } })),
                 Ge = { context: "AffiliateList" };
@@ -948,8 +948,8 @@
             n.r(t), n.d(t, { default: () => g });
             var a = n(202784),
                 r = n(325686),
-                l = n(107267),
-                i = n(386802),
+                i = n(107267),
+                l = n(386802),
                 o = n(731708),
                 s = n(154003),
                 c = n(392237),
@@ -958,8 +958,8 @@
                 m = n(980407);
             const p = c.default.create((e) => ({ container: { display: "flex", flexDirection: "column", flexGrow: 1, alignItems: "left", paddingTop: e.spaces.space48, paddingBottom: e.spaces.space48, paddingHorizontal: e.spaces.space72 }, twitterIcon: { color: e.colors.brandColor, height: "2em" }, paddingMobile: { paddingHorizontal: e.spaces.space28 }, mainSubtext: { marginTop: e.spaces.space20 }, okButton: { paddingTop: e.spaces.space16, paddingBottom: e.spaces.space16, marginTop: e.spaces.space32, width: "100%" } })),
                 g = () => {
-                    const e = (0, l.useHistory)(),
-                        { isModal: t } = a.useContext(i.Z),
+                    const e = (0, i.useHistory)(),
+                        { isModal: t } = a.useContext(l.Z),
                         n = u().eb043b72,
                         c = u().a9ac4602,
                         d = u().a219e218;
@@ -991,8 +991,8 @@
             n.r(t), n.d(t, { ApplicationScreen: () => V, default: () => j });
             var a = n(202784),
                 r = (n(571372), n(325686)),
-                l = n(107267),
-                i = n(731708),
+                i = n(107267),
+                l = n(731708),
                 o = n(688715),
                 s = n(386802),
                 c = n(855488),
@@ -1025,11 +1025,11 @@
                     { label: g().j0e2cfa8, value: "Business", disabled: !1 },
                     { label: g().d2042392, value: "Government", disabled: !1 },
                 ],
-                z = { link: a.createElement(i.ZP, { link: (0, o.ju)("https://help.x.com/using-twitter/verified-organizations") }), handle: a.createElement(i.ZP, { weight: "bold" }) },
+                z = { link: a.createElement(l.ZP, { link: (0, o.ju)("https://help.x.com/using-twitter/verified-organizations") }), handle: a.createElement(l.ZP, { weight: "bold" }) },
                 N = (0, o.ju)("https://legal.x.com/purchaser-terms"),
-                $ = { link: a.createElement(i.ZP, { link: N }) },
+                $ = { link: a.createElement(l.ZP, { link: N }) },
                 U = ({ loggedInUser: e }) => {
-                    const t = (0, l.useHistory)(),
+                    const t = (0, i.useHistory)(),
                         { isModal: n } = a.useContext(s.Z),
                         o = (0, h.hC)("responsive_web_verified_organizations_invoice_enabled"),
                         m = (0, y.G3)(t.location),
@@ -1037,7 +1037,7 @@
                     (0, b.q)(() => {
                         p.scribe({ action: "impression", page: "verified-organizations", section: "application", component: "sign-up" });
                     });
-                    const E = (0, l.useLocation)().state,
+                    const E = (0, i.useLocation)().state,
                         k = E?.tier,
                         w = E?.interval || "Month",
                         T = "Basic" === k,
@@ -1051,8 +1051,8 @@
                         [X, ee] = a.useState(),
                         [te, ne] = a.useState(!1),
                         ae = e?.screen_name ? `@${e.screen_name}` : "",
-                        [re, le] = (0, _.HF)(),
-                        ie = a.useCallback(() => {
+                        [re, ie] = (0, _.HF)(),
+                        le = a.useCallback(() => {
                             U(!0), ee(void 0);
                             const e = T ? "BusinessBasic" === q : "Business" === q || "Government" === q,
                                 t = (0, Z.Z)(R);
@@ -1067,7 +1067,7 @@
                                     .catch(() => (ee(C.F.createApplication), a(new Error("Error creating application"))));
                             });
                         }, [T, q, R, L, V, Y, re, o, w, m]);
-                    return a.createElement(f.Z, { backButtonType: "back", history: t }, a.createElement(r.Z, { style: [O.container, n ? void 0 : O.paddingMobile] }, a.createElement(i.ZP, { size: "title2", weight: "heavy" }, P), a.createElement(i.ZP, { color: "gray700", style: O.mainSubtext }, a.createElement(g().I18NFormatMessage, { $i18n: "g42a8521" }, a.cloneElement(z.handle, null, g().f14d7866({ screenName: ae })), a.cloneElement(z.link, null, g().e63bf39d))), a.createElement(c.Z, { invalid: N && !L, label: x, name: "typedOrgName", onChange: (e) => H(e.currentTarget.value), style: O.applicationInput, testID: "orgNameField", value: L }), a.createElement(c.Z, { invalid: N && !Y, label: M, name: "typedOrgWebsite", onChange: (e) => Q(e.currentTarget.value), style: O.applicationInput, testID: "websiteField", value: Y }), T ? null : a.createElement(d.ZP, { hasError: N && !q, label: F, onChange: K, options: B, style: O.orgTypeSelector, testID: "orgTypeField", value: q, withEmptyOption: !0 }), a.createElement(c.Z, { invalid: N && !V, label: S, name: "typedFullName", onChange: (e) => j(e.currentTarget.value), style: O.applicationInput, testID: "fullNameField", value: V }), a.createElement(c.Z, { errorText: W, invalid: N && (!R || !!W), label: A, name: "typedOrgEmailAddress", onChange: (e) => G(e.currentTarget.value), style: O.applicationInput, testID: "emailField", value: R }), a.createElement(r.Z, { style: O.footer }, a.createElement(C.Z, { error: X }), a.createElement(r.Z, { style: O.row }, a.createElement(u.Z, { checked: te, onChange: ne }), a.createElement(i.ZP, { color: "gray700" }, a.createElement(g().I18NFormatMessage, { $i18n: "aacfbecd" }, a.cloneElement($.link, null, g().f09630ff)))), a.createElement(I.Z, { buttonLabel: D, disabled: le || !te, onClick: ie, shouldShowErrorCallout: !0, tierInterval: w }))));
+                    return a.createElement(f.Z, { backButtonType: "back", history: t }, a.createElement(r.Z, { style: [O.container, n ? void 0 : O.paddingMobile] }, a.createElement(l.ZP, { size: "title2", weight: "heavy" }, P), a.createElement(l.ZP, { color: "gray700", style: O.mainSubtext }, a.createElement(g().I18NFormatMessage, { $i18n: "g42a8521" }, a.cloneElement(z.handle, null, g().f14d7866({ screenName: ae })), a.cloneElement(z.link, null, g().e63bf39d))), a.createElement(c.Z, { invalid: N && !L, label: x, name: "typedOrgName", onChange: (e) => H(e.currentTarget.value), style: O.applicationInput, testID: "orgNameField", value: L }), a.createElement(c.Z, { invalid: N && !Y, label: M, name: "typedOrgWebsite", onChange: (e) => Q(e.currentTarget.value), style: O.applicationInput, testID: "websiteField", value: Y }), T ? null : a.createElement(d.ZP, { hasError: N && !q, label: F, onChange: K, options: B, style: O.orgTypeSelector, testID: "orgTypeField", value: q, withEmptyOption: !0 }), a.createElement(c.Z, { invalid: N && !V, label: S, name: "typedFullName", onChange: (e) => j(e.currentTarget.value), style: O.applicationInput, testID: "fullNameField", value: V }), a.createElement(c.Z, { errorText: W, invalid: N && (!R || !!W), label: A, name: "typedOrgEmailAddress", onChange: (e) => G(e.currentTarget.value), style: O.applicationInput, testID: "emailField", value: R }), a.createElement(r.Z, { style: O.footer }, a.createElement(C.Z, { error: X }), a.createElement(r.Z, { style: O.row }, a.createElement(u.Z, { checked: te, onChange: ne }), a.createElement(l.ZP, { color: "gray700" }, a.createElement(g().I18NFormatMessage, { $i18n: "aacfbecd" }, a.cloneElement($.link, null, g().f09630ff)))), a.createElement(I.Z, { buttonLabel: D, disabled: ie || !te, onClick: le, shouldShowErrorCallout: !0, tierInterval: w }))));
                 },
                 L = { context: "WelcomeScreen" };
             const O = m.default.create((e) => ({ container: { display: "flex", flexDirection: "column", flexGrow: 1, paddingTop: e.spaces.space20, paddingBottom: e.spaces.space20, paddingHorizontal: e.spaces.space72 }, paddingMobile: { paddingHorizontal: e.spaces.space28 }, footer: { marginVertical: e.spaces.space16, gap: e.spaces.space16, marginHorizontal: "auto", maxWidth: "460px" }, twitterIcon: { color: e.colors.brandColor, height: "2em" }, mainSubtext: { marginTop: e.spaces.space16, marginBottom: e.spaces.space8 }, applicationInput: { paddingHorizontal: 0, paddingVertical: 5 }, orgTypeSelector: { marginTop: 5 }, row: { flexDirection: "row", gap: e.spaces.space16 }, orgHeading: { marginTop: e.spaces.space8, marginBottom: e.spaces.space12 }, adminHeading: { marginTop: e.spaces.space16, marginBottom: e.spaces.space12 } })),
@@ -1079,4 +1079,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Verified-964cff98.eb16db9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Verified-964cff98.c40cbf6a.js.map

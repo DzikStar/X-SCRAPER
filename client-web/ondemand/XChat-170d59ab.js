@@ -42,9 +42,9 @@
                     O = r.$_$.si,
                     B = r.$_$.ua,
                     I = r.$_$.md,
-                    G = r.$_$.va,
-                    H = r.$_$.o3,
-                    z = r.$_$.h2,
+                    z = r.$_$.va,
+                    G = r.$_$.o3,
+                    H = r.$_$.h2,
                     P = r.$_$.rh,
                     j = r.$_$.bj,
                     F = r.$_$.je,
@@ -55,12 +55,12 @@
                     K = r.$_$.uc;
                 function Q(k) {
                     return (function (k, r) {
-                        return W.call(r), u(r.ubt_1, k), r;
+                        return W.call(r), u(r.qbu_1, k), r;
                     })(k, d(g(W)));
                 }
                 function W() {
                     tk.call(this);
-                    this.ubt_1 = m();
+                    this.qbu_1 = m();
                 }
                 function X(k, r) {
                     for (var e = f(b(r, 10)), a = r.p(); a.q(); ) {
@@ -74,9 +74,9 @@
                 }
                 function kk() {
                     (e = this),
-                        (this.xbt_1 = q([v("<", "&gt;"), v(">", "&lt;"), v('"', "&quot;"), v("'", "&apos;"), v("&", "&amp;")])),
-                        (this.ybt_1 = X(0, this.xbt_1)),
-                        (this.zbt_1 = q([
+                        (this.tbu_1 = q([v("<", "&gt;"), v(">", "&lt;"), v('"', "&quot;"), v("'", "&apos;"), v("&", "&amp;")])),
+                        (this.ubu_1 = X(0, this.tbu_1)),
+                        (this.vbu_1 = q([
                             v("'", "&apos;"),
                             v(" ", "&nbsp"),
                             v(" ", "&nbsp;"),
@@ -431,7 +431,7 @@
                             v("♥", "&hearts;"),
                             v("♦", "&diams;"),
                         ])),
-                        (this.abu_1 = X(0, this.zbt_1));
+                        (this.wbu_1 = X(0, this.vbu_1));
                     var k = m();
                     k.k(v("Æ", "&AElig")),
                         k.k(v("Æ", "&AElig;")),
@@ -2664,8 +2664,8 @@
                         k.k(v("𝓏", "&zscr;")),
                         k.k(v("‍", "&zwj;")),
                         k.k(v("‌", "&zwnj;")),
-                        (this.bbu_1 = w(k)),
-                        (this.cbu_1 = X(0, this.bbu_1));
+                        (this.xbu_1 = w(k)),
+                        (this.ybu_1 = X(0, this.xbu_1));
                 }
                 function rk() {
                     return null == e && new kk(), e;
@@ -2673,25 +2673,25 @@
                 function ek() {
                     a = this;
                     var k = q([v("\0", ""), v("\v", "&#11;"), v("\f", "&#12;"), v("￾", ""), v("￿", "")]);
-                    (this.ebu_1 = Q([new ak(rk().xbt_1), new ak(k), s.dbu(1, 8), s.dbu(14, 31), s.dbu(127, 132), s.dbu(134, 159), new mk()])), (this.fbu_1 = Q([new ak(rk().zbt_1)])), (this.gbu_1 = Q([new ak(rk().bbu_1), s.dbu(1, 8), s.dbu(14, 31), s.dbu(127, 132), s.dbu(134, 159)])), (this.hbu_1 = Q([new ak(rk().abu_1), new pk([])])), (this.ibu_1 = Q([new ak(rk().cbu_1), new pk([])])), (this.jbu_1 = Q([new ak(rk().ybt_1), new pk([])]));
+                    (this.abv_1 = Q([new ak(rk().tbu_1), new ak(k), s.zbu(1, 8), s.zbu(14, 31), s.zbu(127, 132), s.zbu(134, 159), new mk()])), (this.bbv_1 = Q([new ak(rk().vbu_1)])), (this.cbv_1 = Q([new ak(rk().xbu_1), s.zbu(1, 8), s.zbu(14, 31), s.zbu(127, 132), s.zbu(134, 159)])), (this.dbv_1 = Q([new ak(rk().wbu_1), new pk([])])), (this.ebv_1 = Q([new ak(rk().ybu_1), new pk([])])), (this.fbv_1 = Q([new ak(rk().ubu_1), new pk([])]));
                 }
                 function ak(k) {
                     tk.call(this);
-                    this.mbu_1 = E();
-                    this.nbu_1 = A();
+                    this.ibv_1 = E();
+                    this.jbv_1 = A();
                     for (var r = 2147483647, e = 0, a = k.p(); a.q(); ) {
                         var t = a.r(),
                             o = t.zg(),
                             i = t.ah();
-                        this.mbu_1.t2(o, i);
+                        this.ibv_1.t2(o, i);
                         var l = D(o, 0),
                             s = L(l),
                             c = S(x(s));
-                        this.nbu_1.k(new _(c));
+                        this.jbv_1.k(new _(c));
                         var n = o.length;
                         n < r && (r = n), n > e && (e = n);
                     }
-                    (this.obu_1 = r), (this.pbu_1 = e);
+                    (this.kbv_1 = r), (this.lbv_1 = e);
                 }
                 function tk() {}
                 function ok() {
@@ -2705,10 +2705,10 @@
                     O.call(this, k, r);
                 }
                 function sk(k, r) {
-                    return k.rbu_1.w(r);
+                    return k.nbv_1.w(r);
                 }
                 function ck() {
-                    (l = this), (this.sbu_1 = B(uk()));
+                    (l = this), (this.obv_1 = B(uk()));
                 }
                 function nk() {
                     return null == l && new ck(), l;
@@ -2719,11 +2719,11 @@
                 function pk(k) {
                     nk(), tk.call(this);
                     var r;
-                    (r = 0 === k.length ? nk().sbu_1 : G(k.slice())), (this.rbu_1 = r);
+                    (r = 0 === k.length ? nk().obv_1 : z(k.slice())), (this.nbv_1 = r);
                 }
                 function gk() {}
                 function dk(k, r) {
-                    ok.call(this), (this.wbu_1 = k), (this.xbu_1 = r);
+                    ok.call(this), (this.sbv_1 = k), (this.tbv_1 = r);
                 }
                 function mk() {
                     ok.call(this);
@@ -2731,7 +2731,7 @@
                 function hk(k, r, e, a) {
                     (e[(a + 1) | 0] = (function (k, r) {
                         var e = 1023 & r,
-                            a = H(56320),
+                            a = G(56320),
                             t = L(a);
                         return F((e + t) | 0);
                     })(0, r)),
@@ -2740,7 +2740,7 @@
                         })(0, r));
                 }
                 function bk() {
-                    (this.tbu_1 = 65536), (this.ubu_1 = 1114111);
+                    (this.pbv_1 = 65536), (this.qbv_1 = 1114111);
                 }
                 h(tk, "StringTranslator"),
                     h(W, "AggregateTranslator", W, tk),
@@ -2763,45 +2763,45 @@
                     ),
                     h(mk, "UnicodeUnpairedSurrogateRemover", mk, ok),
                     y(bk, "CharsUtils"),
-                    (g(W).vbt = function (k, r, e) {
-                        for (var a = this.ubt_1.p(); a.q(); ) {
-                            var t = a.r().vbt(k, r, e);
+                    (g(W).rbu = function (k, r, e) {
+                        for (var a = this.qbu_1.p(); a.q(); ) {
+                            var t = a.r().rbu(k, r, e);
                             if (0 !== t) return t;
                         }
                         return 0;
                     }),
-                    (g(ek).kbu = function (k) {
-                        return this.ibu_1.wbt(k);
+                    (g(ek).gbv = function (k) {
+                        return this.ebv_1.sbu(k);
                     }),
-                    (g(ek).lbu = function (k) {
-                        return this.kbu(k);
+                    (g(ek).hbv = function (k) {
+                        return this.gbv(k);
                     }),
-                    (g(ak).vbt = function (k, r, e) {
+                    (g(ak).rbu = function (k, r, e) {
                         var a = D(k, r),
                             t = L(a),
                             o = S(x(t));
-                        if (this.nbu_1.w(new _(o))) {
-                            var i = this.pbu_1;
-                            ((r + this.pbu_1) | 0) > k.length && (i = (k.length - r) | 0);
+                        if (this.jbv_1.w(new _(o))) {
+                            var i = this.lbv_1;
+                            ((r + this.lbv_1) | 0) > k.length && (i = (k.length - r) | 0);
                             var l = i,
-                                s = this.obu_1;
+                                s = this.kbv_1;
                             if (s <= l)
                                 do {
                                     var c = l;
                                     l = (l + -1) | 0;
                                     var n = T(k, r, (r + c) | 0),
-                                        u = this.mbu_1.p2($(n));
+                                        u = this.ibv_1.p2($(n));
                                     if (null != u) return e.z8(u), N(n);
                                 } while (c !== s);
                         }
                         return 0;
                     }),
-                    (g(tk).wbt = function (k) {
+                    (g(tk).sbu = function (k) {
                         var r = V(n(k.length, 2));
                         return (
                             (function (k, r, e) {
                                 for (var a = 0, t = r.length; a < t; ) {
-                                    var o = k.vbt(r, a, e);
+                                    var o = k.rbu(r, a, e);
                                     if (0 !== o) {
                                         var i = 0;
                                         if (i < o)
@@ -2820,18 +2820,18 @@
                             r.toString()
                         );
                     }),
-                    (g(ok).vbt = function (k, r, e) {
+                    (g(ok).rbu = function (k, r, e) {
                         var a = D(k, r),
                             t = L(a);
-                        return this.qbu(t, e) ? 1 : 0;
+                        return this.mbv(t, e) ? 1 : 0;
                     }),
-                    (g(pk).vbt = function (k, r, e) {
+                    (g(pk).rbu = function (k, r, e) {
                         var a = k.length;
-                        if (D(k, r) === H(38) && r < ((a - 2) | 0) && D(k, (r + 1) | 0) === H(35)) {
+                        if (D(k, r) === G(38) && r < ((a - 2) | 0) && D(k, (r + 1) | 0) === G(35)) {
                             var t = (r + 2) | 0,
                                 i = !1,
                                 l = D(k, t);
-                            if ((l === H(120) || l === H(88)) && ((i = !0), (t = (t + 1) | 0) === a)) return 0;
+                            if ((l === G(120) || l === G(88)) && ((i = !0), (t = (t + 1) | 0) === a)) return 0;
                             var s = t;
                             k: for (;;) {
                                 var n;
@@ -2839,15 +2839,15 @@
                                     var u,
                                         p,
                                         g = D(k, s);
-                                    if (H(48) <= g && g <= H(57)) p = !0;
+                                    if (G(48) <= g && g <= G(57)) p = !0;
                                     else {
                                         var d = D(k, s);
-                                        p = H(97) <= d && d <= H(102);
+                                        p = G(97) <= d && d <= G(102);
                                     }
                                     if (p) u = !0;
                                     else {
                                         var m = D(k, s);
-                                        u = H(65) <= m && m <= H(70);
+                                        u = G(65) <= m && m <= G(70);
                                     }
                                     n = u;
                                 } else n = !1;
@@ -2855,10 +2855,10 @@
                                 s = (s + 1) | 0;
                             }
                             var h,
-                                b = !(s === a) && D(k, s) === H(59);
+                                b = !(s === a) && D(k, s) === G(59);
                             if (!b) {
                                 if (sk(this, uk())) return 0;
-                                if (sk(this, (ik(), o))) throw z("Semi-colon required at end of numeric entity");
+                                if (sk(this, (ik(), o))) throw H("Semi-colon required at end of numeric entity");
                             }
                             try {
                                 h = P($(T(k, t, s)), i ? 16 : 10);
@@ -2870,19 +2870,19 @@
                             }
                             var f = h;
                             if (f > 65535)
-                                for (var v = c.vbu(f), q = 0, w = v.length; q < w; ) {
+                                for (var v = c.rbv(f), q = 0, w = v.length; q < w; ) {
                                     var y = v[q];
                                     (q = (q + 1) | 0), e.a9(y);
                                 }
                             else {
                                 var E,
-                                    A = H(0);
+                                    A = G(0);
                                 if (f < L(A)) E = !0;
                                 else {
-                                    var x = H(65535);
+                                    var x = G(65535);
                                     E = f > L(x);
                                 }
-                                if (E) throw z("Invalid Char code: " + f);
+                                if (E) throw H("Invalid Char code: " + f);
                                 var S = F(f);
                                 e.a9(S);
                             }
@@ -2890,22 +2890,22 @@
                         }
                         return 0;
                     }),
-                    (g(gk).dbu = function (k, r) {
+                    (g(gk).zbu = function (k, r) {
                         return new dk(M(k, r), !0);
                     }),
-                    (g(dk).qbu = function (k, r) {
-                        return this.xbu_1 === this.wbu_1.ql(k) && (r.z8("&#"), r.z8(Y(k, 10)), r.a9(H(59)), !0);
+                    (g(dk).mbv = function (k, r) {
+                        return this.tbv_1 === this.sbv_1.ql(k) && (r.z8("&#"), r.z8(Y(k, 10)), r.a9(G(59)), !0);
                     }),
-                    (g(mk).qbu = function (k, r) {
+                    (g(mk).mbv = function (k, r) {
                         var e,
-                            a = H(55296);
+                            a = G(55296);
                         if (k >= L(a)) {
-                            var t = H(57343);
+                            var t = G(57343);
                             e = k <= L(t);
                         } else e = !1;
                         return e;
                     }),
-                    (g(bk).vbu = function (k) {
+                    (g(bk).rbv = function (k) {
                         var r;
                         if (
                             (function (k, r) {
@@ -2935,4 +2935,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-170d59ab.08e935fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-170d59ab.7fc5862a.js.map

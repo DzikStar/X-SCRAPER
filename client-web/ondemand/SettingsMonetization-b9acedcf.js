@@ -163,14 +163,25 @@
                                                                                                         selections: [
                                                                                                             { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
                                                                                                             { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null },
-                                                                                                            { alias: null, args: null, kind: "ScalarField", name: "verified_type", storageKey: null },
                                                                                                             { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null },
-                                                                                                            { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null },
                                                                                                             { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
                                                                                                         ],
                                                                                                         storageKey: null,
                                                                                                     },
                                                                                                     { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" },
+                                                                                                    {
+                                                                                                        alias: null,
+                                                                                                        args: null,
+                                                                                                        concreteType: "UserVerification",
+                                                                                                        kind: "LinkedField",
+                                                                                                        name: "verification",
+                                                                                                        plural: !1,
+                                                                                                        selections: [
+                                                                                                            { alias: null, args: null, kind: "ScalarField", name: "verified_type", storageKey: null },
+                                                                                                            { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null },
+                                                                                                        ],
+                                                                                                        storageKey: null,
+                                                                                                    },
                                                                                                     { alias: null, args: null, kind: "ScalarField", name: "profile_image_shape", storageKey: null },
                                                                                                     { alias: null, args: null, kind: "ScalarField", name: "is_blue_verified", storageKey: null },
                                                                                                     {
@@ -236,7 +247,7 @@
                             },
                         ],
                     },
-                    params: { id: "kXcc0Edof6svF-lk2byuyg", metadata: {}, name: "MonetizationAwardsRevenueQuery", operationKind: "query", text: null },
+                    params: { id: "OSKpIExmuT09GU5Y2BJUbw", metadata: {}, name: "MonetizationAwardsRevenueQuery", operationKind: "query", text: null },
                 };
             m.hash = "cd58cb989f803a4b51ddb03f6a82d095";
             const k = m;
@@ -446,14 +457,25 @@
                                                                                                         selections: [
                                                                                                             { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
                                                                                                             { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null },
-                                                                                                            { alias: null, args: null, kind: "ScalarField", name: "verified_type", storageKey: null },
                                                                                                             { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null },
-                                                                                                            { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null },
                                                                                                             { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null },
                                                                                                         ],
                                                                                                         storageKey: null,
                                                                                                     },
                                                                                                     { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" },
+                                                                                                    {
+                                                                                                        alias: null,
+                                                                                                        args: null,
+                                                                                                        concreteType: "UserVerification",
+                                                                                                        kind: "LinkedField",
+                                                                                                        name: "verification",
+                                                                                                        plural: !1,
+                                                                                                        selections: [
+                                                                                                            { alias: null, args: null, kind: "ScalarField", name: "verified_type", storageKey: null },
+                                                                                                            { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null },
+                                                                                                        ],
+                                                                                                        storageKey: null,
+                                                                                                    },
                                                                                                     { alias: null, args: null, kind: "ScalarField", name: "profile_image_shape", storageKey: null },
                                                                                                     { alias: null, args: null, kind: "ScalarField", name: "is_blue_verified", storageKey: null },
                                                                                                     {
@@ -536,11 +558,11 @@
                             },
                         ],
                     },
-                    params: { id: "8S_of9efbNK7t-CL-jSZuQ", metadata: { sliceInfoPath: ["viewer", "user_results", "result", "awards_granted_slice", "slice_info"] }, name: "MonetizationAwardsTransactionsQuery", operationKind: "query", text: null },
+                    params: { id: "d8sJE3lajftQ8arBGIjW8g", metadata: { sliceInfoPath: ["viewer", "user_results", "result", "awards_granted_slice", "slice_info"] }, name: "MonetizationAwardsTransactionsQuery", operationKind: "query", text: null },
                 };
             c.hash = "e0059d0ba4726b5ad5e2fd2ab07ef7c9";
             const g = c;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsMonetization-b9acedcf.8f72eb3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsMonetization-b9acedcf.f217b1ba.js.map

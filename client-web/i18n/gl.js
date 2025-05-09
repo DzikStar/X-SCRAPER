@@ -285,7 +285,7 @@
                 t("edf7f57e", "Get verified for boosted replies, analytics, ad-free browsing, and more. Upgrade your profile now."),
                 t("ba920d68", "Boost your influence with verification"),
                 t("ib79d0c2", "Unlock VIP features: verify your account"),
-                t("bebc5f12", "You’re advertising on X, but don’t have a Verified Organizations subscription"),
+                t("c0d3bd82", "You’ve advertised on X, but don’t have a Verified Organizations subscription"),
                 t("d7836d1e", "Subscribe to get up to $12,000 free ad credit, gold verification, VIP support, and a suite of tools to grow."),
                 t("f528e369", function (e) {
                     return "Subscribe to " + e.tier + " to write your own Articles";
@@ -1279,15 +1279,23 @@
                 t("b8f3500a", "Ver fío no lector"),
                 t("fc7db594", "Profile Summary"),
                 t("c3f04d9c", "Thinking"),
-                t("cbdddb0a", "Completado"),
+                t("e98cc293", function (e) {
+                    return "Searching for " + e.query;
+                }),
                 t("b0d1e205", function (e) {
                     return 'Searching for **"' + e.query + '"**';
+                }),
+                t("i2e0f4d7", function (e) {
+                    return "Browsing " + e.url + " for " + e.query;
                 }),
                 t("acb9b845", function (e) {
                     return "Browsing " + e.url + ' for **"' + e.query + '"**';
                 }),
                 t("ef261d8d", function (e) {
                     return "Searching posts by @" + e.username;
+                }),
+                t("f7d9cfb9", function (e) {
+                    return "Searching posts by @" + e.username + " for " + e.query;
                 }),
                 t("bec7eb11", function (e) {
                     return "Searching posts by @" + e.username + ' for **"' + e.query + '"**';
@@ -1911,10 +1919,10 @@
                 t("hff1b97a", "Only Subscribed can reply."),
                 t("a330771e", "Copy link to your clipboard"),
                 t("b6510e68", "Copy your Article’s URL so you can share it."),
-                t("e4a6e006", "Houbo algún problema. Téntao de novo."),
-                t("eff483e0", "After you publish, get a link to share the Article."),
-                t("ca15dd4e", "Previsualización");
-            t("bb40bf66", "Publicouse"),
+                t("e4a6e006", "Houbo algún problema. Téntao de novo.");
+            t("eff483e0", "After you publish, get a link to share the Article."),
+                t("ca15dd4e", "Previsualización"),
+                t("bb40bf66", "Publicouse"),
                 t("h107935c", "Last saved just now"),
                 t("a753a870", "Aplicar"),
                 t("afccc67e", "Copy link to Article"),
@@ -2963,10 +2971,10 @@
                 t("df1b7550", "Marketing"),
                 t("he258678", "X for Business"),
                 t("c6f58084", "Developers"),
-                t("d83f18d2", "Directory"),
-                t("hc5aa17c", "Get the X app"),
-                t("j0693948", "Get the Grok app");
-            t("af781666", "What do people think?"),
+                t("d83f18d2", "Directory");
+            t("hc5aa17c", "Get the X app"),
+                t("j0693948", "Get the Grok app"),
+                t("af781666", "What do people think?"),
                 t("ad35153e", "beta"),
                 t("fbf83158", "Warning: Payment failed"),
                 t("jadeb4da", "Please urgently update your payment method before you lose your subscription benefits."),
@@ -3879,10 +3887,10 @@
                 t("cededf2a", "Organizador"),
                 t("i2caef48", "Co-hosts"),
                 t("j245c654", "Speakers"),
-                t("eda23a02", "Listeners"),
-                t("b90eb348", "Invite to Speak"),
-                t("d9a63e82", "Remove from Speakers");
-            t("bd917b26", "Invite to Co-host"),
+                t("eda23a02", "Listeners");
+            t("b90eb348", "Invite to Speak"),
+                t("d9a63e82", "Remove from Speakers"),
+                t("bd917b26", "Invite to Co-host"),
                 t("d7357e7e", "Remove from Co-hosts"),
                 t("bf307fc0", "Block and Remove"),
                 t("ccf2f24e", "Denunciar"),
@@ -4185,7 +4193,6 @@
                 t("b5df32b0", "Grok something"),
                 t("fb3b9776", "Grok’s output has been customized by this user."),
                 t("ca93f2ee", "This message has been deleted."),
-                t("b52484b6", "Searching..."),
                 t("b8c06820", "Copy text"),
                 t("ca0f5894", "Dislike"),
                 t("ja8d189e", "Wanted text answer"),
@@ -4277,6 +4284,7 @@
                 t("e2811afc", "Games"),
                 t("j081fa34", "Standings"),
                 t("i7c7f156", "Mañá"),
+                t("cbdddb0a", "Completado"),
                 t("b134ba52", "In Progress"),
                 t("j1361724", "Halftime"),
                 t("fa0f1262", "Break"),
@@ -4303,29 +4311,35 @@
                 t("dc17968a", "Fri"),
                 t("j310a2d6", "Sat"),
                 t("eaf55eb4", "Show thinking"),
-                t("j1ab5f40", "Tap to read"),
+                t("b1ac6016", "Completed DeepSearch"),
+                t("f766feca", "Completed DeeperSearch"),
                 t("ee000b0d", function (e) {
                     return e.numSources + " sources";
                 }),
-                t("b1ac6016", "Completed DeepSearch"),
-                t("f766feca", "Completed DeeperSearch"),
+                t("bf780b13", function (e) {
+                    return e.minutes + "m " + e.seconds + "s";
+                }),
+                t("c2745fa4", "Aborted"),
                 t("e258000e", "Notificación"),
                 t("d591a772", "Notification unavailable"),
                 t("bc49b728", "You will be notified when the answer is ready"),
                 t("d8aadeba", "Notification turned off"),
                 t("db832e38", "Please enable notifications in browser settings"),
                 t("a910cac6", "There was an issue enabling notifications"),
-                t("g4b3a3e6", "DeepSearch Complete"),
-                t("bf780b13", function (e) {
-                    return e.minutes + "m " + e.seconds + "s";
-                }),
-                t("c2745fa4", "Aborted"),
                 t("be30b6ee", "Unstable connection"),
+                t("b52484b6", "Searching..."),
                 t("a4d9dbfa", "Thoughts"),
+                t("ib1c5475", function (e) {
+                    return "Thought for " + e.minutes + "m " + e.seconds + "s";
+                }),
+                t("a15d62db", function (e) {
+                    return "Thought for " + e.seconds + "s";
+                }),
                 t("d7cb5408", "Relevant Web Pages"),
                 t("aa7c96bb", function (e) {
                     return "See " + e.numResults + " more";
                 }),
+                t("j1ab5f40", "Tap to read"),
                 t("f5a2377e", "Thinking for"),
                 t("g3ce0132", "Thought for"),
                 t("f8007364", "Expand for details"),
@@ -4911,12 +4925,12 @@
                 t("if2909ba", "Watch Time"),
                 t("i0e5bf4c", "Your videos"),
                 t("ed99baea", "Early Beta Access"),
-                t("gf898b70", "Advanced Search"),
-                t("d2a43a7a", 'contains both "ai" and "startup"'),
+                t("gf898b70", "Advanced Search");
+            t("d2a43a7a", 'contains both "ai" and "startup"'),
                 t("a8584698", "ai startup"),
                 t("jb6f9292", 'contains the exact phrase "ai startup"'),
-                t("j8ee77c4", '"ai startup"');
-            t("d0480758", 'contains either "ai" or "startup" (or both)'),
+                t("j8ee77c4", '"ai startup"'),
+                t("d0480758", 'contains either "ai" or "startup" (or both)'),
                 t("f0048fa2", "ai OR startup"),
                 t("da0df186", 'contains "ai", but not "startup"'),
                 t("f2f463ea", "ai -startup"),
@@ -5877,12 +5891,12 @@
                 t("cbae35fa", "Report Broadcast"),
                 t("fd12ab58", "Collection posts"),
                 t("a226497c", "Crea unha comunidade"),
-                t("d7346632", "You haven’t joined any Communities yet"),
-                t("b732a4cc", "When you do, you’ll see their posts here."),
+                t("d7346632", "You haven’t joined any Communities yet");
+            t("b732a4cc", "When you do, you’ll see their posts here."),
                 t("hff48914", "No posts could be found at this time."),
                 t("hb52cc4a", "Téntao de novo máis tarde."),
-                t("e50e1bb0", "Welcome to Communities");
-            t("i6829daa", "Communities are moderated discussion groups where people on X can connect and share."),
+                t("e50e1bb0", "Welcome to Communities"),
+                t("i6829daa", "Communities are moderated discussion groups where people on X can connect and share."),
                 t("fc5c6914", "Meet others with your interests"),
                 t("aa1a9820", "Join Communities to connect with people who share your interests."),
                 t("edef4c82", "Post directly to a Community"),
@@ -6875,12 +6889,12 @@
                 t("ee54c3de", "Save videos straight to your device"),
                 t("ae03594c", "Small reply boost"),
                 t("e6bb08c0", "Increase the visibility of your replies"),
-                t("bf2a6acc", "Large Reply Boost"),
-                t("c2059276", "Have your replies boosted."),
+                t("bf2a6acc", "Large Reply Boost");
+            t("c2059276", "Have your replies boosted."),
                 t("b023ec20", "Max Reply Boost"),
                 t("g337328e", "Get the highest visibility for your replies."),
-                t("fa006202", "Background video playback");
-            t("jf389778", "Watch while browsing or using other apps"),
+                t("fa006202", "Background video playback"),
+                t("jf389778", "Watch while browsing or using other apps"),
                 t("f2977d80", "Bookmark folders"),
                 t("j1d3d910", "Keep your saved posts organized for easy access"),
                 t("f0f48668", "Premium support"),
@@ -7851,11 +7865,7 @@
                 t("c674f5b4", "Setup invoice payments"),
                 t("i8237e66", "Switch from credit card payments to invoicing via bank transfers."),
                 t("hebd348a", "Configure how ads are used to promote jobs from the Hiring portal."),
-                t("ib5e6f90", "Job Promotion"),
-                t("id720215", "Hiring"),
-                t("dd59f146", "Job promotion ad account"),
-                t("e7e36818", "Ad accounts are eligible for job promotion when they are fully set up with a funding source."),
-                t("c28566e0", "Ad Account");
+                t("ib5e6f90", "Job Promotion");
             function r(e, a) {
                 for (var o = 0; o < a.length; o++) {
                     var t = a[o];
@@ -7894,7 +7904,11 @@
                     s(e, a)
                 );
             }
-            t("c80160d3", "Advertising"),
+            t("id720215", "Hiring"),
+                t("dd59f146", "Job promotion ad account"),
+                t("e7e36818", "Ad accounts are eligible for job promotion when they are fully set up with a funding source."),
+                t("c28566e0", "Ad Account"),
+                t("c80160d3", "Advertising"),
                 t("ff0edac0", "Are you sure you want to cancel your subscription?"),
                 t("h2ac0348", "No, take me back"),
                 t("dbf9667e", "I’m sure"),
@@ -8756,12 +8770,10 @@
                 t("gdd173da", "Answer by Grok in Fun Mode"),
                 t("dfd6eeac", "Answer by Grok"),
                 t("deceb214", "Image by Grok"),
-                t("j05496ce", "DeepSearch by Grok"),
                 t("befddd48", "Amosar"),
                 t("hf3f8e3a", "Amosar máis"),
                 t("h504ea5e", "Create your version with Grok"),
                 t("eb722de2", "Ask Grok yourself"),
-                t("ib5110be", "Try Grok DeepSearch yourself"),
                 t("bb5c5864", "Cita"),
                 t("a8b58cf4", "Amosar este fío"),
                 t("i5f742fe", "Amosar esta enquisa"),
@@ -8911,14 +8923,14 @@
                 }),
                 t("c889af33", function (e) {
                     return e.count + " usuario" + n(e.count, " uniu", "s uníron") + "se";
-                }),
-                t("d6f2056f", function (e) {
-                    return e.count + " usuario" + n(e.count, "", "s") + " escoitando";
-                }),
-                t("jbc5f47a", "Panel de Espazos");
-            t("gfe2830f", function (e) {
-                return e.count + " máis";
+                });
+            t("d6f2056f", function (e) {
+                return e.count + " usuario" + n(e.count, "", "s") + " escoitando";
             }),
+                t("jbc5f47a", "Panel de Espazos"),
+                t("gfe2830f", function (e) {
+                    return e.count + " máis";
+                }),
                 t("dbeae6cf", function (e) {
                     return e.count + " other listener" + i(e.count, "", "s");
                 }),
@@ -13198,4 +13210,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/gl.eadc32da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/gl.d5a4386a.js.map

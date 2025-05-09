@@ -285,7 +285,7 @@
                 o("edf7f57e", "Ottieni la verifica per mettere in risalto le risposte, consultare le statistiche, navigare senza annunci e altro ancora. Esegui ora l'upgrade del tuo profilo."),
                 o("ba920d68", "Diventa ancora più influente con la verifica"),
                 o("ib79d0c2", "Sblocca le funzioni VIP: verifica il tuo account"),
-                o("bebc5f12", "Stai facendo pubblicità su X ma non hai un abbonamento a Organizzazioni verificate"),
+                o("c0d3bd82", "You’ve advertised on X, but don’t have a Verified Organizations subscription"),
                 o("d7836d1e", "Abbonati per ottenere un credito pubblicitario in regalo da 12.000 USD, la verifica oro, l'assistenza VIP e una suite di strumenti per la crescita."),
                 o("f528e369", function (i) {
                     return "Per scrivere articoli, abbonati a " + i.tier;
@@ -1279,15 +1279,23 @@
                 o("b8f3500a", "Visualizza discussione nell'aggregatore"),
                 o("fc7db594", "Riepilogo del profilo"),
                 o("c3f04d9c", "Fammici pensare..."),
-                o("cbdddb0a", "Conclusa"),
+                o("e98cc293", function (i) {
+                    return "Searching for " + i.query;
+                }),
                 o("b0d1e205", function (i) {
                     return 'Ricerca di **"' + i.query + '"** in corso';
+                }),
+                o("i2e0f4d7", function (i) {
+                    return "Browsing " + i.url + " for " + i.query;
                 }),
                 o("acb9b845", function (i) {
                     return "Consultazione di " + i.url + ' per **"' + i.query + '"** in corso';
                 }),
                 o("ef261d8d", function (i) {
                     return "Ricerca post di @" + i.username + " in corso";
+                }),
+                o("f7d9cfb9", function (i) {
+                    return "Searching posts by @" + i.username + " for " + i.query;
                 }),
                 o("bec7eb11", function (i) {
                     return "Ricerca post di @" + i.username + ' per **"' + i.query + '"** in corso';
@@ -1911,10 +1919,10 @@
                 o("hff1b97a", "Solo gli abbonati possono rispondere."),
                 o("a330771e", "Copia link negli appunti"),
                 o("b6510e68", "Copia l'URL dell'articolo così da condividerlo."),
-                o("e4a6e006", "Qualcosa è andato storto. Riprova."),
-                o("eff483e0", "Non appena avrai eseguito la pubblicazione, ottieni il link per condividere l'articolo."),
-                o("ca15dd4e", "Bozza");
-            o("bb40bf66", "Pubblicato"),
+                o("e4a6e006", "Qualcosa è andato storto. Riprova.");
+            o("eff483e0", "Non appena avrai eseguito la pubblicazione, ottieni il link per condividere l'articolo."),
+                o("ca15dd4e", "Bozza"),
+                o("bb40bf66", "Pubblicato"),
                 o("h107935c", "Ultimo salvataggio: adesso"),
                 o("a753a870", "Applica"),
                 o("afccc67e", "Copia link dell'articolo"),
@@ -2963,10 +2971,10 @@
                 o("df1b7550", "Marketing"),
                 o("he258678", "X per le attività"),
                 o("c6f58084", "Sviluppatori"),
-                o("d83f18d2", "Elenco"),
-                o("hc5aa17c", "Scarica l'app X"),
-                o("j0693948", "Scarica l'app Grok");
-            o("af781666", "Cosa pensano gli altri?"),
+                o("d83f18d2", "Elenco");
+            o("hc5aa17c", "Scarica l'app X"),
+                o("j0693948", "Scarica l'app Grok"),
+                o("af781666", "Cosa pensano gli altri?"),
                 o("ad35153e", "beta"),
                 o("fbf83158", "Avviso: pagamento non riuscito"),
                 o("jadeb4da", "Aggiorna al più presto il metodo di pagamento prima di perdere i benefici dell'abbonamento."),
@@ -3879,10 +3887,10 @@
                 o("cededf2a", "Host"),
                 o("i2caef48", "Cohost"),
                 o("j245c654", "Partecipanti attivi"),
-                o("eda23a02", "Ascoltatori"),
-                o("b90eb348", "Invita a partecipare attivamente"),
-                o("d9a63e82", "Rimuovi dai partecipanti attivi");
-            o("bd917b26", "Invita come cohost"),
+                o("eda23a02", "Ascoltatori");
+            o("b90eb348", "Invita a partecipare attivamente"),
+                o("d9a63e82", "Rimuovi dai partecipanti attivi"),
+                o("bd917b26", "Invita come cohost"),
                 o("d7357e7e", "Rimuovi dai cohost"),
                 o("bf307fc0", "Blocca e rimuovi"),
                 o("ccf2f24e", "Segnala"),
@@ -4175,7 +4183,7 @@
                 o("ff9dc268", "Modifica il prompt"),
                 o("acb2baa0", "Crea immagini"),
                 o("fe9ad897", function (i) {
-                    return "Edit Image" + i.ttc_grok_preset;
+                    return "Modifica immagine" + i.ttc_grok_preset;
                 }),
                 o("h30fd372", "Prova la modalità vocale"),
                 o("e9fcdd0c", "Chiedi a Grok di cercare minuziosamente nel Web"),
@@ -4185,7 +4193,6 @@
                 o("b5df32b0", "Grokka qualcosa"),
                 o("fb3b9776", "La risposta di Grok è stata personalizzata dall'utente."),
                 o("ca93f2ee", "Questo messaggio è stato eliminato."),
-                o("b52484b6", "Ricerca in corso..."),
                 o("b8c06820", "Copia testo"),
                 o("ca0f5894", "Non mi piace"),
                 o("ja8d189e", "Desidero una risposta testuale"),
@@ -4277,6 +4284,7 @@
                 o("e2811afc", "Partite"),
                 o("j081fa34", "Classifica"),
                 o("i7c7f156", "Domani"),
+                o("cbdddb0a", "Conclusa"),
                 o("b134ba52", "In corso"),
                 o("j1361724", "Intervallo"),
                 o("fa0f1262", "Pausa"),
@@ -4303,29 +4311,35 @@
                 o("dc17968a", "Ven"),
                 o("j310a2d6", "Sab"),
                 o("eaf55eb4", "Mostra l'elaborazione del ragionamento"),
-                o("j1ab5f40", "Tocca per consultare"),
+                o("b1ac6016", "DeepSearch completata"),
+                o("f766feca", "DeepSearch completata"),
                 o("ee000b0d", function (i) {
                     return i.numSources + " fonti";
                 }),
-                o("b1ac6016", "DeepSearch completata"),
-                o("f766feca", "DeepSearch completata"),
+                o("bf780b13", function (i) {
+                    return i.minutes + " min e " + i.seconds + " sec";
+                }),
+                o("c2745fa4", "Interrotto"),
                 o("e258000e", "Notifica"),
                 o("d591a772", "Notifica non disponibile"),
                 o("bc49b728", "Riceverai una notifica non appena la risposta sarà pronta"),
                 o("d8aadeba", "Notifica disattivata"),
                 o("db832e38", "Abilita le notifiche nelle impostazioni del browser"),
                 o("a910cac6", "Si è verificato un problema durante l'abilitazione delle notifiche"),
-                o("g4b3a3e6", "DeepSearch completata"),
-                o("bf780b13", function (i) {
-                    return i.minutes + " min e " + i.seconds + " sec";
-                }),
-                o("c2745fa4", "Interrotto"),
                 o("be30b6ee", "Connessione non stabile"),
+                o("b52484b6", "Ricerca in corso..."),
                 o("a4d9dbfa", "Ragionamenti"),
+                o("ib1c5475", function (i) {
+                    return "Thought for " + i.minutes + "m " + i.seconds + "s";
+                }),
+                o("a15d62db", function (i) {
+                    return "Thought for " + i.seconds + "s";
+                }),
                 o("d7cb5408", "Pagine Web rilevanti"),
                 o("aa7c96bb", function (i) {
                     return "Consulta " + i.numResults + " in più";
                 }),
+                o("j1ab5f40", "Tocca per consultare"),
                 o("f5a2377e", "Pensiero in elaborazione da "),
                 o("g3ce0132", "Pensiero elaborato in"),
                 o("f8007364", "Espandi dettagli"),
@@ -4911,12 +4925,12 @@
                 o("if2909ba", "Tempo di visione"),
                 o("i0e5bf4c", "I tuoi video"),
                 o("ed99baea", "Accesso beta in anteprima"),
-                o("gf898b70", "Ricerca avanzata"),
-                o("d2a43a7a", 'include sia "startup" sia "ia"'),
+                o("gf898b70", "Ricerca avanzata");
+            o("d2a43a7a", 'include sia "startup" sia "ia"'),
                 o("a8584698", "startup ia"),
                 o("jb6f9292", 'include la frase esatta "startup ia"'),
-                o("j8ee77c4", '"startup ia"');
-            o("d0480758", 'include "startup" oppure "ia" (o entrambi)'),
+                o("j8ee77c4", '"startup ia"'),
+                o("d0480758", 'include "startup" oppure "ia" (o entrambi)'),
                 o("f0048fa2", "startup OR ia"),
                 o("da0df186", 'include "ia" ma non "startup"'),
                 o("f2f463ea", "ia -startup"),
@@ -5877,12 +5891,12 @@
                 o("cbae35fa", "Segnala trasmissione"),
                 o("fd12ab58", "Post della raccolta"),
                 o("a226497c", "Crea una nuova community"),
-                o("d7346632", "Non hai ancora aderito a delle community"),
-                o("b732a4cc", "Quando lo farai, li vedrai qui."),
+                o("d7346632", "Non hai ancora aderito a delle community");
+            o("b732a4cc", "Quando lo farai, li vedrai qui."),
                 o("hff48914", "Al momento non è possibile trovare alcun post."),
                 o("hb52cc4a", "Riprova più tardi."),
-                o("e50e1bb0", "Ti diamo il benvenuto nelle community");
-            o("i6829daa", "Le community sono gruppi di discussione sotto moderazione in cui gli utenti di X possono entrare in contatto e condividere contenuti."),
+                o("e50e1bb0", "Ti diamo il benvenuto nelle community"),
+                o("i6829daa", "Le community sono gruppi di discussione sotto moderazione in cui gli utenti di X possono entrare in contatto e condividere contenuti."),
                 o("fc5c6914", "Incontra chi ha i tuoi stessi interessi"),
                 o("aa1a9820", "Unisciti alle community per connetterti con chi condivide i tuoi stessi interessi."),
                 o("edef4c82", "Invia post direttamente a una community"),
@@ -6875,12 +6889,12 @@
                 o("ee54c3de", "Salva i video direttamente sul tuo dispositivo"),
                 o("ae03594c", "Messa in risalto di risposte ridotta"),
                 o("e6bb08c0", "Aumenta la visibilità delle tue risposte"),
-                o("bf2a6acc", "Messa in risalto di risposte aumentata"),
-                o("c2059276", "Metti in risalto le tue risposte."),
+                o("bf2a6acc", "Messa in risalto di risposte aumentata");
+            o("c2059276", "Metti in risalto le tue risposte."),
                 o("b023ec20", "Messa in risalto di risposte massima"),
                 o("g337328e", "Ottieni il massimo della visibilità per le tue risposte."),
-                o("fa006202", "Riproduzione video in background");
-            o("jf389778", "Guarda mentre navighi o usi altre app"),
+                o("fa006202", "Riproduzione video in background"),
+                o("jf389778", "Guarda mentre navighi o usi altre app"),
                 o("f2977d80", "Cartelle di segnalibri"),
                 o("j1d3d910", "Organizza i post salvati per accedervi nella massima facilità"),
                 o("f0f48668", "Assistenza premium"),
@@ -7851,11 +7865,7 @@
                 o("c674f5b4", "Configura i pagamenti delle fatture"),
                 o("i8237e66", "Passa dai pagamenti con carta di credito alla fatturazione tramite bonifico bancario."),
                 o("hebd348a", "Configura in che modo vengono utilizzati gli annunci per promuovere le offerte di lavoro dal portale Hiring."),
-                o("ib5e6f90", "Sponsorizzazione offerte di lavoro"),
-                o("id720215", "Hiring"),
-                o("dd59f146", "Account Ads per la sponsorizzazione offerte di lavoro"),
-                o("e7e36818", "Una volta configurata completamente la fonte di finanziamento, gli account Ads possono promuovere le offerte di lavoro."),
-                o("c28566e0", "Account Ads");
+                o("ib5e6f90", "Sponsorizzazione offerte di lavoro");
             function r(i, e) {
                 for (var a = 0; a < e.length; a++) {
                     var o = e[a];
@@ -7894,7 +7904,11 @@
                     c(i, e)
                 );
             }
-            o("c80160d3", "Pubblicità"),
+            o("id720215", "Hiring"),
+                o("dd59f146", "Account Ads per la sponsorizzazione offerte di lavoro"),
+                o("e7e36818", "Una volta configurata completamente la fonte di finanziamento, gli account Ads possono promuovere le offerte di lavoro."),
+                o("c28566e0", "Account Ads"),
+                o("c80160d3", "Pubblicità"),
                 o("ff0edac0", "Vuoi davvero disdire l'abbonamento?"),
                 o("h2ac0348", "No, torna indietro"),
                 o("dbf9667e", "Sì, voglio procedere"),
@@ -8756,12 +8770,10 @@
                 o("gdd173da", "Risposta di Grok in modalità divertente"),
                 o("dfd6eeac", "Risposta di Grok"),
                 o("deceb214", "Immagine generata da Grok"),
-                o("j05496ce", "DeepSearch di Grok"),
                 o("befddd48", "Mostra"),
                 o("hf3f8e3a", "Mostra altro"),
                 o("h504ea5e", "Crea la tua versione con Grok"),
                 o("eb722de2", "Chiedi direttamente a Grok"),
-                o("ib5110be", "Prova DeepSearch di Grok in prima persona"),
                 o("bb5c5864", "Citazione"),
                 o("a8b58cf4", "Mostra questa discussione"),
                 o("i5f742fe", "Mostra il sondaggio"),
@@ -8911,14 +8923,14 @@
                 }),
                 o("c889af33", function (i) {
                     return i.count + " " + t(i.count, "è", "sono") + " qui";
-                }),
-                o("d6f2056f", function (i) {
-                    return i.count + " sintonizzat" + t(i.count, "o", "i");
-                }),
-                o("jbc5f47a", "Dock degli spazi");
-            o("gfe2830f", function (i) {
-                return "" + t(i.count, i.count + " altro", "altri " + i.count);
+                });
+            o("d6f2056f", function (i) {
+                return i.count + " sintonizzat" + t(i.count, "o", "i");
             }),
+                o("jbc5f47a", "Dock degli spazi"),
+                o("gfe2830f", function (i) {
+                    return "" + t(i.count, i.count + " altro", "altri " + i.count);
+                }),
                 o("dbeae6cf", function (i) {
                     return "" + t(i.count, i.count + " altro ascoltatore", "altri " + i.count + " ascoltatori");
                 }),
@@ -13198,4 +13210,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/it.7b26be9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/it.a6eda1ea.js.map

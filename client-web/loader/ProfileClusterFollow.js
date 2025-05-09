@@ -2,7 +2,7 @@
     ["loader.ProfileClusterFollow"],
     {
         544118: (e) => {
-            e.exports = { queryId: "RSnevjRHTlp36Y-NIHWu-g", operationName: "SidebarUserRecommendations", operationType: "query", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
+            e.exports = { queryId: "ZVA-uHHezkK6TUkHH-a6hQ", operationName: "SidebarUserRecommendations", operationType: "query", metadata: { featureSwitches: ["profile_label_improvements_pcf_label_in_post_enabled", "rweb_tipjar_consumption_enabled", "verified_phone_label_enabled", "responsive_web_graphql_skip_user_profile_image_extensions_enabled", "responsive_web_graphql_timeline_navigation_enabled"], fieldToggles: ["withAuxiliaryUserLabels"] } };
         },
         864479: (e, t, r) => {
             "use strict";
@@ -49,22 +49,22 @@
                 g = r(312771),
                 I = r(71620),
                 x = r(668214),
-                S = r(994305);
-            const T = "profile-cluster-follow",
+                T = r(994305);
+            const S = "profile-cluster-follow",
                 L = (e, t) => t.userId,
                 U = (e, t) => {
                     const r = L(0, t);
-                    return S.Ic(e, { displayLocation: T, similarToUserId: r });
+                    return T.Ic(e, { displayLocation: S, similarToUserId: r });
                 },
                 P = (e, t) => {
                     const r = L(0, t);
-                    return S.UD(e, { displayLocation: T, similarToUserId: r });
+                    return T.UD(e, { displayLocation: S, similarToUserId: r });
                 },
-                R = (0, x.Z)()
+                Z = (0, x.Z)()
                     .propsFromState(() => ({ fetchStatus: P, recommendations: U }))
-                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, I.zr)("WHO_TO_FOLLOW_CONTAINER"), fetchRecommendationsIfNeeded: S.yY }))
+                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, I.zr)("WHO_TO_FOLLOW_CONTAINER"), fetchRecommendationsIfNeeded: T.yY }))
                     .withAnalytics(),
-                Z = { component: "suggest_profile_cluster_follow", element: "user", action: "results" },
+                R = { component: "suggest_profile_cluster_follow", element: "user", action: "results" },
                 v = { component: "suggest_profile_cluster_follow", element: "close_button", action: "click" };
             class F extends o.PureComponent {
                 constructor(...e) {
@@ -72,7 +72,7 @@
                         (this._handleImpression = (e) => {
                             const { analytics: t } = this.props,
                                 r = e && e.slice(0, 3).map((e) => ({ ...C.Z.forUser(e.user_id), suggestion_details: { source_data: e.token } }));
-                            t.scribe({ ...Z, data: { items: r } });
+                            t.scribe({ ...R, data: { items: r } });
                         }),
                         (this._handleCloseButtonImpression = () => {
                             const { analytics: e, onRemoveClusterFollow: t } = this.props;
@@ -94,14 +94,14 @@
                 }
                 _fetchRecommendations(e) {
                     const { createLocalApiErrorHandler: t, fetchRecommendationsIfNeeded: r, userId: o } = e;
-                    r({ limit: 3, displayLocation: T, similarToUserId: o }).catch(t(b.C));
+                    r({ limit: 3, displayLocation: S, similarToUserId: o }).catch(t(b.C));
                 }
                 _hasLoadedUsers() {
                     const { fetchStatus: e, recommendations: t } = this.props;
                     return e === g.ZP.LOADED && t.length > 0;
                 }
             }
-            const O = R(F);
+            const O = Z(F);
         },
         62857: (e, t, r) => {
             "use strict";
@@ -161,8 +161,8 @@
                         }),
                     }))
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, _.zr)("USERS_LIST_CONTAINER"), fetchUsersIfNeeded: b.ZP.fetchManyIfNeeded })),
-                S = i().f5b426c2;
-            class T extends s.Component {
+                T = i().f5b426c2;
+            class S extends s.Component {
                 constructor(...e) {
                     super(...e),
                         (this.state = { allUsersUnavailable: !1 }),
@@ -181,7 +181,7 @@
                     a()(e.userIds, this.props.userIds) || this._fetchUsersIfNeeded();
                 }
                 render() {
-                    return s.createElement(d.Z, { "aria-label": S, fetchStatus: this.state.allUsersUnavailable ? y.ZP.LOADED : this.props.fetchStatus, onRequestRetry: this._handleFetch, render: this._renderContent, retryable: !1 });
+                    return s.createElement(d.Z, { "aria-label": T, fetchStatus: this.state.allUsersUnavailable ? y.ZP.LOADED : this.props.fetchStatus, onRequestRetry: this._handleFetch, render: this._renderContent, retryable: !1 });
                 }
                 _fetchUsersIfNeeded() {
                     const { availableUserIds: e, createLocalApiErrorHandler: t, fetchUsersIfNeeded: r, userIds: o } = this.props;
@@ -204,7 +204,7 @@
                     );
                 }
             }
-            const L = x(T);
+            const L = x(S);
         },
         967977: (e, t, r) => {
             "use strict";
@@ -269,7 +269,7 @@
         },
         994305: (e, t, r) => {
             "use strict";
-            r.d(t, { yY: () => v, UD: () => Z, Ic: () => R });
+            r.d(t, { yY: () => v, UD: () => R, Ic: () => Z });
             var o = r(360917),
                 s = r.n(o),
                 n = r(506899),
@@ -311,18 +311,18 @@
                 g = 30,
                 I = "rweb/recommendations/FETCH_REQUEST",
                 x = "rweb/recommendations/FETCH_SUCCESS",
-                S = "rweb/recommendations/FETCH_FAILURE",
-                T = {},
+                T = "rweb/recommendations/FETCH_FAILURE",
+                S = {},
                 L = ({ displayLocation: e, similarToUserId: t }) => e + (t ? `_${t}` : "");
             _.Z.register({
-                [C]: function (e = T, t) {
+                [C]: function (e = S, t) {
                     if (!t?.meta) return e;
                     switch (t.type) {
                         case I: {
                             const r = L(t.meta);
                             return { ...e, [r]: { ...e[r], fetchStatus: w.ZP.LOADING } };
                         }
-                        case S: {
+                        case T: {
                             const r = L(t.meta);
                             return { ...e, [r]: { ...e[r], fetchStatus: w.ZP.FAILED } };
                         }
@@ -339,19 +339,19 @@
             });
             const U = [],
                 P = [],
-                R = (e, { displayLocation: t, similarToUserId: r }) => {
+                Z = (e, { displayLocation: t, similarToUserId: r }) => {
                     const o = e[C][L({ displayLocation: t, similarToUserId: r })];
                     return o && o.recommendations ? o.recommendations : U;
                 },
-                Z = (e, { displayLocation: t, similarToUserId: r }) => {
+                R = (e, { displayLocation: t, similarToUserId: r }) => {
                     const o = e[C][L({ displayLocation: t, similarToUserId: r })];
                     return o ? o.fetchStatus : w.ZP.NONE;
                 },
                 v = (e) => (t, r, o) => {
                     const n = r(),
                         { displayLocation: a, similarToUserId: l } = e,
-                        i = R(n, { displayLocation: a, similarToUserId: l }),
-                        c = Z(n, { displayLocation: a, similarToUserId: l }) === w.ZP.LOADED;
+                        i = Z(n, { displayLocation: a, similarToUserId: l }),
+                        c = R(n, { displayLocation: a, similarToUserId: l }) === w.ZP.LOADED;
                     return i && c
                         ? Promise.resolve(s())
                         : t(
@@ -360,7 +360,7 @@
                                   (t, r, { api: o, featureSwitches: s }) => {
                                       const { displayLocation: n, itsInterests: a, limit: l = g, similarToUserId: i } = e,
                                           c = "profile_accounts_sidebar" === n && s.isTrue("rweb_recommendations_sidebar_graphql_enabled");
-                                      return (0, E._O)(t, { request: c ? o.withEndpoint(y).fetchSidebarUserRecommendations : o.withEndpoint(y).fetch, params: { display_location: n, itsInterests: a, limit: l, user_id: i } })({ actionTypes: { REQUEST: I, SUCCESS: x, FAILURE: S }, context: "FETCH_RECOMMENDATIONS", meta: { displayLocation: n, similarToUserId: i } }, (e) => {
+                                      return (0, E._O)(t, { request: c ? o.withEndpoint(y).fetchSidebarUserRecommendations : o.withEndpoint(y).fetch, params: { display_location: n, itsInterests: a, limit: l, user_id: i } })({ actionTypes: { REQUEST: I, SUCCESS: x, FAILURE: T }, context: "FETCH_RECOMMENDATIONS", meta: { displayLocation: n, similarToUserId: i } }, (e) => {
                                           if (e && e.entities) return [(0, b.dP)(e.entities)];
                                       });
                                   }
@@ -430,17 +430,17 @@
                 g = r(246492),
                 I = r(520913),
                 x = r(731708),
-                S = r(642153),
-                T = r(879891),
+                T = r(642153),
+                S = r(879891),
                 L = r(392237),
                 U = r(54606);
             const P = n().ae408b76,
-                R = n().j355f008,
-                Z = n().habf9678,
+                Z = n().j355f008,
+                R = n().habf9678,
                 v = n().db0798ed,
                 F = n().dc716ec9,
                 O = ({ text: e }) => {
-                    const { direction: t } = (0, T.Z)();
+                    const { direction: t } = (0, S.Z)();
                     return o.createElement(x.ZP, { dir: t, withHashflags: !0 }, e);
                 },
                 N = (e, t) =>
@@ -452,15 +452,15 @@
                           })(e),
                 A = L.default.create((e) => ({ small: { height: e.lineHeights.subtext3, width: e.lineHeights.subtext3 }, medium: { height: e.spaces.space48, width: e.spaces.space48 }, large: { height: e.lineHeights.subtext2, width: e.lineHeights.subtext2 }, xLarge: { height: e.lineHeights.subtext1, width: e.lineHeights.subtext1 }, xxLarge: { height: e.lineHeights.headline1, width: e.lineHeights.headline1 }, xxxLarge: { height: e.lineHeights.headline1, width: e.lineHeights.headline1 } })),
                 D = L.default.create((e) => ({ circle: { color: e.colors.primary, width: "0.5em" }, colorDeepGray: { color: e.colors.gray700 }, colorBlue: { color: e.colors.blue500 }, colorGreen: { color: e.colors.green500 }, colorOrange: { color: e.colors.orange500 }, colorPrimary: { color: e.colors.primary }, colorRed: { color: e.colors.magenta500 }, grayscaleImage: { borderRadius: e.borderRadii.infinite, filter: "grayscale(100%)" }, brandColor: { color: e.colors.brandColor } })),
-                k = ({ contextType: e, iconColor: t, iconSize: r, link: s, retweetData: n, text: x, topicData: T, userAvatarUrls: P }) => {
+                k = ({ contextType: e, iconColor: t, iconSize: r, link: s, retweetData: n, text: x, topicData: S, userAvatarUrls: P }) => {
                     const { isSelfRetweet: k, name: Q, screenName: B } = n || {},
                         H = ((e, t, r, s = []) => {
                             const n = A[t],
                                 x = [r ? { color: L.default.theme.colors[r] } : D.colorDeepGray, n],
-                                T = o.createElement(a.default, { style: x }),
+                                S = o.createElement(a.default, { style: x }),
                                 P = o.createElement(l.default, { style: x }),
-                                R = o.createElement(i.default, { style: x }),
-                                Z = o.createElement(c.default, { style: x }),
+                                Z = o.createElement(i.default, { style: x }),
+                                R = o.createElement(c.default, { style: x }),
                                 v = o.createElement(d.default, { style: x }),
                                 F = o.createElement(u.default, { style: D.circle }),
                                 O = o.createElement(m.default, { style: x }),
@@ -473,19 +473,19 @@
                                 G = o.createElement(w.default, { style: x }),
                                 z = o.createElement(b.default, { style: x }),
                                 W = o.createElement(C.default, { style: x }),
-                                j = o.createElement(g.default, { style: x }),
-                                $ = o.createElement(S.Z, { borderColor: "cellBackground", userAvatarSize: t, userAvatarUrls: s }),
+                                $ = o.createElement(g.default, { style: x }),
+                                j = o.createElement(T.Z, { borderColor: "cellBackground", userAvatarSize: t, userAvatarUrls: s }),
                                 q = o.createElement(I.default, { style: x });
                             switch (e) {
                                 case U.Q.Pin:
                                 case U.Q.ReplyPin:
-                                    return T;
+                                    return S;
                                 case U.Q.Retweet:
                                     return P;
                                 case U.Q.Like:
-                                    return R;
-                                case U.Q.Follow:
                                     return Z;
+                                case U.Q.Follow:
+                                    return R;
                                 case U.Q.Moment:
                                     return v;
                                 case U.Q.NewTweets:
@@ -509,13 +509,13 @@
                                     return G;
                                 case U.Q.SocialProof:
                                 case U.Q.FollowFollowed:
-                                    return j;
+                                    return $;
                                 case U.Q.FollowMutual:
                                     return W;
                                 case U.Q.FollowFollowing:
                                     return z;
                                 case U.Q.Facepile:
-                                    return $;
+                                    return j;
                                 case U.Q.Bird:
                                     return q;
                                 case U.Q.TextOnly:
@@ -527,11 +527,11 @@
                         case U.Q.Retweet:
                             return { Icon: H, text: x || N(Q, k), link: B ? `https://twitter.com/${B}` : void 0 };
                         case U.Q.Pin:
-                            return { Icon: H, text: x || R };
+                            return { Icon: H, text: x || Z };
                         case U.Q.ReplyPin:
-                            return { Icon: H, text: Z };
+                            return { Icon: H, text: R };
                         case U.Q.Topic:
-                            return { Icon: H, "aria-label": "Recommendation" === T?.functionalityType || "RecWithEducation" === T?.functionalityType ? F({ topicName: x }) : v({ topicName: x }), text: x ? o.createElement(O, { text: x }) : null, link: s };
+                            return { Icon: H, "aria-label": "Recommendation" === S?.functionalityType || "RecWithEducation" === S?.functionalityType ? F({ topicName: x }) : v({ topicName: x }), text: x ? o.createElement(O, { text: x }) : null, link: s };
                         default:
                             return { Icon: H, text: x ? o.createElement(O, { text: x }) : null, link: s };
                     }
@@ -554,10 +554,10 @@
             class p extends o.PureComponent {
                 render() {
                     const { avatarSize: e, bottomControl: t, iconStyle: r, id: i, onLayout: c, rightControl: d, style: m, testID: p, textColor: f, textSize: y, topControl: _, weight: E, withBottomBorder: w, withLeftPadding: b, withTextCentered: C, ...g } = this.props,
-                        { Icon: I, "aria-label": x, link: S, text: T } = (0, u.Z)(g),
-                        L = o.createElement(n.ZP, { "aria-label": x, color: f, id: i, numberOfLines: 2, size: y, testID: p, weight: E, withoutTwemojiAndHashflags: !0 }, T),
+                        { Icon: I, "aria-label": x, link: T, text: S } = (0, u.Z)(g),
+                        L = o.createElement(n.ZP, { "aria-label": x, color: f, id: i, numberOfLines: 2, size: y, testID: p, weight: E, withoutTwemojiAndHashflags: !0 }, S),
                         { cellStyle: U, viewStyle: P } = this._getStyles();
-                    return T ? o.createElement(l.ZP.UseProps, null, (n) => o.createElement(o.Fragment, null, _ || null, o.createElement(s.Z, { onLayout: c, style: [m, P, n.socialContextRefreshEnabled() && !b && h.socialContextRefresh] }, o.createElement(a.Z, { avatarCell: I || (b ? null : void 0), avatarCellStyle: [r, h.socialContextIconColumn, !b && h.unsetIconWidth, n.socialContextRefreshEnabled() && !b && h.socialContextRefreshIcon], avatarSize: e, cellStyle: U }, o.createElement(s.Z, { style: h.cellWrapper }, o.createElement(s.Z, { style: [h.socialContextTextColumn, n.socialContextRefreshEnabled() && !b && h.socialContextRefreshTextColumn] }, S ? this._renderLink(S, L) : L), d || null)), t || null))) : null;
+                    return S ? o.createElement(l.ZP.UseProps, null, (n) => o.createElement(o.Fragment, null, _ || null, o.createElement(s.Z, { onLayout: c, style: [m, P, n.socialContextRefreshEnabled() && !b && h.socialContextRefresh] }, o.createElement(a.Z, { avatarCell: I || (b ? null : void 0), avatarCellStyle: [r, h.socialContextIconColumn, !b && h.unsetIconWidth, n.socialContextRefreshEnabled() && !b && h.socialContextRefreshIcon], avatarSize: e, cellStyle: U }, o.createElement(s.Z, { style: h.cellWrapper }, o.createElement(s.Z, { style: [h.socialContextTextColumn, n.socialContextRefreshEnabled() && !b && h.socialContextRefreshTextColumn] }, T ? this._renderLink(T, L) : L), d || null)), t || null))) : null;
                 }
                 _renderLink(e, t) {
                     const { contextType: r, id: s, onClick: a, retweetData: l, textColor: i, topicData: u } = this.props,
@@ -585,4 +585,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.ProfileClusterFollow.83ffe7ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.ProfileClusterFollow.f235652a.js.map

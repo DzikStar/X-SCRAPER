@@ -1260,19 +1260,8 @@
                                         kind: "InlineFragment",
                                         selections: [
                                             { alias: null, args: null, kind: "ScalarField", name: "is_blue_verified", storageKey: null },
-                                            {
-                                                alias: null,
-                                                args: null,
-                                                concreteType: "ApiUser",
-                                                kind: "LinkedField",
-                                                name: "legacy",
-                                                plural: !1,
-                                                selections: [
-                                                    { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null },
-                                                    { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }, action: "THROW" },
-                                                ],
-                                                storageKey: null,
-                                            },
+                                            { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }], storageKey: null },
+                                            { alias: null, args: null, concreteType: "UserVerification", kind: "LinkedField", name: "verification", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }], storageKey: null },
                                         ],
                                         type: "User",
                                         abstractKey: null,
@@ -1286,7 +1275,7 @@
                 ],
                 type: "Community",
                 abstractKey: null,
-                hash: "de444ea725e0736200425c9c316d3d95",
+                hash: "941d5f4f165bd7ec6873b4467fb8cefa",
             };
             const i = a;
         },
@@ -1334,4 +1323,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Communities-70f0082f.713839aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Communities-70f0082f.2ff1273a.js.map

@@ -3,7 +3,7 @@
     ["bundle.DirectMessages-8486177b", "bundle.UserAvatar-8486177b", "shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-29ff9b73"],
     {
         389071: (e, t, s) => {
-            s.d(t, { BU: () => D, Es: () => E, F0: () => te, F9: () => $, JE: () => U, JU: () => L, Ki: () => V, NV: () => w, OR: () => x, Pl: () => re, Pt: () => P, SJ: () => se, SL: () => Q, Tu: () => O, UM: () => k, Uo: () => ae, V$: () => N, X4: () => X, YJ: () => W, bD: () => b, bv: () => H, en: () => ee, f: () => S, hi: () => K, j1: () => q, lo: () => ne, ni: () => z, pZ: () => Z, t5: () => G, uF: () => F, uX: () => T, uz: () => j, v0: () => J, vf: () => B, zO: () => M });
+            s.d(t, { BU: () => K, Es: () => E, F0: () => te, F9: () => q, JE: () => x, JU: () => T, Ki: () => V, NV: () => U, OR: () => w, Pl: () => re, Pt: () => P, SJ: () => se, SL: () => Q, Tu: () => O, UM: () => k, Uo: () => ae, V$: () => N, X4: () => X, YJ: () => W, bD: () => b, bv: () => H, en: () => ee, f: () => S, hi: () => D, j1: () => J, lo: () => ne, ni: () => z, pZ: () => Z, t5: () => G, uF: () => F, uX: () => L, uz: () => j, v0: () => $, vf: () => B, zO: () => M });
             s(136728), s(571372), s(574858);
             var n = s(726426),
                 r = s.n(n),
@@ -16,13 +16,13 @@
                 p = s(312771),
                 m = s(189953),
                 l = s(155918);
-            const g = { message: "", thinkingTrace: "", deepSearchSummaryAccumulator: void 0, sender: l.CI.ASSISTANT },
+            const g = { message: "", thinkingTrace: "", messageStepAccumulator: void 0, sender: l.CI.ASSISTANT },
                 y = [],
                 f = m.IK.REGULAR,
                 I = () => ({ messageIds: [], messages: {}, model: void 0, mode: f, currentResponse: void 0, alternativeCurrentResponse: void 0, currentQuery: void 0, status: m.Q_.IDLE, abortController: void 0, conversationId: void 0, analysisEntityId: void 0, inputPrefill: { text: "", attachments: [] }, fetchConversationIdStatus: p.ZP.NONE, fetchConversationIdError: "", webResults: [], citedWebResults: [], intermediateImageResults: [], promptSource: "", cardAttachments: [], experimentData: { experiments: [], usingExperiment: !1 } }),
                 v = r()(),
-                h = "PROMPT_CONVERSATION_KEY",
-                R = { conversations: { [v]: I(), [h]: I() }, conversationHistory: { items: [] }, pinnedConversations: { items: [] }, pinnedConversationsIdMap: {}, mediaHistory: { items: [], status: p.ZP.NONE }, conversationList: [v, h], currentConversation: v, fetchConversationStatus: p.ZP.NONE, fetchPinnedConversationsStatus: p.ZP.NONE, fetchHistoryStatus: p.ZP.NONE, fetchHomeStatus: p.ZP.NONE, modelOptions: [], selectedModel: void 0, prompts: [], version: "", accessRestrictedReasons: [], freeAcessEnabled: !1, preferredPrompts: [], layout: null, grokInput: { filterKey: null, focused: !1, advancedSettings: null } },
+                R = "PROMPT_CONVERSATION_KEY",
+                h = { conversations: { [v]: I(), [R]: I() }, conversationHistory: { items: [] }, pinnedConversations: { items: [] }, pinnedConversationsIdMap: {}, mediaHistory: { items: [], status: p.ZP.NONE }, conversationList: [v, R], currentConversation: v, fetchConversationStatus: p.ZP.NONE, fetchPinnedConversationsStatus: p.ZP.NONE, fetchHistoryStatus: p.ZP.NONE, fetchHomeStatus: p.ZP.NONE, modelOptions: [], selectedModel: void 0, prompts: [], version: "", accessRestrictedReasons: [], freeAcessEnabled: !1, preferredPrompts: [], layout: null, grokInput: { filterKey: null, focused: !1, advancedSettings: null } },
                 C = (e) => `${e.length}`;
             function S({ conversationKey: e }) {
                 function t(t) {
@@ -73,9 +73,6 @@
                     grokResponseComplete: function () {
                         return { type: m.Gy, meta: { conversationKey: e } };
                     },
-                    grokResponseDeepSearchUpdate: function (t) {
-                        return { payload: t, type: m.k$, meta: { conversationKey: e } };
-                    },
                     grokResponseDisclaimer: function (t) {
                         return { payload: t, type: m.BS, meta: { conversationKey: e } };
                     },
@@ -99,6 +96,9 @@
                     },
                     grokResponseMemoryReferences: function (t) {
                         return { payload: t, type: m.FF, meta: { conversationKey: e } };
+                    },
+                    grokResponseMessageStepAccumulatorUpdate: function (t) {
+                        return { payload: t, type: m.ip, meta: { conversationKey: e } };
                     },
                     grokResponseMetadata: function (t) {
                         return { payload: t, type: m.OW, meta: { conversationKey: e } };
@@ -170,6 +170,14 @@
                             a = s.messages[r];
                         return a.sender === l.CI.ASSISTANT && a.followUpSuggestions ? a.followUpSuggestions : y;
                     },
+                    selectCurrentResponseFollowUpSuggestedMode: function (e) {
+                        const s = t(e);
+                        if (s.messageIds.length < 2) return;
+                        const n = s.messageIds.length,
+                            r = s.messageIds[n - 1],
+                            a = s.messages[r];
+                        return a.sender === l.CI.ASSISTANT ? a.followUpSuggestedMode : void 0;
+                    },
                     selectCurrentResponseMessage: function (e) {
                         return t(e).currentResponse?.message;
                     },
@@ -240,9 +248,9 @@
                         const r = t(e);
                         return null !== s || n
                             ? null === s && n
-                                ? { message: r.alternativeCurrentResponse?.message ?? "", fileAttachments: r.alternativeCurrentResponse?.fileAttachments, bannerMessages: r.alternativeCurrentResponse?.bannerMessages ?? y, sender: r.alternativeCurrentResponse?.sender ?? l.CI.ASSISTANT, query: r.currentQuery, feedbackLabels: r.alternativeCurrentResponse?.feedbackLabels ?? y, followUpSuggestions: r.alternativeCurrentResponse?.followUpSuggestions ?? y, chatResponseAnnotations: r.alternativeCurrentResponse?.chatResponseAnnotations ?? y, postIds: r.alternativeCurrentResponse?.postIds ?? y, webResults: r.alternativeCurrentResponse?.webResults ?? y, citedWebResults: r.alternativeCurrentResponse?.citedWebResults ?? y, promptSource: r.alternativeCurrentResponse?.promptSource ?? "", intermediateImageResults: r.alternativeCurrentResponse?.intermediateImageResults, cardAttachments: r.alternativeCurrentResponse?.cardAttachments ?? y, deepSearchSummaryAccumulator: r.alternativeCurrentResponse?.deepSearchSummaryAccumulator, agentChatItemId: r.currentResponse?.agentChatItemId, performanceMetrics: r.alternativeCurrentResponse?.performanceMetrics, isPastThinkingTrace: r.alternativeCurrentResponse?.isPastThinkingTrace, isDeepsearch: r.alternativeCurrentResponse?.isDeepsearch, isReasoning: r.alternativeCurrentResponse?.isReasoning, hideAttachments: r.alternativeCurrentResponse?.hideAttachments, expectedImageAspectRatio: r.alternativeCurrentResponse?.expectedImageAspectRatio }
+                                ? { message: r.alternativeCurrentResponse?.message ?? "", fileAttachments: r.alternativeCurrentResponse?.fileAttachments, bannerMessages: r.alternativeCurrentResponse?.bannerMessages ?? y, sender: r.alternativeCurrentResponse?.sender ?? l.CI.ASSISTANT, query: r.currentQuery, feedbackLabels: r.alternativeCurrentResponse?.feedbackLabels ?? y, followUpSuggestions: r.alternativeCurrentResponse?.followUpSuggestions ?? y, chatResponseAnnotations: r.alternativeCurrentResponse?.chatResponseAnnotations ?? y, postIds: r.alternativeCurrentResponse?.postIds ?? y, webResults: r.alternativeCurrentResponse?.webResults ?? y, citedWebResults: r.alternativeCurrentResponse?.citedWebResults ?? y, promptSource: r.alternativeCurrentResponse?.promptSource ?? "", intermediateImageResults: r.alternativeCurrentResponse?.intermediateImageResults, cardAttachments: r.alternativeCurrentResponse?.cardAttachments ?? y, messageStepAccumulator: r.alternativeCurrentResponse?.messageStepAccumulator, agentChatItemId: r.currentResponse?.agentChatItemId, performanceMetrics: r.alternativeCurrentResponse?.performanceMetrics, isPastThinkingTrace: r.alternativeCurrentResponse?.isPastThinkingTrace, isDeepsearch: r.alternativeCurrentResponse?.isDeepsearch, isReasoning: r.alternativeCurrentResponse?.isReasoning, hideAttachments: r.alternativeCurrentResponse?.hideAttachments, expectedImageAspectRatio: r.alternativeCurrentResponse?.expectedImageAspectRatio, reasoningLayout: r.alternativeCurrentResponse?.reasoningLayout }
                                 : t(e).messages[s ?? ""]
-                            : { message: r.currentResponse?.message ?? "", thinkingTrace: r.currentResponse?.thinkingTrace ?? "", fileAttachments: r.currentResponse?.fileAttachments, bannerMessages: r.currentResponse?.bannerMessages ?? y, sender: r.currentResponse?.sender ?? l.CI.ASSISTANT, query: r.currentQuery, feedbackLabels: r.currentResponse?.feedbackLabels ?? y, followUpSuggestions: r.currentResponse?.followUpSuggestions ?? y, chatResponseAnnotations: r.currentResponse?.chatResponseAnnotations ?? y, postIds: r.currentResponse?.postIds ?? y, webResults: r.currentResponse?.webResults ?? y, citedWebResults: r.currentResponse?.citedWebResults ?? y, promptSource: r.currentResponse?.promptSource ?? "", intermediateImageResults: r.currentResponse?.intermediateImageResults, agentChatItemId: r.currentResponse?.agentChatItemId, cardAttachments: r.currentResponse?.cardAttachments ?? y, deepSearchSummaryAccumulator: r.currentResponse?.deepSearchSummaryAccumulator, performanceMetrics: r.currentResponse?.performanceMetrics, xMediaPostIds: r.currentResponse?.xMediaPostIds, isPastThinkingTrace: r.currentResponse?.isPastThinkingTrace, isDeepsearch: r.currentResponse?.isDeepsearch, isReasoning: r.currentResponse?.isReasoning, hideAttachments: r.currentResponse?.hideAttachments, followUpSuggestedMode: r.currentResponse?.followUpSuggestedMode, expectedImageAspectRatio: r.currentResponse?.expectedImageAspectRatio };
+                            : { message: r.currentResponse?.message ?? "", thinkingTrace: r.currentResponse?.thinkingTrace ?? "", fileAttachments: r.currentResponse?.fileAttachments, bannerMessages: r.currentResponse?.bannerMessages ?? y, sender: r.currentResponse?.sender ?? l.CI.ASSISTANT, query: r.currentQuery, feedbackLabels: r.currentResponse?.feedbackLabels ?? y, followUpSuggestions: r.currentResponse?.followUpSuggestions ?? y, chatResponseAnnotations: r.currentResponse?.chatResponseAnnotations ?? y, postIds: r.currentResponse?.postIds ?? y, webResults: r.currentResponse?.webResults ?? y, citedWebResults: r.currentResponse?.citedWebResults ?? y, promptSource: r.currentResponse?.promptSource ?? "", intermediateImageResults: r.currentResponse?.intermediateImageResults, agentChatItemId: r.currentResponse?.agentChatItemId, cardAttachments: r.currentResponse?.cardAttachments ?? y, messageStepAccumulator: r.currentResponse?.messageStepAccumulator, performanceMetrics: r.currentResponse?.performanceMetrics, xMediaPostIds: r.currentResponse?.xMediaPostIds, isPastThinkingTrace: r.currentResponse?.isPastThinkingTrace, isDeepsearch: r.currentResponse?.isDeepsearch, isReasoning: r.currentResponse?.isReasoning, hideAttachments: r.currentResponse?.hideAttachments, followUpSuggestedMode: r.currentResponse?.followUpSuggestedMode, expectedImageAspectRatio: r.currentResponse?.expectedImageAspectRatio, reasoningLayout: r.currentResponse?.reasoningLayout };
                     },
                     selectMessageIds: function (e) {
                         return t(e).messageIds;
@@ -306,6 +314,9 @@
                     },
                     setPromptSource: function (t) {
                         return { type: m.cw, payload: { promptSource: t }, meta: { conversationKey: e } };
+                    },
+                    setReasoningLayout: function (t) {
+                        return { type: m.fH, payload: t, meta: { conversationKey: e } };
                     },
                     setUsingExperiment: function (t) {
                         return { type: m.cA, payload: t, meta: { conversationKey: e } };
@@ -381,8 +392,8 @@
                         const s = (t.payload || []).filter((e, t, s) => t === s.findLastIndex((t) => JSON.stringify(t) === JSON.stringify(e)));
                         return { ...e, currentResponse: { ...e.currentResponse, cardAttachments: s } };
                     }
-                    case m.k$:
-                        return { ...e, currentResponse: { ...e.currentResponse, deepSearchSummaryAccumulator: t.payload, isDeepsearch: !0 } };
+                    case m.ip:
+                        return { ...e, currentResponse: { ...e.currentResponse, messageStepAccumulator: t.payload, isDeepsearch: t.payload.isDeepsearch } };
                     case m.FF:
                         return { ...e, currentResponse: { ...e.currentResponse, memoryReferences: t.payload } };
                     case m.cA:
@@ -427,8 +438,8 @@
                         const t = e.currentResponse?.thinkingTrace ?? "",
                             n = e.currentResponse?.message ?? "",
                             r = !!t;
-                        e.currentResponse?.deepSearchSummaryAccumulator && e.currentResponse.deepSearchSummaryAccumulator.onAbort();
-                        const a = { sender: l.CI.ASSISTANT, message: r ? n : `${n}...`, thinkingTrace: t ? `${t}...` : "", cardAttachments: e.currentResponse?.cardAttachments, deepSearchSummaryAccumulator: e.currentResponse?.deepSearchSummaryAccumulator, isDeepsearch: e.currentResponse?.isDeepsearch, isReasoning: e.currentResponse?.isReasoning, intermediateImageResults: e.currentResponse?.intermediateImageResults, fileAttachments: e.currentResponse?.fileAttachments, localOnly: !0, allowRetry: !1, isAborted: !0, expectedImageAspectRatio: e.currentResponse?.expectedImageAspectRatio },
+                        e.currentResponse?.messageStepAccumulator && e.currentResponse.messageStepAccumulator.onAbort();
+                        const a = { sender: l.CI.ASSISTANT, message: r ? n : `${n}...`, thinkingTrace: t ? `${t}...` : "", cardAttachments: e.currentResponse?.cardAttachments, messageStepAccumulator: e.currentResponse?.messageStepAccumulator, isDeepsearch: e.currentResponse?.isDeepsearch, isReasoning: e.currentResponse?.isReasoning, reasoningLayout: e.currentResponse?.reasoningLayout, intermediateImageResults: e.currentResponse?.intermediateImageResults, fileAttachments: e.currentResponse?.fileAttachments, localOnly: !0, allowRetry: !1, isAborted: !0, expectedImageAspectRatio: e.currentResponse?.expectedImageAspectRatio },
                             o = C(e.messageIds),
                             i = a.localOnly ? s() : {};
                         return { ...e, abortController: void 0, messageIds: e.messageIds.concat(o), messages: { ...e.messages, ...i, [o]: a }, currentResponse: void 0, status: m.Q_.IDLE };
@@ -476,6 +487,8 @@
                         return { ...e, currentResponse: { ...e.currentResponse, intermediateImageResults: [...(e.currentResponse?.intermediateImageResults ?? []), t.payload] } };
                     case m.mq:
                         return { ...e, currentResponse: { ...e.currentResponse, isPastThinkingTrace: t.payload } };
+                    case m.fH:
+                        return { ...e, currentResponse: { ...e.currentResponse, reasoningLayout: t.payload } };
                     default:
                         return e;
                 }
@@ -501,10 +514,10 @@
             function M(e) {
                 return e[m.Yf].prompts;
             }
-            function T(e) {
+            function L(e) {
                 return e[m.Yf].layout;
             }
-            function L(e) {
+            function T(e) {
                 return e[m.Yf].grokInput;
             }
             function P(e) {
@@ -513,22 +526,22 @@
             function H(e) {
                 return e[m.Yf].conversationHistory.items;
             }
-            function x(e) {
+            function w(e) {
                 return e[m.Yf].pinnedConversations.items;
             }
             function N(e) {
                 return e[m.Yf].conversationHistory.cursor;
             }
-            function w(e) {
+            function U(e) {
                 return e[m.Yf].pinnedConversations.cursor;
             }
-            function U(e) {
-                return e[m.Yf].fetchHistoryStatus;
-            }
-            function D(e) {
+            function x(e) {
                 return e[m.Yf].fetchHistoryStatus;
             }
             function K(e) {
+                return e[m.Yf].fetchHistoryStatus;
+            }
+            function D(e) {
                 return e[m.Yf].mediaHistory.status;
             }
             function O(e) {
@@ -558,13 +571,13 @@
             function B(e) {
                 return e[m.Yf].modelOptions;
             }
-            function $(e) {
+            function q(e) {
                 const t = e[m.Yf].modelOptions,
                     s = e[m.Yf].selectedModel,
                     n = !!t.find((e) => e.id === s);
                 return (s && n ? s : t[0]?.id) ?? void 0;
             }
-            function q(e, t) {
+            function J(e, t) {
                 if (c.ZP.isTwitterApp()) {
                     const s = window.webkit?.messageHandlers?.grokWebviewEventMessageHandler;
                     if (s) {
@@ -574,7 +587,7 @@
                 }
                 return { type: m.WK, payload: e };
             }
-            function J(e) {
+            function $(e) {
                 return { type: m.BA, payload: e };
             }
             function j(e) {
@@ -609,7 +622,7 @@
             }
             d.Z.register(
                 {
-                    [m.Yf]: function (e = R, t) {
+                    [m.Yf]: function (e = h, t) {
                         if (!t) return e;
                         switch (t.type) {
                             case m.$t: {
@@ -773,4 +786,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.DirectMessages-8486177b.2f97834a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.DirectMessages-8486177b.0f255e3a.js.map

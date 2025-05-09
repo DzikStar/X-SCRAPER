@@ -160,8 +160,6 @@
                                                                                             { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null },
                                                                                             { alias: null, args: null, kind: "ScalarField", name: "blocking", storageKey: null },
                                                                                             { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null },
-                                                                                            { alias: null, args: null, kind: "ScalarField", name: "verified_type", storageKey: null },
-                                                                                            { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null },
                                                                                         ],
                                                                                         storageKey: null,
                                                                                     },
@@ -173,6 +171,19 @@
                                                                                     { alias: null, args: null, concreteType: "HighlightedUserLabelResponse", kind: "LinkedField", name: "affiliates_highlighted_label", plural: !1, selections: [{ alias: null, args: null, concreteType: "HighlightedUserLabel", kind: "LinkedField", name: "label", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "user_label_type", storageKey: null }], storageKey: null }], storageKey: null },
                                                                                     r,
                                                                                     { alias: null, args: null, kind: "ScalarField", name: "is_blue_verified", storageKey: null },
+                                                                                    {
+                                                                                        alias: null,
+                                                                                        args: null,
+                                                                                        concreteType: "UserVerification",
+                                                                                        kind: "LinkedField",
+                                                                                        name: "verification",
+                                                                                        plural: !1,
+                                                                                        selections: [
+                                                                                            { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null },
+                                                                                            { alias: null, args: null, kind: "ScalarField", name: "verified_type", storageKey: null },
+                                                                                        ],
+                                                                                        storageKey: null,
+                                                                                    },
                                                                                     {
                                                                                         alias: null,
                                                                                         args: null,
@@ -271,7 +282,7 @@
                             },
                         ],
                     },
-                    params: { id: "V7OdnMvujMPsCctT_daznQ", metadata: { features: ["responsive_web_graphql_timeline_navigation_enabled"], sliceInfoPath: ["communityResults", "result", "members_slice", "slice_info"] }, name: "membersSliceTimeline_Query", operationKind: "query", text: null },
+                    params: { id: "g4HO7LQrPOPxuNUjnvHx8g", metadata: { features: ["responsive_web_graphql_timeline_navigation_enabled"], sliceInfoPath: ["communityResults", "result", "members_slice", "slice_info"] }, name: "membersSliceTimeline_Query", operationKind: "query", text: null },
                 };
             m.hash = "f28e97f02409170eec27e207c4eae5ab";
             const c = m;
@@ -463,8 +474,6 @@
                                                                                             { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null },
                                                                                             { alias: null, args: null, kind: "ScalarField", name: "blocking", storageKey: null },
                                                                                             { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null },
-                                                                                            { alias: null, args: null, kind: "ScalarField", name: "verified_type", storageKey: null },
-                                                                                            { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null },
                                                                                         ],
                                                                                         storageKey: null,
                                                                                     },
@@ -476,6 +485,19 @@
                                                                                     { alias: null, args: null, concreteType: "HighlightedUserLabelResponse", kind: "LinkedField", name: "affiliates_highlighted_label", plural: !1, selections: [{ alias: null, args: null, concreteType: "HighlightedUserLabel", kind: "LinkedField", name: "label", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "user_label_type", storageKey: null }], storageKey: null }], storageKey: null },
                                                                                     r,
                                                                                     { alias: null, args: null, kind: "ScalarField", name: "is_blue_verified", storageKey: null },
+                                                                                    {
+                                                                                        alias: null,
+                                                                                        args: null,
+                                                                                        concreteType: "UserVerification",
+                                                                                        kind: "LinkedField",
+                                                                                        name: "verification",
+                                                                                        plural: !1,
+                                                                                        selections: [
+                                                                                            { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null },
+                                                                                            { alias: null, args: null, kind: "ScalarField", name: "verified_type", storageKey: null },
+                                                                                        ],
+                                                                                        storageKey: null,
+                                                                                    },
                                                                                     {
                                                                                         alias: null,
                                                                                         args: null,
@@ -574,7 +596,7 @@
                             },
                         ],
                     },
-                    params: { id: "e1aYy7TNQ5B6jfvhWRXTvw", metadata: { features: ["responsive_web_graphql_timeline_navigation_enabled"], sliceInfoPath: ["communityResults", "result", "moderators_slice", "slice_info"] }, name: "moderatorsSliceTimeline_Query", operationKind: "query", text: null },
+                    params: { id: "-o35FOpgEpE31NEvx-XEpg", metadata: { features: ["responsive_web_graphql_timeline_navigation_enabled"], sliceInfoPath: ["communityResults", "result", "moderators_slice", "slice_info"] }, name: "moderatorsSliceTimeline_Query", operationKind: "query", text: null },
                 };
             m.hash = "643b536998bafcec80f1aa661b660cf7";
             const c = m;
@@ -598,13 +620,43 @@
                         { alias: "mode", args: null, kind: "ScalarField", name: "accessibility", storageKey: null },
                         { alias: null, args: null, kind: "ScalarField", name: "member_count", storageKey: null },
                         { alias: null, args: null, kind: "ScalarField", name: "members_context", storageKey: null },
-                        { alias: null, args: null, concreteType: "UserResults", kind: "LinkedField", name: "owner_results", plural: !1, selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [{ kind: "InlineFragment", selections: [{ alias: "author", args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "id_str", storageKey: null }, n, { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }, action: "THROW" }, { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }, { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }, action: "THROW" }], storageKey: null }], type: "User", abstractKey: null }], storageKey: null }], storageKey: null },
+                        {
+                            alias: null,
+                            args: null,
+                            concreteType: "UserResults",
+                            kind: "LinkedField",
+                            name: "owner_results",
+                            plural: !1,
+                            selections: [
+                                {
+                                    alias: null,
+                                    args: null,
+                                    concreteType: null,
+                                    kind: "LinkedField",
+                                    name: "result",
+                                    plural: !1,
+                                    selections: [
+                                        {
+                                            kind: "InlineFragment",
+                                            selections: [
+                                                { alias: "author", args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "id_str", storageKey: null }, n, { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }, action: "THROW" }, { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }], storageKey: null },
+                                                { alias: null, args: null, concreteType: "UserVerification", kind: "LinkedField", name: "verification", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }], storageKey: null },
+                                            ],
+                                            type: "User",
+                                            abstractKey: null,
+                                        },
+                                    ],
+                                    storageKey: null,
+                                },
+                            ],
+                            storageKey: null,
+                        },
                         { args: null, kind: "FragmentSpread", name: "useBannerImage_list" },
                     ],
                     type: "List",
                     abstractKey: null,
                 };
-            i.hash = "76a4e2bef500a63f094981909c5eb075";
+            i.hash = "ff240635406c1105d02d8450bd156d83";
             const s = i;
         },
         693736: (l, e, a) => {
@@ -785,9 +837,22 @@
                                                                                         kind: "InlineFragment",
                                                                                         selections: [
                                                                                             { alias: "id_str", args: null, kind: "ScalarField", name: "rest_id", storageKey: null },
-                                                                                            { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [(d = { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null }), (o = { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null }), { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "id_str", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "verified_type", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null }], storageKey: null },
+                                                                                            { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [(d = { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null }), (o = { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null }), { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "id_str", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null }], storageKey: null },
                                                                                             { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" },
                                                                                             { alias: null, args: null, kind: "ScalarField", name: "is_blue_verified", storageKey: null },
+                                                                                            {
+                                                                                                alias: null,
+                                                                                                args: null,
+                                                                                                concreteType: "UserVerification",
+                                                                                                kind: "LinkedField",
+                                                                                                name: "verification",
+                                                                                                plural: !1,
+                                                                                                selections: [
+                                                                                                    { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null },
+                                                                                                    { alias: null, args: null, kind: "ScalarField", name: "verified_type", storageKey: null },
+                                                                                                ],
+                                                                                                storageKey: null,
+                                                                                            },
                                                                                             {
                                                                                                 alias: null,
                                                                                                 args: null,
@@ -895,7 +960,7 @@
                             },
                         ],
                     },
-                    params: { id: "8ssZ2UU_5RziCpjraBEhdw", metadata: { features: ["responsive_web_graphql_timeline_navigation_enabled"], sliceInfoPath: ["communityResults", "result", "join_request_moderation_log_slice", "slice_info"] }, name: "timelinesMembersLogQuery", operationKind: "query", text: null },
+                    params: { id: "N0X1yCxlV9RURDU0n7AeRw", metadata: { features: ["responsive_web_graphql_timeline_navigation_enabled"], sliceInfoPath: ["communityResults", "result", "join_request_moderation_log_slice", "slice_info"] }, name: "timelinesMembersLogQuery", operationKind: "query", text: null },
                 };
             g.hash = "b216d529d986b69686c0aaba043491fc";
             const y = g;
@@ -1052,9 +1117,22 @@
                                                                                         kind: "InlineFragment",
                                                                                         selections: [
                                                                                             { alias: "id_str", args: null, kind: "ScalarField", name: "rest_id", storageKey: null },
-                                                                                            { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [(d = { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null }), (o = { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null }), { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "id_str", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "verified_type", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null }], storageKey: null },
+                                                                                            { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [(d = { alias: null, args: null, kind: "ScalarField", name: "description", storageKey: null }), (o = { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null }), { alias: null, args: null, kind: "ScalarField", name: "screen_name", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "id_str", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "protected", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "followed_by", storageKey: null }], storageKey: null },
                                                                                             { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" },
                                                                                             { alias: null, args: null, kind: "ScalarField", name: "is_blue_verified", storageKey: null },
+                                                                                            {
+                                                                                                alias: null,
+                                                                                                args: null,
+                                                                                                concreteType: "UserVerification",
+                                                                                                kind: "LinkedField",
+                                                                                                name: "verification",
+                                                                                                plural: !1,
+                                                                                                selections: [
+                                                                                                    { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null },
+                                                                                                    { alias: null, args: null, kind: "ScalarField", name: "verified_type", storageKey: null },
+                                                                                                ],
+                                                                                                storageKey: null,
+                                                                                            },
                                                                                             {
                                                                                                 alias: null,
                                                                                                 args: null,
@@ -1162,7 +1240,7 @@
                             },
                         ],
                     },
-                    params: { id: "PkJE723-kQuiyrh-FVKKiw", metadata: { features: ["responsive_web_graphql_timeline_navigation_enabled"], sliceInfoPath: ["communityResults", "result", "removed_user_moderation_log_slice", "slice_info"] }, name: "timelinesRemovedUsersLogQuery", operationKind: "query", text: null },
+                    params: { id: "stvsebF9GtQR2MHwXH5fKQ", metadata: { features: ["responsive_web_graphql_timeline_navigation_enabled"], sliceInfoPath: ["communityResults", "result", "removed_user_moderation_log_slice", "slice_info"] }, name: "timelinesRemovedUsersLogQuery", operationKind: "query", text: null },
                 };
             g.hash = "6a4e127fd8c455fa791019313dc98456";
             const y = g;
@@ -1554,4 +1632,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Communities-59468b1d.081bc4ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Communities-59468b1d.674e013a.js.map

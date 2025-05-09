@@ -141,7 +141,7 @@
             }
         },
         991985: (e, t, n) => {
-            n.d(t, { n: () => z });
+            n.d(t, { n: () => H });
             var o = n(202784),
                 r = n(952793),
                 a = n(725516),
@@ -209,8 +209,8 @@
                 })(),
                 y = new Set();
             let b,
-                v,
                 w,
+                v,
                 _ = !1,
                 E = new Date(),
                 k = h(),
@@ -221,7 +221,7 @@
             function x(e) {
                 e && !C
                     ? (C = setInterval(
-                          R,
+                          Z,
                           (function () {
                               const e = D();
                               return e ? e.heartbeatMs : p;
@@ -233,11 +233,11 @@
             function D() {
                 return y.values().next().value;
             }
-            function R() {
+            function Z() {
                 const e = D();
-                e && Z(e.analytics, !0);
+                e && R(e.analytics, !0);
             }
-            function Z(e, t = !1) {
+            function R(e, t = !1) {
                 if (!e) return;
                 const n = new Date(),
                     o = f.recoverMs(),
@@ -245,14 +245,14 @@
                 r > 250 && (e.scribe({ page: T, section: "user-seconds", component: "user-seconds", action: "analytics", data: { duration_ms: r, start_date: E.toISOString(), end_date: n.toISOString(), user_agent: I } }), t || e.flushScribes()), (E = n), f.resetCounter(E);
             }
             function N() {
-                (k = h()), k ? (M(), L()) : y.size && B();
+                (k = h()), k ? (B(), L()) : y.size && M();
             }
             function L() {
                 const e = D();
                 e && e.analytics.flushScribes();
             }
             function A() {
-                M(), L();
+                B(), L();
             }
             function O(e) {
                 if (((_ = !1), b && (b.style.backgroundColor = "red"), !y.size))
@@ -260,40 +260,40 @@
                         document.removeEventListener("visibilitychange", N), window.removeEventListener("focus", N), window.removeEventListener("blur", N), window.removeEventListener("beforeunload", A);
                     } catch (e) {}
                 const t = e || D();
-                t && Z(t.analytics), x(!1), y.size || (S = !0);
+                t && R(t.analytics), x(!1), y.size || (S = !0);
             }
-            function M(e) {
+            function B(e) {
                 _ &&
                     (e
                         ? (function (e) {
-                              clearTimeout(w), (w = setTimeout(O, 500, e));
+                              clearTimeout(v), (v = setTimeout(O, 500, e));
                           })(e)
                         : O(e));
             }
-            function B() {
+            function M() {
                 try {
                     if (document.hidden) return;
                 } catch (e) {}
-                clearTimeout(w),
+                clearTimeout(v),
                     _ ||
                         (function () {
-                            (_ = !0), clearTimeout(w), (E = new Date()), f.resetCounter(E), b && (b.style.backgroundColor = "green");
+                            (_ = !0), clearTimeout(v), (E = new Date()), f.resetCounter(E), b && (b.style.backgroundColor = "green");
                             try {
                                 document.addEventListener("visibilitychange", N), window.addEventListener("focus", N), window.addEventListener("blur", N), window.addEventListener("beforeunload", A);
                             } catch (e) {}
                             x(!0);
                         })(),
-                    clearTimeout(v),
-                    (v = setTimeout(
-                        M,
+                    clearTimeout(w),
+                    (w = setTimeout(
+                        B,
                         (function () {
                             const e = D();
                             return e ? e.timeoutMs : g;
                         })(),
                     ));
             }
-            const P = ["mousemove", "mousedown", "mouseup", "wheel", "touchstart", "touchmove", "touchend", "touchcancel", "keydown", "keyup", "resize"];
-            function z(e, t) {
+            const z = ["mousemove", "mousedown", "mouseup", "wheel", "touchstart", "touchmove", "touchend", "touchcancel", "keydown", "keyup", "resize"];
+            function H(e, t) {
                 const n = (0, r.hC)("responsive_web_grok_user_seconds_debug"),
                     l = (0, r.hC)("responsive_web_grok_user_active_seconds_enable"),
                     i = (0, r.JY)("responsive_web_grok_user_seconds_timeout", g),
@@ -301,15 +301,15 @@
                     u = !l || t,
                     m = (0, a.z)(),
                     h = o.useRef({ analytics: m, timeoutMs: i, heartbeatMs: d, showStatusDot: n }),
-                    [f, v] = o.useState(null),
-                    w = o.useCallback((e) => {
-                        k || B();
+                    [f, w] = o.useState(null),
+                    v = o.useCallback((e) => {
+                        k || M();
                     }, []),
                     _ = (0, c.uf)(),
                     E = "idle" !== (0, s.v9)(_.selectStatus) && !u;
                 o.useEffect(() => {
                     let e;
-                    return E && ((e = setInterval(B, 1e3)), B()), () => clearInterval(e);
+                    return E && ((e = setInterval(M, 1e3)), M()), () => clearInterval(e);
                 }, [E]);
                 const C = e ? document : f,
                     x = h.current;
@@ -321,52 +321,32 @@
                                 const t = new Date().toISOString();
                                 e.analytics.scribe({ page: T, section: "user-seconds", component: "user-seconds", action: "start", data: { start_date: t, end_date: t, user_agent: I } });
                             }
-                            !b && e.showStatusDot && ((b = document.createElement("div")), (b.style.width = "14px"), (b.style.height = "14px"), (b.style.left = "-7px"), (b.style.top = "-7px"), (b.style.borderRadius = "7px"), (b.style.position = "fixed"), (b.style.zIndex = "2000"), document.body.appendChild(b)), y.add(e), B();
+                            !b && e.showStatusDot && ((b = document.createElement("div")), (b.style.width = "14px"), (b.style.height = "14px"), (b.style.left = "-7px"), (b.style.top = "-7px"), (b.style.borderRadius = "7px"), (b.style.position = "fixed"), (b.style.zIndex = "2000"), document.body.appendChild(b)), y.add(e), M();
                         })(x);
                         const e = (function (e, t) {
                             if (!e) return () => {};
                             const n = { passive: !0 };
                             return (
-                                P.forEach((o) => {
+                                z.forEach((o) => {
                                     e.addEventListener(o, t, n);
                                 }),
                                 () => {
-                                    P.forEach((o) => {
+                                    z.forEach((o) => {
                                         e.removeEventListener(o, t, n);
                                     });
                                 }
                             );
-                        })(C, w);
+                        })(C, v);
                         return () => {
                             !(function (e) {
-                                y.delete(e), y.size || M(e);
+                                y.delete(e), y.size || B(e);
                             })(x),
                                 e();
                         };
                     }
-                }, [u, C, x, w]);
-                return o.useCallback((e) => v(e), []);
+                }, [u, C, x, v]);
+                return o.useCallback((e) => w(e), []);
             }
-        },
-        976021: (e, t, n) => {
-            n.d(t, { B: () => i, P: () => l });
-            var o = n(202784),
-                r = n(224162),
-                a = n(442730),
-                s = n(952793);
-            const c = "responsive_web_grok_rtl_detection",
-                l = ({ children: e, direction: t }) => {
-                    const n = o.useContext(r.RD),
-                        a = t || n.direction,
-                        l = o.useMemo(() => ({ ...n, direction: a }), [a, n]);
-                    return (0, s.hC)(c) ? o.createElement(r.RD.Provider, { value: l }, e) : o.createElement(o.Fragment, null, e);
-                },
-                i = ({ children: e, text: t }) => {
-                    const n = o.useContext(r.RD),
-                        l = o.useMemo(() => a.Z.getTextDirection(t || ""), [t]),
-                        i = o.useMemo(() => ({ ...n, direction: l }), [l, n]);
-                    return (0, s.hC)(c) ? o.createElement(r.RD.Provider, { value: i }, e) : o.createElement(o.Fragment, null, e);
-                };
         },
         20716: (e, t, n) => {
             n.d(t, { vN: () => s, wG: () => c });
@@ -415,8 +395,8 @@
                 f = n(837020),
                 y = n(276259),
                 b = n(457566),
-                v = n(306677),
-                w = n(952793),
+                w = n(306677),
+                v = n(952793),
                 _ = n(646403),
                 E = n(536387),
                 k = n(725405),
@@ -426,8 +406,8 @@
                 T = n(922449),
                 x = n(946474),
                 D = n(671212),
-                R = n(517330),
-                Z = n(276522);
+                Z = n(517330),
+                R = n(276522);
             const N = p().ca0f5894,
                 L = p().fe731016;
             function A({ feedback: e, sendFeedback: t, universalSearchId: n }) {
@@ -439,36 +419,36 @@
                     i = o.useCallback(() => {
                         c("thumbsDown"), t("Dislike"), r.scribe({ component: "grok_search_summary_thumbs_down_button", action: "click", data: { grok_details: { universal_search_id: n } } });
                     }, [r, t, n]);
-                return o.createElement(s.Z, { style: O.container }, "thumbsDown" !== a ? o.createElement(Z.Z, { icon: "thumbsUp" === a ? o.createElement(T.default, null) : o.createElement(x.default, null), label: L, onPress: l }) : null, "thumbsUp" !== a ? o.createElement(Z.Z, { icon: "thumbsDown" === a ? o.createElement(D.default, null) : o.createElement(R.default, null), label: N, onPress: i }) : null);
+                return o.createElement(s.Z, { style: O.container }, "thumbsDown" !== a ? o.createElement(R.Z, { icon: "thumbsUp" === a ? o.createElement(T.default, null) : o.createElement(x.default, null), label: L, onPress: l }) : null, "thumbsUp" !== a ? o.createElement(R.Z, { icon: "thumbsDown" === a ? o.createElement(D.default, null) : o.createElement(Z.default, null), label: N, onPress: i }) : null);
             }
             const O = h.default.create((e) => ({ container: { flexDirection: "row" } }));
-            var M = n(194504),
-                B = n(420182),
-                P = n(125363),
-                z = n(100326),
-                F = n(601576),
-                H = n(654917),
+            var B = n(194504),
+                M = n(420182),
+                z = n(125363),
+                H = n(100326),
+                P = n(601576),
+                F = n(654917),
                 $ = n(979512);
             const W = p().e4a6e006,
                 q = ({ followups: e, query: t, universalSearchId: n }) => {
                     const r = (0, k.Z)(),
-                        c = (0, P.I0)(),
-                        i = (0, H.uf)(),
+                        c = (0, z.I0)(),
+                        i = (0, F.uf)(),
                         { openGrok: u } = (0, $.Z)(),
-                        g = (0, a.Dv)(B.dd),
+                        g = (0, a.Dv)(M.dd),
                         [p, f] = o.useState(!0),
-                        [y, v] = o.useState(!0),
-                        w = o.useCallback(
+                        [y, w] = o.useState(!0),
+                        v = o.useCallback(
                             ({ index: t, intersectionRatio: n }) => {
-                                e && (0 === t && f(1 === n), t === e.length - 1 && v(1 === n));
+                                e && (0 === t && f(1 === n), t === e.length - 1 && w(1 === n));
                             },
                             [e],
                         ),
                         _ = o.useCallback(
                             async (e) => {
-                                if ((r.scribe({ element: "grok_search_summary_followup", action: "click", data: { grok_details: { universal_search_id: n } } }), !n)) return void c((0, F.fz)({ text: W }));
-                                const o = await (0, z.X)({ analytics: r, api: g, dispatch: c, grokModule: i, fromUniversalSearch: { id: n, query: t } });
-                                o ? u({ text: e, autoSubmit: !0, conversationId: o, source: "search_followup" }) : c((0, F.fz)({ text: W }));
+                                if ((r.scribe({ element: "grok_search_summary_followup", action: "click", data: { grok_details: { universal_search_id: n } } }), !n)) return void c((0, P.fz)({ text: W }));
+                                const o = await (0, H.X)({ analytics: r, api: g, dispatch: c, grokModule: i, fromUniversalSearch: { id: n, query: t } });
+                                o ? u({ text: e, autoSubmit: !0, conversationId: o, source: "search_followup" }) : c((0, P.fz)({ text: W }));
                             },
                             [n, t, c, r, g, i, u],
                         );
@@ -477,8 +457,8 @@
                               s.Z,
                               { style: X.grokFollowupsContainer },
                               o.createElement(
-                                  M.Z,
-                                  { buttonsContainerStyle: X.buttonsContainer, onVisibleRangeChange: w, style: X.carousel, withSingleIndexButtons: !0 },
+                                  B.Z,
+                                  { buttonsContainerStyle: X.buttonsContainer, onVisibleRangeChange: v, style: X.carousel, withSingleIndexButtons: !0 },
                                   e.map((e, t) =>
                                       o.createElement(
                                           d.Z,
@@ -514,15 +494,15 @@
                         [p, T] = o.useState(!1),
                         x = o.useRef(""),
                         D = (0, c.useHistory)(),
-                        R = o.useMemo(() => (0, r.cn)({ status: "no_response", text: "", citedWebResults: [], followUpSuggestions: [], fileAttachments: [] }), [n]),
-                        Z = (0, k.Z)(),
+                        Z = o.useMemo(() => (0, r.cn)({ status: "no_response", text: "", citedWebResults: [], followUpSuggestions: [], fileAttachments: [] }), [n]),
+                        R = (0, k.Z)(),
                         N = (0, E.xO)(),
-                        L = (0, w.hC)("responsive_web_grok_search_summary_images_enabled"),
-                        O = (0, w.hC)("responsive_web_grok_dev_universal_search_id_enabled"),
-                        [{ citedWebResults: M, fileAttachments: P, followUpSuggestions: z, status: F, text: H, universalSearchId: $ }] = (0, a.KO)(R),
-                        W = (0, I.u)(H, !0),
+                        L = (0, v.hC)("responsive_web_grok_search_summary_images_enabled"),
+                        O = (0, v.hC)("responsive_web_grok_dev_universal_search_id_enabled"),
+                        [{ citedWebResults: B, fileAttachments: z, followUpSuggestions: H, status: P, text: F, universalSearchId: $ }] = (0, a.KO)(Z),
+                        W = (0, I.u)(F, !0),
                         X = (({ query: e, universalSearchId: t }) => {
-                            const [{ apiClient: n }] = (0, a.KO)(B.dd);
+                            const [{ apiClient: n }] = (0, a.KO)(M.dd);
                             return o.useCallback(
                                 async (o) => {
                                     t && (await n.graphQL(G(), { query: e, universalSearchId: t, basicFeedback: { feedback_type: o } }).then((e) => e));
@@ -530,25 +510,25 @@
                                 [n, e, t],
                             );
                         })({ query: n, universalSearchId: $ }),
-                        U = P.filter((e) => y.v5.some((t) => e.mimeType))[0];
+                        U = z.filter((e) => y.v5.some((t) => e.mimeType))[0];
                     o.useEffect(() => {
-                        t || p || n === x.current || ((x.current = n), (0, _.E)({ analytics: Z, responseAtom: R, jotaiStore: N, query: n }));
-                    }, [n, Z, R, H, t, p, N]);
+                        t || p || n === x.current || ((x.current = n), (0, _.E)({ analytics: R, responseAtom: Z, jotaiStore: N, query: n }));
+                    }, [n, R, Z, F, t, p, N]);
                     const J = o.useCallback(() => {
-                            Z.scribe({ element: "grok_search_summary_show_more_button", action: "click", data: { grok_details: { universal_search_id: $ } } });
-                        }, [Z, $]),
+                            R.scribe({ element: "grok_search_summary_show_more_button", action: "click", data: { grok_details: { universal_search_id: $ } } });
+                        }, [R, $]),
                         V = o.useCallback(() => {
                             D.push({ pathname: "/i/grok/media", state: { file: U } });
                         }, [D, U]),
                         te = o.useCallback(() => {
-                            Z.scribe({ element: "grok_search_summary", action: "impression", data: { grok_details: { universal_search_id: $ } } });
-                        }, [Z, $]),
+                            R.scribe({ element: "grok_search_summary", action: "impression", data: { grok_details: { universal_search_id: $ } } });
+                        }, [R, $]),
                         ne = o.useCallback(() => {
-                            Z.scribe({ element: "grok_search_summary_close_button", action: "click", data: { grok_details: { universal_search_id: $ } } }), T(!0), X("Close");
-                        }, [Z, T, $, X]);
-                    return "no_response" === F || "error" === F || t || p ? null : o.createElement(s.Z, { style: ee.container }, o.createElement(v.D, { id: "followups_search", onFullyVisible: te, position: "bottom", testID: "followups_search" }), o.createElement(s.Z, { style: ee.header }, o.createElement(s.Z, { style: ee.title }, o.createElement(b.x1, { style: ee.grokIcon }), o.createElement(l.ZP, { style: ee.heading }, K)), o.createElement(i.ZP, { hoverLabel: { label: Y }, icon: o.createElement(f.default, { style: ee.closeIcon }), onClick: ne, size: "medium", style: ee.closeButton, type: "primaryText" })), o.createElement(S.Z, { disableShowMore: !W, foldedHeight: Q * g, heightBreakpoint: Q * g, onOpen: J }, W ? o.createElement(s.Z, { style: [ee.content, { minHeight: Q * g }] }, O ? o.createElement(l.ZP, { color: "gray500" }, "[Debug] Search id: ", $) : null, o.createElement(s.Z, { style: ee.summary }, L && U?.url ? o.createElement(d.Z, { onClick: V, style: ee.imageContainer }, o.createElement(u.Z, { source: { uri: U.url }, style: ee.image })) : null, o.createElement(C.Z, { citations: M, disableLinks: !1, isAnimated: "streaming" === F, markdownText: W, style: ee.text })), o.createElement(s.Z, { style: ee.footer }, "completed" === F ? o.createElement(A, { sendFeedback: X, universalSearchId: $ }) : null, o.createElement(s.Z, { style: ee.searchFollowups }, o.createElement(q, { followups: z, query: n, universalSearchId: $ })))) : o.createElement(s.Z, { style: [ee.shimmerContainer, { height: Q * g }] }, o.createElement(j, { height: Q * g }), o.createElement(m.Z, { colors: [h.default.theme.colors.transparent, h.default.theme.colors.cellBackground], style: ee.shimmerShadow }))));
+                            R.scribe({ element: "grok_search_summary_close_button", action: "click", data: { grok_details: { universal_search_id: $ } } }), T(!0), X("Close");
+                        }, [R, T, $, X]);
+                    return "no_response" === P || "error" === P || t || p ? null : o.createElement(s.Z, { style: ee.container }, o.createElement(w.D, { id: "followups_search", onFullyVisible: te, position: "bottom", testID: "followups_search" }), o.createElement(s.Z, { style: ee.header }, o.createElement(s.Z, { style: ee.title }, o.createElement(b.x1, { style: ee.grokIcon }), o.createElement(l.ZP, { style: ee.heading }, K)), o.createElement(i.ZP, { hoverLabel: { label: Y }, icon: o.createElement(f.default, { style: ee.closeIcon }), onClick: ne, size: "medium", style: ee.closeButton, type: "primaryText" })), o.createElement(S.Z, { disableShowMore: !W, foldedHeight: Q * g, heightBreakpoint: Q * g, onOpen: J }, W ? o.createElement(s.Z, { style: [ee.content, { minHeight: Q * g }] }, O ? o.createElement(l.ZP, { color: "gray500" }, "[Debug] Search id: ", $) : null, o.createElement(s.Z, { style: ee.summary }, L && U?.url ? o.createElement(d.Z, { onClick: V, style: ee.imageContainer }, o.createElement(u.Z, { source: { uri: U.url }, style: ee.image })) : null, o.createElement(C.Z, { citations: B, disableLinks: !1, isAnimated: "streaming" === P, markdownText: W, style: ee.text })), o.createElement(s.Z, { style: ee.footer }, "completed" === P ? o.createElement(A, { sendFeedback: X, universalSearchId: $ }) : null, o.createElement(s.Z, { style: ee.searchFollowups }, o.createElement(q, { followups: H, query: n, universalSearchId: $ })))) : o.createElement(s.Z, { style: [ee.shimmerContainer, { height: Q * g }] }, o.createElement(j, { height: Q * g }), o.createElement(m.Z, { colors: [h.default.theme.colors.transparent, h.default.theme.colors.cellBackground], style: ee.shimmerShadow }))));
                 };
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-3c20ad5c.a77fda9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-3c20ad5c.cebd0d5a.js.map

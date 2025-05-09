@@ -914,7 +914,8 @@
                 const d = (0, C.Z)(),
                     { setFilterKey: m } = (0, v.w)(),
                     { clearSelectedFile: u, onFileSelected: I, selectedFiles: R } = (0, E.ZP)(),
-                    z = [
+                    z = r.useMemo(() => Object.keys(R), [R]),
+                    D = [
                         {
                             id: "create-images",
                             text: _,
@@ -924,54 +925,62 @@
                             },
                             type: "prefill",
                         },
-                        { id: "edit-image", text: Z({ ttc_grok_preset: "" }), icon: r.createElement(y.default, { style: [P.icon, t ? P.mobileIcon : null] }), onClick: () => {}, type: "file-input" },
+                        {
+                            id: "edit-image",
+                            text: Z({ ttc_grok_preset: "" }),
+                            icon: r.createElement(y.default, { style: [P.icon, t ? P.mobileIcon : null] }),
+                            onClick: () => {
+                                m("ImageEdit");
+                            },
+                            type: "file-input",
+                        },
                     ];
-                f.ZP.isAndroid() && z.push({ id: "try-voice-mode", text: x, icon: r.createElement(h.default, { style: [P.icon, t ? P.mobileIcon : null] }), onClick: () => {}, type: "external-link", url: "https://play.google.com/store/apps/details?id=ai.x.grok" });
-                const D = r.useCallback(
+                f.ZP.isAndroid() && D.push({ id: "try-voice-mode", text: x, icon: r.createElement(h.default, { style: [P.icon, t ? P.mobileIcon : null] }), onClick: () => {}, type: "external-link", url: "https://play.google.com/store/apps/details?id=ai.x.grok" });
+                const T = r.useCallback(
                         (e) => {
                             if (e.length <= 0) return;
-                            const t = Object.keys(R);
-                            t.length > 0 &&
-                                t.forEach((e) => {
+                            z.length > 0 &&
+                                z.forEach((e) => {
                                     u(e);
                                 });
-                            const o = e[0];
-                            I(o).then(() => {
+                            const t = e[0];
+                            I(t).then(() => {
                                 m("ImageEdit");
                             }),
                                 (0, w.dP)(d, "button");
                         },
-                        [I, d, m, R, u],
+                        [I, d, m, u, z],
                     ),
-                    T = r.useCallback(
+                    S = r.useCallback(
                         (t, o) => {
                             d.scribe({ element: "grok-home-preset", action: "click", data: { event_info: o.id } }), "external-link" === o.type && o.url ? (window.location.href = o.url) : o.onClick && (o.onClick?.(), t.preventDefault(), e?.());
                         },
                         [e, d],
                     ),
-                    S = (e) => ({
+                    F = (e) => ({
                         backgroundColor: "gray50",
                         borderColor: "transparent",
                         key: e.id,
                         onClick: (t) => {
-                            T(t, e);
+                            S(t, e);
                         },
                         style: t ? P.mobilePreset : P.preset,
+                        disabled: "edit-image" === e.id && z.length > 1,
                     });
                 return t
                     ? r.createElement(
                           n.Z,
                           { contentContainerStyle: P.mobilePresetContainer, horizontal: !0, showsHorizontalScrollIndicator: !1, style: [P.mobilePresets, o] },
-                          z.map((e) => {
-                              const t = S(e);
-                              return "file-input" === e.type && "edit-image" === e.id
+                          D.map((e) => {
+                              const t = F(e);
+                              return "file-input" === e.type && "edit-image" === e.id && z.length < 1
                                   ? r.createElement(
                                         s.Z,
                                         (0, a.Z)({}, t, {
                                             accept: k.$.join(","),
                                             multiple: !1,
                                             onChange: (e) => {
-                                                D(e);
+                                                T(e);
                                             },
                                             onClick: () => {
                                                 d.scribe({ element: "grok-home-preset", action: "click", data: { event_info: e.id } });
@@ -985,16 +994,16 @@
                     : r.createElement(
                           i.Z,
                           { style: [P.presets, o] },
-                          z.map((e) => {
-                              const t = S(e);
-                              return "file-input" === e.type && "edit-image" === e.id
+                          D.map((e) => {
+                              const t = F(e);
+                              return "file-input" === e.type && "edit-image" === e.id && z.length < 1
                                   ? r.createElement(
                                         s.Z,
                                         (0, a.Z)({}, t, {
                                             accept: k.$.join(","),
                                             multiple: !1,
                                             onChange: (e) => {
-                                                D(e);
+                                                T(e);
                                             },
                                             onClick: () => {
                                                 d.scribe({ element: "grok-home-preset", action: "click", data: { event_info: e.id } });
@@ -1048,4 +1057,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-cebf58fc.45f7be6a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-cebf58fc.37e8d75a.js.map

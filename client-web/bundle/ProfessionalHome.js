@@ -166,7 +166,7 @@
                                 a = b(e, E, Z ?? []);
                             return { current: t.total_value, past: a.total_value, metadata: t.metadata };
                         };
-                    function P(e) {
+                    function T(e) {
                         const a = g[e];
                         if (!a) return;
                         const { current: i, metadata: s, past: d } = a.calculate ? a.calculate(t, w) : w(e),
@@ -182,7 +182,7 @@
                         n.createElement(
                             r.Z,
                             { style: d ? h.gridMobile : h.gridDesktop },
-                            u.map((e) => n.createElement(s.Z, { "aria-label": e, key: e, upper: n.createElement(r.Z, { style: h.tile }, P(e)) })),
+                            u.map((e) => n.createElement(s.Z, { "aria-label": e, key: e, upper: n.createElement(r.Z, { style: h.tile }, T(e)) })),
                         ),
                         a && n.createElement(l.ZP, { color: "gray700", size: "subtext3" }, y),
                     );
@@ -284,8 +284,21 @@
                                                 selections: [
                                                     { alias: null, args: null, concreteType: "Professional", kind: "LinkedField", name: "professional", plural: !1, selections: [{ alias: null, args: null, kind: "ScalarField", name: "professional_type", storageKey: null }, (s = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }), { alias: null, args: null, concreteType: "BusinessCategory", kind: "LinkedField", name: "category", plural: !0, selections: [(c = { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null })], storageKey: null }], storageKey: null },
                                                     { alias: null, args: null, kind: "ScalarField", name: "is_blue_verified", storageKey: null },
-                                                    { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [c, { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }, { alias: null, args: null, kind: "ScalarField", name: "verified_type", storageKey: null }], storageKey: null },
+                                                    { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [c, { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null }], storageKey: null },
                                                     { alias: null, args: null, filters: null, handle: "defaultScalars", key: "", kind: "LinkedHandle", name: "legacy" },
+                                                    {
+                                                        alias: null,
+                                                        args: null,
+                                                        concreteType: "UserVerification",
+                                                        kind: "LinkedField",
+                                                        name: "verification",
+                                                        plural: !1,
+                                                        selections: [
+                                                            { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null },
+                                                            { alias: null, args: null, kind: "ScalarField", name: "verified_type", storageKey: null },
+                                                        ],
+                                                        storageKey: null,
+                                                    },
                                                     {
                                                         alias: "current_organic_metrics",
                                                         args: (m = [{ fields: (d = [{ kind: "Variable", name: "iso8601_time", variableName: "past7Days" }]), kind: "ObjectValue", name: "from_time" }, (u = { kind: "Literal", name: "requested_metrics", value: ["Engagements", "Impressions", "LinkClicks", "ProfileVisits"] }), { fields: [{ kind: "Variable", name: "iso8601_time", variableName: "now" }], kind: "ObjectValue", name: "to_time" }]),
@@ -316,7 +329,7 @@
                             },
                         ],
                     },
-                    params: { id: "632WUqDqccL3BXgIjSn4aw", metadata: {}, name: "ProfessionalHomeQuery", operationKind: "query", text: null },
+                    params: { id: "rrhlkCeI3zD-WO4a8HGHrw", metadata: {}, name: "ProfessionalHomeQuery", operationKind: "query", text: null },
                 };
             f.hash = "36250830902d9212cd89a3c13271a3be";
             const y = f;
@@ -328,7 +341,7 @@
                 v = a(301410),
                 Z = a(566220),
                 w = a(615027),
-                P = {
+                T = {
                     argumentDefinitions: [],
                     kind: "Fragment",
                     metadata: null,
@@ -342,7 +355,7 @@
                     abstractKey: null,
                     hash: "555818634e06d49d18292b11fb0c58c4",
                 };
-            const T = P;
+            const P = T;
             var S = a(277660),
                 C = a.n(S),
                 x = a(107267),
@@ -351,26 +364,26 @@
                 I = a(782826),
                 L = { kind: "InlineDataFragment", name: "invalidateProfessionalHomeUser_user", hash: "c4c066fd92866d7a3ce5ca16f23dc15f" };
             const K = L;
-            var R = a(53647),
-                V = a.n(R),
+            var V = a(53647),
+                R = a.n(V),
                 A = a(437429),
                 H = a.n(A),
                 B = a(990242),
                 M = a.n(B);
             const j = K,
-                N = (e, t) => {
+                z = (e, t) => {
                     const a = ((e) => {
                         const { __id: t } = M()(j, e);
                         return t;
                     })(t);
                     return e.get(a);
                 },
-                z = (e) => {
+                N = (e) => {
                     const t = H()();
                     return b.useCallback(() => {
-                        V()(t, (t) => {
+                        R()(t, (t) => {
                             ((e, t) => {
-                                const a = N(e, t);
+                                const a = z(e, t);
                                 a?.invalidateRecord();
                             })(t, e);
                         });
@@ -380,8 +393,8 @@
                 U = a(779610),
                 q = a(688715),
                 G = a(392237),
-                W = a(698891),
-                $ = a(175564),
+                $ = a(698891),
+                W = a(175564),
                 Q = a(718e3),
                 Y = a(252021),
                 X = a(725516);
@@ -395,7 +408,7 @@
                         a = Boolean(D.ZP.getTwitterAppVersion()),
                         n = a ? D.ZP.osString() : "web";
                     t.scribePageImpression({ page: J, section: n, component: "advanced_tools", action: "show" });
-                    return b.createElement(Y.Z, { backLocation: te, headerless: a, history: e, primaryContent: b.createElement(O.Z, { role: "list" }, b.createElement(O.Z, { role: "listitem" }, b.createElement(U.Z, { description: h().f6a2233a, disabled: !0, label: h().ccb3ca48, link: { pathname: "dummy" }, role: "link", thumbnail: b.createElement(W.default, { style: le.actionIconsColor }) })), b.createElement(O.Z, { role: "listitem" }, b.createElement(U.Z, { description: h().b0ef3100, label: h().e0cb0c72, link: { pathname: (0, q.ju)("https://ads.x.com/"), external: !0 }, onPress: () => t.scribe({ page: J, section: "advanced_tools", element: "twitter_ads", action: "click" }), role: "link", thumbnail: b.createElement($.default, { style: le.actionIconsColor }) }))), sidebarContent: b.createElement(Q.Z, null), title: ae, withBackButton: !a });
+                    return b.createElement(Y.Z, { backLocation: te, headerless: a, history: e, primaryContent: b.createElement(O.Z, { role: "list" }, b.createElement(O.Z, { role: "listitem" }, b.createElement(U.Z, { description: h().f6a2233a, disabled: !0, label: h().ccb3ca48, link: { pathname: "dummy" }, role: "link", thumbnail: b.createElement($.default, { style: le.actionIconsColor }) })), b.createElement(O.Z, { role: "listitem" }, b.createElement(U.Z, { description: h().b0ef3100, label: h().e0cb0c72, link: { pathname: (0, q.ju)("https://ads.x.com/"), external: !0 }, onPress: () => t.scribe({ page: J, section: "advanced_tools", element: "twitter_ads", action: "click" }), role: "link", thumbnail: b.createElement(W.default, { style: le.actionIconsColor }) }))), sidebarContent: b.createElement(Q.Z, null), title: ae, withBackButton: !a });
                 },
                 re = b.memo(ne),
                 le = G.default.create((e) => ({ actionIconsColor: { color: e.colors.gray700, marginBottom: e.spaces.space4 } }));
@@ -483,7 +496,7 @@
                 ve = a(149170);
             const Ze = () => b.createElement(O.Z, { style: we.separator }),
                 we = G.default.create((e) => ({ separator: { backgroundColor: e.colors.gray50, height: e.borderWidths.small } })),
-                Pe = () => {
+                Te = () => {
                     const { featureSwitches: e } = b.useContext(E.rC),
                         t = (0, X.z)(),
                         a = e.isTrue("professional_launchpad_upload_address_book"),
@@ -502,7 +515,7 @@
                         b.createElement(O.Z, { role: "listitem" }, b.createElement(U.Z, { label: h().c46cdabc, link: { pathname: ee.Z.advancedTools }, onPress: () => t.scribe({ page: J, section: l, component: i, element: "advanced_tools", action: "click" }), role: "link", thumbnail: b.createElement(ve.default, { style: Se.actionIconsColor }) })),
                     );
                 },
-                Te = b.memo(Pe),
+                Pe = b.memo(Te),
                 Se = G.default.create((e) => ({ actionIconsColor: { color: e.colors.gray700, marginBottom: e.spaces.space4 } }));
             var Ce = (function () {
                 var e = { alias: null, args: null, kind: "ScalarField", name: "name", storageKey: null };
@@ -513,14 +526,27 @@
                     name: "ProfessionalHeader_user",
                     selections: [
                         { alias: null, args: null, kind: "ScalarField", name: "is_blue_verified", storageKey: null },
-                        { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [e, { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null }, { kind: "RequiredField", field: { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null }, action: "THROW" }, { alias: null, args: null, kind: "ScalarField", name: "verified_type", storageKey: null }], storageKey: null },
+                        { alias: null, args: null, concreteType: "ApiUser", kind: "LinkedField", name: "legacy", plural: !1, selections: [e, { alias: null, args: null, kind: "ScalarField", name: "profile_image_url_https", storageKey: null }], storageKey: null },
+                        {
+                            alias: null,
+                            args: null,
+                            concreteType: "UserVerification",
+                            kind: "LinkedField",
+                            name: "verification",
+                            plural: !1,
+                            selections: [
+                                { alias: null, args: null, kind: "ScalarField", name: "verified", storageKey: null },
+                                { alias: null, args: null, kind: "ScalarField", name: "verified_type", storageKey: null },
+                            ],
+                            storageKey: null,
+                        },
                         { alias: null, args: null, concreteType: "Professional", kind: "LinkedField", name: "professional", plural: !1, selections: [{ alias: null, args: null, concreteType: "BusinessCategory", kind: "LinkedField", name: "category", plural: !0, selections: [e], storageKey: null }], storageKey: null },
                     ],
                     type: "User",
                     abstractKey: null,
                 };
             })();
-            Ce.hash = "5f1dc0571d344dd3b0342a227e2b53e4";
+            Ce.hash = "3959db72f9bfabc99772faf2b80d227d";
             const xe = Ce;
             var De = a(823161),
                 Fe = a(366635),
@@ -530,17 +556,17 @@
                     const t = C()(Le, e),
                         a = t.legacy?.profile_image_url_https ?? void 0,
                         n = t.professional?.category?.[0]?.name;
-                    return b.createElement(O.Z, { "aria-level": 3, role: "heading", style: Ve.container }, b.createElement(De.default, { hasAdaptiveImage: !0, size: "large", style: Ve.element, uri: a }), t.legacy?.name ? b.createElement(Fe.Z, { isBlueVerified: !!t.is_blue_verified, isVerified: t.legacy.verified, name: t.legacy.name ?? "", nameSize: "title3", verifiedType: t.legacy.verified_type ?? void 0, weight: "heavy" }) : null, n ? b.createElement(Ie.ZP, { color: "gray700", size: "body", style: Ve.element, weight: "medium" }, n) : null);
+                    return b.createElement(O.Z, { "aria-level": 3, role: "heading", style: Re.container }, b.createElement(De.default, { hasAdaptiveImage: !0, size: "large", style: Re.element, uri: a }), t.legacy?.name ? b.createElement(Fe.Z, { isBlueVerified: !!t.is_blue_verified, isVerified: !!t.verification?.verified, name: t.legacy.name ?? "", nameSize: "title3", verifiedType: t.verification?.verified_type ?? void 0, weight: "heavy" }) : null, n ? b.createElement(Ie.ZP, { color: "gray700", size: "body", style: Re.element, weight: "medium" }, n) : null);
                 },
-                Re = b.memo(Ke),
-                Ve = G.default.create((e) => ({ container: { marginHorizontal: e.spaces.space16, marginVertical: `calc(${e.spaces.space16} - ${e.spaces.space2})` }, element: { marginVertical: e.spaces.space2 } })),
+                Ve = b.memo(Ke),
+                Re = G.default.create((e) => ({ container: { marginHorizontal: e.spaces.space16, marginVertical: `calc(${e.spaces.space16} - ${e.spaces.space2})` }, element: { marginVertical: e.spaces.space2 } })),
                 Ae = ee.Z.home,
                 He = h().ff1c5e1a,
                 Be = h().bb081ea2,
                 Me = oe,
                 je = { pathname: "twitter://settings/professional_profile", openInSameFrame: !0 },
-                Ne = { label: Be },
-                ze = ({ userRef: e }) => {
+                ze = { label: Be },
+                Ne = ({ userRef: e }) => {
                     const t = (0, x.useHistory)(),
                         a = C()(Me, e),
                         n = (0, X.z)(),
@@ -548,20 +574,20 @@
                         l = r ? D.ZP.osString() : "web";
                     n.scribePageImpression({ page: J, section: l, component: "home", action: "show" });
                     const i = b.useCallback(() => n.scribe({ page: J, section: l, component: "SettingsAppBarButton", element: "professional_profile_settings", action: "click" }), [n, l]),
-                        o = b.createElement(O.Z, { style: Ue.webViewHeader }, b.createElement(Re, { userRef: a }), !D.ZP.isAndroid() && b.createElement(O.Z, { style: Ue.webViewWrench }, b.createElement(se.ZP, { "aria-label": Be, hoverLabel: Ne, icon: b.createElement(W.default, null), link: je, onPress: i, type: "primaryText" }))),
-                        s = b.createElement(O.Z, { "aria-label": He, role: "region", style: Ue.contentMobile }, r ? o : b.createElement(Re, { userRef: a }), b.createElement(Ze, null), b.createElement(be, { userRef: a }), b.createElement(Ze, null), b.createElement(Te, null)),
+                        o = b.createElement(O.Z, { style: Ue.webViewHeader }, b.createElement(Ve, { userRef: a }), !D.ZP.isAndroid() && b.createElement(O.Z, { style: Ue.webViewWrench }, b.createElement(se.ZP, { "aria-label": Be, hoverLabel: ze, icon: b.createElement($.default, null), link: je, onPress: i, type: "primaryText" }))),
+                        s = b.createElement(O.Z, { "aria-label": He, role: "region", style: Ue.contentMobile }, r ? o : b.createElement(Ve, { userRef: a }), b.createElement(Ze, null), b.createElement(be, { userRef: a }), b.createElement(Ze, null), b.createElement(Pe, null)),
                         c = (0, ce.yu)(),
                         d = !r && !(0, ue.ZP)() && c;
                     return b.createElement(Y.Z, { backLocation: Ae, headerless: r, history: t, primaryContent: s, rightControl: r ? null : b.createElement(de.Z, { onPress: i, to: "/settings/professional_profile" }), sidebarContent: b.createElement(Q.Z, null), title: d ? null : He, withBackButton: d });
                 },
-                Oe = b.memo(ze),
+                Oe = b.memo(Ne),
                 Ue = G.default.create((e) => ({ contentMobile: { paddingBottom: e.spaces.space48 }, webViewHeader: { display: "flex", flexDirection: "row", alignItems: "flex-start", justifyContent: "space-between" }, webViewWrench: { marginHorizontal: e.spaces.space16, marginVertical: `calc(${e.spaces.space16} - ${e.spaces.space2})` } }));
             var qe = a(810641),
                 Ge = a(912021),
-                We = a(33055),
-                $e = a(750085),
+                $e = a(33055),
+                We = a(750085),
                 Qe = a(218951);
-            const Ye = (0, Ge.Z)((e) => (0, Qe.Z)({ timelineId: `userPromotableTweets-graphql-${e}`, formatResponse: $e.Z, network: { getEndpoint: (e) => e.withEndpoint(We.Z).fetchUserPromotableTweets, getEndpointParams: ({ count: t, cursor: a }) => ({ count: t, cursor: "string" == typeof a ? a : void 0, userId: e }) }, context: "FETCH_USERS_PROMOTABLE_TWEETS_TIMELINE", perfKey: "userPromotableTweetsGraphQL" })),
+            const Ye = (0, Ge.Z)((e) => (0, Qe.Z)({ timelineId: `userPromotableTweets-graphql-${e}`, formatResponse: We.Z, network: { getEndpoint: (e) => e.withEndpoint($e.Z).fetchUserPromotableTweets, getEndpointParams: ({ count: t, cursor: a }) => ({ count: t, cursor: "string" == typeof a ? a : void 0, userId: e }) }, context: "FETCH_USERS_PROMOTABLE_TWEETS_TIMELINE", perfKey: "userPromotableTweetsGraphQL" })),
                 Xe = ee.Z.root,
                 Je = h().h257d4aa,
                 et = (e) => {
@@ -576,11 +602,11 @@
                     return b.createElement(Y.Z, { backLocation: Xe, headerless: r, history: t, primaryContent: b.createElement(O.Z, null, b.createElement(qe.Z, { module: i, title: "promotable-tweets" })), sidebarContent: b.createElement(Q.Z, null), title: Je, withBackButton: !r });
                 },
                 tt = b.memo(et),
-                at = T,
+                at = P,
                 nt = ({ userRef: e }) => {
                     const t = C()(at, e),
                         a = b.useRef(t),
-                        n = z(t),
+                        n = N(t),
                         r = Boolean(D.ZP.getTwitterAppVersion()),
                         l = (0, F.hC)("professional_launchpad_m1_enabled"),
                         i = b.useMemo(() => ({ pathname: "/i/flow/convert_to_professional", state: l ? { input: { requested_variant: "professionalhome-professionalHomeEnabled" } } : void 0 }), [l]);
@@ -688,11 +714,11 @@
             const d = (e) => {
                     const { decoration: t, description: a, disabled: d = !1, isActive: m = !1, label: p, link: g, onPress: f, paddingHorizontal: y, renderRightContent: b, role: _ = "tab", styleOverride: k, testID: h = "pivot", thumbnail: E, thumbnailSize: v, withoutArrow: Z = !1 } = e,
                         w = [u.thumbnailContainer, "medium" === v && u.thumbnailContainerMedium],
-                        P = "string" == typeof p ? n.createElement(o.ZP, null, p) : p,
-                        T = "object" == typeof g && g.external && !g.openInSameFrame,
+                        T = "string" == typeof p ? n.createElement(o.ZP, null, p) : p,
+                        P = "object" == typeof g && g.external && !g.openInSameFrame,
                         S = a ? ("string" == typeof a ? n.createElement(o.ZP, { color: "gray700", size: "subtext2", testID: `${h}-description` }, a) : a) : null,
                         C = n.useMemo(() => ("space0" === y ? { paddingHorizontal: 0 } : { paddingHorizontal: y ? c.default.theme.spaces[y] : c.default.theme.componentDimensions.gutterHorizontal }), [y]);
-                    return n.createElement(s.Z, { "aria-selected": "tab" === _ ? m : null, disabled: d, link: d ? void 0 : g, onPress: f, role: _, style: [u.root, C, d && u.disabled, k], testID: h, withInteractiveStyling: !!g || !!f }, n.createElement(r.Z, { style: u.contentContainer }, E ? n.createElement(r.Z, { style: w }, E) : null, n.createElement(r.Z, { style: u.content }, P, S), b ? b() : null, (!g && !f) || d || Z ? null : T ? n.createElement(l.default, { style: u.icon }) : n.createElement(i.default, { style: u.icon })), t);
+                    return n.createElement(s.Z, { "aria-selected": "tab" === _ ? m : null, disabled: d, link: d ? void 0 : g, onPress: f, role: _, style: [u.root, C, d && u.disabled, k], testID: h, withInteractiveStyling: !!g || !!f }, n.createElement(r.Z, { style: u.contentContainer }, E ? n.createElement(r.Z, { style: w }, E) : null, n.createElement(r.Z, { style: u.content }, T, S), b ? b() : null, (!g && !f) || d || Z ? null : P ? n.createElement(l.default, { style: u.icon }) : n.createElement(i.default, { style: u.icon })), t);
                 },
                 u = c.default.create((e) => ({ root: { justifyContent: "space-between", minHeight: `calc(${c.default.theme.lineHeights.headline1} + 2 * ${e.componentDimensions.gutterVertical})`, paddingVertical: e.componentDimensions.gutterVertical }, disabled: { opacity: 0.5 }, contentContainer: { alignItems: "center", flexDirection: "row", flexGrow: 1 }, content: { flexGrow: 1, flexShrink: 1 }, icon: { color: e.colors.gray700, paddingStart: e.spaces.space12, flexShrink: 0 }, thumbnailContainer: { alignItems: "center", justifyContent: "center", height: e.spaces.space48, width: e.spaces.space48, marginEnd: e.spaces.space16 }, thumbnailContainerMedium: { height: e.spaces.space32, width: e.spaces.space32 } }));
         },
@@ -794,4 +820,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ProfessionalHome.bfd7bf2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ProfessionalHome.3af6121a.js.map

@@ -163,9 +163,9 @@
                             [G],
                         ),
                         O = (0, r.Mv)(),
-                        H = !f,
-                        W = !!f,
-                        F = "Research" === f,
+                        W = !f,
+                        F = !!f,
+                        H = "Research" === f,
                         z = "Reasoning" === f,
                         K = "ImageEdit" === f,
                         J = "CreateImage" === f,
@@ -173,12 +173,12 @@
                         U = X && l.ZP.isWebView(),
                         V = O || !!w,
                         $ = D.focused,
-                        j = (F && !C) || (z && !I);
+                        j = (H && !C) || (z && !I);
                     return (
                         d.useEffect(() => {
-                            A.every((e) => "Hidden" === e[y]) || A.length <= 0 ? R() : k && ("Research" !== k || F ? ("Reasoning" !== k || z ? "ImageEdit" !== k || K || Z() : x()) : T(), M(""));
-                        }, [A, y, R, K, z, F, k, T, Z, x]),
-                        { grokInput: D, setFocused: N, isResearchEnabled: F, isReasoningEnabled: z, isImageEditEnabled: K, isCreateImageEnabled: J, isDefault: H, isInputFocused: $, hasSelectedFilterKey: W, isInputMobileSize: X, isInputMobile: U, isInputCompact: V, grokModeButtons: A, grokModeButtonStatusKey: y, filterKey: f, isFileInputDisabled: j, setAdvancedSettings: _, setDeepsearchAdvancedSettings: B, setDeepersearchAdvancedSettings: P, advancedSettings: S, grokModeButtonOverrides: v, selectDeepsearchFilterKey: T, selectReasoningFilterKey: x, selectImageEditFilterKey: Z, clearFilterKey: R, setPendingModeButtonFilterKey: M, setFilterKey: L, hasValue: e, setHasValue: a }
+                            k && ("Research" !== k || H ? ("Reasoning" !== k || z ? "ImageEdit" !== k || K || Z() : x()) : T(), M(""));
+                        }, [A, y, R, K, z, H, k, T, Z, x]),
+                        { grokInput: D, setFocused: N, isResearchEnabled: H, isReasoningEnabled: z, isImageEditEnabled: K, isCreateImageEnabled: J, isDefault: W, isInputFocused: $, hasSelectedFilterKey: F, isInputMobileSize: X, isInputMobile: U, isInputCompact: V, grokModeButtons: A, grokModeButtonStatusKey: y, filterKey: f, isFileInputDisabled: j, setAdvancedSettings: _, setDeepsearchAdvancedSettings: B, setDeepersearchAdvancedSettings: P, advancedSettings: S, grokModeButtonOverrides: v, selectDeepsearchFilterKey: T, selectReasoningFilterKey: x, selectImageEditFilterKey: Z, clearFilterKey: R, setPendingModeButtonFilterKey: M, setFilterKey: L, hasValue: e, setHasValue: a }
                     );
                 };
         },
@@ -244,9 +244,9 @@
             }
             const O = A.default.create((e) => ({ titleTextRoot: { paddingStart: e.spaces.space2, flexGrow: 1, flexShrink: 1 }, animation: { opacity: 1, animationDuration: "2s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }] } }));
             n(136728);
-            var H = n(154003),
-                W = n(530243),
-                F = n(52735),
+            var W = n(154003),
+                F = n(530243),
+                H = n(52735),
                 z = n(487552),
                 K = n(899667),
                 J = n(807901);
@@ -261,7 +261,7 @@
                         e && (t.push(e), a());
                     }, [a, e, t]),
                     { canClearConversation: s, handleClearConversationClickWithoutNav: c } = (0, J.Z)();
-                return o.createElement(r.Z, { style: Q.rightControls }, n && e && o.createElement(H.ZP, { "aria-label": X, hoverLabel: { label: X }, icon: o.createElement(W.default, { style: { height: 19, width: 19, marginBottom: 2 } }), onPress: i, type: "primaryText" }), n && s && o.createElement(H.ZP, { "aria-label": $, disabled: !s, hoverLabel: j, icon: o.createElement(F.default, { style: Q.composeIcon }), onPress: c, type: "primaryText" }), n && o.createElement(H.ZP, { "aria-label": U, hoverLabel: { label: U }, icon: o.createElement(z.default, null), onPress: a, type: "primaryText" }), !n && o.createElement(H.ZP, { "aria-label": V, hoverLabel: { label: V }, icon: o.createElement(K.default, null), onPress: a, type: "primaryText" }));
+                return o.createElement(r.Z, { style: Q.rightControls }, n && e && o.createElement(W.ZP, { "aria-label": X, hoverLabel: { label: X }, icon: o.createElement(F.default, { style: { height: 19, width: 19, marginBottom: 2 } }), onPress: i, type: "primaryText" }), n && s && o.createElement(W.ZP, { "aria-label": $, disabled: !s, hoverLabel: j, icon: o.createElement(H.default, { style: Q.composeIcon }), onPress: c, type: "primaryText" }), n && o.createElement(W.ZP, { "aria-label": U, hoverLabel: { label: U }, icon: o.createElement(z.default, null), onPress: a, type: "primaryText" }), !n && o.createElement(W.ZP, { "aria-label": V, hoverLabel: { label: V }, icon: o.createElement(K.default, null), onPress: a, type: "primaryText" }));
             }
             const Q = A.default.create((e) => ({ rightControls: { flexDirection: "row", alignItems: "center" }, composeIcon: { fill: "none" } }));
             function q({ conversationUrl: e }) {
@@ -299,26 +299,19 @@
             const ne = (0, t.Z)({
                 loader: () =>
                     Promise.all([
-                        n.e("icons.5"),
-                        n.e("icons.6"),
-                        n.e("icons.25"),
-                        n.e("icons.22"),
-                        n.e("icons.9"),
-                        n.e("icons.4"),
-                        n.e("icons.15"),
+                        n.e("icons.23"),
+                        n.e("icons.16"),
                         n.e("icons.2"),
-                        n.e("icons.20"),
+                        n.e("icons.10"),
+                        n.e("icons.19"),
+                        n.e("icons.24"),
                         n.e("modules.common-e907d115"),
                         n.e("modules.common-e019dbda"),
-                        n.e("icons.7"),
-                        n.e("icons.0"),
-                        n.e("icons.11"),
-                        n.e("icons.27"),
-                        n.e("icons.17"),
-                        n.e("icons.12"),
-                        n.e("icons.3"),
                         n.e("icons.13"),
-                        n.e("icons.18"),
+                        n.e("icons.27"),
+                        n.e("icons.22"),
+                        n.e("icons.17"),
+                        n.e("icons.7"),
                         n.e("modules.audio-6107ac1a"),
                         n.e("modules.audio-b953418a"),
                         n.e("modules.audio-7c51e6a7"),
@@ -329,11 +322,16 @@
                         n.e("modules.audio-e019dbda"),
                         n.e("modules.audio-262c94d4"),
                         n.e("modules.audio-c6fe4ea4"),
-                        n.e("icons.24"),
-                        n.e("icons.10"),
+                        n.e("icons.4"),
                         n.e("icons.8"),
+                        n.e("icons.14"),
                         n.e("icons.26"),
-                        n.e("icons.19"),
+                        n.e("icons.28"),
+                        n.e("icons.21"),
+                        n.e("icons.11"),
+                        n.e("icons.3"),
+                        n.e("icons.1"),
+                        n.e("icons.18"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -364,7 +362,7 @@
                         n.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                         n.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
                         n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2f4a3d25"),
+                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2d1eb5e2"),
                         n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                         n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                         n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -409,6 +407,7 @@
                         n.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-6cce8a9f"),
                         n.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-ff0fc217"),
                         n.e("shared~loader.DashMenu~loader.SideNav~loader.SideNavRedesign~loader.AppModules~loader.DMDrawer~bundl-93606ba8"),
+                        n.e("shared~loader.DMDrawer~bundle.ReaderMode~bundle.Articles~bundle.AudioSpacePeek~bundle.Birdwatch~bundle.Brande"),
                         n.e("shared~loader.Typeahead~loader.DMDrawer~ondemand.HoverCard~bundle.ReaderMode~bundle.AudioSpacePeek~bundle.Bir"),
                         n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-c9d567be"),
                         n.e("shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-7a04a44b"),
@@ -450,6 +449,7 @@
                         n.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.NewsSe-7ba852e1"),
                         n.e("shared~bundle.TwitterArticles~bundle.Grok~loader.Markdown~loader.TexBlock"),
                         n.e("shared~bundle.TwitterArticles~bundle.Grok~loader.Markdown"),
+                        n.e("shared~bundle.Grok~loader.Markdown"),
                         n.e("bundle.Grok-e907d115"),
                         n.e("bundle.Grok-e96e9bea"),
                         n.e("bundle.Grok-0ae4e026"),
@@ -474,8 +474,8 @@
                         n.e("bundle.Grok-1d41f45b"),
                         n.e("bundle.Grok-b8348d5d"),
                         n.e("bundle.Grok-7bc92c09"),
-                        n.e("bundle.Grok-0f78f5a6"),
-                        n.e("bundle.Grok-22b50fbf"),
+                        n.e("bundle.Grok-f8a31592"),
+                        n.e("bundle.Grok-bd027025"),
                         n.e("bundle.Grok-7a6ce5c4"),
                         n.e("bundle.Grok-cebf58fc"),
                         n.e("bundle.Grok-29bebf45"),
@@ -783,4 +783,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.GrokDrawer-6ac0f1a5.4a86f8ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.GrokDrawer-6ac0f1a5.8254188a.js.map

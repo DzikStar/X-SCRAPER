@@ -290,7 +290,7 @@
                 n("edf7f57e", "Získajte overenie, aby ste mali k dispozícii podporu odpovedí, štatistiky, prostredie bez reklám a ďalšie výhody. Ešte dnes si pre svoj profil aktivujte predplatné."),
                 n("ba920d68", "Zlepšite svoj dosah vďaka overeniu"),
                 n("ib79d0c2", "Získajte VIP funkcie: overte svoj účet"),
-                n("bebc5f12", "Inzerujete v službe X, ale nemáte predplatné Overené organizácie"),
+                n("c0d3bd82", "You’ve advertised on X, but don’t have a Verified Organizations subscription"),
                 n("d7836d1e", "Aktivujte si ho a získajte až 12 000 USD vo forme bezplatného kreditu, zlatú ikonu overenia, VIP podporu a súpravu nástrojov, ktoré podporia rast vášho biznisu."),
                 n("f528e369", function (e) {
                     return "Predplaťte si " + e.tier + ", aby ste mohli písať články";
@@ -1284,15 +1284,23 @@
                 n("b8f3500a", "Zobraziť vlákno v Čítačke"),
                 n("fc7db594", "Súhrn profilu"),
                 n("c3f04d9c", "Premýšľa"),
-                n("cbdddb0a", "Dokončené"),
+                n("e98cc293", function (e) {
+                    return "Searching for " + e.query;
+                }),
                 n("b0d1e205", function (e) {
                     return "Hľadá **„" + e.query + "“**";
+                }),
+                n("i2e0f4d7", function (e) {
+                    return "Browsing " + e.url + " for " + e.query;
                 }),
                 n("acb9b845", function (e) {
                     return "Prehľadáva " + e.url + " na základe dopytu **„" + e.query + "“**";
                 }),
                 n("ef261d8d", function (e) {
                     return "Hľadá príspevky od používateľa @" + e.username;
+                }),
+                n("f7d9cfb9", function (e) {
+                    return "Searching posts by @" + e.username + " for " + e.query;
                 }),
                 n("bec7eb11", function (e) {
                     return "Hľadajú sa príspevky od používateľa @" + e.username + " v súvislosti s dopytom**„" + e.query + "“**";
@@ -1916,10 +1924,10 @@
                 n("hff1b97a", "Odpovedať môžu len predplatitelia."),
                 n("a330771e", "Kopírovať odkaz do schránky"),
                 n("b6510e68", "Skopírujte si webovú adresu článku, aby ste ho mohli zdieľať."),
-                n("e4a6e006", "Vyskytla sa chyba. Skúste to znova."),
-                n("eff483e0", "Po zverejnení článku získajte odkaz na jeho zdieľanie."),
-                n("ca15dd4e", "Koncept");
-            n("bb40bf66", "Publikované"),
+                n("e4a6e006", "Vyskytla sa chyba. Skúste to znova.");
+            n("eff483e0", "Po zverejnení článku získajte odkaz na jeho zdieľanie."),
+                n("ca15dd4e", "Koncept"),
+                n("bb40bf66", "Publikované"),
                 n("h107935c", "Naposledy uložené: práve teraz"),
                 n("a753a870", "Použiť"),
                 n("afccc67e", "Skopírovať odkaz na článok"),
@@ -2968,10 +2976,10 @@
                 n("df1b7550", "Marketing"),
                 n("he258678", "X pre firmy"),
                 n("c6f58084", "Vývojári"),
-                n("d83f18d2", "Adresár"),
-                n("hc5aa17c", "Získajte aplikáciu X"),
-                n("j0693948", "Získajte aplikáciu Grok");
-            n("af781666", "Čo si myslia ľudia?"),
+                n("d83f18d2", "Adresár");
+            n("hc5aa17c", "Získajte aplikáciu X"),
+                n("j0693948", "Získajte aplikáciu Grok"),
+                n("af781666", "Čo si myslia ľudia?"),
                 n("ad35153e", "beta"),
                 n("fbf83158", "Upozornenie: platba zlyhala"),
                 n("jadeb4da", "Čo najskôr si aktualizujte spôsob platby, než prídete o výhody predplatného."),
@@ -3884,10 +3892,10 @@
                 n("cededf2a", "Hostiteľ"),
                 n("i2caef48", "Spoluhostitelia"),
                 n("j245c654", "Rečníci"),
-                n("eda23a02", "Poslucháči"),
-                n("b90eb348", "Pozvať na rozprávanie"),
-                n("d9a63e82", "Odobrať z rečníkov");
-            n("bd917b26", "Pozvať ako spoluhostiteľa"),
+                n("eda23a02", "Poslucháči");
+            n("b90eb348", "Pozvať na rozprávanie"),
+                n("d9a63e82", "Odobrať z rečníkov"),
+                n("bd917b26", "Pozvať ako spoluhostiteľa"),
                 n("d7357e7e", "Odobrať zo spoluhostiteľov"),
                 n("bf307fc0", "Zablokovať a odobrať"),
                 n("ccf2f24e", "Hlásenie"),
@@ -4180,7 +4188,7 @@
                 n("ff9dc268", "Upraviť pokyn"),
                 n("acb2baa0", "Vytvárajte obrázky"),
                 n("fe9ad897", function (e) {
-                    return "Edit Image" + e.ttc_grok_preset;
+                    return "Úprava obrázka" + e.ttc_grok_preset;
                 }),
                 n("h30fd372", "Vyskúšajte hlasový režim"),
                 n("e9fcdd0c", "Spýtajte sa Groka na intenzívnejšie prehľadávanie webu"),
@@ -4190,7 +4198,6 @@
                 n("b5df32b0", "Položte Grokovi otázku"),
                 n("fb3b9776", "Výstupné informácie od Groka boli prispôsobené týmto používateľom."),
                 n("ca93f2ee", "Táto správa bola odstránená."),
-                n("b52484b6", "Vyhľadáva sa…"),
                 n("b8c06820", "Kopírovať text"),
                 n("ca0f5894", "Nepáči sa"),
                 n("ja8d189e", "Chcel(a) som textovú odpoveď"),
@@ -4282,6 +4289,7 @@
                 n("e2811afc", "Zápasy"),
                 n("j081fa34", "Umiestnenia"),
                 n("i7c7f156", "Zajtra"),
+                n("cbdddb0a", "Dokončené"),
                 n("b134ba52", "Prebieha"),
                 n("j1361724", "Polčas"),
                 n("fa0f1262", "Prestávka"),
@@ -4308,29 +4316,35 @@
                 n("dc17968a", "Pi"),
                 n("j310a2d6", "So"),
                 n("eaf55eb4", "Ukáž, ako premýšľaš"),
-                n("j1ab5f40", "Ťuknutím si prečítate obsah"),
+                n("b1ac6016", "Dokončil vyhľadávanie cez DeepSearch"),
+                n("f766feca", "Vyhľadávanie cez DeeperSearch bolo dokončené"),
                 n("ee000b0d", function (e) {
                     return "Zdroje: " + e.numSources;
                 }),
-                n("b1ac6016", "Dokončil vyhľadávanie cez DeepSearch"),
-                n("f766feca", "Vyhľadávanie cez DeeperSearch bolo dokončené"),
+                n("bf780b13", function (e) {
+                    return e.minutes + " min. " + e.seconds + " s";
+                }),
+                n("c2745fa4", "Proces bol prerušený"),
                 n("e258000e", "Notifikácia"),
                 n("d591a772", "Notifikácia nie je dostupná"),
                 n("bc49b728", "Keď bude odpoveď pripravená, zobrazí sa vám notifikácia"),
                 n("d8aadeba", "Notifikácia je vypnutá"),
                 n("db832e38", "Zapnite notifikácie v nastaveniach prehliadača"),
                 n("a910cac6", "Pri zapínaní notifikácií došlo k chybe"),
-                n("g4b3a3e6", "Vyhľadávanie cez DeepSearch bolo dokončené"),
-                n("bf780b13", function (e) {
-                    return e.minutes + " min. " + e.seconds + " s";
-                }),
-                n("c2745fa4", "Proces bol prerušený"),
                 n("be30b6ee", "Nestabilné pripojenie"),
+                n("b52484b6", "Vyhľadáva sa…"),
                 n("a4d9dbfa", "Výsledky premýšľania"),
+                n("ib1c5475", function (e) {
+                    return "Thought for " + e.minutes + "m " + e.seconds + "s";
+                }),
+                n("a15d62db", function (e) {
+                    return "Thought for " + e.seconds + "s";
+                }),
                 n("d7cb5408", "Relevantné webové stránky"),
                 n("aa7c96bb", function (e) {
                     return "Zobraziť ďalšie (" + e.numResults + ")";
                 }),
+                n("j1ab5f40", "Ťuknutím si prečítate obsah"),
                 n("f5a2377e", "Premýšľa "),
                 n("g3ce0132", "Premýšľal"),
                 n("f8007364", "Rozbaliť podrobnosti"),
@@ -4916,12 +4930,12 @@
                 n("if2909ba", "Čas pozerania"),
                 n("i0e5bf4c", "Vaše videá"),
                 n("ed99baea", "Prednostný prístup k beta verzii"),
-                n("gf898b70", "Rozšírené vyhľadávanie"),
-                n("d2a43a7a", "obsahuje „ai“ aj „startup“"),
+                n("gf898b70", "Rozšírené vyhľadávanie");
+            n("d2a43a7a", "obsahuje „ai“ aj „startup“"),
                 n("a8584698", "ai startup"),
                 n("jb6f9292", "obsahuje presnú frázu „ai startup“"),
-                n("j8ee77c4", '"ai startup"');
-            n("d0480758", "obsahuje „ai“ alebo „startup“ (alebo obidve slová)"),
+                n("j8ee77c4", '"ai startup"'),
+                n("d0480758", "obsahuje „ai“ alebo „startup“ (alebo obidve slová)"),
                 n("f0048fa2", "ai OR startup"),
                 n("da0df186", "obsahuje „ai“, ale nie „startup“"),
                 n("f2f463ea", "ai -startup"),
@@ -5882,12 +5896,12 @@
                 n("cbae35fa", "Nahlásiť vysielanie"),
                 n("fd12ab58", "Príspevky v zbierke"),
                 n("a226497c", "Vytvorenie novej Komunity"),
-                n("d7346632", "Zatiaľ ste sa nepripojili do žiadnych Komunít"),
-                n("b732a4cc", "Keď tak urobíte, uvidíte tu ich príspevky."),
+                n("d7346632", "Zatiaľ ste sa nepripojili do žiadnych Komunít");
+            n("b732a4cc", "Keď tak urobíte, uvidíte tu ich príspevky."),
                 n("hff48914", "Momentálne sa nepodarilo nájsť žiadne príspevky"),
                 n("hb52cc4a", "Skúste to neskôr znova."),
-                n("e50e1bb0", "Vitajte v Komunitách");
-            n("i6829daa", "Komunity sú moderované diskusné skupiny, kde môžu používatelia služby X komunikovať a zdieľať obsah."),
+                n("e50e1bb0", "Vitajte v Komunitách"),
+                n("i6829daa", "Komunity sú moderované diskusné skupiny, kde môžu používatelia služby X komunikovať a zdieľať obsah."),
                 n("fc5c6914", "Spoznajte ďalších používateľov s rovnakými záujmami"),
                 n("aa1a9820", "Pripojte sa ku komunitám a spojte sa s ľuďmi, ktorí s vami zdieľajú záujmy."),
                 n("edef4c82", "Uverejniť priamo v komunite"),
@@ -6880,12 +6894,12 @@
                 n("ee54c3de", "Ukladajte si videá priamo do zariadenia"),
                 n("ae03594c", "Malá podpora odpovedí"),
                 n("e6bb08c0", "Zvýšte viditeľnosť svojich odpovedí"),
-                n("bf2a6acc", "Veľká podpora odpovedí"),
-                n("c2059276", "Podporte svoje odpovede."),
+                n("bf2a6acc", "Veľká podpora odpovedí");
+            n("c2059276", "Podporte svoje odpovede."),
                 n("b023ec20", "Maximálna podpora odpovedí"),
                 n("g337328e", "Zvýšte viditeľnosť svojich odpovedí na maximum"),
-                n("fa006202", "Prehrávanie videa na pozadí");
-            n("jf389778", "Sledujte videá pri prehliadaní alebo používaní iných aplikácií"),
+                n("fa006202", "Prehrávanie videa na pozadí"),
+                n("jf389778", "Sledujte videá pri prehliadaní alebo používaní iných aplikácií"),
                 n("f2977d80", "Označenie priečinkov záložkami"),
                 n("j1d3d910", "Majte v uložených príspevkoch poriadok, aby ste sa k nim vedeli ľahko dostať"),
                 n("f0f48668", "Prémiová podpora"),
@@ -7856,11 +7870,7 @@
                 n("c674f5b4", "Nastavenie platieb faktúrami"),
                 n("i8237e66", "Prejdite z platieb platobnou kartou na fakturáciou bankovým prevodom."),
                 n("hebd348a", "Nakonfigurujte spôsob používania reklám na sponzorovanie pracovných miest z portálu Najímanie."),
-                n("ib5e6f90", "Sponzorovanie pracovných miest"),
-                n("id720215", "portálu pracovných ponúk"),
-                n("dd59f146", "Reklamný účet na sponzorovanie pracovných miest"),
-                n("e7e36818", "Reklamné účty majú nárok na sponzorovanie pracovných miest, keď majú nastavený zdroj financovania."),
-                n("c28566e0", "Pridať účet");
+                n("ib5e6f90", "Sponzorovanie pracovných miest");
             function i(e, a) {
                 for (var o = 0; o < a.length; o++) {
                     var n = a[o];
@@ -7899,7 +7909,11 @@
                     r(e, a)
                 );
             }
-            n("c80160d3", "Reklama"),
+            n("id720215", "portálu pracovných ponúk"),
+                n("dd59f146", "Reklamný účet na sponzorovanie pracovných miest"),
+                n("e7e36818", "Reklamné účty majú nárok na sponzorovanie pracovných miest, keď majú nastavený zdroj financovania."),
+                n("c28566e0", "Pridať účet"),
+                n("c80160d3", "Reklama"),
                 n("ff0edac0", "Ste si istí, že chcete zrušiť svoje predplatné?"),
                 n("h2ac0348", "Nie, chcem sa vrátiť."),
                 n("dbf9667e", "Určite."),
@@ -8761,12 +8775,10 @@
                 n("gdd173da", "Odpoveď od Groka v zábavnom režime"),
                 n("dfd6eeac", "Odpoveď od Groka"),
                 n("deceb214", "Obrázok od Groka"),
-                n("j05496ce", "DeepSearch od Groka"),
                 n("befddd48", "Zobraziť"),
                 n("hf3f8e3a", "Zobraziť viac"),
                 n("h504ea5e", "Vytvorte si svoju verziu pomocou Groka"),
                 n("eb722de2", "Spýtajte sa Groka"),
-                n("ib5110be", "Vyskúšajte si DeepSearch od Groka"),
                 n("bb5c5864", "Citát"),
                 n("a8b58cf4", "Zobraziť toto vlákno"),
                 n("i5f742fe", "Zobraziť toto hlasovanie"),
@@ -8916,14 +8928,14 @@
                 }),
                 n("c889af33", function (e) {
                     return e.count + " pripojen" + t(e.count, "í", "ých", "ý/-á", "ých");
-                }),
-                n("d6f2056f", function (e) {
-                    return e.count + " naladen" + t(e.count, "í", "ých", "ý/-á", "ých");
-                }),
-                n("jbc5f47a", "Dok Priestorov");
-            n("gfe2830f", function (e) {
-                return "" + t(e.count, e.count + " ďalší používatelia", "niekoľkých ďalších používateľov (" + e.count + ")", e.count + " ďalší používateľ", e.count + " ďalších používateľov");
+                });
+            n("d6f2056f", function (e) {
+                return e.count + " naladen" + t(e.count, "í", "ých", "ý/-á", "ých");
             }),
+                n("jbc5f47a", "Dok Priestorov"),
+                n("gfe2830f", function (e) {
+                    return "" + t(e.count, e.count + " ďalší používatelia", "niekoľkých ďalších používateľov (" + e.count + ")", e.count + " ďalší používateľ", e.count + " ďalších používateľov");
+                }),
                 n("dbeae6cf", function (e) {
                     return "" + t(e.count, e.count + " ďalší poslucháči", "niekoľko ďalších poslucháčov (" + e.count + ")", e.count + " ďalší poslucháč", e.count + " ďalších poslucháčov");
                 }),
@@ -13209,4 +13221,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sk.9a6ab4da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sk.b3f02dfa.js.map

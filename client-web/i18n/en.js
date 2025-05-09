@@ -281,7 +281,7 @@
                 a("edf7f57e", "Get verified for boosted replies, analytics, ad-free browsing, and more. Upgrade your profile now."),
                 a("ba920d68", "Boost your influence with verification"),
                 a("ib79d0c2", "Unlock VIP features: verify your account"),
-                a("bebc5f12", "You’re advertising on X, but don’t have a Verified Organizations subscription"),
+                a("c0d3bd82", "You’ve advertised on X, but don’t have a Verified Organizations subscription"),
                 a("d7836d1e", "Subscribe to get up to $12,000 free ad credit, gold verification, VIP support, and a suite of tools to grow."),
                 a("f528e369", function (e) {
                     return "Subscribe to " + e.tier + " to write your own Articles";
@@ -1275,15 +1275,23 @@
                 a("b8f3500a", "View thread in Reader"),
                 a("fc7db594", "Profile Summary"),
                 a("c3f04d9c", "Thinking"),
-                a("cbdddb0a", "Completed"),
+                a("e98cc293", function (e) {
+                    return "Searching for " + e.query;
+                }),
                 a("b0d1e205", function (e) {
                     return 'Searching for **"' + e.query + '"**';
+                }),
+                a("i2e0f4d7", function (e) {
+                    return "Browsing " + e.url + " for " + e.query;
                 }),
                 a("acb9b845", function (e) {
                     return "Browsing " + e.url + ' for **"' + e.query + '"**';
                 }),
                 a("ef261d8d", function (e) {
                     return "Searching posts by @" + e.username;
+                }),
+                a("f7d9cfb9", function (e) {
+                    return "Searching posts by @" + e.username + " for " + e.query;
                 }),
                 a("bec7eb11", function (e) {
                     return "Searching posts by @" + e.username + ' for **"' + e.query + '"**';
@@ -1907,10 +1915,10 @@
                 a("hff1b97a", "Only Subscribed can reply."),
                 a("a330771e", "Copy link to your clipboard"),
                 a("b6510e68", "Copy your Article’s URL so you can share it."),
-                a("e4a6e006", "Something went wrong. Please try again."),
-                a("eff483e0", "After you publish, get a link to share the Article."),
-                a("ca15dd4e", "Draft");
-            a("bb40bf66", "Published"),
+                a("e4a6e006", "Something went wrong. Please try again.");
+            a("eff483e0", "After you publish, get a link to share the Article."),
+                a("ca15dd4e", "Draft"),
+                a("bb40bf66", "Published"),
                 a("h107935c", "Last saved just now"),
                 a("a753a870", "Apply"),
                 a("afccc67e", "Copy link to Article"),
@@ -2959,10 +2967,10 @@
                 a("df1b7550", "Marketing"),
                 a("he258678", "X for Business"),
                 a("c6f58084", "Developers"),
-                a("d83f18d2", "Directory"),
-                a("hc5aa17c", "Get the X app"),
-                a("j0693948", "Get the Grok app");
-            a("af781666", "What do people think?"),
+                a("d83f18d2", "Directory");
+            a("hc5aa17c", "Get the X app"),
+                a("j0693948", "Get the Grok app"),
+                a("af781666", "What do people think?"),
                 a("ad35153e", "beta"),
                 a("fbf83158", "Warning: Payment failed"),
                 a("jadeb4da", "Please urgently update your payment method before you lose your subscription benefits."),
@@ -3875,10 +3883,10 @@
                 a("cededf2a", "Host"),
                 a("i2caef48", "Co-hosts"),
                 a("j245c654", "Speakers"),
-                a("eda23a02", "Listeners"),
-                a("b90eb348", "Invite to Speak"),
-                a("d9a63e82", "Remove from Speakers");
-            a("bd917b26", "Invite to Co-host"),
+                a("eda23a02", "Listeners");
+            a("b90eb348", "Invite to Speak"),
+                a("d9a63e82", "Remove from Speakers"),
+                a("bd917b26", "Invite to Co-host"),
                 a("d7357e7e", "Remove from Co-hosts"),
                 a("bf307fc0", "Block and Remove"),
                 a("ccf2f24e", "Report"),
@@ -4181,7 +4189,6 @@
                 a("b5df32b0", "Grok something"),
                 a("fb3b9776", "Grok’s output has been customized by this user."),
                 a("ca93f2ee", "This message has been deleted."),
-                a("b52484b6", "Searching..."),
                 a("b8c06820", "Copy text"),
                 a("ca0f5894", "Dislike"),
                 a("ja8d189e", "Wanted text answer"),
@@ -4273,6 +4280,7 @@
                 a("e2811afc", "Games"),
                 a("j081fa34", "Standings"),
                 a("i7c7f156", "Tomorrow"),
+                a("cbdddb0a", "Completed"),
                 a("b134ba52", "In Progress"),
                 a("j1361724", "Halftime"),
                 a("fa0f1262", "Break"),
@@ -4299,29 +4307,35 @@
                 a("dc17968a", "Fri"),
                 a("j310a2d6", "Sat"),
                 a("eaf55eb4", "Show thinking"),
-                a("j1ab5f40", "Tap to read"),
+                a("b1ac6016", "Completed DeepSearch"),
+                a("f766feca", "Completed DeeperSearch"),
                 a("ee000b0d", function (e) {
                     return e.numSources + " sources";
                 }),
-                a("b1ac6016", "Completed DeepSearch"),
-                a("f766feca", "Completed DeeperSearch"),
+                a("bf780b13", function (e) {
+                    return e.minutes + "m " + e.seconds + "s";
+                }),
+                a("c2745fa4", "Aborted"),
                 a("e258000e", "Notification"),
                 a("d591a772", "Notification unavailable"),
                 a("bc49b728", "You will be notified when the answer is ready"),
                 a("d8aadeba", "Notification turned off"),
                 a("db832e38", "Please enable notifications in browser settings"),
                 a("a910cac6", "There was an issue enabling notifications"),
-                a("g4b3a3e6", "DeepSearch Complete"),
-                a("bf780b13", function (e) {
-                    return e.minutes + "m " + e.seconds + "s";
-                }),
-                a("c2745fa4", "Aborted"),
                 a("be30b6ee", "Unstable connection"),
+                a("b52484b6", "Searching..."),
                 a("a4d9dbfa", "Thoughts"),
+                a("ib1c5475", function (e) {
+                    return "Thought for " + e.minutes + "m " + e.seconds + "s";
+                }),
+                a("a15d62db", function (e) {
+                    return "Thought for " + e.seconds + "s";
+                }),
                 a("d7cb5408", "Relevant Web Pages"),
                 a("aa7c96bb", function (e) {
                     return "See " + e.numResults + " more";
                 }),
+                a("j1ab5f40", "Tap to read"),
                 a("f5a2377e", "Thinking for"),
                 a("g3ce0132", "Thought for"),
                 a("f8007364", "Expand for details"),
@@ -4907,12 +4921,12 @@
                 a("if2909ba", "Watch Time"),
                 a("i0e5bf4c", "Your videos"),
                 a("ed99baea", "Early Beta Access"),
-                a("gf898b70", "Advanced Search"),
-                a("d2a43a7a", 'contains both "ai" and "startup"'),
+                a("gf898b70", "Advanced Search");
+            a("d2a43a7a", 'contains both "ai" and "startup"'),
                 a("a8584698", "ai startup"),
                 a("jb6f9292", 'contains the exact phrase "ai startup"'),
-                a("j8ee77c4", '"ai startup"');
-            a("d0480758", 'contains either "ai" or "startup" (or both)'),
+                a("j8ee77c4", '"ai startup"'),
+                a("d0480758", 'contains either "ai" or "startup" (or both)'),
                 a("f0048fa2", "ai OR startup"),
                 a("da0df186", 'contains "ai", but not "startup"'),
                 a("f2f463ea", "ai -startup"),
@@ -5873,12 +5887,12 @@
                 a("cbae35fa", "Report Broadcast"),
                 a("fd12ab58", "Collection posts"),
                 a("a226497c", "Create a new Community"),
-                a("d7346632", "You haven’t joined any Communities yet"),
-                a("b732a4cc", "When you do, you’ll see their posts here."),
+                a("d7346632", "You haven’t joined any Communities yet");
+            a("b732a4cc", "When you do, you’ll see their posts here."),
                 a("hff48914", "No posts could be found at this time."),
                 a("hb52cc4a", "Please try again later."),
-                a("e50e1bb0", "Welcome to Communities");
-            a("i6829daa", "Communities are moderated discussion groups where people on X can connect and share."),
+                a("e50e1bb0", "Welcome to Communities"),
+                a("i6829daa", "Communities are moderated discussion groups where people on X can connect and share."),
                 a("fc5c6914", "Meet others with your interests"),
                 a("aa1a9820", "Join Communities to connect with people who share your interests."),
                 a("edef4c82", "Post directly to a Community"),
@@ -6871,12 +6885,12 @@
                 a("ee54c3de", "Save videos straight to your device"),
                 a("ae03594c", "Small reply boost"),
                 a("e6bb08c0", "Increase the visibility of your replies"),
-                a("bf2a6acc", "Large Reply Boost"),
-                a("c2059276", "Have your replies boosted."),
+                a("bf2a6acc", "Large Reply Boost");
+            a("c2059276", "Have your replies boosted."),
                 a("b023ec20", "Max Reply Boost"),
                 a("g337328e", "Get the highest visibility for your replies."),
-                a("fa006202", "Background video playback");
-            a("jf389778", "Watch while browsing or using other apps"),
+                a("fa006202", "Background video playback"),
+                a("jf389778", "Watch while browsing or using other apps"),
                 a("f2977d80", "Bookmark folders"),
                 a("j1d3d910", "Keep your saved posts organized for easy access"),
                 a("f0f48668", "Premium support"),
@@ -7847,11 +7861,7 @@
                 a("c674f5b4", "Setup invoice payments"),
                 a("i8237e66", "Switch from credit card payments to invoicing via bank transfers."),
                 a("hebd348a", "Configure how ads are used to promote jobs from the Hiring portal."),
-                a("ib5e6f90", "Job Promotion"),
-                a("id720215", "Hiring"),
-                a("dd59f146", "Job promotion ad account"),
-                a("e7e36818", "Ad accounts are eligible for job promotion when they are fully set up with a funding source."),
-                a("c28566e0", "Ad Account");
+                a("ib5e6f90", "Job Promotion");
             function i(e, t) {
                 for (var o = 0; o < t.length; o++) {
                     var a = t[o];
@@ -7890,7 +7900,11 @@
                     r(e, t)
                 );
             }
-            a("c80160d3", "Advertising"),
+            a("id720215", "Hiring"),
+                a("dd59f146", "Job promotion ad account"),
+                a("e7e36818", "Ad accounts are eligible for job promotion when they are fully set up with a funding source."),
+                a("c28566e0", "Ad Account"),
+                a("c80160d3", "Advertising"),
                 a("ff0edac0", "Are you sure you want to cancel your subscription?"),
                 a("h2ac0348", "No, take me back"),
                 a("dbf9667e", "I’m sure"),
@@ -8752,12 +8766,10 @@
                 a("gdd173da", "Answer by Grok in Fun Mode"),
                 a("dfd6eeac", "Answer by Grok"),
                 a("deceb214", "Image by Grok"),
-                a("j05496ce", "DeepSearch by Grok"),
                 a("befddd48", "Show"),
                 a("hf3f8e3a", "Show more"),
                 a("h504ea5e", "Create your version with Grok"),
                 a("eb722de2", "Ask Grok yourself"),
-                a("ib5110be", "Try Grok DeepSearch yourself"),
                 a("bb5c5864", "Quote"),
                 a("a8b58cf4", "Show this thread"),
                 a("i5f742fe", "Show this poll"),
@@ -8907,14 +8919,14 @@
                 }),
                 a("c889af33", function (e) {
                     return e.count + " joined";
-                }),
-                a("d6f2056f", function (e) {
-                    return e.count + " tuned in";
-                }),
-                a("jbc5f47a", "Spaces dock");
-            a("gfe2830f", function (e) {
-                return e.count + " other" + n(e.count, "", "s");
+                });
+            a("d6f2056f", function (e) {
+                return e.count + " tuned in";
             }),
+                a("jbc5f47a", "Spaces dock"),
+                a("gfe2830f", function (e) {
+                    return e.count + " other" + n(e.count, "", "s");
+                }),
                 a("dbeae6cf", function (e) {
                     return e.count + " other listener" + n(e.count, "", "s");
                 }),
@@ -13194,4 +13206,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en.b57803da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en.5bf71eba.js.map

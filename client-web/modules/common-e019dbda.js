@@ -78,8 +78,8 @@
                 C = o(946099),
                 k = o(916585),
                 I = o(847607),
-                x = o(417714),
-                v = o(988823);
+                v = o(417714),
+                x = o(988823);
             const y = "block",
                 E = "mute",
                 R = "reportIllegalContentProfile",
@@ -90,15 +90,15 @@
                 T = l().ge54bb8c,
                 F = l().h5ef9bc8,
                 P = l().j7bb1a43,
-                L = (0, v.M)((e) => {
+                L = (0, x.M)((e) => {
                     const { featureSwitches: t } = (0, g.QZ)(),
                         o = void 0 !== window.navigator.share,
                         { isFixed: s, onClose: i, user: l } = e,
                         a = () => {
-                            const { Icon: e, onClick: t, testID: o, text: r } = (0, x.l)({ user: l, removeFollowerAction: J });
+                            const { Icon: e, onClick: t, testID: o, text: r } = (0, v.l)({ user: l, removeFollowerAction: J });
                             return { Icon: e, text: r, onClick: t, testID: o };
                         },
-                        v = () => {
+                        x = () => {
                             const { Icon: e, onClick: o, testID: r, text: n } = (0, w.op)({ blockAction: W, isSoftBlockEnabled: t.isTrue("xprofile_blocked_by_view_enabled"), source: w.SC.PROFILE, testID: y, unblockAction: K, user: l });
                             return { Icon: e, text: n, onClick: o, testID: r };
                         },
@@ -189,7 +189,7 @@
                         items: (() => {
                             const { dsaIllegalContentreportUrl: t, perspective: r } = e,
                                 s = [];
-                            return l.blocked_by || ((!l.following && l.id_str !== r && l.protected) || (!l.blocking && s.unshift((0, k.k)(l, V)), s.push(L()), s.unshift(B())), l.protected || l.blocking || (o && s.push(O()), n.Z.isAvailable() && s.push(j()))), l.id_str !== r && (l.following && s.unshift(M()), !l.blocking && s.push(D()), l.followed_by && s.push(a()), s.push(v()), s.push(H()), t && s.push(N(t))), s;
+                            return l.blocked_by || ((!l.following && l.id_str !== r && l.protected) || (!l.blocking && s.unshift((0, k.k)(l, V)), s.push(L()), s.unshift(B())), l.protected || l.blocking || (o && s.push(O()), n.Z.isAvailable() && s.push(j()))), l.id_str !== r && (l.following && s.unshift(M()), !l.blocking && s.push(D()), l.followed_by && s.push(a()), s.push(x()), s.push(H()), t && s.push(N(t))), s;
                         })(),
                         onCloseRequested: i,
                     });
@@ -359,11 +359,11 @@
                 C = o(325686),
                 k = o(247056),
                 I = o(90411);
-            const x = (e) => {
+            const v = (e) => {
                     const { children: t, promotedContent: o, user: r } = e;
-                    return n.createElement(C.Z, { style: v.decorationWrapper }, t, n.createElement(k.Z, { renderActionMenu: (e) => n.createElement(I.ZP, { onClose: e, promotedContent: o, user: r, view: "follower" }), style: v.actionMenu }));
+                    return n.createElement(C.Z, { style: x.decorationWrapper }, t, n.createElement(k.Z, { renderActionMenu: (e) => n.createElement(I.ZP, { onClose: e, promotedContent: o, user: r, view: "follower" }), style: x.actionMenu }));
                 },
-                v = l.default.create((e) => ({ decorationWrapper: { flexDirection: "row" }, actionMenu: { marginStart: e.spaces.space12 } }));
+                x = l.default.create((e) => ({ decorationWrapper: { flexDirection: "row" }, actionMenu: { marginStart: e.spaces.space12 } }));
             var y = o(71620),
                 E = o(668214),
                 R = o(694180),
@@ -383,7 +383,7 @@
             const F = ({ isDeviceFollowing: e, userId: t }) => n.createElement(g.Z, { isFollowing: e, style: N.followButton, userId: t }),
                 P = ({ onFollowClick: e, promotedContent: t, userId: o, viewerUserId: r }) => (r !== o ? n.createElement(w.C, { onFollowClick: e, promotedContent: t, size: "small", style: N.followButton, userId: o }) : null),
                 L = ({ referringPage: e, userId: t, viewerUserId: o }) => (o !== t ? n.createElement(w.C, { buttonType: "primaryFilled", isSuperFollowSubscriptionEnabled: !0, referringPage: e, relationshipMode: "subscribe", size: "small", style: N.followButton, userId: t }) : null),
-                B = (e) => n.createElement(x, { promotedContent: e.promotedContent, user: e.user }, P(e));
+                B = (e) => n.createElement(v, { promotedContent: e.promotedContent, user: e.user }, P(e));
             class D extends n.Component {
                 constructor(...e) {
                     super(...e),
@@ -420,7 +420,7 @@
                     return !(0, a.Z)(this.props, e);
                 }
                 render() {
-                    const { analytics: e, avatarDecoration: t, bottomControl: o, cellClickable: l, createLocalApiErrorHandler: a, decoration: c, followRequestReceived: h, hideBlocked: p, highlightedLabel: u, isBlockedBy: m, isBlocking: _, isDeviceFollowing: b, isFollowing: f, isInSidebar: g, log: w, onClick: C, onFollowClick: k, promotedItemId: I, referringPage: x, saveAsRecentSearch: v, shouldScribeImpression: y, shouldScribeProfileClick: E, shouldStoreTypeaheadItem: R, socialContext: U, user: A, ...Z } = this.props;
+                    const { analytics: e, avatarDecoration: t, bottomControl: o, cellClickable: l, createLocalApiErrorHandler: a, decoration: c, followRequestReceived: h, hideBlocked: p, highlightedLabel: u, isBlockedBy: m, isBlocking: _, isDeviceFollowing: b, isFollowing: f, isInSidebar: g, log: w, onClick: C, onFollowClick: k, promotedItemId: I, referringPage: v, saveAsRecentSearch: x, shouldScribeImpression: y, shouldScribeProfileClick: E, shouldStoreTypeaheadItem: R, socialContext: U, user: A, ...Z } = this.props;
                     return this._shouldRender() ? n.createElement(s.ZP.Provider, { value: { socialContextRefreshEnabled: () => this.context.featureSwitches.isTrue("social_context_and_topic_context_refresh_alignment_enabled") } }, n.createElement(i.ZP, (0, r.Z)({}, Z, { affiliateBadgeInfo: A.highlightedLabel, avatarDecoration: t, bottomControl: this._renderBottomControl(), decoration: this._renderDecoration(), highlightedLabel: A.highlightedLabel, isBlocking: A.blocking, onAvatarClick: this._handleAvatarClick, onCellClick: l ? this._handleCellClick : void 0, onScreenNameClick: this._handleScreenNameClick, socialContext: U ? { contextType: U.contextType, text: U.text, link: U.landingUrl ? (0, d.s9)(U.landingUrl) : void 0 } : void 0, withDarkerInteractiveBackground: g }))) : null;
                 }
                 _renderBottomControl() {
@@ -500,9 +500,9 @@
             const d = n.Z,
                 h = ({ user: e, ...t }) => {
                     const o = l()(d, e),
-                        { is_blue_verified: n, legacy: i } = o,
-                        h = (0, c.H)(o?.identity_profile_labels_highlighted_label?.label);
-                    return s.createElement(a.ZP, (0, r.Z)({}, t, { affiliateBadgeInfo: h, avatarUri: i?.profile_image_url_https ?? "", isBlueVerified: n || !1, isFollowedBy: i?.followed_by, isProtected: i?.protected, isVerified: i?.verified, name: i?.name ?? "", screenName: i?.screen_name ?? "", userId: i?.id_str ?? "", verifiedType: i?.verified_type ?? void 0 }));
+                        { is_blue_verified: n, legacy: i, verification: h } = o,
+                        p = (0, c.H)(o?.identity_profile_labels_highlighted_label?.label);
+                    return s.createElement(a.ZP, (0, r.Z)({}, t, { affiliateBadgeInfo: p, avatarUri: i?.profile_image_url_https ?? "", isBlueVerified: n || !1, isFollowedBy: i?.followed_by, isProtected: i?.protected, isVerified: h?.verified ?? !1, name: i?.name ?? "", screenName: i?.screen_name ?? "", userId: i?.id_str ?? "", verifiedType: h?.verified_type ?? void 0 }));
                 },
                 p = s.memo(h);
         },
@@ -612,4 +612,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/modules.common-e019dbda.d7f3c80a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/modules.common-e019dbda.6c1316da.js.map
