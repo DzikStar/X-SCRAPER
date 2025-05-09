@@ -128,8 +128,8 @@
                 l = o(668214),
                 d = o(491963),
                 i = o(709318);
-            const c = (e, { communityId: t }) => (t ? d.ZP.select(e, t) : void 0),
-                u = (e, { communityId: t }) => !!t && (0, i.H4)(e, t),
+            const c = (e, t) => (t.communityId ? d.ZP.select(e, t.communityId) : void 0),
+                u = (e, t) => !!t.communityId && (0, i.H4)(e, t.communityId),
                 m = ({ community: e, communityId: t, createLocalApiErrorHandler: o, isPinned: s, onActionButtonJoinClick: l, onPress: d, pinTimeline: i, shouldDisplayPin: c, style: u, thumbnailSize: m, unpinTimeline: h, withActionButton: p }) => {
                     const f = r.useMemo(() => e && { isPinned: s, handlePinOrUnpin: () => (s ? h({ id: t, name: e.name, type: a.FO.COMMUNITY }).catch(o) : i({ id: t, name: e.name, type: a.FO.COMMUNITY }).catch(o)) }, [e, t, o, s, i, h]),
                         b = c ? f : void 0;
@@ -276,7 +276,7 @@
                     const { userIds: o } = t;
                     return o.reduce((t, o) => {
                         const r = v.ZP.selectFetchStatus(e, o);
-                        return (t[o] = r === b.ZP.NONE ? b.ZP.LOADING : r), t;
+                        return r && (t[o] = r === b.ZP.NONE ? b.ZP.LOADING : r), t;
                     }, {});
                 },
                 M = (0, g.Z)()
@@ -531,14 +531,14 @@
             const i = Object.freeze({ toggleCommandCenter: "mod+k", openKeyboardShortcuts: "?", swipeLeft: "left", swipeRight: "right", nextItem: "j", previousItem: "k", refresh: ".", nightMode: "z", bookmark: "b", block: "x", mute: "u", newTweet: "n", newMessage: "m", toggleDMDrawer: "i", goHome: "g h", goExplore: "g e", goNotifications: "g n", goMentions: "g r", goProfile: "g p", goLikes: "g l", goLists: "g i", goMessages: "g m", goGrok: "g g", goToDrafts: "g f", goToScheduled: "g t", goSettings: "g s", goToUser: "g u", goBookmarks: "g b", goTopArticles: "g a", goDisplay: "g d", search: "/", audio: { dock: "a d", play: "a space", mute: "a m" }, video: { play1: "k", play2: "space", mute: "m" }, columns: { createNewColumn: "c n", duplicateColumn: "c d", focusOnReorderButton: "c r", lastColumn: "c 0", nextColumn: "]", nthColumn: "c 1..9", prevColumn: "[", removeColumn: "c backspace", toggleColumnOptions: "c o", undoRemoveColumn: "c u" }, decks: { createNewDeck: "d n", editActiveDeck: "d e", lastPinnedDeck: "d 0", manageAllDecks: "d m", nthPinnedDeck: "d 1..9" }, labs: { openCommandCenter: ">" } }),
                 c = (0, l.Z)((e) => {
                     const t = e ? [{ description: s().b7fa0cfe, keys: i.goTopArticles, universal: !1 }] : [];
-                    return [...((0, r.fH)(r.vw.prod) ? [] : [{ description: "Toggle Command Center", keys: `${u} k`, universal: !1 }]), { description: s().d5696fcc, keys: i.openKeyboardShortcuts, universal: !0 }, { description: s().a83d4280, keys: i.nextItem, universal: !0 }, { description: s().g0048656, keys: i.previousItem, universal: !0 }, { description: s().a690c4d0, keys: "Space", universal: !0 }, { description: s().e893811a, keys: i.refresh, universal: !1 }, { description: s().ha8209bc, keys: i.goHome, universal: !1 }, { description: s().fcf3e54c, keys: i.goExplore, universal: !0 }, { description: s().eb75875e, keys: i.goNotifications, universal: !1 }, { description: s().cdb53d7a, keys: i.goMentions, universal: !1 }, { description: s().fa98627a, keys: i.goProfile, universal: !1 }, { description: s().d4ebc798, keys: i.goToDrafts, universal: !1 }, { description: s().fd6a3f30, keys: i.goToScheduled, universal: !1 }, { description: s().d7b8ebaa, keys: i.goLikes, universal: !1 }, { description: s().b0041756, keys: i.goLists, universal: !1 }, { description: s().d4986f86, keys: i.goMessages, universal: !1 }, { description: s().h5860a68, keys: i.goGrok, universal: !1 }, { description: s().bb081ea2, keys: i.goSettings, universal: !0 }, { description: s().i3145aa0, keys: i.goBookmarks, universal: !1 }, ...t, { description: s().eee2ed92, keys: i.goToUser, universal: !0 }, { description: s().ee5ccf3e, keys: i.goDisplay, universal: !1 }];
+                    return [...((0, r.fH)(r.vw.prod) ? [] : [{ description: "Toggle Command Center", keys: `${u} k`, universal: !1 }]), { description: s().d5696fcc, keys: i.openKeyboardShortcuts, universal: !0 }, { description: s().a83d4280, keys: i.nextItem, universal: !0 }, { description: s().g0048656, keys: i.previousItem, universal: !0 }, { description: s().a690c4d0, keys: "Space", universal: !0 }, { description: s().e893811a, keys: i.refresh, universal: !1 }, { description: s().ha8209bc, keys: i.goHome, universal: !1 }, { description: s().fcf3e54c, keys: i.goExplore, universal: !1 }, { description: s().eb75875e, keys: i.goNotifications, universal: !1 }, { description: s().cdb53d7a, keys: i.goMentions, universal: !1 }, { description: s().fa98627a, keys: i.goProfile, universal: !1 }, { description: s().d4ebc798, keys: i.goToDrafts, universal: !1 }, { description: s().fd6a3f30, keys: i.goToScheduled, universal: !1 }, { description: s().d7b8ebaa, keys: i.goLikes, universal: !1 }, { description: s().b0041756, keys: i.goLists, universal: !1 }, { description: s().d4986f86, keys: i.goMessages, universal: !1 }, { description: s().h5860a68, keys: i.goGrok, universal: !1 }, { description: s().bb081ea2, keys: i.goSettings, universal: !1 }, { description: s().i3145aa0, keys: i.goBookmarks, universal: !1 }, ...t, { description: s().eee2ed92, keys: i.goToUser, universal: !1 }, { description: s().ee5ccf3e, keys: i.goDisplay, universal: !1 }];
                 }),
                 u = d.ZP.isMac() ? "⌘" : "CTRL",
                 m = () => [
                     { description: s().ab3d53f8, keys: i.newTweet, universal: !1 },
                     { description: s().de94bda6, keys: `${u} Enter`, universal: !1 },
                     { description: s().e736990a, keys: i.newMessage, universal: !1 },
-                    { description: s().a9ae1e78, keys: i.search, universal: !0 },
+                    { description: s().a9ae1e78, keys: i.search, universal: !1 },
                     { description: s().fe731016, keys: n.Z.shortcuts.like, universal: !1 },
                     { description: s().d17df548, keys: n.Z.shortcuts.reply, universal: !1 },
                     { description: s().g062295e, keys: n.Z.shortcuts.retweet, universal: !1 },
@@ -879,4 +879,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AudioSpacePeek.01870bca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AudioSpacePeek.320df8aa.js.map

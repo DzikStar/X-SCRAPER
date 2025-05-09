@@ -1275,7 +1275,7 @@
                 n("fc7db594", "ข้อมูลส่วนตัวโดยย่อ"),
                 n("c3f04d9c", "กำลังคิด"),
                 n("e98cc293", function (e) {
-                    return "Searching for " + e.query;
+                    return "กําลังค้นหา " + e.query;
                 }),
                 n("b0d1e205", function (e) {
                     return 'กําลังค้นหาสําหรับ **"' + e.query + '"**';
@@ -13204,4 +13204,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/th.0e8824da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/th.3c716c5a.js.map

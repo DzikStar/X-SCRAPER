@@ -1276,7 +1276,7 @@
                 n("fc7db594", "خلاصه نمایه"),
                 n("c3f04d9c", "درحال فکر کردن"),
                 n("e98cc293", function (e) {
-                    return "Searching for " + e.query;
+                    return "درحال جستجو برای " + e.query;
                 }),
                 n("b0d1e205", function (e) {
                     return "درحال جستجو برای **«" + e.query + "»**";
@@ -13212,4 +13212,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fa.686d19ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fa.bb14d85a.js.map

@@ -85,7 +85,7 @@
                 l = r(725405),
                 s = r(668214),
                 c = r(482176);
-            const d = (e, { bookmarkFolderId: t }) => (t ? c.ZP.select(e, t) : void 0),
+            const d = (e, t) => (t.bookmarkFolderId ? c.ZP.select(e, t.bookmarkFolderId) : void 0),
                 m = (0, s.Z)().propsFromState(() => ({ bookmarkFolder: d })),
                 u = n.default.create((e) => ({ thumbnail: { borderRadius: e.borderRadii.infinite, height: "100%", width: "100%" } })),
                 p = m(({ bookmarkFolder: e, onPress: t }) => {
@@ -699,4 +699,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterArticles-e019dbda.6cca124a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.TwitterArticles-e019dbda.2706e52a.js.map

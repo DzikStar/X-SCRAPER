@@ -121,9 +121,9 @@
                 A = n(725516),
                 v = n(125363),
                 y = n(390387),
-                E = n(919022),
-                C = n(110512),
-                k = n(105131),
+                k = n(919022),
+                E = n(110512),
+                C = n(105131),
                 M = n(206962),
                 _ = n(71620),
                 Z = n(668214),
@@ -139,12 +139,12 @@
                 N = { page: "dash" },
                 L = ({ createLocalApiErrorHandler: e, delegateUser: r, multiAccountUsers: n, onClose: o, showMultiAccountOverflowPip: l, switchAccount: i }) => {
                     const s = (0, A.z)(),
-                        d = (0, v.v9)(E.ZP.selectLoggedInUser),
-                        c = (0, C.V7)(),
+                        d = (0, v.v9)(k.ZP.selectLoggedInUser),
+                        c = (0, E.V7)(),
                         u = (0, v.I0)(),
                         m = r || c.length || n.length > 0,
                         p = (e) => (e ? t.createElement(h.Z, { count: e, truncatedCountFormatter: T, unreadCountLabel: F }) : null),
-                        k = t.useCallback(
+                        C = t.useCallback(
                             (r, n, t) => () => {
                                 s.scribe({ ...N, section: t ? "switch_to_protected_account" : "switch_account", element: n ? "account_bubble_badged" : "account_bubble", action: "click" }), i({ user_id: r }).catch(e(S.y));
                             },
@@ -165,7 +165,7 @@
                                     .slice(0, 2)
                                     .map((e) => t.createElement(b.Z, { "aria-label": U({ screenname: e.screenName }), key: e.userId, onPress: () => (e.userId === d.id_str ? u((0, y.YJ)()) : u((0, y.vU)({ userId: e.userId }))), role: "button", style: W.link }, t.createElement(w.default, { decoration: p(e.badgeCount), size: "large", uri: e.avatarImageUrl })));
                             }
-                            return n.map((e) => t.createElement(b.Z, { "aria-label": U({ screenname: e.screen_name }), key: e.user_id, onPress: k(e.user_id, !!e.badgeCount, e.is_protected), role: "button", style: W.link }, t.createElement(w.default, { decoration: p(e.badgeCount), size: "large", uri: e.avatar_image_url })));
+                            return n.map((e) => t.createElement(b.Z, { "aria-label": U({ screenname: e.screen_name }), key: e.user_id, onPress: C(e.user_id, !!e.badgeCount, e.is_protected), role: "button", style: W.link }, t.createElement(w.default, { decoration: p(e.badgeCount), size: "large", uri: e.avatar_image_url })));
                         })(),
                         (() => {
                             const e = m ? t.createElement(g.default, { testID: M.Z.iconMore }) : t.createElement(D.default, { testID: M.Z.iconPlus });
@@ -174,10 +174,10 @@
                     );
                 },
                 W = i.default.create((e) => ({ root: { alignSelf: "flex-start", flexDirection: "row" }, link: { borderRadius: e.borderRadii.infinite, marginEnd: e.spaces.space4 } })),
-                V = (0, k.P3)(I(t.memo(L)));
+                V = (0, C.P3)(I(t.memo(L)));
             var O = n(659773);
             const H = (0, Z.Z)()
-                .propsFromState(() => ({ viewerUser: E.ZP.selectViewerUser }))
+                .propsFromState(() => ({ viewerUser: k.ZP.selectViewerUser }))
                 .propsFromActions(() => ({ fetchDataUsageSettingsIfNeeded: O.MJ }))
                 .withAnalytics({ page: "dash" });
             var z = n(120735);
@@ -365,11 +365,11 @@
                         { isVisible: v } = this.state;
                     return t.createElement(b.ZP.Consumer, null, ({ direction: b }) => {
                         const y = "rtl" === b,
-                            E = v ? A.visibleDrawer : ("left" === r) === y ? A.offscreenRightDrawer : A.offscreenLeftDrawer,
-                            C = v && !g ? A.maskWithBg : A.maskTransparent,
-                            k = v ? A.animateOpen : A.animateClose,
-                            M = s.Z.reducedMotionEnabled ? null : k;
-                        return t.createElement(h.Z.Modal, null, t.createElement(p.Z, null, t.createElement(m.Z, null, t.createElement(a.Z, { onClick: this._handleMaskClick, onKeyUp: this._handleEsc, style: [A.mask, C, M, f ? A.backgroundBlur : null, "left" === r ? A.alignLeft : A.alignRight] }, (0, u.Z)("div", { role: "dialog", onTransitionEnd: this._handleTransitionEnd, ref: this._setAnimationNode, onClick: S, style: [A.root, f ? A.backgroundRootBlur : null, E, M, l], children: t.createElement(t.Fragment, null, D ? t.createElement(d.Z, { leftControl: "left" === r ? e : "right" === r ? this._renderCloseButton(n) : null, rightControl: "left" === r ? this._renderCloseButton(n) : "right" === r ? e : null, style: w, subtitle: i, title: c }) : null, t.createElement(a.Z, { style: A.contentContainer }, o)) })))));
+                            k = v ? A.visibleDrawer : ("left" === r) === y ? A.offscreenRightDrawer : A.offscreenLeftDrawer,
+                            E = v && !g ? A.maskWithBg : A.maskTransparent,
+                            C = v ? A.animateOpen : A.animateClose,
+                            M = s.Z.reducedMotionEnabled ? null : C;
+                        return t.createElement(h.Z.Modal, null, t.createElement(p.Z, null, t.createElement(m.Z, null, t.createElement(a.Z, { onClick: this._handleMaskClick, onKeyUp: this._handleEsc, style: [A.mask, E, M, f ? A.backgroundBlur : null, "left" === r ? A.alignLeft : A.alignRight] }, (0, u.Z)("div", { role: "dialog", onTransitionEnd: this._handleTransitionEnd, ref: this._setAnimationNode, onClick: S, style: [A.root, f ? A.backgroundRootBlur : null, k, M, l], children: t.createElement(t.Fragment, null, D ? t.createElement(d.Z, { leftControl: "left" === r ? e : "right" === r ? this._renderCloseButton(n) : null, rightControl: "left" === r ? this._renderCloseButton(n) : "right" === r ? e : null, style: w, subtitle: i, title: c }) : null, t.createElement(a.Z, { style: A.contentContainer }, o)) })))));
                     });
                 }
                 _renderCloseButton(e) {
@@ -588,9 +588,9 @@
                     return this.props.grokButton ? t.createElement(a.Z, { style: w.grokButton }, this.props.grokButton) : null;
                 }
                 _renderUserAvatar() {
-                    const { isAllowedToViewOptions: e, onAvatarClick: r, promotedContent: n, userAvatarSize: o, userAvatarUri: i, userScreenName: s } = this.props,
-                        { avatar: d } = e;
-                    return t.createElement(a.Z, { style: w.row }, t.createElement(l.ZP.Provider, { value: { userAvatarLabel: h } }, t.createElement(c.default, { onClick: r, promotedContent: n, screenName: s, size: o, uri: d ? i : void 0, withLink: !0 })), this._renderDecoration());
+                    const { isAllowedToViewOptions: e, onAvatarClick: r, profileLink: n, promotedContent: o, userAvatarSize: i, userAvatarUri: s, userScreenName: d } = this.props,
+                        { avatar: u } = e;
+                    return t.createElement(a.Z, { style: w.row }, t.createElement(l.ZP.Provider, { value: { userAvatarLabel: h } }, t.createElement(c.default, { link: n, onClick: r, promotedContent: o, screenName: d, size: i, uri: u ? s : void 0, withLink: !0 })), this._renderDecoration());
                 }
                 _renderHeader(e) {
                     const { isAllowedToViewOptions: r, withUserAvatar: n } = this.props,
@@ -602,9 +602,9 @@
                     return e || this._renderFollowButton();
                 }
                 _renderUserName() {
-                    const { isAllowedToViewOptions: e, isUserBlueVerified: r, isUserProtected: n, isUserVerified: a, onScreenNameClick: o, promotedContent: l, userHighlightedLabel: i, userName: s, userScreenName: d, userTranslatorType: c, userVerifiedType: u, userWithFollowsYou: p, withNameWrap: h } = this.props,
-                        { badges: b, followIndicator: w, fullName: f } = e;
-                    return t.createElement(m.Z, { affiliateBadgeInfo: i, badgeContext: "account", isBlueVerified: b ? r : void 0, isProtected: b ? n : void 0, isVerified: b ? a : void 0, name: f ? s : d, nameSize: "headline2", onLinkClick: o, promotedContent: l, screenName: d, translatorType: b ? c : void 0, verifiedType: b ? u : void 0, withFollowsYou: w && p, withLink: !0, withNameWrap: h, withStackedLayout: !0 });
+                    const { isAllowedToViewOptions: e, isUserBlueVerified: r, isUserProtected: n, isUserVerified: a, onScreenNameClick: o, profileLink: l, promotedContent: i, userHighlightedLabel: s, userName: d, userScreenName: c, userTranslatorType: u, userVerifiedType: p, userWithFollowsYou: h, withNameWrap: b } = this.props,
+                        { badges: w, followIndicator: f, fullName: D } = e;
+                    return t.createElement(m.Z, { affiliateBadgeInfo: s, badgeContext: "account", isBlueVerified: w ? r : void 0, isProtected: w ? n : void 0, isVerified: w ? a : void 0, link: l, name: D ? d : c, nameSize: "headline2", onLinkClick: o, promotedContent: i, screenName: c, translatorType: w ? u : void 0, verifiedType: w ? p : void 0, withFollowsYou: f && h, withLink: !0, withNameWrap: b, withStackedLayout: !0 });
                 }
                 _renderHighlightedUserLabel() {
                     const { userHighlightedLabel: e } = this.props;
@@ -726,4 +726,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.DashMenu.76843c5a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.DashMenu.8f444aaa.js.map

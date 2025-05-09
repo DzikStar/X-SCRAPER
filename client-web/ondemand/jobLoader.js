@@ -17,8 +17,8 @@
             const m = (0, f.ZP)({ namespace: "jobs" }),
                 p = u.Z.register(m);
             var h = n(386619);
-            const g = (e, { entry: t }) => t.itemMetadata?.clientEventInfo?.component,
-                b = (e, { entry: t }) => p.select(e, t.content.rest_id),
+            const g = (e, t) => t.entry.itemMetadata?.clientEventInfo?.component,
+                b = (e, t) => p.select(e, t.entry.content.rest_id),
                 y = (e, t) => {
                     const n = b(e, t),
                         r = n?.recruitingOrganization;
@@ -319,4 +319,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.jobLoader.c84bb48a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.jobLoader.d48bdc5a.js.map

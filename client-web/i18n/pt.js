@@ -1276,7 +1276,7 @@
                 s("fc7db594", "Resumo do perfil"),
                 s("c3f04d9c", "Pensamento"),
                 s("e98cc293", function (e) {
-                    return "Searching for " + e.query;
+                    return "Buscando por " + e.query;
                 }),
                 s("b0d1e205", function (e) {
                     return 'Pesquisando por **"' + e.query + '"**';
@@ -13206,4 +13206,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pt.f2c09b0a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pt.53df196a.js.map

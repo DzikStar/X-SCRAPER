@@ -72,10 +72,11 @@
                     }, [h?.debugMessageTagCount]);
                 if (D && !l) {
                     if ((!h && !m) || c) return null;
-                    let e = A[A.length - 1] ?? C;
-                    t && (e = C);
-                    const a = Z ? n.createElement(d.default, { style: [w.chevron, P || R ? w.completedChevron : void 0, t ? w.expandedChevron : void 0] }) : null;
-                    return n.createElement(r.Z, { style: [w.statusContainer, I] }, P || R ? n.createElement(n.Fragment, null, n.createElement(u.default, { style: w.icon }), n.createElement(x, { completed: !0, expanded: t, onClick: y, showExpand: Z }, n.createElement(r.Z, { style: w.statusLabelContainer }, n.createElement(o.ZP, { style: w.statusLabel }, M || R ? v : z)), a)) : n.createElement(n.Fragment, null, n.createElement(g.Z, null), n.createElement(x, { completed: !1, expanded: t, onClick: y, showExpand: Z }, n.createElement(f, { duration: 1, endElement: Z ? n.createElement(d.default, { style: [w.chevron, w.typingAnimationChevron, t ? w.expandedChevron : void 0] }) : null, holdout: 70 * e.length, style: w.typingAnimation, text: e }))));
+                    const e = A[A.length - 1];
+                    let a = e ?? C;
+                    t && (a = C);
+                    const i = Z ? n.createElement(d.default, { style: [w.chevron, P || R ? w.completedChevron : void 0, t ? w.expandedChevron : void 0] }) : null;
+                    return n.createElement(r.Z, { style: [w.statusContainer, I] }, P || R ? n.createElement(n.Fragment, null, n.createElement(u.default, { style: w.icon }), n.createElement(x, { completed: !0, expanded: t, onClick: y, showExpand: Z }, n.createElement(r.Z, { style: w.statusLabelContainer }, n.createElement(o.ZP, { style: w.statusLabel }, M || R ? v : z)), i)) : n.createElement(n.Fragment, null, n.createElement(g.Z, null), n.createElement(x, { completed: !1, expanded: t, onClick: y, showExpand: Z }, n.createElement(f, { duration: e ? 1 : 15, endElement: Z ? n.createElement(d.default, { style: [w.chevron, w.typingAnimationChevron, t ? w.expandedChevron : void 0] }) : null, holdout: 70 * a.length, style: w.typingAnimation, text: a }))));
                 }
                 const L = !(!m || c || ("" !== T && void 0 !== T) || h || S || s);
                 return n.createElement(i.Z, { show: L, type: "fade" }, n.createElement(r.Z, { style: [w.statusContainer, w.genericStatusContainer, I] }, n.createElement(g.Z, null), !!k && n.createElement(r.Z, { style: w.statusLabelContainer }, n.createElement(o.ZP, { style: w.animatedStatusLabel }, n.createElement("span", null, _)))));
@@ -498,4 +499,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-bd027025.cccd54ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-bd027025.dfc9e09a.js.map

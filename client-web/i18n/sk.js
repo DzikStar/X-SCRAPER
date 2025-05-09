@@ -1727,7 +1727,7 @@
                 n("d78131b9", function (e) {
                     return "Pridať používateľa @" + e.screenName + " do zoznamov/odobrať používateľa zo zoznamov";
                 }),
-                n("b3b642fc", "Why this post?"),
+                n("b3b642fc", "Prečo tento príspevok?"),
                 n("fb4ee11c", "Prečo sa zobrazuje táto reklama?"),
                 n("ad50e7d9", function (e) {
                     return "Zobraziť štatistiku pre " + e.entity;
@@ -13221,4 +13221,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sk.b3f02dfa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sk.ba9f669a.js.map

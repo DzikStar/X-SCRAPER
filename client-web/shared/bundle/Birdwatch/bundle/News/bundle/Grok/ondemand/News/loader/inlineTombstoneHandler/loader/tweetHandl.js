@@ -119,7 +119,7 @@
                 De = i(695427),
                 Me = i(268617),
                 Be = i(919022);
-            const Ze = (e, { tweetId: t }) => (0, ke.MW)(e, t),
+            const Ze = (e, t) => (0, ke.MW)(e, t.tweetId),
                 Re = (e, { urtAdvertiser: t, urtPromotedContent: i }) => {
                     if (e && i) {
                         const n = e.promoted_content;
@@ -127,9 +127,9 @@
                     }
                     return e;
                 },
-                Ue = (e, { socialContext: t }) => t,
-                Le = (e, { socialContext: t }) => {
-                    const i = t && t.topicContext;
+                Ue = (e, t) => t.socialContext,
+                Le = (e, t) => {
+                    const i = t.socialContext && t.socialContext.topicContext;
                     return i ? Pe.Z.select(e, i.topicId) : void 0;
                 },
                 Fe = (e, t) => {
@@ -144,7 +144,7 @@
                         n = i?.quoted_status;
                     return n ? (0, Ae.z0)(e, n) : void 0;
                 },
-                Ve = (e, { urtPromotedContent: t }) => t,
+                Ve = (e, t) => t.urtPromotedContent,
                 We = (e, { urtPromotedContent: t }) => (t ? Be.ZP.select(e, t.advertiserId) : null),
                 Ke = xe.Z.createHydratedTweetSelectorWeakMap((e, t) => Ne(t.contextTweetId)),
                 qe = (e, t) => (0, ve.t5)(e, ve.vA),
@@ -965,4 +965,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Birdwatch~bundle.News~bundle.Grok~ondemand.News~loader.inlineTombstoneHandler~loader.tweetHandl.1e4450aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Birdwatch~bundle.News~bundle.Grok~ondemand.News~loader.inlineTombstoneHandler~loader.tweetHandl.551ef2aa.js.map

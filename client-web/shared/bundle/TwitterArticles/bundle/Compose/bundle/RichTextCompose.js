@@ -794,8 +794,8 @@
                 c = r(965245),
                 l = r(71620),
                 d = r(668214);
-            const u = (e, { module: t }) => t.selectFetchStatus(e),
-                h = (e, { module: t }) => t.selectItems(e),
+            const u = (e, t) => t.module.selectFetchStatus(e),
+                h = (e, t) => t.module.selectItems(e),
                 p = (0, d.Z)()
                     .propsFromState((e) => ({ fetchStatus: u, items: h }))
                     .propsFromActions(({ module: e }) => ({ createLocalApiErrorHandler: (0, l.zr)("SLICES_TIMELINE"), fetch: e.fetch, fetchIfNeeded: e.fetchIfNeeded, fetchBottom: e.fetchBottom })),
@@ -1101,4 +1101,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.TwitterArticles~bundle.Compose~bundle.RichTextCompose.0898453a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.TwitterArticles~bundle.Compose~bundle.RichTextCompose.72d7077a.js.map

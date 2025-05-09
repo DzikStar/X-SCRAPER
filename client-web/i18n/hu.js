@@ -1275,7 +1275,7 @@
                 s("fc7db594", "Profil összegzése"),
                 s("c3f04d9c", "Gondolkozik"),
                 s("e98cc293", function (e) {
-                    return "Searching for " + e.query;
+                    return "Keresés erre: " + e.query;
                 }),
                 s("b0d1e205", function (e) {
                     return "Keresés erre: **„" + e.query + "”**";
@@ -13214,4 +13214,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hu.7dee7cea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hu.39b801fa.js.map

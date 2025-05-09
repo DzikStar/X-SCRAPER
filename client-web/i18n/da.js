@@ -1276,7 +1276,7 @@
                 t("fc7db594", "Profilresumé"),
                 t("c3f04d9c", "Tænker"),
                 t("e98cc293", function (e) {
-                    return "Searching for " + e.query;
+                    return "Søger efter " + e.query;
                 }),
                 t("b0d1e205", function (e) {
                     return 'Søger efter **"' + e.query + '"**';
@@ -1718,7 +1718,7 @@
                 t("d78131b9", function (e) {
                     return "Tilføj/fjern @" + e.screenName + " fra Lister";
                 }),
-                t("b3b642fc", "Why this post?"),
+                t("b3b642fc", "Hvorfor denne post?"),
                 t("fb4ee11c", "Hvorfor vises denne annonce?"),
                 t("ad50e7d9", function (e) {
                     return "Vis statistik for " + e.entity;
@@ -13208,4 +13208,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/da.b5202ffa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/da.580feeca.js.map

@@ -1275,7 +1275,7 @@
                 f("fc7db594", "个人资料概要"),
                 f("c3f04d9c", "思考中"),
                 f("e98cc293", function (e) {
-                    return "Searching for " + e.query;
+                    return "正在搜索 " + e.query;
                 }),
                 f("b0d1e205", function (e) {
                     return "正在搜索**“" + e.query + "”**";
@@ -13220,4 +13220,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh.7300b7ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh.d78d6e7a.js.map

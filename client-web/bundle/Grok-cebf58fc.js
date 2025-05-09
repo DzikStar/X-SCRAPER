@@ -821,7 +821,7 @@
                       )
                     : null;
             }
-            const x = i.default.create((e) => ({ container: { display: "flex", flexDirection: "column", gap: e.spaces.space12, animationDuration: "0.2s", animationKeyframes: [{ "0%": { opacity: 0, transform: "translateY(10px)" }, "100%": { opacity: 1, transform: "translateY(0)" } }], animationTimingFunction: "ease", animationFillMode: "both" }, headerContainer: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space4, color: e.colors.gray800 }, headerIcon: { width: e.spaces.space16, height: e.spaces.space16, color: "inherit" }, headerText: { fontSize: e.fontSizes.subtext2, color: "inherit" }, conversationListContainer: { display: "flex", flexDirection: "column", gap: e.spaces.space8 }, conversationItemContainer: { display: "flex", maxWidth: "100%", width: "max-content", backgroundColor: e.colors.gray50, paddingVertical: e.spaces.space8, paddingHorizontal: e.spaces.space12, borderRadius: e.spaces.space12 }, conversationItemText: { color: e.colors.gray900, fontSize: e.fontSizes.subtext1 } }));
+            const x = i.default.create((e) => ({ container: { display: "flex", flexDirection: "column", gap: e.spaces.space12, animationDuration: "0.2s", animationKeyframes: [{ "0%": { opacity: 0, transform: "translateY(10px)" }, "100%": { opacity: 1, transform: "translateY(0)" } }], animationTimingFunction: "ease", animationFillMode: "both" }, headerContainer: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space4, color: e.colors.gray800 }, headerIcon: { width: e.spaces.space16, height: e.spaces.space16, color: "inherit" }, headerText: { fontSize: e.fontSizes.subtext2, color: "inherit" }, conversationListContainer: { display: "flex", flexDirection: "column", gap: e.spaces.space8 }, conversationItemContainer: { display: "flex", maxWidth: "100%", width: "max-content", backgroundColor: e.colors.gray0, paddingVertical: e.spaces.space8, paddingHorizontal: e.spaces.space12, borderRadius: e.spaces.space12, borderStyle: "solid", borderWidth: 1, borderColor: e.colors.gray100 }, conversationItemText: { color: e.colors.gray900, fontSize: e.fontSizes.subtext1 } }));
             var I = o(213103);
             const P = l().j22655f2;
             function R({ access: e, conversationKey: t }) {
@@ -958,8 +958,8 @@
                         [e, d],
                     ),
                     F = (e) => ({
-                        backgroundColor: "gray50",
-                        borderColor: "transparent",
+                        backgroundColor: "gray0",
+                        borderColor: "gray100",
                         key: e.id,
                         onClick: (t) => {
                             S(t, e);
@@ -1057,4 +1057,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-cebf58fc.37e8d75a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-cebf58fc.e6c6e67a.js.map

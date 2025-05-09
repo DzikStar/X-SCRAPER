@@ -1279,7 +1279,7 @@
                 n("fc7db594", "프로필 요약"),
                 n("c3f04d9c", "생각 중"),
                 n("e98cc293", function (e) {
-                    return "Searching for " + e.query;
+                    return e.query + " 사용자 검색 중";
                 }),
                 n("b0d1e205", function (e) {
                     return '**"' + e.query + '"** 검색 중';
@@ -13224,4 +13224,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ko.d264238a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ko.f19ed8fa.js.map

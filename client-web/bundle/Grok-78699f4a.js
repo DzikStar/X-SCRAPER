@@ -24,8 +24,8 @@
                 g = d(125363),
                 w = d(389071),
                 y = d(958602),
-                k = d(100326),
-                C = d(309373),
+                C = d(100326),
+                k = d(309373),
                 A = d(327597),
                 I = d(620988),
                 S = d(305442),
@@ -45,20 +45,20 @@
                 O = d(454595),
                 L = d(690672),
                 z = d(492010);
-            const j = "new_prompt",
-                H = "rweb.grok.prompt";
-            const $ = c().ef4602ec,
+            const $ = "new_prompt",
+                j = "rweb.grok.prompt";
+            const H = c().ef4602ec,
                 U = { title: c().c65f7308, subtitle: c().f2a8655e };
             function W({ abortController: e, conversationKey: a, disableFileUploads: d, grokShare: u, hasAccess: c, inputAtBottom: W, inputAtHome: X, insideConversation: J, isIdle: Q, mode: q, onFieldTextInputRef: Y, placeholder: ee, promptSender: ae, useDraftPersistence: de, useMagicWandIcon: ne, useNonExpanded: oe }) {
                 const te = (0, g.I0)(),
                     re = (0, M.z)(),
                     le = (0, r.useHistory)(),
                     { clearFilterKey: se, hasValue: ie, isCreateImageEnabled: ue, isFileInputDisabled: ce, isImageEditEnabled: he, isInputCompact: me, isInputFocused: be, isInputMobile: pe, isInputMobileSize: De, isReasoningEnabled: fe, isResearchEnabled: Me, setFocused: ge, setHasValue: we, setPendingModeButtonFilterKey: ye } = (0, N.w)(),
-                    { isGrokDrawer: ke } = (0, x.ZP)(),
-                    Ce = (0, w.bD)(a),
-                    Ae = (0, g.v9)(Ce.selectEditingMessageId);
-                let Ie = (0, g.v9)(Ce.selectEditingMessage);
-                const Se = (0, g.v9)(Ce.selectInputPrefill),
+                    { isGrokDrawer: Ce } = (0, x.ZP)(),
+                    ke = (0, w.bD)(a),
+                    Ae = (0, g.v9)(ke.selectEditingMessageId);
+                let Ie = (0, g.v9)(ke.selectEditingMessage);
+                const Se = (0, g.v9)(ke.selectInputPrefill),
                     Ee = n.useRef(null),
                     { showInputEdit: ve } = (0, z.u)();
                 Ie = ve ? Ie : void 0;
@@ -72,9 +72,9 @@
                     Ne = n.useRef(null),
                     { clearSelectedFile: Ke, onFileSelected: Ge, onGrokFileSelected: Oe, selectedFiles: Le } = (0, I.ZP)(),
                     ze = n.useMemo(() => Object.keys(Le), [Le]),
-                    je = (0, f.p)(),
-                    He = Object.keys(Le).some((e) => Le[e]?.isUploading),
-                    $e = Object.keys(Le).some((e) => Le[e]?.isPendingAutomaticPromptSend),
+                    $e = (0, f.p)(),
+                    je = Object.keys(Le).some((e) => Le[e]?.isUploading),
+                    He = Object.keys(Le).some((e) => Le[e]?.isPendingAutomaticPromptSend),
                     [Ue, We] = n.useState(""),
                     Ve = (0, o.Dv)(b.dd),
                     Xe = 0 === Ue.length,
@@ -89,14 +89,14 @@
                 const Ye = (function (e, a, d) {
                         const t = (0, o.Dv)(b.lZ),
                             r = (0, g.v9)(a.selectConversationId),
-                            l = n.useMemo(() => r || (d ? "" : j), [r, d]),
+                            l = n.useMemo(() => r || (d ? "" : $), [r, d]),
                             s = n.useMemo(
                                 () =>
                                     (0, h.Z)((e) => {
                                         l &&
-                                            t.get(H).then((a) => {
+                                            t.get(j).then((a) => {
                                                 const d = { ...a };
-                                                d?.drafts || (d.drafts = new Map()), d?.drafts && d.drafts.set(l, e), t.set(H, d);
+                                                d?.drafts || (d.drafts = new Map()), d?.drafts && d.drafts.set(l, e), t.set(j, d);
                                             });
                                     }, 500),
                                 [t, l],
@@ -104,13 +104,13 @@
                         return (
                             n.useEffect(() => {
                                 l &&
-                                    t.get(H).then((a) => {
+                                    t.get(j).then((a) => {
                                         a?.drafts && a.drafts.has(l) && e((e) => e || a.drafts?.get(l) || "");
                                     });
                             }, [t, e, l]),
                             s
                         );
-                    })(We, Ce, !de || !!Ae || !!u),
+                    })(We, ke, !de || !!Ae || !!u),
                     ea = n.useCallback(
                         (e) => {
                             let a = e.target.value;
@@ -124,7 +124,7 @@
                 }, [Ue, ie, we]);
                 const aa = ze.length > 0,
                     da = n.useMemo(() => Object.values(Le).every((e) => e && !e.isUploading), [Le]),
-                    na = n.useMemo(() => (Ue.trim().length > 0 || aa) && da && !$e, [Ue, aa, da, $e]),
+                    na = n.useMemo(() => (Ue.trim().length > 0 || aa) && da && !He, [Ue, aa, da, He]),
                     oa = n.useMemo(() => ze.map((e) => Le[e]?.remote).filter(Boolean), [ze, Le]),
                     ta = n.useMemo(() => ze.map((e) => Le[e]?.local).filter(Boolean), [ze, Le]),
                     ra = n.useCallback(() => {
@@ -160,13 +160,13 @@
                                     isDeepsearch: Me,
                                 });
                             else if (u) {
-                                const e = await (0, k.X)({ analytics: re, api: Ve, dispatch: te, grokModule: Ce, fromShareId: u });
-                                e ? (Te(!1), ze.forEach((e) => Ke(e)), We(""), le.push(`/i/grok?conversation=${e}&text=${encodeURIComponent(Ue)}`)) : je({ text: $ });
+                                const e = await (0, C.X)({ analytics: re, api: Ve, dispatch: te, grokModule: ke, fromShareId: u });
+                                e ? (Te(!1), ze.forEach((e) => Ke(e)), We(""), le.push(`/i/grok?conversation=${e}&text=${encodeURIComponent(Ue)}`)) : $e({ text: H });
                             } else
                                 Ae
                                     ? Ie &&
                                       (await te(
-                                          (0, C.X)({ analytics: re, conversationKey: a })({
+                                          (0, k.X)({ analytics: re, conversationKey: a })({
                                               editingMessageId: Ae,
                                               text: Ue,
                                               fileAttachments: oa,
@@ -191,7 +191,7 @@
                                               attachments: oa,
                                               mode: q,
                                               returnCitations: Be,
-                                              isGrokDrawer: ke,
+                                              isGrokDrawer: Ce,
                                               promptMetadata: ia.promptMetadata,
                                               onStart: () => {
                                                   Te(!1),
@@ -208,7 +208,7 @@
                                           }),
                                       ));
                         } catch (e) {
-                            je({ text: $ });
+                            $e({ text: H });
                         } finally {
                             Te(!1);
                         }
@@ -236,8 +236,8 @@
                     [Te],
                 );
                 n.useEffect(() => {
-                    !Ze || He || $e || ua();
-                }, [Ze, He, ua, $e]);
+                    !Ze || je || He || ua();
+                }, [Ze, je, ua, He]);
                 const ha = n.useCallback(
                         (0, h.Z)(() => {
                             te((0, y.I)({ analytics: re, conversationKey: a })), e && e.abort(), (0, v.DE)(re);
@@ -291,20 +291,20 @@
                             );
                     }, [Le, ze, Ke, Da, he, se]),
                     Ma = !_e,
-                    ga = c && (!De || !Ze) && !$e,
+                    ga = c && (!De || !Ze) && !He,
                     wa = { color: Ue ? l.default.theme.colors.brandColor : l.default.theme.colors.gray700 };
                 n.useEffect(() => {
                     ga || la();
                 }, [ga, la]);
-                const ya = n.useMemo(() => n.createElement(L.Z, { fadeIn: Fe.current, isInProgress: !Q, isInputCompact: me, isLoading: Ze || $e, isSendEnabled: na, onSend: ca, onStop: ha, useMagicWandIcon: ne }), [Q, Ze, $e, na, ca, ha, ne, me]),
-                    ka = n.useMemo(
+                const ya = n.useMemo(() => n.createElement(L.Z, { fadeIn: Fe.current, isInProgress: !Q, isInputCompact: me, isLoading: Ze || He, isSendEnabled: na, onSend: ca, onStop: ha, useMagicWandIcon: ne }), [Q, Ze, He, na, ca, ha, ne, me]),
+                    Ca = n.useMemo(
                         () =>
                             n.createElement(
                                 t.Z,
                                 { style: V.contentBelowContainer },
                                 n.createElement(
                                     t.Z,
-                                    { style: [V.contentBelowLeft, (me || ke) && V.compactContentBelowLeft] },
+                                    { style: [V.contentBelowLeft, (me || Ce) && V.compactContentBelowLeft] },
                                     Ma &&
                                         n.createElement(
                                             n.Fragment,
@@ -322,9 +322,9 @@
                                             }),
                                         ),
                                 ),
-                                n.createElement(t.Z, { style: [V.contentBelowRight, (me || ke) && V.compactContentBelowRight] }, Re && n.createElement(O.t, { conversationKey: a, disabled: J, fadeIn: Fe.current, focused: be, inputAtBottom: W, inputAtHome: X }), !1, me && !ke ? (0 === Ue.length && Q && !aa ? n.createElement(Z.Z, { fadeIn: Fe.current, isInputCompact: me }) : ya) : n.createElement(n.Fragment, null, n.createElement(Z.Z, { fadeIn: Fe.current, isInputCompact: me }), ya)),
+                                n.createElement(t.Z, { style: [V.contentBelowRight, (me || Ce) && V.compactContentBelowRight] }, Re && n.createElement(O.t, { conversationKey: a, disabled: J, fadeIn: Fe.current, focused: be, inputAtBottom: W, inputAtHome: X }), !1, me && !Ce ? (0 === Ue.length && Q && !aa ? n.createElement(Z.Z, { fadeIn: Fe.current, isInputCompact: me }) : ya) : n.createElement(n.Fragment, null, n.createElement(Z.Z, { fadeIn: Fe.current, isInputCompact: me }), ya)),
                             ),
-                        [ke, me, Ma, !0, ce, be, Je, Re, a, J, W, X, Ue, ya, Q, aa],
+                        [Ce, me, Ma, !0, ce, be, Je, Re, a, J, W, X, Ue, ya, Q, aa],
                     );
                 return (
                     n.useEffect(() => {
@@ -337,82 +337,90 @@
                     oe
                         ? n.createElement(
                               t.Z,
-                              { style: V.deprecatedContainer },
+                              { style: V.outerContainer },
+                              xe && n.createElement(_.Z, null),
                               n.createElement(
-                                  P.P,
-                                  { direction: s.Z.getTextDirection(Ue) },
-                                  n.createElement(T.z, null),
+                                  t.Z,
+                                  { style: V.deprecatedContainer },
                                   n.createElement(
-                                      t.Z,
-                                      { style: V.inputOuterContainer },
-                                      xe && n.createElement(_.Z, null),
-                                      n.createElement(i.Z, {
-                                          autoFocus: !De,
-                                          contentAbove: fa,
-                                          editable: c && (!De || !Ze) && !$e,
-                                          inputStyle: [V.inputStyle, wa],
-                                          leftAligned: !0,
-                                          leftContent: d ? void 0 : n.createElement(F.Z, { disabled: ce, isInputCompact: me, label: "" }),
-                                          maxNumberOfLines: 15,
-                                          multiline: !0,
-                                          numberOfLines: 1,
-                                          onChange: ea,
-                                          onFilesAdded: ma,
-                                          onKeyPress: ba,
-                                          placeholder: ee,
-                                          ref: (e) => {
-                                              (Ne.current = e), e && Y?.(e);
-                                          },
-                                          rightContent: ya,
-                                          style: V.deprecatedInputContainer,
-                                          styleType: "selection",
-                                          value: Ue,
-                                      }),
+                                      P.P,
+                                      { direction: s.Z.getTextDirection(Ue) },
+                                      n.createElement(T.z, null),
+                                      n.createElement(
+                                          t.Z,
+                                          { style: V.inputOuterContainer },
+                                          n.createElement(i.Z, {
+                                              autoFocus: !De,
+                                              contentAbove: fa,
+                                              editable: c && (!De || !Ze) && !He,
+                                              inputStyle: [V.inputStyle, wa],
+                                              leftAligned: !0,
+                                              leftContent: d ? void 0 : n.createElement(F.Z, { disabled: ce, isInputCompact: me, label: "" }),
+                                              maxNumberOfLines: 15,
+                                              multiline: !0,
+                                              numberOfLines: 1,
+                                              onChange: ea,
+                                              onFilesAdded: ma,
+                                              onKeyPress: ba,
+                                              placeholder: ee,
+                                              ref: (e) => {
+                                                  (Ne.current = e), e && Y?.(e);
+                                              },
+                                              rightContent: ya,
+                                              style: V.deprecatedInputContainer,
+                                              styleType: "selection",
+                                              value: Ue,
+                                          }),
+                                      ),
                                   ),
                               ),
                           )
                         : n.createElement(
                               t.Z,
-                              { onClick: Da, style: V.container },
+                              { style: V.outerContainer },
+                              xe && n.createElement(_.Z, null),
                               n.createElement(
-                                  P.P,
-                                  { direction: s.Z.getTextDirection(Ue) },
-                                  n.createElement(T.z, null),
+                                  t.Z,
+                                  { onClick: Da, style: V.container },
                                   n.createElement(
-                                      t.Z,
-                                      { style: V.inputOuterContainer },
-                                      xe && n.createElement(_.Z, null),
-                                      n.createElement(i.Z, {
-                                          autoFocus: !De,
-                                          contentAbove: fa,
-                                          contentBelow: ka,
-                                          editable: ga,
-                                          inputStyle: [V.inputStyle, wa],
-                                          leftAligned: !0,
-                                          maxNumberOfLines: 15,
-                                          multiline: !0,
-                                          numberOfLines: 1,
-                                          onBlur: () => ge(!1),
-                                          onChange: ea,
-                                          onFilesAdded: ma,
-                                          onFocus: () => ge(!0),
-                                          onKeyDown: pa,
-                                          onKeyPress: ba,
-                                          placeholder: ee,
-                                          ref: (e) => {
-                                              (Ne.current = e), e && Y?.(e);
-                                          },
-                                          style: V.inputContainer,
-                                          styleType: "selection",
-                                          value: Ue,
-                                      }),
+                                      P.P,
+                                      { direction: s.Z.getTextDirection(Ue) },
+                                      n.createElement(T.z, null),
+                                      n.createElement(
+                                          t.Z,
+                                          { style: V.inputOuterContainer },
+                                          n.createElement(i.Z, {
+                                              autoFocus: !De,
+                                              contentAbove: fa,
+                                              contentBelow: Ca,
+                                              editable: ga,
+                                              inputStyle: [V.inputStyle, wa],
+                                              leftAligned: !0,
+                                              maxNumberOfLines: 15,
+                                              multiline: !0,
+                                              numberOfLines: 1,
+                                              onBlur: () => ge(!1),
+                                              onChange: ea,
+                                              onFilesAdded: ma,
+                                              onFocus: () => ge(!0),
+                                              onKeyDown: pa,
+                                              onKeyPress: ba,
+                                              placeholder: ee,
+                                              ref: (e) => {
+                                                  (Ne.current = e), e && Y?.(e);
+                                              },
+                                              style: V.inputContainer,
+                                              styleType: "selection",
+                                              value: Ue,
+                                          }),
+                                      ),
                                   ),
+                                  Je && n.createElement(G.Z, { arrowXStart: "50%", onAnimationEnd: () => Qe(null), subtitle: Je.title, title: Je.subtitle }),
                               ),
-                              Je && n.createElement(G.Z, { arrowXStart: "50%", onAnimationEnd: () => Qe(null), subtitle: Je.title, title: Je.subtitle }),
                           )
                 );
             }
-            const V = l.default.create((e) => ({ container: { width: "100%", borderRadius: e.spaces.space16, backgroundColor: e.colors.gray50, borderStyle: "solid", borderWidth: 1, borderColor: "transparent", transition: "all 0.2s" }, contentBelowContainer: { width: "100%", paddingHorizontal: e.spaces.space8, paddingBottom: e.spaces.space8, flexDirection: "row", justifyContent: "space-between", alignItems: "center" }, contentBelowLeft: { flexDirection: "row", alignItems: "center", justifyContent: "flex-start", gap: e.spaces.space8, flex: 1 }, compactContentBelowLeft: { gap: e.spaces.space4 }, contentBelowRight: { flexDirection: "row", alignItems: "center", justifyContent: "flex-end", gap: e.spaces.space8, paddingStart: e.spaces.space8 }, compactContentBelowRight: { gap: e.spaces.space4 }, inputOuterContainer: { position: "relative", flex: 1 }, inputStyle: { flex: 1, fontSize: 16, paddingTop: 20, paddingBottom: 20 }, inputContainer: { width: "100%", paddingStart: e.spaces.space4, backgroundColor: e.colors.gray50, borderRadius: e.spaces.space24, height: 300, fontSize: 16, flex: 1, justifyContent: "space-between" }, deprecatedContainer: { width: "100%" }, deprecatedInputContainer: { backgroundColor: e.colors.gray50, borderRadius: e.spaces.space32, paddingHorizontal: e.spaces.space8, paddingVertical: e.spaces.space4, width: "100%", borderColor: e.colors.gray50, borderWidth: e.spaces.space1, borderStyle: "solid" }, fileAttachments: { flex: 1, display: "flex", flexDirection: "row", gap: e.spaces.space8, paddingHorizontal: e.spaces.space12, paddingTop: 14, paddingBottom: 0, flexWrap: "wrap" } }));
+            const V = l.default.create((e) => ({ outerContainer: { position: "relative", width: "100%" }, container: { width: "100%", borderRadius: e.spaces.space24, backgroundColor: e.colors.gray0, transition: "all 0.2s", boxShadow: `0px 0px 4px 2px ${e.colors.gray0}` }, contentBelowContainer: { width: "100%", paddingHorizontal: e.spaces.space8, paddingBottom: e.spaces.space8, flexDirection: "row", justifyContent: "space-between", alignItems: "center" }, contentBelowLeft: { flexDirection: "row", alignItems: "center", justifyContent: "flex-start", gap: e.spaces.space8, flex: 1 }, compactContentBelowLeft: { gap: e.spaces.space4 }, contentBelowRight: { flexDirection: "row", alignItems: "center", justifyContent: "flex-end", gap: e.spaces.space8, paddingStart: e.spaces.space8 }, compactContentBelowRight: { gap: e.spaces.space4 }, inputOuterContainer: { position: "relative", flex: 1 }, inputStyle: { flex: 1, fontSize: 16, paddingTop: 20, paddingBottom: 20 }, inputContainer: { width: "100%", paddingStart: e.spaces.space4, backgroundColor: e.colors.gray0, borderRadius: e.spaces.space24, borderStyle: "solid", borderWidth: 1, borderColor: e.colors.gray100, height: 300, fontSize: 16, flex: 1, justifyContent: "space-between" }, deprecatedContainer: { width: "100%" }, deprecatedInputContainer: { backgroundColor: e.colors.gray50, borderRadius: e.spaces.space32, paddingHorizontal: e.spaces.space8, paddingVertical: e.spaces.space4, width: "100%", borderColor: e.colors.gray50, borderWidth: e.spaces.space1, borderStyle: "solid" }, fileAttachments: { flex: 1, display: "flex", flexDirection: "row", gap: e.spaces.space8, paddingHorizontal: e.spaces.space12, paddingTop: 14, paddingBottom: 0, flexWrap: "wrap" } }));
         },
         764326: (e, a, d) => {
             d.d(a, { DP: () => t, Qs: () => r, il: () => n, u$: () => o });
@@ -538,4 +546,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-78699f4a.5de36a7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-78699f4a.7fb2157a.js.map

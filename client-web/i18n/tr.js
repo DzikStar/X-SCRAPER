@@ -1275,7 +1275,7 @@
                 n("fc7db594", "Profil Özeti"),
                 n("c3f04d9c", "Düşünüyor"),
                 n("e98cc293", function (e) {
-                    return "Searching for " + e.query;
+                    return e.query + " için aranıyor";
                 }),
                 n("b0d1e205", function (e) {
                     return '**"' + e.query + '"** için arama yapılıyor';
@@ -13214,4 +13214,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/tr.84908d2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/tr.5d14c98a.js.map

@@ -691,7 +691,7 @@
                         _("payment");
                     }
                     function O(e) {
-                        e && "quick_promote" === e.name && ("close" === e.type && _("main"), "cardAdded" === e.type && (h(q, t, !0), _("main")));
+                        q && e && "quick_promote" === e.name && ("close" === e.type && _("main"), "cardAdded" === e.type && (h(q, t, !0), _("main")));
                     }
                     function N() {
                         const a = e.viewerUser?.screen_name;
@@ -740,4 +740,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Conversation-c431102c.b72ba0aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Conversation-c431102c.e5bf2f0a.js.map

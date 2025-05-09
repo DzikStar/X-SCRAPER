@@ -398,8 +398,8 @@
                 i = a(965245),
                 l = a(71620),
                 c = a(668214);
-            const u = (e, { module: t }) => t.selectFetchStatus(e),
-                E = (e, { module: t }) => t.selectItems(e),
+            const u = (e, t) => t.module.selectFetchStatus(e),
+                E = (e, t) => t.module.selectItems(e),
                 b = (0, c.Z)()
                     .propsFromState((e) => ({ fetchStatus: u, items: E }))
                     .propsFromActions(({ module: e }) => ({ createLocalApiErrorHandler: (0, l.zr)("SLICES_TIMELINE"), fetch: e.fetch, fetchIfNeeded: e.fetchIfNeeded, fetchBottom: e.fetchBottom })),
@@ -1080,4 +1080,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Birdwatch-e019dbda.a1c0a4ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Birdwatch-e019dbda.dcb144da.js.map

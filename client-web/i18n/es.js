@@ -1275,7 +1275,7 @@
                 o("fc7db594", "Resumen del perfil"),
                 o("c3f04d9c", "Pensando"),
                 o("e98cc293", function (e) {
-                    return "Searching for " + e.query;
+                    return "Buscando a " + e.query;
                 }),
                 o("b0d1e205", function (e) {
                     return 'Buscando **"' + e.query + '"**';
@@ -13217,4 +13217,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/es.474f1daa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/es.d1be3e0a.js.map

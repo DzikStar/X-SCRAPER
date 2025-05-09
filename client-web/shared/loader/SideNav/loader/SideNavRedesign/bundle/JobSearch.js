@@ -27,14 +27,14 @@
                 v = p().d86bbf0f,
                 y = u.default.create((e) => ({ notificationBadge: { paddingHorizontal: e.spaces.space4 } })),
                 A = ({ notificationCount: e = 0 }) => (e > 0 ? n.createElement(o.Z, { count: e, style: e > 9 && y.notificationBadge, truncatedCountFormatter: _, unreadCountLabel: v }) : null);
-            var U = r(110512),
-                k = r(642153),
+            var k = r(110512),
+                U = r(642153),
                 S = r(899667),
                 Z = r(487552),
                 I = r(390387);
-            const B = p().c61eea74,
-                F = p().b7dc3885,
-                L = p().d86bbf0f,
+            const L = p().c61eea74,
+                B = p().b7dc3885,
+                F = p().d86bbf0f,
                 x = p().h6beb5fb,
                 M = ({ accountUsers: e, activeUser: t, handleMultiAccountSwitch: r, isUpdatedManageAccounts: a, renderUserDecoration: u, userTestId: d, withBadges: p }) => {
                     const m = (0, b.v9)(I.BP),
@@ -45,16 +45,16 @@
                         E = n.useCallback(() => {
                             f(!g);
                         }, [g]),
-                        _ = n.useMemo(() => (m && m > 0 ? n.createElement(s.Z, { onClick: E, style: D.personalAccountsLabel }, n.createElement(i.ZP, { color: "gray700", weight: "bold" }, B), g ? n.createElement(S.default, { style: D.IconChevronUp }) : n.createElement(Z.default, { style: D.IconChevronDown })) : null), [h, m, E, g]),
+                        _ = n.useMemo(() => (m && m > 0 ? n.createElement(s.Z, { onClick: E, style: D.personalAccountsLabel }, n.createElement(i.ZP, { color: "gray700", weight: "bold" }, L), g ? n.createElement(S.default, { style: D.IconChevronUp }) : n.createElement(Z.default, { style: D.IconChevronDown })) : null), [h, m, E, g]),
                         v = n.useMemo(
                             () =>
                                 w.map((e) => {
                                     const t = e.badgeCount ?? 0;
-                                    return n.createElement(n.Fragment, { key: e.user_id }, n.createElement(c.ZP, { affiliateBadgeInfo: e.highlighted_label, "aria-label": F({ screenName: e.screen_name }), avatarDecoration: a && n.createElement(A, { notificationCount: t }), avatarUri: e.avatar_image_url, badgeContext: "account", decoration: u({ badgeCount: t, withBadges: p, isActiveUser: !1 }), displayMode: "UserCompact", isBlueVerified: e.is_blue_verified, isProtected: e.is_protected, isVerified: e.is_verified, name: e.name, onCellClick: r({ hasBadge: !!t, isProtected: e.is_protected, userId: e.user_id }), screenName: e.screen_name, testID: d, userId: e.user_id, verifiedType: e.verified_type, withLink: !1 }), a && n.createElement(l.Z, { style: D.accountDivider }));
+                                    return n.createElement(n.Fragment, { key: e.user_id }, n.createElement(c.ZP, { affiliateBadgeInfo: e.highlighted_label, "aria-label": B({ screenName: e.screen_name }), avatarDecoration: a && n.createElement(A, { notificationCount: t }), avatarUri: e.avatar_image_url, badgeContext: "account", decoration: u({ badgeCount: t, withBadges: p, isActiveUser: !1 }), displayMode: "UserCompact", isBlueVerified: e.is_blue_verified, isProtected: e.is_protected, isVerified: e.is_verified, name: e.name, onCellClick: r({ hasBadge: !!t, isProtected: e.is_protected, userId: e.user_id }), screenName: e.screen_name, testID: d, userId: e.user_id, verifiedType: e.verified_type, withLink: !1 }), a && n.createElement(l.Z, { style: D.accountDivider }));
                                 }),
                             [r, w, u, d, p, a],
                         ),
-                        y = n.useMemo(() => n.createElement(s.Z, { style: D.facePileContainer }, n.createElement(k.Z, { userAvatarSize: "large", userAvatarUrls: w.map((e) => e.avatar_image_url) }), C > 0 ? n.createElement(o.Z, { count: C, standalone: !0, truncatedCountFormatter: x, unreadCountLabel: L }) : null), [w, C]);
+                        y = n.useMemo(() => n.createElement(s.Z, { style: D.facePileContainer }, n.createElement(U.Z, { userAvatarSize: "large", userAvatarUrls: w.map((e) => e.avatar_image_url) }), C > 0 ? n.createElement(o.Z, { count: C, standalone: !0, truncatedCountFormatter: x, unreadCountLabel: F }) : null), [w, C]);
                     return w.length > 0 ? n.createElement(n.Fragment, null, !a && _, a || g || void 0 === m || 0 === m ? v : y) : null;
                 },
                 D = u.default.create((e) => ({ personalAccountsLabel: { padding: e.spaces.space12, alignItems: "center", flexDirection: "row", justifyContent: "space-between", cursor: "pointer" }, IconChevronUp: { color: e.colors.primary, marginEnd: e.spaces.space12 }, IconChevronDown: { color: e.colors.gray700, marginEnd: e.spaces.space12 }, accountDivider: { marginHorizontal: e.spaces.space16 }, facePileContainer: { display: "flex", flexDirection: "row", justifyContent: "space-between", paddingStart: e.spaces.space16, paddingEnd: e.spaces.space16 } })),
@@ -64,10 +64,10 @@
                 V = p().d86bbf0f,
                 H = p().h6beb5fb;
             function W(e) {
-                const { accountSwitch: t, accountUsers: r, activeUser: u, clearDelegateUser: d, delegateAccountCount: p, delegateUser: _, isDelegateEnabled: v, isUpdatedManageAccounts: y, onDelegateSwitch: k, onUserSwitch: S, userTestId: Z, withBadges: I = !1 } = e,
-                    B = !!_,
-                    F = r.some((e) => e.user_id === u.id_str) || (p && p > 0) || B,
-                    L = n.useCallback(() => {
+                const { accountSwitch: t, accountUsers: r, activeUser: u, clearDelegateUser: d, delegateAccountCount: p, delegateUser: _, isDelegateEnabled: v, isUpdatedManageAccounts: y, onDelegateSwitch: U, onUserSwitch: S, userTestId: Z, withBadges: I = !1 } = e,
+                    L = !!_,
+                    B = r.some((e) => e.user_id === u.id_str) || (p && p > 0) || L,
+                    F = n.useCallback(() => {
                         d && d();
                     }, [d]),
                     x = n.useCallback(
@@ -111,10 +111,10 @@
                     ),
                     R = n.useCallback(({ badgeCount: e, isActiveUser: t, withBadges: r }) => (t ? (v ? n.createElement(h.default, { style: [z.IconCheckmarkCircleFill, z.userDecoration] }) : n.createElement(f.default, { style: [z.iconCheckMark, z.userDecoration] })) : e && r ? n.createElement(o.Z, { count: e, standalone: !0, style: z.userDecoration, truncatedCountFormatter: H, unreadCountLabel: V }) : void 0), [v]),
                     $ = n.useMemo(() => (y ? O : R), [y, R, O]),
-                    G = n.useMemo(() => n.createElement(U.ZP, { activeUserId: u.id_str, delegateUser: _, isUpdatedManageAccounts: y, key: 0, onDelegateSwitch: k ?? w.Z, renderUserDecoration: $ }), [u.id_str, _, y, k, $]),
+                    G = n.useMemo(() => n.createElement(k.ZP, { activeUserId: u.id_str, delegateUser: _, isUpdatedManageAccounts: y, key: 0, onDelegateSwitch: U ?? w.Z, renderUserDecoration: $ }), [u.id_str, _, y, U, $]),
                     j = n.useMemo(() => n.createElement(N, { accountUsers: r, activeUser: u, handleMultiAccountSwitch: x, isUpdatedManageAccounts: !!y, key: 1, renderUserDecoration: $, userTestId: Z, withBadges: I }), [r, u, x, y, $, Z, I]),
                     Y = [];
-                return !y && v && Y.push(G), Y.push(j), y && v && Y.push(G), n.createElement(n.Fragment, null, y && v && n.createElement(s.Z, { style: z.personalAccountsLabel }, n.createElement(i.ZP, { color: "gray700", weight: "bold" }, T)), F ? n.createElement(n.Fragment, null, n.createElement(c.ZP, { affiliateBadgeInfo: u.highlightedLabel, avatarDecoration: y && n.createElement(A, { notificationCount: M + D }), avatarUri: u.profile_image_url_https, badgeContext: "account", decoration: $({ withBadges: I, isActiveUser: !_, isLoggedInUser: !0 }), displayMode: "UserCompact", isBlueVerified: u.is_blue_verified, isProtected: u.protected, isVerified: u.verified, name: u.name, onCellClick: B ? L : void 0, screenName: u.screen_name, testID: Z, userId: u.id_str, verifiedType: u.verified_type, withLink: !1 }), y && n.createElement(l.Z, { style: z.accountDivider })) : null, Y, !y && (F || p || r.length) ? n.createElement(l.Z, { spacing: "space12" }) : null);
+                return !y && v && Y.push(G), Y.push(j), y && v && Y.push(G), n.createElement(n.Fragment, null, y && v && n.createElement(s.Z, { style: z.personalAccountsLabel }, n.createElement(i.ZP, { color: "gray700", weight: "bold" }, T)), B ? n.createElement(n.Fragment, null, n.createElement(c.ZP, { affiliateBadgeInfo: u.highlightedLabel, avatarDecoration: y && n.createElement(A, { notificationCount: M + D }), avatarUri: u.profile_image_url_https, badgeContext: "account", decoration: $({ withBadges: I, isActiveUser: !_, isLoggedInUser: !0 }), displayMode: "UserCompact", isBlueVerified: u.is_blue_verified, isProtected: u.protected, isVerified: u.verified, name: u.name, onCellClick: L ? F : void 0, screenName: u.screen_name, testID: Z, userId: u.id_str, verifiedType: u.verified_type, withLink: !1 }), y && n.createElement(l.Z, { style: z.accountDivider })) : null, Y, !y && (B || p || r.length) ? n.createElement(l.Z, { spacing: "space12" }) : null);
             }
             const z = u.default.create((e) => ({ iconCheckMark: { color: e.colors.primary, flexShrink: 0 }, IconCheckmarkCircleFill: { color: e.colors.green500, flexShrink: 0, marginEnd: e.spaces.space8 }, updatedIconCheckmarkCircleFill: { color: e.colors.green500, flexShrink: 0, width: e.spaces.space24, height: e.spaces.space24 }, IconExiting: { color: e.colors.red500, flexShrink: 0, width: e.spaces.space24, height: e.spaces.space24 }, IconChevronRight: { color: "inherit", flexShrink: 0, width: e.spaces.space24, height: e.spaces.space24 }, decorationsContainer: { display: "flex", flexDirection: "row", gap: e.spaces.space12 }, accountDivider: { marginHorizontal: e.spaces.space16 }, userDecoration: { marginStart: e.spaces.space12 }, personalAccountsLabel: { margin: e.spaces.space16, marginBottom: e.spaces.space4 } }));
         },
@@ -143,8 +143,8 @@
                 v = r(125363),
                 y = r(919022);
             const A = o().d86bbf0f,
-                U = o().h6beb5fb;
-            function k(e) {
+                k = o().h6beb5fb;
+            function U(e) {
                 const { isExpanded: t } = e,
                     r = (0, _.hC)("rweb_sourcemap_migration"),
                     s = (0, v.v9)(y.ZP.selectViewerUser);
@@ -153,17 +153,17 @@
                 return n.createElement(n.Fragment, null, n.createElement(i.Z, null, n.createElement(w.Z, { "aria-label": c, screenName: d, size: "xLarge", style: r && Z.userAvatarRedesign, uri: l }), t ? null : S(e)), t ? n.createElement(n.Fragment, null, n.createElement(C.Z, { affiliateBadgeInfo: a, badgeContext: "account", isBlueVerified: o, isProtected: u, isVerified: p, name: c, screenName: d, style: Z.userName, verifiedType: m, withStackedLayout: !0 }), n.createElement(i.Z, { style: Z.iconContainer }, n.createElement(E.default, { style: Z.icon }), t ? S(e) : null)) : null);
             }
             function S({ hasMultiAccountBadges: e, isExpanded: t }) {
-                return e ? n.createElement(b.Z, { pip: !0, style: t && Z.pip, truncatedCountFormatter: U, unreadCountLabel: A }) : null;
+                return e ? n.createElement(b.Z, { pip: !0, style: t && Z.pip, truncatedCountFormatter: k, unreadCountLabel: A }) : null;
             }
             const Z = l.default.create((e) => ({ icon: { color: e.colors.text }, iconContainer: { alignItems: "flex-end", flexGrow: 1 }, pip: { position: "absolute", end: `calc(-1 * ${e.spaces.space4})`, top: `calc(-1 * ${e.spaces.space4})` }, userName: { flexGrow: 1, marginHorizontal: e.spaces.space12 }, userAvatarRedesign: { width: e.spaces.space36, height: e.spaces.space36 } })),
                 I = o().b8e1d524,
-                B = o().gef27c4c;
-            class F extends n.Component {
+                L = o().gef27c4c;
+            class B extends n.Component {
                 constructor(...e) {
                     super(...e),
                         (this._renderEmptyState = () => {
                             const { renderEmptyState: e } = this.props;
-                            return e ? n.createElement(i.Z, { style: L.emptyStateWrapper }, e()) : null;
+                            return e ? n.createElement(i.Z, { style: F.emptyStateWrapper }, e()) : null;
                         }),
                         (this._handleAccountSwitcherClick = () => {
                             const { analytics: e } = this.props;
@@ -173,12 +173,12 @@
                 render() {
                     const { "aria-label": e, currentUser: t, delegateUser: r, hasMultiAccountBadges: s, hoverLabel: a, interactiveViewTestId: o, isExpanded: i, renderEmptyState: p, renderMenuSheet: h, style: g } = this.props,
                         f = this.context.featureSwitches.isTrue("rweb_sourcemap_migration"),
-                        w = [L.anchorContainer, f && L.anchorContainerRedesign, g];
-                    return t || p ? n.createElement(u.Z, { contentStyle: L.menuContainer, enableEnterKeyToggle: !0, renderContent: h, withArrow: !0, withFixedPosition: !0 }, n.createElement(d.Z, { "aria-label": e || B, hoverLabel: i ? void 0 : { label: a || I }, interactiveStyles: c.Z.generate({ backgroundColor: "transparent", color: l.default.theme.colors.text }), onClick: this._handleAccountSwitcherClick, role: "button", style: w, testID: o }, r ? n.createElement(m.p, { forceUserId: r.userId }, n.createElement(k, { hasMultiAccountBadges: s, isExpanded: i })) : t ? n.createElement(k, { hasMultiAccountBadges: s, isExpanded: i }) : this._renderEmptyState())) : null;
+                        w = [F.anchorContainer, f && F.anchorContainerRedesign, g];
+                    return t || p ? n.createElement(u.Z, { contentStyle: F.menuContainer, enableEnterKeyToggle: !0, renderContent: h, withArrow: !0, withFixedPosition: !0 }, n.createElement(d.Z, { "aria-label": e || L, hoverLabel: i ? void 0 : { label: a || I }, interactiveStyles: c.Z.generate({ backgroundColor: "transparent", color: l.default.theme.colors.text }), onClick: this._handleAccountSwitcherClick, role: "button", style: w, testID: o }, r ? n.createElement(m.p, { forceUserId: r.userId }, n.createElement(U, { hasMultiAccountBadges: s, isExpanded: i })) : t ? n.createElement(U, { hasMultiAccountBadges: s, isExpanded: i }) : this._renderEmptyState())) : null;
                 }
             }
-            F.contextType = p.rC;
-            const L = l.default.create((e) => ({ anchorContainer: { alignItems: "center", borderRadius: e.borderRadii.infinite, display: "flex", flexDirection: "row", padding: e.spaces.space12 }, anchorContainerRedesign: { padding: 8 }, icon: { color: e.colors.text }, iconContainer: { alignItems: "flex-end", flexGrow: 1 }, pip: { position: "absolute", end: `calc(-1 * ${e.spaces.space4})`, top: `calc(-1 * ${e.spaces.space4})` }, userName: { flexGrow: 1, marginHorizontal: e.spaces.space12 }, menuContainer: { width: h.Z.cardWidth.normal }, emptyStateWrapper: { height: e.spaces.space40, minWidth: e.spaces.space40, width: "100%" } }));
+            B.contextType = p.rC;
+            const F = l.default.create((e) => ({ anchorContainer: { alignItems: "center", borderRadius: e.borderRadii.infinite, display: "flex", flexDirection: "row", padding: e.spaces.space12 }, anchorContainerRedesign: { padding: 8 }, icon: { color: e.colors.text }, iconContainer: { alignItems: "flex-end", flexGrow: 1 }, pip: { position: "absolute", end: `calc(-1 * ${e.spaces.space4})`, top: `calc(-1 * ${e.spaces.space4})` }, userName: { flexGrow: 1, marginHorizontal: e.spaces.space12 }, menuContainer: { width: h.Z.cardWidth.normal }, emptyStateWrapper: { height: e.spaces.space40, minWidth: e.spaces.space40, width: "100%" } }));
             var x = r(380155),
                 M = r(755296),
                 D = r(725516),
@@ -308,7 +308,7 @@
                             return e;
                         }, []),
                         v = n.useCallback((t) => (C(), d ? (g ? n.createElement(K, { accountSwitch: E, accountUsers: p, activeUser: d, createLocalApiErrorHandlerAccountsFetch: r, fetchAccounts: i, fetchStatus: c, handleClose: t, manageAccountsMenuItem: ge, shouldDisplayFetchRenderer: _() }) : n.createElement(ce, { accountSwitch: E, accountUsers: p, activeUser: d, additionalMenuItems: b(), clearDelegateUser: e, createLocalApiErrorHandlerAccountsFetch: r, delegateAccountCount: a, delegateUser: o, fetchAccounts: i, fetchStatus: c, handleClose: t, shouldDisplayFetchRenderer: _(), withBadges: !0 })) : null), [e, r, a, o, i, c, b, _, C, d, E, p, g]);
-                    return n.createElement(F, { analytics: f, currentUser: d, delegateUser: o, hasMultiAccountBadges: l, interactiveViewTestId: le.Z.accountSwitcher, isExpanded: u, renderMenuSheet: v, style: m });
+                    return n.createElement(B, { analytics: f, currentUser: d, delegateUser: o, hasMultiAccountBadges: l, interactiveViewTestId: le.Z.accountSwitcher, isExpanded: u, renderMenuSheet: v, style: m });
                 });
         },
         22132: (e, t, r) => {
@@ -438,9 +438,9 @@
                     return this.props.grokButton ? n.createElement(s.Z, { style: f.grokButton }, this.props.grokButton) : null;
                 }
                 _renderUserAvatar() {
-                    const { isAllowedToViewOptions: e, onAvatarClick: t, promotedContent: r, userAvatarSize: a, userAvatarUri: i, userScreenName: c } = this.props,
-                        { avatar: l } = e;
-                    return n.createElement(s.Z, { style: f.row }, n.createElement(o.ZP.Provider, { value: { userAvatarLabel: h } }, n.createElement(u.default, { onClick: t, promotedContent: r, screenName: c, size: a, uri: l ? i : void 0, withLink: !0 })), this._renderDecoration());
+                    const { isAllowedToViewOptions: e, onAvatarClick: t, profileLink: r, promotedContent: a, userAvatarSize: i, userAvatarUri: c, userScreenName: l } = this.props,
+                        { avatar: d } = e;
+                    return n.createElement(s.Z, { style: f.row }, n.createElement(o.ZP.Provider, { value: { userAvatarLabel: h } }, n.createElement(u.default, { link: r, onClick: t, promotedContent: a, screenName: l, size: i, uri: d ? c : void 0, withLink: !0 })), this._renderDecoration());
                 }
                 _renderHeader(e) {
                     const { isAllowedToViewOptions: t, withUserAvatar: r } = this.props,
@@ -452,9 +452,9 @@
                     return e || this._renderFollowButton();
                 }
                 _renderUserName() {
-                    const { isAllowedToViewOptions: e, isUserBlueVerified: t, isUserProtected: r, isUserVerified: s, onScreenNameClick: a, promotedContent: o, userHighlightedLabel: i, userName: c, userScreenName: l, userTranslatorType: u, userVerifiedType: d, userWithFollowsYou: m, withNameWrap: h } = this.props,
-                        { badges: g, followIndicator: f, fullName: w } = e;
-                    return n.createElement(p.Z, { affiliateBadgeInfo: i, badgeContext: "account", isBlueVerified: g ? t : void 0, isProtected: g ? r : void 0, isVerified: g ? s : void 0, name: w ? c : l, nameSize: "headline2", onLinkClick: a, promotedContent: o, screenName: l, translatorType: g ? u : void 0, verifiedType: g ? d : void 0, withFollowsYou: f && m, withLink: !0, withNameWrap: h, withStackedLayout: !0 });
+                    const { isAllowedToViewOptions: e, isUserBlueVerified: t, isUserProtected: r, isUserVerified: s, onScreenNameClick: a, profileLink: o, promotedContent: i, userHighlightedLabel: c, userName: l, userScreenName: u, userTranslatorType: d, userVerifiedType: m, userWithFollowsYou: h, withNameWrap: g } = this.props,
+                        { badges: f, followIndicator: w, fullName: C } = e;
+                    return n.createElement(p.Z, { affiliateBadgeInfo: c, badgeContext: "account", isBlueVerified: f ? t : void 0, isProtected: f ? r : void 0, isVerified: f ? s : void 0, link: o, name: C ? l : u, nameSize: "headline2", onLinkClick: a, promotedContent: i, screenName: u, translatorType: f ? d : void 0, verifiedType: f ? m : void 0, withFollowsYou: w && h, withLink: !0, withNameWrap: g, withStackedLayout: !0 });
                 }
                 _renderHighlightedUserLabel() {
                     const { userHighlightedLabel: e } = this.props;
@@ -513,4 +513,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.SideNav~loader.SideNavRedesign~bundle.JobSearch.b6e5476a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.SideNav~loader.SideNavRedesign~bundle.JobSearch.525352aa.js.map

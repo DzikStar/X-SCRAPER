@@ -1276,7 +1276,7 @@
                 i("fc7db594", "Buod ng Profile"),
                 i("c3f04d9c", "Nag-iisip"),
                 i("e98cc293", function (a) {
-                    return "Searching for " + a.query;
+                    return "Hinahanap ang " + a.query;
                 }),
                 i("b0d1e205", function (a) {
                     return 'Naghahanap para sa **"' + a.query + '"**';
@@ -13218,4 +13218,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fil.6c7a62fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fil.50df46ca.js.map

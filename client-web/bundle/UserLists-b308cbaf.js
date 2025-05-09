@@ -590,8 +590,8 @@
                 B = i(497294),
                 I = i(601576),
                 L = i(510588);
-            const w = (e, { listId: t }) => {
-                    const i = Z.Z.selectLocalMediaId(e, t || "-1"),
+            const w = (e, t) => {
+                    const i = Z.Z.selectLocalMediaId(e, t.listId || "-1"),
                         [n] = (0, k.Z)(i) ? B.m3(e, i) : [];
                     return n;
                 },
@@ -941,4 +941,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserLists-b308cbaf.3fa3211a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserLists-b308cbaf.01c2fcda.js.map

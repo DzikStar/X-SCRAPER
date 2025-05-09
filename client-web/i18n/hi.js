@@ -1280,7 +1280,7 @@
                 n("fc7db594", "प्रोफ़ाइल सारांश"),
                 n("c3f04d9c", "विचार कर रहे हैं"),
                 n("e98cc293", function (e) {
-                    return "Searching for " + e.query;
+                    return e.query + " के लिए खोजें";
                 }),
                 n("b0d1e205", function (e) {
                     return '**"' + e.query + '"** के लिए खोज रहे हैं';
@@ -13213,4 +13213,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hi.eb67167a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hi.136f289a.js.map

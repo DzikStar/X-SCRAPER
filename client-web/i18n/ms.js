@@ -1275,7 +1275,7 @@
                 i("fc7db594", "Ringkasan Profil"),
                 i("c3f04d9c", "Berfikir"),
                 i("e98cc293", function (a) {
-                    return "Searching for " + a.query;
+                    return "Mencari " + a.query;
                 }),
                 i("b0d1e205", function (a) {
                     return 'Mencari tentang **"' + a.query + '"**';
@@ -13204,4 +13204,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.6d28cb9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.526b755a.js.map

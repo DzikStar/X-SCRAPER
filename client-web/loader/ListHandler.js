@@ -336,13 +336,13 @@
                 y = n(38562),
                 D = n(919022),
                 w = n(510588);
-            const M = (e, { listId: a }) => (a ? h.Z.select(e, a) : void 0),
+            const M = (e, a) => (a.listId ? h.Z.select(e, a.listId) : void 0),
                 k = (e, a) => {
                     const n = M(e, a),
                         l = n?.user;
                     return l ? D.ZP.select(e, l) : void 0;
                 },
-                _ = (e, { listId: a }) => w.tt(e, a);
+                _ = (e, a) => w.tt(e, a.listId);
             const v = (0, p.Z)().propsFromState(() => ({ list: M, author: k, dataSaverMode: y.IX, pinnedTimelinesCount: f.Hm, media: _ }))(function (e) {
                     const { list: a, onClick: n } = e;
                     return a ? s.createElement(g.Z, { dataSaverMode: e.dataSaverMode, decoration: e.decoration, facepileUrls: a.facepile_urls, followersContext: a.followers_context, isFollowing: Boolean(a.following), isListPinned: a.pinning, isSelected: e.isMember, listId: a.id_str, listVisibility: a.mode, media: e.media, memberCount: a.member_count, membersContext: a.members_context, mode: e.mode, name: a.name, onClick: n, pinnedTimelinesCount: e.pinnedTimelinesCount, role: e.role, user: e.author, withBottomBorder: e.withBottomBorder, withSubscribe: e.withSubscribe }) : null;
@@ -795,4 +795,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.ListHandler.5ef5855a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.ListHandler.e7d2b80a.js.map

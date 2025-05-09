@@ -21,7 +21,7 @@
                 y = n.n(_),
                 b = n(668214),
                 z = n(386619);
-            const C = (e, { entry: t }) => z.Z.select(e, t.content.rest_id),
+            const C = (e, t) => z.Z.select(e, t.entry.content.rest_id),
                 v = (0, b.Z)().propsFromState(() => ({ recruitingOrganization: C })),
                 h = ({ recruitingOrganization: e }) => {
                     const t = e?.profile?.screen_name,
@@ -58,4 +58,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.recruitingOrganizationLoader.68e6faea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.recruitingOrganizationLoader.e13059ca.js.map

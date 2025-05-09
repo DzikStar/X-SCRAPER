@@ -1285,7 +1285,7 @@
                 n("fc7db594", "סיכום הפרופיל"),
                 n("c3f04d9c", "חושב"),
                 n("e98cc293", function (e) {
-                    return "Searching for " + e.query;
+                    return "בחיפוש אחר " + e.query;
                 }),
                 n("b0d1e205", function (e) {
                     return "חיפוש אחר **'" + e.query + "'**";
@@ -13219,4 +13219,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/he.55112aaa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/he.89c221da.js.map

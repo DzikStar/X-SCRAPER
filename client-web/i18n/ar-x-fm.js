@@ -1289,7 +1289,7 @@
                 n("fc7db594", "ملخص الملف الشخصيّ"),
                 n("c3f04d9c", "التفكير"),
                 n("e98cc293", function (e) {
-                    return "Searching for " + e.query;
+                    return "البحث عن " + e.query;
                 }),
                 n("b0d1e205", function (e) {
                     return 'جارٍ البحث عن **"' + e.query + '"**';
@@ -13220,4 +13220,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ar-x-fm.bfc3cfea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ar-x-fm.de021fba.js.map

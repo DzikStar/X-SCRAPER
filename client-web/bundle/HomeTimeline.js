@@ -97,7 +97,7 @@
                                 return null;
                         }
                     }, [t, e, a]);
-                    return r.createElement(o.Z, { testID: `super-upsell-${t.__typename}` }, n);
+                    return r.createElement(o.Z, { testID: `super-upsell-${t.__typename ?? "default"}` }, n);
                 },
                 M = ({ attributionParams: e, trackClick: a, trackImpression: t, upsellContent: o }) => {
                     const l = (0, i.Z)(),
@@ -1065,4 +1065,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.HomeTimeline.e8b3b11a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.HomeTimeline.ce4c4e2a.js.map

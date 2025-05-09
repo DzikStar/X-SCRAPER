@@ -1276,7 +1276,7 @@
                 t("fc7db594", "Kurzprofil"),
                 t("c3f04d9c", "Bitte warten"),
                 t("e98cc293", function (e) {
-                    return "Searching for " + e.query;
+                    return "Nach " + e.query + " suchen";
                 }),
                 t("b0d1e205", function (e) {
                     return "Suche nach **„" + e.query + "“**";
@@ -13219,4 +13219,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/de.e87f01aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/de.feb93baa.js.map

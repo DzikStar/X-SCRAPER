@@ -51,7 +51,7 @@
                 z = n(715601),
                 R = n(725516),
                 O = n(26232);
-            const H = (e, { communityId: t }) => (t ? y.ZP.select(e, t) : void 0),
+            const H = (e, t) => (t.communityId ? y.ZP.select(e, t.communityId) : void 0),
                 U = (e) => x.SJ(e, ""),
                 N = (0, h.Z)().propsFromState(() => ({ community: H, broadcastCommunityTweet: U })),
                 j = d().d58baa7f,
@@ -598,4 +598,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Compose~bundle.RichTextCompose-07b0deba.738dd42a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Compose~bundle.RichTextCompose-07b0deba.715090ea.js.map

@@ -1276,13 +1276,13 @@
                 s("fc7db594", "[Pröøfïíléê Sümmåäry]"),
                 s("c3f04d9c", "[Thïínkïíng]"),
                 s("e98cc293", function (t) {
-                    return "Searching for " + t.query;
+                    return "[Séêåärchïíng föør " + t.query + "]";
                 }),
                 s("b0d1e205", function (t) {
                     return '[Séêåärchïíng föør **"' + t.query + '"**]';
                 }),
                 s("i2e0f4d7", function (t) {
-                    return "Browsing " + t.url + " for " + t.query;
+                    return "[Bröøwsïíng " + t.url + " föør " + t.query + "]";
                 }),
                 s("acb9b845", function (t) {
                     return "[Bröøwsïíng " + t.url + ' föør **"' + t.query + '"**]';
@@ -1291,7 +1291,7 @@
                     return "[Séêåärchïíng pöøsts by @" + t.username + "]";
                 }),
                 s("f7d9cfb9", function (t) {
-                    return "Searching posts by @" + t.username + " for " + t.query;
+                    return "[Séêåärchïíng pöøsts by @" + t.username + " föør " + t.query + "]";
                 }),
                 s("bec7eb11", function (t) {
                     return "[Séêåärchïíng pöøsts by @" + t.username + ' föør **"' + t.query + '"**]';
@@ -13206,4 +13206,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-xx.ff79521a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-xx.3b84e70a.js.map

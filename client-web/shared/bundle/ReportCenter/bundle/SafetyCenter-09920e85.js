@@ -18,8 +18,8 @@
                 w = r(767385),
                 h = r(782261);
             const C = i().g5662c95;
-            function f({ conversationTreeMetadata: e, link: t, onBlur: r, onFocus: s, onPress: i, promotedContent: f, quotedTweetTombstoneInfo: E, renderActionMenu: T, renderActionsBar: b, renderCallToAction: v, renderEditCallout: U, renderEducation: S, renderHighlightedUserLabel: y, renderPromotedDetails: _, renderPromotedUserProfileCard: k, renderPromotionStatusBadge: A, renderReplyContext: P, renderRichContent: B, renderStats: L, renderText: Z, renderTimestamp: N, renderTombstone: F, renderTweetHeader: x, renderUserAvatar: I, renderUserFollowIndicator: D, renderUserName: M, socialContext: V, staticLinkConfig: q, testID: H, tweet: W, withBottomLine: R, withTopLine: O, withUnreadStyles: z }) {
-                const { LinkConfigProvider: $, a11yIdList: Y, a11yIds: K, props: j } = (0, p.a)({ conversationTreeMetadata: e, link: t, onBlur: r, onFocus: s, onPress: i, promotedContent: f, quotedTweetTombstoneInfo: E, renderActionMenu: T, renderActionsBar: b, renderCallToAction: v, renderEditCallout: U, renderEducation: S, renderHighlightedUserLabel: y, renderPromotedDetails: _, renderPromotedUserProfileCard: k, renderPromotionStatusBadge: A, renderReplyContext: P, renderRichContent: B, renderTweetHeader: x, renderStats: L, renderText: Z, renderTimestamp: N, renderTombstone: F, renderUserAvatar: I, renderUserFollowIndicator: D, renderUserName: M, socialContext: V, staticLinkConfig: q, testID: H, tweet: W, withBottomLine: R, withTopLine: O, withUnreadStyles: z }),
+            function f({ conversationTreeMetadata: e, link: t, onBlur: r, onFocus: s, onPress: i, promotedContent: f, quotedTweetTombstoneInfo: E, renderActionMenu: T, renderActionsBar: b, renderCallToAction: v, renderEditCallout: U, renderEducation: k, renderHighlightedUserLabel: S, renderPromotedDetails: y, renderPromotedUserProfileCard: _, renderPromotionStatusBadge: A, renderReplyContext: P, renderRichContent: B, renderStats: L, renderText: Z, renderTimestamp: N, renderTombstone: F, renderTweetHeader: x, renderUserAvatar: I, renderUserFollowIndicator: D, renderUserName: M, socialContext: V, staticLinkConfig: q, testID: H, tweet: W, withBottomLine: R, withTopLine: O, withUnreadStyles: z }) {
+                const { LinkConfigProvider: $, a11yIdList: Y, a11yIds: K, props: j } = (0, p.a)({ conversationTreeMetadata: e, link: t, onBlur: r, onFocus: s, onPress: i, promotedContent: f, quotedTweetTombstoneInfo: E, renderActionMenu: T, renderActionsBar: b, renderCallToAction: v, renderEditCallout: U, renderEducation: k, renderHighlightedUserLabel: S, renderPromotedDetails: y, renderPromotedUserProfileCard: _, renderPromotionStatusBadge: A, renderReplyContext: P, renderRichContent: B, renderTweetHeader: x, renderStats: L, renderText: Z, renderTimestamp: N, renderTombstone: F, renderUserAvatar: I, renderUserFollowIndicator: D, renderUserName: M, socialContext: V, staticLinkConfig: q, testID: H, tweet: W, withBottomLine: R, withTopLine: O, withUnreadStyles: z }),
                     G = h.Z.getOriginalTweet(j.tweet),
                     { permalink: J } = G,
                     Q = G.tombstoneInfo || j.tweet.tombstoneInfo,
@@ -127,9 +127,9 @@
                     return this.props.grokButton ? o.createElement(n.Z, { style: C.grokButton }, this.props.grokButton) : null;
                 }
                 _renderUserAvatar() {
-                    const { isAllowedToViewOptions: e, onAvatarClick: t, promotedContent: r, userAvatarSize: s, userAvatarUri: a, userScreenName: l } = this.props,
-                        { avatar: d } = e;
-                    return o.createElement(n.Z, { style: C.row }, o.createElement(i.ZP.Provider, { value: { userAvatarLabel: w } }, o.createElement(c.default, { onClick: t, promotedContent: r, screenName: l, size: s, uri: d ? a : void 0, withLink: !0 })), this._renderDecoration());
+                    const { isAllowedToViewOptions: e, onAvatarClick: t, profileLink: r, promotedContent: s, userAvatarSize: a, userAvatarUri: l, userScreenName: d } = this.props,
+                        { avatar: u } = e;
+                    return o.createElement(n.Z, { style: C.row }, o.createElement(i.ZP.Provider, { value: { userAvatarLabel: w } }, o.createElement(c.default, { link: r, onClick: t, promotedContent: s, screenName: d, size: a, uri: u ? l : void 0, withLink: !0 })), this._renderDecoration());
                 }
                 _renderHeader(e) {
                     const { isAllowedToViewOptions: t, withUserAvatar: r } = this.props,
@@ -141,9 +141,9 @@
                     return e || this._renderFollowButton();
                 }
                 _renderUserName() {
-                    const { isAllowedToViewOptions: e, isUserBlueVerified: t, isUserProtected: r, isUserVerified: n, onScreenNameClick: s, promotedContent: i, userHighlightedLabel: a, userName: l, userScreenName: d, userTranslatorType: c, userVerifiedType: u, userWithFollowsYou: p, withNameWrap: w } = this.props,
-                        { badges: h, followIndicator: C, fullName: f } = e;
-                    return o.createElement(m.Z, { affiliateBadgeInfo: a, badgeContext: "account", isBlueVerified: h ? t : void 0, isProtected: h ? r : void 0, isVerified: h ? n : void 0, name: f ? l : d, nameSize: "headline2", onLinkClick: s, promotedContent: i, screenName: d, translatorType: h ? c : void 0, verifiedType: h ? u : void 0, withFollowsYou: C && p, withLink: !0, withNameWrap: w, withStackedLayout: !0 });
+                    const { isAllowedToViewOptions: e, isUserBlueVerified: t, isUserProtected: r, isUserVerified: n, onScreenNameClick: s, profileLink: i, promotedContent: a, userHighlightedLabel: l, userName: d, userScreenName: c, userTranslatorType: u, userVerifiedType: p, userWithFollowsYou: w, withNameWrap: h } = this.props,
+                        { badges: C, followIndicator: f, fullName: g } = e;
+                    return o.createElement(m.Z, { affiliateBadgeInfo: l, badgeContext: "account", isBlueVerified: C ? t : void 0, isProtected: C ? r : void 0, isVerified: C ? n : void 0, link: i, name: g ? d : c, nameSize: "headline2", onLinkClick: s, promotedContent: a, screenName: c, translatorType: C ? u : void 0, verifiedType: C ? p : void 0, withFollowsYou: f && w, withLink: !0, withNameWrap: h, withStackedLayout: !0 });
                 }
                 _renderHighlightedUserLabel() {
                     const { userHighlightedLabel: e } = this.props;
@@ -202,4 +202,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReportCenter~bundle.SafetyCenter-09920e85.69b0bcca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReportCenter~bundle.SafetyCenter-09920e85.516db66a.js.map

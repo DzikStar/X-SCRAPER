@@ -1280,7 +1280,7 @@
                 o("fc7db594", "Riepilogo del profilo"),
                 o("c3f04d9c", "Fammici pensare..."),
                 o("e98cc293", function (i) {
-                    return "Searching for " + i.query;
+                    return "Ricerca di " + i.query + " in corso";
                 }),
                 o("b0d1e205", function (i) {
                     return 'Ricerca di **"' + i.query + '"** in corso';
@@ -1722,7 +1722,7 @@
                 o("d78131b9", function (i) {
                     return "Aggiungi @" + i.screenName + " alle liste o rimuovi";
                 }),
-                o("b3b642fc", "Why this post?"),
+                o("b3b642fc", "Perché questo post?"),
                 o("fb4ee11c", "Perché questo annuncio?"),
                 o("ad50e7d9", function (i) {
                     return "Visualizza statistiche " + i.entity;
@@ -13210,4 +13210,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/it.a6eda1ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/it.ff1ddaaa.js.map

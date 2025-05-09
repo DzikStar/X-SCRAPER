@@ -728,7 +728,7 @@
                     const { userIds: o } = t;
                     return o.reduce((t, o) => {
                         const n = w.ZP.selectFetchStatus(e, o);
-                        return (t[o] = n === f.ZP.NONE ? f.ZP.LOADING : n), t;
+                        return n && (t[o] = n === f.ZP.NONE ? f.ZP.LOADING : n), t;
                     }, {});
                 },
                 T = (0, D.Z)()
@@ -1017,4 +1017,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Conversation-e019dbda.02b690da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Conversation-e019dbda.21c0145a.js.map

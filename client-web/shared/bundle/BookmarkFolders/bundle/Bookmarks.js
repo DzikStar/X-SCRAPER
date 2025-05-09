@@ -245,7 +245,7 @@
                 s = o(725405),
                 l = o(668214),
                 c = o(482176);
-            const d = (e, { bookmarkFolderId: t }) => (t ? c.ZP.select(e, t) : void 0),
+            const d = (e, t) => (t.bookmarkFolderId ? c.ZP.select(e, t.bookmarkFolderId) : void 0),
                 _ = (0, l.Z)().propsFromState(() => ({ bookmarkFolder: d })),
                 m = i.default.create((e) => ({ thumbnail: { borderRadius: e.borderRadii.infinite, height: "100%", width: "100%" } })),
                 u = _(({ bookmarkFolder: e, onPress: t }) => {
@@ -384,8 +384,8 @@
                 l = o(965245),
                 c = o(71620),
                 d = o(668214);
-            const _ = (e, { module: t }) => t.selectFetchStatus(e),
-                m = (e, { module: t }) => t.selectItems(e),
+            const _ = (e, t) => t.module.selectFetchStatus(e),
+                m = (e, t) => t.module.selectItems(e),
                 u = (0, d.Z)()
                     .propsFromState((e) => ({ fetchStatus: _, items: m }))
                     .propsFromActions(({ module: e }) => ({ createLocalApiErrorHandler: (0, c.zr)("SLICES_TIMELINE"), fetch: e.fetch, fetchIfNeeded: e.fetchIfNeeded, fetchBottom: e.fetchBottom })),
@@ -746,4 +746,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.BookmarkFolders~bundle.Bookmarks.efd9f5ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.BookmarkFolders~bundle.Bookmarks.e78ea07a.js.map

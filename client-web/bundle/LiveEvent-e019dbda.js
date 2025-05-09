@@ -833,8 +833,8 @@
                 o = r(965245),
                 c = r(71620),
                 d = r(668214);
-            const m = (e, { module: t }) => t.selectFetchStatus(e),
-                u = (e, { module: t }) => t.selectItems(e),
+            const m = (e, t) => t.module.selectFetchStatus(e),
+                u = (e, t) => t.module.selectItems(e),
                 p = (0, d.Z)()
                     .propsFromState((e) => ({ fetchStatus: m, items: u }))
                     .propsFromActions(({ module: e }) => ({ createLocalApiErrorHandler: (0, c.zr)("SLICES_TIMELINE"), fetch: e.fetch, fetchIfNeeded: e.fetchIfNeeded, fetchBottom: e.fetchBottom })),
@@ -1021,4 +1021,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.LiveEvent-e019dbda.206b1f6a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.LiveEvent-e019dbda.2f0292ca.js.map

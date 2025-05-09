@@ -45,8 +45,8 @@
                     }
                     return r;
                 },
-                m = (e, r) => ({ pathname: l(r.product_category), state: { referring_page: e.referrer, tier: u(r.product_category), plan: p(r.charge_interval) } });
-            var d = t(807896),
+                d = (e, r) => ({ pathname: l(r.product_category), state: { referring_page: e.referrer, tier: u(r.product_category), plan: p(r.charge_interval) } });
+            var m = t(807896),
                 b = t(154003);
             const k = ({ buttonProps: e, destinationLink: r, onDestinationClick: t, renderProperties: { action_label: a } }) => s.createElement(b.ZP, { link: r, onClick: t, type: e?.type }, a);
             var _ = t(992942),
@@ -63,14 +63,14 @@
                         const a = { destinationLink: e, onDestinationClick: r };
                         switch (t.__typename) {
                             case "UpsellButtonRenderProperties":
-                                return s.createElement(k, (0, d.Z)({}, a, { renderProperties: t }));
+                                return s.createElement(k, (0, m.Z)({}, a, { renderProperties: t }));
                             case "UpsellCardRenderProperties":
-                                return s.createElement(P, (0, d.Z)({}, a, { renderProperties: t }));
+                                return s.createElement(P, (0, m.Z)({}, a, { renderProperties: t }));
                             default:
                                 return null;
                         }
                     }, [t, e, r]);
-                    return s.createElement(a.Z, { testID: `super-upsell-${t.__typename}` }, i);
+                    return s.createElement(a.Z, { testID: `super-upsell-${t.__typename ?? "default"}` }, i);
                 },
                 E = ({ attributionParams: e, trackClick: r, trackImpression: t, upsellContent: a }) => {
                     const o = (0, c.Z)(),
@@ -80,11 +80,11 @@
                     s.useEffect(() => {
                         u && (p ? t() : o.scribeAction("impression"));
                     }, [u, o, t, p]);
-                    const d = m(e, a.destination),
+                    const m = d(e, a.destination),
                         b = s.useCallback(() => {
                             p ? r() : o.scribeAction("click");
                         }, [o, r, p]);
-                    return s.createElement("div", { ref: l }, s.createElement(y, { destinationLink: d, onDestinationClick: b, renderProperties: a.render_properties }));
+                    return s.createElement("div", { ref: l }, s.createElement(y, { destinationLink: m, onDestinationClick: b, renderProperties: a.render_properties }));
                 },
                 Z = (e) => s.createElement(o.nO, { data: { referer: e.attributionParams.referrer }, namespace: { component: "unified-upsell", element: e.upsellContent.key } }, s.createElement(E, e));
             var w = t(722517);
@@ -109,9 +109,9 @@
                     const r = (0, c.Z)(),
                         t = (0, o.hC)("subscriptions_upsells_home_sidebar_migration_enabled"),
                         a = "Business" === e?.verified_type ? "SidebarVerifiedOrgs" : r ? "SidebarPremiumPlus" : "SidebarDefault";
-                    return "SidebarDefault" === a && t ? s.createElement(n.Z, { surfaceKey: "HomeSidebar", wrapperStyles: m.upsellWrapper }) : s.createElement(i.Z, { variant: a });
+                    return "SidebarDefault" === a && t ? s.createElement(n.Z, { surfaceKey: "HomeSidebar", wrapperStyles: d.upsellWrapper }) : s.createElement(i.Z, { variant: a });
                 }),
-                m = a.default.create((e) => ({ upsellWrapper: { marginBottom: e.spaces.space16 } }));
+                d = a.default.create((e) => ({ upsellWrapper: { marginBottom: e.spaces.space16 } }));
         },
         584770: (e, r, t) => {
             t.d(r, { Z: () => n });
@@ -125,4 +125,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.GetVerifiedSidebar.92c83f1a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.GetVerifiedSidebar.632a86ea.js.map

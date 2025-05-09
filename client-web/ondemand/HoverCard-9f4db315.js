@@ -591,16 +591,16 @@
                 constructor(...e) {
                     super(...e),
                         (this._renderUserProfileCard = () => {
-                            const { displaySensitiveMedia: e, isNotFound: t, isSuspended: n, isWithheld: _, knownFollowers: s, onAvatarClick: a, onScreenNameClick: l, promotedContent: d, screenName: p, user: c, userHighlightedLabel: u } = this.props;
-                            if (n) return i.createElement(r.Z.Suspended, { onAvatarClick: a, onScreenNameClick: l, userScreenName: p });
-                            if (!c) return null;
-                            const { viewerUserId: m } = this.context,
-                                w = !!m && m === c.id_str,
-                                h = (0, o.n5)({ isOwnProfile: w, isSoftBlockEnabled: this.context.featureSwitches.isTrue("xprofile_blocked_by_view_enabled"), user: c }),
-                                f = this.context.featureSwitches.isTrue("creator_subscriptions_subscription_count_enabled"),
-                                g = (0, o.ZP)({ displaySensitiveMedia: e, isNotFound: t, isSuspended: n, isWithheld: _, viewerUserId: m, user: c }),
-                                v = { ...g, subscriptionsCount: g.subscriptionsCount && f, label: g.label };
-                            return i.createElement(b.Z, null, (e) => i.createElement(r.Z, { followButton: this._renderFollowUserButton(), grokButton: this._renderGrokButton(), isAllowedToViewOptions: v, isLoggedIn: !!m, isUserBlueVerified: c.is_blue_verified, isUserProtected: c.protected, isUserStatsWithLink: h, isUserVerified: c.verified, knownFollowers: s, onAvatarClick: a, onScreenNameClick: l, onUserStatsPress: e(), promotedContent: d, subscriptionsCount: c.creator_subscriptions_count, userAvatarUri: c.profile_image_url_https, userDescription: c.description, userEntities: c.entities, userFollowersCount: c.followers_count, userFriendsCount: c.friends_count, userHighlightedLabel: u, userId: c.id_str, userName: c.name, userScreenName: p, userTranslatorType: c.translator_type, userVerifiedType: c.verified_type, userWithFollowsYou: c.followed_by, userWithheldDescription: c.withheld_description, userWithheldEntities: c.withheld_entities }));
+                            const { displaySensitiveMedia: e, isNotFound: t, isSuspended: n, isWithheld: _, knownFollowers: s, onAvatarClick: a, onScreenNameClick: l, profileLink: d, promotedContent: p, screenName: c, user: u, userHighlightedLabel: m } = this.props;
+                            if (n) return i.createElement(r.Z.Suspended, { onAvatarClick: a, onScreenNameClick: l, userScreenName: c });
+                            if (!u) return null;
+                            const { viewerUserId: w } = this.context,
+                                h = !!w && w === u.id_str,
+                                f = (0, o.n5)({ isOwnProfile: h, isSoftBlockEnabled: this.context.featureSwitches.isTrue("xprofile_blocked_by_view_enabled"), user: u }),
+                                g = this.context.featureSwitches.isTrue("creator_subscriptions_subscription_count_enabled"),
+                                v = (0, o.ZP)({ displaySensitiveMedia: e, isNotFound: t, isSuspended: n, isWithheld: _, viewerUserId: w, user: u }),
+                                y = { ...v, subscriptionsCount: v.subscriptionsCount && g, label: v.label };
+                            return i.createElement(b.Z, null, (e) => i.createElement(r.Z, { followButton: this._renderFollowUserButton(), grokButton: this._renderGrokButton(), isAllowedToViewOptions: y, isLoggedIn: !!w, isUserBlueVerified: u.is_blue_verified, isUserProtected: u.protected, isUserStatsWithLink: f, isUserVerified: u.verified, knownFollowers: s, onAvatarClick: a, onScreenNameClick: l, onUserStatsPress: e(), profileLink: d, promotedContent: p, subscriptionsCount: u.creator_subscriptions_count, userAvatarUri: u.profile_image_url_https, userDescription: u.description, userEntities: u.entities, userFollowersCount: u.followers_count, userFriendsCount: u.friends_count, userHighlightedLabel: m, userId: u.id_str, userName: u.name, userScreenName: c, userTranslatorType: u.translator_type, userVerifiedType: u.verified_type, userWithFollowsYou: u.followed_by, userWithheldDescription: u.withheld_description, userWithheldEntities: u.withheld_entities }));
                         }),
                         (this._renderFollowUserButton = () => {
                             const { promotedContent: e, showRelationshipChangeConfirmation: t, user: n } = this.props,
@@ -713,4 +713,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.HoverCard-9f4db315.141d566a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.HoverCard-9f4db315.0538bdba.js.map

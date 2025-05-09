@@ -11,8 +11,8 @@
                 l = e(668214),
                 c = e(491963),
                 s = e(709318);
-            const u = (n, { communityId: t }) => (t ? c.ZP.select(n, t) : void 0),
-                d = (n, { communityId: t }) => !!t && (0, s.H4)(n, t),
+            const u = (n, t) => (t.communityId ? c.ZP.select(n, t.communityId) : void 0),
+                d = (n, t) => !!t.communityId && (0, s.H4)(n, t.communityId),
                 m = ({ community: n, communityId: t, createLocalApiErrorHandler: e, isPinned: a, onActionButtonJoinClick: l, onPress: c, pinTimeline: s, shouldDisplayPin: u, style: d, thumbnailSize: m, unpinTimeline: p, withActionButton: g }) => {
                     const h = i.useMemo(() => n && { isPinned: a, handlePinOrUnpin: () => (a ? p({ id: t, name: n.name, type: r.FO.COMMUNITY }).catch(e) : s({ id: t, name: n.name, type: r.FO.COMMUNITY }).catch(e)) }, [n, t, e, a, s, p]),
                         y = u ? h : void 0;
@@ -144,4 +144,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.CommunityHandler.46444e3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.CommunityHandler.fa6bbd3a.js.map

@@ -232,7 +232,8 @@
                 var c;
             };
             function me(e) {
-                return (e ? parseInt(e, 10) : null) ? M(new Date()) : "";
+                const t = e ? parseInt(e, 10) : null;
+                return t ? M(new Date(t)) : "";
             }
             function ye({ status: e, transactionType: t }) {
                 return t === b.x.Transfer && e === P.g.PendingRecipientAcceptance;
@@ -433,4 +434,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-2a1eb2b7.3c13a15a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Payments-2a1eb2b7.fbf2892a.js.map

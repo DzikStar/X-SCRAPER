@@ -1285,7 +1285,7 @@
                 n("fc7db594", "Сводка профиля"),
                 n("c3f04d9c", "В раздумьях"),
                 n("e98cc293", function (e) {
-                    return "Searching for " + e.query;
+                    return "Поиск " + e.query;
                 }),
                 n("b0d1e205", function (e) {
                     return "Выполняется поиск **«" + e.query + "»**";
@@ -13219,4 +13219,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ru.a250b37a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ru.206b0c1a.js.map

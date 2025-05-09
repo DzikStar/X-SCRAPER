@@ -1283,7 +1283,7 @@
                 n("fc7db594", "Резиме профила"),
                 n("c3f04d9c", "Размишљање"),
                 n("e98cc293", function (e) {
-                    return "Searching for " + e.query;
+                    return "Претрага за " + e.query;
                 }),
                 n("b0d1e205", function (e) {
                     return "Претрага за **„" + e.query + "“**";
@@ -13220,4 +13220,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sr.2aa4c85a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sr.53a2114a.js.map

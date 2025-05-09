@@ -1276,7 +1276,7 @@
                 t("fc7db594", "Profilöversikt"),
                 t("c3f04d9c", "Tänker"),
                 t("e98cc293", function (e) {
-                    return "Searching for " + e.query;
+                    return "Söker " + e.query;
                 }),
                 t("b0d1e205", function (e) {
                     return "Söker efter **" + e.query + "**";
@@ -13206,4 +13206,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sv.c8f6275a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sv.35494aca.js.map

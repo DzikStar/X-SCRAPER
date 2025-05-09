@@ -1275,7 +1275,7 @@
                 n("fc7db594", "Резюме на профила"),
                 n("c3f04d9c", "Мисли"),
                 n("e98cc293", function (e) {
-                    return "Searching for " + e.query;
+                    return "Търсене за " + e.query;
                 }),
                 n("b0d1e205", function (e) {
                     return "Търсене за **„" + e.query + "“**";
@@ -13204,4 +13204,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/bg.fc24c2fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/bg.6205da4a.js.map

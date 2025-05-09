@@ -1275,7 +1275,7 @@
                 f("fc7db594", "プロフィールの要約"),
                 f("c3f04d9c", "考え中"),
                 f("e98cc293", function (e) {
-                    return "Searching for " + e.query;
+                    return e.query + "を検索中";
                 }),
                 f("b0d1e205", function (e) {
                     return "**「" + e.query + "」**を検索中";
@@ -13211,4 +13211,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ja.81ff52ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ja.b7117f9a.js.map

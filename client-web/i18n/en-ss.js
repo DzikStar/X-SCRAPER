@@ -1276,13 +1276,13 @@
                 a("fc7db594", "[[291861]] Profile Summary"),
                 a("c3f04d9c", "[[285092]] Thinking"),
                 a("e98cc293", function (e) {
-                    return "Searching for " + e.query;
+                    return "[[294860]] Searching for " + e.query;
                 }),
                 a("b0d1e205", function (e) {
                     return '[[293056]] Searching for **"' + e.query + '"**';
                 }),
                 a("i2e0f4d7", function (e) {
-                    return "Browsing " + e.url + " for " + e.query;
+                    return "[[294858]] Browsing " + e.url + " for " + e.query;
                 }),
                 a("acb9b845", function (e) {
                     return "[[293051]] Browsing " + e.url + ' for **"' + e.query + '"**';
@@ -1291,7 +1291,7 @@
                     return "[[293055]] Searching posts by @" + e.username;
                 }),
                 a("f7d9cfb9", function (e) {
-                    return "Searching posts by @" + e.username + " for " + e.query;
+                    return "[[294859]] Searching posts by @" + e.username + " for " + e.query;
                 }),
                 a("bec7eb11", function (e) {
                     return "[[293174]] Searching posts by @" + e.username + ' for **"' + e.query + '"**';
@@ -13206,4 +13206,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-ss.59d6b6fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-ss.6176856a.js.map

@@ -11,13 +11,13 @@
                 i = r(992942),
                 c = r(392237),
                 l = r(674132),
-                p = r.n(l),
-                m = r(152957);
+                m = r.n(l),
+                p = r(152957);
             const d = "scorecard",
-                u = p().eaaca5dc,
+                u = m().eaaca5dc,
                 g = ({ id: e = "", isLive: t, status: r }) => {
                     const o = "44" === e.split(":")[0],
-                        n = r === m.I.UPCOMING || r === m.I.DELAYED;
+                        n = r === p.I.UPCOMING || r === p.I.DELAYED;
                     return (o && t) || n;
                 };
             class b extends o.Component {
@@ -27,7 +27,7 @@
                             const { moments: t } = e;
                             if (t) {
                                 const { id: e, participant_scores: r, progress_strings: o, status: n, winner_id: s } = t,
-                                    a = n === m.I.LIVE;
+                                    a = n === p.I.LIVE;
                                 return { isLive: a, progressStrings: g({ id: e, status: n, isLive: a }) ? o.join(" ") : o[0], participantScores: r, winnerId: s };
                             }
                         })(e);
@@ -46,12 +46,12 @@
                 _renderTeamRow(e, t, r) {
                     const {
                             participant: { id: s, media: c, name: l },
-                            score: p,
-                            secondaryScore: m,
+                            score: m,
+                            secondaryScore: p,
                         } = e,
                         u = s === t,
                         g = r || u ? "bold" : "normal",
-                        b = m ? `${p.split(" ")[0]} ${m}` : p;
+                        b = p ? `${m.split(" ")[0]} ${p}` : m;
                     return o.createElement(n.Z, { key: s, style: h.teamRow, testID: d }, o.createElement(i.Z, { source: c.url, style: h.teamLogo }), o.createElement(a.ZP, { align: "left", numberOfLines: 1, style: h.teamName }, l), o.createElement(a.ZP, { style: h.teamScore, weight: g }, b), o.createElement(n.Z, { style: [h.winnerContainer, u && h.winner] }));
                 }
             }
@@ -81,7 +81,7 @@
                         a = (e) => e && e.doesIntersectWith(r),
                         c = (e) => (e ? Math.abs(r.getTop() - e.getTop()) : 1 / 0),
                         l = e.getList().filter(({ id: r }) => !o(r) && t.isRendered(r) && e.isRendered(r)),
-                        p =
+                        m =
                             l.length > 0
                                 ? i(l, (e, r) => {
                                       const o = t.getForItem(e.id),
@@ -89,7 +89,7 @@
                                       return n(a, o, i) || s(c, o, i);
                                   })
                                 : null;
-                    return p && p.id;
+                    return m && m.id;
                 },
                 l = {
                     initialScrollHeadroom: (e) => e.getRect().getHeight(),
@@ -143,7 +143,7 @@
                 l = n.memo(c);
         },
         971372: (e, t, r) => {
-            r.d(t, { Z: () => p });
+            r.d(t, { Z: () => m });
             var o = r(202784),
                 n = r(325686),
                 s = r(392237),
@@ -151,18 +151,18 @@
                 i = r(731708),
                 c = r(354149);
             const l = s.default.create((e) => ({ description: { marginTop: e.spaces.space8 } })),
-                p = ({ description: e, descriptionEntities: t, pivotText: r }) => {
+                m = ({ description: e, descriptionEntities: t, pivotText: r }) => {
                     const s = e ? e.trim() : void 0,
-                        p = ((e) => (e?.length ? { description: { urls: e } } : void 0))(t),
-                        m = s ? a.ZP.descriptionTextParts(s, p) : [];
+                        m = ((e) => (e?.length ? { description: { urls: e } } : void 0))(t),
+                        p = s ? a.ZP.descriptionTextParts(s, m) : [];
                     return o.createElement(
                         n.Z,
                         { style: l.description },
-                        m.length
+                        p.length
                             ? o.createElement(
                                   i.ZP,
                                   null,
-                                  m.map((e, t) => o.createElement(c.ZP, { key: `events_textpart_${t}`, linkify: !0, part: e })),
+                                  p.map((e, t) => o.createElement(c.ZP, { key: `events_textpart_${t}`, linkify: !0, part: e })),
                               )
                             : null,
                         r ? o.createElement(i.ZP, { color: "gray700" }, r) : null,
@@ -170,7 +170,7 @@
                 };
         },
         650554: (e, t, r) => {
-            r.d(t, { Z: () => v });
+            r.d(t, { Z: () => I });
             var o = r(202784),
                 n = r(325686),
                 s = r(457311),
@@ -178,12 +178,12 @@
                 i = r(674132),
                 c = r.n(i),
                 l = r(337069),
-                p = r(942893),
-                m = r(725516),
+                m = r(942893),
+                p = r(725516),
                 d = r(208560),
                 u = r(668214),
                 g = r(256727);
-            const b = (e, { commerceItemId: t }) => (t ? g.Z.select(e, t) : void 0),
+            const b = (e, t) => (t.commerceItemId ? g.Z.select(e, t.commerceItemId) : void 0),
                 h = (0, u.Z)().propsFromState(() => ({ commerceItem: b }))((e) => {
                     const { commerceItem: t, onClick: r } = e;
                     if ("CommerceProduct" === t?.__typename) {
@@ -203,7 +203,7 @@
                 y = c().c9b302f8,
                 S = () => o.createElement(s.Z, { header: E, message: y }),
                 C = a.default.create((e) => ({ root: { paddingHorizontal: e.spaces.space8, marginBottom: e.spaces.space56 }, cell: { marginHorizontal: "1%", marginTop: e.spaces.space12, marginBottom: e.spaces.space20, width: "48%" } })),
-                v = (0, m.Z)(
+                I = (0, p.Z)(
                     Z((e) => {
                         const { analytics: t, commerceItems: r, module: s } = e,
                             a = t.contextualScribeData;
@@ -211,16 +211,16 @@
                             t.scribe({ action: "impression", data: a });
                         }, [t, a]);
                         const i = (e, o) => {
-                                const n = p.Z.addCommerceDetailsToItems(a, r, e);
+                                const n = m.Z.addCommerceDetailsToItems(a, r, e);
                                 t.scribe({ element: "product", action: o, data: n });
                             },
                             c = (e) => () => {
                                 i(e, "impression");
                             },
-                            m = (e) => () => {
+                            p = (e) => () => {
                                 i(e, "click");
                             };
-                        return o.createElement(n.Z, { style: C.root }, o.createElement(f.Z, { module: s, noItemsRenderer: S, numColumns: 2, renderer: (e) => o.createElement(l.Z, { onImpression: c(e), style: C.cell }, o.createElement(h, { commerceItemId: e, onClick: m(e) })) }));
+                        return o.createElement(n.Z, { style: C.root }, o.createElement(f.Z, { module: s, noItemsRenderer: S, numColumns: 2, renderer: (e) => o.createElement(l.Z, { onImpression: c(e), style: C.cell }, o.createElement(h, { commerceItemId: e, onClick: p(e) })) }));
                     }),
                 );
         },
@@ -233,19 +233,19 @@
                 i = r(674132),
                 c = r.n(i),
                 l = r(632658);
-            const p = "image",
-                m = c().f93bb3ee;
+            const m = "image",
+                p = c().f93bb3ee;
             class d extends n.Component {
                 constructor(...e) {
                     super(...e),
                         (this._renderContent = ({ resourceSelectionHandler: e, useMinimumData: t }) => {
                             const { "aria-label": r, hideAcceptOverlay: i, shouldShowAltLabel: c, ...l } = this.props;
-                            return n.createElement(n.Fragment, null, n.createElement(s.Z, (0, o.Z)({}, l, { "aria-label": r, onVariantSelection: e, previewMode: t, testID: p })), c ? n.createElement(a.Z, { align: "left", altLabel: r }) : null);
+                            return n.createElement(n.Fragment, null, n.createElement(s.Z, (0, o.Z)({}, l, { "aria-label": r, onVariantSelection: e, previewMode: t, testID: m })), c ? n.createElement(a.Z, { align: "left", altLabel: r }) : null);
                         });
                 }
                 render() {
                     const { hideAcceptOverlay: e, image: t } = this.props;
-                    return n.createElement(l.Z, { acceptLabel: m, hideAcceptOverlay: e, renderContent: this._renderContent, resourceId: "string" == typeof t ? t : t.url });
+                    return n.createElement(l.Z, { acceptLabel: p, hideAcceptOverlay: e, renderContent: this._renderContent, resourceId: "string" == typeof t ? t : t.url });
                 }
             }
         },
@@ -258,11 +258,11 @@
                 i = r(537392),
                 c = r(392237),
                 l = r(365023),
-                p = r(392027),
-                m = r(774654),
+                m = r(392027),
+                p = r(774654),
                 d = r(725516),
                 u = r(443781);
-            const g = c.default.create((e) => ({ root: { marginHorizontal: "auto", width: "100%" }, rootMedium: { position: "absolute", bottom: 0, start: 0, end: 0 }, rootLarge: { maxWidth: 1e3 }, fabStaysAboveSafeArea: { top: `calc(${c.default.iPhoneOffsetBottom} - ${m.ZM.getAppBarHeight()} - ${e.spaces.space20})` }, fab: { bottom: e.spaces.space20, alignSelf: "flex-end", end: e.spaces.space20 }, fabLarge: { end: e.spaces.space20 }, fabMicro: { bottom: e.spaces.space16, end: e.spaces.space16 }, buttonMicro: { height: e.spaces.space40, width: e.spaces.space40 } })),
+            const g = c.default.create((e) => ({ root: { marginHorizontal: "auto", width: "100%" }, rootMedium: { position: "absolute", bottom: 0, start: 0, end: 0 }, rootLarge: { maxWidth: 1e3 }, fabStaysAboveSafeArea: { top: `calc(${c.default.iPhoneOffsetBottom} - ${p.ZM.getAppBarHeight()} - ${e.spaces.space20})` }, fab: { bottom: e.spaces.space20, alignSelf: "flex-end", end: e.spaces.space20 }, fabLarge: { end: e.spaces.space20 }, fabMicro: { bottom: e.spaces.space16, end: e.spaces.space16 }, buttonMicro: { height: e.spaces.space40, width: e.spaces.space40 } })),
                 b = (e) => {
                     const { "aria-label": t, label: r, onPress: b, scribeComponent: h, ...f } = e,
                         { loggedInUserId: w } = n.useContext(u.rC),
@@ -273,8 +273,8 @@
                             },
                             [Z, b, h],
                         ),
-                        y = m.ZM.useCollapsibleNavBars(),
-                        S = [...m.Ah({ elementPosition: "bottom" }), y && g.fabStaysAboveSafeArea];
+                        y = p.ZM.useCollapsibleNavBars(),
+                        S = [...p.Ah({ elementPosition: "bottom" }), y && g.fabStaysAboveSafeArea];
                     return w
                         ? n.createElement(
                               a.Z.FloatingAction,
@@ -282,13 +282,13 @@
                               n.createElement(i.ZP, null, ({ windowWidth: e }) => {
                                   const a = e > c.default.theme.breakpoints.large,
                                       i = e > c.default.theme.breakpoints.medium,
-                                      m = e < c.default.theme.breakpoints.micro,
+                                      p = e < c.default.theme.breakpoints.micro,
                                       d = [g.root, i && g.rootMedium, a && g.rootLarge],
-                                      u = [g.fab, a && g.fabLarge, m && g.fabMicro, S];
+                                      u = [g.fab, a && g.fabLarge, p && g.fabMicro, S];
                                   return n.createElement(
                                       s.Z,
                                       { "aria-label": t, pointerEvents: "box-none", role: "complementary", style: d },
-                                      n.createElement(l.Z, { id: "FloatingActionButtonBase" }, (e, i) => n.createElement(s.Z, (0, o.Z)({ ref: e() }, i({ style: u })), n.createElement(p.Z, (0, o.Z)({}, f, { "aria-label": t, label: a ? r : void 0, onPress: E, style: m && g.buttonMicro })))),
+                                      n.createElement(l.Z, { id: "FloatingActionButtonBase" }, (e, i) => n.createElement(s.Z, (0, o.Z)({ ref: e() }, i({ style: u })), n.createElement(m.Z, (0, o.Z)({}, f, { "aria-label": t, label: a ? r : void 0, onPress: E, style: p && g.buttonMicro })))),
                                   );
                               }),
                           )
@@ -320,7 +320,7 @@
             const c = i;
         },
         32677: (e, t, r) => {
-            r.d(t, { Z: () => m });
+            r.d(t, { Z: () => p });
             var o = r(202784),
                 n = r(674132),
                 s = r.n(n),
@@ -328,8 +328,8 @@
                 i = r(355883);
             const c = s().j0179e90,
                 l = s().ee69d769({ verb: "" }),
-                p = o.createElement(a.default, null),
-                m = ({ getLocationState: e, history: t }) => o.createElement(i.Z, { "aria-label": c, getLocationState: e, history: t, icon: p, label: l, scribeComponent: "floating_compose_button" });
+                m = o.createElement(a.default, null),
+                p = ({ getLocationState: e, history: t }) => o.createElement(i.Z, { "aria-label": c, getLocationState: e, history: t, icon: m, label: l, scribeComponent: "floating_compose_button" });
         },
         635510: (e, t, r) => {
             r.d(t, { Z: () => o });
@@ -337,4 +337,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.LiveEvent-b308cbaf.cda0753a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.LiveEvent-b308cbaf.6401a7ba.js.map

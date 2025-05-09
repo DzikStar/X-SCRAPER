@@ -426,9 +426,9 @@
                     return this.props.grokButton ? i.createElement(n.Z, { style: g.grokButton }, this.props.grokButton) : null;
                 }
                 _renderUserAvatar() {
-                    const { isAllowedToViewOptions: e, onAvatarClick: t, promotedContent: r, userAvatarSize: o, userAvatarUri: s, userScreenName: l } = this.props,
-                        { avatar: d } = e;
-                    return i.createElement(n.Z, { style: g.row }, i.createElement(a.ZP.Provider, { value: { userAvatarLabel: h } }, i.createElement(c.default, { onClick: t, promotedContent: r, screenName: l, size: o, uri: d ? s : void 0, withLink: !0 })), this._renderDecoration());
+                    const { isAllowedToViewOptions: e, onAvatarClick: t, profileLink: r, promotedContent: o, userAvatarSize: s, userAvatarUri: l, userScreenName: d } = this.props,
+                        { avatar: u } = e;
+                    return i.createElement(n.Z, { style: g.row }, i.createElement(a.ZP.Provider, { value: { userAvatarLabel: h } }, i.createElement(c.default, { link: r, onClick: t, promotedContent: o, screenName: d, size: s, uri: u ? l : void 0, withLink: !0 })), this._renderDecoration());
                 }
                 _renderHeader(e) {
                     const { isAllowedToViewOptions: t, withUserAvatar: r } = this.props,
@@ -440,9 +440,9 @@
                     return e || this._renderFollowButton();
                 }
                 _renderUserName() {
-                    const { isAllowedToViewOptions: e, isUserBlueVerified: t, isUserProtected: r, isUserVerified: n, onScreenNameClick: o, promotedContent: a, userHighlightedLabel: s, userName: l, userScreenName: d, userTranslatorType: c, userVerifiedType: u, userWithFollowsYou: p, withNameWrap: h } = this.props,
-                        { badges: w, followIndicator: g, fullName: C } = e;
-                    return i.createElement(m.Z, { affiliateBadgeInfo: s, badgeContext: "account", isBlueVerified: w ? t : void 0, isProtected: w ? r : void 0, isVerified: w ? n : void 0, name: C ? l : d, nameSize: "headline2", onLinkClick: o, promotedContent: a, screenName: d, translatorType: w ? c : void 0, verifiedType: w ? u : void 0, withFollowsYou: g && p, withLink: !0, withNameWrap: h, withStackedLayout: !0 });
+                    const { isAllowedToViewOptions: e, isUserBlueVerified: t, isUserProtected: r, isUserVerified: n, onScreenNameClick: o, profileLink: a, promotedContent: s, userHighlightedLabel: l, userName: d, userScreenName: c, userTranslatorType: u, userVerifiedType: p, userWithFollowsYou: h, withNameWrap: w } = this.props,
+                        { badges: g, followIndicator: C, fullName: f } = e;
+                    return i.createElement(m.Z, { affiliateBadgeInfo: l, badgeContext: "account", isBlueVerified: g ? t : void 0, isProtected: g ? r : void 0, isVerified: g ? n : void 0, link: a, name: f ? d : c, nameSize: "headline2", onLinkClick: o, promotedContent: s, screenName: c, translatorType: g ? u : void 0, verifiedType: g ? p : void 0, withFollowsYou: C && h, withLink: !0, withNameWrap: w, withStackedLayout: !0 });
                 }
                 _renderHighlightedUserLabel() {
                     const { userHighlightedLabel: e } = this.props;
@@ -553,4 +553,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.ComposeScheduling-6107ac1a.79e5fb8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.ComposeScheduling-6107ac1a.331d00ba.js.map

@@ -1276,7 +1276,7 @@
                 e("fc7db594", "Profiilin yhteenveto"),
                 e("c3f04d9c", "Miettii"),
                 e("e98cc293", function (a) {
-                    return "Searching for " + a.query;
+                    return "Etsitään " + a.query;
                 }),
                 e("b0d1e205", function (a) {
                     return 'Haetaan haulla **"' + a.query + '"**';
@@ -13219,4 +13219,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.5decc0fa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.d2a7896a.js.map

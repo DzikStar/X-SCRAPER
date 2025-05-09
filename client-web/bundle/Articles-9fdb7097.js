@@ -494,24 +494,24 @@
                 C = i(109223),
                 N = i(390387);
             const B = [],
-                H = (e, { module: t }) => t.selectEntries(e) || B,
-                x = (e, { previewEntries: t }) => t || B,
-                U = (e, { module: t }) => t.selectInitialFetchStatus(e) || F.Z.LOADING,
-                K = (e, { module: t }) => t.selectBottomFetchStatus(e),
-                z = (e, { module: t }) => t.selectTopFetchStatus(e),
-                $ = (e, { module: t }) => t.selectCanRefresh(e),
-                j = (e, { module: t }) => t.timelineId,
-                G = (e, { module: t }) => t.selectUnavailableReason(e),
-                q = (e, { module: t }) => t.selectDismissedEntries(e),
-                V = (e, { module: t }) => t.selectPinnedEntry(e),
-                W = (e, { module: t }) => t.selectAlert(e),
-                Y = (e, { module: t }) => t.selectActiveCover(e),
-                J = (e, { module: t }) => !!t.selectInitialFetchStatus(e),
-                Q = (e, { module: t, pollingIntervalMsOverride: i }) => i || t.selectPollingIntervalMs(e),
-                X = (e, { module: t }) => t.selectDroppedAds(e),
-                ee = (e, { module: t }) => t.selectHasHoistedAnEntry(e),
-                te = (e, { module: t }) => t.selectNewTweetsBar(e),
-                ie = (e, { module: t }) => t.perfKey,
+                H = (e, t) => t.module.selectEntries(e) || B,
+                x = (e, t) => t.previewEntries || B,
+                U = (e, t) => t.module.selectInitialFetchStatus(e) || F.Z.LOADING,
+                K = (e, t) => t.module.selectBottomFetchStatus(e),
+                z = (e, t) => t.module.selectTopFetchStatus(e),
+                $ = (e, t) => t.module.selectCanRefresh(e),
+                j = (e, t) => t.module.timelineId,
+                G = (e, t) => t.module.selectUnavailableReason(e),
+                q = (e, t) => t.module.selectDismissedEntries(e),
+                V = (e, t) => t.module.selectPinnedEntry(e),
+                W = (e, t) => t.module.selectAlert(e),
+                Y = (e, t) => t.module.selectActiveCover(e),
+                J = (e, t) => !!t.module.selectInitialFetchStatus(e),
+                Q = (e, t) => t.pollingIntervalMsOverride || t.module.selectPollingIntervalMs(e),
+                X = (e, t) => t.module.selectDroppedAds(e),
+                ee = (e, t) => t.module.selectHasHoistedAnEntry(e),
+                te = (e, t) => t.module.selectNewTweetsBar(e),
+                ie = (e, t) => t.module.perfKey,
                 ne = (0, L.Z)()
                     .propsFromState(() => ({ activeCover: Y, alert: W, bottomFetchStatus: K, canRefresh: $, dismissedEntries: q, droppedAds: X, entries: H, initialFetchStatus: U, isRestrictedSession: N._S, newTweetsBarContent: te, perfKey: ie, pinnedEntry: V, pollingIntervalMs: Q, previewEntries: x, timelineExist: J, timelineId: j, topFetchStatus: z, unavailableReason: G, wasAtleastOneEntryHoisted: ee }))
                     .adjustStateProps(({ bottomFetchStatus: e, entries: t, initialFetchStatus: i, previewEntries: n, unavailableReason: r, ...s }) => {
@@ -1075,4 +1075,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Articles-9fdb7097.5e6b15ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Articles-9fdb7097.b88413fa.js.map

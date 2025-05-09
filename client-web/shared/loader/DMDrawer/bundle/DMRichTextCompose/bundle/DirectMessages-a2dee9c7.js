@@ -1212,7 +1212,7 @@
                     const { userIds: a } = t;
                     return a.reduce((t, a) => {
                         const n = y.ZP.selectFetchStatus(e, a);
-                        return (t[a] = n === h.ZP.NONE ? h.ZP.LOADING : n), t;
+                        return n && (t[a] = n === h.ZP.NONE ? h.ZP.LOADING : n), t;
                     }, {});
                 },
                 A = (0, w.Z)()
@@ -1293,4 +1293,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.DMRichTextCompose~bundle.DirectMessages-a2dee9c7.79276f4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~loader.DMDrawer~bundle.DMRichTextCompose~bundle.DirectMessages-a2dee9c7.3b495f1a.js.map
