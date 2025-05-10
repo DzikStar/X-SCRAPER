@@ -2976,7 +2976,8 @@
                 a("jadeb4da", "Please urgently update your payment method before you lose your subscription benefits."),
                 a("bce3726a", "Update Billing"),
                 a("fce9ecce", "Suggested Videos"),
-                a("dc954b88", "Try the full news experience"),
+                a("da00e00a", "Try the new News"),
+                a("c40666d8", "Try it"),
                 a("j66b95a2", "In-Depth News"),
                 a("b58d2bd2", "Relevant Posts"),
                 a("efe6ef9e", "View post"),
@@ -3882,9 +3883,9 @@
                 a("e3275464", "Send"),
                 a("cededf2a", "Host"),
                 a("i2caef48", "Co-hosts"),
-                a("j245c654", "Speakers"),
-                a("eda23a02", "Listeners");
-            a("b90eb348", "Invite to Speak"),
+                a("j245c654", "Speakers");
+            a("eda23a02", "Listeners"),
+                a("b90eb348", "Invite to Speak"),
                 a("d9a63e82", "Remove from Speakers"),
                 a("bd917b26", "Invite to Co-host"),
                 a("d7357e7e", "Remove from Co-hosts"),
@@ -4920,9 +4921,9 @@
                 a("e41fffbc", "The total watch time of your videos."),
                 a("if2909ba", "Watch Time"),
                 a("i0e5bf4c", "Your videos"),
-                a("ed99baea", "Early Beta Access"),
-                a("gf898b70", "Advanced Search");
-            a("d2a43a7a", 'contains both "ai" and "startup"'),
+                a("ed99baea", "Early Beta Access");
+            a("gf898b70", "Advanced Search"),
+                a("d2a43a7a", 'contains both "ai" and "startup"'),
                 a("a8584698", "ai startup"),
                 a("jb6f9292", 'contains the exact phrase "ai startup"'),
                 a("j8ee77c4", '"ai startup"'),
@@ -5886,9 +5887,9 @@
                 a("i0ed3f4e", "Event image"),
                 a("cbae35fa", "Report Broadcast"),
                 a("fd12ab58", "Collection posts"),
-                a("a226497c", "Create a new Community"),
-                a("d7346632", "You haven’t joined any Communities yet");
-            a("b732a4cc", "When you do, you’ll see their posts here."),
+                a("a226497c", "Create a new Community");
+            a("d7346632", "You haven’t joined any Communities yet"),
+                a("b732a4cc", "When you do, you’ll see their posts here."),
                 a("hff48914", "No posts could be found at this time."),
                 a("hb52cc4a", "Please try again later."),
                 a("e50e1bb0", "Welcome to Communities"),
@@ -6678,6 +6679,7 @@
                 a("b2d41138", "More reach = more earnings"),
                 a("defa7f12", "Benefit from a Reply Boost, giving you the extra visibility to grow faster."),
                 a("i3e4955d", "here"),
+                a("fdc5d06c", "Exit Full Screen"),
                 a("cea1c00e", "Unlock the ability to engage"),
                 a("f8e6a280", "New accounts are required to pay a small annual fee before you’re able to post, like, bookmark, and reply. This is to reduce spam and to create a better experience for everyone. You can still follow accounts and browse X for free."),
                 a("h968efc6", "New accounts are required to pay a small fee before you’re able to post, like, bookmark, and reply. This is to reduce spam and to create a better experience for everyone. You can still follow accounts and browse X for free."),
@@ -6883,10 +6885,10 @@
                 a("e0198956", "Get a share of the revenue generated from verified accounts’ engagement with content you post on X."),
                 a("iadf78e2", "Download videos"),
                 a("ee54c3de", "Save videos straight to your device"),
-                a("ae03594c", "Small reply boost"),
-                a("e6bb08c0", "Increase the visibility of your replies"),
-                a("bf2a6acc", "Large Reply Boost");
-            a("c2059276", "Have your replies boosted."),
+                a("ae03594c", "Small reply boost");
+            a("e6bb08c0", "Increase the visibility of your replies"),
+                a("bf2a6acc", "Large Reply Boost"),
+                a("c2059276", "Have your replies boosted."),
                 a("b023ec20", "Max Reply Boost"),
                 a("g337328e", "Get the highest visibility for your replies."),
                 a("fa006202", "Background video playback"),
@@ -7388,8 +7390,8 @@
                 a("a10aa36c", "Help Center"),
                 a("d0740558", "Help Center"),
                 a("d2d76dca", "Help Center"),
-                a("b6414532", "The estimated breakdown of the people that have seen your post"),
-                a("c61c6624", "Promoted"),
+                a("de8bcdaa", "Breakdown of the people that have seen your post"),
+                a("cfa1ef16", "Boost"),
                 a("d267afa2", "Under 20"),
                 a("db81cab0", "20-29"),
                 a("f173716e", "30-39"),
@@ -7398,6 +7400,14 @@
                 a("bcd9cf68", "Above 65"),
                 a("f05f1838", "Other / Not specified"),
                 a("fa5be588", "Organic"),
+                a("c65126fe", "Boosted"),
+                a("c61c6624", "Promoted"),
+                a("f1196a04", "Boost Analytics"),
+                a("bb66e3fc", "Promote Analytics"),
+                a("g512ddcc", "Organic Analytics"),
+                a("j9256524", "Breakdown of your boost performance"),
+                a("ceeb3016", "Breakdown of your promote performance"),
+                a("bf4558fa", "Breakdown of your organic performance"),
                 a("c69069e6", "Times this post was seen on X"),
                 a("a0615bac", "Total number of times a user has interacted with a post. This includes all clicks anywhere on the post (including hashtags, links, avatar, username, and post expansion), reposts, replies, follows, and likes."),
                 a("d8abdaa4", "New followers"),
@@ -7405,8 +7415,9 @@
                 a("acc4cf12", "Number of profile views from this post"),
                 a("c7d0d1c4", "Number of clicks on any URL in this post"),
                 a("a4da7724", "Times people viewed the details about this post"),
-                a("c5d4d3a8", "Cost per follow"),
-                a("f56e24f2", "Total spend divided by the number of followers, including earned. You only pay when someone follows you"),
+                a("jedd2771", function (e) {
+                    return e.percentage + " from boost";
+                }),
                 a("g33fd6b1", function (e) {
                     return e.percentage + " from promotion";
                 }),
@@ -7414,6 +7425,7 @@
                     return e.percentage + " from non followers";
                 }),
                 a("h4cbba3e", "< 5%"),
+                a("f4f0094c", "< 5% from boost"),
                 a("h1cdac12", "< 5% from promotion"),
                 a("g884b2cc", "< 5% from non followers"),
                 a("b32334a0", "Accounts Reached"),
@@ -7781,7 +7793,6 @@
                     return "Welcome back, " + e.displayName;
                 }),
                 a("a76d58ba", "Ads Analytics"),
-                a("g512ddcc", "Organic Analytics"),
                 a("eccd0e1a", "Organization Analytics"),
                 a("deea1708", "Want to view analytics across all your X accounts?"),
                 a("eb603ffc", "Upgrade to affiliate your network and view aggregated analytics."),
@@ -7852,16 +7863,7 @@
                 a("ddfd6718", "Payment Failed"),
                 a("i90ea7d2", "Please urgently update your billing to keep your benefits."),
                 a("a62359e6", "Verified Organization Settings"),
-                a("ge221b7c", "Upgrade Verified Organization subscription to get access to affiliates and more ad credits."),
-                a("i4dccc18", "Billing"),
-                a("ec3cd6e4", "Manage your payment method, update billing information, and review your invoices."),
-                a("dac61c3c", "Account settings"),
-                a("b6b5fd66", "Manage your X account including changing your username or password."),
-                a("hb9c4a1c", "Questions, bug reports and feedback"),
-                a("c674f5b4", "Setup invoice payments"),
-                a("i8237e66", "Switch from credit card payments to invoicing via bank transfers."),
-                a("hebd348a", "Configure how ads are used to promote jobs from the Hiring portal."),
-                a("ib5e6f90", "Job Promotion");
+                a("ge221b7c", "Upgrade Verified Organization subscription to get access to affiliates and more ad credits.");
             function i(e, t) {
                 for (var o = 0; o < t.length; o++) {
                     var a = t[o];
@@ -7900,7 +7902,16 @@
                     r(e, t)
                 );
             }
-            a("id720215", "Hiring"),
+            a("i4dccc18", "Billing"),
+                a("ec3cd6e4", "Manage your payment method, update billing information, and review your invoices."),
+                a("dac61c3c", "Account settings"),
+                a("b6b5fd66", "Manage your X account including changing your username or password."),
+                a("hb9c4a1c", "Questions, bug reports and feedback"),
+                a("c674f5b4", "Setup invoice payments"),
+                a("i8237e66", "Switch from credit card payments to invoicing via bank transfers."),
+                a("hebd348a", "Configure how ads are used to promote jobs from the Hiring portal."),
+                a("ib5e6f90", "Job Promotion"),
+                a("id720215", "Hiring"),
                 a("dd59f146", "Job promotion ad account"),
                 a("e7e36818", "Ad accounts are eligible for job promotion when they are fully set up with a funding source."),
                 a("c28566e0", "Ad Account"),
@@ -8896,10 +8907,10 @@
                 }),
                 a("ae408b76", "You reposted"),
                 a("j355f008", "Pinned post"),
-                a("habf9678", "Pinned by Author"),
-                a("db0798ed", function (e) {
-                    return e.topicName + " Topic";
-                }),
+                a("habf9678", "Pinned by Author");
+            a("db0798ed", function (e) {
+                return e.topicName + " Topic";
+            }),
                 a("dc716ec9", function (e) {
                     return "Recommended Topic: " + e.topicName;
                 }),
@@ -8919,10 +8930,10 @@
                 }),
                 a("c889af33", function (e) {
                     return e.count + " joined";
-                });
-            a("d6f2056f", function (e) {
-                return e.count + " tuned in";
-            }),
+                }),
+                a("d6f2056f", function (e) {
+                    return e.count + " tuned in";
+                }),
                 a("jbc5f47a", "Spaces dock"),
                 a("gfe2830f", function (e) {
                     return e.count + " other" + n(e.count, "", "s");
@@ -13206,4 +13217,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en.5bf71eba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en.b94edf5a.js.map

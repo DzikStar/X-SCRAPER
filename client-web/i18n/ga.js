@@ -2991,7 +2991,8 @@
                 n("jadeb4da", "Please urgently update your payment method before you lose your subscription benefits."),
                 n("bce3726a", "Update Billing"),
                 n("fce9ecce", "Suggested Videos"),
-                n("dc954b88", "Try the full news experience"),
+                n("da00e00a", "Try the new News"),
+                n("c40666d8", "Try it"),
                 n("j66b95a2", "In-Depth News"),
                 n("b58d2bd2", "Relevant Posts"),
                 n("efe6ef9e", "View post"),
@@ -3897,9 +3898,9 @@
                 n("e3275464", "Seol"),
                 n("cededf2a", "Óstach"),
                 n("i2caef48", "Co-hosts"),
-                n("j245c654", "Speakers"),
-                n("eda23a02", "Listeners");
-            n("b90eb348", "Invite to Speak"),
+                n("j245c654", "Speakers");
+            n("eda23a02", "Listeners"),
+                n("b90eb348", "Invite to Speak"),
                 n("d9a63e82", "Remove from Speakers"),
                 n("bd917b26", "Invite to Co-host"),
                 n("d7357e7e", "Remove from Co-hosts"),
@@ -4935,9 +4936,9 @@
                 n("e41fffbc", "The total watch time of your videos."),
                 n("if2909ba", "Watch Time"),
                 n("i0e5bf4c", "Your videos"),
-                n("ed99baea", "Early Beta Access"),
-                n("gf898b70", "Advanced Search");
-            n("d2a43a7a", 'contains both "ai" and "startup"'),
+                n("ed99baea", "Early Beta Access");
+            n("gf898b70", "Advanced Search"),
+                n("d2a43a7a", 'contains both "ai" and "startup"'),
                 n("a8584698", "ai startup"),
                 n("jb6f9292", 'contains the exact phrase "ai startup"'),
                 n("j8ee77c4", '"ai startup"'),
@@ -5901,9 +5902,9 @@
                 n("i0ed3f4e", "Íomhá na hócáide"),
                 n("cbae35fa", "Report Broadcast"),
                 n("fd12ab58", "Collection posts"),
-                n("a226497c", "Cruthaigh Pobal nua"),
-                n("d7346632", "You haven’t joined any Communities yet");
-            n("b732a4cc", "When you do, you’ll see their posts here."),
+                n("a226497c", "Cruthaigh Pobal nua");
+            n("d7346632", "You haven’t joined any Communities yet"),
+                n("b732a4cc", "When you do, you’ll see their posts here."),
                 n("hff48914", "No posts could be found at this time."),
                 n("hb52cc4a", "Bain triail as arís níos déanaí."),
                 n("e50e1bb0", "Welcome to Communities"),
@@ -6693,6 +6694,7 @@
                 n("b2d41138", "More reach = more earnings"),
                 n("defa7f12", "Benefit from a Reply Boost, giving you the extra visibility to grow faster."),
                 n("i3e4955d", "here"),
+                n("fdc5d06c", "Exit Full Screen"),
                 n("cea1c00e", "Unlock the ability to engage"),
                 n("f8e6a280", "New accounts are required to pay a small annual fee before you’re able to post, like, bookmark, and reply. This is to reduce spam and to create a better experience for everyone. You can still follow accounts and browse X for free."),
                 n("h968efc6", "New accounts are required to pay a small fee before you’re able to post, like, bookmark, and reply. This is to reduce spam and to create a better experience for everyone. You can still follow accounts and browse X for free."),
@@ -6898,10 +6900,10 @@
                 n("e0198956", "Get a share of the revenue generated from verified accounts’ engagement with content you post on X."),
                 n("iadf78e2", "Download videos"),
                 n("ee54c3de", "Save videos straight to your device"),
-                n("ae03594c", "Small reply boost"),
-                n("e6bb08c0", "Increase the visibility of your replies"),
-                n("bf2a6acc", "Large Reply Boost");
-            n("c2059276", "Have your replies boosted."),
+                n("ae03594c", "Small reply boost");
+            n("e6bb08c0", "Increase the visibility of your replies"),
+                n("bf2a6acc", "Large Reply Boost"),
+                n("c2059276", "Have your replies boosted."),
                 n("b023ec20", "Max Reply Boost"),
                 n("g337328e", "Get the highest visibility for your replies."),
                 n("fa006202", "Background video playback"),
@@ -7403,8 +7405,8 @@
                 n("a10aa36c", "Help Center"),
                 n("d0740558", "Help Center"),
                 n("d2d76dca", "Help Center"),
-                n("b6414532", "The estimated breakdown of the people that have seen your post"),
-                n("c61c6624", "Urraithe"),
+                n("de8bcdaa", "Breakdown of the people that have seen your post"),
+                n("cfa1ef16", "Boost"),
                 n("d267afa2", "Faoi 20"),
                 n("db81cab0", "20-29"),
                 n("f173716e", "30-39"),
@@ -7413,6 +7415,14 @@
                 n("bcd9cf68", "Above 65"),
                 n("f05f1838", "Eile / Nach bhfuil sonraithe"),
                 n("fa5be588", "Organic"),
+                n("c65126fe", "Boosted"),
+                n("c61c6624", "Urraithe"),
+                n("f1196a04", "Boost Analytics"),
+                n("bb66e3fc", "Promote Analytics"),
+                n("g512ddcc", "Organic Analytics"),
+                n("j9256524", "Breakdown of your boost performance"),
+                n("ceeb3016", "Breakdown of your promote performance"),
+                n("bf4558fa", "Breakdown of your organic performance"),
                 n("c69069e6", "Times this post was seen on X"),
                 n("a0615bac", "Total number of times a user has interacted with a post. This includes all clicks anywhere on the post (including hashtags, links, avatar, username, and post expansion), reposts, replies, follows, and likes."),
                 n("d8abdaa4", "Leantóirí nua"),
@@ -7420,8 +7430,9 @@
                 n("acc4cf12", "Number of profile views from this post"),
                 n("c7d0d1c4", "Number of clicks on any URL in this post"),
                 n("a4da7724", "Times people viewed the details about this post"),
-                n("c5d4d3a8", "Cost per follow"),
-                n("f56e24f2", "Total spend divided by the number of followers, including earned. You only pay when someone follows you"),
+                n("jedd2771", function (e) {
+                    return e.percentage + " from boost";
+                }),
                 n("g33fd6b1", function (e) {
                     return e.percentage + " ó mholadh";
                 }),
@@ -7429,6 +7440,7 @@
                     return e.percentage + " ó dhaoine nach leantóirí iad";
                 }),
                 n("h4cbba3e", "< 5%"),
+                n("f4f0094c", "< 5% from boost"),
                 n("h1cdac12", "< 5% from promotion"),
                 n("g884b2cc", "< 5% from non followers"),
                 n("b32334a0", "Accounts Reached"),
@@ -7796,7 +7808,6 @@
                     return "Welcome back, " + e.displayName;
                 }),
                 n("a76d58ba", "Ads Analytics"),
-                n("g512ddcc", "Organic Analytics"),
                 n("eccd0e1a", "Organization Analytics"),
                 n("deea1708", "Want to view analytics across all your X accounts?"),
                 n("eb603ffc", "Upgrade to affiliate your network and view aggregated analytics."),
@@ -7867,16 +7878,7 @@
                 n("ddfd6718", "Payment Failed"),
                 n("i90ea7d2", "Please urgently update your billing to keep your benefits."),
                 n("a62359e6", "Verified Organization Settings"),
-                n("ge221b7c", "Upgrade Verified Organization subscription to get access to affiliates and more ad credits."),
-                n("i4dccc18", "Billing"),
-                n("ec3cd6e4", "Manage your payment method, update billing information, and review your invoices."),
-                n("dac61c3c", "Account settings"),
-                n("b6b5fd66", "Manage your X account including changing your username or password."),
-                n("hb9c4a1c", "Questions, bug reports and feedback"),
-                n("c674f5b4", "Setup invoice payments"),
-                n("i8237e66", "Switch from credit card payments to invoicing via bank transfers."),
-                n("hebd348a", "Configure how ads are used to promote jobs from the Hiring portal."),
-                n("ib5e6f90", "Job Promotion");
+                n("ge221b7c", "Upgrade Verified Organization subscription to get access to affiliates and more ad credits.");
             function r(e, a) {
                 for (var t = 0; t < a.length; t++) {
                     var n = a[t];
@@ -7915,7 +7917,16 @@
                     c(e, a)
                 );
             }
-            n("id720215", "Hiring"),
+            n("i4dccc18", "Billing"),
+                n("ec3cd6e4", "Manage your payment method, update billing information, and review your invoices."),
+                n("dac61c3c", "Account settings"),
+                n("b6b5fd66", "Manage your X account including changing your username or password."),
+                n("hb9c4a1c", "Questions, bug reports and feedback"),
+                n("c674f5b4", "Setup invoice payments"),
+                n("i8237e66", "Switch from credit card payments to invoicing via bank transfers."),
+                n("hebd348a", "Configure how ads are used to promote jobs from the Hiring portal."),
+                n("ib5e6f90", "Job Promotion"),
+                n("id720215", "Hiring"),
                 n("dd59f146", "Job promotion ad account"),
                 n("e7e36818", "Ad accounts are eligible for job promotion when they are fully set up with a funding source."),
                 n("c28566e0", "Ad Account"),
@@ -8911,10 +8922,10 @@
                 }),
                 n("ae408b76", "You reposted"),
                 n("j355f008", "Pinned post"),
-                n("habf9678", "Pionnáilte ag an Údar"),
-                n("db0798ed", function (e) {
-                    return e.topicName + " Topaic";
-                }),
+                n("habf9678", "Pionnáilte ag an Údar");
+            n("db0798ed", function (e) {
+                return e.topicName + " Topaic";
+            }),
                 n("dc716ec9", function (e) {
                     return "Topaic Mholta: " + e.topicName;
                 }),
@@ -8934,10 +8945,10 @@
                 }),
                 n("c889af33", function (e) {
                     return e.count + " dulta isteach";
-                });
-            n("d6f2056f", function (e) {
-                return e.count + " tiúnáilte isteach";
-            }),
+                }),
+                n("d6f2056f", function (e) {
+                    return e.count + " tiúnáilte isteach";
+                }),
                 n("jbc5f47a", "Nasc spásanna"),
                 n("gfe2830f", function (e) {
                     return e.count + " eile";
@@ -13222,4 +13233,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ga.0767164a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ga.e08e2c2a.js.map

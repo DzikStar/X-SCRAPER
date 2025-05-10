@@ -2985,7 +2985,8 @@
                 i("jadeb4da", "Jak najszybciej zaktualizuj swoją metodę płatności, zanim stracisz korzyści związane z subskrypcją."),
                 i("bce3726a", "Aktualizuj rozliczenie"),
                 i("fce9ecce", "Sugerowane filmy"),
-                i("dc954b88", "Wypróbuj pełne środowisko wiadomości"),
+                i("da00e00a", "Try the new News"),
+                i("c40666d8", "Try it"),
                 i("j66b95a2", "Dokładne wiadomości"),
                 i("b58d2bd2", "Odpowiednie wpisy"),
                 i("efe6ef9e", "Wyświetl wpis"),
@@ -3891,9 +3892,9 @@
                 i("e3275464", "Wyślij"),
                 i("cededf2a", "Host"),
                 i("i2caef48", "Współhości"),
-                i("j245c654", "Mówcy"),
-                i("eda23a02", "Słuchacze");
-            i("b90eb348", "Udziel głosu"),
+                i("j245c654", "Mówcy");
+            i("eda23a02", "Słuchacze"),
+                i("b90eb348", "Udziel głosu"),
                 i("d9a63e82", "Usuń z grona mówców"),
                 i("bd917b26", "Zaproś do współhostowania"),
                 i("d7357e7e", "Usuń z grona współhostów"),
@@ -4929,9 +4930,9 @@
                 i("e41fffbc", "Łączny czas oglądania Twoich filmów."),
                 i("if2909ba", "Czas oglądania"),
                 i("i0e5bf4c", "Twoje filmy"),
-                i("ed99baea", "Wczesny dostęp do wersji Beta"),
-                i("gf898b70", "Wyszukiwanie zaawansowane");
-            i("d2a43a7a", 'zawiera oba wyrazy „startup" i „ai”'),
+                i("ed99baea", "Wczesny dostęp do wersji Beta");
+            i("gf898b70", "Wyszukiwanie zaawansowane"),
+                i("d2a43a7a", 'zawiera oba wyrazy „startup" i „ai”'),
                 i("a8584698", "startup ai"),
                 i("jb6f9292", "zawiera dokładną frazę „startup ai”"),
                 i("j8ee77c4", '"startup ai"'),
@@ -5895,9 +5896,9 @@
                 i("i0ed3f4e", "Obrazek wydarzenia"),
                 i("cbae35fa", "Zgłoś transmisję"),
                 i("fd12ab58", "Wpisy w kolekcji"),
-                i("a226497c", "Utwórz nową Grupę dyskusyjną"),
-                i("d7346632", "Nie należysz jeszcze do żadnej Grupy dyskusyjnej");
-            i("b732a4cc", "Gdy to zrobisz, wpisy tego użytkownika będa widoczne w tym miejscu."),
+                i("a226497c", "Utwórz nową Grupę dyskusyjną");
+            i("d7346632", "Nie należysz jeszcze do żadnej Grupy dyskusyjnej"),
+                i("b732a4cc", "Gdy to zrobisz, wpisy tego użytkownika będa widoczne w tym miejscu."),
                 i("hff48914", "W tej chwili nie można znaleźć żadnego wpisu."),
                 i("hb52cc4a", "Spróbuj ponownie później."),
                 i("e50e1bb0", "Zapraszamy do korzystania z grup dyskusyjnych"),
@@ -6687,6 +6688,7 @@
                 i("b2d41138", "Większy zasięg = większe zarobki"),
                 i("defa7f12", "Korzystaj z funkcji Wzmocnienie odpowiedzi, która zwiększy widoczność Twoich wpisów i pozwoli Ci szybciej się rozwijać."),
                 i("i3e4955d", "Tutaj"),
+                i("fdc5d06c", "Exit Full Screen"),
                 i("cea1c00e", "Odblokuj możliwość interakcji"),
                 i("f8e6a280", "Właściciele nowych kont są zobowiązani do uiszczenia niewielkiej rocznej opłaty, zanim będą mogli publikować wpisy, oznaczać wpisy jako ulubione, dodawać wpisy do Zakładek oraz odpowiadać na wpisy. Ma to na celu ograniczenie spamu oraz stworzenie lepszego środowiska dla wszystkich użytkowników. Nadal możesz bezpłatnie obserwować inne konta i przeglądać serwis X."),
                 i("h968efc6", "Właściciele nowych kont są zobowiązani do uiszczenia niewielkiej opłaty, zanim będą mogli publikować wpisy, oznaczać wpisy jako ulubione, dodawać wpisy do Zakładek oraz odpowiadać na wpisy. Ma to na celu ograniczenie spamu oraz stworzenie lepszego środowiska dla wszystkich użytkowników. Nadal możesz bezpłatnie obserwować inne konta i przeglądać serwis X."),
@@ -6892,10 +6894,10 @@
                 i("e0198956", "Otrzymuj udział w dochodach powstających w wyniku interakcji zweryfikowanych kont z treścią Twojego wpisu w serwisie X."),
                 i("iadf78e2", "Pobieranie filmów"),
                 i("ee54c3de", "Zapisuj filmy bezpośrednio na swoim urządzeniu"),
-                i("ae03594c", "Małe wzmocnienie odpowiedzi"),
-                i("e6bb08c0", "Zwiększ widoczność swoich odpowiedzi"),
-                i("bf2a6acc", "Duże wzmocnienie odpowiedzi");
-            i("c2059276", "Korzystaj z możliwości dodawania boosta do odpowiedzi."),
+                i("ae03594c", "Małe wzmocnienie odpowiedzi");
+            i("e6bb08c0", "Zwiększ widoczność swoich odpowiedzi"),
+                i("bf2a6acc", "Duże wzmocnienie odpowiedzi"),
+                i("c2059276", "Korzystaj z możliwości dodawania boosta do odpowiedzi."),
                 i("b023ec20", "Maksymalne wzmocnienie odpowiedzi"),
                 i("g337328e", "Uzyskaj największą widoczność swoich odpowiedzi."),
                 i("fa006202", "Odtwarzanie filmów w tle"),
@@ -7397,8 +7399,8 @@
                 i("a10aa36c", "Centrum Pomocy"),
                 i("d0740558", "Centrum Pomocy"),
                 i("d2d76dca", "Centrum pomocy"),
-                i("b6414532", "Szacowany podział osób, które widziały Twój wpis."),
-                i("c61c6624", "Promowane"),
+                i("de8bcdaa", "Breakdown of the people that have seen your post"),
+                i("cfa1ef16", "Dodaj boost"),
                 i("d267afa2", "Poniżej 20"),
                 i("db81cab0", "20-29"),
                 i("f173716e", "30-39"),
@@ -7407,6 +7409,14 @@
                 i("bcd9cf68", "Powyżej 65"),
                 i("f05f1838", "Inne / Nie określono"),
                 i("fa5be588", "Organiczne"),
+                i("c65126fe", "Boosted"),
+                i("c61c6624", "Promowane"),
+                i("f1196a04", "Boost Analytics"),
+                i("bb66e3fc", "Promote Analytics"),
+                i("g512ddcc", "Analizy organiczne"),
+                i("j9256524", "Breakdown of your boost performance"),
+                i("ceeb3016", "Breakdown of your promote performance"),
+                i("bf4558fa", "Breakdown of your organic performance"),
                 i("c69069e6", "Liczba wyświetleń tego wpisu na X"),
                 i("a0615bac", "Ile razy w sumie użytkownik zareagował na wpis. Obejmuje to wszystkie kliknięcia w dowolnym miejscu wpisu (w tym kliknięcia tagów, linków, awatarów, nazwy użytkownika, a także rozwinięcie wpisu), podanie wpisu dalej, odpowiedzi, obserwacje i polubienia."),
                 i("d8abdaa4", "Nowi obserwujący"),
@@ -7414,8 +7424,9 @@
                 i("acc4cf12", "Liczba wyświetleń profilu z poziomu tego wpisu"),
                 i("c7d0d1c4", "Liczba kliknięć w linki z wpisu"),
                 i("a4da7724", "Ile razy użytkownicy wyświetlali szczegóły wpisu"),
-                i("c5d4d3a8", "Koszt jednego obserwującego"),
-                i("f56e24f2", "Pełny poniesiony koszt podzielony przez liczbę obserwujących, w tym nowo uzyskanych. Płacisz tylko, gdy ktoś zacznie Cię obserwować"),
+                i("jedd2771", function (e) {
+                    return e.percentage + " from boost";
+                }),
                 i("g33fd6b1", function (e) {
                     return e.percentage + " – w wyniku promocji";
                 }),
@@ -7423,6 +7434,7 @@
                     return e.percentage + " – osoby nieobserwujące Twojego konta";
                 }),
                 i("h4cbba3e", "< 5%"),
+                i("f4f0094c", "< 5% from boost"),
                 i("h1cdac12", "< 5% z promocji"),
                 i("g884b2cc", "< 5% od osób niebędących obserwującymi"),
                 i("b32334a0", "Zasięg wg liczby kont"),
@@ -7790,7 +7802,6 @@
                     return "Witaj ponownie, " + e.displayName;
                 }),
                 i("a76d58ba", "Analizy reklam"),
-                i("g512ddcc", "Analizy organiczne"),
                 i("eccd0e1a", "Analizy organizacji"),
                 i("deea1708", "Chcesz wyświetlić analizy wszystkich swoich kont w serwisie X?"),
                 i("eb603ffc", "Podnieś poziom, aby powiązać swoją sieć i przeglądać zagregowane analizy."),
@@ -7861,16 +7872,7 @@
                 i("ddfd6718", "Realizacja płatności nie powiodła się"),
                 i("i90ea7d2", "Jak najszybciej zaktualizuj swoje rozliczenie, aby nie stracić korzyści."),
                 i("a62359e6", "Ustawienia zweryfikowanej organizacji"),
-                i("ge221b7c", "Podnieś poziom subskrypcji programu Zweryfikowane Organizacje, aby móc korzystać z kont powiązanych oraz otrzymać więcej kredytów reklamowych."),
-                i("i4dccc18", "Rachunki"),
-                i("ec3cd6e4", "Zarządzaj sposobem płatności, aktualizuj informacje dotyczące rozliczeń i przeglądaj faktury."),
-                i("dac61c3c", "Ustawienia konta"),
-                i("b6b5fd66", "Zarządzaj swoim kontem w serwisie X (obejmuje to możliwość zmiany nazwy użytkownika lub hasła)."),
-                i("hb9c4a1c", "Pytania, zgłoszenia usterek i opinie"),
-                i("c674f5b4", "Konfiguruj płatności faktur"),
-                i("i8237e66", "Zmień płatności kartą kredytową na fakturowanie za pośrednictwem przelewów bankowych."),
-                i("hebd348a", "Skonfiguruj sposób wykorzystania reklam do promowania ofert pracy z portalu Rekrutacja."),
-                i("ib5e6f90", "Promocja oferty pracy");
+                i("ge221b7c", "Podnieś poziom subskrypcji programu Zweryfikowane Organizacje, aby móc korzystać z kont powiązanych oraz otrzymać więcej kredytów reklamowych.");
             function t(e, a) {
                 for (var o = 0; o < a.length; o++) {
                     var i = a[o];
@@ -7909,7 +7911,16 @@
                     c(e, a)
                 );
             }
-            i("id720215", "Rekrutacja"),
+            i("i4dccc18", "Rachunki"),
+                i("ec3cd6e4", "Zarządzaj sposobem płatności, aktualizuj informacje dotyczące rozliczeń i przeglądaj faktury."),
+                i("dac61c3c", "Ustawienia konta"),
+                i("b6b5fd66", "Zarządzaj swoim kontem w serwisie X (obejmuje to możliwość zmiany nazwy użytkownika lub hasła)."),
+                i("hb9c4a1c", "Pytania, zgłoszenia usterek i opinie"),
+                i("c674f5b4", "Konfiguruj płatności faktur"),
+                i("i8237e66", "Zmień płatności kartą kredytową na fakturowanie za pośrednictwem przelewów bankowych."),
+                i("hebd348a", "Skonfiguruj sposób wykorzystania reklam do promowania ofert pracy z portalu Rekrutacja."),
+                i("ib5e6f90", "Promocja oferty pracy"),
+                i("id720215", "Rekrutacja"),
                 i("dd59f146", "Konto do promowania ofert pracy"),
                 i("e7e36818", "Konta reklamowe kwalifikują się do promocji ofert pracy, gdy są w pełni skonfigurowane i mają ustawione źródło finansowania."),
                 i("c28566e0", "Konto reklamowe"),
@@ -8905,10 +8916,10 @@
                 }),
                 i("ae408b76", "Podano dalej"),
                 i("j355f008", "Przypięty wpis"),
-                i("habf9678", "Przypięty przez autora"),
-                i("db0798ed", function (e) {
-                    return "Temat: " + e.topicName;
-                }),
+                i("habf9678", "Przypięty przez autora");
+            i("db0798ed", function (e) {
+                return "Temat: " + e.topicName;
+            }),
                 i("dc716ec9", function (e) {
                     return "Polecany temat: " + e.topicName;
                 }),
@@ -8928,10 +8939,10 @@
                 }),
                 i("c889af33", function (e) {
                     return e.count + " bi" + n(e.count, "orą", "orą", "erze", "orą") + " udział";
-                });
-            i("d6f2056f", function (e) {
-                return e.count + " dołączy" + n(e.count, "li/ły", "ło", "ł/a", "ło");
-            }),
+                }),
+                i("d6f2056f", function (e) {
+                    return e.count + " dołączy" + n(e.count, "li/ły", "ło", "ł/a", "ło");
+                }),
                 i("jbc5f47a", "Panel pokoi"),
                 i("gfe2830f", function (e) {
                     return "" + n(e.count, e.count + " innych użytkowników", e.count + " innych użytkowników", "jeszcze " + e.count + " użytkownik", e.count + " innych użytkowników");
@@ -13219,4 +13230,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.506dca5a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.d5ebfb3a.js.map

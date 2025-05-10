@@ -26,7 +26,7 @@
                 C = n(725405),
                 Z = n(615027),
                 g = n(448301),
-                y = n(4976),
+                y = n(759208),
                 T = n(768431);
             const _ = m().j7d0e836,
                 k = m().ic61c5fc,
@@ -92,4 +92,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.News.0eacc54a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.News.659328ba.js.map

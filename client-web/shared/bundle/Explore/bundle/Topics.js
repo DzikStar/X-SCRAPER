@@ -239,9 +239,10 @@
             const _ = (0, n(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        n.e("icons.16"),
+                        n.e("icons.17"),
                         n.e("modules.common-e907d115"),
                         n.e("modules.common-e019dbda"),
+                        n.e("icons.22"),
                         n.e("modules.audio-6107ac1a"),
                         n.e("modules.audio-b953418a"),
                         n.e("modules.audio-7c51e6a7"),
@@ -329,7 +330,7 @@
                         n.e("shared~bundle.AccountAnalytics~bundle.News~bundle.Grok~ondemand.News~ondemand.Insights~loader.NewsSe-7ba852e1"),
                         n.e("shared~bundle.News~ondemand.News~loader.ExploreNews"),
                         n.e("loader.ExploreNews"),
-                    ]).then(n.bind(n, 568527)),
+                    ]).then(n.bind(n, 169698)),
             });
             var Z = n(810641);
             const x = (e, a) => a.initialModule.selectPageConfiguration && a.initialModule.selectPageConfiguration(e),
@@ -638,4 +639,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Explore~bundle.Topics.a226706a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.Explore~bundle.Topics.2a0e6aca.js.map

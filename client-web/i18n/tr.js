@@ -2975,7 +2975,8 @@
                 n("jadeb4da", "Abonelik avantajlarını kaybetmemek için lütfen ödeme yöntemini hemen güncelle."),
                 n("bce3726a", "Faturalandırma Ayarlarını Güncelle"),
                 n("fce9ecce", "Önerilen Videolar"),
-                n("dc954b88", "Tam haber deneyimini inceleyin"),
+                n("da00e00a", "Try the new News"),
+                n("c40666d8", "Try it"),
                 n("j66b95a2", "Ayrıntılı Haberler"),
                 n("b58d2bd2", "Alakalı Gönderiler"),
                 n("efe6ef9e", "Gönderiyi görüntüle"),
@@ -3881,9 +3882,9 @@
                 n("e3275464", "Gönder"),
                 n("cededf2a", "Yönetici"),
                 n("i2caef48", "Yardımcılar"),
-                n("j245c654", "Konuşmacılar"),
-                n("eda23a02", "Dinleyiciler");
-            n("b90eb348", "Konuşmaya Davet Et"),
+                n("j245c654", "Konuşmacılar");
+            n("eda23a02", "Dinleyiciler"),
+                n("b90eb348", "Konuşmaya Davet Et"),
                 n("d9a63e82", "Konuşmacılardan çıkar"),
                 n("bd917b26", "Yardımcılığa davet et"),
                 n("d7357e7e", "Yardımcılardan kaldır"),
@@ -4919,9 +4920,9 @@
                 n("e41fffbc", "Videolarının toplam izlenme süresi."),
                 n("if2909ba", "İzlenme Süresi"),
                 n("i0e5bf4c", "Videoların"),
-                n("ed99baea", "Erken Beta Erişimi"),
-                n("gf898b70", "Gelişmiş Arama");
-            n("d2a43a7a", 'hem "ai" hem de "girişimi" ifadesini içerir'),
+                n("ed99baea", "Erken Beta Erişimi");
+            n("gf898b70", "Gelişmiş Arama"),
+                n("d2a43a7a", 'hem "ai" hem de "girişimi" ifadesini içerir'),
                 n("a8584698", "ai girişimi"),
                 n("jb6f9292", '"ai girişimi" ifadesini tam olarak içerir'),
                 n("j8ee77c4", '"ai girişimi"'),
@@ -5885,9 +5886,9 @@
                 n("i0ed3f4e", "Etkinlik görseli"),
                 n("cbae35fa", "Yayını Bildir"),
                 n("fd12ab58", "Koleksiyon gönderileri"),
-                n("a226497c", "Yeni bir Topluluk oluştur"),
-                n("d7346632", "Henüz hiçbir Topluluğa katılmadın.");
-            n("b732a4cc", "Katıldığında onların gönderilerini burada göreceksin."),
+                n("a226497c", "Yeni bir Topluluk oluştur");
+            n("d7346632", "Henüz hiçbir Topluluğa katılmadın."),
+                n("b732a4cc", "Katıldığında onların gönderilerini burada göreceksin."),
                 n("hff48914", "Şu anda hiç gönderi bulunamadı."),
                 n("hb52cc4a", "Lütfen daha sonra tekrar dene."),
                 n("e50e1bb0", "Topluluklara hoş geldin"),
@@ -6677,6 +6678,7 @@
                 n("b2d41138", "Daha fazla erişim = daha fazla kazanç"),
                 n("defa7f12", "Daha hızlı büyümen için ekstra görünürlük sağlayan Yanıt Öne Çıkarma özelliğinden yararlan."),
                 n("i3e4955d", "buradan"),
+                n("fdc5d06c", "Exit Full Screen"),
                 n("cea1c00e", "Etkileşim kurma özelliğini aç"),
                 n("f8e6a280", "Yeni hesapların gönderi yayınlamak, gönderileri beğenmek ve yanıtlamak için küçük bir yıllık ücret ödemesi gerekir. Bunun amacı, spam'i azaltmak ve herkese daha iyi bir deneyim sunmaktır. Ücretsiz olarak hesapları takip edebilir ve X'e göz atabilirsin."),
                 n("h968efc6", "Yeni hesapların gönderi yayınlamak, gönderileri beğenmek ve yanıtlamak için küçük bir ücret ödemesi gerekir. Bunun amacı, spam'i azaltmak ve herkese daha iyi bir deneyim sunmaktır. Ücretsiz olarak hesapları takip edebilir ve X'e göz atabilirsin."),
@@ -6882,10 +6884,10 @@
                 n("e0198956", "Onaylı hesapların, X'te yayınladığın içeriklerle etkileşimlerinden elde edilen gelirden pay al."),
                 n("iadf78e2", "Videoları indirme"),
                 n("ee54c3de", "Videoları doğrudan cihazına kaydet"),
-                n("ae03594c", "Küçük yanıt artışı"),
-                n("e6bb08c0", "Yanıtlarının görünürlüğünü artır"),
-                n("bf2a6acc", "Büyük Yanıt Öne Çıkarma");
-            n("c2059276", "Yanıtlarını öne çıkar."),
+                n("ae03594c", "Küçük yanıt artışı");
+            n("e6bb08c0", "Yanıtlarının görünürlüğünü artır"),
+                n("bf2a6acc", "Büyük Yanıt Öne Çıkarma"),
+                n("c2059276", "Yanıtlarını öne çıkar."),
                 n("b023ec20", "Maksimum Yanıt Öne Çıkarma"),
                 n("g337328e", "Yanıtların için en yüksek görünürlükten yararlan."),
                 n("fa006202", "Arka planda video oynatma"),
@@ -7387,8 +7389,8 @@
                 n("a10aa36c", "Yardım Merkezi"),
                 n("d0740558", "Yardım Merkezi"),
                 n("d2d76dca", "Yardım Merkezi"),
-                n("b6414532", "Gönderini gören kişilerin tahmini dağılımı"),
-                n("c61c6624", "Sponsorlu"),
+                n("de8bcdaa", "Breakdown of the people that have seen your post"),
+                n("cfa1ef16", "Öne Çıkar"),
                 n("d267afa2", "20 altı"),
                 n("db81cab0", "20-29"),
                 n("f173716e", "30-39"),
@@ -7397,6 +7399,14 @@
                 n("bcd9cf68", "65 yaş üzeri"),
                 n("f05f1838", "Diğer / Belirtilmemiş"),
                 n("fa5be588", "Organik"),
+                n("c65126fe", "Boosted"),
+                n("c61c6624", "Sponsorlu"),
+                n("f1196a04", "Boost Analytics"),
+                n("bb66e3fc", "Promote Analytics"),
+                n("g512ddcc", "Organik İstatistikler"),
+                n("j9256524", "Breakdown of your boost performance"),
+                n("ceeb3016", "Breakdown of your promote performance"),
+                n("bf4558fa", "Breakdown of your organic performance"),
                 n("c69069e6", "X'te bu gönderinin görülme sayısı"),
                 n("a0615bac", "Bir kullanıcının bir gönderi ile toplam etkileşim sayısıdır. Söz konusu gönderinin herhangi bir yerine tıklamaları (etiketler, bağlantılar, avatar, kullanıcı adı, medya ve gönderi genişletme), yeniden gönderi, yanıt, takip ve beğenileri içerir."),
                 n("d8abdaa4", "Yeni takipçiler"),
@@ -7404,8 +7414,9 @@
                 n("acc4cf12", "Bu gönderi üzerinden sağlanan profil görüntülenme sayısı"),
                 n("c7d0d1c4", "Bu gönderideki herhangi bir URL için tıklanma sayısı"),
                 n("a4da7724", "Kullanıcıların bu gönderi hakkındaki ayrıntıları görüntüleme sayısı"),
-                n("c5d4d3a8", "Takip başına maliyet"),
-                n("f56e24f2", "Toplam harcamanın kazanılanlar dahil olmak üzere takipçi sayısına bölümü. Yalnızca yeni bir takipçin olduğunda ödeme yaparsın"),
+                n("jedd2771", function (e) {
+                    return e.percentage + " from boost";
+                }),
                 n("g33fd6b1", function (e) {
                     return "Tanıtımdan " + e.percentage;
                 }),
@@ -7413,6 +7424,7 @@
                     return "Takip etmeyenlerden " + e.percentage;
                 }),
                 n("h4cbba3e", "<%5"),
+                n("f4f0094c", "< 5% from boost"),
                 n("h1cdac12", "<%5'lik bölümü tanıtımlardan elde edildi"),
                 n("g884b2cc", "<%5'lik bölümü takipçi olmayan kullanıcılardan elde edildi"),
                 n("b32334a0", "Erişilen Hesaplar"),
@@ -7780,7 +7792,6 @@
                     return "Tekrar hoş geldin, " + e.displayName;
                 }),
                 n("a76d58ba", "Reklam İstatistikleri"),
-                n("g512ddcc", "Organik İstatistikler"),
                 n("eccd0e1a", "Kuruluş İstatistikleri"),
                 n("deea1708", "Tüm X hesaplarında istatistikleri görüntülemek ister misin?"),
                 n("eb603ffc", "Ağını ilişkilendirmek ve toplu istatistikleri görüntülemek için hesabını yükselt."),
@@ -7851,16 +7862,7 @@
                 n("ddfd6718", "Ödeme Başarısız Oldu"),
                 n("i90ea7d2", "Avantajlardan yararlanmaya devam etmek için lütfen faturalandırma ayarlarını hemen güncelle."),
                 n("a62359e6", "Onaylı Kuruluş Ayarları"),
-                n("ge221b7c", "Onaylı Kuruluşlar aboneliğini güncelleyerek ilişkili hesaplar ve daha fazla reklam kredisi avantajından yararlanın."),
-                n("i4dccc18", "Faturalandırma"),
-                n("ec3cd6e4", "Ödeme yöntemini yönet, faturalandırma bilgilerini güncelle ve faturalarını gözden geçir."),
-                n("dac61c3c", "Hesap ayarları"),
-                n("b6b5fd66", "X hesabını yöneterek kullanıcı adını veya şifreni değiştirme gibi işlemleri yapabilirsin."),
-                n("hb9c4a1c", "Sorular, hata bildirimleri ve geri bildirim"),
-                n("c674f5b4", "Fatura ödemelerini ayarla"),
-                n("i8237e66", "Kredi kartıyla ödemeden banka transferiyle faturalamaya geçiş yap."),
-                n("hebd348a", "Hiring portalındaki iş ilanlarını tanıtmak için reklamların nasıl kullanılacağını yapılandır."),
-                n("ib5e6f90", "İş İlanı Tanıtımı");
+                n("ge221b7c", "Onaylı Kuruluşlar aboneliğini güncelleyerek ilişkili hesaplar ve daha fazla reklam kredisi avantajından yararlanın.");
             function l(e, a) {
                 for (var i = 0; i < a.length; i++) {
                     var n = a[i];
@@ -7899,7 +7901,16 @@
                     t(e, a)
                 );
             }
-            n("id720215", "Hiring"),
+            n("i4dccc18", "Faturalandırma"),
+                n("ec3cd6e4", "Ödeme yöntemini yönet, faturalandırma bilgilerini güncelle ve faturalarını gözden geçir."),
+                n("dac61c3c", "Hesap ayarları"),
+                n("b6b5fd66", "X hesabını yöneterek kullanıcı adını veya şifreni değiştirme gibi işlemleri yapabilirsin."),
+                n("hb9c4a1c", "Sorular, hata bildirimleri ve geri bildirim"),
+                n("c674f5b4", "Fatura ödemelerini ayarla"),
+                n("i8237e66", "Kredi kartıyla ödemeden banka transferiyle faturalamaya geçiş yap."),
+                n("hebd348a", "Hiring portalındaki iş ilanlarını tanıtmak için reklamların nasıl kullanılacağını yapılandır."),
+                n("ib5e6f90", "İş İlanı Tanıtımı"),
+                n("id720215", "Hiring"),
                 n("dd59f146", "İş ilanı tanıtımı reklam hesabı"),
                 n("e7e36818", "Bir ödeme yöntemiyle tamamen ayarlandığında reklam hesapları iş ilanlarını tanıtabilir."),
                 n("c28566e0", "Reklam Hesabı"),
@@ -8895,10 +8906,10 @@
                 }),
                 n("ae408b76", "Yeniden gönderi yayınladın"),
                 n("j355f008", "Sabitlenmiş gönderi"),
-                n("habf9678", "Yazar tarafından sabitlendi"),
-                n("db0798ed", function (e) {
-                    return e.topicName + " Konu";
-                }),
+                n("habf9678", "Yazar tarafından sabitlendi");
+            n("db0798ed", function (e) {
+                return e.topicName + " Konu";
+            }),
                 n("dc716ec9", function (e) {
                     return "Önerilen Konu: " + e.topicName;
                 }),
@@ -8918,10 +8929,10 @@
                 }),
                 n("c889af33", function (e) {
                     return e.count + " katıldı";
-                });
-            n("d6f2056f", function (e) {
-                return e.count + " katıldı";
-            }),
+                }),
+                n("d6f2056f", function (e) {
+                    return e.count + " katıldı";
+                }),
                 n("jbc5f47a", "Sohbet Odaları dock'u"),
                 n("gfe2830f", function (e) {
                     return "diğer " + e.count + " kişi";
@@ -13214,4 +13225,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/tr.5d14c98a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/tr.6e89c68a.js.map

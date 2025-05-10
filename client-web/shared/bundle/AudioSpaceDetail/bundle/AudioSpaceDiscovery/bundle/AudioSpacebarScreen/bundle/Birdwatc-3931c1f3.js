@@ -2,10 +2,10 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-3931c1f3"],
     {
-        907490: (r, a, g) => {
-            g.d(a, { r: () => c });
-            var o = g(122883);
-            const b = {
+        907490: (r, a, e) => {
+            e.d(a, { r: () => j });
+            var o = e(798324);
+            const t = {
                     black: { "": "rgba(0, 0, 0, var(--jbgo))" },
                     white: { "": "rgba(255, 255, 255, var(--jbgo))" },
                     slate: { "": "rgba(100, 116, 139, var(--jbgo))", 50: "rgba(248, 250, 252, var(--jbgo))", 100: "rgba(241, 245, 249, var(--jbgo))", 200: "rgba(226, 232, 240, var(--jbgo))", 300: "rgba(203, 213, 225, var(--jbgo))", 400: "rgba(148, 163, 184, var(--jbgo))", 500: "rgba(100, 116, 139, var(--jbgo))", 600: "rgba(71, 85, 105, var(--jbgo))", 700: "rgba(51, 65, 85, var(--jbgo))", 800: "rgba(30, 41, 59, var(--jbgo))", 900: "rgba(15, 23, 42, var(--jbgo))", 950: "rgba(2, 6, 23, var(--jbgo))" },
@@ -34,21 +34,21 @@
                     "x-bg-dark": { "": "rgba(0, 0, 0, var(--jbgo))" },
                     "x-bg-light": { "": "rgba(255, 255, 255, var(--jbgo))" },
                 },
-                e = (() => {
+                g = (() => {
                     const r = new Map(),
                         a = (r) => `${r}px`,
-                        g = (r) => 100 * r + "%",
-                        e = ["px", 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 6, 7, 8, 9, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 52, 56, 60, 64, 68, 72, 76, 80, 84, 88, 96, 108, 120],
-                        t = [1, 2, 3, 4, 6, 8, 12],
-                        n = (a, g) => {
-                            r.set((0, o.qB)(a.replace(".0", "")), g);
+                        e = (r) => 100 * r + "%",
+                        g = ["px", 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, 6, 7, 8, 9, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 52, 56, 60, 64, 68, 72, 76, 80, 84, 88, 96, 108, 120],
+                        b = [1, 2, 3, 4, 6, 8, 12],
+                        n = (a, e) => {
+                            r.set((0, o.qB)(a.replace(".0", "")), e);
                         };
-                    for (const r of e) {
-                        const g = "px" === r ? 1 : 4 * r;
-                        n(`m-${r}`, (r) => (r.margin = a(g))), n(`mt-${r}`, (r) => (r["margin-top"] = a(g))), n(`mr-${r}`, (r) => (r["margin-right"] = a(g))), n(`ml-${r}`, (r) => (r["margin-left"] = a(g))), n(`mb-${r}`, (r) => (r["margin-bottom"] = a(g))), n(`mx-${r}`, (r) => (r["margin-left"] = r["margin-right"] = a(g))), n(`my-${r}`, (r) => (r["margin-top"] = r["margin-bottom"] = a(g))), n(`-m-${r}`, (r) => (r.margin = a(-g))), n(`-mt-${r}`, (r) => (r["margin-top"] = a(-g))), n(`-mr-${r}`, (r) => (r["margin-right"] = a(-g))), n(`-ml-${r}`, (r) => (r["margin-right"] = a(-g))), n(`-mb-${r}`, (r) => (r["margin-bottom"] = a(-g))), n(`-mx-${r}`, (r) => (r["margin-left"] = r["margin-right"] = a(-g))), n(`-my-${r}`, (r) => (r["margin-top"] = r["margin-bottom"] = a(-g))), n(`p-${r}`, (r) => (r.padding = a(g))), n(`pt-${r}`, (r) => (r["padding-top"] = a(g))), n(`pr-${r}`, (r) => (r["padding-right"] = a(g))), n(`pl-${r}`, (r) => (r["padding-left"] = a(g))), n(`pb-${r}`, (r) => (r["padding-bottom"] = a(g))), n(`px-${r}`, (r) => (r["padding-left"] = r["padding-right"] = a(g))), n(`py-${r}`, (r) => (r["padding-top"] = r["padding-bottom"] = a(g))), n(`w-${r}`, (r) => (r.width = r["min-width"] = a(g))), n(`w-min-${r}`, (r) => (r["min-width"] = a(g))), n(`w-max-${r}`, (r) => (r["max-width"] = a(g))), n("w-max-full", (r) => (r["max-width"] = "100%")), n("w-min-full", (r) => (r["min-width"] = "100%")), n(`h-${r}`, (r) => (r.height = a(g))), n(`h-min-${r}`, (r) => (r["min-height"] = a(g))), n(`h-max-${r}`, (r) => (r["max-height"] = a(g))), n("h-max-full", (r) => (r["max-height"] = "100%")), n("h-min-full", (r) => (r["min-height"] = "100%")), n(`gap-${r}`, (r) => (r.gap = a(g)));
+                    for (const r of g) {
+                        const e = "px" === r ? 1 : 4 * r;
+                        n(`m-${r}`, (r) => (r.margin = a(e))), n(`mt-${r}`, (r) => (r["margin-top"] = a(e))), n(`mr-${r}`, (r) => (r["margin-right"] = a(e))), n(`ml-${r}`, (r) => (r["margin-left"] = a(e))), n(`mb-${r}`, (r) => (r["margin-bottom"] = a(e))), n(`mx-${r}`, (r) => (r["margin-left"] = r["margin-right"] = a(e))), n(`my-${r}`, (r) => (r["margin-top"] = r["margin-bottom"] = a(e))), n(`-m-${r}`, (r) => (r.margin = a(-e))), n(`-mt-${r}`, (r) => (r["margin-top"] = a(-e))), n(`-mr-${r}`, (r) => (r["margin-right"] = a(-e))), n(`-ml-${r}`, (r) => (r["margin-right"] = a(-e))), n(`-mb-${r}`, (r) => (r["margin-bottom"] = a(-e))), n(`-mx-${r}`, (r) => (r["margin-left"] = r["margin-right"] = a(-e))), n(`-my-${r}`, (r) => (r["margin-top"] = r["margin-bottom"] = a(-e))), n(`p-${r}`, (r) => (r.padding = a(e))), n(`pt-${r}`, (r) => (r["padding-top"] = a(e))), n(`pr-${r}`, (r) => (r["padding-right"] = a(e))), n(`pl-${r}`, (r) => (r["padding-left"] = a(e))), n(`pb-${r}`, (r) => (r["padding-bottom"] = a(e))), n(`px-${r}`, (r) => (r["padding-left"] = r["padding-right"] = a(e))), n(`py-${r}`, (r) => (r["padding-top"] = r["padding-bottom"] = a(e))), n(`w-${r}`, (r) => (r.width = r["min-width"] = a(e))), n(`w-min-${r}`, (r) => (r["min-width"] = a(e))), n(`w-max-${r}`, (r) => (r["max-width"] = a(e))), n("w-max-full", (r) => (r["max-width"] = "100%")), n("w-min-full", (r) => (r["min-width"] = "100%")), n(`h-${r}`, (r) => (r.height = a(e))), n(`h-min-${r}`, (r) => (r["min-height"] = a(e))), n(`h-max-${r}`, (r) => (r["max-height"] = a(e))), n("h-max-full", (r) => (r["max-height"] = "100%")), n("h-min-full", (r) => (r["min-height"] = "100%")), n(`gap-${r}`, (r) => (r.gap = a(e)));
                     }
-                    n("h-full", (r) => (r.height = g(1))), n("w-full", (r) => (r.width = g(1))), n("w-fit", (r) => (r.width = "fit-content"));
-                    for (const r of t) for (let a = 1; a < r; a++) n(`w-${a}/${r}`, (o) => (o.width = g(a / r))), n(`h-${a}/${r}`, (o) => (o.height = g(a / r)));
+                    n("h-full", (r) => (r.height = e(1))), n("w-full", (r) => (r.width = e(1))), n("w-fit", (r) => (r.width = "fit-content"));
+                    for (const r of b) for (let a = 1; a < r; a++) n(`w-${a}/${r}`, (o) => (o.width = e(a / r))), n(`h-${a}/${r}`, (o) => (o.height = e(a / r)));
                     for (let r = 0; r < 105; r += 5) n(`opacity-${r}`, (a) => (a.opacity = "" + r / 100)), n(`bg-opacity-${r}`, (a) => (a["--jbgo"] = "" + r / 100)), n(`border-opacity-${r}`, (a) => (a["--jbo"] = "" + r / 100));
                     for (const r of [
                         ["-none", 0],
@@ -61,8 +61,8 @@
                         ["-2xl", 5],
                         ["-3xl", 6],
                     ]) {
-                        const [g, o] = r;
-                        n(`border${g}`, (r) => (r["border-width"] = a(o))), n(`border-t${g}`, (r) => (r["border-top-width"] = a(o))), n(`border-b${g}`, (r) => (r["border-bottom-width"] = a(o))), n(`border-l${g}`, (r) => (r["border-left-width"] = a(o))), n(`border-r${g}`, (r) => (r["border-right-width"] = a(o)));
+                        const [e, o] = r;
+                        n(`border${e}`, (r) => (r["border-width"] = a(o))), n(`border-t${e}`, (r) => (r["border-top-width"] = a(o))), n(`border-b${e}`, (r) => (r["border-bottom-width"] = a(o))), n(`border-l${e}`, (r) => (r["border-left-width"] = a(o))), n(`border-r${e}`, (r) => (r["border-right-width"] = a(o)));
                     }
                     for (const r of [
                         ["bold", 700],
@@ -90,8 +90,8 @@
                         ["4xl", 31],
                         ["5xl", 34],
                     ]) {
-                        const [g, o] = r;
-                        n(`text-${g}`, (r) => (r["font-size"] = a(o)));
+                        const [e, o] = r;
+                        n(`text-${e}`, (r) => (r["font-size"] = a(o)));
                     }
                     n("underline", (r) => (r["text-decoration-line"] = "underline"));
                     for (const r of ["left", "center", "right"]) n(`text-${r}`, (a) => (a["text-align"] = r));
@@ -104,8 +104,8 @@
                         ["wider", 0.05],
                         ["widest", 0.1],
                     ]) {
-                        const [a, g] = r;
-                        n(`tracking-${a}`, (r) => (r["letter-spacing"] = `${g}`));
+                        const [a, e] = r;
+                        n(`tracking-${a}`, (r) => (r["letter-spacing"] = `${e}`));
                     }
                     for (const r of [
                         ["none", 1],
@@ -115,8 +115,8 @@
                         ["relaxed", 1.625],
                         ["loose", 2],
                     ]) {
-                        const [a, g] = r;
-                        n(`leading-${a}`, (r) => (r["line-height"] = `${g}`));
+                        const [a, e] = r;
+                        n(`leading-${a}`, (r) => (r["line-height"] = `${e}`));
                     }
                     for (const r of [
                         ["-none", 0],
@@ -130,23 +130,23 @@
                         ["-3xl", 36],
                         ["-full", 9999],
                     ]) {
-                        const [g, o] = r;
-                        n(`rounded${g}`, (r) => (r["border-radius"] = a(o))), n(`rounded-t${g}`, (r) => (r["border-top-left-radius"] = r["border-top-right-radius"] = a(o))), n(`rounded-b${g}`, (r) => (r["border-bottom-left-radius"] = r["border-bottom-right-radius"] = a(o))), n(`rounded-tr${g}`, (r) => (r["border-top-right-radius"] = a(o))), n(`rounded-br${g}`, (r) => (r["border-bottom-right-radius"] = a(o))), n(`rounded-bl${g}`, (r) => (r["border-bottom-left-radius"] = a(o))), n(`rounded-tl${g}`, (r) => (r["border-top-left-radius"] = a(o)));
+                        const [e, o] = r;
+                        n(`rounded${e}`, (r) => (r["border-radius"] = a(o))), n(`rounded-t${e}`, (r) => (r["border-top-left-radius"] = r["border-top-right-radius"] = a(o))), n(`rounded-b${e}`, (r) => (r["border-bottom-left-radius"] = r["border-bottom-right-radius"] = a(o))), n(`rounded-tr${e}`, (r) => (r["border-top-right-radius"] = a(o))), n(`rounded-br${e}`, (r) => (r["border-bottom-right-radius"] = a(o))), n(`rounded-bl${e}`, (r) => (r["border-bottom-left-radius"] = a(o))), n(`rounded-tl${e}`, (r) => (r["border-top-left-radius"] = a(o)));
                     }
                     for (const r of ["text", "bg", "border"])
-                        for (const a in b) {
-                            const g = b[a];
-                            for (const o in g) {
-                                const b = `${r}-${"" === o ? a : `${a}-${o}`}`;
+                        for (const a in t) {
+                            const e = t[a];
+                            for (const o in e) {
+                                const t = `${r}-${"" === o ? a : `${a}-${o}`}`;
                                 switch (r) {
                                     case "text":
-                                        n(b, (r) => (r.color = `${g[o]}`));
+                                        n(t, (r) => (r.color = `${e[o]}`));
                                         break;
                                     case "bg":
-                                        n(b, (r) => (r["background-color"] = `${g[o]}`));
+                                        n(t, (r) => (r["background-color"] = `${e[o]}`));
                                         break;
                                     case "border":
-                                        n(b, (r) => (r["border-color"] = `${g[o]}`));
+                                        n(t, (r) => (r["border-color"] = `${e[o]}`));
                                 }
                             }
                         }
@@ -214,187 +214,187 @@
                             r["background-image"] = "linear-gradient(to left top, var(--bg-gradient-from), var(--bg-gradient-to))";
                         });
                     for (const r of ["from", "to"])
-                        for (const a in b) {
-                            const g = b[a];
-                            for (const o in g) {
-                                const b = `${r}-${"" === o ? a : `${a}-${o}`}`;
+                        for (const a in t) {
+                            const e = t[a];
+                            for (const o in e) {
+                                const t = `${r}-${"" === o ? a : `${a}-${o}`}`;
                                 switch (r) {
                                     case "from":
-                                        n(b, (r) => (r["--bg-gradient-from"] = `${g[o]}`));
+                                        n(t, (r) => (r["--bg-gradient-from"] = `${e[o]}`));
                                         break;
                                     case "to":
-                                        n(b, (r) => (r["--bg-gradient-to"] = `${g[o]}`));
+                                        n(t, (r) => (r["--bg-gradient-to"] = `${e[o]}`));
                                 }
                             }
                         }
                     return r;
                 })(),
-                t = { 11: "dark", 12: "light", 13: "dim" },
+                b = { 11: "dark", 12: "light", 13: "dim" },
                 n = { 1: "hover", 2: "focus", 3: "active", 4: ":selected" },
                 i = { 33: "dark:hover", 34: "light:hover" },
-                v = { 28: "@media only screen and (max-width: 600px)", 29: "@media only screen and (min-width: 600px)", 30: "@media only screen and (min-width: 768px)", 31: "@media only screen and (min-width: 992px)", 32: "@media only screen and (min-width: 1200px)" },
-                j = (r) =>
+                s = { 28: "@media only screen and (max-width: 600px)", 29: "@media only screen and (min-width: 600px)", 30: "@media only screen and (min-width: 768px)", 31: "@media only screen and (min-width: 992px)", 32: "@media only screen and (min-width: 1200px)" },
+                l = (r) =>
                     Object.entries(r)
                         .map(([r, a]) => `${r}:${a}`)
                         .join(";"),
                 d = ([r, a]) => {
-                    const g = {};
-                    if ((e.get(a)?.(g), r in t)) return `[data-theme="${t[r]}"] .j${a.toString(36)}${r}{${j(g)}}`;
-                    if (r in n) return `.j${a.toString(36)}${r}:${n[r]}{${j(g)}}`;
+                    const e = {};
+                    if ((g.get(a)?.(e), r in b)) return `[data-theme="${b[r]}"] .j${a.toString(36)}${r}{${l(e)}}`;
+                    if (r in n) return `.j${a.toString(36)}${r}:${n[r]}{${l(e)}}`;
                     if (r in i) {
-                        const [o, b] = i[r]?.split(":") ?? [];
-                        return o && b ? `[data-theme="${o}"] .j${a.toString(36)}${r}:${b}{${j(g)}}` : "";
+                        const [o, t] = i[r]?.split(":") ?? [];
+                        return o && t ? `[data-theme="${o}"] .j${a.toString(36)}${r}:${t}{${l(e)}}` : "";
                     }
-                    return r in v ? `${v[r]} {.j${a.toString(36)}${r}{${j(g)}}}` : `.j${a.toString(36)}${r}{${j(g)}}`;
+                    return r in s ? `${s[r]} {.j${a.toString(36)}${r}{${l(e)}}}` : `.j${a.toString(36)}${r}{${l(e)}}`;
                 },
-                l = new Set(),
-                s = new Set();
-            function c(r, a) {
-                const g = a.map((a) => `${r}:${a}`);
+                c = new Set(),
+                v = new Set();
+            function j(r, a) {
+                const e = a.map((a) => `${r}:${a}`);
                 let o = !1;
-                for (const r of g) s.has(r) || (l.add(r), (o = !0));
+                for (const r of e) v.has(r) || (c.add(r), (o = !0));
                 o &&
                     queueMicrotask(() => {
-                        if (!l.size) return;
+                        if (!c.size) return;
                         const r = document.createElement("style");
-                        (r.innerText = [...l]
+                        (r.innerText = [...c]
                             .map((r) => {
-                                const [a, g] = r.split(":");
-                                return a && g ? d([Number.parseInt(a), Number.parseInt(g)]) : "";
+                                const [a, e] = r.split(":");
+                                return a && e ? d([Number.parseInt(a), Number.parseInt(e)]) : "";
                             })
                             .join("")),
                             document.head.appendChild(r),
-                            l.forEach((r) => s.add(r)),
-                            l.clear();
+                            c.forEach((r) => v.add(r)),
+                            c.clear();
                     });
             }
             new Set(), new Set();
         },
-        705156: (r, a, g) => {
-            g.d(a, { O: () => X });
-            var o = g(552322),
-                b = g(960546),
-                e = g(655419),
-                t = g(736938),
-                n = g(110972),
-                i = g(897531),
-                v = g(746066),
-                j = g(173590),
-                d = g(261925),
-                l = g(22588),
-                s = g(166490),
-                c = g(161276),
-                m = g(399762),
-                u = g(631389),
-                f = g(723395),
-                h = g(140682),
-                p = g(315111),
-                x = g(971668),
-                $ = g(790119),
-                w = g(550932),
-                k = g(514378),
-                Z = g(608594),
-                y = g(96675),
-                S = g(324212),
-                C = g(379265),
-                I = g(447763),
-                R = g(553366),
-                F = g(969517),
-                O = g(547645),
-                P = g(229476),
-                T = g(849957),
-                V = g(128069),
-                A = g(475122),
-                z = g(771017),
-                M = g(315198),
-                N = g(139466),
-                E = g(353151),
-                G = g(314672),
-                L = g(88214),
-                B = g(272403),
-                D = g(64614),
-                _ = g(26296),
-                W = g(472036),
-                q = g(400441),
-                H = g(696281),
-                Y = g(122883);
+        705156: (r, a, e) => {
+            e.d(a, { O: () => Y });
+            var o = e(552322),
+                t = e(960546),
+                g = e(655419),
+                b = e(736938),
+                n = e(110972),
+                i = e(897531),
+                s = e(746066),
+                l = e(173590),
+                d = e(261925),
+                c = e(22588),
+                v = e(166490),
+                j = e(161276),
+                m = e(399762),
+                u = e(631389),
+                f = e(723395),
+                p = e(140682),
+                _ = e(315111),
+                h = e(971668),
+                w = e(790119),
+                x = e(550932),
+                $ = e(514378),
+                k = e(608594),
+                y = e(96675),
+                Z = e(324212),
+                S = e(379265),
+                I = e(447763),
+                C = e(553366),
+                F = e(969517),
+                T = e(547645),
+                R = e(229476),
+                P = e(849957),
+                M = e(128069),
+                O = e(475122),
+                V = e(771017),
+                A = e(315198),
+                D = e(139466),
+                B = e(353151),
+                E = e(314672),
+                G = e(88214),
+                N = e(272403),
+                z = e(64614),
+                q = e(26296),
+                L = e(472036),
+                W = e(400441),
+                H = e(696281),
+                U = e(798324);
             const J = {
-                    ActionResponder: v.Z,
+                    ActionResponder: s.Z,
                     AdaptiveView: ar,
-                    Button: e.Z,
+                    Button: g.Z,
                     ContextMenu: ar,
-                    Counter: t.Z,
+                    Counter: b.Z,
                     Cover: n.Z,
                     DebugProps: ar,
-                    Divider: gr,
-                    Ellipse: gr,
+                    Divider: er,
+                    Ellipse: er,
                     Feed: i.Z,
                     "Feed.Item": ar,
-                    FeedPage: function ({ el: r }) {
-                        return (0, o.jsx)(K, { el: r, desc: "not for render - sth went wrong" });
+                    FeedPage: function (r) {
+                        return (0, o.jsx)(K, { ...r, desc: "not for render - sth went wrong" });
                     },
                     FocusImage: rr,
-                    Form: j.Z,
+                    Form: l.Z,
                     "Form.AsYouType": rr,
                     "Form.Group": ar,
                     "Form.Group.Reset": ar,
                     "Form.GroupCounter": rr,
                     "Form.Reset": ar,
-                    "Form.Result": gr,
+                    "Form.Result": er,
                     "Form.Selection": d.Z,
-                    "Form.Submit": l.Z,
+                    "Form.Submit": c.Z,
                     GlassMorphicView: rr,
-                    Grid: x.Z,
-                    "Grid.Cell": $.Z,
-                    "Grid.Row": w.Z,
-                    HScroller: k.Z,
-                    HStack: gr,
-                    Icon: Z.C,
+                    Grid: h.Z,
+                    "Grid.Cell": w.Z,
+                    "Grid.Row": x.Z,
+                    HScroller: $.Z,
+                    HStack: er,
+                    Icon: k.C,
                     If: y.Z,
-                    Image: S.Z,
-                    Input: s.Z,
-                    "Input.Checkbox": c.Z,
+                    Image: Z.Z,
+                    Input: v.Z,
+                    "Input.Checkbox": j.Z,
                     "Input.Code": m.Z,
                     "Input.Multiline": u.Z,
                     "Input.Option": f.Z,
-                    "Input.Phone": h.Z,
+                    "Input.Phone": p.Z,
                     "Input.Reset": ar,
-                    "Input.Select": p.Z,
+                    "Input.Select": _.Z,
                     Label: rr,
-                    Link: C.Z,
+                    Link: S.Z,
                     List: I.Z,
-                    List2: b.Z,
+                    List2: t.Z,
                     Markdown: rr,
                     Menu: rr,
-                    Nav: R.Z,
+                    Nav: C.Z,
                     Overlay: ar,
                     Page: F.Z,
                     "Page.Section": F.Z,
-                    Pager: O.Z,
+                    Pager: T.Z,
                     ParticleChaos: rr,
-                    Popover: P.Z,
-                    Rect: gr,
-                    Remote: T.Z,
-                    RichText: V.Z,
-                    ShareLink: A.Z,
-                    Sheet: z.Z,
+                    Popover: R.Z,
+                    Rect: er,
+                    Remote: P.Z,
+                    RichText: M.Z,
+                    ShareLink: O.Z,
+                    Sheet: V.Z,
                     SignInWithAppleButton: rr,
                     SignupArkoseSecurityChallenge: or,
-                    Space: gr,
-                    Spinner: M.Z,
-                    StoryPager: G.Z,
-                    "StoryPager.Element": E.Z,
-                    "StoryPager.Story": N.Z,
-                    Text: L.Z,
+                    Space: er,
+                    Spinner: A.Z,
+                    StoryPager: E.Z,
+                    "StoryPager.Element": B.Z,
+                    "StoryPager.Story": D.Z,
+                    Text: G.Z,
                     TiledView: rr,
-                    Time: B.Z,
-                    Timer: D.Z,
+                    Time: N.Z,
+                    Timer: z.Z,
                     Toggle: rr,
                     TournamentBracket: rr,
-                    VScroller: q.Z,
-                    VStack: gr,
-                    Video: _.Z,
-                    View: W.Z,
+                    VScroller: W.Z,
+                    VStack: er,
+                    Video: q.Z,
+                    View: L.Z,
                     XClipAppStoreOverlay: ar,
                     ZStack: H.Z,
                     Zoomable: rr,
@@ -404,103 +404,229 @@
                     "x.com.Video": or,
                     "x.com.WebView": rr,
                 },
-                Q = new Map(Object.entries(J).map(([r, a]) => [(0, Y.$3)(r), a])),
-                U = new Map(Object.entries(J).map(([r]) => [(0, Y.$3)(r), r])),
-                X = (r) => Q.get(r.type) ?? rr;
+                Q = new Map(Object.entries(J).map(([r, a]) => [(0, U.$3)(r), a])),
+                X = new Map(Object.entries(J).map(([r]) => [(0, U.$3)(r), r])),
+                Y = (r) => (r ? (Q.get(r.type) ?? rr) : rr);
             function K({ el: r, desc: a = "not found - fix it" }) {
-                return (0, o.jsxs)("h3", { children: ["[", U.get(r.type) ?? r.type, "]:", a] });
+                return (0, o.jsxs)("h3", { children: ["[", X.get(r?.type ?? 0) ?? r?.type ?? "unknown", "]:", a] });
             }
-            function rr({ el: r }) {
-                return (0, o.jsx)(K, { el: r });
+            function rr(r) {
+                return (0, o.jsx)(K, { ...r });
             }
-            function ar({ el: r }) {
-                return (0, o.jsx)(K, { el: r });
+            function ar(r) {
+                return (0, o.jsx)(K, { ...r });
             }
-            function gr({ el: r }) {
-                return (0, o.jsx)(K, { el: r, desc: "deprecated - remove it" });
+            function er(r) {
+                return (0, o.jsx)(K, { ...r, desc: "deprecated - remove it" });
             }
-            function or({ el: r }) {
-                return (0, o.jsx)(K, { el: r, desc: "should be in web - implement it." });
+            function or(r) {
+                return (0, o.jsx)(K, { ...r, desc: "should be in web - implement it." });
             }
         },
-        869593: (r, a, g) => {
-            g.d(a, { QI: () => t, h8: () => e });
-            var o = g(202784);
-            const b = (0, o.createContext)({}),
-                e = () => (0, o.useContext)(b),
-                t = (r, a) => ({ action: r, ...a });
+        869593: (r, a, e) => {
+            e.d(a, { QI: () => b, h8: () => g });
+            var o = e(202784);
+            const t = (0, o.createContext)({}),
+                g = () => (0, o.useContext)(t),
+                b = (r, a) => ({ action: r, ...a });
         },
-        644109: (r, a, g) => {
-            function o(r, a) {
-                let g;
-                return function (...o) {
-                    clearTimeout(g), (g = setTimeout(() => r.apply(this, o), a));
+        424012: (r, a, e) => {
+            var o, t, g, b, n, i, s, l, d, c;
+            function v(r) {
+                const [a, e, g, d, c, v, j, m, u, f, p, _, h, w, x, $, k] = r,
+                    y = g,
+                    Z = u,
+                    S = a({ type: j, props: d(j, y), children: c(y), id: v(Z), extend: v(y) }),
+                    I = w({ [n.atom]: _(n.atom, a({ id: Z })), [n.atom_with_root]: _(n.atom_with_root, a({ id: Z, root: y })), [n.bag_key]: _(n.bag_key, a({ id: Z, key: j, root: y })), [n.str_key]: _(n.str_key, a({ id: Z, key: h, root: y })), [n.url_param]: _(n.url_param, a({ id: Z, key: h, root: y })) }),
+                    C = a({ ref: I, prop_ref: y, is_default: p }),
+                    F = w({ [b.null]: _(b.null, I), [b.set]: _(b.set, x(I, y)), [b.inc]: _(b.inc, x(I, j)), [b.str_append]: _(b.str_append, x(I, h)), [b.list_insert]: _(b.list_insert, $(I, y, v(j))), [b.list_remove]: _(b.list_remove, x(I, y)), [b.toggle]: _(b.toggle, x(I, v(x(y, y)))), [b.merge_bag]: _(b.merge_bag, x(I, y)), [b.merge_str_dict]: _(b.merge_str_dict, x(I, y)) }),
+                    T = w({ [i.page]: _(i.page, a({ url: y, preview: v(y), replace: p })), [i.page_reset_to]: _(i.page_reset_to, a({ url: y, preview: v(y), replace: p })), [i.page_post]: _(i.page_post, a({ url: y, body: v(y), preview: v(y), replace: p })), [i.dismiss]: k([i.dismiss]), [i.link]: _(i.link, a({ url: y })), [i.back]: k([i.back]), [i.back_root]: k([i.back_root]), [i.scroll_top]: k([i.scroll_top]), [i.scroll_bottom]: k([i.scroll_bottom]), [i.scroll_id]: _(i.scroll_id, a({ id: y })) }),
+                    R = w((r) => ({ [t.change]: _(t.change, F), [t.confirm]: _(t.confirm, a({ ref: y, action: r, cancel: v(r) })), [t.multi]: _(t.multi, c(r)), [t.post_request]: _(t.post_request, a({ url: y, body: y, complete: v(r), error: v(r), optimistic: v(r) })), [t.haptic]: _(t.haptic, a({ action: r, intensity: j })), [t.present]: _(t.present, a({ ref: y, type: e })), [t.navigate]: _(t.navigate, T), [t.refresh]: _(t.refresh, a({ type: e, id: v(Z) })), [t.cache_clear]: _(t.cache_clear, h), [t.prefetch]: _(t.prefetch, a({ urls: c(h), priority: e })), [t.scribe]: _(t.scribe, y), [t.system]: _(t.system, a({ type: e, ref: y })), [t.delayed]: _(t.delayed, a({ action: r, delaySeconds: j })), [t.auth]: _(t.auth, a({ data: h, secret: h, knownDeviceToken: h })) })),
+                    P = w((r) => ({ [s.null]: _(s.null, a({ ref: I })), [s.not_null]: _(s.not_null, a({ ref: I })), [s.is]: _(s.is, a({ ref: I, value: y })), [s.is_not]: _(s.is_not, a({ ref: I, value: y })), [s.in]: _(s.in, a({ ref: I, value: c(y) })), [s.not_in]: _(s.not_in, a({ ref: I, value: c(y) })), [s.gt]: _(s.gt, a({ ref: I, value: y })), [s.gte]: _(s.gte, a({ ref: I, value: y })), [s.lt]: _(s.lt, a({ ref: I, value: y })), [s.lte]: _(s.lte, a({ ref: I, value: y })), [s.starts_with]: _(s.starts_with, a({ ref: I, value: h })), [s.ends_with]: _(s.ends_with, a({ ref: I, value: h })), [s.includes]: _(s.includes, a({ ref: I, value: h })), [s.and]: _(s.and, x(r, r)), [s.or]: _(s.or, x(r, r)), [s.not]: _(s.not, r) })),
+                    M = c(c(m)),
+                    O = c($(e, h, v(h))),
+                    V = w({ [o.str]: _(o.str, h), [o.int]: _(o.int, m), [o.mods]: _(o.mods, M), [o.conditional_mods]: _(o.conditional_mods, c(x(M, P))), [o.id]: _(o.id, Z), [o.f64]: _(o.f64, f), [o.bool]: _(o.bool, p), [o.element]: _(o.element, y), [o.elements]: _(o.elements, c(y)), [o.enum]: _(o.enum, g), [o.url]: _(o.url, h), [o.rich_text]: _(o.rich_text, O), [o.date]: _(o.date, u), [o.scribe]: _(o.scribe, y), [o.bag]: _(o.bag, d(j, y)), [o.str_dict]: _(o.str_dict, d(h, h)), [o.atom]: _(o.atom, C), [o.action]: _(o.action, R), [o.list]: _(o.list, c(y)), [o.predicate]: _(o.predicate, P), [o.feed]: _(o.feed, c(y)), [o.str_list]: _(o.str_list, c(h)), [o.int_list]: _(o.int_list, c(m)), [o.f64_list]: _(o.f64_list, c(f)), [o.bool_list]: _(o.bool_list, c(p)), [o.__notfound]: _(o.__notfound, k(void 0)) }),
+                    A = a({ els: c(S), props: c(V), ts: m }),
+                    D = a({ ref: y, t: v(m) });
+                return w({ [l.dom_data]: _(l.dom_data, A), [l.dom_ready]: _(l.dom_ready, D), [l.action]: _(l.action, R) });
+            }
+            function j() {
+                const r = (r) => r.uint(),
+                    a = (r) => r.u8(),
+                    e = (r) => r.bool(),
+                    o = (r, a) => (e) => [r(e), a(e)],
+                    t = (a) => (e) =>
+                        Array(r(e))
+                            .fill(0)
+                            .map(() => a(e)),
+                    g = v([
+                        (r) => (a) => {
+                            const e = {};
+                            for (const o in r) e[o] = r[o](a);
+                            return e;
+                        },
+                        a,
+                        r,
+                        (r, a) => (e) => new Map(t(o(r, a))(e)),
+                        t,
+                        (r) => (a) => (e(a) ? r(a) : null),
+                        (r) => r.i16(),
+                        (r) => r.i32(),
+                        (r) => r.i64(),
+                        (r) => r.f64(),
+                        e,
+                        (r, a) => (e) => [r, a(e)],
+                        (r) => r.str(),
+                        (r) => {
+                            const e = {},
+                                o = (r) => {
+                                    const o = a(r),
+                                        t = e[o];
+                                    if (!t) throw new Error(`No decoder found for tag ${o}`);
+                                    return t(r);
+                                };
+                            return Object.assign(e, "function" == typeof r ? r(o) : r), o;
+                        },
+                        o,
+                        (r, a, e) => (o) => [r(o), a(o), e(o)],
+                        (r) => (a) => r,
+                    ]);
+                return { decodeMessage: (r) => g(r) };
+            }
+            function m(r) {
+                const a = new DataView(r);
+                let e = 0;
+                const o = () => a.getUint8(e++),
+                    t = () => {
+                        let r,
+                            a = 0,
+                            e = 0;
+                        do {
+                            (r = o()), (a += e < 28 ? (127 & r) << e : (127 & r) * 2 ** e), (e += 7);
+                        } while (128 & r);
+                        return a;
+                    };
+                return {
+                    u8: o,
+                    i16: () => {
+                        const r = a.getInt16(e, !0);
+                        return (e += 2), r;
+                    },
+                    i32: () => {
+                        const r = a.getInt32(e, !0);
+                        return (e += 4), r;
+                    },
+                    i64: () => {
+                        const r = a.getBigInt64(e, !0);
+                        return (e += 8), r;
+                    },
+                    f64: () => {
+                        const r = a.getFloat64(e, !0);
+                        return (e += 8), r;
+                    },
+                    str: () => {
+                        const r = t(),
+                            o = new TextDecoder().decode(a.buffer.slice(e, e + r));
+                        return (e += r), o;
+                    },
+                    bool: () => !!o(),
+                    uint: t,
                 };
             }
-            g.d(a, { D: () => o });
+            e.d(a, { J: () => i, RB: () => s, ZI: () => l, _I: () => o, ai: () => d, aw: () => b, fx: () => n, je: () => t, r1: () => m, xv: () => j }),
+                (function (r) {
+                    (r[(r.str = 0)] = "str"), (r[(r.int = 1)] = "int"), (r[(r.mods = 3)] = "mods"), (r[(r.id = 4)] = "id"), (r[(r.f64 = 5)] = "f64"), (r[(r.bool = 6)] = "bool"), (r[(r.element = 7)] = "element"), (r[(r.elements = 8)] = "elements"), (r[(r.enum = 10)] = "enum"), (r[(r.url = 11)] = "url"), (r[(r.rich_text = 12)] = "rich_text"), (r[(r.date = 14)] = "date"), (r[(r.scribe = 15)] = "scribe"), (r[(r.bag = 16)] = "bag"), (r[(r.str_dict = 17)] = "str_dict"), (r[(r.atom = 18)] = "atom"), (r[(r.action = 19)] = "action"), (r[(r.list = 21)] = "list"), (r[(r.predicate = 22)] = "predicate"), (r[(r.feed = 24)] = "feed"), (r[(r.conditional_mods = 25)] = "conditional_mods"), (r[(r.str_list = 26)] = "str_list"), (r[(r.int_list = 27)] = "int_list"), (r[(r.f64_list = 28)] = "f64_list"), (r[(r.bool_list = 29)] = "bool_list"), (r[(r.__notfound = 13)] = "__notfound");
+                })(o || (o = {})),
+                (function (r) {
+                    (r[(r.change = 0)] = "change"), (r[(r.confirm = 1)] = "confirm"), (r[(r.multi = 2)] = "multi"), (r[(r.post_request = 3)] = "post_request"), (r[(r.haptic = 4)] = "haptic"), (r[(r.present = 5)] = "present"), (r[(r.navigate = 6)] = "navigate"), (r[(r.refresh = 7)] = "refresh"), (r[(r.cache_clear = 8)] = "cache_clear"), (r[(r.prefetch = 9)] = "prefetch"), (r[(r.scribe = 10)] = "scribe"), (r[(r.system = 11)] = "system"), (r[(r.delayed = 12)] = "delayed"), (r[(r.auth = 13)] = "auth");
+                })(t || (t = {})),
+                (function (r) {
+                    (r[(r.mm_pick = 1)] = "mm_pick"), (r[(r.video_prefetch = 2)] = "video_prefetch"), (r[(r.open_timeline = 3)] = "open_timeline"), (r[(r.notifications_permission = 4)] = "notifications_permission"), (r[(r.contacts_permission = 5)] = "contacts_permission");
+                })(g || (g = {})),
+                (function (r) {
+                    (r[(r.null = 0)] = "null"), (r[(r.set = 1)] = "set"), (r[(r.inc = 2)] = "inc"), (r[(r.str_append = 3)] = "str_append"), (r[(r.list_insert = 4)] = "list_insert"), (r[(r.list_remove = 5)] = "list_remove"), (r[(r.toggle = 6)] = "toggle"), (r[(r.merge_bag = 7)] = "merge_bag"), (r[(r.merge_str_dict = 8)] = "merge_str_dict");
+                })(b || (b = {})),
+                (function (r) {
+                    (r[(r.atom = 0)] = "atom"), (r[(r.bag_key = 1)] = "bag_key"), (r[(r.str_key = 2)] = "str_key"), (r[(r.url_param = 3)] = "url_param"), (r[(r.atom_with_root = 4)] = "atom_with_root");
+                })(n || (n = {})),
+                (function (r) {
+                    (r[(r.page = 0)] = "page"), (r[(r.page_post = 1)] = "page_post"), (r[(r.dismiss = 2)] = "dismiss"), (r[(r.back = 3)] = "back"), (r[(r.back_root = 4)] = "back_root"), (r[(r.scroll_top = 5)] = "scroll_top"), (r[(r.scroll_bottom = 6)] = "scroll_bottom"), (r[(r.scroll_id = 7)] = "scroll_id"), (r[(r.link = 8)] = "link"), (r[(r.page_reset_to = 9)] = "page_reset_to");
+                })(i || (i = {})),
+                (function (r) {
+                    (r[(r.null = 0)] = "null"), (r[(r.is = 1)] = "is"), (r[(r.is_not = 2)] = "is_not"), (r[(r.in = 3)] = "in"), (r[(r.not_in = 4)] = "not_in"), (r[(r.gt = 5)] = "gt"), (r[(r.gte = 6)] = "gte"), (r[(r.lt = 7)] = "lt"), (r[(r.lte = 8)] = "lte"), (r[(r.starts_with = 9)] = "starts_with"), (r[(r.ends_with = 10)] = "ends_with"), (r[(r.includes = 11)] = "includes"), (r[(r.and = 12)] = "and"), (r[(r.or = 13)] = "or"), (r[(r.not = 14)] = "not"), (r[(r.not_null = 15)] = "not_null");
+                })(s || (s = {})),
+                (function (r) {
+                    (r[(r.dom_data = 0)] = "dom_data"), (r[(r.dom_ready = 1)] = "dom_ready"), (r[(r.action = 2)] = "action");
+                })(l || (l = {})),
+                (function (r) {
+                    (r[(r.sheet = 0)] = "sheet"), (r[(r.menu = 1)] = "menu"), (r[(r.toast = 2)] = "toast"), (r[(r.full_screen = 3)] = "full_screen"), (r[(r.popover = 4)] = "popover"), (r[(r.modal = 5)] = "modal"), (r[(r.drawer_right = 6)] = "drawer_right"), (r[(r.drawer_left = 7)] = "drawer_left"), (r[(r.docked_bottom = 8)] = "docked_bottom"), (r[(r.docked_top = 9)] = "docked_top"), (r[(r.share_pane = 10)] = "share_pane");
+                })(d || (d = {})),
+                (function (r) {
+                    (r[(r.page = 0)] = "page"), (r[(r.remote_loader = 1)] = "remote_loader"), (r[(r.feed_full = 2)] = "feed_full"), (r[(r.feed_top = 3)] = "feed_top"), (r[(r.feed_more = 4)] = "feed_more");
+                })(c || (c = {}));
         },
-        916025: (r, a, g) => {
+        644109: (r, a, e) => {
+            function o(r, a) {
+                let e;
+                return function (...o) {
+                    clearTimeout(e), (e = setTimeout(() => r.apply(this, o), a));
+                };
+            }
+            e.d(a, { D: () => o });
+        },
+        916025: (r, a, e) => {
             function o(r) {
                 return 0 === Object.keys(r).length;
             }
-            g.d(a, { x: () => o });
+            e.d(a, { x: () => o });
         },
-        830030: (r, a, g) => {
+        830030: (r, a, e) => {
             function o(r) {
                 return Object.fromEntries(Object.entries(r).filter(([r, a]) => null != a));
             }
-            g.d(a, { e: () => o });
+            e.d(a, { e: () => o });
         },
-        113158: (r, a, g) => {
+        113158: (r, a, e) => {
             function o() {}
-            g.d(a, { Z: () => o });
+            e.d(a, { Z: () => o });
         },
-        770688: (r, a, g) => {
-            g.d(a, { h: () => b });
+        770688: (r, a, e) => {
+            e.d(a, { h: () => t });
             let o = 0;
-            const b = () => ((o += 1), o.toString(36));
+            const t = () => ((o += 1), o.toString(36));
         },
-        326762: (r, a, g) => {
-            g.d(a, { Z: () => b });
-            var o = g(202784);
-            function b(r, a) {
-                const g = (0, o.useRef)(r);
+        326762: (r, a, e) => {
+            e.d(a, { Z: () => t });
+            var o = e(202784);
+            function t(r, a) {
+                const e = (0, o.useRef)(r);
                 (0, o.useEffect)(() => {
-                    g.current = r;
+                    e.current = r;
                 }, [r]),
                     (0, o.useEffect)(() => {
                         const r = setInterval(() => {
-                            g.current();
+                            e.current();
                         }, a);
                         return () => clearInterval(r);
                     }, [a]);
             }
         },
-        910352: (r, a, g) => {
-            g.d(a, { Z: () => b });
-            var o = g(202784);
-            const b = function (r) {
+        910352: (r, a, e) => {
+            e.d(a, { Z: () => t });
+            var o = e(202784);
+            const t = function (r) {
                 const a = (0, o.useRef)(r);
                 return (a.current = r), (0, o.useCallback)((...r) => a.current(...r), []);
             };
         },
-        193686: (r, a, g) => {
-            g.d(a, { P: () => e });
-            var o = g(552322),
-                b = g(840489);
-            function e({ animating: r = !0, color: a = "primary", size: g = "small" }) {
-                return (0, o.jsx)("div", { className: "flex w-full items-center justify-center", children: (0, o.jsx)("div", { className: (0, b.Z)("animate-spin", !r && "pause", { "h-3 w-3": "xSmall" === g, "h-5 w-5": "small" === g, "h-9 w-9": "large" === g }), children: (0, o.jsxs)("svg", { height: "100%", viewBox: "0 0 32 32", width: "100%", children: [(0, o.jsx)("circle", { className: (0, b.Z)("opacity-20", { "stroke-background": "background" === a, "stroke-primary": "primary" === a, "stroke-text": "text" === a }), cx: "16", cy: "16", fill: "none", r: "14", strokeWidth: "4" }), (0, o.jsx)("circle", { className: (0, b.Z)({ "stroke-background": "background" === a, "stroke-primary": "primary" === a, "stroke-text": "text" === a }), cx: "16", cy: "16", fill: "none", r: "14", strokeDasharray: "80", strokeDashoffset: 60, strokeWidth: "4" })] }) }) });
-            }
-        },
-        437712: (r, a, g) => {
-            g.d(a, { J: () => t });
-            var o = g(552322),
-                b = g(927382);
-            const e = (0, g(110929).j)("bg-background z-50 overflow-hidden shadow-md outline-none", { variants: { borderRadius: { "2xLarge": "rounded-2xl", "3xLarge": "rounded-3xl", full: "rounded-full", large: "rounded-lg", medium: "rounded-md", none: "rounded-none", small: "rounded-sm", xLarge: "rounded-xl", true: "rounded" } } });
-            function t({ borderRadius: r = "medium", children: a, open: g, onOpenChange: t, trigger: n, withArrow: i, ...v }) {
-                return (0, o.jsxs)(b.fC, { open: g, onOpenChange: t, children: [(0, o.jsx)(b.xz, { asChild: !0, children: n }), (0, o.jsx)(b.h_, { children: (0, o.jsxs)(b.VY, { ...v, className: e({ borderRadius: r }), children: [a, i && (0, o.jsx)(b.Eh, { className: "fill-background" })] }) })] });
+        193686: (r, a, e) => {
+            e.d(a, { P: () => g });
+            var o = e(552322),
+                t = e(840489);
+            function g({ animating: r = !0, color: a = "primary", size: e = "small" }) {
+                return (0, o.jsx)("div", { className: "flex w-full items-center justify-center", children: (0, o.jsx)("div", { className: (0, t.Z)("animate-spin", !r && "pause", { "h-3 w-3": "xSmall" === e, "h-5 w-5": "small" === e, "h-9 w-9": "large" === e }), children: (0, o.jsxs)("svg", { height: "100%", viewBox: "0 0 32 32", width: "100%", children: [(0, o.jsx)("circle", { className: (0, t.Z)("opacity-20", { "stroke-background": "background" === a, "stroke-primary": "primary" === a, "stroke-text": "text" === a }), cx: "16", cy: "16", fill: "none", r: "14", strokeWidth: "4" }), (0, o.jsx)("circle", { className: (0, t.Z)({ "stroke-background": "background" === a, "stroke-primary": "primary" === a, "stroke-text": "text" === a }), cx: "16", cy: "16", fill: "none", r: "14", strokeDasharray: "80", strokeDashoffset: 60, strokeWidth: "4" })] }) }) });
             }
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-3931c1f3.abaec67a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-3931c1f3.9360419a.js.map

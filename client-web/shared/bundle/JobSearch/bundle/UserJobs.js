@@ -10,10 +10,10 @@
                 l = d(392237),
                 c = d(674132);
             const i = d.n(c)().e5b0063d;
-            let u = 0;
-            class t extends r.Component {
+            let t = 0;
+            class u extends r.Component {
                 constructor() {
-                    super(), (this._listDomId = `accessible-list-${u}`), (u += 1);
+                    super(), (this._listDomId = `accessible-list-${t}`), (t += 1);
                 }
                 render() {
                     const { children: e, title: a } = this.props,
@@ -21,7 +21,7 @@
                     return r.createElement(n.Z, { "aria-labelledby": this._listDomId, role: "region" }, r.createElement(o.Z, { "aria-level": 1, id: this._listDomId, role: "heading", style: l.default.visuallyHidden }, a), r.createElement(n.Z, { "aria-label": d }, e));
                 }
             }
-            const s = t;
+            const s = u;
         },
         414939: (e, a, d) => {
             d.d(a, { Z: () => i });
@@ -47,10 +47,10 @@
                 l = d(392237),
                 c = d(674132),
                 i = d.n(c),
-                u = d(262009);
-            const t = i().a71d7584,
+                t = d(262009);
+            const u = i().a71d7584,
                 s = l.default.create((e) => ({ label: { alignSelf: "auto" }, featuredLabel: { display: "flex", flexDirection: "row", gap: e.spaces.space4, alignItems: "center" }, featuredIcon: { height: e.spaces.space12 } })),
-                b = () => r.createElement(o.ZP, { style: s.label, type: "priority" }, r.createElement(n.ZP, { style: s.featuredLabel }, r.createElement(u.default, { style: s.featuredIcon }), t));
+                b = () => r.createElement(o.ZP, { style: s.label, type: "priority" }, r.createElement(n.ZP, { style: s.featuredLabel }, r.createElement(t.default, { style: s.featuredIcon }), u));
         },
         324948: (e, a, d) => {
             d.d(a, { Z: () => l });
@@ -59,21 +59,21 @@
             const n = (0, d(523561).Z)({
                     loader: () =>
                         Promise.all([
-                            d.e("icons.23"),
-                            d.e("icons.16"),
-                            d.e("icons.2"),
-                            d.e("icons.10"),
-                            d.e("icons.19"),
-                            d.e("icons.24"),
+                            d.e("icons.5"),
+                            d.e("icons.12"),
+                            d.e("icons.20"),
+                            d.e("icons.0"),
+                            d.e("icons.21"),
+                            d.e("icons.28"),
+                            d.e("icons.17"),
                             d.e("modules.common-e907d115"),
                             d.e("modules.common-e019dbda"),
-                            d.e("icons.13"),
-                            d.e("icons.27"),
                             d.e("icons.22"),
-                            d.e("icons.17"),
-                            d.e("icons.7"),
-                            d.e("icons.21"),
-                            d.e("icons.18"),
+                            d.e("icons.9"),
+                            d.e("icons.25"),
+                            d.e("icons.6"),
+                            d.e("icons.10"),
+                            d.e("icons.14"),
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -104,28 +104,26 @@
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                             d.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2d1eb5e2"),
+                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-34cda585"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
-                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-60e08fbd"),
+                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1bce2d5d"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-25704d22"),
-                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-7b94920a"),
-                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-a7573e1a"),
-                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-ee9ffade"),
-                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8d854c2e"),
+                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-ee9e2532"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-aaf38a28"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-4cc32837"),
+                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-b73bd0e3"),
+                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-e0a7c12b"),
+                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-627162af"),
+                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-286dfed9"),
+                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-162a9ab0"),
+                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-cbd8f64c"),
+                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-f943ab46"),
+                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-91216611"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2652b27c"),
-                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-da0e99d8"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-3931c1f3"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-c377d397"),
-                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-e4b9a405"),
-                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-f17e8d44"),
-                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-f39972b2"),
-                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-568e95f0"),
-                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1895c9ee"),
-                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8fe22a9e"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-0a8205ef"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-5719ea67"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1b6af858"),
@@ -163,7 +161,7 @@
             };
         },
         652904: (e, a, d) => {
-            d.d(a, { Z: () => t });
+            d.d(a, { Z: () => u });
             var r = d(202784),
                 o = d(500002),
                 n = d(668214),
@@ -172,7 +170,7 @@
             const i = (0, n.Z)()
                 .propsFromActions(() => ({ updateLocation: c.YF, updateTweetDetailNav: l.NH }))
                 .withAnalytics();
-            class u extends r.Component {
+            class t extends r.Component {
                 componentDidMount() {
                     this._performPageUpdates(this.props);
                 }
@@ -188,8 +186,8 @@
                         } = e;
                     let i = !1;
                     a.pathname !== d ? (this._isInBackground = !0) : this._isInBackground && a.pathname === d && ((this._isInBackground = !1), (i = !0));
-                    const u = o || c;
-                    ((u && o !== c) || (!u && d !== n) || r !== l || i) && this._performPageUpdates(this.props);
+                    const t = o || c;
+                    ((t && o !== c) || (!t && d !== n) || r !== l || i) && this._performPageUpdates(this.props);
                 }
                 render() {
                     return this.props.children;
@@ -199,8 +197,8 @@
                     a.scribePageImpression(), d(a.contextualScribeNamespace, a.contextualScribeData), r(a.contextualScribeNamespace);
                 }
             }
-            u.defaultProps = { children: null };
-            const t = (0, o.ZP)(i(u));
+            t.defaultProps = { children: null };
+            const u = (0, o.ZP)(i(t));
         },
         985124: (e, a, d) => {
             d.d(a, { $J: () => c, WA: () => x, ZC: () => M, cj: () => T, eo: () => r.eo, hb: () => $, kW: () => i, pg: () => k, rP: () => l, u4: () => W, xk: () => j });
@@ -210,8 +208,8 @@
             const l = Object.freeze({ DISABLED: 0, ENABLED: 10, SYNC_IN_PROGRESS: 20, SYNC_FAILED: 30 }),
                 c = Object.freeze({ freshteam: "Freshteam", greenhouse: "Greenhouse", lever: "Lever", recruitee: "Recruitee", "sage-hr": "Sage HR", "sap-successfactors": "SAP SuccessFactors", teamtailor: "Teamtailor", workable: "Workable", workday: "Workday" }),
                 i = Object.entries(r.eo).map(([e, a]) => ({ label: String(a), value: e })),
-                u = n().d2b8da2c,
-                t = n().cd958040,
+                t = n().d2b8da2c,
+                u = n().cd958040,
                 s = n().c5760ca2,
                 b = n().d31b4a2a,
                 h = n().df1b7550,
@@ -224,17 +222,17 @@
                 f = n().e4a51fca,
                 w = n().e8ca78ae,
                 v = n().c365dcc6,
-                M = Object.freeze({ software_engineering: u, data_analytics: t, product: s, design: b, marketing: h, sales_am: D, operations: p, people_hr: S, finance_accounting: m, legal_compliance: A, science_engineering: y, medical: f, construction_trades: w, other: v }),
+                M = Object.freeze({ software_engineering: t, data_analytics: u, product: s, design: b, marketing: h, sales_am: D, operations: p, people_hr: S, finance_accounting: m, legal_compliance: A, science_engineering: y, medical: f, construction_trades: w, other: v }),
                 k = Object.entries(M).map(([e, a]) => ({ label: String(a), value: e })),
                 P = n().e25d75e4,
                 I = n().e89b3f04,
-                B = n().h55825dc,
-                g = n().cc537386,
+                g = n().h55825dc,
+                B = n().cc537386,
                 C = n().jfc3cece,
                 Z = n().e1b683aa,
                 _ = n().c4627fda,
                 E = n().db75b47c,
-                x = Object.freeze({ intern: P, entry_level: I, junior: B, mid_level: g, senior: C, lead: Z, manager: _, executive: E }),
+                x = Object.freeze({ intern: P, entry_level: I, junior: g, mid_level: B, senior: C, lead: Z, manager: _, executive: E }),
                 j = Object.entries(x).map(([e, a]) => ({ label: String(a), value: e })),
                 L = n().i312f0ce,
                 R = n().b4aff05e,
@@ -284,9 +282,9 @@
                 l = d(437429),
                 c = d.n(l),
                 i = d(57074),
-                u = d.n(i),
-                t = d(10622),
-                s = d.n(t),
+                t = d.n(i),
+                u = d(10622),
+                s = d.n(u),
                 b = d(585488),
                 h = d(71620),
                 D = d(163889),
@@ -294,9 +292,9 @@
                 S = d(535338);
             function m(e, a, d) {
                 const [o, l] = r.useState(!1),
-                    [i, t] = r.useState(null),
+                    [i, u] = r.useState(null),
                     m = c()(),
-                    A = u()(a),
+                    A = t()(a),
                     y = (0, h.po)(),
                     f = (0, S.p)(e, A, d);
                 return r.useMemo(() => {
@@ -321,11 +319,11 @@
                                         l(!1);
                                     },
                                     error: (e) => {
-                                        l(!1), t(e), y(e);
+                                        l(!1), u(e), y(e);
                                     },
                                 }));
                         },
-                        u = () => {
+                        t = () => {
                             d && c(d);
                         },
                         h = () => {
@@ -334,12 +332,12 @@
                         S = () => {
                             c(void 0);
                         };
-                    return i ? { subsequentFetchStatus: p.ZP.FAILED, error: i, fetchNext: u, fetchPrevious: h, refetch: S, data: f, hasNext: Boolean(d), hasPrevious: Boolean(r) } : { subsequentFetchStatus: o ? p.ZP.LOADING : p.ZP.NONE, error: void 0, fetchNext: u, fetchPrevious: h, refetch: S, data: f, hasNext: Boolean(d), hasPrevious: Boolean(r) };
+                    return i ? { subsequentFetchStatus: p.ZP.FAILED, error: i, fetchNext: t, fetchPrevious: h, refetch: S, data: f, hasNext: Boolean(d), hasPrevious: Boolean(r) } : { subsequentFetchStatus: o ? p.ZP.LOADING : p.ZP.NONE, error: void 0, fetchNext: t, fetchPrevious: h, refetch: S, data: f, hasNext: Boolean(d), hasPrevious: Boolean(r) };
                 }, [e, f, o, i, m, A, y]);
             }
         },
         28135: (e, a, d) => {
-            d.d(a, { Z: () => g });
+            d.d(a, { Z: () => B });
             d(136728);
             var r = d(202784),
                 o = d(576648),
@@ -347,8 +345,8 @@
                 l = d(811176),
                 c = d(40644),
                 i = d(674132),
-                u = d.n(i),
-                t = d(630715),
+                t = d.n(i),
+                u = d(630715),
                 s = d(717160),
                 b = d(885724),
                 h = d(106186),
@@ -358,35 +356,35 @@
                 m = d(782642);
             const A = (e) => `/i/jobs/${e}`;
             var y = d(701796);
-            const f = u().f508c49c,
-                w = u().f88553c8,
-                v = u().d6825dce,
-                M = u().b9613442,
-                k = u().c2b3f0da,
-                P = u().c791d3fc,
-                I = { label: u().ifea3114, withDelay: !0 },
-                B = ({ iconSize: e = "normal", jobId: a, jobUserId: d }) => {
+            const f = t().f508c49c,
+                w = t().f88553c8,
+                v = t().d6825dce,
+                M = t().b9613442,
+                k = t().c2b3f0da,
+                P = t().c791d3fc,
+                I = { label: t().ifea3114, withDelay: !0 },
+                g = ({ iconSize: e = "normal", jobId: a, jobUserId: d }) => {
                     const i = (0, m.p)(),
-                        u = (0, n.useHistory)(),
-                        { userClaims: B, viewerUserId: g } = (0, p.QZ)(),
+                        t = (0, n.useHistory)(),
+                        { userClaims: g, viewerUserId: B } = (0, p.QZ)(),
                         C = (0, S.hC)("recruiting_jobs_list_share_enabled"),
-                        Z = (0, S.hC)("recruiting_pin_job_enabled") && (B.isTrueAndEnabled("subscriptions_feature_premium_jobs") || B.isVerifiedOrg()) && g !== d,
+                        Z = (0, S.hC)("recruiting_pin_job_enabled") && (g.isTrueAndEnabled("subscriptions_feature_premium_jobs") || g.isVerifiedOrg()) && B !== d,
                         _ = r.useCallback(() => {
-                            u.push({ query: { text: (0, y.w)(A(a)) }, pathname: "/messages/compose" });
-                        }, [u, a]),
+                            t.push({ query: { text: (0, y.w)(A(a)) }, pathname: "/messages/compose" });
+                        }, [t, a]),
                         E = r.useCallback(() => {
                             o.Z.setString((0, y.w)(A(a))), i({ text: w });
                         }, [i, a]),
                         x = r.useCallback(() => {
-                            u.push({ query: { text: (0, y.w)(A(a)) }, pathname: "/compose/post" });
-                        }, [u, a]),
+                            t.push({ query: { text: (0, y.w)(A(a)) }, pathname: "/compose/post" });
+                        }, [t, a]),
                         j = r.useCallback(() => {
-                            u.push({ query: { jid: a }, pathname: "/i/share-job", state: { from: u.location.pathname } });
-                        }, [u, a]),
+                            t.push({ query: { jid: a }, pathname: "/i/share-job", state: { from: t.location.pathname } });
+                        }, [t, a]),
                         L = r.useCallback(() => {
                             const e = [];
-                            return o.Z.isAvailable() && e.push({ text: f, onClick: E, Icon: t.default }), g && (e.push(((e) => ({ text: v, onClick: e, Icon: s.default }))(_)), e.push(((e) => ({ text: M, onClick: e, Icon: b.default }))(x))), Z && e.push(((e) => ({ text: k, onClick: e, Icon: h.default }))(j)), e;
-                        }, [E, _, j, x, Z, g]),
+                            return o.Z.isAvailable() && e.push({ text: f, onClick: E, Icon: u.default }), B && (e.push(((e) => ({ text: v, onClick: e, Icon: s.default }))(_)), e.push(((e) => ({ text: M, onClick: e, Icon: b.default }))(x))), Z && e.push(((e) => ({ text: k, onClick: e, Icon: h.default }))(j)), e;
+                        }, [E, _, j, x, Z, B]),
                         R = r.useCallback(
                             (e) => {
                                 const a = L();
@@ -397,7 +395,7 @@
                         N = r.useCallback(() => {}, []);
                     return C ? r.createElement(c.ZP, { Icon: D.default, "aria-label": P, color: "text", hoverLabel: I, iconSize: e, onPress: N, renderMenu: R, testID: "job-share-action-btn" }) : null;
                 },
-                g = r.memo(B);
+                B = r.memo(g);
         },
         524496: (e, a, d) => {
             d.d(a, { Z: () => f });
@@ -408,15 +406,15 @@
                 l = d(595088),
                 c = d(516951),
                 i = d(731708),
-                u = d(779802),
-                t = d(537392),
+                t = d(779802),
+                u = d(537392),
                 s = d(989272),
                 b = d(925873),
                 h = d(202253),
                 D = d(786475),
                 p = d(392237),
                 S = d(135904);
-            const m = { [u.P7.atomic]: { element: "section" }, [u.P7.header1]: { element: "h1", wrapper: r.createElement(i.ZP, null) }, [u.P7.header2]: { element: "h2", wrapper: r.createElement(i.ZP, null) } },
+            const m = { [t.P7.atomic]: { element: "section" }, [t.P7.header1]: { element: "h1", wrapper: r.createElement(i.ZP, null) }, [t.P7.header2]: { element: "h2", wrapper: r.createElement(i.ZP, null) } },
                 A = (0, l.Z)(m).reduce((e, [a, d]) => e.set(a, d), o.DefaultDraftBlockRenderMap);
             let y = !1;
             const f = r.memo(function (e) {
@@ -434,7 +432,7 @@
                                 const d = e.getType();
                                 return a[d] || null;
                             }),
-                        r.createElement(t.ZP, null, ({ containerWidth: e }) => r.createElement(n.Z, { style: w.fontFamily }, r.createElement(o.Editor, { blockRenderMap: A, blockRendererFn: f, blockStyleFn: (0, u.su)(D.Z.isNarrowScreenWidth(e)), editorState: m, onChange: c.Z, readOnly: !0, webDriverTestID: "longformRichTextComponent" })))
+                        r.createElement(u.ZP, null, ({ containerWidth: e }) => r.createElement(n.Z, { style: w.fontFamily }, r.createElement(o.Editor, { blockRenderMap: A, blockRendererFn: f, blockStyleFn: (0, t.su)(D.Z.isNarrowScreenWidth(e)), editorState: m, onChange: c.Z, readOnly: !0, webDriverTestID: "longformRichTextComponent" })))
                     );
                 }),
                 w = p.default.create((e) => ({ fontFamily: { fontFamily: e.fontFamilies.normal } }));
@@ -445,4 +443,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.JobSearch~bundle.UserJobs.bb8ce06a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.JobSearch~bundle.UserJobs.d396784a.js.map

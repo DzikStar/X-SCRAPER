@@ -113,7 +113,7 @@
                     return r.createElement(u.i, null, r.createElement(c.Z, { centeredLogo: r.createElement(w.y, null), history: i, isFullWidth: !0, primaryContent: () => r.createElement(s.Z, { style: [b.root, e && b.webviewRoot, t && b.narrowRoot] }, r.createElement(n.w, { settings: f })), sidebarContent: null, withTweetButton: !1 }));
                 };
         },
-        287326: (e, t, i) => {
+        497043: (e, t, i) => {
             "use strict";
             i.r(t), i.d(t, { default: () => b });
             var r = i(202784),
@@ -297,4 +297,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Insights-a9e5c193.069f35ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Insights-a9e5c193.faa48c9a.js.map

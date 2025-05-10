@@ -2987,7 +2987,8 @@
                 t("jadeb4da", "Actualizează-ți urgent metoda de plată pentru a nu-ți pierde beneficiile abonamentului."),
                 t("bce3726a", "Actualizare informații de facturare"),
                 t("fce9ecce", "Videoclipuri sugerate"),
-                t("dc954b88", "Încearcă experiența știrilor complete"),
+                t("da00e00a", "Try the new News"),
+                t("c40666d8", "Try it"),
                 t("j66b95a2", "Știri detaliate"),
                 t("b58d2bd2", "Postări relevante"),
                 t("efe6ef9e", "Vizualizează postarea"),
@@ -3893,9 +3894,9 @@
                 t("e3275464", "Trimite"),
                 t("cededf2a", "Gazdă"),
                 t("i2caef48", "Co-gazde"),
-                t("j245c654", "Vorbitori"),
-                t("eda23a02", "Ascultători");
-            t("b90eb348", "Invită să vorbească"),
+                t("j245c654", "Vorbitori");
+            t("eda23a02", "Ascultători"),
+                t("b90eb348", "Invită să vorbească"),
                 t("d9a63e82", "Elimină din rândul vorbitorilor"),
                 t("bd917b26", "Invită să fie co-gazdă"),
                 t("d7357e7e", "Elimină din co-gazde"),
@@ -4931,9 +4932,9 @@
                 t("e41fffbc", "Durata totală de vizionare a videoclipurilor."),
                 t("if2909ba", "Durată vizionare"),
                 t("i0e5bf4c", "Videoclipurile tale"),
-                t("ed99baea", "Acces timpuriu la versiunea beta"),
-                t("gf898b70", "Căutare avansată");
-            t("d2a43a7a", "conține atât „ai”, cât și „start-up”"),
+                t("ed99baea", "Acces timpuriu la versiunea beta");
+            t("gf898b70", "Căutare avansată"),
+                t("d2a43a7a", "conține atât „ai”, cât și „start-up”"),
                 t("a8584698", "start-up ai"),
                 t("jb6f9292", "conține exact structura „start-up ai”"),
                 t("j8ee77c4", "„start-up ai”"),
@@ -5897,9 +5898,9 @@
                 t("i0ed3f4e", "Imagine eveniment"),
                 t("cbae35fa", "Raportează transmisiunea"),
                 t("fd12ab58", "Postări din colecție"),
-                t("a226497c", "Creează o Comunitate nouă"),
-                t("d7346632", "Nu te-ai alăturat încă la nicio Comunitate");
-            t("b732a4cc", "Odată ce faci acest lucru, le vei vedea postările aici."),
+                t("a226497c", "Creează o Comunitate nouă");
+            t("d7346632", "Nu te-ai alăturat încă la nicio Comunitate"),
+                t("b732a4cc", "Odată ce faci acest lucru, le vei vedea postările aici."),
                 t("hff48914", "În acest moment, nu s-au putut găsi postări."),
                 t("hb52cc4a", "Te rugăm să încerci din nou mai târziu."),
                 t("e50e1bb0", "Bun venit la Comunități"),
@@ -6689,6 +6690,7 @@
                 t("b2d41138", "Acoperire mai mare = câștiguri mai mari"),
                 t("defa7f12", "Profită de o prioritizare a răspunsurilor, care îți oferă vizibilitate suplimentară pentru a te dezvolta mai rapid."),
                 t("i3e4955d", "aici"),
+                t("fdc5d06c", "Exit Full Screen"),
                 t("cea1c00e", "Deblochează posibilitatea de a interacționa"),
                 t("f8e6a280", "Conturile noi trebuie să plătească o taxă modică anuală înainte de a putea posta, aprecia, adăuga la marcaje și răspunde. Acest lucru are rolul de a reduce spamul și de a crea o experiență mai bună pentru toți utilizatorii. Poți în continuare să urmărești conturi și să navighezi pe X în mod gratuit."),
                 t("h968efc6", "Conturile noi trebuie să plătească o taxă modică înainte de a putea posta, aprecia, adăuga la marcaje și răspunde. Acest lucru are rolul de a reduce spamul și de a crea o experiență mai bună pentru toți utilizatorii. Poți în continuare să urmărești conturi și să navighezi pe X în mod gratuit."),
@@ -6894,10 +6896,10 @@
                 t("e0198956", "Primește o cotă-parte din veniturile generate în urma interacțiunii conturilor verificate cu conținutul pe care îl postezi pe X."),
                 t("iadf78e2", "Descarcă videoclipuri"),
                 t("ee54c3de", "Salvează videoclipurile direct pe dispozitivul tău"),
-                t("ae03594c", "Boost pentru răspunsuri scurte"),
-                t("e6bb08c0", "Sporește vizibilitatea răspunsurilor tale"),
-                t("bf2a6acc", "Prioritizare mare a răspunsurilor");
-            t("c2059276", "Dă boost răspunsurilor tale."),
+                t("ae03594c", "Boost pentru răspunsuri scurte");
+            t("e6bb08c0", "Sporește vizibilitatea răspunsurilor tale"),
+                t("bf2a6acc", "Prioritizare mare a răspunsurilor"),
+                t("c2059276", "Dă boost răspunsurilor tale."),
                 t("b023ec20", "Prioritizare maximă a răspunsurilor"),
                 t("g337328e", "Obține cea mai mare vizibilitate pentru răspunsurile tale."),
                 t("fa006202", "Redare videoclip în fundal"),
@@ -7399,8 +7401,8 @@
                 t("a10aa36c", "Centrul de ajutor"),
                 t("d0740558", "Centrul de ajutor"),
                 t("d2d76dca", "Centrul de ajutor"),
-                t("b6414532", "Numărul estimativ al persoanelor care au văzut postarea ta"),
-                t("c61c6624", "Promovat"),
+                t("de8bcdaa", "Breakdown of the people that have seen your post"),
+                t("cfa1ef16", "Dă boost"),
                 t("d267afa2", "Sub 20"),
                 t("db81cab0", "20-29"),
                 t("f173716e", "30-39"),
@@ -7409,6 +7411,14 @@
                 t("bcd9cf68", "Peste 65"),
                 t("f05f1838", "Altceva / Nespecificat"),
                 t("fa5be588", "Ecologic"),
+                t("c65126fe", "Boosted"),
+                t("c61c6624", "Promovat"),
+                t("f1196a04", "Boost Analytics"),
+                t("bb66e3fc", "Promote Analytics"),
+                t("g512ddcc", "Analiză organică"),
+                t("j9256524", "Breakdown of your boost performance"),
+                t("ceeb3016", "Breakdown of your promote performance"),
+                t("bf4558fa", "Breakdown of your organic performance"),
                 t("c69069e6", "De câte ori a fost văzută această postare pe X"),
                 t("a0615bac", "Numărul total de interacțiuni ale unui utilizator cu o postare. Aici sunt incluse toate clicurile oriunde pe postare (inclusiv hashtaguri, linkuri, imagini de profil, nume de utilizator și extindere postare), repostări, răspunsuri, urmăriri și aprecieri."),
                 t("d8abdaa4", "Urmăritori noi"),
@@ -7416,8 +7426,9 @@
                 t("acc4cf12", "Număr de vizualizări ale profilului de la această postare"),
                 t("c7d0d1c4", "Număr de clicuri pe orice URL din această postare"),
                 t("a4da7724", "De câte ori au fost vizualizate detaliile legate de această postare"),
-                t("c5d4d3a8", "Cost per urmăritor"),
-                t("f56e24f2", "Valoarea totală a cheltuielilor, împărțită la numărul de următori, inclusiv cei dobândiți. Plătești doar atunci când cineva te urmărește"),
+                t("jedd2771", function (e) {
+                    return e.percentage + " from boost";
+                }),
                 t("g33fd6b1", function (e) {
                     return e.percentage + " din promovare";
                 }),
@@ -7425,6 +7436,7 @@
                     return e.percentage + " din utilizatorii care nu te urmăresc";
                 }),
                 t("h4cbba3e", "<5%"),
+                t("f4f0094c", "< 5% from boost"),
                 t("h1cdac12", "<5% din promovare"),
                 t("g884b2cc", "<5% de la cei care nu te urmăresc"),
                 t("b32334a0", "Conturi la care ai ajuns"),
@@ -7792,7 +7804,6 @@
                     return "Bine ai revenit, " + e.displayName;
                 }),
                 t("a76d58ba", "Analiză reclame"),
-                t("g512ddcc", "Analiză organică"),
                 t("eccd0e1a", "Analiză organizații"),
                 t("deea1708", "Vrei să vezi analiza pentru toate conturile tale X?"),
                 t("eb603ffc", "Fă upgrade pentru a adăuga afiliați la rețeaua ta și pentru a vedea analiza agregată."),
@@ -7863,16 +7874,7 @@
                 t("ddfd6718", "Plata a eșuat"),
                 t("i90ea7d2", "Actualizează-ți urgent informațiile de facturare pentru a-ți păstra beneficiile."),
                 t("a62359e6", "Setări Organizații verificate"),
-                t("ge221b7c", "Fă upgrade la aboamentul pentru Organizații verificate pentru a avea acces la mai multe credite pentru reclame și afiliați."),
-                t("i4dccc18", "Facturare"),
-                t("ec3cd6e4", "Gestionează metoda de plată, actualizează informațiile de facturare și verifică-ți facturile."),
-                t("dac61c3c", "Setări cont"),
-                t("b6b5fd66", "Gestionează-ți contul X, inclusiv schimbarea numelui de utilizator și a parolei."),
-                t("hb9c4a1c", "Întrebări, rapoarte de erori și feedback"),
-                t("c674f5b4", "Configurează plățile facturilor"),
-                t("i8237e66", "Treci de la plățile pe cardul de credit la facturarea prin transferuri bancare."),
-                t("hebd348a", "Configurează modul în care sunt utilizate reclamele pentru promovarea locurilor de muncă din portalul pentru angajări."),
-                t("ib5e6f90", "Promovarea locurilor de muncă");
+                t("ge221b7c", "Fă upgrade la aboamentul pentru Organizații verificate pentru a avea acces la mai multe credite pentru reclame și afiliați.");
             function c(e, a) {
                 for (var i = 0; i < a.length; i++) {
                     var t = a[i];
@@ -7911,7 +7913,16 @@
                     u(e, a)
                 );
             }
-            t("id720215", "pentru angajări"),
+            t("i4dccc18", "Facturare"),
+                t("ec3cd6e4", "Gestionează metoda de plată, actualizează informațiile de facturare și verifică-ți facturile."),
+                t("dac61c3c", "Setări cont"),
+                t("b6b5fd66", "Gestionează-ți contul X, inclusiv schimbarea numelui de utilizator și a parolei."),
+                t("hb9c4a1c", "Întrebări, rapoarte de erori și feedback"),
+                t("c674f5b4", "Configurează plățile facturilor"),
+                t("i8237e66", "Treci de la plățile pe cardul de credit la facturarea prin transferuri bancare."),
+                t("hebd348a", "Configurează modul în care sunt utilizate reclamele pentru promovarea locurilor de muncă din portalul pentru angajări."),
+                t("ib5e6f90", "Promovarea locurilor de muncă"),
+                t("id720215", "pentru angajări"),
                 t("dd59f146", "Contul de reclame pentru promovarea locurilor de muncă"),
                 t("e7e36818", "Conturile pentru reclame sunt eligibile pentru promovarea locurilor de muncă atunci când sunt complet configurate cu o sursă de finanțare."),
                 t("c28566e0", "Cont pentru reclame"),
@@ -8907,10 +8918,10 @@
                 }),
                 t("ae408b76", "Ai repostat"),
                 t("j355f008", "Postare fixată"),
-                t("habf9678", "Fixat de Autor"),
-                t("db0798ed", function (e) {
-                    return "Subiect – " + e.topicName;
-                }),
+                t("habf9678", "Fixat de Autor");
+            t("db0798ed", function (e) {
+                return "Subiect – " + e.topicName;
+            }),
                 t("dc716ec9", function (e) {
                     return "Subiect recomandat: " + e.topicName;
                 }),
@@ -8930,10 +8941,10 @@
                 }),
                 t("c889af33", function (e) {
                     return e.count + " s-a" + r(e.count, "u", "", "u") + " alăturat";
-                });
-            t("d6f2056f", function (e) {
-                return e.count + " a" + r(e.count, "u", "", "u") + " urmărit";
-            }),
+                }),
+                t("d6f2056f", function (e) {
+                    return e.count + " a" + r(e.count, "u", "", "u") + " urmărit";
+                }),
                 t("jbc5f47a", "Setul Spații"),
                 t("gfe2830f", function (e) {
                     return "încă " + e.count;
@@ -13219,4 +13230,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ro.1bf304da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ro.1ccac9ba.js.map

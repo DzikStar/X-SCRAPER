@@ -8,30 +8,27 @@
             const s = (0, n(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        n.e("icons.24"),
                         n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2d1eb5e2"),
+                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-34cda585"),
                         n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                         n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                         n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
-                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-60e08fbd"),
+                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1bce2d5d"),
                         n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-25704d22"),
-                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-7b94920a"),
-                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-a7573e1a"),
-                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-ee9ffade"),
-                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8d854c2e"),
+                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-ee9e2532"),
                         n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-aaf38a28"),
                         n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-4cc32837"),
+                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-b73bd0e3"),
+                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-e0a7c12b"),
+                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-627162af"),
+                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-286dfed9"),
+                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-162a9ab0"),
+                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-cbd8f64c"),
+                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-f943ab46"),
+                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-91216611"),
                         n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2652b27c"),
-                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-da0e99d8"),
                         n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-3931c1f3"),
                         n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-c377d397"),
-                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-e4b9a405"),
-                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-f17e8d44"),
-                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-f39972b2"),
-                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-568e95f0"),
-                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1895c9ee"),
-                        n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8fe22a9e"),
                         n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-0a8205ef"),
                         n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-5719ea67"),
                         n.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1b6af858"),
@@ -58,7 +55,7 @@
             function s() {
                 return { async: !1, breaks: !1, extensions: null, gfm: !0, hooks: null, pedantic: !1, renderer: null, silent: !1, tokenizer: null, walkTokens: null };
             }
-            n.d(t, { TU: () => R });
+            n.d(t, { TU: () => T });
             let r = { async: !1, breaks: !1, extensions: null, gfm: !0, hooks: null, pedantic: !1, renderer: null, silent: !1, tokenizer: null, walkTokens: null };
             function i(e) {
                 r = e;
@@ -908,7 +905,7 @@
                     return n;
                 }
             }
-            class B {
+            class R {
                 options;
                 constructor(e) {
                     this.options = e || r;
@@ -921,7 +918,7 @@
                     return e;
                 }
             }
-            const v = new (class {
+            const B = new (class {
                 defaults = { async: !1, breaks: !1, extensions: null, gfm: !0, hooks: null, pedantic: !1, renderer: null, silent: !1, tokenizer: null, walkTokens: null };
                 options = this.setOptions;
                 parse = this.#e(_.lex, z.parse);
@@ -931,7 +928,7 @@
                 TextRenderer = D;
                 Lexer = _;
                 Tokenizer = S;
-                Hooks = B;
+                Hooks = R;
                 constructor(...e) {
                     this.use(...e);
                 }
@@ -1016,12 +1013,12 @@
                                 n.tokenizer = t;
                             }
                             if (e.hooks) {
-                                const t = this.defaults.hooks || new B();
+                                const t = this.defaults.hooks || new R();
                                 for (const n in e.hooks) {
                                     const s = e.hooks[n],
                                         r = n,
                                         i = t[r];
-                                    B.passThroughHooks.has(n)
+                                    R.passThroughHooks.has(n)
                                         ? (t[r] = (e) => {
                                               if (this.defaults.async) return Promise.resolve(s.call(t, e)).then((e) => i.call(t, e));
                                               const n = s.call(t, e);
@@ -1093,33 +1090,33 @@
                     };
                 }
             })();
-            function R(e, t) {
-                return v.parse(e, t);
+            function T(e, t) {
+                return B.parse(e, t);
             }
-            (R.options = R.setOptions =
+            (T.options = T.setOptions =
                 function (e) {
-                    return v.setOptions(e), (R.defaults = v.defaults), i(R.defaults), R;
+                    return B.setOptions(e), (T.defaults = B.defaults), i(T.defaults), T;
                 }),
-                (R.getDefaults = s),
-                (R.defaults = r),
-                (R.use = function (...e) {
-                    return v.use(...e), (R.defaults = v.defaults), i(R.defaults), R;
+                (T.getDefaults = s),
+                (T.defaults = r),
+                (T.use = function (...e) {
+                    return B.use(...e), (T.defaults = B.defaults), i(T.defaults), T;
                 }),
-                (R.walkTokens = function (e, t) {
-                    return v.walkTokens(e, t);
+                (T.walkTokens = function (e, t) {
+                    return B.walkTokens(e, t);
                 }),
-                (R.parseInline = v.parseInline),
-                (R.Parser = z),
-                (R.parser = z.parse),
-                (R.Renderer = $),
-                (R.TextRenderer = D),
-                (R.Lexer = _),
-                (R.lexer = _.lex),
-                (R.Tokenizer = S),
-                (R.Hooks = B),
-                (R.parse = R);
-            R.options, R.setOptions, R.use, R.walkTokens, R.parseInline, z.parse, _.lex;
+                (T.parseInline = B.parseInline),
+                (T.Parser = z),
+                (T.parser = z.parse),
+                (T.Renderer = $),
+                (T.TextRenderer = D),
+                (T.Lexer = _),
+                (T.lexer = _.lex),
+                (T.Tokenizer = S),
+                (T.Hooks = R),
+                (T.parse = T);
+            T.options, T.setOptions, T.use, T.walkTokens, T.parseInline, z.parse, _.lex;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.TwitterArticles~bundle.Grok~loader.Markdown.4b84daba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.TwitterArticles~bundle.Grok~loader.Markdown.435c791a.js.map

@@ -5,7 +5,7 @@
         718278: (e, s, t) => {
             t.d(s, { o: () => i });
             var n = t(552322),
-                a = t(436059),
+                a = t(993165),
                 r = t(425522);
             const o = r.com.x.logger.XLog,
                 i = () =>
@@ -33,13 +33,13 @@
         787395: (e, s, t) => {
             t.d(s, { r: () => De });
             var n = t(552322),
-                a = t(921879),
-                r = t(702024),
+                a = t(983706),
+                r = t(193686),
                 o = t(533476),
                 i = t(425522),
-                l = t(26429),
-                c = t(941204),
-                d = t(475694),
+                l = t(378364),
+                c = t(332161),
+                d = t(789764),
                 m = t(369962);
             const u = i.com.x.dms.model.InformationalItemContents;
             function x({ avatarUrl: e }) {
@@ -127,8 +127,8 @@
                 return (0, n.jsx)(g, { children: s instanceof u.AddedGroupMembers ? (0, n.jsx)(p, { contents: s }) : s instanceof u.RemovedGroupMembers ? (0, n.jsx)(f, { contents: s }) : s instanceof u.AddedGroupAdmins ? (0, n.jsx)(v, { contents: s }) : s instanceof u.RemovedGroupAdmins ? (0, n.jsx)(y, { contents: s }) : s instanceof u.ChangedGroupTitle ? (0, n.jsx)(j, { contents: s }) : s instanceof u.ChangedGroupAvatar ? (0, n.jsx)(w, { contents: s }) : s instanceof u.DefaultTtlChanged ? (0, n.jsx)(N, { contents: s }) : s instanceof u.DateChanged ? (0, n.jsx)(b, { contents: s }) : null });
             }
             var I = t(202784),
-                D = t(776604),
-                k = t(436059),
+                D = t(527735),
+                k = t(993165),
                 E = t(553453),
                 $ = t(611105),
                 R = t(147602),
@@ -175,7 +175,7 @@
             var V = t(455091),
                 J = t(607499),
                 L = t(707513),
-                G = t(461222),
+                G = t(42630),
                 Z = t(242782),
                 _ = t(22199);
             function O(e) {
@@ -207,7 +207,7 @@
                     a = t.length > 1;
                 return (0, n.jsxs)("div", { className: `flex gap-1 items-center ${s ? "justify-start" : "justify-end"} mx-1 `, children: [e.timeToLive && (0, n.jsx)(K, { ttlInfo: e.timeToLive, isReceived: s }), e.timeToLive && (e.showEdited || (e.showReadUsers && !a)) ? (0, n.jsx)(G.A, {}) : null, e.showEdited && (0, n.jsx)(c.x, { size: "subtext3", color: "gray700", children: "Edited" }), e.showEdited && e.showReadUsers && !a ? (0, n.jsx)(G.A, {}) : null, e.showReadUsers && (0, n.jsxs)(n.Fragment, { children: [a ? (0, n.jsx)(d.o, { urls: t, size: "small", spacing: 6, stackOrder: "ascending" }) : (0, n.jsx)(c.x, { size: "subtext3", color: "gray700", children: "Read" }), (0, n.jsx)("div", { className: "p-0.5 bg-background rounded-full z-20 " + (a ? "-ms-[12px]" : "-ms-[2px]"), children: (0, n.jsx)(Z.Z, { width: "16", height: "16", viewBox: "1.75 1.75 20.5 20.5", className: "text-gray-700" }) })] })] });
             }
-            var q = t(862399);
+            var q = t(983955);
             const Y = ({ isReceived: e, textContent: s, textEntities: t }) => {
                     const a = {};
                     return t.forEach((e) => H(e, a)), (0, n.jsx)(q.W, { color: e ? "text" : "white", entities: a, linkColor: e ? void 0 : "white", text: s, underlineLinks: !e || void 0 });
@@ -222,13 +222,13 @@
             function X(e) {
                 return /^mailto:/i.test(e) ? e : `mailto:${e}`;
             }
-            var Q = t(796309);
+            var Q = t(31674);
             const ee = ({ emoji: e, count: s }) => (0, n.jsxs)("div", { className: "flex items-center bg-gray-50 rounded-full px-2 shadow-sm gap-1 border border-background", children: [(0, n.jsx)(c.x, { size: "headline2", children: e }), s > 1 && (0, n.jsx)(c.x, { size: "subtext3", weight: "bold", color: "gray700", children: s })] }),
                 se = ({ reaction: e }) => (0, n.jsx)(ee, { emoji: e.reaction, count: e.users.asJsReadonlyArrayView().length }),
                 te = ({ className: e, reactions: s }) => (0, n.jsxs)("div", { className: (0, Q.cn)("flex flex-row gap-1", e), children: [s.slice(0, 5).map((e) => (0, n.jsx)(se, { reaction: e }, e.reaction)), s.length > 5 && (0, n.jsx)(ee, { emoji: "…", count: 0 })] });
             var ne = t(167285),
                 ae = t(407602),
-                re = t(86781),
+                re = t(437712),
                 oe = t(840489);
             const ie = i.com.x.dms.chat.DmEvent,
                 le = i.com.x.models.KMPRect,
@@ -296,7 +296,7 @@
                     g = a.equals(r) ? (s.senderIsCurrentUser ? x : u) : s.senderIsCurrentUser ? d : e ? m : h;
                 return (0, n.jsxs)("div", { className: "flex flex-col mt-0.5 " + (e ? "items-start" : "items-end"), children: [s.showReplyNames && (0, n.jsxs)("div", { className: "flex gap-1 px-2 " + (e ? "text-start" : "text-end"), children: [(0, n.jsx)(de.Z, { className: "inline-block text-text/70" }), (0, n.jsx)(c.x, { as: "span", className: "text-text/40", size: "subtext2", children: g })] }), (0, n.jsx)("div", { className: "flex flex-col px-3 py-1.5 rounded-2xl gap-3 border " + (s.senderIsCurrentUser ? "border-primary/50" : "border-gray-400"), children: (0, n.jsx)(c.x, { color: s.senderIsCurrentUser ? "primary" : "gray900", size: "subtext1", numberOfLines: 1, children: s.previewText }) })] });
             };
-            var ue = t(469745);
+            var ue = t(305399);
             function xe({ messageItem: e, messageFocusedDialog: s, onEvent: t }) {
                 const { t: a } = (0, V.$G)(),
                     r = (0, ue.a)("(max-width: 768px)"),
@@ -540,13 +540,13 @@
             t.d(s, { x: () => C });
             var n = t(552322),
                 a = t(202784),
-                r = t(844098),
-                o = t(702024),
-                i = t(941204),
-                l = t(130629),
-                c = t(436059),
-                d = t(887390),
-                m = t(921879),
+                r = t(653748),
+                o = t(193686),
+                i = t(332161),
+                l = t(423011),
+                c = t(993165),
+                d = t(687521),
+                m = t(983706),
                 u = t(425522),
                 x = t(611463),
                 h = t(379342),
@@ -637,4 +637,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-eca6a814.221d164a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-eca6a814.f56967fa.js.map

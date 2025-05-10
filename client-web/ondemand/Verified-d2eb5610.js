@@ -14,12 +14,12 @@
                     return (0, a.jsxs)("div", { className: "flex w-full max-w-5xl flex-col gap-6 pb-8 md:grid md:grid-cols-12", children: [(0, a.jsx)(t.ZQ, { title: e.hiring.benefits.jobListings.title, description: e.hiring.benefits.jobListings.description, className: "col-span-6 justify-between", children: (0, a.jsx)(o, { children: (0, a.jsx)("div", { children: (0, a.jsx)("img", { src: "https://abs.twimg.com/responsive-web/client-web/Hiring-Landing-Listing.e89f66aa.png", alt: "Job Listings", className: "object-cove w-full origin-top -translate-y-[90px]" }) }) }) }), (0, a.jsx)(t.ZQ, { title: e.hiring.benefits.careerPages.title, description: e.hiring.benefits.careerPages.description, className: "col-span-6 justify-between", children: (0, a.jsx)(o, { children: (0, a.jsx)("div", { children: (0, a.jsx)("img", { src: "https://abs.twimg.com/responsive-web/client-web/Hiring-Landing-Career-Page.93a8a04a.png", alt: "Career Landing Page", className: "w-full origin-top -translate-y-[50px] scale-[0.8] object-cover lg:-translate-y-[125px]" }) }) }) }), (0, a.jsx)(t.ZQ, { title: e.hiring.benefits.promotion.title, description: e.hiring.benefits.promotion.description, className: "col-span-6 justify-between", children: (0, a.jsx)(o, { children: (0, a.jsx)("div", { children: (0, a.jsx)("img", { src: "https://abs.twimg.com/responsive-web/client-web/Hiring-Landing-Promotion.dd36976a.png", alt: "Job Promotion", className: "w-full origin-top -translate-y-[50px] scale-[0.8] object-cover lg:-translate-y-[125px]" }) }) }) }), (0, a.jsx)(t.ZQ, { title: e.hiring.benefits.connect.title, description: e.hiring.benefits.connect.description, comingSoon: !0, className: "col-span-6 justify-between", children: (0, a.jsx)(o, { children: (0, a.jsx)("div", { children: (0, a.jsx)("img", { src: "https://abs.twimg.com/responsive-web/client-web/Hiring-Landing-Keywords.04854b2a.png", alt: "People search", className: "w-full object-cover", loading: "lazy" }) }) }) })] });
                 },
                 o = ({ children: e }) => (0, a.jsx)("div", { className: "h-[270px] w-full px-8", children: (0, a.jsx)("div", { className: "relative flex h-full w-full justify-center", style: { WebkitMaskImage: "linear-gradient(to bottom, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0.3))", maskImage: "linear-gradient(to bottom, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0.3))" }, children: e }) });
-            var d = s(436059);
+            var d = s(993165);
             const u = ({ subscribeUrl: e }) => {
                 const { business: l } = (0, r.M1)();
                 return (0, a.jsx)(t.$0, { className: "flex flex-col items-center text-center focus:outline-none", children: (0, a.jsx)("a", { href: e, className: "w-full items-center md:px-36", children: (0, a.jsx)(d.z, { variant: "insightsBright", className: "w-full py-5", children: l.hiring.footer.getStarted }) }) });
             };
-            var g = s(941204);
+            var g = s(332161);
             const m = () => {
                     const { business: e } = (0, r.M1)();
                     return (0, a.jsx)(t.$0, { className: "gap-12", children: (0, a.jsxs)("div", { className: "items-space flex w-full flex-col justify-around gap-12 pb-8 md:flex-row lg:gap-8", children: [(0, a.jsx)(p, { title: e.hiring.stats.users.title, description: e.hiring.stats.users.description }), (0, a.jsx)(p, { title: e.hiring.stats.companies.title, description: e.hiring.stats.companies.description }), (0, a.jsx)(p, { title: e.hiring.stats.applications.title, description: e.hiring.stats.applications.description })] }) });
@@ -369,7 +369,7 @@
                 n = s(520003),
                 i = s(994542),
                 r = s(313270),
-                t = s(941204),
+                t = s(332161),
                 c = s(995348),
                 o = s(177697),
                 d = s(428897),
@@ -682,4 +682,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Verified-d2eb5610.dd05120a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.Verified-d2eb5610.2a1e940a.js.map

@@ -2976,7 +2976,8 @@
                 n("jadeb4da", "আপনার সাবস্ক্রিপশনের সুযোগ-সুবিধা হারানোর আগে অনুগ্রহ করে জরুরি ভিত্তিতে আপনার পেমেন্ট পদ্ধতি আপডেট করুন।"),
                 n("bce3726a", "বিলিং আপডেট করুন"),
                 n("fce9ecce", "প্রস্তাবিত ভিডিও"),
-                n("dc954b88", "সম্পূর্ণ খবরের অভিজ্ঞতা ব্যবহার করে দেখুন"),
+                n("da00e00a", "Try the new News"),
+                n("c40666d8", "Try it"),
                 n("j66b95a2", "খবরের গভীরতায়"),
                 n("b58d2bd2", "প্রাসঙ্গিক পোস্টসমূহ"),
                 n("efe6ef9e", "পোস্ট দেখুন"),
@@ -3882,9 +3883,9 @@
                 n("e3275464", "পাঠান"),
                 n("cededf2a", "হোস্ট"),
                 n("i2caef48", "কো-হোস্ট"),
-                n("j245c654", "বক্তা"),
-                n("eda23a02", "শ্রোতা");
-            n("b90eb348", "বলার জন্য আমন্ত্রণ জানান"),
+                n("j245c654", "বক্তা");
+            n("eda23a02", "শ্রোতা"),
+                n("b90eb348", "বলার জন্য আমন্ত্রণ জানান"),
                 n("d9a63e82", "বক্তা হিসেবে তাকে সরিয়ে দিন"),
                 n("bd917b26", "কো-হোস্টে আমন্ত্রণ জানান"),
                 n("d7357e7e", "কো-হোস্ট থেকে সরান"),
@@ -4920,9 +4921,9 @@
                 n("e41fffbc", "আপনার ভিডিওগুলির মোট দেখার সময়।"),
                 n("if2909ba", "দেখার সময়"),
                 n("i0e5bf4c", "আপনার ভিডিও"),
-                n("ed99baea", "আগাম বিটা অ্যাক্সেস"),
-                n("gf898b70", "অ্যাডভান্সড অনুসন্ধান");
-            n("d2a43a7a", '"ai" এবং "স্টার্টআপ" দুটি আছে'),
+                n("ed99baea", "আগাম বিটা অ্যাক্সেস");
+            n("gf898b70", "অ্যাডভান্সড অনুসন্ধান"),
+                n("d2a43a7a", '"ai" এবং "স্টার্টআপ" দুটি আছে'),
                 n("a8584698", "ai স্টার্টআপ"),
                 n("jb6f9292", 'যথাযথভাবে "ai স্টার্টআপ" শব্দাবলী আছে'),
                 n("j8ee77c4", '"ai স্টার্টআপ"'),
@@ -5886,9 +5887,9 @@
                 n("i0ed3f4e", "ঘটনার ছবি"),
                 n("cbae35fa", "সম্প্রচারের বিষয়ে রিপোর্ট করুন"),
                 n("fd12ab58", "সংগ্রহমূলক পোস্ট"),
-                n("a226497c", "একটি নতুন কমিউনিটি তৈরী করুন"),
-                n("d7346632", "আপনি এখনো পর্যন্ত কোনও কমিউনিটিতে যোগদান করেননি");
-            n("b732a4cc", "আপনি যখন করবেন, আপনি এখানে সেগুলো দেখতে পাবেন।"),
+                n("a226497c", "একটি নতুন কমিউনিটি তৈরী করুন");
+            n("d7346632", "আপনি এখনো পর্যন্ত কোনও কমিউনিটিতে যোগদান করেননি"),
+                n("b732a4cc", "আপনি যখন করবেন, আপনি এখানে সেগুলো দেখতে পাবেন।"),
                 n("hff48914", "এই সময়ে কোনও পোস্ট খুঁজে পাওয়া যায়নি।"),
                 n("hb52cc4a", "অনুগ্রহ করে পরে আবার চেষ্টা করুন।"),
                 n("e50e1bb0", "কমিউনিটিতে স্বাগত"),
@@ -6678,6 +6679,7 @@
                 n("b2d41138", "আরও নাগাল = আরও উপার্জন"),
                 n("defa7f12", "উত্তর বুস্ট থেকে উপকার পান, যা আপনাকে দ্রুত বৃদ্ধির জন্য অতিরিক্ত দৃশ্যমানতা দেবে।"),
                 n("i3e4955d", "এখানে"),
+                n("fdc5d06c", "Exit Full Screen"),
                 n("cea1c00e", "এনগেজ করার ক্ষমতা আনলক করুন"),
                 n("f8e6a280", "নতুন অ্যাকাউন্টগুলির পোস্ট করা, লাইক করা, বুকমার্ক করা এবং উত্তর দেওয়ার জন্য স্বল্প বার্ষিক ফি দিতে হবে। স্প্যামের হার কমানো এবং সকলের জন্য আরও ভালো অভিজ্ঞতা প্রদান করতে এই পদক্ষেপ নেওয়া হয়েছে। আপনি এখনও X-এ অ্যাকাউন্টগুলি অনুসরণ করতে এবং ব্রাউজ করতে পারবেন।"),
                 n("h968efc6", "নতুন অ্যাকাউন্টগুলির পোস্ট করা, লাইক করা, বুকমার্ক করা এবং উত্তর দেওয়ার জন্য স্বল্প ফি দিতে হবে। স্প্যামের হার কমানো এবং সকলের জন্য আরও ভালো অভিজ্ঞতা প্রদান করতে এই পদক্ষেপ নেওয়া হয়েছে। আপনি এখনও X-এ অ্যাকাউন্টগুলি অনুসরণ করতে এবং ব্রাউজ করতে পারবেন।"),
@@ -6883,10 +6885,10 @@
                 n("e0198956", "X-এ পোস্ট করা কন্টেন্টের সাথে যাচাইকৃত অ্যাকাউন্টের এনগেজমেন্ট থেকে উৎপন্ন হওয়া আয়ের একটি অংশ পান৷"),
                 n("iadf78e2", "ডিভিও ডাউনলোড করুন"),
                 n("ee54c3de", "সরাসরি আপনার ডিভাইসে ভিডিওগুলি সেভ করুন"),
-                n("ae03594c", "ছোট উত্তরের বুস্ট"),
-                n("e6bb08c0", "আপনার উত্তরের ভিজিবিলিটি বৃদ্ধি করুন"),
-                n("bf2a6acc", "বড় উত্তরের বুস্ট");
-            n("c2059276", "আপনার উত্তরগুলি বুস্ট করুন।"),
+                n("ae03594c", "ছোট উত্তরের বুস্ট");
+            n("e6bb08c0", "আপনার উত্তরের ভিজিবিলিটি বৃদ্ধি করুন"),
+                n("bf2a6acc", "বড় উত্তরের বুস্ট"),
+                n("c2059276", "আপনার উত্তরগুলি বুস্ট করুন।"),
                 n("b023ec20", "সর্বাধিক উত্তর বুস্ট করা"),
                 n("g337328e", "আপনার উত্তরের জন্য সর্বোচ্চ ভিজিবিলিটি পান।"),
                 n("fa006202", "ব্যাকগ্রাউন্ড ভিডিও প্লেব্যাক"),
@@ -7388,8 +7390,8 @@
                 n("a10aa36c", "সহায়তা কেন্দ্র"),
                 n("d0740558", "সহায়তা কেন্দ্র"),
                 n("d2d76dca", "সহায়তা কেন্দ্র"),
-                n("b6414532", "আপনার পোস্ট দেখেছে এমন লোকেদের আনুমানিক বিশ্লেষণ"),
-                n("c61c6624", "বিজ্ঞাপিত"),
+                n("de8bcdaa", "Breakdown of the people that have seen your post"),
+                n("cfa1ef16", "বুস্ট করুন"),
                 n("d267afa2", "20-এর নিচে"),
                 n("db81cab0", "20-29"),
                 n("f173716e", "30-39"),
@@ -7398,6 +7400,14 @@
                 n("bcd9cf68", "65-এর বেশি"),
                 n("f05f1838", "অন্যান্য/নির্দিষ্ট করা নেই"),
                 n("fa5be588", "সাংগঠনিক"),
+                n("c65126fe", "Boosted"),
+                n("c61c6624", "বিজ্ঞাপিত"),
+                n("f1196a04", "Boost Analytics"),
+                n("bb66e3fc", "Promote Analytics"),
+                n("g512ddcc", "অর্গানিক অ্যানালিটিক্স"),
+                n("j9256524", "Breakdown of your boost performance"),
+                n("ceeb3016", "Breakdown of your promote performance"),
+                n("bf4558fa", "Breakdown of your organic performance"),
                 n("c69069e6", "এই পোস্ট X-এ যতবার দেখা হয়েছে।"),
                 n("a0615bac", "একজন ব্যবহারকারী একটি পোস্টে যতবার ইন্টারঅ্যাক্ট করেছেন। এর মধ্যে পোস্টের যেকোনো জায়গায় করা সমস্ত ক্লিক (হ্যাশট্যাগ, লিঙ্ক, অবতার, ব্যবহারকারীর নাম এবং পোস্ট সম্প্রসারণ সহ), রিপোস্ট, উত্তর, অনুসরণ এবং পছন্দ অন্তর্ভুক্ত।"),
                 n("d8abdaa4", "নতুন অনুসরণকারী"),
@@ -7405,8 +7415,9 @@
                 n("acc4cf12", "এই পোস্ট থেকে যতগুলো প্রোফাইল দেখা হয়েছে তার সংখ্যা"),
                 n("c7d0d1c4", "এই পোস্টের যেকোনো URL-এ ক্লিক-এর সংখ্যা"),
                 n("a4da7724", "লোকেরা যতবার এই পোস্ট সম্পর্কে বিস্তারিত দেখেছেন"),
-                n("c5d4d3a8", "অনুসরণ প্রতি খরচ"),
-                n("f56e24f2", "মোট খরচকে অনুসরণকারীর সংখ্যা, উপার্জিত অনুসরণকারী সহ, দিয়ে ভাগ করা হয়। আপনি কেবল তখনই পেমেন্ট দেন যখন কেউ আপনাকে অনুসরণ করেন"),
+                n("jedd2771", function (e) {
+                    return e.percentage + " from boost";
+                }),
                 n("g33fd6b1", function (e) {
                     return e.percentage + " প্রচার থেকে";
                 }),
@@ -7414,6 +7425,7 @@
                     return e.percentage + " যারা অনুসরণ করেন না";
                 }),
                 n("h4cbba3e", "<5%"),
+                n("f4f0094c", "< 5% from boost"),
                 n("h1cdac12", "< 5% প্রচারের থেকে"),
                 n("g884b2cc", "< 5% অনুসরণকারী নন তাদের থেকে"),
                 n("b32334a0", "অ্যাকাউন্ট পৌঁছে গেছে"),
@@ -7781,7 +7793,6 @@
                     return "স্বাগতম, " + e.displayName;
                 }),
                 n("a76d58ba", "বিজ্ঞাপনের অ্যানালিটিক্স"),
-                n("g512ddcc", "অর্গানিক অ্যানালিটিক্স"),
                 n("eccd0e1a", "প্রতিষ্ঠানের অ্যানালিটিক্স"),
                 n("deea1708", "আপনার সমস্ত X অ্যাকাউন্টগুলির জন্য অ্যানালিটিক্স দেখতে চান?"),
                 n("eb603ffc", "আপনার নেটওয়ার্ক অ্যাফিলিয়েট করতে আপগ্রেড করুন এবং সমষ্টিগত অ্যানালিটিক্স দেখুন৷"),
@@ -7852,16 +7863,7 @@
                 n("ddfd6718", "পেমেন্ট ব্যর্থ হয়েছে"),
                 n("i90ea7d2", "আপনার সুবিধাগুলি বজায় রাখতে অনুগ্রহ করে জরুরি ভিত্তিতে আপনার বিলিং আপডেট করুন।"),
                 n("a62359e6", "যাচাইকৃত প্রতিষ্ঠানের সেটিংস"),
-                n("ge221b7c", "অ্যাফিলিয়েট এবং আরও বিজ্ঞাপনের ক্রেডিটে অ্যাক্সেস পাওয়ার জন্য যাচাইকৃত প্রতিষ্ঠানের সাবস্ক্রিপশন আপগ্রেড করুন।"),
-                n("i4dccc18", "বিলিং"),
-                n("ec3cd6e4", "আপনার পেমেন্ট পদ্ধতি পরিচালনা করুন, বিলিং তথ্য আপডেট করুন এবং আপনার ইনভয়েস রিভিউ করুন।"),
-                n("dac61c3c", "অ্যাকাউন্ট সেটিংস"),
-                n("b6b5fd66", "আপনার ব্যবহারকারীর নাম বা পাসওয়ার্ড পরিবর্তন করা সহ আপনার X অ্যাকাউন্ট পরিচালনা করুন।"),
-                n("hb9c4a1c", "প্রশ্নাবলী, বাগ রিপোর্ট এবং মতামত"),
-                n("c674f5b4", "ইনভয়েস পেমেন্ট সেট আপ করুন"),
-                n("i8237e66", "ক্রেডিট কার্ড পেমেন্ট থেকে ব্যাঙ্ক ট্রান্সফারের মাধ্যমে ইনভয়েস করাতে পরিবর্তন করুন।"),
-                n("hebd348a", "নিয়োগের পোর্টাল থেকে চাকরির প্রচার করতে কিভাবে বিজ্ঞাপন ব্যবহার করবেন তা কনফিগার করুন"),
-                n("ib5e6f90", "চাকরির প্রমোশন");
+                n("ge221b7c", "অ্যাফিলিয়েট এবং আরও বিজ্ঞাপনের ক্রেডিটে অ্যাক্সেস পাওয়ার জন্য যাচাইকৃত প্রতিষ্ঠানের সাবস্ক্রিপশন আপগ্রেড করুন।");
             function t(e, c) {
                 for (var a = 0; a < c.length; a++) {
                     var n = c[a];
@@ -7900,7 +7902,16 @@
                     r(e, c)
                 );
             }
-            n("id720215", "নিয়োগের"),
+            n("i4dccc18", "বিলিং"),
+                n("ec3cd6e4", "আপনার পেমেন্ট পদ্ধতি পরিচালনা করুন, বিলিং তথ্য আপডেট করুন এবং আপনার ইনভয়েস রিভিউ করুন।"),
+                n("dac61c3c", "অ্যাকাউন্ট সেটিংস"),
+                n("b6b5fd66", "আপনার ব্যবহারকারীর নাম বা পাসওয়ার্ড পরিবর্তন করা সহ আপনার X অ্যাকাউন্ট পরিচালনা করুন।"),
+                n("hb9c4a1c", "প্রশ্নাবলী, বাগ রিপোর্ট এবং মতামত"),
+                n("c674f5b4", "ইনভয়েস পেমেন্ট সেট আপ করুন"),
+                n("i8237e66", "ক্রেডিট কার্ড পেমেন্ট থেকে ব্যাঙ্ক ট্রান্সফারের মাধ্যমে ইনভয়েস করাতে পরিবর্তন করুন।"),
+                n("hebd348a", "নিয়োগের পোর্টাল থেকে চাকরির প্রচার করতে কিভাবে বিজ্ঞাপন ব্যবহার করবেন তা কনফিগার করুন"),
+                n("ib5e6f90", "চাকরির প্রমোশন"),
+                n("id720215", "নিয়োগের"),
                 n("dd59f146", "চাকরির প্রমোশনের বিজ্ঞাপন অ্যাকাউন্ট"),
                 n("e7e36818", "বিজ্ঞাপন অ্যাকাউন্টগুলি চাকরির প্রচারের জন্য যোগ্য হয় যখন সেগুলি একটি তহবিল উৎসের সাথে সম্পূর্ণরূপে সেট আপ করা হয়।"),
                 n("c28566e0", "বিজ্ঞাপনের অ্যাকাউন্ট"),
@@ -8896,10 +8907,10 @@
                 }),
                 n("ae408b76", "আপনি রিপোস্ট করেছেন"),
                 n("j355f008", "পিন করা পোস্ট"),
-                n("habf9678", "লেখক পিন করেছেন"),
-                n("db0798ed", function (e) {
-                    return e.topicName + " প্রসঙ্গ";
-                }),
+                n("habf9678", "লেখক পিন করেছেন");
+            n("db0798ed", function (e) {
+                return e.topicName + " প্রসঙ্গ";
+            }),
                 n("dc716ec9", function (e) {
                     return "প্রস্তাবিত প্রসঙ্গ: " + e.topicName;
                 }),
@@ -8919,10 +8930,10 @@
                 }),
                 n("c889af33", function (e) {
                     return e.count + " যোগদান করেছেন";
-                });
-            n("d6f2056f", function (e) {
-                return e.count + " টিউন ইন করেছেন";
-            }),
+                }),
+                n("d6f2056f", function (e) {
+                    return e.count + " টিউন ইন করেছেন";
+                }),
                 n("jbc5f47a", "Spaces ডক"),
                 n("gfe2830f", function (e) {
                     return "অন্য" + f(e.count, "", "ান্য") + " " + e.count + " জন";
@@ -12884,7 +12895,7 @@
                 p = (m._validateParameterTypeDate, m._dateToPartsFormat, m._dateToPartsFormatterFn),
                 k = (m._dateFormat, m._dateFormatterFn),
                 N = m._relativeTimeFormatterFn,
-                X = m._unitFormatterFn;
+                l = m._unitFormatterFn;
             (m.a1243793601 = s(["", , 1, 0, 1, , , , 3, 2, "", "#,##,##0.###", "-#,##,##0.###", "-", "", g("truncate"), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }, "০১২৩৪৫৬৭৮৯", { 3: { one: "0 হাজার", other: "0 হাজার" }, 4: { one: "00 হাজার", other: "00 হাজার" }, 5: { one: "0 লাখ", other: "0 লাখ" }, 6: { one: "0M", other: "0M" }, 7: { one: "00M", other: "00M" }, 8: { one: "000M", other: "000M" }, 9: { one: "0B", other: "0B" }, 10: { one: "00B", other: "00B" }, 11: { one: "000B", other: "000B" }, 12: { one: "0T", other: "0T" }, 13: { one: "00T", other: "00T" }, 14: { one: "000T", other: "000T" }, maxExponent: 14 }], m("bn").pluralGenerator({}))),
                 (m.b554273779 = s(["", , 1, 0, 3, , , , 3, 2, "", "#,##,##0.###", "-#,##,##0.###", "-", "", g(), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }, "০১২৩৪৫৬৭৮৯"])),
                 (m.b923134963 = s(["", , 1, 0, 2, , , , 3, 2, "", "#,##,##0.###", "-#,##,##0.###", "-", "", g("round"), "∞", "NaN", { ".": ".", ",": ",", "%": "%", "+": "+", "-": "-", E: "E", "‰": "‰" }, "০১২৩৪৫৬৭৮৯"])),
@@ -13082,22 +13093,22 @@
                 (m.a1438407935 = k(m("bn").dateToPartsFormatter({ skeleton: "MMMM" }))),
                 (m.b1603313921 = k(m("bn").dateToPartsFormatter({ skeleton: "EEEE" }))),
                 (m.b1074409575 = N(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { "relativeTime-type-future": { "relativeTimePattern-count-one": "{0} দিনের মধ্যে", "relativeTimePattern-count-other": "{0} দিনের মধ্যে" }, "relativeTime-type-past": { "relativeTimePattern-count-one": "{0} দিন আগে", "relativeTimePattern-count-other": "{0} দিন আগে" }, "relative-type--2": "গত পরশু", "relative-type--1": "গতকাল", "relative-type-0": "আজ", "relative-type-1": "আগামীকাল", "relative-type-2": "আগামী পরশু" })),
-                (m.b1420048002 = X(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{1} প্রতি {0}", unitProperties: { displayName: "সেকেন্ড", one: "{0} সেকেন্ড", other: "{0} সেকেন্ড", perUnitPattern: "{0} প্রতি সেকেন্ড" } })),
-                (m.a987955998 = X(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{1} প্রতি {0}", unitProperties: { displayName: "মিনিট", one: "{0} মিনিট", other: "{0} মিনিট", perUnitPattern: "{0} প্রতি মিনিট" } })),
-                (m.a2084942126 = X(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{1} প্রতি {0}", unitProperties: { displayName: "ঘন্টা", one: "{0} ঘন্টা", other: "{0} ঘন্টা", perUnitPattern: "{0} প্রতি ঘন্টা" } })),
-                (m.b1470131905 = X(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "সেকেন্ড", one: "{0} সেঃ", other: "{0} সেঃ", perUnitPattern: "{0}/সে:" } })),
-                (m.a1929306847 = X(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "মিনিট", one: "{0} মিঃ", other: "{0} মিঃ", perUnitPattern: "{0}/মি:" } })),
-                (m.b428978961 = X(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "ঘন্টা", one: "{0} ঘঃ", other: "{0} ঘঃ", perUnitPattern: "{0}/ঘ:" } })),
-                (m.a277603157 = X(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "দিন", one: "{0} দিন", other: "{0} দিন", perUnitPattern: "{0}/দিন" } })),
-                (m.a92383508 = X(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{1} প্রতি {0}", unitProperties: { displayName: "দিন", one: "{0} দিন", other: "{0} দিন", perUnitPattern: "{0} প্রতি দিন" } })),
-                (m.a81498745 = X(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "মাস", one: "{0} মাস", other: "{0} মাস", perUnitPattern: "{0}/মাস" } })),
-                (m.b1820667592 = X(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{1} প্রতি {0}", unitProperties: { displayName: "মাস", one: "{0} মাস", other: "{0} মাস", perUnitPattern: "{0} প্রতি মাস" } })),
-                (m.a975583432 = X(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "বছর", one: "{0} বছর", other: "{0} বছর", perUnitPattern: "{0}/বছর" } })),
-                (m.b729235641 = X(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{1} প্রতি {0}", unitProperties: { displayName: "বছর", one: "{0} বছর", other: "{0} বছর", perUnitPattern: "{0} প্রতি বছর" } })),
-                (m.a661508558 = X(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "সেকেন্ড", one: "{0} সেকেন্ড", other: "{0} সেকেন্ড", perUnitPattern: "{0} প্রতি সেকেন্ড" } })),
-                (m.b1999778770 = X(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "মিনিট", one: "{0} মিনিট", other: "{0} মিনিট", perUnitPattern: "{0} প্রতি মিনিট" } })),
-                (m.a1942020126 = X(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "ঘন্টা", one: "{0} ঘন্টা", other: "{0} ঘন্টা", perUnitPattern: "{0} প্রতি ঘন্টা" } })),
-                (m.a1393778542 = X(m("bn").numberFormatter({ minimumFractionDigits: 1, maximumFractionDigits: 1, round: "truncate" }), m("bn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "সেকেন্ড", one: "{0} সেঃ", other: "{0} সেঃ", perUnitPattern: "{0}/সে:" } })),
+                (m.b1420048002 = l(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{1} প্রতি {0}", unitProperties: { displayName: "সেকেন্ড", one: "{0} সেকেন্ড", other: "{0} সেকেন্ড", perUnitPattern: "{0} প্রতি সেকেন্ড" } })),
+                (m.a987955998 = l(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{1} প্রতি {0}", unitProperties: { displayName: "মিনিট", one: "{0} মিনিট", other: "{0} মিনিট", perUnitPattern: "{0} প্রতি মিনিট" } })),
+                (m.a2084942126 = l(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{1} প্রতি {0}", unitProperties: { displayName: "ঘন্টা", one: "{0} ঘন্টা", other: "{0} ঘন্টা", perUnitPattern: "{0} প্রতি ঘন্টা" } })),
+                (m.b1470131905 = l(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "সেকেন্ড", one: "{0} সেঃ", other: "{0} সেঃ", perUnitPattern: "{0}/সে:" } })),
+                (m.a1929306847 = l(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "মিনিট", one: "{0} মিঃ", other: "{0} মিঃ", perUnitPattern: "{0}/মি:" } })),
+                (m.b428978961 = l(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "ঘন্টা", one: "{0} ঘঃ", other: "{0} ঘঃ", perUnitPattern: "{0}/ঘ:" } })),
+                (m.a277603157 = l(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "দিন", one: "{0} দিন", other: "{0} দিন", perUnitPattern: "{0}/দিন" } })),
+                (m.a92383508 = l(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{1} প্রতি {0}", unitProperties: { displayName: "দিন", one: "{0} দিন", other: "{0} দিন", perUnitPattern: "{0} প্রতি দিন" } })),
+                (m.a81498745 = l(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "মাস", one: "{0} মাস", other: "{0} মাস", perUnitPattern: "{0}/মাস" } })),
+                (m.b1820667592 = l(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{1} প্রতি {0}", unitProperties: { displayName: "মাস", one: "{0} মাস", other: "{0} মাস", perUnitPattern: "{0} প্রতি মাস" } })),
+                (m.a975583432 = l(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "বছর", one: "{0} বছর", other: "{0} বছর", perUnitPattern: "{0}/বছর" } })),
+                (m.b729235641 = l(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{1} প্রতি {0}", unitProperties: { displayName: "বছর", one: "{0} বছর", other: "{0} বছর", perUnitPattern: "{0} প্রতি বছর" } })),
+                (m.a661508558 = l(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "সেকেন্ড", one: "{0} সেকেন্ড", other: "{0} সেকেন্ড", perUnitPattern: "{0} প্রতি সেকেন্ড" } })),
+                (m.b1999778770 = l(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "মিনিট", one: "{0} মিনিট", other: "{0} মিনিট", perUnitPattern: "{0} প্রতি মিনিট" } })),
+                (m.a1942020126 = l(m("bn").numberFormatter({}), m("bn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "ঘন্টা", one: "{0} ঘন্টা", other: "{0} ঘন্টা", perUnitPattern: "{0} প্রতি ঘন্টা" } })),
+                (m.a1393778542 = l(m("bn").numberFormatter({ minimumFractionDigits: 1, maximumFractionDigits: 1, round: "truncate" }), m("bn").pluralGenerator({}), { compoundUnitPattern: "{0}/{1}", unitProperties: { displayName: "সেকেন্ড", one: "{0} সেঃ", other: "{0} সেঃ", perUnitPattern: "{0}/সে:" } })),
                 n("d58baa7f", m.a1243793601),
                 n("ia24dc8d", m.b554273779),
                 n("iab73d4b", m.b923134963),
@@ -13221,4 +13232,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/bn.1fed589a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/bn.ee3511da.js.map

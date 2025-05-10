@@ -45,7 +45,7 @@
                     i(h.Z.fetchMultipleIfNeeded(m));
                 }, [i, m]);
                 const _ = a.useCallback(() => {
-                        t && t(), o.push(`/i/news/a/${e.id}`);
+                        t && t(), o.push(`/i/news/article/${e.id}`);
                     }, [o, e, t]),
                     C = a.useCallback(() => {
                         (0, k._$)(r, { articleId: e.id });
@@ -56,7 +56,7 @@
             var C = n(399398);
             const x = c().j66b95a2,
                 S = c().ad35153e,
-                E = "/explore/tabs/news",
+                E = "/i/news",
                 v = c().d228a9a0;
             function T() {
                 const e = (0, u.Z)(),
@@ -531,4 +531,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TryNewsSidebar.618c9f2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TryNewsSidebar.a86fa3fa.js.map

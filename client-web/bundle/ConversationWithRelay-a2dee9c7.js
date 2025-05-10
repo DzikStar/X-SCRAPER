@@ -2,8 +2,8 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["bundle.ConversationWithRelay-a2dee9c7"],
     {
-        676763: (e, l, a) => {
-            a.d(l, { Z: () => o });
+        676763: (e, a, l) => {
+            l.d(a, { Z: () => o });
             var n,
                 i,
                 t,
@@ -51,8 +51,8 @@
             s.hash = "64de12f0920960b6b22e03535ff1469e";
             const o = s;
         },
-        175989: (e, l, a) => {
-            a.d(l, { Z: () => o });
+        175989: (e, a, l) => {
+            l.d(a, { Z: () => o });
             var n,
                 i,
                 t,
@@ -75,8 +75,8 @@
             s.hash = "0a49616d4912f818092d505fcb18647e";
             const o = s;
         },
-        651868: (e, l, a) => {
-            a.d(l, { Z: () => m });
+        651868: (e, a, l) => {
+            l.d(a, { Z: () => m });
             var n,
                 i,
                 t,
@@ -84,8 +84,8 @@
                 s,
                 o,
                 d,
-                u,
-                c = {
+                c,
+                u = {
                     argumentDefinitions: [
                         { kind: "RootArgument", name: "from_time" },
                         { kind: "RootArgument", name: "to_time" },
@@ -116,9 +116,9 @@
                                     name: "creative",
                                     plural: !1,
                                     selections: [
-                                        { alias: null, args: (d = [{ fields: [{ kind: "Variable", name: "iso8601_time", variableName: "from_time" }], kind: "ObjectValue", name: "from_time" }, n, { fields: [{ kind: "Variable", name: "iso8601_time", variableName: "to_time" }], kind: "ObjectValue", name: "to_time" }]), concreteType: "HubbleMetricsTotalValueSlice", kind: "LinkedField", name: "audience_gender", plural: !1, selections: (u = [{ alias: null, args: null, concreteType: "HubbleMetricsTotalValue", kind: "LinkedField", name: "items", plural: !0, selections: [t, r, { alias: null, args: null, concreteType: "HubbleBreakdownSegment", kind: "LinkedField", name: "breakdown_segment", plural: !1, selections: s, storageKey: null }], storageKey: null }]), storageKey: null },
-                                        { alias: null, args: d, concreteType: "HubbleMetricsTotalValueSlice", kind: "LinkedField", name: "audience_age", plural: !1, selections: u, storageKey: null },
-                                        { alias: null, args: d, concreteType: "HubbleMetricsTotalValueSlice", kind: "LinkedField", name: "audience_top_countries", plural: !1, selections: u, storageKey: null },
+                                        { alias: null, args: (d = [{ fields: [{ kind: "Variable", name: "iso8601_time", variableName: "from_time" }], kind: "ObjectValue", name: "from_time" }, n, { fields: [{ kind: "Variable", name: "iso8601_time", variableName: "to_time" }], kind: "ObjectValue", name: "to_time" }]), concreteType: "HubbleMetricsTotalValueSlice", kind: "LinkedField", name: "audience_gender", plural: !1, selections: (c = [{ alias: null, args: null, concreteType: "HubbleMetricsTotalValue", kind: "LinkedField", name: "items", plural: !0, selections: [t, r, { alias: null, args: null, concreteType: "HubbleBreakdownSegment", kind: "LinkedField", name: "breakdown_segment", plural: !1, selections: s, storageKey: null }], storageKey: null }]), storageKey: null },
+                                        { alias: null, args: d, concreteType: "HubbleMetricsTotalValueSlice", kind: "LinkedField", name: "audience_age", plural: !1, selections: c, storageKey: null },
+                                        { alias: null, args: d, concreteType: "HubbleMetricsTotalValueSlice", kind: "LinkedField", name: "audience_top_countries", plural: !1, selections: c, storageKey: null },
                                     ],
                                     storageKey: null,
                                 },
@@ -129,35 +129,11 @@
                     type: "Tweet",
                     abstractKey: null,
                 };
-            c.hash = "e74845c1ab8481ca8462e543c9369b99";
-            const m = c;
+            u.hash = "e74845c1ab8481ca8462e543c9369b99";
+            const m = u;
         },
-        454948: (e, l, a) => {
-            a.d(l, { Z: () => o });
-            var n,
-                i,
-                t,
-                r,
-                s = {
-                    argumentDefinitions: [
-                        { kind: "RootArgument", name: "from_time" },
-                        { kind: "RootArgument", name: "to_time" },
-                    ],
-                    kind: "Fragment",
-                    metadata: null,
-                    name: "CountriesBreakdown_metrics",
-                    selections: [
-                        { alias: null, args: [(n = { kind: "Literal", name: "requested_metrics", value: ["UniqueImpressions"] })], concreteType: "AnalyticsAudienceMetricsTotalValue", kind: "LinkedField", name: "audience_top_countries", plural: !0, selections: [(i = { alias: null, args: null, kind: "ScalarField", name: "metric_type", storageKey: null }), (t = { alias: null, args: null, kind: "ScalarField", name: "metric_value", storageKey: null }), { alias: null, args: null, concreteType: "AnalyticsAudienceBreakdownSegment", kind: "LinkedField", name: "breakdown_segment", plural: !1, selections: (r = [{ alias: null, args: null, kind: "ScalarField", name: "segment_name", storageKey: null }]), storageKey: null }], storageKey: 'audience_top_countries(requested_metrics:["UniqueImpressions"])' },
-                        { alias: null, args: null, concreteType: "Ad", kind: "LinkedField", name: "ad", plural: !1, selections: [{ alias: null, args: null, concreteType: "AdCreative", kind: "LinkedField", name: "creative", plural: !1, selections: [{ alias: null, args: [{ fields: [{ kind: "Variable", name: "iso8601_time", variableName: "from_time" }], kind: "ObjectValue", name: "from_time" }, n, { fields: [{ kind: "Variable", name: "iso8601_time", variableName: "to_time" }], kind: "ObjectValue", name: "to_time" }], concreteType: "HubbleMetricsTotalValueSlice", kind: "LinkedField", name: "audience_top_countries", plural: !1, selections: [{ alias: null, args: null, concreteType: "HubbleMetricsTotalValue", kind: "LinkedField", name: "items", plural: !0, selections: [i, t, { alias: null, args: null, concreteType: "HubbleBreakdownSegment", kind: "LinkedField", name: "breakdown_segment", plural: !1, selections: r, storageKey: null }], storageKey: null }], storageKey: null }], storageKey: null }], storageKey: null },
-                    ],
-                    type: "Tweet",
-                    abstractKey: null,
-                };
-            s.hash = "2d403a85148074a9bcb76e1fa79b1b48";
-            const o = s;
-        },
-        173265: (e, l, a) => {
-            a.d(l, { Z: () => t });
+        173265: (e, a, l) => {
+            l.d(a, { Z: () => t });
             var n,
                 i = {
                     argumentDefinitions: [
@@ -241,8 +217,8 @@
             i.hash = "267e84804c59b2debdc9d5603ec77768";
             const t = i;
         },
-        470911: (e, l, a) => {
-            a.d(l, { Z: () => i });
+        470911: (e, a, l) => {
+            l.d(a, { Z: () => i });
             var n = {
                 argumentDefinitions: [
                     { kind: "RootArgument", name: "first_48_hours_time" },
@@ -289,8 +265,8 @@
             };
             const i = n;
         },
-        241545: (e, l, a) => {
-            a.d(l, { Z: () => o });
+        241545: (e, a, l) => {
+            l.d(a, { Z: () => o });
             var n,
                 i,
                 t,
@@ -313,8 +289,8 @@
             s.hash = "7d9b06f760fba0db2bb4ee299657a23a";
             const o = s;
         },
-        743738: (e, l, a) => {
-            a.d(l, { Z: () => i });
+        743738: (e, a, l) => {
+            l.d(a, { Z: () => i });
             var n = {
                 argumentDefinitions: [
                     { kind: "RootArgument", name: "from_time" },
@@ -370,8 +346,8 @@
             };
             const i = n;
         },
-        716754: (e, l, a) => {
-            a.d(l, { Z: () => i });
+        716754: (e, a, l) => {
+            l.d(a, { Z: () => i });
             var n = {
                 argumentDefinitions: [],
                 kind: "Fragment",
@@ -415,8 +391,8 @@
             };
             const i = n;
         },
-        573519: (e, l, a) => {
-            a.d(l, { Z: () => t });
+        573519: (e, a, l) => {
+            l.d(a, { Z: () => t });
             var n,
                 i = {
                     argumentDefinitions: [
@@ -483,8 +459,8 @@
             i.hash = "3cb8d633319a8d17fc6409ac808b0a30";
             const t = i;
         },
-        999325: (e, l, a) => {
-            a.d(l, { Z: () => Z });
+        999325: (e, a, l) => {
+            l.d(a, { Z: () => Z });
             var n,
                 i,
                 t,
@@ -492,8 +468,8 @@
                 s,
                 o,
                 d,
-                u,
                 c,
+                u,
                 m,
                 g,
                 k,
@@ -506,8 +482,8 @@
                 F,
                 h,
                 K,
-                L,
                 V,
+                L,
                 w,
                 v,
                 A,
@@ -533,7 +509,7 @@
                                 kind: "LinkedField",
                                 name: "tweet_result_by_rest_id",
                                 plural: !1,
-                                selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [(u = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }), (c = { args: null, kind: "FragmentSpread", name: "LikeRetweetReplyAnalytics_metrics" }), (m = { args: null, kind: "FragmentSpread", name: "DataPointsGrid_metrics" }), (g = { args: null, kind: "FragmentSpread", name: "PromotionInfo_metrics" }), (k = { args: null, kind: "FragmentSpread", name: "VideoMetrics_metrics" }), (p = { args: null, kind: "FragmentSpread", name: "AudienceMetrics_metrics" }), (y = { args: null, kind: "FragmentSpread", name: "PromotionInfo_campaignInfo" }), { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "Tweet", kind: "LinkedField", name: "tweet", plural: !1, selections: [c, m, g, k, p, y], storageKey: null }], type: "TweetWithVisibilityResults", abstractKey: null }], storageKey: null }],
+                                selections: [{ alias: null, args: null, concreteType: null, kind: "LinkedField", name: "result", plural: !1, selections: [(c = { alias: null, args: null, kind: "ScalarField", name: "__typename", storageKey: null }), (u = { args: null, kind: "FragmentSpread", name: "LikeRetweetReplyAnalytics_metrics" }), (m = { args: null, kind: "FragmentSpread", name: "DataPointsGrid_metrics" }), (g = { args: null, kind: "FragmentSpread", name: "PromotionInfo_metrics" }), (k = { args: null, kind: "FragmentSpread", name: "VideoMetrics_metrics" }), (p = { args: null, kind: "FragmentSpread", name: "AudienceMetrics_metrics" }), (y = { args: null, kind: "FragmentSpread", name: "PromotionInfo_campaignInfo" }), { kind: "InlineFragment", selections: [{ alias: null, args: null, concreteType: "Tweet", kind: "LinkedField", name: "tweet", plural: !1, selections: [u, m, g, k, p, y], storageKey: null }], type: "TweetWithVisibilityResults", abstractKey: null }], storageKey: null }],
                                 storageKey: null,
                             },
                         ],
@@ -562,7 +538,7 @@
                                         name: "result",
                                         plural: !1,
                                         selections: [
-                                            u,
+                                            c,
                                             {
                                                 kind: "InlineFragment",
                                                 selections: (M = [
@@ -584,13 +560,13 @@
                                                                 selections: [
                                                                     { alias: "like_retweet_replies", args: [(_ = { fields: [{ kind: "Variable", name: "iso8601_time", variableName: "from_time" }], kind: "ObjectValue", name: "from_time" }), { kind: "Literal", name: "requested_metrics", value: ["Likes", "Retweets", "Replies"] }, (b = { fields: [{ kind: "Variable", name: "iso8601_time", variableName: "to_time" }], kind: "ObjectValue", name: "to_time" })], concreteType: "HubbleMetricsTotalValue", kind: "LinkedField", name: "metrics_total", plural: !0, selections: (F = [(T = { alias: null, args: null, kind: "ScalarField", name: "metric_type", storageKey: null }), (f = { alias: null, args: null, kind: "ScalarField", name: "metric_value", storageKey: null })]), storageKey: null },
                                                                     (h = { alias: null, args: null, kind: "ScalarField", name: "id", storageKey: null }),
-                                                                    { alias: null, args: (L = [_, (K = { kind: "Literal", name: "requested_metrics", value: ["UniqueImpressions"] }), b]), concreteType: "HubbleMetricsTotalValueSlice", kind: "LinkedField", name: "audience_follow_status", plural: !1, selections: [{ alias: null, args: null, concreteType: "HubbleMetricsTotalValue", kind: "LinkedField", name: "items", plural: !0, selections: [{ alias: null, args: null, concreteType: "HubbleBreakdownSegment", kind: "LinkedField", name: "breakdown_segment", plural: !1, selections: (w = [(V = { alias: null, args: null, kind: "ScalarField", name: "segment_name", storageKey: null }), { alias: null, args: null, kind: "ScalarField", name: "segment_value", storageKey: null }]), storageKey: null }, T, f], storageKey: null }], storageKey: null },
+                                                                    { alias: null, args: (V = [_, (K = { kind: "Literal", name: "requested_metrics", value: ["UniqueImpressions"] }), b]), concreteType: "HubbleMetricsTotalValueSlice", kind: "LinkedField", name: "audience_follow_status", plural: !1, selections: [{ alias: null, args: null, concreteType: "HubbleMetricsTotalValue", kind: "LinkedField", name: "items", plural: !0, selections: [{ alias: null, args: null, concreteType: "HubbleBreakdownSegment", kind: "LinkedField", name: "breakdown_segment", plural: !1, selections: (w = [(L = { alias: null, args: null, kind: "ScalarField", name: "segment_name", storageKey: null }), { alias: null, args: null, kind: "ScalarField", name: "segment_value", storageKey: null }]), storageKey: null }, T, f], storageKey: null }], storageKey: null },
                                                                     { alias: "datapoints_grid", args: [_, { kind: "Variable", name: "requested_metrics", variableName: "requested_promoted_metrics" }, b], concreteType: "HubbleMetricsTotalValue", kind: "LinkedField", name: "metrics_total", plural: !0, selections: F, storageKey: null },
                                                                     { alias: "promotion_info", args: [_, { kind: "Literal", name: "requested_metrics", value: ["Impressions", "Engagements"] }, b], concreteType: "HubbleMetricsTotalValue", kind: "LinkedField", name: "metrics_total", plural: !0, selections: F, storageKey: null },
                                                                     { alias: "video", args: [_, (v = { kind: "Literal", name: "requested_metrics", value: ["VideoViews", "UniqueVideoViews", "VideoStarts", "VideoPlayed25Percent", "VideoPlayed50Percent", "VideoPlayed75Percent", "VideoCompletions"] }), b], concreteType: "HubbleMetricsTotalValue", kind: "LinkedField", name: "metrics_total", plural: !0, selections: F, storageKey: null },
-                                                                    { alias: null, args: L, concreteType: "HubbleMetricsTotalValueSlice", kind: "LinkedField", name: "audience_gender", plural: !1, selections: (S = [{ alias: null, args: null, concreteType: "HubbleMetricsTotalValue", kind: "LinkedField", name: "items", plural: !0, selections: [T, f, { alias: null, args: null, concreteType: "HubbleBreakdownSegment", kind: "LinkedField", name: "breakdown_segment", plural: !1, selections: (A = [V]), storageKey: null }], storageKey: null }]), storageKey: null },
-                                                                    { alias: null, args: L, concreteType: "HubbleMetricsTotalValueSlice", kind: "LinkedField", name: "audience_age", plural: !1, selections: S, storageKey: null },
-                                                                    { alias: null, args: L, concreteType: "HubbleMetricsTotalValueSlice", kind: "LinkedField", name: "audience_top_countries", plural: !1, selections: S, storageKey: null },
+                                                                    { alias: null, args: V, concreteType: "HubbleMetricsTotalValueSlice", kind: "LinkedField", name: "audience_gender", plural: !1, selections: (S = [{ alias: null, args: null, concreteType: "HubbleMetricsTotalValue", kind: "LinkedField", name: "items", plural: !0, selections: [T, f, { alias: null, args: null, concreteType: "HubbleBreakdownSegment", kind: "LinkedField", name: "breakdown_segment", plural: !1, selections: (A = [L]), storageKey: null }], storageKey: null }]), storageKey: null },
+                                                                    { alias: null, args: V, concreteType: "HubbleMetricsTotalValueSlice", kind: "LinkedField", name: "audience_age", plural: !1, selections: S, storageKey: null },
+                                                                    { alias: null, args: V, concreteType: "HubbleMetricsTotalValueSlice", kind: "LinkedField", name: "audience_top_countries", plural: !1, selections: S, storageKey: null },
                                                                 ],
                                                                 storageKey: null,
                                                             },
@@ -639,8 +615,8 @@
             I.hash = "cf04955724597180d1689fb60c8ab013";
             const Z = I;
         },
-        393416: (e, l, a) => {
-            a.d(l, { Z: () => r });
+        393416: (e, a, l) => {
+            l.d(a, { Z: () => r });
             var n,
                 i,
                 t = {
@@ -673,93 +649,93 @@
             t.hash = "28fb2130ff421a25cacd718a50d9c8c2";
             const r = t;
         },
-        625661: (e, l, a) => {
-            a.d(l, { ZP: () => m });
-            var n = a(202784),
-                i = a(614983),
-                t = a.n(i),
-                r = a(325686),
-                s = a(370006),
-                o = a(786998),
-                d = a(929028),
-                u = a(386802);
-            function c(e, l, a) {
-                return e || (!l && a ? "fixed" : void 0);
+        625661: (e, a, l) => {
+            l.d(a, { ZP: () => m });
+            var n = l(202784),
+                i = l(614983),
+                t = l.n(i),
+                r = l(325686),
+                s = l(370006),
+                o = l(786998),
+                d = l(929028),
+                c = l(386802);
+            function u(e, a, l) {
+                return e || (!a && l ? "fixed" : void 0);
             }
             class m extends n.Component {
                 constructor(...e) {
                     super(...e),
                         (this._handleBackClick = () => {
-                            const { history: e, onBackClick: l } = this.props;
-                            t()(l || e, "Either onBackClick must be specified, or history should be supplied"), l ? l(this.goBack) : this.goBack();
+                            const { history: e, onBackClick: a } = this.props;
+                            t()(a || e, "Either onBackClick must be specified, or history should be supplied"), a ? a(this.goBack) : this.goBack();
                         }),
                         (this.goBack = () => {
-                            const { backLocation: e, history: l } = this.props;
-                            l && l.goBack({ backLocation: e });
+                            const { backLocation: e, history: a } = this.props;
+                            a && a.goBack({ backLocation: e });
                         });
                 }
                 _renderContent() {
-                    const { backButtonType: e, centerTitle: l, centeredLogo: a, fixed: i, hideBackButton: t, isFullWidth: r, isLarge: d, leftControl: u, middleControl: m, position: g, rightControl: k, secondaryBar: p, style: y, subtitle: _, title: b, titleDomId: T, titleIconCell: f, titleIconCellSize: F, withBackground: h, withWideContainer: K } = this.props,
-                        { isModal: L } = this.context,
-                        V = t ? u : n.createElement(s.Z, { backButtonType: e, onClick: this._handleBackClick }),
-                        w = (function (e, l, a) {
-                            return e && !(l && a);
-                        })(!!h, L, !!p);
-                    return n.createElement(n.Fragment, null, n.createElement(o.Z, { centerTitle: l, centeredLogo: a, isFullWidth: r, isLarge: d, leftControl: V, middleControl: m, position: c(g, L, i), rightControl: k, style: y, subtitle: _, title: b, titleDomId: T, titleIconCell: f, titleIconCellSize: F, withBackground: w, withWideContainer: K }), p || null);
+                    const { backButtonType: e, centerTitle: a, centeredLogo: l, fixed: i, hideBackButton: t, isFullWidth: r, isLarge: d, leftControl: c, middleControl: m, position: g, rightControl: k, secondaryBar: p, style: y, subtitle: _, title: b, titleDomId: T, titleIconCell: f, titleIconCellSize: F, withBackground: h, withWideContainer: K } = this.props,
+                        { isModal: V } = this.context,
+                        L = t ? c : n.createElement(s.Z, { backButtonType: e, onClick: this._handleBackClick }),
+                        w = (function (e, a, l) {
+                            return e && !(a && l);
+                        })(!!h, V, !!p);
+                    return n.createElement(n.Fragment, null, n.createElement(o.Z, { centerTitle: a, centeredLogo: l, isFullWidth: r, isLarge: d, leftControl: L, middleControl: m, position: u(g, V, i), rightControl: k, style: y, subtitle: _, title: b, titleDomId: T, titleIconCell: f, titleIconCellSize: F, withBackground: w, withWideContainer: K }), p || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
-                        { isModal: l } = this.context,
-                        a = d.Z.getBackgroundStyles();
-                    return l ? n.createElement(r.Z, { style: !!e && a }, this._renderContent()) : this._renderContent();
+                        { isModal: a } = this.context,
+                        l = d.Z.getBackgroundStyles();
+                    return a ? n.createElement(r.Z, { style: !!e && l }, this._renderContent()) : this._renderContent();
                 }
             }
-            (m.contextType = u.Z), (m.defaultProps = { fixed: !0, backLocation: "/", isFullWidth: !1, isLarge: !1, withBackground: !0 });
+            (m.contextType = c.Z), (m.defaultProps = { fixed: !0, backLocation: "/", isFullWidth: !1, isLarge: !1, withBackground: !0 });
         },
-        980407: (e, l, a) => {
-            a.d(l, { Z: () => p, w: () => g });
-            var n = a(202784),
-                i = a(325686),
-                t = a(108362),
-                r = a(386802),
-                s = a(392237),
-                o = a(652904),
-                d = a(555079),
-                u = a(625661),
-                c = a(449067),
-                m = a(715601);
+        980407: (e, a, l) => {
+            l.d(a, { Z: () => p, w: () => g });
+            var n = l(202784),
+                i = l(325686),
+                t = l(108362),
+                r = l(386802),
+                s = l(392237),
+                o = l(652904),
+                d = l(555079),
+                c = l(625661),
+                u = l(449067),
+                m = l(715601);
             class g extends n.Component {
                 constructor(...e) {
                     super(...e),
                         (this._renderChildViewAppBar = () => {
-                            const { appBarRef: e, appBarStyle: l, backButtonType: a, backLocation: t, centerTitle: r, hideBackButton: s, history: o, isFullWidth: c, isLarge: m, middleControl: g, onBackClick: p, rightControl: y, secondaryBar: _, subtitle: b, title: T } = this.props,
+                            const { appBarRef: e, appBarStyle: a, backButtonType: l, backLocation: t, centerTitle: r, hideBackButton: s, history: o, isFullWidth: u, isLarge: m, middleControl: g, onBackClick: p, rightControl: y, secondaryBar: _, subtitle: b, title: T } = this.props,
                                 { isModal: f } = this.context;
-                            return n.createElement(i.Z, { style: f ? [k.childViewAppBarRoot, k.appBarZindex] : k.appBarZindex }, n.createElement(u.ZP, { backButtonType: a || (f ? "close" : "back"), backLocation: t, centerTitle: r, fixed: !f, hideBackButton: s, history: o, isFullWidth: c, isLarge: m, middleControl: g, onBackClick: p, ref: e, rightControl: y, secondaryBar: _, style: [f && k.appBarModal, l], subtitle: b, title: T, titleDomId: d.Q_ }));
+                            return n.createElement(i.Z, { style: f ? [k.childViewAppBarRoot, k.appBarZindex] : k.appBarZindex }, n.createElement(c.ZP, { backButtonType: l || (f ? "close" : "back"), backLocation: t, centerTitle: r, fixed: !f, hideBackButton: s, history: o, isFullWidth: u, isLarge: m, middleControl: g, onBackClick: p, ref: e, rightControl: y, secondaryBar: _, style: [f && k.appBarModal, a], subtitle: b, title: T, titleDomId: d.Q_ }));
                         }),
                         (this._handleLayout = (e) => {
-                            const { onLayout: l } = this.props,
-                                { isModal: a } = this.context;
-                            l && (a ? window.requestAnimationFrame(() => l(e)) : l(e));
+                            const { onLayout: a } = this.props,
+                                { isModal: l } = this.context;
+                            a && (l ? window.requestAnimationFrame(() => a(e)) : a(e));
                         });
                 }
                 render() {
-                    const { "aria-hidden": e, bottomBar: l, children: a, containerStyle: r, documentTitle: s, isFullWidth: d, isLarge: u, renderHeader: g, title: p, withoutBottomBarMobile: y } = this.props,
+                    const { "aria-hidden": e, bottomBar: a, children: l, containerStyle: r, documentTitle: s, isFullWidth: d, isLarge: c, renderHeader: g, title: p, withoutBottomBarMobile: y } = this.props,
                         { isModal: _ } = this.context,
                         b = g ? g(this._renderChildViewAppBar()) : this._renderChildViewAppBar();
-                    return n.createElement(o.Z, null, n.createElement(c.Z.Configure, { documentTitle: s, headerless: !0, title: p }), n.createElement(i.Z, { "aria-hidden": e, onLayout: this._handleLayout, style: [k.root, _ && k.rootModal] }, !_ && b, n.createElement(t.Z, { isFullWidth: d, isLarge: u, style: [k.container, _ && k.containerModal, r] }, _ ? n.createElement(m.Z, { style: k.viewport }, b, a) : a), l ? n.createElement(i.Z, { style: [k.bottomBarModal, !_ && !y && k.bottomBarMobile] }, n.createElement(t.Z, { isFullWidth: d, isLarge: u }, l)) : null));
+                    return n.createElement(o.Z, null, n.createElement(u.Z.Configure, { documentTitle: s, headerless: !0, title: p }), n.createElement(i.Z, { "aria-hidden": e, onLayout: this._handleLayout, style: [k.root, _ && k.rootModal] }, !_ && b, n.createElement(t.Z, { isFullWidth: d, isLarge: c, style: [k.container, _ && k.containerModal, r] }, _ ? n.createElement(m.Z, { style: k.viewport }, b, l) : l), a ? n.createElement(i.Z, { style: [k.bottomBarModal, !_ && !y && k.bottomBarMobile] }, n.createElement(t.Z, { isFullWidth: d, isLarge: c }, a)) : null));
                 }
             }
             (g.defaultProps = { isFullWidth: !1, isLarge: !1 }), (g.contextType = r.Z);
             const k = s.default.create((e) => ({ root: { backgroundColor: e.colors.cellBackground, flexGrow: 1, flexShrink: 1 }, rootModal: { borderRadius: e.borderRadii.xLarge, flexShrink: 1 }, appBarModal: { borderTopStartRadius: e.borderRadii.small, borderTopEndRadius: e.borderRadii.small }, childViewAppBarRoot: { position: "sticky", top: 0 }, appBarZindex: { zIndex: e.componentZIndices.appBarZIndex }, container: { flexGrow: 1 }, containerModal: { flexShrink: 1 }, viewport: { borderBottomStartRadius: e.borderRadii.xLarge, borderBottomEndRadius: e.borderRadii.xLarge, flexGrow: 1, flexShrink: 1, overflow: "auto", zIndex: void 0 }, bottomBarModal: { borderTopColor: e.colors.borderColor, borderTopWidth: e.borderWidths.small }, bottomBarMobile: { position: "fixed", backfaceVisibility: "hidden", bottom: 0, width: "100%", paddingBottom: s.default.iPhoneOffsetBottom, backgroundColor: e.colors.navigationBackground, borderTopStyle: "solid" } })),
                 p = g;
         },
-        652904: (e, l, a) => {
-            a.d(l, { Z: () => u });
-            var n = a(202784),
-                i = a(500002),
-                t = a(668214),
-                r = a(997174),
-                s = a(118823);
+        652904: (e, a, l) => {
+            l.d(a, { Z: () => c });
+            var n = l(202784),
+                i = l(500002),
+                t = l(668214),
+                r = l(997174),
+                s = l(118823);
             const o = (0, t.Z)()
                 .propsFromActions(() => ({ updateLocation: s.YF, updateTweetDetailNav: r.NH }))
                 .withAnalytics();
@@ -769,8 +745,8 @@
                 }
                 componentDidUpdate(e) {
                     const {
-                            history: { location: l },
-                            location: { pathname: a, search: n },
+                            history: { location: a },
+                            location: { pathname: l, search: n },
                             locationKey: i,
                         } = this.props,
                         {
@@ -778,77 +754,77 @@
                             locationKey: s,
                         } = e;
                     let o = !1;
-                    l.pathname !== a ? (this._isInBackground = !0) : this._isInBackground && l.pathname === a && ((this._isInBackground = !1), (o = !0));
+                    a.pathname !== l ? (this._isInBackground = !0) : this._isInBackground && a.pathname === l && ((this._isInBackground = !1), (o = !0));
                     const d = i || s;
-                    ((d && i !== s) || (!d && a !== t) || n !== r || o) && this._performPageUpdates(this.props);
+                    ((d && i !== s) || (!d && l !== t) || n !== r || o) && this._performPageUpdates(this.props);
                 }
                 render() {
                     return this.props.children;
                 }
                 _performPageUpdates(e) {
-                    const { analytics: l, updateLocation: a, updateTweetDetailNav: n } = e;
-                    l.scribePageImpression(), a(l.contextualScribeNamespace, l.contextualScribeData), n(l.contextualScribeNamespace);
+                    const { analytics: a, updateLocation: l, updateTweetDetailNav: n } = e;
+                    a.scribePageImpression(), l(a.contextualScribeNamespace, a.contextualScribeData), n(a.contextualScribeNamespace);
                 }
             }
             d.defaultProps = { children: null };
-            const u = (0, i.ZP)(o(d));
+            const c = (0, i.ZP)(o(d));
         },
-        301758: (e, l, a) => {
-            a.d(l, { Z: () => _ });
-            var n = a(807896),
-                i = a(202784),
-                t = a(235902),
-                r = a(521288),
-                s = a(401388),
-                o = a(988566),
-                d = a(725516),
-                u = a(443781),
-                c = a(71620),
-                m = a(668214),
-                g = a(491963),
-                k = a(836255);
-            const p = (e, l) => l.tweetId,
-                y = (e, l) => {
-                    const a = l.tweetId,
-                        n = a && k.Z.select(e, a);
+        301758: (e, a, l) => {
+            l.d(a, { Z: () => _ });
+            var n = l(807896),
+                i = l(202784),
+                t = l(235902),
+                r = l(521288),
+                s = l(401388),
+                o = l(988566),
+                d = l(725516),
+                c = l(443781),
+                u = l(71620),
+                m = l(668214),
+                g = l(491963),
+                k = l(836255);
+            const p = (e, a) => a.tweetId,
+                y = (e, a) => {
+                    const l = a.tweetId,
+                        n = l && k.Z.select(e, l);
                     return n ? (0, g.z0)(e, n) : void 0;
                 },
                 _ = (0, m.Z)()
                     .propsFromState(() => ({ community: y, hydratedTweet: k.Z.createHydratedTweetSelector(p) }))
-                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, c.zr)("QUOTE_TWEET_CONTAINER"), fetchCommunityIfNeeded: g.ZP.fetchOneIfNeeded }))(({ community: e, createLocalApiErrorHandler: l, fetchCommunityIfNeeded: a, hydratedTweet: c, onAvatarClick: m, onMediaClick: g, onPress: k, onScreenNameClick: p, tweetId: y, withBirdwatchPivot: _ = !0, ...b }) => {
-                    const { featureSwitches: T, viewerUserId: f } = i.useContext(u.rC),
+                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, u.zr)("QUOTE_TWEET_CONTAINER"), fetchCommunityIfNeeded: g.ZP.fetchOneIfNeeded }))(({ community: e, createLocalApiErrorHandler: a, fetchCommunityIfNeeded: l, hydratedTweet: u, onAvatarClick: m, onMediaClick: g, onPress: k, onScreenNameClick: p, tweetId: y, withBirdwatchPivot: _ = !0, ...b }) => {
+                    const { featureSwitches: T, viewerUserId: f } = i.useContext(c.rC),
                         F = (0, d.z)(),
-                        h = c?.community_id_str;
+                        h = u?.community_id_str;
                     i.useEffect(() => {
-                        h && (0, s.Z)(e) && a(h).catch(l());
-                    }, [e, h, l, a]);
+                        h && (0, s.Z)(e) && l(h).catch(a());
+                    }, [e, h, a, l]);
                     const K = i.useCallback(
                             (e) => {
                                 F.scribeAction("click"), k && k(e);
                             },
                             [k, F],
                         ),
-                        L = !!_,
-                        V = c && (0, o.D$)(c, f, e),
-                        w = V && (0, o.rl)(V);
-                    return i.createElement(t.ZP.Provider, { value: { isEditTweetConsumptionEnabled: () => T.isTrue("responsive_web_edit_tweet_enabled") || T.isTrue("subscriptions_feature_labs_1004") } }, i.createElement(r.Z, (0, n.Z)({}, b, { loggedInUserId: f, onAvatarClick: m, onMediaClick: g, onPress: K, onScreenNameClick: p, shouldShowAltLabelAlways: !0, socialContextProps: w, tweet: c, withBirdwatchPivot: L })));
+                        V = !!_,
+                        L = u && (0, o.D$)(u, f, e),
+                        w = L && (0, o.rl)(L);
+                    return i.createElement(t.ZP.Provider, { value: { isEditTweetConsumptionEnabled: () => T.isTrue("responsive_web_edit_tweet_enabled") || T.isTrue("subscriptions_feature_labs_1004") } }, i.createElement(r.Z, (0, n.Z)({}, b, { loggedInUserId: f, onAvatarClick: m, onMediaClick: g, onPress: K, onScreenNameClick: p, shouldShowAltLabelAlways: !0, socialContextProps: w, tweet: u, withBirdwatchPivot: V })));
                 });
         },
-        301410: (e, l, a) => {
-            a.d(l, { i: () => k.ZP, z: () => b });
-            var n = a(202784),
-                i = a(928123),
-                t = a.n(i),
-                r = a(72845),
-                s = a.n(r),
-                o = a(57074),
-                d = a.n(o),
-                u = a(516951),
-                c = a(88656),
-                m = a(71620),
-                g = a(163889),
-                k = a(312771);
-            const p = ({ render: e }) => e({ fetchStatus: k.ZP.LOADING, data: null, error: null, retry: u.Z });
+        301410: (e, a, l) => {
+            l.d(a, { i: () => k.ZP, z: () => b });
+            var n = l(202784),
+                i = l(928123),
+                t = l.n(i),
+                r = l(72845),
+                s = l.n(r),
+                o = l(57074),
+                d = l.n(o),
+                c = l(516951),
+                u = l(88656),
+                m = l(71620),
+                g = l(163889),
+                k = l(312771);
+            const p = ({ render: e }) => e({ fetchStatus: k.ZP.LOADING, data: null, error: null, retry: c.Z });
             class y extends n.Component {
                 constructor(...e) {
                     super(...e), (this.state = { error: null });
@@ -856,83 +832,83 @@
                 static getDerivedStateFromError(e) {
                     return { error: e };
                 }
-                componentDidCatch(e, l) {
-                    if (!(e instanceof c.Z)) throw e;
+                componentDidCatch(e, a) {
+                    if (!(e instanceof u.Z)) throw e;
                     this.props.errorHandler(e), (0, g.Hj)(e, { level: "warning", tags: { userVisible: !0 } });
                 }
                 render() {
                     return this.props.children(this.state.error, this.props.retry);
                 }
             }
-            const _ = ({ query: e, queryRef: l, render: a }) => {
-                    const n = t()(e, l);
-                    return a({ fetchStatus: k.ZP.LOADED, data: n, error: null, retry: u.Z });
+            const _ = ({ query: e, queryRef: a, render: l }) => {
+                    const n = t()(e, a);
+                    return l({ fetchStatus: k.ZP.LOADED, data: n, error: null, retry: c.Z });
                 },
-                b = (e, l) =>
-                    function ({ fetchPolicy: a = "store-or-network", render: i, variables: t }) {
+                b = (e, a) =>
+                    function ({ fetchPolicy: l = "store-or-network", render: i, variables: t }) {
                         const [r, o] = s()(e),
-                            u = (0, m.n7)(l.errorConfig.context),
-                            c = d()(t),
+                            c = (0, m.n7)(a.errorConfig.context),
+                            u = d()(t),
                             g = n.useCallback(() => {
-                                o(c, { fetchPolicy: "network-only" });
-                            }, [o, c]);
+                                o(u, { fetchPolicy: "network-only" });
+                            }, [o, u]);
                         return (
                             n.useLayoutEffect(() => {
-                                o(c, { fetchPolicy: a });
-                            }, [a, o, c]),
+                                o(u, { fetchPolicy: l });
+                            }, [l, o, u]),
                             r
                                 ? n.createElement(
                                       n.Suspense,
                                       { fallback: n.createElement(p, { render: i }) },
-                                      n.createElement(y, { errorHandler: u(l.errorConfig.options || {}), key: r.fetchKey, retry: g }, (l, a) => (l ? i({ fetchStatus: k.ZP.FAILED, error: l, data: null, retry: a }) : n.createElement(_, { query: e, queryRef: r, render: i }))),
+                                      n.createElement(y, { errorHandler: c(a.errorConfig.options || {}), key: r.fetchKey, retry: g }, (a, l) => (a ? i({ fetchStatus: k.ZP.FAILED, error: a, data: null, retry: l }) : n.createElement(_, { query: e, queryRef: r, render: i }))),
                                   )
                                 : null
                         );
                     };
         },
-        702001: (e, l, a) => {
-            a.d(l, { c: () => t });
-            var n = a(516951),
-                i = a(615656);
+        702001: (e, a, l) => {
+            l.d(a, { c: () => t });
+            var n = l(516951),
+                i = l(615656);
             const t = { [i.ZP.OtherUserSuspended]: { customAction: n.Z }, [i.ZP.StatusViewForbidden]: { customAction: n.Z } };
         },
-        566220: (e, l, a) => {
-            a.d(l, { R: () => r });
-            var n = a(202784);
+        566220: (e, a, l) => {
+            l.d(a, { R: () => r });
+            var n = l(202784);
             const i = () => new Date(),
                 t = n.createContext(i),
                 r = () => n.useContext(t);
         },
-        738321: (e, l, a) => {
-            a.d(l, { X0: () => s, _b: () => t, gG: () => r });
-            var n = a(782261),
-                i = a(942893);
+        738321: (e, a, l) => {
+            l.d(a, { X0: () => s, _b: () => t, gG: () => r });
+            var n = l(782261),
+                i = l(942893);
             function t(e) {
-                const { dwellStartTime: l, eventInfo: a, tweet: t } = e,
-                    r = Date.now() - l,
+                const { dwellStartTime: a, eventInfo: l, tweet: t } = e,
+                    r = Date.now() - a,
                     s = t ? n.Z.getOriginalTweet(t) : void 0;
-                return { action: "view", data: { event_info: JSON.stringify({ duration_ms: r, event_info: a }), items: s ? [i.Z.getTweetItem(s)] : [] } };
+                return { action: "view", data: { event_info: JSON.stringify({ duration_ms: r, event_info: l }), items: s ? [i.Z.getTweetItem(s)] : [] } };
             }
             function r(e) {
-                const { element: l, eventInfo: a, tweet: t, userId: r } = e,
+                const { element: a, eventInfo: l, tweet: t, userId: r } = e,
                     s = t ? n.Z.getOriginalTweet(t) : void 0;
-                return { element: l, action: "click", data: { event_info: a, profile_id: r, items: s ? [i.Z.getTweetItem(s)] : [] } };
+                return { element: a, action: "click", data: { event_info: l, profile_id: r, items: s ? [i.Z.getTweetItem(s)] : [] } };
             }
-            function s(e, l, a) {
-                const t = a ? n.Z.getOriginalTweet(a) : void 0;
-                return { element: "TweetActivityQueryRenderer", action: "error", data: { event_info: e, items: t ? [i.Z.getTweetItem(t)] : [], profile_id: l } };
+            function s(e, a, l) {
+                const t = l ? n.Z.getOriginalTweet(l) : void 0;
+                return { element: "TweetActivityQueryRenderer", action: "error", data: { event_info: e, items: t ? [i.Z.getTweetItem(t)] : [], profile_id: a } };
             }
         },
-        16222: (e, l, a) => {
-            function n(e, l) {
+        16222: (e, a, l) => {
+            function n(e, a) {
                 try {
                     return e();
                 } catch (e) {
-                    return l(e);
+                    return a(e);
                 }
             }
-            a.d(l, { o: () => n });
+            l.d(a, { o: () => n });
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ConversationWithRelay-a2dee9c7.95cc03ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ConversationWithRelay-a2dee9c7.19eac51a.js.map

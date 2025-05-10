@@ -6,7 +6,7 @@
             r.d(s, { c: () => c });
             var t = r(552322),
                 n = r(425522),
-                a = r(941204),
+                a = r(332161),
                 i = r(759746),
                 o = r(466285);
             const c = ({ onClick: e, isSelected: s, suggestion: r }) => (r instanceof n.com.x.dms.NewDmSuggestion.User ? (0, t.jsx)(o.a, { onClick: e, isSelected: s, user: r.user }) : r instanceof n.com.x.dms.NewDmSuggestion.ExistingGroup ? (0, t.jsxs)("div", { className: "flex flex-row w-full gap-2 p-2 items-center hover:bg-gray-50 cursor-pointer", onClick: e, children: [(0, t.jsx)(i.M, { avatarSize: "large", users: r.otherUsers.asJsReadonlyArrayView(), isInlineFacepile: !0 }), (0, t.jsxs)("div", { className: "flex-1 flex-col", children: [(0, t.jsx)(a.x, { children: r.title }), (0, t.jsxs)(a.x, { size: "subtext2", color: "gray700", children: [r.numParticipants, " people"] })] })] }, r.id) : (0, t.jsx)(t.Fragment, {}));
@@ -16,7 +16,7 @@
             var t = r(552322),
                 n = r(425522),
                 a = r(256958),
-                i = r(703612),
+                i = r(589259),
                 o = r(242782),
                 c = r(350311),
                 l = r(336984);
@@ -50,7 +50,7 @@
             r.d(s, { w: () => o });
             var t = r(552322),
                 n = r(350311),
-                a = r(703612),
+                a = r(589259),
                 i = r(887491);
             const o = ({ name: e, avatarUrl: s, onRemove: r }) => (0, t.jsxs)("div", { className: "flex items-center rounded-full px-2 py-1 gap-1.5 bg-gray-50 hover:bg-mix-text border border-gray-200 max-w-fit cursor-pointer", onClick: r, children: [(0, t.jsx)(n.s, { url: s, size: "small" }), (0, t.jsx)(a.R, { name: e, size: "subtext1" }), (0, t.jsx)(i.Z, { className: "size-4" })] });
         },
@@ -60,10 +60,10 @@
                 n = r(425522),
                 a = r(202784),
                 i = r(611463),
-                o = r(702024),
-                c = r(941204),
+                o = r(193686),
+                c = r(332161),
                 l = r(533476),
-                u = r(469745),
+                u = r(305399),
                 d = r(788452),
                 m = r(455091);
             const x = n.com.x.dms.pin.PinEntryTitle,
@@ -224,7 +224,7 @@
         517922: (e, s, r) => {
             r.d(s, { C: () => a });
             var t = r(552322),
-                n = r(702024);
+                n = r(193686);
             function a() {
                 return (0, t.jsx)("div", { className: "flex items-center gap-2 p-4 bg-gray-100", children: (0, t.jsx)(n.P, { size: "small" }) });
             }
@@ -233,11 +233,11 @@
             r.d(s, { K: () => u });
             var t = r(552322),
                 n = r(812115),
-                a = r(26429),
-                i = r(703612),
-                o = r(559274),
-                c = r(862399),
-                l = r(796309);
+                a = r(378364),
+                i = r(589259),
+                o = r(253511),
+                c = r(983955),
+                l = r(31674);
             function u({ post: e, url: s, className: r }) {
                 const u = e.post;
                 return (0, t.jsxs)(n.r, { href: s, target: "_blank", className: (0, l.cn)("flex flex-col gap-2 h-full w-full border border-gray-200 py-2 px-4 cursor-pointer hover:bg-gray-50/50 transition-colors duration-100", r), children: [(0, t.jsxs)("div", { className: "flex gap-2 items-center", children: [(0, t.jsx)(a.q, { screenName: u.author.screenName, size: "small", url: u.author.profileImageUrl, withLink: "external", shape: u.author.profileImageShape, className: "size-5 shrink-0" }), (0, t.jsxs)("div", { className: "flex items-center gap-1 w-full", children: [(0, t.jsx)(i.R, { badges: u.author.badges, name: u.author.name, size: "subtext1", withLink: "external", screenNameColor: "gray800", screenName: u.author.screenName, isStacked: !1 }), (0, t.jsx)("div", { className: "shrink-0 size-0.5 bg-text/40 rounded-full" }), (0, t.jsx)("div", { className: "shrink-0", children: (0, t.jsx)(o.E, { timestamp: u.createdAt, size: "subtext1", color: "gray800" }) })] })] }), (0, t.jsx)(c.W, { text: u.text, displayTextRange: u.displayTextRange, entities: u.entities })] });
@@ -266,7 +266,7 @@
         549862: (e, s, r) => {
             r.d(s, { J: () => i });
             var t = r(552322),
-                n = r(436059),
+                n = r(993165),
                 a = r(173399);
             const i = () =>
                 (0, t.jsx)(n.z, {
@@ -283,10 +283,10 @@
         334038: (e, s, r) => {
             r.d(s, { Z: () => x });
             var t = r(552322),
-                n = r(436059),
-                a = r(844098),
-                i = r(130629),
-                o = r(941204),
+                n = r(993165),
+                a = r(653748),
+                i = r(423011),
+                o = r(332161),
                 c = r(192854),
                 l = r(458872),
                 u = r(202784),
@@ -300,4 +300,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-f141c2f6.ac9efc4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-f141c2f6.69bea64a.js.map

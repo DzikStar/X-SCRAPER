@@ -2979,7 +2979,8 @@
                 t("jadeb4da", "Please urgently update your payment method before you lose your subscription benefits."),
                 t("bce3726a", "Update Billing"),
                 t("fce9ecce", "Suggested Videos"),
-                t("dc954b88", "Try the full news experience"),
+                t("da00e00a", "Try the new News"),
+                t("c40666d8", "Try it"),
                 t("j66b95a2", "In-Depth News"),
                 t("b58d2bd2", "Relevant Posts"),
                 t("efe6ef9e", "View post"),
@@ -3885,9 +3886,9 @@
                 t("e3275464", "Zipụ"),
                 t("cededf2a", "Onye nnabata"),
                 t("i2caef48", "Osote onye nnabata"),
-                t("j245c654", "Ndị ọkà okwu"),
-                t("eda23a02", "Listeners");
-            t("b90eb348", "Invite to Speak"),
+                t("j245c654", "Ndị ọkà okwu");
+            t("eda23a02", "Listeners"),
+                t("b90eb348", "Invite to Speak"),
                 t("d9a63e82", "Remove from Speakers"),
                 t("bd917b26", "Invite to Co-host"),
                 t("d7357e7e", "Remove from Co-hosts"),
@@ -4923,9 +4924,9 @@
                 t("e41fffbc", "The total watch time of your videos."),
                 t("if2909ba", "Watch Time"),
                 t("i0e5bf4c", "Your videos"),
-                t("ed99baea", "Early Beta Access"),
-                t("gf898b70", "Advanced Search");
-            t("d2a43a7a", 'contains both "ai" and "startup"'),
+                t("ed99baea", "Early Beta Access");
+            t("gf898b70", "Advanced Search"),
+                t("d2a43a7a", 'contains both "ai" and "startup"'),
                 t("a8584698", "ai startup"),
                 t("jb6f9292", 'contains the exact phrase "ai startup"'),
                 t("j8ee77c4", '"ai startup"'),
@@ -5889,9 +5890,9 @@
                 t("i0ed3f4e", "Onyonyo omume"),
                 t("cbae35fa", "Nye Mkpesa Banyere Mgbasa-ozi"),
                 t("fd12ab58", "Collection posts"),
-                t("a226497c", "Mepụta Ọgbakọ ọhụrụ"),
-                t("d7346632", "Ị banyebeghị Ọgbakọ ọ bụla");
-            t("b732a4cc", "When you do, you’ll see their posts here."),
+                t("a226497c", "Mepụta Ọgbakọ ọhụrụ");
+            t("d7346632", "Ị banyebeghị Ọgbakọ ọ bụla"),
+                t("b732a4cc", "When you do, you’ll see their posts here."),
                 t("hff48914", "No posts could be found at this time."),
                 t("hb52cc4a", "Please try again later."),
                 t("e50e1bb0", "Welcome to Communities"),
@@ -6681,6 +6682,7 @@
                 t("b2d41138", "More reach = more earnings"),
                 t("defa7f12", "Benefit from a Reply Boost, giving you the extra visibility to grow faster."),
                 t("i3e4955d", "here"),
+                t("fdc5d06c", "Exit Full Screen"),
                 t("cea1c00e", "Unlock the ability to engage"),
                 t("f8e6a280", "New accounts are required to pay a small annual fee before you’re able to post, like, bookmark, and reply. This is to reduce spam and to create a better experience for everyone. You can still follow accounts and browse X for free."),
                 t("h968efc6", "New accounts are required to pay a small fee before you’re able to post, like, bookmark, and reply. This is to reduce spam and to create a better experience for everyone. You can still follow accounts and browse X for free."),
@@ -6886,10 +6888,10 @@
                 t("e0198956", "Get a share of the revenue generated from verified accounts’ engagement with content you post on X."),
                 t("iadf78e2", "Download videos"),
                 t("ee54c3de", "Save videos straight to your device"),
-                t("ae03594c", "Small reply boost"),
-                t("e6bb08c0", "Increase the visibility of your replies"),
-                t("bf2a6acc", "Large Reply Boost");
-            t("c2059276", "Have your replies boosted."),
+                t("ae03594c", "Small reply boost");
+            t("e6bb08c0", "Increase the visibility of your replies"),
+                t("bf2a6acc", "Large Reply Boost"),
+                t("c2059276", "Have your replies boosted."),
                 t("b023ec20", "Max Reply Boost"),
                 t("g337328e", "Get the highest visibility for your replies."),
                 t("fa006202", "Background video playback"),
@@ -7391,8 +7393,8 @@
                 t("a10aa36c", "Help Center"),
                 t("d0740558", "Help Center"),
                 t("d2d76dca", "Help Center"),
-                t("b6414532", "The estimated breakdown of the people that have seen your post"),
-                t("c61c6624", "A kwalitere"),
+                t("de8bcdaa", "Breakdown of the people that have seen your post"),
+                t("cfa1ef16", "Boost"),
                 t("d267afa2", "N'okpuru 20"),
                 t("db81cab0", "20-29"),
                 t("f173716e", "30-39"),
@@ -7401,6 +7403,14 @@
                 t("bcd9cf68", "Karịrị 65"),
                 t("f05f1838", "Ọzọ / Akọwapụtaghị ya"),
                 t("fa5be588", "Ọganik"),
+                t("c65126fe", "Boosted"),
+                t("c61c6624", "A kwalitere"),
+                t("f1196a04", "Boost Analytics"),
+                t("bb66e3fc", "Promote Analytics"),
+                t("g512ddcc", "Organic Analytics"),
+                t("j9256524", "Breakdown of your boost performance"),
+                t("ceeb3016", "Breakdown of your promote performance"),
+                t("bf4558fa", "Breakdown of your organic performance"),
                 t("c69069e6", "Times this post was seen on X"),
                 t("a0615bac", "Total number of times a user has interacted with a post. This includes all clicks anywhere on the post (including hashtags, links, avatar, username, and post expansion), reposts, replies, follows, and likes."),
                 t("d8abdaa4", "Ndị na-eso ọhụrụ"),
@@ -7408,8 +7418,9 @@
                 t("acc4cf12", "Number of profile views from this post"),
                 t("c7d0d1c4", "Number of clicks on any URL in this post"),
                 t("a4da7724", "Times people viewed the details about this post"),
-                t("c5d4d3a8", "Cost per follow"),
-                t("f56e24f2", "Total spend divided by the number of followers, including earned. You only pay when someone follows you"),
+                t("jedd2771", function (e) {
+                    return e.percentage + " from boost";
+                }),
                 t("g33fd6b1", function (e) {
                     return e.percentage + " site na nkwalite";
                 }),
@@ -7417,6 +7428,7 @@
                     return e.percentage + " site na ndị na-esoghị gị";
                 }),
                 t("h4cbba3e", "< 5%"),
+                t("f4f0094c", "< 5% from boost"),
                 t("h1cdac12", "< 5% from promotion"),
                 t("g884b2cc", "< 5% from non followers"),
                 t("b32334a0", "Akaụntụ Ezugo"),
@@ -7784,7 +7796,6 @@
                     return "Welcome back, " + e.displayName;
                 }),
                 t("a76d58ba", "Ads Analytics"),
-                t("g512ddcc", "Organic Analytics"),
                 t("eccd0e1a", "Organization Analytics"),
                 t("deea1708", "Want to view analytics across all your X accounts?"),
                 t("eb603ffc", "Upgrade to affiliate your network and view aggregated analytics."),
@@ -7855,16 +7866,7 @@
                 t("ddfd6718", "Payment Failed"),
                 t("i90ea7d2", "Please urgently update your billing to keep your benefits."),
                 t("a62359e6", "Verified Organization Settings"),
-                t("ge221b7c", "Upgrade Verified Organization subscription to get access to affiliates and more ad credits."),
-                t("i4dccc18", "Billing"),
-                t("ec3cd6e4", "Manage your payment method, update billing information, and review your invoices."),
-                t("dac61c3c", "Account settings"),
-                t("b6b5fd66", "Manage your X account including changing your username or password."),
-                t("hb9c4a1c", "Questions, bug reports and feedback"),
-                t("c674f5b4", "Setup invoice payments"),
-                t("i8237e66", "Switch from credit card payments to invoicing via bank transfers."),
-                t("hebd348a", "Configure how ads are used to promote jobs from the Hiring portal."),
-                t("ib5e6f90", "Job Promotion");
+                t("ge221b7c", "Upgrade Verified Organization subscription to get access to affiliates and more ad credits.");
             function r(e, a) {
                 for (var n = 0; n < a.length; n++) {
                     var t = a[n];
@@ -7903,7 +7905,16 @@
                     c(e, a)
                 );
             }
-            t("id720215", "Hiring"),
+            t("i4dccc18", "Billing"),
+                t("ec3cd6e4", "Manage your payment method, update billing information, and review your invoices."),
+                t("dac61c3c", "Account settings"),
+                t("b6b5fd66", "Manage your X account including changing your username or password."),
+                t("hb9c4a1c", "Questions, bug reports and feedback"),
+                t("c674f5b4", "Setup invoice payments"),
+                t("i8237e66", "Switch from credit card payments to invoicing via bank transfers."),
+                t("hebd348a", "Configure how ads are used to promote jobs from the Hiring portal."),
+                t("ib5e6f90", "Job Promotion"),
+                t("id720215", "Hiring"),
                 t("dd59f146", "Job promotion ad account"),
                 t("e7e36818", "Ad accounts are eligible for job promotion when they are fully set up with a funding source."),
                 t("c28566e0", "Ad Account"),
@@ -8899,10 +8910,10 @@
                 }),
                 t("ae408b76", "You reposted"),
                 t("j355f008", "Pinned post"),
-                t("habf9678", "Onye odee Gbadó"),
-                t("db0798ed", function (e) {
-                    return e.topicName + " Isiokwu";
-                }),
+                t("habf9678", "Onye odee Gbadó");
+            t("db0798ed", function (e) {
+                return e.topicName + " Isiokwu";
+            }),
                 t("dc716ec9", function (e) {
                     return "Recommended Topic: " + e.topicName;
                 }),
@@ -8922,10 +8933,10 @@
                 }),
                 t("c889af33", function (e) {
                     return e.count + " sonyere";
-                });
-            t("d6f2056f", function (e) {
-                return e.count + " gbanyere";
-            }),
+                }),
+                t("d6f2056f", function (e) {
+                    return e.count + " gbanyere";
+                }),
                 t("jbc5f47a", "Spaces dock"),
                 t("gfe2830f", function (e) {
                     return e.count + " other" + i(e.count, "", "s");
@@ -13221,4 +13232,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ig.60100f5a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ig.56dfd72a.js.map

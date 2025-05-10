@@ -94,7 +94,7 @@
                     e,
                 );
             }
-            const w = l.default.create((e) => ({ statusContainer: { display: "flex", flexDirection: "row", color: e.colors.gray700 }, genericStatusContainer: { alignItems: "center", gap: e.spaces.space4 }, statusLabelContainer: { position: "relative", width: "fit-content", animationDuration: "0.2s", opacity: 1, animationTimingFunction: "linear", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }] }, statusLabel: { color: "inherit" }, animatedStatusLabel: { color: e.colors.transparent, backgroundColor: e.colors.gray600, backgroundImage: `linear-gradient(to right, ${e.colors.gray600} 0%, ${e.colors.gray900} 20%, ${e.colors.gray500} 40%, ${e.colors.gray600} 100%)`, opacity: 1, display: "inline-block", backgroundClip: "text", animationDuration: "2s", backgroundRepeat: "no-repeat", animationIterationCount: "infinite", animationTimingFunction: "linear", animationKeyframes: [{ "0%": { backgroundPositionX: "-2em" }, "100%": { backgroundPositionX: "7em" } }] }, icon: { color: "inherit" }, expandableStatusContainer: { display: "flex", flexDirection: "row", marginStart: e.spaces.space4, flex: 1 }, interactiveExpandableStatusContainer: { cursor: "pointer" }, chevron: { transition: "all 0.2s ease", transform: "rotate(0deg)", color: e.colors.gray600, width: e.spaces.space16, height: e.spaces.space16, animationDuration: "0.2s", animationTimingFunction: "linear", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }], animationFillMode: "both" }, completedChevron: { color: "inherit", top: e.spaces.space2, marginStart: e.spaces.space4 }, expandedChevron: { transform: "rotate(-180deg)" }, typingAnimation: { color: "inherit", flex: 1, display: "flex", paddingTop: 3 }, typingAnimationChevron: { top: -1 } }));
+            const w = l.default.create((e) => ({ statusContainer: { display: "flex", flexDirection: "row", color: "light" === e.paletteName ? e.colors.gray700 : e.colors.gray900 }, genericStatusContainer: { alignItems: "center", gap: e.spaces.space4 }, statusLabelContainer: { position: "relative", width: "fit-content", animationDuration: "0.2s", opacity: 1, animationTimingFunction: "linear", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }] }, statusLabel: { color: "inherit" }, animatedStatusLabel: { color: e.colors.transparent, backgroundColor: e.colors.gray600, backgroundImage: `linear-gradient(to right, ${e.colors.gray600} 0%, ${e.colors.gray900} 20%, ${e.colors.gray500} 40%, ${e.colors.gray600} 100%)`, opacity: 1, display: "inline-block", backgroundClip: "text", animationDuration: "2s", backgroundRepeat: "no-repeat", animationIterationCount: "infinite", animationTimingFunction: "linear", animationKeyframes: [{ "0%": { backgroundPositionX: "-2em" }, "100%": { backgroundPositionX: "7em" } }] }, icon: { color: "inherit" }, expandableStatusContainer: { display: "flex", flexDirection: "row", marginStart: e.spaces.space4, flex: 1 }, interactiveExpandableStatusContainer: { cursor: "pointer" }, chevron: { transition: "all 0.2s ease", transform: "rotate(0deg)", color: "inherit", width: e.spaces.space16, height: e.spaces.space16, animationDuration: "0.2s", animationTimingFunction: "linear", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }], animationFillMode: "both" }, completedChevron: { color: "inherit", top: e.spaces.space2, marginStart: e.spaces.space4 }, expandedChevron: { transform: "rotate(-180deg)" }, typingAnimation: { color: "inherit", flex: 1, display: "flex", paddingTop: 3 }, typingAnimationChevron: { top: -1 } }));
         },
         567778: (e, t, a) => {
             a.d(t, { w: () => k });
@@ -326,7 +326,7 @@
             const k = l.default.create((e) => ({ container: { flex: 1, justifyContent: "flex-start", paddingEnd: e.spaces.space16, paddingStart: e.spaces.space16, paddingTop: e.spaces.space8, paddingBottom: e.spaces.space8 }, row: { justifyContent: "flex-start", gap: e.spaces.space8, alignItems: "flex-start", marginBottom: e.spaces.space8 }, scrollContainer: { WebkitOverflowScrolling: "touch", scrollSnapType: "x mandatory" } }));
         },
         799027: (e, t, a) => {
-            a.d(t, { i: () => H, Z: () => K });
+            a.d(t, { i: () => H, Z: () => N });
             var n = a(207274),
                 r = a(822343),
                 o = a(202784),
@@ -414,7 +414,7 @@
                 G = h().i52a9cb8,
                 O = r.Z,
                 X = n.Z;
-            function K({ memoryReferences: e, onDrawerDismiss: t }) {
+            function N({ memoryReferences: e, onDrawerDismiss: t }) {
                 const { isCompactLayout: a, isGrokDrawer: n } = (0, v.ZP)(),
                     r = a && !n,
                     s = (0, b.z)(),
@@ -466,18 +466,18 @@
                     }, [S, E]);
                 return o.createElement(
                     d.Z,
-                    { align: "right", buttonType: "primaryText", onDismissed: t, style: N.drawer, subtitle: W, title: H },
+                    { align: "right", buttonType: "primaryText", onDismissed: t, style: K.drawer, subtitle: W, title: H },
                     o.createElement(
                         i.Z,
-                        { style: [N.container, r ? N.compactContainer : void 0] },
+                        { style: [K.container, r ? K.compactContainer : void 0] },
                         o.createElement(y.D, { id: "grok_memory_drawer", onFullyVisible: P, position: "top", testID: "grok_memory_drawer" }),
                         null !== Z
                             ? o.createElement(I, { analytics: s, memoryConversation: E[Z], onBack: () => T(null), onForget: () => R(Z) })
                             : o.createElement(
                                   i.Z,
-                                  { style: N.memoriesPreviewContainer },
+                                  { style: K.memoriesPreviewContainer },
                                   f
-                                      ? o.createElement(i.Z, { style: N.spinnerContainer }, o.createElement(C.Z, null))
+                                      ? o.createElement(i.Z, { style: K.spinnerContainer }, o.createElement(C.Z, null))
                                       : E.length > 0
                                         ? E.map((e, t) =>
                                               o.createElement(F, {
@@ -486,17 +486,17 @@
                                                   onClick: () => {
                                                       T(t), (0, _.zC)(s, E[t].conversation_id);
                                                   },
-                                                  style: [N.memoryCard, { animationDelay: 0.02 * t + "s" }],
+                                                  style: [K.memoryCard, { animationDelay: 0.02 * t + "s" }],
                                               }),
                                           )
-                                        : o.createElement(u.ZP, { style: N.noMemoriesLabel }, G),
+                                        : o.createElement(u.ZP, { style: K.noMemoriesLabel }, G),
                               ),
                     ),
-                    w && o.createElement(i.Z, { style: N.undoToastContainer }, o.createElement(i.Z, { style: [N.undoToast, { animationDuration: (j - 500) / 1e3 + "s" }] }, o.createElement(u.ZP, null, $), o.createElement(p.ZP, { backgroundColor: "transparent", borderColor: "gray200", onClick: M, size: "small" }, V))),
+                    w && o.createElement(i.Z, { style: K.undoToastContainer }, o.createElement(i.Z, { style: [K.undoToast, { animationDuration: (j - 500) / 1e3 + "s" }] }, o.createElement(u.ZP, null, $), o.createElement(p.ZP, { backgroundColor: "transparent", borderColor: "gray200", onClick: M, size: "small" }, V))),
                 );
             }
-            const N = g.default.create((e) => ({ drawer: { paddingTop: e.spaces.space16, position: "relative" }, container: { height: "100%", padding: e.spaces.space16, width: 500 }, compactContainer: { width: "100%" }, memoriesPreviewContainer: { width: "100%", display: "flex", flexDirection: "column", gap: e.spaces.space16 }, spinnerContainer: { display: "flex", justifyContent: "center", alignItems: "center", width: "100%" }, pageSelector: { marginVertical: e.spaces.space12 }, memoryCard: { flex: 1, animationDuration: "0.3s", animationTimingFunction: "ease", animationKeyframes: [{ "0%": { opacity: 0, transform: "translateX(-30px)" }, "100%": { opacity: 1, transform: "translateX(0px)" } }], animationFillMode: "both" }, undoToastContainer: { position: "fixed", bottom: e.spaces.space16, width: "100%", display: "flex", alignItems: "center", justifyContent: "center" }, undoToast: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space16, padding: e.spaces.space16, backgroundColor: e.colors.gray50, borderRadius: e.borderRadii.medium, animationTimingFunction: "ease", animationKeyframes: [{ "0%": { opacity: 0, transform: "translateY(10px)" }, "10%": { opacity: 1, transform: "translateY(0px)" }, "90%": { opacity: 1, transform: "translateY(0px)" }, "100%": { opacity: 0, transform: "translateY(10px)" } }], animationFillMode: "both" }, noMemoriesLabel: { marginHorizontal: e.spaces.space4 } }));
+            const K = g.default.create((e) => ({ drawer: { paddingTop: e.spaces.space16, position: "relative" }, container: { height: "100%", padding: e.spaces.space16, width: 500 }, compactContainer: { width: "100%" }, memoriesPreviewContainer: { width: "100%", display: "flex", flexDirection: "column", gap: e.spaces.space16 }, spinnerContainer: { display: "flex", justifyContent: "center", alignItems: "center", width: "100%" }, pageSelector: { marginVertical: e.spaces.space12 }, memoryCard: { flex: 1, animationDuration: "0.3s", animationTimingFunction: "ease", animationKeyframes: [{ "0%": { opacity: 0, transform: "translateX(-30px)" }, "100%": { opacity: 1, transform: "translateX(0px)" } }], animationFillMode: "both" }, undoToastContainer: { position: "fixed", bottom: e.spaces.space16, width: "100%", display: "flex", alignItems: "center", justifyContent: "center" }, undoToast: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space16, padding: e.spaces.space16, backgroundColor: e.colors.gray50, borderRadius: e.borderRadii.medium, animationTimingFunction: "ease", animationKeyframes: [{ "0%": { opacity: 0, transform: "translateY(10px)" }, "10%": { opacity: 1, transform: "translateY(0px)" }, "90%": { opacity: 1, transform: "translateY(0px)" }, "100%": { opacity: 0, transform: "translateY(10px)" } }], animationFillMode: "both" }, noMemoriesLabel: { marginHorizontal: e.spaces.space4 } }));
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-bd027025.dfc9e09a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-bd027025.34daf1fa.js.map

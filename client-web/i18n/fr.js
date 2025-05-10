@@ -2980,7 +2980,8 @@
                 n("jadeb4da", "Veuillez rapidement mettre votre moyen de paiement à jour avant de perdre les avantages liés à votre abonnement."),
                 n("bce3726a", "Mettre les paramètres de facturation à jour"),
                 n("fce9ecce", "Vidéos suggérées"),
-                n("dc954b88", "Essayez l'expérience d'actualités complète"),
+                n("da00e00a", "Try the new News"),
+                n("c40666d8", "Try it"),
                 n("j66b95a2", "Actualités détaillées"),
                 n("b58d2bd2", "Posts pertinents"),
                 n("efe6ef9e", "Voir le post"),
@@ -3886,9 +3887,9 @@
                 n("e3275464", "Envoyer"),
                 n("cededf2a", "Hôte"),
                 n("i2caef48", "Cohôtes"),
-                n("j245c654", "Intervenants"),
-                n("eda23a02", "Auditeurs");
-            n("b90eb348", "Inviter à parler"),
+                n("j245c654", "Intervenants");
+            n("eda23a02", "Auditeurs"),
+                n("b90eb348", "Inviter à parler"),
                 n("d9a63e82", "Supprimer des intervenants"),
                 n("bd917b26", "Inviter à coanimer"),
                 n("d7357e7e", "Supprimer des cohôtes"),
@@ -4924,9 +4925,9 @@
                 n("e41fffbc", "Le temps de visionnage total de vos vidéos."),
                 n("if2909ba", "Temps de visionnage"),
                 n("i0e5bf4c", "Vos vidéos"),
-                n("ed99baea", "Accès anticipé à la version bêta"),
-                n("gf898b70", "Recherche avancée");
-            n("d2a43a7a", 'contient à la fois "ia" et "startup"'),
+                n("ed99baea", "Accès anticipé à la version bêta");
+            n("gf898b70", "Recherche avancée"),
+                n("d2a43a7a", 'contient à la fois "ia" et "startup"'),
                 n("a8584698", "startup ia"),
                 n("jb6f9292", 'contient exactement le groupe de mots "startup ia"'),
                 n("j8ee77c4", '"startup ia"'),
@@ -5890,9 +5891,9 @@
                 n("i0ed3f4e", "Image de l'événement"),
                 n("cbae35fa", "Signaler la diffusion"),
                 n("fd12ab58", "Posts de la collection"),
-                n("a226497c", "Créer une Communauté"),
-                n("d7346632", "Vous n'avez encore rejoint aucune Communauté");
-            n("b732a4cc", "Quand vous le ferez, vous verrez ses posts ici."),
+                n("a226497c", "Créer une Communauté");
+            n("d7346632", "Vous n'avez encore rejoint aucune Communauté"),
+                n("b732a4cc", "Quand vous le ferez, vous verrez ses posts ici."),
                 n("hff48914", "Aucun post n'a pu être trouvé pour le moment."),
                 n("hb52cc4a", "Veuillez réessayer plus tard."),
                 n("e50e1bb0", "Bienvenue dans les Communautés"),
@@ -6682,6 +6683,7 @@
                 n("b2d41138", "Plus de visibilité = plus de gains"),
                 n("defa7f12", "Profitez d'un boostage des réponses qui vous offre une visibilité accrue et une croissance plus rapide."),
                 n("i3e4955d", "ici"),
+                n("fdc5d06c", "Exit Full Screen"),
                 n("cea1c00e", "Débloquez la fonction permettant d'interagir."),
                 n("f8e6a280", "Les nouveaux comptes doivent payer une somme annuelle modique pour pouvoir poster, aimer, ajouter aux signets et répondre. Cela vise à réduire le spam afin d'améliorer l'expérience au bénéfice de tous. Vous pouvez continuer à suivre des comptes et à consulter X gratuitement."),
                 n("h968efc6", "Les nouveaux comptes doivent payer une somme modique pour pouvoir poster, aimer, ajouter aux signets et répondre. Cela vise à réduire le spam afin d'améliorer l'expérience au bénéfice de tous. Vous pouvez continuer à suivre des comptes et à consulter X gratuitement."),
@@ -6887,10 +6889,10 @@
                 n("e0198956", "Recevez une part des revenus générés par l'engagement de comptes certifiés avec les contenus que vous postez sur X."),
                 n("iadf78e2", "Téléchargement de vidéos"),
                 n("ee54c3de", "Enregistrez des vidéos directement sur votre appareil."),
-                n("ae03594c", "Léger boostage des réponses"),
-                n("e6bb08c0", "Augmentez la visibilité de vos réponses."),
-                n("bf2a6acc", "Boostage des réponses important");
-            n("c2059276", "Boostez vos réponses."),
+                n("ae03594c", "Léger boostage des réponses");
+            n("e6bb08c0", "Augmentez la visibilité de vos réponses."),
+                n("bf2a6acc", "Boostage des réponses important"),
+                n("c2059276", "Boostez vos réponses."),
                 n("b023ec20", "Boostage maximum des réponses"),
                 n("g337328e", "Bénéficiez de la meilleure visibilité possible pour vos réponses."),
                 n("fa006202", "Lecture des vidéos en arrière‑plan"),
@@ -7392,8 +7394,8 @@
                 n("a10aa36c", "Centre d'assistance"),
                 n("d0740558", "Centre d'assistance"),
                 n("d2d76dca", "Centre d'assistance"),
-                n("b6414532", "La répartition estimée des personnes qui ont vu votre post"),
-                n("c61c6624", "Sponsorisé"),
+                n("de8bcdaa", "Breakdown of the people that have seen your post"),
+                n("cfa1ef16", "Booster"),
                 n("d267afa2", "Moins de 20"),
                 n("db81cab0", "20-29"),
                 n("f173716e", "30-39"),
@@ -7402,6 +7404,14 @@
                 n("bcd9cf68", "Plus de 65 ans"),
                 n("f05f1838", "Autre/Non spécifié"),
                 n("fa5be588", "Organique"),
+                n("c65126fe", "Boosted"),
+                n("c61c6624", "Sponsorisé"),
+                n("f1196a04", "Boost Analytics"),
+                n("bb66e3fc", "Promote Analytics"),
+                n("g512ddcc", "Statistiques des posts organiques "),
+                n("j9256524", "Breakdown of your boost performance"),
+                n("ceeb3016", "Breakdown of your promote performance"),
+                n("bf4558fa", "Breakdown of your organic performance"),
                 n("c69069e6", "Nombre de fois que ce post a été vu sur X"),
                 n("a0615bac", "Nombre total de fois qu'un utilisateur a interagi avec un post. Cela inclut tous les clics où que ce soit sur le post (hashtags, liens, avatar, nom d'utilisateur et ouverture du post), les reposts, les réponses, les abonnements et les J'aime."),
                 n("d8abdaa4", "Nouveaux abonnés"),
@@ -7409,8 +7419,9 @@
                 n("acc4cf12", "Nombre de vues du profil depuis ce post"),
                 n("c7d0d1c4", "Nombre de clics sur l'URL figurant dans ce post"),
                 n("a4da7724", "Nombre de fois que des utilisateurs ont vu les détails relatifs à ce post."),
-                n("c5d4d3a8", "Coût par abonné"),
-                n("f56e24f2", "Dépenses totales divisées par le nombre d'abonnés, y compris les nouveaux. Vous payez uniquement quand une personne vous suit."),
+                n("jedd2771", function (e) {
+                    return e.percentage + " from boost";
+                }),
                 n("g33fd6b1", function (e) {
                     return e.percentage + " liés à la sponsorisation";
                 }),
@@ -7418,6 +7429,7 @@
                     return e.percentage + " de non-abonnés";
                 }),
                 n("h4cbba3e", "< 5 %"),
+                n("f4f0094c", "< 5% from boost"),
                 n("h1cdac12", "< 5 % liés à la sponsorisation"),
                 n("g884b2cc", "< 5 % liés à des non‑abonnés"),
                 n("b32334a0", "Comptes touchés"),
@@ -7785,7 +7797,6 @@
                     return "Heureux de vous retrouver, " + e.displayName;
                 }),
                 n("a76d58ba", "Statistiques des publicités"),
-                n("g512ddcc", "Statistiques des posts organiques "),
                 n("eccd0e1a", "Statistiques de l'organisation "),
                 n("deea1708", "Vous voulez afficher les statistiques pour tous vos comptes X ?"),
                 n("eb603ffc", "Mettez à niveau pour affilier votre réseau et afficher des statistiques agrégées."),
@@ -7856,16 +7867,7 @@
                 n("ddfd6718", "Échec du paiement"),
                 n("i90ea7d2", "Veuillez rapidement mettre vos paramètres de facturation à jour pour conserver vos avantages."),
                 n("a62359e6", "Paramètres d'organisation certifiée"),
-                n("ge221b7c", "Mettez à niveau vers l'abonnement Organisations certifiées pour accéder aux affiliés et à davantage de crédits publicitaires."),
-                n("i4dccc18", "Facturation"),
-                n("ec3cd6e4", "Gérez votre moyen de paiement, mettez vos informations de facturation à jour et passez vos factures en revue."),
-                n("dac61c3c", "Paramètres du compte"),
-                n("b6b5fd66", "Gérez votre compte X, notamment la modification de votre nom d'utilisateur ou de votre mot de passe."),
-                n("hb9c4a1c", "Questions, signalements de bugs et retours"),
-                n("c674f5b4", "Configurez le paiement des factures"),
-                n("i8237e66", "Passez de paiements par carte à une facturation via virements bancaires."),
-                n("hebd348a", "Configurez la manière dont des publicités sont utilisées pour promouvoir des offres d'emploi depuis le portail Recrutement."),
-                n("ib5e6f90", "Promotion d'offres d'emploi");
+                n("ge221b7c", "Mettez à niveau vers l'abonnement Organisations certifiées pour accéder aux affiliés et à davantage de crédits publicitaires.");
             function a(e, t) {
                 for (var s = 0; s < t.length; s++) {
                     var n = t[s];
@@ -7904,7 +7906,16 @@
                     i(e, t)
                 );
             }
-            n("id720215", "Recrutement"),
+            n("i4dccc18", "Facturation"),
+                n("ec3cd6e4", "Gérez votre moyen de paiement, mettez vos informations de facturation à jour et passez vos factures en revue."),
+                n("dac61c3c", "Paramètres du compte"),
+                n("b6b5fd66", "Gérez votre compte X, notamment la modification de votre nom d'utilisateur ou de votre mot de passe."),
+                n("hb9c4a1c", "Questions, signalements de bugs et retours"),
+                n("c674f5b4", "Configurez le paiement des factures"),
+                n("i8237e66", "Passez de paiements par carte à une facturation via virements bancaires."),
+                n("hebd348a", "Configurez la manière dont des publicités sont utilisées pour promouvoir des offres d'emploi depuis le portail Recrutement."),
+                n("ib5e6f90", "Promotion d'offres d'emploi"),
+                n("id720215", "Recrutement"),
                 n("dd59f146", "Compte d'annonceur permettant la promotion d'offres d'emploi"),
                 n("e7e36818", "Les comptes d'annonceur peuvent promouvoir des offres d'emploi quand leur configuration est complète, source de financement comprise."),
                 n("c28566e0", "Compte d'annonceur"),
@@ -8900,10 +8911,10 @@
                 }),
                 n("ae408b76", "Vous avez reposté"),
                 n("j355f008", "Post épinglé"),
-                n("habf9678", "Épinglé par l'auteur"),
-                n("db0798ed", function (e) {
-                    return "Sujet " + e.topicName;
-                }),
+                n("habf9678", "Épinglé par l'auteur");
+            n("db0798ed", function (e) {
+                return "Sujet " + e.topicName;
+            }),
                 n("dc716ec9", function (e) {
                     return "Sujet recommandé : " + e.topicName;
                 }),
@@ -8923,10 +8934,10 @@
                 }),
                 n("c889af33", function (e) {
                     return e.count + " " + r(e.count, "a", "ont") + " rejoint";
-                });
-            n("d6f2056f", function (e) {
-                return e.count + " " + r(e.count, "a", "ont") + " écouté";
-            }),
+                }),
+                n("d6f2056f", function (e) {
+                    return e.count + " " + r(e.count, "a", "ont") + " écouté";
+                }),
                 n("jbc5f47a", "Ancrage des Spaces"),
                 n("gfe2830f", function (e) {
                     return e.count + " autre" + r(e.count, " personne", "s personnes");
@@ -13209,4 +13220,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.01d84bfa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.d65d058a.js.map

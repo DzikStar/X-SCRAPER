@@ -548,7 +548,7 @@
                     }
                 };
         },
-        922816: (e, o, t) => {
+        589992: (e, o, t) => {
             t.r(o), t.d(o, { FollowersScreen: () => q, default: () => V });
             var r = t(202784),
                 n = t(457311),
@@ -825,4 +825,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserFollowLists.5d643fca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserFollowLists.a27c7b2a.js.map

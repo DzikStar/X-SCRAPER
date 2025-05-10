@@ -17,33 +17,31 @@
             const a = (0, n.Z)({
                 loader: () =>
                     Promise.all([
-                        i.e("icons.23"),
-                        i.e("icons.19"),
+                        i.e("icons.0"),
                         i.e("modules.common-e907d115"),
                         i.e("modules.common-e019dbda"),
+                        i.e("icons.14"),
                         i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                        i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2d1eb5e2"),
+                        i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-34cda585"),
                         i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                         i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                         i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
-                        i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-60e08fbd"),
+                        i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1bce2d5d"),
                         i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-25704d22"),
-                        i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-7b94920a"),
-                        i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-a7573e1a"),
-                        i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-ee9ffade"),
-                        i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8d854c2e"),
+                        i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-ee9e2532"),
                         i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-aaf38a28"),
                         i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-4cc32837"),
+                        i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-b73bd0e3"),
+                        i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-e0a7c12b"),
+                        i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-627162af"),
+                        i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-286dfed9"),
+                        i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-162a9ab0"),
+                        i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-cbd8f64c"),
+                        i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-f943ab46"),
+                        i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-91216611"),
                         i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2652b27c"),
-                        i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-da0e99d8"),
                         i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-3931c1f3"),
                         i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-c377d397"),
-                        i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-e4b9a405"),
-                        i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-f17e8d44"),
-                        i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-f39972b2"),
-                        i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-568e95f0"),
-                        i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1895c9ee"),
-                        i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8fe22a9e"),
                         i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-0a8205ef"),
                         i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-5719ea67"),
                         i.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1b6af858"),
@@ -67,7 +65,7 @@
             });
         },
         376293: (e, t, i) => {
-            i.d(t, { $f: () => A, KV: () => f, LI: () => L, SC: () => I, Vt: () => y, ed: () => C, op: () => v });
+            i.d(t, { $f: () => A, KV: () => _, LI: () => L, SC: () => I, Vt: () => y, ed: () => C, op: () => v });
             var r = i(202784),
                 n = i(190286),
                 o = i(674132),
@@ -80,16 +78,16 @@
                 p = a().f9e45cfb,
                 m = a().fcd4d489,
                 b = a().a6450e84,
-                S = a().g353ad73,
-                E = a().ad00a739,
-                f = a().a9fd20be,
-                _ = a().j546fb79,
+                E = a().g353ad73,
+                S = a().ad00a739,
+                _ = a().a9fd20be,
+                f = a().j546fb79,
                 h = a().c9623eeb,
                 y = a().e133be4e,
                 T = a().he43bca4,
                 g = a().f5f01af6,
                 I = Object.freeze({ TWEET_CARET: "tweet_caret", PROFILE: "user_profile", LIST_DETAIL: "list_detail", RICH_FEEDBACK: "rich_feedback", TWEET: "tweet", FOLLOWERS_LIST: "followers_list" }),
-                A = (e, t) => ({ confirmButtonType: "destructiveFilled", headline: p({ screenName: e }), label: b, text: t ? E({ screenName: e }) : S({ screenName: e }) }),
+                A = (e, t) => ({ confirmButtonType: "destructiveFilled", headline: p({ screenName: e }), label: b, text: t ? S({ screenName: e }) : E({ screenName: e }) }),
                 v = ({ blockAction: e, blockSubtext: t, isSoftBlockEnabled: i, source: r, testID: n, unblockAction: o, unblockSubtext: a, user: s }) => {
                     let d,
                         u = c.Z;
@@ -115,7 +113,7 @@
                 w = (e) => (e ? d.default : s.default),
                 P = ({ blockSubtext: e, unblockSubtext: t, user: i }) => (!i.blocking && e ? e(i.screen_name) : i.blocking ? t : void 0),
                 O = (e) => (e.blocking ? h({ screenName: e.screen_name }) : m({ screenName: e.screen_name })),
-                L = (e, t) => (e.blocking ? ((e, t) => ({ confirmButtonType: "primary", headline: _({ screenName: e }), label: y, text: t ? g : T }))(e.screen_name, t) : A(e.screen_name, t)),
+                L = (e, t) => (e.blocking ? ((e, t) => ({ confirmButtonType: "primary", headline: f({ screenName: e }), label: y, text: t ? g : T }))(e.screen_name, t) : A(e.screen_name, t)),
                 C = ({ confirmation: e, handleConfirm: t, onClose: i }) => {
                     const { confirmButtonType: o, headline: a, label: s, text: d } = e;
                     return r.createElement(n.Z, { cancelButtonLabel: u, confirmButtonLabel: s, confirmButtonType: o, headline: a, onCancel: i, onConfirm: t, text: d });
@@ -145,7 +143,7 @@
             const a = (0, o.wN)(o.PW, n());
         },
         163390: (e, t, i) => {
-            i.d(t, { OX: () => p, Od: () => l, PN: () => m, uq: () => c, wR: () => S });
+            i.d(t, { OX: () => p, Od: () => l, PN: () => m, uq: () => c, wR: () => E });
             var r = i(251067),
                 n = i(522171),
                 o = i(674132),
@@ -198,7 +196,7 @@
                         JSON.stringify(n)
                     );
                 }),
-                S = (e, t) => {
+                E = (e, t) => {
                     if (t) return { dataSet: { "at-shortcutkeys": b(e) } };
                 };
         },
@@ -343,10 +341,10 @@
             var p = i(516951),
                 m = i(541837),
                 b = i(615656),
-                S = i(71620),
-                E = i(917799);
-            const f = "FETCH_PREROLLS",
-                _ = (0, E.dg)(d.A7, f),
+                E = i(71620),
+                S = i(917799);
+            const _ = "FETCH_PREROLLS",
+                f = (0, S.dg)(d.A7, _),
                 h = 10;
             function y(e) {
                 const t = {},
@@ -379,9 +377,9 @@
                                 if (!Array.isArray(e) || 0 === e.length) return Promise.resolve();
                                 const o = { eligibleTweets: e, prerollDisplayLocation: n };
                                 t && (o.trigger_preroll = t);
-                                const a = (0, E._O)(i, { request: r.withEndpoint(m.Z).fetch, params: o }),
-                                    s = i((0, S.zr)(f)({ showToast: !1, [b.ZP.AccessDeniedByBouncer]: { customAction: p.Z } }));
-                                return a({ actionTypes: _, context: "FETCH_PREROLLS" }).catch(s);
+                                const a = (0, S._O)(i, { request: r.withEndpoint(m.Z).fetch, params: o }),
+                                    s = i((0, E.zr)(_)({ showToast: !1, [b.ZP.AccessDeniedByBouncer]: { customAction: p.Z } }));
+                                return a({ actionTypes: f, context: "FETCH_PREROLLS" }).catch(s);
                             })(e, t, i, r, n),
                         ),
                     ).then((e) => {
@@ -449,8 +447,8 @@
                             (r.promoted_content = { adMetadataContainer: e, disclosure_type: t, impression_id: i }), (p[r.id_str] = a);
                         }
                         const b = u(r),
-                            S = b && b.hasMultipleMediaItems;
-                        (m[r.id_str] = b), o?.preroll?.mediaInfo && !S && (l[r.id_str] = o), b?.legacy && !S && c.push(r);
+                            E = b && b.hasMultipleMediaItems;
+                        (m[r.id_str] = b), o?.preroll?.mediaInfo && !E && (l[r.id_str] = o), b?.legacy && !E && c.push(r);
                     });
                     i({ type: A, payload: { ...{ eligibleTweets: c, prerollMetadataCollection: l, promotedMetadataCollection: p, prerollEligibilityCollection: m, prerollDisplayLocation: t } } });
                     return T(
@@ -496,8 +494,8 @@
                                 })(0, p, m, b)
                             );
                         }
-                        const S = l[e];
-                        if (S) {
+                        const E = l[e];
+                        if (E) {
                             const e = (function (e, t, i, n) {
                                 if (!t.preroll || !t.preroll.mediaInfo) return null;
                                 const { mediaInfo: o, prerollId: a } = t.preroll,
@@ -519,7 +517,7 @@
                                     (d.advertiserName = e), (d.advertiserProfileImageUrl = t);
                                 }
                                 return d;
-                            })(0, S, m, b);
+                            })(0, E, m, b);
                             if (e) return e;
                         }
                     }
@@ -542,10 +540,10 @@
                 p = i(281743),
                 m = i(917799),
                 b = i(56519),
-                S = i(502909),
-                E = i(600823),
-                f = i(558369),
-                _ = i(497294),
+                E = i(502909),
+                S = i(600823),
+                _ = i(558369),
+                f = i(497294),
                 h = i(709318),
                 y = i(872788),
                 T = i(390387),
@@ -558,8 +556,8 @@
                 O = i(206795);
             const L = m.dg("lists", "UPLOAD_MEDIA"),
                 C = m.dg("lists", "UPDATE_MEDIA"),
-                D = (0, S.ZP)({ namespace: "lists" }),
-                R = (0, S.tb)(D, {
+                D = (0, E.ZP)({ namespace: "lists" }),
+                R = (0, E.tb)(D, {
                     context: "FETCH_LIST",
                     endpoint: (e) => e.withEndpoint(a.ZP).fetchList,
                     params: ([e], t) => {
@@ -604,7 +602,7 @@
                     selectLocalMediaId: (0, r.P1)(D.select, (e) => e?.mediaId),
                 },
                 B = {
-                    addUserToList: (0, S.Tx)(D, "addUserToList", {
+                    addUserToList: (0, E.Tx)(D, "addUserToList", {
                         getParams: (e, { userId: t } = {}) => ({ list_id: e, user_id: t }),
                         getApiMethod: (e) => e.withEndpoint(a.ZP).addToList,
                         context: "ADD_USER_TO_LIST",
@@ -625,13 +623,13 @@
                                 return u;
                             },
                     }),
-                    deleteList: (0, S.Tx)(D, "deleteList", {
+                    deleteList: (0, E.Tx)(D, "deleteList", {
                         getParams: (e) => ({ list_id: e }),
                         getApiMethod: (e) => e.withEndpoint(a.ZP).deleteList,
                         context: "DELETE_LIST",
                         mapResponseToActions: (e, t, i) => (t) => {
                             const r = i(),
-                                n = (0, f.mz)(r).isTrue("responsive_web_timeline_relay_lists_management_enabled"),
+                                n = (0, _.mz)(r).isTrue("responsive_web_timeline_relay_lists_management_enabled"),
                                 o = D.select(r, e),
                                 a = (0, T._h)(r);
                             if (!o || !a) return [];
@@ -640,9 +638,9 @@
                             return [(0, h.Vu)({ id: o.id_str, name: o.name, type: y.FO.LIST }), d.removeEntry(s), ...(0, g.C2)(n, i, g.Pq.ownedSubscribedList, e)];
                         },
                     }),
-                    deleteListMedia: (0, S.Tx)(D, "deleteListMedia", { getParams: (e) => ({ listId: e }), getApiMethod: (e) => e.withEndpoint(a.ZP).deleteBannerImage, context: "DELETE_LIST_MEDIA", mapResponseToActions: (e, t, i) => (t) => (t && t.entities ? [D.updateOne(e, { customBanner: void 0 })] : []) }),
-                    editList: (0, S.Tx)(D, "editList", { getParams: (e, { description: t, mode: i, name: r } = {}) => ({ description: t, list_id: e, mode: i, name: r }), getApiMethod: (e) => e.withEndpoint(a.ZP).editList, context: "EDIT_LIST", mapResponseToActions: (e, t, i) => (e) => Z(0, e) }),
-                    removeUserFromList: (0, S.Tx)(D, "removeUserFromList", {
+                    deleteListMedia: (0, E.Tx)(D, "deleteListMedia", { getParams: (e) => ({ listId: e }), getApiMethod: (e) => e.withEndpoint(a.ZP).deleteBannerImage, context: "DELETE_LIST_MEDIA", mapResponseToActions: (e, t, i) => (t) => (t && t.entities ? [D.updateOne(e, { customBanner: void 0 })] : []) }),
+                    editList: (0, E.Tx)(D, "editList", { getParams: (e, { description: t, mode: i, name: r } = {}) => ({ description: t, list_id: e, mode: i, name: r }), getApiMethod: (e) => e.withEndpoint(a.ZP).editList, context: "EDIT_LIST", mapResponseToActions: (e, t, i) => (e) => Z(0, e) }),
+                    removeUserFromList: (0, E.Tx)(D, "removeUserFromList", {
                         getParams: (e, { userId: t } = {}) => ({ list_id: e, user_id: t }),
                         getApiMethod: (e) => e.withEndpoint(a.ZP).removeFromList,
                         context: "REMOVE_USER_FROM_LIST",
@@ -659,14 +657,14 @@
                                 return [];
                             },
                     }),
-                    subscribe: (0, S.Tx)(D, "subscribe", {
+                    subscribe: (0, E.Tx)(D, "subscribe", {
                         getParams: (e) => ({ list_id: e }),
                         getApiMethod: (e) => e.withEndpoint(a.ZP).createSubscribers,
                         canPerformAction: (e = {}) => e && !e.following,
                         context: "SUBSCRIBE_TO_LIST",
                         mapResponseToActions: (e, t, i) => (t) => {
                             const r = i(),
-                                n = (0, f.mz)(r).isTrue("responsive_web_timeline_relay_lists_management_enabled"),
+                                n = (0, _.mz)(r).isTrue("responsive_web_timeline_relay_lists_management_enabled"),
                                 o = [],
                                 a = t?.entities?.lists?.[e],
                                 s = (0, T._h)(r);
@@ -678,7 +676,7 @@
                             return o;
                         },
                     }),
-                    toggleMute: (0, S.Tx)(D, "toggleMute", {
+                    toggleMute: (0, E.Tx)(D, "toggleMute", {
                         getParams: (e, { mute: t } = {}) => ({ listId: e, mute: t }),
                         getApiMethod: (e) => e.withEndpoint(a.ZP).toggleMute,
                         canPerformAction: (e = {}) => !!e,
@@ -690,14 +688,14 @@
                             return o && a && o.muting !== t.mute && r ? [D.updateOne(e, { muting: t.mute })] : [];
                         },
                     }),
-                    unsubscribe: (0, S.Tx)(D, "unsubscribe", {
+                    unsubscribe: (0, E.Tx)(D, "unsubscribe", {
                         getParams: (e) => ({ list_id: e }),
                         getApiMethod: (e) => e.withEndpoint(a.ZP).destroySubscribers,
                         canPerformAction: (e = {}) => e && !!e.following,
                         context: "UNSUBSCRIBE_FROM_LIST",
                         mapResponseToActions: (e, t, i) => (t) => {
                             const r = i(),
-                                n = (0, f.mz)(r).isTrue("responsive_web_timeline_relay_lists_management_enabled"),
+                                n = (0, _.mz)(r).isTrue("responsive_web_timeline_relay_lists_management_enabled"),
                                 o = [],
                                 a = t?.entities?.lists?.[e],
                                 s = (0, T._h)(r);
@@ -736,7 +734,7 @@
                         (r, n, { api: o }) => {
                             const s = e ? (0, d.U$)(e) : void 0;
                             r({ type: L.REQUEST });
-                            const c = _.$i(i, { extraInitParams: s });
+                            const c = f.$i(i, { extraInitParams: s });
                             return r(c).then(
                                 ([e]) => {
                                     const i = e.uploadId;
@@ -794,10 +792,10 @@
                 W = p.sv.addForObjectType("ApiMedia", { media_info: (e) => j.reference(e) }),
                 j = p.sv.addForObjectType("ApiImage", { original_img_url: (e) => e.image.url, original_img_width: (e) => e.image.width, original_img_height: (e) => e.image.height, salient_rect: (e) => (e.crop[0] ? $.reference(e.crop[0]) : null) }),
                 $ = p.sv.addForObjectType("ApiMediaRect", { height: (e) => e.h, left: (e) => e.x, top: (e) => e.y, width: (e) => e.w }),
-                G = E.Z.register(U);
+                G = S.Z.register(U);
         },
         206795: (e, t, i) => {
-            i.d(t, { Hi: () => h, NU: () => T, pO: () => y, g$: () => _ });
+            i.d(t, { Hi: () => h, NU: () => T, pO: () => y, g$: () => f });
             var r = i(166852),
                 n = i(483557),
                 o = i(499627),
@@ -810,21 +808,21 @@
                 p = "rweb/lists/LISTMEMBERSHIPS_REMOVE_UPDATE",
                 m = "listMemberships",
                 b = [],
-                S = Object.freeze({}),
-                E = Object.freeze({ data: { lists: [] }, error: null, fetchStatus: { [c.Yj.BOTTOM]: s.ZP.NONE, [c.Yj.TOP]: s.ZP.NONE } });
-            const f = (e, t) => e[m][t],
-                _ = (e, t) => {
-                    const i = f(e, t);
+                E = Object.freeze({}),
+                S = Object.freeze({ data: { lists: [] }, error: null, fetchStatus: { [c.Yj.BOTTOM]: s.ZP.NONE, [c.Yj.TOP]: s.ZP.NONE } });
+            const _ = (e, t) => e[m][t],
+                f = (e, t) => {
+                    const i = _(e, t);
                     return i?.data?.lists || b;
                 },
                 h = ({ addTo: e, itemsToAdd: t }) => ({ payload: { key: e, items: t }, type: u }),
                 y = ({ itemToRemove: e, removeFrom: t }) => ({ payload: { key: t, item: e }, type: p }),
                 T = (e, t) => (i, r) => {
                     const o = r(),
-                        u = f(o, e),
+                        u = _(o, e),
                         p = ((e, t) => {
-                            const i = f(e, t),
-                                r = _(e, t);
+                            const i = _(e, t),
+                                r = f(e, t);
                             return i ? (0, s.ke)(i.fetchStatus, !!r.length) : s.ZP.NONE;
                         })(o, e);
                     return !u || (p !== s.ZP.LOADING && p !== s.ZP.LOADED)
@@ -843,18 +841,18 @@
                         : Promise.resolve();
                 };
             o.Z.register({
-                [m]: function (e = S, t) {
+                [m]: function (e = E, t) {
                     if (!t) return e;
                     switch (t.type) {
                         case l.REQUEST: {
                             const { direction: i, key: r } = t.meta,
-                                n = e[r] || E,
+                                n = e[r] || S,
                                 o = { ...n.fetchStatus };
                             return (o[i] = s.ZP.LOADING), { ...e, [r]: { ...n, fetchStatus: o } };
                         }
                         case l.SUCCESS: {
                             const { direction: i, key: n } = t.meta,
-                                o = e[n] || E,
+                                o = e[n] || S,
                                 a = { ...o.fetchStatus };
                             a[i] = s.ZP.LOADED;
                             const d = t.payload?.result?.lists || [],
@@ -863,19 +861,19 @@
                         }
                         case l.FAILURE: {
                             const { direction: i, key: r } = t.meta,
-                                n = { ...(e[r] || E).fetchStatus };
+                                n = { ...(e[r] || S).fetchStatus };
                             return (n[i] = s.ZP.FAILED), { ...e, [r]: { ...e[r], error: t.payload, fetchStatus: n } };
                         }
                         case u: {
                             const { items: i, key: n } = t.payload || {},
-                                o = e[n] || E,
+                                o = e[n] || S,
                                 a = (o.data && o.data.lists) || [],
                                 s = (0, r.Z)([...i, ...a]);
                             return { ...e, [n]: { ...o, data: { ...o.data, lists: s } } };
                         }
                         case p: {
                             const { item: i, key: r } = t.payload || {},
-                                n = e[r] || E,
+                                n = e[r] || S,
                                 o = (n.data && n.data.lists) || [];
                             return { ...e, [r]: { ...n, data: { ...n.data, lists: o.filter((e) => i !== e) } } };
                         }
@@ -944,7 +942,7 @@
                 p = o.Z.register(u);
         },
         652881: (e, t, i) => {
-            i.d(t, { C2: () => _, Pq: () => l, ZP: () => E, s8: () => f });
+            i.d(t, { C2: () => f, Pq: () => l, ZP: () => S, s8: () => _ });
             i(136728);
             var r = i(66351),
                 n = (i(585488), i(483557)),
@@ -962,28 +960,28 @@
             function b(e) {
                 return e.startsWith("owned-subscribed-list-module") || e.startsWith("ownedSubscribedListModule");
             }
-            const S = (e) => (e ? (0, c.Z)({ context: "FETCH_LISTS_MANAGEMENT_PAGE_TIMELINE", formatResponse: a.Z, network: { query: r.Z, variables: ({ count: e, cursor: t }, i) => ({ count: e, cursor: "string" == typeof t ? t : void 0, isListMemberTargetUserId: "0", timelineId: "listsManagementPage", ...(0, o.d)(i.apiClient.featureSwitches) }) }, initialFetchCount: 100, perfKey: "listsManagementPageGraphQL", timelineId: "listsManagementPage" }) : (0, c.Z)({ context: "FETCH_LISTS_MANAGEMENT_PAGE_TIMELINE", formatResponse: a.Z, network: { getEndpoint: (e) => e.withEndpoint(n.ZP).fetchListsManagementPageTimeline, getEndpointParams: ({ count: e, cursor: t }) => ({ count: e, cursor: "string" == typeof t ? t : void 0 }) }, initialFetchCount: 100, perfKey: "listsManagementPageGraphQL", timelineId: "listsManagementPage" })),
-                E = S;
-            function f(e, t, i, r) {
-                const n = [],
-                    o = t(),
-                    a = S(e),
-                    s = a.selectEntries(o),
-                    c = i === l.pinnedLists,
-                    E = c ? m : b,
-                    f = s.find(({ entryId: e }) => E(e));
-                if (f) {
-                    const e = u(f.entryId, r),
-                        t = c ? p(r, e, d.P.ListTile, "-1") : p(r, e, d.P.ListWithPin),
-                        i = !c;
-                    c && (n.push(a.removeEntry(`${f.entryId}-emptyStateMessage`, !0)), n.push(a.removeEntry(`${f.entryId}-messageprompt-PinnedListsEmptyPrompt`, !0))), n.push(a.injectTimelineModuleEntry(t, f.entryId, { atTop: i }));
-                }
-                return n;
-            }
+            const E = (e) => (e ? (0, c.Z)({ context: "FETCH_LISTS_MANAGEMENT_PAGE_TIMELINE", formatResponse: a.Z, network: { query: r.Z, variables: ({ count: e, cursor: t }, i) => ({ count: e, cursor: "string" == typeof t ? t : void 0, isListMemberTargetUserId: "0", timelineId: "listsManagementPage", ...(0, o.d)(i.apiClient.featureSwitches) }) }, initialFetchCount: 100, perfKey: "listsManagementPageGraphQL", timelineId: "listsManagementPage" }) : (0, c.Z)({ context: "FETCH_LISTS_MANAGEMENT_PAGE_TIMELINE", formatResponse: a.Z, network: { getEndpoint: (e) => e.withEndpoint(n.ZP).fetchListsManagementPageTimeline, getEndpointParams: ({ count: e, cursor: t }) => ({ count: e, cursor: "string" == typeof t ? t : void 0 }) }, initialFetchCount: 100, perfKey: "listsManagementPageGraphQL", timelineId: "listsManagementPage" })),
+                S = E;
             function _(e, t, i, r) {
                 const n = [],
                     o = t(),
-                    a = S(e),
+                    a = E(e),
+                    s = a.selectEntries(o),
+                    c = i === l.pinnedLists,
+                    S = c ? m : b,
+                    _ = s.find(({ entryId: e }) => S(e));
+                if (_) {
+                    const e = u(_.entryId, r),
+                        t = c ? p(r, e, d.P.ListTile, "-1") : p(r, e, d.P.ListWithPin),
+                        i = !c;
+                    c && (n.push(a.removeEntry(`${_.entryId}-emptyStateMessage`, !0)), n.push(a.removeEntry(`${_.entryId}-messageprompt-PinnedListsEmptyPrompt`, !0))), n.push(a.injectTimelineModuleEntry(t, _.entryId, { atTop: i }));
+                }
+                return n;
+            }
+            function f(e, t, i, r) {
+                const n = [],
+                    o = t(),
+                    a = E(e),
                     s = a.selectEntries(o),
                     d = i === l.pinnedLists ? m : b,
                     c = s.find(({ entryId: e }) => d(e));
@@ -1061,10 +1059,10 @@
                 p = i(253493),
                 m = i(507651),
                 b = i(890882),
-                S = i(443781),
-                E = i(38293),
-                f = i(292484),
-                _ = i(962741),
+                E = i(443781),
+                S = i(38293),
+                _ = i(292484),
+                f = i(962741),
                 h = i(175856),
                 y = i(4691),
                 T = i(750085),
@@ -1132,8 +1130,8 @@
                     return !!e.match(i);
                 },
                 oe = ({ addFlag: e, analytics: t, history: i, location: s, match: d, seedType: I, showFriendsOfFriendsNUX: A, timeWindowQuery: v }) => {
-                    const { featureSwitches: w } = r.useContext(S.rC),
-                        P = (0, f.Cz)(),
+                    const { featureSwitches: w } = r.useContext(E.rC),
+                        P = (0, _.Cz)(),
                         O = w.isTrue("longform_top_articles_time_window_enabled"),
                         L = w.isTrue("longform_top_articles_friends_of_friends_enabled"),
                         [C, D] = r.useState(A),
@@ -1149,7 +1147,7 @@
                     const F = r.useCallback(
                             (e) => {
                                 const t = d.params.articleId,
-                                    r = (0, u.Z)(e, (e) => e.type === _.ZP.Article && !!e.content && e.content.articleId),
+                                    r = (0, u.Z)(e, (e) => e.type === f.ZP.Article && !!e.content && e.content.articleId),
                                     n = ne(s.pathname);
                                 P && !t && r ? i.replace(`/i/articles/${I}/${r}${R(v)}`) : P || n || i.replace(`/i/articles/${I}${R(v)}`);
                             },
@@ -1190,12 +1188,12 @@
                             return t > -1 ? t : 0;
                         })(I),
                         se = r.useMemo(() => ((e, t = 864e5) => (0, g.Z)({ timelineId: `articlesTimeline-${e}-${t}`, network: { getEndpoint: (e) => e.withEndpoint(y.ZP).fetchArticleTimeline, getEndpointParams: ({ count: i, cursor: r }) => ({ count: i, cursor: "string" == typeof r ? r : void 0, articleListSeedType: e, timeWindowMillis: t }) }, context: "FETCH_TOP_ARTICLES_TIMELINE", perfKey: "articlesTimeline", formatResponse: T.Z }))(I, te(v || 24)), [I, v]);
-                    return r.createElement(r.Fragment, null, r.createElement(E.Z, { title: G }), r.createElement(p.Z, { rightControl: O ? H : void 0, screenType: "root", showSubtitleOnRoot: !0, subtitle: z({ count: v || 24 }), title: r.createElement(b.Z, { text: G }) }, L ? r.createElement(m.Z, { links: oe, visibleItemIndex: ae }) : null, r.createElement(B, { module: se, onEntriesChanged: F })));
+                    return r.createElement(r.Fragment, null, r.createElement(S.Z, { title: G }), r.createElement(p.Z, { rightControl: O ? H : void 0, screenType: "root", showSubtitleOnRoot: !0, subtitle: z({ count: v || 24 }), title: r.createElement(b.Z, { text: G }) }, L ? r.createElement(m.Z, { links: oe, visibleItemIndex: ae }) : null, r.createElement(B, { module: se, onEntriesChanged: F })));
                 },
                 ae = $(oe);
         },
         732595: (e, t, i) => {
-            i.r(t), i.d(t, { default: () => T, query: () => _ });
+            i.r(t), i.d(t, { default: () => T, query: () => f });
             var r = i(195382),
                 n = i(202784),
                 o = (i(585488), i(712696)),
@@ -1208,22 +1206,22 @@
                 p = i(615027);
             const m = { context: "ArticleRedirect" },
                 b = c().h965157c,
-                S = c().cd388852,
-                E = n.createElement(s.Z, { header: b, message: S }),
-                f = { type: "CustomRetry", content: () => E },
-                _ = r.Z,
+                E = c().cd388852,
+                S = n.createElement(s.Z, { header: b, message: E }),
+                _ = { type: "CustomRetry", content: () => S },
+                f = r.Z,
                 h = ({ articleEntityId: e }) => {
-                    const t = a()(_, { articleEntityId: e }),
+                    const t = a()(f, { articleEntityId: e }),
                         i = t?.article_result_by_rest_id?.result?.metadata,
                         r = i?.author_results?.result?.legacy?.screen_name,
                         o = i?.tweet_results?.rest_id,
                         s = r && o ? `/${r}/article/${o}` : null;
-                    return s ? n.createElement(p.Z, { to: s }) : E;
+                    return s ? n.createElement(p.Z, { to: s }) : S;
                 },
                 y = (e) => {
                     const t = e.match.params.articleEntityId ?? "",
                         i = (0, u.hC)("responsive_web_twitter_article_redirect_enabled");
-                    return t && i ? n.createElement(l.N, { errorConfig: m, fallback: f }, n.createElement(h, { articleEntityId: t })) : E;
+                    return t && i ? n.createElement(l.N, { errorConfig: m, fallback: _ }, n.createElement(h, { articleEntityId: t })) : S;
                 },
                 T = n.memo(y);
         },
@@ -1241,12 +1239,12 @@
                 p = i(332878),
                 m = i(715601),
                 b = i(376843),
-                S = i(810641),
-                E = i(725516),
-                f = i(4691),
-                _ = i(750085),
+                E = i(810641),
+                S = i(725516),
+                _ = i(4691),
+                f = i(750085),
                 h = i(218951);
-            const y = (e, t) => (0, h.Z)({ timelineId: `articleTweetsTimeline-${e}-${t}`, network: { getEndpoint: (e) => e.withEndpoint(f.ZP).fetchArticleTweetsTimeline, getEndpointParams: ({ count: i, cursor: r }) => ({ articleId: e, articleListSeedType: t, count: i, cursor: "string" == typeof r ? r : void 0 }) }, context: "FETCH_ARTICLE_TWEETS_TIMELINE", perfKey: "articleTweetsTimeline", formatResponse: _.Z });
+            const y = (e, t) => (0, h.Z)({ timelineId: `articleTweetsTimeline-${e}-${t}`, network: { getEndpoint: (e) => e.withEndpoint(_.ZP).fetchArticleTweetsTimeline, getEndpointParams: ({ count: i, cursor: r }) => ({ articleId: e, articleListSeedType: t, count: i, cursor: "string" == typeof r ? r : void 0 }) }, context: "FETCH_ARTICLE_TWEETS_TIMELINE", perfKey: "articleTweetsTimeline", formatResponse: f.Z });
             var T = i(506063),
                 g = i(769471),
                 I = i(801184),
@@ -1257,7 +1255,7 @@
                 O = c().d35d74e4,
                 L = c().f88e624e,
                 C = s.default.create((e) => ({ contentWrapper: { height: `calc(100vh - ${e.componentDimensions.appBarHeight} - 1px)` }, viewport: { flex: 1, height: "100%", width: "100%" }, withOverflow: { overflow: "auto" } })),
-                D = (0, E.Z)(
+                D = (0, S.Z)(
                     (e) => {
                         const t = Number(e.match.params.articleId),
                             i = (0, o.useHistory)(),
@@ -1272,7 +1270,7 @@
                                 r.createElement(
                                     m.Z,
                                     { style: s },
-                                    r.createElement(S.Z, {
+                                    r.createElement(E.Z, {
                                         anchoring: p.Z,
                                         entryConfiguration: P,
                                         module: y(
@@ -1295,4 +1293,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Articles-e4e3d8bb.3316809a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Articles-e4e3d8bb.8323d88a.js.map

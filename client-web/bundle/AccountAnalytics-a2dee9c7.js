@@ -1518,13 +1518,23 @@
                     return i.createElement(r.ZP, { identifier: a }, i.createElement(t.Z, (0, n.Z)({ ref: l }, e)));
                 });
         },
+        252021: (e, l, a) => {
+            a.d(l, { Z: () => r });
+            var n = a(202784),
+                i = a(107267),
+                t = a(115553);
+            const r = (e) => {
+                (0, i.useHistory)();
+                return n.createElement(t.A, e);
+            };
+        },
         336636: (e, l, a) => {
             a.d(l, { Z: () => c });
             var n = a(857037),
                 i = (a(585488), a(712696)),
                 t = a.n(i),
                 r = a(665979),
-                s = a(464703),
+                s = a(44988),
                 u = a(443781);
             const d = n.Z,
                 o = new Date(),
@@ -1538,4 +1548,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-a2dee9c7.5fd4686a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-a2dee9c7.03a2d93a.js.map

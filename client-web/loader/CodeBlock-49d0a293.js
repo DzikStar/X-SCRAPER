@@ -81,7 +81,7 @@
                         return r.e("react-syntax-highlighter_languages_refractor_asm6502").then(r.t.bind(r, 237728, 23));
                     }),
                     asmatmel: o("asmatmel", function () {
-                        return r.e("react-syntax-highlighter_languages_refractor_asmatmel").then(r.t.bind(r, 988678, 23));
+                        return r.e("react-syntax-highlighter_languages_refractor_asmatmel").then(r.t.bind(r, 644553, 23));
                     }),
                     aspnet: o("aspnet", function () {
                         return r.e("react-syntax-highlighter_languages_refractor_aspnet").then(r.t.bind(r, 26753, 23));
@@ -1492,4 +1492,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.CodeBlock-49d0a293.58d25dca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.CodeBlock-49d0a293.8431d73a.js.map

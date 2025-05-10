@@ -2975,7 +2975,8 @@
                 t("jadeb4da", "Oppdater betalingsmåten snarest før du mister abonnementsfordelene."),
                 t("bce3726a", "Oppdater faktureringsopplysningene"),
                 t("fce9ecce", "Foreslåtte videoer"),
-                t("dc954b88", "Prøv den fullstendige nyhetsopplevelsen"),
+                t("da00e00a", "Try the new News"),
+                t("c40666d8", "Try it"),
                 t("j66b95a2", "Dyptgående nyheter"),
                 t("b58d2bd2", "Relevante innlegg"),
                 t("efe6ef9e", "Se innlegg"),
@@ -3881,9 +3882,9 @@
                 t("e3275464", "Send"),
                 t("cededf2a", "Vert"),
                 t("i2caef48", "Medverter"),
-                t("j245c654", "Talere"),
-                t("eda23a02", "Lyttere");
-            t("b90eb348", "Inviter til å snakke"),
+                t("j245c654", "Talere");
+            t("eda23a02", "Lyttere"),
+                t("b90eb348", "Inviter til å snakke"),
                 t("d9a63e82", "Fjern fra talere"),
                 t("bd917b26", "Inviter som medvert"),
                 t("d7357e7e", "Fjern som medvert"),
@@ -4919,9 +4920,9 @@
                 t("e41fffbc", "Den totale visningstiden til videoene dine."),
                 t("if2909ba", "Visningstid"),
                 t("i0e5bf4c", "Dine videoer"),
-                t("ed99baea", "Tidlig betatilgang"),
-                t("gf898b70", "Avansert søk");
-            t("d2a43a7a", "inneholder både «ki» og «oppstartsselskap»"),
+                t("ed99baea", "Tidlig betatilgang");
+            t("gf898b70", "Avansert søk"),
+                t("d2a43a7a", "inneholder både «ki» og «oppstartsselskap»"),
                 t("a8584698", "ki oppstartsselskap"),
                 t("jb6f9292", "inneholder den nøyaktige frasen «ki-oppstartsselskap»"),
                 t("j8ee77c4", '"ki-oppstartsselskap"'),
@@ -5885,9 +5886,9 @@
                 t("i0ed3f4e", "Bilde for hendelsen"),
                 t("cbae35fa", "Rapporter sendingen"),
                 t("fd12ab58", "Samlingsinnlegg"),
-                t("a226497c", "Opprett et nytt Fellesskap"),
-                t("d7346632", "Du er ikke med i noen fellesskaper ennå");
-            t("b732a4cc", "Når du gjør det, ser du innleggene hens her."),
+                t("a226497c", "Opprett et nytt Fellesskap");
+            t("d7346632", "Du er ikke med i noen fellesskaper ennå"),
+                t("b732a4cc", "Når du gjør det, ser du innleggene hens her."),
                 t("hff48914", "Kunne ikke finne noen innlegg nå."),
                 t("hb52cc4a", "Prøv på nytt senere."),
                 t("e50e1bb0", "Velkommen til Fellesskaper"),
@@ -6677,6 +6678,7 @@
                 t("b2d41138", "Større rekkevidde = større utbetalinger"),
                 t("defa7f12", "Med svarfremming får du den ekstra synligheten som skaper raskere vekst."),
                 t("i3e4955d", "her"),
+                t("fdc5d06c", "Exit Full Screen"),
                 t("cea1c00e", "Få muligheten til å engasjere deg"),
                 t("f8e6a280", "Nye kontoer må betale en liten årsavgift før de kan publisere, like, legge til bokmerker og svare. Dette er for å redusere mengden spam og gjøre opplevelsen bedre for alle. Det er fremdeles gratis å følge kontoer og utforske X."),
                 t("h968efc6", "Nye kontoer må betale en liten avgift før de kan publisere, like, legge til bokmerker og svare. Dette er for å redusere mengden spam og gjøre opplevelsen bedre for alle. Det er fremdeles gratis å følge kontoer og utforske X."),
@@ -6882,10 +6884,10 @@
                 t("e0198956", "Få en andel av inntektene som genereres av verifiserte kontoers engasjement i innhold du publiserer på X."),
                 t("iadf78e2", "Last ned videoer"),
                 t("ee54c3de", "Lagre videoer rett på enheten din"),
-                t("ae03594c", "Liten svarfremming"),
-                t("e6bb08c0", "Øk synligheten til svarene dine"),
-                t("bf2a6acc", "Høy svarfremming");
-            t("c2059276", "Frem svarene dine."),
+                t("ae03594c", "Liten svarfremming");
+            t("e6bb08c0", "Øk synligheten til svarene dine"),
+                t("bf2a6acc", "Høy svarfremming"),
+                t("c2059276", "Frem svarene dine."),
                 t("b023ec20", "Maksimal svarfremming"),
                 t("g337328e", "Få størst synlighet for svarene dine."),
                 t("fa006202", "Avspilling av bakgrunnsvideo"),
@@ -7387,8 +7389,8 @@
                 t("a10aa36c", "hjelpesenteret"),
                 t("d0740558", "hjelpesenteret"),
                 t("d2d76dca", "hjelpesenteret"),
-                t("b6414532", "Den anslåtte fordelingen av personene som har sett innlegget ditt"),
-                t("c61c6624", "Promotert"),
+                t("de8bcdaa", "Breakdown of the people that have seen your post"),
+                t("cfa1ef16", "Frem"),
                 t("d267afa2", "Under 20"),
                 t("db81cab0", "20 til 29"),
                 t("f173716e", "30 til 39"),
@@ -7397,6 +7399,14 @@
                 t("bcd9cf68", "Over 65"),
                 t("f05f1838", "Annet / ikke spesifisert"),
                 t("fa5be588", "Organiske"),
+                t("c65126fe", "Boosted"),
+                t("c61c6624", "Promotert"),
+                t("f1196a04", "Boost Analytics"),
+                t("bb66e3fc", "Promote Analytics"),
+                t("g512ddcc", "Organisk statistikk"),
+                t("j9256524", "Breakdown of your boost performance"),
+                t("ceeb3016", "Breakdown of your promote performance"),
+                t("bf4558fa", "Breakdown of your organic performance"),
                 t("c69069e6", "Antall ganger dette innlegget ble sett på X"),
                 t("a0615bac", "Totalt antall brukerinteraksjoner med et innlegg. Dette omfatter alle klikk hvor som helst i innlegget (inkludert hashtagger, lenker, avatar, brukernavn og innleggsutvidelse), republiseringer, svar, følgerklikk og likerklikk."),
                 t("d8abdaa4", "Nye følgere"),
@@ -7404,8 +7414,9 @@
                 t("acc4cf12", "Antall profilvisninger fra dette innlegget"),
                 t("c7d0d1c4", "Antall klikk på nettadresser i dette innlegget"),
                 t("a4da7724", "Antall ganger noen har sett dette innleggets detaljer"),
-                t("c5d4d3a8", "Kostnad per følger"),
-                t("f56e24f2", "Totalt forbruk delt på antall følgere, inkludert opptjente. Du betaler bare når noen følger deg."),
+                t("jedd2771", function (e) {
+                    return e.percentage + " from boost";
+                }),
                 t("g33fd6b1", function (e) {
                     return e.percentage + " fra kampanje";
                 }),
@@ -7413,6 +7424,7 @@
                     return e.percentage + " fra ikke-følgere";
                 }),
                 t("h4cbba3e", "< 5 %"),
+                t("f4f0094c", "< 5% from boost"),
                 t("h1cdac12", "< 5 % fra kampanje"),
                 t("g884b2cc", "< 5 % fra ikke-følgere"),
                 t("b32334a0", "Kontoer nådd"),
@@ -7780,7 +7792,6 @@
                     return "Velkommen tilbake, " + e.displayName;
                 }),
                 t("a76d58ba", "Annonsestatistikk"),
-                t("g512ddcc", "Organisk statistikk"),
                 t("eccd0e1a", "Organisasjonsstatistikk"),
                 t("deea1708", "Vil du se samlet statistikk for alle X-kontoene dine?"),
                 t("eb603ffc", "Oppgrader for å tilknytte nettverket ditt og se aggregert statistikk."),
@@ -7851,16 +7862,7 @@
                 t("ddfd6718", "Betalingen mislyktes"),
                 t("i90ea7d2", "Oppdater faktureringsopplysningene snarest for å beholde fordelene."),
                 t("a62359e6", "Innstillinger for verifisert organisasjon"),
-                t("ge221b7c", "Oppgrader abonnementet på Verifiserte organisasjoner for å få tilgang til tilknyttede kontoer og mer annonsekreditt."),
-                t("i4dccc18", "Fakturering"),
-                t("ec3cd6e4", "Administrer betalingsmåten, oppdater faktureringsinformasjon og se gjennom fakturaene dine."),
-                t("dac61c3c", "Kontoinnstillinger"),
-                t("b6b5fd66", "Administrer X-kontoen din, inkludert endring av brukernavn eller passord."),
-                t("hb9c4a1c", "Spørsmål, feilrapporteringer og tilbakemeldinger"),
-                t("c674f5b4", "Konfigurer fakturabetalinger"),
-                t("i8237e66", "Bytt fra kredittkortbetalinger til fakturering med bankoverføring."),
-                t("hebd348a", "Konfigurer hvordan annonser brukes til å promotere jobber fra Rekruttering-portalen."),
-                t("ib5e6f90", "Jobbpromotering");
+                t("ge221b7c", "Oppgrader abonnementet på Verifiserte organisasjoner for å få tilgang til tilknyttede kontoer og mer annonsekreditt.");
             function a(e, n) {
                 for (var r = 0; r < n.length; r++) {
                     var t = n[r];
@@ -7899,7 +7901,16 @@
                     d(e, n)
                 );
             }
-            t("id720215", "Rekruttering"),
+            t("i4dccc18", "Fakturering"),
+                t("ec3cd6e4", "Administrer betalingsmåten, oppdater faktureringsinformasjon og se gjennom fakturaene dine."),
+                t("dac61c3c", "Kontoinnstillinger"),
+                t("b6b5fd66", "Administrer X-kontoen din, inkludert endring av brukernavn eller passord."),
+                t("hb9c4a1c", "Spørsmål, feilrapporteringer og tilbakemeldinger"),
+                t("c674f5b4", "Konfigurer fakturabetalinger"),
+                t("i8237e66", "Bytt fra kredittkortbetalinger til fakturering med bankoverføring."),
+                t("hebd348a", "Konfigurer hvordan annonser brukes til å promotere jobber fra Rekruttering-portalen."),
+                t("ib5e6f90", "Jobbpromotering"),
+                t("id720215", "Rekruttering"),
                 t("dd59f146", "Annonsekonto med jobbpromotering"),
                 t("e7e36818", "Annonsekontoer kvalifiserer til jobbpromotering når de er fullt konfigurert med en finansieringskilde."),
                 t("c28566e0", "Annonsekonto"),
@@ -8895,10 +8906,10 @@
                 }),
                 t("ae408b76", "Du republiserte"),
                 t("j355f008", "Festet innlegg"),
-                t("habf9678", "Festet av forfatteren"),
-                t("db0798ed", function (e) {
-                    return "Emne: " + e.topicName;
-                }),
+                t("habf9678", "Festet av forfatteren");
+            t("db0798ed", function (e) {
+                return "Emne: " + e.topicName;
+            }),
                 t("dc716ec9", function (e) {
                     return "Anbefalt emne: " + e.topicName;
                 }),
@@ -8918,10 +8929,10 @@
                 }),
                 t("c889af33", function (e) {
                     return e.count + " ble med";
-                });
-            t("d6f2056f", function (e) {
-                return e.count + " lytter(e)";
-            }),
+                }),
+                t("d6f2056f", function (e) {
+                    return e.count + " lytter(e)";
+                }),
                 t("jbc5f47a", "Områdeforankring"),
                 t("gfe2830f", function (e) {
                     return e.count + " an" + i(e.count, "nen", "dre");
@@ -13204,4 +13215,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nb.c3e8af8a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nb.c459498a.js.map

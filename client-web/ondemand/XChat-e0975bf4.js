@@ -6,12 +6,12 @@
             t.d(s, { C: () => j });
             var n = t(552322),
                 i = t(425522),
-                a = t(844098),
-                o = t(702024),
-                r = t(130629),
-                l = t(436059),
-                c = t(887390),
-                d = t(921879),
+                a = t(653748),
+                o = t(193686),
+                r = t(423011),
+                l = t(993165),
+                c = t(687521),
+                d = t(983706),
                 m = t(202784),
                 x = t(611463),
                 p = t(533476),
@@ -107,7 +107,7 @@
                 i = t(425522),
                 a = t(289752),
                 o = t(812115),
-                r = t(941204),
+                r = t(332161),
                 l = t(89195),
                 c = t(517922),
                 d = t(556160);
@@ -116,7 +116,7 @@
             function p({ post: e, onEvent: s, className: t }) {
                 return e.postState instanceof m.NeedsResolution ? (s(new x.ResolvePost(e.id)), (0, n.jsx)(c.C, {})) : e.postState instanceof m.ResolvedPost ? (0, n.jsx)(d.K, { post: e.postState, url: e.url, className: t }) : (0, n.jsxs)(o.r, { href: e.url, target: "_blank", className: "gap-2 w-52 p-4 bg-gray-200 flex items-center justify-between", children: [(0, n.jsx)(r.x, { children: "x.com" }), (0, n.jsx)("div", { className: "text-headline1", children: (0, n.jsx)(l.Z, {}) })] });
             }
-            var u = t(702024);
+            var u = t(193686);
             const h = i.com.x.dms.model.MessageItemAttachment,
                 f = i.com.x.dms.chat.DmEvent;
             function g({ urlCard: e, onEvent: s }) {
@@ -145,11 +145,11 @@
         83083: (e, s, t) => {
             t.d(s, { Q: () => c });
             var n = t(552322),
-                i = t(941204),
-                a = t(461222),
+                i = t(332161),
+                a = t(42630),
                 o = t(1357),
                 r = t(455091),
-                l = t(796309);
+                l = t(31674);
             function c({ filename: e, fileType: s = "Document", fileSize: t, uriToLoad: c, className: d }) {
                 const { t: m } = (0, r.$G)(),
                     x = t?.fileSizeMb.toPrecision(2) || 0,
@@ -160,12 +160,12 @@
         289752: (e, s, t) => {
             t.d(s, { DM: () => x, Et: () => d, _9: () => m });
             var n = t(552322),
-                i = t(335944),
-                a = t(702024),
-                o = t(941204),
+                i = t(472275),
+                a = t(193686),
+                o = t(332161),
                 r = t(202784),
                 l = t(59463),
-                c = t(192576);
+                c = t(615014);
             function d({ src: e, type: s, dimensions: t }) {
                 const { width: a, height: o } = p(t),
                     [l, d] = (0, r.useState)(!1),
@@ -203,8 +203,8 @@
             t.d(s, { a: () => z });
             var n = t(552322),
                 i = t(425522),
-                a = t(941204),
-                o = t(436059),
+                a = t(332161),
+                o = t(993165),
                 r = t(436995),
                 l = t(887491),
                 c = t(25457),
@@ -219,7 +219,7 @@
             function v({ replyingTo: e, onRemoveReply: s }) {
                 return (0, n.jsxs)("div", { className: "flex px-2.5 w-full items-center justify-between", children: [(0, n.jsxs)("div", { className: "flex gap-1", children: [e.senderInfo?.displayName ? (0, n.jsxs)(a.x, { size: "subtext2", weight: "medium", color: "gray900", children: ["Replying to ", e.senderInfo.displayName] }) : null, (0, n.jsx)(a.x, { size: "subtext2", color: "gray500", children: e.textContent })] }), (0, n.jsx)(o.z, { variant: "primaryFilled", size: "xSmall", icon: (0, n.jsx)(l.Z, {}), onClick: s })] });
             }
-            var j = t(702024),
+            var j = t(193686),
                 y = t(556160),
                 w = t(517922),
                 C = t(83083),
@@ -248,7 +248,7 @@
                 }
                 return (0, n.jsxs)("div", { className: "flex flex-col max-w-[300px] gap-2 relative", children: [t, (0, n.jsx)("div", { className: "w-full h-px bg-gray-200" }), e.showRemoveButton && (0, n.jsx)("div", { className: "absolute top-2 right-2 flex items-center", children: (0, n.jsx)(o.z, { variant: "primaryFilled", size: "xSmall", icon: (0, n.jsx)(l.Z, {}), onClick: s }) })] });
             }
-            var S = t(82458);
+            var S = t(962639);
             const R = i.com.x.dms.composer.composer.RightButtonState,
                 k = i.com.x.dms.composer.composer.ChatComposerEvent;
             function z({ component: e }) {
@@ -381,4 +381,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-e0975bf4.5e57e11a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-e0975bf4.923cd7fa.js.map

@@ -58,14 +58,14 @@
                 w = d(652904),
                 M = d(264922),
                 g = d(396634),
-                v = d(71620),
-                _ = d(668214),
-                E = d(948985);
+                _ = d(71620),
+                E = d(668214),
+                v = d(948985);
             const k = (e, a) => a.match.params.appId,
-                P = (e, a) => E.$q.selectAppsById(e, k(0, a)),
-                Z = (0, _.Z)()
-                    .propsFromState(() => ({ appId: k, fetchStatus: E.UD, details: P }))
-                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, v.zr)("APPLICATION_DETAIL"), fetchApplication: E.zw, revokeApplication: E.$q.revokeApplication, revokeOauth2Token: E.$q.revokeOauth2Token }))
+                P = (e, a) => v.$q.selectAppsById(e, k(0, a)),
+                Z = (0, E.Z)()
+                    .propsFromState(() => ({ appId: k, fetchStatus: v.UD, details: P }))
+                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, _.zr)("APPLICATION_DETAIL"), fetchApplication: v.zw, revokeApplication: v.$q.revokeApplication, revokeOauth2Token: v.$q.revokeOauth2Token }))
                     .withAnalytics({ page: "settings", section: "application_detail" }),
                 I = S().g8d1b99b,
                 B = S().eafcc76a,
@@ -206,15 +206,15 @@
                 w = d(962741),
                 M = d(154003),
                 g = d(712816),
-                v = d(879596),
-                _ = d(942893),
-                E = d(71620),
+                _ = d(879596),
+                E = d(942893),
+                v = d(71620),
                 k = d(601576),
                 P = d(919022);
             const Z = (e, a) => P.ZP.select(e, a.userId),
                 I = (0, S.Z)()
                     .propsFromState(() => ({ user: Z }))
-                    .propsFromActions(() => ({ addToast: k.fz, block: P.ZP.block, createLocalApiErrorHandler: (0, E.zr)("UNBLOCK_BUTTON"), unblock: P.ZP.unblock }))
+                    .propsFromActions(() => ({ addToast: k.fz, block: P.ZP.block, createLocalApiErrorHandler: (0, v.zr)("UNBLOCK_BUTTON"), unblock: P.ZP.unblock }))
                     .withAnalytics(),
                 B = s().if594962,
                 C = s().a6450e84,
@@ -228,7 +228,7 @@
                             r?.blocking
                                 ? n(o).then((a) => {
                                       e({ text: T }), this._scribeAction("unblock");
-                                  }, d(v.D))
+                                  }, d(_.D))
                                 : a(o).then((a) => {
                                       e({ text: x }), this._scribeAction("block");
                                   }, d(g.d));
@@ -244,7 +244,7 @@
                 }
                 _scribeAction(e) {
                     const { analytics: a, user: d } = this.props,
-                        n = d ? [_.Z.getUserItem(d)] : [];
+                        n = d ? [E.Z.getUserItem(d)] : [];
                     a.scribe({ action: e, data: { items: n } });
                 }
             }
@@ -314,19 +314,17 @@
                 y = (0, u.p)(
                     () =>
                         Promise.all([
-                            d.e("icons.23"),
-                            d.e("icons.16"),
-                            d.e("icons.2"),
-                            d.e("icons.10"),
-                            d.e("icons.19"),
-                            d.e("icons.24"),
+                            d.e("icons.5"),
+                            d.e("icons.12"),
+                            d.e("icons.20"),
+                            d.e("icons.0"),
+                            d.e("icons.21"),
+                            d.e("icons.28"),
+                            d.e("icons.17"),
                             d.e("modules.common-e907d115"),
                             d.e("modules.common-e019dbda"),
-                            d.e("icons.13"),
-                            d.e("icons.27"),
                             d.e("icons.22"),
-                            d.e("icons.17"),
-                            d.e("icons.7"),
+                            d.e("icons.9"),
                             d.e("modules.audio-6107ac1a"),
                             d.e("modules.audio-b953418a"),
                             d.e("modules.audio-7c51e6a7"),
@@ -337,11 +335,14 @@
                             d.e("modules.audio-e019dbda"),
                             d.e("modules.audio-262c94d4"),
                             d.e("modules.audio-c6fe4ea4"),
+                            d.e("icons.6"),
+                            d.e("icons.10"),
+                            d.e("icons.24"),
+                            d.e("icons.14"),
+                            d.e("icons.23"),
+                            d.e("icons.3"),
+                            d.e("icons.13"),
                             d.e("icons.8"),
-                            d.e("icons.26"),
-                            d.e("icons.21"),
-                            d.e("icons.11"),
-                            d.e("icons.1"),
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -372,28 +373,26 @@
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                             d.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2d1eb5e2"),
+                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-34cda585"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
-                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-60e08fbd"),
+                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1bce2d5d"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-25704d22"),
-                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-7b94920a"),
-                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-a7573e1a"),
-                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-ee9ffade"),
-                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8d854c2e"),
+                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-ee9e2532"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-aaf38a28"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-4cc32837"),
+                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-b73bd0e3"),
+                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-e0a7c12b"),
+                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-627162af"),
+                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-286dfed9"),
+                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-162a9ab0"),
+                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-cbd8f64c"),
+                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-f943ab46"),
+                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-91216611"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2652b27c"),
-                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-da0e99d8"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-3931c1f3"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-c377d397"),
-                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-e4b9a405"),
-                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-f17e8d44"),
-                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-f39972b2"),
-                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-568e95f0"),
-                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1895c9ee"),
-                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8fe22a9e"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-0a8205ef"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-5719ea67"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1b6af858"),
@@ -430,19 +429,17 @@
                 f = (0, u.p)(
                     () =>
                         Promise.all([
-                            d.e("icons.23"),
-                            d.e("icons.16"),
-                            d.e("icons.2"),
-                            d.e("icons.10"),
-                            d.e("icons.19"),
-                            d.e("icons.24"),
+                            d.e("icons.5"),
+                            d.e("icons.12"),
+                            d.e("icons.20"),
+                            d.e("icons.0"),
+                            d.e("icons.21"),
+                            d.e("icons.28"),
+                            d.e("icons.17"),
                             d.e("modules.common-e907d115"),
                             d.e("modules.common-e019dbda"),
-                            d.e("icons.13"),
-                            d.e("icons.27"),
                             d.e("icons.22"),
-                            d.e("icons.17"),
-                            d.e("icons.7"),
+                            d.e("icons.9"),
                             d.e("modules.audio-6107ac1a"),
                             d.e("modules.audio-b953418a"),
                             d.e("modules.audio-7c51e6a7"),
@@ -453,11 +450,14 @@
                             d.e("modules.audio-e019dbda"),
                             d.e("modules.audio-262c94d4"),
                             d.e("modules.audio-c6fe4ea4"),
+                            d.e("icons.6"),
+                            d.e("icons.10"),
+                            d.e("icons.24"),
+                            d.e("icons.14"),
+                            d.e("icons.23"),
+                            d.e("icons.3"),
+                            d.e("icons.13"),
                             d.e("icons.8"),
-                            d.e("icons.26"),
-                            d.e("icons.21"),
-                            d.e("icons.11"),
-                            d.e("icons.1"),
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -488,28 +488,26 @@
                             d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                             d.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2d1eb5e2"),
+                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-34cda585"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
-                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-60e08fbd"),
+                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1bce2d5d"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-25704d22"),
-                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-7b94920a"),
-                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-a7573e1a"),
-                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-ee9ffade"),
-                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8d854c2e"),
+                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-ee9e2532"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-aaf38a28"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-4cc32837"),
+                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-b73bd0e3"),
+                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-e0a7c12b"),
+                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-627162af"),
+                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-286dfed9"),
+                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-162a9ab0"),
+                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-cbd8f64c"),
+                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-f943ab46"),
+                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-91216611"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2652b27c"),
-                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-da0e99d8"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-3931c1f3"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-c377d397"),
-                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-e4b9a405"),
-                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-f17e8d44"),
-                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-f39972b2"),
-                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-568e95f0"),
-                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1895c9ee"),
-                            d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8fe22a9e"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-0a8205ef"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-5719ea67"),
                             d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1b6af858"),
@@ -585,11 +583,11 @@
                 w = d(668214),
                 M = d(257166),
                 g = d(38562),
-                v = d(673110),
-                _ = d(601576);
-            const E = (0, w.Z)()
+                _ = d(673110),
+                E = d(601576);
+            const v = (0, w.Z)()
                     .propsFromState(() => ({ userEmail: M.selectFirstEmail, fetchStatus: g.UD, ssoConnections: g.An }))
-                    .propsFromActions(() => ({ addToast: _.fz, createLocalApiErrorHandler: (0, f.zr)("SETTINGS_CONNECTED_APPS_SCREEN_CONTEXT"), deleteSSOConnection: g.O5, fetchDevicesIfNeeded: M.fetchDevicesIfNeeded, fetchSettingsIfNeeded: g.Sb, fetchSettings: g.wv, verifyPassword: v.Gv }))
+                    .propsFromActions(() => ({ addToast: E.fz, createLocalApiErrorHandler: (0, f.zr)("SETTINGS_CONNECTED_APPS_SCREEN_CONTEXT"), deleteSSOConnection: g.O5, fetchDevicesIfNeeded: M.fetchDevicesIfNeeded, fetchSettingsIfNeeded: g.Sb, fetchSettings: g.wv, verifyPassword: _.Gv }))
                     .withAnalytics({ page: "settings", section: "connected_accounts", component: "delete_sso_connection" }),
                 k = h().h1abfbce,
                 P = h().f8e46b90,
@@ -660,7 +658,7 @@
                     return n.createElement(b.Z, { fetchStatus: e, onRequestRetry: this._handleFetchRetry, render: this._render });
                 }
             }
-            const x = E(T);
+            const x = v(T);
         },
         208791: (e, a, d) => {
             d.r(a), d.d(a, { SettingsContactsScreen: () => C, default: () => T });
@@ -689,9 +687,9 @@
                 w = u().c69b4798,
                 M = u().eca117e6,
                 g = u().acd36386,
-                v = u().gd8511ca,
-                _ = u().eca935ec,
-                E = (0, r.ju)("https://help.x.com/safety-and-security/email-and-phone-discoverability-settings"),
+                _ = u().gd8511ca,
+                E = u().eca935ec,
+                v = (0, r.ju)("https://help.x.com/safety-and-security/email-and-phone-discoverability-settings"),
                 k = u().ac77c66c,
                 P = u().bbcafbda,
                 Z = u().jadf483e,
@@ -705,7 +703,7 @@
                         },
                         [a, u],
                     );
-                return n.createElement(b.Z, null, n.createElement(p.Z, { location: s, title: A }, n.createElement(o.Z, { description: y }), n.createElement(t.Z, { text: f }), n.createElement(o.Z, { description: w }), n.createElement(l.Z, { checked: d, helpText: g, label: M, learnMoreLink: E, name: "discoverable_by_email", onChange: h }), n.createElement(l.Z, { checked: r, helpText: _, label: v, learnMoreLink: E, name: "discoverable_by_mobile_phone", onChange: h }), n.createElement(i.Z, null), n.createElement(t.Z, { text: k }), n.createElement(o.Z, { description: Z, learnMoreLabel: B, learnMoreLink: I }), n.createElement(c.Z, { label: P, link: "/settings/contacts_dashboard" })));
+                return n.createElement(b.Z, null, n.createElement(p.Z, { location: s, title: A }, n.createElement(o.Z, { description: y }), n.createElement(t.Z, { text: f }), n.createElement(o.Z, { description: w }), n.createElement(l.Z, { checked: d, helpText: g, label: M, learnMoreLink: v, name: "discoverable_by_email", onChange: h }), n.createElement(l.Z, { checked: r, helpText: E, label: _, learnMoreLink: v, name: "discoverable_by_mobile_phone", onChange: h }), n.createElement(i.Z, null), n.createElement(t.Z, { text: k }), n.createElement(o.Z, { description: Z, learnMoreLabel: B, learnMoreLink: I }), n.createElement(c.Z, { label: P, link: "/settings/contacts_dashboard" })));
             }
             const T = S(C);
         },
@@ -732,15 +730,15 @@
                 w = d(312771),
                 M = d(170069),
                 g = d(609848),
-                v = d(264922),
-                _ = d(267966),
-                E = d(71620),
+                _ = d(264922),
+                E = d(267966),
+                v = d(71620),
                 k = d(668214),
                 P = d(38562),
                 Z = d(116635);
             const I = (0, k.Z)()
                     .propsFromState(() => ({ contacts: Z.Af, fetchStatus: Z.UD }))
-                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, E.zr)("SETTINGS_CONTACTS_DASHBOARD_SCREEN"), deleteContacts: P._f, fetchContactsIfNeeded: Z.d0, fetchContactsNext: Z.iv })),
+                    .propsFromActions(() => ({ createLocalApiErrorHandler: (0, v.zr)("SETTINGS_CONTACTS_DASHBOARD_SCREEN"), deleteContacts: P._f, fetchContactsIfNeeded: Z.d0, fetchContactsNext: Z.iv })),
                 B = { page: "settings", section: "contacts_dashboard" },
                 C = u().bbcafbda,
                 T = n.createElement(u().I18NFormatMessage, { $i18n: "g66a254b" }, n.createElement(o.ZP, { link: (0, t.ju)("https://help.x.com/using-twitter/upload-your-contacts-to-search-for-friends") }, u().d439b1c1)),
@@ -761,7 +759,7 @@
                                 i = this._getContactProp(t.get("fn")) || R,
                                 c = this._getContactProperties(t.get("tel")),
                                 s = [...this._getContactProperties(t.get("email")), ...c];
-                            return n.createElement(r.Z, { key: a, style: [[_.Z.infoText, _.Z.bottomBorder], z.contactContainer] }, n.createElement(l.Z, { Icon: b.default, color: "neutral", style: z.personIcon }), n.createElement(r.Z, null, n.createElement(o.ZP, null, i), s ? s.map((e) => n.createElement(o.ZP, { color: "gray700", key: e, size: "subtext2" }, e)) : null, d ? n.createElement(o.ZP, { color: "gray700", size: "subtext2" }, `Imported from ${d}`) : null));
+                            return n.createElement(r.Z, { key: a, style: [[E.Z.infoText, E.Z.bottomBorder], z.contactContainer] }, n.createElement(l.Z, { Icon: b.default, color: "neutral", style: z.personIcon }), n.createElement(r.Z, null, n.createElement(o.ZP, null, i), s ? s.map((e) => n.createElement(o.ZP, { color: "gray700", key: e, size: "subtext2" }, e)) : null, d ? n.createElement(o.ZP, { color: "gray700", size: "subtext2" }, `Imported from ${d}`) : null));
                         }),
                         (this._renderFooter = (e) => (e === w.ZP.LOADING ? n.createElement(r.Z, { style: z.loadingContainer }, n.createElement(D.Z, { fetchStatus: e, render: p.Z })) : null)),
                         (this._handleRemoveContacts = () => {
@@ -777,7 +775,7 @@
                 }
                 render() {
                     const { contacts: e, fetchContactsIfNeeded: a, fetchStatus: d, location: r } = this.props;
-                    return n.createElement(f.nO, { namespace: B }, n.createElement(y.Z, null, n.createElement(v.Z, { location: r, title: C }, n.createElement(m.Z, { confirmationSheetConfirmButtonLabel: L.confirmButtonLabel, confirmationSheetConfirmButtonType: "destructiveFilled", confirmationSheetHeadline: L.headline, confirmationSheetText: L.text, label: x, onConfirmationSheetConfirm: this._handleRemoveContacts }), n.createElement(M.Z, null, T), n.createElement(i.Z, null), n.createElement(g.Z, { fetch: a, fetchStatus: e.length > 0 ? w.ZP.LOADED : d, render: () => this._renderTimeline() }))));
+                    return n.createElement(f.nO, { namespace: B }, n.createElement(y.Z, null, n.createElement(_.Z, { location: r, title: C }, n.createElement(m.Z, { confirmationSheetConfirmButtonLabel: L.confirmButtonLabel, confirmationSheetConfirmButtonType: "destructiveFilled", confirmationSheetHeadline: L.headline, confirmationSheetText: L.text, label: x, onConfirmationSheetConfirm: this._handleRemoveContacts }), n.createElement(M.Z, null, T), n.createElement(i.Z, null), n.createElement(g.Z, { fetch: a, fetchStatus: e.length > 0 ? w.ZP.LOADED : d, render: () => this._renderTimeline() }))));
                 }
             }
             F.contextType = A.rC;
@@ -809,9 +807,9 @@
                 w = c().d495680e,
                 M = c().f350f0c0,
                 g = c().fd3369a2,
-                v = c().h1ef00dc,
-                _ = c().e8f57e08,
+                _ = c().h1ef00dc,
                 E = c().e8f57e08,
+                v = c().e8f57e08,
                 k = c().hfc86556,
                 P = c().a5f32aa2;
             class Z extends n.Component {
@@ -825,7 +823,7 @@
                 render() {
                     const { location: e } = this.props,
                         a = this.context.featureSwitches.isTrue("responsive_web_trends_setting_new_endpoints") ? "/settings/explore" : "/settings/trends";
-                    return n.createElement(u.Z, null, n.createElement(b.Z, { location: e, screenType: "primaryDetail", title: A }, n.createElement(r.Z, { testID: S, text: y }), n.createElement(o.Z, { label: v, link: "/settings/search" }), n.createElement(o.Z, { label: this._trendsLabel, link: a }), n.createElement(t.Z, null), n.createElement(r.Z, { text: w }), n.createElement(o.Z, { label: M, link: "/i/flow/language_selector" }), n.createElement(l.Z, { description: g }), n.createElement(t.Z, null), n.createElement(r.Z, { text: f }), n.createElement(o.Z, { label: k, link: "/settings/mute" }), n.createElement(o.Z, { label: P, link: "/settings/blocked/all" }), n.createElement(t.Z, null), n.createElement(r.Z, { text: _ }), n.createElement(o.Z, { description: this._renderPersonalizationDescription(), label: E, link: "/settings/account/personalization" })));
+                    return n.createElement(u.Z, null, n.createElement(b.Z, { location: e, screenType: "primaryDetail", title: A }, n.createElement(r.Z, { testID: S, text: y }), n.createElement(o.Z, { label: _, link: "/settings/search" }), n.createElement(o.Z, { label: this._trendsLabel, link: a }), n.createElement(t.Z, null), n.createElement(r.Z, { text: w }), n.createElement(o.Z, { label: M, link: "/i/flow/language_selector" }), n.createElement(l.Z, { description: g }), n.createElement(t.Z, null), n.createElement(r.Z, { text: f }), n.createElement(o.Z, { label: k, link: "/settings/mute" }), n.createElement(o.Z, { label: P, link: "/settings/blocked/all" }), n.createElement(t.Z, null), n.createElement(r.Z, { text: E }), n.createElement(o.Z, { description: this._renderPersonalizationDescription(), label: v, link: "/settings/account/personalization" })));
                 }
             }
             Z.contextType = s.rC;
@@ -873,9 +871,9 @@
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, y.zr)("DEACTIVATE"), deactivate: w.Z }))
                     .withAnalytics({ page: "settings", section: "deactivate" }),
                 g = p().j035733c,
-                v = p().j4a29d52,
-                _ = p().ea989810,
-                E = p().f6e73faa,
+                _ = p().j4a29d52,
+                E = p().ea989810,
+                v = p().f6e73faa,
                 k = p().c3743328,
                 P = p().a20cd24e,
                 Z = p().fe36fe10,
@@ -903,7 +901,7 @@
                     const { location: e } = this.props,
                         { viewerUserId: a } = this.context,
                         { showPasswordDialog: d } = this.state;
-                    return o()(!!a, "viewerUserId must be defined"), n.createElement(m.Z, null, n.createElement(S.Z, { location: e, onPasswordSubmit: this._handlePasswordSubmit, promptForPassword: d, reenterPasswordLabel: I, saveChangesHeaderLabel: Z, submitLabel: E, submitType: "destructiveFilled", title: _ }, n.createElement(t.Z, null, n.createElement(D.ZP, { key: a, userId: a, withLink: !1 }), n.createElement(c.Z, { text: k }), n.createElement(T, { withBottomBorder: !1 }, g), n.createElement(c.Z, { text: P }), n.createElement(T, null, v), n.createElement(T, null, n.createElement(p().I18NFormatMessage, { $i18n: "g124fce9" }, n.createElement(i.ZP, { link: C }, p().fc025d1d))), n.createElement(T, null, n.createElement(p().I18NFormatMessage, { $i18n: "d9ef8fbb" }, n.createElement(i.ZP, { link: B }, p().bb5e039c))), n.createElement(T, null, n.createElement(p().I18NFormatMessage, { $i18n: "b7a3adc1" }, n.createElement(i.ZP, { link: B }, p().j37efff6))), n.createElement(T, { withBottomBorder: !1 }, n.createElement(p().I18NFormatMessage, { $i18n: "f3613d0b" }, n.createElement(i.ZP, { link: "/settings/download_your_data" }, p().ce5bfe12))), n.createElement(s.Z, null), n.createElement(u.Z, { color: "red500", label: E, onPress: this._handleDeactivateRequest }))));
+                    return o()(!!a, "viewerUserId must be defined"), n.createElement(m.Z, null, n.createElement(S.Z, { location: e, onPasswordSubmit: this._handlePasswordSubmit, promptForPassword: d, reenterPasswordLabel: I, saveChangesHeaderLabel: Z, submitLabel: v, submitType: "destructiveFilled", title: E }, n.createElement(t.Z, null, n.createElement(D.ZP, { key: a, userId: a, withLink: !1 }), n.createElement(c.Z, { text: k }), n.createElement(T, { withBottomBorder: !1 }, g), n.createElement(c.Z, { text: P }), n.createElement(T, null, _), n.createElement(T, null, n.createElement(p().I18NFormatMessage, { $i18n: "g124fce9" }, n.createElement(i.ZP, { link: C }, p().fc025d1d))), n.createElement(T, null, n.createElement(p().I18NFormatMessage, { $i18n: "d9ef8fbb" }, n.createElement(i.ZP, { link: B }, p().bb5e039c))), n.createElement(T, null, n.createElement(p().I18NFormatMessage, { $i18n: "b7a3adc1" }, n.createElement(i.ZP, { link: B }, p().j37efff6))), n.createElement(T, { withBottomBorder: !1 }, n.createElement(p().I18NFormatMessage, { $i18n: "f3613d0b" }, n.createElement(i.ZP, { link: "/settings/download_your_data" }, p().ce5bfe12))), n.createElement(s.Z, null), n.createElement(u.Z, { color: "red500", label: v, onPress: this._handleDeactivateRequest }))));
                 }
             }
             x.contextType = h.rC;
@@ -911,4 +909,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsInternals-0564e869.7c01f1ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.SettingsInternals-0564e869.bde96c6a.js.map

@@ -2976,7 +2976,8 @@
                 t("jadeb4da", "Actualitza urgentment el mètode de pagament per no perdre els beneficis de la subscripció."),
                 t("bce3726a", "Actualitza la facturació"),
                 t("fce9ecce", "Vídeos suggerits"),
-                t("dc954b88", "Prova la nova experiència de notícies"),
+                t("da00e00a", "Try the new News"),
+                t("c40666d8", "Try it"),
                 t("j66b95a2", "Notícies detallades"),
                 t("b58d2bd2", "Publicacions rellevants"),
                 t("efe6ef9e", "Mostra la publicació"),
@@ -3882,9 +3883,9 @@
                 t("e3275464", "Envia"),
                 t("cededf2a", "Amfitrió"),
                 t("i2caef48", "Coamfitrions"),
-                t("j245c654", "Participants"),
-                t("eda23a02", "Oients");
-            t("b90eb348", "Convida a parlar"),
+                t("j245c654", "Participants");
+            t("eda23a02", "Oients"),
+                t("b90eb348", "Convida a parlar"),
                 t("d9a63e82", "Elimina'l dels participants"),
                 t("bd917b26", "Convida'l a ser coamfitrió"),
                 t("d7357e7e", "Elimina dels coamfitrions"),
@@ -4920,9 +4921,9 @@
                 t("e41fffbc", "Temps total de visualització dels vídeos."),
                 t("if2909ba", "Temps de visualització"),
                 t("i0e5bf4c", "Els teus vídeos"),
-                t("ed99baea", "Accès beta anticipat"),
-                t("gf898b70", "Cerca avançada");
-            t("d2a43a7a", 'conté "ia" i "empresa emergent"'),
+                t("ed99baea", "Accès beta anticipat");
+            t("gf898b70", "Cerca avançada"),
+                t("d2a43a7a", 'conté "ia" i "empresa emergent"'),
                 t("a8584698", "empresa emergent d'ia"),
                 t("jb6f9292", 'conté la frase exacta "empresa emergent d\'ia"'),
                 t("j8ee77c4", '"empresa emergent d\'ia"'),
@@ -5886,9 +5887,9 @@
                 t("i0ed3f4e", "Imatge de l'esdeveniment"),
                 t("cbae35fa", "Denuncia l'emissió"),
                 t("fd12ab58", "Publicacions de recull"),
-                t("a226497c", "Crea una Comunitat nova"),
-                t("d7346632", "Encara no t'has unit a cap Comunitat");
-            t("b732a4cc", "Si ho fas, veuràs les seves publicacions aquí."),
+                t("a226497c", "Crea una Comunitat nova");
+            t("d7346632", "Encara no t'has unit a cap Comunitat"),
+                t("b732a4cc", "Si ho fas, veuràs les seves publicacions aquí."),
                 t("hff48914", "En aquest moment, no s'ha trobat cap publicació."),
                 t("hb52cc4a", "Torna-ho a provar més tard."),
                 t("e50e1bb0", "Et donem la benvinguda a les comunitats"),
@@ -6678,6 +6679,7 @@
                 t("b2d41138", "Més abast = més ingressos"),
                 t("defa7f12", "Beneficia't de la priorització de respostes, que et donarà la visibilitat extra que necessites per créixer més ràpidament."),
                 t("i3e4955d", "aquí"),
+                t("fdc5d06c", "Exit Full Screen"),
                 t("cea1c00e", "Desbloca la capacitat d'interaccionar"),
                 t("f8e6a280", "Els comptes nous han de pagar una petita quota anual per poder publicar, fer m'agrada, afegir als preferits i respondre. Això ajuda a reduir el contingut brossa i crear una experiència millor per a tothom. Pots continuar seguint comptes i explorant X sense cap cost."),
                 t("h968efc6", "Els comptes nous han de pagar una petita quota per poder publicar, fer m'agrada, afegir als preferits i respondre. Això ajuda a reduir el contingut brossa i crear una experiència millor per a tothom. Pots continuar seguint comptes i explorant X sense cap cost."),
@@ -6883,10 +6885,10 @@
                 t("e0198956", "Obtén una part dels ingressos generats per la interacció de comptes verificats amb el contingut que publiques a X."),
                 t("iadf78e2", "Baixa els vídeos"),
                 t("ee54c3de", "Desa vídeos directament al teu dispositiu"),
-                t("ae03594c", "Potencia les respostes breus"),
-                t("e6bb08c0", "Millora la visibilitat de les teves respostes"),
-                t("bf2a6acc", "Priorització de les respostes llargues");
-            t("c2059276", "Dona ressò a les teves respostes."),
+                t("ae03594c", "Potencia les respostes breus");
+            t("e6bb08c0", "Millora la visibilitat de les teves respostes"),
+                t("bf2a6acc", "Priorització de les respostes llargues"),
+                t("c2059276", "Dona ressò a les teves respostes."),
                 t("b023ec20", "Màxima priorització de respostes"),
                 t("g337328e", "Aconsegueix màxima visibilitat per a les teves respostes."),
                 t("fa006202", "Reproducció de vídeo en segon pla"),
@@ -7388,8 +7390,8 @@
                 t("a10aa36c", "Centre d'ajuda"),
                 t("d0740558", "Centre d'ajuda"),
                 t("d2d76dca", "Centre d'ajuda"),
-                t("b6414532", "Desglossament estimat dels usuaris que han vist la publicació"),
-                t("c61c6624", "Patrocinat"),
+                t("de8bcdaa", "Breakdown of the people that have seen your post"),
+                t("cfa1ef16", "Dona-hi ressò"),
                 t("d267afa2", "Menys de 20"),
                 t("db81cab0", "20-29"),
                 t("f173716e", "30-39"),
@@ -7398,6 +7400,14 @@
                 t("bcd9cf68", "Més de 65"),
                 t("f05f1838", "Altres / No especificat"),
                 t("fa5be588", "Natural"),
+                t("c65126fe", "Boosted"),
+                t("c61c6624", "Patrocinat"),
+                t("f1196a04", "Boost Analytics"),
+                t("bb66e3fc", "Promote Analytics"),
+                t("g512ddcc", "Analítiques orgàniques"),
+                t("j9256524", "Breakdown of your boost performance"),
+                t("ceeb3016", "Breakdown of your promote performance"),
+                t("bf4558fa", "Breakdown of your organic performance"),
                 t("c69069e6", "Vegades que s'ha vist la publicació a X"),
                 t("a0615bac", "Nombre total de vegades que un usuari ha interaccionat amb una publicació. Això inclou tots els clics a qualsevol part de la publicació (incloses les etiquetes, els enllaços, l'avatar, el nom d'usuari i l'ampliació de la publicació), les republicacions, les respostes, els seguidors i els agradaments."),
                 t("d8abdaa4", "Seguidors nous"),
@@ -7405,8 +7415,9 @@
                 t("acc4cf12", "Nombre de visualitzacions del perfil des de la publicació"),
                 t("c7d0d1c4", "Nombre de clics en qualsevol URL de la publicació"),
                 t("a4da7724", "Vegades que els usuaris han vist els detalls de la publicació"),
-                t("c5d4d3a8", "Cost per seguidor"),
-                t("f56e24f2", "Despesa total dividida pel nombre de seguidors, inclosos els que has aconseguit. Només pagues quan algú et segueix."),
+                t("jedd2771", function (e) {
+                    return e.percentage + " from boost";
+                }),
                 t("g33fd6b1", function (e) {
                     return e.percentage + " de patrocini";
                 }),
@@ -7414,6 +7425,7 @@
                     return e.percentage + " d'usuaris que no són seguidors";
                 }),
                 t("h4cbba3e", "< 5 %"),
+                t("f4f0094c", "< 5% from boost"),
                 t("h1cdac12", "< 5 % de promoció"),
                 t("g884b2cc", "< 5 % de no seguidors"),
                 t("b32334a0", "Comptes als quals s'ha arribat"),
@@ -7781,7 +7793,6 @@
                     return "Et donem la benvinguda, " + e.displayName;
                 }),
                 t("a76d58ba", "Analítiques d'anuncis"),
-                t("g512ddcc", "Analítiques orgàniques"),
                 t("eccd0e1a", "Analítiques de l'organització"),
                 t("deea1708", "Vols veure les analítiques de tots els teus comptes de X?"),
                 t("eb603ffc", "Actualitza per afiliar la teva xarxa i consultar les analítiques agregades."),
@@ -7852,16 +7863,7 @@
                 t("ddfd6718", "Ha fallat el pagament"),
                 t("i90ea7d2", "Actualitza la facturació urgentment per conservar els avantatges."),
                 t("a62359e6", "Configuració d'organització verificada"),
-                t("ge221b7c", "Actualitza a la subscripció d'Organització verificada per accedir a l'opció d'afiliats i a més crèdits per a anuncis."),
-                t("i4dccc18", "Facturació"),
-                t("ec3cd6e4", "Gestiona el mètode de pagament, modifica les dades de facturació i consulta les factures."),
-                t("dac61c3c", "Configuració del compte"),
-                t("b6b5fd66", "Gestiona el teu compte de X i fes canvis, per exemple, al nom d'usuari o la contrasenya."),
-                t("hb9c4a1c", "Preguntes, informes d'errors i comentaris"),
-                t("c674f5b4", "Configura el pagament de factures"),
-                t("i8237e66", "Passa del pagament amb targeta de crèdit a la facturació mitjançant transferència bancària."),
-                t("hebd348a", "Configura com s'utilitzen els anuncis per patrocinar feines des del portal Contractació."),
-                t("ib5e6f90", "Patrocini de feines");
+                t("ge221b7c", "Actualitza a la subscripció d'Organització verificada per accedir a l'opció d'afiliats i a més crèdits per a anuncis.");
             function s(e, a) {
                 for (var i = 0; i < a.length; i++) {
                     var t = a[i];
@@ -7900,7 +7902,16 @@
                     n(e, a)
                 );
             }
-            t("id720215", "Contractació"),
+            t("i4dccc18", "Facturació"),
+                t("ec3cd6e4", "Gestiona el mètode de pagament, modifica les dades de facturació i consulta les factures."),
+                t("dac61c3c", "Configuració del compte"),
+                t("b6b5fd66", "Gestiona el teu compte de X i fes canvis, per exemple, al nom d'usuari o la contrasenya."),
+                t("hb9c4a1c", "Preguntes, informes d'errors i comentaris"),
+                t("c674f5b4", "Configura el pagament de factures"),
+                t("i8237e66", "Passa del pagament amb targeta de crèdit a la facturació mitjançant transferència bancària."),
+                t("hebd348a", "Configura com s'utilitzen els anuncis per patrocinar feines des del portal Contractació."),
+                t("ib5e6f90", "Patrocini de feines"),
+                t("id720215", "Contractació"),
                 t("dd59f146", "Compte d'anuncis per patrocinar feines"),
                 t("e7e36818", "Els comptes publicitaris poden promocionar feines quan s'han configurat completament amb una font financera."),
                 t("c28566e0", "Afegeix el compte"),
@@ -8896,10 +8907,10 @@
                 }),
                 t("ae408b76", "Ho has republicat"),
                 t("j355f008", "Publicació fixada"),
-                t("habf9678", "Fixat per l'autor"),
-                t("db0798ed", function (e) {
-                    return e.topicName + " Tema";
-                }),
+                t("habf9678", "Fixat per l'autor");
+            t("db0798ed", function (e) {
+                return e.topicName + " Tema";
+            }),
                 t("dc716ec9", function (e) {
                     return "Tema recomanat: " + e.topicName;
                 }),
@@ -8919,10 +8930,10 @@
                 }),
                 t("c889af33", function (e) {
                     return e.count + " s''hi han unit";
-                });
-            t("d6f2056f", function (e) {
-                return e.count + " estan escoltant";
-            }),
+                }),
+                t("d6f2056f", function (e) {
+                    return e.count + " estan escoltant";
+                }),
                 t("jbc5f47a", "Acoblament dels Espais"),
                 t("gfe2830f", function (e) {
                     return e.count + " usuari" + r(e.count, "", "s") + " més";
@@ -13206,4 +13217,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ca.8b55f55a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ca.07a640ba.js.map

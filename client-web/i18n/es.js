@@ -280,7 +280,7 @@
                 o("edf7f57e", "Obtén la verificación para acceder a respuestas priorizadas, estadísticas, navegación sin anuncios y mucho más. Actualiza tu perfil ahora."),
                 o("ba920d68", "Aumenta tu influencia con la verificación"),
                 o("ib79d0c2", "Desbloquea las funciones VIP: verifica tu cuenta"),
-                o("c0d3bd82", "You’ve advertised on X, but don’t have a Verified Organizations subscription"),
+                o("c0d3bd82", "Publicaste anuncios en X, pero no tienes una suscripción a Organizaciones verificadas"),
                 o("d7836d1e", "Suscríbete para obtener hasta USD 12 000 de crédito de anuncios gratuitos, verificación dorada, soporte VIP y un paquete de herramientas para crecer."),
                 o("f528e369", function (e) {
                     return "Suscríbete a " + e.tier + " para escribir tus propios Artículos";
@@ -1275,13 +1275,13 @@
                 o("fc7db594", "Resumen del perfil"),
                 o("c3f04d9c", "Pensando"),
                 o("e98cc293", function (e) {
-                    return "Buscando a " + e.query;
+                    return "Buscando " + e.query;
                 }),
                 o("b0d1e205", function (e) {
                     return 'Buscando **"' + e.query + '"**';
                 }),
                 o("i2e0f4d7", function (e) {
-                    return "Browsing " + e.url + " for " + e.query;
+                    return "Explorando " + e.url + " en busca de " + e.query;
                 }),
                 o("acb9b845", function (e) {
                     return "Explorando " + e.url + ' en busca de **"' + e.query + '"**';
@@ -1290,7 +1290,7 @@
                     return "Buscando posts de @" + e.username;
                 }),
                 o("f7d9cfb9", function (e) {
-                    return "Searching posts by @" + e.username + " for " + e.query;
+                    return "Buscando posts de @" + e.username + " en relación con " + e.query;
                 }),
                 o("bec7eb11", function (e) {
                     return "Buscando posts de @" + e.username + ' en relación con **"' + e.query + '"**';
@@ -2975,7 +2975,8 @@
                 o("jadeb4da", "Actualiza tu forma de pago de inmediato antes de que pierdas los beneficios de tu suscripción."),
                 o("bce3726a", "Actualizar facturación"),
                 o("fce9ecce", "Videos sugeridos"),
-                o("dc954b88", "Prueba la experiencia de noticias completa"),
+                o("da00e00a", "Try the new News"),
+                o("c40666d8", "Try it"),
                 o("j66b95a2", "Noticias detalladas"),
                 o("b58d2bd2", "Posts relevantes"),
                 o("efe6ef9e", "Ver el post"),
@@ -3881,9 +3882,9 @@
                 o("e3275464", "Enviar"),
                 o("cededf2a", "Anfitrión"),
                 o("i2caef48", "Coanfitriones"),
-                o("j245c654", "Hablantes"),
-                o("eda23a02", "Oyentes");
-            o("b90eb348", "Invitar a hablar"),
+                o("j245c654", "Hablantes");
+            o("eda23a02", "Oyentes"),
+                o("b90eb348", "Invitar a hablar"),
                 o("d9a63e82", "Eliminar de los hablantes"),
                 o("bd917b26", "Invitar a ser coanfitrión"),
                 o("d7357e7e", "Eliminar de los coanfitriones"),
@@ -4325,10 +4326,10 @@
                 o("b52484b6", "Buscando..."),
                 o("a4d9dbfa", "Pensamientos"),
                 o("ib1c5475", function (e) {
-                    return "Thought for " + e.minutes + "m " + e.seconds + "s";
+                    return "Se ejecutó Pensar durante " + e.minutes + "min " + e.seconds + "s";
                 }),
                 o("a15d62db", function (e) {
-                    return "Thought for " + e.seconds + "s";
+                    return "Se ejecutó Pensar durante " + e.seconds + "s";
                 }),
                 o("d7cb5408", "Páginas web relevantes"),
                 o("aa7c96bb", function (e) {
@@ -4919,9 +4920,9 @@
                 o("e41fffbc", "El tiempo total de reproducción de tus videos."),
                 o("if2909ba", "Tiempo de reproducción"),
                 o("i0e5bf4c", "Tus videos"),
-                o("ed99baea", "Acceso anticipado a la versión beta"),
-                o("gf898b70", "Búsqueda avanzada");
-            o("d2a43a7a", 'contiene "ai" y "startup"'),
+                o("ed99baea", "Acceso anticipado a la versión beta");
+            o("gf898b70", "Búsqueda avanzada"),
+                o("d2a43a7a", 'contiene "ai" y "startup"'),
                 o("a8584698", "ai startup"),
                 o("jb6f9292", 'contiene la frase exacta "ai startup"'),
                 o("j8ee77c4", '"ai startup"'),
@@ -5885,9 +5886,9 @@
                 o("i0ed3f4e", "Imagen del evento"),
                 o("cbae35fa", "Denunciar transmisión"),
                 o("fd12ab58", "Posts de colección"),
-                o("a226497c", "Crear una Comunidad nueva"),
-                o("d7346632", "Todavía no te uniste a ninguna Comunidad");
-            o("b732a4cc", "Cuando lo hagas, verás sus posts aquí."),
+                o("a226497c", "Crear una Comunidad nueva");
+            o("d7346632", "Todavía no te uniste a ninguna Comunidad"),
+                o("b732a4cc", "Cuando lo hagas, verás sus posts aquí."),
                 o("hff48914", "No se encontraron posts en este momento."),
                 o("hb52cc4a", "Por favor, inténtalo de nuevo más tarde."),
                 o("e50e1bb0", "Te damos la bienvenida a Comunidades"),
@@ -6677,6 +6678,7 @@
                 o("b2d41138", "Más alcance = más ingresos"),
                 o("defa7f12", "Aprovecha los beneficios del boost en las respuestas, que te ofrece visibilidad adicional para crecer más rápido."),
                 o("i3e4955d", "aquí"),
+                o("fdc5d06c", "Exit Full Screen"),
                 o("cea1c00e", "Desbloquear la capacidad de interactuar"),
                 o("f8e6a280", "Las cuentas nuevas deben pagar una pequeña cuota anual para poder postear, dar Me gusta, guardar elementos y responder. Esto tiene como fin reducir el spam y crear una mejor experiencia para todos. No obstante, puedes seguir cuentas y navegar por X de forma gratuita."),
                 o("h968efc6", "Las cuentas nuevas deben pagar una pequeña cuota para poder postear, dar Me gusta, guardar elementos y responder. Esto tiene como fin reducir el spam y crear una mejor experiencia para todos. No obstante, puedes seguir cuentas y navegar por X de forma gratuita."),
@@ -6882,10 +6884,10 @@
                 o("e0198956", "Obtén una cuota de los ingresos generados por las interacciones de cuentas verificadas con contenido que postees en X."),
                 o("iadf78e2", "Descargar videos"),
                 o("ee54c3de", "Guarda videos directamente en tu dispositivo"),
-                o("ae03594c", "Aplicación de boost a respuesta corta"),
-                o("e6bb08c0", "Aumenta la visibilidad de tus respuestas."),
-                o("bf2a6acc", "Gran boost en las respuestas");
-            o("c2059276", "Tus respuestas recibirán boost."),
+                o("ae03594c", "Aplicación de boost a respuesta corta");
+            o("e6bb08c0", "Aumenta la visibilidad de tus respuestas."),
+                o("bf2a6acc", "Gran boost en las respuestas"),
+                o("c2059276", "Tus respuestas recibirán boost."),
                 o("b023ec20", "Máximo boost en las respuestas"),
                 o("g337328e", "Consigue la máxima visibilidad para tus respuestas."),
                 o("fa006202", "Reproducción de video en segundo plano"),
@@ -7058,14 +7060,14 @@
                 o("f0ad5cc8", "año"),
                 o("a0dc6e4c", "No disponible en este momento"),
                 o("jd8b2e66", "Suscribirse y pagar"),
-                o("ca784c0c", "Subscribe & pay with Apple"),
+                o("ca784c0c", "Suscríbete y paga con Apple"),
                 o("aa5df29f", function (e) {
                     return "" + e.oldPrice;
                 }),
                 o("g1c4f7a1", function (e) {
                     return "" + e.oldPrice;
                 }),
-                o("afd61c76", "Or, save up to 30%"),
+                o("afd61c76", "O ahorra hasta un 30 %"),
                 o("i7fbacc4", "Cambiar entre los niveles de suscripción disponibles"),
                 o("c9cc122b", function (e) {
                     return e.feature + " se incluye en " + e.title;
@@ -7387,8 +7389,8 @@
                 o("a10aa36c", "Centro de ayuda"),
                 o("d0740558", "Centro de ayuda"),
                 o("d2d76dca", "Centro de ayuda"),
-                o("b6414532", "El desglose estimado de las personas que vieron tu post"),
-                o("c61c6624", "Promocionado"),
+                o("de8bcdaa", "Breakdown of the people that have seen your post"),
+                o("cfa1ef16", "Aplicar boost"),
                 o("d267afa2", "Menos de 20"),
                 o("db81cab0", "20-29"),
                 o("f173716e", "30-39"),
@@ -7397,6 +7399,14 @@
                 o("bcd9cf68", "Mayor de 65"),
                 o("f05f1838", "Otros/no especificado"),
                 o("fa5be588", "Orgánico"),
+                o("c65126fe", "Boosted"),
+                o("c61c6624", "Promocionado"),
+                o("f1196a04", "Boost Analytics"),
+                o("bb66e3fc", "Promote Analytics"),
+                o("g512ddcc", "Estadísticas orgánicas"),
+                o("j9256524", "Breakdown of your boost performance"),
+                o("ceeb3016", "Breakdown of your promote performance"),
+                o("bf4558fa", "Breakdown of your organic performance"),
                 o("c69069e6", "Cantidad de veces que este post se vio en X"),
                 o("a0615bac", "Número total de veces que un usuario interactuó con un post. Esto incluye todos los clics en cualquier parte del post (por ejemplo, hashtags, enlaces, avatar, nombre de usuario y expansión del post), así como los reposts, las respuestas, los nuevos seguidores y los Me gusta."),
                 o("d8abdaa4", "Nuevos seguidores"),
@@ -7404,8 +7414,9 @@
                 o("acc4cf12", "Número de visualizaciones del perfil desde este post"),
                 o("c7d0d1c4", "Número de clics en cualquier URL de este post"),
                 o("a4da7724", "Cantidad de veces que se vieron los detalles sobre este post"),
-                o("c5d4d3a8", "Costo por seguidor"),
-                o("f56e24f2", "Gasto total dividido por el número de seguidores, incluyendo los ganados. Solo pagas cuando alguien te sigue"),
+                o("jedd2771", function (e) {
+                    return e.percentage + " from boost";
+                }),
                 o("g33fd6b1", function (e) {
                     return e.percentage + " por promociones";
                 }),
@@ -7413,6 +7424,7 @@
                     return e.percentage + " de no seguidores";
                 }),
                 o("h4cbba3e", "<5 %"),
+                o("f4f0094c", "< 5% from boost"),
                 o("h1cdac12", "<5 % de promociones"),
                 o("g884b2cc", "<5 % de no seguidores "),
                 o("b32334a0", "Cuentas alcanzadas"),
@@ -7780,7 +7792,6 @@
                     return e.displayName + ", te damos la bienvenida otra vez";
                 }),
                 o("a76d58ba", "Estadísticas de anuncios"),
-                o("g512ddcc", "Estadísticas orgánicas"),
                 o("eccd0e1a", "Estadísticas de la organización"),
                 o("deea1708", "¿Quieres ver las estadísticas de todas tus cuentas de X?"),
                 o("eb603ffc", "Actualiza para afiliar a tu red y ver las estadísticas totales."),
@@ -7851,16 +7862,7 @@
                 o("ddfd6718", "Error en el pago"),
                 o("i90ea7d2", "Actualiza tu facturación de inmediato para mantener tus beneficios."),
                 o("a62359e6", "Configuración de Organizaciones verificadas"),
-                o("ge221b7c", "Actualiza la suscripción de Organización verificada para obtener acceso a las cuentas afiliadas y a más créditos de anuncios."),
-                o("i4dccc18", "Facturación"),
-                o("ec3cd6e4", "Administra tu forma de pago, actualiza la información de pago y revisa tus facturas."),
-                o("dac61c3c", "Configuración de la cuenta"),
-                o("b6b5fd66", "Administra tu cuenta de X, incluido el cambio de nombre de usuario o contraseña."),
-                o("hb9c4a1c", "Preguntas, informes de errores y comentarios"),
-                o("c674f5b4", "Configurar el pago de facturas"),
-                o("i8237e66", "Pasa de los pagos con tarjeta de crédito a la facturación mediante transferencias bancarias."),
-                o("hebd348a", "Configura cómo se usan los anuncios para promocionar empleos en el portal Empleos."),
-                o("ib5e6f90", "Promoción de empleos");
+                o("ge221b7c", "Actualiza la suscripción de Organización verificada para obtener acceso a las cuentas afiliadas y a más créditos de anuncios.");
             function s(e, a) {
                 for (var n = 0; n < a.length; n++) {
                     var o = a[n];
@@ -7899,7 +7901,16 @@
                     i(e, a)
                 );
             }
-            o("id720215", "Empleos"),
+            o("i4dccc18", "Facturación"),
+                o("ec3cd6e4", "Administra tu forma de pago, actualiza la información de pago y revisa tus facturas."),
+                o("dac61c3c", "Configuración de la cuenta"),
+                o("b6b5fd66", "Administra tu cuenta de X, incluido el cambio de nombre de usuario o contraseña."),
+                o("hb9c4a1c", "Preguntas, informes de errores y comentarios"),
+                o("c674f5b4", "Configurar el pago de facturas"),
+                o("i8237e66", "Pasa de los pagos con tarjeta de crédito a la facturación mediante transferencias bancarias."),
+                o("hebd348a", "Configura cómo se usan los anuncios para promocionar empleos en el portal Empleos."),
+                o("ib5e6f90", "Promoción de empleos"),
+                o("id720215", "Empleos"),
                 o("dd59f146", "Cuenta de anuncios para promocionar empleos"),
                 o("e7e36818", "Las cuentas de anuncios pueden acceder a la promoción de empleos cuando están totalmente configuradas con una fuente de financiación."),
                 o("c28566e0", "Cuenta de anuncios"),
@@ -8895,10 +8906,10 @@
                 }),
                 o("ae408b76", "Reposteaste"),
                 o("j355f008", "Post fijado"),
-                o("habf9678", "Anclado por el autor"),
-                o("db0798ed", function (e) {
-                    return "Tema " + e.topicName;
-                }),
+                o("habf9678", "Anclado por el autor");
+            o("db0798ed", function (e) {
+                return "Tema " + e.topicName;
+            }),
                 o("dc716ec9", function (e) {
                     return "Tema recomendado: " + e.topicName;
                 }),
@@ -8918,10 +8929,10 @@
                 }),
                 o("c889af33", function (e) {
                     return e.count + " se uni" + r(e.count, "ó", "eron");
-                });
-            o("d6f2056f", function (e) {
-                return e.count + " conectado" + r(e.count, "", "s");
-            }),
+                }),
+                o("d6f2056f", function (e) {
+                    return e.count + " conectado" + r(e.count, "", "s");
+                }),
                 o("jbc5f47a", "Panel de Espacios"),
                 o("gfe2830f", function (e) {
                     return e.count + " más";
@@ -13217,4 +13228,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/es.d1be3e0a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/es.3423a21a.js.map

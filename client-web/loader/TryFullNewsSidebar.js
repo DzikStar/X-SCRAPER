@@ -3,40 +3,47 @@
     ["loader.TryFullNewsSidebar"],
     {
         426873: (e, t, n) => {
-            n.r(t), n.d(t, { default: () => p });
-            var r = n(202784),
-                l = n(325686),
-                c = n(154003),
-                i = n(392237),
-                s = n(674132),
-                a = n.n(s),
-                o = n(725405),
-                u = n(399398);
-            const d = a().dc954b88;
-            function p() {
-                const e = (0, o.Z)();
-                return r.createElement(
-                    u.g,
+            n.r(t), n.d(t, { default: () => m });
+            var l = n(202784),
+                a = n(325686),
+                i = n(731708),
+                s = n(154003),
+                r = n(392237),
+                c = n(674132),
+                o = n.n(c),
+                d = n(725405),
+                p = n(399398);
+            const u = o().da00e00a,
+                w = "A fresh news experience, powered by Grok. Now in early beta.",
+                f = o().c40666d8;
+            function m() {
+                const e = (0, d.Z)();
+                return l.createElement(
+                    p.g,
                     null,
-                    r.createElement(
-                        l.Z,
-                        { style: f.container },
-                        r.createElement(
-                            c.ZP,
+                    l.createElement(
+                        a.Z,
+                        { style: b.container },
+                        l.createElement(i.ZP, { style: b.title, weight: "medium" }, u),
+                        l.createElement(i.ZP, null, w),
+                        l.createElement(
+                            s.ZP,
                             {
                                 link: "/i/news",
                                 onClick: () => {
                                     e.scribe({ element: "try_full_news_sidebar_cta", action: "click" });
                                 },
+                                size: "small",
+                                style: b.button,
                                 type: "primaryFilled",
                             },
-                            d,
+                            f,
                         ),
                     ),
                 );
             }
-            const f = i.default.create((e) => ({ container: { flex: 1, padding: e.spaces.space16, display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center" } }));
+            const b = r.default.create((e) => ({ container: { flex: 1, padding: e.spaces.space16, display: "flex", flexDirection: "column", gap: e.spaces.space16 }, title: { fontSize: e.fontSizes.headline2 }, button: { width: "max-content" } }));
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TryFullNewsSidebar.d9b4efea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.TryFullNewsSidebar.7e8adf7a.js.map

@@ -368,7 +368,7 @@
                 A = a(175856),
                 k = a(615027),
                 x = a(22730),
-                I = a(336502),
+                I = a(847970),
                 P = a(992942),
                 M = a(420412),
                 B = a(529356),
@@ -969,4 +969,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Birdwatch-4ee0261e.b0654afa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Birdwatch-4ee0261e.2d4bf48a.js.map

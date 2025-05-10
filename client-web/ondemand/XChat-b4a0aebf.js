@@ -5,7 +5,7 @@
         759746: (e, t, n) => {
             n.d(t, { M: () => r });
             var s = n(552322),
-                i = n(475694),
+                i = n(789764),
                 o = n(350311);
             const a = ({ firstUrl: e, resolution: t, secondUrl: n, size: i = "xxLarge" }) => {
                     const a = ((e) => {
@@ -53,7 +53,7 @@
         350311: (e, t, n) => {
             n.d(t, { j: () => o, s: () => a });
             var s = n(552322),
-                i = n(26429);
+                i = n(378364);
             const o = "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
                 a = ({ url: e, size: t, resolution: n = "200x200" }) => (0, s.jsx)(i.q, { url: e || o, size: t, resolution: n });
         },
@@ -140,13 +140,13 @@
         853874: (e, t, n) => {
             n.d(t, { p: () => qe });
             var s = n(552322),
-                i = n(469745),
+                i = n(305399),
                 o = n(727071),
                 a = n(425522),
-                r = n(941204),
-                l = n(702024),
-                c = n(436059),
-                d = n(703612),
+                r = n(332161),
+                l = n(193686),
+                c = n(993165),
+                d = n(589259),
                 m = n(129558),
                 x = n(242782),
                 u = n(169355),
@@ -214,7 +214,7 @@
                 };
             var k = n(202784),
                 N = n(110241),
-                I = n(921879);
+                I = n(983706);
             const S = ({ component: e, conversations: t }) => {
                 const n = (0, N.a)(),
                     i = (0, k.useRef)(null),
@@ -344,11 +344,11 @@
                 Z = n(52053),
                 V = n(543005),
                 F = n(89195),
-                $ = n(898100),
+                $ = n(351417),
                 J = n(611463),
                 W = n(379342),
                 q = n(846742),
-                X = n(776604),
+                X = n(527735),
                 K = n(429804),
                 Q = n(951671),
                 H = n(384226),
@@ -384,7 +384,7 @@
                     });
             var ne = n(658358),
                 se = n(145731),
-                ie = n(796309);
+                ie = n(31674);
             function oe({ icon: e, destructive: t, onClick: n, title: i, value: o, showChevron: a = !1 }) {
                 return (0, s.jsx)("div", { className: "my-2 rounded-xl bg-gray-0 cursor-pointer w-full", onClick: n, children: (0, s.jsxs)("div", { className: "flex flex-row items-center justify-between p-4", children: [(0, s.jsxs)("div", { className: `flex items-center gap-2 ${t && "text-red-500"}`, children: [e, (0, s.jsx)(r.x, { size: "body", weight: "medium", color: t ? "red500" : "text", children: i })] }), (0, s.jsxs)("div", { className: "flex items-center gap-2", children: [o && (0, s.jsx)(r.x, { size: "body", color: "gray500", children: o }), a && (0, s.jsx)(Z.Z, { className: "text-gray-500" })] })] }) });
             }
@@ -723,7 +723,7 @@
                 Le = ({ toolbarState: e }) => ((e instanceof Te.Group || e instanceof Te.OneToOne) && e.ttl ? (0, s.jsx)(Be, { ttl: e.ttl }) : e instanceof Te.Group ? (0, s.jsxs)(r.x, { size: "subtext2", color: "gray700", children: [e.numParticipants, " people"] }) : null),
                 Be = ({ ttl: e }) => (0, s.jsxs)("div", { className: "flex flex-row gap-1", children: [(0, s.jsx)(xe.Z, { className: "text-gray-700" }), (0, s.jsx)(r.x, { size: "subtext2", color: "gray700", children: (0, ue.L)(e.inWholeMilliseconds) })] });
             var Ge = n(256958),
-                Ue = n(849335);
+                Ue = n(261012);
             const _e = a.com.x.dms.groupinvite,
                 Oe = ({ id: e }) => {
                     const { t } = (0, _.$G)(),
@@ -924,4 +924,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-b4a0aebf.56d358aa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.XChat-b4a0aebf.e33c9c8a.js.map

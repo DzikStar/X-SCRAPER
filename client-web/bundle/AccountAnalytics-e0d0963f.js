@@ -6,13 +6,13 @@
             a.d(t, { V: () => M });
             var s = a(552322),
                 i = a(202784),
-                n = a(436059),
-                l = a(702024),
-                r = a(559274),
-                c = a(358595),
-                o = a(407250),
-                d = a(236379),
-                m = a(323788),
+                n = a(993165),
+                l = a(193686),
+                r = a(253511),
+                c = a(793279),
+                o = a(917317),
+                d = a(199705),
+                m = a(713990),
                 u = a(453436),
                 x = a(679804),
                 h = a(702823),
@@ -20,7 +20,7 @@
                 v = a(659289),
                 g = a(14313),
                 f = a(97759),
-                j = a(796309),
+                j = a(31674),
                 b = a(430962),
                 y = a(598705),
                 w = a(976389),
@@ -204,8 +204,8 @@
             a.d(t, { y: () => h });
             var s = a(552322),
                 i = a(643715),
-                n = a(829233),
-                l = a(701883),
+                n = a(1468),
+                l = a(217105),
                 r = a(202784);
             const { Bar: c, BarChart: o, CartesianGrid: d, XAxis: m, YAxis: u } = i,
                 x = "Views";
@@ -360,7 +360,7 @@
                 p = a(945402),
                 v = a(712667),
                 g = a(598705),
-                f = a(422821),
+                f = a(815225),
                 j = a(86982),
                 b = a(707326),
                 y = a(288894);
@@ -379,7 +379,7 @@
                     );
                 return (0, s.jsx)(j.E, { metrics: d, currentTotals: a, prevTotals: i, timeSeriesData: t, defaultMetric: "VideoView", ChartComponent: b.q, hoursLabel: n.hours, calculateChanges: g.Q3 });
             };
-            var N = a(702024),
+            var N = a(193686),
                 k = a(524145),
                 S = a(808106),
                 D = a(596017),
@@ -439,9 +439,9 @@
                 return (0, s.jsxs)("div", { className: "bg-gray-0 flex flex-shrink-0 flex-grow flex-col rounded-2xl pr-2 border border-gray-200", children: [(0, s.jsx)("div", { className: "text-subtext1 md:text-body py-4 pl-4 font-medium text-gray-900 md:font-bold", children: t.videoCompletion }), (0, s.jsx)(E.y, { data: a })] });
             }
             var B = a(812115),
-                A = a(236379),
+                A = a(199705),
                 P = a(995348),
-                z = a(796309);
+                z = a(31674);
             function I({ hasMoreData: e = !1, showNewVideoDetails: t = !1, showEstimatedRevenue: a = !1, videoList: i, onLoadMore: n, newVideoList: r = !1, isLoading: o = !1, videoDetailsPath: d }) {
                 const { analytics: m } = (0, c.M1)(),
                     [u, x] = (0, l.useState)("createdAt"),
@@ -602,4 +602,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-e0d0963f.14d7af2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.AccountAnalytics-e0d0963f.015d9c3a.js.map

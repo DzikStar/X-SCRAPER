@@ -2976,7 +2976,8 @@
                 a("jadeb4da", "Update zo snel mogelijk je betalingsmethode voordat je abonnementsvoordelen kwijtraakt."),
                 a("bce3726a", "Factureringsgegevens"),
                 a("fce9ecce", "Aanbevolen video's"),
-                a("dc954b88", "Probeer de volledige nieuwservaring"),
+                a("da00e00a", "Try the new News"),
+                a("c40666d8", "Try it"),
                 a("j66b95a2", "Diepgaand nieuws"),
                 a("b58d2bd2", "Relevante posts"),
                 a("efe6ef9e", "Post bekijken"),
@@ -3882,9 +3883,9 @@
                 a("e3275464", "Verzenden"),
                 a("cededf2a", "Host"),
                 a("i2caef48", "Co-hosts"),
-                a("j245c654", "Sprekers"),
-                a("eda23a02", "Luisteraars");
-            a("b90eb348", "Uitnodigen om mee te praten"),
+                a("j245c654", "Sprekers");
+            a("eda23a02", "Luisteraars"),
+                a("b90eb348", "Uitnodigen om mee te praten"),
                 a("d9a63e82", "Verwijderen uit sprekers"),
                 a("bd917b26", "Uitnodigen als co-host"),
                 a("d7357e7e", "Uit co-hosts verwijderen"),
@@ -4920,9 +4921,9 @@
                 a("e41fffbc", "De totale kijktijd van je video's."),
                 a("if2909ba", "Kijktijd"),
                 a("i0e5bf4c", "Jouw video's"),
-                a("ed99baea", "Vroege bèta-toegang"),
-                a("gf898b70", "Geavanceerd zoeken");
-            a("d2a43a7a", "bevat zowel 'ai' als 'start-up'"),
+                a("ed99baea", "Vroege bèta-toegang");
+            a("gf898b70", "Geavanceerd zoeken"),
+                a("d2a43a7a", "bevat zowel 'ai' als 'start-up'"),
                 a("a8584698", "ai start-up"),
                 a("jb6f9292", "bevat de exacte tekst 'ai start-up'"),
                 a("j8ee77c4", '"ai start-up"'),
@@ -5886,9 +5887,9 @@
                 a("i0ed3f4e", "Afbeelding gebeurtenis"),
                 a("cbae35fa", "Uitzending rapporteren"),
                 a("fd12ab58", "Postverzameling"),
-                a("a226497c", "Een nieuwe Community maken"),
-                a("d7346632", "Je bent nog geen lid geworden van community's");
-            a("b732a4cc", "Als je dat doet, zie je zijn of haar post hier."),
+                a("a226497c", "Een nieuwe Community maken");
+            a("d7346632", "Je bent nog geen lid geworden van community's"),
+                a("b732a4cc", "Als je dat doet, zie je zijn of haar post hier."),
                 a("hff48914", "We kunnen nu geen posts vinden."),
                 a("hb52cc4a", "Probeer het later nog eens."),
                 a("e50e1bb0", "Welkom bij Community's"),
@@ -6678,6 +6679,7 @@
                 a("b2d41138", "Meer bereik = meer verdiensten"),
                 a("defa7f12", "Profiteer van Antwoordboost, waarmee je zichtbaarder wordt om sneller te groeien."),
                 a("i3e4955d", "hier"),
+                a("fdc5d06c", "Exit Full Screen"),
                 a("cea1c00e", "De mogelijkheid ontgrendelen om interacties aan te gaan"),
                 a("f8e6a280", "We vragen nieuwe accounts om een kleine jaarlijkse bijdrage te betalen voordat ze posts kunnen plaatsen, vind-ik-leuks geven, bladwijzers maken en antwoorden. We doen dit om spam te verminderen en de ervaring voor iedereen beter te maken. Je kan nog altijd accounts gratis volgen en alles op X gratis bekijken."),
                 a("h968efc6", "We vragen nieuwe accounts om een kleine bijdrage te betalen voordat ze posts kunnen plaatsen, vind-ik-leuks geven, bladwijzers maken en antwoorden. We doen dit om spam te verminderen en de ervaring voor iedereen beter te maken. Je kan nog altijd accounts gratis volgen en alles op X gratis bekijken."),
@@ -6883,10 +6885,10 @@
                 a("e0198956", "Ontvang een deel van de inkomsten die worden gegenereerd door interacties van geverifieerde accounts met content die jij op X plaatst."),
                 a("iadf78e2", "Video's downloaden"),
                 a("ee54c3de", "Sla video's rechtstreeks op je apparaat op"),
-                a("ae03594c", "Kleine Antwoordboost"),
-                a("e6bb08c0", "Verhoog de zichtbaarheid van je antwoorden"),
-                a("bf2a6acc", "Grote Antwoordboost");
-            a("c2059276", "Zorg dat je antwoorden worden geboost."),
+                a("ae03594c", "Kleine Antwoordboost");
+            a("e6bb08c0", "Verhoog de zichtbaarheid van je antwoorden"),
+                a("bf2a6acc", "Grote Antwoordboost"),
+                a("c2059276", "Zorg dat je antwoorden worden geboost."),
                 a("b023ec20", "Maximale Antwoordboost"),
                 a("g337328e", "Krijg de meeste zichtbaarheid van je antwoorden"),
                 a("fa006202", "Video afspelen in de achtergrond"),
@@ -7388,8 +7390,8 @@
                 a("a10aa36c", "Helpcentrum"),
                 a("d0740558", "Helpcentrum"),
                 a("d2d76dca", "Helpcentrum"),
-                a("b6414532", "De geschatte verdeling van de mensen die je post hebben bekeken"),
-                a("c61c6624", "Promoted"),
+                a("de8bcdaa", "Breakdown of the people that have seen your post"),
+                a("cfa1ef16", "Boosten"),
                 a("d267afa2", "Onder 20"),
                 a("db81cab0", "20-29"),
                 a("f173716e", "30-39"),
@@ -7398,6 +7400,14 @@
                 a("bcd9cf68", "Ouder dan 65"),
                 a("f05f1838", "Overig/niet opgegeven"),
                 a("fa5be588", "Organisch"),
+                a("c65126fe", "Boosted"),
+                a("c61c6624", "Promoted"),
+                a("f1196a04", "Boost Analytics"),
+                a("bb66e3fc", "Promote Analytics"),
+                a("g512ddcc", "Organische analyses"),
+                a("j9256524", "Breakdown of your boost performance"),
+                a("ceeb3016", "Breakdown of your promote performance"),
+                a("bf4558fa", "Breakdown of your organic performance"),
                 a("c69069e6", "Aantal keer dat deze post op X is bekeken"),
                 a("a0615bac", "Het totale aantal interacties van een gebruiker met een post, waaronder alle clicks binnen de post (op hashtags, links, profielafbeelding, gebruikersnaam en uitgeklapte post), reposts, antwoorden, volgverzoeken en vind-ik-leuks."),
                 a("d8abdaa4", "Nieuwe volgers"),
@@ -7405,8 +7415,9 @@
                 a("acc4cf12", "Aantal profielweergaven van deze post"),
                 a("c7d0d1c4", "Aantal clicks op alle URL's van deze post"),
                 a("a4da7724", "Het aantal keer dat mensen de details van deze post hebben bekeken"),
-                a("c5d4d3a8", "Cost per volger"),
-                a("f56e24f2", "Totale uitgaven gedeeld door het aantal volgers, ook verdiend. Je betaalt alleen als iemand je volgt"),
+                a("jedd2771", function (e) {
+                    return e.percentage + " from boost";
+                }),
                 a("g33fd6b1", function (e) {
                     return e.percentage + " van promotie";
                 }),
@@ -7414,6 +7425,7 @@
                     return e.percentage + " van niet-volgers";
                 }),
                 a("h4cbba3e", "< 5%"),
+                a("f4f0094c", "< 5% from boost"),
                 a("h1cdac12", "<5% van promotie"),
                 a("g884b2cc", "< 5% van niet-volgers"),
                 a("b32334a0", "Bereikte accounts"),
@@ -7781,7 +7793,6 @@
                     return "Welkom terug, " + e.displayName;
                 }),
                 a("a76d58ba", "Advertentie-analyses"),
-                a("g512ddcc", "Organische analyses"),
                 a("eccd0e1a", "Organisatie-analyses"),
                 a("deea1708", "Wil je analyses bekijken van al je accounts van X?"),
                 a("eb603ffc", "Upgrade om je netwerk aan je te liëren en verzamelde statistieken te bekijken."),
@@ -7852,16 +7863,7 @@
                 a("ddfd6718", "Betaling mislukt"),
                 a("i90ea7d2", "Werk je factureringsgegevens zo snel mogelijk bij om je voordelen te behouden."),
                 a("a62359e6", "Instellingen Geverifieerde Organisaties"),
-                a("ge221b7c", "Upgrade je abonnement op Geverifieerde Organisaties om toegang te krijgen tot gelieerde accounts en meer advertentietegoed."),
-                a("i4dccc18", "Facturering"),
-                a("ec3cd6e4", "Beheer je betalingsmethode, werk factureringsgegevens bij en bekijk je facturen."),
-                a("dac61c3c", "Accountinstellingen"),
-                a("b6b5fd66", "Beheer je account van X, waaronder het wijzigen van je gebruikersnaam en wachtwoord."),
-                a("hb9c4a1c", "Vragen, meldingen van bugs en feedback"),
-                a("c674f5b4", "Factuurbetalingen instellen"),
-                a("i8237e66", "Schakel over van creditcardbetalingen naar facturering via bankoverschrijving."),
-                a("hebd348a", "Stel in hoe advertenties worden gebruikt om vacatures uit te lichten via de Hiring-portal."),
-                a("ib5e6f90", "Vacatures uitlichten");
+                a("ge221b7c", "Upgrade je abonnement op Geverifieerde Organisaties om toegang te krijgen tot gelieerde accounts en meer advertentietegoed.");
             function i(e, n) {
                 for (var t = 0; t < n.length; t++) {
                     var a = n[t];
@@ -7900,7 +7902,16 @@
                     o(e, n)
                 );
             }
-            a("id720215", "Hiring"),
+            a("i4dccc18", "Facturering"),
+                a("ec3cd6e4", "Beheer je betalingsmethode, werk factureringsgegevens bij en bekijk je facturen."),
+                a("dac61c3c", "Accountinstellingen"),
+                a("b6b5fd66", "Beheer je account van X, waaronder het wijzigen van je gebruikersnaam en wachtwoord."),
+                a("hb9c4a1c", "Vragen, meldingen van bugs en feedback"),
+                a("c674f5b4", "Factuurbetalingen instellen"),
+                a("i8237e66", "Schakel over van creditcardbetalingen naar facturering via bankoverschrijving."),
+                a("hebd348a", "Stel in hoe advertenties worden gebruikt om vacatures uit te lichten via de Hiring-portal."),
+                a("ib5e6f90", "Vacatures uitlichten"),
+                a("id720215", "Hiring"),
                 a("dd59f146", "Advertentieaccount voor het uitlichten van vacatures"),
                 a("e7e36818", "Advertentieaccounts komen in aanmerking voor het uitlichten van vacatures als ze volledig zijn ingesteld, inclusief een financieringsbron."),
                 a("c28566e0", "Advertentieaccount"),
@@ -8896,10 +8907,10 @@
                 }),
                 a("ae408b76", "Je hebt deze post opnieuw geplaatst"),
                 a("j355f008", "Vastgemaakte post"),
-                a("habf9678", "Vastgemaakt door auteur"),
-                a("db0798ed", function (e) {
-                    return "Onderwerp " + e.topicName;
-                }),
+                a("habf9678", "Vastgemaakt door auteur");
+            a("db0798ed", function (e) {
+                return "Onderwerp " + e.topicName;
+            }),
                 a("dc716ec9", function (e) {
                     return "Aanbevolen Onderwerp: " + e.topicName;
                 }),
@@ -8919,10 +8930,10 @@
                 }),
                 a("c889af33", function (e) {
                     return e.count + " nemen deel";
-                });
-            a("d6f2056f", function (e) {
-                return e.count + " beluisterd";
-            }),
+                }),
+                a("d6f2056f", function (e) {
+                    return e.count + " beluisterd";
+                }),
                 a("jbc5f47a", "Spaces-dock"),
                 a("gfe2830f", function (e) {
                     return e.count + " ander" + r(e.count, "", "en");
@@ -13219,4 +13230,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.f760221a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.772ec17a.js.map

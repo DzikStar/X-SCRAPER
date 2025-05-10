@@ -85,15 +85,15 @@
                 b = d(807896),
                 D = d(154003),
                 h = d(731708),
-                S = d(174326),
-                m = d(73664),
+                m = d(174326),
+                S = d(73664),
                 A = d(725516);
             const y = ({ onSelect: e, pillGroups: a, position: d, selectedPillGroup: r }) => {
                     const o = a[d],
                         l = (0, A.z)(),
                         i = n.useRef(null),
                         t = n.useRef(0),
-                        c = (0, m.R)(i);
+                        c = (0, S.R)(i);
                     n.useEffect(() => {
                         c && ((t.current += 1), 1 === t.current && l.scribe({ action: "impression", element: "topic_pill", data: { module_id: o, position: d } }));
                     }, [l, c, o, d]);
@@ -102,29 +102,29 @@
                     }, [l, e, o, d]);
                     return n.createElement(D.ZP, { onClick: s, ref: i, type: r === o ? "primaryFilled" : "primaryOutlined" }, n.createElement(h.ZP, null, o));
                 },
-                w = (e) => {
+                M = (e) => {
                     const { pillGroups: a } = e;
                     return a.length
                         ? n.createElement(
-                              S.Z,
-                              { childrenStyle: M.buttons, style: M.container },
+                              m.Z,
+                              { childrenStyle: w.buttons, style: w.container },
                               a.map((a, d) => n.createElement(y, (0, b.Z)({ key: d }, e, { position: d }))),
                           )
                         : null;
                 },
-                M = t.default.create((e) => ({ container: { paddingHorizontal: e.componentDimensions.gutterHorizontal }, buttons: { marginHorizontal: e.spaces.space2 } }));
+                w = t.default.create((e) => ({ container: { paddingHorizontal: e.componentDimensions.gutterHorizontal }, buttons: { marginHorizontal: e.spaces.space2 } }));
             var f = d(325686),
                 g = d(143778),
                 P = d(443781);
             const v = n.createContext(Object.create(P.wp, Object.getOwnPropertyDescriptors({ gap: void 0, horizontalPadding: void 0, numRowsFromMetadata: void 0, scrollerDisplayType: l.m.Carousel }))),
                 I = v;
             var B = d(332878);
-            const k = n.forwardRef(({ assumedItemHeight: e = 0, anchoring: a = B.Z, identityFunction: d, items: r, minimumOffscreenToViewportRatio: o = 0, nearEndProximityRatio: i = 0, nearStartProximityRatio: t = 0, noItemsRenderer: c = g.Z, preferredOffscreenToViewportRatio: s = 0, onAtEnd: u = p.Z, onAtStart: b = p.Z, onNearEnd: D = p.Z, onNearStart: h = p.Z, onPositionRestored: m = p.Z, renderer: y }, w) => {
-                    const { gap: M, horizontalPadding: P, numRowsFromMetadata: I, scrollerDisplayType: k = l.m.Carousel } = n.useContext(v),
+            const k = n.forwardRef(({ assumedItemHeight: e = 0, anchoring: a = B.Z, identityFunction: d, items: r, minimumOffscreenToViewportRatio: o = 0, nearEndProximityRatio: i = 0, nearStartProximityRatio: t = 0, noItemsRenderer: c = g.Z, preferredOffscreenToViewportRatio: s = 0, onAtEnd: u = p.Z, onAtStart: b = p.Z, onNearEnd: D = p.Z, onNearStart: h = p.Z, onPositionRestored: S = p.Z, renderer: y }, M) => {
+                    const { gap: w, horizontalPadding: P, numRowsFromMetadata: I, scrollerDisplayType: k = l.m.Carousel } = n.useContext(v),
                         R = I || T(r.length, k),
                         E = n.useRef(0),
                         Z = (0, A.z)();
-                    n.useImperativeHandle(w, () => ({ isAtNewest: () => !0, scrollToNewest: () => (0, p.Z)(), adjustFocusBy: (e) => (0, p.Z)() }));
+                    n.useImperativeHandle(M, () => ({ isAtNewest: () => !0, scrollToNewest: () => (0, p.Z)(), adjustFocusBy: (e) => (0, p.Z)() }));
                     const C = n.useMemo(() => {
                             const e = [];
                             for (let a = 0, o = 0; a < r.length; a += R, o++) {
@@ -150,7 +150,7 @@
                             },
                             [Z],
                         );
-                    return r.length ? n.createElement(S.Z, { buttonsContainerStyle: { gap: M, paddingHorizontal: P }, onScroll: G, onVisibleRangeChange: F }, C) : c();
+                    return r.length ? n.createElement(m.Z, { buttonsContainerStyle: { gap: w, paddingHorizontal: P }, onScroll: G, onVisibleRangeChange: F }, C) : c();
                 }),
                 T = (e, a) => (a === l.m.GridCarousel && e >= 8 ? (e < 12 ? 2 : 3) : 1),
                 R = k;
@@ -188,28 +188,26 @@
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-db3d5daf"),
                         d.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                         d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2d1eb5e2"),
+                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-34cda585"),
                         d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                         d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                         d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
-                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-60e08fbd"),
+                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1bce2d5d"),
                         d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-25704d22"),
-                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-7b94920a"),
-                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-a7573e1a"),
-                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-ee9ffade"),
-                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8d854c2e"),
+                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-ee9e2532"),
                         d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-aaf38a28"),
                         d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-4cc32837"),
+                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-b73bd0e3"),
+                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-e0a7c12b"),
+                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-627162af"),
+                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-286dfed9"),
+                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-162a9ab0"),
+                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-cbd8f64c"),
+                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-f943ab46"),
+                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-91216611"),
                         d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-2652b27c"),
-                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-da0e99d8"),
                         d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-3931c1f3"),
                         d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-c377d397"),
-                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-e4b9a405"),
-                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-f17e8d44"),
-                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-f39972b2"),
-                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-568e95f0"),
-                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1895c9ee"),
-                        d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-8fe22a9e"),
                         d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-0a8205ef"),
                         d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-5719ea67"),
                         d.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1b6af858"),
@@ -276,7 +274,7 @@
                         I.Provider,
                         { value: { gap: D, horizontalPadding: h, numRowsFromMetadata: i, scrollerDisplayType: u, ...this.context } },
                         this.pillGroups.length > 1 && this.state.selectedPillGroup
-                            ? n.createElement(w, {
+                            ? n.createElement(M, {
                                   onSelect: (e) => {
                                       this.setState({ selectedPillGroup: e });
                                   },
@@ -314,4 +312,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.CarouselTimelineHandler.6647d19a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/loader.CarouselTimelineHandler.2d686aba.js.map

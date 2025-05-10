@@ -2980,7 +2980,8 @@
                 o("jadeb4da", "Please urgently update your payment method before you lose your subscription benefits."),
                 o("bce3726a", "Update Billing"),
                 o("fce9ecce", "Suggested Videos"),
-                o("dc954b88", "Try the full news experience"),
+                o("da00e00a", "Try the new News"),
+                o("c40666d8", "Try it"),
                 o("j66b95a2", "In-Depth News"),
                 o("b58d2bd2", "Relevant Posts"),
                 o("efe6ef9e", "View post"),
@@ -3886,9 +3887,9 @@
                 o("e3275464", "بھیجیں"),
                 o("cededf2a", "ہوسٹ"),
                 o("i2caef48", "ساتھی میزبان"),
-                o("j245c654", "مقررین"),
-                o("eda23a02", "Listeners");
-            o("b90eb348", "Invite to Speak"),
+                o("j245c654", "مقررین");
+            o("eda23a02", "Listeners"),
+                o("b90eb348", "Invite to Speak"),
                 o("d9a63e82", "Remove from Speakers"),
                 o("bd917b26", "Invite to Co-host"),
                 o("d7357e7e", "Remove from Co-hosts"),
@@ -4924,9 +4925,9 @@
                 o("e41fffbc", "The total watch time of your videos."),
                 o("if2909ba", "Watch Time"),
                 o("i0e5bf4c", "Your videos"),
-                o("ed99baea", "Early Beta Access"),
-                o("gf898b70", "Advanced Search");
-            o("d2a43a7a", 'contains both "ai" and "startup"'),
+                o("ed99baea", "Early Beta Access");
+            o("gf898b70", "Advanced Search"),
+                o("d2a43a7a", 'contains both "ai" and "startup"'),
                 o("a8584698", "ai startup"),
                 o("jb6f9292", 'contains the exact phrase "ai startup"'),
                 o("j8ee77c4", '"ai startup"'),
@@ -5890,9 +5891,9 @@
                 o("i0ed3f4e", "ایونٹ کی تصویر"),
                 o("cbae35fa", "نشریہ کی رپورٹ کریں"),
                 o("fd12ab58", "Collection posts"),
-                o("a226497c", "ایک نئی کمیونٹی بنائيں"),
-                o("d7346632", "آپ ابھی تک کسی کمیونٹی میں شامل نہیں ہوئے ہیں");
-            o("b732a4cc", "When you do, you’ll see their posts here."),
+                o("a226497c", "ایک نئی کمیونٹی بنائيں");
+            o("d7346632", "آپ ابھی تک کسی کمیونٹی میں شامل نہیں ہوئے ہیں"),
+                o("b732a4cc", "When you do, you’ll see their posts here."),
                 o("hff48914", "No posts could be found at this time."),
                 o("hb52cc4a", "براہ کرم بعد میں دوبارہ کوشش کریں۔"),
                 o("e50e1bb0", "Welcome to Communities"),
@@ -6682,6 +6683,7 @@
                 o("b2d41138", "More reach = more earnings"),
                 o("defa7f12", "Benefit from a Reply Boost, giving you the extra visibility to grow faster."),
                 o("i3e4955d", "here"),
+                o("fdc5d06c", "Exit Full Screen"),
                 o("cea1c00e", "Unlock the ability to engage"),
                 o("f8e6a280", "New accounts are required to pay a small annual fee before you’re able to post, like, bookmark, and reply. This is to reduce spam and to create a better experience for everyone. You can still follow accounts and browse X for free."),
                 o("h968efc6", "New accounts are required to pay a small fee before you’re able to post, like, bookmark, and reply. This is to reduce spam and to create a better experience for everyone. You can still follow accounts and browse X for free."),
@@ -6887,10 +6889,10 @@
                 o("e0198956", "Get a share of the revenue generated from verified accounts’ engagement with content you post on X."),
                 o("iadf78e2", "Download videos"),
                 o("ee54c3de", "Save videos straight to your device"),
-                o("ae03594c", "Small reply boost"),
-                o("e6bb08c0", "Increase the visibility of your replies"),
-                o("bf2a6acc", "Large Reply Boost");
-            o("c2059276", "Have your replies boosted."),
+                o("ae03594c", "Small reply boost");
+            o("e6bb08c0", "Increase the visibility of your replies"),
+                o("bf2a6acc", "Large Reply Boost"),
+                o("c2059276", "Have your replies boosted."),
                 o("b023ec20", "Max Reply Boost"),
                 o("g337328e", "Get the highest visibility for your replies."),
                 o("fa006202", "Background video playback"),
@@ -7392,8 +7394,8 @@
                 o("a10aa36c", "Help Center"),
                 o("d0740558", "Help Center"),
                 o("d2d76dca", "Help Center"),
-                o("b6414532", "The estimated breakdown of the people that have seen your post"),
-                o("c61c6624", "تشہیر شدہ"),
+                o("de8bcdaa", "Breakdown of the people that have seen your post"),
+                o("cfa1ef16", "Boost"),
                 o("d267afa2", "Under کے تحت"),
                 o("db81cab0", "20-29"),
                 o("f173716e", "30-39"),
@@ -7402,6 +7404,14 @@
                 o("bcd9cf68", "65 سے اوپر"),
                 o("f05f1838", "دیگر / متعین نہیں ہے"),
                 o("fa5be588", "نامیاتی"),
+                o("c65126fe", "Boosted"),
+                o("c61c6624", "تشہیر شدہ"),
+                o("f1196a04", "Boost Analytics"),
+                o("bb66e3fc", "Promote Analytics"),
+                o("g512ddcc", "Organic Analytics"),
+                o("j9256524", "Breakdown of your boost performance"),
+                o("ceeb3016", "Breakdown of your promote performance"),
+                o("bf4558fa", "Breakdown of your organic performance"),
                 o("c69069e6", "Times this post was seen on X"),
                 o("a0615bac", "Total number of times a user has interacted with a post. This includes all clicks anywhere on the post (including hashtags, links, avatar, username, and post expansion), reposts, replies, follows, and likes."),
                 o("d8abdaa4", "نئے فالوورز"),
@@ -7409,8 +7419,9 @@
                 o("acc4cf12", "Number of profile views from this post"),
                 o("c7d0d1c4", "Number of clicks on any URL in this post"),
                 o("a4da7724", "Times people viewed the details about this post"),
-                o("c5d4d3a8", "Cost per follow"),
-                o("f56e24f2", "Total spend divided by the number of followers, including earned. You only pay when someone follows you"),
+                o("jedd2771", function (e) {
+                    return e.percentage + " from boost";
+                }),
                 o("g33fd6b1", function (e) {
                     return "تشہیر سے " + e.percentage;
                 }),
@@ -7418,6 +7429,7 @@
                     return "غیر فالور سے " + e.percentage;
                 }),
                 o("h4cbba3e", "< 5%"),
+                o("f4f0094c", "< 5% from boost"),
                 o("h1cdac12", "< 5% from promotion"),
                 o("g884b2cc", "< 5% from non followers"),
                 o("b32334a0", "اکاؤنٹس تک رسائی کی گئی"),
@@ -7785,7 +7797,6 @@
                     return "Welcome back, " + e.displayName;
                 }),
                 o("a76d58ba", "Ads Analytics"),
-                o("g512ddcc", "Organic Analytics"),
                 o("eccd0e1a", "Organization Analytics"),
                 o("deea1708", "Want to view analytics across all your X accounts?"),
                 o("eb603ffc", "Upgrade to affiliate your network and view aggregated analytics."),
@@ -7856,16 +7867,7 @@
                 o("ddfd6718", "Payment Failed"),
                 o("i90ea7d2", "Please urgently update your billing to keep your benefits."),
                 o("a62359e6", "Verified Organization Settings"),
-                o("ge221b7c", "Upgrade Verified Organization subscription to get access to affiliates and more ad credits."),
-                o("i4dccc18", "Billing"),
-                o("ec3cd6e4", "Manage your payment method, update billing information, and review your invoices."),
-                o("dac61c3c", "Account settings"),
-                o("b6b5fd66", "Manage your X account including changing your username or password."),
-                o("hb9c4a1c", "Questions, bug reports and feedback"),
-                o("c674f5b4", "Setup invoice payments"),
-                o("i8237e66", "Switch from credit card payments to invoicing via bank transfers."),
-                o("hebd348a", "Configure how ads are used to promote jobs from the Hiring portal."),
-                o("ib5e6f90", "Job Promotion");
+                o("ge221b7c", "Upgrade Verified Organization subscription to get access to affiliates and more ad credits.");
             function i(e, t) {
                 for (var a = 0; a < t.length; a++) {
                     var o = t[a];
@@ -7904,7 +7906,16 @@
                     c(e, t)
                 );
             }
-            o("id720215", "Hiring"),
+            o("i4dccc18", "Billing"),
+                o("ec3cd6e4", "Manage your payment method, update billing information, and review your invoices."),
+                o("dac61c3c", "Account settings"),
+                o("b6b5fd66", "Manage your X account including changing your username or password."),
+                o("hb9c4a1c", "Questions, bug reports and feedback"),
+                o("c674f5b4", "Setup invoice payments"),
+                o("i8237e66", "Switch from credit card payments to invoicing via bank transfers."),
+                o("hebd348a", "Configure how ads are used to promote jobs from the Hiring portal."),
+                o("ib5e6f90", "Job Promotion"),
+                o("id720215", "Hiring"),
                 o("dd59f146", "Job promotion ad account"),
                 o("e7e36818", "Ad accounts are eligible for job promotion when they are fully set up with a funding source."),
                 o("c28566e0", "Ad Account"),
@@ -8900,10 +8911,10 @@
                 }),
                 o("ae408b76", "You reposted"),
                 o("j355f008", "Pinned post"),
-                o("habf9678", "تخلیق کار کی طرف سے پن کیا گیا"),
-                o("db0798ed", function (e) {
-                    return e.topicName + " موضوع";
-                }),
+                o("habf9678", "تخلیق کار کی طرف سے پن کیا گیا");
+            o("db0798ed", function (e) {
+                return e.topicName + " موضوع";
+            }),
                 o("dc716ec9", function (e) {
                     return "تجویز کردہ موضوع: " + e.topicName;
                 }),
@@ -8923,10 +8934,10 @@
                 }),
                 o("c889af33", function (e) {
                     return e.count + " شامل ہوا";
-                });
-            o("d6f2056f", function (e) {
-                return e.count + " میں  ہم آہنگ";
-            }),
+                }),
+                o("d6f2056f", function (e) {
+                    return e.count + " میں  ہم آہنگ";
+                }),
                 o("jbc5f47a", "Spaces Dock"),
                 o("gfe2830f", function (e) {
                     return e.count + " دوسر" + n(e.count, "ا", "ے");
@@ -13214,4 +13225,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ur.9ad759ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ur.d7d4e72a.js.map

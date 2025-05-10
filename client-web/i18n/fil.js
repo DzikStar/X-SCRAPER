@@ -2976,7 +2976,8 @@
                 i("jadeb4da", "Paki-update agad ang paraan mo ng pagbabayad bago mawala ang mga benepisyo mo sa subscription."),
                 i("bce3726a", "I-update ang Billing"),
                 i("fce9ecce", "Mga Iminumungkahing Video"),
-                i("dc954b88", "Subukan ang buong news experience"),
+                i("da00e00a", "Try the new News"),
+                i("c40666d8", "Try it"),
                 i("j66b95a2", "Mga Detalyadong Balita"),
                 i("b58d2bd2", "Mga nauugnay na Post"),
                 i("efe6ef9e", "Tingnan ang post"),
@@ -3882,9 +3883,9 @@
                 i("e3275464", "Ipadala"),
                 i("cededf2a", "Host"),
                 i("i2caef48", "Mga Co-host"),
-                i("j245c654", "Mga Tagapagsalita"),
-                i("eda23a02", "Mga Tagapakinig");
-            i("b90eb348", "Imbitahang Magsalita"),
+                i("j245c654", "Mga Tagapagsalita");
+            i("eda23a02", "Mga Tagapakinig"),
+                i("b90eb348", "Imbitahang Magsalita"),
                 i("d9a63e82", "Alisin sa Mga Tagapagsalita"),
                 i("bd917b26", "Imbitahang maging Co-host"),
                 i("d7357e7e", "Alisin sa mga Co-host"),
@@ -4920,9 +4921,9 @@
                 i("e41fffbc", "Ang kabuuang tagal ng panonood ng mga video mo."),
                 i("if2909ba", "Tagal ng Panonood"),
                 i("i0e5bf4c", "Mga video mo"),
-                i("ed99baea", "Maagang Beta Access"),
-                i("gf898b70", "Advanced na Paghahanap");
-            i("d2a43a7a", 'naglalaman ng "ai" at "startup"'),
+                i("ed99baea", "Maagang Beta Access");
+            i("gf898b70", "Advanced na Paghahanap"),
+                i("d2a43a7a", 'naglalaman ng "ai" at "startup"'),
                 i("a8584698", "ai startup"),
                 i("jb6f9292", 'naglalaman ng exact phrase na "ai startup"'),
                 i("j8ee77c4", '"ai startup"'),
@@ -5886,9 +5887,9 @@
                 i("i0ed3f4e", "Larawan ng kaganapan"),
                 i("cbae35fa", "Iulat ang Broadcast"),
                 i("fd12ab58", "Mga post ng Koleksyon"),
-                i("a226497c", "Gumawa ng bagong Komunidad"),
-                i("d7346632", "Wala ka pang sinasalihang anumang Komunidad");
-            i("b732a4cc", "Kapag sumali ka, makikita mo ang mga iyon dito."),
+                i("a226497c", "Gumawa ng bagong Komunidad");
+            i("d7346632", "Wala ka pang sinasalihang anumang Komunidad"),
+                i("b732a4cc", "Kapag sumali ka, makikita mo ang mga iyon dito."),
                 i("hff48914", "Walang mahanap na post sa ngayon."),
                 i("hb52cc4a", "Subukan ulit mamaya."),
                 i("e50e1bb0", "Welcome sa Mga Komunidad"),
@@ -6678,6 +6679,7 @@
                 i("b2d41138", "Mas malawak ang reach = mas malaki ang kita"),
                 i("defa7f12", "Makakuha ng benepisyo sa Pag-boost ng Reply, na nagbibigay sa iyo ng dagdag na visibility para mabilis na lumago."),
                 i("i3e4955d", "dito"),
+                i("fdc5d06c", "Exit Full Screen"),
                 i("cea1c00e", "I-unlock ang kakayahang makipag-ugnayan"),
                 i("f8e6a280", "Kailangang magbayad ng taunang bayarin sa maliit na halaga ang mga bagong account bago ka makapag-post, mag-like, mag-bookmark, at makapag-reply. Layunin nitong bawasan ang mga spam para gawing mas maganda ang karanasan ng lahat. Puwede mo pa ring i-follow ang mga account at i-browse ang X nang libre. "),
                 i("h968efc6", "Kailangang magbayad ng mga bagong account ng maliit na halaga bago ka makapag-post, mag-like, mag-bookmark, at makapag-reply. Layunin nitong bawasan ang mga spam para gawing mas maganda ang karanasan ng lahat. Puwede mo pa ring i-follow ang mga account at i-browse ang X nang libre. "),
@@ -6883,10 +6885,10 @@
                 i("e0198956", "Makakuha ng share sa revenue na nakukuha mula sa pakikipag-ugnayan ng mga na-verify na account sa content na pino-post mo sa X."),
                 i("iadf78e2", "I-download ang mga video"),
                 i("ee54c3de", "I-save ang mga video sa mismong device mo"),
-                i("ae03594c", "Kaunting pag-boost ng reply"),
-                i("e6bb08c0", "Pataasin ang visibilty ng mga reply mo"),
-                i("bf2a6acc", "Malaking Pag-boost ng Reply");
-            i("c2059276", "I-boost ang mga reply mo."),
+                i("ae03594c", "Kaunting pag-boost ng reply");
+            i("e6bb08c0", "Pataasin ang visibilty ng mga reply mo"),
+                i("bf2a6acc", "Malaking Pag-boost ng Reply"),
+                i("c2059276", "I-boost ang mga reply mo."),
                 i("b023ec20", "Max na Pag-boost ng Reply"),
                 i("g337328e", "Makakuha ng pinakamataas na visibility para sa mga reply mo."),
                 i("fa006202", "Pag-playback ng video sa background"),
@@ -7388,8 +7390,8 @@
                 i("a10aa36c", "Help Center"),
                 i("d0740558", "Help Center"),
                 i("d2d76dca", "Help Center"),
-                i("b6414532", "Tinatayang breakdown ng mga taong nakakita sa post mo"),
-                i("c61c6624", "Promoted"),
+                i("de8bcdaa", "Breakdown of the people that have seen your post"),
+                i("cfa1ef16", "I-boost"),
                 i("d267afa2", "Wala pang 20"),
                 i("db81cab0", "20-29"),
                 i("f173716e", "30-39"),
@@ -7398,6 +7400,14 @@
                 i("bcd9cf68", "Lampas 65"),
                 i("f05f1838", "Iba pa / Hindi tinukoy"),
                 i("fa5be588", "Organic"),
+                i("c65126fe", "Boosted"),
+                i("c61c6624", "Promoted"),
+                i("f1196a04", "Boost Analytics"),
+                i("bb66e3fc", "Promote Analytics"),
+                i("g512ddcc", "Organic Analytics"),
+                i("j9256524", "Breakdown of your boost performance"),
+                i("ceeb3016", "Breakdown of your promote performance"),
+                i("bf4558fa", "Breakdown of your organic performance"),
                 i("c69069e6", "Dami ng beses na nakita ang post na ito sa X"),
                 i("a0615bac", "Kabuuang dami ng beses na nakipag-interaksyon ang isang user sa isang post. Kabilang dito ang lahat ng pag-click saanman sa post (kabilang ang mga hashtag, link, avatar, username, at pag-expand sa post), mga pag-repost, pag-reply, pag-follow, at pag-like."),
                 i("d8abdaa4", "Mga bagong tagasunod"),
@@ -7405,8 +7415,9 @@
                 i("acc4cf12", "Dami ng mga profile view mula sa post na ito"),
                 i("c7d0d1c4", "Dami ng pag-click sa anumang URL sa post na ito"),
                 i("a4da7724", "Dami ng beses na tiningnan ng mga tao ang mga detalye tungkol sa post na ito"),
-                i("c5d4d3a8", "Cost per follow"),
-                i("f56e24f2", "Kabuuang gastos na hinati sa bilang ng mga follower, kasama ang mga kinita. Magbabayad ka lang kapag may taong nag-follow sa iyo"),
+                i("jedd2771", function (a) {
+                    return a.percentage + " from boost";
+                }),
                 i("g33fd6b1", function (a) {
                     return a.percentage + " mula sa promosyon";
                 }),
@@ -7414,6 +7425,7 @@
                     return a.percentage + " mula sa mga hindi tagasunod";
                 }),
                 i("h4cbba3e", "< 5%"),
+                i("f4f0094c", "< 5% from boost"),
                 i("h1cdac12", "< 5% mula sa promo"),
                 i("g884b2cc", "< 5% mula sa mga hindi follower"),
                 i("b32334a0", "Mga Naabot na Account"),
@@ -7781,7 +7793,6 @@
                     return "Welcome back, " + a.displayName;
                 }),
                 i("a76d58ba", "Analytics ng Ads"),
-                i("g512ddcc", "Organic Analytics"),
                 i("eccd0e1a", "Analytics ng Organisasyon"),
                 i("deea1708", "Gustong tingnan ang analytics sa lahat ng X account mo?"),
                 i("eb603ffc", "Mag-upgrade para i-affiliate ang network mo at tingnan ang pinagsama-samang analytics."),
@@ -7852,16 +7863,7 @@
                 i("ddfd6718", "Hindi Naproseso ang Pagbabayad"),
                 i("i90ea7d2", "Paki-update agad ang billing mo para mapanatili ang mga benepisyo mo."),
                 i("a62359e6", "Mga Setting ng Beripikadong Organisasyon"),
-                i("ge221b7c", "I-upgrade ang subscription sa Beripikadong Organisasyon para magkaroon ng access sa mga affiliate at iba pang ad credit. "),
-                i("i4dccc18", "Billing"),
-                i("ec3cd6e4", "Pamahalaan ang paraan mo ng pagbabayad, i-update ng impormasyon ng billing, at i-review ang mga invoice mo."),
-                i("dac61c3c", "Mga setting ng account"),
-                i("b6b5fd66", "Pamahalaan ang X account mo kasama ang pagpapalit ng username o password mo."),
-                i("hb9c4a1c", "Mga tanong, bug report, at feedback"),
-                i("c674f5b4", "I-set up ang mga pagbabayad ng invoice"),
-                i("i8237e66", "Lumipat mula sa mga pagbabayad gamit ang credit card papunta sa pag-invoice gamit ang mga bank transfer."),
-                i("hebd348a", "I-configure kung paano ginagamit ang ads sa pag-promote ng mga trabaho mula sa Hiring portal."),
-                i("ib5e6f90", "Pag-promote ng Trabaho");
+                i("ge221b7c", "I-upgrade ang subscription sa Beripikadong Organisasyon para magkaroon ng access sa mga affiliate at iba pang ad credit. ");
             function t(a, n) {
                 for (var g = 0; g < n.length; g++) {
                     var i = n[g];
@@ -7900,7 +7902,16 @@
                     o(a, n)
                 );
             }
-            i("id720215", "Hiring"),
+            i("i4dccc18", "Billing"),
+                i("ec3cd6e4", "Pamahalaan ang paraan mo ng pagbabayad, i-update ng impormasyon ng billing, at i-review ang mga invoice mo."),
+                i("dac61c3c", "Mga setting ng account"),
+                i("b6b5fd66", "Pamahalaan ang X account mo kasama ang pagpapalit ng username o password mo."),
+                i("hb9c4a1c", "Mga tanong, bug report, at feedback"),
+                i("c674f5b4", "I-set up ang mga pagbabayad ng invoice"),
+                i("i8237e66", "Lumipat mula sa mga pagbabayad gamit ang credit card papunta sa pag-invoice gamit ang mga bank transfer."),
+                i("hebd348a", "I-configure kung paano ginagamit ang ads sa pag-promote ng mga trabaho mula sa Hiring portal."),
+                i("ib5e6f90", "Pag-promote ng Trabaho"),
+                i("id720215", "Hiring"),
                 i("dd59f146", "Ad account para sa pag-promote ng trabaho"),
                 i("e7e36818", "Kuwalipikado ang mga ad account para sa pag-promote ng trabaho kapag ganap nang naka-set up ang mga ito na may mapagkukunan ng pondo."),
                 i("c28566e0", "Ad Account"),
@@ -8896,10 +8907,10 @@
                 }),
                 i("ae408b76", "Nag-repost ka"),
                 i("j355f008", "Naka-pin na post"),
-                i("habf9678", "Na-pin ng Author"),
-                i("db0798ed", function (a) {
-                    return "Paksang " + a.topicName;
-                }),
+                i("habf9678", "Na-pin ng Author");
+            i("db0798ed", function (a) {
+                return "Paksang " + a.topicName;
+            }),
                 i("dc716ec9", function (a) {
                     return "Inirerekomendang Paksa: " + a.topicName;
                 }),
@@ -8919,10 +8930,10 @@
                 }),
                 i("c889af33", function (a) {
                     return a.count + " sumali";
-                });
-            i("d6f2056f", function (a) {
-                return a.count + " nakatutok";
-            }),
+                }),
+                i("d6f2056f", function (a) {
+                    return a.count + " nakatutok";
+                }),
                 i("jbc5f47a", "Dock ng Spaces"),
                 i("gfe2830f", function (a) {
                     return a.count + " pa";
@@ -13218,4 +13229,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fil.50df46ca.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fil.7a3cbd2a.js.map

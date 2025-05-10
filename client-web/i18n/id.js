@@ -2975,7 +2975,8 @@
                 i("jadeb4da", "Harap langsung perbarui metode pembayaran Anda sebelum Anda kehilangan manfaat langganan."),
                 i("bce3726a", "Perbarui Penagihan"),
                 i("fce9ecce", "Video yang disarankan"),
-                i("dc954b88", "Coba pengalaman berita lebih lengkap"),
+                i("da00e00a", "Try the new News"),
+                i("c40666d8", "Try it"),
                 i("j66b95a2", "Berita Mendalam"),
                 i("b58d2bd2", "Postingan yang Relevan"),
                 i("efe6ef9e", "Lihat postingan"),
@@ -3881,9 +3882,9 @@
                 i("e3275464", "Kirim"),
                 i("cededf2a", "Host"),
                 i("i2caef48", "Co-host"),
-                i("j245c654", "Pembicara"),
-                i("eda23a02", "Pendengar");
-            i("b90eb348", "Undang untuk Berbicara"),
+                i("j245c654", "Pembicara");
+            i("eda23a02", "Pendengar"),
+                i("b90eb348", "Undang untuk Berbicara"),
                 i("d9a63e82", "Hapus sebagai Pembicara"),
                 i("bd917b26", "Undang untuk menjadi Co-host"),
                 i("d7357e7e", "Hapus sebagai Co-host"),
@@ -4919,9 +4920,9 @@
                 i("e41fffbc", "Total waktu tonton video Anda."),
                 i("if2909ba", "Waktu Tonton"),
                 i("i0e5bf4c", "Video Anda"),
-                i("ed99baea", "Akses Beta Lebih Awal"),
-                i("gf898b70", "Pencarian Lanjutan");
-            i("d2a43a7a", 'berisi "ai" dan "startup"'),
+                i("ed99baea", "Akses Beta Lebih Awal");
+            i("gf898b70", "Pencarian Lanjutan"),
+                i("d2a43a7a", 'berisi "ai" dan "startup"'),
                 i("a8584698", "startup ai"),
                 i("jb6f9292", 'berisi frasa yang sama persis dengan "startup ai"'),
                 i("j8ee77c4", '"startup ai"'),
@@ -5885,9 +5886,9 @@
                 i("i0ed3f4e", "Gambar peristiwa"),
                 i("cbae35fa", "Laporkan Siaran"),
                 i("fd12ab58", "Postingan koleksi"),
-                i("a226497c", "Buat Komunitas baru"),
-                i("d7346632", "Anda belum bergabung dengan Komunitas apa pun");
-            i("b732a4cc", "Jika sudah, Anda akan melihat postingannya di sini."),
+                i("a226497c", "Buat Komunitas baru");
+            i("d7346632", "Anda belum bergabung dengan Komunitas apa pun"),
+                i("b732a4cc", "Jika sudah, Anda akan melihat postingannya di sini."),
                 i("hff48914", "Tidak ada postingan yang dapat ditemukan saat ini."),
                 i("hb52cc4a", "Silakan coba lagi nanti."),
                 i("e50e1bb0", "Selamat datang di Komunitas"),
@@ -6677,6 +6678,7 @@
                 i("b2d41138", "Jangkauan lebih besar = penghasilan lebih besar"),
                 i("defa7f12", "Manfaatkan Pengutamaan Balasan, yang membuat Anda lebih menonjol dan dapat berkembang lebih cepat."),
                 i("i3e4955d", "di sini"),
+                i("fdc5d06c", "Exit Full Screen"),
                 i("cea1c00e", "Dapatkan akses untuk berinteraksi"),
                 i("f8e6a280", "Akun baru diharuskan membayar sedikit biaya tahunan sebelum dapat memposting, menyukai, memarkahi, dan membalas. Hal ini bertujuan untuk mengurangi spam dan menciptakan pengalaman yang lebih baik bagi semua orang. Anda masih dapat mengikuti akun dan menjelajahi X secara gratis."),
                 i("h968efc6", "Akun baru diharuskan membayar sedikit biaya sebelum dapat memposting, menyukai, memarkahi, dan membalas. Hal ini bertujuan untuk mengurangi spam dan menciptakan pengalaman yang lebih baik bagi semua orang. Anda masih dapat mengikuti akun dan menjelajahi X secara gratis."),
@@ -6882,10 +6884,10 @@
                 i("e0198956", "Dapatkan bagi hasil pendapatan dari engagement akun terverifikasi dengan konten yang Anda posting di X."),
                 i("iadf78e2", "Unduh Video"),
                 i("ee54c3de", "Simpan video langsung ke perangkat Anda"),
-                i("ae03594c", "Boost kecil pada balasan"),
-                i("e6bb08c0", "Tingkatkan visibilitas balasan Anda"),
-                i("bf2a6acc", "Pengutamaan Tinggi pada Balasan");
-            i("c2059276", "Boost balasan Anda."),
+                i("ae03594c", "Boost kecil pada balasan");
+            i("e6bb08c0", "Tingkatkan visibilitas balasan Anda"),
+                i("bf2a6acc", "Pengutamaan Tinggi pada Balasan"),
+                i("c2059276", "Boost balasan Anda."),
                 i("b023ec20", "Balasan yang Diutamakan Setinggi Mungkin"),
                 i("g337328e", "Dapatkan visibilitas tertinggi untuk balasan Anda."),
                 i("fa006202", "Pemutaran video latar belakang"),
@@ -7387,8 +7389,8 @@
                 i("a10aa36c", "Pusat Bantuan"),
                 i("d0740558", "Pusat Bantuan"),
                 i("d2d76dca", "Pusat Bantuan"),
-                i("b6414532", "Estimasi perincian orang-orang yang telah melihat postingan Anda"),
-                i("c61c6624", "Dipromosikan"),
+                i("de8bcdaa", "Breakdown of the people that have seen your post"),
+                i("cfa1ef16", "Boost"),
                 i("d267afa2", "Di bawah 20"),
                 i("db81cab0", "20-29"),
                 i("f173716e", "30-39"),
@@ -7397,6 +7399,14 @@
                 i("bcd9cf68", "Di atas 65"),
                 i("f05f1838", "Lainnya/Tidak ditentukan"),
                 i("fa5be588", "Organik"),
+                i("c65126fe", "Boosted"),
+                i("c61c6624", "Dipromosikan"),
+                i("f1196a04", "Boost Analytics"),
+                i("bb66e3fc", "Promote Analytics"),
+                i("g512ddcc", "Analitik Organik"),
+                i("j9256524", "Breakdown of your boost performance"),
+                i("ceeb3016", "Breakdown of your promote performance"),
+                i("bf4558fa", "Breakdown of your organic performance"),
                 i("c69069e6", "Berapa kali postingan ini dilihat di X"),
                 i("a0615bac", "Total berapa kali pengguna berinteraksi dengan postingan. Ini mencakup semua klik di mana saja pada postingan (termasuk hashtag, tautan, avatar, nama pengguna, dan perluasan postingan), posting ulang, balasan, mengikuti, dan suka."),
                 i("d8abdaa4", "Pengikut baru"),
@@ -7404,8 +7414,9 @@
                 i("acc4cf12", "Jumlah penayangan profil dari postingan ini"),
                 i("c7d0d1c4", "Jumlah klik URL apa pun dalam postingan ini"),
                 i("a4da7724", "Berapa kali orang melihat detail tentang postingan ini"),
-                i("c5d4d3a8", "Harga per pengikut"),
-                i("f56e24f2", "Total pembelanjaan dibagi jumlah pengikut, termasuk yang didapatkan. Anda hanya membayar ketika ada yang mengikuti Anda"),
+                i("jedd2771", function (a) {
+                    return a.percentage + " from boost";
+                }),
                 i("g33fd6b1", function (a) {
                     return a.percentage + " dari promosi";
                 }),
@@ -7413,6 +7424,7 @@
                     return a.percentage + " dari non pengikut";
                 }),
                 i("h4cbba3e", "< 5%"),
+                i("f4f0094c", "< 5% from boost"),
                 i("h1cdac12", "< 5% dari promosi"),
                 i("g884b2cc", "< 5% dari non pengikut"),
                 i("b32334a0", "Akun yang Dijangkau"),
@@ -7780,7 +7792,6 @@
                     return "Selamat datang, " + a.displayName;
                 }),
                 i("a76d58ba", "Analitik Iklan"),
-                i("g512ddcc", "Analitik Organik"),
                 i("eccd0e1a", "Analitik Organisasi"),
                 i("deea1708", "Ingin melihat analitik di semua akun X Anda?"),
                 i("eb603ffc", "Tingkatkan untuk mengafiliasikan jaringan Anda dan melihat analitik gabungan."),
@@ -7851,16 +7862,7 @@
                 i("ddfd6718", "Pembayaran Gagal"),
                 i("i90ea7d2", "Harap langsung perbarui penagihan Anda agar tidak kehilangan manfaat."),
                 i("a62359e6", "Pengaturan Organisasi Terverifikasi"),
-                i("ge221b7c", "Tingkatkan langganan Organisasi Terverifikasi untuk mendapatkan akses ke afiliasi dan lebih banyak kredit iklan."),
-                i("i4dccc18", "Penagihan"),
-                i("ec3cd6e4", "Kelola metode pembayaran Anda, perbarui informasi tagihan, dan tinjau faktur Anda."),
-                i("dac61c3c", "Pengaturan akun"),
-                i("b6b5fd66", "Kelola akun X Anda, termasuk mengubah nama pengguna atau kata sandi Anda."),
-                i("hb9c4a1c", "Pertanyaan, laporan bug, dan umpan balik"),
-                i("c674f5b4", "Siapkan pembayaran faktur"),
-                i("i8237e66", "Beralih dari pembayaran kartu kredit ke penagihan melalui transfer bank."),
-                i("hebd348a", "Konfigurasikan cara penggunaan iklan untuk mempromosikan lowongan kerja dari portal Hiring."),
-                i("ib5e6f90", "Promosi Lowongan Kerja");
+                i("ge221b7c", "Tingkatkan langganan Organisasi Terverifikasi untuk mendapatkan akses ke afiliasi dan lebih banyak kredit iklan.");
             function r(a, n) {
                 for (var e = 0; e < n.length; e++) {
                     var i = n[e];
@@ -7899,7 +7901,16 @@
                     d(a, n)
                 );
             }
-            i("id720215", "Hiring"),
+            i("i4dccc18", "Penagihan"),
+                i("ec3cd6e4", "Kelola metode pembayaran Anda, perbarui informasi tagihan, dan tinjau faktur Anda."),
+                i("dac61c3c", "Pengaturan akun"),
+                i("b6b5fd66", "Kelola akun X Anda, termasuk mengubah nama pengguna atau kata sandi Anda."),
+                i("hb9c4a1c", "Pertanyaan, laporan bug, dan umpan balik"),
+                i("c674f5b4", "Siapkan pembayaran faktur"),
+                i("i8237e66", "Beralih dari pembayaran kartu kredit ke penagihan melalui transfer bank."),
+                i("hebd348a", "Konfigurasikan cara penggunaan iklan untuk mempromosikan lowongan kerja dari portal Hiring."),
+                i("ib5e6f90", "Promosi Lowongan Kerja"),
+                i("id720215", "Hiring"),
                 i("dd59f146", "Akun iklan promosi lowongan kerja"),
                 i("e7e36818", "Akun iklan memenuhi syarat untuk mempromosikan lowongan kerja ketika sudah sepenuhnya menyiapkan sumber pendanaan."),
                 i("c28566e0", "Akun Iklan"),
@@ -8895,10 +8906,10 @@
                 }),
                 i("ae408b76", "Anda memposting ulang"),
                 i("j355f008", "Postingan tersemat"),
-                i("habf9678", "Disematkan oleh Penulis"),
-                i("db0798ed", function (a) {
-                    return "Topik " + a.topicName;
-                }),
+                i("habf9678", "Disematkan oleh Penulis");
+            i("db0798ed", function (a) {
+                return "Topik " + a.topicName;
+            }),
                 i("dc716ec9", function (a) {
                     return "Topik yang Direkomendasikan: " + a.topicName;
                 }),
@@ -8918,10 +8929,10 @@
                 }),
                 i("c889af33", function (a) {
                     return a.count + " bergabung";
-                });
-            i("d6f2056f", function (a) {
-                return a.count + " mendengarkan";
-            }),
+                }),
+                i("d6f2056f", function (a) {
+                    return a.count + " mendengarkan";
+                }),
                 i("jbc5f47a", "Sematan Spaces"),
                 i("gfe2830f", function (a) {
                     return a.count + " lainnya";
@@ -13204,4 +13215,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/id.6e75740a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/id.9f4e683a.js.map

@@ -2,8 +2,8 @@
 (self.webpackChunk_twitter_responsive_web = self.webpackChunk_twitter_responsive_web || []).push([
     ["shared~bundle.AccountAnalytics~ondemand.Verified-6107ac1a"],
     {
-        466818: (e, t, n) => {
-            n.d(t, { ZP: () => w });
+        466818: (t, e, n) => {
+            n.d(e, { ZP: () => w });
             var r = n(202784),
                 a = n(325686),
                 o = n(487552),
@@ -13,73 +13,73 @@
                 u = n(950822),
                 d = n(224162),
                 l = n(392237);
-            const h = r.forwardRef((e, t) => (0, u.Z)("select", { ...e, ref: t })),
-                g = (e) => (0, u.Z)("option", e);
-            let f = 1;
+            const h = r.forwardRef((t, e) => (0, u.Z)("select", { ...t, ref: e })),
+                f = (t) => (0, u.Z)("option", t);
+            let g = 1;
             class m extends r.PureComponent {
-                constructor(e) {
-                    super(e),
+                constructor(t) {
+                    super(t),
                         (this._selectRef = r.createRef()),
                         (this.state = { isFocused: !1 }),
-                        (this._handleChange = (e) => {
-                            const { onChange: t, withEmptyOption: n } = this.props,
-                                { selectedIndex: r, value: a } = e.target;
-                            t && t(a, r - (n ? 1 : 0));
+                        (this._handleChange = (t) => {
+                            const { onChange: e, withEmptyOption: n } = this.props,
+                                { selectedIndex: r, value: a } = t.target;
+                            e && e(a, r - (n ? 1 : 0));
                         }),
-                        (this._handleBlur = (e) => {
-                            const { onBlur: t } = this.props;
-                            this.setState({ isFocused: !1 }), t && t();
+                        (this._handleBlur = (t) => {
+                            const { onBlur: e } = this.props;
+                            this.setState({ isFocused: !1 }), e && e();
                         }),
-                        (this._handleFocus = (e) => {
-                            const { onFocus: t } = this.props;
-                            this.setState({ isFocused: !0 }), t && t();
+                        (this._handleFocus = (t) => {
+                            const { onFocus: e } = this.props;
+                            this.setState({ isFocused: !0 }), e && e();
                         }),
-                        (this._id = `SELECTOR_${f}`),
+                        (this._id = `SELECTOR_${g}`),
                         (this._errorID = `${this._id}_ERROR`),
                         (this._helperID = `${this._id}_HELP`),
                         (this._labelID = `${this._id}_LABEL`),
-                        (f += 1);
+                        (g += 1);
                 }
                 componentDidMount() {
                     this.props.autofocus && this._selectRef && this._selectRef.current && this._selectRef.current.focus();
                 }
                 render() {
-                    const { "aria-describedby": e, disabled: t, errorText: n, hasError: u, helperText: f, options: m, style: w, testID: b, value: x, withEmptyOption: y } = this.props,
+                    const { "aria-describedby": t, disabled: e, errorText: n, hasError: u, helperText: g, options: m, style: w, testID: b, value: x, withEmptyOption: y } = this.props,
                         { isFocused: E } = this.state,
                         T = c.ZP.getLanguage(),
                         M = void 0 === u ? !!n : u,
                         v = new Set();
-                    n && v.add(this._errorID), e && v.add(e), f && v.add(this._helperID);
-                    const P = v.size ? [...v].join(" ") : void 0;
+                    n && v.add(this._errorID), t && v.add(t), g && v.add(this._helperID);
+                    const _ = v.size ? [...v].join(" ") : void 0;
                     return r.createElement(
                         r.Fragment,
                         null,
-                        r.createElement(d.ZP.Consumer, null, ({ direction: e }) => {
-                            const c = "ja" === T ? l.default.theme.fontFamilies.japan : "rtl" === e || i.Z.isLocaleRTL(T) ? l.default.theme.fontFamilies.rtl : l.default.theme.fontFamilies.normal;
+                        r.createElement(d.ZP.Consumer, null, ({ direction: t }) => {
+                            const c = "ja" === T ? l.default.theme.fontFamilies.japan : "rtl" === t || i.Z.isLocaleRTL(T) ? l.default.theme.fontFamilies.rtl : l.default.theme.fontFamilies.normal;
                             return r.createElement(
                                 a.Z,
-                                { style: [s.Z.border, p.container, t && s.Z.disabled, E && s.Z.focusedBorderValid, M && s.Z.invalidBorderColor, E && M && s.Z.focusedBorderInvalid, w] },
+                                { style: [s.Z.border, p.container, e && s.Z.disabled, E && s.Z.focusedBorderValid, M && s.Z.invalidBorderColor, E && M && s.Z.focusedBorderInvalid, w] },
                                 this._renderLabel(),
                                 r.createElement(
                                     h,
-                                    { "aria-describedby": P, "aria-invalid": M, "aria-labelledby": this._labelID, disabled: t, id: this._id, onBlur: this._handleBlur, onChange: this._handleChange, onFocus: this._handleFocus, ref: this._selectRef, style: [p.select, { fontFamily: c }, t && s.Z.disabled], testID: b || "", value: x },
-                                    y ? r.createElement(g, { disabled: !0, style: p.option, value: "" }) : null,
-                                    m.map((e) => {
-                                        const { disabled: t, label: n, value: a } = e;
-                                        return r.createElement(g, { disabled: t, key: `${n}-${a}`, style: p.option, value: a }, n);
+                                    { "aria-describedby": _, "aria-invalid": M, "aria-labelledby": this._labelID, disabled: e, id: this._id, onBlur: this._handleBlur, onChange: this._handleChange, onFocus: this._handleFocus, ref: this._selectRef, style: [p.select, { fontFamily: c }, e && s.Z.disabled], testID: b || "", value: x },
+                                    y ? r.createElement(f, { disabled: !0, style: p.option, value: "" }) : null,
+                                    m.map((t) => {
+                                        const { disabled: e, label: n, value: a } = t;
+                                        return r.createElement(f, { disabled: e, key: `${n}-${a}`, style: p.option, value: a }, n);
                                     }),
                                 ),
                                 r.createElement(o.default, { style: [p.dropdownCaret, E && s.Z.validColor, !(!u && !n) && s.Z.invalidColor] }),
                             );
                         }),
-                        f ? this._renderHelperText() : null,
+                        g ? this._renderHelperText() : null,
                         M && n ? this._renderErrorText() : null,
                     );
                 }
                 _renderLabel() {
-                    const { errorText: e, hasError: t, label: n } = this.props,
+                    const { errorText: t, hasError: e, label: n } = this.props,
                         { isFocused: a } = this.state;
-                    return r.createElement(c.ZP, { color: t || e ? "red500" : a ? "primary" : "gray700", id: this._labelID, role: "label", style: p.label }, n);
+                    return r.createElement(c.ZP, { color: e || t ? "red500" : a ? "primary" : "gray700", id: this._labelID, role: "label", style: p.label }, n);
                 }
                 _renderHelperText() {
                     return r.createElement(a.Z, { "aria-live": "polite" }, r.createElement(c.ZP, { color: "gray700", id: this._helperID, style: p.helperText }, this.props.helperText));
@@ -89,11 +89,11 @@
                 }
             }
             m.defaultProps = { disabled: !1, autofocus: !1, withEmptyOption: !1 };
-            const p = l.default.create((e) => ({ container: { backgroundColor: e.colors.cellBackground }, dropdownCaret: { color: e.colors.gray700, height: "1.5em", pointerEvents: "none", position: "absolute", marginTop: "-0.75em", top: "50%", end: e.spaces.space12 }, label: { position: "absolute", fontSize: e.fontSizes.subtext2, paddingHorizontal: e.spaces.space8, paddingTop: e.spaces.space8, pointerEvents: "none", lineHeight: e.lineHeights.subtext2 }, option: { backgroundColor: e.colors.navigationBackground }, select: { appearance: "none", backgroundColor: "transparent", borderRadius: e.borderRadii.none, borderWidth: e.borderWidths.none, color: e.colors.text, cursor: "pointer", fontSize: e.fontSizes.headline2, lineHeight: e.lineHeights.headline2, margin: 0, marginTop: e.spaces.space16, outlineStyle: "none", padding: 0, paddingTop: e.spaces.space12, paddingBottom: e.spaces.space8, paddingHorizontal: e.spaces.space8 }, helperText: { fontSize: e.fontSizes.subtext2, paddingHorizontal: e.spaces.space8, paddingTop: e.spaces.space2 } })),
+            const p = l.default.create((t) => ({ container: { backgroundColor: t.colors.cellBackground }, dropdownCaret: { color: t.colors.gray700, height: "1.5em", pointerEvents: "none", position: "absolute", marginTop: "-0.75em", top: "50%", end: t.spaces.space12 }, label: { position: "absolute", fontSize: t.fontSizes.subtext2, paddingHorizontal: t.spaces.space8, paddingTop: t.spaces.space8, pointerEvents: "none", lineHeight: t.lineHeights.subtext2 }, option: { backgroundColor: t.colors.navigationBackground }, select: { appearance: "none", backgroundColor: "transparent", borderRadius: t.borderRadii.none, borderWidth: t.borderWidths.none, color: t.colors.text, cursor: "pointer", fontSize: t.fontSizes.headline2, lineHeight: t.lineHeights.headline2, margin: 0, marginTop: t.spaces.space16, outlineStyle: "none", padding: 0, paddingTop: t.spaces.space12, paddingBottom: t.spaces.space8, paddingHorizontal: t.spaces.space8 }, helperText: { fontSize: t.fontSizes.subtext2, paddingHorizontal: t.spaces.space8, paddingTop: t.spaces.space2 } })),
                 w = m;
         },
-        280278: (e, t, n) => {
-            n.d(t, { ZP: () => m });
+        280278: (t, e, n) => {
+            n.d(e, { ZP: () => m });
             var r = n(202784),
                 a = n(325686),
                 o = n(827515),
@@ -102,22 +102,22 @@
                 c = n(392237);
             const u = "up",
                 d = "down",
-                l = (e, t, n) => {
+                l = (t, e, n) => {
                     n((n) => {
-                        const r = (0, o.Z)(e) ? (e > (n.count || 0) ? u : d) : u;
-                        return { ...n, count: e, oldText: n.text, pendingCount: null, pendingText: null, text: t, transitionDirection: r };
+                        const r = (0, o.Z)(t) ? (t > (n.count || 0) ? u : d) : u;
+                        return { ...n, count: t, oldText: n.text, pendingCount: null, pendingText: null, text: e, transitionDirection: r };
                     });
                 },
                 h = {};
-            [u, d].forEach((e) => {
-                const t = "0.3s";
-                h[e] = { active: { transitionProperty: "transform", transitionDuration: t, transform: "translate3d(0, 0, 0)" }, pre: { transform: `translate3d(0, ${e === u ? "100%" : "-100%"}, 0)` }, post: { transform: `translate3d(0, ${e === u ? "-100%" : "100%"}, 0)`, transitionProperty: "transform", transitionDuration: t } };
+            [u, d].forEach((t) => {
+                const e = "0.3s";
+                h[t] = { active: { transitionProperty: "transform", transitionDuration: e, transform: "translate3d(0, 0, 0)" }, pre: { transform: `translate3d(0, ${t === u ? "100%" : "-100%"}, 0)` }, post: { transform: `translate3d(0, ${t === u ? "-100%" : "100%"}, 0)`, transitionProperty: "transform", transitionDuration: e } };
             });
-            const g = { position: "absolute" },
-                f = c.default.create({ root: { overflow: "hidden" } }),
-                m = (e) => {
-                    const { children: t, containerStyle: n, count: c, ...d } = e,
-                        [m, p] = r.useState({ animating: !1, count: e.count, pendingCount: null, text: e.children, oldText: null, pendingText: null, transitionDirection: u }),
+            const f = { position: "absolute" },
+                g = c.default.create({ root: { overflow: "hidden" } }),
+                m = (t) => {
+                    const { children: e, containerStyle: n, count: c, ...d } = t,
+                        [m, p] = r.useState({ animating: !1, count: t.count, pendingCount: null, text: t.children, oldText: null, pendingText: null, transitionDirection: u }),
                         w = r.useRef(!1);
                     return (
                         r.useEffect(
@@ -131,39 +131,39 @@
                         ),
                         r.useEffect(() => {
                             if (w.current)
-                                if (i.Z.reducedMotionEnabled) p((n) => ({ ...n, oldText: null, text: t, pendingText: null, pendingCount: null, count: e.count }));
-                                else if (t !== m.pendingText) {
-                                    t === m.text || ((0, o.Z)(e.count) && m.count === e.count) ? p((e) => ({ ...e, pendingCount: null, pendingText: null })) : (p((n) => ({ ...n, pendingCount: e.count, pendingText: t })), m.animating || l(e.count, t, p));
+                                if (i.Z.reducedMotionEnabled) p((n) => ({ ...n, oldText: null, text: e, pendingText: null, pendingCount: null, count: t.count }));
+                                else if (e !== m.pendingText) {
+                                    e === m.text || ((0, o.Z)(t.count) && m.count === t.count) ? p((t) => ({ ...t, pendingCount: null, pendingText: null })) : (p((n) => ({ ...n, pendingCount: t.count, pendingText: e })), m.animating || l(t.count, e, p));
                                 }
-                        }, [t]),
+                        }, [e]),
                         r.useEffect(() => {
                             w.current &&
                                 !1 === m.animating &&
                                 (m.oldText
                                     ? window.requestAnimationFrame(() =>
                                           window.requestAnimationFrame(() => {
-                                              w.current && p((e) => ({ ...e, animating: !0 }));
+                                              w.current && p((t) => ({ ...t, animating: !0 }));
                                           }),
                                       )
                                     : m.pendingText && l(m.pendingCount, m.pendingText, p));
                         }, [m.animating, m.oldText]),
                         r.useMemo(() => {
-                            const e = h[m.transitionDirection],
-                                t = m.oldText && !i.Z.reducedMotionEnabled,
+                            const t = h[m.transitionDirection],
+                                e = m.oldText && !i.Z.reducedMotionEnabled,
                                 o = !m.animating && m.oldText && !i.Z.reducedMotionEnabled,
-                                c = { ...g, ...(m.animating ? e.post : e.active) },
-                                u = { ...(o ? e.pre : e.active) };
+                                c = { ...f, ...(m.animating ? t.post : t.active) },
+                                u = { ...(o ? t.pre : t.active) };
                             return r.createElement(
                                 a.Z,
-                                { style: [f.root, n] },
-                                t ? r.createElement("span", { style: c }, r.createElement(s.ZP, d, m.oldText)) : null,
+                                { style: [g.root, n] },
+                                e ? r.createElement("span", { style: c }, r.createElement(s.ZP, d, m.oldText)) : null,
                                 r.createElement(
                                     "span",
                                     {
                                         "data-testid": "app-text-transition-container",
                                         onTransitionEnd: () =>
-                                            ((e, t) => {
-                                                e && t((e) => ({ ...e, animating: !1, oldText: null }));
+                                            ((t, e) => {
+                                                t && e((t) => ({ ...t, animating: !1, oldText: null }));
                                             })(w.current, p),
                                         style: u,
                                     },
@@ -174,74 +174,37 @@
                     );
                 };
         },
-        98538: (e, t, n) => {
-            n.d(t, { Z: () => g });
-            var r = n(202784),
-                a = n(325686),
-                o = n(731708),
-                i = n(891198),
-                s = n(280278),
-                c = n(392237);
-            const u = "subtext1",
-                d = r.createContext({ onMedia: !1 });
-            class l extends r.Component {
-                constructor(...e) {
-                    super(...e),
-                        (this._getHoverLabel = () => {
-                            const { count: e } = this.props;
-                            if (!e) return;
-                            return (0, i.Gb)(e) !== (0, i.wl)(e) ? { label: (0, i.Gb)(e) } : void 0;
-                        });
-                }
-                render() {
-                    const { children: e, link: t, onMedia: n, onPress: a } = this.props;
-                    return r.createElement(o.ZP, { color: n ? "white" : "text", hoverLabel: this._getHoverLabel(), link: t, onClick: a }, r.createElement(d.Provider, { value: { onMedia: n } }, e));
-                }
-            }
-            (l.Group = (e) =>
-                r.createElement(
-                    a.Z,
-                    { style: [h.row, e.style] },
-                    r.Children.toArray(e.children)
-                        .filter(Boolean)
-                        .map((e, t, n) => r.createElement(a.Z, { key: t, style: t < n.length - 1 && h.groupItemNonLast }, e)),
-                )),
-                (l.Label = ({ children: e, style: t }) => r.createElement(d.Consumer, null, ({ onMedia: n }) => r.createElement(o.ZP, { children: e, color: n ? "white" : "gray700", size: u, style: t }))),
-                (l.Value = ({ animated: e, children: t, count: n, style: a, weight: i = "bold" }) => r.createElement(d.Consumer, null, ({ onMedia: c }) => (e ? r.createElement(s.ZP, { children: t, count: n, size: u, style: a, weight: i }) : r.createElement(o.ZP, { children: t, color: c ? "white" : "text", size: u, style: a, weight: i }))));
-            const h = c.default.create((e) => ({ row: { flexDirection: "row", flexWrap: "wrap", flex: 1 }, groupItemNonLast: { marginEnd: e.spaces.space20 } })),
-                g = l;
-        },
-        803066: (e, t, n) => {
-            n.d(t, { j: () => a });
+        803066: (t, e, n) => {
+            n.d(e, { j: () => a });
             let r = {};
             function a() {
                 return r;
             }
         },
-        674921: (e, t, n) => {
-            n.d(t, { $: () => p });
+        674921: (t, e, n) => {
+            n.d(e, { $: () => p });
             var r = n(898513),
                 a = n(525668),
                 o = n(499449),
                 i = n(480415),
                 s = n(793361);
-            function c(e, t) {
-                return (e < 0 ? "-" : "") + Math.abs(e).toString().padStart(t, "0");
+            function c(t, e) {
+                return (t < 0 ? "-" : "") + Math.abs(t).toString().padStart(e, "0");
             }
             const u = {
-                    y(e, t) {
-                        const n = e.getFullYear(),
+                    y(t, e) {
+                        const n = t.getFullYear(),
                             r = n > 0 ? n : 1 - n;
-                        return c("yy" === t ? r % 100 : r, t.length);
+                        return c("yy" === e ? r % 100 : r, e.length);
                     },
-                    M(e, t) {
-                        const n = e.getMonth();
-                        return "M" === t ? String(n + 1) : c(n + 1, 2);
+                    M(t, e) {
+                        const n = t.getMonth();
+                        return "M" === e ? String(n + 1) : c(n + 1, 2);
                     },
-                    d: (e, t) => c(e.getDate(), t.length),
-                    a(e, t) {
-                        const n = e.getHours() / 12 >= 1 ? "pm" : "am";
-                        switch (t) {
+                    d: (t, e) => c(t.getDate(), e.length),
+                    a(t, e) {
+                        const n = t.getHours() / 12 >= 1 ? "pm" : "am";
+                        switch (e) {
                             case "a":
                             case "aa":
                                 return n.toUpperCase();
@@ -253,26 +216,26 @@
                                 return "am" === n ? "a.m." : "p.m.";
                         }
                     },
-                    h: (e, t) => c(e.getHours() % 12 || 12, t.length),
-                    H: (e, t) => c(e.getHours(), t.length),
-                    m: (e, t) => c(e.getMinutes(), t.length),
-                    s: (e, t) => c(e.getSeconds(), t.length),
-                    S(e, t) {
-                        const n = t.length,
-                            r = e.getMilliseconds();
-                        return c(Math.trunc(r * Math.pow(10, n - 3)), t.length);
+                    h: (t, e) => c(t.getHours() % 12 || 12, e.length),
+                    H: (t, e) => c(t.getHours(), e.length),
+                    m: (t, e) => c(t.getMinutes(), e.length),
+                    s: (t, e) => c(t.getSeconds(), e.length),
+                    S(t, e) {
+                        const n = e.length,
+                            r = t.getMilliseconds();
+                        return c(Math.trunc(r * Math.pow(10, n - 3)), e.length);
                     },
                 },
                 d = "midnight",
                 l = "noon",
                 h = "morning",
-                g = "afternoon",
-                f = "evening",
+                f = "afternoon",
+                g = "evening",
                 m = "night",
                 p = {
-                    G: function (e, t, n) {
-                        const r = e.getFullYear() > 0 ? 1 : 0;
-                        switch (t) {
+                    G: function (t, e, n) {
+                        const r = t.getFullYear() > 0 ? 1 : 0;
+                        switch (e) {
                             case "G":
                             case "GG":
                             case "GGG":
@@ -283,31 +246,31 @@
                                 return n.era(r, { width: "wide" });
                         }
                     },
-                    y: function (e, t, n) {
-                        if ("yo" === t) {
-                            const t = e.getFullYear(),
-                                r = t > 0 ? t : 1 - t;
+                    y: function (t, e, n) {
+                        if ("yo" === e) {
+                            const e = t.getFullYear(),
+                                r = e > 0 ? e : 1 - e;
                             return n.ordinalNumber(r, { unit: "year" });
                         }
-                        return u.y(e, t);
+                        return u.y(t, e);
                     },
-                    Y: function (e, t, n, r) {
-                        const a = (0, s.c)(e, r),
+                    Y: function (t, e, n, r) {
+                        const a = (0, s.c)(t, r),
                             o = a > 0 ? a : 1 - a;
-                        if ("YY" === t) {
+                        if ("YY" === e) {
                             return c(o % 100, 2);
                         }
-                        return "Yo" === t ? n.ordinalNumber(o, { unit: "year" }) : c(o, t.length);
+                        return "Yo" === e ? n.ordinalNumber(o, { unit: "year" }) : c(o, e.length);
                     },
-                    R: function (e, t) {
-                        return c((0, o.L)(e), t.length);
+                    R: function (t, e) {
+                        return c((0, o.L)(t), e.length);
                     },
-                    u: function (e, t) {
-                        return c(e.getFullYear(), t.length);
+                    u: function (t, e) {
+                        return c(t.getFullYear(), e.length);
                     },
-                    Q: function (e, t, n) {
-                        const r = Math.ceil((e.getMonth() + 1) / 3);
-                        switch (t) {
+                    Q: function (t, e, n) {
+                        const r = Math.ceil((t.getMonth() + 1) / 3);
+                        switch (e) {
                             case "Q":
                                 return String(r);
                             case "QQ":
@@ -322,9 +285,9 @@
                                 return n.quarter(r, { width: "wide", context: "formatting" });
                         }
                     },
-                    q: function (e, t, n) {
-                        const r = Math.ceil((e.getMonth() + 1) / 3);
-                        switch (t) {
+                    q: function (t, e, n) {
+                        const r = Math.ceil((t.getMonth() + 1) / 3);
+                        switch (e) {
                             case "q":
                                 return String(r);
                             case "qq":
@@ -339,12 +302,12 @@
                                 return n.quarter(r, { width: "wide", context: "standalone" });
                         }
                     },
-                    M: function (e, t, n) {
-                        const r = e.getMonth();
-                        switch (t) {
+                    M: function (t, e, n) {
+                        const r = t.getMonth();
+                        switch (e) {
                             case "M":
                             case "MM":
-                                return u.M(e, t);
+                                return u.M(t, e);
                             case "Mo":
                                 return n.ordinalNumber(r + 1, { unit: "month" });
                             case "MMM":
@@ -355,9 +318,9 @@
                                 return n.month(r, { width: "wide", context: "formatting" });
                         }
                     },
-                    L: function (e, t, n) {
-                        const r = e.getMonth();
-                        switch (t) {
+                    L: function (t, e, n) {
+                        const r = t.getMonth();
+                        switch (e) {
                             case "L":
                                 return String(r + 1);
                             case "LL":
@@ -372,24 +335,24 @@
                                 return n.month(r, { width: "wide", context: "standalone" });
                         }
                     },
-                    w: function (e, t, n, r) {
-                        const a = (0, i.Q)(e, r);
-                        return "wo" === t ? n.ordinalNumber(a, { unit: "week" }) : c(a, t.length);
+                    w: function (t, e, n, r) {
+                        const a = (0, i.Q)(t, r);
+                        return "wo" === e ? n.ordinalNumber(a, { unit: "week" }) : c(a, e.length);
                     },
-                    I: function (e, t, n) {
-                        const r = (0, a.l)(e);
-                        return "Io" === t ? n.ordinalNumber(r, { unit: "week" }) : c(r, t.length);
+                    I: function (t, e, n) {
+                        const r = (0, a.l)(t);
+                        return "Io" === e ? n.ordinalNumber(r, { unit: "week" }) : c(r, e.length);
                     },
-                    d: function (e, t, n) {
-                        return "do" === t ? n.ordinalNumber(e.getDate(), { unit: "date" }) : u.d(e, t);
+                    d: function (t, e, n) {
+                        return "do" === e ? n.ordinalNumber(t.getDate(), { unit: "date" }) : u.d(t, e);
                     },
-                    D: function (e, t, n) {
-                        const a = (0, r.B)(e);
-                        return "Do" === t ? n.ordinalNumber(a, { unit: "dayOfYear" }) : c(a, t.length);
+                    D: function (t, e, n) {
+                        const a = (0, r.B)(t);
+                        return "Do" === e ? n.ordinalNumber(a, { unit: "dayOfYear" }) : c(a, e.length);
                     },
-                    E: function (e, t, n) {
-                        const r = e.getDay();
-                        switch (t) {
+                    E: function (t, e, n) {
+                        const r = t.getDay();
+                        switch (e) {
                             case "E":
                             case "EE":
                             case "EEE":
@@ -402,10 +365,10 @@
                                 return n.day(r, { width: "wide", context: "formatting" });
                         }
                     },
-                    e: function (e, t, n, r) {
-                        const a = e.getDay(),
+                    e: function (t, e, n, r) {
+                        const a = t.getDay(),
                             o = (a - r.weekStartsOn + 8) % 7 || 7;
-                        switch (t) {
+                        switch (e) {
                             case "e":
                                 return String(o);
                             case "ee":
@@ -422,14 +385,14 @@
                                 return n.day(a, { width: "wide", context: "formatting" });
                         }
                     },
-                    c: function (e, t, n, r) {
-                        const a = e.getDay(),
+                    c: function (t, e, n, r) {
+                        const a = t.getDay(),
                             o = (a - r.weekStartsOn + 8) % 7 || 7;
-                        switch (t) {
+                        switch (e) {
                             case "c":
                                 return String(o);
                             case "cc":
-                                return c(o, t.length);
+                                return c(o, e.length);
                             case "co":
                                 return n.ordinalNumber(o, { unit: "day" });
                             case "ccc":
@@ -442,14 +405,14 @@
                                 return n.day(a, { width: "wide", context: "standalone" });
                         }
                     },
-                    i: function (e, t, n) {
-                        const r = e.getDay(),
+                    i: function (t, e, n) {
+                        const r = t.getDay(),
                             a = 0 === r ? 7 : r;
-                        switch (t) {
+                        switch (e) {
                             case "i":
                                 return String(a);
                             case "ii":
-                                return c(a, t.length);
+                                return c(a, e.length);
                             case "io":
                                 return n.ordinalNumber(a, { unit: "day" });
                             case "iii":
@@ -462,9 +425,9 @@
                                 return n.day(r, { width: "wide", context: "formatting" });
                         }
                     },
-                    a: function (e, t, n) {
-                        const r = e.getHours() / 12 >= 1 ? "pm" : "am";
-                        switch (t) {
+                    a: function (t, e, n) {
+                        const r = t.getHours() / 12 >= 1 ? "pm" : "am";
+                        switch (e) {
                             case "a":
                             case "aa":
                                 return n.dayPeriod(r, { width: "abbreviated", context: "formatting" });
@@ -476,10 +439,10 @@
                                 return n.dayPeriod(r, { width: "wide", context: "formatting" });
                         }
                     },
-                    b: function (e, t, n) {
-                        const r = e.getHours();
+                    b: function (t, e, n) {
+                        const r = t.getHours();
                         let a;
-                        switch (((a = 12 === r ? l : 0 === r ? d : r / 12 >= 1 ? "pm" : "am"), t)) {
+                        switch (((a = 12 === r ? l : 0 === r ? d : r / 12 >= 1 ? "pm" : "am"), e)) {
                             case "b":
                             case "bb":
                                 return n.dayPeriod(a, { width: "abbreviated", context: "formatting" });
@@ -491,10 +454,10 @@
                                 return n.dayPeriod(a, { width: "wide", context: "formatting" });
                         }
                     },
-                    B: function (e, t, n) {
-                        const r = e.getHours();
+                    B: function (t, e, n) {
+                        const r = t.getHours();
                         let a;
-                        switch (((a = r >= 17 ? f : r >= 12 ? g : r >= 4 ? h : m), t)) {
+                        switch (((a = r >= 17 ? g : r >= 12 ? f : r >= 4 ? h : m), e)) {
                             case "B":
                             case "BB":
                             case "BBB":
@@ -505,37 +468,37 @@
                                 return n.dayPeriod(a, { width: "wide", context: "formatting" });
                         }
                     },
-                    h: function (e, t, n) {
-                        if ("ho" === t) {
-                            let t = e.getHours() % 12;
-                            return 0 === t && (t = 12), n.ordinalNumber(t, { unit: "hour" });
+                    h: function (t, e, n) {
+                        if ("ho" === e) {
+                            let e = t.getHours() % 12;
+                            return 0 === e && (e = 12), n.ordinalNumber(e, { unit: "hour" });
                         }
-                        return u.h(e, t);
+                        return u.h(t, e);
                     },
-                    H: function (e, t, n) {
-                        return "Ho" === t ? n.ordinalNumber(e.getHours(), { unit: "hour" }) : u.H(e, t);
+                    H: function (t, e, n) {
+                        return "Ho" === e ? n.ordinalNumber(t.getHours(), { unit: "hour" }) : u.H(t, e);
                     },
-                    K: function (e, t, n) {
-                        const r = e.getHours() % 12;
-                        return "Ko" === t ? n.ordinalNumber(r, { unit: "hour" }) : c(r, t.length);
+                    K: function (t, e, n) {
+                        const r = t.getHours() % 12;
+                        return "Ko" === e ? n.ordinalNumber(r, { unit: "hour" }) : c(r, e.length);
                     },
-                    k: function (e, t, n) {
-                        let r = e.getHours();
-                        return 0 === r && (r = 24), "ko" === t ? n.ordinalNumber(r, { unit: "hour" }) : c(r, t.length);
+                    k: function (t, e, n) {
+                        let r = t.getHours();
+                        return 0 === r && (r = 24), "ko" === e ? n.ordinalNumber(r, { unit: "hour" }) : c(r, e.length);
                     },
-                    m: function (e, t, n) {
-                        return "mo" === t ? n.ordinalNumber(e.getMinutes(), { unit: "minute" }) : u.m(e, t);
+                    m: function (t, e, n) {
+                        return "mo" === e ? n.ordinalNumber(t.getMinutes(), { unit: "minute" }) : u.m(t, e);
                     },
-                    s: function (e, t, n) {
-                        return "so" === t ? n.ordinalNumber(e.getSeconds(), { unit: "second" }) : u.s(e, t);
+                    s: function (t, e, n) {
+                        return "so" === e ? n.ordinalNumber(t.getSeconds(), { unit: "second" }) : u.s(t, e);
                     },
-                    S: function (e, t) {
-                        return u.S(e, t);
+                    S: function (t, e) {
+                        return u.S(t, e);
                     },
-                    X: function (e, t, n) {
-                        const r = e.getTimezoneOffset();
+                    X: function (t, e, n) {
+                        const r = t.getTimezoneOffset();
                         if (0 === r) return "Z";
-                        switch (t) {
+                        switch (e) {
                             case "X":
                                 return b(r);
                             case "XXXX":
@@ -545,9 +508,9 @@
                                 return x(r, ":");
                         }
                     },
-                    x: function (e, t, n) {
-                        const r = e.getTimezoneOffset();
-                        switch (t) {
+                    x: function (t, e, n) {
+                        const r = t.getTimezoneOffset();
+                        switch (e) {
                             case "x":
                                 return b(r);
                             case "xxxx":
@@ -557,9 +520,9 @@
                                 return x(r, ":");
                         }
                     },
-                    O: function (e, t, n) {
-                        const r = e.getTimezoneOffset();
-                        switch (t) {
+                    O: function (t, e, n) {
+                        const r = t.getTimezoneOffset();
+                        switch (e) {
                             case "O":
                             case "OO":
                             case "OOO":
@@ -568,9 +531,9 @@
                                 return "GMT" + x(r, ":");
                         }
                     },
-                    z: function (e, t, n) {
-                        const r = e.getTimezoneOffset();
-                        switch (t) {
+                    z: function (t, e, n) {
+                        const r = t.getTimezoneOffset();
+                        switch (e) {
                             case "z":
                             case "zz":
                             case "zzz":
@@ -579,111 +542,111 @@
                                 return "GMT" + x(r, ":");
                         }
                     },
-                    t: function (e, t, n) {
-                        return c(Math.trunc(e.getTime() / 1e3), t.length);
+                    t: function (t, e, n) {
+                        return c(Math.trunc(t.getTime() / 1e3), e.length);
                     },
-                    T: function (e, t, n) {
-                        return c(e.getTime(), t.length);
+                    T: function (t, e, n) {
+                        return c(t.getTime(), e.length);
                     },
                 };
-            function w(e, t = "") {
-                const n = e > 0 ? "-" : "+",
-                    r = Math.abs(e),
+            function w(t, e = "") {
+                const n = t > 0 ? "-" : "+",
+                    r = Math.abs(t),
                     a = Math.trunc(r / 60),
                     o = r % 60;
-                return 0 === o ? n + String(a) : n + String(a) + t + c(o, 2);
+                return 0 === o ? n + String(a) : n + String(a) + e + c(o, 2);
             }
-            function b(e, t) {
-                if (e % 60 == 0) {
-                    return (e > 0 ? "-" : "+") + c(Math.abs(e) / 60, 2);
+            function b(t, e) {
+                if (t % 60 == 0) {
+                    return (t > 0 ? "-" : "+") + c(Math.abs(t) / 60, 2);
                 }
-                return x(e, t);
+                return x(t, e);
             }
-            function x(e, t = "") {
-                const n = e > 0 ? "-" : "+",
-                    r = Math.abs(e);
-                return n + c(Math.trunc(r / 60), 2) + t + c(r % 60, 2);
+            function x(t, e = "") {
+                const n = t > 0 ? "-" : "+",
+                    r = Math.abs(t);
+                return n + c(Math.trunc(r / 60), 2) + e + c(r % 60, 2);
             }
         },
-        16468: (e, t, n) => {
-            n.d(t, { G: () => o });
-            const r = (e, t) => {
-                    switch (e) {
+        16468: (t, e, n) => {
+            n.d(e, { G: () => o });
+            const r = (t, e) => {
+                    switch (t) {
                         case "P":
-                            return t.date({ width: "short" });
+                            return e.date({ width: "short" });
                         case "PP":
-                            return t.date({ width: "medium" });
+                            return e.date({ width: "medium" });
                         case "PPP":
-                            return t.date({ width: "long" });
+                            return e.date({ width: "long" });
                         default:
-                            return t.date({ width: "full" });
+                            return e.date({ width: "full" });
                     }
                 },
-                a = (e, t) => {
-                    switch (e) {
+                a = (t, e) => {
+                    switch (t) {
                         case "p":
-                            return t.time({ width: "short" });
+                            return e.time({ width: "short" });
                         case "pp":
-                            return t.time({ width: "medium" });
+                            return e.time({ width: "medium" });
                         case "ppp":
-                            return t.time({ width: "long" });
+                            return e.time({ width: "long" });
                         default:
-                            return t.time({ width: "full" });
+                            return e.time({ width: "full" });
                     }
                 },
                 o = {
                     p: a,
-                    P: (e, t) => {
-                        const n = e.match(/(P+)(p+)?/) || [],
+                    P: (t, e) => {
+                        const n = t.match(/(P+)(p+)?/) || [],
                             o = n[1],
                             i = n[2];
-                        if (!i) return r(e, t);
+                        if (!i) return r(t, e);
                         let s;
                         switch (o) {
                             case "P":
-                                s = t.dateTime({ width: "short" });
+                                s = e.dateTime({ width: "short" });
                                 break;
                             case "PP":
-                                s = t.dateTime({ width: "medium" });
+                                s = e.dateTime({ width: "medium" });
                                 break;
                             case "PPP":
-                                s = t.dateTime({ width: "long" });
+                                s = e.dateTime({ width: "long" });
                                 break;
                             default:
-                                s = t.dateTime({ width: "full" });
+                                s = e.dateTime({ width: "full" });
                         }
-                        return s.replace("{{date}}", r(o, t)).replace("{{time}}", a(i, t));
+                        return s.replace("{{date}}", r(o, e)).replace("{{time}}", a(i, e));
                     },
                 };
         },
-        537796: (e, t, n) => {
-            n.d(t, { D: () => a });
+        537796: (t, e, n) => {
+            n.d(e, { D: () => a });
             var r = n(150729);
-            function a(e) {
-                const t = (0, r.Q)(e),
-                    n = new Date(Date.UTC(t.getFullYear(), t.getMonth(), t.getDate(), t.getHours(), t.getMinutes(), t.getSeconds(), t.getMilliseconds()));
-                return n.setUTCFullYear(t.getFullYear()), +e - +n;
+            function a(t) {
+                const e = (0, r.Q)(t),
+                    n = new Date(Date.UTC(e.getFullYear(), e.getMonth(), e.getDate(), e.getHours(), e.getMinutes(), e.getSeconds(), e.getMilliseconds()));
+                return n.setUTCFullYear(e.getFullYear()), +t - +n;
             }
         },
-        398308: (e, t, n) => {
-            n.d(t, { DD: () => c, Do: () => s, Iu: () => i });
+        398308: (t, e, n) => {
+            n.d(e, { DD: () => c, Do: () => s, Iu: () => i });
             const r = /^D+$/,
                 a = /^Y+$/,
                 o = ["D", "DD", "YY", "YYYY"];
-            function i(e) {
-                return r.test(e);
+            function i(t) {
+                return r.test(t);
             }
-            function s(e) {
-                return a.test(e);
+            function s(t) {
+                return a.test(t);
             }
-            function c(e, t, n) {
-                const r = (function (e, t, n) {
-                    const r = "Y" === e[0] ? "years" : "days of the month";
-                    return `Use \`${e.toLowerCase()}\` instead of \`${e}\` (in \`${t}\`) for formatting ${r} to the input \`${n}\`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md`;
-                })(e, t, n);
-                if (o.includes(e)) throw new RangeError(r);
+            function c(t, e, n) {
+                const r = (function (t, e, n) {
+                    const r = "Y" === t[0] ? "years" : "days of the month";
+                    return `Use \`${t.toLowerCase()}\` instead of \`${t}\` (in \`${e}\`) for formatting ${r} to the input \`${n}\`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md`;
+                })(t, e, n);
+                if (o.includes(t)) throw new RangeError(r);
             }
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AccountAnalytics~ondemand.Verified-6107ac1a.3835b30a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.AccountAnalytics~ondemand.Verified-6107ac1a.c4a8e77a.js.map

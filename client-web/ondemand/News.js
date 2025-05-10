@@ -20,7 +20,7 @@
                 y = a(252680),
                 f = a(899667);
             const w = g().b08821f4,
-                _ = g().d227d19e,
+                _ = g().fdc5d06c,
                 b = g().ic61c5fc,
                 v = "News",
                 k = "beta";
@@ -49,7 +49,7 @@
                         hoverLabel: { label: s ? w : _ },
                         icon: s ? n.createElement(h.default, { style: [x.icon, a ? x.compactIcon : void 0] }) : n.createElement(y.default, { style: [x.icon, a ? x.compactIcon : void 0] }),
                         onClick: () => {
-                            s ? (e.length > 1 ? e.goBack() : e.push("/i/news")) : e.push("/explore/tabs/news");
+                            e.length > 1 ? e.goBack() : s ? e.push("/i/news") : e.push("/explore/tabs/news");
                         },
                     }),
                     n.createElement(i.Z, { style: x.header }, n.createElement(u.ZP, { style: x.headerText, weight: "bold" }, v), n.createElement(i.Z, { style: x.betaLabel }, n.createElement(u.ZP, { style: x.betaLabelText, weight: "medium" }, k))),
@@ -386,7 +386,7 @@
                         n.createElement(u.Z, {
                             article: e,
                             containerStyle: [L.article],
-                            headerImgStyle: L.articleHeaderImg,
+                            headerImgContainerStyle: L.articleHeaderImg,
                             hideSummary: !0,
                             key: `small-article-${e.id}`,
                             onClick: () => {
@@ -421,7 +421,7 @@
                             n.createElement(u.Z, {
                                 article: e,
                                 containerStyle: K.article,
-                                headerImgStyle: K.articleHeaderImg,
+                                headerImgContainerStyle: K.articleHeaderImg,
                                 onClick: () => {
                                     t(e.id);
                                 },
@@ -467,7 +467,7 @@
                                       { style: H.highlightedArticle },
                                       n.createElement(u.Z, {
                                           article: l,
-                                          headerImgStyle: H.highlightedArticleHeaderImg,
+                                          headerImgContainerStyle: H.highlightedArticleHeaderImg,
                                           hoveredBgColor: "transparent",
                                           layout: "full",
                                           onClick: () => {
@@ -554,36 +554,34 @@
             }
         },
         563586: (e, t, a) => {
-            a.d(t, { Z: () => C });
+            a.d(t, { Z: () => k });
             a(136728);
             var n = a(202784),
                 i = a(325686),
-                l = a(107267),
-                r = a(530732),
-                s = a(392237),
-                o = a(306677),
-                c = a(725405),
-                m = a(125363),
-                d = a(836255),
-                u = a(246728),
-                p = a(695356),
-                g = a(790167),
-                h = a(287627),
-                y = a(992942);
-            const f = "https://abs.twimg.com/grok-news/article-x-banner";
-            function w({ hideDefault: e, hovered: t, imgStyle: a, style: i, url: l }) {
-                return e && l === f ? null : n.createElement(r.Z, { style: [_.headerImgContainer, i], withoutInteractiveStyles: !0 }, ({ isHovered: e }) => n.createElement(y.Z, { resizeMode: "cover", source: l, style: [_.headerImg, t ? _.hoveredHeaderImg : void 0, a] }));
+                l = a(530732),
+                r = a(392237),
+                s = a(306677),
+                o = a(725405),
+                c = a(125363),
+                m = a(836255),
+                d = a(246728),
+                u = a(695356),
+                p = a(790167),
+                g = a(287627),
+                h = a(992942);
+            const y = "https://abs.twimg.com/grok-news/article-x-banner";
+            function f({ hideDefault: e, hovered: t, imgStyle: a, style: i, url: r }) {
+                return e && r === y ? null : n.createElement(l.Z, { style: [w.headerImgContainer, i], withoutInteractiveStyles: !0 }, ({ isHovered: e }) => n.createElement(h.Z, { resizeMode: "cover", source: r, style: [w.headerImg, t ? w.hoveredHeaderImg : void 0, a] }));
             }
-            const _ = s.default.create((e) => ({ headerImgContainer: { flex: 1, height: 200, width: "100%", overflow: "hidden", borderRadius: e.borderRadii.medium }, headerImg: { width: "100%", height: "100%", transition: "all 0.5s ease", transform: "scale(1)" }, hoveredHeaderImg: { cursor: "pointer", transform: "scale(1.05)" } }));
-            var b = a(477575),
-                v = a(2025),
-                k = a(978086);
-            function C({ article: e, commentsStyle: t, containerStyle: a, headerImgStyle: s, hideDefaultImg: y, hideImg: f, hideReactions: _, hideSummary: C, hoveredBgColor: S, infoContainerStyle: T, layout: E = "imageTop", onClick: I, reactionsContainerStyle: F, routeToExploreNews: A, sentimentStyle: N, showSentiment: Z, size: L = "normal", style: z, summaryNumLines: K, titleNumLines: D, titleStyle: H, useRowReactions: P }) {
-                const B = (0, c.Z)(),
-                    R = (0, m.I0)(),
-                    M = (0, l.useHistory)(),
-                    { isCompactLayout: W } = (0, u.Z)(),
-                    U = n.useMemo(() => {
+            const w = r.default.create((e) => ({ headerImgContainer: { flex: 1, height: 200, width: "100%", overflow: "hidden", borderRadius: e.borderRadii.medium }, headerImg: { width: "100%", height: "100%", transition: "all 0.5s ease", transform: "scale(1)" }, hoveredHeaderImg: { cursor: "pointer", transform: "scale(1.05)" } }));
+            var _ = a(477575),
+                b = a(858496),
+                v = a(978086);
+            function k({ article: e, commentsStyle: t, containerStyle: a, headerImgContainerStyle: r, headerImgStyle: h, hideDefaultImg: y, hideImg: w, hideReactions: k, hideSummary: x, hoveredBgColor: S, infoContainerStyle: T, layout: E = "imageTop", onClick: I, reactionsContainerStyle: F, routeToExploreNews: A, sentimentStyle: N, showSentiment: Z, size: L = "normal", style: z, summaryNumLines: K, titleNumLines: D, titleStyle: H, useRowReactions: P }) {
+                const B = (0, o.Z)(),
+                    R = (0, c.I0)(),
+                    { isCompactLayout: M } = (0, d.Z)(),
+                    W = n.useMemo(() => {
                         if (!e) return [];
                         const t = [];
                         return (
@@ -593,31 +591,32 @@
                             t
                         );
                     }, [e]),
-                    j = n.useMemo(() => {
+                    U = n.useMemo(() => {
                         if (!e) return [];
                         const t = [];
                         e.header_img_post_id && t.push(e.header_img_post_id.post_results.rest_id);
-                        return t.push(...U.slice(0, 3)), t;
-                    }, [e, U]);
+                        return t.push(...W.slice(0, 3)), t;
+                    }, [e, W]);
                 n.useEffect(() => {
-                    R(d.Z.fetchMultipleIfNeeded(j));
-                }, [R, j]);
-                const O = { full: { container: x.fullContainer, headerImgContainer: x.fullHeaderImgContainer }, imageLeft: { container: x.imageLeftContainer, headerImgContainer: x.imageLeftHeaderImgContainer }, imageTop: { container: x.imageTopContainer, headerImgContainer: x.imageTopHeaderImgContainer }, imageBelowTitle: { container: x.imageBelowTitleContainer, headerImgContainer: x.imageBelowTitleHeaderImgContainer } },
-                    G = { normal: {}, large: { container: x.largeContainer, title: x.largeTitle, summary: x.largeSummary, lastUpdated: x.largeLastUpdated, comments: x.largeComments } },
+                    R(m.Z.fetchMultipleIfNeeded(U));
+                }, [R, U]);
+                const j = { full: { container: C.fullContainer, headerImgContainer: C.fullHeaderImgContainer }, imageLeft: { container: C.imageLeftContainer, headerImgContainer: C.imageLeftHeaderImgContainer }, imageTop: { container: C.imageTopContainer, headerImgContainer: C.imageTopHeaderImgContainer }, imageBelowTitle: { container: C.imageBelowTitleContainer, headerImgContainer: C.imageBelowTitleHeaderImgContainer } },
+                    O = { normal: {}, large: { container: C.largeContainer, title: C.largeTitle, summary: C.largeSummary, lastUpdated: C.largeLastUpdated, comments: C.largeComments } },
+                    G = n.useCallback(() => {
+                        I && I();
+                    }, [I]),
                     $ = n.useCallback(() => {
-                        I && I(), A ? M.push(`/i/news/a/${e.id}`) : M.push(`/i/news/article/${e.id}`);
-                    }, [M, e, I, A]),
-                    J = n.useCallback(() => {
-                        (0, p._$)(B, { articleId: e.id });
+                        (0, u._$)(B, { articleId: e.id });
                     }, [e, B]),
-                    V = O[E],
-                    Y = G[L],
-                    q = e.header_img_url || "",
-                    Q = !f && q,
-                    X = n.createElement(i.Z, { style: [x.infoContainer, W ? x.compactInfoContainer : void 0, T] }, n.createElement(k.Z, { numberOfLines: D, text: e.title, textStyle: [Y.title, H] }), "imageBelowTitle" === E && Q && n.createElement(w, { onClick: $, style: [V.headerImgContainer, s], url: q }), n.createElement(b.Z, { isLive: !!e.live_article, textStyle: Y.lastUpdated, timestamp: e.last_updated_at }), !!e.summary && !C && n.createElement(g.Z, { numberOfLines: K, sources: [], style: [x.summary, Y.summary], text: e.summary }), !_ && n.createElement(i.Z, { style: [x.reactionsContainer, P ? x.rowReactionsContainer : void 0, F] }, e.sentiment && Z && n.createElement(v.Z, { articleId: e.id, sentiment: e.sentiment, showPercentages: !0, style: N }), n.createElement(h.Z, { disableClick: !0, numPosts: Number(e.total_trend_posts), postIds: U, style: [Y.comments, t], textStyle: x.commentsText, variant: "outline" })));
-                return n.createElement(r.Z, { onClick: $, style: [x.interactiveContainer, a], withoutInteractiveStyles: !0 }, ({ isHovered: e }) => n.createElement(i.Z, { style: [x.container, V.container, Y.container, e ? x.hoveredContainer : void 0, e && S ? { backgroundColor: S } : void 0, z] }, n.createElement(o.D, { id: "news_article_card", onFullyVisible: J, position: "top", testID: "news_article_card" }), X, Q && "imageBelowTitle" !== E && n.createElement(w, { hideDefault: y, hovered: e, onClick: $, style: [V.headerImgContainer, s], url: q })));
+                    J = j[E],
+                    V = O[L],
+                    Y = e.header_img_url || "",
+                    q = !w && Y,
+                    Q = A ? `/i/news/a/${e.id}` : `/i/news/article/${e.id}`,
+                    X = n.createElement(i.Z, { style: [C.infoContainer, M ? C.compactInfoContainer : void 0, T] }, n.createElement(v.Z, { numberOfLines: D, text: e.title, textStyle: [V.title, H] }), "imageBelowTitle" === E && q && n.createElement(f, { imgStyle: h, onClick: G, style: [J.headerImgContainer, r], url: Y }), n.createElement(_.Z, { isLive: !!e.live_article, textStyle: V.lastUpdated, timestamp: e.last_updated_at }), !!e.summary && !x && n.createElement(p.Z, { numberOfLines: K, sources: [], style: [C.summary, V.summary], text: e.summary }), !k && n.createElement(i.Z, { style: [C.reactionsContainer, P ? C.rowReactionsContainer : void 0, F] }, e.sentiment && Z && n.createElement(b.Z, { articleId: e.id, sentiment: e.sentiment, showPercentages: !0, style: N }), n.createElement(g.Z, { disableClick: !0, numPosts: Number(e.total_trend_posts), postIds: W, style: [V.comments, t], textStyle: C.commentsText, variant: "outline" })));
+                return n.createElement(l.Z, { link: Q, onClick: G, style: [C.interactiveContainer, a], withoutInteractiveStyles: !0 }, ({ isHovered: e }) => n.createElement(i.Z, { style: [C.container, J.container, V.container, e ? C.hoveredContainer : void 0, e && S ? { backgroundColor: S } : void 0, z] }, n.createElement(s.D, { id: "news_article_card", onFullyVisible: $, position: "top", testID: "news_article_card" }), X, q && "imageBelowTitle" !== E && n.createElement(f, { hideDefault: y, hovered: e, imgStyle: h, onClick: G, style: [J.headerImgContainer, r], url: Y })));
             }
-            const x = s.default.create((e) => ({ interactiveContainer: { display: "flex", width: "100%" }, container: { flex: 1, display: "flex", width: "100%", gap: e.spaces.space16, backgroundColor: "transparent", borderRadius: e.borderRadii.large, transition: "all 0.2s ease", padding: e.spaces.space12 }, hoveredContainer: { backgroundColor: "light" === e.paletteName ? e.colors.gray0 : "transparent", cursor: "pointer" }, largeContainer: { gap: e.spaces.space36 }, fullContainer: { flexDirection: "row" }, imageLeftContainer: { flexDirection: "row-reverse" }, imageTopContainer: { flexDirection: "column-reverse" }, imageBelowTitleContainer: { flexDirection: "column" }, fullHeaderImgContainer: { flex: 1, width: "100%", height: "100%", minHeight: 350 }, imageLeftHeaderImgContainer: { flex: 1, width: "100%", height: "100%" }, imageTopHeaderImgContainer: { flex: 1, width: "100%", minHeight: 200 }, imageBelowTitleHeaderImgContainer: { flex: 1, width: "100%", height: "100%", minHeight: 350 }, infoContainer: { flex: 1, display: "flex", flexDirection: "column", gap: e.spaces.space8 }, compactInfoContainer: { padding: e.spaces.space8 }, summary: { color: e.colors.gray900 }, largeSummary: {}, headerImgContainer: { flex: 1 }, headerImgInteractiveContainer: { width: "100%", flex: 1 }, reactionsContainer: { display: "flex", flexDirection: "column", gap: e.spaces.space8 }, rowReactionsContainer: { flexDirection: "row" }, largeTitle: { fontSize: e.fontSizes.title1, lineHeight: 40 }, largeLastUpdated: { fontSize: e.fontSizes.subtext1 }, largeComments: { fontSize: e.fontSizes.subtext2 }, commentsText: { color: e.colors.gray900 } }));
+            const C = r.default.create((e) => ({ interactiveContainer: { display: "flex", width: "100%" }, container: { flex: 1, display: "flex", width: "100%", gap: e.spaces.space16, backgroundColor: "transparent", borderRadius: e.borderRadii.large, transition: "all 0.2s ease", padding: e.spaces.space12 }, hoveredContainer: { backgroundColor: "light" === e.paletteName ? e.colors.gray0 : "transparent", cursor: "pointer" }, largeContainer: { gap: e.spaces.space36 }, fullContainer: { flexDirection: "row" }, imageLeftContainer: { flexDirection: "row-reverse" }, imageTopContainer: { flexDirection: "column-reverse" }, imageBelowTitleContainer: { flexDirection: "column" }, fullHeaderImgContainer: { flex: 1, width: "100%", height: "100%", minHeight: 350 }, imageLeftHeaderImgContainer: { flex: 1, width: "100%", height: "100%" }, imageTopHeaderImgContainer: { flex: 1, width: "100%", minHeight: 200 }, imageBelowTitleHeaderImgContainer: { flex: 1, width: "100%", height: "100%", minHeight: 350 }, infoContainer: { flex: 1, display: "flex", flexDirection: "column", gap: e.spaces.space8 }, compactInfoContainer: { padding: e.spaces.space8 }, summary: { color: e.colors.gray900 }, largeSummary: {}, headerImgContainer: { flex: 1 }, headerImgInteractiveContainer: { width: "100%", flex: 1 }, reactionsContainer: { display: "flex", flexDirection: "column", gap: e.spaces.space8 }, rowReactionsContainer: { flexDirection: "row" }, largeTitle: { fontSize: e.fontSizes.title1, lineHeight: 40 }, largeLastUpdated: { fontSize: e.fontSizes.subtext1 }, largeComments: { fontSize: e.fontSizes.subtext2 }, commentsText: { color: e.colors.gray900 } }));
         },
         339072: (e, t, a) => {
             a.r(t), a.d(t, { default: () => _ });
@@ -630,7 +629,7 @@
                 c = a(4452),
                 m = a(615027),
                 d = a(305179),
-                u = a(4976),
+                u = a(759208),
                 p = a(768431);
             const g = {
                     id: "999999999999999999",
@@ -726,4 +725,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.News.dff4c36a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/ondemand.News.f0f7116a.js.map

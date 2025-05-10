@@ -188,7 +188,7 @@
             const U = l.default.create((e) => ({ container: { display: "flex", flexDirection: "column", gap: e.spaces.space4, backgroundColor: e.colors.gray50, padding: e.spaces.space20, paddingBottom: e.spaces.space8 }, scrollViewContentContainerStyle: { paddingEnd: e.spaces.space12 }, headerSteps: { position: "relative" }, lineContainer: { display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", width: e.spaces.space20, position: "absolute", start: 0, top: 0, height: "100%", paddingTop: e.spaces.space8 }, line: { width: 2, height: "100%", backgroundColor: e.colors.gray300 }, step: { marginBottom: e.spaces.space16 }, buttonsContainer: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space8 }, button: { borderRadius: e.borderRadii.xLarge }, icon: {}, stepHeaderStatusContainer: { paddingBottom: e.spaces.space16 } })),
                 X = n.memo(J);
         },
-        794358: (e, t, a) => {
+        791278: (e, t, a) => {
             a.d(t, { Z: () => f });
             a(543673), a(240753), a(128399);
             var n = a(202784),
@@ -463,7 +463,7 @@
                 h = a(397159),
                 b = a(20716),
                 C = a(721270),
-                w = a(794358),
+                w = a(791278),
                 E = a(229177);
             function S({ analyticsMetricPrefix: e, handleStepLayout: t, isAnimated: a, step: r, style: i }) {
                 const l = n.useCallback(
@@ -1069,4 +1069,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-f8a31592.e8aec41a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-f8a31592.5ba3ee0a.js.map
