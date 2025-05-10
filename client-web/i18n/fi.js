@@ -1275,6 +1275,7 @@
                 e("b8f3500a", "Lue ketju lukutilassa"),
                 e("fc7db594", "Profiilin yhteenveto"),
                 e("c3f04d9c", "Miettii"),
+                e("cbdddb0a", "Valmis"),
                 e("e98cc293", function (a) {
                     return "Etsitään " + a.query;
                 }),
@@ -1914,9 +1915,9 @@
                 e("b5660338", "Aikajanan esikatselu"),
                 e("hff1b97a", "Vain tilaajat voivat vastata."),
                 e("a330771e", "Kopioi linkki leikepöydällesi"),
-                e("b6510e68", "Kopioi artikkelin URL jakoa varten."),
-                e("e4a6e006", "Jokin meni pieleen. Yritä uudelleen.");
-            e("eff483e0", "Kun olet julkaissut, poimi artikkelin jakolinkki."),
+                e("b6510e68", "Kopioi artikkelin URL jakoa varten.");
+            e("e4a6e006", "Jokin meni pieleen. Yritä uudelleen."),
+                e("eff483e0", "Kun olet julkaissut, poimi artikkelin jakolinkki."),
                 e("ca15dd4e", "Luonnos"),
                 e("bb40bf66", "Julkaistu"),
                 e("h107935c", "Tallennettu viimeksi nyt"),
@@ -2966,9 +2967,9 @@
                 e("e0adec82", "Brändiresurssit"),
                 e("df1b7550", "Markkinointi"),
                 e("he258678", "X yrityksille"),
-                e("c6f58084", "Kehittäjät"),
-                e("d83f18d2", "Hakemisto");
-            e("hc5aa17c", "Hanki X-sovellus"),
+                e("c6f58084", "Kehittäjät");
+            e("d83f18d2", "Hakemisto"),
+                e("hc5aa17c", "Hanki X-sovellus"),
                 e("j0693948", "Hanki Grok-sovellus"),
                 e("af781666", "Mitä ihmiset miettivät?"),
                 e("ad35153e", "beta"),
@@ -3882,9 +3883,9 @@
                 }),
                 e("e3275464", "Lähetä"),
                 e("cededf2a", "Host"),
-                e("i2caef48", "Co-hostit"),
-                e("j245c654", "Puhujat");
-            e("eda23a02", "Kuuntelijat"),
+                e("i2caef48", "Co-hostit");
+            e("j245c654", "Puhujat"),
+                e("eda23a02", "Kuuntelijat"),
                 e("b90eb348", "Kutsu puhumaan"),
                 e("d9a63e82", "Poista puhujista"),
                 e("bd917b26", "Kutsu co-hostiksi"),
@@ -4281,7 +4282,6 @@
                 e("e2811afc", "Ottelut"),
                 e("j081fa34", "Pistetaulukko"),
                 e("i7c7f156", "Huomenna"),
-                e("cbdddb0a", "Valmis"),
                 e("b134ba52", "Käynnissä"),
                 e("j1361724", "Puoliaika"),
                 e("fa0f1262", "Tauko"),
@@ -13230,4 +13230,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.72d82a2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fi.4a0e680a.js.map

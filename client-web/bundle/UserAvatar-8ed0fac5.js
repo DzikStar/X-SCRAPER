@@ -64,7 +64,7 @@
                 };
         },
         397159: (e, t, s) => {
-            s.d(t, { Fi: () => d, fQ: () => T, iS: () => u });
+            s.d(t, { Fi: () => m, fQ: () => I, iS: () => d });
             s(136728), s(574858), s(543673), s(240753), s(128399);
             var a = s(468811),
                 i = s.n(a),
@@ -72,29 +72,30 @@
                 n = s.n(o),
                 r = s(123702);
             const c = n().c3f04d9c,
-                u = { HEADER: "header", ASSISTANT: "assistant", DECISION: "decision", RAW_FUNCTION_RESULT: "raw_function_result", FUNCTION: "function", SUMMARY: "summary", FINAL: "final", SOFT_STOP: "softstop", FINAL_LONG: "final_long" },
-                d = { IN_PROGRESS: "IN_PROGRESS", COMPLETED: "COMPLETED", FAILED: "FAILED" },
-                m = n().e98cc293,
-                h = n().b0d1e205,
-                p = n().i2e0f4d7,
-                g = n().acb9b845,
-                l = n().ef261d8d,
-                S = n().f7d9cfb9,
-                b = n().bec7eb11;
-            class T {
+                u = n().cbdddb0a,
+                d = { HEADER: "header", ASSISTANT: "assistant", DECISION: "decision", RAW_FUNCTION_RESULT: "raw_function_result", FUNCTION: "function", SUMMARY: "summary", FINAL: "final", SOFT_STOP: "softstop", FINAL_LONG: "final_long" },
+                m = { IN_PROGRESS: "IN_PROGRESS", COMPLETED: "COMPLETED", FAILED: "FAILED" },
+                h = n().e98cc293,
+                p = n().b0d1e205,
+                g = n().i2e0f4d7,
+                l = n().acb9b845,
+                S = n().ef261d8d,
+                b = n().f7d9cfb9,
+                T = n().bec7eb11;
+            class I {
                 constructor(e) {
                     (this.initiateFromHistoryResponses = (e, t = !1) => {
                         this.lastStreamedDataTimestamp = Date.now();
                         for (const t of e) {
-                            const e = { id: i().v4(), state: d.COMPLETED, header: t.header || c, subSteps: [] };
+                            const e = { id: i().v4(), state: m.COMPLETED, header: t.header || c, subSteps: [] };
                             for (let s = 0; s < t.steps.length; s++) {
                                 const a = t.steps[s];
                                 this.addWebResults(a.webResults || []), this.addXPostIds(a.xPostIds || []);
                                 let i = 0;
-                                if ((a.assistant && ((this.accumulatedTrace += a.assistant), (this.traceEnabled = !0)), a.summary && (e.subSteps.push({ messageStepId: s + i, messageTag: u.SUMMARY, summary: a.summary }), i++), a.decision)) {
+                                if ((a.assistant && ((this.accumulatedTrace += a.assistant), (this.traceEnabled = !0)), a.summary && (e.subSteps.push({ messageStepId: s + i, messageTag: d.SUMMARY, summary: a.summary }), i++), a.decision)) {
                                     const t = this.parseMessageJSON(a.decision),
                                         { markdown: o, text: n } = this.getContentForDecisionAction(t);
-                                    e.subSteps.push({ messageStepId: s + i, messageTag: u.DECISION, actionIcon: this.getIconForDecisionAction(t), actionType: t?.action, actionMarkdownSummary: o, actionSummary: n, actionWebResult: this.webResults.find((e) => e.url === t?.action_input?.url), actionState: "COMPLETED", webResults: a.webResults, xPostIds: a.xPostIds }), i++;
+                                    e.subSteps.push({ messageStepId: s + i, messageTag: d.DECISION, actionIcon: this.getIconForDecisionAction(t), actionType: t?.action, actionMarkdownSummary: o, actionSummary: n, actionWebResult: this.webResults.find((e) => e.url === t?.action_input?.url), actionState: "COMPLETED", webResults: a.webResults, xPostIds: a.xPostIds }), i++;
                                 }
                             }
                             this.steps.push(e);
@@ -106,55 +107,55 @@
                         }),
                         (this.updateStepsFromRawMessage = (e) => {
                             const t = this.steps.length - 1,
-                                s = e.messageTag === u.HEADER,
+                                s = e.messageTag === d.HEADER,
                                 a = s || this.steps.length <= 0;
                             if ((this.addDebugMessageTagCount(e.messageTag), (this.lastStreamedDataTimestamp = Date.now()), "PENDING" === this.state && ((this.streamStartTimestamp = Date.now()), (this.state = "STARTED")), a)) {
-                                const a = { id: i().v4(), state: "COMPLETED" === this.state ? d.COMPLETED : d.IN_PROGRESS, header: s ? e.message : c, subSteps: [] };
+                                const a = { id: i().v4(), state: "COMPLETED" === this.state ? m.COMPLETED : m.IN_PROGRESS, header: s ? e.message : c, subSteps: [] };
                                 if (s) {
                                     if (1 === this.steps.length && this.steps[0].header === c) return void (this.steps = [{ ...this.steps[0], header: a.header }]);
                                     this.steps = [...this.steps, a];
-                                } else e.messageTag === u.ASSISTANT && ((this.accumulatedTrace += e.message), (this.traceEnabled = !0), (this.steps = [...this.steps, a]));
+                                } else e.messageTag === d.ASSISTANT && ((this.accumulatedTrace += e.message), (this.traceEnabled = !0), (this.steps = [...this.steps, a]));
                                 return void (t >= 0 && this.completeStep(t));
                             }
                             const o = this.steps[t],
-                                n = o.subSteps.findLastIndex((t) => (e.messageTag === u.RAW_FUNCTION_RESULT ? t.messageStepId === e.messageStepId && (t.messageTag === e.messageTag || t.messageTag === u.DECISION) : t.messageStepId === e.messageStepId && t.messageTag === e.messageTag)),
-                                m = n > -1 ? o.subSteps[n] : void 0;
+                                n = o.subSteps.findLastIndex((t) => (e.messageTag === d.RAW_FUNCTION_RESULT ? t.messageStepId === e.messageStepId && (t.messageTag === e.messageTag || t.messageTag === d.DECISION) : t.messageStepId === e.messageStepId && t.messageTag === e.messageTag)),
+                                u = n > -1 ? o.subSteps[n] : void 0;
                             let h = !1;
-                            if (m) {
+                            if (u) {
                                 switch (e.messageTag) {
-                                    case u.ASSISTANT:
+                                    case d.ASSISTANT:
                                         (this.accumulatedTrace += e.message), (this.traceEnabled = !0);
                                         break;
-                                    case u.SUMMARY:
-                                        (m.summary = (m.summary || "") + e.message), (m.bulletPoints = [...(m.bulletPoints || []), (0, r.K)(e.message)]), (h = !0), (this.accumulatedSummary += e.message);
+                                    case d.SUMMARY:
+                                        (u.summary = (u.summary || "") + e.message), (u.bulletPoints = [...(u.bulletPoints || []), (0, r.K)(e.message)]), (h = !0), (this.accumulatedSummary += e.message);
                                         break;
-                                    case u.DECISION: {
+                                    case d.DECISION: {
                                         const t = this.parseMessageJSON(e.message),
                                             { markdown: s, text: a } = this.getContentForDecisionAction(t);
-                                        (m.actionIcon = this.getIconForDecisionAction(t)), (m.actionType = t?.action), (m.actionSummary = a), (m.actionMarkdownSummary = s), (h = !0);
+                                        (u.actionIcon = this.getIconForDecisionAction(t)), (u.actionType = t?.action), (u.actionSummary = a), (u.actionMarkdownSummary = s), (h = !0);
                                         break;
                                     }
-                                    case u.RAW_FUNCTION_RESULT:
+                                    case d.RAW_FUNCTION_RESULT:
                                         if (!((e.webResults && e.webResults.length) || (e.xPostIds && e.xPostIds.length))) break;
-                                        e.webResults && ((m.webResults = e.webResults), this.addWebResults(e.webResults || [])), e.xPostIds && ((m.xPostIds = e.xPostIds), this.addXPostIds(e.xPostIds || [])), m.actionState, (h = !0);
+                                        e.webResults && ((u.webResults = e.webResults), this.addWebResults(e.webResults || [])), e.xPostIds && ((u.xPostIds = e.xPostIds), this.addXPostIds(e.xPostIds || [])), u.actionState, (h = !0);
                                 }
-                                h && ((o.subSteps[n] = { ...m }), (o.subSteps = [...o.subSteps]));
+                                h && ((o.subSteps[n] = { ...u }), (o.subSteps = [...o.subSteps]));
                             } else {
                                 let t = null;
                                 switch (e.messageTag) {
-                                    case u.ASSISTANT:
+                                    case d.ASSISTANT:
                                         (this.accumulatedTrace += e.message), (this.traceEnabled = !0);
                                         break;
-                                    case u.SUMMARY:
+                                    case d.SUMMARY:
                                         t = { messageStepId: e.messageStepId, messageTag: e.messageTag, summary: e.message };
                                         break;
-                                    case u.DECISION: {
+                                    case d.DECISION: {
                                         const s = this.parseMessageJSON(e.message),
                                             { markdown: a, text: i } = this.getContentForDecisionAction(s);
                                         t = { messageStepId: e.messageStepId, messageTag: e.messageTag, actionIcon: this.getIconForDecisionAction(s), actionType: s?.action, actionSummary: i, actionMarkdownSummary: a, actionWebResult: this.webResults.find((e) => e.url === s?.action_input?.url), actionState: "STARTED" };
                                         break;
                                     }
-                                    case u.RAW_FUNCTION_RESULT: {
+                                    case d.RAW_FUNCTION_RESULT: {
                                         const s = e.webResults || [];
                                         this.addWebResults(s);
                                         const a = e.xPostIds || [];
@@ -171,11 +172,11 @@
                             this.steps[t] = { ...this.steps[t] };
                         }),
                         (this.sortSubstepsByStepIdMessageTag = (e) => {
-                            const t = [u.SUMMARY, u.DECISION, u.RAW_FUNCTION_RESULT];
+                            const t = [d.SUMMARY, d.DECISION, d.RAW_FUNCTION_RESULT];
                             return e.sort((e, s) => (e.messageStepId !== s.messageStepId ? e.messageStepId - s.messageStepId : t.indexOf(e.messageTag) - t.indexOf(s.messageTag)));
                         }),
                         (this.completeStep = (e) => {
-                            this.steps[e].state = d.COMPLETED;
+                            this.steps[e].state = m.COMPLETED;
                         }),
                         (this.parseMessageJSON = (e) => {
                             try {
@@ -187,8 +188,8 @@
                         (this.getContentForDecisionAction = (e) => {
                             if (!e) return { text: "", markdown: "" };
                             if (e.action_input?.username) {
-                                if (e.action_input?.query) return { text: S({ username: e.action_input?.username, query: e.action_input?.query }), markdown: b({ username: e.action_input?.username, query: e.action_input?.query }) };
-                                const t = l({ username: e.action_input?.username });
+                                if (e.action_input?.query) return { text: b({ username: e.action_input?.username, query: e.action_input?.query }), markdown: T({ username: e.action_input?.username, query: e.action_input?.query }) };
+                                const t = S({ username: e.action_input?.username });
                                 return { text: t, markdown: t };
                             }
                             if (e.action_input?.query) {
@@ -202,9 +203,9 @@
                                     } catch (e) {
                                         a = t;
                                     }
-                                    return { text: p({ url: s, query: e.action_input?.query }), markdown: g({ url: a, query: e.action_input?.query }) };
+                                    return { text: g({ url: s, query: e.action_input?.query }), markdown: l({ url: a, query: e.action_input?.query }) };
                                 }
-                                return { text: m({ query: e.action_input?.query }), markdown: h({ query: e.action_input?.query }) };
+                                return { text: h({ query: e.action_input?.query }), markdown: p({ query: e.action_input?.query }) };
                             }
                             return { text: "", markdown: "" };
                         }),
@@ -222,21 +223,22 @@
                                     return "IconGlobeStroke";
                             }
                         }),
-                        (this.complete = () => {
+                        (this.complete = (e = !0) => {
                             "COMPLETED" !== this.state &&
                                 ((this.streamCompletedTimestamp = Date.now()),
                                 (this.state = "COMPLETED"),
                                 this.steps.forEach((e) => {
-                                    (e.state = d.COMPLETED),
+                                    (e.state = m.COMPLETED),
                                         e.subSteps.forEach((e) => {
                                             e.actionState = "COMPLETED";
                                         });
                                 }),
+                                e && this.steps.push({ id: i().v4(), state: m.COMPLETED, header: u, subSteps: [], isCompleteHeader: !0 }),
                                 (this.steps = [...this.steps]));
                         }),
                         (this.onAbort = () => {
                             for (let e = 0; e < this.steps.length; e++)
-                                this.steps[e].state === d.IN_PROGRESS && (this.steps[e].state = d.FAILED),
+                                this.steps[e].state === m.IN_PROGRESS && (this.steps[e].state = m.FAILED),
                                     this.steps[e].subSteps.forEach((e) => {
                                         e.actionState = "COMPLETED";
                                     });
@@ -316,4 +318,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserAvatar-8ed0fac5.4a6cb62a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.UserAvatar-8ed0fac5.632ae80a.js.map

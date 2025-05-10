@@ -838,7 +838,7 @@
             }
         },
         194167: (e, t, a) => {
-            a.d(t, { nJ: () => S, ZP: () => v, YM: () => x });
+            a.d(t, { nJ: () => E, ZP: () => x, YM: () => S });
             var n = a(202784),
                 o = a(325686),
                 s = a(392237),
@@ -897,20 +897,19 @@
                 b = a(39831);
             const C = i().b1ac6016,
                 w = i().f766feca,
-                E = "Completed",
-                S = "grok-deepsearch";
-            function x(e, t, a) {
-                return t && e ? (a ? w : C) : e ? E : a ? c.p9 : c.XD;
+                E = "grok-deepsearch";
+            function S(e, t, a) {
+                return t && e ? (a ? w : C) : a ? c.p9 : c.XD;
             }
-            function v({ completedTimestamp: e, fromTimestamp: t, isLoading: a, messageStepAccumulator: s }) {
+            function x({ completedTimestamp: e, fromTimestamp: t, isLoading: a, messageStepAccumulator: s }) {
                 const r = (0, l.z)(),
                     i = n.useRef(null),
                     c = n.useRef(null),
                     d = n.useRef({}),
                     [p, u] = n.useState(!1),
                     [f, C] = n.useState(!1),
-                    [w, E] = n.useState(null),
-                    [v, k] = n.useState(!1),
+                    [w, x] = n.useState(null),
+                    [T, k] = n.useState(!1),
                     [Z, P] = n.useState(!1),
                     { accumulatedTrace: I, deepsearchArgs: D, isPastSummary: R, state: A, steps: z, traceEnabled: B } = s,
                     M = "COMPLETED" === A,
@@ -931,22 +930,22 @@
                     }, []),
                     O = n.useCallback(
                         (e) => {
-                            if ((E(e), void 0 !== d.current[e])) {
+                            if ((x(e), void 0 !== d.current[e])) {
                                 const t = 40;
                                 H(Math.max(d.current[e] - t, 0));
                             }
-                            r.scribe({ component: `${S}-header-click`, action: "click", element: z.find((t) => t.id === e)?.header || "" });
+                            r.scribe({ component: `${E}-header-click`, action: "click", element: z.find((t) => t.id === e)?.header || "" });
                         },
                         [H, r, z],
                     ),
                     $ = n.useMemo(() => z.map((e) => ({ id: e.id, label: e.header, state: e.state, isCompleteHeader: e.isCompleteHeader })), [z]);
                 return n.createElement(
                     o.Z,
-                    { style: [T.container, Z ? T.expandedContainer : void 0] },
+                    { style: [v.container, Z ? v.expandedContainer : void 0] },
                     n.createElement(m.Z, {
                         aborted: _,
                         activeStepId: w,
-                        analyticsMetricPrefix: S,
+                        analyticsMetricPrefix: E,
                         completed: M,
                         completedTimestamp: e,
                         expanded: Z,
@@ -966,11 +965,11 @@
                         rawTraceEnabled: B,
                         scrollViewRef: i,
                         setExpanded: P,
-                        style: T.leftPanel,
-                        title: x(M, !1, V),
+                        style: v.leftPanel,
+                        title: S(M, !1, V),
                     }),
                     n.createElement(g.Z, {
-                        analyticsMetricPrefix: S,
+                        analyticsMetricPrefix: E,
                         handleStepLayout: (e) => (t) => {
                             if (e) {
                                 const a = t.nativeEvent.layout;
@@ -985,22 +984,22 @@
                             C(!1);
                         },
                         scrollViewRef: c,
-                        style: T.rightPanel,
+                        style: v.rightPanel,
                     }),
-                    v &&
+                    T &&
                         n.createElement(b.Z, {
                             completed: M,
                             isPastSummary: R,
                             onDismissed: () => {
-                                k(!1), r.scribe({ element: `${S}-close-trace`, action: "click" });
+                                k(!1), r.scribe({ element: `${E}-close-trace`, action: "click" });
                             },
                             trace: I,
                         }),
-                    n.createElement(h.Z, { analyticsMetricPrefix: S, completedTimestamp: e, fromTimestamp: t, messageStepAccumulator: s }),
-                    n.createElement(y, { analyticsMetricPrefix: S, messageStepAccumulator: s }),
+                    n.createElement(h.Z, { analyticsMetricPrefix: E, completedTimestamp: e, fromTimestamp: t, messageStepAccumulator: s }),
+                    n.createElement(y, { analyticsMetricPrefix: E, messageStepAccumulator: s }),
                 );
             }
-            const T = s.default.create((e) => ({ container: { marginBottom: e.spaces.space16, opacity: 1, animationDuration: "0.5s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }], overflow: "hidden", borderWidth: 1, borderStyle: "solid", borderColor: e.colors.gray300, borderRadius: e.spaces.space24, marginHorizontal: e.spaces.space16, display: "flex", flexDirection: "row", height: 400, backgroundColor: e.colors.gray0, transition: "all 0.2s ease", start: 0 }, expandedContainer: { height: 500, width: "110%", start: -40 }, leftPanel: { width: 200 }, rightPanel: { flex: 1 } }));
+            const v = s.default.create((e) => ({ container: { marginBottom: e.spaces.space16, opacity: 1, animationDuration: "0.5s", animationKeyframes: [{ "0%": { opacity: 0 }, "100%": { opacity: 1 } }], overflow: "hidden", borderWidth: 1, borderStyle: "solid", borderColor: e.colors.gray300, borderRadius: e.spaces.space24, marginHorizontal: e.spaces.space16, display: "flex", flexDirection: "row", height: 400, backgroundColor: e.colors.gray0, transition: "all 0.2s ease", start: 0 }, expandedContainer: { height: 500, width: "110%", start: -40 }, leftPanel: { width: 200 }, rightPanel: { flex: 1 } }));
         },
         848957: (e, t, a) => {
             a.d(t, { Z: () => S });
@@ -1069,4 +1068,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-f8a31592.5ba3ee0a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-f8a31592.ec6838ba.js.map

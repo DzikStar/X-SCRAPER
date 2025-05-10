@@ -1274,6 +1274,7 @@
                 n("b8f3500a", "Tweet dizisini Okuyucuda görüntüle"),
                 n("fc7db594", "Profil Özeti"),
                 n("c3f04d9c", "Düşünüyor"),
+                n("cbdddb0a", "Tamamlandı"),
                 n("e98cc293", function (e) {
                     return e.query + " için aranıyor";
                 }),
@@ -1913,9 +1914,9 @@
                 n("b5660338", "Zaman Akışı önizlemesi"),
                 n("hff1b97a", "Yalnızca Aboneler yanıtlayabilir."),
                 n("a330771e", "Bağlantıyı panona kopyala"),
-                n("b6510e68", "Makaleyi paylaşabilmek için Makalenin URL'sini kopyala."),
-                n("e4a6e006", "Bir hata oluştu. Lütfen yeniden dene.");
-            n("eff483e0", "Makaleni yayınladıktan sonra paylaşman için bir bağlantı verilir."),
+                n("b6510e68", "Makaleyi paylaşabilmek için Makalenin URL'sini kopyala.");
+            n("e4a6e006", "Bir hata oluştu. Lütfen yeniden dene."),
+                n("eff483e0", "Makaleni yayınladıktan sonra paylaşman için bir bağlantı verilir."),
                 n("ca15dd4e", "Taslak"),
                 n("bb40bf66", "Yayınlananlar"),
                 n("h107935c", "Az önce kaydedildi"),
@@ -2965,9 +2966,9 @@
                 n("e0adec82", "Marka Kaynakları"),
                 n("df1b7550", "Pazarlama"),
                 n("he258678", "İşletmeler İçin X"),
-                n("c6f58084", "Geliştiriciler"),
-                n("d83f18d2", "Dizin");
-            n("hc5aa17c", "X uygulamasını indir"),
+                n("c6f58084", "Geliştiriciler");
+            n("d83f18d2", "Dizin"),
+                n("hc5aa17c", "X uygulamasını indir"),
                 n("j0693948", "Grok uygulamasını indir"),
                 n("af781666", "İnsanlar ne düşünüyor?"),
                 n("ad35153e", "beta"),
@@ -3881,9 +3882,9 @@
                 }),
                 n("e3275464", "Gönder"),
                 n("cededf2a", "Yönetici"),
-                n("i2caef48", "Yardımcılar"),
-                n("j245c654", "Konuşmacılar");
-            n("eda23a02", "Dinleyiciler"),
+                n("i2caef48", "Yardımcılar");
+            n("j245c654", "Konuşmacılar"),
+                n("eda23a02", "Dinleyiciler"),
                 n("b90eb348", "Konuşmaya Davet Et"),
                 n("d9a63e82", "Konuşmacılardan çıkar"),
                 n("bd917b26", "Yardımcılığa davet et"),
@@ -4280,7 +4281,6 @@
                 n("e2811afc", "Maçlar"),
                 n("j081fa34", "Puan durumları"),
                 n("i7c7f156", "Yarın"),
-                n("cbdddb0a", "Tamamlandı"),
                 n("b134ba52", "Devam Ediyor"),
                 n("j1361724", "Devre arası"),
                 n("fa0f1262", "Devre Arası"),
@@ -13225,4 +13225,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/tr.6e89c68a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/tr.8b5f765a.js.map

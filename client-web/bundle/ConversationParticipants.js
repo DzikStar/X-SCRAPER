@@ -28,13 +28,13 @@
                         });
                 }
                 _renderContent() {
-                    const { backButtonType: e, centerTitle: t, centeredLogo: o, fixed: a, hideBackButton: n, isFullWidth: s, isLarge: d, leftControl: c, middleControl: h, position: p, rightControl: m, secondaryBar: f, style: b, subtitle: D, title: k, titleDomId: y, titleIconCell: g, titleIconCellSize: v, withBackground: w, withWideContainer: M } = this.props,
-                        { isModal: I } = this.context,
-                        _ = n ? c : r.createElement(i.Z, { backButtonType: e, onClick: this._handleBackClick }),
+                    const { backButtonType: e, centerTitle: t, centeredLogo: o, fixed: a, hideBackButton: n, isFullWidth: s, isLarge: d, leftControl: c, middleControl: h, position: p, rightControl: m, secondaryBar: f, style: b, subtitle: D, title: k, titleDomId: y, titleIconCell: g, titleIconCellSize: w, withBackground: v, withWideContainer: I } = this.props,
+                        { isModal: _ } = this.context,
+                        M = n ? c : r.createElement(i.Z, { backButtonType: e, onClick: this._handleBackClick }),
                         E = (function (e, t, o) {
                             return e && !(t && o);
-                        })(!!w, I, !!f);
-                    return r.createElement(r.Fragment, null, r.createElement(l.Z, { centerTitle: t, centeredLogo: o, isFullWidth: s, isLarge: d, leftControl: _, middleControl: h, position: u(p, I, a), rightControl: m, style: b, subtitle: D, title: k, titleDomId: y, titleIconCell: g, titleIconCellSize: v, withBackground: E, withWideContainer: M }), f || null);
+                        })(!!v, _, !!f);
+                    return r.createElement(r.Fragment, null, r.createElement(l.Z, { centerTitle: t, centeredLogo: o, isFullWidth: s, isLarge: d, leftControl: M, middleControl: h, position: u(p, _, a), rightControl: m, style: b, subtitle: D, title: k, titleDomId: y, titleIconCell: g, titleIconCellSize: w, withBackground: E, withWideContainer: I }), f || null);
                 }
                 render() {
                     const { secondaryBar: e } = this.props,
@@ -64,7 +64,7 @@
                 m = a.forwardRef(h);
         },
         333241: (e, t, o) => {
-            o.d(t, { Z: () => w });
+            o.d(t, { Z: () => v });
             o(136728);
             var r = o(202784),
                 a = o(638236),
@@ -84,11 +84,11 @@
                 k = "report",
                 y = "share",
                 g = i().j7bb1a43,
-                v = i().hef5960c,
-                w = (0, m.M)((e) => {
+                w = i().hef5960c,
+                v = (0, m.M)((e) => {
                     const { featureSwitches: t } = (0, c.QZ)(),
-                        { onBlock: o, onClose: s, onMute: i, onRemoveFollower: m, onReportUser: w, onShare: M, onUnblock: I, onUnmute: _, user: E } = e,
-                        Z = [],
+                        { onBlock: o, onClose: s, onMute: i, onRemoveFollower: m, onReportUser: v, onShare: I, onUnblock: _, onUnmute: M, user: E } = e,
+                        P = [],
                         C = (t, o) => {
                             const { confirm: r, onClose: a } = e;
                             if (t) {
@@ -102,29 +102,29 @@
                         !E.protected &&
                         !E.blocking &&
                         !E.blocked_by &&
-                        Z.push({
+                        P.push({
                             Icon: a.Z,
                             onClick: () => {
-                                s(), M();
+                                s(), I();
                             },
                             testID: y,
-                            text: v,
+                            text: w,
                         });
                     !E.blocking &&
-                        Z.push({
+                        P.push({
                             ...(0, h.N1)(
                                 E,
                                 () => {
                                     s(), i();
                                 },
                                 () => {
-                                    s(), _();
+                                    s(), M();
                                 },
                             ),
                             testID: b,
                         });
                     E.followed_by &&
-                        Z.push({
+                        P.push({
                             ...(0, p.l)({
                                 removeFollowerAction: (e) => {
                                     C(e, m);
@@ -133,17 +133,17 @@
                             }),
                             testID: D,
                         }),
-                        Z.push((0, u.op)({ blockAction: (e) => C(e, o), isSoftBlockEnabled: t.isTrue("xprofile_blocked_by_view_enabled"), source: u.SC.FOLLOWERS_LIST, testID: f, unblockAction: (e) => C(e, I), user: E })),
-                        Z.push({
+                        P.push((0, u.op)({ blockAction: (e) => C(e, o), isSoftBlockEnabled: t.isTrue("xprofile_blocked_by_view_enabled"), source: u.SC.FOLLOWERS_LIST, testID: f, unblockAction: (e) => C(e, _), user: E })),
+                        P.push({
                             Icon: l.default,
                             onClick: () => {
-                                s(), w();
+                                s(), v();
                             },
                             testID: k,
                             text: g({ screenName: E.screen_name }),
                         });
-                    const P = Z.map(({ Icon: e, onClick: t, testID: o, text: r }) => ({ text: r, onClick: t, Icon: e, testID: o }));
-                    return r.createElement(n.Z, { items: P, onCloseRequested: s });
+                    const Z = P.map(({ Icon: e, onClick: t, testID: o, text: r }) => ({ text: r, onClick: t, Icon: e, testID: o }));
+                    return r.createElement(n.Z, { items: Z, onCloseRequested: s });
                 });
         },
         980407: (e, t, o) => {
@@ -191,7 +191,7 @@
             const s = (e) => (t) => a.createElement(n.$6, null, (o) => a.createElement(e, (0, r.Z)({}, t, { isInSidebar: o })));
         },
         293988: (e, t, o) => {
-            o.d(t, { Z: () => M });
+            o.d(t, { Z: () => I });
             var r = o(202784),
                 a = o(154003),
                 n = o(674132),
@@ -213,8 +213,8 @@
                 k = s().c4da7d28,
                 y = s().j87c21f4,
                 g = s().iebc30ca,
-                v = s().dc740eb2;
-            class w extends r.PureComponent {
+                w = s().dc740eb2;
+            class v extends r.PureComponent {
                 constructor(e) {
                     super(e),
                         (this._renderButton = () => {
@@ -237,7 +237,7 @@
                         (this.state = { showingPushPrompt: !1 });
                 }
                 render() {
-                    return r.createElement("div", null, this.state.showingPushPrompt ? r.createElement(d.Z, { fullScreen: !0, message: v }) : null, this._renderButton());
+                    return r.createElement("div", null, this.state.showingPushPrompt ? r.createElement(d.Z, { fullScreen: !0, message: w }) : null, this._renderButton());
                 }
                 _updateDeviceFollowing(e) {
                     const { createLocalApiErrorHandler: t, updateDeviceFollowing: o, userId: r } = this.props;
@@ -248,7 +248,7 @@
                     t.scribeAction(e);
                 }
             }
-            const M = b(w);
+            const I = b(v);
         },
         652904: (e, t, o) => {
             o.d(t, { Z: () => c });
@@ -291,7 +291,7 @@
             const c = (0, a.ZP)(l(d));
         },
         62857: (e, t, o) => {
-            o.d(t, { Z: () => Z });
+            o.d(t, { Z: () => P });
             var r = o(807896),
                 a = o(202784),
                 n = o(476984),
@@ -315,25 +315,25 @@
                 k = o(973572),
                 y = o(668214),
                 g = o(919022);
-            const v = (e, t) => t.userIds,
-                w = (e, t) => {
+            const w = (e, t) => t.userIds,
+                v = (e, t) => {
                     const { filterPredicate: o = (e) => !!e, userIds: r } = t;
                     return r.filter((t) => {
                         const r = g.ZP.select(e, t);
                         return !!r && o(r);
                     });
                 },
-                M = (e, t) => {
+                I = (e, t) => {
                     const { userIds: o } = t;
                     return o.reduce((t, o) => {
                         const r = g.ZP.selectFetchStatus(e, o);
                         return r && (t[o] = r === b.ZP.NONE ? b.ZP.LOADING : r), t;
                     }, {});
                 },
-                I = (0, y.Z)()
+                _ = (0, y.Z)()
                     .propsFromState(() => ({
-                        availableUserIds: (0, k.Z)(w, (e) => e),
-                        fetchStatus: (0, k.Z)(w, M, v, (e, t, o) => {
+                        availableUserIds: (0, k.Z)(v, (e) => e),
+                        fetchStatus: (0, k.Z)(v, I, w, (e, t, o) => {
                             let r = b.ZP.LOADED;
                             for (let a = 0; a < o.length; a++) {
                                 const n = o[a];
@@ -347,7 +347,7 @@
                         }),
                     }))
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, D.zr)("USERS_LIST_CONTAINER"), fetchUsersIfNeeded: g.ZP.fetchManyIfNeeded })),
-                _ = l().f5b426c2;
+                M = l().f5b426c2;
             class E extends a.Component {
                 constructor(...e) {
                     super(...e),
@@ -367,7 +367,7 @@
                     s()(e.userIds, this.props.userIds) || this._fetchUsersIfNeeded();
                 }
                 render() {
-                    return a.createElement(c.Z, { "aria-label": _, fetchStatus: this.state.allUsersUnavailable ? b.ZP.LOADED : this.props.fetchStatus, onRequestRetry: this._handleFetch, render: this._renderContent, retryable: !1 });
+                    return a.createElement(c.Z, { "aria-label": M, fetchStatus: this.state.allUsersUnavailable ? b.ZP.LOADED : this.props.fetchStatus, onRequestRetry: this._handleFetch, render: this._renderContent, retryable: !1 });
                 }
                 _fetchUsersIfNeeded() {
                     const { availableUserIds: e, createLocalApiErrorHandler: t, fetchUsersIfNeeded: o, userIds: r } = this.props;
@@ -390,7 +390,7 @@
                     );
                 }
             }
-            const Z = I(E);
+            const P = _(E);
         },
         684511: (e, t, o) => {
             o.d(t, { Z: () => r });
@@ -433,7 +433,7 @@
             });
         },
         376293: (e, t, o) => {
-            o.d(t, { $f: () => I, KV: () => D, LI: () => P, SC: () => M, Vt: () => g, ed: () => S, op: () => _ });
+            o.d(t, { $f: () => _, KV: () => D, LI: () => Z, SC: () => I, Vt: () => g, ed: () => S, op: () => M });
             var r = o(202784),
                 a = o(190286),
                 n = o(674132),
@@ -452,36 +452,36 @@
                 k = s().j546fb79,
                 y = s().c9623eeb,
                 g = s().e133be4e,
-                v = s().he43bca4,
-                w = s().f5f01af6,
-                M = Object.freeze({ TWEET_CARET: "tweet_caret", PROFILE: "user_profile", LIST_DETAIL: "list_detail", RICH_FEEDBACK: "rich_feedback", TWEET: "tweet", FOLLOWERS_LIST: "followers_list" }),
-                I = (e, t) => ({ confirmButtonType: "destructiveFilled", headline: h({ screenName: e }), label: m, text: t ? b({ screenName: e }) : f({ screenName: e }) }),
-                _ = ({ blockAction: e, blockSubtext: t, isSoftBlockEnabled: o, source: r, testID: a, unblockAction: n, unblockSubtext: s, user: i }) => {
+                w = s().he43bca4,
+                v = s().f5f01af6,
+                I = Object.freeze({ TWEET_CARET: "tweet_caret", PROFILE: "user_profile", LIST_DETAIL: "list_detail", RICH_FEEDBACK: "rich_feedback", TWEET: "tweet", FOLLOWERS_LIST: "followers_list" }),
+                _ = (e, t) => ({ confirmButtonType: "destructiveFilled", headline: h({ screenName: e }), label: m, text: t ? b({ screenName: e }) : f({ screenName: e }) }),
+                M = ({ blockAction: e, blockSubtext: t, isSoftBlockEnabled: o, source: r, testID: a, unblockAction: n, unblockSubtext: s, user: i }) => {
                     let l,
                         u = d.Z;
-                    const h = P(i, o);
+                    const h = Z(i, o);
                     switch (r) {
-                        case M.PROFILE:
-                        case M.LIST_DETAIL:
-                        case M.FOLLOWERS_LIST:
+                        case I.PROFILE:
+                        case I.LIST_DETAIL:
+                        case I.FOLLOWERS_LIST:
                             u = () => {
                                 i.blocking ? n(h) : e(h);
                             };
                             break;
-                        case M.TWEET:
-                        case M.TWEET_CARET:
-                        case M.RICH_FEEDBACK:
+                        case I.TWEET:
+                        case I.TWEET_CARET:
+                        case I.RICH_FEEDBACK:
                             (l = c.uq.block),
                                 (u = () => {
                                     i.blocking ? n(h) : e(h);
                                 });
                     }
-                    return { confirmation: h, onClick: u, testID: a, shortcutKey: l, Icon: E(i.blocking), text: C(i), subText: Z({ user: i, blockSubtext: t, unblockSubtext: s }) };
+                    return { confirmation: h, onClick: u, testID: a, shortcutKey: l, Icon: E(i.blocking), text: C(i), subText: P({ user: i, blockSubtext: t, unblockSubtext: s }) };
                 },
                 E = (e) => (e ? l.default : i.default),
-                Z = ({ blockSubtext: e, unblockSubtext: t, user: o }) => (!o.blocking && e ? e(o.screen_name) : o.blocking ? t : void 0),
+                P = ({ blockSubtext: e, unblockSubtext: t, user: o }) => (!o.blocking && e ? e(o.screen_name) : o.blocking ? t : void 0),
                 C = (e) => (e.blocking ? y({ screenName: e.screen_name }) : p({ screenName: e.screen_name })),
-                P = (e, t) => (e.blocking ? ((e, t) => ({ confirmButtonType: "primary", headline: k({ screenName: e }), label: g, text: t ? w : v }))(e.screen_name, t) : I(e.screen_name, t)),
+                Z = (e, t) => (e.blocking ? ((e, t) => ({ confirmButtonType: "primary", headline: k({ screenName: e }), label: g, text: t ? v : w }))(e.screen_name, t) : _(e.screen_name, t)),
                 S = ({ confirmation: e, handleConfirm: t, onClose: o }) => {
                     const { confirmButtonType: n, headline: s, label: i, text: l } = e;
                     return r.createElement(a.Z, { cancelButtonLabel: u, confirmButtonLabel: i, confirmButtonType: n, headline: s, onCancel: o, onConfirm: t, text: l });
@@ -784,7 +784,7 @@
                 };
         },
         747644: (e, t, o) => {
-            o.r(t), o.d(t, { ConversationParticipantsScreen: () => E, default: () => Z });
+            o.r(t), o.d(t, { ConversationParticipantsScreen: () => E, default: () => P });
             var r = o(202784),
                 a = o(674132),
                 n = o.n(a),
@@ -803,25 +803,25 @@
                 k = o(836255);
             const y = (e, t) => t.match.params.screenName,
                 g = (e, t) => t.match.params.statusId,
-                v = (e, t) => k.Z.selectHydrated(e, t.match.params.statusId),
-                w = (e, t) => k.Z.selectFetchStatus(e, t.match.params.statusId),
-                M = (0, D.Z)()
+                w = (e, t) => k.Z.selectHydrated(e, t.match.params.statusId),
+                v = (e, t) => k.Z.selectFetchStatus(e, t.match.params.statusId),
+                I = (0, D.Z)()
                     .propsFromState(() => ({
-                        fetchStatus: w,
+                        fetchStatus: v,
                         screenName: y,
                         statusId: g,
-                        participantIds: (0, p.P1)(v, (e) => {
+                        participantIds: (0, p.P1)(w, (e) => {
                             if (!e) return [];
                             const { user_mentions: t = [] } = e.entities || {},
                                 o = [{ id_str: e.in_reply_to_user_id_str }, ...t.filter((t) => t.indices[0] < e.display_text_range[0])];
                             return (0, m.Z)((0, f.Z)(o.map((e) => e.id_str)));
                         }),
-                        unmentionedUserIds: (0, p.P1)(v, (e) => e?.unmentioned_user_ids ?? []),
+                        unmentionedUserIds: (0, p.P1)(w, (e) => e?.unmentioned_user_ids ?? []),
                     }))
                     .propsFromActions(() => ({ createLocalApiErrorHandler: (0, b.zr)("CONVERSATION_PARTICIPANTS_SCREEN"), fetchTweetIfNeeded: k.Z.fetchOneIfNeeded }))
                     .withAnalytics({ page: "conversation_participants" }),
-                I = n().cdd4aafe,
-                _ = n().aac3fad2;
+                _ = n().cdd4aafe,
+                M = n().aac3fad2;
             class E extends r.Component {
                 constructor(...e) {
                     super(...e),
@@ -841,10 +841,10 @@
                 }
                 render() {
                     const { fetchStatus: e, history: t, screenName: o, statusId: a } = this.props;
-                    return r.createElement(i.Z, { backLocation: `/${o.toLowerCase()}/status/${a}`, history: t, title: _ }, r.createElement(s.Z, { "aria-label": I, fetchStatus: e, onRequestRetry: this._handleFetch, render: this._renderList }));
+                    return r.createElement(i.Z, { backLocation: `/${o.toLowerCase()}/status/${a}`, history: t, title: M }, r.createElement(s.Z, { "aria-label": _, fetchStatus: e, onRequestRetry: this._handleFetch, render: this._renderList }));
                 }
             }
-            const Z = M(E);
+            const P = I(E);
         },
         879113: (e, t, o) => {
             o.d(t, { Z: () => p });
@@ -880,7 +880,7 @@
             }
             p.defaultProps = { renderFailure: s.Z, retryable: !0 };
         },
-        748138: (e, t, o) => {
+        226597: (e, t, o) => {
             o.r(t), o.d(t, { default: () => l });
             var r = o(202784),
                 a = o(890601),
@@ -888,50 +888,11 @@
                 s = o(347101);
             const i = (e = {}) => {
                 const { direction: t } = (0, n.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
-            };
-            i.metadata = { width: 24, height: 24 };
-            const l = i;
-        },
-        314948: (e, t, o) => {
-            o.r(t), o.d(t, { default: () => l });
-            var r = o(202784),
-                a = o(890601),
-                n = o(783427),
-                s = o(347101);
-            const i = (e = {}) => {
-                const { direction: t } = (0, n.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M12 3.75c-4.55 0-8.25 3.69-8.25 8.25 0 1.92.66 3.68 1.75 5.08l2.8-2.79 1.41 1.42-2.79 2.79c1.4 1.1 3.16 1.75 5.08 1.75 4.56 0 8.25-3.69 8.25-8.25 0-1.92-.65-3.68-1.75-5.08l-2.79 2.79-1.41-1.42 2.79-2.79C15.68 4.4 13.92 3.75 12 3.75zM1.75 12C1.75 6.34 6.34 1.75 12 1.75S22.25 6.34 22.25 12 17.66 22.25 12 22.25 1.75 17.66 1.75 12z" })) }, { writingDirection: t });
-            };
-            i.metadata = { width: 24, height: 24 };
-            const l = i;
-        },
-        74514: (e, t, o) => {
-            o.r(t), o.d(t, { default: () => l });
-            var r = o(202784),
-                a = o(890601),
-                n = o(783427),
-                s = o(347101);
-            const i = (e = {}) => {
-                const { direction: t } = (0, n.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M12 2C7.93 2 4.51 5.02 4 9.05L2.87 18H7.1c.46 2.28 2.48 4 4.9 4s4.44-1.72 4.9-4h4.24l-.64-5h-2.02l.38 3H5.13l.85-6.7C6.36 6.27 8.94 4 12 4V2zm0 18c-1.31 0-2.42-.83-2.83-2h5.66c-.41 1.17-1.52 2-2.83 2zm.3-12.29l1.41-1.42 1.76 1.76 4.29-4.72 1.48 1.34-5.7 6.28-3.24-3.24z" })) }, { writingDirection: t });
-            };
-            i.metadata = { width: 24, height: 24 };
-            const l = i;
-        },
-        155353: (e, t, o) => {
-            o.r(t), o.d(t, { default: () => l });
-            var r = o(202784),
-                a = o(890601),
-                n = o(783427),
-                s = o(347101);
-            const i = (e = {}) => {
-                const { direction: t } = (0, n.Z)();
-                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z" })) }, { writingDirection: t });
+                return (0, a.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [s.Z.root, e.style], viewBox: "0 0 24 24", children: r.createElement("g", null, r.createElement("path", { d: "M3.707 21.707l18-18-1.414-1.414-2.088 2.088C17.688 4.137 17.11 4 16.5 4H11v2h5.5c.028 0 .056 0 .084.002l-10.88 10.88c-.131-.266-.204-.565-.204-.882V7.551l2.068 1.93 1.365-1.462L4.5 3.882.068 8.019l1.365 1.462 2.068-1.93V16c0 .871.278 1.677.751 2.334l-1.959 1.959 1.414 1.414zM18.5 9h2v7.449l2.068-1.93 1.365 1.462-4.433 4.137-4.432-4.137 1.365-1.462 2.067 1.93V9zm-8.964 9l-2 2H13v-2H9.536z" })) }, { writingDirection: t });
             };
             i.metadata = { width: 24, height: 24 };
             const l = i;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ConversationParticipants.fa72a15a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.ConversationParticipants.af0c233a.js.map

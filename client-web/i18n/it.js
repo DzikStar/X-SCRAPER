@@ -1279,6 +1279,7 @@
                 o("b8f3500a", "Visualizza discussione nell'aggregatore"),
                 o("fc7db594", "Riepilogo del profilo"),
                 o("c3f04d9c", "Fammici pensare..."),
+                o("cbdddb0a", "Conclusa"),
                 o("e98cc293", function (e) {
                     return "Ricerca di " + e.query + " in corso";
                 }),
@@ -1918,9 +1919,9 @@
                 o("b5660338", "Anteprima cronologia"),
                 o("hff1b97a", "Solo gli abbonati possono rispondere."),
                 o("a330771e", "Copia link negli appunti"),
-                o("b6510e68", "Copia l'URL dell'articolo così da condividerlo."),
-                o("e4a6e006", "Qualcosa è andato storto. Riprova.");
-            o("eff483e0", "Non appena avrai eseguito la pubblicazione, ottieni il link per condividere l'articolo."),
+                o("b6510e68", "Copia l'URL dell'articolo così da condividerlo.");
+            o("e4a6e006", "Qualcosa è andato storto. Riprova."),
+                o("eff483e0", "Non appena avrai eseguito la pubblicazione, ottieni il link per condividere l'articolo."),
                 o("ca15dd4e", "Bozza"),
                 o("bb40bf66", "Pubblicato"),
                 o("h107935c", "Ultimo salvataggio: adesso"),
@@ -2970,9 +2971,9 @@
                 o("e0adec82", "Risorse del brand"),
                 o("df1b7550", "Marketing"),
                 o("he258678", "X per le attività"),
-                o("c6f58084", "Sviluppatori"),
-                o("d83f18d2", "Elenco");
-            o("hc5aa17c", "Scarica l'app X"),
+                o("c6f58084", "Sviluppatori");
+            o("d83f18d2", "Elenco"),
+                o("hc5aa17c", "Scarica l'app X"),
                 o("j0693948", "Scarica l'app Grok"),
                 o("af781666", "Cosa pensano gli altri?"),
                 o("ad35153e", "beta"),
@@ -3886,9 +3887,9 @@
                 }),
                 o("e3275464", "Invia"),
                 o("cededf2a", "Host"),
-                o("i2caef48", "Cohost"),
-                o("j245c654", "Partecipanti attivi");
-            o("eda23a02", "Ascoltatori"),
+                o("i2caef48", "Cohost");
+            o("j245c654", "Partecipanti attivi"),
+                o("eda23a02", "Ascoltatori"),
                 o("b90eb348", "Invita a partecipare attivamente"),
                 o("d9a63e82", "Rimuovi dai partecipanti attivi"),
                 o("bd917b26", "Invita come cohost"),
@@ -4285,7 +4286,6 @@
                 o("e2811afc", "Partite"),
                 o("j081fa34", "Classifica"),
                 o("i7c7f156", "Domani"),
-                o("cbdddb0a", "Conclusa"),
                 o("b134ba52", "In corso"),
                 o("j1361724", "Intervallo"),
                 o("fa0f1262", "Pausa"),
@@ -13221,4 +13221,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/it.f168f22a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/it.6fda9a0a.js.map

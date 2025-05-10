@@ -1286,6 +1286,7 @@
                 t("b8f3500a", "Vizualizează fir în Cititor"),
                 t("fc7db594", "Sumarul profilului"),
                 t("c3f04d9c", "Se gândește"),
+                t("cbdddb0a", "Încheiat"),
                 t("e98cc293", function (e) {
                     return "Căutare după " + e.query;
                 }),
@@ -1925,9 +1926,9 @@
                 t("b5660338", "Previzualizare Cronologie"),
                 t("hff1b97a", "Doar utilizatorii abonați pot răspunde."),
                 t("a330771e", "Copiază linkul pe clipboard"),
-                t("b6510e68", "Copiază URL-ul articolului pentru a-l putea distribui."),
-                t("e4a6e006", "Ceva nu a mers bine. Încearcă din nou.");
-            t("eff483e0", "După publicare, obține un link pentru a distribui articolul."),
+                t("b6510e68", "Copiază URL-ul articolului pentru a-l putea distribui.");
+            t("e4a6e006", "Ceva nu a mers bine. Încearcă din nou."),
+                t("eff483e0", "După publicare, obține un link pentru a distribui articolul."),
                 t("ca15dd4e", "Schiță"),
                 t("bb40bf66", "Publicate"),
                 t("h107935c", "Salvată ultima dată chiar acum"),
@@ -2977,9 +2978,9 @@
                 t("e0adec82", "Resurse pentru branduri"),
                 t("df1b7550", "Marketing"),
                 t("he258678", "X pentru afaceri"),
-                t("c6f58084", "Dezvoltatori"),
-                t("d83f18d2", "Director");
-            t("hc5aa17c", "Obţine aplicația X"),
+                t("c6f58084", "Dezvoltatori");
+            t("d83f18d2", "Director"),
+                t("hc5aa17c", "Obţine aplicația X"),
                 t("j0693948", "Obține aplicația Grok"),
                 t("af781666", "Ce spun oamenii?"),
                 t("ad35153e", "beta"),
@@ -3893,9 +3894,9 @@
                 }),
                 t("e3275464", "Trimite"),
                 t("cededf2a", "Gazdă"),
-                t("i2caef48", "Co-gazde"),
-                t("j245c654", "Vorbitori");
-            t("eda23a02", "Ascultători"),
+                t("i2caef48", "Co-gazde");
+            t("j245c654", "Vorbitori"),
+                t("eda23a02", "Ascultători"),
                 t("b90eb348", "Invită să vorbească"),
                 t("d9a63e82", "Elimină din rândul vorbitorilor"),
                 t("bd917b26", "Invită să fie co-gazdă"),
@@ -4292,7 +4293,6 @@
                 t("e2811afc", "Meciuri"),
                 t("j081fa34", "Clasament"),
                 t("i7c7f156", "Mâine"),
-                t("cbdddb0a", "Încheiat"),
                 t("b134ba52", "În curs"),
                 t("j1361724", "Pauză"),
                 t("fa0f1262", "Pauză"),
@@ -13230,4 +13230,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ro.1ccac9ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ro.3353a49a.js.map

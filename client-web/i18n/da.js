@@ -1275,6 +1275,7 @@
                 t("b8f3500a", "Vis tråd i Læser"),
                 t("fc7db594", "Profilresumé"),
                 t("c3f04d9c", "Tænker"),
+                t("cbdddb0a", "Fuldført"),
                 t("e98cc293", function (e) {
                     return "Søger efter " + e.query;
                 }),
@@ -1914,9 +1915,9 @@
                 t("b5660338", "Forhåndsvisning af tidslinje"),
                 t("hff1b97a", "Kun abonnenter kan svare."),
                 t("a330771e", "Kopier linket til din udklipsholder"),
-                t("b6510e68", "Kopier din Artikels URL-adresse, så du kan dele den."),
-                t("e4a6e006", "Noget gik galt. Prøv igen.");
-            t("eff483e0", "Når du har udgivet Artiklen, får du et link til at dele den."),
+                t("b6510e68", "Kopier din Artikels URL-adresse, så du kan dele den.");
+            t("e4a6e006", "Noget gik galt. Prøv igen."),
+                t("eff483e0", "Når du har udgivet Artiklen, får du et link til at dele den."),
                 t("ca15dd4e", "Udkast"),
                 t("bb40bf66", "Udgivet"),
                 t("h107935c", "Sidst gemt lige nu"),
@@ -2966,9 +2967,9 @@
                 t("e0adec82", "Brandressourcer"),
                 t("df1b7550", "Marketing"),
                 t("he258678", "X til virksomheder"),
-                t("c6f58084", "Udviklere"),
-                t("d83f18d2", "Oversigt");
-            t("hc5aa17c", "Hent X-appen"),
+                t("c6f58084", "Udviklere");
+            t("d83f18d2", "Oversigt"),
+                t("hc5aa17c", "Hent X-appen"),
                 t("j0693948", "Hent Grok-appen"),
                 t("af781666", "Hvad synes folk?"),
                 t("ad35153e", "beta"),
@@ -3882,9 +3883,9 @@
                 }),
                 t("e3275464", "Send"),
                 t("cededf2a", "Vært"),
-                t("i2caef48", "Medværter"),
-                t("j245c654", "Talere");
-            t("eda23a02", "Lyttere"),
+                t("i2caef48", "Medværter");
+            t("j245c654", "Talere"),
+                t("eda23a02", "Lyttere"),
                 t("b90eb348", "Inviter til at tale"),
                 t("d9a63e82", "Fjern fra talere"),
                 t("bd917b26", "Inviter som medvært"),
@@ -4281,7 +4282,6 @@
                 t("e2811afc", "Spil"),
                 t("j081fa34", "Stillinger"),
                 t("i7c7f156", "I morgen"),
-                t("cbdddb0a", "Fuldført"),
                 t("b134ba52", "I gang"),
                 t("j1361724", "Pause"),
                 t("fa0f1262", "Pause"),
@@ -13219,4 +13219,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/da.c197f79a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/da.bbfc63ea.js.map

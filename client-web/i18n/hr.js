@@ -1282,6 +1282,7 @@
                 o("b8f3500a", "Prikaži nit razgovora u alatu za čitanje"),
                 o("fc7db594", "Sažetak profila"),
                 o("c3f04d9c", "Razmišljam"),
+                o("cbdddb0a", "Završeno"),
                 o("e98cc293", function (a) {
                     return "Searching for " + a.query;
                 }),
@@ -1921,9 +1922,9 @@
                 o("b5660338", "Pretpregled vremenske crte"),
                 o("hff1b97a", "Odgovoriti mogu samo pretplatnici."),
                 o("a330771e", "Kopirajte vezu u međuspremnik"),
-                o("b6510e68", "Kopirajte URL svog članka kako biste ga mogli dijeliti."),
-                o("e4a6e006", "Došlo je do pogreške. Pokušajte ponovno.");
-            o("eff483e0", "Nakon što objavite, dobijte vezu za dijeljenje članka."),
+                o("b6510e68", "Kopirajte URL svog članka kako biste ga mogli dijeliti.");
+            o("e4a6e006", "Došlo je do pogreške. Pokušajte ponovno."),
+                o("eff483e0", "Nakon što objavite, dobijte vezu za dijeljenje članka."),
                 o("ca15dd4e", "Skica"),
                 o("bb40bf66", "Objavljeno"),
                 o("h107935c", "Zadnji put spremljeno upravo sad"),
@@ -2973,9 +2974,9 @@
                 o("e0adec82", "Resursi za robne marke"),
                 o("df1b7550", "Marketing"),
                 o("he258678", "X za tvrtke"),
-                o("c6f58084", "Razvojni inženjeri"),
-                o("d83f18d2", "Direktorij");
-            o("hc5aa17c", "Preuzmite aplikaciju X"),
+                o("c6f58084", "Razvojni inženjeri");
+            o("d83f18d2", "Direktorij"),
+                o("hc5aa17c", "Preuzmite aplikaciju X"),
                 o("j0693948", "Preuzmite aplikaciju Grok"),
                 o("af781666", "Što ljudi misle?"),
                 o("ad35153e", "beta"),
@@ -3889,9 +3890,9 @@
                 }),
                 o("e3275464", "Pošalji"),
                 o("cededf2a", "Voditelj(ica)"),
-                o("i2caef48", "Suvoditelji"),
-                o("j245c654", "Govornici");
-            o("eda23a02", "Slušatelji"),
+                o("i2caef48", "Suvoditelji");
+            o("j245c654", "Govornici"),
+                o("eda23a02", "Slušatelji"),
                 o("b90eb348", "Pozovi govornika"),
                 o("d9a63e82", "Ukloni s mjesta govornika"),
                 o("bd917b26", "Pozovi na mjesto suvoditelja"),
@@ -4288,7 +4289,6 @@
                 o("e2811afc", "Igre"),
                 o("j081fa34", "Poredak"),
                 o("i7c7f156", "Sutra"),
-                o("cbdddb0a", "Završeno"),
                 o("b134ba52", "U tijeku"),
                 o("j1361724", "Poluvrijeme"),
                 o("fa0f1262", "Predah"),
@@ -13238,4 +13238,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hr.25fa2faa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hr.0cc1755a.js.map

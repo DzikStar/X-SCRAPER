@@ -1275,6 +1275,7 @@
                 a("b8f3500a", "[[242296]] View thread in Reader"),
                 a("fc7db594", "[[291861]] Profile Summary"),
                 a("c3f04d9c", "[[285092]] Thinking"),
+                a("cbdddb0a", "[[210777]] Completed"),
                 a("e98cc293", function (e) {
                     return "[[294860]] Searching for " + e.query;
                 }),
@@ -1914,9 +1915,9 @@
                 a("b5660338", "[[286495]] Timeline preview"),
                 a("hff1b97a", "[[284914]] Only Subscribed can reply."),
                 a("a330771e", "[[284904]] Copy link to your clipboard"),
-                a("b6510e68", "[[284899]] Copy your Article’s URL so you can share it."),
-                a("e4a6e006", "[[243272]] Something went wrong. Please try again.");
-            a("eff483e0", "[[284886]] After you publish, get a link to share the Article."),
+                a("b6510e68", "[[284899]] Copy your Article’s URL so you can share it.");
+            a("e4a6e006", "[[243272]] Something went wrong. Please try again."),
+                a("eff483e0", "[[284886]] After you publish, get a link to share the Article."),
                 a("ca15dd4e", "[[209399]] Draft"),
                 a("bb40bf66", "[[224076]] Published"),
                 a("h107935c", "[[284908]] Last saved just now"),
@@ -2966,9 +2967,9 @@
                 a("e0adec82", "[[225676]] Brand Resources"),
                 a("df1b7550", "[[180908]] Marketing"),
                 a("he258678", "[[280696]] X for Business"),
-                a("c6f58084", "[[180900]] Developers"),
-                a("d83f18d2", "[[180901]] Directory");
-            a("hc5aa17c", "[[294380]] Get the X app"),
+                a("c6f58084", "[[180900]] Developers");
+            a("d83f18d2", "[[180901]] Directory"),
+                a("hc5aa17c", "[[294380]] Get the X app"),
                 a("j0693948", "[[294379]] Get the Grok app"),
                 a("af781666", "[[294695]] What do people think?"),
                 a("ad35153e", "[[294696]] beta"),
@@ -3882,9 +3883,9 @@
                 }),
                 a("e3275464", "[[150231]] Send"),
                 a("cededf2a", "[[231304]] Host"),
-                a("i2caef48", "[[238359]] Co-hosts"),
-                a("j245c654", "[[237272]] Speakers");
-            a("eda23a02", "[[281004]] Listeners"),
+                a("i2caef48", "[[238359]] Co-hosts");
+            a("j245c654", "[[237272]] Speakers"),
+                a("eda23a02", "[[281004]] Listeners"),
                 a("b90eb348", "[[281663]] Invite to Speak"),
                 a("d9a63e82", "[[281204]] Remove from Speakers"),
                 a("bd917b26", "[[285861]] Invite to Co-host"),
@@ -4281,7 +4282,6 @@
                 a("e2811afc", "[[292100]] Games"),
                 a("j081fa34", "[[292102]] Standings"),
                 a("i7c7f156", "[[214926]] Tomorrow"),
-                a("cbdddb0a", "[[210777]] Completed"),
                 a("b134ba52", "[[292308]] In Progress"),
                 a("j1361724", "[[292365]] Halftime"),
                 a("fa0f1262", "[[292192]] Break"),
@@ -13217,4 +13217,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-ss.b94fd9ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-ss.3026059a.js.map

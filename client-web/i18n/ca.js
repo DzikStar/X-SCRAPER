@@ -1275,6 +1275,7 @@
                 t("b8f3500a", "Mostra el fil al lector"),
                 t("fc7db594", "Resum del perfil"),
                 t("c3f04d9c", "Està pensant"),
+                t("cbdddb0a", "Completat"),
                 t("e98cc293", function (e) {
                     return "Cerca per " + e.query;
                 }),
@@ -1914,9 +1915,9 @@
                 t("b5660338", "Vista prèvia de la cronologia"),
                 t("hff1b97a", "Només els subscriptors hi poden respondre."),
                 t("a330771e", "Copia l'enllaç al porta-retalls"),
-                t("b6510e68", "Copia l'URL de l'article per poder compartir-lo."),
-                t("e4a6e006", "Alguna cosa ha anat malament. Torna-ho a provar.");
-            t("eff483e0", "Després de publicar, pots obtenir un enllaç per compartir l'article."),
+                t("b6510e68", "Copia l'URL de l'article per poder compartir-lo.");
+            t("e4a6e006", "Alguna cosa ha anat malament. Torna-ho a provar."),
+                t("eff483e0", "Després de publicar, pots obtenir un enllaç per compartir l'article."),
                 t("ca15dd4e", "Esborrany"),
                 t("bb40bf66", "S'ha publicat"),
                 t("h107935c", "Desat per últim cop ara mateix"),
@@ -2966,9 +2967,9 @@
                 t("e0adec82", "Recursos de marca"),
                 t("df1b7550", "Màrqueting"),
                 t("he258678", "X per a empreses"),
-                t("c6f58084", "Desenvolupadors"),
-                t("d83f18d2", "Directori");
-            t("hc5aa17c", "Obtén l'aplicació de X"),
+                t("c6f58084", "Desenvolupadors");
+            t("d83f18d2", "Directori"),
+                t("hc5aa17c", "Obtén l'aplicació de X"),
                 t("j0693948", "Obtén l'aplicació de Grok"),
                 t("af781666", "Què pensa la gent?"),
                 t("ad35153e", "versió beta"),
@@ -3882,9 +3883,9 @@
                 }),
                 t("e3275464", "Envia"),
                 t("cededf2a", "Amfitrió"),
-                t("i2caef48", "Coamfitrions"),
-                t("j245c654", "Participants");
-            t("eda23a02", "Oients"),
+                t("i2caef48", "Coamfitrions");
+            t("j245c654", "Participants"),
+                t("eda23a02", "Oients"),
                 t("b90eb348", "Convida a parlar"),
                 t("d9a63e82", "Elimina'l dels participants"),
                 t("bd917b26", "Convida'l a ser coamfitrió"),
@@ -4281,7 +4282,6 @@
                 t("e2811afc", "Jocs"),
                 t("j081fa34", "Classificació"),
                 t("i7c7f156", "Demà"),
-                t("cbdddb0a", "Completat"),
                 t("b134ba52", "En curs"),
                 t("j1361724", "Mitja part"),
                 t("fa0f1262", "Descans"),
@@ -13217,4 +13217,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ca.07a640ba.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ca.7390934a.js.map

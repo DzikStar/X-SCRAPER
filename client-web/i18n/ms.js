@@ -1274,6 +1274,7 @@
                 i("b8f3500a", "Lihat thread dalam Pembaca"),
                 i("fc7db594", "Ringkasan Profil"),
                 i("c3f04d9c", "Berfikir"),
+                i("cbdddb0a", "Selesai"),
                 i("e98cc293", function (a) {
                     return "Mencari " + a.query;
                 }),
@@ -1913,9 +1914,9 @@
                 i("b5660338", "Pratonton Garis masa"),
                 i("hff1b97a", "Hanya yang Melanggan boleh membalas."),
                 i("a330771e", "Salin pautan pada papan klip anda"),
-                i("b6510e68", "Salin URL Artikel anda supaya boleh dikongsi."),
-                i("e4a6e006", "Ada sesuatu yang tidak kena. Sila cuba lagi.");
-            i("eff483e0", "Selepas diterbitkan, dapatkan pautan untuk berkongsi Artikel anda."),
+                i("b6510e68", "Salin URL Artikel anda supaya boleh dikongsi.");
+            i("e4a6e006", "Ada sesuatu yang tidak kena. Sila cuba lagi."),
+                i("eff483e0", "Selepas diterbitkan, dapatkan pautan untuk berkongsi Artikel anda."),
                 i("ca15dd4e", "Draf"),
                 i("bb40bf66", "Diterbitkan"),
                 i("h107935c", "Kali terakhir disimpan sebentar tadi"),
@@ -2965,9 +2966,9 @@
                 i("e0adec82", "Sumber Jenama"),
                 i("df1b7550", "Pemasaran"),
                 i("he258678", "X untuk Perniagaan"),
-                i("c6f58084", "Pembangun"),
-                i("d83f18d2", "Direktori");
-            i("hc5aa17c", "Dapatkan aplikasi X"),
+                i("c6f58084", "Pembangun");
+            i("d83f18d2", "Direktori"),
+                i("hc5aa17c", "Dapatkan aplikasi X"),
                 i("j0693948", "Dapatkan aplikasi Grok"),
                 i("af781666", "Apakah pandangan orang ramai?"),
                 i("ad35153e", "beta"),
@@ -3881,9 +3882,9 @@
                 }),
                 i("e3275464", "Hantar"),
                 i("cededf2a", "Hos"),
-                i("i2caef48", "Hos lain"),
-                i("j245c654", "Pembicara");
-            i("eda23a02", "Pendengar"),
+                i("i2caef48", "Hos lain");
+            i("j245c654", "Pembicara"),
+                i("eda23a02", "Pendengar"),
                 i("b90eb348", "Jemput untuk Berbicara"),
                 i("d9a63e82", "Alih keluar daripada Pembicara"),
                 i("bd917b26", "Jemput untuk menjadi Hos lain"),
@@ -4280,7 +4281,6 @@
                 i("e2811afc", "Permainan"),
                 i("j081fa34", "Kedudukan"),
                 i("i7c7f156", "Esok"),
-                i("cbdddb0a", "Selesai"),
                 i("b134ba52", "Sedang Berjalan"),
                 i("j1361724", "Separuh masa"),
                 i("fa0f1262", "Rehat"),
@@ -13215,4 +13215,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.1aa3fa9a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ms.aef7301a.js.map

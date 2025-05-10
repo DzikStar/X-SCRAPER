@@ -1279,6 +1279,7 @@
                 n("b8f3500a", "Voir la discussion en mode Lecture"),
                 n("fc7db594", "Résumé du profil"),
                 n("c3f04d9c", "Réflexion"),
+                n("cbdddb0a", "Terminé"),
                 n("e98cc293", function (e) {
                     return "Recherche de " + e.query;
                 }),
@@ -1918,9 +1919,9 @@
                 n("b5660338", "Aperçu du fil"),
                 n("hff1b97a", "Seules les personnes abonnées peuvent répondre."),
                 n("a330771e", "Copier le lien dans mon Presse‑papiers"),
-                n("b6510e68", "Copiez l'URL de votre Article pour pouvoir le partager."),
-                n("e4a6e006", "Une erreur est survenue. Veuillez réessayer.");
-            n("eff483e0", "Une fois que vous avez publié un Article, obtenez un lien pour le partager."),
+                n("b6510e68", "Copiez l'URL de votre Article pour pouvoir le partager.");
+            n("e4a6e006", "Une erreur est survenue. Veuillez réessayer."),
+                n("eff483e0", "Une fois que vous avez publié un Article, obtenez un lien pour le partager."),
                 n("ca15dd4e", "Brouillon"),
                 n("bb40bf66", "Publiés"),
                 n("h107935c", "Dernier enregistrement : à l'instant"),
@@ -2970,9 +2971,9 @@
                 n("e0adec82", "Ressources de la marque"),
                 n("df1b7550", "Marketing"),
                 n("he258678", "X pour les professionnels"),
-                n("c6f58084", "Développeurs"),
-                n("d83f18d2", "Répertoire");
-            n("hc5aa17c", "Télécharger l'application X"),
+                n("c6f58084", "Développeurs");
+            n("d83f18d2", "Répertoire"),
+                n("hc5aa17c", "Télécharger l'application X"),
                 n("j0693948", "Télécharger l'application Grok"),
                 n("af781666", "Quelles sont les opinions à ce sujet ?"),
                 n("ad35153e", "bêta"),
@@ -3886,9 +3887,9 @@
                 }),
                 n("e3275464", "Envoyer"),
                 n("cededf2a", "Hôte"),
-                n("i2caef48", "Cohôtes"),
-                n("j245c654", "Intervenants");
-            n("eda23a02", "Auditeurs"),
+                n("i2caef48", "Cohôtes");
+            n("j245c654", "Intervenants"),
+                n("eda23a02", "Auditeurs"),
                 n("b90eb348", "Inviter à parler"),
                 n("d9a63e82", "Supprimer des intervenants"),
                 n("bd917b26", "Inviter à coanimer"),
@@ -4285,7 +4286,6 @@
                 n("e2811afc", "Matchs"),
                 n("j081fa34", "Classements"),
                 n("i7c7f156", "Demain"),
-                n("cbdddb0a", "Terminé"),
                 n("b134ba52", "En cours"),
                 n("j1361724", "Mi‑temps"),
                 n("fa0f1262", "Arrêt"),
@@ -13220,4 +13220,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.d65d058a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fr.ccee73ba.js.map

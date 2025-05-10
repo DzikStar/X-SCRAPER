@@ -1274,6 +1274,7 @@
                 o("b8f3500a", "Ver hilo en Lector"),
                 o("fc7db594", "Resumen del perfil"),
                 o("c3f04d9c", "Pensando"),
+                o("cbdddb0a", "Finalizado"),
                 o("e98cc293", function (e) {
                     return "Buscando " + e.query;
                 }),
@@ -1913,9 +1914,9 @@
                 o("b5660338", "Vista previa de la cronología"),
                 o("hff1b97a", "Solo pueden responder los suscriptores."),
                 o("a330771e", "Copiar enlace a tu portapapeles"),
-                o("b6510e68", "Copia la URL de tu Artículo para poder compartirlo."),
-                o("e4a6e006", "Algo salió mal. Inténtalo de nuevo.");
-            o("eff483e0", "Después de publicar, obtén un enlace para compartir el Artículo."),
+                o("b6510e68", "Copia la URL de tu Artículo para poder compartirlo.");
+            o("e4a6e006", "Algo salió mal. Inténtalo de nuevo."),
+                o("eff483e0", "Después de publicar, obtén un enlace para compartir el Artículo."),
                 o("ca15dd4e", "Borrador"),
                 o("bb40bf66", "Publicados"),
                 o("h107935c", "Guardado por última vez recién"),
@@ -2965,9 +2966,9 @@
                 o("e0adec82", "Recursos para marcas"),
                 o("df1b7550", "Marketing"),
                 o("he258678", "X para empresas"),
-                o("c6f58084", "Desarrolladores"),
-                o("d83f18d2", "Guía");
-            o("hc5aa17c", "Obtén la app de X"),
+                o("c6f58084", "Desarrolladores");
+            o("d83f18d2", "Guía"),
+                o("hc5aa17c", "Obtén la app de X"),
                 o("j0693948", "Obtén la app de Grok"),
                 o("af781666", "¿Qué piensa la gente?"),
                 o("ad35153e", "beta"),
@@ -3881,9 +3882,9 @@
                 }),
                 o("e3275464", "Enviar"),
                 o("cededf2a", "Anfitrión"),
-                o("i2caef48", "Coanfitriones"),
-                o("j245c654", "Hablantes");
-            o("eda23a02", "Oyentes"),
+                o("i2caef48", "Coanfitriones");
+            o("j245c654", "Hablantes"),
+                o("eda23a02", "Oyentes"),
                 o("b90eb348", "Invitar a hablar"),
                 o("d9a63e82", "Eliminar de los hablantes"),
                 o("bd917b26", "Invitar a ser coanfitrión"),
@@ -4280,7 +4281,6 @@
                 o("e2811afc", "Juegos"),
                 o("j081fa34", "Tabla de posiciones"),
                 o("i7c7f156", "Mañana"),
-                o("cbdddb0a", "Finalizado"),
                 o("b134ba52", "En curso"),
                 o("j1361724", "Medio tiempo"),
                 o("fa0f1262", "Descanso"),
@@ -13228,4 +13228,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/es.3423a21a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/es.ba6d1aea.js.map

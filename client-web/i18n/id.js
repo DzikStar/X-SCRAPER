@@ -1274,6 +1274,7 @@
                 i("b8f3500a", "Lihat utas di Pembaca"),
                 i("fc7db594", "Ringkasan Profil"),
                 i("c3f04d9c", "Berpikir"),
+                i("cbdddb0a", "Selesai"),
                 i("e98cc293", function (a) {
                     return "Mencari " + a.query;
                 }),
@@ -1913,9 +1914,9 @@
                 i("b5660338", "Pratinjau Timeline"),
                 i("hff1b97a", "Hanya Pelanggan yang dapat membalas."),
                 i("a330771e", "Salin tautan ke clipboard Anda"),
-                i("b6510e68", "Salin URL Artikel Anda untuk membagikannya."),
-                i("e4a6e006", "Ada kesalahan teknis. Silakan coba lagi.");
-            i("eff483e0", "Setelah Anda terbitkan, dapatkan tautan untuk membagikan Artikel tersebut."),
+                i("b6510e68", "Salin URL Artikel Anda untuk membagikannya.");
+            i("e4a6e006", "Ada kesalahan teknis. Silakan coba lagi."),
+                i("eff483e0", "Setelah Anda terbitkan, dapatkan tautan untuk membagikan Artikel tersebut."),
                 i("ca15dd4e", "Draf"),
                 i("bb40bf66", "Diterbitkan"),
                 i("h107935c", "Terakhir disimpan baru saja"),
@@ -2965,9 +2966,9 @@
                 i("e0adec82", "Sumber Daya Merek"),
                 i("df1b7550", "Marketing"),
                 i("he258678", "X untuk Bisnis"),
-                i("c6f58084", "Pengembang"),
-                i("d83f18d2", "Direktori");
-            i("hc5aa17c", "Dapatkan aplikasi X"),
+                i("c6f58084", "Pengembang");
+            i("d83f18d2", "Direktori"),
+                i("hc5aa17c", "Dapatkan aplikasi X"),
                 i("j0693948", "Dapatkan aplikasi Grok"),
                 i("af781666", "Apa pendapat orang-orang?"),
                 i("ad35153e", "beta"),
@@ -3881,9 +3882,9 @@
                 }),
                 i("e3275464", "Kirim"),
                 i("cededf2a", "Host"),
-                i("i2caef48", "Co-host"),
-                i("j245c654", "Pembicara");
-            i("eda23a02", "Pendengar"),
+                i("i2caef48", "Co-host");
+            i("j245c654", "Pembicara"),
+                i("eda23a02", "Pendengar"),
                 i("b90eb348", "Undang untuk Berbicara"),
                 i("d9a63e82", "Hapus sebagai Pembicara"),
                 i("bd917b26", "Undang untuk menjadi Co-host"),
@@ -4280,7 +4281,6 @@
                 i("e2811afc", "Pertandingan"),
                 i("j081fa34", "Klasemen"),
                 i("i7c7f156", "Besok"),
-                i("cbdddb0a", "Selesai"),
                 i("b134ba52", "Sedang Berlangsung"),
                 i("j1361724", "Paruh waktu"),
                 i("fa0f1262", "Rehat"),
@@ -13215,4 +13215,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/id.9f4e683a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/id.e8c7ec4a.js.map

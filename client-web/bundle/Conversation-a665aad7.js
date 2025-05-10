@@ -251,7 +251,7 @@
                 return r.createElement(y, { onBack: d }, r.createElement(o.ZP, null, r.createElement(T, u)));
             });
         },
-        919086: (e, t, n) => {
+        968589: (e, t, n) => {
             n.r(t), n.d(t, { QuickPromoteScreen: () => Hn, default: () => zn });
             n(571372);
             var r = n(202784),
@@ -330,18 +330,21 @@
             function X() {
                 return r.createElement($.Z, { "aria-label": "", source: Y, style: u.default.absoluteFill });
             }
-            var J = n(835152);
-            const ee = p().fcc839b6,
-                te = (p().b679a538, p().cb19a2f0),
-                ne = p().a2d37164,
-                re = p().cefad302,
-                oe = p().b614fad0,
-                ae = u.default.create((e) => ({ titleContainer: { paddingBottom: e.spaces.space28 }, qpContainer: { flex: 1, overflowY: "auto" } })),
-                [se, ce] = [
-                    { label: (0, G.WF)(C.CH.Engagements), value: C.CH.Engagements, description: te, illustration: r.createElement(X, null), testID: W.Z.getObjective(C.CH.Engagements) },
-                    { label: (0, G.WF)(C.CH.WebsiteClicks), value: C.CH.WebsiteClicks, description: ne, illustration: r.createElement(J.T, null), testID: W.Z.getObjective(C.CH.WebsiteClicks) },
+            const J = n.p + "website_clicks_icon.82f641fa.png";
+            function ee() {
+                return r.createElement($.Z, { "aria-label": "", source: J, style: u.default.absoluteFill });
+            }
+            const te = p().fcc839b6,
+                ne = (p().b679a538, p().cb19a2f0),
+                re = p().a2d37164,
+                oe = p().cefad302,
+                ae = p().b614fad0,
+                se = u.default.create((e) => ({ titleContainer: { paddingBottom: e.spaces.space28 }, qpContainer: { flex: 1, overflowY: "auto" } })),
+                [ce, ie] = [
+                    { label: (0, G.WF)(C.CH.Engagements), value: C.CH.Engagements, description: ne, illustration: r.createElement(X, null), testID: W.Z.getObjective(C.CH.Engagements) },
+                    { label: (0, G.WF)(C.CH.WebsiteClicks), value: C.CH.WebsiteClicks, description: re, illustration: r.createElement(ee, null), testID: W.Z.getObjective(C.CH.WebsiteClicks) },
                 ];
-            const ie = Q((e) => {
+            const le = Q((e) => {
                     const { analytics: t, selectedObjective: n, setObjective: a, tweet: c } = e,
                         i = c ? s.Z.getOriginalTweet(c) : c,
                         l = null != i?.entities?.media?.length && i?.entities?.media?.length > 0,
@@ -352,7 +355,7 @@
                     const u = r.useMemo(
                             () =>
                                 (function ({ selectedObjective: e, tweetContainsLinks: t, tweetHasMedia: n }) {
-                                    const o = [se, { ...ce, disabled: !t, disabledInlineCallout: t ? void 0 : r.createElement(H.Z.Danger, { headline: oe, text: re, withIcon: !0 }) }];
+                                    const o = [ce, { ...ie, disabled: !t, disabledInlineCallout: t ? void 0 : r.createElement(H.Z.Danger, { headline: ae, text: oe, withIcon: !0 }) }];
                                     return o;
                                 })({ tweetHasMedia: l, tweetContainsLinks: d, selectedObjective: n }),
                             [l, d, n],
@@ -363,16 +366,15 @@
                             },
                             [t, a],
                         );
-                    return r.createElement(o.Z, { style: ae.qpContainer, testID: W.Z.objectiveScreen }, r.createElement(z.O, { screenType: I.MN.Objective }), r.createElement(j.ZP, null, r.createElement(U.Y, { style: ae.titleContainer, title: ee }), r.createElement(O.Z, { name: "objective-picker", onChange: m, options: u, value: n })));
+                    return r.createElement(o.Z, { style: se.qpContainer, testID: W.Z.objectiveScreen }, r.createElement(z.O, { screenType: I.MN.Objective }), r.createElement(j.ZP, null, r.createElement(U.Y, { style: se.titleContainer, title: te }), r.createElement(O.Z, { name: "objective-picker", onChange: m, options: u, value: n })));
                 }),
-                le = ie,
-                de = n.p + "followers_icon.80e5851a.png";
-            var ue = n(6885);
+                de = le,
+                ue = n.p + "followers_icon.80e5851a.png";
             function me(e) {
                 new Image().src = e;
             }
             function pe() {
-                return me(Y), me(de), me(ue), r.createElement(r.Fragment, null);
+                return me(Y), me(ue), me(J), r.createElement(r.Fragment, null);
             }
             n(136728), n(543673), n(240753), n(128399);
             var ge = n(614983),
@@ -1003,7 +1005,7 @@
                                 case "intro":
                                     return r.createElement(a.Route, { component: F.Z });
                                 case "objective":
-                                    return r.createElement(a.Route, { component: le });
+                                    return r.createElement(a.Route, { component: de });
                                 case "targeting":
                                     return r.createElement(a.Route, { component: en });
                                 case "targeting_location":
@@ -1075,9 +1077,6 @@
             const Un = u.default.create((e) => ({ noScrollView: { overflowX: "hidden", flex: 1 }, nextButton: { marginBottom: e.spaces.space48, marginTop: e.spaces.space12 } })),
                 zn = B(Hn);
         },
-        6885: (e, t, n) => {
-            e.exports = n.p + "website_clicks_icon.82f641fa.png";
-        },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Conversation-a665aad7.1fd2e69a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Conversation-a665aad7.40b3749a.js.map

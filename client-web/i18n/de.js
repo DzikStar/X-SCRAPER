@@ -281,7 +281,7 @@
                 t("edf7f57e", "Lass dich verifizieren und erhalte einen Antwort-Boost, Statistiken, Browsen ohne Werbung und mehr. Hol dir noch heute ein Upgrade für dein Profil."),
                 t("ba920d68", "Stärke deinen Einfluss durch Verifizierung"),
                 t("ib79d0c2", "Schalte Premiumfunktionen frei: lass deinen Account verifizieren"),
-                t("c0d3bd82", "You’ve advertised on X, but don’t have a Verified Organizations subscription"),
+                t("c0d3bd82", "Du hast auf X geworben, hast aber kein Abonnement für Verifizierte Organisationen"),
                 t("d7836d1e", "Hol dir ein Abonnement und erhalte bis zu 12.000 $ Gratis-Werbeguthaben, Gold-Verifizierung, Priorität beim Support und eine Tool-Suite für geschäftliches Wachstum."),
                 t("f528e369", function (e) {
                     return "Abonniere " + e.tier + ", wenn du deine eigenen Artikel schreiben möchtest";
@@ -1275,6 +1275,7 @@
                 t("b8f3500a", "Thread im Lesemodus anzeigen"),
                 t("fc7db594", "Kurzprofil"),
                 t("c3f04d9c", "Bitte warten"),
+                t("cbdddb0a", "Beendet"),
                 t("e98cc293", function (e) {
                     return "Nach " + e.query + " suchen";
                 }),
@@ -1282,7 +1283,7 @@
                     return "Suche nach **„" + e.query + "“**";
                 }),
                 t("i2e0f4d7", function (e) {
-                    return "Browsing " + e.url + " for " + e.query;
+                    return e.url + " wird nach " + e.query + " durchsucht";
                 }),
                 t("acb9b845", function (e) {
                     return "Browsen von " + e.url + " für **„" + e.query + "“**";
@@ -1291,7 +1292,7 @@
                     return "Posts von @" + e.username + " werden gesucht";
                 }),
                 t("f7d9cfb9", function (e) {
-                    return "Searching posts by @" + e.username + " for " + e.query;
+                    return "Posts von @" + e.username + " werden nach " + e.query + " durchsucht";
                 }),
                 t("bec7eb11", function (e) {
                     return "Suche nach Posts von @" + e.username + " für **„" + e.query + "“**";
@@ -1914,9 +1915,9 @@
                 t("b5660338", "Timeline-Vorschau"),
                 t("hff1b97a", "Nur Abonnent*innen können antworten."),
                 t("a330771e", "Link in deine Zwischenablage kopieren"),
-                t("b6510e68", "Kopiere die URL deines Artikels, damit du ihn teilen kannst."),
-                t("e4a6e006", "Etwas ist schiefgelaufen. Bitte versuche es erneut.");
-            t("eff483e0", "Nach dem Veröffentlichen erhältst du einen Link, mit dem du den Artikel teilen kannst."),
+                t("b6510e68", "Kopiere die URL deines Artikels, damit du ihn teilen kannst.");
+            t("e4a6e006", "Etwas ist schiefgelaufen. Bitte versuche es erneut."),
+                t("eff483e0", "Nach dem Veröffentlichen erhältst du einen Link, mit dem du den Artikel teilen kannst."),
                 t("ca15dd4e", "Entwurf"),
                 t("bb40bf66", "Veröffentlicht"),
                 t("h107935c", "Zuletzt gespeichert: gerade eben"),
@@ -2966,9 +2967,9 @@
                 t("e0adec82", "Markenressourcen"),
                 t("df1b7550", "Marketing"),
                 t("he258678", "X für Unternehmen"),
-                t("c6f58084", "Entwickler"),
-                t("d83f18d2", "Verzeichnis");
-            t("hc5aa17c", "Hol dir die X App"),
+                t("c6f58084", "Entwickler");
+            t("d83f18d2", "Verzeichnis"),
+                t("hc5aa17c", "Hol dir die X App"),
                 t("j0693948", "Hol dir die Grok App"),
                 t("af781666", "Was halten Leute davon?"),
                 t("ad35153e", "Beta"),
@@ -3882,9 +3883,9 @@
                 }),
                 t("e3275464", "Senden"),
                 t("cededf2a", "Host"),
-                t("i2caef48", "Co-Hosts"),
-                t("j245c654", "Sprecher");
-            t("eda23a02", "Zuhörer*innen"),
+                t("i2caef48", "Co-Hosts");
+            t("j245c654", "Sprecher"),
+                t("eda23a02", "Zuhörer*innen"),
                 t("b90eb348", "Zum Sprechen einl."),
                 t("d9a63e82", "Aus Sprechern entfernen"),
                 t("bd917b26", "Als Co-Host einladen"),
@@ -4281,7 +4282,6 @@
                 t("e2811afc", "Spiele"),
                 t("j081fa34", "Tabellenplätze"),
                 t("i7c7f156", "Morgen"),
-                t("cbdddb0a", "Beendet"),
                 t("b134ba52", "In Arbeit"),
                 t("j1361724", "Halbzeit"),
                 t("fa0f1262", "Pause"),
@@ -4327,10 +4327,10 @@
                 t("b52484b6", "Suchen…"),
                 t("a4d9dbfa", "Gedanken"),
                 t("ib1c5475", function (e) {
-                    return "Thought for " + e.minutes + "m " + e.seconds + "s";
+                    return "Denkprozess dauerte " + e.minutes + " Min. " + e.seconds + " Sek.";
                 }),
                 t("a15d62db", function (e) {
-                    return "Thought for " + e.seconds + "s";
+                    return "Denkprozess dauerte " + e.seconds + " Sek.";
                 }),
                 t("d7cb5408", "Relevante Webseiten"),
                 t("aa7c96bb", function (e) {
@@ -13230,4 +13230,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/de.25802d4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/de.3956ddfa.js.map

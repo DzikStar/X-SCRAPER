@@ -1284,6 +1284,7 @@
                 i("b8f3500a", "Wyświetl wątek na czytniku"),
                 i("fc7db594", "Podsumowanie profilu"),
                 i("c3f04d9c", "Myślenie"),
+                i("cbdddb0a", "Zakończony"),
                 i("e98cc293", function (e) {
                     return "Wyszukiwanie " + e.query;
                 }),
@@ -1923,9 +1924,9 @@
                 i("b5660338", "Podgląd osi czasu"),
                 i("hff1b97a", "Odpowiadać mogą tylko subskrybenci."),
                 i("a330771e", "Kopiuj link do schowka"),
-                i("b6510e68", "Skopiuj adres URL artykułu, co umożliwi Ci udostępnienie go."),
-                i("e4a6e006", "Coś poszło nie tak. Spróbuj ponownie.");
-            i("eff483e0", "Po opublikowaniu pobierz link, aby udostępnić artykuł."),
+                i("b6510e68", "Skopiuj adres URL artykułu, co umożliwi Ci udostępnienie go.");
+            i("e4a6e006", "Coś poszło nie tak. Spróbuj ponownie."),
+                i("eff483e0", "Po opublikowaniu pobierz link, aby udostępnić artykuł."),
                 i("ca15dd4e", "Szkic"),
                 i("bb40bf66", "Opublikowano"),
                 i("h107935c", "Ostatnio zapisano przed chwilą"),
@@ -2975,9 +2976,9 @@
                 i("e0adec82", "Zasoby marki"),
                 i("df1b7550", "Marketing"),
                 i("he258678", "X dla firm"),
-                i("c6f58084", "Deweloperzy"),
-                i("d83f18d2", "Ścieżka");
-            i("hc5aa17c", "Pobierz aplikację X"),
+                i("c6f58084", "Deweloperzy");
+            i("d83f18d2", "Ścieżka"),
+                i("hc5aa17c", "Pobierz aplikację X"),
                 i("j0693948", "Pobierz aplikację Grok"),
                 i("af781666", "Co myślą ludzie?"),
                 i("ad35153e", "beta"),
@@ -3891,9 +3892,9 @@
                 }),
                 i("e3275464", "Wyślij"),
                 i("cededf2a", "Host"),
-                i("i2caef48", "Współhości"),
-                i("j245c654", "Mówcy");
-            i("eda23a02", "Słuchacze"),
+                i("i2caef48", "Współhości");
+            i("j245c654", "Mówcy"),
+                i("eda23a02", "Słuchacze"),
                 i("b90eb348", "Udziel głosu"),
                 i("d9a63e82", "Usuń z grona mówców"),
                 i("bd917b26", "Zaproś do współhostowania"),
@@ -4290,7 +4291,6 @@
                 i("e2811afc", "Rozgrywki"),
                 i("j081fa34", "Rankingi"),
                 i("i7c7f156", "Jutro"),
-                i("cbdddb0a", "Zakończony"),
                 i("b134ba52", "W toku"),
                 i("j1361724", "Połowa czasu"),
                 i("fa0f1262", "Przerwa"),
@@ -13230,4 +13230,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.d5ebfb3a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/pl.1f060bda.js.map

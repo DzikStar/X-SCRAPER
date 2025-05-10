@@ -1275,6 +1275,7 @@
                 i("b8f3500a", "Basahin ang thread sa Reader"),
                 i("fc7db594", "Buod ng Profile"),
                 i("c3f04d9c", "Nag-iisip"),
+                i("cbdddb0a", "Nakumpleto"),
                 i("e98cc293", function (a) {
                     return "Hinahanap ang " + a.query;
                 }),
@@ -1914,9 +1915,9 @@
                 i("b5660338", "Preview ng timeline"),
                 i("hff1b97a", "Mga Subscriber lang ang puwedeng mag-reply."),
                 i("a330771e", "Kopyahin ang link sa clipboard mo"),
-                i("b6510e68", "Kopyahin ang URL ng Article mo para maibahagi mo ito."),
-                i("e4a6e006", "Nagkaroon ng problema. Pakisubukang muli.");
-            i("eff483e0", "Pagkatapos mong mag-publish, kunin ang link para ibahagi ang Article."),
+                i("b6510e68", "Kopyahin ang URL ng Article mo para maibahagi mo ito.");
+            i("e4a6e006", "Nagkaroon ng problema. Pakisubukang muli."),
+                i("eff483e0", "Pagkatapos mong mag-publish, kunin ang link para ibahagi ang Article."),
                 i("ca15dd4e", "Draft"),
                 i("bb40bf66", "Na-publish"),
                 i("h107935c", "Huling na-save ngayon lang"),
@@ -2966,9 +2967,9 @@
                 i("e0adec82", "Mga Resource ng Brand"),
                 i("df1b7550", "Marketing"),
                 i("he258678", "X para sa Negosyo"),
-                i("c6f58084", "Mga developer"),
-                i("d83f18d2", "Direktoryo");
-            i("hc5aa17c", "Kunin ang X app"),
+                i("c6f58084", "Mga developer");
+            i("d83f18d2", "Direktoryo"),
+                i("hc5aa17c", "Kunin ang X app"),
                 i("j0693948", "Kunin ang Grok app"),
                 i("af781666", "Ano ang palagay ng mga tao?"),
                 i("ad35153e", "beta"),
@@ -3882,9 +3883,9 @@
                 }),
                 i("e3275464", "Ipadala"),
                 i("cededf2a", "Host"),
-                i("i2caef48", "Mga Co-host"),
-                i("j245c654", "Mga Tagapagsalita");
-            i("eda23a02", "Mga Tagapakinig"),
+                i("i2caef48", "Mga Co-host");
+            i("j245c654", "Mga Tagapagsalita"),
+                i("eda23a02", "Mga Tagapakinig"),
                 i("b90eb348", "Imbitahang Magsalita"),
                 i("d9a63e82", "Alisin sa Mga Tagapagsalita"),
                 i("bd917b26", "Imbitahang maging Co-host"),
@@ -4281,7 +4282,6 @@
                 i("e2811afc", "Mga Laro"),
                 i("j081fa34", "Mga Standing"),
                 i("i7c7f156", "Bukas"),
-                i("cbdddb0a", "Nakumpleto"),
                 i("b134ba52", "Kasalukuyang Pinoproseso"),
                 i("j1361724", "Halftime"),
                 i("fa0f1262", "Break"),
@@ -13229,4 +13229,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fil.7a3cbd2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/fil.c3732eda.js.map

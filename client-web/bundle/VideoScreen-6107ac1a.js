@@ -276,17 +276,17 @@
                 U = _(66816),
                 N = _.n(U),
                 G = _(580116),
-                Z = _.n(G),
+                V = _.n(G),
                 M = _(251454),
-                V = _.n(M),
-                D = _(197050),
-                K = _.n(D),
-                P = _(66549),
-                E = _.n(P),
-                X = _(184429),
-                Y = _.n(X),
-                H = _(772248),
-                B = _.n(H),
+                Z = _.n(M),
+                K = _(197050),
+                P = _.n(K),
+                D = _(66549),
+                E = _.n(D),
+                H = _(184429),
+                X = _.n(H),
+                Y = _(772248),
+                B = _.n(Y),
                 O = _(776998),
                 W = _.n(O),
                 J = _(706236),
@@ -385,7 +385,7 @@
                         }),
                     fetchTweetsGraphQL(_, n) {
                         const { count: i, cursor: a, listId: s, useRanked: l } = _,
-                            o = l ? Z() : A(),
+                            o = l ? V() : A(),
                             d = { listId: s, count: i, cursor: a, ...(0, r.d)(t) };
                         return e.graphQL(o, d, ge).then((e) => {
                             const t = e.list.tweets_timeline?.timeline;
@@ -415,7 +415,7 @@
                             return t || ne.cY;
                         });
                     },
-                    fetchSuggestedLists: ({ count: _, cursor: n }) => e.graphQL(K(), { count: _, cursor: n, ...(0, r.d)(t) }, oe).then((e) => e.list_discovery_list_mixer_timeline?.timeline || ne.cY),
+                    fetchSuggestedLists: ({ count: _, cursor: n }) => e.graphQL(P(), { count: _, cursor: n, ...(0, r.d)(t) }, oe).then((e) => e.list_discovery_list_mixer_timeline?.timeline || ne.cY),
                     fetchOwnershipsGraphQL(_, n) {
                         const { count: i, cursor: a, targetUserId: s, userId: l } = _;
                         return e.graphQL(R(), { userId: l, isListMemberTargetUserId: s, count: i, cursor: a, ...(0, r.d)(t) }, le).then(ie.k7);
@@ -427,11 +427,11 @@
                     },
                     removeFromList(_, i) {
                         const { list_id: a, user_id: l } = _;
-                        return e.graphQL(V(), { listId: a, userId: l, ...(0, r.S)(t) }, me).then((e) => (0, n.Fv)(e.list, s.Z));
+                        return e.graphQL(Z(), { listId: a, userId: l, ...(0, r.S)(t) }, me).then((e) => (0, n.Fv)(e.list, s.Z));
                     },
                     createSubscribers(_, i) {
                         const { list_id: a } = _;
-                        return e.graphQL(Y(), { listId: a, ...(0, r.S)(t) }, pe).then((e) => (0, n.Fv)(e.list_subscribe_v3, s.Z));
+                        return e.graphQL(X(), { listId: a, ...(0, r.S)(t) }, pe).then((e) => (0, n.Fv)(e.list_subscribe_v3, s.Z));
                     },
                     destroySubscribers(_, i) {
                         const { list_id: a } = _;
@@ -543,7 +543,7 @@
             _.d(t, { Z: () => n });
             const n = _(202784).createContext({ refsMap: {} });
         },
-        748138: (e, t, _) => {
+        648539: (e, t, _) => {
             "use strict";
             _.r(t), _.d(t, { default: () => l });
             var n = _(202784),
@@ -552,25 +552,11 @@
                 r = _(347101);
             const s = (e = {}) => {
                 const { direction: t } = (0, a.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z" })) }, { writingDirection: t });
-            };
-            s.metadata = { width: 24, height: 24 };
-            const l = s;
-        },
-        314948: (e, t, _) => {
-            "use strict";
-            _.r(t), _.d(t, { default: () => l });
-            var n = _(202784),
-                i = _(890601),
-                a = _(783427),
-                r = _(347101);
-            const s = (e = {}) => {
-                const { direction: t } = (0, a.Z)();
-                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M12 3.75c-4.55 0-8.25 3.69-8.25 8.25 0 1.92.66 3.68 1.75 5.08l2.8-2.79 1.41 1.42-2.79 2.79c1.4 1.1 3.16 1.75 5.08 1.75 4.56 0 8.25-3.69 8.25-8.25 0-1.92-.65-3.68-1.75-5.08l-2.79 2.79-1.41-1.42 2.79-2.79C15.68 4.4 13.92 3.75 12 3.75zM1.75 12C1.75 6.34 6.34 1.75 12 1.75S22.25 6.34 22.25 12 17.66 22.25 12 22.25 1.75 17.66 1.75 12z" })) }, { writingDirection: t });
+                return (0, i.Z)("svg", { ...e, role: e["aria-label"] ? e.role || "img" : void 0, "aria-hidden": void 0 === e["aria-label"], style: [r.Z.root, e.style], viewBox: "0 0 24 24", children: n.createElement("g", null, n.createElement("path", { d: "M19 14h2v3h-2v-3zM3 14H1v3h2v-3zm.5 7c-.276 0-.5-.225-.5-.5V19H1v1.5C1 21.879 2.122 23 3.5 23H5v-2H3.5zM10 5V3H7v2h3zm-7 .5c0-.275.224-.5.5-.5H5V3H3.5C2.122 3 1 4.121 1 5.5V7h2V5.5zM12 21v2h3v-2h-3zm-5 0v2h3v-2H7zm12-.5c0 .275-.224.5-.5.5H17v2h1.5c1.378 0 2.5-1.121 2.5-2.5V19h-2v1.5zM3 9H1v3h2V9zm3 9h5v-2H6v2zM18-.1c3.364 0 6.1 2.736 6.1 6.1s-2.736 6.1-6.1 6.1-6.1-2.736-6.1-6.1S14.636-.1 18-.1zm0 2c-2.261 0-4.1 1.839-4.1 4.1s1.839 4.1 4.1 4.1 4.1-1.839 4.1-4.1-1.839-4.1-4.1-4.1zm.5 3.1H15v2h6V5h-2.5zM6 10h4V8H6v2zm0 4h7v-2H6v2z" })) }, { writingDirection: t });
             };
             s.metadata = { width: 24, height: 24 };
             const l = s;
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.VideoScreen-6107ac1a.45e3fc4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.VideoScreen-6107ac1a.94147bba.js.map

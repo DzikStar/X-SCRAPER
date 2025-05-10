@@ -1278,6 +1278,7 @@
                 a("b8f3500a", "Wo tírẹ́ẹ̀dì nínú Olùkà"),
                 a("fc7db594", "Profile Summary"),
                 a("c3f04d9c", "Thinking"),
+                a("cbdddb0a", "Ti parí"),
                 a("e98cc293", function (e) {
                     return "Searching for " + e.query;
                 }),
@@ -1917,9 +1918,9 @@
                 a("b5660338", "Timeline preview"),
                 a("hff1b97a", "Only Subscribed can reply."),
                 a("a330771e", "Copy link to your clipboard"),
-                a("b6510e68", "Copy your Article’s URL so you can share it."),
-                a("e4a6e006", "Ǹkankan ò lọ dédé. Jọ̀wọ́ gbìyanjú lẹ́ẹ̀kan síi.");
-            a("eff483e0", "After you publish, get a link to share the Article."),
+                a("b6510e68", "Copy your Article’s URL so you can share it.");
+            a("e4a6e006", "Ǹkankan ò lọ dédé. Jọ̀wọ́ gbìyanjú lẹ́ẹ̀kan síi."),
+                a("eff483e0", "After you publish, get a link to share the Article."),
                 a("ca15dd4e", "Draft"),
                 a("bb40bf66", "Published"),
                 a("h107935c", "Last saved just now"),
@@ -2969,9 +2970,9 @@
                 a("e0adec82", "Àwọn Ohun-èlò Àmi Òwò"),
                 a("df1b7550", "Ìpolówó ọjà"),
                 a("he258678", "X for Business"),
-                a("c6f58084", "Àwọn olùkò kóòdù"),
-                a("d83f18d2", "Ìtọ́nisọ́nà");
-            a("hc5aa17c", "Get the X app"),
+                a("c6f58084", "Àwọn olùkò kóòdù");
+            a("d83f18d2", "Ìtọ́nisọ́nà"),
+                a("hc5aa17c", "Get the X app"),
                 a("j0693948", "Get the Grok app"),
                 a("af781666", "What do people think?"),
                 a("ad35153e", "beta"),
@@ -3885,9 +3886,9 @@
                 }),
                 a("e3275464", "Fiṣọwọ́"),
                 a("cededf2a", "Agbàlejò"),
-                a("i2caef48", "Ajọgbàlejò"),
-                a("j245c654", "Àwọn olùbánisọ̀rọ̀");
-            a("eda23a02", "Listeners"),
+                a("i2caef48", "Ajọgbàlejò");
+            a("j245c654", "Àwọn olùbánisọ̀rọ̀"),
+                a("eda23a02", "Listeners"),
                 a("b90eb348", "Invite to Speak"),
                 a("d9a63e82", "Remove from Speakers"),
                 a("bd917b26", "Invite to Co-host"),
@@ -4284,7 +4285,6 @@
                 a("e2811afc", "Games"),
                 a("j081fa34", "Standings"),
                 a("i7c7f156", "Tomorrow"),
-                a("cbdddb0a", "Ti parí"),
                 a("b134ba52", "In Progress"),
                 a("j1361724", "Halftime"),
                 a("fa0f1262", "Break"),
@@ -13219,4 +13219,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/yo.470ae93a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/yo.ae35fe8a.js.map

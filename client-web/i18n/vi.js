@@ -1274,6 +1274,7 @@
                 t("b8f3500a", "Xem chuỗi hội thoại trong Trình đọc"),
                 t("fc7db594", "Tóm tắt hồ sơ"),
                 t("c3f04d9c", "Đang nghĩ"),
+                t("cbdddb0a", "Hoàn tất"),
                 t("e98cc293", function (n) {
                     return "Đang tìm kiếm " + n.query;
                 }),
@@ -1913,9 +1914,9 @@
                 t("b5660338", "Xem trước dòng thời gian"),
                 t("hff1b97a", "Chỉ Người đã đăng ký có thể trả lời."),
                 t("a330771e", "Sao chép liên kết vào bảng nhớ tạm"),
-                t("b6510e68", "Sao chép URL Bài viết để bạn có thể chia sẻ Bài viết này."),
-                t("e4a6e006", "Đã xảy ra lỗi. Hãy thử lại.");
-            t("eff483e0", "Sau khi xuất bản, hãy sao chép liên kết để chia sẻ Bài viết."),
+                t("b6510e68", "Sao chép URL Bài viết để bạn có thể chia sẻ Bài viết này.");
+            t("e4a6e006", "Đã xảy ra lỗi. Hãy thử lại."),
+                t("eff483e0", "Sau khi xuất bản, hãy sao chép liên kết để chia sẻ Bài viết."),
                 t("ca15dd4e", "Bản thảo"),
                 t("bb40bf66", "Đã đăng"),
                 t("h107935c", "Lần lưu gần nhất: vừa xong"),
@@ -2965,9 +2966,9 @@
                 t("e0adec82", "Tài nguyên thương hiệu"),
                 t("df1b7550", "Tiếp thị"),
                 t("he258678", "X dành cho doanh nghiệp"),
-                t("c6f58084", "Nhà phát triển"),
-                t("d83f18d2", "Danh mục");
-            t("hc5aa17c", "Tải ứng dụng X"),
+                t("c6f58084", "Nhà phát triển");
+            t("d83f18d2", "Danh mục"),
+                t("hc5aa17c", "Tải ứng dụng X"),
                 t("j0693948", "Tải ứng dụng Grok"),
                 t("af781666", "Moi người nghĩ gì?"),
                 t("ad35153e", "bản thử nghiệm"),
@@ -3881,9 +3882,9 @@
                 }),
                 t("e3275464", "Gửi"),
                 t("cededf2a", "Chủ phòng"),
-                t("i2caef48", "Đ.chủ phòng"),
-                t("j245c654", "Người nói");
-            t("eda23a02", "Người nghe"),
+                t("i2caef48", "Đ.chủ phòng");
+            t("j245c654", "Người nói"),
+                t("eda23a02", "Người nghe"),
                 t("b90eb348", "Mời phát biểu"),
                 t("d9a63e82", "Xóa người nói"),
                 t("bd917b26", "Mời làm Đồng chủ phòng"),
@@ -4280,7 +4281,6 @@
                 t("e2811afc", "Trò chơi"),
                 t("j081fa34", "Xếp hạng"),
                 t("i7c7f156", "Ngày mai"),
-                t("cbdddb0a", "Hoàn tất"),
                 t("b134ba52", "Đang thực hiện"),
                 t("j1361724", "Nửa trận"),
                 t("fa0f1262", "Nghỉ giải lao"),
@@ -13215,4 +13215,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.a6857daa.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/vi.106d621a.js.map

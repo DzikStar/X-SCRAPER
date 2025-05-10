@@ -1278,6 +1278,7 @@
                 t("b8f3500a", "Duba zaren tattaunawar a cikin Mai Karatu"),
                 t("fc7db594", "Profile Summary"),
                 t("c3f04d9c", "Thinking"),
+                t("cbdddb0a", "An kammala"),
                 t("e98cc293", function (a) {
                     return "Searching for " + a.query;
                 }),
@@ -1917,9 +1918,9 @@
                 t("b5660338", "Timeline preview"),
                 t("hff1b97a", "Only Subscribed can reply."),
                 t("a330771e", "Copy link to your clipboard"),
-                t("b6510e68", "Copy your Article’s URL so you can share it."),
-                t("e4a6e006", "Wata matsala ta faru. Sake jarrabawa kuma.");
-            t("eff483e0", "After you publish, get a link to share the Article."),
+                t("b6510e68", "Copy your Article’s URL so you can share it.");
+            t("e4a6e006", "Wata matsala ta faru. Sake jarrabawa kuma."),
+                t("eff483e0", "After you publish, get a link to share the Article."),
                 t("ca15dd4e", "Draft"),
                 t("bb40bf66", "Published"),
                 t("h107935c", "Last saved just now"),
@@ -2969,9 +2970,9 @@
                 t("e0adec82", "Albarkatun Samfuri"),
                 t("df1b7550", "Kasuwanci"),
                 t("he258678", "X for Business"),
-                t("c6f58084", "Masu samarwa"),
-                t("d83f18d2", "Jagora");
-            t("hc5aa17c", "Get the X app"),
+                t("c6f58084", "Masu samarwa");
+            t("d83f18d2", "Jagora"),
+                t("hc5aa17c", "Get the X app"),
                 t("j0693948", "Get the Grok app"),
                 t("af781666", "What do people think?"),
                 t("ad35153e", "beta"),
@@ -3885,9 +3886,9 @@
                 }),
                 t("e3275464", "Aika"),
                 t("cededf2a", "Mai masauki"),
-                t("i2caef48", "Masu masauki"),
-                t("j245c654", "Sifikoki");
-            t("eda23a02", "Listeners"),
+                t("i2caef48", "Masu masauki");
+            t("j245c654", "Sifikoki"),
+                t("eda23a02", "Listeners"),
                 t("b90eb348", "Invite to Speak"),
                 t("d9a63e82", "Remove from Speakers"),
                 t("bd917b26", "Invite to Co-host"),
@@ -4284,7 +4285,6 @@
                 t("e2811afc", "Games"),
                 t("j081fa34", "Standings"),
                 t("i7c7f156", "Tomorrow"),
-                t("cbdddb0a", "An kammala"),
                 t("b134ba52", "In Progress"),
                 t("j1361724", "Halftime"),
                 t("fa0f1262", "Break"),
@@ -13219,4 +13219,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ha.a949c11a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ha.bb30943a.js.map

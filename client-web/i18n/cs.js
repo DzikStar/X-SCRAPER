@@ -1284,6 +1284,7 @@
                 a("b8f3500a", "Zobrazit vlákno ve čtečce"),
                 a("fc7db594", "Souhrn profilu"),
                 a("c3f04d9c", "Přemýšlení"),
+                a("cbdddb0a", "Dokončeno"),
                 a("e98cc293", function (e) {
                     return "Searching for " + e.query;
                 }),
@@ -1923,9 +1924,9 @@
                 a("b5660338", "Náhled časové osy"),
                 a("hff1b97a", "Odpovídat mohou pouze odběratelé."),
                 a("a330771e", "Kopírujte odkaz na svou schránku"),
-                a("b6510e68", "Kopírujte URL adresu svého článku, abyste ho mohli sdílet."),
-                a("e4a6e006", "Něco se pokazilo. Zkuste to prosím znovu.");
-            a("eff483e0", "Po zveřejnění obdržíte odkaz na sdílení článku."),
+                a("b6510e68", "Kopírujte URL adresu svého článku, abyste ho mohli sdílet.");
+            a("e4a6e006", "Něco se pokazilo. Zkuste to prosím znovu."),
+                a("eff483e0", "Po zveřejnění obdržíte odkaz na sdílení článku."),
                 a("ca15dd4e", "Koncept"),
                 a("bb40bf66", "Publikováno"),
                 a("h107935c", "Naposledy uloženo právě teď"),
@@ -2975,9 +2976,9 @@
                 a("e0adec82", "Značkové zdroje"),
                 a("df1b7550", "Marketing"),
                 a("he258678", "X pro firmy"),
-                a("c6f58084", "Vývojáři"),
-                a("d83f18d2", "Adresář");
-            a("hc5aa17c", "Získejte aplikaci X"),
+                a("c6f58084", "Vývojáři");
+            a("d83f18d2", "Adresář"),
+                a("hc5aa17c", "Získejte aplikaci X"),
                 a("j0693948", "Získejte aplikaci Grok"),
                 a("af781666", "Co si lidé myslí?"),
                 a("ad35153e", "betaverze"),
@@ -3891,9 +3892,9 @@
                 }),
                 a("e3275464", "Odeslat"),
                 a("cededf2a", "Hostitel"),
-                a("i2caef48", "Spoluhostitelé"),
-                a("j245c654", "Mluvčí");
-            a("eda23a02", "Posluchači"),
+                a("i2caef48", "Spoluhostitelé");
+            a("j245c654", "Mluvčí"),
+                a("eda23a02", "Posluchači"),
                 a("b90eb348", "Pozvat jako mluvčího"),
                 a("d9a63e82", "Odebrat z mluvčích"),
                 a("bd917b26", "Pozvat spoluhostitele"),
@@ -4290,7 +4291,6 @@
                 a("e2811afc", "Hry"),
                 a("j081fa34", "Pořadí"),
                 a("i7c7f156", "Zítra"),
-                a("cbdddb0a", "Dokončeno"),
                 a("b134ba52", "Probíhá"),
                 a("j1361724", "Poločas"),
                 a("fa0f1262", "Přestávka"),
@@ -13228,4 +13228,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/cs.5ab1d6ea.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/cs.2c85e30a.js.map

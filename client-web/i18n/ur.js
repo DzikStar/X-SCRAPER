@@ -1279,6 +1279,7 @@
                 o("b8f3500a", "ریڈر میں تھریڈ دیکھیں"),
                 o("fc7db594", "Profile Summary"),
                 o("c3f04d9c", "Thinking"),
+                o("cbdddb0a", "مکمل"),
                 o("e98cc293", function (e) {
                     return "Searching for " + e.query;
                 }),
@@ -1918,9 +1919,9 @@
                 o("b5660338", "Timeline preview"),
                 o("hff1b97a", "Only Subscribed can reply."),
                 o("a330771e", "Copy link to your clipboard"),
-                o("b6510e68", "Copy your Article’s URL so you can share it."),
-                o("e4a6e006", "کچھ نقص واقع ہوگیا- براہِ کرم دوبارہ کوشش کریں۔");
-            o("eff483e0", "After you publish, get a link to share the Article."),
+                o("b6510e68", "Copy your Article’s URL so you can share it.");
+            o("e4a6e006", "کچھ نقص واقع ہوگیا- براہِ کرم دوبارہ کوشش کریں۔"),
+                o("eff483e0", "After you publish, get a link to share the Article."),
                 o("ca15dd4e", "مسودہ"),
                 o("bb40bf66", "شائع ہوا"),
                 o("h107935c", "Last saved just now"),
@@ -2970,9 +2971,9 @@
                 o("e0adec82", "برانڈ ذرائع"),
                 o("df1b7550", "مارکیٹنگ"),
                 o("he258678", "X for Business"),
-                o("c6f58084", "ڈویلپرز"),
-                o("d83f18d2", "ڈائریکٹری");
-            o("hc5aa17c", "Get the X app"),
+                o("c6f58084", "ڈویلپرز");
+            o("d83f18d2", "ڈائریکٹری"),
+                o("hc5aa17c", "Get the X app"),
                 o("j0693948", "Get the Grok app"),
                 o("af781666", "What do people think?"),
                 o("ad35153e", "beta"),
@@ -3886,9 +3887,9 @@
                 }),
                 o("e3275464", "بھیجیں"),
                 o("cededf2a", "ہوسٹ"),
-                o("i2caef48", "ساتھی میزبان"),
-                o("j245c654", "مقررین");
-            o("eda23a02", "Listeners"),
+                o("i2caef48", "ساتھی میزبان");
+            o("j245c654", "مقررین"),
+                o("eda23a02", "Listeners"),
                 o("b90eb348", "Invite to Speak"),
                 o("d9a63e82", "Remove from Speakers"),
                 o("bd917b26", "Invite to Co-host"),
@@ -4285,7 +4286,6 @@
                 o("e2811afc", "Games"),
                 o("j081fa34", "Standings"),
                 o("i7c7f156", "آئندہ کل"),
-                o("cbdddb0a", "مکمل"),
                 o("b134ba52", "In Progress"),
                 o("j1361724", "Halftime"),
                 o("fa0f1262", "Break"),
@@ -13225,4 +13225,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ur.d7d4e72a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ur.f8fa32ba.js.map

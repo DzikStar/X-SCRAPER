@@ -1290,6 +1290,7 @@
                 n("b8f3500a", "Amharc ar an snáithe i Léitheoir"),
                 n("fc7db594", "Profile Summary"),
                 n("c3f04d9c", "Thinking"),
+                n("cbdddb0a", "Déanta"),
                 n("e98cc293", function (e) {
                     return "Searching for " + e.query;
                 }),
@@ -1929,9 +1930,9 @@
                 n("b5660338", "Timeline preview"),
                 n("hff1b97a", "Only Subscribed can reply."),
                 n("a330771e", "Copy link to your clipboard"),
-                n("b6510e68", "Copy your Article’s URL so you can share it."),
-                n("e4a6e006", "Tharla earráid. Bain triail eile as.");
-            n("eff483e0", "After you publish, get a link to share the Article."),
+                n("b6510e68", "Copy your Article’s URL so you can share it.");
+            n("e4a6e006", "Tharla earráid. Bain triail eile as."),
+                n("eff483e0", "After you publish, get a link to share the Article."),
                 n("ca15dd4e", "Dréacht"),
                 n("bb40bf66", "Foilsithe"),
                 n("h107935c", "Last saved just now"),
@@ -2981,9 +2982,9 @@
                 n("e0adec82", "Acmhainní Branda"),
                 n("df1b7550", "Marketing"),
                 n("he258678", "X for Business"),
-                n("c6f58084", "Developers"),
-                n("d83f18d2", "Directory");
-            n("hc5aa17c", "Get the X app"),
+                n("c6f58084", "Developers");
+            n("d83f18d2", "Directory"),
+                n("hc5aa17c", "Get the X app"),
                 n("j0693948", "Get the Grok app"),
                 n("af781666", "What do people think?"),
                 n("ad35153e", "beta"),
@@ -3897,9 +3898,9 @@
                 }),
                 n("e3275464", "Seol"),
                 n("cededf2a", "Óstach"),
-                n("i2caef48", "Co-hosts"),
-                n("j245c654", "Speakers");
-            n("eda23a02", "Listeners"),
+                n("i2caef48", "Co-hosts");
+            n("j245c654", "Speakers"),
+                n("eda23a02", "Listeners"),
                 n("b90eb348", "Invite to Speak"),
                 n("d9a63e82", "Remove from Speakers"),
                 n("bd917b26", "Invite to Co-host"),
@@ -4296,7 +4297,6 @@
                 n("e2811afc", "Games"),
                 n("j081fa34", "Standings"),
                 n("i7c7f156", "Amárach"),
-                n("cbdddb0a", "Déanta"),
                 n("b134ba52", "In Progress"),
                 n("j1361724", "Halftime"),
                 n("fa0f1262", "Break"),
@@ -13233,4 +13233,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ga.e08e2c2a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/ga.450a695a.js.map

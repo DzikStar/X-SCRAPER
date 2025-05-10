@@ -8,17 +8,23 @@
             const o = (0, a(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        a.e("icons.5"),
-                        a.e("icons.12"),
-                        a.e("icons.20"),
-                        a.e("icons.0"),
+                        a.e("icons.10"),
                         a.e("icons.21"),
-                        a.e("icons.28"),
-                        a.e("icons.17"),
+                        a.e("icons.16"),
+                        a.e("icons.1"),
+                        a.e("icons.19"),
+                        a.e("icons.0"),
+                        a.e("icons.8"),
+                        a.e("icons.23"),
+                        a.e("icons.2"),
                         a.e("modules.common-e907d115"),
                         a.e("modules.common-e019dbda"),
-                        a.e("icons.22"),
+                        a.e("icons.7"),
                         a.e("icons.9"),
+                        a.e("icons.15"),
+                        a.e("icons.24"),
+                        a.e("icons.3"),
+                        a.e("icons.28"),
                         a.e("modules.audio-6107ac1a"),
                         a.e("modules.audio-b953418a"),
                         a.e("modules.audio-7c51e6a7"),
@@ -29,18 +35,13 @@
                         a.e("modules.audio-e019dbda"),
                         a.e("modules.audio-262c94d4"),
                         a.e("modules.audio-c6fe4ea4"),
-                        a.e("icons.25"),
-                        a.e("icons.6"),
-                        a.e("icons.10"),
-                        a.e("icons.24"),
-                        a.e("icons.14"),
-                        a.e("icons.23"),
+                        a.e("icons.26"),
                         a.e("icons.4"),
-                        a.e("icons.3"),
                         a.e("icons.13"),
-                        a.e("icons.1"),
                         a.e("icons.18"),
-                        a.e("icons.8"),
+                        a.e("icons.25"),
+                        a.e("icons.29"),
+                        a.e("icons.27"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2078c561"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-676e3eb1"),
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-ae204d10"),
@@ -71,7 +72,7 @@
                         a.e("shared~loader.AudioDock~loader.DashMenu~loader.DashModal~loader.DMDrawer~ondemand.InlinePlayer~ondem-2d219c28"),
                         a.e("shared~loader.Typeahead~loader.AppModules~loader.DMDrawer~ondemand.HoverCard~ondemand.NotFound~bundle.AboutTh"),
                         a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                        a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-34cda585"),
+                        a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-ee359ff7"),
                         a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                         a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                         a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -201,15 +202,21 @@
             const n = (0, a(523561).Z)({
                 loader: () =>
                     Promise.all([
-                        a.e("icons.5"),
-                        a.e("icons.12"),
-                        a.e("icons.20"),
-                        a.e("icons.0"),
+                        a.e("icons.10"),
                         a.e("icons.21"),
-                        a.e("icons.28"),
-                        a.e("icons.17"),
-                        a.e("icons.22"),
+                        a.e("icons.16"),
+                        a.e("icons.1"),
+                        a.e("icons.19"),
+                        a.e("icons.0"),
+                        a.e("icons.8"),
+                        a.e("icons.23"),
+                        a.e("icons.2"),
+                        a.e("icons.7"),
                         a.e("icons.9"),
+                        a.e("icons.15"),
+                        a.e("icons.24"),
+                        a.e("icons.3"),
+                        a.e("icons.28"),
                         a.e("modules.audio-6107ac1a"),
                         a.e("modules.audio-b953418a"),
                         a.e("modules.audio-7c51e6a7"),
@@ -220,20 +227,15 @@
                         a.e("modules.audio-e019dbda"),
                         a.e("modules.audio-262c94d4"),
                         a.e("modules.audio-c6fe4ea4"),
-                        a.e("icons.25"),
-                        a.e("icons.6"),
-                        a.e("icons.10"),
-                        a.e("icons.24"),
-                        a.e("icons.14"),
-                        a.e("icons.23"),
+                        a.e("icons.26"),
                         a.e("icons.4"),
-                        a.e("icons.3"),
                         a.e("icons.13"),
-                        a.e("icons.1"),
                         a.e("icons.18"),
-                        a.e("icons.8"),
+                        a.e("icons.25"),
+                        a.e("icons.29"),
+                        a.e("icons.27"),
                         a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-50148475"),
-                        a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-34cda585"),
+                        a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-ee359ff7"),
                         a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-909816ba"),
                         a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-604de716"),
                         a.e("shared~bundle.AudioSpaceDetail~bundle.AudioSpaceDiscovery~bundle.AudioSpacebarScreen~bundle.Birdwatc-1299e360"),
@@ -483,7 +485,7 @@
                 };
         },
         397159: (e, d, a) => {
-            a.d(d, { Fi: () => u, fQ: () => A, iS: () => i });
+            a.d(d, { Fi: () => c, fQ: () => w, iS: () => u });
             a(136728), a(574858), a(543673), a(240753), a(128399);
             var n = a(468811),
                 o = a.n(n),
@@ -491,29 +493,30 @@
                 l = a.n(r),
                 s = a(123702);
             const t = l().c3f04d9c,
-                i = { HEADER: "header", ASSISTANT: "assistant", DECISION: "decision", RAW_FUNCTION_RESULT: "raw_function_result", FUNCTION: "function", SUMMARY: "summary", FINAL: "final", SOFT_STOP: "softstop", FINAL_LONG: "final_long" },
-                u = { IN_PROGRESS: "IN_PROGRESS", COMPLETED: "COMPLETED", FAILED: "FAILED" },
-                c = l().e98cc293,
-                b = l().b0d1e205,
-                h = l().i2e0f4d7,
-                p = l().acb9b845,
-                D = l().ef261d8d,
-                m = l().f7d9cfb9,
-                S = l().bec7eb11;
-            class A {
+                i = l().cbdddb0a,
+                u = { HEADER: "header", ASSISTANT: "assistant", DECISION: "decision", RAW_FUNCTION_RESULT: "raw_function_result", FUNCTION: "function", SUMMARY: "summary", FINAL: "final", SOFT_STOP: "softstop", FINAL_LONG: "final_long" },
+                c = { IN_PROGRESS: "IN_PROGRESS", COMPLETED: "COMPLETED", FAILED: "FAILED" },
+                b = l().e98cc293,
+                h = l().b0d1e205,
+                p = l().i2e0f4d7,
+                D = l().acb9b845,
+                m = l().ef261d8d,
+                S = l().f7d9cfb9,
+                A = l().bec7eb11;
+            class w {
                 constructor(e) {
                     (this.initiateFromHistoryResponses = (e, d = !1) => {
                         this.lastStreamedDataTimestamp = Date.now();
                         for (const d of e) {
-                            const e = { id: o().v4(), state: u.COMPLETED, header: d.header || t, subSteps: [] };
+                            const e = { id: o().v4(), state: c.COMPLETED, header: d.header || t, subSteps: [] };
                             for (let a = 0; a < d.steps.length; a++) {
                                 const n = d.steps[a];
                                 this.addWebResults(n.webResults || []), this.addXPostIds(n.xPostIds || []);
                                 let o = 0;
-                                if ((n.assistant && ((this.accumulatedTrace += n.assistant), (this.traceEnabled = !0)), n.summary && (e.subSteps.push({ messageStepId: a + o, messageTag: i.SUMMARY, summary: n.summary }), o++), n.decision)) {
+                                if ((n.assistant && ((this.accumulatedTrace += n.assistant), (this.traceEnabled = !0)), n.summary && (e.subSteps.push({ messageStepId: a + o, messageTag: u.SUMMARY, summary: n.summary }), o++), n.decision)) {
                                     const d = this.parseMessageJSON(n.decision),
                                         { markdown: r, text: l } = this.getContentForDecisionAction(d);
-                                    e.subSteps.push({ messageStepId: a + o, messageTag: i.DECISION, actionIcon: this.getIconForDecisionAction(d), actionType: d?.action, actionMarkdownSummary: r, actionSummary: l, actionWebResult: this.webResults.find((e) => e.url === d?.action_input?.url), actionState: "COMPLETED", webResults: n.webResults, xPostIds: n.xPostIds }), o++;
+                                    e.subSteps.push({ messageStepId: a + o, messageTag: u.DECISION, actionIcon: this.getIconForDecisionAction(d), actionType: d?.action, actionMarkdownSummary: r, actionSummary: l, actionWebResult: this.webResults.find((e) => e.url === d?.action_input?.url), actionState: "COMPLETED", webResults: n.webResults, xPostIds: n.xPostIds }), o++;
                                 }
                             }
                             this.steps.push(e);
@@ -525,55 +528,55 @@
                         }),
                         (this.updateStepsFromRawMessage = (e) => {
                             const d = this.steps.length - 1,
-                                a = e.messageTag === i.HEADER,
+                                a = e.messageTag === u.HEADER,
                                 n = a || this.steps.length <= 0;
                             if ((this.addDebugMessageTagCount(e.messageTag), (this.lastStreamedDataTimestamp = Date.now()), "PENDING" === this.state && ((this.streamStartTimestamp = Date.now()), (this.state = "STARTED")), n)) {
-                                const n = { id: o().v4(), state: "COMPLETED" === this.state ? u.COMPLETED : u.IN_PROGRESS, header: a ? e.message : t, subSteps: [] };
+                                const n = { id: o().v4(), state: "COMPLETED" === this.state ? c.COMPLETED : c.IN_PROGRESS, header: a ? e.message : t, subSteps: [] };
                                 if (a) {
                                     if (1 === this.steps.length && this.steps[0].header === t) return void (this.steps = [{ ...this.steps[0], header: n.header }]);
                                     this.steps = [...this.steps, n];
-                                } else e.messageTag === i.ASSISTANT && ((this.accumulatedTrace += e.message), (this.traceEnabled = !0), (this.steps = [...this.steps, n]));
+                                } else e.messageTag === u.ASSISTANT && ((this.accumulatedTrace += e.message), (this.traceEnabled = !0), (this.steps = [...this.steps, n]));
                                 return void (d >= 0 && this.completeStep(d));
                             }
                             const r = this.steps[d],
-                                l = r.subSteps.findLastIndex((d) => (e.messageTag === i.RAW_FUNCTION_RESULT ? d.messageStepId === e.messageStepId && (d.messageTag === e.messageTag || d.messageTag === i.DECISION) : d.messageStepId === e.messageStepId && d.messageTag === e.messageTag)),
-                                c = l > -1 ? r.subSteps[l] : void 0;
+                                l = r.subSteps.findLastIndex((d) => (e.messageTag === u.RAW_FUNCTION_RESULT ? d.messageStepId === e.messageStepId && (d.messageTag === e.messageTag || d.messageTag === u.DECISION) : d.messageStepId === e.messageStepId && d.messageTag === e.messageTag)),
+                                i = l > -1 ? r.subSteps[l] : void 0;
                             let b = !1;
-                            if (c) {
+                            if (i) {
                                 switch (e.messageTag) {
-                                    case i.ASSISTANT:
+                                    case u.ASSISTANT:
                                         (this.accumulatedTrace += e.message), (this.traceEnabled = !0);
                                         break;
-                                    case i.SUMMARY:
-                                        (c.summary = (c.summary || "") + e.message), (c.bulletPoints = [...(c.bulletPoints || []), (0, s.K)(e.message)]), (b = !0), (this.accumulatedSummary += e.message);
+                                    case u.SUMMARY:
+                                        (i.summary = (i.summary || "") + e.message), (i.bulletPoints = [...(i.bulletPoints || []), (0, s.K)(e.message)]), (b = !0), (this.accumulatedSummary += e.message);
                                         break;
-                                    case i.DECISION: {
+                                    case u.DECISION: {
                                         const d = this.parseMessageJSON(e.message),
                                             { markdown: a, text: n } = this.getContentForDecisionAction(d);
-                                        (c.actionIcon = this.getIconForDecisionAction(d)), (c.actionType = d?.action), (c.actionSummary = n), (c.actionMarkdownSummary = a), (b = !0);
+                                        (i.actionIcon = this.getIconForDecisionAction(d)), (i.actionType = d?.action), (i.actionSummary = n), (i.actionMarkdownSummary = a), (b = !0);
                                         break;
                                     }
-                                    case i.RAW_FUNCTION_RESULT:
+                                    case u.RAW_FUNCTION_RESULT:
                                         if (!((e.webResults && e.webResults.length) || (e.xPostIds && e.xPostIds.length))) break;
-                                        e.webResults && ((c.webResults = e.webResults), this.addWebResults(e.webResults || [])), e.xPostIds && ((c.xPostIds = e.xPostIds), this.addXPostIds(e.xPostIds || [])), c.actionState, (b = !0);
+                                        e.webResults && ((i.webResults = e.webResults), this.addWebResults(e.webResults || [])), e.xPostIds && ((i.xPostIds = e.xPostIds), this.addXPostIds(e.xPostIds || [])), i.actionState, (b = !0);
                                 }
-                                b && ((r.subSteps[l] = { ...c }), (r.subSteps = [...r.subSteps]));
+                                b && ((r.subSteps[l] = { ...i }), (r.subSteps = [...r.subSteps]));
                             } else {
                                 let d = null;
                                 switch (e.messageTag) {
-                                    case i.ASSISTANT:
+                                    case u.ASSISTANT:
                                         (this.accumulatedTrace += e.message), (this.traceEnabled = !0);
                                         break;
-                                    case i.SUMMARY:
+                                    case u.SUMMARY:
                                         d = { messageStepId: e.messageStepId, messageTag: e.messageTag, summary: e.message };
                                         break;
-                                    case i.DECISION: {
+                                    case u.DECISION: {
                                         const a = this.parseMessageJSON(e.message),
                                             { markdown: n, text: o } = this.getContentForDecisionAction(a);
                                         d = { messageStepId: e.messageStepId, messageTag: e.messageTag, actionIcon: this.getIconForDecisionAction(a), actionType: a?.action, actionSummary: o, actionMarkdownSummary: n, actionWebResult: this.webResults.find((e) => e.url === a?.action_input?.url), actionState: "STARTED" };
                                         break;
                                     }
-                                    case i.RAW_FUNCTION_RESULT: {
+                                    case u.RAW_FUNCTION_RESULT: {
                                         const a = e.webResults || [];
                                         this.addWebResults(a);
                                         const n = e.xPostIds || [];
@@ -590,11 +593,11 @@
                             this.steps[d] = { ...this.steps[d] };
                         }),
                         (this.sortSubstepsByStepIdMessageTag = (e) => {
-                            const d = [i.SUMMARY, i.DECISION, i.RAW_FUNCTION_RESULT];
+                            const d = [u.SUMMARY, u.DECISION, u.RAW_FUNCTION_RESULT];
                             return e.sort((e, a) => (e.messageStepId !== a.messageStepId ? e.messageStepId - a.messageStepId : d.indexOf(e.messageTag) - d.indexOf(a.messageTag)));
                         }),
                         (this.completeStep = (e) => {
-                            this.steps[e].state = u.COMPLETED;
+                            this.steps[e].state = c.COMPLETED;
                         }),
                         (this.parseMessageJSON = (e) => {
                             try {
@@ -606,8 +609,8 @@
                         (this.getContentForDecisionAction = (e) => {
                             if (!e) return { text: "", markdown: "" };
                             if (e.action_input?.username) {
-                                if (e.action_input?.query) return { text: m({ username: e.action_input?.username, query: e.action_input?.query }), markdown: S({ username: e.action_input?.username, query: e.action_input?.query }) };
-                                const d = D({ username: e.action_input?.username });
+                                if (e.action_input?.query) return { text: S({ username: e.action_input?.username, query: e.action_input?.query }), markdown: A({ username: e.action_input?.username, query: e.action_input?.query }) };
+                                const d = m({ username: e.action_input?.username });
                                 return { text: d, markdown: d };
                             }
                             if (e.action_input?.query) {
@@ -621,9 +624,9 @@
                                     } catch (e) {
                                         n = d;
                                     }
-                                    return { text: h({ url: a, query: e.action_input?.query }), markdown: p({ url: n, query: e.action_input?.query }) };
+                                    return { text: p({ url: a, query: e.action_input?.query }), markdown: D({ url: n, query: e.action_input?.query }) };
                                 }
-                                return { text: c({ query: e.action_input?.query }), markdown: b({ query: e.action_input?.query }) };
+                                return { text: b({ query: e.action_input?.query }), markdown: h({ query: e.action_input?.query }) };
                             }
                             return { text: "", markdown: "" };
                         }),
@@ -641,21 +644,22 @@
                                     return "IconGlobeStroke";
                             }
                         }),
-                        (this.complete = () => {
+                        (this.complete = (e = !0) => {
                             "COMPLETED" !== this.state &&
                                 ((this.streamCompletedTimestamp = Date.now()),
                                 (this.state = "COMPLETED"),
                                 this.steps.forEach((e) => {
-                                    (e.state = u.COMPLETED),
+                                    (e.state = c.COMPLETED),
                                         e.subSteps.forEach((e) => {
                                             e.actionState = "COMPLETED";
                                         });
                                 }),
+                                e && this.steps.push({ id: o().v4(), state: c.COMPLETED, header: i, subSteps: [], isCompleteHeader: !0 }),
                                 (this.steps = [...this.steps]));
                         }),
                         (this.onAbort = () => {
                             for (let e = 0; e < this.steps.length; e++)
-                                this.steps[e].state === u.IN_PROGRESS && (this.steps[e].state = u.FAILED),
+                                this.steps[e].state === c.IN_PROGRESS && (this.steps[e].state = c.FAILED),
                                     this.steps[e].subSteps.forEach((e) => {
                                         e.actionState = "COMPLETED";
                                     });
@@ -804,4 +808,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-743779ef.77373f4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-743779ef.2c68e40a.js.map

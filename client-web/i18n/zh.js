@@ -280,7 +280,7 @@
                 f("edf7f57e", "通过认证即可获得推广回复、分析、免广告浏览等功能。立即升级你的个人资料。"),
                 f("ba920d68", "通过认证来提升你的影响力"),
                 f("ib79d0c2", "解锁 VIP 功能：认证你的账号"),
-                f("c0d3bd82", "You’ve advertised on X, but don’t have a Verified Organizations subscription"),
+                f("c0d3bd82", "你已在 X 上投放广告，但尚未订阅“认证组织”"),
                 f("d7836d1e", "订阅即可获得最高 12,000 美元的免费广告积分、黄金认证、VIP 支持和一整套发展工具。"),
                 f("f528e369", function (e) {
                     return "订阅 " + e.tier + "，撰写自己的文章";
@@ -1274,6 +1274,7 @@
                 f("b8f3500a", "在阅读模式下查看主题帖"),
                 f("fc7db594", "个人资料概要"),
                 f("c3f04d9c", "思考中"),
+                f("cbdddb0a", "已结束"),
                 f("e98cc293", function (e) {
                     return "正在搜索 " + e.query;
                 }),
@@ -1281,7 +1282,7 @@
                     return "正在搜索**“" + e.query + "”**";
                 }),
                 f("i2e0f4d7", function (e) {
-                    return "Browsing " + e.url + " for " + e.query;
+                    return "正在浏览 " + e.url + " 上的" + e.query;
                 }),
                 f("acb9b845", function (e) {
                     return "浏览 " + e.url + " 以搜索**“" + e.query + "”**";
@@ -1290,7 +1291,7 @@
                     return "正在搜索 @" + e.username + " 的帖子";
                 }),
                 f("f7d9cfb9", function (e) {
-                    return "Searching posts by @" + e.username + " for " + e.query;
+                    return "正在搜索 @" + e.username + " 的帖子中的" + e.query;
                 }),
                 f("bec7eb11", function (e) {
                     return "正在搜索 @" + e.username + ' 的帖子中的 **"' + e.query + '"**';
@@ -1913,9 +1914,9 @@
                 f("b5660338", "时间线预览"),
                 f("hff1b97a", "只有“已订阅”用户才能回复。"),
                 f("a330771e", "将链接复制到剪贴板"),
-                f("b6510e68", "复制文章的 URL 以便分享。"),
-                f("e4a6e006", "出错了。请重试。");
-            f("eff483e0", "发布后，获取分享文章的链接。"),
+                f("b6510e68", "复制文章的 URL 以便分享。");
+            f("e4a6e006", "出错了。请重试。"),
+                f("eff483e0", "发布后，获取分享文章的链接。"),
                 f("ca15dd4e", "草稿"),
                 f("bb40bf66", "已发布"),
                 f("h107935c", "刚刚最后保存"),
@@ -2965,9 +2966,9 @@
                 f("e0adec82", "品牌资源"),
                 f("df1b7550", "市场营销"),
                 f("he258678", "企业版 X"),
-                f("c6f58084", "开发者"),
-                f("d83f18d2", "目录");
-            f("hc5aa17c", "获取 X 应用"),
+                f("c6f58084", "开发者");
+            f("d83f18d2", "目录"),
+                f("hc5aa17c", "获取 X 应用"),
                 f("j0693948", "获取 Grok 应用"),
                 f("af781666", "人们怎么看？"),
                 f("ad35153e", "测试版"),
@@ -3881,9 +3882,9 @@
                 }),
                 f("e3275464", "发送"),
                 f("cededf2a", "主持人"),
-                f("i2caef48", "共同主持人"),
-                f("j245c654", "发言人");
-            f("eda23a02", "听众"),
+                f("i2caef48", "共同主持人");
+            f("j245c654", "发言人"),
+                f("eda23a02", "听众"),
                 f("b90eb348", "邀请发言"),
                 f("d9a63e82", "从发言人中移除"),
                 f("bd917b26", "邀请共同主持"),
@@ -4280,7 +4281,6 @@
                 f("e2811afc", "比赛"),
                 f("j081fa34", "积分榜"),
                 f("i7c7f156", "明天"),
-                f("cbdddb0a", "已结束"),
                 f("b134ba52", "进行中"),
                 f("j1361724", "半场"),
                 f("fa0f1262", "休息"),
@@ -4326,10 +4326,10 @@
                 f("b52484b6", "正在搜索..."),
                 f("a4d9dbfa", "想法"),
                 f("ib1c5475", function (e) {
-                    return "Thought for " + e.minutes + "m " + e.seconds + "s";
+                    return "已经思考 " + e.minutes + " 分 " + e.seconds + " 秒";
                 }),
                 f("a15d62db", function (e) {
-                    return "Thought for " + e.seconds + "s";
+                    return "已经思考 " + e.seconds + " 秒";
                 }),
                 f("d7cb5408", "相关网页"),
                 f("aa7c96bb", function (e) {
@@ -13231,4 +13231,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh.262d5a5a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/zh.53c7aa2a.js.map

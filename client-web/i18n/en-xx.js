@@ -1275,6 +1275,7 @@
                 s("b8f3500a", "[Vïíéêw thréêåäd ïín Réêåädéêr]"),
                 s("fc7db594", "[Pröøfïíléê Sümmåäry]"),
                 s("c3f04d9c", "[Thïínkïíng]"),
+                s("cbdddb0a", "[Cöømpléêtéêd]"),
                 s("e98cc293", function (t) {
                     return "[Séêåärchïíng föør " + t.query + "]";
                 }),
@@ -1914,9 +1915,9 @@
                 s("b5660338", "[Tïíméêlïínéê préêvïíéêw]"),
                 s("hff1b97a", "[Only Sübscrïíbéêd cåän réêply.]"),
                 s("a330771e", "[Cöøpy lïínk töø yöøür clïípböøåärd]"),
-                s("b6510e68", "[Cöøpy yöøür Artïícléê’s URL söø yöøü cåän shåäréê ïít.]"),
-                s("e4a6e006", "[Söøméêthïíng wéênt wröøng. Pléêåäséê try åägåäïín.]");
-            s("eff483e0", "[Aftéêr yöøü püblïísh, géêt åä lïínk töø shåäréê théê Artïícléê.]"),
+                s("b6510e68", "[Cöøpy yöøür Artïícléê’s URL söø yöøü cåän shåäréê ïít.]");
+            s("e4a6e006", "[Söøméêthïíng wéênt wröøng. Pléêåäséê try åägåäïín.]"),
+                s("eff483e0", "[Aftéêr yöøü püblïísh, géêt åä lïínk töø shåäréê théê Artïícléê.]"),
                 s("ca15dd4e", "[Dråäft]"),
                 s("bb40bf66", "[Püblïíshéêd]"),
                 s("h107935c", "[Låäst såävéêd jüst nöøw]"),
@@ -2966,9 +2967,9 @@
                 s("e0adec82", "[Bråänd Réêsöøürcéês]"),
                 s("df1b7550", "[Måärkéêtïíng]"),
                 s("he258678", "[X föør Büsïínéêss]"),
-                s("c6f58084", "[Déêvéêlöøpéêrs]"),
-                s("d83f18d2", "[Dïíréêctöøry]");
-            s("hc5aa17c", "[Géêt théê X åäpp]"),
+                s("c6f58084", "[Déêvéêlöøpéêrs]");
+            s("d83f18d2", "[Dïíréêctöøry]"),
+                s("hc5aa17c", "[Géêt théê X åäpp]"),
                 s("j0693948", "[Géêt théê Gröøk åäpp]"),
                 s("af781666", "[Whåät döø péêöøpléê thïínk?]"),
                 s("ad35153e", "[béêtåä]"),
@@ -3882,9 +3883,9 @@
                 }),
                 s("e3275464", "[Séênd]"),
                 s("cededf2a", "[Höøst]"),
-                s("i2caef48", "[Cöø-höøsts]"),
-                s("j245c654", "[Spéêåäkéêrs]");
-            s("eda23a02", "[Lïístéênéêrs]"),
+                s("i2caef48", "[Cöø-höøsts]");
+            s("j245c654", "[Spéêåäkéêrs]"),
+                s("eda23a02", "[Lïístéênéêrs]"),
                 s("b90eb348", "[Invïítéê töø Spéêåäk]"),
                 s("d9a63e82", "[Réêmöøvéê fröøm Spéêåäkéêrs]"),
                 s("bd917b26", "[Invïítéê töø Cöø-höøst]"),
@@ -4281,7 +4282,6 @@
                 s("e2811afc", "[Gåäméês]"),
                 s("j081fa34", "[Ståändïíngs]"),
                 s("i7c7f156", "[Töømöørröøw]"),
-                s("cbdddb0a", "[Cöømpléêtéêd]"),
                 s("b134ba52", "[In Pröøgréêss]"),
                 s("j1361724", "[Håälftïíméê]"),
                 s("fa0f1262", "[Bréêåäk]"),
@@ -13217,4 +13217,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-xx.7d8a7e7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-xx.feffab3a.js.map

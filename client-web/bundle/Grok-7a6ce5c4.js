@@ -12,8 +12,8 @@
                 o = n.n(i),
                 l = n(166852),
                 c = n(916559),
-                m = n(520595),
-                u = n(94135),
+                u = n(520595),
+                m = n(94135),
                 d = n(649328);
             const p = o().a3186bff,
                 h = o().f9b2d343,
@@ -46,9 +46,9 @@
                             a.createElement(
                                 s.Z,
                                 { style: f.container },
-                                k.current.map((s) => (s === C ? a.createElement(u.a, { images: E, key: "post_ids_button", label: h({ count: t.length }), onClick: y, withAnimation: e }) : s === _ ? a.createElement(u.a, { images: v, key: "web_results_button", label: p({ count: n.length }), onClick: x, withAnimation: e }) : void 0)),
+                                k.current.map((s) => (s === C ? a.createElement(m.a, { images: E, key: "post_ids_button", label: h({ count: t.length }), onClick: y, withAnimation: e }) : s === _ ? a.createElement(m.a, { images: v, key: "web_results_button", label: p({ count: n.length }), onClick: x, withAnimation: e }) : void 0)),
                             ),
-                            r ? a.createElement(m.a, { onDrawerDismiss: b, paginationOptions: { numResultsPerPage: 15 }, postIds: t }) : null,
+                            r ? a.createElement(u.a, { onDrawerDismiss: b, paginationOptions: { numResultsPerPage: 15 }, postIds: t }) : null,
                             o ? a.createElement(c.E, { onDrawerDismiss: w, paginationOptions: { numResultsPerPage: 25 }, webResults: n }) : null,
                         )
                     );
@@ -65,8 +65,8 @@
                 o = n(392237),
                 l = n(187669),
                 c = n(33474),
-                m = n(342430),
-                u = n(910594),
+                u = n(342430),
+                m = n(910594),
                 d = n(978921),
                 p = n(122670);
             function h({ children: e, token: t }) {
@@ -88,29 +88,29 @@
                 }, [e.tokens]);
                 switch (e.type) {
                     case "link":
-                        return a.createElement(u.Z, { token: e });
+                        return a.createElement(m.Z, { token: e });
                     case "heading":
                         return a.createElement(c.X, { token: e }, t);
                     case "strong":
                         return a.createElement(i.ZP, { color: "gray900", size: "subtext2", weight: "bold" }, a.createElement(h, { token: e }, t));
                     case "blockLatex":
-                        return a.createElement(m.Z, { content: e.text, isBlock: !0 });
+                        return a.createElement(u.Z, { content: e.text, isBlock: !0 });
                     case "inlineLatex":
-                        return a.createElement(m.Z, { content: e.text });
+                        return a.createElement(u.Z, { content: e.text });
                     default:
                         return a.createElement(h, { token: e }, t);
                 }
             }
             function f({ blockSizes: e, index: t, last: n, setBlockHeight: i, text: o }) {
                 const [l, c] = a.useState(-1),
-                    m = a.useCallback(
+                    u = a.useCallback(
                         ({ nativeEvent: e }) => {
                             const n = e.layout.height;
                             n !== l && (c(n), i(t, n));
                         },
                         [t, c, i, l],
                     ),
-                    u = a.useMemo(() => {
+                    m = a.useMemo(() => {
                         let n = 0;
                         for (let a = 0; a < t; a++) (n += e[a] || 0), (n += 10);
                         return n;
@@ -119,7 +119,7 @@
                         return s.TU.lexer(((e = o), /^\s*[-*+]\s+/.test(e) ? e.replace(/^(\s*)[-*+]\s+/, "$1• ") : /^\s*\d+.\s+/.test(e) ? e.replace(/^(\s*)(\d+).\s+/, "$1$2 ") : e)).map((e, t) => a.createElement(g, { key: `parsedToken-${t}`, token: e }));
                         var e;
                     }, [o]);
-                return a.createElement(r.Z, { onLayout: m, style: { width: "100%", top: u, position: "absolute", opacity: l >= 0 ? 1 : 0.1 } }, d);
+                return a.createElement(r.Z, { onLayout: u, style: { width: "100%", top: m, position: "absolute", opacity: l >= 0 ? 1 : 0.1 } }, d);
             }
             function y({ charLimit: e, height: t, text: n }) {
                 const s = a.useRef(0);
@@ -128,12 +128,12 @@
                 });
                 const i = a.createRef(),
                     [o, c] = a.useState([]),
-                    m = a.useRef({ curr: 0, currSmoothed: 0, target: 0, alpha: 0.01, beta: 0, velocity: 0, lastTimestamp: 0 }),
-                    [u, d] = a.useState(t || 0),
+                    u = a.useRef({ curr: 0, currSmoothed: 0, target: 0, alpha: 0.01, beta: 0, velocity: 0, lastTimestamp: 0 }),
+                    [m, d] = a.useState(t || 0),
                     p = a.useCallback(
                         ({ nativeEvent: e }) => {
                             const n = t || e.layout.height;
-                            d(n), m.current.currSmoothed || (m.current.currSmoothed = 0.5 * n);
+                            d(n), u.current.currSmoothed || (u.current.currSmoothed = 0.5 * n);
                         },
                         [d, t],
                     ),
@@ -168,7 +168,7 @@
                     b = n.length > 0;
                 return (
                     a.useEffect(() => {
-                        b && o.length && g.length && (m.current.target = o.reduce((e, t) => (e || 0) + (t || 0), 0) + 10 * g.length);
+                        b && o.length && g.length && (u.current.target = o.reduce((e, t) => (e || 0) + (t || 0), 0) + 10 * g.length);
                     }, [g, b, o]),
                     a.useEffect(
                         (e) => {
@@ -176,16 +176,16 @@
                                 n = !0;
                             return (
                                 (t = requestAnimationFrame(function e(a) {
-                                    const s = m.current;
+                                    const s = u.current;
                                     0 === s.lastTimestamp && (s.lastTimestamp = a);
                                     let r = Math.min(a - s.lastTimestamp, 100);
                                     r < 0.001 && (r = 0.001), (s.lastTimestamp = a);
                                     const o = s.curr + s.velocity * r,
                                         l = s.target - o;
                                     (s.curr = o + s.alpha * l), (s.velocity = s.velocity + (s.beta * l) / r);
-                                    let c = Math.floor(-s.curr + 0.95 * u);
-                                    const d = u ? Math.max(0, c / u) : 1;
-                                    (c -= d * u * 0.7),
+                                    let c = Math.floor(-s.curr + 0.95 * m);
+                                    const d = m ? Math.max(0, c / m) : 1;
+                                    (c -= d * m * 0.7),
                                         (s.currSmoothed += (c - s.currSmoothed) / 30),
                                         i.current &&
                                             ((i.current.style.top = `${s.currSmoothed}px`),
@@ -204,7 +204,7 @@
                                 }
                             );
                         },
-                        [i, u],
+                        [i, m],
                     ),
                     a.createElement(r.Z, { onLayout: p, style: { flex: 1, overflow: "hidden" } }, a.createElement(r.Z, { ref: i, style: { paddingEnd: 12, position: "absolute", width: "95%" } }, y && y.map((e, t) => a.createElement(f, { blockSizes: o, index: e.idx, key: `block${e.idx}`, last: !1, setBlockHeight: h, text: e.blockText }))))
                 );
@@ -227,10 +227,10 @@
                         a.useEffect(() => {
                             t(l.ZP.fetchOneByScreenNameIfNeeded(e));
                         }, [t, e]),
-                        n ? a.createElement(a.Fragment, null, a.createElement(s.Z, { style: m.container }, a.createElement(r.Z, { isVerified: n.is_blue_verified, name: n.name, profileImageUrl: n.profile_image_url_https, screenName: n.screen_name, withStackedLayout: !0 }))) : null
+                        n ? a.createElement(a.Fragment, null, a.createElement(s.Z, { style: u.container }, a.createElement(r.Z, { isVerified: n.is_blue_verified, name: n.name, profileImageUrl: n.profile_image_url_https, screenName: n.screen_name, withStackedLayout: !0 }))) : null
                     );
                 },
-                m = i.default.create((e) => ({ container: { flexDirection: "row", gap: e.spaces.space8, justifyContent: "flex-start", alignItems: "stretch", flexWrap: "wrap", paddingHorizontal: e.spaces.space12, paddingVertical: e.spaces.space8, borderRadius: e.borderRadii.large, borderWidth: e.spaces.space1, borderColor: e.colors.borderColor }, header: { fontSize: e.fontSizes.body } }));
+                u = i.default.create((e) => ({ container: { flexDirection: "row", gap: e.spaces.space8, justifyContent: "flex-start", alignItems: "stretch", flexWrap: "wrap", paddingHorizontal: e.spaces.space12, paddingVertical: e.spaces.space8, borderRadius: e.borderRadii.large, borderWidth: e.spaces.space1, borderColor: e.colors.borderColor }, header: { fontSize: e.fontSizes.body } }));
         },
         917270: (e, t, n) => {
             n.d(t, { O: () => y });
@@ -241,8 +241,8 @@
                 o = n(392237),
                 l = n(674132),
                 c = n.n(l),
-                m = n(323265),
-                u = n(725516),
+                u = n(323265),
+                m = n(725516),
                 d = n(54957),
                 p = n(739070),
                 h = n(884058),
@@ -250,7 +250,7 @@
             const f = c().b61ad410,
                 y = ({ onDrawerDismiss: e }) => a.createElement(r.Z, { align: "right", buttonType: "primaryText", onDismissed: e, style: x.drawer, title: f, withBackgroundBlur: !0 }, a.createElement(b, { onDrawerDismiss: e })),
                 b = ({ onDrawerDismiss: e }) => {
-                    const t = (0, u.z)(),
+                    const t = (0, m.z)(),
                         [n, r] = a.useState(g.G.all),
                         [o, l] = a.useState(Math.random()),
                         [c, f] = a.useState(void 0),
@@ -261,7 +261,7 @@
                             [t],
                         ),
                         b = a.useMemo(() => (n === g.G.images ? a.createElement(h.v, null) : n === g.G.pins ? a.createElement(p.s, null) : a.createElement(d.c, { onHistoryLinkClicked: e, onSearchSubmit: y, searchKey: o, searchValue: c ?? "" })), [c, o, n, e, y]);
-                    return a.createElement(s.Z, { style: x.container }, m.ZP.isWebView() ? a.createElement(i.Z, { size: "space56" }) : null, a.createElement(s.Z, { style: x.headerContainer }, a.createElement(s.Z, { style: x.contentContainer }, a.createElement(s.Z, { style: x.staticContentContainer }, a.createElement(g.k, { onTabChange: r, selectedTab: n })))), a.createElement(s.Z, { style: x.scrollSection }, a.createElement(s.Z, { style: x.innerContentContainer }, b)));
+                    return a.createElement(s.Z, { style: x.container }, u.ZP.isWebView() ? a.createElement(i.Z, { size: "space56" }) : null, a.createElement(s.Z, { style: x.headerContainer }, a.createElement(s.Z, { style: x.contentContainer }, a.createElement(s.Z, { style: x.staticContentContainer }, a.createElement(g.k, { onTabChange: r, selectedTab: n })))), a.createElement(s.Z, { style: x.scrollSection }, a.createElement(s.Z, { style: x.innerContentContainer }, b)));
                 },
                 x = o.default.create((e) => ({ container: { width: "100%", height: "100%", flexDirection: "column", position: "relative" }, headerContainer: { width: "100%" }, mainContainer: { flex: 1, display: "flex", flexDirection: "column", height: "100%" }, contentContainer: { flex: 1 }, staticContentContainer: { width: "100%", maxWidth: 500, flexShrink: 0 }, drawer: { width: 440 }, searchContainer: { flexDirection: "row", flexGrow: 1, flexShrink: 1, marginHorizontal: e.spaces.space4, alignItems: "center", marginVertical: "unset" }, post: { borderBottomWidth: 1, borderBottomColor: e.colors.borderColor }, scrollView: { flex: 1, width: "100%", marginTop: 0 }, innerContentContainer: { paddingTop: 0, height: "100%" }, scrollSection: { flex: 1, position: "relative" }, searchSection: { flexShrink: 0, width: "100%" } }));
         },
@@ -274,8 +274,8 @@
                 o = n(674132),
                 l = n.n(o),
                 c = n(809311),
-                m = n(193285);
-            const u = l().d7cb5408,
+                u = n(193285);
+            const m = l().d7cb5408,
                 d = ({ onDrawerDismiss: e, paginationOptions: t, webResults: n }) => {
                     const [i, o] = a.useState(0),
                         [l, d] = a.useState(() => (t ? n.slice(0, t.numResultsPerPage) : n)),
@@ -292,11 +292,11 @@
                         );
                     return a.createElement(
                         r.Z,
-                        { align: "right", buttonType: "primaryText", onDismissed: e, title: u },
+                        { align: "right", buttonType: "primaryText", onDismissed: e, title: m },
                         a.createElement(
                             s.Z,
                             { style: p.container },
-                            h && a.createElement(m.Z, { currentPageIdx: i, numPerPage: t?.numResultsPerPage || 0, onPageIdxChange: g, total: n.length }),
+                            h && a.createElement(u.Z, { currentPageIdx: i, numPerPage: t?.numResultsPerPage || 0, onPageIdxChange: g, total: n.length }),
                             l.map((e, t) => a.createElement(c.p, { item: e, key: `web_result_${t}`, number: h ? void 0 : t + 1 })),
                         ),
                     );
@@ -304,7 +304,7 @@
                 p = i.default.create((e) => ({ container: { width: "100%", maxWidth: 500, gap: e.spaces.space12, marginBottom: e.spaces.space32, paddingHorizontal: e.spaces.space16 } }));
         },
         193285: (e, t, n) => {
-            n.d(t, { Z: () => m });
+            n.d(t, { Z: () => u });
             n(136728);
             var a = n(202784),
                 s = n(325686),
@@ -313,8 +313,8 @@
                 o = n(97301),
                 l = n(58399);
             const c = 5;
-            function m({ currentPageIdx: e, numPerPage: t, onPageIdxChange: n, style: i, total: m }) {
-                const d = t > 0 ? Math.ceil(m / t) : 1,
+            function u({ currentPageIdx: e, numPerPage: t, onPageIdxChange: n, style: i, total: u }) {
+                const d = t > 0 ? Math.ceil(u / t) : 1,
                     p = a.useMemo(() => {
                         const t = [];
                         for (let n = 0; n < d; n++) t.push({ idx: n, text: n + 1, isSelected: e === n });
@@ -336,17 +336,17 @@
                     }, [p, e, d]);
                 return a.createElement(
                     s.Z,
-                    { style: [u.container, i] },
-                    a.createElement(r.ZP, { backgroundColor: "transparent", borderColor: "transparent", color: "text", disabled: e <= 0, icon: a.createElement(o.default, { style: u.chevron }), onClick: g, size: "small", style: u.button }),
+                    { style: [m.container, i] },
+                    a.createElement(r.ZP, { backgroundColor: "transparent", borderColor: "transparent", color: "text", disabled: e <= 0, icon: a.createElement(o.default, { style: m.chevron }), onClick: g, size: "small", style: m.button }),
                     a.createElement(
                         s.Z,
-                        { style: u.pageNumContainer },
-                        f.map((e) => a.createElement(r.ZP, { borderColor: "transparent", color: e.isSelected ? "text" : "gray700", key: `page_${e.text}`, onClick: () => n(e.idx), size: "small", style: u.button }, e.text)),
+                        { style: m.pageNumContainer },
+                        f.map((e) => a.createElement(r.ZP, { borderColor: "transparent", color: e.isSelected ? "text" : "gray700", key: `page_${e.text}`, onClick: () => n(e.idx), size: "small", style: m.button }, e.text)),
                     ),
-                    a.createElement(r.ZP, { backgroundColor: "transparent", borderColor: "transparent", color: "text", disabled: e >= d - 1, icon: a.createElement(l.default, { style: u.chevron }), onClick: h, size: "small", style: u.button }),
+                    a.createElement(r.ZP, { backgroundColor: "transparent", borderColor: "transparent", color: "text", disabled: e >= d - 1, icon: a.createElement(l.default, { style: m.chevron }), onClick: h, size: "small", style: m.button }),
                 );
             }
-            const u = i.default.create((e) => ({ container: { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center", flex: 1, gap: e.spaces.space8, width: "100%" }, chevron: { width: e.spaces.space20, height: e.spaces.space20 }, pageNumContainer: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space4, flexGrow: 0, flexShrink: 1 }, button: {} }));
+            const m = i.default.create((e) => ({ container: { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center", flex: 1, gap: e.spaces.space8, width: "100%" }, chevron: { width: e.spaces.space20, height: e.spaces.space20 }, pageNumContainer: { display: "flex", flexDirection: "row", alignItems: "center", gap: e.spaces.space4, flexGrow: 0, flexShrink: 1 }, button: {} }));
         },
         520595: (e, t, n) => {
             n.d(t, { a: () => h });
@@ -357,17 +357,17 @@
                 o = n(674132),
                 l = n.n(o),
                 c = n(400196),
-                m = n(306677),
-                u = n(725405),
+                u = n(306677),
+                m = n(725405),
                 d = n(193285);
             const p = l().b58d2bd2,
                 h = ({ onDrawerDismiss: e, paginationOptions: t, postIds: n, style: i, topBarStyle: o, withTransparentMask: l }) => {
-                    const [c, m] = a.useState(0),
-                        [u, h] = a.useState(() => (t ? n.slice(0, t.numResultsPerPage) : n)),
+                    const [c, u] = a.useState(0),
+                        [m, h] = a.useState(() => (t ? n.slice(0, t.numResultsPerPage) : n)),
                         y = t && n.length > t.numResultsPerPage,
                         b = a.useCallback(
                             (e) => {
-                                if ((m(e), t)) {
+                                if ((u(e), t)) {
                                     const a = e * t.numResultsPerPage,
                                         s = a + t.numResultsPerPage;
                                     h(n.slice(a, s));
@@ -382,17 +382,17 @@
                             s.Z,
                             { style: f.container },
                             y && a.createElement(d.Z, { currentPageIdx: c, numPerPage: t?.numResultsPerPage || 0, onPageIdxChange: b, total: n.length }),
-                            u.map((e) => a.createElement(g, { key: `post_${e}`, postId: e })),
+                            m.map((e) => a.createElement(g, { key: `post_${e}`, postId: e })),
                         ),
                     );
                 },
                 g = ({ postId: e }) => {
                     const t = a.useRef(!1),
-                        n = (0, u.Z)(),
+                        n = (0, m.Z)(),
                         r = a.useCallback(() => {
                             t.current || ((t.current = !0), n.scribe({ action: "impression", component: "post", data: { tweet_id: e } }));
                         }, [n, e]);
-                    return a.createElement(s.Z, { key: `post_${e}`, style: f.post }, a.createElement(c.ZP, { displayPromotedContent: !0, tweetId: e, withActions: !0 }), a.createElement(m.D, { id: `post_${e}`, onFullyVisible: r, position: "bottom", testID: `post_${e}` }));
+                    return a.createElement(s.Z, { key: `post_${e}`, style: f.post }, a.createElement(c.ZP, { displayPromotedContent: !0, tweetId: e, withActions: !0 }), a.createElement(u.D, { id: `post_${e}`, onFullyVisible: r, position: "bottom", testID: `post_${e}` }));
                 },
                 f = i.default.create((e) => ({ container: { width: "100%", maxWidth: 500, marginBottom: e.spaces.space12 }, post: { borderBottomWidth: 1, borderBottomColor: e.colors.borderColor }, mediaContent: { marginHorizontal: e.spaces.space16, marginBottom: e.spaces.space8, borderRadius: e.borderRadii.large, overflow: "hidden" } }));
         },
@@ -419,7 +419,7 @@
                             }
                         });
                     })(e),
-                    m = [];
+                    u = [];
                 if (o) {
                     c.filter((e) => {
                         const t = new URL(e);
@@ -428,10 +428,10 @@
                         const n = new URL(e),
                             a = n.searchParams.get("v"),
                             s = t.find((t) => t.url === e);
-                        "www.youtube.com" === n.hostname && a && s && m.push(`https://www.youtube.com/embed/${a}`);
+                        "www.youtube.com" === n.hostname && a && s && u.push(`https://www.youtube.com/embed/${a}`);
                     });
                 }
-                const u = [];
+                const m = [];
                 if (i) {
                     c.filter((e) => l.test(e)).forEach((e) => {
                         const t = (function (e) {
@@ -442,13 +442,13 @@
                                 return null;
                             }
                         })(e);
-                        t && n.includes(t) && !u.includes(t) && u.push(t);
+                        t && n.includes(t) && !m.includes(t) && m.push(t);
                     });
                 }
-                return { embeddedYoutubeVideoURLs: m.slice(0, 1), embeddedPostIds: u.slice(0, r) };
+                return { embeddedYoutubeVideoURLs: u.slice(0, 1), embeddedPostIds: m.slice(0, r) };
             }
-            var m = n(530732),
-                u = n(823161),
+            var u = n(530732),
+                m = n(823161),
                 d = n(366635),
                 p = n(966886),
                 h = n(650028),
@@ -462,7 +462,7 @@
                 if (!E) return null;
                 const { created_at: v, text: k, user: C } = E;
                 return a.createElement(
-                    m.Z,
+                    u.Z,
                     {
                         onClick: () => {
                             i && i(), window.open(`https://x.com${E.permalink}`, "_blank");
@@ -474,7 +474,7 @@
                         a.createElement(
                             s.Z,
                             { style: [w.container, e ? w.hoveredContainer : void 0, l] },
-                            a.createElement(s.Z, { style: w.headerContainer }, a.createElement(s.Z, { style: w.nameContainer }, a.createElement(u.default, { "aria-label": C.name, borderColor: "gray700", borderWidth: "small", screenName: C.screen_name, size: t ? "medium" : "large", uri: C.profile_image_url_https, withHoverCard: !0, withLink: !0 }), a.createElement(d.Z, { affiliateBadgeInfo: C.highlightedLabel, isBlueVerified: C.is_blue_verified, isVerified: C.verified, name: C.name, nameSize: t ? "subtext2" : "subtext1", screenName: C.screen_name, screenNameSize: t ? "subtext3" : "subtext2", screenNameStyle: w.screenName, screenNameSuffixContainerStyle: { marginStart: 0 }, style: { display: "flex", flexDirection: "column", alignItems: "flex-start" }, verifiedType: C.verified_type, withHoverCard: !0, withLink: !0, withStackedLayout: !0 })), a.createElement(p.Z, { humanReadable: !1, style: [w.timestamp, { fontSize: t ? r.default.theme.fontSizes.subtext3 : r.default.theme.fontSizes.subtext2, lineHeight: t ? r.default.theme.fontSizes.subtext3 : r.default.theme.fontSizes.subtext2 }], timestamp: v })),
+                            a.createElement(s.Z, { style: w.headerContainer }, a.createElement(s.Z, { style: w.nameContainer }, a.createElement(m.default, { "aria-label": C.name, borderColor: "gray700", borderWidth: "small", screenName: C.screen_name, size: t ? "medium" : "large", uri: C.profile_image_url_https, withHoverCard: !0, withLink: !0 }), a.createElement(d.Z, { affiliateBadgeInfo: C.highlightedLabel, isBlueVerified: C.is_blue_verified, isVerified: C.verified, name: C.name, nameSize: t ? "subtext2" : "subtext1", screenName: C.screen_name, screenNameSize: t ? "subtext3" : "subtext2", screenNameStyle: w.screenName, screenNameSuffixContainerStyle: { marginStart: 0 }, style: { display: "flex", flexDirection: "column", alignItems: "flex-start" }, verifiedType: C.verified_type, withHoverCard: !0, withLink: !0, withStackedLayout: !0 })), a.createElement(p.Z, { humanReadable: !1, style: [w.timestamp, { fontSize: t ? r.default.theme.fontSizes.subtext3 : r.default.theme.fontSizes.subtext2, lineHeight: t ? r.default.theme.fontSizes.subtext3 : r.default.theme.fontSizes.subtext2 }], timestamp: v })),
                             E.in_reply_to_screen_name && a.createElement(h.ZP, { displayTextRange: E.display_text_range, inReplyToName: E.in_reply_to_name, inReplyToScreenName: E.in_reply_to_screen_name, inReplyToUserIdStr: E.in_reply_to_user_id_str, linkType: h.ZP.ReplyContextLinkTypes.none, size: t ? "subtext2" : "subtext1", tweetPermalink: E.permalink }),
                             a.createElement(g.Z, { displayTextRange: E.display_text_range, entities: E.entities, isCondensed: t, numberOfLines: n, style: [w.tweetText, c], text: k }),
                             (!t || !k) &&
@@ -496,11 +496,11 @@
                 k = ({ style: e, url: t }) => a.createElement(s.Z, { style: C.embeddedYoutubeVideoContainer }, a.createElement("iframe", { allow: "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share", allowFullScreen: !0, height: "100%", referrerPolicy: "strict-origin-when-cross-origin", src: t, style: C.embeddedYoutubeVideo, title: "YouTube video player", width: "100%" })),
                 C = r.default.create((e) => ({ embeddedYoutubeVideoContainer: { width: "100%", aspectRatio: 16 / 9, borderRadius: e.borderRadii.medium, overflow: "hidden" }, embeddedYoutubeVideo: { border: "none" } })),
                 _ = ({ postIds: e, response: t, style: n, webResults: r }) => {
-                    const { isCompactLayout: l, isGrokDrawer: m } = (0, o.ZP)(),
-                        u = (0, i.hC)("responsive_web_grok_allow_youtube_embeds"),
+                    const { isCompactLayout: l, isGrokDrawer: u } = (0, o.ZP)(),
+                        m = (0, i.hC)("responsive_web_grok_allow_youtube_embeds"),
                         d = (0, i.hC)("responsive_web_grok_allow_x_post_embeds"),
-                        p = a.useMemo(() => c(t, r, e, { allowXPostEmbeds: d, allowYoutubeEmbeds: u }, l), [t, r, e, d, u, l]);
-                    return 0 === p.embeddedPostIds.length && 0 === p.embeddedYoutubeVideoURLs.length ? null : a.createElement(s.Z, { style: [S.container, n] }, d && p.embeddedPostIds.length > 0 && a.createElement(E, { numberOfLines: m || l ? 3 : void 0, postIds: p.embeddedPostIds, style: S.embeddedXPosts }), u && p.embeddedYoutubeVideoURLs.map((e) => a.createElement(k, { key: e, url: e })));
+                        p = a.useMemo(() => c(t, r, e, { allowXPostEmbeds: d, allowYoutubeEmbeds: m }, l), [t, r, e, d, m, l]);
+                    return 0 === p.embeddedPostIds.length && 0 === p.embeddedYoutubeVideoURLs.length ? null : a.createElement(s.Z, { style: [S.container, n] }, d && p.embeddedPostIds.length > 0 && a.createElement(E, { numberOfLines: u || l ? 3 : void 0, postIds: p.embeddedPostIds, style: S.embeddedXPosts }), m && p.embeddedYoutubeVideoURLs.map((e) => a.createElement(k, { key: e, url: e })));
                 },
                 S = r.default.create((e) => ({ container: { display: "flex", flexDirection: "column", gap: e.spaces.space12 }, embeddedXPosts: { width: "100%" } }));
         },
@@ -551,9 +551,9 @@
                         .slice(0, 5)
                         .flatMap((e) => e.photos)
                         .filter(Boolean),
-                    m = r()(c, "media_url_https").slice(0, 5),
-                    u = m.map((e) => e.media_key).filter(Boolean);
-                return a.useMemo(() => m, [u.join(",")]);
+                    u = r()(c, "media_url_https").slice(0, 5),
+                    m = u.map((e) => e.media_key).filter(Boolean);
+                return a.useMemo(() => u, [m.join(",")]);
             }
         },
         819102: (e, t, n) => {
@@ -594,11 +594,11 @@
                 o > e.lastIndexOf("\\)") && (i = o);
                 let l = -1;
                 const c = e.lastIndexOf("\n"),
-                    m = e.substring(c).trim();
-                (m.startsWith("-") || 0 === m.length) && (l = c);
-                let u = -1;
-                /^\d+\.?/.test(m) && (u = c);
-                const d = [t, s, i, l, u, n].filter((t) => -1 !== t && t > e.length - 100);
+                    u = e.substring(c).trim();
+                (u.startsWith("-") || 0 === u.length) && (l = c);
+                let m = -1;
+                /^\d+\.?/.test(u) && (m = c);
+                const d = [t, s, i, l, m, n].filter((t) => -1 !== t && t > e.length - 100);
                 return 0 === d.length ? e.length : Math.min(...d);
             };
         },
@@ -611,8 +611,8 @@
                 o = n(323265),
                 l = n(125363),
                 c = n(389071),
-                m = n(189953),
-                u = n(654917),
+                u = n(189953),
+                m = n(654917),
                 d = n(730372),
                 p = n(293115),
                 h = n(725405),
@@ -623,31 +623,31 @@
                 x = n(667945),
                 w = n(848957);
             const E = i.default.create((e) => ({ container: { width: "100%", alignItems: "center" } })),
-                v = function ({ analysisEntityId: e, containerRef: t, conversationKey: n, id: r, isLastResponse: i, isLoading: o, onLayout: m }) {
-                    const u = (0, c.bD)(n),
+                v = function ({ analysisEntityId: e, containerRef: t, conversationKey: n, id: r, isLastResponse: i, isLoading: o, onLayout: u }) {
+                    const m = (0, c.bD)(n),
                         d = (0, h.Z)(),
-                        v = (0, l.v9)((e) => u?.selectUsingExperiment(e)),
-                        k = (0, l.v9)((e) => u?.selectExperiments(e)),
-                        C = (0, l.v9)((e) => u.selectMessageById(e, r, !1)),
-                        _ = (0, l.v9)((e) => u?.selectConversationId(e)) ?? "",
-                        S = (0, l.v9)((e) => u.selectMessageById(e, r, !0)),
-                        I = (0, l.v9)((e) => u.selectPromptSourceForMessageId(e, r)),
+                        v = (0, l.v9)((e) => m?.selectUsingExperiment(e)),
+                        k = (0, l.v9)((e) => m?.selectExperiments(e)),
+                        C = (0, l.v9)((e) => m.selectMessageById(e, r, !1)),
+                        _ = (0, l.v9)((e) => m?.selectConversationId(e)) ?? "",
+                        S = (0, l.v9)((e) => m.selectMessageById(e, r, !0)),
+                        I = (0, l.v9)((e) => m.selectPromptSourceForMessageId(e, r)),
                         R = (0, l.v9)(f.ZP.selectViewerUser),
                         P = (0, l.v9)((e) => f.ZP.select(e, y.c0)),
                         Z = C?.sender === g.CI.ASSISTANT,
                         T = Z ? P : R,
                         M = a.useMemo(() => C?.bannerMessages ?? [], [C?.bannerMessages]),
                         D = a.useMemo(() => ({ grok_details: { ...(d.contextualScribeData.grok_details ?? {}), chat_item_id: C?.agentChatItemId } }), [d, C?.agentChatItemId]);
-                    return R && C && T ? (v && Z && (C?.message === (k[0]?.message ?? null) || null == r) ? a.createElement(s.Z, { onLayout: m, ref: t, style: E.container }, a.createElement(p.nO, { data: D }, a.createElement(w.Z, { conversationId: _, grokModule: u, isLoading: o, message1: k[0] ?? C, message2: k[1] ?? S }))) : a.createElement(s.Z, { onLayout: m, ref: t, style: E.container }, Z ? a.createElement(p.nO, { data: D }, a.createElement(x.Z, { analysisEntityId: e, bannerMessages: M, cardAttachments: C.cardAttachments, chatItemId: C.agentChatItemId, chatResponseAnnotations: C.chatResponseAnnotations, citedWebResults: C.citedWebResults, conversationKey: n, disclaimer: C.disclaimer, expectedImageAspectRatio: C.expectedImageAspectRatio, fileAttachments: C.fileAttachments, followUpSuggestedMode: C.followUpSuggestedMode, id: r, intermediateImageResults: C.intermediateImageResults, isAborted: C.isAborted, isDeleted: C.isDeleted, isLastResponse: i, isLoading: o, isPastThinkingTrace: C.isPastThinkingTrace, mediaTweetIds: C.xMediaPostIds, memoryReferences: C.memoryReferences, messageStepAccumulator: C.messageStepAccumulator, performanceMetrics: C.performanceMetrics, promptSource: I, query: C.query, reasoningLayout: C.reasoningLayout, sender: C.sender, text: C.message, trace: C.thinkingTrace, tweetIds: C.postIds, upsell: C.upsell, userChatItemId: C.userChatItemId || "", webResults: C.webResults })) : a.createElement(b.Z, { bannerMessages: M, conversationKey: n, fileAttachments: C.fileAttachments, hideAttachments: C.hideAttachments, id: r, isDeepsearch: C.isDeepsearch, isReasoning: C.isReasoning, text: C.message, user: { profile_image_shape: T.profile_image_shape, profile_image_url_https: T.profile_image_url_https } }))) : null;
+                    return R && C && T ? (v && Z && (C?.message === (k[0]?.message ?? null) || null == r) ? a.createElement(s.Z, { onLayout: u, ref: t, style: E.container }, a.createElement(p.nO, { data: D }, a.createElement(w.Z, { conversationId: _, grokModule: m, isLoading: o, message1: k[0] ?? C, message2: k[1] ?? S }))) : a.createElement(s.Z, { onLayout: u, ref: t, style: E.container }, Z ? a.createElement(p.nO, { data: D }, a.createElement(x.Z, { analysisEntityId: e, bannerMessages: M, cardAttachments: C.cardAttachments, chatItemId: C.agentChatItemId, chatResponseAnnotations: C.chatResponseAnnotations, citedWebResults: C.citedWebResults, conversationKey: n, disclaimer: C.disclaimer, expectedImageAspectRatio: C.expectedImageAspectRatio, fileAttachments: C.fileAttachments, followUpSuggestedMode: C.followUpSuggestedMode, id: r, intermediateImageResults: C.intermediateImageResults, isAborted: C.isAborted, isDeleted: C.isDeleted, isLastResponse: i, isLoading: o, isPastThinkingTrace: C.isPastThinkingTrace, mediaTweetIds: C.xMediaPostIds, memoryReferences: C.memoryReferences, messageStepAccumulator: C.messageStepAccumulator, performanceMetrics: C.performanceMetrics, promptSource: I, query: C.query, reasoningLayout: C.uiLayout?.reasoningUILayout, sender: C.sender, text: C.message, trace: C.thinkingTrace, tweetIds: C.postIds, upsell: C.upsell, userChatItemId: C.userChatItemId || "", webResults: C.webResults })) : a.createElement(b.Z, { bannerMessages: M, conversationKey: n, fileAttachments: C.fileAttachments, hideAttachments: C.hideAttachments, id: r, isDeepsearch: C.isDeepsearch, isReasoning: C.isReasoning, text: C.message, user: { profile_image_shape: T.profile_image_shape, profile_image_url_https: T.profile_image_url_https } }))) : null;
                 };
             var k = n(988290);
             const C = ({ contentPadding: e }) => {
-                    const { analysisEntityId: t, conversationKey: n, messageIds: i, status: p } = (0, u.ZP)(),
+                    const { analysisEntityId: t, conversationKey: n, messageIds: i, status: p } = (0, m.ZP)(),
                         { isPagedScroll: h, scrollable: g } = (0, k.ZP)(),
                         f = (0, c.bD)(n),
                         y = (0, l.v9)(f.selectEditingMessage);
                     (0, d.$E)();
-                    const b = a.useMemo(() => (p !== m.Q_.IDLE ? [...i, null] : i), [p, i]),
+                    const b = a.useMemo(() => (p !== u.Q_.IDLE ? [...i, null] : i), [p, i]),
                         x = o.ZP.isWebView(),
                         w = a.useRef(0);
                     a.useEffect(() => {
@@ -657,7 +657,7 @@
                         };
                         return window.addEventListener("resize", e), e(), () => window.removeEventListener("resize", e);
                     }, [g]);
-                    const E = p === m.Q_.IDLE ? void 0 : b[b.length - 2],
+                    const E = p === u.Q_.IDLE ? void 0 : b[b.length - 2],
                         C = a.useRef(),
                         [S, I] = a.useState(!1),
                         [R, P] = a.useState(0);
@@ -683,7 +683,7 @@
                             ({ index: e, item: r }) => {
                                 const i = b.length,
                                     o = r === E;
-                                return o || e < i - 1 ? a.createElement(s.Z, { key: `message_${e}` }, a.createElement(v, { analysisEntityId: t, conversationKey: n, id: r, onLayout: o ? Z : void 0 })) : a.createElement(s.Z, { key: `message_${e}`, style: [_.lastResponse, T] }, a.createElement(v, { analysisEntityId: t, conversationKey: n, id: r, isLastResponse: !0, isLoading: p === m.Q_.TYPING || p === m.Q_.WAITING }));
+                                return o || e < i - 1 ? a.createElement(s.Z, { key: `message_${e}` }, a.createElement(v, { analysisEntityId: t, conversationKey: n, id: r, onLayout: o ? Z : void 0 })) : a.createElement(s.Z, { key: `message_${e}`, style: [_.lastResponse, T] }, a.createElement(v, { analysisEntityId: t, conversationKey: n, id: r, isLastResponse: !0, isLoading: p === u.Q_.TYPING || p === u.Q_.WAITING }));
                             },
                             [E, n, T, t, Z, p, b],
                         );
@@ -720,4 +720,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-7a6ce5c4.3e80d85a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.Grok-7a6ce5c4.839d31ba.js.map

@@ -281,7 +281,7 @@
                 a("edf7f57e", "Word geverifieerd voor Antwoordboost, analyses, reclamevrij browsen en meer. Upgrade je profiel nu."),
                 a("ba920d68", "Geef jouw invloed een boost met verificatie"),
                 a("ib79d0c2", "Ontgrendel VIP-functies: verifieer je account"),
-                a("c0d3bd82", "You’ve advertised on X, but don’t have a Verified Organizations subscription"),
+                a("c0d3bd82", "Je hebt geadverteerd op X, maar hebt geen Geverifieerde Organisaties-abonnement"),
                 a("d7836d1e", "Abonneer je en ontvang tot USD 12.000 gratis advertentietegoed, een gouden verificatiebadge, VIP-ondersteuning en een reeks tools voor bedrijfsgroei."),
                 a("f528e369", function (e) {
                     return "Abonneer je op " + e.tier + " om je eigen Artikelen te schrijven";
@@ -1275,6 +1275,7 @@
                 a("b8f3500a", "Collectie in Leesmodus bekijken"),
                 a("fc7db594", "Profieloverzicht"),
                 a("c3f04d9c", "Aan het denken"),
+                a("cbdddb0a", "Voltooid"),
                 a("e98cc293", function (e) {
                     return "Zoeken naar " + e.query;
                 }),
@@ -1282,7 +1283,7 @@
                     return "Zoeken naar **'" + e.query + "'**";
                 }),
                 a("i2e0f4d7", function (e) {
-                    return "Browsing " + e.url + " for " + e.query;
+                    return "Zoeken naar " + e.query + " op " + e.url;
                 }),
                 a("acb9b845", function (e) {
                     return e.url + " browsen over **'" + e.query + "'**";
@@ -1291,7 +1292,7 @@
                     return "Posts zoeken van @" + e.username;
                 }),
                 a("f7d9cfb9", function (e) {
-                    return "Searching posts by @" + e.username + " for " + e.query;
+                    return "Posts zoeken van @" + e.username + " over " + e.query;
                 }),
                 a("bec7eb11", function (e) {
                     return "Posts zoeken van @" + e.username + " over **'" + e.query + "'**";
@@ -1914,9 +1915,9 @@
                 a("b5660338", "Voorvertoning tijdlijn"),
                 a("hff1b97a", "Alleen abonnees kunnen antwoorden."),
                 a("a330771e", "Link naar je klembord kopiëren"),
-                a("b6510e68", "Kopieer de URL van je artikel zodat je die kan delen."),
-                a("e4a6e006", "Er ging iets mis. Probeer het opnieuw.");
-            a("eff483e0", "Krijg een link om je Artikel te delen nadat je het hebt gepubliceerd."),
+                a("b6510e68", "Kopieer de URL van je artikel zodat je die kan delen.");
+            a("e4a6e006", "Er ging iets mis. Probeer het opnieuw."),
+                a("eff483e0", "Krijg een link om je Artikel te delen nadat je het hebt gepubliceerd."),
                 a("ca15dd4e", "Concept"),
                 a("bb40bf66", "Gepubliceerd"),
                 a("h107935c", "Zojuist voor het laatst opgeslagen"),
@@ -2966,9 +2967,9 @@
                 a("e0adec82", "Merkhulpmiddelen"),
                 a("df1b7550", "Marketing"),
                 a("he258678", "X voor bedrijven"),
-                a("c6f58084", "Ontwikkelaars"),
-                a("d83f18d2", "Overzicht");
-            a("hc5aa17c", "Download de app van X"),
+                a("c6f58084", "Ontwikkelaars");
+            a("d83f18d2", "Overzicht"),
+                a("hc5aa17c", "Download de app van X"),
                 a("j0693948", "Download de Grok-app"),
                 a("af781666", "Wat vinden mensen?"),
                 a("ad35153e", "bèta"),
@@ -3882,9 +3883,9 @@
                 }),
                 a("e3275464", "Verzenden"),
                 a("cededf2a", "Host"),
-                a("i2caef48", "Co-hosts"),
-                a("j245c654", "Sprekers");
-            a("eda23a02", "Luisteraars"),
+                a("i2caef48", "Co-hosts");
+            a("j245c654", "Sprekers"),
+                a("eda23a02", "Luisteraars"),
                 a("b90eb348", "Uitnodigen om mee te praten"),
                 a("d9a63e82", "Verwijderen uit sprekers"),
                 a("bd917b26", "Uitnodigen als co-host"),
@@ -4180,7 +4181,7 @@
                 a("ff9dc268", "Prompt bewerken"),
                 a("acb2baa0", "Maak afbeeldingen"),
                 a("fe9ad897", function (e) {
-                    return "Bewerk afbeelding" + e.ttc_grok_preset;
+                    return "Afbeelding bewerken" + e.ttc_grok_preset;
                 }),
                 a("h30fd372", "Probeer de Spraakmodus"),
                 a("e9fcdd0c", "Vraag Grok om het web agressief te doorzoeken"),
@@ -4281,7 +4282,6 @@
                 a("e2811afc", "Wedstrijden"),
                 a("j081fa34", "Standen"),
                 a("i7c7f156", "Morgen"),
-                a("cbdddb0a", "Voltooid"),
                 a("b134ba52", "Bezig"),
                 a("j1361724", "Ruststand"),
                 a("fa0f1262", "Pauze"),
@@ -4327,10 +4327,10 @@
                 a("b52484b6", "Zoeken ..."),
                 a("a4d9dbfa", "Gedachten"),
                 a("ib1c5475", function (e) {
-                    return "Thought for " + e.minutes + "m " + e.seconds + "s";
+                    return e.minutes + "m " + e.seconds + "s nagedacht";
                 }),
                 a("a15d62db", function (e) {
-                    return "Thought for " + e.seconds + "s";
+                    return e.seconds + "s nagedacht";
                 }),
                 a("d7cb5408", "Relevante webpagina's"),
                 a("aa7c96bb", function (e) {
@@ -7061,14 +7061,14 @@
                 a("f0ad5cc8", "jaar"),
                 a("a0dc6e4c", "Momenteel niet beschikbaar"),
                 a("jd8b2e66", "Abonneren en betalen"),
-                a("ca784c0c", "Subscribe & pay with Apple"),
+                a("ca784c0c", "Abonneren en betalen met Apple"),
                 a("aa5df29f", function (e) {
                     return "" + e.oldPrice;
                 }),
                 a("g1c4f7a1", function (e) {
                     return "" + e.oldPrice;
                 }),
-                a("afd61c76", "Or, save up to 30%"),
+                a("afd61c76", "Of bespaar tot 30%"),
                 a("i7fbacc4", "Switchen tussen de beschikbare abonnementsniveaus"),
                 a("c9cc122b", function (e) {
                     return e.feature + " is inbegrepen in " + e.title;
@@ -13230,4 +13230,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.772ec17a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/nl.83c7888a.js.map

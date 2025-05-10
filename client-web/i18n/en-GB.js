@@ -1279,6 +1279,7 @@
                 a("b8f3500a", "View thread in Reader"),
                 a("fc7db594", "Profile Summary"),
                 a("c3f04d9c", "Thinking"),
+                a("cbdddb0a", "Completed"),
                 a("e98cc293", function (e) {
                     return "Searching for " + e.query;
                 }),
@@ -1918,9 +1919,9 @@
                 a("b5660338", "Timeline preview"),
                 a("hff1b97a", "Only Subscribed can reply."),
                 a("a330771e", "Copy link to your clipboard"),
-                a("b6510e68", "Copy your Article’s URL so you can share it."),
-                a("e4a6e006", "Something went wrong. Please try again.");
-            a("eff483e0", "Once you've published, get a link to share the Article."),
+                a("b6510e68", "Copy your Article’s URL so you can share it.");
+            a("e4a6e006", "Something went wrong. Please try again."),
+                a("eff483e0", "Once you've published, get a link to share the Article."),
                 a("ca15dd4e", "Draft"),
                 a("bb40bf66", "Published"),
                 a("h107935c", "Last saved just now"),
@@ -2970,9 +2971,9 @@
                 a("e0adec82", "Brand Resources"),
                 a("df1b7550", "Marketing"),
                 a("he258678", "X for Business"),
-                a("c6f58084", "Developers"),
-                a("d83f18d2", "Directory");
-            a("hc5aa17c", "Get the X app"),
+                a("c6f58084", "Developers");
+            a("d83f18d2", "Directory"),
+                a("hc5aa17c", "Get the X app"),
                 a("j0693948", "Get the Grok app"),
                 a("af781666", "What do people think?"),
                 a("ad35153e", "beta"),
@@ -3886,9 +3887,9 @@
                 }),
                 a("e3275464", "Send"),
                 a("cededf2a", "Host"),
-                a("i2caef48", "Co-hosts"),
-                a("j245c654", "Speakers");
-            a("eda23a02", "Listeners"),
+                a("i2caef48", "Co-hosts");
+            a("j245c654", "Speakers"),
+                a("eda23a02", "Listeners"),
                 a("b90eb348", "Invite to speak"),
                 a("d9a63e82", "Remove from Speakers"),
                 a("bd917b26", "Invite to co-host"),
@@ -4285,7 +4286,6 @@
                 a("e2811afc", "Games"),
                 a("j081fa34", "Standings"),
                 a("i7c7f156", "Tomorrow"),
-                a("cbdddb0a", "Completed"),
                 a("b134ba52", "In Progress"),
                 a("j1361724", "Halftime"),
                 a("fa0f1262", "Break"),
@@ -13234,4 +13234,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-GB.fdb73f4a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/en-GB.5961027a.js.map

@@ -3,7 +3,7 @@
     ["bundle.GrokDrawer-bfd49e49", "bundle.DirectMessages-8486177b", "bundle.UserAvatar-8486177b", "shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-29ff9b73"],
     {
         550293: (e, t, s) => {
-            s.d(t, { DO: () => l, VP: () => R, bi: () => g, gw: () => u, kX: () => d });
+            s.d(t, { DO: () => l, VP: () => g, bi: () => R, gw: () => u, kX: () => d });
             var n = s(499627),
                 r = s(511582);
             const o = "rweb.dmDrawerVisibility",
@@ -18,10 +18,10 @@
                     (t, s, { userPersistence: n }) => (n.set(o, { visibility: r.S.EXPANDED }), t({ payload: { conversationId: e }, type: p })),
                 m = "rweb/dmDrawer/SET_DRAWER_VISIBILITY",
                 E = (e) => ({ payload: { visibility: e }, type: m }),
-                g =
+                R =
                     (e) =>
                     (t, s, { userPersistence: n }) => (n.set(o, { visibility: e }), e === r.S.CLOSED && t({ type: p }), t(E(e))),
-                R =
+                g =
                     () =>
                     (e, t, { userPersistence: s }) =>
                         s.get(o).then((t) => {
@@ -56,7 +56,7 @@
             };
         },
         189953: (e, t, s) => {
-            s.d(t, { $t: () => ae, A0: () => ge, BA: () => se, BS: () => U, CH: () => L, CR: () => z, Cr: () => _, DX: () => j, Dh: () => S, Dn: () => k, En: () => u, FF: () => Q, FV: () => N, Gy: () => b, HF: () => E, IK: () => r, JO: () => V, Jt: () => ne, KH: () => C, L0: () => q, Lc: () => a, OW: () => w, Oj: () => O, P9: () => Z, Q_: () => o, Qg: () => K, Qh: () => J, Sv: () => i, TY: () => D, Tv: () => B, UN: () => T, VK: () => c, WK: () => te, Ws: () => d, Xg: () => X, Xi: () => H, Y8: () => p, Yb: () => y, Yf: () => n, Yx: () => l, ZN: () => W, _i: () => ce, ar: () => x, cA: () => Ee, cw: () => oe, dK: () => m, dO: () => I, dZ: () => M, dw: () => le, f1: () => pe, fH: () => Ie, ip: () => F, j$: () => Re, lQ: () => ee, lh: () => g, lm: () => R, mq: () => Se, my: () => A, nK: () => h, o$: () => P, px: () => ie, qd: () => Y, ru: () => me, ub: () => v, vc: () => G, vi: () => f, wG: () => re, x5: () => $, yB: () => de, z2: () => ue });
+            s.d(t, { $t: () => ae, A0: () => Re, BA: () => se, BS: () => w, CH: () => L, CR: () => z, Cr: () => _, DX: () => j, Dh: () => S, Dn: () => k, En: () => u, FF: () => Q, FV: () => N, Gy: () => b, HF: () => E, IK: () => r, JO: () => V, Jt: () => ne, KH: () => C, L0: () => q, Lc: () => a, OW: () => U, Oj: () => O, P9: () => Z, Q_: () => o, Qg: () => K, Qh: () => J, Sv: () => i, TY: () => D, Tv: () => B, UN: () => T, VK: () => c, WK: () => te, Ws: () => d, Xg: () => X, Xi: () => H, Y8: () => p, Yb: () => y, Yf: () => n, Yx: () => l, ZN: () => W, _i: () => ce, ar: () => x, cA: () => Ee, cw: () => oe, dK: () => m, dO: () => I, dZ: () => M, dw: () => le, f1: () => pe, fH: () => Ie, ip: () => F, j$: () => ge, lQ: () => ee, lh: () => R, lm: () => g, mq: () => Se, my: () => A, nK: () => h, o$: () => P, px: () => ie, qd: () => Y, ru: () => me, ub: () => v, vc: () => G, vi: () => f, wG: () => re, x5: () => $, yB: () => de, z2: () => ue });
             const n = "grok",
                 r = Object.freeze({ FUN: "fun", REGULAR: "" }),
                 o = Object.freeze({ IDLE: "idle", TYPING: "typing", WAITING: "waiting", FAILED: "failed" }),
@@ -69,8 +69,8 @@
                 l = Object.freeze({ REQUEST: "rweb/FETCH_GROK_HOME/REQUEST", SUCCESS: "rweb/FETCH_GROK_HOME/SUCCESS", FAILURE: "rweb/FETCH_GROK_HOME/FAILURE" }),
                 m = Object.freeze({ REQUEST: "rweb/FETCH_GROK_SHARE/REQUEST", SUCCESS: "rweb/FETCH_GROK_SHARE/SUCCESS", FAILURE: "rweb/FETCH_GROK_SHARE/FAILURE" }),
                 E = Object.freeze({ REQUEST: "rweb/SET_PREFERENCES/REQUEST", SUCCESS: "rweb/SET_PREFERENCES/SUCCESS", FAILURE: "rweb/SET_PREFERENCES/FAILURE" }),
-                g = Object.freeze({ REQUEST: "rweb/PIN_GROK_CONVERSATION/REQUEST", SUCCESS: "rweb/PIN_GROK_CONVERSATION/SUCCESS", FAILURE: "rweb/PIN_GROK_CONVERSATION/FAILURE" }),
-                R = Object.freeze({ REQUEST: "rweb/UNPIN_GROK_CONVERSATION/REQUEST", SUCCESS: "rweb/UNPIN_GROK_CONVERSATION/SUCCESS", FAILURE: "rweb/UNPIN_GROK_CONVERSATION/FAILURE" }),
+                R = Object.freeze({ REQUEST: "rweb/PIN_GROK_CONVERSATION/REQUEST", SUCCESS: "rweb/PIN_GROK_CONVERSATION/SUCCESS", FAILURE: "rweb/PIN_GROK_CONVERSATION/FAILURE" }),
+                g = Object.freeze({ REQUEST: "rweb/UNPIN_GROK_CONVERSATION/REQUEST", SUCCESS: "rweb/UNPIN_GROK_CONVERSATION/SUCCESS", FAILURE: "rweb/UNPIN_GROK_CONVERSATION/FAILURE" }),
                 S = Object.freeze({ REQUEST: "rweb/CLEAR_CONVERSATIONS/REQUEST", SUCCESS: "rweb/CLEAR_CONVERSATIONS/SUCCESS", FAILURE: "rweb/CLEAR_CONVERSATIONS/FAILURE" }),
                 I = Object.freeze({ REQUEST: "rweb/GROK_USER_EVENTS_LOG/REQUEST", SUCCESS: "rweb/GROK_USER_EVENTS_LOG/SUCCESS", FAILURE: "rweb/GROK_USER_EVENTS_LOG/FAILURE" }),
                 y = "rweb/grok/DELETE_CONVERSATION",
@@ -84,8 +84,8 @@
                 h = "rweb/grok/GROK_RESPONSE_MEDIA_POSTS",
                 b = "rweb/grok/GROK_RESPONSE_COMPLETE",
                 N = "rweb/grok/GROK_RESPONSE_ERROR",
-                w = "rweb/grok/GROK_RESPONSE_METADATA",
-                U = "rweb/grok/GROK_RESPONSE_DISCLAIMER",
+                U = "rweb/grok/GROK_RESPONSE_METADATA",
+                w = "rweb/grok/GROK_RESPONSE_DISCLAIMER",
                 k = "rweb/grok/GROK_RESPONSE_FILE_ATTACHMENTS",
                 L = "rweb/grok/GROK_RESPONSE_FEEDBACK_LABELS",
                 P = "rweb/grok/GROK_RESPONSE_FOLLOWUP_SUGGESTIONS",
@@ -123,13 +123,13 @@
                 le = "rweb/grok/DELETE_MEDIA_HISTORY_ITEM",
                 me = "rweb/grok/UPDATE_PERFORMANCE_METRICS",
                 Ee = "r/web/grok/SET_USING_EXPERIMENT",
-                ge = "r/web/grok/SET_PREFERRED_RESPONSE",
-                Re = "rweb/grok/SET_GROK_INPUT_ADVANCED_SETTINGS",
+                Re = "r/web/grok/SET_PREFERRED_RESPONSE",
+                ge = "rweb/grok/SET_GROK_INPUT_ADVANCED_SETTINGS",
                 Se = "rweb/grok/SET_IS_PAST_THINKING_TRACE",
                 Ie = "rweb/grok/SET_REASONING_LAYOUT";
         },
         389071: (e, t, s) => {
-            s.d(t, { BU: () => K, Es: () => h, F0: () => te, F9: () => j, JE: () => D, JU: () => w, Ki: () => q, NV: () => M, OR: () => L, Pl: () => re, Pt: () => U, SJ: () => se, SL: () => F, Tu: () => G, UM: () => O, Uo: () => oe, V$: () => P, X4: () => J, YJ: () => Z, bD: () => T, bv: () => k, en: () => ee, f: () => _, hi: () => H, j1: () => B, lo: () => ne, ni: () => $, pZ: () => Q, t5: () => V, uF: () => x, uX: () => N, uz: () => X, v0: () => z, vf: () => W, zO: () => b });
+            s.d(t, { BU: () => K, Es: () => h, F0: () => te, F9: () => j, JE: () => D, JU: () => U, Ki: () => q, NV: () => M, OR: () => L, Pl: () => re, Pt: () => w, SJ: () => se, SL: () => F, Tu: () => G, UM: () => O, Uo: () => oe, V$: () => P, X4: () => J, YJ: () => Z, bD: () => T, bv: () => k, en: () => ee, f: () => _, hi: () => H, j1: () => B, lo: () => ne, ni: () => $, pZ: () => Q, t5: () => V, uF: () => x, uX: () => N, uz: () => X, v0: () => z, vf: () => W, zO: () => b });
             s(136728), s(571372), s(574858);
             var n = s(726426),
                 r = s.n(n),
@@ -143,9 +143,9 @@
                 l = s(189953),
                 m = s(155918);
             const E = { message: "", thinkingTrace: "", messageStepAccumulator: void 0, sender: m.CI.ASSISTANT },
-                g = [],
-                R = l.IK.REGULAR,
-                S = () => ({ messageIds: [], messages: {}, model: void 0, mode: R, currentResponse: void 0, alternativeCurrentResponse: void 0, currentQuery: void 0, status: l.Q_.IDLE, abortController: void 0, conversationId: void 0, analysisEntityId: void 0, inputPrefill: { text: "", attachments: [] }, fetchConversationIdStatus: p.ZP.NONE, fetchConversationIdError: "", webResults: [], citedWebResults: [], intermediateImageResults: [], promptSource: "", cardAttachments: [], experimentData: { experiments: [], usingExperiment: !1 } }),
+                R = [],
+                g = l.IK.REGULAR,
+                S = () => ({ messageIds: [], messages: {}, model: void 0, mode: g, currentResponse: void 0, alternativeCurrentResponse: void 0, currentQuery: void 0, status: l.Q_.IDLE, abortController: void 0, conversationId: void 0, analysisEntityId: void 0, inputPrefill: { text: "", attachments: [] }, fetchConversationIdStatus: p.ZP.NONE, fetchConversationIdError: "", webResults: [], citedWebResults: [], intermediateImageResults: [], promptSource: "", cardAttachments: [], experimentData: { experiments: [], usingExperiment: !1 } }),
                 I = r()(),
                 y = "PROMPT_CONVERSATION_KEY",
                 f = { conversations: { [I]: S(), [y]: S() }, conversationHistory: { items: [] }, pinnedConversations: { items: [] }, pinnedConversationsIdMap: {}, mediaHistory: { items: [], status: p.ZP.NONE }, conversationList: [I, y], currentConversation: I, fetchConversationStatus: p.ZP.NONE, fetchPinnedConversationsStatus: p.ZP.NONE, fetchHistoryStatus: p.ZP.NONE, fetchHomeStatus: p.ZP.NONE, modelOptions: [], selectedModel: void 0, prompts: [], version: "", accessRestrictedReasons: [], freeAcessEnabled: !1, preferredPrompts: [], layout: null, grokInput: { filterKey: null, focused: !1, advancedSettings: null } },
@@ -290,11 +290,11 @@
                     },
                     selectCurrentResponseFollowUps: function (e) {
                         const s = t(e);
-                        if (s.messageIds.length < 2) return g;
+                        if (s.messageIds.length < 2) return R;
                         const n = s.messageIds.length,
                             r = s.messageIds[n - 1],
                             o = s.messages[r];
-                        return o.sender === m.CI.ASSISTANT && o.followUpSuggestions ? o.followUpSuggestions : g;
+                        return o.sender === m.CI.ASSISTANT && o.followUpSuggestions ? o.followUpSuggestions : R;
                     },
                     selectCurrentResponseFollowUpSuggestedMode: function (e) {
                         const s = t(e);
@@ -374,9 +374,9 @@
                         const r = t(e);
                         return null !== s || n
                             ? null === s && n
-                                ? { message: r.alternativeCurrentResponse?.message ?? "", fileAttachments: r.alternativeCurrentResponse?.fileAttachments, bannerMessages: r.alternativeCurrentResponse?.bannerMessages ?? g, sender: r.alternativeCurrentResponse?.sender ?? m.CI.ASSISTANT, query: r.currentQuery, feedbackLabels: r.alternativeCurrentResponse?.feedbackLabels ?? g, followUpSuggestions: r.alternativeCurrentResponse?.followUpSuggestions ?? g, chatResponseAnnotations: r.alternativeCurrentResponse?.chatResponseAnnotations ?? g, postIds: r.alternativeCurrentResponse?.postIds ?? g, webResults: r.alternativeCurrentResponse?.webResults ?? g, citedWebResults: r.alternativeCurrentResponse?.citedWebResults ?? g, promptSource: r.alternativeCurrentResponse?.promptSource ?? "", intermediateImageResults: r.alternativeCurrentResponse?.intermediateImageResults, cardAttachments: r.alternativeCurrentResponse?.cardAttachments ?? g, messageStepAccumulator: r.alternativeCurrentResponse?.messageStepAccumulator, agentChatItemId: r.currentResponse?.agentChatItemId, performanceMetrics: r.alternativeCurrentResponse?.performanceMetrics, isPastThinkingTrace: r.alternativeCurrentResponse?.isPastThinkingTrace, isDeepsearch: r.alternativeCurrentResponse?.isDeepsearch, isReasoning: r.alternativeCurrentResponse?.isReasoning, hideAttachments: r.alternativeCurrentResponse?.hideAttachments, expectedImageAspectRatio: r.alternativeCurrentResponse?.expectedImageAspectRatio, reasoningLayout: r.alternativeCurrentResponse?.reasoningLayout }
+                                ? { message: r.alternativeCurrentResponse?.message ?? "", fileAttachments: r.alternativeCurrentResponse?.fileAttachments, bannerMessages: r.alternativeCurrentResponse?.bannerMessages ?? R, sender: r.alternativeCurrentResponse?.sender ?? m.CI.ASSISTANT, query: r.currentQuery, feedbackLabels: r.alternativeCurrentResponse?.feedbackLabels ?? R, followUpSuggestions: r.alternativeCurrentResponse?.followUpSuggestions ?? R, chatResponseAnnotations: r.alternativeCurrentResponse?.chatResponseAnnotations ?? R, postIds: r.alternativeCurrentResponse?.postIds ?? R, webResults: r.alternativeCurrentResponse?.webResults ?? R, citedWebResults: r.alternativeCurrentResponse?.citedWebResults ?? R, promptSource: r.alternativeCurrentResponse?.promptSource ?? "", intermediateImageResults: r.alternativeCurrentResponse?.intermediateImageResults, cardAttachments: r.alternativeCurrentResponse?.cardAttachments ?? R, messageStepAccumulator: r.alternativeCurrentResponse?.messageStepAccumulator, agentChatItemId: r.currentResponse?.agentChatItemId, performanceMetrics: r.alternativeCurrentResponse?.performanceMetrics, isPastThinkingTrace: r.alternativeCurrentResponse?.isPastThinkingTrace, isDeepsearch: r.alternativeCurrentResponse?.isDeepsearch, isReasoning: r.alternativeCurrentResponse?.isReasoning, hideAttachments: r.alternativeCurrentResponse?.hideAttachments, expectedImageAspectRatio: r.alternativeCurrentResponse?.expectedImageAspectRatio, uiLayout: r.alternativeCurrentResponse?.uiLayout }
                                 : t(e).messages[s ?? ""]
-                            : { message: r.currentResponse?.message ?? "", thinkingTrace: r.currentResponse?.thinkingTrace ?? "", fileAttachments: r.currentResponse?.fileAttachments, bannerMessages: r.currentResponse?.bannerMessages ?? g, sender: r.currentResponse?.sender ?? m.CI.ASSISTANT, query: r.currentQuery, feedbackLabels: r.currentResponse?.feedbackLabels ?? g, followUpSuggestions: r.currentResponse?.followUpSuggestions ?? g, chatResponseAnnotations: r.currentResponse?.chatResponseAnnotations ?? g, postIds: r.currentResponse?.postIds ?? g, webResults: r.currentResponse?.webResults ?? g, citedWebResults: r.currentResponse?.citedWebResults ?? g, promptSource: r.currentResponse?.promptSource ?? "", intermediateImageResults: r.currentResponse?.intermediateImageResults, agentChatItemId: r.currentResponse?.agentChatItemId, cardAttachments: r.currentResponse?.cardAttachments ?? g, messageStepAccumulator: r.currentResponse?.messageStepAccumulator, performanceMetrics: r.currentResponse?.performanceMetrics, xMediaPostIds: r.currentResponse?.xMediaPostIds, isPastThinkingTrace: r.currentResponse?.isPastThinkingTrace, isDeepsearch: r.currentResponse?.isDeepsearch, isReasoning: r.currentResponse?.isReasoning, hideAttachments: r.currentResponse?.hideAttachments, followUpSuggestedMode: r.currentResponse?.followUpSuggestedMode, expectedImageAspectRatio: r.currentResponse?.expectedImageAspectRatio, reasoningLayout: r.currentResponse?.reasoningLayout };
+                            : { message: r.currentResponse?.message ?? "", thinkingTrace: r.currentResponse?.thinkingTrace ?? "", fileAttachments: r.currentResponse?.fileAttachments, bannerMessages: r.currentResponse?.bannerMessages ?? R, sender: r.currentResponse?.sender ?? m.CI.ASSISTANT, query: r.currentQuery, feedbackLabels: r.currentResponse?.feedbackLabels ?? R, followUpSuggestions: r.currentResponse?.followUpSuggestions ?? R, chatResponseAnnotations: r.currentResponse?.chatResponseAnnotations ?? R, postIds: r.currentResponse?.postIds ?? R, webResults: r.currentResponse?.webResults ?? R, citedWebResults: r.currentResponse?.citedWebResults ?? R, promptSource: r.currentResponse?.promptSource ?? "", intermediateImageResults: r.currentResponse?.intermediateImageResults, agentChatItemId: r.currentResponse?.agentChatItemId, cardAttachments: r.currentResponse?.cardAttachments ?? R, messageStepAccumulator: r.currentResponse?.messageStepAccumulator, performanceMetrics: r.currentResponse?.performanceMetrics, xMediaPostIds: r.currentResponse?.xMediaPostIds, isPastThinkingTrace: r.currentResponse?.isPastThinkingTrace, isDeepsearch: r.currentResponse?.isDeepsearch, isReasoning: r.currentResponse?.isReasoning, hideAttachments: r.currentResponse?.hideAttachments, followUpSuggestedMode: r.currentResponse?.followUpSuggestedMode, expectedImageAspectRatio: r.currentResponse?.expectedImageAspectRatio, uiLayout: r.currentResponse?.uiLayout };
                     },
                     selectMessageIds: function (e) {
                         return t(e).messageIds;
@@ -399,7 +399,7 @@
                         return n.agentChatItemId && n.userChatItemId ? { agentChatItemId: n.agentChatItemId, userChatItemId: n.userChatItemId, feedbackLabels: n.feedbackLabels } : void 0;
                     },
                     selectMode: function (e) {
-                        return t(e).mode ?? R;
+                        return t(e).mode ?? g;
                     },
                     selectPromptSource: function (e) {
                         return t(e).promptSource || "";
@@ -565,7 +565,7 @@
                             n = e.currentResponse?.message ?? "",
                             r = !!t;
                         e.currentResponse?.messageStepAccumulator && e.currentResponse.messageStepAccumulator.onAbort();
-                        const o = { sender: m.CI.ASSISTANT, message: r ? n : `${n}...`, thinkingTrace: t ? `${t}...` : "", cardAttachments: e.currentResponse?.cardAttachments, messageStepAccumulator: e.currentResponse?.messageStepAccumulator, isDeepsearch: e.currentResponse?.isDeepsearch, isReasoning: e.currentResponse?.isReasoning, reasoningLayout: e.currentResponse?.reasoningLayout, intermediateImageResults: e.currentResponse?.intermediateImageResults, fileAttachments: e.currentResponse?.fileAttachments, localOnly: !0, allowRetry: !1, isAborted: !0, expectedImageAspectRatio: e.currentResponse?.expectedImageAspectRatio },
+                        const o = { sender: m.CI.ASSISTANT, message: r ? n : `${n}...`, thinkingTrace: t ? `${t}...` : "", cardAttachments: e.currentResponse?.cardAttachments, messageStepAccumulator: e.currentResponse?.messageStepAccumulator, isDeepsearch: e.currentResponse?.isDeepsearch, isReasoning: e.currentResponse?.isReasoning, uiLayout: e.currentResponse?.uiLayout, intermediateImageResults: e.currentResponse?.intermediateImageResults, fileAttachments: e.currentResponse?.fileAttachments, localOnly: !0, allowRetry: !1, isAborted: !0, expectedImageAspectRatio: e.currentResponse?.expectedImageAspectRatio },
                             a = C(e.messageIds),
                             i = o.localOnly ? s() : {};
                         return { ...e, abortController: void 0, messageIds: e.messageIds.concat(a), messages: { ...e.messages, ...i, [a]: o }, currentResponse: void 0, status: l.Q_.IDLE };
@@ -614,7 +614,7 @@
                     case l.mq:
                         return { ...e, currentResponse: { ...e.currentResponse, isPastThinkingTrace: t.payload } };
                     case l.fH:
-                        return { ...e, currentResponse: { ...e.currentResponse, reasoningLayout: t.payload } };
+                        return { ...e, currentResponse: { ...e.currentResponse, uiLayout: { reasoningUILayout: t.payload } } };
                     default:
                         return e;
                 }
@@ -643,10 +643,10 @@
             function N(e) {
                 return e[l.Yf].layout;
             }
-            function w(e) {
+            function U(e) {
                 return e[l.Yf].grokInput;
             }
-            function U(e) {
+            function w(e) {
                 return e[l.Yf].fetchHomeStatus;
             }
             function k(e) {
@@ -912,4 +912,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.GrokDrawer-bfd49e49.cdfebb7a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/bundle.GrokDrawer-bfd49e49.4cc9ef2a.js.map

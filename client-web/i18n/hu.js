@@ -1274,6 +1274,7 @@
                 s("b8f3500a", "Hozzászóláslánc megtekintése az Olvasóban"),
                 s("fc7db594", "Profil összegzése"),
                 s("c3f04d9c", "Gondolkozik"),
+                s("cbdddb0a", "Befejezve"),
                 s("e98cc293", function (e) {
                     return "Keresés erre: " + e.query;
                 }),
@@ -1913,9 +1914,9 @@
                 s("b5660338", "Idővonal előnézete"),
                 s("hff1b97a", "Csak az előfizetők válaszolhatnak."),
                 s("a330771e", "Hivatkozás másolása a vágólapra"),
-                s("b6510e68", "Másold ki a cikked URL-címét a megosztáshoz."),
-                s("e4a6e006", "Valami hiba történt. Kérjük, próbáld meg újra!");
-            s("eff483e0", "A közzététel után lekérhetsz egy hivatkozást a Cikk megosztásához."),
+                s("b6510e68", "Másold ki a cikked URL-címét a megosztáshoz.");
+            s("e4a6e006", "Valami hiba történt. Kérjük, próbáld meg újra!"),
+                s("eff483e0", "A közzététel után lekérhetsz egy hivatkozást a Cikk megosztásához."),
                 s("ca15dd4e", "Piszkozat"),
                 s("bb40bf66", "Közzétéve"),
                 s("h107935c", "Utolsó mentés épp most"),
@@ -2965,9 +2966,9 @@
                 s("e0adec82", "Márkaanyagok"),
                 s("df1b7550", "Marketing"),
                 s("he258678", "X üzleti célra"),
-                s("c6f58084", "Fejlesztők"),
-                s("d83f18d2", "Könyvtár");
-            s("hc5aa17c", "Az X alkalmazás letöltése"),
+                s("c6f58084", "Fejlesztők");
+            s("d83f18d2", "Könyvtár"),
+                s("hc5aa17c", "Az X alkalmazás letöltése"),
                 s("j0693948", "A Grok alkalmazás letöltése"),
                 s("af781666", "Mit gondolnak az emberek?"),
                 s("ad35153e", "béta"),
@@ -3881,9 +3882,9 @@
                 }),
                 s("e3275464", "Küldés"),
                 s("cededf2a", "Hoszt"),
-                s("i2caef48", "Társhosztok"),
-                s("j245c654", "Hozzászólók");
-            s("eda23a02", "Hallgatók"),
+                s("i2caef48", "Társhosztok");
+            s("j245c654", "Hozzászólók"),
+                s("eda23a02", "Hallgatók"),
                 s("b90eb348", "Meghívás hozzászólóként"),
                 s("d9a63e82", "Eltávolítás a hozzászólók közül"),
                 s("bd917b26", "Meghívás társhosztként"),
@@ -4280,7 +4281,6 @@
                 s("e2811afc", "Játékok"),
                 s("j081fa34", "Eredmények"),
                 s("i7c7f156", "Holnap"),
-                s("cbdddb0a", "Befejezve"),
                 s("b134ba52", "Folyamatban"),
                 s("j1361724", "Félidő"),
                 s("fa0f1262", "Szünet"),
@@ -13225,4 +13225,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hu.3df3871a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/hu.8aced62a.js.map

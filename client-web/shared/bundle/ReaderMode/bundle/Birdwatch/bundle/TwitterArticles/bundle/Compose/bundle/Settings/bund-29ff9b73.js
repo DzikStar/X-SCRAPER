@@ -3,7 +3,7 @@
     ["shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-29ff9b73", "bundle.DirectMessages-8486177b", "bundle.UserAvatar-8486177b"],
     {
         389071: (e, t, s) => {
-            s.d(t, { BU: () => K, Es: () => E, F0: () => te, F9: () => q, JE: () => x, JU: () => T, Ki: () => V, NV: () => U, OR: () => w, Pl: () => re, Pt: () => P, SJ: () => se, SL: () => Q, Tu: () => O, UM: () => k, Uo: () => ae, V$: () => N, X4: () => X, YJ: () => W, bD: () => b, bv: () => H, en: () => ee, f: () => S, hi: () => D, j1: () => J, lo: () => ne, ni: () => z, pZ: () => Z, t5: () => G, uF: () => F, uX: () => L, uz: () => j, v0: () => $, vf: () => B, zO: () => M });
+            s.d(t, { BU: () => K, Es: () => E, F0: () => te, F9: () => q, JE: () => x, JU: () => T, Ki: () => V, NV: () => N, OR: () => U, Pl: () => re, Pt: () => P, SJ: () => se, SL: () => Q, Tu: () => O, UM: () => k, Uo: () => ae, V$: () => w, X4: () => X, YJ: () => W, bD: () => b, bv: () => H, en: () => ee, f: () => S, hi: () => D, j1: () => J, lo: () => ne, ni: () => z, pZ: () => Z, t5: () => G, uF: () => F, uX: () => L, uz: () => j, v0: () => $, vf: () => B, zO: () => M });
             s(136728), s(571372), s(574858);
             var n = s(726426),
                 r = s.n(n),
@@ -248,9 +248,9 @@
                         const r = t(e);
                         return null !== s || n
                             ? null === s && n
-                                ? { message: r.alternativeCurrentResponse?.message ?? "", fileAttachments: r.alternativeCurrentResponse?.fileAttachments, bannerMessages: r.alternativeCurrentResponse?.bannerMessages ?? y, sender: r.alternativeCurrentResponse?.sender ?? l.CI.ASSISTANT, query: r.currentQuery, feedbackLabels: r.alternativeCurrentResponse?.feedbackLabels ?? y, followUpSuggestions: r.alternativeCurrentResponse?.followUpSuggestions ?? y, chatResponseAnnotations: r.alternativeCurrentResponse?.chatResponseAnnotations ?? y, postIds: r.alternativeCurrentResponse?.postIds ?? y, webResults: r.alternativeCurrentResponse?.webResults ?? y, citedWebResults: r.alternativeCurrentResponse?.citedWebResults ?? y, promptSource: r.alternativeCurrentResponse?.promptSource ?? "", intermediateImageResults: r.alternativeCurrentResponse?.intermediateImageResults, cardAttachments: r.alternativeCurrentResponse?.cardAttachments ?? y, messageStepAccumulator: r.alternativeCurrentResponse?.messageStepAccumulator, agentChatItemId: r.currentResponse?.agentChatItemId, performanceMetrics: r.alternativeCurrentResponse?.performanceMetrics, isPastThinkingTrace: r.alternativeCurrentResponse?.isPastThinkingTrace, isDeepsearch: r.alternativeCurrentResponse?.isDeepsearch, isReasoning: r.alternativeCurrentResponse?.isReasoning, hideAttachments: r.alternativeCurrentResponse?.hideAttachments, expectedImageAspectRatio: r.alternativeCurrentResponse?.expectedImageAspectRatio, reasoningLayout: r.alternativeCurrentResponse?.reasoningLayout }
+                                ? { message: r.alternativeCurrentResponse?.message ?? "", fileAttachments: r.alternativeCurrentResponse?.fileAttachments, bannerMessages: r.alternativeCurrentResponse?.bannerMessages ?? y, sender: r.alternativeCurrentResponse?.sender ?? l.CI.ASSISTANT, query: r.currentQuery, feedbackLabels: r.alternativeCurrentResponse?.feedbackLabels ?? y, followUpSuggestions: r.alternativeCurrentResponse?.followUpSuggestions ?? y, chatResponseAnnotations: r.alternativeCurrentResponse?.chatResponseAnnotations ?? y, postIds: r.alternativeCurrentResponse?.postIds ?? y, webResults: r.alternativeCurrentResponse?.webResults ?? y, citedWebResults: r.alternativeCurrentResponse?.citedWebResults ?? y, promptSource: r.alternativeCurrentResponse?.promptSource ?? "", intermediateImageResults: r.alternativeCurrentResponse?.intermediateImageResults, cardAttachments: r.alternativeCurrentResponse?.cardAttachments ?? y, messageStepAccumulator: r.alternativeCurrentResponse?.messageStepAccumulator, agentChatItemId: r.currentResponse?.agentChatItemId, performanceMetrics: r.alternativeCurrentResponse?.performanceMetrics, isPastThinkingTrace: r.alternativeCurrentResponse?.isPastThinkingTrace, isDeepsearch: r.alternativeCurrentResponse?.isDeepsearch, isReasoning: r.alternativeCurrentResponse?.isReasoning, hideAttachments: r.alternativeCurrentResponse?.hideAttachments, expectedImageAspectRatio: r.alternativeCurrentResponse?.expectedImageAspectRatio, uiLayout: r.alternativeCurrentResponse?.uiLayout }
                                 : t(e).messages[s ?? ""]
-                            : { message: r.currentResponse?.message ?? "", thinkingTrace: r.currentResponse?.thinkingTrace ?? "", fileAttachments: r.currentResponse?.fileAttachments, bannerMessages: r.currentResponse?.bannerMessages ?? y, sender: r.currentResponse?.sender ?? l.CI.ASSISTANT, query: r.currentQuery, feedbackLabels: r.currentResponse?.feedbackLabels ?? y, followUpSuggestions: r.currentResponse?.followUpSuggestions ?? y, chatResponseAnnotations: r.currentResponse?.chatResponseAnnotations ?? y, postIds: r.currentResponse?.postIds ?? y, webResults: r.currentResponse?.webResults ?? y, citedWebResults: r.currentResponse?.citedWebResults ?? y, promptSource: r.currentResponse?.promptSource ?? "", intermediateImageResults: r.currentResponse?.intermediateImageResults, agentChatItemId: r.currentResponse?.agentChatItemId, cardAttachments: r.currentResponse?.cardAttachments ?? y, messageStepAccumulator: r.currentResponse?.messageStepAccumulator, performanceMetrics: r.currentResponse?.performanceMetrics, xMediaPostIds: r.currentResponse?.xMediaPostIds, isPastThinkingTrace: r.currentResponse?.isPastThinkingTrace, isDeepsearch: r.currentResponse?.isDeepsearch, isReasoning: r.currentResponse?.isReasoning, hideAttachments: r.currentResponse?.hideAttachments, followUpSuggestedMode: r.currentResponse?.followUpSuggestedMode, expectedImageAspectRatio: r.currentResponse?.expectedImageAspectRatio, reasoningLayout: r.currentResponse?.reasoningLayout };
+                            : { message: r.currentResponse?.message ?? "", thinkingTrace: r.currentResponse?.thinkingTrace ?? "", fileAttachments: r.currentResponse?.fileAttachments, bannerMessages: r.currentResponse?.bannerMessages ?? y, sender: r.currentResponse?.sender ?? l.CI.ASSISTANT, query: r.currentQuery, feedbackLabels: r.currentResponse?.feedbackLabels ?? y, followUpSuggestions: r.currentResponse?.followUpSuggestions ?? y, chatResponseAnnotations: r.currentResponse?.chatResponseAnnotations ?? y, postIds: r.currentResponse?.postIds ?? y, webResults: r.currentResponse?.webResults ?? y, citedWebResults: r.currentResponse?.citedWebResults ?? y, promptSource: r.currentResponse?.promptSource ?? "", intermediateImageResults: r.currentResponse?.intermediateImageResults, agentChatItemId: r.currentResponse?.agentChatItemId, cardAttachments: r.currentResponse?.cardAttachments ?? y, messageStepAccumulator: r.currentResponse?.messageStepAccumulator, performanceMetrics: r.currentResponse?.performanceMetrics, xMediaPostIds: r.currentResponse?.xMediaPostIds, isPastThinkingTrace: r.currentResponse?.isPastThinkingTrace, isDeepsearch: r.currentResponse?.isDeepsearch, isReasoning: r.currentResponse?.isReasoning, hideAttachments: r.currentResponse?.hideAttachments, followUpSuggestedMode: r.currentResponse?.followUpSuggestedMode, expectedImageAspectRatio: r.currentResponse?.expectedImageAspectRatio, uiLayout: r.currentResponse?.uiLayout };
                     },
                     selectMessageIds: function (e) {
                         return t(e).messageIds;
@@ -439,7 +439,7 @@
                             n = e.currentResponse?.message ?? "",
                             r = !!t;
                         e.currentResponse?.messageStepAccumulator && e.currentResponse.messageStepAccumulator.onAbort();
-                        const a = { sender: l.CI.ASSISTANT, message: r ? n : `${n}...`, thinkingTrace: t ? `${t}...` : "", cardAttachments: e.currentResponse?.cardAttachments, messageStepAccumulator: e.currentResponse?.messageStepAccumulator, isDeepsearch: e.currentResponse?.isDeepsearch, isReasoning: e.currentResponse?.isReasoning, reasoningLayout: e.currentResponse?.reasoningLayout, intermediateImageResults: e.currentResponse?.intermediateImageResults, fileAttachments: e.currentResponse?.fileAttachments, localOnly: !0, allowRetry: !1, isAborted: !0, expectedImageAspectRatio: e.currentResponse?.expectedImageAspectRatio },
+                        const a = { sender: l.CI.ASSISTANT, message: r ? n : `${n}...`, thinkingTrace: t ? `${t}...` : "", cardAttachments: e.currentResponse?.cardAttachments, messageStepAccumulator: e.currentResponse?.messageStepAccumulator, isDeepsearch: e.currentResponse?.isDeepsearch, isReasoning: e.currentResponse?.isReasoning, uiLayout: e.currentResponse?.uiLayout, intermediateImageResults: e.currentResponse?.intermediateImageResults, fileAttachments: e.currentResponse?.fileAttachments, localOnly: !0, allowRetry: !1, isAborted: !0, expectedImageAspectRatio: e.currentResponse?.expectedImageAspectRatio },
                             o = C(e.messageIds),
                             i = a.localOnly ? s() : {};
                         return { ...e, abortController: void 0, messageIds: e.messageIds.concat(o), messages: { ...e.messages, ...i, [o]: a }, currentResponse: void 0, status: m.Q_.IDLE };
@@ -488,7 +488,7 @@
                     case m.mq:
                         return { ...e, currentResponse: { ...e.currentResponse, isPastThinkingTrace: t.payload } };
                     case m.fH:
-                        return { ...e, currentResponse: { ...e.currentResponse, reasoningLayout: t.payload } };
+                        return { ...e, currentResponse: { ...e.currentResponse, uiLayout: { reasoningUILayout: t.payload } } };
                     default:
                         return e;
                 }
@@ -526,13 +526,13 @@
             function H(e) {
                 return e[m.Yf].conversationHistory.items;
             }
-            function w(e) {
+            function U(e) {
                 return e[m.Yf].pinnedConversations.items;
             }
-            function N(e) {
+            function w(e) {
                 return e[m.Yf].conversationHistory.cursor;
             }
-            function U(e) {
+            function N(e) {
                 return e[m.Yf].pinnedConversations.cursor;
             }
             function x(e) {
@@ -786,4 +786,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-29ff9b73.613ae38a.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/shared~bundle.ReaderMode~bundle.Birdwatch~bundle.TwitterArticles~bundle.Compose~bundle.Settings~bund-29ff9b73.5fde4aea.js.map

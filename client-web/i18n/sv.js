@@ -281,7 +281,7 @@
                 t("edf7f57e", "Bli verifierad och få boostade svar, analysfunktioner, skydd mot uppträdande under falsk identitet, annonsfri surfning och annat. Uppdradera din profil nu."),
                 t("ba920d68", "Öka ditt inflytande med verifiering"),
                 t("ib79d0c2", "Kom åt VIP-funktioner: verifiera ditt konto"),
-                t("c0d3bd82", "You’ve advertised on X, but don’t have a Verified Organizations subscription"),
+                t("c0d3bd82", "Du har annonserat på X men prenumererar inte på Verifierade organisationer"),
                 t("d7836d1e", "Prenumerera och få upp till 12 000 USD i kostnadsfri annonskredit, bli guldverifierad, få VIP-support och ett antal verktyg för att växa."),
                 t("f528e369", function (e) {
                     return "Prenumerera på " + e.tier + " om du vill skriva egna artiklar";
@@ -1275,14 +1275,15 @@
                 t("b8f3500a", "Visa tråden i Läsare"),
                 t("fc7db594", "Profilöversikt"),
                 t("c3f04d9c", "Tänker"),
+                t("cbdddb0a", "Avslutat"),
                 t("e98cc293", function (e) {
-                    return "Söker " + e.query;
+                    return "Söker efter " + e.query;
                 }),
                 t("b0d1e205", function (e) {
                     return "Söker efter **" + e.query + "**";
                 }),
                 t("i2e0f4d7", function (e) {
-                    return "Browsing " + e.url + " for " + e.query;
+                    return "Söker efter " + e.query + " på " + e.url;
                 }),
                 t("acb9b845", function (e) {
                     return "Söker på " + e.url + " efter **" + e.query + "**";
@@ -1291,7 +1292,7 @@
                     return "Söker i inlägg av @" + e.username;
                 }),
                 t("f7d9cfb9", function (e) {
-                    return "Searching posts by @" + e.username + " for " + e.query;
+                    return "Söker efter " + e.query + " i inlägg av @" + e.username;
                 }),
                 t("bec7eb11", function (e) {
                     return "Söker i inlägg av @" + e.username + " efter **" + e.query + "**";
@@ -1914,9 +1915,9 @@
                 t("b5660338", "Förhandsgranska tidslinjen"),
                 t("hff1b97a", "Endast prenumeranter får svara."),
                 t("a330771e", "Kopiera länken till Urklipp"),
-                t("b6510e68", "Kopiera webbadressen till artikeln så att du kan dela den."),
-                t("e4a6e006", "Något gick snett. Försök igen.");
-            t("eff483e0", "Få en länk för att dela artikeln efter att ha publicerat den."),
+                t("b6510e68", "Kopiera webbadressen till artikeln så att du kan dela den.");
+            t("e4a6e006", "Något gick snett. Försök igen."),
+                t("eff483e0", "Få en länk för att dela artikeln efter att ha publicerat den."),
                 t("ca15dd4e", "Utkast"),
                 t("bb40bf66", "Publicerat"),
                 t("h107935c", "Senast sparat nyss"),
@@ -2966,9 +2967,9 @@
                 t("e0adec82", "Varumärkesresurser"),
                 t("df1b7550", "Marknadsföring"),
                 t("he258678", "X för företag"),
-                t("c6f58084", "Utvecklare"),
-                t("d83f18d2", "Katalog");
-            t("hc5aa17c", "Skaffa X-appen"),
+                t("c6f58084", "Utvecklare");
+            t("d83f18d2", "Katalog"),
+                t("hc5aa17c", "Skaffa X-appen"),
                 t("j0693948", "Skaffa Grok-appen"),
                 t("af781666", "Vad tänker folk?"),
                 t("ad35153e", "beta"),
@@ -3882,9 +3883,9 @@
                 }),
                 t("e3275464", "Skicka"),
                 t("cededf2a", "Värd"),
-                t("i2caef48", "Medvärdar"),
-                t("j245c654", "Talare");
-            t("eda23a02", "Åhörare"),
+                t("i2caef48", "Medvärdar");
+            t("j245c654", "Talare"),
+                t("eda23a02", "Åhörare"),
                 t("b90eb348", "Bjud in att prata"),
                 t("d9a63e82", "Ta bort från talare"),
                 t("bd917b26", "Bjud in som medvärd"),
@@ -4152,7 +4153,7 @@
                 t("f388a7ec", "DeepSearch"),
                 t("ab1eb384", "Välj ditt önskade sökläge"),
                 t("i330e54c", "Avancerad sökning och tankegångar"),
-                t("fdcce108", "DeeperSearch"),
+                t("fdcce108", "Djupare sökning med DeepSearch"),
                 t("ac64b674", "Utökade sökningar, fler tankegångar"),
                 t("j22655f2", "Fråga vad du vill"),
                 t("h0681e3e", "Prata med Grok, vår AI-assistent"),
@@ -4281,7 +4282,6 @@
                 t("e2811afc", "Matcher"),
                 t("j081fa34", "Ställningar"),
                 t("i7c7f156", "I morgon"),
-                t("cbdddb0a", "Avslutat"),
                 t("b134ba52", "Behandlas"),
                 t("j1361724", "Halvtid"),
                 t("fa0f1262", "Paus"),
@@ -4327,10 +4327,10 @@
                 t("b52484b6", "Söker …"),
                 t("a4d9dbfa", "Tankar"),
                 t("ib1c5475", function (e) {
-                    return "Thought for " + e.minutes + "m " + e.seconds + "s";
+                    return "Funderade i " + e.minutes + " m och " + e.seconds + " s";
                 }),
                 t("a15d62db", function (e) {
-                    return "Thought for " + e.seconds + "s";
+                    return "Funderade i " + e.seconds + " s";
                 }),
                 t("d7cb5408", "Relevanta webbsidor"),
                 t("aa7c96bb", function (e) {
@@ -7061,14 +7061,14 @@
                 t("f0ad5cc8", "år"),
                 t("a0dc6e4c", "Inte tillgängligt just nu"),
                 t("jd8b2e66", "Prenumerera och betala"),
-                t("ca784c0c", "Subscribe & pay with Apple"),
+                t("ca784c0c", "Prenumerera och betala med Apple"),
                 t("aa5df29f", function (e) {
                     return "" + e.oldPrice;
                 }),
                 t("g1c4f7a1", function (e) {
                     return "" + e.oldPrice;
                 }),
-                t("afd61c76", "Or, save up to 30%"),
+                t("afd61c76", "Eller spara upp till 30 %"),
                 t("i7fbacc4", "Växla mellan de tillgängliga prenumerationsnivåerna"),
                 t("c9cc122b", function (e) {
                     return e.feature + " ingår i " + e.title;
@@ -13217,4 +13217,4 @@
         },
     },
 ]);
-//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sv.859590da.js.map
+//# sourceMappingURL=https://ton.local.twitter.com/responsive-web-internal/sourcemaps/client-web/i18n/sv.aef74fba.js.map
